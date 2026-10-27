@@ -1,0 +1,1167 @@
+{
+ "pe-tornozelo-0096": {
+  "questaoSha256": "9a2a144fbd26212a9ae89a07b0cd0adb81770c317658c2cf630b16d8857f1bef",
+  "comentarioAnteriorSha256": "1f9aa9e24f0e682ee9b892450a8f3b42cabe4e1fff72ee57b84d4172647e9178",
+  "comentario": {
+   "conceito": "Para entender por que a fratura desviada do colo do tálus necrosa tanto, é preciso olhar para o osso como um encanador olharia para uma casa antiga: quase toda a parede está revestida e só sobram algumas portas por onde o cano pode entrar.\n\n**Um osso quase todo cartilagem.** O tálus faz o domo do tornozelo, a face inferior da subtalar e a cabeça que se encaixa no navicular. A maior parte da superfície é cartilagem articular, e há um detalhe que o diferencia dos outros ossos do pé: **nenhum músculo ou tendão se insere nele**. Sobra pouca superfície livre para os vasos entrarem: a face superior do colo, que não tem cartilagem e é cheia de perfurantes, a face inferior junto ao seio e ao canal do tarso e a face medial, onde se prende o deltoide. O Rockwood and Green (10ª ed., cap. 66) descreve uma rede anastomótica formada pela **dorsal do pé**, pelos **ramos deltoides** e pelas **artérias do seio e do canal do tarso**.\n\n**Quem irriga o quê.** A peça central é a **artéria do canal do tarso**, ramo da **tibial posterior**. Ela forma uma alça com a artéria do seio do tarso, que chega pelo lado lateral, e irriga a face inferior do colo e a parte posterior do corpo. Para muitos autores é a fonte mais importante, porque alcança os **dois terços laterais do corpo**. A mesma tibial posterior dá ainda o **ramo deltoide**, que atravessa o ligamento e irriga a **parte medial do corpo**, e um plexo posteromedial que se anastomosa com ramos da **fibular** para a região posterolateral. A **tibial anterior**, como dorsal do pé, cuida da face dorsal do colo e da cabeça.\n\n**O que a fratura faz com esse desenho.** O colo é a ponte entre a cabeça e o corpo, e é justamente nele que passam os vasos que vão ao corpo. Quando o colo quebra e desvia, a alça do canal e do seio do tarso se rompe embaixo e os ramos dorsais se rompem quando o colo bate no pilão. Quanto mais articulações saem do lugar, mais portas se fecham, e a necrose sobe junto. Duas consequências aparecem na cirurgia. Quando o corpo luxa para posteromedial, o **deltoide pode ser a última ligação** com o resto do pé, e o ramo que passa nele pode ser o último sangue do corpo; por isso se prefere a **osteotomia do maléolo medial** a cortar o ligamento para expor a fratura. E a região **posterolateral do domo**, a mais distante dessa entrada medial, é a mais acometida pela necrose.\n\n| Artéria | Origem | Território |\n|---|---|---|\n| Do canal do tarso | Tibial posterior | Face inferior do colo e parte posterior do corpo; dois terços laterais do corpo |\n| Ramo deltoide | Tibial posterior | Parte medial do corpo |\n| Do seio do tarso | Chega pelo lado lateral | Forma a alça com a do canal |\n| Dorsal do pé | Tibial anterior | Face dorsal do colo e cabeça |\n\nNo resumo do capítulo 66 na Biblioteca, a seção sobre as portas de entrada do sangue traz a figura das artérias em vista medial e lateral, que ajuda muito a fixar esse mapa.\n\n> **Na prova:** canal do tarso é ramo da tibial posterior; seio do tarso chega por fora, e as duas formam a alça sob o colo. O deltoide carrega o último ramo do corpo luxado, por isso não se corta.",
+   "correta": "**B: do canal do tarso é ramo da tibial posterior.** É a afirmação exata do capítulo: a artéria do canal do tarso nasce da tibial posterior e forma uma alça com a do seio do tarso sob o colo, irrigando a face inferior do colo e a parte posterior do corpo. Por alcançar os dois terços laterais do corpo, muitos autores a consideram a fonte mais importante do tálus, e é por isso que o desvio do colo, que rompe essa alça, ameaça o corpo de necrose.",
+   "incorretas": {
+    "A": "**Troca as duas artérias do túnel.** A artéria que vem da tibial posterior é a do canal do tarso; a do seio do tarso chega pelo lado lateral, e as duas se unem numa alça sob o colo. A banca troca os nomes contando que o aluno lembre só que \"uma das artérias do tarso vem da tibial posterior\".",
+    "C": "**O lado medial é de outro ramo.** A parte medial do corpo do tálus é território do ramo deltoide, que nasce da tibial posterior e atravessa o ligamento deltoide. A artéria do seio do tarso chega pelo lado oposto, o lateral. Atribuir a ela o colo medial é inverter a geografia do pé, e esse erro tem custo prático: é o ramo deltoide, medial, que se tenta poupar com a osteotomia do maléolo.",
+    "D": "**A fibular é coadjuvante atrás.** Na região posterior do tálus, o capítulo descreve um plexo posteromedial que vem da tibial posterior e apenas se anastomosa com ramos da fibular para irrigar a parte posterolateral. A fibular participa, mas não é a principal do processo posterior. A frase é sedutora porque a fibular corre atrás e por fora da perna, perto do tubérculo posterolateral."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Anatomia e vascularização."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-66-talus",
+    "titulo": "Fraturas e luxações do tálus",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+    "secoes": [
+     "Anatomia e vascularização"
+    ],
+    "blocos": [
+     "anatomia-e-vascularizacao-c51227ca",
+     "anatomia-e-vascularizacao-b3cf6f14",
+     "anatomia-e-vascularizacao-db711620",
+     "anatomia-e-vascularizacao-32767012",
+     "anatomia-e-vascularizacao-3df26679",
+     "anatomia-e-vascularizacao-67b0e630",
+     "anatomia-e-vascularizacao-d9802b86",
+     "anatomia-e-vascularizacao-07f26b9a",
+     "anatomia-e-vascularizacao-b8a242e2",
+     "anatomia-e-vascularizacao-a4148267",
+     "anatomia-e-vascularizacao-d6200c81",
+     "anatomia-e-vascularizacao-d570e842",
+     "anatomia-e-vascularizacao-c3eb2101"
+    ],
+    "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+    "trechosSha256": "181ae7508aa1783792d980974d5a6604cba0379398a54ffadbc36e1a593907e2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0126": {
+  "questaoSha256": "2f6210bf90c6466e3796a46cddd96d290c76ed35f5df8e192b845bed847c2740",
+  "comentarioAnteriorSha256": "7a0acaf412a0e9e7c3cf369320220ee8c382ace8882003df5991569edbcd6b09",
+  "comentario": {
+   "conceito": "Pense na escápula pendurada no tronco por uma corrente com poucos elos. A corrente só se solta se dois elos se abrirem: um elo partido sozinho ainda deixa o resto segurando. É essa a lógica que **Goss** formalizou e que a questão cobra.\n\n**O que é o anel.** O complexo suspensor superior do ombro é um **anel de osso e partes moles** formado pela **glenoide**, pelo **coracoide**, pelos **ligamentos coracoclaviculares** e **coracoacromial**, pela **clavícula lateral**, pela **articulação acromioclavicular** e pelo **acrômio**. Esse anel se apoia em **dois pilares**: o superior é o **terço médio da clavícula**, que o liga ao esterno; o inferior é a **junção da parte lateral do corpo da escápula com a espinha**. Goss ainda separou três unidades: a ponte clavícula, acromioclavicular e acrômio; a junção da glenoide, do coracoide e do acrômio com o corpo; e a ligação clavícula, coracoclaviculares e coracoide (Rockwood and Green, 10ª ed., cap. 33).\n\n**Por que uma ruptura não basta.** A função do anel, nas palavras de Goss, é manter uma relação estável entre a escápula, o membro superior e o esqueleto axial. Como é um anel, o rompimento em um só ponto deixa os outros segmentos segurando a glenoide, e a lesão **costuma ser estável**. Quando o anel se rompe em **dois pontos**, ou num ponto mais um pilar, forma-se um segmento solto, que pode desviar e evoluir para retardo de consolidação, pseudartrose ou consolidação viciosa. Essa é a situação **potencialmente instável**.\n\n**Aplicando à questão.** A fratura do **colo da escápula** separa a glenoide do corpo: é a primeira ruptura. Se a **acromioclavicular** também se rompe, a glenoide perde a segunda ligação, pela ponte acrômio-clavícula, e fica flutuando. Duas rupturas em pontos diferentes do anel, exatamente o que Goss descreve como instável. Nas alternativas com o **coracoide** e um **ligamento coracoclavicular**, as duas lesões caem na mesma unidade de Goss (clavícula, coracoclaviculares e coracoide); é como partir duas vezes o mesmo elo.\n\n**O que o autor do capítulo acrescenta.** Bartoníček, com 519 fraturas, mostra que, no colo cirúrgico, quem decide se a glenoide fica solta são os ligamentos presos ao coracoide, **coracoclavicular e coracoacromial**: só quando os dois rompem o fragmento fica totalmente instável. Por esse raciocínio, a ruptura coracoclavicular também pesaria. Na prova, porém, a pergunta é sobre o anel de Goss, e a resposta segue Goss.\n\n> **Na prova:** um ponto rompido no anel de Goss é estável; dois pontos em unidades diferentes (colo mais acromioclavicular, clavícula mais colo) deixam a glenoide solta.\n\nNo resumo de fratura da escápula, a seção sobre o anel de Goss mostra a figura do complexo com os dois pilares, útil para visualizar quais rupturas se somam.",
+   "correta": "**C: colo da escápula e lesão do ligamento acromioclavicular.** O colo fraturado separa a glenoide do corpo, e a acromioclavicular rota abre a ponte acrômio-clavícula, que era a outra ligação da glenoide com o tronco. São duas rupturas em pontos diferentes do anel de Goss, a situação potencialmente instável que pode levar a desvio, retardo de consolidação, pseudartrose ou consolidação viciosa.",
+   "incorretas": {
+    "A": "**Duas lesões, mas o capítulo hesitaria.** O colo fraturado é uma ruptura, e o trapezoide é parte dos ligamentos coracoclaviculares, que também estão no anel. Pelo raciocínio de Bartoníček, a lesão coracoclavicular com o colo cirúrgico pode soltar a glenoide. Mas o trapezoide sozinho é só uma parte do complexo coracoclavicular, e a ligação pela acromioclavicular segue íntegra; a banca escolheu a combinação clássica de Goss, colo com acromioclavicular. Guarde essa nuance: fora da prova, a ruptura coracoclavicular pesa.",
+    "B": "**Duas vezes o mesmo elo.** Coracoide e ligamentos coracoclaviculares formam uma única unidade de Goss, a ligação clavícula, coracoclaviculares e coracoide. Fraturar o coracoide e romper o trapezoide lesa essa mesma corrente em dois lugares vizinhos, sem abrir um segundo ponto distante do anel. A glenoide continua presa ao corpo pelo colo íntegro e ao acrômio pela acromioclavicular.",
+    "D": "**A acromioclavicular sozinha não solta a glenoide pelo coracoide.** Coracoide fraturado e acromioclavicular rota são duas rupturas, mas a glenoide segue presa ao corpo da escápula pelo colo íntegro. O que fica instável é o segmento coracoide e a ponte lateral, não a glenoide. No capítulo, essa combinação aparece no grupo dos processos: a fixação da acromioclavicular costuma reduzir o coracoide de forma indireta, sem a glenoide flutuar."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula; Processos: coracoide, acrômio e espinha lateral."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-33-fratura-escapula",
+    "titulo": "Fratura da escápula",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 33 · Scapular Fractures",
+    "secoes": [
+     "Complexo suspensor superior, ombro flutuante e colo da escápula",
+     "Processos: coracoide, acrômio e espinha lateral"
+    ],
+    "blocos": [
+     "complexo-suspensor-superior-ombro-flutuante-e-co-db257df4",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-98825935",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-7f675f13",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-9246e462",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-d18bd73d",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-514a8f28",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-e2bdea5f",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-924f846c",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+     "processos-coracoide-acromio-e-espinha-lateral-b04446e6",
+     "processos-coracoide-acromio-e-espinha-lateral-b51c77ae"
+    ],
+    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+    "trechosSha256": "34945a5b9e61e9095a69c2ae5f5d593193692b5d6d16c49c4b0cd0371ed6bedc"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0320": {
+  "questaoSha256": "8c84ce82bdb32bfebb641db9d5764da9f7574c1c52ce3b671e798456aec77b41",
+  "comentarioAnteriorSha256": "a5fe582775ed0fec15f182757848c6bcd7e6642c1d3f5077159eace06257c24e",
+  "comentario": {
+   "conceito": "Quando a glenoide perde todas as amarras, para onde ela vai? A resposta sai de duas forças que continuam agindo depois do trauma: o **peso do membro**, que puxa tudo para baixo, e os **músculos presos ao coracoide**, que puxam o fragmento para dentro.\n\n**Que fragmento é esse.** A glenoide só se separa do corpo por uma fratura do colo. O Rockwood and Green (10ª ed., cap. 33) distingue o **colo anatômico**, cujo traço passa lateral à base do coracoide e deixa o coracoide no corpo, do **colo cirúrgico**, o mais frequente dos dois, cujo traço passa medial ao coracoide: o fragmento leva **a fossa e o coracoide** juntos. É nesse segundo tipo que os ligamentos do coracoide decidem tudo.\n\n**Os ligamentos que seguram o coracoide.** Preso ao fragmento, o coracoide continua ligado à clavícula pelos **coracoclaviculares** e ao acrômio pelo **coracoacromial**. Enquanto eles estão íntegros, o colo cirúrgico fica estável e desvia pouco. Se só o coracoacromial rompe, o fragmento gira, com o ápice do coracoide indo para distal e medial. Quando **os dois** rompem, o fragmento é **totalmente instável**: a distância coracoclavicular aumenta e a glenoide **desce e vai para medial**, puxada pelos músculos presos ao coracoide e pelo peso do braço. É o ombro flutuante na definição do autor: a glenoide sem nenhuma conexão osteoligamentar com o esqueleto axial.\n\n**Comparar com o colo anatômico.** Ali o coracoide fica no corpo, então os músculos dele não puxam o fragmento. A glenoide cai para **distal e em valgo**, o espaço subacromial alarga e o ângulo glenopolar **aumenta**. O mesmo valgo aparece quando a base do coracoide se separa do colo cirúrgico com os ligamentos íntegros: sem a tração do coracoide, o fragmento se comporta como o do colo anatômico.\n\n| Fratura do colo | Desvio da glenoide |\n|---|---|\n| Anatômico | Distal e valgo |\n| Cirúrgico com coracoclavicular e coracoacromial rotos | Distal e medial |\n| Transespinhal | Varo |\n\n**Uma nota sobre o enunciado.** A questão fala em ligamentos coracoclaviculares e **acromioclaviculares**. O capítulo descreve o subtipo totalmente instável com coracoclavicular e **coracoacromial** rotos, mas numa passagem escreve \"coracoclavicular e acromioclavicular\"; a ideia é a mesma: a glenoide perdeu as ligações pelo coracoide e pela ponte lateral.\n\n> **Na prova:** colo anatômico, distal e valgo; colo cirúrgico com ligamentos rotos, distal e medial; nenhum desvia para cima.\n\nPara rever os subtipos, o resumo de fratura da escápula tem a seção das três fraturas do colo com o desenho de cada padrão de desvio.",
+   "correta": "**B: distal e medialmente.** Com os ligamentos que prendiam o coracoide rotos, o fragmento do colo cirúrgico, que leva a glenoide e o coracoide, perde a suspensão. O peso do membro o leva para baixo e os músculos presos ao coracoide o puxam para dentro. Na radiografia, a distância coracoclavicular aparece aumentada, o sinal de que a suspensão ligamentar se perdeu.",
+   "incorretas": {
+    "A": "**Lateral é de outra fratura.** Quem vai para lateral é a porção infraespinal do corpo na fratura transversa em duas partes, puxada pelo subescapular, infraespinal e redondo maior presos à cabeça do úmero. É a fratura que, na radiografia AP, imita a medialização da glenoide. No colo cirúrgico com os ligamentos rotos, o fragmento glenoidal vai para dentro, não para fora.",
+    "C": "**Nada sobe.** Nenhum dos tipos de fratura do colo desvia a glenoide para proximal: o peso do membro e a tração muscular levam o fragmento para baixo. Uma glenoide alta exigiria uma força para cima que não existe depois que a suspensão se rompe.",
+    "D": "**A metade certa não salva.** Medial é a direção correta da tração do coracoide, mas o componente vertical é o oposto: o fragmento cai, não sobe. A banca combinou um acerto com um erro para pegar quem lembra só da medialização."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-33-fratura-escapula",
+    "titulo": "Fratura da escápula",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 33 · Scapular Fractures",
+    "secoes": [
+     "Complexo suspensor superior, ombro flutuante e colo da escápula"
+    ],
+    "blocos": [
+     "complexo-suspensor-superior-ombro-flutuante-e-co-3ebc61ae",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-8bbbb416",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-924f846c",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-69bcc1c9",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-d9e7456b",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-c55288f1",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-ca6b4453",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-ace54a23",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-ded02f32",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-c257bed2",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-3e879bce",
+     "complexo-suspensor-superior-ombro-flutuante-e-co-6a0637b7"
+    ],
+    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+    "trechosSha256": "a2d079aaea2a98b0d5cebfd6f814dd28e196dc3f1c5f5242623d908d51ab5e42"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "ombro-cotovelo-0549": {
+  "questaoSha256": "ada57e93f1e691f51d324a5c08951e037111ecc38a4aaaa298ef56bc9095fe20",
+  "comentarioAnteriorSha256": "1134b913cdb14db5628176869ff8cae32f9c6e993031f9af16ce87221edc6819",
+  "comentario": {
+   "conceito": "A primeira decisão diante de uma fratura do úmero proximal é saber o que se está vendo, e a radiografia ruim é uma das principais causas de entender mal a fratura e até de **deixar passar uma luxação**. Por isso o Rockwood and Green (10ª ed., cap. 36) insiste numa série de trauma padronizada, sempre a mesma, em vez de incidências escolhidas ao acaso.\n\n**O problema da AP comum.** A escápula não está no plano coronal do corpo: ela repousa inclinada sobre a parede do tórax. Numa AP feita perpendicular ao paciente, a glenoide aparece de viés e se sobrepõe à cabeça do úmero, o que esconde o espaço articular e confunde a leitura dos fragmentos.\n\n**As quatro incidências.** A série de trauma do capítulo tem:\n\n| Incidência | Como | O que mostra |\n|---|---|---|\n| AP do ombro | Perpendicular ao plano coronal | Visão geral |\n| AP da escápula (**Grashey**) | Tronco girado 30° | Glenoide de perfil, sem sobrepor a cabeça |\n| Perfil em Y (Neer) | Tronco girado 60°, perpendicular ao Grashey | Cabeça em relação à glenoide no outro plano |\n| Axilar | Raio pela axila | Relação cabeça-glenoide e desvio dos tubérculos; a mais importante |\n\nO **Grashey** é a AP verdadeira da escápula: girando o tronco 30°, o feixe passa paralelo à superfície da glenoide e o espaço articular se abre. Grashey e Y devem ser feitos **na mesma rotação** do braço, de preferência neutra ou externa; com o braço pendente, a gravidade traciona e ajuda a ler a fratura. Quando a dor impede abduzir para a axilar, o capítulo oferece a **axilar de Velpeau** (paciente inclinado para trás, mesmo de tipoia) ou a **axilar de Codman**, preferida pelos autores.\n\n**Por que isso importa.** Classificar e decidir a conduta depende de ver o desvio dos tubérculos e a relação da cabeça com a glenoide em pelo menos dois planos ortogonais. Uma fratura-luxação posterior lida só numa AP pode parecer uma fratura simples; a axilar a denuncia.\n\n> **Na prova:** série de trauma do úmero proximal é AP, Grashey, perfil em Y e axilar. Stryker e West Point são incidências de instabilidade.\n\nNo resumo de fratura do úmero proximal, a seção de radiografias e tomografia mostra a série com a cabeça centrada na glenoide em cada incidência.",
+   "correta": "**B: Grashey view.** É a AP verdadeira da escápula, com o tronco girado 30°, e faz parte da série de trauma de quatro incidências do capítulo, ao lado da AP do ombro, do perfil em Y e da axilar. Mostra a glenoide de perfil, sem sobrepor a cabeça, e é feita na mesma rotação do braço que o perfil em Y.",
+   "incorretas": {
+    "A": "**Incidência de instabilidade.** A Stryker notch serve para procurar a lesão de Hill-Sachs na luxação anterior recidivante. O capítulo a exclui expressamente da série de trauma: Stryker e West Point são para instabilidade. Diante de uma fratura aguda, ela não substitui o Grashey, o perfil em Y e a axilar.",
+    "C": "**Feita para a borda da glenoide.** A West Point é usada para ver a borda da glenoide, o Bankart ósseo, na instabilidade. O capítulo a coloca ao lado da Stryker como incidência de instabilidade, fora da série de trauma. Para a fratura, a axilar que o capítulo recomenda é a convencional ou, com dor, a de Velpeau ou de Codman.",
+    "D": "**Não está na série.** A série de trauma descrita no capítulo tem quatro incidências (AP do ombro, Grashey, perfil em Y e axilar), e a Rockwood view não está entre elas. O nome do livro de referência na alternativa é uma isca para quem associa a resposta ao título do texto."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Radiografias e tomografia."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Radiografias e tomografia"
+    ],
+    "blocos": [
+     "radiografias-e-tomografia-b85e69ff",
+     "radiografias-e-tomografia-30b8a195",
+     "radiografias-e-tomografia-413850ca",
+     "radiografias-e-tomografia-190db996",
+     "radiografias-e-tomografia-d315dddb",
+     "radiografias-e-tomografia-cb865953",
+     "radiografias-e-tomografia-78d8ddd2",
+     "radiografias-e-tomografia-2edd0b47"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "437ae27541fc47f4b21bdca92e4f7a1f5447ff4947701b8aae42dd41649d0f5b"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "ombro-cotovelo-0510": {
+  "questaoSha256": "1d0290bab69c1ee2dd67ba037f2b56fef44fddf1ffe3f835dcfb1339e4638b80",
+  "comentarioAnteriorSha256": "e161bcae8e954ba95beb581dceffa31a24f652b80de94efb0afbab6bf90f2b7f",
+  "comentario": {
+   "provavel": "A",
+   "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta provável (Certo) foi definida pelo Orto Questões a partir do capítulo 42 do Rockwood and Green, que situa a fratura do tipo III na metáfise e a dos tipos I e II na diáfise. A comparação vale para o padrão típico: no tipo II, Jupiter mostrou que o traço pode subir até a metáfise ou a epífise, e o nível sozinho não classifica a lesão.",
+   "conceito": "Para classificar uma Monteggia, Bado olhou para uma coisa só: para onde foi a cabeça do rádio. A pergunta da prova parece ser sobre outra variável, a altura em que a ulna quebrou, mas as duas estão ligadas pelo mesmo mecanismo, e entender essa ligação resolve a questão.\n\n**Como a lesão se forma.** A Monteggia é a fratura da ulna com luxação da cabeça do rádio. Uma força de flexão dobra a ulna, o osso quebra, a membrana interóssea se rompe do foco até a radioulnar proximal e o ligamento anular cede. A cabeça do rádio sai **na direção do ápice** da deformidade da ulna. É por isso que Bado pôde classificar pela direção da cabeça: ela e o ápice da ulna apontam para o mesmo lado (Rockwood and Green, 10ª ed., cap. 42).\n\n**Onde a ulna quebra em cada tipo.** Pela tabela do capítulo:\n\n| Tipo | Cabeça do rádio | Ulna | Em quem |\n|---|---|---|---|\n| I | Anterior | **Diáfise**, qualquer nível, ápice anterior | Mais frequente na criança |\n| II | Posterior ou posterolateral | **Diáfise**, ápice posterior | Até 80% das Monteggia do adulto |\n| III | Lateral ou anterolateral | **Metáfise** | Quase exclusivo da criança |\n| IV | Anterior | Terço proximal, com o rádio fraturado no mesmo nível | Exclusivo do adulto |\n\nA metáfise fica entre a diáfise e a extremidade articular. Como a fratura do tipo III é metafisária e as dos tipos I e II são diafisárias, o traço do III está, no padrão típico, **mais perto do cotovelo**. Faz sentido mecânico: uma pancada que empurra o cotovelo para fora dobra a ulna logo abaixo da articulação, e a cabeça do rádio escapa para lateral, acompanhando esse ápice.\n\n**Onde a regra fica imprecisa.** O tipo II não é tão comportado. **Jupiter** observou que a fratura dele costuma estar na diáfise proximal, mas pode subir para a metáfise ou até a epífise, e o subdividiu em IIA (através do coronoide), IIB (junção metáfise-diáfise), IIC (diafisária) e IID (do olécrano até a diáfise). Um Bado IIA é mais proximal que muitos tipo III. Por isso a afirmação vale como descrição do padrão típico de cada tipo, não como critério de classificação: o que define o tipo continua sendo a direção da cabeça.\n\n> **Na prova:** Bado classifica pela direção da cabeça do rádio, que segue o ápice da ulna. Tipo III é lateral e metafisário (criança); I e II, diafisários.\n\nNo resumo de diáfise do rádio e da ulna, a seção sobre Bado e Jupiter tem a figura dos quatro tipos e a subdivisão do tipo II pela altura do traço.",
+   "correta": "**Certo.** No capítulo, a fratura do tipo III de Bado é metafisária, enquanto a dos tipos I e II é diafisária; a metáfise fica acima da diáfise, mais perto do cotovelo. A ressalva é que, no tipo II, o traço pode subir até a metáfise ou a epífise (Jupiter IIA e IIB), então a altura descreve o padrão típico, mas quem classifica é a direção da cabeça do rádio.",
+   "incorretas": {
+    "B": "**Erraria pelo padrão típico.** Marcar Errado seria afirmar que a fratura do tipo III não é mais proximal que a dos tipos I e II, o que contraria a tabela do capítulo: III na metáfise, I e II na diáfise. O argumento que poderia levar a Errado, o de que alguns tipos II quebram na metáfise ou no coronoide, é real (Jupiter), mas descreve exceções do tipo II, não o padrão que a afirmação compara."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-42-diafise-radio-ulna",
+    "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+    "secoes": [
+     "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+    ],
+    "blocos": [
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-ef647c6d",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-9e56eed7",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e5c273b0",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-60747bb0",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-018638b1",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-86b2096c",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-22d5d72f",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-baf0c01e",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf"
+    ],
+    "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+    "trechosSha256": "e14d2643e3b3e2dd69a4dccda5544a9ff22d00d6f3074d0442a3ab1a9c6faae1"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1731": {
+  "questaoSha256": "4dafa8a793e500cea51f77dced35a5b6532b534bdd4ad3eadd9c2ce649f8330c",
+  "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "comentario": {
+   "conceito": "Diante de uma patela quebrada, duas perguntas decidem tudo: o joelho ainda estende ativamente, e a superfície que desliza na tróclea ficou lisa? A questão cobra os números que dão forma à segunda pergunta.\n\n**Por que a patela pede precisão.** A patela é um osso sesamoide dentro do mecanismo extensor e, ao mesmo tempo, uma superfície articular que corre sobre o fêmur a cada passo. Os fragmentos separados por uma fratura transversa são puxados em direções opostas: o quadríceps leva o de cima, o tendão patelar segura o de baixo. Quando os retináculos laterais estão íntegros, eles seguram essa separação, e a extensão é preservada; quando rompem, os fragmentos se afastam. Uma contração forçada do quadríceps, como no enunciado, é justamente o mecanismo que tende a afastar os fragmentos.\n\n**Os dois cortes do capítulo.** O Rockwood and Green (10ª ed., cap. 60) separa primeiro a fratura **desviada** da **sem desvio**, e para isso usa dois números: é desviada a que tem **separação entre os fragmentos acima de 3 mm** ou **degrau articular acima de 2 mm**. O afastamento mede o quanto o mecanismo extensor se abriu; o degrau mede o quanto a superfície articular ficou irregular. Como cartilagem não tolera degrau, o limite articular é o mais estreito dos dois.\n\n**Como isso vira conduta.** Na tabela de indicações, o capítulo trata sem cirurgia o paciente com **mecanismo extensor íntegro** e **incongruência articular menor que 3 mm**, e opera a incongruência de 3 mm ou mais, o extensor incompetente, a fratura exposta e os fragmentos soltos. Com esses critérios, quase qualquer padrão pode ficar sem cirurgia: Boström tratou 219 fraturas com incongruência menor que 3 mm, com 98% de bons e excelentes e sem relação com artrose em quase 9 anos. A técnica é órtese ou tala em extensão por 4 a 6 semanas, elevação da perna estendida e isométricos cedo.\n\n| Medida | Fratura sem desvio |\n|---|---|\n| Separação entre os fragmentos | Até 3 mm |\n| Degrau articular | Até 2 mm |\n| E sempre | Extensão ativa preservada |\n\n**Uma sutileza de números.** O mesmo capítulo usa 2 mm para definir o degrau da fratura desviada e 3 mm de incongruência para indicar cirurgia. A questão pede os desvios aceitáveis pela definição de fratura sem desvio, o par 3 mm e 2 mm; não confunda com o corte de indicação.\n\n> **Na prova:** patela sem desvio é afastamento de até 3 mm e degrau de até 2 mm, com o extensor funcionando.\n\nNo resumo do capítulo 60 na Biblioteca, a seção de classificação traz os dois números, e a de tratamento mostra a tabela de quem opera.",
+   "correta": "**C: menos de 3 mm entre os fragmentos e menos de 2 mm de desvio articular.** São os limites que o capítulo usa para separar a fratura sem desvio da desviada: separação acima de 3 mm ou degrau articular acima de 2 mm já a tornam desviada. Dentro desses limites e com a extensão ativa preservada, o tratamento sem cirurgia dá resultados excelentes.",
+   "incorretas": {
+    "A": "**Afastamento e degrau folgados demais.** Cinco milímetros de separação já ultrapassam o limite de 3 mm que define a fratura desviada, e 3 mm de degrau articular é o ponto em que o capítulo passa a indicar cirurgia, não um desvio aceitável. Os dois números estão um degrau acima do permitido.",
+    "B": "**O degrau está certo, o afastamento não.** Dois milímetros de degrau articular é o limite correto, mas 5 mm entre os fragmentos significam que o mecanismo extensor já se abriu além dos 3 mm aceitos. A banca acertou metade do par para pegar quem lembra só do número articular.",
+    "D": "**Degrau que a cartilagem não tolera.** O afastamento de 3 mm está no limite, mas 4 mm de desvio articular passam do corte de cirurgia do capítulo (incongruência de 3 mm ou mais). Inverter a lógica, aceitando mais degrau que afastamento, é o erro: a superfície articular é a medida mais exigente.",
+    "E": "**Inverteu a exigência.** Aceitar 5 mm de degrau articular contraria o princípio de restaurar a congruência da patela: o capítulo opera a incongruência a partir de 3 mm. O limite de 3 mm entre os fragmentos está correto, mas o número articular deveria ser o menor dos dois, 2 mm."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Classificação; Tratamento não cirúrgico e indicações cirúrgicas."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-60-patela-mecanismo-extensor",
+    "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+    "secoes": [
+     "Classificação",
+     "Tratamento não cirúrgico e indicações cirúrgicas"
+    ],
+    "blocos": [
+     "classificacao-bab0c782",
+     "classificacao-6029931d",
+     "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-3f80f5d4",
+     "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-1279cd89",
+     "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-7a74af3c",
+     "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-45a5466d",
+     "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-a80f265b",
+     "classificacao-6cb8c90a"
+    ],
+    "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+    "trechosSha256": "24adba243eba8227a1f23215d1a064eb75ff9164095061db413c31427ea69c56"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "joelho-0057": {
+  "questaoSha256": "26559470248a2841a962fb98a91d2148839d4d9856283dd851653f404ce94729",
+  "comentarioAnteriorSha256": "0d37fe97bb19bf99ff16c2b375335f4061b73f77e8bf04d842c27d7f4e85c2fe",
+  "comentario": {
+   "alerta": "A luxação lateral da patela é a causa clássica de fratura osteocondral e acomete sobretudo adolescentes; o capítulo 60 do Rockwood and Green mostra a incidência de 29 por 100.000 entre 10 e 17 anos, contra 5,8 na população geral. Mas o capítulo também cita fraturas osteocondrais da patela e do fêmur na fratura estrelada de alta energia, e não compara a frequência por idade em todas as fraturas osteocondrais do joelho. A alternativa B é o cenário clássico escolhido pela banca, não uma distribuição etária universal.",
+   "conceito": "Imagine uma adolescente que, ao girar o corpo no vôlei com o pé fixo no chão, sente o joelho sair do lugar e voltar. Chega com o joelho inchado e cheio de sangue. A radiografia pode estar quase normal, mas há grande chance de que um pedaço de cartilagem com osso tenha se soltado. A questão pergunta em quem e em que lesão isso mais acontece.\n\n**Quem luxa a patela.** O Rockwood and Green (10ª ed., cap. 60) dá a incidência anual de luxação aguda da patela em **5,8 por 100.000**, mas de **29 por 100.000 entre 10 e 17 anos**: cinco vezes mais no adolescente. A direção é quase sempre **lateral**; a medial traumática é excepcional.\n\n**Como a luxação quebra a cartilagem.** Quando a patela salta para fora da tróclea, a faceta medial dela passa por cima da borda do côndilo femoral lateral. Na volta, quando o quadríceps relaxa e a patela retorna ao sulco, a **faceta medial bate de novo no côndilo lateral**. São dois golpes de cisalhamento no mesmo trajeto. O resultado típico são as **fraturas osteocondrais na borda medial inferior da patela**, altamente sugestivas, e fragmentos que se soltam do **côndilo femoral lateral**. A ressonância mostra a assinatura da lesão mesmo quando a patela reduziu sozinha: contusão do côndilo femoral lateral e da faceta medial, ruptura do ligamento patelofemoral medial e do retináculo, corpos livres. Lesão de cartilagem aparece em até **95%** dos primeiros episódios.\n\n**Por que a radiografia engana.** O fragmento é em boa parte cartilagem, e a radiografia pode não mostrá-lo. A pista clínica é a **hemartrose**: ela aumenta a chance de fratura osteocondral, e o grupo internacional de patelofemoral recomenda RM nos casos de alto risco. A maioria dos autores fixa a fratura osteocondral grande e desviada, porque um fragmento solto destrói a articulação.\n\n> **Na prova:** fratura osteocondral do joelho é a lesão do adolescente que luxou a patela: borda inferomedial da patela e côndilo femoral lateral.\n\nNo resumo do capítulo 60, a seção de luxação aguda da patela descreve o padrão de lesão e quando pedir a ressonância.",
+   "correta": "**B: adolescentes e nas luxações patelares.** A luxação aguda da patela é cinco vezes mais frequente entre 10 e 17 anos, e o mecanismo, a faceta medial da patela cisalhando contra o côndilo femoral lateral na saída e na volta, produz as fraturas osteocondrais típicas da borda inferomedial da patela e do côndilo lateral.",
+   "incorretas": {
+    "A": "**A lesão certa na idade errada.** A luxação patelar é mesmo o mecanismo clássico, mas a incidência dela se concentra na adolescência (29 por 100.000 entre 10 e 17 anos, contra 5,8 na população geral). No adulto, a luxação é menos frequente, e com ela as fraturas osteocondrais que produz.",
+    "C": "**Mecanismo que não gera o cisalhamento.** A lesão do colateral medial nasce de uma força em valgo que estira o ligamento; ela não faz uma superfície articular deslizar com violência sobre a outra. A fratura osteocondral típica precisa desse cisalhamento, que é o que a patela faz ao sair e voltar sobre o côndilo lateral.",
+    "D": "**Idade certa, lesão errada.** O adolescente é mesmo o paciente típico, mas a associação é com a luxação da patela, não com o colateral medial. O ligamento medial que importa aqui é outro, o patelofemoral medial, que se rompe na luxação; trocar um pelo outro é a armadilha."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Luxação aguda da patela; Patela bipartida e outros simuladores."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-60-patela-mecanismo-extensor",
+    "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+    "secoes": [
+     "Luxação aguda da patela",
+     "Patela bipartida e outros simuladores"
+    ],
+    "blocos": [
+     "luxacao-aguda-da-patela-e8514392",
+     "luxacao-aguda-da-patela-dae642d9",
+     "luxacao-aguda-da-patela-541ed1a4",
+     "luxacao-aguda-da-patela-727a6900",
+     "luxacao-aguda-da-patela-2f480558",
+     "patela-bipartida-e-outros-simuladores-f0b1afd4"
+    ],
+    "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+    "trechosSha256": "78377d23830cf274d36fa0d716c4383a2a985b6acb2e1c56c29175336b7c9c58"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "joelho-0284": {
+  "questaoSha256": "7847a67fc2e7f31c1e4e26094f9fd1d2f7d2922bf4211fed5cf4dfb29a5d07a9",
+  "comentarioAnteriorSha256": "620a14bf41ecb97b0c9a8f768dd654bb68d31743c7fd3d868ca87a92db7633af",
+  "comentario": {
+   "provavel": "C",
+   "alerta": "A banca não publicou gabarito oficial. A resposta provável C (fratura osteocondral) segue o capítulo 60 do Rockwood and Green: a maioria dos autores fixa a fratura osteocondral grande e desviada, e a lesão osteocondral e o fragmento livre lideram as indicações. Nem toda fratura osteocondral exige cirurgia: tamanho, desvio e possibilidade de fixação decidem.",
+   "conceito": "A patela luxou pela primeira vez e voltou ao lugar. O que, entre os achados do exame e da imagem, obriga a operar já, em vez de imobilizar e reabilitar? A resposta depende de separar o que é **lesão mecânica que não se resolve sozinha** do que é **fator de risco para uma nova luxação**.\n\n**O que se faz na maioria.** O Rockwood and Green (10ª ed., cap. 60) trata o primeiro episódio sem cirurgia: redução, imobilização em extensão por cerca de 2 semanas (3 semanas na descrição clássica), carga conforme a dor, depois órtese estabilizadora e fortalecimento do vasto medial oblíquo. A maioria não volta a luxar; a recidiva com tratamento conservador fica entre **15% e 44%**. Operar o primeiro episódio só para prevenir recidiva é controverso: houve melhor resultado no curto e médio prazo em alguns estudos, sem diferença no longo prazo.\n\n**O que muda o jogo: o fragmento.** Na luxação lateral, a faceta medial da patela cisalha contra o côndilo femoral lateral e arranca **fragmentos osteocondrais**, típicos da borda inferomedial da patela. Um fragmento solto não cicatriza no lugar: vira corpo livre, trava o joelho e risca a cartilagem a cada movimento. Por isso a **hemartrose** grande pede RM, e a maioria dos autores **fixa a fratura osteocondral grande e desviada**. No capítulo, a lista de indicações relativas começa justamente pela lesão osteocondral e pelo fragmento livre.\n\n**O que é fator de risco, não urgência.** Patela alta, displasia troclear e TT-TG aumentado aparecem no capítulo como **fatores predisponentes** a considerar ao decidir, sobretudo no atleta de alto nível, não como lesões que exigem cirurgia na fase aguda. E a lesão do retináculo medial e do ligamento patelofemoral medial está presente em quase toda luxação, como mostra a RM; sozinha, ela é parte da lesão esperada, e não um motivo para operar todos.\n\n> **Na prova:** na luxação aguda da patela, o que indica cirurgia aguda é a fratura osteocondral (fragmento solto ou grande e desviado); patela alta e alinhamento entram no planejamento de quem recidiva.\n\nNo resumo do capítulo 60, a seção de luxação aguda da patela lista a conduta dos autores e as indicações relativas de cirurgia.",
+   "correta": "**C: fratura osteocondral.** É a lesão mecânica que não se resolve com imobilização: o fragmento solto vira corpo livre e lesa a cartilagem. O capítulo registra que a maioria dos autores fixa a fratura osteocondral grande e desviada, e a lesão osteocondral e o fragmento livre lideram as indicações de cirurgia no primeiro episódio.",
+   "incorretas": {
+    "A": "**Fator de risco, não urgência.** A patela alta faz a patela entrar mais tarde na tróclea e favorece a instabilidade; o capítulo a lista entre os fatores predisponentes (com a displasia troclear e o TT-TG aumentado) que pesam na decisão, sobretudo em quem recidiva. Ela não é uma lesão aguda a reparar: na fase aguda, não há o que corrigir com urgência.",
+    "B": "**Faz parte de quase toda luxação.** A RM mostra ruptura do ligamento patelofemoral medial e do retináculo na maioria dos primeiros episódios, e mesmo assim a maioria evolui bem sem cirurgia. O capítulo só cita como indicação relativa a ruptura grande, palpável do complexo do patelofemoral medial e do vasto medial oblíquo, ou a avulsão grande na RM. A simples lesão do retináculo medial não basta.",
+    "D": "**Alinhamento se trata no planejamento.** O ângulo Q aumentado reflete a tração lateral do quadríceps sobre a patela, um fator de alinhamento que predispõe à luxação, como o TT-TG aumentado que o capítulo cita. É assunto da cirurgia de realinhamento em quem tem instabilidade recorrente, não indicação de operar na fase aguda."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Luxação aguda da patela."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-60-patela-mecanismo-extensor",
+    "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+    "secoes": [
+     "Luxação aguda da patela"
+    ],
+    "blocos": [
+     "luxacao-aguda-da-patela-541ed1a4",
+     "luxacao-aguda-da-patela-e8514392",
+     "luxacao-aguda-da-patela-dae642d9",
+     "luxacao-aguda-da-patela-727a6900",
+     "luxacao-aguda-da-patela-2f480558"
+    ],
+    "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+    "trechosSha256": "efbcfdcda1f771ea6d0a1460df404ec7100265340f69f844c5902cae28479e2c"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1720": {
+  "questaoSha256": "b759c00224277534fb6051ebe51b3c5eb251f0a440a899c16290ed4a33a30f45",
+  "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "comentario": {
+   "conceito": "A haste anterógrada entra pelo quadril; a retrógrada, pelo joelho. A escolha entre elas não é questão de gosto: a retrógrada ganha sempre que **chegar ao quadril é difícil ou perigoso**, ou quando o joelho já precisa ser aberto por outro motivo. Com essa lógica, as indicações deixam de ser lista decorada.\n\n**Como a retrógrada funciona.** Ela entra pelo **intercôndilo**, com o paciente em decúbito dorsal numa mesa radiotransparente e o joelho fletido 35 a 50 graus. O Rockwood and Green (10ª ed., cap. 57) diz que hoje ela rivaliza com a anterógrada: hastes longas próprias, fresadas e com bloqueio em vários planos, e consolidação semelhante. O ponto de entrada é fácil em quase todos, e a contraindicação é **anatômica**: patela baixa, flexão limitada do joelho e fratura subtrocantérica, que fica longe demais do ponto de entrada.\n\n**As três indicações principais.** O capítulo destaca:\n\n- **Obesidade:** no obeso, achar o ponto de entrada anterógrado no trocanter, sob muitas camadas de partes moles, é difícil; a retrógrada reduziu o tempo de cirurgia e a radiação.\n- **Gravidez:** o feto recebe **menos radiação**, sobretudo no primeiro trimestre, e isso pesa mais que qualquer preferência técnica.\n- **Fratura distal:** a haste controla melhor o fragmento distal quando entra por ele.\n\nA tabela ainda inclui o politrauma, as fraturas bilaterais, a lesão vascular, a fratura da coluna e as fraturas do mesmo lado no colo, no acetábulo, na patela e na tíbia.\n\n**Quando a placa é a resposta.** O canal medular **muito estreito** aparece no capítulo como indicação de **placa**, não de haste: se a haste não passa pelo canal, nem pela frente nem por trás, outra técnica é necessária.\n\n> **Na prova:** retrógrada para obeso, gestante, fratura distal e lesões do mesmo lado; contraindicada com patela baixa, flexão limitada e subtrocantérica. Canal estreito é placa.\n\nNo resumo de diáfise do fêmur, a seção da haste retrógrada traz a tabela completa de indicações e contraindicações.",
+   "correta": "**A: gravidez e obesidade.** São duas das três indicações principais da retrógrada no capítulo: na gestante, a retrógrada expõe o feto a menos radiação; no obeso, a retrógrada evita o ponto de entrada anterógrado difícil e diminui tempo e radiação.",
+   "incorretas": {
+    "B": "**Metade é de placa.** A obesidade é indicação da retrógrada, mas o canal medular muito estreito é indicação de placa no capítulo: se a haste não cabe no canal, não importa por onde ela entraria.",
+    "C": "**Mistura uma indicação com outra técnica.** O politraumatizado está, sim, na lista da retrógrada, mas o canal estreito leva à placa. A alternativa junta uma indicação verdadeira com uma que pertence a outro implante.",
+    "D": "**A síndrome compartimental não escolhe a haste.** O politrauma é indicação da retrógrada, mas a síndrome compartimental da coxa não aparece na lista do capítulo: ela pede fasciotomia, e a via de entrada da haste não muda o problema.",
+    "E": "**Acerta a gravidez e erra no par.** A gestante é indicação clássica da retrógrada, mas a síndrome compartimental não está entre as indicações do capítulo. Com um elemento fora da lista, a alternativa não serve."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Haste retrógrada; Fixador externo, placa e controle de dano."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-57-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+    "secoes": [
+     "Haste retrógrada",
+     "Fixador externo, placa e controle de dano"
+    ],
+    "blocos": [
+     "haste-retrograda-c19a5fde",
+     "haste-retrograda-a6c8b54a",
+     "haste-retrograda-fd5c0178",
+     "haste-retrograda-90d2d83e",
+     "fixador-externo-placa-e-controle-de-dano-8029d0d1",
+     "fixador-externo-placa-e-controle-de-dano-5b33401f"
+    ],
+    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+    "trechosSha256": "04b19252a5fc96ec1acf187ff3aa3b761a9a06e5c9e6c630f7ff534e59e93471"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0280": {
+  "questaoSha256": "a67e62888da6457e0a4945c24bbe9e7cad58eee08d6067ed52e89c73a09e0d3c",
+  "comentarioAnteriorSha256": "68fc42fd1309c88e14477bb79553ad1340e13884cad088fff06f82ec40bc11ff",
+  "comentario": {
+   "conceito": "Um motociclista chega com a coxa deformada: a fratura da diáfise do fêmur salta aos olhos. O que não salta é uma segunda fratura, pequena e sem desvio, no colo do mesmo fêmur. O Rockwood and Green (10ª ed., cap. 57) chama essa associação de a mais traiçoeira do capítulo.\n\n**Por que passa despercebido.** Muitos desses colos são **sem desvio ou pouco desviados**. A incidência fica em torno de 1% a 10% nas fraturas de alta energia, e o diagnóstico tardio ou perdido chega a **30% a 57%** nas séries. A radiografia inicial ajuda pouco: o fragmento proximal fica em rotação externa, há tala de tração, obesidade e outras lesões que distraem. Até a TC de abdome, com cortes grossos, pode não mostrar o traço.\n\n**Que traço é esse.** O mais comum é o **basocervical** (39% numa série, 55% em outra), seguido do vertical mediocervical por cisalhamento; a maioria é extracapsular ou só parcialmente intracapsular, e o traço vertical é instável no eixo. Subcapital é raro.\n\n**Como não perder.** O protocolo de Tornetta reduziu em **91%** o diagnóstico tardio: AP do quadril em rotação interna antes da cirurgia, TC com cortes finos de 2 mm do colo, fluoroscopia do colo antes de fixar a diáfise e radiografia ortogonal do quadril ainda na sala, depois da haste.\n\n**Colo primeiro, com dois implantes.** A demora no colo tem consequências piores que a demora na diáfise: necrose, consolidação viciosa, pseudartrose e poucas cirurgias de salvamento boas no jovem. Por isso a prioridade é a **redução anatômica e a fixação estável do colo**, e só depois a diáfise. A forma preferida são **dois implantes separados**: parafuso deslizante com antirrotatório ou parafusos canulados no colo, e **haste retrógrada fresada ou placa** na diáfise. A haste de reconstrução única, que parece resolver as duas fraturas de uma vez, deu mais pseudartrose, má redução e perda de redução do colo, e vários autores a abandonaram.\n\n> **Na prova:** colo associado à diáfise é basocervical, sem desvio e fácil de perder; trata-se primeiro, com implantes separados (colo com parafusos, diáfise com retrógrada ou placa).\n\nNo resumo de diáfise do fêmur, a seção sobre a fratura do colo do mesmo lado traz o protocolo de Tornetta e as opções de fixação.",
+   "correta": "**C: o uso de implantes separados apresenta bons resultados.** É a estratégia preferida do capítulo: fixar primeiro o colo com parafuso deslizante e antirrotatório ou parafusos canulados, e depois a diáfise com haste retrógrada fresada ou placa. Numa série de 95 casos com retrógrada, parafuso deslizante e canulados tiveram resultados equivalentes. A haste única de reconstrução, que tenta fazer as duas coisas, tem mais má redução e pseudartrose do colo.",
+   "incorretas": {
+    "A": "**É o contrário: passa despercebido.** O capítulo mostra diagnóstico tardio ou perdido em 30% a 57% das séries, porque o traço é pouco desviado, o fragmento proximal fica em rotação externa e a lesão da diáfise distrai. É exatamente para isso que existe o protocolo de Tornetta.",
+    "B": "**O traço dominante é basocervical.** O colo associado à diáfise quebra na base (basocervical em 39% a 55%) ou em traço vertical mediocervical; o subcapital é raro, cerca de 2% numa série. A energia que chega ao colo depois de quebrar a diáfise produz traços baixos e pouco desviados.",
+    "D": "**O capítulo não sustenta essa comparação.** O que ele mostra é que o colo associado costuma ser basocervical, extracapsular ou parcialmente intracapsular e sem desvio, padrões diferentes da fratura subcapital desviada que mais ameaça a cabeça. O risco de necrose existe e é a razão para tratar o colo primeiro, mas o capítulo não descreve taxa maior que na fratura isolada."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: A fratura do colo do mesmo lado."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-57-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+    "secoes": [
+     "A fratura do colo do mesmo lado"
+    ],
+    "blocos": [
+     "a-fratura-do-colo-do-mesmo-lado-7b61320a",
+     "a-fratura-do-colo-do-mesmo-lado-754eb6d6",
+     "a-fratura-do-colo-do-mesmo-lado-ab880107",
+     "a-fratura-do-colo-do-mesmo-lado-9c56d4da",
+     "a-fratura-do-colo-do-mesmo-lado-7a77c9ba",
+     "a-fratura-do-colo-do-mesmo-lado-473f033a",
+     "a-fratura-do-colo-do-mesmo-lado-2856b2fa",
+     "a-fratura-do-colo-do-mesmo-lado-d6fedb3e",
+     "a-fratura-do-colo-do-mesmo-lado-ef55cada",
+     "a-fratura-do-colo-do-mesmo-lado-2c1abd51",
+     "a-fratura-do-colo-do-mesmo-lado-8484e205",
+     "a-fratura-do-colo-do-mesmo-lado-447c2a22",
+     "a-fratura-do-colo-do-mesmo-lado-6064015f"
+    ],
+    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+    "trechosSha256": "c0a06ece592d398dc749a2baaa06d79a1eb87a13148e1fe7c59f33ae83b52e1d"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0828": {
+  "questaoSha256": "ee55cff41f6b776b1c45a6ef5363550b68bdb1f0de3e133dd582cb4e2bb9468d",
+  "comentarioAnteriorSha256": "ac4a719c33e31617e7abc05f6dfcede5bf9f7efa29444bcb110eaf1a541cf692",
+  "comentario": {
+   "conceito": "A haste elástica não segura o fêmur da criança como uma haste rígida, que enche o canal e trava nas duas pontas. Ela funciona como um par de molas: duas hastes finas, curvadas em sentidos opostos, que se apoiam na parede interna do canal em três pontos e se empurram uma contra a outra. Para isso dar certo, o tamanho de cada haste precisa ser calculado a partir do canal.\n\n**A regra do 0,4.** No Rockwood and Green para crianças (10ª ed., cap. 25), o diâmetro de cada haste é o **menor diâmetro do canal multiplicado por 0,4**: cada haste ocupa cerca de **40% do istmo**, e as duas juntas, cerca de **80%**. O exemplo do capítulo é direto: canal de 1 cm, hastes de 4 mm. Usa-se o **menor** diâmetro porque é ali que as duas hastes precisam passar lado a lado; medir pelo maior faria as hastes travarem no istmo.\n\n**Aplicando ao caso.** O canal mede 8 mm no AP e **7 mm no perfil**. O menor é 7 mm: 7 × 0,4 = **2,8 mm**, e o tamanho que se aproxima é **3 mm** por haste. As duas juntas somam 6 mm num canal de 7 mm, dentro da ideia de encher cerca de 80% do istmo. O capítulo acrescenta que as hastes devem ser **iguais e as maiores possíveis**, e que abaixo de 3,5 mm, reservado às crianças pequenas, prefere-se o **aço**, mais rígido (aço de 3,5 mm equivale a titânio de 4 mm).\n\n**Por que o tamanho importa.** Hastes finas demais não geram a tensão necessária e deixam a fratura cair em varo ou angular; grossas demais não cabem lado a lado e travam no istmo. As curvas opostas, com o ápice no foco, criam a fixação pré-tensionada contra varo, valgo e torção. O paciente ideal tem **5 a 11 anos**, menos de **50 kg** e fratura **estável no comprimento**: acima de cerca de 49 kg, o mau resultado foi cinco vezes mais provável.\n\n> **Na prova:** cada haste elástica tem 40% do menor diâmetro do canal (0,4 × istmo); as duas enchem cerca de 80%.\n\nNo resumo de diáfise do fêmur na criança, a seção das hastes elásticas mostra a técnica e as curvas opostas.",
+   "correta": "**B: 3 mm.** O menor diâmetro do canal é 7 mm (perfil); 7 × 0,4 = 2,8 mm, o que leva a hastes de 3 mm. As duas somam 6 mm, perto dos 80% do istmo que a técnica busca, e geram a tensão das curvas opostas sem travar no canal.",
+   "incorretas": {
+    "A": "**Finas demais.** Duas hastes de 2 mm somam 4 mm num canal de 7 mm, pouco mais da metade do istmo. Sem encher o canal, as hastes não geram a tensão das curvas opostas, e a fratura tende a angular. O capítulo pede as maiores hastes possíveis dentro da regra do 0,4.",
+    "C": "**Mediu pelo diâmetro errado.** Hastes de 4 mm sairiam de um canal de 10 mm (é o exemplo do capítulo). Aqui, duas de 4 mm somariam 8 mm num canal de 7 mm no perfil: não passam lado a lado no istmo. Quem calcula pelo maior diâmetro (8 mm × 0,4 = 3,2) ainda chegaria perto de 3 mm, nunca de 4.",
+    "D": "**Não cabem.** Duas hastes de 5 mm somam 10 mm, mais que o canal inteiro. A alternativa tenta quem pensa que a haste deve encher o canal sozinha, como uma haste rígida; a elástica trabalha em par."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: As hastes elásticas."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-25-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+    "secoes": [
+     "As hastes elásticas"
+    ],
+    "blocos": [
+     "as-hastes-elasticas-8c6022b4",
+     "as-hastes-elasticas-67872f88",
+     "as-hastes-elasticas-4cd941c9",
+     "as-hastes-elasticas-1c94db09"
+    ],
+    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+    "trechosSha256": "b93b7f5e66757f6b1ba324290ac5c2f2571c7339e08c31058f5edfd3abbaa6f3"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0229": {
+  "questaoSha256": "e4c3fd3c25bde6b75e27bf419c2ff718b39a29f4759fccd9704d195ae06b20b2",
+  "comentarioAnteriorSha256": "ff0e01f862df799a13f9a4454239c285f3cc1760cdfa2a28117be63da2567e24",
+  "comentario": {
+   "alerta": "O gabarito oficial é E, mas o capítulo 51 do Rockwood and Green descreve a corona mortis como origem anômala da artéria obturatória a partir do sistema ilíaco EXTERNO (pela epigástrica inferior), não da ilíaca interna, e não dá porcentagem. A alternativa B reproduz praticamente a definição de coluna anterior do capítulo e seria defensável. Mantemos o gabarito oficial e ensinamos a anatomia correta.",
+   "conceito": "Para operar o acetábulo, Letournel ensinou a enxergá-lo de um jeito simples: a superfície articular apoiada entre os dois ramos de um **Y invertido**. Quase todas as alternativas desta questão testam se o aluno sabe desenhar esse Y e o que passa ao redor dele.\n\n**As duas colunas.** O osso inominado nasce da fusão de ílio, ísquio e púbis na cartilagem trirradiada. No Rockwood and Green (10ª ed., cap. 51):\n\n- **Coluna anterior (segmento iliopúbico):** a metade anterior da asa do ilíaco, contínua com a borda pélvica até o **ramo púbico superior**, mais a **metade anterior da superfície articular**.\n- **Coluna posterior (segmento ilioisquiático):** começa na **parte superior da incisura isquiática maior**, desce pelas incisuras maior e menor e inclui a **tuberosidade isquiática**.\n- **Pilar ciático:** a barra grossa acima da incisura isquiática maior que liga as duas colunas à sacroilíaca; é o osso intacto onde a fixação se ancora.\n\nAs paredes anterior e posterior são só a porção articular das colunas, e a superfície quadrilátera é a face interna onde as colunas se encontram.\n\n**Os vasos que a fratura e o cirurgião encontram.** O **feixe glúteo superior** sai pela parte **superior** da incisura isquiática maior; por isso fraturas altas da coluna posterior que entram na incisura podem lacerá-lo ou prendê-lo. Na frente, a **corona mortis** é a origem anômala da artéria obturatória a partir do **sistema ilíaco externo**, pela epigástrica inferior, ou anastomoses menores entre os dois sistemas, cruzando o **ramo púbico superior**. Ela corre risco nas vias anteriores: no STOPPA modificado, essas anastomoses são identificadas e ligadas antes de seguir a borda pélvica.\n\n**Onde a questão escorrega.** A banca deu como certa a alternativa da corona mortis com 80% de prevalência entre a ilíaca **interna** e a obturatória. O capítulo descreve o vaso vindo do sistema ilíaco **externo** e não traz porcentagem. Já a alternativa B, sobre a coluna anterior, repete quase palavra por palavra a definição do livro. Na prova, a resposta oficial foi E; na sala, o que importa é saber de onde vem o vaso que sangra quando se afasta o ramo púbico.\n\n> **Na prova:** coluna anterior vai da metade anterior do ilíaco ao ramo púbico superior; a posterior começa no alto da incisura isquiática maior e chega ao ísquio. Corona mortis liga o sistema ilíaco externo ao obturatório, sobre o ramo púbico.\n\nNo resumo de fraturas do acetábulo, a seção de anatomia aplicada tem o desenho do Y invertido e a lista dos vasos vizinhos.",
+   "correta": "**E: 80% dos pacientes apresentam uma anastomose entre a artéria ilíaca interna e a artéria obturadora, conhecida como corona mortis.** É o gabarito oficial. A ideia que ele carrega é verdadeira e importante: existe uma anastomose vascular sobre o ramo púbico superior que sangra nas vias anteriores e precisa ser procurada e ligada. Mas o capítulo 51 a descreve ligando o sistema ilíaco externo (epigástrica inferior) ao obturatório, sem dar porcentagem. Grave a origem correta.",
+   "incorretas": {
+    "A": "**O feixe sai por cima.** O nervo e a artéria glúteos superiores saem pela parte **superior** da incisura isquiática maior, não pela inferior. É justamente por isso que as fraturas altas da coluna posterior, que entram na incisura, ameaçam esse feixe, e que o afastamento excessivo dos abdutores na via de Kocher-Langenbeck o estira.",
+    "B": "**A definição do livro, preterida pela banca.** O capítulo define a coluna anterior como a metade anterior da asa do ilíaco, contínua com a borda pélvica até o ramo púbico superior, mais a metade anterior da superfície articular. A alternativa traz essa ideia (com as espinhas ilíacas, que ficam na metade anterior da asa) e seria defensável pelo Rockwood. A banca, porém, marcou a E; guarde que esta é a descrição correta das colunas de Letournel.",
+    "C": "**A posterior é a mais curta e começa no alto da incisura.** No Y invertido de Letournel, a coluna anterior é o ramo longo, que sobe até a crista ilíaca anterior; a posterior começa no topo da incisura isquiática maior e desce até o ísquio. A união das duas colunas ao resto do osso se faz pelo pilar ciático, acima da incisura, e não por uma interseção \"no topo da incisura\" como término da coluna posterior.",
+    "D": "**Mistura peças das duas colunas.** A coluna posterior começa na parte superior da incisura isquiática maior e inclui as incisuras maior e menor e a tuberosidade isquiática; o ílio que fica acima da incisura é o pilar ciático, que liga as colunas à sacroilíaca, e não parte da coluna posterior. A alternativa troca o ísquio pelo ílio e acrescenta a espinha isquiática como peça definidora."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Anatomia aplicada: colunas, paredes, teto e vasos; Vias de acesso."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Anatomia aplicada: colunas, paredes, teto e vasos",
+     "Vias de acesso"
+    ],
+    "blocos": [
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-c3947fa0",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-79c429e6",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-5c00be27",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-583009fe",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-008d9555",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-721a80da",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-aff451a6",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-596bb854",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-87f5224e",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-16dc66a6",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-ebf7e528",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-fd400818",
+     "vias-de-acesso-85a72bef"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "f843da7b926d51e462d4aee719088809fd3cca7a6d97d27430b69ffdd2cf23d9"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0232": {
+  "questaoSha256": "63da0ab9d8673e62a589450c4953645908fc32e39ff5dfa957c26a5322054414",
+  "comentarioAnteriorSha256": "8c3cd93823f28aa1cdb8ba694621d1ffa3db531f9a694ba34663a475382d4d8e",
+  "comentario": {
+   "conceito": "O raciocínio para escolher a via do acetábulo começa por uma regra de Letournel e Judet: cada uma das três vias padrão dá acesso **direto a uma coluna** e reduz a coluna oposta só de forma indireta. Então a primeira pergunta é qual coluna quebrou; a segunda, para que lado está o maior desvio.\n\n**A coluna anterior.** No Rockwood and Green (10ª ed., cap. 51), ela é a metade anterior da asa do ilíaco, contínua pela borda pélvica até o ramo púbico superior, mais a metade anterior da superfície articular. Uma fratura dessa coluna está, portanto, na face **interna** da pelve, ao longo da borda pélvica e do ramo púbico. Para fixá-la, é preciso chegar por dentro da pelve, por cima e pela frente.\n\n**A ilioinguinal.** É exatamente isso que ela faz. Em decúbito dorsal, a incisão vai de pouco atrás do tubérculo do glúteo médio, pela crista ilíaca, até a linha média acima da sínfise. O ilíaco é elevado da fossa ilíaca interna, o canal inguinal é aberto e a **fáscia iliopectínea**, que separa a lacuna muscular (iliopsoas e nervo femoral) da vascular (vasos ilíacos externos), é dividida. Surgem **três janelas** que expõem a face interna do inominado, da sacroilíaca à sínfise: fossa ilíaca interna, borda pélvica, ramo superior e parte da superfície quadrilátera. Ela **não abre a articulação**: a superfície articular é vista pelo traço da fratura. O capítulo a indica para **parede e coluna anteriores**, a maioria das anteriores com hemitransversa posterior e das ambas as colunas. Hoje muitos combinam a janela lateral com o STOPPA modificado, mas a lógica de acesso é a mesma.\n\n**E o fato de ser um adolescente de 15 anos?** Não muda a via: o acetábulo de 15 anos já tem a anatomia das colunas, e a escolha continua guiada pelo tipo de fratura e pelo local do desvio.\n\n| Via | Coluna que expõe |\n|---|---|\n| Kocher-Langenbeck | Posterior (parede, coluna, maioria das transversas e T com desvio posterior) |\n| Ilioinguinal | Anterior (parede, coluna, ambas as colunas) |\n| Iliofemoral estendida | As duas, mas rara, para associadas tardias |\n\n> **Na prova:** coluna anterior é ilioinguinal (ou STOPPA); coluna posterior é Kocher-Langenbeck.\n\nNo resumo de fraturas do acetábulo, a seção de vias de acesso mostra as três janelas da ilioinguinal.",
+   "correta": "**C: Ilioinguinal.** É a via padrão para a parede e a coluna anteriores: pela face interna da pelve, ela expõe da sacroilíaca à sínfise, incluindo a fossa ilíaca interna, a borda pélvica e o ramo púbico superior, onde a coluna anterior corre.",
+   "incorretas": {
+    "A": "**Via de quadril, não de acetábulo.** A via de Moore é uma via posterior usada na artroplastia do quadril. Ela não está entre as três vias padrão de Letournel e Judet e, sendo posterior, nem alcançaria a coluna anterior, que fica na face interna da pelve.",
+    "B": "**Lateral e para a articulação.** A via de Hardinge é uma via lateral do quadril, usada em artroplastia, que passa pelos abdutores até a cápsula. Não dá acesso à face interna do inominado, onde estão a borda pélvica e o ramo púbico da coluna anterior.",
+    "D": "**Grande demais para uma coluna.** A iliofemoral estendida, criada por Letournel, dá acesso simultâneo às duas colunas pela face externa do ílio, mas desvasculariza a asa, tem infecção de 4% a 19% e a maior taxa de ossificação heterotópica. Hoje fica para fraturas associadas operadas tarde, com calo, e não para uma coluna anterior isolada.",
+    "E": "**Via da coluna oposta.** A Kocher-Langenbeck dá visão direta da coluna posterior: é a via da parede e da coluna posteriores e da maioria das transversas e T com desvio posterior. A coluna anterior só seria reduzida de forma indireta, e nada pode ser fixado nela com segurança por essa via."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso; Anatomia aplicada: colunas, paredes, teto e vasos."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Vias de acesso",
+     "Anatomia aplicada: colunas, paredes, teto e vasos"
+    ],
+    "blocos": [
+     "vias-de-acesso-ae300f1b",
+     "vias-de-acesso-a24cd5ec",
+     "vias-de-acesso-59fb21f9",
+     "vias-de-acesso-4092e3ed",
+     "vias-de-acesso-cdff7c0e",
+     "vias-de-acesso-8c8f0d5a",
+     "vias-de-acesso-b5f952c0",
+     "vias-de-acesso-46c79886",
+     "vias-de-acesso-737f29b6",
+     "vias-de-acesso-bea80bc8",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-79c429e6"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "df16540b1c9e3d77298912ab845cf2b148739e68b262c83e1e982be964db04c2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0515": {
+  "questaoSha256": "b89c65debef9b02d8873031f6b641bbe1cd92fe06d12b6acdb4c24ce205adb11",
+  "comentarioAnteriorSha256": "4d3f7cb74cb99de56b3986aa8a9a2948fd958fbda210136cbe0609db1ce1e860",
+  "comentario": {
+   "conceito": "A questão chega em código: OTA/AO 62A2.3. O primeiro passo é traduzir. O próprio Rockwood and Green (10ª ed., cap. 51) diz que a OTA/AO tem códigos alfanuméricos que correspondem à classificação de Letournel, mas **sem vantagem clínica**: Letournel continua sendo a língua internacional do acetábulo. Na tradução, 62A é o grupo das fraturas parciais de uma coluna, e o A2 é um padrão **posterior**, da coluna posterior. A partir daí, a pergunta vira: qual via expõe diretamente a coluna posterior?\n\n**Uma via para cada coluna.** As três vias padrão de Letournel e Judet dão acesso direto a **uma coluna** e reduzem a oposta só de forma indireta. Para a posterior, a via é a **Kocher-Langenbeck**: ela dá visão direta de toda a face lateral da coluna posterior, da incisura isquiática à tuberosidade, e é a via da parede posterior, da coluna posterior, da coluna posterior com parede e da maioria das transversas e T com desvio posterior.\n\n**A coluna posterior isolada.** Começa na incisura isquiática maior, desce pela parte posterior da superfície quadrilátera até o ísquio e costuma cruzar o anel obturatório. A cabeça acompanha a coluna para trás e para dentro, a fratura é notoriamente instável e, com a incisura envolvida e muito desvio, ameaça o feixe glúteo superior. Tudo isso se resolve pela face posterior do osso, que é onde a Kocher-Langenbeck trabalha.\n\n**Por que não as outras.** As vias anteriores (ilioinguinal, iliofemoral) só alcançariam essa coluna de forma indireta. A iliofemoral estendida e as vias combinadas existem para quando uma via não basta: fraturas associadas operadas tarde ou desvio nas duas colunas, não um padrão posterior simples.\n\n> **Na prova:** traduza o código para Letournel antes de escolher a via. Padrão posterior é Kocher-Langenbeck.\n\nNo resumo de fraturas do acetábulo, a seção de vias de acesso traz a tabela de indicações de cada via.",
+   "correta": "**C: Kocher-Langenbeck.** O código 62A2.3 corresponde a um padrão da coluna posterior, e a Kocher-Langenbeck é a via que dá visão direta de toda a face lateral dessa coluna, indicada para parede e coluna posteriores e suas combinações.",
+   "incorretas": {
+    "A": "**Via da coluna oposta.** A ilioinguinal trabalha pela face interna da pelve, da sacroilíaca à sínfise, e é a via da parede e da coluna anteriores e das ambas as colunas. A coluna posterior só seria reduzida de forma indireta por ela.",
+    "B": "**Alcance limitado e anterior.** A iliofemoral compartilha a incisão com a de Smith-Petersen e dá acesso à fossa ilíaca interna, sem chegar medial à eminência iliopectínea; o capítulo a reserva para a coluna anterior alta. Não expõe a coluna posterior.",
+    "D": "**Reservada a casos tardios.** A iliofemoral estendida dá acesso às duas colunas, mas desvasculariza a asa, tem mais infecção e a maior taxa de ossificação heterotópica; hoje fica para fraturas associadas operadas depois de 2 a 3 semanas. Um padrão posterior simples não justifica esse preço.",
+    "E": "**Para quando uma via não reduz a outra coluna.** As vias combinadas, anterior e Kocher-Langenbeck em sequência, são usadas em fraturas como anterior com hemitransversa posterior, T e ambas as colunas. Numa fratura de uma coluna só, uma via resolve."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso; Classificação de LETOURNEL."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Vias de acesso",
+     "Classificação de LETOURNEL"
+    ],
+    "blocos": [
+     "vias-de-acesso-a24cd5ec",
+     "vias-de-acesso-59fb21f9",
+     "vias-de-acesso-d5b39490",
+     "vias-de-acesso-5be668a3",
+     "vias-de-acesso-9e3b54ba",
+     "vias-de-acesso-bea80bc8",
+     "vias-de-acesso-3aa87943",
+     "classificacao-de-letournel-e01be35b",
+     "classificacao-de-letournel-65a8bc30"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "6b5b36f4add11b6d13d8a2972968de5e69548af2834bb91f6ad28ae675d5fb1c"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0418": {
+  "questaoSha256": "9e4c1a44a656c44c26904e67076e5d1360438ef6bc83d5e40898616bf653c782",
+  "comentarioAnteriorSha256": "76582911020d77a0ce45d034bb1a20e0c57a6d3e110cc471aea4e81f5d496ef8",
+  "comentario": {
+   "conceito": "Toda via de acesso tem uma história e uma lógica. A iliofemoral estendida é a via que tentou resolver de uma vez o problema das fraturas que atravessam as duas colunas, e o preço que ela cobra explica por que hoje quase não se usa.\n\n**Quem criou e o que expõe.** No Rockwood and Green (10ª ed., cap. 51), a iliofemoral estendida foi **criada por Letournel**. O paciente fica em **decúbito lateral**; a incisão em J invertido vai da espinha ilíaca posterossuperior, pela crista, até a anterossuperior e desce pela coxa. Os glúteos e o tensor da fáscia lata são elevados da face externa do ílio **presos ao feixe glúteo superior**, que passa a ser o pedículo desse grande retalho muscular, e os abdutores são soltos do trocanter (ou ele é osteotomizado). Com isso, abre-se a face externa do ílio inteira e se ganha o **acesso simultâneo máximo às duas colunas**.\n\n**O preço.** Desnudar a face externa da asa desvasculariza a asa e a cúpula, a infecção vai de **4% a 19%**, e a via tem a **maior taxa de ossificação heterotópica** entre as do acetábulo. Por isso hoje ela fica quase só para as **fraturas associadas operadas tardiamente**, depois de 2 a 3 semanas, quando o calo impede a redução indireta; muitos preferem vias anterior e posterior em sequência.\n\n**Não confundir com a iliofemoral simples.** A iliofemoral compartilha a incisão com a de Smith-Petersen, mas é intrapélvica: dá acesso à crista e à fossa ilíaca **interna**, sem ir medial à eminência iliopectínea, para a coluna anterior alta. A sínfise púbica pertence à ilioinguinal e ao STOPPA.\n\n> **Na prova:** iliofemoral estendida é de Letournel, em decúbito lateral, e expõe as duas colunas pela face externa do ílio; paga com ossificação heterotópica e infecção.\n\nNo resumo de fraturas do acetábulo, a seção sobre a iliofemoral, a iliofemoral estendida e as vias combinadas compara as três.",
+   "correta": "**A: foi criada por Letournel em 1975 e dá acesso contínuo à face externa do ílio e às duas colunas.** É a via de Letournel que eleva glúteos e tensor da face externa do ílio, presos ao feixe glúteo superior, e oferece o acesso simultâneo máximo às duas colunas. O capítulo não cita o ano; o que decide a questão é o autor e a extensão do acesso.",
+   "incorretas": {
+    "B": "**Confundiu com a iliofemoral simples.** Smith-Petersen dá nome à incisão que a iliofemoral compartilha, e a iliofemoral é que trabalha pela fossa ilíaca interna. Mesmo ela não chega à sínfise púbica, que é campo da ilioinguinal e do STOPPA. A estendida trabalha pela face externa do ílio, do lado oposto.",
+    "C": "**O decúbito é lateral.** O capítulo descreve a iliofemoral estendida em decúbito lateral; o dorsal é o das vias anteriores (ilioinguinal, STOPPA, iliofemoral). E a incisão sobe pela crista ilíaca e desce pela coxa, o que só se aproveita com o paciente de lado.",
+    "D": "**Os dois músculos não têm o mesmo nervo.** O tensor da fáscia lata é elevado junto com os glúteos, preso ao feixe glúteo superior, que o supre; o reto femoral pertence ao compartimento anterior da coxa, do nervo femoral (capítulo 57). A justificativa da alternativa é falsa, e por isso a frase não se sustenta."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso.",
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Anatomia aplicada e forças deformantes."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Vias de acesso"
+    ],
+    "blocos": [
+     "vias-de-acesso-9aeddbf1",
+     "vias-de-acesso-bea80bc8",
+     "vias-de-acesso-c592e79e",
+     "vias-de-acesso-672e946b",
+     "vias-de-acesso-a24cd5ec",
+     "vias-de-acesso-59fb21f9",
+     "vias-de-acesso-3aa87943"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "20a4ba8d0bfc9fa80416c004b7a5846fcc441fbeffe5740fcfd748c3fa24ab92"
+   },
+   {
+    "resumo": "rockwood10-57-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+    "secoes": [
+     "Anatomia aplicada e forças deformantes"
+    ],
+    "blocos": [
+     "anatomia-aplicada-e-forcas-deformantes-e6aeb2a9"
+    ],
+    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+    "trechosSha256": "0e4fadf2ee41229729bcb992412bba1e72be48f22cecbd650b444eb5cc1dee35"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0038": {
+  "questaoSha256": "9ce8f90c56aee5000b9f418825365b9385469cadd77793cedd941def5a58b220",
+  "comentarioAnteriorSha256": "598271e2e370aa7e55b594b311c95e5421c91dc006289205c686d42f0f51ebf3",
+  "comentario": {
+   "conceito": "Imagine uma fratura de ambas as colunas tão cominutiva que nenhum pedaço da superfície articular ficou preso ao ílio. Pela lógica, a cabeça femoral deveria ficar solta num mosaico de fragmentos. Mas, na radiografia, muitas vezes os fragmentos aparecem agrupados em volta da cabeça, como se ainda formassem uma cúpula. Esse fenômeno é a **congruência secundária**, e a questão pergunta o que o sustenta.\n\n**O que é a fratura de ambas as colunas.** No Rockwood and Green (10ª ed., cap. 51), é a fratura em que o acetábulo fica **completamente desconectado do esqueleto axial**: nenhuma parte da superfície articular continua presa ao ílio intacto, e há separação entre um componente anterior e um posterior. É a associada mais comum (23%) e a mais frequente no idoso.\n\n**Por que os fragmentos não se espalham.** Mesmo nas formas muito cominutivas, o **lábio acetabular costuma ficar íntegro**. O lábio é um anel fibrocartilaginoso preso em toda a borda do acetábulo, e cada fragmento articular continua ligado a ele. Quando a cabeça medializa, puxada pela tração muscular, os fragmentos giram em volta dela, mas o lábio os mantém agrupados como os gomos de uma laranja presos à casca. Assim eles **continuam congruentes com a cabeça**, ainda que a articulação toda tenha migrado para dentro. O capítulo destaca que essa situação é **exclusiva** desse tipo de fratura.\n\n**O sinal que acompanha.** Como toda a superfície articular medializou com a cabeça, a parte mais caudal do ílio intacto fica para fora e aparece como o **sinal do esporão**, patognomônico de ambas as colunas e mais bem visto na oblíqua obturatriz.\n\n**Por que isso importa.** A congruência secundária é uma das situações em que o capítulo aceita tratar sem cirurgia: a cabeça continua coberta por cartilagem articular, mesmo fora do lugar. O critério é exigente: congruência entre a cabeça e os fragmentos **sem tração**, com paralelismo nas três incidências. E ela é **necessária, mas não suficiente**: o desvio não pode limitar o movimento, o encurtamento tem de ser aceitável, e o prognóstico é pior que o da redução anatômica. Nessas fraturas, o arco do teto de Matta não se aplica, porque não há teto intacto para medir.\n\n> **Na prova:** congruência secundária é exclusiva de ambas as colunas e existe porque o lábio íntegro mantém os fragmentos agrupados em volta da cabeça que medializou.\n\nNo resumo de fraturas do acetábulo, a seção sobre ambas as colunas mostra a congruência secundária e o sinal do esporão.",
+   "correta": "**A: labrum.** O lábio acetabular costuma ficar íntegro mesmo nas fraturas de ambas as colunas muito cominutivas. Presos a ele, os fragmentos articulares giram em volta da cabeça que medializou e continuam congruentes com ela.",
+   "incorretas": {
+    "B": "**Liga a cabeça à fossa, não os fragmentos entre si.** O ligamento redondo vai da fóvea da cabeça à fossa acetabular, no centro do acetábulo. Ele não abraça a borda articular e não tem como manter os fragmentos periféricos agrupados em volta da cabeça.",
+    "C": "**Um segmento só da borda.** O ligamento transverso fecha a incisura acetabular, embaixo, completando o anel da borda. É uma parte pequena do contorno, sem ligação com os fragmentos superiores e posteriores. A estrutura contínua que segura todos os fragmentos é o lábio.",
+    "D": "**Está fora da articulação.** O ligamento iliofemoral é um espessamento anterior da cápsula, do ílio ao fêmur. Ele segura a hiperextensão do quadril, mas não se prende aos fragmentos da superfície articular e não explica por que eles acompanham a cabeça."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Classificação de LETOURNEL; Quem pode ficar sem cirurgia."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Classificação de LETOURNEL",
+     "Quem pode ficar sem cirurgia"
+    ],
+    "blocos": [
+     "classificacao-de-letournel-189e52d0",
+     "classificacao-de-letournel-5c165487",
+     "classificacao-de-letournel-e0c8fa8d",
+     "classificacao-de-letournel-95854c73",
+     "classificacao-de-letournel-51890397",
+     "classificacao-de-letournel-18f9732d",
+     "quem-pode-ficar-sem-cirurgia-b7f47596",
+     "quem-pode-ficar-sem-cirurgia-2a347117",
+     "quem-pode-ficar-sem-cirurgia-b45eec2a"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "fd03b8798892273cf5b7cad98091bb3cecd6f2858a6b1149470b7ee6c0fd57a3"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0541": {
+  "questaoSha256": "bff105cad30fec69994c74b78cdb16451402913d1c21db19b43e67a6de444a0d",
+  "comentarioAnteriorSha256": "15cbf178ba0c193dad41a6126c464f5b4c9c8016dbe600715307e3e151efdb88",
+  "comentario": {
+   "conceito": "No pilão tibial, a fíbula é mais que um osso quebrado ao lado: ela é a coluna lateral da tíbia distal. A pergunta é quando se pode abrir mão dela, e a resposta só faz sentido quando se entende para que ela serve.\n\n**As três colunas.** O Rockwood and Green (10ª ed., cap. 64) usa a teoria das colunas de Assal: a tíbia distal tem uma coluna **medial**, uma **lateral**, da qual a fíbula faz parte, e uma **posterior**. Cada coluna precisa de fixação estável, e as falhas precoces vêm quase sempre de montagem insuficiente ou de fixação na coluna errada.\n\n**A fíbula conta a deformidade.** No pilão, a fíbula costuma ser mais cominuta que nas fraturas simples do tornozelo, e o tipo de quebra revela a força. Com **valgo**, o lado lateral é comprimido e a fíbula fica **cominuta**; com **varo**, o lado lateral é tracionado e a fíbula falha por tração, enquanto o lado medial é esmagado. Uma fíbula fixada segura a coluna lateral contra o **valgo**, como um contraforte, e a redução anatômica dela ajuda a acertar a superfície articular, o alinhamento da tíbia e a posição do tálus. Mas a fíbula de traço simples fixada **não impede o colapso em varo**, que depende do suporte medial.\n\n**Quando deixar a fíbula.** O capítulo lista as razões para não fixá-la: **cobertura ruim** das partes moles, fraturas **pouco desviadas**, fraturas **da metade ou do terço proximal** da fíbula e os casos em que o tratamento **exige encurtar a tíbia**. Este último é o do enunciado: uma ferida medial aberta que só fecha primariamente se a perna ficar um pouco mais curta. Fixar a fíbula no comprimento manteria a tíbia esticada e a ferida aberta; deixá-la livre permite o encurtamento que aproxima as bordas. Mesmo assim, o autor sênior acha que a fixação da fíbula está **quase sempre indicada** e que, nos 43C, ela deve ser estabilizada para evitar o colapso tardio; com a pele lateral ruim, há opções percutâneas (haste, fio ou parafuso longo).\n\n> **Na prova:** deixa-se a fíbula sem fixar quando o encurtamento faz parte do tratamento (ferida a fechar), com pele lateral ruim, fratura pouco desviada ou fratura alta da fíbula.\n\nNo resumo de pilão tibial, a seção sobre a fíbula e as três colunas explica o papel dela contra o valgo e o varo.",
+   "correta": "**A: feridas mediais abertas nas quais o encurtamento da fíbula facilita o fechamento primário.** O capítulo inclui entre as razões para não fixar a fíbula os casos em que o tratamento exige encurtar a tíbia: deixar a fíbula sem fixação permite o encurtamento que aproxima as bordas da ferida medial.",
+   "incorretas": {
+    "B": "**A lesão vascular pede mais estabilidade, não menos.** Diante de um reparo vascular, o esqueleto estável protege a anastomose. A lesão vascular não está entre as razões do capítulo para deixar a fíbula sem fixação.",
+    "C": "**Fíbula baixa é a que mais importa.** As exceções do capítulo são a fíbula da metade ou do terço proximal, longe da articulação. Uma fíbula infrassindesmal está junto do tornozelo, faz parte da coluna lateral e influencia diretamente a posição do tálus.",
+    "D": "**Mecanismo não é critério.** O componente torcional define o padrão da fratura, mas o capítulo decide pela fíbula conforme partes moles, desvio, altura do traço e necessidade de encurtar, não pelo mecanismo. Uma fíbula desviada por torção continua precisando de redução."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: A fíbula e as três colunas."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-64-pilao-tibial",
+    "titulo": "Fratura do pilão tibial",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+    "secoes": [
+     "A fíbula e as três colunas"
+    ],
+    "blocos": [
+     "a-fibula-e-as-tres-colunas-5a05c228",
+     "a-fibula-e-as-tres-colunas-f9bcec08",
+     "a-fibula-e-as-tres-colunas-988b9194",
+     "a-fibula-e-as-tres-colunas-d8d4ad29",
+     "a-fibula-e-as-tres-colunas-286852d8",
+     "a-fibula-e-as-tres-colunas-07fa037a",
+     "a-fibula-e-as-tres-colunas-54d4ae66",
+     "a-fibula-e-as-tres-colunas-d7b98395",
+     "a-fibula-e-as-tres-colunas-a82a4540",
+     "a-fibula-e-as-tres-colunas-427ccf73",
+     "a-fibula-e-as-tres-colunas-e5cf59be",
+     "a-fibula-e-as-tres-colunas-3ec81f10",
+     "a-fibula-e-as-tres-colunas-4a0060da"
+    ],
+    "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+    "trechosSha256": "8ad1462e6d294058014db7ede0ce034bfa78b3f113adbae1f88590e3d29d23c2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pe-tornozelo-0282": {
+  "questaoSha256": "83147e59a29b9191f1c19567a1a88902bfad25eca49a8d5013e02ff64546d4e0",
+  "comentarioAnteriorSha256": "9ae14238c2089642accac4529b2e34b1ea6454da9b2c049665b20633bb7d6abb",
+  "comentario": {
+   "alerta": "O capítulo 65 do Rockwood and Green descreve o deltoide superficial como o leque que nasce no colículo anterior e vai ao tálus, ao navicular e ao sustentáculo do calcâneo, e o profundo como intra-articular, do colículo posterior ao tálus. Ele não nomeia o tibiotalar anterior em nenhuma das camadas, e alguns autores o colocam na profunda; o tibiocalcâneo, que vai ao sustentáculo, é claramente superficial. O gabarito oficial foi mantido.",
+   "conceito": "Um jogador de futebol torce o tornozelo e a dor está do lado de dentro, sem fratura. A ressonância mostra rotura do tibiotalar anterior e do tibiocalcâneo. Para dizer qual parte do deltoide rompeu e o que ele deixou de segurar, é preciso conhecer as suas duas camadas.\n\n**Duas camadas, dois papéis.** O Rockwood and Green (10ª ed., cap. 65) descreve o deltoide, o colateral medial, em duas camadas. O **superficial** nasce no **colículo anterior** do maléolo medial e se abre em **leque** para o tálus, o **navicular** e o **sustentáculo do calcâneo**, contínuo com as bainhas do tibial posterior e do flexor longo do hálux. O **profundo** é **intra-articular**, vai do **colículo posterior** (e do sulco entre os colículos) à cúpula do tálus, e é o que se considera o **freio do tálus contra o desvio lateral e a rotação**.\n\n**Por que a função muda com a camada.** O profundo liga a tíbia direto ao tálus, por dentro da articulação: é ele que impede o tálus de escorregar para fora na pinça. O superficial passa por cima e se prende também ao navicular e ao calcâneo, cruzando a subtalar. Por isso o leque superficial atua sobre o **retropé como um todo**, resistindo a que o pé gire para fora, em **eversão e abdução**. O **tibiocalcâneo**, que chega ao sustentáculo, é o exemplo: um ligamento que termina no calcâneo controla o retropé.\n\n**Lendo o caso.** O tibiocalcâneo é superficial sem discussão, e o tibiotalar anterior é a parte do leque que vai ao tálus pela frente. A lesão, portanto, é da camada superficial, e a função perdida é a contenção da eversão e da abdução do retropé. A lesão que solta o tálus para fora na pinça é a do profundo, que nasce no colículo posterior.\n\n| Camada | Origem | Inserção | Função |\n|---|---|---|---|\n| Superficial | Colículo anterior | Tálus, navicular, sustentáculo | Retropé (eversão e abdução) |\n| Profunda | Colículo posterior | Cúpula do tálus | Desvio lateral e rotação do tálus |\n\n> **Na prova:** deltoide superficial é o leque do colículo anterior até o navicular e o calcâneo; o profundo, intra-articular, do colículo posterior ao tálus, é o mais forte e segura o tálus contra o desvio lateral.\n\nNo resumo de fraturas do tornozelo, a seção sobre o deltoide e os ligamentos laterais mostra as duas camadas.",
+   "correta": "**A: superficial; evitar eversão e abdução do retropé.** O tibiocalcâneo é parte do leque superficial que nasce no colículo anterior e chega ao sustentáculo do calcâneo. Por se prender ao calcâneo e ao navicular, essa camada segura o retropé contra a eversão e a abdução.",
+   "incorretas": {
+    "B": "**A função é do superficial, mas a camada não.** Eversão e abdução do retropé são o papel do leque que chega ao calcâneo e ao navicular, a camada superficial. O profundo, intra-articular, vai do colículo posterior só até o tálus, e o tibiocalcâneo nunca faz parte dele.",
+    "C": "**Camada certa, função do profundo.** Impedir a lateralização do tálus na pinça é o papel do deltoide profundo, que liga o colículo posterior direto ao tálus. A lesão do enunciado inclui o tibiocalcâneo, superficial, cuja função é controlar o retropé.",
+    "D": "**É a descrição da outra lesão.** O deltoide profundo, com a função de impedir o desvio lateral do tálus, é o componente decisivo na fratura do tornozelo instável (SER IV). Mas o enunciado descreve o tibiotalar anterior e o tibiocalcâneo, que pertencem ao leque superficial."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Anatomia aplicada: o encaixe, a sindesmose e o deltoide."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-65-tornozelo",
+    "titulo": "Fraturas do tornozelo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 65 · Ankle Fractures",
+    "secoes": [
+     "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+    ],
+    "blocos": [
+     "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-27378c7e",
+     "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+     "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-11af932c",
+     "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-1360e2ec",
+     "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-5cf8f259"
+    ],
+    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+    "trechosSha256": "323c0dd1ac57bbb6024cc3ee63a812f08fab8c4fceea7210b91bd4a94b85a247"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pe-tornozelo-0348": {
+  "questaoSha256": "6f88a6f661f99da616ba7fcd2c50e466f6ef34bba9637aca3d9f56c6e0b1a16c",
+  "comentarioAnteriorSha256": "15a993cfdff8ceb1faa9557ac8ae459bfac998d9e76ec70e0138c56db24bf7be",
+  "comentario": {
+   "provavel": "A",
+   "alerta": "A banca não divulgou o gabarito oficial. O capítulo 65 do Rockwood and Green descreve o estresse com o tornozelo em posição neutra e rotação externa firme do antepé, sem falar em pronação ou supinação. A resposta provável A (pronação e rotação lateral) é a única que combina a rotação externa, que testa o deltoide, com o pé fora da supinação; D também tem a rotação certa, e a escolha entre as duas não é sustentada pelo capítulo.",
+   "conceito": "Um tornozelo com fratura isolada do maléolo lateral e o encaixe alinhado na radiografia pode ser uma lesão estável, que vai bem com bota, ou uma instável, em que o deltoide rompeu e o tálus só não saiu do lugar ainda. Como o exame clínico engana, o capítulo propõe forçar a articulação na radiografia. A questão pergunta em que direção.\n\n**O que se procura.** A chave anatômica é o **deltoide profundo**, intra-articular, do colículo posterior ao tálus, o freio do tálus contra o desvio lateral e a rotação. Se ele rompeu, o tálus pode ser empurrado para fora na pinça e o **espaço claro medial** se abre. Edema, equimose e dor medial apoiam, mas não fazem o diagnóstico: a dor medial teve valor preditivo positivo menor que 50% (Rockwood and Green, 10ª ed., cap. 65).\n\n**Como se faz o teste.** No estresse manual, o paciente fica em decúbito dorsal, a perna em **20 graus de rotação interna** para obter a mortalha, o tornozelo em **posição neutra** e o examinador aplica uma **rotação externa** firme e progressiva no antepé. Girar o pé para fora empurra o tálus contra a fíbula e, se o lado medial não segura, abre o espaço claro medial. No estresse gravitacional, o paciente deita de lado sobre o membro lesado com a perna e o pé pendentes, e o peso do pé faz a mesma rotação externa. Os dois testes se equivalem, e o gravitacional dói menos e irradia menos o cirurgião.\n\n**O detalhe que engana.** O teste deve evitar a **flexão plantar**: o tálus é mais estreito atrás, e em flexão plantar a parte estreita fica na pinça, criando um alargamento aparente que não é instabilidade.\n\n**Quanto vale o teste.** Pouco, segundo o capítulo: muitos testes positivos com 4 a 5 mm de espaço claro medial consolidaram bem sem cirurgia, e no ensaio canadense COTS operar ou não deu a mesma função em 1 ano. Por isso muitos centros preferem o **teste da marcha**: bota com carga total e radiografia em 1 semana.\n\n> **Na prova:** estresse do deltoide é rotação externa (lateral) do antepé com o tornozelo em neutro; flexão plantar falseia o resultado.\n\nNo resumo de fraturas do tornozelo, a seção sobre a fratura isolada do maléolo lateral descreve os testes manual, gravitacional e da marcha.",
+   "correta": "**A: pronação e rotação lateral.** O teste do deltoide é a rotação externa (lateral) do antepé, que empurra o tálus contra a fíbula e abre o espaço claro medial se o deltoide profundo estiver roto. O capítulo descreve o tornozelo em neutro, sem citar pronação; das combinações oferecidas, é a que a resposta provável adota.",
+   "incorretas": {
+    "B": "**Rotação para o lado errado.** A rotação medial (interna) do pé leva o tálus para dentro, para longe da fíbula, e alivia o lado medial em vez de forçá-lo. O espaço claro medial não se abre, e um deltoide roto passaria despercebido.",
+    "C": "**Duplamente invertido.** Supinação com rotação medial fecha o lado medial e afasta o tálus da fíbula. É o oposto da força que abre o espaço claro medial na lesão do deltoide.",
+    "D": "**A rotação está certa, o resto não é do capítulo.** A rotação externa é o movimento do teste, e a supinação-rotação externa é o mecanismo da fratura. Mas o capítulo pede o tornozelo em neutro, sem supinação; entre as duas combinações com rotação lateral, a resposta provável escolhida foi a pronação."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Estabilidade: a fratura isolada do maléolo lateral e o teste; Anatomia aplicada: o encaixe, a sindesmose e o deltoide."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-65-tornozelo",
+    "titulo": "Fraturas do tornozelo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 65 · Ankle Fractures",
+    "secoes": [
+     "Estabilidade: a fratura isolada do maléolo lateral e o teste",
+     "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+    ],
+    "blocos": [
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-e18d75e2",
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-35be2a86",
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-d437576a",
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-b0677a6c",
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-ac7ef1d4",
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-004cf47e",
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-f501d07b",
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-a3ca0427",
+     "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+     "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-5cf8f259"
+    ],
+    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+    "trechosSha256": "706900bd81f7681398e7ae1a32b70541fb330ceb14f46fa04ce8334016f55ac5"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1015": {
+  "questaoSha256": "b266e617238e012fb9c6cb376149ca56538cffa7705624776908ba67080eee4a",
+  "comentarioAnteriorSha256": "60cb8d6a91ca91f67a20e8d7dfd9a528b1eb97aa1cc7fec38773968921f2e718",
+  "comentario": {
+   "alerta": "O gabarito oficial (A) inclui a sutura do ligamento deltoide e a placa um terço de tubo. O capítulo 65 do Rockwood and Green diz que reparar o deltoide, recomendado no passado, é desnecessário quando a fíbula é fixada, e, para a fíbula cominuta (o grupo C2 é multifragmentar), prefere placa em ponte de compressão dinâmica de pequenos fragmentos à um terço de tubo. A estabilização da sindesmose do gabarito está de acordo com o capítulo. Mantemos o gabarito e explicamos as diferenças.",
+   "conceito": "A chave desta questão está no código. Antes de escolher o implante, é preciso ler o que a classificação AO/OTA diz sobre cada lado do tornozelo.\n\n**O que significa 44C2.1.** Na AO/OTA, o tornozelo é o segmento **44**, com os mesmos A, B e C de Weber: **44A** infrassindesmal, **44B** transsindesmal e **44C suprassindesmal**, isto é, a fíbula quebra acima da sindesmose. O grupo **C2** é a fíbula **multifragmentar**, e a questão da ENARE trata o **C2.1** como fratura com **lesão ligamentar medial**: o deltoide roto, e não o maléolo medial fraturado (Rockwood and Green, 10ª ed., cap. 65).\n\n**O que isso exige.** Uma fratura suprassindesmal com o deltoide roto é instável: fíbula quebrada acima da sindesmose, sindesmose aberta e lado medial sem freio. O tálus pode escorregar para fora a cada passo. O capítulo trata a 44C com lesão do deltoide fixando a **fíbula** e estabilizando a **sindesmose**. Não há maléolo medial a fixar, porque a lesão medial é ligamentar.\n\n**Duas ressalvas do capítulo ao gabarito.** Primeiro, o deltoide: com a fíbula fixada e o tálus reduzido sob o plafond, reparar o deltoide, como se fazia no passado, é desnecessário. Segundo, o implante: numa fíbula cominuta, o parafuso de tração não funciona, e o capítulo sugere placa em ponte de compressão dinâmica de pequenos fragmentos, mais forte que a um terço de tubo. A ideia central do gabarito, fíbula fixada mais sindesmose estabilizada, é exatamente a do livro.\n\n> **Na prova:** 44C é suprassindesmal; com lesão ligamentar medial, trata-se com fixação da fíbula e estabilização da sindesmose. Maléolo medial só se fixa quando está fraturado.\n\nNo resumo de fraturas do tornozelo, a seção sobre AO/OTA e o tratamento pela classificação traz os casos da ENARE.",
+   "correta": "**A: osteossíntese da fíbula com placa um terço de tubo de pequenos fragmentos, sutura do ligamento deltoide e estabilização da sindesmose anterior com parafuso transindesmal.** É a única alternativa que fixa a fíbula, estabiliza a sindesmose e trata o lado medial como ligamentar. O capítulo dispensaria a sutura do deltoide e preferiria uma placa em ponte para a fíbula multifragmentar, mas a lógica do tratamento é a mesma.",
+   "incorretas": {
+    "B": "**Esquece a sindesmose.** Numa fratura suprassindesmal instável, a sindesmose precisa ser testada e estabilizada para manter a fíbula ajustada à tíbia. Fixar o canto posterior sem que o enunciado descreva fratura do maléolo posterior, e deixar a sindesmose sem estabilização, trata uma lesão que não está descrita e ignora a que está.",
+    "C": "**Fixa um maléolo que não quebrou.** A placa de compressão dinâmica é, inclusive, a que o capítulo prefere para a fíbula cominuta, e a sindesmose está estabilizada. Mas a lesão medial descrita é ligamentar: não há fratura do maléolo medial para receber parafusos canulados.",
+    "D": "**Banda de tensão num maléolo íntegro.** Fios e cerclagem servem a maléolos mediais fraturados, pequenos ou transversos. Com a lesão medial ligamentar, não há osso a fixar.",
+    "E": "**Duas fixações erradas e nenhuma certa.** A alternativa fixa o maléolo medial e o canto posterior, nenhum deles fraturado no caso dado, e deixa sem tratamento a sindesmose de uma fratura suprassindesmal instável."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: A classificação de LAUGE-HANSEN e a de DANIS-WEBER; Estabilidade: a fratura isolada do maléolo lateral e o teste; Anatomia aplicada: o encaixe, a sindesmose e o deltoide."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-65-tornozelo",
+    "titulo": "Fraturas do tornozelo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 65 · Ankle Fractures",
+    "secoes": [
+     "A classificação de LAUGE-HANSEN e a de DANIS-WEBER",
+     "Estabilidade: a fratura isolada do maléolo lateral e o teste",
+     "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+    ],
+    "blocos": [
+     "a-classificacao-de-lauge-hansen-e-a-de-danis-web-74872df1",
+     "a-classificacao-de-lauge-hansen-e-a-de-danis-web-f8738c81",
+     "a-classificacao-de-lauge-hansen-e-a-de-danis-web-859fa659",
+     "estabilidade-a-fratura-isolada-do-maleolo-latera-35be2a86",
+     "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500"
+    ],
+    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+    "trechosSha256": "45f7c1b53832ab23401c086229932170172f3567e7ddbf89158748605ad03ab1"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0193": {
+  "questaoSha256": "71d76ee3b03a2fc34d9d935b91beaf7df29d2fa2a02bcf7c12dde45f5d02ab1e",
+  "comentarioAnteriorSha256": "cfc902c01b9dbed256526f2c3a399f691ac3fb77224bafd22fd5dbd8cc7d9758",
+  "comentario": {
+   "conceito": "A banca descreve uma classificação pelas três coisas que ela soma, mecanismo (morfologia), neurologia e complexo ligamentar posterior, e acrescenta o detalhe que a separa de todas as outras: **ela dá um número que vira conduta**. Só uma das alternativas faz isso.\n\n**Por que as classificações antigas não bastavam.** No Rockwood and Green (10ª ed., cap. 49), as primeiras classificações eram só morfológicas. **Holdsworth** atribuiu um mecanismo a cada padrão e criou a ideia de colunas; **Denis** acrescentou a coluna média e dividiu as lesões em compressão, explosão, cinto de segurança e fratura-luxação; a **AO** original separava compressão (A), flexão (B) e rotação (C). Nenhuma incluía o estado neurológico nem dizia o que fazer.\n\n**O TLICS.** O **Thoracolumbar Injury Classification and Severity Score**, de Vaccaro (2005), foi criado para corrigir essas falhas. Ele soma pontos de **três domínios**:\n\n| Domínio | Pontuação |\n|---|---|\n| Morfologia | Compressão 1; explosão 2; translação ou rotação 3; **distração 4** |\n| Complexo ligamentar posterior | Íntegro 0; indeterminado 2; lesado 3 |\n| Neurologia | Intacto 0; raiz 2; medula completa 2; **incompleta 3**; cauda equina 3 |\n\nE o total vira conduta: **3 ou menos, não cirúrgico; 4, decisão do cirurgião; 5 ou mais, cirúrgico**. A lógica dos pesos ensina: a distração vale mais porque é a banda de tensão rompida e a coluna que se abre; a lesão neurológica **incompleta** vale mais que a completa porque ainda tem tecido a salvar com descompressão.\n\n**As críticas do capítulo.** O TLICS depende de um exame neurológico que não se obtém em boa parte dos politraumatizados, não diz que cirurgia fazer e reflete a escola norte-americana. A **AO Spine revisada** respondeu acrescentando modificadores neurológicos e clínicos à morfologia, mas segue como classificação com notações, sem um escore que some e indique a conduta.\n\n> **Na prova:** escore que soma morfologia, neurologia e complexo ligamentar posterior e indica cirurgia com 5 ou mais é o TLICS.\n\nNo resumo de coluna toracolombar, a seção de classificações traz a tabela do TLICS e a lógica de cada peso.",
+   "correta": "**B: TLICS.** É a única classificação que soma três domínios, morfologia, estado neurológico e integridade do complexo ligamentar posterior, num escore numérico que orienta o tratamento: até 3 conservador, 4 a critério do cirurgião, 5 ou mais cirúrgico. O enunciado diz \"mecanismo\"; o capítulo fala em morfologia, mas só o TLICS reúne esses três elementos.",
+   "incorretas": {
+    "A": "**Descreve, não pontua.** A AO original separava compressão, flexão e rotação, sem neurologia e sem guiar a conduta. A AO Spine revisada acrescentou modificadores neurológicos (N0 a N4) e clínicos, mas continua uma classificação morfológica com notações, não um escore numérico que some e devolva uma conduta.",
+    "C": "**Três colunas, sem escore.** Denis criou a coluna média e dividiu as lesões em compressão, explosão, cinto de segurança e fratura-luxação, graduando a instabilidade em mecânica, neurológica ou ambas. Foi um avanço conceitual, mas não soma pontos nem trata o complexo ligamentar posterior como domínio independente.",
+    "D": "**Classificação antiga e morfológica.** O capítulo não traz a classificação de Böhler; o que ele mostra é que as classificações antigas eram só morfológicas, sem neurologia e sem conduta. Um escore com três domínios e corte para cirurgia é a proposta do TLICS."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Classificações: estabilidade, Denis, AO Spine e TLICS."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-49-fratura-toracolombar",
+    "titulo": "Fraturas e luxações da coluna toracolombar",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+    "secoes": [
+     "Classificações: estabilidade, Denis, AO Spine e TLICS"
+    ],
+    "blocos": [
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-1b1233da",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-4ce4e3c1",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-a3d744c7",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-470424ae",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-eaccb38a",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-d4dcab99",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-4aa77835",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-e7b94dbb",
+     "classificacoes-estabilidade-denis-ao-spine-e-tli-52a085a4"
+    ],
+    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+    "trechosSha256": "0f1353295fb2064b10a88457d52f27f6e40dd08d76f86f6f9d30ced385b0f6b9"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0643": {
+  "questaoSha256": "64576b07ba8370abfda589615950419235c0733830f4fa47fab2650baf33e00f",
+  "comentarioAnteriorSha256": "28d4952e7e738d72f65c7fd00ace64138cf5d5d7eabfbb1d11f63320309725e0",
+  "comentario": {
+   "conceito": "Imagine uma criança de 8 anos que cai de lado brincando no recreio e bate o ombro no chão. Horas depois, chega com dor e um degrau sobre a clavícula. A questão pergunta o mecanismo mais comum dessa fratura na idade escolar, e o raciocínio é o mesmo que explica a clavícula do adulto.\n\n**Como a força chega.** No Rockwood and Green (10ª ed., cap. 34), o mecanismo mais comum da fratura da clavícula é o **impacto direto na ponta do ombro**, com a força chegando **de lateral**, seguido da **queda sobre a mão espalmada**. A clavícula funciona como uma escora entre o esterno e a escápula. Quando o ombro bate no chão, a força empurra a cintura escapular para dentro e comprime a clavícula no sentido do seu comprimento, como se apertássemos um graveto pelas pontas. A cintura cede num de três pontos: a acromioclavicular, a esternoclavicular (rara) ou a própria clavícula.\n\n**Por que quebra no meio.** A fratura cai no **terço médio** em 80% a 85% das vezes, porque ali o osso é mais estreito, curvo e sem a proteção de músculos e ligamentos que as pontas têm. É o ponto onde o graveto comprimido se dobra.\n\n**E na criança.** O capítulo é de adultos, mas descreve esse mesmo mecanismo como o mais comum, e é o que as provas do TARO cobraram para a idade escolar. Na abordagem da criança, o capítulo pediátrico lembra que as fraturas têm três origens, trauma acidental, maus-tratos e condição patológica, e que uma queda banal explica uma fratura comum quando a idade e o padrão combinam. Uma criança em idade escolar que cai de lado sobre o ombro é exatamente esse cenário acidental.\n\n> **Na prova:** a clavícula quebra, na maioria das vezes, por impacto direto na ponta do ombro (força lateral, compressão); a queda com a mão espalmada vem depois.\n\nNo resumo de fratura da clavícula, a seção sobre o mecanismo mostra como a força lateral escolhe entre a acromioclavicular, a clavícula e a esternoclavicular.",
+   "correta": "**D: queda ao solo com trauma na região lateral do ombro.** É o mecanismo mais comum que o capítulo descreve: impacto direto na ponta do ombro, com a força chegando de lateral e comprimindo a clavícula no seu comprimento até ela ceder no terço médio.",
+   "incorretas": {
+    "A": "**Existe, mas não é o mais comum.** Maus-tratos são uma das três origens das fraturas na criança e devem ser pensados quando a idade, o padrão ou a história não combinam. Na criança em idade escolar que cai brincando, o trauma acidental explica a fratura, e é ele o mecanismo predominante.",
+    "B": "**O golpe é na ponta do ombro, não em cima do osso.** O capítulo marca como armadilha o trauma direto sobre a clavícula: a força que a fratura vem de lateral, pela ponta do ombro, e não de um golpe aplicado diretamente sobre a diáfise.",
+    "C": "**Vem em segundo lugar.** A queda com a mão espalmada transmite a força pelo membro até o ombro e também fratura a clavícula, mas o capítulo a coloca atrás do impacto direto na ponta do ombro."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Mecanismo e deformidade: para onde vai cada fragmento.",
+    "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Comece pela causa: acidental, não acidental ou patológica."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-34-fratura-clavicula",
+    "titulo": "Fratura da clavícula",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 34 · Clavicle Fractures",
+    "secoes": [
+     "Mecanismo e deformidade: para onde vai cada fragmento"
+    ],
+    "blocos": [
+     "mecanismo-e-deformidade-para-onde-vai-cada-fragm-232a0711",
+     "mecanismo-e-deformidade-para-onde-vai-cada-fragm-fe5873d4",
+     "mecanismo-e-deformidade-para-onde-vai-cada-fragm-5e4c6ef5",
+     "mecanismo-e-deformidade-para-onde-vai-cada-fragm-735a57db"
+    ],
+    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+    "trechosSha256": "24d270e41447bb8e18925f75c71659b9e4b85ebd06088424d21d7b58bfedbd3e"
+   },
+   {
+    "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "titulo": "Epidemiologia das fraturas na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+    "secoes": [
+     "Comece pela causa: acidental, não acidental ou patológica"
+    ],
+    "blocos": [
+     "comece-pela-causa-acidental-nao-acidental-ou-pat-60d8a6ec",
+     "comece-pela-causa-acidental-nao-acidental-ou-pat-9018e2fe"
+    ],
+    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+    "trechosSha256": "7762f036315d78e55b464acd8659e4ce23cc909b57eb35a3d297d37b56e9c2dd"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0949": {
+  "questaoSha256": "d8cc4e61dc36c12a2d4e76a70b8c8e37e8255134a66785312bf3bc1f6ae8fbf0",
+  "comentarioAnteriorSha256": "d25b5b759dbffd08ed3f951e4101847923955eec1020f6e1fa748decefc873eb",
+  "comentario": {
+   "conceito": "Imagine uma criança de 8 anos que cai de lado brincando no recreio e bate o ombro no chão. Horas depois, chega com dor e um degrau sobre a clavícula. A questão pergunta o mecanismo mais comum dessa fratura na idade escolar, e o raciocínio é o mesmo que explica a clavícula do adulto.\n\n**Como a força chega.** No Rockwood and Green (10ª ed., cap. 34), o mecanismo mais comum da fratura da clavícula é o **impacto direto na ponta do ombro**, com a força chegando **de lateral**, seguido da **queda sobre a mão espalmada**. A clavícula funciona como uma escora entre o esterno e a escápula. Quando o ombro bate no chão, a força empurra a cintura escapular para dentro e comprime a clavícula no sentido do seu comprimento, como se apertássemos um graveto pelas pontas. A cintura cede num de três pontos: a acromioclavicular, a esternoclavicular (rara) ou a própria clavícula.\n\n**Por que quebra no meio.** A fratura cai no **terço médio** em 80% a 85% das vezes, porque ali o osso é mais estreito, curvo e sem a proteção de músculos e ligamentos que as pontas têm. É o ponto onde o graveto comprimido se dobra.\n\n**E na criança.** O capítulo é de adultos, mas descreve esse mesmo mecanismo como o mais comum, e é o que as provas do TARO cobraram para a idade escolar. Na abordagem da criança, o capítulo pediátrico lembra que as fraturas têm três origens, trauma acidental, maus-tratos e condição patológica, e que uma queda banal explica uma fratura comum quando a idade e o padrão combinam. Uma criança em idade escolar que cai de lado sobre o ombro é exatamente esse cenário acidental.\n\n> **Na prova:** a clavícula quebra, na maioria das vezes, por impacto direto na ponta do ombro (força lateral, compressão); a queda com a mão espalmada vem depois.\n\nNo resumo de fratura da clavícula, a seção sobre o mecanismo mostra como a força lateral escolhe entre a acromioclavicular, a clavícula e a esternoclavicular.",
+   "correta": "**D: força de compressão lateral no ombro.** É o mesmo mecanismo descrito como o mais comum no capítulo: a força chega de lateral, pela ponta do ombro, e comprime a clavícula no seu comprimento até ela ceder no terço médio, o ponto mais estreito e desprotegido.",
+   "incorretas": {
+    "A": "**Não precisa de tanta energia.** A criança em idade escolar fratura a clavícula em quedas comuns de brincadeira e esporte. Alta energia é o cenário de outras lesões; para a clavícula, uma queda de lado sobre o ombro basta.",
+    "B": "**Vem em segundo lugar.** A queda com a mão estendida transmite a força pelo membro até o ombro e também fratura a clavícula, mas o capítulo a coloca atrás do impacto direto na ponta do ombro.",
+    "C": "**O golpe é na ponta do ombro, não sobre o osso.** O capítulo marca como armadilha o trauma direto sobre a clavícula: o que a fratura é a força lateral transmitida pela ponta do ombro, que comprime o osso no comprimento."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Mecanismo e deformidade: para onde vai cada fragmento.",
+    "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Comece pela causa: acidental, não acidental ou patológica."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-34-fratura-clavicula",
+    "titulo": "Fratura da clavícula",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 34 · Clavicle Fractures",
+    "secoes": [
+     "Mecanismo e deformidade: para onde vai cada fragmento"
+    ],
+    "blocos": [
+     "mecanismo-e-deformidade-para-onde-vai-cada-fragm-232a0711",
+     "mecanismo-e-deformidade-para-onde-vai-cada-fragm-fe5873d4",
+     "mecanismo-e-deformidade-para-onde-vai-cada-fragm-5e4c6ef5",
+     "mecanismo-e-deformidade-para-onde-vai-cada-fragm-735a57db"
+    ],
+    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+    "trechosSha256": "24d270e41447bb8e18925f75c71659b9e4b85ebd06088424d21d7b58bfedbd3e"
+   },
+   {
+    "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "titulo": "Epidemiologia das fraturas na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+    "secoes": [
+     "Comece pela causa: acidental, não acidental ou patológica"
+    ],
+    "blocos": [
+     "comece-pela-causa-acidental-nao-acidental-ou-pat-60d8a6ec",
+     "comece-pela-causa-acidental-nao-acidental-ou-pat-9018e2fe"
+    ],
+    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+    "trechosSha256": "7762f036315d78e55b464acd8659e4ce23cc909b57eb35a3d297d37b56e9c2dd"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1148": {
+  "questaoSha256": "9955f5f8d985335a1901fbfc733dc1aa9cec61539e83386dc200f00adeb52a61",
+  "comentarioAnteriorSha256": "c5282d9264421c278b8dd23457a5fb06f90fe3aceb733e1ed849457af3812746",
+  "comentario": {
+   "provavel": "A",
+   "alerta": "A banca não divulgou o gabarito oficial. O capítulo 34 do Rockwood and Green não trata a associação de Neer II com fratura do coracoide; ele mostra que a fixação coracoclavicular (amarração, botão) se apoia num coracoide íntegro e que a placa bloqueada distal é a preferência dos autores. Esse raciocínio sustenta a resposta provável A.",
+   "conceito": "A fratura do terço distal da clavícula tipo II de Neer já é, por si, um problema de suspensão: o fragmento medial perdeu os ligamentos que o seguravam. Somar a ela uma fratura do coracoide tira justamente o ponto de apoio que muitas técnicas usam para resolver esse problema.\n\n**Por que o tipo II é instável.** Os ligamentos coracoclaviculares, o **conoide**, mais medial, e o **trapezoide**, mais lateral, nascem da base do coracoide e são o principal freio contra a subida da clavícula lateral. No **tipo II** de Neer, eles se soltam do fragmento **medial**, e o trapezoide fica preso ao fragmento distal. Sem oposição, o fragmento medial sobe; o distal, preso à escápula, desce com o peso do braço (Rockwood and Green, 10ª ed., cap. 34).\n\n**As técnicas e o que cada uma usa.** O desafio é a pega no fragmento distal, pequeno e de osso esponjoso. A preferência dos autores é a **placa bloqueada pré-moldada distal**, com vários parafusos pequenos no fragmento lateral, reforçada só quando a pega é insuficiente, por um **botão com sutura passado na base do coracoide**. A fixação coracoclavicular isolada (amarração, âncora, botão) devolve a função dos ligamentos rotos prendendo a clavícula ao coracoide. A **placa-gancho** se apoia sob o acrômio e é a técnica com mais complicações e retiradas.\n\n**O que muda com o coracoide quebrado.** Toda técnica coracoclavicular puxa a clavícula para baixo ancorada no coracoide. Se o coracoide está fraturado, essa âncora não segura: a força passaria por um osso solto. O próprio capítulo lembra que o botão no coracoide tem complicação própria, a fratura do coracoide. Sobra a fixação que estabiliza a clavícula por si, osso a osso: a **placa**, que não depende do coracoide para segurar os dois fragmentos.\n\n> **Na prova:** Neer II com coracoide fraturado pede fixação que não dependa do coracoide: placa. Técnicas coracoclaviculares precisam de um coracoide íntegro.\n\nNo resumo de fratura da clavícula, a seção do terço lateral compara placa, gancho e fixação coracoclavicular.",
+   "correta": "**A: osteossíntese com placa.** A placa estabiliza diretamente os fragmentos da clavícula sem depender do coracoide, que está fraturado. É também a técnica preferida dos autores para o terço lateral instável, deixando o reforço coracoclavicular para quando a pega distal é ruim e o coracoide está íntegro.",
+   "incorretas": {
+    "B": "**A âncora está quebrada.** A amarração coracoclavicular substitui os ligamentos rotos prendendo a clavícula ao coracoide. Com o coracoide fraturado, a força passaria por um osso solto, e a fixação perderia o ponto de apoio.",
+    "C": "**Reconstrução ligamentar, não fixação de fratura.** A técnica de Weaver-Dunn é uma reconstrução para a luxação acromioclavicular, que transfere o ligamento coracoacromial para a clavícula e também se apoia no coracoide. Numa fratura aguda com o coracoide quebrado, ela não resolve o osso e depende justamente da estrutura lesada.",
+    "D": "**Técnica superada.** A banda de tensão com fios foi em grande parte substituída pelas placas pré-moldadas e pela placa-gancho, segundo o capítulo. Fios lisos no ombro também migram, problema que o capítulo lembra na clavícula medial. No fragmento distal pequeno, a pega de fios é a mais frágil."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Terço lateral (distal); Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos; Classificações: Allman, Neer, Craig, Robinson e AO; Ombro flutuante, costelas e terço medial."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-34-fratura-clavicula",
+    "titulo": "Fratura da clavícula",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 34 · Clavicle Fractures",
+    "secoes": [
+     "Terço lateral (distal)",
+     "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos",
+     "Classificações: Allman, Neer, Craig, Robinson e AO",
+     "Ombro flutuante, costelas e terço medial"
+    ],
+    "blocos": [
+     "terco-lateral-distal-38f9e0a7",
+     "terco-lateral-distal-be04fd16",
+     "terco-lateral-distal-ffafad32",
+     "terco-lateral-distal-978927a9",
+     "terco-lateral-distal-807eaf40",
+     "terco-lateral-distal-5462932b",
+     "terco-lateral-distal-6bc29624",
+     "terco-lateral-distal-cab8191a",
+     "terco-lateral-distal-842e6a73",
+     "terco-lateral-distal-07a27bbd",
+     "terco-lateral-distal-e3f5357d",
+     "anatomia-aplicada-osso-ligamentos-musculos-nervo-20e2e44d",
+     "classificacoes-allman-neer-craig-robinson-e-ao-6ba1d129",
+     "ombro-flutuante-costelas-e-terco-medial-a2159463"
+    ],
+    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+    "trechosSha256": "d59fc91ce60e1d32bf9bbfaed3a970b3951446b6be67a43bba627ae5dcf3fa84"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0148": {
+  "questaoSha256": "a21f14521152580a3a696599fca46f44d1139595c4ad9e5834b254ccb5f98fe7",
+  "comentarioAnteriorSha256": "115597264c39ef8f3fb0af39efe4d352bd6fca87ea34b1795d0104135eb0966d",
+  "comentario": {
+   "conceito": "Algumas fraturas do planalto deixam um fragmento atrás e por fora, o quadrante posterolateral, que nenhuma placa anterolateral alcança bem. Para chegar a ele, é preciso entrar pela fossa poplítea por um caminho que respeite o nervo fibular comum e os vasos. A questão pergunta qual é a porta de entrada.\n\n**A anatomia do caminho.** No Rockwood and Green (10ª ed., cap. 62), a via posterolateral em L invertido é feita em decúbito ventral: o braço horizontal corre na prega poplítea e o vertical desce ao longo da **borda lateral da cabeça lateral do gastrocnêmio**, paralelo à fíbula. Do lado de fora fica o **bíceps femoral**, e é sob a borda medial dele que corre o **nervo fibular comum**, que deve ser visto e protegido junto com o cutâneo sural lateral. A janela de entrada, portanto, é entre a **cabeça lateral do gastrocnêmio** e o **bíceps femoral**.\n\n**O plano profundo.** Depois da fáscia, cria-se o plano entre a **cabeça lateral do gastrocnêmio e o sóleo**. O gastrocnêmio, o feixe poplíteo e o nervo sural lateral são afastados para medial, e fibras do sóleo são soltas da fíbula. O poplíteo é o plano profundo a respeitar: trabalhar profundo a ele protege os vasos maiores. Abaixo do sóleo, a **abertura da membrana interóssea marca a trifurcação** e a passagem da artéria tibial anterior; num estudo anatômico, o nervo fibular contorna o colo a cerca de 42 mm da interlinha e essa abertura fica a cerca de 49 mm. É o limite distal da dissecção.\n\n**As variações.** Frosch faz o mesmo em decúbito lateral, com incisão reta sobre a cabeça da fíbula; as vias transfibulares osteotomizam o colo da fíbula, com risco de paralisia fibular e pseudartrose da osteotomia. A incisão em L na prega reduz o risco de contratura em flexão.\n\n> **Na prova:** via posterolateral do planalto entra entre a cabeça lateral do gastrocnêmio e o bíceps femoral (nervo fibular sob o bíceps); o plano profundo é gastrocnêmio e sóleo.\n\nNo resumo de planalto tibial, a seção do lado medial e das vias posteriores descreve a via em L invertido.",
+   "correta": "**D: gastrocnêmio lateral e bíceps femoral.** A incisão vertical segue a borda lateral da cabeça lateral do gastrocnêmio, e o bíceps femoral, com o nervo fibular comum sob sua borda medial, fica do lado de fora. Esse é o intervalo de entrada; depois, o plano profundo é entre o gastrocnêmio e o sóleo.",
+   "incorretas": {
+    "A": "**Dois músculos que não se encontram atrás.** O tensor da fáscia lata é do quadril e da coxa lateral, e o fibular longo é da perna lateral. Nenhum dos dois forma o limite da fossa poplítea, por onde passa a via posterolateral.",
+    "B": "**Metade certa, metade na perna.** O gastrocnêmio lateral é um dos limites, mas o fibular longo fica no compartimento lateral da perna, à frente da fíbula. O limite lateral da janela é o bíceps femoral, que esconde o nervo fibular comum.",
+    "C": "**Um limite certo, o outro longe.** O bíceps femoral é, sim, o limite lateral, mas o tensor da fáscia lata não chega à fossa poplítea. Sem o gastrocnêmio lateral do outro lado, não existe janela para o quadrante posterolateral."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lado medial e vias posteriores."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-62-planalto-tibial",
+    "titulo": "Fratura do planalto tibial",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+    "secoes": [
+     "Lado medial e vias posteriores"
+    ],
+    "blocos": [
+     "lado-medial-e-vias-posteriores-bc5f6eec",
+     "lado-medial-e-vias-posteriores-8ef4f52b",
+     "lado-medial-e-vias-posteriores-e6f21b8f",
+     "lado-medial-e-vias-posteriores-a7f2d50c",
+     "lado-medial-e-vias-posteriores-1fc676ed"
+    ],
+    "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+    "trechosSha256": "4c8f247e2a98aaacca0b852556a50ab23d29af4cd7d190d485dc33b59ede2ec9"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}

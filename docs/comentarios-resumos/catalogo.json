@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 426,
+  "pendente": 304,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 452,
+  "pendente-fonte": 549,
   "pendente-inspecao-imagem": 64,
-  "revisada": 1583
+  "revisada": 1608
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -36,20 +36,18 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 13,
-    "pendente-fonte": 13,
+    "pendente-fonte": 23,
     "pendente-inspecao-imagem": 2,
-    "revisada": 104
+    "revisada": 107
    }
   },
   "rockwood10-34-fratura-clavicula": {
    "titulo": "Fratura da clavícula",
    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
    "estados": {
-    "pendente": 4,
-    "pendente-fonte": 7,
+    "pendente-fonte": 8,
     "pendente-inspecao-imagem": 1,
-    "revisada": 61
+    "revisada": 64
    }
   },
   "rockwood10-36-umero-proximal": {
@@ -57,10 +55,9 @@
    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
    "estados": {
     "duplicada": 4,
-    "pendente": 10,
-    "pendente-fonte": 15,
+    "pendente-fonte": 23,
     "pendente-inspecao-imagem": 1,
-    "revisada": 64
+    "revisada": 66
    }
   },
   "rockwood10-37-diafise-umero": {
@@ -80,10 +77,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 37,
-    "pendente-fonte": 25,
+    "pendente": 24,
+    "pendente-fonte": 37,
     "pendente-inspecao-imagem": 15,
-    "revisada": 100
+    "revisada": 101
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -137,10 +134,9 @@
    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
-    "pendente": 6,
-    "pendente-fonte": 28,
+    "pendente-fonte": 33,
     "pendente-inspecao-imagem": 7,
-    "revisada": 85
+    "revisada": 86
    }
   },
   "rockwood10-50-anel-pelvico": {
@@ -158,9 +154,8 @@
    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
    "estados": {
     "duplicada": 5,
-    "pendente": 8,
-    "pendente-fonte": 8,
-    "revisada": 55
+    "pendente-fonte": 11,
+    "revisada": 60
    }
   },
   "rockwood10-53-colo-femur": {
@@ -187,10 +182,9 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 10,
-    "pendente-fonte": 7,
+    "pendente-fonte": 14,
     "pendente-inspecao-imagem": 1,
-    "revisada": 52
+    "revisada": 55
    }
   },
   "rockwood10-58-femur-distal": {
@@ -207,10 +201,9 @@
    "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
    "estados": {
     "duplicada": 14,
-    "pendente": 11,
-    "pendente-fonte": 19,
+    "pendente-fonte": 27,
     "pendente-inspecao-imagem": 1,
-    "revisada": 38
+    "revisada": 41
    }
   },
   "rockwood10-61-luxacao-joelho": {
@@ -218,9 +211,8 @@
    "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
    "estados": {
     "duplicada": 14,
-    "pendente": 27,
     "pendente-anulada": 1,
-    "pendente-fonte": 25,
+    "pendente-fonte": 52,
     "pendente-inspecao-imagem": 4,
     "revisada": 52
    }
@@ -229,10 +221,9 @@
    "titulo": "Fratura do planalto tibial",
    "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
    "estados": {
-    "pendente": 2,
-    "pendente-fonte": 10,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 1,
-    "revisada": 32
+    "revisada": 33
    }
   },
   "rockwood10-63-diafise-tibia": {
@@ -252,10 +243,9 @@
    "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
    "estados": {
     "duplicada": 4,
-    "pendente": 5,
-    "pendente-fonte": 8,
+    "pendente-fonte": 12,
     "pendente-inspecao-imagem": 1,
-    "revisada": 31
+    "revisada": 32
    }
   },
   "rockwood10-65-tornozelo": {
@@ -263,11 +253,10 @@
    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
    "estados": {
     "duplicada": 5,
-    "pendente": 9,
     "pendente-anulada": 1,
-    "pendente-fonte": 8,
+    "pendente-fonte": 14,
     "pendente-inspecao-imagem": 4,
-    "revisada": 39
+    "revisada": 42
    }
   },
   "rockwood10-66-talus": {
@@ -275,19 +264,18 @@
    "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
    "estados": {
     "duplicada": 2,
-    "pendente": 19,
-    "pendente-fonte": 4,
-    "revisada": 28
+    "pendente-fonte": 22,
+    "revisada": 29
    }
   },
   "rockwoodcriancas10-01-epidemiologia-fraturas": {
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 52,
-    "pendente-fonte": 10,
+    "pendente": 50,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 4,
-    "revisada": 70
+    "revisada": 71
    }
   },
   "rockwoodcriancas10-25-diafise-femur": {
@@ -1959,14 +1947,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "SCIWORA não é tratada nos resumos de coluna cervical e toracolombar do adulto.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "ab1e6277e05d222908953162459acc650166da9d9f37249f8bdf34a5bb09541f"
+   "questaoSha256": "ab1e6277e05d222908953162459acc650166da9d9f37249f8bdf34a5bb09541f",
+   "pendencia": "SCIWORA não é tratada nos resumos de coluna cervical e toracolombar do adulto."
   },
   "coluna-0205": {
    "tema": "coluna",
@@ -2721,14 +2710,15 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "SCIWORA (definição e Frankel) não é tratada nos resumos de coluna publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "c7b1d8f5ece92c7d1d95a1777651eb27ee07bc706011db91536f0ba250462f09"
+   "questaoSha256": "c7b1d8f5ece92c7d1d95a1777651eb27ee07bc706011db91536f0ba250462f09",
+   "pendencia": "SCIWORA (definição e Frankel) não é tratada nos resumos de coluna publicados."
   },
   "coluna-0301": {
    "tema": "coluna",
@@ -2738,14 +2728,15 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "SCIWORA (idade e segmento mais frequentes) não é tratada nos resumos de coluna publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "de247c7c6075930f82dac3fcfdf09cd9d1ed3569110f9b4c54e97cabaecf2cce"
+   "questaoSha256": "de247c7c6075930f82dac3fcfdf09cd9d1ed3569110f9b4c54e97cabaecf2cce",
+   "pendencia": "SCIWORA (idade e segmento mais frequentes) não é tratada nos resumos de coluna publicados."
   },
   "coluna-0302": {
    "tema": "coluna",
@@ -3940,14 +3931,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Caso clínico de espondilodiscite com complicação sistêmica (sepse, toxicidade medicamentosa) foge do resumo de trauma toracolombar.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "a56d59d51d1f36c6c07cd4a9a84e5a5876af55e5fb34a6b57ca2839e3b8aaf8d"
+   "questaoSha256": "a56d59d51d1f36c6c07cd4a9a84e5a5876af55e5fb34a6b57ca2839e3b8aaf8d",
+   "pendencia": "Caso clínico de espondilodiscite com complicação sistêmica (sepse, toxicidade medicamentosa) foge do resumo de trauma toracolombar."
   },
   "coluna-0386": {
    "tema": "coluna",
@@ -8020,8 +8012,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo pediátrico descreve o gesso 90 e 90 e o fragmento proximal em flexão, mas não a tração 90-90 (pino, mobilização do joelho, apoio da coxa) que as alternativas comparam.",
    "temComentario": true,
    "citacoes": [
     {
@@ -8035,7 +8027,8 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "b7da474a62cb364f5e9ad873d857b3e9a47849c892234aa58ae96e7e18c3fb3a"
+   "questaoSha256": "b7da474a62cb364f5e9ad873d857b3e9a47849c892234aa58ae96e7e18c3fb3a",
+   "pendencia": "O resumo pediátrico descreve o gesso 90 e 90 e o fragmento proximal em flexão, mas não a tração 90-90 (pino, mobilização do joelho, apoio da coxa) que as alternativas comparam."
   },
   "conceitos-basicos-0370": {
    "tema": "conceitos-basicos",
@@ -8263,8 +8256,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 57 sustenta o pudendo como a lesão do poste perineal, mas não descreve o efeito da tração excessiva sobre a flexão do fragmento proximal na subtrocantérica, que separa C de D.",
    "temComentario": true,
    "citacoes": [
     {
@@ -8278,7 +8271,8 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "5825a1b1a17b877752b49ad7908bc22de55ac0d3bf46f225ba719970d6e6cfe8"
+   "questaoSha256": "5825a1b1a17b877752b49ad7908bc22de55ac0d3bf46f225ba719970d6e6cfe8",
+   "pendencia": "O capítulo 57 sustenta o pudendo como a lesão do poste perineal, mas não descreve o efeito da tração excessiva sobre a flexão do fragmento proximal na subtrocantérica, que separa C de D."
   },
   "conceitos-basicos-0403": {
    "tema": "conceitos-basicos",
@@ -8956,7 +8950,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -8971,7 +8965,36 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "26559470248a2841a962fb98a91d2148839d4d9856283dd851653f404ce94729"
+   "questaoSha256": "26559470248a2841a962fb98a91d2148839d4d9856283dd851653f404ce94729",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Luxação aguda da patela",
+       "Patela bipartida e outros simuladores"
+      ],
+      "blocos": [
+       "luxacao-aguda-da-patela-e8514392",
+       "luxacao-aguda-da-patela-dae642d9",
+       "luxacao-aguda-da-patela-541ed1a4",
+       "luxacao-aguda-da-patela-727a6900",
+       "luxacao-aguda-da-patela-2f480558",
+       "patela-bipartida-e-outros-simuladores-f0b1afd4"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "78377d23830cf274d36fa0d716c4383a2a985b6acb2e1c56c29175336b7c9c58"
+     }
+    ],
+    "questaoSha256": "26559470248a2841a962fb98a91d2148839d4d9856283dd851653f404ce94729",
+    "comentarioSha256": "a6dcb991c15a6bcd82c7c6c36d5388388660026299063ce09cf5e5d122af6875"
+   }
   },
   "joelho-0059": {
    "tema": "joelho",
@@ -10615,7 +10638,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -10630,7 +10653,34 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "7847a67fc2e7f31c1e4e26094f9fd1d2f7d2922bf4211fed5cf4dfb29a5d07a9"
+   "questaoSha256": "7847a67fc2e7f31c1e4e26094f9fd1d2f7d2922bf4211fed5cf4dfb29a5d07a9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Luxação aguda da patela"
+      ],
+      "blocos": [
+       "luxacao-aguda-da-patela-541ed1a4",
+       "luxacao-aguda-da-patela-e8514392",
+       "luxacao-aguda-da-patela-dae642d9",
+       "luxacao-aguda-da-patela-727a6900",
+       "luxacao-aguda-da-patela-2f480558"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "efbcfdcda1f771ea6d0a1460df404ec7100265340f69f844c5902cae28479e2c"
+     }
+    ],
+    "questaoSha256": "7847a67fc2e7f31c1e4e26094f9fd1d2f7d2922bf4211fed5cf4dfb29a5d07a9",
+    "comentarioSha256": "f5782c108b60d3dca108baa64a05a77aac24d8f682f21a8ec95e99a5bf8370bb"
+   }
   },
   "joelho-0287": {
    "tema": "joelho",
@@ -10944,14 +10994,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 61 exige árvore arterial íntegra antes de qualquer reparo ligamentar e coloca o fixador externo antes da ponte vascular, mas não diz se, na mesma cirurgia vascular, se devem reparar só os ligamentos visíveis pela via posteromedial. A afirmação de Certo/Errado depende dessa regra, ausente do resumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "81dc29d605685399e9c05882c04894d5bae83735ec9e65fd55eeba70e935a9cb"
+   "questaoSha256": "81dc29d605685399e9c05882c04894d5bae83735ec9e65fd55eeba70e935a9cb",
+   "pendencia": "O capítulo 61 exige árvore arterial íntegra antes de qualquer reparo ligamentar e coloca o fixador externo antes da ponte vascular, mas não diz se, na mesma cirurgia vascular, se devem reparar só os ligamentos visíveis pela via posteromedial. A afirmação de Certo/Errado depende dessa regra, ausente do resumo."
   },
   "joelho-0342": {
    "tema": "joelho",
@@ -20776,8 +20827,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 33 descreve a artéria circunflexa da escápula contornando a borda lateral cerca de 3 cm abaixo da glenoide e atravessando o redondo menor, mas não nomeia o espaço triangular nem seus limites (cabeça longa do tríceps, redondo menor e redondo maior), que é o que as alternativas pedem.",
    "temComentario": true,
    "citacoes": [
     {
@@ -20791,7 +20842,8 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "b6a49d0f9f282425275e61c634b7231439eed26786a57a5b3d74aa2bb6a8eeb5"
+   "questaoSha256": "b6a49d0f9f282425275e61c634b7231439eed26786a57a5b3d74aa2bb6a8eeb5",
+   "pendencia": "O capítulo 33 descreve a artéria circunflexa da escápula contornando a borda lateral cerca de 3 cm abaixo da glenoide e atravessando o redondo menor, mas não nomeia o espaço triangular nem seus limites (cabeça longa do tríceps, redondo menor e redondo maior), que é o que as alternativas pedem."
   },
   "mao-1528": {
    "tema": "mao",
@@ -27564,14 +27616,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Portais da artroscopia do cotovelo não aparecem no resumo de luxação do cotovelo e cabeça do rádio.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f004783c68c6155943e73e37361e887ff7f97182a38d81ba9e59f70d254c1b55"
+   "questaoSha256": "f004783c68c6155943e73e37361e887ff7f97182a38d81ba9e59f70d254c1b55",
+   "pendencia": "Portais da artroscopia do cotovelo não aparecem no resumo de luxação do cotovelo e cabeça do rádio."
   },
   "ombro-cotovelo-0197": {
    "tema": "ombro-cotovelo",
@@ -27630,15 +27683,16 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Classificação SICK scapula e discinesia do arremessador não aparecem no resumo de fratura da escápula.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "34322b99c94fbcf7f82a2b5f48f8ab282749d8b01272828708cd130cd01f3bfd"
+   "questaoSha256": "34322b99c94fbcf7f82a2b5f48f8ab282749d8b01272828708cd130cd01f3bfd",
+   "pendencia": "Classificação SICK scapula e discinesia do arremessador não aparecem no resumo de fratura da escápula."
   },
   "ombro-cotovelo-0212": {
    "tema": "ombro-cotovelo",
@@ -27647,15 +27701,16 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Crepitação escapulotorácica (osteocondroma, tubérculo de Luschka) não aparece no resumo de fratura da escápula.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "2017ae00b94b37ac5ea2ccabb7621253fe1e0a9f36a122647beaf92240b2ac79"
+   "questaoSha256": "2017ae00b94b37ac5ea2ccabb7621253fe1e0a9f36a122647beaf92240b2ac79",
+   "pendencia": "Crepitação escapulotorácica (osteocondroma, tubérculo de Luschka) não aparece no resumo de fratura da escápula."
   },
   "ombro-cotovelo-0236": {
    "tema": "ombro-cotovelo",
@@ -28485,15 +28540,16 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Contraindicações da artrodese do ombro não constam dos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "d926916e77a898d5c7e35987296431da80d609499d0817e860ae10e21234b656"
+   "questaoSha256": "d926916e77a898d5c7e35987296431da80d609499d0817e860ae10e21234b656",
+   "pendencia": "Contraindicações da artrodese do ombro não constam dos resumos publicados."
   },
   "ombro-cotovelo-0372": {
    "tema": "ombro-cotovelo",
@@ -28668,15 +28724,16 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Posição da escápula na artrodese escapulotorácica não consta do resumo de fratura da escápula.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "471ec201c0e030c207807e7e72c4d2279eb160f76ad1165dcaa195af6c3697a0"
+   "questaoSha256": "471ec201c0e030c207807e7e72c4d2279eb160f76ad1165dcaa195af6c3697a0",
+   "pendencia": "Posição da escápula na artrodese escapulotorácica não consta do resumo de fratura da escápula."
   },
   "ombro-cotovelo-0401": {
    "tema": "ombro-cotovelo",
@@ -28743,15 +28800,16 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Características do ombro do arremessador (discinesia, GIRD, cadeia cinética) não aparecem nos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "12f0bbef14fc899a8ca16e761479633190da2eff18d49afabd94f36f60f4996f"
+   "questaoSha256": "12f0bbef14fc899a8ca16e761479633190da2eff18d49afabd94f36f60f4996f",
+   "pendencia": "Características do ombro do arremessador (discinesia, GIRD, cadeia cinética) não aparecem nos resumos publicados."
   },
   "ombro-cotovelo-0420": {
    "tema": "ombro-cotovelo",
@@ -29005,14 +29063,15 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo descreve os estabilizadores primários e o feixe anterior do colateral medial contra o valgo, mas não trata da ressecção posteromedial do olécrano (olecranectomia) nem do tipo de instabilidade que ela produz.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "30ee7e728c1f4c7a570ea87560c0df7e364d27e541761516b99529e126bade54"
+   "questaoSha256": "30ee7e728c1f4c7a570ea87560c0df7e364d27e541761516b99529e126bade54",
+   "pendencia": "O resumo descreve os estabilizadores primários e o feixe anterior do colateral medial contra o valgo, mas não trata da ressecção posteromedial do olécrano (olecranectomia) nem do tipo de instabilidade que ela produz."
   },
   "ombro-cotovelo-0465": {
    "tema": "ombro-cotovelo",
@@ -29279,15 +29338,16 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 33 descreve o trajeto do nervo supraescapular sob o supraespinal e o estiramento dele quando o infraespinal é rebatido demais na via de Judet, mas não trata da mobilização do supraespinal no reparo do manguito nem dos distratores (axilar, toracoacromial, subescapular).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "2b4bb143894e6c40cd635b13a39c406de03ffc28ac6f4aa043c16e720b548419"
+   "questaoSha256": "2b4bb143894e6c40cd635b13a39c406de03ffc28ac6f4aa043c16e720b548419",
+   "pendencia": "O capítulo 33 descreve o trajeto do nervo supraescapular sob o supraespinal e o estiramento dele quando o infraespinal é rebatido demais na via de Judet, mas não trata da mobilização do supraespinal no reparo do manguito nem dos distratores (axilar, toracoacromial, subescapular)."
   },
   "ombro-cotovelo-0485": {
    "tema": "ombro-cotovelo",
@@ -29441,15 +29501,16 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Fatores de estabilidade glenoumeral sob carga (ação muscular e forma da glenoide) não constam dos resumos de fratura publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "7dd4e1b2baaf9ac0af4567bd1be6271c540355849427f841d2bbf367526928c8"
+   "questaoSha256": "7dd4e1b2baaf9ac0af4567bd1be6271c540355849427f841d2bbf367526928c8",
+   "pendencia": "Fatores de estabilidade glenoumeral sob carga (ação muscular e forma da glenoide) não constam dos resumos de fratura publicados."
   },
   "ombro-cotovelo-0498": {
    "tema": "ombro-cotovelo",
@@ -29458,14 +29519,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo localiza o reparo do colateral lateral no ponto isométrico do centro do capítulo, mas não afirma que a banda ulnar do colateral lateral fica tensa em flexão e extensão; falta a frase sobre o comportamento isométrico do ligamento.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "1fbe7c44394070eb32838918d9c6ba826878fd839bac104299d0e737bf94e850"
+   "questaoSha256": "1fbe7c44394070eb32838918d9c6ba826878fd839bac104299d0e737bf94e850",
+   "pendencia": "O resumo localiza o reparo do colateral lateral no ponto isométrico do centro do capítulo, mas não afirma que a banda ulnar do colateral lateral fica tensa em flexão e extensão; falta a frase sobre o comportamento isométrico do ligamento."
   },
   "ombro-cotovelo-0508": {
    "tema": "ombro-cotovelo",
@@ -29599,14 +29661,49 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "1d0290bab69c1ee2dd67ba037f2b56fef44fddf1ffe3f835dcfb1339e4638b80"
+   "questaoSha256": "1d0290bab69c1ee2dd67ba037f2b56fef44fddf1ffe3f835dcfb1339e4638b80",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-ef647c6d",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-9e56eed7",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e5c273b0",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-60747bb0",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-018638b1",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-86b2096c",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-22d5d72f",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-baf0c01e",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf"
+      ],
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+      "trechosSha256": "e14d2643e3b3e2dd69a4dccda5544a9ff22d00d6f3074d0442a3ab1a9c6faae1"
+     }
+    ],
+    "questaoSha256": "1d0290bab69c1ee2dd67ba037f2b56fef44fddf1ffe3f835dcfb1339e4638b80",
+    "comentarioSha256": "56eda70427429d5d0e2917502e958b98f2332bd7c8712efb6a13908cbbb54093"
+   }
   },
   "ombro-cotovelo-0512": {
    "tema": "ombro-cotovelo",
@@ -29665,14 +29762,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Técnica do saco de ossos (bag of bones) no úmero distal não aparece nos resumos publicados (não há resumo de úmero distal do adulto).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "7737bfb57ed62879154fba3a0bc1f88af4d78859f6908c8cdf07bf77bca12a8e"
+   "questaoSha256": "7737bfb57ed62879154fba3a0bc1f88af4d78859f6908c8cdf07bf77bca12a8e",
+   "pendencia": "Técnica do saco de ossos (bag of bones) no úmero distal não aparece nos resumos publicados (não há resumo de úmero distal do adulto)."
   },
   "ombro-cotovelo-0516": {
    "tema": "ombro-cotovelo",
@@ -29682,14 +29780,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo exige exame sob anestesia em varo, valgo, rotação e carga axial antes e depois de retirar a cabeça do rádio, mas não especifica o teste em valgo a 30 graus de flexão; o detalhe do ângulo, decisivo no Certo/Errado, não está sustentado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "1f4a571d45bbec694066df663ee1f96e5130daea39398ba050c3224a4cd2647e"
+   "questaoSha256": "1f4a571d45bbec694066df663ee1f96e5130daea39398ba050c3224a4cd2647e",
+   "pendencia": "O resumo exige exame sob anestesia em varo, valgo, rotação e carga axial antes e depois de retirar a cabeça do rádio, mas não especifica o teste em valgo a 30 graus de flexão; o detalhe do ângulo, decisivo no Certo/Errado, não está sustentado."
   },
   "ombro-cotovelo-0517": {
    "tema": "ombro-cotovelo",
@@ -29698,14 +29797,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Possível divergência com a resposta provável (Errado): o resumo do capítulo 40 diz que 'como a ressecção tardia costuma ir bem, a ressecção precoce deve ser evitada', o que se aproxima da afirmação; mas não compara resultados após seis semanas na associação com fratura do capítulo. Precisa de decisão editorial ou fonte primária antes de manter ou trocar a resposta provável.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "9e6b93e127691935c88898062525c3cbaf1e0d00b157258511203cfdd7ddcb7e"
+   "questaoSha256": "9e6b93e127691935c88898062525c3cbaf1e0d00b157258511203cfdd7ddcb7e",
+   "pendencia": "Possível divergência com a resposta provável (Errado): o resumo do capítulo 40 diz que 'como a ressecção tardia costuma ir bem, a ressecção precoce deve ser evitada', o que se aproxima da afirmação; mas não compara resultados após seis semanas na associação com fratura do capítulo. Precisa de decisão editorial ou fonte primária antes de manter ou trocar a resposta provável."
   },
   "ombro-cotovelo-0519": {
    "tema": "ombro-cotovelo",
@@ -29741,14 +29841,15 @@
    ],
    "prova": "INTO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sinal do duplo arco e fraturas do capítulo/úmero distal não aparecem nos resumos publicados (não há resumo de úmero distal do adulto).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "4234836bd1df646086a4e5d38eec077fe6f3487e2d35d6f83b77ac2a901f9d4b"
+   "questaoSha256": "4234836bd1df646086a4e5d38eec077fe6f3487e2d35d6f83b77ac2a901f9d4b",
+   "pendencia": "Sinal do duplo arco e fraturas do capítulo/úmero distal não aparecem nos resumos publicados (não há resumo de úmero distal do adulto)."
   },
   "ombro-cotovelo-0526": {
    "tema": "ombro-cotovelo",
@@ -30132,7 +30233,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30148,7 +30249,37 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "ada57e93f1e691f51d324a5c08951e037111ecc38a4aaaa298ef56bc9095fe20"
+   "questaoSha256": "ada57e93f1e691f51d324a5c08951e037111ecc38a4aaaa298ef56bc9095fe20",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Radiografias e tomografia"
+      ],
+      "blocos": [
+       "radiografias-e-tomografia-b85e69ff",
+       "radiografias-e-tomografia-30b8a195",
+       "radiografias-e-tomografia-413850ca",
+       "radiografias-e-tomografia-190db996",
+       "radiografias-e-tomografia-d315dddb",
+       "radiografias-e-tomografia-cb865953",
+       "radiografias-e-tomografia-78d8ddd2",
+       "radiografias-e-tomografia-2edd0b47"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "437ae27541fc47f4b21bdca92e4f7a1f5447ff4947701b8aae42dd41649d0f5b"
+     }
+    ],
+    "questaoSha256": "ada57e93f1e691f51d324a5c08951e037111ecc38a4aaaa298ef56bc9095fe20",
+    "comentarioSha256": "eade6b8830d5e8217ef9bfff1f15eb90ff954eb612551a2d07518656b1af5d17"
+   }
   },
   "ombro-cotovelo-0555": {
    "tema": "ombro-cotovelo",
@@ -30158,14 +30289,15 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Teste da ordenha (milking) não é descrito no resumo do capítulo 40.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "b75530e335b53e8a813fbec5fd57c3f74d6e7f3254bcbdb8c5c09976300060de"
+   "questaoSha256": "b75530e335b53e8a813fbec5fd57c3f74d6e7f3254bcbdb8c5c09976300060de",
+   "pendencia": "Teste da ordenha (milking) não é descrito no resumo do capítulo 40."
   },
   "ombro-cotovelo-0556": {
    "tema": "ombro-cotovelo",
@@ -32173,8 +32305,8 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 66 lista os estabilizadores da subtalar (complexo interósseo, talocalcâneos, mola, deltoide), mas não informa que a lesão do talofibular anterior somada ao talocalcâneo interósseo muda significativamente a mobilidade subtalar, nem compara com mola, deltoide e bifurcado. Falta fonte de instabilidade do tornozelo/subtalar.",
    "temComentario": true,
    "citacoes": [
     {
@@ -32188,7 +32320,8 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "635324dc02df101880457c7f2ff26c5e051fb5901a27021b5a91fc7ecec420a5"
+   "questaoSha256": "635324dc02df101880457c7f2ff26c5e051fb5901a27021b5a91fc7ecec420a5",
+   "pendencia": "O capítulo 66 lista os estabilizadores da subtalar (complexo interósseo, talocalcâneos, mola, deltoide), mas não informa que a lesão do talofibular anterior somada ao talocalcâneo interósseo muda significativamente a mobilidade subtalar, nem compara com mola, deltoide e bifurcado. Falta fonte de instabilidade do tornozelo/subtalar."
   },
   "pe-tornozelo-0060": {
    "tema": "pe-tornozelo",
@@ -32256,8 +32389,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo sustenta que a necrose do tálus não contraindica a artrodese (alternativa B), mas não trata gota, artrose pós-infecciosa nem o comprometimento vascular como contraindicação; falta fonte de artrodese do tornozelo para o gabarito D.",
    "temComentario": true,
    "citacoes": [
     {
@@ -32271,7 +32404,8 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "6a7c0f85e1810e46997f0d1ec5f2a0678c90de6a3274e5618205b848fd84add9"
+   "questaoSha256": "6a7c0f85e1810e46997f0d1ec5f2a0678c90de6a3274e5618205b848fd84add9",
+   "pendencia": "O resumo sustenta que a necrose do tálus não contraindica a artrodese (alternativa B), mas não trata gota, artrose pós-infecciosa nem o comprometimento vascular como contraindicação; falta fonte de artrodese do tornozelo para o gabarito D."
   },
   "pe-tornozelo-0086": {
    "tema": "pe-tornozelo",
@@ -32324,15 +32458,16 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Classificação de Clanton e McGarvey das lesões ligamentares do tornozelo não aparece nos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "0def0eef51e88f39d57e0b4b720e14f1ca64f7d042d49dbed8f82d9d234808f4"
+   "questaoSha256": "0def0eef51e88f39d57e0b4b720e14f1ca64f7d042d49dbed8f82d9d234808f4",
+   "pendencia": "Classificação de Clanton e McGarvey das lesões ligamentares do tornozelo não aparece nos resumos publicados."
   },
   "pe-tornozelo-0096": {
    "tema": "pe-tornozelo",
@@ -32342,7 +32477,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32357,7 +32492,42 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "9a2a144fbd26212a9ae89a07b0cd0adb81770c317658c2cf630b16d8857f1bef"
+   "questaoSha256": "9a2a144fbd26212a9ae89a07b0cd0adb81770c317658c2cf630b16d8857f1bef",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-c51227ca",
+       "anatomia-e-vascularizacao-b3cf6f14",
+       "anatomia-e-vascularizacao-db711620",
+       "anatomia-e-vascularizacao-32767012",
+       "anatomia-e-vascularizacao-3df26679",
+       "anatomia-e-vascularizacao-67b0e630",
+       "anatomia-e-vascularizacao-d9802b86",
+       "anatomia-e-vascularizacao-07f26b9a",
+       "anatomia-e-vascularizacao-b8a242e2",
+       "anatomia-e-vascularizacao-a4148267",
+       "anatomia-e-vascularizacao-d6200c81",
+       "anatomia-e-vascularizacao-d570e842",
+       "anatomia-e-vascularizacao-c3eb2101"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "181ae7508aa1783792d980974d5a6604cba0379398a54ffadbc36e1a593907e2"
+     }
+    ],
+    "questaoSha256": "9a2a144fbd26212a9ae89a07b0cd0adb81770c317658c2cf630b16d8857f1bef",
+    "comentarioSha256": "eb0db053156b078ca054032f7bac32cf95cde9fc2382ff66ba237132d805cf5a"
+   }
   },
   "pe-tornozelo-0113": {
    "tema": "pe-tornozelo",
@@ -32391,8 +32561,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Ossos acessórios sintomáticos do pé infantil (navicular acessório, os fibulare, vesalianum) não constam do resumo de tálus, que só cita o os trigonum em 50% dos pés.",
    "temComentario": true,
    "citacoes": [
     {
@@ -32406,7 +32576,8 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "984a39d2433a42017c35c25f6484694c737ca621bfd18cf8bfd8c56c8893be72"
+   "questaoSha256": "984a39d2433a42017c35c25f6484694c737ca621bfd18cf8bfd8c56c8893be72",
+   "pendencia": "Ossos acessórios sintomáticos do pé infantil (navicular acessório, os fibulare, vesalianum) não constam do resumo de tálus, que só cita o os trigonum em 50% dos pés."
   },
   "pe-tornozelo-0177": {
    "tema": "pe-tornozelo",
@@ -32416,8 +32587,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo descreve BRODEN para a faceta posterior e a redução, mas não a incidência de estresse subtalar em inversão para diagnosticar insuficiência ligamentar, nem as outras incidências oferecidas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -32431,7 +32602,8 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "fdfbc862997613112298de7fd5cdbaa1c1d4a11c0c419ea0124c1f8a1f1775e1"
+   "questaoSha256": "fdfbc862997613112298de7fd5cdbaa1c1d4a11c0c419ea0124c1f8a1f1775e1",
+   "pendencia": "O resumo descreve BRODEN para a faceta posterior e a redução, mas não a incidência de estresse subtalar em inversão para diagnosticar insuficiência ligamentar, nem as outras incidências oferecidas."
   },
   "pe-tornozelo-0202": {
    "tema": "pe-tornozelo",
@@ -32541,7 +32713,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32556,7 +32728,34 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "83147e59a29b9191f1c19567a1a88902bfad25eca49a8d5013e02ff64546d4e0"
+   "questaoSha256": "83147e59a29b9191f1c19567a1a88902bfad25eca49a8d5013e02ff64546d4e0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-27378c7e",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-11af932c",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-1360e2ec",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-5cf8f259"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "323c0dd1ac57bbb6024cc3ee63a812f08fab8c4fceea7210b91bd4a94b85a247"
+     }
+    ],
+    "questaoSha256": "83147e59a29b9191f1c19567a1a88902bfad25eca49a8d5013e02ff64546d4e0",
+    "comentarioSha256": "e81431f747359dca8abb04627453a0517172b8fb5228d0721b49f4b9d25c11bb"
+   }
   },
   "pe-tornozelo-0295": {
    "tema": "pe-tornozelo",
@@ -32746,15 +32945,16 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Posição de artrodese do tornozelo segundo Mann não aparece nos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "6e9b50b15c42f4be769bd5a1e76d7f0c8aaab49af785a0c850b3c252a81fe03c"
+   "questaoSha256": "6e9b50b15c42f4be769bd5a1e76d7f0c8aaab49af785a0c850b3c252a81fe03c",
+   "pendencia": "Posição de artrodese do tornozelo segundo Mann não aparece nos resumos publicados."
   },
   "pe-tornozelo-0347": {
    "tema": "pe-tornozelo",
@@ -32763,8 +32963,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 65 diz que, na dorsiflexão, a fíbula roda para fora e a sindesmose se abre um pouco, mas não dá o aumento da distância intermaleolar em milímetros, que é o que a questão pede.",
    "temComentario": true,
    "citacoes": [
     {
@@ -32779,7 +32979,8 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "0cfc2cde33cabc3f41fa7b7d87ba3233e84458b7e61fc794c747ab87f6491a58"
+   "questaoSha256": "0cfc2cde33cabc3f41fa7b7d87ba3233e84458b7e61fc794c747ab87f6491a58",
+   "pendencia": "O capítulo 65 diz que, na dorsiflexão, a fíbula roda para fora e a sindesmose se abre um pouco, mas não dá o aumento da distância intermaleolar em milímetros, que é o que a questão pede."
   },
   "pe-tornozelo-0348": {
    "tema": "pe-tornozelo",
@@ -32789,7 +32990,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32804,7 +33005,40 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "6f88a6f661f99da616ba7fcd2c50e466f6ef34bba9637aca3d9f56c6e0b1a16c"
+   "questaoSha256": "6f88a6f661f99da616ba7fcd2c50e466f6ef34bba9637aca3d9f56c6e0b1a16c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Estabilidade: a fratura isolada do maléolo lateral e o teste",
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+      ],
+      "blocos": [
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-e18d75e2",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-35be2a86",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-d437576a",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-b0677a6c",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-ac7ef1d4",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-004cf47e",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-f501d07b",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-a3ca0427",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-5cf8f259"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "706900bd81f7681398e7ae1a32b70541fb330ceb14f46fa04ce8334016f55ac5"
+     }
+    ],
+    "questaoSha256": "6f88a6f661f99da616ba7fcd2c50e466f6ef34bba9637aca3d9f56c6e0b1a16c",
+    "comentarioSha256": "7aebff31053c6a554bc8d760fcea8498f074d53b5290ec4c5504b7c19acbbf10"
+   }
   },
   "pe-tornozelo-0350": {
    "tema": "pe-tornozelo",
@@ -32915,15 +33149,16 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Neuroartropatia de Charcot hipertrófica no pé e no tornozelo não é descrita nos resumos de pilão e de tornozelo (o capítulo 65 só trata da fratura no diabético).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "f76c579c25cc0d0a65bafd891811865b502bf0132aae3ed8eba167bbdcc19bfd"
+   "questaoSha256": "f76c579c25cc0d0a65bafd891811865b502bf0132aae3ed8eba167bbdcc19bfd",
+   "pendencia": "Neuroartropatia de Charcot hipertrófica no pé e no tornozelo não é descrita nos resumos de pilão e de tornozelo (o capítulo 65 só trata da fratura no diabético)."
   },
   "pe-tornozelo-0368": {
    "tema": "pe-tornozelo",
@@ -35418,8 +35653,8 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Fratura juvenil de Tillaux (mecanismo e ligamento) não está no resumo de tornozelo do adulto; não há resumo de tornozelo pediátrico publicado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -35434,7 +35669,8 @@
     "rockwood10-65-tornozelo",
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "e4a2a983907409141d8ee9b77af6873b010ebfca2a60cf665986f5ae8b32dc61"
+   "questaoSha256": "e4a2a983907409141d8ee9b77af6873b010ebfca2a60cf665986f5ae8b32dc61",
+   "pendencia": "Fratura juvenil de Tillaux (mecanismo e ligamento) não está no resumo de tornozelo do adulto; não há resumo de tornozelo pediátrico publicado."
   },
   "pediatria-0569": {
    "tema": "pediatria",
@@ -37228,8 +37464,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão pede o mecanismo na criança e o gabarito é a entorse em inversão; o capítulo 66 (adulto) dá eversão com dorsiflexão como mecanismo principal e cita inversão só num segundo estudo. Sem fonte pediátrica não há como sustentar a resposta nem descartar cuboide e calcâneo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37243,7 +37479,8 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "e1741bdedc82377fba5e55d94a55796a4aaf1fecafa434ad54cf12340999f1b1"
+   "questaoSha256": "e1741bdedc82377fba5e55d94a55796a4aaf1fecafa434ad54cf12340999f1b1",
+   "pendencia": "A questão pede o mecanismo na criança e o gabarito é a entorse em inversão; o capítulo 66 (adulto) dá eversão com dorsiflexão como mecanismo principal e cita inversão só num segundo estudo. Sem fonte pediátrica não há como sustentar a resposta nem descartar cuboide e calcâneo."
   },
   "pediatria-0627": {
    "tema": "pediatria",
@@ -37773,7 +38010,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -37789,7 +38026,49 @@
     "rockwood10-34-fratura-clavicula",
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "64576b07ba8370abfda589615950419235c0733830f4fa47fab2650baf33e00f"
+   "questaoSha256": "64576b07ba8370abfda589615950419235c0733830f4fa47fab2650baf33e00f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Mecanismo e deformidade: para onde vai cada fragmento"
+      ],
+      "blocos": [
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-232a0711",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-fe5873d4",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-5e4c6ef5",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-735a57db"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "24d270e41447bb8e18925f75c71659b9e4b85ebd06088424d21d7b58bfedbd3e"
+     },
+     {
+      "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+      "titulo": "Epidemiologia das fraturas na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+      "secoes": [
+       "Comece pela causa: acidental, não acidental ou patológica"
+      ],
+      "blocos": [
+       "comece-pela-causa-acidental-nao-acidental-ou-pat-60d8a6ec",
+       "comece-pela-causa-acidental-nao-acidental-ou-pat-9018e2fe"
+      ],
+      "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+      "trechosSha256": "7762f036315d78e55b464acd8659e4ce23cc909b57eb35a3d297d37b56e9c2dd"
+     }
+    ],
+    "questaoSha256": "64576b07ba8370abfda589615950419235c0733830f4fa47fab2650baf33e00f",
+    "comentarioSha256": "8089ba7b90e47cbb86390b0bf4f970caa1df5ab001315a5a24452b014606ede4"
+   }
   },
   "pediatria-0644": {
    "tema": "pediatria",
@@ -42477,8 +42756,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Fratura juvenil de Tillaux não está no resumo de tornozelo do adulto; não há resumo de tornozelo pediátrico publicado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42492,7 +42771,8 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "3f40a268b24ffda3fe7f0a1b0769e7ecb673168b2239bb6379461a49b99da041"
+   "questaoSha256": "3f40a268b24ffda3fe7f0a1b0769e7ecb673168b2239bb6379461a49b99da041",
+   "pendencia": "Fratura juvenil de Tillaux não está no resumo de tornozelo do adulto; não há resumo de tornozelo pediátrico publicado."
   },
   "pediatria-0843": {
    "tema": "pediatria",
@@ -55102,7 +55382,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55117,7 +55397,44 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "e4c3fd3c25bde6b75e27bf419c2ff718b39a29f4759fccd9704d195ae06b20b2"
+   "questaoSha256": "e4c3fd3c25bde6b75e27bf419c2ff718b39a29f4759fccd9704d195ae06b20b2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Anatomia aplicada: colunas, paredes, teto e vasos",
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-c3947fa0",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-79c429e6",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-5c00be27",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-583009fe",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-008d9555",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-721a80da",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-aff451a6",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-596bb854",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-87f5224e",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-16dc66a6",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-ebf7e528",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-fd400818",
+       "vias-de-acesso-85a72bef"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "f843da7b926d51e462d4aee719088809fd3cca7a6d97d27430b69ffdd2cf23d9"
+     }
+    ],
+    "questaoSha256": "e4c3fd3c25bde6b75e27bf419c2ff718b39a29f4759fccd9704d195ae06b20b2",
+    "comentarioSha256": "056c949182e4dcf4edcb4977f67c8fca036b7f471ac5566fe29d977297f43695"
+   }
   },
   "quadril-0232": {
    "tema": "quadril",
@@ -55126,7 +55443,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55141,7 +55458,41 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "63da0ab9d8673e62a589450c4953645908fc32e39ff5dfa957c26a5322054414"
+   "questaoSha256": "63da0ab9d8673e62a589450c4953645908fc32e39ff5dfa957c26a5322054414",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso",
+       "Anatomia aplicada: colunas, paredes, teto e vasos"
+      ],
+      "blocos": [
+       "vias-de-acesso-ae300f1b",
+       "vias-de-acesso-a24cd5ec",
+       "vias-de-acesso-59fb21f9",
+       "vias-de-acesso-4092e3ed",
+       "vias-de-acesso-cdff7c0e",
+       "vias-de-acesso-8c8f0d5a",
+       "vias-de-acesso-b5f952c0",
+       "vias-de-acesso-46c79886",
+       "vias-de-acesso-737f29b6",
+       "vias-de-acesso-bea80bc8",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-79c429e6"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "df16540b1c9e3d77298912ab845cf2b148739e68b262c83e1e982be964db04c2"
+     }
+    ],
+    "questaoSha256": "63da0ab9d8673e62a589450c4953645908fc32e39ff5dfa957c26a5322054414",
+    "comentarioSha256": "9f73f74c0c9bc9216b9a1f95c3212aaa7e88852e58ca147d68760aa284db5f13"
+   }
   },
   "quadril-0235": {
    "tema": "quadril",
@@ -55734,8 +56085,8 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 51 manda identificar e ligar as anastomoses da corona mortis sobre o ramo púbico, mas não trata da preservação quando ela é a única origem da obturatória nem da posição do quadril para relaxar o iliopsoas, que distinguem as alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -55749,7 +56100,8 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "65ab47394c4729e4712e99cebb26d20b872219109c760781ec5c42d3911d6688"
+   "questaoSha256": "65ab47394c4729e4712e99cebb26d20b872219109c760781ec5c42d3911d6688",
+   "pendencia": "O capítulo 51 manda identificar e ligar as anastomoses da corona mortis sobre o ramo púbico, mas não trata da preservação quando ela é a única origem da obturatória nem da posição do quadril para relaxar o iliopsoas, que distinguem as alternativas."
   },
   "quadril-0418": {
    "tema": "quadril",
@@ -55759,7 +56111,7 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55774,7 +56126,51 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "9e4c1a44a656c44c26904e67076e5d1360438ef6bc83d5e40898616bf653c782"
+   "questaoSha256": "9e4c1a44a656c44c26904e67076e5d1360438ef6bc83d5e40898616bf653c782",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "vias-de-acesso-9aeddbf1",
+       "vias-de-acesso-bea80bc8",
+       "vias-de-acesso-c592e79e",
+       "vias-de-acesso-672e946b",
+       "vias-de-acesso-a24cd5ec",
+       "vias-de-acesso-59fb21f9",
+       "vias-de-acesso-3aa87943"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "20a4ba8d0bfc9fa80416c004b7a5846fcc441fbeffe5740fcfd748c3fa24ab92"
+     },
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Anatomia aplicada e forças deformantes"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-forcas-deformantes-e6aeb2a9"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "0e4fadf2ee41229729bcb992412bba1e72be48f22cecbd650b444eb5cc1dee35"
+     }
+    ],
+    "questaoSha256": "9e4c1a44a656c44c26904e67076e5d1360438ef6bc83d5e40898616bf653c782",
+    "comentarioSha256": "54f2a43959e73956d80f9a22c79042c4c4e0595e55301e31a0d56d5b955eb696"
+   }
   },
   "quadril-0481": {
    "tema": "quadril",
@@ -56007,7 +56403,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56022,7 +56418,39 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "b89c65debef9b02d8873031f6b641bbe1cd92fe06d12b6acdb4c24ce205adb11"
+   "questaoSha256": "b89c65debef9b02d8873031f6b641bbe1cd92fe06d12b6acdb4c24ce205adb11",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso",
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "vias-de-acesso-a24cd5ec",
+       "vias-de-acesso-59fb21f9",
+       "vias-de-acesso-d5b39490",
+       "vias-de-acesso-5be668a3",
+       "vias-de-acesso-9e3b54ba",
+       "vias-de-acesso-bea80bc8",
+       "vias-de-acesso-3aa87943",
+       "classificacao-de-letournel-e01be35b",
+       "classificacao-de-letournel-65a8bc30"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "6b5b36f4add11b6d13d8a2972968de5e69548af2834bb91f6ad28ae675d5fb1c"
+     }
+    ],
+    "questaoSha256": "b89c65debef9b02d8873031f6b641bbe1cd92fe06d12b6acdb4c24ce205adb11",
+    "comentarioSha256": "80b4e508dc1e61a351b601c34ec78abbfef71c090b745327bd00d903d1112f43"
+   }
   },
   "quadril-0516": {
    "tema": "quadril",
@@ -57338,8 +57766,8 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Critérios de revisão imediata da haste cefalomedular na subtrocantérica não constam dos resumos (o capítulo 55, de subtrocantéricas, não foi resumido).",
    "temComentario": true,
    "citacoes": [
     {
@@ -57353,7 +57781,8 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "16791dd790d432344a373431a0d36ed1cd6f59e15e885d28be608e723fbdfbe3"
+   "questaoSha256": "16791dd790d432344a373431a0d36ed1cd6f59e15e885d28be608e723fbdfbe3",
+   "pendencia": "Critérios de revisão imediata da haste cefalomedular na subtrocantérica não constam dos resumos (o capítulo 55, de subtrocantéricas, não foi resumido)."
   },
   "trauma-0021": {
    "tema": "trauma",
@@ -57683,8 +58112,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Classificação de Pipkin das fraturas da cabeça femoral não aparece no resumo de acetábulo (o capítulo de luxação do quadril e cabeça femoral não foi resumido).",
    "temComentario": true,
    "citacoes": [
     {
@@ -57698,7 +58127,8 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "8b127895b4e2647bb8a335356513b6d13bdecf81e0f3955bf787ffb133047667"
+   "questaoSha256": "8b127895b4e2647bb8a335356513b6d13bdecf81e0f3955bf787ffb133047667",
+   "pendencia": "Classificação de Pipkin das fraturas da cabeça femoral não aparece no resumo de acetábulo (o capítulo de luxação do quadril e cabeça femoral não foi resumido)."
   },
   "trauma-0031": {
    "tema": "trauma",
@@ -57994,7 +58424,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -58009,7 +58439,39 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "9ce8f90c56aee5000b9f418825365b9385469cadd77793cedd941def5a58b220"
+   "questaoSha256": "9ce8f90c56aee5000b9f418825365b9385469cadd77793cedd941def5a58b220",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Classificação de LETOURNEL",
+       "Quem pode ficar sem cirurgia"
+      ],
+      "blocos": [
+       "classificacao-de-letournel-189e52d0",
+       "classificacao-de-letournel-5c165487",
+       "classificacao-de-letournel-e0c8fa8d",
+       "classificacao-de-letournel-95854c73",
+       "classificacao-de-letournel-51890397",
+       "classificacao-de-letournel-18f9732d",
+       "quem-pode-ficar-sem-cirurgia-b7f47596",
+       "quem-pode-ficar-sem-cirurgia-2a347117",
+       "quem-pode-ficar-sem-cirurgia-b45eec2a"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "fd03b8798892273cf5b7cad98091bb3cecd6f2858a6b1149470b7ee6c0fd57a3"
+     }
+    ],
+    "questaoSha256": "9ce8f90c56aee5000b9f418825365b9385469cadd77793cedd941def5a58b220",
+    "comentarioSha256": "87d453106d76e0ab948ace9701ebfcc4cb5e7379858b757d7cc927270ff3d8f5"
+   }
   },
   "trauma-0040": {
    "tema": "trauma",
@@ -60205,14 +60667,15 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Mecanismo da SCIWORA não é tratado nos resumos de coluna publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "b3a0dffbf2470652e10915534f84f42c9e915599ede06f441ccfddfa4fe927e4"
+   "questaoSha256": "b3a0dffbf2470652e10915534f84f42c9e915599ede06f441ccfddfa4fe927e4",
+   "pendencia": "Mecanismo da SCIWORA não é tratado nos resumos de coluna publicados."
   },
   "trauma-0095": {
    "tema": "trauma",
@@ -60485,14 +60948,15 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Fratura do calcâneo em língua e necrose da pele posterior não pertencem ao resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "c2646209855c980eae3e2457aac7b3e9175b8c9ea18b7607f4369ba4d19f4eac"
+   "questaoSha256": "c2646209855c980eae3e2457aac7b3e9175b8c9ea18b7607f4369ba4d19f4eac",
+   "pendencia": "Fratura do calcâneo em língua e necrose da pele posterior não pertencem ao resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-0105": {
    "tema": "trauma",
@@ -61363,7 +61827,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -61378,7 +61842,51 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "2f6210bf90c6466e3796a46cddd96d290c76ed35f5df8e192b845bed847c2740"
+   "questaoSha256": "2f6210bf90c6466e3796a46cddd96d290c76ed35f5df8e192b845bed847c2740",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula",
+       "Processos: coracoide, acrômio e espinha lateral"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-db257df4",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-98825935",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-7f675f13",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-9246e462",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-d18bd73d",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-514a8f28",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-e2bdea5f",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-924f846c",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+       "processos-coracoide-acromio-e-espinha-lateral-b04446e6",
+       "processos-coracoide-acromio-e-espinha-lateral-b51c77ae"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "34945a5b9e61e9095a69c2ae5f5d593193692b5d6d16c49c4b0cd0371ed6bedc"
+     }
+    ],
+    "questaoSha256": "2f6210bf90c6466e3796a46cddd96d290c76ed35f5df8e192b845bed847c2740",
+    "comentarioSha256": "5e491289db020094e64bae9cf5057dd5f97d7c04cd2ab8aec0a51a81a3c7f5af"
+   }
   },
   "trauma-0127": {
    "tema": "trauma",
@@ -61818,14 +62326,15 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Irrigação do retalho da via lateral estendida do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "bf2f62d43e9d6ebe0effa1b406297b1c38649854a9db766c8cee4ef5eca5ba63"
+   "questaoSha256": "bf2f62d43e9d6ebe0effa1b406297b1c38649854a9db766c8cee4ef5eca5ba63",
+   "pendencia": "Irrigação do retalho da via lateral estendida do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-0139": {
    "tema": "trauma",
@@ -62084,7 +62593,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62099,7 +62608,34 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "a21f14521152580a3a696599fca46f44d1139595c4ad9e5834b254ccb5f98fe7"
+   "questaoSha256": "a21f14521152580a3a696599fca46f44d1139595c4ad9e5834b254ccb5f98fe7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lado medial e vias posteriores"
+      ],
+      "blocos": [
+       "lado-medial-e-vias-posteriores-bc5f6eec",
+       "lado-medial-e-vias-posteriores-8ef4f52b",
+       "lado-medial-e-vias-posteriores-e6f21b8f",
+       "lado-medial-e-vias-posteriores-a7f2d50c",
+       "lado-medial-e-vias-posteriores-1fc676ed"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "4c8f247e2a98aaacca0b852556a50ab23d29af4cd7d190d485dc33b59ede2ec9"
+     }
+    ],
+    "questaoSha256": "a21f14521152580a3a696599fca46f44d1139595c4ad9e5834b254ccb5f98fe7",
+    "comentarioSha256": "2882359e648d5884663fa8859c09978befd4e1a1f2b40074e692bba954358af0"
+   }
   },
   "trauma-0149": {
    "tema": "trauma",
@@ -62899,14 +63435,15 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Classificação de Berndt e Harty da lesão osteocondral do tálus não aparece no resumo de fraturas do tálus.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "4fcada7a3e9cc7d15a8421fc90077a05d667bc7a7133df7ebe4585010a4fe957"
+   "questaoSha256": "4fcada7a3e9cc7d15a8421fc90077a05d667bc7a7133df7ebe4585010a4fe957",
+   "pendencia": "Classificação de Berndt e Harty da lesão osteocondral do tálus não aparece no resumo de fraturas do tálus."
   },
   "trauma-0171": {
    "tema": "trauma",
@@ -63680,7 +64217,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63695,7 +64232,41 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "71d76ee3b03a2fc34d9d935b91beaf7df29d2fa2a02bcf7c12dde45f5d02ab1e"
+   "questaoSha256": "71d76ee3b03a2fc34d9d935b91beaf7df29d2fa2a02bcf7c12dde45f5d02ab1e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-1b1233da",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-4ce4e3c1",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-a3d744c7",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-470424ae",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-eaccb38a",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-d4dcab99",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-4aa77835",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-e7b94dbb",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-52a085a4"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "0f1353295fb2064b10a88457d52f27f6e40dd08d76f86f6f9d30ced385b0f6b9"
+     }
+    ],
+    "questaoSha256": "71d76ee3b03a2fc34d9d935b91beaf7df29d2fa2a02bcf7c12dde45f5d02ab1e",
+    "comentarioSha256": "b4dcfc72c30c214f9a21fd32536c048640a5221bd6db554cf96f70c7a6d63231"
+   }
   },
   "trauma-0194": {
    "tema": "trauma",
@@ -66460,7 +67031,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66475,7 +67046,42 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "a67e62888da6457e0a4945c24bbe9e7cad58eee08d6067ed52e89c73a09e0d3c"
+   "questaoSha256": "a67e62888da6457e0a4945c24bbe9e7cad58eee08d6067ed52e89c73a09e0d3c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "A fratura do colo do mesmo lado"
+      ],
+      "blocos": [
+       "a-fratura-do-colo-do-mesmo-lado-7b61320a",
+       "a-fratura-do-colo-do-mesmo-lado-754eb6d6",
+       "a-fratura-do-colo-do-mesmo-lado-ab880107",
+       "a-fratura-do-colo-do-mesmo-lado-9c56d4da",
+       "a-fratura-do-colo-do-mesmo-lado-7a77c9ba",
+       "a-fratura-do-colo-do-mesmo-lado-473f033a",
+       "a-fratura-do-colo-do-mesmo-lado-2856b2fa",
+       "a-fratura-do-colo-do-mesmo-lado-d6fedb3e",
+       "a-fratura-do-colo-do-mesmo-lado-ef55cada",
+       "a-fratura-do-colo-do-mesmo-lado-2c1abd51",
+       "a-fratura-do-colo-do-mesmo-lado-8484e205",
+       "a-fratura-do-colo-do-mesmo-lado-447c2a22",
+       "a-fratura-do-colo-do-mesmo-lado-6064015f"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "c0a06ece592d398dc749a2baaa06d79a1eb87a13148e1fe7c59f33ae83b52e1d"
+     }
+    ],
+    "questaoSha256": "a67e62888da6457e0a4945c24bbe9e7cad58eee08d6067ed52e89c73a09e0d3c",
+    "comentarioSha256": "4d6b18c35787c628e34241df0becc5aa86ec0c156bc84bb9a2602ac337292c09"
+   }
   },
   "trauma-0282": {
    "tema": "trauma",
@@ -67243,14 +67849,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Incidência de artrose sintomática após fratura do calcâneo não está no resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "05c078e4fb2d1a8e97e321fd7a640444f1c5a3ed26053590e8976571dc6765c9"
+   "questaoSha256": "05c078e4fb2d1a8e97e321fd7a640444f1c5a3ed26053590e8976571dc6765c9",
+   "pendencia": "Incidência de artrose sintomática após fratura do calcâneo não está no resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-0303": {
    "tema": "trauma",
@@ -67464,14 +68071,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Complicações da fratura do capítulo umeral não aparecem nos resumos publicados (não há resumo de úmero distal do adulto).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "0f7ebd6a35ca717716d5f3d4453a6ed221ed3a7851c90e1748e07f5921615665"
+   "questaoSha256": "0f7ebd6a35ca717716d5f3d4453a6ed221ed3a7851c90e1748e07f5921615665",
+   "pendencia": "Complicações da fratura do capítulo umeral não aparecem nos resumos publicados (não há resumo de úmero distal do adulto)."
   },
   "trauma-0311": {
    "tema": "trauma",
@@ -67773,7 +68381,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -67788,7 +68396,45 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "8c84ce82bdb32bfebb641db9d5764da9f7574c1c52ce3b671e798456aec77b41"
+   "questaoSha256": "8c84ce82bdb32bfebb641db9d5764da9f7574c1c52ce3b671e798456aec77b41",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-3ebc61ae",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-8bbbb416",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-924f846c",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-69bcc1c9",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-d9e7456b",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-c55288f1",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-ca6b4453",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-ace54a23",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-ded02f32",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-c257bed2",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-3e879bce",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-6a0637b7"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "a2d079aaea2a98b0d5cebfd6f814dd28e196dc3f1c5f5242623d908d51ab5e42"
+     }
+    ],
+    "questaoSha256": "8c84ce82bdb32bfebb641db9d5764da9f7574c1c52ce3b671e798456aec77b41",
+    "comentarioSha256": "1a2a5cffa2ea26d356756c29960b4f237966842924a30ccfb102e267efd79865"
+   }
   },
   "trauma-0321": {
    "tema": "trauma",
@@ -67894,14 +68540,15 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Indicação da via medial isolada na fratura do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "3874ed01a9e1cd6a379e6b70050a10cb4aeb357103425ec5f68a20077932aa03"
+   "questaoSha256": "3874ed01a9e1cd6a379e6b70050a10cb4aeb357103425ec5f68a20077932aa03",
+   "pendencia": "Indicação da via medial isolada na fratura do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-0325": {
    "tema": "trauma",
@@ -70698,14 +71345,15 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Interposição na fratura do sustentáculo do tálus (calcâneo) não aparece no resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "ad7f659997dbedaf2ce8c30c999e52c091c440a197e4cd4756672594cc3dbe41"
+   "questaoSha256": "ad7f659997dbedaf2ce8c30c999e52c091c440a197e4cd4756672594cc3dbe41",
+   "pendencia": "Interposição na fratura do sustentáculo do tálus (calcâneo) não aparece no resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-0541": {
    "tema": "trauma",
@@ -70714,7 +71362,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70729,7 +71377,42 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "bff105cad30fec69994c74b78cdb16451402913d1c21db19b43e67a6de444a0d"
+   "questaoSha256": "bff105cad30fec69994c74b78cdb16451402913d1c21db19b43e67a6de444a0d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "A fíbula e as três colunas"
+      ],
+      "blocos": [
+       "a-fibula-e-as-tres-colunas-5a05c228",
+       "a-fibula-e-as-tres-colunas-f9bcec08",
+       "a-fibula-e-as-tres-colunas-988b9194",
+       "a-fibula-e-as-tres-colunas-d8d4ad29",
+       "a-fibula-e-as-tres-colunas-286852d8",
+       "a-fibula-e-as-tres-colunas-07fa037a",
+       "a-fibula-e-as-tres-colunas-54d4ae66",
+       "a-fibula-e-as-tres-colunas-d7b98395",
+       "a-fibula-e-as-tres-colunas-a82a4540",
+       "a-fibula-e-as-tres-colunas-427ccf73",
+       "a-fibula-e-as-tres-colunas-e5cf59be",
+       "a-fibula-e-as-tres-colunas-3ec81f10",
+       "a-fibula-e-as-tres-colunas-4a0060da"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "8ad1462e6d294058014db7ede0ce034bfa78b3f113adbae1f88590e3d29d23c2"
+     }
+    ],
+    "questaoSha256": "bff105cad30fec69994c74b78cdb16451402913d1c21db19b43e67a6de444a0d",
+    "comentarioSha256": "2f2ad99e8b51ea4bcfe042fe83869ce2541aea3208a3cc6fce9d9ab69adeb349"
+   }
   },
   "trauma-0543": {
    "tema": "trauma",
@@ -71673,14 +72356,15 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Classificação tomográfica de Sanders do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "16a4ff5f1e06fc9aa749a45ff3f771c4d1b6034620946b3b9cd07100a296419b"
+   "questaoSha256": "16a4ff5f1e06fc9aa749a45ff3f771c4d1b6034620946b3b9cd07100a296419b",
+   "pendencia": "Classificação tomográfica de Sanders do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-0572": {
    "tema": "trauma",
@@ -72547,14 +73231,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Classificação das fraturas da tuberosidade do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "ea93b32a05d9a89c0576aec61fba841216556cef2696d29461fe25e50ce16139"
+   "questaoSha256": "ea93b32a05d9a89c0576aec61fba841216556cef2696d29461fe25e50ce16139",
+   "pendencia": "Classificação das fraturas da tuberosidade do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-0677": {
    "tema": "trauma",
@@ -75471,14 +76156,15 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do capítulo 60 só define a fratura em manga (sleeve) como avulsão do polo distal com grande parte da cartilagem no esqueleto imaturo; não traz a ordem de frequência dos polos, o mecanismo, o diferencial com Sinding-Larsen-Johansson nem a técnica de fixação pedidos nas alternativas.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "c671b3a438dc3abe113c7ce43a0aa07fcf5d2ae42f09a224df379a6cc68fc6ec"
+   "questaoSha256": "c671b3a438dc3abe113c7ce43a0aa07fcf5d2ae42f09a224df379a6cc68fc6ec",
+   "pendencia": "O resumo do capítulo 60 só define a fratura em manga (sleeve) como avulsão do polo distal com grande parte da cartilagem no esqueleto imaturo; não traz a ordem de frequência dos polos, o mecanismo, o diferencial com Sinding-Larsen-Johansson nem a técnica de fixação pedidos nas alternativas."
   },
   "trauma-0770": {
    "tema": "trauma",
@@ -75532,14 +76218,15 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 42 cita o interósseo posterior como o nervo da cirurgia e o tipo III como da criança, mas não diz em qual tipo de Bado a lesão do interósseo posterior é mais comum.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "c4b5733fc57ce3521b4cb625eeeb781d354b0309c71e87c7048b1e4c03db88fc"
+   "questaoSha256": "c4b5733fc57ce3521b4cb625eeeb781d354b0309c71e87c7048b1e4c03db88fc",
+   "pendencia": "O resumo 42 cita o interósseo posterior como o nervo da cirurgia e o tipo III como da criança, mas não diz em qual tipo de Bado a lesão do interósseo posterior é mais comum."
   },
   "trauma-0773": {
    "tema": "trauma",
@@ -75598,14 +76285,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Densidade óssea por quadrante da cabeça do rádio não aparece no resumo; o capítulo 40 só descreve a zona segura não articular.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "940fa9291a17fcd58cc74499543a6faa1c133218bcd24a77b433a7cc1c1efba1"
+   "questaoSha256": "940fa9291a17fcd58cc74499543a6faa1c133218bcd24a77b433a7cc1c1efba1",
+   "pendencia": "Densidade óssea por quadrante da cabeça do rádio não aparece no resumo; o capítulo 40 só descreve a zona segura não articular."
   },
   "trauma-0775": {
    "tema": "trauma",
@@ -76370,14 +77058,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo de tálus descreve a via do seio do tarso para o processo lateral, mas não a estrutura seccionada na via do seio do tarso para o calcâneo; falta resumo de calcâneo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "a3ad62b51f1fe3255ea12b52609bcc8bb26d403fc7d402bce03705445eab5eee"
+   "questaoSha256": "a3ad62b51f1fe3255ea12b52609bcc8bb26d403fc7d402bce03705445eab5eee",
+   "pendencia": "O resumo de tálus descreve a via do seio do tarso para o processo lateral, mas não a estrutura seccionada na via do seio do tarso para o calcâneo; falta resumo de calcâneo."
   },
   "trauma-0802": {
    "tema": "trauma",
@@ -77399,14 +78088,40 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "ee55cff41f6b776b1c45a6ef5363550b68bdb1f0de3e133dd582cb4e2bb9468d"
+   "questaoSha256": "ee55cff41f6b776b1c45a6ef5363550b68bdb1f0de3e133dd582cb4e2bb9468d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "As hastes elásticas"
+      ],
+      "blocos": [
+       "as-hastes-elasticas-8c6022b4",
+       "as-hastes-elasticas-67872f88",
+       "as-hastes-elasticas-4cd941c9",
+       "as-hastes-elasticas-1c94db09"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "b93b7f5e66757f6b1ba324290ac5c2f2571c7339e08c31058f5edfd3abbaa6f3"
+     }
+    ],
+    "questaoSha256": "ee55cff41f6b776b1c45a6ef5363550b68bdb1f0de3e133dd582cb4e2bb9468d",
+    "comentarioSha256": "c23a8964efec7e66aa7a99a0f8331bbe4d630cb997dc7b9c58dd1b4a62449852"
+   }
   },
   "trauma-0850": {
    "tema": "trauma",
@@ -77673,14 +78388,15 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Plano da classificação de Sanders do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "3143f7481e68112497b1d50729f8dd4f2043e8af4f34ac9d8c88939ea74accfb"
+   "questaoSha256": "3143f7481e68112497b1d50729f8dd4f2043e8af4f34ac9d8c88939ea74accfb",
+   "pendencia": "Plano da classificação de Sanders do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-0858": {
    "tema": "trauma",
@@ -79162,14 +79878,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Incidência axial de Harris do calcâneo não aparece no resumo de tálus (que só descreve CANALE e BRODEN para o tálus e a subtalar); falta resumo de calcâneo para avaliar as quatro alternativas.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "13dda3e40154fba7894ff4c1e65e161338a832f2d322c5212bd6c6deadf36d91"
+   "questaoSha256": "13dda3e40154fba7894ff4c1e65e161338a832f2d322c5212bd6c6deadf36d91",
+   "pendencia": "Incidência axial de Harris do calcâneo não aparece no resumo de tálus (que só descreve CANALE e BRODEN para o tálus e a subtalar); falta resumo de calcâneo para avaliar as quatro alternativas."
   },
   "trauma-0898": {
    "tema": "trauma",
@@ -80610,7 +81327,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80625,7 +81342,49 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "d8cc4e61dc36c12a2d4e76a70b8c8e37e8255134a66785312bf3bc1f6ae8fbf0"
+   "questaoSha256": "d8cc4e61dc36c12a2d4e76a70b8c8e37e8255134a66785312bf3bc1f6ae8fbf0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Mecanismo e deformidade: para onde vai cada fragmento"
+      ],
+      "blocos": [
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-232a0711",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-fe5873d4",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-5e4c6ef5",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-735a57db"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "24d270e41447bb8e18925f75c71659b9e4b85ebd06088424d21d7b58bfedbd3e"
+     },
+     {
+      "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+      "titulo": "Epidemiologia das fraturas na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+      "secoes": [
+       "Comece pela causa: acidental, não acidental ou patológica"
+      ],
+      "blocos": [
+       "comece-pela-causa-acidental-nao-acidental-ou-pat-60d8a6ec",
+       "comece-pela-causa-acidental-nao-acidental-ou-pat-9018e2fe"
+      ],
+      "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+      "trechosSha256": "7762f036315d78e55b464acd8659e4ce23cc909b57eb35a3d297d37b56e9c2dd"
+     }
+    ],
+    "questaoSha256": "d8cc4e61dc36c12a2d4e76a70b8c8e37e8255134a66785312bf3bc1f6ae8fbf0",
+    "comentarioSha256": "a301eeded33841f402950ee034f9074e3ebab297f2dcd11e7dde64401b6ba749"
+   }
   },
   "trauma-0950": {
    "tema": "trauma",
@@ -82533,14 +83292,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Biomecânica triaxial e o estudo cinemático de Dennis (pivô, translação condilar, graus de flexão na marcha e na escada) não aparecem no resumo de luxação do joelho; falta fonte de biomecânica do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "2f8bd7fc2bc7a9b7ede884f0f8e597abe1bb2889f199b97f39bc0ed14dcbffa9"
+   "questaoSha256": "2f8bd7fc2bc7a9b7ede884f0f8e597abe1bb2889f199b97f39bc0ed14dcbffa9",
+   "pendencia": "Biomecânica triaxial e o estudo cinemático de Dennis (pivô, translação condilar, graus de flexão na marcha e na escada) não aparecem no resumo de luxação do joelho; falta fonte de biomecânica do joelho."
   },
   "trauma-1006": {
    "tema": "trauma",
@@ -82549,14 +83309,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Osteonecrose do côndilo femoral e estadiamento de Koshino modificado por Aglietti não são tratados no resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "1226fb51f4c1e2ccfbfc4c83c0ab693ac606ff61e9c48be7d85d4116861da55a"
+   "questaoSha256": "1226fb51f4c1e2ccfbfc4c83c0ab693ac606ff61e9c48be7d85d4116861da55a",
+   "pendencia": "Osteonecrose do côndilo femoral e estadiamento de Koshino modificado por Aglietti não são tratados no resumo de luxação do joelho."
   },
   "trauma-1007": {
    "tema": "trauma",
@@ -82600,14 +83361,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Citocinas da artrite pós-traumática (IL-1β, IL-6 etc.) não aparecem no resumo de luxação do joelho; falta fonte de biologia da cartilagem.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "1b0cbfe3c4fa8a793a1eb32d5dee7d86e743b996c5e353a498762f9a86c47248"
+   "questaoSha256": "1b0cbfe3c4fa8a793a1eb32d5dee7d86e743b996c5e353a498762f9a86c47248",
+   "pendencia": "Citocinas da artrite pós-traumática (IL-1β, IL-6 etc.) não aparecem no resumo de luxação do joelho; falta fonte de biologia da cartilagem."
   },
   "trauma-1010": {
    "tema": "trauma",
@@ -82765,7 +83527,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82780,7 +83542,36 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "b266e617238e012fb9c6cb376149ca56538cffa7705624776908ba67080eee4a"
+   "questaoSha256": "b266e617238e012fb9c6cb376149ca56538cffa7705624776908ba67080eee4a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER",
+       "Estabilidade: a fratura isolada do maléolo lateral e o teste",
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-74872df1",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-f8738c81",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-859fa659",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-35be2a86",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "45f7c1b53832ab23401c086229932170172f3567e7ddbf89158748605ad03ab1"
+     }
+    ],
+    "questaoSha256": "b266e617238e012fb9c6cb376149ca56538cffa7705624776908ba67080eee4a",
+    "comentarioSha256": "f412bcab8756760ddac6450a2d862a645cb67d00c77ec786d6e0d16bb7f6f018"
+   }
   },
   "trauma-1016": {
    "tema": "trauma",
@@ -82815,15 +83606,16 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 60 cita o TT-TG aumentado só como fator predisponente da luxação; os cortes para osteotomia da tuberosidade (15 ou 20 mm, tróclea normal ou displásica) não estão no resumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal",
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "0bbed1a0f2fd6763399ec89846f53f435a28fcc163f8d496308e82157f0c19bf"
+   "questaoSha256": "0bbed1a0f2fd6763399ec89846f53f435a28fcc163f8d496308e82157f0c19bf",
+   "pendencia": "O capítulo 60 cita o TT-TG aumentado só como fator predisponente da luxação; os cortes para osteotomia da tuberosidade (15 ou 20 mm, tróclea normal ou displásica) não estão no resumo."
   },
   "trauma-1019": {
    "tema": "trauma",
@@ -82933,14 +83725,15 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Regra de Coventry e largura tibial na osteotomia de fechamento não constam do resumo de luxação do joelho; falta capítulo de osteotomias.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "a3fe6158fc7639655c33d5f8c3f76f452f87becec5f5ff692107a438a9900eb7"
+   "questaoSha256": "a3fe6158fc7639655c33d5f8c3f76f452f87becec5f5ff692107a438a9900eb7",
+   "pendencia": "Regra de Coventry e largura tibial na osteotomia de fechamento não constam do resumo de luxação do joelho; falta capítulo de osteotomias."
   },
   "trauma-1022": {
    "tema": "trauma",
@@ -83016,14 +83809,15 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo cita o cruzado anterior como restritor primário da translação anterior e a gaveta com o pé em rotação externa para instabilidade anteromedial, mas não descreve a gaveta anterior em extensão nem o efeito das rotações na lesão isolada do LCA.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "86180284372389dfab1a11beb99e6f45f8ca9620dff0510819586fe06fc4f03b"
+   "questaoSha256": "86180284372389dfab1a11beb99e6f45f8ca9620dff0510819586fe06fc4f03b",
+   "pendencia": "O resumo cita o cruzado anterior como restritor primário da translação anterior e a gaveta com o pé em rotação externa para instabilidade anteromedial, mas não descreve a gaveta anterior em extensão nem o efeito das rotações na lesão isolada do LCA."
   },
   "trauma-1025": {
    "tema": "trauma",
@@ -83032,14 +83826,15 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Nervo mais acometido na Monteggia tipo II da criança não é informado nos resumos 42 e Wilkins 9 (que só tratam do interósseo posterior na cirurgia e no exame).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "012024bfb1838be42826c7d766b9fbd8891b5960b68005b96b1f1abc858059b6"
+   "questaoSha256": "012024bfb1838be42826c7d766b9fbd8891b5960b68005b96b1f1abc858059b6",
+   "pendencia": "Nervo mais acometido na Monteggia tipo II da criança não é informado nos resumos 42 e Wilkins 9 (que só tratam do interósseo posterior na cirurgia e no exame)."
   },
   "trauma-1026": {
    "tema": "trauma",
@@ -83065,14 +83860,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rotação do componente femoral na artroplastia não é assunto do resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "8d58a13a6fb660c74a98804ba972dd714ccfc91b3eb7eb86bb9e40c368edcac1"
+   "questaoSha256": "8d58a13a6fb660c74a98804ba972dd714ccfc91b3eb7eb86bb9e40c368edcac1",
+   "pendencia": "Rotação do componente femoral na artroplastia não é assunto do resumo de luxação do joelho."
   },
   "trauma-1028": {
    "tema": "trauma",
@@ -83098,14 +83894,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Osteocondrite dissecante da patela não é tratada no resumo do capítulo 60.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "734cd6cbcf521ac18682dcee6d7be2d382249e4f53fffec2ffd300a23a228997"
+   "questaoSha256": "734cd6cbcf521ac18682dcee6d7be2d382249e4f53fffec2ffd300a23a228997",
+   "pendencia": "Osteocondrite dissecante da patela não é tratada no resumo do capítulo 60."
   },
   "trauma-1030": {
    "tema": "trauma",
@@ -83167,14 +83964,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Classificação do joelho como gínglimo/trocoide e restrição rotacional em extensão não aparecem no resumo; o capítulo só cita o screw-home sem descrever o tipo articular.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "1c07bff9e55f3cbb296c5edff86226f9ffc19973fc8b65fe2c1354f858fe900b"
+   "questaoSha256": "1c07bff9e55f3cbb296c5edff86226f9ffc19973fc8b65fe2c1354f858fe900b",
+   "pendencia": "Classificação do joelho como gínglimo/trocoide e restrição rotacional em extensão não aparecem no resumo; o capítulo só cita o screw-home sem descrever o tipo articular."
   },
   "trauma-1032": {
    "tema": "trauma",
@@ -83183,14 +83981,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Lesão meniscal em rampa não é descrita no resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "a4f41fd72b2191381abdeb1e57807fbe51c315980e0c29870b17574a0929e761"
+   "questaoSha256": "a4f41fd72b2191381abdeb1e57807fbe51c315980e0c29870b17574a0929e761",
+   "pendencia": "Lesão meniscal em rampa não é descrita no resumo de luxação do joelho."
   },
   "trauma-1033": {
    "tema": "trauma",
@@ -83315,14 +84114,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sinal de Basset e lesão do ligamento patelofemoral medial não aparecem no resumo de luxação do joelho (seria do capítulo de luxação da patela).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "54b04dca6cd83d3d0cc74f4cb6d311e8ecd4bb9785fbc7fe4bf1ecdcc5c3277a"
+   "questaoSha256": "54b04dca6cd83d3d0cc74f4cb6d311e8ecd4bb9785fbc7fe4bf1ecdcc5c3277a",
+   "pendencia": "Sinal de Basset e lesão do ligamento patelofemoral medial não aparecem no resumo de luxação do joelho (seria do capítulo de luxação da patela)."
   },
   "trauma-1040": {
    "tema": "trauma",
@@ -83383,14 +84183,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Plicas sinoviais do joelho não aparecem no resumo do capítulo 60.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "74b239b827efc63590174c8b1ea0ed4bbffe8ec48bbf9c6f8fd5418c7ace5e11"
+   "questaoSha256": "74b239b827efc63590174c8b1ea0ed4bbffe8ec48bbf9c6f8fd5418c7ace5e11",
+   "pendencia": "Plicas sinoviais do joelho não aparecem no resumo do capítulo 60."
   },
   "trauma-1042": {
    "tema": "trauma",
@@ -83448,14 +84249,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Zona de segurança da ostectomia da fíbula na osteotomia tibial não consta do resumo; o capítulo 61 só localiza o nervo fibular 1,5 a 2 cm abaixo do estiloide.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "abcbf97139756c647345d84a11fde604a50914c5eca8f5054b33d1694d5e316e"
+   "questaoSha256": "abcbf97139756c647345d84a11fde604a50914c5eca8f5054b33d1694d5e316e",
+   "pendencia": "Zona de segurança da ostectomia da fíbula na osteotomia tibial não consta do resumo; o capítulo 61 só localiza o nervo fibular 1,5 a 2 cm abaixo do estiloide."
   },
   "trauma-1044": {
    "tema": "trauma",
@@ -83516,14 +84318,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Indicação de osteotomia valgizante versus artroplastia na artrose medial não é tratada no resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "487f9ef457f7fbc3b054db070adfd6f5010d960c1c856c3f278477d8a2bfc158"
+   "questaoSha256": "487f9ef457f7fbc3b054db070adfd6f5010d960c1c856c3f278477d8a2bfc158",
+   "pendencia": "Indicação de osteotomia valgizante versus artroplastia na artrose medial não é tratada no resumo de luxação do joelho."
   },
   "trauma-1046": {
    "tema": "trauma",
@@ -83703,14 +84506,15 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Luxação intra-articular da patela e seus tipos não aparecem no resumo do capítulo 60.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "6ac70a4452b5ca50516d9fb11207f436ecda54b320939471c63479633e06fcf6"
+   "questaoSha256": "6ac70a4452b5ca50516d9fb11207f436ecda54b320939471c63479633e06fcf6",
+   "pendencia": "Luxação intra-articular da patela e seus tipos não aparecem no resumo do capítulo 60."
   },
   "trauma-1051": {
    "tema": "trauma",
@@ -83719,14 +84523,15 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Técnica do portal artroscópico posteromedial (distensão hídrica, posição) não aparece no resumo; o capítulo só recomenda cautela com a bomba de artroscopia no joelho luxado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "076cfbc7b741cedc651b02649ad70b14d9c998686c44c6772e1d974d16e3d89c"
+   "questaoSha256": "076cfbc7b741cedc651b02649ad70b14d9c998686c44c6772e1d974d16e3d89c",
+   "pendencia": "Técnica do portal artroscópico posteromedial (distensão hídrica, posição) não aparece no resumo; o capítulo só recomenda cautela com a bomba de artroscopia no joelho luxado."
   },
   "trauma-1052": {
    "tema": "trauma",
@@ -83735,14 +84540,15 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Localização da osteocondrite dissecante não é assunto do resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "c32e885efff2c3dfd4af2bb5337a4b2a4dae8dbde57555752de4031a057180f3"
+   "questaoSha256": "c32e885efff2c3dfd4af2bb5337a4b2a4dae8dbde57555752de4031a057180f3",
+   "pendencia": "Localização da osteocondrite dissecante não é assunto do resumo de luxação do joelho."
   },
   "trauma-1053": {
    "tema": "trauma",
@@ -83802,14 +84608,15 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sensibilidade comparada de Lachman, pivot shift e gaveta anterior não aparece no resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "6faa2fad67de80090fcabf6860ed90d6f4c5f8223180d0fbf899029abe91001c"
+   "questaoSha256": "6faa2fad67de80090fcabf6860ed90d6f4c5f8223180d0fbf899029abe91001c",
+   "pendencia": "Sensibilidade comparada de Lachman, pivot shift e gaveta anterior não aparece no resumo de luxação do joelho."
   },
   "trauma-1055": {
    "tema": "trauma",
@@ -83818,14 +84625,15 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Contraindicações da osteotomia proximal da tíbia não constam do resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "585315162ceb4878c74b231ee77c4274a5dd0c69531ff30a10be8df73ad1226d"
+   "questaoSha256": "585315162ceb4878c74b231ee77c4274a5dd0c69531ff30a10be8df73ad1226d",
+   "pendencia": "Contraindicações da osteotomia proximal da tíbia não constam do resumo de luxação do joelho."
   },
   "trauma-1056": {
    "tema": "trauma",
@@ -83900,14 +84708,15 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Valor de TA-GT que indica osteotomia distal não consta do resumo do capítulo 60.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "af3bd8c4a8459ad878d24d0fda01bc97bc6259ee03b8bfe184924a9471f1471b"
+   "questaoSha256": "af3bd8c4a8459ad878d24d0fda01bc97bc6259ee03b8bfe184924a9471f1471b",
+   "pendencia": "Valor de TA-GT que indica osteotomia distal não consta do resumo do capítulo 60."
   },
   "trauma-1060": {
    "tema": "trauma",
@@ -83984,14 +84793,15 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Carga articular do joelho em múltiplos do peso corporal e distribuição entre compartimentos não aparecem no resumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "9cb1f953a695a8bbcfd5696487d85381abde3043f6159211c4f675cec550473a"
+   "questaoSha256": "9cb1f953a695a8bbcfd5696487d85381abde3043f6159211c4f675cec550473a",
+   "pendencia": "Carga articular do joelho em múltiplos do peso corporal e distribuição entre compartimentos não aparecem no resumo."
   },
   "trauma-1063": {
    "tema": "trauma",
@@ -84073,14 +84883,15 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Tratamento da infecção aguda da artroplastia do joelho não é assunto do resumo; o capítulo 61 só trata infecção após reconstrução ligamentar.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "2d0ca6c2b6c7c99c6461daa7bcd5618e09402a0c4aa443730078d0c7adf927db"
+   "questaoSha256": "2d0ca6c2b6c7c99c6461daa7bcd5618e09402a0c4aa443730078d0c7adf927db",
+   "pendencia": "Tratamento da infecção aguda da artroplastia do joelho não é assunto do resumo; o capítulo 61 só trata infecção após reconstrução ligamentar."
   },
   "trauma-1066": {
    "tema": "trauma",
@@ -84089,14 +84900,15 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Técnica do portal artroscópico posteromedial não aparece no resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "4d83e33aad31c8dc9eb2d4b83a840641785e90946e646cb973c20bb8ba83f882"
+   "questaoSha256": "4d83e33aad31c8dc9eb2d4b83a840641785e90946e646cb973c20bb8ba83f882",
+   "pendencia": "Técnica do portal artroscópico posteromedial não aparece no resumo de luxação do joelho."
   },
   "trauma-1067": {
    "tema": "trauma",
@@ -84105,14 +84917,15 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Osteotomias de realinhamento (Fulkerson, Elmslie-Trillat, Maquet, Hauser) não aparecem no resumo do capítulo 60.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "d6f0f564d2c4ef4b1a54647888865f70dd4f990adfc79e920d76d066064e439b"
+   "questaoSha256": "d6f0f564d2c4ef4b1a54647888865f70dd4f990adfc79e920d76d066064e439b",
+   "pendencia": "Osteotomias de realinhamento (Fulkerson, Elmslie-Trillat, Maquet, Hauser) não aparecem no resumo do capítulo 60."
   },
   "trauma-1068": {
    "tema": "trauma",
@@ -84121,14 +84934,15 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Classificação de LaPrade das lesões da raiz meniscal não aparece no resumo (o LaPrade do capítulo é o da reconstrução do canto posterolateral).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "2f2263e945c60287964e6644b6a2581c1c5b9fd82ae82753a0e802e277b78770"
+   "questaoSha256": "2f2263e945c60287964e6644b6a2581c1c5b9fd82ae82753a0e802e277b78770",
+   "pendencia": "Classificação de LaPrade das lesões da raiz meniscal não aparece no resumo (o LaPrade do capítulo é o da reconstrução do canto posterolateral)."
   },
   "trauma-1069": {
    "tema": "trauma",
@@ -84137,14 +84951,15 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Mecanismo da diacereína na artrose não é assunto do resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "0e5de1957fde35b0aa361fdd7c6451d821b0f0a87646979a7fb02b4e0fa41794"
+   "questaoSha256": "0e5de1957fde35b0aa361fdd7c6451d821b0f0a87646979a7fb02b4e0fa41794",
+   "pendencia": "Mecanismo da diacereína na artrose não é assunto do resumo de luxação do joelho."
   },
   "trauma-1070": {
    "tema": "trauma",
@@ -84154,14 +84969,15 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O papel do corno posterior do menisco medial como restritor da translação anterior e a posição que o neutraliza não aparecem no resumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "6f7b94390a629191e89b3b98d8914ced6f1e55516ff1c7916ebf039cd0ac79f5"
+   "questaoSha256": "6f7b94390a629191e89b3b98d8914ced6f1e55516ff1c7916ebf039cd0ac79f5",
+   "pendencia": "O papel do corno posterior do menisco medial como restritor da translação anterior e a posição que o neutraliza não aparecem no resumo."
   },
   "trauma-1071": {
    "tema": "trauma",
@@ -84170,14 +84986,15 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo menciona que o cruzado anterior guia o mecanismo de parafuso (screw-home), mas não descreve a direção da rotação da tíbia na extensão terminal, que é o que a questão pede.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "4fd0740806fa65344b3bf5226d98e4ce10c2734740a58bacda112b3f1f35e46d"
+   "questaoSha256": "4fd0740806fa65344b3bf5226d98e4ce10c2734740a58bacda112b3f1f35e46d",
+   "pendencia": "O resumo menciona que o cruzado anterior guia o mecanismo de parafuso (screw-home), mas não descreve a direção da rotação da tíbia na extensão terminal, que é o que a questão pede."
   },
   "trauma-1072": {
    "tema": "trauma",
@@ -84233,14 +85050,15 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Tensão do enxerto de tendão patelar versus flexores na reconstrução do LCA não é assunto do resumo do capítulo 60.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "81cefad7ad046f172dc489f72b393336e851105a3c76629febabce318585d912"
+   "questaoSha256": "81cefad7ad046f172dc489f72b393336e851105a3c76629febabce318585d912",
+   "pendencia": "Tensão do enxerto de tendão patelar versus flexores na reconstrução do LCA não é assunto do resumo do capítulo 60."
   },
   "trauma-1074": {
    "tema": "trauma",
@@ -84325,14 +85143,15 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rotação do componente femoral na artroplastia não é assunto do resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "15d71fc7c192ab3ac7e0cbbb9853b34fe94aee653f1f789235d7a1925f0efa3a"
+   "questaoSha256": "15d71fc7c192ab3ac7e0cbbb9853b34fe94aee653f1f789235d7a1925f0efa3a",
+   "pendencia": "Rotação do componente femoral na artroplastia não é assunto do resumo de luxação do joelho."
   },
   "trauma-1077": {
    "tema": "trauma",
@@ -84357,14 +85176,15 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Osteotomia com mudança da inclinação tibial na insuficiência do cruzado posterior não aparece no resumo; o capítulo só cita a panorâmica para avaliar alinhamento crônico.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "d802bbae775e1c170c508aa9e1992766c83bbc8357af46a1c2ac9caa76c10d0d"
+   "questaoSha256": "d802bbae775e1c170c508aa9e1992766c83bbc8357af46a1c2ac9caa76c10d0d",
+   "pendencia": "Osteotomia com mudança da inclinação tibial na insuficiência do cruzado posterior não aparece no resumo; o capítulo só cita a panorâmica para avaliar alinhamento crônico."
   },
   "trauma-1079": {
    "tema": "trauma",
@@ -84373,14 +85193,15 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Cisto parameniscal não é tratado no resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "f622e4dac027d510a21ac413ef582ff868119efb1993cc4218ba5bc657ae773d"
+   "questaoSha256": "f622e4dac027d510a21ac413ef582ff868119efb1993cc4218ba5bc657ae773d",
+   "pendencia": "Cisto parameniscal não é tratado no resumo de luxação do joelho."
   },
   "trauma-1080": {
    "tema": "trauma",
@@ -84440,14 +85261,15 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Vias de acesso da artroplastia no valgo (Keblish e outras) não constam do resumo de luxação do joelho.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "7781ad3c7f97ae3046580dc4491a3eff11b60cc4c2c16db0a22400f811abf3a5"
+   "questaoSha256": "7781ad3c7f97ae3046580dc4491a3eff11b60cc4c2c16db0a22400f811abf3a5",
+   "pendencia": "Vias de acesso da artroplastia no valgo (Keblish e outras) não constam do resumo de luxação do joelho."
   },
   "trauma-1082": {
    "tema": "trauma",
@@ -84712,14 +85534,15 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Complicações da osteossíntese do calcâneo não pertencem ao resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "14d3243386d4f60a6143d0b41efb93da7b0f2d4a41f92a3e8f1a5731ca1cd83c"
+   "questaoSha256": "14d3243386d4f60a6143d0b41efb93da7b0f2d4a41f92a3e8f1a5731ca1cd83c",
+   "pendencia": "Complicações da osteossíntese do calcâneo não pertencem ao resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-1088": {
    "tema": "trauma",
@@ -86325,8 +87148,8 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo de planalto tibial cita o fixador em etapas, mas não usa o termo ligamentotaxia nem compara com as fraturas do fêmur, olécrano e colo do tálus; a ligamentotaxia aparece só no resumo de pilão, que não está entre as alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -86340,7 +87163,8 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "9ed00d554656c17e802808c08be320ca66917c7f8f12a159860216432b973e00"
+   "questaoSha256": "9ed00d554656c17e802808c08be320ca66917c7f8f12a159860216432b973e00",
+   "pendencia": "O resumo de planalto tibial cita o fixador em etapas, mas não usa o termo ligamentotaxia nem compara com as fraturas do fêmur, olécrano e colo do tálus; a ligamentotaxia aparece só no resumo de pilão, que não está entre as alternativas."
   },
   "trauma-1138": {
    "tema": "trauma",
@@ -86375,8 +87199,8 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; os resumos divergem: o capítulo 34 lista o ombro flutuante e o déficit neurológico PROGRESSIVO entre as indicações mais absolutas de fixar a clavícula, e o capítulo 33 não considera o ombro flutuante indicação absoluta. Com 'lesão nervosa' sem qualificação (A) e 'ombro flutuante' (B) ambas defensáveis, não há resposta única sustentada; a resposta provável atual (A) precisa de decisão editorial ou fonte primária.",
    "temComentario": true,
    "citacoes": [
     {
@@ -86398,7 +87222,8 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "b6e48c9475f6ff8cefaee43f26fc080a9d36ddbb958e4cea661ddcd7a2ea0e53"
+   "questaoSha256": "b6e48c9475f6ff8cefaee43f26fc080a9d36ddbb958e4cea661ddcd7a2ea0e53",
+   "pendencia": "Sem gabarito oficial; os resumos divergem: o capítulo 34 lista o ombro flutuante e o déficit neurológico PROGRESSIVO entre as indicações mais absolutas de fixar a clavícula, e o capítulo 33 não considera o ombro flutuante indicação absoluta. Com 'lesão nervosa' sem qualificação (A) e 'ombro flutuante' (B) ambas defensáveis, não há resposta única sustentada; a resposta provável atual (A) precisa de decisão editorial ou fonte primária."
   },
   "trauma-1140": {
    "tema": "trauma",
@@ -86547,8 +87372,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; o capítulo 33 não compara a frequência de lesões associadas por tipo de fratura da escápula (só diz que o golpe direto atinge mais o corpo e que fraturas dos dois pilares são de alta energia), o que não sustenta uma resposta única entre corpo, colo, espinha e coracoide.",
    "temComentario": true,
    "citacoes": [
     {
@@ -86562,7 +87387,8 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "35a5e842e737d21785b8f9116e6585a8aa4898accdb295ad31d3dad4304dd75d"
+   "questaoSha256": "35a5e842e737d21785b8f9116e6585a8aa4898accdb295ad31d3dad4304dd75d",
+   "pendencia": "Sem gabarito oficial; o capítulo 33 não compara a frequência de lesões associadas por tipo de fratura da escápula (só diz que o golpe direto atinge mais o corpo e que fraturas dos dois pilares são de alta energia), o que não sustenta uma resposta única entre corpo, colo, espinha e coracoide."
   },
   "trauma-1146": {
    "tema": "trauma",
@@ -86597,7 +87423,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -86613,7 +87439,46 @@
     "rockwood10-34-fratura-clavicula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "9955f5f8d985335a1901fbfc733dc1aa9cec61539e83386dc200f00adeb52a61"
+   "questaoSha256": "9955f5f8d985335a1901fbfc733dc1aa9cec61539e83386dc200f00adeb52a61",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Terço lateral (distal)",
+       "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos",
+       "Classificações: Allman, Neer, Craig, Robinson e AO",
+       "Ombro flutuante, costelas e terço medial"
+      ],
+      "blocos": [
+       "terco-lateral-distal-38f9e0a7",
+       "terco-lateral-distal-be04fd16",
+       "terco-lateral-distal-ffafad32",
+       "terco-lateral-distal-978927a9",
+       "terco-lateral-distal-807eaf40",
+       "terco-lateral-distal-5462932b",
+       "terco-lateral-distal-6bc29624",
+       "terco-lateral-distal-cab8191a",
+       "terco-lateral-distal-842e6a73",
+       "terco-lateral-distal-07a27bbd",
+       "terco-lateral-distal-e3f5357d",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-20e2e44d",
+       "classificacoes-allman-neer-craig-robinson-e-ao-6ba1d129",
+       "ombro-flutuante-costelas-e-terco-medial-a2159463"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "d59fc91ce60e1d32bf9bbfaed3a970b3951446b6be67a43bba627ae5dcf3fa84"
+     }
+    ],
+    "questaoSha256": "9955f5f8d985335a1901fbfc733dc1aa9cec61539e83386dc200f00adeb52a61",
+    "comentarioSha256": "5d3b4034670f4c179f64dd7895a9a687ae07b8c5614d058cec9cdf83311b6afe"
+   }
   },
   "trauma-1150": {
    "tema": "trauma",
@@ -87575,14 +88440,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Retirada de placas ortogonais do fêmur em dois tempos não aparece no resumo do capítulo 57 (que só trata da retirada da haste).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "d99429b5db65d4b7219e341de6dbdefe1fa0b97d58022ee073e2d8dc38e1c7e4"
+   "questaoSha256": "d99429b5db65d4b7219e341de6dbdefe1fa0b97d58022ee073e2d8dc38e1c7e4",
+   "pendencia": "Retirada de placas ortogonais do fêmur em dois tempos não aparece no resumo do capítulo 57 (que só trata da retirada da haste)."
   },
   "trauma-1188": {
    "tema": "trauma",
@@ -87591,14 +88457,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Fíbula vascularizada na pseudartrose infectada com perda óssea não aparece no resumo do capítulo 57.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "292e29dc8abc8b1f6250b97268761708183bab84ce720e1cc5d5cc28b882ddfc"
+   "questaoSha256": "292e29dc8abc8b1f6250b97268761708183bab84ce720e1cc5d5cc28b882ddfc",
+   "pendencia": "Fíbula vascularizada na pseudartrose infectada com perda óssea não aparece no resumo do capítulo 57."
   },
   "trauma-1190": {
    "tema": "trauma",
@@ -87623,8 +88490,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial. O capítulo 57 indica a troca por haste fresada 1 a 3 mm maior na pseudartrose ístmica (87%) e a placa de aumento fora do istmo (50% de consolidação com a troca), e cita a dinamização; não elege a troca como primeira indicação em geral. A resposta provável (Certo) precisa de decisão editorial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -87638,7 +88505,8 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "c802f066cd1713478df58e7f962139aeb3bcbfde6188f28ec9d41e462f6ba4c3"
+   "questaoSha256": "c802f066cd1713478df58e7f962139aeb3bcbfde6188f28ec9d41e462f6ba4c3",
+   "pendencia": "Sem gabarito oficial. O capítulo 57 indica a troca por haste fresada 1 a 3 mm maior na pseudartrose ístmica (87%) e a placa de aumento fora do istmo (50% de consolidação com a troca), e cita a dinamização; não elege a troca como primeira indicação em geral. A resposta provável (Certo) precisa de decisão editorial."
   },
   "trauma-1192": {
    "tema": "trauma",
@@ -89184,14 +90052,15 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Tratamento conservador da fratura do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "d0931c53c422558f6f5a2e69283c341a3c90998cb348769b1b0bc63ead9f6e75"
+   "questaoSha256": "d0931c53c422558f6f5a2e69283c341a3c90998cb348769b1b0bc63ead9f6e75",
+   "pendencia": "Tratamento conservador da fratura do calcâneo não pertence ao resumo de tálus; não há resumo de calcâneo publicado."
   },
   "trauma-1232": {
    "tema": "trauma",
@@ -109966,14 +110835,43 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
-   "temComentario": false,
+   "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "b759c00224277534fb6051ebe51b3c5eb251f0a440a899c16290ed4a33a30f45"
+   "questaoSha256": "b759c00224277534fb6051ebe51b3c5eb251f0a440a899c16290ed4a33a30f45",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste retrógrada",
+       "Fixador externo, placa e controle de dano"
+      ],
+      "blocos": [
+       "haste-retrograda-c19a5fde",
+       "haste-retrograda-a6c8b54a",
+       "haste-retrograda-fd5c0178",
+       "haste-retrograda-90d2d83e",
+       "fixador-externo-placa-e-controle-de-dano-8029d0d1",
+       "fixador-externo-placa-e-controle-de-dano-5b33401f"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "04b19252a5fc96ec1acf187ff3aa3b761a9a06e5c9e6c630f7ff534e59e93471"
+     }
+    ],
+    "questaoSha256": "b759c00224277534fb6051ebe51b3c5eb251f0a440a899c16290ed4a33a30f45",
+    "comentarioSha256": "b13105e14476e93f8b53ee1906092cea969d638461d2e35be94a5e995988fcff"
+   }
   },
   "trauma-1721": {
    "tema": "trauma",
@@ -110035,14 +110933,15 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 57 lista as indicações de placa (canal estreito, viciosa prévia, extensão metafisária, lesão vascular, colo ipsilateral, periprotética, pseudartrose), mas não inclui a síndrome compartimental, que integra o gabarito C; também não trata joelho flutuante como indicação de placa.",
    "temComentario": false,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "680daf9f8254d97621ffffef16d2746bb7dac7778d8954a508ec61b6f3c23b84"
+   "questaoSha256": "680daf9f8254d97621ffffef16d2746bb7dac7778d8954a508ec61b6f3c23b84",
+   "pendencia": "O capítulo 57 lista as indicações de placa (canal estreito, viciosa prévia, extensão metafisária, lesão vascular, colo ipsilateral, periprotética, pseudartrose), mas não inclui a síndrome compartimental, que integra o gabarito C; também não trata joelho flutuante como indicação de placa."
   },
   "trauma-1728": {
    "tema": "trauma",
@@ -110099,14 +110998,45 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
-   "temComentario": false,
+   "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "4dafa8a793e500cea51f77dced35a5b6532b534bdd4ad3eadd9c2ce649f8330c"
+   "questaoSha256": "4dafa8a793e500cea51f77dced35a5b6532b534bdd4ad3eadd9c2ce649f8330c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Classificação",
+       "Tratamento não cirúrgico e indicações cirúrgicas"
+      ],
+      "blocos": [
+       "classificacao-bab0c782",
+       "classificacao-6029931d",
+       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-3f80f5d4",
+       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-1279cd89",
+       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-7a74af3c",
+       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-45a5466d",
+       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-a80f265b",
+       "classificacao-6cb8c90a"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "24adba243eba8227a1f23215d1a064eb75ff9164095061db413c31427ea69c56"
+     }
+    ],
+    "questaoSha256": "4dafa8a793e500cea51f77dced35a5b6532b534bdd4ad3eadd9c2ce649f8330c",
+    "comentarioSha256": "506a922332938a16257695e1be89c06f48d41fa022ee425b91c4ab1086d45bd9"
+   }
   },
   "trauma-1732": {
    "tema": "trauma",
@@ -110115,14 +111045,15 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Método de coxometria de Pecorelli e Della Torre não aparece no resumo do capítulo 51.",
    "temComentario": false,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "8428c030119b29d26b6b6ee762da5d7664204a3d0db117cb0bad1d1d1814f8f6"
+   "questaoSha256": "8428c030119b29d26b6b6ee762da5d7664204a3d0db117cb0bad1d1d1814f8f6",
+   "pendencia": "Método de coxometria de Pecorelli e Della Torre não aparece no resumo do capítulo 51."
   },
   "trauma-1734": {
    "tema": "trauma",
