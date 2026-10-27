@@ -3,7 +3,7 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 599,
+  "pendente": 615,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 388,
@@ -285,7 +285,7 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 68,
+    "pendente": 75,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 4,
     "revisada": 50
@@ -295,7 +295,7 @@
    "titulo": "Fratura da diáfise do fêmur na criança",
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
-    "pendente": 86,
+    "pendente": 102,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 3,
     "revisada": 1
@@ -305,7 +305,7 @@
    "titulo": "Fratura da fise distal do fêmur na criança",
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
-    "pendente": 98,
+    "pendente": 114,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 3,
     "revisada": 1
@@ -315,7 +315,17 @@
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
-    "pendente": 95,
+    "pendente": 111,
+    "pendente-fonte": 1,
+    "pendente-inspecao-imagem": 3,
+    "revisada": 1
+   }
+  },
+  "rockwoodcriancas10-29-diafise-tibia": {
+   "titulo": "Fraturas da tíbia e da fíbula na criança",
+   "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+   "estados": {
+    "pendente": 102,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 3,
     "revisada": 1
@@ -33427,12 +33437,20 @@
      "s": "A fise proximal: mecanismos e direção",
      "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
      "p": "relacionada"
+    },
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "relacionada"
     }
    ],
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "6c786e62a5e8cac253a29dd7ad27d096d2894dd933f8ccf6ca76bf53fd337814"
   },
@@ -33984,7 +34002,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "909d0f5779bf64bf39fba9ce3214bb873ac587b635c87a54c4a8af52d4f7b434"
   },
@@ -34098,7 +34117,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "cba228dcadcb49b8b6fe722933ff22c1a99554133d8ff396b009113143191e76",
    "baseResumo": {
@@ -34192,6 +34212,13 @@
    "temComentario": true,
    "citacoes": [
     {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
+    },
+    {
      "c": "rockwoodcriancas10-27-fise-proximal-tibia",
      "b": "complicacoes-58867aa4",
      "s": "Complicações",
@@ -34203,7 +34230,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "710114f09293b7632ba6e39b610d81979484570aa970319ad9d3d31f9f29b289"
   },
@@ -34269,9 +34297,18 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "f04edd837dbf4d53c22af66d2295638a120a066e18519d9cfaf4c4dc25dae664"
   },
@@ -34389,7 +34426,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "3307d0f41de5c7c3169b4f6800f760ec72dd07a5d39be4594fe666b845de07c7"
   },
@@ -34547,7 +34585,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "15fb7eb884efa3acfd7c87288c4b39ca4295f81f2c1178a33e7e0a5e28d22f29"
   },
@@ -34877,13 +34916,21 @@
      "s": "Complicações",
      "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
      "p": "central"
+    },
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d5af459b",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
     }
    ],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "60d12c560657484980408189e15083e8575b6962c6a841ded414c2573aa89d8c"
   },
@@ -34909,7 +34956,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "9c1d847bfa062fb7b5f68a9c3db8ec2ce54a92e109557dccc5313ec80590d0c1"
   },
@@ -35428,7 +35476,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "2a2a0e7b45b3233b43e40a32ca67f127ef9f871fad385bf63629f054614b4947"
   },
@@ -35504,6 +35553,13 @@
    "temComentario": true,
    "citacoes": [
     {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
+    },
+    {
      "c": "rockwoodcriancas10-27-fise-proximal-tibia",
      "b": "complicacoes-58867aa4",
      "s": "Complicações",
@@ -35515,7 +35571,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "d6cd0fb8e251cf16e716781a59c195b45f9574bccfc5800279d84ed6aa1e16eb"
   },
@@ -35573,7 +35630,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "8645b4aaaadf3a6c7dd8b886870586d915d008f731dfa3d1d3f9a3c5a8a93e76"
   },
@@ -36031,7 +36089,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "6a88e5b382908db681030fcfd0b02d08e7aa01dfa2f71ec75812271a137fd90e"
   },
@@ -36070,11 +36129,19 @@
      "s": "Complicações",
      "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
      "p": "relacionada"
+    },
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d5af459b",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "relacionada"
     }
    ],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -36322,12 +36389,21 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-4b0512cb",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "238b785f02f6d9eb3c2735f2884e97d313cda496a3c3c5d8b6f9a7e24b5b323c"
   },
@@ -36685,6 +36761,13 @@
    "temComentario": true,
    "citacoes": [
     {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d5af459b",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
+    },
+    {
      "c": "rockwoodcriancas10-27-fise-proximal-tibia",
      "b": "complicacoes-58867aa4",
      "s": "Complicações",
@@ -36694,7 +36777,8 @@
    ],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "8f29a3fb9d166d5bbf90b22180591a2f105769556854313f3693d3a615cb0067"
   },
@@ -36729,7 +36813,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "26d232937b63fe71d3082e73f5d59f3dfbb1d7466791655d303469a1510d5bc3"
   },
@@ -37672,7 +37757,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "9f3d486851caa90f439da25dd5267d1f3f7292da44f9357ac6a40e3c5d20ccf4"
   },
@@ -38463,7 +38549,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "e37f0d131d05b31b348aef0b93a531acf2ab89c66b5e4e986d1352923f98449f"
   },
@@ -38546,12 +38633,20 @@
      "s": "Complicações",
      "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
      "p": "central"
+    },
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d5af459b",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
     }
    ],
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "9d5c6c4d03f3249237894a6ba90a2e510fa86be32e9dc196a8be2f3bf88fa0f0"
   },
@@ -38783,7 +38878,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "065923befaeb13a99e2e0b389a3d71af3b1241ec7b1e4715ad330a86eec17424"
   },
@@ -38849,12 +38945,20 @@
      "s": "Complicações",
      "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
      "p": "relacionada"
+    },
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d5af459b",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "relacionada"
     }
    ],
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "dffb7996f82b4e7d4e9c7a61c1b66b2d5c12b9a9ed415aae3ae45ba7b0486553"
   },
@@ -39183,7 +39287,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "267d9dd5d4f75166b4829f028c07649747e46a0fc97e17dcf047895facc6212f"
   },
@@ -39333,7 +39438,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "7032ee1f67ce8f6f43c5ff2509c3c519f8ef8266562dd9d5162304a3822b3aad"
   },
@@ -39459,7 +39565,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "4cb4684eb597b6f2e38cbc99a7ad0949cd8c0794fae82d3a05a33b224d9a513e"
   },
@@ -39581,7 +39688,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "88f1a1645a29c06f17ab4e01998fb179de712b33c5dce693ea16a6b3fdd5ec3e"
   },
@@ -39729,12 +39837,20 @@
      "s": "A fise proximal: mecanismos e direção",
      "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
      "p": "relacionada"
+    },
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "relacionada"
     }
    ],
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "dc767f87d4f7267bf83a16dbdec2f987d9d471012f301977da655a2d4fcb5aac"
   },
@@ -40103,7 +40219,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "649886d2e5d9df87ccda9b4dd14cb35466b3eb8b5e6e018e728ca223b353e697"
   },
@@ -40292,7 +40409,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "41565f37fdf1170d584c468b922c374ea5b0615bf6248bd7d3b69a1fe5972557"
   },
@@ -40310,7 +40428,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "0497c3abe864ad80456d5bd35926611ff914d0dd01cd2f0eeaf18a5733fb4e6f"
   },
@@ -40440,11 +40559,20 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d5af459b",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "relacionada"
+    }
+   ],
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "bdda55e41fc6a54e69807c2735c1d64dcb9a5defc183cc58dafb3b336dfc2e48"
   },
@@ -40463,7 +40591,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "01672a8f0386ba4f16885e9d2fa009354c233d9321783905e1421da4ccbc71b5"
   },
@@ -40984,7 +41113,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "83713c723e539d42e6d384161d7da1d44a4d13862e48f9984982189845a7a94d"
   },
@@ -41121,7 +41251,8 @@
     "rockwood10-57-diafise-femur",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "cd6cdf1692b65dc80c0dd70f5278d456362d2469a46c465c5e89da24d281bb4a"
   },
@@ -41197,7 +41328,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "5f68706cdb430c733ada15340d20b22dca78be7ea2744aff9ee2b0ea67eb1bbd"
   },
@@ -41348,7 +41480,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "9bf61aafa33f915e4364aeb2db3ba0a3b9433cac8ef6ed068d60bce44101ca7e"
   },
@@ -41375,7 +41508,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "c556c1da335ee30dba9ec2e9b176525fe59667c509a91a697340549f575f1b67"
   },
@@ -41491,7 +41625,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "b3c01eb9a7be86fcbb740ae12c585d3ae3f4de66a4100df63bad78073d2611f3"
   },
@@ -41663,7 +41798,8 @@
     "rockwood10-57-diafise-femur",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "6a526d84ad0703254d7571c8d90e233bb162a38a1bdd89f9b1a8f9760883abe0"
   },
@@ -41739,11 +41875,27 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-4b0512cb",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
+    },
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "complicacoes-1c3d2426",
+     "s": "Complicações",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "relacionada"
+    }
+   ],
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "b9ef0ad9e3af605dc7e1dcd6513b9225158cfe62ed4a7c5685f6cb36f7238cfb"
   },
@@ -41827,7 +41979,8 @@
     "rockwood10-63-diafise-tibia",
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "ac27cd307331a264b30a8fb44d020fe8906b588aa27f9402502b8d95ece91f5f",
    "pendencia": "C oficial pede a complicação mais comum APÓS redução fechada e fixação percutânea da tuberosidade tibial na criança. O resumo17 ensina síndrome e risco de fraturas da tíbia em geral, mas não compara pseudartrose, viciosa, síndrome compartimental e Osgood-Schlatter nessa lesão e nesse tratamento. Falta fonte específica de tuberosidade pediátrica que separe complicação mais temida, lesão associada e complicação mais frequente. C/comentário preservados."
@@ -42199,7 +42352,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "2f085b5869873ee9e10886cd24a1e7269b496c8ada347c72f61583c9f0f34c3d"
   },
@@ -42482,7 +42636,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "4e11fdc39cbb026025ad31cfa837319a3a0378f0de5f675366cb288033ade955"
   },
@@ -42509,7 +42664,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "18210da08907c00983625960fd1351803161127f2657eedd928ae2578432f390"
   },
@@ -42528,7 +42684,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "076743d864b07368d78156104562b4315fe5955ec7bc90cd9d961d9aedc73629"
   },
@@ -42542,11 +42699,20 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-4b0512cb",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "9d6894c9aa42eb995995422fa95feb72ada73edb7e1ffdc10641e76f7d3fc8d7"
   },
@@ -42572,7 +42738,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "fd2a684e3a679f2afcc3c4aebc17dc6cbc71007fa15ef11cdcb06dd3485a171a"
   },
@@ -42830,6 +42997,7 @@
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
     "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -49925,7 +50093,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "3094d4d55d338a4d9234ebfff3189ae7f7402ca73638da82d8c03b333d6705a1"
   },
@@ -49952,7 +50121,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "18002a23a17e5cc4002440e2ba29d69b7389a86cab821d630480692d47b6413e"
   },
@@ -49979,7 +50149,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "d3e522b548b978cf2f413fde7cf3034def271d5eb07aaed3cce3e58d302ace30"
   },
@@ -50007,7 +50178,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "e148c76599e6caa8ac539f33691669215318e351cf8bb66ee95b967b4ed968dc"
   },
@@ -50034,7 +50206,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "90dcbc62c97e1fe6b35b1f5e3f365bfd39754bc763fbfadf37e6df8552500f32"
   },
@@ -50061,7 +50234,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "070e894240cfddcd343d1743609171a902549ac7a83244b83f4f4438bd61353e"
   },
@@ -50088,7 +50262,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "54f02eb422d2cd7ef4b562b296981715c5948773956b622c34d1ffba395bb768"
   },
@@ -50115,7 +50290,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "93b60d03271feb195a70fc9a8fad848f94b9c2a856c504190c13906371eb5e8b"
   },
@@ -50142,7 +50318,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "9dda8894400614d04b8d454df573b61993435f9b1e1dead35ccb2bed26cf3a2c"
   },
@@ -50169,7 +50346,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "25cab1eda0cf0fa7010e2df3c426c94c2e44952b9b51c96db8d06be45cc917ba"
   },
@@ -50196,7 +50374,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "83161eb04a6ca2d52d8dac5403a6cb4cc215e55fb4808a5ad343b6cbf3563e84"
   },
@@ -50223,7 +50402,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "5b04ed9f847d26b3635907229982e5bcdbc46840c1070bb1047426ad6b7614dc"
   },
@@ -50250,7 +50430,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "7209bc3115b61fae2eba7e3d58718fb387b6996e8296c6b87d4e31dd4d185ed0"
   },
@@ -50278,7 +50459,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "8909de0ac7df83f97d7f3694fca6c1f18ed4b6cf6360d43c13581be4e8f12eab"
   },
@@ -50305,7 +50487,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "4a990eaa953e24fad99bf3d8fb7b3a961c36742d770a9da2f81c73888d04547a"
   },
@@ -50332,7 +50515,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "0a037c02c9c7659e26a7833a6bf3672140a0e945e88f26458993fd819e2edc7d"
   },
@@ -50359,7 +50543,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "053bc29b9022869049329637fa3654be385e6a2653f64e3f10e2d321c0cdd1d0"
   },
@@ -50386,7 +50571,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "2ac14ed70e1a8fd386140f6f0ca63b0de8e9178a168cc7eb53ef661beba18387"
   },
@@ -50413,7 +50599,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "53fb0774c4672d7751e15d8ad9ff9fa343c8233c82560b0083e8d192d94e5ba1"
   },
@@ -50440,7 +50627,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "196add19370afa6726577b5a34b82e8fc875ef2e417094750c142ed00fe5b40b"
   },
@@ -50467,7 +50655,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "4ba697b6961508cfd2b90ed292e54b5a52fb1e3a477391ddad02c9acceb46957"
   },
@@ -50494,7 +50683,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "5a1f137cef46d3345aca04989d8df7deaf2d9585003ad7c183e4cc244ac4fe17"
   },
@@ -50521,7 +50711,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "479965d0763902efff8c995655f0613fb637a63ca2fe72ede717aaffdd1a1680"
   },
@@ -50548,7 +50739,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "92de8d859988f0b674e052cca2427f7daaaa3bd8b80d47aa959e0dfdde5a2edb"
   },
@@ -50575,7 +50767,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "77a7b8e1301ffc4ce944ab712a7dc4e0876b11d60647eff208f6ff4be2b56b67"
   },
@@ -50602,7 +50795,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "b6f6e6ce136eab89851e30046fb0f37c679b6a0a9416d074e875043a5d16fa31"
   },
@@ -50629,7 +50823,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "b3834db80e9f7b903caff4d853c1f805dcd49446876ed948e857950e3a06b9a5"
   },
@@ -50656,7 +50851,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "19d162fdf7d1b2c7229a5a43fd0a7f8d07c35d725f2f274549d66283a1cd4c54"
   },
@@ -50682,7 +50878,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "6672d7186f388d99f7e9bb0f1ea79b11d6d879f91b9b0e356d2c8d1c4c5db789"
   },
@@ -50708,7 +50905,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "22f464143caaeaca1d3a7d49f7eeb348e370c90b2ad23c4effb3a4a4c287d64d"
   },
@@ -50734,7 +50932,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "bae06ff6c2404fc84c86add4f61d571d3024e97e2d5fdf02686cc1eba5491c3b"
   },
@@ -50760,7 +50959,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "b7ba2ef9cd006020c31b8c5f4f96d3396d35200c723a4bcd51b40bbc8367336d"
   },
@@ -50787,7 +50987,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "218c839282af6951d94844606591e32068f69a8c0619dd99c491af2c432f5cee"
   },
@@ -50813,7 +51014,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "208565a89c314dd229c76e4ead0b3b7418f4339813422a82187abe7687458dba"
   },
@@ -50839,7 +51041,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "2b290dc41bfbeece529063348d8de9db3c427ad58636d40fa47b60f00eed4003"
   },
@@ -50872,7 +51075,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "287a693e3725d8b28f331e83cf21c868ab34c3a3137d8c429fd75e5588178f30"
   },
@@ -50898,7 +51102,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "b67840574841629cc0541e8d616b6fe2243f00337285f7802a61b0094a23d1c6"
   },
@@ -50924,7 +51129,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "0481d0bb401fbf9d6c31e061a24e04f602250e9adff804e3f6936718ddb87075"
   },
@@ -50950,7 +51156,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "a42dff2d739062cab339ae755ba8a3a16e0d945aa9e1cf5b9e4ecabcd9297f3f"
   },
@@ -50977,7 +51184,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "107203a905b1aa82bf951cca610e74f414ccef0cf76bb3e7a9cacdbc729dd53d"
   },
@@ -51003,7 +51211,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "c7a5e90f9cf7617025b07c320fecb01290534435360ffeae658ce0429d25fec9"
   },
@@ -51029,7 +51238,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "27e27100de9a41665716701cbf8ffa0be8aa7375c1a206e3de0e33205ddf6be1"
   },
@@ -51055,9 +51265,456 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur",
     "rockwoodcriancas10-26-fise-distal-femur",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "6829d417a7a9518bca3c0e02bbe794ae4f15ab07928c6864f55597054ae860d4"
+  },
+  "pediatria-1137": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d5af459b",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "278fab954fa0f8b64e75153788fdea377f4f96ee8a38d8e14b8225d2f3adda9f"
+  },
+  "pediatria-1138": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "07468600b88f2a6815dcb339fa573bdb78bacc72a51536c10715e2d84f2515a2"
+  },
+  "pediatria-1139": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "8936e29ffa70f37d2d18cafe1a01d6791fd349dd5c9831e26420fa71bc4fcf4b"
+  },
+  "pediatria-1140": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-d5af459b",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "61fdfb670e902f3e44f26325e175bd712fe80d3fab93ed407b120c8fc9c5fc5f"
+  },
+  "pediatria-1141": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+     "s": "Metáfise proximal: a fratura de COZEN",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "e3cd86964c7ff3fd7c7c45dc3c17246e817c41e2fcdbd6157da8cdfb368443f9"
+  },
+  "pediatria-1142": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-4b0512cb",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "1c4571ec395a05c6d461692c64fca96f804a1a2c5a60478dc6f33f74637e54d6"
+  },
+  "pediatria-1143": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-4b0512cb",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "196ea9961d3b20d5a6a716c788382f8aa9a81d2c6bcef7c612f4f1884a8f5757"
+  },
+  "pediatria-1144": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-4b0512cb",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "07cc974c234b8a1b440e15ca378d71c644021428cb7c9d3fd8762708e573e78a"
+  },
+  "pediatria-1145": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-fa1caf1e",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "463602f562fc6ef574cb82d3c911b634fa9cbd03cd93644b5b456b0c55c45b63"
+  },
+  "pediatria-1146": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-fa1caf1e",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "a5463e2405ec61622a52f7f80a9d53e257089f51183f3ae0169c3dfc29e98f28"
+  },
+  "pediatria-1147": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "metafise-distal-dfda6f0a",
+     "s": "Metáfise distal",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "52ae6ee98f82562e0564aafd181e25fb1cd98f379ada5f838b666eef006ecca4"
+  },
+  "pediatria-1148": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "complicacoes-c0d7fda3",
+     "s": "Complicações",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "b46736279bef135bd0a286dde062eadd4da9cf56ea4b9c3555104471666e3b80"
+  },
+  "pediatria-1149": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "fraturas-especiais-6c2b8e9a",
+     "s": "Fraturas especiais",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "dff5c1b313c33553dc6421dbcb2fde75275e637b95511d6da4c81ad4eaaaec9b"
+  },
+  "pediatria-1150": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "diafise-o-desvio-depende-da-fibula-54cacbb2",
+     "s": "Diáfise: o desvio depende da fíbula",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "e9f9e6769bdde1b4312521514d98503c7a84c05867bd95386093c8665414e99e"
+  },
+  "pediatria-1151": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "complicacoes-1c3d2426",
+     "s": "Complicações",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "b986481bb941b21ec35fb6676002dc78fb669820804eba1d617fe0bc7e0e7677"
+  },
+  "pediatria-1152": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-29-diafise-tibia",
+     "b": "fraturas-especiais-13934874",
+     "s": "Fraturas especiais",
+     "t": "Fraturas da tíbia e da fíbula na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "questaoSha256": "6e4f8dcf7bf0c09cfd8a7f8961867ec0ffd5dd79dfe6873de5142a60c2b14bb1"
   },
   "quadril-0035": {
    "tema": "quadril",
