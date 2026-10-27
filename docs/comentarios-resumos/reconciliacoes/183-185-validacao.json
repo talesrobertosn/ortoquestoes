@@ -1,0 +1,137 @@
+{
+  "base": "744d069c0c125fdd5efafc8c84c3dd63003ad960",
+  "lotes": {
+    "183": {
+      "revisadas": [
+        "pediatria-0529",
+        "pediatria-0544",
+        "pediatria-0616",
+        "pediatria-0621",
+        "pediatria-0630"
+      ],
+      "lacunas": [
+        "pediatria-0646",
+        "pediatria-0174",
+        "pediatria-0542",
+        "pediatria-0560",
+        "pediatria-0602"
+      ]
+    },
+    "184": {
+      "revisadas": [
+        "pediatria-0661",
+        "pediatria-0705",
+        "pediatria-0716",
+        "pediatria-0779",
+        "pediatria-0948"
+      ],
+      "lacunas": [
+        "pediatria-0713",
+        "pediatria-0752",
+        "pediatria-0836",
+        "pediatria-0840",
+        "pediatria-0946"
+      ]
+    },
+    "185": {
+      "revisadas": [
+        "pediatria-0549",
+        "pediatria-0950",
+        "pediatria-1137",
+        "pediatria-1138",
+        "pediatria-1139",
+        "pediatria-1140",
+        "pediatria-1141",
+        "pediatria-1142",
+        "pediatria-1143"
+      ],
+      "lacunas": [
+        "pediatria-0916"
+      ]
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado; após ajuste de prosa em0544/0549,repetidos fixtures/acervo/build/replay/letras/UI afetadas",
+    "build": "aprovado",
+    "replay": "19/19;11comentários pendentes intactos",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks183185.log": "bedb93d214c5676cfadb4fccdaf6218f27ce314fff6a6989b3384b1d22471001",
+    "checks183185-ajuste.log": "3c8285dd315049f9a03ab865ca8593d617f89bde75af56d38a31ab252bffd4da",
+    "ui183185-todos.log": "43d97b502c628864727cea3ef5611a2d0071774caa52d5052315a49c6e03375a",
+    "aplicacao183184.log": "8f6724ca86875644538f0e0b8be56fd194452f1cfa54a83c16023854024a2d1a",
+    "aplicacao185.log": "10ecf4311e64be7d3d8d2868cc957a5bb4887177535831b0cd7bb8cabe4b18c8",
+    "ajuste183185.log": "164195584809678c60b9df71f88517e0e43797199195edb7ee9d493b1878941c",
+    "remotos183185-final.json": "ea643403ad051b5518993b3a05e85404d4973048d78f3c612a3c9100e0da0392"
+  },
+  "fontes": [
+    {
+      "id": "rockwoodcriancas10-26-fise-distal-femur",
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "leitura": "Resumo integral e blocos independentes relidos para cada alternativa;sem notas contextuais ou comentários antigos como fonte clínica;sem atribuir leitura do livro primário."
+    },
+    {
+      "id": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "leitura": "Resumo integral e blocos independentes relidos para cada alternativa;sem notas contextuais ou comentários antigos como fonte clínica;sem atribuir leitura do livro primário."
+    },
+    {
+      "id": "rockwoodcriancas10-29-diafise-tibia",
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "leitura": "Resumo integral e blocos independentes relidos para cada alternativa;sem notas contextuais ou comentários antigos como fonte clínica;sem atribuir leitura do livro primário."
+    }
+  ],
+  "visual": {
+    "casosFinais": 19,
+    "larguras": [
+      390,
+      1440
+    ],
+    "respostasEFontesExatas": true,
+    "alertas": [
+      "0544:dois mecanismos possíveis sem fase do tênis",
+      "0549:oficialC versus tensão medial/D",
+      "0950:predominância,não distribuição universal"
+    ],
+    "semFigurasNos30Candidatos": true,
+    "ambiente": "Worktree isolada; dependências locais instaladas para resolver bloqueio de fontes do Vite causado pelo symlink;rodada final19casos sem esse bloqueio. Chromium explícito /usr/bin/chromium.",
+    "capturasInspecionadas": [
+      "183185-pediatria-0544-alerta-cel.png",
+      "183185-pediatria-0549-alerta-pc.png",
+      "183185-pediatria-0716-aula-pc.png",
+      "183185-pediatria-1139-aula-cel.png"
+    ]
+  },
+  "preservacao": "Só19membros de pediatria.json;demais bytes e importações preservados. Questões/opções/IDs/gabaritos oficiais/revisão médica/fontes intactos;conferido:false.0716provavelB e0779provavelC únicos pela fonte,sem oficial inventado.",
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 545,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 404,
+      "pendente-inspecao-imagem": 64,
+      "revisada": 1512
+    }
+  },
+  "proximoLote": 186,
+  "publicacaoAnterior": {
+    "pr": 578,
+    "head": "eda4458660cf82e90924eaac09da59c8a557c01a",
+    "merge": "744d069c0c125fdd5efafc8c84c3dd63003ad960",
+    "pages": 40452796403,
+    "producao": "35novos+15preservados,4resumos e letras integrais",
+    "revisaoAutomaticaAuxiliar": {
+      "commit_sha": "eda4458660cf82e90924eaac09da59c8a557c01a",
+      "has_any_findings": null,
+      "has_unresolved_findings": null,
+      "status": "running"
+    }
+  },
+  "publicacao": "Só validação local deste registro. CI obrigatório do head,merge,guarda/deploy e avulsos em produção precisam de prova no PR. Revisão automática auxiliar não é declarada aprovada enquanto running;verificar achados reais."
+}

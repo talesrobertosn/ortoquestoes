@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 575,
+  "pendente": 545,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 393,
+  "pendente-fonte": 404,
   "pendente-inspecao-imagem": 64,
-  "revisada": 1493
+  "revisada": 1512
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -285,50 +285,50 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 67,
-    "pendente-fonte": 7,
+    "pendente": 55,
+    "pendente-fonte": 10,
     "pendente-inspecao-imagem": 4,
-    "revisada": 58
+    "revisada": 67
    }
   },
   "rockwoodcriancas10-25-diafise-femur": {
    "titulo": "Fratura da diáfise do fêmur na criança",
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
-    "pendente": 69,
-    "pendente-fonte": 6,
+    "pendente": 52,
+    "pendente-fonte": 10,
     "pendente-inspecao-imagem": 3,
-    "revisada": 29
+    "revisada": 42
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
    "titulo": "Fratura da fise distal do fêmur na criança",
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
-    "pendente": 77,
-    "pendente-fonte": 6,
+    "pendente": 59,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 3,
-    "revisada": 33
+    "revisada": 46
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
-    "pendente": 81,
-    "pendente-fonte": 6,
+    "pendente": 52,
+    "pendente-fonte": 17,
     "pendente-inspecao-imagem": 3,
-    "revisada": 26
+    "revisada": 44
    }
   },
   "rockwoodcriancas10-29-diafise-tibia": {
    "titulo": "Fraturas da tíbia e da fíbula na criança",
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
-    "pendente": 72,
-    "pendente-fonte": 6,
+    "pendente": 52,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 3,
-    "revisada": 26
+    "revisada": 41
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -392,10 +392,10 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 9,
+    "pendente": 8,
     "pendente-fonte": 17,
     "pendente-inspecao-imagem": 2,
-    "revisada": 53
+    "revisada": 54
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -403,10 +403,10 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 8,
+    "pendente": 7,
     "pendente-fonte": 16,
     "pendente-inspecao-imagem": 2,
-    "revisada": 50
+    "revisada": 51
    }
   }
  },
@@ -33132,8 +33132,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo 26 informa média de 9–10 mm/ano da fise distal do fêmur do nascimento à maturidade; o corpo 27 informa 6 mm/ano da tíbia proximal. Isso é compatível com a ordem de grandeza de A, mas não demonstra os valores CONSTANTES do método de MENELAUS especificamente após 9 anos. As menções ao método nas notas contextuais e no comentário antigo não são fonte clínica independente. Falta a tabela/equação do método na faixa após 9 anos para conferir os dois valores e os quatro pares, sem transformar médias gerais em constantes de projeção. Gabarito A preservado; sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33155,7 +33155,8 @@
     "rockwoodcriancas10-26-fise-distal-femur",
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "e06700d9c8bc2fdd3795666e32d29967639b52ca73593cb4b17811af9b96a321"
+   "questaoSha256": "e06700d9c8bc2fdd3795666e32d29967639b52ca73593cb4b17811af9b96a321",
+   "pendencia": "O corpo 26 informa média de 9–10 mm/ano da fise distal do fêmur do nascimento à maturidade; o corpo 27 informa 6 mm/ano da tíbia proximal. Isso é compatível com a ordem de grandeza de A, mas não demonstra os valores CONSTANTES do método de MENELAUS especificamente após 9 anos. As menções ao método nas notas contextuais e no comentário antigo não são fonte clínica independente. Falta a tabela/equação do método na faixa após 9 anos para conferir os dois valores e os quatro pares, sem transformar médias gerais em constantes de projeção. Gabarito A preservado; sem selo."
   },
   "pediatria-0241": {
    "tema": "pediatria",
@@ -33867,7 +33868,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -33883,7 +33884,48 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "3411925fdb5c6e94bddc0143cc1b390f80537f2d89758b2f03d4abce61259fb6"
+   "questaoSha256": "3411925fdb5c6e94bddc0143cc1b390f80537f2d89758b2f03d4abce61259fb6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "A classificação de OGDEN modificada",
+       "Tratamento"
+      ],
+      "blocos": [
+       "a-classificacao-de-ogden-modificada-f48d44f8",
+       "a-classificacao-de-ogden-modificada-288154c9",
+       "tratamento-5adb23a3"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "0e309f7536eb87dc04e78b940c0a6abac40af600072c3683e832b7d20e15288d"
+     },
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Os tipos de SALTER-HARRIS"
+      ],
+      "blocos": [
+       "os-tipos-de-salter-harris-77cf0c10"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "9e78b4575705fb226ddc46fa81a11541db107ccc2edab5f4a492462da1bd668a"
+     }
+    ],
+    "questaoSha256": "3411925fdb5c6e94bddc0143cc1b390f80537f2d89758b2f03d4abce61259fb6",
+    "comentarioSha256": "9fe699ee6a9b27048f1dbf235f9ebcdfedce262fb8a3e8dcaf3272f13d5b4962"
+   }
   },
   "pediatria-0530": {
    "tema": "pediatria",
@@ -34183,8 +34225,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo 27 descreve avulsão quase exclusiva de meninos adolescentes e risco mínimo antes da adolescência, mas não fornece a distribuição etária que prove 13–16 anos como mais frequente que 9–12 anos. Idades de aparecimento de centro secundário ou fechamento não demonstram frequências de fratura nesses dois intervalos. A faixa 13–16 só aparece na contextualização da questão,que não deve fundamentar o selo. Falta série epidemiológica/tabela etária com sexo e grupos comparáveis. Gabarito C preservado; sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -34199,7 +34241,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "14c39d0137da931cd168dbdbd3e647c8780b1525b2aed7eab48a49752b39a8e9"
+   "questaoSha256": "14c39d0137da931cd168dbdbd3e647c8780b1525b2aed7eab48a49752b39a8e9",
+   "pendencia": "O corpo 27 descreve avulsão quase exclusiva de meninos adolescentes e risco mínimo antes da adolescência, mas não fornece a distribuição etária que prove 13–16 anos como mais frequente que 9–12 anos. Idades de aparecimento de centro secundário ou fechamento não demonstram frequências de fratura nesses dois intervalos. A faixa 13–16 só aparece na contextualização da questão,que não deve fundamentar o selo. Falta série epidemiológica/tabela etária com sexo e grupos comparáveis. Gabarito C preservado; sem selo."
   },
   "pediatria-0544": {
    "tema": "pediatria",
@@ -34208,7 +34251,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34223,7 +34266,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "f50a9f109e43eed5ff64b321daf3f39e795324875877f9a82c829dd027de2c09"
+   "questaoSha256": "f50a9f109e43eed5ff64b321daf3f39e795324875877f9a82c829dd027de2c09",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "A tuberosidade: quem quebra e como"
+      ],
+      "blocos": [
+       "a-tuberosidade-quem-quebra-e-como-7b1686ef",
+       "a-tuberosidade-quem-quebra-e-como-add351b6"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "a6ef5e0770dc1fdf5d84affe8f45343175567558a3ce4806036dec2fbdc4379e"
+     }
+    ],
+    "questaoSha256": "f50a9f109e43eed5ff64b321daf3f39e795324875877f9a82c829dd027de2c09",
+    "comentarioSha256": "7605dfdff4a4587e959d0a849828f4910a8898b6b4a63a25c94114a27252e742"
+   }
   },
   "pediatria-0545": {
    "tema": "pediatria",
@@ -34348,7 +34415,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34364,7 +34431,30 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "f04edd837dbf4d53c22af66d2295638a120a066e18519d9cfaf4c4dc25dae664"
+   "questaoSha256": "f04edd837dbf4d53c22af66d2295638a120a066e18519d9cfaf4c4dc25dae664",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-d74e22ac"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "6a080ba29070a7bb31b4cee30abb0a60712d28d38f0db694a0ca2bca1facb08d"
+     }
+    ],
+    "questaoSha256": "f04edd837dbf4d53c22af66d2295638a120a066e18519d9cfaf4c4dc25dae664",
+    "comentarioSha256": "c3732fbb34083191d0b915efbb2079378f2ca0eb72a44950f053a23bbe8a5f4d"
+   }
   },
   "pediatria-0550": {
    "tema": "pediatria",
@@ -34582,8 +34672,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo 27 sustenta a recorrente tibial anterior cruzando a base da tuberosidade e sangrando no compartimento anterior,mas não descreve anatomia/território da infrapatelar transversa,genicular medial inferior e recorrente tibial posterior para análise própria de A/C/D. Não inventar que um desses nomes não existe,nem repetir a mesma negativa genérica nas três alternativas. Falta fonte vascular comparativa dos quatro vasos e sua relação com a tuberosidade. Gabarito B preservado; sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -34598,7 +34688,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "01ea83e2bc1fee4e79f479b042a2fa5f30f128381813bae29ad017e52399ac12"
+   "questaoSha256": "01ea83e2bc1fee4e79f479b042a2fa5f30f128381813bae29ad017e52399ac12",
+   "pendencia": "O corpo 27 sustenta a recorrente tibial anterior cruzando a base da tuberosidade e sangrando no compartimento anterior,mas não descreve anatomia/território da infrapatelar transversa,genicular medial inferior e recorrente tibial posterior para análise própria de A/C/D. Não inventar que um desses nomes não existe,nem repetir a mesma negativa genérica nas três alternativas. Falta fonte vascular comparativa dos quatro vasos e sua relação com a tuberosidade. Gabarito B preservado; sem selo."
   },
   "pediatria-0561": {
    "tema": "pediatria",
@@ -35833,8 +35924,8 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo 27 define Watson-Jones/OgdenI como apófise na inserção patelar,mas não estabelece sua equivalência com SALTER-HARRISI ou o trajeto fisário específico necessário a essa correspondência. O próprio resumo sinaliza que a correspondência tipoI/Salter não é dada. A definição geral de SalterI no corpo 26 não prova que toda avulsão apofisária rotulada WatsonI percorra essa fise. Falta a tabela/desenho da versão usada pela prova com os trajetos e correspondências,sem deduzirI apenas porque os números coincidem. Gabarito A preservado; sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -35848,7 +35939,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "622dae0d06086941849ec004319b2553d306f60f2f4fdef0ec395d536c864e71"
+   "questaoSha256": "622dae0d06086941849ec004319b2553d306f60f2f4fdef0ec395d536c864e71",
+   "pendencia": "O corpo 27 define Watson-Jones/OgdenI como apófise na inserção patelar,mas não estabelece sua equivalência com SALTER-HARRISI ou o trajeto fisário específico necessário a essa correspondência. O próprio resumo sinaliza que a correspondência tipoI/Salter não é dada. A definição geral de SalterI no corpo 26 não prova que toda avulsão apofisária rotulada WatsonI percorra essa fise. Falta a tabela/desenho da versão usada pela prova com os trajetos e correspondências,sem deduzirI apenas porque os números coincidem. Gabarito A preservado; sem selo."
   },
   "pediatria-0603": {
    "tema": "pediatria",
@@ -36330,7 +36422,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36345,7 +36437,33 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "0754437c52975264c98bf64ff8c059ccbb2fa46094ccc8baafcfe01e4e7e0074"
+   "questaoSha256": "0754437c52975264c98bf64ff8c059ccbb2fa46094ccc8baafcfe01e4e7e0074",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "Vasos, compartimentos e nervo",
+       "A fise proximal: mecanismos e direção"
+      ],
+      "blocos": [
+       "vasos-compartimentos-e-nervo-e7cdc184",
+       "a-fise-proximal-mecanismos-e-direcao-c51bb100",
+       "vasos-compartimentos-e-nervo-7cbd297a"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "f078edd53b5380071ec1ab7072cdad06dcf82ca52b54f65e59ae5ae72b68e526"
+     }
+    ],
+    "questaoSha256": "0754437c52975264c98bf64ff8c059ccbb2fa46094ccc8baafcfe01e4e7e0074",
+    "comentarioSha256": "5d7dd441aabdba10106f57f7e30e90226ee57e79c1838ab91539b8b36e1b59e3"
+   }
   },
   "pediatria-0618": {
    "tema": "pediatria",
@@ -36451,7 +36569,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36477,7 +36595,49 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "7a76c3f8e289024fe0f036f4e8079feec077762d517c9740d4653dcde2d60b19"
+   "questaoSha256": "7a76c3f8e289024fe0f036f4e8079feec077762d517c9740d4653dcde2d60b19",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+       "metafise-proximal-a-fratura-de-cozen-06e1bebc",
+       "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+       "metafise-proximal-a-fratura-de-cozen-d5af459b"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "b27055cc55c90553c804116defc1a2447c6a3c3a329136b0203da92942248753"
+     },
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-5c26d8e8",
+       "complicacoes-58867aa4"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "3d132e6f115759eafba30d89cd7095c654d34e93294755d18b367242cd562c0b"
+     }
+    ],
+    "questaoSha256": "7a76c3f8e289024fe0f036f4e8079feec077762d517c9740d4653dcde2d60b19",
+    "comentarioSha256": "7b88752715fa0f032cf7324ad8cf0100cf9796a908e66a9c30e48b723a2c2ef2"
+   }
   },
   "pediatria-0622": {
    "tema": "pediatria",
@@ -36742,7 +36902,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36761,7 +36921,33 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "238b785f02f6d9eb3c2735f2884e97d313cda496a3c3c5d8b6f9a7e24b5b323c"
+   "questaoSha256": "238b785f02f6d9eb3c2735f2884e97d313cda496a3c3c5d8b6f9a7e24b5b323c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula",
+       "Complicações"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-4b0512cb",
+       "diafise-o-desvio-depende-da-fibula-bcdab43f",
+       "complicacoes-1c3d2426"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "d7d43f61d759a595e1a0cd9d921eca59f1ade445a63b8338e159ee35cc4185a4"
+     }
+    ],
+    "questaoSha256": "238b785f02f6d9eb3c2735f2884e97d313cda496a3c3c5d8b6f9a7e24b5b323c",
+    "comentarioSha256": "6308d64825b02156b680909ce7f4358a4eb1d6781de49769363b858e69c4da56"
+   }
   },
   "pediatria-0631": {
    "tema": "pediatria",
@@ -37140,8 +37326,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte 29 descreve valgo evidente por volta de 6 meses e progressão até 18–24 meses, seguida de correção gradual em 18–36 meses,mas não dá o pico frequente exatamente aos 12 meses que compõe o gabaritoB. Não transformar 12 meses da nota contextual em dado independente,nem equiparar aparecimento a pico ou misturar duração da correção com idade desde o trauma. As opções combinam dois marcos e nenhuma reproduz sem ressalvas a descrição temporal; falta a série/edição da prova com pico e início da melhora para comparar A–D. GabaritoB preservado;sem selo e sem revisão contada como concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37164,7 +37350,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "8f29a3fb9d166d5bbf90b22180591a2f105769556854313f3693d3a615cb0067"
+   "questaoSha256": "8f29a3fb9d166d5bbf90b22180591a2f105769556854313f3693d3a615cb0067",
+   "pendencia": "A fonte 29 descreve valgo evidente por volta de 6 meses e progressão até 18–24 meses, seguida de correção gradual em 18–36 meses,mas não dá o pico frequente exatamente aos 12 meses que compõe o gabaritoB. Não transformar 12 meses da nota contextual em dado independente,nem equiparar aparecimento a pico ou misturar duração da correção com idade desde o trauma. As opções combinam dois marcos e nenhuma reproduz sem ressalvas a descrição temporal; falta a série/edição da prova com pico e início da melhora para comparar A–D. GabaritoB preservado;sem selo e sem revisão contada como concluída."
   },
   "pediatria-0647": {
    "tema": "pediatria",
@@ -37728,7 +37915,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -37743,7 +37930,48 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "ef30f8e051b45b741c8c1088754feb0a46c8951869eaac3dc57f5ad355456ae7"
+   "questaoSha256": "ef30f8e051b45b741c8c1088754feb0a46c8951869eaac3dc57f5ad355456ae7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "A classificação de OGDEN modificada",
+       "Tratamento"
+      ],
+      "blocos": [
+       "a-classificacao-de-ogden-modificada-f48d44f8",
+       "a-classificacao-de-ogden-modificada-288154c9",
+       "tratamento-5adb23a3"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "0e309f7536eb87dc04e78b940c0a6abac40af600072c3683e832b7d20e15288d"
+     },
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Os tipos de SALTER-HARRIS"
+      ],
+      "blocos": [
+       "os-tipos-de-salter-harris-77cf0c10"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "9e78b4575705fb226ddc46fa81a11541db107ccc2edab5f4a492462da1bd668a"
+     }
+    ],
+    "questaoSha256": "ef30f8e051b45b741c8c1088754feb0a46c8951869eaac3dc57f5ad355456ae7",
+    "comentarioSha256": "36ab09f418638699f8a47ea9e7c17769f9f69ce433f6ea279716214fe73d6574"
+   }
   },
   "pediatria-0664": {
    "tema": "pediatria",
@@ -39064,7 +39292,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39089,7 +39317,50 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "9d5c6c4d03f3249237894a6ba90a2e510fa86be32e9dc196a8be2f3bf88fa0f0"
+   "questaoSha256": "9d5c6c4d03f3249237894a6ba90a2e510fa86be32e9dc196a8be2f3bf88fa0f0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN",
+       "Complicações"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+       "metafise-proximal-a-fratura-de-cozen-663056eb",
+       "metafise-proximal-a-fratura-de-cozen-d5af459b",
+       "complicacoes-626eb77b"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "4ad3c54f441c47f42da274a480a2b69b37c120a3e59670ff7bd43b4bbe43dac9"
+     },
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-5c26d8e8",
+       "complicacoes-58867aa4"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "3d132e6f115759eafba30d89cd7095c654d34e93294755d18b367242cd562c0b"
+     }
+    ],
+    "questaoSha256": "9d5c6c4d03f3249237894a6ba90a2e510fa86be32e9dc196a8be2f3bf88fa0f0",
+    "comentarioSha256": "eec4bedd86cae81165fe2763df2f1b37b93e7a658768306b6f1f1b8610e7c58f"
+   }
   },
   "pediatria-0706": {
    "tema": "pediatria",
@@ -39375,8 +39646,8 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo 27 sustenta valgo/varo/hiperextensão como mecanismos,mas não fornece as frequências dos tiposI/II versusIII/IV de SALTER-HARRIS na fise PROXIMAL da tíbia. Não transferir as frequências do fêmur distal da fonte 26 para a tíbia proximal,nem escolher A por comentário antigo. As quatro opções combinam mecanismo e tipos;falta a distribuição específica dos tipos na região. Sem oficial,sem provavel novo,sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -39390,7 +39661,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "4ad58cc8255f5ff801feef037161d172d19d17abe1ff2d2339c61b122d49e9df"
+   "questaoSha256": "4ad58cc8255f5ff801feef037161d172d19d17abe1ff2d2339c61b122d49e9df",
+   "pendencia": "O corpo 27 sustenta valgo/varo/hiperextensão como mecanismos,mas não fornece as frequências dos tiposI/II versusIII/IV de SALTER-HARRIS na fise PROXIMAL da tíbia. Não transferir as frequências do fêmur distal da fonte 26 para a tíbia proximal,nem escolher A por comentário antigo. As quatro opções combinam mecanismo e tipos;falta a distribuição específica dos tipos na região. Sem oficial,sem provavel novo,sem selo."
   },
   "pediatria-0716": {
    "tema": "pediatria",
@@ -39400,7 +39672,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39425,7 +39697,33 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "dffb7996f82b4e7d4e9c7a61c1b66b2d5c12b9a9ed415aae3ae45ba7b0486553"
+   "questaoSha256": "dffb7996f82b4e7d4e9c7a61c1b66b2d5c12b9a9ed415aae3ae45ba7b0486553",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+       "metafise-proximal-a-fratura-de-cozen-06e1bebc",
+       "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+       "metafise-proximal-a-fratura-de-cozen-d5af459b"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "b27055cc55c90553c804116defc1a2447c6a3c3a329136b0203da92942248753"
+     }
+    ],
+    "questaoSha256": "dffb7996f82b4e7d4e9c7a61c1b66b2d5c12b9a9ed415aae3ae45ba7b0486553",
+    "comentarioSha256": "0bfddaad586840d8e60ff59ac8ceae3776a1c5e7bf7bbc40d0c9961caebcbe8e"
+   }
   },
   "pediatria-0719": {
    "tema": "pediatria",
@@ -40294,8 +40592,8 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte 29 descreve trauma lateral com joelho em extensão para a fratura METAFISÁRIA proximal típica de 3–6 anos; a fonte 27 descreve outros mecanismos na FISE proximal. O enunciado só diz fratura proximal da tíbia na criança,não distingue metáfise/fise nem dá idade. A respostaB é sustentada sob a leitura metafisária,mas o resumo não estabelece frequência global dos quatro mecanismos para toda região proximal. Falta contexto/definição da lesão da prova ou fonte que sustente a frequência no escopo genérico. Sem oficial,não fabricar provavel único enquanto a leitura permanecer ambígua;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -40319,7 +40617,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "dc767f87d4f7267bf83a16dbdec2f987d9d471012f301977da655a2d4fcb5aac"
+   "questaoSha256": "dc767f87d4f7267bf83a16dbdec2f987d9d471012f301977da655a2d4fcb5aac",
+   "pendencia": "A fonte 29 descreve trauma lateral com joelho em extensão para a fratura METAFISÁRIA proximal típica de 3–6 anos; a fonte 27 descreve outros mecanismos na FISE proximal. O enunciado só diz fratura proximal da tíbia na criança,não distingue metáfise/fise nem dá idade. A respostaB é sustentada sob a leitura metafisária,mas o resumo não estabelece frequência global dos quatro mecanismos para toda região proximal. Falta contexto/definição da lesão da prova ou fonte que sustente a frequência no escopo genérico. Sem oficial,não fabricar provavel único enquanto a leitura permanecer ambígua;sem selo."
   },
   "pediatria-0754": {
    "tema": "pediatria",
@@ -40671,7 +40970,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40689,7 +40988,33 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "649886d2e5d9df87ccda9b4dd14cb35466b3eb8b5e6e018e728ca223b353e697"
+   "questaoSha256": "649886d2e5d9df87ccda9b4dd14cb35466b3eb8b5e6e018e728ca223b353e697",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "A classificação de OGDEN modificada",
+       "Tratamento"
+      ],
+      "blocos": [
+       "a-classificacao-de-ogden-modificada-288154c9",
+       "a-classificacao-de-ogden-modificada-54560a75",
+       "tratamento-5adb23a3"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "2e5171179ac1938ee6473fc0278dc046ed578332caca0aa2ef83f1ffd9f100e8"
+     }
+    ],
+    "questaoSha256": "649886d2e5d9df87ccda9b4dd14cb35466b3eb8b5e6e018e728ca223b353e697",
+    "comentarioSha256": "9542f373e3eca16ba8aa1a4249e22ab6db703af807872357c79cb82a6f28de6d"
+   }
   },
   "pediatria-0780": {
    "tema": "pediatria",
@@ -41479,8 +41804,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo 27 indica tratamento por estabilidade/desvio,com até 2 mm para gesso e cirurgia para desvio residual acima de 2–3 mm ou tipoIII desviado. Não dá o limite de 20 graus de déficit de extensão ativa para tratamento não cirúrgico. Não converter ausência desse critério em prova de que a frase histórica seja falsa,nem confundir graus funcionais com milímetros de desvio ósseo. Falta recomendação que valide/refute o corte de 20 graus na fratura desviada da prova. Sem oficial,sem provavel novo,sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41494,7 +41819,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
-   "questaoSha256": "ac0bb2d7586ba0d18d5a6084f7d90597fc2f7013579580c482edfd8d0299c627"
+   "questaoSha256": "ac0bb2d7586ba0d18d5a6084f7d90597fc2f7013579580c482edfd8d0299c627",
+   "pendencia": "O corpo 27 indica tratamento por estabilidade/desvio,com até 2 mm para gesso e cirurgia para desvio residual acima de 2–3 mm ou tipoIII desviado. Não dá o limite de 20 graus de déficit de extensão ativa para tratamento não cirúrgico. Não converter ausência desse critério em prova de que a frase histórica seja falsa,nem confundir graus funcionais com milímetros de desvio ósseo. Falta recomendação que valide/refute o corte de 20 graus na fratura desviada da prova. Sem oficial,sem provavel novo,sem selo."
   },
   "pediatria-0839": {
    "tema": "pediatria",
@@ -41591,8 +41917,8 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte 27 define tipoI de OGDEN como apófise na inserção patelar,mas não estabelece equivalência com SALTER-HARRIS I–IV. A definição genérica de Salter na fonte 26 não demonstra o trajeto da avulsão apofisária nem garante que classificações numeradas coincidam. O resumo sinaliza expressamente essa lacuna. Falta tabela/desenho da versão da classificação adotada e correspondência do trajeto fisário. Sem oficial,não marcarI por coincidência dos números ou pelo comentário antigo;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41609,7 +41935,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "83713c723e539d42e6d384161d7da1d44a4d13862e48f9984982189845a7a94d"
+   "questaoSha256": "83713c723e539d42e6d384161d7da1d44a4d13862e48f9984982189845a7a94d",
+   "pendencia": "A fonte 27 define tipoI de OGDEN como apófise na inserção patelar,mas não estabelece equivalência com SALTER-HARRIS I–IV. A definição genérica de Salter na fonte 26 não demonstra o trajeto da avulsão apofisária nem garante que classificações numeradas coincidam. O resumo sinaliza expressamente essa lacuna. Falta tabela/desenho da versão da classificação adotada e correspondência do trajeto fisário. Sem oficial,não marcarI por coincidência dos números ou pelo comentário antigo;sem selo."
   },
   "pediatria-0841": {
    "tema": "pediatria",
@@ -42480,8 +42807,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo 29 demonstra varo nas primeiras duas semanas em cerca de 60% das fraturas isoladas da tíbia e informa que varo remodela melhor que valgo/recurvato. Isso não estabelece a distribuição de deformidades TARDIAS persistentes exigida pelo enunciado. A contextualização que cita a prova não é fonte independente,e a frequência precoce não deve ser transferida ao seguimento tardio sem comprovação. Falta série/afirmação comparativa de sequelas tardias da fratura diafisária isolada para confirmar qual deformidade é mais comum. Gabarito A preservado;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42505,7 +42832,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "b9ef0ad9e3af605dc7e1dcd6513b9225158cfe62ed4a7c5685f6cb36f7238cfb"
+   "questaoSha256": "b9ef0ad9e3af605dc7e1dcd6513b9225158cfe62ed4a7c5685f6cb36f7238cfb",
+   "pendencia": "O corpo 29 demonstra varo nas primeiras duas semanas em cerca de 60% das fraturas isoladas da tíbia e informa que varo remodela melhor que valgo/recurvato. Isso não estabelece a distribuição de deformidades TARDIAS persistentes exigida pelo enunciado. A contextualização que cita a prova não é fonte independente,e a frequência precoce não deve ser transferida ao seguimento tardio sem comprovação. Falta série/afirmação comparativa de sequelas tardias da fratura diafisária isolada para confirmar qual deformidade é mais comum. Gabarito A preservado;sem selo."
   },
   "pediatria-0917": {
    "tema": "pediatria",
@@ -43229,8 +43557,8 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo 27 diz que valgo pode abrir a fise medialmente,varo e hiperextensão também podem lesar,e flexão raramente produz tipoII/III. Não compara a frequência de valgo e varo especificamente no SALTER-HARRIS II da tíbia proximal. A ordem de mecanismos descrita na fonte 29 refere-se à METÁFISE proximal,não deve ser transferida ao tipoII fisário. A nota contextual que repete a letraB não é fonte independente. Falta frequência ou afirmação comparativa do mecanismo predominante para esse padrão fisário. GabaritoB preservado;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -43247,7 +43575,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "4e11fdc39cbb026025ad31cfa837319a3a0378f0de5f675366cb288033ade955"
+   "questaoSha256": "4e11fdc39cbb026025ad31cfa837319a3a0378f0de5f675366cb288033ade955",
+   "pendencia": "O corpo 27 diz que valgo pode abrir a fise medialmente,varo e hiperextensão também podem lesar,e flexão raramente produz tipoII/III. Não compara a frequência de valgo e varo especificamente no SALTER-HARRIS II da tíbia proximal. A ordem de mecanismos descrita na fonte 29 refere-se à METÁFISE proximal,não deve ser transferida ao tipoII fisário. A nota contextual que repete a letraB não é fonte independente. Falta frequência ou afirmação comparativa do mecanismo predominante para esse padrão fisário. GabaritoB preservado;sem selo."
   },
   "pediatria-0948": {
    "tema": "pediatria",
@@ -43257,7 +43586,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43275,7 +43604,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "18210da08907c00983625960fd1351803161127f2657eedd928ae2578432f390"
+   "questaoSha256": "18210da08907c00983625960fd1351803161127f2657eedd928ae2578432f390",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "A tuberosidade: quem quebra e como"
+      ],
+      "blocos": [
+       "a-tuberosidade-quem-quebra-e-como-7b1686ef",
+       "a-tuberosidade-quem-quebra-e-como-add351b6"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "a6ef5e0770dc1fdf5d84affe8f45343175567558a3ce4806036dec2fbdc4379e"
+     }
+    ],
+    "questaoSha256": "18210da08907c00983625960fd1351803161127f2657eedd928ae2578432f390",
+    "comentarioSha256": "eee47255e2eb75915900267388ee335e6ded9226f9d5ec82780e13e9f4d97a57"
+   }
   },
   "pediatria-0949": {
    "tema": "pediatria",
@@ -43304,7 +43657,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43322,7 +43675,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "9d6894c9aa42eb995995422fa95feb72ada73edb7e1ffdc10641e76f7d3fc8d7"
+   "questaoSha256": "9d6894c9aa42eb995995422fa95feb72ada73edb7e1ffdc10641e76f7d3fc8d7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-6221cf6c",
+       "diafise-o-desvio-depende-da-fibula-4b0512cb"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "0c4d771d9247099426ba2e58f387a06cef00105908026e0ab4ab26791bdff42b"
+     }
+    ],
+    "questaoSha256": "9d6894c9aa42eb995995422fa95feb72ada73edb7e1ffdc10641e76f7d3fc8d7",
+    "comentarioSha256": "f9ebd69099a3a353046b222e152a55cf8cd4936ca440c58b2c8cfde9dc2f9b8b"
+   }
   },
   "pediatria-0951": {
    "tema": "pediatria",
@@ -52218,7 +52595,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52237,7 +52614,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "278fab954fa0f8b64e75153788fdea377f4f96ee8a38d8e14b8225d2f3adda9f"
+   "questaoSha256": "278fab954fa0f8b64e75153788fdea377f4f96ee8a38d8e14b8225d2f3adda9f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-d5af459b",
+       "metafise-proximal-a-fratura-de-cozen-e5a4d866"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "6e264a598d8244e984f693878a08ce244e0df3fa889117baec7faa424190a8be"
+     }
+    ],
+    "questaoSha256": "278fab954fa0f8b64e75153788fdea377f4f96ee8a38d8e14b8225d2f3adda9f",
+    "comentarioSha256": "14e1e080c73bcdd68463a7f31465d7a81dc0efd75f9ea7ff482d525ca33cb70b"
+   }
   },
   "pediatria-1138": {
    "tema": "pediatria",
@@ -52247,7 +52648,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52266,7 +52667,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "07468600b88f2a6815dcb339fa573bdb78bacc72a51536c10715e2d84f2515a2"
+   "questaoSha256": "07468600b88f2a6815dcb339fa573bdb78bacc72a51536c10715e2d84f2515a2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-d74e22ac"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "6a080ba29070a7bb31b4cee30abb0a60712d28d38f0db694a0ca2bca1facb08d"
+     }
+    ],
+    "questaoSha256": "07468600b88f2a6815dcb339fa573bdb78bacc72a51536c10715e2d84f2515a2",
+    "comentarioSha256": "96e6bbf66b3407590a933a0f2c0e2923fb09ca481fe2cb6de8632f4940f02e02"
+   }
   },
   "pediatria-1139": {
    "tema": "pediatria",
@@ -52276,7 +52700,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52295,7 +52719,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "8936e29ffa70f37d2d18cafe1a01d6791fd349dd5c9831e26420fa71bc4fcf4b"
+   "questaoSha256": "8936e29ffa70f37d2d18cafe1a01d6791fd349dd5c9831e26420fa71bc4fcf4b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-06e1bebc",
+       "metafise-proximal-a-fratura-de-cozen-2fd51d05"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "d0fb8d9e7d4ae9b616f0a6dfa430b70ae8b656163e82575b63936383036fe27c"
+     }
+    ],
+    "questaoSha256": "8936e29ffa70f37d2d18cafe1a01d6791fd349dd5c9831e26420fa71bc4fcf4b",
+    "comentarioSha256": "594b8cd5798dc3a5ff8a5efeaa5d488d8331eff1b3fcc618e17c2c4b6374e9d9"
+   }
   },
   "pediatria-1140": {
    "tema": "pediatria",
@@ -52305,7 +52753,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52324,7 +52772,32 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "61fdfb670e902f3e44f26325e175bd712fe80d3fab93ed407b120c8fc9c5fc5f"
+   "questaoSha256": "61fdfb670e902f3e44f26325e175bd712fe80d3fab93ed407b120c8fc9c5fc5f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-663056eb",
+       "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+       "metafise-proximal-a-fratura-de-cozen-d5af459b"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "75d664f748d6a78fed86efbf03ad218f098d8dc64c45e5ad77d79d5805ad520f"
+     }
+    ],
+    "questaoSha256": "61fdfb670e902f3e44f26325e175bd712fe80d3fab93ed407b120c8fc9c5fc5f",
+    "comentarioSha256": "ecf13ab10cd5ca235904e8c558fe1ad73b56de784ad7a4359f06aec3b6fbc847"
+   }
   },
   "pediatria-1141": {
    "tema": "pediatria",
@@ -52334,7 +52807,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52353,7 +52826,32 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "e3cd86964c7ff3fd7c7c45dc3c17246e817c41e2fcdbd6157da8cdfb368443f9"
+   "questaoSha256": "e3cd86964c7ff3fd7c7c45dc3c17246e817c41e2fcdbd6157da8cdfb368443f9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN",
+       "Epidemiologia e anatomia"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+       "epidemiologia-e-anatomia-499cf5ae"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "5e81c2334bcffb02fba98b7c044977570f87868ff82e850b978b8bffb2cb19ce"
+     }
+    ],
+    "questaoSha256": "e3cd86964c7ff3fd7c7c45dc3c17246e817c41e2fcdbd6157da8cdfb368443f9",
+    "comentarioSha256": "ee1f2e2040acec79e4d0e8667324a6b9b3793e700bac543e761e5f049dc1e9d0"
+   }
   },
   "pediatria-1142": {
    "tema": "pediatria",
@@ -52362,7 +52860,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52380,7 +52878,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "1c4571ec395a05c6d461692c64fca96f804a1a2c5a60478dc6f33f74637e54d6"
+   "questaoSha256": "1c4571ec395a05c6d461692c64fca96f804a1a2c5a60478dc6f33f74637e54d6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-4b0512cb",
+       "diafise-o-desvio-depende-da-fibula-bcdab43f"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "98210fc0b62813c429de5b19faeff92032a25d2d372aa138c5a8f0c0c83e1634"
+     }
+    ],
+    "questaoSha256": "1c4571ec395a05c6d461692c64fca96f804a1a2c5a60478dc6f33f74637e54d6",
+    "comentarioSha256": "43084779597ecfd712c9001a4e8b637169990d7db494f91911846bb6123c4c89"
+   }
   },
   "pediatria-1143": {
    "tema": "pediatria",
@@ -52389,7 +52911,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52407,7 +52929,32 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "196ea9961d3b20d5a6a716c788382f8aa9a81d2c6bcef7c612f4f1884a8f5757"
+   "questaoSha256": "196ea9961d3b20d5a6a716c788382f8aa9a81d2c6bcef7c612f4f1884a8f5757",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-4b0512cb",
+       "diafise-o-desvio-depende-da-fibula-bcdab43f",
+       "diafise-o-desvio-depende-da-fibula-65256445"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "4f0b513731dbd6f6537106c8a75f0c2e7c1d6298dbe48c6c20d6fa0abe87e6da"
+     }
+    ],
+    "questaoSha256": "196ea9961d3b20d5a6a716c788382f8aa9a81d2c6bcef7c612f4f1884a8f5757",
+    "comentarioSha256": "cea6a0822e3177f1cdc291225fcf41373536eecc1acde06fca24bc6c1dd7b50b"
+   }
   },
   "pediatria-1144": {
    "tema": "pediatria",
