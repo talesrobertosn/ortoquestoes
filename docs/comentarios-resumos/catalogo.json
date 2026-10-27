@@ -4,11 +4,9 @@
  "estados": {
   "duplicada": 87,
   "pendente": 140,
-  "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 712,
-  "pendente-inspecao-imagem": 34,
-  "revisada": 1639
+  "pendente-fonte": 740,
+  "revisada": 1654
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -16,8 +14,7 @@
    "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
    "estados": {
     "duplicada": 3,
-    "pendente-fonte": 14,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 15,
     "revisada": 52
    }
   },
@@ -35,9 +32,8 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente-fonte": 23,
-    "pendente-inspecao-imagem": 2,
-    "revisada": 107
+    "pendente-fonte": 24,
+    "revisada": 108
    }
   },
   "rockwood10-34-fratura-clavicula": {
@@ -45,8 +41,7 @@
    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
    "estados": {
     "pendente-fonte": 8,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 64
+    "revisada": 65
    }
   },
   "rockwood10-36-umero-proximal": {
@@ -54,8 +49,7 @@
    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
    "estados": {
     "duplicada": 4,
-    "pendente-fonte": 23,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 24,
     "revisada": 66
    }
   },
@@ -64,9 +58,7 @@
    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
    "estados": {
     "duplicada": 2,
-    "pendente-anulada": 1,
-    "pendente-fonte": 9,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 11,
     "revisada": 39
    }
   },
@@ -76,8 +68,7 @@
    "estados": {
     "duplicada": 8,
     "pendente": 24,
-    "pendente-fonte": 46,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 47,
     "revisada": 106
    }
   },
@@ -86,9 +77,8 @@
    "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
    "estados": {
     "duplicada": 8,
-    "pendente-fonte": 23,
-    "pendente-inspecao-imagem": 2,
-    "revisada": 71
+    "pendente-fonte": 24,
+    "revisada": 72
    }
   },
   "rockwood10-44-carpo": {
@@ -108,21 +98,17 @@
    "estados": {
     "duplicada": 4,
     "pendente": 48,
-    "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 69,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 122
+    "pendente-fonte": 71,
+    "revisada": 123
    }
   },
   "rockwood10-48-coluna-cervical": {
    "titulo": "Fraturas e luxações da coluna cervical",
    "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
    "estados": {
-    "pendente-anulada": 1,
-    "pendente-fonte": 24,
-    "pendente-inspecao-imagem": 5,
-    "revisada": 102
+    "pendente-fonte": 25,
+    "revisada": 107
    }
   },
   "rockwood10-49-fratura-toracolombar": {
@@ -130,8 +116,7 @@
    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
-    "pendente-fonte": 33,
-    "pendente-inspecao-imagem": 7,
+    "pendente-fonte": 40,
     "revisada": 86
    }
   },
@@ -184,8 +169,7 @@
    "titulo": "Fratura do fêmur distal",
    "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
    "estados": {
-    "pendente-fonte": 11,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 12,
     "revisada": 27
    }
   },
@@ -195,8 +179,7 @@
    "estados": {
     "duplicada": 14,
     "pendente-fonte": 27,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 41
+    "revisada": 42
    }
   },
   "rockwood10-61-luxacao-joelho": {
@@ -204,9 +187,8 @@
    "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
    "estados": {
     "duplicada": 14,
-    "pendente-anulada": 1,
     "pendente-fonte": 56,
-    "revisada": 52
+    "revisada": 53
    }
   },
   "rockwood10-62-planalto-tibial": {
@@ -222,9 +204,7 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente-anulada": 2,
-    "pendente-fonte": 47,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 50,
     "revisada": 100
    }
   },
@@ -234,8 +214,7 @@
    "estados": {
     "duplicada": 4,
     "pendente-fonte": 12,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 32
+    "revisada": 33
    }
   },
   "rockwood10-65-tornozelo": {
@@ -243,10 +222,8 @@
    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
    "estados": {
     "duplicada": 5,
-    "pendente-anulada": 1,
-    "pendente-fonte": 14,
-    "pendente-inspecao-imagem": 4,
-    "revisada": 42
+    "pendente-fonte": 16,
+    "revisada": 45
    }
   },
   "rockwood10-66-talus": {
@@ -262,8 +239,7 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente-fonte": 60,
-    "pendente-inspecao-imagem": 3,
+    "pendente-fonte": 63,
     "revisada": 73
    }
   },
@@ -319,36 +295,32 @@
    "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
    "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
    "estados": {
-    "pendente-anulada": 1,
     "pendente-fonte": 4,
-    "revisada": 14
+    "revisada": 15
    }
   },
   "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial": {
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
-    "pendente-fonte": 36,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 66
+    "pendente-fonte": 38,
+    "revisada": 67
    }
   },
   "rockwoodcriancas9-16-condilo-lateral": {
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
    "estados": {
-    "pendente-fonte": 25,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 59
+    "pendente-fonte": 27,
+    "revisada": 60
    }
   },
   "rockwoodcriancas9-17-fise-distal-umero": {
    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
    "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
    "estados": {
-    "pendente-fonte": 6,
-    "pendente-inspecao-imagem": 2,
-    "revisada": 32
+    "pendente-fonte": 7,
+    "revisada": 33
    }
   },
   "wilkins9-08-radio-ulna-distal-crianca": {
@@ -356,8 +328,7 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente-fonte": 24,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 25,
     "revisada": 56
    }
   },
@@ -366,8 +337,7 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente-fonte": 23,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 24,
     "revisada": 52
    }
   }
@@ -1102,14 +1072,15 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (dissecção do acesso paraespinhal). O resumo de fratura toracolombar não descreve a via de Wiltse nem o intervalo entre multífido e longuíssimo; falta a anatomia do acesso paraespinhal.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "6f8b2938b6a6456a9a320c434bf7434107774df4f09cb3e001c5163d7660b4c1"
+   "questaoSha256": "6f8b2938b6a6456a9a320c434bf7434107774df4f09cb3e001c5163d7660b4c1",
+   "pendencia": "Imagem conferida (dissecção do acesso paraespinhal). O resumo de fratura toracolombar não descreve a via de Wiltse nem o intervalo entre multífido e longuíssimo; falta a anatomia do acesso paraespinhal."
   },
   "coluna-0064": {
    "tema": "coluna",
@@ -1396,8 +1367,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
+   "estado": "pendente-fonte",
+   "motivo": "Comentário de anulada escrito (lote c08, retirado): o validador recusa porque a questão anulada ainda traz gabarito 'C' nos dados. Decidir se o campo gabarito sai da questão anulada; o texto está em work/rascunho e no scratchpad textos8.py.",
    "temComentario": true,
    "citacoes": [
     {
@@ -1411,7 +1382,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "557f4709c18cc5e14e43a551f5753d9331b093c3a2f7ec154a559f7e16f97fae"
+   "questaoSha256": "557f4709c18cc5e14e43a551f5753d9331b093c3a2f7ec154a559f7e16f97fae",
+   "pendencia": "Comentário de anulada escrito (lote c08, retirado): o validador recusa porque a questão anulada ainda traz gabarito 'C' nos dados. Decidir se o campo gabarito sai da questão anulada; o texto está em work/rascunho e no scratchpad textos8.py."
   },
   "coluna-0113": {
    "tema": "coluna",
@@ -1872,8 +1844,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -1887,7 +1859,35 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "3e3015a8ecd8904fc36b3c9bc999811bfd468e71168a2b46e07a48012c99b8ef"
+   "questaoSha256": "3e3015a8ecd8904fc36b3c9bc999811bfd468e71168a2b46e07a48012c99b8ef",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Vias de acesso, fixação e complicações"
+      ],
+      "blocos": [
+       "vias-de-acesso-fixacao-e-complicacoes-d94d5621",
+       "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+       "vias-de-acesso-fixacao-e-complicacoes-e9530706",
+       "vias-de-acesso-fixacao-e-complicacoes-fe37fb3c",
+       "vias-de-acesso-fixacao-e-complicacoes-d4fdd49a",
+       "vias-de-acesso-fixacao-e-complicacoes-a35e7c44"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "f8744b20b1b8464a305514fe10ac1ae33cd273c1e57af306bba2522d8e8334cc"
+     }
+    ],
+    "questaoSha256": "3e3015a8ecd8904fc36b3c9bc999811bfd468e71168a2b46e07a48012c99b8ef",
+    "comentarioSha256": "f113a7ecd720e64921d1c135de32d5831cc62c16ee528bc012f4305e28f36535"
+   }
   },
   "coluna-0177": {
    "tema": "coluna",
@@ -2013,8 +2013,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -2028,7 +2028,36 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "22ea9014d11b31577823ba074d54e6a7646b5cb90d319ca3725aecfc39fc39ed"
+   "questaoSha256": "22ea9014d11b31577823ba074d54e6a7646b5cb90d319ca3725aecfc39fc39ed",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atlas, ligamento transverso e instabilidade C1–C2",
+       "Anatomia aplicada e biomecânica"
+      ],
+      "blocos": [
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-3b446794",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-7236e480",
+       "anatomia-aplicada-e-biomecanica-cafff61f",
+       "anatomia-aplicada-e-biomecanica-b1c9d54b"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "3755b393353f74241632b6997b06dec89dc6e3d7a473c41823e31cde50a67962"
+     }
+    ],
+    "questaoSha256": "22ea9014d11b31577823ba074d54e6a7646b5cb90d319ca3725aecfc39fc39ed",
+    "comentarioSha256": "b540260166fffc5f5a8b05a4ae1cf89e44760dfa8a573f0d4f03c05a5a2ed7b6"
+   }
   },
   "coluna-0226": {
    "tema": "coluna",
@@ -2294,14 +2323,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (músculo profundo paramediano lombar). O resumo de fratura toracolombar não descreve o multífido nem os planos musculares do acesso posterior paraespinhal.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "b106565acea9273e8d6e1cfb88a744a5bda62864c9694003d1164612477b1308"
+   "questaoSha256": "b106565acea9273e8d6e1cfb88a744a5bda62864c9694003d1164612477b1308",
+   "pendencia": "Imagem conferida (músculo profundo paramediano lombar). O resumo de fratura toracolombar não descreve o multífido nem os planos musculares do acesso posterior paraespinhal."
   },
   "coluna-0266": {
    "tema": "coluna",
@@ -2407,8 +2437,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -2422,7 +2452,34 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "78f79597ae53300356cdd706e17a1268d1136bdc2114690c275eda7975d7c766"
+   "questaoSha256": "78f79597ae53300356cdd706e17a1268d1136bdc2114690c275eda7975d7c766",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Anatomia aplicada e biomecânica",
+       "Vias de acesso, fixação e complicações"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-biomecanica-08887344",
+       "anatomia-aplicada-e-biomecanica-abd6af76",
+       "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+       "vias-de-acesso-fixacao-e-complicacoes-e9530706"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "55c0a25e89d56343a5fcf488e7f3a365b4356d23568f1a95a464e24ae00cefb0"
+     }
+    ],
+    "questaoSha256": "78f79597ae53300356cdd706e17a1268d1136bdc2114690c275eda7975d7c766",
+    "comentarioSha256": "b3f6fe5d0749b53f0b62b3e0a935650180f49b1a3d0bec54aff619ff4f51b043"
+   }
   },
   "coluna-0288": {
    "tema": "coluna",
@@ -3872,14 +3929,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagens conferidas (RM lombar). O tema é espondilodiscite/abscesso epidural e diagnóstico diferencial com metástase e hérnia; nenhum resumo publicado cobre infecção da coluna.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "28c94ee47a5acafd33767a0e55eddb73eafe097e0ca3d1e3f8dec6ba5032ed85"
+   "questaoSha256": "28c94ee47a5acafd33767a0e55eddb73eafe097e0ca3d1e3f8dec6ba5032ed85",
+   "pendencia": "Imagens conferidas (RM lombar). O tema é espondilodiscite/abscesso epidural e diagnóstico diferencial com metástase e hérnia; nenhum resumo publicado cobre infecção da coluna."
   },
   "coluna-0378": {
    "tema": "coluna",
@@ -3889,14 +3947,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida. Abscesso do psoas na espondilodiscite: nenhum resumo publicado cobre infecção da coluna.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "cbfe3557b96eaa60f01000b4ebde5263af8f4d0915f3e1d120f28b2f98ecce5c"
+   "questaoSha256": "cbfe3557b96eaa60f01000b4ebde5263af8f4d0915f3e1d120f28b2f98ecce5c",
+   "pendencia": "Imagem conferida. Abscesso do psoas na espondilodiscite: nenhum resumo publicado cobre infecção da coluna."
   },
   "coluna-0380": {
    "tema": "coluna",
@@ -4123,14 +4182,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (radiografias em inclinação). Classificação de Lenke e critérios de curva estrutural na escoliose: fora dos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "f628d4516eb4412ebb21876764fa6d139b811d7c44e5cdf7da9feeb9dc9fb425"
+   "questaoSha256": "f628d4516eb4412ebb21876764fa6d139b811d7c44e5cdf7da9feeb9dc9fb425",
+   "pendencia": "Imagem conferida (radiografias em inclinação). Classificação de Lenke e critérios de curva estrutural na escoliose: fora dos resumos publicados."
   },
   "coluna-0436": {
    "tema": "coluna",
@@ -7441,8 +7501,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (espaçador e enxerto). O resumo de diáfise da tíbia descreve o espaçador com antibiótico seguido de enxerto, mas afirma que o capítulo não usa o epônimo Masquelet; a resposta é o epônimo, e Judet/Papineau/RIA não estão definidos no resumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -7456,7 +7516,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "3bef4c5ebab4843459fff62282584ac52cf6dc4fe616ed7ceb6f5f43f3587a60"
+   "questaoSha256": "3bef4c5ebab4843459fff62282584ac52cf6dc4fe616ed7ceb6f5f43f3587a60",
+   "pendencia": "Imagem conferida (espaçador e enxerto). O resumo de diáfise da tíbia descreve o espaçador com antibiótico seguido de enxerto, mas afirma que o capítulo não usa o epônimo Masquelet; a resposta é o epônimo, e Judet/Papineau/RIA não estão definidos no resumo."
   },
   "conceitos-basicos-0087": {
    "tema": "conceitos-basicos",
@@ -7780,8 +7841,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -7795,7 +7856,32 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "a32c7582fa0bb41130b78ef4bf35d33bc4ff44680e5a3fe621b090434368ce9e"
+   "questaoSha256": "a32c7582fa0bb41130b78ef4bf35d33bc4ff44680e5a3fe621b090434368ce9e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Placa e haste no terço médio"
+      ],
+      "blocos": [
+       "placa-e-haste-no-terco-medio-f8e45aa8",
+       "placa-e-haste-no-terco-medio-6f62e979",
+       "placa-e-haste-no-terco-medio-702825bf"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "4cda7c1dda9e0253ef568a47eed3b2db79fa7f211147f36fe332b98f23920b29"
+     }
+    ],
+    "questaoSha256": "a32c7582fa0bb41130b78ef4bf35d33bc4ff44680e5a3fe621b090434368ce9e",
+    "comentarioSha256": "e0af223a26bf2d84a03c1c09969efb3d08a55a0b1084a02fedf934e6c781ee12"
+   }
   },
   "conceitos-basicos-0331": {
    "tema": "conceitos-basicos",
@@ -7805,8 +7891,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (pseudartroses do fêmur distal com fenda). O resumo de fêmur distal fala em evitar fenda residual e implante rígido demais (Perren), mas não classifica a pseudartrose em atrófica/hipertrófica nem liga cada tipo à rigidez; falta o capítulo 1 (consolidação) do Rockwood.",
    "temComentario": true,
    "citacoes": [
     {
@@ -7820,7 +7906,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "bafb1abea2651ec4f07f53cb931adf27fee10ede2ff3cc5f7aab8eaf48f1eb9d"
+   "questaoSha256": "bafb1abea2651ec4f07f53cb931adf27fee10ede2ff3cc5f7aab8eaf48f1eb9d",
+   "pendencia": "Imagem conferida (pseudartroses do fêmur distal com fenda). O resumo de fêmur distal fala em evitar fenda residual e implante rígido demais (Perren), mas não classifica a pseudartrose em atrófica/hipertrófica nem liga cada tipo à rigidez; falta o capítulo 1 (consolidação) do Rockwood."
   },
   "conceitos-basicos-0332": {
    "tema": "conceitos-basicos",
@@ -8181,8 +8268,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (fig. 12-7 do Rockwood). A regra das roscas que não podem cruzar o traço no parafuso de tração parcialmente rosqueado é do capítulo 12 (parafusos e placas), sem resumo publicado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -8196,7 +8283,8 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "031bf79814155d7a29163bd63b1f2a3ac336932be4302114b00c0387b95a689c"
+   "questaoSha256": "031bf79814155d7a29163bd63b1f2a3ac336932be4302114b00c0387b95a689c",
+   "pendencia": "Imagem conferida (fig. 12-7 do Rockwood). A regra das roscas que não podem cruzar o traço no parafuso de tração parcialmente rosqueado é do capítulo 12 (parafusos e placas), sem resumo publicado."
   },
   "conceitos-basicos-0392": {
    "tema": "conceitos-basicos",
@@ -14865,14 +14953,15 @@
    ],
    "prova": "IAUPE",
    "ano": 2025,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
+   "estado": "pendente-fonte",
+   "motivo": "Anulada. Ângulos de artrodese da IF e da MCF do polegar não estão em nenhum resumo publicado (o de fraturas da mão só cita artrodese como salvamento).",
    "temComentario": false,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "6953a4e04ed4dfd9ae72591185fc02206f6c193b9257b1076cea165ecf3bdd74"
+   "questaoSha256": "6953a4e04ed4dfd9ae72591185fc02206f6c193b9257b1076cea165ecf3bdd74",
+   "pendencia": "Anulada. Ângulos de artrodese da IF e da MCF do polegar não estão em nenhum resumo publicado (o de fraturas da mão só cita artrodese como salvamento)."
   },
   "mao-0741": {
    "tema": "mao",
@@ -16715,14 +16804,15 @@
    ],
    "prova": "UFG",
    "ano": 2020,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
+   "estado": "pendente-fonte",
+   "motivo": "Anulada. Posição de artrodese da MCF do polegar na artrose: fora dos resumos publicados.",
    "temComentario": false,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "e61a95653e9f5bddea74692e6218563769d03178691e30fdf5bc4f9232dd9778"
+   "questaoSha256": "e61a95653e9f5bddea74692e6218563769d03178691e30fdf5bc4f9232dd9778",
+   "pendencia": "Anulada. Posição de artrodese da MCF do polegar na artrose: fora dos resumos publicados."
   },
   "mao-0968": {
    "tema": "mao",
@@ -21477,8 +21567,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (esmagamento da mão). O resumo de síndrome compartimental diz que duas incisões dorsais dão acesso aos interósseos e costumam bastar, o que torna a alternativa B (primeiro interósseo dorsal pelas incisões dorsais) também defensável; o próprio resumo registra a divergência com o gabarito D (descompressão estendida). Sobre curativo a vácuo com nervo exposto (C) o resumo é silente. Duas alternativas defensáveis: aguardar fonte específica de mão.",
    "temComentario": true,
    "citacoes": [
     {
@@ -21492,7 +21582,8 @@
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental"
    ],
-   "questaoSha256": "d716d4a80e1176cf880f0b4ef1364abde24ab574acb378053bfe85c9b5f83481"
+   "questaoSha256": "d716d4a80e1176cf880f0b4ef1364abde24ab574acb378053bfe85c9b5f83481",
+   "pendencia": "Imagem conferida (esmagamento da mão). O resumo de síndrome compartimental diz que duas incisões dorsais dão acesso aos interósseos e costumam bastar, o que torna a alternativa B (primeiro interósseo dorsal pelas incisões dorsais) também defensável; o próprio resumo registra a divergência com o gabarito D (descompressão estendida). Sobre curativo a vácuo com nervo exposto (C) o resumo é silente. Duas alternativas defensáveis: aguardar fonte específica de mão."
   },
   "mao-1540": {
    "tema": "mao",
@@ -28556,8 +28647,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -28571,7 +28662,36 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "a3152357098bff400af3b3549c0d1125db9b1c235cae31d41b5573e8c9bbd23a"
+   "questaoSha256": "a3152357098bff400af3b3549c0d1125db9b1c235cae31d41b5573e8c9bbd23a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-tecnica-de-fixacao-d5ce803f",
+       "vias-de-acesso-e-tecnica-de-fixacao-154f03db",
+       "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+       "vias-de-acesso-e-tecnica-de-fixacao-063131bc",
+       "vias-de-acesso-e-tecnica-de-fixacao-06ec7f71",
+       "vias-de-acesso-e-tecnica-de-fixacao-b44038d8",
+       "vias-de-acesso-e-tecnica-de-fixacao-4ff47f95"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "3cc0a55ee8782bdcc184e23c564437d90f90798802c0da9ac45095efea652448"
+     }
+    ],
+    "questaoSha256": "a3152357098bff400af3b3549c0d1125db9b1c235cae31d41b5573e8c9bbd23a",
+    "comentarioSha256": "c04a07f67cb7833be5d95b6cdeeb34e5d73d8f0af3f046458dd061781b1f3b88"
+   }
   },
   "ombro-cotovelo-0308": {
    "tema": "ombro-cotovelo",
@@ -29441,15 +29561,16 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (sequência de exame da escápula). Discinesia escapular e testes de assistência/estabilização escapular não constam do resumo de escápula nem do de úmero proximal.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "95885bb34e374bbb24f5e8834437569477c1711d2859219d3d6017afd7dcf8a0"
+   "questaoSha256": "95885bb34e374bbb24f5e8834437569477c1711d2859219d3d6017afd7dcf8a0",
+   "pendencia": "Imagem conferida (sequência de exame da escápula). Discinesia escapular e testes de assistência/estabilização escapular não constam do resumo de escápula nem do de úmero proximal."
   },
   "ombro-cotovelo-0441": {
    "tema": "ombro-cotovelo",
@@ -33195,8 +33316,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -33211,7 +33332,35 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "d80493a3caa82d60dd3fcacb5f8974e0462e2a72fedd211652d45fabb07204d0"
+   "questaoSha256": "d80493a3caa82d60dd3fcacb5f8974e0462e2a72fedd211652d45fabb07204d0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "As vias de acesso e o nervo em risco",
+       "O maléolo posterior"
+      ],
+      "blocos": [
+       "as-vias-de-acesso-e-o-nervo-em-risco-f4faabaf",
+       "o-maleolo-posterior-118ede3c",
+       "o-maleolo-posterior-9b0b9f4d",
+       "as-vias-de-acesso-e-o-nervo-em-risco-e704e500",
+       "o-maleolo-posterior-3f959be3"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "1cd15556ebd23d862b71448919e154c5c1e4470f64515102688a2621e8af3ced"
+     }
+    ],
+    "questaoSha256": "d80493a3caa82d60dd3fcacb5f8974e0462e2a72fedd211652d45fabb07204d0",
+    "comentarioSha256": "39b374b0c5df93f31bf5e878af623b8fff1b46bf29ca7c4bc1f3d94eed86f313"
+   }
   },
   "pe-tornozelo-0282": {
    "tema": "pe-tornozelo",
@@ -33271,8 +33420,8 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -33286,7 +33435,32 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "0fdd4d7d44d475d6b4bdd1ebe005a4407894934d5feee6413f23041d537c0c6c"
+   "questaoSha256": "0fdd4d7d44d475d6b4bdd1ebe005a4407894934d5feee6413f23041d537c0c6c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-1360e2ec",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-27378c7e"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "1a5c8d2113e1dbeaf2a732a16ad6c7eae3fc5c04eae5e27d2304f07c078fc09b"
+     }
+    ],
+    "questaoSha256": "0fdd4d7d44d475d6b4bdd1ebe005a4407894934d5feee6413f23041d537c0c6c",
+    "comentarioSha256": "35e05e7797c584a870ca37845aab6e6dba2aac114dbb276ca3990bc72df1e449"
+   }
   },
   "pe-tornozelo-0331": {
    "tema": "pe-tornozelo",
@@ -34618,8 +34792,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (lesão metafisária do canto na tíbia distal do lactente). O resumo de fise distal do úmero trata maus-tratos só no descolamento do úmero distal; a lesão metafisária clássica (corner fracture), Looser e raquitismo não estão nos resumos.",
    "temComentario": true,
    "citacoes": [
     {
@@ -34633,7 +34807,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "5a6dc7e0c74500adec578580c3b35a01b4568ce7e329bb079bc7fe1f8abb18eb"
+   "questaoSha256": "5a6dc7e0c74500adec578580c3b35a01b4568ce7e329bb079bc7fe1f8abb18eb",
+   "pendencia": "Imagem conferida (lesão metafisária do canto na tíbia distal do lactente). O resumo de fise distal do úmero trata maus-tratos só no descolamento do úmero distal; a lesão metafisária clássica (corner fracture), Looser e raquitismo não estão nos resumos."
   },
   "pediatria-0514": {
    "tema": "pediatria",
@@ -36010,14 +36185,15 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (manobra de redução do quadril). Luxação traumática do quadril na criança e as manobras de Allis, Stimson e Bigelow não estão nos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "f2888818a66e4cc08a457a9439339539364e81a1d053b2a4b7186f13900b9031"
+   "questaoSha256": "f2888818a66e4cc08a457a9439339539364e81a1d053b2a4b7186f13900b9031",
+   "pendencia": "Imagem conferida (manobra de redução do quadril). Luxação traumática do quadril na criança e as manobras de Allis, Stimson e Bigelow não estão nos resumos publicados."
   },
   "pediatria-0562": {
    "tema": "pediatria",
@@ -37039,14 +37215,15 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (úmero proximal do adolescente com desvio total). Indicações de tratamento da fratura do úmero proximal na criança não estão nos resumos (o de epidemiologia só cita a curva de incidência).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "9f99c372fc6a88a932a58742bd2461a74711a7d4aa2c0de84b6e086a17532d10"
+   "questaoSha256": "9f99c372fc6a88a932a58742bd2461a74711a7d4aa2c0de84b6e086a17532d10",
+   "pendencia": "Imagem conferida (úmero proximal do adolescente com desvio total). Indicações de tratamento da fratura do úmero proximal na criança não estão nos resumos (o de epidemiologia só cita a curva de incidência)."
   },
   "pediatria-0596": {
    "tema": "pediatria",
@@ -40869,14 +41046,15 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (técnica de redução do colo do rádio). Metaizeau, Israeli, Jeffrey e Wallace não estão descritos em nenhum resumo publicado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "9011bdceddb0409faad5b3dd123d5f16239ac1a6383627e0d3a68f736e281d61"
+   "questaoSha256": "9011bdceddb0409faad5b3dd123d5f16239ac1a6383627e0d3a68f736e281d61",
+   "pendencia": "Imagem conferida (técnica de redução do colo do rádio). Metaizeau, Israeli, Jeffrey e Wallace não estão descritos em nenhum resumo publicado."
   },
   "pediatria-0709": {
    "tema": "pediatria",
@@ -43621,8 +43799,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -43645,7 +43823,32 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "0080c8b4304ea4599206872f47e49ddb5d07224c63a7eecff4fab5bd0cf1dd0e"
+   "questaoSha256": "0080c8b4304ea4599206872f47e49ddb5d07224c63a7eecff4fab5bd0cf1dd0e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Luxação do cotovelo na criança: quem, quando e o que vem junto"
+      ],
+      "blocos": [
+       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-bcae8f6d",
+       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-ecf7483c",
+       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-89370dc1"
+      ],
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
+      "trechosSha256": "2c3aa8c59601a8931864cb9c2a37b5b855a20e34583aba5073080b266999c557"
+     }
+    ],
+    "questaoSha256": "0080c8b4304ea4599206872f47e49ddb5d07224c63a7eecff4fab5bd0cf1dd0e",
+    "comentarioSha256": "96cc857c805280def34c99104d752a7f892580e283e50b6bbfeacc48e7940eef"
+   }
   },
   "pediatria-0847": {
    "tema": "pediatria",
@@ -44550,15 +44753,16 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (Monteggia infantil). A classificação de Letts não está nos resumos publicados; sem gabarito no acervo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "75ee8ffb4dee87b4e1913d60e94c5a885e83cde20802b856578a668b4bf69bf6"
+   "questaoSha256": "75ee8ffb4dee87b4e1913d60e94c5a885e83cde20802b856578a668b4bf69bf6",
+   "pendencia": "Imagem conferida (Monteggia infantil). A classificação de Letts não está nos resumos publicados; sem gabarito no acervo."
   },
   "pediatria-0926": {
    "tema": "pediatria",
@@ -44585,8 +44789,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida, mas de baixa resolução e sem gabarito no acervo; o resumo de côndilo lateral não permite reconhecer a lesão mostrada nem sustenta resposta única entre tróclea, côndilo lateral, olécrano e supracondiliana.",
    "temComentario": true,
    "citacoes": [
     {
@@ -44601,7 +44805,8 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "26ba136d331050866f65dc331b48f68e83e66e4be5d29fa96ba4996edda2fc59"
+   "questaoSha256": "26ba136d331050866f65dc331b48f68e83e66e4be5d29fa96ba4996edda2fc59",
+   "pendencia": "Imagem conferida, mas de baixa resolução e sem gabarito no acervo; o resumo de côndilo lateral não permite reconhecer a lesão mostrada nem sustenta resposta única entre tróclea, côndilo lateral, olécrano e supracondiliana."
   },
   "pediatria-0929": {
    "tema": "pediatria",
@@ -44769,15 +44974,16 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (manobra de redução do colo do rádio). Patterson, Kaufman, Jeffrey e Israeli não estão descritos nos resumos; sem gabarito no acervo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "b4b8597976e08bda5afad1b2a9f944e26169cc9bf748e5d9a9b991f0fc468c7c"
+   "questaoSha256": "b4b8597976e08bda5afad1b2a9f944e26169cc9bf748e5d9a9b991f0fc468c7c",
+   "pendencia": "Imagem conferida (manobra de redução do colo do rádio). Patterson, Kaufman, Jeffrey e Israeli não estão descritos nos resumos; sem gabarito no acervo."
   },
   "pediatria-0935": {
    "tema": "pediatria",
@@ -64311,14 +64517,15 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (conector transverso na instrumentação pedicular). A função biomecânica do conector transverso (estabilidade rotacional) não consta do resumo de fratura toracolombar.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "3ae07307447a4dcd4c37489d9e999cf70dcc193091a8bd89eeae9b4ee7c2872f"
+   "questaoSha256": "3ae07307447a4dcd4c37489d9e999cf70dcc193091a8bd89eeae9b4ee7c2872f",
+   "pendencia": "Imagem conferida (conector transverso na instrumentação pedicular). A função biomecânica do conector transverso (estabilidade rotacional) não consta do resumo de fratura toracolombar."
   },
   "trauma-0177": {
    "tema": "trauma",
@@ -64627,8 +64834,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
+   "estado": "pendente-fonte",
+   "motivo": "Anulada. A incidência da mortalha (rotação interna de 15 a 20 graus) e sua finalidade não estão no resumo de tornozelo; a figura 2 precisa ser lida com essa fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -64642,7 +64849,8 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "48a2c49941cab005f453f1cb9150d1499b3428ff36ff7f0cd41423bebc62208d"
+   "questaoSha256": "48a2c49941cab005f453f1cb9150d1499b3428ff36ff7f0cd41423bebc62208d",
+   "pendencia": "Anulada. A incidência da mortalha (rotação interna de 15 a 20 graus) e sua finalidade não estão no resumo de tornozelo; a figura 2 precisa ser lida com essa fonte."
   },
   "trauma-0186": {
    "tema": "trauma",
@@ -65402,14 +65610,15 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
+   "estado": "pendente-fonte",
+   "motivo": "Anulada. Prazo de cobertura com retalho livre (Godina, 72 horas) não consta do resumo de diáfise da tíbia.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "eec607591b42f215b8487020005d0594a1a982643db8b26faacd0cf1e30dbc92"
+   "questaoSha256": "eec607591b42f215b8487020005d0594a1a982643db8b26faacd0cf1e30dbc92",
+   "pendencia": "Anulada. Prazo de cobertura com retalho livre (Godina, 72 horas) não consta do resumo de diáfise da tíbia."
   },
   "trauma-0207": {
    "tema": "trauma",
@@ -69310,8 +69519,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
+   "estado": "pendente-fonte",
+   "motivo": "Comentário de anulada escrito (lote c08, retirado): o validador recusa porque a questão anulada ainda traz gabarito 'D' nos dados. Decidir se o campo gabarito sai da questão anulada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -69325,7 +69534,8 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "05e7b0c7238ac63cea512724e8f68c42dfdc50e8036bba812df9cfa03cc48e3a"
+   "questaoSha256": "05e7b0c7238ac63cea512724e8f68c42dfdc50e8036bba812df9cfa03cc48e3a",
+   "pendencia": "Comentário de anulada escrito (lote c08, retirado): o validador recusa porque a questão anulada ainda traz gabarito 'D' nos dados. Decidir se o campo gabarito sai da questão anulada."
   },
   "trauma-0323": {
    "tema": "trauma",
@@ -72364,14 +72574,15 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida: traço transósseo por uma única vértebra (Chance). O resumo usa a AO Spine revisada, em que esse desenho é B1; o gabarito B2 segue a classificação antiga de Magerl, que o resumo não descreve. Falta a classificação de Magerl para explicar o gabarito sem contradizer a fonte.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "4d7d44a56c9ed8c3b21ac41cadcf5e602ff8adc5b274d4411cc1de842d0751a5"
+   "questaoSha256": "4d7d44a56c9ed8c3b21ac41cadcf5e602ff8adc5b274d4411cc1de842d0751a5",
+   "pendencia": "Imagem conferida: traço transósseo por uma única vértebra (Chance). O resumo usa a AO Spine revisada, em que esse desenho é B1; o gabarito B2 segue a classificação antiga de Magerl, que o resumo não descreve. Falta a classificação de Magerl para explicar o gabarito sem contradizer a fonte."
   },
   "trauma-0547": {
    "tema": "trauma",
@@ -76831,14 +77042,15 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
+   "estado": "pendente-fonte",
+   "motivo": "Anulada. Antibiótico na fratura exposta Gustilo I (cefalosporina de 1ª geração, profilática ou terapêutica) não consta do resumo de diáfise da tíbia.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "b6412bbb5f835e589adb41154242ea2dfa21facf2ef59c52986250399160c28a"
+   "questaoSha256": "b6412bbb5f835e589adb41154242ea2dfa21facf2ef59c52986250399160c28a",
+   "pendencia": "Anulada. Antibiótico na fratura exposta Gustilo I (cefalosporina de 1ª geração, profilática ou terapêutica) não consta do resumo de diáfise da tíbia."
   },
   "trauma-0763": {
    "tema": "trauma",
@@ -76847,8 +77059,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -76862,7 +77074,32 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "40d94054ef4eb7b4adb650267ebd3ed6e37d281d4a44d95c7899714efc42b588"
+   "questaoSha256": "40d94054ef4eb7b4adb650267ebd3ed6e37d281d4a44d95c7899714efc42b588",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura do odontoide (C2)"
+      ],
+      "blocos": [
+       "fratura-do-odontoide-c2-0a216035",
+       "fratura-do-odontoide-c2-feeecbd6",
+       "fratura-do-odontoide-c2-ed2832d8"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "497ee711afdb5d9988e1906e59612ee33f794597b81f0c604fea619e18c7a9a2"
+     }
+    ],
+    "questaoSha256": "40d94054ef4eb7b4adb650267ebd3ed6e37d281d4a44d95c7899714efc42b588",
+    "comentarioSha256": "8e08f70dd286ea0d76e5f9f9806a8b4849c64d320b5ec68047021853a5a8a187"
+   }
   },
   "trauma-0764": {
    "tema": "trauma",
@@ -81150,8 +81387,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -81165,7 +81402,32 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "e85b0948cf25193a5ff45c062fe477e25012a669e535331dc4f1e934a6d06f31"
+   "questaoSha256": "e85b0948cf25193a5ff45c062fe477e25012a669e535331dc4f1e934a6d06f31",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "2529379402c57a79fbeb67f95d8fdb95f7812707816a726627f0006087a3e6e8"
+     }
+    ],
+    "questaoSha256": "e85b0948cf25193a5ff45c062fe477e25012a669e535331dc4f1e934a6d06f31",
+    "comentarioSha256": "407d59a977134374668720ba1522d93ccb08e50f1a1a837ce24a1671178f1308"
+   }
   },
   "trauma-0906": {
    "tema": "trauma",
@@ -83229,14 +83491,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem conferida (fratura do capítulo). A classificação de Bryan-Morrey das fraturas do capítulo não está no resumo de cotovelo (capítulo 40 trata luxações e tríade).",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "4ac709330ff64ba2edd1bd1e9c83f96cb920f0f4ee522e2874510781a67d5fbe"
+   "questaoSha256": "4ac709330ff64ba2edd1bd1e9c83f96cb920f0f4ee522e2874510781a67d5fbe",
+   "pendencia": "Imagem conferida (fratura do capítulo). A classificação de Bryan-Morrey das fraturas do capítulo não está no resumo de cotovelo (capítulo 40 trata luxações e tríade)."
   },
   "trauma-0976": {
    "tema": "trauma",
@@ -84961,8 +85224,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -84976,7 +85239,35 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "992d50fbb6cda1a98235107785e81f56b95da4c81a64ec1bd7635ddb8f46175f"
+   "questaoSha256": "992d50fbb6cda1a98235107785e81f56b95da4c81a64ec1bd7635ddb8f46175f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "O maléolo posterior",
+       "As vias de acesso e o nervo em risco"
+      ],
+      "blocos": [
+       "o-maleolo-posterior-118ede3c",
+       "o-maleolo-posterior-9b0b9f4d",
+       "as-vias-de-acesso-e-o-nervo-em-risco-f4faabaf",
+       "as-vias-de-acesso-e-o-nervo-em-risco-e704e500",
+       "o-maleolo-posterior-3f959be3"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "a4d58b926538297b0bbea4e8440e71c12e318ea5961e7071216b1e1c016e4f78"
+     }
+    ],
+    "questaoSha256": "992d50fbb6cda1a98235107785e81f56b95da4c81a64ec1bd7635ddb8f46175f",
+    "comentarioSha256": "f425dfdbad5dc096e369046f2b8555833e8add3a7ac298f2a43b67f0b2a062ac"
+   }
   },
   "trauma-1034": {
    "tema": "trauma",
@@ -85741,14 +86032,45 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
-   "temComentario": false,
+   "estado": "revisada",
+   "motivo": "",
+   "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "cb2c0ff9f4ed49668c6c777dbff96291d7f5e5450a3dfbb22a4af393b5435603"
+   "questaoSha256": "cb2c0ff9f4ed49668c6c777dbff96291d7f5e5450a3dfbb22a4af393b5435603",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Cruzado posterior: a pedra fundamental",
+       "O lado medial",
+       "Canto posterolateral"
+      ],
+      "blocos": [
+       "cruzado-posterior-a-pedra-fundamental-cc74f408",
+       "o-lado-medial-b8a9097e",
+       "o-lado-medial-0800da36",
+       "cruzado-posterior-a-pedra-fundamental-cd462063",
+       "cruzado-posterior-a-pedra-fundamental-d4cd29c1",
+       "canto-posterolateral-0b736828",
+       "canto-posterolateral-792b81bb"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "ea4a42a1110b4c02479ba2eca5a116aff453a51f70f31a11b5468e3694a09290"
+     }
+    ],
+    "questaoSha256": "cb2c0ff9f4ed49668c6c777dbff96291d7f5e5450a3dfbb22a4af393b5435603",
+    "comentarioSha256": "5caa86428c5b02e75d00c5759cb147148309f1a0d6ea3054a677885c1b28015e"
+   }
   },
   "trauma-1062": {
    "tema": "trauma",
@@ -85823,9 +86145,9 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente-anulada",
-   "motivo": "Requer análise da anulação sem eleger gabarito.",
-   "temComentario": false,
+   "estado": "revisada",
+   "motivo": "",
+   "temComentario": true,
    "citacoes": [
     {
      "c": "rockwoodcriancas9-14-fratura-em-t",
@@ -85838,7 +86160,34 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-14-fratura-em-t"
    ],
-   "questaoSha256": "630529b7633fa32bb5c0cb83bbe0145dcc332cc627752fec7a8e50f8e5ef76d6"
+   "questaoSha256": "630529b7633fa32bb5c0cb83bbe0145dcc332cc627752fec7a8e50f8e5ef76d6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-14-fratura-em-t",
+      "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Complicações",
+       "Técnica: articulação primeiro, colunas depois"
+      ],
+      "blocos": [
+       "complicacoes-02e95725",
+       "complicacoes-90956356",
+       "complicacoes-d2ac5d62",
+       "tecnica-articulacao-primeiro-colunas-depois-262a3251"
+      ],
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
+      "trechosSha256": "7b1bcada76e1b9aaf8d3e2fbae795e5ddcdf13a2c33a8a3ca30258effd49630a"
+     }
+    ],
+    "questaoSha256": "630529b7633fa32bb5c0cb83bbe0145dcc332cc627752fec7a8e50f8e5ef76d6",
+    "comentarioSha256": "d9bf8d42ad09ee7d96ee901d002e360c2551d37df546a1719337347112db44a0"
+   }
   },
   "trauma-1065": {
    "tema": "trauma",
@@ -86031,8 +86380,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -86046,7 +86395,34 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "db1e02ed30b6aa44338231d455c6a3deb92d803f21133c999183343d8af0ad5a"
+   "questaoSha256": "db1e02ed30b6aa44338231d455c6a3deb92d803f21133c999183343d8af0ad5a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Tratamento das rupturas tendíneas"
+      ],
+      "blocos": [
+       "tratamento-das-rupturas-tendineas-97b0cab5",
+       "tratamento-das-rupturas-tendineas-6b7ec609",
+       "tratamento-das-rupturas-tendineas-daf84498",
+       "tratamento-das-rupturas-tendineas-f4316214",
+       "tratamento-das-rupturas-tendineas-5ce92f76"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "948e4bdf62a39ff044203b41703cfcf69bf036adbb2959925e65155be8ad85b8"
+     }
+    ],
+    "questaoSha256": "db1e02ed30b6aa44338231d455c6a3deb92d803f21133c999183343d8af0ad5a",
+    "comentarioSha256": "66dc9dbb3b4304d01058f8a80338d23b96235aaef37f2c09ea77978be3142395"
+   }
   },
   "trauma-1075": {
    "tema": "trauma",
@@ -89859,8 +90235,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -89875,7 +90251,36 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "9d27f1febc0492773f748ebd335feba362a9b0b6b24ca053fa29e3458522ad8d"
+   "questaoSha256": "9d27f1febc0492773f748ebd335feba362a9b0b6b24ca053fa29e3458522ad8d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Coluna subaxial: classificações e estabilidade",
+       "Compressão, explosão e teardrop"
+      ],
+      "blocos": [
+       "coluna-subaxial-classificacoes-e-estabilidade-8a83b113",
+       "coluna-subaxial-classificacoes-e-estabilidade-29b5888a",
+       "coluna-subaxial-classificacoes-e-estabilidade-e46c437b",
+       "compressao-explosao-e-teardrop-13a89876",
+       "compressao-explosao-e-teardrop-a3e0c6bc",
+       "coluna-subaxial-classificacoes-e-estabilidade-734c3145"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "fc999fa284ddedd9065af124b4cfcf20636f447d10cc3454102cb10d96c0b054"
+     }
+    ],
+    "questaoSha256": "9d27f1febc0492773f748ebd335feba362a9b0b6b24ca053fa29e3458522ad8d",
+    "comentarioSha256": "36a691d5c5dea7d463e2e8acd9bfde081af540215bf66c734c10ad43190fc26d"
+   }
   },
   "trauma-1207": {
    "tema": "trauma",
@@ -89911,15 +90316,16 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagens conferidas (plexo braquial). Anatomia dos fascículos e ramos terminais do plexo não está nos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "3b1b4db70b0357f6eddbfbfa3196559ed4d0f53c061d5334932fe4473aad3ced"
+   "questaoSha256": "3b1b4db70b0357f6eddbfbfa3196559ed4d0f53c061d5334932fe4473aad3ced",
+   "pendencia": "Imagens conferidas (plexo braquial). Anatomia dos fascículos e ramos terminais do plexo não está nos resumos publicados."
   },
   "trauma-1209": {
    "tema": "trauma",
