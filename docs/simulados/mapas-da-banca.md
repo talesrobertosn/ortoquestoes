@@ -3864,3 +3864,19 @@ parentesco, fêmur e marcha, internar e notificar.
 TARO 2015 (`0065`): fêmur distal; o capítulo põe a diáfise do fêmur primeiro.
 
 **Aproveitamento:** `pediatria-1196` a `pediatria-1210`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.731 caracteres.
+
+## Luxação do ombro e fraturas do úmero proximal e da diáfise na criança, Rockwood and Wilkins 10ª ed., cap. 19
+
+**Recorte.** Busca por úmero proximal, NEER-HORWITZ, luxação do ombro, diáfise do úmero e nervo radial em Ortopedia pediátrica, todas as provas.
+A banca cobra sobretudo o úmero proximal: ossificação (TARO 2022 `pediatria-0571`), desvio (TARO 2026 `0524`), manobra (TARO 2012 `0667`),
+aceitável (TEPOP 2024 `0945`), conduta por imagem (TARO 2021 `0595`, TEOT 2021 `0848`), nervo (TARO 2019 `0642`), fragmento do SH II (TARO 2017 `0617`);
+e a diáfise: aceitável (TARO 2018 `0631`), parto (TEPOP 2024 `0953`), idade (TARO 2017 `0618`).
+
+**Forma.** Enunciados curtos; algumas questões de imagem.
+
+**Lacunas com cara de prova (projeção).** Recidiva da luxação anterior, multidirecional, luxação posterior, LATARJET, fise de 80%, Tabela 19-1 no
+adolescente, fios e nervo axilar, úmero varo, nervo radial (observar, 1 mm por dia, MATEV), SH III com luxação.
+
+**Divergências.** TARO 2019 (`0642`): plexo no varo; o capítulo diz valgo. TARO 2017 (`0617`): fragmento posteromedial; o capítulo diz anterolateral.
+
+**Aproveitamento:** `pediatria-1211` a `pediatria-1224`, 14 questões, gabarito A4/B4/C3/D3, mediana de 2.611 caracteres.

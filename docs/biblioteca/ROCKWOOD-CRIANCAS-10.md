@@ -47,7 +47,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 16 | Medial Epicondyle and Elbow Dislocations | 1476 a 1594 | 9ª ed. já tem resumo; atualizar |
 | 17 | Lateral Condylar and Capitellar | 1595 a 1670 | 9ª ed. já tem resumo; atualizar |
 | 18 | Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar | 1671 a 1771 | 9ª ed. já tem resumo; atualizar |
-| 19 | Shoulder Dislocation and Proximal Humerus | 1772 a 1943 | A fazer |
+| 19 | Shoulder Dislocation and Proximal Humerus | 1772 a 1943 | Feito em 27/10/2026: `rockwoodcriancas10-19-ombro-umero`, `pediatria-1211` a `1224` |
 | 20 | Clavicle and Scapula | 1944 a 2072 | A fazer |
 | 21 | Cervical Spine | 2073 a 2164 | A fazer |
 | 22 | Thoracolumbar Spine | 2165 a 2226 | A fazer |
@@ -94,3 +94,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 23 | `pediatria-0613`, `0947`, `0567`, `0620`, `0645`, `0660`, `0845`, `0694` | `0567` (TARO 2022): IIIB e IV instáveis; o capítulo chama o IIIB de estável, mas grave. `0694` (TARO 2014): o capítulo não dá a complicação mais frequente do tipo III; aponta a consolidação viciosa do anel como principal desfecho adverso em geral. |
 | 24 | `pediatria-0515`, `0530`, `0599`, `0651`, `0858`, `0920`, `0721`, `0707`, `0730`, `0581`, `0819`, `0814`, `0799`, `0537`, `0561` | `0581` (TEOT 2023): RATLIFF III como "epifisária parcial"; o capítulo diz colo (metafisária). Sem gabarito: `0721` (varo), `0730` (tipo II com parafusos), `0819` (Errado); `0814` e `0799` não sustentadas. `0561`: o nome da manobra não está no capítulo. |
 | 7 | `pediatria-0010`, `0066`, `0097`, `0468`, `0160`, `0481`, `0173`, `0362`, `0383`, `0422`, `0164`, `0478`, `0146`, `0327`, `0366`, `0526`, `0065` | `0422` (TARO 2011): antebraço não sustentado. `0065` (TARO 2015): o capítulo põe a diáfise do fêmur antes do fêmur distal. `0526` (TARO 2025): gene do calo hiperplásico fora do capítulo. |
+| 19 | `pediatria-0571`, `0524`, `0617`, `0695`, `0945`, `0667`, `0595`, `0642`, `0848`, `0714`, `0753`, `0631`, `0953`, `0618`, `0821` | `0642` (TARO 2019): varo; o capítulo diz valgo. `0617` (TARO 2017): posteromedial; o capítulo diz anterolateral. `0695` não sustentada. Sem gabarito: `0714` (III), `0753` (periósteo), `0821` (não sustentada). |
