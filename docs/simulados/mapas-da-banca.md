@@ -3706,3 +3706,68 @@ Revisão médica e publicação permanecem pendentes.
 **Aproveitamento do capítulo 1:** `pediatria-1083` a `pediatria-1093`, 11 questões, sem imagem,
 gabarito A3/B2/C3/D3. O resumo `rockwoodcriancas10-01-epidemiologia-fraturas` cobre etiologia,
 frequência, idade e sexo, fise, ambiente, queda de altura, pandemia e prevenção.
+
+## Fratura da fise distal do fêmur na criança, Rockwood and Wilkins 10ª ed., cap. 26
+
+**Recorte.** Busca por fêmur distal, fise distal do fêmur e côndilo femoral em Ortopedia pediátrica e no subtema Lesões
+fisárias (todas as provas). Oficiais diretas: TARO 2011 tipo mais comum (II, `pediatria-0654`), TARO 2019 forças no
+adolescente (varo e valgo, `0635`), TARO 2016 lesão associada (ligamentar, `0608`), TARO 2021 tipo III do côndilo medial e
+cruzado anterior (`0590`), TARO 2023 estrutura que transmite o valgo (colateral tibial, `0552`), TARO 2022 parada após III e IV
+(fêmur distal, `0570`), TARO 2022 irrigação nas fises intra-articulares (`0569`), TEOT 2021 fise que mais cresce (`0111`),
+TEOT 2023 MENELAUS (`0174`), TARO 2015 mielomeningocele (`0065`), TARO 2024 PARK-HARRIS (`0538`), TEOT 2024 RANG VI (`0559`),
+TARO 2018 anel pericondral (`0622`) e TARO 2006 sem gabarito (`0825`).
+
+**Forma.** Enunciados curtos de uma frase, sem caso clínico, quatro alternativas de palavra única ou par curto; a banca
+pergunta "o mais comum", "a lesão associada" e "o mecanismo". Nada de figura.
+
+**Lacunas com cara de prova (projeção, 10ª edição).** Ordem de frequência dos tipos (II 57%, I 15%, IV 12%, III 10%, V 3%);
+distúrbio do crescimento por tipo (I 36%, II 58%, III 49%, IV 64%); classificação por idade (2 a 11 anos pior); desvio
+anterior e artéria poplítea; sequência no pé sem perfusão (reduzir e fixar, 15 a 20 minutos, explorar); fibular por tração
+(6 a 12 semanas, ENMG aos 3 meses); pinos lisos por até 4 semanas; remanipular até 10 dias; leitura da linha de PARK-HARRIS;
+espícula medial leva a valgo; ressecção da ponte menor que 50% com 2 anos de crescimento; fratura do canto e maus-tratos.
+
+**Divergências.** Nenhuma contra gabarito oficial. TARO 2006 (`0825`) sem gabarito: o capítulo sustenta Errado. TARO 2019
+(`0641`, causa de ponte com melhor resultado) não é discutido no capítulo.
+
+**Aproveitamento:** `pediatria-1094` a `pediatria-1107`, 14 questões, gabarito A3/B4/C3/D4, mediana de 3.356 caracteres.
+
+## Fratura da fise proximal e da tuberosidade da tíbia na criança, Rockwood and Wilkins 10ª ed., cap. 27
+
+**Recorte.** Busca por tíbia proximal, tuberosidade, WATSON-JONES, OGDEN e COZEN em Ortopedia pediátrica, todas as provas.
+A banca cobra sobretudo a tuberosidade: quem tem (TARO 2024 `pediatria-0542`), mecanismo (TARO 2024 `0544`, TEPOP 2024 `0948`),
+correspondência OGDEN e SALTER-HARRIS (TARO 2025 `0529`, TARO 2015 `0602`, TARO 2012 `0661`, TEOT 2021 com figura `0847`,
+SBOT-SP `0580`), artéria da síndrome compartimental (TEOT 2024 `0560`) e complicação (TEOT 2025 `0918`). Na fise: valgo no tipo II
+(TEPOP 2024 `0946`) e hiperextensão com lesão vascular (TARO 2017 `0616`). A metafisária (COZEN) aparece muito, mas é do cap. 29.
+
+**Forma.** Enunciados curtos, quatro alternativas de número de tipo ou mecanismo curto; uma figura no TEOT 2021.
+
+**Lacunas com cara de prova (projeção).** OGDEN modificada em cinco tipos (IV fise inteira, V avulsão do tendão); ângulo de 30 graus
+e epífise; ordem de fechamento (posterior para anterior, medial para lateral); contrafortes (colateral medial na metáfise, fíbula);
+poplítea e recorrente tibial anterior lado a lado; recurvato após lesão fisária e da tuberosidade; complicações da revisão de 336
+fraturas; internação mesmo sem desvio; desvio residual acima de 2 a 3 mm; garrote prende o quadríceps; fasciotomia profilática só no
+IV ou V com cortical posterior rompida; perfil com rotação interna.
+
+**Divergência.** TEOT 2025 (`0918`): gabarito síndrome compartimental como complicação mais comum após fixação percutânea; a revisão
+sistemática do capítulo dá 0% e aponta a irritação do material (56%). Gabarito mantido, alerta no resumo e no simulado `pediatria-1116`.
+
+**Aproveitamento:** `pediatria-1108` a `pediatria-1121`, 14 questões, gabarito A4/B3/C4/D3, mediana de 3.063 caracteres.
+
+## Fratura da diáfise do fêmur na criança, Rockwood and Wilkins 10ª ed., cap. 25
+
+**Recorte.** Busca por diáfise do fêmur, gesso pelvipodálico, PAVLIK, hastes flexíveis, placa submuscular e fossa piriforme em Ortopedia
+pediátrica, todas as provas. A banca cobra sobretudo o método pela idade (TARO 2022 `pediatria-0565`, TEOT 2025 `0912`, TARO 2015 `0603`),
+o método pelo peso e pela estabilidade (TARO 2019 `0647`, CET-PR `0907`, TEPOP 2024 `0951`), a Tabela 25-2 (ENARE 2025 `0863`), a síndrome
+compartimental no gesso (TARO 2024 `0541`), o desvio pelos músculos (TARO 2017 `0619`, TEOT 2024 `0556`), o preenchimento do canal
+(TARO 2018 `0623`), a necrose com a entrada piriforme (TEOT 2023 `0709`, TEOT 2021 `0844`) e a remodelação (TARO 2021 `0591`).
+
+**Forma.** Enunciados curtos de "tratamento indicado para esta idade", com quatro alternativas de método; uma de cinco alternativas com
+números da tabela (ENARE).
+
+**Lacunas com cara de prova (projeção).** Fatores de BALDWIN e maus-tratos abaixo de 18 meses; telescopagem de THOMPSON acima de 3 cm;
+gesso de marcha (45 e 45 graus, 15 graus de rotação externa, molde em valgo, deriva de 5 graus de varo e 10 de procurvato); diâmetro da
+haste = 0,4 do canal; acima de 11 anos e 49 kg; artéria cervical ascendente lateral; haste trocantérica fina e segura após 8 anos; valgo
+distal com placa a 20 mm ou menos da fise; fixador retirado com três ou quatro corticais; hipercrescimento de 0,9 cm entre 2 e 10 anos.
+
+**Sem gabarito.** TARO 2007 `0743`, SBOT-SP `0935`, TARO 2008 `0749`, TARO 2006 `0813`: alertas no resumo.
+
+**Aproveitamento:** `pediatria-1122` a `pediatria-1136`, 15 questões, gabarito A4/B4/C4/D3, mediana de 3.513 caracteres.

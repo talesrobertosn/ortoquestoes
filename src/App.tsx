@@ -26,6 +26,7 @@ import { AvisoCookies } from './componentes/AvisoCookies'
 // termos, conta e planos. Os carregadores vêm de util/preCarga, que adianta o
 // download quando o dedo chega num link ou o aparelho fica ocioso.
 const Encontros = lazy(() => import('./eventos/Encontros'))
+const ConquistasDoDia = lazy(() => import('./eventos/ConquistasDoDia'))
 const ConviteAssinar = lazy(() => import('./convite/ConviteAssinar'))
 const CompletarPerfil = lazy(() => import('./componentes/CompletarPerfil'))
 
@@ -320,7 +321,7 @@ export function App() {
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
       <HospedeConfirmacao />
-      {encontrosProntos && <Suspense fallback={null}><Encontros /></Suspense>}
+      {encontrosProntos && <Suspense fallback={null}><Encontros /><ConquistasDoDia /></Suspense>}
       {encontrosProntos && <Suspense fallback={null}><ConviteAssinar caminho={rota.caminho} /></Suspense>}
     </div>
   )
