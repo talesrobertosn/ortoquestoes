@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pediatria-0516",
+    "questaoSha256": "6c786e62a5e8cac253a29dd7ad27d096d2894dd933f8ccf6ca76bf53fd337814",
+    "comentarioAnteriorSha256": "1d02b9aba95533a328d6382f9cda74659a0a1069a47247f9d26bff7a0e46ae2b",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-25-diafise-femur",
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a"
+      },
+      {
+        "id": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c"
+      },
+      {
+        "id": "rockwoodcriancas10-29-diafise-tibia",
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Os resumos25/27/29 foram lidos integralmente. O corpo27 descreve mecanismos e avulsão da tuberosidade no adolescente, e29 situa a metáfise entre3 e6anos, mas não fornece os resultados específicos de MUBARAK2009: médias etárias dos grupos Salter-HarrisI/II eIII/IV, idade média metafisária nem a distribuição flexo-avulsiva acima de13anos. Não substituir resultados do estudo por faixa típica geral, nem usar a nota contextual da questão ou comentário antigo como evidência. Falta a tabela ou texto primário do estudo com cada grupo, média e mecanismo para analisar A–E. Gabarito E preservado; sem selo.",
+    "estadoAnterior": "pendente"
+  },
+  {
+    "id": "pediatria-0580",
+    "questaoSha256": "9c1d847bfa062fb7b5f68a9c3db8ec2ce54a92e109557dccc5313ec80590d0c1",
+    "comentarioAnteriorSha256": "e241d923a741470dac42556d3a5c42c13ef398353f1dad93707f3848c381b953",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "O corpo27 define tiposI–IV de OGDEN e afirma queIII é o que mais se associa a lesão interna do joelho, mas não discrimina a frequência de lesão MENISCAL por tipo. A frequência global de menisco não prova a comparação específica entre os tipos; lesão interna inclui outras estruturas. A nota contextual relacionada à questão e o comentário antigo não substituem essa afirmação independente. Falta fonte que compare lesão meniscal nos tipos1,2,3,4 da versão adotada. Gabarito C preservado; sem selo.",
+    "estadoAnterior": "pendente"
+  }
+]

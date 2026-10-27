@@ -1,0 +1,98 @@
+{
+  "base": "aff70f0b9f64855084667224982a4f4fb65af1d1",
+  "lotes": {
+    "179": {
+      "revisadas": [
+        "pediatria-0556",
+        "pediatria-0565",
+        "pediatria-0591",
+        "pediatria-0603",
+        "pediatria-0619",
+        "pediatria-0545",
+        "pediatria-0579",
+        "pediatria-0601"
+      ],
+      "lacunas": [
+        "pediatria-0516",
+        "pediatria-0580"
+      ]
+    },
+    "180": {
+      "revisadas": [
+        "pediatria-0623",
+        "pediatria-0647",
+        "pediatria-0709",
+        "pediatria-0844",
+        "pediatria-0863",
+        "pediatria-0907",
+        "pediatria-0912"
+      ],
+      "lacunas": [
+        "pediatria-0951",
+        "pediatria-0743",
+        "pediatria-0749"
+      ]
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "diffCheck": "aprovado",
+    "replay": "15/15;5comentários pendentes intactos"
+  },
+  "logsSha256": {
+    "checks179180.log": "6db8fbddc702c172ff94d65f70384854f8b1c1fd1f786fcd49b688daaa46dc4e",
+    "ui179180.log": "0d1ade4e58f92c54832c708a9806747e72728ecb8e78bee034b7b8ef57b10ef6",
+    "aplicacao179180.log": "1ca9a5b7c70d362e3348ec4c10f2890b539d28c99084ebb66612735004acee6b",
+    "remotos179-prs-commits.json": "74985fe9e4ababc7ad01a33de5215f32c213e040ca04f3803189ad1dad960357"
+  },
+  "fontes": [
+    {
+      "id": "rockwoodcriancas10-25-diafise-femur",
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "leitura": "Resumo integral e blocos independentes relidos; notas contextuais e comentários antigos não usados como fonte clínica; sem alegar leitura do livro primário."
+    },
+    {
+      "id": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "leitura": "Resumo integral e blocos independentes relidos; notas contextuais e comentários antigos não usados como fonte clínica; sem alegar leitura do livro primário."
+    },
+    {
+      "id": "rockwoodcriancas10-29-diafise-tibia",
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "leitura": "Resumo integral e blocos independentes relidos; notas contextuais e comentários antigos não usados como fonte clínica; sem alegar leitura do livro primário."
+    }
+  ],
+  "visual": {
+    "casos": 15,
+    "larguras": [
+      390,
+      1440
+    ],
+    "respostasEFontesExatas": true,
+    "figuras": "Nenhuma nas20questões desses lotes; não atribuir inspeção fictícia.",
+    "capturasInspecionadas": [
+      "179180-pediatria-0565-aula-cel.png",
+      "179180-pediatria-0863-aula-pc.png",
+      "179180-pediatria-0545-aula-cel.png"
+    ]
+  },
+  "preservacao": "Só15membros de pediatria.json alterados; demais bytes preservados. Questões,opções,IDs,gabaritos oficiais,fontes e revisão médica intactos; conferido:false.",
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 595,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 393,
+      "pendente-inspecao-imagem": 64,
+      "revisada": 1473
+    }
+  },
+  "proximoLote": 181,
+  "publicacao": "Este registro prova validação local. Exigir CI/revisão do head,merge,guarda/deploy e avulsos reais no PR."
+}

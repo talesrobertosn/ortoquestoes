@@ -1,0 +1,390 @@
+{
+  "pediatria-0538": {
+    "questaoSha256": "1173b21ca2a607a9e968c339aa9733062b78df5908ec7fb0492a4b6944261554",
+    "comentarioAnteriorSha256": "f43df860d635e9364b3bfc04871d6f76be14136fe1bee3b801bebd029b531a02",
+    "comentario": {
+      "conceito": "A linha de Park-Harris registra uma alteração temporária do ritmo de crescimento. Quando o crescimento desacelera e depois retoma, a zona de calcificação provisória fica mais densa e vai permanecendo na metáfise, afastada da fise pelo novo crescimento. A linha é, portanto, a marca de uma pausa ou lentificação anterior, e não um diagnóstico automático de ponte óssea (Rockwood crianças, 10ª ed., cap. 26, Como reconhecer: PARK-HARRIS e radiografia longa).\n\n**A relação com a fise é o que muda a interpretação.** Uma linha paralela que se afasta por igual sugere retomada do crescimento. Já uma linha oblíqua, convergindo para a fise, indica crescimento assimétrico e faz pensar em ponte e deformidade angular. A ausência da linha também pode suscitar suspeita de parada; não basta procurar uma faixa densa e encerrar a avaliação.\n\nNa fise distal do fêmur, essa vigilância é especialmente importante porque ela contribui muito para o comprimento do membro. Uma fratura pode consolidar e, ainda assim, evoluir depois com parada parcial ou completa. O acompanhamento avalia comprimento e eixo, não apenas união óssea.\n\nO enunciado pergunta o que origina as linhas. A resposta deve separar **retardo temporário que deixa uma marca radiográfica** de **parada definitiva por uma ponte**, que exige outros sinais, sua relação espacial com a fise e o seguimento.",
+      "correta": "**Correta: D (distúrbio de crescimento da fise, por retardo temporário do ritmo normal).** A desaceleração seguida de retomada torna a zona de calcificação provisória densa e deixa a linha na metáfise. Sua posição e orientação no seguimento ajudam a distinguir crescimento retomado de assimetria; a existência da linha, isoladamente, não prova uma ponte.",
+      "incorretas": {
+        "A": "Uma linha oblíqua que converge para a fise pode indicar ponte, mas isso é uma interpretação específica da sua orientação. Não se pode definir toda linha de Park-Harris como barra óssea precoce: linhas paralelas que se afastam por igual podem acompanhar a retomada normal do crescimento.",
+        "B": "Uma linha paralela em afastamento uniforme pode ser um sinal favorável de retomada, mas sua formação registra uma desaceleração anterior. A presença de uma linha não demonstra ausência absoluta de distúrbio, e sua orientação pode justamente revelar crescimento assimétrico.",
+        "C": "O mecanismo descrito é desaceleração temporária com retomada, não estímulo de hipercrescimento por hiperemia. Crescer novamente e deixar a linha para trás não significa crescer além do normal. A alternativa confunde a formação da marca com outra alteração da velocidade de crescimento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: A complicação principal: o distúrbio do crescimento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "A complicação principal: o distúrbio do crescimento"
+        ],
+        "blocos": [
+          "a-complicacao-principal-o-disturbio-do-crescimen-a1527f81",
+          "a-complicacao-principal-o-disturbio-do-crescimen-a2ab9a35",
+          "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "f7c665d4a88cf986f233bd0fd55a4972d6889ca538f4c31065fa50c675b31a22"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0559": {
+    "questaoSha256": "52ca68c30ee2d4e3d9808b39628368fd6ce74258544104afbd5bf4847828fe22",
+    "comentarioAnteriorSha256": "a9753638a798ca707352e9ca6ee7108408f9abe3550289f82b9578bccfd82f10",
+    "comentario": {
+      "conceito": "O tipo VI acrescentado por Rang descreve uma **avulsão da periferia da fise com parte do anel pericondral**. É uma lesão da borda, diferente de classificar apenas por onde um traço atravessa metáfise, fise e epífise. No fêmur distal, o resumo exemplifica o varo com avulsão junto ao colateral lateral; também cita feridas abertas e lesões por cortador de grama ou queimadura (Rockwood crianças, 10ª ed., cap. 26, Os tipos de SALTER-HARRIS).\n\nPara comparar as alternativas, é preciso acompanhar os segmentos atingidos. O tipo II passa pela fise e sai pela metáfise, deixando um fragmento de Thurston Holland. O III atravessa a epífise até a articulação. O IV inclui metáfise, fise e epífise em seu trajeto. O VI, por sua vez, chama atenção para a perda periférica com o anel pericondral.\n\nO tipo V também não deve ser confundido com VI: nele há compressão da fise, muitas vezes com radiografia inicial normal e diagnóstico posterior pela parada do crescimento. Compressão sem traço evidente e avulsão periférica são mecanismos e padrões distintos.\n\nNo fêmur distal, qualquer tipo pode evoluir com distúrbio do crescimento. O número identifica o padrão da lesão e ajuda o planejamento, mas não autoriza dispensar acompanhamento dos tipos aparentemente simples nem estimar uma frequência de sequela para o VI sem dados.",
+      "correta": "**Correta: C (avulsão na inserção de um ligamento, levando uma porção do anel pericondral).** É a descrição da lesão periférica de Rang. O exemplo do fêmur distal é a avulsão ligada ao colateral lateral no trauma em varo. O elemento decisivo é a borda da fise com o anel, não um traço atravessando todos os segmentos ósseos.",
+      "incorretas": {
+        "A": "A separação parcial da epífise com extensão intra-articular corresponde ao padrão do tipo III. Nesse caso, o trajeto passa pela fise e sai pela epífise até a articulação; não define a avulsão periférica com anel pericondral do tipo VI.",
+        "B": "Envolver a placa de crescimento e parte da metáfise descreve o tipo II, cujo fragmento metafisário é o de Thurston Holland. A presença desse fragmento não equivale à retirada periférica do anel pericondral que caracteriza o VI.",
+        "D": "O trajeto da superfície articular pela epífise, fise e metáfise é o padrão do tipo IV. Ele atravessa os três segmentos e pode ameaçar o crescimento, mas a questão pede outro padrão: a avulsão da periferia fisária acrescentada por Rang."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: Os tipos de SALTER-HARRIS."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "Os tipos de SALTER-HARRIS"
+        ],
+        "blocos": [
+          "os-tipos-de-salter-harris-77cf0c10",
+          "os-tipos-de-salter-harris-554eb4be"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "6d9496fad1fe6fb2888dcfad776225ba9d9cf45035318d9e7f0d6d33af9a74c9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0590": {
+    "questaoSha256": "018c520dec9ac22ab2421923c03dd3f62f5fb62211c569041a1a69b53324dc10",
+    "comentarioAnteriorSha256": "0f19775d378dbac7fe85182803a166a36611f5fbce3f10c923a815c013b8a166",
+    "comentario": {
+      "conceito": "Na fratura Salter-Harris III do côndilo femoral medial, a lesão ligamentar mais associada é a do **ligamento cruzado anterior**. O resumo faz essa associação de maneira específica; não se deve escolher o colateral medial apenas porque o fragmento e o mecanismo estão do lado medial do joelho (Rockwood crianças, 10ª ed., cap. 26, Ligamentos: o cruzado anterior aparece depois).\n\nO tipo III passa pela fise e pela epífise até a articulação. No fêmur distal, frequentemente separa o côndilo medial após força em valgo. O ligamento que transmite a força à fise e o ligamento que mais aparece como lesão associada são perguntas diferentes. No esqueleto imaturo, o colateral pode transmitir a tração sem ser a estrutura que cede primeiro; a fise é relativamente mais fraca.\n\nO exame na chegada pode não esclarecer toda a instabilidade, porque uma fratura dolorosa e instável torna os testes pouco confiáveis. O capítulo destaca que a lesão ligamentar costuma ser reconhecida depois da consolidação, quando começa a reabilitação. Por isso, revisar a estabilidade com a fratura estável ou consolidada é parte do seguimento, especialmente no tipo III.\n\nA ressonância pode esclarecer dúvida sobre as partes moles. Se houver necessidade de reconstruir o cruzado, o capítulo orienta recuperar antes a amplitude de movimento. A associação não significa que todo tipo III tenha ruptura, mas que não se deve encerrar a avaliação depois de alinhar o osso.",
+      "correta": "**Correta: C (ligamento cruzado anterior).** É o ligamento mais frequentemente rompido na associação descrita, sobretudo no tipo III do côndilo medial. A instabilidade pode ficar evidente apenas no seguimento, quando a fratura deixa de impedir um exame ligamentar confiável.",
+      "incorretas": {
+        "A": "Lesão meniscal pode acompanhar a fratura intra-articular e merece investigação, mas o resumo a descreve como menos comum que a lesão do cruzado anterior nesse contexto. A extensão à articulação não permite escolher automaticamente o menisco medial como a associação predominante.",
+        "B": "O colateral medial participa da transmissão da força em valgo à fise. Isso não o torna a lesão mais frequentemente associada ao tipo III: na criança, o ligamento pode resistir mais que a fise, que então fratura. A pergunta é sobre a estrutura lesionada em associação, cuja resposta é o cruzado anterior.",
+        "D": "O cruzado posterior também pode ser lesado, mas é citado entre as associações menos comuns. Não se deve tratar os dois cruzados como equivalentes: a associação específica destacada para o tipo III do côndilo medial é com o anterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: As lesões que vêm junto; O mecanismo: o ligamento é mais forte que a fise; Os tipos de SALTER-HARRIS."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "As lesões que vêm junto",
+          "O mecanismo: o ligamento é mais forte que a fise",
+          "Os tipos de SALTER-HARRIS"
+        ],
+        "blocos": [
+          "as-lesoes-que-vem-junto-8d3f421c",
+          "as-lesoes-que-vem-junto-1d593702",
+          "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-927b59dc",
+          "os-tipos-de-salter-harris-77cf0c10"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "99ea86e5144ab77df8712e3e0b48f8147f39b88f2fd29e90eba82f95f126145e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0608": {
+    "questaoSha256": "173d9e2774517b97f1af3994d3e912ca7283118af4b61b73978035adabbd34fd",
+    "comentarioAnteriorSha256": "347af2000a8fe69ad289736f4859529a7b3e92204ac960f13248a843face80e4",
+    "comentario": {
+      "conceito": "A fratura distal do fêmur na criança não termina no problema ósseo. A **lesão ligamentar do joelho é a lesão musculoesquelética associada mais comum** descrita pelo capítulo, e pode permanecer escondida enquanto a fratura está dolorosa e instável (Rockwood crianças, 10ª ed., cap. 26, As lesões que vêm junto).\n\nIsso tem relação com o mecanismo. Forças em varo ou valgo, frequentemente combinadas à torção, atingem o joelho imaturo e podem lesar a fise e as estruturas de estabilidade. O cruzado anterior é o mais rompido, sobretudo no tipo III do côndilo medial, mas colaterais, cruzado posterior e meniscos também precisam ser considerados conforme o caso.\n\nO exame ligamentar costuma ganhar confiabilidade quando a fratura está estável ou consolidada. O aparecimento de instabilidade durante a reabilitação não significa necessariamente uma lesão nova: pode ser a primeira oportunidade de reconhecer o dano do trauma inicial. O resumo recomenda reavaliar os ligamentos e usar ressonância quando houver dúvida.\n\nFraturas da pelve ou coluna devem ser procuradas no trauma de alta energia, e síndrome compartimental exige vigilância por sua gravidade. **Ser grave ou precisar ser ativamente excluído não significa ser a associação mais frequente.** A pergunta pede frequência, e a resposta é ligamentar do joelho.",
+      "correta": "**Correta: D (lesão ligamentar do joelho).** É a associação musculoesquelética mais comum segundo o resumo. Como o exame agudo é limitado pela dor e pela instabilidade óssea, a avaliação deve ser retomada após estabilização ou consolidação; não se presume ausência de lesão ligamentar apenas porque ela não foi demonstrada na chegada.",
+      "incorretas": {
+        "A": "Fratura da pelve pode coexistir no trauma de alta energia e deve ser procurada nesse cenário. Entretanto, o capítulo separa essa necessidade de busca da associação mais comum, que é a lesão ligamentar do joelho. Uma investigação importante do politrauma não se transforma em resposta de frequência.",
+        "B": "Síndrome compartimental é uma complicação grave e pode aparecer horas depois, sobretudo com fratura da tíbia ou perfusão comprometida. O capítulo a descreve como rara, com 1,2% em uma série. Gravidade e urgência de vigilância não a tornam a lesão associada mais comum.",
+        "C": "A coluna pode ser lesada em traumatismos de grande energia, razão para examiná-la no contexto do politrauma. Isso não supera a frequência da associação ligamentar do próprio joelho. O enunciado não pede a lesão mais distante ou mais perigosa que não se pode esquecer."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: As lesões que vêm junto; O mecanismo: o ligamento é mais forte que a fise."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "As lesões que vêm junto",
+          "O mecanismo: o ligamento é mais forte que a fise"
+        ],
+        "blocos": [
+          "as-lesoes-que-vem-junto-8d3f421c",
+          "as-lesoes-que-vem-junto-1d593702",
+          "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-72e0078c",
+          "as-lesoes-que-vem-junto-218946ce"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "bf9038808a760126ccea59737f3bf8fb33b24fae43cada3cc301ad0fb350f868"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0635": {
+    "questaoSha256": "0b370368fb63d26b1755f78ea4ba24411229170766ebd8185ff02293bc848952",
+    "comentarioAnteriorSha256": "c0c2b1e107daa53750db80c5a6f00443666157dbae4d7310cfb7ec941c5c307b",
+    "comentario": {
+      "conceito": "No adolescente, as forças que mais frequentemente produzem lesão da fise distal do fêmur são **varo e valgo**, muitas vezes acompanhadas de torção. O joelho sofre uma abertura de um lado e compressão do outro, e os ligamentos presos à epífise transmitem essa carga à fise (Rockwood crianças, 10ª ed., cap. 26, O mecanismo: o ligamento é mais forte que a fise).\n\nA diferença para o adulto está no elo que cede. Com a fise aberta, o ligamento resiste mais à tração que a própria fise. Num trauma em valgo, a tração medial pode separar a região fisária, enquanto o lado lateral é comprimido. Com a fise fechada, a mesma força pode romper o colateral. Por isso, dor fisária após valgo não deve ser interpretada automaticamente como simples entorse ligamentar.\n\nFlexão e extensão também podem causar lesões. A hiperextensão, por exemplo, leva o desvio ao plano sagital e tem relevância vascular, pois pode empurrar a metáfise contra a poplítea. Essa importância não a transforma no mecanismo mais frequente solicitado.\n\nA classificação ajuda a não confundir os conceitos: o tipo V é a lesão por compressão da fise, mas é pouco frequente. A pergunta é sobre as forças predominantes no adolescente, não sobre qualquer mecanismo possível nem o padrão de maior risco imediato.",
+      "correta": "**Correta: C (varo e valgo).** São os estresses mais comuns no adolescente, frequentemente com torção sobre o pé fixo. Os ligamentos inseridos na epífise transmitem a carga, e a fise relativamente mais fraca pode ceder antes deles. Essa é a relação mecânica que sustenta a resposta.",
+      "incorretas": {
+        "A": "Tração participa do mecanismo local: no valgo, por exemplo, o colateral transmite tração ao lado medial da fise. Entretanto, responder apenas tração perde a configuração predominante da carga no joelho, que é o estresse em varo ou valgo, com tração de um lado e compressão do outro.",
+        "B": "Compressão pode produzir lesão fisária, como o tipo V, mas esse padrão é pouco frequente. Também existe compressão no lado oposto à abertura durante varo ou valgo. Isso não torna compressão isolada a descrição mais adequada das forças predominantes perguntadas.",
+        "D": "Hiperflexão e hiperextensão podem deslocar a epífise no plano sagital; a hiperextensão é especialmente importante pelo risco à artéria poplítea. São mecanismos reais, mas o capítulo aponta varo e valgo como os mais comuns no adolescente. Risco vascular e frequência não são a mesma pergunta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: O mecanismo: o ligamento é mais forte que a fise; Os tipos de SALTER-HARRIS; As lesões que vêm junto."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "O mecanismo: o ligamento é mais forte que a fise",
+          "Os tipos de SALTER-HARRIS",
+          "As lesões que vêm junto"
+        ],
+        "blocos": [
+          "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-72e0078c",
+          "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-927b59dc",
+          "os-tipos-de-salter-harris-77cf0c10",
+          "as-lesoes-que-vem-junto-d3373187"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "ce0ed536d567ac23bbc95f7beb24540ec2d3e3c4187764ce71875983325eaa81"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0654": {
+    "questaoSha256": "393d7e749517e62b5fdc0dc584c241aed6cb060110056ade2234a1a53bef5516",
+    "comentarioAnteriorSha256": "cafb4d8ededa802f99c1a083e55ad4cc7c0411b4a67e9b0ac859b7c250c3555c",
+    "comentario": {
+      "conceito": "O **tipo II de Salter-Harris** é o mais frequente no descolamento epifisário distal do fêmur, em cerca de **57%** dos casos no resumo. Seu traço percorre a fise e sai obliquamente pela metáfise, formando o fragmento de Thurston Holland (Rockwood crianças, 10ª ed., cap. 26, Os tipos de SALTER-HARRIS).\n\nEssa anatomia o diferencia dos outros padrões. O tipo I fica na fise; o III sai pela epífise até a articulação; o IV envolve metáfise, fise e epífise. Reconhecer os segmentos atingidos ajuda a planejar redução e fixação, mas a questão pede qual deles ocorre mais, não qual parece mais complexo.\n\nNo fêmur distal, frequência e prognóstico precisam permanecer separados. Ser tipo II não garante evolução benigna: a fise é ondulada, o trauma pode atingir a camada germinativa e o distúrbio do crescimento ocorre também nos tipos I e II. Na metanálise citada, o tipo II apresentou distúrbio do crescimento em cerca de 58%; esse número tem outro denominador e não é sua frequência entre as fraturas.\n\nAssim, **57% é a participação do tipo II entre os padrões descritos; 58% é o risco de distúrbio do crescimento no grupo tipo II da análise citada**. Os valores próximos não devem ser trocados nem usados como promessa de prognóstico individual.",
+      "correta": "**Correta: B (II).** Com cerca de 57%, é o padrão mais frequente. O fragmento metafisário de Thurston Holland identifica sua saída da fise para a metáfise. A resposta de frequência não dispensa seguimento do crescimento, porque o tipo II do fêmur distal pode deixar sequelas importantes.",
+      "incorretas": {
+        "A": "O tipo I permanece na fise e pode passar despercebido quando não há desvio. Sua frequência no resumo é de cerca de 15%, abaixo da do tipo II. Ser uma separação aparentemente mais simples não o torna o padrão mais frequente nem garante ausência de parada do crescimento.",
+        "C": "O tipo III envolve a fise e a epífise até a articulação, muitas vezes separando o côndilo medial. É importante pela redução articular e por lesões associadas, mas responde por cerca de 10%, não pela maioria dos casos. Complexidade da lesão não equivale a frequência.",
+        "D": "O tipo IV atravessa metáfise, fise e epífise. Representa cerca de 12%, ligeiramente mais que o III, porém muito menos que o II. Seu risco de crescimento e seu trajeto intra-articular não alteram essa comparação de ocorrência."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: Os tipos de SALTER-HARRIS; A complicação principal: o distúrbio do crescimento; Por que essa fise é diferente."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "Os tipos de SALTER-HARRIS",
+          "A complicação principal: o distúrbio do crescimento",
+          "Por que essa fise é diferente"
+        ],
+        "blocos": [
+          "os-tipos-de-salter-harris-77cf0c10",
+          "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+          "por-que-essa-fise-e-diferente-0111aad0"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "684fdc46a92c0fd7c1a6c7f9329cf21f618a9796dd98fc17910149e377afbe4d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0825": {
+    "questaoSha256": "3a8b884fb2d09880f9830eb21f2f02aeb922613cb8664b3e6b0af0060bbba2bd",
+    "comentarioAnteriorSha256": "34fd30bfe886088be847e0401da15c858bfdc99be0d438964c27701f2b80cab8",
+    "comentario": {
+      "conceito": "A afirmação parece aplicar ao fêmur distal uma ideia geral de que o tipo II de Salter-Harris seria pouco preocupante para o crescimento. **Nesse local, isso é falso.** O resumo cita cerca de 58% de distúrbio do crescimento nas fraturas tipo II da metanálise, muito distante de uma sequela que ocorresse raramente (Rockwood crianças, 10ª ed., cap. 26, A complicação principal: o distúrbio do crescimento).\n\nO traço tipo II percorre a fise e sai pela metáfise, mas a geometria ondulada da fise distal do fêmur pode fazer a lesão atingir regiões germinativas. As cristas também podem sofrer dano durante a redução. Por isso, restaurar a anatomia com pouco trauma é necessário, mas não elimina o risco de parada.\n\nA consequência depende do que deixa de crescer. Uma parada parcial pode gerar angulação; uma parada completa, encurtamento; as duas alterações podem coexistir. Como essa fise responde por grande parte do crescimento do fêmur, o acompanhamento precisa ir além da radiografia de consolidação.\n\nO número da metanálise não prevê o destino exato de uma criança, pois idade, desvio e crescimento restante também importam. Ele é suficiente, contudo, para rejeitar a palavra **raramente**. A questão está sem gabarito oficial no acervo: a resposta provável pela fonte é Errado, sem transformá-la em letra oficial da banca.",
+      "correta": "**Resposta provável: B (Errado).** O capítulo descreve distúrbio do crescimento em cerca de 58% dos tipos II da análise citada e alerta que todos os tipos podem evoluir com parada no fêmur distal. Portanto, não há suporte para dizer que sequelas fisárias definitivas sejam raras. Como não há gabarito oficial registrado, esta é uma conclusão bibliográfica, não uma atribuição à banca.",
+      "incorretas": {
+        "A": "Marcar Certo confundiria o trajeto tipo II com prognóstico benigno garantido. A fise distal do fêmur é um local de alto risco, e uma fratura que consolidou pode revelar depois parada parcial ou completa, com deformidade e discrepância. A frequência relatada de distúrbio do crescimento contradiz diretamente o termo raramente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: A complicação principal: o distúrbio do crescimento; Por que essa fise é diferente."
+      ],
+      "conferido": false,
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "A complicação principal: o distúrbio do crescimento",
+          "Por que essa fise é diferente"
+        ],
+        "blocos": [
+          "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+          "por-que-essa-fise-e-diferente-0111aad0",
+          "por-que-essa-fise-e-diferente-f2f28d85"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "881cdd8bde6011ea7f74595c11be468b03e82719b265b65bfb0e076a3f242c4e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1095": {
+    "questaoSha256": "18002a23a17e5cc4002440e2ba29d69b7389a86cab821d630480692d47b6413e",
+    "comentarioAnteriorSha256": "c8fe61c9f24d3e6c37bae5306818f41bc1702536e494c0236f6acedd3c462135",
+    "comentario": {
+      "conceito": "Pense numa menina de 9 anos atropelada de bicicleta, com uma fratura SALTER-HARRIS II do fêmur distal bem reduzida e fixada. Em muitas outras fises, um tipo II bem reduzido costuma deixar a família tranquila quanto ao crescimento. No fêmur distal, essa tranquilidade é um erro, e entender por que é o centro do capítulo.\n\n**O formato da fise muda tudo.** Ao nascer, a fise distal do fêmur é plana. Por volta dos 2 a 3 anos, ela ganha uma crista central e sulcos que a dividem em quatro quadrantes, encaixados nas saliências da metáfise como um carimbo no papel (Rockwood crianças, 10ª ed., cap. 26, seção Physeal Anatomy). Essa ondulação dá estabilidade contra cisalhamento e torção, mas cobra um preço: quando a fratura acontece, o traço não corre limpo pela zona hipertrófica. Ele sobe e desce entre as ondas, invade a camada germinativa e, na redução, as cristas da epífise ainda raspam nas projeções da metáfise. É por isso que mesmo os tipos I e II lesam as células que fazem o osso crescer.\n\n**Os números.** Numa metanálise de 564 fraturas citada no capítulo, **52%** evoluíram com distúrbio do crescimento. Por tipo: cerca de **36%** no tipo I, **58%** no tipo II, **49%** no tipo III e **64%** no tipo IV. As fraturas desviadas têm quatro vezes mais chance de parada do crescimento que as sem desvio (cap. 26, seção Growth Disturbance). A classificação de SALTER-HARRIS continua útil para descrever e planejar, mas aqui ela não prevê o risco do jeito que prevê em outras fises.\n\n| Tipo (cap. 26) | Distúrbio do crescimento |\n|---|---|\n| I | cerca de 36% |\n| II | cerca de 58% |\n| III | cerca de 49% |\n| IV | cerca de 64% |\n\n**O que isso muda.** Todo paciente com fratura da fise distal do fêmur precisa de seguimento até o fim do crescimento, com radiografias de membros inferiores inteiros. O autor revê aos 3, 6, 12 e às vezes 24 meses, e o capítulo recomenda controle a cada 6 meses após a consolidação até a maturidade.\n\n**Por que esta questão foi criada.** O TARO 2006 cobrou que o tipo II do fêmur distal \"raramente causa sequelas\" (`pediatria-0825`, sem gabarito oficial no acervo); pelo capítulo, a afirmação é falsa. O TARO 2022 também cobrou a parada após os tipos III e IV no fêmur distal (`pediatria-0570`). Esta questão junta as duas ideias com os números da 10ª edição.\n\n> **Na prova:** no fêmur distal, SALTER-HARRIS I e II **não** são benignos: cerca de metade evolui com distúrbio do crescimento; seguimento até a maturidade.",
+      "correta": "**C: O risco é alto, com distúrbio do crescimento em cerca de um terço a mais da metade dos casos.** O capítulo dá cerca de 36% no tipo I e 58% no tipo II, explicados pela fise ondulada: o traço invade a camada germinativa em vez de correr pela zona hipertrófica (Rockwood crianças, 10ª ed., cap. 26). Por isso o seguimento vai até a maturidade, qualquer que seja o tipo.",
+      "incorretas": {
+        "A": "**Vale para outras fises, não para esta.** Em muitos outros locais, os tipos I e II têm risco menor de parada do crescimento que os III e IV, e o próprio capítulo lembra essa regra geral. O capítulo do fêmur distal insiste justamente no contrário: aqui, o risco existe em todos os tipos, e dispensar o seguimento deixaria passar a deformidade angular ou a discrepância que só aparece meses depois.",
+        "B": "**O fragmento não é o vilão.** O fragmento de THURSTON HOLLAND define o tipo II, mas não é ele que causa a parada. Pelo contrário: quando o crescimento fica assimétrico, a parte da fise protegida pelo fragmento costuma ser poupada, e a lesão está na parte que se separou dele. E o tipo I, que não tem fragmento, também tem cerca de 36% de distúrbio do crescimento.",
+        "D": "**É o oposto.** Abaixo dos 2 anos, a fise ainda é plana, a fratura acontece com menos força e menos dano à camada germinativa, e o distúrbio do crescimento é incomum. O risco maior está na criança mais velha, com mais de 2 anos de crescimento pela frente; cada ano de crescimento restante aumenta a chance de novas cirurgias por deformidade ou discrepância."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: Por que essa fise é diferente; A complicação principal: o distúrbio do crescimento; Prognóstico: idade e desvio; Os tipos de SALTER-HARRIS."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "Por que essa fise é diferente",
+          "A complicação principal: o distúrbio do crescimento",
+          "Prognóstico: idade e desvio",
+          "Os tipos de SALTER-HARRIS"
+        ],
+        "blocos": [
+          "por-que-essa-fise-e-diferente-17a3ebe4",
+          "por-que-essa-fise-e-diferente-0111aad0",
+          "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+          "prognostico-idade-e-desvio-77005618",
+          "a-complicacao-principal-o-disturbio-do-crescimen-81edb92d",
+          "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252",
+          "os-tipos-de-salter-harris-554eb4be"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "8b2723effc9a0ee6b76b591674efdd2367791233f79da22a81b4c0e1dba4f771"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1094": {
+    "questaoSha256": "3094d4d55d338a4d9234ebfff3189ae7f7402ca73638da82d8c03b333d6705a1",
+    "comentarioAnteriorSha256": "956144046eb2556443571149cb679d4654e1870cb3cf06154788f2fa3331a155",
+    "comentario": {
+      "conceito": "**Como cada tipo se forma.** No tipo I, o traço atravessa só a fise, sem sair para a metáfise nem para a articulação. No tipo II, o traço percorre parte da fise e sai obliquamente pela metáfise; o canto metafisário que fica preso à epífise é o fragmento de THURSTON HOLLAND, e ele costuma estar do lado da compressão, que também é o lado para onde a epífise desvia. No tipo III, o traço corta parte da fise e desce pela epífise até a articulação, quase sempre separando o côndilo medial. No tipo IV, o traço atravessa metáfise, fise e epífise. O capítulo do Rockwood dá as proporções: tipo II em cerca de **57%**, tipo I em cerca de **15%**, tipo IV em cerca de **12%**, tipo III em cerca de **10%** e tipo V em cerca de **3%** (Rockwood crianças, 10ª ed., cap. 26, seção Classification).\n\n| Tipo (cap. 26) | Frequência aproximada |\n|---|---|\n| II | 57% |\n| I | 15% |\n| IV | 12% |\n| III | 10% |\n| V | 3% |\n\nUm detalhe que pega: o tipo IV é um pouco mais frequente que o III nessa fise, ao contrário da intuição de que o III seria o intra-articular \"clássico\".\n\n**Por que esta questão foi criada.** É gêmea da questão oficial do TARO 2011 sobre o tipo de SALTER-HARRIS mais frequente no descolamento distal do fêmur (`pediatria-0654`), com um passo a mais: a ordem entre os tipos, que a 10ª edição traz em números. Depois desta, vale fazer a oficial.\n\n> **Na prova:** fise distal do fêmur = SALTER-HARRIS **II** primeiro (cerca de 57%), depois o **I** (cerca de 15%); IV vem antes do III.",
+      "correta": "**Correta: B (II e I).** O tipo II corresponde a cerca de 57% das fraturas descritas, e o I a cerca de 15%. O fragmento metafisário de Thurston Holland distingue o II do traço restrito à fise do I. A ordem da frequência não é uma escala de gravidade ou uma garantia de crescimento normal.",
+      "incorretas": {
+        "A": "Os tipos são os dois mais frequentes, mas a ordem está invertida. O II, com cerca de 57%, vem antes do I, com cerca de 15%. O tipo I pode ocorrer no lactente e no adolescente do esporte, inclusive sem desvio; isso não o torna o mais frequente no conjunto descrito.",
+        "C": "O tipo II está corretamente em primeiro. O IV, porém, tem cerca de 12%, abaixo dos 15% do I, que ocupa o segundo lugar. Atravessar metáfise, fise e epífise torna o IV anatomicamente importante, sem colocá-lo acima do I em frequência.",
+        "D": "IV e III são os padrões intra-articulares, com cerca de 12% e10%. O IV realmente vem antes do III nessa comparação, mas nenhum deles ocupa os dois primeiros lugares. A relevância da redução articular e do acompanhamento não altera a ordem II, I, IV, III apresentada na fonte."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: Os tipos de SALTER-HARRIS."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "Os tipos de SALTER-HARRIS"
+        ],
+        "blocos": [
+          "os-tipos-de-salter-harris-77cf0c10",
+          "os-tipos-de-salter-harris-554eb4be"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "6d9496fad1fe6fb2888dcfad776225ba9d9cf45035318d9e7f0d6d33af9a74c9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1097": {
+    "questaoSha256": "e148c76599e6caa8ac539f33691669215318e351cf8bb66ee95b967b4ed968dc",
+    "comentarioAnteriorSha256": "32a45d8fdece970f73eb850a243b7e7fa766d6ea517f735c2999e26d37f787ea",
+    "comentario": {
+      "conceito": "Como exemplo didático, imagine uma adolescente com fratura do côndilo medial já consolidada que percebe falseio na reabilitação. A união do osso não exclui lesão ligamentar associada.\n\n**Por que o ligamento passa despercebido.** A lesão ligamentar acontece no mesmo trauma da fratura. Mas, com a fratura instável e dolorosa, o exame dos ligamentos é impossível ou pouco confiável, e forçar o joelho é perigoso para a fise. A instabilidade só aparece quando a fratura já consolidou, o gesso saiu e a criança começa a reabilitar e a voltar às atividades (Rockwood crianças, 10ª ed., cap. 26, seção Ligamentous Injuries).\n\n**Qual ligamento.** A lesão do ligamento do joelho é a lesão musculoesquelética associada mais comum dessa fratura, com instabilidade em cerca de 8% a 37% (ou até 40%) dos pacientes. O cruzado anterior é o mais rompido, sobretudo depois do tipo III do côndilo femoral medial. Colaterais, cruzado posterior e meniscos também podem ser lesados, mas com menos frequência (cap. 26, seções Injuries Associated e Ligamentous Injuries). O tipo III do côndilo medial merece atenção especial na avaliação das partes moles.\n\n**O que fazer.** Suspeitar, examinar os ligamentos quando a fratura estiver estável ou consolidada e pedir ressonância quando houver dúvida, especialmente no tipo III. A reconstrução do cruzado fica para depois de recuperada a amplitude de movimento; o reparo de menisco periférico pode ser feito na própria cirurgia da fratura.\n\n**Por que esta questão foi criada.** O TARO 2016 perguntou a lesão associada mais comum da fratura distal do fêmur na criança (`pediatria-0608`, lesão ligamentar do joelho) e o TARO 2021 perguntou o ligamento ligado ao tipo III do côndilo medial (`pediatria-0590`, cruzado anterior). Esta questão acrescenta o \"quando\": a instabilidade é percebida tarde.\n\n> **Na prova:** fratura da fise distal do fêmur + instabilidade = **cruzado anterior**, sobretudo no SALTER-HARRIS III do côndilo medial; aparece **depois da consolidação**.",
+      "correta": "**D: cruzado anterior; após a consolidação, na reabilitação.** O cruzado anterior é o ligamento mais rompido, especialmente no tipo III do côndilo femoral medial, e a instabilidade costuma ser diagnosticada só depois que a fratura consolida e a reabilitação começa (Rockwood crianças, 10ª ed., cap. 26). Por isso o capítulo pede para checar os ligamentos quando a fratura estiver estável e considerar a ressonância.",
+      "incorretas": {
+        "A": "**Ligamento possível, momento errado.** O colateral medial pode ser lesado, mas não é o mais comum, e no pronto-socorro o exame ligamentar é pouco confiável com a fratura instável e dolorosa. O capítulo ainda lembra que, no esqueleto imaturo, a dor sobre a fise depois de valgo sugere mais fratura fisária do que lesão do colateral.",
+        "B": "**A radiografia em estresse saiu da rotina.** O cruzado posterior é lesado com menos frequência que o anterior. E as radiografias em estresse eram usadas no passado para separar fratura fisária oculta de lesão ligamentar; hoje o autor evita, porque doem e podem lesar ainda mais a fise. A ressonância ocupou esse lugar.",
+        "C": "O colateral lateral pode ser lesado, mas não é o ligamento mais rompido segundo o resumo. A primeira troca de gesso tampouco é um marco obrigatório de reconhecimento: o momento depende de a fratura estar estável e permitir exame confiável. O padrão cobrado é o cruzado anterior reconhecido após a consolidação, durante a reabilitação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: As lesões que vêm junto; O mecanismo: o ligamento é mais forte que a fise; Diagnóstico e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "As lesões que vêm junto",
+          "O mecanismo: o ligamento é mais forte que a fise",
+          "Diagnóstico e imagem"
+        ],
+        "blocos": [
+          "as-lesoes-que-vem-junto-8d3f421c",
+          "as-lesoes-que-vem-junto-1d593702",
+          "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-927b59dc",
+          "diagnostico-e-imagem-7930c1e9"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "49cdad9a4edb7428669d6908f5953b47942a42b56edb9b1f932877caf8f086cf"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
