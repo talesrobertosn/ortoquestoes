@@ -47,6 +47,6 @@ Fluxo aprovado pelo Tales em 27/10/2026, para repetir sempre que entrarem **ques
 
 ## Estado em 27/10/2026
 
-1.654 revisadas de 2.623 no catálogo. Faltam 882: 740 sem resumo que cubra o assunto (cada uma com a frase do que falta), 140 de SIMÃO/SBCM, 2 sem figura (87 duplicadas não contam). Aguardando decisão do Tales: `coluna-0088` e `trauma-0322` (anuladas com gabarito nos dados; texto pronto) e a figura trocada de `pe-tornozelo-0295`.
+1.668 revisadas de 2.623 no catálogo (inclui os lotes do Codex). Faltam 868: 766 sem resumo que cubra o assunto ou com ambiguidade registrada (cada uma com a frase do que falta), 100 de SIMÃO/SBCM, 2 sem figura (87 duplicadas não contam). Aguardando decisão do Tales: `coluna-0088` e `trauma-0322` (anuladas com gabarito nos dados; texto pronto) e a figura trocada de `pe-tornozelo-0295`.
 
 O texto das duas anuladas está em [rascunhos/anuladas-com-gabarito.json](rascunhos/anuladas-com-gabarito.json), no formato de rascunho: tirado o `gabarito` das questões, é só `montar.py` e `aplicar.py` (passo 7).
