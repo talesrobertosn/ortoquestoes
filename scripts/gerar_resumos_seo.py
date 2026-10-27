@@ -259,12 +259,37 @@ def criar_conta(capitulo_id: str | None, raiz: str) -> str:
     return f"{raiz}#/conta?modo=criar&amp;voltar={voltar}"
 
 
+def livro_curto(capitulo: dict) -> str:
+    """Nome do livro como o residente procura no Google (Tales, 27/10/2026: "resumo ortopedia rockwood")."""
+    livro = capitulo.get("livro", "")
+    if "Rockwood" in livro and "Children" in livro:
+        return "Rockwood infantil"
+    if "Rockwood" in livro:
+        return "Rockwood adulto"
+    return livro
+
+
+def numero_capitulo(capitulo: dict) -> str:
+    m = re.search(r"\d+", capitulo.get("capitulo", ""))
+    return m.group(0) if m else ""
+
+
 def titulo_pagina(capitulo: dict) -> str:
-    return f"{capitulo['titulo']}: resumo | Orto Questões"
+    n = numero_capitulo(capitulo)
+    return f"{capitulo['titulo']}: resumo do {livro_curto(capitulo)}{f', cap. {n}' if n else ''} | Orto Questões"
 
 
 def descricao_pagina(capitulo: dict) -> str:
-    return resumir(f"Resumo grátis do capítulo: {puro(capitulo['resumo'])}", 155)
+    edicao = re.sub(r"\s*\(.*\)", "", capitulo.get("edicao", ""))
+    return resumir(f"Resumo de ortopedia grátis, {livro_curto(capitulo)} ({edicao}), para residência, TEOT e TARO: "
+                   f"{puro(capitulo['resumo'])}", 155)
+
+
+def palavras_chave(capitulo: dict, nome_area: str) -> list[str]:
+    curto = livro_curto(capitulo)
+    return [capitulo["titulo"], f"resumo {curto}", f"resumo {capitulo.get('livro', '')}", "resumo de ortopedia",
+            f"resumo de {nome_area.lower()}", "residência em ortopedia", "estudo para residência médica em ortopedia",
+            "TEOT", "TARO", "R4 ortopedia", "questões de ortopedia comentadas"]
 
 
 def dados_estruturados(capitulo: dict, data: str, nome_area: str) -> str:
@@ -293,6 +318,7 @@ def dados_estruturados(capitulo: dict, data: str, nome_area: str) -> str:
         "isAccessibleForFree": True,
         "timeRequired": f"PT{int(capitulo.get('minutos') or 0)}M",
         "about": [nome_area, capitulo["titulo"]],
+        "keywords": ", ".join(palavras_chave(capitulo, nome_area)),
         "isBasedOn": fonte,
         "isPartOf": {"@type": "WebSite", "@id": f"{SITE}#website", "name": "Orto Questões", "url": SITE},
     }
@@ -318,6 +344,12 @@ def pagina_resumo(capitulo: dict, data: str, nomes_area: dict[str, str], acervo:
         "<p>Este é um <strong>resumo autoral</strong> do Orto Questões, escrito em português a partir do capítulo, na ordem em que as provas "
         "costumam cobrar o tema. Não é o livro original, nem tradução ou reprodução dele; as figuras do original não são reproduzidas. "
         "Os números e condutas citados são os do capítulo: para a íntegra, consulte o livro.</p></div>"
+    )
+    n = numero_capitulo(capitulo)
+    corpo.append(
+        f"<p><strong>Para quem é.</strong> Para quem estuda para a residência em ortopedia, para o TEOT, o TARO e o R4: um resumo de "
+        f"{esc(area.lower())} do {esc(livro_curto(capitulo))}{f', capítulo {n}' if n else ''}, com o que as bancas mais cobram e as "
+        "questões comentadas de cada assunto.</p>"
     )
     corpo.append(
         f'<a class="acao" href="{link_app(cid, raiz)}">Ler no leitor do Orto Questões</a>'
@@ -373,9 +405,9 @@ def pagina_resumo(capitulo: dict, data: str, nomes_area: dict[str, str], acervo:
 
 def pagina_indice(capitulos: list[dict], data: str, nomes_area: dict[str, str], ordem_areas: list[str]) -> str:
     raiz = "../"
-    titulo = "Resumos de capítulos de ortopedia, grátis | Orto Questões"
-    descricao = ("Resumos autorais de capítulos da bibliografia de ortopedia, abertos e grátis, com as questões de prova "
-                 "que cobraram cada conceito.")
+    titulo = "Resumos de ortopedia grátis: Rockwood adulto e infantil | Orto Questões"
+    descricao = ("Resumos de ortopedia grátis, capítulo a capítulo do Rockwood adulto e infantil, para residência, TEOT e TARO, "
+                 "com as questões de prova que cobraram cada conceito.")
     colecao = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
