@@ -5,30 +5,30 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 304 |
+| pendente | 235 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 549 |
+| pendente-fonte | 603 |
 | pendente-inspecao-imagem | 64 |
-| revisada | 1608 |
+| revisada | 1623 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
 | Resumo | Revisadas | A revalidar | Pendentes ou preservadas |
 | --- | ---: | ---: | ---: |
 | Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 52 | 0 | 18 |
-| Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 37 | 0 | 31 |
+| Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 38 | 0 | 30 |
 | Fratura da escápula (`rockwood10-33-fratura-escapula`) | 107 | 0 | 29 |
 | Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 64 | 0 | 9 |
 | Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 66 | 0 | 28 |
-| Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 38 | 0 | 14 |
+| Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 39 | 0 | 13 |
 | Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 101 | 0 | 84 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 71 | 0 | 33 |
-| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 90 | 0 | 145 |
-| Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 109 | 0 | 138 |
+| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 92 | 0 | 143 |
+| Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 119 | 0 | 128 |
 | Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 102 | 0 | 30 |
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 86 | 0 | 42 |
-| Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 61 | 0 | 12 |
+| Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 62 | 0 | 11 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 60 | 0 | 16 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 51 | 0 | 12 |
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 34 | 0 | 11 |
@@ -52,7 +52,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança (`rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial`) | 66 | 0 | 39 |
 | Fraturas do côndilo lateral e do capítulo na criança (`rockwoodcriancas9-16-condilo-lateral`) | 58 | 0 | 29 |
 | Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo (`rockwoodcriancas9-17-fise-distal-umero`) | 31 | 0 | 9 |
-| Fraturas do rádio e da ulna distais na criança (`wilkins9-08-radio-ulna-distal-crianca`) | 54 | 0 | 28 |
+| Fraturas do rádio e da ulna distais na criança (`wilkins9-08-radio-ulna-distal-crianca`) | 55 | 0 | 27 |
 | Fraturas da diáfise do rádio e da ulna na criança (`wilkins9-09-diafise-antebraco-crianca`) | 51 | 0 | 26 |
 
 Detalhes e pendências por ID: [catalogo.json](catalogo.json). Protocolo: [README.md](README.md).
