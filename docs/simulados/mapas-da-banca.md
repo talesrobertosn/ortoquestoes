@@ -3846,3 +3846,21 @@ fechamento fisário e os 13% do crescimento.
 à fise, e a parcial como tipo II.
 
 **Aproveitamento:** `pediatria-1182` a `pediatria-1195`, 14 questões, gabarito A4/B4/C3/D3, mediana de 2.868 caracteres.
+
+## Fraturas patológicas e maus-tratos na criança, Rockwood and Wilkins 10ª ed., cap. 7
+
+**Recorte.** Busca por maus-tratos, abuso, KLEINMAN, cisto ósseo, displasia fibrosa, osteogênese imperfeita, escorbuto e fraturas nas doenças
+neuromusculares, todas as provas. A banca cobra sobretudo KLEINMAN (SBOT-SP `pediatria-0097`, TEOT 2022 `0468`, TARO 2009 `0160` e `0481`,
+TEOT 2023 `0173`, TEPOP 2024 `0362`, TARO 2025 `0383`), a fratura do canto (TARO 2015 `0066` e as de imagem `0164`, `0478`, `0146`, TEOT 2025 `0327`),
+o tipo mais frequente (TARO 2020 `0010`) e a fratura mais comum (TARO 2011 `0422`).
+
+**Forma.** Enunciados curtos de especificidade, várias questões de imagem.
+
+**Lacunas com cara de prova (projeção).** Cisto ósseo simples, aneurismático, fibroma não ossificante, displasia fibrosa, osteogênese imperfeita
+(olécrano), mielomeningocele (fratura fisária imita infecção), DUCHENNE, escorbuto; inventário esquelético, equimoses, queimaduras, adulto sem
+parentesco, fêmur e marcha, internar e notificar.
+
+**Divergências.** TARO 2011 (`0422`): antebraço como fratura mais comum abaixo de 2 anos; o capítulo dá úmero, fêmur e tíbia ou costelas.
+TARO 2015 (`0065`): fêmur distal; o capítulo põe a diáfise do fêmur primeiro.
+
+**Aproveitamento:** `pediatria-1196` a `pediatria-1210`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.731 caracteres.

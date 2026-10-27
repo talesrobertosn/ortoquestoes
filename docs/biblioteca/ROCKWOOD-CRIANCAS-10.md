@@ -35,7 +35,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 4 | Cast and Splint Immobilization | 146 a 204 | Codex |
 | 5 | Management of the Severely Injured Child | 205 a 262 | Codex |
 | 6 | Compartment Syndrome in Children | 263 a 305 | A fazer |
-| 7 | Pathologic Fractures and Nonaccidental Injuries | 306 a 444 | A fazer |
+| 7 | Pathologic Fractures and Nonaccidental Injuries | 306 a 444 | Feito em 27/10/2026: `rockwoodcriancas10-07-patologicas-maus-tratos`, `pediatria-1196` a `1210` |
 | 8 | Hand and Carpal Bones | 445 a 633 | A fazer |
 | 9 | Distal Radius and Ulna | 634 a 789 | 9ª ed. já tem resumo (`wilkins9-08`); atualizar com a 10ª |
 | 10 | Diaphyseal Radius and Ulna | 790 a 935 | 9ª ed. já tem resumo (`wilkins9-09`); atualizar |
@@ -93,3 +93,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 30 | `pediatria-0910`, `0650`, `0557`, `0955`, `0923`, `0543`, `0546`, `0568`, `0842`, `0686`, `0905`, `0615`, `0588`, `0662`, `0867`, `0517`, `0637`, `0820`, `0928`, `1081`, `0531`, `0570` | `0531` (TARO 2025): valgo como complicação mais comum; o capítulo dá varo para a ponte medial e valgo para a parada da fíbula. `0615` (SBOT-SP): TILLAUX "III ou IV", o capítulo diz III. Sem gabarito: `0820` (Certo), `0928` (III e II), `0923` (figura). |
 | 23 | `pediatria-0613`, `0947`, `0567`, `0620`, `0645`, `0660`, `0845`, `0694` | `0567` (TARO 2022): IIIB e IV instáveis; o capítulo chama o IIIB de estável, mas grave. `0694` (TARO 2014): o capítulo não dá a complicação mais frequente do tipo III; aponta a consolidação viciosa do anel como principal desfecho adverso em geral. |
 | 24 | `pediatria-0515`, `0530`, `0599`, `0651`, `0858`, `0920`, `0721`, `0707`, `0730`, `0581`, `0819`, `0814`, `0799`, `0537`, `0561` | `0581` (TEOT 2023): RATLIFF III como "epifisária parcial"; o capítulo diz colo (metafisária). Sem gabarito: `0721` (varo), `0730` (tipo II com parafusos), `0819` (Errado); `0814` e `0799` não sustentadas. `0561`: o nome da manobra não está no capítulo. |
+| 7 | `pediatria-0010`, `0066`, `0097`, `0468`, `0160`, `0481`, `0173`, `0362`, `0383`, `0422`, `0164`, `0478`, `0146`, `0327`, `0366`, `0526`, `0065` | `0422` (TARO 2011): antebraço não sustentado. `0065` (TARO 2015): o capítulo põe a diáfise do fêmur antes do fêmur distal. `0526` (TARO 2025): gene do calo hiperplásico fora do capítulo. |
