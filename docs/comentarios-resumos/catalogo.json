@@ -6,9 +6,9 @@
   "pendente": 426,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 451,
+  "pendente-fonte": 452,
   "pendente-inspecao-imagem": 64,
-  "revisada": 1584
+  "revisada": 1583
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -81,9 +81,9 @@
    "estados": {
     "duplicada": 8,
     "pendente": 37,
-    "pendente-fonte": 24,
+    "pendente-fonte": 25,
     "pendente-inspecao-imagem": 15,
-    "revisada": 101
+    "revisada": 100
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -557,7 +557,7 @@
      }
     ],
     "questaoSha256": "1c3afee7bcbe98b58867ed873b716a53b4ce62a89349daf5ba50f9f2307162c8",
-    "comentarioSha256": "49b6a7f6861c537daf7347bf53a1f3f4172a86943e14c6f8ea049ea951d9fd36"
+    "comentarioSha256": "d6784a031e731d8fe92eace5285b8a5daf4d261c93bcb971bf8e635c02ebe85c"
    }
   },
   "coluna-0023": {
@@ -2186,7 +2186,7 @@
      }
     ],
     "questaoSha256": "1fde239c90e33a36132c6f957189df1f5123d472ae97dce3307bab91ae49546a",
-    "comentarioSha256": "f736742e1dca667937c9cbdf4f9ef6e90bf0a7053ded74d2eae1d1dab0576a84"
+    "comentarioSha256": "b97f40846f01e313d19fd393cdccb54e17b672f55fb958eb630644d64ed7a98b"
    }
   },
   "coluna-0254": {
@@ -4047,7 +4047,7 @@
      }
     ],
     "questaoSha256": "fa1ec5debdd9dff510e14cff385162b8c2d5d929dbf084eaa90ad365aa97f1a2",
-    "comentarioSha256": "ea436c1fcb5f9182f8cc3456d2d42349801c18d066a7cb0ae451a650d45b7a0c"
+    "comentarioSha256": "8be47eb8f36714b00c5f1d93fbe7458f2c8b71f1d2b844a94da2dbf3465750c4"
    }
   },
   "coluna-0401": {
@@ -29850,7 +29850,7 @@
      }
     ],
     "questaoSha256": "4a8b4eafbd25fc2b771798f8def65b2447afb18a60753e189c0f593b22f9a212",
-    "comentarioSha256": "0bb0a2107303e16419d035e567c55909380b2ba18f330d4ff9c2dbc8e1065991"
+    "comentarioSha256": "91d2320f0f98066bfc3d8bd97fe9efbdfc1d7349c6a39d7ddddfaccb9be23d6a"
    }
   },
   "ombro-cotovelo-0529": {
@@ -81385,8 +81385,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "revisada",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 sustenta a resposta (D, não usar o maior diâmetro) e as alternativas B e C, mas não discute as próteses de teste (alternativa A). Falta fonte de técnica que trate do uso das próteses de prova. Comentário anterior restaurado sem baseResumo (achado do Codex no PR 585).",
    "temComentario": true,
    "citacoes": [
     {
@@ -81401,32 +81401,7 @@
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
    "questaoSha256": "62881157023ef7feeb663bc9747449a7b352fdf6b91f5717aa614a45256731de",
-   "baseResumo": {
-    "tipo": "resumo",
-    "versao": 1,
-    "fontes": [
-     {
-      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-      "livro": "Rockwood and Green's Fractures in Adults",
-      "edicao": "10ª edição (2025)",
-      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-      "secoes": [
-       "Fratura da cabeça do rádio"
-      ],
-      "blocos": [
-       "fratura-da-cabeca-do-radio-9e1dbc64",
-       "fratura-da-cabeca-do-radio-c4d889b2",
-       "fratura-da-cabeca-do-radio-3e116d65",
-       "fratura-da-cabeca-do-radio-5c3c5627"
-      ],
-      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-      "trechosSha256": "e5dc9e0ef1ab33b6cd10a41d917dcc4d7e34f64d4a4a2d66994380b17dad03a9"
-     }
-    ],
-    "questaoSha256": "62881157023ef7feeb663bc9747449a7b352fdf6b91f5717aa614a45256731de",
-    "comentarioSha256": "0aa63429351b0b3d972c063fb3f74c323e0ea9122c903342d9b030254487a4e2"
-   }
+   "pendencia": "O resumo do Rockwood cap. 40 sustenta a resposta (D, não usar o maior diâmetro) e as alternativas B e C, mas não discute as próteses de teste (alternativa A). Falta fonte de técnica que trate do uso das próteses de prova. Comentário anterior restaurado sem baseResumo (achado do Codex no PR 585)."
   },
   "trauma-0973": {
    "tema": "trauma",
@@ -88156,7 +88131,7 @@
      }
     ],
     "questaoSha256": "7540383b7fe19c465cd6787939dfd740fa09c8e7df93991510f88446b51821b7",
-    "comentarioSha256": "3308febe35a2855a8ace33522ef0dc1eb8bb5e6df62afebc9bf321ae9fe566da"
+    "comentarioSha256": "1f0765197a322073d111b11460a2e031718e54b76387c61de2250a86f3c5c27c"
    }
   },
   "trauma-1211": {

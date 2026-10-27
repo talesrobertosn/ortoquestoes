@@ -8,9 +8,9 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | pendente | 426 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 451 |
+| pendente-fonte | 452 |
 | pendente-inspecao-imagem | 64 |
-| revisada | 1584 |
+| revisada | 1583 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -22,7 +22,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 61 | 0 | 12 |
 | Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 64 | 0 | 30 |
 | Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 38 | 0 | 14 |
-| Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 101 | 0 | 84 |
+| Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 100 | 0 | 85 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 71 | 0 | 33 |
 | Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 90 | 0 | 145 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 109 | 0 | 138 |
