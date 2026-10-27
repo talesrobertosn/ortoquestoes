@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 214,
+  "pendente": 204,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 624,
-  "pendente-inspecao-imagem": 64,
-  "revisada": 1623
+  "pendente-fonte": 652,
+  "pendente-inspecao-imagem": 34,
+  "revisada": 1635
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -76,9 +76,9 @@
    "estados": {
     "duplicada": 8,
     "pendente": 24,
-    "pendente-fonte": 37,
-    "pendente-inspecao-imagem": 15,
-    "revisada": 101
+    "pendente-fonte": 46,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 106
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -98,8 +98,7 @@
     "duplicada": 2,
     "pendente": 68,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 71,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 72,
     "revisada": 92
    }
   },
@@ -111,9 +110,9 @@
     "pendente": 48,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 66,
-    "pendente-inspecao-imagem": 7,
-    "revisada": 119
+    "pendente-fonte": 69,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 122
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -177,8 +176,7 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente-fonte": 14,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 15,
     "revisada": 55
    }
   },
@@ -207,8 +205,7 @@
    "estados": {
     "duplicada": 14,
     "pendente-anulada": 1,
-    "pendente-fonte": 52,
-    "pendente-inspecao-imagem": 4,
+    "pendente-fonte": 56,
     "revisada": 52
    }
   },
@@ -217,8 +214,7 @@
    "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
    "estados": {
     "pendente-fonte": 11,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 33
+    "revisada": 34
    }
   },
   "rockwood10-63-diafise-tibia": {
@@ -266,10 +262,10 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 50,
-    "pendente-fonte": 11,
-    "pendente-inspecao-imagem": 4,
-    "revisada": 71
+    "pendente": 40,
+    "pendente-fonte": 20,
+    "pendente-inspecao-imagem": 3,
+    "revisada": 73
    }
   },
   "rockwoodcriancas10-25-diafise-femur": {
@@ -277,9 +273,8 @@
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
     "pendente": 10,
-    "pendente-fonte": 14,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 80
+    "pendente-fonte": 16,
+    "revisada": 81
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
@@ -287,9 +282,8 @@
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
     "pendente": 10,
-    "pendente-fonte": 20,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 86
+    "pendente-fonte": 22,
+    "revisada": 87
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
@@ -297,9 +291,8 @@
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
     "pendente": 10,
-    "pendente-fonte": 21,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 82
+    "pendente-fonte": 23,
+    "revisada": 83
    }
   },
   "rockwoodcriancas10-29-diafise-tibia": {
@@ -307,9 +300,8 @@
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
     "pendente": 10,
-    "pendente-fonte": 15,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 79
+    "pendente-fonte": 17,
+    "revisada": 80
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -343,8 +335,8 @@
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
     "pendente": 4,
-    "pendente-fonte": 31,
-    "pendente-inspecao-imagem": 4,
+    "pendente-fonte": 32,
+    "pendente-inspecao-imagem": 3,
     "revisada": 66
    }
   },
@@ -374,8 +366,8 @@
    "estados": {
     "duplicada": 1,
     "pendente": 6,
-    "pendente-fonte": 18,
-    "pendente-inspecao-imagem": 2,
+    "pendente-fonte": 19,
+    "pendente-inspecao-imagem": 1,
     "revisada": 55
    }
   },
@@ -385,8 +377,8 @@
    "estados": {
     "duplicada": 1,
     "pendente": 6,
-    "pendente-fonte": 17,
-    "pendente-inspecao-imagem": 2,
+    "pendente-fonte": 18,
+    "pendente-inspecao-imagem": 1,
     "revisada": 51
    }
   }
@@ -9296,8 +9288,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Desenho com trajetos femorais,fibular e tibial aberto. Corpo61 defineLaPrade e seu túnel tibial,mas faltam descrição independente e distinção das técnicasLarson,Clancy eHughston. Reconhecer um candidato pelo túnel não verifica o significado dos outros três epônimos. Necessária fonte comparativa das reconstruções para confirmarC e analisar cada alternativa,sem usar o comentário antigo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -9311,7 +9303,8 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "bc2b22179fe0c7dfe4a635bd08bc28f94f997038c954cb4c94ac3047948c3dad"
+   "questaoSha256": "bc2b22179fe0c7dfe4a635bd08bc28f94f997038c954cb4c94ac3047948c3dad",
+   "pendencia": "Desenho com trajetos femorais,fibular e tibial aberto. Corpo61 defineLaPrade e seu túnel tibial,mas faltam descrição independente e distinção das técnicasLarson,Clancy eHughston. Reconhecer um candidato pelo túnel não verifica o significado dos outros três epônimos. Necessária fonte comparativa das reconstruções para confirmarC e analisar cada alternativa,sem usar o comentário antigo."
   },
   "joelho-0102": {
    "tema": "joelho",
@@ -11125,8 +11118,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -11140,7 +11133,32 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "ac662cfe5bcc615bde9752ebaabb5716ee2126d454c1e4dbbe775d0ecdb686bf"
+   "questaoSha256": "ac662cfe5bcc615bde9752ebaabb5716ee2126d454c1e4dbbe775d0ecdb686bf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "anatomia-aplicada-df446291"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "fedfaaa32ecf7ceec593c3a8ed9bda605d408c0cc53a817aa405681fa2f5c59a"
+     }
+    ],
+    "questaoSha256": "ac662cfe5bcc615bde9752ebaabb5716ee2126d454c1e4dbbe775d0ecdb686bf",
+    "comentarioSha256": "bb9d88ce463822da656ad7c38a37ffca54b54733a2a8e5db6514abe3c795f306"
+   }
   },
   "joelho-0354": {
    "tema": "joelho",
@@ -19754,8 +19772,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Duas radiografias abertas e luxação dorsal daMCF do indicador identificada. Corpo45 sustenta vias dorsal/volar/combinada,placa volar interposta e liberação deA1em vez deA2. Entretanto,não especifica qual feixe digital do indicador fica USUALMENTE subcutâneo,nem o compara com o feixeULNAR da alternativaD. Dizer apenas que os feixes estão próximos não demonstra a lateralidade exigida. Falta anatomia independente desse deslocamento para conferir integralmenteA/B/C/D;oficialA preservado,sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -19769,7 +19787,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "065fe5c86aa3d52d242d6c6cf5623988197bb77165f15b58fde5a1e6c5c4c3ec"
+   "questaoSha256": "065fe5c86aa3d52d242d6c6cf5623988197bb77165f15b58fde5a1e6c5c4c3ec",
+   "pendencia": "Duas radiografias abertas e luxação dorsal daMCF do indicador identificada. Corpo45 sustenta vias dorsal/volar/combinada,placa volar interposta e liberação deA1em vez deA2. Entretanto,não especifica qual feixe digital do indicador fica USUALMENTE subcutâneo,nem o compara com o feixeULNAR da alternativaD. Dizer apenas que os feixes estão próximos não demonstra a lateralidade exigida. Falta anatomia independente desse deslocamento para conferir integralmenteA/B/C/D;oficialA preservado,sem selo."
   },
   "mao-1300": {
    "tema": "mao",
@@ -20990,8 +21009,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21005,7 +21024,33 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "637c79bd98858d2b37f30298a06c6cecb0360ee9f098a84a54a7528f40218b5b"
+   "questaoSha256": "637c79bd98858d2b37f30298a06c6cecb0360ee9f098a84a54a7528f40218b5b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+      ],
+      "blocos": [
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "21c299a7623012b0c8056b9cce4ec6bbc6c5d376ec9d8fb324acb04a87cc2407"
+     }
+    ],
+    "questaoSha256": "637c79bd98858d2b37f30298a06c6cecb0360ee9f098a84a54a7528f40218b5b",
+    "comentarioSha256": "ae6a09b56ed7005390ac005cb0ddbd6088652c61eba3bf71aefb44f748b52d47"
+   }
   },
   "mao-1512": {
    "tema": "mao",
@@ -21682,8 +21727,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "PA eperfil abertos;diástase escafossemilunar visível sem incidência de estresse indicada,sustentando padrão estático. Corpo44 diferencia dinâmico/estático e exige redutibilidade,tecido reparável e cartilagem para escolher reconstrução versus salvamento. O caso não informa redutibilidade/avaliação cartilaginosa,e o resumo não descreve a técnicaMathoulin nem a comparação específica entre reconstrução dorsal+volar e artrodese rádio-escafo-semilunar com ressecção do polo distal. Falta essa base para validar tratamentoD e todos os distratores sem inventar achados clínicos ou artroscópicos. OficialD preservado;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -21697,7 +21742,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "a56012e01f003fbbfb5de1744160b1d9d3d637c8a3e491bb31b762f795d1bb7e"
+   "questaoSha256": "a56012e01f003fbbfb5de1744160b1d9d3d637c8a3e491bb31b762f795d1bb7e",
+   "pendencia": "PA eperfil abertos;diástase escafossemilunar visível sem incidência de estresse indicada,sustentando padrão estático. Corpo44 diferencia dinâmico/estático e exige redutibilidade,tecido reparável e cartilagem para escolher reconstrução versus salvamento. O caso não informa redutibilidade/avaliação cartilaginosa,e o resumo não descreve a técnicaMathoulin nem a comparação específica entre reconstrução dorsal+volar e artrodese rádio-escafo-semilunar com ressecção do polo distal. Falta essa base para validar tratamentoD e todos os distratores sem inventar achados clínicos ou artroscópicos. OficialD preservado;sem selo."
   },
   "mao-1574": {
    "tema": "mao",
@@ -24740,8 +24786,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -24755,7 +24801,33 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "ec1456ea09c2f6c91c5f478f5ff7d02bac868945a25c3175733b1e762dbc5223"
+   "questaoSha256": "ec1456ea09c2f6c91c5f478f5ff7d02bac868945a25c3175733b1e762dbc5223",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Base do polegar: Bennett, Rolando e a luxação da CMC"
+      ],
+      "blocos": [
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b516662cc3cbe25f32dcbd0ee45eb8fe2ed7b511da09cc063f87bc1c2c37c83e"
+     }
+    ],
+    "questaoSha256": "ec1456ea09c2f6c91c5f478f5ff7d02bac868945a25c3175733b1e762dbc5223",
+    "comentarioSha256": "f070116f8ce7d9f6b2d9fe27f566865fb409c07a2a66cd1407b3474cf6897ea7"
+   }
   },
   "mao-1717": {
    "tema": "mao",
@@ -27332,8 +27404,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -27347,7 +27419,34 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "c68b5b83a2c54ee54c8695b79b0a40a8678a952ea390297ad38dab39bbb496bf"
+   "questaoSha256": "c68b5b83a2c54ee54c8695b79b0a40a8678a952ea390297ad38dab39bbb496bf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo",
+       "Instabilidade rotatória posterolateral crônica"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-d2f0137f",
+       "quem-segura-o-cotovelo-2b1e3945",
+       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+       "quem-segura-o-cotovelo-7b7c7f11"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "8b5de920302bcdae46768b412931157b54af7db2131a461a993b6c0a7f870e36"
+     }
+    ],
+    "questaoSha256": "c68b5b83a2c54ee54c8695b79b0a40a8678a952ea390297ad38dab39bbb496bf",
+    "comentarioSha256": "2fccd3299719e635c05b3f1c6d0b470b2259156b6c059141ddd16293b7939eed"
+   }
   },
   "ombro-cotovelo-0071": {
    "tema": "ombro-cotovelo",
@@ -27737,8 +27836,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -27752,7 +27851,31 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549"
+   "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-2b1e3945",
+       "quem-segura-o-cotovelo-49b9c486"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "f26a2e9a99f165c145dd79ddc33c2c36895972d360e74f8c790d708a7fb3402d"
+     }
+    ],
+    "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549",
+    "comentarioSha256": "f64e711d64fdef8ae57c456cb80e7f72a4c735a9802299b9f195f4291c3cec9e"
+   }
   },
   "ombro-cotovelo-0125": {
    "tema": "ombro-cotovelo",
@@ -27969,8 +28092,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Perfil aberto mostra subluxação com coronoide apoiado na tróclea,compatível comperched. Corpo40 descreve sequência lateral/cápsula/medial,mas não mapeia explicitamente os estágiosI/II/IIIa/IIIb e a relação do bloqueio perched com estágioII. A nota contextual menciona a questão sem fornecer o quadro classificatório. Faltam numeração e lesões específicas para distinguirA/B/C/D;não criar esse mapeamento por memória.",
    "temComentario": true,
    "citacoes": [
     {
@@ -27984,7 +28107,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "6fca73966825c1e89fa5f7bfa01d1b102087cdfdf2e8292d283a4fc0040d451f"
+   "questaoSha256": "6fca73966825c1e89fa5f7bfa01d1b102087cdfdf2e8292d283a4fc0040d451f",
+   "pendencia": "Perfil aberto mostra subluxação com coronoide apoiado na tróclea,compatível comperched. Corpo40 descreve sequência lateral/cápsula/medial,mas não mapeia explicitamente os estágiosI/II/IIIa/IIIb e a relação do bloqueio perched com estágioII. A nota contextual menciona a questão sem fornecer o quadro classificatório. Faltam numeração e lesões específicas para distinguirA/B/C/D;não criar esse mapeamento por memória."
   },
   "ombro-cotovelo-0198": {
    "tema": "ombro-cotovelo",
@@ -28175,8 +28299,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta mostra complexoLATERAL,com banda3do epicôndilo à ulna e quatro elementos numerados. A nota contextual do resumo associa essa questão ao feixeANTERIOR do colateralMEDIAL,em desacordo com a figura. O corpo40 define três componentes laterais,mas não identifica a quarta banda/acessória do desenho,impedindo análise anatômica completa de1/2/3/4. Falta legenda/fonte independente para todas as estruturas e explicitar a direção de estabilidade do superlativo. Não chamar3de feixe medial nem usar a nota contextual como prova;oficialC preservado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -28190,7 +28314,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "102c6d31202719586c615b3206be3c4ae855b96e3a69bc5f8458bb24c5dd771b"
+   "questaoSha256": "102c6d31202719586c615b3206be3c4ae855b96e3a69bc5f8458bb24c5dd771b",
+   "pendencia": "Figura aberta mostra complexoLATERAL,com banda3do epicôndilo à ulna e quatro elementos numerados. A nota contextual do resumo associa essa questão ao feixeANTERIOR do colateralMEDIAL,em desacordo com a figura. O corpo40 define três componentes laterais,mas não identifica a quarta banda/acessória do desenho,impedindo análise anatômica completa de1/2/3/4. Falta legenda/fonte independente para todas as estruturas e explicitar a direção de estabilidade do superlativo. Não chamar3de feixe medial nem usar a nota contextual como prova;oficialC preservado."
   },
   "ombro-cotovelo-0250": {
    "tema": "ombro-cotovelo",
@@ -28298,8 +28423,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura medial numerada aberta: 2 cruza do epicôndilo medial à ulna anterior, 3 ocupa o leque posterior e 4 a faixa inferior ulnar; 1 é outra faixa próxima da região anterior da articulação. O corpo40 sustenta feixe anterior como principal restritor do VALGO, mas não fornece anatomia independente para identificar com segurança a estrutura1 e discriminar todos os quatro componentes numerados. O enunciado também diz estabilidade sem direção; o próprio corpo40 ressalva que a primazia medial depende do valgo e que o lateral importa nas atividades comuns. Falta legenda anatômica independente dos quatro números e contextualização da direção da força; preservar oficialB sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -28313,7 +28438,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "6cabc36ab5e2f41a923bb9ce3e00a3dbbe18dc1a9668c9a4b7ec60b98b831f3a"
+   "questaoSha256": "6cabc36ab5e2f41a923bb9ce3e00a3dbbe18dc1a9668c9a4b7ec60b98b831f3a",
+   "pendencia": "Figura medial numerada aberta: 2 cruza do epicôndilo medial à ulna anterior, 3 ocupa o leque posterior e 4 a faixa inferior ulnar; 1 é outra faixa próxima da região anterior da articulação. O corpo40 sustenta feixe anterior como principal restritor do VALGO, mas não fornece anatomia independente para identificar com segurança a estrutura1 e discriminar todos os quatro componentes numerados. O enunciado também diz estabilidade sem direção; o próprio corpo40 ressalva que a primazia medial depende do valgo e que o lateral importa nas atividades comuns. Falta legenda anatômica independente dos quatro números e contextualização da direção da força; preservar oficialB sem selo."
   },
   "ombro-cotovelo-0296": {
    "tema": "ombro-cotovelo",
@@ -28375,14 +28501,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Duas fotografias operatórias abertas mostram exposição lateral e manipulação da cabeça radial. Corpo40 descreve Kocher ou divisão do tendão extensor conforme integridade do complexo lateral e proteção do interósseo posterior, mas não estabelece qual combinação de distração longitudinal, VARO/VALGO e PRONAÇÃO/SUPINAÇÃO produz especificamente a exposição mostrada. A regra de pronação para proteger o nervo ou estabilizar lesão lateral não prova manobra para abrir a articulação. Falta descrição operatória independente que discrimine as quatro combinações; oficialB mantido.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "0c5f8219439a512d960768d1ea15e986d2b1780570e9e722fcef63ccaad89263"
+   "questaoSha256": "0c5f8219439a512d960768d1ea15e986d2b1780570e9e722fcef63ccaad89263",
+   "pendencia": "Duas fotografias operatórias abertas mostram exposição lateral e manipulação da cabeça radial. Corpo40 descreve Kocher ou divisão do tendão extensor conforme integridade do complexo lateral e proteção do interósseo posterior, mas não estabelece qual combinação de distração longitudinal, VARO/VALGO e PRONAÇÃO/SUPINAÇÃO produz especificamente a exposição mostrada. A regra de pronação para proteger o nervo ou estabilizar lesão lateral não prova manobra para abrir a articulação. Falta descrição operatória independente que discrimine as quatro combinações; oficialB mantido."
   },
   "ombro-cotovelo-0305": {
    "tema": "ombro-cotovelo",
@@ -28391,8 +28518,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -28406,7 +28533,30 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "0c9042d661bf9888098db5c995284730895938fdff39aad4cce14a8083d51c63"
+   "questaoSha256": "0c9042d661bf9888098db5c995284730895938fdff39aad4cce14a8083d51c63",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-9e1dbc64"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "b14621ab715a02050924eeffac86f037109bbc8e871f1cbd2958a9f8eecf5b26"
+     }
+    ],
+    "questaoSha256": "0c9042d661bf9888098db5c995284730895938fdff39aad4cce14a8083d51c63",
+    "comentarioSha256": "ca1254f281d200f8b8d6bf6acc6a6c9c4fc118049c14343ea385487490b7ee59"
+   }
   },
   "ombro-cotovelo-0306": {
    "tema": "ombro-cotovelo",
@@ -29317,8 +29467,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Desenho aberto trazperched,valgus,carga axial e rotação. Corpo40 dá a sequência de ruptura lateral/cápsula/medial,mas não define os estágiosI,II,IIIa,IIIb nem os subtipos de lesão medial que os diferenciam. Falta correlação numerada independente para confirmarII/B e analisarI/IIIa/IIIb;reconhecer a figura por memória não substitui a fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -29340,7 +29490,8 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "0960a4e2c6ffbe36d38c69e492524d055bbd0192d4f83fffab73f51d5608f0ef"
+   "questaoSha256": "0960a4e2c6ffbe36d38c69e492524d055bbd0192d4f83fffab73f51d5608f0ef",
+   "pendencia": "Desenho aberto trazperched,valgus,carga axial e rotação. Corpo40 dá a sequência de ruptura lateral/cápsula/medial,mas não define os estágiosI,II,IIIa,IIIb nem os subtipos de lesão medial que os diferenciam. Falta correlação numerada independente para confirmarII/B e analisarI/IIIa/IIIb;reconhecer a figura por memória não substitui a fonte."
   },
   "ombro-cotovelo-0442": {
    "tema": "ombro-cotovelo",
@@ -29375,8 +29526,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -29390,7 +29541,33 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "70a53f51fe4df6eec6b1f03d7cc9371b11c2f764d6bacff3f8a006d1926effc3"
+   "questaoSha256": "70a53f51fe4df6eec6b1f03d7cc9371b11c2f764d6bacff3f8a006d1926effc3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo",
+       "Instabilidade rotatória posterolateral crônica"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-d2f0137f",
+       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+       "quem-segura-o-cotovelo-7b7c7f11"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "ff0c043396cf44f89e0a2c8bbd95e6789afcd97caa4461905f6bc89a60561c3e"
+     }
+    ],
+    "questaoSha256": "70a53f51fe4df6eec6b1f03d7cc9371b11c2f764d6bacff3f8a006d1926effc3",
+    "comentarioSha256": "6cb74e861faf94d6c0382dde438a9a2c6f4339d93461a3d6b1490d3588cca415"
+   }
   },
   "ombro-cotovelo-0461": {
    "tema": "ombro-cotovelo",
@@ -34980,14 +35157,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta a definição e a distribuição de frequência dos tiposI–IV deDelbet nas fraturas PROXIMAIS do fêmur infantil. O corpo1 trata de incidência geral e o25 de fratura DIAFISÁRIA,não da hierarquia entre esses quatro tipos. Não confirmarII a partir do comentário antigo ou de padrões do adulto;oficialB preservado,sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "aee724f31ac1b7fd4e547b5e1ba95f277dbd509849c8524d40fd7985dfa2998e"
+   "questaoSha256": "aee724f31ac1b7fd4e547b5e1ba95f277dbd509849c8524d40fd7985dfa2998e",
+   "pendencia": "Falta a definição e a distribuição de frequência dos tiposI–IV deDelbet nas fraturas PROXIMAIS do fêmur infantil. O corpo1 trata de incidência geral e o25 de fratura DIAFISÁRIA,não da hierarquia entre esses quatro tipos. Não confirmarII a partir do comentário antigo ou de padrões do adulto;oficialB preservado,sem selo."
   },
   "pediatria-0532": {
    "tema": "pediatria",
@@ -35082,8 +35260,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta:avulsão da eminência tibial com elevação anterior e continuidade posterior aparente. Falta definição independente dos quatro tiposI/II/III/IV deMeyersMcKeever e do papel da dobradiça posterior/cominuição. A classificaçãoOgden da tuberosidade não pode ser usada para a espinha tibial. OficialB e comentário preservados sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -35093,7 +35271,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "909d0f5779bf64bf39fba9ce3214bb873ac587b635c87a54c4a8af52d4f7b434"
+   "questaoSha256": "909d0f5779bf64bf39fba9ce3214bb873ac587b635c87a54c4a8af52d4f7b434",
+   "pendencia": "Figura aberta:avulsão da eminência tibial com elevação anterior e continuidade posterior aparente. Falta definição independente dos quatro tiposI/II/III/IV deMeyersMcKeever e do papel da dobradiça posterior/cominuição. A classificaçãoOgden da tuberosidade não pode ser usada para a espinha tibial. OficialB e comentário preservados sem selo."
   },
   "pediatria-0537": {
    "tema": "pediatria",
@@ -35103,14 +35282,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta demonstração da direção mais frequente da luxação traumática do quadril infantil e comparação da energia antes/depois dos5anos. As duas dimensões precisam ser confirmadas para separarA/B/C/D. A discussão geral de quedas e exposição do corpo1 não prova que o padrão seja posterior e de baixa energia nessa faixa;oficialD preservado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "561db1845b46f1dc174948ae843ed17bd83a3a62289ef5163c6a3ab5999f3a11"
+   "questaoSha256": "561db1845b46f1dc174948ae843ed17bd83a3a62289ef5163c6a3ab5999f3a11",
+   "pendencia": "Falta demonstração da direção mais frequente da luxação traumática do quadril infantil e comparação da energia antes/depois dos5anos. As duas dimensões precisam ser confirmadas para separarA/B/C/D. A discussão geral de quedas e exposição do corpo1 não prova que o padrão seja posterior e de baixa energia nessa faixa;oficialD preservado."
   },
   "pediatria-0538": {
    "tema": "pediatria",
@@ -35508,14 +35688,15 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta ranking específico das indicações cirúrgicas das fraturas do TERÇO LATERAL da clavícula na CRIANÇA:exposta,vascular,posterior e neurológica. Saber que são indicações possíveis ou que cirurgia é excepcional não demonstra qual é a mais frequente. Corpo1 não traz esse protocolo nem essa comparação;oficialA e alerta antigo preservados sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "4e5f905377d38cc4143f2840abc3b70981af2c23575fe95b5969b3d7eb10a67d"
+   "questaoSha256": "4e5f905377d38cc4143f2840abc3b70981af2c23575fe95b5969b3d7eb10a67d",
+   "pendencia": "Falta ranking específico das indicações cirúrgicas das fraturas do TERÇO LATERAL da clavícula na CRIANÇA:exposta,vascular,posterior e neurológica. Saber que são indicações possíveis ou que cirurgia é excepcional não demonstra qual é a mais frequente. Corpo1 não traz esse protocolo nem essa comparação;oficialA e alerta antigo preservados sem selo."
   },
   "pediatria-0552": {
    "tema": "pediatria",
@@ -36537,14 +36718,38 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "73ad7a7c41b60215deabe7a1411c6f3f73d86c85fdc88e51beb189f92151ce67"
+   "questaoSha256": "73ad7a7c41b60215deabe7a1411c6f3f73d86c85fdc88e51beb189f92151ce67",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-5c26d8e8",
+       "complicacoes-58867aa4"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "3d132e6f115759eafba30d89cd7095c654d34e93294755d18b367242cd562c0b"
+     }
+    ],
+    "questaoSha256": "73ad7a7c41b60215deabe7a1411c6f3f73d86c85fdc88e51beb189f92151ce67",
+    "comentarioSha256": "efc55d4bf09bded956b1babb97d2ad2b86f5c41280927d8e9122493aaf9857a9"
+   }
   },
   "pediatria-0590": {
    "tema": "pediatria",
@@ -37591,14 +37796,15 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta curva etária específica das fraturas da DIÁFISE do ÚMERO infantil que compare0–3,3–6,6–9 e9–12anos. O corpo1 apresenta curvas gerais e menciona úmeroPROXIMAL no pico tardio,sem autorizar transferi-lo para a diáfise ou provar o pico0–3anos. OficialA preservado;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "a256a8f71a3cebc0a877c4194e80b9074325db700b66454d77c5b45bdf949dbe"
+   "questaoSha256": "a256a8f71a3cebc0a877c4194e80b9074325db700b66454d77c5b45bdf949dbe",
+   "pendencia": "Falta curva etária específica das fraturas da DIÁFISE do ÚMERO infantil que compare0–3,3–6,6–9 e9–12anos. O corpo1 apresenta curvas gerais e menciona úmeroPROXIMAL no pico tardio,sem autorizar transferi-lo para a diáfise ou provar o pico0–3anos. OficialA preservado;sem selo."
   },
   "pediatria-0619": {
    "tema": "pediatria",
@@ -38077,14 +38283,15 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Faltam limites de rotação medial e de varo/valgo aceitáveis na fratura DIAFISÁRIA do ÚMERO infantil,com idade e plano próprios. As tabelas do fêmur no corpo25 e a remodelação geral do corpo1 não fundamentam os pares15/20,15/40,30/20 ou30/40 desse outro osso. OficialA preservado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "d97e199416cc553d5aabf1399668b13a6c9611a27483514ad17c4121ef50bd84"
+   "questaoSha256": "d97e199416cc553d5aabf1399668b13a6c9611a27483514ad17c4121ef50bd84",
+   "pendencia": "Faltam limites de rotação medial e de varo/valgo aceitáveis na fratura DIAFISÁRIA do ÚMERO infantil,com idade e plano próprios. As tabelas do fêmur no corpo25 e a remodelação geral do corpo1 não fundamentam os pares15/20,15/40,30/20 ou30/40 desse outro osso. OficialA preservado."
   },
   "pediatria-0632": {
    "tema": "pediatria",
@@ -38162,14 +38369,15 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta comparação prognóstica de infecção,condrólise,osteonecrose e pseudartrose após fratura PROXIMAL do FÊMUR infantil. Corpo25 explica necrose iatrogênica pela haste de entrada proximal em fratura DIAFISÁRIA,mas esse cenário não prova a hierarquia das quatro complicações da fratura do quadril. Corpo1 não oferece a comparação. OficialC preservado.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "b335afddaa8a1aba123cb872c5ef074eb310136881ec707a209b2497018b93d9"
+   "questaoSha256": "b335afddaa8a1aba123cb872c5ef074eb310136881ec707a209b2497018b93d9",
+   "pendencia": "Falta comparação prognóstica de infecção,condrólise,osteonecrose e pseudartrose após fratura PROXIMAL do FÊMUR infantil. Corpo25 explica necrose iatrogênica pela haste de entrada proximal em fratura DIAFISÁRIA,mas esse cenário não prova a hierarquia das quatro complicações da fratura do quadril. Corpo1 não oferece a comparação. OficialC preservado."
   },
   "pediatria-0635": {
    "tema": "pediatria",
@@ -38735,14 +38943,15 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta classificaçãoDelbet I–IV com risco de necrose avascular por tipo nas fraturas proximais do fêmur da criança. O mecanismo vascular da haste em fratura diafisária no corpo25 não demonstra menor risco no tipoIV nem permite analisarI/II/III. OficialD preservado;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "50f275831c6fce74a0704e81aea527349c515654d1fb65e5f4ee66c46b576ea4"
+   "questaoSha256": "50f275831c6fce74a0704e81aea527349c515654d1fb65e5f4ee66c46b576ea4",
+   "pendencia": "Falta classificaçãoDelbet I–IV com risco de necrose avascular por tipo nas fraturas proximais do fêmur da criança. O mecanismo vascular da haste em fratura diafisária no corpo25 não demonstra menor risco no tipoIV nem permite analisarI/II/III. OficialD preservado;sem selo."
   },
   "pediatria-0652": {
    "tema": "pediatria",
@@ -39514,14 +39723,38 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "b35a6d7eb69454ebe6b6252d60a52f1874ea9b463170ce7b868f6651e017ba11"
+   "questaoSha256": "b35a6d7eb69454ebe6b6252d60a52f1874ea9b463170ce7b868f6651e017ba11",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "As hastes elásticas"
+      ],
+      "blocos": [
+       "as-hastes-elasticas-8c6022b4",
+       "as-hastes-elasticas-67872f88"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "ff682d03e3fc457dab6fcabebfc6cb3d7f88fb993e9edba7d047516c22cdb3d7"
+     }
+    ],
+    "questaoSha256": "b35a6d7eb69454ebe6b6252d60a52f1874ea9b463170ce7b868f6651e017ba11",
+    "comentarioSha256": "40bdd86c9197a2aa9e199edd0b1eb2243602c8c13775e2ea47743de9e14d31f9"
+   }
   },
   "pediatria-0674": {
    "tema": "pediatria",
@@ -40552,14 +40785,15 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta técnica de redução fechada da fratura tipoII deDelbet na criança,com sequência fundamentada de adução/abdução e rotação medial/lateral. Nenhum desses movimentos pode ser derivado da tabela de tratamento da diáfise femoral do corpo25 ou da epidemiologia do corpo1. OficialD preservado;não importar manobra do adulto sem fonte.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "549ac4e4fc76a51d697c6408f747f55d6066bd55941ad9a94cb874baa35804eb"
+   "questaoSha256": "549ac4e4fc76a51d697c6408f747f55d6066bd55941ad9a94cb874baa35804eb",
+   "pendencia": "Falta técnica de redução fechada da fratura tipoII deDelbet na criança,com sequência fundamentada de adução/abdução e rotação medial/lateral. Nenhum desses movimentos pode ser derivado da tabela de tratamento da diáfise femoral do corpo25 ou da epidemiologia do corpo1. OficialD preservado;não importar manobra do adulto sem fonte."
   },
   "pediatria-0708": {
    "tema": "pediatria",
@@ -43336,8 +43570,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -43354,7 +43588,35 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "5f68706cdb430c733ada15340d20b22dca78be7ea2744aff9ee2b0ea67eb1bbd"
+   "questaoSha256": "5f68706cdb430c733ada15340d20b22dca78be7ea2744aff9ee2b0ea67eb1bbd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "A classificação de OGDEN modificada",
+       "A tuberosidade: quem quebra e como",
+       "Tratamento"
+      ],
+      "blocos": [
+       "a-classificacao-de-ogden-modificada-288154c9",
+       "a-classificacao-de-ogden-modificada-54560a75",
+       "a-tuberosidade-quem-quebra-e-como-add351b6",
+       "tratamento-5adb23a3"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "1530483386d823b894440e58d45e7c84a6d07ea2f67efc7cf5a18cef301ee33f"
+     }
+    ],
+    "questaoSha256": "5f68706cdb430c733ada15340d20b22dca78be7ea2744aff9ee2b0ea67eb1bbd",
+    "comentarioSha256": "2b5263d2a1d928c3c747acdf7a6aa5e4d58dcb241fc17d044fdb8fc1ba6cf14b"
+   }
   },
   "pediatria-0849": {
    "tema": "pediatria",
@@ -45179,8 +45441,8 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Montagem das quatro radiografias aberta. O corpo29 sustenta mecanismo torsional de lesões tibiais da criança pequena,e01/25 discutem idade e suspeita de trauma não acidental,mas não fornecem toda a correlação específica exigida:compressão anteroposterior torácica nas costelas do lactente,queda cotidiana na fratura do cotovelo e combinação de trauma direto/torção/compressão no úmero de4meses. Falta fonte para comparar TODOS os quatro mecanismos e associações de idade,sem diagnosticar maus-tratos por traço isolado. OficialB preservado;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -45191,7 +45453,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "c5b7a055472ca98f6aebb338134906e2db792103c3b8d1bc79bd506f69e832bc"
+   "questaoSha256": "c5b7a055472ca98f6aebb338134906e2db792103c3b8d1bc79bd506f69e832bc",
+   "pendencia": "Montagem das quatro radiografias aberta. O corpo29 sustenta mecanismo torsional de lesões tibiais da criança pequena,e01/25 discutem idade e suspeita de trauma não acidental,mas não fornecem toda a correlação específica exigida:compressão anteroposterior torácica nas costelas do lactente,queda cotidiana na fratura do cotovelo e combinação de trauma direto/torção/compressão no úmero de4meses. Falta fonte para comparar TODOS os quatro mecanismos e associações de idade,sem diagnosticar maus-tratos por traço isolado. OficialB preservado;sem selo."
   },
   "pediatria-0960": {
    "tema": "pediatria",
@@ -64047,8 +64310,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -64062,7 +64325,33 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "76110b9f1a4970e033d40fc536bee61f3934d674c44a5500414b6fa8023efd55"
+   "questaoSha256": "76110b9f1a4970e033d40fc536bee61f3934d674c44a5500414b6fa8023efd55",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Base do polegar: Bennett, Rolando e a luxação da CMC"
+      ],
+      "blocos": [
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b516662cc3cbe25f32dcbd0ee45eb8fe2ed7b511da09cc063f87bc1c2c37c83e"
+     }
+    ],
+    "questaoSha256": "76110b9f1a4970e033d40fc536bee61f3934d674c44a5500414b6fa8023efd55",
+    "comentarioSha256": "26b1e0ebdb55f2b18f0ef9420e5ed4b01e3abe98c9ed1697663dd6a88ff753aa"
+   }
   },
   "trauma-0181": {
    "tema": "trauma",
@@ -70923,8 +71212,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Perfil aberto mostra fratura desviada e cominutiva do olécrano. Corpo40 define MayoI/II/III e A/B, mas não relaciona esse padrão ao ângulo de flexão do cotovelo NO MOMENTO DO TRAUMA (90° versus120°). O ângulo radiográfico atual não demonstra retrospectivamente o ângulo da lesão. Falta fundamento biomecânico independente para discriminar90/120 associado ao padrão; oficialB preservado, sem ensinar ângulo por memória.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70938,7 +71227,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "e766c796e652c660fac18e5345e7fd66ed7af6bd9fb4f734c3a72467823738d4"
+   "questaoSha256": "e766c796e652c660fac18e5345e7fd66ed7af6bd9fb4f734c3a72467823738d4",
+   "pendencia": "Perfil aberto mostra fratura desviada e cominutiva do olécrano. Corpo40 define MayoI/II/III e A/B, mas não relaciona esse padrão ao ângulo de flexão do cotovelo NO MOMENTO DO TRAUMA (90° versus120°). O ângulo radiográfico atual não demonstra retrospectivamente o ângulo da lesão. Falta fundamento biomecânico independente para discriminar90/120 associado ao padrão; oficialB preservado, sem ensinar ângulo por memória."
   },
   "trauma-0451": {
    "tema": "trauma",
@@ -71110,8 +71400,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Radiografias daIFP em frente eperfil abertas,com fragmento na base da falange média. Corpo45 explica hiperextensão com translação dorsal,avulsão da borda volar e compressão axial com pilão,mas não demonstra especificamente a combinação compressãoAXIAL+desvioLATERAL do oficialE nem como distinguir desse mecanismo apenasdesvio lateral ou axial+leveflexão pelas imagens. Falta correlação independente do traço mostrado com essa combinação e as outras quatro opções;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -71125,7 +71415,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "a480778a48ef4f666c67776fc9fac8d032f03f3d50996bfdbbb5998223e41712"
+   "questaoSha256": "a480778a48ef4f666c67776fc9fac8d032f03f3d50996bfdbbb5998223e41712",
+   "pendencia": "Radiografias daIFP em frente eperfil abertas,com fragmento na base da falange média. Corpo45 explica hiperextensão com translação dorsal,avulsão da borda volar e compressão axial com pilão,mas não demonstra especificamente a combinação compressãoAXIAL+desvioLATERAL do oficialE nem como distinguir desse mecanismo apenasdesvio lateral ou axial+leveflexão pelas imagens. Falta correlação independente do traço mostrado com essa combinação e as outras quatro opções;sem selo."
   },
   "trauma-0475": {
    "tema": "trauma",
@@ -75578,8 +75869,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Desenho da fixação percutânea daBennett aberto. Corpo45 descreve trajetos de fios e nomeiaWagner para a VIAABERTA,mas não atribui a fixação fechada desenhada aWagner nem diferencia sua autoria deKapandji,Green eLittler. Homonímia da via não prova autoria da técnica percutânea. Falta fonte histórica/técnica independente;oficialC e comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -75593,7 +75884,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "f82acd1dc862560e3f78abc366a8ab07c4571c4a779122265625b82827a49d78"
+   "questaoSha256": "f82acd1dc862560e3f78abc366a8ab07c4571c4a779122265625b82827a49d78",
+   "pendencia": "Desenho da fixação percutânea daBennett aberto. Corpo45 descreve trajetos de fios e nomeiaWagner para a VIAABERTA,mas não atribui a fixação fechada desenhada aWagner nem diferencia sua autoria deKapandji,Green eLittler. Homonímia da via não prova autoria da técnica percutânea. Falta fonte histórica/técnica independente;oficialC e comentário preservados."
   },
   "trauma-0731": {
    "tema": "trauma",
@@ -76226,8 +76518,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -76241,7 +76533,38 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "49550538ab0632089618d7a9db3ed0f8afd88b7873ed97454c8989acf455597f"
+   "questaoSha256": "49550538ab0632089618d7a9db3ed0f8afd88b7873ed97454c8989acf455597f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fraturas do coronoide",
+       "Instabilidade rotatória posteromedial em varo"
+      ],
+      "blocos": [
+       "fraturas-do-coronoide-7e8453cb",
+       "fraturas-do-coronoide-261ac45a",
+       "fraturas-do-coronoide-67ec539b",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
+       "instabilidade-rotatoria-posteromedial-em-varo-7668a07f"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "48c20ed8536a8049553da2eca0fde2231cfcdd18cd445ed20aa7c078e88fc9ae"
+     }
+    ],
+    "questaoSha256": "49550538ab0632089618d7a9db3ed0f8afd88b7873ed97454c8989acf455597f",
+    "comentarioSha256": "34d08b4afd26dd152db84eff7f34efbd782825117cf762fcf7a7a40a9c5f12fe"
+   }
   },
   "trauma-0759": {
    "tema": "trauma",
@@ -80914,14 +81237,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Ilustração de acesso posterior/lateral ao fêmur distal com duas janelas abertas; setas apontam um ventre muscular em relação ao fêmur e estruturas posteriores. Corpo61 descreve bíceps no canto posterolateral e janelas de Terry/LaPrade, mas não define acessos OSBORNE e BOSWORTH nem os compara, e não fundamenta a identificação da cabeça longa versus curta do bíceps nessa exposição. Falta fonte cirúrgica e legenda anatômica independente para ambas as partes das quatro opções; oficialD intacto.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "25567da4beae0b165bc6df5c00d1fdfe4837880d072f0260a32152eb1b2f7731"
+   "questaoSha256": "25567da4beae0b165bc6df5c00d1fdfe4837880d072f0260a32152eb1b2f7731",
+   "pendencia": "Ilustração de acesso posterior/lateral ao fêmur distal com duas janelas abertas; setas apontam um ventre muscular em relação ao fêmur e estruturas posteriores. Corpo61 descreve bíceps no canto posterolateral e janelas de Terry/LaPrade, mas não define acessos OSBORNE e BOSWORTH nem os compara, e não fundamenta a identificação da cabeça longa versus curta do bíceps nessa exposição. Falta fonte cirúrgica e legenda anatômica independente para ambas as partes das quatro opções; oficialD intacto."
   },
   "trauma-0913": {
    "tema": "trauma",
@@ -82740,14 +83064,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Corte transversal rotulado aberto: A passa na região extensora lateral, B entre ancôneo e extensor ulnar, C contorna posteriormente a ulna. Corpo40 identifica Kocher entre ancôneo e extensor ulnar e descreve divisão do tendão extensor, mas não mapeia Kaplan, Boyd, Morrey e Hotchkiss aos intervalos A/B/C. Reconhecer apenasB/Kocher não distingue alternativaA deC. Falta descrição independente dos acessos restantes e sua relação com o corte; oficialA mantido.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "3b5b1e51c2f894daa54e41ff6ba1d52fc15af8c3350034e0d6b2dd647ebf9797"
+   "questaoSha256": "3b5b1e51c2f894daa54e41ff6ba1d52fc15af8c3350034e0d6b2dd647ebf9797",
+   "pendencia": "Corte transversal rotulado aberto: A passa na região extensora lateral, B entre ancôneo e extensor ulnar, C contorna posteriormente a ulna. Corpo40 identifica Kocher entre ancôneo e extensor ulnar e descreve divisão do tendão extensor, mas não mapeia Kaplan, Boyd, Morrey e Hotchkiss aos intervalos A/B/C. Reconhecer apenasB/Kocher não distingue alternativaA deC. Falta descrição independente dos acessos restantes e sua relação com o corte; oficialA mantido."
   },
   "trauma-0977": {
    "tema": "trauma",
@@ -82808,14 +83133,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem aberta mostra POSICIONAMENTO do braço e antebraço para a incidência oblíqua interna, sem radiografia do resultado. Corpo40 cita AP/perfil e radiocapitelar, mas não compara oblíqua interna para olécrano versus capítulo, colo e tuberosidade radial. Não transferir indicação da radiocapitelar para essa projeção nem inferir lesão na fotografia de posicionamento. Falta definição radiográfica independente da incidência e comparação das quatro estruturas; oficialB intacto.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "0ea7deeb5d7b768264146bfc17cbceb2e8c30917ed2c54373e98b79e85695886"
+   "questaoSha256": "0ea7deeb5d7b768264146bfc17cbceb2e8c30917ed2c54373e98b79e85695886",
+   "pendencia": "Imagem aberta mostra POSICIONAMENTO do braço e antebraço para a incidência oblíqua interna, sem radiografia do resultado. Corpo40 cita AP/perfil e radiocapitelar, mas não compara oblíqua interna para olécrano versus capítulo, colo e tuberosidade radial. Não transferir indicação da radiocapitelar para essa projeção nem inferir lesão na fotografia de posicionamento. Falta definição radiográfica independente da incidência e comparação das quatro estruturas; oficialB intacto."
   },
   "trauma-0979": {
    "tema": "trauma",
@@ -82849,14 +83175,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Perfil esquemático aberto mostra fio e duas distâncias A/B na técnica de banda de tensão. Corpo40 explica saída anteromedial dos fios, túnel distal ao coronoide e riscos de trajetos laterais/mediais, mas não estabelece limites numéricos máximo de A e mínimo de B nem define seus pontos de medição como no desenho. Faltam os10/15/20mm e referências anatômicas independentes de cada medida; não obter escala pela imagem. OficialA mantido.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "00eb27b5d7f5fafa3aa12eb567fca413e81613600f1f0eaf246a2ebb1b729778"
+   "questaoSha256": "00eb27b5d7f5fafa3aa12eb567fca413e81613600f1f0eaf246a2ebb1b729778",
+   "pendencia": "Perfil esquemático aberto mostra fio e duas distâncias A/B na técnica de banda de tensão. Corpo40 explica saída anteromedial dos fios, túnel distal ao coronoide e riscos de trajetos laterais/mediais, mas não estabelece limites numéricos máximo de A e mínimo de B nem define seus pontos de medição como no desenho. Faltam os10/15/20mm e referências anatômicas independentes de cada medida; não obter escala pela imagem. OficialA mantido."
   },
   "trauma-0981": {
    "tema": "trauma",
@@ -84245,14 +84572,15 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura posterior da perna aberta,seta em área triangular da tíbia proximal. Corpo61 descreve fixação do poplíteo na face posteromedial proximal,mas faltam os limites comparativos das fixações de sóleo,gastrocnêmio e semimembranáceo para conferir todos os distratores. O resumo também usa nasce na tíbia e se insere no fêmur,enquanto o enunciado chama a fixação tibial de inserção:é necessário esclarecer a nomenclatura anatômica sem corrigir o resumo por memória. OficialB preservado;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "076263f30e98518717ba810ef90fe7d6406ae737ff4af203d5db5265f1f88de0"
+   "questaoSha256": "076263f30e98518717ba810ef90fe7d6406ae737ff4af203d5db5265f1f88de0",
+   "pendencia": "Figura posterior da perna aberta,seta em área triangular da tíbia proximal. Corpo61 descreve fixação do poplíteo na face posteromedial proximal,mas faltam os limites comparativos das fixações de sóleo,gastrocnêmio e semimembranáceo para conferir todos os distratores. O resumo também usa nasce na tíbia e se insere no fêmur,enquanto o enunciado chama a fixação tibial de inserção:é necessário esclarecer a nomenclatura anatômica sem corrigir o resumo por memória. OficialB preservado;sem selo."
   },
   "trauma-1024": {
    "tema": "trauma",
@@ -84296,14 +84624,15 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura posterior do joelho aberta,seta1em tendão medial delgado e2em estrutura mais larga com expansões. Corpos61/62 citam semimembranáceo e pata de ganso,mas faltam trajeto,planos e aparência anatômica comparativa de semitendíneo,semimembranáceo,grácil e fáscia do sartório para identificar com segurança as duas setas e conferir as quatro combinações. OficialC preservado;não confirmar a identificação por comentário antigo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "493424075bae5053fb0cb3815d5e17e162032ed46213267d6c28598c76e20adf"
+   "questaoSha256": "493424075bae5053fb0cb3815d5e17e162032ed46213267d6c28598c76e20adf",
+   "pendencia": "Figura posterior do joelho aberta,seta1em tendão medial delgado e2em estrutura mais larga com expansões. Corpos61/62 citam semimembranáceo e pata de ganso,mas faltam trajeto,planos e aparência anatômica comparativa de semitendíneo,semimembranáceo,grácil e fáscia do sartório para identificar com segurança as duas setas e conferir as quatro combinações. OficialC preservado;não confirmar a identificação por comentário antigo."
   },
   "trauma-1027": {
    "tema": "trauma",
@@ -84499,14 +84828,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Fotografia de posicionamento aberta,com45graus de flexão e indicação de10graus do feixe. Fonte61 pedePAem flexão no crônico e62 descreveAPcaudal do planalto,mas não definem comparativamenteRosenberg,Insall,Merchant eHughston. Falta ligar o posicionamento ao epônimo e explicar os outros três protocolos;não usar reconhecimento visual sem fonte dos epônimos para selarD.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "75f6838e7c086f4945926b4e1ce7d63063cbecb098f405320344006bb505183b"
+   "questaoSha256": "75f6838e7c086f4945926b4e1ce7d63063cbecb098f405320344006bb505183b",
+   "pendencia": "Fotografia de posicionamento aberta,com45graus de flexão e indicação de10graus do feixe. Fonte61 pedePAem flexão no crônico e62 descreveAPcaudal do planalto,mas não definem comparativamenteRosenberg,Insall,Merchant eHughston. Falta ligar o posicionamento ao epônimo e explicar os outros três protocolos;não usar reconhecimento visual sem fonte dos epônimos para selarD."
   },
   "trauma-1036": {
    "tema": "trauma",

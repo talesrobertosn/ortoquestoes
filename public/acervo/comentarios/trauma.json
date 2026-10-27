@@ -5328,19 +5328,44 @@
   }
  },
  "trauma-0179": {
-  "conceito": "**A imagem.** Mostra o **primeiro metacarpo** com uma fratura na base. O pequeno fragmento **volar-ulnar** fica no lugar, preso ao trapézio, enquanto a diáfise do metacarpo é puxada para **proximal** (seta para baixo, pelo tendão do abdutor longo do polegar) e roda, puxada em **adução** pelo adutor do polegar (seta no colo). Esse é o desenho da **fratura de Bennett**.\n\n**A fratura de Bennett.** É uma **fratura-luxação intra-articular** da base do primeiro metacarpo, com um fragmento **volar-ulnar** de tamanho variável. O mecanismo é uma **carga axial** sobre o polegar parcialmente fletido (soco, queda).\n\n**Por que o pequeno fragmento fica no lugar.** Ele está preso ao **ligamento oblíquo anterior** (o ligamento \"bico\", beak ligament), que o mantém junto ao trapézio.\n\n**Por que a diáfise desvia.** Os músculos inseridos na diáfise ficam sem oposição:\n\n| Músculo | Inserção | Desvio da diáfise |\n|---|---|---|\n| **Abdutor longo do polegar** | **Base do primeiro metacarpo** (lado radial e dorsal) | Desvio **proximal**, **radial** e **dorsal** (subluxação) |\n| **Adutor do polegar** | Falange proximal do polegar | **Adução** e **supinação** da diáfise, fechando o primeiro espaço |\n| Extensores do polegar | Falanges | Contribuem para o encurtamento |\n\nO resultado é a **subluxação** da articulação **trapeziometacarpal**: a base do metacarpo escapa para dorsal e radial, e a cabeça vai para a palma.\n\n**A fratura de Rolando, para comparar.** É a fratura **cominutiva** (em T, em Y ou multifragmentada) da base do primeiro metacarpo, com prognóstico pior.\n\n**O tratamento da fratura de Bennett.** Como a força do abdutor longo tende a reluxar a articulação, a fratura é **instável** e geralmente cirúrgica.\n- **Redução fechada**: tração longitudinal, **pronação** e abdução do metacarpo, com pressão sobre a base.\n- **Fixação percutânea** com fios de Kirschner (do metacarpo ao trapézio ou ao segundo metacarpo), ou **redução aberta** com parafusos quando o fragmento é grande ou a redução não é anatômica.\n- Restaurar a congruência articular (degrau menor que 1 a 2 mm) reduz o risco de **artrose** trapeziometacarpal.",
-  "correta": "**Correta: C (abdutor longo do polegar).** Na fratura de Bennett, o **abdutor longo do polegar**, inserido na base do primeiro metacarpo, puxa a diáfise para **proximal, radial e dorsal**, enquanto o fragmento volar-ulnar fica preso ao trapézio pelo ligamento oblíquo anterior. O adutor do polegar fecha o primeiro espaço.",
+  "conceito": "A fratura ilustrada é uma **Bennett**: parte da base do primeiro metacarpo permanece ligada ao trapézio, e a diáfise perde sua relação articular normal. O músculo destacado pelo mecanismo de tração é o **abdutor longo do polegar**, inserido na base do metacarpo e responsável pela principal força de migração proximal (Rockwood adultos, 10ª ed., cap. 45, Bennett).\n\nO deslocamento final é tridimensional: proximal, radial e dorsal, com adução e supinação. Ele não precisa ser entendido como três ações independentes de um único músculo. O resumo destaca a tração proximal do abdutor longo e a contribuição do adutor para adução e supinação; o resultado combinado é a subluxação mostrada.\n\nA distinção entre os dois fragmentos é essencial. O pequeno fragmento volar-ulnar fica retido pelo ligamento oblíquo anterior; é o restante do metacarpo que migra. Confundir qual parte permaneceu presa leva a atribuir a deformidade ao ligamento que, nesse caso, conserva o fragmento no lugar.\n\nEssa mecânica explica por que o objetivo do tratamento é recuperar a congruência da carpometacarpal. Corrigir apenas o aspecto de um traço sem restabelecer a posição da diáfise sobre o trapézio não resolve a subluxação.",
+  "correta": "**Correta: C (abdutor longo do polegar).** Sua inserção na base do metacarpo permite transmitir a tração que puxa a diáfise para proximal. Ele faz parte do sistema de forças que produz o deslocamento proximal, radial e dorsal, enquanto o adutor acrescenta adução e supinação.",
   "incorretas": {
-   "A": "O **braquiorradial** insere-se no **processo estiloide do rádio**, e não no primeiro metacarpo. Ele é a força deformante nas fraturas do rádio distal.",
-   "B": "O **abdutor curto do polegar** insere-se na falange proximal e é um músculo tenar. Não é a força deformante clássica da fratura de Bennett.",
-   "D": "O **extensor longo do polegar** insere-se na falange distal e contribui pouco. A força principal é o abdutor longo do polegar."
+   "A": "O braquiorradial não é a força deformante identificada para a base do primeiro metacarpo no esquema de Bennett. A questão pede um vetor específico da lesão, e o trecho o vincula à inserção do abdutor longo na base metacarpiana. A ideia genérica de um músculo do antebraço tracionar o membro não explica essa relação local.",
+   "B": "O distrator troca **longo** por **curto**. O ponto decisivo não é apenas o nome “abdutor”, mas a inserção na base do metacarpo à qual o resumo atribui a migração proximal. Essa relação é descrita para o abdutor longo, não para o curto.",
+   "D": "O extensor longo não substitui o abdutor longo no mecanismo apresentado. A migração da diáfise na Bennett deve ser explicada pelas forças na base e pela contribuição rotacional do adutor, e não por associar automaticamente o desvio dorsal a qualquer músculo chamado extensor."
   },
   "referencias": [
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Base do polegar: Bennett, Rolando e a luxação da CMC."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Base do polegar: Bennett, Rolando e a luxação da CMC"
+     ],
+     "blocos": [
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600"
+     ],
+     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+     "trechosSha256": "b516662cc3cbe25f32dcbd0ee45eb8fe2ed7b511da09cc063f87bc1c2c37c83e"
+    }
+   ],
+   "questaoSha256": "76110b9f1a4970e033d40fc536bee61f3934d674c44a5500414b6fa8023efd55",
+   "comentarioSha256": "26b1e0ebdb55f2b18f0ef9420e5ed4b01e3abe98c9ed1697663dd6a88ff753aa"
+  }
  },
  "trauma-0181": {
   "conceito": "As radiografias mostram uma fratura do colo cirúrgico **sem impacção**, associada a fragmento do **tubérculo maior**. Na **AO/OTA clássica**, essa combinação é **11B2**, alternativa B.\n\nO prefixo **11** identifica úmero proximal. A letra separa um padrão extra-articular unifocal (A), extra-articular bifocal (B) e articular (C). Dentro de B, o ponto que decide entre **B1 e B2** é a impacção do colo: B1 é impactado; B2, não impactado, com um tubérculo desviado (Rockwood, 10ª ed., cap. 36, “AO/OTA: o número 11 e as três letras”).\n\n“Articular” aqui não significa apenas fratura perto da articulação. Os grupos C apresentados no resumo envolvem cabeça ou colo anatômico. Não se deve trocar B2 por C apenas porque a fratura é proximal e está desviada.\n\n| Grupo clássico | Padrão do resumo |\n|---|---|\n| 11B1 | Colo cirúrgico impactado e um tubérculo desviado |\n| 11B2 | Colo cirúrgico não impactado e um tubérculo desviado |\n| 11C1 | Colo anatômico pouco desviado |\n| 11C2 | Colo anatômico muito desviado |\n\nA versão de 2018 foi simplificada; esta questão usa os subgrupos clássicos. A classificação organiza o padrão, mas o tratamento ainda exige avaliar osso, paciente e reconstrução.",
@@ -15104,15 +15129,49 @@
   }
  },
  "trauma-0757": {
+  "conceito": "A reconstrução tomográfica mostra uma fratura que envolve a **faceta anteromedial do coronoide**. Na classificação de O’Driscoll, esse é o **tipo II**. O critério é o **lugar da fratura**, diferente da classificação de Regan-Morrey, que usa a altura comprometida (Rockwood adultos, 10ª ed., cap. 40, fraturas do coronoide).\n\nO local também sugere o mecanismo. A faceta anteromedial sofre com **varo, pronação e carga axial**; a tróclea comprime essa região, e frequentemente há avulsão do colateral lateral. É o padrão de instabilidade rotatória posteromedial em varo, distinto da lesão da ponta do coronoide associada à tríade terrível.\n\nAs categorias principais são: **I, ponta; II, faceta anteromedial; III, base**. Os subtipos refinam a extensão dentro de cada grupo. Não é necessário estimar milímetros ou atribuir um subtipo não demonstrado para reconhecer que a área envolvida pertence ao grupo II.\n\nA tomografia tridimensional é útil porque o perfil simples pode esconder a distribuição medial do fragmento. Classificar apenas pela impressão de “fragmento pequeno” perde a informação do contraforte anteromedial e pode subestimar sua importância para a estabilidade.\n\nA perda desse contraforte importa mesmo quando o fragmento não parece grande. O coronoide participa da contenção primária do varo; a lesão da faceta anteromedial altera a cinemática, e reparar apenas o ligamento lateral pode não restabelecer a estabilidade. Por isso o capítulo relaciona o padrão da fratura ao conjunto de lesões, em vez de decidir apenas pela quantidade de osso destacada.\n\nNos casos instáveis que precisam de cirurgia, o resumo descreve placa de suporte na faceta anteromedial e avaliação do colateral lateral. Casos pequenos, pouco desviados e com articulação concêntrica podem ter tratamento conservador selecionado. A classificação da imagem orienta essa investigação; ela não comprova, sozinha, todos os critérios para indicar uma operação.",
+  "correta": "**Correta: C (tipo II).** O fragmento compromete a faceta anteromedial. Essa localização, e não somente sua altura, é a característica que define o grupo II de O’Driscoll e orienta a investigação do padrão posteromedial em varo.",
   "incorretas": {
-   "A": "**Ponta pequena.** O tipo I subtipo 1 é a fratura da ponta com até 2 mm.",
-   "B": "**Ponta maior.** O tipo I subtipo 2 é a fratura da ponta acima de 2 mm, sem acometer a faceta anteromedial.",
-   "D": "**Base.** O tipo III envolve a base do coronoide, com mais de 50% da altura."
+   "A": "O tipo I, subtipo 1, é uma fratura da ponta de até 2 mm. O desenho classificatório desse grupo não corresponde à distribuição anteromedial da lesão apresentada. Não se deve escolher um subtipo de ponta apenas porque o fragmento parece pequeno numa das projeções.",
+   "B": "O tipo I, subtipo 2, também é da ponta, acima de 2 mm e menor que 50% da altura. Trocar o tamanho dentro do grupo I não muda o fato de que ele descreve outra localização. A tomografia permite reconhecer a faceta anteromedial, que pertence ao grupo II.",
+   "D": "O tipo III é da base do coronoide, podendo incluir fratura transolecraniana em seu subtipo 2. Ele se associa a lesões da ulna proximal e do olécrano, diferentes do padrão anteromedial em varo. A classificação pede localizar o traço, sem tratar todo fragmento mais amplo como fratura basal."
   },
-  "conceito": "**A classificação de O'Driscoll.** Divide as fraturas do **coronoide** pela **anatomia**, porque cada região se associa a um padrão de instabilidade. **Tipo I**: fratura da **ponta**, com subtipo 1 (até 2 mm) e 2 (acima de 2 mm); típica da **tríade terrível**. **Tipo II**: fratura da **faceta anteromedial**; subtipo 1 a borda anteromedial, subtipo 2 a borda com a ponta, subtipo 3 a borda com o **tubérculo sublime**. **Tipo III**: fratura da **base**, envolvendo mais de 50% da altura; subtipo 1 corpo e base, subtipo 2 basal com fratura transolecraniana.\n\n**A faceta anteromedial e a instabilidade em varo.** A fratura da faceta anteromedial acontece num mecanismo de **varo**, **rotação interna** e carga axial: a lesão posteromedial rotatória em varo. O **colateral lateral** se rompe (avulsão do epicôndilo), e o **úmero** esmaga a faceta anteromedial. Não há fratura da cabeça do rádio. Na radiografia, o fragmento pode ser **pequeno** e o cotovelo parecer reduzido, e a lesão é subestimada; a **tomografia** mostra o fragmento e o **sinal do duplo contorno** medial.\n\n**Por que fixar.** A faceta anteromedial é o **suporte medial** do cotovelo. Sem ela, o cotovelo **subluxa em varo**, a articulação fica incongruente e a **artrose** se instala rapidamente. Por isso, fragmentos da faceta anteromedial, mesmo pequenos, costumam ser **fixados** (placa de suporte ou parafusos, por via medial, entre as cabeças do flexor ulnar do carpo ou pelo \"over the top\"), junto com o **reparo do colateral lateral**.\n\n**Como diferenciar.** Tipo I: pequeno fragmento da ponta, junto com fratura da cabeça do rádio na tríade. Tipo II: fragmento medial, sem fratura da cabeça do rádio, com lesão lateral. Tipo III: fragmento grande da base.\n\n**Na prova:** O'Driscoll **II** = **faceta anteromedial**, instabilidade **posteromedial em varo**, geralmente com fixação.",
-  "correta": "**II.** As imagens mostram a fratura da faceta anteromedial do coronoide, o tipo II de O'Driscoll, ligado à instabilidade posteromedial em varo.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Instabilidade rotatória posteromedial em varo."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fraturas do coronoide",
+      "Instabilidade rotatória posteromedial em varo"
+     ],
+     "blocos": [
+      "fraturas-do-coronoide-7e8453cb",
+      "fraturas-do-coronoide-261ac45a",
+      "fraturas-do-coronoide-67ec539b",
+      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+      "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+      "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+      "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
+      "instabilidade-rotatoria-posteromedial-em-varo-7668a07f"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "48c20ed8536a8049553da2eca0fde2231cfcdd18cd445ed20aa7c078e88fc9ae"
+    }
+   ],
+   "questaoSha256": "49550538ab0632089618d7a9db3ed0f8afd88b7873ed97454c8989acf455597f",
+   "comentarioSha256": "34d08b4afd26dd152db84eff7f34efbd782825117cf762fcf7a7a40a9c5f12fe"
+  }
  },
  "trauma-0758": {
   "incorretas": {

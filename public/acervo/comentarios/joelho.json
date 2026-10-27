@@ -5443,18 +5443,43 @@
   "conferido": false
  },
  "joelho-0351": {
-  "conceito": "**Os meniscos são peças de fibrocartilagem que aumentam a congruência femorotibial e distribuem carga.** Na vista superior, o medial tem contorno mais aberto, semelhante a um C, e o lateral é mais próximo de um círculo. A posição da fíbula identifica o compartimento lateral. A cartilagem articular do platô não deve ser confundida com a borda meniscal que a circunda.\n\nO menisco medial tem ligação firme com a cápsula e com a porção profunda do ligamento colateral tibial. Essas fixações limitam sua mobilidade. O lateral é mais móvel e não tem a mesma aderência ao colateral fibular. Na região posterolateral, o tendão do poplíteo passa pelo hiato poplíteo e interrompe a continuidade da fixação capsular local.\n\nAs raízes fixam os cornos dos meniscos à tíbia. As fibras colágenas predominantemente circunferenciais transformam compressão em tensão ao longo do anel meniscal. O ligamento transverso conecta anteriormente os meniscos; os ligamentos meniscofemorais ligam o corno posterior do lateral ao côndilo femoral medial. São trajetos distintos, apesar de todos aparecerem próximos aos cruzados.\n\n**HUMPHREY passa anterior ao LCP; WRISBERG passa posterior a ele.** A referência é o próprio LCP, não o menisco medial. Essa relação explica por que, em uma exposição posterior, uma faixa ao lado do cruzado pode ser um ligamento meniscofemoral. Forma, raízes e vínculos capsulares completam a leitura da imagem.",
-  "correta": "**B: menisco lateral.** A seta está no crescente do compartimento junto à fíbula, mais fechado e circular. O menisco circunda a superfície do platô e não deve ser confundido com sua cartilagem central.",
+  "conceito": "A seta está sobre a estrutura periférica curva que recobre parte do **planalto lateral**: o **menisco lateral**. A pequena articulação da fíbula visível à direita do desenho ajuda a orientar o lado lateral. A estrutura apontada é ampla e acompanha a periferia do planalto; não está no centro da eminência intercondilar (Rockwood adultos, 10ª ed., cap. 62, anatomia aplicada).\n\nOs dois meniscos não devem ser identificados apenas pela palavra “medial” ou “lateral” em uma posição da tela. Primeiro se orienta a anatomia do desenho; depois se reconhece a estrutura. O capítulo informa que o menisco lateral cobre proporcionalmente mais do seu planalto que o medial cobre do seu lado, e que os meniscos se prendem pelos ligamentos meniscotibiais.\n\nA eminência e as espinhas separam os planaltos e recebem as estruturas cruzadas. O ligamento cruzado anterior está na região intercondilar, à frente da espinha medial, enquanto a seta acompanha uma estrutura periférica do compartimento lateral. Essa diferença de posição ajuda a separar menisco de ligamento.\n\nA identificação também é útil nas fraturas: nas laterais por valgo e carga axial, o menisco lateral pode ficar preso entre os ossos ou no traço. Por isso, reconhecer sua relação com a superfície do planalto é mais importante que decorar o desenho isoladamente.",
+  "correta": "**Correta: B (menisco lateral).** A seta acompanha o menisco do lado da fíbula, recobrindo a periferia do planalto lateral. Posição, formato curvo e relação com a superfície articular concordam com essa identificação.",
   "incorretas": {
-   "A": "Fica no compartimento oposto à fíbula e tem contorno mais aberto, em C. A orientação óssea permite diferenciar os dois sem depender da posição direita ou esquerda da tela.",
-   "C": "É uma estrutura central intercondilar com fixação anterior na tíbia. Não forma o crescente periférico que circunda o platô lateral indicado pela seta.",
-   "D": "É uma faixa que conecta os meniscos na região anterior. A estrutura indicada é uma peça fibrocartilaginosa ampla do compartimento lateral, e não a conexão entre os dois meniscos."
+   "A": "O menisco medial está no compartimento oposto, à esquerda do desenho. A presença da fíbula à direita fornece a referência para não inverter os lados. Ambos são estruturas meniscais, mas a seta não está no lado medial.",
+   "C": "O cruzado anterior ocupa a região intercondilar e não forma a ampla estrutura periférica apontada. A inserção anterior à espinha medial, descrita no capítulo, fica no centro do desenho. Confundir a seta com o cruzado ignora a diferença entre uma faixa ligamentar central e o menisco que acompanha o planalto.",
+   "D": "O ligamento transverso corresponde à faixa anterior que cruza entre as regiões dos meniscos no desenho. A seta está sobre a estrutura lateral larga e curva, não sobre essa faixa transversal. É preciso seguir a ponta da seta até a área de tecido que ela indica, em vez de escolher uma estrutura apenas por estar na mesma vista superior."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo 9, Joelho/Perna: Osteologia, Articulações, Músculos, Nervos e Artérias."
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial; Anatomia aplicada."
   ],
-  "geradoEm": "2026-10-11",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Lesões associadas: menisco, ligamentos e o colateral medial",
+      "Anatomia aplicada"
+     ],
+     "blocos": [
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+      "anatomia-aplicada-df446291"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "fedfaaa32ecf7ceec593c3a8ed9bda605d408c0cc53a817aa405681fa2f5c59a"
+    }
+   ],
+   "questaoSha256": "ac662cfe5bcc615bde9752ebaabb5716ee2126d454c1e4dbbe775d0ecdb686bf",
+   "comentarioSha256": "bb9d88ce463822da656ad7c38a37ffca54b54733a2a8e5db6514abe3c795f306"
+  }
  },
  "joelho-0352": {
   "conceito": "**Os meniscos são peças de fibrocartilagem que aumentam a congruência femorotibial e distribuem carga.** Na vista superior, o medial tem contorno mais aberto, semelhante a um C, e o lateral é mais próximo de um círculo. A posição da fíbula identifica o compartimento lateral. A cartilagem articular do platô não deve ser confundida com a borda meniscal que a circunda.\n\nO menisco medial tem ligação firme com a cápsula e com a porção profunda do ligamento colateral tibial. Essas fixações limitam sua mobilidade. O lateral é mais móvel e não tem a mesma aderência ao colateral fibular. Na região posterolateral, o tendão do poplíteo passa pelo hiato poplíteo e interrompe a continuidade da fixação capsular local.\n\nAs raízes fixam os cornos dos meniscos à tíbia. As fibras colágenas predominantemente circunferenciais transformam compressão em tensão ao longo do anel meniscal. O ligamento transverso conecta anteriormente os meniscos; os ligamentos meniscofemorais ligam o corno posterior do lateral ao côndilo femoral medial. São trajetos distintos, apesar de todos aparecerem próximos aos cruzados.\n\n**HUMPHREY passa anterior ao LCP; WRISBERG passa posterior a ele.** A referência é o próprio LCP, não o menisco medial. Essa relação explica por que, em uma exposição posterior, uma faixa ao lado do cruzado pode ser um ligamento meniscofemoral. Forma, raízes e vínculos capsulares completam a leitura da imagem.",

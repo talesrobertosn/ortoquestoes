@@ -1,0 +1,155 @@
+[
+  {
+    "id": "pediatria-0535",
+    "questaoSha256": "909d0f5779bf64bf39fba9ce3214bb873ac587b635c87a54c4a8af52d4f7b434",
+    "comentarioAnteriorSha256": "71040a063eee161aee0746e53182a50994cbf526f783ff3ebbb316d4ce0ac3f5",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c"
+      },
+      {
+        "id": "rockwood10-62-planalto-tibial",
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8"
+      }
+    ],
+    "imagensInspecionadas": [
+      "pediatria/pediatria-0535-1.jpeg"
+    ],
+    "pendencia": "Figura aberta:avulsão da eminência tibial com elevação anterior e continuidade posterior aparente. Falta definição independente dos quatro tiposI/II/III/IV deMeyersMcKeever e do papel da dobradiça posterior/cominuição. A classificaçãoOgden da tuberosidade não pode ser usada para a espinha tibial. OficialB e comentário preservados sem selo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "pediatria-0959",
+    "questaoSha256": "c5b7a055472ca98f6aebb338134906e2db792103c3b8d1bc79bd506f69e832bc",
+    "comentarioAnteriorSha256": "7096317aa4d24f0c96e3559eeaa8d4dbcc1300edcde5ad8debab13818e233ca7",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f"
+      },
+      {
+        "id": "rockwoodcriancas10-25-diafise-femur",
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a"
+      },
+      {
+        "id": "rockwoodcriancas10-29-diafise-tibia",
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7"
+      }
+    ],
+    "imagensInspecionadas": [
+      "tepop-2024-061.png"
+    ],
+    "pendencia": "Montagem das quatro radiografias aberta. O corpo29 sustenta mecanismo torsional de lesões tibiais da criança pequena,e01/25 discutem idade e suspeita de trauma não acidental,mas não fornecem toda a correlação específica exigida:compressão anteroposterior torácica nas costelas do lactente,queda cotidiana na fratura do cotovelo e combinação de trauma direto/torção/compressão no úmero de4meses. Falta fonte para comparar TODOS os quatro mecanismos e associações de idade,sem diagnosticar maus-tratos por traço isolado. OficialB preservado;sem selo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "joelho-0101",
+    "questaoSha256": "bc2b22179fe0c7dfe4a635bd08bc28f94f997038c954cb4c94ac3047948c3dad",
+    "comentarioAnteriorSha256": "9a378302d5b906c82af76b667a191e5b7fec936b1ec2502ae047c1fbcefeadca",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-61-luxacao-joelho",
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913"
+      }
+    ],
+    "imagensInspecionadas": [
+      "joelho/joelho-0101-1.jpeg"
+    ],
+    "pendencia": "Desenho com trajetos femorais,fibular e tibial aberto. Corpo61 defineLaPrade e seu túnel tibial,mas faltam descrição independente e distinção das técnicasLarson,Clancy eHughston. Reconhecer um candidato pelo túnel não verifica o significado dos outros três epônimos. Necessária fonte comparativa das reconstruções para confirmarC e analisar cada alternativa,sem usar o comentário antigo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "trauma-1023",
+    "questaoSha256": "076263f30e98518717ba810ef90fe7d6406ae737ff4af203d5db5265f1f88de0",
+    "comentarioAnteriorSha256": "b6e8b73617dbb08c7a18a832b203831b5b77b5dee3ea4772853f7f296684b923",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-61-luxacao-joelho",
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913"
+      },
+      {
+        "id": "rockwood10-62-planalto-tibial",
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8"
+      }
+    ],
+    "imagensInspecionadas": [
+      "trauma/trauma-1023-1.jpeg"
+    ],
+    "pendencia": "Figura posterior da perna aberta,seta em área triangular da tíbia proximal. Corpo61 descreve fixação do poplíteo na face posteromedial proximal,mas faltam os limites comparativos das fixações de sóleo,gastrocnêmio e semimembranáceo para conferir todos os distratores. O resumo também usa nasce na tíbia e se insere no fêmur,enquanto o enunciado chama a fixação tibial de inserção:é necessário esclarecer a nomenclatura anatômica sem corrigir o resumo por memória. OficialB preservado;sem selo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "trauma-1026",
+    "questaoSha256": "493424075bae5053fb0cb3815d5e17e162032ed46213267d6c28598c76e20adf",
+    "comentarioAnteriorSha256": "44281f9c3edfe0b50fcd14f2513e70401980f44e2340beaa5cc013de9121366b",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-61-luxacao-joelho",
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913"
+      },
+      {
+        "id": "rockwood10-62-planalto-tibial",
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8"
+      }
+    ],
+    "imagensInspecionadas": [
+      "trauma/trauma-1026-1.jpeg"
+    ],
+    "pendencia": "Figura posterior do joelho aberta,seta1em tendão medial delgado e2em estrutura mais larga com expansões. Corpos61/62 citam semimembranáceo e pata de ganso,mas faltam trajeto,planos e aparência anatômica comparativa de semitendíneo,semimembranáceo,grácil e fáscia do sartório para identificar com segurança as duas setas e conferir as quatro combinações. OficialC preservado;não confirmar a identificação por comentário antigo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "trauma-1035",
+    "questaoSha256": "75f6838e7c086f4945926b4e1ce7d63063cbecb098f405320344006bb505183b",
+    "comentarioAnteriorSha256": "f5fed0224b539668d85888c63c12a54b02a693955b997c9890313578c71db071",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-61-luxacao-joelho",
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913"
+      },
+      {
+        "id": "rockwood10-62-planalto-tibial",
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8"
+      }
+    ],
+    "imagensInspecionadas": [
+      "trauma/trauma-1035-1.jpeg"
+    ],
+    "pendencia": "Fotografia de posicionamento aberta,com45graus de flexão e indicação de10graus do feixe. Fonte61 pedePAem flexão no crônico e62 descreveAPcaudal do planalto,mas não definem comparativamenteRosenberg,Insall,Merchant eHughston. Falta ligar o posicionamento ao epônimo e explicar os outros três protocolos;não usar reconhecimento visual sem fonte dos epônimos para selarD.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "mao-1298",
+    "questaoSha256": "065fe5c86aa3d52d242d6c6cf5623988197bb77165f15b58fde5a1e6c5c4c3ec",
+    "comentarioAnteriorSha256": "9a43f4df4c03ddbffd3c91627ff611cbe4ce9256d8afb0881fea4e904ae16b8a",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-45-fraturas-mao",
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231"
+      }
+    ],
+    "imagensInspecionadas": [
+      "mao/usp-sp-2025-q016-2.webp",
+      "mao/usp-sp-2025-q016-3.webp"
+    ],
+    "pendencia": "Duas radiografias abertas e luxação dorsal daMCF do indicador identificada. Corpo45 sustenta vias dorsal/volar/combinada,placa volar interposta e liberação deA1em vez deA2. Entretanto,não especifica qual feixe digital do indicador fica USUALMENTE subcutâneo,nem o compara com o feixeULNAR da alternativaD. Dizer apenas que os feixes estão próximos não demonstra a lateralidade exigida. Falta anatomia independente desse deslocamento para conferir integralmenteA/B/C/D;oficialA preservado,sem selo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "mao-1550",
+    "questaoSha256": "a56012e01f003fbbfb5de1744160b1d9d3d637c8a3e491bb31b762f795d1bb7e",
+    "comentarioAnteriorSha256": "089319e4a68ac70dd3220ba5e276c70af7a02cfba836e7a6464ab4955679c26f",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-44-carpo",
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+      }
+    ],
+    "imagensInspecionadas": [
+      "mao/usp-sp-2026-q028-1.png"
+    ],
+    "pendencia": "PA eperfil abertos;diástase escafossemilunar visível sem incidência de estresse indicada,sustentando padrão estático. Corpo44 diferencia dinâmico/estático e exige redutibilidade,tecido reparável e cartilagem para escolher reconstrução versus salvamento. O caso não informa redutibilidade/avaliação cartilaginosa,e o resumo não descreve a técnicaMathoulin nem a comparação específica entre reconstrução dorsal+volar e artrodese rádio-escafo-semilunar com ressecção do polo distal. Falta essa base para validar tratamentoD e todos os distratores sem inventar achados clínicos ou artroscópicos. OficialD preservado;sem selo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  }
+]

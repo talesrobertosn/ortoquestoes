@@ -1,0 +1,82 @@
+[
+  {
+    "id": "trauma-0473",
+    "questaoSha256": "a480778a48ef4f666c67776fc9fac8d032f03f3d50996bfdbbb5998223e41712",
+    "comentarioAnteriorSha256": "968919b6c787037045a4f7b20a53ee6db950c51029ba6c2fe323d3334bc70454",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-45-fraturas-mao",
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231"
+      }
+    ],
+    "imagensInspecionadas": [
+      "trauma/trauma-0473-1.jpeg"
+    ],
+    "pendencia": "Radiografias daIFP em frente eperfil abertas,com fragmento na base da falange média. Corpo45 explica hiperextensão com translação dorsal,avulsão da borda volar e compressão axial com pilão,mas não demonstra especificamente a combinação compressãoAXIAL+desvioLATERAL do oficialE nem como distinguir desse mecanismo apenasdesvio lateral ou axial+leveflexão pelas imagens. Falta correlação independente do traço mostrado com essa combinação e as outras quatro opções;sem selo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "trauma-0730",
+    "questaoSha256": "f82acd1dc862560e3f78abc366a8ab07c4571c4a779122265625b82827a49d78",
+    "comentarioAnteriorSha256": "4c6a7af1075f68a34ee30c33681556da3a4c2158f5f8195c59842667fb1d9235",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-45-fraturas-mao",
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231"
+      }
+    ],
+    "imagensInspecionadas": [
+      "trauma/trauma-0730-1.jpeg"
+    ],
+    "pendencia": "Desenho da fixação percutânea daBennett aberto. Corpo45 descreve trajetos de fios e nomeiaWagner para a VIAABERTA,mas não atribui a fixação fechada desenhada aWagner nem diferencia sua autoria deKapandji,Green eLittler. Homonímia da via não prova autoria da técnica percutânea. Falta fonte histórica/técnica independente;oficialC e comentário preservados.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "ombro-cotovelo-0197",
+    "questaoSha256": "6fca73966825c1e89fa5f7bfa01d1b102087cdfdf2e8292d283a4fc0040d451f",
+    "comentarioAnteriorSha256": "8c1a3e32dc0e8c6c3682001ece63aec214eb40548b9b56dd12d0435fd5ab8b72",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-40-cotovelo-cabeca-radio",
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92"
+      }
+    ],
+    "imagensInspecionadas": [
+      "ombro-cotovelo/ombro-cotovelo-0198-1.jpeg"
+    ],
+    "pendencia": "Perfil aberto mostra subluxação com coronoide apoiado na tróclea,compatível comperched. Corpo40 descreve sequência lateral/cápsula/medial,mas não mapeia explicitamente os estágiosI/II/IIIa/IIIb e a relação do bloqueio perched com estágioII. A nota contextual menciona a questão sem fornecer o quadro classificatório. Faltam numeração e lesões específicas para distinguirA/B/C/D;não criar esse mapeamento por memória.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "ombro-cotovelo-0249",
+    "questaoSha256": "102c6d31202719586c615b3206be3c4ae855b96e3a69bc5f8458bb24c5dd771b",
+    "comentarioAnteriorSha256": "4fde1bc77fe0bc3d25f586fe1fd628060c20a13930b743c61e0337fcd2aefdba",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-40-cotovelo-cabeca-radio",
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92"
+      }
+    ],
+    "imagensInspecionadas": [
+      "ombro-cotovelo/ombro-cotovelo-0250-1.jpeg"
+    ],
+    "pendencia": "Figura aberta mostra complexoLATERAL,com banda3do epicôndilo à ulna e quatro elementos numerados. A nota contextual do resumo associa essa questão ao feixeANTERIOR do colateralMEDIAL,em desacordo com a figura. O corpo40 define três componentes laterais,mas não identifica a quarta banda/acessória do desenho,impedindo análise anatômica completa de1/2/3/4. Falta legenda/fonte independente para todas as estruturas e explicitar a direção de estabilidade do superlativo. Não chamar3de feixe medial nem usar a nota contextual como prova;oficialC preservado.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "ombro-cotovelo-0441",
+    "questaoSha256": "0960a4e2c6ffbe36d38c69e492524d055bbd0192d4f83fffab73f51d5608f0ef",
+    "comentarioAnteriorSha256": "332fc1a2a10127f3fc46f3e9913ec2af35c0758b0f476131dda7b08f85bcea05",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-40-cotovelo-cabeca-radio",
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92"
+      }
+    ],
+    "imagensInspecionadas": [
+      "ombro-cotovelo/ombro-cotovelo-0572-1.png"
+    ],
+    "pendencia": "Desenho aberto trazperched,valgus,carga axial e rotação. Corpo40 dá a sequência de ruptura lateral/cápsula/medial,mas não define os estágiosI,II,IIIa,IIIb nem os subtipos de lesão medial que os diferenciam. Falta correlação numerada independente para confirmarII/B e analisarI/IIIa/IIIb;reconhecer a figura por memória não substitui a fonte.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  }
+]

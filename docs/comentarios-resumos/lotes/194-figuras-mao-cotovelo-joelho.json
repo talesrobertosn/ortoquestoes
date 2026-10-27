@@ -1,0 +1,207 @@
+{
+  "mao-1716": {
+    "questaoSha256": "ec1456ea09c2f6c91c5f478f5ff7d02bac868945a25c3175733b1e762dbc5223",
+    "comentarioAnteriorSha256": "7cde75c20da809bb51b3f9c90b979d84d466f799f079b79ec51cb4afc666dfc4",
+    "comentario": {
+      "conceito": "O desenho mostra uma fratura de **Bennett**, articular parcial da base do primeiro metacarpo. O pequeno fragmento volar-ulnar fica preso ao trapézio pelo ligamento oblíquo anterior; a diáfise e a maior parte da superfície articular se deslocam. As setas representam forças diferentes, e a pergunta pede sua origem na ordem: **migração proximal** e **supinação** (Rockwood adultos, 10ª ed., cap. 45, Bennett).\n\nO **abdutor longo do polegar**, inserido na base do metacarpo, é a principal força que puxa a diáfise para proximal. O **adutor do polegar** contribui para adução e supinação. Juntas, essas forças deixam a diáfise proximal, radial e dorsal, enquanto o fragmento volar-ulnar permanece relativamente no lugar.\n\nDescrever apenas “o metacarpo foi puxado” perde a informação que decide a questão. A seta longitudinal corresponde ao encurtamento; a seta curva corresponde à rotação. O mesmo fragmento pode sofrer translação e rotação simultaneamente, produzidas por componentes distintos do sistema muscular.\n\nA redução precisa desfazer esse conjunto de desvios e restabelecer uma articulação concêntrica. Não basta aproximar os fragmentos no eixo longitudinal e deixar a rotação e a subluxação articular persistirem.",
+      "correta": "**Correta: A (abdutor longo e adutor do polegar).** O abdutor longo responde pela migração proximal, e o adutor, pela adução e supinação. A ordem dos nomes corresponde à ordem dos movimentos pedidos e às setas longitudinal e curva do desenho.",
+      "incorretas": {
+        "B": "A opção usa os dois músculos relevantes, mas troca suas funções. O resumo atribui o encurtamento principalmente ao abdutor longo, e a supinação ao adutor. Reconhecer os nomes não basta quando o enunciado pede a correspondência entre cada força e cada movimento.",
+        "C": "A dupla extensor curto e flexor longo substitui os dois vetores descritos para a diáfise na Bennett. O desenho não está comparando flexão e extensão do polegar: mostra encurtamento do metacarpo e supinação do fragmento. Esses movimentos são explicados pelo abdutor longo e pelo adutor na seção consultada.",
+        "D": "A presença de dois músculos “longos” não identifica o par deformante. A opção reúne flexor e extensor, enquanto a questão exige separar o vetor proximal do abdutor longo do vetor rotacional do adutor. Escolher pela ideia genérica de tração muscular deixa sem explicação a seta de supinação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Base do polegar: Bennett, Rolando e a luxação da CMC."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Base do polegar: Bennett, Rolando e a luxação da CMC"
+        ],
+        "blocos": [
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "b516662cc3cbe25f32dcbd0ee45eb8fe2ed7b511da09cc063f87bc1c2c37c83e"
+      }
+    ],
+    "imagensConferidas": [
+      "mao/mao-1716-1.jpeg"
+    ]
+  },
+  "trauma-0179": {
+    "questaoSha256": "76110b9f1a4970e033d40fc536bee61f3934d674c44a5500414b6fa8023efd55",
+    "comentarioAnteriorSha256": "59d2b4be6d14ffe191cc39468b59e1d1ab4cdad66d30e2d4f4bc7b346b54b258",
+    "comentario": {
+      "conceito": "A fratura ilustrada é uma **Bennett**: parte da base do primeiro metacarpo permanece ligada ao trapézio, e a diáfise perde sua relação articular normal. O músculo destacado pelo mecanismo de tração é o **abdutor longo do polegar**, inserido na base do metacarpo e responsável pela principal força de migração proximal (Rockwood adultos, 10ª ed., cap. 45, Bennett).\n\nO deslocamento final é tridimensional: proximal, radial e dorsal, com adução e supinação. Ele não precisa ser entendido como três ações independentes de um único músculo. O resumo destaca a tração proximal do abdutor longo e a contribuição do adutor para adução e supinação; o resultado combinado é a subluxação mostrada.\n\nA distinção entre os dois fragmentos é essencial. O pequeno fragmento volar-ulnar fica retido pelo ligamento oblíquo anterior; é o restante do metacarpo que migra. Confundir qual parte permaneceu presa leva a atribuir a deformidade ao ligamento que, nesse caso, conserva o fragmento no lugar.\n\nEssa mecânica explica por que o objetivo do tratamento é recuperar a congruência da carpometacarpal. Corrigir apenas o aspecto de um traço sem restabelecer a posição da diáfise sobre o trapézio não resolve a subluxação.",
+      "correta": "**Correta: C (abdutor longo do polegar).** Sua inserção na base do metacarpo permite transmitir a tração que puxa a diáfise para proximal. Ele faz parte do sistema de forças que produz o deslocamento proximal, radial e dorsal, enquanto o adutor acrescenta adução e supinação.",
+      "incorretas": {
+        "A": "O braquiorradial não é a força deformante identificada para a base do primeiro metacarpo no esquema de Bennett. A questão pede um vetor específico da lesão, e o trecho o vincula à inserção do abdutor longo na base metacarpiana. A ideia genérica de um músculo do antebraço tracionar o membro não explica essa relação local.",
+        "B": "O distrator troca **longo** por **curto**. O ponto decisivo não é apenas o nome “abdutor”, mas a inserção na base do metacarpo à qual o resumo atribui a migração proximal. Essa relação é descrita para o abdutor longo, não para o curto.",
+        "D": "O extensor longo não substitui o abdutor longo no mecanismo apresentado. A migração da diáfise na Bennett deve ser explicada pelas forças na base e pela contribuição rotacional do adutor, e não por associar automaticamente o desvio dorsal a qualquer músculo chamado extensor."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Base do polegar: Bennett, Rolando e a luxação da CMC."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Base do polegar: Bennett, Rolando e a luxação da CMC"
+        ],
+        "blocos": [
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "b516662cc3cbe25f32dcbd0ee45eb8fe2ed7b511da09cc063f87bc1c2c37c83e"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0179-1.jpeg"
+    ]
+  },
+  "joelho-0351": {
+    "questaoSha256": "ac662cfe5bcc615bde9752ebaabb5716ee2126d454c1e4dbbe775d0ecdb686bf",
+    "comentarioAnteriorSha256": "d40a2173a253fbcaa132144481ce65d9eb6a5300b6024f432722e3e3f2e2011c",
+    "comentario": {
+      "conceito": "A seta está sobre a estrutura periférica curva que recobre parte do **planalto lateral**: o **menisco lateral**. A pequena articulação da fíbula visível à direita do desenho ajuda a orientar o lado lateral. A estrutura apontada é ampla e acompanha a periferia do planalto; não está no centro da eminência intercondilar (Rockwood adultos, 10ª ed., cap. 62, anatomia aplicada).\n\nOs dois meniscos não devem ser identificados apenas pela palavra “medial” ou “lateral” em uma posição da tela. Primeiro se orienta a anatomia do desenho; depois se reconhece a estrutura. O capítulo informa que o menisco lateral cobre proporcionalmente mais do seu planalto que o medial cobre do seu lado, e que os meniscos se prendem pelos ligamentos meniscotibiais.\n\nA eminência e as espinhas separam os planaltos e recebem as estruturas cruzadas. O ligamento cruzado anterior está na região intercondilar, à frente da espinha medial, enquanto a seta acompanha uma estrutura periférica do compartimento lateral. Essa diferença de posição ajuda a separar menisco de ligamento.\n\nA identificação também é útil nas fraturas: nas laterais por valgo e carga axial, o menisco lateral pode ficar preso entre os ossos ou no traço. Por isso, reconhecer sua relação com a superfície do planalto é mais importante que decorar o desenho isoladamente.",
+      "correta": "**Correta: B (menisco lateral).** A seta acompanha o menisco do lado da fíbula, recobrindo a periferia do planalto lateral. Posição, formato curvo e relação com a superfície articular concordam com essa identificação.",
+      "incorretas": {
+        "A": "O menisco medial está no compartimento oposto, à esquerda do desenho. A presença da fíbula à direita fornece a referência para não inverter os lados. Ambos são estruturas meniscais, mas a seta não está no lado medial.",
+        "C": "O cruzado anterior ocupa a região intercondilar e não forma a ampla estrutura periférica apontada. A inserção anterior à espinha medial, descrita no capítulo, fica no centro do desenho. Confundir a seta com o cruzado ignora a diferença entre uma faixa ligamentar central e o menisco que acompanha o planalto.",
+        "D": "O ligamento transverso corresponde à faixa anterior que cruza entre as regiões dos meniscos no desenho. A seta está sobre a estrutura lateral larga e curva, não sobre essa faixa transversal. É preciso seguir a ponta da seta até a área de tecido que ela indica, em vez de escolher uma estrutura apenas por estar na mesma vista superior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial; Anatomia aplicada."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lesões associadas: menisco, ligamentos e o colateral medial",
+          "Anatomia aplicada"
+        ],
+        "blocos": [
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+          "anatomia-aplicada-df446291"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "fedfaaa32ecf7ceec593c3a8ed9bda605d408c0cc53a817aa405681fa2f5c59a"
+      }
+    ],
+    "imagensConferidas": [
+      "joelho/joelho-0351-1.jpeg"
+    ]
+  },
+  "ombro-cotovelo-0064": {
+    "questaoSha256": "c68b5b83a2c54ee54c8695b79b0a40a8678a952ea390297ad38dab39bbb496bf",
+    "comentarioAnteriorSha256": "30c17c36208a4a9bec121cc1a403f05a28fe6a696f5de42fa8a7d9217da5521a",
+    "comentario": {
+      "conceito": "A imagem mostra perda da congruência radiocapitelar, no padrão de **instabilidade rotatória posterolateral**. Nesse mecanismo, rádio e ulna giram juntos em supinação em relação ao úmero, e a cabeça do rádio subluxa para trás do capítulo. A banda cuja insuficiência é associada a esse padrão é o **colateral ulnar lateral** (Rockwood adultos, 10ª ed., cap. 40, complexo lateral e instabilidade crônica).\n\nA radiografia não mostra diretamente as fibras do ligamento. A identificação vem da relação entre o padrão de deslocamento e o estabilizador que o contém. O complexo lateral reúne colateral radial, anular e colateral ulnar lateral; este último chega à crista do supinador da ulna e é o componente destacado pelo capítulo na instabilidade posterolateral.\n\nO lado medial tem outra função dominante: o feixe anterior do colateral medial é o restritor-chave do valgo, e o posterior é secundário ao valgo e participa da restrição à rotação da ulna. Todos contribuem para estabilidade, mas contribuição não significa que qualquer banda possa ser usada como sinônimo da lesão posterolateral.\n\nA mecânica também explica a proteção pela pronação quando o complexo lateral está insuficiente. A supinação reproduz o movimento desestabilizador, enquanto a pronação pode ajudar a manter o alinhamento. Isso não substitui a avaliação da congruência e da estabilidade de cada caso.",
+      "correta": "**Correta: A (banda ulnar do colateral lateral).** É o colateral ulnar lateral, que passa por trás do colateral radial e alcança a ulna na crista do supinador. Sua falha está relacionada ao giro posterolateral do antebraço e à subluxação posterior da cabeça radial descritos.",
+      "incorretas": {
+        "B": "O colateral radial pertence ao mesmo complexo e se mistura ao ligamento anular, mas não é a banda que o capítulo destaca como falhando na instabilidade posterolateral. A distinção anatômica é que o colateral ulnar lateral alcança a crista do supinador da ulna, compondo a contenção do giro do antebraço.",
+        "C": "O feixe anterior do colateral medial é o estabilizador-chave contra o valgo, do epicôndilo medial ao tubérculo sublime. Essa função é importante, mas não identifica a banda lateral ligada à subluxação posterolateral mostrada. Confundir direção de estabilidade com um “ligamento mais importante” universal troca o mecanismo da questão.",
+        "D": "O feixe posterior é parte do colateral medial, com papel secundário no valgo e participação na rotação da ulna. Ele não corresponde ao colateral ulnar lateral que o capítulo associa ao padrão posterolateral. A localização no lado medial e sua função devem ser diferenciadas da banda lateral pedida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Quem segura o cotovelo; Instabilidade rotatória posterolateral crônica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Quem segura o cotovelo",
+          "Instabilidade rotatória posterolateral crônica"
+        ],
+        "blocos": [
+          "quem-segura-o-cotovelo-d2f0137f",
+          "quem-segura-o-cotovelo-2b1e3945",
+          "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+          "quem-segura-o-cotovelo-7b7c7f11"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "8b5de920302bcdae46768b412931157b54af7db2131a461a993b6c0a7f870e36"
+      }
+    ],
+    "imagensConferidas": [
+      "ombro-cotovelo/ombro-cotovelo-0064-1.png"
+    ]
+  },
+  "trauma-0757": {
+    "questaoSha256": "49550538ab0632089618d7a9db3ed0f8afd88b7873ed97454c8989acf455597f",
+    "comentarioAnteriorSha256": "24649aaff519659836512bc5ec7c3aa17f28cc15a5d17c1d69a0bc929f53081f",
+    "comentario": {
+      "conceito": "A reconstrução tomográfica mostra uma fratura que envolve a **faceta anteromedial do coronoide**. Na classificação de O’Driscoll, esse é o **tipo II**. O critério é o **lugar da fratura**, diferente da classificação de Regan-Morrey, que usa a altura comprometida (Rockwood adultos, 10ª ed., cap. 40, fraturas do coronoide).\n\nO local também sugere o mecanismo. A faceta anteromedial sofre com **varo, pronação e carga axial**; a tróclea comprime essa região, e frequentemente há avulsão do colateral lateral. É o padrão de instabilidade rotatória posteromedial em varo, distinto da lesão da ponta do coronoide associada à tríade terrível.\n\nAs categorias principais são: **I, ponta; II, faceta anteromedial; III, base**. Os subtipos refinam a extensão dentro de cada grupo. Não é necessário estimar milímetros ou atribuir um subtipo não demonstrado para reconhecer que a área envolvida pertence ao grupo II.\n\nA tomografia tridimensional é útil porque o perfil simples pode esconder a distribuição medial do fragmento. Classificar apenas pela impressão de “fragmento pequeno” perde a informação do contraforte anteromedial e pode subestimar sua importância para a estabilidade.\n\nA perda desse contraforte importa mesmo quando o fragmento não parece grande. O coronoide participa da contenção primária do varo; a lesão da faceta anteromedial altera a cinemática, e reparar apenas o ligamento lateral pode não restabelecer a estabilidade. Por isso o capítulo relaciona o padrão da fratura ao conjunto de lesões, em vez de decidir apenas pela quantidade de osso destacada.\n\nNos casos instáveis que precisam de cirurgia, o resumo descreve placa de suporte na faceta anteromedial e avaliação do colateral lateral. Casos pequenos, pouco desviados e com articulação concêntrica podem ter tratamento conservador selecionado. A classificação da imagem orienta essa investigação; ela não comprova, sozinha, todos os critérios para indicar uma operação.",
+      "correta": "**Correta: C (tipo II).** O fragmento compromete a faceta anteromedial. Essa localização, e não somente sua altura, é a característica que define o grupo II de O’Driscoll e orienta a investigação do padrão posteromedial em varo.",
+      "incorretas": {
+        "A": "O tipo I, subtipo 1, é uma fratura da ponta de até 2 mm. O desenho classificatório desse grupo não corresponde à distribuição anteromedial da lesão apresentada. Não se deve escolher um subtipo de ponta apenas porque o fragmento parece pequeno numa das projeções.",
+        "B": "O tipo I, subtipo 2, também é da ponta, acima de 2 mm e menor que 50% da altura. Trocar o tamanho dentro do grupo I não muda o fato de que ele descreve outra localização. A tomografia permite reconhecer a faceta anteromedial, que pertence ao grupo II.",
+        "D": "O tipo III é da base do coronoide, podendo incluir fratura transolecraniana em seu subtipo 2. Ele se associa a lesões da ulna proximal e do olécrano, diferentes do padrão anteromedial em varo. A classificação pede localizar o traço, sem tratar todo fragmento mais amplo como fratura basal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Instabilidade rotatória posteromedial em varo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fraturas do coronoide",
+          "Instabilidade rotatória posteromedial em varo"
+        ],
+        "blocos": [
+          "fraturas-do-coronoide-7e8453cb",
+          "fraturas-do-coronoide-261ac45a",
+          "fraturas-do-coronoide-67ec539b",
+          "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+          "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+          "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+          "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
+          "instabilidade-rotatoria-posteromedial-em-varo-7668a07f"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "48c20ed8536a8049553da2eca0fde2231cfcdd18cd445ed20aa7c078e88fc9ae"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0757-1.jpeg"
+    ]
+  }
+}

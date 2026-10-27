@@ -23736,18 +23736,44 @@
   "conferido": false
  },
  "mao-1508": {
-  "conceito": "**Uma luxação metacarpofalângica dorsal complexa pode prender a cabeça do metacarpo nos tecidos volares.** A cabeça aparece através de um plano palmar alterado, enquanto placa volar e outras estruturas formam um bloqueio à redução. A imagem operatória aponta a cabeça do segundo metacarpo.\n\nNão se trata da polia A1, uma estrutura fibrosa de contenção dos flexores, nem da placa volar isolada. A forma óssea arredondada e o contexto de luxação ajudam a reconhecer o que a seta indica.\n\nUma redução bloqueada exige identificar a anatomia interposta. Manobras repetidas com tração podem agravar o aprisionamento e ameaçar feixes. A abordagem deve proteger nervos e vasos próximos à cabeça deslocada.\n\nDepois da redução, avaliam-se congruência, lesões e estabilidade para planejar mobilização. Ver um osso numa ferida não basta para definir o reparo completo, mas localizar a cabeça explica o mecanismo de bloqueio.",
-  "correta": "Cabeça do segundo metacarpo corresponde à estrutura indicada e ao contexto de luxação complexa. O deslocamento altera planos e aproxima feixes. A identificação orienta a redução cuidadosa e a proteção dos tecidos.",
+  "conceito": "A seta aponta uma estrutura **branca, arredondada e com superfície articular lisa** que aparece na incisão palmar do indicador: é a **cabeça do segundo metacarpiano**. A fotografia mostra o que pode acontecer numa luxação dorsal complexa da metacarpofalângica: a falange vai para dorsal e a cabeça atravessa os tecidos volares, tornando-se acessível pela palma (Rockwood adultos, 10ª ed., cap. 45, luxação metacarpofalângica).\n\nA palavra “dorsal” descreve o deslocamento da falange em relação ao metacarpo. Ela não significa que a cabeça metacarpiana só possa ser vista por uma ferida dorsal. Esse referencial é essencial para compreender por que uma luxação dorsal pode produzir uma proeminência ou um campo operatório palmar como o da imagem.\n\nNa forma complexa, a **placa volar fica interposta dorsalmente à cabeça**, entre ela e a falange. O laço descrito por Kaplan reúne lumbrical, tendão flexor, ligamento natatório e ligamento transverso superficial ao redor do colo. O bloqueio à redução não deve ser confundido com a superfície articular que a seta mostra.\n\nAs estruturas precisam ser identificadas antes de qualquer liberação. A via volar pode permitir abertura da polia A1 para afrouxar o laço dos flexores, mas os feixes neurovasculares ficam próximos e podem estar fora de sua posição habitual. Por isso, não é seguro chamar toda estrutura branca encontrada no campo de “polia” ou “placa volar”: formato, superfície e relação com a articulação devem concordar.",
+  "correta": "**Correta: C (cabeça do segundo metacarpiano).** A superfície arredondada e cartilaginosa indicada é a extremidade articular do metacarpo do indicador. Sua exposição volar é coerente com a cabeça atravessando os tecidos da palma na luxação complexa. A seta identifica o osso articular, e não a estrutura interposta que pode impedir a redução.",
   "incorretas": {
-   "A": "Placa volar pode participar da interposição, mas é um tecido fibrocartilaginoso, não a superfície óssea arredondada indicada. Identificar a causa da luxação e a estrutura da seta são perguntas diferentes.",
-   "B": "A1 é uma polia fibrosa relacionada aos flexores. Sua composição e forma não correspondem à cabeça óssea da imagem. O nível metacarpofalângico compartilhado não torna as estruturas equivalentes.",
-   "D": "Banda pré-tendinosa pertence à fáscia palmar. Não é uma superfície articular óssea. A alternativa troca um componente fibroso de revestimento pela cabeça exposta."
+   "A": "A placa volar é importante porque pode se interpor entre a cabeça e a falange, dorsal à cabeça deslocada. Isso explica a irredutibilidade, mas não transforma a placa na superfície arredondada indicada. É preciso distinguir o tecido que bloqueia a redução do osso que atravessou os tecidos volares.",
+   "B": "A polia A1 é uma estrutura que pode ser aberta na abordagem volar para afrouxar o laço dos flexores. Ela não corresponde à cabeça articular lisa e arredondada apontada. Saber qual polia pode ser liberada é diferente de identificar a estrutura óssea já exposta na fotografia.",
+   "D": "Uma banda pré-tendinosa é tecido fibroso, não uma cabeça articular recoberta por cartilagem. A seta não está apontando uma faixa alongada de tecido mole, mas a superfície arredondada do metacarpo. A aparência deve ser interpretada junto com a mecânica da luxação, que explica a cabeça aparecendo na palma."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo Mão: Articulações."
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
   ],
-  "geradoEm": "2026-10-10T20:33:18+00:00",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+     ],
+     "blocos": [
+      "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+      "luxacao-metacarpofalangica-simples-complexa-e-o--67c7bf98"
+     ],
+     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+     "trechosSha256": "21c299a7623012b0c8056b9cce4ec6bbc6c5d376ec9d8fb324acb04a87cc2407"
+    }
+   ],
+   "questaoSha256": "637c79bd98858d2b37f30298a06c6cecb0360ee9f098a84a54a7528f40218b5b",
+   "comentarioSha256": "ae6a09b56ed7005390ac005cb0ddbd6088652c61eba3bf71aefb44f748b52d47"
+  }
  },
  "mao-1509": {
   "conceito": "**A abordagem dorsal do rádio usa intervalos que mudam ao longo do antebraço.** Na região média descrita, extensor curto e abdutor longo do polegar ficam no lado ulnar, enquanto extensores radiais longo e curto do carpo ficam radialmente.\n\nOs tendões do polegar cruzam a região e não mantêm a mesma relação em todos os níveis. Por isso, a pergunta especifica metade do rádio. Transportar um intervalo distal para o segmento médio pode levar a uma identificação errada.\n\nNa região proximal, a relação com supinador e interósseo posterior é importante; mais distalmente, outros tendões e ramos ganham relevância. O corredor muscular não deve ser usado como um mapa fixo de ponta a ponta.\n\nA referência anatômica organiza o acesso, mas proteção neural e descolamento adequado exigem confirmação direta. Dizer qual grupo está de cada lado é mais útil que decorar apenas uma letra.",
@@ -28712,18 +28738,44 @@
   }
  },
  "mao-1716": {
-  "conceito": "**Decompor o desvio ajuda a entender a redução.** O esquema mostra as forças deformantes de BENNETT. O abdutor longo do polegar insere-se na base do primeiro metacarpo e contribui para sua migração proximal. O adutor exerce a força responsável pela adução e supinação do segmento deslocado.\n\nO fragmento volar-ulnar permanece junto à articulação por sua conexão com o ligamento oblíquo palmar. O restante da base e da diáfise não fica preso da mesma maneira, recebendo as forças que encurtam e desviam o metacarpo. É essa combinação que torna a fratura-luxação instável.\n\n**Não reunir toda força em um só músculo.** O desvio final pode ser descrito em mais de um eixo: migração proximal, direção dorsorradial, adução e supinação. Quando a pergunta isola dois componentes, é preciso relacionar cada um à estrutura correspondente. Saber que o abdutor longo é importante não permite atribuir a ele toda a rotação.\n\nA redução busca contrariar essas forças e recuperar congruência com o trapézio. Uma manobra que melhora comprimento, mas não corrige a relação articular, continua insuficiente. Depois, a fixação precisa impedir que as forças musculares reproduzam o deslocamento. O método depende da redução alcançada e da possibilidade de estabilizar o fragmento.",
-  "correta": "**A: abdutor longo e adutor do polegar.** A migração proximal é atribuída ao abdutor longo e a supinação ao adutor. O esquema permite associar a tração na base e a força distal aos componentes distintos do desvio.",
+  "conceito": "O desenho mostra uma fratura de **Bennett**, articular parcial da base do primeiro metacarpo. O pequeno fragmento volar-ulnar fica preso ao trapézio pelo ligamento oblíquo anterior; a diáfise e a maior parte da superfície articular se deslocam. As setas representam forças diferentes, e a pergunta pede sua origem na ordem: **migração proximal** e **supinação** (Rockwood adultos, 10ª ed., cap. 45, Bennett).\n\nO **abdutor longo do polegar**, inserido na base do metacarpo, é a principal força que puxa a diáfise para proximal. O **adutor do polegar** contribui para adução e supinação. Juntas, essas forças deixam a diáfise proximal, radial e dorsal, enquanto o fragmento volar-ulnar permanece relativamente no lugar.\n\nDescrever apenas “o metacarpo foi puxado” perde a informação que decide a questão. A seta longitudinal corresponde ao encurtamento; a seta curva corresponde à rotação. O mesmo fragmento pode sofrer translação e rotação simultaneamente, produzidas por componentes distintos do sistema muscular.\n\nA redução precisa desfazer esse conjunto de desvios e restabelecer uma articulação concêntrica. Não basta aproximar os fragmentos no eixo longitudinal e deixar a rotação e a subluxação articular persistirem.",
+  "correta": "**Correta: A (abdutor longo e adutor do polegar).** O abdutor longo responde pela migração proximal, e o adutor, pela adução e supinação. A ordem dos nomes corresponde à ordem dos movimentos pedidos e às setas longitudinal e curva do desenho.",
   "incorretas": {
-   "B": "Usa os dois músculos pertinentes, mas inverte suas funções no par. A ordem solicitada é migração proximal primeiro e supinação depois.",
-   "C": "Extensor curto e flexor longo têm papéis no aparelho tendíneo do polegar, mas não substituem o abdutor longo na migração proximal e o adutor na supinação de BENNETT.",
-   "D": "Flexor longo e extensor longo inserem-se na falange distal do polegar e atuam na interfalângica. Não são o par de forças deformantes da base metacarpal descrito na figura."
+   "B": "A opção usa os dois músculos relevantes, mas troca suas funções. O resumo atribui o encurtamento principalmente ao abdutor longo, e a supinação ao adutor. Reconhecer os nomes não basta quando o enunciado pede a correspondência entre cada força e cada movimento.",
+   "C": "A dupla extensor curto e flexor longo substitui os dois vetores descritos para a diáfise na Bennett. O desenho não está comparando flexão e extensão do polegar: mostra encurtamento do metacarpo e supinação do fragmento. Esses movimentos são explicados pelo abdutor longo e pelo adutor na seção consultada.",
+   "D": "A presença de dois músculos “longos” não identifica o par deformante. A opção reúne flexor e extensor, enquanto a questão exige separar o vetor proximal do abdutor longo do vetor rotacional do adutor. Escolher pela ideia genérica de tração muscular deixa sem explicação a seta de supinação."
   },
   "referencias": [
-   "Gottschalk MB, Streubel PN, Rizzo M, Capo JT. Hand Fractures and Dislocations. Rockwood and Green's Fractures in Adults, 10ª edição, capítulo 45."
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Base do polegar: Bennett, Rolando e a luxação da CMC."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Base do polegar: Bennett, Rolando e a luxação da CMC"
+     ],
+     "blocos": [
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-da66c281",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-0d10d735",
+      "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f050c600"
+     ],
+     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+     "trechosSha256": "b516662cc3cbe25f32dcbd0ee45eb8fe2ed7b511da09cc063f87bc1c2c37c83e"
+    }
+   ],
+   "questaoSha256": "ec1456ea09c2f6c91c5f478f5ff7d02bac868945a25c3175733b1e762dbc5223",
+   "comentarioSha256": "f070116f8ce7d9f6b2d9fe27f566865fb409c07a2a66cd1407b3474cf6897ea7"
+  }
  },
  "mao-1717": {
   "conceito": "No painel **B**, a superfície articular da base do primeiro metacarpo está dividida em fragmentos e separada da diáfise: é o padrão de **Rolando**, uma fratura articular completa. O painel A ilustra o contraste com o padrão parcial de Bennett.\n\nNa Bennett, um fragmento volar-ulnar permanece preso ao trapézio pelo ligamento oblíquo anterior, enquanto o restante do metacarpo se desloca. Na Rolando, o traço em Y ou T e a cominuição tornam completa a separação da superfície em relação à diáfise. O mecanismo da base do polegar envolve carga axial com o polegar fletido; na Rolando, o resumo destaca maior energia.\n\nA classificação anatômica ajuda a planejar a redução, mas a figura é um esquema e não permite medir desvio ou decidir um implante específico. O objetivo terapêutico descrito é redução concêntrica da CMC, com técnica escolhida conforme o tamanho dos fragmentos e a cominuição. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 45, seções Bennett, Rolando e Tratamento das fraturas da base.",

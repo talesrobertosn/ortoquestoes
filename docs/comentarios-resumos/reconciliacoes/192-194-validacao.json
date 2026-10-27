@@ -1,0 +1,221 @@
+{
+  "baseLeitura": "de3b05b0299e3d11964779b5a715387083ae758b",
+  "baseIntegrada": "887c17c6c7c978dec55195baadb38eef3cff283d",
+  "lotes": {
+    "192": {
+      "revisadas": [
+        "pediatria-0847",
+        "mao-1508"
+      ],
+      "lacunas": [
+        "pediatria-0535",
+        "pediatria-0959",
+        "joelho-0101",
+        "trauma-1023",
+        "trauma-1026",
+        "trauma-1035",
+        "mao-1298",
+        "mao-1550"
+      ]
+    },
+    "193": {
+      "revisadas": [
+        "pediatria-0589",
+        "pediatria-0673"
+      ],
+      "lacunas": [
+        "pediatria-0530",
+        "pediatria-0537",
+        "pediatria-0550",
+        "pediatria-0618",
+        "pediatria-0631",
+        "pediatria-0634",
+        "pediatria-0651",
+        "pediatria-0707"
+      ]
+    },
+    "194": {
+      "revisadas": [
+        "mao-1716",
+        "trauma-0179",
+        "joelho-0351",
+        "ombro-cotovelo-0064",
+        "trauma-0757"
+      ],
+      "lacunas": [
+        "trauma-0473",
+        "trauma-0730",
+        "ombro-cotovelo-0197",
+        "ombro-cotovelo-0249",
+        "ombro-cotovelo-0441"
+      ]
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado na base integrada;falha inicial da amostra0757 resolvida com conteúdo clínico e trechos derivados",
+    "build": "aprovado",
+    "replay": "9/9;21comentários de lacunas intactos;demais bytes preservados",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks192193.log": "ef14b6ffce5289c970631cc9aa88faa2a8b5c97c763611a2e946aa075f6adf6e",
+    "checks192194.log": "819a41c9d594ead193b950f12bcff64004b33a39d4156af2e32d89dc8e90f5ae",
+    "checks192194-final.log": "420464d7f43369f38cb3fb4d64af2b8c9bf6c3f4088a84d5a28e52e12aa621c4",
+    "checks192194-integracao.log": "4c840345a9f1bcebbfff182a68c875e174bcc8261c9ae808ac57fcd32b52a364",
+    "ui192193.log": "411fa5f24685e20ff5db171217fffa6c9f0e190d8d2afba3ffb6d761b1dd6a69",
+    "ui194.log": "96203a678672c3c43179b514965dedaeef2a449866c76f6989c505fd7eb03cda",
+    "ui192194.log": "8224cf5c56c79b2a2936dc1c9c8261fa2503a6a524b567ccd1418e2264463fe1",
+    "conferencia192194-integracao.log": "889b5d1792eb12449a5c86f4f12173671889be6508f7430f06ae5679201a200c",
+    "aplicacao192194-integracao.log": "d315a5d157c34af3b7054d2d33e513d8750cd5ac6f61c6bc12edebb6c19f9207",
+    "remotos192-antes.json": "24cd21e31ceddf43c04643aac733c600eb137bb8f12caad45210e799b0d47e87",
+    "remotos192-final.json": "746edde3f33f23e95fe612602adbcc2d23e9c827a97edd3bd6affd01c7d0a071"
+  },
+  "fontesConsultadas": {
+    "rockwoodcriancas10-01-epidemiologia-fraturas": {
+      "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+      "markdownSha256": "f3c0d07643e3e09728aaac773873ab8964c7a18387c9d4cd2ec9e21524ebb269"
+    },
+    "rockwoodcriancas10-25-diafise-femur": {
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "markdownSha256": "49ee25a8ce502906b2e9bad75b214222ddac18192573e464b036c49898597d35"
+    },
+    "rockwoodcriancas10-27-fise-proximal-tibia": {
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "markdownSha256": "bfe73dbe938035377accdbf07578ffda32aaf53df5f5587e84adcbb251902f3f"
+    },
+    "rockwoodcriancas10-29-diafise-tibia": {
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "markdownSha256": "172ae6debc72b9a12770a274c745c78379da8a1044f1eb92bde4392535688f81"
+    },
+    "rockwood10-40-cotovelo-cabeca-radio": {
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "markdownSha256": "67a27eaeb3c15a985c2bb856ee42cbcd8f153b8c377d43eddeafdebcfae20d88"
+    },
+    "rockwood10-44-carpo": {
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "markdownSha256": "ec093a84cf7e02d91d3cd95633d53bb4210ab58a9bbaa92a300b190d7854dc35"
+    },
+    "rockwood10-45-fraturas-mao": {
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "markdownSha256": "9ab6a8ca6fad48532543a911bbef85e47ad7a596c3b5322f2fc55a00358102f5"
+    },
+    "rockwood10-61-luxacao-joelho": {
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "markdownSha256": "7aefa278135476641be3851c0c9f7ba579c2da8991418eabf69a4ddaa390e617"
+    },
+    "rockwood10-62-planalto-tibial": {
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "markdownSha256": "9bad8b74bf831e54073b025d21783dbb6056c18b56f7248cb821c4420760014d"
+    }
+  },
+  "leitura": "Resumos1(172linhas) e40(554linhas) integrais nesta passagem;demais integrais nas passagens anteriores,hashes inalterados e blocos pertinentes relidos. Só corpos,tabelas e observações diretas das imagens;notas contextuais e comentários antigos não são prova clínica. Sem páginas primárias inventadas.",
+  "visual": {
+    "casos": 9,
+    "larguras": [
+      390,
+      1440
+    ],
+    "respostasEFontesExatas": true,
+    "figurasInspecionadas": 21,
+    "casosIlustrados": 20,
+    "capturasInspecionadas": [
+      "192193-mao-1508-aula-pc.png",
+      "192193-pediatria-0847-aula-cel.png",
+      "192194-joelho-0351-aula-pc.png",
+      "192194-trauma-0757-aula-cel.png"
+    ]
+  },
+  "preservacao": "Casos,opções,IDs,gabaritos oficiais,revisão médica e fontes intactos;conferido:false. Só9membros em5temas;demais bytes preservados.21lacunas sem selo ou resposta provável novos.",
+  "amostraInicio": {
+    "id": "trauma-0757",
+    "motivo": "A amostra usa trechos copiados do comentário;fixture detectou conceito curto e os porquês antigos precisavam acompanhar a revisão.",
+    "mudanca": "Acrescentados mecanismo do contraforte e critérios clínicos com blocos40;gerador existente usado em memória para atualizar somente os quatro porquês da amostra;enunciado/opções/gabarito/imagem e outras9amostras intactos.",
+    "arquivo": "src/dados/amostrasInicio/trauma-0757.json"
+  },
+  "concorrencia": {
+    "prsPreservados": [
+      581,
+      584,
+      585
+    ],
+    "pr585Head": "2ede72c694cd3dd3cad158dd53b0b63d5a683bec",
+    "comentariosRemotos": {
+      "coluna": [
+        "coluna-0001",
+        "coluna-0015",
+        "coluna-0135",
+        "coluna-0251",
+        "coluna-0360",
+        "coluna-0364",
+        "coluna-0399",
+        "coluna-0402",
+        "coluna-0447",
+        "coluna-0532"
+      ],
+      "ombro-cotovelo": [
+        "ombro-cotovelo-0490",
+        "ombro-cotovelo-0527",
+        "ombro-cotovelo-0536",
+        "ombro-cotovelo-0539"
+      ],
+      "trauma": [
+        "trauma-0027",
+        "trauma-0028",
+        "trauma-0106",
+        "trauma-0123",
+        "trauma-0152",
+        "trauma-0162",
+        "trauma-0292",
+        "trauma-0684",
+        "trauma-0722",
+        "trauma-0775",
+        "trauma-0815",
+        "trauma-0859",
+        "trauma-0874",
+        "trauma-1125",
+        "trauma-1204",
+        "trauma-1210"
+      ],
+      "joelho": [],
+      "pediatria": [],
+      "mao": []
+    },
+    "sobreposicaoComLotesOuLacunas": false,
+    "reconciliacao": "Backup integral dos próprios arquivos modificados,fast-forward sem force,controle de fontes/questões/imagens inalteradas,replay viaaplicar/lock sobre887c17c6,catálogo/letras regenerados e todos testes/UI repetidos."
+  },
+  "decisoes": [
+    "0673:0,4×6=2,4mm;2,5mm é aproximação dentre as alternativas,não produto matemático exato.",
+    "0847:tipoIII pelo prolongamento articular,não tamanho do fragmento.",
+    "1508:fotografia mostra cabeça metacarpiana,distinta da placa volar interposta.",
+    "0249:figura do complexoLATERAL não confirma nota contextual sobre feixeMEDIAL;falta anatomia do quarto elemento.",
+    "0197/0441:sequência de rupturas não comprova numeração dos estágios sem quadro independente.",
+    "0730:Wagner como viaaberta não comprova autoria da pinagem desenhada.",
+    "1083–1092:já revisados ou com pendência1087;nenhuma reaplicação artificial."
+  ],
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 416,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 473,
+      "pendente-inspecao-imagem": 44,
+      "revisada": 1592
+    }
+  },
+  "proximoLote": 195,
+  "publicacaoAnterior": {
+    "pr": 583,
+    "head": "338679067982e3ddb2d94d127833a5ff330bf388",
+    "merge": "2f3d077da989169291626634cfe5b2e80603d05b",
+    "ci": 40491444832,
+    "pages": 40491773000,
+    "job": 122148501582,
+    "producao": "140avulsos integrais,6resumos e letras"
+  },
+  "publicacao": "Só validação local;CI do head,merge,guarda/deploy e produção serão provados noPR."
+}

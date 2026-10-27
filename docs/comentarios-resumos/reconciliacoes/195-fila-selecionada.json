@@ -1,0 +1,116 @@
+{
+  "proximoLote": 195,
+  "revisaoAplicada": false,
+  "candidatos": {
+    "ombro-cotovelo-0121": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549",
+      "imagens": [
+        {
+          "arquivo": "ombro-cotovelo/ombro-cotovelo-0121-1.jpeg",
+          "sha256": "86e36c012a35aef4b5eeec42951b0bc1b37d17fd52f736e4198f090d4053e473",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "ombro-cotovelo-0257": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "6cabc36ab5e2f41a923bb9ce3e00a3dbbe18dc1a9668c9a4b7ec60b98b831f3a",
+      "imagens": [
+        {
+          "arquivo": "ombro-cotovelo/ombro-cotovelo-0258-1.jpeg",
+          "sha256": "9e8dc446f18f282a40e03806b553a5564f9893d17d35bbf14cab989f86995529",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "ombro-cotovelo-0304": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "0c5f8219439a512d960768d1ea15e986d2b1780570e9e722fcef63ccaad89263",
+      "imagens": [
+        {
+          "arquivo": "ombro-cotovelo/ombro-cotovelo-0435-1.jpeg",
+          "sha256": "8e5062a31ed2fd0fae50a835a30e5e13e7edf98f0e90b349928dd0ca5fc8f397",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "ombro-cotovelo-0305": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "0c9042d661bf9888098db5c995284730895938fdff39aad4cce14a8083d51c63",
+      "imagens": [
+        {
+          "arquivo": "ombro-cotovelo/ombro-cotovelo-0436-1.jpeg",
+          "sha256": "e5da581c4817de1b8123cff9d0694c8353bc0bdf4c606673045c2471538ebd3c",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "ombro-cotovelo-0451": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "70a53f51fe4df6eec6b1f03d7cc9371b11c2f764d6bacff3f8a006d1926effc3",
+      "imagens": [
+        {
+          "arquivo": "ombro-cotovelo/ombro-cotovelo-0451-1.jpeg",
+          "sha256": "ae8f83c3143d18d7943e4ec74c136780b299bf0156b5317acc7256643c122d8d",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "trauma-0450": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "e766c796e652c660fac18e5345e7fd66ed7af6bd9fb4f734c3a72467823738d4",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-0450-1.jpeg",
+          "sha256": "c2d02781111c9928ec79cd8a5af1f8756a011d7ac23479f6c8ee024ac6553556",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "trauma-0912": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "25567da4beae0b165bc6df5c00d1fdfe4837880d072f0260a32152eb1b2f7731",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-0912-1.png",
+          "sha256": "16af0419fb5a008636732b8295fa36178432a93f683ad95435802938473ed754",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "trauma-0976": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "3b5b1e51c2f894daa54e41ff6ba1d52fc15af8c3350034e0d6b2dd647ebf9797",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-0976-1.webp",
+          "sha256": "5d064c4e7adde56d080986d2b3c5ff940c6e3f21b8749e4e9971b2d6385ffef3",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "trauma-0978": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "0ea7deeb5d7b768264146bfc17cbceb2e8c30917ed2c54373e98b79e85695886",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-0978-1.png",
+          "sha256": "6eebfe1a78f572f4ce2702e54bf3236455f45253985c91740840762bff487ccb",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "trauma-0980": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "00eb27b5d7f5fafa3aa12eb567fca413e81613600f1f0eaf246a2ebb1b729778",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-0980-1.png",
+          "sha256": "5cead62cc2e2d5fc0eccee9c9251a6eca09175106b670feee8314bbdea7bc767",
+          "abertaNestaSelecao": false
+        }
+      ]
+    }
+  }
+}
