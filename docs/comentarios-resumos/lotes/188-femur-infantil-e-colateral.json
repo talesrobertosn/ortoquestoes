@@ -1,0 +1,391 @@
+{
+  "pediatria-0552": {
+    "questaoSha256": "6939a2e0367e8efaf9eb16414014f18c537cdcc5c72173e38639a816a0205179",
+    "comentarioAnteriorSha256": "536c08d533c2959ffe9f92d0df66285e648803a3856db05f1bef0064933af374",
+    "comentario": {
+      "conceito": "O trauma abre o lado medial do joelho em **valgo**. O ligamento colateral tibial, também chamado colateral medial, fica sob tração; como sua inserção femoral está na epífise, essa tração chega ao osso em crescimento. Na criança, o ligamento é mais resistente que a fise, e a falha pode ocorrer pela fise e pela epífise do côndilo medial, produzindo o padrão III de Salter-Harris (Rockwood crianças, 10ª ed., cap. 26, Biomechanics of Injury e classificação).\n\nÉ preciso separar **a estrutura que transmite a força** da **estrutura que acaba fraturando**. A existência de um ligamento íntegro não impede a fratura: ele pode funcionar como o elemento que leva a carga até a região fisária mais fraca. No adulto com fise fechada, o mesmo raciocínio de competição entre resistências favorece uma lesão do próprio colateral.\n\nO tipo III atravessa a fise e sai pela epífise até a superfície articular. Portanto, não se trata apenas de um estiramento medial: também há comprometimento da articulação e risco para o crescimento. O capítulo 26 descreve o côndilo medial e o valgo nesse padrão; isso não autoriza confundir o mecanismo com uma eventual lesão associada de cruzado.\n\nA anatomia ajuda a distinguir as opções. O colateral superficial é o principal restritor estático do valgo; o menisco medial e o semimembranáceo participam do complexo posteromedial, enquanto o cruzado posterior tem como função principal conter a translação posterior da tíbia. Participar da estabilidade do joelho não torna todas essas estruturas equivalentes na transmissão do valgo descrito (Rockwood adultos, 10ª ed., cap. 61, complexo medial e função do LCP).",
+      "correta": "**Correta: B (ligamento colateral tibial).** Ao se tensionar no lado que está abrindo, o colateral transmite a força à sua inserção epifisária medial. A fise imatura cede antes do ligamento, e o traço tipo III alcança a articulação através do côndilo. Essa é a ligação entre a direção da força e a fratura, sem exigir que o próprio colateral se rompa.",
+      "incorretas": {
+        "A": "O menisco medial integra as estruturas mediais e posteromediais do joelho, mas isso não o coloca no lugar do colateral como restritor primário do valgo. A pergunta trata da tração transmitida à epífise pelo ligamento preso abaixo da fise. Não basta uma estrutura estar no compartimento medial para produzir esse mecanismo.",
+        "C": "O cruzado posterior contém principalmente a translação posterior da tíbia. Ele também contribui secundariamente para outras direções de estabilidade, inclusive valgo, mas essa contribuição não substitui o papel primário do colateral medial na abertura medial descrita. Lesão associada de cruzado e transmissão da força causadora da fratura são questões distintas.",
+        "D": "O semimembranáceo e suas expansões participam do canto posteromedial, ao lado da cápsula, do oblíquo posterior e do corno posterior do menisco medial. Essa participação estabilizadora não demonstra que ele seja o transmissor do estresse em valgo à fise neste padrão. O mecanismo dado no capítulo 26 depende do colateral esticado e de sua inserção epifisária."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: O mecanismo: o ligamento é mais forte que a fise; Os tipos de SALTER-HARRIS.",
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O lado medial; Cruzado posterior: a pedra fundamental."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "O mecanismo: o ligamento é mais forte que a fise",
+          "Os tipos de SALTER-HARRIS"
+        ],
+        "blocos": [
+          "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-927b59dc",
+          "os-tipos-de-salter-harris-77cf0c10"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "6892ba2d8ae41234c385a318a99851c86d179fcd5863af3d523f9c82bb5ff4cc"
+      },
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "O lado medial",
+          "Cruzado posterior: a pedra fundamental"
+        ],
+        "blocos": [
+          "o-lado-medial-de3e1ab3",
+          "o-lado-medial-9548c808",
+          "cruzado-posterior-a-pedra-fundamental-cd462063"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "f583cfeded9255067cf4872cb60070dc6904232bbe915ae07f2c7d4e358a8437"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1122": {
+    "questaoSha256": "6672d7186f388d99f7e9bb0f1ea79b11d6d879f91b9b0e356d2c8d1c4c5db789",
+    "comentarioAnteriorSha256": "27671ac3bcc4d9e91a2d6c3b3c818a703a6c2e6a758dcec5c8b9fe105c0274ce",
+    "comentario": {
+      "conceito": "A criança tem quatro anos, portanto a linha aplicável é a de **2 a 5 anos** da Tabela 25-2: **15 graus** de varo ou valgo, **20 graus** de angulação anterior ou posterior e **20 mm** de encurtamento. São três medidas diferentes: ângulo no plano coronal, ângulo no plano sagital e perda de comprimento (Rockwood crianças, 10ª ed., cap. 25, Tabela 25-2).\n\nA diferença entre os planos tem fundamento. A remodelação é melhor no plano de movimento das articulações vizinhas, quadril e joelho; por isso a tabela aceita mais angulação anterior ou posterior que varo ou valgo nessa idade. O crescimento restante também permite compensar parte do encurtamento, mas não transforma qualquer desvio em aceitável.\n\nA idade deve ser lida antes dos números. Os limites diminuem à medida que a criança se aproxima da maturidade. A linha do lactente não pode ser aplicada ao pré-escolar, e a do adolescente não deve ser exigida como se um menino de quatro anos tivesse a mesma capacidade de remodelação.\n\nEsses valores respondem à pergunta sobre **tolerância de alinhamento**, não substituem a avaliação da estabilidade da fratura, pele, edema e evolução no gesso. O acompanhamento continua necessário, pois uma redução inicialmente aceitável pode perder posição.",
+      "correta": "**Correta: A.** Os valores de 15 graus coronais, 20 graus sagitais e 20 mm de encurtamento reproduzem a linha de 2 a 5 anos. O caso está dentro dessa faixa, e cada valor deve ser associado à sua unidade e ao seu plano, sem trocar graus por milímetros.",
+      "incorretas": {
+        "B": "Os valores de 30 graus coronais e sagitais e 15 mm de encurtamento pertencem à linha de nascimento a 2 anos. Aplicá-los aos quatro anos ampliaria a tolerância angular usando uma faixa com maior potencial de correção. O erro é a idade da coluna, não a existência desses números na tabela.",
+        "C": "A combinação de 10 graus coronais, 15 graus sagitais e 15 mm corresponde a 6 a 10 anos. É uma linha mais exigente, porque resta menos crescimento. Pode parecer prudente escolher números menores, mas a pergunta pede os limites específicos para quatro anos.",
+        "D": "Os valores de 5 graus coronais, 10 graus sagitais e 10 mm são os da faixa de 11 anos à maturidade. Eles refletem o menor potencial de remodelação do adolescente. Usá-los para o pré-escolar confunde uma tolerância etária com uma regra única para toda criança."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade; Sequelas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade",
+          "Sequelas"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-818fa3dc",
+          "o-tratamento-pela-idade-f93be186",
+          "sequelas-126a4cff"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "35120d032a96a07130be8ecbb415c84e68e827708e9d228b0b80a51b323776b2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1123": {
+    "questaoSha256": "22f464143caaeaca1d3a7d49f7eeb348e370c90b2ad23c4effb3a4a4c287d64d",
+    "comentarioAnteriorSha256": "d0052eee8bcf558f41a13aec2979fdea158813a92d7942f277e1475a0cd840f2",
+    "comentario": {
+      "conceito": "Na redução de uma fratura femoral da criança pequena, alinhar a radiografia não basta: é preciso saber se o foco **mantém o comprimento**. O teste de telescopagem de Thompson avalia essa estabilidade sob fluoroscopia, com **compressão axial suave**. Se ela provoca **mais de 3 cm de encurtamento**, o capítulo prefere tração ao gesso imediato (Rockwood crianças, 10ª ed., cap. 25, gesso pelvipodálico).\n\nO teste mostra uma fratura que pode parecer reduzida enquanto a tração é mantida, mas que colapsa quando os fragmentos são comprimidos. O gesso imediato precisa sustentar uma posição que o foco consiga conservar; uma telescopagem importante sugere que ele perderá comprimento. A decisão busca evitar essa perda, não corrigir um número angular medido em outro plano.\n\nHá dois números com funções diferentes. **Mais de 3 cm no teste** é o sinal de instabilidade que muda a estratégia; **2 cm de encurtamento final** é o limite citado no mesmo trecho para o resultado no gesso. O primeiro não é uma autorização para deixar a criança consolidar com mais de 3 cm.\n\nTambém se distingue idade de estabilidade. Crianças pequenas frequentemente podem ser tratadas com gesso, mas a idade favorável não elimina a necessidade de verificar encurtamento, edema e lesões associadas.",
+      "correta": "**Correta: B.** A compressão axial que encurta o foco em mais de 3 cm evidencia telescopagem importante. Nesse cenário, o capítulo indica tração em vez de gesso imediato, procurando controlar o comprimento antes da etapa de imobilização. O critério vem da resposta mecânica do foco durante o teste.",
+      "incorretas": {
+        "A": "Se a compressão suave não produz encurtamento, o teste não demonstrou a instabilidade longitudinal que justifica trocar o gesso imediato pela tração. Isso não dispensa os demais critérios clínicos, mas é o resultado oposto ao critério de Thompson perguntado.",
+        "C": "Varo é uma deformidade no plano coronal, enquanto telescopagem mede perda de comprimento sob carga axial. O capítulo discute correção angular e cunhas separadamente. Um ângulo de varo não pode substituir o achado de mais de 3 cm de encurtamento como definição desse teste.",
+        "D": "Ter menos de dois anos não é, por si, um resultado positivo da telescopagem. O tratamento da criança pequena pode incluir gesso e, no lactente, Pavlik, conforme o caso. A indicação de tração apresentada na pergunta depende da instabilidade medida, e não apenas da idade."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-e1cfc4a6",
+          "o-tratamento-pela-idade-7049f92d",
+          "o-tratamento-pela-idade-72e9cb2f"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "4a40960ea0fe98aa91be3da1ee15bb6aa9ecad201e4e0f2fd74b963bb81cd389"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1124": {
+    "questaoSha256": "bae06ff6c2404fc84c86add4f61d571d3024e97e2d5fdf02686cc1eba5491c3b",
+    "comentarioAnteriorSha256": "ba06db4d6c4e702bb20b7a1118e3be47af57295e07ad6b9f5ca2102efe2ed0c1",
+    "comentario": {
+      "conceito": "A fratura está na coxa, mas a complicação descrita aparece na **perna**. Na técnica problemática, faz-se primeiro uma bota gessada e usa-se essa bota para tracionar o membro enquanto se completa o gesso com quadril e joelho a 90 graus. A pressão pode se concentrar na fossa poplítea e nos limites do gesso; ao acordar, o encurtamento muscular empurra a perna contra essas bordas (Rockwood crianças, 10ª ed., cap. 25, síndrome compartimental no gesso).\n\nA lesão não se resume a uma marca de pele. A pressão compromete tecidos dentro de compartimentos pouco expansíveis, e a série de Mubarak incluiu lesão muscular extensa e perda de pele no tornozelo. Por isso, uma montagem aparentemente cômoda para obter tração não pode ser julgada apenas pela qualidade da redução radiográfica.\n\nA prevenção ataca o mecanismo: **não tracionar pela bota gessada, deixar o pé fora e usar menos flexão do quadril e do joelho**. O capítulo também orienta não fletir o joelho depois de colocar um coxim na fossa poplítea e observar a criança por 24 horas.\n\nMenos flexão e ausência de tração pela bota não significam abandonar a redução. Significam obtê-la e mantê-la sem transformar o segmento distal em um ponto de pressão perigoso.",
+      "correta": "**Correta: C.** A proposta retira a tração exercida pela bota, deixa o pé livre e reduz a flexão das articulações. São medidas diretamente relacionadas aos pontos de compressão identificados na série. O objetivo é proteger a perna enquanto se trata a fratura do fêmur.",
+      "incorretas": {
+        "A": "Usar a bota inicial como alça de tração reproduz justamente a técnica associada à síndrome compartimental. Completar o gesso em 90 e 90 não neutraliza a pressão criada na fossa poplítea e nas bordas distais. É o mecanismo a evitar, embora facilite a manipulação do membro.",
+        "B": "Aumentar a flexão do joelho e incluir o pé faz o contrário das medidas preventivas citadas. O problema não se resolve prendendo mais o segmento distal: é necessário reduzir a compressão e evitar a tração por uma bota já endurecida.",
+        "D": "Um coxim volumoso colocado antes de fletir o joelho pode ficar comprimido na fossa poplítea. O capítulo adverte especificamente contra fletir o joelho após essa colocação. A presença de acolchoamento não torna segura uma região que passa a ser apertada pela posição final."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-6a7c4a0d"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "bb3428ae055ce6155ccaf4589871bc24646c789e3078de480d67f4dbcf9557c4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1125": {
+    "questaoSha256": "b7ba2ef9cd006020c31b8c5f4f96d3396d35200c723a4bcd51b40bbc8367336d",
+    "comentarioAnteriorSha256": "23cc8ffd57665f306f67df23dd3b055e71cdd720262a62155cb74afb37918fe5",
+    "comentario": {
+      "conceito": "Na fratura supracondiliana, o fragmento que importa é o **distal**, próximo ao joelho. O gastrocnêmio atua sobre essa região e o puxa em **extensão**, produzindo a angulação posterior descrita na questão. A direção é diferente do padrão das fraturas proximais do fêmur, cujo fragmento proximal sofre a ação do iliopsoas, dos abdutores e dos rotadores externos (Rockwood crianças, 10ª ed., cap. 25, músculos e desvio).\n\nO nome do músculo precisa ser ligado ao nível da fratura. Não existe uma única posição do fragmento para toda fratura femoral: quando o traço muda de altura, mudam as inserções que ficam em cada lado. Na diáfise média, parte das forças se compensa; na supracondiliana, a extensão do fragmento distal é uma deformidade característica.\n\nEsse mecanismo explica uma medida de tratamento mencionada no resumo: na criança pequena, o gesso pode manter o joelho fletido para combater a angulação posterior. A posição é uma forma de lidar com a força deformante; não deve ser decorada sem saber qual fragmento se está tentando controlar.\n\nAlém disso, a deformidade residual perto do joelho é menos tolerada que a proximal. A redução e seu seguimento precisam considerar essa diferença, sem presumir que todo desvio se corrigirá igualmente com o crescimento.",
+      "correta": "**Correta: D.** O gastrocnêmio puxa o fragmento distal em extensão, com angulação posterior. A alternativa associa corretamente nível da fratura, fragmento e músculo deformante. É essa combinação que orienta o controle do alinhamento no plano sagital.",
+      "incorretas": {
+        "A": "A alternativa inverte a direção típica ao colocar o fragmento distal em flexão e atribui o padrão ao quadríceps. No esquema do capítulo, a deformidade supracondiliana é extensão pelo gastrocnêmio. Não se deve escolher um músculo apenas por ele atuar no joelho; importa a relação de sua força com os fragmentos.",
+        "B": "Abdução e rotação lateral lembram a ação sobre o fragmento proximal de uma fratura alta, pelos abdutores e rotadores externos. O enunciado pede a supracondiliana e seu fragmento distal. Transportar o padrão proximal para esse nível troca o segmento que recebe as forças.",
+        "C": "Adução pelos adutores não é o padrão que o capítulo atribui ao fragmento distal supracondiliano. Na diáfise média, adutores e extensores ajudam a compensar parte do desvio do proximal. Aqui, o achado decisivo está no plano sagital e decorre do gastrocnêmio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Os músculos decidem o desvio; Situações especiais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Os músculos decidem o desvio",
+          "Situações especiais"
+        ],
+        "blocos": [
+          "os-musculos-decidem-o-desvio-45c94342",
+          "os-musculos-decidem-o-desvio-8f270943",
+          "os-musculos-decidem-o-desvio-8252e1d5",
+          "situacoes-especiais-ac97addc"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "4b96c9b6082ca5a9c6cfa634bc3d2325503c00d00e659316f7d19e1981c9fc75"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1126": {
+    "questaoSha256": "218c839282af6951d94844606591e32068f69a8c0619dd99c491af2c432f5cee",
+    "comentarioAnteriorSha256": "e5ebc2ec593e4595b45792b4f54f88dbebcc0fa1bcf78bb40684230ae88bb306",
+    "comentario": {
+      "conceito": "O enunciado pede o que **não faz parte dos três fatores de Baldwin**. A lista é clínica e contextual: **história suspeita**, **evidência física ou radiográfica de lesão anterior** e **idade abaixo de 18 meses**. O traço em espiral não integra esse trio (Rockwood crianças, 10ª ed., cap. 25, Mechanisms of Injury).\n\nA avaliação de trauma não acidental não pode ser reduzida à forma de uma linha de fratura. A idade ajuda a julgar a compatibilidade do mecanismo; a história precisa ser coerente com o desenvolvimento e as circunstâncias; lesões anteriores podem indicar episódios prévios. São elementos que se combinam, e não três diagnósticos independentes de abuso.\n\nNa série citada no resumo, nenhum dos fatores correspondeu a 4% e a presença dos três a 92%. Esses números descrevem a população estudada e não são uma probabilidade individual automática. O próprio capítulo menciona um estudo de Murphy em que o traço transverso foi mais preditivo que o espiral, contrariando a ideia de que espiral seria uma assinatura diagnóstica.\n\nPara resolver a questão, basta distinguir **um padrão radiográfico** de **um fator que pertence à lista especificada**. Na prática, a preocupação clínica exige avaliação completa; nem um traço isolado confirma maus-tratos, nem sua ausência os exclui.",
+      "correta": "**Correta: A (o item que NÃO pertence ao trio).** O traço em espiral não consta dos três fatores de Baldwin. Ele não deve ser transformado em critério diagnóstico isolado ou em substituto da história, da idade e da busca por lesões anteriores. A questão cobra a composição da lista, não a negação de que uma fratura espiral possa ocorrer em trauma não acidental.",
+      "incorretas": {
+        "B": "História suspeita é um dos três fatores. Ela importa porque a explicação do trauma precisa ser confrontada com os achados e com a capacidade da criança. Como está expressamente na lista, não pode ser escolhida quando se pede a exceção.",
+        "C": "Evidência física ou radiográfica de lesão anterior também integra o trio. Sua importância está em acrescentar informação temporal além da fratura atual. Não significa concluir a causa sem investigar, mas é um dos elementos do modelo citado.",
+        "D": "Idade abaixo de 18 meses é o terceiro fator especificado. Ela ajuda a contextualizar a mobilidade e a plausibilidade do mecanismo relatado. Não é um diagnóstico por idade, mas pertence à lista e, portanto, não é a alternativa de exceção."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Epidemiologia e diagnóstico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Epidemiologia e diagnóstico"
+        ],
+        "blocos": [
+          "epidemiologia-e-diagnostico-a2d443e7"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "8a870f84b00d01af65b6d89cf1f84be29b04b02a22a5ec0a509c4c8530744447"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1127": {
+    "questaoSha256": "208565a89c314dd229c76e4ead0b3b7418f4339813422a82187abe7687458dba",
+    "comentarioAnteriorSha256": "b4c3e1a3f1c805354655fb2e45ae52d15d83672c5a501134542d8a6f3b3a7589",
+    "comentario": {
+      "conceito": "O canal mede **10 mm**, e a regra para cada haste elástica é usar **0,4 vezes o menor diâmetro do canal**. Portanto: **10 × 0,4 = 4 mm por haste**. As duas hastes iguais correspondem, pela soma dos diâmetros, a cerca de 80% do istmo (Rockwood crianças, 10ª ed., cap. 25, técnica das hastes elásticas).\n\nÉ uma regra de **diâmetro**, não de área de secção. Não se deve calcular 40% da área circular nem concluir que cada haste ocupa 80% da largura do canal. O dimensionamento é individual; depois, as duas hastes trabalham em conjunto.\n\nA estabilidade não vem apenas de preencher o canal. O capítulo descreve curvas opostas, com ápice no foco, criando um sistema pré-tensionado que resiste a varo, valgo e torção. A haste flexível preserva movimento suficiente para formação de calo e não deve ser confundida com uma fixação rígida.\n\nO caso é uma fratura transversa da diáfise média aos oito anos, compatível com o padrão estável no comprimento para o qual o método é usado. Peso, localização e estabilidade continuam relevantes na indicação; o cálculo do diâmetro não transforma uma fratura inadequada em indicação de haste.",
+      "correta": "**Correta: B (4 mm).** Cada haste deve ter 40% do menor diâmetro do canal: 0,4 × 10 mm. Duas hastes de 4 mm são o resultado do cálculo apresentado no capítulo; a medida de 8 mm é a soma de seus diâmetros, não o diâmetro de cada implante.",
+      "incorretas": {
+        "A": "Uma haste de 2,5 mm corresponde a 25% de um canal de 10 mm. Isso fica abaixo da proporção de 40% indicada para cada haste neste cálculo. A facilidade de introduzir um implante menor não é o critério usado para dimensionar o sistema pré-tensionado.",
+        "C": "Uma haste de 5 mm corresponde a 50% do canal. O erro é dividir o istmo em duas metades como se duas hastes precisassem ocupar integralmente sua largura. A regra descrita é 0,4 por haste, com duas curvas que trabalham em oposição.",
+        "D": "Oito milímetros representam 80% do canal para uma única haste. O capítulo usa cerca de 80% como soma dos diâmetros das duas, e não para cada uma. Aplicar o total a cada implante duplica indevidamente o parâmetro de dimensionamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: As hastes elásticas; Epidemiologia e diagnóstico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "As hastes elásticas",
+          "Epidemiologia e diagnóstico"
+        ],
+        "blocos": [
+          "as-hastes-elasticas-8c6022b4",
+          "as-hastes-elasticas-67872f88",
+          "epidemiologia-e-diagnostico-efc58237"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "ec629a3a6288dbe1166867472c36c6a52119eed99d6859504e23b65fe150a02f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1128": {
+    "questaoSha256": "2b290dc41bfbeece529063348d8de9db3c427ad58636d40fa47b60f00eed4003",
+    "comentarioAnteriorSha256": "4398bfe4d1a5f59a0525fd3359047dd5a70b27da752bf51c507b22f231078ab3",
+    "comentario": {
+      "conceito": "A haste elástica funciona melhor quando o tamanho da criança e a estabilidade do foco são compatíveis com uma fixação flexível. No estudo multicêntrico de 234 fraturas citado pelo capítulo, o mau resultado foi mais provável **acima de cerca de 49 kg** e **acima de 11 anos**. A alternativa que reúne essas características é a C (Rockwood crianças, 10ª ed., cap. 25, resultados das hastes elásticas).\n\nO resumo informa risco cerca de cinco vezes maior acima de 108,5 libras, aproximadamente 49 kg, e quase quatro vezes maior acima de 11 anos. São associações daquela série, não uma garantia de complicação para toda criança que cruza um limite, nem fatores que devam ser multiplicados para inventar um risco combinado.\n\nA lógica da seleção é que a haste elástica não fornece fixação rígida. Peso e padrão instável no comprimento exigem mais do conjunto; por isso o método é destinado principalmente às fraturas estáveis, nos segmentos centrais, em escolares com menos de 50 kg. A idade ajuda, mas não substitui peso e morfologia.\n\nUma fratura cominutiva ou oblíqua longa não se torna ideal para hastes só porque o paciente tem oito anos. Inversamente, estar na faixa de seis a oito anos não permite ignorar um peso muito alto. A avaliação é do conjunto paciente-fratura.",
+      "correta": "**Correta: C.** Idade acima de 11 anos e peso acima de aproximadamente 49 kg são os fatores associados a mais maus resultados na série multicêntrica. O dado sustenta maior cautela na seleção de hastes flexíveis, sem converter uma associação estatística em proibição absoluta baseada apenas no aniversário ou na balança.",
+      "incorretas": {
+        "A": "A alternativa aponta menores de cinco anos com fratura transversa, enquanto o estudo citado destaca idade maior e peso elevado. A transversa é estável no comprimento, característica favorável ao método. Isso não torna a haste obrigatória no pré-escolar, cuja escolha frequentemente é o gesso, mas não corresponde aos fatores perguntados.",
+        "B": "Diáfise média e estabilidade no comprimento são características do candidato típico à haste elástica. Elas permitem que o sistema controle os fragmentos sem ter de compensar grande tendência ao encurtamento. A opção descreve uma condição favorável, não o grupo associado ao mau resultado na série.",
+        "D": "A faixa de seis a oito anos está dentro da idade habitual do método, mas a expressão “independentemente do peso” elimina um dos fatores relevantes. Uma criança dessa idade pode ser pesada e ter uma fratura instável. A decisão não deve ser feita pela idade isoladamente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: As hastes elásticas; Placa submuscular e fixador externo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "As hastes elásticas",
+          "Placa submuscular e fixador externo"
+        ],
+        "blocos": [
+          "as-hastes-elasticas-4cd941c9",
+          "as-hastes-elasticas-67872f88",
+          "placa-submuscular-e-fixador-externo-09391313"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "d824ff1dbb1665fa8269c4dd0795069b4cc84aa57b5c3732500d9205b57e6e7d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1129": {
+    "questaoSha256": "287a693e3725d8b28f331e83cf21c868ab34c3a3137d8c429fd75e5588178f30",
+    "comentarioAnteriorSha256": "0c2cee80f183ed0ed232735e9ae851bb3bf25d5af5780425ce353f9001a5b72f",
+    "comentario": {
+      "conceito": "O gesso unilateral de marcha é uma montagem específica para a criança pequena que começa a andar e sofre uma fratura femoral de baixa energia. O capítulo descreve **cerca de 45 graus de flexão do quadril e do joelho**, **15 graus de rotação externa**, **molde em valgo** e pé fora do gesso (Rockwood crianças, 10ª ed., cap. 25, gesso sentado e de marcha).\n\nO molde em valgo responde à tendência de a fratura derivar para **varo** durante a consolidação. Na descrição do resumo, há deriva média de 5 graus para varo e 10 graus para procurvato. Por isso se revisa o alinhamento em 7 a 10 dias e se prevê a possibilidade de cunha, em vez de considerar a primeira montagem definitiva.\n\nA posição de marcha não é a mesma do gesso clássico com quadril e joelho a 90 graus. Menos flexão e uma montagem unilateral facilitam os cuidados e a mobilidade nesse cenário selecionado. Ensaios citados encontraram consolidação aceitável com menor trabalho para a família.\n\nA técnica não deve ser estendida automaticamente a qualquer fratura femoral. Instabilidade longitudinal importante, edema maciço e lesões associadas podem mudar o tratamento. A pergunta, porém, especifica a montagem descrita para o lactente que começa a andar.",
+      "correta": "**Correta: D.** A combinação de aproximadamente 45 graus de flexão, 15 graus de rotação externa e molde em valgo corresponde ao gesso unilateral de marcha descrito. O valgo do molde é intencional para contrariar a deriva em varo, não um erro de redução que deva ser corrigido para varo.",
+      "incorretas": {
+        "A": "Quadril e joelho a 90 graus descrevem o gesso clássico sentado, e não a posição de cerca de 45 graus do walking spica. A questão pede uma técnica unilateral específica; acrescentar uma barra entre as pernas não a transforma nessa montagem.",
+        "B": "Extensão completa das duas articulações e inclusão do pé não correspondem à técnica. O capítulo descreve flexão moderada e pé fora, com reforço anterior do quadril e faixa pélvica larga. O objetivo não é prender todo o membro em extensão.",
+        "C": "A opção inverte a tendência deformante: o resumo descreve deriva para varo, razão para fazer molde em valgo. Moldar em varo porque se presume deriva para valgo reforçaria o desvio no sentido errado. É a relação entre força e molde, não apenas o nome do gesso, que resolve essa alternativa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-ce201634",
+          "o-tratamento-pela-idade-7049f92d",
+          "o-tratamento-pela-idade-e1cfc4a6"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "91ca97d4f1ad369109208e0e32eb9f9273d7322f2b828d403c420c2fa60b26e2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1130": {
+    "questaoSha256": "b67840574841629cc0541e8d616b6fe2243f00337285f7802a61b0094a23d1c6",
+    "comentarioAnteriorSha256": "fb98d52b44928921b831451005270e8d3b0aa7e4217490ad237fca78e3419813",
+    "comentario": {
+      "conceito": "A entrada anterógrada no fêmur pode ameaçar a irrigação da cabeça mesmo quando a fratura está na diáfise. No esqueleto com fise proximal aberta, o capítulo destaca a **artéria cervical ascendente lateral**, um tronco que cruza a cápsula na **incisura trocantérica** e é a principal fonte da epífise. Lesá-la durante a entrada do implante pode provocar necrose da cabeça femoral (Rockwood crianças, 10ª ed., cap. 25, haste rígida e cabeça femoral).\n\nA fise aberta importa porque o resumo, ao citar Chung, informa que **não há vasos transfisários** que ofereçam a comunicação metafisária presumida por um dos distratores. Não se pode contar com essa passagem como compensação para a lesão do suprimento epifisário.\n\nA prevenção é escolher uma entrada e uma dissecção que protejam essa região. O capítulo contraindica a entrada pela fossa piriforme com fise aberta e descreve a entrada trocantérica lateral, com dissecção limitada à face lateral do trocânter, sem alcançar a cápsula. Não significa que toda haste rígida seja proibida no adolescente.\n\nO termo **lateral** no nome da artéria cervical não deve ser trocado automaticamente por “circunflexa femoral lateral”. A resposta exige identificar o vaso e sua relação local com a cápsula; decorar apenas um adjetivo conduz ao distrator.",
+      "correta": "**Correta: D.** O vaso indicado pelo capítulo é a artéria cervical ascendente lateral, que cruza a cápsula na incisura trocantérica. Sua lesão compromete a irrigação epifisária e explica a complicação que se procura evitar. A vulnerabilidade persiste até a maturidade, e não desaparece apenas por a criança ser cronologicamente mais velha.",
+      "incorretas": {
+        "A": "A alternativa substitui o vaso específico por uma artéria de nome semelhante e destaca uma posição anterior ao colo. O mecanismo descrito no capítulo está ligado ao tronco cervical ascendente que cruza a cápsula na incisura trocantérica. “Lateral” não torna esses dois nomes intercambiáveis.",
+        "B": "O capítulo atribui o papel principal à artéria cervical ascendente lateral, não à artéria do ligamento redondo. Não é preciso negar toda contribuição de outros vasos para reconhecer o erro da afirmação “principal fonte”. A estrutura em risco pela entrada do implante é a que passa na região capsular descrita.",
+        "C": "A opção pressupõe vasos que atravessariam a fise a partir da metáfise. O resumo registra justamente a ausência de vasos transfisários na descrição de Chung. Assim, nem a estrutura apontada nem o mecanismo pelo fresado reproduzem a explicação fornecida para a necrose epifisária."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: A haste rígida e a cabeça femoral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "A haste rígida e a cabeça femoral"
+        ],
+        "blocos": [
+          "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+          "a-haste-rigida-e-a-cabeca-femoral-01669b63"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "96655d09daf65cc2f0ca18b37f5db4a635dc6fd9fde0f39de6ba4d5f78807d1a"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "pediatria-1131": {
+    "questaoSha256": "0481d0bb401fbf9d6c31e061a24e04f602250e9adff804e3f6936718ddb87075",
+    "comentarioAnteriorSha256": "f86e5b8a5641318dc3dc1673ae6cae018e70558928228fa7cf8288cbf1f07c7c",
+    "comentario": {
+      "conceito": "A entrada trocantérica lateral procura permitir a haste bloqueada no adolescente preservando a região capsular e a irrigação proximal. O capítulo orienta **limitar a dissecção à face lateral do trocânter maior**, sem chegar à cápsula, e escolher **a menor haste que mantenha contato com as corticais**. Não é uma disputa para introduzir o implante mais grosso possível (Rockwood crianças, 10ª ed., cap. 25, técnica da haste rígida).\n\nA localização da entrada é tão importante quanto o tipo de implante. A entrada piriforme com fise aberta ameaça a artéria cervical ascendente lateral; a técnica lateral reduz esse risco ao manter a abordagem afastada da região capsular vulnerável. Isso exige respeitar a dissecção e o fresado, não apenas chamar a haste de “trocantérica”.\n\nO resumo também especifica evitar hastes com secção proximal alargada, informa que um parafuso distal basta e não recomenda dinamização rotineira. A retirada é reservada a sintomas. São decisões próprias desse método, que não devem ser copiadas de outro implante ou transformadas em rotina só porque o paciente é adolescente.\n\nO princípio é obter estabilidade suficiente com o menor sacrifício local necessário. Contato cortical e bloqueio importam, mas não autorizam ampliar indiscriminadamente a entrada proximal.",
+      "correta": "**Correta: A.** A opção combina a dissecção lateral limitada com o dimensionamento mínimo que ainda mantém contato cortical. Esses cuidados fazem parte da técnica destinada a proteger o fêmur proximal em crescimento, mantendo a função estabilizadora da haste.",
+      "incorretas": {
+        "B": "A secção proximal alargada é justamente uma característica que o capítulo orienta evitar. Apoio não deve ser buscado ampliando indiscriminadamente a região de entrada. A recomendação é menor implante e menor fresado compatíveis com contato cortical.",
+        "C": "Dinamizar significa modificar o bloqueio para permitir movimento axial, mas o capítulo não considera essa etapa necessária de rotina nessa técnica. Não se deve retirar um parafuso automaticamente apenas porque existe a possibilidade de dinamização.",
+        "D": "A opção reúne dois absolutos contrários à descrição: o resumo informa que um parafuso distal basta e que a retirada é indicada se houver sintomas. Isso difere tanto de exigir dois parafusos distais em todos os casos quanto de programar retirada para todo adolescente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: A haste rígida e a cabeça femoral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "A haste rígida e a cabeça femoral"
+        ],
+        "blocos": [
+          "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+          "a-haste-rigida-e-a-cabeca-femoral-da0d9577"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "e508559f8453179f69e54eb9856abb76077197eed9c1097d475e55ef4ef64d25"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1132": {
+    "questaoSha256": "a42dff2d739062cab339ae755ba8a3a16e0d945aa9e1cf5b9e4ecabcd9297f3f",
+    "comentarioAnteriorSha256": "4ec00e45b1bd85c9de48562bee13b7a00adbe0178817a16626881e61d0f786fd",
+    "comentario": {
+      "conceito": "A placa submuscular em ponte é útil quando a fratura femoral da criança é instável no comprimento, como nas oblíquas longas e cominutas. Ela atravessa a zona fraturada preservando a irrigação dos fragmentos e mantém comprimento e alinhamento. “Submuscular” descreve a passagem do implante; não significa que a placa deva ser curta (Rockwood crianças, 10ª ed., cap. 25, placa submuscular).\n\nNo fêmur distal em crescimento, o capítulo chama atenção para **valgo distal** após placas próximas da fise, especialmente a **20 mm ou menos**. Nesse contexto, a retirada é sugerida. O sentido da deformidade importa: a advertência é de valgo, não de varo, e não se deve ignorá-la apenas porque a fratura consolidou.\n\nA montagem descrita usa uma placa longa, com 10 a 16 furos, e o comprimento do fêmur deve ser obtido **antes** de apertar os parafusos. Fixar os fragmentos na posição errada e depois tentar recuperar comprimento pelos parafusos inverte a sequência de redução.\n\nA estabilidade da montagem também não equivale a liberação universal de carga total imediata. O capítulo orienta carga protegida até haver calo e reconhece quebra de placa com carga precoce. Indicação, redução e proteção pós-operatória fazem parte do mesmo tratamento.",
+      "correta": "**Correta: B.** A proximidade da placa distal com a fise é a situação associada ao valgo descrito no capítulo. A recomendação de retirada nesse cenário exige considerar crescimento e posição do implante, além da consolidação do foco.",
+      "incorretas": {
+        "A": "A técnica em ponte emprega placa longa; o capítulo descreve 10 a 16 furos. Uma incisão limitada não exige encurtar o implante, pois ele pode ser passado submuscularmente. Confundir comprimento da incisão com comprimento da placa compromete a lógica da ponte.",
+        "C": "O comprimento deve ser restaurado antes da fixação com os parafusos. Eles mantêm a redução obtida; não devem ser usados como solução para um encurtamento que já foi travado na montagem. A sequência proposta pela alternativa é inversa à descrita.",
+        "D": "A carga permanece protegida até o calo. O fato de a placa oferecer estabilidade não elimina a solicitação mecânica sobre um foco ainda sem consolidação; carga precoce é uma das situações relacionadas à quebra do implante no resumo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Placa submuscular e fixador externo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Placa submuscular e fixador externo"
+        ],
+        "blocos": [
+          "placa-submuscular-e-fixador-externo-09391313"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "645c867f862adeb6329a481c3d0f4e50ef2b162c9dbf26fd73f815451ac8d7e7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1133": {
+    "questaoSha256": "107203a905b1aa82bf951cca610e74f414ccef0cf76bb3e7a9cacdbc729dd53d",
+    "comentarioAnteriorSha256": "e30cb4d575ad54e19104ae10a0645b98f822600ea669b719bcbb560db712f92d",
+    "comentario": {
+      "conceito": "Depois de uma fratura femoral infantil, o resultado em comprimento depende de dois componentes: o encurtamento deixado na redução e o **hipercrescimento** que pode ocorrer depois. O capítulo o descreve como mais comum entre **2 e 10 anos**, com média de **0,9 cm**, e mais rápido nos primeiros dois anos. A discrepância de comprimento é a sequela mais comum (Rockwood crianças, 10ª ed., cap. 25, sequelas).\n\nA média não é uma promessa individual. O resumo cita variação de 0,4 a 2,5 cm, e o nível e o padrão da fratura têm relação controversa com esse fenômeno. Portanto, não se pode deixar qualquer encurtamento e presumir que o crescimento compensará exatamente a diferença.\n\nA alternativa C reúne os dados da seção de sequelas, que menciona **2 a 3 cm como máximo aceitável no gesso**. É preciso situar esse teto: a seção de seleção para gesso imediato usa **menos de 2 cm de encurtamento inicial**, e a descrição do controle no gesso também busca não ultrapassar 2 cm finais. Um limite de aceitação discutido em sequelas não substitui os critérios iniciais de tratamento.\n\nAcompanhar o comprimento é parte do cuidado, inclusive quando a consolidação angular é boa. Uma radiografia com calo não informa sozinha qual será a discrepância ao final do crescimento.",
+      "correta": "**Correta: C, com a distinção entre os limites.** A faixa de 2 a 10 anos e a média de 0,9 cm são as descritas no resumo; a seção de sequelas cita 2 a 3 cm como teto de encurtamento aceito no gesso. Isso não significa compensação garantida de 3 cm nem indicação automática de gesso imediato com esse encurtamento inicial.",
+      "incorretas": {
+        "A": "O capítulo chama a discrepância de comprimento de sequela mais comum. Tratá-la como rara elimina a necessidade de seguimento longitudinal após a consolidação. A presença de remodelação angular não assegura igualdade final de comprimento.",
+        "B": "A opção desloca a maior ocorrência para depois dos 12 anos e aumenta a média para 3 cm. O resumo indica maior ocorrência entre 2 e 10 anos e média de 0,9 cm. Confundir um limite máximo de encurtamento discutido no tratamento com a média de hipercrescimento superestima a compensação esperada.",
+        "D": "O hipercrescimento não é descrito como uniforme durante cinco anos. Ele é mais rápido nos dois primeiros anos. Essa concentração temporal é diferente de supor que a mesma taxa persistirá e compensará lentamente qualquer discrepância."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Sequelas; O tratamento pela idade."
+      ],
+      "conferido": false,
+      "alerta": "A seção de sequelas cita 2 a 3 cm como máximo aceitável no gesso, mas a seleção para gesso imediato usa menos de 2 cm de encurtamento inicial e o controle busca até 2 cm finais. O hipercrescimento médio de 0,9 cm não garante compensação individual de 3 cm. A alternativa C deve ser lida nesse contexto, sem transformar o teto em indicação universal."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Sequelas",
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "sequelas-bbc72534",
+          "o-tratamento-pela-idade-7049f92d",
+          "o-tratamento-pela-idade-e1cfc4a6"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "cd28533619b0447febb5502fcd40812aca00ac345657c22e20cafdd6b40c87c8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1134": {
+    "questaoSha256": "c7a5e90f9cf7617025b07c320fecb01290534435360ffeae658ce0429d25fec9",
+    "comentarioAnteriorSha256": "53389992b0b7bd66d7cdb00a8686d6fce536e6d8992af30851aa38ca14ae2da2",
+    "comentario": {
+      "conceito": "A remodelação não corrige todos os planos com a mesma eficiência. Na diáfise femoral infantil, a angulação **anterior ou posterior**, no plano sagital, corrige mais rapidamente porque corresponde ao plano de movimento das articulações vizinhas. Varo e valgo, no plano coronal, corrigem mais devagar (Rockwood crianças, 10ª ed., cap. 25, deformidade angular).\n\nO processo não acontece apenas no calo. O resumo atribui cerca de **74% da remodelação à fise**, com o restante por aposição no foco. Assim, o crescimento restante e a orientação em relação ao movimento articular têm importância real; não basta observar que o osso está formando calo.\n\nEsse comportamento explica a tabela de tolerâncias: em várias faixas etárias, aceita-se mais angulação sagital que coronal. Os limites ficam mais rigorosos com a idade. A pergunta pede o plano que remodela melhor, não uma autorização para deixar qualquer deformidade sagital sem seguimento.\n\nA rotação merece análise separada. No adolescente mais velho não há remodelação rotacional significativa. Uma deformidade que pode ser funcionalmente tolerada não é, por isso, uma deformidade que vai desaparecer com o crescimento.",
+      "correta": "**Correta: A.** A angulação anterior ou posterior acompanha o plano de movimento do quadril e do joelho e tem correção mais rápida. É o fundamento para a maior tolerância sagital em comparação com o plano coronal na tabela do capítulo.",
+      "incorretas": {
+        "B": "O varo é uma deformidade coronal e sua correção é mais lenta que a sagital. O capítulo ainda descreve hipoplasia do côndilo lateral no varo grave. A existência de potencial de remodelação não o torna o melhor plano para aceitar desvio residual.",
+        "C": "O valgo também está no plano coronal. Ele pode remodelar, mas não é o padrão de correção mais rápida apresentado pelo capítulo. Confundi-lo com a angulação anterior ou posterior ignora a relação com o plano de movimento articular.",
+        "D": "No adolescente mais velho, o resumo não reconhece remodelação rotacional significativa. Tolerância funcional a certa rotação e correção anatômica espontânea são conceitos diferentes. A alternativa escolhe justamente um cenário em que não se deve contar com o crescimento para desfazer a malrotação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Sequelas; O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Sequelas",
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "sequelas-126a4cff",
+          "sequelas-8f3711db",
+          "o-tratamento-pela-idade-818fa3dc"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "779b4999ddfa87f4de73ddfb8cf011787e916d223861ad64acc5cd85d342c39e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1135": {
+    "questaoSha256": "27e27100de9a41665716701cbf8ffa0be8aa7375c1a206e3de0e33205ddf6be1",
+    "comentarioAnteriorSha256": "1b6b5ba550bd9fab3dd7f26e2448e4e917526998ab62185829c017f5779b8410",
+    "comentario": {
+      "conceito": "O fixador pode manter uma fratura femoral alinhada antes de o osso conseguir suportar a carga sozinho. Na retirada, o critério citado no capítulo é **calo em ponte em três ou quatro corticais**. Na série apresentada, a refratura foi de cerca de **4%** com esse achado, contra **33%** quando havia menos de três corticais em ponte (Rockwood crianças, 10ª ed., cap. 25, fixador externo).\n\nO que importa é a continuidade do calo, e não apenas a sua presença em um ponto. Depois da retirada, o suporte do dispositivo deixa de existir. Uma ponte mais abrangente é o sinal radiográfico usado na recomendação para reduzir o risco de que o foco volte a falhar.\n\nO capítulo descreve estratégias diferentes: retirada precoce na modalidade de “tração portátil”, seguida de gesso de marcha, ou manutenção do fixador até a consolidação na estratégia clássica. Por isso, não se deve retirar apenas porque transcorreu determinado número de semanas e presumir que todos os pacientes chegaram ao mesmo estágio.\n\nAs porcentagens são resultados da série citada. Elas sustentam o critério de segurança, mas não tornam o risco zero quando três corticais aparecem nem permitem calcular o risco individual apenas pela radiografia.",
+      "correta": "**Correta: C.** Três ou quatro corticais com calo em ponte são o achado relacionado à queda da refratura descrita. O critério verifica consolidação suficiente para planejar a retirada, em vez de usar apenas o tempo ou uma ponte isolada.",
+      "incorretas": {
+        "A": "Uma cortical está abaixo do limiar de três descrito na recomendação. Ela mostra formação de ponte localizada, mas não cumpre o critério associado à menor refratura. Não se deve confundir começo de consolidação com suporte suficiente para retirar o dispositivo sem a estratégia de proteção pertinente.",
+        "B": "Duas corticais ainda pertencem ao grupo de menos de três, associado à maior refratura na comparação. Acrescentar uma segunda ponte não permite antecipar o resultado observado com três ou quatro.",
+        "D": "Seis semanas, sem calo em ponte, não demonstram a consolidação exigida. O tempo pode participar do planejamento, mas não substitui a avaliação radiográfica. Na estratégia de retirada precoce citada pelo capítulo, a transição inclui proteção com gesso; não equivale a dispensar qualquer sinal de consolidação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Placa submuscular e fixador externo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Placa submuscular e fixador externo"
+        ],
+        "blocos": [
+          "placa-submuscular-e-fixador-externo-6e33859a"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "178e5e42ec193a329624b53cf91515d4f36a402be7b4f85249f36155e82a4b2c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1136": {
+    "questaoSha256": "6829d417a7a9518bca3c0e02bbe794ae4f15ab07928c6864f55597054ae860d4",
+    "comentarioAnteriorSha256": "3bb1ea89f6fe827dcc78eb62e332d1d3c4d4a5b93698b02e78167d40eecb77c7",
+    "comentario": {
+      "conceito": "A haste intramedular flexível estabiliza a diáfise mantendo algum movimento no foco, o que favorece **calo abundante**. Essa característica é útil, mas significa que ela não oferece a mesma rigidez de outros métodos. Comparada à fixação rígida, o capítulo descreve **mais dor e espasmo muscular no pós-operatório inicial** (Rockwood crianças, 10ª ed., cap. 25, hastes elásticas).\n\nA diferença deve ser situada no tempo e no método comparador. Não se está dizendo que toda evolução com haste será dolorosa ou que ela produz mau resultado por definição. O método é amplamente empregado no escolar com fratura estável no comprimento e peso compatível; a comparação explica uma limitação inicial de uma montagem flexível.\n\nA seleção da fratura evita exigir do sistema o que ele não controla bem. Cominuição, obliquidade longa e paciente pesado aumentam a preocupação com perda de comprimento e alinhamento. Nesses cenários, placa submuscular e, na criança maior, haste trocantérica têm seu lugar.\n\nA facilidade de retirar uma haste também não significa que ela possa permanecer em todos os casos. O resumo informa retirada em 6 a 12 meses na maioria dos centros e reconhece migração com o crescimento e criação de ponto de fratura quando o implante é mantido.",
+      "correta": "**Correta: B.** Mais dor e espasmo no período inicial são a comparação explicitamente apresentada com a fixação rígida. Essa limitação convive com vantagens do método, como formação de calo e colocação e retirada relativamente fáceis, quando a indicação é adequada.",
+      "incorretas": {
+        "A": "A haste flexível não é mais rígida e não se caracteriza por menos calo. O capítulo descreve exatamente o contrário: movimento suficiente para calo abundante e menor rigidez mecânica. A alternativa inverte o princípio do sistema.",
+        "C": "Instabilidade no comprimento e adolescente pesado não descrevem o candidato ideal. A seleção habitual privilegia escolar, fratura estável e menos de 50 kg; o estudo citado encontrou pior resultado com maior peso e idade. A escolha não pode ignorar a demanda mecânica do conjunto.",
+        "D": "A expressão “em todos os casos” é incompatível com a prática descrita de retirada na maioria dos centros. O crescimento pode fazer o implante migrar e produzir um ponto de fragilidade. A decisão de manter material precisa de avaliação, não de uma regra de dispensa universal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: As hastes elásticas; Placa submuscular e fixador externo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "As hastes elásticas",
+          "Placa submuscular e fixador externo"
+        ],
+        "blocos": [
+          "as-hastes-elasticas-67872f88",
+          "as-hastes-elasticas-4cd941c9",
+          "placa-submuscular-e-fixador-externo-09391313"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "cdbb42940c466dfa201c6eb825ccf3d4b5b96f95cd6187108416bc5755454a74"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1116": {
+    "questaoSha256": "479965d0763902efff8c995655f0613fb637a63ca2fe72ede717aaffdd1a1680",
+    "comentarioAnteriorSha256": "497c0c5ff935dd5e5d236473bbb4ca2bf4a42f16bae2dbf9fcceee40eca20e43",
+    "comentario": {
+      "conceito": "A pergunta delimita uma **revisão sistemática de 336 fraturas da tuberosidade tibial**. Nela, a complicação mais frequente foi **irritação pelo material de síntese e bursite**. A região anterior do joelho contém a tuberosidade e o aparelho extensor; após a fixação, o material pode se tornar uma fonte de sintomas locais mesmo com consolidação (Rockwood crianças, 10ª ed., cap. 27, complicações).\n\nO denominador é decisivo: os **56%** da tabela correspondem à proporção **entre as complicações**, e não a 56% das 336 fraturas. A taxa geral de complicações foi de 28%. Não se deve aplicar uma porcentagem ao grupo errado nem somar essas medidas como se fossem incidências independentes.\n\nSíndrome compartimental é uma emergência importante nessa lesão, mas gravidade e frequência são perguntas diferentes. Na revisão citada, ela foi de 0%; isso não elimina a vigilância, porque o capítulo explica o risco de sangramento no compartimento anterior e continua exigindo observação.\n\nA mesma tabela registra refratura e discrepância de comprimento em proporções menores entre as complicações. Assim, a resposta decorre da série especificada, sem afirmar que a experiência de toda população ou de toda técnica será idêntica.",
+      "correta": "**Correta: A.** Irritação pelo material e bursite lideraram as complicações, com 56% entre os eventos da tabela. A consolidação pode ser boa e ainda assim haver incômodo local que motive acompanhamento e eventual nova cirurgia; não se deve confundir isso com falha de união.",
+      "incorretas": {
+        "B": "A síndrome compartimental é grave e exige vigilância, mas foi de 0% nessa revisão. Escolhê-la por ser a complicação mais temida confunde consequência clínica com frequência observada. Um resultado nulo numa série tampouco autoriza abandonar o exame seriado.",
+        "C": "Refratura aparece com 6% entre as complicações, abaixo da irritação e bursite. O evento é relevante, mas a pergunta pede a liderança nessa revisão. Esse 6% também não deve ser apresentado como incidência de todas as fraturas sem respeitar o denominador da tabela.",
+        "D": "Discrepância de comprimento correspondeu a 5% entre as complicações. Crescimento e lesão fisária justificam seguimento, mas não tornam essa alteração a mais frequente na série apresentada. O destaque foi o material de síntese sintomático."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Complicações; Vasos, compartimentos e nervo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Complicações",
+          "Vasos, compartimentos e nervo"
+        ],
+        "blocos": [
+          "complicacoes-aba78ad4",
+          "complicacoes-2e8cf194",
+          "vasos-compartimentos-e-nervo-7cbd297a"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "77aeee00ff646136f75f7b442d3b9b743a807b1e7c8163b4eb7d8fda41db596a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1117": {
+    "questaoSha256": "92de8d859988f0b674e052cca2427f7daaaa3bd8b80d47aa959e0dfdde5a2edb",
+    "comentarioAnteriorSha256": "bea7dc81c4e5f6b421086315a08da80e1e8c117738ca0db8e5cff263486126d1",
+    "comentario": {
+      "conceito": "Uma fratura proximal da tíbia **estável e sem desvio significativo, até 2 mm**, pode receber tratamento conservador. O capítulo descreve **gesso inguinopodálico, em geral em extensão, aberto ou acolchoado**, associado a observação hospitalar da circulação e dos compartimentos (Rockwood crianças, 10ª ed., cap. 27, tratamento).\n\n“Sem desvio” não equivale a “sem risco”. A fratura que chega alinhada pode ter deslocado mais no momento do trauma, e a poplítea fica presa por estruturas posteriores que limitam sua capacidade de escapar ao deslocamento. Essa anatomia explica por que uma radiografia tranquila não substitui avaliação vascular seriada.\n\nO tratamento conservador é ativo: imobilizar, observar e controlar o alinhamento. O trecho prevê radiografia em **uma semana** e gesso por **4 a 6 semanas**. Se a fratura for redutível mas instável, irredutível ou apresentar outra indicação cirúrgica, a estratégia muda.\n\nO objetivo é preservar a redução sem transformar uma lesão alinhada em motivo para alta sem vigilância. A fixação invasiva também não é automática: estabilidade e desvio ajudam a selecionar quem pode consolidar no gesso.",
+      "correta": "**Correta: B.** A opção reúne imobilização adequada e observação neurovascular e compartimental, exatamente os componentes descritos. O gesso aberto ou acolchoado faz parte do cuidado com a evolução das partes moles; a vigilância continua mesmo sem grande desvio inicial.",
+      "incorretas": {
+        "A": "Tala removível com retorno apenas em duas semanas omite a observação inicial e posterga o controle radiográfico em relação à semana prevista. A ausência de desvio não dispensa os cuidados com a circulação e os compartimentos. Não é apenas uma diferença de conforto entre imobilizações.",
+        "C": "Fios lisos podem ser usados em fraturas instáveis, mas o capítulo admite gesso para a fratura estável e pouco desviada. Fixar todos os casos ignora essa seleção e transforma uma opção cirúrgica em obrigação sem a indicação descrita.",
+        "D": "Imobilizador com carga imediata não reproduz o esquema de gesso e observação citado para essa lesão. A estabilidade aparente na radiografia não demonstra que se possa liberar deambulação sem o acompanhamento inicial exigido. O tratamento conservador não equivale a carga livre."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Tratamento; Vasos, compartimentos e nervo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Tratamento",
+          "Vasos, compartimentos e nervo"
+        ],
+        "blocos": [
+          "tratamento-30a94cac",
+          "tratamento-5adb23a3",
+          "vasos-compartimentos-e-nervo-e7cdc184",
+          "vasos-compartimentos-e-nervo-cba87619"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "1ad265bcebd2afb49cc01821c8efce8a51e3596b12f608c4dca54d7a3e225569"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1118": {
+    "questaoSha256": "77a7b8e1301ffc4ce944ab712a7dc4e0876b11d60647eff208f6ff4be2b56b67",
+    "comentarioAnteriorSha256": "0bbd98039ac5e583624ebf61650bce982322194fe18f3e026fc55f7315f0e3c2",
+    "comentario": {
+      "conceito": "A tuberosidade recebe a força final do quadríceps por meio do tendão patelar. Quando sua avulsão consolida com desvio, não se trata apenas de uma imperfeição radiográfica: pode restar **déficit de extensão ativa e fraqueza do quadríceps**. Essa é a razão que o capítulo oferece para indicar cirurgia se sobra **mais de 2 a 3 mm de desvio residual** (Rockwood crianças, 10ª ed., cap. 27, tratamento).\n\nExtensão ativa é a capacidade de o aparelho extensor mover o joelho, diferente da amplitude que outra pessoa consegue obter passivamente. Por isso, uma articulação que pode ser estendida pelo examinador não garante função normal do quadríceps quando a inserção final foi alterada.\n\nO limite em milímetros refere-se ao desvio da lesão, e não a um limite em graus de déficit de extensão. Trocar essas unidades produz um critério diferente, que o resumo não oferece. Também se avaliam articulação, estabilidade e condições das partes moles.\n\nO capítulo registra consolidação em 99% na revisão citada. Assim, o principal argumento dessa indicação não é afirmar que todo fragmento desviado deixará de unir, mas procurar recuperar a função do aparelho extensor.",
+      "correta": "**Correta: C.** O desvio residual pode deixar déficit de extensão e fraqueza. A redução e a fixação buscam restabelecer a relação da tuberosidade com o aparelho extensor. É um objetivo funcional, além da obtenção de união óssea.",
+      "incorretas": {
+        "A": "A alternativa torna o desvio uma causa obrigatória de ausência de consolidação, o que não é a justificativa fornecida. O resumo relata taxa elevada de união e indica a preocupação funcional com a extensão. Consolidar e consolidar em posição funcionalmente adequada são resultados diferentes.",
+        "B": "Artrose patelofemoral precoce não é o motivo que o trecho apresenta para esse corte de desvio. A lesão pode ter extensão articular em certos padrões, mas isso não permite substituir a explicação específica de déficit extensor por uma previsão universal de artrose.",
+        "D": "Síndrome compartimental exige vigilância por causa do sangramento e das condições dos compartimentos. O capítulo não apresenta síndrome compartimental tardia como a razão do limite residual de 2 a 3 mm. Misturar essas duas preocupações troca uma indicação funcional por uma complicação de mecanismo diferente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: A tuberosidade: quem quebra e como; Tratamento; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "A tuberosidade: quem quebra e como",
+          "Tratamento",
+          "Complicações"
+        ],
+        "blocos": [
+          "a-tuberosidade-quem-quebra-e-como-7b1686ef",
+          "tratamento-5adb23a3",
+          "complicacoes-2e8cf194"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "35d4251fbe387668e74bee98fc8dca50873d8b1c3b3706a3ff6dd46da41c9184"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1119": {
+    "questaoSha256": "b6f6e6ce136eab89851e30046fb0f37c679b6a0a9416d074e875043a5d16fa31",
+    "comentarioAnteriorSha256": "164f72cdc5bfa3d5f00ef24460241b3494d5dae5f02caabe0c423d3e6c220c3b",
+    "comentario": {
+      "conceito": "Na avulsão da tuberosidade, o fragmento está ligado ao quadríceps pelo aparelho extensor. Durante a cirurgia, um **garrote insuflado pode prender o quadríceps** e dificultar a mobilidade necessária à redução. O capítulo orienta **desinsuflá-lo** quando isso impede o encaixe dos fragmentos (Rockwood crianças, 10ª ed., cap. 27, técnica).\n\nA dificuldade de reduzir não significa sempre um bloqueio ósseo ou necessidade de aplicar mais força. A relação entre garrote, músculo e fragmento precisa ser verificada. Insistir na manobra sem remover essa limitação deixa a causa mecânica presente.\n\nO resumo distingue ainda as estratégias conforme o padrão: a tuberosidade isolada se reduz com o joelho reto; no tipo IV, predomina a tração, com pouca alavanca. Não se deve extrapolar uma manobra de um padrão para todos os demais.\n\nEsse problema técnico também é diferente de um evento vascular ou de uma lesão de nervo. A pergunta pede a explicação descrita para a redução travada com o garrote: a restrição do quadríceps, que melhora ao liberar o garrote.",
+      "correta": "**Correta: D.** O garrote prende o quadríceps, cuja ligação ao fragmento mantém a restrição mecânica. Desinsuflá-lo permite retomar a redução sem simplesmente aumentar a força. A solução decorre da relação entre músculo, tendão patelar e tuberosidade.",
+      "incorretas": {
+        "A": "Espasmo da artéria poplítea seria uma preocupação vascular, mas não é a explicação técnica apresentada para o fragmento que não reduz com garrote. O trecho descreve aprisionamento do quadríceps. Não se deve transformar dificuldade mecânica de redução em diagnóstico arterial sem os achados correspondentes.",
+        "B": "A opção troca o mecanismo por compressão do nervo fibular e paralisia dos extensores. Isso não reproduz o vínculo entre o quadríceps preso e o fragmento da tuberosidade descrito no capítulo. A recomendação de desinsuflar visa liberar a restrição muscular à redução.",
+        "C": "O trecho não atribui a dificuldade a sangramento aumentado pelo garrote nem a perda de visibilidade do foco. A descrição é de uma restrição mecânica do quadríceps. Procurar apenas melhorar a visão deixaria o músculo preso e não resolveria a causa apontada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Tratamento; A tuberosidade: quem quebra e como."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Tratamento",
+          "A tuberosidade: quem quebra e como"
+        ],
+        "blocos": [
+          "tratamento-f681b8cb",
+          "a-tuberosidade-quem-quebra-e-como-7b1686ef"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "f428debf82daa76bc6b4f99ddceeaf9fa0c56676c9a56a23c87058c0425057b4"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

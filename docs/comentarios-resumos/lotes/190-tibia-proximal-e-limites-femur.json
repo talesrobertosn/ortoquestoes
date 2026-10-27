@@ -1,0 +1,346 @@
+{
+  "pediatria-1110": {
+    "questaoSha256": "053bc29b9022869049329637fa3654be385e6a2653f64e3f10e2d321c0cdd1d0",
+    "comentarioAnteriorSha256": "451dff00b8756aa9f389325341e591c61bdcad5b2cbb83cae7d61fc9ba2e2cca",
+    "comentario": {
+      "conceito": "A avulsão da tuberosidade tibial é uma falha na inserção final do aparelho extensor. O quadríceps transmite força pelo tendão patelar à tuberosidade; no adolescente, essa força pode superar a resistência da região ainda em maturação. O capítulo descreve a lesão como quase exclusiva de **meninos adolescentes**, tipicamente no **salto** (Rockwood crianças, 10ª ed., cap. 27, mecanismos).\n\nHá duas situações mecânicas importantes: **contração forte do quadríceps durante a extensão** e **flexão passiva rápida contra o quadríceps já contraído**, como na aterrissagem. Ambas tensionam a inserção. A segunda não é uma flexão ativa tranquila: o joelho é levado à flexão enquanto o aparelho extensor resiste.\n\nA região anterior é vulnerável nesse período porque o fechamento fisário progride antes na parte posterior e a tuberosidade termina de fechar depois. O centro da tuberosidade e a epífise formam a região em que a tração encontra um ponto relativamente fraco.\n\nEsse contexto deve ser separado do trauma em valgo da criança pequena, que pode envolver a metáfise proximal e evoluir com Cozen. A proximidade anatômica não torna essas fraturas iguais: idade, estrutura que falha e direção da força mudam o raciocínio.",
+      "correta": "**Correta: A.** A alternativa reúne a população típica e os dois mecanismos de tração do aparelho extensor. O salto pode exigir contração potente na extensão e resistência à flexão na aterrissagem; a tuberosidade pode ser avulsionada quando sua resistência é ultrapassada.",
+      "incorretas": {
+        "B": "Meninas de cinco a oito anos e queda direta sobre joelho fletido não correspondem ao padrão predominante descrito. A questão não diz que qualquer outro mecanismo seja impossível; pede o cenário típico da avulsão apofisária, ligado ao aparelho extensor forte do adolescente.",
+        "C": "Três a seis anos e valgo lembram a fratura metafisária proximal relacionada ao fenômeno de Cozen, não a avulsão da tuberosidade do adolescente. O trampolim também pode causar lesões proximais, mas o mecanismo e a região óssea precisam ser identificados em vez de agrupar tudo como “tíbia proximal”.",
+        "D": "A alternativa troca a predominância masculina e a tração no salto por trauma direto anterior como padrão típico. O resumo destaca contração do quadríceps e flexão forçada contra ele. Estar na adolescência, isoladamente, não torna correta uma descrição que muda o mecanismo principal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: A tuberosidade: quem quebra e como; Por que a fise proximal da tíbia quebra pouco; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "A tuberosidade: quem quebra e como",
+          "Por que a fise proximal da tíbia quebra pouco",
+          "Complicações"
+        ],
+        "blocos": [
+          "a-tuberosidade-quem-quebra-e-como-7b1686ef",
+          "a-tuberosidade-quem-quebra-e-como-add351b6",
+          "por-que-a-fise-proximal-da-tibia-quebra-pouco-1c191aab",
+          "complicacoes-58867aa4"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "370a5559308e06f2a7160ae48a139da14d204a5ad8a659dcc0adc6aba2165da4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1111": {
+    "questaoSha256": "2ac14ed70e1a8fd386140f6f0ca63b0de8e9178a168cc7eb53ef661beba18387",
+    "comentarioAnteriorSha256": "091d029a4784d713757800511ac34075a448dcf07e785852ecc9469cd7ec70ce",
+    "comentario": {
+      "conceito": "O ângulo do joelho no momento da avulsão ajuda a prever quanto da região proximal será levado pelo fragmento. Segundo o capítulo, em extensão ou até **30 graus**, a lesão pode se limitar à tuberosidade; **acima de 30 graus**, tuberosidade e epífise são levadas juntas, a maioria no padrão **III** (Rockwood crianças, 10ª ed., cap. 27, mecanismos).\n\nA força é transmitida pelo aparelho extensor. A flexão rápida contra o quadríceps contraído tensiona a região da tuberosidade; conforme a posição e a propagação do traço, a lesão deixa de ser apenas apofisária e pode alcançar a epífise e a articulação.\n\nNa classificação adotada nesse resumo, o tipo III inclui apófise e epífise com **extensão intra-articular**. O tipo II também leva epífise, mas não entra na articulação. Por isso, “leva a epífise” e “tipo III” não devem ser usados como sinônimos absolutos: a frase sobre o ângulo descreve um padrão predominante, e a imagem define a extensão real.\n\nReconhecer o possível componente articular muda o planejamento. Não basta tratar a ponta palpável da tuberosidade e deixar de procurar até onde o traço se prolonga.",
+      "correta": "**Correta: C.** A descrição de flexão acima de 30 graus corresponde à avulsão com epífise, em geral tipo III. A palavra “em geral” é importante: o ângulo sugere o padrão, mas não substitui a identificação do traço intra-articular para classificar a lesão.",
+      "incorretas": {
+        "A": "Avulsão restrita à tuberosidade é o padrão relacionado à extensão ou flexão até 30 graus no trecho. Escolhê-la acima desse ângulo inverte a relação descrita entre posição do joelho e extensão da lesão.",
+        "B": "Ruptura isolada do tendão é uma lesão do aparelho extensor sem o fragmento ósseo da tuberosidade e da epífise descrito na alternativa correta. Não é o padrão que o capítulo prevê a partir da flexão acima de 30 graus nesse contexto de avulsão óssea.",
+        "D": "A fratura metafisária em galho verde pertence a outro cenário, especialmente o da criança pequena com lesão proximal por valgo. Ela não descreve a propagação da avulsão da tuberosidade para a epífise do adolescente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: A tuberosidade: quem quebra e como; A classificação de OGDEN modificada; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "A tuberosidade: quem quebra e como",
+          "A classificação de OGDEN modificada",
+          "Complicações"
+        ],
+        "blocos": [
+          "a-tuberosidade-quem-quebra-e-como-add351b6",
+          "a-classificacao-de-ogden-modificada-288154c9",
+          "a-classificacao-de-ogden-modificada-54560a75",
+          "complicacoes-58867aa4"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "96b9450f7077d5b48cef6f55b3c711e4099ca5920a8ddd0b4a865ac2070b61b5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1112": {
+    "questaoSha256": "53fb0774c4672d7751e15d8ad9ff9fa343c8233c82560b0083e8d192d94e5ba1",
+    "comentarioAnteriorSha256": "86dbc02acb8ff2e9863f17a1cc3ef54333a1ea060d5d7558821eec9ba3d3d38f",
+    "comentario": {
+      "conceito": "As duas lesões são próximas, mas ameaçam a circulação por mecanismos diferentes. Na **fise proximal por hiperextensão**, a metáfise se desloca para trás contra a **artéria poplítea**, presa por septos e ramos. Na **avulsão da tuberosidade**, a **recorrente tibial anterior** cruza a base da tuberosidade e pode sangrar no compartimento anterior (Rockwood crianças, 10ª ed., cap. 27, vasos e compartimentos).\n\nNo primeiro caso, a artéria não consegue escapar facilmente do osso deslocado e pode ser estirada ou lacerada; mesmo desvio posterior pequeno pode obstruir o fluxo. Uma fratura alinhada na chegada pode ter apresentado maior desvio no trauma, motivo para não confiar apenas na radiografia atual.\n\nNo segundo, o perigo descrito é **indireto**: o sangramento aumenta a pressão compartimental e pode comprometer a perfusão dos tecidos. A diferença entre uma lesão arterial direta e uma síndrome compartimental explica por que as perguntas sobre esses vasos não são intercambiáveis.\n\nA vigilância inclui circulação e compartimentos, mesmo quando a fratura parece reduzida. O capítulo orienta internação e avaliações seriadas para essas lesões selecionadas, em vez de presumir segurança pela ausência de grande desvio.",
+      "correta": "**Correta: A.** Poplítea na hiperextensão fisária; recorrente tibial anterior na tuberosidade. A sequência respeita tanto a localização dos vasos quanto o mecanismo de ameaça: osso posterior contra artéria presa e sangramento anterior com aumento da pressão compartimental.",
+      "incorretas": {
+        "B": "Os dois vasos corretos aparecem, mas em ordem trocada. A recorrente tibial anterior é ligada à base da tuberosidade e ao sangramento anterior; a poplítea é a estrutura ameaçada pela metáfise posterior na hiperextensão. A ordem é parte essencial da resposta.",
+        "C": "A primeira lesão exige reconhecer a poplítea presa atrás da tíbia, não substituir esse mecanismo pela genicular medial inferior. A segunda também está deslocada: o vaso destacado na avulsão da tuberosidade é a recorrente tibial anterior. A alternativa perde os dois vínculos anatômicos que a questão compara.",
+        "D": "O capítulo menciona a relação posterior da poplítea com seus ramos, mas não atribui à tibial posterior o papel específico perguntado na hiperextensão. Na tuberosidade, o plexo atrás do tendão patelar é relacionado à recorrente tibial anterior, não à genicular lateral inferior. Nomear vasos da região sem ligar cada um ao mecanismo não resolve a comparação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Vasos, compartimentos e nervo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Vasos, compartimentos e nervo"
+        ],
+        "blocos": [
+          "vasos-compartimentos-e-nervo-e7cdc184",
+          "vasos-compartimentos-e-nervo-7cbd297a",
+          "vasos-compartimentos-e-nervo-cba87619"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "da6d2fbf8135652e25502062bf0726ef894f5750eeda763ce35265158fc53569"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1113": {
+    "questaoSha256": "196add19370afa6726577b5a34b82e8fc875ef2e417094750c142ed00fe5b40b",
+    "comentarioAnteriorSha256": "0ceb13b11f4e93d1830e26c5364d605ba929d7c1773d2f52bd47d465ca902ffb",
+    "comentario": {
+      "conceito": "A fise proximal da tíbia possui **contrafortes** que limitam a separação entre epífise e metáfise. O colateral medial superficial se insere na **metáfise**, ultrapassando a região fisária, enquanto a **fíbula com o colateral lateral** oferece contenção do outro lado. Na frente, o tendão patelar preso à tuberosidade também limita o desvio posterior (Rockwood crianças, 10ª ed., cap. 27, anatomia).\n\nO contraste com o fêmur distal explica a pergunta. No fêmur, os ligamentos se inserem na epífise e podem transmitir tração a uma fise mais fraca que eles; na tíbia proximal, a inserção medial que cruza a fise e o suporte lateral ajudam a amarrar o conjunto. A estabilidade não depende apenas da resistência isolada da cartilagem.\n\nEssa proteção ajuda a explicar por que a lesão representa menos de 1% das fraturas fisárias e costuma exigir muita energia. Não a torna impossível nem elimina seu risco: quando o conjunto falha, o desvio pode ameaçar a artéria poplítea.\n\nA explicação deve, portanto, ser procurada nas **inserções e nos apoios ósseo-ligamentares**, não em uma suposição genérica de que a cápsula protege toda estrutura próxima ao joelho.",
+      "correta": "**Correta: B.** O colateral medial com inserção metafisária funciona como contraforte medial, e fíbula e colateral lateral constituem o contraforte lateral. Esses elementos limitam varo, valgo e translação, reduzindo a facilidade de separar a fise.",
+      "incorretas": {
+        "A": "O capítulo explica a raridade pelos contrafortes e descreve fechamento por volta de 14 anos nas meninas e 16 nos meninos, não pela afirmação de que fecha antes de todas as fises do membro inferior. A persistência de uma fise aberta não implica instabilidade quando há inserções que a contêm.",
+        "C": "A alternativa atribui a proteção ao enquadramento intra-articular e à cápsula. Essa não é a explicação anatômica oferecida: o ponto decisivo é a inserção do colateral na metáfise e o suporte da fíbula. Usar a cápsula como justificativa genérica deixa de reconhecer esses contrafortes específicos.",
+        "D": "Uma forma plana durante todo o crescimento não é o mecanismo de estabilidade descrito. O resumo sustenta a contenção pelas inserções e pelos apoios laterais. A alternativa substitui essa relação anatômica por uma característica geométrica que não explica a comparação com o fêmur distal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Por que a fise proximal da tíbia quebra pouco."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Por que a fise proximal da tíbia quebra pouco"
+        ],
+        "blocos": [
+          "por-que-a-fise-proximal-da-tibia-quebra-pouco-d6e31c13",
+          "por-que-a-fise-proximal-da-tibia-quebra-pouco-b1e8312f",
+          "por-que-a-fise-proximal-da-tibia-quebra-pouco-57154d24"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "84ef83a7fcf1dac19c8ca6c4a0298ffdf4273b2b6bf1f7c19db69e92086615e0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1114": {
+    "questaoSha256": "4ba697b6961508cfd2b90ed292e54b5a52fb1e3a477391ddad02c9acceb46957",
+    "comentarioAnteriorSha256": "4177f9e4ca3a864feab005eb1f78523eacb304079ffd32ab1eb4d0fdbdd51c7a",
+    "comentario": {
+      "conceito": "No plano **sagital**, a fise proximal da tíbia fecha de **posterior para anterior**. Depois, o fechamento avança para a tuberosidade, que fecha de proximal para distal. Isso deixa a região anterior como uma das últimas partes a completar a maturação, explicando sua vulnerabilidade na avulsão do adolescente (Rockwood crianças, 10ª ed., cap. 27, crescimento e fechamento).\n\nO plano precisa ser nomeado antes da direção. O mesmo resumo descreve, no **coronal**, fechamento de medial para lateral, e, no axial, de posteromedial para anterolateral. Essas frases não competem entre si: descrevem projeções diferentes do processo.\n\nA consequência clínica é que um aparelho extensor forte pode tracionar uma região anterior ainda vulnerável. O fechamento posterior já avançado não significa que toda a tíbia proximal esteja igualmente madura.\n\nPara memorizar, vale ligar direção e lesão: a parte posterior fecha antes, e a frente junto à tuberosidade fica por último. Não é necessário importar uma sequência de outra fise para responder sobre essa região.",
+      "correta": "**Correta: C.** Posterior para anterior é a direção sagital descrita, com progressão subsequente para a tuberosidade. A resposta liga a anatomia do fechamento à região anterior que permanece vulnerável no adolescente.",
+      "incorretas": {
+        "A": "A alternativa inverte a sequência e coloca a tuberosidade no começo. O capítulo a situa depois da progressão posterior para anterior. Essa inversão também destrói a explicação de por que a região anterior ainda pode falhar quando a parte posterior já fechou.",
+        "B": "Uma sequência do centro para a periferia não é a que o resumo atribui à fise proximal da tíbia no plano sagital. A referência a outra fise não modifica a direção específica pedida. A comparação deve preservar a identidade da região anatômica.",
+        "D": "Lateral e medial são direções coronais, não a resposta sagital. Além de trocar o plano, a opção inverte a direção coronal dada pelo resumo, que é medial para lateral. O primeiro passo é manter plano e orientação coerentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Por que a fise proximal da tíbia quebra pouco; A tuberosidade: quem quebra e como."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Por que a fise proximal da tíbia quebra pouco",
+          "A tuberosidade: quem quebra e como"
+        ],
+        "blocos": [
+          "por-que-a-fise-proximal-da-tibia-quebra-pouco-1c191aab",
+          "a-tuberosidade-quem-quebra-e-como-7b1686ef"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "4a8843718dec17d43ec476ae4157c25e299549a12d0624e876137ef869a99cb0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1115": {
+    "questaoSha256": "5a1f137cef46d3345aca04989d8df7deaf2d9585003ad7c183e4cc244ac4fe17",
+    "comentarioAnteriorSha256": "55a86821932655be8ef8c59d95de05b1721dc2271de93ba1eb3bb0df3ea77717",
+    "comentario": {
+      "conceito": "O distúrbio de crescimento após lesão da fise proximal da tíbia pode ser **assimétrico**. Quando a região anterior para e a posterior continua crescendo, surge **recurvato**, uma deformidade no plano sagital com tendência à hiperextensão. É o padrão mais comum descrito depois da lesão fisária, sobretudo da tuberosidade (Rockwood crianças, 10ª ed., cap. 27, complicações do crescimento).\n\nA redução anatômica e a fixação diminuem o risco, mas não garantem que a fise continue funcionando. Por isso, consolidação da fratura e seguimento do crescimento são etapas diferentes. O capítulo orienta radiografias comparadas ao outro lado e avaliação da localização da ponte e do crescimento restante.\n\nÉ essencial separar essa lesão da **fratura metafisária proximal da criança pequena**. Esta pode evoluir com o **valgo de Cozen**, por outro contexto de crescimento. Chamar ambas de “fratura proximal da tíbia” sem identificar fise ou metáfise leva à troca das respostas.\n\nA deformidade deve ser interpretada pela região que deixou de crescer. Parada anterior com crescimento posterior não é uma diferença entre o lado medial e o lateral, portanto não produz, como raciocínio principal, varo ou valgo.",
+      "correta": "**Correta: D (recurvato).** A frente para e o fundo continua crescendo, alterando o alinhamento sagital. O padrão é ligado à lesão da fise e da tuberosidade, mesmo quando a fratura foi reduzida adequadamente, o que justifica o seguimento posterior.",
+      "incorretas": {
+        "A": "Valgo de Cozen é a associação clássica com a fratura metafisária proximal da criança pequena. A pergunta especifica lesão fisária, sobretudo da tuberosidade. Transportar a sequela da metáfise para a fise ignora o local e a direção do distúrbio de crescimento.",
+        "B": "Varo é uma deformidade coronal, relacionada à diferença de alinhamento entre os lados medial e lateral. O mecanismo descrito no capítulo para esta lesão é anterior versus posterior. Ele explica recurvato, não aponta varo como a deformidade predominante.",
+        "C": "Antecurvato é uma angulação sagital no sentido oposto ao recurvato. A parada anterior com continuação do crescimento posterior produz o sentido especificado pelo capítulo. Reconhecer apenas que a deformidade está no plano sagital não basta; é preciso respeitar qual parte da fise parou."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-5c26d8e8",
+          "complicacoes-58867aa4"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "3d132e6f115759eafba30d89cd7095c654d34e93294755d18b367242cd562c0b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1121": {
+    "questaoSha256": "19d162fdf7d1b2c7229a5a43fd0a7f8d07c35d725f2f274549d66283a1cd4c54",
+    "comentarioAnteriorSha256": "3b5a552a5ab095e898f46c0e666f2eb3e9b5558a833261a1ff665fb0480749ba",
+    "comentario": {
+      "conceito": "A tuberosidade tibial não está exatamente no centro da projeção anterior: ela é um pouco lateral. Para mostrá-la melhor na radiografia em **perfil**, o capítulo recomenda deixar a tíbia **levemente rodada para dentro**. A rotação ajusta a posição da estrutura em relação à projeção, em vez de simplesmente aumentar a flexão do joelho (Rockwood crianças, 10ª ed., cap. 27, diagnóstico e imagem).\n\nO perfil permite avaliar a relação da tuberosidade com o aparelho extensor. Na criança mais nova, a lesão pode aparecer como uma pequena lasca, e a ossificação normal pode ter mais de um centro. Por isso, o aspecto de um centro ossificado isolado precisa ser interpretado com a clínica e, quando necessário, com o outro lado.\n\nO resumo destaca que **patela alta** é um indício mais confiável de grande desvio ou ruptura do tendão que a simples comparação dos centros de ossificação. Isso não substitui a radiografia adequada; mostra por que qualidade da incidência e leitura do aparelho extensor devem caminhar juntas.\n\nA manobra pedida é pequena e rotacional. Não corresponde a uma incidência com grande inclinação cefálica do feixe nem a colocar o joelho na amplitude máxima possível.",
+      "correta": "**Correta: A.** A leve rotação interna é a compensação descrita para a posição um pouco lateral da tuberosidade. Ela ajuda a perfilar a estrutura e a avaliar o fragmento, mantendo o objetivo anatômico da incidência.",
+      "incorretas": {
+        "B": "Rodar para fora inverte a manobra recomendada. A questão não pede apenas “alguma rotação”: pede o sentido usado para compensar a posição lateral da tuberosidade. O resumo especifica rotação interna leve.",
+        "C": "Flexão máxima muda a posição do joelho, mas não é a recomendação fornecida para perfilar a tuberosidade. O ajuste descrito é rotacional e discreto. Não se deve substituir uma orientação de projeção por uma exigência de amplitude máxima em um joelho doloroso.",
+        "D": "Inclinação cefálica de 30 graus não é a técnica descrita nesse trecho. Alterar a direção do feixe e rodar a tíbia são manobras diferentes. A alternativa troca a correção anatômica específica por outro parâmetro de incidência."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Diagnóstico e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Diagnóstico e imagem"
+        ],
+        "blocos": [
+          "diagnostico-e-imagem-73eca918",
+          "diagnostico-e-imagem-bfa97d91"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "97b857859cd66ffd2d8601bbd2e9a18bec409566a0c13684985e17434867c72a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0520": {
+    "questaoSha256": "c2e055216e17288647fdf69c4a62c3d459305a4c62d0d34fe3d6cfb4363ebd3a",
+    "comentarioAnteriorSha256": "353e0a0bf7b9a71b3f606dd81b5bd2c2b6f372ac8f154c85f0fa30a69aa6bd24",
+    "comentario": {
+      "conceito": "O gabarito oficial aponta o **ápice do trocânter maior**, mas o resumo da 10ª edição faz uma recomendação mais específica: **entrada trocantérica lateral**, com dissecção limitada à face lateral e sem alcançar a cápsula. Entre as alternativas apresentadas, isso corresponde à **porção lateral do trocânter maior, alternativa C**. (Rockwood crianças, 10ª ed., cap. 25, haste rígida).\n\nA preocupação não é apenas atravessar osso. Com fise proximal aberta, a artéria cervical ascendente lateral cruza a cápsula na incisura trocantérica e sustenta a irrigação epifisária. Uma entrada que ameaça essa região pode causar necrose da cabeça femoral.\n\nPor esse motivo, o capítulo contraindica a fossa piriforme e descreve haste moderna de entrada lateral, menor implante e menor fresado, sem dissecção até a cápsula. A técnica é mais precisa que a recomendação genérica de “entrar pelo trocânter”.\n\nO aprendizado clínico é proteger a região vascular proximal por uma entrada **lateral** apropriada ao implante. Memorizar o ápice como universalmente o ponto mais seguro apagaria a distinção explícita que existe entre B e C nesta questão.",
+      "correta": "**Gabarito oficial: B (ápice do trocânter maior), preservado.** A banca escolheu uma entrada trocantérica, mas o resumo consultado não demonstra superioridade do ápice sobre a porção lateral. Ao contrário, descreve entrada lateral e proteção da cápsula. Assim, a letra oficial é mantida para a prova, com a ressalva de que a recomendação bibliográfica favorece a alternativa C.",
+      "incorretas": {
+        "A": "A entrada pela fossa piriforme com fise aberta é contraindicada no resumo pelo risco de necrose da cabeça, além de alterações proximais. A possibilidade de alinhar a haste à diáfise não compensa o risco vascular nessa região. Esse é o distrator que contraria mais diretamente a segurança pretendida.",
+        "C": "A porção lateral corresponde à recomendação do resumo e não deve ser ensinada como clinicamente errada. A técnica limita a dissecção à face lateral, sem chegar à cápsula, e usa a menor haste com contato cortical. É a alternativa favorecida pela fonte secundária conferida, apesar de a letra oficial ser B.",
+        "D": "A porção medial não reproduz a orientação lateral destinada a manter a dissecção afastada da região capsular vulnerável. Não basta escolher qualquer ponto do trocânter: a posição da entrada e o desenho do implante são parte da estratégia para proteger a irrigação proximal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: A haste rígida e a cabeça femoral."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito oficial é B, ápice do trocânter maior. O resumo do Rockwood crianças, 10ª edição, capítulo 25, recomenda entrada trocantérica lateral e dissecção limitada à face lateral; entre as opções, isso favorece C. Não há no resumo comparação que demonstre maior segurança do ápice sobre a porção lateral. A letra oficial foi preservada, com essa divergência explícita."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "A haste rígida e a cabeça femoral"
+        ],
+        "blocos": [
+          "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+          "a-haste-rigida-e-a-cabeca-femoral-01669b63"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "96655d09daf65cc2f0ca18b37f5db4a635dc6fd9fde0f39de6ba4d5f78807d1a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0935": {
+    "questaoSha256": "2f085b5869873ee9e10886cd24a1e7269b496c8ada347c72f61583c9f0f34c3d",
+    "comentarioAnteriorSha256": "ed5d220a19d50cc5e017e112fca6ec984c58aa92bb32c0970e7a030c32743b35",
+    "comentario": {
+      "conceito": "Aos três anos, os valores apresentados coincidem com a linha de **2 a 5 anos** da Tabela 25-2: **15 graus de varo ou valgo, 20 graus de angulação anterior ou posterior e 20 mm de encurtamento**. O caso tem exatamente esses valores, o que sustenta **gesso pelvipodálico** entre as opções (Rockwood crianças, 10ª ed., cap. 25, Tabela 25-2 e pré-escolar).\n\nO potencial de remodelação explica a tolerância angular nessa idade. O plano sagital, anterior ou posterior, corrige melhor que o coronal; o crescimento também pode compensar parte do encurtamento. Isso não significa deixar de reduzir, controlar o foco ou acompanhar a posição do gesso.\n\nHá uma ressalva de limite: a seleção para gesso imediato no texto usa **menos de 2 cm** de encurtamento inicial, enquanto o caso está no limite de **2 cm** aceito na tabela e no controle final descrito. A tabela e a faixa etária favorecem o gesso, mas edema importante, instabilidade longitudinal e lesões associadas poderiam mudar a conduta. O enunciado não informa essas contraindicações.\n\nNão há gabarito oficial cadastrado. A resposta fica como **provável A pela bibliografia**, sem transformá-la em uma resposta fornecida pela banca. O tratamento deve incluir seguimento da redução, não apenas aplicação inicial do gesso.",
+      "correta": "**Resposta provável: A (gesso pelvipodálico).** É a opção compatível com a idade e com os limites tabulados. Os métodos invasivos oferecidos não ganham indicação apenas porque há varo, angulação posterior e encurtamento dentro dessa linha. A estabilidade e as condições das partes moles precisam ser confirmadas na avaliação clínica.",
+      "incorretas": {
+        "B": "O fixador externo tem lugar quando partes moles, lesões graves ou perda de comprimento impedem alternativas usuais. O caso não fornece essas condições e apresenta valores tolerados na faixa etária. Escolhê-lo apenas para obter uma radiografia sem desvio despreza a possibilidade de tratamento conservador adequado.",
+        "C": "A haste anterógrada rígida é uma opção de crianças maiores e adolescentes selecionados, com atenção à entrada trocantérica lateral; não é a escolha habitual para uma fratura isolada aos três anos. A invasividade não se justifica pelos valores que a própria tabela aceita nessa idade.",
+        "D": "Aos três anos, a existência de hastes flexíveis como opção em casos selecionados não as torna superiores ao gesso nesse enunciado. O capítulo coloca a fixação como exceção no pré-escolar e privilegia hastes elásticas no escolar com fratura estável. Nada no caso estabelece uma contraindicação ao gesso que imponha a opção retrógrada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade; Placa submuscular e fixador externo; As hastes elásticas."
+      ],
+      "conferido": false,
+      "alerta": "Sem gabarito oficial no acervo. A provável A é sustentada pela linha de 2 a 5 anos da Tabela 25-2. O texto seleciona gesso imediato com menos de 2 cm iniciais, e o caso está no limite de 2 cm da tabela; estabilidade, edema e lesões associadas devem ser avaliados antes de confirmar a indicação clínica.",
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade",
+          "Placa submuscular e fixador externo",
+          "As hastes elásticas"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-818fa3dc",
+          "o-tratamento-pela-idade-7049f92d",
+          "o-tratamento-pela-idade-e1cfc4a6",
+          "placa-submuscular-e-fixador-externo-6e33859a",
+          "o-tratamento-pela-idade-eb78b504",
+          "as-hastes-elasticas-67872f88"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "c2a415260a3a3622afaf509f0b8cfdcfa1b0807d09d482b344f4d023951b2587"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
