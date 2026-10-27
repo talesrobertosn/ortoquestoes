@@ -386,6 +386,8 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
   // ── Teclado ──
   useEffect(() => {
+    // Com os flashcards abertos por cima, as teclas são deles (Espaço vira o flashcard, não a página do resumo).
+    if (deFundo) return
     const tecla = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement)?.closest('input, textarea, [contenteditable="true"]')) { if (e.key === 'Escape') (e.target as HTMLElement).blur(); return }
       if (e.metaKey || e.ctrlKey || e.altKey) return
@@ -400,7 +402,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     }
     window.addEventListener('keydown', tecla)
     return () => window.removeEventListener('keydown', tecla)
-  }, [paginado, mudarPagina, painel, questao, aberta, selecao, foco])
+  }, [paginado, mudarPagina, painel, questao, aberta, selecao, foco, deFundo])
 
   // Deslizar no modo paginado (sem atrapalhar a seleção de texto).
   const toque = useRef<{ x: number; y: number; t: number } | null>(null)
