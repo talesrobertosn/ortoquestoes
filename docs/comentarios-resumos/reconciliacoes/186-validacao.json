@@ -1,0 +1,74 @@
+{
+  "base": "ebb511161e5d6502f54ed63e7d5271675a5bd1e9",
+  "lote": 186,
+  "revisadas": [
+    "pediatria-1144",
+    "pediatria-1145",
+    "pediatria-1146",
+    "pediatria-1147",
+    "pediatria-1148",
+    "pediatria-1149",
+    "pediatria-1150",
+    "pediatria-1151",
+    "pediatria-1152"
+  ],
+  "lacunas": [
+    "pediatria-0818"
+  ],
+  "checks": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado; repetido após correção de prosa1145",
+    "replay": "9/9;1pendente intacta;hashes e fontes conferidos",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks186.log": "ecf2cbd5e3ca343776717bc4f88225114430e05acc858c42090c1868528c6905",
+    "checks186-ajuste.log": "78355f1bdad522e084b1eb7ea2b0eeb09627f2ecf47fb1d5c5091f7ac234f8f6",
+    "ui186.log": "8b09bbd141f718679b6b6bb10f5046f46dc708fcdc91f5cf9e5791be23adb389",
+    "ui186-final.log": "e5d40c47a6be24baf6ded73970966e09494c10b3a9acd01e446931cca3145351",
+    "aplicacao186.log": "ee02cf9c9df81e10a4430d185f8a01692b73e8f132271c4d0714701e1a89f347",
+    "remotos186-final.json": "d16f5a7aa677451bbb6cf72ec87c258e8f39f8918af907c3c972fde01cc6012a"
+  },
+  "visual": {
+    "casos": 9,
+    "larguras": [
+      390,
+      1440
+    ],
+    "respostasEFontesExatas": true,
+    "capturasInspecionadas": [
+      "186-pediatria-1148-aula-cel.png",
+      "186-pediatria-1152-aula-pc.png",
+      "186-final-pediatria-1145-aula-pc.png"
+    ],
+    "semFigurasNos10": true
+  },
+  "fontes": {
+    "rockwoodcriancas10-29-diafise-tibia": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+    "rockwoodcriancas10-25-diafise-femur": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a"
+  },
+  "preservacao": "Nove membros de pediatria.json; demais bytes, enunciados, alternativas, IDs, gabaritos e revisão médica intactos. conferido:false. 0818 preservada sem selo novo.",
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 535,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 405,
+      "pendente-inspecao-imagem": 64,
+      "revisada": 1521
+    }
+  },
+  "proximoLote": 187,
+  "publicacaoAnterior": {
+    "pr": 579,
+    "merge": "ebb511161e5d6502f54ed63e7d5271675a5bd1e9",
+    "pages": 40454880036,
+    "producao": "19novos+61preservados;4resumos e letras integrais"
+  },
+  "publicacao": "Validação local;provas de CI do head, merge,guarda/deploy e avulsos serão registradas no PR após publicação."
+}

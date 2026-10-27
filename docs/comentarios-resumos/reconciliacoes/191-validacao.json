@@ -1,0 +1,80 @@
+{
+  "base": "bd9fc8766bece5995aa13a0fa8f81cfa794e9897",
+  "revisadas": [
+    "pediatria-0111",
+    "pediatria-1096",
+    "pediatria-1108"
+  ],
+  "lacunas": [
+    "pediatria-0065",
+    "pediatria-0569",
+    "pediatria-0570",
+    "pediatria-0622",
+    "pediatria-0641",
+    "pediatria-0813",
+    "pediatria-1109"
+  ],
+  "checks": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "replay": "3/3;7comentários pendentes intactos",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks191.log": "e20a539fc4d8d270556cbf85c0855ec06e8054308a7b8c790846bb02d90629ea",
+    "ui191.log": "68f7c7950932cbfd410b6cae7eedbf971580a23e6a36e616d4a3692a4a9b777c",
+    "aplicacao191.log": "55d7b8fae57e2647fb2ff158a36caeb8128fd01c547d1d9ed75f5337434d1d36",
+    "remotos191-antes.json": "51b7db694accb533b75d314110144ba8749f397ee61ead262b35b33299cb5f84"
+  },
+  "fontes": {
+    "rockwoodcriancas10-26-fise-distal-femur": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+    "rockwoodcriancas10-27-fise-proximal-tibia": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c"
+  },
+  "visual": {
+    "casos": 3,
+    "larguras": [
+      390,
+      1440
+    ],
+    "respostasEFontesExatas": true,
+    "capturasInspecionadas": [
+      "191-pediatria-0111-aula-cel.png",
+      "191-pediatria-1108-aula-pc.png"
+    ],
+    "semFigurasNos10Casos": true
+  },
+  "preservacao": "Só3membros de pediatria;demais bytes,enunciados,IDs,opções,gabaritos,revisão médica e fontes intactos. conferido:false. Sete lacunas sem novo selo ou resposta provável.",
+  "decisoes": [
+    "0111:37% é a maior contribuição individual, não maioria absoluta do membro;retiradas taxas das outras fises e regras terapêuticas sem fonte.",
+    "1096:ligamento mais forte que fise é tendência,não negação de lesões ligamentares associadas.",
+    "1108:tipoIV definido por toda a fise;avulsão pura do tendão não éIV. Não é necessário atribuir outro número ao distrator para julgá-lo,evitando bloquear desnecessariamente essa questão pela inconsistência do tipoV.",
+    "1109:correta depende de definirV;contradição de versão da fonte continua relevante,sem selo.",
+    "Demais lacunas especificam comparação anatômica,vascular,etiológica ou de frequência ausente;nota contextual e comentário antigo não usados como fonte."
+  ],
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 485,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 423,
+      "pendente-inspecao-imagem": 64,
+      "revisada": 1553
+    }
+  },
+  "proximoLote": 192,
+  "publicacaoAnterior": {
+    "pr": 582,
+    "head": "ac7de2d78f08c25e7f08b727f50f82f5e94aaf3f",
+    "merge": "bd9fc8766bece5995aa13a0fa8f81cfa794e9897",
+    "ci": 40489887454,
+    "pages": 40490254367,
+    "job": 122143337639,
+    "producao": "130avulsos(29novos+101preservados),6resumos e letras integrais"
+  },
+  "publicacao": "Validação local;CI do head,merge,guarda/deploy e produção devem ser provados noPR."
+}
