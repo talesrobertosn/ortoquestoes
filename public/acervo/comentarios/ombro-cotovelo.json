@@ -6573,18 +6573,53 @@
   }
  },
  "ombro-cotovelo-0510": {
-  "incorretas": {
-   "B": "**O nível proximal é típico do III.** A negativa apagaria essa associação clássica. Ainda assim, não se deve usar a proximidade da fratura, sozinha, para excluir um tipo II."
-  },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. A resposta indicada é a sustentada pela descrição clássica, mas a comparação de níveis não é um critério absoluto da classificação de Bado: o tipo II também costuma acometer a ulna proximal.",
-  "conceito": "**Monteggia é uma lesão combinada.** O diagnóstico exige reconhecer a fratura ou deformidade da ulna associada à luxação da cabeça do rádio. Na radiografia, a linha do eixo radial deve atravessar o capítulo em todas as incidências; se não atravessa, é necessário procurar a lesão ulnar, inclusive uma deformidade plástica na criança.\n\n**A direção define Bado.** No tipo I, a cabeça do rádio desloca-se anteriormente; no II, posteriormente ou posterolateralmente; no III, lateralmente; no IV, há fraturas de rádio e ulna com luxação da cabeça radial. O tipo III clássico se associa a fratura metafisária proximal da ulna. Já o tipo I pode ter traço em diferentes níveis, e o II também é frequentemente proximal, razão pela qual o nível isolado da fratura não classifica a lesão com segurança.\n\n**Tratamento e armadilha.** Restaurar comprimento, alinhamento e rotação da ulna geralmente reduz a cabeça do rádio. Luxação residual depois de corrigir a ulna deve levar à busca de interposição ou incongruência. Na criança, deixar passar a luxação radial é a principal armadilha; no adulto, a redução anatômica e a fixação estável da ulna são essenciais.",
-  "correta": "**Certo, com ressalva.** A descrição clássica do tipo III situa a fratura na metáfise proximal da ulna. Isso não significa que toda lesão dos tipos I e II seja mais distal; a direção da luxação radial continua sendo o critério principal.",
-  "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 1996. 4th Edition, Chap. 13, Pictures 13-46, p. 915."
-  ],
   "provavel": "A",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta provável (Certo) foi definida pelo Orto Questões a partir do capítulo 42 do Rockwood and Green, que situa a fratura do tipo III na metáfise e a dos tipos I e II na diáfise. A comparação vale para o padrão típico: no tipo II, Jupiter mostrou que o traço pode subir até a metáfise ou a epífise, e o nível sozinho não classifica a lesão.",
+  "conceito": "Para classificar uma Monteggia, Bado olhou para uma coisa só: para onde foi a cabeça do rádio. A pergunta da prova parece ser sobre outra variável, a altura em que a ulna quebrou, mas as duas estão ligadas pelo mesmo mecanismo, e entender essa ligação resolve a questão.\n\n**Como a lesão se forma.** A Monteggia é a fratura da ulna com luxação da cabeça do rádio. Uma força de flexão dobra a ulna, o osso quebra, a membrana interóssea se rompe do foco até a radioulnar proximal e o ligamento anular cede. A cabeça do rádio sai **na direção do ápice** da deformidade da ulna. É por isso que Bado pôde classificar pela direção da cabeça: ela e o ápice da ulna apontam para o mesmo lado (Rockwood and Green, 10ª ed., cap. 42).\n\n**Onde a ulna quebra em cada tipo.** Pela tabela do capítulo:\n\n| Tipo | Cabeça do rádio | Ulna | Em quem |\n|---|---|---|---|\n| I | Anterior | **Diáfise**, qualquer nível, ápice anterior | Mais frequente na criança |\n| II | Posterior ou posterolateral | **Diáfise**, ápice posterior | Até 80% das Monteggia do adulto |\n| III | Lateral ou anterolateral | **Metáfise** | Quase exclusivo da criança |\n| IV | Anterior | Terço proximal, com o rádio fraturado no mesmo nível | Exclusivo do adulto |\n\nA metáfise fica entre a diáfise e a extremidade articular. Como a fratura do tipo III é metafisária e as dos tipos I e II são diafisárias, o traço do III está, no padrão típico, **mais perto do cotovelo**. Faz sentido mecânico: uma pancada que empurra o cotovelo para fora dobra a ulna logo abaixo da articulação, e a cabeça do rádio escapa para lateral, acompanhando esse ápice.\n\n**Onde a regra fica imprecisa.** O tipo II não é tão comportado. **Jupiter** observou que a fratura dele costuma estar na diáfise proximal, mas pode subir para a metáfise ou até a epífise, e o subdividiu em IIA (através do coronoide), IIB (junção metáfise-diáfise), IIC (diafisária) e IID (do olécrano até a diáfise). Um Bado IIA é mais proximal que muitos tipo III. Por isso a afirmação vale como descrição do padrão típico de cada tipo, não como critério de classificação: o que define o tipo continua sendo a direção da cabeça.\n\n> **Na prova:** Bado classifica pela direção da cabeça do rádio, que segue o ápice da ulna. Tipo III é lateral e metafisário (criança); I e II, diafisários.\n\nNo resumo de diáfise do rádio e da ulna, a seção sobre Bado e Jupiter tem a figura dos quatro tipos e a subdivisão do tipo II pela altura do traço.",
+  "correta": "**Certo.** No capítulo, a fratura do tipo III de Bado é metafisária, enquanto a dos tipos I e II é diafisária; a metáfise fica acima da diáfise, mais perto do cotovelo. A ressalva é que, no tipo II, o traço pode subir até a metáfise ou a epífise (Jupiter IIA e IIB), então a altura descreve o padrão típico, mas quem classifica é a direção da cabeça do rádio.",
+  "incorretas": {
+   "B": "**Erraria pelo padrão típico.** Marcar Errado seria afirmar que a fratura do tipo III não é mais proximal que a dos tipos I e II, o que contraria a tabela do capítulo: III na metáfise, I e II na diáfise. O argumento que poderia levar a Errado, o de que alguns tipos II quebram na metáfise ou no coronoide, é real (Jupiter), mas descreve exceções do tipo II, não o padrão que a afirmação compara."
+  },
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-42-diafise-radio-ulna",
+     "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+     "secoes": [
+      "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+     ],
+     "blocos": [
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-ef647c6d",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-9e56eed7",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e5c273b0",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-60747bb0",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-018638b1",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-86b2096c",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-22d5d72f",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-baf0c01e",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf"
+     ],
+     "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+     "trechosSha256": "e14d2643e3b3e2dd69a4dccda5544a9ff22d00d6f3074d0442a3ab1a9c6faae1"
+    }
+   ],
+   "questaoSha256": "1d0290bab69c1ee2dd67ba037f2b56fef44fddf1ffe3f835dcfb1339e4638b80",
+   "comentarioSha256": "56eda70427429d5d0e2917502e958b98f2332bd7c8712efb6a13908cbbb54093"
+  }
  },
  "ombro-cotovelo-0511": {
   "incorretas": {
@@ -7318,19 +7353,48 @@
   "conferido": false
  },
  "ombro-cotovelo-0549": {
-  "conceito": "**A série de trauma do ombro.** Diante de uma suspeita de fratura do úmero proximal, a radiografia precisa mostrar o úmero em pelo menos dois planos ortogonais e a relação da cabeça com a glenoide. A série padrão de trauma do ombro tem três incidências:\n\n1. **Anteroposterior verdadeira (Grashey):** o raio é inclinado cerca de 30 a 45 graus para compensar a anteversão da escápula, que fica apoiada obliquamente sobre o tórax. Assim o feixe passa paralelo à superfície da glenoide, que aparece \"de perfil\", sem sobreposição com a cabeça umeral. Mostra o espaço articular, a altura das tuberosidades e a angulação do colo.\n2. **Perfil da escápula (incidência em Y):** a escápula aparece como um Y, formado pelo corpo, pelo acrômio e pelo coracoide; a cabeça deve estar centrada no cruzamento. Avalia desvio anterior ou posterior e luxações.\n3. **Axilar (ou suas variantes, como a de Velpeau quando o paciente não consegue abduzir):** confirma a relação anteroposterior da cabeça com a glenoide, mostra fraturas da borda da glenoide e da tuberosidade menor.\n\n**Por que a AP comum não basta.** Na AP feita no plano do tórax, a cabeça umeral se sobrepõe à glenoide, e uma luxação posterior pode passar despercebida. A AP verdadeira, de Grashey, corrige essa sobreposição. É ela que integra a série de trauma, junto com o perfil escapular e a axilar. A tomografia complementa quando há cominuição, fratura da glenoide ou dúvida sobre o desvio das tuberosidades.\n\n**As incidências especiais e para que servem.** Muitas incidências com nome próprio aparecem nas provas, mas pertencem a outros contextos:\n\n| Incidência | Para que serve |\n|---|---|\n| AP verdadeira (Grashey) | série de trauma; espaço articular e glenoide de perfil |\n| Perfil escapular em Y | série de trauma; desvio anterior ou posterior |\n| Axilar (ou Velpeau) | série de trauma; relação cabeça e glenoide |\n| Stryker notch | lesão de Hill-Sachs na instabilidade anterior |\n| West Point | borda anteroinferior da glenoide (Bankart ósseo) |\n| Rockwood (AP com inclinação caudal de 30 graus) | esporão anterior do acrômio no impacto |\n\n> **Na prova:** fratura do úmero proximal pede a série de trauma: AP verdadeira (Grashey), perfil escapular e axilar. Stryker notch, West Point e Rockwood são incidências de instabilidade e impacto.",
-  "correta": "**B: Grashey view.** A incidência de Grashey é a anteroposterior verdadeira do ombro: com o raio inclinado para acompanhar a anteversão da escápula, a glenoide fica de perfil e a articulação aparece sem sobreposição. Ela abre a série radiográfica padrão de trauma do ombro, junto com o perfil escapular (Y) e a axilar, e é a que permite ver o espaço articular, a altura das tuberosidades e a angulação do colo cirúrgico numa fratura do úmero proximal. A AP feita no plano do tórax, por outro lado, sobrepõe cabeça e glenoide e pode esconder uma luxação associada.",
+  "conceito": "A primeira decisão diante de uma fratura do úmero proximal é saber o que se está vendo, e a radiografia ruim é uma das principais causas de entender mal a fratura e até de **deixar passar uma luxação**. Por isso o Rockwood and Green (10ª ed., cap. 36) insiste numa série de trauma padronizada, sempre a mesma, em vez de incidências escolhidas ao acaso.\n\n**O problema da AP comum.** A escápula não está no plano coronal do corpo: ela repousa inclinada sobre a parede do tórax. Numa AP feita perpendicular ao paciente, a glenoide aparece de viés e se sobrepõe à cabeça do úmero, o que esconde o espaço articular e confunde a leitura dos fragmentos.\n\n**As quatro incidências.** A série de trauma do capítulo tem:\n\n| Incidência | Como | O que mostra |\n|---|---|---|\n| AP do ombro | Perpendicular ao plano coronal | Visão geral |\n| AP da escápula (**Grashey**) | Tronco girado 30° | Glenoide de perfil, sem sobrepor a cabeça |\n| Perfil em Y (Neer) | Tronco girado 60°, perpendicular ao Grashey | Cabeça em relação à glenoide no outro plano |\n| Axilar | Raio pela axila | Relação cabeça-glenoide e desvio dos tubérculos; a mais importante |\n\nO **Grashey** é a AP verdadeira da escápula: girando o tronco 30°, o feixe passa paralelo à superfície da glenoide e o espaço articular se abre. Grashey e Y devem ser feitos **na mesma rotação** do braço, de preferência neutra ou externa; com o braço pendente, a gravidade traciona e ajuda a ler a fratura. Quando a dor impede abduzir para a axilar, o capítulo oferece a **axilar de Velpeau** (paciente inclinado para trás, mesmo de tipoia) ou a **axilar de Codman**, preferida pelos autores.\n\n**Por que isso importa.** Classificar e decidir a conduta depende de ver o desvio dos tubérculos e a relação da cabeça com a glenoide em pelo menos dois planos ortogonais. Uma fratura-luxação posterior lida só numa AP pode parecer uma fratura simples; a axilar a denuncia.\n\n> **Na prova:** série de trauma do úmero proximal é AP, Grashey, perfil em Y e axilar. Stryker e West Point são incidências de instabilidade.\n\nNo resumo de fratura do úmero proximal, a seção de radiografias e tomografia mostra a série com a cabeça centrada na glenoide em cada incidência.",
+  "correta": "**B: Grashey view.** É a AP verdadeira da escápula, com o tronco girado 30°, e faz parte da série de trauma de quatro incidências do capítulo, ao lado da AP do ombro, do perfil em Y e da axilar. Mostra a glenoide de perfil, sem sobrepor a cabeça, e é feita na mesma rotação do braço que o perfil em Y.",
   "incorretas": {
-   "A": "**Stryker notch é incidência para a lesão de Hill-Sachs, não para trauma agudo.** O paciente fica deitado com a mão sobre a cabeça e o raio inclinado cerca de 10 graus em direção cefálica; essa posição mostra a face posterolateral da cabeça umeral, onde aparece a impacção de Hill-Sachs na instabilidade anterior recidivante. Exige posicionamento que um paciente com fratura do úmero proximal não tolera e não avalia o desvio dos fragmentos. Seria a resposta numa questão sobre investigação da instabilidade anterior.",
-   "C": "**West Point é a incidência para a borda anteroinferior da glenoide.** Feita em decúbito ventral, com o braço abduzido e o raio angulado, ela mostra a borda anterior da glenoide e é usada para procurar a lesão de Bankart óssea na instabilidade anterior. Não faz parte da série de trauma do úmero proximal e também exige posicionamento difícil para um paciente com fratura. Como a Stryker notch, pertence à investigação de instabilidade.",
-   "D": "**A incidência de Rockwood avalia o acrômio, não a fratura.** É uma anteroposterior com inclinação caudal de cerca de 30 graus, que projeta a borda anterior do acrômio e mostra o esporão subacromial no paciente com impacto. O nome pode confundir, porque Rockwood também dá nome à classificação da luxação acromioclavicular. Não integra a série padrão de trauma para fraturas do úmero proximal."
+   "A": "**Incidência de instabilidade.** A Stryker notch serve para procurar a lesão de Hill-Sachs na luxação anterior recidivante. O capítulo a exclui expressamente da série de trauma: Stryker e West Point são para instabilidade. Diante de uma fratura aguda, ela não substitui o Grashey, o perfil em Y e a axilar.",
+   "C": "**Feita para a borda da glenoide.** A West Point é usada para ver a borda da glenoide, o Bankart ósseo, na instabilidade. O capítulo a coloca ao lado da Stryker como incidência de instabilidade, fora da série de trauma. Para a fratura, a axilar que o capítulo recomenda é a convencional ou, com dor, a de Velpeau ou de Codman.",
+   "D": "**Não está na série.** A série de trauma descrita no capítulo tem quatro incidências (AP do ombro, Grashey, perfil em Y e axilar), e a Rockwood view não está entre elas. O nome do livro de referência na alternativa é uma isca para quem associa a resposta ao título do texto."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed.",
-   "Rockwood and Matsen's The Shoulder, 6ª ed."
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Radiografias e tomografia."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Radiografias e tomografia"
+     ],
+     "blocos": [
+      "radiografias-e-tomografia-b85e69ff",
+      "radiografias-e-tomografia-30b8a195",
+      "radiografias-e-tomografia-413850ca",
+      "radiografias-e-tomografia-190db996",
+      "radiografias-e-tomografia-d315dddb",
+      "radiografias-e-tomografia-cb865953",
+      "radiografias-e-tomografia-78d8ddd2",
+      "radiografias-e-tomografia-2edd0b47"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "437ae27541fc47f4b21bdca92e4f7a1f5447ff4947701b8aae42dd41649d0f5b"
+    }
+   ],
+   "questaoSha256": "ada57e93f1e691f51d324a5c08951e037111ecc38a4aaaa298ef56bc9095fe20",
+   "comentarioSha256": "eade6b8830d5e8217ef9bfff1f15eb90ff954eb612551a2d07518656b1af5d17"
+  }
  },
  "ombro-cotovelo-0550": {
   "incorretas": {

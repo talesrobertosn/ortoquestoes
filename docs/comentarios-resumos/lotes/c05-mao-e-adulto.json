@@ -1,0 +1,667 @@
+{
+ "mao-0720": {
+  "questaoSha256": "5132b38488143b3cfbf33b8911143f7d29ef195e90b47d7a235bef53bc9317c1",
+  "comentarioAnteriorSha256": "c750447a9b5c752b3e52eeab6bbe558c4da6b8c2b33537533f3ca599c30420e4",
+  "comentario": {
+   "conceito": "Um jogador de vôlei leva uma bolada na ponta do dedo estendido e fica sem conseguir esticar a última falange. A radiografia mostra um fragmento arrancado da base dorsal da falange distal. É o dedo em martelo ósseo, e a técnica de Ishiguro nasceu para resolver um problema mecânico bem específico dele.\n\n**O que acontece na lesão.** O tendão extensor terminal se insere na base dorsal da falange distal. Quando uma **força de flexão** atinge a falange distal **estendida ativamente**, o tendão arranca um pedaço dessa base (Rockwood and Green, 10ª ed., cap. 45). A falange distal cai, porque o flexor profundo fica sem oposição. Com fragmento grande, aparece o problema sério: a falange distal **subluxa para volar**, e a articulação perde a congruência. O risco cresce quando o fragmento passa de um terço da superfície, mas o capítulo insiste que o que decide é a **subluxação**, vista num perfil verdadeiro.\n\n**Por que o fragmento não volta sozinho.** O fragmento continua preso ao tendão extensor, que o puxa para proximal e dorsal. Estender o dedo numa tala aproxima as partes, mas, se a falange já subluxou, a tala não reduz a articulação. É preciso segurar o fragmento no lugar e empurrar a falange distal de volta.\n\n**A ideia do bloqueio da extensão.** É aí que entra a técnica que leva o nome de Ishiguro, que o capítulo descreve sem dar o nome: com a IFD fletida, passa-se um **fio de bloqueio dorsal** na cabeça da falange média, **logo atrás do fragmento**, que funciona como um batente e impede o fragmento de subir. Depois a IFD é estendida, o que leva a falange distal de encontro ao fragmento bloqueado, e um **fio transarticular** fixa a IFD em cerca de **5° de extensão**. A redução é indireta, por via percutânea, sem abrir o foco.\n\n**Quando usar.** Sem subluxação, o martelo ósseo vai bem com **tala em extensão completa por 6 semanas**. Com subluxação, é cirurgia, e nas agudas a redução fechada com esses dois fios é a técnica do capítulo.\n\n> **Na prova:** Ishiguro é o bloqueio da extensão do dedo em martelo ósseo: fio dorsal na cabeça da falange média atrás do fragmento e fio transarticular da IFD.\n\nNo resumo de fraturas da mão, a seção do martelo ósseo explica por que a subluxação, e não o tamanho do fragmento, decide a cirurgia.",
+   "correta": "**B: dedo em martelo ósseo.** A técnica de Ishiguro é o bloqueio da extensão com fios: um fio dorsal na cabeça da falange média, atrás do fragmento avulsionado, e um fio transarticular da IFD. Ela reduz e segura o fragmento da base dorsal quando a falange distal subluxa para volar.",
+   "incorretas": {
+    "A": "**Sem fragmento, nada a bloquear.** No martelo tendinoso, o tendão terminal rompe sem levar osso. O tratamento é a tala em extensão da IFD; não existe fragmento ósseo para o fio de bloqueio segurar, que é a razão de ser da técnica.",
+    "C": "**Lesão de outra articulação.** A botoeira é a ruptura da banda central na IFP, e o tratamento agudo é a tala da IFP em extensão com a IFD livre para fletir. O bloqueio de Ishiguro atua na IFD.",
+    "D": "**Deformidade, não fratura.** O pescoço de cisne pode até ser consequência tardia do martelo não tratado (o capítulo mostra que aparece em até dois terços dos martelos ósseos com subluxação tratados sem cirurgia), mas a técnica de Ishiguro trata a fratura aguda da base dorsal, não a deformidade estabelecida.",
+    "E": "**Doença da polia, não da articulação.** O dedo em gatilho é um conflito entre o tendão flexor e a polia A1 na palma. Não há fratura nem subluxação a reduzir com fios."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Falange distal: tufo, martelo ósseo, jersey e Seymour."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+    ],
+    "blocos": [
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-e4a7b598",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-755a9365",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-0119fbbe",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-8d417b8f",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-04567e40",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bdf35482",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-ebce09c0",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-af3c83a1",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-4c61f2a6"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "cbba7f372cf73e1bdac043f7db1c37a69a4b571c0017bb20ec51f71123d853b7"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "mao-0770": {
+  "questaoSha256": "da66ec04451c1036d475e481733b96afdadd388cce6451529a079cf41a25c181",
+  "comentarioAnteriorSha256": "d9d4172ad89be05ce7920f893c2296bfe3a4b2bd831fb744ae7b833135cc1f8b",
+  "comentario": {
+   "alerta": "O capítulo 45 do Rockwood and Green não ranqueia as complicações do reparo do ligamento colateral ulnar do polegar; ele destaca, em todos os passos da via, o ramo sensitivo dorsal do nervo radial, que precisa ser identificado e afastado. A resposta da banca se apoia nessa vulnerabilidade.",
+   "conceito": "O cirurgião vai reparar o ligamento colateral ulnar do polegar de um esquiador que caiu com o bastão na mão. A ruptura é completa e pode haver uma lesão de Stener. A questão pergunta o que mais costuma dar errado nessa cirurgia, e a resposta está no caminho que o bisturi percorre.\n\n**O caminho até o ligamento.** No Rockwood and Green (10ª ed., cap. 45), a técnica começa com uma **incisão em S suave no lado ulnar** da MCF do polegar. Logo abaixo da pele corre o **ramo sensitivo dorsal do nervo radial**, que tem de ser **identificado e afastado**. Em seguida, abre-se a **aponeurose do adutor do polegar** em linha com a falange (é ali que aparece a Stener, com o coto do ligamento por cima dela), identifica-se o ponto de ruptura, em geral o distal, e reinsere-se o ligamento com **uma ou duas âncoras**. Cápsula e aponeurose são fechadas em camadas, e o polegar fica imobilizado 4 a 6 semanas.\n\n**Por que o nervo é o ponto fraco.** O ramo sensitivo dorsal do radial é fino, superficial e cruza justamente o campo da incisão. Ele precisa ser afastado durante todo o procedimento, e o afastamento, a tração ou a manipulação dos tecidos em volta podem causar **neuropraxia**: dormência ou formigamento no dorso do polegar, em geral transitórios. É uma complicação que nasce da própria via de acesso, e por isso é a mais lembrada nesse reparo.\n\n**E o resultado do reparo.** O capítulo é favorável ao reparo: mesmo avulsões ósseas pouco desviadas foram mal com gesso, e uma revisão sistemática mostrou que o reparo, agudo ou depois de falha, dá resultados excelentes. Instabilidade ou ruptura do reparo não aparecem como o problema dominante.\n\n> **Na prova:** no reparo do colateral ulnar do polegar, a estrutura em risco no acesso é o ramo sensitivo dorsal do nervo radial; a neuropraxia dele é a complicação típica.\n\nNo resumo de fraturas da mão, a seção do colateral ulnar e da lesão de Stener descreve a técnica passo a passo.",
+   "correta": "**A: neuropraxia do ramo sensitivo radial.** O ramo sensitivo dorsal do nervo radial cruza a incisão ulnar da MCF do polegar e precisa ser identificado e afastado durante todo o reparo; a manipulação dele é o que mais complica essa cirurgia, com alteração de sensibilidade em geral transitória.",
+   "incorretas": {
+    "B": "**Real, mas prevenida pelo protocolo.** A mão enrijece fácil, e o polegar fica imobilizado 4 a 6 semanas depois do reparo. Mas o reparo com âncoras estável permite reabilitar, e o capítulo não aponta a rigidez como a complicação típica desse procedimento, ao contrário do nervo, que destaca em cada passo da via.",
+    "C": "**É o que a cirurgia corrige.** A instabilidade é o problema da ruptura completa tratada sem cirurgia, sobretudo com Stener. Depois do reparo com âncoras, o capítulo mostra resultados excelentes, não instabilidade frequente.",
+    "D": "**Outra região e outro mecanismo.** O gatilho do polegar é um conflito do flexor longo com a polia A1, na face volar. A via do colateral ulnar é dorsoulnar e não mexe nessa polia.",
+    "E": "**Pouco frequente com a fixação atual.** O ligamento é reinserido com âncoras, às vezes com um fio pela articulação para acertar a tensão, e imobilizado. A falha precoce do reparo não é o que o capítulo destaca."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Polegar: ligamento colateral ulnar e lesão de Stener."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Polegar: ligamento colateral ulnar e lesão de Stener"
+    ],
+    "blocos": [
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "5f75f5435f63952b0d2d63354071ef203d894d6475e748e1174788ae0f2427bc"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "mao-0823": {
+  "questaoSha256": "d52cdc04ced9c3d24a634c6e8df163012d90d631f237cb8cabc3ee896a0cc9e6",
+  "comentarioAnteriorSha256": "1baa7f1c67272b9494d968a9821f075b529aeb2b805458a6eb726cbe58e2fdb4",
+  "comentario": {
+   "alerta": "O gabarito oficial é a lateralização, mas o capítulo 45 do Rockwood and Green atribui a fratura em pilão da base da falange média à carga axial pura, de alta energia, e o desvio lateral não aparece no texto. Pelo livro, a alternativa mais próxima seria a impacção. Mantemos o gabarito oficial e explicamos as duas leituras.",
+   "conceito": "A base da falange média pode quebrar de três jeitos, e cada jeito conta a força que agiu. A questão pergunta o da fratura em pilão, a mais grave delas.\n\n**Três fraturas, três forças.** O Rockwood and Green (10ª ed., cap. 45) descreve a sequência. A **hiperextensão** que luxa a IFP para dorsal arranca a **borda volar** da base (a placa volar com um pedaço de osso). Com mais **carga axial**, o fragmento volar cresce e a superfície **afunda**. E com **carga axial pura** e muita energia, **toda a base explode**: é a **fratura em pilão**, com depressão, cominuição e alargamento da base nos planos coronal e sagital. A fratura da base dorsal, por fim, é a avulsão da banda central, por flexão forçada.\n\n**Por que o pilão é diferente.** Pense num pilão de cozinha batendo no fundo do almoxarifado: a cabeça da falange proximal é empurrada contra a base da falange média ao longo do eixo do dedo e a esmaga por inteiro, em vez de arrancar só uma borda. Por isso a radiografia engana, parecendo menos grave do que é, e a tomografia ajuda. Sem cirurgia vai mal, com desvio angular e rotação. A preferência dos autores é a **tração dinâmica com fixador externo**, que reduz os fragmentos por ligamentotaxia enquanto a IFP se mexe.\n\n**Onde a banca diverge do livro.** O gabarito oficial associa a compressão à **lateralização**, isto é, uma carga axial com desvio lateral. O capítulo não descreve esse componente: para ele, o pilão é carga axial pura. A lateralização faria sentido para uma fratura que atingisse mais um côndilo do que o outro, mas não é o que o livro ensina para o pilão. Na prova, guarde que a banca do INTO marcou lateralização; no raciocínio, o mecanismo do capítulo é a compressão axial que impacta a base.\n\n> **Na prova:** borda volar é hiperextensão; afundamento é carga axial; pilão é carga axial pura de alta energia, que explode a base inteira.\n\nNo resumo de fraturas da mão, a seção da fratura em pilão mostra por que a tração dinâmica é a preferência.",
+   "correta": "**E: lateralização.** É o gabarito oficial do INTO 2026: compressão axial com desvio lateral. O capítulo do Rockwood descreve o pilão como carga axial pura, que explode toda a base da falange média; a lateralização não aparece no texto, e por isso o ponto merece cautela fora dessa prova.",
+   "incorretas": {
+    "A": "**A flexão arranca a borda oposta.** A flexão forçada contra a IFP estendida ativamente produz a avulsão da base dorsal pela banda central, a botoeira óssea. Não esmaga a base inteira.",
+    "B": "**Tração arranca, não esmaga.** Forças de tração produzem avulsões, como a do tendão terminal no martelo ou da banda central na base dorsal. O pilão é uma lesão de compressão, com afundamento e cominuição.",
+    "C": "**A alternativa mais próxima do livro.** Impactar é exatamente o que a carga axial faz com a base no pilão: a cabeça da falange proximal afunda e cominui a superfície. Pelo capítulo, esta seria a resposta mais coerente; a banca, porém, deu a lateralização, e a impacção soa redundante com a compressão do enunciado.",
+    "D": "**Mecanismo da borda volar.** A hiperextensão luxa a IFP para dorsal e arranca a borda volar da base com a placa volar. É a fratura-luxação dorsal, não o pilão, que atinge a base inteira."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Fratura-luxação da IFP e base da falange média."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Fratura-luxação da IFP e base da falange média"
+    ],
+    "blocos": [
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-3686df8d",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-84ffff2c",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-2d39e4b5",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-85feab79",
+     "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "18fc376fa32c1e96223b0eacb453b22487a06ae08e98e979bc3926f91aada302"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "mao-1026": {
+  "questaoSha256": "2a209768b9650fb7c66c81411421c1a32e61675d8c790266c58e0b4aa6814c0f",
+  "comentarioAnteriorSha256": "dce9bd86aaa4324036c431fcdbc7b23c839e017c859a675c167b0f83d4a911a6",
+  "comentario": {
+   "conceito": "A falange distal é, segundo o Rockwood and Green (10ª ed., cap. 45), o osso mais fraturado do corpo. E é também um osso com uma particularidade: ele não fica sozinho. Por cima tem a unha, por baixo a polpa, e é essa vizinhança que explica como cada tipo de fratura se comporta.\n\n**As partes do osso e quem se prende a cada uma.** A falange distal divide-se em **tufo** (a ponta alargada), **diáfise** e **base**. Na base dorsal se insere o **tendão extensor terminal**; na base volar, o **flexor profundo**, no quinto proximal do osso. O tufo e a diáfise, portanto, ficam **distais a todas as inserções tendíneas**: nenhum tendão puxa esses fragmentos.\n\n**O tufo e a unha.** O tufo quebra por **esmagamento** (porta de carro, martelo), quase sempre com lesão da polpa e do leito ungueal. Como nenhum tendão o puxa, o que segura os fragmentos são as partes moles e, sobretudo, a **unha**, apoiada sobre o leito como uma tala natural. Fratura fechada e alinhada vai para tala da IFD por 4 a 6 semanas. Na fratura exposta, sutura-se o leito ungueal e **recoloca-se a unha** sob a prega: ela estabiliza a fratura e mantém a prega aberta. Desnível ou diástase pedem fio.\n\n**A pseudartrose existe.** O tufo é osso esponjoso, mas não está livre da pseudartrose: ela acontece, e quase nunca dá sintoma. Num estudo, o único fator de pseudartrose foi a **diástase** do foco.\n\n**A base é outra história.** Ali os tendões mandam: a base dorsal é o martelo ósseo (extensor terminal), a volar é a avulsão do flexor profundo (jersey), e a fratura epifisária de Seymour é instável porque o extensor puxa a epífise e o flexor puxa o fragmento distal.\n\n> **Na prova:** no tufo, quem estabiliza é a unha com as partes moles; tendões só deformam fraturas da base; pseudartrose do tufo existe, mas costuma ser assintomática.\n\nNo resumo de fraturas da mão, a seção da falange distal traz a figura com todos os padrões.",
+   "correta": "**A: da tuberosidade por esmagamento se mantêm estáveis pela placa ungueal.** O tufo fica distal às inserções dos tendões, então nenhuma força o desvia; quem segura os fragmentos é a unha, apoiada sobre o leito, com as partes moles da polpa. Por isso a unha removida é recolocada sob a prega depois de suturar o leito.",
+   "incorretas": {
+    "B": "**Na diáfise, nenhum tendão puxa.** O flexor profundo se insere na base volar, no quinto proximal da falange; o extensor terminal, na base dorsal. A diáfise fica distal às duas inserções, e a estabilidade dela depende das partes moles. O tendão flexor é força deformante nas fraturas da base, como a de Seymour.",
+    "C": "**Mecanismos diferentes.** O esmagamento e o cisalhamento atingem o tufo e a diáfise e lesam a polpa e o leito ungueal. A avulsão é outra coisa: o tendão arranca um fragmento da base, como no martelo ósseo ou no jersey finger, e o tratamento gira em torno do tendão.",
+    "D": "**Ocorre, sim.** O capítulo é explícito: pseudartroses do tufo acontecem, ainda que quase nunca deem sintomas, e a diástase do foco é o fator de risco. Ser osso esponjoso não protege contra a pseudartrose."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Falange distal: tufo, martelo ósseo, jersey e Seymour."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+    ],
+    "blocos": [
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-1765b8af",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bd6a7476",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-af3c83a1",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-08f8e80f",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-faab259b",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c7d0db01",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-3e5d74e8",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+     "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "0205043c59d5f64fcb952f7e7219603c3207d721204cc55328d048849498ba81"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "mao-1137": {
+  "questaoSha256": "8e1c94511d8d7318bdc7c4d3b73e8a64fa646623cb5eeb491a96ec92a04ba2f8",
+  "comentarioAnteriorSha256": "a6ee044cc3bd14e47322de24fb32341347cb061f8713c6a6391ffed8a751ea92",
+  "comentario": {
+   "conceito": "Depois de um trauma na interfalângica proximal, o dedo pode estar inchado e doloroso a ponto de esconder a ruptura da banda central. Se ela passa despercebida, semanas depois aparece a **botoeira**: a IFP fletida e a IFD em hiperextensão. A questão pergunta o nome do teste que denuncia a lesão cedo.\n\n**O que é a banda central.** O aparelho extensor chega ao dedo e se divide. A **banda central** se insere na **base dorsal da falange média** e estende a IFP; as **bandas laterais** passam dos lados e vão ao tendão terminal, que estende a IFD (Rockwood and Green, 10ª ed., cap. 45).\n\n**Como funciona o teste de Elson.** A ideia é isolar a banda central. Com a **IFP fletida a 90°** na borda da mesa, o paciente tenta **estender a IFP contra resistência**, e o examinador sente a IFD:\n\n- **IFD frouxa:** a banda central está íntegra. Toda a força de extensão foi para a falange média, e as bandas laterais, frouxas com a IFP fletida, não conseguem estender a IFD.\n- **IFD rígida, estendendo:** a banda central rompeu. Sem ela, o extensor recruta as bandas laterais, que tensionam o tendão terminal e estendem a IFD.\n\nA lógica é contraintuitiva: a IFD que estende é o sinal da lesão, não da integridade.\n\n**O que fazer com o resultado.** Na lesão aguda da banda central, o capítulo trata com tala só na IFP, **em extensão por 4 a 6 semanas**, deixando a **IFD e a MCF livres** para mexer ativamente, para cicatrizar a banda central e evitar a botoeira.\n\n> **Na prova:** teste de Elson: IFP a 90° na borda da mesa, extensão contra resistência; IFD que fica rígida e estende indica ruptura da banda central.\n\nNo resumo de fraturas da mão, a seção da IFP e da banda central explica o teste e a tala da lesão aguda.",
+   "correta": "**B: teste de Elson.** É o teste que o capítulo usa para a banda central depois de qualquer trauma da IFP: com a IFP fletida a 90° na borda da mesa, a extensão contra resistência deixa a IFD frouxa quando a banda central está íntegra e a faz estender quando ela rompeu.",
+   "incorretas": {
+    "A": "**Avalia outra estrutura.** O teste de Haines-Zancolli examina o ligamento retinacular oblíquo, que liga a IFP à IFD. Ele não isola a banda central.",
+    "C": "**Teste dos intrínsecos.** O teste de Bunnell-Littler compara a flexão passiva da IFP com a MCF em extensão e em flexão para diagnosticar o encurtamento da musculatura intrínseca. Não mede a integridade da banda central.",
+    "D": "**Não é o teste da banda central.** Entre as alternativas, o teste que o capítulo descreve para a banda central é o de Elson; o de Muckart não tem esse papel."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Interfalângica proximal: luxações e banda central."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Interfalângica proximal: luxações e banda central"
+    ],
+    "blocos": [
+     "interfalangica-proximal-luxacoes-e-banda-central-3e5d6f33",
+     "interfalangica-proximal-luxacoes-e-banda-central-2c34e421",
+     "interfalangica-proximal-luxacoes-e-banda-central-4e6490a4",
+     "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
+     "interfalangica-proximal-luxacoes-e-banda-central-c83691f2",
+     "interfalangica-proximal-luxacoes-e-banda-central-cfd70f88",
+     "interfalangica-proximal-luxacoes-e-banda-central-e6cf58b5",
+     "interfalangica-proximal-luxacoes-e-banda-central-556671ca",
+     "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "161f758e3af0fd978dd5b6c4b30f0a4b614a4a40f00f3c941e41b93b73c3e252"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "mao-1462": {
+  "questaoSha256": "84ca2ffa0eb950b88acb0760a3a12610ba5163fd70aac50888b8724d554cedec",
+  "comentarioAnteriorSha256": "2c14a844e2f57f49d629468619390f4e7f98fa54fbf86f575eedd100e5575c85",
+  "comentario": {
+   "alerta": "O gabarito oficial (D) fala da placa volar avulsionada da base da falange média, interposta e impedindo a redução fechada da luxação dorsal. O capítulo 45 do Rockwood and Green confirma que a placa volar rompe na luxação dorsal, mas, ao listar o que bloqueia a redução, cita o fragmento osteocondral, a banda lateral e o tendão flexor. A placa volar interposta é o bloqueio clássico da luxação complexa da MCF e da IFD fechada. A resposta da banca é a única coerente entre as alternativas.",
+   "conceito": "As luxações da interfalângica proximal são as mais frequentes da mão e de todo o membro superior. Quase sempre o dedo volta para o lugar com uma tração leve na quadra, e o paciente só chega dias depois, com o dedo inchado e rígido. Para entender cada alternativa, é preciso ver a IFP como uma caixa com quatro paredes.\n\n**A caixa que segura a IFP.** É uma dobradiça: cabeça convexa da falange proximal contra a base bicôncava da média. Dos lados, os **colaterais próprios**, estabilizadores primários no plano coronal; os colaterais acessórios vão à placa volar. Embaixo, a **placa volar**, do colo da falange proximal à base da média, com os ligamentos checkrein, segura a **hiperextensão**. Em cima, a **banda central** se insere na base dorsal da falange média (Rockwood and Green, 10ª ed., cap. 45).\n\n**A luxação dorsal.** É, de longe, a mais comum. Nasce da **hiperextensão** com translação dorsal da falange média e rompe a **placa volar e o colateral**. A placa se solta da base da falange média, que é a parte mais fraca da inserção. Reduz-se com leve tração, extensão e empurrão volar; reduzida, quase sempre fica estável, e o tratamento é mexer logo (esparadrapo no dedo vizinho ou tala em oito). Quando não reduz, vai para cirurgia por via dorsal, para tirar o que está interposto: o capítulo cita o fragmento osteocondral, a banda lateral e o tendão flexor. A placa volar arrancada da falange média também pode dobrar-se para dentro da articulação.\n\n**A luxação volar.** É bem menos comum e vem de hiperflexão com translação volar. Aqui a vítima é a **banda central**, que quase sempre rompe; o tratamento é tala da IFP em extensão por 4 a 6 semanas, com IFD e MCF livres, para evitar a botoeira. Na variante **rotatória**, o côndilo da falange proximal fica preso entre a **banda lateral e a banda central**, como numa casa de botão.\n\n> **Na prova:** luxação dorsal da IFP é a mais comum e rompe a placa volar na base da falange média; a volar rompe a banda central; a rotatória prende o côndilo entre as bandas.\n\nNo resumo de fraturas da mão, a seção das luxações da IFP mostra cada padrão e o que bloqueia a redução.",
+   "correta": "**D: nas luxações dorsais, a placa volar pode ser avulsionada da base da falange média, causando interposição e impedindo a redução fechada.** Na luxação dorsal, a hiperextensão rompe a placa volar na base da falange média; solta, ela pode ficar dentro da articulação e bloquear a redução, que então exige via dorsal para retirar o que está interposto.",
+   "incorretas": {
+    "A": "**É o contrário.** As luxações dorsais são, de longe, as mais comuns; a volar é bem menos frequente e vem de hiperflexão com translação volar.",
+    "B": "**Na volar, a lesão é da banda central.** A luxação volar rompe a banda central, pura ou com fragmento da borda dorsal da falange média; quando não reduz, o que costuma prender é o côndilo entre a banda central e a banda lateral, como na luxação rotatória. A placa volar é a estrutura lesada na luxação dorsal.",
+    "C": "**Um lado, não os dois.** Na luxação lateral, o desvio abre só o lado do colateral que rompeu; o oposto continua sendo a dobradiça. Os colaterais próprios são os estabilizadores coronais, mas uma luxação lateral não exige ruptura completa dos dois."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Interfalângica proximal: luxações e banda central."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Interfalângica proximal: luxações e banda central"
+    ],
+    "blocos": [
+     "interfalangica-proximal-luxacoes-e-banda-central-508c4bcb",
+     "interfalangica-proximal-luxacoes-e-banda-central-a32d040c",
+     "interfalangica-proximal-luxacoes-e-banda-central-8f87fd12",
+     "interfalangica-proximal-luxacoes-e-banda-central-811e2679",
+     "interfalangica-proximal-luxacoes-e-banda-central-4c7f4435",
+     "interfalangica-proximal-luxacoes-e-banda-central-556671ca",
+     "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d",
+     "interfalangica-proximal-luxacoes-e-banda-central-d8e60806",
+     "interfalangica-proximal-luxacoes-e-banda-central-cfd70f88",
+     "interfalangica-proximal-luxacoes-e-banda-central-e6cf58b5",
+     "interfalangica-proximal-luxacoes-e-banda-central-3aba11e5",
+     "interfalangica-proximal-luxacoes-e-banda-central-81b83900"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "6428f8bbe7d714a070604d5541f7971bc21d394ba6455d472c4bc4989172cbbf"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0472": {
+  "questaoSha256": "6fde46872409ac9bea08db15e58ef7981fbd6a45599913a9b6339f5ed81b2364",
+  "comentarioAnteriorSha256": "07bcd810a1b82eb3d6930ade7c6ba312c7186b352e168123ef105a464e85067c",
+  "comentario": {
+   "conceito": "Quando a fratura entra na cabeça do metacarpo, ela atinge a superfície da metacarpofalângica, a articulação que dá ao dedo a maior parte da flexão. A pergunta é o que mais costuma sobrar depois, e a resposta está numa característica da mão que o Rockwood and Green repete em cada osso: **a mão enrijece rápido**.\n\n**Por que a MCF trava.** A cabeça do metacarpo tem forma de came: é mais larga na frente do que atrás. Os colaterais da MCF nascem no dorso da cabeça e ficam **esticados na flexão** e frouxos na extensão. Se a MCF é deixada em extensão, eles encurtam frouxos e a articulação trava em extensão. É por isso que o capítulo imobiliza a mão na **posição intrínseca plus**: punho em cerca de 30° de extensão, **MCF em 70° a 90° de flexão** e interfalângicas em extensão (Rockwood and Green, 10ª ed., cap. 45).\n\n**A fratura da cabeça.** É menos comum que a do colo e a da diáfise. Somam-se ao risco natural de rigidez a lesão da cartilagem, o hematoma dentro da articulação e, quando se opera, a cápsula dorsal aberta. Por isso todo o protocolo do capítulo existe para evitar a rigidez: fragmento grande e desviado vai para **parafusos sem cabeça** em vários planos, por via dorsal, com a cápsula dorsal ressecada e deixada aberta; com fixação rígida, o movimento começa em **1 a 2 semanas**, num arco curto (0° a 45°), e a MCF fica imobilizada **acima de 70° de flexão** para evitar contratura e artrofibrose. Cabeça cominutiva sem conserto vai para fixador com distração.\n\n**O que o capítulo não diz.** Ele não faz um ranking das complicações da cabeça do metacarpo. Mas a rigidez é a complicação que aparece em toda a mão, e a tabela final do capítulo a coloca em primeiro lugar, com a receita de imobilizar só o necessário, por no máximo cerca de 4 semanas, e fixar de forma estável para mexer cedo.\n\n> **Na prova:** fratura articular da cabeça do metacarpo: a complicação mais comum é a rigidez da MCF; imobilizar em flexão de mais de 70° e mexer cedo.\n\nNo resumo de fraturas da mão, a seção da cabeça do metacarpo resume a fixação e o protocolo de movimento.",
+   "correta": "**A: rigidez.** A fratura articular da cabeça do metacarpo lesa a superfície da MCF, que enrijece com facilidade, sobretudo se ficar em extensão, quando os colaterais encurtam. Todo o protocolo do capítulo, fixação estável, movimento em 1 a 2 semanas e imobilização em mais de 70° de flexão, existe para evitar essa complicação.",
+   "incorretas": {
+    "B": "**Existe, mas é rara.** A cabeça do metacarpo pode necrosar, e o capítulo cita a necrose como consequência do diagnóstico tardio da luxação complexa da MCF. Na fratura da cabeça, porém, a complicação que domina é a rigidez.",
+    "C": "**A MCF tende a travar, não a soltar.** A instabilidade não é o problema típico da fratura da cabeça do metacarpo; o problema é a perda de movimento por contratura e artrofibrose.",
+    "D": "**Deformidade de outra origem.** A garra verdadeira é neurológica, por paralisia dos intrínsecos. A que nasce do osso é a pseudogarra, causada pela angulação de ápice dorsal do colo ou da diáfise do metacarpo, não pela fratura articular da cabeça.",
+    "E": "**Doença da polia.** O dedo em gatilho é um conflito do tendão flexor com a polia A1 e não é complicação esperada da fratura da cabeça do metacarpo."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Metacarpos: tolerância de desvio, colo do quinto e fixação; O que vale para a mão inteira; Complicações e reabilitação comuns a todo o capítulo."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Metacarpos: tolerância de desvio, colo do quinto e fixação",
+     "O que vale para a mão inteira",
+     "Complicações e reabilitação comuns a todo o capítulo"
+    ],
+    "blocos": [
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+     "o-que-vale-para-a-mao-inteira-f5f165bf",
+     "o-que-vale-para-a-mao-inteira-bbc85ceb",
+     "complicacoes-e-reabilitacao-comuns-a-todo-o-capi-21d82626"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "80c7ff3038a68e8bd357b5e42e4a1b4d3df17410f0e25d7827a6e1ea25b825fb"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0664": {
+  "questaoSha256": "beafaaab211aebda8081296e204aac6fff27a96be05c9899dab23dc44c471b93",
+  "comentarioAnteriorSha256": "ef3d08948dbf9e4bb50e6684fa68aab22ef9c5d3f1daa887bc455b4c67dedc96",
+  "comentario": {
+   "alerta": "Para a mesma pergunta (o que impede a redução fechada da luxação dorsal da MCF do polegar), o TARO 2024 deu a placa volar e o TARO 2011 (trauma-0871) deu o tendão flexor longo. O capítulo 45 do Rockwood and Green não trata a irredutibilidade do polegar à parte; na MCF, descreve a placa volar como a estrutura interposta, em linha com este gabarito.",
+   "conceito": "Uma queda com o polegar forçado para trás, em hiperextensão, faz a falange proximal subir para o dorso da cabeça do metacarpo. Às vezes o polegar volta com uma manobra simples; às vezes, por mais que se puxe, não volta. A questão pergunta o que se coloca no caminho.\n\n**Como a luxação acontece.** No Rockwood and Green (10ª ed., cap. 45), a MCF luxa por **hiperextensão**. A placa volar, o reforço fibrocartilaginoso da face palmar da articulação, rompe na sua inserção membranosa, no **colo do metacarpo**, e a falange sobe para o dorso da cabeça, levando a placa consigo.\n\n**Simples ou complexa.** Na luxação **simples**, a falange fica apoiada no dorso da cabeça, ainda em contato, e reduz com facilidade. Na **complexa**, a cabeça do metacarpo atravessa os tecidos volares e a **placa volar fica interposta** entre a cabeça e a falange. É isso que impede a redução: não há como a falange voltar, porque a placa está no espaço articular. Na radiografia, o sesamoide dentro do espaço articular denuncia a placa interposta, porque os sesamoides moram dentro dela.\n\n**O detalhe que transforma uma em outra.** A regra do capítulo é **não tracionar e não hiperestender**: essas manobras puxam a placa volar para dorsal da cabeça e transformam a luxação simples em complexa. A força certa é volar, na base da falange proximal, mantendo o contato com o dorso da cabeça enquanto se flete a MCF, com o punho fletido para relaxar os flexores.\n\n**No polegar.** O capítulo trata a MCF do polegar como a dos dedos: luxação por hiperextensão, redução fechada sempre que possível e aberta se houver interposição. O que ele descreve como interposto na MCF é a placa volar.\n\n> **Na prova:** na luxação dorsal irredutível da MCF, quem se interpõe é a placa volar; tração e hiperextensão transformam a simples em complexa.\n\nNo resumo de fraturas da mão, a seção da luxação metacarpofalângica explica o laço de Kaplan e a manobra de redução.",
+   "correta": "**A: a placa volar.** Na luxação dorsal da MCF, a placa volar rompe no colo do metacarpo e acompanha a falange; na forma complexa, ela fica entre a cabeça do metacarpo e a falange e impede a redução fechada. O sesamoide dentro do espaço articular é o sinal radiográfico dessa interposição.",
+   "incorretas": {
+    "B": "**Rompe, mas não bloqueia.** A cápsula se rasga na luxação, e o capítulo cita a ruptura capsular entre as lesões associadas da MCF do polegar. O que se interpõe entre a cabeça e a falange, porém, é a placa volar.",
+    "C": "**Aperta, mas não se interpõe.** Nos dedos, o tendão flexor forma, com o lumbrical, o laço que estrangula o colo do metacarpo, e o TARO 2011 chegou a dar o flexor longo como resposta para o polegar. Mas o capítulo insiste que, mesmo com o laço, o que impede a redução é a placa volar interposta.",
+    "D": "**Está do lado errado.** O extensor do polegar corre no dorso. Numa luxação em que a falange sobe para o dorso da cabeça, ele é afastado para cima, sem se interpor entre a cabeça e a base da falange."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+    ],
+    "blocos": [
+     "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--f0b3c62d",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--ffe4052c",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "da5a34728cf304e58015a975dd7237d2a2c5d478c7384fd62474a9b8fb618605"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1102": {
+  "questaoSha256": "4f8c8568cf2d27964fa8c4e807dfc0084fae8105fa21132cdf9ccec3098ab229",
+  "comentarioAnteriorSha256": "23c7e0dab6abf03faadc1b5af4e001a0c9b8a7373a3b7d0d7b91d66c73910130",
+  "comentario": {
+   "conceito": "A metacarpofalângica do polegar é uma articulação com pouca estabilidade óssea, que depende de ligamentos e músculos. Quando ela luxa, a energia que tirou a falange do lugar quase sempre deixa outra marca. A questão pergunta qual é a mais comum.\n\n**Como a MCF do polegar luxa.** No Rockwood and Green (10ª ed., cap. 45), a luxação vem da **hiperextensão** (e o colateral radial rompe por força ulnar). Ao ser forçada para trás, a falange proximal se apoia e bate contra a cabeça do metacarpo enquanto a placa volar e a cápsula cedem.\n\n**O que vem junto.** O capítulo lista as lesões associadas: a mais comum é a **fratura articular**, sobretudo **avulsões e cisalhamentos da base da falange proximal**. Também aparecem ruptura da cápsula, fratura de sesamoide e ruptura de tendões vizinhos, mas com menor frequência. Faz sentido mecânico: os ligamentos e a placa volar se prendem à base da falange, e, quando a força é grande, o osso dessa base cede antes do ligamento, saindo um fragmento preso a ele, ou a base é cisalhada pela cabeça do metacarpo ao luxar.\n\n**Por que isso importa.** Um fragmento articular muda a conduta: se ele leva o ligamento ou deixa a articulação incongruente, a redução fechada pode não bastar. Como nos dedos, a redução é fechada sempre que possível e aberta se houver interposição.\n\n> **Na prova:** na luxação da MCF do polegar, a lesão associada mais comum é a fratura articular da base da falange proximal (avulsão ou cisalhamento).\n\nNo resumo de fraturas da mão, a seção da luxação metacarpofalângica traz o polegar no fim.",
+   "correta": "**D: fratura articular da base da falange.** É a lesão associada mais comum que o capítulo descreve na luxação da MCF do polegar, sobretudo avulsões e cisalhamentos da base da falange proximal, onde se prendem a placa volar e os ligamentos.",
+   "incorretas": {
+    "A": "**Acontece, mas vem atrás.** A cápsula se rompe na luxação, e o capítulo a lista entre as lesões associadas, mas a mais comum é a fratura articular da base da falange.",
+    "B": "**Menos frequente.** O capítulo cita a ruptura de tendões vizinhos como lesão possível, sem colocá-la à frente da fratura articular.",
+    "C": "**Possível, mas não a principal.** Os sesamoides do polegar ficam dentro da placa volar e podem fraturar na luxação, mas o capítulo coloca a fratura articular da base da falange proximal como a associação mais comum."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+    ],
+    "blocos": [
+     "luxacao-metacarpofalangica-simples-complexa-e-o--03586735",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--f1f58ccb",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--d80e8677",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--0f894db8",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+     "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "f96119fdab0ee6644ad523640124ce1d1686fd58e71a1812ae345bdcaba62489"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "mao-1046": {
+  "questaoSha256": "4e3fc6a8588488df0859f603d7a00cefbd20ef8ac8c05cff2f3b29b66d44435e",
+  "comentarioAnteriorSha256": "ec9a9a983276f046a42519548835c4bbee509c570cd2b2ab1080eb246f16ac25",
+  "comentario": {
+   "alerta": "O gabarito oficial é A. O capítulo 42 do Rockwood and Green usa 7,5 cm (a banca arredondou para 7 cm) e confirma que o tipo I tem instabilidade bem maior da radioulnar distal. Mas o mesmo capítulo descreve o mecanismo da Galeazzi rompendo a membrana interóssea, os ligamentos radioulnares distais e a fibrocartilagem triangular, o que torna a alternativa B também defensável pelo livro. Mantemos o gabarito oficial e explicamos a divergência.",
+   "conceito": "O rádio quebrou na diáfise, e o paciente tem dor no punho, do lado da ulna. Esse detalhe muda a fratura de nome e de prognóstico: é a **Galeazzi**, a fratura da diáfise do rádio com lesão da radioulnar distal, que o Rockwood and Green (10ª ed., cap. 42) também chama de fratura da necessidade, de Piedmont ou Monteggia reversa.\n\n**Como a lesão anda.** A Galeazzi nasce de **torção com carga axial**, como na queda com o antebraço hiperpronado e o punho em extensão. A fratura começa no rádio e a lesão corre **para distal**: rompe a **membrana interóssea**, os **ligamentos radioulnares distais** e, por fim, a **fibrocartilagem triangular**, deixando a radioulnar distal instável. A hiperpronação gera a luxação anterior da cabeça da ulna; a hipersupinação, a posterior.\n\n**Por que a altura do traço importa.** O capítulo subclassifica pela distância do traço até a superfície articular do rádio distal. No **tipo I**, até **7,5 cm**, a instabilidade da radioulnar distal é **bem maior** e muitas vezes exige reparo aberto dela; no **tipo II**, mais proximal, há menos instabilidade. Faz sentido: quanto mais perto do punho a fratura, mais curta a ponte de membrana e ligamentos entre o foco e a radioulnar distal, e mais fácil a lesão chegar até ela. O capítulo traz o contraponto de Tsismenakis e Tornetta, que acharam essas medidas pouco confiáveis e recomendam decidir pelo teste intraoperatório depois de fixar o rádio.\n\n**O tratamento.** No adulto, a Galeazzi tratada com gesso vai mal quase sempre, porque o pronador quadrado, o braquiorradial e os músculos do polegar deformam o rádio. A regra é **redução anatômica e placa no rádio**: na maioria, o rádio anatômico reduz e estabiliza sozinho a radioulnar distal. Depois, testa-se a articulação; só a instável recebe fios ou reparo da fibrocartilagem. Se a radioulnar distal não reduz com o rádio anatômico, há algo interposto: classicamente o **extensor ulnar do carpo**.\n\n> **Na prova:** Galeazzi com traço até 7,5 cm da articulação é a mais instável; placa no rádio e teste da radioulnar distal; o interposto clássico é o extensor ulnar do carpo.\n\nNo resumo de diáfise do rádio e da ulna, a seção da Galeazzi traz os sinais radiográficos de lesão da radioulnar distal.",
+   "correta": "**A: as fraturas do tipo 1 ocorrem em um espaço de 7 cm e são mais instáveis.** O capítulo define o tipo I como a fratura a até 7,5 cm da superfície articular do rádio distal, com taxa bem maior de instabilidade da radioulnar distal; a banca arredondou o número.",
+   "incorretas": {
+    "B": "**Verdadeira pelo livro, mas não foi a escolhida.** O capítulo descreve a lesão correndo do foco para distal pela membrana interóssea até a fibrocartilagem triangular, o que sustenta a ideia da alternativa. A banca considerou A a resposta; veja o alerta.",
+    "C": "**O tendão interposto é outro.** Quando a radioulnar distal não reduz com o rádio anatômico, o capítulo cita o extensor ulnar do carpo (e o extensor do dedo mínimo, os extensores dos dedos, periósteo ou fragmento foveal). O flexor ulnar do carpo fica na face volar e não se interpõe na radioulnar distal.",
+    "D": "**Não é habitual.** Na maioria, o rádio anatômico reduz e estabiliza a radioulnar distal, que é então só testada. O reparo da fibrocartilagem ou os fios ficam para a articulação que continua instável depois da placa, e nenhum estudo mostrou um método superior ao outro."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Seções: Galeazzi: o rádio quebrado e a radioulnar distal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-42-diafise-radio-ulna",
+    "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+    "secoes": [
+     "Galeazzi: o rádio quebrado e a radioulnar distal"
+    ],
+    "blocos": [
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-61eedfb6",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-e7e7c7bf",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-66eeabbb",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-61ce0ed6",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-14634e1e",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-bb9240e3",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-2d4f323e",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-0fb30e90",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7353be7e",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-38f35755",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-f5e1d35e",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-d9a6f984",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-3a12c43c",
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-36c1e660"
+    ],
+    "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+    "trechosSha256": "c7af72aa144c3c71330575bec1e246dfc2b11e1065303fa4de2cb715ff609bb7"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "mao-1192": {
+  "questaoSha256": "c59a02ac9224299aadd2952838c5af91da5e334bb28cca6596690dc1c31c3d94",
+  "comentarioAnteriorSha256": "2b264cd6f4c658a7e219c5ab94d06b21def2079b9d3b9957b249b7e1663417ba",
+  "comentario": {
+   "provavel": "B",
+   "alerta": "A banca não divulgou gabarito oficial desta prova. A resposta provável B (estágio II) foi definida a partir do capítulo 44 do Rockwood and Green: no estágio II de Mayfield, a força chega ao capitato, que luxa para dorsal levando a fileira distal; quando o arco é maior e passa pelo osso, o capitato fratura (lesão de grande arco), e a parte distal dele acompanha a fileira distal.",
+   "conceito": "Mayfield reproduziu em cadáver a luxação perilunar e mostrou que ela não acontece de uma vez: a lesão anda **em volta do semilunar**, a pedra angular do carpo, de radial para ulnar, estágio por estágio. Saber em que ponto do caminho cada estrutura cede resolve a questão.\n\n**Os quatro estágios.** No Rockwood and Green (10ª ed., cap. 44):\n\n- **Estágio I, escafoide e escafossemilunar:** a fileira distal é estendida, supinada e desviada para ulnar; o escafoide é puxado para extensão, mas o semilunar, preso pelos ligamentos palmares, não acompanha. Resultado: dissociação escafossemilunar, fratura do escafoide ou as duas.\n- **Estágio II, capitato e semilunar:** a força chega ao **capitato**, que se desloca e **luxa para dorsal** pelo espaço de Poirier, **levando a fileira distal** e a parte radial da proximal.\n- **Estágio III, lunopiramidal:** com o capitato dorsal, rompe o lunopiramidal; o resultado mais comum é a luxação mediocárpica, com o semilunar na fossa.\n- **Estágio IV, luxação do semilunar:** o capitato empurra o dorso do semilunar, que gira para palmar dentro do túnel do carpo.\n\n**Onde entra a fratura do capitato.** A lesão pode passar só pelos ligamentos (pequeno arco) ou atravessar ossos (grande arco): estiloide do rádio, escafoide, semilunar, **capitato**, piramidal. O prefixo **trans-** indica fratura. Se, no estágio II, a força que leva o capitato para dorsal atravessa o próprio capitato em vez de romper só os ligamentos à volta dele, ele fratura, e a sua **porção distal** segue com o resto da fileira distal para dorsal. É exatamente o que o enunciado descreve.\n\n> **Na prova:** Mayfield I escafossemilunar, II capitato (luxa para dorsal com a fileira distal), III lunopiramidal, IV semilunar luxado.\n\nNo resumo do carpo, a seção de Mayfield e da luxação perilunar mostra os estágios e os arcos pequeno e grande.",
+   "correta": "**B: II.** No estágio II de Mayfield, a força chega ao capitato, que luxa para dorsal levando a fileira distal. Quando essa força atravessa o capitato (grande arco), ele fratura, e a porção distal dele desvia para dorsal com o resto da fileira distal.",
+   "incorretas": {
+    "A": "**Ainda no escafoide.** O estágio I é a lesão do lado radial: dissociação escafossemilunar, fratura do escafoide ou as duas. O capitato ainda não foi atingido.",
+    "C": "**O capitato já saiu.** No estágio III, o capitato já está dorsal, e a lesão avança para o lado ulnar, rompendo o lunopiramidal. A fratura do capitato, se houver, pertence ao momento em que ele é deslocado, o estágio II.",
+    "D": "**O último a sair é o semilunar.** No estágio IV, o capitato dorsal empurra o semilunar, que gira para palmar dentro do túnel do carpo. É a luxação do semilunar, e não a passagem da força pelo capitato."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-44-carpo",
+    "titulo": "Fraturas e luxações do carpo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+    "secoes": [
+     "Mayfield e a luxação perilunar"
+    ],
+    "blocos": [
+     "mayfield-e-a-luxacao-perilunar-075ecace",
+     "mayfield-e-a-luxacao-perilunar-3751abec",
+     "mayfield-e-a-luxacao-perilunar-c96b9191",
+     "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+     "mayfield-e-a-luxacao-perilunar-07798063",
+     "mayfield-e-a-luxacao-perilunar-fdfdb76a",
+     "mayfield-e-a-luxacao-perilunar-a3b9e8fe",
+     "mayfield-e-a-luxacao-perilunar-fa0297aa",
+     "mayfield-e-a-luxacao-perilunar-1c1cc5cd",
+     "mayfield-e-a-luxacao-perilunar-501fc79c",
+     "mayfield-e-a-luxacao-perilunar-85ea4988",
+     "mayfield-e-a-luxacao-perilunar-3a52a44f",
+     "mayfield-e-a-luxacao-perilunar-a286746f",
+     "mayfield-e-a-luxacao-perilunar-9979fb84"
+    ],
+    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+    "trechosSha256": "aa4dc37d5b97c083028bc0d01e86a26ed52272b9ff207485bb377d1d4031ccea"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "mao-1528": {
+  "questaoSha256": "97c5def8d5268036a8442dba7373cb6d4f23cd5331abfafa35cbae0c75eb9961",
+  "comentarioAnteriorSha256": "85b11e89d9d49f9a9879a65f74c1629c6af55d4bb79c36ad82f86159e2665b88",
+  "comentario": {
+   "conceito": "Um soco num muro, ou uma queda de moto com a mão fechada no guidão, empurra os metacarpos para trás sobre o carpo. Quando várias carpometacarpais luxam ao mesmo tempo, a energia foi alta, e a mão inteira sofreu, não só as articulações. É essa ideia que separa a alternativa certa das outras.\n\n**Como as CMC luxam.** No Rockwood and Green (10ª ed., cap. 45), as luxações e fraturas-luxações das carpometacarpais acontecem mais no **anular e no mínimo**, onde o encaixe ósseo é menor. O mecanismo típico é a **carga axial com o punho fechado**. A base do metacarpo escorrega para **dorsal**: com mais energia, fratura a base do quinto (o reverse Bennett, com a diáfise migrando para dorsal e proximal, puxada pelo extensor ulnar do carpo) ou a superfície do hamato. **Várias CMC luxadas ao mesmo tempo são de alta energia** e têm pior prognóstico.\n\n**O que procurar no exame.** A **saliência dorsal** das bases, a perda da altura das cabeças e o cruzamento dos dedos. Duas estruturas volares merecem atenção: o ramo motor do nervo ulnar, volar à CMC do quinto, e o arco palmar, volar à CMC do médio. E o capítulo é direto: **com várias CMC lesadas, pensar em síndrome compartimental**. A mão tem compartimentos fechados (interósseos, tenares, hipotenares), e o trauma que desloca várias bases e rompe ligamentos e músculos entre elas produz edema dentro deles.\n\n**Por que quase sempre é cirúrgico.** Depois de reduzida com tração e pressão volar na base, a maioria **continua instável**: numa série tratada só com tala, 20% reluxaram na primeira semana. Por isso o capítulo fixa com fios (do quinto metacarpo ao hamato e ao quarto metacarpo) por cerca de 6 semanas e abre por via dorsal quando a fratura articular é grande ou a redução falha. A complicação mais comum, a longo prazo, é a **artrose pós-traumática**, por redução imperfeita ou degrau articular.\n\n> **Na prova:** CMC múltipla é alta energia: luxação dorsal, instável depois de reduzida (fios) e com risco de síndrome compartimental da mão.\n\nNo resumo de fraturas da mão, a seção das carpometacarpais e do reverse Bennett descreve o exame e a fixação.",
+   "correta": "**B: deve-se investigar síndrome compartimental.** O capítulo manda pensar em síndrome compartimental sempre que várias CMC estão lesadas: é uma lesão de alta energia, com edema dentro dos compartimentos fechados da mão. A mesma regra aparece nos metacarpos: com mais de três fraturas, vigiar o compartimento.",
+   "incorretas": {
+    "A": "**O desvio é dorsal.** A carga axial com o punho fechado empurra as bases dos metacarpos para dorsal; o exame mostra a saliência dorsal, e no reverse Bennett a diáfise migra para dorsal e proximal, puxada pelo extensor ulnar do carpo.",
+    "C": "**É o contrário.** A maioria fica instável depois de reduzida: numa série tratada com tala, 20% reluxaram já na primeira semana. Por isso o tratamento quase sempre é cirúrgico, com fios mantidos por cerca de 6 semanas.",
+    "D": "**O capítulo destaca outra coisa.** A instabilidade depois da redução é justamente o problema que leva aos fios, e a complicação mais comum que o capítulo aponta é a artrose pós-traumática. Não há dado que coloque a rigidez acima da instabilidade nessa lesão."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Carpometacarpais dos dedos e o reverse Bennett; Metacarpos: tolerância de desvio, colo do quinto e fixação."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Carpometacarpais dos dedos e o reverse Bennett",
+     "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+    ],
+    "blocos": [
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-17167a6f",
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-2e0ae54e",
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-c7b09e80",
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-84fb3543",
+     "carpometacarpais-dos-dedos-e-o-reverse-bennett-e0e14c5e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b"
+    ],
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "trechosSha256": "cc2bb834fd110c1357beb550ddc623ca59d5f803aabb28221a19d679758fa89e"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0585": {
+  "questaoSha256": "9ce42b670d70da1bbaa4c42f2cacbd90600bb0b6450fc6756e2cc82b399884b7",
+  "comentarioAnteriorSha256": "10d24f8f1cf808345660095c8952b12c6c3bf6798955f024e6a5706a14ad9699",
+  "comentario": {
+   "conceito": "Uma ginasta de 12 anos treina 20 horas por semana e começa a sentir dor no punho que piora no solo e nas paralelas e melhora no descanso. Não houve queda nem trauma. A radiografia mostra a fise distal do rádio alargada e irregular. É a lesão que a questão descreve, e entender o que a ginástica faz com o punho explica por que ela aparece justamente ali.\n\n**A carga que a ginástica impõe.** Na ginástica, o membro superior vira membro de apoio: paradas de mão, rodas, saltos sobre o cavalo. O punho é carregado em **carga axial repetida**, em extensão, centenas de vezes por treino. O Wilkins (9ª ed., cap. 8) descreve a **lesão fisária por estresse** como a consequência dessa carga, **quase sempre do rádio**, sobretudo na **ginástica de competição**, e também na luta, no break dance e entre líderes de torcida. Treino excessivo, técnica ruim e progressão rápida de nível predispõem.\n\n**Por que a fise e por que o rádio.** A fise é a parte mais frágil do osso em crescimento, e o rádio distal recebe a maior parte da carga que atravessa o punho. A pancada repetida perturba a ossificação na zona da fise: a radiografia mostra **alargamento da fise**, alterações **císticas e escleróticas** na metáfise, bico da epífise e neoformação reativa. No início pode ser normal, e a ressonância em geral diagnostica.\n\n**O que está em jogo.** O tratamento é tirar a carga: repouso, gesso curto ou tala até a dor sumir, e retorno gradual em **3 a 6 meses**, corrigindo técnica e treino. A grande preocupação é a **parada do crescimento do rádio**: a ulna continua crescendo, surge **variância ulnar positiva**, **impacto ulnocarpal** e lesão da fibrocartilagem triangular. Como a parada por estresse é difusa, a ressecção da barra quase nunca é possível, e o tratamento vai para a ulna (epifisiodese ou encurtamento).\n\n> **Na prova:** lesão fisária por estresse é do rádio distal da ginasta; o risco é a parada do rádio, com variância ulnar positiva e impacto ulnocarpal.\n\nNo resumo de fraturas do rádio e da ulna distais na criança, a seção da ginasta descreve a imagem e o seguimento.",
+   "correta": "**C: nos ossos do antebraço dos ginastas.** O capítulo descreve a lesão fisária por estresse quase sempre no rádio distal, sobretudo na ginástica de competição, em que o punho é carregado em compressão axial repetida, em extensão, como membro de apoio.",
+   "incorretas": {
+    "A": "**Corrida estressa outro tipo de osso.** O corredor faz fraturas por estresse no membro inferior, mas a lesão fisária por estresse que o capítulo descreve como típica está no punho, pela carga axial repetida da ginástica.",
+    "B": "**O futebol não carrega a fise do fêmur assim.** O esporte que o capítulo associa à lesão fisária por estresse é a ginástica, com o punho como apoio; o fêmur do jogador de futebol não é o exemplo citado.",
+    "D": "**Osso certo, esporte errado.** O arremesso do beisebol traciona e torce o membro, mas não aplica a compressão axial repetida no punho estendido que a ginástica impõe. É exatamente a armadilha que o TARO montou."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 8 · Fractures of the Distal Radius and Ulna. Seções: A ginasta: lesão fisária por estresse."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+    "titulo": "Fraturas do rádio e da ulna distais na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "9ª edição (2020)",
+    "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+    "secoes": [
+     "A ginasta: lesão fisária por estresse"
+    ],
+    "blocos": [
+     "a-ginasta-lesao-fisaria-por-estresse-decda032",
+     "a-ginasta-lesao-fisaria-por-estresse-487c47bc",
+     "a-ginasta-lesao-fisaria-por-estresse-1963de5f",
+     "a-ginasta-lesao-fisaria-por-estresse-fab3a819"
+    ],
+    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+    "trechosSha256": "932ce1a08d2c33e5ad46de246eebbf21d7bd45afb9f9c1b1684dad84fda33529"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1729": {
+  "questaoSha256": "e764c200697599e7b249c8b1876ce768ca234cae365bee27707bc3073053343f",
+  "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "comentario": {
+   "conceito": "Uma senhora de 92 anos cai em casa e quebra a diáfise do úmero. Com muitas doenças, a família prefere não operar. A órtese funcional resolve a maioria dessas fraturas, e a pergunta é até onde o osso pode consolidar torto sem prejudicar o braço.\n\n**Por que o úmero tolera tanto.** O úmero fica pendurado no ombro, uma articulação com enorme amplitude de movimento, que compensa boa parte de uma angulação ou rotação residual. Os músculos do braço envolvem o osso e escondem uma deformidade moderada. Por isso a diáfise do úmero é o osso longo em que o tratamento sem cirurgia, com a órtese funcional de Sarmiento, tem mais sucesso.\n\n**Os números do capítulo.** O Rockwood and Green (10ª ed., cap. 37) dá as tolerâncias em três lugares, e elas não são idênticas. No quadro do tratamento sem cirurgia: **20 graus ou menos de angulação**, **30 graus ou menos de rotação**, **3 cm ou menos de encurtamento** e algum contato ósseo. No texto das indicações cirúrgicas: não aceitar mais de 15 a 20 graus em qualquer direção, mais de 30 graus de rotação ou 2 a 3 cm de encurtamento no paciente ativo. E na série de Sarmiento, até 20 graus anterior ou posterior e 15 graus de varo foram bem tolerados.\n\n**E os números de Klenerman?** Os clássicos 20 graus de angulação anterior, 30 graus de varo e 3 cm de encurtamento, muito usados em comentários de prova, **não aparecem neste capítulo**. A diferença que importa é o varo: o capítulo é mais rígido, com 15 graus. Todos os autores, de qualquer forma, insistem que esses números são **arbitrários**, opinião de especialista, e que a decisão depende do paciente: dominância, trabalho, comorbidades e nível funcional. Para uma paciente de 92 anos com pouca demanda, aceita-se até mais.\n\n| Desvio | Limite do capítulo |\n|---|---|\n| Angulação | 20 graus (anterior ou posterior) |\n| Varo | 15 graus (série de Sarmiento) |\n| Rotação | 30 graus |\n| Encurtamento | 3 cm |\n\n> **Na prova:** úmero tolera cerca de 20 graus de angulação, 30 graus de rotação e 3 cm de encurtamento; o varo é o limite mais apertado.\n\nNo resumo de diáfise do úmero, a seção sobre quanto se tolera mostra as três versões dos números lado a lado.",
+   "correta": "**A: angulação anterior de até 20º.** É o limite que o capítulo dá para o tratamento sem cirurgia (20 graus ou menos de angulação), e a série de Sarmiento mostrou que até 20 graus anterior ou posterior foram bem tolerados.",
+   "incorretas": {
+    "B": "**O dobro do aceito.** Quarenta graus de angulação anterior passam muito do limite de 20 graus do capítulo e do texto das indicações cirúrgicas, que não aceita mais de 15 a 20 graus em qualquer direção.",
+    "C": "**Varo muito além.** O varo é justamente o limite mais apertado do capítulo, 15 graus na série de Sarmiento. Cinquenta graus seriam uma deformidade grosseira.",
+    "D": "**Ainda acima do clássico.** Nem os números de Klenerman, mais permissivos, aceitam 40 graus de varo (o clássico é 30). O capítulo é ainda mais rígido, com 15 graus.",
+    "E": "**Meio centímetro a mais.** O encurtamento aceito é de até 3 cm no quadro do tratamento sem cirurgia (2 a 3 cm no paciente ativo, no texto). Três centímetros e meio passam do limite."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Quanto se tolera e quando operar."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Quanto se tolera e quando operar"
+    ],
+    "blocos": [
+     "quanto-se-tolera-e-quando-operar-946d4f03",
+     "quanto-se-tolera-e-quando-operar-5c8379ca",
+     "quanto-se-tolera-e-quando-operar-0735ebe6",
+     "quanto-se-tolera-e-quando-operar-2d42feef",
+     "quanto-se-tolera-e-quando-operar-2dea02d5",
+     "quanto-se-tolera-e-quando-operar-339c2f05"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "af54a60468c70f89ce3e077a7abf9669f5e5ab156cf8e4ab0eb2d9d1b03f35ee"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1730": {
+  "questaoSha256": "385ea3655447ef8896321f117ec2ea5f3ffddf5938718ce8f6bd73448060472b",
+  "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "comentario": {
+   "conceito": "A radiografia AP da pelve vê o anel de frente, mas a pelve não está de frente: ela é uma bacia inclinada para a frente, e o sacro fica deitado em ângulo. Por isso o AP mostra mal o anel posterior e confunde os desvios. As incidências de entrada e de saída nasceram para olhar a bacia por cima e pela frente, e cada uma vê um tipo de desvio.\n\n**Como se fazem.** No Rockwood and Green (10ª ed., cap. 50), as duas são obtidas inclinando o **feixe**, sem mexer no paciente, o que as torna fáceis no politraumatizado. Na **inlet** (entrada), o feixe vai **caudal**; na **outlet** (saída), vai **cefálico**. Os ângulos clássicos eram de **45 graus** para cada lado; um estudo por tomografia definiu os ideais em cerca de **25 graus para a inlet** e **60 graus para a outlet**.\n\n**O que cada uma vê.** A **inlet** olha a pelve de cima, através da abertura superior: mostra **rotação** interna ou externa de cada hemipelve, abertura da sacroilíaca, impacção da asa do sacro e **deslocamento anterior ou posterior**. A **outlet** olha a pelve de frente e de baixo, com o sacro perfilado: mostra as **fraturas do sacro em relação aos forames** (que devem aparecer redondos), as sacroilíacas e a **altura relativa** dos púbis e dos ísquios, isto é, o **desvio vertical** da hemipelve.\n\n**Uma só não basta.** O deslocamento real é a soma de dois vetores: o desvio vertical da outlet vem junto com a translação anteroposterior que a inlet mostra, e uma incidência só se interpreta com a outra.\n\n| Incidência | Feixe | Mostra |\n|---|---|---|\n| Inlet | Caudal (45 clássico; 25 ideal) | Rotação, translação anteroposterior, asa do sacro |\n| Outlet | Cefálico (45 clássico; 60 ideal) | Sacro e forames, desvio vertical |\n\n> **Na prova:** outlet é feixe cefálico e vê o sacro e o desvio vertical; inlet é caudal e vê a rotação e o desvio anteroposterior.\n\nNo resumo de lesões do anel pélvico, a seção de radiografias tem o desenho da direção do feixe nas duas incidências.",
+   "correta": "**A: ampola do raio a 45 graus cefálico / desvios verticais e fraturas sacrais.** A outlet é feita com o feixe inclinado cefálico (45 graus no ângulo clássico; 60 graus pelo estudo citado no capítulo) e mostra as fraturas do sacro em relação aos forames e a altura das hemipelves, o desvio vertical.",
+   "incorretas": {
+    "B": "**Feixe caudal é a inlet.** Inclinar o feixe caudal produz a incidência de entrada, que vê a pelve de cima; ela não perfila o sacro nem mostra bem o desvio vertical.",
+    "C": "**Direção certa, achado da outra incidência.** O feixe cefálico é o da outlet, mas os desvios rotacionais e anteroposteriores são o que a inlet mostra.",
+    "D": "**É a descrição da inlet.** Feixe caudal com desvios rotacionais e anteroposteriores é exatamente a incidência de entrada, não a de saída.",
+    "E": "**Feixe perpendicular é o AP.** Sem inclinação, o raio produz a radiografia AP, a visão geral de triagem do anel, que mostra mal o anel posterior. A outlet existe justamente porque é preciso inclinar o feixe para perfilar o sacro."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Imagem."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Imagem"
+    ],
+    "blocos": [
+     "imagem-42007ad5",
+     "imagem-4f412193",
+     "imagem-0a1f5cef",
+     "imagem-abbe22b6",
+     "imagem-cf38577a",
+     "imagem-9ce46891",
+     "imagem-06455337"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "34cb1d09b06c84f498f0c8de335a8e552e5696cc6b7359f9a76d5c7cf6e5dc06"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}
