@@ -161,3 +161,122 @@ def completar(fc: dict, q: dict, c: dict, areas: dict, niveis: dict[str, int], n
         im = q["imagens"][0]
         saida["imagem"] = {"arquivo": im["arquivo"], "legenda": im.get("legenda") or ""}
     return saida
+
+
+# ─── Inclusão de lotes (27/10/2026) ──────────────────────────────────────────
+# Um lote é scripts/flashcards/lotes/<data>-<tema>-N.json: uma lista de flashcards autorais ou
+# {"temas": [{"area", "assunto"}], "flashcards": [...]}. "incluir" valida cada um (regra de ouro
+# acima), descarta o que repete conceito já publicado (fábrica ou autoral, em qualquer área) e grava
+# só os novos. Rodar o mesmo lote de novo não cria nada: cada flashcard reaparece como repetido dele
+# mesmo. O resultado de cada lote fica em scripts/flashcards/expansao.json (temas concluídos, quantos
+# entraram, quantas duplicidades foram evitadas), que prioridade.py também lê.
+
+import json  # noqa: E402
+
+REGISTRO = Path(__file__).resolve().parent / "expansao.json"
+_PALAVRAS_VAZIAS = set(
+    "a o as os um uma uns umas de da do das dos e em no na nos nas para por pela pelo com sem ao aos "
+    "qual quais que quem como quando onde quanto quanta quantos quantas e é sao ser se seu sua mais menos "
+    "nesse nessa neste nesta esse essa este esta isso isto entre sobre ate tipo grau".split()
+)
+
+
+def _sem_lacuna(t: str) -> str:
+    return re.sub(r"\{\{c\d::([^}]+)\}\}", r"\1", t)
+
+
+def _tokens(t: str) -> set[str]:
+    return {w for w in F.normalizar(_sem_lacuna(t)).split() if len(w) > 2 and w not in _PALAVRAS_VAZIAS}
+
+
+def _jaccard(a: set[str], b: set[str]) -> float:
+    return len(a & b) / len(a | b) if a and b else 0.0
+
+
+def repetido(novo: dict, existentes: list[dict]) -> dict | None:
+    """O flashcard publicado que já cobra o mesmo conceito, ou None.
+
+    Mesmo conceito = mesma frente; ou mesma resposta com frentes parecidas (Jaccard das palavras de
+    conteúdo >= 0,4, ou >= 0,55 quando a resposta é curta, como "2" ou "III", em que frentes parecidas
+    de classificações diferentes ainda podem divergir); ou frentes quase iguais (>= 0,7) com resposta
+    diferente na redação. Classificação, mecanismo, conduta e complicação do mesmo tema têm frentes e
+    respostas diferentes e passam.
+    """
+    frente = F.normalizar(_sem_lacuna(novo["frente"]))
+    resp = F.normalizar(novo["resposta"])
+    tn = _tokens(novo["frente"])
+    for e in existentes:
+        if F.normalizar(_sem_lacuna(e["frente"])) == frente:
+            return e
+        j = _jaccard(tn, _tokens(e["frente"]))
+        mesma = F.normalizar(e.get("resposta") or "") == resp
+        if (mesma and j >= (0.55 if len(resp) <= 4 else 0.4)) or j >= 0.7 and (mesma or resp in F.normalizar(e.get("explicacao") or "")):
+            return e
+    return None
+
+
+def cmd_incluir(caminho: str, conferir: bool) -> int:
+    areas, questoes, comentarios = F.carregar_acervo()
+    niveis = F.niveis_de_incidencia()
+    bruto = json.loads(Path(caminho).read_text(encoding="utf-8"))
+    lote = bruto["flashcards"] if isinstance(bruto, dict) else bruto
+    temas = bruto.get("temas", []) if isinstance(bruto, dict) else []
+    publicados = [c for cartas in F.ler_publicados(com_autorais=True).values() for c in cartas]
+    autorais = ler_autorais()
+    frentes = {F.normalizar(_sem_lacuna(c["frente"])) for c in publicados}
+    incluidos, duplicados, reprovados = [], [], []
+    for fc in lote:
+        q, c = questoes.get(fc.get("questao")), comentarios.get(fc.get("questao"))
+        dup = repetido(fc, publicados)
+        if dup:
+            duplicados.append({"frente": fc["frente"], "igualA": dup["id"]})
+            continue
+        erros = validar_autoral(fc, q, c, frentes)
+        if erros:
+            reprovados.append({"frente": fc.get("frente", "")[:80], "erros": erros})
+            continue
+        area = q["_area"]
+        lista = autorais.setdefault(area, [])
+        prefixo = f"fc-{q['id']}-{TIPOS[fc['tipo']]}"
+        numero = 1 + max([int(m.group(1)) for x in lista if (m := re.fullmatch(re.escape(prefixo) + r"(\d+)", x["id"]))] or [0])
+        carta = completar(fc, q, c, areas, niveis, numero)
+        lista.append(carta)
+        publicados.append(carta)
+        frentes.add(F.normalizar(_sem_lacuna(carta["frente"])))
+        incluidos.append(carta)
+    for r in reprovados:
+        print(f"  reprovado: {r['frente']} -> {'; '.join(r['erros'])}")
+    for d in duplicados:
+        print(f"  repetido (já existe {d['igualA']}): {d['frente'][:90]}")
+    print(f"{Path(caminho).name}: {len(incluidos)} novos · {len(duplicados)} repetidos evitados · {len(reprovados)} reprovados")
+    if conferir:
+        return 1 if reprovados else 0
+    for area in {c["areaId"] for c in incluidos}:
+        gravar_autorais(area, autorais[area])
+    F.publicar(F.ler_publicados())
+    F.reconstruir_indice(areas, F.ler_publicados(com_autorais=True), F.ler_json(F.ESTADO, {}))
+    reg = F.ler_json(REGISTRO, {"lotes": [], "temas": []})
+    nome = Path(caminho).name
+    reg["lotes"] = [x for x in reg["lotes"] if x["arquivo"] != nome] + [{
+        "arquivo": nome, "data": date.today().isoformat(), "novos": len(incluidos) + next((x["novos"] for x in reg["lotes"] if x["arquivo"] == nome), 0),
+        "repetidosEvitados": len(duplicados), "reprovados": len(reprovados),
+    }]
+    for t in temas:
+        if not any(x["area"] == t["area"] and x["assunto"] == t["assunto"] for x in reg["temas"]):
+            reg["temas"].append({"area": t["area"], "assunto": t["assunto"], "data": date.today().isoformat()})
+    F.gravar_json(REGISTRO, reg)
+    return 1 if reprovados else 0
+
+
+if __name__ == "__main__":
+    import argparse
+    p = argparse.ArgumentParser(description="Flashcards autorais: incluir um lote validado e sem repetidos.")
+    sub = p.add_subparsers(dest="comando", required=True)
+    i = sub.add_parser("incluir")
+    i.add_argument("lotes", nargs="+")
+    i.add_argument("--conferir", action="store_true", help="só valida e mostra o resultado, sem gravar")
+    a = p.parse_args()
+    falhas = 0
+    for arq in a.lotes:
+        falhas += cmd_incluir(arq, a.conferir)
+    sys.exit(1 if falhas else 0)

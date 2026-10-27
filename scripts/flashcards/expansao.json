@@ -1,0 +1,126 @@
+{
+ "lotes": [
+  {
+   "arquivo": "2026-10-27-ddq-1.json",
+   "data": "2026-10-27",
+   "novos": 16,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-displasias-sindromes-1.json",
+   "data": "2026-10-27",
+   "novos": 20,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-escoliose-1.json",
+   "data": "2026-10-27",
+   "novos": 13,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-hernia-disco-1.json",
+   "data": "2026-10-27",
+   "novos": 15,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-instabilidade-cotovelo-1.json",
+   "data": "2026-10-27",
+   "novos": 9,
+   "repetidosEvitados": 1,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-lca-1.json",
+   "data": "2026-10-27",
+   "novos": 2,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-metastases-1.json",
+   "data": "2026-10-27",
+   "novos": 6,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-osteomielite-1.json",
+   "data": "2026-10-27",
+   "novos": 11,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-paralisia-cerebral-1.json",
+   "data": "2026-10-27",
+   "novos": 10,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  },
+  {
+   "arquivo": "2026-10-27-sindrome-compartimental-1.json",
+   "data": "2026-10-27",
+   "novos": 11,
+   "repetidosEvitados": 0,
+   "reprovados": 0
+  }
+ ],
+ "temas": [
+  {
+   "area": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "coluna",
+   "assunto": "Escoliose idiopática",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "tumores",
+   "assunto": "Metástases ósseas",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "data": "2026-10-27"
+  },
+  {
+   "area": "trauma",
+   "assunto": "Síndrome compartimental",
+   "data": "2026-10-27"
+  }
+ ]
+}

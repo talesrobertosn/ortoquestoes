@@ -1,0 +1,158 @@
+{
+ "temas": [
+  {
+   "area": "trauma",
+   "assunto": "Síndrome compartimental"
+  }
+ ],
+ "flashcards": [
+  {
+   "questao": "trauma-0116",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Classificação",
+   "frente": "Na classificação de Tscherne das fraturas fechadas, qual grau inclui a síndrome compartimental estabelecida?",
+   "resposta": "3",
+   "explicacao": "Tscherne fechada: **grau 2** tem contusão profunda com **risco iminente**; **grau 3** inclui a síndrome compartimental **estabelecida**, esmagamento ou lesão vascular.",
+   "trecho": "| **3** | Contusão extensa, esmagamento, descolamento subcutâneo, lesão muscular grave, **síndrome compartimental estabelecida** ou lesão vascular |",
+   "opcoes": [
+    "1",
+    "2",
+    "3"
+   ],
+   "certa": 2,
+   "alerta": "O enunciado de origem fala em fratura exposta, mas o critério de síndrome compartimental estabelecida pertence ao grau 3 das fraturas fechadas de Tscherne."
+  },
+  {
+   "questao": "trauma-0116",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Classificação",
+   "frente": "Tscherne, fratura fechada: qual grau tem contusão profunda e contaminada, com risco iminente de síndrome compartimental?",
+   "resposta": "2",
+   "explicacao": "**Grau 2**: contusão profunda, **risco iminente**. Quando a síndrome já se instalou, a lesão passa ao grau 3.",
+   "trecho": "| 2 | Contusão **profunda** e contaminada, com **risco iminente** de síndrome compartimental |",
+   "opcoes": [
+    "1",
+    "2",
+    "3"
+   ],
+   "certa": 1,
+   "alerta": "O enunciado de origem fala em fratura exposta, mas o critério de síndrome compartimental estabelecida pertence ao grau 3 das fraturas fechadas de Tscherne."
+  },
+  {
+   "questao": "trauma-0116",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Armadilha",
+   "frente": "Na fratura exposta da tíbia, a ferida aberta alivia de forma confiável a pressão dos compartimentos da perna?",
+   "resposta": "não descomprime",
+   "explicacao": "A ferida **não descomprime** de forma confiável: a fáscia costuma ficar íntegra ou abrir num ponto pequeno. Fratura exposta também pode precisar de fasciotomia dos quatro compartimentos.",
+   "trecho": "A ferida aberta **não descomprime** o compartimento de forma confiável",
+   "alerta": "O enunciado de origem fala em fratura exposta, mas o critério de síndrome compartimental estabelecida pertence ao grau 3 das fraturas fechadas de Tscherne."
+  },
+  {
+   "questao": "trauma-0081",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Conceito",
+   "frente": "Nas fraturas da tíbia da criança, com que frequência ocorre síndrome compartimental?",
+   "resposta": "2 a 11%",
+   "explicacao": "Na tíbia da criança, a síndrome compartimental ocorre em **2 a 11%**, mais do que se pensava; abrir o gesso até a pele e reavaliar com frequência.",
+   "trecho": "nas fraturas da **tíbia** da criança, a síndrome compartimental ocorre em **2 a 11%**",
+   "alerta": "Séries de fraturas da tíbia em crianças (como a de Shore) apontam idade acima de 14 anos e peso acima de 50 kg como os preditores mais fortes; a banca da questão de origem indicou a baixa idade."
+  },
+  {
+   "questao": "trauma-0081",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Conceito",
+   "frente": "Nas séries de fratura da tíbia na infância (Shore), quais são os preditores mais fortes de síndrome compartimental?",
+   "resposta": "idade acima de 14 anos e o peso acima de 50 kg",
+   "explicacao": "**Idade acima de 14 anos** e **peso acima de 50 kg**: o adolescente já tem fáscia menos complacente e musculatura maior, como o adulto.",
+   "trecho": "estudos como o de Shore apontam a **idade acima de 14 anos** e o **peso acima de 50 kg** como os mais fortes",
+   "alerta": "A banca da questão de origem considerou a baixa idade o preditor mais forte, pela dificuldade de avaliar a criança pequena; as séries de Shore apontam idade acima de 14 anos e peso acima de 50 kg."
+  },
+  {
+   "questao": "trauma-0983",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Conceito",
+   "frente": "Na monitorização contínua da pressão compartimental, a que distância do foco de fratura fica a ponta do cateter?",
+   "resposta": "a até 5 cm do foco",
+   "explicacao": "A ponta fica **a até 5 cm do foco**, onde a pressão é mais alta; medir longe dele subestima o pico.",
+   "trecho": "A ponta é colocada a até 5 cm do foco para captar o pico"
+  },
+  {
+   "questao": "trauma-1142",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Tabela",
+   "frente": "Na síndrome compartimental da perna, hipoestesia no primeiro espaço interdigital (nervo fibular profundo) indica qual compartimento?",
+   "resposta": "Anterior",
+   "explicacao": "O **fibular profundo** corre no compartimento **anterior** e sensibiliza o primeiro espaço interdigital. Sensibilidade normal não exclui a síndrome.",
+   "trecho": "| Anterior | Fibular profundo; primeiro espaço interdigital |",
+   "opcoes": [
+    "Anterior",
+    "Lateral",
+    "Posterior superficial",
+    "Posterior profundo"
+   ],
+   "certa": 0,
+   "alerta": "Não há gabarito oficial disponível; a resposta segue a tabela de compartimentos do resumo. A localização sensitiva se interpreta com o restante do exame, sem esperar déficit neurológico."
+  },
+  {
+   "questao": "trauma-1142",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Tabela",
+   "frente": "Hipoestesia na planta do pé (nervo tibial) na síndrome compartimental da perna aponta para qual compartimento?",
+   "resposta": "Posterior profundo",
+   "explicacao": "O **nervo tibial** corre no **posterior profundo** e sensibiliza a planta do pé.",
+   "trecho": "| Posterior profundo | Tibial; planta do pé |",
+   "opcoes": [
+    "Anterior",
+    "Lateral",
+    "Posterior superficial",
+    "Posterior profundo"
+   ],
+   "certa": 3,
+   "alerta": "Não há gabarito oficial disponível; a resposta segue a tabela de compartimentos do resumo. A localização sensitiva se interpreta com o restante do exame, sem esperar déficit neurológico."
+  },
+  {
+   "questao": "trauma-1142",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Tabela",
+   "frente": "Perda de sensibilidade na face dorsolateral do pé, pelo nervo sural: qual compartimento da perna está sofrendo?",
+   "resposta": "Posterior superficial",
+   "explicacao": "Face **dorsolateral** do pé é território do **sural**, ligado ao **posterior superficial** (gastrocnêmio, sóleo e plantar). O dorso do pé é do fibular superficial (lateral).",
+   "trecho": "| Posterior superficial | Sural; face dorsolateral do pé |",
+   "opcoes": [
+    "Anterior",
+    "Lateral",
+    "Posterior superficial",
+    "Posterior profundo"
+   ],
+   "certa": 2,
+   "alerta": "Não há gabarito oficial disponível; a resposta segue a tabela de compartimentos do resumo. A localização sensitiva se interpreta com o restante do exame, sem esperar déficit neurológico."
+  },
+  {
+   "questao": "trauma-1142",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Par confundível",
+   "frente": "Hipoestesia no dorso do pé, território do nervo fibular superficial: qual compartimento da perna?",
+   "resposta": "Lateral",
+   "explicacao": "O **fibular superficial** corre no compartimento **lateral** (fibulares longo e curto) e sensibiliza o dorso do pé. Não confundir com a face dorsolateral (sural, posterior superficial).",
+   "trecho": "| Lateral | Fibular superficial; dorso do pé |",
+   "opcoes": [
+    "Anterior",
+    "Lateral",
+    "Posterior superficial",
+    "Posterior profundo"
+   ],
+   "certa": 1,
+   "alerta": "Não há gabarito oficial disponível; a resposta segue a tabela de compartimentos do resumo. A localização sensitiva se interpreta com o restante do exame, sem esperar déficit neurológico."
+  },
+  {
+   "questao": "trauma-0306",
+   "assunto": "Síndrome compartimental",
+   "tipo": "Armadilha",
+   "frente": "O rádio distal responde por parte relevante dos casos de síndrome compartimental. Mas qual fração das fraturas do rádio distal desenvolve a síndrome?",
+   "resposta": "0,25%",
+   "explicacao": "Fratura muito comum pesa na estatística dos **casos**, mas a chance individual é baixa: cerca de **0,25%** das fraturas do rádio distal.",
+   "trecho": "somente cerca de 0,25% das fraturas cursam com síndrome"
+  }
+ ]
+}

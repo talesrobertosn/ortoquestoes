@@ -1,0 +1,317 @@
+{
+ "area": "conceitos-basicos",
+ "flashcards": [
+  {
+   "id": "fc-conceitos-basicos-0013-cl1",
+   "questao": "conceitos-basicos-0013",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda",
+    "Osteomielite crônica"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Cierny-Mader: infecção extensa, em que a limpeza cirúrgica deixa o osso instável e exige reconstrução. Qual tipo anatômico?",
+   "resposta": "difusa",
+   "explicacao": "**IV, difusa**: osso instável após o desbridamento. O **III, localizado**, atravessa a cortical numa área delimitada, mas o osso continua estável.",
+   "opcoes": [
+    "difusa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "0b779bb86ab8",
+   "origem": "autoral",
+   "trecho": "**IV, difusa**: a infecção toma o osso de forma extensa",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-conceitos-basicos-0013-cl2",
+   "questao": "conceitos-basicos-0013",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda",
+    "Osteomielite crônica"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Cierny-Mader tipo I (medular): qual é o exemplo típico?",
+   "resposta": "haste intramedular infectada",
+   "explicacao": "No tipo **I**, a infecção fica dentro do canal, como em torno de uma **haste intramedular infectada**.",
+   "opcoes": [
+    "haste intramedular infectada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "0b779bb86ab8",
+   "origem": "autoral",
+   "trecho": "como em torno de uma haste intramedular infectada",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-conceitos-basicos-0013-cl3",
+   "questao": "conceitos-basicos-0013",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda",
+    "Osteomielite crônica"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classe fisiológica de Cierny-Mader, o que define o hospedeiro C?",
+   "resposta": "o tratamento seria pior que a própria doença",
+   "explicacao": "**A**: saudável. **B**: comprometido (sistêmico, local ou ambos). **C**: **o tratamento seria pior que a própria doença**.",
+   "opcoes": [
+    "o tratamento seria pior que a própria doença"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "0b779bb86ab8",
+   "origem": "autoral",
+   "trecho": "paciente em que o tratamento seria pior que a própria doença.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-conceitos-basicos-0045-ar1",
+   "questao": "conceitos-basicos-0045",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Antibiótico para misturar ao cimento ósseo: líquido ou em pó?",
+   "resposta": "Estar em pó",
+   "explicacao": "Em **pó**: o antibiótico líquido enfraquece o cimento.",
+   "opcoes": [
+    "Estar em pó"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "906e43327d94",
+   "origem": "autoral",
+   "trecho": "**Estar em pó.** Antibiótico líquido enfraquece o cimento.",
+   "criadoEm": "2026-10-27",
+   "alerta": "A hidrossolubilidade, alternativa D, também é requisito do antibiótico misturado ao cimento, é justamente ela que permite a eluição da droga para o tecido ao redor. Um antibiótico lipossolúvel ficaria preso no polímero e não seria liberado. As duas alternativas, portanto, descrevem exigências reais; o gabarito escolheu apenas uma delas. Se você marcou D, o erro não foi seu."
+  },
+  {
+   "id": "fc-conceitos-basicos-0045-co1",
+   "questao": "conceitos-basicos-0045",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que o antibiótico misturado ao cimento ósseo precisa ser termoestável?",
+   "resposta": "passa de 80 graus",
+   "explicacao": "A polimerização do cimento é exotérmica e a temperatura **passa de 80 graus**: um antibiótico termolábil seria inativado.",
+   "opcoes": [
+    "passa de 80 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "906e43327d94",
+   "origem": "autoral",
+   "trecho": "a reação libera calor e a temperatura passa de 80 graus",
+   "criadoEm": "2026-10-27",
+   "alerta": "A hidrossolubilidade, alternativa D, também é requisito do antibiótico misturado ao cimento, é justamente ela que permite a eluição da droga para o tecido ao redor. Um antibiótico lipossolúvel ficaria preso no polímero e não seria liberado. As duas alternativas, portanto, descrevem exigências reais; o gabarito escolheu apenas uma delas. Se você marcou D, o erro não foi seu."
+  },
+  {
+   "id": "fc-conceitos-basicos-0045-co2",
+   "questao": "conceitos-basicos-0045",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que propriedade do antibiótico permite que ele saia do cimento ósseo e chegue aos tecidos (eluição)?",
+   "resposta": "hidrossolúvel",
+   "explicacao": "Precisa ser **hidrossolúvel**: um antibiótico só lipossolúvel ficaria preso no polímero.",
+   "opcoes": [
+    "hidrossolúvel"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "906e43327d94",
+   "origem": "autoral",
+   "trecho": "**Ser hidrossolúvel.** Para sair do cimento e chegar aos tecidos (eluir)",
+   "criadoEm": "2026-10-27",
+   "alerta": "A hidrossolubilidade, alternativa D, também é requisito do antibiótico misturado ao cimento, é justamente ela que permite a eluição da droga para o tecido ao redor. Um antibiótico lipossolúvel ficaria preso no polímero e não seria liberado. As duas alternativas, portanto, descrevem exigências reais; o gabarito escolheu apenas uma delas. Se você marcou D, o erro não foi seu."
+  },
+  {
+   "id": "fc-conceitos-basicos-0045-co3",
+   "questao": "conceitos-basicos-0045",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais antibióticos são os mais usados misturados ao cimento ósseo?",
+   "resposta": "vancomicina, a gentamicina e a tobramicina",
+   "explicacao": "**Vancomicina**, **gentamicina** e **tobramicina**, muitas vezes combinadas, em espaçadores, pérolas ou na técnica de Masquelet.",
+   "opcoes": [
+    "vancomicina, a gentamicina e a tobramicina"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "906e43327d94",
+   "origem": "autoral",
+   "trecho": "Os mais usados na prática são a **vancomicina**, a **gentamicina** e a **tobramicina**",
+   "criadoEm": "2026-10-27",
+   "alerta": "A hidrossolubilidade, alternativa D, também é requisito do antibiótico misturado ao cimento, é justamente ela que permite a eluição da droga para o tecido ao redor. Um antibiótico lipossolúvel ficaria preso no polímero e não seria liberado. As duas alternativas, portanto, descrevem exigências reais; o gabarito escolheu apenas uma delas. Se você marcou D, o erro não foi seu."
+  },
+  {
+   "id": "fc-conceitos-basicos-0059-co1",
+   "questao": "conceitos-basicos-0059",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Osteomielite por Pseudomonas no usuário de drogas injetáveis: que parte do esqueleto ela prefere?",
+   "resposta": "tronco",
+   "explicacao": "Esqueleto do **tronco**: esternoclavicular, sacroilíaca, sínfise púbica e coluna.",
+   "opcoes": [
+    "tronco"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "b3468193b279",
+   "origem": "autoral",
+   "trecho": "a *Pseudomonas* tem preferência pelo esqueleto do **tronco**",
+   "criadoEm": "2026-10-27",
+   "alerta": "O gabarito oficial é Pseudomonas, que é a associação característica do usuário de drogas injetáveis cobrada em prova. Muitas séries, porém, mostram o Staphylococcus aureus como germe mais frequente também nesse grupo, de modo que a alternativa D tem respaldo na literatura."
+  },
+  {
+   "id": "fc-conceitos-basicos-0059-co2",
+   "questao": "conceitos-basicos-0059",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Kingella kingae é germe característico de infecção osteoarticular em que faixa etária?",
+   "resposta": "cerca de 6 meses a 4 anos",
+   "explicacao": "***Kingella kingae***: crianças pequenas, **cerca de 6 meses a 4 anos**.",
+   "opcoes": [
+    "cerca de 6 meses a 4 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "b3468193b279",
+   "origem": "autoral",
+   "trecho": "***Kingella kingae***: crianças pequenas, de cerca de 6 meses a 4 anos.",
+   "criadoEm": "2026-10-27",
+   "alerta": "O gabarito oficial é Pseudomonas, que é a associação característica do usuário de drogas injetáveis cobrada em prova. Muitas séries, porém, mostram o Staphylococcus aureus como germe mais frequente também nesse grupo, de modo que a alternativa D tem respaldo na literatura."
+  },
+  {
+   "id": "fc-conceitos-basicos-0059-pc1",
+   "questao": "conceitos-basicos-0059",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Infecção após mordida humana: qual germe é característico?",
+   "resposta": "Eikenella",
+   "explicacao": "Mordida humana: ***Eikenella***. Mordida de cão ou gato: ***Pasteurella***.",
+   "opcoes": [
+    "Eikenella",
+    "Pasteurella",
+    "Kingella kingae"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "b3468193b279",
+   "origem": "autoral",
+   "trecho": "***Eikenella***: mordida humana.",
+   "criadoEm": "2026-10-27",
+   "alerta": "O gabarito oficial é Pseudomonas, que é a associação característica do usuário de drogas injetáveis cobrada em prova. Muitas séries, porém, mostram o Staphylococcus aureus como germe mais frequente também nesse grupo, de modo que a alternativa D tem respaldo na literatura."
+  },
+  {
+   "id": "fc-conceitos-basicos-0059-pc2",
+   "questao": "conceitos-basicos-0059",
+   "area": "Conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "assunto": "Osteomielite aguda",
+   "subtemas": [
+    "Osteomielite aguda"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Infecção após mordida de cão ou gato: qual germe é característico?",
+   "resposta": "Pasteurella",
+   "explicacao": "Cão ou gato: ***Pasteurella***. Mordida humana: ***Eikenella***.",
+   "opcoes": [
+    "Eikenella",
+    "Pasteurella",
+    "Kingella kingae"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "b3468193b279",
+   "origem": "autoral",
+   "trecho": "***Pasteurella***: mordida de cão ou gato.",
+   "criadoEm": "2026-10-27",
+   "alerta": "O gabarito oficial é Pseudomonas, que é a associação característica do usuário de drogas injetáveis cobrada em prova. Muitas séries, porém, mostram o Staphylococcus aureus como germe mais frequente também nesse grupo, de modo que a alternativa D tem respaldo na literatura."
+  }
+ ]
+}

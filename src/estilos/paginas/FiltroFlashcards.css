@@ -78,6 +78,10 @@
 .fa__vazio { margin: 0; font: 600 13.5px/1.45 var(--fc-ui); color: #d8c8a8; }
 .fa__escopo { margin: 0; font: 700 13px var(--fc-ui); color: #e9dcc0; }
 .fa__escopo b { color: var(--fc-ouro); }
+.fa__resumos { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: -4px 0 0; font: 600 13px var(--fc-ui); }
+.fa__resumos a { color: #cfe6ff; text-decoration: underline; text-underline-offset: 2px; }
+.fa__resumos a b { color: inherit; }
+.fa__resumos a:hover { color: #fff; }
 .fa :focus-visible { outline: 2px solid var(--fc-ouro-claro); outline-offset: 2px; }
 
 @keyframes fa-entra { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }

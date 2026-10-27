@@ -23,6 +23,8 @@ import { ehAcerto, horaDaSessao, HORAS_BIBLIOTECA } from '../biblioteca/horas'
 import { FundoBiblioteca } from './FundoBiblioteca'
 import { FiltroAssuntos } from './FiltroAssuntos'
 import { arvoreFlashcards, caminhoDoFiltro, casaFiltro, filtroAtivo, filtroDaConsulta, FILTRO_VAZIO, normalizarFiltro, type FiltroAssunto } from '../biblioteca/filtroAssunto'
+import { usarIndiceBiblioteca } from '../../biblioteca/recomendar'
+import { assuntosDoRecorte, resumosDoRecorte } from '../../biblioteca/ligacoes'
 import '../../estilos/paginas/BibliotecaEstudo.css'
 
 type Avaliacao = 'errei' | 'hesitei' | 'sabia'
@@ -152,12 +154,16 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
       seguirCronograma(Math.max(0, Math.min(200, Number(q.get('extra')) || 0)))
       return
     }
-    const assunto = q.get('assunto')
-    const naArea = (c: Flashcard) => (!areas.length || areas.includes(c.areaId ?? c.area ?? '')) && (!assunto || c.assunto === assunto)
+    const assuntos = q.getAll('assunto')
+    // Uma área com assuntos (o resumo e a questão mandam assim): o mesmo recorte do filtro da Biblioteca, que
+    // fica guardado para a pessoa voltar da sessão no tema. Sem isso, o filtro antigo por área e assunto principal.
+    const recorte: FiltroAssunto | null = areas.length === 1 && assuntos.length ? { area: areas[0], grupo: null, assuntos } : null
+    const naArea = (c: Flashcard) => recorte ? casaFiltro(c, recorte) : (!areas.length || areas.includes(c.areaId ?? c.area ?? '')) && (!assuntos.length || assuntos.includes(c.assunto))
     // o link traz o próprio recorte (área e assunto): não mistura com o assunto escolhido antes na Biblioteca
     const ids = montar({ ...base, filtro: (c, r) => base.filtro(c, r) && naArea(c) }, n, true)
-    if (ids.length) definirSessao({ titulo: assunto ?? base.nome, ids })
-  }, [linkUsado, cartas, categorias, montar, seguirCronograma, definirSessao])
+    if (recorte && ids.length) mudarFiltro(recorte)
+    if (ids.length) definirSessao({ titulo: q.get('tema') ?? assuntos[0] ?? base.nome, ids })
+  }, [linkUsado, cartas, categorias, montar, seguirCronograma, definirSessao, mudarFiltro])
 
   // Vindo da Batalha: os flashcards que derrubaram você abrem uma sessão na hora.
   useEffect(() => {
@@ -169,6 +175,9 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
   const encontrados = resumo.find((x) => x.cat.id === 'todos')?.total ?? 0
   const naSessao = useMemo(() => (comAssunto && todosCat ? montar(todosCat).length : 0), [comAssunto, todosCat, montar])
   const caminho = caminhoDoFiltro(filtro, arvore)
+  // Flashcards → resumo do mesmo assunto (só resumos publicados que ensinam o assunto ou o grupo escolhido).
+  const biblioteca = usarIndiceBiblioteca()
+  const resumosDoTema = useMemo(() => (comAssunto && filtro.area ? resumosDoRecorte(biblioteca, filtro.area, assuntosDoRecorte(filtro)) : []), [biblioteca, comAssunto, filtro])
   const estudarRecorte = () => {
     if (!todosCat) return
     const ids = montar(todosCat)
@@ -208,6 +217,7 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
       {arvore.length > 0 && <FiltroAssuntos arvore={arvore} filtro={filtro} aoMudar={mudarFiltro} encontrados={encontrados} naSessao={naSessao} aoEstudar={estudarRecorte} />}
       {crono && !comAssunto && <CartaoCronogramaEstudo c={crono} sugerido={!ler<unknown>(CHAVE_PLANO, null)} aoSeguir={seguirCronograma} />}
       {comAssunto && <p className="fa__escopo">As listas abaixo estão só em <b>{caminho.join(' › ')}</b>.</p>}
+      {resumosDoTema.length > 0 && <p className="fa__resumos">{resumosDoTema.map((r) => <a key={r.id} href={href(`/resumos/${r.id}`)}>Consultar resumo: <b>{r.titulo}</b></a>)}</p>}
       <div className="fc-categorias">
         {resumo.map(({ cat, total, estudados, dominio, pendentes }) => (
           <button key={cat.id} type="button" className="fc-categoria" style={{ ['--cor' as string]: cat.cor }} disabled={!total}

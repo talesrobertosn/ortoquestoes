@@ -4371,6 +4371,90 @@
    "fonte": "f788bf3262c5"
   },
   {
+   "id": "fc-tumores-0264-co1",
+   "questao": "tumores-0264",
+   "area": "Tumores ósseos e de partes moles",
+   "areaId": "tumores",
+   "assunto": "Metástases ósseas",
+   "subtemas": [
+    "Outras lesões pseudotumorais",
+    "Metástases ósseas"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura em banana (em giz): como são o traço e o mecanismo?",
+   "resposta": "transversa, em osso patológico, por trauma de baixa energia",
+   "explicacao": "O osso doente não dissipa energia por planos oblíquos e parte limpo, como giz: **transversa, em osso patológico, por trauma de baixa energia**. Clássica no Paget.",
+   "opcoes": [
+    "transversa, em osso patológico, por trauma de baixa energia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "7b8970564117",
+   "origem": "autoral",
+   "trecho": "é **transversa, em osso patológico, por trauma de baixa energia**",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-tumores-0264-co2",
+   "questao": "tumores-0264",
+   "area": "Tumores ósseos e de partes moles",
+   "areaId": "tumores",
+   "assunto": "Metástases ósseas",
+   "subtemas": [
+    "Outras lesões pseudotumorais",
+    "Metástases ósseas"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No fêmur pagético arqueado, em que face começa a fratura em banana?",
+   "resposta": "convexidade",
+   "explicacao": "Na **convexidade**: face lateral do fêmur, face anterior da tíbia. Fissura nessa face pede considerar fixação profilática com haste.",
+   "opcoes": [
+    "convexidade"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "7b8970564117",
+   "origem": "autoral",
+   "trecho": "A fratura acontece na **convexidade**",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-tumores-0264-co3",
+   "questao": "tumores-0264",
+   "area": "Tumores ósseos e de partes moles",
+   "areaId": "tumores",
+   "assunto": "Metástases ósseas",
+   "subtemas": [
+    "Outras lesões pseudotumorais",
+    "Metástases ósseas"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Cirurgia no osso pagético: que preparo exige a característica vascular desse osso?",
+   "resposta": "reserva de sangue",
+   "explicacao": "O osso pagético é **hipervascular** e sangra muito: preparo clínico e **reserva de sangue**.",
+   "opcoes": [
+    "reserva de sangue"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "7b8970564117",
+   "origem": "autoral",
+   "trecho": "O osso pagético é **hipervascular** e sangra muito, o que pede preparo clínico e reserva de sangue.",
+   "criadoEm": "2026-10-27"
+  },
+  {
    "id": "fc-tumores-0265-q",
    "questao": "tumores-0265",
    "area": "Tumores ósseos e de partes moles",
@@ -5521,6 +5605,87 @@
    "prova": "TARO",
    "ano": 2013,
    "fonte": "e5e0bfe11cdb"
+  },
+  {
+   "id": "fc-tumores-0338-ar1",
+   "questao": "tumores-0338",
+   "area": "Tumores ósseos e de partes moles",
+   "areaId": "tumores",
+   "assunto": "Metástases ósseas",
+   "subtemas": [
+    "Metástases ósseas"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura patológica subtrocantérica em adulto sem diagnóstico prévio: por que confirmar o diagnóstico antes de fixar?",
+   "resposta": "fixar um sarcoma primário como se fosse metástase compromete o tratamento",
+   "explicacao": "História, exames, estadiamento e biópsia antes: **fixar um sarcoma primário como se fosse metástase compromete o tratamento**. Confirmada a metástase, haste cefalomedular longa.",
+   "opcoes": [
+    "fixar um sarcoma primário como se fosse metástase compromete o tratamento"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "cb270b1b90e5",
+   "origem": "autoral",
+   "trecho": "fixar um sarcoma primário como se fosse metástase compromete o tratamento",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-tumores-0338-co1",
+   "questao": "tumores-0338",
+   "area": "Tumores ósseos e de partes moles",
+   "areaId": "tumores",
+   "assunto": "Metástases ósseas",
+   "subtemas": [
+    "Metástases ósseas"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que lesões líticas na região subtrocantérica do fêmur fraturam com tanta facilidade?",
+   "resposta": "maior concentração de tensões",
+   "explicacao": "É a região de **maior concentração de tensões** do esqueleto (compressão medial, tração lateral), e as fraturas patológicas ali consolidam mal.",
+   "opcoes": [
+    "maior concentração de tensões"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "cb270b1b90e5",
+   "origem": "autoral",
+   "trecho": "É a região de maior concentração de tensões do esqueleto",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-tumores-0338-pc1",
+   "questao": "tumores-0338",
+   "area": "Tumores ósseos e de partes moles",
+   "areaId": "tumores",
+   "assunto": "Metástases ósseas",
+   "subtemas": [
+    "Metástases ósseas"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fratura atípica subtrocantérica pelo uso prolongado de bisfosfonato: que achado aparece na cortical lateral?",
+   "resposta": "espessamento cortical lateral",
+   "explicacao": "Transversa, com **espessamento cortical lateral** e bico medial: diferencial da fratura patológica metastática.",
+   "opcoes": [
+    "espessamento cortical lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "cb270b1b90e5",
+   "origem": "autoral",
+   "trecho": "transversas, com espessamento cortical lateral e bico medial",
+   "criadoEm": "2026-10-27"
   },
   {
    "id": "fc-tumores-0360-q",

@@ -8,6 +8,8 @@
 
 **Estudar por assunto (27/10/2026):** [FILTRO-ASSUNTOS.md](FILTRO-ASSUNTOS.md), área > grupo > assunto na Biblioteca, com busca, chips e sessão só do recorte.
 
+**Expansão e ligação com os resumos (27/10/2026):** [EXPANSAO.md](EXPANSAO.md), fila por prioridade, lotes sem repetidos e os links entre resumo, flashcards e questão.
+
 **Orientação mais recente:** [Jornada única](JORNADA-UNICA.md), 13/10/2026: ranking sem níveis, progressão por turma e histórico pessoal, entrada com Cripta/Biblioteca e cronograma dentro de Flashcards. As seções antigas abaixo são histórico quando conflitarem.
 
 Ponto de partida para quem for continuar este projeto: Claude, ChatGPT Codex ou outro agente.
