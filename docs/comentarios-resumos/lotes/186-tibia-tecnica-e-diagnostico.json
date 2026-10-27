@@ -1,0 +1,337 @@
+{
+  "pediatria-1144": {
+    "questaoSha256": "07cc974c234b8a1b440e15ca378d71c644021428cb7c9d3fd8762708e573e78a",
+    "comentarioAnteriorSha256": "c9cb50a0220c2020dc6e04c86570124c97c47cfcea2ebadd290855c285c08d1f",
+    "comentario": {
+      "conceito": "O padrão descrito para a maioria das fraturas diafisárias da tíbia abaixo de 11 anos é **torção, traço oblíquo ou espiral e terço distal**. O corpo gira enquanto o pé permanece fixo, transmitindo um esforço rotacional à diáfise (Rockwood crianças, 10ª ed., cap. 29, Diáfise: o desvio depende da fíbula).\n\nMecanismo e traço se ajudam na leitura. A torção explica a configuração oblíqua ou espiral; já os traços transversos e cominutos isolados são relacionados a trauma direto. Não basta reconhecer que a tíbia fraturou para presumir que a carga foi axial.\n\nA fonte descreve predominância, não exclusividade. Trauma direto também pode acontecer nessa idade, e fraturas proximais existem. O que a pergunta pede é o conjunto mais típico no recorte etário, não todos os mecanismos possíveis.\n\nA avaliação inclui joelho e tornozelo e verifica a fíbula, porque a localização do foco não esgota as lesões associadas e o estado da fíbula modifica a tendência ao varo ou valgo.\n\n**Por que esta questão foi criada.** Complementa a pergunta sobre mecanismo e localização pela relação entre torção, traço espiral e pé fixo, evitando uma resposta decorada sem explicação mecânica.",
+      "correta": "**Correta: D (torção sobre o pé fixo, traço oblíquo ou espiral no terço distal).** A alternativa reúne os elementos do padrão predominante descrito. Isso não exclui outros traumas; identifica a combinação mais típica solicitada.",
+      "incorretas": {
+        "A": "Trauma direto pode produzir uma fratura transversa e é uma possibilidade real. Entretanto, a pergunta pede o padrão predominante abaixo de 11 anos, que a fonte relaciona a torção e ao terço distal, não ao conjunto direto/transverso/médio apresentado.",
+        "B": "Carga axial e fratura em toro proximal não correspondem à combinação predominante da diáfise nessa idade. A alternativa muda o mecanismo, o padrão e a região em relação à torção com traço oblíquo ou espiral distal descrita.",
+        "C": "Hiperextensão do joelho não é o mecanismo destacado para a fratura diafisária típica abaixo de 11 anos. A opção se concentra na região proximal e perde a relação entre giro do corpo, pé fixo e traço distal, que organiza a resposta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Diáfise: o desvio depende da fíbula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Diáfise: o desvio depende da fíbula"
+        ],
+        "blocos": [
+          "diafise-o-desvio-depende-da-fibula-6221cf6c",
+          "diafise-o-desvio-depende-da-fibula-4b0512cb"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "0c4d771d9247099426ba2e58f387a06cef00105908026e0ab4ab26791bdff42b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1145": {
+    "questaoSha256": "463602f562fc6ef574cb82d3c911b634fa9cbd03cd93644b5b456b0c55c45b63",
+    "comentarioAnteriorSha256": "97fcff28045de0bc9d7ec6f9bf072018351d118f245c4965e51316ef945f441e",
+    "comentario": {
+      "conceito": "A criança tem dez anos e a fratura é da **tíbia**, não do fêmur. Na Tabela 29-5, deve-se usar a coluna de **oito anos ou mais**: 5 graus de valgo, 5 de varo, 5 de angulação anterior, nenhuma angulação posterior e 5 mm de encurtamento; a rotação aceita na tabela é 5 graus (Rockwood crianças, 10ª ed., cap. 29, Gesso, alinhamento aceitável e cunha).\n\nO plano do desvio importa. A tíbia não tem a mesma capacidade de remodelação em todas as direções, e o resumo destaca angulação posterior e valgo como os que menos corrigem. Por isso, não se pode transformar um limite aceito para varo em autorização para igual deformidade posterior.\n\nA idade também muda a coluna. Abaixo de oito anos, a tabela admite mais varo, angulação anterior e encurtamento, mas o valgo continua limitado. O fato de um número aparecer em outra linha não o torna aplicável aos dez anos.\n\nHá ainda a armadilha de transportar os critérios do fêmur: os 15 graus de varo, 20 sagitais e 20 mm da alternativa C correspondem à linha de dois a cinco anos do fêmur na Tabela 25-2. São outro osso e outra idade, não limites da tíbia desta criança.\n\n**Por que esta questão foi criada.** Treina a escolha da coluna etária e a separação entre graus e milímetros, sem transferir a tabela do fêmur para a tíbia.",
+      "correta": "**Correta: A (5 graus de valgo, 5 de varo, zero posterior e 5 mm).** Os quatro parâmetros apresentados estão na coluna de oito anos ou mais. A falta de tolerância posterior na tabela é especialmente importante; não se presume que todos os planos aceitem o mesmo desvio.",
+      "incorretas": {
+        "B": "Aos dez anos, valgo e varo são limitados a 5 graus, angulação posterior não é aceita pela tabela e encurtamento fica em 5 mm. A alternativa excede os quatro parâmetros, inclusive no plano posterior, em que a fonte é mais restritiva.",
+        "C": "Esses valores são compatíveis com a tabela do fêmur para dois a cinco anos, não com a tíbia aos dez. Usar limites de outro osso e outra faixa etária ignora a menor capacidade de remodelação tibial e muda todos os parâmetros relevantes.",
+        "D": "A combinação de valgo 5, varo 10, posterior 5 e encurtamento 10 mm corresponde à coluna tibial abaixo de oito anos. O paciente tem dez: manter a linha mais permissiva de uma criança menor é o erro, mesmo acertando o limite de valgo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Diáfise: o desvio depende da fíbula; Complicações.",
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Diáfise: o desvio depende da fíbula",
+          "Complicações"
+        ],
+        "blocos": [
+          "diafise-o-desvio-depende-da-fibula-65256445",
+          "complicacoes-1c3d2426"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "c86cffcdf499ecc53fd0a3dcae036b00d17f72967af685dd76617e32f14c551e"
+      },
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-818fa3dc"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "0418367eb8bd09aceb2864023cc739197e0359cb1bb33cfbf5da49b5b0f89c31"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1146": {
+    "questaoSha256": "a5463e2405ec61622a52f7f80a9d53e257089f51183f3ae0169c3dfc29e98f28",
+    "comentarioAnteriorSha256": "6006bfd95acbd9055112908cdf30306af7450409075fcb3f0ebab912482cee73",
+    "comentario": {
+      "conceito": "A cunha do gesso pode corrigir uma perda angular sem exigir troca completa em todos os casos. Na tíbia, o resumo prefere **cunha de abertura**, cortada no lado oposto ao ápice da deformidade, com cerca de 25% do gesso preservado sobre o ápice como dobradiça (Rockwood crianças, 10ª ed., cap. 29, Gesso, alinhamento aceitável e cunha).\n\nA abertura muda o ângulo sem retirar um segmento do gesso. A referência prática do capítulo é cerca de 1 cm para cada 10 graus, uma aproximação de planejamento, não uma garantia de correção idêntica em qualquer membro ou montagem. A técnica costuma ser realizada entre sete e 14 dias após a lesão.\n\nA cunha de fechamento retira espaço e pode encurtar e pinçar partes moles, motivo para a preferência pela abertura. Preservar a dobradiça permite uma correção controlada; cortar todo o perímetro elimina esse apoio.\n\nDepois da correção, o capítulo orienta observar sinais de síndrome compartimental. Corrigir o eixo radiográfico não encerra a avaliação do membro dentro do gesso.\n\n**Por que esta questão foi criada.** Liga o lado do corte e a dobradiça à mecânica da correção, em vez de decorar abertura ou fechamento sem entender a técnica.",
+      "correta": "**Correta: B (abertura oposta ao ápice,25% intacto e cerca de 1 cm por 10 graus).** É a configuração descrita. O segmento preservado funciona como dobradiça, e o valor por grau é aproximado. A avaliação clínica após a cunha continua necessária.",
+      "incorretas": {
+        "A": "A cunha de fechamento pode encurtar e pinçar partes moles, desvantagens explicitamente apontadas pelo resumo. A fonte prefere abertura na tíbia; retirar material para fechar não reproduz a técnica recomendada.",
+        "C": "A alternativa inverte o lado da abertura e ainda corta todo o perímetro. O capítulo orienta abrir do lado oposto ao ápice e manter cerca de um quarto do gesso sobre ele como dobradiça. Perder esse apoio muda a mecânica do ajuste.",
+        "D": "A afirmação absoluta de que a cunha não corrige o alinhamento contraria a técnica descrita. O capítulo a usa para ajustar angulação; trocar todo o gesso não é obrigatório em cada caso. A escolha depende do problema, sem negar a utilidade da cunha."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Diáfise: o desvio depende da fíbula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Diáfise: o desvio depende da fíbula"
+        ],
+        "blocos": [
+          "diafise-o-desvio-depende-da-fibula-fa1caf1e"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "55968137897ee04554a42ab2487248c04039a87e3d5c7448ead2282a6b271e8a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1147": {
+    "questaoSha256": "52ae6ee98f82562e0564aafd181e25fb1cd98f379ada5f838b666eef006ecca4",
+    "comentarioAnteriorSha256": "4e04d42cfaa5b39baf5921b74ae07b928a8546d5ff26fae3cffdefd88c3ae2a2",
+    "comentario": {
+      "conceito": "Na fratura em galho verde da metáfise distal da tíbia descrita, a carga axial atua com o pé em dorsiflexão. A cortical anterior impacta e a posterior abre; o padrão é **valgo com recurvato**, reduzido e mantido com o tornozelo em **flexão plantar** (Rockwood crianças, 10ª ed., cap. 29, Metáfise distal).\n\nA direção da imobilização tem relação com a deformidade. Não se mantém simplesmente o tornozelo na posição do mecanismo; a flexão plantar participa da correção do componente em recurvato. O resumo descreve retorno à posição neutra em três a quatro semanas.\n\nMetáfise distal e proximal são regiões diferentes, ainda que ambas possam apresentar galho verde e valgo. No padrão distal desta questão, o componente sagital e a posição do pé são centrais para a redução; não basta responder valgo e esquecer o recurvato.\n\nQuando a fratura é instável, o capítulo discute fixação por fios, hastes, placa ou redução aberta, e corrigir a fíbula pode ajudar. A pergunta, porém, quer a combinação de deformidade e posição de redução do padrão descrito.\n\n**Por que esta questão foi criada.** Aplica o raciocínio de carga e abertura cortical à metáfise distal, diferenciando o mecanismo do posicionamento usado para corrigi-lo.",
+      "correta": "**Correta: C (valgo e recurvato; flexão plantar).** A combinação corresponde à impacção anterior e abertura posterior descritas. A flexão plantar é a posição indicada para reduzir e manter o padrão, com retorno progressivo a neutro conforme a orientação do capítulo.",
+      "incorretas": {
+        "A": "Inverte os dois componentes da deformidade e mantém dorsiflexão como posição de redução. A fonte descreve valgo com recurvato e orienta flexão plantar; não é a combinação varo/antecurvato apresentada.",
+        "B": "O valgo está correto, mas o componente sagital é recurvato, não antecurvato. Além disso, neutro não é a posição inicial descrita: o capítulo usa flexão plantar e só depois retorna a neutro.",
+        "D": "Reconhece o recurvato, mas troca valgo por varo e escolhe dorsiflexão. A posição ligada ao mecanismo não deve ser confundida com a necessária para reduzir a deformidade; a fonte orienta flexão plantar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise distal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise distal"
+        ],
+        "blocos": [
+          "metafise-distal-dfda6f0a"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "04418a3b71e0154e47a6a18649f130378ecdf6db8f880e3683ee82d68ca32cc6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1148": {
+    "questaoSha256": "b46736279bef135bd0a286dde062eadd4da9cf56ea4b9c3555104471666e3b80",
+    "comentarioAnteriorSha256": "cba9e0c3791d16bc8cdb83c4dfbe5309a6b0e8f40f9ffd5f0414151d4abf4bc2",
+    "comentario": {
+      "conceito": "Na criança com fratura da tíbia, a **dor que aumenta e exige cada vez mais analgésico** é o alerta precoce mais importante de síndrome compartimental segundo o resumo. A evolução da dor precisa ser acompanhada, não apenas sua presença em uma avaliação isolada (Rockwood crianças, 10ª ed., cap. 29, Complicações).\n\nO capítulo também destaca dor ao estiramento passivo. Alterações de sensibilidade, força e pulso são tardias; esperar um déficit completo para suspeitar significa deixar de usar os sinais mais precoces. Uma criança ainda ter pulso ou movimento não afasta o problema que está evoluindo.\n\nA conduta descrita inclui abrir gesso e acolchoamento para aliviar compressão externa e, se o quadro persistir, fasciotomia de emergência. Medida de pressão pode ajudar, mas o reconhecimento da progressão clínica não deve depender de esperar surgir perda de pulso.\n\nO importante é distinguir dor pós-fratura acompanhada ao longo do tempo de uma necessidade crescente de analgesia que muda o padrão esperado. A pergunta pede o sinal precoce, não o achado mais dramático de isquemia avançada.\n\n**Por que esta questão foi criada.** Treina a vigilância pediátrica pela evolução da dor e diferencia sinais iniciais de déficits neurológicos ou vasculares tardios.",
+      "correta": "**Correta: D (dor crescente e necessidade progressiva de analgésico).** É o sinal precoce destacado pelo capítulo. A tendência ao longo das avaliações importa; não se deve esperar ausência de pulso ou perda motora para reconhecer a ameaça compartimental.",
+      "incorretas": {
+        "A": "Ausência de pulso é um achado tardio, não o marcador precoce que deve orientar a vigilância. Escolhê-la favorece esperar uma alteração vascular grave; a presença de pulso não elimina a necessidade de acompanhar dor crescente.",
+        "B": "A alteração sensitiva descrita já é um déficit neurológico, classificado como tardio na sequência do resumo. Localizá-la num território específico não a transforma no sinal inicial mais importante; a progressão da dor deve ser percebida antes de depender desse achado.",
+        "C": "Déficit de dorsiflexão do hálux é uma alteração motora. O capítulo coloca o déficit motor entre os sinais tardios, de modo que esperar perda dessa função atrasaria o reconhecimento do quadro. A alternativa descreve gravidade, não o alerta precoce solicitado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-c0d7fda3"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "f0b81c5ee3a48853793125cee362c7aa748d24c4f1000c972a26c769aebe56a6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1149": {
+    "questaoSha256": "dff5c1b313c33553dc6421dbcb2fde75275e637b95511d6da4c81ad4eaaaec9b",
+    "comentarioAnteriorSha256": "a6b8a514ca648a8af4b38ad3f45f201539f28393f27dcc5fbb0bd22061c67d96",
+    "comentario": {
+      "conceito": "Uma radiografia inicial normal não exclui a fratura do lactente. Esse padrão costuma ser uma fratura espiral da tíbia com a fíbula íntegra, por um trauma que muitas vezes não foi visto. Aos 18 meses, claudicação e recusa de apoio são compatíveis com essa possibilidade (Rockwood crianças, 10ª ed., cap. 29, Fraturas especiais).\n\nA incidência oblíqua em rotação interna pode ser a única a mostrar o traço. Se ela também for normal, mas o quadro continuar compatível, o resumo orienta imobilizar e repetir a radiografia: a reação periosteal pode se tornar visível em 10 a 14 dias. O tempo muda a sensibilidade do exame, porque os sinais da reparação aparecem depois.\n\nEsse roteiro evita dois erros: excluir a fratura por duas incidências normais ou transformar toda suspeita estável em indicação imediata de um exame sob anestesia. A avaliação clínica e os diagnósticos diferenciais continuam importantes; o capítulo lembra osteomielite.\n\nO tratamento habitual descrito dura três a quatro semanas, com opções de gesso, bota e, em situações selecionadas, até sem imobilização. O caso não traz uma fratura desviada que justifique redução e oito semanas de gesso.\n\n**Por que esta questão foi criada.** Usa o exame inicial normal para testar uma sequência de diagnóstico e seguimento, em vez de encerrar a investigação pela ausência do traço em frente e perfil.",
+      "correta": "**Correta: A (oblíqua interna e, se necessário, imobilizar e repetir em 10 a 14 dias).** A incidência adicional pode demonstrar o traço; a radiografia tardia pode mostrar reação periosteal. A conduta mantém acompanhamento de uma suspeita clínica coerente sem tratar a imagem inicial como exclusão absoluta.",
+      "incorretas": {
+        "B": "Ressonância sob anestesia de imediato não é o primeiro passo descrito pelo capítulo para essa suspeita. O roteiro começa com a oblíqua interna e, se a imagem seguir normal com quadro compatível, imobilização e controle. A possibilidade de exames adicionais não torna essa intervenção imediata obrigatória.",
+        "C": "Duas incidências normais não descartam o padrão oculto descrito. Liberar sem acompanhamento ignoraria a limitação inicial da radiografia e perderia a oportunidade de identificar a reação periosteal no controle.",
+        "D": "O enunciado não demonstra desvio que exija redução, e oito semanas não é a duração habitual de três a quatro semanas descrita. A alternativa acrescenta uma manobra e um tempo de imobilização que não decorrem da suspeita apresentada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Fraturas especiais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Fraturas especiais"
+        ],
+        "blocos": [
+          "fraturas-especiais-6c2b8e9a"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "8b3dc9f4b4675b2abaf3b850c1b483c0e6cb623e4e8030821cc4fc9f889e0cf5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1150": {
+    "questaoSha256": "e9f9e6769bdde1b4312521514d98503c7a84c05867bd95386093c8665414e99e",
+    "comentarioAnteriorSha256": "8477c16377cb82619f0e869f88f9519d85e70a6698ad9febdd96c363d723cfb1",
+    "comentario": {
+      "conceito": "Na fixação flexível da tíbia infantil, o capítulo descreve **duas hastes iguais, do mesmo material, com preenchimento total de 60% a 80% do canal**. O percentual se refere ao conjunto, não a cada haste isoladamente (Rockwood crianças, 10ª ed., cap. 29, Cirurgia: hastes flexíveis).\n\nAs entradas são proximais, medial e lateral, na altura da tuberosidade ou logo acima, respeitando a fise e a apófise. As hastes seguem para o segmento distal e são assentadas acima da fise distal. Não se transporta automaticamente uma entrada de outro método ou de outro osso para essa técnica.\n\nA fixação pode precisar de gesso ou tala complementar, usados com frequência segundo o resumo. Ter hastes não significa estabilidade suficiente para dispensar toda proteção ou liberar carga imediata em qualquer caso.\n\nO peso também exige cuidado na interpretação. Na tíbia, o resumo não descreve pior consolidação pelo peso como regra; há, porém, associação a síndrome compartimental numa série de crianças mais pesadas. Não se deve transformar resultados de um osso em uma afirmação idêntica sobre outro, nem concluir que peso alto não traz preocupação compartimental.\n\n**Por que esta questão foi criada.** Compara os detalhes da haste tibial com os conhecidos do fêmur, exigindo conferir entrada, preenchimento e proteção em vez de repetir uma técnica de outro osso.",
+      "correta": "**Correta: B (60% a 80%, duas hastes iguais e mesmo material).** São os elementos descritos para a montagem. O dimensionamento deve ser entendido como preenchimento total pelo par, e não como escolher cada haste com essa porcentagem.",
+      "incorretas": {
+        "A": "A entrada descrita é proximal, medial e lateral junto à tuberosidade, longe da fise e da apófise. Uma entrada pelo maléolo medial não corresponde à técnica flexível apresentada. Respeitar as regiões de crescimento faz parte do planejamento.",
+        "C": "A frase não corresponde ao padrão tibial resumido: o peso não piorou a consolidação na comparação descrita, mas houve alerta de síndrome compartimental em uma série de pacientes mais pesados. A negação do risco compartimental contraria a fonte; a expressão como no fêmur não deve substituir a avaliação específica da tíbia.",
+        "D": "Gesso ou tala complementar é usado com frequência, portanto não se pode dizer que as hastes dispensam qualquer imobilização. A liberação universal de carga no primeiro dia também não é sustentada pelo resumo; a estabilidade e o contexto precisam ser considerados."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Diáfise: o desvio depende da fíbula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Diáfise: o desvio depende da fíbula"
+        ],
+        "blocos": [
+          "diafise-o-desvio-depende-da-fibula-54cacbb2"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "f9f12486b964cb934efafc8cd9fb55cb9779b92174f92858ec9d448f338ce525"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1151": {
+    "questaoSha256": "b986481bb941b21ec35fb6676002dc78fb669820804eba1d617fe0bc7e0e7677",
+    "comentarioAnteriorSha256": "83e84e32fd190e4cad418f95ec3265ca8873236f2ae0cdef9a067208453cf085",
+    "comentario": {
+      "conceito": "A tíbia infantil não deve ser tratada como se todas as deformidades fossem corrigir com o crescimento. O resumo destaca **angulação posterior, ou recurvato, como a que menos remodela, seguida do valgo**; o varo tem melhor correção. A **rotação não corrige** (Rockwood crianças, 10ª ed., cap. 29, Complicações).\n\nA diferença entre os planos muda a tolerância à redução. Uma deformidade que persiste num plano pouco favorável não se torna aceitável apenas porque a criança é nova. A capacidade de remodelação diminui com a idade, e o capítulo a limita principalmente aos primeiros 18 meses do seguimento.\n\nTambém é necessário separar rotação de angulação. Corrigir um ângulo no crescimento não significa que o membro vá desfazer uma malrotação. O resumo discute osteotomia para rotações importantes; não se deve planejar a redução contando com uma correção rotacional espontânea garantida.\n\nEncurtamento é outra dimensão, ligada ao crescimento longitudinal e ao discreto hipercrescimento tibial descrito. Não substitui a comparação entre direções angulares que a questão pede.\n\n**Por que esta questão foi criada.** Complementa as perguntas de alinhamento tibial pela capacidade real de remodelação, separando direção da deformidade, idade e rotação.",
+      "correta": "**Correta: C (recurvato e valgo; rotação não corrige).** A alternativa reproduz a ordem de menor remodelação angular e acrescenta o limite rotacional descrito. É o motivo para não presumir que todo desvio desapareça no acompanhamento.",
+      "incorretas": {
+        "A": "O varo é justamente o plano que o resumo descreve como de melhor correção, comparado ao recurvato e ao valgo. A combinação não identifica os dois padrões de menor remodelação, mesmo que o alinhamento anterior também deva ser avaliado.",
+        "B": "Além de incluir varo, que tem melhor correção, mistura encurtamento com a comparação das deformidades angulares. Crescimento longitudinal e remodelação de eixo são problemas relacionados, mas não equivalentes.",
+        "D": "A promessa de correção total antes dos dez anos contraria a orientação de que a rotação não corrige. A idade menor pode favorecer remodelação angular, sem garantir correção completa de qualquer deformidade e sem transformar malrotação em um desvio que se deva apenas esperar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-1c3d2426",
+          "complicacoes-626eb77b"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "a6176ca4dc19fc3352f3984e6f18ee33dff7de49106b4ef833350f98b58cd931"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1152": {
+    "questaoSha256": "6e4f8dcf7bf0c09cfd8a7f8961867ec0ffd5dd79dfe6873de5142a60c2b14bb1",
+    "comentarioAnteriorSha256": "f8e6abb4770d2f598a7fb60f3f5bf9c7c495bb375f35adc45c4ae1aa47aef6db",
+    "comentario": {
+      "conceito": "Na criança, o resumo localiza a fratura por estresse da tíbia sobretudo no **terço proximal** e lembra que a radiografia pode ser normal no início. A dor costuma ser medial, insidiosa e relacionada à atividade; a imagem radiográfica pode mudar em cerca de duas semanas (Rockwood crianças, 10ª ed., cap. 29, Fraturas especiais).\n\nA ausência do traço inicial não elimina uma lesão por sobrecarga. O desenvolvimento dos sinais radiográficos acompanha o tempo de evolução, e a ressonância pode ajudar a diferenciar de outras lesões, inclusive tumor, conforme a avaliação.\n\nA fíbula tem outro padrão no resumo: crianças entre dois e oito anos, com acometimento do terço distal e possível calo em casca de ovo. Portanto, não se deve trocar a distribuição de um osso pela do outro nem deslocar automaticamente o padrão fibular para adolescentes e para a região proximal.\n\nA questão pode ser resolvida com esses dados pediátricos. O capítulo descreve maior acometimento da tíbia que da fíbula na criança; não há necessidade de atribuir ao grupo infantil uma proporção trazida de outro contexto.\n\n**Por que esta questão foi criada.** Reúne localização e tempo de aparecimento radiográfico da lesão por estresse, diferenciando tíbia e fíbula na criança.",
+      "correta": "**Correta: D (terço proximal da tíbia e radiografia inicial possivelmente normal).** Os dois componentes estão descritos no resumo. A evolução clínica e o tempo do exame importam; uma imagem inicial normal não autoriza excluir a hipótese por estresse.",
+      "incorretas": {
+        "A": "Para a criança, a fonte coloca a tíbia acima da fíbula, e não a fíbula duas vezes mais acometida. A comparação com adultos não valida essa proporção para o grupo da pergunta. A alternativa já inverte a relação pediátrica necessária para a resposta.",
+        "B": "A localização tibial destacada é o terço proximal, não o distal. O fato de outras fraturas tibiais da criança serem frequentemente distais não deve ser transferido à fratura por estresse, que é outro padrão e outro mecanismo.",
+        "C": "O resumo descreve estresse da fíbula entre dois e oito anos e no terço distal. A alternativa troca tanto a faixa etária quanto a localização para adolescentes e região proximal; não é o padrão fibular apresentado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Fraturas especiais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Fraturas especiais"
+        ],
+        "blocos": [
+          "fraturas-especiais-13934874"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "470f696fd8796c6abbce50586b62103479e85dc4a98c1413fa4269c161798beb"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
