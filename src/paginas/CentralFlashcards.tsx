@@ -236,6 +236,8 @@ function PorAssunto({ areas }: { areas: Array<[string, string]> }) {
         {areas.map(([id, nome]) => <option key={id} value={id}>{nome}</option>)}
       </select>
       <button type="submit" className="botao botao--principal" disabled={!area}>Estudar 20</button>
+      {/* Área > grupo > assunto, com busca: abre a Biblioteca já na área escolhida (27/10/2026) */}
+      <a className="cf-assunto__mais" href={href(area ? `/flashcards/biblioteca?area=${encodeURIComponent(area)}` : '/flashcards/biblioteca')}>Escolher um assunto específico</a>
     </form>
   )
 }

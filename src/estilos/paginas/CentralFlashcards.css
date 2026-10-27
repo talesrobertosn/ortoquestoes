@@ -255,6 +255,7 @@ a.cf-atalho:hover small svg { transform: translateX(2px); }
 }
 .cf-assunto select:focus-visible { outline: 3px solid var(--verdete); outline-offset: 1px; }
 .cf-assunto .botao { min-height: 44px; }
+.cf-assunto__mais { font-size: var(--corpo-menor); font-weight: 700; color: var(--verdete); text-decoration: underline; text-underline-offset: 3px; }
 
 /* Cronograma: a missão do dia, numa placa dourada (como o dia de hoje no Cronograma). */
 .cfh .cf-crono { border-color: #c99a3b; background: color-mix(in srgb, var(--px-ouro) 16%, var(--superficie)); box-shadow: 5px 5px 0 rgba(201, 154, 59, 0.3); }
