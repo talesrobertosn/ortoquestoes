@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 545,
+  "pendente": 535,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 404,
+  "pendente-fonte": 405,
   "pendente-inspecao-imagem": 64,
-  "revisada": 1512
+  "revisada": 1521
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -285,50 +285,50 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 55,
+    "pendente": 53,
     "pendente-fonte": 10,
     "pendente-inspecao-imagem": 4,
-    "revisada": 67
+    "revisada": 69
    }
   },
   "rockwoodcriancas10-25-diafise-femur": {
    "titulo": "Fratura da diáfise do fêmur na criança",
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
-    "pendente": 52,
-    "pendente-fonte": 10,
+    "pendente": 42,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 3,
-    "revisada": 42
+    "revisada": 51
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
    "titulo": "Fratura da fise distal do fêmur na criança",
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
-    "pendente": 59,
-    "pendente-fonte": 11,
+    "pendente": 49,
+    "pendente-fonte": 12,
     "pendente-inspecao-imagem": 3,
-    "revisada": 46
+    "revisada": 55
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
-    "pendente": 52,
-    "pendente-fonte": 17,
+    "pendente": 42,
+    "pendente-fonte": 18,
     "pendente-inspecao-imagem": 3,
-    "revisada": 44
+    "revisada": 53
    }
   },
   "rockwoodcriancas10-29-diafise-tibia": {
    "titulo": "Fraturas da tíbia e da fíbula na criança",
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
-    "pendente": 52,
-    "pendente-fonte": 11,
+    "pendente": 42,
+    "pendente-fonte": 12,
     "pendente-inspecao-imagem": 3,
-    "revisada": 41
+    "revisada": 50
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -41348,8 +41348,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado especifica região proximal da DIÁFISE, enquanto o valgo de COZEN do corpo29 pertence à METÁFISE proximal. A diáfise tem tendências distintas conforme a fíbula, e a fise/tuberosidade pode produzir recurvato no corpo27. Sem contexto que comprove a leitura metafisária da expressão histórica e sem comparação de frequências tardias para esse escopo, não há resposta única de Certo/Errado sustentada. O comentário antigo já alerta a imprecisão e tem provávelA, mas não é fonte para confirmar essa inferência. Falta esclarecer região/padrão da lesão na fonte da prova e a sequela predominante correspondente. Comentário e provável antigo preservados, sem selo novo ou revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41366,7 +41366,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "bdda55e41fc6a54e69807c2735c1d64dcb9a5defc183cc58dafb3b336dfc2e48"
+   "questaoSha256": "bdda55e41fc6a54e69807c2735c1d64dcb9a5defc183cc58dafb3b336dfc2e48",
+   "pendencia": "O enunciado especifica região proximal da DIÁFISE, enquanto o valgo de COZEN do corpo29 pertence à METÁFISE proximal. A diáfise tem tendências distintas conforme a fíbula, e a fise/tuberosidade pode produzir recurvato no corpo27. Sem contexto que comprove a leitura metafisária da expressão histórica e sem comparação de frequências tardias para esse escopo, não há resposta única de Certo/Errado sustentada. O comentário antigo já alerta a imprecisão e tem provávelA, mas não é fonte para confirmar essa inferência. Falta esclarecer região/padrão da lesão na fonte da prova e a sequela predominante correspondente. Comentário e provável antigo preservados, sem selo novo ou revisão concluída."
   },
   "pediatria-0819": {
    "tema": "pediatria",
@@ -52963,7 +52964,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52981,7 +52982,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "07cc974c234b8a1b440e15ca378d71c644021428cb7c9d3fd8762708e573e78a"
+   "questaoSha256": "07cc974c234b8a1b440e15ca378d71c644021428cb7c9d3fd8762708e573e78a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-6221cf6c",
+       "diafise-o-desvio-depende-da-fibula-4b0512cb"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "0c4d771d9247099426ba2e58f387a06cef00105908026e0ab4ab26791bdff42b"
+     }
+    ],
+    "questaoSha256": "07cc974c234b8a1b440e15ca378d71c644021428cb7c9d3fd8762708e573e78a",
+    "comentarioSha256": "086953435dd2188eed651768353d507bfcb2d63356a98a01d09a72fea0edb8bc"
+   }
   },
   "pediatria-1145": {
    "tema": "pediatria",
@@ -52990,7 +53015,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53008,7 +53033,47 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "463602f562fc6ef574cb82d3c911b634fa9cbd03cd93644b5b456b0c55c45b63"
+   "questaoSha256": "463602f562fc6ef574cb82d3c911b634fa9cbd03cd93644b5b456b0c55c45b63",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula",
+       "Complicações"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-65256445",
+       "complicacoes-1c3d2426"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "c86cffcdf499ecc53fd0a3dcae036b00d17f72967af685dd76617e32f14c551e"
+     },
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "O tratamento pela idade"
+      ],
+      "blocos": [
+       "o-tratamento-pela-idade-818fa3dc"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "0418367eb8bd09aceb2864023cc739197e0359cb1bb33cfbf5da49b5b0f89c31"
+     }
+    ],
+    "questaoSha256": "463602f562fc6ef574cb82d3c911b634fa9cbd03cd93644b5b456b0c55c45b63",
+    "comentarioSha256": "bddd99297f51863c354bf1383fa6fe49b1571b3ee41cbc056f60a8882dbeb3b0"
+   }
   },
   "pediatria-1146": {
    "tema": "pediatria",
@@ -53017,7 +53082,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53035,7 +53100,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "a5463e2405ec61622a52f7f80a9d53e257089f51183f3ae0169c3dfc29e98f28"
+   "questaoSha256": "a5463e2405ec61622a52f7f80a9d53e257089f51183f3ae0169c3dfc29e98f28",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-fa1caf1e"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "55968137897ee04554a42ab2487248c04039a87e3d5c7448ead2282a6b271e8a"
+     }
+    ],
+    "questaoSha256": "a5463e2405ec61622a52f7f80a9d53e257089f51183f3ae0169c3dfc29e98f28",
+    "comentarioSha256": "f9615237f3d0697f1c66998bd02095b5e07c58ce4fc3eeef5cf0bf31e253aa5d"
+   }
   },
   "pediatria-1147": {
    "tema": "pediatria",
@@ -53044,7 +53132,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53062,7 +53150,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "52ae6ee98f82562e0564aafd181e25fb1cd98f379ada5f838b666eef006ecca4"
+   "questaoSha256": "52ae6ee98f82562e0564aafd181e25fb1cd98f379ada5f838b666eef006ecca4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise distal"
+      ],
+      "blocos": [
+       "metafise-distal-dfda6f0a"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "04418a3b71e0154e47a6a18649f130378ecdf6db8f880e3683ee82d68ca32cc6"
+     }
+    ],
+    "questaoSha256": "52ae6ee98f82562e0564aafd181e25fb1cd98f379ada5f838b666eef006ecca4",
+    "comentarioSha256": "58eeb97fd51ee286ec2422c709b61f966b415a5d3292221fa1bc24870bac0c0a"
+   }
   },
   "pediatria-1148": {
    "tema": "pediatria",
@@ -53071,7 +53182,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53089,7 +53200,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "b46736279bef135bd0a286dde062eadd4da9cf56ea4b9c3555104471666e3b80"
+   "questaoSha256": "b46736279bef135bd0a286dde062eadd4da9cf56ea4b9c3555104471666e3b80",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-c0d7fda3"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "f0b81c5ee3a48853793125cee362c7aa748d24c4f1000c972a26c769aebe56a6"
+     }
+    ],
+    "questaoSha256": "b46736279bef135bd0a286dde062eadd4da9cf56ea4b9c3555104471666e3b80",
+    "comentarioSha256": "54cc203fc2114158ea31c6b479a93d4456347551fa9d29685faa296047b6ca8d"
+   }
   },
   "pediatria-1149": {
    "tema": "pediatria",
@@ -53099,7 +53233,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53118,7 +53252,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "dff5c1b313c33553dc6421dbcb2fde75275e637b95511d6da4c81ad4eaaaec9b"
+   "questaoSha256": "dff5c1b313c33553dc6421dbcb2fde75275e637b95511d6da4c81ad4eaaaec9b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Fraturas especiais"
+      ],
+      "blocos": [
+       "fraturas-especiais-6c2b8e9a"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "8b3dc9f4b4675b2abaf3b850c1b483c0e6cb623e4e8030821cc4fc9f889e0cf5"
+     }
+    ],
+    "questaoSha256": "dff5c1b313c33553dc6421dbcb2fde75275e637b95511d6da4c81ad4eaaaec9b",
+    "comentarioSha256": "7939bdb99225d7979f77ade5825fed1062bd15204d7ab41f86732ab2e572379f"
+   }
   },
   "pediatria-1150": {
    "tema": "pediatria",
@@ -53127,7 +53284,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53145,7 +53302,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "e9f9e6769bdde1b4312521514d98503c7a84c05867bd95386093c8665414e99e"
+   "questaoSha256": "e9f9e6769bdde1b4312521514d98503c7a84c05867bd95386093c8665414e99e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-54cacbb2"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "f9f12486b964cb934efafc8cd9fb55cb9779b92174f92858ec9d448f338ce525"
+     }
+    ],
+    "questaoSha256": "e9f9e6769bdde1b4312521514d98503c7a84c05867bd95386093c8665414e99e",
+    "comentarioSha256": "39c26511a2849bfd73e7f657786541de7a1adb42e02044f4f83d1ebcbeba354e"
+   }
   },
   "pediatria-1151": {
    "tema": "pediatria",
@@ -53154,7 +53334,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53172,7 +53352,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "b986481bb941b21ec35fb6676002dc78fb669820804eba1d617fe0bc7e0e7677"
+   "questaoSha256": "b986481bb941b21ec35fb6676002dc78fb669820804eba1d617fe0bc7e0e7677",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-1c3d2426",
+       "complicacoes-626eb77b"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "a6176ca4dc19fc3352f3984e6f18ee33dff7de49106b4ef833350f98b58cd931"
+     }
+    ],
+    "questaoSha256": "b986481bb941b21ec35fb6676002dc78fb669820804eba1d617fe0bc7e0e7677",
+    "comentarioSha256": "64d9ed0d4c5ab8c922ba2c8fd575c32fba7b69846b9c3218ce7a4644427d8a99"
+   }
   },
   "pediatria-1152": {
    "tema": "pediatria",
@@ -53182,7 +53386,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53201,7 +53405,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "6e4f8dcf7bf0c09cfd8a7f8961867ec0ffd5dd79dfe6873de5142a60c2b14bb1"
+   "questaoSha256": "6e4f8dcf7bf0c09cfd8a7f8961867ec0ffd5dd79dfe6873de5142a60c2b14bb1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Fraturas especiais"
+      ],
+      "blocos": [
+       "fraturas-especiais-13934874"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "470f696fd8796c6abbce50586b62103479e85dc4a98c1413fa4269c161798beb"
+     }
+    ],
+    "questaoSha256": "6e4f8dcf7bf0c09cfd8a7f8961867ec0ffd5dd79dfe6873de5142a60c2b14bb1",
+    "comentarioSha256": "88e0a77fc2d71dfa4b8816aee3ed6768da4ffc69fdbf6fcbd48405b862bc06ff"
+   }
   },
   "quadril-0035": {
    "tema": "quadril",
