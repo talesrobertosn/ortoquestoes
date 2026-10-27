@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 615 |
+| pendente | 575 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 388 |
+| pendente-fonte | 393 |
 | pendente-inspecao-imagem | 64 |
-| revisada | 1458 |
+| revisada | 1493 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -32,7 +32,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 55 | 0 | 21 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 51 | 0 | 12 |
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 34 | 0 | 11 |
-| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 47 | 0 | 26 |
+| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 51 | 0 | 22 |
 | Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 27 | 0 | 12 |
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 38 | 0 | 45 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 52 | 0 | 71 |
@@ -41,11 +41,11 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 31 | 0 | 18 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 39 | 0 | 27 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 28 | 0 | 25 |
-| Epidemiologia das fraturas na criança (`rockwoodcriancas10-01-epidemiologia-fraturas`) | 50 | 0 | 86 |
-| Fratura da diáfise do fêmur na criança (`rockwoodcriancas10-25-diafise-femur`) | 1 | 0 | 106 |
-| Fratura da fise distal do fêmur na criança (`rockwoodcriancas10-26-fise-distal-femur`) | 1 | 0 | 118 |
-| Fratura da fise proximal e da tuberosidade da tíbia na criança (`rockwoodcriancas10-27-fise-proximal-tibia`) | 1 | 0 | 115 |
-| Fraturas da tíbia e da fíbula na criança (`rockwoodcriancas10-29-diafise-tibia`) | 1 | 0 | 106 |
+| Epidemiologia das fraturas na criança (`rockwoodcriancas10-01-epidemiologia-fraturas`) | 58 | 0 | 78 |
+| Fratura da diáfise do fêmur na criança (`rockwoodcriancas10-25-diafise-femur`) | 29 | 0 | 78 |
+| Fratura da fise distal do fêmur na criança (`rockwoodcriancas10-26-fise-distal-femur`) | 33 | 0 | 86 |
+| Fratura da fise proximal e da tuberosidade da tíbia na criança (`rockwoodcriancas10-27-fise-proximal-tibia`) | 26 | 0 | 90 |
+| Fraturas da tíbia e da fíbula na criança (`rockwoodcriancas10-29-diafise-tibia`) | 26 | 0 | 81 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 3 |
 | Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 13 | 0 | 6 |

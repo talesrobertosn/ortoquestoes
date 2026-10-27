@@ -1,0 +1,325 @@
+{
+  "pediatria-0556": {
+    "questaoSha256": "3307d0f41de5c7c3169b4f6800f760ec72dd07a5d39be4594fe666b845de07c7",
+    "comentarioAnteriorSha256": "7afd4ae475ebf2c45e80f1fa7b8b74e49ff3822a99ebd7e67a0aba6db4ded861",
+    "comentario": {
+      "conceito": "Uma fratura alta do fêmur é mais difícil de manter reduzida, mas sua deformidade residual pode ser mais tolerável que a de uma fratura distal. Não há contradição: **controlar os fragmentos durante a consolidação e tolerar o alinhamento que ficou são problemas diferentes**.\n\nNo terço proximal, o fragmento proximal fica em flexão pelo iliopsoas, abdução pelos abdutores e rotação lateral pelos rotadores externos curtos. Essas forças desviam o fragmento em mais de um plano e dificultam alinhá-lo e mantê-lo na posição. Na diáfise média há compensação parcial pelos adutores e extensores; mais distalmente, muitos músculos permanecem no mesmo fragmento, com menor alteração do proximal (Rockwood crianças, 10ª ed., cap. 25, Os músculos decidem o desvio).\n\nA tolerância residual segue outra lógica. Perto do joelho, a compensação da deformidade é limitada, e os critérios para a fratura distal são mais rigorosos. A deformidade proximal é mais tolerada nessa comparação, embora continue sendo necessário obter uma redução adequada. Isso não autoriza aceitar qualquer angulação, rotação ou encurtamento: idade e plano do desvio também importam.\n\nO ponto decisivo é guardar as duas relações separadamente: **proximal significa controle mais difícil; distal significa menor tolerância à deformidade residual**.",
+      "correta": "**Correta: C (mais difícil de controlar e a deformidade residual mais tolerável).** A ação conjunta do iliopsoas, dos abdutores e dos rotadores externos desvia o fragmento proximal e dificulta o controle. A segunda parte compara o que sobra da deformidade: a região distal, perto do joelho, tem compensação mais limitada e exige critérios mais rígidos. A alternativa reúne corretamente as duas relações, sem dizer que seja desejável deixar a fratura proximal deformada.",
+      "incorretas": {
+        "A": "Acerta a maior tolerância residual da localização proximal, mas erra a facilidade de controle. Flexão, abdução e rotação lateral do fragmento proximal são forças deformantes que a redução precisa vencer; não facilitam mantê-lo alinhado.",
+        "B": "Inverte as duas comparações. O fragmento proximal sofre forças que tornam seu controle mais difícil, enquanto a deformidade residual é menos tolerada na região distal, junto ao joelho. Não se deve deduzir a tolerância residual da facilidade da redução.",
+        "D": "Reconhece corretamente a dificuldade de controlar a fratura proximal. O erro está em chamá-la de menos tolerável: na comparação proposta, são as deformidades distais que têm critérios mais rigorosos pela compensação limitada junto ao joelho. Dificuldade técnica e tolerância residual não caminham obrigatoriamente juntas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Os músculos decidem o desvio."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Os músculos decidem o desvio"
+        ],
+        "blocos": [
+          "os-musculos-decidem-o-desvio-45c94342",
+          "os-musculos-decidem-o-desvio-8252e1d5"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "e5c3936ab37928294aeb827d125317670c2a7d5950be13ace10e14646ca645da"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0565": {
+    "questaoSha256": "15fb7eb884efa3acfd7c87288c4b39ca4295f81f2c1178a33e7e0a5e28d22f29",
+    "comentarioAnteriorSha256": "777df59c4ed5e2fb8cbba9a549ca459b98085b4fb989f91b6ba05043fc4b7461",
+    "comentario": {
+      "conceito": "Para um lactente com menos de seis meses, o suspensório de Pavlik permite tratar a fratura diafisária do fêmur sem transformar a imobilização mais rígida na primeira escolha. O periósteo espesso contribui para a estabilidade; nas fraturas proximais ou médias, o suspensório mantém flexão e abdução moderadas para alinhar o segmento distal ao proximal (Rockwood crianças, 10ª ed., cap. 25, O tratamento pela idade).\n\nA posição tem uma razão mecânica. Nas fraturas altas, o fragmento proximal tende à flexão, abdução e rotação lateral pelas forças musculares. Aproximar o distal dessa posição ajuda a manter o alinhamento, em vez de tentar endireitar todo o membro à força.\n\nPavlik não dispensa avaliar o contexto: antes da marcha, a história do trauma precisa ser examinada e devem ser afastados maus-tratos e doenças de base. Também não é uma solução universal para qualquer desvio. O resumo admite tala simples e reserva redução com gesso para situações como encurtamento de 1 a 2 cm ou angulação acima de 30 graus. Na comparação citada, o Pavlik teve mais dor, mas menos problemas de pele que o gesso imediato. A escolha não se resume a qual método parece mais confortável no primeiro momento.\n\n**A idade muda a primeira opção.** O gesso imediato ganha protagonismo depois dos seis meses; tração e gesso são raros no lactente. A pergunta pede a opção preferencial nessa idade, não o único tratamento possível.",
+      "correta": "**Correta: D (o suspensório de PAVLIK).** Abaixo de seis meses, é a opção preferencial entre as oferecidas. Flexão e abdução moderadas ajudam a alinhar o distal ao proximal, e o periósteo espesso favorece a estabilidade. O fato de o gesso ou uma tala também poderem ser usados em situações selecionadas não retira a preferência do Pavlik nessa faixa etária.",
+      "incorretas": {
+        "A": "A tração não é a estratégia inicial preferida para a fratura habitual do lactente. A tabela do capítulo considera tração seguida de gesso muito rara do nascimento aos 24 meses; o suporte pelo Pavlik evita recorrer rotineiramente a essa sequência quando há estabilidade e alinhamento aceitáveis.",
+        "B": "Uma tala simples pode tratar fraturas proximais ou médias do lactente, portanto não seria correto dizer que toda imobilização por tala é proibida. Entretanto, a alternativa pede a opção preferencial antes dos seis meses: o Pavlik oferece o posicionamento em flexão e abdução descrito para esse grupo, e é a resposta da banca.",
+        "C": "O gesso pelvipodálico é uma opção real, sobretudo quando o desvio exige redução, mas não a preferência geral antes dos seis meses. Sua indicação se torna mais típica depois dessa idade. No lactente, a comparação com Pavlik também deve considerar problemas de pele, além da manutenção da redução."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade; Os músculos decidem o desvio."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade",
+          "Os músculos decidem o desvio"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-74c5d484",
+          "o-tratamento-pela-idade-72e9cb2f",
+          "os-musculos-decidem-o-desvio-45c94342",
+          "o-tratamento-pela-idade-7049f92d"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "441b84d558be95bf8549fc42cff0bc3e87a776349078793689e026821955fbce"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0591": {
+    "questaoSha256": "3c36f26ae5aa983d54dd9b352597a5a41d7a13c970fd7de2a1ca805d14a10078",
+    "comentarioAnteriorSha256": "d9a40f9972f0f5aa06bc3d51401151cce4cd48a9c9d68408aac0deb85efb3d55",
+    "comentario": {
+      "conceito": "Depois de uma fratura, o fêmur infantil pode melhorar sua angulação enquanto cresce. A maior parcela dessa remodelação não vem apenas do calo no foco: **vem das fises**, que participam do crescimento longitudinal e da reorientação progressiva do osso. Na observação de Wallace e Hoffman citada pelo resumo, 74% da remodelação foi fisária; o restante, aposicional no foco (Rockwood crianças, 10ª ed., cap. 25, Sequelas).\n\nHá, portanto, dois locais de correção. O foco pode mudar seu contorno pela remodelação aposicional. Ao mesmo tempo, o crescimento fisário reorienta o segmento ao longo do tempo e responde pela maior participação na correção angular estudada. A questão pede essa participação predominante, e não se o foco tem alguma capacidade de remodelação.\n\nO plano do desvio também importa: a correção é melhor no plano de movimento da articulação vizinha, de modo que as angulações anterior e posterior corrigem mais rapidamente que varo e valgo. Isso explica por que não se deve transportar a mesma tolerância para todos os planos.\n\n**Remodelação angular não é sinônimo de correção rotacional.** No adolescente mais velho, não se espera remodelação rotacional significativa, e a rotação deve ser controlada na redução. Tampouco se deve confundir remodelação com translação, que descreve a posição de um fragmento em relação ao outro, e não o mecanismo de crescimento responsável pela maior parte da correção.",
+      "correta": "**Correta: D (à reorientação fisária e crescimento longitudinal).** É o mecanismo predominante descrito: 74% da remodelação angular na série citada ocorre pelas fises. O foco participa, mas em menor proporção. O número se refere à remodelação estudada e não significa que toda fratura ou toda deformidade vá corrigir exatamente nessa proporção.",
+      "incorretas": {
+        "A": "Translação fragmentar descreve deslocamento dos fragmentos, não a fonte principal da correção angular com o crescimento. Mesmo que um deslocamento translacional possa ser remodelado, isso não transforma a translação no mecanismo responsável pela maior parcela de remodelação óssea perguntada.",
+        "B": "A reorientação rotacional não é o mecanismo predominante da remodelação angular. É especialmente perigoso esperar essa correção no adolescente mais velho, no qual o capítulo não descreve remodelação rotacional significativa. A possibilidade de tolerar algum desvio rotacional também não equivale a afirmar que ele será corrigido pelo crescimento.",
+        "C": "A remodelação aposicional no local da fratura existe e explica parte da correção. O erro é atribuir-lhe o maior percentual: o resumo separa 74% de participação fisária do restante aposicional no foco. Não se deve negar o papel do calo, mas reconhecer que ele não é o componente predominante nessa comparação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Sequelas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Sequelas"
+        ],
+        "blocos": [
+          "sequelas-126a4cff",
+          "sequelas-8f3711db"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "2f4346883f92d302b18ac78b78e6d751a828bdbc7739ec3e538a3ee0ad907af0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0603": {
+    "questaoSha256": "8645b4aaaadf3a6c7dd8b886870586d915d008f731dfa3d1d3f9a3c5a8a93e76",
+    "comentarioAnteriorSha256": "2e2d63efe131859b1d9b35990e69e98c9e3e7316cc0ad8fcc1ba39d5cd4690c3",
+    "comentario": {
+      "conceito": "O adolescente com fratura diafisária estável do fêmur precisa de uma fixação que mantenha o alinhamento em um paciente maior e com menos capacidade de compensar deformidades pelo crescimento. Acima dos 11 anos, a opção principal descrita é a **haste intramedular rígida bloqueada com entrada trocantérica lateral** (Rockwood crianças, 10ª ed., cap. 25, O tratamento pela idade).\n\nA entrada faz parte da indicação. Não basta escolher uma haste rígida qualquer: a entrada piriforme deve ser evitada com a fise aberta, porque ameaça a irrigação da cabeça femoral. O resumo identifica a artéria cervical ascendente lateral como principal fonte da epífise, vulnerável na incisura trocantérica. As hastes de entrada lateral e a dissecção restrita à face lateral do trocânter procuram reduzir esse risco (seção A haste rígida e a cabeça femoral).\n\nA placa submuscular e o fixador externo não são métodos errados em si. A placa tem papel importante em padrões instáveis no comprimento e nos terços proximal ou distal. O fixador é útil quando as partes moles impedem a fixação interna, na exposição grave ou no controle de danos. A questão, porém, apresenta uma fratura estável do adolescente e pergunta pelo tratamento definitivo recomendado.\n\nA tração seguida de gesso é uma estratégia de outra fase da infância. Acima de 12 anos, o capítulo a afasta pelo risco de encurtamento e consolidação viciosa; não é a escolha habitual para resolver definitivamente a fratura proposta.",
+      "correta": "**Correta: C (osteossíntese intramedular rígida com entrada trocantérica).** É a indicação principal nessa faixa etária. Na aplicação atual do conceito, especifica-se a entrada trocantérica lateral, a haste bloqueada e o cuidado com a vascularização proximal; entrada trocantérica não deve ser confundida com entrada piriforme. A estabilidade do traço reforça a adequação da escolha apresentada.",
+      "incorretas": {
+        "A": "O fixador externo pode ser necessário em exposição grave, lesões de partes moles ou controle de danos, mas essas condições não estão no enunciado. A possibilidade de usá-lo não o torna o tratamento definitivo preferencial de toda fratura estável acima dos 11 anos; o capítulo ainda destaca infecção do trajeto dos pinos e risco de refratura na retirada sem calo suficiente.",
+        "B": "A placa tem indicações válidas, especialmente em fraturas instáveis no comprimento ou próximas às extremidades da diáfise. Uma DCP também pode integrar uma montagem submuscular, portanto não é correto condenar toda placa por suposta necessidade de ampla exposição. Para a fratura estável do adolescente descrita, contudo, a recomendação principal é a haste rígida de entrada lateral.",
+        "D": "Tração seguida de gesso não oferece a estratégia definitiva preferida para esse adolescente. Com o aumento da idade, encurtamento e consolidação viciosa se tornam preocupações maiores; acima de 12 anos, o capítulo não utiliza essa sequência. Sua presença entre as opções não deve levar a transportar o tratamento conservador da criança pequena para o paciente maior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade; A haste rígida e a cabeça femoral; Placa submuscular e fixador externo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade",
+          "A haste rígida e a cabeça femoral",
+          "Placa submuscular e fixador externo"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-eb78b504",
+          "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+          "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+          "placa-submuscular-e-fixador-externo-09391313",
+          "placa-submuscular-e-fixador-externo-6e33859a",
+          "o-tratamento-pela-idade-f855f801"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "cdc72a611f682ba7b1f73a4b706bec8452d8dcfde5585224647b2581357d64a3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0619": {
+    "questaoSha256": "6a88e5b382908db681030fcfd0b02d08e7aa01dfa2f71ec75812271a137fd90e",
+    "comentarioAnteriorSha256": "aa0de333266f85624dbc3a2b93dbd4ccb8db3b63c57e4130e87657386bb86853",
+    "comentario": {
+      "conceito": "O desvio de uma fratura do fêmur pode ser previsto pelas forças musculares que continuam atuando em cada fragmento. Nas fraturas altas, o proximal assume a combinação clássica: **flexão, abdução e rotação lateral**. O iliopsoas produz a flexão; os abdutores, a abdução; e os rotadores externos curtos, a rotação lateral (Rockwood crianças, 10ª ed., cap. 25, Os músculos decidem o desvio).\n\nNão basta memorizar as três palavras sem localizar o fragmento. Na diáfise média, adutores e extensores compensam parte dessas forças; mais distalmente, muitos músculos permanecem no mesmo segmento e o proximal pouco se altera. O padrão clássico é, portanto, mais evidente na localização proximal e subtrocantérica. A questão usa a formulação geral, mas cobra essa associação muscular do fragmento proximal.\n\nA consequência aparece na redução: o fragmento proximal fletido pode parecer curto demais na radiografia em frente e tornar o controle da fratura difícil. É necessário reconhecer a posição real, em vez de interpretar a projeção como medida isolada do comprimento.\n\nOutra situação é a supracondiliana: ali o gastrocnêmio traciona o **fragmento distal em extensão**. Trocar esse mecanismo pelo das fraturas altas faria errar o fragmento, o músculo e a direção do desvio.",
+      "correta": "**Correta: B (flexão, abdução e rotação lateral).** Reúne as ações do iliopsoas, dos abdutores e dos rotadores externos curtos sobre o fragmento proximal das fraturas altas. O desvio é menos acentuado na diáfise média e distal, mas a associação anatômica cobrada é essa.",
+      "incorretas": {
+        "A": "Flexão e rotação lateral estão de acordo com o padrão proximal. A adução é o elemento que invalida a opção: os abdutores desviam esse fragmento em abdução, afastando-o do eixo medial. Reconhecer duas direções corretas não compensa a inversão da terceira.",
+        "C": "As três direções contrariam o padrão proximal descrito: o iliopsoas produz flexão, não extensão; os abdutores produzem abdução, não adução; e os rotadores externos curtos favorecem rotação lateral, não medial. Extensão do distal pela ação do gastrocnêmio pertence à fratura supracondiliana, outra localização.",
+        "D": "A abdução está correta, mas extensão e rotação medial não correspondem ao efeito do iliopsoas e dos rotadores externos sobre o proximal. A alternativa mistura uma direção verdadeira com duas inversões, sem reproduzir o conjunto das forças deformantes da fratura alta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Os músculos decidem o desvio."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Os músculos decidem o desvio"
+        ],
+        "blocos": [
+          "os-musculos-decidem-o-desvio-45c94342",
+          "os-musculos-decidem-o-desvio-8f270943",
+          "os-musculos-decidem-o-desvio-8252e1d5"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "8742e251fce79130d620b1b99e8ac643e7ddf15d4da8451b08cef56a3ca454b6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0545": {
+    "questaoSha256": "710114f09293b7632ba6e39b610d81979484570aa970319ad9d3d31f9f29b289",
+    "comentarioAnteriorSha256": "aebe234e339f06eaf6954250d90ae9b219d46979d8b0c1bd99fc0457bbbbf62b",
+    "comentario": {
+      "conceito": "Na fratura metafisária proximal da tíbia, duas informações devem ser relacionadas sem tratá-las como uma explicação única: o desvio tardio característico é o **valgo**, e a redução pode ser impedida por **partes moles interpostas medialmente**, entre elas a pata de ganso (Rockwood crianças, 10ª ed., cap. 29, O tratamento e O valgo pós-fratura).\n\nA fratura típica da criança pequena ocorre com falha em tensão da cortical medial. Se periósteo, colateral medial ou pata de ganso ficam presos nesse lado, a redução pode não fechar adequadamente o foco. O resumo descreve a abordagem anteromedial quando a redução não se obtém ou não se mantém. Isso dá sentido à escolha da estrutura interposta, sem precisar atribuir toda dificuldade de redução a ela.\n\nJá o valgo de Cozen pode aparecer mesmo após uma fratura sem desvio ou bem alinhada. Interposição, perda de redução e perda da amarração da pata de ganso estão entre as causas propostas; o crescimento fisário assimétrico é sustentado como explicação da maioria dos casos. **Encontrar valgo não prova que ficou um tendão preso.**\n\nO valgo costuma se tornar evidente por volta de seis meses e pode progredir até 18 a 24 meses, com correção gradual posterior. Avisar a família desde o início e acompanhar a evolução evita interpretar toda deformidade tardia como indicação imediata de osteotomia. A combinação pedida é valgo com pata de ganso, preservando a distinção entre bloqueio da redução e história natural do crescimento.",
+      "correta": "**Correta: D (valgo e pata de ganso).** O valgo é a deformidade tardia característica da fratura metafisária proximal. A pata de ganso integra as partes moles que podem se interpor do lado medial e dificultar a redução. A associação da questão é válida, mas não significa que toda evolução para valgo decorra exclusivamente de interposição; crescimento assimétrico também é central na explicação.",
+      "incorretas": {
+        "A": "Erra a direção e a estrutura da associação cobrada. O padrão tardio característico é valgo, não varo; e o bloqueio de redução descrito é por partes moles mediais, como pata de ganso, periósteo e colateral medial, não pelo trato iliotibial. São dois critérios independentes para excluir a alternativa.",
+        "B": "Identifica corretamente o valgo, mas atribui a interposição à estrutura errada. O resumo localiza o impedimento no lado medial e cita a pata de ganso entre as estruturas implicadas. Saber a direção do desvio não basta para escolher o tecido responsável pela dificuldade de redução.",
+        "C": "A pata de ganso é compatível com a interposição medial descrita. O erro é associá-la ao varo como desvio tardio típico: o fenômeno característico é o valgo de Cozen, que também pode ocorrer sem interposição demonstrável. O varo usado no molde do gesso é uma medida de tratamento e não a sequela perguntada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+          "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+          "metafise-proximal-a-fratura-de-cozen-663056eb",
+          "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+          "metafise-proximal-a-fratura-de-cozen-d5af459b",
+          "metafise-proximal-a-fratura-de-cozen-06e1bebc"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "8f1f8be14a74e01b9b012a8bf04d7820471ea0044cd260bb20c6c60982fdd463"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0579": {
+    "questaoSha256": "60d12c560657484980408189e15083e8575b6962c6a841ded414c2573aa89d8c",
+    "comentarioAnteriorSha256": "6afecd20fcebb5a14089380d318596c924183f8f8bd173fa9365564c110a53b3",
+    "comentario": {
+      "conceito": "A complicação tardia clássica da fratura da **metáfise proximal da tíbia** é o **valgo de Cozen**. O detalhe decisivo é a palavra metáfise: não se trata da lesão da fise anterior nem da avulsão da tuberosidade, que têm outra relação com a deformidade em recurvato (Rockwood crianças, 10ª ed., caps. 29 e 27).\n\nO valgo corresponde a uma deformidade no plano frontal. Ele pode se desenvolver mesmo quando a fratura inicialmente tinha pouco ou nenhum desvio. O resumo reúne hipóteses como interposição de partes moles, perda de redução e alterações da contenção medial; a ocorrência após fraturas sem desvio e a recidiva após osteotomia sustentam a participação do crescimento fisário assimétrico.\n\nA história natural também ajuda a reconhecer o problema: a deformidade costuma ficar evidente por volta de seis meses, progride até 18 a 24 meses e depois pode corrigir gradualmente. Portanto, não se confunde o alinhamento visto logo após a redução com o que poderá surgir nos meses de crescimento. A frequência de deformidades clinicamente relevantes parece menor em séries recentes do que nas descrições antigas; o fenômeno não ocorre inevitavelmente em toda fratura.\n\nNa orientação da família, o importante é explicar a possibilidade do valgo e acompanhar. A capacidade de correção espontânea torna inadequado indicar osteotomia precoce apenas porque a deformidade apareceu. A questão pede a direção característica da sequela, não uma conduta cirúrgica para qualquer grau de desvio.",
+      "correta": "**Correta: B (valgo).** É a deformidade tardia que caracteriza o fenômeno de Cozen após a fratura metafisária proximal. Seu desenvolvimento pode decorrer de crescimento assimétrico e não exige que a fratura tenha consolidado inicialmente em valgo. A localização metafisária separa esse quadro do recurvato ligado à lesão fisária anterior.",
+      "incorretas": {
+        "A": "Varo é a direção oposta no plano frontal. Embora possa ser usado como molde inicial para combater a tendência ao valgo, não é a complicação tardia clássica dessa fratura. Confundir a posição de tratamento com a deformidade que se quer prevenir inverte a resposta.",
+        "C": "Recurvato pertence ao plano sagital e tem associação importante com a parada do crescimento anterior da fise proximal, sobretudo após lesões da tuberosidade ou da própria fise. O enunciado especifica metáfise proximal: a sequela característica nesse contexto é valgo, não a deformidade de uma lesão fisária anterior.",
+        "D": "Antecurvato descreve outra angulação no plano sagital. A simples proximidade da fratura com o joelho não determina essa direção; a complicação tardia reconhecida para a fratura metafisária proximal é o valgo de Cozen, no plano frontal, relacionado à evolução do crescimento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN.",
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+          "metafise-proximal-a-fratura-de-cozen-d5af459b",
+          "metafise-proximal-a-fratura-de-cozen-663056eb",
+          "metafise-proximal-a-fratura-de-cozen-06e1bebc"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "1bfb362076f079ba1eddc8ca2d54483c10a941fb1eaff86bfdf52504fb7c9525"
+      },
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-5c26d8e8",
+          "complicacoes-58867aa4"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "3d132e6f115759eafba30d89cd7095c654d34e93294755d18b367242cd562c0b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0601": {
+    "questaoSha256": "d6cd0fb8e251cf16e716781a59c195b45f9574bccfc5800279d84ed6aa1e16eb",
+    "comentarioAnteriorSha256": "74905ef5dde7ebf8929c78b807dc1a2f5a11d4cc892f156c7fee7ed0fe6f99ff",
+    "comentario": {
+      "conceito": "A interposição da pata de ganso é uma das explicações propostas para a evolução em **valgo** da fratura metafisária proximal da tíbia. A pata de ganso, o periósteo e o colateral medial podem ficar presos do lado medial do foco e impedir uma redução satisfatória. Quando não se consegue obter ou manter a redução, o resumo descreve exploração por via anteromedial para resolver esse bloqueio (Rockwood crianças, 10ª ed., cap. 29, O tratamento).\n\nÉ útil separar essa dificuldade inicial da sequela tardia. O valgo de Cozen pode surgir mesmo em fraturas sem desvio, e as hipóteses incluem tanto interposição quanto mudanças da contenção e do crescimento da fise medial. A recorrência após osteotomia e a ocorrência sem desvio inicial apoiam o crescimento fisário assimétrico como causa da maioria dos casos. Assim, a pergunta associa uma estrutura a uma complicação característica, mas não prova que todo valgo tenha sido causado por um tecido preso.\n\nA deformidade fica evidente meses depois e pode progredir antes de corrigir espontaneamente. O acompanhamento e a orientação da família fazem parte do tratamento desde a primeira consulta. Não se indica osteotomia precoce somente pela aparição de valgo, porque a história natural inclui correção e a osteotomia na criança com crescimento restante pode recidivar.\n\n**O eixo da pergunta é angular, não a velocidade de união nem o comprimento do osso.** Encurtamento e atraso de consolidação são problemas diferentes e não substituem o valgo na associação clássica com a interposição medial.",
+      "correta": "**Correta: C (a deformidade em valgo).** É a sequela característica da fratura metafisária proximal e aparece na lista de possíveis consequências dos mecanismos mediais, incluindo interposição da pata de ganso. A explicação deve manter a nuance: interposição é uma causa proposta e pode impedir redução, enquanto o valgo tardio também pode surgir por crescimento assimétrico sem bloqueio demonstrado.",
+      "incorretas": {
+        "A": "Encurtamento é uma alteração de comprimento, e não a deformidade angular que caracteriza o fenômeno de Cozen. A hipótese de estímulo assimétrico da fise medial explica uma mudança de eixo; não autoriza substituir o valgo por encurtamento como consequência típica da associação perguntada.",
+        "B": "Varo é a direção contrária à deformidade tardia descrita. O bloqueio medial da redução e as hipóteses de crescimento medial estão relacionados ao valgo. O molde em varo usado no tratamento procura contrariar essa tendência, sem transformar varo na sequela habitual.",
+        "D": "A interposição pode impedir a redução, mas isso não equivale a afirmar que sua complicação tardia característica seja atraso de consolidação. A pergunta cobra a evolução do eixo, cujo nome é valgo de Cozen. Não se deve converter automaticamente dificuldade de redução em uma afirmação sobre a velocidade de união óssea."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+          "metafise-proximal-a-fratura-de-cozen-663056eb",
+          "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+          "metafise-proximal-a-fratura-de-cozen-d5af459b"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "17bcbe1e8c781c3212c0bd0b236bdf5de0a9087875ddcfa78dce401f7783cd26"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

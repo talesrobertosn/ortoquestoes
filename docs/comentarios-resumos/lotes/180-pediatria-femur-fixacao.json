@@ -1,0 +1,280 @@
+{
+  "pediatria-0623": {
+    "questaoSha256": "77be342aa7c1cca11df718a57e41bb709575b7949b9711af85a6b15464f8330b",
+    "comentarioAnteriorSha256": "a0b393fb79c23de850db25de1c6f8e2ded8731feb22f8ae3451acd010fb9da47",
+    "comentario": {
+      "conceito": "Na fixação elástica do fêmur infantil, duas hastes pré-curvadas trabalham em conjunto. Cada haste deve ter diâmetro próximo de **40% do menor diâmetro do canal**, de modo que o conjunto corresponda a cerca de **80% do diâmetro do istmo**. É isso que sustenta a faixa de 70% a 80% cobrada, e não 40% para as duas somadas (Rockwood crianças, 10ª ed., cap. 25, As hastes elásticas).\n\nA conta é linear: canal de 10 mm pede duas hastes de aproximadamente 4 mm cada. Esse exemplo é didático e não uma medida do paciente. Somar os diâmetros não significa calcular uma porcentagem de área transversal; a regra operatória usa a relação entre diâmetro da haste e diâmetro do canal.\n\nO diâmetro sozinho também não define uma boa montagem. As duas hastes devem ser iguais, com curvas opostas, ápice no nível do foco e entradas medial e lateral na mesma altura. A pré-tensão e o contato com as corticais ajudam a resistir a varo, valgo e torção. Hastes muito finas não oferecem o mesmo suporte, e preencher quase todo o canal não é o objetivo de uma montagem elástica.\n\nMesmo uma técnica adequada tem indicações: o paciente ideal tem entre 5 e 11 anos, menos de 50 kg, fratura estável no comprimento e localização nos 80% centrais da diáfise. Uma montagem elástica não se torna rígida apenas porque seus diâmetros foram bem escolhidos.",
+      "correta": "**Correta: C (70% e 80%).** O resumo orienta duas hastes, cada uma com 0,4 do menor diâmetro do canal. Juntas, correspondem a aproximadamente 80%, valor contido na faixa oferecida. A porcentagem se refere à regra de diâmetros usada para dimensionar o conjunto; não é uma medida de área ocupada.",
+      "incorretas": {
+        "A": "A faixa de 30% a 40% aproxima o dimensionamento de uma única haste, não do par. Se fosse atribuída ao conjunto, resultariam implantes muito menores do que os dois de 40% recomendados, reduzindo o suporte mecânico da montagem.",
+        "B": "Um conjunto de 50% a 60% fica abaixo da relação recomendada para duas hastes iguais de cerca de 40% cada. O objetivo não é apenas conseguir introduzir os implantes: seu diâmetro e suas curvas precisam gerar suporte contra angulação e torção.",
+        "D": "A proposta não é preencher 90% a 100% do canal com o par. A técnica se baseia em duas hastes pré-curvadas, dimensionadas em torno de 40% cada, que trabalham elasticamente. Aumentar o preenchimento até quase o total não substitui o princípio de pré-tensão nem corresponde à regra do capítulo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: As hastes elásticas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "As hastes elásticas"
+        ],
+        "blocos": [
+          "as-hastes-elasticas-67872f88",
+          "as-hastes-elasticas-8c6022b4"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "a41710612a2ed854747a9da2a0e9e7f35bad71c744d9bf6111af4ed74d089e5e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0647": {
+    "questaoSha256": "26d232937b63fe71d3082e73f5d59f3dfbb1d7466791655d303469a1510d5bc3",
+    "comentarioAnteriorSha256": "276eefb2a2817ed0c03249e8fedcf717b63edb0d160065d77ca577dd4242fa0c",
+    "comentario": {
+      "conceito": "A criança tem oito anos, mas dois dados afastam a escolha automática de hastes elásticas: **60 kg e fratura multifragmentada**. A idade está na faixa escolar habitual das hastes flexíveis; o peso e a instabilidade no comprimento não estão no perfil ideal. A decisão precisa combinar os três fatores (Rockwood crianças, 10ª ed., cap. 25, As hastes elásticas).\n\nUma fratura cominuta perde o apoio entre as corticais necessário para manter o comprimento. Como as hastes flexíveis não produzem fixação rígida, a montagem pode não controlar adequadamente uma fratura que encurta sob carga, especialmente em um paciente pesado. O resumo descreve maior probabilidade de mau resultado acima de cerca de 49 kg, sem transformar esse corte em uma explicação isolada de toda falha.\n\nA **placa submuscular em ponte** é uma indicação expressa para fraturas instáveis no comprimento na idade escolar. A ponte estabiliza os segmentos principais preservando a irrigação dos fragmentos intermediários. O objetivo não é expor e montar cada fragmento da cominuição, mas recuperar comprimento e alinhamento com uma construção apropriada ao padrão (seção Placa submuscular e fixador externo).\n\nEscolher uma haste rígida pela maior robustez sem conferir a entrada seria outro erro. A fossa piriforme ameaça a irrigação da cabeça femoral na criança com fise aberta; peso alto não elimina esse risco anatômico. Entre as opções dadas, a placa submuscular reúne a indicação para o padrão e a faixa etária sem exigir essa entrada perigosa.",
+      "correta": "**Correta: B (placa submuscular).** O padrão multifragmentado é instável no comprimento, e a criança pesa mais que o perfil ideal das hastes flexíveis. A placa em ponte é uma indicação descrita para essa combinação na idade escolar, mantendo os segmentos principais e preservando a irrigação da cominuição.",
+      "incorretas": {
+        "A": "O gesso imediato tem sua indicação mais típica na criança pequena, em fratura isolada e com encurtamento aceitável. Aos oito anos, com 60 kg e cominuição, a questão traz exigências de estabilidade diferentes: escolher o gesso apenas porque o paciente ainda é criança ignora o padrão instável e o peso.",
+        "C": "A idade de oito anos, isoladamente, favoreceria considerar hastes flexíveis. Entretanto, o método é ideal para fraturas estáveis no comprimento e pacientes abaixo de 50 kg. A combinação de cominuição com 60 kg aumenta a preocupação com perda de comprimento e alinhamento; não basta cumprir o critério etário.",
+        "D": "A entrada piriforme deve ser evitada com fise aberta pelo risco de necrose da cabeça femoral e lesão do crescimento proximal. Precisar de uma fixação mais robusta não autoriza usar essa entrada. A alternativa não oferece a haste de entrada trocantérica lateral discutida para pacientes maiores."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: As hastes elásticas; Placa submuscular e fixador externo; A haste rígida e a cabeça femoral; O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "As hastes elásticas",
+          "Placa submuscular e fixador externo",
+          "A haste rígida e a cabeça femoral",
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "as-hastes-elasticas-67872f88",
+          "as-hastes-elasticas-4cd941c9",
+          "placa-submuscular-e-fixador-externo-09391313",
+          "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+          "o-tratamento-pela-idade-7049f92d"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "5885d70297c6235c91c683a6ab83578ea2dd28ce65bd4444f587c11b0ec917b9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0709": {
+    "questaoSha256": "90fc8bfefeedc7f0c7d4fc54fbd999f1360efd3cb4c92ad38bc8453e17afa543",
+    "comentarioAnteriorSha256": "94de2cd8adac640d81a195b3f406dd907df778b5d53744664ffe8e1eb7172193",
+    "comentario": {
+      "conceito": "A entrada piriforme de uma haste rígida no adolescente ameaça uma estrutura que não pode ser avaliada apenas pela consolidação da diáfise: **a irrigação da cabeça femoral**. A complicação mais grave cobrada é a necrose avascular, isto é, morte do tecido ósseo por perda de suprimento sanguíneo (Rockwood crianças, 10ª ed., cap. 25, A haste rígida e a cabeça femoral).\n\nO resumo descreve a artéria cervical ascendente lateral como principal fonte da epífise, sem vasos transfisários que compensem sua lesão. Esse tronco cruza a cápsula na incisura trocantérica e permanece vulnerável até a maturidade. Por isso, idade cronológica de adolescente não é garantia de segurança para uma entrada piriforme.\n\nA entrada pode permitir fixar bem a fratura e, ainda assim, causar uma complicação proximal grave. Esse é o motivo para separar êxito mecânico da osteossíntese e preservação vascular do quadril. O capítulo também menciona alterações do crescimento proximal e fratura do colo, mas a alternativa que representa a ameaça mais grave à cabeça é a necrose.\n\nAs hastes modernas de entrada trocantérica lateral reduziram muito esse risco. A técnica limita a dissecção à face lateral do trocânter, evita a cápsula e usa implante e fresado menores. A lição não é abandonar toda haste rígida no adolescente, e sim escolher a entrada e a técnica compatíveis com a anatomia em crescimento.",
+      "correta": "**Correta: D (necrose avascular da cabeça femoral).** A entrada piriforme pode lesar a principal irrigação epifisária e produzir necrose, mesmo que o foco diafisário consolide. A vulnerabilidade vascular persiste até a maturidade e explica por que se prefere a entrada trocantérica lateral quando uma haste rígida está indicada.",
+      "incorretas": {
+        "A": "Coxa valga é uma alteração do alinhamento proximal do fêmur e pertence ao grupo de problemas de crescimento que também exige atenção. Não é, porém, a ameaça vascular central dessa entrada. A questão pede a complicação mais grave: a perda de irrigação com necrose da cabeça femoral.",
+        "B": "Subluxação descreve perda parcial da congruência do quadril. Não é o evento que explica a contraindicação vascular da entrada piriforme descrita no capítulo. O risco decisivo está no trajeto dos vasos que nutrem a epífise, cuja lesão leva à necrose.",
+        "C": "Lesão do crescimento proximal é uma preocupação real, e não deve ser negada para defender o gabarito. Contudo, o fechamento precoce da fise não substitui a necrose avascular como a complicação mais grave cobrada. A principal razão anatômica apresentada é a vulnerabilidade da irrigação da cabeça."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: A haste rígida e a cabeça femoral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "A haste rígida e a cabeça femoral"
+        ],
+        "blocos": [
+          "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+          "a-haste-rigida-e-a-cabeca-femoral-01669b63"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "96655d09daf65cc2f0ca18b37f5db4a635dc6fd9fde0f39de6ba4d5f78807d1a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0844": {
+    "questaoSha256": "cd6cdf1692b65dc80c0dd70f5278d456362d2469a46c465c5e89da24d281bb4a",
+    "comentarioAnteriorSha256": "f00e6987d21e4c7b56f56d2ede4d2bd7a112453ce729d7999cd24798ec5e8cd1",
+    "comentario": {
+      "conceito": "A presença de uma fise aberta não proíbe toda fixação intramedular, mas torna decisivo **por onde a haste entra**. A haste rígida pela fossa piriforme deve ser evitada de modo absoluto nesse contexto, pela ameaça à irrigação da cabeça femoral e ao crescimento proximal (Rockwood crianças, 10ª ed., cap. 25, A haste rígida e a cabeça femoral).\n\nO resumo descreve uma artéria cervical ascendente lateral vulnerável junto à incisura trocantérica, principal fonte epifisária e sem compensação transfisária. Lesá-la pode produzir necrose da cabeça, uma complicação distinta de não conseguir manter a redução diafisária. O risco vascular não desaparece apenas porque o paciente já tem tamanho de adulto.\n\nA alternativa anatômica é a entrada trocantérica lateral, associada a dissecção limitada à face lateral, sem chegar à cápsula, e uso do menor implante e fresado adequados. O capítulo a apresenta como a entrada moderna da haste rígida no paciente maior.\n\nOutros métodos também têm seu lugar. A placa submuscular é útil em fraturas instáveis no comprimento e perto das extremidades da diáfise. As hastes flexíveis dependem de idade, peso e estabilidade; resultados piores em adolescentes maiores não equivalem a uma proibição absoluta em toda fise aberta. **Indicação limitada e contraindicação por uma entrada específica são conceitos diferentes.**",
+      "correta": "**Correta: D (hastes rígidas com entrada na fossa piriforme).** É a entrada expressamente contraindicada com fise aberta por risco vascular da cabeça femoral e alteração do crescimento proximal. Não se trata de uma condenação de toda haste rígida: a via trocantérica lateral é a alternativa descrita para os pacientes maiores.",
+      "incorretas": {
+        "A": "Placas submusculares são uma opção válida na idade escolar e no adolescente, sobretudo nas fraturas instáveis no comprimento e nos terços proximal e distal. A fise aberta exige planejamento que a respeite, mas não constitui, por si só, contraindicação a esse método.",
+        "B": "Hastes flexíveis têm perfil ideal mais restrito: 5 a 11 anos, menos de 50 kg e padrão estável no comprimento. Fora desse perfil, a chance de mau resultado aumenta. Isso é diferente da contraindicação anatômica da entrada piriforme; a tabela ainda inclui hastes flexíveis entre as opções dos pacientes maiores.",
+        "C": "A entrada trocantérica, preferencialmente lateral conforme a técnica do capítulo, procura reduzir a ameaça vascular da via piriforme. É a opção de haste rígida descrita para o adolescente e não deve ser excluída só por haver fise aberta. O cuidado está na localização da entrada, na dissecção e no dimensionamento do implante."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: A haste rígida e a cabeça femoral; As hastes elásticas; Placa submuscular e fixador externo; O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "A haste rígida e a cabeça femoral",
+          "As hastes elásticas",
+          "Placa submuscular e fixador externo",
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+          "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+          "as-hastes-elasticas-67872f88",
+          "as-hastes-elasticas-4cd941c9",
+          "placa-submuscular-e-fixador-externo-09391313",
+          "o-tratamento-pela-idade-72e9cb2f"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "dab37fd7d507b868793d6b46b2365f092be4511e24de203ea81d5595b2e92280"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0863": {
+    "questaoSha256": "c556c1da335ee30dba9ec2e9b176525fe59667c509a91a697340549f575f1b67",
+    "comentarioAnteriorSha256": "196525b8ad2596a079e9c47d6603c15676629a0e27d6552ec4e11da437e1a2ba",
+    "comentario": {
+      "conceito": "A criança tem **sete anos**: a linha que deve ser aplicada é a de **6 a 10 anos da Tabela 25-2**, com até **10 graus de varo ou valgo, 15 graus de angulação anterior ou posterior e 15 mm de encurtamento**. É necessário conferir os três parâmetros, não reconhecer apenas um número familiar (Rockwood crianças, 10ª ed., cap. 25, A tabela de angulação aceitável).\n\nOs limites traduzem a capacidade de remodelação na idade e em cada plano. O plano sagital admite mais angulação que o coronal porque a remodelação é melhor no plano de movimento das articulações vizinhas. Por isso, 15 graus anteriores não autorizam aceitar os mesmos 15 graus de varo ou valgo nessa idade.\n\nO encurtamento é medido em milímetros nessa tabela. Quinze milímetros correspondem a 1,5 cm; não devem ser confundidos com 15 graus nem com os 20 mm aceitos na linha de 2 a 5 anos. O crescimento pode compensar parte da discrepância, mas não apaga os limites específicos da faixa etária.\n\nO enunciado já informa a decisão pelo gesso. A pergunta não pede escolher a melhor fixação para toda fratura espiral, e sim avaliar o alinhamento aceitável depois do tratamento conservador realizado. A resposta correta deve permanecer dentro da linha de sete anos em todos os itens.",
+      "correta": "**Correta: E (varo de 10 graus, anterior de 15 graus e encurtamento de 15 mm).** Os três valores coincidem com a linha de 6 a 10 anos da Tabela 25-2. O maior limite sagital não deve ser transferido ao coronal, e o encurtamento de 15 mm precisa ser conferido separadamente.",
+      "incorretas": {
+        "A": "Os 10 graus de varo estão no limite correto. Entretanto, 20 graus anteriores ultrapassam os 15 permitidos nessa faixa, e 25 mm de encurtamento superam os 15 mm da tabela. Uma medida aceitável não torna aceitável o conjunto.",
+        "B": "A combinação de 15 graus coronais, 20 sagitais e 20 mm corresponde aos limites apresentados para crianças de 2 a 5 anos. Aos sete anos, a tolerância é menor nos três parâmetros; usar a linha de uma criança mais nova é o erro desta alternativa.",
+        "C": "Os 15 graus anteriores são compatíveis com a faixa etária. Já os 20 graus de varo excedem o limite coronal de 10, e os 20 mm excedem o encurtamento de 15 mm. Não se deve julgar o resultado apenas pelo plano em que a remodelação é melhor.",
+        "D": "Os 10 graus anteriores e 10 mm de encurtamento seriam mais restritivos que os limites da tabela, mas o valgo de 20 graus ultrapassa o máximo coronal de 10. Dois parâmetros pequenos não compensam uma deformidade excessiva em outro plano."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-818fa3dc",
+          "o-tratamento-pela-idade-f93be186"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "0824fcfa8168461f9853b84039d9eb897772809a046fcd230d4f53ac1caa3861"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0907": {
+    "questaoSha256": "b3c01eb9a7be86fcbb740ae12c585d3ae3f4de66a4100df63bad78073d2611f3",
+    "comentarioAnteriorSha256": "dd92a0a30666fcf28e1f707598b4fa3fdfb9531b2fdfe8741aa37c6cf46100d9",
+    "comentario": {
+      "conceito": "A idade de sete anos sugere hastes flexíveis em muitas fraturas do fêmur, mas o enunciado acrescenta o dado que muda a decisão: **oblíqua longa instável**. O traço longo pode deslizar e encurtar; falta estabilidade no comprimento. O capítulo separa a oblíqua curta e a transversa, estáveis, da oblíqua longa e da cominuta, instáveis (Rockwood crianças, 10ª ed., cap. 25, Epidemiologia e diagnóstico).\n\nHastes elásticas são uma fixação flexível, com pré-tensão e calo abundante, adequada especialmente à fratura estável da diáfise média. Não se deve esperar delas o mesmo controle de comprimento de uma construção mais estável só porque a idade está na faixa ideal.\n\nA **placa submuscular em ponte** é indicada justamente nas fraturas instáveis no comprimento na idade escolar. Ela conecta os segmentos principais e preserva a irrigação dos fragmentos, com obtenção do comprimento antes dos parafusos. Essa relação entre padrão e método sustenta a escolha, sem precisar atribuir uma falha inevitável a toda haste flexível.\n\nO gesso é predominante na criança menor, e uma haste rígida de entrada piriforme introduziria um risco diferente e evitável à cabeça femoral. A resposta resulta da combinação entre idade e estabilidade, não de uma regra de que toda criança de sete anos recebe o mesmo implante.",
+      "correta": "**Correta: D (placa submuscular em ponte).** É a indicação descrita para a oblíqua longa instável no comprimento na criança escolar. A montagem procura manter comprimento e alinhamento preservando a irrigação, sem depender do apoio cortical que uma fratura longa e deslizante não oferece.",
+      "incorretas": {
+        "A": "As hastes flexíveis são predominantes na idade escolar quando a fratura é estável no comprimento. Nesta questão, o traço oblíquo longo é explicitamente instável: cumprir a faixa etária não resolve a tendência a deslizar e encurtar. O método não é rígido, e o padrão é uma razão para preferir a placa.",
+        "B": "O gesso tem papel importante no pré-escolar, mas não é a escolha apresentada pelo capítulo para esta fratura instável de uma criança escolar. O problema não é só imobilizar o membro: é manter comprimento e alinhamento apesar do traço longo, que pede uma construção mais estável.",
+        "C": "A entrada piriforme deve ser evitada em criança com fise aberta pelo risco de necrose da cabeça e alteração do crescimento proximal. Precisar controlar uma fratura instável não justifica ameaçar a vascularização do quadril; a placa em ponte oferece a opção apropriada entre as alternativas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Epidemiologia e diagnóstico; As hastes elásticas; Placa submuscular e fixador externo; A haste rígida e a cabeça femoral; O tratamento pela idade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "Epidemiologia e diagnóstico",
+          "As hastes elásticas",
+          "Placa submuscular e fixador externo",
+          "A haste rígida e a cabeça femoral",
+          "O tratamento pela idade"
+        ],
+        "blocos": [
+          "epidemiologia-e-diagnostico-efc58237",
+          "as-hastes-elasticas-67872f88",
+          "placa-submuscular-e-fixador-externo-09391313",
+          "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+          "o-tratamento-pela-idade-7049f92d"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "a9569d3bcc52cec3b041f5b730b02a15c41b59566eca18830d8e19aea50bc46e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0912": {
+    "questaoSha256": "6a526d84ad0703254d7571c8d90e233bb162a38a1bdd89f9b1a8f9760883abe0",
+    "comentarioAnteriorSha256": "da24172eed371538e54e594423ac4ffb8aafc1c3af0632e6c42001d2f84ea2b1",
+    "comentario": {
+      "conceito": "De seis meses a cinco anos, uma fratura diafisária isolada do fêmur com menos de 2 cm de encurtamento costuma ser tratada sem fixação interna. O **gesso pelvipodálico imediato** é a opção típica do pré-escolar; a tabela do capítulo também inclui tração seguida de gesso nessa fase da infância (Rockwood crianças, 10ª ed., cap. 25, O tratamento pela idade).\n\nA escolha precisa considerar mais que a idade. Edema maciço da coxa e lesões associadas que impeçam o gesso mudam o plano. A estabilidade também importa: na telescopagem de Thompson, compressão axial suave que produza mais de 3 cm de encurtamento indica tração em vez de gesso imediato. Não se deve confundir esse teste dinâmico com a medida inicial menor que 2 cm fornecida na questão.\n\nO gesso exige acompanhamento do alinhamento e cuidados da família com transporte, pele e higiene. Essas dificuldades são reais, mas não tornam placa ou haste a primeira opção de toda criança pequena. O resumo reserva fixação interna ou externa como exceção abaixo dos quatro anos quando os resultados conservadores são equivalentes.\n\nPavlik é a preferência do lactente com menos de seis meses; hastes flexíveis ganham protagonismo na idade escolar. A fronteira etária não funciona como uma troca automática no aniversário, mas a combinação específica de idade e pequeno encurtamento torna o tratamento gessado a melhor resposta entre as opções.",
+      "correta": "**Correta: D (aparelho gessado imediato ou tração seguida de aparelho gessado).** Reúne as opções conservadoras descritas para essa faixa etária. Com encurtamento inicial menor que 2 cm e sem impedimentos adicionais, o gesso imediato é a escolha típica; a tração antes do gesso pertence ao mesmo grupo de tratamento e pode ser necessária conforme estabilidade e contexto.",
+      "incorretas": {
+        "A": "Pavlik é a preferência antes dos seis meses, quando o periósteo espesso e o posicionamento em flexão e abdução favorecem o manejo do lactente. O enunciado começa nessa fronteira e se estende até cinco anos: para o pré-escolar com pequeno encurtamento, o gesso é a estratégia típica, não o uso universal de Pavlik.",
+        "B": "Hastes flexíveis predominam na idade escolar, sobretudo dos 5 aos 11 anos, em fraturas estáveis e pacientes com peso adequado. Podem existir indicações selecionadas na transição de idade, mas não são a recomendação geral para toda a faixa de seis meses a cinco anos com menos de 2 cm de encurtamento.",
+        "C": "Placa bloqueada não é a primeira escolha apenas por haver uma fratura do fêmur. O capítulo reserva placas para padrões e situações específicas e destaca usos do bloqueio em lesão patológica, osteopenia grave ou cominuição importante. Nenhuma dessas condições foi apresentada; o pequeno encurtamento no pré-escolar favorece a opção conservadora."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: O tratamento pela idade; Placa submuscular e fixador externo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "O tratamento pela idade",
+          "Placa submuscular e fixador externo"
+        ],
+        "blocos": [
+          "o-tratamento-pela-idade-7049f92d",
+          "o-tratamento-pela-idade-74c5d484",
+          "o-tratamento-pela-idade-46752ea0",
+          "o-tratamento-pela-idade-72e9cb2f",
+          "o-tratamento-pela-idade-e1cfc4a6",
+          "placa-submuscular-e-fixador-externo-09391313"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "c41d406b22cf9b32914b093636fe1e8e9383286d319f362dfafdb9d6f7cd6ac7"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 615,
+  "pendente": 575,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 388,
+  "pendente-fonte": 393,
   "pendente-inspecao-imagem": 64,
-  "revisada": 1458
+  "revisada": 1493
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -188,10 +188,10 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 15,
+    "pendente": 11,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 1,
-    "revisada": 47
+    "revisada": 51
    }
   },
   "rockwood10-58-femur-distal": {
@@ -285,50 +285,50 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 75,
+    "pendente": 67,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 4,
-    "revisada": 50
+    "revisada": 58
    }
   },
   "rockwoodcriancas10-25-diafise-femur": {
    "titulo": "Fratura da diáfise do fêmur na criança",
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
-    "pendente": 102,
-    "pendente-fonte": 1,
+    "pendente": 69,
+    "pendente-fonte": 6,
     "pendente-inspecao-imagem": 3,
-    "revisada": 1
+    "revisada": 29
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
    "titulo": "Fratura da fise distal do fêmur na criança",
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
-    "pendente": 114,
-    "pendente-fonte": 1,
+    "pendente": 77,
+    "pendente-fonte": 6,
     "pendente-inspecao-imagem": 3,
-    "revisada": 1
+    "revisada": 33
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
-    "pendente": 111,
-    "pendente-fonte": 1,
+    "pendente": 81,
+    "pendente-fonte": 6,
     "pendente-inspecao-imagem": 3,
-    "revisada": 1
+    "revisada": 26
    }
   },
   "rockwoodcriancas10-29-diafise-tibia": {
    "titulo": "Fraturas da tíbia e da fíbula na criança",
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
-    "pendente": 102,
-    "pendente-fonte": 1,
+    "pendente": 72,
+    "pendente-fonte": 6,
     "pendente-inspecao-imagem": 3,
-    "revisada": 1
+    "revisada": 26
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -33427,8 +33427,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Os resumos25/27/29 foram lidos integralmente. O corpo27 descreve mecanismos e avulsão da tuberosidade no adolescente, e29 situa a metáfise entre3 e6anos, mas não fornece os resultados específicos de MUBARAK2009: médias etárias dos grupos Salter-HarrisI/II eIII/IV, idade média metafisária nem a distribuição flexo-avulsiva acima de13anos. Não substituir resultados do estudo por faixa típica geral, nem usar a nota contextual da questão ou comentário antigo como evidência. Falta a tabela ou texto primário do estudo com cada grupo, média e mecanismo para analisar A–E. Gabarito E preservado; sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33452,7 +33452,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "6c786e62a5e8cac253a29dd7ad27d096d2894dd933f8ccf6ca76bf53fd337814"
+   "questaoSha256": "6c786e62a5e8cac253a29dd7ad27d096d2894dd933f8ccf6ca76bf53fd337814",
+   "pendencia": "Os resumos25/27/29 foram lidos integralmente. O corpo27 descreve mecanismos e avulsão da tuberosidade no adolescente, e29 situa a metáfise entre3 e6anos, mas não fornece os resultados específicos de MUBARAK2009: médias etárias dos grupos Salter-HarrisI/II eIII/IV, idade média metafisária nem a distribuição flexo-avulsiva acima de13anos. Não substituir resultados do estudo por faixa típica geral, nem usar a nota contextual da questão ou comentário antigo como evidência. Falta a tabela ou texto primário do estudo com cada grupo, média e mecanismo para analisar A–E. Gabarito E preservado; sem selo."
   },
   "pediatria-0520": {
    "tema": "pediatria",
@@ -34031,7 +34032,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34046,7 +34047,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "1173b21ca2a607a9e968c339aa9733062b78df5908ec7fb0492a4b6944261554"
+   "questaoSha256": "1173b21ca2a607a9e968c339aa9733062b78df5908ec7fb0492a4b6944261554",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "A complicação principal: o distúrbio do crescimento"
+      ],
+      "blocos": [
+       "a-complicacao-principal-o-disturbio-do-crescimen-a1527f81",
+       "a-complicacao-principal-o-disturbio-do-crescimen-a2ab9a35",
+       "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "f7c665d4a88cf986f233bd0fd55a4972d6889ca538f4c31065fa50c675b31a22"
+     }
+    ],
+    "questaoSha256": "1173b21ca2a607a9e968c339aa9733062b78df5908ec7fb0492a4b6944261554",
+    "comentarioSha256": "23574ec25fad1f1d70f1bb9036c59fae168d333c29328f9b52133937db8f3be5"
+   }
   },
   "pediatria-0539": {
    "tema": "pediatria",
@@ -34207,7 +34233,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34233,7 +34259,35 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "710114f09293b7632ba6e39b610d81979484570aa970319ad9d3d31f9f29b289"
+   "questaoSha256": "710114f09293b7632ba6e39b610d81979484570aa970319ad9d3d31f9f29b289",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+       "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+       "metafise-proximal-a-fratura-de-cozen-663056eb",
+       "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+       "metafise-proximal-a-fratura-de-cozen-d5af459b",
+       "metafise-proximal-a-fratura-de-cozen-06e1bebc"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "8f1f8be14a74e01b9b012a8bf04d7820471ea0044cd260bb20c6c60982fdd463"
+     }
+    ],
+    "questaoSha256": "710114f09293b7632ba6e39b610d81979484570aa970319ad9d3d31f9f29b289",
+    "comentarioSha256": "13af28b99246c90a9c60adbddec65b6b3a785a840e89158e70b76f1b6e179290"
+   }
   },
   "pediatria-0547": {
    "tema": "pediatria",
@@ -34410,7 +34464,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34429,7 +34483,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "3307d0f41de5c7c3169b4f6800f760ec72dd07a5d39be4594fe666b845de07c7"
+   "questaoSha256": "3307d0f41de5c7c3169b4f6800f760ec72dd07a5d39be4594fe666b845de07c7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "Os músculos decidem o desvio"
+      ],
+      "blocos": [
+       "os-musculos-decidem-o-desvio-45c94342",
+       "os-musculos-decidem-o-desvio-8252e1d5"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "e5c3936ab37928294aeb827d125317670c2a7d5950be13ace10e14646ca645da"
+     }
+    ],
+    "questaoSha256": "3307d0f41de5c7c3169b4f6800f760ec72dd07a5d39be4594fe666b845de07c7",
+    "comentarioSha256": "6be333406c6977979955317ca9bd00b1bf211dd887137723cc7add713df7384d"
+   }
   },
   "pediatria-0557": {
    "tema": "pediatria",
@@ -34455,7 +34533,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34470,7 +34548,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "52ca68c30ee2d4e3d9808b39628368fd6ce74258544104afbd5bf4847828fe22"
+   "questaoSha256": "52ca68c30ee2d4e3d9808b39628368fd6ce74258544104afbd5bf4847828fe22",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Os tipos de SALTER-HARRIS"
+      ],
+      "blocos": [
+       "os-tipos-de-salter-harris-77cf0c10",
+       "os-tipos-de-salter-harris-554eb4be"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "6d9496fad1fe6fb2888dcfad776225ba9d9cf45035318d9e7f0d6d33af9a74c9"
+     }
+    ],
+    "questaoSha256": "52ca68c30ee2d4e3d9808b39628368fd6ce74258544104afbd5bf4847828fe22",
+    "comentarioSha256": "ac17e3adf19ca9ec0188b9e49e5fb5cd556bc0b810cc3c9c834ceb83f46763d6"
+   }
   },
   "pediatria-0560": {
    "tema": "pediatria",
@@ -34570,7 +34672,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34588,7 +34690,34 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "15fb7eb884efa3acfd7c87288c4b39ca4295f81f2c1178a33e7e0a5e28d22f29"
+   "questaoSha256": "15fb7eb884efa3acfd7c87288c4b39ca4295f81f2c1178a33e7e0a5e28d22f29",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "O tratamento pela idade",
+       "Os músculos decidem o desvio"
+      ],
+      "blocos": [
+       "o-tratamento-pela-idade-74c5d484",
+       "o-tratamento-pela-idade-72e9cb2f",
+       "os-musculos-decidem-o-desvio-45c94342",
+       "o-tratamento-pela-idade-7049f92d"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "441b84d558be95bf8549fc42cff0bc3e87a776349078793689e026821955fbce"
+     }
+    ],
+    "questaoSha256": "15fb7eb884efa3acfd7c87288c4b39ca4295f81f2c1178a33e7e0a5e28d22f29",
+    "comentarioSha256": "91c8f5122dba3f8e2e4cd8a57e549edbfbd253fbfdcdc74cc40b7a043e357806"
+   }
   },
   "pediatria-0566": {
    "tema": "pediatria",
@@ -34906,7 +35035,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34932,7 +35061,49 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "60d12c560657484980408189e15083e8575b6962c6a841ded414c2573aa89d8c"
+   "questaoSha256": "60d12c560657484980408189e15083e8575b6962c6a841ded414c2573aa89d8c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+       "metafise-proximal-a-fratura-de-cozen-d5af459b",
+       "metafise-proximal-a-fratura-de-cozen-663056eb",
+       "metafise-proximal-a-fratura-de-cozen-06e1bebc"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "1bfb362076f079ba1eddc8ca2d54483c10a941fb1eaff86bfdf52504fb7c9525"
+     },
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-5c26d8e8",
+       "complicacoes-58867aa4"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "3d132e6f115759eafba30d89cd7095c654d34e93294755d18b367242cd562c0b"
+     }
+    ],
+    "questaoSha256": "60d12c560657484980408189e15083e8575b6962c6a841ded414c2573aa89d8c",
+    "comentarioSha256": "dcfbebb9b98037ca47e20eeaa61b555ceb94434344b03e15c42128376ed95d89"
+   }
   },
   "pediatria-0580": {
    "tema": "pediatria",
@@ -34941,8 +35112,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo27 define tiposI–IV de OGDEN e afirma queIII é o que mais se associa a lesão interna do joelho, mas não discrimina a frequência de lesão MENISCAL por tipo. A frequência global de menisco não prova a comparação específica entre os tipos; lesão interna inclui outras estruturas. A nota contextual relacionada à questão e o comentário antigo não substituem essa afirmação independente. Falta fonte que compare lesão meniscal nos tipos1,2,3,4 da versão adotada. Gabarito C preservado; sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -34959,7 +35130,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "9c1d847bfa062fb7b5f68a9c3db8ec2ce54a92e109557dccc5313ec80590d0c1"
+   "questaoSha256": "9c1d847bfa062fb7b5f68a9c3db8ec2ce54a92e109557dccc5313ec80590d0c1",
+   "pendencia": "O corpo27 define tiposI–IV de OGDEN e afirma queIII é o que mais se associa a lesão interna do joelho, mas não discrimina a frequência de lesão MENISCAL por tipo. A frequência global de menisco não prova a comparação específica entre os tipos; lesão interna inclui outras estruturas. A nota contextual relacionada à questão e o comentário antigo não substituem essa afirmação independente. Falta fonte que compare lesão meniscal nos tipos1,2,3,4 da versão adotada. Gabarito C preservado; sem selo."
   },
   "pediatria-0581": {
    "tema": "pediatria",
@@ -35173,7 +35345,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -35188,7 +35360,35 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "018c520dec9ac22ab2421923c03dd3f62f5fb62211c569041a1a69b53324dc10"
+   "questaoSha256": "018c520dec9ac22ab2421923c03dd3f62f5fb62211c569041a1a69b53324dc10",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "As lesões que vêm junto",
+       "O mecanismo: o ligamento é mais forte que a fise",
+       "Os tipos de SALTER-HARRIS"
+      ],
+      "blocos": [
+       "as-lesoes-que-vem-junto-8d3f421c",
+       "as-lesoes-que-vem-junto-1d593702",
+       "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-927b59dc",
+       "os-tipos-de-salter-harris-77cf0c10"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "99ea86e5144ab77df8712e3e0b48f8147f39b88f2fd29e90eba82f95f126145e"
+     }
+    ],
+    "questaoSha256": "018c520dec9ac22ab2421923c03dd3f62f5fb62211c569041a1a69b53324dc10",
+    "comentarioSha256": "d45772961487ca18ed0c73f198b452d422eff3277cd408945b6ba22b1aab713c"
+   }
   },
   "pediatria-0591": {
    "tema": "pediatria",
@@ -35197,7 +35397,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -35212,7 +35412,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-25-diafise-femur"
    ],
-   "questaoSha256": "3c36f26ae5aa983d54dd9b352597a5a41d7a13c970fd7de2a1ca805d14a10078"
+   "questaoSha256": "3c36f26ae5aa983d54dd9b352597a5a41d7a13c970fd7de2a1ca805d14a10078",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "Sequelas"
+      ],
+      "blocos": [
+       "sequelas-126a4cff",
+       "sequelas-8f3711db"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "2f4346883f92d302b18ac78b78e6d751a828bdbc7739ec3e538a3ee0ad907af0"
+     }
+    ],
+    "questaoSha256": "3c36f26ae5aa983d54dd9b352597a5a41d7a13c970fd7de2a1ca805d14a10078",
+    "comentarioSha256": "bd6fb4c0d6f8d85dcef20c5ab6db1563408d81876142d1c4fd457462ecc5383d"
+   }
   },
   "pediatria-0592": {
    "tema": "pediatria",
@@ -35548,7 +35772,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -35574,7 +35798,33 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "d6cd0fb8e251cf16e716781a59c195b45f9574bccfc5800279d84ed6aa1e16eb"
+   "questaoSha256": "d6cd0fb8e251cf16e716781a59c195b45f9574bccfc5800279d84ed6aa1e16eb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Metáfise proximal: a fratura de COZEN"
+      ],
+      "blocos": [
+       "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+       "metafise-proximal-a-fratura-de-cozen-663056eb",
+       "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+       "metafise-proximal-a-fratura-de-cozen-d5af459b"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "17bcbe1e8c781c3212c0bd0b236bdf5de0a9087875ddcfa78dce401f7783cd26"
+     }
+    ],
+    "questaoSha256": "d6cd0fb8e251cf16e716781a59c195b45f9574bccfc5800279d84ed6aa1e16eb",
+    "comentarioSha256": "c1b8f723a13034e47feb59c1f9d5f51cbd3b37ec5df25980d1f925fa257f5a15"
+   }
   },
   "pediatria-0602": {
    "tema": "pediatria",
@@ -35608,7 +35858,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -35633,7 +35883,37 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "8645b4aaaadf3a6c7dd8b886870586d915d008f731dfa3d1d3f9a3c5a8a93e76"
+   "questaoSha256": "8645b4aaaadf3a6c7dd8b886870586d915d008f731dfa3d1d3f9a3c5a8a93e76",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "O tratamento pela idade",
+       "A haste rígida e a cabeça femoral",
+       "Placa submuscular e fixador externo"
+      ],
+      "blocos": [
+       "o-tratamento-pela-idade-eb78b504",
+       "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+       "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+       "placa-submuscular-e-fixador-externo-09391313",
+       "placa-submuscular-e-fixador-externo-6e33859a",
+       "o-tratamento-pela-idade-f855f801"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "cdc72a611f682ba7b1f73a4b706bec8452d8dcfde5585224647b2581357d64a3"
+     }
+    ],
+    "questaoSha256": "8645b4aaaadf3a6c7dd8b886870586d915d008f731dfa3d1d3f9a3c5a8a93e76",
+    "comentarioSha256": "a9f918437a15530598c6150d7012214c2d2f5a2b40d73c7e070827d18eaaf9ad"
+   }
   },
   "pediatria-0604": {
    "tema": "pediatria",
@@ -35748,7 +36028,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -35763,7 +36043,34 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "173d9e2774517b97f1af3994d3e912ca7283118af4b61b73978035adabbd34fd"
+   "questaoSha256": "173d9e2774517b97f1af3994d3e912ca7283118af4b61b73978035adabbd34fd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "As lesões que vêm junto",
+       "O mecanismo: o ligamento é mais forte que a fise"
+      ],
+      "blocos": [
+       "as-lesoes-que-vem-junto-8d3f421c",
+       "as-lesoes-que-vem-junto-1d593702",
+       "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-72e0078c",
+       "as-lesoes-que-vem-junto-218946ce"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "bf9038808a760126ccea59737f3bf8fb33b24fae43cada3cc301ad0fb350f868"
+     }
+    ],
+    "questaoSha256": "173d9e2774517b97f1af3994d3e912ca7283118af4b61b73978035adabbd34fd",
+    "comentarioSha256": "fe7bf532a428993e48fe4630fd887db4b1bc2ebcd3f8a2f1e56ff5dfd8fce925"
+   }
   },
   "pediatria-0609": {
    "tema": "pediatria",
@@ -36065,7 +36372,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36092,7 +36399,32 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "6a88e5b382908db681030fcfd0b02d08e7aa01dfa2f71ec75812271a137fd90e"
+   "questaoSha256": "6a88e5b382908db681030fcfd0b02d08e7aa01dfa2f71ec75812271a137fd90e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "Os músculos decidem o desvio"
+      ],
+      "blocos": [
+       "os-musculos-decidem-o-desvio-45c94342",
+       "os-musculos-decidem-o-desvio-8f270943",
+       "os-musculos-decidem-o-desvio-8252e1d5"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "8742e251fce79130d620b1b99e8ac643e7ddf15d4da8451b08cef56a3ca454b6"
+     }
+    ],
+    "questaoSha256": "6a88e5b382908db681030fcfd0b02d08e7aa01dfa2f71ec75812271a137fd90e",
+    "comentarioSha256": "2883ed10737b0d77ca0df667430b9f878b7952d63826ac0a4c7d8f93fef991cd"
+   }
   },
   "pediatria-0620": {
    "tema": "pediatria",
@@ -36178,7 +36510,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36194,7 +36526,31 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur"
    ],
-   "questaoSha256": "77be342aa7c1cca11df718a57e41bb709575b7949b9711af85a6b15464f8330b"
+   "questaoSha256": "77be342aa7c1cca11df718a57e41bb709575b7949b9711af85a6b15464f8330b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "As hastes elásticas"
+      ],
+      "blocos": [
+       "as-hastes-elasticas-67872f88",
+       "as-hastes-elasticas-8c6022b4"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "a41710612a2ed854747a9da2a0e9e7f35bad71c744d9bf6111af4ed74d089e5e"
+     }
+    ],
+    "questaoSha256": "77be342aa7c1cca11df718a57e41bb709575b7949b9711af85a6b15464f8330b",
+    "comentarioSha256": "6a62cf789b7ec866653fcf9b6bd5e5a5cecb07654255155c943ab689f3010145"
+   }
   },
   "pediatria-0626": {
    "tema": "pediatria",
@@ -36516,7 +36872,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36531,7 +36887,35 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "0b370368fb63d26b1755f78ea4ba24411229170766ebd8185ff02293bc848952"
+   "questaoSha256": "0b370368fb63d26b1755f78ea4ba24411229170766ebd8185ff02293bc848952",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "O mecanismo: o ligamento é mais forte que a fise",
+       "Os tipos de SALTER-HARRIS",
+       "As lesões que vêm junto"
+      ],
+      "blocos": [
+       "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-72e0078c",
+       "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-927b59dc",
+       "os-tipos-de-salter-harris-77cf0c10",
+       "as-lesoes-que-vem-junto-d3373187"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "ce0ed536d567ac23bbc95f7beb24540ec2d3e3c4187764ce71875983325eaa81"
+     }
+    ],
+    "questaoSha256": "0b370368fb63d26b1755f78ea4ba24411229170766ebd8185ff02293bc848952",
+    "comentarioSha256": "155d56b4f2e3cba06dd3e17b0031ca8e966c1978b474df1822c8d35d66d75f19"
+   }
   },
   "pediatria-0636": {
    "tema": "pediatria",
@@ -36790,7 +37174,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36816,7 +37200,37 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "26d232937b63fe71d3082e73f5d59f3dfbb1d7466791655d303469a1510d5bc3"
+   "questaoSha256": "26d232937b63fe71d3082e73f5d59f3dfbb1d7466791655d303469a1510d5bc3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "As hastes elásticas",
+       "Placa submuscular e fixador externo",
+       "A haste rígida e a cabeça femoral",
+       "O tratamento pela idade"
+      ],
+      "blocos": [
+       "as-hastes-elasticas-67872f88",
+       "as-hastes-elasticas-4cd941c9",
+       "placa-submuscular-e-fixador-externo-09391313",
+       "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+       "o-tratamento-pela-idade-7049f92d"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "5885d70297c6235c91c683a6ab83578ea2dd28ce65bd4444f587c11b0ec917b9"
+     }
+    ],
+    "questaoSha256": "26d232937b63fe71d3082e73f5d59f3dfbb1d7466791655d303469a1510d5bc3",
+    "comentarioSha256": "8152fb3264fcde1d9c7a9e84f6823dd7c1b81d3a83e05499a06d704eda14c083"
+   }
   },
   "pediatria-0648": {
    "tema": "pediatria",
@@ -37075,7 +37489,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -37090,7 +37504,34 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "393d7e749517e62b5fdc0dc584c241aed6cb060110056ade2234a1a53bef5516"
+   "questaoSha256": "393d7e749517e62b5fdc0dc584c241aed6cb060110056ade2234a1a53bef5516",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Os tipos de SALTER-HARRIS",
+       "A complicação principal: o distúrbio do crescimento",
+       "Por que essa fise é diferente"
+      ],
+      "blocos": [
+       "os-tipos-de-salter-harris-77cf0c10",
+       "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+       "por-que-essa-fise-e-diferente-0111aad0"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "684fdc46a92c0fd7c1a6c7f9329cf21f618a9796dd98fc17910149e377afbe4d"
+     }
+    ],
+    "questaoSha256": "393d7e749517e62b5fdc0dc584c241aed6cb060110056ade2234a1a53bef5516",
+    "comentarioSha256": "ca5aae4191655965968078b94a53837cacf208d50d443d1ca2f1f01400279a14"
+   }
   },
   "pediatria-0655": {
    "tema": "pediatria",
@@ -38709,7 +39150,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -38733,7 +39174,31 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-25-diafise-femur"
    ],
-   "questaoSha256": "90fc8bfefeedc7f0c7d4fc54fbd999f1360efd3cb4c92ad38bc8453e17afa543"
+   "questaoSha256": "90fc8bfefeedc7f0c7d4fc54fbd999f1360efd3cb4c92ad38bc8453e17afa543",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "A haste rígida e a cabeça femoral"
+      ],
+      "blocos": [
+       "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+       "a-haste-rigida-e-a-cabeca-femoral-01669b63"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "96655d09daf65cc2f0ca18b37f5db4a635dc6fd9fde0f39de6ba4d5f78807d1a"
+     }
+    ],
+    "questaoSha256": "90fc8bfefeedc7f0c7d4fc54fbd999f1360efd3cb4c92ad38bc8453e17afa543",
+    "comentarioSha256": "ea8ac36cc92381d0d06217fdf799a05fcf3beb8c49c9078e9fb5148d68df84a3"
+   }
   },
   "pediatria-0710": {
    "tema": "pediatria",
@@ -39550,8 +40015,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial. O corpo25 usa menos de2cm como corte inicial para gesso imediato no pré-escolar, mas a seção de sequelas aceita2–3cm no gesso; aos5anos há ainda transição de método. A alternativa A fala em encurtamento INICIAL até3cm, não no residual final, e por isso a aceitação tardia de2–3cm não demonstra de modo inequívoco A. Edema maciço, lesões impeditivas e4cm na telescopagem são desfavoráveis, mas exclusão dos demais não resolve a diferença entre critério inicial e residual. Falta a diretriz/edição da prova que sustente até3cm inicial nessa idade. Não inventar provavel diante dessa ambiguidade; comentário preservado, sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -39568,7 +40033,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "4cb4684eb597b6f2e38cbc99a7ad0949cd8c0794fae82d3a05a33b224d9a513e"
+   "questaoSha256": "4cb4684eb597b6f2e38cbc99a7ad0949cd8c0794fae82d3a05a33b224d9a513e",
+   "pendencia": "Sem gabarito oficial. O corpo25 usa menos de2cm como corte inicial para gesso imediato no pré-escolar, mas a seção de sequelas aceita2–3cm no gesso; aos5anos há ainda transição de método. A alternativa A fala em encurtamento INICIAL até3cm, não no residual final, e por isso a aceitação tardia de2–3cm não demonstra de modo inequívoco A. Edema maciço, lesões impeditivas e4cm na telescopagem são desfavoráveis, mas exclusão dos demais não resolve a diferença entre critério inicial e residual. Falta a diretriz/edição da prova que sustente até3cm inicial nessa idade. Não inventar provavel diante dessa ambiguidade; comentário preservado, sem selo."
   },
   "pediatria-0746": {
    "tema": "pediatria",
@@ -39673,8 +40139,8 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial. O corpo25 sustenta mais dor e espasmo com hastes flexíveis em comparação à fixação rígida, mas não fornece comparação específica de resistência à FLEXÃO e deformidade AXIAL entre hastes flexíveis de titânio e haste rígida, como perguntam A e C. Rigidez global de diferentes montagens ou séries sem grupo comparador não comprovam esses desfechos específicos. Falta fonte mecânica/clínica comparativa que analise A e C individualmente. Não usar comentário antigo como fonte nem rotular revisão completa apenas porque B parece sustentada; comentário preservado sem provavel novo ou selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -39691,7 +40157,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "88f1a1645a29c06f17ab4e01998fb179de712b33c5dce693ea16a6b3fdd5ec3e"
+   "questaoSha256": "88f1a1645a29c06f17ab4e01998fb179de712b33c5dce693ea16a6b3fdd5ec3e",
+   "pendencia": "Sem gabarito oficial. O corpo25 sustenta mais dor e espasmo com hastes flexíveis em comparação à fixação rígida, mas não fornece comparação específica de resistência à FLEXÃO e deformidade AXIAL entre hastes flexíveis de titânio e haste rígida, como perguntam A e C. Rigidez global de diferentes montagens ou séries sem grupo comparador não comprovam esses desfechos específicos. Falta fonte mecânica/clínica comparativa que analise A e C individualmente. Não usar comentário antigo como fonte nem rotular revisão completa apenas porque B parece sustentada; comentário preservado sem provavel novo ou selo."
   },
   "pediatria-0750": {
    "tema": "pediatria",
@@ -40692,7 +41159,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40707,7 +41174,33 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "3a8b884fb2d09880f9830eb21f2f02aeb922613cb8664b3e6b0af0060bbba2bd"
+   "questaoSha256": "3a8b884fb2d09880f9830eb21f2f02aeb922613cb8664b3e6b0af0060bbba2bd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "A complicação principal: o distúrbio do crescimento",
+       "Por que essa fise é diferente"
+      ],
+      "blocos": [
+       "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+       "por-que-essa-fise-e-diferente-0111aad0",
+       "por-que-essa-fise-e-diferente-f2f28d85"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "881cdd8bde6011ea7f74595c11be468b03e82719b265b65bfb0e076a3f242c4e"
+     }
+    ],
+    "questaoSha256": "3a8b884fb2d09880f9830eb21f2f02aeb922613cb8664b3e6b0af0060bbba2bd",
+    "comentarioSha256": "b7b8eaf8fe37b8c277c9f243b490aa966cfe6a39bbf1331d303f4583405609cf"
+   }
   },
   "pediatria-0827": {
    "tema": "pediatria",
@@ -41228,7 +41721,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41254,7 +41747,38 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "cd6cdf1692b65dc80c0dd70f5278d456362d2469a46c465c5e89da24d281bb4a"
+   "questaoSha256": "cd6cdf1692b65dc80c0dd70f5278d456362d2469a46c465c5e89da24d281bb4a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "A haste rígida e a cabeça femoral",
+       "As hastes elásticas",
+       "Placa submuscular e fixador externo",
+       "O tratamento pela idade"
+      ],
+      "blocos": [
+       "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+       "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+       "as-hastes-elasticas-67872f88",
+       "as-hastes-elasticas-4cd941c9",
+       "placa-submuscular-e-fixador-externo-09391313",
+       "o-tratamento-pela-idade-72e9cb2f"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "dab37fd7d507b868793d6b46b2365f092be4511e24de203ea81d5595b2e92280"
+     }
+    ],
+    "questaoSha256": "cd6cdf1692b65dc80c0dd70f5278d456362d2469a46c465c5e89da24d281bb4a",
+    "comentarioSha256": "daae1ddc41e9ab74444fc5232ec507e2bb8c8cde1123cc6f775e34140cd90d98"
+   }
   },
   "pediatria-0845": {
    "tema": "pediatria",
@@ -41493,7 +42017,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41511,7 +42035,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "c556c1da335ee30dba9ec2e9b176525fe59667c509a91a697340549f575f1b67"
+   "questaoSha256": "c556c1da335ee30dba9ec2e9b176525fe59667c509a91a697340549f575f1b67",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "O tratamento pela idade"
+      ],
+      "blocos": [
+       "o-tratamento-pela-idade-818fa3dc",
+       "o-tratamento-pela-idade-f93be186"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "0824fcfa8168461f9853b84039d9eb897772809a046fcd230d4f53ac1caa3861"
+     }
+    ],
+    "questaoSha256": "c556c1da335ee30dba9ec2e9b176525fe59667c509a91a697340549f575f1b67",
+    "comentarioSha256": "a6bc01beed4a7a65ee337cada58117123b193dae26bb9b63a682f43bfc1b707e"
+   }
   },
   "pediatria-0906": {
    "tema": "pediatria",
@@ -41603,7 +42151,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41628,7 +42176,38 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "b3c01eb9a7be86fcbb740ae12c585d3ae3f4de66a4100df63bad78073d2611f3"
+   "questaoSha256": "b3c01eb9a7be86fcbb740ae12c585d3ae3f4de66a4100df63bad78073d2611f3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "Epidemiologia e diagnóstico",
+       "As hastes elásticas",
+       "Placa submuscular e fixador externo",
+       "A haste rígida e a cabeça femoral",
+       "O tratamento pela idade"
+      ],
+      "blocos": [
+       "epidemiologia-e-diagnostico-efc58237",
+       "as-hastes-elasticas-67872f88",
+       "placa-submuscular-e-fixador-externo-09391313",
+       "a-haste-rigida-e-a-cabeca-femoral-da0d9577",
+       "o-tratamento-pela-idade-7049f92d"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "a9569d3bcc52cec3b041f5b730b02a15c41b59566eca18830d8e19aea50bc46e"
+     }
+    ],
+    "questaoSha256": "b3c01eb9a7be86fcbb740ae12c585d3ae3f4de66a4100df63bad78073d2611f3",
+    "comentarioSha256": "32a631f21e6ecea142d8f7dbcc76cc8bedd79f3515c812758792c00749ec7b02"
+   }
   },
   "pediatria-0908": {
    "tema": "pediatria",
@@ -41775,7 +42354,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41801,7 +42380,36 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "6a526d84ad0703254d7571c8d90e233bb162a38a1bdd89f9b1a8f9760883abe0"
+   "questaoSha256": "6a526d84ad0703254d7571c8d90e233bb162a38a1bdd89f9b1a8f9760883abe0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-25-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+      "secoes": [
+       "O tratamento pela idade",
+       "Placa submuscular e fixador externo"
+      ],
+      "blocos": [
+       "o-tratamento-pela-idade-7049f92d",
+       "o-tratamento-pela-idade-74c5d484",
+       "o-tratamento-pela-idade-46752ea0",
+       "o-tratamento-pela-idade-72e9cb2f",
+       "o-tratamento-pela-idade-e1cfc4a6",
+       "placa-submuscular-e-fixador-externo-09391313"
+      ],
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "trechosSha256": "c41d406b22cf9b32914b093636fe1e8e9383286d319f362dfafdb9d6f7cd6ac7"
+     }
+    ],
+    "questaoSha256": "6a526d84ad0703254d7571c8d90e233bb162a38a1bdd89f9b1a8f9760883abe0",
+    "comentarioSha256": "f0fec9aff499b3d89135422991a54f0422b925aa706923573b1e3669a673e110"
+   }
   },
   "pediatria-0914": {
    "tema": "pediatria",
@@ -42723,8 +43331,8 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo25 sustenta placa submuscular nas instáveis e oblíquas longas, descreve VALGO distal perto da fise e número de corticais/furos, mas não fornece a comparação entre placa convencional aberta e placa submuscular quanto a perda sanguínea e falha de material exigida em C. Não converter preservação de irrigação em resultado comparativo comprovado. Falta comparação operatória e de desfechos entre as técnicas para análise individual completa de C. Gabarito A preservado; sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42741,7 +43349,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "fd2a684e3a679f2afcc3c4aebc17dc6cbc71007fa15ef11cdcb06dd3485a171a"
+   "questaoSha256": "fd2a684e3a679f2afcc3c4aebc17dc6cbc71007fa15ef11cdcb06dd3485a171a",
+   "pendencia": "O corpo25 sustenta placa submuscular nas instáveis e oblíquas longas, descreve VALGO distal perto da fise e número de corticais/furos, mas não fornece a comparação entre placa convencional aberta e placa submuscular quanto a perda sanguínea e falha de material exigida em C. Não converter preservação de irrigação em resultado comparativo comprovado. Falta comparação operatória e de desfechos entre as técnicas para análise individual completa de C. Gabarito A preservado; sem selo."
   },
   "pediatria-0952": {
    "tema": "pediatria",
@@ -50078,7 +50687,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50096,7 +50705,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "3094d4d55d338a4d9234ebfff3189ae7f7402ca73638da82d8c03b333d6705a1"
+   "questaoSha256": "3094d4d55d338a4d9234ebfff3189ae7f7402ca73638da82d8c03b333d6705a1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Os tipos de SALTER-HARRIS"
+      ],
+      "blocos": [
+       "os-tipos-de-salter-harris-77cf0c10",
+       "os-tipos-de-salter-harris-554eb4be"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "6d9496fad1fe6fb2888dcfad776225ba9d9cf45035318d9e7f0d6d33af9a74c9"
+     }
+    ],
+    "questaoSha256": "3094d4d55d338a4d9234ebfff3189ae7f7402ca73638da82d8c03b333d6705a1",
+    "comentarioSha256": "19e8b0585eed408d6652fa55436f8f8406dfbc5627cd0731487cb709cf1072d9"
+   }
   },
   "pediatria-1095": {
    "tema": "pediatria",
@@ -50106,7 +50739,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50124,7 +50757,39 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "18002a23a17e5cc4002440e2ba29d69b7389a86cab821d630480692d47b6413e"
+   "questaoSha256": "18002a23a17e5cc4002440e2ba29d69b7389a86cab821d630480692d47b6413e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Por que essa fise é diferente",
+       "A complicação principal: o distúrbio do crescimento",
+       "Prognóstico: idade e desvio",
+       "Os tipos de SALTER-HARRIS"
+      ],
+      "blocos": [
+       "por-que-essa-fise-e-diferente-17a3ebe4",
+       "por-que-essa-fise-e-diferente-0111aad0",
+       "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+       "prognostico-idade-e-desvio-77005618",
+       "a-complicacao-principal-o-disturbio-do-crescimen-81edb92d",
+       "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252",
+       "os-tipos-de-salter-harris-554eb4be"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "8b2723effc9a0ee6b76b591674efdd2367791233f79da22a81b4c0e1dba4f771"
+     }
+    ],
+    "questaoSha256": "18002a23a17e5cc4002440e2ba29d69b7389a86cab821d630480692d47b6413e",
+    "comentarioSha256": "ed309761c7adb3ad6516da44c58fc223c83ec51ac07ad7deca03ac1c5bf4146b"
+   }
   },
   "pediatria-1096": {
    "tema": "pediatria",
@@ -50163,7 +50828,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50181,7 +50846,35 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "e148c76599e6caa8ac539f33691669215318e351cf8bb66ee95b967b4ed968dc"
+   "questaoSha256": "e148c76599e6caa8ac539f33691669215318e351cf8bb66ee95b967b4ed968dc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "As lesões que vêm junto",
+       "O mecanismo: o ligamento é mais forte que a fise",
+       "Diagnóstico e imagem"
+      ],
+      "blocos": [
+       "as-lesoes-que-vem-junto-8d3f421c",
+       "as-lesoes-que-vem-junto-1d593702",
+       "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-927b59dc",
+       "diagnostico-e-imagem-7930c1e9"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "49cdad9a4edb7428669d6908f5953b47942a42b56edb9b1f932877caf8f086cf"
+     }
+    ],
+    "questaoSha256": "e148c76599e6caa8ac539f33691669215318e351cf8bb66ee95b967b4ed968dc",
+    "comentarioSha256": "e6d72c0f1c68ee2563852f8b747ddacd76832349538a857c6cf438273546e781"
+   }
   },
   "pediatria-1098": {
    "tema": "pediatria",
@@ -50191,7 +50884,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50209,7 +50902,33 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "90dcbc62c97e1fe6b35b1f5e3f365bfd39754bc763fbfadf37e6df8552500f32"
+   "questaoSha256": "90dcbc62c97e1fe6b35b1f5e3f365bfd39754bc763fbfadf37e6df8552500f32",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "As lesões que vêm junto",
+       "O mecanismo: o ligamento é mais forte que a fise"
+      ],
+      "blocos": [
+       "as-lesoes-que-vem-junto-d3373187",
+       "as-lesoes-que-vem-junto-2b8a0b7f",
+       "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-72e0078c"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "b0596e9cf4cd25a0a7703fd81f7dba1d8448b9843757d86df843700af0f0ee15"
+     }
+    ],
+    "questaoSha256": "90dcbc62c97e1fe6b35b1f5e3f365bfd39754bc763fbfadf37e6df8552500f32",
+    "comentarioSha256": "f0e49dc9258079e0c6651e094ac34a7c60e30fe1078fcf471e2156dbe4797c0c"
+   }
   },
   "pediatria-1099": {
    "tema": "pediatria",
@@ -50219,7 +50938,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50237,7 +50956,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "070e894240cfddcd343d1743609171a902549ac7a83244b83f4f4438bd61353e"
+   "questaoSha256": "070e894240cfddcd343d1743609171a902549ac7a83244b83f4f4438bd61353e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "As lesões que vêm junto"
+      ],
+      "blocos": [
+       "as-lesoes-que-vem-junto-2b8a0b7f"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "d4d9ba378cf742fa594c0cf0502170b48879c224fa86ac6a7aa6b3a65c3f6c74"
+     }
+    ],
+    "questaoSha256": "070e894240cfddcd343d1743609171a902549ac7a83244b83f4f4438bd61353e",
+    "comentarioSha256": "c839b5451b11a36e9415a45f480a349632a1d9bacd2a3abb23fb5f4b3769573d"
+   }
   },
   "pediatria-1100": {
    "tema": "pediatria",
@@ -50247,7 +50989,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50265,7 +51007,35 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "54f02eb422d2cd7ef4b562b296981715c5948773956b622c34d1ffba395bb768"
+   "questaoSha256": "54f02eb422d2cd7ef4b562b296981715c5948773956b622c34d1ffba395bb768",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Prognóstico: idade e desvio",
+       "Por que essa fise é diferente",
+       "A complicação principal: o distúrbio do crescimento"
+      ],
+      "blocos": [
+       "prognostico-idade-e-desvio-d1163209",
+       "por-que-essa-fise-e-diferente-17a3ebe4",
+       "por-que-essa-fise-e-diferente-0111aad0",
+       "a-complicacao-principal-o-disturbio-do-crescimen-d924c936"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "89c82cd48d6e15d3aa7b9c4ada32e997c24ebe38be8586c39b1ec711817797dc"
+     }
+    ],
+    "questaoSha256": "54f02eb422d2cd7ef4b562b296981715c5948773956b622c34d1ffba395bb768",
+    "comentarioSha256": "b6f206dbd3c696f360eaadf4c025ece80224bf26fd0221e2af07cceeb7862857"
+   }
   },
   "pediatria-1101": {
    "tema": "pediatria",
@@ -50275,7 +51045,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50293,7 +51063,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "93b60d03271feb195a70fc9a8fad848f94b9c2a856c504190c13906371eb5e8b"
+   "questaoSha256": "93b60d03271feb195a70fc9a8fad848f94b9c2a856c504190c13906371eb5e8b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Tratamento"
+      ],
+      "blocos": [
+       "tratamento-953f974e",
+       "tratamento-3c348235"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "01f6c34b5ba3dbc3b96dee562468611340b0d7063435879011838842684362f6"
+     }
+    ],
+    "questaoSha256": "93b60d03271feb195a70fc9a8fad848f94b9c2a856c504190c13906371eb5e8b",
+    "comentarioSha256": "3c9a7059b635677ba231c74d0377eb0de391cdc279408574cfbc6b9f6b993a2b"
+   }
   },
   "pediatria-1102": {
    "tema": "pediatria",
@@ -50303,7 +51097,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50321,7 +51115,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "9dda8894400614d04b8d454df573b61993435f9b1e1dead35ccb2bed26cf3a2c"
+   "questaoSha256": "9dda8894400614d04b8d454df573b61993435f9b1e1dead35ccb2bed26cf3a2c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Tratamento"
+      ],
+      "blocos": [
+       "tratamento-8f446def",
+       "tratamento-98bdb79e"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "4f4b7b572540026f2530d7a7340d0f036483e6b66bf7d385707ae4293f286180"
+     }
+    ],
+    "questaoSha256": "9dda8894400614d04b8d454df573b61993435f9b1e1dead35ccb2bed26cf3a2c",
+    "comentarioSha256": "ab034330ffaa03ce72123057b4eabdb9489defd201cb08fd5bcdb75c89fd657b"
+   }
   },
   "pediatria-1103": {
    "tema": "pediatria",
@@ -50331,7 +51149,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50349,7 +51167,32 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "25cab1eda0cf0fa7010e2df3c426c94c2e44952b9b51c96db8d06be45cc917ba"
+   "questaoSha256": "25cab1eda0cf0fa7010e2df3c426c94c2e44952b9b51c96db8d06be45cc917ba",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "A complicação principal: o distúrbio do crescimento"
+      ],
+      "blocos": [
+       "a-complicacao-principal-o-disturbio-do-crescimen-a1527f81",
+       "a-complicacao-principal-o-disturbio-do-crescimen-a2ab9a35",
+       "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "f7c665d4a88cf986f233bd0fd55a4972d6889ca538f4c31065fa50c675b31a22"
+     }
+    ],
+    "questaoSha256": "25cab1eda0cf0fa7010e2df3c426c94c2e44952b9b51c96db8d06be45cc917ba",
+    "comentarioSha256": "9f2a5f4bce8d8077909d18ecb3af827f8a7cb73907a38060747a28f1544449a8"
+   }
   },
   "pediatria-1104": {
    "tema": "pediatria",
@@ -50359,7 +51202,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50377,7 +51220,32 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "83161eb04a6ca2d52d8dac5403a6cb4cc215e55fb4808a5ad343b6cbf3563e84"
+   "questaoSha256": "83161eb04a6ca2d52d8dac5403a6cb4cc215e55fb4808a5ad343b6cbf3563e84",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "A complicação principal: o distúrbio do crescimento"
+      ],
+      "blocos": [
+       "a-complicacao-principal-o-disturbio-do-crescimen-81edb92d",
+       "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252",
+       "a-complicacao-principal-o-disturbio-do-crescimen-992ce343"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "e6a9f8cb83a6f4aabd090412f0c93d720e9a97f8c03353ded1d280cb70cfa182"
+     }
+    ],
+    "questaoSha256": "83161eb04a6ca2d52d8dac5403a6cb4cc215e55fb4808a5ad343b6cbf3563e84",
+    "comentarioSha256": "f76e7ccba663d0b0417b4fc4c28001b16cf61829772e4efc14c04e7eefe05178"
+   }
   },
   "pediatria-1105": {
    "tema": "pediatria",
@@ -50387,7 +51255,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50405,7 +51273,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "5b04ed9f847d26b3635907229982e5bcdbc46840c1070bb1047426ad6b7614dc"
+   "questaoSha256": "5b04ed9f847d26b3635907229982e5bcdbc46840c1070bb1047426ad6b7614dc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "A complicação principal: o distúrbio do crescimento"
+      ],
+      "blocos": [
+       "a-complicacao-principal-o-disturbio-do-crescimen-992ce343",
+       "a-complicacao-principal-o-disturbio-do-crescimen-7aae6a52"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "7f4f517a7d69c80491efe589dfe717e81bde52c14c6e9e7af01a75503e43a068"
+     }
+    ],
+    "questaoSha256": "5b04ed9f847d26b3635907229982e5bcdbc46840c1070bb1047426ad6b7614dc",
+    "comentarioSha256": "94774d8afeb94696e4994c6e100b710a4774668641e37ab1543d211f1b8574b2"
+   }
   },
   "pediatria-1106": {
    "tema": "pediatria",
@@ -50415,7 +51307,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50433,7 +51325,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "7209bc3115b61fae2eba7e3d58718fb387b6996e8296c6b87d4e31dd4d185ed0"
+   "questaoSha256": "7209bc3115b61fae2eba7e3d58718fb387b6996e8296c6b87d4e31dd4d185ed0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "As lesões que vêm junto"
+      ],
+      "blocos": [
+       "as-lesoes-que-vem-junto-d3373187",
+       "as-lesoes-que-vem-junto-8970d0e5"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "7c74a8e92e33f2dfe8871b3d59dd5191aa710c1355bf9bbeb8b582d7e146cade"
+     }
+    ],
+    "questaoSha256": "7209bc3115b61fae2eba7e3d58718fb387b6996e8296c6b87d4e31dd4d185ed0",
+    "comentarioSha256": "5a0cb87d3f97bfbaa1409a8999841049a33bf1caa7c63e8bb6fa33cfe55805a5"
+   }
   },
   "pediatria-1107": {
    "tema": "pediatria",
@@ -50444,7 +51360,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50462,7 +51378,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "8909de0ac7df83f97d7f3694fca6c1f18ed4b6cf6360d43c13581be4e8f12eab"
+   "questaoSha256": "8909de0ac7df83f97d7f3694fca6c1f18ed4b6cf6360d43c13581be4e8f12eab",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Diagnóstico e imagem"
+      ],
+      "blocos": [
+       "diagnostico-e-imagem-855fc0ce",
+       "diagnostico-e-imagem-f4a39d9c"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "2987b5759bf15d6fad72143fe09dac503539e1ab62982c820458333acd0768b2"
+     }
+    ],
+    "questaoSha256": "8909de0ac7df83f97d7f3694fca6c1f18ed4b6cf6360d43c13581be4e8f12eab",
+    "comentarioSha256": "c86dee509c9b551e5d5f7c42e048dfe1ca10a08dd46140639e18ae0265b2c16d"
+   }
   },
   "pediatria-1108": {
    "tema": "pediatria",

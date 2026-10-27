@@ -1,0 +1,125 @@
+{
+  "base": "aff70f0b9f64855084667224982a4f4fb65af1d1",
+  "lotes": {
+    "179": [
+      "pediatria-0556",
+      "pediatria-0565",
+      "pediatria-0591",
+      "pediatria-0603",
+      "pediatria-0619",
+      "pediatria-0545",
+      "pediatria-0579",
+      "pediatria-0601"
+    ],
+    "180": [
+      "pediatria-0623",
+      "pediatria-0647",
+      "pediatria-0709",
+      "pediatria-0844",
+      "pediatria-0863",
+      "pediatria-0907",
+      "pediatria-0912"
+    ],
+    "181": [
+      "pediatria-0538",
+      "pediatria-0559",
+      "pediatria-0590",
+      "pediatria-0608",
+      "pediatria-0635",
+      "pediatria-0654",
+      "pediatria-0825",
+      "pediatria-1095",
+      "pediatria-1094",
+      "pediatria-1097"
+    ],
+    "182": [
+      "pediatria-1098",
+      "pediatria-1099",
+      "pediatria-1100",
+      "pediatria-1101",
+      "pediatria-1102",
+      "pediatria-1103",
+      "pediatria-1104",
+      "pediatria-1105",
+      "pediatria-1106",
+      "pediatria-1107"
+    ]
+  },
+  "revisadas": 35,
+  "lacunas": 5,
+  "checks": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "replay": "35/35;5comentários pendentes intactos",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks179182.log": "45faa8b49cefc3359654582df14d987fc9e8f4755d8bbc143760422233285e19",
+    "ui179181.log": "24d107a0113c5b489c442ddfa006321cfddfdecf73cbfc4eb9aa6697da1de825",
+    "ui179182.log": "5915da4b90667200668be79a92fbc3f5df049ffc86cefc5689cbadec2067e9b4",
+    "aplicacao179180.log": "1ca9a5b7c70d362e3348ec4c10f2890b539d28c99084ebb66612735004acee6b",
+    "aplicacao181.log": "f3b56095011784554d399528fe5c302d92ec465c3d270f3017853bda8fc533af",
+    "ajuste181.log": "234b87ce06b4e929c1796c372ec5303266bc09a72f5321f77c39b0fe8d4df0be",
+    "aplicacao182.log": "baf545633c61b0dc8f5d27bcfc60f79c00a9d98f73b36a3bab28a4dc12f0b434",
+    "remotos179182-final.json": "76c14a100e06298fa3f23def9981aa896b5734add480b56f5fb93362a1eee933"
+  },
+  "fontes": [
+    {
+      "id": "rockwoodcriancas10-25-diafise-femur",
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "leitura": "Resumo integral e blocos independentes relidos para cada alternativa; notas contextuais/comentários antigos não são fonte clínica; não atribuída leitura do livro primário."
+    },
+    {
+      "id": "rockwoodcriancas10-26-fise-distal-femur",
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "leitura": "Resumo integral e blocos independentes relidos para cada alternativa; notas contextuais/comentários antigos não são fonte clínica; não atribuída leitura do livro primário."
+    },
+    {
+      "id": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "leitura": "Resumo integral e blocos independentes relidos para cada alternativa; notas contextuais/comentários antigos não são fonte clínica; não atribuída leitura do livro primário."
+    },
+    {
+      "id": "rockwoodcriancas10-29-diafise-tibia",
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "leitura": "Resumo integral e blocos independentes relidos para cada alternativa; notas contextuais/comentários antigos não são fonte clínica; não atribuída leitura do livro primário."
+    }
+  ],
+  "visual": {
+    "larguras": [
+      390,
+      1440
+    ],
+    "casos179a181": 25,
+    "casosFinais": 11,
+    "casosUnicos": 35,
+    "final": "dez novos182 e1094 após remoção da orientação vertical não dada pelo resumo; demais24 comentários idênticos aos da rodada25 anterior.",
+    "respostasFontesExatas": true,
+    "semFigurasNas40Questoes": true,
+    "capturasInspecionadas": [
+      "179181-pediatria-0825-aula-pc.png",
+      "179181-pediatria-1095-aula-cel.png",
+      "179182-pediatria-1106-aula-cel.png",
+      "179182-pediatria-1107-aula-pc.png",
+      "179182-pediatria-1094-aula-cel.png"
+    ]
+  },
+  "preservacao": "35membros de pediatria.json;demais bytes e importações preservados. Questões/opções/IDs/gabaritos oficiais/revisão médica/fontes intactos;conferido:false.0825 sem gabarito oficial,provavelB sustentado de modo único.",
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 575,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 393,
+      "pendente-inspecao-imagem": 64,
+      "revisada": 1493
+    }
+  },
+  "proximoLote": 183,
+  "publicacao": "Só validação local neste registro. Exigir CI/revisão do head,merge,guarda/deploy e avulsos em produção; prova final no PR."
+}
