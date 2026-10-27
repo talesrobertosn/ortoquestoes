@@ -3771,3 +3771,22 @@ distal com placa a 20 mm ou menos da fise; fixador retirado com três ou quatro 
 **Sem gabarito.** TARO 2007 `0743`, SBOT-SP `0935`, TARO 2008 `0749`, TARO 2006 `0813`: alertas no resumo.
 
 **Aproveitamento:** `pediatria-1122` a `pediatria-1136`, 15 questões, gabarito A4/B4/C4/D3, mediana de 3.513 caracteres.
+
+## Fraturas da tíbia e da fíbula na criança, Rockwood and Wilkins 10ª ed., cap. 29
+
+**Recorte.** Busca por tíbia, fíbula, perna e COZEN em Ortopedia pediátrica, todas as provas (a espinha tibial fica para o cap. 28 e a
+tuberosidade e a fise proximal ficaram no cap. 27). A banca cobra muito o valgo da fratura metafisária proximal (TEOT 2023 `pediatria-0579`,
+TEOT 2022 `0705`, TARO 2017 `0621`, TARO 2019 `0646`, TARO 2015 `0601`, TARO 2023 `0545`) e o mecanismo dela (TARO 2023 `0549`); na diáfise,
+o varo com fíbula íntegra (TARO 2018 `0630`, TEOT 2025 `0916`) e o mecanismo torcional no terço distal (TEPOP 2024 `0950`).
+
+**Forma.** Enunciados curtos, quatro alternativas de deformidade (varo, valgo, recurvato, antecurvato) ou de mecanismo.
+
+**Lacunas com cara de prova (projeção).** Conduta no COZEN (observar, sem órtese nem osteotomia); molde em varo; via anteromedial;
+crescimento assimétrico; valgo quando a fíbula também quebra; Tabela 29-5; cunha de abertura (1 cm por 10 graus); hastes com 60% a 80%
+e síndrome compartimental nos pesados; sinal precoce da síndrome compartimental; fratura do lactente; metáfise distal em flexão plantar;
+remodelação pobre e rotação que não corrige; fratura por estresse.
+
+**Divergência.** TARO 2023 (`0549`): gabarito "valgo com fratura em tensão da cortical lateral"; o capítulo descreve falha em tensão da
+cortical medial. Alerta no resumo.
+
+**Aproveitamento:** `pediatria-1137` a `pediatria-1152`, 16 questões, gabarito A4/B4/C4/D4, mediana de 3.236 caracteres.

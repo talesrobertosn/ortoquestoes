@@ -57,7 +57,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 26 | Distal Femoral Physis | 2556 a 2642 | Feito em 26/10/2026: `rockwoodcriancas10-26-fise-distal-femur`, `pediatria-1094` a `1107` |
 | 27 | Proximal Tibial Physeal | 2643 a 2695 | Feito em 26/10/2026: `rockwoodcriancas10-27-fise-proximal-tibia`, `pediatria-1108` a `1121` |
 | 28 | Intra-Articular Injuries of the Knee | 2696 a 2826 | A fazer |
-| 29 | Tibia and Fibula Shaft | 2827 a 2957 | A fazer |
+| 29 | Tibia and Fibula Shaft | 2827 a 2957 | Feito em 27/10/2026: `rockwoodcriancas10-29-diafise-tibia`, `pediatria-1137` a `1152` |
 | 30 | Ankle | 2958 a 3099 | A fazer |
 | 31 | Foot | 3100 a 3352 | A fazer |
 
@@ -89,3 +89,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 26 | `pediatria-0654`, `0635`, `0552`, `0608`, `0590`, `0570`, `0825`, `0569`, `0111`, `0174`, `0065`, `0538`, `0559`, `0622`, `0641` | `0825` (TARO 2006) sem gabarito: o capítulo sustenta Errado. `0641`: causa da ponte fora do capítulo. `0569`: o capítulo confirma que a fise distal do fêmur é extrassinovial, com irrigação rica. |
 | 27 | `pediatria-0542`, `0948`, `0544`, `0529`, `0661`, `0602`, `0847`, `0779`, `0840`, `0580`, `0946`, `0713`, `0752`, `0516`, `0616`, `0560`, `0918`, `0836`, `0579`, `0705`, `0601`, `0545`, `0646`, `0621`, `0716`, `0174` | `0918` (TEOT 2025) diverge da revisão do capítulo (síndrome compartimental 0%). Sem gabarito: `0779` (capítulo sustenta III), `0716` (3 a 6 anos e valgo), `0713`, `0752`, `0840`, `0836` não sustentadas. Metafisária e COZEN: rever com o cap. 29. |
 | 25 | `pediatria-0863`, `0912`, `0541`, `0556`, `0951`, `0709`, `0565`, `0591`, `0844`, `0647`, `0623`, `0619`, `0603`, `0907`, `0743`, `0749`, `0813`, `0935` | Sem gabarito: `0935` (capítulo sustenta gesso), `0749` (sustenta mais dor), `0743` (mais próxima: até 3 cm), `0813` (não sustentada). `0951`: alternativa B fala em varo, o capítulo descreve valgo após placa distal. |
+| 29 | `pediatria-0549`, `0752`, `0516`, `0545`, `0601`, `0579`, `0705`, `0646`, `0621`, `0716`, `0818`, `0630`, `0916`, `0950` | `0549` (TARO 2023): gabarito na cortical lateral, o capítulo diz medial. Sem gabarito: `0752` (lateral em extensão), `0716` (3 a 6 anos e valgo), `0818` (Certo). Espinha tibial (`0535`, `0700`, `0711`, `0735`, `0949`) fica para o cap. 28. |
