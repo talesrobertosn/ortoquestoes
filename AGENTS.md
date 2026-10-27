@@ -102,6 +102,21 @@ resumos abertos; as questões reais são citadas no meio do texto, com botão pa
 
 ## Comentários baseados em resumos (pedido de 20/10/2026)
 
+**Escopo confirmado pelo pedido atual do dono (27/10/2026):** nesta revisão de
+comentários existentes, o usuário pediu “TODAS as questões de temas que têm resumo”
+e definiu que “As fontes são conteudo/biblioteca/*.md e
+public/biblioteca/capitulos/*.json”, com `baseResumo` somente após conferir cada
+alternativa. Isso inclui as candidatas existentes de SIMÃO/SBCM no catálogo.
+É uma exceção específica de fonte secundária neste fluxo: não exigir nem inventar
+leitura ou páginas do Green para classificar um comentário efetivamente conferido
+contra o resumo. Identificar a fonte consultada como resumo; conservar as
+referências primárias anteriores no histórico de revisão, sem apresentá-las como
+reconsultadas. A regra do Green e de páginas conferidas continua valendo para
+criar novos simulados da mão e para revisões que declarem fonte primária.
+Preservar também o motivo específico de criação dos simulados existentes,
+conferindo prova, ano e número com seus metadados de origem. Lacunas continuam
+pendentes e não recebem selo. Esta exceção não muda gabaritos nem revisão médica.
+
 Para revisar questões dos temas com resumo, classificar a fonte ou retomar a fila, leia
 [docs/comentarios-resumos/README.md](docs/comentarios-resumos/README.md) e
 [docs/comentarios-resumos/ANDAMENTO.md](docs/comentarios-resumos/ANDAMENTO.md).

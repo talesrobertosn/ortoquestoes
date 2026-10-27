@@ -1,0 +1,123 @@
+{
+  "mao-1954": {
+    "questaoSha256": "ed016acf6a308bdd0bcc94a026dc2df344e91cf2f2921d24d140c7526606c910",
+    "comentarioAnteriorSha256": "a3c0a8ac56150008b3bed4f7ae638c1278b3f175ae8a4ddd9f9e316e0b309f64",
+    "comentario": {
+      "conceito": "O padrão predominante descrito é a **avulsão do ligamento escafossemilunar no escafoide**: o ligamento se desprende desse osso e permanece preso ao semilunar. Essa localização importa porque uma lesão do mesmo ligamento pode deixar remanescentes e possibilidades de reparo diferentes (Rockwood adultos, 10ª ed., cap. 44, anatomia da dissociação escafossemilunar).\n\nO ligamento tem forma de C, com porções dorsal, palmar e proximal membranosa. A porção dorsal é a mais espessa e forte e tem papel central na estabilidade; a palmar participa do controle da rotação, e a membranosa é mais fraca. Dizer que há “ruptura escafossemilunar” ainda deixa em aberto qual parte e qual inserção foram comprometidas.\n\nO resumo afirma que, na cirurgia, o ligamento **costuma estar arrancado do escafoide e preso ao semilunar**; a desinserção no semilunar ou a ruptura oblíqua são raras. Isso sustenta a resposta sobre o padrão mais frequente, sem exigir inventar percentuais ou completar de memória toda a classificação de Andersson.\n\nO achado de avulsão não garante, isoladamente, que seja possível suturar. A avaliação também precisa considerar qualidade do tecido, tempo de lesão, alinhamento, redutibilidade e cartilagem. Quando cabe reparo direto, a técnica aberta descrita reaviva o escafoide e usa âncoras nesse osso, uma relação coerente com o local habitual do desprendimento.\n\n**Por que esta questão foi criada.** Inspirada na questão 82 do SIMÃO 2023, em que a banca perguntou o padrão mais comum de lesão do ligamento SL na dissociação aguda pela classificação de Andersson.",
+      "correta": "**Correta: A (avulsão do lado do escafoide).** É a distribuição que o corpo do resumo apresenta como habitual: ligamento desprendido do escafoide e ainda ligado ao semilunar. A pergunta exige o padrão predominante, não apenas uma forma possível de lesão.",
+      "incorretas": {
+        "B": "Ruptura no meio da substância não é o padrão apresentado como mais comum. O achado habitual descrito é o arrancamento na inserção escafoide, que deixa o ligamento ligado ao semilunar. Não é necessário afirmar que uma ruptura intrassubstancial nunca exista para distingui-la da avulsão predominante.",
+        "C": "Uma lesão parcial por alongamento descreve extensão e alteração do tecido, enquanto a resposta procurada é o padrão mais frequente de lesão aguda nessa comparação. O resumo reconhece lesões incompletas, mas não as apresenta como substitutas da avulsão no escafoide como achado habitual da dissociação descrita.",
+        "D": "Essa opção inverte o lado da avulsão. O resumo distingue a desinserção no semilunar, rara, do desprendimento no escafoide, habitual. Seguir onde o ligamento ficou preso evita trocar o osso de origem do remanescente pelo osso do qual ele se soltou."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-67e58eaf",
+          "dissociacao-escafossemilunar-1f9a739d",
+          "dissociacao-escafossemilunar-65f85568"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "cee886fecf07c48dc444dd75d9daf68aec3649683626f4feb62d5396d065c162"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2035": {
+    "questaoSha256": "e1c90a74af482919a3a9160e01a58e1d88a932477e59c9af08856919c701e7f1",
+    "comentarioAnteriorSha256": "26ce2ca588d2963de1e5a56f8a9bd96b38940ea7bca41199a209017492afc7fc",
+    "comentario": {
+      "conceito": "Quando o colapso do carpo já produziu **artrose mediocárpica**, a operação precisa lidar com superfícies que perderam cartilagem. No padrão avançado de SNAC ou SLAC descrito pelo resumo, a artrose alcança a **capitossemilunar**, e a opção de salvamento é **excisar o escafoide e realizar artrodese dos quatro cantos** (Rockwood adultos, 10ª ed., cap. 44, artrose do colapso).\n\nSNAC é o colapso avançado associado à pseudartrose do escafoide; SLAC é o colapso associado à lesão escafossemilunar. Apesar de começarem de problemas diferentes, seguem um roteiro de desgaste: primeiro a região entre estiloide radial e escafoide, depois a fossa do escafoide e, no estágio III, a articulação capitossemilunar. A radiolunar fica relativamente poupada.\n\nEssa distribuição explica a diferença entre os salvamentos. A **carpectomia da fileira proximal** faz a cabeça do capitato trabalhar contra a fossa do semilunar no rádio. Se a cabeça do capitato já está desgastada, essa nova articulação utiliza uma superfície comprometida; por isso o resumo retira a indicação da carpectomia simples no estágio III.\n\nA escafoidectomia com artrodese mediocárpica permite tratar o colapso avançado preservando a articulação radiolunar poupada. O raciocínio não é escolher a menor fusão pelo nome, mas mapear quais articulações ainda podem funcionar. As artrodeses que conservam o escafoide e dependem de uma região radioescafoide útil não equivalem ao salvamento de um SNAC ou SLAC com desgaste avançado.\n\n**Por que esta questão foi criada.** Inspirada na questão 4 da SBCM 2024, que perguntou o tratamento de escolha da artrose mediocarpal secundária ao SNAC ou ao SLAC.",
+      "correta": "**Correta: B (excisão do escafoide com artrodese dos quatro cantos).** É o salvamento indicado pelo resumo quando o desgaste chega à capitossemilunar no estágio III. A escolha acompanha o estado da cartilagem, em vez de tentar apenas reconstruir a causa inicial do colapso.",
+      "incorretas": {
+        "A": "A carpectomia proximal simples depende de cabeça do capitato e fossa do semilunar preservadas. Com artrose capitossemilunar, ela colocaria a superfície desgastada do capitato contra o rádio. O resumo admite a carpectomia até fases anteriores e a exclui no estágio III sem procedimento adicional de interposição.",
+        "C": "A artrodese escafocapitato aparece entre as fusões limitadas para deformidade escafossemilunar fixa e tem indicações diferentes do salvamento proposto aqui. Ela conserva o escafoide, em vez de tratar o conjunto de desgaste radioescafoide e mediocárpico do SNAC/SLAC avançado com escafoidectomia e fusão mediocárpica.",
+        "D": "A artrodese escafotrapeziotrapezoidal estabiliza o escafoide instável e pode servir em deformidade sem artrose apropriada a esse procedimento. No colapso com desgaste, conservar o escafoide não remove o problema radioescafoide. O resumo a distingue dos quatro cantos usados no salvamento das fases avançadas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Artrose do colapso: SNAC e SLAC; Escafoide: consolidação viciosa e pseudartrose; Dissociação escafossemilunar; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Artrose do colapso: SNAC e SLAC",
+          "Escafoide: consolidação viciosa e pseudartrose",
+          "Dissociação escafossemilunar",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "artrose-do-colapso-snac-e-slac-cbb1d7e8",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
+          "dissociacao-escafossemilunar-dea04ab1",
+          "artrose-do-colapso-snac-e-slac-a82703f6",
+          "artrose-do-colapso-snac-e-slac-db418f5b",
+          "artrose-do-colapso-snac-e-slac-118d45f0",
+          "mayfield-e-a-luxacao-perilunar-7a90dc33"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "6c03118b48e7f3e4560c313d164a5e34ba7a780774f70cd680b75cb74ef98395"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2046": {
+    "questaoSha256": "55a77f20c7ef16ee66c74bcbfddd3b95ce6f851a9b385f1cef96f963a67ae946",
+    "comentarioAnteriorSha256": "b0ac4bf6c7048e3ecae3ad4ca15ad5766b0f40426c4675c563d7df7662beda05",
+    "comentario": {
+      "conceito": "A mensagem clínica é que uma **radiografia inicial normal não exclui fratura do escafoide**. Uma fratura sem desvio pode permanecer oculta no primeiro atendimento, de modo que história compatível e dor localizada exigem investigação ou acompanhamento, mesmo com a imagem inicial negativa (Rockwood adultos, 10ª ed., cap. 44, diagnóstico do escafoide).\n\nHá uma divergência numérica que precisa ficar explícita. O gabarito registrado na questão é **A, até 25%**; o corpo do resumo consultado informa que **30% a 40%** não são vistas inicialmente. Nenhuma das quatro alternativas reproduz essa faixa. Ao comparar as fontes, é preciso reconhecer essa diferença de estimativa, sem transformar 25% no valor descrito pelo resumo.\n\nO escafoide possui anatomia complexa, e a sobreposição radiográfica dificulta identificar o traço sem desvio. O resumo recomenda incidências específicas e orienta imobilizar a suspeita de fratura oculta, reavaliando em **7 a 10 dias**. Persistindo a suspeita, entram ressonância ou tomografia; quem precisa de uma definição imediata pode fazer exame avançado já na primeira avaliação.\n\nA ressonância é destacada para a fratura aguda oculta; a tomografia tem papel especialmente importante na forma, no desvio e no alinhamento do osso. A escolha depende da pergunta clínica. O ponto para a prática é não liberar uma suspeita consistente apenas porque o traço não apareceu, sem transformar estimativas diferentes de falso-negativo em um número universal.\n\n**Por que esta questão foi criada.** Inspirada na questão 67 da SBCM 2024, que perguntou que proporção das fraturas do escafoide não aparece nas radiografias iniciais.",
+      "correta": "**Gabarito registrado: A (até 25%).** Essa é a letra preservada do acervo, mas o resumo Rockwood10-44 consultado dá 30% a 40% de fraturas não vistas inicialmente. A alternativa não reproduz a estimativa dessa fonte; resolver a diferença bibliográfica exige conferir a fonte primária da questão.",
+      "incorretas": {
+        "B": "O limite de 20% é ainda menor que os 25% registrados no gabarito e não cobre a faixa de 30% a 40% do resumo. Usá-lo como teto poderia reforçar uma confiança excessiva na radiografia inicial. O exame negativo precisa ser interpretado junto da história e da dor localizada.",
+        "C": "Até 15% não corresponde ao gabarito registrado nem à faixa do material consultado. Uma porcentagem menor não torna a investigação mais segura: o resumo descreve um contingente maior de fraturas ocultas e recomenda reavaliar ou investigar a suspeita persistente.",
+        "D": "Até 10% subestima ainda mais a proporção descrita no resumo. Não deve ser confundido com a frequência de outra complicação, como pseudartrose, que mede um desfecho diferente. Aqui o denominador é o das fraturas que não aparecem na primeira radiografia, antes de discutir consolidação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: diagnóstico e imagem."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito registrado é A (até 25%). O resumo Rockwood10-44 informa 30% a 40% de fraturas não vistas nas radiografias iniciais; nenhuma alternativa reproduz essa faixa. O número da questão difere da estimativa da fonte consultada."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: diagnóstico e imagem"
+        ],
+        "blocos": [
+          "escafoide-diagnostico-e-imagem-54713833",
+          "escafoide-diagnostico-e-imagem-b1203433",
+          "escafoide-diagnostico-e-imagem-8899eeb9",
+          "escafoide-diagnostico-e-imagem-2c167e09",
+          "escafoide-diagnostico-e-imagem-c1f614fc"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "ae56c93b2af8c822d3838dcc42c4ae90465077605a8a8a160bf2087ed7ae6111"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

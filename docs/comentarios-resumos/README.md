@@ -8,6 +8,17 @@ O inventário inclui toda questão citada em um resumo ou com pelo menos um subt
 
 Uma questão só recebe `baseResumo` depois de revisão editorial individual da aula e de **cada** alternativa, com todos os fatos necessários sustentados pelos trechos consultados. Acrescentar referência, trocar o título ou copiar um texto genérico para várias opções não conclui a revisão. A identificação na interface é exibida apenas para comentários com esses metadados. Revisão médica é outro atributo: manter `conferido: false`.
 
+O pedido atual do dono de 27/10/2026 abrange **todas** as candidatas existentes,
+inclusive SIMÃO/SBCM, e define como fontes os resumos Markdown e seus capítulos
+JSON. Nesse fluxo específico, uma revisão com cobertura individual suficiente
+é identificada como fonte secundária; não se exige nem se simula consulta do Green
+local. As referências primárias anteriores ficam no histórico, sem serem usadas
+como prova da nova revisão. Preservar o parágrafo específico “Por que esta questão
+foi criada”, conferindo sua origem nos metadados. A exigência do Green com página
+permanece para novos simulados e para qualquer revisão que declare fonte primária.
+Essa orientação atual prevalece sobre a exclusão de SIMÃO/SBCM descrita nas
+passagens `cNN` abaixo, que registra o escopo adotado por aquela passagem.
+
 Não usar comentário antigo como fonte bibliográfica. Ele é material a auditar. Remover afirmações e referências não verificadas que não sejam necessárias; registrar pendência se um dado decisivo não estiver no resumo. Não atribuir leitura direta do livro quando foi consultado apenas o resumo. Referências devem dizer “Conteúdo consultado no resumo …”. Na aula, citar livro, edição, capítulo e seção. O resumo digital não tem página impressa: não transformar posição no PDF composto em página do livro.
 
 Preservar enunciado, opções e resposta oficial. Divergências vão em `alerta`, com explicação das duas posições. Sem gabarito oficial, usar `provavel` só quando a fonte sustenta uma resposta única. Se duas alternativas forem defensáveis, registrar ambiguidade sem fabricar gabarito. Anuladas precisam de explicação de todas as alternativas e da anulação. Duplicadas não contam como revisão independente. Não sobrescrever `conferido: true`.

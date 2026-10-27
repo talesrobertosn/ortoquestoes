@@ -1,0 +1,115 @@
+{
+  "mao-2209": {
+    "questaoSha256": "e23b35af1638d69afd0b795efff82affaa6d79ff2717975562e1a6d6b99b736b",
+    "comentarioAnteriorSha256": "b7fe9e1458c72f59c6164f3751a762ca48dda59b74ec1abc0fed1c9cea9a5ec4",
+    "comentario": {
+      "conceito": "Uma reconstrução ligamentar precisa conseguir **colocar o carpo em posição antes de mantê-lo nessa posição**. Nas fases avançadas de Garcia-Elias, a deformidade já é fixa e pode haver artrose; por isso, a reconstrução tendínea isolada tende a falhar. Acrescentar enxerto não transforma automaticamente um desalinhamento irredutível em uma articulação reconstruível (Rockwood adultos, 10ª ed., cap. 44, tratamento escafossemilunar).\n\nO algoritmo pergunta sobre o ligamento dorsal, sua reparabilidade, a posição do escafoide, a redutibilidade e a cartilagem. Quando a lesão é irreparável, mas a deformidade ainda **redutível**, as reconstruções com tendão podem manter uma redução obtida. Quando a deformidade não se reduz, é preciso considerar salvamentos que lidem com a posição fixa e com o estado das superfícies articulares.\n\nA numeração das fases finais varia nas duas tabelas que o resumo apresenta. A tabela de tratamento de seis estágios chama de V a deformidade irredutível sem artrose e de VI a que já tem artrose; a tabela de sete estágios acrescenta translação ulnar e usa VI para a deformidade irredutível. Em ambas, a fase VI já está além do cenário redutível apropriado à reconstrução ligamentar isolada.\n\nO tratamento pode incluir artrodeses limitadas, carpectomia em situações com cartilagem adequada ou procedimentos mais extensos nos casos graves. O critério não é eleger a técnica ligamentar mais moderna: é reconhecer quando a mecânica e a cartilagem já impedem que esse grupo de operações resolva o problema.\n\n**Por que esta questão foi criada.** Inspirada na questão 42 da SBCM 2023, que cobrou o comportamento das reconstruções ligamentares no estágio 6 de GARCIA-ELIAS.",
+      "correta": "**Correta: B (tendem a falhar pela dificuldade de reduzir o carpo).** A deformidade avançada é fixa, e uma reconstrução ligamentar não substitui a obtenção de redução. Na tabela de tratamento, o estágio VI ainda acrescenta artrose, reforçando a necessidade de avaliar salvamento.",
+      "incorretas": {
+        "A": "A capsulodese pode reforçar um reparo ou conter a flexão do escafoide em estágios apropriados. Ela não elimina a deformidade fixa nem restaura cartilagem gasta. A alternativa promete bom funcionamento sem enfrentar o impedimento mecânico que define a fase avançada.",
+        "C": "O resumo inclui ANAFAB entre as reconstruções para deformidade redutível e cartilagem preservada no estágio IV. Reconstruir componentes anterior e posterior não apaga os requisitos de redução e de superfície articular útil. Transferir essa indicação para a fase fixa ignora o algoritmo.",
+        "D": "A tenodese de três ligamentos também pertence ao tratamento da lesão irreparável com deformidade redutível. A pergunta não apresenta evidência de superioridade dela nas fases fixas, e o resumo encaminha essas fases para salvamentos. Escolher uma reconstrução específica não resolve a impossibilidade de reduzir o carpo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-614919e2",
+          "dissociacao-escafossemilunar-8935e6ce",
+          "dissociacao-escafossemilunar-f6a7a76b",
+          "dissociacao-escafossemilunar-6cbb5bca",
+          "dissociacao-escafossemilunar-dea04ab1"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "a2b143a796890c13175c9ac63a5d1d0fc97c4ebae1128b5847de91a959bf73a5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2213": {
+    "questaoSha256": "8bfa196dceaefd7b5c6c86ca0775d5b5519a1dd4765ce034ef71bcb5c6cec1da",
+    "comentarioAnteriorSha256": "2dbb94b0e9e9d4bf6abee253896d50a41e2978015bba86d2be6209ce7522c37c",
+    "comentario": {
+      "conceito": "O **tipo IIIB da EWAS** corresponde à lesão da **porção dorsal do ligamento escafossemilunar**. A classificação artroscópica diferencia o local da ruptura e a instabilidade produzida; suas letras não devem ser decoradas sem entender qual lado do intervalo perdeu contenção (Rockwood adultos, 10ª ed., cap. 44, classificações artroscópicas).\n\nO escafossemilunar tem porções dorsal, palmar e proximal membranosa. A dorsal é a mais espessa e forte e funciona como a principal contenção desse elo; a palmar é mais fina e participa do controle da rotação; a membranosa é fibrocartilaginosa e mais fraca. Uma lesão de uma parte não equivale automaticamente à ruptura de todas.\n\nNa descrição da EWAS pelo resumo, **II** é lesão da membrana, estável; **IIIA** é lesão palmar com frouxidão anterior; **IIIB** é lesão dorsal com frouxidão posterior; **IIIC** é ruptura completa redutível, com passagem do probe e retorno da articulação ao retirá-lo. Assim, a diferença entre IIIA e IIIB é o lado comprometido; a passagem para IIIC acrescenta completude e comportamento de redução.\n\nA avaliação artroscópica permite observar essas diferenças mesmo sem uma diástase estática evidente na radiografia. Não é adequado substituir a descrição do ligamento e sua frouxidão por um único ângulo radiográfico. A pergunta pede uma parte anatômica específica da classificação, não a graduação de um desalinhamento fixo.\n\n**Por que esta questão foi criada.** Inspirada na questão 86 da SBCM 2023, que cobrou a porção do ligamento lesada no tipo IIIB da EWAS.",
+      "correta": "**Correta: A (porção dorsal).** O tipo IIIB é a lesão dorsal, associada a frouxidão posterior na classificação apresentada. A identificação depende da localização da ruptura, distinguindo-a da lesão palmar IIIA e da ruptura completa IIIC.",
+      "incorretas": {
+        "B": "A porção palmar corresponde ao tipo IIIA, com frouxidão anterior. Trocar A por B muda o lado do ligamento que perdeu contenção. A parte palmar participa do controle rotacional, mas não é a localização designada por IIIB.",
+        "C": "Uma lesão isolada da membrana é descrita no tipo II, com estabilidade e entrada da ponta do probe. O tipo IIIB já envolve a porção dorsal e frouxidão posterior. A parte membranosa é mais fraca, mas sua lesão isolada não define o subtipo perguntado.",
+        "D": "A ruptura completa, envolvendo o conjunto de contenções, não é sinônimo de IIIB. O resumo descreve o IIIC como ruptura completa redutível, com abertura ao probe e retorno após sua retirada. A opção elimina a localização dorsal específica e acrescenta uma extensão de lesão que pertence a outra categoria."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-67e58eaf",
+          "dissociacao-escafossemilunar-2039b898"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "207181b9f4d2aad23e21247e82dd301ecb6698c26767e56442602a994fc5ee2a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2222": {
+    "questaoSha256": "40ec3c45ed2153be3806e2ad12039a4323b45849f79bde08cbd2daa9059d1aa9",
+    "comentarioAnteriorSha256": "068f662779757a90a28190de4aafd6d85cf59d600ddd159cbe54e49e32b96136",
+    "comentario": {
+      "conceito": "A desvantagem destacada da fixação dorsal é que ela exige **fletir o punho**, o que pode **desreduzir uma fratura instável** do escafoide. A posição que facilita alcançar o ponto de entrada também pode prejudicar a relação entre os fragmentos. Esse é o conflito técnico que a alternativa D descreve (Rockwood adultos, 10ª ed., cap. 44, vias de fixação percutânea).\n\nA via dorsal tem vantagens reais: facilita um parafuso mais central e a compra no polo proximal. Na descrição técnica do resumo, o punho fica em cerca de **30° a 45° de flexão**, e o ponto de entrada fica próximo da articulação escafossemilunar. Ao escolher a via, não basta buscar um bom eixo de parafuso; é necessário manter a redução durante o posicionamento.\n\nNa via volar, o punho é colocado em **extensão e desvio ulnar**, o que ajuda a reduzir e afasta o trapézio. Ela evita a necessidade de flexionar o punho, mas tem outras limitações, como menor facilidade de centralização do parafuso e acesso menos favorável ao pequeno polo proximal. Nenhuma via reúne todas as vantagens.\n\nO resumo informa resultados semelhantes das duas vias na fratura aguda da cintura. Portanto, a via dorsal não é exclusiva do polo proximal. A escolha depende da localização, do traço, da possibilidade de redução e da forma de fixação; numa fratura instável, deve-se vigiar se a própria manobra de posicionamento está deslocando o que se pretende estabilizar.\n\n**Por que esta questão foi criada.** Inspirada na questão 44 da SBCM 2023, que cobrou as características da fixação do escafoide pela via dorsal.",
+      "correta": "**Correta: D (flexionar pode deslocar a fratura instável).** O resumo apresenta explicitamente essa desvantagem da via dorsal. Flexão útil para a trajetória do implante e manutenção da redução são objetivos que precisam ser conciliados durante o procedimento.",
+      "incorretas": {
+        "A": "A centralização é uma vantagem da via dorsal, não sua principal dificuldade. O resumo relaciona essa via a parafuso mais central e melhor compra proximal. A dificuldade de centralização aparece como limitação relativa da via volar.",
+        "B": "O resumo não apresenta esse intervalo como a exigência que define a desvantagem perguntada. No miniacesso dorsal do polo proximal, descreve o espaço entre o segundo e o terceiro compartimentos, e não entre o primeiro e o segundo. O problema mecânico explicitamente ligado à posição do punho continua sendo a possível desredução pela flexão.",
+        "C": "A via dorsal também pode ser usada em fraturas da cintura; o resumo compara seus resultados com a volar nessa localização. O bom acesso ao polo proximal é uma vantagem de aplicação, não uma restrição que a torne exclusiva dessas fraturas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: tratamento da fratura aguda."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: tratamento da fratura aguda"
+        ],
+        "blocos": [
+          "escafoide-tratamento-da-fratura-aguda-c114353d",
+          "escafoide-tratamento-da-fratura-aguda-594f812e",
+          "escafoide-tratamento-da-fratura-aguda-dcc89a77",
+          "escafoide-tratamento-da-fratura-aguda-056fbc49"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "62d3f9d7115e3a740a63b4aac362b6f5167436bd58ea01b525052e853f6e54a6"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
