@@ -747,26 +747,86 @@
   "conferido": false
  },
  "trauma-0027": {
+  "alerta": "Gabarito oficial D mantido. O resumo do Rockwood and Green (cap. 40) apoia a sobrecarga do capítulo (alongamento excessivo) como a causa técnica mais comum de falha, mas, na revisão sistemática citada, o motivo de revisão mais frequente foi o afrouxamento asséptico (30%), que também está entre as alternativas.",
+  "conceito": "Uma prótese da cabeça do rádio não substitui só uma superfície: ela recoloca uma coluna entre o capítulo e a ulna. Se essa coluna fica alta ou grossa demais, empurra o capítulo o tempo todo. É disso que a banca está falando.\n\n**Por que é fácil errar o tamanho.** O Rockwood and Green (10ª ed., cap. 40) lembra que a cabeça nativa é **elíptica**, enquanto a maioria das próteses é redonda. O diâmetro certo é o **menor** diâmetro da elipse; na dúvida entre dois tamanhos, escolhe-se o menor, no diâmetro e na espessura. A altura segue a radioulnar proximal: a prótese deve articular cerca de **2 mm abaixo da ponta do coronoide**. Medir pela distância entre o capítulo e o corte do colo engana, porque o colateral lateral costuma estar roto e o espaço fica aberto.\n\n**O que o alongamento faz.** O alongamento excessivo (overstuffing) causa **dor, rigidez e desgaste do capítulo**, e o capítulo o aponta como **a causa técnica mais comum de falha**. A radiografia ajuda pouco: o espaço umeroulnar medial perde o paralelismo e abre do lado lateral, mas isso só aparece com 6 a 8 mm de alongamento. Radiografias do lado oposto ajudam a comparar.\n\n**O que dizem as revisões.** Na revisão sistemática citada no resumo, com 152 próteses que falharam, os motivos de revisão foram **afrouxamento asséptico (30%)**, **rigidez (20%)** e **dor persistente (17%)**, com mediana de 14 meses. Linhas radiolúcidas que não progridem em volta de hastes lisas são comuns e não se associam a sintomas.\n\n> **Na prova:** \"principal complicação\" da prótese da cabeça do rádio tem sido lida como o excesso de altura, que sobrecarrega o capítulo. Escolha o menor diâmetro e nunca uma prótese mais alta que a cabeça nativa.",
+  "correta": "**D: sobrecarga do capítulo.** O alongamento excessivo da prótese comprime o capítulo e causa dor, rigidez e desgaste da cartilagem. É a falha técnica mais comum descrita no capítulo e a resposta da banca.",
   "incorretas": {
-   "A": "A luxação da prótese é rara.",
-   "B": "A dor no punho sugere prótese curta ou Essex-Lopresti não reconhecido.",
-   "C": "A soltura é comum na radiografia, mas tem pouca relevância clínica."
+   "A": "**Não está entre os motivos principais.** Entre as causas de revisão listadas na revisão sistemática do resumo (afrouxamento, rigidez e dor), a luxação da prótese não aparece como problema dominante.",
+   "B": "**É pista de outra lesão.** Dor no punho, numa fratura da cabeça do rádio, é o sinal clínico que o capítulo manda procurar para não deixar passar a lesão de Essex-Lopresti, com ruptura da membrana interóssea e da radioulnar distal. Não é a complicação típica da prótese.",
+   "C": "**Frequente, mas não foi o gabarito.** O afrouxamento asséptico foi o motivo de revisão mais comum (30%) na revisão citada, sobretudo nas próteses de encaixe sob pressão. A banca, porém, escolheu a sobrecarga do capítulo, que o capítulo descreve como a principal falha técnica. Veja o alerta."
   },
-  "conceito": "A **cabeça do rádio** é um estabilizador **secundário ao valgo** do cotovelo e, junto com a **membrana interóssea**, um estabilizador **longitudinal** do antebraço.\n\n**Quando trocar por prótese**: fratura de **Mason III** que não dá para reconstruir, sobretudo com **instabilidade** associada: tríade terrível, lesão de Essex-Lopresti ou colateral medial roto. Ressecar sem repor deixa o cotovelo e o antebraço instáveis.\n\n**A principal complicação**: a **sobrecarga do capítulo** (overstuffing). Uma prótese **alta ou grande demais** empurra o capítulo, causa **dor**, **perda de flexão** e **desgaste** da cartilagem do capítulo.\n\n**Como acertar a altura**: o topo da prótese deve ficar no nível da **borda lateral do coronoide** (na incisura radial da ulna), com o espaço ulnoumeral lateral **simétrico** na radiografia.\n\n**As outras complicações**: a **soltura** radiográfica (halo em volta da haste) é comum, mas pouco relevante na clínica; a **luxação** é rara; a **dor no punho** sugere uma prótese **curta** ou uma lesão de Essex-Lopresti não reconhecida.\n\n**Na prova**: a principal complicação da artroplastia da cabeça do rádio é a **sobrecarga do capítulo**.",
-  "correta": "A prótese alta ou grande sobrecarrega o capítulo, com dor, perda de flexão e desgaste da cartilagem.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-c4d889b2",
+      "fratura-da-cabeca-do-radio-3e116d65",
+      "fratura-da-cabeca-do-radio-c6ab590d",
+      "fratura-da-cabeca-do-radio-5c3c5627",
+      "fratura-da-cabeca-do-radio-8dbbe2b9"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "e8e0aca82c0714f2a65effc50c4d7606f115dbf9d3b0cdf8f9e0d95a6c36595d"
+    }
+   ],
+   "questaoSha256": "2e26821c3cd8e83759fba0703f5d9a0a4ab28e5e593595c05bf77ecb5c3ae536",
+   "comentarioSha256": "5ec6f9d0a5b601f55950ea6f67026d89a08869a932822a908aa30821336f88a9"
+  }
  },
  "trauma-0028": {
+  "conceito": "Pense no antebraço como um anel: rádio e ulna unidos em cima pela radioulnar proximal, no meio pela membrana interóssea e embaixo pela radioulnar distal. Um anel que quebra num ponto só costuma ficar firme; quebrado em dois pontos, ele se solta. A lesão de Essex-Lopresti é o anel rompido no rádio proximal e embaixo, com a membrana entre os dois.\n\n**Como acontece.** O Rockwood and Green (10ª ed., cap. 40) descreve um dos mecanismos da fratura da cabeça do rádio como **carga axial**: a cabeça impacta no capítulo e, com mais energia, a força desce pelo antebraço e rompe a **membrana interóssea** e a **articulação radioulnar distal**. Com as duas amarras rompidas, o **rádio sobe**.\n\n**A definição do capítulo.** É a **instabilidade longitudinal do antebraço**: fratura do rádio proximal (o capítulo a descreve com a cabeça do rádio) com ruptura da membrana interóssea e da radioulnar distal. O que define a lesão não é o ponto exato da fratura no rádio proximal, e sim a combinação com a **membrana** e a **radioulnar distal**.\n\n**Por que diagnosticar cedo.** A reconstrução tardia é difícil e muitas vezes insatisfatória. Por isso o capítulo manda **examinar o punho** em toda fratura da cabeça do rádio, procurando dor na radioulnar distal, e testar a instabilidade longitudinal na cirurgia.\n\n| Lesão | Osso fraturado | Articulação lesada |\n|---|---|---|\n| Essex-Lopresti | Rádio proximal | Radioulnar distal (e membrana) |\n| Monteggia | Ulna | Luxação da cabeça do rádio |\n| Galeazzi | Diáfise do rádio | Radioulnar distal |\n\n> **Na prova:** Essex-Lopresti é rádio proximal com membrana interóssea e radioulnar **distal**. A pista clínica é a dor no punho.",
+  "correta": "**B: do colo do rádio e lesão da articulação radioulnar distal.** É a única alternativa que junta a fratura do rádio proximal com a lesão da radioulnar distal, que, com a membrana, define a instabilidade longitudinal. O capítulo descreve a lesão com a fratura da cabeça do rádio; a banca usou o colo, que também é rádio proximal.",
   "incorretas": {
-   "A": "Fratura da ulna com luxação da cabeça do rádio é a lesão de Monteggia.",
-   "C": "Fratura da diáfise do rádio com lesão da radioulnar distal é a de Galeazzi.",
-   "D": "Na Essex-Lopresti, a lesão articular que acompanha é a radioulnar distal."
+   "A": "**É Monteggia.** Fratura da ulna com luxação da cabeça do rádio é a definição de Monteggia, o distrator mais repetido deste tema segundo o resumo.",
+   "C": "**É Galeazzi.** Fratura da diáfise do rádio com lesão da radioulnar distal é Galeazzi. A articulação distal está certa, mas o osso fraturado está no lugar errado: na Essex-Lopresti a fratura é no rádio proximal.",
+   "D": "**Articulação errada.** A fratura da cabeça do rádio está certa, mas a lesão que define a Essex-Lopresti é na radioulnar **distal**, no punho. É por isso que a dor no punho é a pista clínica."
   },
-  "conceito": "O antebraço funciona como um **anel**: rádio e ulna ligados pela **articulação radioulnar proximal**, pela **membrana interóssea** e pela **articulação radioulnar distal**. Quando o anel quebra em mais de um ponto, o rádio fica livre para **migrar**.\n\n**A lesão de Essex-Lopresti** junta três lesões:\n\n**fratura da cabeça ou do colo do rádio**;\n\n**ruptura da membrana interóssea**;\n\n**lesão da articulação radioulnar distal**.\n\n**O resultado**: o rádio **sobe**, a ulna fica relativamente mais longa (variância **positiva**) e aparece **dor no punho**.\n\n**O diagnóstico**: suspeitar em toda fratura da cabeça do rádio com **dor no punho** ou no antebraço; comparar a variância ulnar com o lado oposto; ultrassom ou RM mostram a membrana.\n\n**O tratamento**: **nunca ressecar** a cabeça do rádio sem repor: fixar ou colocar **prótese**. Estabilizar a radioulnar distal (fios em supinação); reconstruir a membrana nos casos crônicos.\n\n**As lesões que se parecem**: **Monteggia** é a fratura da ulna com luxação da cabeça do rádio; **Galeazzi** é a fratura da diáfise do rádio com lesão da radioulnar distal.\n\n**Na prova**: Essex-Lopresti é a fratura da **cabeça ou do colo do rádio** com lesão da **membrana interóssea** e da **radioulnar distal**.",
-  "correta": "A fratura do colo do rádio, a membrana rota e a lesão da radioulnar distal deixam o rádio migrar para cima.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-8dbbe2b9",
+      "fratura-da-cabeca-do-radio-a6880686",
+      "fratura-da-cabeca-do-radio-e729e04e",
+      "fratura-da-cabeca-do-radio-8b978969"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "cb91cc33bf99ac545f48361ddc530bf2f1f6c7853396f2fc7974c0918e6f4e58"
+    }
+   ],
+   "questaoSha256": "400d31e8b3c288ec55af9eb3cdfc865c78bfa1c6cf8aaa097c62409557bda3aa",
+   "comentarioSha256": "7cfa4b9530885f3a33379b57b6407f059fa90eb5b43f5e8c191e2977ed24ffbc"
+  }
  },
  "trauma-0029": {
   "incorretas": {
@@ -3113,15 +3173,44 @@
   }
  },
  "trauma-0106": {
+  "conceito": "Na Essex-Lopresti crônica, o problema já se instalou: a membrana interóssea e a radioulnar distal não seguram mais, e o rádio subiu. O punho dói porque a ulna ficou relativamente mais longa, e o cotovelo perdeu o apoio radiocapitelar. A pergunta é como reequilibrar as duas pontas do antebraço.\n\n**O que o capítulo diz sobre a fase crônica.** O Rockwood and Green (10ª ed., cap. 40) lista as opções para a lesão crônica: antebraço de um osso só, **prótese da cabeça do rádio com encurtamento da ulna** (imediato ou em segundo tempo) ou reconstrução da membrana com prótese. Ele lembra também que a reconstrução tardia é difícil e muitas vezes insatisfatória, o que torna o diagnóstico precoce tão importante.\n\n**Por que as duas peças juntas.** A prótese da cabeça recoloca a coluna lateral entre o rádio e o capítulo e impede que o rádio continue subindo. O encurtamento da ulna corrige a diferença de comprimento no punho, que o rádio migrado criou. Uma sem a outra resolve metade do problema.\n\n**O que nunca fazer.** Ressecar a cabeça do rádio piora a migração: depois de uma ressecção, 2 a 3 mm de subida já são esperados, e muito mais que isso indica lesão das estruturas distais. A instabilidade axial crônica aparece justamente depois de ressecar sem repor.\n\n> **Na prova:** Essex-Lopresti crônica se trata com prótese da cabeça do rádio e encurtamento da ulna. Ressecar a cabeça é a armadilha.",
+  "correta": "**B: encurtamento da ulna e artroplastia da cabeça do rádio.** A prótese restaura o apoio radiocapitelar e impede nova subida do rádio, e o encurtamento da ulna corrige a variância no punho. É uma das opções que o capítulo descreve para a lesão crônica.",
   "incorretas": {
-   "A": "A ressecção da cabeça do rádio piora a migração proximal.",
-   "C": "O alongamento do rádio é tecnicamente difícil e instável.",
-   "D": "Ressecar a ulna distal (Darrach) desestabiliza mais o antebraço."
+   "A": "**A ressecção faz o rádio subir mais.** O encurtamento da ulna até alivia o punho, mas tirar a cabeça do rádio remove o apoio que segura o rádio por cima. O resumo marca essa combinação como armadilha: a ressecção piora a migração.",
+   "C": "**Não está entre as opções do capítulo para a fase crônica.** Reparar a fibrocartilagem triangular aparece no tratamento da fase aguda, junto com a fixação temporária da radioulnar distal. Na lesão crônica, o capítulo restaura o comprimento relativo encurtando a ulna e recolocando a cabeça do rádio, não alongando o rádio.",
+   "D": "**Retira a outra ponta do anel.** O problema é um antebraço instável no sentido longitudinal. Alongar o rádio não está entre as opções descritas, e ressecar a extremidade distal da ulna tira mais um apoio de um anel que já está rompido, em vez de devolver estabilidade."
   },
-  "conceito": "Na **lesão de Essex-Lopresti crônica**, a membrana interóssea cicatrizou **encurtada**, e o **rádio migrou para cima**. A ulna fica relativamente mais longa (**variância positiva**), com **impacto ulnocarpal**, dor no **punho** e no **cotovelo**.\n\n**O problema**: nenhum procedimento isolado resolve bem. A estratégia combina:\n\n**encurtamento da ulna**: corrige a variância e alivia o punho;\n\n**artroplastia da cabeça do rádio**: devolve o \"**poste**\" lateral que impede o rádio de subir;\n\n**reconstrução da membrana interóssea**, em casos selecionados.\n\n**O que nunca fazer**: **ressecar a cabeça do rádio**. Sem ela, o rádio sobe ainda mais.\n\n**Os procedimentos inadequados**: **alongar o rádio** é tecnicamente difícil e instável; ressecar a **extremidade distal da ulna** (Darrach) desestabiliza ainda mais o antebraço.\n\n**Na prova**: na Essex-Lopresti crônica, indica-se o **encurtamento da ulna** com **artroplastia da cabeça do rádio**.",
-  "correta": "O encurtamento da ulna corrige a variância, e a prótese da cabeça do rádio impede que o rádio volte a subir.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-8dbbe2b9",
+      "fratura-da-cabeca-do-radio-a6880686",
+      "fratura-da-cabeca-do-radio-e729e04e",
+      "fratura-da-cabeca-do-radio-f2b0249f"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "18a990cfc95204030bb31a542c04433a6792a5549b8b26ec884a93d3c36e1d49"
+    }
+   ],
+   "questaoSha256": "2b43bac005101a87c2689b1507321e78ddea12e940f05c3f6cb29de51b7374b3",
+   "comentarioSha256": "6870e3ca9d9014cdfad85dee39b99924cf04f587ce5c1ba1cc3e9ebf34fca938"
+  }
  },
  "trauma-0107": {
   "conceito": "Uma fratura bilateral interrompe a ligação entre as articulações de C2 e permite uma espondilolistese traumática do áxis. O local clássico dessa fratura, chamada de enforcado, é a **pars interarticularis**, alternativa C.\n\nA pars é o istmo entre as regiões articulares. Em C2, as articulações inferiores ficam mais posteriores que as superiores: essa disposição de transição entre a coluna alta e a subaxial submete a pars a cisalhamento sob carga. O nome da lesão ajuda menos que enxergar qual ponte óssea foi interrompida (Rockwood, 10ª ed., cap. 48, “Onde quebra e por quê”).\n\n**O disco C2–C3 muda a estabilidade do conjunto.** Na classificação de Levine e Edwards, o tipo I não apresenta lesão discal importante; o II combina angulação e translação com dano do disco; o IIa tem grande angulação com translação mínima; o III acrescenta luxação facetária. Localizar a pars é o começo da análise, não a conclusão de que todas as fraturas terão o mesmo tratamento.\n\nO capítulo também adverte sobre o nome histórico: a fratura era rara nas necropsias de enforcamento judicial. Não é necessário presumir esse mecanismo para reconhecer uma fratura da pars num acidente.\n\n> **Na prova:** enforcado clássico é fratura bilateral da pars de C2.",
@@ -3598,15 +3687,47 @@
   }
  },
  "trauma-0123": {
+  "conceito": "O odontoide é o pino em volta do qual C1 gira. Quando ele quebra, o lugar do traço decide quase tudo: a frequência, a chance de consolidar e o tratamento. A banca quer o tipo que junta as duas marcas: o mais comum e o que mais pseudartrosa.\n\n**A classificação de ANDERSON e D'ALONZO.** No Rockwood and Green (10ª ed., cap. 48): **tipo I**, avulsão da **ponta**, raríssima isolada; **tipo II**, traço na **cintura**, a junção entre o dente e o corpo de C2; **tipo III**, traço que **entra no corpo** de C2, no osso esponjoso. A classificação é só descritiva.\n\n**Por que o tipo II não consolida.** Na cintura, a área de contato entre os fragmentos é pequena e o osso é mais cortical. No tipo III, o traço atravessa o osso esponjoso largo do corpo, com muita superfície para consolidar. Os números do capítulo mostram a diferença: o **tipo III** consolida bem imobilizado (87% no halo numa série, cerca de 95% numa revisão), enquanto o **tipo II** consolida em 66% no halo numa série, menos de 50% em outra, e numa série de 340 fraturas de C2 a pseudartrose do tipo II chegou **perto de 30%**.\n\n**Sobre os números da questão.** Os 36% citados pela banca não estão no capítulo, que traz as cifras acima. A resposta, porém, é a mesma: o tipo II é o mais comum e o de maior taxa de pseudartrose.\n\n> **Na prova:** odontoide tipo II, na cintura, é o mais comum e o que mais vira pseudartrose; o tipo III, no corpo, consolida bem.",
+  "correta": "**B: tipo II.** O traço na cintura do dente tem pouca área de contato e osso cortical, e o capítulo mostra as menores taxas de consolidação nesse tipo. O capítulo também o aponta como o tipo mais comum.",
   "incorretas": {
-   "A": "O tipo I é a avulsão da ponta, rara.",
-   "C": "O tipo III atravessa o osso esponjoso do corpo e consolida bem.",
-   "D": "Não existe tipo IV na classificação original de Anderson e D'Alonzo."
+   "A": "**Raríssimo isolado.** O tipo I é a avulsão da ponta do dente; o capítulo diz que, isolado, é raríssimo e pode ser sinal de dissociação occipitocervical oculta.",
+   "C": "**Consolida bem.** O tipo III entra no osso esponjoso do corpo de C2 e consolida com imobilização na grande maioria. O resumo marca \"tipo III como o que mais pseudartrosa\" como armadilha.",
+   "D": "**Não existe na classificação.** ANDERSON e D'ALONZO têm só três tipos."
   },
-  "conceito": "**Anderson e D'Alonzo** classificam as fraturas do **odontoide** em três tipos:\n\n**tipo I**: avulsão da **ponta**, pelo ligamento alar; rara;\n\n**tipo II**: fratura na **base do dente**, na junção com o corpo de C2; a **mais comum** e a de maior risco de **pseudartrose**, em cerca de **36%** dos casos;\n\n**tipo III**: o traço entra no **corpo de C2**, em osso esponjoso; consolida bem.\n\n**Por que o tipo II não consolida**: a base do dente é uma região de **irrigação pobre** (watershed), com pouco osso esponjoso e pequena área de contato. Além disso, as forças sobre ela são grandes.\n\n**Os fatores de risco de pseudartrose no tipo II**: idade acima de **50 anos**, desvio maior que **5 mm**, angulação maior que **10°** e cominução da base (tipo **IIA** de Hadley).\n\n**O tratamento do tipo II**: halo ou colar em casos selecionados; **parafuso anterior** no dente ou **artrodese C1-C2** posterior quando há fatores de risco.\n\n**Na prova**: a fratura do odontoide mais comum, com pseudartrose em 36%, é o **tipo II**.",
-  "correta": "O tipo II, na base do dente, é o mais comum e não consolida em cerca de 36%, pela irrigação pobre.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Como ler este capítulo; Fratura do odontoide (C2)."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Como ler este capítulo",
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "como-ler-este-capitulo-793dbcb8",
+      "fratura-do-odontoide-c2-8f7d9c62",
+      "fratura-do-odontoide-c2-623f1b6d",
+      "fratura-do-odontoide-c2-bc203da4",
+      "fratura-do-odontoide-c2-e392c5c7",
+      "fratura-do-odontoide-c2-e7ea3a69"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "94b59afb8dd73735487a6d6d9247767d694784c7b0ff818b1219558fbddfd049"
+    }
+   ],
+   "questaoSha256": "e3274090e21fa34271bc5f5c1c8d89101023428c8b87222d43cb288cd8181181",
+   "comentarioSha256": "0aac16457f8eca25584ae6064fca8f362404f3da8cc89fe6427b61b90d74b9df"
+  }
  },
  "trauma-0124": {
   "conceito": "A energia que produz a fratura da **parede anterior** pode chegar pelo trocânter maior, seguir o **eixo do colo femoral** e atingir a frente do acetábulo com o quadril em **rotação lateral**. É o par da alternativa A.\n\nA cabeça transmite a força ao ponto da taça para o qual está orientada. Na tabela do resumo, com força pelo colo e abdução/adução neutras, cerca de **25 graus de rotação externa** se associam à **coluna anterior**; com cerca de **50 graus**, à **parede anterior**. Portanto, aumentar a rotação nesse exemplo muda de coluna para parede, e não o contrário (Rockwood, 10ª ed., cap. 51, “Mecanismo de trauma”).\n\n**O eixo da diáfise é outro cenário.** No trauma de painel, com o quadril fletido a 90 graus, a força sobe do joelho e pode causar fratura da parede posterior. A adução aumenta a possibilidade de luxação posterior. Com o quadril estendido, o impacto tende a alcançar regiões mais craniais.\n\nA posição do membro no momento da batida importa tanto quanto a direção da força. “Força pelo fêmur” ou “rotação externa” isoladamente não bastam para prever um padrão; é preciso combinar eixo, flexão e orientação.",
@@ -4348,19 +4469,42 @@
   "conferido": false
  },
  "trauma-0152": {
-  "conceito": "**A classificação de Magerl (AO) para a coluna.** Foi desenvolvida para a coluna toracolombar e aplicada também à **coluna cervical baixa** (subaxial, de C3 a C7). Ela organiza as lesões por **mecanismo** e por **gravidade crescente**:\n\n| Tipo | Mecanismo | Gravidade |\n|---|---|---|\n| **A** | **Compressão**: o corpo vertebral é esmagado; os elementos posteriores ficam íntegros | A **menos grave** |\n| **B** | **Distração**: lesão por flexão ou extensão, com ruptura dos elementos posteriores ou anteriores (banda de tensão) | Intermediária |\n| **C** | **Rotação** (com translação): lesão das duas colunas com componente rotacional | A **mais grave** |\n\n**Por que a rotação é a pior.** Nas lesões do tipo **C**, há ruptura das estruturas **anteriores e posteriores** e um componente de **rotação ou translação**. A vértebra se desloca em mais de um plano, a instabilidade é máxima e o risco de **lesão neurológica** é o maior. Em cada tipo, as subdivisões também seguem a ordem de gravidade crescente.\n\n**A classificação atual: AO Spine subaxial (2015).** Hoje, a AO usa uma classificação um pouco diferente para a coluna cervical subaxial:\n- **Tipo A**: lesões por **compressão** (A0 a A4).\n- **Tipo B**: lesões da **banda de tensão** (B1 a B3).\n- **Tipo C**: **translação** em qualquer direção (a mais grave).\n- Modificadores: lesão das **facetas** (F1 a F4), estado **neurológico** (N0 a N4, NX) e modificadores do caso (M1 a M4).\n\n**As outras classificações da coluna cervical subaxial.**\n- **Allen e Ferguson**: mecanística, com seis grupos (flexão-compressão, compressão vertical, flexão-distração, extensão-compressão, extensão-distração, flexão lateral).\n- **SLIC** (Subaxial Injury Classification): soma a **morfologia**, a integridade do **complexo discoligamentar** e o estado **neurológico**. Com **5 pontos ou mais**, indica-se cirurgia.\n\n**O tratamento.** As lesões estáveis (muitas do tipo A) podem ser tratadas com colar. As instáveis (B e C), sobretudo com déficit neurológico, são tratadas com **descompressão** e **artrodese**.",
-  "correta": "**Correta: A (rotação).** Na classificação de Magerl (AO) aplicada à coluna cervical baixa, as lesões são graduadas em compressão (A), distração (B) e **rotação** (C), em ordem crescente de gravidade. As lesões rotacionais são as **mais graves**, com ruptura anterior e posterior e maior risco neurológico.",
+  "conceito": "As classificações da AO para a coluna seguem uma lógica de gravidade crescente: primeiro o corpo cede à compressão, depois a banda de tensão se rompe, e por fim a vértebra perde o alinhamento com a vizinha. A banca pergunta qual é o último degrau na versão antiga, de MAGERL.\n\n**A lógica da AO.** O Rockwood and Green (10ª ed., cap. 48) descreve a classificação AO Spine subaxial com a mesma lógica da toracolombar: **tipo A**, compressão com a banda de tensão posterior íntegra; **tipo B**, falha da banda de tensão anterior ou posterior **sem desalinhamento**; **tipo C**, lesão **com desalinhamento**, a translação. Na versão antiga de MAGERL, o tipo C era descrito como lesão por **rotação**.\n\n**Por que a rotação é a mais grave.** Para uma vértebra girar ou transladar sobre a outra, todas as amarras precisam ter cedido: corpo, disco, ligamentos e complexo posterior. É a lesão mais instável, a que mais ameaça o canal e a que menos aceita tratamento sem cirurgia.\n\n| Tipo | Lesão | Gravidade |\n|---|---|---|\n| A | Compressão | Menor |\n| B | Distração | Intermediária |\n| C | Rotação ou translação | Maior |\n\n> **Na prova:** na AO, a gravidade sobe de A (compressão) para B (distração) e C (rotação ou translação).",
+  "correta": "**A: rotação.** No sistema de MAGERL, a lesão por rotação corresponde ao tipo C, o mais grave e instável, porque exige falha de todas as estruturas que mantêm o alinhamento.",
   "incorretas": {
-   "B": "As lesões por **distração** (tipo B) são de gravidade **intermediária**, entre a compressão e a rotação.",
-   "C": "\"**Complexo**\" não é um tipo da classificação de Magerl. Os tipos são compressão, distração e rotação.",
-   "D": "As lesões por **compressão** (tipo A) são as **menos graves** da classificação, com os elementos posteriores íntegros."
+   "B": "**É o degrau do meio.** A distração (tipo B) rompe a banda de tensão, mas sem desalinhamento; o resumo marca essa confusão como armadilha.",
+   "C": "**Não é um tipo da classificação.** A sequência é compressão, distração e rotação (ou translação); \"complexo\" não nomeia um tipo de MAGERL.",
+   "D": "**É o tipo menos grave.** A compressão (tipo A) mantém a banda de tensão posterior íntegra."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Magerl F, Aebi M, Gertzbein SD, Harms J, Nazarian S. A comprehensive classification of thoracic and lumbar injuries. Eur Spine J. 1994;3(4):184-201."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-734c3145",
+      "coluna-subaxial-classificacoes-e-estabilidade-1430ef80"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "0bf86f0c0dd11d1c694be5883e1ad927dcd212bd5e98befd84fdf6d7ec4dc649"
+    }
+   ],
+   "questaoSha256": "392e79bb55c0cbf90856b557e2e7d083d254f8a688f3133bd68d52466676ffb2",
+   "comentarioSha256": "abc829963f283fc3f59b53f361fa39fac19c7cc2833c933c67a784a05b1845a3"
+  }
  },
  "trauma-0153": {
   "conceito": "O **perfil verdadeiro** demonstra melhor o traço **transverso** da patela e a separação entre seus fragmentos. A resposta é B. O cuidado com a rotação da incidência é parte dessa avaliação, não um detalhe de acabamento da imagem.\n\nO exame radiográfico reúne AP, perfil e axial. Cada projeção ajuda numa pergunta diferente: o perfil define separação e padrão transverso, enquanto a axial mostra os traços verticais e marginais que podem passar despercebidos. O AP, por sua vez, pode subestimar a cominuição (resumo do Rockwood, 10ª ed., cap. 60, “Imagem”).\n\nA separação óssea deve ser relacionada ao exame do mecanismo extensor e à superfície articular. A capacidade de estender não exclui fratura se os retináculos permaneceram íntegros. Portanto, uma projeção adequada e um teste funcional respondem a partes complementares do problema.\n\nNa cominuição ou suspeita de fragmento osteocondral, podem ser necessários outros exames. O capítulo usa TC para planejamento de padrões complexos e RM em cenários selecionados de cartilagem e tendão; não indica transformar toda fratura isolada em investigação tomográfica de rotina.\n\nLeia no resumo da Biblioteca as incidências em conjunto. A pergunta é qual traço o perfil mostra melhor, e não qual incidência dispensaria todas as demais.",
@@ -4629,15 +4773,47 @@
   }
  },
  "trauma-0162": {
+  "conceito": "O TARO repetiu em 2016 a pergunta de 2014: qual tipo de fratura do odontoide é o mais comum e o que mais evolui para pseudartrose. Vale entender a mecânica para não depender da memória.\n\n**Onde quebra.** Pela classificação de ANDERSON e D'ALONZO, apresentada no Rockwood and Green (10ª ed., cap. 48), o **tipo II** passa pela **cintura** do dente, a junção com o corpo de C2, e o **tipo III** entra no **corpo**. O tipo I, avulsão da ponta, é raríssimo isolado.\n\n**Por que o lugar decide a consolidação.** Pense em colar duas peças: uma junta estreita, de osso duro e pouca superfície, segura mal; uma junta larga de osso esponjoso segura bem. A cintura do dente é a junta estreita. Por isso o capítulo mostra, para o tipo II, consolidação de 66% no halo numa série, menos de 50% em outra e pseudartrose **perto de 30%** numa série de 340 fraturas de C2, enquanto o tipo III consolida em 87% a cerca de 95% imobilizado.\n\n**Quando o tipo II consolida melhor.** Uma série deu 74% de consolidação com órtese quando o desvio era menor que 5 mm, o afastamento menor que 2 mm e a angulação menor que 11 graus. No idoso, a pseudartrose fibrosa estável muitas vezes não importa.\n\n**Sobre o número da questão.** Os 36% não estão no capítulo; a resposta, porém, coincide com o que ele mostra.\n\n> **Na prova:** tipo II, na cintura, é o mais comum e o que mais pseudartrosa.",
+  "correta": "**B: tipo II.** É o tipo mais comum e, pela pouca área de contato na cintura do dente, o de menor taxa de consolidação com tratamento não cirúrgico.",
   "incorretas": {
-   "A": "O tipo I é a avulsão da ponta, rara.",
-   "C": "O tipo III atravessa o corpo esponjoso de C2 e consolida bem.",
-   "D": "Não existe tipo IV na classificação original."
+   "A": "**Raro e de bom comportamento.** O tipo I, avulsão da ponta, é raríssimo isolado; o algoritmo dos autores o trata com colar rígido por 8 semanas depois de afastar dissociação occipitocervical.",
+   "C": "**Consolida bem.** O tipo III atravessa o osso esponjoso do corpo de C2 e consolida com imobilização na grande maioria.",
+   "D": "**Não existe.** A classificação de ANDERSON e D'ALONZO tem três tipos."
   },
-  "conceito": "**Anderson e D'Alonzo** dividem as fraturas do **odontoide** pela altura do traço:\n\n**tipo I**: avulsão da **ponta** pelo ligamento alar; rara e quase sempre estável;\n\n**tipo II**: na **base do dente**, junto ao corpo de C2; a **mais comum** e a de mais **pseudartrose**, em cerca de **36%**;\n\n**tipo III**: o traço entra no **corpo de C2**, em osso esponjoso; consolida bem com imobilização.\n\n**Por que o tipo II não consolida**: a base do dente é uma região de **irrigação pobre** (watershed), com pouco osso esponjoso e pouca área de contato.\n\n**Os fatores de risco de pseudartrose**: idade acima de **50 anos**, desvio maior que **5 mm**, angulação maior que **10°** e cominução da base (tipo IIA de Hadley).\n\n**O tratamento do tipo II**: imobilização em casos selecionados; **parafuso anterior** ou **artrodese C1-C2** posterior quando há fatores de risco.\n\n**Na prova**: a fratura do odontoide mais comum, com pseudartrose em cerca de 36%, é o **tipo II**.",
-  "correta": "O tipo II, na base do dente, é o mais comum e não consolida em cerca de 36%, pela irrigação pobre.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Como ler este capítulo; Fratura do odontoide (C2)."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Como ler este capítulo",
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "como-ler-este-capitulo-793dbcb8",
+      "fratura-do-odontoide-c2-623f1b6d",
+      "fratura-do-odontoide-c2-bc203da4",
+      "fratura-do-odontoide-c2-e392c5c7",
+      "fratura-do-odontoide-c2-b73258e7",
+      "fratura-do-odontoide-c2-e7ea3a69"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "86e70a97e880d20e9f533c3da1f3013c8c6cf39cd95198780ea4b54935850c56"
+    }
+   ],
+   "questaoSha256": "86543549bdd4a8a3a32edef4a226af4da2387a66e30a6e161c8dd02ec7717524",
+   "comentarioSha256": "73e9932db7b3a4d5e95377a250f4b6b670096ee715850309e4a7671f3ab86c09"
+  }
  },
  "trauma-0163": {
   "conceito": "O gabarito D, **acidente automotivo**, corresponde à causa mais comum no grande banco de trauma americano citado pelo capítulo. A ressalva é que “principal causa” depende da população estudada: numa clínica norueguesa mencionada na mesma fonte, o esqui predominou.\n\nA luxação exige perda importante da contenção ligamentar, mas não tem um único mecanismo. Acidentes de veículo, quedas de altura e esportes de alta velocidade compõem o grupo de alta energia. Muitos esportes e quedas da própria altura entram como baixa energia; no obeso, pode haver luxação até ao caminhar, chamada de energia ultrabaixa (Rockwood, 10ª ed., cap. 61, “Quem luxa o joelho e o que vem junto”).\n\nA hiperextensão participa de muitos episódios, com falha inicial dos cruzados e forças adicionais em varo, valgo ou rotação completando o padrão. Entretanto, a energia baixa não garante lesão leve. O capítulo destaca taxas muito altas de dano neurovascular nas luxações de energia ultrabaixa em obesos.\n\n**Frequência de causa e gravidade não são a mesma coisa.** Um mecanismo menos frequente no banco citado ainda pode ameaçar o membro. Todo joelho luxado, inclusive já reduzido, precisa de avaliação vascular e neurológica; não se deve excluir lesão porque a história foi de simples entorse.\n\nA resposta deve conservar o contexto epidemiológico: D é a preferência da banca e do banco de trauma mencionado, sem declarar que acidentes automotivos dominem necessariamente em toda clínica esportiva, país ou série.",
@@ -7956,15 +8132,46 @@
   "conferido": false
  },
  "trauma-0292": {
+  "conceito": "Esta questão mistura classificação, estabilidade, via de acesso e órtese, e só uma afirmação resiste. Vale percorrer cada tema pelo que o Rockwood and Green (10ª ed., cap. 48) ensina.\n\n**ALLEN e FERGUSON: a distração em flexão.** A classificação agrupa as lesões subaxiais pelo mecanismo, em estágios que se somam. Na **distração-flexão**: estágio 1, subluxação facetária com afastamento dos espinhosos; **estágio 2, luxação facetária unilateral**; estágio 3, luxação bilateral com translação de cerca de 50%; estágio 4, translação de 100%, a vértebra flutuante.\n\n**O pedículo.** A fratura isolada e **unilateral** do pedículo sugere **instabilidade rotacional**. Com pedículo e lâmina fraturados juntos, a faceta fica isolada, a massa lateral flutuante, potencialmente instável.\n\n**A via anterior.** A complicação **mais comum** é a **disfagia**, em até 50%, quase sempre subclínica. A lesão do laríngeo recorrente, com disfonia ou paralisia de corda vocal, vai de 2% a 30%, conforme a definição.\n\n**O colar Philadelphia.** É **todo de espuma**, mais fácil de higienizar. Os colares restringem por três pontos e **diminuem, mas não eliminam** o movimento.\n\n> **Na prova:** distração-flexão 2 é luxação facetária unilateral; disfagia é a complicação mais comum da via anterior.",
+  "correta": "**D: o estágio II do padrão distração-flexão de ALLEN apresenta luxação da faceta unilateral.** É exatamente a descrição do capítulo; o estágio 3 é a luxação bilateral.",
   "incorretas": {
-   "A": "**Pode ser instável.** A fratura do pedículo com massa lateral solta compromete a estabilidade rotacional.",
-   "B": "**A principal é a disfagia.** No acesso anterior, a dificuldade para engolir é mais frequente que a rouquidão.",
-   "C": "**Estabilidade limitada.** O Philadelphia limita pouco a rotação e a cervical baixa, e não substitui órteses rígidas como o halo."
+   "A": "**É o contrário.** O capítulo descreve a fratura isolada e unilateral do pedículo como sugestiva de instabilidade rotacional.",
+   "B": "**A mais comum é a disfagia.** A disfonia, pela lesão do recorrente, vem depois; a disfagia aparece em até metade dos pacientes.",
+   "C": "**O Philadelphia é de espuma.** O capítulo o descreve como todo de espuma; os colares com partes plásticas são outros (como o Miami J), e mesmo eles só diminuem o movimento."
   },
-  "conceito": "**A classificação de Allen e Ferguson.** Organiza as lesões da coluna **cervical subaxial** (C3 a C7) pelo **mecanismo**, deduzido da imagem: compressão-flexão, compressão vertical, **distração-flexão**, compressão-extensão, distração-extensão e flexão lateral. Cada padrão tem **estágios** de gravidade crescente.\n\n**O padrão distração-flexão.** É o mecanismo das **luxações facetárias**. **Estágio I**: subluxação facetária, entorse em flexão, com divergência dos processos espinhosos. **Estágio II**: **luxação facetária unilateral**, com listese de cerca de **25%** do corpo vertebral e componente rotacional. **Estágio III**: **luxação facetária bilateral** com listese de cerca de **50%**. **Estágio IV**: luxação bilateral com deslocamento **total** do corpo, a \"vértebra flutuante\". Quanto maior a listese, maior a chance de lesão medular.\n\n**As luxações facetárias na prática.** A **unilateral** pode vir só com radiculopatia; a **bilateral** costuma dar lesão medular. A redução pode ser **fechada**, com tração progressiva no paciente **acordado e cooperativo**, ou aberta. O grande debate é a **hérnia de disco** traumática, que pode ser empurrada para o canal durante a redução: por isso muitos pedem **ressonância** antes da redução em pacientes inconscientes ou antes da redução aberta posterior. A fixação é por via anterior (discectomia e artrodese), posterior ou combinada.\n\n**Os distratores.** A principal complicação do acesso **cervical anterior** é a **disfagia**, mais comum que a **disfonia** (lesão do laríngeo recorrente). A fratura isolada do **pedículo** ou da massa lateral pode causar **instabilidade rotacional** (a massa lateral \"flutuante\"). O **colar Philadelphia** limita flexoextensão, mas controla mal a rotação e a coluna cervical baixa, e não dá estabilidade de uma órtese rígida tipo halo.\n\n**Na prova:** Allen distração-flexão: **I** subluxação, **II** **luxação unilateral** (cerca de 25%), **III** bilateral (50%), **IV** total.",
-  "correta": "**O estágio II do padrão distração-flexão apresenta luxação facetária unilateral.** Com listese de cerca de 25% do corpo vertebral e componente rotacional.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Vias de acesso, fixação e complicações."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade",
+      "Vias de acesso, fixação e complicações"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-8a83b113",
+      "coluna-subaxial-classificacoes-e-estabilidade-e46c437b",
+      "coluna-subaxial-classificacoes-e-estabilidade-d3f60495",
+      "vias-de-acesso-fixacao-e-complicacoes-b201fbe8",
+      "vias-de-acesso-fixacao-e-complicacoes-d4fdd49a"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "8e572130fdd7cbc21745373baaa80bfdd0878a77446e8803fd59b7211d71183c"
+    }
+   ],
+   "questaoSha256": "31cd685e5c297a624fec221f800e10b9ad1ec64999e00be4702a24464fe04875",
+   "comentarioSha256": "1e5bdf849eb2fa278429386b128cffa533c8bc847af0593f2a6c8bba7713fca0"
+  }
  },
  "trauma-0293": {
   "conceito": "Duas fraturas da pars de C2 podem usar halo e ainda exigir manobras de redução opostas. No **tipo IIa do enforcado**, a angulação é importante e a translação pequena: **tração e flexão devem ser evitadas**. A redução descrita é por extensão e compressão.\n\nNo tipo II, há angulação e translação com lesão importante do disco C2–C3; a fonte descreve redução com tração e manutenção no halo. No IIa, a tração pode acentuar a deformidade. Entender o deslocamento importa mais que decorar “halo para enforcado” (Rockwood, 10ª ed., cap. 48, “Levine e Edwards” e “O tratamento por tipo”).\n\nO tipo I tem desvio mínimo, sem angulação ou translação importante e sem lesão discal relevante, e os autores usam colar rígido. No III, a luxação das facetas C2–C3 leva à redução aberta e artrodese. O nome da fratura não torna todas essas situações equivalentes.\n\n> **Na prova:** IIa não vai para tração; sua redução é em extensão e compressão.",
@@ -12682,15 +12889,50 @@
   "conferido": false
  },
  "trauma-0684": {
+  "conceito": "O coronoide é o batente anterior da ulna: é ele que impede a ulna de escorregar para trás sob a tróclea. Na tríade terrível, esse batente quebrou junto com a cabeça do rádio e os ligamentos. A banca pergunta se um fragmento grande, que leva a base do coronoide, pode ficar sem fixação dependendo do resto.\n\n**O tamanho que muda tudo.** Na classificação de O'Driscoll, o tipo III é a fratura da **base** do coronoide. O Rockwood and Green (10ª ed., cap. 40) mostra, em modelos de tríade, que reparar os ligamentos e trocar a cabeça do rádio devolve quase toda a estabilidade **só quando o coronoide é pequeno**. Com coronoides maiores, o cotovelo **continua instável** mesmo com ligamentos reparados e cabeça fixada ou trocada. Nenhuma outra peça compensa a falta do batente.\n\n**A ordem da cirurgia.** O capítulo propõe um roteiro de dentro para fora: **coronoide primeiro**, depois a cabeça do rádio (fixar ou trocar, nunca retirar), depois o colateral lateral e, só se ainda instável, o medial. Os fragmentos maiores recebem parafusos de trás para frente; apenas pontas muito pequenas, menos de 10%, podem ficar sem reparo se o resto ficar firme.\n\n**O que os resultados mostram.** Com fixação estável do coronoide, os resultados são bons a excelentes; sem ela, insatisfatórios. A instabilidade recorrente se associou, entre outros fatores, ao coronoide não reparado.\n\n> **Na prova:** coronoide, cabeça do rádio, colateral lateral e, se precisar, colateral medial. Um coronoide grande se fixa sempre.",
+  "correta": "**A: independentemente das lesões associadas.** Um fragmento da base do coronoide leva o batente anterior inteiro, e o capítulo mostra que, com coronoides maiores, reparar ligamentos e cabeça do rádio não devolve a estabilidade. Por isso ele é fixado em qualquer combinação de lesões.",
   "incorretas": {
-   "B": "**Não depende disso.** A Essex-Lopresti influencia o manejo da cabeça do rádio, mas não condiciona a fixação do coronoide basal.",
-   "C": "**Não depende disso.** A fixação do coronoide basal é necessária mesmo quando a cabeça do rádio é fixada ou substituída.",
-   "D": "**Não depende disso.** O coronoide basal é fixado de qualquer modo; o medial só é abordado se persistir instabilidade."
+   "B": "**A fixação não depende disso.** A lesão de Essex-Lopresti muda o que se faz com a cabeça do rádio e com a radioulnar distal, mas não decide se o coronoide grande será fixado. Ele é fixado de qualquer forma, porque sem ele o cotovelo continua instável.",
+   "C": "**Inverte a lógica.** A cabeça do rádio irreconstruível é trocada por prótese, nunca retirada, e o coronoide grande é fixado de qualquer forma. Uma lesão não substitui a outra: cada estabilizador perdido precisa ser restaurado.",
+   "D": "**O medial é o último passo, não a condição.** O colateral medial só é reparado se o cotovelo continuar instável depois de coronoide, cabeça e lateral. Condicionar a fixação de um coronoide grande ao medial inverte o roteiro do capítulo."
   },
-  "conceito": "**O coronoide na tríade terrível.** A tríade terrível é a **luxação** do cotovelo com fratura da **cabeça do rádio** e do **coronoide**. O **coronoide** é o batente ósseo **anterior** que impede a ulna de sair para trás. Quanto maior o fragmento, maior a perda desse batente.\n\n**A classificação de O'Driscoll.** **Tipo 1**: fratura da **ponta**; subtipo 1 até 2 mm, subtipo 2 acima de 2 mm. **Tipo 2**: fratura da **faceta anteromedial**; subtipo 1 borda anteromedial, subtipo 2 borda com a ponta, subtipo 3 borda com o **tubérculo sublime** (inserção do feixe anterior do colateral medial). **Tipo 3**: fratura da **base**, com mais de **50%** da altura do coronoide; subtipo 1 corpo e base, subtipo 2 basal com fratura transolecraniana. A **Regan e Morrey** usa o tamanho: I ponta, II até 50%, III mais de 50%.\n\n**Quando fixar o coronoide.** Fragmentos da **base** (O'Driscoll 3, Regan-Morrey III) tiram tanto do batente que desestabilizam o cotovelo **por si só**: devem ser **fixados sempre**, com parafusos de posterior para anterior ou placa anterior ou medial, **independentemente** do que se faça com a cabeça do rádio e os ligamentos. Fragmentos pequenos da **ponta** muitas vezes não precisam de fixação, ou são reparados com **sutura em laço** pela cápsula anterior, se o cotovelo continuar instável após reconstruir a cabeça do rádio e o lateral. Fragmentos da **faceta anteromedial** devem ser fixados, pois levam à instabilidade posteromedial em varo.\n\n**O protocolo da tríade.** Reconstruir de dentro para fora: **coronoide**, **cabeça do rádio** (fixação ou prótese), **complexo lateral**; testar a estabilidade de 30 a 130 graus; se ainda instável, **colateral medial** ou **fixador articulado**.\n\n**Na prova:** coronoide **tipo 3** de O'Driscoll (base, mais de 50%) = **fixar sempre**, independentemente das outras lesões.",
-  "correta": "**Independentemente das lesões associadas.** A fratura da base do coronoide remove o batente anterior e desestabiliza o cotovelo sozinha, e deve ser fixada em qualquer cenário.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Tríade terrível; Fratura da cabeça do rádio."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fraturas do coronoide",
+      "Tríade terrível",
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fraturas-do-coronoide-67ec539b",
+      "fraturas-do-coronoide-611c2d1d",
+      "triade-terrivel-ed2e0665",
+      "triade-terrivel-fc91076c",
+      "triade-terrivel-7f75b022",
+      "triade-terrivel-9e6a5bba",
+      "triade-terrivel-625087ee",
+      "fratura-da-cabeca-do-radio-8dbbe2b9"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "75e9c4e01db528a6a6e7728651be9a402e6c0032abdbb5849e6e1dd10da3d256"
+    }
+   ],
+   "questaoSha256": "3137057f2879673906150b5cc33b7236da2b828cc5c655cecdf5cc6d8d695b22",
+   "comentarioSha256": "b9837ec61632fbf1b35f28452d74d63617a1ff13a5f7684f24bcb80d0e05673b"
+  }
  },
  "trauma-0685": {
   "incorretas": {
@@ -13774,15 +14016,44 @@
   }
  },
  "trauma-0722": {
+  "conceito": "Luxação pura, ou simples, é a do cotovelo que saiu do lugar sem fratura. Parece a lesão mais leve do capítulo, mas o Rockwood and Green (10ª ed., cap. 40) insiste no contrário: sem osso quebrado, toda a energia foi para as partes moles.\n\n**Como as partes moles cedem.** Na queda com a mão espalmada, a combinação de valgo, carga axial e força posterolateral descrita por O'Driscoll rasga as partes moles em anel: começa no **colateral lateral**, atravessa a **cápsula** e termina no **colateral medial**. Junto vão as **origens dos flexores e extensores** do antebraço, a dos extensores costumando sofrer mais.\n\n**Nervos e artéria.** A lesão da **artéria braquial** é rara. Entre os nervos, o **mais lesado é o ulnar**. O **mediano** tem outro papel: é o que pode ficar **encarcerado** na articulação depois da redução. Esses detalhes são exatamente o que as alternativas erradas embaralham.\n\n**Por que isso importa no consultório.** A lesão de cápsula e ligamentos explica a rigidez e a dor que muitos pacientes mantêm por anos, e o exame neurovascular antes e depois da redução existe por causa dos nervos e da artéria, mesmo que lesá-los seja incomum.\n\n> **Na prova:** luxação simples é lesão de cápsula, colaterais e origens musculares; nervo mais lesado, ulnar; mediano, o que encarcera.",
+  "correta": "**B: lesão da cápsula articular, dos ligamentos colaterais e da origem dos flexores e extensores do antebraço.** É a descrição que o capítulo faz da luxação simples: sem fratura, com grande lesão de partes moles que progride de lateral para medial.",
   "incorretas": {
-   "A": "**Nervo errado.** O mais frequentemente lesado é o ulnar, por estiramento.",
-   "C": "**Frequência exagerada.** A lesão da artéria braquial é rara na luxação pura.",
-   "D": "**Nervo errado.** O mediano é o que tem maior risco de aprisionamento na redução."
+   "A": "**O mais lesado é o ulnar.** O mediano aparece na luxação simples por outro motivo: pode ficar encarcerado na articulação depois da redução. Mas o nervo mais frequentemente lesado é o ulnar.",
+   "C": "**A lesão arterial é rara.** O capítulo descreve a lesão da artéria braquial como rara na luxação simples. Um número como 17% sugere uma frequência muito acima da descrita.",
+   "D": "**Quem encarcera é o mediano.** O capítulo cita o mediano como o nervo que pode ficar preso na articulação depois da redução. O radial não é o nervo associado a esse risco na luxação simples."
   },
-  "conceito": "**A luxação pura do cotovelo.** É a luxação **sem fratura**, uma lesão só de **partes moles**. É a segunda luxação mais frequente do adulto, e mais de 90% são **posteriores** ou posterolaterais. O mecanismo (O'Driscoll) é a queda com a mão espalmada: carga **axial**, **valgo** e **supinação**, com o cotovelo semifletido.\n\n**O que se rompe.** A lesão progride em anel, de **lateral para medial**: primeiro o **complexo colateral lateral** (sobretudo o **colateral ulnar lateral**), depois a **cápsula** anterior e posterior e, por fim, o **complexo colateral medial**. Com frequência, as **origens musculares** também se desinserem: os **extensores** do epicôndilo lateral e os **flexopronadores** do epicôndilo medial. Estudos com ressonância e cirurgia mostraram que a lesão das partes moles é mais extensa do que se imaginava.\n\n**As lesões neurovasculares.** São **raras**. O nervo mais frequentemente afetado é o **ulnar**, por estiramento, geralmente neuropraxia. O **mediano** é o que tem maior risco de ficar **aprisionado** na articulação durante a **redução**, especialmente em crianças, e deve ser examinado antes e depois da manobra. A **artéria braquial** se lesa em uma pequena porcentagem dos casos, mais nas luxações abertas e anteriores. Por isso, o exame neurovascular antes e depois da redução é obrigatório.\n\n**O tratamento.** **Redução** (tração e flexão, corrigindo o desvio medial ou lateral), teste de estabilidade e **mobilização precoce** dentro do arco estável, com tipoia por poucos dias. Imobilizar mais de 3 semanas causa **rigidez**, a complicação mais comum. Se o cotovelo reluxa em mais de 30 a 45 graus de extensão, reparo ligamentar ou fixador articulado.\n\n**Na prova:** luxação **pura** do cotovelo = lesão de **cápsula**, **colaterais** (lateral para medial) e **origens musculares**; nervo mais lesado, **ulnar**; aprisionado na redução, **mediano**.",
-  "correta": "**Lesão da cápsula, colaterais e origem dos flexores e extensores.** A luxação pura rompe partes moles em anel, de lateral para medial, frequentemente desinserindo as origens musculares nos epicôndilos.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Luxação simples do cotovelo."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Luxação simples do cotovelo"
+     ],
+     "blocos": [
+      "luxacao-simples-do-cotovelo-d98ded18",
+      "luxacao-simples-do-cotovelo-d4159e35",
+      "luxacao-simples-do-cotovelo-68cf7694",
+      "luxacao-simples-do-cotovelo-3a54e8f0"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "2a682ea82896703f96e0ce42b50878ec418f962a504f8e5d66f7cf7850619045"
+    }
+   ],
+   "questaoSha256": "a5e536ee1686350c22c1fc611f479c66f70a86c880ca0f42816ac0bcdc74f3f5",
+   "comentarioSha256": "6f09647ed097f121e030532b5efb569a984885ed8d87efed47808015ad12b8eb"
+  }
  },
  "trauma-0723": {
   "conceito": "O enunciado informa que a fratura é exposta e causada por arma de fogo, mas não descreve a ferida, a energia transferida nem a cobertura óssea. **Isso não basta para definir o subtipo IIIB.** A letra D é o gabarito oficial preservado; o ponto clínico a aprender é que o instrumento causador não substitui a avaliação das partes moles.\n\nA classificação de Gustilo organiza informações diferentes. No tipo I, a ferida é limpa, menor que 1 cm e de baixa energia. No II, mede de 1 a 10 cm, sem dano extenso de partes moles nem padrão de alta energia. No III, a lesão supera esses critérios: uma ferida maior que 10 cm ou um padrão de alta energia pode colocá-la nesse grupo. Uma fratura segmentar de alta energia, por exemplo, pode ser IIIA mesmo com uma ferida pequena. Portanto, medir o orifício isoladamente também não resolve a classificação (Rockwood, 10ª ed., cap. 63, “TSCHERNE, GUSTILO e OTA-OFC”).\n\n**Dentro do tipo III, a cobertura faz a diferença.** No IIIA, o defeito ainda pode ser fechado por sutura ou enxerto. No IIIB, é necessário um retalho muscular ou cutâneo para cobrir o osso. O IIIC, que não aparece nas opções, exige reparo vascular para revascularizar a perna; uma lesão arterial isolada com pé bem perfundido não basta para esse rótulo. Cada subtipo descreve uma necessidade diferente da reconstrução, e não apenas uma ferida progressivamente maior.\n\nO próprio resumo comenta que fraturas por projéteis de baixa energia chegaram a ser tratadas como fechadas, mas apresentaram mais infecção e pseudartrose que o esperado. Esse dado pede atenção à ferida e ao tratamento; não autoriza classificar toda lesão por projétil como IIIB, nem afirmar que toda lesão de baixa energia seja automaticamente I ou II (cap. 63, “Haste na exposta”).\n\nNa prática, seria necessário conhecer o dano das partes moles e a possibilidade de cobertura após a avaliação da ferida. Se um retalho for necessário, IIIB torna-se uma classificação sustentada. Sem esse dado, permanece a insuficiência do enunciado, que deve ser lembrada junto da resposta histórica da banca.",
@@ -14897,15 +15168,44 @@
   "conferido": false
  },
  "trauma-0775": {
+  "conceito": "Depois de reduzir uma luxação simples do cotovelo, o cotovelo quase sempre fica estável. A tentação é achar que o problema acabou. O Rockwood and Green (10ª ed., cap. 40) mostra que não: as luxações simples **não são tão benignas quanto parecem**, e o que mais sobra para o paciente é a perda de movimento.\n\n**O que as séries mostram.** Numa série de 110 pacientes acompanhados por 7 anos, **56%** relataram **rigidez** residual subjetiva, **62%** dor residual e apenas **8%** instabilidade, sem ninguém precisar operar por isso. Em outra, 60% tinham sintomas, com contratura em flexão em 15%. Menos de 10% relatam instabilidade depois da luxação simples.\n\n**De onde vem a rigidez.** A luxação rasga cápsula, colaterais e origens musculares; a cicatrização dessas partes moles, somada à imobilização, endurece o cotovelo. O capítulo associa a **imobilização prolongada** a mais contratura e mais dor, e por isso a regra é mexer cedo: imobilizar por **mais de 3 semanas** deve ser evitado.\n\n**O que é incomum.** A ossificação heterotópica sintomática é incomum, mas fica bem mais provável quando há trauma de crânio associado. As lesões nervosas são possíveis, com o ulnar sendo o mais lesado, mas não são a regra.\n\n> **Na prova:** a complicação mais comum da luxação simples é a rigidez, e a imobilização prolongada é o que mais a provoca.",
+  "correta": "**B: rigidez articular.** Nas séries citadas pelo capítulo, a rigidez residual foi relatada por mais da metade dos pacientes, muito acima da instabilidade. A imobilização prolongada é o principal fator que a agrava.",
   "incorretas": {
-   "A": "**Pouco frequente.** Sem fratura, a artrose após luxação simples é incomum.",
-   "C": "**Rara.** O ulnar e o mediano podem ser lesados, mas isso é pouco frequente.",
-   "D": "**Rara.** A instabilidade recorrente após luxação simples ocorre em poucos casos."
+   "A": "**Não é o desfecho que as séries destacam.** O capítulo descreve rigidez, dor residual e instabilidade como o que sobra depois da luxação simples. A artrose não aparece entre os desfechos dominantes, o que faz sentido numa lesão sem fratura articular.",
+   "C": "**Possível, mas incomum.** As paralisias nervosas existem, e o ulnar é o nervo mais lesado, mas não chegam perto da frequência da rigidez.",
+   "D": "**Rara na luxação simples.** Menos de 10% relatam instabilidade residual, e quase sempre o cotovelo fica estável depois da redução fechada. A instabilidade recorrente é mais vista em idosos e traumas de alta energia, não como regra."
   },
-  "conceito": "**A luxação simples do cotovelo.** É a luxação **sem fratura**, uma lesão de **cápsula** e **ligamentos** (de lateral para medial, pelo círculo de Horii) e, muitas vezes, das **origens musculares** nos epicôndilos. O tratamento é a **redução fechada**, o teste de estabilidade e a **mobilização precoce** dentro do arco estável. Os resultados são bons na maioria.\n\n**A complicação que quase todos têm.** A **rigidez** é a complicação **mais comum**, sobretudo a perda dos **graus finais de extensão** (10 a 15 graus são frequentes e geralmente bem tolerados). O cotovelo tem uma cápsula **apertada**, superfícies **congruentes** e músculos próximos, e responde ao trauma e à hemartrose com **fibrose** capsular. A **imobilização prolongada** é o principal fator evitável: imobilizar mais de **3 semanas** aumenta muito a rigidez e a dor. Por isso a tipoia é usada por poucos dias, e a mobilização ativa começa cedo.\n\n**As outras complicações.** **Instabilidade recorrente** é **rara** após luxação simples (abaixo de 2 a 3%); quando ocorre, geralmente é **rotatória posterolateral** por falha de cicatrização do colateral ulnar lateral. **Lesões neurológicas** são raras (o ulnar por estiramento, o mediano aprisionado na redução). **Ossificação heterotópica** e calcificações dos ligamentos são comuns na radiografia, mas raramente limitam. **Artrose** é pouco frequente sem fratura.\n\n**Quando pensar em cirurgia.** Cotovelo que **reluxa** em mais de 30 a 45 graus de extensão mesmo em pronação, redução incongruente ou irredutível, e luxações complexas (com fratura). Nesses casos, reparo do complexo lateral, eventualmente do medial, ou **fixador articulado**.\n\n**Na prova:** complicação mais comum da luxação **simples** do cotovelo = **rigidez** (perda de extensão); mobilizar cedo e não imobilizar mais de 3 semanas.",
-  "correta": "**Rigidez articular.** A perda dos graus finais de extensão é a complicação mais frequente, favorecida pela cápsula apertada, pela hemartrose e pela imobilização.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Luxação simples do cotovelo."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Luxação simples do cotovelo"
+     ],
+     "blocos": [
+      "luxacao-simples-do-cotovelo-d98ded18",
+      "luxacao-simples-do-cotovelo-84abf4fe",
+      "luxacao-simples-do-cotovelo-5adb2600",
+      "luxacao-simples-do-cotovelo-68cf7694"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "f5700b5b9f9dd95e1b1fe8c89b011e7e549000d6141ffdb457f61c030f0b7987"
+    }
+   ],
+   "questaoSha256": "544616a812563410c78075f34123ea0dcbf9c82e2753b35f4d2b55af5e116987",
+   "comentarioSha256": "3c0f8fcbc9f53c400603856263bb9876a76fff9f73869571d578640f1fa73237"
+  }
  },
  "trauma-0776": {
   "incorretas": {
@@ -15876,15 +16176,43 @@
   }
  },
  "trauma-0815": {
+  "conceito": "Uma criança tem amigdalite e, dias depois, aparece com o pescoço torto e doloroso, a cabeça inclinada para um lado e rodada para o outro. Não houve trauma. É o cenário da síndrome de GRISEL.\n\n**O que o capítulo diz sobre a subluxação rotatória C1-C2.** O Rockwood and Green (10ª ed., cap. 48) descreve a luxação rotatória C1-C2 do adulto como **rara**, traumática e quase sempre diagnosticada tarde, confirmada por **tomografia dinâmica** com a cabeça rodada para os dois lados. E registra um dado decisivo para esta questão: as séries de tratamento não cirúrgico da instabilidade rotatória são sobretudo de **crianças com lesão pós-infecciosa**. O capítulo não usa o epônimo GRISEL, mas descreve o cenário.\n\n**Por que a inflamação solta C1 sobre C2.** A infecção da cabeça e do pescoço drena para a região da articulação atlantoaxial; a inflamação afrouxa os ligamentos e a contratura muscular dolorosa mantém a rotação. Sem fratura, a articulação gira e trava.\n\n**A classificação de FIELDING e HAWKINS.** Tipo I, rotação sem alargamento entre o dente e o arco anterior; tipo II, alargamento de 3 a 5 mm; tipo III, mais de 5 mm; tipo IV, translação posterior. No caso agudo, tração e imobilização costumam funcionar.\n\n> **Na prova:** síndrome de GRISEL é subluxação rotatória C1-C2 de origem inflamatória, na criança, depois de infecção da cabeça e do pescoço.",
+  "correta": "**D: inflamatória.** A subluxação rotatória da síndrome de GRISEL aparece depois de infecção da cabeça e do pescoço, sem trauma; o capítulo registra que as séries de instabilidade rotatória C1-C2 tratadas sem cirurgia são sobretudo de crianças com lesão pós-infecciosa.",
   "incorretas": {
-   "A": "**Não é tumoral.** Tumores podem causar torcicolo, mas não definem a síndrome de Grisel.",
-   "B": "**Não é congênita.** Anomalias congênitas da junção craniocervical são outras entidades.",
-   "C": "**Não é traumática.** A subluxação rotatória pode ser traumática, mas a síndrome de Grisel é, por definição, inflamatória."
+   "A": "**Não é tumoral.** O que solta a articulação na síndrome de GRISEL é a inflamação que segue uma infecção, não uma lesão que ocupa espaço.",
+   "B": "**Não é congênita.** A criança tinha o pescoço normal antes da infecção; a subluxação é adquirida.",
+   "C": "**A traumática é a do adulto.** O capítulo descreve a luxação rotatória traumática como rara no adulto; a síndrome de GRISEL, por definição, não vem de trauma."
   },
-  "conceito": "**A síndrome de Grisel.** É a **subluxação rotatória atlantoaxial** (C1-C2) **não traumática**, de origem **inflamatória** ou infecciosa. Ocorre sobretudo em **crianças**, após **infecções** de cabeça e pescoço (faringite, amigdalite, otite, abscesso retrofaríngeo, adenite cervical) ou após **cirurgias otorrinolaringológicas** (amigdalectomia, adenoidectomia).\n\n**O mecanismo.** O **plexo venoso faringovertebral** drena a faringe posterior diretamente para a região do atlas e do áxis. A inflamação chega aos **ligamentos** e às **cápsulas** C1-C2, que ficam **frouxos** (hiperemia e edema), e a **contratura** muscular reflexa leva C1 a rodar sobre C2 e ficar travado. A frouxidão ligamentar natural da criança facilita.\n\n**O quadro.** Torcicolo doloroso de início após a infecção ou a cirurgia, com a posição de \"**cock robin**\" (cabeça inclinada para um lado e rodada para o outro, com leve flexão), e o **esternocleidomastóideo** do lado **para onde o queixo aponta** contraído tentando corrigir (diferente do torcicolo muscular, em que o músculo contraído é o do lado oposto ao queixo). A **tomografia dinâmica** (rodando a cabeça para os dois lados) mostra se C1 fica travada sobre C2. A classificação de **Fielding e Hawkins** gradua de I (rotação sem desvio anterior, a mais comum) a IV (desvio posterior).\n\n**O tratamento.** Tratar a **infecção** (antibiótico), **anti-inflamatórios**, relaxantes e **colar** nos casos precoces. Se persistir por mais de uma semana, **tração** cervical (halter ou halo) e depois colar ou halo. Casos crônicos, irredutíveis ou recidivantes vão para **artrodese C1-C2**. Quanto mais cedo tratada, melhor.\n\n**Na prova:** síndrome de **Grisel** = subluxação rotatória C1-C2 **inflamatória**, na criança, após infecção ou cirurgia da faringe.",
-  "correta": "**Inflamatória.** A inflamação faríngea chega aos ligamentos C1-C2 pelo plexo venoso faringovertebral, afrouxando-os e permitindo a subluxação rotatória.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atlas, ligamento transverso e instabilidade C1–C2"
+     ],
+     "blocos": [
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-71f3d5fe",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-99ce5a47",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-886f7ba0"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "c0b6a9523a7a956dc5b54e421bf80790c5d8a8f9b28134c3592c749ac903c9c3"
+    }
+   ],
+   "questaoSha256": "e03c79060f6d20c9e0ad00078f4cc13e378476dd6507c28eee5366c6c2eb5bfe",
+   "comentarioSha256": "695e04d27d99147dc7ac870b1d533555184e85e80d0c0d993214c6c574de6352"
+  }
  },
  "trauma-0816": {
   "incorretas": {
@@ -16532,15 +16860,45 @@
   }
  },
  "trauma-0859": {
+  "conceito": "Um parafuso que atravessa um traço de fratura só pode fazer uma coisa: apertar um fragmento contra o outro ao longo do seu eixo. Se o traço for perpendicular ao parafuso, o aperto junta os fragmentos. Se o traço for paralelo ao parafuso, o aperto faz um fragmento escorregar sobre o outro. É toda a lógica desta questão.\n\n**O parafuso anterior do odontoide.** O Rockwood and Green (10ª ed., cap. 48) explica que o parafuso anterior faz **compressão axial** ao longo do seu trajeto, que sobe da frente e de baixo para cima e para trás. Por isso ele estabiliza o traço **transverso** e o **oblíquo de anterossuperior para posteroinferior**, que ficam mais ou menos perpendiculares a ele. No traço de **anteroinferior para posterossuperior**, paralelo ao parafuso, a compressão faria o fragmento escorregar e aumentaria o desvio: é **contraindicação**.\n\n**A subclassificação de GRAUER.** O tipo II se divide em **IIa** (transverso, desvio mínimo), **IIb** (anterossuperior para posteroinferior, o padrão ideal para o parafuso) e **IIc** (anteroinferior para posterossuperior, ou cominutivo).\n\n**Outras condições.** O método exige redução quase anatômica; o tórax em barril e a cifose cervical podem impedir a trajetória; idade acima de 65 anos é contraindicação relativa. Cominuição e lesão associada de C1 tiram o apoio do parafuso.\n\n> **Na prova:** parafuso anterior no traço de anterossuperior para posteroinferior (GRAUER IIb); contraindicado no de anteroinferior para posterossuperior (IIc).",
+  "correta": "**D: traço oblíquo de anterossuperior para posteroinferior.** O traço fica perpendicular ao parafuso, e a compressão axial junta os fragmentos. É o GRAUER IIb, o padrão ideal para o método.",
   "incorretas": {
-   "A": "A cominução da base contraindica o parafuso anterior.",
-   "B": "A fratura instável do atlas associada contraindica o parafuso isolado.",
-   "C": "O traço de anteroinferior para posterossuperior fica paralelo ao parafuso e desliza."
+   "A": "**Cominuição tira o apoio.** Um parafuso de compressão precisa de dois fragmentos sólidos para apertar; a base fragmentada não oferece essa pega.",
+   "B": "**Lesão associada de C1 também é armadilha.** Com o atlas instável, fixar só o dente não resolve a instabilidade C1-C2; o resumo marca essa alternativa como armadilha.",
+   "C": "**É a contraindicação.** O traço de anteroinferior para posterossuperior (GRAUER IIc) fica paralelo ao parafuso; a compressão faz o fragmento escorregar e aumenta o desvio."
   },
-  "conceito": "O **parafuso anterior** do odontoide trata a fratura do **tipo II** de Anderson e D'Alonzo comprimindo o dente contra o corpo de C2. Ele entra pela borda **anteroinferior** de C2 e sobe até a ponta do dente.\n\n**Quando funciona**: o traço precisa ficar **perpendicular** ao parafuso para ser comprimido:\n\n**traço horizontal** (transverso);\n\n**traço oblíquo posterior**: de **anterossuperior** para **posteroinferior**.\n\n**Quando não funciona**: o traço **oblíquo anterior**, de **anteroinferior** para **posterossuperior**, fica **paralelo** ao parafuso; ao apertar, os fragmentos **deslizam**, e o dente desvia.\n\n**As outras contraindicações**: **cominução** da base (tipo IIA de Hadley), **osteoporose** importante, fratura antiga (mais de 6 meses), lesão do **ligamento transverso** e fratura instável do **atlas** associada, além de tórax em barril ou cifose que impeçam a trajetória.\n\n**A alternativa**: a **artrodese C1-C2** posterior.\n\n**Na prova**: o parafuso é indicado no tipo II com traço oblíquo de **anterossuperior para posteroinferior**.",
-  "correta": "O traço de anterossuperior para posteroinferior fica perpendicular ao parafuso, que consegue comprimi-lo.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "fratura-do-odontoide-c2-b60ceadc",
+      "fratura-do-odontoide-c2-dd277a76",
+      "fratura-do-odontoide-c2-95546c7a",
+      "fratura-do-odontoide-c2-4660967c",
+      "fratura-do-odontoide-c2-dd2df648"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "492f4f63fbfd56e097ffab3bfe766188f7a0c715300e6dae10546043bb3ea1ac"
+    }
+   ],
+   "questaoSha256": "fe2971d5f255eff5839b112d7735352346dd112c8d334d8bf8c86229380741d9",
+   "comentarioSha256": "ac8b25fe6f269fbf8399a029ec256b79f0330979020990f3bccae9683fbeb7d4"
+  }
  },
  "trauma-0860": {
   "incorretas": {
@@ -16940,15 +17298,50 @@
   }
  },
  "trauma-0874": {
+  "conceito": "O coronoide não quebra sempre do mesmo jeito, e o lugar onde ele quebra conta a força que agiu. É essa a ideia que a banca cobra quando pergunta com que lesão a fratura da faceta anteromedial se relaciona.\n\n**Três lugares, três mecanismos.** O Rockwood and Green (10ª ed., cap. 40) usa a classificação de O'Driscoll: a **ponta** (tipo I) é cisalhada na luxação posterolateral e acompanha a **tríade terrível**; a **faceta anteromedial** (tipo II) é esmagada sob **varo**; a **base** (tipo III) aparece nas fraturas-luxações do olécrano e da ulna proximal.\n\n**Como a faceta anteromedial quebra.** Com **pronação, varo e carga axial**, o úmero roda sobre a ulna e a tróclea esmaga a parte anteromedial do coronoide, quase sempre com avulsão do colateral lateral. A ulna escapa **para trás e para dentro**: o capítulo chama esse padrão de **instabilidade rotatória posteromedial em varo**. A maioria não chega luxada; há história de luxação ou estalo que reduziu sozinho, e a pista é um coronoide fraturado com a cabeça do rádio intacta.\n\n**O que não é.** A tríade terrível nasce do mecanismo espelho (valgo, supinação e carga axial), com fratura da ponta e da cabeça do rádio, num padrão posterolateral. A fratura-luxação **anterior** é a transolecraniana, em que o segmento instável é o antebraço e o coronoide, quando fratura, é um fragmento anterior grande da base.\n\n> **Na prova:** ponta é tríade (posterolateral); faceta anteromedial é posteromedial em varo; base é olécrano.",
+  "correta": "**C: fratura-luxação posterior.** A fratura da faceta anteromedial acompanha a instabilidade rotatória posteromedial em varo, em que a ulna se desloca para trás e medialmente sob o úmero. Entre as alternativas, é a única com a direção posterior desse padrão; o nome usado no capítulo é instabilidade posteromedial.",
   "incorretas": {
-   "A": "A tríade terrível se associa à fratura da ponta do coronoide.",
-   "B": "A fratura-luxação anterior (transolecraniana) se associa à base do coronoide.",
-   "D": "A instabilidade posterolateral é o mecanismo da tríade terrível."
+   "A": "**A tríade leva a ponta.** Na tríade terrível, o coronoide quebra na ponta (tipo I de O'Driscoll), cisalhado pela tróclea na luxação posterolateral, junto com a cabeça do rádio. O resumo marca \"faceta anteromedial com tríade terrível\" como armadilha.",
+   "B": "**A anterior é a transolecraniana.** Na fratura-luxação anterior do olécrano, a radioulnar proximal fica preservada e o coronoide, quando fratura, é um fragmento grande da base, não da faceta anteromedial.",
+   "D": "**Direção oposta.** A instabilidade posterolateral é a do colateral ulnar lateral e da tríade, com supinação e valgo. A faceta anteromedial quebra sob varo e pronação, no padrão posteromedial."
   },
-  "conceito": "A **fratura da faceta anteromedial do coronoide** (O'Driscoll tipo 2) vem de um mecanismo em **varo** com **rotação posteromedial**: o úmero gira sobre a ulna, a tróclea esmaga a faceta anteromedial e o **colateral lateral** se rompe.\n\n**A lesão resultante**: uma **fratura-luxação posterior** do cotovelo, na forma da **instabilidade rotatória posteromedial em varo**. A ulna se subluxa para trás e para medial em relação ao úmero.\n\n**O contraste com as outras instabilidades**:\n\n**tríade terrível**: valgo e supinação, com fratura da **ponta** do coronoide e da **cabeça do rádio** (instabilidade **posterolateral**);\n\n**fratura-luxação anterior** (transolecraniana): fratura do **olécrano**, com a ulna indo para a frente; associada à **base** do coronoide.\n\n**Por que é traiçoeira**: o fragmento parece pequeno, e o cotovelo pode estar reduzido na radiografia, mas a articulação está instável e evolui com **artrose** rápida. Pedir **TC**.\n\n**O tratamento**: fixar a faceta (placa de suporte medial) e reparar o colateral lateral.\n\n**Na prova**: a fratura da faceta anteromedial se relaciona à **fratura-luxação posterior**.",
-  "correta": "O varo posteromedial fratura a faceta anteromedial e subluxa a ulna para trás: uma fratura-luxação posterior.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Instabilidade rotatória posteromedial em varo; Ulna proximal: olécrano e Monteggia posterior; Tríade terrível."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fraturas do coronoide",
+      "Instabilidade rotatória posteromedial em varo",
+      "Ulna proximal: olécrano e Monteggia posterior",
+      "Tríade terrível"
+     ],
+     "blocos": [
+      "fraturas-do-coronoide-7e8453cb",
+      "fraturas-do-coronoide-261ac45a",
+      "fraturas-do-coronoide-67ec539b",
+      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+      "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+      "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad",
+      "triade-terrivel-1483748a"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "9720f7b84df55b4242bb09799223bd27c4fe28699abffed5fcc3c91c97909be7"
+    }
+   ],
+   "questaoSha256": "7a49a47a1e96ecb6b9a9991d71eef1a089e66cb483b01ee9a569ab45ae31588d",
+   "comentarioSha256": "de40a4621aede4451432732f8a8fa10ccc488674b7617a70a1a4bdb5a0ab7148"
+  }
  },
  "trauma-0875": {
   "incorretas": {
@@ -19328,15 +19721,44 @@
   "conferido": false
  },
  "trauma-0972": {
+  "conceito": "Imagine que você retirou a cabeça do rádio cominutiva e montou os fragmentos na mesa para medir a prótese. A cabeça não é um círculo: medida em uma direção, ela é maior do que na outra. Qual número usar?\n\n**A cabeça é elíptica.** O Rockwood and Green (10ª ed., cap. 40) lembra que a cabeça do rádio é **elíptica**, não redonda, e que a maioria das próteses é circular. Se o cirurgião usa o maior diâmetro, a prótese redonda fica maior que a cabeça em toda a volta menos num ponto. Por isso o diâmetro ideal é o **menor** diâmetro da elipse, em geral 2 mm menor que o maior. Na dúvida entre dois tamanhos, escolhe-se o **menor**, no diâmetro e na espessura.\n\n**A altura.** A prótese deve articular no nível da **radioulnar proximal**, cerca de **2 mm abaixo da ponta do coronoide**. O capítulo alerta contra medir pela distância entre o capítulo e o corte do colo, porque o colateral lateral costuma estar roto e o espaço fica falsamente aberto. Radiografias do lado oposto ajudam a comparar.\n\n**O que acontece quando se erra para mais.** O alongamento excessivo (overstuffing) é a causa técnica mais comum de falha: causa dor, rigidez e desgaste do capítulo. A radiografia só mostra o erro tarde, quando o espaço umeroulnar medial abre do lado lateral, com 6 a 8 mm de alongamento.\n\n> **Na prova:** prótese da cabeça do rádio pelo menor diâmetro da elipse e na altura da radioulnar proximal. Na dúvida, a menor.",
+  "correta": "**D: do maior diâmetro da superfície articular da cabeça ressecada.** Como a cabeça nativa é elíptica e a prótese é redonda, usar o maior diâmetro deixa o implante grande demais. O capítulo manda usar o menor diâmetro e, na dúvida, o tamanho menor.",
   "incorretas": {
-   "A": "**Recomendado.** As próteses de teste ajudam a escolher o tamanho e a altura corretos.",
-   "B": "**Recomendada.** A radioscopia confirma a altura e o alinhamento da prótese.",
-   "C": "**Recomendada.** A incisura radial (fossa sigmoide menor) é a referência para a altura da prótese."
+   "A": "**É ferramenta, não armadilha.** Provar o implante na articulação ajuda a conferir tamanho e altura antes do definitivo. O resumo não discute as próteses de teste, mas nada nele recomenda evitá-las; o que ele manda evitar é usar o maior diâmetro.",
+   "B": "**Ajuda, com limite.** A imagem durante a cirurgia ajuda a conferir a altura, e radiografias do lado oposto servem de comparação. O capítulo só lembra que a radiografia é pouco sensível para pequenos alongamentos; isso é motivo para medir bem, não para dispensar a imagem.",
+   "C": "**É a referência certa para a altura.** A prótese deve articular no nível da radioulnar proximal, isto é, da incisura radial da ulna, cerca de 2 mm abaixo da ponta do coronoide. Usar essa região como parâmetro é o que o capítulo recomenda, não o que manda evitar."
   },
-  "conceito": "**A prótese da cabeça do rádio.** É indicada nas fraturas **cominutivas** não reconstruíveis (em geral com mais de três fragmentos), sobretudo quando o cotovelo ou o antebraço estão **instáveis**: tríade terrível, Essex-Lopresti, Monteggia tipo II. Restaura o **batente** radial, essencial para a estabilidade em valgo e contra a migração proximal do rádio.\n\n**O erro que mais pesa: o overstuffing.** Uma prótese **grande** ou **alta** demais sobrecarrega o capítulo, limita o movimento, dói e desgasta a cartilagem. O erro nasce quase sempre da **medida** da cabeça ressecada.\n\n**Como medir o diâmetro.** A cabeça do rádio é **elíptica**, e não um círculo perfeito. A prótese é **circular**. Por isso, deve-se usar o **menor diâmetro** da cabeça ressecada (ou da **fossa** da cabeça, medida no fragmento remontado), e não o **maior**. Usar o maior eixo gera um componente **grande demais**, que bloqueia a **pronossupinação** e contribui para o overstuffing. Na dúvida entre dois tamanhos, escolher o **menor**.\n\n**Como medir a altura.** Remontar os fragmentos na mesa para ter a altura original; usar **próteses de teste**; posicionar a borda da prótese no nível da **incisura radial** (fossa sigmoide menor) da ulna, cerca de **1 mm abaixo** da borda do coronoide lateral; conferir com **radioscopia** (o espaço ulnoumeral lateral não deve ficar mais aberto que o medial) e comparar a variância ulnar com o outro lado. Todos esses são recursos **recomendados**.\n\n**Na prova:** para escolher a prótese da cabeça do rádio, **evite** usar o **maior diâmetro** da cabeça ressecada (a cabeça é elíptica); use o menor, próteses de teste, a incisura radial e a radioscopia.",
-  "correta": "**Do maior diâmetro da superfície articular da cabeça ressecada.** A cabeça é elíptica, e usar o eixo maior para escolher uma prótese circular gera um componente grande demais, com bloqueio da rotação e overstuffing.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-9e1dbc64",
+      "fratura-da-cabeca-do-radio-c4d889b2",
+      "fratura-da-cabeca-do-radio-3e116d65",
+      "fratura-da-cabeca-do-radio-5c3c5627"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "e5dc9e0ef1ab33b6cd10a41d917dcc4d7e34f64d4a4a2d66994380b17dad03a9"
+    }
+   ],
+   "questaoSha256": "62881157023ef7feeb663bc9747449a7b352fdf6b91f5717aa614a45256731de",
+   "comentarioSha256": "0aa63429351b0b3d972c063fb3f74c323e0ea9122c903342d9b030254487a4e2"
+  }
  },
  "trauma-0973": {
   "conceito": "Hertel não estava apenas contando fragmentos: procurava sinais de que a cabeça mantinha irrigação. A região medial importa porque ramos vasculares chegam pela metáfise posteromedial. Uma **extensão metafisária curta ligada à cabeça, de 8 mm ou menos**, sugere perda de parte dessa conexão.\n\nOs preditores independentes descritos são essa extensão curta, ruptura da dobradiça medial e fratura pelo colo anatômico. Cabeça partida entra no sistema classificatório LEGO, mas não é automaticamente um dos preditores independentes. Essa diferença entre pertencer a uma classificação e prever um desfecho é o centro da questão (resumo do Rockwood, 10ª ed., cap. 36, “Os critérios de Hertel”).\n\nO desfecho medido era isquemia na cirurgia. O acompanhamento mostrou correlação ruim com necrose tardia, possivelmente por revascularização. Leia essa ressalva no resumo da Biblioteca antes de transformar um fator de risco em certeza de falha.",
@@ -22961,19 +23383,45 @@
   "conferido": false
  },
  "trauma-1125": {
-  "incorretas": {
-   "A": "**Avulsão não proíbe automaticamente a banda.** A decisão depende do tamanho e da qualidade do fragmento e de conseguir fixação estável.",
-   "B": "**Traço oblíquo exige avaliar estabilidade e direção da força.** Alguns padrões pedem placa ou compressão adicional, mas a obliquidade isolada é menos específica que a cominuição articular.",
-   "C": "**Fratura do rádio associada sugere trauma mais complexo.** É preciso reconstruir a estabilidade global do cotovelo, mas a associação, sem descrição do padrão olecraniano, não é contraindicação absoluta à técnica."
-  },
-  "conceito": "**A banda de tensão precisa de um foco simples para comprimir.** Na fratura transversa do olécrano, a tração do tríceps tende a separar os fragmentos. Fios e cerclagem na face posterior podem neutralizar essa tração e manter compressão no traço, desde que haja bom contato ósseo, redução articular e fixação estável. Esse princípio explica seu uso clássico nas fraturas transversas simples.\n\n**Cominuição articular muda a mecânica.** Quando a superfície da incisura troclear está multifragmentada, não existe um único plano regular que a banda possa comprimir sem encurtar ou deformar o olécrano. Perder o comprimento da ulna proximal altera a congruência articular e pode gerar instabilidade. A reconstrução dos fragmentos articulares, associada a uma placa de suporte ou ponte conforme a morfologia, permite controlar melhor esse cenário.\n\n**Nem todo outro achado é contraindicação automática.** Um pequeno fragmento por avulsão pode ser fixado com princípio de tensão se houver osso suficiente. A obliquidade pede análise da direção e do apoio: certos traços exigem parafuso interfragmentário ou placa, mas a palavra isolada não define o método. Fratura associada do rádio obriga avaliar estabilidade do cotovelo e tratar a lesão completa, sem ser por si só uma proibição universal à banda.",
-  "correta": "**Superfície articular multifragmentada.** A banda de tensão isolada não controla bem os fragmentos nem protege o comprimento e a congruência do olécrano.",
-  "referencias": [
-   "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 191."
-  ],
   "provavel": "D",
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conceito": "A banda de tensão do olécrano funciona por um truque mecânico: os fios e a cerclagem na face posterior transformam a tração do tríceps em compressão no foco. Para isso, o foco precisa ter dois lados que se encostem. A banca pergunta quando essa condição falta.\n\n**Para que a banda serve.** O Rockwood and Green (10ª ed., cap. 40) reserva a banda de tensão para fraturas **simples, sem cominuição, proximais ao coronoide**, com o cotovelo **estável**. Dois fios entram pela ponta do olécrano e saem na cortical anteromedial da ulna, e a cerclagem em oito passa por um túnel distal ao coronoide.\n\n**O que muda com a cominuição.** Na classificação de Mayo, cada tipo é **A** (sem cominuição) ou **B** (com cominuição), e o capítulo é claro: as **cominutivas vão melhor com placa**; as sem cominuição aceitam banda. Quando a superfície articular está em vários pedaços, a compressão da banda não tem onde se apoiar: ela encurta o olécrano e desaba a incisura sigmoide maior, o que gera incongruência e artrose. A placa, ao contrário, sustenta o comprimento. Nas cominutivas, o capítulo pede até que o parafuso longo da ponta não seja de compressão, para não apertar demais a incisura.\n\n**Instabilidade também pede placa.** A placa entra ainda nas fraturas associadas a instabilidade, como as transolecranianas, e nas que descem pela diáfise.\n\n> **Na prova:** banda de tensão só para o traço simples e estável; olécrano cominutivo (Mayo B) é placa.",
+  "correta": "**D: a superfície articular multifragmentada.** Sem um traço simples, a banda não comprime: ela encurta o olécrano e deforma a incisura sigmoide maior. O capítulo indica placa nas fraturas cominutivas. A questão não traz gabarito oficial; a resposta segue a bibliografia.",
+  "incorretas": {
+   "A": "**A avulsão é um fragmento proximal simples.** Uma fratura por avulsão da ponta do olécrano é justamente um traço simples, proximal ao coronoide, o cenário em que a banda de tensão é indicada.",
+   "B": "**A obliquidade sozinha não é o critério.** Os critérios do capítulo para a banda são traço simples, sem cominuição, proximal ao coronoide e cotovelo estável. Um traço oblíquo simples não aparece entre as contraindicações descritas.",
+   "C": "**O que pesa é a instabilidade, não o rádio.** Uma fratura associada do rádio deve fazer pensar em fratura-luxação, e, se o cotovelo estiver instável, a placa é a escolha. Mas a fratura do rádio em si não é o critério da banda; a cominuição articular é a contraindicação direta pedida."
+  },
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Ulna proximal: olécrano e Monteggia posterior."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Ulna proximal: olécrano e Monteggia posterior"
+     ],
+     "blocos": [
+      "ulna-proximal-olecrano-e-monteggia-posterior-6bc1603b",
+      "ulna-proximal-olecrano-e-monteggia-posterior-ebd7fd25",
+      "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52",
+      "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "3fabb01ef2449ff6f836adce01adf6651f9fa6329b3c0c6e15c842367c34aa3f"
+    }
+   ],
+   "questaoSha256": "c6753d6ee61f20cebcdf612c952f3d567e06382fa981e2072ca611750615b3fa",
+   "comentarioSha256": "64859b6e625f596526ed4529d9fcdea5a759ae35250b9b35bbf69de4c7220d75"
+  }
  },
  "trauma-1126": {
   "conceito": "No perfil, o planalto **lateral é plano ou levemente convexo**, enquanto o **medial é côncavo**. Entre as opções, isso corresponde a A, mantida como resposta provável porque não há gabarito oficial registrado.\n\nOs dois planaltos não são espelhos. A concavidade medial oferece maior congruência com o côndilo femoral, enquanto o contorno lateral pode ser mais plano ou abaulado. Na radioscopia em perfil, reconhecer as duas linhas ajuda a não confundir o contorno anatômico com uma deformidade da redução (Rockwood, 10ª ed., cap. 62, “Anatomia aplicada”).\n\nO lateral também é mais alto que o medial. Ambos apresentam inclinação posterior, com variação individual; o lado sadio serve de referência. Portanto, buscar duas superfícies idênticas em altura ou curvatura pode criar uma redução que parece simétrica, mas não restaura a anatomia.\n\n**Perfil é controle, não prova isolada de redução perfeita.** A TC caracteriza os fragmentos, e o controle deve integrar eixo, largura e superfície articular. O resumo mostra que defeitos posteriores podem persistir apesar de imagens aparentemente aceitáveis, reforçando a importância de exposição e avaliação adequadas quando indicadas.\n\nA palavra “convexa” da alternativa deve ser entendida como a descrição habitual simplificada do lateral. Não é necessário tornar uma convexidade acentuada obrigatória em todo joelho: a fonte admite superfície lateral plana ou levemente convexa.",
@@ -24731,21 +25179,45 @@
   "conferido": false
  },
  "trauma-1204": {
-  "alerta": "Na 10ª edição do ATLS e no PHTLS, o atendimento inicial passou a enfatizar o controle imediato da hemorragia externa exsanguinante (o \"X\" do XABCDE), que pode preceder a via aérea quando há sangramento externo maciço. Neste caso, com sangramento importante por fratura exposta e choque, a compressão direta do sangramento deve ser feita simultaneamente à abordagem da via aérea por uma equipe. O gabarito oficial (E), que segue a sequência clássica ABCDE, foi mantido.",
-  "conceito": "**Atendimento inicial ao politraumatizado (ATLS).** A avaliação primária segue uma sequência de prioridades, tratando as ameaças à vida na ordem em que matam mais rápido.\n\n| Etapa | Prioridade |\n|---|---|\n| (X) | Controle de hemorragia externa exsanguinante (nas versões mais recentes) |\n| **A** | **Via aérea com proteção da coluna cervical** |\n| B | Respiração e ventilação |\n| C | Circulação e controle de hemorragia |\n| D | Disfunção neurológica (Glasgow, pupilas) |\n| E | Exposição e controle do ambiente (hipotermia) |\n\n**Por que a via aérea vem primeiro.** A obstrução da via aérea mata em minutos. O paciente do caso tem frequência respiratória de 40 irpm, confusão mental e choque: pode evoluir com rebaixamento e perda da via aérea. A coluna cervical deve ser protegida em toda vítima de trauma de alta energia (queda de grande altura).\n\n**Na prática, as etapas são simultâneas.** Em uma equipe de trauma, enquanto um membro assegura a via aérea e a coluna, outros comprimem o sangramento, obtêm acessos venosos e iniciam a reposição. O sangramento importante das fraturas expostas do fêmur deve ser controlado com **compressão direta** e, se necessário, **torniquete**.\n\n**O caso.** Choque classe III a IV (PA 90 x 50, FC 140, FR 40, confusão), com duas fraturas expostas do fêmur sangrando. Após a via aérea, a prioridade é o controle do sangramento e a reposição com hemoderivados (protocolo de transfusão maciça), com ácido tranexâmico. As fraturas são estabilizadas provisoriamente depois (controle de danos).\n\n> ATLS: via aérea com proteção cervical primeiro, mas a hemorragia externa maciça deve ser controlada ao mesmo tempo.",
-  "correta": "**E: vias aéreas e imobilização da coluna cervical (gabarito oficial).** Pela sequência clássica do ATLS, a primeira prioridade é garantir a via aérea com proteção da coluna cervical, especialmente em uma vítima de queda de grande altura, taquipneica e confusa. Em centros de trauma, o controle do sangramento externo maciço é feito simultaneamente por outros membros da equipe, como destacado na ressalva acima.",
+  "alerta": "Gabarito oficial E mantido. A sequência clássica do ATLS, descrita no Rockwood and Green (cap. 48), põe a via aérea com proteção da coluna cervical antes da circulação. Edições recentes do ATLS e o PHTLS destacam o controle imediato da hemorragia externa exsanguinante, que pode ser feito ao mesmo tempo por outro membro da equipe quando há sangramento externo maciço.",
+  "conceito": "O paciente chega com tudo ao mesmo tempo: duas fraturas expostas sangrando, pressão baixa, taquicardia, respiração rápida e confusão. A banca não pergunta o que é grave; pergunta o que vem primeiro.\n\n**A coluna entra junto com a via aérea.** O Rockwood and Green (10ª ed., cap. 48) lembra que o ATLS manda **imobilizar a coluna cervical durante a avaliação inicial**, que inclui vias aéreas, respiração e circulação. Todo paciente com alteração de consciência, intoxicação, lesão que distrai, déficit focal ou dor na coluna deve ser tratado como portador de lesão vertebral até prova em contrário. Este paciente tem duas razões óbvias: a **confusão** e as **lesões que distraem**, as fraturas expostas.\n\n**Por que tanto cuidado.** O capítulo dá o número que justifica a regra: o risco de **sequela neurológica aumenta 10 vezes** quando a lesão cervical passa despercebida. Na intubação, a estabilização manual em linha evita deslocar uma lesão instável.\n\n**O lugar do sangramento.** Na sequência clássica, a via aérea com proteção cervical vem antes da circulação; o resumo marca \"controlar o sangramento primeiro\" como armadilha para esta questão. Na prática, em equipe, a compressão do sangramento externo pode ser feita ao mesmo tempo.\n\n> **Na prova:** no politraumatizado, primeiro via aérea com imobilização da coluna cervical; depois respiração, circulação e neurológico.",
+  "correta": "**E: vias aéreas e imobilização da coluna cervical.** É o primeiro passo da avaliação inicial do ATLS, como descreve o capítulo; o paciente confuso e com lesões que distraem deve ter a coluna protegida desde o início.",
   "incorretas": {
-   "A": "**O estado neurológico** (D) é avaliado após a via aérea, a respiração e a circulação. A confusão mental pode ser causada pelo choque e pela hipóxia, que devem ser corrigidos antes.",
-   "B": "**Respiração e ventilação** (B) vêm logo após a via aérea. Sem uma via aérea pérvia, não adianta avaliar a ventilação.",
-   "C": "**O controle do sangramento** é vital e, nas versões mais recentes do ATLS, a hemorragia externa exsanguinante é controlada logo no início. A banca seguiu a sequência clássica, que coloca a via aérea primeiro.",
-   "D": "**O tratamento provisório das fraturas** (alinhamento, tala, fixador externo) faz parte do controle de danos, mas vem depois das prioridades que ameaçam a vida."
+   "A": "**Vem depois.** O estado neurológico é avaliado na sequência, depois de via aérea, respiração e circulação.",
+   "B": "**É o segundo passo.** Respiração e ventilação vêm logo depois de garantir a via aérea com a coluna protegida.",
+   "C": "**É a armadilha.** O sangramento é grave e deve ser contido, mas, na sequência clássica que o capítulo segue, a via aérea com proteção cervical vem antes da circulação. Veja o alerta sobre o controle simultâneo da hemorragia exsanguinante.",
+   "D": "**É tratamento definitivo, não prioridade.** As fraturas são estabilizadas depois da avaliação primária e da reanimação."
   },
   "referencias": [
-   "American College of Surgeons. ATLS Advanced Trauma Life Support: Student Course Manual. 10th ed. American College of Surgeons; 2018.",
-   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Atendimento inicial ao politraumatizado."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atendimento inicial e exame neurológico"
+     ],
+     "blocos": [
+      "atendimento-inicial-e-exame-neurologico-3729e45a",
+      "atendimento-inicial-e-exame-neurologico-f5824e02",
+      "atendimento-inicial-e-exame-neurologico-a5563a74"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "ca1dbad86c3e107155b1c3155d42c45c615f03c43e9e32020f2af779e80be4bd"
+    }
+   ],
+   "questaoSha256": "a000e0759fa2566f42f241885edc49ff23a8aaa26590e07601c3b055ab5245ae",
+   "comentarioSha256": "b8993d9ba48a6f2db8790631f3eb71c8b29912a18526a89cf29a26d86d1f2859"
+  }
  },
  "trauma-1205": {
   "conceito": "**Classificação AO Spine das fraturas toracolombares: tipo B.** As lesões tipo B são aquelas em que há **falha da banda de tensão** (posterior ou anterior), sem translação.\n\n| Tipo | Descrição |\n|---|---|\n| B1 | Lesão **transóssea** da banda de tensão posterior: o traço atravessa o osso (pedículos, lâminas, processos), como na **fratura de Chance** clássica |\n| **B2** | Lesão da banda de tensão posterior **ligamentar ou osteoligamentar**: ruptura do complexo ligamentar posterior (ligamentos supraespinhoso, interespinhoso, amarelo, cápsulas facetárias), com ou sem fratura do corpo vertebral |\n| B3 | Lesão da banda de tensão **anterior** por **hiperextensão**: ruptura do disco e do ligamento longitudinal anterior, comum em coluna anquilosada |\n\n**Lesões tipo A e C.**\n- **A**: compressão, com banda de tensão íntegra (A0 a A4; A4 é a explosão completa).\n- **C**: translação ou deslocamento em qualquer plano.\n\n**Sinais de lesão B2.** Aumento da distância entre os processos espinhosos, diástase ou subluxação facetária, cifose localizada, alteração de sinal nos ligamentos posteriores na ressonância (T2 com supressão de gordura). Com uma fratura do corpo vertebral associada, descreve-se, por exemplo, \"B2 com A3\".\n\n**Importância.** A lesão do complexo ligamentar posterior torna a fratura instável e geralmente cirúrgica, porque os ligamentos cicatrizam mal.\n\n**Nota sobre a imagem.** A figura associada à questão mostra radiografias da coluna lombar em AP e perfil.\n\n> AO B2: ruptura da banda de tensão posterior ligamentar ou osteoligamentar.",
@@ -24823,19 +25295,45 @@
   "conferido": false
  },
  "trauma-1210": {
-  "conceito": "**Piora neurológica após cirurgia da coluna cervical.** É uma complicação grave que exige avaliação imediata, porque algumas causas são reversíveis se tratadas rapidamente.\n\n**Causas principais.**\n- **Hematoma epidural** compressivo: pode surgir nas primeiras horas, com dor, piora progressiva da força e, na via anterior, também hematoma cervical com risco à via aérea.\n- **Deslocamento do enxerto ou do cage** (para trás, no canal, ou para frente) e falha do material, sobretudo após corpectomias longas.\n- Redução inadequada ou perda de redução com nova compressão.\n- Isquemia medular por hipotensão no intraoperatório.\n- Lesão direta durante a descompressão.\n- Síndrome de reperfusão medular (rara).\n\n**Conduta.**\n1. Exame neurológico seriado e comparação com o pré-operatório.\n2. Manter pressão arterial média elevada (85 a 90 mmHg), corrigir anemia e hipóxia.\n3. **Exame de imagem imediato** (tomografia para o implante e o enxerto; ressonância para hematoma e compressão).\n4. **Reabordagem cirúrgica de urgência** se houver hematoma ou deslocamento do enxerto.\n\n**Prevenção.** Hemostasia cuidadosa, drenos, dimensionamento correto do enxerto com encaixe firme, placa anterior, fixação posterior quando há instabilidade circunferencial, monitorização neurofisiológica.\n\n| Causa | Momento típico | Tratamento |\n|---|---|---|\n| Hematoma epidural | Primeiras horas | Drenagem urgente |\n| Deslocamento do enxerto | Horas a dias | Revisão |\n| Isquemia | Intraoperatória | Suporte pressórico |\n\n> Piora neurológica após cirurgia cervical: pensar em hematoma e deslocamento do enxerto, causas tratáveis.",
-  "correta": "**D: Formação de hematoma e o deslocamento do enxerto.** São as principais causas tratáveis de piora neurológica após a cirurgia da coluna cervical. O hematoma epidural comprime a medula nas primeiras horas, e o enxerto ou cage pode se deslocar para o canal. Ambas exigem imagem imediata e reabordagem de urgência.",
+  "conceito": "O jovem motociclista do caso teve uma fratura grave de C6 e foi operado. Depois da cirurgia, o exame neurológico piorou. O que procurar primeiro?\n\n**A cirurgia do caso.** O resumo do Rockwood and Green (10ª ed., cap. 48) usa este caso da SES-DF como exemplo de fratura em gota de lágrima em flexão, compressão-flexão de ALLEN estágio 3 ou mais. Para os autores, ela é tratada com **corpectomia anterior**, **gaiola com enxerto** e **placa**, somando a fixação posterior quando há translação grande ou facetas afastadas. É uma montagem com várias peças colocadas na frente da medula.\n\n**O que pode comprimir a medula depois.** Diante da piora, o capítulo manda procurar, com radiografia e tomografia, **falha da montagem**, **deslocamento do enxerto** e **compressão**. Um enxerto que sai do lugar, ou um hematoma que se forma no espaço operado, empurram a medula recém-descomprimida. São causas mecânicas, que podem ser vistas na imagem e corrigidas.\n\n**O hematoma epidural.** O capítulo leva esse risco tão a sério que os autores só iniciam a profilaxia de trombose no **4º ou 5º dia**, por medo de hematoma epidural.\n\n> **Na prova:** piora neurológica depois da cirurgia cervical é compressão até prova em contrário: hematoma, enxerto deslocado, falha da montagem. Imagem já.",
+  "correta": "**D: formação de hematoma e o deslocamento do enxerto.** São as causas compressivas que o capítulo manda procurar logo na piora pós-operatória, porque podem ser vistas na imagem e corrigidas.",
   "incorretas": {
-   "A": "**Tração dos membros superiores** (para melhorar a visualização radiológica) pode causar lesão do plexo braquial, mas não explica uma piora medular após a cirurgia.",
-   "B": "**Tração cervical** é usada antes da cirurgia para reduzir luxações; complicações ocorrem principalmente na redução de hérnias associadas, mas não é a principal hipótese para a piora pós-operatória.",
-   "C": "**Contusão medular no transoperatório** pode ocorrer, mas é menos frequente e não é tratável depois do fato. As causas que precisam ser buscadas ativamente, por serem reversíveis, são o hematoma e o deslocamento do enxerto."
+   "A": "**É distrator.** A tração dos membros superiores não está entre as causas de piora pós-operatória que o capítulo manda procurar; o resumo marca essa alternativa como armadilha.",
+   "B": "**Também é distrator.** A tração cervical faz parte da redução do caso e não é a causa que o capítulo manda procurar na piora pós-operatória.",
+   "C": "**Possível, mas não é o que se procura primeiro.** Uma lesão durante a cirurgia pode acontecer, mas não é corrigível nem é a hipótese que a imagem confirma de imediato; o capítulo prioriza as causas compressivas, hematoma e enxerto deslocado."
   },
   "referencias": [
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Complicações da cirurgia da coluna cervical.",
-   "Fisher CG, Dvorak MF, Leith J, Wing PC. Comparison of outcomes for unstable lower cervical flexion teardrop fractures managed with halo thoracic vest versus anterior corpectomy and plating. Spine. 2002;27(2):160-166."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Compressão, explosão e teardrop; Vias de acesso, fixação e complicações."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Compressão, explosão e teardrop",
+      "Vias de acesso, fixação e complicações"
+     ],
+     "blocos": [
+      "compressao-explosao-e-teardrop-13a89876",
+      "compressao-explosao-e-teardrop-a3e0c6bc",
+      "compressao-explosao-e-teardrop-d1474e43",
+      "vias-de-acesso-fixacao-e-complicacoes-6daa51d4"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "1f184ca977e21731b53360d624cd4ce2d6a85ad4c2d952f422d5d4640566a02a"
+    }
+   ],
+   "questaoSha256": "7540383b7fe19c465cd6787939dfd740fa09c8e7df93991510f88446b51821b7",
+   "comentarioSha256": "3308febe35a2855a8ace33522ef0dc1eb8bb5e6df62afebc9bf321ae9fe566da"
+  }
  },
  "trauma-1211": {
   "conceito": "**Classificação de Tscherne para lesões de partes moles.** Tscherne e Oestern descreveram graus separados para fraturas fechadas (Fr. C) e abertas (Fr. O). O foco é a lesão das partes moles, que determina o risco de infecção e de complicações.\n\n**Fraturas abertas.**\n\n| Grau | Descrição |\n|---|---|\n| O1 | Pele perfurada por um fragmento de dentro para fora, ferida pequena, pouca contaminação |\n| O2 | Ferida com contusão de pele e partes moles, contaminação moderada |\n| O3 | **Lesão extensa de partes moles**, frequentemente com **lesão vascular ou nervosa** associada, contaminação importante |\n| O4 | Amputação subtotal ou total (lesão das principais estruturas, com menos de um quarto das partes moles em continuidade) |\n\n**Fraturas fechadas.** C0 (lesão mínima de partes moles, trauma indireto), C1 (escoriações e contusões superficiais), C2 (contusão profunda, risco de síndrome compartimental) e C3 (contusão extensa, desenluvamento fechado, síndrome compartimental instalada, lesão vascular).\n\n**Comparação com Gustilo.** Gustilo classifica apenas as fraturas expostas e depende do tamanho da ferida, da cobertura óssea e da lesão arterial. Tscherne valoriza a contusão das partes moles e a lesão neurovascular, mesmo sem lesão arterial que exija reparo.\n\n**O caso.** Ferida maior que 10 cm, alta energia e lesão completa do nervo fibular: lesão extensa de partes moles com lesão nervosa, ou seja, Tscherne O3.\n\n> Tscherne O3: lesão extensa de partes moles, muitas vezes com lesão nervosa ou vascular.",
