@@ -1,0 +1,137 @@
+{
+  "lote": 195,
+  "base": "14a815a7f0a562fff9b27a9b52e0e9ee31f753e7",
+  "revisadas": [
+    "ombro-cotovelo-0121",
+    "ombro-cotovelo-0305",
+    "ombro-cotovelo-0451"
+  ],
+  "lacunas": [
+    "ombro-cotovelo-0257",
+    "ombro-cotovelo-0304",
+    "trauma-0450",
+    "trauma-0912",
+    "trauma-0976",
+    "trauma-0978",
+    "trauma-0980"
+  ],
+  "imagensAbertas": {
+    "ombro-cotovelo-0121": [
+      {
+        "arquivo": "ombro-cotovelo/ombro-cotovelo-0121-1.jpeg",
+        "sha256": "86e36c012a35aef4b5eeec42951b0bc1b37d17fd52f736e4198f090d4053e473"
+      }
+    ],
+    "ombro-cotovelo-0257": [
+      {
+        "arquivo": "ombro-cotovelo/ombro-cotovelo-0258-1.jpeg",
+        "sha256": "9e8dc446f18f282a40e03806b553a5564f9893d17d35bbf14cab989f86995529"
+      }
+    ],
+    "ombro-cotovelo-0304": [
+      {
+        "arquivo": "ombro-cotovelo/ombro-cotovelo-0435-1.jpeg",
+        "sha256": "8e5062a31ed2fd0fae50a835a30e5e13e7edf98f0e90b349928dd0ca5fc8f397"
+      }
+    ],
+    "ombro-cotovelo-0305": [
+      {
+        "arquivo": "ombro-cotovelo/ombro-cotovelo-0436-1.jpeg",
+        "sha256": "e5da581c4817de1b8123cff9d0694c8353bc0bdf4c606673045c2471538ebd3c"
+      }
+    ],
+    "ombro-cotovelo-0451": [
+      {
+        "arquivo": "ombro-cotovelo/ombro-cotovelo-0451-1.jpeg",
+        "sha256": "ae8f83c3143d18d7943e4ec74c136780b299bf0156b5317acc7256643c122d8d"
+      }
+    ],
+    "trauma-0450": [
+      {
+        "arquivo": "trauma/trauma-0450-1.jpeg",
+        "sha256": "c2d02781111c9928ec79cd8a5af1f8756a011d7ac23479f6c8ee024ac6553556"
+      }
+    ],
+    "trauma-0912": [
+      {
+        "arquivo": "trauma/trauma-0912-1.png",
+        "sha256": "16af0419fb5a008636732b8295fa36178432a93f683ad95435802938473ed754"
+      }
+    ],
+    "trauma-0976": [
+      {
+        "arquivo": "trauma/trauma-0976-1.webp",
+        "sha256": "5d064c4e7adde56d080986d2b3c5ff940c6e3f21b8749e4e9971b2d6385ffef3"
+      }
+    ],
+    "trauma-0978": [
+      {
+        "arquivo": "trauma/trauma-0978-1.png",
+        "sha256": "6eebfe1a78f572f4ce2702e54bf3236455f45253985c91740840762bff487ccb"
+      }
+    ],
+    "trauma-0980": [
+      {
+        "arquivo": "trauma/trauma-0980-1.png",
+        "sha256": "5cead62cc2e2d5fc0eccee9c9251a6eca09175106b670feee8314bbdea7bc767"
+      }
+    ]
+  },
+  "fontes": {
+    "rockwood10-40-cotovelo-cabeca-radio": {
+      "jsonSha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "markdownSha256": "67a27eaeb3c15a985c2bb856ee42cbcd8f153b8c377d43eddeafdebcfae20d88"
+    },
+    "rockwood10-61-luxacao-joelho": {
+      "jsonSha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "markdownSha256": "7aefa278135476641be3851c0c9f7ba579c2da8991418eabf69a4ddaa390e617"
+    }
+  },
+  "leitura": "Corpo40 integral já lido na passagem192–194;hash preservado e seções lateral/medial,zona segura,vias,imagem,Mayo e banda de tensão relidas individualmente. Corpo61 integral lido previamente;trechos do bíceps e vias relidos. Somente corpo independente e observação direta das figuras;comentário antigo não usado como fonte.",
+  "validacao": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "replay": "3/3;7 comentários pendentes e todos os demais bytes preservados",
+    "ui": {
+      "casos": 3,
+      "larguras": [
+        390,
+        1440
+      ],
+      "respostasEFontesExatas": true
+    },
+    "logsSha256": {
+      "aplicacao195.log": "8acb28d5c60f008fb2a281a693be82474d37e86f87d7233c69adf4154d68c572",
+      "checks195.log": "bbae204a78dc0dfd927e5850b06f943095470bd02248f70626bd9f1e121ad59b",
+      "ui195.log": "80388177c002616bd87832a10e3e1585dadfb61ba4a24e2b09952a53ffd411b1",
+      "remotos195.json": "a6357bf5a0643687aca19fcd08695bf0d6746b2812277801985e6128fd1a40b3"
+    }
+  },
+  "publicacaoAnterior": {
+    "pr": 586,
+    "head": "96a6d6a17d0284ffe80592afc2a016f0b09129fe",
+    "merge": "14a815a7f0a562fff9b27a9b52e0e9ee31f753e7",
+    "ci": 40498557527,
+    "pages": 40538175250,
+    "avulsosIntegrais": 229,
+    "resumosIntegrais": 11,
+    "figurasSha256": 21
+  },
+  "inventario": {
+    "resumos": 38,
+    "questoes": 2623,
+    "estados": {
+      "revisada": 1595,
+      "pendente-fonte": 480,
+      "pendente-inspecao-imagem": 34,
+      "pendente-anulada": 9,
+      "pendente": 416,
+      "duplicada": 87,
+      "pendente-figura-ausente": 2
+    }
+  },
+  "publicacao195": "Validação local. Conferir head,CI,merge,deploy real e avulsos antes de declarar publicado.",
+  "proximoLote": 196
+}
