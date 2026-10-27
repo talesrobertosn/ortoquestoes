@@ -1,0 +1,82 @@
+{
+  "base": "d753fb98da664bc97a1fb08f182b69823a06bec6",
+  "lotes": {
+    "175": {
+      "revisadas": [
+        "trauma-0136",
+        "trauma-0276",
+        "trauma-0698",
+        "trauma-0810"
+      ],
+      "pendencias": 6
+    },
+    "176": {
+      "revisadas": [
+        "mao-0742"
+      ],
+      "pendencias": 9
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks175176.log": "38fc5e9e37706717554027393b387bf54725499cd01b3c523fbab5ca3dd941a2",
+    "checks175-ajuste.log": "99ed12b9359c8a8bcdf877ee5953c941ca5445ab824f76834ad37653531e3d97",
+    "ajuste175.log": "8415a13bb8bf6de8ee1e30048e74af4ade82412b0fdac33f69718aeb51a441da",
+    "ui175.log": "917f16874df8f62ab847f0439835ba643d1dbe9485e7a4f61ec50801c323ae6c",
+    "remotos175.json": "b0a1a66f6a3438eadc0ee5e1501f0fd534318d1b2e97837861ee41db21c69eac"
+  },
+  "replay": "5/5 comentários, alternativas, fontes, hashes e avulsos integrais",
+  "preservacao": "15 comentários pendentes intactos; demais membros dos dois temas e questões/índice/progresso/Biblioteca preservados",
+  "visual": {
+    "casos": 5,
+    "larguras": [
+      390,
+      1440
+    ],
+    "linksExatos": true,
+    "alertas": [
+      "trauma-0276"
+    ],
+    "alertasRemovidosComFonte": [
+      "trauma-0698"
+    ],
+    "capturasInspecionadas": [
+      "175-trauma-0276-alerta-cel.png",
+      "175-mao-0742-aula-pc.png"
+    ]
+  },
+  "imagensConferidas": [],
+  "fontes": [
+    {
+      "id": "rockwood10-44-carpo",
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "leitura": "Leitura integral anterior,761linhas sem mudanças, e releitura dos blocos independentes de cada alternativa; sem notas contextuais como fonte clínica."
+    },
+    {
+      "id": "wilkins9-08-radio-ulna-distal-crianca",
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "leitura": "Leitura integral nesta passagem,434linhas; bloco independente do diagnóstico diferencial usado para definição de Preiser."
+    }
+  ],
+  "inventario": {
+    "resumos": 34,
+    "ids": 2483,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 476,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 379,
+      "pendente-inspecao-imagem": 83,
+      "revisada": 1447
+    }
+  },
+  "proximoLote": 177,
+  "publicacao": "Conferir head/CI, revisão, merge, guarda/deploy e produção no PR; validação local não antecipa publicação."
+}

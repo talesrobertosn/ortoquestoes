@@ -1,0 +1,50 @@
+[
+  {
+    "id": "mao-0834",
+    "questaoSha256": "781e0fb9bd8e40907676d7742d5437b17214676503192d3173cbc3529255180f",
+    "comentarioAnteriorSha256": "3963aebb618c9f4ebfad48bd34f8b8372879d4cb469ae790ee4d99d8c054b9d9",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-44-carpo",
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+      }
+    ],
+    "imagensInspecionadas": [
+      "mao/mao-0834-1.png"
+    ],
+    "pendencia": "Figura aberta: esquema de passagem de suturas e nó junto ao complexo escafossemilunar dorsal, com assinatura do ilustrador. O corpo44 descreve reparo artroscópico dorsal/DCSS e capsulodese, mas não associa a técnica ilustrada ao autor Mathoulin nem compara Crespi/Berger/Nakamura/Zaidemberg. Assinatura da ilustração não demonstra autoria da técnica. Falta fonte técnica primária identificando o procedimento e cada epônimo; gabarito C preservado, sem baseResumo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "trauma-0475",
+    "questaoSha256": "2da0d2c2d8ecc4f47a361fd5a46078922e14c1af1c3bc99259633a25b160cae7",
+    "comentarioAnteriorSha256": "0717ccbb7fb6e7c1ac281ed886aecd2ce07eca59b5ccdcd58bdb7e2447ea4058",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-44-carpo",
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+      }
+    ],
+    "imagensInspecionadas": [
+      "trauma/trauma-0475-1.jpeg"
+    ],
+    "pendencia": "Figura aberta: dois painéis de enxerto ósseo pediculado na face volar do rádio distal, com arco de rotação ao escafoide. O corpo44 lista enxertos pediculados volares/dorsais e livres, mas não atribui esse pedículo ao epônimo Mathoulin nem descreve os pedículos das outras quatro opções. Não inferir autoria só pelo trajeto ou pelos nomes no comentário antigo. Falta descrição técnica primária com anatomia do pedículo e autoria; gabarito C preservado, sem baseResumo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  },
+  {
+    "id": "trauma-0994",
+    "questaoSha256": "04cdf1a82fb13c9a509df79079f6555641ff59345cd2f55a145828375028725f",
+    "comentarioAnteriorSha256": "7a0a5e45888f800d3b81cef11c4112515199894fc0f80831654b0441c22d97b8",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-44-carpo",
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+      }
+    ],
+    "imagensInspecionadas": [
+      "trauma/trauma-0994-1.png"
+    ],
+    "pendencia": "Figura aberta: posicionamento da mão sobre apoio inclinado e radiografia do escafoide. O corpo44 descreve Ziter como AP com desvio ulnar e tubo20graus para o cotovelo. Porém, não define Stecher nem SchneckI/II, necessários à comparação individual dos três distratores. A nota contextual da própria questão reconhece essa ausência; não inventar graus ou trocar inclinação do apoio por angulação medida do tubo a partir da fotografia. Falta fonte radiográfica comparativa das quatro incidências e respectivos posicionamentos; gabarito A preservado, sem baseResumo.",
+    "estadoAnterior": "pendente-inspecao-imagem"
+  }
+]

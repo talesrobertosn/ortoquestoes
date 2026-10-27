@@ -1,0 +1,176 @@
+{
+  "trauma-0136": {
+    "questaoSha256": "08708ea0869b1f9a5bfd0f5d2b903366c19918d63a49312a5124d9d9344fc2d9",
+    "comentarioAnteriorSha256": "a1cf6852cc7abae4ed5d02c81ee19329478932f9216ce57b0ed09e8f70df9ce4",
+    "comentario": {
+      "conceito": "A síndrome naviculocapitato, também chamada escafocapitato, envolve uma **fratura do colo do capitato com rotação do fragmento proximal**. O nome lembra sua associação com o escafoide; a característica que permite reconhecê-la é a cabeça do capitato separada e rodada, e não apenas uma luxação ou uma ruptura ligamentar.\n\nO resumo descreve transmissão de força alta pela estiloide radial, com fratura do escafoide e depois do colo do capitato. O fragmento proximal pode girar de **90° a 180°**. O escafoide nem sempre está fraturado nesse padrão, por isso a rotação do fragmento do capitato precisa ser procurada por si mesma.\n\nA irrigação retrógrada torna esse fragmento vulnerável à necrose. Uma fratura transversal da cintura do capitato também deve levantar suspeita de lesão perilunar associada. O resumo separa o tratamento das fraturas sem desvio, imobilizadas, daquele das desviadas ou com luxação, que exige fixação. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Capitato e a síndrome escafocapitato e Mayfield.",
+      "correta": "Correta: C (fratura do capitato com rotação do fragmento proximal). Reúne a lesão óssea e a alteração de posição características. A rotação diz respeito a um fragmento separado pela fratura, e não simplesmente ao capitato inteiro deslocado.",
+      "incorretas": {
+        "A": "Ruptura do escafocapitato descreve uma lesão ligamentar. Na sequência perilunar, esse ligamento transmite força ao escafoide; sua ruptura isolada não substitui a fratura do colo e a rotação da cabeça do capitato que definem a síndrome.",
+        "B": "A luxação mediocárpica é o resultado mais comum do estágio III de Mayfield: o carpo sai de posição enquanto o semilunar permanece na fossa. É uma perda de relação entre articulações e pode integrar uma lesão complexa, mas não descreve a fratura com fragmento proximal rodado exigida aqui.",
+        "D": "A alternativa descreve separação entre colunas. Na teoria clássica, a central inclui semilunar, capitato e hamato; a medial, piramidal e pisiforme. Essa descrição de relações entre conjuntos de ossos não identifica a fratura do colo do capitato nem a rotação de sua cabeça, características da síndrome perguntada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Fraturas dos outros ossos do carpo; Mayfield e a luxação perilunar; Anatomia ligamentar e cinemática do carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Fraturas dos outros ossos do carpo",
+          "Mayfield e a luxação perilunar",
+          "Anatomia ligamentar e cinemática do carpo"
+        ],
+        "blocos": [
+          "fraturas-dos-outros-ossos-do-carpo-bc810ef4",
+          "fraturas-dos-outros-ossos-do-carpo-fe223feb",
+          "mayfield-e-a-luxacao-perilunar-c96b9191",
+          "mayfield-e-a-luxacao-perilunar-07798063",
+          "anatomia-ligamentar-e-cinematica-do-carpo-ac6a12e3"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "d3561faa74394fe80d85f9d0257d630b0c18bed08eb38eb5c1ed36b02143a699"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0276": {
+    "questaoSha256": "dc50dcdf824091b683986d5f63254c8e92999c6108b72c3b5c3e06331f67a674",
+    "comentarioAnteriorSha256": "dfb3f165c093b90f7fdff7fd00c64239e58f22a00add68625d1a4a39c295c5d6",
+    "comentario": {
+      "conceito": "A associação procurada é a **lesão escafossemilunar**. O resumo, porém, é mais específico que o enunciado: na fratura **intra-articular** do rádio distal sem osteoporose, descreve variância ulnar positiva **maior que 2 mm** como preditor de lesão escafossemilunar grave. Não transforma qualquer variância positiva, isoladamente, em diagnóstico definitivo.\n\nO escafossemilunar é o estabilizador primário entre os dois ossos da fileira proximal. Sua ruptura permite que escafoide e semilunar percam o movimento coordenado; o intervalo pode alargar progressivamente, e a deformidade estática depende também dos estabilizadores secundários.\n\nA investigação procura sinais próprios: intervalo aumentado, sinal do anel pela flexão do escafoide e alterações dos ângulos. A comparação com o outro punho e as incidências de estresse ajudam; a artroscopia é o padrão de referência descrito para examinar o ligamento e a estabilidade. A variância é uma pista associada ao contexto da fratura, não substitui essa avaliação. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Dissociação escafossemilunar e Mayfield.",
+      "correta": "Correta: B (escafossemilunar). É a lesão que a fonte relaciona à variância positiva acima de 2 mm na fratura intra-articular sem osteoporose. A resposta oficial fica preservada, com a ressalva de que o enunciado omitiu esse limiar e a condição intra-articular.",
+      "incorretas": {
+        "A": "O escafocapitato liga componentes de fileiras diferentes e transmite força ao escafoide no estágio I de Mayfield. Esse papel não o torna a dissociação prevista pelo sinal de variância descrito, que está associado especificamente à lesão escafossemilunar.",
+        "C": "A relação entre semilunar e capitato participa do estágio II de Mayfield, quando o capitato se desloca dorsalmente pelo espaço de Poirier. Esse mecanismo de instabilidade perilunar não é a associação específica que o resumo atribui à variância ulnar na fratura do rádio distal.",
+        "D": "A falha lunopiramidal caracteriza o lado ulnar da sequência perilunar, no estágio III. Reconhecer esse papel evita trocar a ruptura escafossemilunar prevista no contexto da fratura radial por outra ligação da fileira proximal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito B foi preservado. O resumo descreve a associação na fratura intra-articular do rádio distal sem osteoporose com variância ulnar positiva maior que 2 mm. O enunciado omite o caráter intra-articular e o limiar; não interpretar qualquer valor positivo isolado como diagnóstico de dissociação."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-413534f6",
+          "dissociacao-escafossemilunar-67e58eaf",
+          "dissociacao-escafossemilunar-1f9a739d",
+          "dissociacao-escafossemilunar-4b14cd81",
+          "dissociacao-escafossemilunar-14203ef4",
+          "dissociacao-escafossemilunar-3c8bdf0f",
+          "dissociacao-escafossemilunar-0e26d2d4",
+          "mayfield-e-a-luxacao-perilunar-c96b9191",
+          "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+          "mayfield-e-a-luxacao-perilunar-07798063"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "4fd249ed32ba340ed5cd32eba9572fd97d0b5f52cb2e94ea8a41e11532065a25"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0698": {
+    "questaoSha256": "0fc36b72d6fa4684bf92c164c9677fb1151ca51319e19e4e9d607261f1759e6a",
+    "comentarioAnteriorSha256": "543d276b5a1dbe093301bdf17d0c1faed8cd97011fc037c0640f122cd1b0ec19",
+    "comentario": {
+      "conceito": "No resumo consultado, a lesão mais frequentemente associada à fratura do escafoide é a **fratura da cabeça ou do colo do rádio**, isto é, do rádio proximal. Esse dado coincide com a alternativa B.\n\nCerca de 10% das fraturas do escafoide têm uma lesão associada na descrição da fonte. Na alta energia, o texto também enumera fratura do rádio distal, luxação perilunar e fratura-luxação transescafoperilunar. Listar associações possíveis de um subgrupo não muda automaticamente a associação mais comum descrita no conjunto geral.\n\nA avaliação não deve terminar no escafoide. O achado de uma fratura do rádio distal ou de outro osso do carpo junto indica lesão ligamentar mais grave; lesões ósseas e ligamentares podem coexistir. A pergunta é de frequência da associação, e não de qual estrutura fica mais próxima do escafoide. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Lesões associadas, Dissociação escafossemilunar, Semilunar e Mayfield.",
+      "correta": "Correta: B (fratura do rádio proximal). Cabeça e colo são regiões proximais do rádio, expressamente indicadas pela fonte como a associação mais comum. O enunciado não restringe a pergunta ao subgrupo de alta energia.",
+      "incorretas": {
+        "A": "O escafossemilunar é um estabilizador primário e pode participar de lesões complexas. Sua proximidade anatômica com o escafoide não demonstra a maior frequência pedida; no grande arco, a força que atravessa a cintura do escafoide costuma inclusive poupar esse ligamento.",
+        "C": "A fratura do semilunar é descrita como menos de 1% das fraturas do carpo, geralmente em lesão perilunar ou por avulsão. Sua existência no espectro de traumas associados não substitui a associação mais comum, que o trecho específico atribui à cabeça ou ao colo do rádio.",
+        "D": "A luxação do semilunar é o estágio IV de Mayfield: o osso gira para palmar com falha da contenção radiocárpica dorsal. Trata-se de um padrão de instabilidade grave, distinto do levantamento geral de associações em que predomina a fratura do rádio proximal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Dissociação escafossemilunar; Mayfield e a luxação perilunar; Fraturas dos outros ossos do carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: anatomia, irrigação e mecanismo",
+          "Dissociação escafossemilunar",
+          "Mayfield e a luxação perilunar",
+          "Fraturas dos outros ossos do carpo"
+        ],
+        "blocos": [
+          "escafoide-anatomia-irrigacao-e-mecanismo-6ca8aaf8",
+          "dissociacao-escafossemilunar-67e58eaf",
+          "mayfield-e-a-luxacao-perilunar-9979fb84",
+          "fraturas-dos-outros-ossos-do-carpo-fa72f090",
+          "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "4285b96b23c1a51bf8b820c41c0047a236a0af962d11320cd7fb552cd90b82f7"
+      }
+    ],
+    "imagensConferidas": [],
+    "justificativaRemocaoAlerta": "O alerta antigo atribui primazia ao rádio distal, mas o parágrafo independente Lesões associadas do resumo44 afirma explicitamente cabeça ou colo do rádio como associação mais comum no geral. A questão não diz alta energia. Releitura individual de todas as alternativas; removida a divergência que a fonte não sustenta."
+  },
+  "trauma-0810": {
+    "questaoSha256": "7bf56418f31375032d8f4bd7c408e212cd546f4bfbc187e5cd005c516353cb79",
+    "comentarioAnteriorSha256": "1f740daf90ebe9bafc0b062025d22ffc3292adb42e6b71c14b61440b7d3bb38b",
+    "comentario": {
+      "conceito": "O paciente tem uma **fratura aguda do polo proximal**, com apenas dois dias de evolução. O resumo recomenda estabilização cirúrgica desse padrão por miniacesso dorsal ou artroscopia. A posição proximal importa mesmo com ângulo escafossemilunar preservado: bom alinhamento aparente não prova que o foco seja estável ou biologicamente favorável.\n\nGrande parte do sangue chega ao polo proximal por trajetos intraósseos a partir da crista dorsal. A fratura pode interromper essa circulação, mas interrupção inicial não equivale a necrose definitiva: o fragmento estabilizado pode revascularizar e consolidar. A técnica precisa proteger a crista dorsal e acomodar um parafuso menor no pequeno fragmento.\n\nEnxerto vascularizado é discutido no resumo no contexto de pseudartrose com suspeita de necrose ou baixa capacidade de cura. A necessidade desse enxerto mesmo na necrose é debatida; não é correto ensinar que toda fratura proximal aguda já exige uma reconstrução vascularizada. O caso pede fixar a fratura recente, sem acrescentar pseudartrose, encurtamento ou necrose não demonstrados. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Irrigação, Tratamento da fratura aguda e Tratamento da pseudartrose.",
+      "correta": "Correta: B (mini-open e parafuso autocompressivo sem cabeça por via dorsal). O miniacesso alcança o polo proximal para estabilizá-lo, com cuidado na crista dorsal e no tamanho do implante. A indicação decorre da fratura proximal aguda, sem precisar supor necrose estabelecida.",
+      "incorretas": {
+        "A": "O gesso é indicado para padrões selecionados do escafoide, como tubérculo e cintura sem desvio. O polo proximal é uma contraindicação relativa e tem maior risco de não união com tratamento conservador; prolongar a imobilização por 10–12 semanas não substitui a estabilização recomendada para esse padrão.",
+        "C": "A opção acrescenta enxerto vascularizado dorsal e fios. O problema é indicar uma reconstrução de pseudartrose ou comprometimento biológico sem que o caso tenha demonstrado essas condições. Risco vascular em uma fratura de dois dias não comprova que o fragmento já seja necrótico ou precise desse enxerto.",
+        "D": "A via volar tem papel na correção de alinhamento com cunha anterior quando há deformidade, e o enxerto vascularizado é uma escolha reconstrutiva selecionada. O enunciado não demonstra deformidade, defeito ósseo ou falha de união que justifique enxerto volar e placa no lugar da fixação dorsal do pequeno fragmento proximal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: tratamento da fratura aguda; Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: anatomia, irrigação e mecanismo",
+          "Escafoide: tratamento da fratura aguda",
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+          "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
+          "escafoide-tratamento-da-fratura-aguda-056fbc49",
+          "escafoide-tratamento-da-fratura-aguda-867cbaae",
+          "escafoide-tratamento-da-fratura-aguda-3d1643fc",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-478ad42b",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "fd3ce0cee86bf8d4e5b86412f11b2877635efe0168f27a74cc9451716bdaaf2d"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

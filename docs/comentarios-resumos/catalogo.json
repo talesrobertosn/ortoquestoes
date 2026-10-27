@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 496,
+  "pendente": 599,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 364,
-  "pendente-inspecao-imagem": 83,
-  "revisada": 1442
+  "pendente-fonte": 382,
+  "pendente-inspecao-imagem": 74,
+  "revisada": 1454
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -102,11 +102,11 @@
    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
    "estados": {
     "duplicada": 2,
-    "pendente": 83,
+    "pendente": 81,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 42,
-    "pendente-inspecao-imagem": 11,
-    "revisada": 78
+    "pendente-fonte": 60,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 90
    }
   },
   "rockwood10-45-fraturas-mao": {
@@ -114,7 +114,7 @@
    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 87,
+    "pendente": 98,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 20,
@@ -285,10 +285,40 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 69,
-    "pendente-fonte": 6,
+    "pendente": 68,
+    "pendente-fonte": 7,
     "pendente-inspecao-imagem": 4,
     "revisada": 50
+   }
+  },
+  "rockwoodcriancas10-25-diafise-femur": {
+   "titulo": "Fratura da diáfise do fêmur na criança",
+   "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+   "estados": {
+    "pendente": 86,
+    "pendente-fonte": 1,
+    "pendente-inspecao-imagem": 3,
+    "revisada": 1
+   }
+  },
+  "rockwoodcriancas10-26-fise-distal-femur": {
+   "titulo": "Fratura da fise distal do fêmur na criança",
+   "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+   "estados": {
+    "pendente": 98,
+    "pendente-fonte": 1,
+    "pendente-inspecao-imagem": 3,
+    "revisada": 1
+   }
+  },
+  "rockwoodcriancas10-27-fise-proximal-tibia": {
+   "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+   "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+   "estados": {
+    "pendente": 95,
+    "pendente-fonte": 1,
+    "pendente-inspecao-imagem": 3,
+    "revisada": 1
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -352,8 +382,8 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 10,
-    "pendente-fonte": 16,
+    "pendente": 9,
+    "pendente-fonte": 17,
     "pendente-inspecao-imagem": 2,
     "revisada": 53
    }
@@ -363,8 +393,8 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 9,
-    "pendente-fonte": 15,
+    "pendente": 8,
+    "pendente-fonte": 16,
     "pendente-inspecao-imagem": 2,
     "revisada": 50
    }
@@ -12004,14 +12034,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado pergunta conexão rádio distal–escafoide, mas a banca D nomeia o escafolunar, que o corpo44 descreve como interósseo entre escafoide e semilunar. A opção E, ligamento palmar, é inespecífica entre vários extrínsecos. Falta fonte/errata da questão original que resolva qual conexão era pretendida e permita comparar E com D, além de fonte para as opções bíceps e cruzado anterior; preservar texto/gabarito/alertas, sem fabricar resposta única e sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "9a1996cd45dee78b9933074bff259c6000e3ae0dab79df7c3c3fafe4bbd5c009"
+   "questaoSha256": "9a1996cd45dee78b9933074bff259c6000e3ae0dab79df7c3c3fafe4bbd5c009",
+   "pendencia": "O enunciado pergunta conexão rádio distal–escafoide, mas a banca D nomeia o escafolunar, que o corpo44 descreve como interósseo entre escafoide e semilunar. A opção E, ligamento palmar, é inespecífica entre vários extrínsecos. Falta fonte/errata da questão original que resolva qual conexão era pretendida e permita comparar E com D, além de fonte para as opções bíceps e cruzado anterior; preservar texto/gabarito/alertas, sem fabricar resposta única e sem baseResumo."
   },
   "mao-0270": {
    "tema": "mao",
@@ -14435,14 +14466,15 @@
    ],
    "prova": "IAUPE",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Coincidência do subtema Instabilidade do carpo não cobre OSTEOMA OSTEOIDE. O resumo44 não ensina tumor/nidus, dor noturna e resposta à aspirina, predomínio em tíbia/fêmur/sexo masculino ou diferenciação de febre alta e deformidade. Falta capítulo de tumor ósseo que sustente cada afirmação A–E; não reclassificar o item para fazê-lo desaparecer da fila. Gabarito E e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "f92ea143fb20a103e3d338159cd7909940d10684556e2a50c343509ed65e5260"
+   "questaoSha256": "f92ea143fb20a103e3d338159cd7909940d10684556e2a50c343509ed65e5260",
+   "pendencia": "Coincidência do subtema Instabilidade do carpo não cobre OSTEOMA OSTEOIDE. O resumo44 não ensina tumor/nidus, dor noturna e resposta à aspirina, predomínio em tíbia/fêmur/sexo masculino ou diferenciação de febre alta e deformidade. Falta capítulo de tumor ósseo que sustente cada afirmação A–E; não reclassificar o item para fazê-lo desaparecer da fila. Gabarito E e comentário preservados, sem baseResumo."
   },
   "mao-0740": {
    "tema": "mao",
@@ -14539,14 +14571,63 @@
    ],
    "prova": "IAUPE",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "bc14eb1457d100a394e205fcc7f5b7c0a3e1b2f559536253089fd8938cd3a687"
+   "questaoSha256": "bc14eb1457d100a394e205fcc7f5b7c0a3e1b2f559536253089fd8938cd3a687",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "A ginasta: lesão fisária por estresse"
+      ],
+      "blocos": [
+       "a-ginasta-lesao-fisaria-por-estresse-decda032"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "8a270d5802f1580167c48ea00a482cde29ba9fb44a817610ceaec980db8b3e56"
+     },
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Escafoide: classificação de Herbert e Fisher",
+       "Mayfield e a luxação perilunar",
+       "Dissociação escafossemilunar",
+       "Artrose do colapso: SNAC e SLAC"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+       "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
+       "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
+       "escafoide-classificacao-de-herbert-e-fisher-62750cf0",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a",
+       "dissociacao-escafossemilunar-67e58eaf",
+       "dissociacao-escafossemilunar-1f9a739d",
+       "artrose-do-colapso-snac-e-slac-a82703f6"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "8ce740bf3882b59b60ab866a473b4a784df0db67ff317a154f3214e187ad5de5"
+     }
+    ],
+    "questaoSha256": "bc14eb1457d100a394e205fcc7f5b7c0a3e1b2f559536253089fd8938cd3a687",
+    "comentarioSha256": "b10c54652fb12e05072cb8e7683d0845ce3d5e4c545ab8622bb6f980c1536e4d"
+   }
   },
   "mao-0743": {
    "tema": "mao",
@@ -14796,14 +14877,15 @@
    ],
    "prova": "INTO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte só compara indicações/resultado de curto prazo da escafocapitato e ETT. Não fornece arco residual30%/60%, força50%, taxa de não união40% nem liberação esportiva em2meses. A redação da taxa de não consolidação em relação ao lado oposto também exige conferir denominador no original. Falta série/tabela específica de resultados pós-artrodese escafocapitato com seguimento e retorno esportivo. Gabarito E preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "fc65c025681855319da3f66623d44f77b4f4dc0756eb1489b8082848a0aad547"
+   "questaoSha256": "fc65c025681855319da3f66623d44f77b4f4dc0756eb1489b8082848a0aad547",
+   "pendencia": "A fonte só compara indicações/resultado de curto prazo da escafocapitato e ETT. Não fornece arco residual30%/60%, força50%, taxa de não união40% nem liberação esportiva em2meses. A redação da taxa de não consolidação em relação ao lado oposto também exige conferir denominador no original. Falta série/tabela específica de resultados pós-artrodese escafocapitato com seguimento e retorno esportivo. Gabarito E preservado, sem baseResumo."
   },
   "mao-0776": {
    "tema": "mao",
@@ -14918,14 +15000,15 @@
    ],
    "prova": "INTO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo44 lista enxertos vascularizados pediculados/livres, mas não associa pedículo capsular dorsal ao epônimo Sotereanos nem compara os pedículos de Matholin, Zaidenberg, Higgins e Berger. Falta fonte anatômica/técnica de cada enxerto e respectiva autoria; não inferir autor a partir da palavra dorsal ou de capsulotomia de Berger. Gabarito D e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "5636a7e870eebf61e224e75a324150ee229851b628d0e2ddce352f0691251627"
+   "questaoSha256": "5636a7e870eebf61e224e75a324150ee229851b628d0e2ddce352f0691251627",
+   "pendencia": "O resumo44 lista enxertos vascularizados pediculados/livres, mas não associa pedículo capsular dorsal ao epônimo Sotereanos nem compara os pedículos de Matholin, Zaidenberg, Higgins e Berger. Falta fonte anatômica/técnica de cada enxerto e respectiva autoria; não inferir autor a partir da palavra dorsal ou de capsulotomia de Berger. Gabarito D e comentário preservados, sem baseResumo."
   },
   "mao-0782": {
    "tema": "mao",
@@ -15068,14 +15151,15 @@
    ],
    "prova": "INTO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Não há percentual de perda do arco de movimento especificamente após artrodese escafocapitato que permita comparar25/30/50/75/80%. A semelhança de resultado com ETT não fornece uma dessas porcentagens. Perda30–40% após luxação radiocárpica e arco residual de outras fusões não são intercambiáveis. Falta série de resultados com medida de perda e denominador do movimento; gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "fe63ad37ba62e41c02b714c2ba507f38db235b9b5ea737fe7042176f6efab923"
+   "questaoSha256": "fe63ad37ba62e41c02b714c2ba507f38db235b9b5ea737fe7042176f6efab923",
+   "pendencia": "Não há percentual de perda do arco de movimento especificamente após artrodese escafocapitato que permita comparar25/30/50/75/80%. A semelhança de resultado com ETT não fornece uma dessas porcentagens. Perda30–40% após luxação radiocárpica e arco residual de outras fusões não são intercambiáveis. Falta série de resultados com medida de perda e denominador do movimento; gabarito C preservado, sem baseResumo."
   },
   "mao-0829": {
    "tema": "mao",
@@ -15085,8 +15169,8 @@
    ],
    "prova": "INTO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -15100,7 +15184,34 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "f66aa10363f1c07d6837e47dcade9eb1f76096d7d6151875c435378004ded8ff"
+   "questaoSha256": "f66aa10363f1c07d6837e47dcade9eb1f76096d7d6151875c435378004ded8ff",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Anatomia ligamentar e cinemática do carpo",
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "anatomia-ligamentar-e-cinematica-do-carpo-b9b38104",
+       "anatomia-ligamentar-e-cinematica-do-carpo-09fa55ed",
+       "anatomia-ligamentar-e-cinematica-do-carpo-c32fe63d",
+       "dissociacao-escafossemilunar-67e58eaf"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "1d0b783fa29b7b7f93273c70717c1c4f2f400e8c00f46bbc3360f8a9528abba4"
+     }
+    ],
+    "questaoSha256": "f66aa10363f1c07d6837e47dcade9eb1f76096d7d6151875c435378004ded8ff",
+    "comentarioSha256": "f5a7b54100bcbecda0e1a8645716fb4f17e723ccd11f5a8baa417434d5eeedad"
+   }
   },
   "mao-0830": {
    "tema": "mao",
@@ -15160,14 +15271,15 @@
    ],
    "prova": "INTO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta: esquema de passagem de suturas e nó junto ao complexo escafossemilunar dorsal, com assinatura do ilustrador. O corpo44 descreve reparo artroscópico dorsal/DCSS e capsulodese, mas não associa a técnica ilustrada ao autor Mathoulin nem compara Crespi/Berger/Nakamura/Zaidemberg. Assinatura da ilustração não demonstra autoria da técnica. Falta fonte técnica primária identificando o procedimento e cada epônimo; gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "781e0fb9bd8e40907676d7742d5437b17214676503192d3173cbc3529255180f"
+   "questaoSha256": "781e0fb9bd8e40907676d7742d5437b17214676503192d3173cbc3529255180f",
+   "pendencia": "Figura aberta: esquema de passagem de suturas e nó junto ao complexo escafossemilunar dorsal, com assinatura do ilustrador. O corpo44 descreve reparo artroscópico dorsal/DCSS e capsulodese, mas não associa a técnica ilustrada ao autor Mathoulin nem compara Crespi/Berger/Nakamura/Zaidemberg. Assinatura da ilustração não demonstra autoria da técnica. Falta fonte técnica primária identificando o procedimento e cada epônimo; gabarito C preservado, sem baseResumo."
   },
   "mao-0850": {
    "tema": "mao",
@@ -15411,14 +15523,15 @@
    ],
    "prova": "UFG",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A definição nominal de Preiser foi encontrada no corpo do resumo Wilkins8, mas nenhum dos dois corpos descreve os quatro estágios de HERBERT PARA PREISER. Herbert/Fisher de fraturas agudas A–D não classifica formato/fragmentação da osteonecrose idiopática. Falta tabela primária de estadiamento da doença com critérios dos tipos I–IV; não transferir números de outra classificação. Gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "67d3039bfa82a4601f5e9522c7124ed2320ce7b6c147d90148e6db33bef76b10"
+   "questaoSha256": "67d3039bfa82a4601f5e9522c7124ed2320ce7b6c147d90148e6db33bef76b10",
+   "pendencia": "A definição nominal de Preiser foi encontrada no corpo do resumo Wilkins8, mas nenhum dos dois corpos descreve os quatro estágios de HERBERT PARA PREISER. Herbert/Fisher de fraturas agudas A–D não classifica formato/fragmentação da osteonecrose idiopática. Falta tabela primária de estadiamento da doença com critérios dos tipos I–IV; não transferir números de outra classificação. Gabarito C preservado, sem baseResumo."
   },
   "mao-0901": {
    "tema": "mao",
@@ -16233,14 +16346,15 @@
    ],
    "prova": "UFG",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte descreve SNAC/SLAC por Watson e Ballet, com artrose radioescafoide inicial, mas não a classificação de LICHTMAN da PSEUDARTROSE DO ESCAFOIDE e seus tipos I–IV. Não confundir com Lichtman de Kienböck nem transportar estágio I de Watson para outro sistema. Falta tabela independente de Lichtman para pseudartrose e distribuição da artrose em cada tipo; gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "a77ed973dc962d619b5f9a70cdb641f86f8a720f6a171f38d226cae956afe739"
+   "questaoSha256": "a77ed973dc962d619b5f9a70cdb641f86f8a720f6a171f38d226cae956afe739",
+   "pendencia": "A fonte descreve SNAC/SLAC por Watson e Ballet, com artrose radioescafoide inicial, mas não a classificação de LICHTMAN da PSEUDARTROSE DO ESCAFOIDE e seus tipos I–IV. Não confundir com Lichtman de Kienböck nem transportar estágio I de Watson para outro sistema. Falta tabela independente de Lichtman para pseudartrose e distribuição da artrose em cada tipo; gabarito C preservado, sem baseResumo."
   },
   "mao-0993": {
    "tema": "mao",
@@ -17340,14 +17454,15 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Não há classificação de Slade e Geissler da NÃO CONSOLIDAÇÃO do escafoide no corpo44. Geissler artroscópico de dissociação escafossemilunar usa passagem de probe/artroscópio e não define tipo4 por cistos1–5mm. Falta tabela de Slade/Geissler com esclerose, cistos, humpback e artrose para avaliar todas as opções, sem trocar classificações homônimas. Gabarito B preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "7b5fb32a6742c89861eda587098285b07809d56cf3f5c67ed3d8829b9390f874"
+   "questaoSha256": "7b5fb32a6742c89861eda587098285b07809d56cf3f5c67ed3d8829b9390f874",
+   "pendencia": "Não há classificação de Slade e Geissler da NÃO CONSOLIDAÇÃO do escafoide no corpo44. Geissler artroscópico de dissociação escafossemilunar usa passagem de probe/artroscópio e não define tipo4 por cistos1–5mm. Falta tabela de Slade/Geissler com esclerose, cistos, humpback e artrose para avaliar todas as opções, sem trocar classificações homônimas. Gabarito B preservado, sem baseResumo."
   },
   "mao-1062": {
    "tema": "mao",
@@ -17861,14 +17976,15 @@
    ],
    "prova": "PUC-SP",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 aponta cintura como local mais comum no adulto, mas não fornece distribuição de fratura do escafoide especificamente NA CRIANÇA para comparar proximal/cintura/distal/tubérculo. O resumoWilkins8 distingue lesões do carpo em adolescentes, sem esse ranking. Falta fonte pediátrica com faixa etária e separação entre polo distal e tubérculo; não transportar a predominância adulta nem usar o comentário antigo como fonte. Gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "49fa70e313aab95f17a998a23f63621664d48e55ff5eb61f63fbd2a56686fcd6"
+   "questaoSha256": "49fa70e313aab95f17a998a23f63621664d48e55ff5eb61f63fbd2a56686fcd6",
+   "pendencia": "O corpo44 aponta cintura como local mais comum no adulto, mas não fornece distribuição de fratura do escafoide especificamente NA CRIANÇA para comparar proximal/cintura/distal/tubérculo. O resumoWilkins8 distingue lesões do carpo em adolescentes, sem esse ranking. Falta fonte pediátrica com faixa etária e separação entre polo distal e tubérculo; não transportar a predominância adulta nem usar o comentário antigo como fonte. Gabarito C preservado, sem baseResumo."
   },
   "mao-1094": {
    "tema": "mao",
@@ -19858,8 +19974,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -19873,7 +19989,35 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "80f200e4851b0303cb4a6aadfbe2eb9502314f812e1e57bcbeb85419f18eb6b6"
+   "questaoSha256": "80f200e4851b0303cb4a6aadfbe2eb9502314f812e1e57bcbeb85419f18eb6b6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: consolidação viciosa e pseudartrose"
+      ],
+      "blocos": [
+       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-700a724b",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-7dd29aa9",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-95053c39",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "e5a841ff2fb38a6fcfa799cb393846e47573a4f272b9654c30213b558021387f"
+     }
+    ],
+    "questaoSha256": "80f200e4851b0303cb4a6aadfbe2eb9502314f812e1e57bcbeb85419f18eb6b6",
+    "comentarioSha256": "d8e40218038eb4b24e948ca69b6c12becdc4f9f12cf83f6722d9d9ba24441916"
+   }
   },
   "mao-1492": {
    "tema": "mao",
@@ -21173,8 +21317,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21188,7 +21332,32 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "2e2548e6172d4c0042f5c34a11226a9bada9325a4f78fe2e63fcc2a96409e5d5"
+   "questaoSha256": "2e2548e6172d4c0042f5c34a11226a9bada9325a4f78fe2e63fcc2a96409e5d5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar",
+       "Dissociação lunopiramidal"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-cade5531",
+       "dissociacao-lunopiramidal-86b34ab3"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "38511cb3392bcef530e32d2b446c8b7b384660e8d66fcb6012bc727ddbdf429d"
+     }
+    ],
+    "questaoSha256": "2e2548e6172d4c0042f5c34a11226a9bada9325a4f78fe2e63fcc2a96409e5d5",
+    "comentarioSha256": "39d03dc9f44d09c586d37c5f962410ddc1e35e0fcbd77f0b20971332140c892e"
+   }
   },
   "mao-1672": {
    "tema": "mao",
@@ -21423,8 +21592,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21438,7 +21607,31 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "638cc38f17498228ad48e943adf0de7e943843d2f95ab4357205079eb5960a5d"
+   "questaoSha256": "638cc38f17498228ad48e943adf0de7e943843d2f95ab4357205079eb5960a5d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: consolidação viciosa e pseudartrose"
+      ],
+      "blocos": [
+       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-bdd7562e"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "3c7adfc6bb40046da1df21286f6efae53a0527a6b188780c5ab64b8952840f90"
+     }
+    ],
+    "questaoSha256": "638cc38f17498228ad48e943adf0de7e943843d2f95ab4357205079eb5960a5d",
+    "comentarioSha256": "4f5994694875fb368bfe0a24a9c134ebfecffef30db6972f0e56937072ef9bc6"
+   }
   },
   "mao-1678": {
    "tema": "mao",
@@ -21766,8 +21959,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21781,7 +21974,37 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "e66c77df6f489aaf9da24e2990d187444a2802b57fdbde5ab6a40ff54e34afe2"
+   "questaoSha256": "e66c77df6f489aaf9da24e2990d187444a2802b57fdbde5ab6a40ff54e34afe2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+       "Dissociação lunopiramidal",
+       "Dissociação escafossemilunar",
+       "Escafoide: anatomia, irrigação e mecanismo"
+      ],
+      "blocos": [
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
+       "dissociacao-lunopiramidal-5eb7978d",
+       "dissociacao-escafossemilunar-67e58eaf",
+       "escafoide-anatomia-irrigacao-e-mecanismo-485298b2"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "7652b102f3873ead07377849d34ed6145b00919764ba34ee15bf170aebc885c2"
+     }
+    ],
+    "questaoSha256": "e66c77df6f489aaf9da24e2990d187444a2802b57fdbde5ab6a40ff54e34afe2",
+    "comentarioSha256": "6c4f2c82c710689878204195bbc6375ec0540188832a8e29beb049400b1ccd4c"
+   }
   },
   "mao-1685": {
    "tema": "mao",
@@ -21840,8 +22063,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21855,7 +22078,33 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "1c6bce3d10c0cee144e226a70ac881b3f07d758a40d890c43f185cfcdb16a3f3"
+   "questaoSha256": "1c6bce3d10c0cee144e226a70ac881b3f07d758a40d890c43f185cfcdb16a3f3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-22ed1a15",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-850d5bab",
+       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "a8744da3315fd8e8d91e7c985f848006447ad40a5604e86275427b804876693f"
+     }
+    ],
+    "questaoSha256": "1c6bce3d10c0cee144e226a70ac881b3f07d758a40d890c43f185cfcdb16a3f3",
+    "comentarioSha256": "be3e5dec5b5db469914ee5413bf3dc206ae69468a8e17f10aa6be6606d05b6a6"
+   }
   },
   "mao-1687": {
    "tema": "mao",
@@ -22015,8 +22264,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -22030,7 +22279,35 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "c4d052c01ff995dc9443978842c17f39b4b7a64c44783c51e5ebcc85402e18aa"
+   "questaoSha256": "c4d052c01ff995dc9443978842c17f39b4b7a64c44783c51e5ebcc85402e18aa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a",
+       "mayfield-e-a-luxacao-perilunar-61bf80f6",
+       "mayfield-e-a-luxacao-perilunar-05a279d4"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "d10dd572966f949845c624dcbaa125a14351353a1bff1e78a395b0d1ba02e5eb"
+     }
+    ],
+    "questaoSha256": "c4d052c01ff995dc9443978842c17f39b4b7a64c44783c51e5ebcc85402e18aa",
+    "comentarioSha256": "9e8b3a4cd067bb4dd4a858a0271d8dcea207acd1e687e3a6058a9059ebf26215"
+   }
   },
   "mao-1691": {
    "tema": "mao",
@@ -25359,6 +25636,479 @@
     "rockwood10-45-fraturas-mao"
    ],
    "questaoSha256": "7bc1822c1804b630ad6f7e51db025c7069afd71594ee672aecc2a2cb02381508"
+  },
+  "mao-2384": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "bb136fe4844e94ec496090dc160b3032d4fe03b1f641a828745a68ac5643bd1d"
+  },
+  "mao-2386": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "91886b6ae28d3f0bf8fe5ed5ff0ba90fdbdb98aea42bb1310ea4bc4e363304b8"
+  },
+  "mao-2389": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "33788ba17a838ad8e14e61e90b1315467c4136c746dd54b8b8408484449e59f1"
+  },
+  "mao-2390": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "101f80dc6311d9803b98d6c0cbcf735f3984448b77d58e573d7c331cb45f0ed6"
+  },
+  "mao-2394": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo",
+    "Imagem da mão e punho"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "54eb04c98851d3306a08539ecac983e1a4640ed48ba062d5d4f4c98d1102935c"
+  },
+  "mao-2397": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "2e6fc0f07b6d69985e87de654250584de1f48588f696937e0d061a80707163d7"
+  },
+  "mao-2412": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "8dc1633abe29902801e1c2155a2b5030d44f94f9b407e33e5a4ed32bd316657e"
+  },
+  "mao-2418": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo",
+    "Anatomia da mão e punho"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "4fcc5c8e7f4f60a6281fed3a4111f4a52906891bb51a28224c9642a05cb07068"
+  },
+  "mao-2428": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "2f1fc876f606548cdfe6cfed49ce6e1a0484d6bdb7a68cc15a46c21b9d3513a5"
+  },
+  "mao-2433": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "ca342d07e9d05f45ca2888001096905cd399d20f8a47cf41b64403d347224a2c"
+  },
+  "mao-2436": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Anatomia da mão e punho"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "b18c15108344d8d407d2e506a7d70acd92ddc14b723faf4bdd9d9a53640ec2a4"
+  },
+  "mao-2442": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "b263d8f7164acba82e38ef64f41836ec8a0dc5dad548db57e4819b424a96ec3c"
+  },
+  "mao-2460": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "b889471f6eaa89e1fc865949e0c38230e2b89bbd2fdabd86dac323eb0e944af9"
+  },
+  "mao-2462": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Biomecânica da mão"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "03e5f4343e8aa6ef32a6c257f54a837df82391143a00e3f8d26289c78d0b81a4"
+  },
+  "mao-2463": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "4bee0b6dc697ee5000eab77693381405ec3d9de99719a5be1429ac6cf5dd889a"
+  },
+  "mao-2467": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Artrose do punho e artroscopia"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "e0e0f19b9b9b2c6f5685e8df7237ff55a768f4469595efcfb5c7c0068f15a7ed"
+  },
+  "mao-2477": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "f4602d2c72376477c5d508e74c09057adbbdae723cc5f25c4b28dbaf2138e9cf"
+  },
+  "mao-2480": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "95d505fec03dd5da1e2aec62444567e4dc7c58be37e18f31e6d7bf9c5a197d35"
+  },
+  "mao-2483": {
+   "tema": "mao",
+   "subtemas": [
+    "Artrose do punho e artroscopia",
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "19777ce305fcdb632a4305ed8d764f0d0191a69622e7b58430e390039b3c94c2"
+  },
+  "mao-2491": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "89e47ed3ca825dfe8777e13b70403c1816da63c6ea7e74eca1fbc047e4af5bf9"
+  },
+  "mao-2493": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "597f77d2885900fd167128e62895ec49b063b9e5c303625238543b95fb7dd2fb"
+  },
+  "mao-2494": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "05055d14db6881b4a23167bd66b34dfcab674f2a66807ce9f71534e5dfe20ff3"
+  },
+  "mao-2504": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Anatomia da mão e punho"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "fc997216000109fd0744a29cc18493f948179bec1a7bbe28247dcec3aa8fdaae"
+  },
+  "mao-2512": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "734eab9d9eb7a82f4b5ffbddcbb80372f1d8bce7b0d200a8f842440f5abae2e2"
+  },
+  "mao-2513": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "721dc3004e625649f4b3d9dc3bee70cf1417c2d635f3a446253f142f8ed5f77d"
+  },
+  "mao-2524": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "4e723ae05781060349c7eee9ce54275b1ae3e4005f42f50994736098802cda54"
+  },
+  "mao-2535": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Fratura do rádio distal"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "017c836519b7f1616c12ea3110d9d64edee7cb39b0ce7d17fdd46cbf9e729009"
+  },
+  "mao-2545": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo",
+    "Imagem da mão e punho"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "ca465afb4921eab80312fd11b89ced3b5ab1663a90e89c012284708a9bae3972"
+  },
+  "mao-2548": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "f580f12f1b315bfe88a65b2de4ed6c455e33602ba2ce368ed1d207da6bfcaf69"
   },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
@@ -32085,6 +32835,30 @@
    ],
    "questaoSha256": "65978eace2fd552241797983d59c113eb39285ddecb42aca643cb14959c243ad"
   },
+  "pediatria-0065": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Mielomeningocele"
+   ],
+   "prova": "TARO",
+   "ano": 2015,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "diagnostico-e-imagem-3acf5391",
+     "s": "Diagnóstico e imagem",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "e4c3d732753c51d255c9aa182015626c7decd4ad0f57ffe86ba8f6f417839634"
+  },
   "pediatria-0066": {
    "tema": "pediatria",
    "subtemas": [
@@ -32132,6 +32906,31 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
    "questaoSha256": "65240302d78ba5c4afc75f80282c2605efe57ab6c5a96680696d821e92ead6b0"
+  },
+  "pediatria-0111": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções",
+    "Ossificação e crescimento"
+   ],
+   "prova": "TEOT",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "por-que-essa-fise-e-diferente-08e430bb",
+     "s": "Por que essa fise é diferente",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "7db62158404770e49dca325011ea2abbaa526534b9ab5bdd917ae499719e0133"
   },
   "pediatria-0123": {
    "tema": "pediatria",
@@ -32204,6 +33003,39 @@
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "3c333fe63d7136e1122b407ce4ed76087655c926d0cfa8b775a6e64e8ca010e7"
+  },
+  "pediatria-0174": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Desenvolvimento neuropsicomotor",
+    "Ossificação e crescimento"
+   ],
+   "prova": "TEOT",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "por-que-essa-fise-e-diferente-08e430bb",
+     "s": "Por que essa fise é diferente",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "relacionada"
+    },
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "por-que-a-fise-proximal-da-tibia-quebra-pouco-1c191aab",
+     "s": "Por que a fise proximal da tíbia quebra pouco",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "e06700d9c8bc2fdd3795666e32d29967639b52ca73593cb4b17811af9b96a321"
   },
   "pediatria-0241": {
    "tema": "pediatria",
@@ -32466,6 +33298,33 @@
     "rockwoodcriancas9-16-condilo-lateral"
    ],
    "questaoSha256": "6a52cba3e9355b19400eb3388fcadc8b49b5526620d799da4897446ff7f87351"
+  },
+  "pediatria-0516": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-fise-proximal-mecanismos-e-direcao-c51bb100",
+     "s": "A fise proximal: mecanismos e direção",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "6c786e62a5e8cac253a29dd7ad27d096d2894dd933f8ccf6ca76bf53fd337814"
   },
   "pediatria-0520": {
    "tema": "pediatria",
@@ -32882,9 +33741,18 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "3411925fdb5c6e94bddc0143cc1b390f80537f2d89758b2f03d4abce61259fb6"
   },
@@ -33003,7 +33871,10 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "909d0f5779bf64bf39fba9ce3214bb873ac587b635c87a54c4a8af52d4f7b434"
   },
@@ -33023,6 +33894,30 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "561db1845b46f1dc174948ae843ed17bd83a3a62289ef5163c6a3ab5999f3a11"
+  },
+  "pediatria-0538": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252",
+     "s": "A complicação principal: o distúrbio do crescimento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "1173b21ca2a607a9e968c339aa9733062b78df5908ec7fb0492a4b6944261554"
   },
   "pediatria-0539": {
    "tema": "pediatria",
@@ -33075,6 +33970,13 @@
    "temComentario": true,
    "citacoes": [
     {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-6a7c4a0d",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    },
+    {
      "c": "rockwood10-17-sindrome-compartimental",
      "b": "a-fratura-associada-33d78d60",
      "s": "A fratura associada",
@@ -33083,7 +33985,10 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-17-sindrome-compartimental"
+    "rockwood10-17-sindrome-compartimental",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "cba228dcadcb49b8b6fe722933ff22c1a99554133d8ff396b009113143191e76",
    "baseResumo": {
@@ -33125,11 +34030,44 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-tuberosidade-quem-quebra-e-como-add351b6",
+     "s": "A tuberosidade: quem quebra e como",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "14c39d0137da931cd168dbdbd3e647c8780b1525b2aed7eab48a49752b39a8e9"
+  },
+  "pediatria-0544": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Joelho da criança"
+   ],
+   "prova": "TARO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-tuberosidade-quem-quebra-e-como-add351b6",
+     "s": "A tuberosidade: quem quebra e como",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "f50a9f109e43eed5ff64b321daf3f39e795324875877f9a82c829dd027de2c09"
   },
   "pediatria-0545": {
    "tema": "pediatria",
@@ -33142,9 +34080,20 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-58867aa4",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "710114f09293b7632ba6e39b610d81979484570aa970319ad9d3d31f9f29b289"
   },
@@ -33232,6 +34181,30 @@
    ],
    "questaoSha256": "4e5f905377d38cc4143f2840abc3b70981af2c23575fe95b5969b3d7eb10a67d"
   },
+  "pediatria-0552": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-2550d6c5",
+     "s": "O mecanismo: o ligamento é mais forte que a fise",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "6939a2e0367e8efaf9eb16414014f18c537cdcc5c72173e38639a816a0205179"
+  },
   "pediatria-0554": {
    "tema": "pediatria",
    "subtemas": [
@@ -33293,9 +34266,20 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "os-musculos-decidem-o-desvio-8252e1d5",
+     "s": "Os músculos decidem o desvio",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "3307d0f41de5c7c3169b4f6800f760ec72dd07a5d39be4594fe666b845de07c7"
   },
@@ -33316,6 +34300,30 @@
    ],
    "questaoSha256": "90b281975428c2ae627415b8600d474b22b87c8ceb3f53fedb2fcfe76620378a"
   },
+  "pediatria-0559": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TEOT",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "os-tipos-de-salter-harris-7889921a",
+     "s": "Os tipos de SALTER-HARRIS",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "52ca68c30ee2d4e3d9808b39628368fd6ce74258544104afbd5bf4847828fe22"
+  },
   "pediatria-0560": {
    "tema": "pediatria",
    "subtemas": [
@@ -33327,9 +34335,18 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "vasos-compartimentos-e-nervo-cba87619",
+     "s": "Vasos, compartimentos e nervo",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "01ea83e2bc1fee4e79f479b042a2fa5f30f128381813bae29ad017e52399ac12"
   },
@@ -33358,8 +34375,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo44 descreve dorsiflexão no mecanismo da bigorna do capitato no adulto, mas não compara a frequência dos mecanismos especificamente em CRIANÇAS. Os outros três resumos candidatos foram pesquisados: não trazem esse dado pediátrico. Falta fonte pediátrica que sustente extensão como o mecanismo mais frequente e diferencie flexão/desvios; nota contextual da própria questão e comentário antigo não comprovam essa extrapolação. Gabarito B preservado; sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33376,7 +34393,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "c18b19681b0fd2ef57f680a48967b3474c544f1d710216bd607b40a2e246ffa5"
+   "questaoSha256": "c18b19681b0fd2ef57f680a48967b3474c544f1d710216bd607b40a2e246ffa5",
+   "pendencia": "O corpo do resumo44 descreve dorsiflexão no mecanismo da bigorna do capitato no adulto, mas não compara a frequência dos mecanismos especificamente em CRIANÇAS. Os outros três resumos candidatos foram pesquisados: não trazem esse dado pediátrico. Falta fonte pediátrica que sustente extensão como o mecanismo mais frequente e diferencie flexão/desvios; nota contextual da própria questão e comentário antigo não comprovam essa extrapolação. Gabarito B preservado; sem baseResumo."
   },
   "pediatria-0564": {
    "tema": "pediatria",
@@ -33396,6 +34414,32 @@
     "rockwoodcriancas9-16-condilo-lateral"
    ],
    "questaoSha256": "6701c58b9cdc24d6da7107a2952cf43fb90ea9f5e6cef96ed1c6f0677a567b74"
+  },
+  "pediatria-0565": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-eb78b504",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "15fb7eb884efa3acfd7c87288c4b39ca4295f81f2c1178a33e7e0a5e28d22f29"
   },
   "pediatria-0566": {
    "tema": "pediatria",
@@ -33517,6 +34561,54 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "e4a2a983907409141d8ee9b77af6873b010ebfca2a60cf665986f5ae8b32dc61"
+  },
+  "pediatria-0569": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "por-que-essa-fise-e-diferente-32875fe6",
+     "s": "Por que essa fise é diferente",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "58238d249fdb83d7053d949a17336f698f2418cd0ed05fb5ae9698f4ca64fadc"
+  },
+  "pediatria-0570": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+     "s": "A complicação principal: o distúrbio do crescimento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "8b9e7d69072600107b0f9f8666dc00e0879b9b3cbd40c5349f1e13cb26d9df6d"
   },
   "pediatria-0572": {
    "tema": "pediatria",
@@ -33668,11 +34760,48 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-58867aa4",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "60d12c560657484980408189e15083e8575b6962c6a841ded414c2573aa89d8c"
+  },
+  "pediatria-0580": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "SBOT-SP",
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "9c1d847bfa062fb7b5f68a9c3db8ec2ce54a92e109557dccc5313ec80590d0c1"
   },
   "pediatria-0581": {
    "tema": "pediatria",
@@ -33878,6 +35007,54 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "73ad7a7c41b60215deabe7a1411c6f3f73d86c85fdc88e51beb189f92151ce67"
+  },
+  "pediatria-0590": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "as-lesoes-que-vem-junto-1d593702",
+     "s": "As lesões que vêm junto",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "018c520dec9ac22ab2421923c03dd3f62f5fb62211c569041a1a69b53324dc10"
+  },
+  "pediatria-0591": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "sequelas-8f3711db",
+     "s": "Sequelas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur"
+   ],
+   "questaoSha256": "3c36f26ae5aa983d54dd9b352597a5a41d7a13c970fd7de2a1ca805d14a10078"
   },
   "pediatria-0592": {
    "tema": "pediatria",
@@ -34126,6 +35303,25 @@
     "comentarioSha256": "88bd64215b506e988f5afc74ac61f7e02e790c631f68ebad9188651cf6fbeb0b"
    }
   },
+  "pediatria-0599": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2015,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "2a2a0e7b45b3233b43e40a32ca67f127ef9f871fad385bf63629f054614b4947"
+  },
   "pediatria-0600": {
    "tema": "pediatria",
    "subtemas": [
@@ -34196,11 +35392,80 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-58867aa4",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "d6cd0fb8e251cf16e716781a59c195b45f9574bccfc5800279d84ed6aa1e16eb"
+  },
+  "pediatria-0602": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2015,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "622dae0d06086941849ec004319b2553d306f60f2f4fdef0ec395d536c864e71"
+  },
+  "pediatria-0603": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2015,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-eb78b504",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    },
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+     "s": "A haste rígida e a cabeça femoral",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "8645b4aaaadf3a6c7dd8b886870586d915d008f731dfa3d1d3f9a3c5a8a93e76"
   },
   "pediatria-0604": {
    "tema": "pediatria",
@@ -34307,6 +35572,30 @@
     "questaoSha256": "0aa487d57acb471a4cef75dff52eba094dc67d167ee1d45f0b25db843730a8d8",
     "comentarioSha256": "afa78ced92fdff59ce0c2b2bc88372cdb301a8e8bad5212a67d5a9205c642088"
    }
+  },
+  "pediatria-0608": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2016,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "as-lesoes-que-vem-junto-1d593702",
+     "s": "As lesões que vêm junto",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "173d9e2774517b97f1af3994d3e912ca7283118af4b61b73978035adabbd34fd"
   },
   "pediatria-0609": {
    "tema": "pediatria",
@@ -34559,6 +35848,30 @@
     "comentarioSha256": "3bb824efed4b1ff07671d67ae27a9ef4bff56417e72871e34d92d3585530d6d4"
    }
   },
+  "pediatria-0616": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2017,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "vasos-compartimentos-e-nervo-cba87619",
+     "s": "Vasos, compartimentos e nervo",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "0754437c52975264c98bf64ff8c059ccbb2fa46094ccc8baafcfe01e4e7e0074"
+  },
   "pediatria-0618": {
    "tema": "pediatria",
    "subtemas": [
@@ -34589,6 +35902,13 @@
    "temComentario": true,
    "citacoes": [
     {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "os-musculos-decidem-o-desvio-8252e1d5",
+     "s": "Os músculos decidem o desvio",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    },
+    {
      "c": "rockwood10-57-diafise-femur",
      "b": "anatomia-aplicada-e-forcas-deformantes-904cdf37",
      "s": "Anatomia aplicada e forças deformantes",
@@ -34598,7 +35918,10 @@
    ],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur",
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "6a88e5b382908db681030fcfd0b02d08e7aa01dfa2f71ec75812271a137fd90e"
   },
@@ -34630,13 +35953,46 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-58867aa4",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "7a76c3f8e289024fe0f036f4e8079feec077762d517c9740d4653dcde2d60b19"
+  },
+  "pediatria-0622": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2018,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "por-que-essa-fise-e-diferente-0111aad0",
+     "s": "Por que essa fise é diferente",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "de6e5cc69a4e8ba5482cf4c4e97abebec2772a873de7936d728885659aaf39a9"
   },
   "pediatria-0623": {
    "tema": "pediatria",
@@ -34648,9 +36004,18 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "as-hastes-elasticas-4cd941c9",
+     "s": "As hastes elásticas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur"
    ],
    "questaoSha256": "77be342aa7c1cca11df718a57e41bb709575b7949b9711af85a6b15464f8330b"
   },
@@ -34849,7 +36214,10 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "238b785f02f6d9eb3c2735f2884e97d313cda496a3c3c5d8b6f9a7e24b5b323c"
   },
@@ -34954,6 +36322,30 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "b335afddaa8a1aba123cb872c5ef074eb310136881ec707a209b2497018b93d9"
+  },
+  "pediatria-0635": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2019,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-2550d6c5",
+     "s": "O mecanismo: o ligamento é mais forte que a fise",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "0b370368fb63d26b1755f78ea4ba24411229170766ebd8185ff02293bc848952"
   },
   "pediatria-0636": {
    "tema": "pediatria",
@@ -35084,6 +36476,30 @@
    ],
    "questaoSha256": "559ffd270ceb74770a5fb4aac464cbd840bc5931644629444ac9401832843db4"
   },
+  "pediatria-0641": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2019,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "a-complicacao-principal-o-disturbio-do-crescimen-7aae6a52",
+     "s": "A complicação principal: o distúrbio do crescimento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "ff58cc27334636213aafa2a8971b0a21f05af2f7aa985d6a057f39e350870764"
+  },
   "pediatria-0643": {
    "tema": "pediatria",
    "subtemas": [
@@ -35157,9 +36573,18 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-58867aa4",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "8f29a3fb9d166d5bbf90b22180591a2f105769556854313f3693d3a615cb0067"
   },
@@ -35174,9 +36599,27 @@
    "estado": "pendente",
    "motivo": "",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "as-hastes-elasticas-4cd941c9",
+     "s": "As hastes elásticas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    },
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "placa-submuscular-e-fixador-externo-09391313",
+     "s": "Placa submuscular e fixador externo",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "26d232937b63fe71d3082e73f5d59f3dfbb1d7466791655d303469a1510d5bc3"
   },
@@ -35430,6 +36873,30 @@
     "comentarioSha256": "4bc0a11b2c9dcc17ce1a05a614587ed5689a9927601fa0714c7f067d37206e6b"
    }
   },
+  "pediatria-0654": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2011,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "os-tipos-de-salter-harris-7889921a",
+     "s": "Os tipos de SALTER-HARRIS",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "393d7e749517e62b5fdc0dc584c241aed6cb060110056ade2234a1a53bef5516"
+  },
   "pediatria-0655": {
    "tema": "pediatria",
    "subtemas": [
@@ -35617,6 +37084,30 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "20bc44fcdc8c0369c66e31bce35e11060f101040048a2de7f72ea8bf736b6a2a"
+  },
+  "pediatria-0661": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2012,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "ef30f8e051b45b741c8c1088754feb0a46c8951869eaac3dc57f5ad355456ae7"
   },
   "pediatria-0664": {
    "tema": "pediatria",
@@ -36068,7 +37559,10 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "9f3d486851caa90f439da25dd5267d1f3f7292da44f9357ac6a40e3c5d20ccf4"
   },
@@ -36844,6 +38338,25 @@
     "comentarioSha256": "741dfeaeb3e473dfb560edcc9abc7cf1176d090df534f4b5626acbc62817c8de"
    }
   },
+  "pediatria-0700": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Joelho da criança",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "e37f0d131d05b31b348aef0b93a531acf2ab89c66b5e4e986d1352923f98449f"
+  },
   "pediatria-0701": {
    "tema": "pediatria",
    "subtemas": [
@@ -36904,6 +38417,33 @@
     "questaoSha256": "cef9665ec6e4d8e943878871fc176d859be363cee8e8f2f6cad480cf6e9d26eb",
     "comentarioSha256": "1e53d4bdd0b5d4d75407ee33d2ce1ce8355e55bc2a183accc3f382420602a2be"
    }
+  },
+  "pediatria-0705": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": "TEOT",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-58867aa4",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "9d5c6c4d03f3249237894a6ba90a2e510fa86be32e9dc196a8be2f3bf88fa0f0"
   },
   "pediatria-0706": {
    "tema": "pediatria",
@@ -36969,6 +38509,13 @@
    "temComentario": true,
    "citacoes": [
     {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+     "s": "A haste rígida e a cabeça femoral",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    },
+    {
      "c": "rockwood10-57-diafise-femur",
      "b": "haste-anterograda-o-ponto-de-entrada-2e8e945f",
      "s": "Haste anterógrada: o ponto de entrada",
@@ -36978,7 +38525,8 @@
    ],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur",
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur"
    ],
    "questaoSha256": "90fc8bfefeedc7f0c7d4fc54fbd999f1360efd3cb4c92ad38bc8453e17afa543"
   },
@@ -37122,7 +38670,10 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
-    "rockwoodcriancas10-01-epidemiologia-fraturas"
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "065923befaeb13a99e2e0b389a3d71af3b1241ec7b1e4715ad330a86eec17424"
   },
@@ -37145,6 +38696,57 @@
    ],
    "questaoSha256": "c4d72f8abf842a23763da24f4e8e13e11c988da467253dff5d2a5e91e6e9b3e3",
    "pendencia": "D oficial identifica LettsB como ulna em galho verde com luxação radial anterior. As opções distinguem completa/anterior, completa/posterior e deformidade plástica/anterior. Os resumos8/9 não apresentam a classificação LettsA–E da lesão proximal. Falta tabela primária; não confundir a classificação de Galeazzi por direção ulnar do resumo8 com Letts de Monteggia. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
+  },
+  "pediatria-0713": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2020,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-fise-proximal-mecanismos-e-direcao-c51bb100",
+     "s": "A fise proximal: mecanismos e direção",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "4ad58cc8255f5ff801feef037161d172d19d17abe1ff2d2339c61b122d49e9df"
+  },
+  "pediatria-0716": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2020,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-58867aa4",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "dffb7996f82b4e7d4e9c7a61c1b66b2d5c12b9a9ed415aae3ae45ba7b0486553"
   },
   "pediatria-0719": {
    "tema": "pediatria",
@@ -37456,6 +39058,25 @@
    "questaoSha256": "008202f839cae277e05c537cde72ab5564d6fa25c5fe73f2b7a96779a21b0c31",
    "pendencia": "Sem gabarito oficial; provávelB antiga diz ACIMA de12anos, enquanto o resumo9 diz criança mais velha POR VOLTA de12anos. O resumo contradiz a média de3meses e predominância distal/junção calo-osso das outras opções, mas não demonstra o corte estrito acima de12. Falta distribuição etária ou afirmação primária para endossar B como única, sem mudar a alternativa; proximidade não equivale a corte populacional. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
+  "pediatria-0730": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2007,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "267d9dd5d4f75166b4829f028c07649747e46a0fc97e17dcf047895facc6212f"
+  },
   "pediatria-0731": {
    "tema": "pediatria",
    "subtemas": [
@@ -37588,6 +39209,24 @@
     "comentarioSha256": "e60b7557e20824b23165df83cd3932060eedce885b8f33cd589532af19ef4ba9"
    }
   },
+  "pediatria-0735": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2007,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "7032ee1f67ce8f6f43c5ff2509c3c519f8ef8266562dd9d5162304a3822b3aad"
+  },
   "pediatria-0738": {
    "tema": "pediatria",
    "subtemas": [
@@ -37688,6 +39327,32 @@
    ],
    "questaoSha256": "8bb5e15a7e45054cce3b3b7237137a6160326ec9d35fdefc606fd887ae9ad9a7"
   },
+  "pediatria-0743": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2007,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-ce201634",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "4cb4684eb597b6f2e38cbc99a7ad0949cd8c0794fae82d3a05a33b224d9a513e"
+  },
   "pediatria-0746": {
    "tema": "pediatria",
    "subtemas": [
@@ -37782,6 +39447,33 @@
    ],
    "questaoSha256": "b766cdee86322c6de55346785bc9baa89b8ddd637ec1706335064808f1502963",
    "pendencia": "Sem gabarito oficial; provávelA antiga pede varo com supinação na técnica de Patterson para colo radial pediátrico. Os resumos8/9 não descrevem Patterson, posição do cotovelo, rotação ou contraste entre técnicas. Falta capítulo primário de rádio proximal; não transferir a redução derrotatória do galho verde diafisário para essa manobra. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
+  },
+  "pediatria-0749": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2008,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "as-hastes-elasticas-4cd941c9",
+     "s": "As hastes elásticas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "88f1a1645a29c06f17ab4e01998fb179de712b33c5dce693ea16a6b3fdd5ec3e"
   },
   "pediatria-0750": {
    "tema": "pediatria",
@@ -37908,6 +39600,33 @@
     "questaoSha256": "ff3ee578a7346576a8a002bd6768220ee80b6663ae12efec3acb5db9bdf358b2",
     "comentarioSha256": "03564255f3020ed5e722f339beed0ad93a85dcde2b70932398538e14b0f7714c"
    }
+  },
+  "pediatria-0752": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Joelho da criança",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2008,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-fise-proximal-mecanismos-e-direcao-c51bb100",
+     "s": "A fise proximal: mecanismos e direção",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "dc767f87d4f7267bf83a16dbdec2f987d9d471012f301977da655a2d4fcb5aac"
   },
   "pediatria-0754": {
    "tema": "pediatria",
@@ -38252,6 +39971,32 @@
     "comentarioSha256": "c4e29ac81b56e0fb2e82efa8a5e6f1236d6c2b263106bbe2ee3c7dd15b6ef3bd"
    }
   },
+  "pediatria-0779": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2009,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "649886d2e5d9df87ccda9b4dd14cb35466b3eb8b5e6e018e728ca223b353e697"
+  },
   "pediatria-0780": {
    "tema": "pediatria",
    "subtemas": [
@@ -38414,6 +40159,51 @@
     "comentarioSha256": "c9c480f1e3a0b89bcf93bc7a9288a1033f78113698533506307cc3c3e5c44379"
    }
   },
+  "pediatria-0813": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Ossificação e crescimento",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "sequelas-8f3711db",
+     "s": "Sequelas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "41565f37fdf1170d584c468b922c374ea5b0615bf6248bd7d3b69a1fe5972557"
+  },
+  "pediatria-0814": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "0497c3abe864ad80456d5bd35926611ff914d0dd01cd2f0eeaf18a5733fb4e6f"
+  },
   "pediatria-0815": {
    "tema": "pediatria",
    "subtemas": [
@@ -38529,6 +40319,44 @@
    ],
    "questaoSha256": "62f7ddab3d96a6a097404141a3b4dea9bbd59c206e24801a76c611bd895fd851"
   },
+  "pediatria-0818": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "bdda55e41fc6a54e69807c2735c1d64dcb9a5defc183cc58dafb3b336dfc2e48"
+  },
+  "pediatria-0819": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "01672a8f0386ba4f16885e9d2fa009354c233d9321783905e1421da4ccbc71b5"
+  },
   "pediatria-0823": {
    "tema": "pediatria",
    "subtemas": [
@@ -38617,6 +40445,30 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "f646f136248309e0c3679528ed61be2e62610b5b040c97194049c79b1c5f3034"
+  },
+  "pediatria-0825": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+     "s": "A complicação principal: o distúrbio do crescimento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "questaoSha256": "3a8b884fb2d09880f9830eb21f2f02aeb922613cb8664b3e6b0af0060bbba2bd"
   },
   "pediatria-0827": {
    "tema": "pediatria",
@@ -38888,6 +40740,30 @@
    ],
    "questaoSha256": "8ca5685288bcc264e1d4bf8e90cf991265c4058d7d556acecd895fb6444567a9"
   },
+  "pediatria-0836": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "tratamento-b945a364",
+     "s": "Tratamento",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "ac0bb2d7586ba0d18d5a6084f7d90597fc2f7013579580c482edfd8d0299c627"
+  },
   "pediatria-0839": {
    "tema": "pediatria",
    "subtemas": [
@@ -38974,6 +40850,33 @@
     "questaoSha256": "14c67fcfbb04d17765add924d5dd442ac9b699dddee892977755576ff69968b3",
     "comentarioSha256": "b3d386f7d65fa46bf9a05296f289e2f1827c60725ada4849048acab3cb6a058b"
    }
+  },
+  "pediatria-0840": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": "TARO",
+   "ano": 2010,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "83713c723e539d42e6d384161d7da1d44a4d13862e48f9984982189845a7a94d"
   },
   "pediatria-0841": {
    "tema": "pediatria",
@@ -39090,6 +40993,13 @@
    "temComentario": true,
    "citacoes": [
     {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+     "s": "A haste rígida e a cabeça femoral",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    },
+    {
      "c": "rockwood10-57-diafise-femur",
      "b": "haste-anterograda-o-ponto-de-entrada-2e8e945f",
      "s": "Haste anterógrada: o ponto de entrada",
@@ -39098,7 +41008,10 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-57-diafise-femur"
+    "rockwood10-57-diafise-femur",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "cd6cdf1692b65dc80c0dd70f5278d456362d2469a46c465c5e89da24d281bb4a"
   },
@@ -39151,6 +41064,32 @@
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "0080c8b4304ea4599206872f47e49ddb5d07224c63a7eecff4fab5bd0cf1dd0e"
+  },
+  "pediatria-0847": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2021,
+   "estado": "pendente-inspecao-imagem",
+   "motivo": "Abrir imagens antes da revisão.",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "5f68706cdb430c733ada15340d20b22dca78be7ea2744aff9ee2b0ea67eb1bbd"
   },
   "pediatria-0849": {
    "tema": "pediatria",
@@ -39284,6 +41223,52 @@
     "comentarioSha256": "aa379ac9372848b0bf4edd9ef256b1d6250b78bea462b9c44d1a5a4e9118373b"
    }
   },
+  "pediatria-0858": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Fraturas da pelve e do quadril na criança"
+   ],
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "9bf61aafa33f915e4364aeb2db3ba0a3b9433cac8ef6ed068d60bce44101ca7e"
+  },
+  "pediatria-0863": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Genuvaro, genuvalgo e torções"
+   ],
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-f93be186",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "c556c1da335ee30dba9ec2e9b176525fe59667c509a91a697340549f575f1b67"
+  },
   "pediatria-0906": {
    "tema": "pediatria",
    "subtemas": [
@@ -39366,6 +41351,39 @@
     "questaoSha256": "90923afb45cca145eaae3281bea55a0fb33692ba20a56f965ac1a3cdc8b6144c",
     "comentarioSha256": "2a34777d5e826de5f1ac79d0b962512766541229dd2bbc2f5beb9eabbd047531"
    }
+  },
+  "pediatria-0907": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "CET-PR",
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "as-hastes-elasticas-4cd941c9",
+     "s": "As hastes elásticas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    },
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "placa-submuscular-e-fixador-externo-09391313",
+     "s": "Placa submuscular e fixador externo",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "b3c01eb9a7be86fcbb740ae12c585d3ae3f4de66a4100df63bad78073d2611f3"
   },
   "pediatria-0908": {
    "tema": "pediatria",
@@ -39517,6 +41535,13 @@
    "temComentario": true,
    "citacoes": [
     {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-eb78b504",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    },
+    {
      "c": "rockwood10-57-diafise-femur",
      "b": "tratamento-nao-operatorio-e-tracao-0e1b2fc1",
      "s": "Tratamento não operatório e tração",
@@ -39525,7 +41550,10 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-57-diafise-femur"
+    "rockwood10-57-diafise-femur",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "6a526d84ad0703254d7571c8d90e233bb162a38a1bdd89f9b1a8f9760883abe0"
   },
@@ -39590,6 +41618,24 @@
     "questaoSha256": "05d9fe0b6e50d93edfce90d40c84646d451f887cc3723ca4630508175bdbd1b6",
     "comentarioSha256": "7b301ce6b312bb557649fe72e888b8c8a25ce37d10a673feaad50720dbbfed00"
    }
+  },
+  "pediatria-0916": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2025,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "b9ef0ad9e3af605dc7e1dcd6513b9225158cfe62ed4a7c5685f6cb36f7238cfb"
   },
   "pediatria-0917": {
    "tema": "pediatria",
@@ -39657,10 +41703,21 @@
    "estado": "pendente-fonte",
    "motivo": "C oficial pede a complicação mais comum APÓS redução fechada e fixação percutânea da tuberosidade tibial na criança. O resumo17 ensina síndrome e risco de fraturas da tíbia em geral, mas não compara pseudartrose, viciosa, síndrome compartimental e Osgood-Schlatter nessa lesão e nesse tratamento. Falta fonte específica de tuberosidade pediátrica que separe complicação mais temida, lesão associada e complicação mais frequente. C/comentário preservados.",
    "temComentario": true,
-   "citacoes": [],
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "vasos-compartimentos-e-nervo-506bef3b",
+     "s": "Vasos, compartimentos e nervo",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "relacionada"
+    }
+   ],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
-    "rockwood10-63-diafise-tibia"
+    "rockwood10-63-diafise-tibia",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "questaoSha256": "ac27cd307331a264b30a8fb44d020fe8906b588aa27f9402502b8d95ece91f5f",
    "pendencia": "C oficial pede a complicação mais comum APÓS redução fechada e fixação percutânea da tuberosidade tibial na criança. O resumo17 ensina síndrome e risco de fraturas da tíbia em geral, mas não compara pseudartrose, viciosa, síndrome compartimental e Osgood-Schlatter nessa lesão e nesse tratamento. Falta fonte específica de tuberosidade pediátrica que separe complicação mais temida, lesão associada e complicação mais frequente. C/comentário preservados."
@@ -40003,6 +42060,39 @@
    ],
    "questaoSha256": "b4b8597976e08bda5afad1b2a9f944e26169cc9bf748e5d9a9b991f0fc468c7c"
   },
+  "pediatria-0935": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "SBOT-SP",
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-ce201634",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "relacionada"
+    },
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-f93be186",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "relacionada"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "2f085b5869873ee9e10886cd24a1e7269b496c8ada347c72f61583c9f0f34c3d"
+  },
   "pediatria-0940": {
    "tema": "pediatria",
    "subtemas": [
@@ -40259,6 +42349,123 @@
     "comentarioSha256": "06c781ec74963f99049da7bfe2cbd3b27da5e963010392403fa739bbcfa2f82d"
    }
   },
+  "pediatria-0946": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": "TEPOP",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-fise-proximal-mecanismos-e-direcao-c51bb100",
+     "s": "A fise proximal: mecanismos e direção",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "4e11fdc39cbb026025ad31cfa837319a3a0378f0de5f675366cb288033ade955"
+  },
+  "pediatria-0948": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": "TEPOP",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-tuberosidade-quem-quebra-e-como-add351b6",
+     "s": "A tuberosidade: quem quebra e como",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "18210da08907c00983625960fd1351803161127f2657eedd928ae2578432f390"
+  },
+  "pediatria-0949": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Joelho da criança",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TEPOP",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "076743d864b07368d78156104562b4315fe5955ec7bc90cd9d961d9aedc73629"
+  },
+  "pediatria-0950": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TEPOP",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "9d6894c9aa42eb995995422fa95feb72ada73edb7e1ffdc10641e76f7d3fc8d7"
+  },
+  "pediatria-0951": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": "TEPOP",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "placa-submuscular-e-fixador-externo-09391313",
+     "s": "Placa submuscular e fixador externo",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "central"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "fd2a684e3a679f2afcc3c4aebc17dc6cbc71007fa15ef11cdcb06dd3485a171a"
+  },
   "pediatria-0952": {
    "tema": "pediatria",
    "subtemas": [
@@ -40510,6 +42717,9 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -47582,6 +49792,1163 @@
    "questaoSha256": "5c7d3f2c1a8078e055b0790d0cdc1dd6f36732d2967d79d9d8b20ad5d2449d31",
    "pendencia": "O corpo do resumo1 diz que a tíbia fratura mais que o fêmur e fornece15% para o grupo tíbia/fíbula, mas o item oferece fíbula isolada(A), patela(B), grupo tíbia/fíbula(C) e tíbia(D). A comparação tíbia versus fêmur não confere, por si só, o ranking isolado das estruturas realmente oferecidas nem a classificação anatômica da patela, ausente no corpo. Falta trecho primário que sustente a liderança isolada e esclareça grupo versus osso. Preservar D e comentário sem selo; não transformar o dado agrupado15% em taxa da tíbia isolada nem citar fêmur como distrator que a questão não tem."
   },
+  "pediatria-1094": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "os-tipos-de-salter-harris-7889921a",
+     "s": "Os tipos de SALTER-HARRIS",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "3094d4d55d338a4d9234ebfff3189ae7f7402ca73638da82d8c03b333d6705a1"
+  },
+  "pediatria-1095": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "a-complicacao-principal-o-disturbio-do-crescimen-d924c936",
+     "s": "A complicação principal: o distúrbio do crescimento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "18002a23a17e5cc4002440e2ba29d69b7389a86cab821d630480692d47b6413e"
+  },
+  "pediatria-1096": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-2550d6c5",
+     "s": "O mecanismo: o ligamento é mais forte que a fise",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "d3e522b548b978cf2f413fde7cf3034def271d5eb07aaed3cce3e58d302ace30"
+  },
+  "pediatria-1097": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "as-lesoes-que-vem-junto-1d593702",
+     "s": "As lesões que vêm junto",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "e148c76599e6caa8ac539f33691669215318e351cf8bb66ee95b967b4ed968dc"
+  },
+  "pediatria-1098": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "as-lesoes-que-vem-junto-218946ce",
+     "s": "As lesões que vêm junto",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "90dcbc62c97e1fe6b35b1f5e3f365bfd39754bc763fbfadf37e6df8552500f32"
+  },
+  "pediatria-1099": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "as-lesoes-que-vem-junto-2b8a0b7f",
+     "s": "As lesões que vêm junto",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "070e894240cfddcd343d1743609171a902549ac7a83244b83f4f4438bd61353e"
+  },
+  "pediatria-1100": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "prognostico-idade-e-desvio-77005618",
+     "s": "Prognóstico: idade e desvio",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "54f02eb422d2cd7ef4b562b296981715c5948773956b622c34d1ffba395bb768"
+  },
+  "pediatria-1101": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "tratamento-953f974e",
+     "s": "Tratamento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "93b60d03271feb195a70fc9a8fad848f94b9c2a856c504190c13906371eb5e8b"
+  },
+  "pediatria-1102": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "tratamento-98bdb79e",
+     "s": "Tratamento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "9dda8894400614d04b8d454df573b61993435f9b1e1dead35ccb2bed26cf3a2c"
+  },
+  "pediatria-1103": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252",
+     "s": "A complicação principal: o distúrbio do crescimento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "25cab1eda0cf0fa7010e2df3c426c94c2e44952b9b51c96db8d06be45cc917ba"
+  },
+  "pediatria-1104": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "a-complicacao-principal-o-disturbio-do-crescimen-81edb92d",
+     "s": "A complicação principal: o distúrbio do crescimento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "83161eb04a6ca2d52d8dac5403a6cb4cc215e55fb4808a5ad343b6cbf3563e84"
+  },
+  "pediatria-1105": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "a-complicacao-principal-o-disturbio-do-crescimen-7aae6a52",
+     "s": "A complicação principal: o distúrbio do crescimento",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "5b04ed9f847d26b3635907229982e5bcdbc46840c1070bb1047426ad6b7614dc"
+  },
+  "pediatria-1106": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "as-lesoes-que-vem-junto-218946ce",
+     "s": "As lesões que vêm junto",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "7209bc3115b61fae2eba7e3d58718fb387b6996e8296c6b87d4e31dd4d185ed0"
+  },
+  "pediatria-1107": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Fraturas do fêmur e da perna na criança",
+    "Maus-tratos"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-26-fise-distal-femur",
+     "b": "diagnostico-e-imagem-f4a39d9c",
+     "s": "Diagnóstico e imagem",
+     "t": "Fratura da fise distal do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "8909de0ac7df83f97d7f3694fca6c1f18ed4b6cf6360d43c13581be4e8f12eab"
+  },
+  "pediatria-1108": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "4a990eaa953e24fad99bf3d8fb7b3a961c36742d770a9da2f81c73888d04547a"
+  },
+  "pediatria-1109": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-classificacao-de-ogden-modificada-54560a75",
+     "s": "A classificação de OGDEN modificada",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "0a037c02c9c7659e26a7833a6bf3672140a0e945e88f26458993fd819e2edc7d"
+  },
+  "pediatria-1110": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-tuberosidade-quem-quebra-e-como-add351b6",
+     "s": "A tuberosidade: quem quebra e como",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "053bc29b9022869049329637fa3654be385e6a2653f64e3f10e2d321c0cdd1d0"
+  },
+  "pediatria-1111": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "a-tuberosidade-quem-quebra-e-como-add351b6",
+     "s": "A tuberosidade: quem quebra e como",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "2ac14ed70e1a8fd386140f6f0ca63b0de8e9178a168cc7eb53ef661beba18387"
+  },
+  "pediatria-1112": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "vasos-compartimentos-e-nervo-cba87619",
+     "s": "Vasos, compartimentos e nervo",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "53fb0774c4672d7751e15d8ad9ff9fa343c8233c82560b0083e8d192d94e5ba1"
+  },
+  "pediatria-1113": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "por-que-a-fise-proximal-da-tibia-quebra-pouco-b1e8312f",
+     "s": "Por que a fise proximal da tíbia quebra pouco",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "196add19370afa6726577b5a34b82e8fc875ef2e417094750c142ed00fe5b40b"
+  },
+  "pediatria-1114": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "por-que-a-fise-proximal-da-tibia-quebra-pouco-1c191aab",
+     "s": "Por que a fise proximal da tíbia quebra pouco",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "4ba697b6961508cfd2b90ed292e54b5a52fb1e3a477391ddad02c9acceb46957"
+  },
+  "pediatria-1115": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-58867aa4",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "5a1f137cef46d3345aca04989d8df7deaf2d9585003ad7c183e4cc244ac4fe17"
+  },
+  "pediatria-1116": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "complicacoes-2e8cf194",
+     "s": "Complicações",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "479965d0763902efff8c995655f0613fb637a63ca2fe72ede717aaffdd1a1680"
+  },
+  "pediatria-1117": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Lesões fisárias"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "tratamento-b945a364",
+     "s": "Tratamento",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "92de8d859988f0b674e052cca2427f7daaaa3bd8b80d47aa959e0dfdde5a2edb"
+  },
+  "pediatria-1118": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "tratamento-b945a364",
+     "s": "Tratamento",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "77a7b8e1301ffc4ce944ab712a7dc4e0876b11d60647eff208f6ff4be2b56b67"
+  },
+  "pediatria-1119": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "tratamento-b945a364",
+     "s": "Tratamento",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "b6f6e6ce136eab89851e30046fb0f37c679b6a0a9416d074e875043a5d16fa31"
+  },
+  "pediatria-1120": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "vasos-compartimentos-e-nervo-506bef3b",
+     "s": "Vasos, compartimentos e nervo",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "b3834db80e9f7b903caff4d853c1f805dcd49446876ed948e857950e3a06b9a5"
+  },
+  "pediatria-1121": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Joelho da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-27-fise-proximal-tibia",
+     "b": "diagnostico-e-imagem-73eca918",
+     "s": "Diagnóstico e imagem",
+     "t": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "19d162fdf7d1b2c7229a5a43fd0a7f8d07c35d725f2f274549d66283a1cd4c54"
+  },
+  "pediatria-1122": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-f93be186",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "6672d7186f388d99f7e9bb0f1ea79b11d6d879f91b9b0e356d2c8d1c4c5db789"
+  },
+  "pediatria-1123": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-ce201634",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "22f464143caaeaca1d3a7d49f7eeb348e370c90b2ad23c4effb3a4a4c287d64d"
+  },
+  "pediatria-1124": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-6a7c4a0d",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "bae06ff6c2404fc84c86add4f61d571d3024e97e2d5fdf02686cc1eba5491c3b"
+  },
+  "pediatria-1125": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "os-musculos-decidem-o-desvio-8252e1d5",
+     "s": "Os músculos decidem o desvio",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "b7ba2ef9cd006020c31b8c5f4f96d3396d35200c723a4bcd51b40bbc8367336d"
+  },
+  "pediatria-1126": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Maus-tratos"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "epidemiologia-e-diagnostico-1bcfa506",
+     "s": "Epidemiologia e diagnóstico",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "218c839282af6951d94844606591e32068f69a8c0619dd99c491af2c432f5cee"
+  },
+  "pediatria-1127": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "as-hastes-elasticas-4cd941c9",
+     "s": "As hastes elásticas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "208565a89c314dd229c76e4ead0b3b7418f4339813422a82187abe7687458dba"
+  },
+  "pediatria-1128": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "as-hastes-elasticas-4cd941c9",
+     "s": "As hastes elásticas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "2b290dc41bfbeece529063348d8de9db3c427ad58636d40fa47b60f00eed4003"
+  },
+  "pediatria-1129": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-eb78b504",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    },
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "o-tratamento-pela-idade-ce201634",
+     "s": "O tratamento pela idade",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "287a693e3725d8b28f331e83cf21c868ab34c3a3137d8c429fd75e5588178f30"
+  },
+  "pediatria-1130": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+     "s": "A haste rígida e a cabeça femoral",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "b67840574841629cc0541e8d616b6fe2243f00337285f7802a61b0094a23d1c6"
+  },
+  "pediatria-1131": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "a-haste-rigida-e-a-cabeca-femoral-01669b63",
+     "s": "A haste rígida e a cabeça femoral",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "0481d0bb401fbf9d6c31e061a24e04f602250e9adff804e3f6936718ddb87075"
+  },
+  "pediatria-1132": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "placa-submuscular-e-fixador-externo-09391313",
+     "s": "Placa submuscular e fixador externo",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "a42dff2d739062cab339ae755ba8a3a16e0d945aa9e1cf5b9e4ecabcd9297f3f"
+  },
+  "pediatria-1133": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Discrepância de comprimento dos membros"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "sequelas-8f3711db",
+     "s": "Sequelas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "107203a905b1aa82bf951cca610e74f414ccef0cf76bb3e7a9cacdbc729dd53d"
+  },
+  "pediatria-1134": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "sequelas-8f3711db",
+     "s": "Sequelas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "c7a5e90f9cf7617025b07c320fecb01290534435360ffeae658ce0429d25fec9"
+  },
+  "pediatria-1135": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "placa-submuscular-e-fixador-externo-6e33859a",
+     "s": "Placa submuscular e fixador externo",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "27e27100de9a41665716701cbf8ffa0be8aa7375c1a206e3de0e33205ddf6be1"
+  },
+  "pediatria-1136": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-25-diafise-femur",
+     "b": "as-hastes-elasticas-4cd941c9",
+     "s": "As hastes elásticas",
+     "t": "Fratura da diáfise do fêmur na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "questaoSha256": "6829d417a7a9518bca3c0e02bbe794ae4f15ab07928c6864f55597054ae860d4"
+  },
   "quadril-0035": {
    "tema": "quadril",
    "subtemas": [
@@ -53025,8 +56392,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente44 sustenta avulsão escafossemilunar de pequenos fragmentos do polo proximal sem restringir à criança. Entretanto, não fornece a comparação anatômica própria das inserções radiocapitato e escafocapitato necessária às alternativas A/B. Não trocar radiocapitato por radioescafocapitato apenas pela semelhança do nome, nem importar a distribuição etária do comentário antigo. Falta descrição anatômica dessas inserções/avulsões e confirmação pediátrica; gabarito D preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -53040,7 +56407,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "d151af180a0176049f18284f86f50a6f498da43a2165c4789cd0b67069325a71"
+   "questaoSha256": "d151af180a0176049f18284f86f50a6f498da43a2165c4789cd0b67069325a71",
+   "pendencia": "O corpo independente44 sustenta avulsão escafossemilunar de pequenos fragmentos do polo proximal sem restringir à criança. Entretanto, não fornece a comparação anatômica própria das inserções radiocapitato e escafocapitato necessária às alternativas A/B. Não trocar radiocapitato por radioescafocapitato apenas pela semelhança do nome, nem importar a distribuição etária do comentário antigo. Falta descrição anatômica dessas inserções/avulsões e confirmação pediátrica; gabarito D preservado, sem baseResumo."
   },
   "trauma-0094": {
    "tema": "trauma",
@@ -54529,7 +57897,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54544,7 +57912,36 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "08708ea0869b1f9a5bfd0f5d2b903366c19918d63a49312a5124d9d9344fc2d9"
+   "questaoSha256": "08708ea0869b1f9a5bfd0f5d2b903366c19918d63a49312a5124d9d9344fc2d9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Fraturas dos outros ossos do carpo",
+       "Mayfield e a luxação perilunar",
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "fraturas-dos-outros-ossos-do-carpo-bc810ef4",
+       "fraturas-dos-outros-ossos-do-carpo-fe223feb",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "anatomia-ligamentar-e-cinematica-do-carpo-ac6a12e3"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "d3561faa74394fe80d85f9d0257d630b0c18bed08eb38eb5c1ed36b02143a699"
+     }
+    ],
+    "questaoSha256": "08708ea0869b1f9a5bfd0f5d2b903366c19918d63a49312a5124d9d9344fc2d9",
+    "comentarioSha256": "cf88f79e28ea54df7251d01cc16615f09d9b79937d570aafeb455d73298c67f3"
+   }
   },
   "trauma-0137": {
    "tema": "trauma",
@@ -56782,8 +60179,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo chama mais de90% de avulsão cortical DORSAL, mas admite que esse padrão morfológico pode resultar de arrancamento capsular OU de impacção pelo hamato/estiloide ulnar. Não fornece proporção dos MECANISMOS para demonstrar avulsão mais frequente que impacção, como pede o enunciado. Falta estudo ou trecho primário que separe frequência do padrão dorsal e frequência etiológica; não converter90% de morfologia em90% de tração ligamentar. Gabarito A preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -56797,7 +60194,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "703af5651e3cb0192e96115e25bda354062c057d619b56c799a2be430a302373"
+   "questaoSha256": "703af5651e3cb0192e96115e25bda354062c057d619b56c799a2be430a302373",
+   "pendencia": "O resumo chama mais de90% de avulsão cortical DORSAL, mas admite que esse padrão morfológico pode resultar de arrancamento capsular OU de impacção pelo hamato/estiloide ulnar. Não fornece proporção dos MECANISMOS para demonstrar avulsão mais frequente que impacção, como pede o enunciado. Falta estudo ou trecho primário que separe frequência do padrão dorsal e frequência etiológica; não converter90% de morfologia em90% de tração ligamentar. Gabarito A preservado, sem baseResumo."
   },
   "trauma-0211": {
    "tema": "trauma",
@@ -58942,8 +62340,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 atribui à cabeça/colo do rádio a associação mais comum no conjunto geral de fraturas do escafoide, mas lista rádio DISTAL/perilunar/transescafoperilunar na ALTA ENERGIA sem ordenar frequências. O enunciado restringe a alta energia. Falta frequência comparativa desse subgrupo para escolher proximal ou distal e avaliar capitato/semilunar; nem transportar a primazia geral ao subgrupo, nem afirmar primazia distal apenas pelo comentário antigo. Gabarito D e alerta anterior preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -58957,7 +62355,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "9b31bbe68f2633a3f6d9e2c1ad0c0cc1920f186e39a611a8357486f20219f807"
+   "questaoSha256": "9b31bbe68f2633a3f6d9e2c1ad0c0cc1920f186e39a611a8357486f20219f807",
+   "pendencia": "O corpo44 atribui à cabeça/colo do rádio a associação mais comum no conjunto geral de fraturas do escafoide, mas lista rádio DISTAL/perilunar/transescafoperilunar na ALTA ENERGIA sem ordenar frequências. O enunciado restringe a alta energia. Falta frequência comparativa desse subgrupo para escolher proximal ou distal e avaliar capitato/semilunar; nem transportar a primazia geral ao subgrupo, nem afirmar primazia distal apenas pelo comentário antigo. Gabarito D e alerta anterior preservados, sem baseResumo."
   },
   "trauma-0276": {
    "tema": "trauma",
@@ -58966,7 +62365,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -58981,7 +62380,40 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "dc50dcdf824091b683986d5f63254c8e92999c6108b72c3b5c3e06331f67a674"
+   "questaoSha256": "dc50dcdf824091b683986d5f63254c8e92999c6108b72c3b5c3e06331f67a674",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar",
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-413534f6",
+       "dissociacao-escafossemilunar-67e58eaf",
+       "dissociacao-escafossemilunar-1f9a739d",
+       "dissociacao-escafossemilunar-4b14cd81",
+       "dissociacao-escafossemilunar-14203ef4",
+       "dissociacao-escafossemilunar-3c8bdf0f",
+       "dissociacao-escafossemilunar-0e26d2d4",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "4fd249ed32ba340ed5cd32eba9572fd97d0b5f52cb2e94ea8a41e11532065a25"
+     }
+    ],
+    "questaoSha256": "dc50dcdf824091b683986d5f63254c8e92999c6108b72c3b5c3e06331f67a674",
+    "comentarioSha256": "ab5ba2e7cfd2b47fd9068a19be9bc4fcb6447530ab596766a45e6cefa2384a45"
+   }
   },
   "trauma-0277": {
    "tema": "trauma",
@@ -62713,14 +66145,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta: dois painéis de enxerto ósseo pediculado na face volar do rádio distal, com arco de rotação ao escafoide. O corpo44 lista enxertos pediculados volares/dorsais e livres, mas não atribui esse pedículo ao epônimo Mathoulin nem descreve os pedículos das outras quatro opções. Não inferir autoria só pelo trajeto ou pelos nomes no comentário antigo. Falta descrição técnica primária com anatomia do pedículo e autoria; gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "2da0d2c2d8ecc4f47a361fd5a46078922e14c1af1c3bc99259633a25b160cae7"
+   "questaoSha256": "2da0d2c2d8ecc4f47a361fd5a46078922e14c1af1c3bc99259633a25b160cae7",
+   "pendencia": "Figura aberta: dois painéis de enxerto ósseo pediculado na face volar do rádio distal, com arco de rotação ao escafoide. O corpo44 lista enxertos pediculados volares/dorsais e livres, mas não atribui esse pedículo ao epônimo Mathoulin nem descreve os pedículos das outras quatro opções. Não inferir autoria só pelo trajeto ou pelos nomes no comentário antigo. Falta descrição técnica primária com anatomia do pedículo e autoria; gabarito C preservado, sem baseResumo."
   },
   "trauma-0476": {
    "tema": "trauma",
@@ -63576,8 +67009,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte44 sustenta claramente avulsão dorsal do semilunar pela tensão escafossemilunar, mas não detalha as inserções do colateral radial nem a estrutura chamada ulnocárpico dorsal para discutir D/B com fundamento anatômico próprio. O comentário antigo não comprova essas inserções e a lista geral de ligamentos não resolve a terminologia dorsal. Falta descrição anatômica independente dessas alternativas; gabarito C e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -63591,7 +67024,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "261ee8c17a4a56770e828556e64e739aeb966203d295c8f1e404b5a0ad437192"
+   "questaoSha256": "261ee8c17a4a56770e828556e64e739aeb966203d295c8f1e404b5a0ad437192",
+   "pendencia": "A fonte44 sustenta claramente avulsão dorsal do semilunar pela tensão escafossemilunar, mas não detalha as inserções do colateral radial nem a estrutura chamada ulnocárpico dorsal para discutir D/B com fundamento anatômico próprio. O comentário antigo não comprova essas inserções e a lista geral de ligamentos não resolve a terminologia dorsal. Falta descrição anatômica independente dessas alternativas; gabarito C e comentário preservados, sem baseResumo."
   },
   "trauma-0553": {
    "tema": "trauma",
@@ -64770,8 +68204,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A classificação independente do resumo44 só define D1 fibrosa e D2 esclerótica. A pergunta oferece D3/D4/D5/D6 e a banca registra D4 para pseudartrose com necrose proximal. Falta fonte da versão ampliada de Herbert com definição de cada subtipo, especialmente D3 versus D4; não inventar D3 como esclerótica nem afirmar inexistência universal de D5/D6 com base na versão abreviada. Gabarito B e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -64785,7 +68219,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "c4bb6fd6250726988a355042e4ab7c50ebfe30951952f121e0271309b974ae47"
+   "questaoSha256": "c4bb6fd6250726988a355042e4ab7c50ebfe30951952f121e0271309b974ae47",
+   "pendencia": "A classificação independente do resumo44 só define D1 fibrosa e D2 esclerótica. A pergunta oferece D3/D4/D5/D6 e a banca registra D4 para pseudartrose com necrose proximal. Falta fonte da versão ampliada de Herbert com definição de cada subtipo, especialmente D3 versus D4; não inventar D3 como esclerótica nem afirmar inexistência universal de D5/D6 com base na versão abreviada. Gabarito B e comentário preservados, sem baseResumo."
   },
   "trauma-0666": {
    "tema": "trauma",
@@ -66000,7 +69435,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66015,7 +69450,37 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "0fc36b72d6fa4684bf92c164c9677fb1151ca51319e19e4e9d607261f1759e6a"
+   "questaoSha256": "0fc36b72d6fa4684bf92c164c9677fb1151ca51319e19e4e9d607261f1759e6a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Dissociação escafossemilunar",
+       "Mayfield e a luxação perilunar",
+       "Fraturas dos outros ossos do carpo"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-6ca8aaf8",
+       "dissociacao-escafossemilunar-67e58eaf",
+       "mayfield-e-a-luxacao-perilunar-9979fb84",
+       "fraturas-dos-outros-ossos-do-carpo-fa72f090",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "4285b96b23c1a51bf8b820c41c0047a236a0af962d11320cd7fb552cd90b82f7"
+     }
+    ],
+    "questaoSha256": "0fc36b72d6fa4684bf92c164c9677fb1151ca51319e19e4e9d607261f1759e6a",
+    "comentarioSha256": "8addd6280bff3094c3efc40c360fa3f06c4ac049ebf74ffc34bdec725158b79c"
+   }
   },
   "trauma-0699": {
    "tema": "trauma",
@@ -69198,7 +72663,7 @@
    ],
    "prova": "Einstein",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69213,7 +72678,39 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "7bf56418f31375032d8f4bd7c408e212cd546f4bfbc187e5cd005c516353cb79"
+   "questaoSha256": "7bf56418f31375032d8f4bd7c408e212cd546f4bfbc187e5cd005c516353cb79",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Escafoide: tratamento da fratura aguda",
+       "Escafoide: consolidação viciosa e pseudartrose"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+       "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
+       "escafoide-tratamento-da-fratura-aguda-056fbc49",
+       "escafoide-tratamento-da-fratura-aguda-867cbaae",
+       "escafoide-tratamento-da-fratura-aguda-3d1643fc",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-478ad42b",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "fd3ce0cee86bf8d4e5b86412f11b2877635efe0168f27a74cc9451716bdaaf2d"
+     }
+    ],
+    "questaoSha256": "7bf56418f31375032d8f4bd7c408e212cd546f4bfbc187e5cd005c516353cb79",
+    "comentarioSha256": "732cc183b10d9685ed5e589c0496e46ce35531aea675059bb5d53990ff45e74c"
+   }
   },
   "trauma-0811": {
    "tema": "trauma",
@@ -74507,8 +78004,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta: posicionamento da mão sobre apoio inclinado e radiografia do escafoide. O corpo44 descreve Ziter como AP com desvio ulnar e tubo20graus para o cotovelo. Porém, não define Stecher nem SchneckI/II, necessários à comparação individual dos três distratores. A nota contextual da própria questão reconhece essa ausência; não inventar graus ou trocar inclinação do apoio por angulação medida do tubo a partir da fotografia. Falta fonte radiográfica comparativa das quatro incidências e respectivos posicionamentos; gabarito A preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -74522,7 +78019,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "04cdf1a82fb13c9a509df79079f6555641ff59345cd2f55a145828375028725f"
+   "questaoSha256": "04cdf1a82fb13c9a509df79079f6555641ff59345cd2f55a145828375028725f",
+   "pendencia": "Figura aberta: posicionamento da mão sobre apoio inclinado e radiografia do escafoide. O corpo44 descreve Ziter como AP com desvio ulnar e tubo20graus para o cotovelo. Porém, não define Stecher nem SchneckI/II, necessários à comparação individual dos três distratores. A nota contextual da própria questão reconhece essa ausência; não inventar graus ou trocar inclinação do apoio por angulação medida do tubo a partir da fotografia. Falta fonte radiográfica comparativa das quatro incidências e respectivos posicionamentos; gabarito A preservado, sem baseResumo."
   },
   "trauma-0996": {
    "tema": "trauma",

@@ -1,0 +1,86 @@
+{
+  "baseRemota": "df13ea47469dab493db793d7070c6c79dae776ae",
+  "headAnterior559": "efe0f9bf851f510f2510b41a17752fbbacb50817",
+  "lotes": {
+    "175": {
+      "revisadas": [
+        "trauma-0136",
+        "trauma-0276",
+        "trauma-0698",
+        "trauma-0810"
+      ],
+      "lacunas": 6
+    },
+    "176": {
+      "revisadas": [
+        "mao-0742"
+      ],
+      "lacunas": 9
+    },
+    "177": {
+      "revisadas": [
+        "mao-0829",
+        "mao-1471",
+        "mao-1671",
+        "mao-1677",
+        "mao-1684",
+        "mao-1686",
+        "mao-1690"
+      ],
+      "lacunas": 3
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "ordemAlternativas": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks177-final.log": "179c884e6ca5a0baf8a52d9b03efe3a45b3f26cb39183ec1345bc75e01981ee7",
+    "checks177-ajuste-final.log": "1283dff2b4466a558341008f5448ce5facdf394fb7f1835a9f92b4291f6b689a",
+    "ui177.log": "df3605d4a4f1144372c2474fe1bf52104bc2ec25c016b3c3531deee2a93bd15a",
+    "aplicacao177.log": "eedfc1484cbd06b4a63267728d2b7f63e250aaa2e148fcf95aca7fb3148246de",
+    "remotos177.json": "6a60550bcd2a13ce7e74e5dcb5aa3bcfaf7558647589188952709c928818f599"
+  },
+  "preservacao": "Replay12/12;18comentários pendentes e todos os demais membros/importações preservados. Cinco comentários de175/176 idênticos ao head anterior, incluindo data original; replay ajusta apenas a data de execução antes de recalcular a comparação integral. Questões, gabaritos, fontes e imagens sem alterações.",
+  "figuras": {
+    "abertas": 10,
+    "revisadas": 7,
+    "lacunasDeFonte": 3,
+    "bytesProtegidosPorFingerprint": true,
+    "medidasAngularesInventadas": false
+  },
+  "visual": {
+    "casos": 12,
+    "larguras": [
+      390,
+      1440
+    ],
+    "fontesExatas": true,
+    "alerta": "trauma-0276",
+    "semAlertaAntigoConfirmado": "trauma-0698",
+    "capturasInspecionadas": [
+      "177-mao-0829-figura-0-cel.png",
+      "177-mao-1471-aula-pc.png",
+      "177-mao-1686-aula-cel.png"
+    ]
+  },
+  "inventario": {
+    "resumos": 37,
+    "ids": 2607,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 599,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 382,
+      "pendente-inspecao-imagem": 74,
+      "revisada": 1454
+    }
+  },
+  "proximoLote": 178,
+  "publicacao": "PR559 precisa receber este head, checks/revisão atuais, merge, guarda/deploy e conferência integral em produção."
+}
