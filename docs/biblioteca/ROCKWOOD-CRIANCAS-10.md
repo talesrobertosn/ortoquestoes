@@ -58,7 +58,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 27 | Proximal Tibial Physeal | 2643 a 2695 | Feito em 26/10/2026: `rockwoodcriancas10-27-fise-proximal-tibia`, `pediatria-1108` a `1121` |
 | 28 | Intra-Articular Injuries of the Knee | 2696 a 2826 | A fazer |
 | 29 | Tibia and Fibula Shaft | 2827 a 2957 | Feito em 27/10/2026: `rockwoodcriancas10-29-diafise-tibia`, `pediatria-1137` a `1152` |
-| 30 | Ankle | 2958 a 3099 | A fazer |
+| 30 | Ankle | 2958 a 3099 | Feito em 27/10/2026: `rockwoodcriancas10-30-tornozelo`, `pediatria-1153` a `1167` |
 | 31 | Foot | 3100 a 3352 | A fazer |
 
 **Ordem do Claude:** pelo que mais cai em prova (subtemas com mais questões oficiais): 26, 27, 25, 29, 30, 23, 24, 7,
@@ -90,3 +90,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 27 | `pediatria-0542`, `0948`, `0544`, `0529`, `0661`, `0602`, `0847`, `0779`, `0840`, `0580`, `0946`, `0713`, `0752`, `0516`, `0616`, `0560`, `0918`, `0836`, `0579`, `0705`, `0601`, `0545`, `0646`, `0621`, `0716`, `0174` | `0918` (TEOT 2025) diverge da revisão do capítulo (síndrome compartimental 0%). Sem gabarito: `0779` (capítulo sustenta III), `0716` (3 a 6 anos e valgo), `0713`, `0752`, `0840`, `0836` não sustentadas. Metafisária e COZEN: rever com o cap. 29. |
 | 25 | `pediatria-0863`, `0912`, `0541`, `0556`, `0951`, `0709`, `0565`, `0591`, `0844`, `0647`, `0623`, `0619`, `0603`, `0907`, `0743`, `0749`, `0813`, `0935` | Sem gabarito: `0935` (capítulo sustenta gesso), `0749` (sustenta mais dor), `0743` (mais próxima: até 3 cm), `0813` (não sustentada). `0951`: alternativa B fala em varo, o capítulo descreve valgo após placa distal. |
 | 29 | `pediatria-0549`, `0752`, `0516`, `0545`, `0601`, `0579`, `0705`, `0646`, `0621`, `0716`, `0818`, `0630`, `0916`, `0950` | `0549` (TARO 2023): gabarito na cortical lateral, o capítulo diz medial. Sem gabarito: `0752` (lateral em extensão), `0716` (3 a 6 anos e valgo), `0818` (Certo). Espinha tibial (`0535`, `0700`, `0711`, `0735`, `0949`) fica para o cap. 28. |
+| 30 | `pediatria-0910`, `0650`, `0557`, `0955`, `0923`, `0543`, `0546`, `0568`, `0842`, `0686`, `0905`, `0615`, `0588`, `0662`, `0867`, `0517`, `0637`, `0820`, `0928`, `1081`, `0531`, `0570` | `0531` (TARO 2025): valgo como complicação mais comum; o capítulo dá varo para a ponte medial e valgo para a parada da fíbula. `0615` (SBOT-SP): TILLAUX "III ou IV", o capítulo diz III. Sem gabarito: `0820` (Certo), `0928` (III e II), `0923` (figura). |

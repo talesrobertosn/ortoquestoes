@@ -3790,3 +3790,23 @@ remodelação pobre e rotação que não corrige; fratura por estresse.
 cortical medial. Alerta no resumo.
 
 **Aproveitamento:** `pediatria-1137` a `pediatria-1152`, 16 questões, gabarito A4/B4/C4/D4, mediana de 3.236 caracteres.
+
+## Fraturas do tornozelo na criança, Rockwood and Wilkins 10ª ed., cap. 30
+
+**Recorte.** Busca por tornozelo, TILLAUX, triplanar, maléolo, DIAS-TACHDJIAN e ossículos acessórios em Ortopedia pediátrica, todas as provas.
+A banca cobra sobretudo o TILLAUX (tipo e local: TARO 2024 `pediatria-0543`, TARO 2023 `0546`, TARO 2013 `0686`, CET-PR `0905`, SBOT-SP `0615`;
+mecanismo: TARO 2022 `0568`, TEOT 2021 `0842`), o triplanar (imagem: TARO 2021 `0588`, TARO 2012 `0662`, ENARE 2025 `0867`, ENARE 2024 `0517`;
+via: TARO 2019 `0637`; causa: SBOT-SP `0650`), a ordem de fechamento da fise (TEOT 2025 `0910`), DIAS-TACHDJIAN (TEOT 2024 `0557`,
+TEPOP 2024 `0955`), a complicação mais comum (TARO 2025 `0531`) e os ossículos acessórios (ENARE Mão 2023 `1081`).
+
+**Forma.** Enunciados curtos de classificação; duas questões de cinco alternativas (ENARE) sobre o par AP e perfil do triplanar.
+
+**Lacunas com cara de prova (projeção).** Incidência da pinça; redução do triplanar lateral em rotação interna; fragmento de THURSTAN-HOLLAND
+e mecanismo; ponte medial e varo; BARMADA (3 mm, 60%); limites de angulação; síndrome do retináculo extensor; exame de baixo risco de BOUTIS;
+algoritmo da ponte fisária; parafuso cruzando a fise no TILLAUX; entorse e SH I da fíbula tratados igual; parada da fíbula e valgo; cortador
+de grama.
+
+**Divergências.** TARO 2025 (`0531`): gabarito valgo como complicação mais comum; o capítulo descreve varo pela ponte medial e valgo pela parada
+da fíbula. SBOT-SP (`0615`): TILLAUX "III ou IV"; o capítulo diz III.
+
+**Aproveitamento:** `pediatria-1153` a `pediatria-1167`, 15 questões, gabarito A4/B4/C4/D3, mediana de 3.047 caracteres.
