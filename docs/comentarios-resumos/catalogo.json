@@ -3,10 +3,10 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 235,
+  "pendente": 214,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 603,
+  "pendente-fonte": 624,
   "pendente-inspecao-imagem": 64,
   "revisada": 1623
  },
@@ -342,8 +342,8 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
-    "pendente": 25,
-    "pendente-fonte": 10,
+    "pendente": 4,
+    "pendente-fonte": 31,
     "pendente-inspecao-imagem": 4,
     "revisada": 66
    }
@@ -352,8 +352,8 @@
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
    "estados": {
-    "pendente": 18,
-    "pendente-fonte": 8,
+    "pendente": 8,
+    "pendente-fonte": 18,
     "pendente-inspecao-imagem": 3,
     "revisada": 58
    }
@@ -362,8 +362,8 @@
    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
    "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
    "estados": {
-    "pendente": 6,
-    "pendente-fonte": 1,
+    "pendente": 4,
+    "pendente-fonte": 3,
     "pendente-inspecao-imagem": 2,
     "revisada": 31
    }
@@ -373,8 +373,8 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 7,
-    "pendente-fonte": 17,
+    "pendente": 6,
+    "pendente-fonte": 18,
     "pendente-inspecao-imagem": 2,
     "revisada": 55
    }
@@ -384,8 +384,8 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 7,
-    "pendente-fonte": 16,
+    "pendente": 6,
+    "pendente-fonte": 17,
     "pendente-inspecao-imagem": 2,
     "revisada": 51
    }
@@ -29813,8 +29813,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; o resumo do capítulo 15 declara que não discute a limitação da pronação na luxação inveterada (descreve dor, perda do arco médio, ponte radioumeral e miosite), o que não sustenta nenhuma das estruturas oferecidas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -29828,7 +29828,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "381b9952c9d05f06aafb65e5ffbe85eb788beaf5b66ae5f8419516c00c409239"
+   "questaoSha256": "381b9952c9d05f06aafb65e5ffbe85eb788beaf5b66ae5f8419516c00c409239",
+   "pendencia": "Sem gabarito oficial; o resumo do capítulo 15 declara que não discute a limitação da pronação na luxação inveterada (descreve dor, perda do arco médio, ponte radioumeral e miosite), o que não sustenta nenhuma das estruturas oferecidas."
   },
   "ombro-cotovelo-0496": {
    "tema": "ombro-cotovelo",
@@ -30048,8 +30049,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Reconstrução do ligamento anular na luxação aguda da cabeça do rádio não é discutida no resumo do capítulo 15 (que só cita a secção parcial do anular na pronação dolorosa crônica).",
    "temComentario": true,
    "citacoes": [
     {
@@ -30063,7 +30064,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "e4099971e52532e74f6f96e078ccfc331d3da8f7e6e36baacdcd351c245d85a9"
+   "questaoSha256": "e4099971e52532e74f6f96e078ccfc331d3da8f7e6e36baacdcd351c245d85a9",
+   "pendencia": "Reconstrução do ligamento anular na luxação aguda da cabeça do rádio não é discutida no resumo do capítulo 15 (que só cita a secção parcial do anular na pronação dolorosa crônica)."
   },
   "ombro-cotovelo-0513": {
    "tema": "ombro-cotovelo",
@@ -30297,8 +30299,8 @@
    ],
    "prova": "PUC-SP",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Luxação congênita da cabeça do rádio não é tratada no resumo do capítulo 15; falta resumo de deformidades congênitas do cotovelo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -30312,7 +30314,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "0333b6e919da826fa2f9f3c95d86d99c4c2fb78c16dd32ff9321d456d149eecb"
+   "questaoSha256": "0333b6e919da826fa2f9f3c95d86d99c4c2fb78c16dd32ff9321d456d149eecb",
+   "pendencia": "Luxação congênita da cabeça do rádio não é tratada no resumo do capítulo 15; falta resumo de deformidades congênitas do cotovelo."
   },
   "ombro-cotovelo-0535": {
    "tema": "ombro-cotovelo",
@@ -33859,8 +33862,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Luxação congênita da cabeça do rádio (lateralidade e associações) não é tratada nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33874,7 +33877,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "2a99c6c772876ae6257aa1dcfab1b564fefd1580a2ff7b0ea4851e4a3e8f8a4c"
+   "questaoSha256": "2a99c6c772876ae6257aa1dcfab1b564fefd1580a2ff7b0ea4851e4a3e8f8a4c",
+   "pendencia": "Luxação congênita da cabeça do rádio (lateralidade e associações) não é tratada nos resumos publicados."
   },
   "pediatria-0047": {
    "tema": "pediatria",
@@ -33883,8 +33887,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33898,7 +33902,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "a5cecaa06fbd3aca9ba8673cf4c86f569b97257630465e5861396aec0ab3152b"
+   "questaoSha256": "a5cecaa06fbd3aca9ba8673cf4c86f569b97257630465e5861396aec0ab3152b",
+   "pendencia": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados."
   },
   "pediatria-0061": {
    "tema": "pediatria",
@@ -33907,8 +33912,8 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Luxação congênita da cabeça do rádio (direção e limitação de movimento) não é tratada nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33922,7 +33927,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "65978eace2fd552241797983d59c113eb39285ddecb42aca643cb14959c243ad"
+   "questaoSha256": "65978eace2fd552241797983d59c113eb39285ddecb42aca643cb14959c243ad",
+   "pendencia": "Luxação congênita da cabeça do rádio (direção e limitação de movimento) não é tratada nos resumos publicados."
   },
   "pediatria-0065": {
    "tema": "pediatria",
@@ -33980,8 +33986,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33995,7 +34001,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "65240302d78ba5c4afc75f80282c2605efe57ab6c5a96680696d821e92ead6b0"
+   "questaoSha256": "65240302d78ba5c4afc75f80282c2605efe57ab6c5a96680696d821e92ead6b0",
+   "pendencia": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados."
   },
   "pediatria-0111": {
    "tema": "pediatria",
@@ -34068,8 +34075,8 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Osteocondrose de Panner e o cotovelo do arremessador juvenil não aparecem nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -34083,7 +34090,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "8a29456c293ec0c548f38ac29901989bc7237e5b7b29bb270ebed27c7d429438"
+   "questaoSha256": "8a29456c293ec0c548f38ac29901989bc7237e5b7b29bb270ebed27c7d429438",
+   "pendencia": "Osteocondrose de Panner e o cotovelo do arremessador juvenil não aparecem nos resumos publicados."
   },
   "pediatria-0147": {
    "tema": "pediatria",
@@ -34092,8 +34100,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Tratamento da luxação congênita da cabeça do rádio não é tratado nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -34107,7 +34115,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "1d1f340a19f099ab4287ead10f6df66ff69458ee4bb4be272387ef19e4583547"
+   "questaoSha256": "1d1f340a19f099ab4287ead10f6df66ff69458ee4bb4be272387ef19e4583547",
+   "pendencia": "Tratamento da luxação congênita da cabeça do rádio não é tratado nos resumos publicados."
   },
   "pediatria-0160": {
    "tema": "pediatria",
@@ -34192,8 +34201,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Luxação congênita da cabeça do rádio (direção e tamanho da cabeça) não é tratada nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -34207,7 +34216,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "d2c7b2d1cf1d7ed9cc5a704a04be2cbfa2869e733b4d07a8fbf87f74d5340321"
+   "questaoSha256": "d2c7b2d1cf1d7ed9cc5a704a04be2cbfa2869e733b4d07a8fbf87f74d5340321",
+   "pendencia": "Luxação congênita da cabeça do rádio (direção e tamanho da cabeça) não é tratada nos resumos publicados."
   },
   "pediatria-0321": {
    "tema": "pediatria",
@@ -34217,8 +34227,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Osteocondrite dissecante do cotovelo e o esporte associado não aparecem nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -34234,7 +34244,8 @@
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
-   "questaoSha256": "15fed925ea30bff75622607c326fc928c92745971bc8b6956b572e298ca868e3"
+   "questaoSha256": "15fed925ea30bff75622607c326fc928c92745971bc8b6956b572e298ca868e3",
+   "pendencia": "Osteocondrite dissecante do cotovelo e o esporte associado não aparecem nos resumos publicados."
   },
   "pediatria-0332": {
    "tema": "pediatria",
@@ -34419,15 +34430,16 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Reflexos neonatais (susto, Moro, Galant) não aparecem nos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "6a52cba3e9355b19400eb3388fcadc8b49b5526620d799da4897446ff7f87351"
+   "questaoSha256": "6a52cba3e9355b19400eb3388fcadc8b49b5526620d799da4897446ff7f87351",
+   "pendencia": "Reflexos neonatais (susto, Moro, Galant) não aparecem nos resumos publicados."
   },
   "pediatria-0516": {
    "tema": "pediatria",
@@ -37365,8 +37377,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do capítulo 15 usa as fraturas do colo do rádio e do olécrano em valgo como prova do mecanismo, mas avisa que não fala da rotação do antebraço; restam duas alternativas com valgo (pronação ou supinação), e o detalhe da supinação vem do capítulo do rádio proximal, não resumido.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37391,7 +37403,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "d06c97a0716d9dc1b9d0efcf085d34bfbe6e332d5a10ee067e3da6bc0670a17d"
+   "questaoSha256": "d06c97a0716d9dc1b9d0efcf085d34bfbe6e332d5a10ee067e3da6bc0670a17d",
+   "pendencia": "O resumo do capítulo 15 usa as fraturas do colo do rádio e do olécrano em valgo como prova do mecanismo, mas avisa que não fala da rotação do antebraço; restam duas alternativas com valgo (pronação ou supinação), e o detalhe da supinação vem do capítulo do rádio proximal, não resumido."
   },
   "pediatria-0612": {
    "tema": "pediatria",
@@ -38329,15 +38342,16 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Mecanismo da fratura do colo do rádio na criança (valgo com extensão) não é descrito nos resumos pediátricos publicados; falta o capítulo do rádio proximal.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "559ffd270ceb74770a5fb4aac464cbd840bc5931644629444ac9401832843db4"
+   "questaoSha256": "559ffd270ceb74770a5fb4aac464cbd840bc5931644629444ac9401832843db4",
+   "pendencia": "Mecanismo da fratura do colo do rádio na criança (valgo com extensão) não é descrito nos resumos pediátricos publicados; falta o capítulo do rádio proximal."
   },
   "pediatria-0641": {
    "tema": "pediatria",
@@ -38960,8 +38974,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -38975,7 +38989,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "af4282bd4db0df603a7ff2fbfe1ab7def78381b126a1d303c1f98727cd7b82e0"
+   "questaoSha256": "af4282bd4db0df603a7ff2fbfe1ab7def78381b126a1d303c1f98727cd7b82e0",
+   "pendencia": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados."
   },
   "pediatria-0657": {
    "tema": "pediatria",
@@ -41147,15 +41162,16 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Monteggia tipo II na criança (nível da fratura da ulna) não é tratada nos resumos pediátricos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "08cfea374bdb7d8608ab6727d93f64ead95261bb8be507808592c29dcd63b220"
+   "questaoSha256": "08cfea374bdb7d8608ab6727d93f64ead95261bb8be507808592c29dcd63b220",
+   "pendencia": "Monteggia tipo II na criança (nível da fratura da ulna) não é tratada nos resumos pediátricos publicados."
   },
   "pediatria-0729": {
    "tema": "pediatria",
@@ -41446,15 +41462,16 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Técnica de Bell Tawse para reconstrução do anular não aparece nos resumos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "8bb5e15a7e45054cce3b3b7237137a6160326ec9d35fdefc606fd887ae9ad9a7"
+   "questaoSha256": "8bb5e15a7e45054cce3b3b7237137a6160326ec9d35fdefc606fd887ae9ad9a7",
+   "pendencia": "Técnica de Bell Tawse para reconstrução do anular não aparece nos resumos publicados."
   },
   "pediatria-0743": {
    "tema": "pediatria",
@@ -42473,8 +42490,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; o resumo do capítulo 15 descreve o epicôndilo encarcerado antes e depois da manobra e até sem luxação franca, e declara que não sustenta a redução como a causa do encarceramento.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42489,7 +42506,8 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "62f7ddab3d96a6a097404141a3b4dea9bbd59c206e24801a76c611bd895fd851"
+   "questaoSha256": "62f7ddab3d96a6a097404141a3b4dea9bbd59c206e24801a76c611bd895fd851",
+   "pendencia": "Sem gabarito oficial; o resumo do capítulo 15 descreve o epicôndilo encarcerado antes e depois da manobra e até sem luxação franca, e declara que não sustenta a redução como a causa do encarceramento."
   },
   "pediatria-0818": {
    "tema": "pediatria",
@@ -42847,15 +42865,16 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Tratamento da Monteggia tipo II na criança não é tratado nos resumos pediátricos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "dd288fee925dd21c9b1c3b04a1d96b37eb259297e4dfcaa92dc5aeda880302fd"
+   "questaoSha256": "dd288fee925dd21c9b1c3b04a1d96b37eb259297e4dfcaa92dc5aeda880302fd",
+   "pendencia": "Tratamento da Monteggia tipo II na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0832": {
    "tema": "pediatria",
@@ -44201,15 +44220,16 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito; conduta na fratura do colo do rádio da criança com 40 graus não aparece nos resumos pediátricos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "da8addca093be76b68cb35dbeee120a5a88554c59117c8aecb21127f2075bec3"
+   "questaoSha256": "da8addca093be76b68cb35dbeee120a5a88554c59117c8aecb21127f2075bec3",
+   "pendencia": "Sem gabarito; conduta na fratura do colo do rádio da criança com 40 graus não aparece nos resumos pediátricos publicados."
   },
   "pediatria-0927": {
    "tema": "pediatria",
@@ -44968,15 +44988,16 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Fratura da apófise do olécrano da criança e seus critérios cirúrgicos não aparecem nos resumos pediátricos publicados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "05f0a9ec8ce2a5fb2052fede19dbe217c09ee20e68cafa47ee7c56b6de501f91"
+   "questaoSha256": "05f0a9ec8ce2a5fb2052fede19dbe217c09ee20e68cafa47ee7c56b6de501f91",
+   "pendencia": "Fratura da apófise do olécrano da criança e seus critérios cirúrgicos não aparecem nos resumos pediátricos publicados."
   },
   "pediatria-0956": {
    "tema": "pediatria",
