@@ -3827,3 +3827,22 @@ de 1,1 cm (SMITH); inlet e outlet; ressonância no acetábulo; VAN NECK; SILBER 
 capítulo não dá a complicação mais frequente do tipo III.
 
 **Aproveitamento:** `pediatria-1168` a `pediatria-1181`, 14 questões, gabarito A4/B4/C3/D3, mediana de 2.895 caracteres.
+
+## Fraturas do colo do fêmur e luxação traumática do quadril na criança, Rockwood and Wilkins 10ª ed., cap. 24
+
+**Recorte.** Busca por DELBET, colo do fêmur, RATLIFF e luxação traumática do quadril em Ortopedia pediátrica, todas as provas.
+A banca cobra sobretudo DELBET: o tipo mais comum (TARO 2025 `pediatria-0530`, TARO 2015 `0599`), a necrose por tipo (TEOT 2025 `0920`,
+TARO 2011 `0651`, ENARE 2025 `0858`), o IB (ENARE 2024 `0515`) e a redução do tipo II (TEOT 2022 `0707`); RATLIFF (TEOT 2023 `0581`); e a
+luxação traumática (TARO 2024 `0537`, TEOT 2024 `0561`).
+
+**Forma.** Enunciados curtos de classificação; duas ENARE de cinco alternativas.
+
+**Lacunas com cara de prova (projeção).** IB e necrose quase total; irrigação pela circunflexa medial; tratamento do tipo I por idade e do
+tipo II (redução anatômica, cruzar a fise); qualidade da redução e 24 horas; pseudartrose e osteotomia valgizante; estresse compressão
+e tensão; redução da luxação no adolescente com anestesia e radioscopia; interposição e ressonância; tempo até a redução; isquiático;
+fechamento fisário e os 13% do crescimento.
+
+**Divergência.** TEOT 2023 (`0581`): gabarito "epifisária parcial" para o tipo III de RATLIFF; o capítulo descreve o tipo III no colo, da fratura
+à fise, e a parcial como tipo II.
+
+**Aproveitamento:** `pediatria-1182` a `pediatria-1195`, 14 questões, gabarito A4/B4/C3/D3, mediana de 2.868 caracteres.
