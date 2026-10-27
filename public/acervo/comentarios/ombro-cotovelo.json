@@ -955,15 +955,45 @@
   "conferido": false
  },
  "ombro-cotovelo-0064": {
+  "conceito": "A imagem mostra perda da congruência radiocapitelar, no padrão de **instabilidade rotatória posterolateral**. Nesse mecanismo, rádio e ulna giram juntos em supinação em relação ao úmero, e a cabeça do rádio subluxa para trás do capítulo. A banda cuja insuficiência é associada a esse padrão é o **colateral ulnar lateral** (Rockwood adultos, 10ª ed., cap. 40, complexo lateral e instabilidade crônica).\n\nA radiografia não mostra diretamente as fibras do ligamento. A identificação vem da relação entre o padrão de deslocamento e o estabilizador que o contém. O complexo lateral reúne colateral radial, anular e colateral ulnar lateral; este último chega à crista do supinador da ulna e é o componente destacado pelo capítulo na instabilidade posterolateral.\n\nO lado medial tem outra função dominante: o feixe anterior do colateral medial é o restritor-chave do valgo, e o posterior é secundário ao valgo e participa da restrição à rotação da ulna. Todos contribuem para estabilidade, mas contribuição não significa que qualquer banda possa ser usada como sinônimo da lesão posterolateral.\n\nA mecânica também explica a proteção pela pronação quando o complexo lateral está insuficiente. A supinação reproduz o movimento desestabilizador, enquanto a pronação pode ajudar a manter o alinhamento. Isso não substitui a avaliação da congruência e da estabilidade de cada caso.",
+  "correta": "**Correta: A (banda ulnar do colateral lateral).** É o colateral ulnar lateral, que passa por trás do colateral radial e alcança a ulna na crista do supinador. Sua falha está relacionada ao giro posterolateral do antebraço e à subluxação posterior da cabeça radial descritos.",
   "incorretas": {
-   "B": "**Participa, mas não é o restritor principal.** O colateral radial vai do epicôndilo ao ligamento anular e não se prende à ulna. Estudos mostram que a lesão isolada da banda ulnar é a que produz a subluxação posterolateral.",
-   "C": "**É do valgo.** A banda anterior do colateral medial resiste ao estresse em valgo e falha no arremessador; não é a causa da instabilidade posterolateral.",
-   "D": "**Papel secundário e em flexão.** A banda posterior do colateral medial forma o assoalho do túnel cubital e contribui ao valgo em flexão acentuada; não se relaciona com a instabilidade posterolateral."
+   "B": "O colateral radial pertence ao mesmo complexo e se mistura ao ligamento anular, mas não é a banda que o capítulo destaca como falhando na instabilidade posterolateral. A distinção anatômica é que o colateral ulnar lateral alcança a crista do supinador da ulna, compondo a contenção do giro do antebraço.",
+   "C": "O feixe anterior do colateral medial é o estabilizador-chave contra o valgo, do epicôndilo medial ao tubérculo sublime. Essa função é importante, mas não identifica a banda lateral ligada à subluxação posterolateral mostrada. Confundir direção de estabilidade com um “ligamento mais importante” universal troca o mecanismo da questão.",
+   "D": "O feixe posterior é parte do colateral medial, com papel secundário no valgo e participação na rotação da ulna. Ele não corresponde ao colateral ulnar lateral que o capítulo associa ao padrão posterolateral. A localização no lado medial e sua função devem ser diferenciadas da banda lateral pedida."
   },
-  "conceito": "**O ligamento que falha.** A imagem mostra a **instabilidade rotatória posterolateral** (IRPL) do cotovelo, em que a ulna e o rádio giram juntos em supinação sobre o úmero e a cabeça do rádio subluxa para trás do capítulo. A estrutura deficiente é a **banda ulnar do ligamento colateral lateral**, o **ligamento colateral ulnar lateral**, que vai do epicôndilo lateral até a **crista do supinador** da ulna e funciona como uma alça que prende a ulna ao úmero pelo lado de fora.\n\n**O complexo lateral por inteiro.** Ele tem o **colateral radial**, do epicôndilo ao ligamento anular; o **ligamento anular**, que abraça a cabeça do rádio; o **colateral ulnar lateral**, o mais importante para essa instabilidade; e o ligamento colateral lateral acessório. Como o anular prende o rádio à ulna, rádio e ulna subluxam juntos, e não há luxação isolada da cabeça do rádio.\n\n**As causas.** A causa mais comum é a **luxação do cotovelo**, cujo primeiro estágio no círculo de Horii é justamente a lesão desse ligamento. A segunda é **iatrogênica**: vias laterais que desinserem o complexo lateral, liberações amplas na epicondilite e infiltrações repetidas de corticoide. Também aparece tardiamente na deformidade em varo após fratura supracondiliana na infância.\n\n**Diagnóstico e tratamento.** O paciente relata estalos, falseio e travamento ao levantar da cadeira apoiando nas mãos ou ao fazer flexão de braço com as mãos supinadas. O exame de referência é o **pivot shift lateral** de O'Driscoll, com o antebraço supinado, valgo e compressão axial enquanto se flexiona o cotovelo. Os testes da cadeira e da flexão de braço reproduzem a apreensão. A radiografia sob estresse pode mostrar a subluxação. O tratamento da instabilidade sintomática é cirúrgico: reparo do ligamento na fase aguda ou **reconstrução** com enxerto (palmar longo) do epicôndilo lateral à crista do supinador na fase crônica.\n\n**Na prova:** instabilidade rotatória **posterolateral** do cotovelo = insuficiência da **banda ulnar do colateral lateral** (LUCL); a banda anterior do colateral medial é do **valgo**.",
-  "correta": "**Banda ulnar do ligamento colateral lateral.** O ligamento colateral ulnar lateral, do epicôndilo lateral à crista do supinador, é o principal restritor da instabilidade rotatória posterolateral. Sem ele, o antebraço gira em supinação e a cabeça do rádio subluxa para trás.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Quem segura o cotovelo; Instabilidade rotatória posterolateral crônica."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Quem segura o cotovelo",
+      "Instabilidade rotatória posterolateral crônica"
+     ],
+     "blocos": [
+      "quem-segura-o-cotovelo-d2f0137f",
+      "quem-segura-o-cotovelo-2b1e3945",
+      "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+      "quem-segura-o-cotovelo-7b7c7f11"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "8b5de920302bcdae46768b412931157b54af7db2131a461a993b6c0a7f870e36"
+    }
+   ],
+   "questaoSha256": "c68b5b83a2c54ee54c8695b79b0a40a8678a952ea390297ad38dab39bbb496bf",
+   "comentarioSha256": "2fccd3299719e635c05b3f1c6d0b470b2259156b6c059141ddd16293b7939eed"
+  }
  },
  "ombro-cotovelo-0065": {
   "incorretas": {

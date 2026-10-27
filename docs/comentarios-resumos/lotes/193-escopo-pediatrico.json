@@ -1,0 +1,74 @@
+{
+  "pediatria-0589": {
+    "questaoSha256": "73ad7a7c41b60215deabe7a1411c6f3f73d86c85fdc88e51beb189f92151ce67",
+    "comentarioAnteriorSha256": "310346fe753d8bd4ebd70c4823bc7057125c11585b1a48d842bcb4dff1cd408b",
+    "comentario": {
+      "conceito": "A avulsão da tuberosidade acontece na região anterior da tíbia proximal, junto ao aparelho extensor. Se a lesão compromete o crescimento e a região **anterior para**, enquanto a posterior continua crescendo, surge **recurvato**, com alteração do alinhamento no plano sagital e tendência à hiperextensão. É a deformidade mais comum descrita após lesão fisária proximal, sobretudo da tuberosidade (Rockwood crianças, 10ª ed., cap. 27, complicações do crescimento).\n\nO risco depende da fise, não apenas de haver união da fratura. Uma radiografia que mostra consolidação não prova que o crescimento restante será simétrico. O capítulo ressalta que a redução anatômica e a fixação diminuem, mas não eliminam, a possibilidade de parada fisária.\n\nÉ importante distinguir **deformidade angular** de **diferença de comprimento**. O crescimento posterior persistente, diante de uma parada anterior, faz a tíbia mudar sua orientação; não significa que o membro inteiro apenas alongue ou encurte de maneira uniforme.\n\nTambém não se deve trocar esse padrão pelo valgo de Cozen. Cozen pertence à fratura metafisária proximal da criança pequena; o enunciado fala da avulsão da tuberosidade no adolescente. O local da falha de crescimento determina o raciocínio e justifica o seguimento radiográfico comparado ao outro lado.",
+      "correta": "**Correta: A (recurvato).** A parada anterior com crescimento posterior produz a deformidade sagital descrita. O mecanismo relaciona diretamente a região lesada ao sentido da angulação; não depende de supor que toda fratura da tíbia proximal evolua da mesma forma.",
+      "incorretas": {
+        "B": "Antecurvato é uma deformidade sagital no sentido oposto. Reconhecer apenas que a alteração está nesse plano não basta: a frente da fise é que para, enquanto o fundo continua crescendo. O resultado apresentado pelo capítulo é recurvato.",
+        "C": "Alongamento descreve uma diferença de comprimento, e não a deformidade angular causada pela parada anterior. Crescimento que continua apenas de um lado da fise não equivale a hipercrescimento uniforme de toda a tíbia. O trecho destaca o desequilíbrio anterior-posterior.",
+        "D": "Uma parada fisária pode afetar o comprimento, mas isso não responde à deformidade predominante após a lesão anterior da tuberosidade. Quando a parte posterior segue crescendo, o efeito característico é angular, em recurvato. Não se deve reduzir toda consequência de uma lesão fisária a encurtamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-5c26d8e8",
+          "complicacoes-58867aa4"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "3d132e6f115759eafba30d89cd7095c654d34e93294755d18b367242cd562c0b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0673": {
+    "questaoSha256": "b35a6d7eb69454ebe6b6252d60a52f1874ea9b463170ce7b868f6651e017ba11",
+    "comentarioAnteriorSha256": "6a3d41bce2f837df5ce481189543ec7685fd66f0d3e09dab5eae523788b571b8",
+    "comentario": {
+      "conceito": "Para dimensionar cada haste flexível, o capítulo usa **0,4 vezes o menor diâmetro do canal medular**. Com um canal de **6 mm**, a conta é **6 × 0,4 = 2,4 mm por haste**. Entre as medidas oferecidas, **2,5 mm** é a mais próxima desse resultado e corresponde ao gabarito (Rockwood crianças, 10ª ed., cap. 25, técnica das hastes elásticas).\n\nO cálculo trata de **diâmetro**, não de área de secção. A referência de 40% vale para cada haste; as duas iguais somam cerca de 80% do diâmetro do istmo. Não se deve aplicar os 80% a uma haste só nem dividir o canal em duas metades de 50%.\n\nEsses números fazem parte de uma montagem pré-tensionada. As hastes recebem curvas opostas, com o ápice no foco, para resistir a varo, valgo e torção. O sistema mantém algum movimento favorável à formação de calo, mas não oferece a mesma rigidez de uma fixação rígida.\n\nO resultado matemático é **2,4 mm**, e não exatamente 2,5 mm: a alternativa é a aproximação dentre os valores apresentados. O cálculo isolado não escolhe material, não dispensa verificar o canal real e não define a indicação do método, que também depende de idade, peso, localização e estabilidade da fratura.",
+      "correta": "**Correta: B (2,5 mm).** A fórmula fornece 2,4 mm para cada haste, e 2,5 mm é a medida mais próxima entre as alternativas. A diferença deve ser explicitada como aproximação da questão, sem afirmar que 6 × 0,4 seja exatamente 2,5.",
+      "incorretas": {
+        "A": "Dois milímetros representam um terço do canal de 6 mm, abaixo da referência de 40% por haste. Essa opção fica a 0,4 mm do resultado calculado, enquanto 2,5 mm fica a 0,1 mm. Escolher a menor medida apenas por facilitar a passagem não segue o dimensionamento proposto.",
+        "C": "Três milímetros correspondem a metade do canal. A regra do capítulo não é dividir o istmo em duas partes iguais de 50%, mas usar aproximadamente 40% para cada haste. A alternativa supera o resultado de 2,4 mm e é menos próxima que 2,5 mm.",
+        "D": "Uma haste de 3,5 mm corresponderia a cerca de 58% de um canal de 6 mm. Esse valor está ainda mais afastado da proporção de 40%. Uma medida utilizada em outras crianças não pode ser escolhida sem relacioná-la ao istmo informado no caso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: As hastes elásticas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-25-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+        "secoes": [
+          "As hastes elásticas"
+        ],
+        "blocos": [
+          "as-hastes-elasticas-8c6022b4",
+          "as-hastes-elasticas-67872f88"
+        ],
+        "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+        "trechosSha256": "ff682d03e3fc457dab6fcabebfc6cb3d7f88fb993e9edba7d047516c22cdb3d7"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
