@@ -1,0 +1,153 @@
+{
+  "base": "5d35d21810bbcfdd03671e8ebfa10a1c9d098e9d",
+  "lotes": {
+    "188": [
+      "pediatria-0552",
+      "pediatria-1122",
+      "pediatria-1123",
+      "pediatria-1124",
+      "pediatria-1125",
+      "pediatria-1126",
+      "pediatria-1127",
+      "pediatria-1128",
+      "pediatria-1129",
+      "pediatria-1130"
+    ],
+    "189": [
+      "pediatria-1131",
+      "pediatria-1132",
+      "pediatria-1133",
+      "pediatria-1134",
+      "pediatria-1135",
+      "pediatria-1136",
+      "pediatria-1116",
+      "pediatria-1117",
+      "pediatria-1118",
+      "pediatria-1119"
+    ],
+    "190": [
+      "pediatria-1110",
+      "pediatria-1111",
+      "pediatria-1112",
+      "pediatria-1113",
+      "pediatria-1114",
+      "pediatria-1115",
+      "pediatria-1121",
+      "pediatria-0520",
+      "pediatria-0935"
+    ]
+  },
+  "lacunas": [
+    "joelho-0013",
+    "joelho-0026",
+    "joelho-0043",
+    "joelho-0085",
+    "joelho-0086",
+    "joelho-0221",
+    "joelho-0223",
+    "joelho-0228",
+    "joelho-0287",
+    "joelho-0313",
+    "pediatria-1120"
+  ],
+  "checks": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado;após retirada de frase editorial0520,repetidos fixtures/acervo/build/replay/letras e UI do caso",
+    "replay": "29/29;11comentários de lacunas intactos",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks187188.log": "f671a1b030e230406644ab04fac9744e78e9b66ce71955a2dd6328ba57eddf06",
+    "checks187189.log": "3d3755ddfac2c3893339b51cad3c1fbb46b0c61de1228a6481c012c5b9458e45",
+    "checks187190.log": "c675f78e5ccb8c8e187adc9b1154a7aa2ee810575bba11997fded862212c362b",
+    "ui188.log": "c343d1af8dd66b6de20cf168ca58597c8c5d5d515607394b4a22a17dae4ff4e4",
+    "ui189.log": "420bd77e7a1fbc206a07b7a6cc3460d6cd2354446667536becad8d2f19ea95a3",
+    "ui190.log": "98f6957366c8c1122d336dd1a23de6a138c9a21254a25adf38be43d81af7535c",
+    "checks0520-final.log": "fd67cf2228df8610b3532fa7dbdc58e00373340ac5ce244b2aeb41d2a47e35a7",
+    "ui0520-final.log": "b6f3df43a35dbdade2c3dc6cb57e994c3179f618b3bf943bbdf44a551f174f12",
+    "aplicacao188.log": "d6031bfaf7f78372264a49202734115dfec246fef0e0739335e8838f32f48b65",
+    "aplicacao189.log": "6ee8f7b64936886b2ecfa4dc488c1fce4f6e37c81eaf08bbfdfcc8b4783b0eae",
+    "aplicacao190.log": "e7b09968e68e636a34ec5d54051d6177422f37e02ea1ae6e7b2fb988f95067fa",
+    "remotos187188-final.json": "864c28bd6c4cd2fa57826b56899e2867f8b6fa0b8a71c3dbdb70b5eb8b3ba304"
+  },
+  "fontes": {
+    "rockwoodcriancas10-25-diafise-femur": {
+      "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+      "markdownSha256": "49ee25a8ce502906b2e9bad75b214222ddac18192573e464b036c49898597d35",
+      "leitura": "Resumo integral lido;corpos/tabelas independentes conferidos para os fatos usados. Não usar notas de questões ou comentário antigo como fonte;sem páginas primárias inventadas."
+    },
+    "rockwoodcriancas10-26-fise-distal-femur": {
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "markdownSha256": "9da9f842419ea0b154b852bb9ca9ea8e9c268adf02fda7319d7917ae0ce65aae",
+      "leitura": "Resumo integral lido;corpos/tabelas independentes conferidos para os fatos usados. Não usar notas de questões ou comentário antigo como fonte;sem páginas primárias inventadas."
+    },
+    "rockwoodcriancas10-27-fise-proximal-tibia": {
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "markdownSha256": "bfe73dbe938035377accdbf07578ffda32aaf53df5f5587e84adcbb251902f3f",
+      "leitura": "Resumo integral lido;corpos/tabelas independentes conferidos para os fatos usados. Não usar notas de questões ou comentário antigo como fonte;sem páginas primárias inventadas."
+    },
+    "rockwood10-61-luxacao-joelho": {
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "markdownSha256": "7aefa278135476641be3851c0c9f7ba579c2da8991418eabf69a4ddaa390e617",
+      "leitura": "Resumo integral lido;corpos/tabelas independentes conferidos para os fatos usados. Não usar notas de questões ou comentário antigo como fonte;sem páginas primárias inventadas."
+    },
+    "rockwood10-62-planalto-tibial": {
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "markdownSha256": "9bad8b74bf831e54073b025d21783dbb6056c18b56f7248cb821c4420760014d",
+      "leitura": "Resumo integral lido;corpos/tabelas independentes conferidos para os fatos usados. Não usar notas de questões ou comentário antigo como fonte;sem páginas primárias inventadas."
+    }
+  },
+  "visual": {
+    "casos": 29,
+    "larguras": [
+      390,
+      1440
+    ],
+    "respostasEFontesExatas": true,
+    "capturasInspecionadas": [
+      "188-pediatria-0552-aula-pc.png",
+      "188-pediatria-1124-aula-cel.png",
+      "188-pediatria-1127-aula-pc.png",
+      "189-pediatria-1133-alerta-pc.png",
+      "189-pediatria-1116-aula-cel.png",
+      "190-final-pediatria-0520-alerta-pc.png",
+      "190-pediatria-0935-alerta-cel.png"
+    ],
+    "semFigurasNos40Candidatos": true
+  },
+  "preservacao": "29membros de pediatria.json;demais bytes e todos os enunciados/opções/IDs/gabaritos oficiais/revisões médicas/fontes preservados. conferido:false. Lacunas sem selo novo e comentários intactos.",
+  "ressalvas": [
+    "0520:oficialB preservado com alerta;fonte favoreceC,entrada trocantérica lateral.",
+    "0935:sem oficial;provavelA sustentada entre as opções,com ressalva do limite2cm e necessidade de avaliar estabilidade.",
+    "1133:hipercrescimento médio0,9cm não garante compensar3cm;distinguir corte inicial<2cm e teto de aceitação2–3cm.",
+    "1116:56% entre as complicações, não de todas as336fraturas;taxa geral28%.",
+    "1120:contradição interna do tipoV sem fratura versus indicação com cortical posterior rompida;fonte primária/versão classificatória necessária.",
+    "0313:sem reparo cirúrgico não significa sem qualquer tratamento;LCM pode evoluir bem com órtese após redução óssea,mas há exceções."
+  ],
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 495,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 416,
+      "pendente-inspecao-imagem": 64,
+      "revisada": 1550
+    }
+  },
+  "proximoLote": 191,
+  "publicacaoAnterior": {
+    "pr": 580,
+    "head": "52eb495ae7110bb9d97ef4c8055a81f02a0c01f4",
+    "merge": "5d35d21810bbcfdd03671e8ebfa10a1c9d098e9d",
+    "ci": 40487251945,
+    "pages": 40487544269,
+    "job": 122134123717,
+    "producao": "90avulsos(9novos+81preservados),4resumos e letras integrais"
+  },
+  "publicacao": "Validação local desta entrega;CI do head,merge,guarda/deploy e avulsos de produção devem ser provados noPR."
+}
