@@ -1,0 +1,26 @@
+{
+  "baseIntegrada": "791eae3c0c02d59afaadb964dd8121f35343b1f2",
+  "prsPreservados": [
+    576,
+    577
+  ],
+  "validacao": "Fixtures,acervo,npm test,build,replay4/4 e UI4casos390/1440 com5figuras aprovados após integração. Nenhum comentário extra ou fonte clínica alterada.",
+  "logs": {
+    "checks178-integracao.log": "4c5233dc81efef0584edc1072a35962e89ff4ca72f713ae6547d35458749517b",
+    "ui178-integracao.log": "f6f5d854ec4c6586604ad0d4e32d767f562169a5ae0ef6a00e191c3e10e05506",
+    "remotos179-prs-commits.json": "74985fe9e4ababc7ad01a33de5215f32c213e040ca04f3803189ad1dad960357"
+  },
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 615,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 388,
+      "pendente-inspecao-imagem": 64,
+      "revisada": 1458
+    }
+  }
+}
