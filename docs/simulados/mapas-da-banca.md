@@ -3926,3 +3926,18 @@ escoliose paralítica abaixo de 10 anos, avaliação inicial, fratura da faceta 
 **Divergências.** Nenhuma frontal; SCIWORA (localização e tratamento) e placa terminal (sexo e segmento) vão além do capítulo.
 
 **Aproveitamento:** `pediatria-1255` a `pediatria-1269`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.661 caracteres.
+
+## Colo do rádio e olécrano na criança, Rockwood and Wilkins 10ª ed., cap. 11
+
+**Recorte.** Busca por colo e cabeça do rádio, rádio proximal, olécrano, coronoide, PATTERSON, JUDET e METAIZEAU em Ortopedia pediátrica, todas as provas.
+A banca cobra o mecanismo (TARO 2019 `pediatria-0640`), a técnica de PATTERSON (TARO 2008 `0748`), o tratamento por angulação (SBOT-SP `0926`, TARO 2006 `0815`),
+a perda da pronação (TEOT 2024 `0564`, TARO 2010 `0841`), os equivalentes de MONTEGGIA (TARO 2017 `0611`, TARO 2012 `0659`) e a apófise do olécrano (TEPOP 2024 `0954`).
+A luxação congênita da cabeça do rádio (várias provas) fica para outro capítulo.
+
+**Forma.** Enunciados curtos; uma de imagem (SBOT-SP `0934`, nome da técnica de redução).
+
+**Lacunas com cara de prova (projeção).** Epidemiologia, CHAMBERS, METAIZEAU, nervo interósseo posterior, prognóstico, TRASH, olécrano em flexão, ossificação, REGAN e MORREY.
+
+**Divergências.** TEPOP 2024 (`0954`): "e" no gabarito; o capítulo diz "ou".
+
+**Aproveitamento:** `pediatria-1270` a `pediatria-1284`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.700 caracteres.
