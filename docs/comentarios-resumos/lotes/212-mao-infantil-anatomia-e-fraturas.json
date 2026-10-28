@@ -1,0 +1,325 @@
+{
+  "pediatria-1345": {
+    "questaoSha256": "cbc484125209e5437ad40a70e9204e92887e72ffee42440c1bb002a00d7884f7",
+    "comentarioAnteriorSha256": "7d113ec6ea3221f5c24262b8fc279c27c07a010005794d12b0eac384bf9f8b13",
+    "comentario": {
+      "conceito": "Na mão da criança, a **fise é mais vulnerável que o ligamento**. Uma força que no adulto poderia romper um ligamento pode produzir uma lesão óssea fisária no imaturo. A alternativa B associa esse princípio à anatomia dos colaterais metacarpofalângicos e aos padrões frequentes de fratura (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nO resumo aponta **esmagamento da falange distal e Salter-Harris II da proximal** como os padrões mais comuns, com pico de incidência aos 13 anos. O esmagamento de um dedo pequeno numa porta é um cenário conhecido, mas não autoriza deslocar todo o pico epidemiológico para os 5 anos. A fonte também informa participação da mão em até 25% das fraturas da criança, sem fornecer aqui uma distribuição detalhada de todas as séries.\n\nA localização dos colaterais explica outro ponto. Nas **metacarpofalângicas, eles ligam epífise a epífise**, favorecendo avulsão epifisária articular do tipo Salter-Harris III. Nas interfalângicas, cruzam a fise e formam uma caixa de contenção com a placa volar; a fonte descreve Salter-Harris III como rara nessa região. Não são arranjos anatômicos intercambiáveis.\n\nÉ preciso ainda separar **superfície mais lesada de articulação mais luxada**: a IFP é a superfície mais lesada, mas a metacarpofalângica do polegar é apontada como a mais luxada na mão imatura. **Na prova: ** fise fraca + colaterais epifisários da MCF + padrões distal/proximal = alternativa B. As seções de anatomia e de fundamentos do resumo sustentam essa associação.\n\n**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0583`), que perguntou o tipo da fratura da falange proximal por avulsão dos colaterais metacarpofalângicos (SALTER-HARRIS III). Depois, faça a oficial.",
+      "correta": "Alternativa B. Reúne os dois padrões de fratura destacados no resumo e o trajeto epifisário dos colaterais da MCF, que explica a frequência de avulsões Salter-Harris III. A resposta depende de anatomia e epidemiologia compatíveis, não apenas de reconhecer o nome de uma classificação.",
+      "incorretas": {
+        "A": "A fonte apresenta a fise como elo mais fraco: ela pode falhar antes de a articulação luxar ou o ligamento romper. Portanto, não sustenta inverter essa relação e colocar luxações e lesões ligamentares acima das fraturas fisárias como padrão da mão imatura.",
+        "C": "O resumo informa pico aos 13 anos. O esmagamento em porta descreve um mecanismo importante na criança pequena, mas confundir esse cenário com a idade do pico geral altera o dado epidemiológico solicitado.",
+        "D": "Confunde lesão de superfície articular com luxação. A IFP é descrita como a superfície mais lesada; a articulação mais luxada da mão imatura, no resumo, é a MCF do polegar. A frequência de lesões periarticulares não é a mesma medida que frequência de luxações."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação; Como ler este capítulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Anatomia, exame e remodelação",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "anatomia-exame-e-remodelacao-bc27de74",
+          "como-ler-este-capitulo-d65b64a6",
+          "como-ler-este-capitulo-3586d390"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "1aa5fefdd19961fff1687b281758197c12b478ec209e30afce78fc290531a503"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1346": {
+    "questaoSha256": "9cdd37e0c773143d7ef30c14eeb4840fab38bc89da0ed43bcb5c66f58daa6315",
+    "comentarioAnteriorSha256": "2711f28f13fad77b6fb21cd1e71e336b1e371e7b0648d4e9b89f591c931c01b8",
+    "comentario": {
+      "conceito": "A ossificação carpal segue uma **cronologia própria da criança**, com capitato entre os centros iniciais e pisiforme por último. O resumo descreve o **escafoide no quinto ano, ossificando de distal para proximal**, conjunto apresentado na alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 8, anatomia e ossificação).\n\nUma radiografia infantil mostra somente as partes que já ossificaram. Não visualizar o contorno de todos os ossos do adulto não comprova ausência anatômica, e um espaço aparente não deve ser interpretado sem idade e contexto clínico. O resumo chama atenção para um **falso Terry Thomas** durante a ossificação distal–proximal do escafoide; isso não dispensa investigar um trauma quando há dor e sinais associados.\n\nA sequência fornecida coloca o **capitato até 1 ano e o hamato por volta de 4 meses**; depois, piramidal no segundo ano, semilunar no quarto, escafoide no quinto, trapézio e trapezoide também no quinto. O pisiforme aparece em 9–10 anos. O fechamento do resumo explicita o capitato como primeiro. Esses marcos não devem ser trocados por cronologia de maturação completa ou por regra de adulto.\n\n**Na prova: ** escafoide não é o primeiro e sua ossificação não progride do proximal para o distal; pisiforme é tardio. A seção de ossificação, com o fechamento do capítulo, permite verificar todas as partes da alternativa D sem usar referências primárias não consultadas.\n\n**Por que esta questão foi criada.** É gêmea da prova de ossificação do carpo (`mao-0251`, primeiros centros: hamato e capitato) e da questão sobre a idade do escafoide (`mao-0300`, 4 a 5 anos). Depois, faça as oficiais.",
+      "correta": "Alternativa D. Combina o centro precoce do capitato, a posição do escafoide no quinto ano e sua direção distal–proximal, além do pisiforme em 9–10 anos. São as relações descritas no corpo e no fechamento do resumo; elas ajudam a interpretar o aspecto normal do carpo imaturo.",
+      "incorretas": {
+        "A": "O escafoide surge mais tarde, por volta do quinto ano. O resumo aponta o capitato como primeiro centro, e situa capitato e hamato antes dos demais ossos oferecidos nas questões de cronologia.",
+        "B": "O pisiforme é justamente o núcleo tardio da sequência, por volta de 9–10 anos. Atribuir-lhe ossificação no primeiro ano troca o último grupo pelo grupo inicial de capitato e hamato.",
+        "C": "Inverte a direção do escafoide. A fonte descreve progressão distal para proximal, e relaciona essa maturação à aparência radiográfica do espaço escafossemilunar no imaturo. Essa particularidade não deve ser substituída pelo sentido oposto."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação; Fechamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Anatomia, exame e remodelação",
+          "Fechamento"
+        ],
+        "blocos": [
+          "anatomia-exame-e-remodelacao-06a7a2e4",
+          "fechamento-860cfc26"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "069278966ff24a8ed346abab7fc93a999b64a38e8b2524a4a22fbc9b4f8a2e0e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1347": {
+    "questaoSha256": "e28aa017373ae0a88b2826b69d057323601392fa0da9d4561daac1cb28afcc72",
+    "comentarioAnteriorSha256": "a5fd2db63b46f16a48524ece61ec93b72e1cfb2f7addf72854f43894528d62de",
+    "comentario": {
+      "conceito": "Uma radiografia bem alinhada não dispensa o exame de **rotação dos dedos**. A rotação quase não remodela, e o cruzamento durante a flexão pode comprometer a função mesmo quando o desvio é pouco evidente nas projeções habituais. A alternativa A descreve essa preocupação e o exame pela tenodese (Rockwood crianças, 10ª edição, capítulo 8; Rockwood adultos, 10ª edição, capítulo 45, exame da mão).\n\nO resumo pediátrico separa os planos de remodelação: ela é maior no paciente jovem, perto da fise e no plano de movimento. O plano coronal remodela menos; rotação não deve ser aceita com a expectativa de desaparecer, com a ressalva da articulação do polegar que permite rotação. Não é uma licença para aceitar cruzamento de dedos nas falanges.\n\nO resumo de mão descreve observar perfis ungueais, flexão e extensão ativas e convergência dos dedos, comparando com o lado oposto. A mobilização passiva do punho pelo efeito de tenodese ajuda a observar o alinhamento quando o movimento ativo é limitado. Dor e colaboração da criança precisam ser consideradas, sem transformar uma observação isolada em diagnóstico completo.\n\nO tempo também importa: o resumo pediátrico considera a lesão estável em cerca de 2 semanas e diz que atraso de 7–10 dias pode exigir osteoclasia. A sensibilidade é descrita como confiável aos 5–7 anos, e o teste do enrugamento ajuda na avaliação. **Na prova: ** não confiar em remodelação da rotação, em redução fácil após atraso prolongado ou em um exame sensitivo adulto aplicado sem ressalvas à criança pequena.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Rotação, tenodese e o teste do enrugamento são o exame que a prova cobra na mão da criança.",
+      "correta": "Alternativa A. A rotação tem pouca capacidade de remodelação e precisa ser procurada na função. Flexão ativa e tenodese permitem observar convergência e cruzamento; a exceção citada para a CMC do polegar decorre de sua mobilidade própria, e não de uma tolerância geral à má rotação digital.",
+      "incorretas": {
+        "B": "O resumo dá vantagem à remodelação no plano do movimento e descreve a coronal como metade ou menos. A alternativa inverte a relação entre coronal e sagital, apagando a importância da orientação do desvio.",
+        "C": "O atraso não é indiferente. O resumo já aponta necessidade de osteoclasia após 7–10 dias em certas apresentações e estabilidade em cerca de 2 semanas. Isso não sustenta prometer redução fechada simples e sem osteoclasia após 3 semanas.",
+        "D": "A fonte situa a avaliação sensitiva confiável em 5–7 anos e menciona o teste do enrugamento. Portanto, não fundamenta tratar a discriminação de dois pontos como universalmente confiável desde os 2 anos; idade e cooperação mudam a interpretação do exame."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação.",
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: O que vale para a mão inteira."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Anatomia, exame e remodelação"
+        ],
+        "blocos": [
+          "anatomia-exame-e-remodelacao-06a7a2e4"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+      },
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "O que vale para a mão inteira"
+        ],
+        "blocos": [
+          "o-que-vale-para-a-mao-inteira-efc0ddd3"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "48693a3da7e939123cb7db93a4da3561ae796271421913078ac8d4a66211b86e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1348": {
+    "questaoSha256": "5a12a495748e8b79c93061edc47553b6d446de7c61fc7bb89cc16e1ee5e71aa7",
+    "comentarioAnteriorSha256": "bfa13799b81cb1f9c86c22536f0b864ce3e075d437bed2018f5ec9e0375191e4",
+    "comentario": {
+      "conceito": "Falange distal fletida, unha proximal por cima da prega e sangramento na base sugerem uma **fratura de Seymour**, uma lesão fisária **exposta**. A deformidade pode lembrar um dedo em martelo, mas o leito ungueal lesionado comunica-se com o foco e pode bloquear a redução. É a situação da alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 8, falanges).\n\nO resumo descreve o padrão Salter-Harris I ou II da distal na criança pequena. O extensor terminal insere-se na epífise, enquanto o flexor profundo chega à metadiáfise; o fragmento distal pode ficar fletido pelo flexor. A anatomia não corresponde à inversão proposta na alternativa B.\n\nA conduta descrita combina **retirar a unha, limpar e desbridar, retirar o leito interposto, reduzir, estabilizar com fio e reparar o leito**, além de antibiótico no roteiro pediátrico. Corrigir apenas o ângulo ou aplicar uma órtese não trata a ferida nem remove o tecido que impede a redução.\n\nO tratamento precoce e completo importa: o resumo associa o atendimento tardio a mais infecção, e seu fechamento destaca 24 horas para Seymour. Isso explica a preferência por abordar a lesão nas primeiras 24 horas, sem prometer ausência de risco em cada paciente. **Na prova: ** Seymour é fratura aberta fisária com lesão ungueal; não confundir com um martelo tendíneo fechado.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2006 (`pediatria-0823`), sem gabarito, que afirmou que o descolamento epifisário da falange distal provoca flexão da interfalângica distal como no dedo em martelo; o capítulo sustenta a afirmação. Depois, faça a oficial.",
+      "correta": "Alternativa C. O caso combina os sinais ungueais e a deformidade da Seymour. O leito pode interpor-se, e o tratamento precisa abordar exposição, tecido interposto, redução, estabilidade e reparo ungueal. A fonte ressalta o atendimento precoce, em vez de apenas imobilizar uma deformidade aparente.",
+      "incorretas": {
+        "A": "A unha deslocada e o sangramento na prega apontam para a lesão fisária exposta, que não se resolve como um martelo tendíneo fechado. Uma órtese isolada deixa de tratar a ferida e a possível interposição do leito.",
+        "B": "As inserções foram trocadas. O resumo prende o extensor terminal à epífise e o flexor profundo à metadiáfise da distal; essa diferença explica a flexão do fragmento. Não é o flexor profundo que se insere na epífise nesse esquema.",
+        "D": "O resumo mostra pior risco infeccioso com atendimento tardio e tratamento incompleto. Portanto, tempo e qualidade da abordagem importam; declarar independência desses fatores apaga a consequência clínica de reconhecer e tratar cedo uma fratura exposta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Falanges; Anatomia, exame e remodelação; Fechamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Falanges",
+          "Anatomia, exame e remodelação",
+          "Fechamento"
+        ],
+        "blocos": [
+          "falanges-709a9b01",
+          "anatomia-exame-e-remodelacao-bc27de74",
+          "fechamento-860cfc26"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "ef2a626980c2a6f1933f7d43d56e3fa12bb20f861d9b40ace7386065c98e7a47"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1350": {
+    "questaoSha256": "f72a74f5b1604aac6fe8a6b60274ea0be436b492adcab1858442d5c59a68881e",
+    "comentarioAnteriorSha256": "09c6619dd0ea9e88b06ea4923bf085b4e662f4180a09fa18ed3b8b6286f5e5c3",
+    "comentario": {
+      "conceito": "Uma fratura do **colo da falange** pode passar despercebida no AP e deixar um bloqueio mecânico tardio da flexão. A cabeça roda em **extensão** e ocupa a **fossa subcondilar**, que deveria permitir o movimento. A alternativa C associa esse mecanismo à necessidade de perfil verdadeiro e aos cuidados com a redução (Rockwood crianças, 10ª edição, capítulo 8, falanges; Rockwood adultos, 10ª edição, capítulo 45, anatomia da IFP).\n\nA cabeça mantém relação com os colaterais da interfalângica, que se originam na face lateral da cabeça da falange proximal e chegam à base da média. Esse vínculo anatômico ajuda a compreender o fragmento articular preso aos tecidos ligamentares, enquanto o resumo pediátrico descreve sua rotação em extensão e o desaparecimento da fossa.\n\nA distância da fratura do colo em relação à fise reduz a expectativa de remodelação. O resumo favorece **redução fechada e fios**, evitando a abertura quando possível pelo risco de **necrose**. Não se deve aplicar a uma fratura do colo a boa remodelação de qualquer lesão próxima à fise, como se fossem o mesmo problema.\n\nHá uma ressalva: o resumo admite observação prolongada em crianças muito pequenas, em situações selecionadas. Isso não torna a redução aberta a primeira escolha nem permite afirmar que toda fratura remodelará sozinha. **Na prova: ** perfil verdadeiro, rotação em extensão, bloqueio da flexão e proteção da vascularização são os pontos decisivos.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O bloqueio da flexão e a necessidade do perfil verdadeiro são o que a prova cobra.",
+      "correta": "Alternativa C. A rotação em extensão da cabeça apaga a fossa subcondilar e pode bloquear a flexão. O colo fica longe da fise e remodela pouco; por isso, a fonte exige diagnóstico pelo perfil verdadeiro e prefere reduzir e fixar de modo fechado quando viável, protegendo a vascularização.",
+      "incorretas": {
+        "A": "A direção e o efeito estão invertidos. O resumo descreve a cabeça rodada em extensão, e não em flexão, com perda do espaço subcondilar que pode bloquear o movimento. O bloqueio é uma consequência central do caso apresentado.",
+        "B": "O colo é descrito como longe da fise, com pouca capacidade de remodelação. A possibilidade de observar certos pacientes muito pequenos não sustenta prometer remodelação em todos nem dispensar diagnóstico e tratamento por regra.",
+        "D": "A fonte prefere redução fechada e fios, e orienta evitar abertura pelo risco de necrose. A cirurgia aberta pode ser necessária conforme a situação, mas não é a primeira escolha universal sugerida pela alternativa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Falanges.",
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Interfalângica proximal: luxações e banda central."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Falanges"
+        ],
+        "blocos": [
+          "falanges-2573c6e7"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "6147404e778d0e9e4210667b13d99eabbc05567936bd157ed8cf5f8776feeb3d"
+      },
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Interfalângica proximal: luxações e banda central"
+        ],
+        "blocos": [
+          "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "3834c65c2f94d7e755930c1cd033b29674c67963f5ab05307e9c915ddee1cf3d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1351": {
+    "questaoSha256": "07a25d7cc9b5cc110840c3457661a165c73f3431934093908298598b6334ff55",
+    "comentarioAnteriorSha256": "82985c7dfd3f42a2d07ed3f61afb665623cc9f37b4e66db7d5067c21395881bb",
+    "comentario": {
+      "conceito": "A fratura **extra-oitava** é a **Salter-Harris II da falange proximal do mínimo**, com desvio ulnar, alternativa A. Ela precisa ser distinguida da deformidade da diáfise, que tem **ápice volar** pela ação dos intrínsecos. A questão reúne dois padrões do mesmo dedo, mas em níveis diferentes (Rockwood and Wilkins, 10ª edição, capítulo 8, falanges).\n\nNa extra-oitava, o resumo descreve a redução com a **metacarpofalângica fletida**. Na diáfise, a ação muscular explica o ápice volar. Saber onde está a fratura evita transferir uma posição de redução ou uma expectativa de remodelação para outro segmento sem avaliar o traço.\n\nA tolerância angular varia com a idade: o capítulo aceita 20–30° abaixo dos 10 anos e 10–20° acima dessa idade no contexto diafisário descrito. A **rotação não é aceita**; uma radiografia aparentemente boa não substitui observar a cascata e o cruzamento durante o movimento.\n\nSe a lesão for irredutível, periósteo ou tendão podem estar interpostos, e a fonte prevê redução aberta. Aumentar repetidamente a tração não remove por si um obstáculo tecidual. **Na prova: ** extra-oitava = mínimo, Salter-Harris II, desvio ulnar; diáfise = ápice volar; rotação exige exame próprio.\n\n**Por que esta questão foi criada.** É uma questão de projeção, ligada à USP-SP 2026 (`mao-1534`), que perguntou a angulação da diáfise da falange proximal (volar, pela musculatura interóssea). Depois, faça a oficial.",
+      "correta": "Alternativa A. Define corretamente a extra-oitava e sua posição de redução, e acrescenta o ápice volar da fratura diafisária. A associação é coerente com a seção de falanges, desde que se mantenha a distinção entre base fisária e diáfise.",
+      "incorretas": {
+        "B": "O resumo admite alguma angulação sagital na criança menor, com limites dependentes da idade e do padrão. Afirmar tolerância zero abaixo dos 10 anos contraria os 20–30° apresentados para o contexto diafisário do capítulo.",
+        "C": "Rotação e angulação não são a mesma variável. A fonte não aceita má rotação das falanges, e o exame funcional pode revelar cruzamento mesmo quando as projeções radiográficas parecem alinhadas. A boa aparência da radiografia não autoriza ignorá-la.",
+        "D": "Uma lesão irredutível pode ter periósteo ou tendão interposto. O resumo indica abertura nesse cenário; mais tração não é uma solução garantida para uma estrutura que continua fisicamente entre os fragmentos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Falanges; Anatomia, exame e remodelação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Falanges",
+          "Anatomia, exame e remodelação"
+        ],
+        "blocos": [
+          "falanges-2573c6e7",
+          "anatomia-exame-e-remodelacao-06a7a2e4"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "ff8d9b368e36718d12d40c00ab41fa4c570d6bffc06485a6d01169bb7c1ca425"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1353": {
+    "questaoSha256": "d488019e3a81f81df7811c0afcaf3202535a110c3598409e100e85da1bb5b478",
+    "comentarioAnteriorSha256": "c9a18fa128cb17edb914750949e5202c4de3e10d7a0e7db66608bc72a5eb11bb",
+    "comentario": {
+      "conceito": "O **colo é o local mais frequente de fratura metacarpiana na criança**, com predomínio de mínimo e anular. A alternativa B acrescenta o critério de tolerância angular do capítulo e os sinais funcionais que levam a reduzir a deformidade (Rockwood and Wilkins, 10ª edição, capítulo 8, polegar e metacarpais).\n\nA compensação depende da **carpometacarpal**, não apenas da posição da cabeça. O resumo descreve aceitar 10–30° além da mobilidade da CMC correspondente e apresenta tolerância menor nos raios radiais: indicador e médio 10–20°, anular e mínimo 30–40°. São os números pediátricos desse capítulo; não devem ser substituídos automaticamente por um limite do adulto.\n\nO ângulo isolado não decide tudo. **Déficit de extensão, rotação e cabeça proeminente na palma** exigem atenção e podem indicar redução. Menos de 10° de rotação já podem cruzar os dedos, no resumo; por isso, examinar o alinhamento funcional é indispensável.\n\nA manobra de **Jahss** é a técnica de redução citada para esse contexto, com flexão a 90°. O objetivo é corrigir a posição da cabeça que prejudica a mecânica digital, em vez de perseguir uma radiografia perfeita sem avaliar a mão. **Na prova: ** colo frequente, CMC ulnar mais compensadora e nenhuma licença para aceitar rotação com cruzamento.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2019 (`pediatria-0644`), que perguntou onde a fratura do metacarpal da criança mais ocorre (colo). Depois, faça a oficial.",
+      "correta": "Alternativa B. Reúne a localização frequente, o critério angular do capítulo e os sinais que motivam redução. A avaliação da rotação e da extensão impede usar a tolerância angular como autorização para aceitar qualquer deformidade do quinto metacarpo.",
+      "incorretas": {
+        "A": "O resumo afirma o contrário: o colo é o local mais frequente, especialmente nos raios ulnares. A pergunta não se refere à raridade de outra localização, como cabeça ou base, e não permite inverter essa distribuição.",
+        "C": "O capítulo apresenta tolerância menor em indicador e médio e maior em anular e mínimo. A alternativa inverte os grupos; a mobilidade compensadora está nasCMC dos raios ulnares, conforme o raciocínio da fonte.",
+        "D": "Rotação não é tolerada indiscriminadamente. O resumo adverte que menos de 10° podem causar cruzamento e inclui a rotação entre os motivos de redução. Ela precisa ser avaliada separadamente do ângulo de ápice dorsal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Polegar e metacarpais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Polegar e metacarpais"
+        ],
+        "blocos": [
+          "polegar-e-metacarpais-74e087f7"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "b1812e1868792b889d94d93306ed1afe4596537276f62894d770fbdd66fcbc91"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1354": {
+    "questaoSha256": "9362a75fe59b1374deaf58b2829e8a4e42e7b2d1e93adf51ae2d7ce5c0929067",
+    "comentarioAnteriorSha256": "273e8ca291d37516550a6036725f8511f9b97072615c65eb1ed1c33736e4989b",
+    "comentario": {
+      "conceito": "A classificação da base do metacarpal do polegar infantil separa **fratura metafisária de lesão fisária e articular**. No resumo, o equivalente ao Bennett do adulto é o **tipo D**, com Salter-Harris III ou IV, e não o tipo A. A alternativa C reúne corretamente os padrões do capítulo (Rockwood and Wilkins, 10ª edição, capítulo 8, base do polegar).\n\nO **tipo A** é metafisário, e a fonte descreve tolerância de 20–30°. O **tipo B** é Salter-Harris II com fragmento medial, sendo o padrão habitual. O **tipo C** é o inverso e pode exigir redução aberta por periósteo interposto. Aqui, as letras A/B/C/D são nomes da classificação anatômica, e não necessariamente a letra da alternativa escolhida.\n\nO **tipo D** entra na articulação, correspondendo a Salter-Harris III ou IV. O resumo o chama de Bennett da criança e descreve fixação com fios através da CMC. Assim, não é coerente tratá-lo como equivalente a uma fratura metafisária extra-articular que teria a mesma conduta de qualquer outro tipo.\n\nA interposição periosteal do padrão inverso também tem consequência mecânica: não basta insistir na manipulação se um tecido impede a redução. **Na prova: ** classificar primeiro o traço; tipo A é metafisário, tipo B tem fragmento medial, tipo C é o inverso e tipo D é o articular equivalente ao Bennett. A resposta registrada desta questão é a alternativa C.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2026 (`pediatria-0522`), que perguntou qual tipo da classificação de KOZIN corresponde ao BENNETT do adulto. O gabarito oficial marcou o tipo A; na classificação do capítulo, o tipo A é metafisário e o D é o que mais se parece com o BENNETT. Depois, faça a oficial.",
+      "correta": "Alternativa C. Descreve os quatro padrões, com o componente metafisário do tipo A, o fragmento medial habitual do B, a interposição no inverso C e a natureza articular do D. A fonte fornece 20–30° para o tipo A; a redação “menos de 20–30°”da opção é compatível com ficar abaixo dessa tolerância, sem criar um novo limite numérico.",
+      "incorretas": {
+        "A": "Troca a fratura metafisária do tipo A pelo equivalente articular ao Bennett. No esquema do resumo, essa equivalência é do tipo D, que corresponde a Salter-Harris III ou IV; a localização do traço é o que distingue as categorias.",
+        "B": "O tipo B tem fragmento medial, e não lateral, e é o padrão habitual da Salter-Harris II. A alternativa erra tanto o lado do fragmento quanto sua frequência relativa dentro da classificação descrita.",
+        "D": "O resumo descreve o tipo D como lesão articular equivalente ao Bennett e prevê fios através da CMC. Afirmar que se resolve bem apenas com gesso apaga a necessidade de reduzir e estabilizar esse padrão apresentada na fonte."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Polegar e metacarpais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Polegar e metacarpais"
+        ],
+        "blocos": [
+          "polegar-e-metacarpais-4fd4e5e3"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "3e3e62b84c839325e42e5c4d217c221984dfe4d8e0b4407e6fffb2ec8658056b"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

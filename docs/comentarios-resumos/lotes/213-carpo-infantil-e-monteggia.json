@@ -1,0 +1,280 @@
+{
+  "pediatria-1355": {
+    "questaoSha256": "8bb0a3f9a73aaed853e867dfafd7da84dd99f1fc75874f3e78d4c83f84cdcef3",
+    "comentarioAnteriorSha256": "db8909b15ca4c741e3548dfa99fb9489bbb5e2efc351cfddec0febcbc5525118",
+    "comentario": {
+      "conceito": "Radiografia inicial normal não exclui **fratura do escafoide na criança**. Dor na tabaqueira, no tubérculo do escafoide e à compressão axial do polegar compõe o conjunto sensível descrito no resumo; a conduta é proteger e reavaliar, ou investigar com ressonância, como apresenta a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 8, carpo).\n\nEsses achados aumentam a suspeita, mas não transformam cada exame positivo em diagnóstico definitivo. O resumo recomenda **imobilização e revisão em 2 semanas ou ressonância** quando a radiografia está normal. Essa estratégia evita confundir ausência de traço visível naquele momento com ausência de lesão.\n\nA distribuição por localização também é pediátrica: o **terço distal é tradicionalmente o mais comum**, embora a cintura venha ganhando frequência. O polo proximal é raro e preocupa por pseudartrose e necrose; não deve ser escolhido como o local mais frequente apenas por ser o de prognóstico mais difícil.\n\nO capítulo faz ainda uma distinção importante: **escafoide bipartido unilateral deve levantar a interpretação de pseudartrose**, em vez de ser aceito automaticamente como variação congênita. **Na prova: ** suspeita clínica com radiografia normal pede proteção e seguimento; localização mais comum e local de maior risco são perguntas diferentes. A seção Carpo reúne exame, imagem e localização.\n\n**Por que esta questão foi criada.** É gêmea da PUC-SP 2020 (`mao-1092`), que perguntou a localização mais comum da fratura do escafoide na criança (distal). Depois, faça a oficial.",
+      "correta": "Alternativa A. Associa os três achados clínicos ao manejo da suspeita radiograficamente oculta e à distribuição pediátrica das fraturas. A sensibilidade do conjunto justifica manter a investigação; a predominância tradicional distal não elimina o crescimento das fraturas da cintura.",
+      "incorretas": {
+        "B": "A fonte descreve expressamente imobilizar e reavaliar ou usar ressonância diante de suspeita com radiografia normal. Se a radiografia afastasse a lesão por si, essa conduta não seria necessária. O exame clínico e o seguimento continuam importantes.",
+        "C": "O polo proximal é raro na criança segundo o resumo, embora tenha maior preocupação com pseudartrose e necrose. A alternativa confunde gravidade potencial com frequência; o padrão tradicionalmente mais comum é distal.",
+        "D": "O resumo orienta interpretar o escafoide bipartido unilateral como pseudartrose, em vez de presumir variante congênita. Aceitar a imagem sem investigação pode ocultar uma lesão antiga; o lado e o contexto precisam integrar a avaliação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Carpo"
+        ],
+        "blocos": [
+          "carpo-771401f1"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "f199b305fd7fb202dd748c50e598bd5dcb030e9f975049e4acb7f320549c1a73"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1357": {
+    "questaoSha256": "c65c2d439821b0c0af4a6fbbfbe5141345058692bb66c69ffed47fa50a546ef5",
+    "comentarioAnteriorSha256": "959d88a790dcb9aec563e472b177a650873775e3f2f980eae5751d846663c3b9",
+    "comentario": {
+      "conceito": "A fratura do **capitato** infantil pode ocorrer por **dorsiflexão**, integrar uma lesão de **arco maior escafocapitato** e deixar o polo proximal rodado até 180°. Se desviada, o resumo indica redução aberta. Essa combinação corresponde à alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 8, carpo).\n\nA rotação do fragmento altera a orientação da superfície proximal; por isso, não basta reconhecer um traço sem avaliar a posição dos fragmentos e as lesões associadas. O capítulo trata a combinação escafocapitato como um padrão de arco maior, em vez de uma fratura isolada que possa ser analisada sem o restante do carpo.\n\nOutros ossos exigem incidências próprias. Para o **gancho do hamato**, a fonte menciona túnel do carpo ou tomografia, e cita sintomas em esportes como beisebol e golfe. Isso impede assumir que toda lesão estará evidente na radiografia simples habitual. A excisão é uma opção citada quando sintomática, sem transformar todo achado incidental em indicação.\n\nNa **avulsão dorsal do piramidal**, a incidência destacada é a **oblíqua em pronação**. **Na prova: ** capitato com dorsiflexão e possível rotação; hamato pode exigir investigação dirigida; piramidal dorsal com oblíqua pronada. A seção Carpo diferencia os padrões e evita trocar mecanismo por projeção radiográfica.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0562`), que perguntou em que posição do punho a fratura do capitato da criança ocorre mais frequentemente (extensão). Depois, faça a oficial.",
+      "correta": "Alternativa B. Reproduz o mecanismo em dorsiflexão, a associação escafocapitato e a possível rotação de 180° do polo proximal. O desvio importa na conduta: a fonte indica redução aberta nesse cenário, com avaliação do conjunto carpal.",
+      "incorretas": {
+        "A": "A fonte associa o capitato à dorsiflexão, e não à flexão. Trocar o sentido do movimento altera o mecanismo descrito para a lesão e sua possível associação de arco maior.",
+        "C": "O resumo prevê incidência de túnel e tomografia para o gancho do hamato. Isso não sustenta garantir visibilidade em toda radiografia simples; uma suspeita persistente pode exigir imagem dirigida ao gancho.",
+        "D": "A projeção indicada para a avulsão dorsal do piramidal é oblíqua em pronação. A alternativa a troca por supinação, que não é o posicionamento apresentado nessa passagem do capítulo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Carpo"
+        ],
+        "blocos": [
+          "carpo-0d67ee51"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "9d0cef96c215439fdd5a9c01de7e381b4abbb7c624db0c8a60b6838455ca7075"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1358": {
+    "questaoSha256": "62e50f344b75138471b042eae82d783f064afcb0f8123f36e02cabd0d9632ca8",
+    "comentarioAnteriorSha256": "6eadd276e984cf4e0b73f99e8bc44d0b74fc53647136103e00c818c5872f4ad8",
+    "comentario": {
+      "conceito": "Falange proximal **paralela ao metacarpo** e sesamoide dentro da articulação são sinais descritos de **luxação metacarpofalângica complexa**. A **placa volar interposta** e o encarceramento por partes moles explicam a dificuldade de redução; a alternativa C identifica esse conjunto (Rockwood crianças, 10ª edição, capítulo 8, luxações; Rockwood adultos, 10ª edição, capítulo 45, MCF).\n\nNa luxação simples, a relação entre a cabeça e a falange não apresenta o mesmo bloqueio. Na complexa, a cabeça se prende ao conjunto de tecidos, e a placa volar fica interposta. O resumo pediátrico descreve o flexor no lado ulnar e o lumbrical no radial, emoldurando a cabeça; o capítulo de mão detalha o laço responsável pelo encarceramento.\n\nPor isso, **tração longitudinal forte e hiperextensão devem ser evitadas**: não removem a placa interposta e podem piorar o bloqueio. O objetivo da redução aberta é liberar a estrutura que impede a congruência, com proteção das partes moles, em vez de vencer o obstáculo apenas aumentando a força.\n\nA fonte descreve vias volar ou dorsal e alerta que, na volar, os **nervos digitais podem estar imediatamente sob a pele**. **Na prova: ** paralelismo e sesamoide intra-articular apontam para complexidade; placa volar e laço explicam a irredutibilidade. A seção de luxações mostra por que uma manobra de força não equivale a tratar o mecanismo.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Placa volar interposta, sesamoide intra-articular e o risco aos nervos na via volar são clássicos.",
+      "correta": "Alternativa C. Reconhece a placa volar interposta, o encarceramento entre flexor e lumbrical e a necessidade habitual de redução aberta. A proximidade dos nervos na via volar muda o cuidado de exposição e reforça que a abordagem deve liberar o bloqueio de forma controlada.",
+      "incorretas": {
+        "A": "Os sinais descritos são de luxação complexa, e a fonte manda evitar tração e hiperextensão. Classificá-la como simples e aumentar a força ignora a placa interposta e o encarceramento que explicam o bloqueio.",
+        "B": "A interposição da placa volar é um dos elementos definidores do padrão complexo no resumo. Dizer que ela está íntegra e fora da articulação não explica o bloqueio nem corresponde ao conjunto de sinais apresentado.",
+        "D": "Tração longitudinal não é descrita como forma de afrouxar o encarceramento. O resumo a contraindica nesse contexto; é preciso liberar o tecido interposto e o laço, em vez de pressupor que puxar mais abrirá espaço para reduzir."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Luxações.",
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Luxações"
+        ],
+        "blocos": [
+          "luxacoes-b7410865"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "0f4fd29ebc8fe23d05a717368d83a5cf03ca2e30763a8c75d979c52bd9749c35"
+      },
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+        ],
+        "blocos": [
+          "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+          "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+          "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+          "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "3be5642a6817b4375ad085cee6f48ddf8f700c9366b70b8a70412d4f2b6ffa64"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1359": {
+    "questaoSha256": "526a7c45406c986655f7818d7f7607a4190a64b5e3bfe41bb8638b9e0bf01d5c",
+    "comentarioAnteriorSha256": "1d54450a07b6dc0b8b51ed87869eeef8e10a1a69469c35e4e5c3be7e397fb12d",
+    "comentario": {
+      "conceito": "Depois de reduzir uma luxação da **interfalângica proximal**, é a **estabilidade residual** que orienta proteção e mobilização. A alternativa A diferencia dorsal estável, dorsal instável e volar com lesão da banda central, conforme o resumo pediátrico (Rockwood and Wilkins, 10ª edição, capítulo 8, luxações).\n\nA **dorsal é a mais comum**. Se estiver estável, a fonte recomenda apenas 3–5 dias de proteção e depois esparadrapo ao dedo vizinho. Na instável, o bloqueio de extensão permite movimentar sem ultrapassar o arco que perde a redução, com liberação de 10° por semana e evolução por 4–5 semanas.\n\nA **luxação volar** tem outra prioridade: a banda central do extensor. O resumo orienta 4 semanas de órtese em extensão nesse padrão. Não é adequado usar a mesma posição e o mesmo tempo para todas as direções de luxação, pois as estruturas lesionadas diferem.\n\nO capítulo ressalta a **rigidez com imobilização prolongada**, razão para não manter uma dorsal estável parada por várias semanas. Também apresenta a lateral pura como redutível. **Na prova: ** direção e estabilidade vêm antes do protocolo; mobilização precoce protegida na dorsal estável não significa abandonar a proteção da banda central na volar.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A órtese de bloqueio de extensão e a banda central da luxação volar são cobradas.",
+      "correta": "Alternativa A. Reúne o período curto da dorsal estável, o bloqueio progressivo da instável e a proteção em extensão da volar. Esses protocolos respondem a problemas mecânicos diferentes: manter congruência sem rigidez e permitir cicatrização da banda central.",
+      "incorretas": {
+        "B": "O resumo recomenda 3–5 dias na dorsal estável e alerta para rigidez quando a imobilização se prolonga. Várias semanas paradas não são a regra para uma articulação reduzida e estável nesse cenário.",
+        "C": "A dorsal é a mais comum na fonte. A volar exige atenção à banda central e proteção em extensão; chamá-la simplesmente de mais frequente e de ótimo prognóstico apaga a lesão extensora que orienta seu tratamento.",
+        "D": "O resumo descreve a lateral pura como redutível. A alternativa a apresenta como habitualmente irredutível, sem corresponder ao padrão de estabilidade e direção usado pelo capítulo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Luxações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Luxações"
+        ],
+        "blocos": [
+          "luxacoes-03bcf78a"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "9867be66815a09a55105b76a9e9b4696fe958ee26cb668472d3fc2fbaed65f25"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1285": {
+    "questaoSha256": "41da3e441b0a94f6b4481aa70dddc95de06a32816ede3974a564e04ca305ded5",
+    "comentarioAnteriorSha256": "5d7ffbc5b7eebf5430f3e85b34060a977bab67547f74a9e93a0a57a3ad96f546",
+    "comentario": {
+      "conceito": "Na criança, o padrão **Bado I** combina cabeça radial **anterior** e ulna com **ápice anterior**, sendo o mais comum no resumo, com 70–75%; o **III é o segundo**. A alternativa B reúne direção, geometria e frequência da classificação pediátrica (Rockwood and Wilkins, 10ª edição, capítulo 12, classificação e mecanismos).\n\nBado usa a **direção da cabeça radial e o padrão ulnar**, não apenas o nível de uma fratura do rádio. O tipo II é posterior ou posterolateral com ápice posterior; o III é lateral, com varo ulnar; o IV acrescenta fratura do rádio à combinação com cabeça anterior. No IV, o rádio pode estar fraturado no mesmo nível ou distal à ulna.\n\nEssa leitura do conjunto evita dois erros: classificar pela ulna sem localizar a cabeça, e considerar a fratura dos dois ossos suficiente para dispensar exame do cotovelo. O resumo recomenda verificar a relação radiocapitelar e lembrar que a anatomia ulnar influencia o alinhamento da cabeça.\n\n**Na prova: ** os números 70–75% referem-se ao padrão pediátrico apresentado no capítulo. Não transferir para a criança a ênfase na Monteggia posterior de outras populações. Identificar direção e ulna primeiro, e usar frequência apenas como informação complementar.\n\n**Por que esta questão foi criada.** É uma questão de projeção, base para as oficiais sobre os tipos II, III e IV e sobre LETTS.",
+      "correta": "Alternativa B. Define corretamente o tipo I e sua predominância na criança, e coloca o III em segundo lugar. A resposta combina os critérios anatômicos da classificação com as proporções da população pediátrica descritas no resumo.",
+      "incorretas": {
+        "A": "O tipo II é posterior, mas não é o mais comum na criança: o resumo lhe atribui cerca de 6%, enquanto o I concentra 70–75%. A alternativa conserva a direção e erra a distribuição por idade.",
+        "C": "O nível da fratura radial não define sozinho Bado. A classificação parte da direção da cabeça e do padrão ulnar; a fratura do rádio participa especificamente da definição do IV, sem substituir os demais critérios.",
+        "D": "Cabeça lateral com varo da ulna descreve o tipo III. O IV tem cabeça anterior e fraturas de ulna e rádio. A alternativa troca a direção e o padrão ulnar de uma categoria por outra."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Diagnóstico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Classificação e mecanismos",
+          "Diagnóstico"
+        ],
+        "blocos": [
+          "classificacao-e-mecanismos-bf9aae38",
+          "diagnostico-7ee8a436"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "d8126e6634e53ca9ca2336eeb0b7a5f379586c49f10b9f6d322cb8a147673404"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1288": {
+    "questaoSha256": "f43f41e117a10a6b69e4382ca8fef7b4e2a5267818e52508fdf7c21ae46658ca",
+    "comentarioAnteriorSha256": "b819e15168de00255e98a8d54d71ca1feedd698caf886b4cb599a8724d9c2c72",
+    "comentario": {
+      "conceito": "Luxação **lateral** da cabeça radial, ulna proximal em **galho verde** e mecanismo em **varo** caracterizam a **Monteggia Bado III**, alternativa C. O resumo associa esse padrão a maior preocupação com interposição e com o interósseo posterior (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nO mecanismo descrito é a mão apoiada recebendo varo, o que deforma a ulna proximal e desloca a cabeça para lateral. A redução apresentada combina **extensão e valgo na ulna**, corrigindo a deformidade; o gesso recebe molde em valgo. Não é o protocolo de flexão do tipo I nem a mesma direção da luxação posterior do II.\n\nO exame deve procurar função do **interósseo posterior**, incluindo extensão das metacarpofalângicas e retropulsão do polegar. A seção de complicações também destaca lesões radiais nos tipos I e III; associação ao III não significa exclusividade. Se a cabeça não reduz depois de corrigir a ulna, o capítulo lembra o **ligamento anular interposto** como obstáculo possível.\n\nA fixação depende do traço ulnar, em vez de uma placa obrigatória para todo tipo III. O resumo trata plástica e galho verde por redução fechada, usa intramedular em certos traços curtos e placa nos longos ou cominutivos. **Na prova: ** lateral + varo + galho verde proximal = III; conferir nervo e eventual interposição antes de insistir na redução.\n\n**Por que esta questão foi criada.** É gêmea do SBOT-SP (`pediatria-0930`), que perguntou a lesão que causa o tipo III de BADO (varo, galho verde da ulna proximal); a oficial está sem gabarito, e o capítulo sustenta essa resposta. Depois, faça a oficial.",
+      "correta": "Alternativa C. Identifica o III, as associações de partes moles e a manobra em extensão com valgo. O capítulo dá destaque ao interósseo posterior nesse padrão e à interposição mais frequente, sem excluir lesões nervosas em outros tipos.",
+      "incorretas": {
+        "A": "A cabeça lateral e a ulna em varo definem o III, no resumo. O tipo I é anterior, com ápice anterior; citar seu protocolo não muda a categoria do caso apresentado.",
+        "B": "O III é o segundo padrão na criança, e não o mais raro. O resumo também destaca o risco para o interósseo posterior, contrariando a ideia de que quase nunca haveria lesão nervosa.",
+        "D": "O método de estabilização depende do traço. A fonte prevê redução fechada em deformidade plástica e galho verde, e não placa universal para toda lesão III. É preciso restaurar a ulna e testar a relação radiocapitelar, sem ignorar o padrão da fratura."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo; Complicações e MONTEGGIA crônico; Diagnóstico; Como ler este capítulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Classificação e mecanismos",
+          "Tratamento agudo",
+          "Complicações e MONTEGGIA crônico",
+          "Diagnóstico",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "classificacao-e-mecanismos-414cee4f",
+          "tratamento-agudo-35192e58",
+          "complicacoes-e-monteggia-cronico-15c4cbe6",
+          "diagnostico-7ee8a436",
+          "como-ler-este-capitulo-35fefbcf"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "1340dd1531d9f775c633624b4fa3f86e6bf79885200c076700382170971aadf1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1289": {
+    "questaoSha256": "a37071edfd706c836f96b11e17e0999db6117f425d4831f2fbb88c4d37b716da",
+    "comentarioAnteriorSha256": "d0796f2ed06e29451e2ca14ae3fbbf6ad672db9873c43351946459ecee2e2ee4",
+    "comentario": {
+      "conceito": "Na **Monteggia Bado IV**, a luxação da cabeça radial é **anterior** e existem fraturas da **ulna e do rádio**. O resumo a descreve como rara na criança, com a fratura radial no mesmo nível ou distal à ulnar; estabilizar o rádio transforma o padrão num tipo I. Esse é o conteúdo da alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA fratura adicional do rádio é o que separa IV de I, pois ambos compartilham a direção anterior da cabeça. Por isso, o tratamento do rádio não encerra a avaliação: depois de estabilizá-lo, a relação entre ulna e cabeça radial ainda precisa ser reconstruída e conferida como na lesão anterior.\n\nO resumo orienta examinar a **linha radiocapitelar**, que deve passar pelo centro do capítulo no perfil verdadeiro, e a deformidade ulnar. Em fratura dos dois ossos, recomenda radiografar o cotovelo. Encontrar um traço no rádio não é prova de que a articulação proximal esteja alinhada.\n\n**Na prova: ** IV = cabeça anterior + dois ossos, com rádio no mesmo nível ou distal. A conversão para I depois de estabilizar o rádio é uma forma de organizar o raciocínio de tratamento, não uma autorização para esquecer a cabeça ou o alinhamento ulnar.\n\n**Por que esta questão foi criada.** É gêmea do SBOT-SP (`pediatria-0929`), que perguntou a frequência e a relação entre os níveis das fraturas no tipo IV (raro, rádio no mesmo nível ou distal); a oficial está sem gabarito, e o capítulo sustenta essa resposta. Depois, faça a oficial.",
+      "correta": "Alternativa B. Descreve a raridade, a relação entre os níveis das fraturas e o efeito da estabilização radial no padrão da lesão. O componente anterior persistente precisa continuar sendo avaliado após tratar o segundo osso.",
+      "incorretas": {
+        "A": "O capítulo descreve o IV como raro, e situa a fratura radial no mesmo nível ou distal à da ulna. A alternativa inverte tanto a frequência quanto a relação anatômica apresentada na fonte.",
+        "C": "A luxação posterior pertence ao padrão II. No IV, a cabeça é anterior, com fratura de rádio e ulna; a presença dos dois traços não muda essa direção classificatória.",
+        "D": "O resumo exige avaliar a relação radiocapitelar e radiografar o cotovelo em fratura dos dois ossos. A fratura radial adicional pode distrair do deslocamento da cabeça, e não serve para excluí-lo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo; Diagnóstico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Classificação e mecanismos",
+          "Tratamento agudo",
+          "Diagnóstico"
+        ],
+        "blocos": [
+          "classificacao-e-mecanismos-bf9aae38",
+          "tratamento-agudo-35192e58",
+          "diagnostico-7ee8a436"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "752e6e3f0228cd8dcac6a11a435aa70a8bb6cfd894b344f565bb417b72c662dd"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

@@ -3,11 +3,11 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 279,
+  "pendente": 249,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 770,
+  "pendente-fonte": 782,
   "pendente-inspecao-imagem": 4,
-  "revisada": 1824
+  "revisada": 1842
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -96,10 +96,9 @@
    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 102,
-    "revisada": 138
+    "pendente-fonte": 103,
+    "revisada": 139
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -268,9 +267,9 @@
    "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
    "estados": {
     "duplicada": 1,
-    "pendente": 29,
-    "pendente-fonte": 7,
-    "revisada": 5
+    "pendente": 6,
+    "pendente-fonte": 16,
+    "revisada": 19
    }
   },
   "rockwoodcriancas10-11-colo-radio-olecrano": {
@@ -287,9 +286,9 @@
    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
    "estados": {
     "duplicada": 1,
-    "pendente": 42,
-    "pendente-fonte": 17,
-    "revisada": 81
+    "pendente": 29,
+    "pendente-fonte": 20,
+    "revisada": 91
    }
   },
   "rockwoodcriancas10-19-ombro-umero": {
@@ -472,9 +471,9 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 25,
-    "pendente-fonte": 17,
-    "revisada": 64
+    "pendente": 14,
+    "pendente-fonte": 20,
+    "revisada": 72
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -482,9 +481,9 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 25,
-    "pendente-fonte": 16,
-    "revisada": 60
+    "pendente": 14,
+    "pendente-fonte": 19,
+    "revisada": 68
    }
   }
  },
@@ -12693,7 +12692,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12708,7 +12707,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "def5ed7dd9ce4c21c72997ba7c4899de58c56c357d2aee8fe0269e8cbc78da0f"
+   "questaoSha256": "def5ed7dd9ce4c21c72997ba7c4899de58c56c357d2aee8fe0269e8cbc78da0f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Anatomia, exame e remodelação"
+      ],
+      "blocos": [
+       "anatomia-exame-e-remodelacao-06a7a2e4"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+     }
+    ],
+    "questaoSha256": "def5ed7dd9ce4c21c72997ba7c4899de58c56c357d2aee8fe0269e8cbc78da0f",
+    "comentarioSha256": "c1753414a22a2a2f9849e32b0f02c2b13154ca978e2312f3f9f098d3848d5a0c"
+   }
   },
   "mao-0259": {
    "tema": "mao",
@@ -12879,7 +12901,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12894,7 +12916,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "7109839cd9a38ae8c1d856b5b416ae4fc3350abc4a205dd783a1248058ec0b31"
+   "questaoSha256": "7109839cd9a38ae8c1d856b5b416ae4fc3350abc4a205dd783a1248058ec0b31",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Anatomia, exame e remodelação"
+      ],
+      "blocos": [
+       "anatomia-exame-e-remodelacao-06a7a2e4"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+     }
+    ],
+    "questaoSha256": "7109839cd9a38ae8c1d856b5b416ae4fc3350abc4a205dd783a1248058ec0b31",
+    "comentarioSha256": "cfa842445a33c484cf653abd907a41419267676ff7547e99a12cdcd2833829b3"
+   }
   },
   "mao-0304": {
    "tema": "mao",
@@ -27646,14 +27691,41 @@
    ],
    "prova": "SIMÃO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "5a7c6e53acd6d9d6eda68df97f0c01e249461f28f3b12d2ced8a4762fd4dffc5"
+   "questaoSha256": "5a7c6e53acd6d9d6eda68df97f0c01e249461f28f3b12d2ced8a4762fd4dffc5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "e3f1c50c63f1770c4d024b7f42a23f28a08739d33e8984af93682a7949e472ca"
+     }
+    ],
+    "questaoSha256": "5a7c6e53acd6d9d6eda68df97f0c01e249461f28f3b12d2ced8a4762fd4dffc5",
+    "comentarioSha256": "4831f0171537e64d3ef7d30cc016101c70707bacdb6fbf9caa231586acf4e569"
+   }
   },
   "mao-2333": {
    "tema": "mao",
@@ -27662,14 +27734,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 identifica a mobilidadeCMC,rotação/cruzamento e pseudogarra,mas não fornece tolerância de30°noCOLOdo indicador e doMÉDIO(o médio está sem número na tabela) nem hierarquia ABSOLUTA/RELATIVA comparável à pergunta atribuída aoGreen. A lista de contraindicações ao tratamento fechado chama rotação/cruzamento deRELATIVAS,enquanto outra passagem manda operar qualquer cruzamento. Não equiparar limiteDIAFISÁRIOde10°aoCOLO nem converter essas passagens em categoria absoluta sem fonte. Falta comparação normativa completa paraB;preservada sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "0db3f9b03773751b0934d4078270aaec1ebeb5acd9fe8c735fbe6bd5fdb20b58"
+   "questaoSha256": "0db3f9b03773751b0934d4078270aaec1ebeb5acd9fe8c735fbe6bd5fdb20b58",
+   "pendencia": "O corpo45 identifica a mobilidadeCMC,rotação/cruzamento e pseudogarra,mas não fornece tolerância de30°noCOLOdo indicador e doMÉDIO(o médio está sem número na tabela) nem hierarquia ABSOLUTA/RELATIVA comparável à pergunta atribuída aoGreen. A lista de contraindicações ao tratamento fechado chama rotação/cruzamento deRELATIVAS,enquanto outra passagem manda operar qualquer cruzamento. Não equiparar limiteDIAFISÁRIOde10°aoCOLO nem converter essas passagens em categoria absoluta sem fonte. Falta comparação normativa completa paraB;preservada sem selo."
   },
   "mao-2334": {
    "tema": "mao",
@@ -36936,14 +37009,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do novo resumo20 confirma predomínio do ladoDIREITO na pseudartroseCONGÊNITA da clavícula,exceto dextrocardia,mas não comparaFEMININO versusMASCULINO. Os dados de crescimento da clavícula por sexo e a fratura dePARTOà direita são outros desfechos,não essa prevalência congênita. Falta distribuição independente porSEXOeLADO para conferir todaA;sem comentário novo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "c97b60bf4ea1f9bd7c2cdfae96a2a8ece8e0a86e360e8da027930b3384f9f9c9"
+   "questaoSha256": "c97b60bf4ea1f9bd7c2cdfae96a2a8ece8e0a86e360e8da027930b3384f9f9c9",
+   "pendencia": "O corpo do novo resumo20 confirma predomínio do ladoDIREITO na pseudartroseCONGÊNITA da clavícula,exceto dextrocardia,mas não comparaFEMININO versusMASCULINO. Os dados de crescimento da clavícula por sexo e a fratura dePARTOà direita são outros desfechos,não essa prevalência congênita. Falta distribuição independente porSEXOeLADO para conferir todaA;sem comentário novo."
   },
   "pediatria-0280": {
    "tema": "pediatria",
@@ -37029,14 +37103,15 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo08 trata trauma da mão/carpo,mas não apresenta deficiênciaRADIALcongênita nem classificaçãoBAYNE/KLUG para rádio curto/fino eSEM FISE. Nenhuma regra de remodelação ouSalter-Harris demonstra o tipoIII dessa malformação. Falta classificação anatômica congênita com os quatro tipos comparados;C intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "806f0c84c1e63c65dbc1bbb483987ec4addc8bac69b62ffcec7ae4ff973e33d8"
+   "questaoSha256": "806f0c84c1e63c65dbc1bbb483987ec4addc8bac69b62ffcec7ae4ff973e33d8",
+   "pendencia": "O resumo08 trata trauma da mão/carpo,mas não apresenta deficiênciaRADIALcongênita nem classificaçãoBAYNE/KLUG para rádio curto/fino eSEM FISE. Nenhuma regra de remodelação ouSalter-Harris demonstra o tipoIII dessa malformação. Falta classificação anatômica congênita com os quatro tipos comparados;C intacta."
   },
   "pediatria-0317": {
    "tema": "pediatria",
@@ -37198,14 +37273,15 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo08 não abordaMACRODACTILIA nem crescimentoFIBROGORDUROSO com aumento ósseo em comprimento/largura. Também não fornece distribuição pé/mão e uni/bilateralidade,impacto funcional ou mecanismoosteoclástico das outras opções. Falta descrição independente dessa malformação,sem usar comentário antigo como fonte;D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "35e0ba04c6e544552eef58e031ea23b25bb506d9ad3cd38a3f9a3f473222d108"
+   "questaoSha256": "35e0ba04c6e544552eef58e031ea23b25bb506d9ad3cd38a3f9a3f473222d108",
+   "pendencia": "O resumo08 não abordaMACRODACTILIA nem crescimentoFIBROGORDUROSO com aumento ósseo em comprimento/largura. Também não fornece distribuição pé/mão e uni/bilateralidade,impacto funcional ou mecanismoosteoclástico das outras opções. Falta descrição independente dessa malformação,sem usar comentário antigo como fonte;D intacta."
   },
   "pediatria-0361": {
    "tema": "pediatria",
@@ -37795,14 +37871,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo08 não defineACHEIROPODIA,ausência bilateral deMÃOS ePÉS ou comparação com ausências de dedos e de membros ipsilaterais. O capítulo de fraturas carpais não fundamenta essa anatomia congênita por compartilharem subtema “mão da criança”. Falta definição e diferenciais de redução dos quatro membros em fonte independente;D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "d4c9f274104f1df48573ad0fb5faca83f0e1df12b3d803f0fbcc20d74f4c88d7"
+   "questaoSha256": "d4c9f274104f1df48573ad0fb5faca83f0e1df12b3d803f0fbcc20d74f4c88d7",
+   "pendencia": "O resumo08 não defineACHEIROPODIA,ausência bilateral deMÃOS ePÉS ou comparação com ausências de dedos e de membros ipsilaterais. O capítulo de fraturas carpais não fundamenta essa anatomia congênita por compartilharem subtema “mão da criança”. Falta definição e diferenciais de redução dos quatro membros em fonte independente;D intacta."
   },
   "pediatria-0510": {
    "tema": "pediatria",
@@ -37811,14 +37888,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo08 não descreve a cronologia daMORFOGÊNESEdeMEMBROS em26/31/37DIAS nem quais estruturas estariam completas em5SEMANAS. Ossificação carpal e ossificação intramembranosa da clavícula não equivalem à formação embrionária de todo membro superior/inferior. Falta cronologia segmentar e vulnerabilidade temporal independente de todas as alternativas;B intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "b1258a09ce17ebc80c8899d31a2077fcbc9ab243670e90fb5902ed132cec9c80"
+   "questaoSha256": "b1258a09ce17ebc80c8899d31a2077fcbc9ab243670e90fb5902ed132cec9c80",
+   "pendencia": "O resumo08 não descreve a cronologia daMORFOGÊNESEdeMEMBROS em26/31/37DIAS nem quais estruturas estariam completas em5SEMANAS. Ossificação carpal e ossificação intramembranosa da clavícula não equivalem à formação embrionária de todo membro superior/inferior. Falta cronologia segmentar e vulnerabilidade temporal independente de todas as alternativas;B intacta."
   },
   "pediatria-0512": {
    "tema": "pediatria",
@@ -40776,8 +40854,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo08 descreve colateraisMCF deEPÍFISEaEPÍFISE eSalter-HarrisIII comoFREQUENTE,mas não demonstra o qualificador “QUASE EXCLUSIVAMENTE” da avulsão colateral em comparação comI/II/IV. A anatomia explica a ocorrência deIII,porém não uma proporção de quase exclusividade entre os tipos. Falta distribuição ou afirmação específica independente com essa intensidade;C preservada,sem contar cobertura parcial como revisão integral.",
    "temComentario": true,
    "citacoes": [
     {
@@ -40791,7 +40869,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "645d9a7c40746a2e076a8a32b487e20426c3f2be9a6e3534f6f72e416e6176a7"
+   "questaoSha256": "645d9a7c40746a2e076a8a32b487e20426c3f2be9a6e3534f6f72e416e6176a7",
+   "pendencia": "O corpo08 descreve colateraisMCF deEPÍFISEaEPÍFISE eSalter-HarrisIII comoFREQUENTE,mas não demonstra o qualificador “QUASE EXCLUSIVAMENTE” da avulsão colateral em comparação comI/II/IV. A anatomia explica a ocorrência deIII,porém não uma proporção de quase exclusividade entre os tipos. Falta distribuição ou afirmação específica independente com essa intensidade;C preservada,sem contar cobertura parcial como revisão integral."
   },
   "pediatria-0584": {
    "tema": "pediatria",
@@ -68125,7 +68204,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68142,7 +68221,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "41da3e441b0a94f6b4481aa70dddc95de06a32816ede3974a564e04ca305ded5"
+   "questaoSha256": "41da3e441b0a94f6b4481aa70dddc95de06a32816ede3974a564e04ca305ded5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Classificação e mecanismos",
+       "Diagnóstico"
+      ],
+      "blocos": [
+       "classificacao-e-mecanismos-bf9aae38",
+       "diagnostico-7ee8a436"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "d8126e6634e53ca9ca2336eeb0b7a5f379586c49f10b9f6d322cb8a147673404"
+     }
+    ],
+    "questaoSha256": "41da3e441b0a94f6b4481aa70dddc95de06a32816ede3974a564e04ca305ded5",
+    "comentarioSha256": "7110bace137a073cdff0e9321bae7db80fc4347488a83df0fb4d6de7408a6e82"
+   }
   },
   "pediatria-1286": {
    "tema": "pediatria",
@@ -68152,8 +68256,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo12 sustentaBadoIIposterior,baixa frequência pediátrica,carga longitudinal a60°e ulna metafisária proximal(nofechamento). Não declara claramente FRATURA associada daBORDA ANTERIORdaCABEÇA RADIAL noII,como a opçãoD;no tratamento só menciona avaliar a borda anterior comRESSONÂNCIA,sem definir qual lesão. Essa menção não demonstra a associação de fratura exigida na alternativa inteira. Falta descrição independente da lesão da borda anterior e seu padrão;D intacta.",
    "temComentario": true,
    "citacoes": [
     {
@@ -68169,7 +68273,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "cf0948eeb836ca1ce1de42e72561ea7be226107de3badbd50854ddc2f41e1309"
+   "questaoSha256": "cf0948eeb836ca1ce1de42e72561ea7be226107de3badbd50854ddc2f41e1309",
+   "pendencia": "O corpo12 sustentaBadoIIposterior,baixa frequência pediátrica,carga longitudinal a60°e ulna metafisária proximal(nofechamento). Não declara claramente FRATURA associada daBORDA ANTERIORdaCABEÇA RADIAL noII,como a opçãoD;no tratamento só menciona avaliar a borda anterior comRESSONÂNCIA,sem definir qual lesão. Essa menção não demonstra a associação de fratura exigida na alternativa inteira. Falta descrição independente da lesão da borda anterior e seu padrão;D intacta."
   },
   "pediatria-1287": {
    "tema": "pediatria",
@@ -68179,8 +68284,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo12 recomendaIMOBILIZAR EM EXTENSÃO noBadoIIe descreve tração a60°/pressão anterior na cabeça,mas não especifica MOLDE POSTERIOR do gesso para manter a ulna,componente da opçãoA. A posição articular está coberta;direção/área do molde não pode ser deduzida apenas do sentido da luxação. Falta técnica independente desse molde,sem usar comentário anterior como fonte;A preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -68196,7 +68301,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "8a4876cc9ee81a0459cc0b59254eeda8e90868832c82ddb518f6418298d01b37"
+   "questaoSha256": "8a4876cc9ee81a0459cc0b59254eeda8e90868832c82ddb518f6418298d01b37",
+   "pendencia": "O corpo12 recomendaIMOBILIZAR EM EXTENSÃO noBadoIIe descreve tração a60°/pressão anterior na cabeça,mas não especifica MOLDE POSTERIOR do gesso para manter a ulna,componente da opçãoA. A posição articular está coberta;direção/área do molde não pode ser deduzida apenas do sentido da luxação. Falta técnica independente desse molde,sem usar comentário anterior como fonte;A preservada."
   },
   "pediatria-1288": {
    "tema": "pediatria",
@@ -68206,7 +68312,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68223,7 +68329,38 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "f43f41e117a10a6b69e4382ca8fef7b4e2a5267818e52508fdf7c21ae46658ca"
+   "questaoSha256": "f43f41e117a10a6b69e4382ca8fef7b4e2a5267818e52508fdf7c21ae46658ca",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Classificação e mecanismos",
+       "Tratamento agudo",
+       "Complicações e MONTEGGIA crônico",
+       "Diagnóstico",
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "classificacao-e-mecanismos-414cee4f",
+       "tratamento-agudo-35192e58",
+       "complicacoes-e-monteggia-cronico-15c4cbe6",
+       "diagnostico-7ee8a436",
+       "como-ler-este-capitulo-35fefbcf"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "1340dd1531d9f775c633624b4fa3f86e6bf79885200c076700382170971aadf1"
+     }
+    ],
+    "questaoSha256": "f43f41e117a10a6b69e4382ca8fef7b4e2a5267818e52508fdf7c21ae46658ca",
+    "comentarioSha256": "56766e87554efe99f497a6aa7c12337eb3081382ddb20662e8cfc5dbe766c8f8"
+   }
   },
   "pediatria-1289": {
    "tema": "pediatria",
@@ -68233,7 +68370,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68250,7 +68387,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "a37071edfd706c836f96b11e17e0999db6117f425d4831f2fbb88c4d37b716da"
+   "questaoSha256": "a37071edfd706c836f96b11e17e0999db6117f425d4831f2fbb88c4d37b716da",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Classificação e mecanismos",
+       "Tratamento agudo",
+       "Diagnóstico"
+      ],
+      "blocos": [
+       "classificacao-e-mecanismos-bf9aae38",
+       "tratamento-agudo-35192e58",
+       "diagnostico-7ee8a436"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "752e6e3f0228cd8dcac6a11a435aa70a8bb6cfd894b344f565bb417b72c662dd"
+     }
+    ],
+    "questaoSha256": "a37071edfd706c836f96b11e17e0999db6117f425d4831f2fbb88c4d37b716da",
+    "comentarioSha256": "64ba6ad1b53ab7901f91c24f7c144c0608d2056a3982f9e51d78fc2763fff76a"
+   }
   },
   "pediatria-1290": {
    "tema": "pediatria",
@@ -69732,7 +69896,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69747,7 +69911,33 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "cbc484125209e5437ad40a70e9204e92887e72ffee42440c1bb002a00d7884f7"
+   "questaoSha256": "cbc484125209e5437ad40a70e9204e92887e72ffee42440c1bb002a00d7884f7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Anatomia, exame e remodelação",
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "anatomia-exame-e-remodelacao-bc27de74",
+       "como-ler-este-capitulo-d65b64a6",
+       "como-ler-este-capitulo-3586d390"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "1aa5fefdd19961fff1687b281758197c12b478ec209e30afce78fc290531a503"
+     }
+    ],
+    "questaoSha256": "cbc484125209e5437ad40a70e9204e92887e72ffee42440c1bb002a00d7884f7",
+    "comentarioSha256": "9eab8a68833f2e5694b5ca272895cfaa6afbce5361f47a8bb12bcb031c1db69a"
+   }
   },
   "pediatria-1346": {
    "tema": "pediatria",
@@ -69757,7 +69947,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69775,7 +69965,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "9cdd37e0c773143d7ef30c14eeb4840fab38bc89da0ed43bcb5c66f58daa6315"
+   "questaoSha256": "9cdd37e0c773143d7ef30c14eeb4840fab38bc89da0ed43bcb5c66f58daa6315",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Anatomia, exame e remodelação",
+       "Fechamento"
+      ],
+      "blocos": [
+       "anatomia-exame-e-remodelacao-06a7a2e4",
+       "fechamento-860cfc26"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "069278966ff24a8ed346abab7fc93a999b64a38e8b2524a4a22fbc9b4f8a2e0e"
+     }
+    ],
+    "questaoSha256": "9cdd37e0c773143d7ef30c14eeb4840fab38bc89da0ed43bcb5c66f58daa6315",
+    "comentarioSha256": "0202e869673e3e1c5e7f97f8d785883d2aefb9fdbb17bb9dc8261cbd4b13ac8b"
+   }
   },
   "pediatria-1347": {
    "tema": "pediatria",
@@ -69784,7 +69999,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69799,7 +70014,45 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "e28aa017373ae0a88b2826b69d057323601392fa0da9d4561daac1cb28afcc72"
+   "questaoSha256": "e28aa017373ae0a88b2826b69d057323601392fa0da9d4561daac1cb28afcc72",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Anatomia, exame e remodelação"
+      ],
+      "blocos": [
+       "anatomia-exame-e-remodelacao-06a7a2e4"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+     },
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "O que vale para a mão inteira"
+      ],
+      "blocos": [
+       "o-que-vale-para-a-mao-inteira-efc0ddd3"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "48693a3da7e939123cb7db93a4da3561ae796271421913078ac8d4a66211b86e"
+     }
+    ],
+    "questaoSha256": "e28aa017373ae0a88b2826b69d057323601392fa0da9d4561daac1cb28afcc72",
+    "comentarioSha256": "34e0b799074c0abeded3a6afd56ca300682d7d50cf35dbe0c925803c54688e94"
+   }
   },
   "pediatria-1348": {
    "tema": "pediatria",
@@ -69809,7 +70062,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69824,7 +70077,34 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "5a12a495748e8b79c93061edc47553b6d446de7c61fc7bb89cc16e1ee5e71aa7"
+   "questaoSha256": "5a12a495748e8b79c93061edc47553b6d446de7c61fc7bb89cc16e1ee5e71aa7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Falanges",
+       "Anatomia, exame e remodelação",
+       "Fechamento"
+      ],
+      "blocos": [
+       "falanges-709a9b01",
+       "anatomia-exame-e-remodelacao-bc27de74",
+       "fechamento-860cfc26"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "ef2a626980c2a6f1933f7d43d56e3fa12bb20f861d9b40ace7386065c98e7a47"
+     }
+    ],
+    "questaoSha256": "5a12a495748e8b79c93061edc47553b6d446de7c61fc7bb89cc16e1ee5e71aa7",
+    "comentarioSha256": "52ecc083959072ceb114adb3ddc03b31df12ab2f11aff3ba22744af626d87cbf"
+   }
   },
   "pediatria-1349": {
    "tema": "pediatria",
@@ -69833,8 +70113,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo08 sustenta órtese emneutro/levehiperextensão por4–6semanas no martelo,operação comfragmento>50%daepífise ousubluxação,jersey comcirurgia e risco deunhaemgarra comperda>50%dadistal. Não fornece a lista adicional EXPOSTA/INSTÁVEL/IRREDUTÍVEL da alternativaBnem define o cenário dePOUCA POLPA comOSSO EXPOSTO para comparar comretalho. Não acrescentar indicações específicas ao capítulo infantil por memória ou pelo comentário antigo. Falta cobertura independente dessas condições para a alternativa inteira;B intacta.",
    "temComentario": true,
    "citacoes": [
     {
@@ -69848,7 +70128,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "cb4549da759d5c62d6b66d66c759957a25335046677fadcf02e648dc1f947e50"
+   "questaoSha256": "cb4549da759d5c62d6b66d66c759957a25335046677fadcf02e648dc1f947e50",
+   "pendencia": "O corpo08 sustenta órtese emneutro/levehiperextensão por4–6semanas no martelo,operação comfragmento>50%daepífise ousubluxação,jersey comcirurgia e risco deunhaemgarra comperda>50%dadistal. Não fornece a lista adicional EXPOSTA/INSTÁVEL/IRREDUTÍVEL da alternativaBnem define o cenário dePOUCA POLPA comOSSO EXPOSTO para comparar comretalho. Não acrescentar indicações específicas ao capítulo infantil por memória ou pelo comentário antigo. Falta cobertura independente dessas condições para a alternativa inteira;B intacta."
   },
   "pediatria-1350": {
    "tema": "pediatria",
@@ -69857,7 +70138,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69872,7 +70153,45 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "f72a74f5b1604aac6fe8a6b60274ea0be436b492adcab1858442d5c59a68881e"
+   "questaoSha256": "f72a74f5b1604aac6fe8a6b60274ea0be436b492adcab1858442d5c59a68881e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Falanges"
+      ],
+      "blocos": [
+       "falanges-2573c6e7"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "6147404e778d0e9e4210667b13d99eabbc05567936bd157ed8cf5f8776feeb3d"
+     },
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Interfalângica proximal: luxações e banda central"
+      ],
+      "blocos": [
+       "interfalangica-proximal-luxacoes-e-banda-central-dbec7b5d"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "3834c65c2f94d7e755930c1cd033b29674c67963f5ab05307e9c915ddee1cf3d"
+     }
+    ],
+    "questaoSha256": "f72a74f5b1604aac6fe8a6b60274ea0be436b492adcab1858442d5c59a68881e",
+    "comentarioSha256": "429164beac267677de92b011d6c41107aeb65dcc5543eda7b9328c0581e2abad"
+   }
   },
   "pediatria-1351": {
    "tema": "pediatria",
@@ -69882,7 +70201,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69897,7 +70216,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "07a25d7cc9b5cc110840c3457661a165c73f3431934093908298598b6334ff55"
+   "questaoSha256": "07a25d7cc9b5cc110840c3457661a165c73f3431934093908298598b6334ff55",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Falanges",
+       "Anatomia, exame e remodelação"
+      ],
+      "blocos": [
+       "falanges-2573c6e7",
+       "anatomia-exame-e-remodelacao-06a7a2e4"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "ff8d9b368e36718d12d40c00ab41fa4c570d6bffc06485a6d01169bb7c1ca425"
+     }
+    ],
+    "questaoSha256": "07a25d7cc9b5cc110840c3457661a165c73f3431934093908298598b6334ff55",
+    "comentarioSha256": "ed6d68a38b392d91101a4782e83e0d8dec14516dd0069fe2b955d4cb49b8809e"
+   }
   },
   "pediatria-1352": {
    "tema": "pediatria",
@@ -69907,8 +70251,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo08 dá avulsãoSalter-HarrisIIIulnar comLCU nofragmento,Stenercomcirurgia esemdesvio comgesso. Não afirma queQUALQUER DESVIOexijaREDUÇÃO ABERTA E FIXAÇÃO,nem compara reduçãofechada/aberta conforme estabilidade,tamanho oudeslocamento. “Semdesvio:gesso”não prova a proposição inversa universal da opçãoD. A parteStener está coberta,mas o critério operatório completo não;Dpreservada semselo,comcomentárioanterior intacto.",
    "temComentario": true,
    "citacoes": [
     {
@@ -69922,7 +70266,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "27c5ddecb4def24e894750abd3e4d06e52a8cbb0d1771e1990b9f1d2efda9b10"
+   "questaoSha256": "27c5ddecb4def24e894750abd3e4d06e52a8cbb0d1771e1990b9f1d2efda9b10",
+   "pendencia": "O corpo08 dá avulsãoSalter-HarrisIIIulnar comLCU nofragmento,Stenercomcirurgia esemdesvio comgesso. Não afirma queQUALQUER DESVIOexijaREDUÇÃO ABERTA E FIXAÇÃO,nem compara reduçãofechada/aberta conforme estabilidade,tamanho oudeslocamento. “Semdesvio:gesso”não prova a proposição inversa universal da opçãoD. A parteStener está coberta,mas o critério operatório completo não;Dpreservada semselo,comcomentárioanterior intacto."
   },
   "pediatria-1353": {
    "tema": "pediatria",
@@ -69932,7 +70277,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69950,7 +70295,30 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "d488019e3a81f81df7811c0afcaf3202535a110c3598409e100e85da1bb5b478"
+   "questaoSha256": "d488019e3a81f81df7811c0afcaf3202535a110c3598409e100e85da1bb5b478",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Polegar e metacarpais"
+      ],
+      "blocos": [
+       "polegar-e-metacarpais-74e087f7"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "b1812e1868792b889d94d93306ed1afe4596537276f62894d770fbdd66fcbc91"
+     }
+    ],
+    "questaoSha256": "d488019e3a81f81df7811c0afcaf3202535a110c3598409e100e85da1bb5b478",
+    "comentarioSha256": "f261d33a4c294b1991cfb6bcb1c15997f0e830e0e93a53cdc7c45f1153a29219"
+   }
   },
   "pediatria-1354": {
    "tema": "pediatria",
@@ -69961,7 +70329,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69979,7 +70347,30 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "9362a75fe59b1374deaf58b2829e8a4e42e7b2d1e93adf51ae2d7ce5c0929067"
+   "questaoSha256": "9362a75fe59b1374deaf58b2829e8a4e42e7b2d1e93adf51ae2d7ce5c0929067",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Polegar e metacarpais"
+      ],
+      "blocos": [
+       "polegar-e-metacarpais-4fd4e5e3"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "3e3e62b84c839325e42e5c4d217c221984dfe4d8e0b4407e6fffb2ec8658056b"
+     }
+    ],
+    "questaoSha256": "9362a75fe59b1374deaf58b2829e8a4e42e7b2d1e93adf51ae2d7ce5c0929067",
+    "comentarioSha256": "1ebb6363e31ca7597c02a60665d7fd6c6a023783f290f2a7fd550f5597a9932c"
+   }
   },
   "pediatria-1355": {
    "tema": "pediatria",
@@ -69989,7 +70380,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70007,7 +70398,30 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "8bb0a3f9a73aaed853e867dfafd7da84dd99f1fc75874f3e78d4c83f84cdcef3"
+   "questaoSha256": "8bb0a3f9a73aaed853e867dfafd7da84dd99f1fc75874f3e78d4c83f84cdcef3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Carpo"
+      ],
+      "blocos": [
+       "carpo-771401f1"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "f199b305fd7fb202dd748c50e598bd5dcb030e9f975049e4acb7f320549c1a73"
+     }
+    ],
+    "questaoSha256": "8bb0a3f9a73aaed853e867dfafd7da84dd99f1fc75874f3e78d4c83f84cdcef3",
+    "comentarioSha256": "32bbf6243f3673eb0795eff37ce0c12bd924c41f48a19d82ee1c9c2305684ad1"
+   }
   },
   "pediatria-1356": {
    "tema": "pediatria",
@@ -70017,8 +70431,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo08 dá gesso<1mm,tempos porpolo,aberta>1mm/ou>10°,consolidação>95%epseudartrose20–25%associada aatraso. Falta,porém,o DENOMINADOR/POPULAÇÃOeTEMPO de observação dos20–25%para conferir a estatística integral da opçãoDsem a aplicar a TODASas fraturas ou inventar uma série. >95%de consolidação e20–25%de pseudartrose não podem ser apresentados como desfechos da mesma coorte. ManterDadocumentada,sem transformar números soltos em risco universal;faltam contextos quantitativos independentes.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70035,7 +70449,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "5f48fc41c0a591d6cbb17372c60e64e6fd8cfb18703fca8508dba52707aa41dc"
+   "questaoSha256": "5f48fc41c0a591d6cbb17372c60e64e6fd8cfb18703fca8508dba52707aa41dc",
+   "pendencia": "O corpo08 dá gesso<1mm,tempos porpolo,aberta>1mm/ou>10°,consolidação>95%epseudartrose20–25%associada aatraso. Falta,porém,o DENOMINADOR/POPULAÇÃOeTEMPO de observação dos20–25%para conferir a estatística integral da opçãoDsem a aplicar a TODASas fraturas ou inventar uma série. >95%de consolidação e20–25%de pseudartrose não podem ser apresentados como desfechos da mesma coorte. ManterDadocumentada,sem transformar números soltos em risco universal;faltam contextos quantitativos independentes."
   },
   "pediatria-1357": {
    "tema": "pediatria",
@@ -70045,7 +70460,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70063,7 +70478,30 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "c65c2d439821b0c0af4a6fbbfbe5141345058692bb66c69ffed47fa50a546ef5"
+   "questaoSha256": "c65c2d439821b0c0af4a6fbbfbe5141345058692bb66c69ffed47fa50a546ef5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Carpo"
+      ],
+      "blocos": [
+       "carpo-0d67ee51"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "9d0cef96c215439fdd5a9c01de7e381b4abbb7c624db0c8a60b6838455ca7075"
+     }
+    ],
+    "questaoSha256": "c65c2d439821b0c0af4a6fbbfbe5141345058692bb66c69ffed47fa50a546ef5",
+    "comentarioSha256": "56e8ccbcc14a81ebde9f90155d5ab7964d5b76895f0248f3a9f51207774058b6"
+   }
   },
   "pediatria-1358": {
    "tema": "pediatria",
@@ -70073,7 +70511,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70089,7 +70527,48 @@
     "rockwoodcriancas10-08-mao-carpo",
     "rockwoodcriancas10-12-monteggia"
    ],
-   "questaoSha256": "62e50f344b75138471b042eae82d783f064afcb0f8123f36e02cabd0d9632ca8"
+   "questaoSha256": "62e50f344b75138471b042eae82d783f064afcb0f8123f36e02cabd0d9632ca8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Luxações"
+      ],
+      "blocos": [
+       "luxacoes-b7410865"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "0f4fd29ebc8fe23d05a717368d83a5cf03ca2e30763a8c75d979c52bd9749c35"
+     },
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+      ],
+      "blocos": [
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+       "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "3be5642a6817b4375ad085cee6f48ddf8f700c9366b70b8a70412d4f2b6ffa64"
+     }
+    ],
+    "questaoSha256": "62e50f344b75138471b042eae82d783f064afcb0f8123f36e02cabd0d9632ca8",
+    "comentarioSha256": "cc207bacfa6b38c1042a7a3cbf790f6712ff7d7d531a068175cf9b36e1bb6225"
+   }
   },
   "pediatria-1359": {
    "tema": "pediatria",
@@ -70099,7 +70578,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70115,7 +70594,30 @@
     "rockwoodcriancas10-08-mao-carpo",
     "rockwoodcriancas10-12-monteggia"
    ],
-   "questaoSha256": "526a7c45406c986655f7818d7f7607a4190a64b5e3bfe41bb8638b9e0bf01d5c"
+   "questaoSha256": "526a7c45406c986655f7818d7f7607a4190a64b5e3bfe41bb8638b9e0bf01d5c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Luxações"
+      ],
+      "blocos": [
+       "luxacoes-03bcf78a"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "9867be66815a09a55105b76a9e9b4696fe958ee26cb668472d3fc2fbaed65f25"
+     }
+    ],
+    "questaoSha256": "526a7c45406c986655f7818d7f7607a4190a64b5e3bfe41bb8638b9e0bf01d5c",
+    "comentarioSha256": "5e1f225b6212b52dbea5359456bf560e118b8474361d8157dbe611c1edfcda1d"
+   }
   },
   "quadril-0035": {
    "tema": "quadril",
