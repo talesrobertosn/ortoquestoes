@@ -56,7 +56,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 25 | Femoral Shaft | 2437 a 2555 | Feito em 26/10/2026: `rockwoodcriancas10-25-diafise-femur`, `pediatria-1122` a `1136` |
 | 26 | Distal Femoral Physis | 2556 a 2642 | Feito em 26/10/2026: `rockwoodcriancas10-26-fise-distal-femur`, `pediatria-1094` a `1107` |
 | 27 | Proximal Tibial Physeal | 2643 a 2695 | Feito em 26/10/2026: `rockwoodcriancas10-27-fise-proximal-tibia`, `pediatria-1108` a `1121` |
-| 28 | Intra-Articular Injuries of the Knee | 2696 a 2826 | A fazer |
+| 28 | Intra-Articular Injuries of the Knee | 2696 a 2826 | Feito em 28/10/2026: `rockwoodcriancas10-28-joelho-intra-articular`, `pediatria-1300` a `1314` |
 | 29 | Tibia and Fibula Shaft | 2827 a 2957 | Feito em 27/10/2026: `rockwoodcriancas10-29-diafise-tibia`, `pediatria-1137` a `1152` |
 | 30 | Ankle | 2958 a 3099 | Feito em 27/10/2026: `rockwoodcriancas10-30-tornozelo`, `pediatria-1153` a `1167` |
 | 31 | Foot | 3100 a 3352 | A fazer |
@@ -100,3 +100,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 22 | `pediatria-0913`, `coluna-0302`, `pediatria-0627`, `coluna-0227`, `coluna-0312`, `pediatria-0833` | `coluna-0227` e `coluna-0312`: o capítulo sustenta só a gravidade abaixo de 8 anos e o estiramento. `pediatria-0627`: sexo e segmento não citados. Sem gabarito: `pediatria-0833`. Não citadas: `coluna-0179` (tratamento da SCIWORA) e `pediatria-0755`. |
 | 11 | `pediatria-0640`, `0748`, `0926`, `0815`, `0564`, `0841`, `0611`, `0659`, `0954` | `0954` (TEPOP 2024): o capítulo diz mais de 4 mm ou articulação incongruente. Sem gabarito: `0748`, `0926`, `0815`, `0841` (sustentadas). Não citada: `0934` (imagem da técnica). |
 | 12 | `pediatria-0712`, `0724`, `0924`, `0930`, `0929`, `0659`, `0539`, `0831`, `0742` | Sem gabarito, sustentadas: `0724`, `0924`, `0930`, `0929`, `0831`, `0742`. Não citadas: `0664` (sinostose; não sustentada), `0754`, `0911`, `1055` (pronação dolorosa), `0925` (imagem). |
+| 28 | `pediatria-0711`, `0700`, `0949`, `0535`, `0624`, `0693`, `0735`, `0824` | `0624` e `0693`: hiperextensão; o capítulo diz valgo com rotação externa. Sem gabarito: `0735` (sustentada), `0824` (o capítulo usa a combinada intra e extra-articular). |
