@@ -3984,3 +3984,19 @@ sem fratura, do esforço, neonatal, desbridamento, TSUGE, tratamento do VOLKMANN
 **Divergências.** Nenhuma com gabarito; `0827` está sem gabarito e o capítulo não a sustenta.
 
 **Aproveitamento:** `pediatria-1315` a `pediatria-1329`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.372 caracteres.
+
+## Pé da criança, Rockwood and Wilkins 10ª ed., cap. 31
+
+**Recorte.** Busca por tálus, calcâneo, LISFRANC, metatarsal, cuboide, sesamoide e estresse em Ortopedia pediátrica, todas as provas.
+A banca cobra o tálus (TARO 2018 `pediatria-0626`, processo lateral; TARO 2015 `0596`, osteocondral medial), o quinto metatarsal
+(TEOT 2022 `0704`, o mais fraturado acima de 10 anos; TEOT 2023 `0582`, apófise longitudinal), o estresse (TARO 2015 `0597`, colo do segundo)
+e o LISFRANC (SBOT-SP `0718`, sem gabarito).
+
+**Forma.** Enunciados curtos, sem imagem.
+
+**Lacunas com cara de prova (projeção).** Vascularização do tálus e HAWKINS, sinal de HAWKINS, tratamento do colo, calcâneo, subtalar, cuboide,
+tratamento do LISFRANC, ferimento por prego.
+
+**Divergências.** Nenhuma com gabarito; `0718` está sem gabarito e o capítulo sustenta a alternativa do segundo metatarsal com cuboide.
+
+**Aproveitamento:** `pediatria-1330` a `pediatria-1344`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.560 caracteres.
