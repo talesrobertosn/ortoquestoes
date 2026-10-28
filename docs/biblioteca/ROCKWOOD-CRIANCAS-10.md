@@ -36,7 +36,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 5 | Management of the Severely Injured Child | 205 a 262 | Codex |
 | 6 | Compartment Syndrome in Children | 263 a 305 | Feito em 28/10/2026: `rockwoodcriancas10-06-sindrome-compartimental`, `pediatria-1315` a `1329` |
 | 7 | Pathologic Fractures and Nonaccidental Injuries | 306 a 444 | Feito em 27/10/2026: `rockwoodcriancas10-07-patologicas-maus-tratos`, `pediatria-1196` a `1210` |
-| 8 | Hand and Carpal Bones | 445 a 633 | A fazer |
+| 8 | Hand and Carpal Bones | 445 a 633 | Feito em 28/10/2026: `rockwoodcriancas10-08-mao-carpo`, `pediatria-1345` a `1359` |
 | 9 | Distal Radius and Ulna | 634 a 789 | 9ª ed. já tem resumo (`wilkins9-08`); atualizar com a 10ª |
 | 10 | Diaphyseal Radius and Ulna | 790 a 935 | 9ª ed. já tem resumo (`wilkins9-09`); atualizar |
 | 11 | Radial Neck and Olecranon | 936 a 1084 | Feito em 28/10/2026: `rockwoodcriancas10-11-colo-radio-olecrano`, `pediatria-1270` a `1284` |
@@ -103,3 +103,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 28 | `pediatria-0711`, `0700`, `0949`, `0535`, `0624`, `0693`, `0735`, `0824` | `0624` e `0693`: hiperextensão; o capítulo diz valgo com rotação externa. Sem gabarito: `0735` (sustentada), `0824` (o capítulo usa a combinada intra e extra-articular). |
 | 6 | `pediatria-0850`, `0666`, `0827` | Sem gabarito: `0827` (o capítulo aponta o compartimento flexor profundo, não os flexores do carpo). |
 | 31 | `pediatria-0626`, `0596`, `0718`, `0704`, `0582`, `0597` | Sem gabarito: `0718` (o capítulo aponta base do segundo metatarsal com cuboide). Relacionadas: `0518` (SEVER) e `0512` (apófise do quinto). |
+| 8 | `pediatria-0583`, `0609`, `0644`, `0522`, `0562`, `0823` | `0522`: gabarito tipo A; o capítulo dá o D como equivalente ao BENNETT. Sem gabarito: `0823` (sustentada). |

@@ -4000,3 +4000,18 @@ tratamento do LISFRANC, ferimento por prego.
 **Divergências.** Nenhuma com gabarito; `0718` está sem gabarito e o capítulo sustenta a alternativa do segundo metatarsal com cuboide.
 
 **Aproveitamento:** `pediatria-1330` a `pediatria-1344`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.560 caracteres.
+
+## Mão e carpo da criança, Rockwood and Wilkins 10ª ed., cap. 8
+
+**Recorte.** Busca por falange, metacarpal, escafoide, carpo, SEYMOUR, polegar e luxação em Ortopedia pediátrica e Mão, todas as provas.
+A banca cobra a SALTER-HARRIS III por avulsão (SBOT-SP `pediatria-0583`; TARO 2016 `0609`), o colo do metacarpal (TARO 2019 `0644`),
+o BENNETT da criança (TARO 2026 `0522`), o capitato (TEOT 2024 `0562`), a SEYMOUR (TARO 2006 `0823`) e o escafoide distal (PUC-SP 2020 `mao-1092`).
+
+**Forma.** Enunciados curtos, sem imagem.
+
+**Lacunas com cara de prova (projeção).** Remodelação e rotação, martelo ósseo, colo da falange, extra-oitava, tratamento do escafoide,
+luxação complexa da metacarpofalângica, interfalângica proximal, fibrocartilagem triangular.
+
+**Divergências.** TARO 2026 `0522`: gabarito tipo A; na classificação do capítulo, o tipo A é metafisário e o D é o equivalente ao BENNETT.
+
+**Aproveitamento:** `pediatria-1345` a `pediatria-1359`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.767 caracteres.
