@@ -1,0 +1,728 @@
+{
+  "baseInicial": "f8f9f3fa486bf2e66f23e44bef757b9e0546f1d5",
+  "baseReconciliada": "052f9cf35f4c4df2937d76eed20058b743c76da9",
+  "lotes": {
+    "201": {
+      "revisadas": [
+        "mao-2292",
+        "mao-2293",
+        "mao-2320",
+        "mao-2290"
+      ],
+      "lacunas": [
+        "mao-2288",
+        "mao-2289",
+        "mao-2291",
+        "mao-2294",
+        "mao-2295",
+        "mao-2307"
+      ]
+    },
+    "202": {
+      "revisadas": [
+        "mao-2418",
+        "mao-2463"
+      ],
+      "lacunas": [
+        "mao-2384",
+        "mao-2389",
+        "mao-2394",
+        "mao-2397",
+        "mao-2433",
+        "mao-2436",
+        "mao-2460",
+        "mao-2462"
+      ]
+    },
+    "203": {
+      "revisadas": [
+        "mao-2477",
+        "mao-2483",
+        "mao-2524",
+        "mao-1796"
+      ],
+      "lacunas": [
+        "mao-2467",
+        "mao-2504",
+        "mao-2512",
+        "mao-2535",
+        "mao-2545",
+        "mao-1795"
+      ]
+    },
+    "204": {
+      "revisadas": [
+        "mao-1797",
+        "mao-1799",
+        "mao-1800",
+        "mao-1932",
+        "mao-1935"
+      ],
+      "lacunas": [
+        "mao-1798",
+        "mao-1801",
+        "mao-1802",
+        "mao-1933",
+        "mao-1934"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwood10-44-carpo": {
+      "markdownSha256": "ec093a84cf7e02d91d3cd95633d53bb4210ab58a9bbaa92a300b190d7854dc35",
+      "compiladoSha256Bytes": "f6bd578fbf723ce463ec4b4f1f014307ac575cd3012ce36e2f4a90991c586896",
+      "leitura": "Leitura integral anterior preservada por hash; seções pertinentes relidas nesta passagem. Corpo independente sustenta as alternativas. Notas de treino e comentários antigos não foram usados como fonte."
+    },
+    "rockwood10-45-fraturas-mao": {
+      "markdownSha256": "9ab6a8ca6fad48532543a911bbef85e47ad7a596c3b5322f2fc55a00358102f5",
+      "compiladoSha256Bytes": "6f517267483f2173d3fee3492f3a79cff5aab7acffdf7db8f63f50050ce2cc79",
+      "leitura": "Leitura integral anterior preservada por hash; seções pertinentes relidas nesta passagem. Corpo independente sustenta as alternativas. Notas de treino e comentários antigos não foram usados como fonte."
+    }
+  },
+  "referenciasHistoricas": {
+    "mao-2291": {
+      "comentarioAnteriorSha256": "bbc3666c671411656bb30a7616f6fa9d69f501ec501c3699bf9100e7927e7e34",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 505 e 508"
+      ]
+    },
+    "mao-2290": {
+      "comentarioAnteriorSha256": "bccb6ad795044f1983ba40cd514b3cd8a90771df1bc9841e28bd158d9901cb9e",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 513 (Tabela 13.4), 518 e 523"
+      ]
+    },
+    "mao-2320": {
+      "comentarioAnteriorSha256": "36dc3020984ced8d5a4ca5a03d95bd4e2abb6d36c33dc0637f52a0262b22523a",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 678, 679 e 683"
+      ]
+    },
+    "mao-2294": {
+      "comentarioAnteriorSha256": "207d19d60ba02649ee2670ce4880d6d89e77d642d7666b790ed30436425dc31d",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 532"
+      ]
+    },
+    "mao-2288": {
+      "comentarioAnteriorSha256": "5224ac292f1c173d4f5aecb2799bf75625b7c5471b615a307d55179a32c68cfa",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 490 e 491 (Fig. 13.3)"
+      ]
+    },
+    "mao-2289": {
+      "comentarioAnteriorSha256": "8c3ba6498670176eef7667d3342983e62f236ac8f66ef08bba10ee8535b9c984",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 497 a 499"
+      ]
+    },
+    "mao-2295": {
+      "comentarioAnteriorSha256": "0cda0a78b50e72ee56d0887e6863ac792e135f54dd9f0e0a81b4f74443408350",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 554 e 555 (Fig. 13.66)"
+      ]
+    },
+    "mao-2307": {
+      "comentarioAnteriorSha256": "dd952d36ee828423470c9d14fb5a2a9c82ae1201e5ab3d1b87a4dd04a2341a91",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 678",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 492"
+      ]
+    },
+    "mao-2292": {
+      "comentarioAnteriorSha256": "1d6acdaf216fa0ae8942a22734d6e5c7a8c6389b5e703170585fbfed3a655275",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 501 (Tabelas 13.2 e 13.3) e 508"
+      ]
+    },
+    "mao-2293": {
+      "comentarioAnteriorSha256": "4a3ec0adc90d6ac7461d8bdaed3938037d4f70542932bfbc5b841602d78cc976",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 504 (Fig. 13.19)"
+      ]
+    },
+    "mao-2436": {
+      "comentarioAnteriorSha256": "75a06e9f8a1703cd88261861162c13ea8df72fe36e373ecf7c87e7d85dac873c",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 491"
+      ]
+    },
+    "mao-2418": {
+      "comentarioAnteriorSha256": "26f11fce914534d392e8cb6944393314cd7c3b8253a5b97ec370b8f0cb22bb4b",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 678"
+      ]
+    },
+    "mao-2389": {
+      "comentarioAnteriorSha256": "244a5751a1f802495a66f6bf7ca87ebde1a8affcbce93955712b44c5bba7b3b6",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 683"
+      ]
+    },
+    "mao-2463": {
+      "comentarioAnteriorSha256": "d386edaf12e41ea09bdd6469c6a41d075bd1e08b5a9535d454b7e7f8f331efbe",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 682 e 684"
+      ]
+    },
+    "mao-2460": {
+      "comentarioAnteriorSha256": "fe3f12acf6a406956ddac25a3a05f161cd86fb79de9e91fd35ef6457ac13555a",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 501, 544 e 545"
+      ]
+    },
+    "mao-2384": {
+      "comentarioAnteriorSha256": "d9bf71ed8c5dd1734103ddb43eda472cd54846c5d654502113c777e01b90db48",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 512"
+      ]
+    },
+    "mao-2397": {
+      "comentarioAnteriorSha256": "ca37a1cadc97fed75552eb2f6b30b221cbb2d49193ae916ce2c333040a11b570",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 539 e 540 (Fig. 13.51)"
+      ]
+    },
+    "mao-2462": {
+      "comentarioAnteriorSha256": "45f7db4e2d838e4e3b22093ddade0a0c3ea1157da58e1a5c50226b0ca339b6bf",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 498"
+      ]
+    },
+    "mao-2433": {
+      "comentarioAnteriorSha256": "4a687c846502276e90c57cd19736b06f95744e6aace1abe4c2eafea8a2f0bad9",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 513 (Tabela 13.4) e 524"
+      ]
+    },
+    "mao-2394": {
+      "comentarioAnteriorSha256": "b3ce949c9f507bd63f05d1e0f00c6f07fbe4a07c859e13ad89f00fd727352a28",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 41 (Fraturas da mão, do punho e do antebraço em crianças), p. 1618"
+      ]
+    },
+    "mao-1795": {
+      "comentarioAnteriorSha256": "3ec3a6857a48e8d9624a4c21a917df7625f928703361434fc887f381dc25541a",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 263 e 268"
+      ]
+    },
+    "mao-2535": {
+      "comentarioAnteriorSha256": "a46f564afdb71c2e09d59c5c5673a6c7eeb59704c61b2e9f3cc5dfd1f1237312",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 544 e 545"
+      ]
+    },
+    "mao-1796": {
+      "comentarioAnteriorSha256": "6f797c1cf028e35070467b9b4d0e93b79d97c7910b7360fcba326867fa041238",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 297"
+      ]
+    },
+    "mao-2467": {
+      "comentarioAnteriorSha256": "fcfda874249ee9b6dddf180c4ed3408cf3aaa294f510300bf2d8b693eb37aea7",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 491 e 530"
+      ]
+    },
+    "mao-2477": {
+      "comentarioAnteriorSha256": "71b9bb71a1e821a439d3ebb31489e811c1701667f2ecb4dae8f16a26996983ab",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 508 (Fig. 13.14)"
+      ]
+    },
+    "mao-2545": {
+      "comentarioAnteriorSha256": "abb77c043bad72fb0303b3c20226af4c282b5cdae852f2dcd5faa29501cf2a13",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 687 (Fig. 16.12)"
+      ]
+    },
+    "mao-2524": {
+      "comentarioAnteriorSha256": "0d9cc5bc635a4c80664cb226515823b89b97edcd5b6d00302665e557b38c19d6",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 682 e 683"
+      ]
+    },
+    "mao-2504": {
+      "comentarioAnteriorSha256": "b963b3d4a708b083504f4564277ec29e64e5bfe6e618167fd06651ed7795a392",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 492"
+      ]
+    },
+    "mao-2512": {
+      "comentarioAnteriorSha256": "e193167e3ce07a88144fc86296949f75130d8a46b260ccaa61745a1727ebdd69",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 513, 518 e 519"
+      ]
+    },
+    "mao-2483": {
+      "comentarioAnteriorSha256": "f76b7f810c06f1bb41136d9cb28ae49b70989402998e519764669c0b99e8ec96",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 17 (Artroscopia do punho e da mão), p. 801 (Fig. 17.38)"
+      ]
+    },
+    "mao-1933": {
+      "comentarioAnteriorSha256": "61094b8a0a90aae7cbd59524e82c2385cff5c866ebb23dd8f4aa4465f8c53722",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos Metacarpos e Falanges; R. Glenn Gaston), p. 290, 291 e 299"
+      ]
+    },
+    "mao-1799": {
+      "comentarioAnteriorSha256": "229485775d825f58b48effa80d81ad52402cb77f7b9a818094c54b9a53b37cdf",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 263 e 268"
+      ]
+    },
+    "mao-1934": {
+      "comentarioAnteriorSha256": "a3caf140724412873359c400a30294ad26f3ebf137ed686062a17979a09eed4d",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos Metacarpos e Falanges; R. Glenn Gaston), p. 260 a 263"
+      ]
+    },
+    "mao-1798": {
+      "comentarioAnteriorSha256": "2fe9fdd6234ce89d3d7dcbac7ca9a5db92e3cc9ce82b7ad443deaddd8325ae7e",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 263 e 268"
+      ]
+    },
+    "mao-1801": {
+      "comentarioAnteriorSha256": "73474d9eb578157f6175a22524e99ca506bebb765e6cc127661b4371e990a7fd",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 349, 351 e 354"
+      ]
+    },
+    "mao-1800": {
+      "comentarioAnteriorSha256": "9c1118956ffeefdb2b201fc5b59c7a87aeda336a2cc3cd126bb6a41bf5aa6f54",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 345 e 346"
+      ]
+    },
+    "mao-1797": {
+      "comentarioAnteriorSha256": "e779f727df03e4612d77807a36d422c3c73d1f1c84a753f51c26188ebec237b2",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 284"
+      ]
+    },
+    "mao-1935": {
+      "comentarioAnteriorSha256": "dcf4ef5a07f70d746cfe754a593d3ac21518e49f3c0a8a38939426df64b52eb8",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos Metacarpos e Falanges; R. Glenn Gaston), p. 263 e 268"
+      ]
+    },
+    "mao-1802": {
+      "comentarioAnteriorSha256": "ccea2e9b2a77418daa6ed83b4f810fdfa83f89c94d9e74f3a00448543531158f",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 349"
+      ]
+    },
+    "mao-1932": {
+      "comentarioAnteriorSha256": "38ccc7df5f60c6c741170a71597bb1cc102cef0229745d08bacf147549bf5eb8",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos Metacarpos e Falanges; R. Glenn Gaston), p. 268, 290, 299 e 304"
+      ]
+    }
+  },
+  "motivosCriacao": {
+    "mao-2292": {
+      "origem": {
+        "arquivo": "SIMAO 2024",
+        "pagina": 14,
+        "numeroOriginal": 73
+      },
+      "prova": "SIMÃO",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 73 do SIMÃO 2024, que pediu um exemplo de instabilidade carpal não dissociativa.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 73 do SIMÃO 2024, que pediu um exemplo de instabilidade carpal não dissociativa."
+    },
+    "mao-2293": {
+      "origem": {
+        "arquivo": "SIMAO 2024",
+        "pagina": 17,
+        "numeroOriginal": 53
+      },
+      "prova": "SIMÃO",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 53 do SIMÃO 2024, que perguntou como se calcula o índice de altura do carpo. No original, tanto o método com o terceiro metacarpo quanto o método com o capitato apareciam corretos nas alternativas; aqui a pergunta foi refeita para o método original, com resposta única.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 53 do SIMÃO 2024, que perguntou como se calcula o índice de altura do carpo."
+    },
+    "mao-2320": {
+      "origem": {
+        "arquivo": "SIMAO 2024",
+        "pagina": 6,
+        "numeroOriginal": 88
+      },
+      "prova": "SIMÃO",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 88 do SIMÃO 2024, que cobrou a porcentagem de pseudartrose considerando todas as fraturas de escafoide.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 88 do SIMÃO 2024, que cobrou a porcentagem de pseudartrose considerando todas as fraturas de escafoide."
+    },
+    "mao-2290": {
+      "origem": {
+        "arquivo": "SIMAO 2024",
+        "pagina": 31,
+        "numeroOriginal": 39
+      },
+      "prova": "SIMÃO",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 39 do SIMÃO 2024, que perguntou para qual estágio de GARCIA-ELIAS o RASL é indicado.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 39 do SIMÃO 2024, que perguntou para qual estágio de GARCIA-ELIAS o RASL é indicado."
+    },
+    "mao-2418": {
+      "origem": {
+        "arquivo": "SIMAO 2022",
+        "pagina": 6,
+        "numeroOriginal": 50
+      },
+      "prova": "SIMÃO",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 50 do SIMÃO 2022, que perguntou como se dá o suprimento sanguíneo do escafoide.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 50 do SIMÃO 2022, que perguntou como se dá o suprimento sanguíneo do escafoide."
+    },
+    "mao-2463": {
+      "origem": {
+        "arquivo": "SIMAO 2022",
+        "pagina": 6,
+        "numeroOriginal": 67
+      },
+      "prova": "SIMÃO",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 67 do SIMÃO 2022, que pediu a alternativa com apenas critérios de instabilidade da fratura do escafoide.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 67 do SIMÃO 2022, que pediu a alternativa com apenas critérios de instabilidade da fratura do escafoide."
+    },
+    "mao-2477": {
+      "origem": {
+        "arquivo": "SIMAO 2021",
+        "pagina": 6,
+        "numeroOriginal": 26
+      },
+      "prova": "SIMÃO",
+      "ano": 2021,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 26 do SIMÃO 2021, que cobrou afirmações sobre a dissociação escafolunar aguda.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 26 do SIMÃO 2021, que cobrou afirmações sobre a dissociação escafolunar aguda."
+    },
+    "mao-2483": {
+      "origem": {
+        "arquivo": "SIMAO 2021",
+        "pagina": 16,
+        "numeroOriginal": 92
+      },
+      "prova": "SIMÃO",
+      "ano": 2021,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 92 do SIMÃO 2021, que perguntou o que corresponde ao grau III de GEISSLER.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 92 do SIMÃO 2021, que perguntou o que corresponde ao grau III de GEISSLER."
+    },
+    "mao-2524": {
+      "origem": {
+        "arquivo": "SIMAO 2021",
+        "pagina": 10,
+        "numeroOriginal": 76
+      },
+      "prova": "SIMÃO",
+      "ano": 2021,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 76 do SIMÃO 2021, que perguntou em que caso de fratura do escafoide a cirurgia está sempre indicada (resposta esperada: polo proximal sem desvio).",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 76 do SIMÃO 2021, que perguntou em que caso de fratura do escafoide a cirurgia está sempre indicada (resposta esperada: polo proximal sem desvio)."
+    },
+    "mao-1796": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 21,
+        "numeroOriginal": 21
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 21 do SIMÃO 2026, que cobrou o comprimento do traço e o número de parafusos na fixação interfragmentária da falange proximal.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 21 do SIMÃO 2026, que cobrou o comprimento do traço e o número de parafusos na fixação interfragmentária da falange proximal."
+    },
+    "mao-1797": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 35,
+        "numeroOriginal": 35
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 35 do SIMÃO 2026, que cobrou a conduta na fratura unicondilar desviada da falange proximal.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 35 do SIMÃO 2026, que cobrou a conduta na fratura unicondilar desviada da falange proximal."
+    },
+    "mao-1799": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 84,
+        "numeroOriginal": 84
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 84 do SIMÃO 2026, que cobrou quais metacarpos toleram mais angulação no colo e por quê.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 84 do SIMÃO 2026, que cobrou quais metacarpos toleram mais angulação no colo e por quê."
+    },
+    "mao-1800": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 14,
+        "numeroOriginal": 14
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 14 do SIMÃO 2026, que cobrou os dedos mais acometidos e a estrutura que torna irredutível a luxação dorsal da metacarpofalângica.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 14 do SIMÃO 2026, que cobrou os dedos mais acometidos e a estrutura que torna irredutível a luxação dorsal da metacarpofalângica."
+    },
+    "mao-1932": {
+      "origem": {
+        "arquivo": "SIMAO 2023",
+        "pagina": 32,
+        "numeroOriginal": 1
+      },
+      "prova": "SIMÃO",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 1 do SIMÃO 2023, em que a banca cobrou a direção do ápice e o músculo responsável na fratura da diáfise da falange proximal, com distratores que trocavam o fragmento fletido e o músculo. Aqui o mesmo fato volta com as alternativas reescritas e em outra ordem.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 1 do SIMÃO 2023, em que a banca cobrou a direção do ápice e o músculo responsável na fratura da diáfise da falange proximal, com distratores que trocavam o fragmento fletido e o músculo."
+    },
+    "mao-1935": {
+      "origem": {
+        "arquivo": "SIMAO 2023",
+        "pagina": 4,
+        "numeroOriginal": 9
+      },
+      "prova": "SIMÃO",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 9 do SIMÃO 2023, em que a banca cobrou as indicações cirúrgicas da fratura do colo com afirmativas sobre pseudogarra, rotação, tolerância dos dedos e encurtamento de 1 cm. Aqui o mesmo quadro volta com as afirmativas reescritas.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 9 do SIMÃO 2023, em que a banca cobrou as indicações cirúrgicas da fratura do colo com afirmativas sobre pseudogarra, rotação, tolerância dos dedos e encurtamento de 1 cm."
+    }
+  },
+  "remoto": {
+    "base": "052f9cf35f4c4df2937d76eed20058b743c76da9",
+    "prs": [
+      {
+        "pr": 610,
+        "title": "Rockwood crianças 10ª ed., cap. 13 e 14: atualização da 9ª edição (avaliação do cotovelo e supracondiliana)",
+        "head": "feb4ea9a4f09508f0af2ba59aabfc34c0d27359a",
+        "commits": [
+          {
+            "sha": "feb4ea9a4f09508f0af2ba59aabfc34c0d27359a",
+            "message": "Rockwood crianças 10ª ed., cap. 13 e 14: resumo e simulados\n\natualização da 9ª edição (avaliação do cotovelo e supracondiliana)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+          }
+        ]
+      },
+      {
+        "pr": 594,
+        "title": "Instagram: Raspadinha com Codivilla; Mecânica fina aposentada",
+        "head": "da25d04b76b6d2818bd20a1bd475827218a90f11",
+        "commits": [
+          {
+            "sha": "da25d04b76b6d2818bd20a1bd475827218a90f11",
+            "message": "Instagram: Raspadinha com Codivilla no lugar da Mecânica fina, aposentada\n\nO Tales pediu para nunca mais usar a Mecânica fina: sai do rodízio de\nstories, o kit recusa o estilo e os guias registram a aposentadoria. Os\n3 stories novos usam a trauma-1074 (TEOT 2023); a coluna-0281 volta a\nficar livre para outro post.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_012BctAELmQfNzRi7gszRj2A"
+          }
+        ]
+      },
+      {
+        "pr": 524,
+        "title": "Cronograma: fazer depois um dia que passou sem a meta feita",
+        "head": "b8f06fafed0e8f1127286d0d849b3094878b2ecc",
+        "commits": [
+          {
+            "sha": "3a5a332fb134c0b3681c6193ffff06244bbd57b4",
+            "message": "Cronograma: fazer depois um dia que passou sem a meta feita\n\nNo calendário, um dia de estudo dos últimos 7 que passou sem a meta feita\nmostra a meta que teve e o botão \"Fazer este dia agora\". Ele prende ao dia\nas próximas questões do plano (opcoes.recuperados, até dois dias guardados);\no que for feito conta para aquele dia, não para a meta de hoje, e o dia passa\na feito no calendário e na sequência. O plano não usa essas questões nos\npróximos dias.\n\nTeste novo (fixtures/testar_cronograma_recuperar.mjs) cobre também o relato\nde 25/10: puxar o dia seguinte sem fazer nada não deixa o dia contar como feito.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh"
+          },
+          {
+            "sha": "b8f06fafed0e8f1127286d0d849b3094878b2ecc",
+            "message": "Recuperar dia: correções da revisão do Codex no PR #524\n\n- questões de um dia puxado que passou sem ser feito podem ir para o dia recuperado\n  (e contam para ele, mesmo que o puxado fosse depois);\n- recuperação começada continua no calendário enquanto as questões estão guardadas\n  (10 dias), não só nos 7 de descoberta;\n- dia já adiantado (créditos guardados ou refeitos) não aparece como perdido;\n- sem dias de estudo pela frente, a recuperação completa com as que faltam do acervo,\n  e o botão avisa quando não há questões;\n- ids guardados em forma compacta e conferidos contra o limite de tamanho das opções\n  no servidor (LIMITE_OPCOES), com aviso se não couber.\nTeste ganhou um caso para cada um.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh"
+          }
+        ]
+      },
+      {
+        "pr": 517,
+        "title": "Prompt para o Codex: Rockwood crianças em simulados e resumos",
+        "head": "ba0f849dd5b2987732b4a735e917fcc903886a5c",
+        "commits": [
+          {
+            "sha": "ba0f849dd5b2987732b4a735e917fcc903886a5c",
+            "message": "Prompt para o Codex: Rockwood crianças em simulados e resumos por engenharia reversa\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh"
+          }
+        ]
+      },
+      {
+        "pr": 371,
+        "title": "Instagram: câmara escura (feed) e player da prova (stories)",
+        "head": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+        "commits": [
+          {
+            "sha": "40e7dcf07e16e513c62844ebf3438c9a90f7750c",
+            "message": "Instagram: câmara escura (feed) e player da prova (stories)\n\nFeed com tumores-0318 (TARO 2024) revelado numa câmara escura e stories com\nmao-0433 (TARO 2025) num player de música. Final com a data da prova, o\nCronograma real e Treine grátis; o link do story leva à própria questão\ndepois do cadastro.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh"
+          },
+          {
+            "sha": "714323bcee21a533ea33cf7048a307a24deffc44",
+            "message": "Instagram 18/10: stories sem figurinha e textos dentro da área segura\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh"
+          },
+          {
+            "sha": "553b1041eafa4cf9b173ea616cc293537739eb08",
+            "message": "Post 18/10: acabamento com bordas suaves no feed e nos stories\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh"
+          },
+          {
+            "sha": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+            "message": "Post 18/10: legenda do feed sem entregar a resposta\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh"
+          }
+        ]
+      },
+      {
+        "pr": 308,
+        "title": "Cartão: aviso de renovação com prazo de 7 dias para desistir com reembolso",
+        "head": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+        "commits": [
+          {
+            "sha": "980b2d734b62cd5a28098224e8dbf0c11194a185",
+            "message": "Cartão: aviso de renovação com o prazo de 7 dias para desistir e ser reembolsado\n\nQuando a renovação automática é aprovada, o webhook manda uma carta curta\ndizendo que o plano renovou, o valor e até quando dá para desistir com\nreembolso integral pelo botão de Detalhes da assinatura. Na própria página,\na garantia mostra a data limite e deixa claro que vale também para a\nrenovação.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz"
+          },
+          {
+            "sha": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+            "message": "Regera a função do webhook para colar no painel\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz"
+          }
+        ]
+      },
+      {
+        "pr": 253,
+        "title": "Instagram: painel de partidas do Adiantar no Cronograma",
+        "head": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+        "commits": [
+          {
+            "sha": "3c62e4ad3bd6f4c5f9310f02e114ede3772437bb",
+            "message": "Instagram: painel de partidas do Adiantar no Cronograma (feed e stories)\n\nEstilo novo de painel de aeroporto: cada dia de estudo é um voo feito,\nadiantado ou no horário. Carrossel de 5 e 3 stories, com telas reais do\nmodo demonstração e a legenda.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz"
+          },
+          {
+            "sha": "0f7dcf06557f2917665c7f1fe6aa36b54ae393fb",
+            "message": "Instagram: stories de questão no painel de partidas (pediatria-0001, TARO 2020)\n\nPergunta e resposta do pé torto congênito, com as alternativas como portões\nde embarque. Feed fica a propaganda do Adiantar; legenda e lista de\npublicadas atualizadas.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz"
+          },
+          {
+            "sha": "c9bff08f7663c0a1f08a43bfd4858277abc22d63",
+            "message": "Instagram: feed de questão no painel de partidas (coluna-0006, TARO 2020)\n\nClaudicação neurogênica da estenose lombar em 5 slides: gancho, questão,\nneurogênica e vascular lado a lado, por que sentar alivia e a resposta.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz"
+          },
+          {
+            "sha": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+            "message": "Instagram: Câmara escura (Freiberg no feed, fibroma não ossificante nos stories)\n\nEstilo novo de pouco texto: radiografia da prova no varal sob a luz de\nsegurança, alternativas na tira de filme e a resposta marcada a lápis.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz"
+          }
+        ]
+      },
+      {
+        "pr": 179,
+        "title": "Marketing: modelos Cofre de duas chaves e Relojoaria anatômica",
+        "head": "86aeeb45a1284a4bab358ad66df593286e64876a",
+        "commits": [
+          {
+            "sha": "86aeeb45a1284a4bab358ad66df593286e64876a",
+            "message": "Add reviewed Cofre and Relojoaria Instagram templates"
+          }
+        ]
+      },
+      {
+        "pr": 178,
+        "title": "Instagram: Mirels no modelo oficial Jornal",
+        "head": "c695d3d697b62de9cb1317922a61af543f4369a5",
+        "commits": [
+          {
+            "sha": "3c7daf1f481a22a119402544f44007696520ce1e",
+            "message": "Adiciona post Mirels: risco de fratura no fêmur"
+          },
+          {
+            "sha": "c695d3d697b62de9cb1317922a61af543f4369a5",
+            "message": "Refaz post Mirels com o modelo oficial Jornal e incorpora base atual"
+          }
+        ]
+      },
+      {
+        "pr": 174,
+        "title": "Simulado Rockwood cap. 11: 21 questões comentadas de fixação externa",
+        "head": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+        "commits": [
+          {
+            "sha": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+            "message": "Adiciona 21 questões comentadas de fixação externa e importação revisável"
+          }
+        ]
+      },
+      {
+        "pr": 93,
+        "title": "Aula de enxertos de pele: Cirurgia da Mão, UFG 2017",
+        "head": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+        "commits": [
+          {
+            "sha": "39eab5599b3088e7137556e9e9f6a68a8f4482b2",
+            "message": "Adiciona aula de enxerto de pele total: mao-0853"
+          },
+          {
+            "sha": "97e77b073134af9277107123ff27e7cb369139b5",
+            "message": "Disponibiliza comentário avulso de mao-0853"
+          },
+          {
+            "sha": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+            "message": "Marca mao-0853 como comentada para carregar a aula"
+          }
+        ]
+      }
+    ]
+  },
+  "concorrencia": "Incorporados PR591 e593,595–609. Fontes44/45 e mao.json da base anterior byte a byte idênticos; novas fontes e questões preservadas. Catálogo recomposto sobre o acervo atual; sem sobreposição dos PRs abertos. PR610 expande outros capítulos pediátricos, não este lote.",
+  "figuras": "Nenhum arquivo de imagem cadastrado nestes40. mao-2295 exige figura13.66 do Green ausente; mantida pendência específica, sem comentário novo.",
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 15,
+    "lacunasComentariosIntactos": 25,
+    "integridadeBytes": true,
+    "ui": "15/15casos em390/1440 aprovados após reconciliação,com resposta,aula,alerta e links exatos;captura celular1935 inspecionada visualmente. As2falhas transitórias da primeira execução durante atualização/build foram resolvidas pela repetição após build estável."
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 394,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 791,
+      "pendente-inspecao-imagem": 9,
+      "revisada": 1683
+    }
+  },
+  "publicacao": "Conferir head,checks,revisão,merge,guarda de versão,deploy efetivo e avulsos no PR. Não contar esta entrega como publicada antes dessas verificações.",
+  "novasFontes": "Capítulo infantil08 inteiro90linhas lido:escafoide distal na criança pode resolver mao2389;fazer reavaliação individual no próximo lote,sem contar pendência como revisada."
+}
