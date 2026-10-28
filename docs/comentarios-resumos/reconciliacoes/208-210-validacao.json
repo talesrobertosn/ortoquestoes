@@ -1,5 +1,5 @@
 {
-  "base": "b7633cb53107717cc2a418055d39acbdeea21738",
+  "base": "fe1cd975c502a5fd13552c98150a7f21a4c78472",
   "lotes": {
     "208": {
       "revisadas": [
@@ -446,13 +446,21 @@
     "questoes": 2976,
     "estados": {
       "duplicada": 97,
-      "pendente": 307,
+      "pendente": 279,
       "pendente-figura-ausente": 2,
-      "pendente-fonte": 752,
+      "pendente-fonte": 770,
       "pendente-inspecao-imagem": 4,
-      "revisada": 1814
+      "revisada": 1824
     }
   },
   "concorrencia": "Baseb763 inclui118comentários doPR613. PR612(205–207) ainda precisa ser incorporado/reconciliado antes desta publicação. Esta entrega altera apenas1comentário demao e12deombro-cotovelo;preserva demais bytes.",
-  "continuidade": "Próximo211:seleção local10candidatas já teve enunciados e alternativas lidos,mas sem aplicação/comentários novos. Inclui2332/2333 restantes da antiga206,0251/0300,congênitas0279/0316/0359/0508/0510 e0583;derivar de novo do catálogo publicado e fontes disponíveis. Não contar lacunas como conclusão."
+  "continuidade": "Próximo211:seleção local10candidatas já teve enunciados e alternativas lidos,mas sem aplicação/comentários novos. Inclui2332/2333 restantes da antiga206,0251/0300,congênitas0279/0316/0359/0508/0510 e0583;derivar de novo do catálogo publicado e fontes disponíveis. Não contar lacunas como conclusão.",
+  "baseOriginal": "b7633cb53107717cc2a418055d39acbdeea21738",
+  "reconciliacao612": {
+    "head": "5f91b7c3a917286e9f2219207a15049d22a5b7e8",
+    "merge": "fe1cd975c502a5fd13552c98150a7f21a4c78472",
+    "preservacao": "10miniaulas,20lacunas e3correções de referências do612 preservadas;maoeombro dos13casos próprios não mudaram na base,fontes idênticas porbyte.118concorrentes do613mantidos."
+  },
+  "correcaoReferencia2046": "Corrigida apenas referênciaàalternativaAemconceito/correta/alerta demao2046,revistano198/PR590. Semnovarevisãoclínica,semalteração depercentuais ougabarito. Aplicaçãocomhashatual,fonte44porfunção eofingerprintnovo;testeDCBAA→D.",
+  "validacaoPosReconciliacao": "Repetirchecks eUIantesdepublicar."
 }
