@@ -3969,3 +3969,18 @@ A banca cobra quase só a espinha tibial: classificação (TARO 2024 `pediatria-
 **Divergências.** Mecanismo da espinha tibial: TARO 2018 e TARO 2014 dão hiperextensão; o capítulo, valgo com rotação externa.
 
 **Aproveitamento:** `pediatria-1300` a `pediatria-1314`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.753 caracteres.
+
+## Síndrome compartimental na criança, Rockwood and Wilkins 10ª ed., cap. 6
+
+**Recorte.** Busca por compartimental e VOLKMANN em Ortopedia pediátrica, todas as provas.
+A banca cobra a síndrome pelo cotovelo: supracondiliana de risco (TEOT 2021 `pediatria-0850`, extensão com lesão do mediano) e VOLKMANN
+(TARO 2012 `0666`, gesso com flexão do cotovelo; TARO 2006 `0827`, músculos mais acometidos).
+
+**Forma.** Enunciados curtos, sem imagem.
+
+**Lacunas com cara de prova (projeção).** Três As, pressões na criança, primeiro passo, flexor profundo, perna e seus fatores de risco, mão, coxa e pé,
+sem fratura, do esforço, neonatal, desbridamento, TSUGE, tratamento do VOLKMANN, prognóstico.
+
+**Divergências.** Nenhuma com gabarito; `0827` está sem gabarito e o capítulo não a sustenta.
+
+**Aproveitamento:** `pediatria-1315` a `pediatria-1329`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.372 caracteres.

@@ -34,7 +34,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 3 | Pharmacology of Pediatric Fracture Care | 127 a 145 | Codex |
 | 4 | Cast and Splint Immobilization | 146 a 204 | Codex |
 | 5 | Management of the Severely Injured Child | 205 a 262 | Codex |
-| 6 | Compartment Syndrome in Children | 263 a 305 | A fazer |
+| 6 | Compartment Syndrome in Children | 263 a 305 | Feito em 28/10/2026: `rockwoodcriancas10-06-sindrome-compartimental`, `pediatria-1315` a `1329` |
 | 7 | Pathologic Fractures and Nonaccidental Injuries | 306 a 444 | Feito em 27/10/2026: `rockwoodcriancas10-07-patologicas-maus-tratos`, `pediatria-1196` a `1210` |
 | 8 | Hand and Carpal Bones | 445 a 633 | A fazer |
 | 9 | Distal Radius and Ulna | 634 a 789 | 9ª ed. já tem resumo (`wilkins9-08`); atualizar com a 10ª |
@@ -101,3 +101,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 11 | `pediatria-0640`, `0748`, `0926`, `0815`, `0564`, `0841`, `0611`, `0659`, `0954` | `0954` (TEPOP 2024): o capítulo diz mais de 4 mm ou articulação incongruente. Sem gabarito: `0748`, `0926`, `0815`, `0841` (sustentadas). Não citada: `0934` (imagem da técnica). |
 | 12 | `pediatria-0712`, `0724`, `0924`, `0930`, `0929`, `0659`, `0539`, `0831`, `0742` | Sem gabarito, sustentadas: `0724`, `0924`, `0930`, `0929`, `0831`, `0742`. Não citadas: `0664` (sinostose; não sustentada), `0754`, `0911`, `1055` (pronação dolorosa), `0925` (imagem). |
 | 28 | `pediatria-0711`, `0700`, `0949`, `0535`, `0624`, `0693`, `0735`, `0824` | `0624` e `0693`: hiperextensão; o capítulo diz valgo com rotação externa. Sem gabarito: `0735` (sustentada), `0824` (o capítulo usa a combinada intra e extra-articular). |
+| 6 | `pediatria-0850`, `0666`, `0827` | Sem gabarito: `0827` (o capítulo aponta o compartimento flexor profundo, não os flexores do carpo). |
