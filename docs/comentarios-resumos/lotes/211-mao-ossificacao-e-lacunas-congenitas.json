@@ -1,0 +1,113 @@
+{
+  "mao-2332": {
+    "questaoSha256": "5a7c6e53acd6d9d6eda68df97f0c01e249461f28f3b12d2ced8a4762fd4dffc5",
+    "comentarioAnteriorSha256": "d121ef5c15a2e0bd33d1d84c2840054545b58291c2aa377c74460923a674bd55",
+    "comentario": {
+      "conceito": "O gabarito registrado é **alternativa A, 60° no colo do quinto metacarpo**, mas o resumo consultado adota **até 50°**, não 60°, como tolerância angular desse colo. A diferença precisa ficar explícita: preservar a resposta da questão não autoriza aumentar silenciosamente o limite descrito na fonte (Rockwood adultos, 10ª edição, capítulo 45, tolerância de desvio).\n\nO quinto raio consegue compensar mais angulação porque sua **carpometacarpal** é mais móvel que as centrais. Isso explica tolerância maior, mas não elimina a avaliação funcional. Rotação com cruzamento, pseudogarra, déficit de extensão e encurtamento precisam ser examinados separadamente do ângulo sagital.\n\nNa **pseudogarra**, a cabeça desviada para volar pela angulação de ápice dorsal obriga compensação com hiperextensão da MCF e flexão da IFP. Uma deformidade importante que prejudica a função pesa na indicação cirúrgica. Já a exposição exige avaliar e tratar a ferida e a necessidade de desbridamento; não é uma simples fratura fechada que se decide apenas pelo ângulo.\n\n**Na prova: ** a alternativa A permanece como letra registrada. Para estudar o resumo, reter o limite de 50° e as ressalvas funcionais. Nenhuma alternativa fornece o valor exato da fonte, e não se deve apresentar 60° como número que esse resumo sustenta. A seção de tolerância metacarpiana explica tanto a maior compensação do quinto quanto os desvios que mudam a conduta.\n\n**Por que esta questão foi criada.** Inspirada na questão 57 do SIMÃO 2024, que perguntou qual achado não é indicação absoluta de cirurgia na fratura do colo do metacarpo.",
+      "correta": "A alternativa A é a resposta registrada, pois a pergunta pretende distinguir angulação isolada das outras situações. Contudo, a angulação de 60° excede os 50° do resumo consultado; a opção não corresponde literalmente ao limite dessa fonte. A divergência permanece no alerta, sem alterar o gabarito ou ensinar uma tolerância não documentada.",
+      "incorretas": {
+        "B": "A fratura exposta exige examinar a ferida, contaminação, partes moles e necessidade de desbridamento. O resumo a coloca entre as contraindicações relativas ao tratamento sem cirurgia e opera as expostas que precisam de desbridamento; não é o achado angular isolado de uma fratura fechada que a questão pretende selecionar.",
+        "C": "A sobreposição dos dedos revela rotação com repercussão na cascata digital. A fonte aponta qualquer cruzamento como indicação de correção cirúrgica; uma boa tolerância à angulação sagital do quinto não compensa esse desvio rotacional.",
+        "D": "Pseudogarra importante com prejuízo funcional é justamente uma repercussão mecânica que o resumo trata como indicação de cirurgia. Ela não deve ser descartada por o ângulo parecer aceitável, pois envolve hiperextensão compensatória da MCF e flexão da IFP ao tentar estender o dedo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Metacarpos: tolerância de desvio, colo do quinto e fixação."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito registrado é a alternativa A (60° no colo do quinto). O resumo Rockwood 10 cap 45 descreve até 50° e preferência por operar acima disso, além de rotação, encurtamento e repercussão funcional. A fonte não fundamenta 60°; gabarito preservado com divergência explícita."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+        ],
+        "blocos": [
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "e3f1c50c63f1770c4d024b7f42a23f28a08739d33e8984af93682a7949e472ca"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0251": {
+    "questaoSha256": "def5ed7dd9ce4c21c72997ba7c4899de58c56c357d2aee8fe0269e8cbc78da0f",
+    "comentarioAnteriorSha256": "a4098ffbb952bbb7e9fdf153d32a0241855d869b1ff282a9f352c698400791e4",
+    "comentario": {
+      "conceito": "Os primeiros centros carpais a aparecer são os do **hamato e do capitato**, alternativa A. O resumo pediátrico os coloca antes de piramidal, semilunar e escafoide na cronologia de ossificação (Rockwood and Wilkins, 10ª edição, capítulo 8, anatomia, exame e remodelação).\n\nA radiografia mostra a parte **ossificada** dos ossos em desenvolvimento. Assim, não ver todos os ossos de um punho adulto numa criança pequena não significa que as estruturas estejam anatomicamente ausentes. É preciso combinar idade, dor, trauma e sequência de aparecimento dos núcleos para interpretar a imagem.\n\nA fonte situa o capitato até o primeiro ano e o hamato aos 4 meses; depois aparecem o piramidal no segundo ano, o semilunar no quarto e o escafoide no quinto. O pisiforme vem bem mais tarde, por volta de 9–10 anos. Esses marcos servem à comparação da pergunta: os dois centros iniciais pertencem ao par capitato/hamato, e não a uma combinação de um osso inicial com outro tardio.\n\n**Na prova: ** os nomes importam mais que decorar uma idade rígida para cada radiografia individual: capitato e hamato são o par precoce. A seção de ossificação do resumo permite comparar todas as alternativas, sem confundir desenvolvimento normal com fratura ou ausência de osso.",
+      "correta": "A. Hamato e capitato são os dois centros precoces descritos no resumo, antes do piramidal, semilunar e escafoide. A ordem inversa dos nomes dentro do par não altera a resposta à pergunta sobre quais aparecem primeiro.",
+      "incorretas": {
+        "B": "O capitato está no grupo inicial, mas o escafoide surge mais tarde, por volta do quinto ano na fonte. Misturar um centro precoce com o escafoide não identifica o par dos primeiros núcleos.",
+        "C": "Escafoide e semilunar aparecem depois dos dois centros iniciais. O resumo situa o semilunar no quarto ano e o escafoide no quinto, distantes do aparecimento precoce de capitato e hamato.",
+        "D": "O piramidal é anterior ao semilunar na sequência descrita, mas ambos vêm depois de capitato e hamato. A pergunta não pede dois ossos consecutivos em qualquer ponto da cronologia, e sim o primeiro par.",
+        "E": "O hamato é precoce, porém o piramidal surge no segundo ano na descrição da fonte. A alternativa substitui o capitato por um centro posterior e, por isso, não reúne os dois primeiros."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Anatomia, exame e remodelação"
+        ],
+        "blocos": [
+          "anatomia-exame-e-remodelacao-06a7a2e4"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0300": {
+    "questaoSha256": "7109839cd9a38ae8c1d856b5b416ae4fc3350abc4a205dd783a1248058ec0b31",
+    "comentarioAnteriorSha256": "bbdb6d3177dd4bb5768cb69453a5328d1f6013d847f6776728c7095027af6617",
+    "comentario": {
+      "conceito": "O resumo situa o início da ossificação do **escafoide no quinto ano**, compatível com a faixa **4–5 anos da alternativa C**. Esse aparecimento é mais tardio que o dos primeiros centros carpais, e acontece de **distal para proximal** (Rockwood and Wilkins, 10ª edição, capítulo 8, anatomia e ossificação).\n\nO núcleo radiográfico representa a ossificação em curso, não o tamanho final de um osso adulto. Por isso, a avaliação do punho infantil precisa levar em conta a idade e a porção já ossificada. A progressão distal–proximal pode fazer a relação entre os núcleos parecer diferente daquela do carpo maduro; o resumo alerta para uma aparência de falso Terry Thomas nesse contexto.\n\nA cronologia permite comparar as faixas: capitato e hamato aparecem no começo da vida; o piramidal vem depois; o semilunar é situado no quarto ano; e o escafoide, no quinto. O pisiforme é ainda mais tardio. Não se deve trocar a idade do escafoide pela de um centro que aparece antes, nem supor que o começo da ossificação signifique maturação completa imediata.\n\n**Na prova: ** para o escafoide infantil, marcar 4–5 anos entre as opções. A fonte consultada fornece o marco do quinto ano, e a alternativa C é a que o abrange. A seção de ossificação descreve também a direção distal–proximal.",
+      "correta": "C. A faixa 4–5 anos contém o quinto ano, no qual o resumo situa o aparecimento do núcleo do escafoide. O dado se refere ao início de sua visualização pela ossificação, e não à conclusão de todo seu desenvolvimento.",
+      "incorretas": {
+        "A": "1–2 anos é cedo demais para o marco do escafoide apresentado na fonte. Essa parte da cronologia envolve centros que aparecem antes, como os primeiros ossos carpais e o piramidal, sem corresponder ao escafoide no quinto ano.",
+        "B": "3–4 anos termina antes do marco do quinto ano indicado para o escafoide. O semilunar é situado no quarto ano no resumo; transferir essa idade para o escafoide troca dois centros distintos.",
+        "D": "6–7 anos desloca o aparecimento para depois do marco descrito. A fonte situa o escafoide no quinto ano; ossos que aparecem mais tarde, como o pisiforme, não devem definir sua idade de início."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Anatomia, exame e remodelação"
+        ],
+        "blocos": [
+          "anatomia-exame-e-remodelacao-06a7a2e4"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
