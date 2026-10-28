@@ -3911,3 +3911,18 @@ SCIWORA (TARO 2008 `0755`, TARO 2006 `0833`) não é discutida neste capítulo.
 **Divergências.** ENARE 2023 (`1080`): razão de POWERS; o capítulo a considera ultrapassada na criança e usa o CCI.
 
 **Aproveitamento:** `pediatria-1240` a `pediatria-1254`, 15 questões, gabarito A4/B3/C4/D4, mediana de 2.767 caracteres.
+
+## Coluna toracolombar na criança, Rockwood and Wilkins 10ª ed., cap. 22
+
+**Recorte.** Busca por toracolombar, CHANCE, cinto, faceta vazia, placa terminal, compressão, explosão e SCIWORA em Ortopedia pediátrica e Coluna, todas as provas.
+A banca cobra a faceta vazia (TEOT 2025 `pediatria-0913`), o limite cirúrgico da compressão (TARO 2022 `coluna-0302`), a placa terminal (TARO 2018 `pediatria-0627`)
+e a SCIWORA (TEPOP 2024 `coluna-0227`, TARO 2014 `coluna-0312`, TARO 2024 `coluna-0179`, TARO 2006 `pediatria-0833`, TARO 2008 `pediatria-0755`).
+
+**Forma.** Enunciados curtos, sem imagem.
+
+**Lacunas com cara de prova (projeção).** Cinto abdominal e abdome, maus-tratos no lactente, TLICS, explosão estável, CHANCE óssea com órtese, fratura-luxação,
+escoliose paralítica abaixo de 10 anos, avaliação inicial, fratura da faceta do atleta, corticoide, anatomia.
+
+**Divergências.** Nenhuma frontal; SCIWORA (localização e tratamento) e placa terminal (sexo e segmento) vão além do capítulo.
+
+**Aproveitamento:** `pediatria-1255` a `pediatria-1269`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.661 caracteres.
