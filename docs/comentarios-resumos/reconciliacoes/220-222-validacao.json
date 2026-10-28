@@ -1,0 +1,754 @@
+{
+  "base": "9d52afe2d073ee5822797a0246ef59a0d49ae69c",
+  "lotes": {
+    "220": {
+      "revisadas": [
+        "pediatria-1213",
+        "pediatria-1215",
+        "pediatria-1216",
+        "pediatria-1217",
+        "pediatria-1220",
+        "pediatria-1221",
+        "pediatria-1222"
+      ],
+      "lacunas": [
+        "pediatria-1214",
+        "pediatria-1218",
+        "pediatria-1219"
+      ]
+    },
+    "221": {
+      "revisadas": [
+        "pediatria-1223",
+        "pediatria-1224",
+        "pediatria-1225",
+        "pediatria-1226",
+        "pediatria-1227",
+        "pediatria-1229",
+        "pediatria-1230",
+        "pediatria-1231",
+        "pediatria-1232"
+      ],
+      "lacunas": [
+        "pediatria-1228"
+      ]
+    },
+    "222": {
+      "revisadas": [
+        "pediatria-1233",
+        "pediatria-1234",
+        "pediatria-1235",
+        "pediatria-1237",
+        "pediatria-1238",
+        "pediatria-1239",
+        "pediatria-1240",
+        "pediatria-1241",
+        "pediatria-1242"
+      ],
+      "lacunas": [
+        "pediatria-1236"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwoodcriancas10-19-ombro-umero": {
+      "markdownSha256Bytes": "b8cffea6c8a99d678d2974c8622d00759abe4cde2ed102ed671d6f6295d3364d",
+      "linhas": 93,
+      "compiladoSha256Bytes": "57eabf77f025dd6bd0db27b0774c678cefbea0d5a764c066c552b7958d1907f8"
+    },
+    "rockwoodcriancas10-20-clavicula-escapula": {
+      "markdownSha256Bytes": "077e092cc8bb1f99fb0c50bb868a47af888449c282bedadd799d353c09af11ed",
+      "linhas": 116,
+      "compiladoSha256Bytes": "583b496c7cbcfb55eb61cc9f650f95ac6bceb4faf5b236e14d48fe18736ec1d9"
+    },
+    "rockwoodcriancas10-21-coluna-cervical": {
+      "markdownSha256Bytes": "980864b664c75234f6579503daa0c2c46b1dde22647327185ac770151244f8d1",
+      "linhas": 118,
+      "compiladoSha256Bytes": "1f700e7cb63d84958d702e701917c5651d18ae9e49306c94ab329f372a61b90b"
+    },
+    "rockwoodcriancas10-07-patologicas-maus-tratos": {
+      "markdownSha256Bytes": "d975d07ad4d2152e3f2bc61ad363e60763c3077bcf85e46c248fcad2f6f36bbc",
+      "linhas": 109,
+      "compiladoSha256Bytes": "4f841f5ae3d7169ede85405852b5563529fa537479d5cb384f658b25b1cf9c95"
+    }
+  },
+  "leitura": "Resumos infantis19 e20 integralmente relidos;21 integralmente lido nesta unidade;07 já integralmente lido,hash preservado e consultado para delimitar a lacuna1236. Somente corpo independente e tabelas/sínteses prova,sem usar comentários anteriores ou notas questoes como fonte.",
+  "referenciasHistoricas": {
+    "pediatria-1213": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Mechanisms of Injury e Signs and Symptoms of Shoulder Dislocations"
+      ],
+      "comentarioAnteriorSha256": "e81820f261a2f6dee41577464eb65958432a706966e4303625219cf6732e8e1f"
+    },
+    "pediatria-1215": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Pathoanatomy and Applied Anatomy Relating to Proximal Humerus Fractures (Fig. 19-20)"
+      ],
+      "comentarioAnteriorSha256": "5e4ca332a4370f94992c18c0ea222b02baaf132e60c4c854ef6cee473c0cf359"
+    },
+    "pediatria-1216": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Nonoperative Treatment of Proximal Humerus Fractures (Tabela 19-1)"
+      ],
+      "comentarioAnteriorSha256": "99f115577ae9f183da3bfbeb495df45c34b1904f76f418d548aa7bc653f176f2"
+    },
+    "pediatria-1217": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Pathoanatomy and Applied Anatomy Relating to Proximal Humerus Fractures"
+      ],
+      "comentarioAnteriorSha256": "fce6c3b7bb660d37528e5c5f1c7a88361cdcee81810590691460e27ed37475d4"
+    },
+    "pediatria-1220": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Management of Expected Adverse Outcomes Related to Proximal Humerus Fractures (Fig. 19-26)"
+      ],
+      "comentarioAnteriorSha256": "297840c50ae97cc6787a19a175b80c35e7813f4251f7308e9a089fbb49811901"
+    },
+    "pediatria-1221": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Nonoperative Treatment of Humerus Shaft Fractures"
+      ],
+      "comentarioAnteriorSha256": "c7631f7e0fe58a3826ebba215e7915aaaaab4ddcc9fab2575467f51d4bafe847"
+    },
+    "pediatria-1222": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Injuries Associated With Humerus Shaft Fractures e Author's Preferred Treatment of Humerus Shaft Fractures"
+      ],
+      "comentarioAnteriorSha256": "0cea0fc632ddd8216ea270b03e2a99fcea3ce00a3b9df20daedabe5520a043ac"
+    },
+    "pediatria-1214": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Operative Treatment of Shoulder Dislocations (Latarjet Reconstruction) e Author's Preferred Treatment"
+      ],
+      "comentarioAnteriorSha256": "4473eebfe23240654a1401a0ac34d75892263dc0cc96fdc3347260d9afbd67d6"
+    },
+    "pediatria-1218": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Percutaneous Pin Fixation (Figs. 19-22 e 19-23)"
+      ],
+      "comentarioAnteriorSha256": "795459133131aee73bf80b7fa4734cdadf49f4f8f3c02673317a54cda6e72521"
+    },
+    "pediatria-1219": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Injuries Associated With Proximal Humerus Fractures e Management of Expected Adverse Outcomes"
+      ],
+      "comentarioAnteriorSha256": "6d639cfc67739758a38ba919ea05fdc3c35b9c173312a2872ea411fd1701662e"
+    },
+    "pediatria-1223": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Mechanisms of Injury, Signs and Symptoms e Nonoperative Treatment of Humerus Shaft Fractures (Fig. 19-28)"
+      ],
+      "comentarioAnteriorSha256": "89fd858719370cb1bdb77f7e4a9044b6d0cd22074659f8ed3f407d15564840df"
+    },
+    "pediatria-1224": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Classification of Proximal Humerus Fractures (Fig. 19-19)"
+      ],
+      "comentarioAnteriorSha256": "d899ab32ef296ec588b3aa4cfdf1ffa96ce24d93dcc60f592bd31ddf8c41cc6c"
+    },
+    "pediatria-1225": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Mechanisms of Injury for Midshaft Clavicle Fractures"
+      ],
+      "comentarioAnteriorSha256": "4e2bedae601944e0df7d2826d5b1f2736d4c656b1432437aacc8c8be8b60186c"
+    },
+    "pediatria-1226": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Introduction (Midshaft Clavicle Fractures) e seção Introduction to Distal Clavicle Fractures"
+      ],
+      "comentarioAnteriorSha256": "98b333961dd248bf0005b7806dde84c1bebdb256cc251b22706e6730e7889ba0"
+    },
+    "pediatria-1227": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Mechanisms of Injury, Injuries Associated e Signs and Symptoms of Midshaft Clavicle Fractures (Fig. 20-1)"
+      ],
+      "comentarioAnteriorSha256": "82fc7d974f45a8fa00659a84994824fe483ce7e85bf0477614ca67694d3cce9b"
+    },
+    "pediatria-1229": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Classification, Nonoperative Treatment (Outcomes and Return to Sport) e Author's Preferred Treatment for Midshaft Clavicle Fractures (Algoritmo 20-1)"
+      ],
+      "comentarioAnteriorSha256": "bf64d557bb61cbedd2f6d436be4b58caf38f4d7c9279a218f77ece64a36362d1"
+    },
+    "pediatria-1230": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Treatment Options e Operative Treatment of Midshaft Clavicle Fractures (Indications/Contraindications)"
+      ],
+      "comentarioAnteriorSha256": "fa25ef11c969c75d5cab852fa53174cf665673203c05dddc49501489954aef35"
+    },
+    "pediatria-1231": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Nonoperative Treatment e Author's Preferred Treatment for Midshaft Clavicle Fractures (Algoritmo 20-1)"
+      ],
+      "comentarioAnteriorSha256": "c2cf0f242122df39bcade98984206387e6cd9c38d9af91f887edd0a9367ddcc5"
+    },
+    "pediatria-1232": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Pathoanatomy and Applied Anatomy Related to Midshaft Clavicle Fractures"
+      ],
+      "comentarioAnteriorSha256": "37d07f3aa873bc67acfbb48f02459f8f0e85a1f959dd3c2b3c934542ca438630"
+    },
+    "pediatria-1228": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Mechanisms of Injury for Midshaft Clavicle Fractures (Fig. 20-1B)"
+      ],
+      "comentarioAnteriorSha256": "45d1562ee97f85d17e6fc71bd4871dc18fa413202210f9b18d2fa56c3d14fd3a"
+    },
+    "pediatria-1233": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Classification of Distal Clavicle Fractures"
+      ],
+      "comentarioAnteriorSha256": "4be9f92801329790780fc4177f9ddb9cd37194a59c31d11c521c79f7f544f3df"
+    },
+    "pediatria-1234": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Classification e Operative Treatment of Distal Clavicle Fractures; seção Classification of Acromioclavicular Dislocations"
+      ],
+      "comentarioAnteriorSha256": "a2672d40b93f3bc65f2758b9cb64dc8b55db90177391012307c1f24794d9d26d"
+    },
+    "pediatria-1235": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Signs and Symptoms, Imaging e Operative Treatment of Distal Clavicle Fractures; Authors' Preferred Treatment for Distal Clavicle Fractures"
+      ],
+      "comentarioAnteriorSha256": "6de69576393891929bca437c6625c26aae192b7e056e458cb5b30550e002d9b4"
+    },
+    "pediatria-1237": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Classification, Nonoperative e Operative Treatment of Scapula Fractures; Authors' Preferred Treatment for Scapula Fractures (Algoritmo 20-2)"
+      ],
+      "comentarioAnteriorSha256": "650f7a61682d1721f71f30c807863eb9a71ef272bb7e8fa8cb3849fe219cc943"
+    },
+    "pediatria-1238": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Nonoperative Treatment of Sternoclavicular Dislocations (Techniques) e Management of Expected Adverse Outcomes in Sternoclavicular Fracture-Dislocations"
+      ],
+      "comentarioAnteriorSha256": "9d474a60dfe099ebf7ad18d4d22113b47f529f2b5bb1caee41307c9df2565ac3"
+    },
+    "pediatria-1239": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Signs and Symptoms, Imaging, Classification e Operative Treatment of Acromioclavicular Dislocations (Fig. 20-13)"
+      ],
+      "comentarioAnteriorSha256": "2c0c88ebb689da4805b7e174ed2d27ebcd839ad8b24ef5b99032466de0653063"
+    },
+    "pediatria-1240": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Introduction to Cervical Spine Injury"
+      ],
+      "comentarioAnteriorSha256": "e656bbd9cf44e3bc2ea4692e757a7c2b2cb641c77e903c19f144a912f7884793"
+    },
+    "pediatria-1241": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Imaging of Cervical Spine Injury e Radiographic Evaluation of the Spine by Level (Fig. 21-1)"
+      ],
+      "comentarioAnteriorSha256": "1993d0a057b8e11ebf2c8142fb0a80ce4830014fe2fe31209eb47ab22090992a"
+    },
+    "pediatria-1242": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Initial Management and Transport of Patients With Suspected Cervical Spine Injury (Fig. 21-4)"
+      ],
+      "comentarioAnteriorSha256": "8a257adbd38526883dab91485d4b7183c7d07beaa02a32f041d150e49ac0f84a"
+    },
+    "pediatria-1236": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Introduction, Mechanisms of Injury e Injuries Associated With Scapula Fractures"
+      ],
+      "comentarioAnteriorSha256": "004752517070ea64603f04107c6183db0cc62e054651c4f8f7b0ac838d8c6f2c"
+    }
+  },
+  "origensMotivosPreservados": {
+    "pediatria-1213": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A luxação posterior é a que mais se perde no pronto-socorro, e as pistas clínicas são clássicas.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. Reconhecer rotação interna fixa e o contexto de convulsão ajuda a identificar a luxação posterior, conforme o resumo.",
+      "correcaoConferencia": "Preservado motivo de projeção; retirada classificação de frequência de erro diagnóstico não demonstrada no resumo."
+    },
+    "pediatria-1215": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0571"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2022 (`pediatria-0571`), que pergunta a idade de aparecimento da tuberosidade maior (1 a 3 anos). O mesmo bloco de anatomia explica a remodelação. Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2022 (`pediatria-0571`), que pergunta a idade de aparecimento da tuberosidade maior (1 a 3 anos). O mesmo bloco de anatomia explica a remodelação. Depois, faça a oficial."
+    },
+    "pediatria-1216": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0945"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0945`), que pergunta a angulação e o desvio aceitáveis aos 7 anos (40 a 70 graus, 50% a 100%). Aqui a idade muda e a linha da tabela também. Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0945`), que pergunta a angulação e o desvio aceitáveis aos 7 anos (40 a 70 graus, 50% a 100%). Aqui a idade muda e a linha da tabela também. Depois, faça a oficial."
+    },
+    "pediatria-1217": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0524",
+        "pediatria-0667"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2026 (`pediatria-0524`), que pergunta o desvio do fragmento proximal (flexão e rotação externa), e do TARO 2012 (`pediatria-0667`), que pergunta a manobra de redução (abdução, flexão e rotação lateral). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2026 (`pediatria-0524`), que pergunta o desvio do fragmento proximal (flexão e rotação externa), e do TARO 2012 (`pediatria-0667`), que pergunta a manobra de redução (abdução, flexão e rotação lateral). Depois, faça as oficiais."
+    },
+    "pediatria-1220": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O úmero varo junta anatomia, fise e função, e tem critérios objetivos.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O úmero varo junta anatomia, fise e função, e tem critérios objetivos."
+    },
+    "pediatria-1221": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0631"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0631`), que pergunta a rotação medial e o varo aceitáveis (15 graus e 20 graus). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0631`), que pergunta a rotação medial e o varo aceitáveis (15 graus e 20 graus). Depois, faça a oficial."
+    },
+    "pediatria-1222": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0618"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0618`), sobre a fratura da diáfise do úmero na criança.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0618`), sobre a fratura da diáfise do úmero na criança."
+    },
+    "pediatria-1223": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0953"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0953`), que pergunta a principal complicação da fratura da diáfise do úmero de parto (deformidade em rotação interna). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0953`), que pergunta a principal complicação da fratura da diáfise do úmero de parto (deformidade em rotação interna). Depois, faça a oficial."
+    },
+    "pediatria-1224": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0714",
+        "pediatria-0848"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2020 (`pediatria-0714`), sem gabarito, que pergunta o tipo associado à luxação glenoumeral, e do TEOT 2021 (`pediatria-0848`), que pede o tipo mais frequente abaixo de 5 anos (I). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2020 (`pediatria-0714`), sem gabarito, que pergunta o tipo associado à luxação glenoumeral, e do TEOT 2021 (`pediatria-0848`), que pede o tipo mais frequente abaixo de 5 anos (I). Depois, faça as oficiais."
+    },
+    "pediatria-1225": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0643"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2019 (`pediatria-0643`), que perguntou o mecanismo mais comum na idade escolar e deu como gabarito a queda com trauma na região lateral do ombro. Depois de resolver esta, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2019 (`pediatria-0643`), que perguntou o mecanismo mais comum na idade escolar e deu como gabarito a queda com trauma na região lateral do ombro. Depois de resolver esta, faça a oficial."
+    },
+    "pediatria-1226": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0685",
+        "pediatria-0657"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2013 (`pediatria-0685`), que perguntou a prevalência das fraturas do terço médio (76% a 85%), e do TARO 2012 (`pediatria-0657`), que perguntou o percentual das fraturas da clavícula entre as fraturas da criança segundo GUARNIERO (cerca de 11%, dentro da faixa de 5% a 15% do capítulo). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2013 (`pediatria-0685`), que perguntou a prevalência das fraturas do terço médio (76% a 85%), e do TARO 2012 (`pediatria-0657`), que perguntou o percentual das fraturas da clavícula entre as fraturas da criança segundo GUARNIERO (cerca de 11%, dentro da faixa de 5% a 15% do capítulo). Depois, faça as oficiais."
+    },
+    "pediatria-1227": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0706"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2022 (`pediatria-0706`), que perguntou o lado da fratura de parto e a apresentação (direito, occipito-esquerda-anterior). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2022 (`pediatria-0706`), que perguntou o lado da fratura de parto e a apresentação (direito, occipito-esquerda-anterior). Depois, faça a oficial."
+    },
+    "pediatria-1229": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A indicação cirúrgica no adolescente é a maior controvérsia do capítulo, e a resposta atual do autor vai contra a extrapolação do adulto.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A indicação cirúrgica no adolescente é uma discussão importante do capítulo, e a resposta atual do autor vai contra a extrapolação do adulto.",
+      "correcaoConferencia": "Preservado motivo específico de projeção; retirado superlativo/comparação de frequência não demonstrado."
+    },
+    "pediatria-1230": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre indicação absoluta e relativa é o ponto que mais se cobra quando a conduta habitual é não operatória.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre indicação absoluta e relativa é um contraste importante quando a conduta habitual é não operatória.",
+      "correcaoConferencia": "Preservado motivo específico de projeção; retirado superlativo/comparação de frequência não demonstrado."
+    },
+    "pediatria-1231": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. Os prazos de tipoia e de retorno ao esporte são os números práticos do capítulo.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. Os prazos de tipoia e de retorno ao esporte são os números práticos do capítulo."
+    },
+    "pediatria-1232": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. Os números de crescimento sustentam a decisão de não operar o adolescente e explicam por que a lesão medial \"esternoclavicular\" do jovem é muitas vezes fisária.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. Os números de crescimento sustentam a decisão de não operar o adolescente e explicam por que a lesão medial \"esternoclavicular\" do jovem é muitas vezes fisária."
+    },
+    "pediatria-1233": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0633"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2018 (`pediatria-0633`), que pergunta a estrutura rompida na fratura distal desviada da criança. O tipo IV, que só existe com fise aberta, é a pegadinha natural da classificação.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2018 (`pediatria-0633`), que pergunta a estrutura rompida na fratura distal desviada da criança. O tipo IV, que só existe com fise aberta, é a pegadinha natural da classificação."
+    },
+    "pediatria-1234": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0633",
+        "pediatria-0822"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0633`), que perguntou a estrutura que normalmente se rompe na fratura distal desviada tipo V de ROCKWOOD na criança (periósteo superior), e do TARO 2006 (`pediatria-0822`), que afirmou que a lesão dos coracoclaviculares é rara na fratura lateral da criança. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0633`), que perguntou a estrutura que normalmente se rompe na fratura distal desviada tipo V de ROCKWOOD na criança (periósteo superior), e do TARO 2006 (`pediatria-0822`), que afirmou que a lesão dos coracoclaviculares é rara na fratura lateral da criança. Depois, faça as oficiais."
+    },
+    "pediatria-1235": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0550"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2023 (`pediatria-0550`), que perguntou a indicação cirúrgica mais frequente da fratura do terço lateral na criança. O gabarito oficial é a exposição da fratura; o capítulo aponta o desvio posterior significativo como a indicação mais comum. Resolva a oficial sabendo dessa divergência.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2023 (`pediatria-0550`), que perguntou a indicação cirúrgica mais frequente da fratura do terço lateral na criança. O gabarito oficial é a exposição da fratura; o capítulo aponta o desvio posterior significativo como a indicação mais comum. Resolva a oficial sabendo dessa divergência."
+    },
+    "pediatria-1237": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. Os números (5 mm, 1 cm e 40 graus, 2 cm, 2 mm) são a matéria-prima das questões sobre escápula.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. Os números (5 mm, 1 cm e 40 graus, 2 cm, 2 mm) são a matéria-prima das questões sobre escápula."
+    },
+    "pediatria-1238": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0533"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2025 (`pediatria-0533`), que perguntou a manobra de redução da luxação esternoclavicular posterior na criança (coxim entre as escápulas e tração do membro). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2025 (`pediatria-0533`), que perguntou a manobra de redução da luxação esternoclavicular posterior na criança (coxim entre as escápulas e tração do membro). Depois, faça a oficial."
+    },
+    "pediatria-1239": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O tipo IV reúne a armadilha diagnóstica e a indicação cirúrgica do capítulo.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O tipo IV reúne a armadilha diagnóstica e a indicação cirúrgica do capítulo."
+    },
+    "pediatria-1240": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0587"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2021 (`pediatria-0587`), que perguntou por que a lesão cervical abaixo de 8 anos é mais comum no segmento atlantoaxial (maior mobilidade por frouxidão ligamentar). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2021 (`pediatria-0587`), que perguntou por que a lesão cervical abaixo de 8 anos é mais comum no segmento atlantoaxial (maior mobilidade por frouxidão ligamentar). Depois, faça a oficial."
+    },
+    "pediatria-1241": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0851",
+        "pediatria-0717"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0851`), que perguntou o que a linha espinolaminar de SWISCHUK avalia (pseudoluxação C2-C3), e do TARO 2020 (`pediatria-0717`), que perguntou o mesmo e está sem gabarito oficial. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0851`), que perguntou o que a linha espinolaminar de SWISCHUK avalia (pseudoluxação C2-C3), e do TARO 2020 (`pediatria-0717`), que perguntou o mesmo e está sem gabarito oficial. Depois, faça as oficiais."
+    },
+    "pediatria-1242": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A prancha da criança é uma regra prática, fácil de cobrar e que muda a conduta no atendimento inicial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A prancha da criança é uma regra prática, fácil de cobrar e que muda a conduta no atendimento inicial."
+    }
+  },
+  "correcoesMotivos": [
+    {
+      "id": "pediatria-1213",
+      "antes": "**Por que esta questão foi criada.** É uma questão de projeção. A luxação posterior é a que mais se perde no pronto-socorro, e as pistas clínicas são clássicas.",
+      "depois": "**Por que esta questão foi criada.** É uma questão de projeção. Reconhecer rotação interna fixa e o contexto de convulsão ajuda a identificar a luxação posterior, conforme o resumo.",
+      "motivo": "Preservado motivo de projeção; retirada classificação de frequência de erro diagnóstico não demonstrada no resumo."
+    },
+    {
+      "id": "pediatria-1229",
+      "antes": "**Por que esta questão foi criada.** É uma questão de projeção. A indicação cirúrgica no adolescente é a maior controvérsia do capítulo, e a resposta atual do autor vai contra a extrapolação do adulto.",
+      "depois": "**Por que esta questão foi criada.** É uma questão de projeção. A indicação cirúrgica no adolescente é uma discussão importante do capítulo, e a resposta atual do autor vai contra a extrapolação do adulto.",
+      "motivo": "Preservado motivo específico de projeção; retirado superlativo/comparação de frequência não demonstrado."
+    },
+    {
+      "id": "pediatria-1230",
+      "antes": "**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre indicação absoluta e relativa é o ponto que mais se cobra quando a conduta habitual é não operatória.",
+      "depois": "**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre indicação absoluta e relativa é um contraste importante quando a conduta habitual é não operatória.",
+      "motivo": "Preservado motivo específico de projeção; retirado superlativo/comparação de frequência não demonstrado."
+    }
+  ],
+  "figuras": "Trinta casos textuais,sem arquivo de imagem e sem figura indispensável citada no enunciado.",
+  "divergencia": "1233 mantém A/tipoIV Neer–Craig. O enunciado fala em coracoclaviculares presos à diáfise,enquanto o corpo do resumo os prende ao periósteo inferior com saída do osso pelo superior;distinção anatômica explícita em alerta,sem alterar o enunciado.",
+  "lacunas": {
+    "pediatria-1214": "O resumo 19 indica LATARJET na perda óssea glenoidal, Hill-Sachs fora do trilho ou falha do Bankart e menciona efeito triplo osso/tendão conjunto/subescapular. Não define explicitamente a TRANSFERÊNCIA DO CORACOIDE, nome anatômico do procedimento na alternativa D, nem desenvolve a reconstrução para uma aula independente. A palavra Latarjet isolada não prova sua descrição anatômica. Falta descrição independente do enxerto/transferência e do mecanismo; sem ampliar o resumo de memória. Comentário preservado sem selo.",
+    "pediatria-1218": "O resumo 19 cita entrada dos fios no tubérculo deltoide ou acima e a expressão “duas vezes a altura articular”, mas não define o ponto de medida como ABAIXO DO TOPO DO ÚMERO, a relação exata com o trajeto do axilar nem a segurança comparativa das trajetórias das outras opções. A questão exige topografia completa para proteger o nervo. Falta figura/técnica independente dos pontos de referência e da distância ao nervo; sem inferir o eixo e o ponto zero da medida. Comentário intacto sem selo.",
+    "pediatria-1219": "O resumo 19 associa lesões nervosas a VALGO e descreve recuperação em 9–12 meses, mas não liga explicitamente esse grupo à DIÁFISE DESLOCADA PARA CIMA E PARA DENTRO, componente da alternativa A. A tabela muscular descreve vetores por nível de inserção, não demonstra que todo padrão de valgo com lesão neural tenha esse vetor. Falta descrição independente da geometria/fratura que sustenta a combinação completa; não equiparar tabela de um nível à associação nervosa universal. Comentário e gabarito preservados sem selo.",
+    "pediatria-1228": "O resumo20 identifica pseudartrose congênita à direita(exceto dextrocardia) e consolidação da fratura de parto em1–3semanas, mas não descreve a FALHA COM PONTAS ARREDONDADAS e o quadro persistente aos6meses, nem a relação comparativa com PARALISIA BRAQUIAL. Além disso,a própria fratura de parto também costuma serDIREITA;logo o lado isolado da alternativaD não separa as duas condições. Falta descrição radioclínica independente e explicação de quais dados realmente discriminam o caso, sem usar comentário antigo como fonte. Preservado sem selo.",
+    "pediatria-1236": "O resumo20 associa fratura escapular do lactente a alto risco de maus-tratos e lista tomografia de crânio, OFTALMOLOGIA, inventário e serviço social. Não especifica FUNDO DE OLHO, exame nomeado na alternativa D; uma indicação de avaliação por especialidade não demonstra qual exame nem protocolo oftalmológico. O resumo07 também não preenche essa descrição. Falta roteiro independente da investigação ocular para conferir toda a opção, sem converter consulta em exame presumido; comentário preservado sem selo."
+  },
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 25,
+    "lacunasComentariosIntactos": 5,
+    "demaisBytesPreservados": true,
+    "motivosCriacaoConferidos": 25,
+    "ui": "25/25 casos em390/1440:resposta,aula,alerta e links exatos. Primeiro1213inspecionado visualmente.",
+    "remapeamento": "1233emDCBA:A→D emconceito,correta ealerta,sem alterar tipoIV/IIA nem a explicação periosteal."
+  },
+  "reconciliacao617": {
+    "pr": 617,
+    "head": "d7ae8078ad6a249a4259b283bdd53f62048e123d",
+    "merge": "9d52afe2d073ee5822797a0246ef59a0d49ae69c",
+    "ci": 40752850272,
+    "pages": 40753300455,
+    "publicar": 123047536023,
+    "avulsosIntegrais": 635,
+    "resumosIntegrais": 52,
+    "figuras": 39
+  },
+  "concorrencia": "Preservadas todas as entregas anteriores,PR617(19miniaulas/11lacunas),616(28/2),615(18/12),614(13/17 e rótulo2046),612(10/20 e3rótulos) e118comentários concorrentes do613. Somente25membros de pediatria.json alterados;demais bytes,fontes,questões,gabaritos e revisão médica intactos.",
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 159,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 800,
+      "pendente-inspecao-imagem": 4,
+      "revisada": 1914
+    }
+  },
+  "continuidade": "Próxima223 já tem6rascunhos e4lacunas,sem aplicação:0915(imagem aberta),1243/1244/1245/1246/1248 seguros;0288/0361/0877 imagens abertas e fonte insuficiente,1247 diferencial radiográfico incompleto. Os4arquivos de imagem foram abertos individualmente;hashes e observações no checkpoint desta evidência. Revalidar remoto/catálogo e aplicar somente após checks. Tarefa integral aberta.",
+  "inspecaoPreliminar223": [
+    {
+      "id": "pediatria-0288",
+      "questaoSha256": "7c4ac1062a4bc6859401f7c801b20830c221050d202bdf9cf982a9f04f3cc004",
+      "comentarioAnteriorSha256": "d3de758fc5f62a60d9e9eac8c4db26531dcb30a3737080a6ad886603ada6207a",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0288-1.jpeg"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0288-1.jpeg": "8d337f53be46dd280667401f3baae918d031a036985636dcea350d19bc98b136"
+      },
+      "observacaoVisual": "Desenho do pescoço com mastoide e esternocleidomastoideo nomeados, estrutura amarela no trajeto junto ao músculo e seta amarela superior. A figura não escreve o nome do nervo."
+    },
+    {
+      "id": "pediatria-0361",
+      "questaoSha256": "671a418c5e78cfff5018f5247adf3ecc9d940c020c48c4568752fafa92dc784c",
+      "comentarioAnteriorSha256": "85db6677deea09ef10e784c57462925441527a01fd6c61f9cf4a59bdb08fdab1",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0361-1.jpeg"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0361-1.jpeg": "b11bb1418ce5059744805048e849adbf115fbabdb65422b6566970e7beb7b636"
+      },
+      "observacaoVisual": "Colagem de quatro radiografias, numeradas I–IV com idades 3 anos,9 meses,5 anos e4 meses;antebraço,tórax e duas imagens do cotovelo. Sem rótulos de mecanismo na própria figura."
+    },
+    {
+      "id": "pediatria-0877",
+      "questaoSha256": "6ecda702e37e986f3e61a693d4c22f9df32b0dcba159a7fea139f3635b25f68d",
+      "comentarioAnteriorSha256": "79e4fc793f05e3af35f663c62a9389c134f381a5c6b4635667c8ba15e5b0a8f7",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0877-1.png"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0877-1.png": "6701bea8d001b4b6326eb0c3a4f6b4034b01b323ba7f152976245f40a23ca3a7"
+      },
+      "observacaoVisual": "Fotografia posterior de nádegas e membros inferiores do lactente,com pregas assimétricas;imagem clínica,sem descrição das manobras Barlow/Ortolani."
+    },
+    {
+      "id": "pediatria-0915",
+      "questaoSha256": "dfa9376bf4b9544024c60389e58f17bf1a228b4abd31b46c9c3469b6160b565a",
+      "comentarioAnteriorSha256": "e9fb8fe69e3af8aac62fc6212dbb4ed7ba7dbe204d5037a17108b24235e991c0",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0915-teot2025.jpeg"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0915-teot2025.jpeg": "bc9e2d51ed8929c2004d2adcf768b12e552ed7f546423a4b2593da027e7964df"
+      },
+      "observacaoVisual": "Radiografia AP do ombro esquerdo,com alteração da posição da extremidade lateral da clavícula na região acromioclavicular. A alteração predominante está na clavícula lateral;fise proximal do úmero visível."
+    }
+  ]
+}

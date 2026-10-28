@@ -30736,19 +30736,41 @@
   "conferido": false
  },
  "pediatria-1213": {
-  "conceito": "Um adolescente de 16 anos tem uma crise convulsiva e acorda com dor no ombro. O braço está grudado ao corpo, rodado para dentro; ele não consegue rodá-lo para fora. A radiografia em AP \"parece normal\". O que pode estar passando?\n\n**A luxação posterior.** Representa **5% ou menos** da instabilidade traumática do ombro. Em geral ocorre com o ombro **fletido, em rotação interna e aduzido**, mais associada a alta energia: quedas, colisões no esporte, acidentes de carro, **convulsões** ou eletroconvulsoterapia. Como no adulto, o diagnóstico é muitas vezes sutil, e é preciso alto índice de suspeita (Rockwood crianças, 10ª ed., cap. 19).\n\n**O exame.** O ombro fica **aduzido e em rotação interna**, doloroso, com achatamento da frente do ombro e volume atrás. A proeminência do ângulo superomedial da escápula (**sinal de PUTTI**) é frequente. O paciente resiste à mobilização passiva, sobretudo à **rotação externa**. **A incapacidade de rodar o ombro passivamente para fora ou de supinar o antebraço** deve alertar para a luxação posterior.\n\n**A imagem.** Incidências ortogonais, de preferência AP e **axilar**; alternativas são o perfil escapular em Y, a de WEST POINT e a apical oblíqua. Sem a axilar, a luxação posterior escapa.\n\n**O contraste com a anterior.** Na luxação anterior traumática, o braço fica levemente **abduzido e em rotação externa**, com o acrômio proeminente, a face posterolateral do ombro achatada e volume anterior. O nervo axilar é o mais lesado: testar a sensibilidade da face lateral do ombro e a contração do deltoide.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A luxação posterior é a que mais se perde no pronto-socorro, e as pistas clínicas são clássicas.\n\n> **Na prova:** luxação **posterior** (5% ou menos): **convulsão**, braço **aduzido e em rotação interna**, **não roda para fora nem supina**, sinal de **PUTTI**; pedir **axilar**. Anterior: abdução e rotação externa, nervo **axilar**.",
-  "correta": "**C: luxação posterior do ombro.** Ombro aduzido e em rotação interna, sem rotação externa passiva nem supinação, após convulsão, é o quadro descrito no capítulo para a luxação posterior (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "Depois de uma crise convulsiva, ombro em **adução e rotação interna**, sem conseguir rodar para fora, exige afastar **luxação posterior**, alternativa C. O resumo associa esse padrão a convulsões e recomenda a **incidência axilar** (Rockwood and Wilkins, 10ª edição, capítulo 19, instabilidade).\n\nA direção da luxação não deve ser escolhida apenas pela frequência geral. A anterior é mais comum, mas o capítulo descreve para ela força com o ombro em **abdução e rotação externa**. No caso, a postura e a limitação de movimento apontam para outro padrão.\n\nO resumo inclui ausência de rotação externa e de supinação no conjunto posterior, associado ao sinal de Putti. Esses achados devem orientar a investigação, sem insistir em mobilização forçada para provar que a amplitude está bloqueada. A imagem precisa esclarecer a relação glenoumeral.\n\n**Na prova:** convulsão e rotação interna fixa fazem a luxação posterior subir na prioridade, mesmo sendo 5% ou menos no panorama do capítulo. Frequência maior da anterior não pode apagar os sinais do caso.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Reconhecer rotação interna fixa e o contexto de convulsão ajuda a identificar a luxação posterior, conforme o resumo.",
+  "correta": "Alternativa C. Reproduz mecanismo associado, posição e bloqueio descritos para a luxação posterior. A incidência axilar é a projeção recomendada no resumo para investigar esse padrão.",
   "incorretas": {
-   "A": "**Postura oposta.** Na luxação anterior, o braço fica levemente abduzido e em rotação externa, com volume na frente do ombro.",
-   "B": "**Não explica o bloqueio da rotação.** A fratura da clavícula dói e deforma a clavícula, mas não bloqueia a rotação externa do ombro nem a supinação.",
-   "D": "**Postura em abdução extrema.** A luxatio erecta apresenta o braço em abdução extrema com o cotovelo fletido, e é rara."
+   "A": "A anterior predomina em frequência, mas a fonte a relaciona à abdução e rotação externa. A adução com rotação interna fixa após convulsão é a combinação que exige procurar a posterior, e não selecionar a direção mais comum por hábito.",
+   "B": "A pergunta descreve um padrão de posição e bloqueio glenoumeral que o resumo associa à luxação posterior. Escolher clavícula apenas por ser lesão do ombro deixaria sem explicação esse conjunto específico e a necessidade de estudar a articulação.",
+   "D": "A opção nomeia outra direção de luxação, mas não corresponde à combinação posterior de convulsão, adução e rotação interna apresentada pela fonte. O reconhecimento do padrão do caso deve vir antes de escolher uma direção pelo nome."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Mechanisms of Injury e Signs and Symptoms of Shoulder Dislocations"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Instabilidade do ombro."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Instabilidade do ombro"
+     ],
+     "blocos": [
+      "instabilidade-do-ombro-d8c2cceb"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "d216d8e27d54e348f9a429f92c6c2022d313060e0f1199f299f9fd0f73074cb4"
+    }
+   ],
+   "questaoSha256": "0531cf7de4744fd6cd82ad11aae8c731fdf0d8015878481a20b9be1a31d07667",
+   "comentarioSha256": "c48ed3601942d5aecde389e1279476e5c68a2e3623b53643858c71cd53ab1653"
+  }
  },
  "pediatria-1214": {
   "conceito": "Um rapaz de 17 anos já luxou o ombro cinco vezes. A tomografia com reconstrução mostra a borda anteroinferior da glenoide gasta e uma lesão de HILL-SACHS que encaixa na borda quando o braço abduz e roda (Rockwood crianças, 10ª ed., cap. 19, Fig. 19-7). Só costurar o lábio resolve?\n\n**A perda óssea.** Na luxação anterior traumática, a recidiva pode vir de fratura ou insuficiência da glenoide anteroinferior. Nesses casos, os **procedimentos só de partes moles não corrigem a anatomia e tendem a falhar**, sobretudo nas lesões **fora do trilho** (off-track). ITOI descreveu o **trilho glenoidal**, a parte da glenoide sobre a qual a cabeça articula, cerca de 83% da largura do círculo inferior; quando a perda da glenoide e o HILL-SACHS se encaixam, a cabeça perde o contato e luxa. A tomografia, com reconstrução 3D, é o melhor exame para medir a perda óssea. Cuidado: a ossificação normal da cabeça na criança não deve ser confundida com HILL-SACHS.\n\n**O LATARJET.** A **transferência do coracoide** com suas inserções para a glenoide tornou-se o padrão nesses casos e também na recidiva após reparo de partes moles. Ele estabiliza por um **efeito triplo**: o bloco ósseo amplia a glenoide; o tendão conjunto, preso à ponta do coracoide, funciona como tipoia anteroinferior; e a preservação das fibras do subescapular (acesso dividindo o músculo entre os dois terços superiores e o terço inferior) completa a estabilidade. Técnica: acesso deltopeitoral, osteotomia do coracoide no \"joelho\", fixação com dois parafusos de 3,5 a 4 mm, **sem deixar o bloco sobrar lateralmente** (incongruência e artrose). Cuidado com o nervo musculocutâneo, que entra no coracobraquial 4 a 5 cm abaixo.\n\n**Os resultados.** Recidiva baixa: WALTENSPUL achou 6% abaixo de 18 anos em 12 anos de seguimento, contra 5% a 25% (ou mais em algumas séries) após o BANKART artroscópico.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O conceito de trilho glenoidal e a indicação do LATARJET aparecem cada vez mais nas provas de ombro.\n\n> **Na prova:** perda óssea da glenoide ou HILL-SACHS **fora do trilho**, ou falha do BANKART = **LATARJET**; efeito **triplo** (osso, **tendão conjunto**, subescapular); sem sobra lateral do bloco.",
@@ -30766,49 +30788,118 @@
   "conferido": false
  },
  "pediatria-1215": {
-  "conceito": "Uma menina de 9 anos tem uma fratura do úmero proximal com 50 graus de angulação. Um ano depois, a radiografia parece quase normal. Por que o úmero proximal perdoa tanto?\n\n**A fise que mais cresce.** A fise proximal do úmero responde por **80% do crescimento longitudinal do úmero**: cerca de 75% antes dos 2 anos e até **90% depois dos 11** (Rockwood crianças, 10ª ed., cap. 19). Ela fecha entre 14 e 17 anos nas meninas e 16 e 18 nos meninos. Somando a mobilidade quase global do ombro, que compensa deformidades, a maioria das fraturas pode ser tratada sem cirurgia.\n\n**A ossificação.** A epífise proximal só aparece na radiografia por volta dos **6 meses**. As tuberosidades têm centros próprios: a **maior entre 1 e 3 anos**, a **menor entre 4 e 5**; elas se unem entre 5 e 7 anos e se fundem à cabeça entre 7 e 13. Esses núcleos podem confundir o diagnóstico.\n\n**A cápsula.** A superfície articular inclui a parte medial da epífise e o canto medial proximal da metáfise; a cápsula a envolve, mas a **fise é extracapsular** (só a parte mais medial fica dentro), o que a deixa suscetível à lesão. A maioria das fraturas do úmero proximal envolve a fise, em geral pela camada hipertrófica, poupando as camadas de reserva e proliferativa: por isso os SALTER-HARRIS I e II remodelam muito e raramente alteram o crescimento.\n\n**O periósteo.** Espesso e forte na face **posteromedial**, fraco na **anterolateral**, por onde os fragmentos desviam; o periósteo interposto pode bloquear a redução.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2022 (`pediatria-0571`), que pergunta a idade de aparecimento da tuberosidade maior (1 a 3 anos). O mesmo bloco de anatomia explica a remodelação. Depois, faça a oficial.\n\n> **Na prova:** fise proximal do úmero: **80%** do crescimento do úmero (75% antes de 2 anos, **90% depois de 11**); fecha **14 a 17 (F)** e **16 a 18 (M)**; tuberosidade maior **1 a 3 anos**, menor **4 a 5**; fise **extracapsular**.",
-  "correta": "**A: responde por cerca de 80% do crescimento longitudinal do úmero, chegando a 90% após os 11 anos.** É a contribuição descrita no capítulo, base da enorme capacidade de remodelação, somada à mobilidade compensatória do ombro (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "A fise proximal responde por cerca de **80% do crescimento longitudinal do úmero**, chegando a **90% depois dos 11 anos**, alternativa A. Essa participação ajuda a entender a grande capacidade de remodelação das fraturas proximais, sem torná-la ilimitada (Rockwood and Wilkins, 10ª edição, capítulo 19, anatomia).\n\nO percentual é uma **participação no crescimento do osso**, não a quantidade de correção futura de qualquer fratura. O alinhamento tolerado continua variando com a idade: a tabela aceita mais angulação e translação nos pequenos e é mais restritiva acima de 12 anos. Um percentual alto não substitui a leitura do crescimento que ainda resta.\n\nO resumo situa o fechamento por volta de 14–17 anos nas meninas e 16–18 nos meninos. Também descreve a fise como **predominantemente extracapsular**, com apenas a parte medial dentro da cápsula. Essas características impedem usar fechamento antes de 10 anos ou proteção intracapsular completa como explicação.\n\n**Na prova:** 80% do úmero, podendo chegar a 90% na participação citada após 11 anos. Sempre separar essa contribuição relativa da tolerância angular de uma idade específica.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2022 (`pediatria-0571`), que pergunta a idade de aparecimento da tuberosidade maior (1 a 3 anos). O mesmo bloco de anatomia explica a remodelação. Depois, faça a oficial.",
+  "correta": "Alternativa A. Mantém os percentuais relativos ao crescimento do úmero e o comportamento por idade apresentado no resumo. Não deve ser interpretada como promessa de remodelar 80–90% de toda deformidade.",
   "incorretas": {
-   "B": "**É o inverso.** A fise proximal responde por cerca de 80%; a distal, pelo restante.",
-   "C": "**Fecha bem mais tarde.** A fise proximal do úmero fecha entre 14 e 17 anos nas meninas e 16 e 18 nos meninos.",
-   "D": "**É predominantemente extracapsular.** Só a parte mais medial fica dentro da cápsula, e é por isso que a fise é suscetível às fraturas."
+   "B": "20% reduz muito a participação da fise proximal em relação aos 80% descritos. O valor pedido é o crescimento longitudinal do úmero, não uma proporção de fraturas ou de correção angular.",
+   "C": "O fechamento ocorre nas faixas de 14–17 anos nas meninas e 16–18 nos meninos, não antes de 10 em ambos. A alternativa eliminaria cedo um potencial de crescimento que faz parte da anatomia descrita.",
+   "D": "A fise é predominantemente extracapsular; só a porção medial fica dentro. A fonte não atribui a capacidade de remodelação a uma proteção capsular completa, e sim ao crescimento proximal expressivo."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Pathoanatomy and Applied Anatomy Relating to Proximal Humerus Fractures (Fig. 19-20)"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: anatomia; Úmero proximal: classificação e tratamento."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Úmero proximal: anatomia",
+      "Úmero proximal: classificação e tratamento"
+     ],
+     "blocos": [
+      "umero-proximal-anatomia-f0be4955",
+      "umero-proximal-classificacao-e-tratamento-0512b5c8"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "64703f6e6aab3c3729a736a944df848ac43ea67deab7f61c4f620c8120eeb7a8"
+    }
+   ],
+   "questaoSha256": "2930a0c5e14e317c31e15df70e73d5b5dd00f2a1dc233ea6a413d8c8219c1b33",
+   "comentarioSha256": "ee295750fc24175c6a00540118e7c073d0c83d22e6296f3fc8d0ee5371ff9aa1"
+  }
  },
  "pediatria-1216": {
-  "conceito": "Um menino de 13 anos cai da bicicleta e tem uma fratura metafisária do úmero proximal com 55 graus de angulação e metade de desvio. Aos 7 anos, isso remodelaria. E agora?\n\n**A remodelação diminui com a idade.** Abaixo de 11 anos, foram relatados bons e ótimos resultados sem cirurgia qualquer que fosse o desvio. Com a maturidade, o aceitável encolhe (Rockwood crianças, 10ª ed., cap. 19, Tabela 19-1):\n\n| Idade | Angulação | Desvio |\n|---|---|---|\n| Abaixo de 5 anos | 70 graus | 100% |\n| 5 a 11 anos | 40 a 70 graus | 50% a 100% |\n| Acima de 12 anos | **menos de 40 graus** | **menos de 50%** |\n\nSão orientações de séries retrospectivas; o caso é individualizado. No atleta de arremesso, menos varo e menos angulação de ápice anterior são toleráveis, pelo risco de impacto no acrômio.\n\n**Acima de 12 anos.** Recomenda-se reduzir e imobilizar as fraturas NEER-HORWITZ III e IV com alinhamento inaceitável. CHAUS mostrou aumento progressivo da chance de função subótima com o tratamento não operatório a cada ano acima dos 12. A perda da redução chega a 50% no adolescente mais velho, e o autor tem limiar baixo para fixar (fios percutâneos nas fisárias, hastes intramedulares nas metafisárias).\n\n**NEER-HORWITZ.** I até 5 mm; II até um terço da largura cortical; III até dois terços; IV mais de dois terços.\n\n**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0945`), que pergunta a angulação e o desvio aceitáveis aos 7 anos (40 a 70 graus, 50% a 100%). Aqui a idade muda e a linha da tabela também. Depois, faça a oficial.\n\n> **Na prova:** úmero proximal aceitável: **abaixo de 5 anos 70 graus e 100%**; **5 a 11 anos 40 a 70 graus e 50% a 100%**; **acima de 12 anos menos de 40 graus e menos de 50%**.",
-  "correta": "**B: menos de 40 graus de angulação e menos de 50% de desvio.** É a linha da Tabela 19-1 para maiores de 12 anos, com menos crescimento e menos remodelação (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "Aos **13 anos**, o paciente entra na faixa **acima de 12** da tabela: o alinhamento aceito é **menos de 40° de angulação e menos de 50% de desvio**, alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 19, tabela 19-1).\n\nO úmero proximal tem grande potencial de crescimento, mas a tolerância diminui conforme a maturidade se aproxima. A tabela distingue três grupos: abaixo de 5 anos, 70° e 100%; de 5 a 11, 40–70° e 50–100%; acima de 12, limites mais restritos. Transportar o número do pequeno para o adolescente é a armadilha central.\n\nTambém é preciso ler os dois componentes. Uma angulação dentro da faixa não resolve, sozinha, uma translação excessiva. O resumo descreve indicação de redução e fixação nos adolescentes com padrões inaceitáveis, em vez de presumir que toda fratura proximal se corrigirá sem intervenção.\n\n**Na prova:** começar pela idade e conservar o sinal estrito **menor que**. A tabela não autoriza converter “menos de 40°” em “qualquer angulação até muito acima disso” apenas pela localização proximal.\n\n**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0945`), que pergunta a angulação e o desvio aceitáveis aos 7 anos (40 a 70 graus, 50% a 100%). Aqui a idade muda e a linha da tabela também. Depois, faça a oficial.",
+  "correta": "Alternativa B. É a linha correspondente ao adolescente acima de 12 anos, com os dois limites preservados. O caso não pertence às faixas de maior tolerância dos pequenos.",
   "incorretas": {
-   "A": "**É o limite abaixo de 5 anos.** Até 70 graus e 100% de desvio são aceitos na criança pequena, com grande potencial de remodelação.",
-   "C": "**É a faixa de 5 a 11 anos.** Entre 40 e 70 graus e 50% a 100% de desvio, os números da criança escolar, cobrados no TEPOP 2024.",
-   "D": "**Não vale para o adolescente.** Acima de 12 anos, a remodelação é limitada e a função piora a cada ano no tratamento não operatório de fraturas muito desviadas."
+   "A": "70° e 100% correspondem à faixa abaixo de 5 anos. A alternativa importa os limites mais permissivos para um paciente de 13 anos, ignorando a estratificação por idade.",
+   "C": "40–70° e 50–100% são os intervalos de 5–11 anos. A pergunta especifica 13, para o qual a tabela reduz a tolerância angular e de translação.",
+   "D": "A tabela existe porque a capacidade de remodelação não autoriza qualquer desvio. Nos adolescentes, o resumo descreve critérios de redução/fixação para alinhamentos inaceitáveis."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Nonoperative Treatment of Proximal Humerus Fractures (Tabela 19-1)"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Úmero proximal: classificação e tratamento"
+     ],
+     "blocos": [
+      "umero-proximal-classificacao-e-tratamento-0512b5c8",
+      "umero-proximal-classificacao-e-tratamento-e2c0307e"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "ac3a54c982f62e10aea65ada4a1a091e49a098accd02f7cccad2722dffb4ce06"
+    }
+   ],
+   "questaoSha256": "88a024ca6e2f3e00c7f066411f9d6c5d7ccaa07a901c07c42f8863047b9d5956",
+   "comentarioSha256": "288832390ccfb613d35e3c0eb84800c89d128c3d90990ae3b65e700ad918db58"
+  }
  },
  "pediatria-1217": {
-  "conceito": "Uma menina de 12 anos tem uma fratura do úmero proximal acima da inserção do peitoral maior. Na radiografia, a cabeça parece abduzida e rodada para fora, e a diáfise subiu e foi para dentro. Para reduzir, é preciso entender quem puxa o quê.\n\n**As inserções.** O subescapular se insere na tuberosidade menor, na frente; supraespinal, infraespinal e redondo menor, na tuberosidade maior e na epífise posterossuperior. O deltoide se insere mais abaixo, na face lateral da diáfise; o peitoral maior e o grande dorsal, na face anteromedial da metáfise (Rockwood crianças, 10ª ed., cap. 19).\n\n**Os desvios por nível.**\n\n| Nível da fratura | Fragmento proximal | Fragmento distal |\n|---|---|---|\n| Acima do peitoral maior | **Abdução, flexão e rotação externa** (manguito rotador) | **Proximal, medial e rotação interna** (peitoral maior) |\n| Entre o peitoral maior e o deltoide | Adução (peitoral maior) | Proximal e abdução (deltoide) |\n| Abaixo do deltoide (diáfise) | Abdução (deltoide) e flexão (peitoral maior) | Proximal e medial (bíceps e tríceps) |\n\n**A redução.** Todas as manobras invertem a deformidade e as forças: tração longitudinal seguida de **abdução, flexão e rotação externa**, que levam a diáfise até a cabeça. Muitas vezes ajuda começar com adução e rotação interna para relaxar o peitoral maior e empurrar a diáfise para trás, corrigindo a angulação de ápice anterior. Periósteo, cápsula e cabo longo do bíceps podem bloquear a redução, exigindo abertura deltopeitoral limitada. Nas fisárias, manipulação suave sob sedação ou anestesia.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2026 (`pediatria-0524`), que pergunta o desvio do fragmento proximal (flexão e rotação externa), e do TARO 2012 (`pediatria-0667`), que pergunta a manobra de redução (abdução, flexão e rotação lateral). Depois, faça as oficiais.\n\n> **Na prova:** acima do peitoral maior: **cabeça em abdução, flexão e rotação externa**; **diáfise proximal, medial e em rotação interna**; reduzir com tração, **abdução, flexão e rotação externa**.",
-  "correta": "**C: proximal e medial, em rotação interna, pelo peitoral maior.** Nas fraturas acima da inserção do peitoral maior, o fragmento diafisário desloca-se para cima, para dentro e em rotação interna (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "Acima da inserção do **peitoral maior**, o fragmento **distal** vai para **proximal e medial, em rotação interna**, pela ação desse músculo. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 19, desvio pelos músculos).\n\nA pergunta é sobre a **diáfise**, não sobre a cabeça. No mesmo nível de fratura, o manguito leva o fragmento proximal a **abdução, flexão e rotação externa**. As duas partes podem, portanto, seguir vetores diferentes; misturá-las produz uma resposta com movimentos verdadeiros, mas do fragmento errado.\n\nO nível em relação às inserções também modifica o padrão. Entre peitoral maior e deltoide, a tabela descreve adução proximal e abdução distal; abaixo do deltoide, outra combinação de forças passa a predominar. Não se deve usar a mesma regra muscular para toda fratura do úmero.\n\n**Na prova:** definir nível, fragmento e músculo antes de escolher a direção. Aqui a tríade do distal é proximal, medial e rotação interna pelo peitoral maior.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2026 (`pediatria-0524`), que pergunta o desvio do fragmento proximal (flexão e rotação externa), e do TARO 2012 (`pediatria-0667`), que pergunta a manobra de redução (abdução, flexão e rotação lateral). Depois, faça as oficiais.",
+  "correta": "Alternativa C. Corresponde à coluna distal da tabela no nível acima do peitoral maior. O vetor não é o mesmo da cabeça mantida pelo manguito.",
   "incorretas": {
-   "A": "**Mistura níveis.** O deltoide abduz o fragmento proximal nas fraturas abaixo da sua inserção. Acima do peitoral maior, o distal vai para dentro e em rotação interna.",
-   "B": "**Não é o desvio descrito.** O bíceps, junto com o tríceps, puxa o fragmento distal para cima e para dentro nas fraturas diafisárias abaixo do deltoide, não nas proximais.",
-   "D": "**Não é o padrão.** O tríceps entra no desvio das fraturas diafisárias, mas o fragmento distal das fraturas proximais é governado pelo peitoral maior."
+   "A": "A opção troca o vetor distal do nível perguntado e o atribui ao deltoide. A tabela descreve para esse distal peitoral maior com deslocamento proximal/medial e rotação interna, não distal/lateral em rotação externa.",
+   "B": "O caso não pede um vetor anterior de flexão atribuído ao bíceps. A fonte identifica o peitoral maior como determinante do distal nesse nível; flexão aparece no fragmento proximal, junto de abdução e rotação externa.",
+   "D": "Posterior e extensão pelo tríceps não é a combinação indicada para o distal acima do peitoral maior. O resumo relaciona bíceps e tríceps ao deslocamento proximal/medial em outro nível, abaixo do deltoide."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Pathoanatomy and Applied Anatomy Relating to Proximal Humerus Fractures"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: anatomia."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Úmero proximal: anatomia"
+     ],
+     "blocos": [
+      "umero-proximal-anatomia-d40fae5f"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "42d7052768b693b21293eb84d0819cd6d58118d2ab32121294d81194b5f42198"
+    }
+   ],
+   "questaoSha256": "7b4e12d22aa38e47c735b81e86d1ca269c6484c299ff7eb4df0a76f44f3f8d1b",
+   "comentarioSha256": "f72fad7b159413de73cc6a352d05bc5e8cd5b6b570fb60980bb5f1df24879bc2"
+  }
  },
  "pediatria-1218": {
   "conceito": "Uma menina de 12 anos tem uma fratura do úmero proximal muito angulada. Reduzida sob anestesia, a fratura é instável e vai receber fios percutâneos (Rockwood crianças, 10ª ed., cap. 19, Fig. 19-23). Onde furar sem pegar o nervo axilar?\n\n**O nervo em risco.** O nervo axilar sai do fascículo posterior, passa na frente do subescapular, logo abaixo da articulação, e atravessa o espaço quadrilátero para inervar o deltoide e o redondo menor e dar sensibilidade à face lateral do ombro. É o nervo mais próximo e mais em risco nas fraturas e fraturas-luxações do úmero proximal.\n\n**Onde entrar.** Pequenas incisões **na altura do tubérculo deltoide ou um pouco acima**, dissecção romba até a cortical lateral. O nervo axilar é evitado colocando os pontos de entrada a **duas vezes a altura da superfície articular** abaixo da borda mais proximal do úmero. Um modelo computacional sugeriu entradas laterais a 4,4 e 8 cm abaixo do topo da cabeça, com ângulo coronal de 21 graus. STAVINOHA propôs o conceito \"uma montanha, três vales\": tomando a altura da fise como unidade, o nervo passa uma \"montanha\" acima e três \"vales\" abaixo do ponto cortical mais lateral; fios fora dessa zona o evitam.\n\n**A técnica.** Redução (adução e rotação interna para relaxar o peitoral maior, empurrar a diáfise para trás, depois tração, abdução e flexão). Fios lisos (0,0625 a 3/32 polegada), de distal-lateral para proximal-medial, dois ou três, de preferência **paralelos** (mais estáveis), sem perfurar a cabeça para dentro da articulação. Se a fratura for muito instável, passar os fios no fragmento distal antes de reduzir. Fios dobrados fora ou sob a pele; tipoia; retirada em cerca de 4 semanas. Fio anterógrado pela tuberosidade maior é raramente necessário, e então com o braço em rotação externa.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2021 (`pediatria-0595`), em que o tratamento indicado para a fratura de um adolescente de 14 anos é a redução fechada com fios percutâneos.\n\n> **Na prova:** fios no úmero proximal: entrar **no tubérculo deltoide ou pouco acima**, a **2 vezes a altura articular** abaixo do topo; \"**uma montanha, três vales**\"; fios **lisos** e **paralelos**; retirar em **4 semanas**.",
@@ -30841,124 +30932,306 @@
   "conferido": false
  },
  "pediatria-1220": {
-  "conceito": "Um rapaz de 14 anos teve uma fratura fisária do úmero proximal pouco desviada. Anos depois, não consegue levantar bem o braço: bate a tuberosidade no acrômio (Rockwood crianças, 10ª ed., cap. 19, Fig. 19-26). O que aconteceu?\n\n**O úmero varo.** É uma complicação possível das fraturas do úmero proximal na criança. Caracteriza-se por **ângulo cervicodiafisário abaixo de 140 graus**, **tuberosidade maior acima do topo da cabeça** e menor distância entre a superfície articular e a cortical lateral. O varo e a tuberosidade alta limitam a **flexão anterior e a abdução**. As causas: consolidação viciosa em varo e **parada fisária parcial** após fratura fisária (Rockwood crianças, 10ª ed., cap. 19).\n\n**O tratamento.** Quando limita a função, **osteotomia corretiva** para restaurar a morfologia; na Fig. 19-26, uma osteotomia de fechamento lateral fixada com fios e banda de tensão.\n\n**Outras complicações.** Discrepância do membro superior após fratura fisária, mais relatada após redução cirúrgica, mas provavelmente pelo trauma inicial; não se correlaciona com a qualidade da redução; alongamento se a previsão passar de 6 cm. Necrose da cabeça, muito menos comum que no adulto e com revascularização possível na criança. Cicatriz hipertrófica após a via deltopeitoral, que pode incomodar o adolescente; incisões axilares foram propostas.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O úmero varo junta anatomia, fise e função, e tem critérios objetivos.\n\n> **Na prova:** **úmero varo**: ângulo cervicodiafisário **abaixo de 140 graus**, **tuberosidade maior acima da cabeça**, limita **abdução e flexão**; por varo ou **parada fisária parcial**; **osteotomia** se limitar.",
-  "correta": "**B: úmero varo; osteotomia corretiva se houver limitação funcional.** Ângulo abaixo de 140 graus e tuberosidade maior acima da cabeça definem o úmero varo, tratado com osteotomia quando limita a função (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "Ângulo cervicodiafisário de **120°**, com tuberosidade maior alta após fratura proximal, corresponde ao **úmero varo**, alternativa B. O resumo usa ângulo abaixo de **140°**, tuberosidade alta e osteotomia como os elementos desse problema (Rockwood and Wilkins, 10ª edição, capítulo 19, complicações).\n\nA alteração é de **geometria consolidada do úmero proximal**. O caso já apresenta limitação de abdução e uma relação angular anormal; não basta chamar qualquer dificuldade de movimento de luxação persistente ou de falha de união. O diagnóstico precisa explicar os dados radiográficos fornecidos.\n\nA osteotomia tem como alvo corrigir essa deformidade, em vez de substituir a articulação por presumir necrose ou enxertar um foco de pseudartrose que o enunciado não demonstra. O capítulo apresenta várias complicações possíveis, mas cada uma precisa ser reconhecida pelos próprios achados.\n\n**Na prova:** varo significa reduzir o ângulo cervicodiafisário no esquema apresentado. A tuberosidade alta e a limitação funcional ajudam a ligar a imagem ao problema que a correção pretende tratar.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O úmero varo junta anatomia, fise e função, e tem critérios objetivos.",
+  "correta": "Alternativa B. Reconhece o ângulo abaixo do limite de 140° e a tuberosidade alta, com osteotomia como correção descrita no resumo. A indicação é discutida no caso que já informa comprometimento funcional, sem transformar toda radiografia em uma mesma decisão automática.",
   "incorretas": {
-   "A": "**Não é o quadro.** A luxação posterior dá rotação interna fixa e perda da rotação externa, não um ângulo cervicodiafisário reduzido.",
-   "C": "**Rara na criança.** A necrose da cabeça do úmero é muito menos comum que no adulto e pode revascularizar. Não explica o ângulo cervicodiafisário diminuído.",
-   "D": "**A fratura consolidou.** O problema é a forma do úmero proximal, não a falta de consolidação."
+   "A": "O resumo associa a luxação posterior a adução e rotação interna fixa em outro contexto. Aqui o dado definidor é a deformidade angular com tuberosidade alta após fratura, correspondente ao úmero varo.",
+   "C": "O enunciado não fornece diagnóstico de necrose para justificar artroplastia. A geometria de varo está explicitamente caracterizada pelos achados que a fonte liga à osteotomia.",
+   "D": "Não há descrição de falta de união do foco. A proposta de enxerto e placa para pseudartrose não aborda o problema angular consolidado identificado no caso."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Management of Expected Adverse Outcomes Related to Proximal Humerus Fractures (Fig. 19-26)"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento; Instabilidade do ombro."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Úmero proximal: classificação e tratamento",
+      "Instabilidade do ombro"
+     ],
+     "blocos": [
+      "umero-proximal-classificacao-e-tratamento-e2c0307e",
+      "instabilidade-do-ombro-d8c2cceb"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "ea960b550a26d80a478d6d5a77ae2be31de09a7cbc1f0b52df73a474b28db5ea"
+    }
+   ],
+   "questaoSha256": "a9cb7ca01fc71791b680e40ad251d6089bffa7a88b801d40c615d7cb108953c3",
+   "comentarioSha256": "8f0570940a1830c79715f889dced19be14826d18f9da0fe849b7bee85d0ce96c"
+  }
  },
  "pediatria-1221": {
-  "conceito": "Um menino de 10 anos tem uma fratura transversa do terço médio do úmero. No controle, há 20 graus de varo e um pouco de encurtamento. É preciso corrigir?\n\n**Por que o úmero tolera.** O membro superior não suporta carga, e o alinhamento anatômico do úmero não é necessário para a função. O ombro, a flexoextensão do cotovelo e a rotação do antebraço compensam deformidades leves a moderadas. E a remodelação é grande: **até 30 graus podem remodelar** mesmo no adolescente (Rockwood crianças, 10ª ed., cap. 19).\n\n**Os limites.** São considerados aceitáveis **20 a 30 graus de varo**, **20 graus de angulação de ápice anterior**, **15 graus de rotação interna** e aposição em baioneta com **1 a 2 cm de encurtamento**. Abaixo de 6 anos, a maior parte da angulação remodela; os obesos, mais sujeitos à consolidação viciosa, a disfarçam melhor. Osteotomias corretivas raramente são necessárias.\n\n**Os métodos.** Tipoia e enfaixamento para fraturas incompletas ou pouco desviadas (controla mal o varo e o ápice anterior); **tala de coaptação** (em U) na fase aguda, levada até o pescoço para não escorregar; **brace funcional** (SARMIENTO) depois que o edema cede, que mantém a redução pelo efeito hidráulico e libera o cotovelo; gesso pendente, hoje pouco usado. O autor: redução suave se desviada, tala de coaptação, brace em 1 a 2 semanas, consolidação em cerca de 6 semanas.\n\n**Cirurgia.** Fratura exposta, lesão vascular, cotovelo flutuante, alinhamento inaceitável; politrauma e paralisia secundária do radial são indicações relativas. Placa por via lateral ou posterolateral (permite ver o radial) ou hastes elásticas (comprimento estável, sem paralisia do radial).\n\n**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0631`), que pergunta a rotação medial e o varo aceitáveis (15 graus e 20 graus). Depois, faça a oficial.\n\n> **Na prova:** diáfise do úmero: aceita **20 a 30 graus de varo**, **20 graus de ápice anterior**, **15 graus de rotação interna**, **1 a 2 cm** de encurtamento; até **30 graus** remodelam no adolescente.",
-  "correta": "**C: até 20 a 30 graus de varo, 20 graus de angulação de ápice anterior, 15 graus de rotação interna e 1 a 2 cm de encurtamento.** São os limites aceitáveis citados no capítulo para o tratamento não operatório da fratura da diáfise do úmero (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "Na diáfise do úmero infantil, o resumo admite **20–30° de varo, 20° de ápice anterior, 15° de rotação interna e 1–2 cm de encurtamento**, alternativa C. Esses limites não são a tabela da fratura proximal: pertencem à **diáfise** (Rockwood and Wilkins, 10ª edição, capítulo 19, diáfise do úmero).\n\nOs componentes precisam ser avaliados separadamente. Angulação, rotação e comprimento descrevem deformidades diferentes, e a capacidade de tolerar uma não permite automaticamente duplicar a outra. Uma lista em que todos os números pareçam grandes não substitui a comparação de cada parâmetro.\n\nO capítulo descreve tala de coaptação na fase aguda e órtese funcional depois, com consolidação em cerca de 6 semanas. Também mantém indicações cirúrgicas próprias, como exposição, lesão vascular, cotovelo flutuante ou alinhamento inaceitável. A tolerância ao desvio não significa ausência de seguimento.\n\n**Na prova:** conferir o segmento antes dos valores e manter a rotação em 15°. O resumo ressalva ainda que fraturas distais da diáfise tendem a varo e remodelam menos, evitando uma promessa uniforme para todo nível diafisário.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0631`), que pergunta a rotação medial e o varo aceitáveis (15 graus e 20 graus). Depois, faça a oficial.",
+  "correta": "Alternativa C. É a combinação dos quatro parâmetros apresentada na seção diafisária. A resposta exige preservar plano, sentido e unidade, não só lembrar um número isolado.",
   "incorretas": {
-   "A": "**Excessivo.** O capítulo aceita até 20 a 30 graus de varo e 15 graus de rotação interna, não 45 e 30.",
-   "B": "**O úmero remodela bem.** Até 30 graus podem remodelar mesmo no adolescente, e o membro superior compensa deformidades moderadas.",
-   "D": "**Restritivo demais.** O úmero tolera bem mais; o encurtamento de 1 a 2 cm em baioneta é aceito."
+   "A": "45° de varo excede os 20–30° descritos e 30° de rotação interna duplica os 15° da fonte. A opção amplia dois limites distintos sem apoio no esquema apresentado.",
+   "B": "O capítulo admite angulações e encurtamento definidos, reconhecendo remodelação. Exigir zero angulação porque o úmero não remodelaria contradiz os limites do tratamento conservador descrito.",
+   "D": "A opção é mais restritiva que o resumo nos dois itens: o varo permitido é 20–30°, e 1–2 cm de encurtamento são apresentados como aceitáveis. Ela não reproduz os critérios solicitados."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Nonoperative Treatment of Humerus Shaft Fractures"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Diáfise do úmero."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Diáfise do úmero"
+     ],
+     "blocos": [
+      "diafise-do-umero-ed0e929e"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "3643c5a6ca586a97fa79fe7d826c31048f48227411c93ee8ded13e8859769438"
+    }
+   ],
+   "questaoSha256": "27fcae4910a09345bfeb49d3442f67ef25d9cc3183ec29f5ae9b9db800e2d2cc",
+   "comentarioSha256": "1b5b288bc7dc12f4b39eaf8fd4ab53faf5fb037acf77d6921da65577f8f6574e"
+  }
  },
  "pediatria-1222": {
-  "conceito": "Uma menina de 12 anos cai do cavalo e quebra o meio do úmero. Ela não consegue estender o punho. A fratura está bem alinhada. Precisa abrir para ver o nervo?\n\n**A paralisia do radial.** Pela proximidade do nervo com a diáfise média e distal, ele pode ser contundido, estirado, dobrado, preso ou, raramente, seccionado. Estima-se paralisia do radial em até 20% das fraturas da diáfise no adulto e **5% na criança**. A **primária** está presente desde a lesão; a **secundária** surge após a redução ou a manipulação, com o nervo antes funcionando (Rockwood crianças, 10ª ed., cap. 19).\n\n**Recupera sozinha.** A maioria das publicações mostra **recuperação espontânea em 78% a 100%** só com observação. Quando o nervo foi explorado cedo, quase sempre estava **íntegro**, apenas contundido ou estirado sobre o fragmento. Na criança, o periósteo espesso pode proteger o nervo.\n\n**A conduta do autor.** Fratura fechada com alinhamento aceitável e paralisia: **tratamento não operatório** e acompanhamento mensal do nervo. O **sinal de TINEL avançando** e a recuperação motora em sequência (extensores radiais do punho, depois extensores centrais, dos dedos e do polegar) indicam bom prognóstico. A regeneração é de cerca de **1 mm por dia**; a distância até os músculos permite estimar o tempo. **Exploração após 3 a 6 meses sem nenhum sinal de recuperação**; na lesão encontrada tarde, enxerto de sural.\n\n**Quando explorar já.** Na fratura **exposta** que vai para desbridamento e estabilização; se houver secção, reparo primário se as pontas estiverem limpas. A paralisia **secundária** é controversa: muitos observam, outros exploram cedo. Paralisia tardia durante a consolidação sugere nervo preso no calo (sinal de MATEV, uma lucência oval), e pede descompressão. Com paralisia do radial, se for operar, a placa por via lateral permite ver e proteger o nervo.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0618`), sobre a fratura da diáfise do úmero na criança.\n\n> **Na prova:** radial na diáfise do úmero: **5%** na criança; primária = **observar** (78% a 100% recuperam), **1 mm por dia**, TINEL avançando; explorar em **3 a 6 meses** sem recuperação; **exposta** = explorar já; tardia no calo = **MATEV**.",
-  "correta": "**D: tratamento não operatório da fratura e observação do nervo, explorando se não houver sinal de recuperação em 3 a 6 meses.** É a conduta do autor para a fratura fechada com alinhamento aceitável e paralisia primária do radial, que recupera espontaneamente na grande maioria (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "Paralisia radial **primária**, presente desde o atendimento, numa fratura **fechada** e de alinhamento aceitável, é inicialmente **observada**. O resumo recomenda explorar se não houver recuperação em **3–6 meses**, alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 19, nervo radial).\n\nÉ preciso classificar também **o momento da lesão nervosa**. O capítulo relata recuperação em 78–100% nas primárias e orienta acompanhar Tinel e a sequência de recuperação. Exposta pede exploração; paralisia secundária é controversa; lesão tardia pelo calo é outro cenário. Esses grupos não podem receber a mesma resposta automaticamente.\n\nA fratura continua precisando de tratamento e controle. No caso, os dados permitem cuidado não operatório do osso; a presença do déficit inicial não o transforma, por si só, em indicação de placa com exploração imediata.\n\n**Na prova:** fechada + déficit primário + alinhamento aceitável favorece observação do nervo. O acompanhamento tem objetivo e prazo; observar não significa ignorar uma evolução sem recuperação.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0618`), sobre a fratura da diáfise do úmero na criança.",
+  "correta": "Alternativa D. Mantém tratamento conservador do osso e vigilância da recuperação radial, reservando a exploração para a ausência de sinais no intervalo de 3–6 meses apresentado. As condições do enunciado são essenciais para aplicar essa orientação.",
   "incorretas": {
-   "A": "**Desnecessária na fechada.** Quando explorado cedo, o nervo quase sempre está íntegro. A exploração imediata é indicada na fratura exposta que vai para desbridamento.",
-   "B": "**Precipitada.** Com fratura fechada e alinhamento aceitável, não há indicação de placa só pela paralisia primária.",
-   "C": "**Não define a conduta aguda.** O capítulo reserva a eletroneuromiografia para quem não recupera no tempo esperado, não para o primeiro dia."
+   "A": "A exploração imediata não é a regra para a paralisia primária de uma fratura fechada. O capítulo descreve alta recuperação e observação, distinguindo-a de fratura exposta e de outros momentos de instalação do déficit.",
+   "B": "O caso já informa alinhamento aceitável e fratura fechada. A proposta de placa e exploração em 48 horas troca a estratégia de observação da primária por uma cirurgia que não é exigida por esses dados no resumo.",
+   "C": "O capítulo organiza a conduta pela apresentação inicial e pelo acompanhamento clínico da recuperação, não por eletroneuromiografia obrigatória no primeiro dia para decidir operar. A opção substitui o protocolo conservador descrito por outro gatilho imediato."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Injuries Associated With Humerus Shaft Fractures e Author's Preferred Treatment of Humerus Shaft Fractures"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Diáfise do úmero."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Diáfise do úmero"
+     ],
+     "blocos": [
+      "diafise-do-umero-af3f5d33",
+      "diafise-do-umero-ed0e929e"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "234731380def3d4baeec1d2f29ae67878d8af05e88cfa633a587a7a87f459911"
+    }
+   ],
+   "questaoSha256": "aa3b0ffd73599dddf894695b248da4c347234a6def67ed05ea14fa1437e390a6",
+   "comentarioSha256": "802459af8a4ab2f2549bf7f39af5b191c1702ee54d6864978a0e5055ea0dcd60"
+  }
  },
  "pediatria-1223": {
-  "conceito": "Um recém-nascido grande, de parto com distocia de ombro, não mexe o braço direito. Ele abre e fecha a mão normalmente. Há crepitação no meio do braço. É uma fratura da diáfise do úmero de parto.\n\n**Quem fratura.** A incidência relatada vai de 0,035% a 0,34%. Fatores: macrossomia, apresentação pélvica, parto difícil, distocia de ombro com manobras de rotação ou parto do braço posterior; o braço abduzido acima da cabeça e baixado após versão. A cesariana não protege: qualquer extração forçada pode quebrar o úmero. Perguntar se o bebê mama dos dois lados ajuda no diagnóstico (Rockwood crianças, 10ª ed., cap. 19).\n\n**O exame.** **Pseudoparalisia**, com o braço junto ao corpo, mas **dedos e punho se movem** (a função distal está intacta), dor, mobilidade e crepitação no foco, pouco edema. Diferenciar da paralisia do plexo braquial, que pode coexistir.\n\n**O tratamento.** A consolidação é robusta e a remodelação enorme: **50% ou mais em 1 a 2 anos** (Fig. 19-28, consolidação e remodelação em 3 meses). Basta **imobilização simples para conforto**, sem esforço para alinhamento anatômico: tipoia e enfaixamento, tala, gesso ou até alfinetar a manga ao corpo. A preocupação com consolidar em rotação interna pode ser resolvida imobilizando o membro com o **cotovelo estendido**, sobretudo se houver paralisia do plexo, em que contraturas em rotação interna e fraqueza da rotação externa são comuns.\n\n**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0953`), que pergunta a principal complicação da fratura da diáfise do úmero de parto (deformidade em rotação interna). Depois, faça a oficial.\n\n> **Na prova:** úmero de parto: **pseudoparalisia** com mão funcionando; imobilização **para conforto**, sem buscar alinhamento; remodela **50% em 1 a 2 anos**; cuidado com a **rotação interna** (imobilizar com o cotovelo estendido).",
-  "correta": "**A: imobilização simples para conforto, sem buscar alinhamento anatômico, evitando consolidação em rotação interna.** O capítulo diz que basta imobilizar para conforto, pela consolidação e remodelação robustas, e sugere o cotovelo estendido para evitar a rotação interna (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "Na **fratura diafisária do úmero no parto**, o resumo recomenda **imobilização simples para conforto**, com atenção à **rotação interna**, alternativa A. Pseudoparalisia com a mão funcionando é a apresentação descrita (Rockwood and Wilkins, 10ª edição, capítulo 19, diáfise do úmero).\n\nO recém-nascido pode evitar mover o braço por causa da fratura. Por isso, observar dedos e punho e reconhecer o foco ósseo ajuda a organizar o exame; o caso já informa que a fratura diafisária foi identificada. Não é necessário tratar toda falta de movimento como se fosse, por definição, uma lesão nervosa que obrigue cirurgia óssea.\n\nO potencial de remodelação é grande: a fonte descreve correção de cerca de 50% em 1–2 anos. Isso sustenta não perseguir alinhamento anatômico com procedimentos invasivos nessa apresentação, mas o resumo ressalva cuidado com **rotação interna**, especialmente com o cotovelo estendido. Grande remodelação não significa aceitar qualquer orientação sem controle.\n\n**Na prova:** fratura do parto é um cenário próprio. Conforto e proteção simples não devem ser confundidos com abandono do exame, nem substituídos por tração ou fixação apenas para obter uma radiografia perfeita.\n\n**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0953`), que pergunta a principal complicação da fratura da diáfise do úmero de parto (deformidade em rotação interna). Depois, faça a oficial.",
+  "correta": "Alternativa A. É a conduta descrita para a fratura de parto: proteção simples, tolerância de desvio compatível com remodelação e atenção à rotação interna. A mão funcionando integra a apresentação de pseudoparalisia que o capítulo destaca.",
   "incorretas": {
-   "B": "**Desnecessário.** A fratura de parto consolida e remodela sem redução nem fixação.",
-   "C": "**De importância histórica.** A tração é raramente usada, e não há necessidade no recém-nascido.",
-   "D": "**Não se busca alinhamento anatômico.** A remodelação no recém-nascido é tão grande que nenhum esforço para alinhar é necessário."
+   "B": "O resumo não exige anestesia e fios para essa fratura diafisária neonatal. A conduta apresentada é proteção para conforto; a busca de alinhamento anatômico não justifica converter a apresentação típica numa fixação rotineira.",
+   "C": "Tração esquelética por 3 semanas não corresponde à imobilização simples descrita. A alternativa acrescenta um procedimento invasivo e um período específico que não são o protocolo do caso no resumo.",
+   "D": "A opção volta a exigir redução anatômica, enquanto a fonte destaca a remodelação e o tratamento simples. A preocupação que não deve ser esquecida é a rotação interna, não uma obrigação de reduzir toda deformidade até zero."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Mechanisms of Injury, Signs and Symptoms e Nonoperative Treatment of Humerus Shaft Fractures (Fig. 19-28)"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Diáfise do úmero."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Diáfise do úmero"
+     ],
+     "blocos": [
+      "diafise-do-umero-1594c017"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "07f39e0d0727a40d5d7d9e7896e61947d389e7aaba3a1afc3d4397eddabdd817"
+    }
+   ],
+   "questaoSha256": "9d61cc881f0c21244a4872eebe2cc4710b054b2290643275cc9e2a3cc408f219",
+   "comentarioSha256": "8762210cba82631b096d4906d26164c4083e8ea5e2d3ca56f77d9788942bec3c"
+  }
  },
  "pediatria-1224": {
-  "conceito": "Um adolescente de 15 anos cai de moto e tem uma fratura através da fise do úmero proximal que entra na articulação, com a cabeça luxada. Que tipo de fratura é essa, e quão comum?\n\n**Os tipos no úmero proximal** (Rockwood crianças, 10ª ed., cap. 19, Fig. 19-19):\n\n| SALTER-HARRIS | No úmero proximal |\n|---|---|\n| I | Pela fise; mais comum **abaixo de 5 anos** |\n| II | Sai pela metáfise, com fragmento ósseo; mais comum na criança maior e no adolescente |\n| III | **Raro**; associado a **luxação glenoumeral** |\n| IV | Não relatado na criança |\n\nAs fraturas metafisárias são mais comuns entre 5 e 12 anos, talvez pela porosidade da metáfise de crescimento rápido. As fisárias I e II, pela camada hipertrófica, remodelam muito e raramente alteram o crescimento.\n\n**A luxação com fratura.** Fraturas do úmero proximal podem ter luxação glenoumeral concomitante, sobretudo na alta energia, embora a pseudossubluxação (por desvio ou desequilíbrio muscular) seja mais comum e se resolva sozinha. Toda fratura do úmero proximal deve ter a congruência articular conferida na imagem (AP e axilar).\n\n**No recém-nascido.** A pseudoluxação, por fratura fisária com epífise ainda não ossificada (aparece por volta de 6 meses), pode imitar luxação; ultrassonografia ajuda, e o sinal da \"epífise que desaparece\" aparece quando o núcleo fica atrás da metáfise.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2020 (`pediatria-0714`), sem gabarito, que pergunta o tipo associado à luxação glenoumeral, e do TEOT 2021 (`pediatria-0848`), que pede o tipo mais frequente abaixo de 5 anos (I). Depois, faça as oficiais.\n\n> **Na prova:** úmero proximal: **SH I abaixo de 5 anos**; **SH II** no maior; **SH III raro, com luxação glenoumeral**; **SH IV não relatado**; epífise aparece aos **6 meses**.",
-  "correta": "**B: III, raro.** O capítulo descreve o SALTER-HARRIS III do úmero proximal como relativamente raro e associado a luxação glenoumeral concomitante (Rockwood crianças, 10ª ed., cap. 19).",
+  "conceito": "A associação rara entre fratura fisária proximal do úmero e **luxação glenoumeral** é apresentada no resumo para o **Salter-Harris III**, alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 19, classificação e tratamento).\n\nA idade e a associação articular são pistas diferentes. O capítulo situa o tipo I nos menores de 5 anos e o II na criança maior; esses padrões etários não substituem a associação específica com luxação que a pergunta pede.\n\nO resumo também alerta para **pseudoluxação no neonato**, quando uma separação fisária com epífise ainda não ossificada pode imitar perda de relação articular. Na avaliação do lactente, cita ultrassonografia e o sinal da epífise que desaparece. Portanto, uma aparente alteração glenoumeral precisa ser lida no contexto da ossificação, sem classificar toda imagem como luxação verdadeira.\n\n**Na prova:** para a combinação rara explicitamente perguntada, marcar III. Para o padrão por idade ou para a pseudoluxação neonatal, mudar o raciocínio conforme os dados, sem usar a mesma resposta para todas as perguntas da região.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2020 (`pediatria-0714`), sem gabarito, que pergunta o tipo associado à luxação glenoumeral, e do TEOT 2021 (`pediatria-0848`), que pede o tipo mais frequente abaixo de 5 anos (I). Depois, faça as oficiais.",
+  "correta": "Alternativa B. O resumo descreve o III como raro e associado à luxação glenoumeral. Essa é a relação específica pedida, diferente dos padrões mais comuns definidos pela idade.",
   "incorretas": {
-   "A": "**É o tipo da criança pequena.** O SH I é o mais comum abaixo de 5 anos, sem associação descrita com luxação.",
-   "C": "**É o mais comum no maior, sem luxação.** O SH II sai pela metáfise com um fragmento ósseo e é o típico da criança maior e do adolescente.",
-   "D": "**Não foi relatado.** O capítulo afirma que o SH IV do úmero proximal não foi relatado em crianças."
+   "A": "O tipo I é descrito abaixo de 5 anos, mas a pergunta não pede apenas o padrão mais comum do pequeno. Ela solicita a associação com luxação, que o capítulo destaca no tipo III.",
+   "C": "O tipo II é o padrão fisário da criança maior na síntese, mas não é a associação rara de luxação glenoumeral nomeada nessa passagem. Ter fragmento metafisário não substitui esse critério da pergunta.",
+   "D": "O capítulo informa que o IV não foi relatado na síntese apresentada e não o chama de mais comum no adolescente. A opção erra a frequência e a relação com a associação perguntada."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Classification of Proximal Humerus Fractures (Fig. 19-19)"
+   "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento; Instabilidade do ombro."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-19-ombro-umero",
+     "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+     "secoes": [
+      "Úmero proximal: classificação e tratamento",
+      "Instabilidade do ombro"
+     ],
+     "blocos": [
+      "umero-proximal-classificacao-e-tratamento-85b800d0",
+      "instabilidade-do-ombro-d8c2cceb"
+     ],
+     "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+     "trechosSha256": "bbfb2306c28002d5ad99e20bea55c6bda0674c1239d76be383ec4a88a13ac532"
+    }
+   ],
+   "questaoSha256": "ab0c2d0197c491c63cde0f4c32f1ba23b7720c80d5a8dcaf01be3efa4d1ed1f5",
+   "comentarioSha256": "800a08c2aa8d075ac33b4a85d59faf02d3f4b973f637e5de1a7bec0b9d217aa9"
+  }
  },
  "pediatria-1225": {
-  "conceito": "Um menino de 8 anos cai do brinquedo do pátio e bate o ombro no chão. Chora, segura o braço junto ao corpo e tem um volume no meio da clavícula. A pergunta é de mecanismo, e o capítulo separa bem cada idade.\n\n**As idades e os mecanismos.** No **recém-nascido**, a fratura vem do parto, pela compressão lateral da cintura escapular contra a pelve da mãe; acontece também em cesáreas. No **lactente e no pré-escolar**, quedas de altura e **maus-tratos**: abaixo de 4 anos, os abusados tiveram cerca de 4% de fraturas da clavícula contra 1% dos controles. Na **idade escolar**, o típico é a **queda com força compressiva na face lateral do ombro**: brinquedos de parque, bicicleta, esporte. O trauma direto sobre o osso existe, mas é menos comum, e a queda sobre a mão espalmada em geral não transmite força suficiente, embora seja um mecanismo relatado (Rockwood crianças, 10ª ed., cap. 20).\n\n**O adolescente.** Mesmo mecanismo de queda lateral, com mais esporte competitivo e alta energia (carro, quadriciclo) e politrauma como no adulto. Numa série de 545 adolescentes de 10 a 18 anos, o esporte respondeu por 66%, a brincadeira por 12% e a bicicleta por 6%; 79% eram meninos. A fratura por estresse é rara (remo, saltos ornamentais, beisebol, ginástica), por protração e retração escapular repetidas.\n\n**O exame que acompanha o mecanismo.** Procurar abrasão ou eritema na **face lateral do ombro**, o ponto do impacto; o ombro caído e encurtado; a pele em tenda. O exame neurológico é obrigatório, com atenção ao **cordão medial e ao nervo ulnar**, vizinhos do terço médio, e o pulso radial deve ser simétrico.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2019 (`pediatria-0643`), que perguntou o mecanismo mais comum na idade escolar e deu como gabarito a queda com trauma na região lateral do ombro. Depois de resolver esta, faça a oficial.\n\n> **Na prova:** idade escolar = **queda sobre a face lateral do ombro**; recém-nascido = **parto**; pequeno = **queda de altura e maus-tratos**; adolescente = **esporte e alta energia**.",
-  "correta": "**B: queda com impacto na face lateral do ombro, que comprime a clavícula no seu eixo.** É o mecanismo típico das fraturas da clavícula na criança em idade escolar, em quedas de brinquedos, bicicleta e esporte (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "Na criança em **idade escolar**, o mecanismo típico é a **queda com compressão sobre a face lateral do ombro**, alternativa B. A clavícula transmite essa força, e a concentração no segmento médio ajuda a entender o local da fratura (Rockwood and Wilkins, 10ª edição, capítulo 20, mecanismos).\n\nO resumo relaciona a mecânica à anatomia: as pontas estão presas pelos ligamentos costoclavicular, medialmente, e conoide e trapezoide, lateralmente. O meio recebe a concentração da força e é o local mais frequente, com até 80% das fraturas claviculares da criança.\n\nOs mecanismos mudam com a idade. O parto tem fatores próprios; no pequeno, o resumo discute quedas de altura e a avaliação de maus-tratos; no adolescente, esporte e alta energia ganham importância. O menino de 8 anos exige a comparação com o padrão escolar, não com qualquer mecanismo possível em toda faixa etária.\n\n**Na prova:** distinguir impacto lateral no ombro de golpe direto sobre a clavícula e de queda na mão. O capítulo considera o trauma direto menos comum e afirma que a mão espalmada, em geral, não basta para o padrão típico.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2019 (`pediatria-0643`), que perguntou o mecanismo mais comum na idade escolar e deu como gabarito a queda com trauma na região lateral do ombro. Depois de resolver esta, faça a oficial.",
+  "correta": "Alternativa B. Reproduz o mecanismo escolar de impacto e compressão lateral do ombro. A relação entre as extremidades fixas e a concentração de força no meio explica o foco clavicular apresentado.",
   "incorretas": {
-   "A": "**Mecanismo relatado, mas não o típico.** O capítulo diz que a queda sobre a mão espalmada em geral não transmite força suficiente à clavícula para fraturá-la, embora apareça como mecanismo descrito.",
-   "C": "**Existe, mas é menos comum.** O golpe direto sobre a clavícula pode fraturá-la na criança, porém é menos frequente que a compressão lateral pela queda sobre o ombro.",
-   "D": "**Não é mecanismo de fratura da clavícula.** A tração do membro superior lembra a pronação dolorosa do cotovelo. Na clavícula, a suspeita de maus-tratos aparece no lactente e no pré-escolar, não como mecanismo típico do escolar."
+   "A": "O resumo afirma que a queda sobre a mão espalmada em geral não basta para explicar esse padrão típico. A alternativa desloca o ponto de aplicação da força do ombro lateral para a mão e perde a característica etária solicitada.",
+   "C": "O golpe direto pode fraturar, mas é descrito como menos comum que a compressão lateral do ombro no escolar. A pergunta é sobre o mecanismo típico, e não sobre qualquer mecanismo possível.",
+   "D": "Tração por um adulto não é o mecanismo típico escolar apresentado. A avaliação de proteção infantil continua dependendo da história e do exame, mas esse mecanismo não substitui a queda lateral do caso descrito."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Mechanisms of Injury for Midshaft Clavicle Fractures"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: epidemiologia, mecanismos e recém-nascido."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: epidemiologia, mecanismos e recém-nascido"
+     ],
+     "blocos": [
+      "clavicula-epidemiologia-mecanismos-e-recem-nasci-5ea9db75",
+      "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "02ae2aa7562919d1b8e284605abe35de38011e73eb3eddacf1c9745a36070e39"
+    }
+   ],
+   "questaoSha256": "9e7b12f1de2a6ba12caabf7eff4cfe91a85c997f2da3b6bd1aebacb0c25d6d24",
+   "comentarioSha256": "a3c00948d2db5a8315e1a90bfecf9506d113edde22f41df031cdeeac0b4d2e80"
+  }
  },
  "pediatria-1226": {
-  "conceito": "A clavícula é um dos ossos que mais quebram na infância, e a prova gosta dos números da distribuição. Vale guardar três: quanto da fratura pediátrica é clavícula, quanto da clavícula é terço médio e quanto é terço lateral.\n\n**Os números.** A clavícula representa **5% a 15% de todas as fraturas pediátricas**. O local mais comum é o **terço médio (diáfise)**, com **até 80%** das fraturas. O **terço lateral (distal)** vem em segundo, com **10% a 30%**. O terço medial é o mais raro, e as lesões da articulação esternoclavicular são menos de 5% das lesões da cintura escapular (Rockwood crianças, 10ª ed., cap. 20).\n\n**Por que o meio quebra.** A clavícula tem forma de S, convexa para a frente no medial (deixa passar o plexo braquial e os vasos axilares) e côncava para a frente no lateral. Nas duas pontas, ligamentos fortes a seguram: o **costoclavicular** no medial; o **conoide** (tubérculo conoide) e o **trapezoide** (linha trapezoide) no lateral. Com as extremidades bem ancoradas, a força se concentra no terço médio.\n\n**A literatura é pobre.** Apesar da frequência, há pouca literatura pediátrica, e muito se extrapola do adulto. Por isso se formou um grupo de estudo da fratura da clavícula do adolescente, e o tema segue entre os mais controversos da ortopedia pediátrica e da medicina esportiva.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2013 (`pediatria-0685`), que perguntou a prevalência das fraturas do terço médio (76% a 85%), e do TARO 2012 (`pediatria-0657`), que perguntou o percentual das fraturas da clavícula entre as fraturas da criança segundo GUARNIERO (cerca de 11%, dentro da faixa de 5% a 15% do capítulo). Depois, faça as oficiais.\n\n> **Na prova:** clavícula = **5% a 15%** das fraturas da criança; **terço médio até 80%**; **terço lateral 10% a 30%** (segundo lugar); esternoclavicular **menos de 5%** da cintura escapular.",
-  "correta": "**C: o terço médio (diáfise), com até 80%.** O terço médio é a localização mais comum das fraturas da clavícula na criança, com até 80% delas (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "O **terço médio da clavícula** concentra até **80%** das fraturas desse osso na criança, alternativa C. Já a clavícula inteira representa **5–15% de todas as fraturas pediátricas**: são dois denominadores diferentes (Rockwood and Wilkins, 10ª edição, capítulo 20, epidemiologia).\n\nA distribuição por segmento tem relação com as extremidades presas pelos ligamentos e a concentração de força no meio. O terço lateral aparece em segundo lugar, com 10–30%. Não se deve usar o percentual lateral para responder qual é o local mais comum, mesmo que o número em si esteja correto.\n\nEsses valores são aproximações das séries resumidas pelo capítulo, não uma conta fixa que precise fechar exatamente em cada hospital. A questão pede a relação hierárquica e a proporção aproximada do segmento dominante.\n\n**Na prova:** primeiro perguntar “percentual de quê?”. Clavícula entre todas as fraturas: 5–15%; terço médio entre as claviculares: até 80%; lateral: 10–30%, em segundo lugar.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2013 (`pediatria-0685`), que perguntou a prevalência das fraturas do terço médio (76% a 85%), e do TARO 2012 (`pediatria-0657`), que perguntou o percentual das fraturas da clavícula entre as fraturas da criança segundo GUARNIERO (cerca de 11%, dentro da faixa de 5% a 15% do capítulo). Depois, faça as oficiais.",
+  "correta": "Alternativa C. Mantém o terço médio como o local mais frequente e o valor de até 80% das fraturas claviculares. A resposta preserva o denominador da distribuição por segmento.",
   "incorretas": {
-   "A": "**É o segundo lugar.** O terço lateral responde por 10% a 30% das fraturas da clavícula, atrás do terço médio.",
-   "B": "**O medial é o mais raro.** As lesões medial e esternoclavicular são pouco frequentes; nenhuma série do capítulo dá metade das fraturas ao terço medial.",
-   "D": "**Trocou a localização.** A proporção de até 80% é do terço médio. O lateral fica entre 10% e 30%."
+   "A": "10–30% é a faixa fornecida para o terço lateral, mas ele é o segundo mais comum. A opção usa um número verdadeiro para responder incorretamente qual segmento lidera.",
+   "B": "O resumo não atribui metade das fraturas ao terço medial. A concentração está no segmento médio, e as extremidades ligamentares ajudam a explicar essa distribuição.",
+   "D": "A alternativa transfere ao terço lateral os até 80% do segmento médio. O lateral tem outra faixa, 10–30%, e outra posição na hierarquia."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Introduction (Midshaft Clavicle Fractures) e seção Introduction to Distal Clavicle Fractures"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: epidemiologia, mecanismos e recém-nascido."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: epidemiologia, mecanismos e recém-nascido"
+     ],
+     "blocos": [
+      "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "3940fc496cd234a2d1934f1cc1d51d1b1b12e854cc2292a95b4643fce810ed2f"
+    }
+   ],
+   "questaoSha256": "fde711c58cd3061608fe121c1d47de586e33f58233d851dba3d50d8940d4a5fa",
+   "comentarioSha256": "3f1cbb6bd141f6c2f8ab9db85e4a99a0e094cac03125751b8432e535ff3134fb"
+  }
  },
  "pediatria-1227": {
-  "conceito": "Um bebê grande, nascido de parto difícil, não mexe o braço direito. Há crepitação e assimetria na clavícula. Ele não mexe porque dói (a fratura) ou porque o nervo não funciona (o plexo)? As duas coisas vêm juntas com frequência, e o capítulo ensina a separá-las pelo tempo.\n\n**O lado e o mecanismo.** A fratura de parto é mais comum nos **grandes para a idade gestacional** e nos **partos difíceis**; outros fatores são a relação cabeça e abdome menor e mãe com filho macrossômico anterior. A incidência chega a **4,4%**. Pela posição no útero, o **ombro anterior**, em geral o **direito**, é o mais atingido, porque a apresentação **occipito-esquerda-anterior** é a mais comum. É também o lado mais comum da paralisia braquial obstétrica (Rockwood crianças, 10ª ed., cap. 20).\n\n**O quadro.** Menos movimento ativo do ombro, choro à mobilização passiva, edema, crepitação, contorno assimétrico e **reflexo de MORO diminuído**. Dedos parados ou **síndrome de HORNER** (ptose, miose, anidrose) indicam lesão grave do plexo, com raízes baixas.\n\n**A separação.** O bebê que não mexe por dor tem **pseudoparalisia**. A fratura do recém-nascido **consolida em 1 a 3 semanas**; a dor cai muito, e a diferenciação entre pseudoparalisia e paralisia do plexo pode ser feita com **3 a 4 semanas de vida**. A paralisia mais comum é a de **ERB** (C5 e C6, às vezes C7): ombro, flexão do cotovelo, supinação e extensão do punho fracos. A imobilização é simples (algodão ortopédico ou faixa elástica prendendo o braço ao tronco) e pode ser retirada em cerca de **1 semana**.\n\n**Diferencial.** A **pseudartrose congênita** da clavícula, mais rara, costuma ser à direita, exceto na dextrocardia.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2022 (`pediatria-0706`), que perguntou o lado da fratura de parto e a apresentação (direito, occipito-esquerda-anterior). Depois, faça a oficial.\n\n> **Na prova:** fratura de parto = **lado direito** (ombro anterior, **occipito-esquerda-anterior**); consolida em **1 a 3 semanas**; **reavaliar o plexo** com **3 a 4 semanas**; HORNER e dedos parados = plexo grave.",
-  "correta": "**A: imobilizar por cerca de 1 semana e reavaliar o plexo depois da consolidação, com 3 a 4 semanas de vida.** A fratura consolida em 1 a 3 semanas, a dor diminui, e o exame repetido separa a pseudoparalisia da lesão do plexo (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "Na fratura clavicular do recém-nascido, o resumo recomenda **imobilização simples por cerca de 1 semana** e diferenciação da pseudoparalisia pela reavaliação em **3–4 semanas**, depois do período usual de consolidação. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 20, recém-nascido).\n\nDor, choro à mobilização, crepitação e menor movimento são a apresentação da fratura. A ausência de movimento nesse contexto não prova, sozinha, paralisia braquial. A fonte descreve consolidação em 1–3 semanas, o que permite reexaminar a função quando o foco já não explica o mesmo bloqueio doloroso.\n\nO cuidado, porém, não se reduz a esperar em todos os casos. O capítulo destaca **Horner ou dedos sem movimento** como sinais de lesão grave do plexo e raízes baixas. Eles pertencem à avaliação inicial e não devem ser apagados pelo diagnóstico da fratura. O caso apresentado não fornece esses sinais.\n\n**Na prova:** proteção simples e reavaliação orientada, em vez de fixar a clavícula apenas para permitir exame. O protocolo de 3–4 semanas é a comparação da pseudoparalisia típica, não uma licença para ignorar déficits graves já observáveis.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2022 (`pediatria-0706`), que perguntou o lado da fratura de parto e a apresentação (direito, occipito-esquerda-anterior). Depois, faça a oficial.",
+  "correta": "Alternativa A. Combina a proteção inicial breve e a reavaliação do plexo no intervalo descrito. A melhora após consolidação ajuda a separar limitação dolorosa da fratura de um déficit que persiste.",
   "incorretas": {
-   "B": "**Não é o passo inicial.** O capítulo resolve a dúvida pelo exame clínico repetido depois que a dor da fratura passa. A eletroneuromiografia não entra na conduta inicial descrita.",
-   "C": "**Não é necessária de início.** O capítulo não indica ressonância para separar pseudoparalisia de lesão do plexo; a diferenciação é clínica, com 3 a 4 semanas.",
-   "D": "**Não há indicação.** A fratura de parto consolida em 1 a 3 semanas com imobilização simples; fixação cirúrgica no recém-nascido não faz parte do tratamento."
+   "B": "Eletroneuromiografia imediata não é o passo de rotina apresentado para essa pseudoparalisia por fratura. A fonte organiza a avaliação pela clínica inicial, sinais de gravidade e reexame depois da consolidação.",
+   "C": "A ressonância na primeira semana não substitui o protocolo descrito de proteção simples e reavaliação clínica. A pergunta fornece a apresentação típica, sem os sinais graves que precisariam ser considerados à parte.",
+   "D": "Fixar a clavícula para conseguir examinar não é a conduta recomendada no resumo. A fratura do parto consolida rapidamente com proteção simples, e o reexame faz parte da distinção diagnóstica proposta."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Mechanisms of Injury, Injuries Associated e Signs and Symptoms of Midshaft Clavicle Fractures (Fig. 20-1)"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: epidemiologia, mecanismos e recém-nascido."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: epidemiologia, mecanismos e recém-nascido"
+     ],
+     "blocos": [
+      "clavicula-epidemiologia-mecanismos-e-recem-nasci-a0e9c19c"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "b5d419cf1c99fd7478fa5c188fa57c023c09309128152d77cbb766a7816c9b7c"
+    }
+   ],
+   "questaoSha256": "d86223014f274ea279415085cb31d0b53fe98d479ccd6c273bb9fef50080302f",
+   "comentarioSha256": "7f504fedf1f5d103f50b8cb8a371f9ec8d2af32eff5e58f610bf5245717428ca"
+  }
  },
  "pediatria-1228": {
   "conceito": "Um bebê de 6 meses tem um \"caroço\" no meio da clavícula direita. Não dói, não houve queda, e a família lembra que estava ali desde cedo. A radiografia mostra uma falha entre dois fragmentos de pontas arredondadas, sem calo. Não é fratura de parto que deixou de consolidar: é a pseudartrose congênita da clavícula.\n\n**A distinção no capítulo.** As fraturas da clavícula pelo trauma do parto precisam ser diferenciadas da **pseudartrose congênita da clavícula**, mais rara, que **geralmente aparece do lado direito, exceto na dextrocardia** (Rockwood crianças, 10ª ed., cap. 20, Fig. 20-1B).\n\n**O que muda entre as duas.** A fratura de parto vem de um parto difícil, dói, tem crepitação e reflexo de MORO diminuído, e forma calo muito rápido: consolida em **1 a 3 semanas**. O caso do enunciado não tem trauma, não dói e mostra uma falha sem calo meses depois, o que não combina com a fratura do recém-nascido.\n\n**O lado direito nas duas.** A fratura de parto também é mais comum à direita, mas por outro motivo: é o ombro anterior na apresentação occipito-esquerda-anterior. Na pseudartrose congênita, o capítulo registra o lado direito e a exceção da dextrocardia, sem discutir a causa.\n\n**O que o capítulo não traz.** O sexo mais acometido, o terço da clavícula e o tratamento da pseudartrose congênita não estão neste capítulo; ficam para o capítulo das doenças congênitas.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2020 (`pediatria-0002`), que perguntou o lado e o terço da pseudartrose congênita (direito, terço médio). O capítulo sustenta o lado direito; o terço não é discutido aqui.\n\n> **Na prova:** pseudartrose congênita da clavícula = **direita**, exceto **dextrocardia**; fratura de parto = parto difícil, dor, crepitação, **calo em 1 a 3 semanas**.",
@@ -30976,109 +31249,271 @@
   "conferido": false
  },
  "pediatria-1229": {
-  "conceito": "Um adolescente de 15 anos cai no futebol e quebra a clavícula. A radiografia mostra fragmentos sem contato, sobrepostos cerca de 2 cm. Pele boa, pulso e nervos normais. A família leu que \"acima de 2 cm opera\". O capítulo, escrito pelo autor do maior estudo prospectivo em adolescentes, responde com dados.\n\n**De onde veio o \"2 cm\".** No adulto, um ensaio canadense (idade média de 33,5 anos) mostrou menos pseudartrose e consolidação viciosa sintomática com a cirurgia, e alguns autores associaram **encurtamento acima de 14 ou 20 mm** a piores resultados, tornando 20 mm um limiar. Mas SCHULZ e BAE mostraram adolescentes com mais de 15 a 20 mm sem déficit funcional, e a medida tradicional **superestima** o encurtamento real, por ignorar a obliquidade da fratura (Rockwood crianças, 10ª ed., cap. 20).\n\n**Os números do adolescente.** No estudo prospectivo de HEYWORTH, com **416 fraturas completamente desviadas** entre 10 e 18 anos, não houve diferença funcional entre operados e não operados, mas os operados tiveram **mais complicações e mais cirurgias inesperadas**. Taxas gerais: **pseudartrose 0,4%**, retardo 1,9%, consolidação viciosa sintomática 0,4%, refratura 2,6% (contra cerca de 15% e 10% de pseudartrose e consolidação viciosa no adulto). NG: 606 fraturas, uma pseudartrose. Na série FACTS de 125 operados, complicações em 43% (21% clinicamente relevantes) e 10% de cirurgia inesperada. Placas irritam em cerca de **18%**.\n\n**A conduta do autor.** **Não operatório**: tipoia em tempo integral por 2 semanas, parcial até 6 semanas, sem tipoia e esporte sem contato a partir de 6 semanas, **contato com 3 meses** após radiografia de consolidação avançada. Para encurtamento claramente **acima de 30 mm** ou cominuição grave, decisão compartilhada, mas ainda recomendando o não operatório; arremessadores de elite podem discutir a cirurgia. Se a família optar pela cirurgia, **placa** em vez de haste.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A indicação cirúrgica no adolescente é a maior controvérsia do capítulo, e a resposta atual do autor vai contra a extrapolação do adulto.\n\n> **Na prova:** adolescente com fratura desviada do terço médio = **tipoia**; pseudartrose **0,4%**; cirurgia = **mais complicações** e **mais reoperações**; encurtamento acima de **30 mm** = decisão compartilhada; se operar, **placa**.",
-  "correta": "**A: tratamento não operatório com tipoia, porque a pseudartrose e a consolidação viciosa sintomática são muito raras no adolescente.** Mesmo nas fraturas completamente desviadas, o autor recomenda o tratamento não operatório; a cirurgia trouxe mais complicações sem melhor função (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "No adolescente com fratura **completamente desviada do terço médio**, mas pele e exame neurovascular preservados, o padrão do capítulo é **não operatório com tipoia**, alternativa A. O limiar de 2 cm vindo do adulto não deve ser aplicado automaticamente ao adolescente (Rockwood and Wilkins, 10ª edição, capítulo 20, tratamento do terço médio).\n\nO resumo cita uma coorte prospectiva de **416 fraturas desviadas**, sem diferença funcional e com mais complicações e reoperações no grupo cirúrgico. As frequências relatadas de pseudartrose e consolidação viciosa sintomática foram de 0,4% cada. Esses resultados do grupo apresentado ajudam a entender a recomendação, sem prometer risco zero a cada atleta.\n\nO capítulo distingue indicações **absolutas**, como exposição e lesão neurovascular, de situações relativas e decisões compartilhadas. O caso não traz esses fatores absolutos. Encurtamento isolado de 2 cm não se transforma, nessa fonte, em obrigação de operar só porque o paciente pratica esporte.\n\n**Na prova:** comparar adulto e adolescente com cuidado. Se houver indicação de operar, o resumo prefere placa, não haste; na apresentação oferecida, a primeira decisão é reconhecer que o desvio por si não elimina a opção de tipoia.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A indicação cirúrgica no adolescente é uma discussão importante do capítulo, e a resposta atual do autor vai contra a extrapolação do adulto.",
+  "correta": "Alternativa A. É a conduta padrão do capítulo mesmo nas completamente desviadas do adolescente, com baixa frequência dos desfechos sintomáticos apresentados. Exige acompanhamento, não a presunção de que toda deformidade terá consequência funcional importante.",
   "incorretas": {
-   "B": "**Limiar do adulto.** O encurtamento de 20 mm vem de estudos em adultos. Em adolescentes, mais de 15 a 20 mm não causou déficit funcional, e o capítulo reserva a decisão compartilhada para encurtamentos acima de 30 mm.",
-   "C": "**Não tem menos complicações.** A haste intramedular resiste menos à torção, pode quebrar ou migrar, e as travadas exigem retirada com frequência (57% numa série). Se operar, o autor prefere a placa.",
-   "D": "**Não melhora o resultado.** A bandagem em oito é mais incômoda e não mostrou resultado melhor que a tipoia; a redução fechada não faz parte da conduta."
+   "B": "O limiar de 20 mm é discutido como originário de estudo do adulto. A fonte não o transforma em indicação absoluta pediátrica e recomenda considerar os resultados próprios dos adolescentes.",
+   "C": "A escolha inicial do caso não é operação obrigatória; além disso, quando opera, o autor prefere placa e não haste. A justificativa de menor complicação da haste não corresponde à preferência operatória apresentada no resumo.",
+   "D": "O protocolo apresentado é tipoia, com períodos definidos de proteção e retorno. Redução fechada com imobilização em oito não é a estratégia recomendada para substituir essa conduta no caso descrito."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Classification, Nonoperative Treatment (Outcomes and Return to Sport) e Author's Preferred Treatment for Midshaft Clavicle Fractures (Algoritmo 20-1)"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: tratamento do terço médio."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: tratamento do terço médio"
+     ],
+     "blocos": [
+      "clavicula-tratamento-do-terco-medio-d1a9f002",
+      "clavicula-tratamento-do-terco-medio-8cd4a5c7",
+      "clavicula-tratamento-do-terco-medio-97ce9c94"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "0302154c132e2456f66509e89d0be1750408574ce43dc2d7cc489eded1df0129"
+    }
+   ],
+   "questaoSha256": "32ecfc77c6cbca3d5a2d45e221771a26d39183861afc22fcd8d553cdb1704c81",
+   "comentarioSha256": "448c1cb7d5a686245b8ce48226ab892b19836e8843fe9dc4f62a66df57ed4202"
+  }
  },
  "pediatria-1230": {
-  "conceito": "Quando operar a clavícula de uma criança? O capítulo separa com cuidado o que é **absoluto** (opera sempre), o que é **relativo** (discute) e o que **não é** indicação, mesmo parecendo.\n\n**Absolutas.** **Fratura exposta** e **fratura com lesão neurovascular** que afeta claramente a função motora ou a irrigação do membro (Rockwood crianças, 10ª ed., cap. 20).\n\n**Relativas.** **Pele em tenda grave** (pálida, isquêmica, em risco de necrose), **ombro flutuante** (clavícula e colo da glenoide ou diáfise do úmero completamente desviados) e **politrauma**, em que estabilizar a clavícula acelera a reabilitação. No ombro flutuante com fratura do terço médio e do colo da glenoide, fixar só a clavícula pode bastar: a glenoide reduz por **ligamentotaxia** pelo ligamento coracoclavicular.\n\n**O que não indica cirurgia.** A **dormência da parede torácica** abaixo da fratura vem de contusão ou estiramento dos **nervos supraclaviculares** e não é indicação independente: observar 2 a 3 meses. O encurtamento e a cominuição, no adolescente, levam no máximo à decisão compartilhada, e o autor ainda recomenda o tratamento não operatório. Na conduta do autor também operam: refraturas múltiplas e fraturas muito desviadas em atletas, sintomáticas e sem calo entre 6 semanas e 3 meses.\n\n**Contraindicações ao não operatório, na caixa do capítulo.** Exposta e lesão neurovascular (contraindicações); ombro flutuante, pele em tenda grave e politrauma (relativas). As indicações do não operatório incluem fraturas sem desvio, parcialmente desviadas e completamente desviadas sem encurtamento grave (menos de 3 cm).\n\n**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre indicação absoluta e relativa é o ponto que mais se cobra quando a conduta habitual é não operatória.\n\n> **Na prova:** absolutas = **exposta** e **lesão neurovascular**; relativas = **pele em risco**, **ombro flutuante**, **politrauma**; dormência da parede torácica **não** indica cirurgia.",
-  "correta": "**C: fratura exposta e fratura com lesão neurovascular.** São as indicações absolutas de tratamento cirúrgico da fratura do terço médio da clavícula na criança e no adolescente (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "As indicações **absolutas** do capítulo para operar o terço médio são **fratura exposta e lesão neurovascular**, alternativa C. Ombro flutuante, politrauma e pele em risco aparecem em outra categoria, a de indicações relativas (Rockwood and Wilkins, 10ª edição, capítulo 20, tratamento).\n\nA distinção evita usar todo achado preocupante como se tivesse o mesmo peso. O adolescente pode ter fratura bastante desviada e ainda receber tipoia; a decisão muda quando há exposição ou comprometimento neurovascular. O enunciado pede a categoria absoluta, não uma lista de todos os motivos que podem levar a discutir cirurgia.\n\nO resumo aborda ainda a **dormência da parede torácica**, relacionada aos nervos supraclaviculares, para a qual orienta observação por 2–3 meses. Esse sintoma não equivale automaticamente à lesão neurovascular que constitui indicação absoluta.\n\n**Na prova:** ler o adjetivo da pergunta. Relativo, sintomático e absoluto não são rótulos intercambiáveis; encurtamento isolado ou dor não substituem as duas indicações expressamente listadas.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre indicação absoluta e relativa é um contraste importante quando a conduta habitual é não operatória.",
+  "correta": "Alternativa C. São os dois critérios absolutos do resumo. A necessidade de proteger partes moles expostas ou tratar lesão neurovascular é diferente da discussão de desvio, desconforto ou risco funcional isolados.",
   "incorretas": {
-   "A": "**Não são absolutas.** Encurtamento e cominuição graves levam, no adolescente, à decisão compartilhada; o autor ainda recomenda o tratamento não operatório pelos índices muito baixos de pseudartrose.",
-   "B": "**Não indicam cirurgia.** A dormência vem da contusão dos nervos supraclaviculares e se observa por 2 a 3 meses; a dor não é critério cirúrgico.",
-   "D": "**São relativas.** Ombro flutuante e politrauma entram como indicações relativas, quando a estabilização ajuda a reabilitação; não são obrigatórias."
+   "A": "O encurtamento de 2 cm é um limiar discutido a partir do adulto, e cominuição importante entra na decisão contextual. A fonte não os lista como o par de indicações absolutas da criança/adolescente.",
+   "B": "A dormência supraclavicular da parede torácica é explicitamente observada, não uma indicação cirúrgica por si. Dor intensa também não substitui o diagnóstico de exposição ou lesão neurovascular exigido pela categoria perguntada.",
+   "D": "Ombro flutuante e politrauma são listados como relativos. Podem mudar a discussão terapêutica, mas não são as indicações absolutas que o enunciado solicita."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Treatment Options e Operative Treatment of Midshaft Clavicle Fractures (Indications/Contraindications)"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: tratamento do terço médio."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: tratamento do terço médio"
+     ],
+     "blocos": [
+      "clavicula-tratamento-do-terco-medio-d1a9f002",
+      "clavicula-tratamento-do-terco-medio-8cd4a5c7"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "e352c8d9a18cee6f01c6664d05248cb7fda579e17efa7abcfbfcba40c7783c1e"
+    }
+   ],
+   "questaoSha256": "77fe0ab4ee360570cd841ed86ace516f51ae70db0f25a441b7e726db49e1b1ff",
+   "comentarioSha256": "3ba7bfc399bad4235ec5100fdd345fc4a3f6e2fa2075d7818b0fa891411a0829"
+  }
  },
  "pediatria-1231": {
-  "conceito": "Quando o jogador de rúgbi volta a jogar? A refratura é a complicação que mais preocupa no adolescente que trata a clavícula sem cirurgia, e o protocolo do capítulo existe para evitá-la.\n\n**As etapas do autor.** **0 a 2 semanas**: tipoia em tempo integral, só tirada para o banho. **2 semanas**: consulta para confirmar o início da consolidação; até **6 semanas**, pode tirar a tipoia em casa, mas usá-la fora de casa e na escola. **6 semanas**: retira a tipoia, libera **esporte sem contato** e treino de força, incluindo musculação e flexões. **3 meses**: **esporte de contato** (futebol americano, hóquei, **rúgbi**, lacrosse, luta), depois de a radiografia confirmar **consolidação óssea avançada** (Rockwood crianças, 10ª ed., cap. 20).\n\n**Radiografias.** Em 2 semanas, 6 semanas e 3 meses. A de 2 semanas confirma que a fratura não desviou mais; a de 6 semanas costuma mostrar calo; a de 3 meses libera o contato. CALDER sugeriu dispensar radiografias de controle na criança, pela consolidação quase universal; o capítulo aceita isso abaixo de 13 anos conforme a atividade, mas no atleta adolescente elas guiam a volta.\n\n**Tempo de consolidação.** Sem desvio, **4 a 8 semanas**; desviadas, cerca de **10 a 12 semanas**. Consolidação de 95% a 100% sem cirurgia. Fisioterapia formal raramente é necessária; pode entrar se houver discinesia escapular aos 3 meses.\n\n**Depois da cirurgia é igual.** O protocolo pós-operatório repete o do tratamento sem cirurgia: contato só com 3 meses, porque a refratura pode ocorrer dentro da placa se a fratura não consolidou; depois disso, ela tende a ocorrer junto à placa ou no furo do parafuso mais excêntrico.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os prazos de tipoia e de retorno ao esporte são os números práticos do capítulo.\n\n> **Na prova:** tipoia integral **2 semanas**, parcial até **6 semanas**; sem contato com **6 semanas**; **contato aos 3 meses** com consolidação avançada; consolidação **4 a 8 semanas** (sem desvio) e **10 a 12 semanas** (desviada).",
-  "correta": "**B: com cerca de 3 meses, após radiografia com consolidação avançada.** O autor libera o esporte de contato aos 3 meses, quando a radiografia confirma consolidação óssea avançada (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "No protocolo do autor para a fratura desviada do terço médio, o retorno ao **esporte de contato** ocorre por volta de **3 meses**, depois de radiografia com **consolidação avançada**, alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 20, tratamento).\n\nO fim da dor e a retirada progressiva da tipoia não marcam automaticamente a mesma etapa. O resumo usa tipoia integral por 2 semanas e parcial até 6; o contato permanece restrito além dessa fase. No rúgbi, voltar ao contato não é apenas conseguir movimentar o ombro no consultório.\n\nA consolidação descrita também varia com o desvio: cerca de 4–8 semanas nas sem desvio e 10–12 nas desviadas. Esses intervalos ajudam a entender por que o retorno não deve ser decidido só pela melhora precoce dos sintomas.\n\n**Na prova:** distinguir proteção inicial, recuperação de movimento e liberação de contato. A resposta combina tempo aproximado e confirmação radiográfica, sem declarar que todo atleta estará automaticamente liberado no mesmo dia.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os prazos de tipoia e de retorno ao esporte são os números práticos do capítulo.",
+  "correta": "Alternativa B. É o marco de cerca de 3 meses com consolidação avançada na radiografia. As duas condições devem permanecer juntas; o prazo isolado não substitui a avaliação da união.",
   "incorretas": {
-   "A": "**Cedo demais.** Com 2 semanas, o protocolo só começa a liberar a tipoia em casa; voltar ao contato aí arrisca refratura ou romper o calo.",
-   "C": "**Libera só o esporte sem contato.** Com 6 semanas a tipoia sai e entram o esporte sem contato e a musculação; o contato espera os 3 meses.",
-   "D": "**Demora sem motivo.** Com consolidação avançada aos 3 meses, o capítulo libera o contato; não exige 6 meses."
+   "A": "2 semanas correspondem à fase inicial de tipoia integral, não à liberação de contato. Desaparecimento da dor não demonstra, sozinho, consolidação avançada.",
+   "C": "Aos 6 semanas termina a fase de tipoia parcial do protocolo, mas o contato fica para cerca de 3 meses. A opção confunde redução da proteção diária com retorno a colisões no esporte.",
+   "D": "O capítulo não impõe 6 meses mesmo quando a fratura já está consolidada. O protocolo usa avaliação em torno de 3 meses e radiografia apropriada, evitando tanto antecipação quanto um prazo fixo excessivo sem o contexto dado."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Nonoperative Treatment e Author's Preferred Treatment for Midshaft Clavicle Fractures (Algoritmo 20-1)"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: tratamento do terço médio."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: tratamento do terço médio"
+     ],
+     "blocos": [
+      "clavicula-tratamento-do-terco-medio-97ce9c94"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "5da69b0af15302167e4f34ae6e227033ade350845ec4f9712d7cf4317acdbee5"
+    }
+   ],
+   "questaoSha256": "2d1e1aef3f3e15d169d7b93afaf3e3e4d3a5cdcb5b960ca5edc2e0a2781f7c56",
+   "comentarioSha256": "586d3c0bb30deb7c08e034227870683851376186ba6ff4ed8570b631ca169e73"
+  }
  },
  "pediatria-1232": {
-  "conceito": "Uma adolescente de 13 anos consolidou a clavícula com encurtamento e um calo grande. A mãe pergunta se o osso \"vai ficar assim\". A resposta depende de quanto a clavícula ainda cresce e remodela, e o capítulo traz os números.\n\n**O desenvolvimento.** A clavícula começa a se formar com **5 semanas e meia** de gestação, por **ossificação intramembranosa**, e com 8 semanas já tem o formato em S. Depois do nascimento, cresce cerca de **8,4 mm por ano até os 12 anos**; depois, **2,6 mm por ano nas meninas** e **5,4 mm por ano nos meninos**. Assim, **80% do comprimento final** é alcançado aos **9 anos nas meninas** e aos **12 nos meninos** (Rockwood crianças, 10ª ed., cap. 20).\n\n**Mas ainda remodela.** Alguns autores usaram esses números para dizer que o adolescente remodela pouco. Só que a clavícula é **o último osso do corpo a terminar a ossificação, por volta dos 25 anos**, e os 20% finais bastam para remodelação importante. PENNOCK, com 98 adolescentes seguidos 3,4 anos, viu remodelação completa ou quase completa em **85% dos que tinham menos de 14 anos** e **54% dos de 14 anos ou mais**, melhorando comprimento, desvio superior e angulação.\n\n**A fise medial.** A fise medial da clavícula faz cerca de **80% do crescimento longitudinal**. A epífise medial só ossifica por volta dos **18 a 20 anos** e fecha entre **22 e 25 anos**, o que torna difícil separar fratura fisária de luxação esternoclavicular no adolescente.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os números de crescimento sustentam a decisão de não operar o adolescente e explicam por que a lesão medial \"esternoclavicular\" do jovem é muitas vezes fisária.\n\n> **Na prova:** ossificação **intramembranosa** com **5,5 semanas**; **80% do comprimento** aos **9 (F)** e **12 (M)**; última a ossificar, **cerca de 25 anos**; PENNOCK: remodela **85% abaixo de 14** e **54% a partir de 14**; fise medial = **80% do crescimento**.",
-  "correta": "**D: 80% do comprimento final é alcançado aos 9 anos nas meninas e aos 12 nos meninos, mas a ossificação só termina por volta dos 25 anos.** Por isso o adolescente ainda tem capacidade de remodelação relevante (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "A clavícula alcança cerca de **80% do comprimento final aos 9 anos nas meninas e 12 nos meninos**, mas a **ossificação só termina por volta dos 25 anos**, alternativa D. Comprimento alcançado e conclusão da ossificação são marcos diferentes (Rockwood and Wilkins, 10ª edição, capítulo 20, epidemiologia e desenvolvimento).\n\nO resumo descreve início por **ossificação intramembranosa em 5 semanas e meia**. Confundir esse início embrionário com fechamento tardio cria duas inversões possíveis: trocar intramembranosa por endocondral ou supor que um osso que já cresceu bastante esteja inteiramente maduro.\n\nA remodelação também não desaparece de modo abrupto aos 14 anos. Na série de Pennock citada, foi completa ou quase completa em **85% abaixo de 14** e em **54% a partir de 14**. São resultados da série, não garantia de correção de todo padrão de fratura em cada paciente.\n\n**Na prova:** manter separados início da ossificação, comprimento relativo e maturação final. O potencial de remodelação deve ser discutido com idade e fratura, sem converter um dos marcos em ausência absoluta de crescimento ou correção.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os números de crescimento sustentam a decisão de não operar o adolescente e explicam por que a lesão medial \"esternoclavicular\" do jovem é muitas vezes fisária.",
+  "correta": "Alternativa D. Reúne os marcos de comprimento por sexo e o término tardio da ossificação. Um dado não invalida o outro: ter 80% do comprimento não significa ter concluído o desenvolvimento ósseo.",
   "incorretas": {
-   "A": "**Tipo e tempo errados.** A clavícula se forma por ossificação intramembranosa, a partir de 5 semanas e meia de gestação.",
-   "B": "**Contradiz o capítulo.** A clavícula é o último osso a completar a ossificação, por volta dos 25 anos, e adolescentes de 14 anos ou mais ainda remodelaram em 54% dos casos.",
-   "C": "**Número invertido.** PENNOCK encontrou remodelação completa ou quase completa em 85% dos menores de 14 anos; 20% é a fração final do crescimento, não a taxa de remodelação."
+   "A": "O resumo descreve ossificação intramembranosa a partir de 5 semanas e meia, não endocondral na 12ª semana. A alternativa troca o tipo e o momento de início.",
+   "B": "A fonte situa o término por volta de 25 anos e ainda descreve remodelação em parte dos pacientes a partir dos 14. Não há base para declarar fim aos 14 nos dois sexos e perda absoluta de remodelação depois disso.",
+   "C": "A série citada informa remodelação completa ou quase em 85% abaixo de 14 anos, não 20%. A pergunta pede os dados do capítulo; não se deve substituir a proporção por um número muito menor."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Pathoanatomy and Applied Anatomy Related to Midshaft Clavicle Fractures"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: epidemiologia, mecanismos e recém-nascido."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: epidemiologia, mecanismos e recém-nascido"
+     ],
+     "blocos": [
+      "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "3940fc496cd234a2d1934f1cc1d51d1b1b12e854cc2292a95b4643fce810ed2f"
+    }
+   ],
+   "questaoSha256": "fbaf1a50ac673682c2a138da0632e7cc828e105b10a63f3e575c37ac52137262",
+   "comentarioSha256": "e9edadd841915a7787735870f4244f759fd33d5dce7ff2e10f702c69cec826fb"
+  }
  },
  "pediatria-1233": {
-  "conceito": "Um menino de 11 anos cai sobre o ombro e a radiografia mostra o terço lateral da clavícula desviado para cima, com a pontinha lateral (epífise) parada no lugar, junto ao acrômio. Que tipo é? A classificação de NEER, modificada por CRAIG, tem cinco tipos definidos pela relação do traço com os ligamentos coracoclaviculares, os ligamentos acromioclaviculares e a fise.\n\n**A peculiaridade da criança.** Na maioria das fraturas laterais do imaturo, o osso **sai do tubo de periósteo**, enquanto os **ligamentos coracoclaviculares continuam presos à parte inferior intacta do periósteo** (Rockwood crianças, 10ª ed., cap. 20).\n\n**Os tipos.**\n\n| Tipo | Traço | Comportamento |\n|---|---|---|\n| I | Lateral aos coracoclaviculares, sem entrar na acromioclavicular | Pouco desvio |\n| II A | Medial aos coracoclaviculares | Fragmento proximal sobe e sai do tubo de periósteo |\n| II B | Entre os coracoclaviculares, com lesão do conoide | O trapezoide segura o distal |\n| III | Lateral aos coracoclaviculares, entrando na acromioclavicular | Pouco desvio |\n| IV | **Medial à fise**, só no imaturo; epífise e fise presas à acromioclavicular | Desvio grande entre fise e metáfise; **análogo ao II A** |\n| V | Fragmento cortical inferior solto, preso aos coracoclaviculares | Nenhum fragmento principal preso aos ligamentos; instável |\n\n**Tratamento pelo tipo.** I e III quase sempre sem cirurgia. II, IV e V podem desviar muito, com pele em tenda, saliência ou instabilidade, e são decididos caso a caso pela idade, desvio e atividade.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2018 (`pediatria-0633`), que pergunta a estrutura rompida na fratura distal desviada da criança. O tipo IV, que só existe com fise aberta, é a pegadinha natural da classificação.\n\n> **Na prova:** NEER e CRAIG: **IV** = medial à **fise**, só no imaturo, **análogo ao II A**; II A = medial aos coracoclaviculares; II B = entre eles, com lesão do **conoide**; I e III = **pouco desvio**.",
-  "correta": "**A: IV, análogo ao tipo IIA.** O tipo IV ocorre no esqueleto imaturo, com fratura medial à fise; epífise e fise ficam presas à acromioclavicular, e os coracoclaviculares, à diáfise, o que permite grande desvio, como no tipo IIA (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "O padrão exclusivo do esqueleto imaturo, **medial à fise e análogo ao IIA**, é o **Neer–Craig IV**, alternativa A. A classificação precisa ser distinguida da descrição dos vínculos ligamentares no enunciado (Rockwood and Wilkins, 10ª edição, capítulo 20, terço lateral).\n\nNa criança, o resumo descreve o osso saindo do **tubo periosteal**, com ruptura superior, enquanto os **coracoclaviculares permanecem presos ao periósteo inferior**. Portanto, não é preciso ensinar como equivalentes “presos à diáfise” e “presos ao periósteo inferior”: o deslocamento do osso e a integridade do envoltório explicam a particularidade infantil. Essa ressalva fica no alerta.\n\nA tabela separa o tipo IV do **I**, lateral aos coracoclaviculares e extra-articular, do **III**, que entra na articulação, do **IIB**, com lesão do conoide, e do **V**, com fragmento cortical inferior ainda preso aos ligamentos. Reconhecer uma frase verdadeira de outro tipo não responde qual é exclusivo do imaturo.\n\n**Na prova:** tipo IV, medial à fise, análogo ao IIA. Para estudar a anatomia, conservar a descrição periosteal da fonte, sem transformar a simplificação do enunciado em mecanismo literal.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2018 (`pediatria-0633`), que pergunta a estrutura rompida na fratura distal desviada da criança. O tipo IV, que só existe com fise aberta, é a pegadinha natural da classificação.",
+  "correta": "Alternativa A. A tabela atribui ao IV a localização medial à fise, a exclusividade do imaturo e a analogia ao IIA. O gabarito é preservado, com a ressalva anatômica do enunciado explicitada no alerta.",
   "incorretas": {
-   "B": "**Tipo de pouco desvio.** O tipo I é lateral aos coracoclaviculares e não entra na articulação; os fragmentos ficam estabilizados e o desvio é mínimo. Não envolve a fise.",
-   "C": "**Não envolve a fise.** O II B ocorre entre os coracoclaviculares, com lesão do conoide e trapezoide preservado; o traço não passa pela fise.",
-   "D": "**Descreve outro tipo.** No tipo V, um fragmento cortical inferior fica preso aos coracoclaviculares e nenhum fragmento principal se prende aos ligamentos; não se define pela fise."
+   "B": "O tipo I é lateral aos coracoclaviculares, extra-articular e pouco desviado. Não é o padrão medial à fise exclusivo do imaturo; o III acrescenta componente intra-articular, em vez de definir essa mesma categoria.",
+   "C": "O IIB fica entre os coracoclaviculares e envolve lesão do conoide, com subida proximal. Essa configuração é diferente do tipo IV peri-fisário que a tabela reserva ao esqueleto imaturo.",
+   "D": "O V tem fragmento cortical inferior preso aos coracoclaviculares e é instável, mas não é o tipo exclusivo do imaturo descrito como medial à fise. A alternativa oferece outra linha verdadeira da tabela, com identificação inadequada para a pergunta."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seção Classification of Distal Clavicle Fractures"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "alerta": "Gabarito preservado: alternativa A, tipo IV de Neer–Craig, exclusivo do imaturo e análogo ao IIA na tabela. O enunciado resume os coracoclaviculares como presos à diáfise; o corpo do resumo descreve esses ligamentos presos ao PERIÓSTEO INFERIOR, com o osso saindo pelo periósteo superior. Não tratar as duas formulações anatômicas como automaticamente equivalentes.",
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: terço lateral"
+     ],
+     "blocos": [
+      "clavicula-terco-lateral-ee4be395",
+      "clavicula-terco-lateral-be6075a5"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "6820ccd7c20ff31502d0b641e9a89f92e361fef55f9e787e882f73a5dbead1b9"
+    }
+   ],
+   "questaoSha256": "cce3c82e40c76dd28da598445013a0dc10db85f273708b43b46100c7812105be",
+   "comentarioSha256": "9f1678950ad4c0154ada479b3fea0cf8527e1fd0c2de6af9aca4307bd32302a3"
+  }
  },
  "pediatria-1234": {
-  "conceito": "Na clavícula lateral da criança, o que parece uma \"luxação acromioclavicular grau alto\" quase sempre é outra coisa. O periósteo da criança é grosso e forte, e é ele que dita o padrão da lesão.\n\n**O tubo de periósteo.** Nas fraturas laterais do imaturo, o osso **desliza para fora do tubo de periósteo**, enquanto os **ligamentos coracoclaviculares continuam presos à parte inferior intacta do periósteo**. Com força suficiente, o fragmento proximal **rasga o periósteo superior** e produz desvio superior grande e saliência. Crianças e adolescentes mais novos dificilmente rompem os coracoclaviculares, porque o periósteo grosso continua preso ao complexo ligamentar (Rockwood crianças, 10ª ed., cap. 20).\n\n**A \"pseudoluxação\".** O mesmo raciocínio vale para a articulação acromioclavicular: a lesão que parece luxação na criança pode ser **separação epifisária do terço lateral**, chamada **pseudoluxação**. A classificação de ROCKWOOD foi adaptada: a clavícula sai do tubo de periósteo, que fica preso aos ligamentos acromioclaviculares e coracoclaviculares, e os seis tipos do adulto são reproduzidos pelo osso, não pelos ligamentos. Adolescentes mais velhos, sobretudo atletas, podem ter luxação verdadeira.\n\n**Consequência para o tratamento.** Como o periósteo fica preso aos ligamentos, reduzir o osso para dentro do tubo e **suturar o periósteo** costuma bastar nas crianças e pré-adolescentes, sem implante. Placas anatômicas ficam para os adolescentes maiores com fragmento lateral suficiente; placa em gancho só como último recurso, porque exige retirada.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0633`), que perguntou a estrutura que normalmente se rompe na fratura distal desviada tipo V de ROCKWOOD na criança (periósteo superior), e do TARO 2006 (`pediatria-0822`), que afirmou que a lesão dos coracoclaviculares é rara na fratura lateral da criança. Depois, faça as oficiais.\n\n> **Na prova:** criança = osso sai pelo **periósteo superior**; **coracoclaviculares presos ao periósteo inferior**; lesão dos coracoclaviculares **rara**; \"luxação\" acromioclavicular da criança = **pseudoluxação**; tratar com **sutura do periósteo**.",
-  "correta": "**C: o osso sai pelo periósteo superior, e os coracoclaviculares continuam presos ao periósteo inferior.** Na criança, o fragmento proximal escapa do tubo de periósteo pelo lado superior, e os ligamentos coracoclaviculares permanecem presos ao periósteo inferior intacto (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "Na fratura lateral da criança, o **osso rompe o periósteo superior e sai do tubo periosteal**, enquanto os **coracoclaviculares continuam presos ao periósteo inferior**. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 20, terço lateral).\n\nEsse arranjo explica por que o aspecto de separação acromioclavicular não exige a mesma sequência de rupturas ligamentares de um padrão adulto. O envoltório pode manter vínculos importantes mesmo quando o fragmento proximal sobe e fica proeminente.\n\nA posição também deve ser examinada no plano posterior. O resumo recomenda palpar atrás da acromioclavicular e usar incidência axilar, pois pode haver encarceramento no trapézio. Ver só uma saliência superior ou um AP pouco alterado não esclarece todos os componentes do desvio.\n\n**Na prova:** superior é o periósteo rompido; inferior é o periósteo que mantém os coracoclaviculares. Trocar os lados ou assumir ruptura dos ligamentos por rotina elimina a característica anatômica infantil.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0633`), que perguntou a estrutura que normalmente se rompe na fratura distal desviada tipo V de ROCKWOOD na criança (periósteo superior), e do TARO 2006 (`pediatria-0822`), que afirmou que a lesão dos coracoclaviculares é rara na fratura lateral da criança. Depois, faça as oficiais.",
+  "correta": "Alternativa C. Mantém o mecanismo periosteal e o ponto de fixação ligamentar descritos. A saída do osso não demonstra, por si, rompimento dos coracoclaviculares.",
   "incorretas": {
-   "A": "**É o padrão do adulto.** No adulto, o desvio vem da ruptura dos ligamentos. Na criança, a lesão dos coracoclaviculares é rara, porque o periósteo grosso continua preso a eles.",
-   "B": "**Lado trocado.** É o periósteo superior que se rasga; o inferior fica íntegro e preso aos coracoclaviculares.",
-   "D": "**É lesão de ligamento.** A ruptura isolada de um dos coracoclaviculares descreve o tipo II B da classificação de NEER e CRAIG, não o padrão periosteal típico da criança."
+   "A": "A fonte descreve lesão dos coracoclaviculares como rara na criança e ruptura do periósteo superior. A opção inverte essa relação ao manter o periósteo íntegro e exigir a ruptura ligamentar como no padrão adulto.",
+   "B": "O resumo coloca a ruptura no periósteo superior, não no inferior, e prende os ligamentos ao periósteo inferior. A alternativa troca tanto a face rompida quanto o vínculo que permanece.",
+   "D": "Não é apresentada uma ruptura seletiva obrigatória do trapezoide com preservação do conoide como mecanismo típico infantil. O ponto decisivo do resumo é o tubo periosteal, com ligamentos coracoclaviculares mantidos no seu componente inferior."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Classification e Operative Treatment of Distal Clavicle Fractures; seção Classification of Acromioclavicular Dislocations"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: terço lateral"
+     ],
+     "blocos": [
+      "clavicula-terco-lateral-be6075a5",
+      "clavicula-terco-lateral-d808c290"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "22ad5e055c5a9e60153f09360d2c9fa370377aea47315595177755df1cf87a1f"
+    }
+   ],
+   "questaoSha256": "1e865eb354168b36fe81e3095a8aede33f2dc30aa05d3a620cd8fbfc4e4a8e21",
+   "comentarioSha256": "3806a5f1642c37fc4b3254a2d3f4c725bfd27099fafcca3490daf14844e32934"
+  }
  },
  "pediatria-1235": {
-  "conceito": "O terço lateral da clavícula pode enganar no AP. Quando o fragmento proximal vai **para trás**, ele se prende no trapézio, a radiografia frontal parece quase normal e só a incidência certa mostra o problema.\n\n**O exame clínico.** Palpar **atrás da articulação acromioclavicular**: um fragmento proximal desviado posteriormente pode estar **encarcerado no trapézio**, e isso é decisivo para o tratamento. Há edema difuso sobre a região e dor intensa a qualquer movimento do ombro (Rockwood crianças, 10ª ed., cap. 20).\n\n**A imagem.** AP verdadeiro do ombro e incidência com inclinação cefálica (15 ou 45 graus). Pela importância de avaliar o desvio posterior do fragmento medial em relação ao acrômio, a **incidência axilar é de importância crítica**, mesmo que precise de ajuda para abduzir o braço devagar. A **tomografia** define a direção e o grau do desvio quando o exame e a axilar não bastam, e mostra extensão intra-articular.\n\n**A indicação cirúrgica.** Absolutas: fratura **exposta**, comprometimento grave da pele, **extensão intra-articular desviada** e lesão neurovascular que exija cirurgia. Relativas: desvio grande em atletas competitivos, **encarceramento no trapézio**, ombro flutuante e politrauma. O capítulo é explícito: **a indicação mais comum de cirurgia na fratura distal da criança é o desvio posterior importante**, que sugere descontinuidade completa do fragmento proximal ou encarceramento no trapézio. A pele em risco é rara aqui, porque as partes moles sobre a acromioclavicular são grossas.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2023 (`pediatria-0550`), que perguntou a indicação cirúrgica mais frequente da fratura do terço lateral na criança. O gabarito oficial é a exposição da fratura; o capítulo aponta o desvio posterior significativo como a indicação mais comum. Resolva a oficial sabendo dessa divergência.\n\n> **Na prova:** terço lateral da criança: palpar **atrás** da acromioclavicular; **axilar** (ou tomografia) para o desvio **posterior**; indicação cirúrgica **mais comum** = **desvio posterior** com encarceramento no **trapézio**.",
-  "correta": "**B: incidência axilar (ou tomografia) e desvio posterior com encarceramento no trapézio.** A axilar mostra o desvio posterior que o AP esconde, e esse desvio, com encarceramento no trapézio, é a indicação cirúrgica mais comum da fratura distal da clavícula na criança (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "Saliência dolorosa **atrás da acromioclavicular**, mesmo com pouco desvio no AP, exige investigar **deslocamento posterior e encarceramento no trapézio**. A incidência **axilar**, ou tomografia quando necessário, define esse componente; ele é a indicação cirúrgica mais comum na criança descrita pelo resumo. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 20, terço lateral).\n\nO AP não resolve todo desvio porque projeta a lesão numa orientação limitada. Palpar posteriormente e obter a projeção dirigida evita interpretar “pouco desvio no AP” como alinhamento satisfatório em todos os planos.\n\nÉ preciso distinguir **frequência** e **caráter absoluto** de uma indicação. Exposição e lesão neurovascular são relevantes, mas a pergunta pede a indicação mais comum desse padrão infantil, para a qual a fonte destaca posterior importante ou encarcerado. Pele em risco também não substitui a investigação do plano posterior.\n\n**Na prova:** dor/saliência posterior, pedir axilar e procurar trapézio. Os achados clínicos orientam a imagem que falta, em vez de escolher qualquer radiografia da articulação apenas por estar próxima da clavícula.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2023 (`pediatria-0550`), que perguntou a indicação cirúrgica mais frequente da fratura do terço lateral na criança. O gabarito oficial é a exposição da fratura; o capítulo aponta o desvio posterior significativo como a indicação mais comum. Resolva a oficial sabendo dessa divergência.",
+  "correta": "Alternativa B. Liga o exame apropriado ao desvio que pode ficar subestimado no AP e à indicação mais comum segundo o resumo. A tomografia complementa quando a incidência axilar não esclarece suficientemente.",
   "incorretas": {
-   "A": "**Exame e indicação fora do foco.** O capítulo resolve o desvio posterior com axilar e tomografia; a lesão do plexo é rara e não é a indicação mais comum.",
-   "C": "**ZANCA é para a acromioclavicular.** A incidência de ZANCA (10 a 15 graus cefálicos) avalia a articulação; a exposição é indicação absoluta, mas não a mais frequente segundo o capítulo.",
-   "D": "**Exame e desvio de outra lesão.** A radiografia com peso separa os tipos II e III da lesão acromioclavicular. A pele em risco é rara no terço lateral, protegido por partes moles grossas."
+   "A": "Lesão do plexo pode importar na avaliação neurovascular, mas não é a indicação mais comum apresentada nessa seção. O caso aponta para desvio posterior, e a fonte orienta axilar ou tomografia para estudá-lo.",
+   "C": "Zanca é uma projeção da avaliação acromioclavicular citada em outra seção. Fratura exposta é indicação importante, mas a frequência pedida para a criança é atribuída ao desvio posterior significativo, não à exposição.",
+   "D": "A radiografia com peso é citada para diferenciar graus de lesão acromioclavicular, não para substituir a axilar no encarceramento posterior. Desvio superior e pele em tenda não explicam por si a saliência atrás da articulação."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Signs and Symptoms, Imaging e Operative Treatment of Distal Clavicle Fractures; Authors' Preferred Treatment for Distal Clavicle Fractures"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral; Acromioclavicular."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Clavícula: terço lateral",
+      "Acromioclavicular"
+     ],
+     "blocos": [
+      "clavicula-terco-lateral-d808c290",
+      "acromioclavicular-71a997a6"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "e2e568a0d10a220192378b75e8100da49319068855107d35eb2389b4e190b3e0"
+    }
+   ],
+   "questaoSha256": "f2359efc4aef263690f840a0cedf3e72e141d023a135bb843fb4136e23026757",
+   "comentarioSha256": "04814726125120e94bf0a3c66b41bc458dce58939e24a5b4ce1a6c0d767c417e"
+  }
  },
  "pediatria-1236": {
   "conceito": "Um lactente cai do sofá e tem uma fratura do corpo da escápula. A história não combina com a lesão. A escápula é um osso coberto de músculos, profundo, e só quebra com muita energia. Numa criança pequena, a pergunta seguinte é: quem fez isso?\n\n**Por que a escápula é especial.** A escápula é plana, na parede posterior do tórax, coberta quase toda por músculos (**17 inserções**); só a face dorsal da espinha e o acrômio são subcutâneos. Por isso fica protegida de traumas de baixa energia. Responde por cerca de **1% das fraturas do adulto** e menos na criança. Distribuição: **corpo 45%**, colo da glenoide 25%, cavidade glenoidal 10%, acrômio 8%, coracoide 7%, espinha 5% (Rockwood crianças, 10ª ed., cap. 20).\n\n**Os mecanismos.** Na criança, a fratura do corpo vem de **alta energia** (queda de altura, quadriciclo, carro) ou de **trauma não acidental**. BULLOCK mostrou que as fraturas da escápula têm **o maior risco de abuso entre as fraturas, depois das de costela e esterno**: quando presentes, a chance de abuso foi mais que o dobro.\n\n**A investigação.** Na suspeita de maus-tratos: **tomografia de crânio, exame oftalmológico, inventário esquelético e serviço social**. No trauma de alta energia, a avaliação completa pela equipe de trauma: lesões associadas são comuns e podem ameaçar a vida (traumatismo craniano, pneumotórax ou hemotórax, fraturas de costela, víscera rota, fraturas de ossos longos). O escore de gravidade da lesão foi maior nas crianças com fratura da escápula do que em crianças com acidentes parecidos sem ela.\n\n**O tratamento do osso.** Quase sempre **sem cirurgia**: tipoia 3 a 4 semanas, pendular e amplitude ativa. O problema está no que acompanha a fratura.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O dado de BULLOCK une dois temas que a prova cobra separadamente: a escápula e os maus-tratos.\n\n> **Na prova:** escápula na criança = **alta energia** ou **maus-tratos**; risco de abuso só **abaixo de costela e esterno**; corpo **45%**; investigar **crânio, olho, esqueleto e serviço social**.",
@@ -31096,94 +31531,236 @@
   "conferido": false
  },
  "pediatria-1237": {
-  "conceito": "Quase toda fratura da escápula da criança se trata com tipoia. A prova costuma perguntar o contrário: quais são as exceções, com os números.\n\n**Classificações.** Pela localização: corpo, cavidade glenoidal, colo da glenoide, acrômio e coracoide; e a **dissociação escapulotorácica** (separação completa da escápula da parede do tórax). **Colo da glenoide**: tipo I com desvio menor que 1 cm e angulação menor que 40 graus (**90%** dos casos); tipo II com **mais de 1 cm e mais de 40 graus**. **Cavidade glenoidal**, seis tipos: Ia rebordo anterior, Ib rebordo posterior, II a IV traços transversos que saem na borda lateral, superiormente ou na borda medial, V combinações, VI cominutiva (Rockwood crianças, 10ª ed., cap. 20, Fig. 20-12).\n\n**As indicações cirúrgicas.** Fratura **exposta**; lesão neurovascular que exija cirurgia; **dissociação escapulotorácica**; fratura grande do **rebordo glenoidal com subluxação ou luxação** do úmero; **colo da glenoide tipo II**; **coracoide com mais de 2 cm** de desvio; **cavidade glenoidal com mais de 5 mm** de desvio. Na fixação articular, deixar **menos de 2 mm** de degrau: com isso, 80% a 90% de resultados bons a excelentes no adulto.\n\n**Ombro flutuante.** Com fratura do terço médio da clavícula e do colo da glenoide, **fixar só a clavícula** pode bastar: o colo reduz por **ligamentotaxia** pelo ligamento coracoclavicular íntegro. Com espinha da escápula também fraturada, fixar clavícula e espinha.\n\n**O resto.** Corpo, acrômio, coracoide pouco desviado e glenoide sem desvio importante: tipoia 3 a 4 semanas (3 a 6 nas tabelas), pendular, amplitude ativa, esporte em 8 a 12 semanas. O **os acromiale** é variante normal (falta de fusão da epífise), não fratura; na dúvida, radiografia do outro lado. Tipo Ia: o autor prefere a redução artroscópica.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os números (5 mm, 1 cm e 40 graus, 2 cm, 2 mm) são a matéria-prima das questões sobre escápula.\n\n> **Na prova:** cirurgia na escápula: glenoide **mais de 5 mm**, colo **tipo II (mais de 1 cm e 40 graus)**, coracoide **mais de 2 cm**, rebordo com **luxação**, **dissociação escapulotorácica**; ombro flutuante = **fixar a clavícula** (ligamentotaxia); degrau final **menos de 2 mm**.",
-  "correta": "**A: fratura da cavidade glenoidal com mais de 5 mm de desvio articular, colo da glenoide tipo II e coracoide com mais de 2 cm de desvio são indicações cirúrgicas.** São as exceções ao tratamento não operatório listadas no capítulo (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "O resumo indica cirurgia para **cavidade glenoidal com mais de 5 mm**, **colo tipo II com mais de 1 cm e 40°** e **coracoide acima de 2 cm**, alternativa A. São critérios de estruturas diferentes, que não devem virar uma regra de operar qualquer fratura da escápula (Rockwood and Wilkins, 10ª edição, capítulo 20, escápula).\n\nAlém do desvio, o capítulo inclui exposição, lesão neurovascular, dissociação escapulotorácica e rebordo grande com luxação. Fora dessas situações, descreve proteção com tipoia e retorno ao esporte em etapas. Identificar o segmento e a estabilidade é mais útil que o nome genérico “fratura escapular”.\n\nO **os acromiale** é apresentado como variante normal, não fratura. Essa informação orienta a interpretação da imagem; não constitui razão para operar rotineiramente o acrômio. No **ombro flutuante**, outra seção do mesmo resumo informa que fixar apenas a clavícula costuma bastar, com redução por ligamentotaxia.\n\n**Na prova:** associar cada limiar ao seu osso ou segmento. “Sempre”, “qualquer desvio” e “obrigatoriamente os dois ossos” apagam as distinções do capítulo.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os números (5 mm, 1 cm e 40 graus, 2 cm, 2 mm) são a matéria-prima das questões sobre escápula.",
+  "correta": "Alternativa A. Mantém os três grupos de indicação por localização e magnitude do desvio. Os valores são do resumo e precisam ser interpretados com estabilidade e lesões associadas, não somados como se fossem uma só medida.",
   "incorretas": {
-   "B": "**Confusão com a variante.** A fratura do acrômio é tratada sem cirurgia; o os acromiale é uma variante normal de falta de fusão que não deve ser confundida com fratura, e não um motivo para operar.",
-   "C": "**Não é preciso fixar os dois.** No ombro flutuante com terço médio da clavícula e colo da glenoide, fixar a clavícula costuma bastar, porque o colo reduz pela tração do ligamento coracoclavicular.",
-   "D": "**O corpo vai bem sem cirurgia.** As fraturas do corpo da escápula consolidam com imobilização; a cirurgia fica para pseudartrose ou consolidação viciosa sintomática, que são raras."
+   "B": "A variante os acromiale não justifica operar todo acrômio fraturado. O capítulo a diferencia de fratura e apresenta indicações cirúrgicas específicas; a confusão radiográfica deve ser resolvida no diagnóstico, não por cirurgia automática.",
+   "C": "O resumo informa que, no ombro flutuante, fixar só a clavícula costuma permitir redução da glenoide por ligamentotaxia. Isso contradiz a exigência universal de fixar os dois ossos.",
+   "D": "A fonte não manda operar toda fratura do corpo com qualquer desvio. Ela lista situações e segmentos de indicação e trata os demais de modo conservador; o nome escápula não elimina essa seleção."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Classification, Nonoperative e Operative Treatment of Scapula Fractures; Authors' Preferred Treatment for Scapula Fractures (Algoritmo 20-2)"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Escápula; Clavícula: tratamento do terço médio."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Escápula",
+      "Clavícula: tratamento do terço médio"
+     ],
+     "blocos": [
+      "escapula-5f84a316",
+      "clavicula-tratamento-do-terco-medio-d1a9f002",
+      "escapula-71d50884"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "d7efdaefc0d23e7e3850e8eec21468be48cf6dc5b63a1c4b478f788d723db381"
+    }
+   ],
+   "questaoSha256": "1e28132ab2ee129bfad85d8ebf9be6c1c8a454e77a427de4f58d4eee75c817d5",
+   "comentarioSha256": "c3627fc03f3a47a77a4ba7cb4c2da0141608386e6eb7333b9db13e145d5ae239"
+  }
  },
  "pediatria-1238": {
-  "conceito": "A clavícula medial luxada para trás fica encostada na traqueia, no esôfago e nos grandes vasos. A redução pode sangrar no mediastino. Por isso o capítulo é detalhista: onde, com quem, em que posição e até quando.\n\n**A lesão.** As lesões esternoclaviculares são **menos de 5%** das lesões da cintura escapular e exigem muita energia: mais de 80% por carro ou esporte, sendo o esporte o mais comum (**71%**), sobretudo futebol americano, rúgbi e **luta**. A posterior vem de força indireta com o ombro aduzido e fletido ou golpe direto na clavícula medial. **Disfagia ou dispneia em até 30%**; podem ocorrer plexopatia e, raramente, lesão de vaso, AVC, pneumomediastino e morte (Rockwood crianças, 10ª ed., cap. 20).\n\n**A redução fechada.** **No centro cirúrgico, com cirurgião vascular de prontidão.** Paciente em **decúbito dorsal**, **coxim espesso entre as escápulas** para estender os ombros, braço lesado para fora da mesa. O braço é **abduzido em linha com a clavícula**, com **tração** e contratração por um auxiliar; a tração aumenta e o braço vai à **extensão** enquanto a articulação reduz. Alternativa: adução com pressão posterior no ombro, fazendo a clavícula alavancar sobre a primeira costela. Se falhar, **pinça de campo** percutânea puxa a clavícula medial para a frente; ouve-se um estalo.\n\n**O tempo.** O sucesso da redução fechada **cai muito depois de 24 a 48 horas**; quem chega com mais de 48 horas pode ir direto à redução aberta.\n\n**A posição do autor.** O autor defende operar **todas as fraturas-luxações posteriores**: redução aberta com sutura não absorvível em oito, com cirurgião geral ou torácico disponível e o tórax preparado para esternotomia. Com sintomas mediastinais (dispneia, disfagia, odinofagia, rouquidão) ou lesão neurovascular, a redução aberta é obrigatória. Revisão: 96% de amplitude completa sem dor e sem recidiva com a cirurgia.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2025 (`pediatria-0533`), que perguntou a manobra de redução da luxação esternoclavicular posterior na criança (coxim entre as escápulas e tração do membro). Depois, faça a oficial.\n\n> **Na prova:** esternoclavicular posterior: **centro cirúrgico** com **vascular de prontidão**; **decúbito dorsal**, **coxim entre as escápulas**, **abdução e tração** em linha com a clavícula, depois **extensão**; pinça de campo se falhar; acima de **48 horas**, aberta; o autor **opera todas**.",
-  "correta": "**C: no centro cirúrgico, com cirurgião vascular de prontidão, paciente em decúbito dorsal, coxim espesso entre as escápulas e tração do braço abduzido em linha com a clavícula, levado depois à extensão.** É a técnica descrita, num ambiente preparado para hemorragia mediastinal (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "Se for tentada a redução fechada da **esternoclavicular posterior**, o resumo exige **centro cirúrgico e cirurgião vascular de prontidão**. A posição é **decúbito dorsal, coxim entre as escápulas e tração do braço abduzido em linha com a clavícula, seguida de extensão**: alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 20, esternoclavicular).\n\nA relação posterior exige planejamento mesmo quando não há disfagia ou dispneia. Esses sintomas podem estar presentes, mas sua ausência no adolescente não muda o ambiente e a prontidão recomendados para a manobra. A tomografia é o exame de escolha para definir a relação anatômica.\n\nO capítulo informa queda do sucesso fechado depois de **24–48 horas**, tornando inadequado esperar uma semana apenas pelo edema. Também registra que o autor opera todas as posteriores e descreve estabilização com sutura em oito; isso deve ser separado da pergunta condicional sobre como realizar uma tentativa fechada.\n\n**Na prova:** coxim entre as escápulas, e não sob o ombro lesado; paciente deitado, braço em abdução alinhado à clavícula, tração e depois extensão. Ambiente e posição são partes inseparáveis da resposta.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2025 (`pediatria-0533`), que perguntou a manobra de redução da luxação esternoclavicular posterior na criança (coxim entre as escápulas e tração do membro). Depois, faça a oficial.",
+  "correta": "Alternativa C. Conserva o ambiente, a prontidão vascular e a sequência de posicionamento do resumo. Não basta reconhecer apenas “tração”: o suporte e o vetor precisam estar corretos.",
   "incorretas": {
-   "A": "**Local e posição errados.** A redução da posterior pode causar hemorragia mediastinal e é feita no centro cirúrgico; o coxim vai entre as escápulas, e o braço vai em abdução e tração, não em flexão.",
-   "B": "**Manobra sem respaldo aqui.** O capítulo descreve o paciente deitado, com coxim entre as escápulas e tração do braço do lado lesado; não descreve a manobra sentada.",
-   "D": "**Esperar piora.** O sucesso da redução fechada cai muito depois de 24 a 48 horas; adiar uma semana leva à redução aberta."
+   "A": "O capítulo indica centro cirúrgico, com coxim entre as escápulas e braço abduzido em linha com a clavícula. A opção troca o ambiente, a posição do coxim e o posicionamento do braço.",
+   "B": "Paciente sentado com joelho entre as escápulas e tração dos dois ombros não é a técnica descrita. A fonte especifica decúbito dorsal e uma manobra dirigida ao braço do lado afetado.",
+   "D": "O sucesso da tentativa fechada diminui depois de 24–48 horas. Esperar 7 dias pelo edema contraria essa relação temporal e não corresponde à estratégia oferecida para o caso de 12 horas."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Nonoperative Treatment of Sternoclavicular Dislocations (Techniques) e Management of Expected Adverse Outcomes in Sternoclavicular Fracture-Dislocations"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Esternoclavicular."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Esternoclavicular"
+     ],
+     "blocos": [
+      "esternoclavicular-e6a737f9",
+      "esternoclavicular-2bb38b19"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "da7bbfe041b1467dcde5a99b9f1d9325fd942c2679a756210a556be428610689"
+    }
+   ],
+   "questaoSha256": "e80c33eb3104f33101669e221c3ea344cbe307da1dd150c6f4edf75463fc0903",
+   "comentarioSha256": "41479afb93180c5e53fd74e4816a282a6324c41976b6521528835faaf938a4d7"
+  }
  },
  "pediatria-1239": {
-  "conceito": "Os tipos V e VI da lesão acromioclavicular saltam aos olhos no AP. O tipo IV, não: a clavícula vai para trás, para dentro do trapézio, e a radiografia frontal pode enganar. É o tipo que mais se perde e o que mais se opera no jovem.\n\n**A classificação de ROCKWOOD** (a partir de TOSSY e ALLMAN). **I**: radiografia normal, entorse dos ligamentos acromioclaviculares. **II**: ruptura dos acromioclaviculares e entorse dos coracoclaviculares; articulação alargada, leve aumento do espaço coracoclavicular. **III**: ruptura dos acromioclaviculares e coracoclaviculares; clavícula **25% a 100%** acima do acrômio. **IV**: além disso, ruptura da fáscia, e a clavícula vai **para trás, para dentro ou através do trapézio**. **V**: lesão das inserções do deltoide e do trapézio, clavícula **mais de 100%** acima, no subcutâneo. **VI**: hiperabdução e rotação externa, clavícula **subacromial ou subcoracoide**, com espaço coracoclavicular diminuído (Rockwood crianças, 10ª ed., cap. 20, Fig. 20-13). Espaço coracoclavicular normal: **1,1 a 1,3 cm**.\n\n**Na criança.** A lesão acromioclavicular verdadeira é rara; muitas vezes é **pseudoluxação** (separação epifisária do terço lateral), com o osso saindo do tubo de periósteo, que fica preso aos ligamentos. Os seis tipos se reproduzem pelo osso.\n\n**O diagnóstico.** AP verdadeiro, **axilar** e **ZANCA** (paciente em pé, braço pendente, raio **10 a 15 graus cefálico**). Radiografia com peso nos dois punhos separa II de III. O **tipo IV** costuma exigir **tomografia**, além de exame dirigido: saliência e dor medial e posterior ao acrômio.\n\n**O tratamento.** I e II, e a maioria dos III, sem cirurgia (tipoia 2 a 4 semanas; contato evitado por 6 a 12 semanas). IV, V e VI em geral operados; **a indicação mais comum nos jovens é o tipo IV com encarceramento no trapézio**. Na criança, reduzir e **suturar o periósteo** costuma bastar; placa em gancho para os mais velhos com fratura segmentar ou intra-articular, retirada em cerca de 12 semanas.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O tipo IV reúne a armadilha diagnóstica e a indicação cirúrgica do capítulo.\n\n> **Na prova:** acromioclavicular **IV** = clavícula **posterior no trapézio**, perde-se no AP, pede **axilar e tomografia**, indicação cirúrgica **mais comum** no jovem; ZANCA = **10 a 15 graus cefálicos**; espaço coracoclavicular **1,1 a 1,3 cm**.",
-  "correta": "**B: IV, com a clavícula desviada para trás, dentro do trapézio.** O desvio posterior pode passar despercebido no AP e exige axilar adequada e, muitas vezes, tomografia; é a indicação operatória mais comum nos jovens (Rockwood crianças, 10ª ed., cap. 20).",
+  "conceito": "O **Rockwood IV**, com desvio **posterior para o trapézio**, é o tipo mais perdido no AP e mais operado nos jovens segundo o resumo. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 20, acromioclavicular).\n\nUm desvio para trás pode parecer pequeno numa projeção que não demonstra adequadamente esse plano. Por isso, a avaliação não deve terminar no AP; o capítulo inclui axilar e afirma que o tipo IV pede tomografia. A preocupação é localizar o fragmento e eventual encarceramento.\n\nNa criança, muitas lesões aparentemente acromioclaviculares são **pseudoluxações por separação epifisária**. O osso pode reproduzir o padrão saindo do periósteo, o que modifica a leitura anatômica em relação ao adulto. O resumo trata I, II e a maioria dos III sem cirurgia e indica operar IV, V e VI.\n\n**Na prova:** maior desvio superior não é sinônimo de maior chance de escapar no AP. A pergunta destaca o posterior IV, justamente o plano que exige imagem complementar.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O tipo IV reúne a armadilha diagnóstica e a indicação cirúrgica do capítulo.",
+  "correta": "Alternativa B. Reúne a direção posterior, o trapézio e a combinação de subdiagnóstico no AP e frequência cirúrgica descrita. O número deve ser ligado à direção, não só à altura da clavícula.",
   "incorretas": {
-   "A": "**Aparece no AP e é controverso.** No tipo III o desvio superior é visível, e a maioria é tratada sem cirurgia.",
-   "C": "**É óbvio no AP.** No tipo V a clavícula fica mais de 100% acima, no subcutâneo; o capítulo diz que V e VI são bem evidentes na radiografia frontal.",
-   "D": "**Raro e evidente.** O tipo VI, por hiperabdução e rotação externa, mostra a clavícula sob o acrômio ou o coracoide, com espaço coracoclavicular diminuído; não é o que mais se perde."
+   "A": "O III tem elevação de 25–100% e a maioria pode ser tratada sem cirurgia no resumo. Não é o padrão posterior encarcerado que a questão destaca como mais perdido e mais operado nos jovens.",
+   "C": "O V ultrapassa 100% e fica subcutâneo; é operatório no esquema, mas a pergunta não pede qualquer tipo que opere. O destaque de desvio posterior pouco evidente no AP pertence ao IV.",
+   "D": "O VI é subacromial ou subcoracoide, diferente do desvio para trás no trapézio. Também integra os tipos cirúrgicos, mas não é o tipo identificado pela associação específica do enunciado."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Signs and Symptoms, Imaging, Classification e Operative Treatment of Acromioclavicular Dislocations (Fig. 20-13)"
+   "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Acromioclavicular."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+     "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+     "secoes": [
+      "Acromioclavicular"
+     ],
+     "blocos": [
+      "acromioclavicular-71a997a6",
+      "acromioclavicular-33396cfd"
+     ],
+     "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+     "trechosSha256": "6a5b4009f01790876cf45da25a12c1341ad55dd295ee61b8e46df5d58cdd38f3"
+    }
+   ],
+   "questaoSha256": "74bd55c4750c3326bf9931659f521cc5a52beaf6b3d467bf94f56045dc3b9879",
+   "comentarioSha256": "098200aba202d2176480ea5a448d56116ff726103cdec2c70e66b06fe2499c65"
+  }
  },
  "pediatria-1240": {
-  "conceito": "Uma criança de 4 anos sofre um acidente de carro e tem lesão da coluna cervical. Onde ela costuma estar? No alto, entre o occipital, C1 e C2. Um adolescente de 15 anos com o mesmo acidente tende a lesar a cervical média ou baixa, como o adulto. A diferença é anatômica.\n\n**A epidemiologia.** As fraturas da coluna cervical são raras na criança: cerca de **1% de todas as fraturas pediátricas** e **2% das lesões da coluna**, com incidência estimada de 7,4 por 100.000 por ano (provavelmente subestimada, porque algumas lesões só aparecem na autópsia) (Rockwood crianças, 10ª ed., cap. 21).\n\n**Por que no alto abaixo de 8 anos.** A coluna cervical imatura é **hipermóvel** por três motivos: **frouxidão ligamentar relativa**, **facetas articulares horizontais** e **cabeça grande em relação ao corpo**. Essas características deslocam o **fulcro do movimento para a coluna cervical alta**. Com a maturação, o fulcro desce, e as lesões cervicais baixas ficam mais frequentes, como no adulto.\n\n**O prognóstico.** Lesão com déficit neurológico é infrequente na criança. Déficit incompleto recupera melhor que no adulto; déficit completo, em qualquer idade, tem mau prognóstico. A mortalidade depende do nível e das lesões associadas: as lesões altas (como a **luxação atlanto-occipital**) da criança pequena têm a **maior mortalidade**. Numa série de 61 mortes por lesão medular em crianças, **89% morreram no local**, a maioria com lesão cervical alta e politrauma.\n\n**O tamanho da cabeça aparece de novo.** A mesma cabeça grande explica outras regras do capítulo: a prancha comum flete o pescoço da criança, e a cadeirinha voltada para a frente favorece lesões de distração alta na desaceleração.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2021 (`pediatria-0587`), que perguntou por que a lesão cervical abaixo de 8 anos é mais comum no segmento atlantoaxial (maior mobilidade por frouxidão ligamentar). Depois, faça a oficial.\n\n> **Na prova:** abaixo de **8 anos** = cervical **alta**; causas: **frouxidão ligamentar**, **facetas horizontais**, **cabeça grande** (fulcro alto); adolescente = padrão do adulto; luxação atlanto-occipital = **maior mortalidade**.",
-  "correta": "**C: a frouxidão ligamentar, as facetas horizontais e a cabeça grande em relação ao corpo levam o fulcro do movimento para o alto.** São as características que tornam a coluna cervical imatura hipermóvel e concentram as lesões no alto (Rockwood crianças, 10ª ed., cap. 21).",
+  "conceito": "Abaixo de **8 anos**, **frouxidão ligamentar, facetas horizontais e cabeça proporcionalmente grande** elevam o fulcro do movimento cervical. Isso explica a concentração das lesões na **cervical alta**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 21, anatomia e mecanismos).\n\nA coluna infantil é **hipermóvel** nesse contexto. A força aplicada à cabeça e a geometria das articulações não produzem o mesmo padrão que no adolescente ou no adulto. Reconhecer essa diferença ajuda a escolher a região que exige atenção na avaliação do pequeno, sem presumir que a ausência de uma fratura baixa encerre o exame.\n\nO capítulo também relaciona a cabeça grande ao transporte: a prancha comum pode fletir o pescoço, e recomenda recesso occipital ou elevação do tronco para manter neutralidade. Assim, a mesma anatomia que explica o fulcro alto tem consequência prática no posicionamento.\n\n**Na prova:** criança pequena, faceta horizontal e frouxidão levam o raciocínio para cima. Depois dessa faixa, o resumo descreve aproximação ao padrão adulto, não uma regra igual para toda idade.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2021 (`pediatria-0587`), que perguntou por que a lesão cervical abaixo de 8 anos é mais comum no segmento atlantoaxial (maior mobilidade por frouxidão ligamentar). Depois, faça a oficial.",
+  "correta": "Alternativa C. Reúne os três fatores anatômicos e o efeito sobre o fulcro que o resumo apresenta. A resposta é mecânica e relacionada ao desenvolvimento, não apenas uma preferência estatística sem explicação.",
   "incorretas": {
-   "A": "**Ao contrário.** Na criança pequena as facetas são horizontais, e isso aumenta a mobilidade; facetas verticais seriam mais estáveis.",
-   "B": "**Também ao contrário.** A musculatura da criança é pouco desenvolvida, o que, somado à cabeça grande, favorece as lesões altas, como a fratura do enforcado no pequeno.",
-   "D": "**Não é o motivo.** O capítulo explica a localização pela biomecânica da coluna (fulcro alto), não por uma diferença de proteção da medula."
+   "A": "A fonte descreve facetas horizontais, e não verticais, como parte da hipermobilidade do pequeno. A alternativa troca a geometria que explica o fulcro alto por uma característica diferente.",
+   "B": "O capítulo não atribui o padrão a musculatura proporcionalmente mais forte. A explicação dada é frouxidão, orientação facetária e cabeça grande; usar força muscular como causa substitui o mecanismo apresentado.",
+   "D": "A explicação do resumo não é uma medula curta protegendo o segmento baixo, mas a distribuição mecânica do movimento. O enunciado pede por que o fulcro e as lesões se concentram acima, o que os fatores da alternativa correta esclarecem."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Introduction to Cervical Spine Injury"
+   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-21-coluna-cervical",
+     "titulo": "Lesões da coluna cervical na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+     "secoes": [
+      "Anatomia, mecanismos e atendimento inicial"
+     ],
+     "blocos": [
+      "anatomia-mecanismos-e-atendimento-inicial-c53da7ac",
+      "anatomia-mecanismos-e-atendimento-inicial-0012f77d"
+     ],
+     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+     "trechosSha256": "3deb3b24507229289f2f0d3c3e1f07b481aec2d305a81e78fd1778a0974f4650"
+    }
+   ],
+   "questaoSha256": "160a41118e395b0808b03257fd19cedf851b0e0f25c58d767436ba359cc55488",
+   "comentarioSha256": "5c3f3c379b0296ae7e96a7eec15f2e675823298ee2b52b4ca4c0638cac5947f3"
+  }
  },
  "pediatria-1241": {
-  "conceito": "A radiografia em perfil de uma criança mostra C2 um pouco para a frente sobre C3. Em adulto, isso seria subluxação. Na criança, muitas vezes é normal. O capítulo ensina como não operar o normal e não deixar passar o anormal.\n\n**A pseudossubluxação.** O desvio anterior de **C2 sobre C3** (ou C3 sobre C4) **de até 3 mm** é achado comum nas radiografias de crianças, estáticas ou dinâmicas, e pode existir até cerca de **11 anos**. A ausência da lordose cervical e o aumento das partes moles pré-vertebrais também podem ser normais. A prevalência da pseudossubluxação fisiológica, sobretudo em C2-C3, chega a **20%** (Rockwood crianças, 10ª ed., cap. 21, Fig. 21-1).\n\n**A linha de SWISCHUK e ROWE.** Traçada da **cortical anterior do processo espinhoso de C1** até a de **C3**. A cortical anterior do processo espinhoso de **C2** deve ficar **a até 3 mm** dessa linha; mais que isso sugere **subluxação verdadeira**. Na flexão, os elementos posteriores de C2 continuam alinhados com os de C1 e C3, mesmo quando o corpo de C2 parece deslizado: é a pseudossubluxação.\n\n**Outros sinais de alerta.** Afastamento dos processos espinhosos entre C1 e C2 **maior que 10 mm** indica lesão ligamentar e pede ressonância. Fratura ou subluxação da cervical, ou do forame transverso, pede **angiotomografia** para afastar lesão da artéria vertebral.\n\n**As variantes que enganam (Tabela 21-2).** Sincondrose na base do odontoide, cunha anterior normal do corpo vertebral, angulação posterior do odontoide (cerca de 4%), ADI até 4,5 mm, partes moles alargadas pelo choro, facetas horizontais simulando fratura do pilar.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0851`), que perguntou o que a linha espinolaminar de SWISCHUK avalia (pseudoluxação C2-C3), e do TARO 2020 (`pediatria-0717`), que perguntou o mesmo e está sem gabarito oficial. Depois, faça as oficiais.\n\n> **Na prova:** **pseudossubluxação C2-C3** até **3 mm**, até cerca de **11 anos**; **SWISCHUK**: espinhosos de **C1 a C3**, o de **C2** a até **3 mm**; afastamento C1-C2 **acima de 10 mm** = lesão ligamentar.",
-  "correta": "**A: a cortical anterior do processo espinhoso de C1 à de C3; a de C2 deve ficar a até 3 mm dessa linha.** Distância maior sugere subluxação verdadeira, e não a pseudossubluxação fisiológica (Rockwood crianças, 10ª ed., cap. 21).",
+  "conceito": "A linha de **Swischuk e Rowe** une a **cortical anterior dos processos espinhosos de C1 e C3**; a cortical correspondente de **C2** deve ficar a até **3 mm** no esquema do resumo. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 21, imagem e variantes normais).\n\nO objetivo é distinguir a **pseudossubluxação fisiológica de C2–C3** de uma lesão verdadeira. O capítulo descreve a variante até cerca de 11 anos e com translação de até 3 mm. O simples degrau no perfil, isoladamente, não substitui a leitura da linha e do contexto traumático.\n\nOutras medidas da junção craniovertebral usam pontos diferentes. O resumo aborda intervalo côndilo–C1 na tomografia para lesão atlanto-occipital e considera medidas como básio–dente ultrapassadas ou enganosas na criança. Esses métodos não se tornam a linha de Swischuk apenas por pertencerem à avaliação cervical.\n\n**Na prova:** conservar três níveis, C1 e C3 definindo a linha, C2 sendo comparada. Não trocar uma referência entre espinhosos por pontos da base do crânio ou do odontoide.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0851`), que perguntou o que a linha espinolaminar de SWISCHUK avalia (pseudoluxação C2-C3), e do TARO 2020 (`pediatria-0717`), que perguntou o mesmo e está sem gabarito oficial. Depois, faça as oficiais.",
+  "correta": "Alternativa A. Define os marcos vertebrais e a relação de C2 com a linha conforme o resumo. A técnica se dirige à pseudossubluxação C2–C3, em vez de medir primariamente a articulação occipital.",
   "incorretas": {
-   "B": "**Mede outra coisa.** O intervalo básio-dente é um parâmetro da junção craniocervical, e o capítulo o considera enganoso na criança; não separa a pseudossubluxação C2-C3.",
-   "C": "**Lembra a razão de POWERS.** Relações entre básio, opístio e arco de C1 avaliam a junção atlanto-occipital e são consideradas ultrapassadas na criança.",
-   "D": "**É o intervalo côndilo-C1.** O CCI avalia a luxação atlanto-occipital na tomografia, não a pseudossubluxação de C2 sobre C3."
+   "B": "Ponta do odontoide e básio são marcos da junção craniovertebral, não as corticais dos espinhosos C1/C3 da linha pedida. O valor de 12 mm não é um limite de Swischuk apresentado no resumo.",
+   "C": "Básio e opístio pertencem à base craniana. A alternativa não reproduz a linha vertebral C1–C3 e a posição de C2 que definem o método solicitado, independentemente de outras medidas da junção.",
+   "D": "O intervalo côndilo–C1 é estudado no resumo para a luxação atlanto-occipital, com limites próprios na tomografia. Ele não é a linha de Swischuk usada para comparar o espinhoso de C2 com C1 e C3."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Imaging of Cervical Spine Injury e Radiographic Evaluation of the Spine by Level (Fig. 21-1)"
+   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Imagem e variantes normais; Junção occipitocervical."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-21-coluna-cervical",
+     "titulo": "Lesões da coluna cervical na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+     "secoes": [
+      "Imagem e variantes normais",
+      "Junção occipitocervical"
+     ],
+     "blocos": [
+      "imagem-e-variantes-normais-c95c9882",
+      "juncao-occipitocervical-c8308246"
+     ],
+     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+     "trechosSha256": "1e016823f687cc31849cccc5f0e96c0e1e650971886bdc04895c012c534960d3"
+    }
+   ],
+   "questaoSha256": "bf6ffca8c63caee0318260164add436d2b0a38e670f7b03b6b2923cdcccc91ef",
+   "comentarioSha256": "e9e4a1ce0bdfa9ea11ccba7267e36cbf0716c337a12b289e577fd8fabad5cb3d"
+  }
  },
  "pediatria-1242": {
-  "conceito": "Num adulto, colocar o paciente deitado de costas numa prancha mantém o pescoço neutro. Numa criança de 4 anos, a mesma prancha dobra o pescoço para a frente. O motivo é a cabeça: grande demais para o corpo.\n\n**O problema.** Comparada ao adulto, a criança tem a cabeça **desproporcionalmente grande** em relação ao corpo. Numa **prancha comum**, a cabeça empurra o pescoço para a **flexão** (cifose cervical). HERZENBERG mostrou 10 crianças abaixo de 7 anos com angulação ou translação anterior da coluna cervical na radiografia feita na prancha comum (Rockwood crianças, 10ª ed., cap. 21, Fig. 21-4).\n\n**A solução.** Uma prancha com **recesso para o occipital**, onde a cabeça desce, ou **dois colchões sob o corpo e um só sob a cabeça**, elevando o tronco. As duas mantêm o pescoço **neutro**. **Crianças abaixo de 8 anos** devem ser imobilizadas assim. O **colar cervical** complementa a prancha. Qualquer manipulação, até na intubação, parte do princípio de que a lesão é instável até prova em contrário.\n\n**A intubação.** A técnica mais aceita é a **estabilização manual em linha**: as pontas dos dedos seguram os processos mastoides, **sem tração**, e as palmas apoiam o occipital. A intubação orotraqueal por laringoscopia direta com essa estabilização é segura; às vezes se usa fibroscopia.\n\n**O exame.** Inspecionar sinais de trauma craniano (alta associação) e marcas do cinto no pescoço; palpar os processos espinhosos (mais salientes C2, C3 e C7); exame neurológico documentado, mesmo grosseiro, incluindo tônus do esfíncter, reflexo bulbocavernoso e sensibilidade perianal. Paciente obnubilado ou não colaborativo não tem o pescoço mexido antes da liberação por imagem.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A prancha da criança é uma regra prática, fácil de cobrar e que muda a conduta no atendimento inicial.\n\n> **Na prova:** abaixo de **8 anos**: prancha com **recesso occipital** ou **colchão duplo** sob o tronco, mais **colar**; prancha comum = **flexão** (HERZENBERG); intubação com **estabilização manual em linha, sem tração**.",
-  "correta": "**D: prancha com recesso para o occipital ou com colchão duplo sob o tronco, para manter o pescoço neutro, com colar cervical.** Assim se evita a flexão cervical causada pela cabeça grande da criança na prancha comum (Rockwood crianças, 10ª ed., cap. 21).",
+  "conceito": "Na criança pequena, a **cabeça grande** pode fazer a prancha comum colocar o pescoço em **flexão**. O resumo recomenda **recesso para o occipital ou colchão duplo sob o tronco, com colar**, para manter a posição neutra: alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 21, atendimento inicial).\n\nO apoio deve compensar a proporção entre cabeça e tórax, não acrescentar ainda mais altura sob a cabeça. Isso explica por que o local do acolchoamento importa tanto quanto a presença de uma prancha. A meta é proteger sem impor uma posição inadequada ao segmento suspeito de lesão.\n\nO capítulo descreve maior concentração de lesões altas abaixo dos 8 anos e relaciona cadeirinha voltada para a frente à distração alta em acidentes. O fato de o paciente ter sido retirado do carro não torna uma posição sentada uma estratégia equivalente de transporte para o cenário apresentado.\n\n**Na prova:** adaptar a prancha à anatomia infantil e conservar o colar. Retirar a proteção ou colocar coxim sob a cabeça para “acomodar” o occipital não corresponde à neutralidade que o protocolo procura.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A prancha da criança é uma regra prática, fácil de cobrar e que muda a conduta no atendimento inicial.",
+  "correta": "Alternativa D. Oferece as duas adaptações descritas para manter neutralidade e inclui o colar. A elevação é do tronco, ou há recesso para o occipital, em vez de aumentar o apoio sob a cabeça.",
   "incorretas": {
-   "A": "**Piora a flexão.** A cabeça da criança já é grande; colocar um coxim sob ela aumenta a flexão do pescoço, que é exatamente o que se quer evitar.",
-   "B": "**Tirar o colar não resolve.** O colar complementa a prancha; a flexão se corrige baixando a cabeça (recesso) ou elevando o tronco (colchão duplo).",
-   "C": "**Não é imobilização de trauma.** A cadeirinha voltada para a frente aparece no capítulo como causa de lesões de distração alta na desaceleração, não como meio de transporte."
+   "A": "O coxim sob a cabeça pode acentuar a flexão que o protocolo procura evitar. A fonte coloca o suporte sob o tronco ou cria um recesso occipital na prancha.",
+   "B": "Eliminar o colar não é a solução apresentada. O resumo recomenda adaptação da prancha à proporção da cabeça e manutenção do colar para proteção.",
+   "C": "A posição sentada voltada para a frente não é o transporte protegido recomendado para a suspeita apresentada. O capítulo relaciona essa configuração veicular à distração alta e oferece prancha adaptada com colar como conduta."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Initial Management and Transport of Patients With Suspected Cervical Spine Injury (Fig. 21-4)"
+   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
   ],
-  "geradoEm": "2026-10-27",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-21-coluna-cervical",
+     "titulo": "Lesões da coluna cervical na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+     "secoes": [
+      "Anatomia, mecanismos e atendimento inicial"
+     ],
+     "blocos": [
+      "anatomia-mecanismos-e-atendimento-inicial-0012f77d",
+      "anatomia-mecanismos-e-atendimento-inicial-c53da7ac",
+      "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
+     ],
+     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+     "trechosSha256": "47517029371da7bde07215ffaf2e0d5dc3e784196a54ca258ab9ae9659d5371c"
+    }
+   ],
+   "questaoSha256": "f8fc7bd1dd7c7104f5934a85fe0da0b84f2c71a1d1a073e4a335af696abf53be",
+   "comentarioSha256": "995f93e1de32b92ea1b22294cfb300d93ff48879fc27758db0a4616cbe430dbf"
+  }
  },
  "pediatria-1243": {
   "conceito": "Toda criança que cai de bicicleta precisa de radiografia do pescoço? Não. O capítulo traz o consenso atual, que tenta não deixar passar lesões e, ao mesmo tempo, poupar radiação.\n\n**O consenso.** O Pediatric Cervical Spine Clearance Working Group, por método Delphi modificado, montou um algoritmo para liberar a coluna cervical da criança. No centro dele estão os **critérios NEXUS** para liberar **sem radiografia**. No paciente **gravemente traumatizado**, a **tomografia** entra na avaliação inicial: o risco de deixar passar uma lesão supera o risco da radiação. A ressonância tem papel de apoio (Rockwood crianças, 10ª ed., cap. 21).\n\n**Os cinco critérios NEXUS.** (1) **dor à palpação na linha média**; (2) **déficit neurológico focal**; (3) **alteração do nível de consciência**; (4) **intoxicação**; (5) **lesão que distrai** (dolorosa em outro lugar). Sem nenhum dos cinco, a coluna pode ser liberada com **99% de sensibilidade** num estudo de validação.\n\n**As radiografias dinâmicas.** Flexão e extensão ajudam a detectar subluxação por lesão ligamentar, mas no trauma agudo a dor e o espasmo impedem o movimento. Nesse caso, **colar rígido** e retorno em **1 a 2 semanas** para as dinâmicas. A adesão ao colar e ao retorno é baixa, segundo um estudo citado.\n\n**Quem não se libera clinicamente.** Trauma de cabeça e pescoço, lesões por distração e nível de consciência alterado têm alta probabilidade de lesão cervical; no paciente obnubilado ou não colaborativo, pensar em lesão oculta.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O NEXUS e o papel da tomografia no grave são a base da liberação cervical, e a criança acordada sem nenhum critério é o caso típico de liberação clínica.\n\n> **Na prova:** **NEXUS**: dor na **linha média**, **déficit focal**, **consciência alterada**, **intoxicação**, **lesão que distrai**; nenhum = liberar **sem radiografia** (99%); politrauma grave = **tomografia**; dor que impede dinâmica = **colar** e retorno em **1 a 2 semanas**.",
