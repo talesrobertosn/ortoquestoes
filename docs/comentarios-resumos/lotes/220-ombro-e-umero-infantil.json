@@ -1,0 +1,253 @@
+{
+  "pediatria-1213": {
+    "questaoSha256": "0531cf7de4744fd6cd82ad11aae8c731fdf0d8015878481a20b9be1a31d07667",
+    "comentarioAnteriorSha256": "e81820f261a2f6dee41577464eb65958432a706966e4303625219cf6732e8e1f",
+    "comentario": {
+      "conceito": "Depois de uma crise convulsiva, ombro em **adução e rotação interna**, sem conseguir rodar para fora, exige afastar **luxação posterior**, alternativa C. O resumo associa esse padrão a convulsões e recomenda a **incidência axilar** (Rockwood and Wilkins, 10ª edição, capítulo 19, instabilidade).\n\nA direção da luxação não deve ser escolhida apenas pela frequência geral. A anterior é mais comum, mas o capítulo descreve para ela força com o ombro em **abdução e rotação externa**. No caso, a postura e a limitação de movimento apontam para outro padrão.\n\nO resumo inclui ausência de rotação externa e de supinação no conjunto posterior, associado ao sinal de Putti. Esses achados devem orientar a investigação, sem insistir em mobilização forçada para provar que a amplitude está bloqueada. A imagem precisa esclarecer a relação glenoumeral.\n\n**Na prova:** convulsão e rotação interna fixa fazem a luxação posterior subir na prioridade, mesmo sendo 5% ou menos no panorama do capítulo. Frequência maior da anterior não pode apagar os sinais do caso.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Reconhecer rotação interna fixa e o contexto de convulsão ajuda a identificar a luxação posterior, conforme o resumo.",
+      "correta": "Alternativa C. Reproduz mecanismo associado, posição e bloqueio descritos para a luxação posterior. A incidência axilar é a projeção recomendada no resumo para investigar esse padrão.",
+      "incorretas": {
+        "A": "A anterior predomina em frequência, mas a fonte a relaciona à abdução e rotação externa. A adução com rotação interna fixa após convulsão é a combinação que exige procurar a posterior, e não selecionar a direção mais comum por hábito.",
+        "B": "A pergunta descreve um padrão de posição e bloqueio glenoumeral que o resumo associa à luxação posterior. Escolher clavícula apenas por ser lesão do ombro deixaria sem explicação esse conjunto específico e a necessidade de estudar a articulação.",
+        "D": "A opção nomeia outra direção de luxação, mas não corresponde à combinação posterior de convulsão, adução e rotação interna apresentada pela fonte. O reconhecimento do padrão do caso deve vir antes de escolher uma direção pelo nome."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Instabilidade do ombro."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-19-ombro-umero",
+        "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+        "secoes": [
+          "Instabilidade do ombro"
+        ],
+        "blocos": [
+          "instabilidade-do-ombro-d8c2cceb"
+        ],
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+        "trechosSha256": "d216d8e27d54e348f9a429f92c6c2022d313060e0f1199f299f9fd0f73074cb4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1215": {
+    "questaoSha256": "2930a0c5e14e317c31e15df70e73d5b5dd00f2a1dc233ea6a413d8c8219c1b33",
+    "comentarioAnteriorSha256": "5e4ca332a4370f94992c18c0ea222b02baaf132e60c4c854ef6cee473c0cf359",
+    "comentario": {
+      "conceito": "A fise proximal responde por cerca de **80% do crescimento longitudinal do úmero**, chegando a **90% depois dos 11 anos**, alternativa A. Essa participação ajuda a entender a grande capacidade de remodelação das fraturas proximais, sem torná-la ilimitada (Rockwood and Wilkins, 10ª edição, capítulo 19, anatomia).\n\nO percentual é uma **participação no crescimento do osso**, não a quantidade de correção futura de qualquer fratura. O alinhamento tolerado continua variando com a idade: a tabela aceita mais angulação e translação nos pequenos e é mais restritiva acima de 12 anos. Um percentual alto não substitui a leitura do crescimento que ainda resta.\n\nO resumo situa o fechamento por volta de 14–17 anos nas meninas e 16–18 nos meninos. Também descreve a fise como **predominantemente extracapsular**, com apenas a parte medial dentro da cápsula. Essas características impedem usar fechamento antes de 10 anos ou proteção intracapsular completa como explicação.\n\n**Na prova:** 80% do úmero, podendo chegar a 90% na participação citada após 11 anos. Sempre separar essa contribuição relativa da tolerância angular de uma idade específica.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2022 (`pediatria-0571`), que pergunta a idade de aparecimento da tuberosidade maior (1 a 3 anos). O mesmo bloco de anatomia explica a remodelação. Depois, faça a oficial.",
+      "correta": "Alternativa A. Mantém os percentuais relativos ao crescimento do úmero e o comportamento por idade apresentado no resumo. Não deve ser interpretada como promessa de remodelar 80–90% de toda deformidade.",
+      "incorretas": {
+        "B": "20% reduz muito a participação da fise proximal em relação aos 80% descritos. O valor pedido é o crescimento longitudinal do úmero, não uma proporção de fraturas ou de correção angular.",
+        "C": "O fechamento ocorre nas faixas de 14–17 anos nas meninas e 16–18 nos meninos, não antes de 10 em ambos. A alternativa eliminaria cedo um potencial de crescimento que faz parte da anatomia descrita.",
+        "D": "A fise é predominantemente extracapsular; só a porção medial fica dentro. A fonte não atribui a capacidade de remodelação a uma proteção capsular completa, e sim ao crescimento proximal expressivo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: anatomia; Úmero proximal: classificação e tratamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-19-ombro-umero",
+        "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+        "secoes": [
+          "Úmero proximal: anatomia",
+          "Úmero proximal: classificação e tratamento"
+        ],
+        "blocos": [
+          "umero-proximal-anatomia-f0be4955",
+          "umero-proximal-classificacao-e-tratamento-0512b5c8"
+        ],
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+        "trechosSha256": "64703f6e6aab3c3729a736a944df848ac43ea67deab7f61c4f620c8120eeb7a8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1216": {
+    "questaoSha256": "88a024ca6e2f3e00c7f066411f9d6c5d7ccaa07a901c07c42f8863047b9d5956",
+    "comentarioAnteriorSha256": "99f115577ae9f183da3bfbeb495df45c34b1904f76f418d548aa7bc653f176f2",
+    "comentario": {
+      "conceito": "Aos **13 anos**, o paciente entra na faixa **acima de 12** da tabela: o alinhamento aceito é **menos de 40° de angulação e menos de 50% de desvio**, alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 19, tabela 19-1).\n\nO úmero proximal tem grande potencial de crescimento, mas a tolerância diminui conforme a maturidade se aproxima. A tabela distingue três grupos: abaixo de 5 anos, 70° e 100%; de 5 a 11, 40–70° e 50–100%; acima de 12, limites mais restritos. Transportar o número do pequeno para o adolescente é a armadilha central.\n\nTambém é preciso ler os dois componentes. Uma angulação dentro da faixa não resolve, sozinha, uma translação excessiva. O resumo descreve indicação de redução e fixação nos adolescentes com padrões inaceitáveis, em vez de presumir que toda fratura proximal se corrigirá sem intervenção.\n\n**Na prova:** começar pela idade e conservar o sinal estrito **menor que**. A tabela não autoriza converter “menos de 40°” em “qualquer angulação até muito acima disso” apenas pela localização proximal.\n\n**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0945`), que pergunta a angulação e o desvio aceitáveis aos 7 anos (40 a 70 graus, 50% a 100%). Aqui a idade muda e a linha da tabela também. Depois, faça a oficial.",
+      "correta": "Alternativa B. É a linha correspondente ao adolescente acima de 12 anos, com os dois limites preservados. O caso não pertence às faixas de maior tolerância dos pequenos.",
+      "incorretas": {
+        "A": "70° e 100% correspondem à faixa abaixo de 5 anos. A alternativa importa os limites mais permissivos para um paciente de 13 anos, ignorando a estratificação por idade.",
+        "C": "40–70° e 50–100% são os intervalos de 5–11 anos. A pergunta especifica 13, para o qual a tabela reduz a tolerância angular e de translação.",
+        "D": "A tabela existe porque a capacidade de remodelação não autoriza qualquer desvio. Nos adolescentes, o resumo descreve critérios de redução/fixação para alinhamentos inaceitáveis."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-19-ombro-umero",
+        "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+        "secoes": [
+          "Úmero proximal: classificação e tratamento"
+        ],
+        "blocos": [
+          "umero-proximal-classificacao-e-tratamento-0512b5c8",
+          "umero-proximal-classificacao-e-tratamento-e2c0307e"
+        ],
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+        "trechosSha256": "ac3a54c982f62e10aea65ada4a1a091e49a098accd02f7cccad2722dffb4ce06"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1217": {
+    "questaoSha256": "7b4e12d22aa38e47c735b81e86d1ca269c6484c299ff7eb4df0a76f44f3f8d1b",
+    "comentarioAnteriorSha256": "fce6c3b7bb660d37528e5c5f1c7a88361cdcee81810590691460e27ed37475d4",
+    "comentario": {
+      "conceito": "Acima da inserção do **peitoral maior**, o fragmento **distal** vai para **proximal e medial, em rotação interna**, pela ação desse músculo. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 19, desvio pelos músculos).\n\nA pergunta é sobre a **diáfise**, não sobre a cabeça. No mesmo nível de fratura, o manguito leva o fragmento proximal a **abdução, flexão e rotação externa**. As duas partes podem, portanto, seguir vetores diferentes; misturá-las produz uma resposta com movimentos verdadeiros, mas do fragmento errado.\n\nO nível em relação às inserções também modifica o padrão. Entre peitoral maior e deltoide, a tabela descreve adução proximal e abdução distal; abaixo do deltoide, outra combinação de forças passa a predominar. Não se deve usar a mesma regra muscular para toda fratura do úmero.\n\n**Na prova:** definir nível, fragmento e músculo antes de escolher a direção. Aqui a tríade do distal é proximal, medial e rotação interna pelo peitoral maior.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2026 (`pediatria-0524`), que pergunta o desvio do fragmento proximal (flexão e rotação externa), e do TARO 2012 (`pediatria-0667`), que pergunta a manobra de redução (abdução, flexão e rotação lateral). Depois, faça as oficiais.",
+      "correta": "Alternativa C. Corresponde à coluna distal da tabela no nível acima do peitoral maior. O vetor não é o mesmo da cabeça mantida pelo manguito.",
+      "incorretas": {
+        "A": "A opção troca o vetor distal do nível perguntado e o atribui ao deltoide. A tabela descreve para esse distal peitoral maior com deslocamento proximal/medial e rotação interna, não distal/lateral em rotação externa.",
+        "B": "O caso não pede um vetor anterior de flexão atribuído ao bíceps. A fonte identifica o peitoral maior como determinante do distal nesse nível; flexão aparece no fragmento proximal, junto de abdução e rotação externa.",
+        "D": "Posterior e extensão pelo tríceps não é a combinação indicada para o distal acima do peitoral maior. O resumo relaciona bíceps e tríceps ao deslocamento proximal/medial em outro nível, abaixo do deltoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: anatomia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-19-ombro-umero",
+        "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+        "secoes": [
+          "Úmero proximal: anatomia"
+        ],
+        "blocos": [
+          "umero-proximal-anatomia-d40fae5f"
+        ],
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+        "trechosSha256": "42d7052768b693b21293eb84d0819cd6d58118d2ab32121294d81194b5f42198"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1220": {
+    "questaoSha256": "a9cb7ca01fc71791b680e40ad251d6089bffa7a88b801d40c615d7cb108953c3",
+    "comentarioAnteriorSha256": "297840c50ae97cc6787a19a175b80c35e7813f4251f7308e9a089fbb49811901",
+    "comentario": {
+      "conceito": "Ângulo cervicodiafisário de **120°**, com tuberosidade maior alta após fratura proximal, corresponde ao **úmero varo**, alternativa B. O resumo usa ângulo abaixo de **140°**, tuberosidade alta e osteotomia como os elementos desse problema (Rockwood and Wilkins, 10ª edição, capítulo 19, complicações).\n\nA alteração é de **geometria consolidada do úmero proximal**. O caso já apresenta limitação de abdução e uma relação angular anormal; não basta chamar qualquer dificuldade de movimento de luxação persistente ou de falha de união. O diagnóstico precisa explicar os dados radiográficos fornecidos.\n\nA osteotomia tem como alvo corrigir essa deformidade, em vez de substituir a articulação por presumir necrose ou enxertar um foco de pseudartrose que o enunciado não demonstra. O capítulo apresenta várias complicações possíveis, mas cada uma precisa ser reconhecida pelos próprios achados.\n\n**Na prova:** varo significa reduzir o ângulo cervicodiafisário no esquema apresentado. A tuberosidade alta e a limitação funcional ajudam a ligar a imagem ao problema que a correção pretende tratar.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O úmero varo junta anatomia, fise e função, e tem critérios objetivos.",
+      "correta": "Alternativa B. Reconhece o ângulo abaixo do limite de 140° e a tuberosidade alta, com osteotomia como correção descrita no resumo. A indicação é discutida no caso que já informa comprometimento funcional, sem transformar toda radiografia em uma mesma decisão automática.",
+      "incorretas": {
+        "A": "O resumo associa a luxação posterior a adução e rotação interna fixa em outro contexto. Aqui o dado definidor é a deformidade angular com tuberosidade alta após fratura, correspondente ao úmero varo.",
+        "C": "O enunciado não fornece diagnóstico de necrose para justificar artroplastia. A geometria de varo está explicitamente caracterizada pelos achados que a fonte liga à osteotomia.",
+        "D": "Não há descrição de falta de união do foco. A proposta de enxerto e placa para pseudartrose não aborda o problema angular consolidado identificado no caso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento; Instabilidade do ombro."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-19-ombro-umero",
+        "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+        "secoes": [
+          "Úmero proximal: classificação e tratamento",
+          "Instabilidade do ombro"
+        ],
+        "blocos": [
+          "umero-proximal-classificacao-e-tratamento-e2c0307e",
+          "instabilidade-do-ombro-d8c2cceb"
+        ],
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+        "trechosSha256": "ea960b550a26d80a478d6d5a77ae2be31de09a7cbc1f0b52df73a474b28db5ea"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1221": {
+    "questaoSha256": "27fcae4910a09345bfeb49d3442f67ef25d9cc3183ec29f5ae9b9db800e2d2cc",
+    "comentarioAnteriorSha256": "c7631f7e0fe58a3826ebba215e7915aaaaab4ddcc9fab2575467f51d4bafe847",
+    "comentario": {
+      "conceito": "Na diáfise do úmero infantil, o resumo admite **20–30° de varo, 20° de ápice anterior, 15° de rotação interna e 1–2 cm de encurtamento**, alternativa C. Esses limites não são a tabela da fratura proximal: pertencem à **diáfise** (Rockwood and Wilkins, 10ª edição, capítulo 19, diáfise do úmero).\n\nOs componentes precisam ser avaliados separadamente. Angulação, rotação e comprimento descrevem deformidades diferentes, e a capacidade de tolerar uma não permite automaticamente duplicar a outra. Uma lista em que todos os números pareçam grandes não substitui a comparação de cada parâmetro.\n\nO capítulo descreve tala de coaptação na fase aguda e órtese funcional depois, com consolidação em cerca de 6 semanas. Também mantém indicações cirúrgicas próprias, como exposição, lesão vascular, cotovelo flutuante ou alinhamento inaceitável. A tolerância ao desvio não significa ausência de seguimento.\n\n**Na prova:** conferir o segmento antes dos valores e manter a rotação em 15°. O resumo ressalva ainda que fraturas distais da diáfise tendem a varo e remodelam menos, evitando uma promessa uniforme para todo nível diafisário.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0631`), que pergunta a rotação medial e o varo aceitáveis (15 graus e 20 graus). Depois, faça a oficial.",
+      "correta": "Alternativa C. É a combinação dos quatro parâmetros apresentada na seção diafisária. A resposta exige preservar plano, sentido e unidade, não só lembrar um número isolado.",
+      "incorretas": {
+        "A": "45° de varo excede os 20–30° descritos e 30° de rotação interna duplica os 15° da fonte. A opção amplia dois limites distintos sem apoio no esquema apresentado.",
+        "B": "O capítulo admite angulações e encurtamento definidos, reconhecendo remodelação. Exigir zero angulação porque o úmero não remodelaria contradiz os limites do tratamento conservador descrito.",
+        "D": "A opção é mais restritiva que o resumo nos dois itens: o varo permitido é 20–30°, e 1–2 cm de encurtamento são apresentados como aceitáveis. Ela não reproduz os critérios solicitados."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Diáfise do úmero."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-19-ombro-umero",
+        "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+        "secoes": [
+          "Diáfise do úmero"
+        ],
+        "blocos": [
+          "diafise-do-umero-ed0e929e"
+        ],
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+        "trechosSha256": "3643c5a6ca586a97fa79fe7d826c31048f48227411c93ee8ded13e8859769438"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1222": {
+    "questaoSha256": "aa3b0ffd73599dddf894695b248da4c347234a6def67ed05ea14fa1437e390a6",
+    "comentarioAnteriorSha256": "0cea0fc632ddd8216ea270b03e2a99fcea3ce00a3b9df20daedabe5520a043ac",
+    "comentario": {
+      "conceito": "Paralisia radial **primária**, presente desde o atendimento, numa fratura **fechada** e de alinhamento aceitável, é inicialmente **observada**. O resumo recomenda explorar se não houver recuperação em **3–6 meses**, alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 19, nervo radial).\n\nÉ preciso classificar também **o momento da lesão nervosa**. O capítulo relata recuperação em 78–100% nas primárias e orienta acompanhar Tinel e a sequência de recuperação. Exposta pede exploração; paralisia secundária é controversa; lesão tardia pelo calo é outro cenário. Esses grupos não podem receber a mesma resposta automaticamente.\n\nA fratura continua precisando de tratamento e controle. No caso, os dados permitem cuidado não operatório do osso; a presença do déficit inicial não o transforma, por si só, em indicação de placa com exploração imediata.\n\n**Na prova:** fechada + déficit primário + alinhamento aceitável favorece observação do nervo. O acompanhamento tem objetivo e prazo; observar não significa ignorar uma evolução sem recuperação.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0618`), sobre a fratura da diáfise do úmero na criança.",
+      "correta": "Alternativa D. Mantém tratamento conservador do osso e vigilância da recuperação radial, reservando a exploração para a ausência de sinais no intervalo de 3–6 meses apresentado. As condições do enunciado são essenciais para aplicar essa orientação.",
+      "incorretas": {
+        "A": "A exploração imediata não é a regra para a paralisia primária de uma fratura fechada. O capítulo descreve alta recuperação e observação, distinguindo-a de fratura exposta e de outros momentos de instalação do déficit.",
+        "B": "O caso já informa alinhamento aceitável e fratura fechada. A proposta de placa e exploração em 48 horas troca a estratégia de observação da primária por uma cirurgia que não é exigida por esses dados no resumo.",
+        "C": "O capítulo organiza a conduta pela apresentação inicial e pelo acompanhamento clínico da recuperação, não por eletroneuromiografia obrigatória no primeiro dia para decidir operar. A opção substitui o protocolo conservador descrito por outro gatilho imediato."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Diáfise do úmero."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-19-ombro-umero",
+        "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+        "secoes": [
+          "Diáfise do úmero"
+        ],
+        "blocos": [
+          "diafise-do-umero-af3f5d33",
+          "diafise-do-umero-ed0e929e"
+        ],
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+        "trechosSha256": "234731380def3d4baeec1d2f29ae67878d8af05e88cfa633a587a7a87f459911"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
