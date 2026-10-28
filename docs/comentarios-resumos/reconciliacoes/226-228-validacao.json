@@ -1,0 +1,728 @@
+{
+  "base": "6628bb5c6e1d88a3176d393b2300ac826129cc63",
+  "lotes": {
+    "226": {
+      "revisadas": [
+        "pediatria-1270",
+        "pediatria-1271",
+        "pediatria-1272",
+        "pediatria-1273",
+        "pediatria-1274",
+        "pediatria-1276",
+        "pediatria-1277",
+        "pediatria-1278"
+      ],
+      "lacunas": [
+        "pediatria-1269",
+        "pediatria-1275"
+      ]
+    },
+    "227": {
+      "revisadas": [
+        "pediatria-1280",
+        "pediatria-1282",
+        "pediatria-1284",
+        "pediatria-1290",
+        "pediatria-1291",
+        "pediatria-1292",
+        "pediatria-1293"
+      ],
+      "lacunas": [
+        "pediatria-1279",
+        "pediatria-1281",
+        "pediatria-1283"
+      ]
+    },
+    "228": {
+      "revisadas": [
+        "pediatria-1294",
+        "pediatria-1295",
+        "pediatria-1296",
+        "pediatria-1297",
+        "pediatria-1298",
+        "pediatria-1300",
+        "pediatria-1301",
+        "pediatria-1303"
+      ],
+      "lacunas": [
+        "pediatria-1299",
+        "pediatria-1302"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwoodcriancas10-11-colo-radio-olecrano": {
+      "markdownSha256Bytes": "445ad7cd832bd16c7c342f57765e1adc89501f99120c7a2ec3b11fd697c27ce1",
+      "linhas": 87,
+      "compiladoSha256Bytes": "be1c630bd150cbd1bc8a356e411758dda701fd5784d31aab6bf6fa2fa66afe41"
+    },
+    "rockwoodcriancas10-12-monteggia": {
+      "markdownSha256Bytes": "d0f77d57aa743f9e993805b9ff0777748b3db0e6055610190e1f5c0d247443b9",
+      "linhas": 73,
+      "compiladoSha256Bytes": "5da810a5d2e138e9b846c3e8987741d2450a8e1a522b7f1cfd0e481e4b579460"
+    },
+    "rockwoodcriancas10-28-joelho-intra-articular": {
+      "markdownSha256Bytes": "9aa2d83f578f483487ee3eaab5175f45de16194dce669ab3ce571a742732b2a9",
+      "linhas": 76,
+      "compiladoSha256Bytes": "473aa9b5dafaf72761c58c5c49f78f7e2cf57792c16ac9358ec6afb7cf66b399"
+    },
+    "rockwood10-40-cotovelo-cabeca-radio": {
+      "markdownSha256Bytes": "67a27eaeb3c15a985c2bb856ee42cbcd8f153b8c377d43eddeafdebcfae20d88",
+      "linhas": 554,
+      "compiladoSha256Bytes": "62967b1b8870d9338b64819257a219a5d5d79b71000511346d89e774765a2917"
+    }
+  },
+  "leitura": "11/12/28 infantis integralmente lidos nesta passagem;40 adulto já integralmente lido em208–210,hash preservado e trecho anatômico273 relido para proteção do interósseo posterior em1276. Não transpor conduta adulta. Notas questoes e comentários antigos não são prova independente.",
+  "referenciasHistoricas": {
+    "pediatria-1270": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seção Mechanisms of Injury for Fractures of the Proximal Radius (Fig. 11-1)"
+      ],
+      "comentarioAnteriorSha256": "e2f5e86888233c840d755e97598b1da68d7f949fa5a498115a2d24c75d79999a"
+    },
+    "pediatria-1271": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seção Introduction to Fractures of the Proximal Radius and Ulna"
+      ],
+      "comentarioAnteriorSha256": "962a6b359b3c1f9e73c14e388937f1a32036a73f3e7f54aa1940ce60858da8ba"
+    },
+    "pediatria-1272": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Nonoperative Treatment of Fractures of the Proximal Radius e Operative Treatment (Indications)"
+      ],
+      "comentarioAnteriorSha256": "a995b6e4899e2a9176380962be258b1d8b0b1150aa2ec1684e2dc41fae44ecb4"
+    },
+    "pediatria-1273": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seção Closed Reduction Techniques (Figs. 11-16 a 11-23)"
+      ],
+      "comentarioAnteriorSha256": "c7e178755d1e1283848b90f9ecbc79aae7ec62c5db77729d850724e8ab37b5e0"
+    },
+    "pediatria-1274": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seção Classification of Fractures of the Proximal Radius (Chambers, Figs. 11-2 e 11-7 a 11-11)"
+      ],
+      "comentarioAnteriorSha256": "0fb85150e6c4dfbfbf6cf9b3fd37ff6c96a66df3820d03b06bc3e2f6ef2534dd"
+    },
+    "pediatria-1276": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Instrument-Assisted Closed Reduction, Open Reduction Internal Fixation e Nerve Injuries"
+      ],
+      "comentarioAnteriorSha256": "7d959bcad413f254ec4a0001fb4e9e641d2799e3130aa1fc0cb0535f38dbba25"
+    },
+    "pediatria-1277": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seção Management of Expected Adverse Outcomes in Fractures of the Proximal Radius (Loss of Range of Motion, Radial Head Overgrowth)"
+      ],
+      "comentarioAnteriorSha256": "2ecee6f732c6110ef4cc6a47f7b9f089ab0a55b25f8b7f35a9fd99d78f5bb478"
+    },
+    "pediatria-1278": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Outcomes (Operative Treatment) e Management of Expected Adverse Outcomes (Osteonecrosis, Radioulnar Synostosis)"
+      ],
+      "comentarioAnteriorSha256": "315760c6eba5a2fde68d69d81772315ea707984d1994d63efe231ca097ba82f0"
+    },
+    "pediatria-1269": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Pathoanatomy and Applied Anatomy e Classification of Thoracolumbar Spine Fractures"
+      ],
+      "comentarioAnteriorSha256": "5c3ed77de3938bd74f2ad61211914b93bb0dd5d20adaa5b6ba93b0996069b746"
+    },
+    "pediatria-1275": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seção Intramedullary Nail Reduction/Fixation (Fig. 11-31) e Potential Pitfalls"
+      ],
+      "comentarioAnteriorSha256": "b10a89434804efc80a4a2ff06d9b250663a0b04deb911d0a60118a3cb33ba180"
+    },
+    "pediatria-1280": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Mechanisms of Injury for Fractures of the Proximal Ulna (Extension Injuries, Fig. 11-45) e Classification of Fractures of the Proximal Radius (Neck-Displaced Fractures, Fig. 11-11)"
+      ],
+      "comentarioAnteriorSha256": "c1f546eaf34fad189de17c2cda87937496b974a11565525a21985e03e1d41410"
+    },
+    "pediatria-1282": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Classification (Apophyseal Injuries), Nonoperative e Operative Treatment of Fractures Involving the Proximal Apophysis; Authors' Preferred Treatment (Apophyseal Fractures)"
+      ],
+      "comentarioAnteriorSha256": "cc501d3bb4cf5e210027fd9c47578bcfa3a2885ec414e4ecf456d544633e9086"
+    },
+    "pediatria-1284": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Fractures of the Coronoid Process (Classification, Nonoperative e Operative Treatment, Authors' Preferred Treatment)"
+      ],
+      "comentarioAnteriorSha256": "29a582ad186d20e5665dff1080bd84e76c4997805f35ef8844787c5c47da3993"
+    },
+    "pediatria-1290": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Classification (Letts Classification, Fig. 12-6)"
+      ],
+      "comentarioAnteriorSha256": "b099b24f25dfb08105284124b1424b11b6c767ea2c4eed81f88ee0fc47c5e6c4"
+    },
+    "pediatria-1291": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seções Classification (Ring, Jupiter e Waters) e General Treatment Principles (Algoritmo 12-1)"
+      ],
+      "comentarioAnteriorSha256": "a7fda90c11273ef3efaf60538cb6bd08001dbd9061ce5854b844318e4dcea38f"
+    },
+    "pediatria-1292": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seções Expansion of the Bado Classification (Type I Equivalent, Fig. 12-3) e Imaging (Type I Radiographic Evaluation, Fig. 12-13)"
+      ],
+      "comentarioAnteriorSha256": "520eac7d768920d07db6b5a79343a5eecfb746af97ea1e5d82c9ae8d9b83778c"
+    },
+    "pediatria-1293": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Mechanisms of Injury (Type I, Figs. 12-7 a 12-9)"
+      ],
+      "comentarioAnteriorSha256": "24831fd6ce279f9a3fe515804d39b5ea98e81a78812cf8836794ebc755a7d248"
+    },
+    "pediatria-1279": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Imaging (TRASH), Outcomes e Authors' Preferred Treatment for Fractures of the Proximal Radius (Fig. 11-9, Fig. 11-35)"
+      ],
+      "comentarioAnteriorSha256": "00c5fb70bc767815249d2b6e8caf784c7e47086859acb1cd35b09bcf7b8846c8"
+    },
+    "pediatria-1281": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Mechanisms (Flexion Injuries, Figs. 11-42 e 11-43), Nonoperative Treatment e Authors' Preferred Treatment (Flexion Injuries, Fig. 11-59)"
+      ],
+      "comentarioAnteriorSha256": "d84bf03a8c3543bd417947d1d7861ebdd52550ecb908284311860b51f3064294"
+    },
+    "pediatria-1283": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seção Pathoanatomy and Applied Anatomy Relating to Fractures of the Proximal Ulna (Fig. 11-54)"
+      ],
+      "comentarioAnteriorSha256": "3511fde26614e876448de6d31e1d151aafe550000d48244f150ba678060ed947"
+    },
+    "pediatria-1294": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Nonoperative Treatment of Type I Monteggia Fracture-Dislocations (Figs. 12-24 a 12-28)"
+      ],
+      "comentarioAnteriorSha256": "2d505e91971a4461947e68768de9c0f052555bd322f60c964845c1e0276844e9"
+    },
+    "pediatria-1295": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seções Operative Treatment of Type I (Open Reduction of the Annular Ligament, Fig. 12-31) e Pathoanatomy (Annular Ligament)"
+      ],
+      "comentarioAnteriorSha256": "5bce559eeca9b1d64e0dd43744eb989ebb5350460edbc46abce1bd288249264e"
+    },
+    "pediatria-1296": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seções Pathoanatomy (Nerves, Fig. 12-23) e Management of Expected Adverse Outcomes (Nerve Injuries)"
+      ],
+      "comentarioAnteriorSha256": "b951879382db1b17b3355ff9cb3fced2848b7db565629a6a69093243d3b31b4c"
+    },
+    "pediatria-1297": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seções Radiographic Determination of Traumatic Versus Congenital Dislocation (Fig. 12-19) e Treatment Options for Chronic Monteggia"
+      ],
+      "comentarioAnteriorSha256": "c9a3bfe15c00a443187aba932e21ac39af30351d919eb1a40c1d3d7b3a18c610"
+    },
+    "pediatria-1298": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seções Treatment Options for Chronic Monteggia e Operative Treatment of Chronic Monteggia (Figs. 12-46 a 12-49)"
+      ],
+      "comentarioAnteriorSha256": "821f60ef683529fd0f02817f79ddbf7ebe9ebf0c9f1f04e88686802bf2bee5c3"
+    },
+    "pediatria-1300": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seções Introduction e Mechanisms of Injury for Fractures of the Tibial Spine"
+      ],
+      "comentarioAnteriorSha256": "dded65e251acdb5215363e4c36b9b918d8e5bcdf20898924e79692b27bd0ea2e"
+    },
+    "pediatria-1301": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seção Classification of Fractures of the Tibial Spine (Figs. 28-4 e 28-5)"
+      ],
+      "comentarioAnteriorSha256": "28e63aa9d402d541b79079c07a28ff0191506882f9860a149bddaf076a0ce596"
+    },
+    "pediatria-1303": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seções Nonoperative Treatment e Authors' Preferred Treatment of Fractures of the Tibial Spine (Algoritmo 28-1)"
+      ],
+      "comentarioAnteriorSha256": "4cddf69c3cad35ba25f7bd1b983617a26fecbc17acbadab41bf16d1cc051c1ce"
+    },
+    "pediatria-1299": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Operative Treatment of Chronic Monteggia (Annular Ligament Repair or Reconstruction, Figs. 12-44 e 12-45)"
+      ],
+      "comentarioAnteriorSha256": "3bb20dc780dc0c7018bf5d28f651c17e3bd517af8d85f18e4376f17377f6af34"
+    },
+    "pediatria-1302": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seção Pathoanatomy and Applied Anatomy Relating to Fracture of the Tibial Spine (Figs. 28-7 e 28-8)"
+      ],
+      "comentarioAnteriorSha256": "4b77b66780b42e65e718fe04e31f90eebfd9f8f2c4840f52428b19dde5ab4c88"
+    }
+  },
+  "motivosCriacao": {
+    "pediatria-1270": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0640"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2019 (`pediatria-0640`), que perguntou o mecanismo mais frequente da fratura do colo do rádio na criança (valgo com extensão do cotovelo). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2019 (`pediatria-0640`), que perguntou o mecanismo mais frequente da fratura do colo do rádio na criança (valgo com extensão do cotovelo). Depois, faça a oficial."
+    },
+    "pediatria-1271": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. Os números da epidemiologia e a frequência das lesões associadas aparecem com regularidade nas provas de cotovelo infantil.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para contrastar os denominadores da epidemiologia, a idade mediana e a necessidade de procurar lesões associadas no cotovelo infantil.",
+      "ajusteEditorial": "Retirada frequência em provas ou superlativo sem demonstração;mantido motivo específico."
+    },
+    "pediatria-1272": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0926",
+        "pediatria-0815"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do SBOT-SP (`pediatria-0926`), que perguntou o tratamento da fratura isolada do colo com 40 graus aos 5 anos, e do TARO 2006 (`pediatria-0815`), que afirmou ser a redução aberta o tratamento acima de 30 graus. As duas estão sem gabarito oficial; o capítulo sustenta o tratamento conservador na primeira e nega a afirmação da segunda (primeiro, métodos fechados). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do SBOT-SP (`pediatria-0926`), que perguntou o tratamento da fratura isolada do colo com 40 graus aos 5 anos, e do TARO 2006 (`pediatria-0815`), que afirmou ser a redução aberta o tratamento acima de 30 graus. As duas estão sem gabarito oficial; o capítulo sustenta o tratamento conservador na primeira e nega a afirmação da segunda (primeiro, métodos fechados). Depois, faça as oficiais."
+    },
+    "pediatria-1273": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0748"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2008 (`pediatria-0748`), que perguntou em que consiste a técnica de PATTERSON (varo com antebraço em supinação; a oficial está sem gabarito, e o capítulo sustenta essa resposta). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2008 (`pediatria-0748`), que perguntou em que consiste a técnica de PATTERSON (varo com antebraço em supinação; a oficial está sem gabarito, e o capítulo sustenta essa resposta). Depois, faça a oficial."
+    },
+    "pediatria-1274": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A fratura articular SALTER-HARRIS IV da cabeça é a que o capítulo pede para vigiar de perto.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A fratura articular SALTER-HARRIS IV da cabeça é a que o capítulo pede para vigiar de perto."
+    },
+    "pediatria-1276": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A proteção do NIP aparece em todas as técnicas do capítulo e é um erro técnico clássico.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção sobre a proteção do nervo interósseo posterior durante a redução, relacionando a posição do antebraço, a entrada lateral e o uso dos instrumentos.",
+      "ajusteEditorial": "Retirada frequência em provas ou superlativo sem demonstração;mantido motivo específico."
+    },
+    "pediatria-1277": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0564",
+        "pediatria-0841"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0564`), que perguntou o movimento mais comprometido na sequela da fratura da cabeça e do colo do rádio (pronação), e do TARO 2010 (`pediatria-0841`), que perguntou o mesmo e está sem gabarito (o capítulo sustenta a pronação). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0564`), que perguntou o movimento mais comprometido na sequela da fratura da cabeça e do colo do rádio (pronação), e do TARO 2010 (`pediatria-0841`), que perguntou o mesmo e está sem gabarito (o capítulo sustenta a pronação). Depois, faça as oficiais."
+    },
+    "pediatria-1278": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O aconselhamento prognóstico é um tema que a prova cobra junto com a regra de evitar a redução aberta.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para orientar o aconselhamento da família a partir da idade, do desvio e das lesões associadas, distinguindo risco da fratura e complicações do tratamento.",
+      "ajusteEditorial": "Retirada frequência em provas ou superlativo sem demonstração;mantido motivo específico."
+    },
+    "pediatria-1280": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0611",
+        "pediatria-0659"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2017 (`pediatria-0611`), que perguntou a posição do antebraço e do cotovelo no galho verde do olécrano com fratura do colo (supinação e valgo), e do TARO 2012 (`pediatria-0659`), que perguntou o tipo de MONTEGGIA do colo desviado lateralmente com varo do olécrano (tipo III). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2017 (`pediatria-0611`), que perguntou a posição do antebraço e do cotovelo no galho verde do olécrano com fratura do colo (supinação e valgo), e do TARO 2012 (`pediatria-0659`), que perguntou o tipo de MONTEGGIA do colo desviado lateralmente com varo do olécrano (tipo III). Depois, faça as oficiais."
+    },
+    "pediatria-1282": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0954"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0954`), que perguntou quando operar a fratura da apófise do olécrano (gabarito: desvio maior que 4 mm e superfície articular acometida). O capítulo usa \"ou\": qualquer dos dois critérios basta. Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0954`), que perguntou quando operar a fratura da apófise do olécrano (gabarito: desvio maior que 4 mm e superfície articular acometida). O capítulo usa \"ou\": qualquer dos dois critérios basta. Depois, faça a oficial."
+    },
+    "pediatria-1284": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A classificação de REGAN e MORREY e o número de 20% no tipo III são a base das questões sobre o coronoide.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para relacionar a proporção do coronoide fraturado, a estabilidade e os resultados sem cirurgia no tipo III.",
+      "ajusteEditorial": "Motivo específico mantido sem superlativo/frequência não demonstrada."
+    },
+    "pediatria-1290": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0712"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0712`), que perguntou a que corresponde o tipo B de LETTS (galho verde da ulna com desvio anterior da cabeça). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0712`), que perguntou a que corresponde o tipo B de LETTS (galho verde da ulna com desvio anterior da cabeça). Depois, faça a oficial."
+    },
+    "pediatria-1291": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O protocolo pela ulna é a principal mensagem do capítulo.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para aplicar o protocolo de tratamento pela ulna, distinguindo deformidade plástica, galho verde e os padrões de fratura completa.",
+      "ajusteEditorial": "Motivo específico mantido sem superlativo/frequência não demonstrada."
+    },
+    "pediatria-1292": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A linha radiocapitelar e o arco ulnar são as ferramentas que evitam o MONTEGGIA crônico.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A linha radiocapitelar e o arco ulnar são as ferramentas que evitam o MONTEGGIA crônico."
+    },
+    "pediatria-1293": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O mecanismo explica as posições de redução e imobilização de cada tipo.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O mecanismo explica as posições de redução e imobilização de cada tipo."
+    },
+    "pediatria-1294": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A ordem da redução (ulna, depois cabeça) e a posição de flexão são o núcleo do tratamento fechado.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A ordem da redução (ulna, depois cabeça) e a posição de flexão são o núcleo do tratamento fechado."
+    },
+    "pediatria-1295": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A redução imperfeita aceita é a porta de entrada do MONTEGGIA crônico.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A redução imperfeita aceita é a porta de entrada do MONTEGGIA crônico."
+    },
+    "pediatria-1296": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A paralisia do interósseo posterior é a complicação mais cobrada do MONTEGGIA.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para reconhecer a perda de extensão das metacarpofalângicas e da retropulsão do polegar,relacionando o interósseo posterior ao MonteggiaIII e à observação da recuperação.",
+      "ajusteEditorial": "Retirada frequência em provas não demonstrada;mantido motivo específico."
+    },
+    "pediatria-1297": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre luxação congênita e MONTEGGIA crônico decide se a criança vai ou não para a reconstrução.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre luxação congênita e MONTEGGIA crônico decide se a criança vai ou não para a reconstrução."
+    },
+    "pediatria-1298": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A reconstrução do crônico reúne indicação, contraindicação e técnica.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A reconstrução do crônico reúne indicação, contraindicação e técnica."
+    },
+    "pediatria-1300": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0624",
+        "pediatria-0693"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0624`), que deu como gabarito hiperextensão com rotação lateral, e do TARO 2014 (`pediatria-0693`), que deu hiperextensão. O capítulo aponta o valgo forçado com rotação externa da tíbia como o mais comum e cita a hiperextensão entre os possíveis. Resolva as oficiais sabendo dessa divergência.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0624`), que deu como gabarito hiperextensão com rotação lateral, e do TARO 2014 (`pediatria-0693`), que deu hiperextensão. O capítulo aponta o valgo forçado com rotação externa da tíbia como o mais comum e cita a hiperextensão entre os possíveis. Resolva as oficiais sabendo dessa divergência."
+    },
+    "pediatria-1301": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0535"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2024 (`pediatria-0535`), que mostrou uma figura e pediu o tipo de MEYERS e MCKEEVER (tipo II). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2024 (`pediatria-0535`), que mostrou uma figura e pediu o tipo de MEYERS e MCKEEVER (tipo II). Depois, faça a oficial."
+    },
+    "pediatria-1303": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A imobilização em extensão completa e os prazos são os detalhes práticos do tratamento conservador.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A imobilização em extensão completa e os prazos são os detalhes práticos do tratamento conservador."
+    }
+  },
+  "lacunas": [
+    {
+      "id": "pediatria-1269",
+      "questaoSha256": "3559bb4ed5467a72a7467fcaaf11c9e00e883a578a3d98afe514a5d1ae42d04c",
+      "comentarioAnteriorSha256": "5c3ed77de3938bd74f2ad61211914b93bb0dd5d20adaa5b6ba93b0996069b746",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-22-coluna-toracolombar",
+          "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo22 informa cone emL1/L2,mas não desenvolve a combinação rigidez torácica/mobilidade lombar e menor probabilidade de lesão PERMANENTE abaixo do cone da alternativaB. Referência anatômica isolada não demonstra esse prognóstico. Falta afirmação independente da relação anatômica e prognóstica completa;preservar comentário sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1275",
+      "questaoSha256": "76b7a8ef7779421ad153368c2df17cbf16bd7f4f2c912e8e4d3d1a97a4a8bec1",
+      "comentarioAnteriorSha256": "b10a89434804efc80a4a2ff06d9b250663a0b04deb911d0a60118a3cb33ba180",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+          "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo11 descreve toda a técnica Metaizeau daA,mas não define o protocolo PÓS-OPERATÓRIO para rejeitar a obrigatoriedade de6semanas rígidas daD.1–3semanas aparecem no tratamento NÃO OPERATÓRIO e não provam por si o regime após haste. Falta protocolo independente de imobilização/mobilização após Metaizeau;sem converter recomendação de outro grupo em prova. Comentário intacto sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1279",
+      "questaoSha256": "df2c994709ca5e0704adbe74053446e28912b70c9194af85c9cd984972fdf0d7",
+      "comentarioAnteriorSha256": "00c5fb70bc767815249d2b6e8caf784c7e47086859acb1cd35b09bcf7b8846c8",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+          "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo11 recomenda ressonância para TRASH/subluxação posterior e maior agressividade com fixação articular,mas não explicita URGÊNCIA e DESTRUIÇÃO DA CARTILAGEM exigidas na alternativaD. A destruição consta só da nota contextual questoes,que não é fonte independente. Falta desenvolvimento independente do prognóstico condral e da temporalidade da conduta;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1281",
+      "questaoSha256": "4f5305499f79e57b8be02e27797024b0cb3be812532b8c558ad2ac2fe86b40d3",
+      "comentarioAnteriorSha256": "d84bf03a8c3543bd417947d1d7861ebdd52550ecb908284311860b51f3064294",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+          "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O corpo11 sustenta banda de tensão e PDS abaixo de50kg,mas não define MOVIMENTO PRECOCE após fixar a fratura por flexão,qualificador daD. A mobilização dos tiposI/II do coronoide é outro grupo. Falta protocolo pós-operatório independente dessa fratura;sem extrapolar protocolo adulto ou de outra lesão.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1283",
+      "questaoSha256": "6099f511b6fcfa598050fa420ab23d2ecd8c3a5d1f8f63d4c367e469af1a24e1",
+      "comentarioAnteriorSha256": "3511fde26614e876448de6d31e1d151aafe550000d48244f150ba678060ed947",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+          "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo11 sustenta idades9/14anos,centro bipartido e patela cubital não pseudartrose,mas não descreve se o CORONOIDE tem centro secundário próprio nem sua cronologia,para conferir a alternativaB. Resumo de avaliação do cotovelo9ªed. consultado por busca não preencheu a definição. Falta descrição independente do desenvolvimento do coronoide;sem usar comentário antigo como fonte.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1299",
+      "questaoSha256": "87963f79f14b8a61bb715a5eda1705473cdec095fdf713469d24480e3a4d5b4f",
+      "comentarioAnteriorSha256": "3bb20dc780dc0c7018bf5d28f651c17e3bd517af8d85f18e4376f17377f6af34",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O corpo12 sustenta porção CENTRAL do tríceps,furo na ulna e força POSTERIOR,mas não descreve explicitamente o percurso EM VOLTA DO COLO DO RÁDIO contido na alternativaD. Falta descrição independente do trajeto completo da reconstrução;nome do ligamento e comentário anterior não substituem conferência anatômica. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1302",
+      "questaoSha256": "47100df06eae1871976b9147b11b92772f1781a64fe36fe0b887369488361278",
+      "comentarioAnteriorSha256": "4b77b66780b42e65e718fe04e31f90eebfd9f8f2c4840f52428b19dde5ab4c88",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Corpo28 lista corno anterior do menisco medial e intermeniscal e frequências por TIPOS II/III,mas não fornece ranking medial PRIMEIRO seguido intermeniscal,como a alternativaD exige. Não converter ordem de lista em distribuição por estrutura nem confundir 26/65% com ranking. Falta frequência comparativa independente das estruturas interpostas;comentário preservado sem selo.",
+      "estadoAnterior": "pendente"
+    }
+  ],
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 23,
+    "lacunasComentariosIntactos": 7,
+    "demaisBytesPreservados": true,
+    "motivosConferidos": 23,
+    "figurasNosCasos": 0,
+    "ui": "23/23 casos em390/1440:resposta,aula,alertas e links exatos. Primeiro1270 inspecionado visualmente."
+  },
+  "reconciliacao619": {
+    "head": "515c75efe50bfb4dcbd21a26dca3c9c8e0f8bb74",
+    "merge": "6628bb5c6e1d88a3176d393b2300ac826129cc63",
+    "ci": 40762032049,
+    "pages": 40769223651,
+    "publicar": 123103480157,
+    "avulsosIntegrais": 695,
+    "resumosIntegrais": 52,
+    "figuras": 43
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 103,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 814,
+      "revisada": 1960
+    }
+  },
+  "continuidade": "Próxima229:1304–1313 exportada,7rascunhos/3lacunas locais,sem aplicação. Resumo28 integralmente lido. Antes de aplicar,conferir motivos de criação,pontuação/espaços e remoto;lacunas1304implante canulado,1305duração/causalidade,1311técnica radiográfica/tensão. Tarefa integral aberta;reavaliar lacunas antigas com fontes novas após fila pendente."
+}

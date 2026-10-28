@@ -3,10 +3,10 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 133,
+  "pendente": 103,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 807,
-  "revisada": 1937
+  "pendente-fonte": 814,
+  "revisada": 1960
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -236,18 +236,18 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 30,
-    "pendente-fonte": 34,
-    "revisada": 151
+    "pendente": 15,
+    "pendente-fonte": 38,
+    "revisada": 162
    }
   },
   "rockwoodcriancas10-06-sindrome-compartimental": {
    "titulo": "Síndrome compartimental na criança",
    "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
    "estados": {
-    "pendente": 30,
-    "pendente-fonte": 34,
-    "revisada": 155
+    "pendente": 15,
+    "pendente-fonte": 38,
+    "revisada": 166
    }
   },
   "rockwoodcriancas10-07-patologicas-maus-tratos": {
@@ -274,9 +274,8 @@
    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 11,
-    "revisada": 67
+    "pendente-fonte": 15,
+    "revisada": 78
    }
   },
   "rockwoodcriancas10-12-monteggia": {
@@ -284,9 +283,9 @@
    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
    "estados": {
     "duplicada": 1,
-    "pendente": 18,
-    "pendente-fonte": 23,
-    "revisada": 99
+    "pendente": 8,
+    "pendente-fonte": 24,
+    "revisada": 108
    }
   },
   "rockwoodcriancas10-19-ombro-umero": {
@@ -312,8 +311,8 @@
    "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
    "estados": {
     "duplicada": 4,
-    "pendente": 16,
-    "pendente-fonte": 9,
+    "pendente": 15,
+    "pendente-fonte": 10,
     "revisada": 33
    }
   },
@@ -321,8 +320,8 @@
    "titulo": "Fraturas da coluna toracolombar na criança",
    "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
    "estados": {
-    "pendente": 2,
-    "pendente-fonte": 8,
+    "pendente": 1,
+    "pendente-fonte": 9,
     "revisada": 30
    }
   },
@@ -348,27 +347,27 @@
    "titulo": "Fratura da diáfise do fêmur na criança",
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 17,
-    "revisada": 90
+    "pendente": 11,
+    "pendente-fonte": 18,
+    "revisada": 93
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
    "titulo": "Fratura da fise distal do fêmur na criança",
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 22,
-    "revisada": 97
+    "pendente": 11,
+    "pendente-fonte": 23,
+    "revisada": 100
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 24,
-    "revisada": 92
+    "pendente": 11,
+    "pendente-fonte": 25,
+    "revisada": 95
    }
   },
   "rockwoodcriancas10-28-joelho-intra-articular": {
@@ -376,18 +375,18 @@
    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
    "estados": {
     "duplicada": 2,
-    "pendente": 39,
-    "pendente-fonte": 4,
-    "revisada": 19
+    "pendente": 35,
+    "pendente-fonte": 5,
+    "revisada": 22
    }
   },
   "rockwoodcriancas10-29-diafise-tibia": {
    "titulo": "Fraturas da tíbia e da fíbula na criança",
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 18,
-    "revisada": 89
+    "pendente": 11,
+    "pendente-fonte": 19,
+    "revisada": 92
    }
   },
   "rockwoodcriancas10-30-tornozelo": {
@@ -437,18 +436,16 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 25,
-    "revisada": 80
+    "pendente-fonte": 29,
+    "revisada": 91
    }
   },
   "rockwoodcriancas9-16-condilo-lateral": {
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 14,
-    "revisada": 73
+    "pendente-fonte": 18,
+    "revisada": 84
    }
   },
   "rockwoodcriancas9-17-fise-distal-umero": {
@@ -464,9 +461,9 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 14,
-    "pendente-fonte": 20,
-    "revisada": 72
+    "pendente": 4,
+    "pendente-fonte": 21,
+    "revisada": 81
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -474,9 +471,9 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 14,
-    "pendente-fonte": 19,
-    "revisada": 68
+    "pendente": 4,
+    "pendente-fonte": 20,
+    "revisada": 77
    }
   }
  },
@@ -70161,8 +70158,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo22 informa cone emL1/L2,mas não desenvolve a combinação rigidez torácica/mobilidade lombar e menor probabilidade de lesão PERMANENTE abaixo do cone da alternativaB. Referência anatômica isolada não demonstra esse prognóstico. Falta afirmação independente da relação anatômica e prognóstica completa;preservar comentário sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70177,7 +70174,8 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "3559bb4ed5467a72a7467fcaaf11c9e00e883a578a3d98afe514a5d1ae42d04c"
+   "questaoSha256": "3559bb4ed5467a72a7467fcaaf11c9e00e883a578a3d98afe514a5d1ae42d04c",
+   "pendencia": "O resumo22 informa cone emL1/L2,mas não desenvolve a combinação rigidez torácica/mobilidade lombar e menor probabilidade de lesão PERMANENTE abaixo do cone da alternativaB. Referência anatômica isolada não demonstra esse prognóstico. Falta afirmação independente da relação anatômica e prognóstica completa;preservar comentário sem selo."
   },
   "pediatria-1270": {
    "tema": "pediatria",
@@ -70187,7 +70185,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70206,7 +70204,33 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "d7e7380226230ee05aee5b6d3c85483cfb802a43c1d3deb455692b09b7e6d431"
+   "questaoSha256": "d7e7380226230ee05aee5b6d3c85483cfb802a43c1d3deb455692b09b7e6d431",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: mecanismo, imagem e classificação",
+       "Olécrano e apófise"
+      ],
+      "blocos": [
+       "radio-proximal-mecanismo-imagem-e-classificacao-3d6f8ae0",
+       "radio-proximal-mecanismo-imagem-e-classificacao-8b5ba824",
+       "olecrano-e-apofise-904c5544"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "7256fcb1ea7ae75a63dd010dac344a827c6865cdc31a64b1e6d4379743649530"
+     }
+    ],
+    "questaoSha256": "d7e7380226230ee05aee5b6d3c85483cfb802a43c1d3deb455692b09b7e6d431",
+    "comentarioSha256": "104b33b0d69d845081a9d03831a01bc986e1eff445f2e79547529efc7d790d4d"
+   }
   },
   "pediatria-1271": {
    "tema": "pediatria",
@@ -70216,7 +70240,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70235,7 +70259,31 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "9057cec91422dbd1511eede8d7eadb2d15bbc03fc7b0d01c431908da67812151"
+   "questaoSha256": "9057cec91422dbd1511eede8d7eadb2d15bbc03fc7b0d01c431908da67812151",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: mecanismo, imagem e classificação"
+      ],
+      "blocos": [
+       "radio-proximal-mecanismo-imagem-e-classificacao-3d6f8ae0",
+       "radio-proximal-mecanismo-imagem-e-classificacao-8b5ba824"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "0f17baeae209ed6ef278dc38b20c750ea4fb4fd0d76f631aff9ed0a83f794d26"
+     }
+    ],
+    "questaoSha256": "9057cec91422dbd1511eede8d7eadb2d15bbc03fc7b0d01c431908da67812151",
+    "comentarioSha256": "c81a4d6bef1196472c65704f16d9485a15c7eff7c84f8db630f1c737e4e58b0f"
+   }
   },
   "pediatria-1272": {
    "tema": "pediatria",
@@ -70245,7 +70293,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70264,7 +70312,31 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "1a7f167c5adec3918e2d34129290dfbfcfce558af8d98abb515ca48231123188"
+   "questaoSha256": "1a7f167c5adec3918e2d34129290dfbfcfce558af8d98abb515ca48231123188",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: tratamento"
+      ],
+      "blocos": [
+       "radio-proximal-tratamento-bb1be85f",
+       "radio-proximal-tratamento-18c3f92b"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "a5dc33641ed044fc51fb572bf840e871d2f605ed852d28e6494c944286e4d7e2"
+     }
+    ],
+    "questaoSha256": "1a7f167c5adec3918e2d34129290dfbfcfce558af8d98abb515ca48231123188",
+    "comentarioSha256": "95baa4b777d50d710762832ea4d5cdf1467cd17144395d983a893367747ec778"
+   }
   },
   "pediatria-1273": {
    "tema": "pediatria",
@@ -70274,7 +70346,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70293,7 +70365,30 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "dc59abd39847638d234fea3cd1c7cb4e26dd45840dceb98fa05b60c7059abf02"
+   "questaoSha256": "dc59abd39847638d234fea3cd1c7cb4e26dd45840dceb98fa05b60c7059abf02",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: tratamento"
+      ],
+      "blocos": [
+       "radio-proximal-tratamento-18c3f92b"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "4929eb37306a28f72145226c897e67dad9ba4ee483530604a8e32161ca4873fa"
+     }
+    ],
+    "questaoSha256": "dc59abd39847638d234fea3cd1c7cb4e26dd45840dceb98fa05b60c7059abf02",
+    "comentarioSha256": "1978e39d1577d5f8a33f09740e22b193feab2160c6b000f198e9a15fcef63920"
+   }
   },
   "pediatria-1274": {
    "tema": "pediatria",
@@ -70304,7 +70399,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70323,7 +70418,35 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "69cbf91180d892a2ff525226252547ea08ce83b64ca2a6bf3f4592e2cb1afdbb"
+   "questaoSha256": "69cbf91180d892a2ff525226252547ea08ce83b64ca2a6bf3f4592e2cb1afdbb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: mecanismo, imagem e classificação",
+       "Rádio proximal: tratamento",
+       "Rádio proximal: complicações"
+      ],
+      "blocos": [
+       "radio-proximal-mecanismo-imagem-e-classificacao-09a3b151",
+       "radio-proximal-mecanismo-imagem-e-classificacao-8b5ba824",
+       "radio-proximal-tratamento-18c3f92b",
+       "radio-proximal-complicacoes-906c49c4"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "541bee6eb4672f6de87ab39564233d8edd093a7bc16edb0619cfe15f206aef6f"
+     }
+    ],
+    "questaoSha256": "69cbf91180d892a2ff525226252547ea08ce83b64ca2a6bf3f4592e2cb1afdbb",
+    "comentarioSha256": "ef0c9ab7fcf8033ffbeb41817717a38e2b0fbe4b1c4b036740b6f4a21709c629"
+   }
   },
   "pediatria-1275": {
    "tema": "pediatria",
@@ -70333,8 +70456,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo11 descreve toda a técnica Metaizeau daA,mas não define o protocolo PÓS-OPERATÓRIO para rejeitar a obrigatoriedade de6semanas rígidas daD.1–3semanas aparecem no tratamento NÃO OPERATÓRIO e não provam por si o regime após haste. Falta protocolo independente de imobilização/mobilização após Metaizeau;sem converter recomendação de outro grupo em prova. Comentário intacto sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70352,7 +70475,8 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "76b7a8ef7779421ad153368c2df17cbf16bd7f4f2c912e8e4d3d1a97a4a8bec1"
+   "questaoSha256": "76b7a8ef7779421ad153368c2df17cbf16bd7f4f2c912e8e4d3d1a97a4a8bec1",
+   "pendencia": "Resumo11 descreve toda a técnica Metaizeau daA,mas não define o protocolo PÓS-OPERATÓRIO para rejeitar a obrigatoriedade de6semanas rígidas daD.1–3semanas aparecem no tratamento NÃO OPERATÓRIO e não provam por si o regime após haste. Falta protocolo independente de imobilização/mobilização após Metaizeau;sem converter recomendação de outro grupo em prova. Comentário intacto sem selo."
   },
   "pediatria-1276": {
    "tema": "pediatria",
@@ -70362,7 +70486,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70381,7 +70505,47 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "a9b9ab545c5acdec56daeb50026f69754c888ebf21832581e9d8ce39a2412bcc"
+   "questaoSha256": "a9b9ab545c5acdec56daeb50026f69754c888ebf21832581e9d8ce39a2412bcc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: tratamento",
+       "Rádio proximal: complicações"
+      ],
+      "blocos": [
+       "radio-proximal-tratamento-18c3f92b",
+       "radio-proximal-complicacoes-906c49c4"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "881698075b6762cf2a670a900fd419cae99d2296f8d37509f3305a08523cb6fc"
+     },
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-109bc9e4"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "9147454a74bc37cbffbe4b4f328824ccb031e127f4145783e8aa0e262380ccbc"
+     }
+    ],
+    "questaoSha256": "a9b9ab545c5acdec56daeb50026f69754c888ebf21832581e9d8ce39a2412bcc",
+    "comentarioSha256": "c7293601947e3248d83761769d8f773afd6483c03e45700c8e5aa2e6c6219b75"
+   }
   },
   "pediatria-1277": {
    "tema": "pediatria",
@@ -70391,7 +70555,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70410,7 +70574,34 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "72f8299bd9ed764362dacd57b95899ac3aed7b1580febf56eb73e8816d4372bf"
+   "questaoSha256": "72f8299bd9ed764362dacd57b95899ac3aed7b1580febf56eb73e8816d4372bf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: complicações",
+       "Rádio proximal: tratamento",
+       "Rádio proximal: mecanismo, imagem e classificação"
+      ],
+      "blocos": [
+       "radio-proximal-complicacoes-906c49c4",
+       "radio-proximal-tratamento-bb1be85f",
+       "radio-proximal-mecanismo-imagem-e-classificacao-8b5ba824"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "c3b521229cfcadf34b9d2b9cfbd89a9b18fa21d6ab854f14434f91d22a7fab7c"
+     }
+    ],
+    "questaoSha256": "72f8299bd9ed764362dacd57b95899ac3aed7b1580febf56eb73e8816d4372bf",
+    "comentarioSha256": "8f34bf714945b32996b2a6587a6f0cf52de81b853586e8f5b72272605e5c6fe8"
+   }
   },
   "pediatria-1278": {
    "tema": "pediatria",
@@ -70420,7 +70611,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70439,7 +70630,32 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "7926e86426e1f6e8d10b0b5f30fb20b9e2029b51d7feefc840a07b65c7ab5509"
+   "questaoSha256": "7926e86426e1f6e8d10b0b5f30fb20b9e2029b51d7feefc840a07b65c7ab5509",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: complicações",
+       "Rádio proximal: tratamento"
+      ],
+      "blocos": [
+       "radio-proximal-complicacoes-906c49c4",
+       "radio-proximal-tratamento-18c3f92b"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "e0d9fa7434d6db26efbf12b3687f4f7ba7f3fad746417592936c1393b2071025"
+     }
+    ],
+    "questaoSha256": "7926e86426e1f6e8d10b0b5f30fb20b9e2029b51d7feefc840a07b65c7ab5509",
+    "comentarioSha256": "b44850f90eb192a5f7e76b1a96062729253c99fb0728457eeee5aef63daaf21d"
+   }
   },
   "pediatria-1279": {
    "tema": "pediatria",
@@ -70450,8 +70666,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo11 recomenda ressonância para TRASH/subluxação posterior e maior agressividade com fixação articular,mas não explicita URGÊNCIA e DESTRUIÇÃO DA CARTILAGEM exigidas na alternativaD. A destruição consta só da nota contextual questoes,que não é fonte independente. Falta desenvolvimento independente do prognóstico condral e da temporalidade da conduta;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70469,7 +70685,8 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "df2c994709ca5e0704adbe74053446e28912b70c9194af85c9cd984972fdf0d7"
+   "questaoSha256": "df2c994709ca5e0704adbe74053446e28912b70c9194af85c9cd984972fdf0d7",
+   "pendencia": "O resumo11 recomenda ressonância para TRASH/subluxação posterior e maior agressividade com fixação articular,mas não explicita URGÊNCIA e DESTRUIÇÃO DA CARTILAGEM exigidas na alternativaD. A destruição consta só da nota contextual questoes,que não é fonte independente. Falta desenvolvimento independente do prognóstico condral e da temporalidade da conduta;sem selo."
   },
   "pediatria-1280": {
    "tema": "pediatria",
@@ -70479,7 +70696,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70498,7 +70715,45 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "624d0bf02962277d4ca79653d87273669e8d7e4acdbf031e64eab956382f0937"
+   "questaoSha256": "624d0bf02962277d4ca79653d87273669e8d7e4acdbf031e64eab956382f0937",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Olécrano e apófise"
+      ],
+      "blocos": [
+       "olecrano-e-apofise-904c5544"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "a8f96cb2902963f2195e3ea6e56b55f0cc40993f53776a87e3ed4b8b31e65068"
+     },
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Classificação e mecanismos"
+      ],
+      "blocos": [
+       "classificacao-e-mecanismos-bf9aae38"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "69de1429792ec52c1c73fa67e61b135fbf30570c80e6c0cf08009bb4d8d23f65"
+     }
+    ],
+    "questaoSha256": "624d0bf02962277d4ca79653d87273669e8d7e4acdbf031e64eab956382f0937",
+    "comentarioSha256": "d26e70056b77b115a9cfa1500d90dc195f2e874fa59131fb077c67f93fcee508"
+   }
   },
   "pediatria-1281": {
    "tema": "pediatria",
@@ -70508,8 +70763,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo11 sustenta banda de tensão e PDS abaixo de50kg,mas não define MOVIMENTO PRECOCE após fixar a fratura por flexão,qualificador daD. A mobilização dos tiposI/II do coronoide é outro grupo. Falta protocolo pós-operatório independente dessa fratura;sem extrapolar protocolo adulto ou de outra lesão.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70527,7 +70782,8 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "4f5305499f79e57b8be02e27797024b0cb3be812532b8c558ad2ac2fe86b40d3"
+   "questaoSha256": "4f5305499f79e57b8be02e27797024b0cb3be812532b8c558ad2ac2fe86b40d3",
+   "pendencia": "O corpo11 sustenta banda de tensão e PDS abaixo de50kg,mas não define MOVIMENTO PRECOCE após fixar a fratura por flexão,qualificador daD. A mobilização dos tiposI/II do coronoide é outro grupo. Falta protocolo pós-operatório independente dessa fratura;sem extrapolar protocolo adulto ou de outra lesão."
   },
   "pediatria-1282": {
    "tema": "pediatria",
@@ -70538,7 +70794,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70557,7 +70813,31 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "aafedbbbc9e51427000f6e6bc6330edfed77148087a9f6c8f8fefdc3794dafca"
+   "questaoSha256": "aafedbbbc9e51427000f6e6bc6330edfed77148087a9f6c8f8fefdc3794dafca",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Olécrano e apófise"
+      ],
+      "blocos": [
+       "olecrano-e-apofise-37ee686f",
+       "olecrano-e-apofise-904c5544"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "4521292a72dc9ab83a9323cd8eedb8e2d52c0a5a26eaeadce3adae04bcb30694"
+     }
+    ],
+    "questaoSha256": "aafedbbbc9e51427000f6e6bc6330edfed77148087a9f6c8f8fefdc3794dafca",
+    "comentarioSha256": "532254e47dd48839e3df6458a1dff5e4b09556bcb3d77e9315c97b6d8e7c95bd"
+   }
   },
   "pediatria-1283": {
    "tema": "pediatria",
@@ -70567,8 +70847,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo11 sustenta idades9/14anos,centro bipartido e patela cubital não pseudartrose,mas não descreve se o CORONOIDE tem centro secundário próprio nem sua cronologia,para conferir a alternativaB. Resumo de avaliação do cotovelo9ªed. consultado por busca não preencheu a definição. Falta descrição independente do desenvolvimento do coronoide;sem usar comentário antigo como fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70586,7 +70866,8 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "6099f511b6fcfa598050fa420ab23d2ecd8c3a5d1f8f63d4c367e469af1a24e1"
+   "questaoSha256": "6099f511b6fcfa598050fa420ab23d2ecd8c3a5d1f8f63d4c367e469af1a24e1",
+   "pendencia": "O resumo11 sustenta idades9/14anos,centro bipartido e patela cubital não pseudartrose,mas não descreve se o CORONOIDE tem centro secundário próprio nem sua cronologia,para conferir a alternativaB. Resumo de avaliação do cotovelo9ªed. consultado por busca não preencheu a definição. Falta descrição independente do desenvolvimento do coronoide;sem usar comentário antigo como fonte."
   },
   "pediatria-1284": {
    "tema": "pediatria",
@@ -70596,7 +70877,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70615,7 +70896,30 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "e6328bf45f54111b446398f03a8ea3182d38cd43fdb879a3add193a25f3acc56"
+   "questaoSha256": "e6328bf45f54111b446398f03a8ea3182d38cd43fdb879a3add193a25f3acc56",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Coronoide"
+      ],
+      "blocos": [
+       "coronoide-dc0d7b2a"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "bd3a842559fcbf9ff59be56de2ca806581827c08eba2e63cdedf5e3c0489c546"
+     }
+    ],
+    "questaoSha256": "e6328bf45f54111b446398f03a8ea3182d38cd43fdb879a3add193a25f3acc56",
+    "comentarioSha256": "67a9df42db0bd9b2a030043cfd22f1052348fa61edb96b923a80b90a676919bd"
+   }
   },
   "pediatria-1285": {
    "tema": "pediatria",
@@ -70845,7 +71149,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70862,7 +71166,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "dd4a5e06f4438f0acf1231ab05536d6744ee337f316aa6fd93a15afdb27a9284"
+   "questaoSha256": "dd4a5e06f4438f0acf1231ab05536d6744ee337f316aa6fd93a15afdb27a9284",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Classificação e mecanismos",
+       "Tratamento agudo"
+      ],
+      "blocos": [
+       "classificacao-e-mecanismos-bf9aae38",
+       "tratamento-agudo-35192e58"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "bc865fd3ec2d7a96ea1dfc3cc4aca0eb6af5c08c311a0f8052326d381b614ac2"
+     }
+    ],
+    "questaoSha256": "dd4a5e06f4438f0acf1231ab05536d6744ee337f316aa6fd93a15afdb27a9284",
+    "comentarioSha256": "c0faf379e18222a2a5761c17b9320c298c645945189da6d42835353d8d11962d"
+   }
   },
   "pediatria-1291": {
    "tema": "pediatria",
@@ -70872,7 +71201,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70889,7 +71218,30 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "dbf1f22db84d1638e62b00332763562154f25f9a5395e4ea092d3b183ead1635"
+   "questaoSha256": "dbf1f22db84d1638e62b00332763562154f25f9a5395e4ea092d3b183ead1635",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Tratamento agudo"
+      ],
+      "blocos": [
+       "tratamento-agudo-35192e58"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "2d0da2abf4934a91931e94b17069e136af81984933911d7b06749a30389a2a8e"
+     }
+    ],
+    "questaoSha256": "dbf1f22db84d1638e62b00332763562154f25f9a5395e4ea092d3b183ead1635",
+    "comentarioSha256": "d74b3f42c6b8d9bc2f8faa62a814c0d543e25cf3277cbf9ff0b6e5b910fb9462"
+   }
   },
   "pediatria-1292": {
    "tema": "pediatria",
@@ -70899,7 +71251,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70916,7 +71268,30 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "a5bdb6f5e5b965a3573c5ca4c4c54d891978f303c1617f7ce8001adc04628775"
+   "questaoSha256": "a5bdb6f5e5b965a3573c5ca4c4c54d891978f303c1617f7ce8001adc04628775",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Diagnóstico"
+      ],
+      "blocos": [
+       "diagnostico-7ee8a436"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "6848db48f0d4b277a5bae2644bd0b443930a089e41e7f04de45595459c2adf8d"
+     }
+    ],
+    "questaoSha256": "a5bdb6f5e5b965a3573c5ca4c4c54d891978f303c1617f7ce8001adc04628775",
+    "comentarioSha256": "f926fe08eef924194d33f909e3eb164d43a765c710739b5d0e206576bf89581f"
+   }
   },
   "pediatria-1293": {
    "tema": "pediatria",
@@ -70926,7 +71301,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70943,7 +71318,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "6312512aed3596b5e0b7abf000b8c96cf62744a8d1c7f5345415efc614104b1b"
+   "questaoSha256": "6312512aed3596b5e0b7abf000b8c96cf62744a8d1c7f5345415efc614104b1b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Classificação e mecanismos",
+       "Tratamento agudo"
+      ],
+      "blocos": [
+       "classificacao-e-mecanismos-414cee4f",
+       "classificacao-e-mecanismos-bf9aae38",
+       "tratamento-agudo-35192e58"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "bf27e5da1a431cc1dd0a8f15271eef8f5e255b0f3ac178fd69638b26e9bee894"
+     }
+    ],
+    "questaoSha256": "6312512aed3596b5e0b7abf000b8c96cf62744a8d1c7f5345415efc614104b1b",
+    "comentarioSha256": "e865e3e2cc01dc47b04b9122a7f67efa7b33995fa7b54207391a4f7b9f9626ce"
+   }
   },
   "pediatria-1294": {
    "tema": "pediatria",
@@ -70953,7 +71354,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70970,7 +71371,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "8d6b773d2e362f24e9c9a72adf6f8aa66f0add76d67155f8ef3c76999170aba2"
+   "questaoSha256": "8d6b773d2e362f24e9c9a72adf6f8aa66f0add76d67155f8ef3c76999170aba2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Tratamento agudo",
+       "Complicações e MONTEGGIA crônico"
+      ],
+      "blocos": [
+       "tratamento-agudo-35192e58",
+       "complicacoes-e-monteggia-cronico-15c4cbe6"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "8f8ee92301ff8f915e6f11fd52e10fa69b64ad85cc45b7ae6be709ea0c55a435"
+     }
+    ],
+    "questaoSha256": "8d6b773d2e362f24e9c9a72adf6f8aa66f0add76d67155f8ef3c76999170aba2",
+    "comentarioSha256": "961b1febee233c135c216ea60b801656e54ef75a275f8ee77be821b38dae3709"
+   }
   },
   "pediatria-1295": {
    "tema": "pediatria",
@@ -70980,7 +71406,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70997,7 +71423,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "df8ed2e4c67d96eb422a4c136eeb1968729bc1bbc88c3955a30b7a5c46fa9a81"
+   "questaoSha256": "df8ed2e4c67d96eb422a4c136eeb1968729bc1bbc88c3955a30b7a5c46fa9a81",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Tratamento agudo",
+       "Complicações e MONTEGGIA crônico"
+      ],
+      "blocos": [
+       "tratamento-agudo-35192e58",
+       "complicacoes-e-monteggia-cronico-c7cab5d6"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "ba0613eca0722cc812e334ecdc7dcf6be0dc090271b015cfe34ed5939912916d"
+     }
+    ],
+    "questaoSha256": "df8ed2e4c67d96eb422a4c136eeb1968729bc1bbc88c3955a30b7a5c46fa9a81",
+    "comentarioSha256": "124b7583280e780009c12d3d9fdc59ce8b734309744a181651d5ce033aa96f7f"
+   }
   },
   "pediatria-1296": {
    "tema": "pediatria",
@@ -71007,7 +71458,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71024,7 +71475,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "7c12981fe56a97ce011c967688b7d1fd8d13e130d4846fe625a7b179c9c77be2"
+   "questaoSha256": "7c12981fe56a97ce011c967688b7d1fd8d13e130d4846fe625a7b179c9c77be2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Diagnóstico",
+       "Complicações e MONTEGGIA crônico"
+      ],
+      "blocos": [
+       "diagnostico-7ee8a436",
+       "complicacoes-e-monteggia-cronico-15c4cbe6"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "152182ccde07c32d9e0bf4f11918205ee747e9dc0470031dc6b97e127779d091"
+     }
+    ],
+    "questaoSha256": "7c12981fe56a97ce011c967688b7d1fd8d13e130d4846fe625a7b179c9c77be2",
+    "comentarioSha256": "0cc67a944f179ea1265d29645f01be07018a1e23aa51d7c44414260353d4205b"
+   }
   },
   "pediatria-1297": {
    "tema": "pediatria",
@@ -71034,7 +71510,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71051,7 +71527,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "e420225e3efa0d8848409f854d051ca9c6c645b5440ba0ec9a6905e6a00d356d"
+   "questaoSha256": "e420225e3efa0d8848409f854d051ca9c6c645b5440ba0ec9a6905e6a00d356d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Diagnóstico",
+       "Complicações e MONTEGGIA crônico"
+      ],
+      "blocos": [
+       "diagnostico-7ee8a436",
+       "complicacoes-e-monteggia-cronico-c7cab5d6"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "d85f5861517e1fa4b8f0f6ec9e93babd0335441bb17eb4fddba40ec0d2cff2a5"
+     }
+    ],
+    "questaoSha256": "e420225e3efa0d8848409f854d051ca9c6c645b5440ba0ec9a6905e6a00d356d",
+    "comentarioSha256": "80c942ceb59f004284e6f24d84d8703480013a0dc84148e8198ae4adaf194d8d"
+   }
   },
   "pediatria-1298": {
    "tema": "pediatria",
@@ -71061,7 +71562,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71078,7 +71579,30 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "1f0c6559dc477c6ba733b608af32757299d35c96a6baf6f4b59d763e7cbdc979"
+   "questaoSha256": "1f0c6559dc477c6ba733b608af32757299d35c96a6baf6f4b59d763e7cbdc979",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Complicações e MONTEGGIA crônico"
+      ],
+      "blocos": [
+       "complicacoes-e-monteggia-cronico-c7cab5d6"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "440972a518252a167f7d44c0aafe5f464dae3d625e4d7fb8eecdf057f482b315"
+     }
+    ],
+    "questaoSha256": "1f0c6559dc477c6ba733b608af32757299d35c96a6baf6f4b59d763e7cbdc979",
+    "comentarioSha256": "aa5016d0079f28621a5bb66b0ff41b7d93930572c83979d011093f1621725383"
+   }
   },
   "pediatria-1299": {
    "tema": "pediatria",
@@ -71088,8 +71612,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo12 sustenta porção CENTRAL do tríceps,furo na ulna e força POSTERIOR,mas não descreve explicitamente o percurso EM VOLTA DO COLO DO RÁDIO contido na alternativaD. Falta descrição independente do trajeto completo da reconstrução;nome do ligamento e comentário anterior não substituem conferência anatômica. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -71105,7 +71629,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "87963f79f14b8a61bb715a5eda1705473cdec095fdf713469d24480e3a4d5b4f"
+   "questaoSha256": "87963f79f14b8a61bb715a5eda1705473cdec095fdf713469d24480e3a4d5b4f",
+   "pendencia": "O corpo12 sustenta porção CENTRAL do tríceps,furo na ulna e força POSTERIOR,mas não descreve explicitamente o percurso EM VOLTA DO COLO DO RÁDIO contido na alternativaD. Falta descrição independente do trajeto completo da reconstrução;nome do ligamento e comentário anterior não substituem conferência anatômica. Sem selo."
   },
   "pediatria-1300": {
    "tema": "pediatria",
@@ -71115,7 +71640,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71134,7 +71659,30 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "d6f81583e5108244e5dedb4cd799bb1a1da476bf70ed459c756724d338fdeebf"
+   "questaoSha256": "d6f81583e5108244e5dedb4cd799bb1a1da476bf70ed459c756724d338fdeebf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Fratura da espinha tibial"
+      ],
+      "blocos": [
+       "fratura-da-espinha-tibial-4d91936f"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "8b25fc6c484f315df1c08e51ac7623d6231b00a1dabb7feebc7a91ca3edb92ea"
+     }
+    ],
+    "questaoSha256": "d6f81583e5108244e5dedb4cd799bb1a1da476bf70ed459c756724d338fdeebf",
+    "comentarioSha256": "a56d076b783546237c53d8f528869d6911e934d3dafcb47022b052349a3e9a3c"
+   }
   },
   "pediatria-1301": {
    "tema": "pediatria",
@@ -71144,7 +71692,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71163,7 +71711,31 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "cfefb9758e347a8ed5d0bc88c1ac9d28633b8afe4e26fbdb99135c4018bb6d35"
+   "questaoSha256": "cfefb9758e347a8ed5d0bc88c1ac9d28633b8afe4e26fbdb99135c4018bb6d35",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Fratura da espinha tibial"
+      ],
+      "blocos": [
+       "fratura-da-espinha-tibial-c280bbe9",
+       "fratura-da-espinha-tibial-4d91936f"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "38d8181ee94b4ec5e7508580f6221ae04eac8cd5dd241c3250ba9dfb762ba9f1"
+     }
+    ],
+    "questaoSha256": "cfefb9758e347a8ed5d0bc88c1ac9d28633b8afe4e26fbdb99135c4018bb6d35",
+    "comentarioSha256": "3e472d6e0ece29495d758bbe003f2718fa350cf3a429c9dfabae4f07fc2415f9"
+   }
   },
   "pediatria-1302": {
    "tema": "pediatria",
@@ -71173,8 +71745,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Corpo28 lista corno anterior do menisco medial e intermeniscal e frequências por TIPOS II/III,mas não fornece ranking medial PRIMEIRO seguido intermeniscal,como a alternativaD exige. Não converter ordem de lista em distribuição por estrutura nem confundir 26/65% com ranking. Falta frequência comparativa independente das estruturas interpostas;comentário preservado sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -71192,7 +71764,8 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "47100df06eae1871976b9147b11b92772f1781a64fe36fe0b887369488361278"
+   "questaoSha256": "47100df06eae1871976b9147b11b92772f1781a64fe36fe0b887369488361278",
+   "pendencia": "Corpo28 lista corno anterior do menisco medial e intermeniscal e frequências por TIPOS II/III,mas não fornece ranking medial PRIMEIRO seguido intermeniscal,como a alternativaD exige. Não converter ordem de lista em distribuição por estrutura nem confundir 26/65% com ranking. Falta frequência comparativa independente das estruturas interpostas;comentário preservado sem selo."
   },
   "pediatria-1303": {
    "tema": "pediatria",
@@ -71202,7 +71775,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71221,7 +71794,30 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "a2b8cc1007c775e820945f4ee509497e5628a7949821e3b8770f20cf7e668c92"
+   "questaoSha256": "a2b8cc1007c775e820945f4ee509497e5628a7949821e3b8770f20cf7e668c92",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Fratura da espinha tibial"
+      ],
+      "blocos": [
+       "fratura-da-espinha-tibial-c280bbe9"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "685465300b7438ec4d1800e0961ed11423c55fb9389ca1c96a55e5a7b929bf7d"
+     }
+    ],
+    "questaoSha256": "a2b8cc1007c775e820945f4ee509497e5628a7949821e3b8770f20cf7e668c92",
+    "comentarioSha256": "37bae27d0c9edaaab143617d964525c97190f05a7fb98778ecc40bb2f9844995"
+   }
   },
   "pediatria-1304": {
    "tema": "pediatria",
