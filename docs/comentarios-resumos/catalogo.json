@@ -3,11 +3,11 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 337,
+  "pendente": 309,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 735,
+  "pendente-fonte": 753,
   "pendente-inspecao-imagem": 4,
-  "revisada": 1801
+  "revisada": 1811
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -88,8 +88,8 @@
    "estados": {
     "duplicada": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 117,
-    "revisada": 115
+    "pendente-fonte": 115,
+    "revisada": 117
    }
   },
   "rockwood10-45-fraturas-mao": {
@@ -97,10 +97,10 @@
    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 36,
+    "pendente": 8,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 77,
-    "revisada": 129
+    "pendente-fonte": 97,
+    "revisada": 137
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -269,9 +269,9 @@
    "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
    "estados": {
     "duplicada": 1,
-    "pendente": 30,
-    "pendente-fonte": 8,
-    "revisada": 3
+    "pendente": 29,
+    "pendente-fonte": 7,
+    "revisada": 5
    }
   },
   "rockwoodcriancas10-11-colo-radio-olecrano": {
@@ -25591,7 +25591,7 @@
      }
     ],
     "questaoSha256": "7fa5fc20f018a54d6dfececbe348746db88669e61b4c6dd7457badd5cbea25f1",
-    "comentarioSha256": "d9756158451c4630eb6e0ede10c32a90543ee53e23fa28687a63263a1bfcc302"
+    "comentarioSha256": "6af249859c99c0993192bae6aca60e1f204d564da604309a7a058c9eec7201fd"
    }
   },
   "mao-1797": {
@@ -26031,7 +26031,7 @@
      }
     ],
     "questaoSha256": "12570bd5e4c59cb2ebf0da9c8ba69c1e416e01ffb103772ee81d0ad492714980",
-    "comentarioSha256": "6e15cb356a086c2fa4181ae565509acc4080f38c96cd4b765beae83fffdd6f0e"
+    "comentarioSha256": "b9fd495be4c6b8a8a012880ddd8d476c2d159e38fd7b8f9664262d2ac00ba337"
    }
   },
   "mao-1936": {
@@ -26041,14 +26041,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 diz que pseudartrose metacarpiana é rara e associada a perda óssea ou distração,mas não descreve o protocolo de RESSECÇÃO do foco,ENXERTO e FIXAÇÃO INTERNA da pseudartrose asséptica nem compara esse protocolo à fixação externa ou às condutas para infecção. Falta tratamento independente com todos esses componentes para sustentar C;comentário e gabarito preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "7b61bee673c09f430a3b4f1f43cf5509aa513941af4b9978f4dcfc91aec6dcbe"
+   "questaoSha256": "7b61bee673c09f430a3b4f1f43cf5509aa513941af4b9978f4dcfc91aec6dcbe",
+   "pendencia": "O resumo45 diz que pseudartrose metacarpiana é rara e associada a perda óssea ou distração,mas não descreve o protocolo de RESSECÇÃO do foco,ENXERTO e FIXAÇÃO INTERNA da pseudartrose asséptica nem compara esse protocolo à fixação externa ou às condutas para infecção. Falta tratamento independente com todos esses componentes para sustentar C;comentário e gabarito preservados."
   },
   "mao-1937": {
    "tema": "mao",
@@ -26058,14 +26059,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 descreve placa volar,colaterais,checkreins,banda central e a ruptura da luxação dorsal. Não define a PSEUDOBOTOEIRA nem atribui sua contratura em flexão à retração de placa volar+colaterais,distinguindo-a da botoeira extensora e dos retinaculares nas quatro opções. Falta mecanismo específico da pseudobotoeira;C preservada sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "f9aa88ebd27b6d53cf39f7aa1542643c3bb57a477a964b16d04dea3225fd1b7c"
+   "questaoSha256": "f9aa88ebd27b6d53cf39f7aa1542643c3bb57a477a964b16d04dea3225fd1b7c",
+   "pendencia": "O resumo45 descreve placa volar,colaterais,checkreins,banda central e a ruptura da luxação dorsal. Não define a PSEUDOBOTOEIRA nem atribui sua contratura em flexão à retração de placa volar+colaterais,distinguindo-a da botoeira extensora e dos retinaculares nas quatro opções. Falta mecanismo específico da pseudobotoeira;C preservada sem selo."
   },
   "mao-1944": {
    "tema": "mao",
@@ -26074,14 +26076,38 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "5a64a1c2a817e6567882d1c3a1bc946c3adfff5f28956c1abb6c3d5191749aa6"
+   "questaoSha256": "5a64a1c2a817e6567882d1c3a1bc946c3adfff5f28956c1abb6c3d5191749aa6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "75d3ca0386d22bdef6eb3abd9a1f21eb3a0f2fb1ca31649aaa4f4d002c20bf67"
+     }
+    ],
+    "questaoSha256": "5a64a1c2a817e6567882d1c3a1bc946c3adfff5f28956c1abb6c3d5191749aa6",
+    "comentarioSha256": "0d66db25cc233c656f828df7ba2d1aba496f0dce368056e6613d7473814706cc"
+   }
   },
   "mao-1946": {
    "tema": "mao",
@@ -26274,14 +26300,15 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 aborda fratura da CABEÇA metacarpiana,mas não compara sua frequência por RAIO. O predomínio do indicador na luxação MCF ou do mínimo no colo não prova o indicador como mais fraturado na cabeça. Falta epidemiologia dessa localização por raio;B e comentário intactos.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "dcf4df088189cab678c973829df47af3717942194dda1eabc211285ee027acf8"
+   "questaoSha256": "dcf4df088189cab678c973829df47af3717942194dda1eabc211285ee027acf8",
+   "pendencia": "O resumo45 aborda fratura da CABEÇA metacarpiana,mas não compara sua frequência por RAIO. O predomínio do indicador na luxação MCF ou do mínimo no colo não prova o indicador como mais fraturado na cabeça. Falta epidemiologia dessa localização por raio;B e comentário intactos."
   },
   "mao-2028": {
    "tema": "mao",
@@ -26290,14 +26317,41 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "a0417b43f17949cbdc5d3b11ae0ad5e62436a14b0e87ba74279028b798c4b210"
+   "questaoSha256": "a0417b43f17949cbdc5d3b11ae0ad5e62436a14b0e87ba74279028b798c4b210",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Desvios das falanges e a falange proximal"
+      ],
+      "blocos": [
+       "desvios-das-falanges-e-a-falange-proximal-1db07921",
+       "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+       "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+       "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+       "desvios-das-falanges-e-a-falange-proximal-617152de"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "6910955dbd7a9be3ef461bb6b134c1efc233c43775b5672afd1a76903a674144"
+     }
+    ],
+    "questaoSha256": "a0417b43f17949cbdc5d3b11ae0ad5e62436a14b0e87ba74279028b798c4b210",
+    "comentarioSha256": "d979d8fe81360b297a2cf43f8d2947273e7a85b586d1ed76ad4d080284628e98"
+   }
   },
   "mao-2029": {
    "tema": "mao",
@@ -26307,14 +26361,37 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "6ceb61246ab20e4723272db74737e6083f1bb9e82983309de5489fe13f1b06bf"
+   "questaoSha256": "6ceb61246ab20e4723272db74737e6083f1bb9e82983309de5489fe13f1b06bf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "3d429292e2666d9382ddf45082dc4fbb08308211995c5628fcb91575ffbcebc4"
+     }
+    ],
+    "questaoSha256": "6ceb61246ab20e4723272db74737e6083f1bb9e82983309de5489fe13f1b06bf",
+    "comentarioSha256": "da316eb2aaeac07e31bf944393ea577e4f8019a28095c45a698b5d6599db7095"
+   }
   },
   "mao-2030": {
    "tema": "mao",
@@ -26323,14 +26400,15 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 atribui interposição da placa volar à luxação dorsal complexa dos DEDOS,mas no tópico específico do POLEGAR não compara placa volar,FPL,poliaA1 e fragmento ósseo como bloqueios à redução. O novo resumo infantil08 descreve placa volar na luxação complexa pediátrica;transferir sua primazia para a pergunta geral atribuída aoGreen não resolve a comparação específica de todos os bloqueios do polegar adulto. Falta descrição primária ou resumo específico compatível;A preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "a96beb10f00839c5336ed90b8be5a43e75ea287e0c1055912b6d38acb70251a0"
+   "questaoSha256": "a96beb10f00839c5336ed90b8be5a43e75ea287e0c1055912b6d38acb70251a0",
+   "pendencia": "O resumo45 atribui interposição da placa volar à luxação dorsal complexa dos DEDOS,mas no tópico específico do POLEGAR não compara placa volar,FPL,poliaA1 e fragmento ósseo como bloqueios à redução. O novo resumo infantil08 descreve placa volar na luxação complexa pediátrica;transferir sua primazia para a pergunta geral atribuída aoGreen não resolve a comparação específica de todos os bloqueios do polegar adulto. Falta descrição primária ou resumo específico compatível;A preservada."
   },
   "mao-2035": {
    "tema": "mao",
@@ -26588,14 +26666,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 descreve avulsão do colateral ulnar e reparo/reinserção com âncoras,mas não fornece o LIMITE PERCENTUAL da superfície articular para excisar o fragmento com segurança. Não há comparação10–15/20/25/30%nos resumos45ou08. Falta regra quantitativa independente de ressecção+reinserção;A intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "237ac1678e09e997c7addc5270e5c3cd94ae37df58e4dba6ce4914d7c0fa0b38"
+   "questaoSha256": "237ac1678e09e997c7addc5270e5c3cd94ae37df58e4dba6ce4914d7c0fa0b38",
+   "pendencia": "O corpo45 descreve avulsão do colateral ulnar e reparo/reinserção com âncoras,mas não fornece o LIMITE PERCENTUAL da superfície articular para excisar o fragmento com segurança. Não há comparação10–15/20/25/30%nos resumos45ou08. Falta regra quantitativa independente de ressecção+reinserção;A intacta."
   },
   "mao-2115": {
    "tema": "mao",
@@ -26605,14 +26684,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 apresenta extensões proximais CHECKREIN da placa volar naIFP e sua contenção da hiperextensão. Não demonstra a AUSÊNCIA desses prolongamentos naIFD nem a comparação com placa volar e os dois colaterais oferecidos. A descrição de uma articulação não prova a ausência na outra. Falta anatomia comparativaIFP/IFD independente para B;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "17e6a610c5f6311f8e205782bba4c1d1f69e2b590f6c984570689892d0016ed1"
+   "questaoSha256": "17e6a610c5f6311f8e205782bba4c1d1f69e2b590f6c984570689892d0016ed1",
+   "pendencia": "O corpo45 apresenta extensões proximais CHECKREIN da placa volar naIFP e sua contenção da hiperextensão. Não demonstra a AUSÊNCIA desses prolongamentos naIFD nem a comparação com placa volar e os dois colaterais oferecidos. A descrição de uma articulação não prova a ausência na outra. Falta anatomia comparativaIFP/IFD independente para B;sem selo."
   },
   "mao-2116": {
    "tema": "mao",
@@ -26622,14 +26702,39 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "a5ecec258dbd1e219887e583914c90da889b69a5920471b99773c349da6b25b9"
+   "questaoSha256": "a5ecec258dbd1e219887e583914c90da889b69a5920471b99773c349da6b25b9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-f9f697c5",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-e9541869",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "be291d9cb789f101c0a0eab24d9dc796aa022f63bc718fd492efb092ae864749"
+     }
+    ],
+    "questaoSha256": "a5ecec258dbd1e219887e583914c90da889b69a5920471b99773c349da6b25b9",
+    "comentarioSha256": "1426fe195286b398fba2b3b450d692dce962abc25966bcd9c113322d434774e0"
+   }
   },
   "mao-2124": {
    "tema": "mao",
@@ -26725,14 +26830,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Os corpos45e08 descrevem LEITO UNGUEAL lacerado/interposto naSeymour. Não discriminam matriz GERMINATIVA versus matriz estéril nem localizam qual parcela do leito entra no foco. A nota de treino chama o leito de matriz,mas não é corpo independente que prove a especificidade germinativa da opçãoD. Falta anatomia topográfica independente que sustente essa palavra;comentário anterior bom preservado,sem reetiquetar automaticamente.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "0c6ed344a49fc6e99a62561724b845d31c40cdd329f9f1333bdfbb1b2af84812"
+   "questaoSha256": "0c6ed344a49fc6e99a62561724b845d31c40cdd329f9f1333bdfbb1b2af84812",
+   "pendencia": "Os corpos45e08 descrevem LEITO UNGUEAL lacerado/interposto naSeymour. Não discriminam matriz GERMINATIVA versus matriz estéril nem localizam qual parcela do leito entra no foco. A nota de treino chama o leito de matriz,mas não é corpo independente que prove a especificidade germinativa da opçãoD. Falta anatomia topográfica independente que sustente essa palavra;comentário anterior bom preservado,sem reetiquetar automaticamente."
   },
   "mao-2198": {
    "tema": "mao",
@@ -26741,14 +26847,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 recomenda osteotomia transversa para rotação metacarpiana,mas não indica a METÁFISE DA BASE como local preferencial da osteotomia da consolidação viciosa do METACARPO. A escolha entre base do metacarpo e foco aparece para rotação da FALANGE PROXIMAL,outra lesão. Falta localização operatória específica do metacarpo,comparada a cabeça/colo/foco;D preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "92d14ca3dd87f2fde55d06cc68416d8ae6370d3bf8017f844bd2ed5b1ef2a19d"
+   "questaoSha256": "92d14ca3dd87f2fde55d06cc68416d8ae6370d3bf8017f844bd2ed5b1ef2a19d",
+   "pendencia": "O resumo45 recomenda osteotomia transversa para rotação metacarpiana,mas não indica a METÁFISE DA BASE como local preferencial da osteotomia da consolidação viciosa do METACARPO. A escolha entre base do metacarpo e foco aparece para rotação da FALANGE PROXIMAL,outra lesão. Falta localização operatória específica do metacarpo,comparada a cabeça/colo/foco;D preservada."
   },
   "mao-2199": {
    "tema": "mao",
@@ -26797,14 +26904,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 descreve risco e manejo geral de fraturas expostas da mão,mas não apresenta classificação deSWANSON nem o critério de tratamento APÓS24HORAS para tipoII. GustiloIII e gravidade de partes moles são outra classificação,não substituem o corte temporal solicitado. Falta definição independente dos tipos deSwanson;C intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "607f4482358111078cc0a07de76031d9b0436cf2821578da213541b8da771097"
+   "questaoSha256": "607f4482358111078cc0a07de76031d9b0436cf2821578da213541b8da771097",
+   "pendencia": "O resumo45 descreve risco e manejo geral de fraturas expostas da mão,mas não apresenta classificação deSWANSON nem o critério de tratamento APÓS24HORAS para tipoII. GustiloIII e gravidade de partes moles são outra classificação,não substituem o corte temporal solicitado. Falta definição independente dos tipos deSwanson;C intacta."
   },
   "mao-2201": {
    "tema": "mao",
@@ -26814,14 +26922,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 mantém o fragmento volarulnar doBennett pelo OBLÍQUO ANTERIOR/palmar/beak e distingue estabilizadores primários daCMC,incluindo que o colateral ulnar não é primário. A questão atribuída aoGreen oferece COLATERAL ULNAR como B,sem anterioroblíquo entre as opções. Falta resolver a nomenclatura entre essas estruturas e a possível equivalência usada naquela fonte,além do trajeto do fragmento;não declarar sinônimos por memória nem justificar B com outra estrutura. Gabarito preservado e pendência mantida.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "6f41ad7de0f9fe814ddf61d62f6c685b83ffc5a9253545f8b16c727b88d15f30"
+   "questaoSha256": "6f41ad7de0f9fe814ddf61d62f6c685b83ffc5a9253545f8b16c727b88d15f30",
+   "pendencia": "O resumo45 mantém o fragmento volarulnar doBennett pelo OBLÍQUO ANTERIOR/palmar/beak e distingue estabilizadores primários daCMC,incluindo que o colateral ulnar não é primário. A questão atribuída aoGreen oferece COLATERAL ULNAR como B,sem anterioroblíquo entre as opções. Falta resolver a nomenclatura entre essas estruturas e a possível equivalência usada naquela fonte,além do trajeto do fragmento;não declarar sinônimos por memória nem justificar B com outra estrutura. Gabarito preservado e pendência mantida."
   },
   "mao-2203": {
    "tema": "mao",
@@ -26831,14 +26940,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão exige combinar nome da prega ungueal proximal,polia ANULAR A5 naIFD eCOLATERAL PRÓPRIO. O resumo45 trata leito ungueal,colaterais daIFP e preservação deA2/A4,mas não fornece os três componentes,eponíquio/A5/colateral,com suas localizações comparadas. Falta anatomia independente completa,sem usarA4 por aparecer na abordagem daIFP;A intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b66a0f21d83620b61c99d73318686435c4e99074726a0a614305f1c0887d9187"
+   "questaoSha256": "b66a0f21d83620b61c99d73318686435c4e99074726a0a614305f1c0887d9187",
+   "pendencia": "A questão exige combinar nome da prega ungueal proximal,polia ANULAR A5 naIFD eCOLATERAL PRÓPRIO. O resumo45 trata leito ungueal,colaterais daIFP e preservação deA2/A4,mas não fornece os três componentes,eponíquio/A5/colateral,com suas localizações comparadas. Falta anatomia independente completa,sem usarA4 por aparecer na abordagem daIFP;A intacta."
   },
   "mao-2207": {
    "tema": "mao",
@@ -27161,14 +27271,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O novo resumo infantil08 dá capitato até1ano,hamato4meses,piramidal2ºano,semilunar4º,escafoide/trapézio/trapezoide5º,pisiforme9–10anos. Isso permite rejeitar outros atrasos propostos,mas não prova a JANELA6–8MESES conjunta de capitato+hamato na opçãoC,pois fornece idades diferentes e outra precisão. Falta cronologia com faixa e definição compatíveis para a alternativa inteira;C preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "740c05f12effd6ab3c8d47270febd6716d16e0cc37e2307116a00de4bf4d4283"
+   "questaoSha256": "740c05f12effd6ab3c8d47270febd6716d16e0cc37e2307116a00de4bf4d4283",
+   "pendencia": "O novo resumo infantil08 dá capitato até1ano,hamato4meses,piramidal2ºano,semilunar4º,escafoide/trapézio/trapezoide5º,pisiforme9–10anos. Isso permite rejeitar outros atrasos propostos,mas não prova a JANELA6–8MESES conjunta de capitato+hamato na opçãoC,pois fornece idades diferentes e outra precisão. Falta cronologia com faixa e definição compatíveis para a alternativa inteira;C preservada."
   },
   "mao-2252": {
    "tema": "mao",
@@ -27177,7 +27288,7 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27193,7 +27304,45 @@
     "rockwood10-45-fraturas-mao",
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "06e993a26a137b3d99c0787916805fb59bce2cff86db0c1d3b6a3c9d97f382ad"
+   "questaoSha256": "06e993a26a137b3d99c0787916805fb59bce2cff86db0c1d3b6a3c9d97f382ad",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Falanges"
+      ],
+      "blocos": [
+       "falanges-709a9b01"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "725d217b9e24b618cecffaed4d2f19789a7dbdfadd40245ee21711759a70fd2f"
+     },
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "dfd367d7545fa5db50f5d09e573c98f3fdaae3a3b4ee480e232a64c91751f894"
+     }
+    ],
+    "questaoSha256": "06e993a26a137b3d99c0787916805fb59bce2cff86db0c1d3b6a3c9d97f382ad",
+    "comentarioSha256": "b551e12c06c4eb71705d55e479ce8c118fd7faabddb7c23ef1935acb001a9c04"
+   }
   },
   "mao-2277": {
    "tema": "mao",
@@ -27202,14 +27351,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 detalha luxação DORSAL daMCF,placa volar e laço flexor/lumbrical,mas não atribui bloqueio porJUNCTURAE INTERTENDINEAE à luxação PALMAR daMCF de dedo daBORDA nem comparaMCP/CMC ecentrais/borda. O capítulo infantil08 também não dá esse mecanismo. Falta descrição anatômica e direção específica da interposição;C intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "024aa3ffd2f5975c7153d3aca8f379a7011f13f7f06a31d16e4efc8f4b4ddc2c"
+   "questaoSha256": "024aa3ffd2f5975c7153d3aca8f379a7011f13f7f06a31d16e4efc8f4b4ddc2c",
+   "pendencia": "O resumo45 detalha luxação DORSAL daMCF,placa volar e laço flexor/lumbrical,mas não atribui bloqueio porJUNCTURAE INTERTENDINEAE à luxação PALMAR daMCF de dedo daBORDA nem comparaMCP/CMC ecentrais/borda. O capítulo infantil08 também não dá esse mecanismo. Falta descrição anatômica e direção específica da interposição;C intacta."
   },
   "mao-2288": {
    "tema": "mao",
@@ -27487,7 +27637,7 @@
      }
     ],
     "questaoSha256": "d654b7065692ccd45762fba94329c434ed17d2392551352147ab8d7a7e38c49a",
-    "comentarioSha256": "b8b9eb22f5eda576b176bac496274aaa4d8a9efac51707f29279bb3b8c5e2cde"
+    "comentarioSha256": "891fbe798c91ac1c31330d2535536e6e58f20ffc03e2f358a3019dc7cbacc230"
    }
   },
   "mao-2332": {
@@ -27529,14 +27679,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 aborda fixação de falanges e indicações gerais de fios,parafusos e placas,mas não informa que o autor doGREEN usaFIOSnaGRANDEMAIORIA das diáfises TRANSVERSAS INSTÁVEIS daFALANGEMÉDIA. Uma técnica possível não comprova a preferência/frequência específica daquele autor. Falta descrição independente desse protocolo com localização e traço compatíveis;C preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "3cdec50bb2dc15409f69f05c21b25cd5e1995c14299b1e8366f21994d74a64d1"
+   "questaoSha256": "3cdec50bb2dc15409f69f05c21b25cd5e1995c14299b1e8366f21994d74a64d1",
+   "pendencia": "O corpo45 aborda fixação de falanges e indicações gerais de fios,parafusos e placas,mas não informa que o autor doGREEN usaFIOSnaGRANDEMAIORIA das diáfises TRANSVERSAS INSTÁVEIS daFALANGEMÉDIA. Uma técnica possível não comprova a preferência/frequência específica daquele autor. Falta descrição independente desse protocolo com localização e traço compatíveis;C preservada."
   },
   "mao-2338": {
    "tema": "mao",
@@ -27545,14 +27696,40 @@
    ],
    "prova": "SIMÃO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "f45930cf800ce958155cb59f9b712a7f8ee384c622152fe7f763aedb62273580"
+   "questaoSha256": "f45930cf800ce958155cb59f9b712a7f8ee384c622152fe7f763aedb62273580",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Polegar: ligamento colateral ulnar e lesão de Stener"
+      ],
+      "blocos": [
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "13b4ca36eed30d92dfcc74defcbe5cc765cda24a3ea9d098876adf1d5eef7fc6"
+     }
+    ],
+    "questaoSha256": "f45930cf800ce958155cb59f9b712a7f8ee384c622152fe7f763aedb62273580",
+    "comentarioSha256": "4f117a20a5f7c40c3b7894155a81e5860c034dcfde3fdbd5250f2f4755fb549f"
+   }
   },
   "mao-2339": {
    "tema": "mao",
@@ -27561,14 +27738,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 descreve banda lateral encarcerada na luxação volar rotatória e abordagem aberta,mas não orienta RESSECAR uma banda desfiada nem prova que a banda contralateral isolada mantém extensão intrínseca suficiente. Falta conduta intraoperatória e suficiência funcional dessa ressecção versus reparo/enxerto;A intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "7d02bcaa5fc05b9d0eaca929f5e90d1f4cb481889d7fa39bc1fe5dd59b856518"
+   "questaoSha256": "7d02bcaa5fc05b9d0eaca929f5e90d1f4cb481889d7fa39bc1fe5dd59b856518",
+   "pendencia": "O corpo45 descreve banda lateral encarcerada na luxação volar rotatória e abordagem aberta,mas não orienta RESSECAR uma banda desfiada nem prova que a banda contralateral isolada mantém extensão intrínseca suficiente. Falta conduta intraoperatória e suficiência funcional dessa ressecção versus reparo/enxerto;A intacta."
   },
   "mao-2347": {
    "tema": "mao",
@@ -27577,14 +27755,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 descreve a falange proximal dosDEDOS e limites de angulação associados a pseudogarra. Não fornece o limite20–30° de angulação daFALANGEPROXIMALDOPOLEGAR com déficit de extensão daIF,nem compara vetores dos tenares/EPL e acesso dorsal/volar específico. Não transferir regra daIFPdos dedos para aIFdo polegar. Falta descrição própria da lesão;D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "645b581d52069e32ca4a4946aee7853580ff138766184c5e0ccc362a9264d280"
+   "questaoSha256": "645b581d52069e32ca4a4946aee7853580ff138766184c5e0ccc362a9264d280",
+   "pendencia": "O corpo45 descreve a falange proximal dosDEDOS e limites de angulação associados a pseudogarra. Não fornece o limite20–30° de angulação daFALANGEPROXIMALDOPOLEGAR com déficit de extensão daIF,nem compara vetores dos tenares/EPL e acesso dorsal/volar específico. Não transferir regra daIFPdos dedos para aIFdo polegar. Falta descrição própria da lesão;D intacta."
   },
   "mao-2354": {
    "tema": "mao",
@@ -27594,14 +27773,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 associa hematoma/lesão ungueal a fratura distal e recomenda radiografia,mas não quantifica50%de fraturas entre TODASas lesões doLEITOUNGUEAL nem o denominador dessa estatística. O novo resumo infantil08 também não dá essa prevalência. Falta frequência independente compatível para comparar30/50/70/90%;C preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "7bc1822c1804b630ad6f7e51db025c7069afd71594ee672aecc2a2cb02381508"
+   "questaoSha256": "7bc1822c1804b630ad6f7e51db025c7069afd71594ee672aecc2a2cb02381508",
+   "pendencia": "O resumo45 associa hematoma/lesão ungueal a fratura distal e recomenda radiografia,mas não quantifica50%de fraturas entre TODASas lesões doLEITOUNGUEAL nem o denominador dessa estatística. O novo resumo infantil08 também não dá essa prevalência. Falta frequência independente compatível para comparar30/50/70/90%;C preservada."
   },
   "mao-2384": {
    "tema": "mao",
@@ -27627,14 +27807,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 dá ápice dorsal metacarpiano e o vetor dosINTERÓSSEOSnaFALANGEPROXIMAL,mas não demonstra o momento flexor desses músculos naDIÁFISE TRANSVERSA doMETACARPO. São segmentos e deformidades diferentes;não deduzir a força do metacarpo pelo mecanismo da falange. Falta biomecânica independente comparando interósseos,lumbricais,FDS eFDP;D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "91886b6ae28d3f0bf8fe5ed5ff0ba90fdbdb98aea42bb1310ea4bc4e363304b8"
+   "questaoSha256": "91886b6ae28d3f0bf8fe5ed5ff0ba90fdbdb98aea42bb1310ea4bc4e363304b8",
+   "pendencia": "O corpo45 dá ápice dorsal metacarpiano e o vetor dosINTERÓSSEOSnaFALANGEPROXIMAL,mas não demonstra o momento flexor desses músculos naDIÁFISE TRANSVERSA doMETACARPO. São segmentos e deformidades diferentes;não deduzir a força do metacarpo pelo mecanismo da falange. Falta biomecânica independente comparando interósseos,lumbricais,FDS eFDP;D intacta."
   },
   "mao-2389": {
    "tema": "mao",
@@ -27643,8 +27824,8 @@
    ],
    "prova": "SIMÃO",
    "ano": 2022,
-   "estado": "pendente-fonte",
-   "motivo": "O corpo44 sustenta imobilização de fraturas da criança e das distais sem desvio, mas não compara a FREQUÊNCIA de polo distal versus cintura especificamente na CRIANÇA. A predominância geral da cintura no capítulo de adultos não pode ser transferida para a população pediátrica para escolher C/D. Falta distribuição pediátrica por localização; D intacta.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -27660,7 +27841,29 @@
     "rockwoodcriancas10-08-mao-carpo"
    ],
    "questaoSha256": "33788ba17a838ad8e14e61e90b1315467c4136c746dd54b8b8408484449e59f1",
-   "pendencia": "O corpo44 sustenta imobilização de fraturas da criança e das distais sem desvio, mas não compara a FREQUÊNCIA de polo distal versus cintura especificamente na CRIANÇA. A predominância geral da cintura no capítulo de adultos não pode ser transferida para a população pediátrica para escolher C/D. Falta distribuição pediátrica por localização; D intacta."
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Carpo"
+      ],
+      "blocos": [
+       "carpo-771401f1"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "f199b305fd7fb202dd748c50e598bd5dcb030e9f975049e4acb7f320549c1a73"
+     }
+    ],
+    "questaoSha256": "33788ba17a838ad8e14e61e90b1315467c4136c746dd54b8b8408484449e59f1",
+    "comentarioSha256": "ba2164a1d7116619aafb1106655eed0a8d296a9b98535432abacced34d187304"
+   }
   },
   "mao-2390": {
    "tema": "mao",
@@ -27669,14 +27872,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 descreve tratamento do colateralRADIALdo polegar e diferencia sua aponeurose,mas não define aPRONAÇÃOda falange após ruptura completa desse ligamento. A função doLCUou a posição de reparo não prova essa deformidade rotacional doLCR. Falta descrição cinemática independente para separar as quatro direções;C preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "101f80dc6311d9803b98d6c0cbcf735f3984448b77d58e573d7c331cb45f0ed6"
+   "questaoSha256": "101f80dc6311d9803b98d6c0cbcf735f3984448b77d58e573d7c331cb45f0ed6",
+   "pendencia": "O corpo45 descreve tratamento do colateralRADIALdo polegar e diferencia sua aponeurose,mas não define aPRONAÇÃOda falange após ruptura completa desse ligamento. A função doLCUou a posição de reparo não prova essa deformidade rotacional doLCR. Falta descrição cinemática independente para separar as quatro direções;C preservada."
   },
   "mao-2394": {
    "tema": "mao",
@@ -27686,15 +27890,37 @@
    ],
    "prova": "SIMÃO",
    "ano": 2022,
-   "estado": "pendente-fonte",
-   "motivo": "O resumo44 descreve anatomia dos ossos, não a ORDEM/IDADE DE OSSIFICAÇÃO carpal que permite identificar o pisiforme como último. Busca nos resumos publicados não encontrou a comparação de surgimento de pisiforme, escafoide, semilunar e capitato. Falta cronologia pediátrica independente; D preservada.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
    "questaoSha256": "54eb04c98851d3306a08539ecac983e1a4640ed48ba062d5d4f4c98d1102935c",
-   "pendencia": "O resumo44 descreve anatomia dos ossos, não a ORDEM/IDADE DE OSSIFICAÇÃO carpal que permite identificar o pisiforme como último. Busca nos resumos publicados não encontrou a comparação de surgimento de pisiforme, escafoide, semilunar e capitato. Falta cronologia pediátrica independente; D preservada."
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Anatomia, exame e remodelação"
+      ],
+      "blocos": [
+       "anatomia-exame-e-remodelacao-06a7a2e4"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+     }
+    ],
+    "questaoSha256": "54eb04c98851d3306a08539ecac983e1a4640ed48ba062d5d4f4c98d1102935c",
+    "comentarioSha256": "92d80adee298a6bd534be00fcf801131038d687b053407faba830f37a6bffa4b"
+   }
   },
   "mao-2397": {
    "tema": "mao",
@@ -27720,14 +27946,40 @@
    ],
    "prova": "SIMÃO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "8dc1633abe29902801e1c2155a2b5030d44f94f9b407e33e5a4ed32bd316657e"
+   "questaoSha256": "8dc1633abe29902801e1c2155a2b5030d44f94f9b407e33e5a4ed32bd316657e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação",
+       "O que vale para a mão inteira"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+       "o-que-vale-para-a-mao-inteira-bbc85ceb"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b5d8fd4777c7d2bdfafa0d97bcc0d547553c8f71bba8a85b470bda5cfff0a961"
+     }
+    ],
+    "questaoSha256": "8dc1633abe29902801e1c2155a2b5030d44f94f9b407e33e5a4ed32bd316657e",
+    "comentarioSha256": "67e10c1aed87505977e07302233fd33f3a0e8bd5081ce17e90860afacf5b64c9"
+   }
   },
   "mao-2418": {
    "tema": "mao",
@@ -27783,14 +28035,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 descreve fixadores/ligamentotaxia em fraturas articulares e menciona pseudartrose metacarpiana,mas não fornece a indicação deFIXADOREXTERNOdefinitivo paraPSEUDARTROSEINFECTADAdometacarpo comRESSECÇÃOÓSSEA. Não transportar a indicação de fixador daIFPpara foco infectado metacarpiano. Falta manejo específico com perda óssea/infecção;B intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "2f1fc876f606548cdfe6cfed49ce6e1a0484d6bdb7a68cc15a46c21b9d3513a5"
+   "questaoSha256": "2f1fc876f606548cdfe6cfed49ce6e1a0484d6bdb7a68cc15a46c21b9d3513a5",
+   "pendencia": "O corpo45 descreve fixadores/ligamentotaxia em fraturas articulares e menciona pseudartrose metacarpiana,mas não fornece a indicação deFIXADOREXTERNOdefinitivo paraPSEUDARTROSEINFECTADAdometacarpo comRESSECÇÃOÓSSEA. Não transportar a indicação de fixador daIFPpara foco infectado metacarpiano. Falta manejo específico com perda óssea/infecção;B intacta."
   },
   "mao-2433": {
    "tema": "mao",
@@ -27834,14 +28087,39 @@
    ],
    "prova": "SIMÃO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b263d8f7164acba82e38ef64f41836ec8a0dc5dad548db57e4819b424a96ec3c"
+   "questaoSha256": "b263d8f7164acba82e38ef64f41836ec8a0dc5dad548db57e4819b424a96ec3c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+      ],
+      "blocos": [
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "e846521301e8546458c6e8522ecff9750df1b1c2e7dc43ef0181094fdc7b52b9"
+     }
+    ],
+    "questaoSha256": "b263d8f7164acba82e38ef64f41836ec8a0dc5dad548db57e4819b424a96ec3c",
+    "comentarioSha256": "5aedd86eef1e86d17223694f261537b0d219a8bb8293f411b67f209a6e726de1"
+   }
   },
   "mao-2460": {
    "tema": "mao",
