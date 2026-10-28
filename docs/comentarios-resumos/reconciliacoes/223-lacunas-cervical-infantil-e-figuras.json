@@ -1,0 +1,110 @@
+[
+  {
+    "id": "pediatria-0288",
+    "questaoSha256": "7c4ac1062a4bc6859401f7c801b20830c221050d202bdf9cf982a9f04f3cc004",
+    "comentarioAnteriorSha256": "d3de758fc5f62a60d9e9eac8c4db26531dcb30a3737080a6ad886603ada6207a",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      }
+    ],
+    "imagensInspecionadas": [
+      "pediatria/pediatria-0288-1.jpeg"
+    ],
+    "pendencia": "Figura aberta: desenho lateral do pescoço com mastoide e esternocleidomastoideo,estrutura amarela apontada superiormente. O resumo21 não descreve o trajeto do NERVO ACESSÓRIO junto ao esternocleidomastoideo nem compara IV(troclear),V(trigêmeo) eXII(hipoglosso) nessa identificação. A menção ao hipoglosso no côndilo não supre a anatomia superficial doXI. Falta anatomia independente dos nervos e da estrutura assinalada; gabaritoC preservado sem comentário novo.",
+    "estadoAnterior": "pendente-inspecao-imagem",
+    "inspecaoVisual": {
+      "id": "pediatria-0288",
+      "questaoSha256": "7c4ac1062a4bc6859401f7c801b20830c221050d202bdf9cf982a9f04f3cc004",
+      "comentarioAnteriorSha256": "d3de758fc5f62a60d9e9eac8c4db26531dcb30a3737080a6ad886603ada6207a",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0288-1.jpeg"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0288-1.jpeg": "8d337f53be46dd280667401f3baae918d031a036985636dcea350d19bc98b136"
+      },
+      "observacaoVisual": "Desenho do pescoço com mastoide e esternocleidomastoideo nomeados, estrutura amarela no trajeto junto ao músculo e seta amarela superior. A figura não escreve o nome do nervo."
+    }
+  },
+  {
+    "id": "pediatria-0361",
+    "questaoSha256": "671a418c5e78cfff5018f5247adf3ecc9d940c020c48c4568752fafa92dc784c",
+    "comentarioAnteriorSha256": "85db6677deea09ef10e784c57462925441527a01fd6c61f9cf4a59bdb08fdab1",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871"
+      }
+    ],
+    "imagensInspecionadas": [
+      "pediatria/pediatria-0361-1.jpeg"
+    ],
+    "pendencia": "Colagem aberta e idades conferidas(I3anos,II9meses,III5anos,IV4meses). O resumo07 fundamenta suspeita de abuso e alguns padrões,mas não fornece o mapeamento INDIVIDUAL dos quatro traços aos mecanismos TORÇÃO,COMPRESSÃO ANTEROPOSTERIOR,QUEDA DA PRÓPRIA ALTURA eTORÇÃO COM COMPRESSÃO exigido para o pareamento completo. As alternativas no acervo também trazem os esquemas I–IV concatenados no textoD;preservar OCR/gabaritoB sem inventar normalização ou correlação. Falta descrição biomecânica/radiográfica independente para toda associação;sem selo.",
+    "estadoAnterior": "pendente-inspecao-imagem",
+    "inspecaoVisual": {
+      "id": "pediatria-0361",
+      "questaoSha256": "671a418c5e78cfff5018f5247adf3ecc9d940c020c48c4568752fafa92dc784c",
+      "comentarioAnteriorSha256": "85db6677deea09ef10e784c57462925441527a01fd6c61f9cf4a59bdb08fdab1",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0361-1.jpeg"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0361-1.jpeg": "b11bb1418ce5059744805048e849adbf115fbabdb65422b6566970e7beb7b636"
+      },
+      "observacaoVisual": "Colagem de quatro radiografias, numeradas I–IV com idades 3 anos,9 meses,5 anos e4 meses;antebraço,tórax e duas imagens do cotovelo. Sem rótulos de mecanismo na própria figura."
+    }
+  },
+  {
+    "id": "pediatria-0877",
+    "questaoSha256": "6ecda702e37e986f3e61a693d4c22f9df32b0dcba159a7fea139f3635b25f68d",
+    "comentarioAnteriorSha256": "79e4fc793f05e3af35f663c62a9389c134f381a5c6b4635667c8ba15e5b0a8f7",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-23-pelve-acetabulo",
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+      },
+      {
+        "id": "rockwoodcriancas10-24-quadril",
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+      }
+    ],
+    "imagensInspecionadas": [
+      "pediatria/pediatria-0877-1.png"
+    ],
+    "pendencia": "Fotografia aberta: nádegas e membros inferiores do lactente com pregas assimétricas. Os resumos23/24 tratam trauma da pelve/quadril,mas não definem as manobras deBARLOW(luxável) eORTOLANI(luxado),nem THOMAS,GALEAZZI eHART para conferir as alternativas de displasia do desenvolvimento. A fotografia não descreve nem demonstra essas manobras. Falta exame independente daDDQ e diferenciação das manobras;gabaritoA e comentário anterior preservados,sem selo.",
+    "estadoAnterior": "pendente-inspecao-imagem",
+    "inspecaoVisual": {
+      "id": "pediatria-0877",
+      "questaoSha256": "6ecda702e37e986f3e61a693d4c22f9df32b0dcba159a7fea139f3635b25f68d",
+      "comentarioAnteriorSha256": "79e4fc793f05e3af35f663c62a9389c134f381a5c6b4635667c8ba15e5b0a8f7",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0877-1.png"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0877-1.png": "6701bea8d001b4b6326eb0c3a4f6b4034b01b323ba7f152976245f40a23ca3a7"
+      },
+      "observacaoVisual": "Fotografia posterior de nádegas e membros inferiores do lactente,com pregas assimétricas;imagem clínica,sem descrição das manobras Barlow/Ortolani."
+    }
+  },
+  {
+    "id": "pediatria-1247",
+    "questaoSha256": "e262f2114f8c5bf96566c165c37b95e7d4b185b1a06daae6c0ebefeeb177a40e",
+    "comentarioAnteriorSha256": "14ec82db6e4b3e5c616f52bad30f46ecb098066d6203fb9be7c8d97d7a4ad7ce",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "O resumo21 sustenta hiperextensão com carga axial,investigação de maus-tratos e imobilização8–12semanas nas estáveis. Descreve a espondilólise congênita como falha simétrica,lisa eSEM EDEMA,mas não demonstra o valor diagnóstico da combinação COM EDEMA PRÉ-VERTEBRAL da alternativaC,nem que ela CONFIRME fratura. A ausência de edema na variante não prova automaticamente a recíproca diagnóstica. Falta critério independente para esse diferencial radiográfico completo;comentário e gabaritoB preservados,sem selo.",
+    "estadoAnterior": "pendente"
+  }
+]

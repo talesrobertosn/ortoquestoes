@@ -1,0 +1,824 @@
+{
+  "base": "ab65bf72108c7ac4af382e5d6190e0bbfee634b6",
+  "lotes": {
+    "223": {
+      "revisadas": [
+        "pediatria-0915",
+        "pediatria-1243",
+        "pediatria-1244",
+        "pediatria-1245",
+        "pediatria-1246",
+        "pediatria-1248"
+      ],
+      "lacunas": [
+        "pediatria-0288",
+        "pediatria-0361",
+        "pediatria-0877",
+        "pediatria-1247"
+      ]
+    },
+    "224": {
+      "revisadas": [
+        "pediatria-1249",
+        "pediatria-1250",
+        "pediatria-1251",
+        "pediatria-1253",
+        "pediatria-1254",
+        "pediatria-1255",
+        "pediatria-1257",
+        "pediatria-1258"
+      ],
+      "lacunas": [
+        "pediatria-1252",
+        "pediatria-1256"
+      ]
+    },
+    "225": {
+      "revisadas": [
+        "pediatria-1259",
+        "pediatria-1260",
+        "pediatria-1262",
+        "pediatria-1263",
+        "pediatria-1264",
+        "pediatria-1265",
+        "pediatria-1266",
+        "pediatria-1267",
+        "pediatria-1268"
+      ],
+      "lacunas": [
+        "pediatria-1261"
+      ]
+    }
+  },
+  "leituras": {
+    "rockwood10-48-coluna-cervical": {
+      "sha256Bytes": "5dd0f3ba1527a945ee8dff3c97eecbce4e95ae262e07df4da77594c4101244ba",
+      "linhas": 787,
+      "leituraInteira": true,
+      "trechos": "1–210,211–420,421–600,601–787;270–345 recuperado separadamente após truncamento na segunda saída."
+    },
+    "rockwoodcriancas10-21-coluna-cervical": {
+      "sha256Bytes": "980864b664c75234f6579503daa0c2c46b1dde22647327185ac770151244f8d1",
+      "linhas": 118,
+      "leituraInteira": true
+    },
+    "rockwoodcriancas10-22-coluna-toracolombar": {
+      "sha256Bytes": "a0f61ea6048ea5f68b7194f03cc40bb3ead4f96b8dbe75fcd00bea0ea31e33ae",
+      "linhas": 97,
+      "leituraInteira": true
+    }
+  },
+  "leituraComplementar": "19/20 já integralmente lidos e hashes preservados;07/23/24 consultados apenas para delimitar lacunas. Adulto48 somente definição morfológica SLIC em1251,sem transpor conduta adulta. Notas questoes e comentários antigos não usados como prova.",
+  "referenciasHistoricas": {
+    "pediatria-0915": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Distal clavicular physeal injury. https://pubmed.ncbi.nlm.nih.gov/6467730/",
+        "Traumatic pseudodislocation of the acromioclavicular joint in children. A fifteen year review. https://pubmed.ncbi.nlm.nih.gov/1781505/"
+      ],
+      "comentarioAnteriorSha256": "e9fb8fe69e3af8aac62fc6212dbb4ed7ba7dbe204d5037a17108b24235e991c0"
+    },
+    "pediatria-1243": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Radiographic Clearance of the Cervical Spine in the Trauma Setting e Imaging of Cervical Spine Injury"
+      ],
+      "comentarioAnteriorSha256": "f04982eec23570e8c2db972f9b0e9c5fabcbd63c6441076127b3f4a4bac324f6"
+    },
+    "pediatria-1244": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Radiographic Evaluation of the Spine by Level (Atlanto-Occipital Joint, Fig. 21-2) e Imaging for Atlanto-Occipital Instability"
+      ],
+      "comentarioAnteriorSha256": "fc6ca0adebceb0dad5aa55374720a9775dc77433a4baac4d81e2f70efbf678b6"
+    },
+    "pediatria-1245": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Treatment Options for Atlanto-Occipital Instability (Fig. 21-7)"
+      ],
+      "comentarioAnteriorSha256": "14e72519565f7a35d9f03199960e906e7f21d19e5fd6e7e595d8633b31848862"
+    },
+    "pediatria-1246": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Assessment, Classification e Treatment Options for Fractures of the Atlas"
+      ],
+      "comentarioAnteriorSha256": "1ffcc2e1846f5b226cc20393fe8d39b08dd8f78e1dea23e60eb740c483703ba3"
+    },
+    "pediatria-1248": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Odontoid Fracture e Classification of Odontoid Fracture (Tabela 21-1)"
+      ],
+      "comentarioAnteriorSha256": "8aca3ea39036f3bd25a8cef7edfede0a6139af39cecfdad2c5066692156e65dd"
+    },
+    "pediatria-0288": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. Guanabara Koogan. Pescoço.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de torcicolo muscular congênito."
+      ],
+      "comentarioAnteriorSha256": "d3de758fc5f62a60d9e9eac8c4db26531dcb30a3737080a6ad886603ada6207a"
+    },
+    "pediatria-0361": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de maus-tratos na infância.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de maus-tratos."
+      ],
+      "comentarioAnteriorSha256": "85db6677deea09ef10e784c57462925441527a01fd6c61f9cf4a59bdb08fdab1"
+    },
+    "pediatria-0877": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Barlow TG. Early diagnosis and treatment of congenital dislocation of the hip. J Bone Joint Surg Br. 1962;44-B(2):292-301.",
+        "Weinstein SL, Mubarak SJ, Wenger DR. Developmental hip dysplasia and dislocation: Part I. J Bone Joint Surg Am. 2003;85(9):1824-1832."
+      ],
+      "comentarioAnteriorSha256": "79e4fc793f05e3af35f663c62a9389c134f381a5c6b4635667c8ba15e5b0a8f7"
+    },
+    "pediatria-1247": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Hangman's Fracture (Fig. 21-12)"
+      ],
+      "comentarioAnteriorSha256": "14ec82db6e4b3e5c616f52bad30f46ecb098066d6203fb9be7c8d97d7a4ad7ce"
+    },
+    "pediatria-1249": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Compression Fracture e Burst Fracture (Figs. 21-14 e 21-15)"
+      ],
+      "comentarioAnteriorSha256": "e96e990830fd0af1cc9a028accbedf75e466887f43e876e385c430da2891b864"
+    },
+    "pediatria-1250": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Imaging of Cervical Spine Injury e Odontoid Fracture (Tabela 21-2)"
+      ],
+      "comentarioAnteriorSha256": "8cf295e718eecd43b73a9f24286ae2482e238b9f5d24b0c7afbb7888b828a943"
+    },
+    "pediatria-1251": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Classification of Posterior Ligamentous Disruption (Tabela 21-4)"
+      ],
+      "comentarioAnteriorSha256": "4fe00607e587d5d5df18c052638c3056ecbe71f592f824fb365dbdc44c958347"
+    },
+    "pediatria-1253": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Nonoperative Treatment of Cervical Spine Injury (Methylprednisolone)"
+      ],
+      "comentarioAnteriorSha256": "69fc6e2e38054a2b91a5d31b0f77e63d893e811a1845940bf21e4349bcb450bc"
+    },
+    "pediatria-1254": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Mechanism of Injury for Cervical Spine Injury"
+      ],
+      "comentarioAnteriorSha256": "5a20c2e84fde634a1133038c63522f0464e9d7faf65c27516cd4998a97d851fc"
+    },
+    "pediatria-1255": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Mechanisms of Injury e Injuries Associated With Thoracolumbar Spine Fractures (Figs. 22-2 a 22-4)"
+      ],
+      "comentarioAnteriorSha256": "389c3ffe0d6c7588af5c46a989d01c80bbeff9959d787dc6c70e5b1f1d854fea"
+    },
+    "pediatria-1257": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Mechanisms of Injury e Classification of Thoracolumbar Spine Fractures (Figs. 22-1 e 22-20)"
+      ],
+      "comentarioAnteriorSha256": "844003803499b94421f92fdbe75950457edb3e857ce78768faf10b2adb13a0dd"
+    },
+    "pediatria-1258": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Compression Fractures e Authors' Preferred Treatment (Compression Fractures, Algoritmo 22-1)"
+      ],
+      "comentarioAnteriorSha256": "e3336088df519108c275a51011bc65ece5eacbef357476647c4ca71552901bf7"
+    },
+    "pediatria-1252": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Nonoperative Treatment of Cervical Spine Injury (Halo Orthoses, Fig. 21-5)"
+      ],
+      "comentarioAnteriorSha256": "9eac07942ddc5068cf71df419fee56c21991f5874537f4f00b153ca8606d6b00"
+    },
+    "pediatria-1256": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Classification of Thoracolumbar Spine Fractures (Figs. 22-11 e 22-12)"
+      ],
+      "comentarioAnteriorSha256": "c0c5614163f6819bb6d329ab08f7352e1c83576126f45f2e07fef56ffb1484fb"
+    },
+    "pediatria-1259": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Injuries Associated With Thoracolumbar Spine Fractures (SCIWORA)"
+      ],
+      "comentarioAnteriorSha256": "0def9881489043d09c2dfe9a53f5b5a16fc05af14676ada255b0988fae8ee6a3"
+    },
+    "pediatria-1260": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Classification of Thoracolumbar Spine Fractures (TLICS)"
+      ],
+      "comentarioAnteriorSha256": "261a06f45de6207e084d006048280c5831db6574ffc82473ffbd139d73c9c888"
+    },
+    "pediatria-1262": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Outcome Measures for Thoracolumbar Spine Fractures (Fig. 22-14)"
+      ],
+      "comentarioAnteriorSha256": "dc37420e789444ee2d832049ba44ad16d0140fcf111dc8c3946176069f8e2eb2"
+    },
+    "pediatria-1263": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Special Fractures (End Plate Fractures, Fig. 22-22)"
+      ],
+      "comentarioAnteriorSha256": "4eedb61c9fdb5103f8d9dd959d0c473355f9f6672823c253ea03ad75d46eb289"
+    },
+    "pediatria-1264": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Flexion-Distraction Injuries (Chance Fractures) e Authors' Preferred Treatment (Flexion-Distraction Injuries)"
+      ],
+      "comentarioAnteriorSha256": "db5b9986f3967969c770a618f0c7f603e7a460ea060c14172f2404c31cdbe537"
+    },
+    "pediatria-1265": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Fracture-Dislocations e Authors' Preferred Treatment (Fracture-Dislocations)"
+      ],
+      "comentarioAnteriorSha256": "31f420a19b759a00a2e2485b0db6ead65bdc8d4e5c1e892b683bb58863600cac"
+    },
+    "pediatria-1266": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Injuries Associated, Signs and Symptoms e Imaging and Other Diagnostic Studies for Thoracolumbar Spine Fractures"
+      ],
+      "comentarioAnteriorSha256": "e660719d1ffd104cf7c1fa9f0b8f97d2f21976cceb307b09ce79e7697821039c"
+    },
+    "pediatria-1267": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Special Fractures (Facet Fractures, Figs. 22-23 e 22-24)"
+      ],
+      "comentarioAnteriorSha256": "5bea8bb0fd95f71087069d60399540be4de216093d65a64f839251e7ca938d4d"
+    },
+    "pediatria-1268": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Authors' Preferred Treatment (Steroid Treatment)"
+      ],
+      "comentarioAnteriorSha256": "44c0d03a07bec549a76670a6ee0449646f18f78b939f4a31e80a2994721dab8d"
+    },
+    "pediatria-1261": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Burst Fractures e Authors' Preferred Treatment (Burst Fractures)"
+      ],
+      "comentarioAnteriorSha256": "5726c777b39b89187473c9f575e1dac4c5d2f2ec07b652f0ced2f46f5177eddb"
+    }
+  },
+  "motivosCriacao": {
+    "pediatria-1243": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O NEXUS e o papel da tomografia no grave são a base da liberação cervical, e a criança acordada sem nenhum critério é o caso típico de liberação clínica.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O NEXUS e o papel da tomografia no grave são a base da liberação cervical, e a criança acordada sem nenhum critério é o caso típico de liberação clínica."
+    },
+    "pediatria-1244": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-1080"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do ENARE 2023 (`pediatria-1080`), que perguntou um método auxiliar no diagnóstico radiográfico da luxação occipitocervical na criança e deu como gabarito a razão de POWERS. O capítulo considera a razão de POWERS ultrapassada na criança e usa o CCI. Resolva a oficial sabendo dessa divergência.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do ENARE 2023 (`pediatria-1080`), que perguntou um método auxiliar no diagnóstico radiográfico da luxação occipitocervical na criança e deu como gabarito a razão de POWERS. O capítulo considera a razão de POWERS ultrapassada na criança e usa o CCI. Resolva a oficial sabendo dessa divergência."
+    },
+    "pediatria-1245": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O tratamento cirúrgico da luxação atlanto-occipital, e o que não fazer (O-C1 isolada, halo sozinho), completam a pergunta de diagnóstico.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O tratamento cirúrgico da luxação atlanto-occipital, e o que não fazer (O-C1 isolada, halo sozinho), completam a pergunta de diagnóstico."
+    },
+    "pediatria-1246": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0770"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2009 (`pediatria-0770`), que perguntou qual lesão de ligamento produz instabilidade C1-C2 na fratura de JEFFERSON da criança (o transverso; a oficial está sem gabarito, e o capítulo sustenta essa resposta). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2009 (`pediatria-0770`), que perguntou qual lesão de ligamento produz instabilidade C1-C2 na fratura de JEFFERSON da criança (o transverso; a oficial está sem gabarito, e o capítulo sustenta essa resposta). Depois, faça a oficial."
+    },
+    "pediatria-1248": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0605"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2016 (`pediatria-0605`), que perguntou o tipo de SALTER-HARRIS da fratura do odontoide na criança (tipo I). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2016 (`pediatria-0605`), que perguntou o tipo de SALTER-HARRIS da fratura do odontoide na criança (tipo I). Depois, faça a oficial."
+    },
+    "pediatria-1249": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0576"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2023 (`pediatria-0576`), que perguntou o que a carga axial produz na lesão cervical baixa da criança (fratura por explosão). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2023 (`pediatria-0576`), que perguntou o que a carga axial produz na lesão cervical baixa da criança (fratura por explosão). Depois, faça a oficial."
+    },
+    "pediatria-1250": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0638"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2019 (`pediatria-0638`), que perguntou em que nível a ossificação incompleta mais simula uma fratura por compressão na cervical baixa (C3). O capítulo cita a cunha anterior normal do corpo vertebral da criança, sem apontar o nível.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2019 (`pediatria-0638`), que perguntou em que nível a ossificação incompleta mais simula uma fratura por compressão na cervical baixa (C3). O capítulo cita a cunha anterior normal do corpo vertebral da criança, sem apontar o nível."
+    },
+    "pediatria-1251": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A soma da SLIC é a forma mais comum de cobrar a classificação.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A soma da SLIC permite comparar os domínios e praticar a classificação.",
+      "correcaoConferencia": "Motivo específico de projeção preservado; retirada comparação de frequência de cobrança não demonstrada."
+    },
+    "pediatria-1253": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A mudança de conduta com o corticoide é um tema recorrente em provas de coluna, e o capítulo traz o dado pediátrico.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. Comparar opção e obrigação no uso do corticoide é o motivo da projeção, com os dados pediátricos do capítulo.",
+      "correcaoConferencia": "Motivo específico de projeção preservado; retirada comparação de frequência de cobrança não demonstrada."
+    },
+    "pediatria-1254": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A sequência de mecanismos por idade, com o detalhe do parto pélvico e cefálico, é o tipo de dado que a prova transforma em alternativa.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A sequência de mecanismos por idade, com o detalhe do parto pélvico e cefálico, é o tipo de dado que a prova transforma em alternativa."
+    },
+    "pediatria-1255": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A lesão do cinto é a lesão toracolombar mais característica da criança, e a associação com o abdome é o que mais se cobra.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O mecanismo do cinto e sua associação com lesão abdominal permitem comparar a fratura e os cuidados que não podem ser separados.",
+      "correcaoConferencia": "Motivo específico de projeção preservado; retirada comparação de frequência de cobrança não demonstrada."
+    },
+    "pediatria-1257": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A ligação entre lesão da coluna do lactente e maus-tratos é um ponto de segurança que a prova costuma cobrar.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A ligação entre lesão da coluna do lactente e maus-tratos é um ponto de segurança útil na avaliação de um caso clínico.",
+      "correcaoConferencia": "Motivo específico de projeção preservado; retirada comparação de frequência de cobrança não demonstrada."
+    },
+    "pediatria-1258": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "coluna-0302"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2022 (`coluna-0302`), que perguntou a partir de quanto se recomenda estabilizar a fratura por compressão toracolombar da criança (30 graus de angulação e 50% de acunhamento). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2022 (`coluna-0302`), que perguntou a partir de quanto se recomenda estabilizar a fratura por compressão toracolombar da criança (30 graus de angulação e 50% de acunhamento). Depois, faça a oficial."
+    },
+    "pediatria-1259": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "coluna-0227",
+        "coluna-0312"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`coluna-0227`), que perguntou onde e em que idade a SCIWORA é mais comum (cervical, abaixo de 8 anos), e do TARO 2014 (`coluna-0312`), que perguntou o mecanismo (flexão e distração). O capítulo sustenta a gravidade abaixo de 8 anos e o estiramento medular como mecanismo proposto. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`coluna-0227`), que perguntou onde e em que idade a SCIWORA é mais comum (cervical, abaixo de 8 anos), e do TARO 2014 (`coluna-0312`), que perguntou o mecanismo (flexão e distração). O capítulo sustenta a gravidade abaixo de 8 anos e o estiramento medular como mecanismo proposto. Depois, faça as oficiais."
+    },
+    "pediatria-1260": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A soma da TLICS, com a pegadinha de a lesão incompleta valer mais que a completa, é a forma mais comum de cobrar a escala.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A soma da TLICS permite comparar os domínios, incluindo o maior peso da lesão incompleta em relação à completa.",
+      "correcaoConferencia": "Preservado o motivo específico e os metadados; retirada comparação de frequência/exclusividade/atualidade não demonstrada ou exemplo não conferido no corpo independente."
+    },
+    "pediatria-1262": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O número \"quase 100% abaixo de 10 anos\" é dado típico de prova.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O número \"quase 100% abaixo de 10 anos\" é dado típico de prova."
+    },
+    "pediatria-1263": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0627"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2018 (`pediatria-0627`), que perguntou o sexo e o segmento mais comuns da fratura da placa terminal na lesão lombar da criança (masculino, L4-L5). O capítulo não traz sexo nem segmento preferencial; o exemplo dele é uma menina com fratura da placa inferior de L4.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2018 (`pediatria-0627`), que perguntou o sexo e o segmento mais comuns da fratura da placa terminal na lesão lombar da criança (masculino, L4-L5). O resumo não estabelece distribuição preferencial por sexo ou por segmento.",
+      "correcaoConferencia": "Preservado o motivo específico e os metadados; retirada comparação de frequência/exclusividade/atualidade não demonstrada ou exemplo não conferido no corpo independente."
+    },
+    "pediatria-1264": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A decisão entre órtese e cirurgia na fratura de CHANCE é a aplicação prática da distinção entre osso e ligamento.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A decisão entre órtese e cirurgia na fratura de CHANCE é a aplicação prática da distinção entre osso e ligamento."
+    },
+    "pediatria-1265": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A fratura-luxação é a única lesão toracolombar em que a cirurgia é sempre indicada, e a piora neurológica define a urgência.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A fratura-luxação tem indicação cirúrgica no capítulo, e a piora neurológica define a urgência.",
+      "correcaoConferencia": "Preservado o motivo específico e os metadados; retirada comparação de frequência/exclusividade/atualidade não demonstrada ou exemplo não conferido no corpo independente."
+    },
+    "pediatria-1266": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. Os números da avaliação (85%, 32%, 87% e 75%, 70% e 100%) concentram o que a prova pergunta sobre o atendimento inicial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. Os números da avaliação permitem comparar estado neurológico, fraturas associadas e desempenho dos exames no atendimento inicial.",
+      "correcaoConferencia": "Preservado o motivo específico e os metadados; retirada comparação de frequência/exclusividade/atualidade não demonstrada ou exemplo não conferido no corpo independente."
+    },
+    "pediatria-1267": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A fratura da faceta é novidade do capítulo e combina com o tema clássico da espondilólise do atleta.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A fratura da faceta é abordada no capítulo e combina com o tema clássico da espondilólise do atleta.",
+      "correcaoConferencia": "Preservado o motivo específico e os metadados; retirada comparação de frequência/exclusividade/atualidade não demonstrada ou exemplo não conferido no corpo independente."
+    },
+    "pediatria-1268": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A mudança na conduta do corticoide é tema recorrente, e o capítulo traz a recomendação pediátrica mais recente.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. Os limites do corticoide e a distinção entre trauma e cirurgia intradural motivam esta projeção, conforme a formulação pediátrica da fonte.",
+      "correcaoConferencia": "Preservado o motivo específico e os metadados; retirada comparação de frequência/exclusividade/atualidade não demonstrada ou exemplo não conferido no corpo independente."
+    }
+  },
+  "lacunas": [
+    {
+      "id": "pediatria-0288",
+      "questaoSha256": "7c4ac1062a4bc6859401f7c801b20830c221050d202bdf9cf982a9f04f3cc004",
+      "comentarioAnteriorSha256": "d3de758fc5f62a60d9e9eac8c4db26531dcb30a3737080a6ad886603ada6207a",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0288-1.jpeg"
+      ],
+      "pendencia": "Figura aberta: desenho lateral do pescoço com mastoide e esternocleidomastoideo,estrutura amarela apontada superiormente. O resumo21 não descreve o trajeto do NERVO ACESSÓRIO junto ao esternocleidomastoideo nem compara IV(troclear),V(trigêmeo) eXII(hipoglosso) nessa identificação. A menção ao hipoglosso no côndilo não supre a anatomia superficial doXI. Falta anatomia independente dos nervos e da estrutura assinalada; gabaritoC preservado sem comentário novo.",
+      "estadoAnterior": "pendente-inspecao-imagem",
+      "inspecaoVisual": {
+        "id": "pediatria-0288",
+        "questaoSha256": "7c4ac1062a4bc6859401f7c801b20830c221050d202bdf9cf982a9f04f3cc004",
+        "comentarioAnteriorSha256": "d3de758fc5f62a60d9e9eac8c4db26531dcb30a3737080a6ad886603ada6207a",
+        "comentarioConferidoMedicoAnterior": false,
+        "inspecaoEm": "2026-10-28",
+        "imagensInspecionadas": [
+          "pediatria/pediatria-0288-1.jpeg"
+        ],
+        "imagensSha256Bytes": {
+          "pediatria/pediatria-0288-1.jpeg": "8d337f53be46dd280667401f3baae918d031a036985636dcea350d19bc98b136"
+        },
+        "observacaoVisual": "Desenho do pescoço com mastoide e esternocleidomastoideo nomeados, estrutura amarela no trajeto junto ao músculo e seta amarela superior. A figura não escreve o nome do nervo."
+      }
+    },
+    {
+      "id": "pediatria-0361",
+      "questaoSha256": "671a418c5e78cfff5018f5247adf3ecc9d940c020c48c4568752fafa92dc784c",
+      "comentarioAnteriorSha256": "85db6677deea09ef10e784c57462925441527a01fd6c61f9cf4a59bdb08fdab1",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-07-patologicas-maus-tratos",
+          "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871"
+        }
+      ],
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0361-1.jpeg"
+      ],
+      "pendencia": "Colagem aberta e idades conferidas(I3anos,II9meses,III5anos,IV4meses). O resumo07 fundamenta suspeita de abuso e alguns padrões,mas não fornece o mapeamento INDIVIDUAL dos quatro traços aos mecanismos TORÇÃO,COMPRESSÃO ANTEROPOSTERIOR,QUEDA DA PRÓPRIA ALTURA eTORÇÃO COM COMPRESSÃO exigido para o pareamento completo. As alternativas no acervo também trazem os esquemas I–IV concatenados no textoD;preservar OCR/gabaritoB sem inventar normalização ou correlação. Falta descrição biomecânica/radiográfica independente para toda associação;sem selo.",
+      "estadoAnterior": "pendente-inspecao-imagem",
+      "inspecaoVisual": {
+        "id": "pediatria-0361",
+        "questaoSha256": "671a418c5e78cfff5018f5247adf3ecc9d940c020c48c4568752fafa92dc784c",
+        "comentarioAnteriorSha256": "85db6677deea09ef10e784c57462925441527a01fd6c61f9cf4a59bdb08fdab1",
+        "comentarioConferidoMedicoAnterior": false,
+        "inspecaoEm": "2026-10-28",
+        "imagensInspecionadas": [
+          "pediatria/pediatria-0361-1.jpeg"
+        ],
+        "imagensSha256Bytes": {
+          "pediatria/pediatria-0361-1.jpeg": "b11bb1418ce5059744805048e849adbf115fbabdb65422b6566970e7beb7b636"
+        },
+        "observacaoVisual": "Colagem de quatro radiografias, numeradas I–IV com idades 3 anos,9 meses,5 anos e4 meses;antebraço,tórax e duas imagens do cotovelo. Sem rótulos de mecanismo na própria figura."
+      }
+    },
+    {
+      "id": "pediatria-0877",
+      "questaoSha256": "6ecda702e37e986f3e61a693d4c22f9df32b0dcba159a7fea139f3635b25f68d",
+      "comentarioAnteriorSha256": "79e4fc793f05e3af35f663c62a9389c134f381a5c6b4635667c8ba15e5b0a8f7",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0877-1.png"
+      ],
+      "pendencia": "Fotografia aberta: nádegas e membros inferiores do lactente com pregas assimétricas. Os resumos23/24 tratam trauma da pelve/quadril,mas não definem as manobras deBARLOW(luxável) eORTOLANI(luxado),nem THOMAS,GALEAZZI eHART para conferir as alternativas de displasia do desenvolvimento. A fotografia não descreve nem demonstra essas manobras. Falta exame independente daDDQ e diferenciação das manobras;gabaritoA e comentário anterior preservados,sem selo.",
+      "estadoAnterior": "pendente-inspecao-imagem",
+      "inspecaoVisual": {
+        "id": "pediatria-0877",
+        "questaoSha256": "6ecda702e37e986f3e61a693d4c22f9df32b0dcba159a7fea139f3635b25f68d",
+        "comentarioAnteriorSha256": "79e4fc793f05e3af35f663c62a9389c134f381a5c6b4635667c8ba15e5b0a8f7",
+        "comentarioConferidoMedicoAnterior": false,
+        "inspecaoEm": "2026-10-28",
+        "imagensInspecionadas": [
+          "pediatria/pediatria-0877-1.png"
+        ],
+        "imagensSha256Bytes": {
+          "pediatria/pediatria-0877-1.png": "6701bea8d001b4b6326eb0c3a4f6b4034b01b323ba7f152976245f40a23ca3a7"
+        },
+        "observacaoVisual": "Fotografia posterior de nádegas e membros inferiores do lactente,com pregas assimétricas;imagem clínica,sem descrição das manobras Barlow/Ortolani."
+      }
+    },
+    {
+      "id": "pediatria-1247",
+      "questaoSha256": "e262f2114f8c5bf96566c165c37b95e7d4b185b1a06daae6c0ebefeeb177a40e",
+      "comentarioAnteriorSha256": "14ec82db6e4b3e5c616f52bad30f46ecb098066d6203fb9be7c8d97d7a4ad7ce",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo21 sustenta hiperextensão com carga axial,investigação de maus-tratos e imobilização8–12semanas nas estáveis. Descreve a espondilólise congênita como falha simétrica,lisa eSEM EDEMA,mas não demonstra o valor diagnóstico da combinação COM EDEMA PRÉ-VERTEBRAL da alternativaC,nem que ela CONFIRME fratura. A ausência de edema na variante não prova automaticamente a recíproca diagnóstica. Falta critério independente para esse diferencial radiográfico completo;comentário e gabaritoB preservados,sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1252",
+      "questaoSha256": "c553dad79839f6e86a320bba71aa6a8032301759294bc9f6b8fedd8bb9a971bb",
+      "comentarioAnteriorSha256": "9eac07942ddc5068cf71df419fee56c21991f5874537f4f00b153ca8606d6b00",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O corpo21 sustenta halo a partir de cerca de1ano,mais pinos e menor torque,e informa68%de complicações,sobretudo INFECÇÃO SUPERFICIAL E AFROUXAMENTO. Não estabelece ranking separado que prove INFECÇÃO como A MAIS COMUM da alternativaC,em vez do afrouxamento também destacado. Não converter a ordem de uma lista em distribuição de frequência nem importar dados do halo adulto. Falta frequência comparativa pediátrica dos tipos de complicação;comentário preservado sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1256",
+      "questaoSha256": "3c768964555601814059ba19d78220c54d330d0909a188626af7b825babf86c3",
+      "comentarioAnteriorSha256": "c0c5614163f6819bb6d329ab08f7352e1c83576126f45f2e07fef56ffb1484fb",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-22-coluna-toracolombar",
+          "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+        },
+        {
+          "id": "rockwood10-48-coluna-cervical",
+          "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O corpo22 sustenta faceta vazia no planoAXIAL e sua relação com flexão-distração,mas não associa explicitamente o sinal ao componente LIGAMENTAR,qualificador da alternativaD:na mesma seção distingueChance óssea deSmith ligamentar. O resumo48 adulto explica a faceta vazia na luxação facetária cervical,não demonstra essa associação toracolombar pediátrica. Falta descrição independente da estrutura rompida no sinal para conferir a opção inteira;sem selo,sem transferir topografia adulta.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1261",
+      "questaoSha256": "a33091d16b15af4fb86d4a708c0d6e0954c710c79016e0751681f3f4bb5f4392",
+      "comentarioAnteriorSha256": "5726c777b39b89187473c9f575e1dac4c5d2f2ec07b652f0ced2f46f5177eddb",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-22-coluna-toracolombar",
+          "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo22 define explosão estável sem déficit e com complexo posterior íntegro e indicaTLSO8–12semanas,mas não descreve SEGUIMENTO RADIOGRÁFICO E NEUROLÓGICO PRÓXIMO,componente da alternativaB,nem critérios ou rotina que qualifiquem esse acompanhamento nesse grupo pediátrico. Falta protocolo independente de vigilância para conferir a recomendação inteira sem importar um cronograma do adulto ou inventar periodicidade;comentário preservado sem selo.",
+      "estadoAnterior": "pendente"
+    }
+  ],
+  "inspecoes": [
+    {
+      "id": "pediatria-0288",
+      "questaoSha256": "7c4ac1062a4bc6859401f7c801b20830c221050d202bdf9cf982a9f04f3cc004",
+      "comentarioAnteriorSha256": "d3de758fc5f62a60d9e9eac8c4db26531dcb30a3737080a6ad886603ada6207a",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0288-1.jpeg"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0288-1.jpeg": "8d337f53be46dd280667401f3baae918d031a036985636dcea350d19bc98b136"
+      },
+      "observacaoVisual": "Desenho do pescoço com mastoide e esternocleidomastoideo nomeados, estrutura amarela no trajeto junto ao músculo e seta amarela superior. A figura não escreve o nome do nervo."
+    },
+    {
+      "id": "pediatria-0361",
+      "questaoSha256": "671a418c5e78cfff5018f5247adf3ecc9d940c020c48c4568752fafa92dc784c",
+      "comentarioAnteriorSha256": "85db6677deea09ef10e784c57462925441527a01fd6c61f9cf4a59bdb08fdab1",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0361-1.jpeg"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0361-1.jpeg": "b11bb1418ce5059744805048e849adbf115fbabdb65422b6566970e7beb7b636"
+      },
+      "observacaoVisual": "Colagem de quatro radiografias, numeradas I–IV com idades 3 anos,9 meses,5 anos e4 meses;antebraço,tórax e duas imagens do cotovelo. Sem rótulos de mecanismo na própria figura."
+    },
+    {
+      "id": "pediatria-0877",
+      "questaoSha256": "6ecda702e37e986f3e61a693d4c22f9df32b0dcba159a7fea139f3635b25f68d",
+      "comentarioAnteriorSha256": "79e4fc793f05e3af35f663c62a9389c134f381a5c6b4635667c8ba15e5b0a8f7",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0877-1.png"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0877-1.png": "6701bea8d001b4b6326eb0c3a4f6b4034b01b323ba7f152976245f40a23ca3a7"
+      },
+      "observacaoVisual": "Fotografia posterior de nádegas e membros inferiores do lactente,com pregas assimétricas;imagem clínica,sem descrição das manobras Barlow/Ortolani."
+    },
+    {
+      "id": "pediatria-0915",
+      "questaoSha256": "dfa9376bf4b9544024c60389e58f17bf1a228b4abd31b46c9c3469b6160b565a",
+      "comentarioAnteriorSha256": "e9fb8fe69e3af8aac62fc6212dbb4ed7ba7dbe204d5037a17108b24235e991c0",
+      "comentarioConferidoMedicoAnterior": false,
+      "inspecaoEm": "2026-10-28",
+      "imagensInspecionadas": [
+        "pediatria/pediatria-0915-teot2025.jpeg"
+      ],
+      "imagensSha256Bytes": {
+        "pediatria/pediatria-0915-teot2025.jpeg": "bc9e2d51ed8929c2004d2adcf768b12e552ed7f546423a4b2593da027e7964df"
+      },
+      "observacaoVisual": "Radiografia AP do ombro esquerdo,com alteração da posição da extremidade lateral da clavícula na região acromioclavicular. A alteração predominante está na clavícula lateral;fise proximal do úmero visível."
+    }
+  ],
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 23,
+    "lacunasComentariosIntactos": 7,
+    "demaisBytesPreservados": true,
+    "motivosConferidos": 22,
+    "ui": "23/23 casos em390/1440:resposta,aula,alertas,links exatos e figura0915 carregada;captura0915 inspecionada visualmente."
+  },
+  "reconciliacao618": {
+    "head": "d3be9c4a5706f4180621da222cd6988ff2a48dbf",
+    "merge": "ab65bf72108c7ac4af382e5d6190e0bbfee634b6",
+    "ci": 40755566445,
+    "pages": 40756124034,
+    "publicar": 123057520784,
+    "avulsosIntegrais": 665,
+    "resumosIntegrais": 52,
+    "figuras": 39
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 133,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 807,
+      "revisada": 1937
+    }
+  },
+  "continuidade": "Próxima226 exportada:1269–1278,sem aplicação. Resumo11 integralmente lido,22 já lido;avaliar individualmente,possíveis lacunas1269(anatomia/prognóstico completo) e1275(protocolo pós-Metaizeau). Revalidar remoto antes de aplicar. Tarefa integral aberta."
+}

@@ -5,11 +5,10 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 97 |
-| pendente | 159 |
+| pendente | 133 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 800 |
-| pendente-inspecao-imagem | 4 |
-| revisada | 1914 |
+| pendente-fonte | 807 |
+| revisada | 1937 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -42,14 +41,14 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 30 | 0 | 23 |
 | Epidemiologia das fraturas na criança (`rockwoodcriancas10-01-epidemiologia-fraturas`) | 151 | 0 | 64 |
 | Síndrome compartimental na criança (`rockwoodcriancas10-06-sindrome-compartimental`) | 155 | 0 | 64 |
-| Fraturas patológicas e maus-tratos na criança (`rockwoodcriancas10-07-patologicas-maus-tratos`) | 25 | 0 | 17 |
+| Fraturas patológicas e maus-tratos na criança (`rockwoodcriancas10-07-patologicas-maus-tratos`) | 27 | 0 | 15 |
 | Fraturas e luxações da mão e do carpo na criança (`rockwoodcriancas10-08-mao-carpo`) | 19 | 0 | 23 |
 | Fraturas do colo do rádio e do olécrano na criança (`rockwoodcriancas10-11-colo-radio-olecrano`) | 67 | 0 | 26 |
 | Fratura-luxação de MONTEGGIA na criança (`rockwoodcriancas10-12-monteggia`) | 99 | 0 | 42 |
-| Luxação do ombro e fraturas do úmero proximal e da diáfise na criança (`rockwoodcriancas10-19-ombro-umero`) | 41 | 0 | 10 |
-| Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança (`rockwoodcriancas10-20-clavicula-escapula`) | 30 | 0 | 9 |
-| Lesões da coluna cervical na criança (`rockwoodcriancas10-21-coluna-cervical`) | 11 | 0 | 51 |
-| Fraturas da coluna toracolombar na criança (`rockwoodcriancas10-22-coluna-toracolombar`) | 8 | 0 | 32 |
+| Luxação do ombro e fraturas do úmero proximal e da diáfise na criança (`rockwoodcriancas10-19-ombro-umero`) | 42 | 0 | 9 |
+| Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança (`rockwoodcriancas10-20-clavicula-escapula`) | 31 | 0 | 8 |
+| Lesões da coluna cervical na criança (`rockwoodcriancas10-21-coluna-cervical`) | 33 | 0 | 29 |
+| Fraturas da coluna toracolombar na criança (`rockwoodcriancas10-22-coluna-toracolombar`) | 30 | 0 | 10 |
 | Fraturas da pelve e do acetábulo na criança (`rockwoodcriancas10-23-pelve-acetabulo`) | 41 | 0 | 17 |
 | Fraturas do colo do fêmur e luxação traumática do quadril na criança (`rockwoodcriancas10-24-quadril`) | 41 | 0 | 20 |
 | Fratura da diáfise do fêmur na criança (`rockwoodcriancas10-25-diafise-femur`) | 90 | 0 | 32 |
