@@ -25,6 +25,8 @@ import { PreviaCronograma } from '../componentes/vendas/PreviaCronograma'
 import { IconePix, IconeCartao } from '../componentes/vendas/IconesPagamento'
 import { usarRevelar } from '../componentes/vendas/usarRevelar'
 import { SecaoBiblioteca } from '../componentes/vendas/SecaoBiblioteca'
+import { RenovacaoPix } from '../componentes/RenovacaoPix'
+import { usarPeriodoPix } from '../conta/periodoPix'
 import '../estilos/paginas/Assinatura.css'
 
 /**
@@ -181,9 +183,12 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   // Quem já tem acesso pago vê "Minha assinatura" no topo, e não a página de vendas.
   const comAcessoPago = consultou ? Boolean((ativa || acessoPagoAteOFim) && metricas) : assinanteGuardado
   // Pix (ativo, sem renovação automática) nos 7 dias finais: pode renovar já, e o
-  // período novo começa quando o atual termina (o servidor soma os dias).
-  const fimAtual = metricas?.fim_periodo ? Date.parse(metricas.fim_periodo) : NaN
-  const renovarPix = pixHabilitado && ativa && Boolean(metricas?.cancelar_ao_fim) && Number.isFinite(fimAtual) && fimAtual - Date.now() <= 7 * 864e5
+  // período novo começa quando o atual termina (o servidor soma os dias). O meio vem
+  // das assinaturas da conta; sem essa leitura, "ativa sem renovação" faz as vezes do Pix.
+  const periodoPix = usarPeriodoPix(sessao?.user.id, metricas?.fim_periodo)
+  const ehPix = periodoPix ? periodoPix.pix : Boolean(metricas?.cancelar_ao_fim)
+  const fimAtual = periodoPix?.fim ?? (metricas?.fim_periodo ? Date.parse(metricas.fim_periodo) : NaN)
+  const renovarPix = pixHabilitado && ativa && ehPix && Number.isFinite(fimAtual) && fimAtual - Date.now() <= 7 * 864e5
   const diasRestantes = renovarPix ? Math.max(1, Math.ceil((fimAtual - Date.now()) / 864e5)) : 0
   const fimAtualTexto = renovarPix ? new Date(fimAtual).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) : ''
   // Pagamentos desligados: todo botão de compra mostra "Em breve" e fica desabilitado, com ou sem conta.
@@ -261,19 +266,26 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             {!metricas ? (falhouConsulta
               ? <p role="alert">Não foi possível carregar os dados da assinatura agora. <button type="button" className="botao--vinculo" onClick={() => definirTentativa((n) => n + 1)}>Tentar de novo</button></p>
               : <p role="status">Carregando assinatura…</p>) : <>
-            <h2>{semRenovacao ? 'Acesso pago sem renovação automática' : (metricas.plano ? `Seu plano ${metricas.plano} está ativo` : 'Sua assinatura está ativa')}</h2>
-            <p>{semRenovacao ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {fimTexto ?? 'o fim do período atual'}.</p>
+            {ativa && ehPix ? <>
+              <h2>{metricas.plano ? `Seu plano ${metricas.plano} no Pix está ativo` : 'Seu acesso pelo Pix está ativo'}</h2>
+              <p>Pagamento único, sem cobrança automática. Acesso ilimitado até {Number.isFinite(fimAtual) ? new Date(fimAtual).toLocaleDateString('pt-BR') : fimTexto ?? 'o fim do período atual'}.</p>
+            </> : <>
+              <h2>{semRenovacao ? 'Acesso pago sem renovação automática' : (metricas.plano ? `Seu plano ${metricas.plano} está ativo` : 'Sua assinatura está ativa')}</h2>
+              <p>{semRenovacao ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {fimTexto ?? 'o fim do período atual'}.</p>
+            </>}
             <dl className="vd-ativo__dados">
               <div><dt>Plano</dt><dd>{metricas.plano ? `Plano ${metricas.plano}` : 'Assinante'}</dd></div>
-              <div><dt>{semRenovacao ? 'Término do acesso' : 'Próxima cobrança'}</dt><dd>{fimTexto ?? 'Não informada'}</dd></div>
+              {ativa && ehPix
+                ? <><div><dt>Acesso até</dt><dd>{Number.isFinite(fimAtual) ? new Date(fimAtual).toLocaleDateString('pt-BR') : fimTexto ?? 'Não informada'}</dd></div><div><dt>Pagamento</dt><dd>Pix, sem cobrança automática</dd></div></>
+                : <div><dt>{semRenovacao ? 'Término do acesso' : 'Próxima cobrança'}</dt><dd>{fimTexto ?? 'Não informada'}</dd></div>}
               {metricas.ultima_cobranca_em && <div><dt>Última cobrança</dt><dd>{new Date(metricas.ultima_cobranca_em).toLocaleDateString('pt-BR')}</dd></div>}
             </dl>
             </>}
             <div className="linha">
               <a className="botao vd-botao-destaque" href={href('/cronograma')}>Abrir o cronograma <Icone nome="direita" tamanho={16} /></a>
-              <a className="tr-heroi__link" href={href('/conta/assinatura')}>Gerenciar renovação ou pedir reembolso</a>
+              <a className="tr-heroi__link" href={href('/conta/assinatura')}>{ehPix ? 'Dados da assinatura e garantia' : 'Gerenciar renovação ou pedir reembolso'}</a>
             </div>
-            {metricas && renovarPix && <p className="vd-ativo__renovar"><strong>Faltam {diasRestantes} {diasRestantes === 1 ? 'dia' : 'dias'}. Renove agora pelo Pix sem perder nada:</strong> os dias que restam continuam valendo e o novo período começa em {fimAtualTexto}, quando o atual termina.</p>}
+            {metricas && ativa && ehPix && pixHabilitado && Number.isFinite(fimAtual) && <RenovacaoPix fim={fimAtual} aoRenovar={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth', block: 'start' })} />}
           </div>
           {metricas && (renovarPix || !ativa) && <div className="vd-ativo__planos" id="planos">
             <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} />
@@ -352,7 +364,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           <details><summary>Como funciona a garantia de 7 dias?</summary><p>Até 7 dias depois de cada cobrança aprovada (inclusive renovações e Pix), você pede o reembolso integral pelo botão em Minha conta, sem precisar falar com ninguém nem justificar. O pedido vai para o Mercado Pago na hora e o site confirma com ele; o acesso pago só é encerrado depois que o reembolso é confirmado. Se o Mercado Pago não confirmar a solicitação automática, o pedido é atendido manualmente pelo suporte, valendo a data em que você pediu: é só usar o canal de <a href={href('/contato')}>contato</a> para atendimento manual.</p></details>
           <details><summary>Em quanto tempo o dinheiro volta?</summary><p>No Pix, o Mercado Pago devolve o valor para a conta de onde saiu o pagamento; como o Pix é instantâneo, costuma ser rápido, mas o prazo final é do Mercado Pago e do seu banco. No cartão, o valor é estornado e aparece na fatura conforme o prazo do emissor do cartão, muitas vezes na fatura seguinte. Em nenhum dos dois casos você precisa pedir de novo.</p></details>
           <details><summary>Preciso falar com alguém para cancelar? E o meu histórico?</summary><p>Não. Desligar a renovação e pedir o reembolso dentro da garantia são botões em Minha conta. Depois dos 7 dias, cancelar impede as próximas cobranças e você mantém o acesso até o fim do período pago, sem devolução proporcional automática (seus direitos previstos em lei continuam preservados; veja as <a href={href('/condicoes-assinatura')}>condições da assinatura</a>). Respostas, revisões, anotações e desempenho nunca são apagados.</p></details>
-          <details><summary>Paguei no Pix. Posso renovar antes de acabar sem perder dias?</summary><p>Pode. O Pix não renova sozinho, por isso mandamos um aviso por e-mail alguns dias antes do fim. A partir de 7 dias antes do término, esta página libera a renovação pelo Pix: os dias que faltam continuam valendo e o novo período começa no dia em que o atual termina. Nada se perde por pagar antes.</p></details>
+          <details><summary>Paguei no Pix. Posso renovar antes de acabar sem perder dias?</summary><p>Pode. O Pix não renova sozinho, por isso mandamos um aviso por e-mail alguns dias antes do fim. A renovação abre 7 dias antes do término: o botão "Renovar no Pix" aparece aqui e em Minha assinatura, e antes disso as duas páginas mostram a data em que ela abre. Os dias que faltam continuam valendo e o novo período começa no dia em que o atual termina. Nada se perde por pagar antes.</p></details>
           <details><summary>Posso usar junto com o meu curso preparatório?</summary><p>Pode, e combina bem. O Orto Questões não é curso: é onde você treina com as questões das provas, comentadas, e segue um plano diário pelo que mais cai. Muita gente assiste às aulas de um lado e usa o cronograma para transformar o que estudou em questão feita, todo dia.</p></details>
           <details><summary>Serve para o TEOT e para o TARO? E para outras provas?</summary><p>Sim. O acervo traz as provas oficiais já aplicadas do TEOT, do TARO, do R4 do ENARE e do TECOC, comentadas, e o cronograma pode ser montado para a data da sua prova. Para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril, há os {ROTULO_SIMULADOS}, escritos no padrão dessas bancas.</p></details>
           <details><summary>Como o cronograma é montado?</summary><p>Em quatro passos: a data da prova, quanto tempo você tem por dia, como é a sua semana (folgas e dias de plantão, que viram dias leves) e por onde começar. Um diagnóstico opcional de 30 questões mostra onde você está mais fraco. O plano passa três vezes pelo acervo: na 1ª passada, os assuntos de prioridade máxima de todas as áreas, pela contagem das provas oficiais; na 2ª, os de prioridade alta; na 3ª, o resto. Assim, se a rotina apertar, o que mais cai já foi visto. Cada área fica uns 3 dias em foco, com cerca de 30% de cada dia vindo de outra área para misturar, e entram {ROTULO_SIMULADOS} nas sessões. A cada duas semanas há um mini-simulado, e as duas últimas semanas são a reta final. Atrasou, a meta sobe no máximo 25%; numa semana difícil, dá para baixar para 10 questões por dia sem quebrar o plano.</p></details>

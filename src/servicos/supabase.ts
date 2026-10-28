@@ -84,6 +84,16 @@ export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>,
   return await resposta.json() as T
 }
 
+/** Lê linhas de uma tabela pela REST (respeitando o RLS da própria conta), com o mesmo token e prazo das RPCs. */
+export async function lerTabela<T>(caminho: string, { sinal }: { sinal?: AbortSignal } = {}): Promise<T> {
+  if (!clienteConta) throw new Error('Servidor não configurado.')
+  const token = await garantirToken()
+  if (!token) throw new Error('Entre na sua conta para continuar.')
+  const resposta = await buscarComPrazo(`${url}/rest/v1/${caminho}`, { headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}` } }, 8_000, sinal)
+  if (!resposta.ok) throw new ErroRpc(`Não foi possível ler os dados (${resposta.status}).`, resposta.status, '')
+  return await resposta.json() as T
+}
+
 /** O motivo que a função do banco levantou, ou '' quando a falha foi de rede. */
 export const codigoErro = (falha: unknown) => falha instanceof ErroRpc ? falha.codigo : ''
 
