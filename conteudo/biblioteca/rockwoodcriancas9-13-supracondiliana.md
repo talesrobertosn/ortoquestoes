@@ -1,21 +1,21 @@
 ---
 id: rockwoodcriancas9-13-supracondiliana
-versao: 1
+versao: 2
 titulo: Fratura supracondiliana do úmero na criança
 especialidade: pediatria
 acesso: gratis
 livro: Rockwood and Wilkins' Fractures in Children
-edicao: 9ª edição
-capitulo: Capítulo 13 · Supracondylar Fractures of the Distal Humerus
-autores: David L. Skaggs e John M. Flynn
-fonte: Capítulo enviado pelo Tales em 19/10/2026 (PDF com os capítulos 12 a 17 do Rockwood and Wilkins; o capítulo 13 ocupa as páginas 14 a 59)
+edicao: 10ª edição (2025)
+capitulo: Capítulo 14 · Supracondylar Fractures of the Distal Humerus
+autores: Jonathan G. Schoenecker e Donald S. Bae (10ª edição); David L. Skaggs e John M. Flynn (9ª edição)
+fonte: Escrito com o capítulo 13 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 14 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 9ª edição.
 subtemas: Fraturas supracondilianas do úmero
-resumo: Desvio posteromedial e radial, posterolateral e mediano com artéria braquial, periósteo e pronação ou supinação, GARTLAND I a IV, BAUMANN e linha umeral anterior, fios laterais separados, mão rosada sem pulso, três As, cúbito varo por consolidação viciosa e fratura em flexão com o ulnar.
+resumo: Desvio posteromedial e radial, posterolateral e mediano com artéria braquial, periósteo e pronação ou supinação, GARTLAND I a IV, BAUMANN e linha umeral anterior, fios laterais separados, mão rosada sem pulso, três As, cúbito varo por consolidação viciosa e fratura em flexão com o ulnar; na 10ª edição, tipo IIA e IIB e o fio medial mini-aberto.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo foi escrito a partir do capítulo 13 do Rockwood and Wilkins' Fractures in Children (9ª edição), de David L. Skaggs e John M. Flynn, na ordem em que as provas cobram o tema. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo. A avaliação geral do cotovelo da criança, os centros de ossificação e as linhas radiográficas em si são do capítulo 12; a fratura em T é do 14, a luxação e o epicôndilo medial do 15, o côndilo lateral do 16 e o descolamento epifisário do úmero distal do 17. Aqui eles aparecem só de passagem, quando ajudam a entender a supracondiliana.
+Este resumo foi escrito a partir do capítulo 13 do Rockwood and Wilkins' Fractures in Children (9ª edição), de David L. Skaggs e John M. Flynn, na ordem em que as provas cobram o tema, e atualizado com o capítulo 14 da 10ª edição (2025), agora de Jonathan G. Schoenecker e Donald S. Bae. A 10ª edição mantém os dados e as condutas centrais (fios laterais, protocolo de LEITCH no tipo IV, mão rosada sem pulso) e acrescenta a subdivisão IIA e IIB do tipo II, os estudos recentes do gesso no IIA e o fio medial por acesso mini-aberto; as figuras citadas seguem a numeração da 9ª edição. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo. A avaliação geral do cotovelo da criança, os centros de ossificação e as linhas radiográficas em si são do capítulo 12; a fratura em T é do 14, a luxação e o epicôndilo medial do 15, o côndilo lateral do 16 e o descolamento epifisário do úmero distal do 17. Aqui eles aparecem só de passagem, quando ajudam a entender a supracondiliana.
 
 A supracondiliana é a **fratura do cotovelo mais comum da criança** e a **fratura que mais vai para a cirurgia** na infância, com pico entre **5 e 6 anos**. Ela cai quase todo ano na prova, sempre com o mesmo enunciado de abertura ("Na fratura supracondiliana do úmero na criança...") e em poucos blocos: **qual nervo se lesa conforme a direção do desvio**, **qual periósteo sobrou e que rotação ajuda a reduzir**, **o cúbito varo e sua causa**, e **a mão sem pulso e a síndrome compartimental**. Tudo nasce da anatomia: o úmero distal é muito fino entre a fossa olecraniana e a coronoide, a criança cai com o cotovelo esticado, o fragmento proximal vira uma lança apontada para o feixe neurovascular, e a extremidade distal do úmero cresce pouco e remodela mal.
 
@@ -187,7 +187,7 @@ Quanto ao atraso maior: Silva reduziu fechado 42 tipo II entre **7 e 15 dias** c
 
 ## Tipo I
 
-Imobilização com **60 a 90 graus de flexão**, antebraço neutro, **nunca acima de 90 graus**; gesso circular só se não houver edema importante, senão tala. Antes de imobilizar, confirmar pulso e enchimento capilar com a flexão escolhida (Mapes e Hennrikus: o fluxo na braquial cai com mais flexão e com a pronação). Radiografia em **3 a 7 dias** (os autores preferem 1 semana); se o capítulo sair da linha umeral anterior, fixar. Posição aceitável: linha umeral anterior cruzando o capítulo, **BAUMANN acima de 10 graus** ou igual ao outro lado e **fossa olecraniana íntegra**. A imobilização dura **3 semanas** nos tipos I, II e III, sem fisioterapia de rotina. Cuidado com o tipo I com edema, dor ou déficit fora do esperado (lesão de partes moles maior que o osso sugere) e com qualquer cominuição medial.
+Imobilização com **60 a 90 graus de flexão** (na 10ª edição, cerca de **80 a 90 graus** por cerca de **3 semanas**, com radiografia em 1 semana), antebraço neutro, **nunca acima de 90 graus**; gesso circular só se não houver edema importante, senão tala. Antes de imobilizar, confirmar pulso e enchimento capilar com a flexão escolhida (Mapes e Hennrikus: o fluxo na braquial cai com mais flexão e com a pronação). Radiografia em **3 a 7 dias** (os autores preferem 1 semana); se o capítulo sair da linha umeral anterior, fixar. Posição aceitável: linha umeral anterior cruzando o capítulo, **BAUMANN acima de 10 graus** ou igual ao outro lado e **fossa olecraniana íntegra**. A imobilização dura **3 semanas** nos tipos I, II e III, sem fisioterapia de rotina. Cuidado com o tipo I com edema, dor ou déficit fora do esperado (lesão de partes moles maior que o osso sugere) e com qualquer cominuição medial.
 
 ## Tipo II: por que fixar
 
@@ -199,6 +199,14 @@ A extremidade distal faz só **20% do crescimento do úmero**; entre 8 e 10 anos
 - Crianças sem seguro ou com seguro público voltaram ao ambulatório quase três vezes menos (Fletcher), o que pesa contra o tratamento que depende de revisão precoce.
 
 Com fios, os resultados são previsíveis: 69 tipo II sem perda, sem varo e sem paralisia; 189 casos com 2% de infecção no trajeto do fio e nenhuma perda ou consolidação viciosa. O tipo II é reduzido em flexão, conferido em AP, perfil e oblíquas e fixado com **dois fios laterais** (três em muitas séries); cruzado não é necessário.
+
+**Tipo IIA e IIB (10ª edição).** WILKINS separou o **IIA**, só com **extensão**, do **IIB**, com **rotação e translação**. No IIA, redução e gesso podem bastar: SANDERS, prospectivo com **99 pacientes IIA** (45 engessados), teve resultados relatados pelos pacientes **iguais** aos dos fios em 2 anos, mas **9%** dos engessados converteram para cirurgia; MCCARTNEY, com 54 IIA engessados, teve **30%** de conversão por desvio precoce. Os novos autores ainda preferem **redução e fios laterais** no tipo II: é mais seguro segurar com fios do que fletir acima de 90 graus.
+
+!questoes treino=pediatria-1363
+conceito: O IIA tem só extensão e pode ir com gesso, com resultado igual em 2 anos, mas 9% a 30% convertem para cirurgia; os autores preferem fios laterais.
+como: Questão de projeção sobre o que a 10ª edição acrescentou; nenhuma questão oficial do conjunto analisado cobrou a subdivisão IIA e IIB.
+armadilha: Engessar o tipo II fletindo acima de 90 graus para manter a redução.
+!fim
 
 ## O fim do gesso em flexão
 
@@ -278,7 +286,9 @@ A conclusão que o capítulo chama de inegável: se usar fio medial, **coloque p
 
 Na biomecânica, os estudos que deram vantagem aos cruzados usaram dois laterais colados; com separação no foco, dois laterais divergentes superaram os cruzados em extensão e varo (iguais em valgo), e três laterais equivalem aos cruzados mesmo com cominuição medial. Na clínica, perda da redução em 0 de 849 cruzados e 4 de 606 laterais (0,7%), e dois ensaios randomizados sem diferença. Fios mais grossos dão mais estabilidade. Na pesquisa americana, **70%** preferiam laterais; depois de um ensaio, oito cirurgiões que usavam cruzados em 59% passaram a usar em 15%.
 
-!questoes treino=pediatria-1040
+**Fio medial mini-aberto (10ª edição).** A lesão iatrogênica do ulnar pelo fio medial vai de **0,4% a 15%** nas séries. No maior estudo de centro único de fios cruzados, com **acesso mini-aberto** para o medial (REES), a taxa foi de **0,4%**, quase dez vezes menor que as estimativas das metanálises. RASOOL mostrou, na exploração, que o fio em geral **comprime** o ulnar no túnel cubital ao prender partes moles, mais do que o perfura. Para os laterais, a lesão do mediano e do radial chegou a **1,2%** numa metanálise.
+
+!questoes treino=pediatria-1040,pediatria-1364
 conceito: Fio medial só quando necessário, depois dos laterais e com o cotovelo estendido; em hiperflexão, o ulnar sobe sobre o epicôndilo medial (61% abaixo de 5 anos) e a lesão vai de 4% para 15%.
 como: Ainda sem questão oficial sobre fios cruzados; é o ponto mais discutido do capítulo, com números redondos.
 armadilha: Fio medial em hiperflexão porque é a posição em que a fratura fica reduzida: os laterais vão antes justamente para permitir estender o cotovelo.

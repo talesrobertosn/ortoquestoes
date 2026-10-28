@@ -41,8 +41,8 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 10 | Diaphyseal Radius and Ulna | 790 a 935 | 9ª ed. já tem resumo (`wilkins9-09`); atualizar |
 | 11 | Radial Neck and Olecranon | 936 a 1084 | Feito em 28/10/2026: `rockwoodcriancas10-11-colo-radio-olecrano`, `pediatria-1270` a `1284` |
 | 12 | Monteggia Fracture-Dislocation | 1085 a 1219 | Feito em 28/10/2026: `rockwoodcriancas10-12-monteggia`, `pediatria-1285` a `1299` |
-| 13 | Evaluation of the Injured Pediatric Elbow | 1220 a 1271 | 9ª ed. já tem resumo; atualizar |
-| 14 | Supracondylar Fractures | 1272 a 1425 | 9ª ed. já tem resumo; atualizar |
+| 13 | Evaluation of the Injured Pediatric Elbow | 1220 a 1271 | Atualizado em 28/10/2026: `rockwoodcriancas9-12-avaliacao-cotovelo` (versão 2), `pediatria-1360` a `1362` (JONES, linha radiocapitelar, metanálise do coxim, ultrassonografia) |
+| 14 | Supracondylar Fractures | 1272 a 1425 | Atualizado em 28/10/2026: `rockwoodcriancas9-13-supracondiliana` (versão 2, novos autores), `pediatria-1363` e `1364` (IIA e IIB, fio medial mini-aberto) |
 | 15 | T-Condylar Fractures | 1426 a 1475 | 9ª ed. já tem resumo; atualizar |
 | 16 | Medial Epicondyle and Elbow Dislocations | 1476 a 1594 | 9ª ed. já tem resumo; atualizar |
 | 17 | Lateral Condylar and Capitellar | 1595 a 1670 | 9ª ed. já tem resumo; atualizar |
