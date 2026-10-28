@@ -49,7 +49,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 18 | Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar | 1671 a 1771 | 9ª ed. já tem resumo; atualizar |
 | 19 | Shoulder Dislocation and Proximal Humerus | 1772 a 1943 | Feito em 27/10/2026: `rockwoodcriancas10-19-ombro-umero`, `pediatria-1211` a `1224` |
 | 20 | Clavicle and Scapula | 1944 a 2072 | Feito em 28/10/2026: `rockwoodcriancas10-20-clavicula-escapula`, `pediatria-1225` a `1239` |
-| 21 | Cervical Spine | 2073 a 2164 | A fazer |
+| 21 | Cervical Spine | 2073 a 2164 | Feito em 28/10/2026: `rockwoodcriancas10-21-coluna-cervical`, `pediatria-1240` a `1254` |
 | 22 | Thoracolumbar Spine | 2165 a 2226 | A fazer |
 | 23 | Pelvic and Acetabular | 2227 a 2334 | Feito em 27/10/2026: `rockwoodcriancas10-23-pelve-acetabulo`, `pediatria-1168` a `1181` |
 | 24 | Hip | 2335 a 2436 | Feito em 27/10/2026: `rockwoodcriancas10-24-quadril`, `pediatria-1182` a `1195` |
@@ -96,3 +96,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 7 | `pediatria-0010`, `0066`, `0097`, `0468`, `0160`, `0481`, `0173`, `0362`, `0383`, `0422`, `0164`, `0478`, `0146`, `0327`, `0366`, `0526`, `0065` | `0422` (TARO 2011): antebraço não sustentado. `0065` (TARO 2015): o capítulo põe a diáfise do fêmur antes do fêmur distal. `0526` (TARO 2025): gene do calo hiperplásico fora do capítulo. |
 | 19 | `pediatria-0571`, `0524`, `0617`, `0695`, `0945`, `0667`, `0595`, `0642`, `0848`, `0714`, `0753`, `0631`, `0953`, `0618`, `0821` | `0642` (TARO 2019): varo; o capítulo diz valgo. `0617` (TARO 2017): posteromedial; o capítulo diz anterolateral. `0695` não sustentada. Sem gabarito: `0714` (III), `0753` (periósteo), `0821` (não sustentada). |
 | 20 | `pediatria-0643`, `0685`, `0657`, `0706`, `0002`, `0633`, `0550`, `0822`, `0533`, `0558` | `0550` (TARO 2023): exposição; o capítulo diz desvio posterior. `0002` (TARO 2020): o capítulo sustenta só o lado direito. `0558` (TEOT 2024): sinal do esternocleidomastóideo não discutido. Sem gabarito: `0822` (sustentada). |
+| 21 | `pediatria-0587`, `0851`, `0717`, `0638`, `1080`, `0605`, `0770`, `0576` | `1080` (ENARE 2023): POWERS; o capítulo usa o CCI. `0638` (TARO 2019): o nível C3 não é citado. Sem gabarito: `0717` e `0770` (sustentadas). SCIWORA (`0755`, `0833`) fora do capítulo. |
