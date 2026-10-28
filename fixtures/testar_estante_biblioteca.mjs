@@ -60,8 +60,10 @@ try {
   assert.deepEqual(m.filtrosDaConsulta(new URLSearchParams('progresso=xx&ordem=yy')), m.FILTROS_PADRAO)
 
   // Próximo capítulo: o seguinte publicado do mesmo livro e edição; nenhum depois do último.
-  assert.equal(m.proximoCapitulo(capitulos, cap('rockwoodcriancas10-19-ombro-umero'))?.id, 'rockwoodcriancas10-23-pelve-acetabulo')
-  assert.equal(m.proximoCapitulo(capitulos, cap('rockwoodcriancas10-07-patologicas-maus-tratos'))?.id, 'rockwoodcriancas10-19-ombro-umero')
+  // (Sem ids fixos: cada capítulo publicado muda o "próximo"; a varredura abaixo confere a ordem do livro inteiro.)
+  const proximoDo19 = m.proximoCapitulo(capitulos, cap('rockwoodcriancas10-19-ombro-umero'))
+  assert.ok(proximoDo19 && m.chaveLivro(proximoDo19) === chaveInfantil10 && m.numeroCapitulo(proximoDo19) > 19, 'o próximo fica no mesmo livro e adiante')
+  assert.equal(m.proximoCapitulo([cap('rockwoodcriancas10-19-ombro-umero'), cap('rockwoodcriancas9-17-fise-distal-umero')], cap('rockwoodcriancas9-12-avaliacao-cotovelo'))?.id, 'rockwoodcriancas9-17-fise-distal-umero', 'outra edição não conta')
   for (const l of livros) {
     assert.equal(m.proximoCapitulo(capitulos, l.capitulos[l.capitulos.length - 1]), null, `último de ${l.rotulo}`)
     for (let i = 0; i + 1 < l.capitulos.length; i++) assert.equal(m.proximoCapitulo(capitulos, l.capitulos[i])?.id, l.capitulos[i + 1].id)
