@@ -1,0 +1,30 @@
+[
+  {
+    "id": "pediatria-1269",
+    "questaoSha256": "3559bb4ed5467a72a7467fcaaf11c9e00e883a578a3d98afe514a5d1ae42d04c",
+    "comentarioAnteriorSha256": "5c3ed77de3938bd74f2ad61211914b93bb0dd5d20adaa5b6ba93b0996069b746",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-22-coluna-toracolombar",
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "O resumo22 informa cone emL1/L2,mas não desenvolve a combinação rigidez torácica/mobilidade lombar e menor probabilidade de lesão PERMANENTE abaixo do cone da alternativaB. Referência anatômica isolada não demonstra esse prognóstico. Falta afirmação independente da relação anatômica e prognóstica completa;preservar comentário sem selo.",
+    "estadoAnterior": "pendente"
+  },
+  {
+    "id": "pediatria-1275",
+    "questaoSha256": "76b7a8ef7779421ad153368c2df17cbf16bd7f4f2c912e8e4d3d1a97a4a8bec1",
+    "comentarioAnteriorSha256": "b10a89434804efc80a4a2ff06d9b250663a0b04deb911d0a60118a3cb33ba180",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo11 descreve toda a técnica Metaizeau daA,mas não define o protocolo PÓS-OPERATÓRIO para rejeitar a obrigatoriedade de6semanas rígidas daD.1–3semanas aparecem no tratamento NÃO OPERATÓRIO e não provam por si o regime após haste. Falta protocolo independente de imobilização/mobilização após Metaizeau;sem converter recomendação de outro grupo em prova. Comentário intacto sem selo.",
+    "estadoAnterior": "pendente"
+  }
+]

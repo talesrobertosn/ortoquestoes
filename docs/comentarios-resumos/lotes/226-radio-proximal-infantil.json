@@ -1,0 +1,316 @@
+{
+  "pediatria-1270": {
+    "questaoSha256": "d7e7380226230ee05aee5b6d3c85483cfb802a43c1d3deb455692b09b7e6d431",
+    "comentarioAnteriorSha256": "e2f5e86888233c840d755e97598b1da68d7f949fa5a498115a2d24c75d79999a",
+    "comentario": {
+      "conceito": "A queda sobre a mão com **cotovelo estendido e estresse em valgo** concentra a carga no rádio proximal: a cabeça cartilaginosa transmite a força à **fise ou à metáfise do colo**. É o mecanismo da alternativa A, descrito no resumo do Rockwood and Wilkins, 10ª edição, capítulo 11.\n\nA criança sente dor lateral que piora ao **rodar o antebraço**. Esse dado ajuda a localizar a lesão, mas a definição depende da imagem e da avaliação de lesões associadas. O resumo recomenda testar o **nervo interósseo posterior**; às vezes a queixa predominante pode estar no punho.\n\nAntes da ossificação da cabeça, que começa por volta dos **5 anos** no capítulo, a imagem pode mostrar apenas irregularidade metafisária. Além disso, o colo é quase todo **extracapsular**: a ausência do sinal do coxim não exclui a fratura. Não confundir uma imagem aparentemente discreta com ausência de lesão.\n\n**Na prova:** ligar o vetor em valgo e a extensão à fratura do colo, sem trocar pelo varo. O mecanismo orienta a hipótese; rotação dolorosa, exame neurológico e radiografias completam a avaliação.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2019 (`pediatria-0640`), que perguntou o mecanismo mais frequente da fratura do colo do rádio na criança (valgo com extensão do cotovelo). Depois, faça a oficial.",
+      "correta": "Alternativa A. Reúne a posição e o vetor descritos: extensão com valgo, transmitindo carga pela cabeça cartilaginosa ao colo/fise. É coerente com a queda e a dor à rotação apresentadas.",
+      "incorretas": {
+        "B": "Troca os dois componentes do mecanismo descrito. O resumo aponta extensão e valgo; flexão com varo não corresponde ao padrão mais frequente perguntado.",
+        "C": "O golpe posterior aparece no mesmo capítulo entre os mecanismos de cisalhamento do olécrano. Não é o mecanismo predominante da fratura angulada do colo radial desta questão.",
+        "D": "Tração longitudinal em pronação não corresponde à queda com extensão e valgo descrita para essa fratura. A opção não explica a transmissão de carga da cabeça à metáfise/fise do colo apresentada no resumo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: mecanismo, imagem e classificação; Olécrano e apófise."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: mecanismo, imagem e classificação",
+          "Olécrano e apófise"
+        ],
+        "blocos": [
+          "radio-proximal-mecanismo-imagem-e-classificacao-3d6f8ae0",
+          "radio-proximal-mecanismo-imagem-e-classificacao-8b5ba824",
+          "olecrano-e-apofise-904c5544"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "7256fcb1ea7ae75a63dd010dac344a827c6865cdc31a64b1e6d4379743649530"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1271": {
+    "questaoSha256": "9057cec91422dbd1511eede8d7eadb2d15bbc03fc7b0d01c431908da67812151",
+    "comentarioAnteriorSha256": "962a6b359b3c1f9e73c14e388937f1a32036a73f3e7f54aa1940ce60858da8ba",
+    "comentario": {
+      "conceito": "As fraturas do **colo do rádio** representam **5% a 10% das fraturas do cotovelo** e **1% a 3% de todas as fraturas** no resumo. A idade mediana é **9 a 10 anos**, com meninas cerca de dois anos antes, e **30% a 50%** apresentam outra fratura/lesão no cotovelo. A alternativa C reúne esses dados (Rockwood and Wilkins, 10ª edição, capítulo 11).\n\nCada percentual precisa conservar seu **denominador**: 5% a 10% não é a participação entre todas as fraturas do esqueleto. O resumo cita epicôndilo medial, luxação e olécrano entre as associações. Portanto, diagnosticar o colo não encerra a procura de outra lesão.\n\nA **cabeça isolada** é incomum e costuma corresponder a **Salter–Harris IV**. Isso difere do predomínio do colo e importa porque a superfície articular merece atenção própria, particularmente se houver subluxação radiocapitelar posterior.\n\n**Na prova:** guardar a combinação idade, proporção no cotovelo e associações. Não transformar uma distribuição etária resumida em um limite que exclua a lesão fora dessa idade.\n\n**Por que esta questão foi criada.** É uma questão de projeção para contrastar os denominadores da epidemiologia, a idade mediana e a necessidade de procurar lesões associadas no cotovelo infantil.",
+      "correta": "Alternativa C. Os três elementos correspondem aos números do capítulo e mantêm o denominador das fraturas do cotovelo. A associação frequente justifica examinar todo o segmento, não apenas o colo.",
+      "incorretas": {
+        "A": "A predominância abaixo de 5 anos não corresponde à mediana de 9 a 10 anos apresentada. Esse componente já torna a afirmação incorreta; não é necessário inventar uma razão numérica em relação às supracondilianas para rejeitá-la.",
+        "B": "Inverte a distribuição descrita: a cabeça isolada é incomum, em geral Salter–Harris IV, e não a sede predominante com padrão III. Colo e cabeça articular não devem ser tratados como uma única entidade epidemiológica.",
+        "D": "Contraria os 30% a 50% de associações informados. A busca por luxação e outras fraturas do cotovelo faz parte da leitura do conjunto, mesmo que a alteração mais evidente esteja no rádio proximal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: mecanismo, imagem e classificação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: mecanismo, imagem e classificação"
+        ],
+        "blocos": [
+          "radio-proximal-mecanismo-imagem-e-classificacao-3d6f8ae0",
+          "radio-proximal-mecanismo-imagem-e-classificacao-8b5ba824"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "0f17baeae209ed6ef278dc38b20c750ea4fb4fd0d76f631aff9ed0a83f794d26"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1272": {
+    "questaoSha256": "1a7f167c5adec3918e2d34129290dfbfcfce558af8d98abb515ca48231123188",
+    "comentarioAnteriorSha256": "a995b6e4899e2a9176380962be258b1d8b0b1150aa2ec1684e2dc41fae44ecb4",
+    "comentario": {
+      "conceito": "Neste menino de **6 anos**, os **40°** de angulação estão abaixo do limite de **45° para menores de 10 anos** do resumo. Não há translação, a cabeça permanece alinhada ao capítulo e a rotação é completa. O conjunto favorece **tratamento não operatório com imobilização curta**, alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 11).\n\nA decisão não depende só do ângulo: o capítulo exige desvio **menor que 2 mm**, rotação completa e alinhamento radiocapitelar. A translação é mal tolerada pelo **efeito came**, isto é, o desalinhamento interfere na rotação. O exame sob anestesia local ajuda a distinguir bloqueio mecânico de limitação pela dor.\n\nA imobilização não operatória descrita é de **1 a 3 semanas**. O limiar angular é menor nos maiores de 10 anos: **menos de 30°**. Assim, aplicar a regra de 30° indistintamente a uma criança de 6 anos elimina a distinção etária que a questão testa.\n\n**Na prova:** cruzar idade, ângulo, translação, rotação e alinhamento antes de escolher cirurgia. Quando redução é necessária, existem métodos fechados e percutâneos; o número isolado não impõe abertura e placa.\n\n**Por que esta questão foi criada.** É gêmea do SBOT-SP (`pediatria-0926`), que perguntou o tratamento da fratura isolada do colo com 40 graus aos 5 anos, e do TARO 2006 (`pediatria-0815`), que afirmou ser a redução aberta o tratamento acima de 30 graus. As duas estão sem gabarito oficial; o capítulo sustenta o tratamento conservador na primeira e nega a afirmação da segunda (primeiro, métodos fechados). Depois, faça as oficiais.",
+      "correta": "Alternativa B. Todos os critérios informados são favoráveis ao manejo não operatório na faixa etária: 40° abaixo de 45°, ausência de translação, cabeça alinhada e arco rotacional completo.",
+      "incorretas": {
+        "A": "Abertura com placa não é exigida por esse conjunto estável e dentro dos critérios não operatórios. O resumo descreve opções fechadas antes de recorrer à redução aberta quando existe indicação de redução.",
+        "C": "Usa 30° como limite universal e ignora a tolerância abaixo de 10 anos. A haste intramedular é uma técnica para fraturas que precisam de redução/fixação, não uma obrigação por ultrapassar 30° nesta criança.",
+        "D": "A excisão é uma salvação de resultado ruim no resumo. Retirar a cabeça não é uma alternativa proporcional para uma fratura isolada com rotação e alinhamento preservados e critérios não operatórios atendidos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: tratamento"
+        ],
+        "blocos": [
+          "radio-proximal-tratamento-bb1be85f",
+          "radio-proximal-tratamento-18c3f92b"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "a5dc33641ed044fc51fb572bf840e871d2f605ed852d28e6494c944286e4d7e2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1273": {
+    "questaoSha256": "dc59abd39847638d234fea3cd1c7cb4e26dd45840dceb98fa05b60c7059abf02",
+    "comentarioAnteriorSha256": "c7e178755d1e1283848b90f9ecbc79aae7ec62c5db77729d850724e8ab37b5e0",
+    "comentario": {
+      "conceito": "A técnica de **Patterson** combina **tração, supinação do antebraço, varo no cotovelo e pressão lateral direta sobre a cabeça radial**. Portanto, corresponde à alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 11).\n\nA tração ajuda a desimpactar, e a pressão é dirigida ao fragmento da cabeça, na posição de **maior saliência lateral** descrita no resumo. O varo e a supinação integram a manobra de redução; não devem ser trocados pelo valgo que produziu a lesão.\n\nO capítulo descreve outras técnicas e ressalta que **nenhuma é superior**: a israelense utiliza **90° de flexão e pronação**; Monson usa supinação e pressão na **diáfise**. Local de aplicação da força e posição do antebraço são as diferenças úteis para reconhecer os nomes.\n\n**Na prova:** identificar a combinação completa, em vez de escolher pelo único termo “supinação”. A manobra fechada não equivale a uma indicação automática de abertura se a primeira tentativa não alcançar a posição desejada: há métodos assistidos e avaliação da estabilidade.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2008 (`pediatria-0748`), que perguntou em que consiste a técnica de PATTERSON (varo com antebraço em supinação; a oficial está sem gabarito, e o capítulo sustenta essa resposta). Depois, faça a oficial.",
+      "correta": "Alternativa D. É a sequência de Patterson apresentada: tração, antebraço supinado, varo e pressão lateral na cabeça. A pressão no fragmento diferencia a manobra daquela dirigida à diáfise.",
+      "incorretas": {
+        "A": "Substitui supinação e varo por pronação e valgo e ainda muda o lado da pressão. Esses componentes não reproduzem a manobra de Patterson do resumo.",
+        "B": "A combinação de 90° e pronação corresponde à descrição resumida da técnica israelense. Mesmo com pressão junto à cabeça, não é a posição característica de Patterson.",
+        "C": "A supinação isolada não basta para identificar Patterson. Pressão dirigida à diáfise é a característica atribuída a Monson no capítulo, enquanto Patterson aplica pressão lateral na cabeça."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: tratamento"
+        ],
+        "blocos": [
+          "radio-proximal-tratamento-18c3f92b"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "4929eb37306a28f72145226c897e67dad9ba4ee483530604a8e32161ca4873fa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1274": {
+    "questaoSha256": "69cbf91180d892a2ff525226252547ea08ce83b64ca2a6bf3f4592e2cb1afdbb",
+    "comentarioAnteriorSha256": "0fb85150e6c4dfbfbf6cf9b3fd37ff6c96a66df3820d03b06bc3e2f6ef2534dd",
+    "comentario": {
+      "conceito": "Em **Chambers I**, a cabeça está desviada; o subgrupo **IB** corresponde à **Salter–Harris IV**, a única fratura articular da cabeça no imaturo nesse esquema. É a alternativa C, que abrevia o subgrupo como B (Rockwood and Wilkins, 10ª edição, capítulo 11).\n\nA classificação separa essa lesão da **IA, Salter–Harris I ou II**, e da **IC metafisária**. O fato de o fragmento estar no rádio proximal não significa que todas essas fraturas tenham o mesmo comprometimento articular.\n\nO resumo alerta para **subluxação radiocapitelar posterior após fratura aparentemente banal da cabeça**, relacionada ao colateral ulnar lateral, no grupo de lesões **TRASH**; recomenda ressonância. Os autores passaram a ser mais agressivos nas fraturas articulares, com ressonância e fixação. Esse cuidado explica a atenção especial ao caso em que a cabeça não permanece congruente.\n\n**Na prova:** reconhecer IB/Salter–Harris IV e procurar incongruência, sem confundir a letra do subtipo com a letra da resposta. Na evolução do rádio proximal, o resumo ainda descreve consolidação viciosa com erosão do capítulo; uma aparência inicial discreta não encerra a avaliação.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A fratura articular SALTER-HARRIS IV da cabeça é a que o capítulo pede para vigiar de perto.",
+      "correta": "Alternativa C. O tipo B citado na opção corresponde ao IB de Chambers: Salter–Harris IV e comprometimento articular. A associação com subluxação posterior exige atenção à congruência e à lesão ligamentar, não apenas ao ângulo do colo.",
+      "incorretas": {
+        "A": "O subgrupo IA é Salter–Harris I ou II no esquema apresentado. Não é a categoria definida como única articular da cabeça, que pertence ao IB/IV.",
+        "B": "IC é metafisária. A localização no colo/metáfise não reproduz a passagem articular que distingue Salter–Harris IV no subgrupo IB.",
+        "D": "ID descreve o evento ligado à redução da luxação, com a cabeça atrás; IE, o evento na luxação, com a cabeça à frente. Essa descrição do mecanismo não substitui a categoria articular IB perguntada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: mecanismo, imagem e classificação; Rádio proximal: tratamento; Rádio proximal: complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: mecanismo, imagem e classificação",
+          "Rádio proximal: tratamento",
+          "Rádio proximal: complicações"
+        ],
+        "blocos": [
+          "radio-proximal-mecanismo-imagem-e-classificacao-09a3b151",
+          "radio-proximal-mecanismo-imagem-e-classificacao-8b5ba824",
+          "radio-proximal-tratamento-18c3f92b",
+          "radio-proximal-complicacoes-906c49c4"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "541bee6eb4672f6de87ab39564233d8edd093a7bc16edb0619cfe15f206aef6f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1276": {
+    "questaoSha256": "a9b9ab545c5acdec56daeb50026f69754c888ebf21832581e9d8ce39a2412bcc",
+    "comentarioAnteriorSha256": "7d959bcad413f254ec4a0001fb4e9e641d2799e3130aa1fc0cb0535f38dbba25",
+    "comentario": {
+      "conceito": "Para a redução assistida por fio, o resumo pediátrico indica **entrada lateral direta e antebraço em pronação**. A alternativa B acrescenta evitar afastamento anterior vigoroso, coerente com a orientação anatômica do resumo adulto de **não colocar afastador à frente do colo** para proteger o **nervo interósseo posterior** (Rockwood and Wilkins, 10ª edição, capítulo 11; complemento anatômico no Rockwood and Green, 10ª edição, capítulo 40).\n\nA pronação é uma medida de proteção, não uma autorização para avançar sem controle. O complemento recomenda não dissecar abaixo da tuberosidade do bíceps sem visualizar o nervo. Aqui ele é utilizado para a **topografia neural da via lateral**, sem transportar decisões de fixação ou tratamento do adulto para a criança.\n\nNo capítulo pediátrico, a lesão do interósseo posterior é em geral **iatrogênica e transitória**. A referência de exploração se não recuperar em **3 a 4 meses** se aplica à evolução dessa lesão; não transforma a exposição do nervo em rotina obrigatória antes de toda redução percutânea.\n\n**Na prova:** associar pronação, acesso lateral e proteção anterior. Evitar agressão ao nervo depende tanto da posição quanto da trajetória e do uso dos instrumentos.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre a proteção do nervo interósseo posterior durante a redução, relacionando a posição do antebraço, a entrada lateral e o uso dos instrumentos.",
+      "correta": "Alternativa B. Combina a posição e a entrada descritas no resumo infantil com a cautela anterior explicitada no complemento anatômico. Nenhum desses cuidados deve ser substituído por confiança exclusiva na posição do antebraço.",
+      "incorretas": {
+        "A": "A supinação não é a posição protetora recomendada e a entrada anterior contraria a entrada lateral direta descrita para o fio. A região anterior do colo exige cautela com instrumentos pelo risco neural.",
+        "C": "O resumo orienta prevenção com posicionamento e técnica e discute exploração diante da falta de recuperação de uma lesão. Não impõe exploração prévia de rotina para toda redução percutânea.",
+        "D": "A entrada medial junto à ulna não corresponde à trajetória lateral direta descrita. Mudar o lado da entrada não é uma medida de proteção do nervo sustentada pelo capítulo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento; Rádio proximal: complicações.",
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: tratamento",
+          "Rádio proximal: complicações"
+        ],
+        "blocos": [
+          "radio-proximal-tratamento-18c3f92b",
+          "radio-proximal-complicacoes-906c49c4"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "881698075b6762cf2a670a900fd419cae99d2296f8d37509f3305a08523cb6fc"
+      },
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-109bc9e4"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "9147454a74bc37cbffbe4b4f328824ccb031e127f4145783e8aa0e262380ccbc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1277": {
+    "questaoSha256": "72f8299bd9ed764362dacd57b95899ac3aed7b1580febf56eb73e8816d4372bf",
+    "comentarioAnteriorSha256": "2ecee6f732c6110ef4cc6a47f7b9f089ab0a55b25f8b7f35a9fd99d78f5bb478",
+    "comentario": {
+      "conceito": "A sequela motora descrita com maior frequência é a perda de **pronação**, maior que a de supinação. A alternativa C é a resposta; **flexão e extensão raramente** são as limitações predominantes no resumo (Rockwood and Wilkins, 10ª edição, capítulo 11).\n\nO rádio proximal participa do giro do antebraço, e o capítulo distingue **rotação** do arco de dobrar/estender o cotovelo. Na avaliação aguda já destaca dor à rotação e, no tratamento, exige rotação completa para aceitar determinado alinhamento. Translação é mal tolerada pelo **efeito came**: geometria e função precisam ser examinadas juntas.\n\nNa evolução, a perda de movimento é a complicação mais comum e **pouco melhora após 6 meses**, segundo o resumo. Isso fundamenta o aconselhamento sem prometer recuperação ilimitada. Supercrescimento, fechamento fisário, osteonecrose e sinostose são outras complicações; não são sinônimos de todo caso com limitação de rotação.\n\n**Na prova:** a comparação pedida é entre movimentos. Lembrar “perde rotação” ainda não distingue as duas respostas possíveis: o resumo especifica **pronação mais que supinação**.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0564`), que perguntou o movimento mais comprometido na sequela da fratura da cabeça e do colo do rádio (pronação), e do TARO 2010 (`pediatria-0841`), que perguntou o mesmo e está sem gabarito (o capítulo sustenta a pronação). Depois, faça as oficiais.",
+      "correta": "Alternativa C. É o movimento explicitamente mais comprometido na sequela. A resposta mantém a distinção entre pronação e supinação, em vez de reunir ambas sob uma limitação inespecífica de rotação.",
+      "incorretas": {
+        "A": "Flexão pertence ao arco de dobrar o cotovelo. O resumo descreve sua perda como rara em comparação com a limitação rotacional, não como a sequela motora mais frequente.",
+        "B": "Extensão também é pouco comprometida em comparação com a rotação no capítulo. Não deve ser escolhida apenas porque rigidez em extensão é lembrada em outras lesões do cotovelo.",
+        "D": "Supinação pode estar reduzida, mas o resumo estabelece que a pronação se perde mais. A alternativa é próxima por pertencer ao mesmo arco rotacional, porém inverte a comparação explícita."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: complicações; Rádio proximal: tratamento; Rádio proximal: mecanismo, imagem e classificação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: complicações",
+          "Rádio proximal: tratamento",
+          "Rádio proximal: mecanismo, imagem e classificação"
+        ],
+        "blocos": [
+          "radio-proximal-complicacoes-906c49c4",
+          "radio-proximal-tratamento-bb1be85f",
+          "radio-proximal-mecanismo-imagem-e-classificacao-8b5ba824"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "c3b521229cfcadf34b9d2b9cfbd89a9b18fa21d6ab854f14434f91d22a7fab7c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1278": {
+    "questaoSha256": "7926e86426e1f6e8d10b0b5f30fb20b9e2029b51d7feefc840a07b65c7ab5509",
+    "comentarioAnteriorSha256": "315760c6eba5a2fde68d69d81772315ea707984d1994d63efe231ca097ba82f0",
+    "comentario": {
+      "conceito": "Os fatores de mau prognóstico são **maior desvio, idade acima de 10 anos, alta energia e lesões associadas**. O menino tem 12 anos, grande desvio e luxação associada: reúne vários elementos desfavoráveis, como descreve a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 11).\n\nO resumo informa resultados ruins em **15% a 33%**, chegando a **50% nas muito desviadas**. Esses números não permitem calcular a chance individual somando fatores. Servem para explicar por que esse quadro exige aconselhamento diferente de uma fratura pouco desviada e isolada na criança menor.\n\nOs resultados do tratamento fechado são melhores que os do aberto no capítulo. A abertura se associa a **osteonecrose e sinostose radioulnar**; o resumo cita osteonecrose de **10% a 20%**, com **25% na redução aberta**. A gravidade que levou à abertura também importa: não usar a comparação como se os grupos fossem equivalentes ou como proibição de abrir uma fratura que não possa ser adequadamente reduzida por outros métodos.\n\n**Na prova:** reconhecer o conjunto de risco e preferir métodos menos invasivos quando adequados, preservando congruência e função. Evitar abertura desnecessária é diferente de aceitar uma posição ruim a qualquer custo.\n\n**Por que esta questão foi criada.** É uma questão de projeção para orientar o aconselhamento da família a partir da idade, do desvio e das lesões associadas, distinguindo risco da fratura e complicações do tratamento.",
+      "correta": "Alternativa A. Reúne os quatro fatores descritos e as complicações associadas à redução aberta. No caso, idade, desvio e luxação sustentam o aconselhamento cauteloso; não se deve prometer um resultado a partir apenas da técnica escolhida.",
+      "incorretas": {
+        "B": "Idade abaixo de 5 anos não está entre os fatores de mau prognóstico listados; o capítulo destaca idade acima de 10 anos. A opção não representa o perfil etário e de gravidade do menino.",
+        "C": "Fratura isolada e pouco angulada não reúne o conjunto de maior desvio e lesões associadas descrito. Critérios de tratamento ainda exigem avaliar translação, rotação e alinhamento, mas esse cenário não corresponde aos fatores de risco perguntados.",
+        "D": "Tratamento fechado bem-sucedido não é um fator desfavorável na comparação do resumo, que o relaciona a resultados melhores que os do aberto. Não confundir a necessidade de acompanhar a criança com atribuir mau prognóstico ao sucesso da redução fechada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: complicações; Rádio proximal: tratamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: complicações",
+          "Rádio proximal: tratamento"
+        ],
+        "blocos": [
+          "radio-proximal-complicacoes-906c49c4",
+          "radio-proximal-tratamento-18c3f92b"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "e0d9fa7434d6db26efbf12b3687f4f7ba7f3fad746417592936c1393b2071025"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
