@@ -1,0 +1,100 @@
+---
+id: rockwoodcriancas10-06-sindrome-compartimental
+versao: 1
+titulo: Síndrome compartimental na criança
+especialidade: pediatria
+acesso: gratis
+livro: Rockwood and Wilkins' Fractures in Children
+edicao: 10ª edição (2025)
+capitulo: Capítulo 6 · Compartment Syndrome in Children
+autores: Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic
+fonte: Livro conferido localmente em 28/10/2026, capítulo 6. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+subtemas: Outras fraturas na criança
+resumo: Três As (ansiedade, agitação, mais analgésico) no lugar dos seis Ps; pressão basal mais alta na criança e decisão clínica seriada; supracondiliana com lesão do mediano, cotovelo flutuante e MONTEGGIA operado; flexor profundo do antebraço; perna (13 anos, 50 kg, hastes flexíveis, quatro compartimentos); mão, coxa e pé; sem fratura, do esforço e neonatal; VOLKMANN de TSUGE e tratamento; prognóstico.
+---
+
+# Como ler este capítulo {radar=fundamento}
+
+Este resumo é inspirado no capítulo 6 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
+
+A banca cobra a síndrome compartimental da criança pelo cotovelo: a **supracondiliana** de risco e a **contratura de VOLKMANN**. O capítulo acrescenta o diagnóstico próprio da criança (três As, pressão basal mais alta), a técnica de cada segmento e o prognóstico.
+
+> **Na prova:** criança = **três As** (ansiedade, agitação, **mais analgésico**); pulso presente **não afasta**; pressão **absoluta 30** ou **delta menor que 30**, mas a criança tem basal **mais alta**: decidir pela **clínica seriada**; primeiro passo: **tirar gesso e curativos**, membro **na altura do coração**.
+
+# Diagnóstico na criança {radar=confirmado}
+
+Causas intrínsecas (fratura, partes moles, lesão vascular, infiltração venosa ou intraóssea, coagulopatia, reperfusão, osteotomias) e extrínsecas (**gesso**, curativos compressivos, calça antichoque, escara); a **flexão excessiva no gesso longo** está entre as causas. Até **4 vezes mais em meninos** (Tabela 6-1). Os **seis Ps** são pouco confiáveis na criança; a **paralisia é tardia**. Valem os **três As**: **ansiedade**, **agitação** e **aumento da necessidade de analgésico** (BAE: o preditor mais confiável). **Dor desproporcional** e ao **estiramento passivo** é precoce; edema e dor crescente em **100%** numa série de 21. Existe a síndrome **silenciosa**, sem dor (lesão nervosa).
+
+**Pressões**: **absoluta 30 mmHg ou mais**; **delta** = diastólica **menos** compartimento, diagnóstica **abaixo de 30**. Basal da perna: adulto **5,2 a 9,7**, criança **13,3 a 16,6 mmHg**; de 15 antebraços com mais de 30, **só 1** fez a síndrome. Sem padrão-ouro: **exame seriado** e **fasciotomia com sinais clínicos e pressões elevadas**; medir sob sedação, em vários pontos, perto da fratura; monitorar mais tempo (o pico pode vir tarde). O infravermelho próximo ainda precisa de validação.
+
+**Primeiro passo**: retirar **gesso, algodão e curativos circulares**; membro **nem pendente nem acima do coração** (elevar piorou fluxo e oxigenação); tratar choque e hipóxia.
+
+!questoes central=pediatria-0666 treino=pediatria-1038,pediatria-1315,pediatria-1316,pediatria-1317
+conceito: Na criança, ansiedade, agitação e necessidade crescente de analgésico avisam antes dos seis Ps; a pressão basal é mais alta e a decisão é clínica seriada; o primeiro passo é tirar gesso e curativos, com o membro na altura do coração.
+como: TARO 2012 perguntou com que tratamento a isquemia de VOLKMANN na supracondiliana GARTLAND III é mais comum (gesso com flexão do cotovelo); o capítulo cita a flexão excessiva no gesso longo entre as causas.
+armadilha: Aumentar a analgesia da criança agitada sem examinar o membro, ou confiar no pulso presente.
+!fim
+
+# Membro superior e antebraço {radar=confirmado}
+
+O **antebraço** é o mais acometido, com fratura dos dois ossos ou **supracondiliana** (cerca de **1%** após lesões do membro superior; supracondiliana isolada **0,2%**, com lesão neurovascular **4,5%**). Alto risco: supracondiliana com **lesão do mediano** (dor mascarada), **cotovelo flutuante** (até **33%**), **MONTEGGIA operado** (**15,3%** contra **0,9%** da supracondiliana III operada), tempo cirúrgico e de fluoroscopia longos, **sexo masculino**.
+
+!tabela Compartimentos do antebraço (Tabela 6-2, cap. 6)
+| Compartimento | Conteúdo |
+| --- | --- |
+| Volar superficial | Flexor radial do carpo, palmar longo, pronador redondo, flexor ulnar do carpo, flexor superficial dos dedos |
+| Volar profundo | Flexor profundo dos dedos, flexor longo do polegar, pronador quadrado; nervo e artéria interósseos anteriores |
+| Dorsal | Musculatura móvel (braquiorradial, extensores radiais) e extensores |
+!fim
+
+**Fasciotomia**: incisão volar extensível (do braço ao túnel do carpo); abrir a fáscia antebraquial do lacerto ao punho; o **flexor profundo**, **primeiro e mais afetado**, pelo intervalo **flexor ulnar do carpo e flexor superficial** (o passo mais importante); músculo pálido: abrir o **epimísio**; dorsal se ainda tenso.
+
+**Mão**: **10 compartimentos**; começar pelo **túnel do carpo estendido**; interósseos por incisões dorsais entre **2º-3º** e **4º-5º** metacarpais e no **primeiro espaço**; tenar e hipotenar separadas; dedos tensos: **dermotomia médio-axial** (CLELAND e GRAYSON comprimem os vasos digitais).
+
+!questoes central=pediatria-0850 treino=pediatria-1318,pediatria-1319,pediatria-1324
+conceito: No membro superior, a síndrome é do antebraço; supracondiliana com lesão do mediano, cotovelo flutuante e MONTEGGIA operado são os padrões de alto risco; o flexor profundo é o compartimento mais afetado.
+como: TEOT 2021 perguntou em que supracondiliana a síndrome compartimental é mais frequente (extensão com lesão do nervo mediano). TARO 2006 afirmou que, no VOLKMANN do antebraço, os flexores radial e ulnar do carpo são os mais acometidos.
+armadilha: Liberar só a fáscia superficial e deixar o compartimento flexor profundo fechado.
+alerta: O TARO 2006 (`pediatria-0827`) está sem gabarito oficial. O capítulo aponta o compartimento flexor profundo (flexor profundo dos dedos e flexor longo do polegar) como o primeiro e mais afetado; os flexores do punho entram só na forma grave de TSUGE, o que não sustenta a afirmação.
+!fim
+
+# Membro inferior {radar=oportunidade}
+
+**Perna**: a apresentação **mais comum** na criança (0,6% das fraturas da tíbia, **5,5%** das expostas, **7,4%** após a alta). Risco: **14 anos ou mais** (acima de 13 **quadruplica**), IMC alto, **cominutiva**, **fíbula** fraturada, **mais de 50 kg**, déficit neurológico, **hastes flexíveis**, osteotomias. Abrir **os quatro** compartimentos (anterior, lateral, posterior superficial e profundo), por **uma ou duas incisões** (Tabela 6-4, Fig. 6-10).
+
+**Coxa**: rara (trauma, calça antichoque, lesão vascular, tração); **3 compartimentos** (anterior, medial, posterior); incisão **lateral longa**, às vezes medial. **Pé**: raro, **esmagamento**, LISFRANC; **9 compartimentos**; **duas incisões dorsais** (2º e 4º metatarsais) e muitas vezes uma medial. Na criança com crescimento a fazer, **limiar baixo** (risco de **parada fisária**), ao contrário da tendência em alguns adultos (Tabelas 6-3 e 6-5).
+
+!questoes treino=pediatria-1320,pediatria-1325
+conceito: A perna é o local mais comum; adolescente grande, cominutiva, fíbula fraturada e hastes flexíveis aumentam o risco, e liberam-se os quatro compartimentos; no pé da criança, o limiar é baixo pela fise.
+como: Questões de projeção; nenhuma questão oficial do conjunto analisado cobrou a síndrome compartimental da perna, da coxa ou do pé da criança.
+armadilha: Liberar só os compartimentos anterior e lateral, ou dispensar a fasciotomia do pé de uma criança.
+!fim
+
+# Formas especiais e tratamento {radar=oportunidade}
+
+**Sem fratura**: 39 casos, **74% na perna**, causa mais comum **lesão vascular**, atraso de até 48 horas, **mionecrose em 54%**; infiltração venosa (crianças **40%** dos casos). **Do esforço**: isquemia **reversível**, **adolescente corredora**; refratária: fasciotomia (retorno **79,5%**; dois compartimentos em vez de quatro: reoperação **3,4 vezes**). **Neonatal**: lesões de pele confundidas, diagnóstico tardio; contratura estabelecida **não melhora**. Lactente: atraso **mais de 24 horas**, bons resultados mesmo com fasciotomia em 48 a 72 horas.
+
+**Tratamento**: fasciotomia de emergência; **na dúvida, não ressecar** (a criança recupera muito); necrótico = cinza, marrom ou preto, fétido, sem contração; reavaliações seriadas; incisões **abertas**, sem suturas de retenção, troca em **24 a 48 horas**; só o túnel do carpo fecha retardado. Tardia sem função em nenhum segmento: **sem fasciotomia**, órtese funcional, **hidratação** contra a mioglobinúria.
+
+!questoes treino=pediatria-1321,pediatria-1322,pediatria-1323
+conceito: A síndrome sem fratura, a do esforço e a neonatal atrasam ou têm perfil próprio; na fasciotomia da criança, só se resseca o que é claramente necrótico.
+como: Questões de projeção; nenhuma questão oficial do conjunto analisado cobrou as formas especiais ou o desbridamento.
+armadilha: Ressecar todo o músculo duvidoso no primeiro tempo.
+!fim
+
+# Contratura de VOLKMANN e prognóstico {radar=confirmado}
+
+**TSUGE**: **leve** (flexor profundo do **médio e anular**, adulto jovem, trauma direto); **moderada** (FPD e FLP, superficial parcial, **mediano pior**, **intrínseca negativa**, **supracondiliana de 5 a 10 anos**); **grave** (todos os flexores dos dedos e do punho, contraturas fixas). Tratamento: **órteses e terapia primeiro**; **não encurtar** rádio e ulna; excisão do infarto, alongamentos, **deslizamento dos flexores**, neurólise, transferências, **transferência muscular livre funcional**; artrodeses **após a maturidade**; alongamento isolado **recidiva**; órtese funcional até os 18 anos.
+
+**Prognóstico**: bons a excelentes em **mais de 90%**; piores no membro superior e sem fratura. O **tempo** de pressão elevada é o fator principal (adulto **8 horas**; criança, risco após **6 a 8 horas**), mas há bons resultados até **72 horas**, sem justificar atraso. Processos: **73%** dos casos fechados a favor do paciente.
+
+!questoes central=pediatria-0827 relacionadas=pediatria-0666 treino=pediatria-1326,pediatria-1327,pediatria-1328,pediatria-1329
+conceito: A contratura de VOLKMANN moderada de TSUGE é a da supracondiliana dos 5 aos 10 anos; trata-se primeiro com terapia, depois com cirurgias de partes moles, nunca com encurtamento ósseo.
+como: TARO 2012 perguntou com que tratamento o VOLKMANN é mais comum na supracondiliana GARTLAND III (gesso com flexão do cotovelo); TARO 2006 cobrou os músculos mais acometidos.
+armadilha: Indicar encurtamento do rádio e da ulna ou cirurgia imediata.
+alerta: O TARO 2006 (`pediatria-0827`) está sem gabarito oficial; pela classificação de TSUGE do capítulo, o centro da lesão é o flexor profundo, não os flexores do carpo.
+!fim
+
+# Fechamento {radar=fundamento}
+
+> **Na prova:** **três As**; pulso presente **não afasta**; criança tem pressão basal **mais alta** (decisão **clínica**); **tirar gesso**, membro **na altura do coração**; alto risco: supracondiliana com **lesão do mediano**, **cotovelo flutuante** (33%), **MONTEGGIA operado** (15,3%); antebraço = **flexor profundo**; perna = **mais comum**, **quatro** compartimentos; mão **10**, coxa **3**, pé **9**; na dúvida, **não ressecar**; VOLKMANN moderado = **supracondiliana 5 a 10 anos**; **terapia primeiro**, **sem encurtamento ósseo**; mais de **90%** bons.
