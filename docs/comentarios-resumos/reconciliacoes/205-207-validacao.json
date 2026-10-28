@@ -407,7 +407,7 @@
     "lacunasComentariosIntactos": 20,
     "demaisBytesPreservados": true,
     "motivosCriacaoConferidos": 10,
-    "ui": "10/10casos em390/1440 aprovados,resposta,comentário,alertas quando presentes e links exatos. Captura inicial205 para inspeção visual."
+    "ui": "13/13casos390/1440 com resposta,aula,alerta e links exatos,após correção de referências;teste funcionalDCBA nos4casos corrigidos."
   },
   "inventario": {
     "resumos": 52,
@@ -554,5 +554,13 @@
     "maoDaBaseInalterado": true,
     "catalogo": "Preservadas todas as anotações remotas;reaplicadas apenas20pendências próprias e removidas2lacunas agora resolvidas. Catálogo integral recomposto."
   },
-  "validacaoPosReconciliacao": "Fixtures,acervo,npm test,build,replay10/10,preservação integral dos118concorrentes eUI10/10em390/1440 repetidos eaprovados na baseb763. ExigirCIdoheadatual antes de merge."
+  "validacaoPosReconciliacao": "Fixtures,acervo,npm test,build,replay10/10,preservação integral dos118concorrentes eUI10/10em390/1440 repetidos eaprovados na baseb763. ExigirCIdoheadatual antes de merge.",
+  "revisaoHead0fe190da": {
+    "achado": 4403588666,
+    "problema": "Referências à letraA emconceito/alerta demao2442 não acompanhavam embaralhamento.",
+    "correcao": "Padronizadas referências como alternativaA;mesmo padrão corrigido em2320/1796/1935 doPR611. Nenhum conteúdo médico,gabarito,enunciado ou alternativa alterado. Aplicação formal em207-correcoes-referencias-letras.json;canonical207mantém hash do comentário original anterior à revisão.",
+    "replay": "10miniaulas+3correções de referências de comentários já revisados;20lacunas intactas e118concorrentes preservados.",
+    "validacao": "Fixtures,acervo,npm test,build,auditoria eUI13/13em390/1440 aprovados. Teste funcional de reordenarComentario DCBA confirmouB→C eA→D emalerta,conceito e resposta dos4casos.",
+    "pendente": "ExigirCI e revisão do novohead,comthread antiga resolvida apóspush."
+  }
 }
