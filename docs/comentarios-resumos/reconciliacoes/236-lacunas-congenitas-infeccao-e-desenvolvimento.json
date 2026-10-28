@@ -1,0 +1,172 @@
+[
+  {
+    "id": "pediatria-0757",
+    "questaoSha256": "45584416016d93235b77e9f6e539a53457968ba9a7e96fc93abdccd50c5b2460",
+    "comentarioAnteriorSha256": "a4e34a2eeb079d10578d83d888d0df662c809c260d13332e2d132e89df5d78c1",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Falta no resumo21 anatomia da viaMASTÓIDEA do torcicolo congênito e risco aoACESSÓRIO,comparado a facial,hipoglosso e laríngeo. Sem gabarito oficial,sem resposta única demonstrada nas fontes;semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0758",
+    "questaoSha256": "1441ea3430a07804cab0535389c6440f30bf78ad402832089ba99e58ba0ca43c",
+    "comentarioAnteriorSha256": "c8a66c1fe127d9feedd37289e2a37bd01607b040df3c5313ff01f4157642b222",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-31-pe",
+        "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo31 de trauma não descreve métodoPONSETI e FULCRO na bordaLATERAL DO TÁLUS,nem compara calcaneocuboide,maléolo e calcâneo. Sem gabarito oficial,semprovavel sem técnica independente.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0761",
+    "questaoSha256": "717760c19426440369f1c10f0c25828a411309dbc4049ea5b57d73155e8db0dc",
+    "comentarioAnteriorSha256": "fdfc21b3e560d30371989f38cb085d1eb96c146087ab7d0625f26b9026775ce1",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos23/24 não tratam DEFEITO FOCAL PROXIMAL do fêmur e associação com INSTABILIDADE ANTEROPOSTERIOR do joelho. Falta anatomia ligamentar congênita e frequência dos padrões. Sem gabarito oficial,não atribuirprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0763",
+    "questaoSha256": "4dd982cd10c4f7a8347cc9c6f24753ff521af82cfaf20dfb651581355aff6a0e",
+    "comentarioAnteriorSha256": "e4c24b812e37cb20c2478805a9c35d463d2704a596b4902c0b04606aebccd715",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-23-pelve-acetabulo",
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+      },
+      {
+        "id": "rockwoodcriancas10-24-quadril",
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos23/24 não estabelecem relação geométrica/valores entre ÍNDICE ACETABULAR40° e CENTRO-BORDA deWIBERG naDDQ. Falta método e limiar independente,não deduzir uma soma angular de memória. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0771",
+    "questaoSha256": "98c9f45ac3d2122782fe8351d4f9f5c557f6003f15575167e6963bacb3d1d5c6",
+    "comentarioAnteriorSha256": "fd3341560a7c210a03bc7ab87513dc4d2f687b95d686a305ebe60bd1c7d3a236",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo21 não descreve a via proximal doECMcongênito e risco aoACESSÓRIO versus facial,hipoglosso e vago. Falta anatomia cirúrgica independente. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0776",
+    "questaoSha256": "a8b36d2b61b17fda764f3e5303b127e52023283e22dff3370f867b689f3af279",
+    "comentarioAnteriorSha256": "158d6418feb2c99547ce14098752e756f083449b7e50067c8dd171842bf1d9d8",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-23-pelve-acetabulo",
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+      },
+      {
+        "id": "rockwoodcriancas10-24-quadril",
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos23/24 não quantificam ANTEVERSÃO FEMORAL ao NASCIMENTO e aos16ANOS para comparar as quatro duplas. Falta desenvolvimento angular independente,sem inventar números. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0778",
+    "questaoSha256": "49733bef664db21e414b9271597e894b52658a1aa562ae01f2380fbe0553ca45",
+    "comentarioAnteriorSha256": "1dc6f0f47237c0d8b1174deffd53a9b435f16c9ca4f44e35060ea26784a9dfac",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-23-pelve-acetabulo",
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+      },
+      {
+        "id": "rockwoodcriancas10-24-quadril",
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos23/24 não descrevem a evolução pareada da ANTEVERSÃO e ROTAÇÃO EXTERNA do quadril do nascimento aos10anos. Falta biomecânica do desenvolvimento para conferir aumento/diminuição de cada componente. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0785",
+    "questaoSha256": "5f1853996836a0321678f79b62e5e3fed44a313d526b36a0f7766277fe860c70",
+    "comentarioAnteriorSha256": "653b2be27b53e7982846de7eaac0311a2cd9d08de4fc25a20591e0a5d298d688",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-08-mao-carpo",
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos08 e45 são de trauma/fraturas,não POLEGAR EM GATILHO PEDIÁTRICO e indicação de aberturaA1ouA2por idade6meses/1ano. Falta protocolo independente;sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0793",
+    "questaoSha256": "18c272257f8cef141018665ebd6246e7ac4b120cb5f34729f7e359cf46c9855f",
+    "comentarioAnteriorSha256": "48aeff94b6e2beb1a23764577e26c60d93cd64a0b9cef8dd9e79f6b75f62c6d4",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-23-pelve-acetabulo",
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+      },
+      {
+        "id": "rockwoodcriancas10-24-quadril",
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos23/24 não descrevem OSTEOTOMIA DE SALTER naDDQ e efeito na CONFIGURAÇÃO/CAPACIDADE do acetábulo. Falta técnica e biomecânica independente para julgarCerto/Errado. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0795",
+    "questaoSha256": "db4f2f564db731fa04eb8624e95f24c15c6257636d899e9e10fb9ad1d7b06cf9",
+    "comentarioAnteriorSha256": "02af0f2b9386d28ead5d404f27c2355f3500e945341ac409526156944eea0fd9",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-23-pelve-acetabulo",
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+      },
+      {
+        "id": "rockwoodcriancas10-24-quadril",
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos23/24 não classificam ultrassonografia deGRAF tipoIV,deslocamento inferior,teto e eversão/inversão doLABRUM. Falta definição independente de todos os componentes;sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  }
+]

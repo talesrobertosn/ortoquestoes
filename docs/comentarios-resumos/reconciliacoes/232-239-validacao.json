@@ -1,0 +1,1840 @@
+{
+  "base": "d2c274f00886419f5de7011c048c82a6f5195aa9",
+  "lotes": {
+    "232": {
+      "revisadas": [
+        "pediatria-1335",
+        "pediatria-1339",
+        "pediatria-1340"
+      ],
+      "lacunas": [
+        "pediatria-1334",
+        "pediatria-1336",
+        "pediatria-1337",
+        "pediatria-1338",
+        "pediatria-1341",
+        "pediatria-1342",
+        "pediatria-1343"
+      ]
+    },
+    "233": {
+      "revisadas": [],
+      "lacunas": [
+        "pediatria-1344",
+        "pediatria-0034",
+        "pediatria-0084",
+        "pediatria-0143",
+        "pediatria-0153",
+        "pediatria-0156",
+        "pediatria-0161",
+        "pediatria-0162",
+        "pediatria-0197",
+        "pediatria-0198"
+      ]
+    },
+    "234": {
+      "revisadas": [],
+      "lacunas": [
+        "pediatria-0254",
+        "pediatria-0277",
+        "pediatria-0294",
+        "pediatria-0333",
+        "pediatria-0358",
+        "pediatria-0377",
+        "pediatria-0379",
+        "pediatria-0382",
+        "pediatria-0388",
+        "pediatria-0392"
+      ]
+    },
+    "235": {
+      "revisadas": [],
+      "lacunas": [
+        "pediatria-0434",
+        "pediatria-0473",
+        "pediatria-0491",
+        "pediatria-0553",
+        "pediatria-0670",
+        "pediatria-0680",
+        "pediatria-0727",
+        "pediatria-0733",
+        "pediatria-0740",
+        "pediatria-0745"
+      ]
+    },
+    "236": {
+      "revisadas": [],
+      "lacunas": [
+        "pediatria-0757",
+        "pediatria-0758",
+        "pediatria-0761",
+        "pediatria-0763",
+        "pediatria-0771",
+        "pediatria-0776",
+        "pediatria-0778",
+        "pediatria-0785",
+        "pediatria-0793",
+        "pediatria-0795"
+      ]
+    },
+    "237": {
+      "revisadas": [],
+      "lacunas": [
+        "pediatria-0802",
+        "pediatria-0803",
+        "pediatria-0804",
+        "pediatria-0805",
+        "pediatria-0809",
+        "pediatria-0810",
+        "pediatria-0811",
+        "pediatria-0866",
+        "pediatria-0868",
+        "pediatria-0869"
+      ]
+    },
+    "238": {
+      "revisadas": [],
+      "lacunas": [
+        "pediatria-0870",
+        "pediatria-0871",
+        "pediatria-0872",
+        "pediatria-0878",
+        "pediatria-0879",
+        "pediatria-0881",
+        "pediatria-0882",
+        "pediatria-0883",
+        "pediatria-0885",
+        "pediatria-0886"
+      ]
+    },
+    "239": {
+      "revisadas": [],
+      "lacunas": [
+        "pediatria-0887",
+        "pediatria-0888",
+        "pediatria-0889"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwoodcriancas10-07-patologicas-maus-tratos": {
+      "markdownSha256Bytes": "d975d07ad4d2152e3f2bc61ad363e60763c3077bcf85e46c248fcad2f6f36bbc",
+      "compiladoSha256Bytes": "4f841f5ae3d7169ede85405852b5563529fa537479d5cb384f658b25b1cf9c95"
+    },
+    "rockwoodcriancas10-08-mao-carpo": {
+      "markdownSha256Bytes": "de9d1d385460ce8a0275d4026edb9feafcfe44fdc7d5cfc9bfc4be382ff56eae",
+      "compiladoSha256Bytes": "1c7b39c2868553c7ebf53656eec98dfd24285bdb5f73f1f092529a2d48c74422"
+    },
+    "rockwoodcriancas10-19-ombro-umero": {
+      "markdownSha256Bytes": "b8cffea6c8a99d678d2974c8622d00759abe4cde2ed102ed671d6f6295d3364d",
+      "compiladoSha256Bytes": "57eabf77f025dd6bd0db27b0774c678cefbea0d5a764c066c552b7958d1907f8"
+    },
+    "rockwoodcriancas10-20-clavicula-escapula": {
+      "markdownSha256Bytes": "077e092cc8bb1f99fb0c50bb868a47af888449c282bedadd799d353c09af11ed",
+      "compiladoSha256Bytes": "583b496c7cbcfb55eb61cc9f650f95ac6bceb4faf5b236e14d48fe18736ec1d9"
+    },
+    "rockwoodcriancas10-21-coluna-cervical": {
+      "markdownSha256Bytes": "980864b664c75234f6579503daa0c2c46b1dde22647327185ac770151244f8d1",
+      "compiladoSha256Bytes": "1f700e7cb63d84958d702e701917c5651d18ae9e49306c94ab329f372a61b90b"
+    },
+    "rockwoodcriancas10-22-coluna-toracolombar": {
+      "markdownSha256Bytes": "a0f61ea6048ea5f68b7194f03cc40bb3ead4f96b8dbe75fcd00bea0ea31e33ae",
+      "compiladoSha256Bytes": "0dcd611668d58d155d5497f300db703f5694902b681cd493becc48fb980ffd29"
+    },
+    "rockwoodcriancas10-23-pelve-acetabulo": {
+      "markdownSha256Bytes": "7b54cee891a398ad64d168bf248f393cc0f43521da5cf37cc337bf1cd5e2d2fb",
+      "compiladoSha256Bytes": "e415ae7f1a542604e7abcf8cab7af8755cbbab336e06194dca13f094b60d749c"
+    },
+    "rockwoodcriancas10-24-quadril": {
+      "markdownSha256Bytes": "8e85d4d1e8f246263e94ab2672ef60afdba414571c8b15fb8d644101db7b1659",
+      "compiladoSha256Bytes": "a8ec354b5b2058498d1230a62c742d1753759aee07139fd025083dc46083936c"
+    },
+    "rockwoodcriancas10-28-joelho-intra-articular": {
+      "markdownSha256Bytes": "9aa2d83f578f483487ee3eaab5175f45de16194dce669ab3ce571a742732b2a9",
+      "compiladoSha256Bytes": "473aa9b5dafaf72761c58c5c49f78f7e2cf57792c16ac9358ec6afb7cf66b399"
+    },
+    "rockwoodcriancas10-30-tornozelo": {
+      "markdownSha256Bytes": "3c4412ab3ec4aac05b6974d51eca2dcffea769788857facf6c48e66353ef4bd9",
+      "compiladoSha256Bytes": "00f7548454a956920fc378d61761ef5f7bbf50ffe872e363f415f26da0886e83"
+    },
+    "rockwoodcriancas10-31-pe": {
+      "markdownSha256Bytes": "bcefde81858e506525d6237e21b859bcf3b1f18cc137cb5c959c75c9847535dd",
+      "compiladoSha256Bytes": "76b4b6d000eb23f968a583b6b2810facaa9ac3b2a8b2fd220fe7eb92a5d2572e"
+    }
+  },
+  "leitura": "Todos os11resumos candidatos já integralmente lidos nesta sequência de revisão,com hashes preservados;31integralmente lido nesta passagem. Buscas complementares de termos específicos em toda Biblioteca sem usar notas questoes como prova. As73candidatas foram lidas individualmente,enunciados e todas as alternativas;nenhuma tem figura. Coincidência de subtema não é cobertura.",
+  "referenciasHistoricas": {
+    "pediatria-1335": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Calcaneal Fractures (Fig. 31-9)"
+      ],
+      "comentarioAnteriorSha256": "ddfba793512015b40562bdc8aeb4b92a1d43ef2ed741b810016778003597f557"
+    },
+    "pediatria-1339": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Tarsometatarsal Injuries (Figs. 31-26 a 31-32)"
+      ],
+      "comentarioAnteriorSha256": "e7c58e64ed75459e0cfe37f3825739b6c4ce4f035b8fe0f59e758cc5cf1c5029"
+    },
+    "pediatria-1340": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Classification, Treatment Options e Author's Preferred Treatment for Tarsometatarsal Injuries (Fig. 31-33)"
+      ],
+      "comentarioAnteriorSha256": "8bedc38c813361598cacfa0f8c748f312dd971cc1e680899222e9290e81aee7b"
+    },
+    "pediatria-1334": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Fractures of the Osteochondral Surface of the Talus (Figs. 31-10 a 31-12)"
+      ],
+      "comentarioAnteriorSha256": "1da8aac0b4af33205ef05bcfe83761aa729e4e3f38058744c56dcb9008372b7f"
+    },
+    "pediatria-1336": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Treatment Options for Calcaneal Fractures, Author's Preferred Treatment (Tabela 31-2) e Management of Expected Adverse Outcomes"
+      ],
+      "comentarioAnteriorSha256": "dd69d1dca2b2665e93eb67c3e9c21293f0f16e9f1b65e7a964380b56f723f8c6"
+    },
+    "pediatria-1337": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Subtalar Dislocation (Figs. 31-21 a 31-24)"
+      ],
+      "comentarioAnteriorSha256": "a44a80dfab30e2858fbb2101c7838598b6747526fdb57ed98adc1d0cf137d537"
+    },
+    "pediatria-1338": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Midtarsal Injuries e Cuboid Fractures (Fig. 31-25)"
+      ],
+      "comentarioAnteriorSha256": "0f85e70dca8dd36db24717eb6fb051fc2b2d5bf947f63159bdf22dd33cf1ea3e"
+    },
+    "pediatria-1341": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Metatarsal Fractures e Treatment Options for Metatarsal Fractures"
+      ],
+      "comentarioAnteriorSha256": "861db10b603f9144cb249370c6a2a22fd715b56448b3aabb4943ab4ca4cff447"
+    },
+    "pediatria-1342": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Fractures of the Base of the Fifth Metatarsal (Figs. 31-34 a 31-37)"
+      ],
+      "comentarioAnteriorSha256": "6c3fe16415f293c868ac4c7c5f7f60f434dd329ed3135e379b98da23ad72e1b1"
+    },
+    "pediatria-1343": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Stress Fractures"
+      ],
+      "comentarioAnteriorSha256": "f5902d8980e3110d966855b25fb1ef305a0779da8e489a33932d86bf5c2f5b44"
+    },
+    "pediatria-1344": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Puncture Wounds (Fig. 31-47) e Lawnmower and Other Mutilating Injuries"
+      ],
+      "comentarioAnteriorSha256": "724f8850e8d5dd9f6308955bb39598b3e059bd143bc110c8abcfd5101694dafc"
+    },
+    "pediatria-0034": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Diagnosis and habilitation of congenital muscular torticollis. https://pmc.ncbi.nlm.nih.gov/articles/PMC11827386/",
+        "Congenital muscular torticollis: research and clinical practice. https://pmc.ncbi.nlm.nih.gov/articles/PMC6855899/",
+        "Physical therapy guideline for congenital muscular torticollis. https://pmc.ncbi.nlm.nih.gov/articles/PMC8568067/"
+      ],
+      "comentarioAnteriorSha256": "e09a06956fa348cbbb08ffcd66ad92f8f2a791e56c233b06cc4e3e90c8aa903a"
+    },
+    "pediatria-0084": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Diagnosis and prevention of osteochondritis dissecans of the capitellum. https://pmc.ncbi.nlm.nih.gov/articles/PMC10901169/",
+        "Panner’s disease: literature review. https://pmc.ncbi.nlm.nih.gov/articles/PMC4340849/",
+        "Osteochondritis dissecans of the elbow. https://pmc.ncbi.nlm.nih.gov/articles/PMC4896885/"
+      ],
+      "comentarioAnteriorSha256": "306b4d1e82d5b7f602c09da4a98bedf38db8d02dee9d1ea5e61962accdcdc47c"
+    },
+    "pediatria-0143": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de torcicolo.",
+        "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de coluna cervical."
+      ],
+      "comentarioAnteriorSha256": "0272f425d75854ac3c484afe93966e8036d0c2f7c368aa4408eb10a1e79ee406"
+    },
+    "pediatria-0153": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+        "Gillespie R, Torode IP. Classification and management of congenital abnormalities of the femur. J Bone Joint Surg Br. 1983;65(5):557-568."
+      ],
+      "comentarioAnteriorSha256": "6e724f84009767e777dbaacad729b128a94b510fcaaf157fe671859e698b408b"
+    },
+    "pediatria-0156": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do joelho.",
+        "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do joelho."
+      ],
+      "comentarioAnteriorSha256": "db2a22f4c03a31893dec6f2b565f8a1ecdfd3e26d8b529579d2e9b30cb5dacf3"
+    },
+    "pediatria-0161": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "https://pubmed.ncbi.nlm.nih.gov/29059110/",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "427cbe5b4a827499f033afb5b4f2e08cc449f155f804f2217ff999a7437e3790"
+    },
+    "pediatria-0162": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+        "Bleck EE. Metatarsus adductus: classification and relationship to outcomes of treatment. J Pediatr Orthop. 1983;3(1):2-9."
+      ],
+      "comentarioAnteriorSha256": "1e15161272baa06c8d03a65c4f8b7461f950ca9dd7383d3f373bd5347058ab53"
+    },
+    "pediatria-0197": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), capítulo de lesões do joelho.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do joelho."
+      ],
+      "comentarioAnteriorSha256": "84076e291157615e5800950179c8f34f4a459590c194bbea7707c5762276c7ff"
+    },
+    "pediatria-0198": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+        "Moore KL, Persaud TVN, Torchia MG. The Developing Human: Clinically Oriented Embryology. Elsevier."
+      ],
+      "comentarioAnteriorSha256": "41d0b28fed7fb9e26e7c7b828ceda49d241f75aedd5c6376f42d8bd886a09072"
+    },
+    "pediatria-0254": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+        "Kocher MS, Logan CA, Kramer DE. Discoid lateral meniscus in children: diagnosis, management, and outcomes. J Am Acad Orthop Surg. 2017;25(11):736-743."
+      ],
+      "comentarioAnteriorSha256": "ff156fc2c7d8caa1b5d2acab47b768e052dd4e5066e07089880a1343beb68411"
+    },
+    "pediatria-0277": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do joelho.",
+        "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do joelho."
+      ],
+      "comentarioAnteriorSha256": "703790d0d9984c78df8043e95d3a380e734380727bccbbd46f499782a9272dd2"
+    },
+    "pediatria-0294": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Congenital muscular torticollis. PMCID: PMC3814673.",
+        "Physical Therapy Management of Congenital Muscular Torticollis: 2018 Clinical Practice Guideline. PMCID: PMC8568067."
+      ],
+      "comentarioAnteriorSha256": "79b3e1853703ec0735d58f22031938ccc4fbabc5fc880d386ba089fd8dc5386d"
+    },
+    "pediatria-0333": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Congenital muscular torticollis. PMCID: PMC3814673.",
+        "Physical Therapy Management of Congenital Muscular Torticollis: Clinical Practice Guideline. PMCID: PMC8568067."
+      ],
+      "comentarioAnteriorSha256": "9c339c1d023efe7bca17916e9a8af8d8efb948f61d4a67d7cc1e653d5e381f5e"
+    },
+    "pediatria-0358": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Ellsworth B, Dawkins B, Hidalgo Perea S, Green D. Management of Congenital Dislocation of the Knee: Current Concept Review. JPOSNA. 2021;3(3). DOI: 10.55275/JPOSNA-2021-272.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "b65683d0160c2226f295175a3adbe3732f67e0adfe61d02982e12289ea4a7071"
+    },
+    "pediatria-0377": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Congenital muscular torticollis. PMCID: PMC3814673.",
+        "Correlation of ultrasonographic imaging of congenital muscular torticollis with clinical assessment in infants. Ultrasound Med Biol. 2000."
+      ],
+      "comentarioAnteriorSha256": "484022a85919e017f1e664b9807efb1b3071e1cdfc61f3b287a0be267f488ba2"
+    },
+    "pediatria-0379": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Pediatric Orthopaedic Society of North America. Klippel-Feil Syndrome Study Guide.",
+        "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 8"
+      ],
+      "comentarioAnteriorSha256": "c707f01046531666d0908eae111d4611769a31f87f9dd281f44ba0e452c9fa78"
+    },
+    "pediatria-0382": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4.9",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de escoliose neuromuscular."
+      ],
+      "comentarioAnteriorSha256": "ce9252e2e32cce37744564aea18b7e272479c0d8f1635ac8fa7a3cd868e6996b"
+    },
+    "pediatria-0388": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.1"
+      ],
+      "comentarioAnteriorSha256": "56a63ba2e7277dec4cc67213951e3cee15a281d6b5c2d3a6cec650f08c09e5d7"
+    },
+    "pediatria-0392": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do joelho.",
+        "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do joelho."
+      ],
+      "comentarioAnteriorSha256": "9bbee1507087d8bcd3814547002a26b88b85c96dcbdafe3a10575b4c03d2e690"
+    },
+    "pediatria-0434": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de pé torto congênito.",
+        "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do pé."
+      ],
+      "comentarioAnteriorSha256": "2756c65d9d8a5e29be8c46fec29615bfea71c780fd1e701e53668b50b03abf90"
+    },
+    "pediatria-0473": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+        "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole."
+      ],
+      "comentarioAnteriorSha256": "9eb0dbbee4f9ca51c2baa2f11480114c1d0ff19e58376f86608154cc2c40ac15"
+    },
+    "pediatria-0491": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Kocher MS, Logan CA, Kramer DE. Discoid lateral meniscus in children: diagnosis, management, and outcomes. J Am Acad Orthop Surg. 2017;25(11):736-743.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "a767a425003c2bd04f438952bc785e6950cdad5df678a3b26c819b8fa8eb4f1e"
+    },
+    "pediatria-0553": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de osteocondrite dissecante.",
+        "De Smet AA, Ilahi OA, Graf BK. Untreated osteochondritis dissecans of the femoral condyles: prediction of patient outcome using radiographic and MR findings. Skeletal Radiol. 1997;26(8):463-7.",
+        "Kijowski R, Blankenbaker DG, Shinki K, et al. Juvenile versus adult osteochondritis dissecans of the knee: appropriate MR imaging criteria for instability. Radiology. 2008;248(2):571-8."
+      ],
+      "comentarioAnteriorSha256": "9de5abb40fb700a0ed3f2f63d67c67bf5ca7b6da3bcba98fe8cca1b88836d495"
+    },
+    "pediatria-0670": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Canale : Campbell’s Operative Orthopaedics, 12th Ed., p.1233 (referência indicada na prova TARO 2013, questão 14)",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de torcicolo."
+      ],
+      "comentarioAnteriorSha256": "be2422fa605f6e6987348262c284271a6e5d94d7c396f65e63a66c2b94ead2ad"
+    },
+    "pediatria-0680": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 942 (referência indicada na prova TARO 2013, questão 56)",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de malformações congênitas do membro superior."
+      ],
+      "comentarioAnteriorSha256": "00b1e716b875b6b07ddf18cd82cb64c228cd66164d90db9957470a7be6d60b0c"
+    },
+    "pediatria-0727": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2002. 3ª ed., vol. 2, p. 908-917.",
+        "Harris RI, Beath T. Hypermobile flat-foot with short tendo achillis. J Bone Joint Surg Am. 1948;30A(1):116-140."
+      ],
+      "comentarioAnteriorSha256": "522a016ac6be21444ff28d2db28b3f6033df890d3f129bc8fabf9a35764079da"
+    },
+    "pediatria-0733": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., p. 885.",
+        "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation. (Fixed rotatory subluxation of the atlanto-axial joint). J Bone Joint Surg Am. 1977;59(1):37-44."
+      ],
+      "comentarioAnteriorSha256": "d92b0862b21c9f2a600a52267a0713f365091f2e2644ab882e6b1678ff4167e6"
+    },
+    "pediatria-0740": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., p. 2440.",
+        "Dobbs MB, Gurnett CA. Update on clubfoot: etiology and treatment. Clin Orthop Relat Res. 2009;467(5):1146-1153."
+      ],
+      "comentarioAnteriorSha256": "fbf45b48987348ae81a31a2bc6c5f696a6ef89b70cf4b46c969457f150af2e6a"
+    },
+    "pediatria-0745": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., vol. 3, p. 2010-2011.",
+        "Waters PM. Comparison of the natural history, the outcome of microsurgical repair, and the outcome of operative reconstruction in brachial plexus birth palsy. J Bone Joint Surg Am. 1999;81(5):649-659."
+      ],
+      "comentarioAnteriorSha256": "241dbe14fdea1bb0cbe1b4d66c47f95be8608350757f471230ded4b3c4511c74"
+    },
+    "pediatria-0757": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 5 ª ed., vol. 2, p. 88",
+        "Ferkel RD, Westin GW, Dawson EG, Oppenheim WL. Muscular torticollis. A modified surgical approach. J Bone Joint Surg Am. 1983;65(7):894-900."
+      ],
+      "comentarioAnteriorSha256": "a4e34a2eeb079d10578d83d888d0df662c809c260d13332e2d132e89df5d78c1"
+    },
+    "pediatria-0758": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tratado de Ortopedia – SBOT 2007 pg. 486",
+        "Ponseti IV. Treatment of congenital club foot. J Bone Joint Surg Am. 1992;74(3):448-454."
+      ],
+      "comentarioAnteriorSha256": "c8a66c1fe127d9feedd37289e2a37bd01607b040df3c5313ff01f4157642b222"
+    },
+    "pediatria-0761": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., p. 1350.",
+        "Gillespie R, Torode IP. Classification and management of congenital abnormalities of the femur. J Bone Joint Surg Br. 1983;65(5):557-568."
+      ],
+      "comentarioAnteriorSha256": "fdfc21b3e560d30371989f38cb085d1eb96c146087ab7d0625f26b9026775ce1"
+    },
+    "pediatria-0763": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 3ª ed., p. 531.",
+        "Wiberg G. Studies on dysplastic acetabula and congenital subluxation of the hip joint. Acta Chir Scand. 1939;83(Suppl 58)."
+      ],
+      "comentarioAnteriorSha256": "e4c24b812e37cb20c2478805a9c35d463d2704a596b4902c0b04606aebccd715"
+    },
+    "pediatria-0771": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., pg. 221.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Torcicolo muscular congênito."
+      ],
+      "comentarioAnteriorSha256": "fd3341560a7c210a03bc7ab87513dc4d2f687b95d686a305ebe60bd1c7d3a236"
+    },
+    "pediatria-0776": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., pg. 913.",
+        "Staheli LT, Corbett M, Wyss C, King H. Lower-extremity rotational problems in children: normal values to guide management. J Bone Joint Surg Am. 1985;67(1):39-47."
+      ],
+      "comentarioAnteriorSha256": "158d6418feb2c99547ce14098752e756f083449b7e50067c8dd171842bf1d9d8"
+    },
+    "pediatria-0778": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., pg. 1161. 23",
+        "Staheli LT, Corbett M, Wyss C, King H. Lower-extremity rotational problems in children: normal values to guide management. J Bone Joint Surg Am. 1985;67(1):39-47."
+      ],
+      "comentarioAnteriorSha256": "1dc6f0f47237c0d8b1174deffd53a9b435f16c9ca4f44e35060ea26784a9dfac"
+    },
+    "pediatria-0785": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., pg. 960.",
+        "Dinham JM, Meggitt BF. Trigger thumbs in children: a review of the natural history and indications for treatment in 105 patients. J Bone Joint Surg Br. 1974;56(1):153-155."
+      ],
+      "comentarioAnteriorSha256": "653b2be27b53e7982846de7eaac0311a2cd9d08de4fc25a20591e0a5d298d688"
+    },
+    "pediatria-0793": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian MO. Pediatric orthopaedics. Philadelphia: Saunders. p. 424.",
+        "Salter RB. Innominate osteotomy in the treatment of congenital dislocation and subluxation of the hip. J Bone Joint Surg Br. 1961;43-B(3):518-539."
+      ],
+      "comentarioAnteriorSha256": "48aeff94b6e2beb1a23764577e26c60d93cd64a0b9cef8dd9e79f6b75f62c6d4"
+    },
+    "pediatria-0795": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian MO. Pediatric orthopaedics. Philadelphia: Saunders. 2ª edição, p. 325.",
+        "Graf R. Fundamentals of sonographic diagnosis of infant hip dysplasia. J Pediatr Orthop. 1984;4(6):735-740."
+      ],
+      "comentarioAnteriorSha256": "02af0f2b9386d28ead5d404f27c2355f3500e945341ac409526156944eea0fd9"
+    },
+    "pediatria-0802": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian MO. Pediatric orthopaedics. Philadelphia: Saunders. 2ª edição, p. 2013.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "d70f0bd5fa3dee40340a2426d32bb8d603152b5a1cc082be5ed7b3dbff708eff"
+    },
+    "pediatria-0803": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 254.",
+        "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+      ],
+      "comentarioAnteriorSha256": "cfe60f7413e65854a578c0e19e91705d47349e0b6952147389ae673c1431916d"
+    },
+    "pediatria-0804": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole. 4ª edição, p. 820.",
+        "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+      ],
+      "comentarioAnteriorSha256": "e9c5d95b94efb30356ef7769934578567420b26424beae9ac148f03752e47896"
+    },
+    "pediatria-0805": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Revista Brasileira de Ortopedia. Abril 2005; p. 215.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "991910e3397f95e26893bda877d566c6756a08cbe342ea05a1460122b08a2322"
+    },
+    "pediatria-0809": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole. 4ª edição, p. 233.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "0c27fd346c606004ec37a713dc9296cdb8829e138ba6173699431fd137086577"
+    },
+    "pediatria-0810": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole. 4ª edição, p. 206.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "bf2b72b31a6a0ff600d78cebed1af78efc6fd9ccdf56cde5b7728b0daf6822e3"
+    },
+    "pediatria-0811": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole. 4ª edição, p. 753."
+      ],
+      "comentarioAnteriorSha256": "8993685ce43a548ddc52ba35f44e2bb09988b8479a8e8be149ee08ec1610d6b7"
+    },
+    "pediatria-0866": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Palisano R, Rosenbaum P, Walter S, Russell D, Wood E, Galuppi B. Development and reliability of a system to classify gross motor function in children with cerebral palsy. Dev Med Child Neurol. 1997;39(4):214-223.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Paralisia cerebral."
+      ],
+      "comentarioAnteriorSha256": "7d6ab9b372a6a03be83bda0ccee5b56921185ee3946573d4c1f43bac214c6ec6"
+    },
+    "pediatria-0868": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica."
+      ],
+      "comentarioAnteriorSha256": "11834c1632aa065c7dea4f4aef1bbba66ce18c3b17ff663d7c73aa46276f1677"
+    },
+    "pediatria-0869": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica."
+      ],
+      "comentarioAnteriorSha256": "bb9b27e2322089380b5f9518fd959a6b55c5f42673d77982189b3cab8fbe9ee3"
+    },
+    "pediatria-0870": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica."
+      ],
+      "comentarioAnteriorSha256": "2f0c0a413ea88bcae4006a3359a163d66e8020fcd1f5d2eed7926137dc789095"
+    },
+    "pediatria-0871": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica.",
+        "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436."
+      ],
+      "comentarioAnteriorSha256": "19f5764c641252ff34b971ef721adbf9a42e03fc1ae88f062b5e17e25cc673ec"
+    },
+    "pediatria-0872": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Yagupsky P. Kingella kingae: carriage, transmission, and disease. Clin Microbiol Rev. 2015;28(1):54-79.",
+        "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436."
+      ],
+      "comentarioAnteriorSha256": "f51bb982a4d3ec1be8baef3ddcfb73e1ee967639b20ca24aaadb480de4f72391"
+    },
+    "pediatria-0878": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Weinstein SL, Mubarak SJ, Wenger DR. Developmental hip dysplasia and dislocation: Part I. J Bone Joint Surg Am. 2003;85(9):1824-1832.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Displasia do desenvolvimento do quadril."
+      ],
+      "comentarioAnteriorSha256": "c95b8013ff1be551acae78b2e6f54e670906373fa2372d661a5c006646cae9f5"
+    },
+    "pediatria-0879": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Weinstein SL, Mubarak SJ, Wenger DR. Developmental hip dysplasia and dislocation: Part II. J Bone Joint Surg Am. 2003;85(10):2024-2035.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Displasia do desenvolvimento do quadril."
+      ],
+      "comentarioAnteriorSha256": "f7de0b36a4f58e73671885cc909e035dc12f3fadf597792d819429b2c216bb24"
+    },
+    "pediatria-0881": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Christian CW; Committee on Child Abuse and Neglect. The evaluation of suspected child physical abuse. Pediatrics. 2015;135(5):e1337-e1354.",
+        "Levin AV. Retinal hemorrhage in abusive head trauma. Pediatrics. 2010;126(5):961-970."
+      ],
+      "comentarioAnteriorSha256": "556ebc69024410f3d9a1e5971236fdf88b8fb0004d7012a0ee8210c274c39fbd"
+    },
+    "pediatria-0882": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Lonstein JE, Carlson JM. The prediction of curve progression in untreated idiopathic scoliosis during growth. J Bone Joint Surg Am. 1984;66(7):1061-1071.",
+        "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537."
+      ],
+      "comentarioAnteriorSha256": "73d38e041ebd3bfc0302249c4ef7e89352e8827049611eb990d2626d001b4e2f"
+    },
+    "pediatria-0883": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537.",
+        "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Escoliose idiopática do adolescente."
+      ],
+      "comentarioAnteriorSha256": "82947e58ed8a0538a06710a855079e4cc8f17112b284a67eb31f335e3b9c7b88"
+    },
+    "pediatria-0885": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Unkila-Kallio L, Kallio MJ, Eskola J, Peltola H. Serum C-reactive protein, erythrocyte sedimentation rate, and white blood cell count in acute hematogenous osteomyelitis of children. Pediatrics. 1994;93(1):59-62.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas."
+      ],
+      "comentarioAnteriorSha256": "060b7eb812b1a808624e0eb15c93e6f78be7fc9cf92763c031fd779fc35bdef5"
+    },
+    "pediatria-0886": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Unkila-Kallio L, Kallio MJ, Eskola J, Peltola H. Serum C-reactive protein, erythrocyte sedimentation rate, and white blood cell count in acute hematogenous osteomyelitis of children. Pediatrics. 1994;93(1):59-62.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas."
+      ],
+      "comentarioAnteriorSha256": "09dd70f29da003674d859fe3c8bfaede69261f1ee9bd8de153cad433b96524b3"
+    },
+    "pediatria-0887": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Unkila-Kallio L, Kallio MJ, Eskola J, Peltola H. Serum C-reactive protein, erythrocyte sedimentation rate, and white blood cell count in acute hematogenous osteomyelitis of children. Pediatrics. 1994;93(1):59-62.",
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas."
+      ],
+      "comentarioAnteriorSha256": "e3b1f112e61e34d36229860c11e91d0d616fb582c8fdd7a866a74ab77c99176b"
+    },
+    "pediatria-0888": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica.",
+        "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670."
+      ],
+      "comentarioAnteriorSha256": "e3ebd34c6f8cb67d0a32d7d021a720ca8f1917b2b7893fdcc31012bab9b70960"
+    },
+    "pediatria-0889": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas.",
+        "Greenspan A. Radiologia ortopédica: uma abordagem prática. Guanabara Koogan. Infecções."
+      ],
+      "comentarioAnteriorSha256": "b80a91c135d44dac88637e45327611a1a2bb1658ee23fa7f38bb6543a92d2784"
+    }
+  },
+  "motivosCriacao": {
+    "pediatria-1335": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O calcâneo da criança é extra-articular, oculto e tem BOHLER próprio.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O calcâneo da criança é extra-articular, oculto e tem BOHLER próprio."
+    },
+    "pediatria-1339": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0718"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0718`), que perguntou qual combinação de fraturas é altamente sugestiva de LISFRANC; a oficial está sem gabarito, e o capítulo aponta a base do segundo metatarsal com o cuboide. Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0718`), que perguntou qual combinação de fraturas é altamente sugestiva de LISFRANC; a oficial está sem gabarito, e o capítulo aponta a base do segundo metatarsal com o cuboide. Depois, faça a oficial."
+    },
+    "pediatria-1340": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O limite de 1 a 2 mm e o fio-chave são cobráveis.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O limite de 1 a 2 mm e o fio-chave são cobráveis."
+    }
+  },
+  "lacunas": [
+    {
+      "id": "pediatria-1334",
+      "questaoSha256": "8bbd662aea5a8d3c5fca8e7c03ef5ef14dd7e1951907ebb17111bfd22893b052",
+      "comentarioAnteriorSha256": "1da8aac0b4af33205ef05bcfe83761aa729e4e3f38058744c56dcb9008372b7f",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 sustenta79%mediais,maior profundidade eIIacístico cirúrgico,mas não descreve morfologia EM TAÇA nem mecanismo específico da lesãoLATERAL naC para conferir o conjunto. Falta descrição independente completa,não usar nota contextual ou comentário anterior. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1336",
+      "questaoSha256": "a22dabac624056128e1f0923262e155a298d20d0b82998ce78f967cf1ce19fb8",
+      "comentarioAnteriorSha256": "dd69d1dca2b2665e93eb67c3e9c21293f0f16e9f1b65e7a964380b56f723f8c6",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 orienta cirurgia adolescente apósEDEMA,mas não define aguardar resolução das FLICTENAS,qualificador daB. Falta protocolo pediátrico da condição cutânea/timing,não presumir equivalência edema=flictenas. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1337",
+      "questaoSha256": "5cd7fedc497ba9d02dbc9ece44b577eb3664ff96e911481aeb4dd6b1969b9099",
+      "comentarioAnteriorSha256": "a44a80dfab30e2858fbb2101c7838598b6747526fdb57ed98adc1d0cf137d537",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 sustenta medial85%,inversão,tálus noencaixe,navicular vazio e tibialposterior interposto,mas não define CABEÇA PALPADA LATERALMENTE daD. Falta anatomia clínica independente desse achado. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1338",
+      "questaoSha256": "44a3296bba8f67eacca06a4a7a15b1ef42df02facdd5afe41439b5fa385f10d9",
+      "comentarioAnteriorSha256": "0f85e70dca8dd36db24717eb6fb051fc2b2d5bf947f63159bdf22dd33cf1ea3e",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 sustenta cuboide,quebra-nozes,71%RXinicialnormal e GESSO2–3semanas,mas não autoriza BOTA nem explicita confirmação noRXseguinte,como aB. Falta protocolo independente de diagnóstico tardio e alternativa de imobilização. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1341",
+      "questaoSha256": "5bcb130bd31c40ff531b6b3b7cdf71a6bee21daeee1d5a47f6ca6be94e54d26d",
+      "comentarioAnteriorSha256": "861db10b603f9144cb249370c6a2a22fd715b56448b3aabb4943ab4ca4cff447",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 sustenta primeiro até5e quinto depois e limites gerais20°/5mm,mas não especifica primeiro ISOLADO daD. Também separa primeiro com10°ou qualquer encurtamento,o que exige ressalva à regra geral. Falta definição independente do padrão isolado;sem selo,sem ensinar20°como limite universal do primeiro.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1342",
+      "questaoSha256": "741553550eed26102a25218c085640d714f61b40b6dc21a1c3d0d6c53df5b654",
+      "comentarioAnteriorSha256": "6c3fe16415f293c868ac4c7c5f7f60f434dd329ed3135e379b98da23ad72e1b1",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 define apófise longitudinal,mas não explicita orientação TRANSVERSAL da fratura nem a comparação completa naA. Falta diferenciação radiográfica independente de ambas,não inferir toda linha não longitudinal como fratura. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1343",
+      "questaoSha256": "03909a00f97422eb1e181a09c25f45bdb6765b7118797435748a47b0928e48a4",
+      "comentarioAnteriorSha256": "f5902d8980e3110d966855b25fb1ef305a0779da8e489a33932d86bf5c2f5b44",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 sustenta segundo/colo,bota4–6semgesso,navicular sagital e retorno5,6meses,mas não especifica CARGA PARCIAL naCnem frequência deRXinicialpositivo daD. Falta protocolo independente de carga/imagem das fraturas de estresse;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1344",
+      "questaoSha256": "bacf25036a4cccba6c91484f98c21c7b6ef25dd7e23c9fdbc08c1214344c238f",
+      "comentarioAnteriorSha256": "724f8850e8d5dd9f6308955bb39598b3e059bd143bc110c8abcfd5101694dafc",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo31 associa prego através do tênis aPseudomonas e recomenda internar,RM e desbridar,mas não desenvolve o diagnóstico de ARTRITE SÉPTICA/OSTEOMIELITE,a osteocondrite específica,nem a extensão do desbridamento emPARTES MOLES,CARTILAGEM E OSSO e antibióticoVENOSO daB. Falta protocolo independente do quadro profundo completo;sem ampliar por memória. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0034",
+      "questaoSha256": "7cae7977b9fcc0d8a7a9c380fcfb6d1dd08523efcff321e6c6bf54940ebf3afe",
+      "comentarioAnteriorSha256": "e09a06956fa348cbbb08ffcd66ad92f8f2a791e56c233b06cc4e3e90c8aa903a",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo21 trata trauma cervical e diferenciais de instabilidade,mas não descreve prognóstico conservador do TORCICOLO MUSCULAR CONGÊNITO por FIBROSE DISTAL doECM,nem comparação com plagiocefalia,nódulo e idade. Falta fonte independente para o fatorD e distratores;subtema pescoço não comprova cobertura. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0084",
+      "questaoSha256": "d91b8a63db7ba9b23c86f885f8755caaa361083f874487ea8e3843e106ed7b18",
+      "comentarioAnteriorSha256": "306b4d1e82d5b7f602c09da4a98bedf38db8d02dee9d1ea5e61962accdcdc47c",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo28 é de lesões intra-articulares doJOELHO e não compara osteocondrite dissecante doCAPÍTULO com PANNER por idade,sintomas mecânicos,rigidez e esclerose. Busca naBiblioteca só encontrouPanner emnota contextual do capítulo9-15,que declara o epônimo vindo deoutra fonte. Falta comparação independente completa;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0143",
+      "questaoSha256": "b510a55667bffdbf1c7926adef3da4bb22f457da6941250689e895e9ca831c08",
+      "comentarioAnteriorSha256": "0272f425d75854ac3c484afe93966e8036d0c2f7c368aa4408eb10a1e79ee406",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo21 não define forma indolor mais comum doTORCICOLO CONGÊNITO MUSCULAR,orientação da inclinação e cronologia da massa/deformidade. O trauma cervical não prova a alternativaB nem a análise das demais. Falta anatomia e apresentação clínica independente doECMcongênito;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0153",
+      "questaoSha256": "40922fd7b2c9f197d91d04c98a364926937d7e375506e1dba31927c2b89a9d4a",
+      "comentarioAnteriorSha256": "6e724f84009767e777dbaacad729b128a94b510fcaaf157fe671859e698b408b",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Os resumos23/24 tratam trauma de pelve/quadril,não DEFEITO FEMORAL FOCAL PROXIMAL ou GILLEPSIE/GILLESPIE tipoA e presença de cabeça/normalidade acetabular. Busca naBiblioteca sem definição independente. Falta classificação congênita para comparar as quatro combinações;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0156",
+      "questaoSha256": "91b4de2fb5656fe6dc4f9f2fbc90e35dd0ee1cd95ccc4da3d05365a63de9c730",
+      "comentarioAnteriorSha256": "db2a22f4c03a31893dec6f2b565f8a1ecdfd3e26d8b529579d2e9b30cb5dacf3",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "O resumo28 não descreve MENISCO DISCOIDE/Wrisberg,incidência,lateralidade,lesões atraumáticas nem indicação de MENISCECTOMIA TOTAL. A referência aWrisberg no61adulto é ligamento meniscofemoral,não tratamento do discoide. Falta fonte independente e eventual ressalva ao gabaritoB,sem alterá-lo de memória;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0161",
+      "questaoSha256": "58053e5a67434b087525cb769b0f769d19af0efac7d3715d0d70d51bcef35b91",
+      "comentarioAnteriorSha256": "427cbe5b4a827499f033afb5b4f2e08cc449f155f804f2217ff999a7437e3790",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não desenvolve WATANABE tipo3,fixação periférica,bilateralidade e ausência doLIGAMENTO CORONÁRIO noWrisberg. Wrisberg meniscofemoral no61adulto não prova variante de discoide. Falta anatomia/classificação independente completa;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0162",
+      "questaoSha256": "c4f03e2679b3e7fe5570ae16ffc16ca64d45fce8f059d9eccda19a5d9249c080",
+      "comentarioAnteriorSha256": "1e15161272baa06c8d03a65c4f8b7461f950ca9dd7383d3f373bd5347058ab53",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 trata lesões traumáticas do pé,não frequência do METATARSO ADUTO,associações,resposta conservadora e taxa de deformidade residual. Falta fonte independente para aA e comparação das demais,não usar coincidência de subtema ou comentário antigo;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0197",
+      "questaoSha256": "f49ccef074a10f6e4685d5422c508b75283804f0552442902e23be868689c796",
+      "comentarioAnteriorSha256": "84076e291157615e5800950179c8f34f4a459590c194bbea7707c5762276c7ff",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não define inserção do CORNO POSTERIOR DO MENISCO MEDIAL na borda tibial viaCORONÁRIO.61adulto descreve meniscofemorais doLATERAL,e62adulto artrotomia submeniscal LATERAL:não provam diretamente a inserção MEDIAL perguntada. Falta anatomia independente desse corno e comparação com oblíquo/poplíteo;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0198",
+      "questaoSha256": "7999bdd3eb923e78d0fa824071e0b98499f8b3eb7655e9ed4e379dde8bc8d8a0",
+      "comentarioAnteriorSha256": "41d0b28fed7fb9e26e7c7b828ceda49d241f75aedd5c6376f42d8bd886a09072",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 de trauma do joelho não descreve posição embrionária da PATELA ANTES DA ROTAÇÃO AXIAL DOS MEMBROS INFERIORES. Rotação cervical do48 e alinhamento traumático não cobrem embriologia. Falta desenvolvimento independente para conferir lateral/medial/anterior/posterior;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0254",
+      "questaoSha256": "0bb7e152a8aca37eec4782f0b9ca4f83fc8d63ba72fc6cc9314fae60d6d495f8",
+      "comentarioAnteriorSha256": "ff156fc2c7d8caa1b5d2acab47b768e052dd4e5066e07089880a1343beb68411",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não aborda meniscoDISCOIDE assintomático incidental nem compara observação,saucerização,meniscoplastia e ressecção total. Falta indicação independente de preservar sem tratamento nesse cenário;lesão meniscal traumática não prova manejo da variante. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0277",
+      "questaoSha256": "06cc32dcd19a1f203c8bb22658de8b7722bad065ccb12e9bc559ab2a2b7b9b20",
+      "comentarioAnteriorSha256": "703790d0d9984c78df8043e95d3a380e734380727bccbbd46f499782a9272dd2",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não distribui tipos de rotura do meniscoDISCOIDE:radial,oblíqua,longitudinal ou clivagem horizontal. Falta frequência comparativa independente que sustente aD;não inferir de meniscos traumáticos usuais. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0294",
+      "questaoSha256": "8010d968e2680ea9f5b632df6446b5d6401c5cedb089392153481ac7751ad1f8",
+      "comentarioAnteriorSha256": "79b3e1853703ec0735d58f22031938ccc4fbabc5fc880d386ba089fd8dc5386d",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21 não descreve vetor da inclinação e rotação do queixo no TORCICOLO MUSCULAR CONGÊNITO porECM. Falta anatomia funcional independente para distinguir lado da lesão/oposto em cada componente;sem usar comentário antigo. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0333",
+      "questaoSha256": "804f1b7b38fe968b041a6ce2e70d5ae0fddd0b7861a59b603f53f635b9e15ecd",
+      "comentarioAnteriorSha256": "9c339c1d023efe7bca17916e9a8af8d8efb948f61d4a67d7cc1e653d5e381f5e",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21 não descreve trajeto doNERVO ACESSÓRIO na liberação proximal doECMnem por que a inserção óssea o protege. A menção ao hipoglosso no côndilo não cobre essa via. Falta anatomia cirúrgica independente e comparação com frênico/hipoglosso/cervical transverso. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0358",
+      "questaoSha256": "e8486d391804844b1610920d39cd2a699284e0c3c1fcbc2dbba2261f36087923",
+      "comentarioAnteriorSha256": "b65683d0160c2226f295175a3adbe3732f67e0adfe61d02982e12289ea4a7071",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 trata trauma do joelho,não LUXAÇÃO CONGÊNITA e associações aQUADRIL/PÉ TORTO ou TALO VERTICAL. Falta distribuição congênita independente para comparar as quatro duplas;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0377",
+      "questaoSha256": "c1da2958ba7c44faccd7cdd818edfc4db0ca558f36f47db0b4477f7f05d75275",
+      "comentarioAnteriorSha256": "484022a85919e017f1e664b9807efb1b3071e1cdfc61f3b287a0be267f488ba2",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21 não classifica TORCICOLO CONGÊNITO em tumoral doECM,muscular epostural,nem cronologia da assimetria e valor deUS/RX. Falta apresentação/subgrupos independentes completos;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0379",
+      "questaoSha256": "fcfcb8e798ceb5f86ffd9eee3d0afe6c562f822b3c7ea172f200960aef1771d6",
+      "comentarioAnteriorSha256": "c707f01046531666d0908eae111d4611769a31f87f9dd281f44ba0e452c9fa78",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21 não define KLIPPEL-FEIL e a relação com torcicolo indolor/anomalias ósseas,nem diferenciaALFREDEL eSPRENGEL. Busca no48adulto apenas encontrou contexto pós-infeccioso deGrisel emnota contextual. Falta diferencial congênito independente completo;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0382",
+      "questaoSha256": "d9c51a88b445c081ea4225529fd1631f1e66cee074412750e483f09c626faea5",
+      "comentarioAnteriorSha256": "ce9252e2e32cce37744564aea18b7e272479c0d8f1635ac8fa7a3cd868e6996b",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        },
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos21/23/24 tratam trauma,não indicação de artrodese atéPELVE na ESCOLIOSE NEUROMUSCULAR por deambulação e limiar de obliquidade>15°. Falta algoritmo independente para comparar>10°,>15°ou qualquer obliquidade por capacidade de marcha. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0388",
+      "questaoSha256": "8363bee758860221742f7b79b1a3cef88a248b63e4bccd25cbd73f16cfdf6523",
+      "comentarioAnteriorSha256": "56a63ba2e7277dec4cc67213951e3cee15a281d6b5c2d3a6cec650f08c09e5d7",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-30-tornozelo",
+          "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo30 é trauma do tornozelo e não define fase deMÉDIO APOIO da marcha normal,contração EXCÊNTRICA do tibialposterior e INVERSÃO subtalar. Menção traumática do tendão não cobre sua função temporal. Falta biomecânica independente para comparar as quatro combinações;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0392",
+      "questaoSha256": "6dc46fbbf9f028d7f806486c0f78582f4ff18f4383a455e010d453e3503b7031",
+      "comentarioAnteriorSha256": "9bbee1507087d8bcd3814547002a26b88b85c96dcbdafe3a10575b4c03d2e690",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não associa DISCOIDE WRISBERG a osteocondrite dissecante do CÔNDILO FEMORAL LATERAL nem compara planaltos/côndilo medial. Meniscofemoral Wrisberg no61adulto não demonstra essa associação. Falta epidemiologia/anatomia independente da variante;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-0434",
+      "questaoSha256": "b2a667281bf92747e79a11dad8718ad0c5d5a2e0aa268c37aef3cd4731e2cc39",
+      "comentarioAnteriorSha256": "2756c65d9d8a5e29be8c46fec29615bfea71c780fd1e701e53668b50b03abf90",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 não descreve OSTEOTOMIA DAS BASES METATARSAIS na sequela de pé torto/metatarso aduto e não compara parada de crescimento doPRIMEIRO com recidiva,subluxação e proeminência. Proteção da fise noLisfranc é outro procedimento e não prova ranking de complicações. Falta técnica e prognóstico independentes;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0473",
+      "questaoSha256": "639e6fdacaf730deced91def9cda2b659cef59ed5dbdd3359f00d257a5acc059",
+      "comentarioAnteriorSha256": "9eb0dbbee4f9ca51c2baa2f11480114c1d0ff19e58376f86608154cc2c40ac15",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        },
+        {
+          "id": "rockwoodcriancas10-22-coluna-toracolombar",
+          "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos20/21 não quantificam presença doOSSO OMOVERTEBRAL na deformidade deSPRENGEL. Falta prevalência independente para comparar todos,metade,terço e sexto;sem inventar estatística. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0491",
+      "questaoSha256": "603de6168df50bb7c562cf1e7339b989bfc5f65ea3d608d1a37c99f5689e4351",
+      "comentarioAnteriorSha256": "a767a425003c2bd04f438952bc785e6950cdad5df678a3b26c819b8fa8eb4f1e",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não descreve alterações radiográficas associadas ao MENISCO DISCOIDE LATERAL,especialmente CABEÇA ALTA DA FÍBULA,interlinha,espinha e côndilo. Falta associação independente para conferirA e distratores. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0553",
+      "questaoSha256": "eea2e73438f6716bc95be1fe4eb3bf17dd62f60b71dbf8044be0ed46e8b1751b",
+      "comentarioAnteriorSha256": "9de5abb40fb700a0ed3f2f63d67c67bf5ca7b6da3bcba98fe8cca1b88836d495",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não desenvolve critérios deINSTABILIDADE da OSTEOCONDRITE DISSECANTE JUVENIL naRM-T2,nem diferencia hipersinal da interface,edema e ruptura da superfície. Fratura osteocondral traumática e edema de estresse não provam critério daOCD. Falta definição independente completa;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0670",
+      "questaoSha256": "cd647acb46cdb3aa313e00a45a0729d8ee42ee77d5889f947f4003c18fe0917c",
+      "comentarioAnteriorSha256": "be2422fa605f6e6987348262c284271a6e5d94d7c396f65e63a66c2b94ead2ad",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21 não distribui acometimento ESTERNAL,CLAVICULAR,OCCIPITAL ou das três porções doECMno TORCICOLO MUSCULAR CONGÊNITO. Falta frequência anatômica independente;sem converter referência geral ao pescoço em cobertura. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0680",
+      "questaoSha256": "b1d7ef30eef54ba50d2a04b871d912a274df6c2abf3de048353d958ab4933a93",
+      "comentarioAnteriorSha256": "00b1e716b875b6b07ddf18cd82cb64c228cd66164d90db9957470a7be6d60b0c",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos de trauma do membro superior não classificam DEFICIÊNCIA PRÉ-AXIAL como falha de formaçãoLONGITUDINAL,nem comparam terminal/intercalar/transversa. Falta classificação congênita independente;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0727",
+      "questaoSha256": "a40ab4f3cd340f30210ba09d5cb7baaef4f6a2d2091cf145fda4308e14a9a2c6",
+      "comentarioAnteriorSha256": "522a016ac6be21444ff28d2db28b3f6033df890d3f129bc8fabf9a35764079da",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 não descreve biomecânica doPÉ PLANO VALGO FLEXÍVEL,pronação relativa,tensão interóssea e vetores do calcâneo/tálus. Sem gabarito oficial,essas lacunas impedem resposta única sustentada e não autorizamprovavel. Falta anatomia independente completa;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0733",
+      "questaoSha256": "5099351291e5eb0b7f7071884a3e43de49c1d843e37931a3a6c9888ef94834bd",
+      "comentarioAnteriorSha256": "d92b0862b21c9f2a600a52267a0713f365091f2e2644ab882e6b1678ff4167e6",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21 não define a síndrome deGRISEL;48adulto descreve instabilidadeC1–C2pós-infecciosa,mas não frequência deAFEBRIL,espasmo e REDUÇÃO ESPONTÂNEA daA/B/D. Não confundir êxito do tratamento não operatório com redução espontânea. Sem gabarito oficial e sem resposta única apoiada,não usarprovavel. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0740",
+      "questaoSha256": "8d8782567f3a03cdddc23cab382929acd03b3769385a75aed1e7acc4ca84d5d9",
+      "comentarioAnteriorSha256": "fbf45b48987348ae81a31a2bc6c5f696a6ef89b70cf4b46c969457f150af2e6a",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 não aborda redução doPÉ TORTO CONGÊNITO nem compara obstáculos tibionavicular,calcaneonavicular plantar,cápsula talonavicular e tibialposterior. Interposição do tibialposterior na luxação subtalarTRAUMÁTICA é outro quadro. Sem gabarito oficial e sem critério independente,não usarprovavel. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0745",
+      "questaoSha256": "dd4fb55bb9554aeba226337004afbd2ba4717f71fec3ec66dc975c1c023551d9",
+      "comentarioAnteriorSha256": "241dbe14fdea1bb0cbe1b4d66c47f95be8608350757f471230ded4b3c4511c74",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-19-ombro-umero",
+          "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c"
+        },
+        {
+          "id": "rockwoodcriancas10-20-clavicula-escapula",
+          "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo19 trata ombro/úmeroTRAUMÁTICOS,não paralisia braquialOBSTÉTRICA e padrões ERB-DUCHENNE/KLUMPKE,Horner e reflexo deMoro. Falta anatomia segmentar e exame neonatal independente. Sem gabarito oficial e sem cobertura das quatro opções,não usarprovavel. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0757",
+      "questaoSha256": "45584416016d93235b77e9f6e539a53457968ba9a7e96fc93abdccd50c5b2460",
+      "comentarioAnteriorSha256": "a4e34a2eeb079d10578d83d888d0df662c809c260d13332e2d132e89df5d78c1",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Falta no resumo21 anatomia da viaMASTÓIDEA do torcicolo congênito e risco aoACESSÓRIO,comparado a facial,hipoglosso e laríngeo. Sem gabarito oficial,sem resposta única demonstrada nas fontes;semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0758",
+      "questaoSha256": "1441ea3430a07804cab0535389c6440f30bf78ad402832089ba99e58ba0ca43c",
+      "comentarioAnteriorSha256": "c8a66c1fe127d9feedd37289e2a37bd01607b040df3c5313ff01f4157642b222",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 de trauma não descreve métodoPONSETI e FULCRO na bordaLATERAL DO TÁLUS,nem compara calcaneocuboide,maléolo e calcâneo. Sem gabarito oficial,semprovavel sem técnica independente.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0761",
+      "questaoSha256": "717760c19426440369f1c10f0c25828a411309dbc4049ea5b57d73155e8db0dc",
+      "comentarioAnteriorSha256": "fdfc21b3e560d30371989f38cb085d1eb96c146087ab7d0625f26b9026775ce1",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos23/24 não tratam DEFEITO FOCAL PROXIMAL do fêmur e associação com INSTABILIDADE ANTEROPOSTERIOR do joelho. Falta anatomia ligamentar congênita e frequência dos padrões. Sem gabarito oficial,não atribuirprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0763",
+      "questaoSha256": "4dd982cd10c4f7a8347cc9c6f24753ff521af82cfaf20dfb651581355aff6a0e",
+      "comentarioAnteriorSha256": "e4c24b812e37cb20c2478805a9c35d463d2704a596b4902c0b04606aebccd715",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos23/24 não estabelecem relação geométrica/valores entre ÍNDICE ACETABULAR40° e CENTRO-BORDA deWIBERG naDDQ. Falta método e limiar independente,não deduzir uma soma angular de memória. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0771",
+      "questaoSha256": "98c9f45ac3d2122782fe8351d4f9f5c557f6003f15575167e6963bacb3d1d5c6",
+      "comentarioAnteriorSha256": "fd3341560a7c210a03bc7ab87513dc4d2f687b95d686a305ebe60bd1c7d3a236",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21 não descreve a via proximal doECMcongênito e risco aoACESSÓRIO versus facial,hipoglosso e vago. Falta anatomia cirúrgica independente. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0776",
+      "questaoSha256": "a8b36d2b61b17fda764f3e5303b127e52023283e22dff3370f867b689f3af279",
+      "comentarioAnteriorSha256": "158d6418feb2c99547ce14098752e756f083449b7e50067c8dd171842bf1d9d8",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos23/24 não quantificam ANTEVERSÃO FEMORAL ao NASCIMENTO e aos16ANOS para comparar as quatro duplas. Falta desenvolvimento angular independente,sem inventar números. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0778",
+      "questaoSha256": "49733bef664db21e414b9271597e894b52658a1aa562ae01f2380fbe0553ca45",
+      "comentarioAnteriorSha256": "1dc6f0f47237c0d8b1174deffd53a9b435f16c9ca4f44e35060ea26784a9dfac",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos23/24 não descrevem a evolução pareada da ANTEVERSÃO e ROTAÇÃO EXTERNA do quadril do nascimento aos10anos. Falta biomecânica do desenvolvimento para conferir aumento/diminuição de cada componente. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0785",
+      "questaoSha256": "5f1853996836a0321678f79b62e5e3fed44a313d526b36a0f7766277fe860c70",
+      "comentarioAnteriorSha256": "653b2be27b53e7982846de7eaac0311a2cd9d08de4fc25a20591e0a5d298d688",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos08 e45 são de trauma/fraturas,não POLEGAR EM GATILHO PEDIÁTRICO e indicação de aberturaA1ouA2por idade6meses/1ano. Falta protocolo independente;sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0793",
+      "questaoSha256": "18c272257f8cef141018665ebd6246e7ac4b120cb5f34729f7e359cf46c9855f",
+      "comentarioAnteriorSha256": "48aeff94b6e2beb1a23764577e26c60d93cd64a0b9cef8dd9e79f6b75f62c6d4",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos23/24 não descrevem OSTEOTOMIA DE SALTER naDDQ e efeito na CONFIGURAÇÃO/CAPACIDADE do acetábulo. Falta técnica e biomecânica independente para julgarCerto/Errado. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0795",
+      "questaoSha256": "db4f2f564db731fa04eb8624e95f24c15c6257636d899e9e10fb9ad1d7b06cf9",
+      "comentarioAnteriorSha256": "02af0f2b9386d28ead5d404f27c2355f3500e945341ac409526156944eea0fd9",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos23/24 não classificam ultrassonografia deGRAF tipoIV,deslocamento inferior,teto e eversão/inversão doLABRUM. Falta definição independente de todos os componentes;sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0802",
+      "questaoSha256": "7d51411ce2ba60144fc478bbf59e945fb1c1e10edfb7205aea663264f604a4da",
+      "comentarioAnteriorSha256": "d70f0bd5fa3dee40340a2426d32bb8d603152b5a1cc082be5ed7b3dbff708eff",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-19-ombro-umero",
+          "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c"
+        },
+        {
+          "id": "rockwoodcriancas10-20-clavicula-escapula",
+          "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo19 de trauma não compara prognóstico de PARALISIA BRAQUIAL OBSTÉTRICA por acometimento PARAESCAPULAR. Falta neuroanatomia segmentar e dado prognóstico independente. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0803",
+      "questaoSha256": "43538a930e3109ab66962a34f302aae10e3946fe4ffbcdb2e43367f6565d0260",
+      "comentarioAnteriorSha256": "cfe60f7413e65854a578c0e19e91705d47349e0b6952147389ae673c1431916d",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos do trauma da mão não descrevem CENTRALIZAÇÃO na MÃO TORTA RADIAL nem resultados antes/depois de8anos. Falta indicação temporal independente;sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0804",
+      "questaoSha256": "d4c692268b08b6941aa4aa68bc3302e267eeddc493f1568a419156889cae6e30",
+      "comentarioAnteriorSha256": "e9c5d95b94efb30356ef7769934578567420b26424beae9ac148f03752e47896",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos08/45 não descrevem POLIDACTILIA PÓS-AXIAL em crianças negras nem frequência de outras malformações por fenótipo/população. Falta associação independente,sem inferir risco étnico. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0805",
+      "questaoSha256": "6ee1edda0685a25b568f933c3973821e8fbcef226943f4411fb4346d3b314ff9",
+      "comentarioAnteriorSha256": "991910e3397f95e26893bda877d566c6756a08cbe342ea05a1460122b08a2322",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo de trauma da tíbia/joelho não define DISPLASIA FIBROCARTILAGINOSA FOCAL e manejo INICIAL por observação versus RESSECÇÃO. Falta história natural e algoritmo independente. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0809",
+      "questaoSha256": "768476be14515310c0fd66f3a6510336eefdf2a3ca29a1fd201483ce8a0730b8",
+      "comentarioAnteriorSha256": "0c27fd346c606004ec37a713dc9296cdb8829e138ba6173699431fd137086577",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos traumáticos do quadril não definem DISPLASIA EPIFISÁRIA MÚLTIPLA e comparação comPERTHES por cisto,bilateralidade e acetábulo. Falta fenótipo independente completo. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0810",
+      "questaoSha256": "002fb8dcf6af6cb03e305e56da862d50ac9365cbd7210066a88c461812e50d74",
+      "comentarioAnteriorSha256": "bf2b72b31a6a0ff600d78cebed1af78efc6fd9ccdf56cde5b7728b0daf6822e3",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos traumáticos não caracterizam ACONDROPLASIA por rizomelia,quadril e VARO/VALGO progressivo. Falta descrição independente dos três componentes;sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0811",
+      "questaoSha256": "e24bfb31014060af03253f916a1bb2b690ab590cc9732b54cd11ebda5fa45c12",
+      "comentarioAnteriorSha256": "8993685ce43a548ddc52ba35f44e2bb09988b8479a8e8be149ee08ec1610d6b7",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21 não descreve LIBERAÇÃO PROXIMAL do torcicolo congênito e topografia doACESSÓRIO. Falta anatomia cirúrgica independente para julgar o item. Sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0866",
+      "questaoSha256": "32f7a5938905288bdee8dfe5fe713b3e8d2a62c9325ac107e8c312ef39cbb762",
+      "comentarioAnteriorSha256": "7d6ab9b372a6a03be83bda0ccee5b56921185ee3946573d4c1f43bac214c6ec6",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos de trauma/lesões neuromusculares não definem níveisGMFCS por auxílio de marcha,escada,cadeira e distância aos7anos. Falta tabela funcional independenteI–V,não classificar por descrição de outra doença. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0868",
+      "questaoSha256": "9b8315f12bade36b106437b65d75f175277f713273a657e63890e6127557adad",
+      "comentarioAnteriorSha256": "11834c1632aa065c7dea4f4aef1bbba66ce18c3b17ff663d7c73aa46276f1677",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 de trauma não define algoritmo da criança FEBRIL COM JOELHO DOLOROSO para escolherRX/hemograma/VHS/PCR versus punção,US ou observação. Falta investigação independente de infecção osteoarticular e diferenciação das quatro condutas;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0869",
+      "questaoSha256": "56288221db6d3140a76a2cb68bfd93a8df52d3404bd5976c6eb437cae92a2547",
+      "comentarioAnteriorSha256": "bb9b27e2322089380b5f9518fd959a6b55c5f42673d77982189b3cab8fbe9ee3",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não fornece protocolo de criança TORPOROSA39,5°C com provável infecção do joelho e indicação de PUNÇÃO CIRÚRGICA versusRM/cintilo/US. Falta conduta independente de emergência infecciosa;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0870",
+      "questaoSha256": "8150f370af9b67ad21ce642f4286b6c08d0e7dead8235e92fd3c3fb5254ffc15",
+      "comentarioAnteriorSha256": "2f0c0a413ea88bcae4006a3359a163d66e8020fcd1f5d2eed7926137dc789095",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não define sensibilidade doGRAM em ARTRITE SÉPTICA infantil nem o valor30%daC e indicação de ARTROTOMIA após Gramnegativo. Falta dado/protocolo independente,não inventar estatística ou confundir negativo com exclusão;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0871",
+      "questaoSha256": "6266759597ccaedf97df8acc049ae8913a077d65b7ce32dc374baf85f2d94466",
+      "comentarioAnteriorSha256": "19f5764c641252ff34b971ef721adbf9a42e03fc1ae88f062b5e17e25cc673ec",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não informa CONTAGEM SINOVIAL NORMAL e proporção MONONUCLEAR versus polimorfonuclear nos limiares5000/50000. Falta referência laboratorial independente para conferirB e distratores;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0872",
+      "questaoSha256": "b95616bd05967254aee4571776eac46bef4f640a385b2c5df5a39f677cdc93d1",
+      "comentarioAnteriorSha256": "f51bb982a4d3ec1be8baef3ddcfb73e1ee967639b20ca24aaadb480de4f72391",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não descreve epidemiologia etária/cultura difícil deKINGELLA KINGAE versus pneumococo,MRSA eH.influenzae. Falta fonte microbiológica independente,não inferir de infecção traumática de outro segmento;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0878",
+      "questaoSha256": "a862d97f5a055ff84199fc1f0be28f79a55a35936a4bacb98e47205d37e94170",
+      "comentarioAnteriorSha256": "c95b8013ff1be551acae78b2e6f54e670906373fa2372d661a5c006646cae9f5",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos23/24 não definem imagem diagnóstica daDDQ aos6MESES e comparaçãoRXAP/US/RM/TC. Trauma da bacia comRXAPnão prova algoritmo do quadril congênito. Falta critério etário independente;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0879",
+      "questaoSha256": "62043b3dcacd64f04ecb6568c3420231b1d41f8a0aaafb1b7d0b9443d36ed14a",
+      "comentarioAnteriorSha256": "f7de0b36a4f58e73671885cc909e035dc12f3fadf597792d819429b2c216bb24",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        },
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos23/24 não definem tratamento daDDQ aos6MESES por PAVLIK,FREJKA,REDUÇÃO INCRUENTA COM GESSO ou aberta. Falta algoritmo etário/estabilidade independente,sem transpor redução de luxaçãoTRAUMÁTICA. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0881",
+      "questaoSha256": "7677ba74b9be857bf92aabec9efe770f3b821c3ab0f6ef222bfb07b2c7b557db",
+      "comentarioAnteriorSha256": "556ebc69024410f3d9a1e5971236fdf88b8fb0004d7012a0ee8210c274c39fbd",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-07-patologicas-maus-tratos",
+          "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo07 descreve história suspeita e investigação de maus-tratos,mas não correlaciona especificamente COMA+HEMORRAGIA RETINIANA a trauma abusivo nem fornece diferencial com meningite,queda,intoxicação e convulsão. Falta evidência independente do conjunto neuro-oftalmológico;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0882",
+      "questaoSha256": "6ec80e9fd6b39f261d10074517ff276f03d7d987c2a2a7a89e7bde3daeb0d80e",
+      "comentarioAnteriorSha256": "73d38e041ebd3bfc0302249c4ef7e89352e8827049611eb990d2626d001b4e2f",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        },
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos21/22 de trauma não definem prognóstico de progressão daEIA porRisser,puberdade,menarca,telarca e distância dedo-chão. Falta estratificação independente para identificar o critério não relacionado;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0883",
+      "questaoSha256": "2fee1ca192b680fc726f7221b5b8b42e0cf2f5e42b8d4b3644393757e441e4bb",
+      "comentarioAnteriorSha256": "82947e58ed8a0538a06710a855079e4cc8f17112b284a67eb31f335e3b9c7b88",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumos de trauma cervical/toracolombar não classificam ESCOLIOSE IDIOPÁTICA DO ADOLESCENTE por idade,ADAMS e triângulo do talhe,nem a diferenciam de cifose/congênita/infantil. Falta diagnóstico morfológico independente;sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0885",
+      "questaoSha256": "ad17ca0008e7c4105e9515339cc149936bfb4fa644239f5303d50a51952bd6ad",
+      "comentarioAnteriorSha256": "060b7eb812b1a808624e0eb15c93e6f78be7fc9cf92763c031fd779fc35bdef5",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não define CINÉTICA DA VHS na infecção infantil,pico3–5DIAS e normalização3SEMANAS. Falta dado laboratorial independente;gabaritoA preservado sem confirmar números de memória. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0886",
+      "questaoSha256": "53b2fc0124e0e304c00f1778a6f397981ac4e94d26050de032cdae6a2443658b",
+      "comentarioAnteriorSha256": "09dd70f29da003674d859fe3c8bfaede69261f1ee9bd8de153cad433b96524b3",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não define CINÉTICA DA PCR,início6HORAS,pico2DIAS e normalização1SEMANA. Falta dado laboratorial independente;gabaritoA preservado sem inventar cronologia. Sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0887",
+      "questaoSha256": "badba7465e9f2844d025286deeaf3dfef25974e0293eeff673ea50016e09d046",
+      "comentarioAnteriorSha256": "e3b1f112e61e34d36229860c11e91d0d616fb582c8fdd7a866a74ab77c99176b",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não comparaVHS/PCR para ACOMPANHAR RESPOSTA da infecção ao tratamento. Falta desempenho/cinética independente para julgar o item;gabaritoB preservado sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0888",
+      "questaoSha256": "c4ea3dd55064c3c66cf9504abcb32345872147fe698585140ea023ee81e49140",
+      "comentarioAnteriorSha256": "e3ebd34c6f8cb67d0a32d7d021a720ca8f1917b2b7893fdcc31012bab9b70960",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não define probabilidade de SINOVIAL>80000/mm³ eNEUTRÓFILOS>75%na criança febril do caso. Falta referência independente de contagem/distribuição na artrite séptica;gabaritoA preservado sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0889",
+      "questaoSha256": "902a3cd1dec8802525d94d85370e1fb15e1bdebad22a5ae1d595c3ddcdc14887",
+      "comentarioAnteriorSha256": "b80a91c135d44dac88637e45327611a1a2bb1658ee23fa7f38bb6543a92d2784",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 não desenvolve sensibilidade/cronologia doRXem INFECÇÃO ÓSSEA/ARTICULAR AGUDA nem utilidade de edema,espaço e destruição. Falta comparação independente de achados iniciais/tardios para julgar a utilidade;gabaritoB preservado sem selo.",
+      "estadoAnterior": "pendente",
+      "semGabaritoOficial": false
+    }
+  ],
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 3,
+    "lacunasComentariosIntactos": 70,
+    "demaisBytesPreservados": true,
+    "motivosConferidos": 3,
+    "figurasNosCasos": 0,
+    "ui": "3/3 em390/1440:resposta,aula e links exatos. Primeiro1335inspecionado visualmente."
+  },
+  "reconciliacao621": {
+    "head": "11cdcbeeeb56bc7da7be41f13d8894d64a25e226",
+    "merge": "d2c274f00886419f5de7011c048c82a6f5195aa9",
+    "ci": 40772866571,
+    "pages": 40773201371,
+    "publicar": 123117221986,
+    "avulsosIntegrais": 755,
+    "resumosIntegrais": 52,
+    "figuras": 43,
+    "observacao": "Guarda de versão e deploy efetivo aprovados;revisão automática com status real registrada na prova remota,sem aprovação presumida."
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 894,
+      "revisada": 1983
+    }
+  },
+  "continuidade": "Fila pendente sem motivo esgotada,mas894lacunas NÃO são revisões concluídas. Reavaliação das lacunas antigas já encontrou fonte suficiente para5rascunhos da240:0522(com divergência de classificação),0609,0644,0675,0701(limiar estrito). Sem aplicação nesta entrega;240ainda precisa fechar5casos restantes0280/0321/0540/0593/0834.241exportada:coluna0179/0299/0300/0301,mao1050/1125,ombro0512/0529,pediatria0047/0091,sem aplicação. Fonte09Wilkins9tempico12–16contra12–14naoficial1050;ler integralmente antes de citar. Continuar revisando lacunas antigas contra52fontes atuais;não declarar todas revisáveis concluídas."
+}
