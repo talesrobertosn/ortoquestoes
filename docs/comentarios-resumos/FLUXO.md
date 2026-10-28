@@ -45,8 +45,8 @@ Fluxo aprovado pelo Tales em 27/10/2026, para repetir sempre que entrarem **ques
 11. **Publicar**: commit dos lotes, catálogo, `ANDAMENTO.md` e `public/acervo/comentarios/*.json` (mais `indice.json`/`letras.json` se mudaram); PR para `claude/pdfs-questoes-tp64dr`; CI verde → merge; conferir que o workflow "Publicar no GitHub Pages" do merge terminou com sucesso.
 12. **Relatar ao Tales**: quantas revisadas, quantas viraram pendência e por quê, e o que depende de decisão dele.
 
-## Estado em 27/10/2026
+## Estado em 28/10/2026
 
-1.668 revisadas de 2.623 no catálogo (inclui os lotes do Codex). Faltam 868: 766 sem resumo que cubra o assunto ou com ambiguidade registrada (cada uma com a frase do que falta), 100 de SIMÃO/SBCM, 2 sem figura (87 duplicadas não contam). Aguardando decisão do Tales: `coluna-0088` e `trauma-0322` (anuladas com gabarito nos dados; texto pronto) e a figura trocada de `pe-tornozelo-0295`.
+1.801 revisadas no catálogo (inclui os lotes do Codex); 337 pendentes, 735 com lacuna registrada (cada uma com a frase do que falta), 4 aguardando inspeção de imagem, 2 sem figura e 97 duplicadas. Os resumos novos do Rockwood crianças, 10ª edição (caps. 6, 7, 11, 12, 19 a 24, 30 e 31), entraram nos lotes c09 a c18. Aguardando decisão do Tales: `coluna-0088` e `trauma-0322` (anuladas com gabarito nos dados; texto pronto) e a figura trocada de `pe-tornozelo-0295`.
 
 O texto das duas anuladas está em [rascunhos/anuladas-com-gabarito.json](rascunhos/anuladas-com-gabarito.json), no formato de rascunho: tirado o `gabarito` das questões, é só `montar.py` e `aplicar.py` (passo 7).

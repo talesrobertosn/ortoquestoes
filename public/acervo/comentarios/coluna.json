@@ -4287,18 +4287,42 @@
   "conferido": false
  },
  "coluna-0302": {
+  "conceito": "A fratura por **compressão** é a mais comum da coluna toracolombar da criança. A carga axial com flexão achata a parte **anterior** do corpo vertebral; a coluna média fica íntegra e o déficit neurológico é raro.\n\n**Quando não operar.** O Rockwood and Wilkins (10ª ed., cap. 22) trata sem cirurgia quando as **partes moles posteriores estão íntegras** e a **cifose é menor que 30 graus**: órtese TLSO ou Jewett (acima de T6, órtese cervicotorácica) por 4 a 6 semanas, mais 4 a 6 de restrição.\n\n**Quando considerar cirurgia.** O autor considera estabilizar com **mais de 50% de perda da altura anterior**, sobretudo com cifose aguda, ou com déficit neurológico. Na criança com osteoporose por corticoide, várias compressões pedem investigação; vertebroplastia não é recomendada.\n\n**Os dois números juntos.** Cifose de **30 graus** e acunhamento de **50%** são os limites que separam a órtese da cirurgia.\n\n**Na prova:** compressão da criança: cirurgia a partir de **30 graus** de angulação e **50%** de acunhamento.\n\nO resumo de coluna toracolombar da criança traz os limites na seção de compressão e explosão.",
+  "correta": "**D: 30º de angulação e 50% de acunhamento vertebral.** O capítulo trata sem cirurgia abaixo de 30 graus de cifose e considera cirurgia com mais de 50% de perda da altura anterior.",
   "incorretas": {
-   "A": "Com 15 graus e 30% de acunhamento, a fratura é estável e de baixo risco, tratada de forma conservadora, contando com a remodelação.",
-   "B": "O acunhamento de 50% é importante, mas 15 graus de angulação ainda não atinge o limiar indicado para a estabilização.",
-   "C": "A angulação de 30 graus atinge o limiar, mas 30% de acunhamento ainda é compatível com tratamento conservador. Os dois critérios andam juntos na recomendação."
+   "A": "**15 graus e 30% são valores baixos demais.** Nessa faixa a compressão vai com órtese, com complexo posterior íntegro.",
+   "B": "**O acunhamento de 50% está certo, mas 15 graus de angulação não.** O limite de cifose do capítulo é 30 graus.",
+   "C": "**A angulação de 30 graus está certa, mas 30% de acunhamento não.** O capítulo só considera cirurgia acima de 50% de perda da altura anterior."
   },
-  "conceito": "A fratura por compressão é a lesão mais comum da coluna toracolombar na criança. O mecanismo é a flexão com carga axial: a frente do corpo vertebral é esmagada e a vértebra fica em forma de cunha, enquanto o muro posterior e os ligamentos de trás ficam intactos. Na classificação de Denis, que divide a coluna em três colunas, isso é uma lesão só da coluna anterior, e por isso **estável**. Muitas vezes várias vértebras vizinhas são acometidas ao mesmo tempo.\n\nA maioria é tratada sem cirurgia, com repouso relativo, colete se houver dor e retorno gradual às atividades. A criança tem uma vantagem sobre o adulto: as placas de crescimento nos platôs vertebrais permitem que a vértebra em cunha **remodele** com o tempo, e esse potencial é maior quanto mais nova ela for.\n\nA cirurgia de estabilização fica para as compressões mais graves. Segundo a referência usada pela banca, a recomendação começa a partir de **30 graus de angulação** cifótica e **50% de acunhamento** (perda de altura da parte anterior do corpo). Deformidades desse tamanho sugerem que os ligamentos posteriores também foram lesados e trazem risco de cifose progressiva.\n\nAlguns sinais indicam que a lesão não é uma compressão simples e pedem ressonância: perda de altura acima de 50%, afastamento entre os processos espinhosos, comprometimento do muro posterior na tomografia (o que seria uma explosão) e déficit neurológico. E uma fratura por compressão com trauma mínimo numa criança deve levantar a suspeita de causa patológica, como leucemia, osteogênese imperfeita, granuloma eosinofílico (que dá a vértebra plana) ou uso de corticoide.",
-  "correta": "30 graus de angulação e 50% de acunhamento vertebral. Deformidades a partir desses valores sugerem lesão ligamentar posterior associada e risco de cifose progressiva, e a referência recomenda estabilização.",
+  "conferido": false,
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 28"
+   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Compressão e explosão."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+     "titulo": "Fraturas da coluna toracolombar na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+     "secoes": [
+      "Compressão e explosão"
+     ],
+     "blocos": [
+      "compressao-e-explosao-8c911be9",
+      "compressao-e-explosao-a0a58ceb"
+     ],
+     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+     "trechosSha256": "f37e6d58e9bc524daf3bf703ba5473d1b5965cf7793a482c10de14d4c9e34381"
+    }
+   ],
+   "questaoSha256": "991638c99fabf46441f0251122ae0dec9562b032f0a6129af861b230cd98d715",
+   "comentarioSha256": "1408c594b2068264b532fb4fd8121faf28932eed8e2d2ca57f08fa446c44b23e"
+  }
  },
  "coluna-0303": {
   "incorretas": {
@@ -4527,18 +4551,44 @@
   "conferido": false
  },
  "coluna-0312": {
+  "conceito": "**SCIWORA** é a sigla em inglês para lesão medular sem alteração radiológica. Pang e Wilberger a descreveram como déficit medular com radiografia e tomografia convencional normais. Ela existe porque a coluna da criança é **elástica e móvel**: deforma, volta ao lugar e não deixa fratura, mas a medula, menos tolerante, não acompanha.\n\n**O mecanismo.** O Rockwood and Wilkins (10ª ed., cap. 22) cita como mecanismos propostos o **estiramento** da medula e a lesão **vascular**. Estirar é alongar, e o que alonga a medula é a **distração**, somada à flexão do pescoço ou do tronco, que já aumenta o comprimento do canal.\n\n**O que o capítulo ensina na prática.**\n- O déficit pode ser **tardio**, e sintomas transitórios podem anteceder déficits duradouros.\n- É mais grave **abaixo de 8 anos**.\n- Quase todas têm lesão de partes moles na **ressonância**, que deve ser feita em todo déficit; por isso o termo perdeu relevância.\n- Lesão completa abaixo de 10 anos leva a escoliose paralítica em quase 100%.\n\n**Na prova:** SCIWORA = estiramento da medula por **flexão e distração**; radiografia normal não afasta lesão.\n\nO resumo de coluna toracolombar da criança trata do tema na seção de SCIWORA e lesão medular.",
+  "correta": "**D: flexão e distração.** É a combinação que estira a medula numa coluna elástica, o mecanismo proposto no capítulo 22 do Rockwood and Wilkins.",
   "incorretas": {
-   "A": "A compressão axial produz fraturas do corpo vertebral, como a explosão, que aparecem na imagem.",
-   "B": "O cisalhamento causa lesões instáveis, com desalinhamento visível nos exames.",
-   "C": "A flexão com rotação produz luxações facetárias, também visíveis na radiografia ou na tomografia."
+   "A": "**A compressão produz fratura do corpo vertebral, visível na radiografia.** A SCIWORA é justamente a lesão sem alteração óssea, por estiramento.",
+   "B": "**O cisalhamento produz translação e fratura-luxação**, lesões que aparecem nos exames. Não é o mecanismo de uma lesão sem imagem.",
+   "C": "**Flexão e rotação levam a luxações facetárias**, visíveis na imagem. O estiramento medular vem da distração."
   },
-  "conceito": "SCIWORA é a lesão da medula que acontece sem que a radiografia ou a tomografia mostrem fratura ou desalinhamento. A criança tem um déficit neurológico real, mas a coluna, na imagem, parece normal.\n\nIsso só é possível porque a coluna da criança pequena é muito mais elástica que a medula que ela protege. Os ligamentos são frouxos, as facetas articulares são quase horizontais e deslizam com facilidade, a musculatura do pescoço é fraca e a cabeça é grande e pesada. Experimentos clássicos mostraram que a coluna infantil pode se alongar alguns centímetros sem romper, enquanto a medula se rompe com poucos milímetros de estiramento.\n\nO mecanismo cobrado é a **flexão com distração**: no trauma, a coluna dobra e se alonga além do que a medula suporta e depois volta sozinha para o lugar. Quando a imagem é feita, tudo está alinhado. Outros mecanismos também foram descritos, como a hiperextensão, a flexão lateral e a isquemia, mas o modelo central é esse.\n\nA SCIWORA é mais comum na coluna cervical e em crianças com menos de 8 anos. Um detalhe clínico importante: o déficit pode aparecer de forma tardia, horas ou até alguns dias depois do trauma. Por isso, mesmo a criança que chega bem depois de um trauma significativo merece atenção, e a conduta inclui ressonância, imobilização e seguimento.\n\nAs outras forças costumam deixar marca visível. A compressão pura quebra o corpo vertebral. O cisalhamento e a flexão com rotação produzem desalinhamentos e luxações facetárias que aparecem na imagem, o que tira essas lesões da definição.",
-  "correta": "Flexão e distração. A coluna elástica da criança se alonga e se desloca além do limite da medula e depois volta ao lugar, sem deixar alteração na radiografia.",
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children, 6th Ed., p. 787 (referência indicada na prova TARO 2014, questão 61)"
+   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: SCIWORA e lesão medular; Mecanismos, lesões associadas e avaliação."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+     "titulo": "Fraturas da coluna toracolombar na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+     "secoes": [
+      "SCIWORA e lesão medular",
+      "Mecanismos, lesões associadas e avaliação"
+     ],
+     "blocos": [
+      "sciwora-e-lesao-medular-9ae5196f",
+      "sciwora-e-lesao-medular-c9b6021a",
+      "mecanismos-lesoes-associadas-e-avaliacao-0ddd61bc"
+     ],
+     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+     "trechosSha256": "847d028c374f94425e726e4107a25b68f6a4d29eb8a9e11da00236408a52129d"
+    }
+   ],
+   "questaoSha256": "24b3a2a7266ba790e16dc68df4ac8472b3effbc7d9eb8045c6fdecc7160d839d",
+   "comentarioSha256": "9c9e3ae87b87d598faf2f83bdc440b08c33511f1a37d02e0c3b7c019452cce9f"
+  }
  },
  "coluna-0313": {
   "incorretas": {
