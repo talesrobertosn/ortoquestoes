@@ -50,7 +50,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 19 | Shoulder Dislocation and Proximal Humerus | 1772 a 1943 | Feito em 27/10/2026: `rockwoodcriancas10-19-ombro-umero`, `pediatria-1211` a `1224` |
 | 20 | Clavicle and Scapula | 1944 a 2072 | Feito em 28/10/2026: `rockwoodcriancas10-20-clavicula-escapula`, `pediatria-1225` a `1239` |
 | 21 | Cervical Spine | 2073 a 2164 | Feito em 28/10/2026: `rockwoodcriancas10-21-coluna-cervical`, `pediatria-1240` a `1254` |
-| 22 | Thoracolumbar Spine | 2165 a 2226 | A fazer |
+| 22 | Thoracolumbar Spine | 2165 a 2226 | Feito em 28/10/2026: `rockwoodcriancas10-22-coluna-toracolombar`, `pediatria-1255` a `1269` |
 | 23 | Pelvic and Acetabular | 2227 a 2334 | Feito em 27/10/2026: `rockwoodcriancas10-23-pelve-acetabulo`, `pediatria-1168` a `1181` |
 | 24 | Hip | 2335 a 2436 | Feito em 27/10/2026: `rockwoodcriancas10-24-quadril`, `pediatria-1182` a `1195` |
 | 25 | Femoral Shaft | 2437 a 2555 | Feito em 26/10/2026: `rockwoodcriancas10-25-diafise-femur`, `pediatria-1122` a `1136` |
@@ -97,3 +97,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 19 | `pediatria-0571`, `0524`, `0617`, `0695`, `0945`, `0667`, `0595`, `0642`, `0848`, `0714`, `0753`, `0631`, `0953`, `0618`, `0821` | `0642` (TARO 2019): varo; o capítulo diz valgo. `0617` (TARO 2017): posteromedial; o capítulo diz anterolateral. `0695` não sustentada. Sem gabarito: `0714` (III), `0753` (periósteo), `0821` (não sustentada). |
 | 20 | `pediatria-0643`, `0685`, `0657`, `0706`, `0002`, `0633`, `0550`, `0822`, `0533`, `0558` | `0550` (TARO 2023): exposição; o capítulo diz desvio posterior. `0002` (TARO 2020): o capítulo sustenta só o lado direito. `0558` (TEOT 2024): sinal do esternocleidomastóideo não discutido. Sem gabarito: `0822` (sustentada). |
 | 21 | `pediatria-0587`, `0851`, `0717`, `0638`, `1080`, `0605`, `0770`, `0576` | `1080` (ENARE 2023): POWERS; o capítulo usa o CCI. `0638` (TARO 2019): o nível C3 não é citado. Sem gabarito: `0717` e `0770` (sustentadas). SCIWORA (`0755`, `0833`) fora do capítulo. |
+| 22 | `pediatria-0913`, `coluna-0302`, `pediatria-0627`, `coluna-0227`, `coluna-0312`, `pediatria-0833` | `coluna-0227` e `coluna-0312`: o capítulo sustenta só a gravidade abaixo de 8 anos e o estiramento. `pediatria-0627`: sexo e segmento não citados. Sem gabarito: `pediatria-0833`. Não citadas: `coluna-0179` (tratamento da SCIWORA) e `pediatria-0755`. |
