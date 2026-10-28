@@ -140,19 +140,42 @@
   "conferido": false
  },
  "pediatria-0010": {
-  "conceito": "**Os maus-tratos na criança e as fraturas.** As fraturas são a segunda manifestação mais comum dos maus-tratos, depois das lesões de pele. Cerca de **80%** das fraturas por maus-tratos ocorrem em crianças **menores de 18 meses**, e muitas vezes a criança ainda não anda. Reconhecer o padrão é responsabilidade do ortopedista: a criança que volta para o mesmo ambiente tem alto risco de nova lesão e de morte.\n\n**A especificidade das lesões (Kleinman).**\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Lesões metafisárias clássicas** (fratura em \"canto\" e em \"alça de balde\"), fraturas de **costelas posteriores**, **escápula**, **processos espinhosos** e **esterno** |\n| **Moderada** | Fraturas múltiplas (sobretudo bilaterais), fraturas em estágios diferentes de consolidação, descolamentos epifisários, fraturas de corpos vertebrais, de dedos e do crânio complexas |\n| **Baixa** (comuns) | Formação de periósteo novo, fraturas de **clavícula**, fraturas da **diáfise de ossos longos**, fraturas lineares do crânio |\n\n**Por que alta especificidade.** Essas lesões exigem **mecanismos** que quase não ocorrem em acidentes:\n- a **lesão metafisária clássica** vem da **sacudida** ou tração e torção dos membros;\n- as **costelas posteriores** fraturam pela **compressão** do tórax entre as mãos do agressor;\n- a **escápula**, o **esterno** e os **processos espinhosos** exigem trauma direto de grande energia, raro em quedas domésticas.\n\n**As lesões de baixa especificidade** são comuns também em acidentes, mas ganham importância quando a **história não é compatível** com a lesão ou com o desenvolvimento da criança (por exemplo, fratura de fêmur em bebê que não anda).\n\n**A investigação.** **Inventário esquelético** completo em menores de 2 anos, repetido em 2 semanas; fundoscopia (hemorragia retiniana), avaliação neurológica e de imagem do crânio; exclusão de doenças que fragilizam o osso (osteogênese imperfeita, raquitismo); e **notificação** obrigatória ao conselho tutelar.\n\n**Os tipos de maus-tratos.**\n| Tipo | Comentário |\n|---|---|\n| **Negligência** | Deixar de dar o cuidado básico (alimentação, higiene, saúde, proteção, escola): o tipo **mais frequente** nos registros dos serviços de proteção, embora o menos visível |\n| Abuso físico | O que o **ortopedista mais vê**, por causa das fraturas |\n| Abuso emocional (psicológico) | Frequente e quase sempre presente junto com os outros |\n| Abuso sexual | Grave e **subnotificado** |\n\nA negligência responde por cerca de **três quartos** dos casos confirmados nos registros norte-americanos e é a forma mais comum também nos dados da OMS. Ela também aparece na ortopedia: atraso na procura de atendimento, fraturas não tratadas, falta de adesão ao tratamento.",
-  "correta": "**Correta: D (a negligência).** A negligência, a falha em prover o cuidado básico, é o tipo de maus-tratos mais frequente nos registros dos serviços de proteção, embora o abuso físico seja o mais visto pelo ortopedista.",
+  "conceito": "A forma de maus-tratos que mais aparece no consultório do ortopedista é a física, porque deixa fratura. Mas a mais frequente na população é outra.\n\n**Os números do capítulo.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), cerca de **60%** dos casos são de **negligência**, 16% de abuso físico, 10% sexual e 7% psicológico.\n\n**Os fatores de risco.** A maior taxa de vítimas está nos lactentes; o abuso é a segunda causa de morte entre 1 e 6 meses. Uma casa com **adulto sem parentesco** multiplica por **50** o risco de morte (esse adulto é o agressor em 83,9%). Crises familiares, drogas, mãe abaixo de 20 anos e depressão pesam; 78% das fraturas ocorrem abaixo de 3 anos; prematuros, enteados, crianças com deficiência e gêmeos são mais atingidos.\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** tipo mais frequente = **negligência** (60%).\n\nO resumo de fraturas patológicas e maus-tratos traz a distribuição na seção de epidemiologia.",
+  "correta": "**D: a negligência.** Responde por cerca de 60% dos casos no capítulo.",
   "incorretas": {
-   "A": "O abuso físico é o mais visto pelo ortopedista, mas não é o mais frequente.",
-   "B": "O abuso sexual é grave e subnotificado, mas não é o tipo mais comum.",
-   "C": "O abuso emocional é comum e costuma acompanhar os outros, mas não supera a negligência."
+   "A": "**O físico é o mais visível para o ortopedista**, mas fica em 16%.",
+   "B": "**O sexual responde por 10%.**",
+   "C": "**O emocional (psicológico) responde por 7%.**"
   },
+  "conferido": false,
   "referencias": [
-   "U.S. Child Welfare Information Gateway. Child Neglect: A Guide for Prevention, Assessment, and Intervention. https://www.childwelfare.gov/pubPDFs/neglect_ch2.pdf",
-   "World Health Organization. Child maltreatment. https://www.who.int/news-room/fact-sheets/detail/child-maltreatment"
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Maus-tratos: epidemiologia e risco."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Maus-tratos: epidemiologia e risco"
+     ],
+     "blocos": [
+      "maus-tratos-epidemiologia-e-risco-1fe8e17a",
+      "maus-tratos-epidemiologia-e-risco-2ca5f50d"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "6dfa1a1793cd3c9cc6050c715e21ac76c7d0a5928652975a095c3a806f6f3baa"
+    }
+   ],
+   "questaoSha256": "65b980dbad61417d22834be70dd88c9ad970367342f58236149e16f431e08fdc",
+   "comentarioSha256": "d4c80a907948c9d0878f1ae6199ec80f4f13bee3dd77b867d0502fc7587800a0"
+  }
  },
  "pediatria-0011": {
   "conceito": "**A hemofilia.** É uma doença **hereditária ligada ao X** (afeta quase só **meninos**) em que falta um fator da coagulação:\n- **hemofilia A**: deficiência do **fator VIII** (a mais comum, cerca de 80%);\n- **hemofilia B**: deficiência do **fator IX** (doença de Christmas).\n\nA gravidade depende do nível do fator: **grave** com menos de 1%, **moderada** de 1 a 5% e **leve** de 5 a 40%. Nos casos graves, os sangramentos ocorrem **espontaneamente** ou com traumas mínimos.\n\n**As hemartroses.** São a manifestação mais comum. As articulações mais acometidas são, em ordem: **joelho**, **cotovelo** e **tornozelo**. O sangue repetido na articulação causa **sinovite** hipertrófica, que sangra ainda mais (articulação-alvo), e destrói a cartilagem: é a **artropatia hemofílica**. A classificação radiográfica de **Arnold e Hilgartner** descreve essa progressão.\n\n**As hemorragias musculares.** São a segunda manifestação mais comum. Ocorrem nos grandes grupos musculares. As séries variam, mas os locais mais citados são o **quadríceps**, o **iliopsoas**, a **panturrilha** (tríceps sural) e os **flexores do antebraço**.\n\n| Local | Particularidade |\n|---|---|\n| **Quadríceps** | Hematomas grandes; risco de **contratura em extensão** do joelho |\n| **Iliopsoas** | Quadril em flexão; **compressão do nervo femoral**; pode imitar apendicite (à direita); perda sanguínea grande |\n| Panturrilha | Risco de **síndrome compartimental** e equino |\n| Flexores do antebraço | Risco de síndrome compartimental e contratura de **Volkmann** |\n\n**O pseudotumor hemofílico.** É um hematoma **crônico** e encapsulado que cresce e erode o osso. Ocorre no fêmur, na pelve e na tíbia. Pode imitar um tumor maligno.\n\n**O tratamento.**\n- **Reposição do fator** deficiente imediatamente, em casa se possível, e **profilaxia** regular nos casos graves (a base da prevenção da artropatia).\n- Hemartrose: repouso, gelo, imobilização curta e reabilitação. A aspiração é feita em casos selecionados, com o fator reposto.\n- Sinovite crônica: **sinovectomia** radioativa (radiossinoviortese) ou cirúrgica.\n- Artropatia avançada: artroplastia ou artrodese.\n- Os novos tratamentos (emicizumabe, terapia gênica) mudaram muito a prevenção.",
@@ -995,20 +1018,42 @@
   "conferido": false
  },
  "pediatria-0065": {
-  "conceito": "**Por que o osso da mielomeningocele quebra.** Na **mielomeningocele**, os membros inferiores abaixo do nível neurológico têm três problemas:\n- **Osteopenia**, por falta de carga e de contração muscular, agravada pela imobilização.\n- **Insensibilidade**: a criança não sente a fratura e não protege o membro.\n- **Contraturas articulares** que funcionam como alavancas.\n\nPor isso, as fraturas acontecem com **trauma mínimo**: fisioterapia, troca de fralda, transferências, ou logo depois de **tirar um gesso** pós-operatório. As fraturas são mais frequentes nos **níveis neurológicos mais altos** (torácico e lombar alto), em que a criança não deambula.\n\n**Onde ocorrem.** A região mais comum é a **extremidade distal do fêmur**, na metáfise supracondiliana. Depois vêm a **tíbia proximal** e a diáfise do fêmur. A metáfise distal do fêmur sofre o maior braço de alavanca durante as manobras de mobilização e as transferências.\n\n**Como se apresentam: a armadilha da \"infecção\".** Como não há dor, a fratura aparece como:\n- **Coxa ou perna quente, vermelha e inchada**;\n- **febre** e aumento de VHS e de leucócitos.\n\nO quadro imita **osteomielite, celulite ou trombose**. A radiografia pode mostrar um **calo exuberante** e reação periosteal intensa, que pode ser confundida com infecção ou tumor.\n\n**Lesões da fise.** Também são comuns lesões fisárias por estresse repetido. A fise fica alargada e irregular, lembrando uma **articulação de Charcot**, e cicatriza lentamente.\n\n**Tratamento.**\n- Imobilização **curta e acolchoada** (tala ou gesso bem almofadado), pelo menor tempo possível.\n- A consolidação costuma ser rápida e com calo abundante.\n- **Evitar imobilizações longas**: aumentam a osteopenia e geram novas fraturas, num ciclo vicioso.\n- Cuidado com **úlceras de pressão**, porque a pele é insensível.\n- Pequenos desvios são aceitos, já que o membro tem função limitada.\n\n**Prevenção.** Ortostatismo com órteses quando possível, mobilização cuidadosa, retirada gradual de gessos e atenção à vitamina D.",
-  "correta": "**Correta: A (distal do fêmur).** Na mielomeningocele, as fraturas por osteopenia e insensibilidade ocorrem mais na **metáfise distal do fêmur** (região supracondiliana), seguida da tíbia proximal, muitas vezes após imobilização ou manipulação.",
+  "conceito": "Na mielomeningocele, o membro inferior sem sensibilidade e com osteopenia quebra com trauma mínimo, e a criança muitas vezes chega com um joelho quente e inchado, sem dor.\n\n**O que o capítulo descreve.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), as fraturas ocorrem em **12% a 31%** dos pacientes com mielomeningocele (cerca de 40% nos de nível torácico). O local mais comum é a **diáfise do fêmur**, seguida do **fêmur distal**. A **fratura fisária** desses pacientes **imita infecção** e exige **imobilização longa sem carga**. Lembrar da alergia ao **látex**, em 18% a 40%.\n\n**Lendo as alternativas.** A questão só oferece **extremidades**, não diáfises. Entre as extremidades, a mais fraturada no capítulo é a **distal do fêmur**, a segunda do ranking geral logo após a diáfise.\n\n**Na prova:** mielomeningocele = fêmur (diáfise e extremidade distal); fratura fisária que parece infecção.\n\nO resumo de fraturas patológicas e maus-tratos traz a mielomeningocele na seção de doenças sistêmicas.",
+  "correta": "**A: distal do fêmur.** Entre as extremidades oferecidas, é a mais fraturada; no capítulo, só a diáfise do fêmur vem antes.",
   "incorretas": {
-   "B": "A **tíbia distal** pode fraturar, mas é menos frequente que o fêmur distal, que sofre o maior braço de alavanca nas manobras e transferências.",
-   "C": "O **fêmur proximal** é menos acometido. A região supracondiliana distal é a mais frequente.",
-   "D": "A **tíbia proximal** é a segunda região mais acometida, atrás do fêmur distal."
+   "B": "**A tíbia distal não aparece no capítulo** como local preferencial nessa doença.",
+   "C": "**O fêmur proximal não é o local típico**; o capítulo destaca diáfise e extremidade distal.",
+   "D": "**A tíbia proximal também não está entre os locais destacados.**"
   },
+  "conferido": false,
   "referencias": [
-   "Osteoporosis in paediatric patients with spina bifida. https://pmc.ncbi.nlm.nih.gov/articles/PMC3240921/",
-   "Fractures in myelomeningocele. https://pmc.ncbi.nlm.nih.gov/articles/PMC2948122/",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Doenças sistêmicas."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Doenças sistêmicas"
+     ],
+     "blocos": [
+      "doencas-sistemicas-b653f198",
+      "doencas-sistemicas-b54badf3"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "aada24b436a8963d06fc1e4b676865b0ff01060b948a92079f8ed58f3e52e5b1"
+    }
+   ],
+   "questaoSha256": "e4c3d732753c51d255c9aa182015626c7decd4ad0f57ffe86ba8f6f417839634",
+   "comentarioSha256": "2d48f2e66cc7dc32588443eb20daae7d835823bdaa5ce29accdc9668ffb2b206"
+  }
  },
  "pediatria-0066": {
   "conceito": "Um lactente de oito meses chega com o cotovelo inchado e a história de que \"rolou do sofá\". A pergunta que todo ortopedista pediátrico precisa se fazer é se aquela fratura combina com aquele mecanismo naquela idade. Algumas fraturas quase nunca acontecem por acidente, e a questão pede a mais sugestiva delas.\n\n**Onde procurar.** No Rockwood and Wilkins (9ª ed., cap. 17), diante da suspeita de maus-tratos, o capítulo indica **cintilografia óssea e inventário esquelético**, à procura de **fraturas metafisárias em canto** (ou em **alça de balde**), **fraturas de costela** e **fraturas em diferentes fases de consolidação**. São essas as lesões que as provas cobram como de alta especificidade.\n\n**Por que a fratura do canto pesa tanto.** É uma lesão da borda da metáfise, junto da fise, que as quedas comuns do lactente não explicam. Na radiografia, aparece como um pequeno fragmento no canto da metáfise; vista de outro ângulo, a mesma lesão desenha uma **alça de balde**. Numa série de 16 descolamentos do úmero distal avaliados por ultrassom, 10 tinham outra fratura no mesmo úmero, cinco delas em alça de balde. Encontrar esse padrão obriga a procurar o resto: costelas, fraturas em fases diferentes e trauma craniano.\n\n**E as fraturas de diáfise.** Fraturas de diáfise são comuns tanto no trauma acidental quanto no não acidental, e por isso são menos específicas. O capítulo de fêmur da criança (10ª ed., cap. 25) mostra que, antes da marcha, até 80% das fraturas do fêmur podem ser não acidentais, e acrescenta um dado que contraria o senso comum: **a fratura transversa prediz maus-tratos melhor que a espiral**. O que pesa é a idade abaixo de 18 meses, a história suspeita e a evidência de lesão anterior (fatores de Baldwin), e não o desenho espiral do traço.\n\n> **Na prova:** a fratura de extremidade mais sugestiva de maus-tratos é a metafisária do canto (alça de balde); costelas e fraturas em fases diferentes reforçam. Espiral do fêmur não é a mais específica.\n\nNo resumo de descolamento do úmero distal, a seção sobre maus-tratos lista o que pedir e o que procurar.",
@@ -1531,19 +1576,43 @@
   "conferido": false
  },
  "pediatria-0097": {
-  "conceito": "**Os maus-tratos na criança e as fraturas.** As fraturas são a segunda manifestação mais comum dos maus-tratos, depois das lesões de pele. Cerca de **80%** das fraturas por maus-tratos ocorrem em crianças **menores de 18 meses**, e muitas vezes a criança ainda não anda. Reconhecer o padrão é responsabilidade do ortopedista: a criança que volta para o mesmo ambiente tem alto risco de nova lesão e de morte.\n\n**A especificidade das lesões (Kleinman).**\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Lesões metafisárias clássicas** (fratura em \"canto\" e em \"alça de balde\"), fraturas de **costelas posteriores**, **escápula**, **processos espinhosos** e **esterno** |\n| **Moderada** | Fraturas múltiplas (sobretudo bilaterais), fraturas em estágios diferentes de consolidação, descolamentos epifisários, fraturas de corpos vertebrais, de dedos e do crânio complexas |\n| **Baixa** (comuns) | Formação de periósteo novo, fraturas de **clavícula**, fraturas da **diáfise de ossos longos**, fraturas lineares do crânio |\n\n**Por que alta especificidade.** Essas lesões exigem **mecanismos** que quase não ocorrem em acidentes:\n- a **lesão metafisária clássica** vem da **sacudida** ou tração e torção dos membros;\n- as **costelas posteriores** fraturam pela **compressão** do tórax entre as mãos do agressor;\n- a **escápula**, o **esterno** e os **processos espinhosos** exigem trauma direto de grande energia, raro em quedas domésticas.\n\n**As lesões de baixa especificidade** são comuns também em acidentes, mas ganham importância quando a **história não é compatível** com a lesão ou com o desenvolvimento da criança (por exemplo, fratura de fêmur em bebê que não anda).\n\n**A investigação.** **Inventário esquelético** completo em menores de 2 anos, repetido em 2 semanas; fundoscopia (hemorragia retiniana), avaliação neurológica e de imagem do crânio; exclusão de doenças que fragilizam o osso (osteogênese imperfeita, raquitismo); e **notificação** obrigatória ao conselho tutelar.",
-  "correta": "**Correta: B (da escápula).** Na classificação de Kleinman, a fratura da escápula está entre as lesões de alta especificidade para maus-tratos, porque exige trauma direto de grande energia, raro em acidentes domésticos.",
+  "conceito": "Nem toda fratura numa criança maltratada aponta para abuso com a mesma força; a classificação de KLEINMAN ordena isso.\n\n**A escala de KLEINMAN** (Tabela 7-7 do capítulo) separa as fraturas pela força com que sugerem maus-tratos:\n\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Metafisária clássica** (canto, alça de balde); **costela posterior**; **escápula**; **processo espinhoso**; **esterno** |\n| Moderada | Múltiplas e bilaterais; fases diferentes de consolidação; descolamento epifisário; corpo vertebral; dedos; crânio complexo |\n| Baixa | Clavícula; diáfise de osso longo; crânio linear |\n\n**A lógica da tabela.** As de alta especificidade são fraturas que **quase não acontecem por acidente**: a escápula, o esterno e o processo espinhoso exigem energia direta grande ou mecanismos que a vida comum da criança pequena não produz; a costela posterior quebra quando o adulto **aperta o tórax** e a costela faz alavanca sobre o processo transverso; a metafisária clássica nasce da **sacudida** ou da tração do membro. As de baixa especificidade são **comuns** também nos acidentes; isso não as torna inocentes, só menos específicas.\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** KLEINMAN alta = **metafisária clássica, costela posterior, escápula, processo espinhoso, esterno**.\n\nO resumo de fraturas patológicas e maus-tratos traz a tabela de KLEINMAN na seção de reconhecimento.",
+  "correta": "**B: da escápula.** Está na linha de alta especificidade da Tabela 7-7.",
   "incorretas": {
-   "A": "A fratura da **clavícula** é comum em acidentes e no parto; tem **baixa** especificidade.",
-   "C": "As fraturas **diafisárias** de ossos longos são as mais frequentes nos maus-tratos, mas têm **baixa** especificidade, porque também ocorrem em acidentes.",
-   "D": "As fraturas de **corpo vertebral** são de especificidade **moderada**; as de alta especificidade na coluna são as dos processos espinhosos."
+   "A": "**A clavícula é de baixa especificidade**: quebra muito por acidente.",
+   "C": "**A diáfise de osso longo também é de baixa especificidade.** No fêmur do lactente que não anda, porém, o capítulo encontra 42% de abuso.",
+   "D": "**O corpo vertebral é de especificidade moderada**; alta é o processo espinhoso."
   },
+  "conferido": false,
   "referencias": [
-   "American Academy of Pediatrics. Evaluating Young Children With Fractures for Child Abuse. Pediatrics. 2025. https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child",
-   "Kleinman PK. Diagnostic Imaging of Child Abuse. 3ª edição. Cambridge University Press, 2015."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-ce072879",
+      "reconhecimento-59a1f669",
+      "reconhecimento-7f6299a9"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+    }
+   ],
+   "questaoSha256": "c4471725cfbc5bb645bc42048dc0c3e1b63692e9abcaab8593829787036a45c2",
+   "comentarioSha256": "7b1515e9b6e1c7d8a6a7fdffd3da6694c04b10ca1df1a8ad0d99887e0ca77b1e"
+  }
  },
  "pediatria-0098": {
   "conceito": "**Três arqueamentos, três prognósticos.** O arqueamento congênito da tíbia é descrito pela **direção do ápice** da curva, e cada direção tem uma associação e uma evolução completamente diferentes. Errar a direção é errar o prognóstico.\n\n| Direção do ápice | Associação | Evolução |\n|---|---|---|\n| **Posteromedial** | **Pé calcâneo valgo** | **Benigna**: corrige espontaneamente em grande parte |\n| Anterolateral | **Neurofibromatose tipo 1**, pseudartrose congênita | **Maligna**: tende a fraturar e não consolidar |\n| Anteromedial | **Hemimelia fibular** (deficiência longitudinal da fíbula) | Discrepância de comprimento e deformidade do pé |\n\n**O arqueamento posteromedial.**\n- Atribuído à **posição intrauterina**: o pé fica dobrado contra a face anterior da perna.\n- Ao nascimento, o pé está em **calcâneo valgo** acentuado, com o dorso quase encostando na tíbia, e a perna curva com ápice posterior e medial.\n- A angulação melhora muito nos primeiros 2 a 3 anos, mas a tíbia fica **mais curta**: a discrepância residual média é de 3 a 4 cm na maturidade, às vezes exigindo epifisiodese contralateral ou alongamento.\n- O pé calcâneo valgo melhora com alongamentos ou gessos.\n\n**O arqueamento anterolateral.** É o mais perigoso: pode evoluir para fratura e pseudartrose congênita da tíbia, de tratamento muito difícil. Usa-se órtese de proteção; **nunca se faz osteotomia profilática**, que pode precipitar a pseudartrose.\n\n**O arqueamento anteromedial.** Associado à hemimelia fibular: fíbula ausente ou hipoplásica, pé em equinovalgo, ausência de raios laterais, coalizões tarsais e encurtamento importante.",
@@ -2219,19 +2288,43 @@
   "conferido": false
  },
  "pediatria-0146": {
-  "conceito": "**Os maus-tratos na criança e as fraturas.** As fraturas são a segunda manifestação mais comum dos maus-tratos, depois das lesões de pele. Cerca de **80%** das fraturas por maus-tratos ocorrem em crianças **menores de 18 meses**, e muitas vezes a criança ainda não anda. Reconhecer o padrão é responsabilidade do ortopedista: a criança que volta para o mesmo ambiente tem alto risco de nova lesão e de morte.\n\n**A especificidade das lesões (Kleinman).**\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Lesões metafisárias clássicas** (fratura em \"canto\" e em \"alça de balde\"), fraturas de **costelas posteriores**, **escápula**, **processos espinhosos** e **esterno** |\n| **Moderada** | Fraturas múltiplas (sobretudo bilaterais), fraturas em estágios diferentes de consolidação, descolamentos epifisários, fraturas de corpos vertebrais, de dedos e do crânio complexas |\n| **Baixa** (comuns) | Formação de periósteo novo, fraturas de **clavícula**, fraturas da **diáfise de ossos longos**, fraturas lineares do crânio |\n\n**Por que alta especificidade.** Essas lesões exigem **mecanismos** que quase não ocorrem em acidentes:\n- a **lesão metafisária clássica** vem da **sacudida** ou tração e torção dos membros;\n- as **costelas posteriores** fraturam pela **compressão** do tórax entre as mãos do agressor;\n- a **escápula**, o **esterno** e os **processos espinhosos** exigem trauma direto de grande energia, raro em quedas domésticas.\n\n**As lesões de baixa especificidade** são comuns também em acidentes, mas ganham importância quando a **história não é compatível** com a lesão ou com o desenvolvimento da criança (por exemplo, fratura de fêmur em bebê que não anda).\n\n**A investigação.** **Inventário esquelético** completo em menores de 2 anos, repetido em 2 semanas; fundoscopia (hemorragia retiniana), avaliação neurológica e de imagem do crânio; exclusão de doenças que fragilizam o osso (osteogênese imperfeita, raquitismo); e **notificação** obrigatória ao conselho tutelar.\n\n**A imagem.** A seta aponta um pequeno fragmento na **borda da metáfise** distal do fêmur, junto à fise: é a **fratura em canto** (lesão metafisária clássica), típica da **sacudida** ou da tração e torção do membro. Em uma criança **abaixo de 2 anos**, é altamente sugestiva de **maus-tratos** e exige inventário esquelético, fundoscopia, avaliação neurológica e notificação.",
-  "correta": "**Correta: B (maus-tratos).** A imagem mostra uma fratura em canto da metáfise (lesão metafisária clássica) em criança menor de 2 anos, achado altamente específico de maus-tratos.",
+  "conceito": "A imagem é o exemplo de livro da fratura mais característica dos maus-tratos.\n\n**A escala de KLEINMAN** (Tabela 7-7 do capítulo) separa as fraturas pela força com que sugerem maus-tratos:\n\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Metafisária clássica** (canto, alça de balde); **costela posterior**; **escápula**; **processo espinhoso**; **esterno** |\n| Moderada | Múltiplas e bilaterais; fases diferentes de consolidação; descolamento epifisário; corpo vertebral; dedos; crânio complexo |\n| Baixa | Clavícula; diáfise de osso longo; crânio linear |\n\n**A lógica da tabela.** As de alta especificidade são fraturas que **quase não acontecem por acidente**: a escápula, o esterno e o processo espinhoso exigem energia direta grande ou mecanismos que a vida comum da criança pequena não produz; a costela posterior quebra quando o adulto **aperta o tórax** e a costela faz alavanca sobre o processo transverso; a metafisária clássica nasce da **sacudida** ou da tração do membro. As de baixa especificidade são **comuns** também nos acidentes; isso não as torna inocentes, só menos específicas.\n\n**O que a imagem mostra.** A metáfise distal do fêmur de um lactente, com a seta apontando um pequeno **fragmento de osso solto no canto** da metáfise, junto à fise. É o aspecto de \"canto\" da lesão metafisária clássica.\n\n**A lesão metafisária clássica.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), é uma fratura que atravessa a **esponjosa primária**, logo acima da zona de calcificação provisória, produzida por **sacudidas ou tração**. Vista de frente, parece um **canto** solto da metáfise (\"corner fracture\"); de outro ângulo, uma **alça de balde**. É **quase patognomônica**, embora não seja a mais comum (15% a 32% das fraturas dos maltratados).\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** fragmento no canto da metáfise abaixo de 2 anos = **maus-tratos** até prova em contrário.\n\nO resumo de fraturas patológicas e maus-tratos traz a tabela de KLEINMAN na seção de reconhecimento.",
+  "correta": "**B: maus tratos.** O fragmento no canto da metáfise de uma criança abaixo de 2 anos é a lesão metafisária clássica, de alta especificidade na escala de KLEINMAN.",
   "incorretas": {
-   "A": "O **raquitismo** mostra metáfises alargadas, em taça e desfiadas, com fise espessada, e não um fragmento em canto.",
-   "C": "A **síndrome de Ehlers-Danlos** causa frouxidão articular e de pele, sem esse padrão de fratura.",
-   "D": "A **osteogênese imperfeita** causa fraturas diafisárias, osteopenia e deformidades; a lesão metafisária clássica é muito mais específica de maus-tratos."
+   "A": "**O raquitismo alarga e deixa em taça a metáfise**, com bordas mal definidas; não cria um fragmento isolado no canto. Ele entra no diagnóstico diferencial que o capítulo lista.",
+   "C": "**EHLERS-DANLOS não está entre os diferenciais** de fratura que o capítulo lista.",
+   "D": "**A osteogênese imperfeita dá fraturas diafisárias transversas** e osteopenia; o capítulo a coloca no diferencial, mas a lesão de canto aponta maus-tratos."
   },
+  "conferido": false,
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de maus-tratos na criança.",
-   "Kleinman PK. Diagnostic Imaging of Child Abuse. 3ª edição. Cambridge University Press, 2015."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-59a1f669",
+      "reconhecimento-ce072879",
+      "reconhecimento-7f6299a9"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4"
+    }
+   ],
+   "questaoSha256": "d894dd57a2a5a8ea0de727cf44f9b9b046316658a867b8bcd5111a6cfcf1b90c",
+   "comentarioSha256": "1d40298f26aa3cc63e2b35e5e4ea4e4fa39ba80024eb312ec593d1bb746964cf"
+  }
  },
  "pediatria-0147": {
   "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita **mais comum do cotovelo**, embora rara. Pode ser **isolada** ou associada a síndromes (unha-patela, Klippel-Feil, Ehlers-Danlos, artrogripose, sinostose radioulnar). É **bilateral** em boa parte dos casos e costuma ser descoberta tarde, na idade escolar, porque a função é quase normal.\n\n**A direção do desvio.**\n| Direção | Frequência |\n|---|---|\n| **Posterior** (ou posterolateral) | A **mais comum** (cerca de 65%) |\n| Anterior | Menos comum: deve-se suspeitar de Monteggia antiga |\n| Lateral | Rara |\n\n**Os sinais que indicam a causa congênita (e não trauma antigo).**\n- **Cabeça do rádio pequena** e **em cúpula** (convexa, e não côncava), porque nunca articulou com o capítulo;\n- **capítulo hipoplásico** e achatado;\n- **rádio longo** em relação à ulna, com a ulna **retificada** (sem a curvatura do Monteggia);\n- **bilateralidade** e associação com síndromes;\n- ausência de história de trauma.\n\n**A diferença com a lesão de Monteggia antiga.** Na Monteggia não diagnosticada, a cabeça costuma estar **anterior**, a ulna tem **arqueamento** ou consolidação viciosa, e a cabeça do rádio inicialmente tem forma normal (côncava). Esse diagnóstico diferencial é importante, porque a Monteggia antiga pode ser reconstruída, e a congênita **não deve** ser reduzida.\n\n**O quadro e o tratamento.** Limitação discreta da extensão (na posterior) ou da flexão (na anterior), e da rotação; dor e saliência palpável na adolescência. O tratamento é **observação**. A tentativa de redução falha. Na dor ou limitação importante, após a maturidade, faz-se a **ressecção da cabeça do rádio**.",
@@ -2429,19 +2522,43 @@
   "conferido": false
  },
  "pediatria-0160": {
-  "conceito": "**Os maus-tratos na criança e as fraturas.** As fraturas são a segunda manifestação mais comum dos maus-tratos, depois das lesões de pele. Cerca de **80%** das fraturas por maus-tratos ocorrem em crianças **menores de 18 meses**, e muitas vezes a criança ainda não anda. Reconhecer o padrão é responsabilidade do ortopedista: a criança que volta para o mesmo ambiente tem alto risco de nova lesão e de morte.\n\n**A especificidade das lesões (Kleinman).**\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Lesões metafisárias clássicas** (fratura em \"canto\" e em \"alça de balde\"), fraturas de **costelas posteriores**, **escápula**, **processos espinhosos** e **esterno** |\n| **Moderada** | Fraturas múltiplas (sobretudo bilaterais), fraturas em estágios diferentes de consolidação, descolamentos epifisários, fraturas de corpos vertebrais, de dedos e do crânio complexas |\n| **Baixa** (comuns) | Formação de periósteo novo, fraturas de **clavícula**, fraturas da **diáfise de ossos longos**, fraturas lineares do crânio |\n\n**Por que alta especificidade.** Essas lesões exigem **mecanismos** que quase não ocorrem em acidentes:\n- a **lesão metafisária clássica** vem da **sacudida** ou tração e torção dos membros;\n- as **costelas posteriores** fraturam pela **compressão** do tórax entre as mãos do agressor;\n- a **escápula**, o **esterno** e os **processos espinhosos** exigem trauma direto de grande energia, raro em quedas domésticas.\n\n**As lesões de baixa especificidade** são comuns também em acidentes, mas ganham importância quando a **história não é compatível** com a lesão ou com o desenvolvimento da criança (por exemplo, fratura de fêmur em bebê que não anda).\n\n**A investigação.** **Inventário esquelético** completo em menores de 2 anos, repetido em 2 semanas; fundoscopia (hemorragia retiniana), avaliação neurológica e de imagem do crânio; exclusão de doenças que fragilizam o osso (osteogênese imperfeita, raquitismo); e **notificação** obrigatória ao conselho tutelar.",
-  "correta": "**Correta: A (da escápula, do esterno ou metafisárias).** Na classificação de Kleinman, as fraturas da escápula, do esterno, dos processos espinhosos, das costelas posteriores e as lesões metafisárias clássicas têm alta especificidade para maus-tratos.",
+  "conceito": "A questão lista trios de fraturas; só um deles está inteiro na linha de alta especificidade de KLEINMAN.\n\n**A escala de KLEINMAN** (Tabela 7-7 do capítulo) separa as fraturas pela força com que sugerem maus-tratos:\n\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Metafisária clássica** (canto, alça de balde); **costela posterior**; **escápula**; **processo espinhoso**; **esterno** |\n| Moderada | Múltiplas e bilaterais; fases diferentes de consolidação; descolamento epifisário; corpo vertebral; dedos; crânio complexo |\n| Baixa | Clavícula; diáfise de osso longo; crânio linear |\n\n**A lógica da tabela.** As de alta especificidade são fraturas que **quase não acontecem por acidente**: a escápula, o esterno e o processo espinhoso exigem energia direta grande ou mecanismos que a vida comum da criança pequena não produz; a costela posterior quebra quando o adulto **aperta o tórax** e a costela faz alavanca sobre o processo transverso; a metafisária clássica nasce da **sacudida** ou da tração do membro. As de baixa especificidade são **comuns** também nos acidentes; isso não as torna inocentes, só menos específicas.\n\n**A lesão metafisária clássica.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), é uma fratura que atravessa a **esponjosa primária**, logo acima da zona de calcificação provisória, produzida por **sacudidas ou tração**. Vista de frente, parece um **canto** solto da metáfise (\"corner fracture\"); de outro ângulo, uma **alça de balde**. É **quase patognomônica**, embora não seja a mais comum (15% a 32% das fraturas dos maltratados).\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** KLEINMAN alta = **metafisária clássica, costela posterior, escápula, processo espinhoso, esterno**.\n\nO resumo de fraturas patológicas e maus-tratos traz a tabela de KLEINMAN na seção de reconhecimento.",
+  "correta": "**A: da escápula, do esterno ou metafisárias.** As três estão na linha de alta especificidade da Tabela 7-7.",
   "incorretas": {
-   "B": "A escápula e o esterno estão certos, mas as fraturas **diafisárias** têm **baixa** especificidade.",
-   "C": "As metafisárias estão certas, mas a **clavícula** tem baixa especificidade e o **corpo vertebral**, especificidade moderada.",
-   "D": "Clavícula e diáfises têm **baixa** especificidade; o corpo vertebral, moderada."
+   "B": "**Troca a metafisária pela diafisária**, que é de baixa especificidade.",
+   "C": "**Clavícula (baixa) e corpo vertebral (moderada)** estragam o trio, embora a metafisária esteja certa.",
+   "D": "**Nenhuma das três é de alta especificidade.**"
   },
+  "conferido": false,
   "referencias": [
-   "https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child",
-   "Kleinman PK. Diagnostic Imaging of Child Abuse. 3ª edição. Cambridge University Press, 2015."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-ce072879",
+      "reconhecimento-59a1f669",
+      "reconhecimento-7f6299a9"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+    }
+   ],
+   "questaoSha256": "3c333fe63d7136e1122b407ce4ed76087655c926d0cfa8b775a6e64e8ca010e7",
+   "comentarioSha256": "375469b7884724919b47d6383d9cec48a782c9f62873e1e44894156635a33a60"
+  }
  },
  "pediatria-0161": {
   "conceito": "**O menisco discoide.** É uma variante congênita em que o menisco é largo, espesso e em forma de disco, cobrindo boa parte do platô. Quase sempre é **lateral**, é mais comum em populações asiáticas e pode ser **bilateral**. O tecido é desorganizado, com menos fibras circunferenciais, e por isso rompe e degenera com mais facilidade.\n\n**Como se apresenta.**\n- Assintomático, achado de exame.\n- **Joelho em ressalto** (snapping knee): estalido palpável e às vezes visível na flexão e extensão. É típico da criança pequena com menisco **instável**.\n- Dor, derrame e bloqueio, quando há rotura.\n\n**A classificação de Watanabe.**\n\n| Tipo | Forma | Fixação periférica |\n|---|---|---|\n| Completo | Cobre todo o platô | Estável |\n| Incompleto | Cobre parte do platô | Estável |\n| Wrisberg | Forma variável | **Sem inserção posterior** (só o ligamento de Wrisberg) |\n\n**De onde vem a instabilidade.** Por muito tempo, ensinou-se que a instabilidade vinha do tipo Wrisberg, sem fixação **posterior**. As séries artroscópicas mais recentes, que examinaram sistematicamente a borda periférica de cada segmento, mostraram outra realidade. A **instabilidade periférica é frequente** e acomete mais o **corno anterior**, seguido do posterior. O segmento médio é o menos acometido.\n\nAhn e Klingele propuseram classificações que descrevem a **localização** do segmento solto (anterior, posterior ou médio), e não apenas a forma.\n\n**Por que isso importa no tratamento.** O tratamento do discoide sintomático é a **saucerização** artroscópica, que remodela o menisco num formato próximo do normal, preservando uma borda de cerca de 6 a 8 mm. Depois, o cirurgião **testa a estabilidade de cada segmento**. Se houver instabilidade periférica, ela é **suturada** à cápsula. Esquecer de procurar a instabilidade anterior é uma causa de falha. A meniscectomia total foi abandonada pelo risco de artrose precoce.\n\n**Diagnóstico por imagem.** Na radiografia, o compartimento lateral é alargado e o côndilo lateral pode ser achatado. Na ressonância, aparece o **sinal da gravata-borboleta** em três ou mais cortes sagitais consecutivos de 4 a 5 mm.\n\n**A anatomia do tipo Wrisberg.** No tipo **Wrisberg** (tipo III de Watanabe), o menisco **não tem a inserção tibial posterior** normal: falta o **ligamento coronário** (meniscotibial) posterior. O corno posterior fica preso apenas pelo **ligamento meniscofemoral de Wrisberg**, que vai ao côndilo femoral medial. Na extensão do joelho, o ligamento puxa o menisco para dentro da articulação, causando o **ressalto** (snapping knee).\n\n**Outros números úteis.**\n- O menisco discoide é quase sempre **lateral**; o discoide medial é raro.\n- É **bilateral** em cerca de **20%** dos casos (alguns estudos relatam mais), e não apenas 5%.\n- Na classificação de **Watanabe**, o tipo **I** é o completo, que cobre todo o platô, com fixação periférica íntegra; o tipo **II** é o incompleto; o tipo **III** é o Wrisberg.",
@@ -2633,18 +2750,43 @@
   "conferido": false
  },
  "pediatria-0173": {
-  "conceito": "**Os maus-tratos na criança e as fraturas.** As fraturas são a segunda manifestação mais comum dos maus-tratos, depois das lesões de pele. Cerca de **80%** das fraturas por maus-tratos ocorrem em crianças **menores de 18 meses**, e muitas vezes a criança ainda não anda. Reconhecer o padrão é responsabilidade do ortopedista: a criança que volta para o mesmo ambiente tem alto risco de nova lesão e de morte.\n\n**A especificidade das lesões (Kleinman).**\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Lesões metafisárias clássicas** (fratura em \"canto\" e em \"alça de balde\"), fraturas de **costelas posteriores**, **escápula**, **processos espinhosos** e **esterno** |\n| **Moderada** | Fraturas múltiplas (sobretudo bilaterais), fraturas em estágios diferentes de consolidação, descolamentos epifisários, fraturas de corpos vertebrais, de dedos e do crânio complexas |\n| **Baixa** (comuns) | Formação de periósteo novo, fraturas de **clavícula**, fraturas da **diáfise de ossos longos**, fraturas lineares do crânio |\n\n**Por que alta especificidade.** Essas lesões exigem **mecanismos** que quase não ocorrem em acidentes:\n- a **lesão metafisária clássica** vem da **sacudida** ou tração e torção dos membros;\n- as **costelas posteriores** fraturam pela **compressão** do tórax entre as mãos do agressor;\n- a **escápula**, o **esterno** e os **processos espinhosos** exigem trauma direto de grande energia, raro em quedas domésticas.\n\n**As lesões de baixa especificidade** são comuns também em acidentes, mas ganham importância quando a **história não é compatível** com a lesão ou com o desenvolvimento da criança (por exemplo, fratura de fêmur em bebê que não anda).\n\n**A investigação.** **Inventário esquelético** completo em menores de 2 anos, repetido em 2 semanas; fundoscopia (hemorragia retiniana), avaliação neurológica e de imagem do crânio; exclusão de doenças que fragilizam o osso (osteogênese imperfeita, raquitismo); e **notificação** obrigatória ao conselho tutelar.\n\n**Os processos espinhosos.** As fraturas dos **processos espinhosos** (avulsão pelos ligamentos interespinhosos) resultam de **hiperflexão** violenta da coluna, como na sacudida ou no arremesso da criança. Raramente ocorrem em quedas domésticas, e por isso estão entre as lesões de **alta especificidade** para maus-tratos.",
-  "correta": "**Correta: C (do processo espinhoso).** A fratura do processo espinhoso, por hiperflexão violenta, é rara em acidentes e tem alta especificidade para maus-tratos na classificação de Kleinman.",
+  "conceito": "A pergunta pede uma fratura de alta especificidade, e o detalhe está em qual parte da vértebra quebrou.\n\n**A escala de KLEINMAN** (Tabela 7-7 do capítulo) separa as fraturas pela força com que sugerem maus-tratos:\n\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Metafisária clássica** (canto, alça de balde); **costela posterior**; **escápula**; **processo espinhoso**; **esterno** |\n| Moderada | Múltiplas e bilaterais; fases diferentes de consolidação; descolamento epifisário; corpo vertebral; dedos; crânio complexo |\n| Baixa | Clavícula; diáfise de osso longo; crânio linear |\n\n**A lógica da tabela.** As de alta especificidade são fraturas que **quase não acontecem por acidente**: a escápula, o esterno e o processo espinhoso exigem energia direta grande ou mecanismos que a vida comum da criança pequena não produz; a costela posterior quebra quando o adulto **aperta o tórax** e a costela faz alavanca sobre o processo transverso; a metafisária clássica nasce da **sacudida** ou da tração do membro. As de baixa especificidade são **comuns** também nos acidentes; isso não as torna inocentes, só menos específicas.\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** vértebra em maus-tratos: **processo espinhoso = alta**; **corpo = moderada**.\n\nO resumo de fraturas patológicas e maus-tratos traz a tabela de KLEINMAN na seção de reconhecimento.",
+  "correta": "**C: do processo espinhoso.** É uma das cinco lesões de alta especificidade da Tabela 7-7; o corpo vertebral, ao contrário, é de especificidade moderada.",
   "incorretas": {
-   "A": "A fratura da **clavícula** é comum em acidentes e no parto; tem **baixa** especificidade.",
-   "B": "As fraturas das **falanges** da mão têm especificidade **moderada** (sobretudo em criança que não anda).",
-   "D": "As fraturas **diafisárias** de ossos longos são frequentes nos maus-tratos, mas têm **baixa** especificidade."
+   "A": "**A clavícula é de baixa especificidade.**",
+   "B": "**Os dedos têm especificidade moderada**, não alta.",
+   "D": "**A diáfise de osso longo é de baixa especificidade**, por ser frequente nos acidentes."
   },
+  "conferido": false,
   "referencias": [
-   "Kleinman PK. Diagnostic Imaging of Child Abuse. 3ª edição. Cambridge University Press, 2015."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-ce072879",
+      "reconhecimento-59a1f669",
+      "reconhecimento-7f6299a9"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+    }
+   ],
+   "questaoSha256": "31300bd72dd0b89c5247b3c717cc6550a9e344e20af91066e61b8ece31564ca4",
+   "comentarioSha256": "8d61118875c16ad5ff0c65e2fd0e35d1e410b4a1fbb274b656e6a105107a1c7e"
+  }
  },
  "pediatria-0174": {
   "conceito": "**A previsão do crescimento restante.** Para tratar a discrepância de comprimento dos membros e as deformidades angulares no momento certo (epifisiodese, crescimento guiado), é preciso estimar quanto cada fise ainda vai crescer. Os métodos clássicos:\n| Método | Base |\n|---|---|\n| **Menelaus** (aritmético) | Valores fixos de crescimento por ano em cada fise, até o fim do crescimento |\n| **Green-Anderson** | Tabelas de crescimento restante pela idade óssea |\n| **Moseley** | Gráfico de retas com a idade óssea |\n| **Paley** (multiplicador) | Comprimento atual vezes um fator pela idade e sexo |\n\n**O método de Menelaus (White e Menelaus).** É o mais **simples**: considera que, a partir de cerca de 9 anos, as fises do joelho crescem uma quantidade **constante** por ano até o fim do crescimento (idade cronológica de cerca de **16 anos nos meninos** e **14 anos nas meninas**):\n- **fêmur distal**: cerca de **9 a 10 mm por ano** (3/8 de polegada);\n- **tíbia proximal**: cerca de **6 mm por ano** (1/4 de polegada).\n\nO fêmur distal, portanto, cresce **mais** que a tíbia proximal. Juntas, as duas fises do joelho respondem por cerca de **65%** do crescimento do membro inferior (o fêmur distal cerca de 37% e a tíbia proximal cerca de 28%).\n\n**Aplicação prática.** Para uma discrepância prevista de 3 cm, a epifisiodese do fêmur distal e da tíbia proximal do lado longo, juntas, corrige cerca de 1,5 cm por ano; o momento é escolhido para que o crescimento restante do lado oposto iguale os membros na maturidade. A precisão melhora usando a **idade óssea** e medidas seriadas.\n\n**Os percentuais das fises.**\n| Osso | Fise que mais cresce |\n|---|---|\n| Fêmur | **Distal** (cerca de 70% do crescimento do fêmur) |\n| Tíbia | **Proximal** (cerca de 55% a 60% do crescimento da tíbia) |\n| Úmero | **Proximal** (cerca de 80%) |\n| Rádio e ulna | **Distal** (cerca de 75% a 80%) |",
@@ -4100,19 +4242,43 @@
   "conferido": false
  },
  "pediatria-0327": {
-  "conceito": "**Os maus-tratos na criança e as fraturas.** As fraturas são a segunda manifestação mais comum dos maus-tratos, depois das lesões de pele. Cerca de **80%** das fraturas por maus-tratos ocorrem em crianças **menores de 18 meses**, e muitas vezes a criança ainda não anda. Reconhecer o padrão é responsabilidade do ortopedista: a criança que volta para o mesmo ambiente tem alto risco de nova lesão e de morte.\n\n**A especificidade das lesões (Kleinman).**\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Lesões metafisárias clássicas** (fratura em \"canto\" e em \"alça de balde\"), fraturas de **costelas posteriores**, **escápula**, **processos espinhosos** e **esterno** |\n| **Moderada** | Fraturas múltiplas (sobretudo bilaterais), fraturas em estágios diferentes de consolidação, descolamentos epifisários, fraturas de corpos vertebrais, de dedos e do crânio complexas |\n| **Baixa** (comuns) | Formação de periósteo novo, fraturas de **clavícula**, fraturas da **diáfise de ossos longos**, fraturas lineares do crânio |\n\n**Por que alta especificidade.** Essas lesões exigem **mecanismos** que quase não ocorrem em acidentes:\n- a **lesão metafisária clássica** vem da **sacudida** ou tração e torção dos membros;\n- as **costelas posteriores** fraturam pela **compressão** do tórax entre as mãos do agressor;\n- a **escápula**, o **esterno** e os **processos espinhosos** exigem trauma direto de grande energia, raro em quedas domésticas.\n\n**As lesões de baixa especificidade** são comuns também em acidentes, mas ganham importância quando a **história não é compatível** com a lesão ou com o desenvolvimento da criança (por exemplo, fratura de fêmur em bebê que não anda).\n\n**A investigação.** **Inventário esquelético** completo em menores de 2 anos, repetido em 2 semanas; fundoscopia (hemorragia retiniana), avaliação neurológica e de imagem do crânio; exclusão de doenças que fragilizam o osso (osteogênese imperfeita, raquitismo); e **notificação** obrigatória ao conselho tutelar.\n\n**A lesão metafisária clássica.** É a lesão de **maior especificidade** para maus-tratos. Ocorre pela **sacudida** ou pela tração e torção dos membros, que cisalham a zona mais frágil da **metáfise primária**, junto à fise. Na radiografia, aparece como:\n- **fratura em canto** (corner fracture): um pequeno fragmento triangular na borda da metáfise, quando o raio incide de lado;\n- **fratura em alça de balde** (bucket handle): um arco de osso metafisário, quando o raio incide em ângulo.\n\n**A imagem.** A seta aponta um pequeno fragmento na **borda da metáfise** distal do fêmur, junto à fise: é a **fratura em canto**, característica dos maus-tratos. Ela raramente aparece em acidentes e deve levar ao inventário esquelético e à avaliação de proteção.",
-  "correta": "**Correta: B (maus-tratos).** A seta mostra uma fratura em canto da metáfise (lesão metafisária clássica), produzida por sacudida ou tração e torção do membro; é altamente específica para maus-tratos.",
+  "conceito": "A seta aponta a lesão mais característica dos maus-tratos na radiografia.\n\n**A escala de KLEINMAN** (Tabela 7-7 do capítulo) separa as fraturas pela força com que sugerem maus-tratos:\n\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Metafisária clássica** (canto, alça de balde); **costela posterior**; **escápula**; **processo espinhoso**; **esterno** |\n| Moderada | Múltiplas e bilaterais; fases diferentes de consolidação; descolamento epifisário; corpo vertebral; dedos; crânio complexo |\n| Baixa | Clavícula; diáfise de osso longo; crânio linear |\n\n**A lógica da tabela.** As de alta especificidade são fraturas que **quase não acontecem por acidente**: a escápula, o esterno e o processo espinhoso exigem energia direta grande ou mecanismos que a vida comum da criança pequena não produz; a costela posterior quebra quando o adulto **aperta o tórax** e a costela faz alavanca sobre o processo transverso; a metafisária clássica nasce da **sacudida** ou da tração do membro. As de baixa especificidade são **comuns** também nos acidentes; isso não as torna inocentes, só menos específicas.\n\n**O que a imagem mostra.** A metáfise distal do fêmur de um lactente; a seta aponta um **fragmento triangular no canto** da metáfise, colado à fise. É a lesão metafisária clássica no seu aspecto de canto.\n\n**A lesão metafisária clássica.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), é uma fratura que atravessa a **esponjosa primária**, logo acima da zona de calcificação provisória, produzida por **sacudidas ou tração**. Vista de frente, parece um **canto** solto da metáfise (\"corner fracture\"); de outro ângulo, uma **alça de balde**. É **quase patognomônica**, embora não seja a mais comum (15% a 32% das fraturas dos maltratados).\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** seta no canto da metáfise de lactente = **lesão metafisária clássica = maus-tratos**.\n\nO resumo de fraturas patológicas e maus-tratos traz a tabela de KLEINMAN na seção de reconhecimento.",
+  "correta": "**B: maus tratos.** O fragmento no canto da metáfise é a lesão metafisária clássica, quase patognomônica e de alta especificidade na escala de KLEINMAN.",
   "incorretas": {
-   "A": "A **infecção** (osteomielite) mostra rarefação metafisária, reação periosteal e partes moles alteradas, e não um fragmento em canto bem definido.",
-   "C": "Os **tumores** ósseos mostram lesão lítica ou blástica e reação periosteal agressiva, e não um pequeno fragmento na borda da metáfise.",
-   "D": "A **osteogênese imperfeita** causa fraturas diafisárias, osteopenia e deformidades; a lesão metafisária clássica é muito mais específica de maus-tratos."
+   "A": "**A osteomielite dá lise e reação periosteal**, não um fragmento de canto nítido; o capítulo a lista no diferencial.",
+   "C": "**Tumor ósseo produz lesão com destruição ou matriz**, não um canto destacado.",
+   "D": "**A osteogênese imperfeita** está no diferencial, mas dá fraturas diafisárias transversas e osteopenia."
   },
+  "conferido": false,
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de maus-tratos na criança.",
-   "Kleinman PK. Diagnostic Imaging of Child Abuse. 3ª edição. Cambridge University Press, 2015."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-59a1f669",
+      "reconhecimento-ce072879",
+      "reconhecimento-7f6299a9"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4"
+    }
+   ],
+   "questaoSha256": "814b3fed221d5ae12b7d0c0e8fbe371ee42788e63c3738ef6aa6901383cae2f9",
+   "comentarioSha256": "150d0954b7c165c59de07b3716db524ee5ab7c0acb8f9686a13f84b548e580eb"
+  }
  },
  "pediatria-0328": {
   "conceito": "**A deficiência femoral congênita.** Também chamada de **deficiência femoral focal proximal** (PFFD, no espectro mais grave) ou **fêmur curto congênito** (nas formas leves). É uma falha do desenvolvimento do fêmur, sobretudo da sua parte **proximal**, que vai desde um fêmur discretamente curto até a quase ausência do osso.\n\n**As características.**\n- Fêmur **curto** (do encurtamento leve a menos da metade do lado normal), com coxa vara, retroversão e pseudartrose subtrocantérica nas formas graves;\n- **acetábulo displásico** ou ausente;\n- coxa curta, em flexão, abdução e rotação externa, com o pé na altura do joelho oposto nos casos graves;\n- **joelho instável**, com ausência dos cruzados.\n\n**As associações.** A deficiência femoral congênita se associa à **hemimelia fibular** em **50% a 80%** dos casos: as duas fazem parte do mesmo espectro das **deficiências pós-axiais** do membro inferior. O pé costuma ter equinovalgo, ausência de raios laterais e coalizão tarsal.\n\n**A classificação.**\n| Classificação | Base |\n|---|---|\n| **Aitken** (A a D) | Presença da cabeça femoral e do acetábulo, e a conexão entre a cabeça e a diáfise |\n| **Paley** (1 a 4) | Orienta a reconstrução: tipo 1 (fêmur intacto, com ossificação normal ou retardada) até tipo 4 (fêmur distal ausente) |\n| Gillespie e Torode | Fêmur curto alongável versus ausência proximal grave |\n\n**O tratamento.** Depende da discrepância prevista e da estabilidade do quadril e do joelho. Nas formas leves e moderadas: **reconstrução** do quadril (superquadril de Paley) e do joelho seguida de **alongamentos** sucessivos. Nas formas graves: **prótese** com ou sem amputação de Syme, **rotacionoplastia de Van Nes** (o tornozelo rodado 180° funciona como joelho na prótese) ou fusão do joelho com amputação.\n\n**Os músculos do quadril na deficiência femoral.** Com o fêmur curto e o quadril instável, o membro assume a postura de **flexão, abdução e rotação externa**. Os músculos dependem de um fêmur com comprimento e de um trocânter bem posicionado para ter **braço de alavanca**:\n- os **abdutores** (glúteos médio e mínimo) trabalham **encurtados** e sem alavanca: **marcha de Trendelenburg**;\n- os **extensores** (glúteo máximo e isquiotibiais) também ficam encurtados e em desvantagem: o quadril tende a ficar **fletido**;\n- os **flexores**, ao contrário, predominam e mantêm a contratura em flexão.\n\nA reconstrução do quadril (superquadril de Paley) inclui liberações e transferências musculares justamente para devolver o equilíbrio e a função aos abdutores e extensores antes dos alongamentos.",
@@ -4618,19 +4784,43 @@
   "conferido": false
  },
  "pediatria-0362": {
-  "conceito": "**Os maus-tratos na criança e as fraturas.** As fraturas são a segunda manifestação mais comum dos maus-tratos, depois das lesões de pele. Cerca de **80%** das fraturas por maus-tratos ocorrem em crianças **menores de 18 meses**, e muitas vezes a criança ainda não anda. Reconhecer o padrão é responsabilidade do ortopedista: a criança que volta para o mesmo ambiente tem alto risco de nova lesão e de morte.\n\n**A especificidade das lesões (Kleinman).**\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Lesões metafisárias clássicas** (fratura em \"canto\" e em \"alça de balde\"), fraturas de **costelas posteriores**, **escápula**, **processos espinhosos** e **esterno** |\n| **Moderada** | Fraturas múltiplas (sobretudo bilaterais), fraturas em estágios diferentes de consolidação, descolamentos epifisários, fraturas de corpos vertebrais, de dedos e do crânio complexas |\n| **Baixa** (comuns) | Formação de periósteo novo, fraturas de **clavícula**, fraturas da **diáfise de ossos longos**, fraturas lineares do crânio |\n\n**Por que alta especificidade.** Essas lesões exigem **mecanismos** que quase não ocorrem em acidentes:\n- a **lesão metafisária clássica** vem da **sacudida** ou tração e torção dos membros;\n- as **costelas posteriores** fraturam pela **compressão** do tórax entre as mãos do agressor;\n- a **escápula**, o **esterno** e os **processos espinhosos** exigem trauma direto de grande energia, raro em quedas domésticas.\n\n**As lesões de baixa especificidade** são comuns também em acidentes, mas ganham importância quando a **história não é compatível** com a lesão ou com o desenvolvimento da criança (por exemplo, fratura de fêmur em bebê que não anda).\n\n**A investigação.** **Inventário esquelético** completo em menores de 2 anos, repetido em 2 semanas; fundoscopia (hemorragia retiniana), avaliação neurológica e de imagem do crânio; exclusão de doenças que fragilizam o osso (osteogênese imperfeita, raquitismo); e **notificação** obrigatória ao conselho tutelar.",
-  "correta": "**Correta: D (costela posterior, escápula e canto metafisário).** As fraturas de costelas posteriores, da escápula e as lesões metafisárias clássicas (em canto) estão entre as de alta especificidade para maus-tratos na classificação de Kleinman.",
+  "conceito": "Esta questão cobra a linha de alta especificidade de KLEINMAN completa, com a costela posterior.\n\n**A escala de KLEINMAN** (Tabela 7-7 do capítulo) separa as fraturas pela força com que sugerem maus-tratos:\n\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Metafisária clássica** (canto, alça de balde); **costela posterior**; **escápula**; **processo espinhoso**; **esterno** |\n| Moderada | Múltiplas e bilaterais; fases diferentes de consolidação; descolamento epifisário; corpo vertebral; dedos; crânio complexo |\n| Baixa | Clavícula; diáfise de osso longo; crânio linear |\n\n**A lógica da tabela.** As de alta especificidade são fraturas que **quase não acontecem por acidente**: a escápula, o esterno e o processo espinhoso exigem energia direta grande ou mecanismos que a vida comum da criança pequena não produz; a costela posterior quebra quando o adulto **aperta o tórax** e a costela faz alavanca sobre o processo transverso; a metafisária clássica nasce da **sacudida** ou da tração do membro. As de baixa especificidade são **comuns** também nos acidentes; isso não as torna inocentes, só menos específicas.\n\n**Por que a costela posterior.** O capítulo dá às fraturas de costela um valor preditivo de **95%** abaixo de 3 anos. Elas ficam **posteriores, entre T4 e T9**: as mãos do adulto apertam o tórax e a costela faz alavanca sobre o processo transverso. **A lesão metafisária clássica.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), é uma fratura que atravessa a **esponjosa primária**, logo acima da zona de calcificação provisória, produzida por **sacudidas ou tração**. Vista de frente, parece um **canto** solto da metáfise (\"corner fracture\"); de outro ângulo, uma **alça de balde**. É **quase patognomônica**, embora não seja a mais comum (15% a 32% das fraturas dos maltratados).\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** **costela posterior** + **escápula** + **canto metafisário** = alta especificidade.\n\nO resumo de fraturas patológicas e maus-tratos traz a tabela de KLEINMAN na seção de reconhecimento.",
+  "correta": "**D: costela posterior, escápula e canto metafisário.** As três estão na linha de alta especificidade da Tabela 7-7.",
   "incorretas": {
-   "A": "A escápula e o esterno são de alta especificidade, mas a **clavícula** é de **baixa** especificidade.",
-   "B": "O canto metafisário está certo, mas as fraturas do **fêmur** e da **tíbia** (diafisárias) têm baixa especificidade.",
-   "C": "O processo espinhoso e o esterno estão certos, mas a fratura do **úmero** (diafisária) é de baixa especificidade."
+   "A": "**A clavícula é de baixa especificidade**; esterno e escápula estão certos.",
+   "B": "**Fêmur e tíbia são diáfises de osso longo**, de baixa especificidade.",
+   "C": "**O úmero (diáfise) é de baixa especificidade**; processo espinhoso e esterno estão certos."
   },
+  "conferido": false,
   "referencias": [
-   "American Academy of Pediatrics. Evaluating Young Children With Fractures for Child Abuse: Clinical Report. Pediatrics. 2025.",
-   "Kleinman PK. Diagnostic Imaging of Child Abuse. Cambridge University Press."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-ce072879",
+      "reconhecimento-59a1f669",
+      "reconhecimento-7f6299a9"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+    }
+   ],
+   "questaoSha256": "f65266b5f563bdb28b07efbb8ce5381e89ad13ddb69842af5976a68aabef496c",
+   "comentarioSha256": "fa09f488f9f87a2b151c1fe15638bcb7262b00f59f6464ac67ac702d73b76f1a"
+  }
  },
  "pediatria-0363": {
   "conceito": "**O menisco discoide.** É uma variação anatômica em que o menisco, em vez de ter forma de \"C\" ou de meia-lua, é **largo e em disco**, cobrindo boa parte do platô tibial. Quase sempre é o **menisco lateral** (prevalência de 1% a 5%, maior em asiáticos, até 15%), e é **bilateral** em cerca de 20%.\n\n**A classificação de Watanabe.**\n| Tipo | Descrição |\n|---|---|\n| **I** (completo) | Cobre todo o platô; inserções periféricas normais |\n| **II** (incompleto) | Cobre parte do platô; inserções normais |\n| **III** (Wrisberg) | Forma variável, **sem a inserção posterior** (coronário): só preso pelo ligamento meniscofemoral de **Wrisberg**: **instável** |\n\nA classificação de **Ahn** (pela ressonância) descreve o sentido do deslocamento do menisco instável (anterocentral, posterocentral, central), o que orienta o reparo.\n\n**A apresentação por idade.**\n- **Criança pequena**: o menisco discoide **instável** (sobretudo o tipo Wrisberg) se desloca durante o movimento: é a \"**síndrome do joelho que estala**\" (snapping knee). O menisco salta com um **ressalto** audível e visível, em geral perto da extensão, e a criança tem **limitação da extensão** final. Costuma haver pouca dor.\n- **Criança maior e adolescente**: o menisco discoide, mais espesso e com fibras desorganizadas, tende a **romper**: dor, derrame, bloqueio e falseio, como na lesão meniscal do adulto.\n\n**O diagnóstico.** A radiografia pode mostrar o espaço articular lateral **alargado**, o côndilo femoral lateral achatado e a cabeça da fíbula alta. A **ressonância** confirma: o corpo do menisco aparece em **três ou mais cortes sagitais** consecutivos de 5 mm (sinal da \"gravata-borboleta\" contínua).\n\n**O tratamento.** O menisco discoide **assintomático** é observado. O sintomático é tratado por artroscopia com **saucerização** (remodelação para a forma em C, deixando uma borda de 6 a 8 mm) e **reparo** da periferia instável. A **meniscectomia total**, usada no passado, leva a **artrose** precoce do compartimento lateral e foi abandonada.",
@@ -4678,19 +4868,42 @@
   "conferido": false
  },
  "pediatria-0366": {
-  "conceito": "**A osteogênese imperfeita (OI).** É uma doença hereditária do **colágeno tipo I**, a principal proteína da matriz óssea, da esclera, da dentina, da pele e dos ligamentos. Na maioria dos casos, a mutação está nos genes **COL1A1** ou **COL1A2**. O osso fica frágil, com fraturas de baixa energia e deformidades.\n\n**A classificação de Sillence (1979).**\n| Tipo | Principais características |\n|---|---|\n| **I** | **Leve**, o mais comum; **esclera azul**; perda auditiva; estatura quase normal; **autossômica dominante**; colágeno **normal em qualidade**, mas em **quantidade reduzida** |\n| **II** | **Letal** no período perinatal; múltiplas fraturas intraútero |\n| **III** | **Grave e progressivo**: deformidades, baixa estatura importante; esclera clareia com a idade |\n| **IV** | Moderado; **esclera normal** (branca) |\n\n**Os subtipos A e B.** Sillence subdividiu os tipos I e IV pela **dentina**:\n- **A**: **dentinogênese normal**;\n- **B**: **dentinogênese imperfeita** (dentes translúcidos, acinzentados ou amarelados, frágeis, que se desgastam rápido).\n\nAssim, o tipo **IB** tem esclera azul, defeito do colágeno **tipo I**, **dentinogênese imperfeita** e herança **autossômica dominante**.\n\n**As formas novas.** Os tipos V em diante (classificação ampliada) envolvem outros genes (IFITM5, SERPINF1, CRTAP e outros), muitos com herança **recessiva**; o tipo V, por exemplo, tem calo hiperplásico e calcificação da membrana interóssea.\n\n**O tratamento ortopédico.** **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade óssea e reduzem fraturas; **hastes intramedulares telescópicas** (Fassier-Duval, Sheffield) corrigem deformidades e protegem os ossos longos, acompanhando o crescimento. A escoliose e a invaginação basilar são problemas frequentes nas formas graves.\n\n**As fraturas na OI.** O osso é frágil, mas a **capacidade de consolidar é preservada**: a fratura forma calo e consolida no tempo habitual, e a **pseudartrose é incomum** (exceções: tipo V, com calo hiperplásico, e fraturas repetidas com deformidade). Uma imobilização **longa** deixa o membro sem carga, aumenta a **osteopenia** e a atrofia muscular e cria um ciclo de fratura e imobilização. Por isso, imobiliza-se **só até o alívio da dor**, com talas leves ou gessos curtos, e mobiliza-se cedo. Fraturas de repetição e deformidades dos ossos longos são tratadas com **hastes telescópicas** (Fassier-Duval).",
-  "correta": "**Correta: B (alívio dos sintomas e tem baixo risco de pseudoartrose).** Na OI, a fratura consolida no tempo habitual e a pseudartrose é rara; imobiliza-se apenas até o alívio da dor, para não agravar a osteopenia.",
+  "conceito": "Na osteogênese imperfeita, o osso quebra fácil mas consolida bem; o problema maior é o que a imobilização faz com um osso já frágil.\n\n**A doença.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), é um defeito do **colágeno tipo I** (genes COL1A1 e COL1A2), em cerca de 1 em 20.000 nascidos. As fraturas são **transversas, diafisárias e pouco desviadas**, com **consolidação quase normal**; o **fêmur** é o osso mais fraturado. O calo pode ser **hiperplásico**, em borboleta, e imitar infecção ou tumor; a **avulsão da apófise do olécrano** é quase patognomônica.\n\n**O ciclo a evitar.** Imobilizar por muito tempo gera **osteopenia** por desuso, que gera nova fratura, que pede nova imobilização. Por isso o capítulo manda **evitar a imobilização longa**: imobiliza-se para tirar a dor e se mobiliza assim que possível. Para as deformidades e fraturas de repetição, **hastes intramedulares**, de preferência a partir de 6 a 7 anos, **extensíveis** no esqueleto imaturo; **bisfosfonatos** nos casos graves.\n\n**Na prova:** osteogênese imperfeita = consolida bem (pseudartrose rara); imobilizar só até **aliviar a dor**.\n\nO resumo de fraturas patológicas e maus-tratos traz a osteogênese imperfeita na seção de doenças sistêmicas.",
+  "correta": "**B: alívio dos sintomas e tem baixo risco de pseudoartrose.** A consolidação é quase normal, e a imobilização longa alimenta o ciclo de osteopenia e nova fratura.",
   "incorretas": {
-   "A": "A imobilização curta está certa, mas a pseudartrose é rara na OI; a consolidação ocorre no tempo habitual.",
-   "C": "Esperar a consolidação completa prolonga a imobilização e piora a osteopenia; e a pseudartrose é rara.",
-   "D": "O baixo risco está certo, mas não é preciso imobilizar até a consolidação completa."
+   "A": "**A duração está certa, mas a pseudartrose não é alta**: o capítulo descreve consolidação quase normal.",
+   "C": "**Imobilizar até consolidar por completo alonga o desuso**, e o risco de pseudartrose não é alto.",
+   "D": "**O baixo risco de pseudartrose está certo**, mas imobilizar até a consolidação completa é o que o capítulo manda evitar."
   },
+  "conferido": false,
   "referencias": [
-   "Fractures in Osteogenesis Imperfecta: Pathogenesis, Treatment, Rehabilitation and Prevention. PMCID: PMC8869965; PMID: 35204988.",
-   "Osteogenesis Imperfecta. GeneReviews. NCBI Bookshelf."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Doenças sistêmicas."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Doenças sistêmicas"
+     ],
+     "blocos": [
+      "doencas-sistemicas-a08cc9d3",
+      "doencas-sistemicas-b54badf3"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "2e8b8f1ef0521038e1a77d6277bdbefbecaa0a60ee21f70ce8ec6dba8215e940"
+    }
+   ],
+   "questaoSha256": "64e65ac5ff394c653b5f8dfcdb6aa020738ed8a264ab6ea12c1571571a00a559",
+   "comentarioSha256": "081124900e7b0c1088e1d90992ada455aa9bbb229154fe259ed5e451f3c47c6a"
+  }
  },
  "pediatria-0367": {
   "conceito": "**A paralisia cerebral (PC).** É um grupo de distúrbios **permanentes** do movimento e da postura, causados por uma lesão **não progressiva** do encéfalo **imaturo** (fetal ou nos primeiros anos). A lesão não progride, mas as consequências musculoesqueléticas (contraturas, luxação do quadril, escoliose) **progridem** com o crescimento. A prevalência é de cerca de **2 a 3 por 1.000** nascidos vivos.\n\n**Os fatores de risco pelo momento da lesão.**\n| Momento | Fatores |\n|---|---|\n| **Pré-natal** (a maioria) | Infecções congênitas (TORCH), malformações cerebrais, **gestação múltipla**, **incompatibilidade Rh**, trombofilias, corioamnionite |\n| **Perinatal** | **Prematuridade** (o principal fator), baixo peso, asfixia, hiperbilirrubinemia grave |\n| **Pós-natal** | Meningite, encefalite, trauma craniano, quase afogamento |\n\n**A incompatibilidade Rh e o kernicterus.** Na doença hemolítica do recém-nascido, a mãe Rh negativo sensibilizada produz anticorpos que destroem as hemácias do bebê Rh positivo. A bilirrubina indireta sobe, atravessa a barreira hematoencefálica imatura e se deposita nos **núcleos da base**: é o **kernicterus**. O resultado típico é a **PC discinética** (atetoide), com surdez neurossensorial e paralisia do olhar vertical. Com a imunoglobulina anti-D e a fototerapia, essa causa ficou rara nos países desenvolvidos.\n\n**A classificação pelo tipo de movimento (SCPE).** O tipo de distúrbio reflete o **local** da lesão:\n| Tipo | Local da lesão | Características |\n|---|---|---|\n| **Espástico** (o mais comum, cerca de 80%) | **Piramidal**: córtex motor e trato corticoespinal | Hipertonia dependente da velocidade, reflexos exaltados, Babinski |\n| **Discinético** | **Extrapiramidal**: **núcleos da base** e tálamo | Movimentos involuntários, tônus flutuante |\n| **Atáxico** | **Cerebelo** | Falta de coordenação e equilíbrio, tremor de intenção |\n\n**Os dois subtipos discinéticos.**\n- **Distônico**: predomina a **hipocinesia** com **hipertonia**; o corpo assume **posturas anormais sustentadas**, torcidas, que mudam com a emoção e o esforço. É o subtipo **mais comum**.\n- **Coreoatetoide**: predomina a **hipercinesia** com tônus baixo; movimentos rápidos (coreia) e lentos, contorcidos (atetose).\n\n**As causas típicas do discinético.** **Asfixia** grave no bebê a termo (lesão dos núcleos da base e do tálamo) e **kernicterus**.\n\n**Para o ortopedista.** A cirurgia é mais previsível no **espástico**. No **discinético**, o tônus variável torna o resultado de alongamentos e transferências incerto (transferências tendíneas são, em geral, contraindicadas), e a **mielopatia cervical** por movimentos repetidos do pescoço é uma complicação a lembrar no adulto.",
@@ -4983,19 +5196,43 @@
   "conferido": false
  },
  "pediatria-0383": {
-  "conceito": "**Por que algumas fraturas \"falam\" de maus-tratos.** A especificidade de uma fratura para abuso depende de quão improvável é o mecanismo dela num acidente comum. As lesões mais específicas são as que exigem forças que quase nunca ocorrem por acaso numa criança pequena: tração e torção violentas de um membro e compressão do tórax entre as mãos de um adulto.\n\n**A lesão metafisária clássica (fratura do canto ou em alça de balde).**\n- É uma fratura **plana, transversal, através da metáfise**, na região mais frágil da zona de ossificação provisória, logo junto à fise. Não atravessa a fise nem a epífise.\n- Surge quando o lactente é sacudido segurando pelos membros, ou quando um membro é puxado e torcido.\n- Na radiografia, o fragmento é um disco fino de osso metafisário. Visto de lado, aparece como um pequeno triângulo no canto da metáfise (\"fratura do canto\"); visto com inclinação, aparece como um arco (\"alça de balde\"). É a mesma lesão vista por ângulos diferentes.\n- Locais típicos: fêmur distal, tíbia proximal e distal, úmero proximal.\n- Costuma consolidar sem calo exuberante, por isso passa despercebida se não for procurada.\n\n**As fraturas das costelas posteriores.**\n- O adulto segura o tórax do bebê com as mãos e aperta ao sacudir. A costela faz alavanca sobre o processo transverso, e a cabeça e o colo da costela quebram junto à **articulação costovertebral**.\n- Em lactentes, a reanimação cardiopulmonar raramente produz essas fraturas posteriores; quando produz fraturas, tendem a ser anteriores ou laterais.\n- No exame agudo podem ser invisíveis; aparecem com o calo, 10 a 14 dias depois.\n\n| Especificidade para maus-tratos | Exemplos |\n|---|---|\n| Alta | Lesão metafisária clássica, costelas posteriores, escápula, processos espinhosos, esterno |\n| Moderada | Fraturas múltiplas, de idades diferentes, bilaterais, de vértebras, de dedos, fraturas complexas do crânio |\n| Baixa, mas comuns | Diafisária isolada de osso longo, clavícula, fratura linear do crânio |\n\n**Atenção:** \"baixa especificidade\" não significa \"baixa importância\". A fratura diafisária do fêmur num bebê que ainda não anda é a apresentação mais comum de abuso, embora não seja específica.\n\n**A conduta.** Em menores de 2 anos com suspeita: inventário esquelético completo (repetido em cerca de 2 semanas para revelar costelas e metáfises que só aparecem com o calo), fundo de olho, investigação de lesão craniana e notificação. Diagnósticos diferenciais a lembrar: osteogênese imperfeita, raquitismo, sífilis congênita, escorbuto.\n\n**Na prova:** alta especificidade = **metafisária em alça de balde** e **costelas posteriores**.",
-  "correta": "**Correta: D (metafisárias em alça de balde e costelas posteriores).** As duas exigem mecanismos que praticamente só ocorrem quando um adulto sacode o lactente: tração e torção do membro, que destacam um disco da metáfise, e compressão do tórax entre as mãos, que quebra as costelas junto às articulações costovertebrais.",
+  "conceito": "A questão monta pares e troca duas palavras: metafisária ou epifisária, costela anterior ou posterior.\n\n**A escala de KLEINMAN** (Tabela 7-7 do capítulo) separa as fraturas pela força com que sugerem maus-tratos:\n\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Metafisária clássica** (canto, alça de balde); **costela posterior**; **escápula**; **processo espinhoso**; **esterno** |\n| Moderada | Múltiplas e bilaterais; fases diferentes de consolidação; descolamento epifisário; corpo vertebral; dedos; crânio complexo |\n| Baixa | Clavícula; diáfise de osso longo; crânio linear |\n\n**A lógica da tabela.** As de alta especificidade são fraturas que **quase não acontecem por acidente**: a escápula, o esterno e o processo espinhoso exigem energia direta grande ou mecanismos que a vida comum da criança pequena não produz; a costela posterior quebra quando o adulto **aperta o tórax** e a costela faz alavanca sobre o processo transverso; a metafisária clássica nasce da **sacudida** ou da tração do membro. As de baixa especificidade são **comuns** também nos acidentes; isso não as torna inocentes, só menos específicas.\n\n**Costelas posteriores.** Valor preditivo de **95%** abaixo de 3 anos, entre T4 e T9, pela alavanca sobre o processo transverso quando o tórax é apertado. **A lesão metafisária clássica.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), é uma fratura que atravessa a **esponjosa primária**, logo acima da zona de calcificação provisória, produzida por **sacudidas ou tração**. Vista de frente, parece um **canto** solto da metáfise (\"corner fracture\"); de outro ângulo, uma **alça de balde**. É **quase patognomônica**, embora não seja a mais comum (15% a 32% das fraturas dos maltratados).\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** **metafisária** (não epifisária) e costela **posterior** (não anterior).\n\nO resumo de fraturas patológicas e maus-tratos traz a tabela de KLEINMAN na seção de reconhecimento.",
+  "correta": "**D: metafisárias em alça de balde e as fraturas posteriores das costelas.** É a lesão metafisária clássica mais a costela posterior, as duas na linha de alta especificidade.",
   "incorretas": {
-   "A": "**Erra as duas partes.** A lesão clássica é **metafisária**, não epifisária: a fratura passa pela zona de ossificação provisória e poupa a fise e a epífise. E as costelas anteriores fraturam também em mecanismos acidentais e na reanimação, por isso são menos específicas que as posteriores.",
-   "B": "**Acerta as costelas, erra o osso longo.** As fraturas das costelas posteriores estão certas. Mas chamar a alça de balde de epifisária troca a localização: o fragmento é um disco da metáfise. Lesões epifisárias e fisárias (Salter-Harris) ocorrem em traumas acidentais e não têm a mesma especificidade.",
-   "C": "**Acerta o osso longo, erra as costelas.** A lesão metafisária em alça de balde está certa. As fraturas anteriores das costelas, porém, são menos específicas: aparecem em traumas acidentais e, ocasionalmente, após compressões torácicas. O mecanismo de apertar o tórax por trás produz a fratura **posterior**, junto à coluna."
+   "A": "**Erra os dois termos.** A alça de balde é metafisária, e a costela típica é posterior.",
+   "B": "**A costela está certa, mas a alça de balde é metafisária**, não epifisária.",
+   "C": "**A metafisária está certa, mas a costela típica é posterior**, pela alavanca sobre o processo transverso."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de maus-tratos na infância.",
-   "Kleinman PK. Diagnostic Imaging of Child Abuse, 3ª edição. Cambridge University Press, 2015."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-ce072879",
+      "reconhecimento-59a1f669",
+      "reconhecimento-7f6299a9"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+    }
+   ],
+   "questaoSha256": "5b40aedeb6f660e8e7a5cc98717746fa0679be7e660707ee3f709b89b36b3115",
+   "comentarioSha256": "39ace4c41e889fa321811fa319fb6f608f063e19a27db2ddadb5749a938667e5"
+  }
  },
  "pediatria-0384": {
   "conceito": "**O colágeno tipo I.** É a principal proteína do osso, da pele, dos tendões, da esclera e da dentina. Cada molécula é uma **tripla hélice** formada por três cadeias: duas **alfa-1** (gene **COL1A1**) e uma **alfa-2** (gene **COL1A2**).\n\n**Por que a glicina é tão importante.** Na hélice, a sequência de aminoácidos se repete no padrão **Gly-X-Y**: a cada três posições, há uma **glicina**. Muitas vezes, X é **prolina** e Y é **hidroxiprolina**. A glicina é o **menor aminoácido**, e só ela cabe no **centro apertado** da tripla hélice, onde as três cadeias se encontram.\n\n**Os dois tipos de defeito.**\n\n| Defeito | Mecanismo | Gravidade |\n|---|---|---|\n| **Quantitativo** | Um alelo não produz cadeia (alelo nulo): metade do colágeno, mas **normal** | **Leve** (tipo I de Sillence) |\n| **Qualitativo** | **Substituição de uma glicina** por um aminoácido maior: colágeno **anormal** | Moderado a **letal** (tipos II, III e IV) |\n\n**O efeito dominante negativo.** Quando a glicina é substituída, a cadeia defeituosa **entra na hélice** e estraga a molécula inteira. É pior ter colágeno anormal que pouco colágeno.\n\n**A posição da mutação importa.** A hélice se dobra da extremidade **C-terminal** para a N-terminal. Substituições mais próximas da extremidade **C-terminal** tendem a ser **mais graves**, porque perturbam a montagem desde o início.\n\n**Formas recessivas e outras.** Existem formas de OI por defeitos em proteínas que **processam** o colágeno, como **CRTAP**, **P3H1** (LEPRE1) e **PPIB**, ou por outros mecanismos ósseos (**IFITM5** no tipo V e **SERPINF1** no tipo VI).\n\n**Os achados radiográficos.**\n- **Osteopenia** difusa.\n- **Corticais finas** e ossos longos **gráceis** (finos), com **trabéculas finas** e esparsas.\n- **Fraturas múltiplas** em diferentes fases de consolidação, e **encurvamentos**.\n- **Vértebras bicôncavas** (em \"boca de peixe\") e achatadas, por microfraturas.\n- **Ossos wormianos** no crânio.\n- **Calcificações em pipoca** nas metáfises nas formas graves.\n- **Protrusão acetabular** e invaginação basilar.\n- No **tipo V**: **calo hiperplásico** e calcificação da membrana interóssea do antebraço.\n\nA **ossificação** em si acontece no tempo normal. O problema é a **qualidade** da matriz, e não o momento em que ela se forma.\n\n**O tratamento.**\n- **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas.\n- **Hastes telescópicas** (Fassier-Duval) corrigem e previnem as deformidades dos ossos longos.\n- Reabilitação para manter a força e a mobilidade.\n\n**A osteogênese imperfeita tipo V e o gene IFITM5.** O tipo V não é causado por defeito do colágeno tipo I. Ele resulta de uma mutação **dominante** no gene **IFITM5** (que codifica a proteína BRIL, da mineralização). Suas marcas registradas são:\n- **Calo hiperplásico**: depois de uma fratura ou osteotomia, forma-se um calo **enorme e exuberante**, que pode ser confundido com um **osteossarcoma**. É o que a imagem mostra na tíbia.\n- **Calcificação da membrana interóssea** do antebraço, com limitação da prono-supinação.\n- **Luxação da cabeça do rádio**.\n- Banda **densa** na metáfise, abaixo da fise.\n- Esclera normal e dentes normais.",
@@ -5404,20 +5641,44 @@
   "conferido": false
  },
  "pediatria-0422": {
-  "conceito": "**Os maus-tratos na criança e as fraturas.** As fraturas são a segunda manifestação mais comum dos maus-tratos, depois das lesões de pele. Cerca de **80%** das fraturas por maus-tratos ocorrem em crianças **menores de 18 meses**, e muitas vezes a criança ainda não anda. Reconhecer o padrão é responsabilidade do ortopedista: a criança que volta para o mesmo ambiente tem alto risco de nova lesão e de morte.\n\n**A especificidade das lesões (Kleinman).**\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Lesões metafisárias clássicas** (fratura em \"canto\" e em \"alça de balde\"), fraturas de **costelas posteriores**, **escápula**, **processos espinhosos** e **esterno** |\n| **Moderada** | Fraturas múltiplas (sobretudo bilaterais), fraturas em estágios diferentes de consolidação, descolamentos epifisários, fraturas de corpos vertebrais, de dedos e do crânio complexas |\n| **Baixa** (comuns) | Formação de periósteo novo, fraturas de **clavícula**, fraturas da **diáfise de ossos longos**, fraturas lineares do crânio |\n\n**Por que alta especificidade.** Essas lesões exigem **mecanismos** que quase não ocorrem em acidentes:\n- a **lesão metafisária clássica** vem da **sacudida** ou tração e torção dos membros;\n- as **costelas posteriores** fraturam pela **compressão** do tórax entre as mãos do agressor;\n- a **escápula**, o **esterno** e os **processos espinhosos** exigem trauma direto de grande energia, raro em quedas domésticas.\n\n**As lesões de baixa especificidade** são comuns também em acidentes, mas ganham importância quando a **história não é compatível** com a lesão ou com o desenvolvimento da criança (por exemplo, fratura de fêmur em bebê que não anda).\n\n**A investigação.** **Inventário esquelético** completo em menores de 2 anos, repetido em 2 semanas; fundoscopia (hemorragia retiniana), avaliação neurológica e de imagem do crânio; exclusão de doenças que fragilizam o osso (osteogênese imperfeita, raquitismo); e **notificação** obrigatória ao conselho tutelar.\n\n**Frequência e especificidade.** É preciso separar duas ideias:\n- **frequência**: quais fraturas aparecem **mais vezes** nas crianças vítimas de abuso (as de **ossos longos**, as de **costelas**);\n- **especificidade**: quais fraturas, quando aparecem, **mais apontam** para abuso (lesão metafisária clássica, costelas posteriores, escápula, processos espinhosos, esterno).\n\nAbaixo de 2 anos, a literatura destaca a fratura de **fêmur** na criança que não anda, a fratura espiral do **úmero** e as fraturas de **costelas** como muito frequentes. A banca desta questão considerou o **antebraço** como a fratura mais comum.",
-  "correta": "**Correta: D (do antebraço), segundo a banca.** A banca considerou a fratura do antebraço como a mais comum nos maus-tratos abaixo de 2 anos; a literatura, porém, destaca as fraturas de fêmur, úmero e costelas.",
+  "conceito": "A pergunta é qual osso longo quebra mais na criança maltratada com menos de 2 anos, e aqui a banca e o capítulo não falam a mesma língua.\n\n**O que o capítulo descreve.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), as séries variam:\n- na de **KING**, 60% das fraturas ficaram, em proporções parecidas, entre **úmero, fêmur e tíbia**;\n- na de **AKBARNIA**, as **costelas** foram duas vezes mais frequentes que qualquer osso longo;\n- no **fêmur**, 42% das fraturas do lactente que ainda não anda são por abuso (2,6% no que anda), e a diafisária dos maltratados é **transversa** em 71%.\n\n**Onde fica o antebraço.** O capítulo não coloca o antebraço entre as fraturas mais comuns dos maltratados. Diáfises de osso longo, de qualquer osso, são de **baixa especificidade** na escala de KLEINMAN: são frequentes, mas também acontecem por acidente.\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** depende da série; no capítulo, úmero, fêmur e tíbia (KING) ou costelas (AKBARNIA). O gabarito oficial desta questão é o antebraço.\n\nO resumo de fraturas patológicas e maus-tratos traz as séries na seção de reconhecimento.",
+  "correta": "**D: do antebraço (gabarito oficial).** O capítulo não sustenta esse dado: as séries que ele cita apontam úmero, fêmur e tíbia em proporções parecidas, ou as costelas.",
   "incorretas": {
-   "A": "A fratura da tíbia é menos citada como a mais comum nos maus-tratos abaixo de 2 anos.",
-   "B": "A fratura do fêmur na criança que não anda é clássica na literatura, mas a banca não a aceitou como a mais comum.",
-   "C": "A fratura do úmero é muito citada na literatura, mas a banca não a aceitou como a mais comum."
+   "A": "**A tíbia aparece na série de KING** entre os três ossos longos mais atingidos; a banca não a escolheu.",
+   "B": "**O fêmur também está na série de KING**, e o capítulo destaca que 42% das fraturas do fêmur no lactente que não anda são por abuso.",
+   "C": "**O úmero também está na série de KING** e, na de AKBARNIA, vem logo depois das costelas."
   },
+  "conferido": false,
+  "alerta": "Gabarito oficial D (antebraço) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 7, cita úmero, fêmur e tíbia em proporções parecidas (série de KING) ou as costelas como mais frequentes (AKBARNIA); o antebraço não aparece como a fratura mais comum dos maltratados abaixo de 2 anos.",
   "referencias": [
-   "Kleinman PK. Diagnostic Imaging of Child Abuse. 3ª edição. Cambridge University Press, 2015.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de maus-tratos na criança."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "alerta": "Boa parte da literatura clássica sobre maus-tratos infantis destaca a fratura de fêmur (em crianças ainda não deambuladoras) e a fratura espiral de úmero como os achados de fratura de osso longo mais classicamente associados a alta suspeita de abuso nessa faixa etária, vale considerar essa divergência frente a outras fontes ao revisar o tema.",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-59a1f669",
+      "reconhecimento-7f6299a9",
+      "reconhecimento-ce072879"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "b608e02034c30b9178852fe718d99294c1b62576b25cec79f88a2e5abf759c8f"
+    }
+   ],
+   "questaoSha256": "c043a2a24ca257cdc3eead3487b9fb024fadb2a18e7c0c8edefe3df717ab2585",
+   "comentarioSha256": "39ca0510a2e0df4f5495b12baeabda8b8bba91096a16d81a4ea9d3f7d2e0fb16"
+  }
  },
  "pediatria-0423": {
   "conceito": "**Três arqueamentos, três prognósticos.** O arqueamento congênito da tíbia é descrito pela **direção do ápice** da curva. Cada direção tem uma associação e um prognóstico diferentes, e confundir as direções é o erro clássico da prova.\n\n| Ápice | Associação | Evolução |\n|---|---|---|\n| **Posteromedial** | **Pé calcâneo valgo** | **Benigna**, corrige espontaneamente |\n| **Anterolateral** | **Neurofibromatose tipo 1** e **pseudartrose congênita da tíbia** | **Maligna**, tende a fraturar e não consolidar |\n| Anteromedial | **Hemimelia fibular** | Discrepância de comprimento e deformidade do pé |\n\n**O arqueamento posteromedial.**\n- Atribuído à **posição intrauterina**, com o pé dobrado contra a face anterior da perna.\n- Ao nascer, o pé está em **calcâneo valgo** acentuado, com o dorso quase encostando na tíbia.\n- A angulação **melhora muito** nos primeiros 2 a 3 anos.\n- O problema residual é a **discrepância de comprimento** (média de 3 a 4 cm na maturidade), que pode exigir epifisiodese do lado oposto ou alongamento.\n\n**O arqueamento anterolateral.**\n- Cerca de metade dos casos de pseudartrose congênita da tíbia tem **neurofibromatose tipo 1**.\n- A tíbia arqueada fratura com traumas mínimos e **não consolida**; o tratamento da pseudartrose é muito difícil (haste intramedular, enxerto, transporte ósseo, até amputação).\n- Usa-se **órtese de proteção** até a maturidade; **nunca se faz osteotomia profilática**, que pode precipitar a pseudartrose.\n\n**A questão e o gabarito.** Pela bibliografia, o arqueamento **posteromedial** associa-se ao **pé calcâneo valgo** (alternativa D), enquanto a **pseudartrose** (alternativa A) se associa ao arqueamento **anterolateral**. O gabarito registrado indica A, o que contraria a associação clássica, como explica o alerta. A mesma pergunta aparece em outra prova do acervo (pediatria-0182) com gabarito D.",
@@ -6179,19 +6440,43 @@
   "conferido": false
  },
  "pediatria-0478": {
-  "conceito": "**O que a imagem mostra.** Na metáfise distal da tíbia de um lactente aparece um pequeno fragmento ósseo no **canto** da metáfise, junto à fise. Esse é o aspecto típico da **lesão metafisária clássica**, também chamada **fratura do canto** (corner fracture) ou, em outra incidência, fratura em **alça de balde**.\n\n**Como a lesão se forma.** Quando um lactente é sacudido ou tem o membro puxado e torcido com força, a tração e o cisalhamento passam pela região mais frágil do osso em crescimento: a **zona de ossificação provisória**, a faixa da metáfise logo abaixo da fise. A fratura atravessa a metáfise num plano paralelo à fise e destaca um disco fino de osso. Quando o disco é visto de lado, as bordas aparecem como pequenos triângulos nos cantos; quando é visto com inclinação, aparece como um arco, a alça de balde.\n\n**Por que é tão específica de maus-tratos.** Esse mecanismo de tração e torção violentas praticamente não acontece nas quedas e brincadeiras de uma criança pequena. Em lactentes, a lesão metafisária clássica está entre as fraturas de **alta especificidade** de abuso, junto com as costelas posteriores, a escápula, os processos espinhosos e o esterno.\n\n**O que fazer.** Diante da suspeita: inventário esquelético completo em menores de 2 anos (repetido em cerca de 2 semanas), fundo de olho, avaliação de lesão craniana e de outras lesões, e **notificação obrigatória** ao conselho tutelar. Não é preciso ter certeza para notificar.\n\n| Diagnóstico | Como aparece | Quem acomete |\n|---|---|---|\n| **Fratura do canto** | Fragmento fino na periferia da metáfise | Lactente, sem história compatível |\n| Salter-Harris II | Traço pela fise com fragmento metafisário triangular maior (Thurston-Holland) | Criança maior, trauma evidente |\n| Avulsão do tornozelo | Fragmento na ponta do maléolo | Criança maior ou adolescente, entorse |\n| Raquitismo | Fise alargada, metáfise em taça e esgarçada, sem fragmento | Lactente com deficiência de vitamina D |\n\n**Na prova:** fragmento no canto da metáfise de um lactente = **corner fracture, suspeita de maus-tratos**.",
-  "correta": "**Correta: C (corner fracture associada a maus-tratos).** O fragmento fino no canto da metáfise de um lactente é a lesão metafisária clássica, produzida por tração e torção violentas do membro, mecanismo que quase não ocorre em acidentes comuns nessa idade. É uma das fraturas mais específicas de abuso físico e obriga a investigação e a notificação.",
+  "conceito": "A imagem mostra o padrão que o examinador quer que se reconheça de imediato.\n\n**A escala de KLEINMAN** (Tabela 7-7 do capítulo) separa as fraturas pela força com que sugerem maus-tratos:\n\n| Especificidade | Lesões |\n|---|---|\n| **Alta** | **Metafisária clássica** (canto, alça de balde); **costela posterior**; **escápula**; **processo espinhoso**; **esterno** |\n| Moderada | Múltiplas e bilaterais; fases diferentes de consolidação; descolamento epifisário; corpo vertebral; dedos; crânio complexo |\n| Baixa | Clavícula; diáfise de osso longo; crânio linear |\n\n**A lógica da tabela.** As de alta especificidade são fraturas que **quase não acontecem por acidente**: a escápula, o esterno e o processo espinhoso exigem energia direta grande ou mecanismos que a vida comum da criança pequena não produz; a costela posterior quebra quando o adulto **aperta o tórax** e a costela faz alavanca sobre o processo transverso; a metafisária clássica nasce da **sacudida** ou da tração do membro. As de baixa especificidade são **comuns** também nos acidentes; isso não as torna inocentes, só menos específicas.\n\n**O que a imagem mostra.** O tornozelo de um lactente em AP e perfil; as setas marcam pequenos **fragmentos nos cantos da metáfise distal da tíbia**, de um lado e do outro. Não há traço diafisário nem desvio da epífise: é o aspecto de canto e alça de balde da lesão metafisária clássica.\n\n**A lesão metafisária clássica.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 7, de Alexandre Arkader e Karim Masrouha), é uma fratura que atravessa a **esponjosa primária**, logo acima da zona de calcificação provisória, produzida por **sacudidas ou tração**. Vista de frente, parece um **canto** solto da metáfise (\"corner fracture\"); de outro ângulo, uma **alça de balde**. É **quase patognomônica**, embora não seja a mais comum (15% a 32% das fraturas dos maltratados).\n\n**O que fazer com a suspeita.** Inventário esquelético **obrigatório abaixo de 2 anos**, repetido em **2 semanas** (acha 27% mais fraturas), estendido aos irmãos pequenos; depois, **internar** e **notificar**. A notificação de boa-fé protege o médico, e devolver a criança sem diagnóstico custa caro: **25%** voltam com nova lesão grave e **5%** morrem.\n\n**Na prova:** **corner fracture** = lesão metafisária clássica = **maus-tratos**.\n\nO resumo de fraturas patológicas e maus-tratos traz a tabela de KLEINMAN na seção de reconhecimento.",
+  "correta": "**C: corner fracture associada a maus tratos.** Os fragmentos nos cantos da metáfise distal da tíbia de um lactente são a lesão metafisária clássica, de alta especificidade na escala de KLEINMAN.",
   "incorretas": {
-   "A": "**Entorse com avulsão não combina com a idade nem com a imagem.** Avulsões do tornozelo ocorrem em crianças maiores e adolescentes que torcem o pé correndo, e o fragmento fica na ponta do maléolo, onde o ligamento se insere. No lactente, que mal anda, esse mecanismo é improvável, e a lesão da imagem está na metáfise, não no maléolo.",
-   "B": "**A Salter-Harris II tem outro aspecto.** O traço atravessa a fise e sai pela metáfise, levando um fragmento metafisário triangular grande (fragmento de Thurston-Holland), com desvio da epífise. O mecanismo de pronação, eversão e rotação externa é o de fraturas do tornozelo em crianças maiores. A fratura do canto é um disco fino que não desloca a epífise.",
-   "D": "**As linhas de Looser são da osteomalácia.** São pseudofraturas, faixas radiotransparentes perpendiculares à cortical em ossos como colo do fêmur, púbis e escápula, típicas do adulto com osteomalácia. No raquitismo do lactente, o achado é outro: fise alargada, metáfise em taça e esgarçada, sem fragmento no canto."
+   "A": "**Avulsão por entorse exige uma criança que anda e torce o pé**, e ficaria junto aos ligamentos, distalmente à fise; não produz fragmentos nos dois cantos da metáfise.",
+   "B": "**O SALTER-HARRIS II leva um espículo metafisário com a epífise deslocada**, numa fratura de adolescente; aqui a epífise está no lugar e o paciente é um lactente.",
+   "D": "**As linhas de LOOSER são zonas de pseudofratura do osteomalácico**; o raquitismo dá metáfises alargadas em taça. O capítulo lista o raquitismo no diferencial, mas não forma cantos destacados."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de maus-tratos na infância.",
-   "Kleinman PK. Diagnostic Imaging of Child Abuse, 3ª edição. Cambridge University Press, 2015."
+   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+     "titulo": "Fraturas patológicas e maus-tratos na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+     "secoes": [
+      "Reconhecimento"
+     ],
+     "blocos": [
+      "reconhecimento-59a1f669",
+      "reconhecimento-ce072879",
+      "reconhecimento-7f6299a9"
+     ],
+     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+     "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4"
+    }
+   ],
+   "questaoSha256": "5a6dc7e0c74500adec578580c3b35a01b4568ce7e329bb079bc7fe1f8abb18eb",
+   "comentarioSha256": "68d147188bebc1f0eba48e214932b38247d74f1dc2d7d64d59671f946dfa303c"
+  }
  },
  "pediatria-0479": {
   "conceito": "**O metatarso aduto (varo).** É a **deformidade do pé mais comum** no recém-nascido, em cerca de 1 a 2 em cada 1.000 nascidos vivos (até mais em algumas séries). O **antepé** está **aduzido** (desviado para medial) em relação ao retropé, que é **normal ou em leve valgo**, sem equino. Atribuído à **posição intrauterina** (\"pé apertado\" no útero).\n\n**Como reconhecer.**\n- **Borda lateral convexa** (em forma de feijão), borda medial côncava, às vezes com uma **prega** medial profunda.\n- Espaço maior entre o hálux e o segundo dedo.\n- **Bissetriz do calcanhar** (Bleck) projetada lateralmente ao segundo e terceiro dedos.\n- Retropé **normal** e dorsiflexão do tornozelo **livre** (diferencia do pé torto).\n\n**A associação com a displasia do quadril.** Como é uma deformidade de \"aperto\" intrauterino, o metatarso aduto pode estar associado a **displasia do desenvolvimento do quadril** (em algumas séries, até cerca de 10%) e a torcicolo congênito. Por isso, os quadris devem ser examinados com atenção. Ele não \"sempre ocorre isoladamente\".\n\n**A flexibilidade decide o tratamento.**\n\n| Tipo | Teste | Conduta |\n|---|---|---|\n| **Flexível** | O antepé corrige além da linha média, ativa ou passivamente | **Observação**; a grande maioria resolve sozinha |\n| Parcialmente flexível | Corrige até a linha média | Alongamentos orientados aos pais; órtese (sapato de abdução, Bebax) |\n| **Rígido** | Não corrige até a linha média, prega medial profunda | **Gessos seriados** (idealmente antes de 6 a 8 meses), depois órtese |\n\n**O prognóstico é muito bom.** Cerca de **85 a 90%** se corrigem espontaneamente ou com tratamento conservador. A cirurgia (liberação capsular, osteotomias da base dos metatarsos ou do cuneiforme medial e do cuboide) é **rara** e fica para deformidades rígidas e persistentes em crianças maiores. Uma deformidade residual **leve**, sem repercussão funcional, é relativamente comum.\n\n**Diagnóstico diferencial.** Pé torto congênito (equino e varo do retropé, rígido) e **skewfoot** (pé em Z: antepé aduzido com retropé em valgo importante e médio-pé abduzido), que responde mal e pode piorar com gessos mal feitos.",
@@ -16715,18 +17000,44 @@
   "conferido": false
  },
  "pediatria-0827": {
-  "conceito": "**A contratura isquêmica de Volkmann.** É a sequela da **síndrome compartimental** não tratada do antebraço. O aumento de pressão no compartimento reduz a perfusão capilar, os músculos sofrem isquemia e necrose e são substituídos por **tecido fibroso**, que se retrai. Os nervos também sofrem isquemia. Na criança, as causas clássicas são a **fratura supracondiliana do úmero** e as fraturas do antebraço.\n\n**Por que os flexores profundos são os mais atingidos.** No compartimento flexor do antebraço, os músculos se dispõem em camadas.\n- Os músculos **profundos**, o **flexor profundo dos dedos** e o **flexor longo do polegar**, ficam junto aos ossos e à membrana interóssea, no centro do compartimento, onde a pressão é maior e a irrigação, por artérias terminais (ramos da interóssea anterior), é mais vulnerável.\n- O padrão clássico de necrose é **elíptico**, centrado no terço médio do antebraço, atingindo sobretudo o **flexor profundo dos dedos** (especialmente para o médio e o anular) e o **flexor longo do polegar**.\n- Os músculos superficiais, como o **flexor radial do carpo**, o **flexor ulnar do carpo** e o flexor superficial dos dedos, são relativamente poupados nas formas leves e moderadas.\n\n**A deformidade típica.** Punho em flexão, metacarpofalângicas em extensão e interfalângicas em flexão, com o **sinal de Volkmann**: os dedos estendem mais quando o punho é fletido (o que relaxa os flexores encurtados).\n\n**A classificação de Tsuge.**\n- **Leve**: apenas o flexor profundo de 2 ou 3 dedos, sem déficit sensitivo importante.\n- **Moderada**: flexores profundos e longo do polegar, parte dos superficiais, com déficit do mediano e do ulnar.\n- **Grave**: todos os flexores e parte dos extensores.\n\n**Prevenção.** Reconhecer a síndrome compartimental pela **dor desproporcional** e pela dor ao estiramento passivo dos dedos, e fazer a **fasciotomia** de urgência.",
-  "correta": "**Resposta provável: Errado.** Na contratura de Volkmann, os músculos mais gravemente acometidos são os **flexores profundos**, o **flexor profundo dos dedos** e o **flexor longo do polegar**, situados no centro do compartimento. Os flexores radial e ulnar do carpo, mais superficiais, são relativamente poupados.",
+  "conceito": "A contratura isquêmica de VOLKMANN é a sequela da síndrome compartimental do antebraço que não foi aberta a tempo: o músculo necrosado vira fibrose e encurta, puxando punho e dedos em flexão. A pergunta é: quais músculos sofrem mais?\n\n**Os compartimentos do antebraço** (Tabela 6-2 do capítulo):\n| Compartimento | Conteúdo |\n|---|---|\n| Volar superficial | Flexor radial do carpo, palmar longo, pronador redondo, flexor ulnar do carpo, flexor superficial dos dedos |\n| Volar profundo | **Flexor profundo dos dedos**, **flexor longo do polegar**, pronador quadrado; nervo e artéria interósseos anteriores |\n| Dorsal | Musculatura móvel e extensores |\n\n**Onde a lesão começa.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 6, de Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic), o **flexor profundo** é o **primeiro e o mais afetado**. Ele fica no fundo, junto ao osso e à membrana interóssea. Por isso, na fasciotomia, o passo mais importante é abrir o compartimento profundo pelo intervalo entre o **flexor ulnar do carpo e o flexor superficial**.\n\n**A classificação de TSUGE** mostra a mesma ordem, de dentro para fora:\n- **leve:** só o flexor profundo do **médio e do anular**;\n- **moderada:** flexor profundo e flexor longo do polegar, superficial em parte, mediano pior; é a forma típica da **supracondiliana dos 5 aos 10 anos**;\n- **grave:** todos os flexores dos dedos **e do punho**, com contraturas fixas.\n\nOs flexores do carpo, mais superficiais, só entram na forma grave.\n\n**Na prova:** VOLKMANN do antebraço = **flexor profundo dos dedos e flexor longo do polegar** primeiro; flexores do punho só na forma grave.\n\nO resumo de síndrome compartimental na criança traz a classificação de TSUGE na seção da contratura de VOLKMANN.",
+  "correta": "**B: Errado (resposta provável, sem gabarito oficial no acervo).** O capítulo aponta o flexor profundo como o primeiro e mais afetado; os flexores radial e ulnar do carpo só são atingidos na forma grave de TSUGE.",
   "incorretas": {
-   "A": "**Certo** inverteria a ordem das camadas. A isquemia é máxima na camada profunda, junto aos ossos e à membrana interóssea, e por isso os flexores profundos são os primeiros e mais lesados."
+   "A": "**A afirmação troca o compartimento.** Os flexores do carpo ficam no compartimento volar superficial, que sofre depois; o centro da lesão é o profundo."
   },
-  "referencias": [
-   "Journal of the American Academy of Orthopaedics Surgeons. July / August 1996; vol. 4, nº 4, p. 217.",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
-  ],
+  "conferido": false,
   "provavel": "B",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Contratura de VOLKMANN e prognóstico; Membro superior e antebraço."
+  ],
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+     "titulo": "Síndrome compartimental na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+     "secoes": [
+      "Contratura de VOLKMANN e prognóstico",
+      "Membro superior e antebraço"
+     ],
+     "blocos": [
+      "contratura-de-volkmann-e-prognostico-cf5cb7da",
+      "membro-superior-e-antebraco-192c5745",
+      "membro-superior-e-antebraco-8f3bb01a",
+      "contratura-de-volkmann-e-prognostico-d4426d47"
+     ],
+     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+     "trechosSha256": "6b8fe01924e65e401feca40aefeb4f43dd8da010e96f47cb3b08d8bc20632669"
+    }
+   ],
+   "questaoSha256": "55c97b72267cc6b74b1091bbafaabb68f91b7f67841a94a5b30a645c5bb42dad",
+   "comentarioSha256": "c45e14d5b2be142135b231028459b14fd4abcb2ec6bf5008f8ab663ffda793bc"
+  }
  },
  "pediatria-0828": {
   "conceito": "**Cinquenta graus de pronação e cinquenta de supinação são um arco funcional mínimo clássico, não o arco normal nem o objetivo ideal para toda criança.** A frase da questão diz que esse resultado “não é aceitável”, sem qualificar atividade, sintomas ou crescimento. A resposta bibliográfica B rejeita esse veto absoluto, mas não transforma um mínimo funcional em resultado excelente.\n\nMorrey descreveu esse arco para atividades habituais. O resumo ressalta limitações da referência e cita tarefas atuais que podem exigir cerca de 75 graus de pronação e 90 de supinação. Uma criança pode conseguir várias atividades com 50/50 e ainda encontrar restrições em outras. Avaliar apenas se ultrapassou o mínimo pode subestimar uma perda relevante para sua rotina.\n\nA compensação também é assimétrica: parte da falta de pronação pode ser compensada pela abdução do ombro, com custo de esforço; a supinação perdida não tem compensação tão fácil. Por isso, duas pessoas com a mesma soma total de movimento podem ter limitações diferentes conforme qual direção foi perdida.\n\n| Conceito | O que significa |\n|---|---|\n| Mínimo funcional clássico | Movimento suficiente para um conjunto de tarefas estudadas |\n| Movimento normal | Arco fisiológico mais amplo, não definido pelo mínimo |\n| Resultado aceitável no indivíduo | Depende de dor, tarefas, direção da perda e evolução |\n\n**Leia “Por que tratar: o que a deformidade custa”, na Biblioteca.** Use o arco funcional como referência de avaliação, sem o confundir com autorização para aceitar qualquer perda residual.",

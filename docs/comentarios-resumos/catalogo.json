@@ -3,11 +3,11 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 352,
+  "pendente": 337,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 730,
-  "pendente-inspecao-imagem": 7,
-  "revisada": 1788
+  "pendente-fonte": 735,
+  "pendente-inspecao-imagem": 4,
+  "revisada": 1801
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -249,8 +249,8 @@
    "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
    "estados": {
     "pendente": 79,
-    "pendente-fonte": 26,
-    "revisada": 114
+    "pendente-fonte": 25,
+    "revisada": 115
    }
   },
   "rockwoodcriancas10-07-patologicas-maus-tratos": {
@@ -258,10 +258,10 @@
    "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
    "estados": {
     "duplicada": 3,
-    "pendente": 26,
-    "pendente-fonte": 6,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 4
+    "pendente": 20,
+    "pendente-fonte": 2,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 16
    }
   },
   "rockwoodcriancas10-08-mao-carpo": {
@@ -288,17 +288,17 @@
    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
    "estados": {
     "duplicada": 1,
-    "pendente": 43,
+    "pendente": 42,
     "pendente-fonte": 17,
-    "revisada": 80
+    "revisada": 81
    }
   },
   "rockwoodcriancas10-19-ombro-umero": {
    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
    "estados": {
-    "pendente": 28,
-    "pendente-fonte": 1,
+    "pendente": 27,
+    "pendente-fonte": 2,
     "pendente-inspecao-imagem": 1,
     "revisada": 21
    }
@@ -307,7 +307,8 @@
    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
    "estados": {
-    "pendente": 26,
+    "pendente": 24,
+    "pendente-fonte": 2,
     "pendente-inspecao-imagem": 1,
     "revisada": 12
    }
@@ -317,8 +318,8 @@
    "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
    "estados": {
     "duplicada": 4,
-    "pendente": 48,
-    "pendente-fonte": 1,
+    "pendente": 45,
+    "pendente-fonte": 4,
     "pendente-inspecao-imagem": 1,
     "revisada": 8
    }
@@ -327,8 +328,8 @@
    "titulo": "Fraturas da coluna toracolombar na criança",
    "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
    "estados": {
-    "pendente": 34,
-    "pendente-fonte": 1,
+    "pendente": 31,
+    "pendente-fonte": 4,
     "revisada": 5
    }
   },
@@ -336,8 +337,8 @@
    "titulo": "Fraturas da pelve e do acetábulo na criança",
    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
    "estados": {
-    "pendente": 39,
-    "pendente-fonte": 1,
+    "pendente": 38,
+    "pendente-fonte": 2,
     "pendente-inspecao-imagem": 1,
     "revisada": 17
    }
@@ -346,8 +347,8 @@
    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
    "estados": {
-    "pendente": 40,
-    "pendente-fonte": 3,
+    "pendente": 38,
+    "pendente-fonte": 5,
     "pendente-inspecao-imagem": 1,
     "revisada": 17
    }
@@ -366,8 +367,8 @@
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
     "pendente": 15,
-    "pendente-fonte": 23,
-    "revisada": 96
+    "pendente-fonte": 22,
+    "revisada": 97
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
@@ -403,8 +404,7 @@
    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
    "estados": {
     "pendente": 16,
-    "pendente-fonte": 1,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 2,
     "revisada": 21
    }
   },
@@ -412,7 +412,8 @@
    "titulo": "Fraturas, luxações e outras lesões do pé na criança",
    "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
    "estados": {
-    "pendente": 21,
+    "pendente": 20,
+    "pendente-fonte": 1,
     "revisada": 7
    }
   },
@@ -463,8 +464,8 @@
    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
    "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
    "estados": {
-    "pendente-fonte": 6,
-    "revisada": 34
+    "pendente-fonte": 2,
+    "revisada": 38
    }
   },
   "wilkins9-08-radio-ulna-distal-crianca": {
@@ -473,8 +474,8 @@
    "estados": {
     "duplicada": 1,
     "pendente": 25,
-    "pendente-fonte": 18,
-    "revisada": 63
+    "pendente-fonte": 17,
+    "revisada": 64
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -483,8 +484,8 @@
    "estados": {
     "duplicada": 1,
     "pendente": 25,
-    "pendente-fonte": 17,
-    "revisada": 59
+    "pendente-fonte": 16,
+    "revisada": 60
    }
   }
  },
@@ -2237,8 +2238,8 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., caps. 21 e 22: o cap. 22 sustenta que a SCIWORA é mais grave abaixo de 8 anos, mas não discute a localização preferencial (cervical ou lombar), que é a outra metade de cada alternativa.",
    "temComentario": true,
    "citacoes": [
     {
@@ -2252,7 +2253,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "95170e4227be53a4ce5e14eb45ee310bb56729f5acd4e0a759a057b7df291dae"
+   "questaoSha256": "95170e4227be53a4ce5e14eb45ee310bb56729f5acd4e0a759a057b7df291dae",
+   "pendencia": "Rockwood crianças 10ª ed., caps. 21 e 22: o cap. 22 sustenta que a SCIWORA é mais grave abaixo de 8 anos, mas não discute a localização preferencial (cervical ou lombar), que é a outra metade de cada alternativa."
   },
   "coluna-0238": {
    "tema": "coluna",
@@ -35395,8 +35397,8 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 20: o capítulo sustenta o lado direito da pseudartrose congênita da clavícula (exceto na dextrocardia), mas não discute o terço acometido, que decide entre as alternativas A e B.",
    "temComentario": true,
    "citacoes": [
     {
@@ -35410,7 +35412,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "77bc6350162605e7b2907a733619b5d0c2c495ca558adb032905362d51c6ed96"
+   "questaoSha256": "77bc6350162605e7b2907a733619b5d0c2c495ca558adb032905362d51c6ed96",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 20: o capítulo sustenta o lado direito da pseudartrose congênita da clavícula (exceto na dextrocardia), mas não discute o terço acometido, que decide entre as alternativas A e B."
   },
   "pediatria-0010": {
    "tema": "pediatria",
@@ -35419,7 +35422,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -35434,7 +35437,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "65b980dbad61417d22834be70dd88c9ad970367342f58236149e16f431e08fdc"
+   "questaoSha256": "65b980dbad61417d22834be70dd88c9ad970367342f58236149e16f431e08fdc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Maus-tratos: epidemiologia e risco"
+      ],
+      "blocos": [
+       "maus-tratos-epidemiologia-e-risco-1fe8e17a",
+       "maus-tratos-epidemiologia-e-risco-2ca5f50d"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "6dfa1a1793cd3c9cc6050c715e21ac76c7d0a5928652975a095c3a806f6f3baa"
+     }
+    ],
+    "questaoSha256": "65b980dbad61417d22834be70dd88c9ad970367342f58236149e16f431e08fdc",
+    "comentarioSha256": "d4c80a907948c9d0878f1ae6199ec80f4f13bee3dd77b867d0502fc7587800a0"
+   }
   },
   "pediatria-0014": {
    "tema": "pediatria",
@@ -35534,8 +35561,8 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente-fonte",
-   "motivo": "Os resumos25/26 relacionam mielomeningocele a osteopenia,fratura com pouco trauma e lesão fisária femoral,mas não comparam a FREQUÊNCIA das extremidades distal femoral,distal tibial,proximal femoral eproximal tibial nessa doença. Falta distribuição anatômica específica para confirmarA e conferir os quatro distratores;exemplo de lesão distal não prova ser o local mais frequente.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -35558,6 +35585,30 @@
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
    "questaoSha256": "e4c3d732753c51d255c9aa182015626c7decd4ad0f57ffe86ba8f6f417839634",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Doenças sistêmicas"
+      ],
+      "blocos": [
+       "doencas-sistemicas-b653f198",
+       "doencas-sistemicas-b54badf3"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "aada24b436a8963d06fc1e4b676865b0ff01060b948a92079f8ed58f3e52e5b1"
+     }
+    ],
+    "questaoSha256": "e4c3d732753c51d255c9aa182015626c7decd4ad0f57ffe86ba8f6f417839634",
+    "comentarioSha256": "2d48f2e66cc7dc32588443eb20daae7d835823bdaa5ce29accdc9668ffb2b206"
+   },
    "pendencia": "Os resumos25/26 relacionam mielomeningocele a osteopenia,fratura com pouco trauma e lesão fisária femoral,mas não comparam a FREQUÊNCIA das extremidades distal femoral,distal tibial,proximal femoral eproximal tibial nessa doença. Falta distribuição anatômica específica para confirmarA e conferir os quatro distratores;exemplo de lesão distal não prova ser o local mais frequente."
   },
   "pediatria-0066": {
@@ -35683,7 +35734,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -35698,7 +35749,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "c4471725cfbc5bb645bc42048dc0c3e1b63692e9abcaab8593829787036a45c2"
+   "questaoSha256": "c4471725cfbc5bb645bc42048dc0c3e1b63692e9abcaab8593829787036a45c2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-ce072879",
+       "reconhecimento-59a1f669",
+       "reconhecimento-7f6299a9"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+     }
+    ],
+    "questaoSha256": "c4471725cfbc5bb645bc42048dc0c3e1b63692e9abcaab8593829787036a45c2",
+    "comentarioSha256": "7b1515e9b6e1c7d8a6a7fdffd3da6694c04b10ca1df1a8ad0d99887e0ca77b1e"
+   }
   },
   "pediatria-0111": {
    "tema": "pediatria",
@@ -35828,8 +35904,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -35843,7 +35919,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "d894dd57a2a5a8ea0de727cf44f9b9b046316658a867b8bcd5111a6cfcf1b90c"
+   "questaoSha256": "d894dd57a2a5a8ea0de727cf44f9b9b046316658a867b8bcd5111a6cfcf1b90c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-59a1f669",
+       "reconhecimento-ce072879",
+       "reconhecimento-7f6299a9"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4"
+     }
+    ],
+    "questaoSha256": "d894dd57a2a5a8ea0de727cf44f9b9b046316658a867b8bcd5111a6cfcf1b90c",
+    "comentarioSha256": "1d40298f26aa3cc63e2b35e5e4ea4e4fa39ba80024eb312ec593d1bb746964cf"
+   }
   },
   "pediatria-0147": {
    "tema": "pediatria",
@@ -35911,8 +36012,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente-fonte",
-   "motivo": "Fraturas de alta especificidade de Kleinman (escápula e esterno não são citados no resumo, que lista canto metafisário, costelas e fases diferentes).",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -35935,6 +36036,31 @@
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "3c333fe63d7136e1122b407ce4ed76087655c926d0cfa8b775a6e64e8ca010e7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-ce072879",
+       "reconhecimento-59a1f669",
+       "reconhecimento-7f6299a9"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+     }
+    ],
+    "questaoSha256": "3c333fe63d7136e1122b407ce4ed76087655c926d0cfa8b775a6e64e8ca010e7",
+    "comentarioSha256": "375469b7884724919b47d6383d9cec48a782c9f62873e1e44894156635a33a60"
+   },
    "pendencia": "Fraturas de alta especificidade de Kleinman (escápula e esterno não são citados no resumo, que lista canto metafisário, costelas e fases diferentes)."
   },
   "pediatria-0161": {
@@ -35993,7 +36119,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36008,7 +36134,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "31300bd72dd0b89c5247b3c717cc6550a9e344e20af91066e61b8ece31564ca4"
+   "questaoSha256": "31300bd72dd0b89c5247b3c717cc6550a9e344e20af91066e61b8ece31564ca4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-ce072879",
+       "reconhecimento-59a1f669",
+       "reconhecimento-7f6299a9"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+     }
+    ],
+    "questaoSha256": "31300bd72dd0b89c5247b3c717cc6550a9e344e20af91066e61b8ece31564ca4",
+    "comentarioSha256": "8d61118875c16ad5ff0c65e2fd0e35d1e410b4a1fbb274b656e6a105107a1c7e"
+   }
   },
   "pediatria-0174": {
    "tema": "pediatria",
@@ -36305,8 +36456,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -36320,7 +36471,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "814b3fed221d5ae12b7d0c0e8fbe371ee42788e63c3738ef6aa6901383cae2f9"
+   "questaoSha256": "814b3fed221d5ae12b7d0c0e8fbe371ee42788e63c3738ef6aa6901383cae2f9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-59a1f669",
+       "reconhecimento-ce072879",
+       "reconhecimento-7f6299a9"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4"
+     }
+    ],
+    "questaoSha256": "814b3fed221d5ae12b7d0c0e8fbe371ee42788e63c3738ef6aa6901383cae2f9",
+    "comentarioSha256": "150d0954b7c165c59de07b3716db524ee5ab7c0acb8f9686a13f84b548e580eb"
+   }
   },
   "pediatria-0332": {
    "tema": "pediatria",
@@ -36420,8 +36596,8 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente-fonte",
-   "motivo": "Fraturas de alta especificidade de maus-tratos com costela posterior e escápula (o resumo cita costelas sem separar anteriores e posteriores e não cita escápula).",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -36444,6 +36620,31 @@
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "f65266b5f563bdb28b07efbb8ce5381e89ad13ddb69842af5976a68aabef496c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-ce072879",
+       "reconhecimento-59a1f669",
+       "reconhecimento-7f6299a9"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+     }
+    ],
+    "questaoSha256": "f65266b5f563bdb28b07efbb8ce5381e89ad13ddb69842af5976a68aabef496c",
+    "comentarioSha256": "fa09f488f9f87a2b151c1fe15638bcb7262b00f59f6464ac67ac702d73b76f1a"
+   },
    "pendencia": "Fraturas de alta especificidade de maus-tratos com costela posterior e escápula (o resumo cita costelas sem separar anteriores e posteriores e não cita escápula)."
   },
   "pediatria-0363": {
@@ -36469,7 +36670,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36484,7 +36685,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "64e65ac5ff394c653b5f8dfcdb6aa020738ed8a264ab6ea12c1571571a00a559"
+   "questaoSha256": "64e65ac5ff394c653b5f8dfcdb6aa020738ed8a264ab6ea12c1571571a00a559",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Doenças sistêmicas"
+      ],
+      "blocos": [
+       "doencas-sistemicas-a08cc9d3",
+       "doencas-sistemicas-b54badf3"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "2e8b8f1ef0521038e1a77d6277bdbefbecaa0a60ee21f70ce8ec6dba8215e940"
+     }
+    ],
+    "questaoSha256": "64e65ac5ff394c653b5f8dfcdb6aa020738ed8a264ab6ea12c1571571a00a559",
+    "comentarioSha256": "081124900e7b0c1088e1d90992ada455aa9bbb229154fe259ed5e451f3c47c6a"
+   }
   },
   "pediatria-0377": {
    "tema": "pediatria",
@@ -36622,8 +36847,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente-fonte",
-   "motivo": "Metafisárias em alça de balde com costelas anteriores ou posteriores: o resumo cita costelas sem distinguir posterior de anterior, o que não decide entre C e D.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -36646,6 +36871,31 @@
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "5b40aedeb6f660e8e7a5cc98717746fa0679be7e660707ee3f709b89b36b3115",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-ce072879",
+       "reconhecimento-59a1f669",
+       "reconhecimento-7f6299a9"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760"
+     }
+    ],
+    "questaoSha256": "5b40aedeb6f660e8e7a5cc98717746fa0679be7e660707ee3f709b89b36b3115",
+    "comentarioSha256": "39ace4c41e889fa321811fa319fb6f608f063e19a27db2ddadb5749a938667e5"
+   },
    "pendencia": "Metafisárias em alça de balde com costelas anteriores ou posteriores: o resumo cita costelas sem distinguir posterior de anterior, o que não decide entre C e D."
   },
   "pediatria-0388": {
@@ -36688,7 +36938,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36703,7 +36953,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "c043a2a24ca257cdc3eead3487b9fb024fadb2a18e7c0c8edefe3df717ab2585"
+   "questaoSha256": "c043a2a24ca257cdc3eead3487b9fb024fadb2a18e7c0c8edefe3df717ab2585",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-59a1f669",
+       "reconhecimento-7f6299a9",
+       "reconhecimento-ce072879"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "b608e02034c30b9178852fe718d99294c1b62576b25cec79f88a2e5abf759c8f"
+     }
+    ],
+    "questaoSha256": "c043a2a24ca257cdc3eead3487b9fb024fadb2a18e7c0c8edefe3df717ab2585",
+    "comentarioSha256": "39ca0510a2e0df4f5495b12baeabda8b8bba91096a16d81a4ea9d3f7d2e0fb16"
+   }
   },
   "pediatria-0433": {
    "tema": "pediatria",
@@ -36780,8 +37055,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-fonte",
-   "motivo": "Imagem conferida (lesão metafisária do canto na tíbia distal do lactente). O resumo de fise distal do úmero trata maus-tratos só no descolamento do úmero distal; a lesão metafisária clássica (corner fracture), Looser e raquitismo não estão nos resumos.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -36804,6 +37079,31 @@
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "5a6dc7e0c74500adec578580c3b35a01b4568ce7e329bb079bc7fe1f8abb18eb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-59a1f669",
+       "reconhecimento-ce072879",
+       "reconhecimento-7f6299a9"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4"
+     }
+    ],
+    "questaoSha256": "5a6dc7e0c74500adec578580c3b35a01b4568ce7e329bb079bc7fe1f8abb18eb",
+    "comentarioSha256": "68d147188bebc1f0eba48e214932b38247d74f1dc2d7d64d59671f946dfa303c"
+   },
    "pendencia": "Imagem conferida (lesão metafisária do canto na tíbia distal do lactente). O resumo de fise distal do úmero trata maus-tratos só no descolamento do úmero distal; a lesão metafisária clássica (corner fracture), Looser e raquitismo não estão nos resumos."
   },
   "pediatria-0481": {
@@ -36893,8 +37193,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 31: o capítulo descreve a apófise da base do quinto metatarsal (os vesalianum) e cita KOHLER, mas não trata da apofisite (doença de ISELIN) nem dos demais epônimos das alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -36908,7 +37208,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "ecb5db6e81ee71dc8b9536519f7a0bcba6f803695a2b9a7c6cfe6afd027aea55"
+   "questaoSha256": "ecb5db6e81ee71dc8b9536519f7a0bcba6f803695a2b9a7c6cfe6afd027aea55",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 31: o capítulo descreve a apófise da base do quinto metatarsal (os vesalianum) e cita KOHLER, mas não trata da apofisite (doença de ISELIN) nem dos demais epônimos das alternativas."
   },
   "pediatria-0514": {
    "tema": "pediatria",
@@ -37478,8 +37779,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 7: o capítulo descreve o calo hiperplásico da osteogênese imperfeita, mas não o associa a um gene; o IFITM5 aparece só no painel genético, sem ligação com o calo, e WNT1 e LEPRE1 não são discutidos.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37493,7 +37794,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "64cbdfd06d675da643d77ef09152a67baa5e32eb89519a2a45156bdf96eea956"
+   "questaoSha256": "64cbdfd06d675da643d77ef09152a67baa5e32eb89519a2a45156bdf96eea956",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 7: o capítulo descreve o calo hiperplásico da osteogênese imperfeita, mas não o associa a um gene; o IFITM5 aparece só no painel genético, sem ligação com o calo, e WNT1 e LEPRE1 não são discutidos."
   },
   "pediatria-0527": {
    "tema": "pediatria",
@@ -38870,8 +39172,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 20: o capítulo cita o esternocleidomastóideo só como estabilizador da articulação esternoclavicular e não discute a inclinação da cabeça nem a direção da tração na lesão fisária com desvio anterior.",
    "temComentario": true,
    "citacoes": [
     {
@@ -38886,7 +39188,8 @@
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "cc0835f3bc7e65ef6b50dcfaa58effbdbd6773a533e7af1223536529f52d7cde"
+   "questaoSha256": "cc0835f3bc7e65ef6b50dcfaa58effbdbd6773a533e7af1223536529f52d7cde",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 20: o capítulo cita o esternocleidomastóideo só como estabilizador da articulação esternoclavicular e não discute a inclinação da cabeça nem a direção da tração na lesão fisária com desvio anterior."
   },
   "pediatria-0559": {
    "tema": "pediatria",
@@ -38973,7 +39276,7 @@
    "prova": "TEOT",
    "ano": 2024,
    "estado": "pendente-fonte",
-   "motivo": "Imagem conferida (manobra de redução do quadril). Luxação traumática do quadril na criança e as manobras de Allis, Stimson e Bigelow não estão nos resumos publicados.",
+   "motivo": "Rockwood crianças 10ª ed., cap. 24: a imagem mostra uma manobra de redução do quadril, mas o capítulo não descreve nem ilustra as manobras de ALLIS, STIMSON, BIGELOW e STEWART-MILFORD; o próprio resumo marca a questão como de outra fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -38990,7 +39293,7 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "f2888818a66e4cc08a457a9439339539364e81a1d053b2a4b7186f13900b9031",
-   "pendencia": "Imagem conferida (manobra de redução do quadril). Luxação traumática do quadril na criança e as manobras de Allis, Stimson e Bigelow não estão nos resumos publicados."
+   "pendencia": "Rockwood crianças 10ª ed., cap. 24: a imagem mostra uma manobra de redução do quadril, mas o capítulo não descreve nem ilustra as manobras de ALLIS, STIMSON, BIGELOW e STEWART-MILFORD; o próprio resumo marca a questão como de outra fonte."
   },
   "pediatria-0562": {
    "tema": "pediatria",
@@ -39368,7 +39671,7 @@
    "prova": "TARO",
    "ano": 2022,
    "estado": "pendente-fonte",
-   "motivo": "O corpo26 quantifica distúrbio de crescimento após fratura distal femoral,inclusiveIII/IV,mas não fornece comparação direta do MESMO desfecho apósIII/IV no maléolo medial,tíbia proximal e fêmur proximal. Falta base comparativa para o superlativo mais comumente deB;taxa alta num único local não comprova a hierarquia pedida.",
+   "motivo": "Rockwood crianças 10ª ed., caps. 26 e 30: o cap. 30 descreve a ponte medial após SALTER-HARRIS III e IV do tornozelo e o cap. 26 a parada após fratura do fêmur distal, mas nenhum compara a frequência da parada linear dos tipos III e IV entre os segmentos oferecidos.",
    "temComentario": true,
    "citacoes": [
     {
@@ -39391,7 +39694,7 @@
     "rockwoodcriancas10-30-tornozelo"
    ],
    "questaoSha256": "8b9e7d69072600107b0f9f8666dc00e0879b9b3cbd40c5349f1e13cb26d9df6d",
-   "pendencia": "O corpo26 quantifica distúrbio de crescimento após fratura distal femoral,inclusiveIII/IV,mas não fornece comparação direta do MESMO desfecho apósIII/IV no maléolo medial,tíbia proximal e fêmur proximal. Falta base comparativa para o superlativo mais comumente deB;taxa alta num único local não comprova a hierarquia pedida."
+   "pendencia": "Rockwood crianças 10ª ed., caps. 26 e 30: o cap. 30 descreve a ponte medial após SALTER-HARRIS III e IV do tornozelo e o cap. 26 a parada após fratura do fêmur distal, mas nenhum compara a frequência da parada linear dos tipos III e IV entre os segmentos oferecidos."
   },
   "pediatria-0571": {
    "tema": "pediatria",
@@ -42068,7 +42371,7 @@
    "prova": "TARO",
    "ano": 2018,
    "estado": "pendente-fonte",
-   "motivo": "Fratura da placa terminal lombar na criança e o sexo mais acometido não é tratado nos resumos pediátricos publicados.",
+   "motivo": "Rockwood crianças 10ª ed., cap. 22: o capítulo descreve a fratura da placa terminal (SALTER I ou II, imita hérnia, retirada do fragmento), mas não traz sexo nem segmento preferencial; o exemplo dele é uma menina de 14 anos com lesão em L4.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42086,7 +42389,7 @@
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
    "questaoSha256": "45143dce150780ea8dfacc032062023a0c7bda9dda87d3e23ad937568c8b113a",
-   "pendencia": "Fratura da placa terminal lombar na criança e o sexo mais acometido não é tratado nos resumos pediátricos publicados."
+   "pendencia": "Rockwood crianças 10ª ed., cap. 22: o capítulo descreve a fratura da placa terminal (SALTER I ou II, imita hérnia, retirada do fragmento), mas não traz sexo nem segmento preferencial; o exemplo dele é uma menina de 14 anos com lesão em L4."
   },
   "pediatria-0628": {
    "tema": "pediatria",
@@ -42600,8 +42903,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 21: o capítulo cita a cunha anterior normal do corpo vertebral da criança que simula compressão, mas não aponta o nível (C3, C4, C5 ou C6) em que ela é mais frequente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42615,7 +42918,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "df445cbffe7e1aa6821f51fa17be384a0001c847fb6d68727fb2d5b0931b834d"
+   "questaoSha256": "df445cbffe7e1aa6821f51fa17be384a0001c847fb6d68727fb2d5b0931b834d",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 21: o capítulo cita a cunha anterior normal do corpo vertebral da criança que simula compressão, mas não aponta o nível (C3, C4, C5 ou C6) em que ela é mais frequente."
   },
   "pediatria-0639": {
    "tema": "pediatria",
@@ -43943,7 +44247,7 @@
    "prova": "TARO",
    "ano": 2012,
    "estado": "pendente-fonte",
-   "motivo": "B oficial pede a causa MAIS comum de sinostose após Monteggia entre alta energia exposta, enxerto, má redução e parafuso interósseo. O resumo9 lista riscos gerais e associação pós-operatória à placa, sem frequências dessas quatro causas em Monteggia. Falta série ou afirmação primária do ranking; risco e plausibilidade não demonstram predominância. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
+   "motivo": "Rockwood crianças 10ª ed., cap. 12: o capítulo lista fatores de risco de sinostose, mas não ordena as quatro causas oferecidas (alta energia exposta, enxerto, má redução, parafuso transmembrana) pela frequência após a MONTEGGIA.",
    "temComentario": true,
    "citacoes": [
     {
@@ -43963,7 +44267,7 @@
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "700afe28bb15f215da892515213f20cf839f4238d9bbf1e5b495e0cf8df4f85d",
-   "pendencia": "B oficial pede a causa MAIS comum de sinostose após Monteggia entre alta energia exposta, enxerto, má redução e parafuso interósseo. O resumo9 lista riscos gerais e associação pós-operatória à placa, sem frequências dessas quatro causas em Monteggia. Falta série ou afirmação primária do ranking; risco e plausibilidade não demonstram predominância. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
+   "pendencia": "Rockwood crianças 10ª ed., cap. 12: o capítulo lista fatores de risco de sinostose, mas não ordena as quatro causas oferecidas (alta energia exposta, enxerto, má redução, parafuso transmembrana) pela frequência após a MONTEGGIA."
   },
   "pediatria-0665": {
    "tema": "pediatria",
@@ -45087,7 +45391,7 @@
    "prova": "TARO",
    "ano": 2014,
    "estado": "pendente-fonte",
-   "motivo": "Local de aplicação da força na fratura proximal do úmero por trauma direto na criança não é tratado nos resumos pediátricos publicados.",
+   "motivo": "Rockwood crianças 10ª ed., cap. 19: o capítulo cita trauma direto anterior ou posterior no úmero proximal, sem apontar a região posterolateral do gabarito nem permitir descartar as outras alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -45104,7 +45408,7 @@
     "rockwoodcriancas10-19-ombro-umero"
    ],
    "questaoSha256": "d2b83c3afd01de9a2a8f964b276d7db0546a06d0f2779ffa242cc288aee9de83",
-   "pendencia": "Local de aplicação da força na fratura proximal do úmero por trauma direto na criança não é tratado nos resumos pediátricos publicados."
+   "pendencia": "Rockwood crianças 10ª ed., cap. 19: o capítulo cita trauma direto anterior ou posterior no úmero proximal, sem apontar a região posterolateral do gabarito nem permitir descartar as outras alternativas."
   },
   "pediatria-0696": {
    "tema": "pediatria",
@@ -47755,15 +48059,16 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., caps. 21 e 22: o capítulo define a SCIWORA de PANG e WILBERGER e a gravidade abaixo de 8 anos, mas não compara a frequência entre crianças, adolescentes, adultos jovens e idosos; sem gabarito oficial.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "a7e0dc0ed3e601b12088d48b96bd510131ec7c533514968aff90cf66e4ae3590"
+   "questaoSha256": "a7e0dc0ed3e601b12088d48b96bd510131ec7c533514968aff90cf66e4ae3590",
+   "pendencia": "Rockwood crianças 10ª ed., caps. 21 e 22: o capítulo define a SCIWORA de PANG e WILBERGER e a gravidade abaixo de 8 anos, mas não compara a frequência entre crianças, adolescentes, adultos jovens e idosos; sem gabarito oficial."
   },
   "pediatria-0756": {
    "tema": "pediatria",
@@ -48386,8 +48691,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 24: o capítulo diz que a fise forma barreira aos vasos metafisários por volta dos 4 anos, mas não explica a artrite séptica secundária à osteomielite do colo (contiguidade intra-articular da metáfise); sem gabarito oficial, a afirmação não pode ser julgada só por ele.",
    "temComentario": true,
    "citacoes": [
     {
@@ -48401,7 +48706,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "16a108b39102d4ba8e80f9d599d71e3cc3a477e2372200f451792a2d0ca8f9f0"
+   "questaoSha256": "16a108b39102d4ba8e80f9d599d71e3cc3a477e2372200f451792a2d0ca8f9f0",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 24: o capítulo diz que a fise forma barreira aos vasos metafisários por volta dos 4 anos, mas não explica a artrite séptica secundária à osteomielite do colo (contiguidade intra-articular da metáfise); sem gabarito oficial, a afirmação não pode ser julgada só por ele."
   },
   "pediatria-0800": {
    "tema": "pediatria",
@@ -48648,7 +48954,7 @@
    "prova": "TARO",
    "ano": 2006,
    "estado": "pendente-fonte",
-   "motivo": "Necrose na fratura transcervical do fêmur da criança versus adulto não é tratado nos resumos pediátricos publicados.",
+   "motivo": "Rockwood crianças 10ª ed., cap. 24: o capítulo dá as taxas de necrose da fratura do colo na criança por tipo de DELBET, mas não as compara com as do adulto, como pede a afirmação.",
    "temComentario": true,
    "citacoes": [
     {
@@ -48667,7 +48973,7 @@
     "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "0497c3abe864ad80456d5bd35926611ff914d0dd01cd2f0eeaf18a5733fb4e6f",
-   "pendencia": "Necrose na fratura transcervical do fêmur da criança versus adulto não é tratado nos resumos pediátricos publicados."
+   "pendencia": "Rockwood crianças 10ª ed., cap. 24: o capítulo dá as taxas de necrose da fratura do colo na criança por tipo de DELBET, mas não as compara com as do adulto, como pede a afirmação."
   },
   "pediatria-0815": {
    "tema": "pediatria",
@@ -49250,8 +49556,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente-fonte",
-   "motivo": "Sem gabarito oficial; provávelB antiga compara gravidade nos flexores radial/ulnar do carpo com flexores profundos na contratura de Volkmann. O resumo9 reconhece a contratura e descreve fasciotomia, sem distribuição da necrose ou vulnerabilidade comparativa muscular. Falta fonte específica de Volkmann; plano a liberar não demonstra quais músculos são mais atingidos. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -49276,6 +49582,33 @@
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "55c97b72267cc6b74b1091bbafaabb68f91b7f67841a94a5b30a645c5bb42dad",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Contratura de VOLKMANN e prognóstico",
+       "Membro superior e antebraço"
+      ],
+      "blocos": [
+       "contratura-de-volkmann-e-prognostico-cf5cb7da",
+       "membro-superior-e-antebraco-192c5745",
+       "membro-superior-e-antebraco-8f3bb01a",
+       "contratura-de-volkmann-e-prognostico-d4426d47"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "6b8fe01924e65e401feca40aefeb4f43dd8da010e96f47cb3b08d8bc20632669"
+     }
+    ],
+    "questaoSha256": "55c97b72267cc6b74b1091bbafaabb68f91b7f67841a94a5b30a645c5bb42dad",
+    "comentarioSha256": "c45e14d5b2be142135b231028459b14fd4abcb2ec6bf5008f8ab663ffda793bc"
+   },
    "pendencia": "Sem gabarito oficial; provávelB antiga compara gravidade nos flexores radial/ulnar do carpo com flexores profundos na contratura de Volkmann. O resumo9 reconhece a contratura e descreve fasciotomia, sem distribuição da necrose ou vulnerabilidade comparativa muscular. Falta fonte específica de Volkmann; plano a liberar não demonstra quais músculos são mais atingidos. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0828": {
@@ -49554,8 +49887,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 22: o capítulo propõe estiramento e lesão vascular como mecanismos da SCIWORA, mas não afirma que a elasticidade do conjunto disco-vértebra supera a da medula; sem gabarito oficial, a afirmação não pode ser julgada só por ele.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49570,7 +49903,8 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "386c50339d0999d1080e912e6c71bc519b9b7ca80bdd7898a5715e6402e9ff35"
+   "questaoSha256": "386c50339d0999d1080e912e6c71bc519b9b7ca80bdd7898a5715e6402e9ff35",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 22: o capítulo propõe estiramento e lesão vascular como mecanismos da SCIWORA, mas não afirma que a elasticidade do conjunto disco-vértebra supera a da medula; sem gabarito oficial, a afirmação não pode ser julgada só por ele."
   },
   "pediatria-0834": {
    "tema": "pediatria",
@@ -51684,8 +52018,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 30: a figura (SBOT-SP) mostra um SALTER-HARRIS II desenhado sem identificar o lado, as alternativas são só letras (A a D) sem descrição e não há gabarito oficial; não dá para ligar a figura a um tipo de DIAS-TACHDJIAN com segurança.",
    "temComentario": true,
    "citacoes": [
     {
@@ -51699,7 +52033,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "6ee8be73a7537ce6130e5db9d19657a0efda0f36c80a2a229a8eab74ab8407c7"
+   "questaoSha256": "6ee8be73a7537ce6130e5db9d19657a0efda0f36c80a2a229a8eab74ab8407c7",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 30: a figura (SBOT-SP) mostra um SALTER-HARRIS II desenhado sem identificar o lado, as alternativas são só letras (A a D) sem descrição e não há gabarito oficial; não dá para ligar a figura a um tipo de DIAS-TACHDJIAN com segurança."
   },
   "pediatria-0924": {
    "tema": "pediatria",
@@ -51761,7 +52096,7 @@
    "prova": "SBOT-SP",
    "ano": null,
    "estado": "pendente-fonte",
-   "motivo": "Imagem conferida (Monteggia infantil). A classificação de Letts não está nos resumos publicados; sem gabarito no acervo.",
+   "motivo": "Rockwood crianças 10ª ed., cap. 12: o resumo traz as classificações de BADO e LETTS, mas a figura da SBOT-SP tem baixa resolução para separar galho verde de fratura completa da ulna e não há gabarito oficial; falta imagem melhor ou o gabarito da prova.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -51770,7 +52105,7 @@
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "75ee8ffb4dee87b4e1913d60e94c5a885e83cde20802b856578a668b4bf69bf6",
-   "pendencia": "Imagem conferida (Monteggia infantil). A classificação de Letts não está nos resumos publicados; sem gabarito no acervo."
+   "pendencia": "Rockwood crianças 10ª ed., cap. 12: o resumo traz as classificações de BADO e LETTS, mas a figura da SBOT-SP tem baixa resolução para separar galho verde de fratura completa da ulna e não há gabarito oficial; falta imagem melhor ou o gabarito da prova."
   },
   "pediatria-0926": {
    "tema": "pediatria",
@@ -53204,8 +53539,8 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Rockwood crianças 10ª ed., cap. 24: o capítulo trata da luxação traumática do quadril (redução urgente, interposição de partes moles), mas não traz o percentual de redução aberta pedido pelas alternativas.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -53213,7 +53548,8 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "0e371dd0e9ad7cd895b84a5081876fbf3eca836f7aadfdf0637f3db7e52c08f7"
+   "questaoSha256": "0e371dd0e9ad7cd895b84a5081876fbf3eca836f7aadfdf0637f3db7e52c08f7",
+   "pendencia": "Rockwood crianças 10ª ed., cap. 24: o capítulo trata da luxação traumática do quadril (redução urgente, interposição de partes moles), mas não traz o percentual de redução aberta pedido pelas alternativas."
   },
   "pediatria-0959": {
    "tema": "pediatria",
