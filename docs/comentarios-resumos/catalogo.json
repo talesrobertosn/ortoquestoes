@@ -3,11 +3,10 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 159,
+  "pendente": 133,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 800,
-  "pendente-inspecao-imagem": 4,
-  "revisada": 1914
+  "pendente-fonte": 807,
+  "revisada": 1937
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -256,10 +255,9 @@
    "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
    "estados": {
     "duplicada": 3,
-    "pendente": 4,
-    "pendente-fonte": 9,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 25
+    "pendente": 1,
+    "pendente-fonte": 11,
+    "revisada": 27
    }
   },
   "rockwoodcriancas10-08-mao-carpo": {
@@ -297,8 +295,7 @@
    "estados": {
     "pendente": 2,
     "pendente-fonte": 7,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 41
+    "revisada": 42
    }
   },
   "rockwoodcriancas10-20-clavicula-escapula": {
@@ -307,8 +304,7 @@
    "estados": {
     "pendente": 2,
     "pendente-fonte": 6,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 30
+    "revisada": 31
    }
   },
   "rockwoodcriancas10-21-coluna-cervical": {
@@ -316,19 +312,18 @@
    "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
    "estados": {
     "duplicada": 4,
-    "pendente": 42,
-    "pendente-fonte": 4,
-    "pendente-inspecao-imagem": 1,
-    "revisada": 11
+    "pendente": 16,
+    "pendente-fonte": 9,
+    "revisada": 33
    }
   },
   "rockwoodcriancas10-22-coluna-toracolombar": {
    "titulo": "Fraturas da coluna toracolombar na criança",
    "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
    "estados": {
-    "pendente": 28,
-    "pendente-fonte": 4,
-    "revisada": 8
+    "pendente": 2,
+    "pendente-fonte": 8,
+    "revisada": 30
    }
   },
   "rockwoodcriancas10-23-pelve-acetabulo": {
@@ -336,8 +331,7 @@
    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
    "estados": {
     "pendente": 10,
-    "pendente-fonte": 6,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 7,
     "revisada": 41
    }
   },
@@ -346,8 +340,7 @@
    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
    "estados": {
     "pendente": 10,
-    "pendente-fonte": 9,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 10,
     "revisada": 41
    }
   },
@@ -37053,14 +37046,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta: desenho lateral do pescoço com mastoide e esternocleidomastoideo,estrutura amarela apontada superiormente. O resumo21 não descreve o trajeto do NERVO ACESSÓRIO junto ao esternocleidomastoideo nem compara IV(troclear),V(trigêmeo) eXII(hipoglosso) nessa identificação. A menção ao hipoglosso no côndilo não supre a anatomia superficial doXI. Falta anatomia independente dos nervos e da estrutura assinalada; gabaritoC preservado sem comentário novo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "7c4ac1062a4bc6859401f7c801b20830c221050d202bdf9cf982a9f04f3cc004"
+   "questaoSha256": "7c4ac1062a4bc6859401f7c801b20830c221050d202bdf9cf982a9f04f3cc004",
+   "pendencia": "Figura aberta: desenho lateral do pescoço com mastoide e esternocleidomastoideo,estrutura amarela apontada superiormente. O resumo21 não descreve o trajeto do NERVO ACESSÓRIO junto ao esternocleidomastoideo nem compara IV(troclear),V(trigêmeo) eXII(hipoglosso) nessa identificação. A menção ao hipoglosso no côndilo não supre a anatomia superficial doXI. Falta anatomia independente dos nervos e da estrutura assinalada; gabaritoC preservado sem comentário novo."
   },
   "pediatria-0294": {
    "tema": "pediatria",
@@ -37290,14 +37284,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Colagem aberta e idades conferidas(I3anos,II9meses,III5anos,IV4meses). O resumo07 fundamenta suspeita de abuso e alguns padrões,mas não fornece o mapeamento INDIVIDUAL dos quatro traços aos mecanismos TORÇÃO,COMPRESSÃO ANTEROPOSTERIOR,QUEDA DA PRÓPRIA ALTURA eTORÇÃO COM COMPRESSÃO exigido para o pareamento completo. As alternativas no acervo também trazem os esquemas I–IV concatenados no textoD;preservar OCR/gabaritoB sem inventar normalização ou correlação. Falta descrição biomecânica/radiográfica independente para toda associação;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "671a418c5e78cfff5018f5247adf3ecc9d940c020c48c4568752fafa92dc784c"
+   "questaoSha256": "671a418c5e78cfff5018f5247adf3ecc9d940c020c48c4568752fafa92dc784c",
+   "pendencia": "Colagem aberta e idades conferidas(I3anos,II9meses,III5anos,IV4meses). O resumo07 fundamenta suspeita de abuso e alguns padrões,mas não fornece o mapeamento INDIVIDUAL dos quatro traços aos mecanismos TORÇÃO,COMPRESSÃO ANTEROPOSTERIOR,QUEDA DA PRÓPRIA ALTURA eTORÇÃO COM COMPRESSÃO exigido para o pareamento completo. As alternativas no acervo também trazem os esquemas I–IV concatenados no textoD;preservar OCR/gabaritoB sem inventar normalização ou correlação. Falta descrição biomecânica/radiográfica independente para toda associação;sem selo."
   },
   "pediatria-0362": {
    "tema": "pediatria",
@@ -51695,15 +51690,16 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Fotografia aberta: nádegas e membros inferiores do lactente com pregas assimétricas. Os resumos23/24 tratam trauma da pelve/quadril,mas não definem as manobras deBARLOW(luxável) eORTOLANI(luxado),nem THOMAS,GALEAZZI eHART para conferir as alternativas de displasia do desenvolvimento. A fotografia não descreve nem demonstra essas manobras. Falta exame independente daDDQ e diferenciação das manobras;gabaritoA e comentário anterior preservados,sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "6ecda702e37e986f3e61a693d4c22f9df32b0dcba159a7fea139f3635b25f68d"
+   "questaoSha256": "6ecda702e37e986f3e61a693d4c22f9df32b0dcba159a7fea139f3635b25f68d",
+   "pendencia": "Fotografia aberta: nádegas e membros inferiores do lactente com pregas assimétricas. Os resumos23/24 tratam trauma da pelve/quadril,mas não definem as manobras deBARLOW(luxável) eORTOLANI(luxado),nem THOMAS,GALEAZZI eHART para conferir as alternativas de displasia do desenvolvimento. A fotografia não descreve nem demonstra essas manobras. Falta exame independente daDDQ e diferenciação das manobras;gabaritoA e comentário anterior preservados,sem selo."
   },
   "pediatria-0878": {
    "tema": "pediatria",
@@ -52451,15 +52447,56 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "dfa9376bf4b9544024c60389e58f17bf1a228b4abd31b46c9c3469b6160b565a"
+   "questaoSha256": "dfa9376bf4b9544024c60389e58f17bf1a228b4abd31b46c9c3469b6160b565a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Acromioclavicular",
+       "Clavícula: terço lateral"
+      ],
+      "blocos": [
+       "acromioclavicular-71a997a6",
+       "clavicula-terco-lateral-be6075a5",
+       "clavicula-terco-lateral-d808c290"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "dae7bab5e64a406e4e73ee7fca5d723cfaf570dc01ab5c8a5f8a472e097b4fb1"
+     },
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: anatomia"
+      ],
+      "blocos": [
+       "umero-proximal-anatomia-f0be4955"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "87b11ea9e658c82056e188afaf877d5d0e3204c309846b1cb5b23e43f8ea929d"
+     }
+    ],
+    "questaoSha256": "dfa9376bf4b9544024c60389e58f17bf1a228b4abd31b46c9c3469b6160b565a",
+    "comentarioSha256": "a24441f650a130dc27b1fa3834e1490958732b4ea7104897e73060ff1bdd940b"
+   }
   },
   "pediatria-0916": {
    "tema": "pediatria",
@@ -68871,7 +68908,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68887,7 +68924,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "93311326c9d71a24e84f4a57e0fdd3b939a5ca874098e86d201ab7e0d31d9c51"
+   "questaoSha256": "93311326c9d71a24e84f4a57e0fdd3b939a5ca874098e86d201ab7e0d31d9c51",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Imagem e variantes normais"
+      ],
+      "blocos": [
+       "imagem-e-variantes-normais-08eebd81"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "90065d65753297564042052239f31e9c7ab9b81c2b55439f149c65b1c5c7db26"
+     }
+    ],
+    "questaoSha256": "93311326c9d71a24e84f4a57e0fdd3b939a5ca874098e86d201ab7e0d31d9c51",
+    "comentarioSha256": "347547cc40f4d490358d1fa66b545d98db1abb3cd367cf32c551a7578909c03f"
+   }
   },
   "pediatria-1244": {
    "tema": "pediatria",
@@ -68897,7 +68957,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68913,7 +68973,32 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "277578a416a82c8c91b68da0870925f9f8f2ff72efad1930d83e65a7fb0a43aa"
+   "questaoSha256": "277578a416a82c8c91b68da0870925f9f8f2ff72efad1930d83e65a7fb0a43aa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Junção occipitocervical",
+       "Imagem e variantes normais"
+      ],
+      "blocos": [
+       "juncao-occipitocervical-c8308246",
+       "imagem-e-variantes-normais-c95c9882"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "2b953f0d9d2a57c3681d1fa013ba4cd339821bea17095191f2ee7e893d16e33a"
+     }
+    ],
+    "questaoSha256": "277578a416a82c8c91b68da0870925f9f8f2ff72efad1930d83e65a7fb0a43aa",
+    "comentarioSha256": "991aafece841fb9e8e11d11fe7d3b2997a2275468026b585f1c4a3f5a683247d"
+   }
   },
   "pediatria-1245": {
    "tema": "pediatria",
@@ -68922,7 +69007,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68938,7 +69023,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "a8755dc6057d6d494c0c335ef0a35d36b40c3c7a16addf91a7452f7d1cf291d0"
+   "questaoSha256": "a8755dc6057d6d494c0c335ef0a35d36b40c3c7a16addf91a7452f7d1cf291d0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Junção occipitocervical"
+      ],
+      "blocos": [
+       "juncao-occipitocervical-c8308246"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "71b2db0479507897b07a352af8f6bd67b25db426a9c2a2d6ed2bf6e33404d6da"
+     }
+    ],
+    "questaoSha256": "a8755dc6057d6d494c0c335ef0a35d36b40c3c7a16addf91a7452f7d1cf291d0",
+    "comentarioSha256": "3173771ab1a0dad4075f1dfdcef3f47b05916ab10e84a6c8cf1d018c3787abc8"
+   }
   },
   "pediatria-1246": {
    "tema": "pediatria",
@@ -68947,7 +69055,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68963,7 +69071,32 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "0a7d442533a8d3d4446d7374236cd0951352dd83a4ab0695db74f04bd473bb25"
+   "questaoSha256": "0a7d442533a8d3d4446d7374236cd0951352dd83a4ab0695db74f04bd473bb25",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "C1 e C2: atlas, odontoide e enforcado",
+       "Junção occipitocervical"
+      ],
+      "blocos": [
+       "c1-e-c2-atlas-odontoide-e-enforcado-9ffea837",
+       "juncao-occipitocervical-c8308246"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "d1d53e447c055030a3d3f63fa892dc264da4ebe84a2c696c096b8c9c3185a603"
+     }
+    ],
+    "questaoSha256": "0a7d442533a8d3d4446d7374236cd0951352dd83a4ab0695db74f04bd473bb25",
+    "comentarioSha256": "9d8133fe3e1d4136d5cbcb516216583fd86cacbe52a6642e079c3347ee691f17"
+   }
   },
   "pediatria-1247": {
    "tema": "pediatria",
@@ -68973,8 +69106,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo21 sustenta hiperextensão com carga axial,investigação de maus-tratos e imobilização8–12semanas nas estáveis. Descreve a espondilólise congênita como falha simétrica,lisa eSEM EDEMA,mas não demonstra o valor diagnóstico da combinação COM EDEMA PRÉ-VERTEBRAL da alternativaC,nem que ela CONFIRME fratura. A ausência de edema na variante não prova automaticamente a recíproca diagnóstica. Falta critério independente para esse diferencial radiográfico completo;comentário e gabaritoB preservados,sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -68990,7 +69123,8 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "e262f2114f8c5bf96566c165c37b95e7d4b185b1a06daae6c0ebefeeb177a40e"
+   "questaoSha256": "e262f2114f8c5bf96566c165c37b95e7d4b185b1a06daae6c0ebefeeb177a40e",
+   "pendencia": "O resumo21 sustenta hiperextensão com carga axial,investigação de maus-tratos e imobilização8–12semanas nas estáveis. Descreve a espondilólise congênita como falha simétrica,lisa eSEM EDEMA,mas não demonstra o valor diagnóstico da combinação COM EDEMA PRÉ-VERTEBRAL da alternativaC,nem que ela CONFIRME fratura. A ausência de edema na variante não prova automaticamente a recíproca diagnóstica. Falta critério independente para esse diferencial radiográfico completo;comentário e gabaritoB preservados,sem selo."
   },
   "pediatria-1248": {
    "tema": "pediatria",
@@ -69001,7 +69135,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69017,7 +69151,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "6fcb7ad7589e5028377e2c6c222418ebd7d6749f5837934c50d5e6b07d1b5bd3"
+   "questaoSha256": "6fcb7ad7589e5028377e2c6c222418ebd7d6749f5837934c50d5e6b07d1b5bd3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "C1 e C2: atlas, odontoide e enforcado"
+      ],
+      "blocos": [
+       "c1-e-c2-atlas-odontoide-e-enforcado-cc93063a"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "7c792aa680f2444beaa3922964c914273034d87d0385186362f42b67ec225f67"
+     }
+    ],
+    "questaoSha256": "6fcb7ad7589e5028377e2c6c222418ebd7d6749f5837934c50d5e6b07d1b5bd3",
+    "comentarioSha256": "e4da3bd727bc2753ef054b031f7442b8e9112eeb6c594735f9a881c565951842"
+   }
   },
   "pediatria-1249": {
    "tema": "pediatria",
@@ -69027,7 +69184,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69043,7 +69200,32 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "d3bc61ce0aa52e0054f2f7fb6f446aa7ac290eb4c17131906ce4db52b6d38082"
+   "questaoSha256": "d3bc61ce0aa52e0054f2f7fb6f446aa7ac290eb4c17131906ce4db52b6d38082",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Cervical baixa (C3 a C7)",
+       "C1 e C2: atlas, odontoide e enforcado"
+      ],
+      "blocos": [
+       "cervical-baixa-c3-a-c7-d1365fab",
+       "c1-e-c2-atlas-odontoide-e-enforcado-0f44c502"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "346fe7fdebceae9e8c0fbac487933ad77c3aff0b6f5d39452a9c0e30bfe6a3e5"
+     }
+    ],
+    "questaoSha256": "d3bc61ce0aa52e0054f2f7fb6f446aa7ac290eb4c17131906ce4db52b6d38082",
+    "comentarioSha256": "6a39210359be4db8b38141e6652171f76c93def0eb35b8b7fe2670323cc8b1d6"
+   }
   },
   "pediatria-1250": {
    "tema": "pediatria",
@@ -69053,7 +69235,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69069,7 +69251,33 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "db756812eb65321472ccc87805b887b49454425766a81e63e10acdac74053403"
+   "questaoSha256": "db756812eb65321472ccc87805b887b49454425766a81e63e10acdac74053403",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Imagem e variantes normais",
+       "Junção occipitocervical"
+      ],
+      "blocos": [
+       "imagem-e-variantes-normais-6d2318e9",
+       "imagem-e-variantes-normais-c95c9882",
+       "juncao-occipitocervical-c8308246"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "6d0c348e504872a21dad93b9dcea4af24d9db0f4a99e286e56c2921ecf9748d2"
+     }
+    ],
+    "questaoSha256": "db756812eb65321472ccc87805b887b49454425766a81e63e10acdac74053403",
+    "comentarioSha256": "7c0a0546efd6981713f7257bb296dceb85f76b09a1e986a95cc0dbb3852a5e93"
+   }
   },
   "pediatria-1251": {
    "tema": "pediatria",
@@ -69078,7 +69286,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69094,7 +69302,46 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "b15a79ad394d28720953072b999f515c28e1f732fbe0071a1d7358453aa94eee"
+   "questaoSha256": "b15a79ad394d28720953072b999f515c28e1f732fbe0071a1d7358453aa94eee",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Cervical baixa (C3 a C7)"
+      ],
+      "blocos": [
+       "cervical-baixa-c3-a-c7-cb68fbf2"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "bb5cd382057fec508c70e7e6b09fad9bb756b8c1b9531b897b36d46c6a17cc5f"
+     },
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Coluna subaxial: classificações e estabilidade"
+      ],
+      "blocos": [
+       "coluna-subaxial-classificacoes-e-estabilidade-c01dd9e0",
+       "coluna-subaxial-classificacoes-e-estabilidade-e22b0f15"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "deb51129432df6c049c1417d2754bed4352e7e2ae45a902078807b21e534ce75"
+     }
+    ],
+    "questaoSha256": "b15a79ad394d28720953072b999f515c28e1f732fbe0071a1d7358453aa94eee",
+    "comentarioSha256": "bd6b9e28eb45796514a8a68d22acfb019960e06f5f47c54fbc90ac0228d5b188"
+   }
   },
   "pediatria-1252": {
    "tema": "pediatria",
@@ -69103,8 +69350,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo21 sustenta halo a partir de cerca de1ano,mais pinos e menor torque,e informa68%de complicações,sobretudo INFECÇÃO SUPERFICIAL E AFROUXAMENTO. Não estabelece ranking separado que prove INFECÇÃO como A MAIS COMUM da alternativaC,em vez do afrouxamento também destacado. Não converter a ordem de uma lista em distribuição de frequência nem importar dados do halo adulto. Falta frequência comparativa pediátrica dos tipos de complicação;comentário preservado sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -69119,7 +69366,8 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "c553dad79839f6e86a320bba71aa6a8032301759294bc9f6b8fedd8bb9a971bb"
+   "questaoSha256": "c553dad79839f6e86a320bba71aa6a8032301759294bc9f6b8fedd8bb9a971bb",
+   "pendencia": "O corpo21 sustenta halo a partir de cerca de1ano,mais pinos e menor torque,e informa68%de complicações,sobretudo INFECÇÃO SUPERFICIAL E AFROUXAMENTO. Não estabelece ranking separado que prove INFECÇÃO como A MAIS COMUM da alternativaC,em vez do afrouxamento também destacado. Não converter a ordem de uma lista em distribuição de frequência nem importar dados do halo adulto. Falta frequência comparativa pediátrica dos tipos de complicação;comentário preservado sem selo."
   },
   "pediatria-1253": {
    "tema": "pediatria",
@@ -69128,7 +69376,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69144,7 +69392,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "f7f9bcbad8d3c9550a91c21ad4b33a7de58ee9b6f021846598be49dc106ce3a9"
+   "questaoSha256": "f7f9bcbad8d3c9550a91c21ad4b33a7de58ee9b6f021846598be49dc106ce3a9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Órteses, halo, corticoide e cirurgia"
+      ],
+      "blocos": [
+       "orteses-halo-corticoide-e-cirurgia-5b91dc28"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "d44644c953dedb46748713f46dd4490a408f1efceb1d01bd52b097441bdef8e3"
+     }
+    ],
+    "questaoSha256": "f7f9bcbad8d3c9550a91c21ad4b33a7de58ee9b6f021846598be49dc106ce3a9",
+    "comentarioSha256": "88681efd7d6f89c34101dd9157127f2477076da36f61065de1c4badbd5f78479"
+   }
   },
   "pediatria-1254": {
    "tema": "pediatria",
@@ -69154,7 +69425,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69171,7 +69442,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "ac2a2ba90d826dbbf3372e1a9426d45a7648f1207312122b0e966a80e072a1c9"
+   "questaoSha256": "ac2a2ba90d826dbbf3372e1a9426d45a7648f1207312122b0e966a80e072a1c9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Anatomia, mecanismos e atendimento inicial"
+      ],
+      "blocos": [
+       "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "b6bf50b71d5e6302ce6dcb4dcd2152a75bec6f52c7188c88aa11db781069b1fd"
+     }
+    ],
+    "questaoSha256": "ac2a2ba90d826dbbf3372e1a9426d45a7648f1207312122b0e966a80e072a1c9",
+    "comentarioSha256": "12cbd1b63bf473123958a5437342c1cae7c1e8831e0b9d1787d5dee1e1b4dcea"
+   }
   },
   "pediatria-1255": {
    "tema": "pediatria",
@@ -69180,7 +69474,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69196,7 +69490,34 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "7d0cc89fc1c776aea844185da9506732b7a3d5ea537442611d58858dc565d3cb"
+   "questaoSha256": "7d0cc89fc1c776aea844185da9506732b7a3d5ea537442611d58858dc565d3cb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Flexão-distração (CHANCE) e fratura-luxação",
+       "Mecanismos, lesões associadas e avaliação",
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "flexao-distracao-chance-e-fratura-luxacao-b198d03d",
+       "mecanismos-lesoes-associadas-e-avaliacao-0ddd61bc",
+       "como-ler-este-capitulo-3906aa9a"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "a6168588d26119717ea3b2ef4796f3464334c88ec3b8cd1aa0495cfe3af5fd60"
+     }
+    ],
+    "questaoSha256": "7d0cc89fc1c776aea844185da9506732b7a3d5ea537442611d58858dc565d3cb",
+    "comentarioSha256": "6178fcc99e73366e914102e74b7791e6aaa6d8cb03b6cd53c03eb438b7a478ac"
+   }
   },
   "pediatria-1256": {
    "tema": "pediatria",
@@ -69205,8 +69526,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo22 sustenta faceta vazia no planoAXIAL e sua relação com flexão-distração,mas não associa explicitamente o sinal ao componente LIGAMENTAR,qualificador da alternativaD:na mesma seção distingueChance óssea deSmith ligamentar. O resumo48 adulto explica a faceta vazia na luxação facetária cervical,não demonstra essa associação toracolombar pediátrica. Falta descrição independente da estrutura rompida no sinal para conferir a opção inteira;sem selo,sem transferir topografia adulta.",
    "temComentario": true,
    "citacoes": [
     {
@@ -69221,7 +69542,8 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "3c768964555601814059ba19d78220c54d330d0909a188626af7b825babf86c3"
+   "questaoSha256": "3c768964555601814059ba19d78220c54d330d0909a188626af7b825babf86c3",
+   "pendencia": "O corpo22 sustenta faceta vazia no planoAXIAL e sua relação com flexão-distração,mas não associa explicitamente o sinal ao componente LIGAMENTAR,qualificador da alternativaD:na mesma seção distingueChance óssea deSmith ligamentar. O resumo48 adulto explica a faceta vazia na luxação facetária cervical,não demonstra essa associação toracolombar pediátrica. Falta descrição independente da estrutura rompida no sinal para conferir a opção inteira;sem selo,sem transferir topografia adulta."
   },
   "pediatria-1257": {
    "tema": "pediatria",
@@ -69231,7 +69553,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69248,7 +69570,63 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "f3d17af8155e7d45c76ed048e2fb8dbc3b2804fd30feade13328c3131a8f0992"
+   "questaoSha256": "f3d17af8155e7d45c76ed048e2fb8dbc3b2804fd30feade13328c3131a8f0992",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Mecanismos, lesões associadas e avaliação",
+       "Flexão-distração (CHANCE) e fratura-luxação"
+      ],
+      "blocos": [
+       "mecanismos-lesoes-associadas-e-avaliacao-0ddd61bc",
+       "mecanismos-lesoes-associadas-e-avaliacao-e3b6d948",
+       "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "1e67d0c682969011f5173c79b1336acdea44001fc5a76ff19ba1af86ea91beba"
+     },
+     {
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "titulo": "Fraturas patológicas e maus-tratos na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+      "secoes": [
+       "Reconhecimento"
+      ],
+      "blocos": [
+       "reconhecimento-a471746c"
+      ],
+      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "trechosSha256": "3c23dc6bcb7e170220de35b14fa7fe65a3fab96279e08eb9b0787172c8034187"
+     },
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Anatomia, mecanismos e atendimento inicial"
+      ],
+      "blocos": [
+       "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "b6bf50b71d5e6302ce6dcb4dcd2152a75bec6f52c7188c88aa11db781069b1fd"
+     }
+    ],
+    "questaoSha256": "f3d17af8155e7d45c76ed048e2fb8dbc3b2804fd30feade13328c3131a8f0992",
+    "comentarioSha256": "3096e6d3428907b620513aba0583751e1619d93fa016082c5200ae33332018c3"
+   }
   },
   "pediatria-1258": {
    "tema": "pediatria",
@@ -69257,7 +69635,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69273,7 +69651,31 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "dc5a9dab8b8940213d3292d312ba36837db70f7cc1377d3a143bad04ec08289e"
+   "questaoSha256": "dc5a9dab8b8940213d3292d312ba36837db70f7cc1377d3a143bad04ec08289e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Compressão e explosão"
+      ],
+      "blocos": [
+       "compressao-e-explosao-8c911be9",
+       "compressao-e-explosao-6aac1f3f"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "37216b34bc26f643957c66b9417d54fa4acbf0808797bf8c5056ded31cf9a0d1"
+     }
+    ],
+    "questaoSha256": "dc5a9dab8b8940213d3292d312ba36837db70f7cc1377d3a143bad04ec08289e",
+    "comentarioSha256": "92c981d90f0fe019282d2ceb32ebeae36b1dc1e0b55d6aad22a14fb24888d46e"
+   }
   },
   "pediatria-1259": {
    "tema": "pediatria",
@@ -69282,7 +69684,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69298,7 +69700,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "4af18450ca1ccad5c8b69f4745e1cbc4fb90596712d22ba9bacc43cb0c406ae4"
+   "questaoSha256": "4af18450ca1ccad5c8b69f4745e1cbc4fb90596712d22ba9bacc43cb0c406ae4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "SCIWORA e lesão medular"
+      ],
+      "blocos": [
+       "sciwora-e-lesao-medular-9ae5196f"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "a4a033eb1531fcfa8763c8041d080917bf093c8d968044426b3ad53a81e81d88"
+     }
+    ],
+    "questaoSha256": "4af18450ca1ccad5c8b69f4745e1cbc4fb90596712d22ba9bacc43cb0c406ae4",
+    "comentarioSha256": "6f00475d0be149aae87083b0d1c67402f8670d6b233fee1b15d59221c8b3e8a9"
+   }
   },
   "pediatria-1260": {
    "tema": "pediatria",
@@ -69307,7 +69732,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69323,7 +69748,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "97e18a9a183a97e0c16a572660f42d9c99e943da632e9b376fd53cdff3553bef"
+   "questaoSha256": "97e18a9a183a97e0c16a572660f42d9c99e943da632e9b376fd53cdff3553bef",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Mecanismos, lesões associadas e avaliação"
+      ],
+      "blocos": [
+       "mecanismos-lesoes-associadas-e-avaliacao-5748dabb"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "5c52f759bda5ff72283cdc9de6e80c5f8d05f5323b8682a7c821dc8fab28ef6b"
+     }
+    ],
+    "questaoSha256": "97e18a9a183a97e0c16a572660f42d9c99e943da632e9b376fd53cdff3553bef",
+    "comentarioSha256": "0fade9b00593a3e078077ab7b160786b0a06284cc327333773e233d409fc32d6"
+   }
   },
   "pediatria-1261": {
    "tema": "pediatria",
@@ -69332,8 +69780,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo22 define explosão estável sem déficit e com complexo posterior íntegro e indicaTLSO8–12semanas,mas não descreve SEGUIMENTO RADIOGRÁFICO E NEUROLÓGICO PRÓXIMO,componente da alternativaB,nem critérios ou rotina que qualifiquem esse acompanhamento nesse grupo pediátrico. Falta protocolo independente de vigilância para conferir a recomendação inteira sem importar um cronograma do adulto ou inventar periodicidade;comentário preservado sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -69348,7 +69796,8 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "a33091d16b15af4fb86d4a708c0d6e0954c710c79016e0751681f3f4bb5f4392"
+   "questaoSha256": "a33091d16b15af4fb86d4a708c0d6e0954c710c79016e0751681f3f4bb5f4392",
+   "pendencia": "O resumo22 define explosão estável sem déficit e com complexo posterior íntegro e indicaTLSO8–12semanas,mas não descreve SEGUIMENTO RADIOGRÁFICO E NEUROLÓGICO PRÓXIMO,componente da alternativaB,nem critérios ou rotina que qualifiquem esse acompanhamento nesse grupo pediátrico. Falta protocolo independente de vigilância para conferir a recomendação inteira sem importar um cronograma do adulto ou inventar periodicidade;comentário preservado sem selo."
   },
   "pediatria-1262": {
    "tema": "pediatria",
@@ -69357,7 +69806,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69373,7 +69822,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "4618d4449c14c13db16c617dc8eb80374fbec7bfbcb2ea2fdd2604b3ae264eb7"
+   "questaoSha256": "4618d4449c14c13db16c617dc8eb80374fbec7bfbcb2ea2fdd2604b3ae264eb7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "SCIWORA e lesão medular"
+      ],
+      "blocos": [
+       "sciwora-e-lesao-medular-fc1a88f7"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "b0843c386a6b69affe72b5e7d5376c9f09f1af4c183fc93a6cae05e48cc68b26"
+     }
+    ],
+    "questaoSha256": "4618d4449c14c13db16c617dc8eb80374fbec7bfbcb2ea2fdd2604b3ae264eb7",
+    "comentarioSha256": "0d06396c0530a934f7bc5c7024261af9edb7858b63bd97803d86d35604948f21"
+   }
   },
   "pediatria-1263": {
    "tema": "pediatria",
@@ -69383,7 +69855,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69399,7 +69871,31 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "b4b282a7b232ae2de36d2de20376de296202b4fb340610ccc9a75c535331592d"
+   "questaoSha256": "b4b282a7b232ae2de36d2de20376de296202b4fb340610ccc9a75c535331592d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Placa terminal e faceta: o atleta jovem"
+      ],
+      "blocos": [
+       "placa-terminal-e-faceta-o-atleta-jovem-9eaa04f6",
+       "placa-terminal-e-faceta-o-atleta-jovem-102e70f9"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "79de7a58cfd3a534c4a2a1dc18359377563bc11bea1e67d8e6772e42df2fd988"
+     }
+    ],
+    "questaoSha256": "b4b282a7b232ae2de36d2de20376de296202b4fb340610ccc9a75c535331592d",
+    "comentarioSha256": "7bdfb39a61e0bb8191caf6042d84d822bf1a067a1f27f6b68932a676c666891b"
+   }
   },
   "pediatria-1264": {
    "tema": "pediatria",
@@ -69408,7 +69904,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69424,7 +69920,31 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "cd0a92d1ceff2005a29851b8ee9e67b64b356fad1734de97744e9da1d26ef4d3"
+   "questaoSha256": "cd0a92d1ceff2005a29851b8ee9e67b64b356fad1734de97744e9da1d26ef4d3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Flexão-distração (CHANCE) e fratura-luxação"
+      ],
+      "blocos": [
+       "flexao-distracao-chance-e-fratura-luxacao-b198d03d",
+       "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "9dbb3ca1a116c6509c541b221287046d8122e4bb7bc616cbdacec0a5c3506220"
+     }
+    ],
+    "questaoSha256": "cd0a92d1ceff2005a29851b8ee9e67b64b356fad1734de97744e9da1d26ef4d3",
+    "comentarioSha256": "283f1f66d26b71f22f8d6aad60bc0ea70ba20072aa9d4e881f4c0ab44b7a775f"
+   }
   },
   "pediatria-1265": {
    "tema": "pediatria",
@@ -69433,7 +69953,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69449,7 +69969,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "fa7ad6f04d10d151cafdb8d01389a93b80e33675ab2115a1e7a5441e8d7c8fe9"
+   "questaoSha256": "fa7ad6f04d10d151cafdb8d01389a93b80e33675ab2115a1e7a5441e8d7c8fe9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Flexão-distração (CHANCE) e fratura-luxação"
+      ],
+      "blocos": [
+       "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "886216cefd055a3bd1a4f105c325dac23a7e8888cb3fd2bb872606130d0c065a"
+     }
+    ],
+    "questaoSha256": "fa7ad6f04d10d151cafdb8d01389a93b80e33675ab2115a1e7a5441e8d7c8fe9",
+    "comentarioSha256": "d60c0ea09415c09efc17fadc1f97205895afcb9094baa314b27a76cbce8591f3"
+   }
   },
   "pediatria-1266": {
    "tema": "pediatria",
@@ -69458,7 +70001,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69474,7 +70017,30 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "ff585abdfc3056a87e16e835d9d78ef292d48ffb6d678a45a84a22d3374399d1"
+   "questaoSha256": "ff585abdfc3056a87e16e835d9d78ef292d48ffb6d678a45a84a22d3374399d1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Mecanismos, lesões associadas e avaliação"
+      ],
+      "blocos": [
+       "mecanismos-lesoes-associadas-e-avaliacao-e3b6d948"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "29f626cc32473465ed1373e3ce3b5c985e49c9395eae5baaa7735716bbeec303"
+     }
+    ],
+    "questaoSha256": "ff585abdfc3056a87e16e835d9d78ef292d48ffb6d678a45a84a22d3374399d1",
+    "comentarioSha256": "f12ce913fb58274d6db9fd7b0947492645f41b42a01d362d21cc1de65b7a6f50"
+   }
   },
   "pediatria-1267": {
    "tema": "pediatria",
@@ -69483,7 +70049,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69499,7 +70065,31 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "07a7842d11b88704217f2f8572998726de7f87879d784edf838b523b08da3ff0"
+   "questaoSha256": "07a7842d11b88704217f2f8572998726de7f87879d784edf838b523b08da3ff0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Placa terminal e faceta: o atleta jovem"
+      ],
+      "blocos": [
+       "placa-terminal-e-faceta-o-atleta-jovem-102e70f9",
+       "placa-terminal-e-faceta-o-atleta-jovem-9eaa04f6"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "a4061169e51e1ec535954ad52141a4591a91cb977d0cd9a79e1f5297b8383123"
+     }
+    ],
+    "questaoSha256": "07a7842d11b88704217f2f8572998726de7f87879d784edf838b523b08da3ff0",
+    "comentarioSha256": "b01a3bcfcd7abb82785aef0a673fd0c869fbb49db1167d5e4891739c8b7d3184"
+   }
   },
   "pediatria-1268": {
    "tema": "pediatria",
@@ -69508,7 +70098,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69524,7 +70114,45 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "10070523e7c8f6e7bf2c30553fd105fb7f43f01e8a676239347fb1d7ac90e455"
+   "questaoSha256": "10070523e7c8f6e7bf2c30553fd105fb7f43f01e8a676239347fb1d7ac90e455",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "SCIWORA e lesão medular"
+      ],
+      "blocos": [
+       "sciwora-e-lesao-medular-fc1a88f7"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "b0843c386a6b69affe72b5e7d5376c9f09f1af4c183fc93a6cae05e48cc68b26"
+     },
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Órteses, halo, corticoide e cirurgia"
+      ],
+      "blocos": [
+       "orteses-halo-corticoide-e-cirurgia-5b91dc28"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "d44644c953dedb46748713f46dd4490a408f1efceb1d01bd52b097441bdef8e3"
+     }
+    ],
+    "questaoSha256": "10070523e7c8f6e7bf2c30553fd105fb7f43f01e8a676239347fb1d7ac90e455",
+    "comentarioSha256": "bbcae50092c2ed9f301ad5ec9ae180c92bfa32ce5fe6c1a142822d5f53b54cbf"
+   }
   },
   "pediatria-1269": {
    "tema": "pediatria",
