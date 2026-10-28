@@ -1,0 +1,641 @@
+{
+  "base": "ab3aa5ab755ae3210a4ea68d724b769cf1b2a01e",
+  "lotes": {
+    "217": {
+      "revisadas": [
+        "pediatria-1183",
+        "pediatria-1184",
+        "pediatria-1185",
+        "pediatria-1187",
+        "pediatria-1190",
+        "pediatria-1191",
+        "pediatria-1192"
+      ],
+      "lacunas": [
+        "pediatria-1186",
+        "pediatria-1188",
+        "pediatria-1189"
+      ]
+    },
+    "218": {
+      "revisadas": [
+        "pediatria-1193",
+        "pediatria-1195",
+        "pediatria-1196",
+        "pediatria-1197",
+        "pediatria-1198",
+        "pediatria-1200"
+      ],
+      "lacunas": [
+        "pediatria-1194",
+        "pediatria-1199",
+        "pediatria-1201",
+        "pediatria-1202"
+      ]
+    },
+    "219": {
+      "revisadas": [
+        "pediatria-1204",
+        "pediatria-1205",
+        "pediatria-1206",
+        "pediatria-1207",
+        "pediatria-1210",
+        "pediatria-1211"
+      ],
+      "lacunas": [
+        "pediatria-1203",
+        "pediatria-1208",
+        "pediatria-1209",
+        "pediatria-1212"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwoodcriancas10-24-quadril": {
+      "markdownSha256Bytes": "8e85d4d1e8f246263e94ab2672ef60afdba414571c8b15fb8d644101db7b1659",
+      "linhas": 129,
+      "compiladoSha256Bytes": "a8ec354b5b2058498d1230a62c742d1753759aee07139fd025083dc46083936c"
+    },
+    "rockwoodcriancas10-07-patologicas-maus-tratos": {
+      "markdownSha256Bytes": "d975d07ad4d2152e3f2bc61ad363e60763c3077bcf85e46c248fcad2f6f36bbc",
+      "linhas": 109,
+      "compiladoSha256Bytes": "4f841f5ae3d7169ede85405852b5563529fa537479d5cb384f658b25b1cf9c95"
+    },
+    "rockwoodcriancas10-19-ombro-umero": {
+      "markdownSha256Bytes": "b8cffea6c8a99d678d2974c8622d00759abe4cde2ed102ed671d6f6295d3364d",
+      "linhas": 93,
+      "compiladoSha256Bytes": "57eabf77f025dd6bd0db27b0774c678cefbea0d5a764c066c552b7958d1907f8"
+    }
+  },
+  "leitura": "Resumos infantis 24, 07 e 19 integralmente lidos nesta passagem; corpo independente, tabelas e sínteses prova consultados. Notas questoes e comentários anteriores não usados como fonte. 24 lido na entrega anterior desta mesma passagem, hash preservado e trechos de irrigação, necrose e luxação relidos para cada caso.",
+  "correcoesMotivosConferidos": [
+    {
+      "id": "pediatria-1183",
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TARO 2006 (`pediatria-0799`), que fala dos vasos que cruzam a fise. O capítulo mostra que, depois do primeiro ano, a fise é uma barreira.",
+      "paragrafoConferido": "**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TARO 2006 (`pediatria-0799`), que fala dos vasos que cruzam a fise. O capítulo mostra que, por volta dos 4 anos, a fise é uma barreira.",
+      "motivo": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    {
+      "id": "pediatria-1196",
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra fraturas patológicas em vários temas, e o cisto ósseo simples do úmero proximal é a mais típica da criança.",
+      "paragrafoConferido": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra fraturas patológicas em vários temas, e o cisto ósseo simples do úmero proximal é um exemplo típico descrito no resumo.",
+      "motivo": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    {
+      "id": "pediatria-1198",
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O fibroma não ossificante é a lesão óssea mais comum da criança, e a sequência \"consolidar primeiro, decidir depois\" é o ponto prático.",
+      "paragrafoConferido": "**Por que esta questão foi criada.** É uma questão de projeção. O fibroma não ossificante é uma lesão óssea da criança descrita no resumo, e a sequência \"consolidar primeiro, decidir depois\" é o ponto prático.",
+      "motivo": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    {
+      "id": "pediatria-1204",
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea de muitas oficiais: SBOT-SP (`pediatria-0097`) e TEOT 2022 (`pediatria-0468`), escápula; TARO 2009 (`pediatria-0160`, `0481`), escápula, esterno e metafisárias; TEOT 2023 (`pediatria-0173`), processo espinhoso; TEPOP 2024 (`pediatria-0362`), costela posterior, escápula e canto; TARO 2025 (`pediatria-0383`), alça de balde e costelas posteriores. Aqui a pergunta é ao contrário. Depois, faça as oficiais.",
+      "paragrafoConferido": "**Por que esta questão foi criada.** É gêmea de muitas oficiais: SBOT-SP (`pediatria-0097`) e TEOT 2022 (`pediatria-0468`), escápula; TARO 2009 (`pediatria-0160`, `pediatria-0481`), escápula, esterno e metafisárias; TEOT 2023 (`pediatria-0173`), processo espinhoso; TEPOP 2024 (`pediatria-0362`), costela posterior, escápula e canto; TARO 2025 (`pediatria-0383`), alça de balde e costelas posteriores. Aqui a pergunta é ao contrário. Depois, faça as oficiais.",
+      "motivo": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    {
+      "id": "pediatria-1210",
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A conduta diante da suspeita é cobrada em provas de ortopedia pediátrica e é a parte em que o ortopedista mais erra.",
+      "paragrafoConferido": "**Por que esta questão foi criada.** É uma questão de projeção. A conduta diante da suspeita é cobrada em provas de ortopedia pediátrica e é parte essencial da proteção da criança.",
+      "motivo": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    }
+  ],
+  "referenciasHistoricas": {
+    "pediatria-1183": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seção Vascular Anatomy (Fig. 24-8)"
+      ],
+      "comentarioAnteriorSha256": "b8b9088956902574b92f4a71faeac5f33a49b8467add6ad12df44691791a73da"
+    },
+    "pediatria-1184": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seção Osteonecrosis (classificação de RATLIFF, Fig. 24-19)"
+      ],
+      "comentarioAnteriorSha256": "9320f7c106448422be52ab7e0f7caf56d04b598d05530d17e194ae6d5ab24407"
+    },
+    "pediatria-1185": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Fracture-Specific Treatment (Type II and Type III) e Authors' Preferred Treatment (Type II)"
+      ],
+      "comentarioAnteriorSha256": "03e9b3c55ba3f0cea4a4806d5ccbc60cff114be0d0599b6fdb6d6461ef184945"
+    },
+    "pediatria-1187": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seção Osteonecrosis"
+      ],
+      "comentarioAnteriorSha256": "2f7aa950d5591b1a4a71896eadb5a740ef59a6d520229eb017894acb29ecff23"
+    },
+    "pediatria-1190": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Introduction to Hip Dislocations, Mechanisms of Injury e Classification (Figs. 24-26 a 24-28)"
+      ],
+      "comentarioAnteriorSha256": "7b39f72e7e2fbcb19f64b395f7b6aa6dfd3a120ae829efd41246844fc8434007"
+    },
+    "pediatria-1191": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Treatment Options for Hip Dislocations e Authors' Preferred Treatment (Figs. 24-6, 24-33 e 24-34)"
+      ],
+      "comentarioAnteriorSha256": "5fb1c65126b973c5eb3910b418ce6e0873d39a31f7893f1bd1456008b5a8957a"
+    },
+    "pediatria-1192": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Imaging and Other Diagnostic Studies for Hip Dislocations e Interposed Soft Tissue (Figs. 24-29, 24-30 e 24-35)"
+      ],
+      "comentarioAnteriorSha256": "d96e45b8bb5494506ade2e132b8604778223c7f289b36f6c9ccf4a7d2b7fc06b"
+    },
+    "pediatria-1186": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Fracture-Specific Treatment (Type I) e Authors' Preferred Treatment (Type I)"
+      ],
+      "comentarioAnteriorSha256": "3333fd4c5ed1f545cc55c9f811cfb61da69271019cd1ad7dd5b9f10f096b029a"
+    },
+    "pediatria-1188": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Coxa Vara e Nonunion (Figs. 24-22 e 24-24)"
+      ],
+      "comentarioAnteriorSha256": "3daca5d33931705c2a0e50990283d02ed2847189c1d93c7b355d9c53f620d6b0"
+    },
+    "pediatria-1189": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Classification e Treatment of Stress Fractures of the Femoral Neck (Fig. 24-25)"
+      ],
+      "comentarioAnteriorSha256": "f238cb1f4d8b39b64d507185bdb0957fc5c35eefee8a37e6400398492c51b2b0"
+    },
+    "pediatria-1193": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Management of Expected Adverse Outcomes Related to Hip Dislocations (Osteonecrosis, Late Presentation)"
+      ],
+      "comentarioAnteriorSha256": "a056bb111eefb83e153d778b8ae509de9092b0357a36407bdc327467def4f5fc"
+    },
+    "pediatria-1195": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seção Premature Physeal Closure (Fig. 24-23)"
+      ],
+      "comentarioAnteriorSha256": "5c07f6e5e346f185ededa1bed172003627549a97f12dbc5479d47796b80db8d3"
+    },
+    "pediatria-1196": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Unicameral Bone Cyst (Figs. 7-1 a 7-3)"
+      ],
+      "comentarioAnteriorSha256": "64b2499d469815fc45ef622f01049b732457bed1d3584a3a9ebef4d01075765f"
+    },
+    "pediatria-1197": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Aneurysmal Bone Cyst (Figs. 7-4 a 7-7)"
+      ],
+      "comentarioAnteriorSha256": "f2e89e264b75bc0f46007bc330aa009f6a55893061a384c248329bb290751171"
+    },
+    "pediatria-1198": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Fibrous Cortical Defects and Nonossifying Fibromas (Fig. 7-8)"
+      ],
+      "comentarioAnteriorSha256": "808313881a90d056234021da032587e084ff7ee1f9cbace7cb370869f93a1fa6"
+    },
+    "pediatria-1200": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Osteogenesis Imperfecta (Figs. 7-23 a 7-25)"
+      ],
+      "comentarioAnteriorSha256": "d6d9b4caa8c3ec41622b3339d412c250f99073bfa0fe637b5400feef847f3c99"
+    },
+    "pediatria-1194": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Injuries Associated With Hip Dislocations e Nerve Injury"
+      ],
+      "comentarioAnteriorSha256": "131ce7b0ffd5e72ad85e41346053f3d839ffaf4c711c67cc8808aeea10d970c3"
+    },
+    "pediatria-1199": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Fibrous Dysplasia (Figs. 7-12 e 7-13)"
+      ],
+      "comentarioAnteriorSha256": "2c242ae1acc3126d2a08082deb469dcda3a3afd6ffb8509aa5557559f66a164e"
+    },
+    "pediatria-1201": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Myelomeningocele (Fig. 7-35)"
+      ],
+      "comentarioAnteriorSha256": "558e7982cc0b93dee0be42ee7c452a7af451c76fab75c60dec647d16adfd14fe"
+    },
+    "pediatria-1202": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Muscular Dystrophy (Fig. 7-36)"
+      ],
+      "comentarioAnteriorSha256": "877337f7b608834e416b4323946947cd10c43cf7ffa57c1d5a4075a38809a103"
+    },
+    "pediatria-1204": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Fractures (Tabela 7-7, especificidade de KLEINMAN)"
+      ],
+      "comentarioAnteriorSha256": "cb49c59faff1de13e5e977a43301a319d1e5424e5a0a7e3943e84e4b868cc06d"
+    },
+    "pediatria-1205": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção The Skeletal Survey (Tabela 7-9)"
+      ],
+      "comentarioAnteriorSha256": "1ad170c18b7945c04c90eb5aea6f4e59c638e3347e1485482623e6f07be80a58"
+    },
+    "pediatria-1206": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Soft Tissue Injuries (Tabela 7-5, Fig. 7-38)"
+      ],
+      "comentarioAnteriorSha256": "137ee35804b9f82dfb2808398d1863ebc2f0dc54c9e59af5807483a2e506f759"
+    },
+    "pediatria-1207": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Burns (Fig. 7-39)"
+      ],
+      "comentarioAnteriorSha256": "a9230e9e0d11a196247fe98da8c67672b794ba43e7822308305724c92a6bfbdd"
+    },
+    "pediatria-1210": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seções Orthopaedic Recognition of Child Maltreatment e Post-Emergency Department Treatment and Legal Reporting"
+      ],
+      "comentarioAnteriorSha256": "3d063fc12d81566728718bc3cebedc21c0f2b3ae5ad25b26f7646431140ba32e"
+    },
+    "pediatria-1211": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seção Nonoperative Treatment of Shoulder Dislocations (Outcomes)"
+      ],
+      "comentarioAnteriorSha256": "a721b2ade87ac7aa02e48fcaa7f4331a08c445178476f7f8ea204b43bb9dbe64"
+    },
+    "pediatria-1203": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Scurvy (Fig. 7-32)"
+      ],
+      "comentarioAnteriorSha256": "d6ab7ad2590ef5bd2383972be56a770df8f6e579f20955a0214bc3f4f88f5b1e"
+    },
+    "pediatria-1208": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seções Epidemiology e Risk Factors for Child Abuse (Tabela 7-4)"
+      ],
+      "comentarioAnteriorSha256": "5609c9c93dff4ab3e446754e0543cfa09da6d8c256c5d7aab5d0ab8dead77b3a"
+    },
+    "pediatria-1209": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries; Alexandre Arkader e Karim Masrouha)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, seção Extremity Fractures"
+      ],
+      "comentarioAnteriorSha256": "a17fd41b73803dc0868376c8b8fca486c285102bb0029af2ea96ca8441febf49"
+    },
+    "pediatria-1212": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 19 (Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft; Donald S. Bae)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 19, seções Mechanisms of Injury e Signs and Symptoms of Shoulder Dislocations (Figs. 19-1 e 19-4)"
+      ],
+      "comentarioAnteriorSha256": "bd0db3435e7dd065a8d45fedd6b0670db96daba0dabf0df73e2cfb4f38f7ff0b"
+    }
+  },
+  "origensMotivosPreservados": {
+    "pediatria-1183": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0799"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TARO 2006 (`pediatria-0799`), que fala dos vasos que cruzam a fise. O capítulo mostra que, depois do primeiro ano, a fise é uma barreira.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TARO 2006 (`pediatria-0799`), que fala dos vasos que cruzam a fise. O capítulo mostra que, por volta dos 4 anos, a fise é uma barreira.",
+      "correcaoConferencia": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    "pediatria-1184": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0581",
+        "pediatria-0819"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2023 (`pediatria-0581`), que pergunta a região acometida no tipo III de RATLIFF, e do TARO 2006 (`pediatria-0819`), sem gabarito, que afirma que o tipo III tem o pior prognóstico. Pelo capítulo, o tipo III é do colo (metafisário) e tem bom prognóstico. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2023 (`pediatria-0581`), que pergunta a região acometida no tipo III de RATLIFF, e do TARO 2006 (`pediatria-0819`), sem gabarito, que afirma que o tipo III tem o pior prognóstico. Pelo capítulo, o tipo III é do colo (metafisário) e tem bom prognóstico. Depois, faça as oficiais."
+    },
+    "pediatria-1185": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0707",
+        "pediatria-0730"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2022 (`pediatria-0707`), que pergunta a manobra de redução fechada do tipo II (abdução e rotação medial), e do TARO 2007 (`pediatria-0730`), sem gabarito, que afirma que o tipo II desviado deve ser reduzido e fixado com parafusos. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2022 (`pediatria-0707`), que pergunta a manobra de redução fechada do tipo II (abdução e rotação medial), e do TARO 2007 (`pediatria-0730`), sem gabarito, que afirma que o tipo II desviado deve ser reduzido e fixado com parafusos. Depois, faça as oficiais."
+    },
+    "pediatria-1187": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0651",
+        "pediatria-0858",
+        "pediatria-0920"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada aos tipos de DELBET e à necrose, cobrados no TARO 2011 (`pediatria-0651`), na ENARE 2025 (`pediatria-0858`) e no TEOT 2025 (`pediatria-0920`).",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada aos tipos de DELBET e à necrose, cobrados no TARO 2011 (`pediatria-0651`), na ENARE 2025 (`pediatria-0858`) e no TEOT 2025 (`pediatria-0920`)."
+    },
+    "pediatria-1190": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0537",
+        "pediatria-0561"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2024 (`pediatria-0537`), que pergunta a direção mais comum e a energia do trauma abaixo de 5 anos. Depois, faça a oficial, e também o TEOT 2024 (`pediatria-0561`), sobre a manobra de redução.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2024 (`pediatria-0537`), que pergunta a direção mais comum e a energia do trauma abaixo de 5 anos. Depois, faça a oficial, e também o TEOT 2024 (`pediatria-0561`), sobre a manobra de redução."
+    },
+    "pediatria-1191": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0537",
+        "pediatria-0561"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2024 (`pediatria-0537`) e ao TEOT 2024 (`pediatria-0561`), sobre a luxação traumática e sua redução.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2024 (`pediatria-0537`) e ao TEOT 2024 (`pediatria-0561`), sobre a luxação traumática e sua redução."
+    },
+    "pediatria-1192": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0537"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A luxação do quadril na criança é cobrada (TARO 2024 `pediatria-0537`), e a redução não concêntrica é a armadilha clínica que o capítulo destaca.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A luxação do quadril na criança é cobrada (TARO 2024 `pediatria-0537`), e a redução não concêntrica é a armadilha clínica que o capítulo destaca."
+    },
+    "pediatria-1193": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0537"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2024 (`pediatria-0537`), sobre a luxação traumática do quadril.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2024 (`pediatria-0537`), sobre a luxação traumática do quadril."
+    },
+    "pediatria-1195": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0530",
+        "pediatria-0599"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção, ligada aos tipos de DELBET (TARO 2025 `pediatria-0530`, TARO 2015 `pediatria-0599`).",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção, ligada aos tipos de DELBET (TARO 2025 `pediatria-0530`, TARO 2015 `pediatria-0599`)."
+    },
+    "pediatria-1196": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra fraturas patológicas em vários temas, e o cisto ósseo simples do úmero proximal é a mais típica da criança.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra fraturas patológicas em vários temas, e o cisto ósseo simples do úmero proximal é um exemplo típico descrito no resumo.",
+      "correcaoConferencia": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    "pediatria-1197": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção sobre o diagnóstico diferencial das lesões líticas que fraturam, tema que cruza pediatria e tumores.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção sobre o diagnóstico diferencial das lesões líticas que fraturam, tema que cruza pediatria e tumores."
+    },
+    "pediatria-1198": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O fibroma não ossificante é a lesão óssea mais comum da criança, e a sequência \"consolidar primeiro, decidir depois\" é o ponto prático.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O fibroma não ossificante é uma lesão óssea da criança descrita no resumo, e a sequência \"consolidar primeiro, decidir depois\" é o ponto prático.",
+      "correcaoConferencia": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    "pediatria-1200": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0366",
+        "pediatria-0526"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TEPOP 2024 (`pediatria-0366`), sobre o tratamento das fraturas na osteogênese imperfeita, e ao TARO 2025 (`pediatria-0526`), sobre o calo hiperplásico.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TEPOP 2024 (`pediatria-0366`), sobre o tratamento das fraturas na osteogênese imperfeita, e ao TARO 2025 (`pediatria-0526`), sobre o calo hiperplásico."
+    },
+    "pediatria-1204": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0097",
+        "pediatria-0468",
+        "pediatria-0160",
+        "pediatria-0481",
+        "pediatria-0173",
+        "pediatria-0362",
+        "pediatria-0383"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea de muitas oficiais: SBOT-SP (`pediatria-0097`) e TEOT 2022 (`pediatria-0468`), escápula; TARO 2009 (`pediatria-0160`, `0481`), escápula, esterno e metafisárias; TEOT 2023 (`pediatria-0173`), processo espinhoso; TEPOP 2024 (`pediatria-0362`), costela posterior, escápula e canto; TARO 2025 (`pediatria-0383`), alça de balde e costelas posteriores. Aqui a pergunta é ao contrário. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea de muitas oficiais: SBOT-SP (`pediatria-0097`) e TEOT 2022 (`pediatria-0468`), escápula; TARO 2009 (`pediatria-0160`, `pediatria-0481`), escápula, esterno e metafisárias; TEOT 2023 (`pediatria-0173`), processo espinhoso; TEPOP 2024 (`pediatria-0362`), costela posterior, escápula e canto; TARO 2025 (`pediatria-0383`), alça de balde e costelas posteriores. Aqui a pergunta é ao contrário. Depois, faça as oficiais.",
+      "correcaoConferencia": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    "pediatria-1205": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0422",
+        "pediatria-0066"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada às oficiais sobre maus-tratos (TARO 2011 `pediatria-0422`, TARO 2015 `pediatria-0066`). O inventário é a ferramenta que o ortopedista precisa saber pedir.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada às oficiais sobre maus-tratos (TARO 2011 `pediatria-0422`, TARO 2015 `pediatria-0066`). O inventário é a ferramenta que o ortopedista precisa saber pedir."
+    },
+    "pediatria-1206": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0010"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção sobre o achado mais comum dos maus-tratos, ligada ao TARO 2020 (`pediatria-0010`), que cobra o tipo mais frequente de maus-tratos.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção sobre o achado mais comum dos maus-tratos, ligada ao TARO 2020 (`pediatria-0010`), que cobra o tipo mais frequente de maus-tratos."
+    },
+    "pediatria-1207": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra os padrões dos maus-tratos, e as queimaduras têm desenhos clássicos que falam por si.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra os padrões dos maus-tratos, e as queimaduras têm desenhos clássicos que falam por si."
+    },
+    "pediatria-1210": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A conduta diante da suspeita é cobrada em provas de ortopedia pediátrica e é a parte em que o ortopedista mais erra.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A conduta diante da suspeita é cobrada em provas de ortopedia pediátrica e é parte essencial da proteção da criança.",
+      "correcaoConferencia": "Motivo específico preservado; removida afirmação clínica/editorial não sustentada ou normalizado ID abreviado após conferir o acervo."
+    },
+    "pediatria-1211": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A instabilidade do ombro do adolescente é cada vez mais frequente, e o número da recidiva é o que guia a conversa com a família e a indicação cirúrgica.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A instabilidade do ombro do adolescente é cada vez mais frequente, e o número da recidiva é o que guia a conversa com a família e a indicação cirúrgica."
+    }
+  },
+  "figuras": "Todos os 30 enunciados sem arquivo de imagem e sem figura indispensável citada.",
+  "lacunas": {
+    "pediatria-1186": "O resumo 24 sustenta tratamento conservador com gesso em abdução e rotação neutra no Delbet I estável até 2 anos, cobrindo idade e posição do caso. Não especifica CONTROLE RADIOGRÁFICO PRECOCE nesse subgrupo, parte expressa da alternativa A, nem intervalo/técnica que permita conferir essa recomendação inteira. Também não aborda o protocolo de Pavlik de 2 semanas da alternativa D. Falta roteiro de acompanhamento e comparação independente para toda a alternativa, sem inventar periodicidade a partir de controle de outras fraturas; comentário intacto, sem selo.",
+    "pediatria-1188": "O resumo 24 indica osteotomia valgizante subtrocantérica para pseudartrose com fixação estável, mas não define ausência de consolidação AOS 5 MESES como critério de pseudartrose nem desenvolve a mudança de orientação do traço e a COMPRESSÃO DO FOCO, fundamentos expressos na alternativa C. Falta definição temporal e explicação biomecânica independente para a indicação completa, sem usar o comentário anterior como prova. Conduta geral parcialmente coberta; comentário preservado sem selo.",
+    "pediatria-1189": "O resumo 24 define estresse de tensão da cortical superior como instável e indica PARAFUSOS IN SITU. Não especifica que sejam CANULADOS DE COMPRESSÃO, atributos do implante na alternativa D, nem compara essa montagem aos outros protocolos. Falta descrição independente do implante nessa fratura para conferir a opção inteira; a mera palavra parafusos não prova todos os qualificadores. Comentário e gabarito preservados, sem selo.",
+    "pediatria-1194": "O resumo 24 diferencia lesão do isquiático ANTES da redução (observar) e DURANTE a manobra (explorar), mas não especifica a EXCEÇÃO de explorar o nervo se for necessária redução aberta POR OUTRO MOTIVO, parte da alternativa A, nem fornece prazo de 1 SEMANA ou uso de eletroneuromiografia imediata das demais opções. Falta protocolo independente de exploração/acompanhamento para conferir a recomendação inteira sem ampliar a frase “observar”; comentário preservado sem selo.",
+    "pediatria-1199": "A tabela do resumo 07 sustenta que enxerto vira displasia, prefere haste e menciona cajado de pastor no fêmur proximal. Não fornece, porém, frequência comparativa da DEFORMIDADE na displasia POLIOSTÓTICA para julgar o qualificador “RARAMENTE” da alternativa C, nem desenvolve a distinção biomecânica de COMPARTILHAMENTO DE CARGA expressa em D. A menção a uma deformidade não demonstra sua frequência. Falta contexto quantitativo/biomecânico independente; cobertura parcial não recebe selo.",
+    "pediatria-1201": "O resumo 07 diz que fratura fisária na mielomeningocele IMITA INFECÇÃO e pede imobilização longa sem carga, mas não descreve a combinação específica de LEUCÓCITOS/VHS elevados, ALARGAMENTO FISÁRIO e REAÇÃO PERIOSTEAL do caso, nem a distinção completa com artrite séptica, tumor e Charcot. Não usar a frase genérica para excluir infecção neste quadro clínico. Falta caracterização diagnóstica independente desses sinais e diferenciais; comentário intacto, sem selo.",
+    "pediatria-1202": "O resumo 07 sustenta haste e mobilização precoce em Duchenne e alerta que 1 semana em cadeira pode encerrar a marcha, mas não especifica FISIOTERAPIA INTENSA, atributo da alternativa C, nem seu protocolo/intensidade na fratura femoral do deambulador. Falta descrição independente da reabilitação que permita conferir a opção inteira sem extrapolar mobilização precoce para uma intensidade não declarada. Comentário e gabarito preservados sem selo.",
+    "pediatria-1203": "O corpo independente do resumo 07 lista os nomes de Fränkel, Trümmerfeld, Pelken e o ANEL de Wimberger, mas não define o anel como FINO E DENSO ao redor da epífise, nem caracteriza a linha densa de calcificação provisória, a faixa radiolucente justaepifisária e os esporões metafisários das demais opções. O bloco questoes contém pista, mas não é fonte independente. Falta descrição radiográfica completa dos sinais para conferir todas as alternativas; sem figura no caso, comentário preservado sem selo.",
+    "pediatria-1208": "O resumo 07 informa risco de morte 50 vezes maior com adulto sem parentesco na casa, mas não fornece comparação independente com FAMÍLIA MONOPARENTAL, IRMÃO MAIS VELHO e CRECHE SUPERVISIONADA para estabelecer o ranking “O QUE MAIS AUMENTA” exigido. Não atribuir risco zero nem razões de risco inventadas aos outros contextos. Falta comparação de desfecho e denominadores dos fatores das opções; comentário e gabarito mantidos sem selo.",
+    "pediatria-1209": "O corpo 07 sustenta diferença entre lactente que não anda (42%) e criança que anda (2,6%) e padrão transverso (71%). Não fornece prevalência específica de ABUSO ENTRE 1 E 5 ANOS para conferir a alternativa C (“MAIORIA DOS CASOS”). Proporções separadas por deambulação não determinam essa faixa etária sem composição do grupo. Falta frequência por idade para a afirmação completa; não inferir zero causa acidental antes de 1 ano. Comentário preservado sem selo.",
+    "pediatria-1212": "O resumo 19 associa frouxidão/multidirecional/sinal do sulco à FISIOTERAPIA e reserva capsulorrafia para refratários, mas não descreve FORTALECIMENTO, PROPRIOCEPÇÃO e REEDUCAÇÃO NEUROMUSCULAR DA CINTURA ESCAPULAR da alternativa B, nem o protocolo comparativo de imobilização em rotação externa por 6 semanas. A coincidência com a palavra fisioterapia não confere todos os componentes. Falta programa independente de reabilitação para sustentar a recomendação inteira; comentário intacto sem selo."
+  },
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 19,
+    "lacunasComentariosIntactos": 11,
+    "demaisBytesPreservados": true,
+    "motivosCriacaoConferidos": 19,
+    "ui": "19/19 casos em 390/1440 aprovados, com repetição dos 5 motivos corrigidos: resposta, aula e links exatos. Primeiro exemplo inspecionado visualmente. Nenhum alerta antigo precisou ser removido."
+  },
+  "reconciliacao616": {
+    "pr": 616,
+    "head": "5ff9e11d84641bf982b101d49f3532f06fb78970",
+    "merge": "ab3aa5ab755ae3210a4ea68d724b769cf1b2a01e",
+    "ci": 40747039950,
+    "pages": 40747598218,
+    "publicar": 123027913095,
+    "avulsosIntegrais": 605,
+    "resumosIntegrais": 52,
+    "figuras": 39
+  },
+  "concorrencia": "Preservados PR616 (28 miniaulas/2 lacunas), 615 (18/12), 614 (13/17 e rótulo 2046), 612 (10/20 e 3 rótulos) e 118 comentários concorrentes do PR613. Apenas 19 membros de pediatria.json alterados; demais bytes, fontes, questões, gabaritos e revisão médica intactos.",
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 189,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 795,
+      "pendente-inspecao-imagem": 4,
+      "revisada": 1889
+    }
+  },
+  "continuidade": "Unidade 220 já avaliada em rascunho local, 7 miniaulas e 3 lacunas, sem aplicação nesta entrega:1213/1215/1216/1217/1220/1221/1222 seguros;1214 transferência do coracoide não definida,1218 ponto zero/axilar da técnica,1219 combinação valgo/vetor da diáfise incompleta. Derivar novamente do catálogo e remoto. Tarefa integral aberta."
+}
