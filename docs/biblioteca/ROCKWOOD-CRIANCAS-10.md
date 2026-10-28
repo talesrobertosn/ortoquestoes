@@ -59,7 +59,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 28 | Intra-Articular Injuries of the Knee | 2696 a 2826 | Feito em 28/10/2026: `rockwoodcriancas10-28-joelho-intra-articular`, `pediatria-1300` a `1314` |
 | 29 | Tibia and Fibula Shaft | 2827 a 2957 | Feito em 27/10/2026: `rockwoodcriancas10-29-diafise-tibia`, `pediatria-1137` a `1152` |
 | 30 | Ankle | 2958 a 3099 | Feito em 27/10/2026: `rockwoodcriancas10-30-tornozelo`, `pediatria-1153` a `1167` |
-| 31 | Foot | 3100 a 3352 | A fazer |
+| 31 | Foot | 3100 a 3352 | Feito em 28/10/2026: `rockwoodcriancas10-31-pe`, `pediatria-1330` a `1344` |
 
 **Ordem do Claude:** pelo que mais cai em prova (subtemas com mais questões oficiais): 26, 27, 25, 29, 30, 23, 24, 7,
 19, 20, 21, 22, 11, 12, 28, 31, 8, 6; depois as atualizações da 9ª para a 10ª edição (9, 10, 13 a 18), só com o que
@@ -102,3 +102,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 12 | `pediatria-0712`, `0724`, `0924`, `0930`, `0929`, `0659`, `0539`, `0831`, `0742` | Sem gabarito, sustentadas: `0724`, `0924`, `0930`, `0929`, `0831`, `0742`. Não citadas: `0664` (sinostose; não sustentada), `0754`, `0911`, `1055` (pronação dolorosa), `0925` (imagem). |
 | 28 | `pediatria-0711`, `0700`, `0949`, `0535`, `0624`, `0693`, `0735`, `0824` | `0624` e `0693`: hiperextensão; o capítulo diz valgo com rotação externa. Sem gabarito: `0735` (sustentada), `0824` (o capítulo usa a combinada intra e extra-articular). |
 | 6 | `pediatria-0850`, `0666`, `0827` | Sem gabarito: `0827` (o capítulo aponta o compartimento flexor profundo, não os flexores do carpo). |
+| 31 | `pediatria-0626`, `0596`, `0718`, `0704`, `0582`, `0597` | Sem gabarito: `0718` (o capítulo aponta base do segundo metatarsal com cuboide). Relacionadas: `0518` (SEVER) e `0512` (apófise do quinto). |
