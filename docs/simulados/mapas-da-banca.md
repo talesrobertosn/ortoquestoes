@@ -3941,3 +3941,17 @@ A luxação congênita da cabeça do rádio (várias provas) fica para outro cap
 **Divergências.** TEPOP 2024 (`0954`): "e" no gabarito; o capítulo diz "ou".
 
 **Aproveitamento:** `pediatria-1270` a `pediatria-1284`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.700 caracteres.
+
+## MONTEGGIA na criança, Rockwood and Wilkins 10ª ed., cap. 12
+
+**Recorte.** Busca por MONTEGGIA, BADO, LETTS, ligamento anular e BELL TAWSE em Ortopedia pediátrica, todas as provas.
+A banca cobra o BADO II (TARO 2024 `pediatria-0539`, TARO 2010 `0724`, SBOT-SP `0924`, TARO 2006 `0831`), o III (SBOT-SP `0930`, TARO 2012 `0659`), o IV (SBOT-SP `0929`),
+LETTS (TEOT 2024 `0712`) e BELL TAWSE (TARO 2007 `0742`). Ficam fora: a causa da sinostose (TARO 2012 `0664`, não sustentada), a pronação dolorosa (`0754`, `0911`, `1055`) e a imagem SBOT-SP `0925`.
+
+**Forma.** Enunciados curtos; uma de imagem (SBOT-SP `0925`).
+
+**Lacunas com cara de prova (projeção).** Frequência dos tipos, protocolo pela ulna, linha radiocapitelar e arco ulnar, mecanismo do tipo I, redução fechada do tipo I, anular interposto, nervo radial, crônica versus congênita, reconstrução do crônico.
+
+**Divergências.** Nenhuma frontal; várias oficiais sem gabarito, todas sustentadas.
+
+**Aproveitamento:** `pediatria-1285` a `pediatria-1299`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.612 caracteres.
