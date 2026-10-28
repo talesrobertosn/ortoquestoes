@@ -40,7 +40,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 9 | Distal Radius and Ulna | 634 a 789 | 9ª ed. já tem resumo (`wilkins9-08`); atualizar com a 10ª |
 | 10 | Diaphyseal Radius and Ulna | 790 a 935 | 9ª ed. já tem resumo (`wilkins9-09`); atualizar |
 | 11 | Radial Neck and Olecranon | 936 a 1084 | Feito em 28/10/2026: `rockwoodcriancas10-11-colo-radio-olecrano`, `pediatria-1270` a `1284` |
-| 12 | Monteggia Fracture-Dislocation | 1085 a 1219 | A fazer |
+| 12 | Monteggia Fracture-Dislocation | 1085 a 1219 | Feito em 28/10/2026: `rockwoodcriancas10-12-monteggia`, `pediatria-1285` a `1299` |
 | 13 | Evaluation of the Injured Pediatric Elbow | 1220 a 1271 | 9ª ed. já tem resumo; atualizar |
 | 14 | Supracondylar Fractures | 1272 a 1425 | 9ª ed. já tem resumo; atualizar |
 | 15 | T-Condylar Fractures | 1426 a 1475 | 9ª ed. já tem resumo; atualizar |
@@ -99,3 +99,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 21 | `pediatria-0587`, `0851`, `0717`, `0638`, `1080`, `0605`, `0770`, `0576` | `1080` (ENARE 2023): POWERS; o capítulo usa o CCI. `0638` (TARO 2019): o nível C3 não é citado. Sem gabarito: `0717` e `0770` (sustentadas). SCIWORA (`0755`, `0833`) fora do capítulo. |
 | 22 | `pediatria-0913`, `coluna-0302`, `pediatria-0627`, `coluna-0227`, `coluna-0312`, `pediatria-0833` | `coluna-0227` e `coluna-0312`: o capítulo sustenta só a gravidade abaixo de 8 anos e o estiramento. `pediatria-0627`: sexo e segmento não citados. Sem gabarito: `pediatria-0833`. Não citadas: `coluna-0179` (tratamento da SCIWORA) e `pediatria-0755`. |
 | 11 | `pediatria-0640`, `0748`, `0926`, `0815`, `0564`, `0841`, `0611`, `0659`, `0954` | `0954` (TEPOP 2024): o capítulo diz mais de 4 mm ou articulação incongruente. Sem gabarito: `0748`, `0926`, `0815`, `0841` (sustentadas). Não citada: `0934` (imagem da técnica). |
+| 12 | `pediatria-0712`, `0724`, `0924`, `0930`, `0929`, `0659`, `0539`, `0831`, `0742` | Sem gabarito, sustentadas: `0724`, `0924`, `0930`, `0929`, `0831`, `0742`. Não citadas: `0664` (sinostose; não sustentada), `0754`, `0911`, `1055` (pronação dolorosa), `0925` (imagem). |
