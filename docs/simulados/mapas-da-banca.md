@@ -3896,3 +3896,18 @@ NEER e CRAIG tipo IV, escápula e maus-tratos, indicações cirúrgicas da gleno
 **Divergências.** TARO 2023 (`0550`): exposição como indicação mais frequente; o capítulo diz desvio posterior significativo.
 
 **Aproveitamento:** `pediatria-1225` a `pediatria-1239`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.855 caracteres.
+
+## Coluna cervical na criança, Rockwood and Wilkins 10ª ed., cap. 21
+
+**Recorte.** Busca por cervical, odontoide, atlas, SWISCHUK, JEFFERSON, enforcado e luxação atlanto-occipital em Ortopedia pediátrica e Coluna, todas as provas.
+A banca cobra a anatomia abaixo de 8 anos (TARO 2021 `pediatria-0587`), o odontoide como SALTER-HARRIS I (TARO 2016 `0605`), a explosão por carga axial (TEOT 2023 `0576`),
+a linha de SWISCHUK (TEOT 2021 `0851`, TARO 2020 `0717`), JEFFERSON e transverso (TARO 2009 `0770`), variantes normais (TARO 2019 `0638`) e a luxação occipitocervical (ENARE 2023 `1080`).
+SCIWORA (TARO 2008 `0755`, TARO 2006 `0833`) não é discutida neste capítulo.
+
+**Forma.** Enunciados curtos, sem imagem.
+
+**Lacunas com cara de prova (projeção).** Prancha da criança, NEXUS, CCI, artrodese occipital a C2, DICKMAN, enforcado e maus-tratos, SLIC, halo, metilprednisolona, mecanismos por idade.
+
+**Divergências.** ENARE 2023 (`1080`): razão de POWERS; o capítulo a considera ultrapassada na criança e usa o CCI.
+
+**Aproveitamento:** `pediatria-1240` a `pediatria-1254`, 15 questões, gabarito A4/B3/C4/D4, mediana de 2.767 caracteres.
