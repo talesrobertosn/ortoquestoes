@@ -3955,3 +3955,17 @@ LETTS (TEOT 2024 `0712`) e BELL TAWSE (TARO 2007 `0742`). Ficam fora: a causa da
 **Divergências.** Nenhuma frontal; várias oficiais sem gabarito, todas sustentadas.
 
 **Aproveitamento:** `pediatria-1285` a `pediatria-1299`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.612 caracteres.
+
+## Joelho intra-articular na criança, Rockwood and Wilkins 10ª ed., cap. 28
+
+**Recorte.** Busca por espinha tibial, eminência intercondilar, MEYERS e MCKEEVER, luva patelar, osteocondral, luxação da patela, LCA e luxação do joelho em Ortopedia pediátrica e Joelho, todas as provas.
+A banca cobra quase só a espinha tibial: classificação (TARO 2024 `pediatria-0535`, imagem), mecanismo (TARO 2018 `0624`, TARO 2014 `0693`), perda da extensão
+(TEOT 2024 `0711`, TEOT 2022 `0700`, TARO 2007 `0735`) e lesão associada (TEPOP 2024 `0949`); e o LCA no imaturo (TARO 2006 `0824`).
+
+**Forma.** Enunciados curtos; uma de imagem (`0535`).
+
+**Lacunas com cara de prova (projeção).** Encarceramento do menisco, tratamento por tipo, parafuso ou sutura, artrofibrose, luva patelar, osteocondral, luxação da patela, LPFM no imaturo, colaterais e LCP, luxação do joelho.
+
+**Divergências.** Mecanismo da espinha tibial: TARO 2018 e TARO 2014 dão hiperextensão; o capítulo, valgo com rotação externa.
+
+**Aproveitamento:** `pediatria-1300` a `pediatria-1314`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.753 caracteres.
