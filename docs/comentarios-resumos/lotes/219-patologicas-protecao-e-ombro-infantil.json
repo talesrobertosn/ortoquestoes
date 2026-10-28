@@ -1,0 +1,219 @@
+{
+  "pediatria-1204": {
+    "questaoSha256": "fd8634e70913e0dce43d62cbd2d591d77c8ea0a37049bc3ad1c0f53f0304ce7d",
+    "comentarioAnteriorSha256": "cb49c59faff1de13e5e977a43301a319d1e5424e5a0a7e3943e84e4b868cc06d",
+    "comentario": {
+      "conceito": "A pergunta pede a exceção entre as fraturas de **alta especificidade de Kleinman**. A **clavícula** pertence ao grupo de **baixa especificidade**, alternativa A; isso não significa que uma fratura clavicular exclua maus-tratos (Rockwood and Wilkins, 10ª edição, capítulo 7, reconhecimento).\n\nA tabela de alta especificidade inclui **lesão metafisária clássica, costela posterior, escápula, processo espinhoso e esterno**. Especificidade e frequência são conceitos diferentes: a lesão metafisária clássica é muito sugestiva, mas o resumo não a apresenta como a fratura mais comum.\n\nO capítulo relaciona a lesão metafisária clássica à esponjosa primária, logo acima da zona de calcificação provisória, por sacudidas ou tração. Nas costelas posteriores, descreve a alavanca sobre o processo transverso. Esses mecanismos ajudam a entender por que a localização específica pesa mais que o nome genérico de um osso quebrado.\n\n**Na prova:** classificar o achado sem convertê-lo em diagnóstico isolado. Clavícula e diáfise de osso longo são pouco específicas; a avaliação precisa integrar história, mobilidade da criança e outras lesões.\n\n**Por que esta questão foi criada.** É gêmea de muitas oficiais: SBOT-SP (`pediatria-0097`) e TEOT 2022 (`pediatria-0468`), escápula; TARO 2009 (`pediatria-0160`, `pediatria-0481`), escápula, esterno e metafisárias; TEOT 2023 (`pediatria-0173`), processo espinhoso; TEPOP 2024 (`pediatria-0362`), costela posterior, escápula e canto; TARO 2025 (`pediatria-0383`), alça de balde e costelas posteriores. Aqui a pergunta é ao contrário. Depois, faça as oficiais.",
+      "correta": "Alternativa A. A clavícula está na linha de baixa especificidade da tabela, enquanto as outras três opções pertencem ao grupo de alta. A resposta é sobre a classificação, não sobre impossibilidade de abuso nesse osso.",
+      "incorretas": {
+        "B": "A lesão metafisária clássica, de canto ou alça de balde, está no grupo de alta especificidade. O resumo a descreve logo acima da zona de calcificação provisória e a relaciona a tração ou sacudidas; não é a exceção solicitada.",
+        "C": "A costela posterior integra o grupo de alta especificidade. O local posterior e o mecanismo de alavanca junto ao processo transverso são informações relevantes; não se deve reduzir o achado a qualquer dor inespecífica no tórax.",
+        "D": "O processo espinhoso é expressamente de alta especificidade na tabela. Ele não deve ser confundido com o corpo vertebral, que aparece na categoria moderada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Reconhecimento"
+        ],
+        "blocos": [
+          "reconhecimento-ce072879",
+          "reconhecimento-59a1f669"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "18b1f7946c2e424781a7fc8150189687acd230bfb629f72ab2a5fa391c9bbe89"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1205": {
+    "questaoSha256": "f496ec5e9891af02faa1b2a6b70aaf78b068d479ec80057ad66330963df05465",
+    "comentarioAnteriorSha256": "1ad170c18b7945c04c90eb5aea6f4e59c638e3347e1485482623e6f07be80a58",
+    "comentario": {
+      "conceito": "Na suspeita de maus-tratos, o resumo indica **inventário esquelético abaixo de 2 anos**, repetido em cerca de **2 semanas**, e estende a avaliação aos **irmãos menores de 2 anos**. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 7, inventário e conduta).\n\nO inventário é feito com **incidências separadas**, incluindo oblíquas do tórax e perfil de toda a coluna; não com uma única imagem de corpo inteiro. A finalidade é procurar lesões que não foram identificadas apenas pelo local da queixa inicial.\n\nO capítulo informa que repetir em 2 semanas identificou 27% mais fraturas e que a avaliação de irmãos pequenos teve 11,9% de exames positivos. São resultados dos grupos apresentados, não garantia de achados em toda família. Eles explicam por que a recomendação não se limita a uma radiografia única do osso já fraturado.\n\n**Na prova:** abaixo de 2 anos, inventário; em 2 semanas, repetição; irmãos menores também entram. Entre 2 e 5 anos a decisão é individualizada, e acima de 5 o resumo considera o exame pouco útil.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada às oficiais sobre maus-tratos (TARO 2011 `pediatria-0422`, TARO 2015 `pediatria-0066`). O inventário é a ferramenta que o ortopedista precisa saber pedir.",
+      "correta": "Alternativa B. Reúne faixa etária, repetição e avaliação de irmãos conforme o capítulo. As três partes importam: uma primeira avaliação negativa não substitui automaticamente a reavaliação proposta.",
+      "incorretas": {
+        "A": "O babygrama é explicitamente desaconselhado. O resumo pede incidências separadas e projeções específicas, em vez de uma única radiografia ampla que trate toda a avaliação como uma só imagem.",
+        "C": "O maior rendimento não é atribuído aos maiores de 5 anos. O capítulo considera o inventário pouco útil nessa faixa, individualiza de 2 a 5 e o indica nos menores de 2 com suspeita.",
+        "D": "As oblíquas do tórax fazem parte das incidências citadas. Dispensá-las contradiz o protocolo de procura de lesões, que inclui a avaliação dirigida das costelas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Inventário esquelético e conduta."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Inventário esquelético e conduta"
+        ],
+        "blocos": [
+          "inventario-esqueletico-e-conduta-3b98f546"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "1712fec2ea530ed4f95516e3bdd6567bd4bee286d7ebec42468ca999614fd4be"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1206": {
+    "questaoSha256": "0392493d2d1abad6bba479c16e0fa2b09090c709823aef26223254506632e1b9",
+    "comentarioAnteriorSha256": "137ee35804b9f82dfb2808398d1863ebc2f0dc54c9e59af5807483a2e506f759",
+    "comentario": {
+      "conceito": "Uma **equimose na orelha de lactente que ainda não se desloca** é o achado de maior alerta entre as opções, alternativa C. O resumo enfatiza a combinação de **pouca mobilidade e localização fora das proeminências habituais**, incluindo orelhas, face, nádegas e abdome (Rockwood and Wilkins, 10ª edição, capítulo 7, reconhecimento).\n\nNos menores de 5 meses, o capítulo informa equimose acidental em apenas 1,3%. Esse dado ajuda a perceber por que não se deve atribuir automaticamente uma lesão nesse lactente às quedas comuns da criança que já anda. A interpretação depende do desenvolvimento real e de uma história compatível.\n\nIsso não torna toda equimose de uma criança móvel inocente, nem confirma a causa de uma lesão apenas pelo lugar. O resumo recomenda avaliar quem presenciou, quando ocorreu e eventual demora em buscar atendimento, além de documentar partes moles antes de gessar.\n\n**Na prova:** comparar o que a criança consegue fazer com a topografia e o relato. A orelha de um lactente de 4 meses sem deslocamento combina duas características de alerta; as outras opções trazem crianças móveis e locais ou mecanismos mais compatíveis com sua atividade.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre o achado mais comum dos maus-tratos, ligada ao TARO 2020 (`pediatria-0010`), que cobra o tipo mais frequente de maus-tratos.",
+      "correta": "Alternativa C. Reúne não deambulação e equimose auricular, ambos destacados no resumo. É a associação mais sugestiva do conjunto, sem transformar um único sinal em comprovação definitiva de autoria ou mecanismo.",
+      "incorretas": {
+        "A": "Canela e testa numa criança que já anda têm um contexto de mobilidade diferente do lactente imóvel. Isso não exclui abuso, mas o par idade/topografia não reúne os dois alertas específicos da equimose auricular no bebê sem deslocamento.",
+        "B": "Equimoses nos joelhos de criança escolar precisam ser interpretadas com história e exame completo. Apenas multiplicidade nesses locais não equivale à combinação de orelha e não mobilidade que o capítulo destaca como mais preocupante entre os casos oferecidos.",
+        "D": "A escoriação está ligada no enunciado a um mecanismo possível para uma criança de 7 anos que anda de bicicleta. O relato ainda precisa ser coerente, mas essa apresentação não tem o mesmo descompasso entre lesão, local e desenvolvimento do lactente da alternativa correta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Reconhecimento"
+        ],
+        "blocos": [
+          "reconhecimento-a471746c"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "3c23dc6bcb7e170220de35b14fa7fe65a3fab96279e08eb9b0787172c8034187"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1207": {
+    "questaoSha256": "fa38aebde7ccec4d5da8c124c1ec7a7e1485fbc270d5baf799e42e9dd2738dd7",
+    "comentarioAnteriorSha256": "a9230e9e0d11a196247fe98da8c67672b794ba43e7822308305724c92a6bfbdd",
+    "comentario": {
+      "conceito": "O padrão que mais sugere **imersão intencional** é **linha d’água nítida, profundidade uniforme e poupança da prega glútea e das fossas poplíteas**, alternativa D. É o conjunto descrito no resumo, não apenas a existência de uma queimadura por água quente (Rockwood and Wilkins, 10ª edição, capítulo 7, reconhecimento).\n\nA avaliação precisa observar **limites, uniformidade e áreas poupadas**. Uma descrição genérica de “escaldadura” não informa essas características. O padrão apresentado na alternativa correta reúne pistas que o capítulo usa para levantar suspeita e orientar a análise da história.\n\nReconhecer esse conjunto não substitui examinar toda a criança nem permite presumir que toda outra forma de queimadura seja acidental. O resumo recomenda documentar as lesões de partes moles e, quando há suspeita, organizar ambiente seguro e avaliação pela equipe de proteção.\n\n**Na prova:** escolher o padrão completo de imersão do capítulo. Respingos, margens variáveis ou apenas uma região atingida não reproduzem, sozinhos, a combinação de limite nítido, uniformidade e poupança de pregas.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra os padrões dos maus-tratos, e as queimaduras têm desenhos clássicos que falam por si.",
+      "correta": "Alternativa D. Conserva as três características descritas para a imersão intencional: linha nítida, profundidade uniforme e preservação de pregas/áreas indicadas. O julgamento depende do conjunto e do contexto clínico.",
+      "incorretas": {
+        "A": "A opção descreve variação de forma e profundidade com respingos, não a distribuição uniforme com linha d’água e áreas poupadas que o resumo salienta. Isso a diferencia do padrão solicitado, sem concluir que qualquer lesão com respingos seja automaticamente acidental.",
+        "B": "Profundidades variadas e margens indistintas contrastam com profundidade uniforme e limite nítido da descrição de imersão intencional. A oposição entre esses elementos é o motivo específico para não escolher a alternativa.",
+        "C": "Localizar a queimadura no tronco e membro superior não fornece os sinais morfológicos pedidos. A fonte destaca limite, uniformidade e poupança de pregas; apenas dizer a região queimada não reproduz esse padrão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento; Inventário esquelético e conduta."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Reconhecimento",
+          "Inventário esquelético e conduta"
+        ],
+        "blocos": [
+          "reconhecimento-a471746c",
+          "inventario-esqueletico-e-conduta-2bcdc846"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "026db7fc60982a11827c8057da66b5202ebf4ce0b8fc52f6e01e543206f17680"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1210": {
+    "questaoSha256": "c431a91e5ecb5aa6c4821aef07ab415ba61b6482530255b29da1439fbb2adc57",
+    "comentarioAnteriorSha256": "3d063fc12d81566728718bc3cebedc21c0f2b3ae5ad25b26f7646431140ba32e",
+    "comentario": {
+      "conceito": "Diante da **suspeita de maus-tratos**, o resumo recomenda **internar, acionar a equipe de proteção e notificar a suspeita**, alternativa C. A proteção inicial não depende de uma confissão familiar ou de certeza final já estabelecida (Rockwood and Wilkins, 10ª edição, capítulo 7, inventário e conduta).\n\nA internação é apresentada como forma de garantir **ambiente seguro e avaliação social**, junto do cuidado ortopédico. Tratar a fratura e devolver a criança ao mesmo contexto sem organizar proteção deixa incompleta a resposta ao problema que motivou a suspeita.\n\nO capítulo relata risco de nova lesão grave e de morte quando uma criança maltratada é devolvida sem diagnóstico. Esses dados reforçam a necessidade de condução organizada; não autorizam, por outro lado, dispensar o diagnóstico diferencial. A fonte inclui doenças metabólicas, infecções e outras condições e ressalta que doença óssea não exclui abuso concomitante.\n\n**Na prova:** suspeita é suficiente para iniciar o fluxo de proteção descrito. Documentação, equipe e notificação integram a conduta, sem esperar que a investigação esteja encerrada para garantir segurança.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A conduta diante da suspeita é cobrada em provas de ortopedia pediátrica e é parte essencial da proteção da criança.",
+      "correta": "Alternativa C. Reúne cuidado clínico, ambiente seguro e o acionamento da proteção conforme o resumo. Notificar a suspeita e investigar os diferenciais são partes complementares, não etapas que precisem se excluir.",
+      "incorretas": {
+        "A": "A fonte não recomenda alta apenas para evitar constrangimento enquanto falta certeza. O risco que motivou a suspeita exige organização de um ambiente seguro e avaliação, além de tratar e marcar retorno para a fratura.",
+        "B": "Confissão não é o critério do capítulo para notificar. Esperá-la desloca a conduta da suspeita clínica para uma condição que não faz parte do roteiro de proteção apresentado.",
+        "D": "Solicitar exames ambulatoriais não resolve, por si, a segurança imediata discutida. O resumo orienta internação e equipe de proteção na suspeita, em vez de substituir esse cuidado por retorno domiciliar sem a estrutura recomendada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Inventário esquelético e conduta; Reconhecimento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Inventário esquelético e conduta",
+          "Reconhecimento"
+        ],
+        "blocos": [
+          "inventario-esqueletico-e-conduta-2bcdc846",
+          "inventario-esqueletico-e-conduta-3b98f546",
+          "reconhecimento-a471746c"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "46d5f4d2f0ac5ca577fd8ded1a268e545ff6eda3beede81ae48a8f5f5768c8f6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1211": {
+    "questaoSha256": "f83b0b65b964795bc21d28a6d31826465ae842db66f43091d4fc84caea4d020d",
+    "comentarioAnteriorSha256": "a721b2ade87ac7aa02e48fcaa7f4331a08c445178476f7f8ea204b43bb9dbe64",
+    "comentario": {
+      "conceito": "A recidiva após tratamento **não operatório da luxação anterior traumática do adolescente** é de cerca de **70%**, alternativa A. O resumo apresenta 71% na revisão de Longo e usa 70% como aproximação (Rockwood and Wilkins, 10ª edição, capítulo 19, instabilidade do ombro).\n\nO jogador de rúgbi tem um contexto de esporte de contato, que a fonte relaciona a maior recorrência, junto de arremesso e lesão óssea. O número informado é de um grupo de adolescentes, não uma previsão exata para esse indivíduo. Ele explica por que a primeira luxação merece discutir risco de instabilidade futura, mesmo após uma redução sem intercorrências.\n\nÉ preciso separar os **grupos de tratamento**. O resumo informa recidiva de 5–25% após Bankart artroscópico, diferente da estimativa sem cirurgia. Perda óssea glenoidal, Hill-Sachs fora do trilho ou falha do Bankart mudam a discussão para Latarjet; o caso não demonstra essas lesões apenas por ser esportista.\n\n**Na prova:** primeiro conferir se a pergunta é anterior traumática no adolescente e se o tratamento é não operatório. Só então usar cerca de 70%, sem importar os números pós-estabilização para o grupo conservador.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A instabilidade do ombro do adolescente é cada vez mais frequente, e o número da recidiva é o que guia a conversa com a família e a indicação cirúrgica.",
+      "correta": "Alternativa A. Arredonda os 71% citados por Longo para cerca de 70%. O dado pertence ao cenário não operatório do adolescente, que corresponde ao enunciado.",
+      "incorretas": {
+        "B": "10% é muito menor que a estimativa não operatória fornecida. Números baixos não devem ser escolhidos apenas porque a redução inicial foi simples; sucesso da redução e risco de recidiva futura são desfechos diferentes.",
+        "C": "25% está no extremo da faixa de recidiva pós-Bankart apresentada no resumo, não representa a estimativa de 70% sem cirurgia. A alternativa facilita confundir tratamentos diferentes.",
+        "D": "5% também aparece no limite inferior dos resultados após Bankart, e não como risco geral do adolescente tratado sem cirurgia. O histórico de uma primeira redução sem complicações não demonstra que o risco futuro seja esse."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Instabilidade do ombro."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-19-ombro-umero",
+        "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+        "secoes": [
+          "Instabilidade do ombro"
+        ],
+        "blocos": [
+          "instabilidade-do-ombro-3498f110",
+          "instabilidade-do-ombro-d8c2cceb"
+        ],
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+        "trechosSha256": "62ae67c5910b5d6b20e22a689d131c4b376e5a6720ffb76d83019c75452f6f7a"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
