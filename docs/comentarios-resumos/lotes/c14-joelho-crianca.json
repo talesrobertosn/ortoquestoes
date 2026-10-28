@@ -1,0 +1,298 @@
+{
+ "pediatria-0711": {
+  "questaoSha256": "065923befaeb13a99e2e0b389a3d71af3b1241ec7b1e4715ad330a86eec17424",
+  "comentarioAnteriorSha256": "42a61824070671931244c0b543a1c5aeb5cef098e26de9e632bb21ffcce4fe91",
+  "comentario": {
+   "conceito": "A fratura da espinha tibial é o equivalente infantil da ruptura do LCA: em vez de o ligamento romper, ele arranca o pedaço de osso onde se insere.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 28, de Kramer e Kocher) descreve.** A fratura da espinha tibial é a **avulsão condroepifisária do LCA**, na espinha anteromedial, típica dos **11 a 12 anos**. O osso imaturo é **mais fraco que o ligamento**: a mesma força que romperia o LCA do adulto arranca o osso onde ele se insere. Carga lenta tende a arrancar a espinha; carga rápida, a romper o ligamento; incisura estreita predispõe.\n\n**Onde está o prejuízo.** O fragmento fica bem no teto da incisura intercondilar. Se consolida **elevado** (consolidação viciosa), ele bate contra o fêmur no fim da extensão e cria um **bloqueio mecânico**: o joelho não estende por completo. É o maior prejuízo funcional que o capítulo aponta. A frouxidão do LCA também é comum (Lachman positivo em 51% a 87%), mas **sem instabilidade sintomática** na maioria.\n\n**Como se evita.** Reduzindo bem: tipo I em **extensão completa**; tipo II, tenta-se reduzir em extensão; tipo III, cirurgia com leve hiper-redução. A artrofibrose, a complicação mais comum, também tira extensão; mobilizar cedo ajuda.\n\n**Na prova:** espinha tibial = maior prejuízo é a **perda da extensão**; a frouxidão residual raramente vira instabilidade.\n\nNo resumo de joelho intra-articular da criança, a seção da espinha tibial traz as complicações.",
+   "correta": "**D: perda da extensão total.** O fragmento consolidado elevado bloqueia o fim da extensão; o capítulo aponta essa perda como o principal prejuízo, enquanto a frouxidão quase nunca dá instabilidade.",
+   "incorretas": {
+    "A": "**Estalido não está entre as complicações relevantes do capítulo.**",
+    "B": "**Há frouxidão residual (Lachman positivo em 51% a 87%), mas sem instabilidade sintomática** na maioria. Não é o maior prejuízo.",
+    "C": "**Derrame de repetição não é a sequela típica.** O problema funcional é mecânico, no fim da extensão."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+    "titulo": "Lesões intra-articulares do joelho na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+    "secoes": [
+     "Fratura da espinha tibial"
+    ],
+    "blocos": [
+     "fratura-da-espinha-tibial-f7ee225d",
+     "fratura-da-espinha-tibial-c280bbe9",
+     "fratura-da-espinha-tibial-c33d5a19"
+    ],
+    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+    "trechosSha256": "096af90add0db67dbceedf232268c426d2ef023f42a18a3f0d3791e8b4a5ac27"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0700": {
+  "questaoSha256": "e37f0d131d05b31b348aef0b93a531acf2ab89c66b5e4e986d1352923f98449f",
+  "comentarioAnteriorSha256": "b34ebdcc5d57eb293a8c6e00df31f9a163ff25efb741e6a44dc8a4798c2442b1",
+  "comentario": {
+   "conceito": "Depois de uma fratura da espinha tibial, duas queixas aparecem com frequência: o joelho fica um pouco frouxo e não estende por completo.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 28, de Kramer e Kocher) descreve.** A fratura da espinha tibial é a **avulsão condroepifisária do LCA**, na espinha anteromedial, típica dos **11 a 12 anos**. O osso imaturo é **mais fraco que o ligamento**: a mesma força que romperia o LCA do adulto arranca o osso onde ele se insere. Carga lenta tende a arrancar a espinha; carga rápida, a romper o ligamento; incisura estreita predispõe.\n\n**As complicações do capítulo.**\n- **Artrofibrose:** a mais comum, em 10% dos operados; 78% dos casos graves ocorreram em quem ficou imobilizado sem movimento. Rouba sobretudo a extensão.\n- **Consolidação viciosa com bloqueio da extensão:** o fragmento elevado bate no fêmur.\n- **Frouxidão do LCA:** Lachman positivo em 51% a 87%, quase sempre sem instabilidade sintomática; ruptura tardia do LCA em 10% a 19%.\n- Pseudartrose e distúrbio de crescimento, mais raros.\n\n**Na prova:** espinha tibial = frouxidão residual + perda da **extensão**.\n\nO resumo de joelho intra-articular da criança traz as complicações na seção da espinha tibial.",
+   "correta": "**B: extensão.** A perda de mobilidade na fratura da espinha tibial é da extensão, pelo bloqueio do fragmento elevado e pela artrofibrose.",
+   "incorretas": {
+    "A": "**A flexão pode sofrer com a artrofibrose, mas o capítulo destaca a perda da extensão** como o prejuízo típico.",
+    "C": "**A rotação interna não é o movimento perdido.** O fragmento bloqueia o fim da extensão, no plano sagital.",
+    "D": "**A rotação externa também não.** As complicações descritas são de extensão e de frouxidão."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+    "titulo": "Lesões intra-articulares do joelho na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+    "secoes": [
+     "Fratura da espinha tibial"
+    ],
+    "blocos": [
+     "fratura-da-espinha-tibial-f7ee225d",
+     "fratura-da-espinha-tibial-c280bbe9",
+     "fratura-da-espinha-tibial-c33d5a19"
+    ],
+    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+    "trechosSha256": "096af90add0db67dbceedf232268c426d2ef023f42a18a3f0d3791e8b4a5ac27"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0949": {
+  "questaoSha256": "076743d864b07368d78156104562b4315fe5955ec7bc90cd9d961d9aedc73629",
+  "comentarioAnteriorSha256": "d44e343ee2fdde863249a28194077eda3cf99328b621258c72bf05b74838be51",
+  "comentario": {
+   "conceito": "A fratura da espinha tibial nasce da mesma torção que, no adulto, rompe o LCA e lesa os meniscos. Por isso as lesões que a acompanham são as mesmas da entorse grave.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 28, de Kramer e Kocher) descreve.** A fratura da espinha tibial é a **avulsão condroepifisária do LCA**, na espinha anteromedial, típica dos **11 a 12 anos**. O osso imaturo é **mais fraco que o ligamento**: a mesma força que romperia o LCA do adulto arranca o osso onde ele se insere. Carga lenta tende a arrancar a espinha; carga rápida, a romper o ligamento; incisura estreita predispõe.\n\n**As lesões associadas.** O capítulo dá a lesão **meniscal** como a mais comum: **37%** numa série prospectiva, **90% no menisco lateral**, mais nos maiores. A lesão condral é rara. Além disso, partes moles podem se **encarcerar** sob o fragmento e impedir a redução: o **corno anterior do menisco medial** e o ligamento intermeniscal, em 26% dos tipos II e 65% dos III (Kocher).\n\n**Na prova:** espinha tibial = lesão associada mais comum é a do **menisco** (lateral); o encarcerado é o **medial**.\n\nO resumo de joelho intra-articular da criança traz esses números na seção da espinha tibial.",
+   "correta": "**A: lesão meniscal.** O capítulo encontrou lesão de menisco em 37% numa série prospectiva, quase sempre no lateral.",
+   "incorretas": {
+    "B": "**O colateral lateral não aparece entre as associadas típicas.** A torção da espinha tibial lesa sobretudo o menisco.",
+    "C": "**O LCP é outro ligamento, de outro mecanismo.** A espinha tibial é a inserção do LCA.",
+    "D": "**Fratura supracondiliana do fêmur não acompanha essa lesão.** As associadas são intra-articulares: menisco e, raramente, cartilagem."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+    "titulo": "Lesões intra-articulares do joelho na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+    "secoes": [
+     "Fratura da espinha tibial"
+    ],
+    "blocos": [
+     "fratura-da-espinha-tibial-4d91936f",
+     "fratura-da-espinha-tibial-c33d5a19"
+    ],
+    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+    "trechosSha256": "f04a1532e11cb2fc8ab99cc5b1ff441c5d4bd01077cbed9edb97863e57ffbc89"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0535": {
+  "questaoSha256": "909d0f5779bf64bf39fba9ce3214bb873ac587b635c87a54c4a8af52d4f7b434",
+  "comentarioAnteriorSha256": "71040a063eee161aee0746e53182a50994cbf526f783ff3ebbb316d4ce0ac3f5",
+  "comentario": {
+   "conceito": "**O que a figura mostra.** A tíbia proximal da criança, de perfil, com a fise desenhada. O fragmento da espinha tibial está **levantado na frente**, mas continua **preso atrás**, como uma tampa entreaberta presa por uma dobradiça.\n\n**A classificação de Meyers e McKeever**, no perfil, segundo o Rockwood and Wilkins (10ª ed., cap. 28):\n- **I:** desvio mínimo;\n- **II:** o terço ou a metade **anterior elevado**, com **dobradiça posterior**;\n- **III:** separação **completa**, às vezes com rotação;\n- **IV:** cominuição (acrescentado por Zaricznyj).\n\nA figura tem a dobradiça posterior intacta: é o **tipo II**.\n\n**O que muda no tratamento.** Tipo I: gesso ou órtese em extensão completa por 6 semanas. **Tipo II: tentar reduzir em extensão**; só metade reduz, muitas vezes porque o corno anterior do menisco medial ou o intermeniscal se encarceram sob o fragmento (26% dos II). Se não reduz, cirurgia. Tipo III: cirurgia, com parafuso epifisário ou sutura, sem cruzar a fise.\n\n**Na prova:** espinha tibial levantada na frente com **dobradiça posterior** = **Meyers e McKeever II**.\n\nO resumo de joelho intra-articular da criança traz a classificação na seção da espinha tibial.",
+   "correta": "**B: II.** A figura mostra a porção anterior do fragmento elevada com a dobradiça posterior preservada, a definição do tipo II.",
+   "incorretas": {
+    "A": "**O tipo I tem desvio mínimo**, sem a elevação anterior da figura.",
+    "C": "**O tipo III é a separação completa**, sem dobradiça. Na figura o fragmento continua preso atrás.",
+    "D": "**O tipo IV é cominuto.** A figura mostra um fragmento único."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+    "titulo": "Lesões intra-articulares do joelho na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+    "secoes": [
+     "Fratura da espinha tibial"
+    ],
+    "blocos": [
+     "fratura-da-espinha-tibial-c280bbe9",
+     "fratura-da-espinha-tibial-4d91936f",
+     "fratura-da-espinha-tibial-c33d5a19"
+    ],
+    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+    "trechosSha256": "29cfd6019d5ada74baf4f1da2ed03e621acfe060e2681715d45c15e46d4d3297"
+   }
+  ],
+  "imagensConferidas": [
+   "pediatria/pediatria-0535-1.jpeg"
+  ]
+ },
+ "pediatria-0624": {
+  "questaoSha256": "ab7090c2b032e7cd40c5597fd9c9fffffea75eae8463ebdfe4b05f8f24fe9d37",
+  "comentarioAnteriorSha256": "d493199321f7555c7962843dd88663009cda05655a1fde8afc0bd18d4ba75be5",
+  "comentario": {
+   "alerta": "Gabarito oficial C (hiperextensão e rotação lateral) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 28, aponta o valgo forçado com rotação externa da tíbia como o mecanismo mais comum e cita a hiperextensão entre os possíveis. A alternativa C coincide com o capítulo na rotação externa; a hiperextensão é mecanismo aceito, mas não o mais comum.",
+   "conceito": "A fratura da espinha tibial é a avulsão do LCA no osso imaturo, então os mecanismos são os mesmos que rompem o LCA do adulto.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 28, de Kramer e Kocher) descreve.** A fratura da espinha tibial é a **avulsão condroepifisária do LCA**, na espinha anteromedial, típica dos **11 a 12 anos**. O osso imaturo é **mais fraco que o ligamento**: a mesma força que romperia o LCA do adulto arranca o osso onde ele se insere. Carga lenta tende a arrancar a espinha; carga rápida, a romper o ligamento; incisura estreita predispõe.\n\n**Os mecanismos.** O capítulo aponta como **mais comum o valgo forçado com rotação externa da tíbia**, e cita também hiperflexão, **hiperextensão** e rotação interna. A banca escolheu **hiperextensão com rotação lateral**: a rotação lateral (externa) coincide com a do capítulo, e a hiperextensão é um dos mecanismos aceitos. Mantemos o gabarito oficial e registramos que, para o livro, o valgo é o componente mais comum.\n\n**Por que essas forças.** Valgo, rotação externa e hiperextensão tensionam o LCA. Na criança, o osso cede antes do ligamento.\n\n**Na prova:** a banca deu **hiperextensão e rotação lateral**; o capítulo destaca **valgo + rotação externa**. A rotação externa é o ponto comum.\n\nNo resumo de joelho intra-articular da criança, a seção da espinha tibial traz o mecanismo.",
+   "correta": "**C: hiperextensão e rotação lateral do joelho (gabarito oficial).** A rotação externa coincide com o capítulo e a hiperextensão é um mecanismo aceito, embora o mais comum, pelo livro, seja o valgo com rotação externa; veja o alerta.",
+   "incorretas": {
+    "A": "**Flexão com rotação lateral não está entre os mecanismos citados** como os mais frequentes; o capítulo cita a hiperflexão, mas como mecanismo possível, não o principal.",
+    "B": "**Flexão com rotação medial também não é o padrão descrito.** A rotação interna aparece no capítulo, mas não como a mais comum.",
+    "D": "**Hiperextensão com rotação medial acerta só a hiperextensão.** O capítulo associa o mecanismo mais comum à rotação externa."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+    "titulo": "Lesões intra-articulares do joelho na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+    "secoes": [
+     "Fratura da espinha tibial"
+    ],
+    "blocos": [
+     "fratura-da-espinha-tibial-4d91936f",
+     "fratura-da-espinha-tibial-c33d5a19"
+    ],
+    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+    "trechosSha256": "f04a1532e11cb2fc8ab99cc5b1ff441c5d4bd01077cbed9edb97863e57ffbc89"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0693": {
+  "questaoSha256": "ca64f4de3c307f9af1fb94e2134ea229f13c30f46706d850206127225c143381",
+  "comentarioAnteriorSha256": "1316a69b71a54d9d65f6b9e1a6ea8845a69d19c52d412322132a5e768ed9f078",
+  "comentario": {
+   "alerta": "Gabarito oficial B (hiperextensão) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 28, aponta o valgo forçado com rotação externa (lateral) da tíbia como o mecanismo mais comum (alternativa D) e cita a hiperextensão como mecanismo possível.",
+   "conceito": "A eminência intercondilar, ou espinha tibial, é onde o LCA se insere na tíbia. Na criança, o ligamento é mais forte que o osso imaturo, e a força que romperia o LCA do adulto arranca a espinha.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 28, de Kramer e Kocher) descreve.** A fratura da espinha tibial é a **avulsão condroepifisária do LCA**, na espinha anteromedial, típica dos **11 a 12 anos**. O osso imaturo é **mais fraco que o ligamento**: a mesma força que romperia o LCA do adulto arranca o osso onde ele se insere. Carga lenta tende a arrancar a espinha; carga rápida, a romper o ligamento; incisura estreita predispõe.\n\n**O mecanismo mais comum.** O capítulo aponta o **valgo forçado com rotação externa da tíbia**. Também cita hiperflexão, **hiperextensão** e rotação interna como mecanismos possíveis. A banca adotou a hiperextensão.\n\n**A divergência.** Pelo capítulo, a resposta seria **valgismo e rotação lateral (D)**. A banca deu **hiperextensão (B)**. Mantemos o gabarito oficial e registramos a diferença; a hiperextensão continua sendo um mecanismo aceito.\n\n**Na prova:** a banca já deu **hiperextensão**; o capítulo atual destaca **valgo + rotação externa**.\n\nNo resumo de joelho intra-articular da criança, a seção da espinha tibial traz os mecanismos.",
+   "correta": "**B: a hiperextensão do joelho (gabarito oficial).** É mecanismo aceito no capítulo, que porém aponta o valgo com rotação externa como o mais comum; veja o alerta.",
+   "incorretas": {
+    "A": "**A hiperflexão é citada no capítulo como mecanismo possível, não como o mais comum.**",
+    "C": "**Varo com rotação medial não é o mecanismo descrito.** O capítulo fala em valgo com rotação externa.",
+    "D": "**É a resposta do capítulo:** valgo forçado com rotação externa (lateral) da tíbia é o mecanismo mais comum no Rockwood and Wilkins. A banca não aceitou esta alternativa."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+    "titulo": "Lesões intra-articulares do joelho na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+    "secoes": [
+     "Fratura da espinha tibial"
+    ],
+    "blocos": [
+     "fratura-da-espinha-tibial-4d91936f",
+     "fratura-da-espinha-tibial-c33d5a19"
+    ],
+    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+    "trechosSha256": "f04a1532e11cb2fc8ab99cc5b1ff441c5d4bd01077cbed9edb97863e57ffbc89"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0735": {
+  "questaoSha256": "7032ee1f67ce8f6f43c5ff2509c3c519f8ef8266562dd9d5162304a3822b3aad",
+  "comentarioAnteriorSha256": "da65f289c3dd1580c39e9f2a9651eb13d5e8995b3ab66cbd912a38e947158d94",
+  "comentario": {
+   "conceito": "Quando a fratura da espinha tibial consolida fora do lugar, o fragmento elevado fica no teto da incisura intercondilar. No fim da extensão, o fêmur encosta nele.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 28, de Kramer e Kocher) descreve.** A fratura da espinha tibial é a **avulsão condroepifisária do LCA**, na espinha anteromedial, típica dos **11 a 12 anos**. O osso imaturo é **mais fraco que o ligamento**: a mesma força que romperia o LCA do adulto arranca o osso onde ele se insere. Carga lenta tende a arrancar a espinha; carga rápida, a romper o ligamento; incisura estreita predispõe.\n\n**A consequência.** O Rockwood and Wilkins (10ª ed., cap. 28) descreve a **consolidação viciosa com bloqueio da extensão**: o joelho não estende por completo, e esse é o maior prejuízo funcional da lesão. A instabilidade sintomática é rara mesmo com Lachman positivo, e a artrofibrose, embora seja a complicação mais comum, é outra complicação, ligada à imobilização sem movimento, e não à consolidação viciosa.\n\n**Como prevenir.** Reduzir bem: extensão completa no tipo I, tentativa de redução em extensão no II, cirurgia com leve hiper-redução no III.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a limitação da extensão.\n\n**Na prova:** consolidação viciosa da espinha tibial = **limitação da extensão**.\n\nNo resumo de joelho intra-articular da criança, a seção da espinha tibial traz as complicações.",
+   "correta": "**A: limitação da extensão.** O fragmento consolidado elevado bloqueia mecanicamente o fim da extensão, como descreve o capítulo.",
+   "incorretas": {
+    "B": "**A frouxidão anterior é comum, mas sem instabilidade sintomática** na maioria. Não é a implicação da consolidação viciosa.",
+    "C": "**Dor persistente não é a consequência destacada.** O problema é mecânico.",
+    "D": "**Artrofibrose é complicação de outro mecanismo**, ligada à imobilização sem movimento. A consolidação viciosa bloqueia a extensão por obstáculo ósseo."
+   },
+   "conferido": false,
+   "provavel": "A",
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+    "titulo": "Lesões intra-articulares do joelho na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+    "secoes": [
+     "Fratura da espinha tibial"
+    ],
+    "blocos": [
+     "fratura-da-espinha-tibial-f7ee225d",
+     "fratura-da-espinha-tibial-c280bbe9",
+     "fratura-da-espinha-tibial-c33d5a19"
+    ],
+    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+    "trechosSha256": "096af90add0db67dbceedf232268c426d2ef023f42a18a3f0d3791e8b4a5ac27"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0824": {
+  "questaoSha256": "f646f136248309e0c3679528ed61be2e62610b5b040c97194049c79b1c5f3034",
+  "comentarioAnteriorSha256": "70d64a0e4ba23095f6e4a8b09c4f3b92d84edd5917b1fe8f2c4943fdcac604ff",
+  "comentario": {
+   "conceito": "As lesões do LCA estão aumentando na criança, e a reconstrução no esqueleto imaturo precisa respeitar as fises do fêmur distal e da tíbia proximal, que ainda vão crescer.\n\n**A escolha da técnica no Rockwood and Wilkins (10ª ed., cap. 28).** Depende de quanto crescimento resta:\n- **pré-adolescente:** reconstrução **intra e extra-articular com banda iliotibial**, poupando a fise (MacIntosh e Darby modificada);\n- **adolescente ainda crescendo:** técnica **transfisária**, com túneis pequenos e centrais;\n- **perto da maturidade:** a reconstrução do adulto.\n\nO capítulo também pede não operar nas primeiras 3 semanas.\n\n**O que a afirmação erra.** Ela diz que a reconstrução **extra-articular** é a melhor indicação. O capítulo não indica a extra-articular isolada: no pré-adolescente, a banda iliotibial passa **dentro e fora** da articulação, combinando as duas. E, nos maiores, as técnicas são transfisária ou de adulto.\n\n**Sem gabarito oficial no acervo.** Pela bibliografia, a afirmação está errada.\n\n**Na prova:** LCA do imaturo = técnica conforme o crescimento; no pré-adolescente, **intra + extra-articular** com banda iliotibial.\n\nO resumo de joelho intra-articular da criança traz as técnicas na seção de ligamentos.",
+   "correta": "**B: errado.** O capítulo não indica a reconstrução extra-articular isolada; no pré-adolescente usa a combinada intra e extra-articular com banda iliotibial, e nos maiores, técnicas transfisárias ou de adulto.",
+   "incorretas": {
+    "A": "**Aceitar a afirmação seria escolher uma técnica que o capítulo não recomenda isoladamente.** A extra-articular só aparece combinada com o componente intra-articular."
+   },
+   "conferido": false,
+   "provavel": "B",
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Ligamentos e luxação do joelho."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+    "titulo": "Lesões intra-articulares do joelho na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+    "secoes": [
+     "Ligamentos e luxação do joelho"
+    ],
+    "blocos": [
+     "ligamentos-e-luxacao-do-joelho-03b562df",
+     "ligamentos-e-luxacao-do-joelho-9de320e8"
+    ],
+    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+    "trechosSha256": "89ffd64a7eb9f8dba2f1832847d4dfc6b684b762a1ae26abf4802e5884e29458"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}

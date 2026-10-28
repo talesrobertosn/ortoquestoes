@@ -1,0 +1,740 @@
+{
+ "pediatria-0539": {
+  "questaoSha256": "1a51d81468ba68c196e862ef6d5eb807d4365f67e2632df19e952525b1cdf251",
+  "comentarioAnteriorSha256": "513e251ff0eac10eb8b4f8a5f0fa7cb36fa6e7cb45fe25f7d9e3ce7cfa03cc4b",
+  "comentario": {
+   "conceito": "Na lesão de Monteggia, a fratura da ulna vem com a luxação da cabeça do rádio. Bado classificou pela **direção da cabeça**, e a direção dita a posição de imobilização: o cotovelo fica na posição que mantém a cabeça encostada no capítulo.\n\n**O tipo II.** A cabeça vai para **trás** (posterior ou posterolateral), a ulna angula com ápice posterior. No Rockwood and Wilkins (10ª ed., cap. 12, de Waters e Noonan), é raro na criança, cerca de **6%**, e segue o padrão do adulto. O mecanismo é a **carga longitudinal com o cotovelo a 60 graus**.\n\n**Por que extensão.** Fletir o cotovelo empurra a cabeça do rádio para trás, justamente para onde ela luxou. A redução do capítulo é tração a 60 graus com pressão anterior sobre a cabeça, e a imobilização é **em extensão**, que mantém a cabeça reduzida contra o capítulo. É o oposto do tipo I, em que a cabeça vai para a frente e o gesso fica em **110 a 120 graus** de flexão.\n\n**O princípio geral.** O Monteggia se trata **pela ulna**: corrigida a ulna, a cabeça volta. Se não volta, o ligamento anular está interposto.\n\n**Na prova:** Bado I imobiliza em **flexão**; Bado II em **extensão**.\n\nO resumo de Monteggia da criança traz a manobra de cada tipo na seção de tratamento agudo.",
+   "correta": "**A: extensão.** No tipo II a cabeça luxa para trás; a extensão a mantém encostada no capítulo, ao contrário da flexão usada no tipo I.",
+   "incorretas": {
+    "B": "**Flexão de 45 graus já começa a empurrar a cabeça para trás**, a direção da luxação no tipo II.",
+    "C": "**90 graus de flexão é a posição que o capítulo nega para o tipo II.** Ela favorece a reluxação posterior.",
+    "D": "**110 graus é a imobilização do tipo I**, em que a cabeça luxa para a frente e a flexão a mantém reduzida."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo; Classificação e mecanismos."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Tratamento agudo",
+     "Classificação e mecanismos"
+    ],
+    "blocos": [
+     "tratamento-agudo-35192e58",
+     "tratamento-agudo-c42b9a19",
+     "classificacao-e-mecanismos-414cee4f"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "08a46e01cd28ed45c030a571ceb3c72d8551d82aaa7c79325fe10263e51a0ed5"
+   }
+  ],
+  "imagensConferidas": [],
+  "justificativaRemocaoAlerta": "O alerta antigo citava autores que imobilizam o Bado II em flexão leve, sem fonte identificada. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 12, indica a imobilização em extensão, igual ao gabarito; a miniaula explica a lógica."
+ },
+ "pediatria-0712": {
+  "questaoSha256": "c4d72f8abf842a23763da24f4e8e13e11c988da467253dff5d2a5e91e6e9b3e3",
+  "comentarioAnteriorSha256": "6a994c2f3881e041b714aa4f47e577d1e4921a23cc379f21dc2d7bda3b109cb0",
+  "comentario": {
+   "conceito": "Bado classifica a lesão de Monteggia pela direção da cabeça do rádio. Letts acrescentou o que acontece com a **ulna** da criança, que nem sempre quebra por completo.\n\n**A classificação de Letts no Rockwood and Wilkins (10ª ed., cap. 12).** Os três primeiros tipos têm a cabeça **anterior**, como no Bado I, e mudam pela ulna:\n- **A:** deformidade **plástica** da ulna;\n- **B:** fratura em **galho verde**;\n- **C:** fratura **completa**.\n\nDepois vêm o **D**, com a cabeça posterior, e o **E**, com a cabeça lateral.\n\n**Por que isso importa no tratamento.** O capítulo trata o Monteggia **pela ulna**: plástica e galho verde vão para **redução fechada**; transversa e oblíqua curta, para haste intramedular; oblíqua longa e cominuta, para placa. A deformidade plástica é traiçoeira: o **arco ulnar** com desvio maior que 1 mm denuncia a curvatura que a radiografia parece não mostrar.\n\n**Na prova:** Letts **B** = **galho verde** da ulna com cabeça **anterior**.\n\nO resumo de Monteggia da criança traz Bado e Letts na seção de classificação.",
+   "correta": "**D: fratura em galho verde da ulna com desvio anterior da cabeça do rádio.** É o tipo B de Letts, entre a deformidade plástica (A) e a fratura completa (C).",
+   "incorretas": {
+    "A": "**Fratura completa com cabeça anterior é o tipo C de Letts.**",
+    "B": "**Cabeça posterior é o tipo D de Letts**, independentemente do tipo de fratura da ulna.",
+    "C": "**Deformidade plástica com cabeça anterior é o tipo A de Letts.**"
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Classificação e mecanismos"
+    ],
+    "blocos": [
+     "classificacao-e-mecanismos-bf9aae38",
+     "classificacao-e-mecanismos-414cee4f",
+     "classificacao-e-mecanismos-c4b7c40b"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "32cf52620be4a127500a5afabb627e7d043bd1062942aae828164c04a906e695"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0659": {
+  "questaoSha256": "c84546fa685a8bb8483f2679c43f046c49ba7cf225ee75f2492397e477c11e06",
+  "comentarioAnteriorSha256": "796da5289a9afdff0ad44c23077864724e5a0f67c175ff176b3b9b866863f523",
+  "comentario": {
+   "conceito": "A lesão de Monteggia nem sempre é a combinação clássica de fratura da ulna com luxação da cabeça do rádio. Há **equivalentes**: lesões em que a energia segue o mesmo caminho, mas o rádio fratura no colo em vez de luxar.\n\n**O tipo III de Bado.** A cabeça do rádio vai para o **lado** (lateral), e a ulna fica em **varo**, em geral com galho verde proximal. O mecanismo, segundo Wright, é uma força em **varo** com a mão apoiada. No Rockwood and Wilkins (10ª ed., cap. 12) é o **segundo tipo mais comum** na criança e o que mais lesa o nervo interósseo posterior.\n\n**O equivalente.** Quando a mesma força em varo encontra o olécrano travado, ele faz uma deformidade plástica em varo, e o rádio, em vez de luxar para fora, **fratura no colo e desvia lateralmente**. O capítulo de colo do rádio e olécrano (cap. 11) descreve isso: olécrano em **varo** com luxação lateral da cabeça ou fratura do colo é **Monteggia III**; em supinação e valgo, com o colo do rádio, é equivalente do tipo I.\n\n| Tipo | Cabeça do rádio | Detalhe |\n|---|---|---|\n| I | anterior | ápice anterior da ulna, 70% a 75% |\n| II | posterior ou posterolateral | ápice posterior, 6%, padrão do adulto |\n| III | lateral | ulna em varo, segundo na criança |\n| IV | anterior | com fratura do rádio no mesmo nível ou distal, raro |\n\n**Na prova:** colo do rádio desviado lateralmente + olécrano em varo = equivalente de **Monteggia III**.\n\nO resumo de Monteggia da criança traz a tabela de Bado na seção de classificação.",
+   "correta": "**C: III.** A força em varo, a ulna (olécrano) em varo e o desvio lateral do rádio são a assinatura do tipo III de Bado; aqui o rádio fratura no colo em vez de luxar.",
+   "incorretas": {
+    "A": "**O tipo I tem a cabeça anterior e ápice anterior da ulna.** O equivalente do tipo I no olécrano é a combinação com supinação e valgo, não varo.",
+    "B": "**O tipo II tem a cabeça posterior**, por carga longitudinal com o cotovelo a 60 graus.",
+    "D": "**O tipo IV tem a cabeça anterior com fratura dos dois ossos.** Não é o padrão em varo com desvio lateral."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos.",
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Olécrano e apófise."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Classificação e mecanismos"
+    ],
+    "blocos": [
+     "classificacao-e-mecanismos-bf9aae38",
+     "classificacao-e-mecanismos-414cee4f",
+     "classificacao-e-mecanismos-c4b7c40b"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "32cf52620be4a127500a5afabb627e7d043bd1062942aae828164c04a906e695"
+   },
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Olécrano e apófise"
+    ],
+    "blocos": [
+     "olecrano-e-apofise-904c5544",
+     "olecrano-e-apofise-2ad397be"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "e8e3b987fe9c57984a033765e68cbb11c062a0b3639749d81bb9d732b51583b4"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0724": {
+  "questaoSha256": "08cfea374bdb7d8608ab6727d93f64ead95261bb8be507808592c29dcd63b220",
+  "comentarioAnteriorSha256": "5a0bde480f90e11ae1af5b863e2a26a97d9ef73d2d8262c73520cf6b6832f3de",
+  "comentario": {
+   "conceito": "Os quatro tipos de Bado têm, cada um, a sua ulna. O tipo II é o que mais lembra o adulto.\n\n| Tipo | Cabeça do rádio | Detalhe |\n|---|---|---|\n| I | anterior | ápice anterior da ulna, 70% a 75% |\n| II | posterior ou posterolateral | ápice posterior, 6%, padrão do adulto |\n| III | lateral | ulna em varo, segundo na criança |\n| IV | anterior | com fratura do rádio no mesmo nível ou distal, raro |\n\n**O tipo II no Rockwood and Wilkins (10ª ed., cap. 12).** A cabeça vai para trás, por **carga longitudinal com o cotovelo a 60 graus** (Penrose). A força sobe pelo antebraço e quebra a ulna **perto do cotovelo**, na **metáfise proximal**, com ápice posterior. Se a ulna resistir, a mesma força produz uma luxação posterior do cotovelo. O resumo do capítulo registra a ulna **metafisária proximal** como característica do tipo II.\n\n**Tratamento.** Tração a 60 graus, pressão anterior na cabeça e **imobilização em extensão**; a ressonância ajuda a ver a borda anterior da cabeça.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a fratura metafisária proximal, sustentada pelo capítulo.\n\n**Na prova:** Bado II = cabeça posterior, ulna **metafisária proximal**, imobilizar em extensão.\n\nO resumo de Monteggia da criança traz o mecanismo de cada tipo na seção de classificação.",
+   "correta": "**A: metafisária proximal.** É a ulna típica do tipo II no capítulo, quebrada perto do cotovelo pela carga longitudinal a 60 graus.",
+   "incorretas": {
+    "B": "**Diafisária oblíqua é mais o padrão do tipo I**, com a ulna angulada de ápice anterior no meio do osso.",
+    "C": "**Diafisária transversa também não é a assinatura do tipo II**, que quebra a ulna na metáfise proximal.",
+    "D": "**Salter-Harris II da epífise não descreve a ulna do Monteggia.** O capítulo cita lesões epifisárias do rádio entre os equivalentes, não a ulna do tipo II."
+   },
+   "conferido": false,
+   "provavel": "A",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Classificação e mecanismos"
+    ],
+    "blocos": [
+     "classificacao-e-mecanismos-bf9aae38",
+     "classificacao-e-mecanismos-414cee4f",
+     "classificacao-e-mecanismos-c4b7c40b"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "32cf52620be4a127500a5afabb627e7d043bd1062942aae828164c04a906e695"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0742": {
+  "questaoSha256": "8bb5e15a7e45054cce3b3b7237137a6160326ec9d35fdefc606fd887ae9ad9a7",
+  "comentarioAnteriorSha256": "e17ddaa0b923826098d582dc99fe1c812ae6ff8c13309f5114518c0c36b1eeea",
+  "comentario": {
+   "conceito": "Quando o Monteggia passa despercebido, a cabeça do rádio fica luxada. A história natural **não é benigna**: o Rockwood and Wilkins (10ª ed., cap. 12) descreve valgo, dor, perda de rotação e de flexão e neuropatia tardia.\n\n**Quando reconstruir.** A cabeça ainda precisa ter forma de encaixe: **côncava**, com o capítulo **convexo**, de preferência abaixo de 10 a 12 anos e o mais cedo possível. Com cabeça convexa ou aumentada, capítulo achatado ou artrose, a reconstrução está contraindicada.\n\n**Os dois tempos da reconstrução.** O primeiro e mais importante é a **osteotomia de abertura da ulna**, que devolve o comprimento e deixa a cabeça voltar. O segundo é refazer o **ligamento anular**, de preferência com o anular nativo. Quando ele não serve, há técnicas com tecido do tríceps:\n- **Bell Tawse:** usa a **porção central do tendão do tríceps**, passada por um furo na ulna, com estabilidade **posterior**;\n- Bucknill e Lloyd-Roberts: porção lateral, com pino transcapitelar;\n- Seel e Peterson: furos nas inserções, força posteromedial.\n\nO redeslocamento chega a 25%; os fatores-chave são a osteotomia da ulna e não deixar pino.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a porção central do tríceps.\n\n**Na prova:** **Bell Tawse** = tríceps **central**.\n\nNo resumo de Monteggia da criança, a seção do Monteggia crônico descreve as técnicas.",
+   "correta": "**C: a porção central do tendão do tríceps.** É a fita de tecido que a técnica de Bell Tawse passa em volta do colo do rádio e por um furo na ulna.",
+   "incorretas": {
+    "A": "**Palmar longo não é o enxerto de Bell Tawse.** As técnicas citadas no capítulo usam o próprio tríceps.",
+    "B": "**A porção medial não é a usada.** Bell Tawse usa a central; Bucknill e Lloyd-Roberts, a lateral.",
+    "D": "**Fáscia lata não aparece nas técnicas de reconstrução do anular do capítulo**, que usam o anular nativo ou o tríceps."
+   },
+   "conferido": false,
+   "provavel": "C",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Complicações e MONTEGGIA crônico."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Complicações e MONTEGGIA crônico"
+    ],
+    "blocos": [
+     "complicacoes-e-monteggia-cronico-c7cab5d6",
+     "complicacoes-e-monteggia-cronico-5b7c33b4"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "7d8def51d92ae181b912add025684e6c8806f3ad77d90a16953006f4c65b7b1f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0831": {
+  "questaoSha256": "dd288fee925dd21c9b1c3b04a1d96b37eb259297e4dfcaa92dc5aeda880302fd",
+  "comentarioAnteriorSha256": "b324ac54566bf0e87dca4fcc64927bac787307552c5d05321df02e4f51947a72",
+  "comentario": {
+   "conceito": "No Monteggia, a posição do gesso é a que mantém a cabeça do rádio reduzida, e isso depende de para onde ela luxou.\n\n**O tipo II de Bado.** A cabeça vai para **trás**, por carga longitudinal com o cotovelo a 60 graus. No Rockwood and Wilkins (10ª ed., cap. 12), a redução é por tração a **60 graus** com pressão anterior sobre a cabeça, e a imobilização é **em extensão**. Fletir o cotovelo, até 90 graus, empurra a cabeça para trás de novo.\n\n**O contraste com o tipo I.** No tipo I a cabeça é anterior, e a flexão de 110 a 120 graus é que a mantém. Usar no tipo II a posição do tipo I é o erro que a questão testa.\n\n**Sem gabarito oficial no acervo.** Pela bibliografia, a afirmação está errada: o tipo II não fica a 90 graus, fica em extensão.\n\n**Na prova:** Bado II = redução fechada e **extensão**; Bado I = flexão.\n\nO resumo de Monteggia da criança traz a manobra na seção de tratamento agudo.",
+   "correta": "**B: errado.** O capítulo trata o tipo II com redução fechada e imobilização em extensão; a 90 graus a cabeça tende a reluxar para trás.",
+   "incorretas": {
+    "A": "**Aceitar os 90 graus seria aplicar ao tipo II a lógica do tipo I.** A flexão serve à cabeça anterior; a posterior precisa de extensão."
+   },
+   "conferido": false,
+   "provavel": "B",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo; Classificação e mecanismos."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Tratamento agudo",
+     "Classificação e mecanismos"
+    ],
+    "blocos": [
+     "tratamento-agudo-35192e58",
+     "tratamento-agudo-c42b9a19",
+     "classificacao-e-mecanismos-414cee4f"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "08a46e01cd28ed45c030a571ceb3c72d8551d82aaa7c79325fe10263e51a0ed5"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0924": {
+  "questaoSha256": "1c913d18301ca8dabf9647d074ba592693e8956c2347ab9e1ec04b7f2179f3b5",
+  "comentarioAnteriorSha256": "3d2550c3db4ee56bfd2539ec19d9c0268f4099997771ff3851f614ab57c0136b",
+  "comentario": {
+   "conceito": "Cada tipo de Monteggia tem o seu mecanismo, e o mecanismo explica a direção para onde a cabeça do rádio vai.\n\n**Os mecanismos no Rockwood and Wilkins (10ª ed., cap. 12).**\n- **Tipo I:** queda com o cotovelo **estendido**, antebraço neutro a meia pronação; o **bíceps** luxa a cabeça para a frente e a ulna falha em tensão anterior.\n- **Tipo II:** **carga longitudinal com o cotovelo a 60 graus** (Penrose); a cabeça vai para trás e a ulna quebra na metáfise proximal. Se a ulna não quebra, o resultado é uma luxação posterior do cotovelo.\n- **Tipo III:** força em **varo** com a mão apoiada (Wright).\n- **Tipo IV:** como o tipo I, com o rádio também fraturado.\n\n**Sem gabarito oficial no acervo.** O mecanismo do enunciado é, pelo capítulo, o do tipo II.\n\n**Na prova:** cotovelo a **60 graus** + carga longitudinal = **Bado II**.\n\nO resumo de Monteggia da criança traz os mecanismos na seção de classificação.",
+   "correta": "**B: II.** A carga longitudinal com o cotovelo fletido a 60 graus é o mecanismo de Penrose para o tipo II, citado no capítulo.",
+   "incorretas": {
+    "A": "**O tipo I vem da queda com o cotovelo estendido**, com o bíceps luxando a cabeça para a frente.",
+    "C": "**O tipo III vem de uma força em varo** com a mão apoiada.",
+    "D": "**O tipo IV segue o mecanismo do tipo I**, com fratura também do rádio."
+   },
+   "conferido": false,
+   "provavel": "B",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Classificação e mecanismos"
+    ],
+    "blocos": [
+     "classificacao-e-mecanismos-bf9aae38",
+     "classificacao-e-mecanismos-414cee4f",
+     "classificacao-e-mecanismos-c4b7c40b"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "32cf52620be4a127500a5afabb627e7d043bd1062942aae828164c04a906e695"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0929": {
+  "questaoSha256": "5b5d413b949fa587c2a00194a620f80eb18ee477c3b82fff8eba485eaaa94344",
+  "comentarioAnteriorSha256": "7658e40bcd52227add555d77367a13bcaff17496b80f1e71b9e18f9a3bfcda5b",
+  "comentario": {
+   "conceito": "O tipo IV de Bado é o Monteggia em que, além da ulna e da luxação anterior da cabeça, o **rádio** também quebra.\n\n| Tipo | Cabeça do rádio | Detalhe |\n|---|---|---|\n| I | anterior | ápice anterior da ulna, 70% a 75% |\n| II | posterior ou posterolateral | ápice posterior, 6%, padrão do adulto |\n| III | lateral | ulna em varo, segundo na criança |\n| IV | anterior | com fratura do rádio no mesmo nível ou distal, raro |\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 12) diz do tipo IV.** É **raro**. A cabeça está **anterior**, como no tipo I, e o rádio fratura **no mesmo nível ou distal** à fratura da ulna. A posição importa: se o rádio quebrasse acima (proximal), a cabeça estaria presa a um fragmento curto e a lesão seria outra.\n\n**Tratamento.** Primeiro se **estabiliza o rádio**, com haste intramedular (placa acima de 12 anos). Com o rádio fixo, a lesão passa a se comportar como um tipo I e é tratada pela ulna.\n\n**Sem gabarito oficial no acervo.** O capítulo sustenta: raro, com rádio no mesmo nível ou distal.\n\n**Na prova:** Bado IV = raro, cabeça anterior, rádio **no mesmo nível ou distal**.\n\nO resumo de Monteggia da criança traz o tipo IV na seção de classificação e no tratamento agudo.",
+   "correta": "**A: relativamente raras, com fratura do rádio no mesmo nível ou distal à fratura da ulna.** É a descrição do tipo IV no capítulo.",
+   "incorretas": {
+    "B": "**A raridade está certa, mas o rádio quebra no mesmo nível ou distal**, não proximal à ulna.",
+    "C": "**O nível está certo, mas o tipo IV não é comum.** O mais comum é o tipo I, com 70% a 75%.",
+    "D": "**Erra as duas partes:** o tipo IV é raro e o rádio quebra no mesmo nível ou distal."
+   },
+   "conferido": false,
+   "provavel": "A",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Classificação e mecanismos",
+     "Tratamento agudo"
+    ],
+    "blocos": [
+     "classificacao-e-mecanismos-bf9aae38",
+     "classificacao-e-mecanismos-414cee4f",
+     "classificacao-e-mecanismos-c4b7c40b",
+     "tratamento-agudo-35192e58",
+     "tratamento-agudo-c42b9a19"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "64b45dfe33a75894560184e78263540c0eb85f344b7c150f49f409ca20f841f2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0930": {
+  "questaoSha256": "57f36ea24febd1a1f624988e7d3009d96bed932f09f8e4dd13fd150bd4ed447d",
+  "comentarioAnteriorSha256": "600bb2fa58b3d333f5a077945d1d2ed672c5606196a82c3e2f23cd27e8dd596d",
+  "comentario": {
+   "conceito": "O tipo III de Bado é o Monteggia **lateral**: a cabeça do rádio vai para o lado, e a ulna fica em **varo**.\n\n**O mecanismo.** No Rockwood and Wilkins (10ª ed., cap. 12), a força é em **varo** com a mão apoiada (Wright). A ulna proximal cede em **galho verde**, angulando para fora, e a cabeça do rádio é empurrada lateralmente. É o **segundo tipo mais comum** na criança e o que mais se associa a lesão do nervo **interósseo posterior**.\n\n**No exame.** Edema lateral, cotovelo em varo e perda da supinação.\n\n**Tratamento.** A redução desfaz o mecanismo: **extensão com valgo** sobre a ulna, gesso moldado em valgo com 100 a 110 graus de flexão. A interposição de partes moles é mais frequente nesse tipo.\n\n**Sem gabarito oficial no acervo.** O capítulo sustenta: varo, galho verde proximal.\n\n**Na prova:** Bado III = **varo**, **galho verde** da ulna proximal, cabeça lateral, interósseo posterior.\n\nO resumo de Monteggia da criança descreve o tipo III na seção de classificação e no tratamento agudo.",
+   "correta": "**A: varo, e geralmente causa uma fratura em galho verde da ulna proximal.** É o mecanismo de Wright e o padrão de ulna que o capítulo descreve no tipo III.",
+   "incorretas": {
+    "B": "**O galho verde está certo, mas a força é em varo.** O valgo é a direção da manobra de redução.",
+    "C": "**O varo está certo, mas a ulna costuma fazer galho verde**, não fratura completa, no tipo III da criança.",
+    "D": "**Erra as duas:** a força é em varo e a ulna em galho verde."
+   },
+   "conferido": false,
+   "provavel": "A",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-12-monteggia",
+    "titulo": "Fratura-luxação de MONTEGGIA na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+    "secoes": [
+     "Classificação e mecanismos",
+     "Tratamento agudo"
+    ],
+    "blocos": [
+     "classificacao-e-mecanismos-bf9aae38",
+     "classificacao-e-mecanismos-414cee4f",
+     "classificacao-e-mecanismos-c4b7c40b",
+     "tratamento-agudo-35192e58",
+     "tratamento-agudo-c42b9a19"
+    ],
+    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "trechosSha256": "64b45dfe33a75894560184e78263540c0eb85f344b7c150f49f409ca20f841f2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0640": {
+  "questaoSha256": "559ffd270ceb74770a5fb4aac464cbd840bc5931644629444ac9401832843db4",
+  "comentarioAnteriorSha256": "8b19d6f0ced978222ffe35cac85b8ea780c30cf7363226b99feee28d62479d45",
+  "comentario": {
+   "conceito": "Na criança, a cabeça do rádio é cartilaginosa e o colo é o ponto fraco. Quando o cotovelo recebe carga, a força passa pela cabeça e quebra o **colo** ou a fise logo abaixo dela.\n\n**O mecanismo do Rockwood and Wilkins (10ª ed., cap. 11, de Garg, Erickson e Sibbel).** A fratura vem da **queda com o cotovelo estendido e em valgo**. Com o cotovelo reto, a carga sobe pelo antebraço; o valgo joga essa carga sobre o lado lateral, comprimindo a cabeça do rádio contra o capítulo. A cabeça cartilaginosa transmite a força à fise ou à metáfise, que cedem e angulam.\n\n**O que acompanha.** O valgo que comprime o lado lateral traciona o medial: 30% a 50% das fraturas do colo têm outra lesão, como epicôndilo medial, luxação ou olécrano. A direção do desvio depende da rotação do antebraço (Vostal): neutro = lateral, supinação = anterior, pronação = posterior.\n\n**Os números.** Colo do rádio = 1% a 3% das fraturas da criança e 5% a 10% das do cotovelo, mediana de 9 a 10 anos.\n\n**Na prova:** colo do rádio da criança = **valgo com cotovelo estendido**.\n\nO resumo de colo do rádio e olécrano da criança traz o mecanismo na primeira seção.",
+   "correta": "**D: valgo com extensão do cotovelo.** É o mecanismo do capítulo: a queda com o cotovelo reto e em valgo comprime a cabeça do rádio contra o capítulo.",
+   "incorretas": {
+    "A": "**Varo com flexão afasta a cabeça do rádio do capítulo**, em vez de comprimi-la.",
+    "B": "**O valgo está certo, mas o cotovelo fletido não transmite a carga axial** como na queda com o braço estendido.",
+    "C": "**A extensão está certa, mas o varo descomprime o lado lateral.** A força em varo está ligada a outros padrões, como o Monteggia III."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: mecanismo, imagem e classificação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Rádio proximal: mecanismo, imagem e classificação"
+    ],
+    "blocos": [
+     "radio-proximal-mecanismo-imagem-e-classificacao-3d6f8ae0",
+     "radio-proximal-mecanismo-imagem-e-classificacao-a750deed"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "f3aac84161b772cf7de40af534d939214ce6869631a765e3514c6f6b11ba17ac"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0748": {
+  "questaoSha256": "b766cdee86322c6de55346785bc9baa89b8ddd637ec1706335064808f1502963",
+  "comentarioAnteriorSha256": "0fdeaeb7abb6f231ae4ca115664c9afab1a2505d84a0fed3134e6703af5b2c4d",
+  "comentario": {
+   "conceito": "A redução fechada da fratura do colo do rádio tenta levar a cabeça inclinada de volta para cima do colo sem abrir o cotovelo. O Rockwood and Wilkins (10ª ed., cap. 11) lembra que **nenhuma técnica fechada é superior** às outras; a escolha é do cirurgião.\n\n**A técnica de Patterson.** Com o cotovelo estendido:\n- **tração** no antebraço;\n- **supinação**, que roda o colo até a saliência máxima da cabeça ficar lateral, onde o polegar alcança;\n- **varo**, que abre o espaço lateral do cotovelo e tira a cabeça da compressão contra o capítulo;\n- **pressão lateral** direta sobre a cabeça, empurrando-a de volta.\n\nO varo desfaz o mecanismo da fratura, que é o valgo com o cotovelo estendido.\n\n**As outras técnicas do capítulo.** Israelense (cotovelo a 90 graus, pronação), Kaufman, Neher e Torch, Monson, faixa de Esmarch e, se a fechada falhar, fio percutâneo ou a haste de **Metaizeau**.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é varo com supinação.\n\n**Na prova:** Patterson = tração, **supinação**, **varo**, pressão lateral.\n\nO resumo de colo do rádio e olécrano da criança traz as técnicas na seção de tratamento.",
+   "correta": "**A: varo com antebraço em supinação.** É a técnica de Patterson descrita no capítulo, completada pela tração e pela pressão lateral sobre a cabeça.",
+   "incorretas": {
+    "B": "**O valgo reproduz o mecanismo da fratura** e comprime ainda mais a cabeça contra o capítulo.",
+    "C": "**O varo está certo, mas Patterson usa supinação.** A pronação é da técnica israelense, a 90 graus.",
+    "D": "**Erra os dois:** valgo comprime a cabeça e a pronação não é a rotação de Patterson."
+   },
+   "conferido": false,
+   "provavel": "A",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Rádio proximal: tratamento"
+    ],
+    "blocos": [
+     "radio-proximal-tratamento-18c3f92b",
+     "radio-proximal-tratamento-bb1be85f",
+     "radio-proximal-tratamento-98185824"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "124542a0a02cbc1120d1a800167770eb0de8d8e40c773b795770c29848019c93"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0926": {
+  "questaoSha256": "da8addca093be76b68cb35dbeee120a5a88554c59117c8aecb21127f2075bec3",
+  "comentarioAnteriorSha256": "5f04b40ad4b8c2232bc7d0062580b84332e5fb928f464d55a18ebbfc96419873",
+  "comentario": {
+   "conceito": "O colo do rádio da criança remodela bem, e por isso aceita angulações que pareceriam grandes. A decisão depende da **idade**, do **desvio** e da **rotação**.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 11) aceita sem cirurgia.**\n- angulação **menor que 45 graus abaixo de 10 anos**;\n- menor que 30 graus acima de 10 anos;\n- desvio (translação) menor que 2 mm;\n- **rotação completa** do antebraço e cabeça alinhada ao capítulo.\n\nAté 45 graus remodelam. A translação é tolerada mal, porque a cabeça deslocada funciona como um came e trava a rotação. Para testar a rotação, aspira-se o hemartro e injeta-se anestésico.\n\n**O caso.** Criança de 5 anos, fratura isolada, 40 graus: abaixo do limite de 45 graus para a idade. Com rotação preservada, o tratamento é **conservador**, com imobilização de 1 a 3 semanas.\n\n**Sem gabarito oficial no acervo.** O capítulo sustenta o tratamento conservador.\n\n**Na prova:** abaixo de 10 anos, até **45 graus** com rotação completa = conservador.\n\nO resumo de colo do rádio e olécrano da criança traz os limites na seção de tratamento.",
+   "correta": "**A: conservador.** Aos 5 anos o capítulo aceita até 45 graus de angulação com rotação completa; 40 graus ficam dentro do limite e remodelam.",
+   "incorretas": {
+    "B": "**Redução aberta com placa é reservada para o que os métodos fechados não resolvem.** O capítulo nota que o tratamento fechado vai melhor que o aberto, que aumenta osteonecrose e sinostose.",
+    "C": "**Redução e haste intramedular (Metaizeau) são para fraturas fora dos limites.** Aos 5 anos, 40 graus estão dentro.",
+    "D": "**Fixação transarticular não está entre as opções do capítulo** e seria um exagero para uma fratura aceitável."
+   },
+   "conferido": false,
+   "provavel": "A",
+   "alerta": "Questão sem gabarito oficial no acervo; a resposta provável A segue o resumo do Rockwood and Wilkins, 10ª edição, capítulo 11 (até 45 graus abaixo de 10 anos). O enunciado não informa translação nem rotação, que o capítulo também exige para o tratamento conservador.",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Rádio proximal: tratamento"
+    ],
+    "blocos": [
+     "radio-proximal-tratamento-18c3f92b",
+     "radio-proximal-tratamento-bb1be85f",
+     "radio-proximal-tratamento-98185824"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "124542a0a02cbc1120d1a800167770eb0de8d8e40c773b795770c29848019c93"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0815": {
+  "questaoSha256": "48c6d9257fbb0d3d01ac3c3229b61dd0ed7188f393fae2d3de572d6e8ad0f601",
+  "comentarioAnteriorSha256": "c521b4732dfe56ab3f1a98074a4494bf179919a6ef401281560da87107848398",
+  "comentario": {
+   "conceito": "A afirmação manda abrir toda fratura da cabeça do rádio com mais de 30 graus. O Rockwood and Wilkins (10ª ed., cap. 11) segue uma escada bem diferente.\n\n**O que se aceita.** Sem cirurgia: angulação menor que 45 graus abaixo de 10 anos e menor que 30 acima, desvio menor que 2 mm, rotação completa.\n\n**Quando passa do limite, a escada é fechada primeiro.**\n1. **Redução fechada**: Patterson, israelense, Kaufman, Monson ou faixa de Esmarch; nenhuma é superior.\n2. **Redução assistida por fio percutâneo**, de ponta romba, entrando lateral com o antebraço em pronação.\n3. **Haste de Metaizeau**, que entra pelo rádio distal, alcança a cabeça e a reduz girando.\n4. Só então a **redução aberta**, pela via de Kocher ou Kaplan.\n\nO capítulo é claro: **o tratamento fechado vai melhor que o aberto**. A cirurgia aberta aumenta a osteonecrose (25%) e a sinostose radioulnar.\n\n**Sem gabarito oficial no acervo.** Pela bibliografia, a afirmação está errada.\n\n**Na prova:** angulação acima do limite pede **redução fechada** primeiro; aberta é o último degrau.\n\nO resumo de colo do rádio e olécrano da criança descreve a escada na seção de tratamento.",
+   "correta": "**B: errado.** Acima de 30 graus o capítulo indica primeiro a redução fechada, depois o fio percutâneo e a haste de Metaizeau; a redução aberta é o último recurso, com mais osteonecrose e sinostose.",
+   "incorretas": {
+    "A": "**Indicar redução aberta direto pula as técnicas fechadas** que o capítulo prefere, e expõe a criança a mais osteonecrose e sinostose."
+   },
+   "conferido": false,
+   "provavel": "B",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Rádio proximal: tratamento"
+    ],
+    "blocos": [
+     "radio-proximal-tratamento-18c3f92b",
+     "radio-proximal-tratamento-bb1be85f",
+     "radio-proximal-tratamento-98185824"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "124542a0a02cbc1120d1a800167770eb0de8d8e40c773b795770c29848019c93"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0564": {
+  "questaoSha256": "6701c58b9cdc24d6da7107a2952cf43fb90ea9f5e6cef96ed1c6f0677a567b74",
+  "comentarioAnteriorSha256": "15ee51f320604617ba7285555b4907b88c9dd0509ab3260dd4c9750e8ef0163b",
+  "comentario": {
+   "conceito": "A fratura do colo e da cabeça do rádio cura bem na maioria das crianças, mas deixa uma sequela típica: a **perda de movimento**.\n\n**Qual movimento.** No Rockwood and Wilkins (10ª ed., cap. 11), a perda de movimento é a complicação mais comum, e afeta a **pronação mais que a supinação**. Flexão e extensão raramente ficam limitadas. A cabeça do rádio é o pivô da rotação do antebraço: deformidade, supercrescimento ou aderência em volta dela limitam o giro.\n\n**O que mais acompanha.** Supercrescimento da cabeça em 20% a 40%, fechamento fisário precoce, osteonecrose em 10% a 20% (25% com redução aberta), cúbito valgo e sinostose radioulnar depois da cirurgia aberta. A perda de movimento **pouco melhora depois de 6 meses**.\n\n**Mau prognóstico:** desvio maior, idade acima de 10 anos, alta energia e lesões associadas.\n\n**Na prova:** sequela da fratura do rádio proximal = perda da **pronação**.\n\nO resumo de colo do rádio e olécrano da criança traz as complicações na seção correspondente.",
+   "correta": "**C: pronação.** O capítulo descreve a perda de movimento como a complicação mais comum, afetando a pronação mais que a supinação.",
+   "incorretas": {
+    "A": "**A flexão raramente fica limitada**, segundo o capítulo.",
+    "B": "**A extensão também raramente é afetada.** A sequela é rotacional.",
+    "D": "**A supinação é afetada, mas menos que a pronação.**"
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: complicações."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Rádio proximal: complicações"
+    ],
+    "blocos": [
+     "radio-proximal-complicacoes-906c49c4",
+     "radio-proximal-complicacoes-7c92d0b4"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "b39b17b817c0a3e4c0229e0ae188722eb37c31dc1eb88d9f83a8ab55bea6fe32"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0841": {
+  "questaoSha256": "05717ebc1e87f4d96e717d008779ae14976cdf7d6406f7ba7b1cb06891e2d58f",
+  "comentarioAnteriorSha256": "1dc3f7c7cd0857ba689187d0ef9ac666b5e1e3705cff26ecaac05b6b289c7ea5",
+  "comentario": {
+   "conceito": "Depois de uma fratura do colo do rádio, o que a criança costuma perder não é dobrar ou esticar o cotovelo, e sim **girar o antebraço**.\n\n**A sequela no Rockwood and Wilkins (10ª ed., cap. 11).** A perda de movimento é a complicação mais comum, e atinge a **pronação mais que a supinação**; flexão e extensão raramente. A cabeça do rádio é o pivô da rotação, girando dentro do ligamento anular. Uma cabeça que consolidou inclinada, cresceu demais (supercrescimento em 20% a 40%) ou ficou presa por aderências limita o giro, e o capítulo registra a pronação como o movimento mais perdido.\n\n**O prazo.** A perda de movimento **pouco melhora depois de 6 meses**.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a pronação.\n\n**Na prova:** colo do rádio = sequela em **pronação**.\n\nO resumo de colo do rádio e olécrano da criança traz as complicações na seção correspondente.",
+   "correta": "**C: pronação do antebraço.** É o movimento mais afetado na sequela da fratura do rádio proximal, segundo o capítulo.",
+   "incorretas": {
+    "A": "**A flexão do cotovelo raramente fica limitada** depois da fratura do colo do rádio.",
+    "B": "**A extensão do cotovelo também raramente é afetada.**",
+    "D": "**A supinação perde menos que a pronação.**"
+   },
+   "conferido": false,
+   "provavel": "C",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: complicações."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Rádio proximal: complicações"
+    ],
+    "blocos": [
+     "radio-proximal-complicacoes-906c49c4",
+     "radio-proximal-complicacoes-7c92d0b4"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "b39b17b817c0a3e4c0229e0ae188722eb37c31dc1eb88d9f83a8ab55bea6fe32"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0611": {
+  "questaoSha256": "d06c97a0716d9dc1b9d0efcf085d34bfbe6e332d5a10ee067e3da6bc0670a17d",
+  "comentarioAnteriorSha256": "9f1ef0e2f3757290cda8ebd0157cfdf850d96fe1d1ff6f3053fe64f8547b5286",
+  "comentario": {
+   "conceito": "O olécrano pode quebrar em galho verde quando o cotovelo é forçado com o olécrano travado na fossa. A direção da força decide o que quebra junto.\n\n**As fraturas do olécrano por extensão, no Rockwood and Wilkins (10ª ed., cap. 11).** Com o olécrano travado, uma força em varo ou em valgo produz um galho verde longitudinal da ulna proximal, e a lesão associada depende da direção:\n- **supinação + valgo:** galho verde do olécrano com **fratura do colo do rádio** (ou do epicôndilo medial). O capítulo chama isso de equivalente de **Monteggia I**.\n- **varo:** luxação lateral da cabeça do rádio (**Monteggia III**) ou fratura do colo.\n\n**Por que valgo quebra o colo.** O valgo comprime o lado lateral do cotovelo, empurrando a cabeça do rádio contra o capítulo, que é o mecanismo da fratura do colo.\n\n**Tratamento.** Manipular sob anestesia e **hipercorrigir** a deformidade.\n\n**Na prova:** galho verde do olécrano + colo do rádio = antebraço em **supinação** e cotovelo em **valgo**.\n\nO resumo de colo do rádio e olécrano da criança descreve isso na seção de olécrano e apófise.",
+   "correta": "**D: supinação e valgo.** É a combinação que o capítulo descreve para o galho verde do olécrano com fratura do colo do rádio, um equivalente de Monteggia I.",
+   "incorretas": {
+    "A": "**Pronação e varo não correspondem a nenhuma das combinações descritas** para essa lesão.",
+    "B": "**A supinação está certa, mas o varo leva à luxação lateral da cabeça (Monteggia III)** ou a outra fratura do colo, não ao padrão em valgo cobrado.",
+    "C": "**O valgo está certo, mas o antebraço está em supinação**, não pronação."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Olécrano e apófise; Rádio proximal: mecanismo, imagem e classificação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Olécrano e apófise",
+     "Rádio proximal: mecanismo, imagem e classificação"
+    ],
+    "blocos": [
+     "olecrano-e-apofise-904c5544",
+     "olecrano-e-apofise-2ad397be",
+     "radio-proximal-mecanismo-imagem-e-classificacao-3d6f8ae0"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "4a56d812fc8b6cc3911fc6fcb4c5f8b940120d19f368c2aeb2236b91e0b8b4ea"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0954": {
+  "questaoSha256": "05f0a9ec8ce2a5fb2052fede19dbe217c09ee20e68cafa47ee7c56b6de501f91",
+  "comentarioAnteriorSha256": "b45ff7d2d14249dc2a5299126944239bc0ccdd3930befcfb90bfd46c5a09b2c3",
+  "comentario": {
+   "alerta": "Gabarito oficial B preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 11, indica cirurgia na fratura da apófise do olécrano com desvio maior que 4 mm OU articulação incongruente: qualquer dos dois critérios basta. A banca exigiu os dois juntos; a alternativa B é a única que reúne os dois e continua correta, mas a regra do livro é mais ampla.",
+   "conceito": "A apófise do olécrano é o núcleo onde o tríceps se insere. Fraturas dela são raras, porque o tríceps se prende de forma larga na metáfise; a osteogênese imperfeita predispõe.\n\n**A régua do Rockwood and Wilkins (10ª ed., cap. 11).**\n- **até 2 mm:** sem cirurgia;\n- **2 a 4 mm:** reduzir em **extensão** (que relaxa o tríceps);\n- **mais de 4 mm ou articulação incongruente:** **cirurgia**, com fios e banda de tensão; na osteogênese imperfeita, banda com fio, porque o parafuso falha.\n\n**O ponto da questão.** O capítulo usa \"ou\": basta um dos critérios. A banca pediu desvio maior que 4 mm **e** superfície articular acometida. A alternativa B satisfaz os dois e por isso está certa, mas a regra do livro também operaria um desvio maior que 4 mm com a articulação íntegra.\n\n**Armadilhas de imagem.** O centro aparece aos 9 anos, pode ser bipartido e funde aos 14; a margem esclerótica imita fratura.\n\n**Na prova:** apófise do olécrano = cirurgia com **mais de 4 mm ou incongruência articular**.\n\nO resumo de colo do rádio e olécrano da criança traz a régua na seção de olécrano e apófise.",
+   "correta": "**B: > 4 mm e superfície articular acometida (gabarito oficial).** Reúne os dois critérios cirúrgicos do capítulo, que porém basta um deles; veja o alerta.",
+   "incorretas": {
+    "A": "**Pelo capítulo, mais de 4 mm já indicaria cirurgia mesmo com a articulação íntegra.** A banca, porém, exigiu o acometimento articular junto.",
+    "C": "**Entre 2 e 4 mm com articulação íntegra, o capítulo reduz em extensão**, sem cirurgia.",
+    "D": "**Entre 2 e 4 mm com incongruência articular, a incongruência sozinha já levaria à cirurgia pelo capítulo**, mas a banca exigiu também o desvio acima de 4 mm."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Olécrano e apófise."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Olécrano e apófise"
+    ],
+    "blocos": [
+     "olecrano-e-apofise-37ee686f",
+     "olecrano-e-apofise-2ad397be"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "d0599ca0ce2d146712dc6195305f82c842b7e948cd7299db8dd9e63ad4f2245a"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0708": {
+  "questaoSha256": "9011bdceddb0409faad5b3dd123d5f16239ac1a6383627e0d3a68f736e281d61",
+  "comentarioAnteriorSha256": "27d36866a72607fbb8d8579d3b636dbc678aed21a9ab2c82daba63f16df47bec",
+  "comentario": {
+   "conceito": "**O que a figura mostra.** Cinco quadros de um antebraço com fratura do colo do rádio e a cabeça inclinada. Uma haste fina, de ponta curva, entra pelo **rádio distal**, sobe pelo canal até o foco (A a C), engancha a cabeça (D) e, girada pela empunhadura, a leva de volta ao lugar (E). É a técnica de **Metaizeau**.\n\n**A técnica no Rockwood and Wilkins (10ª ed., cap. 11).** Haste com **60% a 70% do diâmetro do istmo**, ponta dobrada **30 a 40 graus**, entrada no **rádio distal**. A ponta é impactada na epífise e a haste é **girada**, o que reduz a angulação por dentro do canal. O capítulo relata **80% a 90% de resultados excelentes**.\n\n**Onde ela entra.** Quando a redução fechada falha (Patterson, israelense e outras manobras), vem a redução assistida por fio percutâneo e a haste de Metaizeau, antes da redução aberta. Fechado vai melhor que aberto, que aumenta osteonecrose e sinostose.\n\n**Na prova:** haste intramedular pelo rádio distal que gira e reduz a cabeça = **Metaizeau**.\n\nO resumo de colo do rádio e olécrano da criança descreve a técnica na seção de tratamento.",
+   "correta": "**D: Metaizeau.** A figura mostra a haste de ponta curva entrando pelo rádio distal, impactada na cabeça e girada para reduzi-la, exatamente como o capítulo descreve.",
+   "incorretas": {
+    "A": "**A técnica israelense é uma manobra fechada**, com o cotovelo a 90 graus e pronação, sem haste.",
+    "B": "**Jeffrey não aparece entre as técnicas do capítulo**, e a figura mostra uma haste intramedular, não uma manobra manual.",
+    "C": "**Wallace também não está entre as técnicas descritas.** A haste pelo rádio distal é a assinatura de Metaizeau."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Rádio proximal: tratamento"
+    ],
+    "blocos": [
+     "radio-proximal-tratamento-18c3f92b",
+     "radio-proximal-tratamento-bb1be85f",
+     "radio-proximal-tratamento-98185824"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "124542a0a02cbc1120d1a800167770eb0de8d8e40c773b795770c29848019c93"
+   }
+  ],
+  "imagensConferidas": [
+   "pediatria/pediatria-0708-1.jpeg"
+  ]
+ },
+ "pediatria-0934": {
+  "questaoSha256": "b4b8597976e08bda5afad1b2a9f944e26169cc9bf748e5d9a9b991f0fc468c7c",
+  "comentarioAnteriorSha256": "245465eee8fc1fd182ddf4b907e535907ae04bb1e2faef7feb4cb372d58470ba",
+  "comentario": {
+   "conceito": "**O que a figura mostra.** Dois desenhos de um cotovelo **fletido a 90 graus**, com o polegar do examinador apoiado sobre a cabeça do rádio, na face lateral, e uma seta curva indicando a **rotação** do antebraço. É uma manobra fechada feita com o cotovelo dobrado, usando a rotação para levar a cabeça de volta.\n\n**As técnicas fechadas no Rockwood and Wilkins (10ª ed., cap. 11).** Nenhuma é superior às outras:\n- **Patterson:** cotovelo **estendido**, tração, supinação, varo e pressão lateral;\n- **israelense:** cotovelo a **90 graus** e **pronação**, com pressão sobre a cabeça;\n- Kaufman, Neher e Torch, Monson (supinação com pressão na diáfise) e a faixa de Esmarch.\n\nO cotovelo a 90 graus com rotação é o que separa a israelense da de Patterson, feita em extensão.\n\n**Sem gabarito oficial no acervo.** A figura corresponde à técnica israelense descrita no capítulo.\n\n**Na prova:** cotovelo a **90 graus** + **pronação** + pressão na cabeça = **israelense**; cotovelo estendido + varo + supinação = Patterson.\n\nO resumo de colo do rádio e olécrano da criança traz as técnicas na seção de tratamento.",
+   "correta": "**D: Israeli.** O cotovelo a 90 graus, a pressão do polegar na cabeça e a rotação em pronação são a técnica israelense descrita no capítulo.",
+   "incorretas": {
+    "A": "**Patterson é feita com o cotovelo estendido**, com tração, supinação, varo e pressão lateral; a figura mostra o cotovelo a 90 graus.",
+    "B": "**Kaufman é outra manobra fechada citada no capítulo**, mas não é a descrita com cotovelo a 90 graus e pronação.",
+    "C": "**Jeffrey não aparece entre as técnicas do capítulo.**"
+   },
+   "conferido": false,
+   "provavel": "D",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+    "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+    "secoes": [
+     "Rádio proximal: tratamento"
+    ],
+    "blocos": [
+     "radio-proximal-tratamento-18c3f92b",
+     "radio-proximal-tratamento-bb1be85f",
+     "radio-proximal-tratamento-98185824"
+    ],
+    "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+    "trechosSha256": "124542a0a02cbc1120d1a800167770eb0de8d8e40c773b795770c29848019c93"
+   }
+  ],
+  "imagensConferidas": [
+   "sbot-sp-238.png"
+  ]
+ }
+}

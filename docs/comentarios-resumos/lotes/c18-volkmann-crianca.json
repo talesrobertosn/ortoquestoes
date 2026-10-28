@@ -1,0 +1,40 @@
+{
+ "pediatria-0827": {
+  "questaoSha256": "55c97b72267cc6b74b1091bbafaabb68f91b7f67841a94a5b30a645c5bb42dad",
+  "comentarioAnteriorSha256": "aaefc1c057cfe2a3fe972ce309e61025bf39e128ab08fe2dc7b468a45ec89996",
+  "comentario": {
+   "conceito": "A contratura isquêmica de VOLKMANN é a sequela da síndrome compartimental do antebraço que não foi aberta a tempo: o músculo necrosado vira fibrose e encurta, puxando punho e dedos em flexão. A pergunta é: quais músculos sofrem mais?\n\n**Os compartimentos do antebraço** (Tabela 6-2 do capítulo):\n| Compartimento | Conteúdo |\n|---|---|\n| Volar superficial | Flexor radial do carpo, palmar longo, pronador redondo, flexor ulnar do carpo, flexor superficial dos dedos |\n| Volar profundo | **Flexor profundo dos dedos**, **flexor longo do polegar**, pronador quadrado; nervo e artéria interósseos anteriores |\n| Dorsal | Musculatura móvel e extensores |\n\n**Onde a lesão começa.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 6, de Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic), o **flexor profundo** é o **primeiro e o mais afetado**. Ele fica no fundo, junto ao osso e à membrana interóssea. Por isso, na fasciotomia, o passo mais importante é abrir o compartimento profundo pelo intervalo entre o **flexor ulnar do carpo e o flexor superficial**.\n\n**A classificação de TSUGE** mostra a mesma ordem, de dentro para fora:\n- **leve:** só o flexor profundo do **médio e do anular**;\n- **moderada:** flexor profundo e flexor longo do polegar, superficial em parte, mediano pior; é a forma típica da **supracondiliana dos 5 aos 10 anos**;\n- **grave:** todos os flexores dos dedos **e do punho**, com contraturas fixas.\n\nOs flexores do carpo, mais superficiais, só entram na forma grave.\n\n**Na prova:** VOLKMANN do antebraço = **flexor profundo dos dedos e flexor longo do polegar** primeiro; flexores do punho só na forma grave.\n\nO resumo de síndrome compartimental na criança traz a classificação de TSUGE na seção da contratura de VOLKMANN.",
+   "correta": "**B: Errado (resposta provável, sem gabarito oficial no acervo).** O capítulo aponta o flexor profundo como o primeiro e mais afetado; os flexores radial e ulnar do carpo só são atingidos na forma grave de TSUGE.",
+   "incorretas": {
+    "A": "**A afirmação troca o compartimento.** Os flexores do carpo ficam no compartimento volar superficial, que sofre depois; o centro da lesão é o profundo."
+   },
+   "conferido": false,
+   "provavel": "B",
+   "referencias": [
+    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Contratura de VOLKMANN e prognóstico; Membro superior e antebraço."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+    "titulo": "Síndrome compartimental na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+    "secoes": [
+     "Contratura de VOLKMANN e prognóstico",
+     "Membro superior e antebraço"
+    ],
+    "blocos": [
+     "contratura-de-volkmann-e-prognostico-cf5cb7da",
+     "membro-superior-e-antebraco-192c5745",
+     "membro-superior-e-antebraco-8f3bb01a",
+     "contratura-de-volkmann-e-prognostico-d4426d47"
+    ],
+    "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+    "trechosSha256": "6b8fe01924e65e401feca40aefeb4f43dd8da010e96f47cb3b08d8bc20632669"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}
