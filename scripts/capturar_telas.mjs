@@ -227,6 +227,8 @@ async function atender(rota) {
   if (ADMIN && rpc && rpcsAdmin[rpc]) { const [s, c] = rpcsAdmin[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc && rpcs[rpc]) { const [s, c] = rpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc) return responder(200, null)
+  // ASSINATURAS_CONTA='[{"id_externo":"pix:1","fim_periodo":"..."}]': as assinaturas vigentes lidas pela REST (Pix ou cartão).
+  if (url.pathname === '/rest/v1/assinaturas' && process.env.ASSINATURAS_CONTA) return responder(200, JSON.parse(process.env.ASSINATURAS_CONTA))
   return responder(200, [])
 }
 function usuarioFalso(id) {

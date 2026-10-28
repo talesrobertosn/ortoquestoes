@@ -593,3 +593,8 @@
   .vd-bib__grade, .vd-bib__estudo { grid-template-columns: 1fr; }
   .vd-bib__cartao { transform: none; }
 }
+/* Cartão claro da renovação pelo Pix dentro do bloco escuro do assinante. */
+.vd-ativo .renova-pix { color: var(--texto); margin: 0.6rem 0 0; }
+.vd-ativo .renova-pix h3 { color: var(--texto); }
+.vd-ativo .renova-pix p { max-width: none; color: var(--texto); }
+.vd-ativo .renova-pix .renova-pix__topo p { color: var(--texto-2); }
