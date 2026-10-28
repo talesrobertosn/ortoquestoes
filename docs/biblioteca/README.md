@@ -138,6 +138,24 @@ Legenda da figura no original (a imagem só aparece com licença).
 "Alterações locais pendentes"; banco sem a parte 29 aparece "Falha na sincronização" e as marcações
 ficam no aparelho (sem travar as respostas das questões e sem ir para "não enviados").
 
+## Vitrine e leitor (redesenho de 27/10/2026)
+
+- **Vitrine** (`src/paginas/Resumos.tsx`, regras em `src/biblioteca/estante.ts`): capa verde com a estante pixel, na identidade da
+  página inicial; "Continuar estudando"; busca; filtros de livro, área e progresso; ordem (livro, lidos por último, mais cobrados,
+  título); contagem só com filtro ativo; "Limpar filtros" e estado vazio. Os filtros vivem no endereço (`#/resumos?livro=…`) e o
+  "Biblioteca" do leitor volta à estante como a pessoa deixou (`voltarAEstante`). Os cartões são livros com a lombada da área e
+  **têm todos a mesma altura** (pedido do Tales): título em até duas linhas, uma linha de provas (duas etiquetas e "+N").
+- **Leitor** (`src/paginas/LeitorResumo.tsx`): visual **editorial e sóbrio**, sem pixel nem sombra dura (o Tales achou o pixel
+  infantil dentro da leitura). Barra com rótulos no computador (Índice, Buscar, Marcar página, Notas, AA Aparência, Ajuda), trilha
+  Biblioteca › Livro › Capítulo, índice com "Você está aqui", marcadores com remover, prévia dos temas, fim "Você concluiu…" com
+  praticar, próximo capítulo publicado do mesmo livro (`proximoCapitulo`), revisar destaques e voltar.
+- **Questão no leitor**: continua a mesma `QuestaoDireta` (nenhuma correção paralela). Ao abrir entra no histórico: o Voltar do
+  navegador ou do celular fecha só a questão; a leitura fica no mesmo ponto e o foco volta ao chip. No celular ocupa a tela.
+- **Tutoriais** (`src/biblioteca/GuiaTour.tsx`): "Como usar a Biblioteca" e "Ajuda do leitor", no molde do Atlas, acendendo os
+  controles de verdade. Abrem sozinhos na primeira visita (nunca sob webdriver) e depois pelos botões; o "visto" fica na chave
+  global `resumos:guias`.
+- Teste: `fixtures/testar_estante_biblioteca.mjs`.
+
 ## Testes
 
 - `npm test` inclui `fixtures/testar_biblioteca.mjs`: âncoras (exata, movida, outro bloco, trecho

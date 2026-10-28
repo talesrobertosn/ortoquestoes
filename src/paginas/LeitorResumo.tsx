@@ -1,7 +1,9 @@
 import { Fragment, lazy, Suspense, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react'
-import { carregarCapitulo, pedacos, questoesReais, textoPuro, textosDoCapitulo } from '../biblioteca/conteudo'
+import { carregarCapitulo, carregarIndiceBiblioteca, pedacos, questoesReais, textoPuro, textosDoCapitulo } from '../biblioteca/conteudo'
 import { criarAncora, faixasDoBloco, resolverAncora, type Ancora, type AncoraResolvida } from '../biblioteca/ancoras'
-import { CORES, ehTexto, type Bloco, type Capitulo, type CorMarca, type Marca, type Preferencias, type Radar } from '../biblioteca/tipos'
+import { CORES, ehTexto, type Bloco, type Capitulo, type CorMarca, type Marca, type Preferencias, type Radar, type ResumoCapitulo } from '../biblioteca/tipos'
+import { chaveLivro, numeroCapitulo, proximoCapitulo, rotuloLivro, voltarAEstante } from '../biblioteca/estante'
+import { GuiaTour, deveAbrirGuia, type PassoGuia } from '../biblioteca/GuiaTour'
 import { usarBiblioteca, usarEstadoSalvamento } from '../biblioteca/usarBiblioteca'
 import { FrasesDoTema } from '../biblioteca/FrasesDoTema'
 import { GRAVAR_SOZINHO_S, PASSO_MS, novoCronometro, passoCronometro, registrarAtividade, retirarTempo } from '../biblioteca/tempoLeitura'
@@ -41,6 +43,17 @@ const RADAR: Record<Radar, { rotulo: string; texto: string }> = {
 }
 const LARGURA: Record<Preferencias['largura'], number> = { estreita: 560, media: 680, larga: 820 }
 const normalizar = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+
+const PASSOS_LEITOR: PassoGuia[] = [
+  { titulo: 'Ajuda do leitor', texto: 'Um minuto para conhecer os controles. A sua posição de leitura é salva sozinha: pode fechar a página quando quiser e voltar no mesmo parágrafo.' },
+  { alvo: '[data-guia="lr-trilha"]', titulo: 'Onde você está', texto: 'Livro, capítulo e o estado do salvamento. O botão da esquerda volta para a Biblioteca do jeito que você a deixou.' },
+  { alvo: '[data-guia="lr-indice"]', titulo: 'Índice', texto: 'Todas as partes do capítulo. A parte em que você está fica marcada, e as já lidas ficam mais claras.' },
+  { alvo: '[data-guia="lr-busca"]', titulo: 'Buscar no capítulo', texto: 'Ache uma classificação ou um nome próprio e pule direto para o trecho.' },
+  { alvo: '[data-guia="lr-marcador"]', titulo: 'Marcar página', texto: 'Guarda este lugar para reencontrar depois, sem pintar o texto. Os marcadores ficam na lista de Notas, de onde também saem.' },
+  { alvo: '[data-guia="lr-notas"]', titulo: 'Destaques e notas', texto: 'Selecione qualquer trecho para destacar em cinco cores ou escrever uma nota. Tudo aparece aqui e no seu caderno, em todos os aparelhos.' },
+  { alvo: '[data-guia="lr-aa"]', titulo: 'Aparência', texto: 'Tema claro, sépia ou escuro, tamanho da letra, espaço entre linhas, largura e leitura em páginas.' },
+  { alvo: '.lr-cobranca__lista button', titulo: 'Questões de prova no texto', texto: 'Cada chip é uma questão que já caiu (prova e ano). Ela abre ao lado da leitura; ao voltar, você está no mesmo parágrafo.' },
+]
 
 interface MarcaNoTexto { id: string; inicio: number; fim: number; cor: CorMarca; nota: boolean }
 interface Selecao { ancora: Ancora; texto: string; x: number; y: number; embaixo: boolean; secao: string | null }
@@ -104,6 +117,13 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const salvamento = usarEstadoSalvamento()
   const { ordem, textos, secaoDe } = useMemo(() => textosDoCapitulo(capitulo), [capitulo])
   const leitura = bib.leituras[capitulo.id]
+  // A estante (para a trilha e o próximo capítulo publicado do mesmo livro).
+  const [estante, definirEstante] = useState<ResumoCapitulo[]>([])
+  useEffect(() => { let vivo = true; carregarIndiceBiblioteca().then((d) => { if (vivo) definirEstante(d.capitulos) }).catch(() => {}); return () => { vivo = false } }, [])
+  const proximo = useMemo(() => proximoCapitulo(estante, capitulo), [estante, capitulo])
+  const [guia, definirGuia] = useState(false)
+  // Primeira vez no leitor: a ajuda abre sozinha depois que o texto assentou (só uma vez por aparelho).
+  useEffect(() => { if (deFundo || !deveAbrirGuia('leitor')) return; const t = window.setTimeout(() => definirGuia(true), 1200); return () => window.clearTimeout(t) }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Marcações: reencontra cada âncora no texto atual ──
   const doCapitulo = useMemo(() => bib.marcas.filter((m) => m.capitulo === capitulo.id), [bib.marcas, capitulo.id])
@@ -139,6 +159,27 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const [aviso, definirAviso] = useState<AvisoLeitor | null>(null)
   const [busca, definirBusca] = useState('')
 
+  // Questão aberta ao lado: entra no histórico, para o Voltar do navegador (e do celular) fechar só ela
+  // e devolver a leitura no mesmo parágrafo; o foco volta ao chip que a abriu.
+  const origemQuestao = useRef<HTMLElement | null>(null)
+  const fecharQuestaoBotao = useRef<HTMLButtonElement>(null)
+  const naHistoria = () => !!(history.state as { lrQuestao?: string } | null)?.lrQuestao
+  const abrirQuestao = useCallback((idQ: string) => {
+    origemQuestao.current = document.activeElement as HTMLElement | null
+    definirQuestao(idQ)
+    if (!naHistoria()) history.pushState({ ...(history.state ?? {}), lrQuestao: idQ }, '')
+  }, [])
+  const fecharQuestao = useCallback(() => { if (naHistoria()) history.back(); else definirQuestao(null) }, [])
+  useEffect(() => {
+    const voltou = () => { if (!naHistoria()) definirQuestao(null) }
+    window.addEventListener('popstate', voltou)
+    return () => window.removeEventListener('popstate', voltou)
+  }, [])
+  useEffect(() => {
+    if (questao) { fecharQuestaoBotao.current?.focus({ preventScroll: true }); return }
+    origemQuestao.current?.focus({ preventScroll: true }); origemQuestao.current = null
+  }, [questao])
+
   const rolagem = useRef<HTMLDivElement>(null)
   const pagina = useRef<HTMLElement>(null)
   usarSemCopia(pagina)
@@ -151,6 +192,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   }, [])
   const [progresso, definirProgresso] = useState(leitura?.progresso ?? 0)
   const posicao = useRef<{ bloco: string; fracao: number } | null>(null)
+  const [secaoAtual, definirSecaoAtual] = useState<string | null>(null)
 
   const elementoDoBloco = (b: string) => pagina.current?.querySelector<HTMLElement>(`[data-bloco="${CSS.escape(b)}"]`) ?? null
 
@@ -267,9 +309,11 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     registrarAtividade(cronometro.current)
     posicao.current = lerPosicao()
     definirProgresso(progressoAtual())
+    const b = posicao.current?.bloco
+    if (b) definirSecaoAtual(b.startsWith('h-') ? b.slice(2) : secaoDe.get(b) ?? null)
     clearTimeout(temporizador.current)
     temporizador.current = setTimeout(salvarAgora, 1200)
-  }, [lerPosicao, salvarAgora]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [lerPosicao, salvarAgora, secaoDe]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     const sair = () => { if (document.visibilityState === 'hidden') salvarAgora(true) }
     const fechar = () => salvarAgora(true)
@@ -377,21 +421,21 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   function alternarMarcador() {
     const b = blocoTopo()
     if (!b) return
-    if (marcadorAtual) { bib.apagarMarca(marcadorAtual.marca.id); definirAviso({ texto: 'Marcador removido.' }); return }
+    if (marcadorAtual) { const idM = marcadorAtual.marca.id; bib.apagarMarca(idM); definirAviso({ texto: 'Marcador removido.', desfazer: () => bib.restaurarMarca(idM) }); return }
     const texto = textos.get(b)
     if (!texto) return
     const ancora = criarAncora(capitulo.id, capitulo.versao, ordem, textos, { bloco: b, offset: 0 }, { bloco: b, offset: Math.min(texto.length, 80) })
-    if (ancora) { bib.criarMarca(capitulo.id, ancora, 'amarelo', { marcador: true }); definirAviso({ texto: 'Página marcada.' }) }
+    if (ancora) { bib.criarMarca(capitulo.id, ancora, 'amarelo', { marcador: true }); definirAviso({ texto: 'Página marcada. Ela fica em Notas, na lista de marcadores.', acao: { rotulo: 'Ver marcadores', fazer: () => definirPainel('notas') } }) }
   }
 
   // ── Teclado ──
   useEffect(() => {
     // Com os flashcards abertos por cima, as teclas são deles (Espaço vira o flashcard, não a página do resumo).
-    if (deFundo) return
+    if (deFundo || guia) return
     const tecla = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement)?.closest('input, textarea, [contenteditable="true"]')) { if (e.key === 'Escape') (e.target as HTMLElement).blur(); return }
       if (e.metaKey || e.ctrlKey || e.altKey) return
-      if (e.key === 'Escape') { if (questao) definirQuestao(null); else if (aberta || selecao) { definirAberta(null); limparSelecao() } else if (painel) definirPainel(null); else if (foco) definirFoco(false); return }
+      if (e.key === 'Escape') { if (questao) fecharQuestao(); else if (aberta || selecao) { definirAberta(null); limparSelecao() } else if (painel) definirPainel(null); else if (foco) definirFoco(false); return }
       if (questao) return
       if (paginado && (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ')) { e.preventDefault(); mudarPagina(1) }
       else if (paginado && (e.key === 'ArrowLeft' || e.key === 'PageUp')) { e.preventDefault(); mudarPagina(-1) }
@@ -399,10 +443,11 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
       else if (e.key === 'i') definirPainel((p) => p === 'indice' ? null : 'indice')
       else if (e.key === 'n') definirPainel((p) => p === 'notas' ? null : 'notas')
       else if (e.key === 'f') definirFoco((f) => !f)
+      else if (e.key === '?') definirGuia(true)
     }
     window.addEventListener('keydown', tecla)
     return () => window.removeEventListener('keydown', tecla)
-  }, [paginado, mudarPagina, painel, questao, aberta, selecao, foco, deFundo])
+  }, [paginado, mudarPagina, painel, questao, aberta, selecao, foco, deFundo, guia, abrirQuestao, fecharQuestao])
 
   // Deslizar no modo paginado (sem atrapalhar a seleção de texto).
   const toque = useRef<{ x: number; y: number; t: number } | null>(null)
@@ -459,6 +504,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
   const aberto = aberta ? resolvidas.find(({ marca }) => marca.id === aberta.id)?.marca ?? null : null
   const orfas = resolvidas.filter(({ r }) => r.estado === 'orfa')
+  const destaquesDoCapitulo = doCapitulo.filter((m) => !m.marcador).length
   const progressoSecoes = useMemo(() => {
     const idx = posicao.current ? ordem.indexOf(posicao.current.bloco) : -1
     return new Set(capitulo.secoes.filter((s) => { const ultimo = [...s.blocos].reverse().find(ehTexto); return ultimo && idx >= ordem.indexOf(ultimo.id) }).map((s) => s.id))
@@ -467,29 +513,41 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   return (
     <div className={`lr lr--${pref.tema}${painel ? ' lr--com-painel' : ''}${foco ? ' lr--foco' : ''}${paginado ? ' lr--paginado' : ''}${pref.fonteFamilia === 'sem-serifa' ? ' lr--sem-serifa' : ''}${pref.justificar ? ' lr--justificado' : ''}${pref.prova ? '' : ' lr--sem-prova'}${deFundo ? ' lr--fundo' : ''}`} data-tema-leitor={pref.tema}>
       <header className="lr-barra">
-        <a className="lr-botao" href={href('/resumos')} aria-label="Voltar à biblioteca" title="Biblioteca"><Icone nome="esquerda" tamanho={20} /></a>
-        <div className="lr-barra__titulo">
+        <a className="lr-botao lr-botao--voltar" href={href(voltarAEstante())} aria-label="Voltar à Biblioteca" title="Voltar à Biblioteca"><Icone nome="esquerda" tamanho={20} /><span className="lr-botao__rotulo">Biblioteca</span></a>
+        <div className="lr-barra__titulo" data-guia="lr-trilha">
+          <small className="lr-barra__livro">{rotuloLivro(capitulo)} · Cap. {numeroCapitulo(capitulo)}</small>
           <strong>{capitulo.titulo}</strong>
           <span className={`lr-salvo lr-salvo--${salvamento.estado}`} title={salvamento.detalhe} role="status" aria-live="polite">
-            <i aria-hidden="true" />{salvamento.texto}
+            <i aria-hidden="true" />{salvamento.texto}{progresso > 1 && !porta.fechado ? <span className="lr-salvo__pct numerico"> · {Math.round(Math.min(100, progresso))}% lido</span> : null}
           </span>
         </div>
         <div className="lr-barra__acoes">
-          <button type="button" className="lr-botao" onClick={() => definirPainel(painel === 'indice' ? null : 'indice')} aria-pressed={painel === 'indice'} aria-label="Índice" title="Índice (i)"><Icone nome="menu" tamanho={20} /></button>
-          <button type="button" className="lr-botao" onClick={() => definirPainel(painel === 'busca' ? null : 'busca')} aria-pressed={painel === 'busca'} aria-label="Buscar no capítulo" title="Buscar (/)"><Icone nome="busca" tamanho={20} /></button>
-          <button type="button" className="lr-botao" onClick={alternarMarcador} aria-pressed={!!marcadorAtual} aria-label={marcadorAtual ? 'Remover marcador desta página' : 'Marcar esta página'} title="Marcador"><Icone nome="bandeira" tamanho={19} /></button>
-          <button type="button" className="lr-botao" onClick={() => definirPainel(painel === 'notas' ? null : 'notas')} aria-pressed={painel === 'notas'} aria-label="Minhas marcações e notas" title="Notas (n)"><Icone nome="lapis" tamanho={19} />{doCapitulo.length > 0 && <small className="lr-botao__n numerico">{doCapitulo.length}</small>}</button>
-          <button type="button" className="lr-botao lr-botao--aa" onClick={() => definirPainel(painel === 'aparencia' ? null : 'aparencia')} aria-pressed={painel === 'aparencia'} aria-label="Aparência do texto" title="Aparência">Aa</button>
-          <button type="button" className="lr-botao" onClick={() => definirFoco(!foco)} aria-pressed={foco} aria-label="Modo concentração" title="Concentração (f)"><Icone nome="olho" tamanho={19} /></button>
+          <button type="button" className="lr-botao" data-guia="lr-indice" onClick={() => definirPainel(painel === 'indice' ? null : 'indice')} aria-pressed={painel === 'indice'} aria-label="Índice" title="Índice (i)"><Icone nome="menu" tamanho={20} /><span className="lr-botao__rotulo">Índice</span></button>
+          <button type="button" className="lr-botao" data-guia="lr-busca" onClick={() => definirPainel(painel === 'busca' ? null : 'busca')} aria-pressed={painel === 'busca'} aria-label="Buscar no capítulo" title="Buscar no capítulo (/)"><Icone nome="busca" tamanho={20} /><span className="lr-botao__rotulo">Buscar</span></button>
+          <button type="button" className="lr-botao" data-guia="lr-marcador" onClick={alternarMarcador} aria-pressed={!!marcadorAtual} aria-label={marcadorAtual ? 'Remover o marcador desta página' : 'Marcar esta página'} title={marcadorAtual ? 'Página marcada: toque para remover' : 'Marcar esta página para voltar depois'}><Icone nome="bandeira" tamanho={19} /><span className="lr-botao__rotulo">{marcadorAtual ? 'Marcada' : 'Marcar página'}</span></button>
+          <button type="button" className="lr-botao" data-guia="lr-notas" onClick={() => definirPainel(painel === 'notas' ? null : 'notas')} aria-pressed={painel === 'notas'} aria-label={`Destaques, notas e marcadores${doCapitulo.length ? ` (${doCapitulo.length})` : ''}`} title="Destaques, notas e marcadores (n)"><Icone nome="lapis" tamanho={19} /><span className="lr-botao__rotulo">Notas</span>{doCapitulo.length > 0 && <small className="lr-botao__n numerico" aria-hidden="true">{doCapitulo.length}</small>}</button>
+          <button type="button" className="lr-botao lr-botao--aa" data-guia="lr-aa" onClick={() => definirPainel(painel === 'aparencia' ? null : 'aparencia')} aria-pressed={painel === 'aparencia'} aria-label="Aparência do texto" title="Aparência: tema, letra, espaçamento e largura"><span className="lr-botao__aa" aria-hidden="true">AA</span><span className="lr-botao__rotulo">Aparência</span></button>
+          <button type="button" className="lr-botao lr-botao--foco" onClick={() => definirFoco(!foco)} aria-pressed={foco} aria-label="Modo concentração" title="Concentração: só o texto (f)"><Icone nome="olho" tamanho={19} /></button>
+          <button type="button" className="lr-botao lr-botao--ajuda" onClick={() => { definirPainel(null); definirGuia(true) }} aria-label="Ajuda do leitor" title="Ajuda do leitor (?)"><Icone nome="interrogacao" tamanho={19} /></button>
         </div>
-        <span className="lr-progresso" aria-hidden="true"><span style={{ width: `${Math.min(100, progresso)}%` }} /></span>
+        <span className="lr-progresso" role="progressbar" aria-label="Progresso no capítulo" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(Math.min(100, progresso))}><span style={{ width: `${Math.min(100, progresso)}%` }} /></span>
       </header>
 
       <div className="lr-rolagem" ref={rolagem} onScroll={aoRolar} onTouchStart={aoTocar} onTouchEnd={aoSoltar}>
         <article className="lr-pagina" ref={pagina} style={estiloPagina} onClick={aoClicarTexto} lang="pt-BR">
           <header className="lr-capa">
-            <p className="lr-capa__selo">Resumo OrtoQuestões · {indice?.temas.find((t) => t.slug === capitulo.especialidade)?.nome ?? capitulo.especialidade}</p>
-            <h1>{capitulo.titulo}</h1>
+            <nav className="lr-trilha" aria-label="Trilha"><ol>
+              <li><a href={href(voltarAEstante())}>Biblioteca</a></li>
+              <li><a href={href(`/resumos?livro=${encodeURIComponent(chaveLivro(capitulo))}`)}>{rotuloLivro(capitulo)}</a></li>
+              <li aria-current="page">Cap. {numeroCapitulo(capitulo)}</li>
+            </ol></nav>
+            <div className="lr-capa__topo">
+              <p className="lr-capa__numero" aria-hidden="true">Capítulo <b>{numeroCapitulo(capitulo)}</b></p>
+              <div>
+                <p className="lr-capa__selo">Resumo OrtoQuestões · {indice?.temas.find((t) => t.slug === capitulo.especialidade)?.nome ?? capitulo.especialidade}</p>
+                <h1>{capitulo.titulo}</h1>
+              </div>
+            </div>
             <p className="lr-capa__ref">A partir de <cite>{capitulo.livro}</cite>, {capitulo.edicao}. {capitulo.capitulo}. {capitulo.autores}.</p>
             <p className="lr-capa__meta"><span>~{capitulo.minutos} min de leitura</span>{idsDoCapitulo.length > 0 && <span>{idsDoCapitulo.length} questões citadas</span>}{leitura?.concluidoEm && <span className="lr-capa__ok"><Icone nome="certo" tamanho={14} /> Concluído</span>}{alvoFc && <a className="lr-capa__fc" href={href(linkFlashcards(alvoFc, capitulo.titulo))}><Icone nome="raio" tamanho={14} /> Estudar flashcards deste tema</a>}</p>
             <p className="lr-capa__dica">Selecione qualquer trecho para destacar ou anotar. Tudo fica salvo na sua conta.</p>
@@ -503,24 +561,25 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
                 <p className={`lr-radar lr-radar--${s.radar}`} title={RADAR[s.radar].texto}>
                   {s.radar === 'confirmado' ? (reais.size ? <>{RADAR.confirmado.rotulo} · {reais.size} {reais.size === 1 ? 'questão' : 'questões'}</> : 'Nenhuma questão encontrada no conjunto analisado') : RADAR[s.radar].rotulo}
                 </p>
-                <Blocos blocos={s.blocos} porBloco={porBloco} marcadores={marcadores} capitulo={capitulo} indice={indice} aoAbrirQuestao={definirQuestao} />
+                <Blocos blocos={s.blocos} porBloco={porBloco} marcadores={marcadores} capitulo={capitulo} indice={indice} aoAbrirQuestao={abrirQuestao} />
               </section>
             )
           })}
           {porta.fechado && <PortaLeitura capitulo={capitulo.id} numeroCapitulo={capitulo.capitulo.match(/\d+/)?.[0]} porta={porta} restantes={capitulo.secoes.slice(porta.abertas)} />}
           {!porta.fechado && capitulo.subtemas?.length ? <FrasesDoTema subtemas={capitulo.subtemas} /> : null}
-          {porta.fechado ? <p className="lr-capa__ref">Texto autoral do OrtoQuestões, com as ideias e os números do capítulo; não substitui a leitura do original.</p> : <footer className="lr-fim" data-bloco="fim">
+          {porta.fechado ? <p className="lr-capa__ref">Texto autoral do OrtoQuestões, com as ideias e os números do capítulo; não substitui a leitura do original.</p> : <footer className="lr-fim" data-bloco="fim" aria-labelledby="lr-fim-titulo">
             <div className="lr-fim__cartao">
-              <Icone nome="certo" tamanho={22} />
-              <div><strong>{leitura?.concluidoEm ? 'Capítulo concluído' : 'Fim do resumo'}</strong><span>Agora, fixe com as questões: elas voltam na revisão no tempo certo.</span></div>
+              <span className="lr-fim__selo" aria-hidden="true"><Icone nome="certo" tamanho={22} /></span>
+              <div><strong id="lr-fim-titulo">Você concluiu {capitulo.titulo}</strong><span>{rotuloLivro(capitulo)} · Cap. {numeroCapitulo(capitulo)}. Agora, fixe com as questões: elas voltam na revisão no tempo certo.</span></div>
             </div>
-            <div className="lr-fim__acoes">
-              {idsDoCapitulo.length > 0 && <button type="button" className="botao botao--principal" onClick={treinarCapitulo}><Icone nome={premium ? 'alvo' : 'cadeado'} tamanho={16} /> Treinar as {idsDoCapitulo.length} questões do capítulo</button>}
-              {alvoFc && <a className="botao" href={href(linkFlashcards(alvoFc, capitulo.titulo))}><Icone nome="raio" tamanho={16} /> Estudar flashcards deste tema <small className="numerico">{alvoFc.total}</small></a>}
-              <a className="botao" href={href('/resumos/caderno')}><Icone nome="lapis" tamanho={16} /> Meu caderno de estudo</a>
-              <a className="botao" href={href('/resumos')}>Outros resumos</a>
-            </div>
-            <p className="lr-capa__ref">Fonte: {capitulo.fonte}. Texto autoral do OrtoQuestões, com as ideias e os números do capítulo; não substitui a leitura do original.</p>
+            <ul className="lr-fim__grade">
+              {idsDoCapitulo.length > 0 && <li><button type="button" className="lr-fim__acao lr-fim__acao--forte" onClick={treinarCapitulo}><Icone nome={premium ? 'alvo' : 'cadeado'} tamanho={20} /><span><strong>Praticar as {idsDoCapitulo.length} questões</strong><small>{premium ? 'Uma sessão com as questões citadas, na ordem do texto' : 'Para assinantes: gabarito, comentário e revisão'}</small></span></button></li>}
+              {proximo && <li><a className="lr-fim__acao" href={href(`/resumos/${proximo.id}`)}><Icone nome="direita" tamanho={20} /><span><strong>Próximo capítulo</strong><small>Cap. {numeroCapitulo(proximo)} · {proximo.titulo} · ~{proximo.minutos} min</small></span></a></li>}
+              {destaquesDoCapitulo > 0 && <li><button type="button" className="lr-fim__acao" onClick={() => definirPainel('notas')}><Icone nome="lapis" tamanho={20} /><span><strong>Revisar meus destaques</strong><small>{destaquesDoCapitulo} {destaquesDoCapitulo === 1 ? 'destaque' : 'destaques'} neste capítulo</small></span></button></li>}
+              {alvoFc && <li><a className="lr-fim__acao" href={href(linkFlashcards(alvoFc, capitulo.titulo))}><Icone nome="raio" tamanho={20} /><span><strong>Flashcards deste tema</strong><small className="numerico">{alvoFc.total} cartões</small></span></a></li>}
+              <li><a className="lr-fim__acao" href={href(voltarAEstante())}><Icone nome="livro" tamanho={20} /><span><strong>Voltar à Biblioteca</strong><small>{proximo ? 'Escolher outro capítulo' : 'Este é o último capítulo publicado deste livro por enquanto'}</small></span></a></li>
+            </ul>
+            <p className="lr-capa__ref">Fonte: {capitulo.fonte}. Texto autoral do OrtoQuestões, com as ideias e os números do capítulo; não substitui a leitura do original. <a href={href('/resumos/caderno')}>Meu caderno de estudo</a>.</p>
           </footer>}
         </article>
       </div>
@@ -538,11 +597,11 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
         aoFavorita={() => bib.editarMarca(aberto.id, { favorita: !aberto.favorita })}        aoResolverConflito={(notas, nota) => bib.editarMarca(aberto.id, { notasDeOutroAparelho: notas, ...(nota !== undefined ? { nota } : {}) })}
         aoApagar={() => { const idM = aberto.id; bib.apagarMarca(idM); definirAberta(null); definirAviso({ texto: 'Destaque removido.', desfazer: () => bib.restaurarMarca(idM) }) }} />}
 
-      {painel && <aside className={`lr-painel lr-painel--${painel}`} aria-label={painel === 'indice' ? 'Índice' : painel === 'notas' ? 'Marcações e notas' : painel === 'busca' ? 'Buscar' : 'Aparência'}>
-        <header className="lr-painel__topo"><strong>{painel === 'indice' ? 'Índice' : painel === 'notas' ? 'Marcações e notas' : painel === 'busca' ? 'Buscar no capítulo' : 'Aparência'}</strong><button type="button" className="lr-botao" onClick={() => definirPainel(null)} aria-label="Fechar"><Icone nome="fechar" tamanho={18} /></button></header>
-        {painel === 'indice' && <ol className="lr-indice">{capitulo.secoes.map((s, i) => { const fechada = i >= porta.abertas; return <li key={s.id} className={fechada ? 'lr-indice--fechada' : progressoSecoes.has(s.id) ? 'lr-indice--lida' : ''}>
-          <button type="button" onClick={() => { irPara(fechada ? 'porta' : `h-${s.id}`, 0, fechada); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null) }} aria-label={fechada ? `${s.titulo} (crie a conta grátis para ler)` : undefined}><span>{s.titulo}</span>{fechada && <span className="lr-indice__cadeado" title="Leitura completa grátis com conta"><Icone nome="cadeado" tamanho={14} /></span>}<i className={`lr-ponto lr-ponto--${s.radar}`} title={RADAR[s.radar].rotulo} /></button>
-        </li> })}</ol>}
+      {painel && <aside className={`lr-painel lr-painel--${painel}`} aria-labelledby="lr-painel-titulo">
+        <header className="lr-painel__topo"><strong id="lr-painel-titulo">{painel === 'indice' ? 'Índice' : painel === 'notas' ? 'Destaques, notas e marcadores' : painel === 'busca' ? 'Buscar no capítulo' : 'Aparência'}</strong><button type="button" className="lr-botao" onClick={() => definirPainel(null)} aria-label="Fechar o painel" title="Fechar (Esc)"><Icone nome="fechar" tamanho={18} /></button></header>
+        {painel === 'indice' && <div className="lr-indice__caixa"><p className="lr-indice__resumo numerico">{Math.round(Math.min(100, progresso))}% lido · ~{minutosRestantes} min restantes</p><ol className="lr-indice">{capitulo.secoes.map((s, i) => { const fechada = i >= porta.abertas; const atual = s.id === secaoAtual; return <li key={s.id} className={fechada ? 'lr-indice--fechada' : atual ? 'lr-indice--atual' : progressoSecoes.has(s.id) ? 'lr-indice--lida' : ''}>
+          <button type="button" aria-current={atual ? 'location' : undefined} onClick={() => { irPara(fechada ? 'porta' : `h-${s.id}`, 0, fechada); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null) }} aria-label={fechada ? `${s.titulo} (crie a conta grátis para ler)` : undefined}><span>{s.titulo}</span>{fechada && <span className="lr-indice__cadeado" title="Leitura completa grátis com conta"><Icone nome="cadeado" tamanho={14} /></span>}{atual && <span className="lr-indice__aqui">Você está aqui</span>}<i className={`lr-ponto lr-ponto--${s.radar}`} title={RADAR[s.radar].rotulo} /></button>
+        </li> })}</ol></div>}
         {painel === 'busca' && <div className="lr-busca">
           <input type="search" autoFocus value={busca} onChange={(e) => definirBusca(e.target.value)} placeholder="Ex.: Garden, Pauwels, cimentada" aria-label="Buscar no capítulo" />
           {busca.trim().length >= 2 && <p className="lr-busca__n">{resultados.length ? `${resultados.length} ${resultados.length === 1 ? 'trecho' : 'trechos'}` : 'Nada encontrado neste capítulo.'}</p>}
@@ -553,16 +612,17 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
         {painel === 'aparencia' && <Aparencia pref={pref} aoMudar={definirPreferencias} foco={foco} aoFoco={() => definirFoco(!foco)} />}
       </aside>}
 
-      {questao && <aside className="lr-questao" role="dialog" aria-modal="true" aria-label="Questão">
-        <header className="lr-painel__topo"><strong>Questão</strong><span className="lr-questao__dica">A leitura continua de onde você parou.</span><button type="button" className="lr-botao" onClick={() => definirQuestao(null)} aria-label="Voltar à leitura"><Icone nome="fechar" tamanho={18} /></button></header>
+      {questao && <aside className="lr-questao" role="dialog" aria-modal="true" aria-labelledby="lr-questao-titulo">
+        <header className="lr-painel__topo"><button type="button" className="lr-botao" ref={fecharQuestaoBotao} onClick={fecharQuestao} aria-label="Voltar à leitura" title="Voltar à leitura (Esc)"><Icone nome="esquerda" tamanho={18} /></button><strong id="lr-questao-titulo">Questão · {rotuloQuestao(indice, questao)}</strong><span className="lr-questao__dica">A leitura continua de onde você parou.</span></header>
         <div className="lr-questao__corpo">{premium
           ? <Suspense fallback={<Carregando linhas={5} />}><QuestaoDireta id={questao} /></Suspense>
           : <ConvitePremium icone="alvo" titulo="Resolva as questões do resumo" texto={<p>Os resumos são abertos para todos. Para fazer as questões citadas no texto, com gabarito, comentário e revisão no tempo certo, assine o OrtoQuestões.</p>} itens={['Todas as questões citadas nos resumos', 'Treinar o capítulo inteiro em uma sessão', 'Cronograma até a prova e Simulado Nacional']} />}</div>
-        <footer className="lr-questao__rodape"><button type="button" className="botao botao--principal" onClick={() => definirQuestao(null)}><Icone nome="esquerda" tamanho={16} /> Voltar ao parágrafo</button></footer>
+        <footer className="lr-questao__rodape"><button type="button" className="botao botao--principal" onClick={fecharQuestao}><Icone nome="esquerda" tamanho={16} /> Voltar ao parágrafo</button></footer>
       </aside>}
-      {questao && <button type="button" className="lr-veu" aria-label="Voltar à leitura" onClick={() => definirQuestao(null)} />}
+      {questao && <button type="button" className="lr-veu" aria-label="Voltar à leitura" tabIndex={-1} onClick={fecharQuestao} />}
 
       {aviso && <Aviso aviso={aviso} aoFechar={() => definirAviso(null)} />}
+      {guia && <GuiaTour id="leitor" titulo="Ajuda do leitor" passos={PASSOS_LEITOR} rolar={false} aoFechar={() => definirGuia(false)} />}
     </div>
   )
 }
@@ -744,7 +804,10 @@ function PainelNotas({ resolvidas, ordem, orfas, capitulo, aoIr, aoReassociar, a
         <button type="button" aria-pressed={!cor} onClick={() => definirCor(null)}>Todas</button>
         {CORES.map((c) => <button key={c} type="button" className={`lr-cor lr-cor--${c}`} aria-pressed={cor === c} onClick={() => definirCor(cor === c ? null : c)} aria-label={NOME_COR[c]} />)}
       </div>
-      {marcadores.length > 0 && <><p className="lr-notas__grupo">Marcadores</p><ul>{marcadores.map(({ marca, r }) => <li key={marca.id}><button type="button" onClick={() => aoIr(marca, r)}><small>{secaoDoBloco(r.trechos[0]?.bloco)}</small><span>{r.trechos[0]?.exato.slice(0, 80)}…</span></button></li>)}</ul></>}
+      <p className="lr-notas__grupo">{marcadores.length ? `${marcadores.length} ${marcadores.length === 1 ? 'marcador' : 'marcadores'}` : 'Marcadores'}</p>
+      {marcadores.length ? <ul className="lr-notas__marcadores">{marcadores.map(({ marca, r }) => <li key={marca.id}><button type="button" onClick={() => aoIr(marca, r)}><small><Icone nome="bandeira" tamanho={12} /> {secaoDoBloco(r.trechos[0]?.bloco)}</small><span>{r.trechos[0]?.exato.slice(0, 80)}…</span></button>
+        <button type="button" className="lr-notas__tirar" onClick={() => aoApagar(marca.id)} aria-label={`Remover o marcador de ${secaoDoBloco(r.trechos[0]?.bloco) || 'esta página'}`} title="Remover marcador"><Icone nome="fechar" tamanho={14} /></button></li>)}</ul>
+        : <p className="lr-notas__ajuda">Use Marcar página, na barra de cima, para guardar um lugar. A posição de leitura já é salva sozinha; o marcador é para o trecho que você quer reencontrar.</p>}
       {orfas.length > 0 && <><p className="lr-notas__grupo lr-notas__grupo--alerta">Precisam de nova associação</p>
         <p className="lr-notas__ajuda">O texto destas marcações mudou numa revisão do resumo. Elas foram preservadas como estavam.</p>
         <ul>{orfas.map(({ marca }) => <li key={marca.id} className="lr-notas__orfa"><blockquote>{marca.ancora.trechos.map((t) => t.exato).join(' … ')}</blockquote>{marca.nota && <p>{marca.nota}</p>}
@@ -766,8 +829,10 @@ function Aparencia({ pref, aoMudar, foco, aoFoco }: { pref: Preferencias; aoMuda
     <div className="lr-aparencia">
       <p className="lr-aparencia__rotulo">Tema</p>
       <div className="lr-aparencia__temas" role="radiogroup" aria-label="Tema">
-        {(['claro', 'sepia', 'escuro'] as const).map((t) => <button key={t} type="button" role="radio" aria-checked={pref.tema === t} className={`lr-tema lr-tema--${t}`} onClick={() => aoMudar({ tema: t })}>{t === 'claro' ? 'Claro' : t === 'sepia' ? 'Sépia' : 'Escuro'}</button>)}
+        {(['claro', 'sepia', 'escuro'] as const).map((t) => <button key={t} type="button" role="radio" aria-checked={pref.tema === t} className={`lr-tema lr-tema--${t}`} onClick={() => aoMudar({ tema: t })}>
+          <span className="lr-tema__amostra" aria-hidden="true"><b>Aa</b><i /><i /><i /></span>{t === 'claro' ? 'Claro' : t === 'sepia' ? 'Sépia' : 'Escuro'}</button>)}
       </div>
+      <p className="lr-aparencia__previa" style={{ fontSize: `${Math.min(pref.fonte, 22)}px`, lineHeight: pref.entrelinha, fontFamily: pref.fonteFamilia === 'serifa' ? 'var(--lr-serifa)' : undefined }}>A fratura do colo do fêmur no idoso pede artroplastia quando o desvio é grande.</p>
       <p className="lr-aparencia__rotulo">Tamanho da letra</p>
       <div className="lr-aparencia__linha"><button type="button" onClick={() => aoMudar({ fonte: Math.max(14, pref.fonte - 1) })} aria-label="Diminuir a letra">A−</button><span className="numerico">{pref.fonte}</span><button type="button" onClick={() => aoMudar({ fonte: Math.min(28, pref.fonte + 1) })} aria-label="Aumentar a letra">A+</button></div>
       <p className="lr-aparencia__rotulo">Espaço entre linhas</p>
@@ -783,7 +848,7 @@ function Aparencia({ pref, aoMudar, foco, aoFoco }: { pref: Preferencias; aoMuda
       <label className="lr-aparencia__chave"><input type="checkbox" checked={foco} onChange={aoFoco} /> Modo concentração (só o texto)</label>
       <p className="lr-aparencia__nota">As preferências ficam na sua conta e valem em todos os aparelhos.</p>
       <details className="lr-aparencia__atalhos"><summary>Atalhos do teclado</summary>
-        <dl><dt>i</dt><dd>índice</dd><dt>/</dt><dd>buscar</dd><dt>n</dt><dd>notas</dd><dt>f</dt><dd>concentração</dd><dt>← →</dt><dd>páginas</dd><dt>Esc</dt><dd>fechar</dd></dl>
+        <dl><dt>i</dt><dd>índice</dd><dt>/</dt><dd>buscar</dd><dt>n</dt><dd>notas</dd><dt>f</dt><dd>concentração</dd><dt>?</dt><dd>ajuda do leitor</dd><dt>← →</dt><dd>páginas</dd><dt>Esc</dt><dd>fechar</dd></dl>
       </details>
     </div>
   )

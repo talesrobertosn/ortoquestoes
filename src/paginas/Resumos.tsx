@@ -1,7 +1,9 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { carregarCapitulo, carregarIndiceBiblioteca, textosDoCapitulo } from '../biblioteca/conteudo'
 import { resolverAncora } from '../biblioteca/ancoras'
-import { CORES, type Capitulo, type CorMarca, type IndiceBiblioteca, type Marca, type ResumoCapitulo } from '../biblioteca/tipos'
+import { CORES, type Capitulo, type CorMarca, type IndiceBiblioteca, type Leitura, type Marca, type ResumoCapitulo } from '../biblioteca/tipos'
+import { CHAVE_CONSULTA_ESTANTE, FILTROS_PADRAO, chaveLivro, consultaDosFiltros, estadoLeitura, filtrarEstante, filtrosAtivos, filtrosDaConsulta, livrosDaEstante, numeroCapitulo, rotuloLivro, type EstadoLeitura, type FiltrosEstante, type OrdemEstante } from '../biblioteca/estante'
+import { GuiaTour, deveAbrirGuia, type PassoGuia } from '../biblioteca/GuiaTour'
 import { usarBiblioteca } from '../biblioteca/usarBiblioteca'
 import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
@@ -22,7 +24,7 @@ const FrasesQueCaem = lazy(() => import('./Resumao').then(({ Resumao }) => ({ de
 
 /**
  * Biblioteca OrtoQuestões (#/resumos, 16/10/2026). Ainda fora do menu (pedido do Tales, fase de testes).
- * - #/resumos: estante por especialidade, busca, filtros e "Continuar estudando".
+ * - #/resumos: vitrine por livro (redesenho de 27/10/2026), busca, filtros no endereço, "Continuar estudando" e tutorial.
  * - #/resumos/<capítulo>?bloco=<id>: o leitor (LeitorResumo).
  * - #/resumos/caderno: Meu caderno de estudo (todas as marcações e notas).
  * - #/resumos/frases: adendo com as frases que caem (o antigo Resumão, 16/10/2026).
@@ -44,7 +46,7 @@ export function Resumos({ segmentos, consulta }: { segmentos: string[]; consulta
   if (sub === 'caderno') return <Caderno />
   if (sub === 'frases') return <Suspense fallback={<Carregando linhas={6} rotulo="Carregando as frases" />}><FrasesQueCaem /></Suspense>
   if (sub) return <LeitorResumo id={sub} consulta={consulta} />
-  return <Estante areaInicial={consulta.get('area')} />
+  return <Estante consulta={consulta} />
 }
 
 function usarIndiceBiblioteca() {
@@ -53,9 +55,150 @@ function usarIndiceBiblioteca() {
   return dados
 }
 
-/** "TARO 2007–2024 · TEOT 2022–2024": de onde vêm as questões reais citadas no capítulo. */
-function historicoCobranca(indice: Indice | null, ids: string[]): string {
-  if (!indice) return ''
+
+const PROGRESSOS: Array<{ v: EstadoLeitura | null; nome: string }> = [{ v: null, nome: 'Todos' }, { v: 'novo', nome: 'Não iniciados' }, { v: 'andamento', nome: 'Em andamento' }, { v: 'concluido', nome: 'Concluídos' }]
+const ORDENS: Array<{ v: OrdemEstante; nome: string }> = [{ v: 'livro', nome: 'Ordem do livro' }, { v: 'recentes', nome: 'Lidos por último' }, { v: 'cobrados', nome: 'Mais cobrados' }, { v: 'titulo', nome: 'Título (A a Z)' }]
+
+const PASSOS_BIBLIOTECA: PassoGuia[] = [
+  { titulo: 'Bem-vindo à Biblioteca', texto: 'Cada resumo é um capítulo dos livros de referência, reescrito em português e na ordem em que as provas cobram. Este tour leva menos de um minuto.' },
+  { alvo: '[data-guia="continuar"]', titulo: 'Continue de onde parou', texto: 'Os capítulos que você começou ficam aqui, com a parte em que parou e quanto já leu. Um toque e o leitor abre no mesmo parágrafo.' },
+  { alvo: '[data-guia="busca"]', titulo: 'Ache o capítulo', texto: 'Busque por tema, classificação ou nome do livro. A busca olha também os títulos das partes de cada resumo.' },
+  { alvo: '[data-guia="filtros"]', titulo: 'Filtre e ordene', texto: 'Escolha o livro, a área e o seu progresso. Os filtros ficam no endereço: ao voltar do leitor, a estante está do jeito que você deixou.' },
+  { alvo: '[data-guia="cartao"]', titulo: 'Cada cartão resume o capítulo', texto: 'Número do capítulo, tempo de leitura, as provas em que o assunto já caiu e o seu progresso, sem precisar abrir.' },
+  { alvo: '[data-guia="caderno"]', titulo: 'Seu caderno de estudo', texto: 'Todos os destaques e notas de todos os resumos, em todos os aparelhos. Dá para revisar em sequência e exportar.' },
+  { alvo: '[data-guia="ajuda"]', titulo: 'Ajuda sempre à mão', texto: 'Este tutorial volta quando você quiser, por aqui. Dentro do leitor, o botão Ajuda explica os controles da leitura.' },
+]
+
+function Estante({ consulta }: { consulta: URLSearchParams }) {
+  const dados = usarIndiceBiblioteca()
+  const { indice } = usarIndice()
+  const { leituras, marcas } = usarBiblioteca()
+  const { premium } = usarPremium()
+  const { sessao } = usarConta()
+  const visitante = contasDisponiveis && !sessao
+  // #/resumos?area=mao abre já filtrado (cronograma da mão); os outros filtros também vivem no endereço.
+  const [filtros, definirFiltros] = useState<FiltrosEstante>(() => filtrosDaConsulta(consulta))
+  const [guia, definirGuia] = useState(false)
+  const mudar = (m: Partial<FiltrosEstante>) => definirFiltros((f) => ({ ...f, ...m }))
+  // Um link novo para a estante (ex.: #/resumos?area=mao vindo do cronograma) troca os filtros.
+  const consultaTexto = consulta.toString()
+  useEffect(() => { if (consultaTexto !== consultaDosFiltros(filtros)) definirFiltros(filtrosDaConsulta(new URLSearchParams(consultaTexto))) }, [consultaTexto]) // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    const c = consultaDosFiltros(filtros)
+    const t = window.setTimeout(() => {
+      try { sessionStorage.setItem(CHAVE_CONSULTA_ESTANTE, c) } catch { /* sem sessionStorage: a volta abre a estante limpa */ }
+      if (c !== consulta.toString()) history.replaceState(history.state, '', `${location.pathname}${location.search}#/resumos${c ? `?${c}` : ''}`)
+    }, 250)
+    return () => window.clearTimeout(t)
+  }, [filtros]) // eslint-disable-line react-hooks/exhaustive-deps
+  // Primeira visita: o tutorial abre sozinho, depois que a estante já está na tela.
+  useEffect(() => { if (dados && deveAbrirGuia('biblioteca')) { const t = window.setTimeout(() => definirGuia(true), 600); return () => window.clearTimeout(t) } }, [!!dados]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (dados === undefined) return <Carregando linhas={6} rotulo="Abrindo a biblioteca" />
+  if (dados === null) return <Estado titulo="Não foi possível abrir a biblioteca." acoes={<button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button>}><p>Confira a conexão.</p></Estado>
+  const livros = livrosDaEstante(dados.capitulos)
+  const filtrados = filtrarEstante(dados.capitulos, filtros, leituras)
+  const ativos = filtrosAtivos(filtros)
+  const continuar = dados.capitulos.map((c) => ({ c, l: leituras[c.id] })).filter(({ l }) => l && !l.concluidoEm && l.em).sort((a, b) => b.l!.em - a.l!.em).slice(0, 3)
+  const comCapitulos = new Set(dados.capitulos.map((c) => c.especialidade))
+  const destaques = marcas.filter((m) => !m.marcador).length
+  const cartao = (c: ResumoCapitulo, primeiro: boolean) => <CartaoResumo key={c.id} c={c} guia={primeiro} fechado={c.acesso !== 'gratis' && !premium} indice={indice} leitura={leituras[c.id]} destaques={marcas.filter((m) => m.capitulo === c.id && !m.marcador).length} />
+  const grupos = filtros.ordem === 'livro' ? livros.map((l) => ({ ...l, capitulos: filtrados.filter((c) => chaveLivro(c) === l.chave) })).filter((l) => l.capitulos.length) : null
+  return (
+    <div className="rs rs--vitrine empilha-2">
+      <header className="rs-topo rs-topo--vitrine">
+        <div className="rs-topo__texto">
+          <p className="rs-topo__selo"><Icone nome="livro" tamanho={14} /> Biblioteca OrtoQuestões · Beta</p>
+          <h1>Biblioteca de <em>resumos</em></h1>
+          <p className="rs-topo__lide">Estude pelos livros de referência, com foco no que realmente cai nas provas. Cada resumo segue o capítulo original, mostra onde o assunto já foi cobrado e abre as questões ali mesmo, sem perder o parágrafo. <b>Leitura grátis.</b></p>
+          {visitante && <p className="rs-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Leitura completa grátis com conta.</b> Sem conta, cada resumo abre as {SECOES_ABERTAS} primeiras partes. <a href={href('/conta?modo=criar&voltar=%2Fresumos')}>Criar conta grátis</a></span></p>}
+          <p className="rs-novidade"><i aria-hidden="true" /> Biblioteca em expansão: capítulos novos toda semana</p>
+          <div className="rs-topo__acoes">
+            {continuar[0]
+              ? <a className="rs-botao-ouro" href={href(`/resumos/${continuar[0].c.id}`)}><Icone nome="livro" tamanho={18} /> Continuar de onde parei</a>
+              : <button type="button" className="rs-botao-ouro" onClick={() => document.getElementById('rs-estante')?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })}><Icone nome="livro" tamanho={18} /> Escolher um capítulo</button>}
+            <a className="botao" href={href('/resumos/caderno')} data-guia="caderno"><Icone nome="lapis" tamanho={16} /> Meu caderno{destaques ? <small className="rs-contador numerico">{destaques}</small> : null}</a>
+            <a className="botao" href={href('/resumos/frases')}><Icone nome="raio" tamanho={16} /> Frases que caem</a>
+            <button type="button" className="botao" onClick={() => definirGuia(true)} data-guia="ajuda"><Icone nome="interrogacao" tamanho={16} /> Como usar a Biblioteca</button>
+          </div>
+        </div>
+        <EstantePixel livros={livros.slice(0, 3).map((l) => ({ rotulo: l.rotulo, cor: corDaArea(l.capitulos[0].especialidade) }))} />
+        <span className="rs-topo__horizonte" aria-hidden="true" />
+      </header>
+
+      {continuar.length > 0 && <section aria-labelledby="rs-continuar" data-guia="continuar">
+        <h2 id="rs-continuar" className="rs-rotulo">Continuar estudando</h2>
+        <ul className="rs-continuar">{continuar.map(({ c, l }) => {
+          const secao = c.secoes.find((s) => l!.bloco.startsWith(s.id) || l!.bloco === `h-${s.id}`)?.titulo
+          return <li key={c.id} style={{ ['--rs-area' as string]: corDaArea(c.especialidade) }}><a href={href(`/resumos/${c.id}`)} aria-label={`Continuar ${c.titulo}, ${l!.progresso}% lido`}>
+            <span className="rs-continuar__capa" aria-hidden="true"><small>Cap.</small>{numeroCapitulo(c)}</span>
+            <span className="rs-continuar__ref">{rotuloLivro(c)} · Cap. {numeroCapitulo(c)}</span>
+            <strong>{c.titulo}</strong>
+            <small>{secao ? `Parou em: ${secao}` : 'Continuar de onde parou'}</small>
+            <span className="rs-continuar__pe"><span className="rs-continuar__barra"><span style={{ width: `${l!.progresso}%` }} /></span><b className="numerico">{l!.progresso}%</b><span className="rs-continuar__ir">Continuar <Icone nome="direita" tamanho={14} /></span></span>
+          </a></li>
+        })}</ul>
+      </section>}
+
+      <section className="rs-busca" id="rs-estante" aria-label="Buscar e filtrar resumos">
+        <label className="rs-busca__campo" data-guia="busca"><Icone nome="busca" tamanho={17} /><span className="so-leitor">Buscar resumo</span>
+          <input type="search" value={filtros.q} onChange={(e) => mudar({ q: e.target.value })} placeholder="Buscar tema, classificação ou livro" />
+        </label>
+        <div className="rs-busca__filtros" data-guia="filtros">
+          <label><span>Livro</span><select value={filtros.livro ?? ''} onChange={(e) => mudar({ livro: e.target.value || null })}><option value="">Todos os livros</option>{livros.map((l) => <option key={l.chave} value={l.chave}>{l.rotulo}</option>)}</select></label>
+          <label><span>Área</span><select value={filtros.area ?? ''} onChange={(e) => mudar({ area: e.target.value || null })}><option value="">Todas as áreas</option>{ESPECIALIDADES.filter((e) => comCapitulos.has(e.slug)).map((e) => <option key={e.slug} value={e.slug}>{e.nome}</option>)}</select></label>
+          <label><span>Ordenar</span><select value={filtros.ordem} onChange={(e) => mudar({ ordem: e.target.value as OrdemEstante })}>{ORDENS.map((o) => <option key={o.v} value={o.v}>{o.nome}</option>)}</select></label>
+          <div className="rs-busca__progresso" role="group" aria-label="Progresso">{PROGRESSOS.map((p) => <button key={p.nome} type="button" aria-pressed={filtros.progresso === p.v} onClick={() => mudar({ progresso: p.v })}>{p.nome}</button>)}</div>
+        </div>
+        {ativos && <p className="rs-busca__resultado" role="status"><span className="numerico">{filtrados.length}</span> {filtrados.length === 1 ? 'resumo encontrado' : 'resumos encontrados'}<button type="button" onClick={() => definirFiltros({ ...FILTROS_PADRAO, ordem: filtros.ordem })}><Icone nome="fechar" tamanho={14} /> Limpar filtros</button></p>}
+      </section>
+
+      {!filtrados.length && <div className="rs-vazio">
+        <span className="rs-vazio__livro" aria-hidden="true"><i /><i /><i /></span>
+        <strong>Nenhum resumo com esses filtros.</strong>
+        <p>{filtros.q.trim() ? <>Nada para “{filtros.q.trim()}”. Tente outro termo ou o nome da classificação.</> : 'Tente outro livro, outra área ou outro progresso.'} A biblioteca cresce toda semana.</p>
+        <button type="button" className="botao botao--principal" onClick={() => definirFiltros(FILTROS_PADRAO)}>Limpar filtros</button>
+      </div>}
+
+      {grupos ? grupos.map((g, gi) => <section key={g.chave} className="rs-grupo" aria-labelledby={`rs-l-${gi}`}>
+        <h2 id={`rs-l-${gi}`} className="rs-grupo__titulo" style={{ ['--rs-area' as string]: corDaArea(g.capitulos[0].especialidade) }}><i className="rs-grupo__icone" aria-hidden="true" /><span>{g.rotulo.split(' · ')[0]}</span><small>{g.rotulo.split(' · ')[1]}</small><button type="button" className="rs-grupo__filtrar" onClick={() => mudar({ livro: filtros.livro === g.chave ? null : g.chave })} aria-pressed={filtros.livro === g.chave}>{filtros.livro === g.chave ? 'Ver todos os livros' : 'Só este livro'}</button></h2>
+        <ul className="rs-lista">{g.capitulos.map((c, i) => cartao(c, gi === 0 && i === 0))}</ul>
+      </section>) : filtrados.length > 0 && <ul className="rs-lista">{filtrados.map((c, i) => cartao(c, i === 0))}</ul>}
+
+      <a className="rs-adendo" href={href('/resumos/frases')}>
+        <span className="rs-adendo__selo">Adendo</span>
+        <span className="rs-adendo__texto"><strong>Frases que caem</strong><small>Uma frase por assunto, tirada dos comentários das questões de prova, de todas as áreas. Para reler em minutos antes das questões ou na véspera.</small></span>
+        <Icone nome="direita" tamanho={16} />
+      </a>
+      <p className="rs-nota">Os resumos são texto autoral a partir dos capítulos citados, com revisão técnica; as questões e os anos vêm do acervo do site. Figuras originais só aparecem quando há licença de reprodução.</p>
+      {guia && <GuiaTour id="biblioteca" titulo="Como usar a Biblioteca" passos={PASSOS_BIBLIOTECA} aoFechar={() => definirGuia(false)} />}
+    </div>
+  )
+}
+
+/** Três lombadas pixel na capa da estante, com o nome dos livros (paradas com movimento reduzido). */
+function EstantePixel({ livros }: { livros: Array<{ rotulo: string; cor: string }> }) {
+  if (!livros.length) return null
+  const curto = (r: string) => r.replace(/^Rockwood /, '').replace(' · ', ' ').replace(/ ed\.$/, '')
+  // Os livros com nome são os da estante de verdade; os outros só completam a prateleira.
+  const extras = ['#c8a24a', '#5f7f9a', '#8b5a7a']
+  return (
+    <div className="rs-pixel" aria-hidden="true">
+      <span className="rs-pixel__estrela rs-pixel__estrela--a" /><span className="rs-pixel__estrela rs-pixel__estrela--b" />
+      <div className="rs-pixel__prateleira">
+        <span className="rs-pixel__livro rs-pixel__livro--fino" style={{ ['--rs-area' as string]: extras[0] }} />
+        {livros.map((l, i) => <span key={l.rotulo} className={`rs-pixel__livro rs-pixel__livro--${i}`} style={{ ['--rs-area' as string]: l.cor }}><b>{curto(l.rotulo)}</b>{i === 1 && <span className="rs-pixel__fita" />}</span>)}
+        <span className="rs-pixel__livro rs-pixel__livro--fino rs-pixel__livro--baixo" style={{ ['--rs-area' as string]: extras[1] }} />
+        <span className="rs-pixel__livro rs-pixel__livro--deitado" style={{ ['--rs-area' as string]: extras[2] }} />
+      </div>
+      <span className="rs-pixel__tabua" />
+    </div>
+  )
+}
+
+/** As provas em que o capítulo já caiu, como chips: "TARO 2007–2024". Só das questões citadas no resumo (ids). */
+function provasDoCapitulo(indice: Indice | null, ids: string[]): string[] {
+  if (!indice) return []
   const porProva = new Map<string, number[]>()
   for (const id of ids) {
     const q = indice.questoes.find((x) => x.id === id)
@@ -63,84 +206,37 @@ function historicoCobranca(indice: Indice | null, ids: string[]): string {
     const p = indice.provas[q.p]
     const l = porProva.get(p) ?? []; if (q.a) l.push(q.a); porProva.set(p, l)
   }
-  return [...porProva].sort((a, b) => b[1].length - a[1].length).slice(0, 3).map(([p, anos]) => anos.length ? `${p} ${Math.min(...anos)}${Math.max(...anos) !== Math.min(...anos) ? `–${Math.max(...anos)}` : ''}` : p).join(' · ')
+  return [...porProva].sort((a, b) => b[1].length - a[1].length).map(([p, anos]) => anos.length ? `${p} ${Math.min(...anos)}${Math.max(...anos) !== Math.min(...anos) ? `–${Math.max(...anos)}` : ''}` : p)
 }
 
-function Estante({ areaInicial = null }: { areaInicial?: string | null }) {
-  const dados = usarIndiceBiblioteca()
-  const { indice } = usarIndice()
-  const { leituras, marcas } = usarBiblioteca()
-  const { premium } = usarPremium()
-  const { sessao } = usarConta()
-  const visitante = contasDisponiveis && !sessao
-  const [busca, definirBusca] = useState('')
-  const [area, definirArea] = useState<string | null>(areaInicial)  // #/resumos?area=mao abre já filtrado (cronograma da mão)
-  if (dados === undefined) return <Carregando linhas={6} rotulo="Abrindo a biblioteca" />
-  if (dados === null) return <Estado titulo="Não foi possível abrir a biblioteca." acoes={<button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button>}><p>Confira a conexão.</p></Estado>
-  const q = normalizar(busca.trim())
-  const filtrados = dados.capitulos.filter((c) => (!area || c.especialidade === area) && (!q || normalizar(`${c.titulo} ${c.livro} ${c.resumo} ${c.secoes.map((s) => s.titulo).join(' ')}`).includes(q)))
-  const continuar = dados.capitulos.map((c) => ({ c, l: leituras[c.id] })).filter(({ l }) => l && !l.concluidoEm && l.em).sort((a, b) => b.l!.em - a.l!.em).slice(0, 3)
-  const comCapitulos = new Set(dados.capitulos.map((c) => c.especialidade))
+const ESTADO_NOME: Record<EstadoLeitura, string> = { novo: 'Não iniciado', andamento: 'Em andamento', concluido: 'Concluído' }
+
+function CartaoResumo({ c, fechado, indice, leitura, destaques, guia }: { c: ResumoCapitulo; fechado: boolean; indice: Indice | null; leitura?: Leitura; destaques: number; guia: boolean }) {
+  const estado = estadoLeitura(leitura)
+  const provas = provasDoCapitulo(indice, c.questoes)
+  const n = numeroCapitulo(c)
+  const area = ESPECIALIDADES.find((e) => e.slug === c.especialidade)?.nome ?? c.especialidade
+  const pct = estado === 'concluido' ? 100 : leitura?.progresso ?? 0
   return (
-    <div className="rs empilha-2">
-      <header className="rs-topo">
-        <p className="rs-topo__selo"><Icone nome="livro" tamanho={15} /> Biblioteca OrtoQuestões · Beta</p>
-        <h1>Resumos que ensinam pelo que cai</h1>
-        <p>Capítulos dos livros de referência reescritos em português, na ordem em que as provas cobram, com as questões reais no meio do texto. <b>Leitura grátis.</b> Marque, anote e continue em qualquer aparelho; resolver as questões citadas é do assinante.</p>
-        {visitante && <p className="rs-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Leitura completa grátis com conta.</b> Sem conta, cada resumo abre as {SECOES_ABERTAS} primeiras partes. <a href={href('/conta?modo=criar&voltar=%2Fresumos')}>Criar conta grátis</a></span></p>}
-        <p className="rs-novidade"><i aria-hidden="true" /> Resumos novos estão sendo criados todas as semanas</p>
-        <div className="rs-topo__acoes"><a className="botao" href={href('/resumos/caderno')}><Icone nome="lapis" tamanho={16} /> Meu caderno de estudo{marcas.length ? ` (${marcas.filter((m) => !m.marcador).length})` : ''}</a></div>
-      </header>
-
-      {continuar.length > 0 && <section aria-labelledby="rs-continuar">
-        <h2 id="rs-continuar" className="rs-rotulo">Continuar estudando</h2>
-        <ul className="rs-continuar">{continuar.map(({ c, l }) => <li key={c.id}><a href={href(`/resumos/${c.id}`)}>
-          <span className="rs-continuar__barra"><span style={{ width: `${l!.progresso}%` }} /></span>
-          <strong>{c.titulo}</strong><small>{l!.progresso}% · {c.secoes.find((s) => l!.bloco.startsWith(s.id) || l!.bloco === `h-${s.id}`)?.titulo ?? 'continuar de onde parou'}</small>
-        </a></li>)}</ul>
-      </section>}
-
-      <div className="rs-filtros">
-        <input type="search" value={busca} onChange={(e) => definirBusca(e.target.value)} placeholder="Buscar capítulo ou assunto" aria-label="Buscar capítulo" />
-        <div className="rs-filtros__areas" role="group" aria-label="Especialidade">
-          <button type="button" aria-pressed={!area} onClick={() => definirArea(null)}>Todas</button>
-          {ESPECIALIDADES.map((e) => <button key={e.slug} type="button" aria-pressed={area === e.slug} onClick={() => definirArea(area === e.slug ? null : e.slug)} disabled={!comCapitulos.has(e.slug)}>{e.nome}</button>)}
-        </div>
-      </div>
-
-      {ESPECIALIDADES.filter((e) => filtrados.some((c) => c.especialidade === e.slug)).map((e) => <section key={e.slug} aria-labelledby={`rs-${e.slug}`}>
-        <h2 id={`rs-${e.slug}`} className="rs-rotulo">{e.nome}</h2>
-        <ul className="rs-estante">{filtrados.filter((c) => c.especialidade === e.slug).map((c) => <Livro key={c.id} c={c} fechado={c.acesso !== 'gratis' && !premium} premium={premium} indice={indice} leitura={leituras[c.id]} marcas={marcas.filter((m) => m.capitulo === c.id && !m.marcador).length} />)}</ul>
-      </section>)}
-      {!filtrados.length && <p className="texto-2">Nenhum capítulo encontrado.</p>}
-      <a className="rs-adendo" href={href('/resumos/frases')}>
-        <span className="rs-adendo__selo">Adendo</span>
-        <span className="rs-adendo__texto"><strong>Frases que caem</strong><small>Uma frase por assunto, tirada dos comentários das questões de prova, de todas as áreas. Para reler em minutos antes das questões ou na véspera.</small></span>
-        <Icone nome="direita" tamanho={16} />
-      </a>
-      <p className="rs-nota">Os resumos são texto autoral a partir dos capítulos citados, com revisão técnica; as questões e os anos vêm do acervo do site. Figuras originais só aparecem quando há licença de reprodução.</p>
-    </div>
-  )
-}
-
-function Livro({ c, fechado, indice, leitura, marcas }: { c: ResumoCapitulo; fechado: boolean; premium?: boolean; indice: Indice | null; leitura?: { progresso: number; concluidoEm?: number; bloco: string; em: number }; marcas: number }) {
-  const estado = leitura?.concluidoEm ? 'Concluído' : leitura?.em ? 'Em andamento' : 'Não iniciado'
-  const historico = historicoCobranca(indice, c.questoes)
-  return (
-    <li className={'rs-livro' + (fechado ? ' rs-livro--fechado' : '')} style={{ ['--rs-area' as string]: corDaArea(c.especialidade) }}><a href={href(`/resumos/${c.id}`)}>
-      <span className="rs-livro__lombada" aria-hidden="true" />
-      <span className="rs-livro__corpo">
-        <small className="rs-livro__ref">{c.livro} · {c.edicao}{fechado ? <span className="rs-livro__cadeado"><Icone nome="cadeado" tamanho={13} /> Assinantes</span> : null}</small>
-        <strong>{c.titulo}</strong>
-        <span className="rs-livro__resumo">{c.resumo}</span>
-        <span className="rs-livro__meta">
-          <span>~{c.minutos} min</span>
-          {c.questoes.length > 0 && <span>{c.questoes.length} questões de prova{historico ? ` · ${historico}` : ''}</span>}
-          {marcas > 0 && <span>{marcas} {marcas === 1 ? 'destaque' : 'destaques'}</span>}
+    <li className={`rs-cartao rs-cartao--${estado}${fechado ? ' rs-cartao--fechado' : ''}`} style={{ ['--rs-area' as string]: corDaArea(c.especialidade) }} data-guia={guia ? 'cartao' : undefined}>
+      <a href={href(`/resumos/${c.id}`)}>
+        <span className="rs-cartao__numero" aria-hidden="true"><small>Cap.</small>{n === Number.MAX_SAFE_INTEGER ? '·' : n}</span>
+        <span className="rs-cartao__corpo">
+          <span className="rs-cartao__topo">
+            <span className="rs-cartao__ref"><span className="so-leitor">{rotuloLivro(c)}, capítulo {n}. </span>{area}{fechado && <span className="rs-livro__cadeado"><Icone nome="cadeado" tamanho={12} /> Assinantes</span>}</span>
+            <span className={`rs-estado rs-estado--${estado}`}>{estado === 'concluido' && <Icone nome="certo" tamanho={12} />}{estado === 'andamento' ? `${pct}% lido` : ESTADO_NOME[estado]}</span>
+          </span>
+          <strong className="rs-cartao__titulo">{c.titulo}</strong>
+          <span className="rs-cartao__meta">
+            <span><Icone nome="relogio" tamanho={13} /> ~{c.minutos} min</span>
+            {c.questoes.length > 0 && <span><Icone nome="alvo" tamanho={13} /> {c.questoes.length} {c.questoes.length === 1 ? 'questão de prova' : 'questões de prova'}</span>}
+            {destaques > 0 && <span><Icone nome="lapis" tamanho={13} /> {destaques} {destaques === 1 ? 'destaque' : 'destaques'}</span>}
+          </span>
+          <span className="rs-cartao__provas" aria-label={provas.length ? `Já caiu em ${provas.join(', ')}` : undefined}>{provas.length ? <>{provas.slice(0, 2).map((p) => <span key={p} className="rs-prova">{p}</span>)}{provas.length > 2 && <span className="rs-prova rs-prova--mais">+{provas.length - 2}</span>}</> : <span className="rs-prova rs-prova--mais">Base para as questões</span>}</span>
         </span>
-        <span className="rs-livro__estado"><span className="rs-livro__barra"><span style={{ width: `${leitura?.progresso ?? 0}%` }} /></span>{estado}{leitura?.progresso && !leitura.concluidoEm ? ` · ${leitura.progresso}%` : ''}</span>
-      </span>
-    </a></li>
+        {estado !== 'novo' && <span className="rs-cartao__barra" aria-hidden="true"><span style={{ width: `${pct}%` }} /></span>}
+      </a>
+    </li>
   )
 }
 
