@@ -3880,3 +3880,19 @@ adolescente, fios e nervo axilar, úmero varo, nervo radial (observar, 1 mm por 
 **Divergências.** TARO 2019 (`0642`): plexo no varo; o capítulo diz valgo. TARO 2017 (`0617`): fragmento posteromedial; o capítulo diz anterolateral.
 
 **Aproveitamento:** `pediatria-1211` a `pediatria-1224`, 14 questões, gabarito A4/B4/C3/D3, mediana de 2.611 caracteres.
+
+## Clavícula, escápula, acromioclavicular e esternoclavicular na criança, Rockwood and Wilkins 10ª ed., cap. 20
+
+**Recorte.** Busca por clavícula, escápula, glenoide, acromioclavicular e esternoclavicular em Ortopedia pediátrica, todas as provas.
+A banca cobra sobretudo a clavícula: mecanismo no escolar (TARO 2019 `pediatria-0643`), proporção do terço médio (TARO 2013 `0685`), percentual entre as fraturas
+(TARO 2012 `0657`), fratura de parto (TEOT 2022 `0706`), terço lateral (TARO 2018 `0633`, TARO 2023 `0550`, TARO 2006 `0822`), pseudartrose congênita (TARO 2020 `0002`);
+e a esternoclavicular: redução da posterior (TARO 2025 `0533`) e lesão fisária anterior (TEOT 2024 `0558`).
+
+**Forma.** Enunciados curtos, sem imagem.
+
+**Lacunas com cara de prova (projeção).** Tipoia no adolescente com fratura desviada, indicações absolutas, retorno ao contato com 3 meses, crescimento e remodelação,
+NEER e CRAIG tipo IV, escápula e maus-tratos, indicações cirúrgicas da glenoide, acromioclavicular tipo IV.
+
+**Divergências.** TARO 2023 (`0550`): exposição como indicação mais frequente; o capítulo diz desvio posterior significativo.
+
+**Aproveitamento:** `pediatria-1225` a `pediatria-1239`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.855 caracteres.
