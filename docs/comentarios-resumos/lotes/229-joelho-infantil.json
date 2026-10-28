@@ -1,0 +1,265 @@
+{
+  "pediatria-1306": {
+    "questaoSha256": "aff77fa4c13945cbde7f8cff94e811c5d026b99a968e0cfa15071b896b54d340",
+    "comentarioAnteriorSha256": "ca28171feecfec69693d27a084a52d79b6a9e844007caf3b8e499814d9435f69",
+    "comentario": {
+      "conceito": "A **perda da extensão completa por bloqueio do fragmento consolidado em posição viciosa** é o maior prejuízo funcional destacado no resumo. A alternativa D descreve esse problema, diferente de um teste de frouxidão sem falseio (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nO capítulo informa **Lachman positivo em 51% a 87%**, sem instabilidade sintomática. Portanto, frouxidão objetiva e incapacidade funcional não são sinônimos. A diferença instrumentada da adolescente deve ser interpretada com sua função e sintomas, não convertida automaticamente em indicação de reconstrução.\n\nJá um fragmento que consolida elevado pode **bloquear a extensão**, relacionando a posição óssea ao arco de movimento. Isso se distingue da **artrofibrose**, a complicação mais comum descrita, embora ambas possam limitar a função. Não atribuir todo déficit de extensão à frouxidão ligamentar.\n\n**Na prova: ** separar exame de estabilidade, sintomas e impedimento mecânico. O objetivo não é negar acompanhamento à atleta com Lachman positivo, mas reconhecer qual alteração o capítulo associa ao maior prejuízo funcional.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0711`), que perguntou a que se associa o maior prejuízo funcional (perda da extensão total), do TEOT 2022 (`pediatria-0700`), que perguntou as complicações frequentes (instabilidade residual e perda de extensão), e do TARO 2007 (`pediatria-0735`), que perguntou a principal implicação da consolidação viciosa (sem gabarito; o capítulo sustenta a limitação da extensão). Depois, faça as oficiais.",
+      "correta": "Alternativa D. O bloqueio de extensão por consolidação viciosa é a consequência funcional destacada. A segunda paciente apresenta a alteração mecânica que precisa ser distinguida da frouxidão assintomática da primeira.",
+      "incorretas": {
+        "A": "Estalido isolado não é o prejuízo principal indicado no resumo. A questão contrapõe frouxidão objetiva sem falseio ao bloqueio de extensão, e o estalido não descreve esse bloqueio.",
+        "B": "Derrame exige avaliação, mas não substitui o problema funcional destacado pelo capítulo: perda da extensão por posição viciosa. Escolhê-lo ignoraria a comparação específica do enunciado.",
+        "C": "A opção afirma correlação com instabilidade sintomática, enquanto o resumo descreve frequente Lachman positivo sem essa instabilidade. Não se pode transformar o teste positivo em incapacidade maior que o bloqueio mecânico apenas pelo número instrumentado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial.",
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Como ler este capítulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Fratura da espinha tibial"
+        ],
+        "blocos": [
+          "fratura-da-espinha-tibial-f7ee225d"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "634c3aff5a776f785deba381b6d41ea654f42275e4fc4628bd0f546eee35c110"
+      },
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "como-ler-este-capitulo-3dc277b2"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "2cbd4d756b2111459a022f57c01bf8f95a2728e149186870f7a186dc6eae00ef"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1307": {
+    "questaoSha256": "084317f1a3ba5256effd61711542a11eec103efdc7360cb15eba31d2a240ae08",
+    "comentarioAnteriorSha256": "baa24d630b528d1d4903722645c6b1b22341d8e87484a1ddcb349485a2469451",
+    "comentario": {
+      "conceito": "O **menisco** é a associação destacada na fratura da espinha tibial: **37% numa série prospectiva**, dos quais **90% no lateral**, com maior frequência nos pacientes mais velhos. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nNão confundir **lesão associada** com **tecido encarcerado**. O mesmo resumo cita o **corno anterior do menisco medial e o ligamento intermeniscal** sob o fragmento, com interposição em 26% dos tipos II e 65% dos III na série de Kocher. Essa distribuição por tipo não é o percentual de lesão do menisco lateral.\n\nCada número tem uma população: 37% é a associação meniscal na série, 90% especifica lateralidade entre essas lesões, e 26/65% se referem ao encarceramento nos tipos II/III. Trocar denominadores pode fazer parecer que a estrutura mais lesada é necessariamente a que impede a redução.\n\n**Na prova: ** menisco lateral na associação e menisco medial/intermeniscal no bloqueio da redução são conceitos distintos. A lesão condral é descrita como rara; a avaliação deve procurar o que acompanha a avulsão, além de classificá-la.\n\n**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0949`), que perguntou a lesão associada mais comum da fratura da espinha tibial (lesão meniscal). Depois, faça a oficial.",
+      "correta": "Alternativa B. Reproduz a associação meniscal, o percentual da série e a predominância lateral. A maior frequência nos mais velhos também consta do corpo do resumo.",
+      "incorretas": {
+        "A": "O resumo descreve lesão condral como rara, não comum. Esse erro já afasta a opção; uma indicação universal de ressonância não deve ser deduzida da frequência invertida.",
+        "C": "A associação destacada é meniscal, não uma lesão do LCP na maioria. O capítulo trata separadamente o LCP e sua avulsão óssea, sem atribuir esse predomínio à espinha tibial.",
+        "D": "A fratura supracondiliana femoral não é a associação destacada para essa avulsão. O resumo chama atenção para menisco e diferencia as lesões condrais raras, não estabelece esse predomínio femoral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial; Como ler este capítulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Fratura da espinha tibial",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "fratura-da-espinha-tibial-4d91936f",
+          "como-ler-este-capitulo-3dc277b2"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "5c41f8559286be30f1c4858f6d0f2a373acc6cfd730d4c76a62b113617b5f768"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1308": {
+    "questaoSha256": "6c3a7a9155166e6f03b7d7b1766b6880fa0fa948488f578b7f49603c2fe31e1a",
+    "comentarioAnteriorSha256": "21284c204743df347646140f1bda2a0fa891a6450f9cb7c929da7bbb1141d430",
+    "comentario": {
+      "conceito": "Contração do **quadríceps com joelho fletido**, **patela alta** e incapacidade de elevar a perna estendida formam o quadro de **fratura em luva do polo inferior da patela**. A alternativa A corresponde ao diagnóstico e ao reparo com **suturas transósseas** (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nO periósteo espesso é arrancado com cartilagem do polo inferior. Por isso, a pequena lasca na radiografia não representa necessariamente a extensão de toda a lesão. O exame do mecanismo extensor e a posição patelar ajudam a interpretar uma imagem óssea aparentemente pequena.\n\nO resumo diferencia lesão **íntegra e sem desvio**, que admite gesso em extensão, da **desviada**, reparada com suturas transósseas e reparo retinacular. O caso descreve falha do mecanismo extensor, não uma fratura incidental com função preservada.\n\n**Na prova: ** não medir a importância da luva apenas pelo tamanho da lasca. Artrofibrose, déficit de extensão e diagnóstico tardio são complicações citadas; reconhecer cedo o padrão evita tratar uma lesão deslocada como simples dor de sobrecarga.\n\n**Por que esta questão foi criada.** É uma questão de projeção para reconhecer a luva patelar pela combinação de mecanismo, patela alta e falha de elevação ativa, sem subestimar uma pequena lasca radiográfica.",
+      "correta": "Alternativa A. Os sinais de patela alta e perda de elevação ativa, junto do mecanismo e da lasca inferior, apontam para luva patelar com falha extensora. O reparo por suturas é a técnica descrita para o padrão desviado.",
+      "incorretas": {
+        "B": "A opção propõe repouso para uma condição diferente, sem responder à perda aguda da função extensora e à patela alta. O resumo sustenta a avulsão em luva para esse conjunto; o nome de uma doença de sobrecarga não resolve a falha mecânica apresentada.",
+        "C": "A descrição de fratura sem desvio tratada com gesso exige mecanismo extensor íntegro no esquema do resumo. A criança não consegue elevar a perna e tem patela alta, dados que afastam esse cenário conservador.",
+        "D": "O padrão informado é de avulsão inferior com comprometimento extensor. A alternativa trata uma luxação lateral, mas não explica a relação entre patela alta, fragmento inferior e incapacidade de elevação descrita para a luva."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Luva patelar e fratura osteocondral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Luva patelar e fratura osteocondral"
+        ],
+        "blocos": [
+          "luva-patelar-e-fratura-osteocondral-177dd0d8"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "9c55ac09b24b4cad0715e64d9f06cc89bee70136c6078e83b3c3ed0ebcabe88e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1309": {
+    "questaoSha256": "fa564697f059eb9f310a860072baa9a582c830fd5a4d2f7171c59a32248ec0a1",
+    "comentarioAnteriorSha256": "0509bac441255e7fdffebc9686e364c9ab44e918b8d261e6f0a8d867230b8726",
+    "comentario": {
+      "conceito": "Após luxação da patela com **hemartrose volumosa**, radiografia normal não exclui fratura osteocondral: o resumo informa que ela perde **36%** dessas lesões e recomenda **ressonância**. Fragmento de **5 mm ou mais**, em área de carga e com bom osso, deve ser **fixado**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nNo adolescente, a junção osteocondral é fraca. O capítulo descreve lesões sobretudo na **faceta medial da patela e côndilo lateral**, em 19% a 50% na luxação patelar. A presença de hemartrose é a pista para procurar uma lesão que pode não aparecer no exame inicial.\n\nA conduta depende das características do fragmento: o resumo aceita parafusos sem cabeça ou bioabsorvíveis e até reparo de cartilagem pura se precoce. Para fragmentos **menores que 5 mm**, descreve retirada e estimulação medular. Não transformar a dimensão isolada em indicação sem considerar carga e qualidade óssea.\n\n**Na prova: ** primeiro detectar a lesão oculta, depois decidir preservação/fixação ou retirada. O cuidado com a instabilidade patelar associada também é discutido no capítulo; a questão não autoriza excisar indiscriminadamente todo fragmento.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A ressonância diante da hemartrose e o limite de 5 mm são os pontos práticos.",
+      "correta": "Alternativa C. Reconhece a limitação da radiografia e mantém os critérios combinados para fixar: tamanho, área de carga e bom osso. A ressonância é indicada pela suspeita mantida após a imagem normal.",
+      "incorretas": {
+        "A": "A radiografia pode perder uma parcela relevante das fraturas segundo o resumo. Portanto, normalidade no RX não encerra a investigação diante de hemartrose volumosa.",
+        "B": "Adiar a investigação até bloqueio após 3 meses ignora a recomendação de ressonância e a possibilidade de reparar cedo um fragmento apropriado. A suspeita já existe no quadro agudo.",
+        "D": "Excisão universal descarta fragmentos que o capítulo recomenda fixar quando têm dimensão e características favoráveis. A decisão não é igual para todo fragmento osteocondral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Luva patelar e fratura osteocondral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Luva patelar e fratura osteocondral"
+        ],
+        "blocos": [
+          "luva-patelar-e-fratura-osteocondral-a8cc05a0"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "d8fece9a64bb4fc616c8a56d8b96cd95d068c732ead86c092a87a42bf493db7d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1310": {
+    "questaoSha256": "f54c26e91fc99974a77b73da1a50e96fe8b95521d122b7df4486c40d66908c5a",
+    "comentarioAnteriorSha256": "9f2d59e44c74ec496faeb93b5053966691a0786224a07122bdd763b844ae2d12",
+    "comentario": {
+      "conceito": "Na **primeira luxação patelar sem fragmento osteocondral**, o resumo orienta tratamento **sem cirurgia**: imobilizador por cerca de **2 semanas**, órtese e trabalho do **vasto medial**. Informa **60% a 70% sem recidiva**. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nO **ligamento patelofemoral medial, LPFM**, responde por cerca de **60% da resistência lateral a 20°** no resumo. Esse papel de contenção não transforma toda primeira luxação em indicação de reconstrução: a decisão distingue episódio inicial e instabilidade recorrente, além das lesões associadas.\n\nA idade de **16 anos ou menos** aumenta o risco de recorrência, junto de displasia troclear, TA-GT aumentada, valgo, anteversão e frouxidão. A adolescente precisa de acompanhamento; 60% a 70% sem recidiva não significa garantia individual de sucesso.\n\n**Na prova: ** separar primeira luxação sem fragmento de recorrência ou lesão osteocondral que exige outra decisão. Osteotomia da tuberosidade só é discutida com apófise fechada e critérios específicos, sem indicação rotineira para todo primeiro episódio.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A conduta da primeira luxação e os fatores de recidiva são o núcleo do tema.",
+      "correta": "Alternativa B. Reúne o esquema conservador, os resultados sem recidiva e o papel biomecânico do LPFM. O percentual deve ser lido como ausência de recorrência no grupo descrito, sem promessa individual.",
+      "incorretas": {
+        "A": "O resumo recomenda tratamento sem cirurgia para a primeira luxação sem fragmento. A função do LPFM na contenção não é justificativa para reconstrução universal nesse cenário.",
+        "C": "A osteotomia da tuberosidade exige apófise fechada e análise de parâmetros como TA-GT, no capítulo. Não é rotina da primeira luxação de uma adolescente de 13 anos.",
+        "D": "Idade até 16 anos aparece como fator de risco de recidiva. Dizer que é rara nesse grupo inverte a orientação de vigilância do resumo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Luxação da patela."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Luxação da patela"
+        ],
+        "blocos": [
+          "luxacao-da-patela-c607a167"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "641c8bcdf5e126e3a3b7b6b1cdc5f7fc5cd8dec5b679f55623c7f80c127b4c73"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1312": {
+    "questaoSha256": "5219151f2a6fc6a9cf1a554864ba72e9706d33ee8961862d2fa66393ce491326",
+    "comentarioAnteriorSha256": "5d270b24c072e283cd0f47f4f48cc0ec3882bf749f85dc294c88ac0858c1d1ba",
+    "comentario": {
+      "conceito": "No **pré-adolescente com muito crescimento**, o resumo indica reconstrução do LCA **combinada intra e extra-articular com banda iliotibial**, poupando a fise: modificação de **MacIntosh e Darby**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nA técnica é escolhida por estágio de crescimento. Para adolescente ainda em crescimento, o capítulo descreve reconstrução **transfisária com túneis pequenos e centrais**; perto da maturidade, permite a técnica do adulto. Esses grupos não devem ser fundidos sob a expressão genérica “esqueleto imaturo”.\n\nO objetivo de poupar a fise é compatibilizar estabilidade e crescimento restante. A reconstrução **extra-articular isolada** não é a recomendação do resumo para esse menino: a combinação é parte da definição. A oficial TARO 2006 espelhada está sem gabarito e não deve receber uma letra inventada por associação.\n\n**Na prova: ** muito crescimento restante aponta para estratégia poupadora, sem transportar túneis e implantes do adulto automaticamente. O resumo também orienta não operar nas primeiras 3 semanas; a escolha da técnica não dispensa avaliar o momento do tratamento.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2006 (`pediatria-0824`), que afirmou ser a reconstrução extra-articular a melhor indicação no imaturo. A oficial está sem gabarito; o capítulo não indica a extra-articular isolada, mas a combinada intra e extra-articular com banda iliotibial nos pré-adolescentes.",
+      "correta": "Alternativa C. É a combinação e o enxerto descritos para o pré-adolescente, com proteção da fise. A idade e o estágio Tanner do caso ajudam a distingui-lo do adolescente próximo da maturidade.",
+      "incorretas": {
+        "A": "Técnica convencional do adulto não é a escolha apresentada para muito crescimento restante. O capítulo reserva a estratégia do adulto ao paciente perto da maturidade, em vez de generalizá-la ao Tanner 1.",
+        "B": "O capítulo indica reconstrução intra mais extra-articular, não a extra-articular isolada. Omitir o componente intra-articular muda o procedimento que fundamenta a resposta.",
+        "D": "Esperar definitivamente até a maturidade sem restrições não corresponde à indicação reconstrutiva apresentada. A preocupação com crescimento orienta uma técnica poupadora, sem justificar abandono da estabilidade e do acompanhamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Ligamentos e luxação do joelho."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Ligamentos e luxação do joelho"
+        ],
+        "blocos": [
+          "ligamentos-e-luxacao-do-joelho-03b562df"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "458d81911f55005c369592e77b4a2bb67a25cb18b41ce2f0e6087f984957fd76"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1313": {
+    "questaoSha256": "af2bba83c5877dfdedf25075e97663f7d83c83d20006d0826d1e88ef82648faf",
+    "comentarioAnteriorSha256": "82bedb3ffb423dd21b2cdf1d8ac44a4924873d37562cd9b604b1d8de90489be4",
+    "comentario": {
+      "conceito": "A lesão isolada **grau III do colateral medial** recebe **órtese por 6 semanas** no resumo. Quando associada ao LCA, o capítulo orienta aguardar **4 a 6 semanas** e testar sob anestesia a estabilidade medial. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nO grau de abertura organiza a gravidade: até **5 mm**, de **5 a 10 mm** e **mais de 10 mm**. Uma abertura maior que 10 mm não pertence ao grau I. A escolha também depende de lesões combinadas: a indicação para um ligamento isolado não resolve automaticamente todo joelho multiligamentar.\n\nO **LCP ligamentar isolado** admite tratamento conservador; já sua **avulsão óssea desviada** pede reparo sem cruzar a fise. Assim, o nome LCP não impõe reconstrução imediata: é necessário distinguir ruptura ligamentar e fragmento ósseo.\n\n**Na prova: ** reconhecer a possibilidade de tratar o medial conservadoramente e reavaliar o quadro associado antes da reconstrução do LCA. O prazo do caso combinado não deve ser confundido com obrigação de reparar agudamente todo colateral grau III.\n\n**Por que esta questão foi criada.** É uma questão de projeção. As condutas por ligamento e os prazos para associar o LCA são cobráveis.",
+      "correta": "Alternativa A. Mantém a duração da proteção do medial e a reavaliação da lesão combinada após 4 a 6 semanas. O teste sob anestesia confirma a situação do medial antes de definir o passo seguinte.",
+      "incorretas": {
+        "B": "O resumo orienta órtese no grau III isolado, não reparo agudo obrigatório. Confundir grau elevado com cirurgia universal ignora o protocolo específico do medial.",
+        "C": "Lesão ligamentar isolada do LCP é descrita como conservadora. A indicação de reparar a avulsão óssea desviada não pode ser transferida a toda ruptura ligamentar.",
+        "D": "Mais de 10 mm corresponde ao grupo de maior abertura, no esquema de três graus. Grau I é até 5 mm; a opção inverte a graduação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Ligamentos e luxação do joelho."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Ligamentos e luxação do joelho"
+        ],
+        "blocos": [
+          "ligamentos-e-luxacao-do-joelho-03b562df"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "458d81911f55005c369592e77b4a2bb67a25cb18b41ce2f0e6087f984957fd76"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

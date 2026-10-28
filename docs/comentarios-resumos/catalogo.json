@@ -3,10 +3,10 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 103,
+  "pendente": 73,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 814,
-  "revisada": 1960
+  "pendente-fonte": 824,
+  "revisada": 1980
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -236,18 +236,16 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 38,
-    "revisada": 162
+    "pendente-fonte": 42,
+    "revisada": 173
    }
   },
   "rockwoodcriancas10-06-sindrome-compartimental": {
    "titulo": "Síndrome compartimental na criança",
    "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 38,
-    "revisada": 166
+    "pendente-fonte": 42,
+    "revisada": 177
    }
   },
   "rockwoodcriancas10-07-patologicas-maus-tratos": {
@@ -283,9 +281,9 @@
    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
    "estados": {
     "duplicada": 1,
-    "pendente": 8,
-    "pendente-fonte": 24,
-    "revisada": 108
+    "pendente": 1,
+    "pendente-fonte": 27,
+    "revisada": 112
    }
   },
   "rockwoodcriancas10-19-ombro-umero": {
@@ -347,27 +345,24 @@
    "titulo": "Fratura da diáfise do fêmur na criança",
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
-    "pendente": 11,
-    "pendente-fonte": 18,
-    "revisada": 93
+    "pendente-fonte": 20,
+    "revisada": 102
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
    "titulo": "Fratura da fise distal do fêmur na criança",
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
-    "pendente": 11,
-    "pendente-fonte": 23,
-    "revisada": 100
+    "pendente-fonte": 25,
+    "revisada": 109
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
-    "pendente": 11,
-    "pendente-fonte": 25,
-    "revisada": 95
+    "pendente-fonte": 27,
+    "revisada": 104
    }
   },
   "rockwoodcriancas10-28-joelho-intra-articular": {
@@ -375,18 +370,17 @@
    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
    "estados": {
     "duplicada": 2,
-    "pendente": 35,
-    "pendente-fonte": 5,
-    "revisada": 22
+    "pendente": 24,
+    "pendente-fonte": 8,
+    "revisada": 30
    }
   },
   "rockwoodcriancas10-29-diafise-tibia": {
    "titulo": "Fraturas da tíbia e da fíbula na criança",
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
-    "pendente": 11,
-    "pendente-fonte": 19,
-    "revisada": 92
+    "pendente-fonte": 21,
+    "revisada": 101
    }
   },
   "rockwoodcriancas10-30-tornozelo": {
@@ -402,9 +396,9 @@
    "titulo": "Fraturas, luxações e outras lesões do pé na criança",
    "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
    "estados": {
-    "pendente": 20,
-    "pendente-fonte": 1,
-    "revisada": 7
+    "pendente": 16,
+    "pendente-fonte": 4,
+    "revisada": 8
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -419,9 +413,8 @@
    "titulo": "Fratura supracondiliana do úmero na criança",
    "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
    "estados": {
-    "pendente": 4,
-    "pendente-fonte": 3,
-    "revisada": 52
+    "pendente-fonte": 5,
+    "revisada": 54
    }
   },
   "rockwoodcriancas9-14-fratura-em-t": {
@@ -461,9 +454,8 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 4,
-    "pendente-fonte": 21,
-    "revisada": 81
+    "pendente-fonte": 23,
+    "revisada": 83
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -471,9 +463,8 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 4,
-    "pendente-fonte": 20,
-    "revisada": 77
+    "pendente-fonte": 22,
+    "revisada": 79
    }
   }
  },
@@ -71827,8 +71818,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 descreve parafuso epifisário para fragmento grande/perto da maturidade e sutura para pequeno/cominuto/mais novo,mas não especifica CANULADO,qualificador do implante daC. Falta descrição independente do tipo exato de parafuso;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -71846,7 +71837,8 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "83286c27e21a1176d9e829ea2684fb1e083c849c0e137216b4704746952c3ae7"
+   "questaoSha256": "83286c27e21a1176d9e829ea2684fb1e083c849c0e137216b4704746952c3ae7",
+   "pendencia": "Resumo28 descreve parafuso epifisário para fragmento grande/perto da maturidade e sutura para pequeno/cominuto/mais novo,mas não especifica CANULADO,qualificador do implante daC. Falta descrição independente do tipo exato de parafuso;sem selo."
   },
   "pediatria-1305": {
    "tema": "pediatria",
@@ -71856,8 +71848,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 informa78%dos graves sem movimento,mas não define o intervalo4–6SEMANAS de imobilização rígida nem demonstra diretamente a redução de risco com mobilização precoce na alternativaA. Falta protocolo/série independente com duração e efeito preventivo,não inferir causalidade do percentual. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -71875,7 +71867,8 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "ae508198635dca95ca0ad4f3ce7af21429c349650b2a69f37774421516020b24"
+   "questaoSha256": "ae508198635dca95ca0ad4f3ce7af21429c349650b2a69f37774421516020b24",
+   "pendencia": "Resumo28 informa78%dos graves sem movimento,mas não define o intervalo4–6SEMANAS de imobilização rígida nem demonstra diretamente a redução de risco com mobilização precoce na alternativaA. Falta protocolo/série independente com duração e efeito preventivo,não inferir causalidade do percentual. Sem selo."
   },
   "pediatria-1306": {
    "tema": "pediatria",
@@ -71885,7 +71878,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71904,7 +71897,45 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "aff77fa4c13945cbde7f8cff94e811c5d026b99a968e0cfa15071b896b54d340"
+   "questaoSha256": "aff77fa4c13945cbde7f8cff94e811c5d026b99a968e0cfa15071b896b54d340",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Fratura da espinha tibial"
+      ],
+      "blocos": [
+       "fratura-da-espinha-tibial-f7ee225d"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "634c3aff5a776f785deba381b6d41ea654f42275e4fc4628bd0f546eee35c110"
+     },
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "como-ler-este-capitulo-3dc277b2"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "2cbd4d756b2111459a022f57c01bf8f95a2728e149186870f7a186dc6eae00ef"
+     }
+    ],
+    "questaoSha256": "aff77fa4c13945cbde7f8cff94e811c5d026b99a968e0cfa15071b896b54d340",
+    "comentarioSha256": "7e3934fcc740fe87b403193ce5e7f6c477e357a4f849f83436b0ac84b6d25ee6"
+   }
   },
   "pediatria-1307": {
    "tema": "pediatria",
@@ -71914,7 +71945,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71933,7 +71964,32 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "084317f1a3ba5256effd61711542a11eec103efdc7360cb15eba31d2a240ae08"
+   "questaoSha256": "084317f1a3ba5256effd61711542a11eec103efdc7360cb15eba31d2a240ae08",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Fratura da espinha tibial",
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "fratura-da-espinha-tibial-4d91936f",
+       "como-ler-este-capitulo-3dc277b2"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "5c41f8559286be30f1c4858f6d0f2a373acc6cfd730d4c76a62b113617b5f768"
+     }
+    ],
+    "questaoSha256": "084317f1a3ba5256effd61711542a11eec103efdc7360cb15eba31d2a240ae08",
+    "comentarioSha256": "c0b8a8568ad1438ce32cbeac964c6802c7ff44c66ec4e0eaa51254a17dbb9554"
+   }
   },
   "pediatria-1308": {
    "tema": "pediatria",
@@ -71943,7 +71999,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71962,7 +72018,30 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "6c3a7a9155166e6f03b7d7b1766b6880fa0fa948488f578b7f49603c2fe31e1a"
+   "questaoSha256": "6c3a7a9155166e6f03b7d7b1766b6880fa0fa948488f578b7f49603c2fe31e1a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Luva patelar e fratura osteocondral"
+      ],
+      "blocos": [
+       "luva-patelar-e-fratura-osteocondral-177dd0d8"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "9c55ac09b24b4cad0715e64d9f06cc89bee70136c6078e83b3c3ed0ebcabe88e"
+     }
+    ],
+    "questaoSha256": "6c3a7a9155166e6f03b7d7b1766b6880fa0fa948488f578b7f49603c2fe31e1a",
+    "comentarioSha256": "569880fc6555419c6442a13e78a101ed5a6f7ad63af70583475e980cfccc0e7e"
+   }
   },
   "pediatria-1309": {
    "tema": "pediatria",
@@ -71972,7 +72051,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71991,7 +72070,30 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "fa564697f059eb9f310a860072baa9a582c830fd5a4d2f7171c59a32248ec0a1"
+   "questaoSha256": "fa564697f059eb9f310a860072baa9a582c830fd5a4d2f7171c59a32248ec0a1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Luva patelar e fratura osteocondral"
+      ],
+      "blocos": [
+       "luva-patelar-e-fratura-osteocondral-a8cc05a0"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "d8fece9a64bb4fc616c8a56d8b96cd95d068c732ead86c092a87a42bf493db7d"
+     }
+    ],
+    "questaoSha256": "fa564697f059eb9f310a860072baa9a582c830fd5a4d2f7171c59a32248ec0a1",
+    "comentarioSha256": "0df26cbbd41989d81e2ee079eae15708f2e4c9e2d0dcc0c926c6c5a1b5a0de35"
+   }
   },
   "pediatria-1310": {
    "tema": "pediatria",
@@ -72001,7 +72103,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72017,7 +72119,30 @@
     "rockwoodcriancas10-12-monteggia",
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "f54c26e91fc99974a77b73da1a50e96fe8b95521d122b7df4486c40d66908c5a"
+   "questaoSha256": "f54c26e91fc99974a77b73da1a50e96fe8b95521d122b7df4486c40d66908c5a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Luxação da patela"
+      ],
+      "blocos": [
+       "luxacao-da-patela-c607a167"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "641c8bcdf5e126e3a3b7b6b1cdc5f7fc5cd8dec5b679f55623c7f80c127b4c73"
+     }
+    ],
+    "questaoSha256": "f54c26e91fc99974a77b73da1a50e96fe8b95521d122b7df4486c40d66908c5a",
+    "comentarioSha256": "778daba019157d3d9049904544c7f0881393cdb79b171b722225eeb372401123"
+   }
   },
   "pediatria-1311": {
    "tema": "pediatria",
@@ -72027,8 +72152,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 sustenta fixação epifisária distal àfise,pontoSchöttle e isometria,mas não descreve confirmação em PERFIL PERFEITO,nem o teste de não apertar na flexão,componentes técnicos daD. Falta técnica independente da referência radiográfica e do controle de tensão;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72043,7 +72168,8 @@
     "rockwoodcriancas10-12-monteggia",
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "94ea615f361376b9cc524aa45db98db0fa10893f192de420c2f958162027ae49"
+   "questaoSha256": "94ea615f361376b9cc524aa45db98db0fa10893f192de420c2f958162027ae49",
+   "pendencia": "Resumo28 sustenta fixação epifisária distal àfise,pontoSchöttle e isometria,mas não descreve confirmação em PERFIL PERFEITO,nem o teste de não apertar na flexão,componentes técnicos daD. Falta técnica independente da referência radiográfica e do controle de tensão;sem selo."
   },
   "pediatria-1312": {
    "tema": "pediatria",
@@ -72053,7 +72179,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72072,7 +72198,30 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "5219151f2a6fc6a9cf1a554864ba72e9706d33ee8961862d2fa66393ce491326"
+   "questaoSha256": "5219151f2a6fc6a9cf1a554864ba72e9706d33ee8961862d2fa66393ce491326",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Ligamentos e luxação do joelho"
+      ],
+      "blocos": [
+       "ligamentos-e-luxacao-do-joelho-03b562df"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "458d81911f55005c369592e77b4a2bb67a25cb18b41ce2f0e6087f984957fd76"
+     }
+    ],
+    "questaoSha256": "5219151f2a6fc6a9cf1a554864ba72e9706d33ee8961862d2fa66393ce491326",
+    "comentarioSha256": "c655c48ccff9ebba92067e214d8e5405fde575773df7f819ac7b17f212bd5606"
+   }
   },
   "pediatria-1313": {
    "tema": "pediatria",
@@ -72082,7 +72231,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72101,7 +72250,30 @@
     "rockwoodcriancas10-28-joelho-intra-articular",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "af2bba83c5877dfdedf25075e97663f7d83c83d20006d0826d1e88ef82648faf"
+   "questaoSha256": "af2bba83c5877dfdedf25075e97663f7d83c83d20006d0826d1e88ef82648faf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Ligamentos e luxação do joelho"
+      ],
+      "blocos": [
+       "ligamentos-e-luxacao-do-joelho-03b562df"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "458d81911f55005c369592e77b4a2bb67a25cb18b41ce2f0e6087f984957fd76"
+     }
+    ],
+    "questaoSha256": "af2bba83c5877dfdedf25075e97663f7d83c83d20006d0826d1e88ef82648faf",
+    "comentarioSha256": "debf6f335dfb530c68fde4097ad8d38ec5bc14483accdb983085b08e938d4781"
+   }
   },
   "pediatria-1314": {
    "tema": "pediatria",
@@ -72111,7 +72283,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72127,7 +72299,30 @@
     "rockwoodcriancas10-12-monteggia",
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "481cfb69e119ed08a6ed37c0d4aae07e356ddfa8f80531787c74f3c37180215f"
+   "questaoSha256": "481cfb69e119ed08a6ed37c0d4aae07e356ddfa8f80531787c74f3c37180215f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+      "titulo": "Lesões intra-articulares do joelho na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+      "secoes": [
+       "Ligamentos e luxação do joelho"
+      ],
+      "blocos": [
+       "ligamentos-e-luxacao-do-joelho-61aa537e"
+      ],
+      "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+      "trechosSha256": "51b2ca4c13e787519252d039cd1d8a56a7b057bb61c74b6aaa8ec6ec5f33a699"
+     }
+    ],
+    "questaoSha256": "481cfb69e119ed08a6ed37c0d4aae07e356ddfa8f80531787c74f3c37180215f",
+    "comentarioSha256": "393477660161d44447c0311014c9ff1eafd04cbddf7b922bd29efa12da05186a"
+   }
   },
   "pediatria-1315": {
    "tema": "pediatria",
@@ -72136,7 +72331,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72152,7 +72347,33 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
-   "questaoSha256": "30debb427ec0d92126383a30da2ce77517fd1e0360384cc1a202393083eb7f1d"
+   "questaoSha256": "30debb427ec0d92126383a30da2ce77517fd1e0360384cc1a202393083eb7f1d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Diagnóstico na criança",
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "diagnostico-na-crianca-1c8ef936",
+       "diagnostico-na-crianca-2587bbf7",
+       "como-ler-este-capitulo-c1437212"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "dbda6415fe2af0c0b45f03eccbe94243e463b8029f7ac96ba4df76f432c7e7ea"
+     }
+    ],
+    "questaoSha256": "30debb427ec0d92126383a30da2ce77517fd1e0360384cc1a202393083eb7f1d",
+    "comentarioSha256": "fd53b64af198b0e9c8cd00829f33b2698f22750f7a8b452bb23af7f375bc7aec"
+   }
   },
   "pediatria-1316": {
    "tema": "pediatria",
@@ -72161,7 +72382,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72177,7 +72398,30 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
-   "questaoSha256": "824f65a67306af8989ed97aec3983a42d00fad11da891bf8353dbc8bef18b7ab"
+   "questaoSha256": "824f65a67306af8989ed97aec3983a42d00fad11da891bf8353dbc8bef18b7ab",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Diagnóstico na criança"
+      ],
+      "blocos": [
+       "diagnostico-na-crianca-2587bbf7"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "c6e30883b764c4e3346ef4e57c9e153b65529bf86830324f3a10da9b7caeb0d0"
+     }
+    ],
+    "questaoSha256": "824f65a67306af8989ed97aec3983a42d00fad11da891bf8353dbc8bef18b7ab",
+    "comentarioSha256": "73e1f422f69483ecdf355b521a85a0f8ed25015488be853f94b2e99ba04de518"
+   }
   },
   "pediatria-1317": {
    "tema": "pediatria",
@@ -72187,7 +72431,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72204,7 +72448,33 @@
     "rockwoodcriancas10-06-sindrome-compartimental",
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "0e1af5ce6570b80ecf216ab8143715dc1556f941588b0cb6b7013005584fe88f"
+   "questaoSha256": "0e1af5ce6570b80ecf216ab8143715dc1556f941588b0cb6b7013005584fe88f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Diagnóstico na criança",
+       "Formas especiais e tratamento"
+      ],
+      "blocos": [
+       "diagnostico-na-crianca-4664bf0c",
+       "diagnostico-na-crianca-1c8ef936",
+       "formas-especiais-e-tratamento-db1ca75e"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "9480dba995fff0c021305324fe0e794288dba537fef28ddabeba89704e00f129"
+     }
+    ],
+    "questaoSha256": "0e1af5ce6570b80ecf216ab8143715dc1556f941588b0cb6b7013005584fe88f",
+    "comentarioSha256": "5a0c91eab05ea82d74e1fac4757a767348d108505d0d2085a19cd65e82a67eb7"
+   }
   },
   "pediatria-1318": {
    "tema": "pediatria",
@@ -72214,7 +72484,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72231,7 +72501,32 @@
     "rockwoodcriancas10-06-sindrome-compartimental",
     "rockwoodcriancas9-13-supracondiliana"
    ],
-   "questaoSha256": "023ddca3b57888976518fa93aeb111a62bbe2fcab162534a9b9ad4eb8f39eff8"
+   "questaoSha256": "023ddca3b57888976518fa93aeb111a62bbe2fcab162534a9b9ad4eb8f39eff8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Membro superior e antebraço",
+       "Diagnóstico na criança"
+      ],
+      "blocos": [
+       "membro-superior-e-antebraco-1f54eac7",
+       "diagnostico-na-crianca-1c8ef936"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "a5c2f0b8467f5ae7909952f3082f16c9f9fe8066bef13a9a4834d35dfe4315f0"
+     }
+    ],
+    "questaoSha256": "023ddca3b57888976518fa93aeb111a62bbe2fcab162534a9b9ad4eb8f39eff8",
+    "comentarioSha256": "c16bf527298800ffc9d731b7ca67ee4fe7ef68617adb24110c67777c4f2927df"
+   }
   },
   "pediatria-1319": {
    "tema": "pediatria",
@@ -72241,7 +72536,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72260,7 +72555,31 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "82c74a779cf27432fe67dcc35c3e09f6f5590e729000cd0d96fb99cc77d057ee"
+   "questaoSha256": "82c74a779cf27432fe67dcc35c3e09f6f5590e729000cd0d96fb99cc77d057ee",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Membro superior e antebraço"
+      ],
+      "blocos": [
+       "membro-superior-e-antebraco-192c5745",
+       "membro-superior-e-antebraco-8f3bb01a"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "1a721ed538b77358125a4cc9e0610a2fcb52421baad8c6151867cf969955c80f"
+     }
+    ],
+    "questaoSha256": "82c74a779cf27432fe67dcc35c3e09f6f5590e729000cd0d96fb99cc77d057ee",
+    "comentarioSha256": "c287fc384d2b67c25204383fb302334493a19eb777b6749c4080371fd5175c70"
+   }
   },
   "pediatria-1320": {
    "tema": "pediatria",
@@ -72270,7 +72589,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72290,7 +72609,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "e39bdd2582777f5de86261142f5467e751ea95fe5af8f2bf9813661077467a28"
+   "questaoSha256": "e39bdd2582777f5de86261142f5467e751ea95fe5af8f2bf9813661077467a28",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Membro inferior"
+      ],
+      "blocos": [
+       "membro-inferior-ff84b11d"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "97002c76f08c046b5dddcfe3a22b16bdc14bd3b8d6328da8b26da9ec897cf98a"
+     }
+    ],
+    "questaoSha256": "e39bdd2582777f5de86261142f5467e751ea95fe5af8f2bf9813661077467a28",
+    "comentarioSha256": "525a31b15323614c1a751555b160afb2b6d09877e253225e73d78427957472e9"
+   }
   },
   "pediatria-1321": {
    "tema": "pediatria",
@@ -72299,7 +72641,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72315,7 +72657,32 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
-   "questaoSha256": "bb3d95bbea388e5cd1b38bb65475f180a9fefd47f7864eaffd9935086d767800"
+   "questaoSha256": "bb3d95bbea388e5cd1b38bb65475f180a9fefd47f7864eaffd9935086d767800",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Formas especiais e tratamento",
+       "Diagnóstico na criança"
+      ],
+      "blocos": [
+       "formas-especiais-e-tratamento-c4f73891",
+       "diagnostico-na-crianca-1c8ef936"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "6f3f46345f7eafa9d31a5445336bdddbb208f36f94a346d6d642c881d002bcc3"
+     }
+    ],
+    "questaoSha256": "bb3d95bbea388e5cd1b38bb65475f180a9fefd47f7864eaffd9935086d767800",
+    "comentarioSha256": "7371bf53e47894face1ab9c0fc470913fbb0e3d07412662ad710fe97fe58b9ff"
+   }
   },
   "pediatria-1322": {
    "tema": "pediatria",
@@ -72325,7 +72692,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72345,7 +72712,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "2a136894c72bfa9dfb0a4f26b223154b2535443fa2bd436c65b87412bcd7723d"
+   "questaoSha256": "2a136894c72bfa9dfb0a4f26b223154b2535443fa2bd436c65b87412bcd7723d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Formas especiais e tratamento"
+      ],
+      "blocos": [
+       "formas-especiais-e-tratamento-c4f73891"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "2161492e522154f07ccc4e990cc88a38e8bf38441e6f0f72d16c6a423acc7ed2"
+     }
+    ],
+    "questaoSha256": "2a136894c72bfa9dfb0a4f26b223154b2535443fa2bd436c65b87412bcd7723d",
+    "comentarioSha256": "1d6efd79f5981d9a08b86111e60cc61a1a0db452f509ea0c6bea4f4607a7da67"
+   }
   },
   "pediatria-1323": {
    "tema": "pediatria",
@@ -72354,7 +72744,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72370,7 +72760,33 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
-   "questaoSha256": "2e25f38b877f9b841bc28396e2224761c06e4d7f152213f7a27aaef4c6ff4cd0"
+   "questaoSha256": "2e25f38b877f9b841bc28396e2224761c06e4d7f152213f7a27aaef4c6ff4cd0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Formas especiais e tratamento",
+       "Contratura de VOLKMANN e prognóstico"
+      ],
+      "blocos": [
+       "formas-especiais-e-tratamento-c4f73891",
+       "formas-especiais-e-tratamento-db1ca75e",
+       "contratura-de-volkmann-e-prognostico-cfada5ed"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "7e24f2aec03a33f7422e25a4d7023eb5991a6f8c95a4d6242469a7d25ab7aaf4"
+     }
+    ],
+    "questaoSha256": "2e25f38b877f9b841bc28396e2224761c06e4d7f152213f7a27aaef4c6ff4cd0",
+    "comentarioSha256": "cffe00fd811c13a5d698809a13a97cf58ac8d9368deb90d18db161713546ddc5"
+   }
   },
   "pediatria-1324": {
    "tema": "pediatria",
@@ -72379,8 +72795,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo06 define cor,odor e ausência de contração do tecido necrótico,mas não especifica ESTÍMULO ELÉTRICO como método da alternativaC. Consulta ao resumo17adulto não preencheu esse método. Falta critério independente do teste de viabilidade completo;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72395,7 +72811,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
-   "questaoSha256": "762c9fb1a5818bda64e7722737a19006570b831e9e0c1358d703c7fb12caca99"
+   "questaoSha256": "762c9fb1a5818bda64e7722737a19006570b831e9e0c1358d703c7fb12caca99",
+   "pendencia": "Resumo06 define cor,odor e ausência de contração do tecido necrótico,mas não especifica ESTÍMULO ELÉTRICO como método da alternativaC. Consulta ao resumo17adulto não preencheu esse método. Falta critério independente do teste de viabilidade completo;sem selo."
   },
   "pediatria-1325": {
    "tema": "pediatria",
@@ -72405,7 +72822,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72424,7 +72841,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "1f590ed0ea918b9e41251c7085dfe3e041b145744075802e32668a150206b03e"
+   "questaoSha256": "1f590ed0ea918b9e41251c7085dfe3e041b145744075802e32668a150206b03e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Membro superior e antebraço",
+       "Formas especiais e tratamento"
+      ],
+      "blocos": [
+       "membro-superior-e-antebraco-cc585328",
+       "formas-especiais-e-tratamento-db1ca75e"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "e145a83c48e34a9f339c56bfbd9c74b01b807dd38e3f3db4e74dd38856a6a358"
+     }
+    ],
+    "questaoSha256": "1f590ed0ea918b9e41251c7085dfe3e041b145744075802e32668a150206b03e",
+    "comentarioSha256": "34d47dc3c1f0318b0fd159333d630fa505e02210b50c769101a78374c4345117"
+   }
   },
   "pediatria-1326": {
    "tema": "pediatria",
@@ -72434,7 +72876,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72454,7 +72896,30 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "8ccc852955295b5f714c64ce8a9e978111ef088cb2a9553de50b4faa91989628"
+   "questaoSha256": "8ccc852955295b5f714c64ce8a9e978111ef088cb2a9553de50b4faa91989628",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+      "titulo": "Síndrome compartimental na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+      "secoes": [
+       "Membro inferior"
+      ],
+      "blocos": [
+       "membro-inferior-867bf23e"
+      ],
+      "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+      "trechosSha256": "55bbd0239cce7c17e097567dbba9f8dbaaa1f314301ff2a61c619b69d746be64"
+     }
+    ],
+    "questaoSha256": "8ccc852955295b5f714c64ce8a9e978111ef088cb2a9553de50b4faa91989628",
+    "comentarioSha256": "1c767c01b5fa7c37abd994bcb7a3e4b61d4944e238fc1f46459b977062d21a3d"
+   }
   },
   "pediatria-1327": {
    "tema": "pediatria",
@@ -72465,8 +72930,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo06 defineTsuge moderada e associação à supracondiliana5–10anos,mas não quantifica que seja a forma MAIS COMUM após essa fratura,como aC afirma. Falta distribuição comparativa dos graus no grupo pós-supracondiliana;sem converter associação em predominância. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72485,7 +72950,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "5d6b2d5d11dd8da0a503972db7dff9943eb39dc65d14f8553d5720ff96425f31"
+   "questaoSha256": "5d6b2d5d11dd8da0a503972db7dff9943eb39dc65d14f8553d5720ff96425f31",
+   "pendencia": "Resumo06 defineTsuge moderada e associação à supracondiliana5–10anos,mas não quantifica que seja a forma MAIS COMUM após essa fratura,como aC afirma. Falta distribuição comparativa dos graus no grupo pós-supracondiliana;sem converter associação em predominância. Sem selo."
   },
   "pediatria-1328": {
    "tema": "pediatria",
@@ -72496,8 +72962,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo06 sustenta terapia,órteses,deslizamento,neurólise,transferências e artrodese após maturidade,mas não compara diretamente recuperação de NERVO E MÚSCULO da criança COM ADULTO naD. Recupera muito não demonstra os dois tecidos na comparação etária. Falta dado independente completo;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72516,7 +72982,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "9a3520258a27139d242ae47576a7aa39cbdd51087f05787295c53373b55a6008"
+   "questaoSha256": "9a3520258a27139d242ae47576a7aa39cbdd51087f05787295c53373b55a6008",
+   "pendencia": "Resumo06 sustenta terapia,órteses,deslizamento,neurólise,transferências e artrodese após maturidade,mas não compara diretamente recuperação de NERVO E MÚSCULO da criança COM ADULTO naD. Recupera muito não demonstra os dois tecidos na comparação etária. Falta dado independente completo;sem selo."
   },
   "pediatria-1329": {
    "tema": "pediatria",
@@ -72525,8 +72992,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo06 informa prognóstico>90%,resultados até72h e73%dos processos favoráveis ao paciente,mas não demonstra que DIAGNÓSTICO TARDIO seja CAUSA FREQUENTE de processos nesse denominador pediátrico,qualificador daB. Resumo17adulto tem outra série/percentuais;sem fundir coortes. Falta etiologia/frequência dos processos do grupo da questão. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72541,7 +73008,8 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
-   "questaoSha256": "cde0dcf980f7d49507e7a1545b4ed51a2fa597755bdc25cf12e61883c7347be0"
+   "questaoSha256": "cde0dcf980f7d49507e7a1545b4ed51a2fa597755bdc25cf12e61883c7347be0",
+   "pendencia": "Resumo06 informa prognóstico>90%,resultados até72h e73%dos processos favoráveis ao paciente,mas não demonstra que DIAGNÓSTICO TARDIO seja CAUSA FREQUENTE de processos nesse denominador pediátrico,qualificador daB. Resumo17adulto tem outra série/percentuais;sem fundir coortes. Falta etiologia/frequência dos processos do grupo da questão. Sem selo."
   },
   "pediatria-1330": {
    "tema": "pediatria",
@@ -72550,7 +73018,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72565,7 +73033,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "c3eeeeed255d0a8a1ebfabfe416a473a0022ccc67dd3356269e19e133cf810e4"
+   "questaoSha256": "c3eeeeed255d0a8a1ebfabfe416a473a0022ccc67dd3356269e19e133cf810e4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-31-pe",
+      "titulo": "Fraturas, luxações e outras lesões do pé na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
+      "secoes": [
+       "Tálus"
+      ],
+      "blocos": [
+       "talus-cf87a357",
+       "talus-fc63dd2f"
+      ],
+      "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
+      "trechosSha256": "f5af65935e46d297b4d3a805fb3e97b49312d4d6452c14512cf1e762c295a22c"
+     }
+    ],
+    "questaoSha256": "c3eeeeed255d0a8a1ebfabfe416a473a0022ccc67dd3356269e19e133cf810e4",
+    "comentarioSha256": "7e49eb718d498a430ab140b21a12bb2735744fabead64c59a55cd0a608dd8175"
+   }
   },
   "pediatria-1331": {
    "tema": "pediatria",
@@ -72574,8 +73066,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 sustenta radiolucência6–8semanas,RM aos3meses quando ausente,e uso de titânio,mas não demonstra explicitamente a compatibilidade daRM com os PARAFUSOS DE TITÂNIO daA nem compara confiabilidade por idade daD. Busca no66adulto não trouxe essa descrição. Falta critério técnico independente do implante/limitação etária;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72589,7 +73081,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "1c7b4d62657f065f74a439519809320b6c99dbacb80ca098ee1c3df9d1e6c254"
+   "questaoSha256": "1c7b4d62657f065f74a439519809320b6c99dbacb80ca098ee1c3df9d1e6c254",
+   "pendencia": "Resumo31 sustenta radiolucência6–8semanas,RM aos3meses quando ausente,e uso de titânio,mas não demonstra explicitamente a compatibilidade daRM com os PARAFUSOS DE TITÂNIO daA nem compara confiabilidade por idade daD. Busca no66adulto não trouxe essa descrição. Falta critério técnico independente do implante/limitação etária;sem selo."
   },
   "pediatria-1332": {
    "tema": "pediatria",
@@ -72598,8 +73091,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 sustenta reduçãoII em flexão plantar/pronação,fios se instável e tolerância até10°,mas não define aceitar POUCOS MILÍMETROS de desvio como alternativa à abertura/desvascularização naB. Não converter tolerância angular em translação. Falta limiar linear pediátrico e justificativa independente;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72613,7 +73106,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "4487e4231afc5bcf644a002791448e4ae408a1b93e6c7158b39094609296be89"
+   "questaoSha256": "4487e4231afc5bcf644a002791448e4ae408a1b93e6c7158b39094609296be89",
+   "pendencia": "Resumo31 sustenta reduçãoII em flexão plantar/pronação,fios se instável e tolerância até10°,mas não define aceitar POUCOS MILÍMETROS de desvio como alternativa à abertura/desvascularização naB. Não converter tolerância angular em translação. Falta limiar linear pediátrico e justificativa independente;sem selo."
   },
   "pediatria-1333": {
    "tema": "pediatria",
@@ -72622,8 +73116,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 sustenta dorsiflexão/inversão,42%perdidas,encaixe/TC e DEGRAU>2–3mm,mas não equipara AFASTAMENTO articular ao mesmo limiar e não desenvolve a indicação de reduçãoABERTA daD. Resumo66adulto traz mecanismo diferente(eversão),sem preencher diretamente o protocolo pediátrico. Falta técnica/critério linear completo;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72637,7 +73131,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "3c561e349ee547176adf072aca549ed22c5eb60cb93fa8dd56b8908c92f99ee1"
+   "questaoSha256": "3c561e349ee547176adf072aca549ed22c5eb60cb93fa8dd56b8908c92f99ee1",
+   "pendencia": "Resumo31 sustenta dorsiflexão/inversão,42%perdidas,encaixe/TC e DEGRAU>2–3mm,mas não equipara AFASTAMENTO articular ao mesmo limiar e não desenvolve a indicação de reduçãoABERTA daD. Resumo66adulto traz mecanismo diferente(eversão),sem preencher diretamente o protocolo pediátrico. Falta técnica/critério linear completo;sem selo."
   },
   "pediatria-1334": {
    "tema": "pediatria",
