@@ -3,11 +3,11 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 249,
+  "pendente": 219,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 782,
+  "pendente-fonte": 784,
   "pendente-inspecao-imagem": 4,
-  "revisada": 1842
+  "revisada": 1870
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -237,18 +237,18 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 79,
+    "pendente": 64,
     "pendente-fonte": 25,
-    "revisada": 111
+    "revisada": 126
    }
   },
   "rockwoodcriancas10-06-sindrome-compartimental": {
    "titulo": "Síndrome compartimental na criança",
    "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
    "estados": {
-    "pendente": 79,
+    "pendente": 64,
     "pendente-fonte": 25,
-    "revisada": 115
+    "revisada": 130
    }
   },
   "rockwoodcriancas10-07-patologicas-maus-tratos": {
@@ -335,20 +335,20 @@
    "titulo": "Fraturas da pelve e do acetábulo na criança",
    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
    "estados": {
-    "pendente": 38,
+    "pendente": 23,
     "pendente-fonte": 2,
     "pendente-inspecao-imagem": 1,
-    "revisada": 17
+    "revisada": 32
    }
   },
   "rockwoodcriancas10-24-quadril": {
    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
    "estados": {
-    "pendente": 38,
+    "pendente": 23,
     "pendente-fonte": 5,
     "pendente-inspecao-imagem": 1,
-    "revisada": 17
+    "revisada": 32
    }
   },
   "rockwoodcriancas10-25-diafise-femur": {
@@ -401,9 +401,9 @@
    "titulo": "Fraturas do tornozelo na criança",
    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
    "estados": {
-    "pendente": 16,
-    "pendente-fonte": 2,
-    "revisada": 21
+    "pendente": 1,
+    "pendente-fonte": 4,
+    "revisada": 34
    }
   },
   "rockwoodcriancas10-31-pe": {
@@ -64692,7 +64692,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64707,7 +64707,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "44346c8481e0260aaf7bd36cc1a1a85c0e2969939d767e244c7b0cdb39835493"
+   "questaoSha256": "44346c8481e0260aaf7bd36cc1a1a85c0e2969939d767e244c7b0cdb39835493",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "TILLAUX juvenil",
+       "Anatomia e crescimento"
+      ],
+      "blocos": [
+       "tillaux-juvenil-cd63515e",
+       "anatomia-e-crescimento-67fc8391"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "8ea325881e1b85a207826731dae767fd64b88b1c5fe77fc0c9a67e081ef71954"
+     }
+    ],
+    "questaoSha256": "44346c8481e0260aaf7bd36cc1a1a85c0e2969939d767e244c7b0cdb39835493",
+    "comentarioSha256": "7bd99f2356e94858c30cebbf4109489f517b0bb9adb8ec87fab9f355e8c67b66"
+   }
   },
   "pediatria-1154": {
    "tema": "pediatria",
@@ -64717,7 +64742,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64732,7 +64757,34 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "b1d7b4062ce1a61ddf2377e95e79adbd7e16d1747eaaa95d7795bbb9fdfb8c70"
+   "questaoSha256": "b1d7b4062ce1a61ddf2377e95e79adbd7e16d1747eaaa95d7795bbb9fdfb8c70",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Anatomia e crescimento",
+       "TILLAUX juvenil",
+       "Triplanar"
+      ],
+      "blocos": [
+       "anatomia-e-crescimento-67fc8391",
+       "tillaux-juvenil-cd63515e",
+       "triplanar-9e66d94d"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "ab47a80746a0433ee1ed10adeae14ff4a1949a50b59b1156c8bec650b7abab94"
+     }
+    ],
+    "questaoSha256": "b1d7b4062ce1a61ddf2377e95e79adbd7e16d1747eaaa95d7795bbb9fdfb8c70",
+    "comentarioSha256": "9216b4cfa4f9a068bd0f1a7ff1da25b5ba259e0273561716b65b7dc2e71232fc"
+   }
   },
   "pediatria-1155": {
    "tema": "pediatria",
@@ -64742,7 +64794,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64757,7 +64809,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "7f4049e0568cf344e2ca3302104e6218a11f80e0198f825286a21ce96cfa7c65"
+   "questaoSha256": "7f4049e0568cf344e2ca3302104e6218a11f80e0198f825286a21ce96cfa7c65",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Triplanar"
+      ],
+      "blocos": [
+       "triplanar-db4cdd14",
+       "triplanar-9e66d94d"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "8fe3547ec2f6bea678c0ca0fc11a31087327f4315890b0b0a214149c4c0bff1b"
+     }
+    ],
+    "questaoSha256": "7f4049e0568cf344e2ca3302104e6218a11f80e0198f825286a21ce96cfa7c65",
+    "comentarioSha256": "50dc6727438383ad86294b34bfcd05e41b8890fb64d43d5f79913f0eee91a787"
+   }
   },
   "pediatria-1156": {
    "tema": "pediatria",
@@ -64767,7 +64843,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64782,7 +64858,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "029e33ce365a1178093e41db2b2badcdc413b999659db4ad1b9959d440e68928"
+   "questaoSha256": "029e33ce365a1178093e41db2b2badcdc413b999659db4ad1b9959d440e68928",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Classificação e mecanismos"
+      ],
+      "blocos": [
+       "classificacao-e-mecanismos-24094ed8",
+       "classificacao-e-mecanismos-cc38d18d",
+       "classificacao-e-mecanismos-c3279ecb"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "f2478d2fae87548c044d0c2883edd3eff3cefba027ea3e9fc7766eca8ed2e330"
+     }
+    ],
+    "questaoSha256": "029e33ce365a1178093e41db2b2badcdc413b999659db4ad1b9959d440e68928",
+    "comentarioSha256": "3885070de0fe8916b87b24a55a504891384df766a31717dc19f2e714e8af9159"
+   }
   },
   "pediatria-1157": {
    "tema": "pediatria",
@@ -64792,7 +64893,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64807,7 +64908,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "f445430fee2fce54a85d7b74c1681b42f6ae24a3245fefc5639fa34dfa48d8e5"
+   "questaoSha256": "f445430fee2fce54a85d7b74c1681b42f6ae24a3245fefc5639fa34dfa48d8e5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-0098515b"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "d9ac1c78611320c66a136b572fcaa27c94561b3a9e52c08e3e11fe8375402f52"
+     }
+    ],
+    "questaoSha256": "f445430fee2fce54a85d7b74c1681b42f6ae24a3245fefc5639fa34dfa48d8e5",
+    "comentarioSha256": "c930b7ce26543d987c0c69f0d8ad164dce99eca5a29131a7174b16277f9a7d12"
+   }
   },
   "pediatria-1158": {
    "tema": "pediatria",
@@ -64817,7 +64941,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64832,7 +64956,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "d69587957bb4200510e23b6beab43c6f3e22e201a8b006449dc3c9d0ed275671"
+   "questaoSha256": "d69587957bb4200510e23b6beab43c6f3e22e201a8b006449dc3c9d0ed275671",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Fraturas fisárias da tíbia distal"
+      ],
+      "blocos": [
+       "fraturas-fisarias-da-tibia-distal-76c2b25a"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "ae4b2f41bbd9dd7fb40db601daa6a5240ad93b2f842d5cdfc8b37527bb7e35e5"
+     }
+    ],
+    "questaoSha256": "d69587957bb4200510e23b6beab43c6f3e22e201a8b006449dc3c9d0ed275671",
+    "comentarioSha256": "a3ba2c652bbf3d26247b6fd2e63c8ddbc0fa52b9abef701f8c02b0b7a16a9532"
+   }
   },
   "pediatria-1159": {
    "tema": "pediatria",
@@ -64842,7 +64989,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64857,7 +65004,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "9f2f64e27d08d1541b88258561f3d1adeaada740c528e1b33be3105bc3d723ff"
+   "questaoSha256": "9f2f64e27d08d1541b88258561f3d1adeaada740c528e1b33be3105bc3d723ff",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Fraturas fisárias da tíbia distal"
+      ],
+      "blocos": [
+       "fraturas-fisarias-da-tibia-distal-76c2b25a"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "ae4b2f41bbd9dd7fb40db601daa6a5240ad93b2f842d5cdfc8b37527bb7e35e5"
+     }
+    ],
+    "questaoSha256": "9f2f64e27d08d1541b88258561f3d1adeaada740c528e1b33be3105bc3d723ff",
+    "comentarioSha256": "42f43a2ec3c8474fc47417ebf6303c5d962ee18f845017deba231ef41962e634"
+   }
   },
   "pediatria-1160": {
    "tema": "pediatria",
@@ -64866,7 +65036,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64881,7 +65051,46 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "810aeb2d42415544d3fd8b9ea2bbf76b751ce9d6cd5038df9b266687b2d07e75"
+   "questaoSha256": "810aeb2d42415544d3fd8b9ea2bbf76b751ce9d6cd5038df9b266687b2d07e75",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-1afcd6b0"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "89a8695b83ebd966f263f12652b9f858dfee588844041f9f31d2e2cfc2a8610b"
+     },
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-222f4f26",
+       "os-compartimentos-de-cada-regiao-eb26943e"
+      ],
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
+      "trechosSha256": "ba332cfa832d42d524e20a413b3d412c57651816d80cf5983332c12b9edfdbca"
+     }
+    ],
+    "questaoSha256": "810aeb2d42415544d3fd8b9ea2bbf76b751ce9d6cd5038df9b266687b2d07e75",
+    "comentarioSha256": "4c81e4a5a65296cccecc70716a905c10e9d04c71b65c207a32e8332216d10731"
+   }
   },
   "pediatria-1161": {
    "tema": "pediatria",
@@ -64890,7 +65099,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64905,7 +65114,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "7757e6ac9ef7a67930f5368c5dd5d0887b5b41f09031e5b6996ca00a44ba429b"
+   "questaoSha256": "7757e6ac9ef7a67930f5368c5dd5d0887b5b41f09031e5b6996ca00a44ba429b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Fíbula, entorse e exame de baixo risco"
+      ],
+      "blocos": [
+       "fibula-entorse-e-exame-de-baixo-risco-b57c9c08"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "d4e77b98c7404f0e0020abe3db3d6d380c08d96f6870e863a89766c46b3fd334"
+     }
+    ],
+    "questaoSha256": "7757e6ac9ef7a67930f5368c5dd5d0887b5b41f09031e5b6996ca00a44ba429b",
+    "comentarioSha256": "b16d6b5b1c7d5fdc96591db5b46a239421300a8d8d0dde5822dbceeec1054166"
+   }
   },
   "pediatria-1162": {
    "tema": "pediatria",
@@ -64914,7 +65146,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64929,7 +65161,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "472ad00eec9671b9255a3be08424dd890d6236f807558d09b9493be64d5f56e9"
+   "questaoSha256": "472ad00eec9671b9255a3be08424dd890d6236f807558d09b9493be64d5f56e9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Fíbula, entorse e exame de baixo risco"
+      ],
+      "blocos": [
+       "fibula-entorse-e-exame-de-baixo-risco-b57c9c08"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "d4e77b98c7404f0e0020abe3db3d6d380c08d96f6870e863a89766c46b3fd334"
+     }
+    ],
+    "questaoSha256": "472ad00eec9671b9255a3be08424dd890d6236f807558d09b9493be64d5f56e9",
+    "comentarioSha256": "1dd679a98206aa48d15befcf20f5a4fd3ab35668a814bf7e3c0c9c02e483d90e"
+   }
   },
   "pediatria-1163": {
    "tema": "pediatria",
@@ -64939,8 +65194,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 30 indica ressecção com interposição para ponte de 25–40% e mais de 2 anos de crescimento, sustentando a escolha geral no caso de 30%/4 anos. Não especifica, porém, GORDURA ou CIMENTO como materiais de interposição nessa ressecção fisária, componentes expressos da alternativa C. A gordura citada em outra seção é cobertura de fise exposta no trauma por cortador, não prova do material para ressecar ponte. Falta fonte independente dos materiais e de sua aplicação nesse procedimento; preservar comentário e gabarito, sem selo de cobertura integral.",
    "temComentario": true,
    "citacoes": [
     {
@@ -64954,7 +65209,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "1e4ae6d8c72b8fda9882b8234bfd4bc8e908532b9fe9bec6c6a1c6269990b953"
+   "questaoSha256": "1e4ae6d8c72b8fda9882b8234bfd4bc8e908532b9fe9bec6c6a1c6269990b953",
+   "pendencia": "O resumo 30 indica ressecção com interposição para ponte de 25–40% e mais de 2 anos de crescimento, sustentando a escolha geral no caso de 30%/4 anos. Não especifica, porém, GORDURA ou CIMENTO como materiais de interposição nessa ressecção fisária, componentes expressos da alternativa C. A gordura citada em outra seção é cobertura de fise exposta no trauma por cortador, não prova do material para ressecar ponte. Falta fonte independente dos materiais e de sua aplicação nesse procedimento; preservar comentário e gabarito, sem selo de cobertura integral."
   },
   "pediatria-1164": {
    "tema": "pediatria",
@@ -64964,8 +65220,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 30 confirma parafuso epifisário canulado e possibilidade de cruzar a fise no Tillaux por pouco crescimento restante, mas não aborda IMPLANTES ABSORVÍVEIS DE PRIMEIRA GERAÇÃO, suas complicações nem preferência relativa, afirmados na alternativa C. Não usar ausência de citação como prova de ausência de complicações. Falta comparação independente do comportamento desses implantes para conferir todas as alternativas; comentário e gabarito D preservados, sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -64979,7 +65235,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "e7e8a3953d3b5699d4d4fcd55f02ed45f3683e67b6e08b7359340d8fac620697"
+   "questaoSha256": "e7e8a3953d3b5699d4d4fcd55f02ed45f3683e67b6e08b7359340d8fac620697",
+   "pendencia": "O resumo 30 confirma parafuso epifisário canulado e possibilidade de cruzar a fise no Tillaux por pouco crescimento restante, mas não aborda IMPLANTES ABSORVÍVEIS DE PRIMEIRA GERAÇÃO, suas complicações nem preferência relativa, afirmados na alternativa C. Não usar ausência de citação como prova de ausência de complicações. Falta comparação independente do comportamento desses implantes para conferir todas as alternativas; comentário e gabarito D preservados, sem selo."
   },
   "pediatria-1165": {
    "tema": "pediatria",
@@ -64989,7 +65246,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65004,7 +65261,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "c6751fa4e5a3c4893096c9b3caf1102ba61a57e3374bd46627f44b13c027d71e"
+   "questaoSha256": "c6751fa4e5a3c4893096c9b3caf1102ba61a57e3374bd46627f44b13c027d71e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Fíbula, entorse e exame de baixo risco"
+      ],
+      "blocos": [
+       "fibula-entorse-e-exame-de-baixo-risco-b57c9c08"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "d4e77b98c7404f0e0020abe3db3d6d380c08d96f6870e863a89766c46b3fd334"
+     }
+    ],
+    "questaoSha256": "c6751fa4e5a3c4893096c9b3caf1102ba61a57e3374bd46627f44b13c027d71e",
+    "comentarioSha256": "f99facde174f17172ffdd2c1b014771e7ed53e1725561d78f762bda05e33a717"
+   }
   },
   "pediatria-1166": {
    "tema": "pediatria",
@@ -65014,7 +65294,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65029,7 +65309,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "1f54e279fc8b89503db720fc17c14bedd66d53a432a940a1cd73ff7be57c6195"
+   "questaoSha256": "1f54e279fc8b89503db720fc17c14bedd66d53a432a940a1cd73ff7be57c6195",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-0098515b"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "d9ac1c78611320c66a136b572fcaa27c94561b3a9e52c08e3e11fe8375402f52"
+     }
+    ],
+    "questaoSha256": "1f54e279fc8b89503db720fc17c14bedd66d53a432a940a1cd73ff7be57c6195",
+    "comentarioSha256": "61349023d8ceb0d45553f6c424f1036fd72fecec6a8ef71510fa2d8b6c683a59"
+   }
   },
   "pediatria-1167": {
    "tema": "pediatria",
@@ -65038,7 +65341,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65053,7 +65356,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "4644e7cc0889e720844a68f04ad278d7995968ae2ffe04e7d5820dad30de9934"
+   "questaoSha256": "4644e7cc0889e720844a68f04ad278d7995968ae2ffe04e7d5820dad30de9934",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-30-tornozelo",
+      "titulo": "Fraturas do tornozelo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 30 · Ankle Fractures",
+      "secoes": [
+       "Fraturas expostas e cortador de grama"
+      ],
+      "blocos": [
+       "fraturas-expostas-e-cortador-de-grama-d9b184b8"
+      ],
+      "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+      "trechosSha256": "b2ee32180456f4daeb3bebe792a3f60f44b2824baf4dbbed237844f1f1213831"
+     }
+    ],
+    "questaoSha256": "4644e7cc0889e720844a68f04ad278d7995968ae2ffe04e7d5820dad30de9934",
+    "comentarioSha256": "07a187401c8bd2879be80a62e412c7f333e750adce6d8134ef961faefe2a27d9"
+   }
   },
   "pediatria-1168": {
    "tema": "pediatria",
@@ -65063,7 +65389,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65081,7 +65407,31 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "d806a0d8ca72c5e7d1c3c0f5f044c4422d6bb6101deb40659b1e681629507484"
+   "questaoSha256": "d806a0d8ca72c5e7d1c3c0f5f044c4422d6bb6101deb40659b1e681629507484",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Classificação"
+      ],
+      "blocos": [
+       "classificacao-157b6ed1",
+       "classificacao-927156f0"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "01fb2163c3e2a45dce3c530a7d4b8483f563b51ef540c4d075562b773573cb42"
+     }
+    ],
+    "questaoSha256": "d806a0d8ca72c5e7d1c3c0f5f044c4422d6bb6101deb40659b1e681629507484",
+    "comentarioSha256": "13233bcb259bc2458d2b245b8f22617a8281055cf2c64d81c6e19d124deb0435"
+   }
   },
   "pediatria-1169": {
    "tema": "pediatria",
@@ -65091,7 +65441,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65109,7 +65459,32 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "49f150180f317207cb3c3cef901b62ad8aab94e096f03dd8e709096a69817b84"
+   "questaoSha256": "49f150180f317207cb3c3cef901b62ad8aab94e096f03dd8e709096a69817b84",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Avulsões (tipo I)"
+      ],
+      "blocos": [
+       "avulsoes-tipo-i-ba5cd877",
+       "avulsoes-tipo-i-cf35bcfc",
+       "avulsoes-tipo-i-06300995"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "093d0a6b20310736187107addd86b7a01d9294030e60d54a4f5807df242fcc50"
+     }
+    ],
+    "questaoSha256": "49f150180f317207cb3c3cef901b62ad8aab94e096f03dd8e709096a69817b84",
+    "comentarioSha256": "9cbcbe6265a7cb76d774489f3c3d209752d0e6822b6bfec61cd3bc5d6cfcff66"
+   }
   },
   "pediatria-1170": {
    "tema": "pediatria",
@@ -65119,7 +65494,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65137,7 +65512,32 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "7f312734401cb4e3e116684c3098900e7c973b9b58092d7ce554e3bba23061eb"
+   "questaoSha256": "7f312734401cb4e3e116684c3098900e7c973b9b58092d7ce554e3bba23061eb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Avulsões (tipo I)"
+      ],
+      "blocos": [
+       "avulsoes-tipo-i-06300995",
+       "avulsoes-tipo-i-ba5cd877",
+       "avulsoes-tipo-i-cf35bcfc"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "e1b4b490163b394fcb89ed1efb88c1fdfea94fc57f527ae83d71384120c2802e"
+     }
+    ],
+    "questaoSha256": "7f312734401cb4e3e116684c3098900e7c973b9b58092d7ce554e3bba23061eb",
+    "comentarioSha256": "1cc3e52ab846998c8666764ad1be0ac7c73258ae6a01307428ceba258145ee0c"
+   }
   },
   "pediatria-1171": {
    "tema": "pediatria",
@@ -65147,7 +65547,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65165,7 +65565,32 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "1f6a979825197c80610e5848b78ee3afbfa9bcbd80ab2f55406bb9e114cb2585"
+   "questaoSha256": "1f6a979825197c80610e5848b78ee3afbfa9bcbd80ab2f55406bb9e114cb2585",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Acetábulo",
+       "A pelve da criança"
+      ],
+      "blocos": [
+       "acetabulo-b66406dd",
+       "a-pelve-da-crianca-270b4d6d"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "c631d2f3cc3b9b611da1833a00c81becbe4e3d7bf1f48eedcbc4d84ab5e95a1b"
+     }
+    ],
+    "questaoSha256": "1f6a979825197c80610e5848b78ee3afbfa9bcbd80ab2f55406bb9e114cb2585",
+    "comentarioSha256": "a7b87cddcb2b8f2f80e1e2cad8aae2bb42fff02cd9e0790009489b02fe18a3b0"
+   }
   },
   "pediatria-1172": {
    "tema": "pediatria",
@@ -65175,7 +65600,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65193,7 +65618,30 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "6623469db95998007d9520ec52c2f75aeafeae9c43523205be2b9aea717b554e"
+   "questaoSha256": "6623469db95998007d9520ec52c2f75aeafeae9c43523205be2b9aea717b554e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Acetábulo"
+      ],
+      "blocos": [
+       "acetabulo-b66406dd"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "726bade4ebc82e751688d7fc4972afe623fedc44a199279b1051c594039228c5"
+     }
+    ],
+    "questaoSha256": "6623469db95998007d9520ec52c2f75aeafeae9c43523205be2b9aea717b554e",
+    "comentarioSha256": "e775c745acee35a85699fd23bb24026bc2bc4246e87a5e543262bf18728031e6"
+   }
   },
   "pediatria-1173": {
    "tema": "pediatria",
@@ -65203,7 +65651,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65221,7 +65669,30 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "0b0c09d455a8378ec84b67a37ebd4c50bc8a3aa2c0cc2cb7d804887f275223e1"
+   "questaoSha256": "0b0c09d455a8378ec84b67a37ebd4c50bc8a3aa2c0cc2cb7d804887f275223e1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Lesões associadas e avaliação"
+      ],
+      "blocos": [
+       "lesoes-associadas-e-avaliacao-ab7c757b"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "5096b7e23e62f2920311bd1ddf330bb12f76cacb707bf831ad8cc682c6914c0b"
+     }
+    ],
+    "questaoSha256": "0b0c09d455a8378ec84b67a37ebd4c50bc8a3aa2c0cc2cb7d804887f275223e1",
+    "comentarioSha256": "c31451d34655bbce032c84847dbe3639f42d3c496cbe67779c79c647b7dfc752"
+   }
   },
   "pediatria-1174": {
    "tema": "pediatria",
@@ -65231,7 +65702,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65249,7 +65720,30 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "3d95b87b4f56f12ace7b7d6e44d5ef81f63476bef970c50c0479450f59cf967c"
+   "questaoSha256": "3d95b87b4f56f12ace7b7d6e44d5ef81f63476bef970c50c0479450f59cf967c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Asa, sacro, cóccix e anel estável (tipos II e III)"
+      ],
+      "blocos": [
+       "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-f0400c85"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "8d933abee2300150c50c91972d6c4f1783c7a038e50c5d721ad9e778a1f2709d"
+     }
+    ],
+    "questaoSha256": "3d95b87b4f56f12ace7b7d6e44d5ef81f63476bef970c50c0479450f59cf967c",
+    "comentarioSha256": "72cd514e1c1800e6c0b73a51e86cf3cfe816bc83cf43b7ae20a947c3aa4f04d8"
+   }
   },
   "pediatria-1175": {
    "tema": "pediatria",
@@ -65259,7 +65753,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65277,7 +65771,34 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "fde6150a7c4e851b00c008624d429b62cd43b56f89ebfd4ebb061d4db13d3e4a"
+   "questaoSha256": "fde6150a7c4e851b00c008624d429b62cd43b56f89ebfd4ebb061d4db13d3e4a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Fraturas instáveis (tipo IV)",
+       "Asa, sacro, cóccix e anel estável (tipos II e III)",
+       "Classificação"
+      ],
+      "blocos": [
+       "fraturas-instaveis-tipo-iv-2efff893",
+       "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-f0400c85",
+       "classificacao-157b6ed1"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "15111a4e2b491c67a5ceec986aa233185850ac44e0a8a8b217c978dd417fe0e0"
+     }
+    ],
+    "questaoSha256": "fde6150a7c4e851b00c008624d429b62cd43b56f89ebfd4ebb061d4db13d3e4a",
+    "comentarioSha256": "3618eb796b7cb568ea57075213796677d0408e88660323aa87be714544aa293a"
+   }
   },
   "pediatria-1176": {
    "tema": "pediatria",
@@ -65287,7 +65808,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65305,7 +65826,32 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "420a95ce03ad479afd03cc13292ef2865dd1254f8bcbd610eb850d02bd8e8799"
+   "questaoSha256": "420a95ce03ad479afd03cc13292ef2865dd1254f8bcbd610eb850d02bd8e8799",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Fraturas instáveis (tipo IV)",
+       "Complicações"
+      ],
+      "blocos": [
+       "fraturas-instaveis-tipo-iv-d7cb082d",
+       "complicacoes-d896ef7d"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "a1394cfa8c87d2d45d07d6c4ca5ca9b977b196098f21f446ee0435fdd1433fba"
+     }
+    ],
+    "questaoSha256": "420a95ce03ad479afd03cc13292ef2865dd1254f8bcbd610eb850d02bd8e8799",
+    "comentarioSha256": "283a2eddf6074b0893370e07658ca7b74ded74936d666db5612f4d3c11504731"
+   }
   },
   "pediatria-1177": {
    "tema": "pediatria",
@@ -65315,7 +65861,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65333,7 +65879,30 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "81d0f600826ac058a08c8b4d0b4ae6b065e23bc35703a6ab82dbfe6c09cc0bf1"
+   "questaoSha256": "81d0f600826ac058a08c8b4d0b4ae6b065e23bc35703a6ab82dbfe6c09cc0bf1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Lesões associadas e avaliação"
+      ],
+      "blocos": [
+       "lesoes-associadas-e-avaliacao-c747bfd9"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "b9b0bdf3eb1160334963ecab8397a8a878b41a919287a8a657e2697d43345083"
+     }
+    ],
+    "questaoSha256": "81d0f600826ac058a08c8b4d0b4ae6b065e23bc35703a6ab82dbfe6c09cc0bf1",
+    "comentarioSha256": "4e79736834d2c264620472f5454400897d6772fdc5df85f0a42c0efa069fb1a6"
+   }
   },
   "pediatria-1178": {
    "tema": "pediatria",
@@ -65343,7 +65912,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65361,7 +65930,45 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "f6c916bfe25d6e285fdf31cb14519c519d6ba51c487588c1f726b440663b77aa"
+   "questaoSha256": "f6c916bfe25d6e285fdf31cb14519c519d6ba51c487588c1f726b440663b77aa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Acetábulo"
+      ],
+      "blocos": [
+       "acetabulo-d4619863"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "e2d966a06fcabf1d2a6b2b251ff3c18c5b8b7b7f9027b0dd9a7fbb32fcf12fdb"
+     },
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Luxação traumática do quadril"
+      ],
+      "blocos": [
+       "luxacao-traumatica-do-quadril-a36e6cc4"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "14e4636c4797ab3d0af69203ca31722dd3c3a190727e45f6fb4c6adf39490ae2"
+     }
+    ],
+    "questaoSha256": "f6c916bfe25d6e285fdf31cb14519c519d6ba51c487588c1f726b440663b77aa",
+    "comentarioSha256": "b03c640089c253525e557a5184e5bd9d0e80b697a0bda4914c90754ec956406c"
+   }
   },
   "pediatria-1179": {
    "tema": "pediatria",
@@ -65371,7 +65978,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65389,7 +65996,34 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "49f37d6a2cf86ac0ba6be346c867d92f587d013345370e0ac63046ee869ce15d"
+   "questaoSha256": "49f37d6a2cf86ac0ba6be346c867d92f587d013345370e0ac63046ee869ce15d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "A pelve da criança",
+       "Asa, sacro, cóccix e anel estável (tipos II e III)",
+       "Avulsões (tipo I)"
+      ],
+      "blocos": [
+       "a-pelve-da-crianca-270b4d6d",
+       "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-a342e020",
+       "avulsoes-tipo-i-cf35bcfc"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "3aeb9581ef02db45ab75d7ed85a33a8a739b27f415d29aec2b7f7b1573f3d721"
+     }
+    ],
+    "questaoSha256": "49f37d6a2cf86ac0ba6be346c867d92f587d013345370e0ac63046ee869ce15d",
+    "comentarioSha256": "84c2a62cff0dcc7e3f20b6767ebfce952e0413b00fa451a6c50bbf4599b98d2d"
+   }
   },
   "pediatria-1180": {
    "tema": "pediatria",
@@ -65399,7 +66033,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65417,7 +66051,32 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "b4449ca2887eb5dfbc64e089a6f541e77fa0a23bdf7695e818580a980ea58426"
+   "questaoSha256": "b4449ca2887eb5dfbc64e089a6f541e77fa0a23bdf7695e818580a980ea58426",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Classificação",
+       "A pelve da criança"
+      ],
+      "blocos": [
+       "classificacao-927156f0",
+       "a-pelve-da-crianca-b7455ce8"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "5ab27a23a321df7b021fc031cce0322c9aefa8dc8394ef3fab40caeab2ffcbcf"
+     }
+    ],
+    "questaoSha256": "b4449ca2887eb5dfbc64e089a6f541e77fa0a23bdf7695e818580a980ea58426",
+    "comentarioSha256": "64a8973505f6a2abc94095008f2729d707857a00ea61643a2e5af75c9bf90d06"
+   }
   },
   "pediatria-1181": {
    "tema": "pediatria",
@@ -65427,7 +66086,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65445,7 +66104,30 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "d3d0325eec027d185e82f06363be7d8bab25c650619200af21ba800204dc3714"
+   "questaoSha256": "d3d0325eec027d185e82f06363be7d8bab25c650619200af21ba800204dc3714",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Acetábulo"
+      ],
+      "blocos": [
+       "acetabulo-d4619863"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "e2d966a06fcabf1d2a6b2b251ff3c18c5b8b7b7f9027b0dd9a7fbb32fcf12fdb"
+     }
+    ],
+    "questaoSha256": "d3d0325eec027d185e82f06363be7d8bab25c650619200af21ba800204dc3714",
+    "comentarioSha256": "aac151416320d2a54cbdef12fb26c6ee908efe6aac912e397e15e0fc1796413b"
+   }
   },
   "pediatria-1182": {
    "tema": "pediatria",
@@ -65455,7 +66137,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65473,7 +66155,35 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "d357abd4faa2fbca3de1cc01f45829e63f7f481166ed9f2549b3975cf8d135fe"
+   "questaoSha256": "d357abd4faa2fbca3de1cc01f45829e63f7f481166ed9f2549b3975cf8d135fe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Classificação de DELBET",
+       "Anatomia e irrigação",
+       "Coxa vara, fise e pseudartrose"
+      ],
+      "blocos": [
+       "classificacao-de-delbet-e1115de7",
+       "classificacao-de-delbet-29878cdc",
+       "anatomia-e-irrigacao-be591f38",
+       "coxa-vara-fise-e-pseudartrose-17944458"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "967682eda8e713a4fbbb2ac6366053d685bdc9a6d8884f98b578911789ae0d67"
+     }
+    ],
+    "questaoSha256": "d357abd4faa2fbca3de1cc01f45829e63f7f481166ed9f2549b3975cf8d135fe",
+    "comentarioSha256": "29f1249b950bbcac03a9e47590813a2af649acda4b47bd5d0ee13f70b361765e"
+   }
   },
   "pediatria-1183": {
    "tema": "pediatria",

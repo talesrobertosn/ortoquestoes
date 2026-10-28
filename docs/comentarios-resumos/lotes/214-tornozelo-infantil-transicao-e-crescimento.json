@@ -1,0 +1,378 @@
+{
+  "pediatria-1153": {
+    "questaoSha256": "44346c8481e0260aaf7bd36cc1a1a85c0e2969939d767e244c7b0cdb39835493",
+    "comentarioAnteriorSha256": "418f1a73aac47d19944d45f5f3c1c5cf89984cef96c80c34999493f3b0a68a12",
+    "comentario": {
+      "conceito": "Dor na **linha articular anterolateral** após rotação externa do pé, com pouca deformidade, deve levantar a suspeita de **Tillaux juvenil**. A incidência essencial é a **pinça, ou mortise**, alternativa A: no AP, a fíbula pode esconder o traço anterolateral (Rockwood and Wilkins, 10ª edição, capítulo 30, Tillaux juvenil).\n\nO padrão é uma fratura Salter-Harris III: o fragmento envolve a epífise e a superfície articular da tíbia distal. Durante o fechamento assimétrico da fise, a porção anterolateral permanece aberta por último; o ligamento tibiofibular anteroinferior traciona esse fragmento quando o pé roda para fora. A fíbula limita o grande deslocamento, por isso pouco edema não exclui a fratura.\n\nA pinça responde à pergunta sobre **expor o traço**. Outra pergunta é medir o desvio e confirmar a redução: o resumo destaca a **tomografia** para essa finalidade. Não se deve substituir a incidência que evita a sobreposição por uma radiografia mais ampla ou por um exame dirigido a instabilidade ligamentar.\n\n**Na prova:** Tillaux combina idade de transição, dor anterolateral na articulação e mecanismo de rotação externa. Procurar o fragmento na pinça e avaliar sua congruência articular são etapas complementares.\n\n**Por que esta questão foi criada.** A banca cobra o TILLAUX por todos os lados: tipo e localização (TARO 2024 `pediatria-0543`, TARO 2023 `pediatria-0546`, TARO 2013 `pediatria-0686`, CET-PR `pediatria-0905`), mecanismo (TARO 2022 `pediatria-0568`, TEOT 2021 `pediatria-0842`). Aqui o ângulo é o diagnóstico por imagem.",
+      "correta": "Alternativa A. A pinça permite visualizar a porção epifisária anterolateral que pode ficar encoberta pela fíbula no AP. É a incidência explicitamente destacada no resumo para esse padrão, independentemente da ausência de grande deformidade.",
+      "incorretas": {
+        "B": "O perfil com carga não é a incidência essencial indicada para evitar a sobreposição da fíbula sobre o traço de Tillaux. A opção também mistura identificação radiográfica com medida do degrau; para confirmar a redução, o resumo destaca a tomografia.",
+        "C": "Incluir mais segmentos não resolve a dificuldade específica de visualizar a epífise anterolateral atrás da fíbula. A incidência pedida é dirigida à pinça do tornozelo; uma radiografia centrada na diáfise não substitui essa relação geométrica.",
+        "D": "A opção muda o alvo para avaliar instabilidade ligamentar. O caso aponta para um fragmento epifisário articular por tração do tibiofibular anteroinferior, e a fonte destaca a pinça para revelar seu traço, não uma incidência em estresse em varo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: TILLAUX juvenil; Anatomia e crescimento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "TILLAUX juvenil",
+          "Anatomia e crescimento"
+        ],
+        "blocos": [
+          "tillaux-juvenil-cd63515e",
+          "anatomia-e-crescimento-67fc8391"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "8ea325881e1b85a207826731dae767fd64b88b1c5fe77fc0c9a67e081ef71954"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1154": {
+    "questaoSha256": "b1d7b4062ce1a61ddf2377e95e79adbd7e16d1747eaaa95d7795bbb9fdfb8c70",
+    "comentarioAnteriorSha256": "e992a27ba648263c07a4192e2822c3a9b0504e7000f1b56e129e87b1b12e49d8",
+    "comentario": {
+      "conceito": "A fise distal da tíbia não fecha toda ao mesmo tempo: o fechamento começa no **centro**, segue para **medial** e termina **lateralmente**, em cerca de 18 meses. A alternativa B descreve essa sequência e a persistência anterolateral que caracteriza a fase de transição (Rockwood and Wilkins, 10ª edição, capítulo 30, anatomia e crescimento).\n\nDurante esse intervalo, uma mesma região distal reúne porções já fechadas e outras ainda abertas. Essa assimetria muda a trajetória possível da fratura. No **Tillaux**, o ligamento tibiofibular anteroinferior arranca a porção anterolateral ainda aberta por rotação externa; no **triplanar**, o traço tem componentes que aparecem como Salter-Harris III no AP e II no perfil.\n\nO resumo situa o fechamento por volta de 15 anos nas meninas e 17 nos meninos, mas o ponto da questão é a **ordem**, não atribuir uma idade única a todo adolescente. A fíbula distal fecha depois da tíbia, em mais 12–24 meses, e não deve substituir a cronologia tibial solicitada.\n\n**Na prova:** lembrar o centro antes de comparar medial e lateral. A parte anterolateral fica por último, o que explica a localização do fragmento de Tillaux e o surgimento das fraturas de transição.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2025 (`pediatria-0910`), que pergunta a ordem do fechamento, e do SBOT-SP (`pediatria-0650`), que pergunta o fator responsável pelo padrão do triplanar. Depois, faça as oficiais.",
+      "correta": "Alternativa B. Centro, medial e lateral é a sequência descrita na fonte. A manutenção da região anterolateral aberta no fim do processo fornece a base anatômica do padrão de transição.",
+      "incorretas": {
+        "A": "Coloca o lado lateral no começo, quando ele é o último a fechar. Isso também inverte a região que permanece vulnerável no Tillaux: o fragmento é anterolateral, não um fragmento medial por ser o último setor aberto.",
+        "C": "O lado medial fecha antes do lateral, mas não antes do centro. A alternativa conserva apenas uma parte da comparação e erra o início e o término da sequência inteira.",
+        "D": "Descreve um fechamento simétrico posterior–anterior, diferente do processo central, medial e lateral do resumo. A assimetria é justamente o elemento que permite entender por que as fraturas de transição têm configurações próprias."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Anatomia e crescimento; TILLAUX juvenil; Triplanar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Anatomia e crescimento",
+          "TILLAUX juvenil",
+          "Triplanar"
+        ],
+        "blocos": [
+          "anatomia-e-crescimento-67fc8391",
+          "tillaux-juvenil-cd63515e",
+          "triplanar-9e66d94d"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "ab47a80746a0433ee1ed10adeae14ff4a1949a50b59b1156c8bec650b7abab94"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1155": {
+    "questaoSha256": "7f4049e0568cf344e2ca3302104e6218a11f80e0198f825286a21ce96cfa7c65",
+    "comentarioAnteriorSha256": "8ad0f324b087d558328d1159d10da5e61bad35e1f4a193875f211d5f38089fd9",
+    "comentario": {
+      "conceito": "A fratura **triplanar lateral** com 4 mm de desvio articular ultrapassa o limite de 2 mm apresentado no resumo e precisa de redução. A manobra fechada indicada é a **rotação interna do pé**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 30, triplanar).\n\nO padrão triplanar parece Salter-Harris III no AP e II no perfil; essa diferença entre projeções não representa duas fraturas independentes. A tomografia permite compreender os fragmentos e medir a incongruência articular, que orienta a necessidade de reduzir.\n\nÉ preciso separar **lateral** e **medial**. Para o lateral, o resumo descreve rotação interna; para o medial, abdução. Se a redução fechada não for suficiente, a via apresentada é anterolateral para o lateral e anteromedial para o medial. Trocar o subtipo muda a manobra e o acesso.\n\nDepois da redução, confirmar a posição não é opcional no raciocínio: o resumo usa tomografia e controle em 7 dias no tratamento conservador. **Na prova:** reconhecer o subtipo antes de escolher o sentido da manobra; aqui, lateral com desvio relevante pede rotação interna.\n\n**Por que esta questão foi criada.** A banca cobra muito a imagem do triplanar (TARO 2021 `pediatria-0588`, TARO 2012 `pediatria-0662`, ENARE 2025 `pediatria-0867`, ENARE 2024 `pediatria-0517`) e a via de acesso (TARO 2019 `pediatria-0637`). Aqui o foco é a manobra.",
+      "correta": "Alternativa C. A rotação interna é a manobra fechada descrita para o triplanar lateral. O desvio de 4 mm exige buscar congruência, e uma redução insuficiente leva à abordagem aberta correspondente ao subtipo.",
+      "incorretas": {
+        "A": "Abdução é a manobra descrita para o triplanar medial; eversão também aparece no posicionamento desse subtipo no gesso. O caso é lateral, para o qual o resumo usa rotação interna.",
+        "B": "Flexão plantar e tração não correspondem à manobra específica apresentada para esse padrão. Escolher uma manobra genérica sem identificar o subtipo deixa de corrigir a rotação do triplanar lateral descrita na fonte.",
+        "D": "A rotação externa participa do mecanismo de produção dessas fraturas; o resumo indica rotação interna para reduzir o subtipo lateral. A opção troca o sentido da manobra terapêutica e ainda muda o local da pressão proposto."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Triplanar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Triplanar"
+        ],
+        "blocos": [
+          "triplanar-db4cdd14",
+          "triplanar-9e66d94d"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "8fe3547ec2f6bea678c0ca0fc11a31087327f4315890b0b0a214149c4c0bff1b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1156": {
+    "questaoSha256": "029e33ce365a1178093e41db2b2badcdc413b999659db4ad1b9959d440e68928",
+    "comentarioAnteriorSha256": "ef58bf830c451f022516455d6a8446e3b97d2afb9ed0f7f7723c0727bcccaa4c",
+    "comentario": {
+      "conceito": "O fragmento **lateral de Thurstan-Holland**, o desvio lateral da epífise e a fratura **transversa da fíbula** compõem o mecanismo de **pronação–eversão–rotação externa**, alternativa D. Na classificação de Dias-Tachdjian, a primeira palavra descreve a posição do pé e a seguinte descreve a força (Rockwood and Wilkins, 10ª edição, capítulo 30, classificação e mecanismos).\n\nNa Salter-Harris II, o fragmento metafisário acompanha a lesão da fise. Sua localização ajuda a distinguir mecanismos que poderiam ser confundidos se o aluno olhasse apenas o número da classificação. O resumo associa fragmento lateral à pronação–eversão–rotação externa, posteromedial à supinação–rotação externa e posterior à supinação–flexão plantar.\n\nA **fíbula** fornece outra pista independente. Ela permanece intacta na supinação–flexão plantar; no mecanismo do caso, a fratura é transversa. Na supinação–rotação externa, o padrão fibular descrito é espiral. Não basta reconhecer uma fratura tibial tipo II e presumir que todos esses mecanismos sejam equivalentes.\n\n**Na prova:** reunir lado do fragmento, direção da epífise e traço fibular. Aqui as três pistas convergem para a alternativa D.\n\n**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0955`), que pede a classificação de DIAS-TACHDJIAN por imagem, e do TEOT 2024 (`pediatria-0557`), que pergunta o mecanismo em que a fíbula fica intacta (supinação-flexão plantar). Depois, faça as oficiais.",
+      "correta": "Alternativa D. Reúne exatamente o fragmento lateral e a fratura transversa da fíbula descritos no esquema de Dias-Tachdjian. O diagnóstico do mecanismo depende desse conjunto, não apenas de a lesão tibial ser Salter-Harris II.",
+      "incorretas": {
+        "A": "A supinação–inversão é associada à progressão para fratura Salter-Harris III ou IV do maléolo medial, após lesão fibular tipo I ou II. Não corresponde ao fragmento metafisário lateral com epífise lateralizada e fíbula transversa do caso.",
+        "B": "Na supinação–flexão plantar, o resumo descreve desvio posterior da tíbia e ausência de fratura da fíbula. A fíbula transversa e o fragmento lateral apresentados tornam essa combinação inadequada.",
+        "C": "A supinação–rotação externa produz fragmento posteromedial e pode avançar para fratura espiral da fíbula. A opção se aproxima por envolver rotação externa, mas erra a localização metafisária e o padrão fibular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Classificação e mecanismos."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Classificação e mecanismos"
+        ],
+        "blocos": [
+          "classificacao-e-mecanismos-24094ed8",
+          "classificacao-e-mecanismos-cc38d18d",
+          "classificacao-e-mecanismos-c3279ecb"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "f2478d2fae87548c044d0c2883edd3eff3cefba027ea3e9fc7766eca8ed2e330"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1157": {
+    "questaoSha256": "f445430fee2fce54a85d7b74c1681b42f6ae24a3245fefc5639fa34dfa48d8e5",
+    "comentarioAnteriorSha256": "dbf0989ff5059a77d8480b3a758495fe4c7c11d2bb5fd6891e256d888eddd714",
+    "comentario": {
+      "conceito": "A ponte óssea **medial** após a lesão fisária impede que essa parte da tíbia distal acompanhe o crescimento restante. O resultado esperado é **varo progressivo**, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 30, complicações).\n\nÉ uma consequência do **crescimento assimétrico**, não apenas uma deformidade residual presente no dia do trauma. Por isso, uma fratura aparentemente tratada pode precisar de seguimento seriado: o resumo recomenda controles a cada 4–6 meses e investigação com ressonância quando a linha de Park-Harris é assimétrica.\n\nO lado e o osso que param importam. A ponte após Salter-Harris III ou IV costuma surgir no local da fratura e produzir varo; já a **parada da fíbula**, enquanto a tíbia continua crescendo, leva a **valgo**. Esses dois cenários não podem compartilhar automaticamente a mesma resposta.\n\n**Na prova:** ponte medial tibial significa varo; parada fibular significa valgo. A avaliação da extensão da ponte, do crescimento restante e da deformidade determina as opções futuras, como ressecção, epifisiodese ou osteotomia, sem que todo paciente receba o mesmo procedimento.\n\n**Por que esta questão foi criada.** Conversa com o TARO 2025 (`pediatria-0531`), que dá como complicação mais comum das fraturas fisárias do tornozelo a deformidade em valgo, e com o TARO 2022 (`pediatria-0570`), sobre a parada fisária nos tipos III e IV. O capítulo descreve o varo como a deformidade típica da ponte medial. Depois, faça as oficiais.",
+      "correta": "Alternativa A. A ponte medial cria uma restrição desigual do crescimento da tíbia distal, com varo progressivo descrito no resumo. O intervalo de um ano e o achado de ponte apontam para uma complicação de crescimento, e não só para a posição inicial da redução.",
+      "incorretas": {
+        "B": "Valgo é o padrão destacado quando a fíbula para e a tíbia continua crescendo. O caso situa a ponte no lado medial da fise tibial, cujo efeito descrito é varo; a alternativa troca os cenários anatômicos.",
+        "C": "O resumo não atribui recurvato à ponte medial apresentada. O dado decisivo é a restrição no lado medial e sua consequência em varo, em vez de uma deformidade sagital escolhida sem correspondência com o local da ponte.",
+        "D": "Uma ponte fisária interrompe crescimento no setor afetado; não representa estímulo de alongamento. No caso parcial e medial, a consequência salientada é angular, e o resumo observa que discrepâncias de comprimento costumam ser pequenas no adolescente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-0098515b"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "d9ac1c78611320c66a136b572fcaa27c94561b3a9e52c08e3e11fe8375402f52"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1158": {
+    "questaoSha256": "d69587957bb4200510e23b6beab43c6f3e22e201a8b006449dc3c9d0ed275671",
+    "comentarioAnteriorSha256": "3d361832d1743480f16aba3a0b39649d27ed76d9dd1fa7d637e8cc3a893b7d9d",
+    "comentario": {
+      "conceito": "No estudo de Barmada citado no resumo, **alargamento fisário residual acima de 3 mm** após a redução de uma lesão Salter-Harris I ou II da tíbia distal associou-se a cerca de **60% de fechamento precoce**, alternativa B. Abaixo de 3 mm, o número apresentado é 17% (Rockwood and Wilkins, 10ª edição, capítulo 30, fraturas fisárias da tíbia distal).\n\nA largura residual interessa porque a redução pode estar impedida por **interposição de partes moles**. Isso chama atenção para o que ficou entre os fragmentos, em vez de avaliar apenas se o aspecto geral do tornozelo melhorou. O resumo ressalta que a retirada aberta do periósteo é controversa: associação com risco não equivale a uma indicação cirúrgica universal.\n\nTambém não é uma certeza individual. O número de 60% descreve uma associação na série citada, não a garantia de parada em toda criança nem a taxa de todas as fraturas do tornozelo. O seguimento precisa procurar crescimento assimétrico e suas consequências.\n\n**Na prova:** conservar juntos o limiar, o desfecho e a população: mais de 3 mm residuais, fechamento fisário precoce, lesões I/II da tíbia distal na série de Barmada. Não trocar esse valor pelo risco abaixo do limiar.\n\n**Por que esta questão foi criada.** É uma questão de projeção, ao lado do TARO 2025 (`pediatria-0531`), que cobra a complicação mais comum das fraturas fisárias do tornozelo. Os números de BARMADA são clássicos e o capítulo os mantém.",
+      "correta": "Alternativa B. É o valor de aproximadamente 60% informado para alargamento residual acima de 3 mm. A distinção dos 17% abaixo do limiar é a comparação específica cobrada, sem transformar uma proporção de série em destino obrigatório de cada paciente.",
+      "incorretas": {
+        "A": "5% não é a proporção descrita para esse achado residual. A fonte salienta uma associação de risco bem maior, de 60%, razão para não tratar o alargamento persistente como um detalhe radiográfico sem consequência.",
+        "C": "17% é o valor apresentado para alargamento abaixo de 3 mm. A pergunta especifica mais de 3 mm; escolher esse número troca os dois grupos comparados na série.",
+        "D": "100% tornaria a parada inevitável, o que não corresponde aos 60% descritos. Mesmo um achado associado a risco alto não permite afirmar que todas as crianças desenvolverão o desfecho."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Fraturas fisárias da tíbia distal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Fraturas fisárias da tíbia distal"
+        ],
+        "blocos": [
+          "fraturas-fisarias-da-tibia-distal-76c2b25a"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "ae4b2f41bbd9dd7fb40db601daa6a5240ad93b2f842d5cdfc8b37527bb7e35e5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1159": {
+    "questaoSha256": "9f2f64e27d08d1541b88258561f3d1adeaada740c528e1b33be3105bc3d723ff",
+    "comentarioAnteriorSha256": "34136883602156b8397112a51c6165646be3e93e7efb19ef781d078077ac790f",
+    "comentario": {
+      "conceito": "Com pelo menos **3 anos de crescimento restante**, os autores aceitam até **10–15° de inclinação plantar, 5–10° de valgo e nenhum varo** após a redução da lesão tibial distal. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 30, Salter-Harris I e II).\n\nO crescimento remanescente muda a tolerância, mas não torna todos os planos equivalentes. A fonte apresenta valores diferentes para inclinação plantar e valgo e mantém **zero varo**. Uma regra única de “15 graus em qualquer plano” apagaria justamente a distinção que a questão pede.\n\nO resumo é mais restritivo quando restam **2 anos ou menos**, com limite de 5°. Também orienta evitar manipulações repetidas e, em apresentações de 7–10 dias, aceitar o desvio em vez de insistir em novas manobras. Esses dados precisam ser interpretados no contexto, sem usar capacidade de crescimento como licença para qualquer deformidade.\n\n**Na prova:** antes do número, conferir quanto crescimento resta e qual é o plano do desvio. Aqui, nenhum varo faz parte da resposta tanto quanto os intervalos angularmente tolerados.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra muito os limites de angulação nas diáfises (ENARE 2025 `pediatria-0863`, fêmur), e o capítulo do tornozelo traz números próprios, com o varo como a deformidade menos tolerada.",
+      "correta": "Alternativa C. Preserva os três critérios específicos dos autores para o grupo com 3 anos ou mais de crescimento: 10–15° plantar, 5–10° de valgo e zero varo. A resposta depende da combinação, não de um único limite isolado.",
+      "incorretas": {
+        "A": "Aceita varo, quando o resumo estabelece zero, e aumenta a inclinação plantar para 20°, acima dos 10–15° apresentados. As duas partes ultrapassam os critérios do grupo descrito.",
+        "B": "Generaliza 15° para planos que têm tolerâncias distintas. Além de exceder a faixa de valgo, permitiria varo, expressamente não aceito no esquema do resumo.",
+        "D": "O limite de 5° aparece para quem tem 2 anos ou menos de crescimento restante. A opção elimina a influência do crescimento e aplica ao grupo da pergunta uma regra destinada a outra situação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Fraturas fisárias da tíbia distal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Fraturas fisárias da tíbia distal"
+        ],
+        "blocos": [
+          "fraturas-fisarias-da-tibia-distal-76c2b25a"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "ae4b2f41bbd9dd7fb40db601daa6a5240ad93b2f842d5cdfc8b37527bb7e35e5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1161": {
+    "questaoSha256": "7757e6ac9ef7a67930f5368c5dd5d0887b5b41f09031e5b6996ca00a44ba429b",
+    "comentarioAnteriorSha256": "1f1014777494f05274135d0e9546d8f7e9f2540f2d79b60630feb9fc409957a7",
+    "comentario": {
+      "conceito": "O exame de **baixo risco de Boutis** é definido pela dor limitada à **fíbula distal abaixo da articulação ou aos ligamentos laterais**. O menino apresenta esse padrão; a alternativa A corresponde à possibilidade de dispensar radiografia segundo a regra descrita (Rockwood and Wilkins, 10ª edição, capítulo 30, fíbula e exame de baixo risco).\n\nO resumo relata que nenhuma das 381 crianças com esse exame teve fratura de alto risco, permitindo reduzir radiografias em 62,8%. É um resultado de uma série com **critérios de exame específicos**, não uma garantia de que toda torção do tornozelo infantil seja benigna. A localização da dor é parte essencial da decisão.\n\nA ideia de que toda dor fisária lateral representa Salter-Harris I também é revista pela imagem: muitas dessas apresentações são **entorses**. Para lesões de baixo risco, entorse e fratura sem desvio podem receber órtese ou bota removível por 3–4 semanas. Assim, a imagem avançada não é condição obrigatória para escolher uma proteção inicial nesse grupo.\n\n**Na prova:** aplicar a regra somente ao padrão de exame apresentado. A ausência de fratura de alto risco na série fundamenta reduzir radiografias nesse grupo; não elimina a necessidade de reavaliar uma evolução ou um exame que já não se enquadre nele.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O capítulo da 10ª edição dá peso a esse exame clínico, com números claros que têm cara de prova.",
+      "correta": "Alternativa A. A dor e o edema se limitam à região definida pelo exame de baixo risco. A frase sobre nenhuma criança ter fratura de alto risco se refere à série citada no resumo, e não a uma promessa universal para qualquer trauma do tornozelo.",
+      "incorretas": {
+        "B": "A vulnerabilidade fisária geral não anula uma regra específica baseada na localização dos achados. O resumo mostra muitas entorses entre os casos antes considerados Salter-Harris I e permite reduzir radiografias no grupo de baixo risco descrito.",
+        "C": "A ressonância ajudou a mostrar que várias suspeitas de Salter-Harris I eram entorses, mas isso não a torna obrigatória em todo exame de baixo risco. O resumo oferece manejo semelhante para entorse e fratura sem desvio desse grupo.",
+        "D": "O objetivo da regra é reconhecer um grupo em que a radiografia pode ser dispensada, não criar uma exigência de radiografias em estresse. A opção desloca o raciocínio para instabilidade sem acompanhar a localização e o perfil de baixo risco do caso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Fíbula, entorse e exame de baixo risco."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Fíbula, entorse e exame de baixo risco"
+        ],
+        "blocos": [
+          "fibula-entorse-e-exame-de-baixo-risco-b57c9c08"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "d4e77b98c7404f0e0020abe3db3d6d380c08d96f6870e863a89766c46b3fd334"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1162": {
+    "questaoSha256": "472ad00eec9671b9255a3be08424dd890d6236f807558d09b9493be64d5f56e9",
+    "comentarioAnteriorSha256": "a268db700e6328bbd203a36f2e25cbd5fd2dcbdf0fd13bcd248f1abc59ddd619",
+    "comentario": {
+      "conceito": "Entre 6 e 12 anos, o **os subtibiale**, no lado **medial**, é o ossículo acessório mais frequente entre os comparados: cerca de **20%**, alternativa B. O **os subfibulare**, lateral, aparece em cerca de 1% no resumo (Rockwood and Wilkins, 10ª edição, capítulo 30, fíbula e ossículos acessórios).\n\nEsses centros podem confundir a interpretação de uma radiografia feita depois de uma torção. O achado de um pequeno fragmento precisa ser relacionado à **idade, ao lado e ao exame clínico**, sem pressupor que todo ossículo visível seja um fragmento agudo. A pergunta testa a distribuição descrita, não dispensa avaliar uma lesão traumática real.\n\nÉ importante separar **frequência de existência** e **persistência de sintomas**. Embora o subtibiale seja mais comum, o resumo aponta mais sintomas persistentes quando os ossículos laterais são lesados. Um achado menos frequente pode ter maior relevância em uma apresentação sintomática específica.\n\n**Na prova:** medial/subtibiale/20% e lateral/subfibulare/1%. Não trocar os nomes pelo fato de a entorse lateral ser familiar, nem usar a frequência para descartar o trauma de uma criança com dor.\n\n**Por que esta questão foi criada.** É gêmea da ENARE Cirurgia da Mão 2023 (`pediatria-1081`), que pergunta em que período os ossículos acessórios do tornozelo podem simular fratura. Depois, faça a oficial.",
+      "correta": "Alternativa B. Identifica o lado medial e o os subtibiale com a frequência de aproximadamente 20% no grupo de 6–12 anos. A comparação correta exige manter juntos nome, localização e proporção.",
+      "incorretas": {
+        "A": "O os subfibulare é lateral, mas o resumo lhe atribui cerca de 1%, não 20%. A alternativa toma a frequência do ossículo medial e a transfere para o lateral.",
+        "C": "A comparação de ossículos acessórios apresentada na fonte é entre subtibiale medial e subfibulare lateral. O tálus com 50% não corresponde ao dado do grupo etário pedido nem substitui os 20% mediais documentados.",
+        "D": "1% é o valor do os subfibulare lateral, não uma frequência compartilhada pelos dois maléolos. A opção apaga a diferença entre o subtibiale medial mais comum e o subfibulare lateral menos frequente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Fíbula, entorse e exame de baixo risco."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Fíbula, entorse e exame de baixo risco"
+        ],
+        "blocos": [
+          "fibula-entorse-e-exame-de-baixo-risco-b57c9c08"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "d4e77b98c7404f0e0020abe3db3d6d380c08d96f6870e863a89766c46b3fd334"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1160": {
+    "questaoSha256": "810aeb2d42415544d3fd8b9ea2bbf76b751ce9d6cd5038df9b266687b2d07e75",
+    "comentarioAnteriorSha256": "bb60c014a0e72f128f2ab9ab14f834611c8581f8cbf441e9e103db09d4ad767a",
+    "comentario": {
+      "conceito": "Dor intensa, **hipoestesia no primeiro espaço interdigital** e **fraqueza dos extensores** depois de um triplanar não reduzido formam o quadro de **síndrome do retináculo extensor**. A conduta é **reduzir imediatamente a fratura e liberar o retináculo extensor superior**, alternativa D (Rockwood crianças, 10ª edição, capítulo 30, complicações).\n\nO retináculo é o local de compressão que precisa ser reconhecido nesse padrão. O capítulo infantil relaciona a síndrome ao triplanar ainda não reduzido e também à Salter-Harris II com fragmento anterior. Procurar apenas o nome genérico de uma neuropatia deixa de tratar a configuração da fratura e o obstáculo local descritos na fonte.\n\nA anatomia ajuda a interpretar o exame: a tabela dos compartimentos da perna do Rockwood adultos, 10ª edição, capítulo 17, associa **primeiro espaço e extensores longos ao fibular profundo**, enquanto o fibular superficial se relaciona ao dorso do pé e à eversão. Essa tabela complementa a leitura dos sinais; não transforma automaticamente uma síndrome retinacular do tornozelo em síndrome de todos os compartimentos da perna ou da coxa.\n\n**Na prova:** combinar a fratura desencadeante, o território sensitivo, a função perdida e a urgência. A resposta precisa abordar a causa mecânica com redução e liberação; observação ou descompressão eletiva não correspondem ao tratamento imediato do capítulo.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A síndrome compartimental é cobrada em vários temas, e o capítulo do tornozelo traz uma variante própria, com sinais clínicos bem definidos.",
+      "correta": "Alternativa D. Identifica a síndrome própria do retináculo extensor após a fratura não reduzida e oferece as duas medidas indicadas: redução imediata e liberação do retináculo superior. Reconhecer a fraqueza e o território sensitivo deve acelerar esse tratamento, não apenas nomear o nervo.",
+      "incorretas": {
+        "A": "O primeiro espaço e a fraqueza extensora correspondem ao conjunto relacionado ao fibular profundo, não ao padrão de dorso do pé e eversão do superficial na tabela anatômica. Além disso, observar não trata a fratura não reduzida nem a compressão retinacular indicada pelo capítulo infantil.",
+        "B": "A localização proposta é a coxa, distante da complicação retinacular do tornozelo descrita no caso. O capítulo 17 relaciona o compartimento anterior da coxa ao quadríceps e à extensão do joelho; aqui os sinais são primeiro espaço e extensores do pé, com uma fratura distal desencadeante.",
+        "C": "A opção não reconhece a síndrome retinacular associada ao triplanar não reduzido e propõe tratamento eletivo. Mesmo antes de discutir outras compressões do tornozelo, essa espera contraria a redução imediata e a liberação do retináculo extensor superior indicadas para o conjunto de sinais apresentado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Complicações.",
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Os compartimentos de cada região."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-1afcd6b0"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "89a8695b83ebd966f263f12652b9f858dfee588844041f9f31d2e2cfc2a8610b"
+      },
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-222f4f26",
+          "os-compartimentos-de-cada-regiao-eb26943e"
+        ],
+        "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
+        "trechosSha256": "ba332cfa832d42d524e20a413b3d412c57651816d80cf5983332c12b9edfdbca"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

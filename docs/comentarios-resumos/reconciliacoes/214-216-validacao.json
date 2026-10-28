@@ -1,0 +1,721 @@
+{
+  "base": "d549b6e2c17ce54c2da85986647611efd20445e6",
+  "lotes": {
+    "214": {
+      "revisadas": [
+        "pediatria-1153",
+        "pediatria-1154",
+        "pediatria-1155",
+        "pediatria-1156",
+        "pediatria-1157",
+        "pediatria-1158",
+        "pediatria-1159",
+        "pediatria-1161",
+        "pediatria-1162",
+        "pediatria-1160"
+      ],
+      "lacunas": []
+    },
+    "215": {
+      "revisadas": [
+        "pediatria-1165",
+        "pediatria-1166",
+        "pediatria-1167",
+        "pediatria-1168",
+        "pediatria-1169",
+        "pediatria-1170",
+        "pediatria-1171",
+        "pediatria-1172"
+      ],
+      "lacunas": [
+        "pediatria-1163",
+        "pediatria-1164"
+      ]
+    },
+    "216": {
+      "revisadas": [
+        "pediatria-1173",
+        "pediatria-1174",
+        "pediatria-1175",
+        "pediatria-1176",
+        "pediatria-1177",
+        "pediatria-1178",
+        "pediatria-1179",
+        "pediatria-1180",
+        "pediatria-1181",
+        "pediatria-1182"
+      ],
+      "lacunas": []
+    }
+  },
+  "fontes": {
+    "rockwood10-17-sindrome-compartimental": {
+      "markdownSha256Bytes": "107ddaf36dbfdf0b0657c7a053055ded2a93270e959dbd8bb3eb5c8c80c0ad92",
+      "linhas": 381,
+      "compiladoSha256Bytes": "54a893206b40a9e69e37cff835989dee0fd725c0ac466ae19aa774b8a3be962f"
+    },
+    "rockwoodcriancas10-30-tornozelo": {
+      "markdownSha256Bytes": "3c4412ab3ec4aac05b6974d51eca2dcffea769788857facf6c48e66353ef4bd9",
+      "linhas": 140,
+      "compiladoSha256Bytes": "00f7548454a956920fc378d61761ef5f7bbf50ffe872e363f415f26da0886e83"
+    },
+    "rockwoodcriancas10-23-pelve-acetabulo": {
+      "markdownSha256Bytes": "7b54cee891a398ad64d168bf248f393cc0f43521da5cf37cc337bf1cd5e2d2fb",
+      "linhas": 135,
+      "compiladoSha256Bytes": "e415ae7f1a542604e7abcf8cab7af8755cbbab336e06194dca13f094b60d749c"
+    },
+    "rockwoodcriancas10-24-quadril": {
+      "markdownSha256Bytes": "8e85d4d1e8f246263e94ab2672ef60afdba414571c8b15fb8d644101db7b1659",
+      "linhas": 129,
+      "compiladoSha256Bytes": "a8ec354b5b2058498d1230a62c742d1753759aee07139fd025083dc46083936c"
+    }
+  },
+  "leitura": "Resumos 30, 23 e 24 infantis integralmente lidos nesta passagem. Resumo adulto 17 relido integralmente, com 160–240 em chamada separada para recuperar trecho truncado; usado somente na anatomia dos nervos/compartimentos para 1160, sem transferir limiares hemodinâmicos adultos para a criança. Somente corpo independente, tabelas e sínteses prova; sem usar notas questoes ou comentários anteriores como prova.",
+  "referenciasHistoricas": {
+    "pediatria-1153": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seções Imaging and Other Diagnostic Studies e Juvenile Tillaux Fractures (Fig. 30-46)"
+      ],
+      "comentarioAnteriorSha256": "418f1a73aac47d19944d45f5f3c1c5cf89984cef96c80c34999493f3b0a68a12"
+    },
+    "pediatria-1154": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seções Pathoanatomy and Applied Anatomy (Fig. 30-28) e Transitional Fractures"
+      ],
+      "comentarioAnteriorSha256": "e992a27ba648263c07a4192e2822c3a9b0504e7000f1b56e129e87b1b12e49d8"
+    },
+    "pediatria-1155": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seções Triplane Fracture e Author's Preferred Treatment (Triplane Fractures)"
+      ],
+      "comentarioAnteriorSha256": "8ad0f324b087d558328d1159d10da5e61bad35e1f4a193875f211d5f38089fd9"
+    },
+    "pediatria-1156": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seções Classifications and Mechanisms of Injury (Dias-Tachdjian, Figs. 30-3 a 30-8) e Salter-Harris Type II Fractures (Fig. 30-35)"
+      ],
+      "comentarioAnteriorSha256": "ef58bf830c451f022516455d6a8446e3b97d2afb9ed0f7f7723c0727bcccaa4c"
+    },
+    "pediatria-1157": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seções Salter-Harris Type III and IV Fractures e Physeal Arrest or Growth Disturbance (Figs. 30-68 e 30-69)"
+      ],
+      "comentarioAnteriorSha256": "dbf0989ff5059a77d8480b3a758495fe4c7c11d2bb5fd6891e256d888eddd714"
+    },
+    "pediatria-1158": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seção Salter-Harris Type II Fractures (Barmada, Rohmiller, Figs. 30-36 e 30-38)"
+      ],
+      "comentarioAnteriorSha256": "3d361832d1743480f16aba3a0b39649d27ed76d9dd1fa7d637e8cc3a893b7d9d"
+    },
+    "pediatria-1159": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seção Author's Preferred Treatment (Salter-Harris Type I and II Fractures, Fig. 30-60)"
+      ],
+      "comentarioAnteriorSha256": "34136883602156b8397112a51c6165646be3e93e7efb19ef781d078077ac790f"
+    },
+    "pediatria-1161": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seção Imaging and Other Diagnostic Studies (regras de Ottawa e exame de baixo risco de BOUTIS)"
+      ],
+      "comentarioAnteriorSha256": "1f1014777494f05274135d0e9546d8f7e9f2540f2d79b60630feb9fc409957a7"
+    },
+    "pediatria-1162": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seções Pitfalls in Diagnosis (Fig. 30-22 e 30-23) e Other Fractures of the Distal Tibia"
+      ],
+      "comentarioAnteriorSha256": "a268db700e6328bbd203a36f2e25cbd5fd2dcbdf0fd13bcd248f1abc59ddd619"
+    },
+    "pediatria-1160": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seção Compartment Syndrome (síndrome do retináculo extensor, MUBARAK)"
+      ],
+      "comentarioAnteriorSha256": "bb60c014a0e72f128f2ab9ab14f834611c8581f8cbf441e9e103db09d4ad767a"
+    },
+    "pediatria-1165": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seções Fractures Involving the Distal Fibula, Lateral Ankle Sprains e Distal Fibula Fractures"
+      ],
+      "comentarioAnteriorSha256": "bca2e765e17d2a7782ba1da8e1febc89cac50283dec25a5f558d99e3b79415d7"
+    },
+    "pediatria-1166": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seção Physeal Arrest or Growth Disturbance (Kärrholm, Figs. 30-44 e 30-70)"
+      ],
+      "comentarioAnteriorSha256": "6744021449901213e9fad582567eeec9fe86a8974426fce2a7b5dcadd5c8c8c1"
+    },
+    "pediatria-1167": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seção Open Fractures and Lawn Mower Injuries (Fig. 30-58)"
+      ],
+      "comentarioAnteriorSha256": "721650e96ca9ef46250f8aa39c5d5b619aab9080c2b876cab5ebf49758176e0a"
+    },
+    "pediatria-1168": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seções Classification of Pelvic and Acetabular Fractures (Fig. 23-7) e Simple Ring Fractures"
+      ],
+      "comentarioAnteriorSha256": "135ff178064e9565da85db918cbd5b7a3a1d94ac4cd3c073113f3db9849dbe5b"
+    },
+    "pediatria-1169": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seções Mechanisms of Injury e Treatment Options for Avulsion Fractures"
+      ],
+      "comentarioAnteriorSha256": "eec781f1bb67fd6f566c8d25a2a9e2403f00976cbae5b8822d133eb9d8dc20d4"
+    },
+    "pediatria-1170": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seção Operative Treatment of Ischial Avulsion Fractures (Fig. 23-13)"
+      ],
+      "comentarioAnteriorSha256": "bc1acc0f7f4b8616cca20cb42bb98fd2ebbc20985b7a134eddca2799b0b712d9"
+    },
+    "pediatria-1171": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seções Acetabular Fracture Classification (Bucholz, Fig. 23-8) e Management of Expected Adverse Outcomes (Fig. 23-36)"
+      ],
+      "comentarioAnteriorSha256": "697d23a8bb8daffbee5dab6530521667734c41fe0a04e7820ac32d6295b30a11"
+    },
+    "pediatria-1172": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seção Management of Expected Adverse Outcomes (displasia pós-traumática)"
+      ],
+      "comentarioAnteriorSha256": "ad4545bad51b5eb190f5a0d4f479490ace08355b15e012172e8f746d769fbf0e"
+    },
+    "pediatria-1163": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seção Physeal Arrest or Growth Disturbance (Fig. 30-71)"
+      ],
+      "comentarioAnteriorSha256": "e5ac3e5e7db3d326cd0a5dd2dacc039f360cc0ab0034bcb97ad0e1e68fb05bff"
+    },
+    "pediatria-1164": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30 (Ankle Fractures; Jaime R. Denning)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 30, seções Implants e Author's Preferred Treatment (Juvenile Tillaux Fractures, Figs. 30-33, 30-63 a 30-65)"
+      ],
+      "comentarioAnteriorSha256": "9d78ecda0f795aa5459ca0839ecbaad65e43fd3a1caa49e6e3e5be5078b7d4ba"
+    },
+    "pediatria-1173": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seção Associated Injuries With Pelvic and Acetabular Fractures"
+      ],
+      "comentarioAnteriorSha256": "c33068b3a90d88ebc929eb2ba4266fae45353c2527995d37b41794bf44dbab84"
+    },
+    "pediatria-1174": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seção Widening of the Symphysis Pubis (Figs. 23-20 e 23-21)"
+      ],
+      "comentarioAnteriorSha256": "ca5dd0f6f01340bd90c3724f3d382589361777ed266a4b94d5226abf25f121ab"
+    },
+    "pediatria-1175": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seção Bilateral Fractures of the Inferior and Superior Pubic Rami (Fig. 23-23)"
+      ],
+      "comentarioAnteriorSha256": "ee2af63cbeed4022470f7eb390d1f88e050f2f5b79b04a44376e5f66eea5159c"
+    },
+    "pediatria-1176": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seções Displaced Fractures (Outcomes, SMITH) e Indications/Contraindications"
+      ],
+      "comentarioAnteriorSha256": "14fa95bd234c6525a7cb3b6caaca7c63e0e1967d0999e3b264fc93bb053ea884"
+    },
+    "pediatria-1177": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seção Imaging and Other Diagnostic Studies (Figs. 23-3 e 23-4)"
+      ],
+      "comentarioAnteriorSha256": "c8248fd02fb4ef0483de97bebd8c79bf1abf84be1dac231c49c67ffc803bbf70"
+    },
+    "pediatria-1178": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seções Imaging and Other Diagnostic Studies (Fig. 23-6) e Treatment Options for Acetabular Fractures"
+      ],
+      "comentarioAnteriorSha256": "ebaaae7e237b71237546146518d2578b9622b8afba82aa39a1b1f6d9a45d7b86"
+    },
+    "pediatria-1179": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seções Pelvic and Acetabular Development (Fig. 23-10) e Stress Fractures of the Pelvis (Fig. 23-17)"
+      ],
+      "comentarioAnteriorSha256": "ee75a70d54635e358804e2ac61f9b38efa015a6bfb098a6e04e5ee69995f300e"
+    },
+    "pediatria-1180": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seções Classification (SILBER e FLYNN) e Authors' Preferred Treatment"
+      ],
+      "comentarioAnteriorSha256": "742bf2f34c769bc0683125372515c167b29015d9ca01a49250d9c04def352272"
+    },
+    "pediatria-1181": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23, seção Open Reduction and Internal Fixation of Acetabular Fractures (Tabela 23-1, Fig. 23-32)"
+      ],
+      "comentarioAnteriorSha256": "7908192c78ff1163ca0478dc4ce88a63c2e2afd42ffab2584859e012553fb4d9"
+    },
+    "pediatria-1182": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seção Classification of Hip Fractures (DELBET, Fig. 24-4 e 24-5)"
+      ],
+      "comentarioAnteriorSha256": "afe1cfcb31767306c126c574e10eaf95870be272a0461f33f71e5a80c2b762e0"
+    }
+  },
+  "origensMotivosPreservados": {
+    "pediatria-1153": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0543",
+        "pediatria-0546",
+        "pediatria-0686",
+        "pediatria-0905",
+        "pediatria-0568",
+        "pediatria-0842"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** A banca cobra o TILLAUX por todos os lados: tipo e localização (TARO 2024 `pediatria-0543`, TARO 2023 `pediatria-0546`, TARO 2013 `pediatria-0686`, CET-PR `pediatria-0905`), mecanismo (TARO 2022 `pediatria-0568`, TEOT 2021 `pediatria-0842`). Aqui o ângulo é o diagnóstico por imagem.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** A banca cobra o TILLAUX por todos os lados: tipo e localização (TARO 2024 `pediatria-0543`, TARO 2023 `pediatria-0546`, TARO 2013 `pediatria-0686`, CET-PR `pediatria-0905`), mecanismo (TARO 2022 `pediatria-0568`, TEOT 2021 `pediatria-0842`). Aqui o ângulo é o diagnóstico por imagem."
+    },
+    "pediatria-1154": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0910",
+        "pediatria-0650"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2025 (`pediatria-0910`), que pergunta a ordem do fechamento, e do SBOT-SP (`pediatria-0650`), que pergunta o fator responsável pelo padrão do triplanar. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2025 (`pediatria-0910`), que pergunta a ordem do fechamento, e do SBOT-SP (`pediatria-0650`), que pergunta o fator responsável pelo padrão do triplanar. Depois, faça as oficiais."
+    },
+    "pediatria-1155": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0588",
+        "pediatria-0662",
+        "pediatria-0867",
+        "pediatria-0517",
+        "pediatria-0637"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** A banca cobra muito a imagem do triplanar (TARO 2021 `pediatria-0588`, TARO 2012 `pediatria-0662`, ENARE 2025 `pediatria-0867`, ENARE 2024 `pediatria-0517`) e a via de acesso (TARO 2019 `pediatria-0637`). Aqui o foco é a manobra.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** A banca cobra muito a imagem do triplanar (TARO 2021 `pediatria-0588`, TARO 2012 `pediatria-0662`, ENARE 2025 `pediatria-0867`, ENARE 2024 `pediatria-0517`) e a via de acesso (TARO 2019 `pediatria-0637`). Aqui o foco é a manobra."
+    },
+    "pediatria-1156": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0955",
+        "pediatria-0557"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0955`), que pede a classificação de DIAS-TACHDJIAN por imagem, e do TEOT 2024 (`pediatria-0557`), que pergunta o mecanismo em que a fíbula fica intacta (supinação-flexão plantar). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0955`), que pede a classificação de DIAS-TACHDJIAN por imagem, e do TEOT 2024 (`pediatria-0557`), que pergunta o mecanismo em que a fíbula fica intacta (supinação-flexão plantar). Depois, faça as oficiais."
+    },
+    "pediatria-1157": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0531",
+        "pediatria-0570"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Conversa com o TARO 2025 (`pediatria-0531`), que dá como complicação mais comum das fraturas fisárias do tornozelo a deformidade em valgo, e com o TARO 2022 (`pediatria-0570`), sobre a parada fisária nos tipos III e IV. O capítulo descreve o varo como a deformidade típica da ponte medial. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Conversa com o TARO 2025 (`pediatria-0531`), que dá como complicação mais comum das fraturas fisárias do tornozelo a deformidade em valgo, e com o TARO 2022 (`pediatria-0570`), sobre a parada fisária nos tipos III e IV. O capítulo descreve o varo como a deformidade típica da ponte medial. Depois, faça as oficiais."
+    },
+    "pediatria-1158": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0531"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção, ao lado do TARO 2025 (`pediatria-0531`), que cobra a complicação mais comum das fraturas fisárias do tornozelo. Os números de BARMADA são clássicos e o capítulo os mantém.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção, ao lado do TARO 2025 (`pediatria-0531`), que cobra a complicação mais comum das fraturas fisárias do tornozelo. Os números de BARMADA são clássicos e o capítulo os mantém."
+    },
+    "pediatria-1159": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0863"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra muito os limites de angulação nas diáfises (ENARE 2025 `pediatria-0863`, fêmur), e o capítulo do tornozelo traz números próprios, com o varo como a deformidade menos tolerada.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra muito os limites de angulação nas diáfises (ENARE 2025 `pediatria-0863`, fêmur), e o capítulo do tornozelo traz números próprios, com o varo como a deformidade menos tolerada."
+    },
+    "pediatria-1161": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O capítulo da 10ª edição dá peso a esse exame clínico, com números claros que têm cara de prova.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O capítulo da 10ª edição dá peso a esse exame clínico, com números claros que têm cara de prova."
+    },
+    "pediatria-1162": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-1081"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea da ENARE Cirurgia da Mão 2023 (`pediatria-1081`), que pergunta em que período os ossículos acessórios do tornozelo podem simular fratura. Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea da ENARE Cirurgia da Mão 2023 (`pediatria-1081`), que pergunta em que período os ossículos acessórios do tornozelo podem simular fratura. Depois, faça a oficial."
+    },
+    "pediatria-1160": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A síndrome compartimental é cobrada em vários temas, e o capítulo do tornozelo traz uma variante própria, com sinais clínicos bem definidos.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A síndrome compartimental é cobrada em vários temas, e o capítulo do tornozelo traz uma variante própria, com sinais clínicos bem definidos."
+    },
+    "pediatria-1165": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A 10ª edição muda a ideia de que, na criança, o tornozelo sempre quebra a fise antes do ligamento.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A 10ª edição muda a ideia de que, na criança, o tornozelo sempre quebra a fise antes do ligamento."
+    },
+    "pediatria-1166": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0531"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2025 (`pediatria-0531`), cujo gabarito é a deformidade em valgo como complicação mais comum das fraturas fisárias do tornozelo. O capítulo mostra que o valgo vem da parada da fíbula, e o varo da ponte medial da tíbia. Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2025 (`pediatria-0531`), cujo gabarito é a deformidade em valgo como complicação mais comum das fraturas fisárias do tornozelo. O capítulo mostra que o valgo vem da parada da fíbula, e o varo da ponte medial da tíbia. Depois, faça a oficial."
+    },
+    "pediatria-1167": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. As lesões por cortador de grama são uma causa marcante de fratura exposta grave do tornozelo na criança, com números e microbiologia próprios.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. As lesões por cortador de grama são uma causa marcante de fratura exposta grave do tornozelo na criança, com números e microbiologia próprios."
+    },
+    "pediatria-1168": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0567",
+        "pediatria-0620",
+        "pediatria-0645",
+        "pediatria-0660"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2022 (`pediatria-0567`), que pergunta quais tipos são considerados instáveis, e conversa com o TARO 2017 (`pediatria-0620`), o TARO 2019 (`pediatria-0645`) e o TARO 2012 (`pediatria-0660`), que cobram o tipo IV e seus subtipos. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2022 (`pediatria-0567`), que pergunta quais tipos são considerados instáveis, e conversa com o TARO 2017 (`pediatria-0620`), o TARO 2019 (`pediatria-0645`) e o TARO 2012 (`pediatria-0660`), que cobram o tipo IV e seus subtipos. Depois, faça as oficiais."
+    },
+    "pediatria-1169": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0845"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0845`), que pergunta o músculo e o esporte da avulsão da espinha anteroinferior (reto femoral, futebol). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0845`), que pergunta o músculo e o esporte da avulsão da espinha anteroinferior (reto femoral, futebol). Depois, faça a oficial."
+    },
+    "pediatria-1170": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0845"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção, ao lado do TEOT 2021 (`pediatria-0845`), sobre a avulsão da espinha anteroinferior. Saber qual avulsão é a mais comum e qual é a mais problemática separa as alternativas.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção, ao lado do TEOT 2021 (`pediatria-0845`), sobre a avulsão da espinha anteroinferior. Saber qual avulsão é a mais comum e qual é a mais problemática separa as alternativas."
+    },
+    "pediatria-1171": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0613"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0613`), que pergunta a idade de fusão da trirradiada. O capítulo traz a classificação e o prognóstico das lesões dela.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0613`), que pergunta a idade de fusão da trirradiada. O capítulo traz a classificação e o prognóstico das lesões dela."
+    },
+    "pediatria-1172": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra muito a displasia do desenvolvimento do quadril; a pós-traumática tem características próprias que confundem.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra muito a displasia do desenvolvimento do quadril; a pós-traumática tem características próprias que confundem."
+    },
+    "pediatria-1173": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0947"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TEPOP 2024 (`pediatria-0947`), que pergunta características gerais das fraturas da pelve e acetábulo, incluindo as lesões associadas.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TEPOP 2024 (`pediatria-0947`), que pergunta características gerais das fraturas da pelve e acetábulo, incluindo as lesões associadas."
+    },
+    "pediatria-1174": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O capítulo dá números claros para a sínfise, um tema pouco cobrado e com cara de prova.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O capítulo dá números claros para a sínfise, um tema pouco cobrado e com cara de prova."
+    },
+    "pediatria-1175": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0620",
+        "pediatria-0645"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TARO 2017 (`pediatria-0620`) e do TARO 2019 (`pediatria-0645`), que perguntam a classificação da fratura bilateral dos ramos (IV, IVa). Aqui o ângulo é a conduta. Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TARO 2017 (`pediatria-0620`) e do TARO 2019 (`pediatria-0645`), que perguntam a classificação da fratura bilateral dos ramos (IV, IVa). Aqui o ângulo é a conduta. Depois, faça as oficiais."
+    },
+    "pediatria-1176": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0694"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TARO 2014 (`pediatria-0694`), que pergunta a complicação mais frequente da fratura tipo III. O capítulo dá peso à consolidação viciosa da pelve e ao limite de 1,1 cm.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TARO 2014 (`pediatria-0694`), que pergunta a complicação mais frequente da fratura tipo III. O capítulo dá peso à consolidação viciosa da pelve e ao limite de 1,1 cm."
+    },
+    "pediatria-1177": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra as incidências da pelve no trauma do adulto; o capítulo infantil traz os mesmos ângulos com os achados.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra as incidências da pelve no trauma do adulto; o capítulo infantil traz os mesmos ângulos com os achados."
+    },
+    "pediatria-1178": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra a luxação do quadril e as fraturas do acetábulo em vários contextos; o detalhe da parede posterior cartilaginosa é próprio da criança.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra a luxação do quadril e as fraturas do acetábulo em vários contextos; o detalhe da parede posterior cartilaginosa é próprio da criança."
+    },
+    "pediatria-1179": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0613"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0613`), sobre a fusão da trirradiada. As idades de fusão e as variantes da pelve que imitam doença têm cara de prova.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0613`), sobre a fusão da trirradiada. As idades de fusão e as variantes da pelve que imitam doença têm cara de prova."
+    },
+    "pediatria-1180": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0947"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TEPOP 2024 (`pediatria-0947`), sobre as características das fraturas da pelve da criança.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TEPOP 2024 (`pediatria-0947`), sobre as características das fraturas da pelve da criança."
+    },
+    "pediatria-1181": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. As fraturas do acetábulo da criança são raras, mas as vias e os princípios são os do adulto e caem bem em prova.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. As fraturas do acetábulo da criança são raras, mas as vias e os princípios são os do adulto e caem bem em prova."
+    },
+    "pediatria-1182": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0515",
+        "pediatria-0920"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea da ENARE 2024 (`pediatria-0515`), que pede a classificação da transfisária com luxação (IB), e do TEOT 2025 (`pediatria-0920`), sobre o tipo com mais necrose (I). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea da ENARE 2024 (`pediatria-0515`), que pede a classificação da transfisária com luxação (IB), e do TEOT 2025 (`pediatria-0920`), sobre o tipo com mais necrose (I). Depois, faça as oficiais."
+    }
+  },
+  "figuras": "Trinta casos textuais, sem imagem nos dados e sem figura indispensável citada pelo enunciado.",
+  "divergencia": "1176 mantém A; série de Smith descrita como MAIS DE 1,1 cm, não demonstra risco no valor exato incluído por >=1,1 cm. Critérios próprios de fixação dos autores são separados do dado observacional. Alerta e análise de todas as opções.",
+  "lacunas": {
+    "pediatria-1163": "O resumo 30 indica ressecção com interposição para ponte de 25–40% e mais de 2 anos de crescimento, sustentando a escolha geral no caso de 30%/4 anos. Não especifica, porém, GORDURA ou CIMENTO como materiais de interposição nessa ressecção fisária, componentes expressos da alternativa C. A gordura citada em outra seção é cobertura de fise exposta no trauma por cortador, não prova do material para ressecar ponte. Falta fonte independente dos materiais e de sua aplicação nesse procedimento; preservar comentário e gabarito, sem selo de cobertura integral.",
+    "pediatria-1164": "O resumo 30 confirma parafuso epifisário canulado e possibilidade de cruzar a fise no Tillaux por pouco crescimento restante, mas não aborda IMPLANTES ABSORVÍVEIS DE PRIMEIRA GERAÇÃO, suas complicações nem preferência relativa, afirmados na alternativa C. Não usar ausência de citação como prova de ausência de complicações. Falta comparação independente do comportamento desses implantes para conferir todas as alternativas; comentário e gabarito D preservados, sem selo."
+  },
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 28,
+    "lacunasComentariosIntactos": 2,
+    "demaisBytesPreservados": true,
+    "motivosCriacaoConferidos": 28,
+    "ui": "28/28 casos em 390/1440 com resposta, aula, alertas e links exatos. Primeiro exemplo 1153 inspecionado visualmente; divergência 1176 com teste funcional de remapeamento das letras."
+  },
+  "reconciliacao615": {
+    "pr": 615,
+    "head": "0663c3e88be4c09531eb13b9d30571241761065c",
+    "merge": "d549b6e2c17ce54c2da85986647611efd20445e6",
+    "ci": 40744470352,
+    "pages": 40744944941,
+    "publicar": 123018828249,
+    "avulsosIntegrais": 575,
+    "resumosIntegrais": 52,
+    "figuras": 39
+  },
+  "concorrencia": "Base inclui PR615 (18 miniaulas/12 lacunas), PR614 (13 miniaulas/17 lacunas e rótulo 2046), PR612 (10 miniaulas/20 lacunas e 3 rótulos) e os 118 comentários concorrentes do PR613. Apenas 28 membros de pediatria.json alterados; demais bytes, fontes, casos, opções, gabaritos e revisão médica preservados.",
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 219,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 784,
+      "pendente-inspecao-imagem": 4,
+      "revisada": 1870
+    }
+  },
+  "continuidade": "Próxima unidade 217 exportada: pediatria-1183 a 1192, sem aplicação nesta entrega. Fonte infantil 24 já lida integralmente; continuar avaliação individual, revalidar catálogo e remoto. A tarefa integral permanece aberta."
+}

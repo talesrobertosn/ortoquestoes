@@ -5,11 +5,11 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 97 |
-| pendente | 249 |
+| pendente | 219 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 782 |
+| pendente-fonte | 784 |
 | pendente-inspecao-imagem | 4 |
-| revisada | 1842 |
+| revisada | 1870 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -40,8 +40,8 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 33 | 0 | 16 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 47 | 0 | 19 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 30 | 0 | 23 |
-| Epidemiologia das fraturas na criança (`rockwoodcriancas10-01-epidemiologia-fraturas`) | 111 | 0 | 104 |
-| Síndrome compartimental na criança (`rockwoodcriancas10-06-sindrome-compartimental`) | 115 | 0 | 104 |
+| Epidemiologia das fraturas na criança (`rockwoodcriancas10-01-epidemiologia-fraturas`) | 126 | 0 | 89 |
+| Síndrome compartimental na criança (`rockwoodcriancas10-06-sindrome-compartimental`) | 130 | 0 | 89 |
 | Fraturas patológicas e maus-tratos na criança (`rockwoodcriancas10-07-patologicas-maus-tratos`) | 16 | 0 | 26 |
 | Fraturas e luxações da mão e do carpo na criança (`rockwoodcriancas10-08-mao-carpo`) | 19 | 0 | 23 |
 | Fraturas do colo do rádio e do olécrano na criança (`rockwoodcriancas10-11-colo-radio-olecrano`) | 67 | 0 | 26 |
@@ -50,14 +50,14 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança (`rockwoodcriancas10-20-clavicula-escapula`) | 12 | 0 | 27 |
 | Lesões da coluna cervical na criança (`rockwoodcriancas10-21-coluna-cervical`) | 8 | 0 | 54 |
 | Fraturas da coluna toracolombar na criança (`rockwoodcriancas10-22-coluna-toracolombar`) | 5 | 0 | 35 |
-| Fraturas da pelve e do acetábulo na criança (`rockwoodcriancas10-23-pelve-acetabulo`) | 17 | 0 | 41 |
-| Fraturas do colo do fêmur e luxação traumática do quadril na criança (`rockwoodcriancas10-24-quadril`) | 17 | 0 | 44 |
+| Fraturas da pelve e do acetábulo na criança (`rockwoodcriancas10-23-pelve-acetabulo`) | 32 | 0 | 26 |
+| Fraturas do colo do fêmur e luxação traumática do quadril na criança (`rockwoodcriancas10-24-quadril`) | 32 | 0 | 29 |
 | Fratura da diáfise do fêmur na criança (`rockwoodcriancas10-25-diafise-femur`) | 90 | 0 | 32 |
 | Fratura da fise distal do fêmur na criança (`rockwoodcriancas10-26-fise-distal-femur`) | 97 | 0 | 37 |
 | Fratura da fise proximal e da tuberosidade da tíbia na criança (`rockwoodcriancas10-27-fise-proximal-tibia`) | 92 | 0 | 39 |
 | Lesões intra-articulares do joelho na criança (`rockwoodcriancas10-28-joelho-intra-articular`) | 19 | 0 | 45 |
 | Fraturas da tíbia e da fíbula na criança (`rockwoodcriancas10-29-diafise-tibia`) | 89 | 0 | 33 |
-| Fraturas do tornozelo na criança (`rockwoodcriancas10-30-tornozelo`) | 21 | 0 | 18 |
+| Fraturas do tornozelo na criança (`rockwoodcriancas10-30-tornozelo`) | 34 | 0 | 5 |
 | Fraturas, luxações e outras lesões do pé na criança (`rockwoodcriancas10-31-pe`) | 7 | 0 | 21 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 7 |

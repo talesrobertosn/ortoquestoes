@@ -1,0 +1,289 @@
+{
+  "pediatria-1165": {
+    "questaoSha256": "c6751fa4e5a3c4893096c9b3caf1102ba61a57e3374bd46627f44b13c027d71e",
+    "comentarioAnteriorSha256": "bca2e765e17d2a7782ba1da8e1febc89cac50283dec25a5f558d99e3b79415d7",
+    "comentario": {
+      "conceito": "Na lesão lateral **sem desvio e de baixo risco**, distinguir uma entorse de uma possível Salter-Harris I da fíbula não muda necessariamente o tratamento: o resumo recomenda **órtese ou bota removível por 3–4 semanas**, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 30, fíbula e entorse).\n\nA antiga associação automática entre dor na região fisária e fratura tipo I foi revista por ressonância: muitas dessas apresentações são entorses. Isso não significa ignorar o exame, mas reconhecer que lesões diferentes podem compartilhar uma proteção inicial quando o padrão clínico é de baixo risco e não há desvio.\n\nO capítulo apresenta órtese ou bota removível como opção melhor que o gesso nesse grupo. A dúvida entre os dois nomes diagnósticos não exige, por si só, imobilização longa até a coxa ou ressonância para todo paciente. Já uma lesão desviada ou fora desse perfil deve ser avaliada por seus próprios critérios, sem estender a regra indiscriminadamente.\n\n**Na prova:** a conduta depende do perfil de risco e do desvio. Entorse ou suspeita de Salter-Harris I sem desvio pode receber o mesmo tratamento funcional protegido; cirurgia aguda de entorse quase nunca é a regra descrita.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A 10ª edição muda a ideia de que, na criança, o tornozelo sempre quebra a fise antes do ligamento.",
+      "correta": "Alternativa A. Mantém a proteção removível por 3–4 semanas para as duas possibilidades de baixo risco. A fonte não condiciona esse manejo a resolver previamente toda dúvida por ressonância.",
+      "incorretas": {
+        "B": "O gesso inguinopodálico por 6 semanas aumenta a extensão e a duração da imobilização em relação à órtese ou bota descrita para esse grupo. O caso não traz desvio ou outro dado que o retire do perfil de lesão lateral de baixo risco.",
+        "C": "A ressonância ajudou a redefinir quais lesões eram realmente fisárias, mas essa evidência não equivale a pedir o exame rotineiramente para escolher o manejo inicial. O resumo trata de modo semelhante entorse e fratura sem desvio nesse cenário.",
+        "D": "O capítulo ressalta que cirurgia aguda de entorse quase nunca é necessária e reserva outra discussão para instabilidade crônica. Reparar ligamentos precocemente não corresponde ao tratamento protegido do caso de baixa energia e sem desvio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Fíbula, entorse e exame de baixo risco."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Fíbula, entorse e exame de baixo risco"
+        ],
+        "blocos": [
+          "fibula-entorse-e-exame-de-baixo-risco-b57c9c08"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "d4e77b98c7404f0e0020abe3db3d6d380c08d96f6870e863a89766c46b3fd334"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1166": {
+    "questaoSha256": "1f54e279fc8b89503db720fc17c14bedd66d53a432a940a1cd73ff7be57c6195",
+    "comentarioAnteriorSha256": "6744021449901213e9fad582567eeec9fe86a8974426fce2a7b5dcadd5c8c8c1",
+    "comentario": {
+      "conceito": "Quando a **fíbula para de crescer e a tíbia continua**, o descompasso pode produzir **valgo do tornozelo**, alternativa B. É diferente da ponte medial tibial, que produz varo (Rockwood and Wilkins, 10ª edição, capítulo 30, complicações).\n\nO dado decisivo não é que a fratura inicial foi pouco desviada, mas que dois anos depois há **fechamento fisário fibular com a tíbia ainda aberta**. Uma redução inicial aceitável não garante que o crescimento dos dois ossos seguirá equilibrado. A deformidade pode surgir progressivamente com a diferença de crescimento.\n\nO capítulo distingue ainda a parada completa da tíbia, com a fíbula continuando a crescer, situação em que costuma ocorrer migração proximal da fíbula. Trocar qual osso parou muda o raciocínio. O seguimento clínico e radiográfico permite identificar uma alteração angular que não existia imediatamente após o trauma.\n\n**Na prova:** parada fibular com crescimento tibial preservado aponta para valgo e perda relativa do comprimento da fíbula. Não usar a regra da ponte medial da tíbia para um problema localizado no outro osso.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2025 (`pediatria-0531`), cujo gabarito é a deformidade em valgo como complicação mais comum das fraturas fisárias do tornozelo. O capítulo mostra que o valgo vem da parada da fíbula, e o varo da ponte medial da tíbia. Depois, faça a oficial.",
+      "correta": "Alternativa B. O resumo associa a parada da fíbula com crescimento tibial mantido ao valgo. O encurtamento é relativo ao crescimento que a fíbula deixa de acompanhar, e a comparação entre os dois ossos é o centro do caso.",
+      "incorretas": {
+        "A": "Varo é a deformidade típica da ponte medial da fise tibial descrita no capítulo. Aqui a tíbia ainda cresce e a parada é fibular; a alternativa aplica ao osso errado a consequência de outra topografia de lesão.",
+        "C": "O caso indica um desequilíbrio tibiofibular de crescimento para o qual a fonte descreve valgo. Equino fixo não corresponde à consequência angular desse cenário apresentada no resumo.",
+        "D": "A parada da fíbula tem consequência justamente porque a tíbia pode continuar crescendo. O capítulo a associa a valgo, contrariando a ideia de que o fechamento fibular seria indiferente para o desenvolvimento do tornozelo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-0098515b"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "d9ac1c78611320c66a136b572fcaa27c94561b3a9e52c08e3e11fe8375402f52"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1167": {
+    "questaoSha256": "4644e7cc0889e720844a68f04ad278d7995968ae2ffe04e7d5820dad30de9934",
+    "comentarioAnteriorSha256": "721650e96ca9ef46250f8aa39c5d5b619aab9080c2b876cab5ebf49758176e0a",
+    "comentario": {
+      "conceito": "As lesões por **cortador de grama** exigem atenção ao dano de partes moles e à infecção. O resumo destaca **gram-negativos e fungos**, por vezes diferentes dos germes do primeiro desbridamento, e recomenda **desbridamento meticuloso**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 30, fraturas expostas e cortador de grama).\n\nOs cortadores **de montar** produzem as piores lesões descritas. Em uma revisão recente citada no capítulo, houve amputação em 38%, com idade média de 7,5 anos. Esse número pertence à revisão apresentada e não deve ser convertido em probabilidade individual para toda ferida por qualquer equipamento; ele mostra por que chamar a amputação de rara nesse contexto é inadequado.\n\nA possibilidade de germes diferentes na infecção posterior limita a confiança em uma única cultura inicial como guia definitivo. O cuidado não termina na identificação de um microrganismo: precisa enfrentar os tecidos lesados e organizar a cobertura. O resumo cita curativo a vácuo e retalhos quando necessários.\n\n**Na prova:** reconhecer gravidade, equipamento de montar e microbiologia variada. Uma ferida dessas não se resume a uma fratura que possa ser tratada sem atenção continuada às partes moles.\n\n**Por que esta questão foi criada.** É uma questão de projeção. As lesões por cortador de grama são uma causa marcante de fratura exposta grave do tornozelo na criança, com números e microbiologia próprios.",
+      "correta": "Alternativa C. Reúne os grupos de agentes destacados e o cuidado mecânico fundamental com a ferida. A informação de que os germes posteriores podem diferir dos iniciais explica por que a primeira cultura não torna o controle infeccioso automaticamente previsível.",
+      "incorretas": {
+        "A": "A fonte coloca os equipamentos de montar como responsáveis pelas piores lesões. A alternativa inverte essa relação ao atribuir a maior gravidade aos cortadores manuais.",
+        "B": "O capítulo informa que a infecção pode envolver germes diferentes dos encontrados no desbridamento inicial. Logo, essa cultura não orienta com a segurança universal prometida todas as infecções posteriores; a evolução da ferida continua relevante.",
+        "D": "A revisão citada descreve 38% de amputação, e não menos de 5%. O dado não deve ser generalizado para cada criança, mas é incompatível com a classificação de amputação rara na população apresentada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Fraturas expostas e cortador de grama."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-30-tornozelo",
+        "titulo": "Fraturas do tornozelo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 30 · Ankle Fractures",
+        "secoes": [
+          "Fraturas expostas e cortador de grama"
+        ],
+        "blocos": [
+          "fraturas-expostas-e-cortador-de-grama-d9b184b8"
+        ],
+        "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+        "trechosSha256": "b2ee32180456f4daeb3bebe792a3f60f44b2824baf4dbbed237844f1f1213831"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1168": {
+    "questaoSha256": "d806a0d8ca72c5e7d1c3c0f5f044c4422d6bb6101deb40659b1e681629507484",
+    "comentarioAnteriorSha256": "135ff178064e9565da85db918cbd5b7a3a1d94ac4cd3c073113f3db9849dbe5b",
+    "comentario": {
+      "conceito": "Na classificação de **Torode e Zieg modificada**, o **tipo IIIB** envolve os anéis **anterior e posterior**, mas é descrito como **estável**. Apesar disso, associa-se a mais transfusão, UTI e lesões associadas que o IIIA. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 23, classificação).\n\n**Estabilidade mecânica** e **gravidade clínica** respondem a perguntas diferentes. Uma classificação estável não garante um trauma sem lesões associadas ou sem necessidade de suporte. O resumo destaca justamente a morbidade maior do IIIB em relação ao IIIA, sem redefini-lo automaticamente como IV.\n\nO tipo I é avulsão, o II envolve a asa do ilíaco e o IIIA é uma lesão anterior simples. O IV reúne padrões instáveis. Saber a extensão anatômica evita confundir o IIIB, que alcança os dois setores do anel, com uma fratura anterior isolada.\n\n**Na prova:** IIIB é estável no esquema modificado do capítulo, porém mais grave que IIIA nos desfechos citados. Não trocar a definição mecânica pela necessidade de transfusão ou de terapia intensiva.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2022 (`pediatria-0567`), que pergunta quais tipos são considerados instáveis, e conversa com o TARO 2017 (`pediatria-0620`), o TARO 2019 (`pediatria-0645`) e o TARO 2012 (`pediatria-0660`), que cobram o tipo IV e seus subtipos. Depois, faça as oficiais.",
+      "correta": "Alternativa A. Identifica o IIIB e mantém juntas as duas informações do resumo: anéis anterior e posterior, estáveis, com maior morbidade que o IIIA. O aumento de suporte clínico não exige alterar sua definição classificatória.",
+      "incorretas": {
+        "B": "O IIIA é uma lesão simples e estável do anel anterior. Ele é o grupo de comparação menos grave nos desfechos citados; falta-lhe a extensão anterior e posterior do IIIB solicitada na pergunta.",
+        "C": "O tipo II corresponde à asa do ilíaco, incluindo subtipos apofisário e da asa. Não é o padrão dos dois setores do anel que o capítulo destaca pela maior transfusão e UTI entre as lesões classificadas como estáveis.",
+        "D": "O tipo I é uma avulsão apofisária. Ele pertence à classificação, mas não descreve o comprometimento estável dos anéis anterior e posterior que diferencia o IIIB do IIIA."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Classificação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Classificação"
+        ],
+        "blocos": [
+          "classificacao-157b6ed1",
+          "classificacao-927156f0"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "01fb2163c3e2a45dce3c530a7d4b8483f563b51ef540c4d075562b773573cb42"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1169": {
+    "questaoSha256": "49f150180f317207cb3c3cef901b62ad8aab94e096f03dd8e709096a69817b84",
+    "comentarioAnteriorSha256": "eec781f1bb67fd6f566c8d25a2a9e2403f00976cbae5b8822d133eb9d8dc20d4",
+    "comentario": {
+      "conceito": "A avulsão pélvica mais frequente na distribuição apresentada é a da **espinha ilíaca anteroinferior**, alternativa B, ligada ao **reto femoral**. O resumo informa 37%, seguida pela tuberosidade isquiática com 31%, anterossuperior com 25% e crista com 6% (Rockwood and Wilkins, 10ª edição, capítulo 23, avulsões).\n\nEssas lesões decorrem de **contração muscular violenta** em uma apófise do adolescente. Por isso, esporte, músculo e local precisam ser relacionados: o resumo associa futebol às espinhas anteroinferior e anterossuperior, mas seus músculos são diferentes. Reto femoral corresponde à inferior; sartório, à superior.\n\nFrequência não significa pior evolução. A avulsão **isquiática** é destacada por maior incapacidade e pseudartrose, embora não lidere a tabela de frequência. A anteroinferior também pode causar dor persistente; a comparação depende do desfecho perguntado.\n\n**Na prova:** para “mais comum”, escolher anteroinferior/reto femoral. Para incapacidade e pseudartrose, lembrar o destaque da tuberosidade isquiática, sem trocar as duas perguntas.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0845`), que pergunta o músculo e o esporte da avulsão da espinha anteroinferior (reto femoral, futebol). Depois, faça a oficial.",
+      "correta": "Alternativa B. A espinha anteroinferior lidera a tabela com 37% e se relaciona ao reto femoral. Esse é o desfecho de frequência solicitado; o resumo não coloca a isquiática em primeiro apenas por suas complicações.",
+      "incorretas": {
+        "A": "A crista ilíaca corresponde a 6% na tabela e se relaciona aos oblíquos. O resumo também menciona apofisite da crista em corredores; esse quadro não transforma a crista no local mais frequente de avulsão aguda.",
+        "C": "A espinha anterossuperior se relaciona ao sartório e aparece com 25%. O nome se aproxima do local correto, mas a diferença entre superior e inferior muda músculo e frequência.",
+        "D": "A tuberosidade isquiática aparece com 31%, atrás da anteroinferior. Sua importância para incapacidade e pseudartrose é maior, mas gravidade potencial e frequência não são medidas intercambiáveis."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Avulsões (tipo I)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Avulsões (tipo I)"
+        ],
+        "blocos": [
+          "avulsoes-tipo-i-ba5cd877",
+          "avulsoes-tipo-i-cf35bcfc",
+          "avulsoes-tipo-i-06300995"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "093d0a6b20310736187107addd86b7a01d9294030e60d54a4f5807df242fcc50"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1170": {
+    "questaoSha256": "7f312734401cb4e3e116684c3098900e7c973b9b58092d7ce554e3bba23061eb",
+    "comentarioAnteriorSha256": "bc1acc0f7f4b8616cca20cb42bb98fd2ebbc20985b7a134eddca2799b0b712d9",
+    "comentario": {
+      "conceito": "A avulsão da **tuberosidade isquiática** é a que o resumo destaca por **incapacidade funcional e pseudartrose**, com maior possibilidade de cirurgia; é a alternativa C. Isso não significa que seja a mais frequente, pois esse lugar pertence à espinha anteroinferior (Rockwood and Wilkins, 10ª edição, capítulo 23, avulsões).\n\nAs avulsões decorrem de tração muscular sobre a apófise. Na tuberosidade isquiática, a relação com os isquiotibiais ajuda a compreender a importância funcional do local. A fonte relata que quatro de cinco lesões operadas em uma série eram isquiáticas, sem fornecer essa pequena série como uma taxa universal de cirurgia.\n\nO tratamento das avulsões é **quase sempre conservador**, com repouso, posição de relaxamento muscular e carga parcial. A discussão operatória muda quando há desvio grande ou sintomas persistentes. Para a isquiática, os autores citados usam desvio acima de 2 cm, com abordagem protegendo o nervo isquiático.\n\n**Na prova:** distinguir três desfechos: frequência, dor persistente e incapacidade/pseudartrose. O resumo menciona mais dor crônica na anteroinferior, mas destaca a isquiática no conjunto de problemas funcionais e cirúrgicos que o enunciado pergunta.\n\n**Por que esta questão foi criada.** É uma questão de projeção, ao lado do TEOT 2021 (`pediatria-0845`), sobre a avulsão da espinha anteroinferior. Saber qual avulsão é a mais comum e qual é a mais problemática separa as alternativas.",
+      "correta": "Alternativa C. É o local associado ao maior problema de incapacidade e pseudartrose no resumo. A resposta não indica operar toda avulsão isquiática: desvio e persistência dos sintomas continuam determinantes.",
+      "incorretas": {
+        "A": "A espinha anterossuperior se relaciona ao sartório e é um local reconhecido de avulsão, mas não recebe o destaque de incapacidade/pseudartrose que o capítulo atribui à tuberosidade isquiática.",
+        "B": "A crista ilíaca pode sofrer avulsão ou apofisite, mas aparece como local menos frequente e não é o padrão mais problemático nos desfechos funcionais e cirúrgicos da pergunta.",
+        "D": "A anteroinferior é a mais frequente e pode ter dor crônica; isso não demonstra que seja a principal em incapacidade, pseudartrose e cirurgia. A opção usa a frequência como justificativa para outro desfecho, cujo destaque é isquiático."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Avulsões (tipo I)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Avulsões (tipo I)"
+        ],
+        "blocos": [
+          "avulsoes-tipo-i-06300995",
+          "avulsoes-tipo-i-ba5cd877",
+          "avulsoes-tipo-i-cf35bcfc"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "e1b4b490163b394fcb89ed1efb88c1fdfea94fc57f527ae83d71384120c2802e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1171": {
+    "questaoSha256": "1f6a979825197c80610e5848b78ee3afbfa9bcbd80ab2f55406bb9e114cb2585",
+    "comentarioAnteriorSha256": "697d23a8bb8daffbee5dab6530521667734c41fe0a04e7820ac32d6295b30a11",
+    "comentario": {
+      "conceito": "Na lesão da cartilagem **trirradiada**, o padrão **Salter-Harris V por esmagamento**, com **ponte medial e fechamento prematuro**, tem o pior prognóstico de crescimento no esquema de Bucholz. A alternativa D reúne esses elementos (Rockwood and Wilkins, 10ª edição, capítulo 23, acetábulo).\n\nA trirradiada é a região de encontro entre ílio, ísquio e púbis e participa do desenvolvimento acetabular. Uma ponte altera esse crescimento; não é apenas um traço articular que precisa consolidar. O resumo distingue esse esmagamento dos padrões Salter-Harris I e II, descritos com bom prognóstico.\n\nA **idade** modifica as consequências: abaixo de 10 anos, o risco de displasia é alto, e a fonte discute ressecar a ponte nessa faixa. Portanto, não se deve usar “qualquer lesão depois dos 12 anos” como definição do pior padrão. A morfologia e o potencial de crescimento precisam ser considerados juntos.\n\n**Na prova:** Bucholz V, ponte medial e parada precoce formam o conjunto de risco. O seguimento deve olhar para o desenvolvimento do acetábulo, não só para a consolidação inicial.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0613`), que pergunta a idade de fusão da trirradiada. O capítulo traz a classificação e o prognóstico das lesões dela.",
+      "correta": "Alternativa D. O resumo liga o esmagamento tipo V à ponte medial e ao fechamento prematuro, em contraste com o melhor prognóstico dos tipos I e II. O efeito da parada sobre o acetábulo é a razão da importância desse padrão.",
+      "incorretas": {
+        "A": "O Salter-Harris I pertence ao grupo com bom prognóstico no esquema apresentado, não ao esmagamento tipo V com ponte medial. Escolher uma lesão por cisalhamento como a pior troca o mecanismo e o comportamento de crescimento descritos.",
+        "B": "O Salter-Harris II também é colocado entre os padrões de bom prognóstico. A presença de fragmento metafisário não o torna equivalente ao esmagamento da cartilagem com ponte e fechamento precoce.",
+        "C": "A fonte destaca maior risco de displasia abaixo de 10 anos. Idade acima de 12 anos, isoladamente e para qualquer lesão, não substitui a classificação morfológica de pior prognóstico solicitada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Acetábulo; A pelve da criança."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Acetábulo",
+          "A pelve da criança"
+        ],
+        "blocos": [
+          "acetabulo-b66406dd",
+          "a-pelve-da-crianca-270b4d6d"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "c631d2f3cc3b9b611da1833a00c81becbe4e3d7bf1f48eedcbc4d84ab5e95a1b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1172": {
+    "questaoSha256": "6623469db95998007d9520ec52c2f75aeafeae9c43523205be2b9aea717b554e",
+    "comentarioAnteriorSha256": "ad4545bad51b5eb190f5a0d4f479490ace08355b15e012172e8f746d769fbf0e",
+    "comentario": {
+      "conceito": "A displasia após **fechamento prematuro da trirradiada** apresenta **lateralização do quadril e retroversão acetabular**, e costuma exigir **osteotomia de redirecionamento completa**. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 23, acetábulo).\n\nO problema nasce de uma alteração no **crescimento do acetábulo** após o trauma. Uma ponte e a parada da cartilagem podem modificar a orientação e a cobertura articular. Por isso, o capítulo diferencia esse padrão da displasia do desenvolvimento: não basta aplicar um tratamento conhecido de outra doença apenas porque ambas recebem o nome de displasia.\n\nO resumo associa alto risco de displasia às lesões da trirradiada em crianças abaixo de 10 anos e discute ressecção da ponte nessa faixa. Quando a deformidade acetabular está estabelecida, a necessidade habitual de redirecionamento mostra que não se trata de presumir correção espontânea de toda alteração com o crescimento.\n\n**Na prova:** manter unidos origem pós-traumática, lateralização e retroversão. A morfologia final do acetábulo determina a estratégia, em vez de atribuir o problema exclusivamente ao tamanho da cabeça femoral.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra muito a displasia do desenvolvimento do quadril; a pós-traumática tem características próprias que confundem.",
+      "correta": "Alternativa A. Descreve a orientação acetabular e a lateralização próprias do padrão pós-traumático do resumo, junto da correção habitual por redirecionamento completo. A cirurgia é apresentada como necessidade frequente, sem afirmar que todo paciente receberá o mesmo procedimento.",
+      "incorretas": {
+        "B": "A opção começa com anteversão aumentada, enquanto o resumo descreve retroversão. Também substitui o redirecionamento ósseo geralmente necessário por um tratamento de outro contexto, sem abordar a deformidade pós-traumática descrita.",
+        "C": "O problema central apresentado é a alteração do acetábulo após a parada da trirradiada. Afirmar ausência de alteração acetabular elimina justamente a lateralização e a retroversão que distinguem esse padrão na fonte.",
+        "D": "O resumo aponta necessidade habitual de osteotomia de redirecionamento completa, o que não sustenta prometer correção espontânea na maioria. Crescimento restante não significa que uma deformidade produzida por parada da cartilagem se corrigirá sozinha."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Acetábulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Acetábulo"
+        ],
+        "blocos": [
+          "acetabulo-b66406dd"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "726bade4ebc82e751688d7fc4972afe623fedc44a199279b1051c594039228c5"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
