@@ -1,0 +1,116 @@
+{
+  "mao-2338": {
+    "questaoSha256": "f45930cf800ce958155cb59f9b712a7f8ee384c622152fe7f763aedb62273580",
+    "comentarioAnteriorSha256": "19f143739b9c6241d9150a7a4460038c970aab4de0b6753d79f572746392addc",
+    "comentario": {
+      "conceito": "A ruptura **completa do ligamento colateral ulnar da metacarpofalângica do polegar** costuma receber **reparo cirúrgico**, alternativa D. O resumo distingue essa lesão das entorses e rupturas parciais,que podem cicatrizar com imobilização (Rockwood adultos,10ª edição,capítulo45,exame e tratamento do LCU).\n\nO LCU resiste ao desvio radial do polegar na pinça e na preensão. Uma ruptura completa retira essa contenção,e a persistência de instabilidade pode comprometer essas funções. No exame,o grauIII corresponde a frouxidão importante **sem ponto final firme**; o grauII ainda tem um ponto final firme,compatível com ruptura parcial. Dor isolada não basta para chamar uma lesão de completa.\n\nHá ainda a possibilidade de **Stener**: o coto do ligamento fica superficial à aponeurose do adutor,que se interpõe entre ele e o osso e impede a cicatrização. Não se pode concluir que toda ruptura completa tem Stener,nem que o exame clínico isolado prove a interposição. O resumo recomenda cirurgia habitualmente na completa e ressalva que quem optar por tratamento fechado precisa antes excluir Stener com imagem apropriada.\n\nO reparo procura restituir a inserção e a tensão do ligamento; a fonte descreve reinserção com âncoras ou sutura conforme o padrão encontrado,seguida de proteção e reabilitação. **Na prova:** completa não é sinônimo de entorse leve. A seção de tratamento separa grausI/II da ruptura completa,sem prometer retorno esportivo imediato apenas com uma órtese.\n\n**Por que esta questão foi criada.** Inspirada na questão 6 do SIMÃO 2024, que cobrou o tratamento da lesão completa do colateral ulnar da metacarpofalângica do polegar.",
+      "correta": "D. O reparo cirúrgico é a conduta habitualmente recomendada para a ruptura completa descrita. Ele restitui a contenção do desvio radial e permite tratar uma eventual interposição do adutor. O diagnóstico de ruptura completa não prova Stener,mas justifica investigá-la e muda a conduta em relação à lesão parcial.",
+      "incorretas": {
+        "A": "Imobilização é uma opção descrita para grausI eII,que preservam continuidade ou ponto final firme. Na ruptura completa,o resumo favorece cirurgia; um tratamento fechado selecionado exigiria ao menos excluirStener. A alternativa propõe o gesso como rotina sem abordar essa diferença decisiva.",
+        "B": "Uma órtese pode proteger o polegar durante o tratamento,mas não restitui por si a continuidade e a inserção de um ligamento completamente roto,nem remove interposição do adutor. Usá-la apenas para permitir retorno rápido deixa de tratar o problema estrutural apresentado.",
+        "C": "Repouso e analgesia podem aliviar sintomas,mas não estabilizam a metacarpofalângica com ruptura completa. A fonte indica proteção e tratamento dirigido à lesão ligamentar; abandonar a estabilização e o reparo recomendado não corresponde a esse manejo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Polegar: ligamento colateral ulnar e lesão de Stener."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Polegar: ligamento colateral ulnar e lesão de Stener"
+        ],
+        "blocos": [
+          "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+          "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+          "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+          "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "13b4ca36eed30d92dfcc74defcbe5cc765cda24a3ea9d098876adf1d5eef7fc6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2412": {
+    "questaoSha256": "8dc1633abe29902801e1c2155a2b5030d44f94f9b407e33e5a4ed32bd316657e",
+    "comentarioAnteriorSha256": "47b6337cd268ff02eece7922af1758630a4594abfbe33a3dede52f7479b76995",
+    "comentario": {
+      "conceito": "A angulação de **ápice dorsal** do metacarpo pode produzir **pseudogarra**,alternativa C. A deformidade não nasce obrigatoriamente de lesão nervosa: a cabeça metacarpiana afunda para volar,e o dedo tenta compensar o desalinhamento com **hiperextensão da MCF e flexão da IFP** ao estender (Rockwood adultos,10ª edição,capítulo45,pseudogarra e manobra deJahss).\n\nEsse mecanismo explica por que medir apenas o ângulo na radiografia não basta. Dois dedos com angulações parecidas podem apresentar repercussão funcional diferente; é preciso examinar a extensão ativa,a rotação e o cruzamento dos dedos. O resumo considera a pseudogarra uma indicação cirúrgica proporcional à angulação,em vez de aceitar qualquer deformidade apenas por estar no quinto metacarpo.\n\nNa redução deJahss,fletem-se MCF eIFP e usa-se a falange proximal como alavanca para empurrar a cabeça para dorsal. A flexão da MCF **tensiona os colaterais**,não os afrouxa. Já a posição de imobilização tem outra finalidade: o resumo recomenda a posição intrínseca plus,com MCF fletidas e interfalângicas em extensão. A posição usada para executar uma manobra não deve ser confundida com manter as duas articulações permanentemente a90°.\n\n**Na prova:** ápice dorsal → cabeça volar → MCF hiperestendida +IFP fletida. A necessidade de tratar a deformidade depende da função e da estabilidade,não de uma regra de correção tardia obrigatória de toda consolidação do colo do quinto. As seçõesPseudogarra,Jahss e imobilização explicam as três situações.\n\n**Por que esta questão foi criada.** Inspirada na questão 43 do SIMÃO 2022, que cobrou afirmações sobre o tratamento das fraturas dos metacarpos.",
+      "correta": "C. A angulação dorsal modifica a posição da cabeça e a mecânica extensora. A compensação por hiperextensão daMCF e flexão daIFP constitui a pseudogarra descrita no resumo e pode indicar cirurgia quando compromete o resultado funcional.",
+      "incorretas": {
+        "A": "Na flexão daMCF,os colaterais ficam tensos e fazem a falange proximal funcionar como alavanca na manobra deJahss. Dizer que a flexão os afrouxa inverte justamente a explicação mecânica da redução; a fonte não atribui seu efeito a contrair os intrínsecos.",
+        "B": "O resumo descreve tolerância de angulação no quinto e indicações baseadas em rotação,encurtamento e repercussão funcional. Isso não sustenta uma necessidade habitual de corrigir tardiamente toda consolidação viciosa do colo do quinto. A pseudogarra sintomática e a rotação exigem atenção específica.",
+        "D": "A flexão deMCF eIFP permite executar a redução deJahss,mas a imobilização recomendada no resumo é intrínseca plus,com interfalângicas em extensão. A alternativa transforma uma posição de manobra numa posição de manutenção com ambas as articulações a90°,contrariando essa distinção."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Metacarpos: tolerância de desvio, colo do quinto e fixação; O que vale para a mão inteira."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Metacarpos: tolerância de desvio, colo do quinto e fixação",
+          "O que vale para a mão inteira"
+        ],
+        "blocos": [
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+          "o-que-vale-para-a-mao-inteira-bbc85ceb"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "b5d8fd4777c7d2bdfafa0d97bcc0d547553c8f71bba8a85b470bda5cfff0a961"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2442": {
+    "questaoSha256": "b263d8f7164acba82e38ef64f41836ec8a0dc5dad548db57e4819b424a96ec3c",
+    "comentarioAnteriorSha256": "f5fbab1bf2aa54b9746d1ce5a39466f90fe3a86de2c727c2bbd950630d40dc2a",
+    "comentario": {
+      "conceito": "O gabarito registrado é **A: nenhuma angulação**,em uma pergunta expressamente atribuída ao Green. O resumo consultado é de **outro livro**,Rockwood adultos,10ª edição,capítulo45,e informa **até10° de angulação diafisária para indicador e médio**. A letra foi preservada,mas os dois critérios não devem ser apresentados como equivalentes. A divergência está sinalizada em alerta.\n\nOs metacarpos centrais têm menos capacidade de compensar uma angulação do que os ulnares. A explicação do resumo está na mobilidade da **carpometacarpal**: cerca de5° no indicador e no médio,contra25–30° no mínimo. Isso ajuda a compreender a tolerância pequena dos raios radiais,mas não permite trocar o limite publicado por qualquer outro número.\n\nÉ preciso também separar **diáfise de colo** e **angulação de rotação**. Os limites maiores do quarto ou quinto metacarpos não se transferem à diáfise do segundo e terceiro; a rotação e o cruzamento digital exigem exame próprio e não são corrigidos por se enquadrar num limite angular.\n\n**Na prova:** esta questão registraA; a tabela do resumoRockwood traz10°,valor ausente das opções. Não atribuir aoGreen uma leitura que não foi feita nem usar15°,20°ou30° para aproximar uma resposta. A seção de tolerância metacarpiana explica o critério da fonte efetivamente consultada.\n\n**Por que esta questão foi criada.** Inspirada na questão 78 do SIMÃO 2022, que perguntou quanta angulação toleram as fraturas diafisárias do segundo e do terceiro metacarpos.",
+      "correta": "A é a resposta registrada e permanece intacta. A afirmação de que qualquer angulação exige redução pertence ao enunciado atribuído aoGreen; ela não é o limite da tabela do resumoRockwood,que admite até10° nas diáfises do indicador e médio. O comentário separa os critérios em vez de ensinar tolerância zero como se fosse o que a fonte consultada diz.",
+      "incorretas": {
+        "B": "15° excede o limite de10° indicado no resumo para a diáfise do segundo e terceiro metacarpos. É uma variável diferente dos limites de outros raios ou do colo,e não resolve a divergência entre o gabaritoA e a tabela consultada.",
+        "C": "20° também ultrapassa o limite diafisário dos metacarpos radiais apresentado na fonte. A menor mobilidade de suasCMC explica a tolerância menor; não há regra de20° para esses dois raios no resumo.",
+        "D": "30° é ainda maior que o limite de10° da fonte para indicador e médio. A maior compensação dos raios ulnares não deve ser aplicada aos centrais,nem uma tolerância de outro segmento do metacarpo transferida para a diáfise."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Metacarpos: tolerância de desvio, colo do quinto e fixação."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito registrado é A (nenhuma angulação),em pergunta atribuída aoGreen. O resumo consultadoRockwood10cap45 admite até10° na diáfise do indicador e médio,valor ausente das opções. Gabarito preservado;nenhuma leitura primária doGreen foi declarada e os dois critérios não foram equiparados."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+        ],
+        "blocos": [
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "e846521301e8546458c6e8522ecff9750df1b1c2e7dc43ef0181094fdc7b52b9"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
