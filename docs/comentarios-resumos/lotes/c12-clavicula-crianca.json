@@ -1,0 +1,262 @@
+{
+ "pediatria-0685": {
+  "questaoSha256": "083e5961d9fdf405e8596132ed8f28f070c4609b7d83aaacd3dd0e66927f9101",
+  "comentarioAnteriorSha256": "35976fa7541faecda151152450137be9e6dbc95c79440966fd1daa4246349e00",
+  "comentario": {
+   "conceito": "A clavícula é um dos ossos que mais quebram na criança, e quase sempre no mesmo lugar: o **terço médio**.\n\n**Por que o meio.** As duas pontas da clavícula estão presas por ligamentos fortes: a medial pelo costoclavicular, a lateral pelo conoide e pelo trapezoide. Quando a força chega ao ombro, as pontas ficam ancoradas e a energia se concentra no meio, a parte mais fina e sem reforço ligamentar.\n\n**Os números no Rockwood and Wilkins (10ª ed., cap. 20, de Benton E. Heyworth).**\n- A clavícula responde por **5% a 15%** das fraturas da criança.\n- **Terço médio: até 80%** das fraturas da clavícula.\n- Terço lateral: **10% a 30%**, o segundo lugar.\n- Terço medial: o restante, raro.\n\n**O que acompanha a frequência.** O terço médio remodela muito: Pennock mostrou remodelação completa ou quase em 85% abaixo de 14 anos. O tratamento padrão é não operatório, mesmo nas desviadas.\n\n**Na prova:** terço médio = **até 80%** das fraturas da clavícula da criança (a banca usou 76% a 85%).\n\nO resumo de clavícula e escápula da criança traz os números na seção de epidemiologia.",
+   "correta": "**D: 76% a 85%.** É a faixa compatível com os até 80% de fraturas do terço médio no capítulo 20 do Rockwood and Wilkins.",
+   "incorretas": {
+    "A": "**10% a 21% fica perto da faixa do terço lateral** (10% a 30%), não do médio.",
+    "B": "**25% a 34% ainda é a faixa do terço lateral no máximo.** O terço médio domina com folga.",
+    "C": "**46% a 58% subestima o terço médio**, que chega a 80% das fraturas da clavícula."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: epidemiologia, mecanismos e recém-nascido."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+    "secoes": [
+     "Clavícula: epidemiologia, mecanismos e recém-nascido"
+    ],
+    "blocos": [
+     "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d",
+     "clavicula-epidemiologia-mecanismos-e-recem-nasci-90905e86"
+    ],
+    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+    "trechosSha256": "c65cd365a3b4d3a7b2e1ebf1602de9a1de0e70dc3d90c8298cbc294ca68fb7af"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0706": {
+  "questaoSha256": "28a307e8cf26678d4950ca6d0d6e3a649507f3493ca637830a911a9977267fca",
+  "comentarioAnteriorSha256": "d0dc14f6cf155cd01afc361e26b4c8b5526b7a32a545ef4b58043c51a2e91ef0",
+  "comentario": {
+   "conceito": "A fratura da clavícula é uma das lesões mais comuns do parto: o Rockwood and Wilkins (10ª ed., cap. 20) dá incidência de até 4,4%, ligada a bebê grande e parto difícil, e ela acontece até na cesárea.\n\n**Qual ombro quebra.** Na passagem pelo canal, o **ombro anterior** fica apoiado contra o **púbis** materno e é ele que sofre a compressão. Qual dos ombros fica na frente depende da posição do bebê.\n\n**A apresentação mais comum.** A apresentação **occipito-esquerda-anterior** é a mais frequente: o occipital do bebê fica à esquerda e para a frente da pelve materna. Nessa posição, o ombro que fica anterior, contra o púbis, é o **direito**. Por isso o capítulo diz que a fratura de parto acomete o ombro anterior, **em geral o direito**.\n\n**O que fazer.** O recém-nascido mexe menos o braço, chora e tem o Moro diminuído. Consolida em **1 a 3 semanas**, com imobilização simples. É preciso reavaliar com **3 a 4 semanas** para separar a pseudoparalisia da dor de uma paralisia braquial de Erb.\n\n**Na prova:** fratura de clavícula no parto = lado **direito**, apresentação **occipito-esquerda-anterior**.\n\nO resumo de clavícula e escápula da criança explica o mecanismo na seção de recém-nascido.",
+   "correta": "**B: direito, na apresentação occipito-esquerda-anterior.** Nessa apresentação, a mais comum, o ombro direito fica anterior, contra o púbis materno.",
+   "incorretas": {
+    "A": "**O lado está certo, mas a apresentação não.** A occipito-direita-posterior não é a mais comum nem deixa o ombro direito contra o púbis.",
+    "C": "**Erra os dois.** O lado esquerdo e a apresentação occipito-direita-posterior não correspondem ao mecanismo descrito no capítulo.",
+    "D": "**A apresentação está certa, mas nela o ombro anterior é o direito, não o esquerdo.**"
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: epidemiologia, mecanismos e recém-nascido."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+    "secoes": [
+     "Clavícula: epidemiologia, mecanismos e recém-nascido"
+    ],
+    "blocos": [
+     "clavicula-epidemiologia-mecanismos-e-recem-nasci-5ea9db75",
+     "clavicula-epidemiologia-mecanismos-e-recem-nasci-a0e9c19c",
+     "clavicula-epidemiologia-mecanismos-e-recem-nasci-90905e86"
+    ],
+    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+    "trechosSha256": "e8127b896d6d4dc879f2ddf621ed56b16fb877abad5895f88565d691bc6ec547"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0657": {
+  "questaoSha256": "535088fa14ab876b445f571ebba9ef145e5c2f125686a98632c02c9de049a659",
+  "comentarioAnteriorSha256": "2c48268fb9a4d433051d78825bce121815039df72defba8bec1800c0d7513c7a",
+  "comentario": {
+   "conceito": "A pergunta cita um estudo brasileiro (Guarniero e colaboradores) e pede a fatia da clavícula entre todas as fraturas de crianças e adolescentes.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 20) diz.** A clavícula responde por **5% a 15%** das fraturas pediátricas. O número de Guarniero, em torno de **11%**, cai bem dentro dessa faixa.\n\n**Por que tanta fratura.** A clavícula é o único elo ósseo entre o membro superior e o tronco. Toda queda sobre o ombro passa por ela. No escolar, o mecanismo típico é a **queda com compressão na face lateral do ombro**; na criança pequena, quedas de altura e, abaixo de 4 anos, maus-tratos; no adolescente, o esporte.\n\n**Onde quebra.** O terço médio responde por até 80%, porque as pontas estão ancoradas por ligamentos e a força se concentra no meio.\n\n**Uma curiosidade do capítulo.** A clavícula começa a ossificar muito cedo, com 5 semanas e meia de gestação, por ossificação intramembranosa, e é o último osso a terminar a ossificação, por volta dos 25 anos.\n\n**Na prova:** clavícula = **5% a 15%** das fraturas da criança; Guarniero, cerca de **11%**.\n\nO resumo de clavícula e escápula da criança traz os números na seção de epidemiologia.",
+   "correta": "**B: 11.** O valor de Guarniero está dentro da faixa de 5% a 15% que o capítulo 20 do Rockwood and Wilkins dá para a clavícula entre as fraturas da criança.",
+   "incorretas": {
+    "A": "**3% fica abaixo da faixa de 5% a 15%** descrita no capítulo.",
+    "C": "**19% passa do limite superior de 15%.**",
+    "D": "**27% está muito acima da faixa.** Esse percentual se aproxima mais da fatia de fraturas do terço lateral dentro da clavícula (10% a 30%), não da clavícula entre todas as fraturas."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: epidemiologia, mecanismos e recém-nascido."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+    "secoes": [
+     "Clavícula: epidemiologia, mecanismos e recém-nascido"
+    ],
+    "blocos": [
+     "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d",
+     "clavicula-epidemiologia-mecanismos-e-recem-nasci-90905e86"
+    ],
+    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+    "trechosSha256": "c65cd365a3b4d3a7b2e1ebf1602de9a1de0e70dc3d90c8298cbc294ca68fb7af"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0633": {
+  "questaoSha256": "5fb374ebd15a1acbe16e46ef79daf2f7fded1a8149ea3f51f77d3190a341111c",
+  "comentarioAnteriorSha256": "f055729af66ac06df9cf43461f08ba8937f7ae1f6423c44ff3043e8b8629ffe8",
+  "comentario": {
+   "conceito": "Na criança, a ponta lateral da clavícula vive dentro de um **tubo de periósteo** espesso, e os ligamentos coracoclaviculares (conoide e trapezoide) se prendem a esse periósteo, na face inferior.\n\n**O que acontece na fratura desviada.** O Rockwood and Wilkins (10ª ed., cap. 20) descreve que o osso **sai do tubo de periósteo** rasgando o **periósteo superior**. O periósteo inferior continua inteiro, e os **coracoclaviculares continuam presos a ele**. Por isso, ao contrário do adulto, a lesão desses ligamentos é rara na criança.\n\n**A ligação com a classificação de Rockwood.** Na criança, o osso reproduz os tipos da lesão acromioclavicular saindo do periósteo; o que parece uma luxação acromioclavicular de alto grau muitas vezes é uma **pseudoluxação**, a separação epifisária do terço lateral. No tipo V, a clavícula sobe mais de 100%, mas a dobradiça de periósteo inferior com os ligamentos fica no lugar, e a ponta escapa por cima.\n\n**A consequência prática.** Como os ligamentos estão presos ao periósteo, a redução e a **sutura do periósteo** bastam nos menores; o tubo periosteal refaz o osso.\n\n**Na prova:** fratura lateral desviada da criança = rasga o **periósteo superior**; coracoclaviculares intactos.\n\nO resumo de clavícula e escápula da criança explica isso na seção do terço lateral.",
+   "correta": "**B: periósteo superior.** O osso sai do tubo periosteal por cima, e os ligamentos coracoclaviculares continuam presos ao periósteo inferior.",
+   "incorretas": {
+    "A": "**O periósteo inferior é justamente o que fica inteiro**, com os coracoclaviculares presos a ele, funcionando como dobradiça.",
+    "C": "**O conoide raramente se rompe na criança.** Ele continua preso ao periósteo inferior; a ruptura ligamentar é o padrão do adulto.",
+    "D": "**O trapezoide também fica preso ao periósteo inferior.** O capítulo diz que a lesão dos coracoclaviculares é rara na criança."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral; Acromioclavicular."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+    "secoes": [
+     "Clavícula: terço lateral",
+     "Acromioclavicular"
+    ],
+    "blocos": [
+     "clavicula-terco-lateral-be6075a5",
+     "clavicula-terco-lateral-ee4be395",
+     "clavicula-terco-lateral-d808c290",
+     "clavicula-terco-lateral-5f79a99d",
+     "acromioclavicular-71a997a6"
+    ],
+    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+    "trechosSha256": "2482fa8ad6b9eeadb32695f5d18864dd349e921ded90b6a70f75e81f4a519fd5"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0550": {
+  "questaoSha256": "4e5f905377d38cc4143f2840abc3b70981af2c23575fe95b5969b3d7eb10a67d",
+  "comentarioAnteriorSha256": "d023299ad8a615062644f56d42c3cae876d3ae03f8fb75c4287228156365c535",
+  "comentario": {
+   "alerta": "Gabarito oficial A (exposição) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 20, diz que a indicação cirúrgica mais comum na fratura do terço lateral da criança é o desvio posterior significativo, com descontinuidade ou encarceramento no trapézio (alternativa C). A exposição é indicação absoluta, mas não a mais frequente.",
+   "conceito": "Quase todas as fraturas do terço lateral da clavícula na criança são tratadas sem cirurgia: tipoia por 6 semanas e retorno ao contato com 2 a 3 meses. A questão pergunta qual é a indicação cirúrgica **mais frequente**.\n\n**As indicações no Rockwood and Wilkins (10ª ed., cap. 20).**\n- **Absolutas:** fratura exposta, pele comprometida, fratura intra-articular desviada, lesão neurovascular.\n- **A mais comum na criança:** o **desvio posterior importante**, com descontinuidade ou com o fragmento **encarcerado no trapézio**.\n\n**Como se pega o desvio posterior.** Palpando **atrás da acromioclavicular** e pedindo a incidência **axilar** (e tomografia se ela não bastar). No AP, o desvio posterior passa despercebido.\n\n**A divergência.** A banca deu a **exposição** como resposta. Indicação absoluta é diferente de indicação mais frequente: a fratura exposta é rara, e o capítulo aponta o desvio posterior como o motivo mais comum de operar. Mantemos o gabarito oficial e registramos a diferença.\n\n**Técnica.** Sutura do periósteo nos menores, placa anatômica nos maiores, placa em gancho como último recurso; evitar fios lisos, que migram.\n\n**Na prova:** a banca deu **exposição**; o capítulo, **desvio posterior**.\n\nO resumo de clavícula e escápula da criança trata disso na seção do terço lateral.",
+   "correta": "**A: a exposição da fratura (gabarito oficial).** É indicação absoluta no capítulo, mas a indicação mais comum na criança, segundo o Rockwood and Wilkins, é o desvio posterior significativo; veja o alerta.",
+   "incorretas": {
+    "B": "**O comprometimento vascular é indicação absoluta, mas raro.** Não é o motivo mais frequente de operar o terço lateral.",
+    "C": "**É a resposta do capítulo:** o desvio posterior importante, com descontinuidade ou fragmento no trapézio, é a indicação cirúrgica mais comum na criança. A banca não aceitou esta alternativa.",
+    "D": "**O comprometimento neurológico também é absoluto e raro.** Não é a indicação mais frequente."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+    "secoes": [
+     "Clavícula: terço lateral"
+    ],
+    "blocos": [
+     "clavicula-terco-lateral-d808c290",
+     "clavicula-terco-lateral-5f79a99d",
+     "clavicula-terco-lateral-be6075a5"
+    ],
+    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+    "trechosSha256": "48ceb45a2ab534b1f48d12ea77d95586eae963c801aedbd1b1e19b6cdf5902bc"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0822": {
+  "questaoSha256": "d6e5defddf323bcff434d1ecadabcc1011cc772f5b94b1b8e3bb08a931246d87",
+  "comentarioAnteriorSha256": "9d90863e147df2bfeb83f8de0d70f1044c12aa82c5a72c8d613ca3da92a48975",
+  "comentario": {
+   "conceito": "No adulto, a fratura do terço lateral da clavícula com desvio costuma romper os ligamentos coracoclaviculares, e o fragmento medial sobe. Na criança, a anatomia muda o desfecho.\n\n**O tubo de periósteo.** A ponta lateral da clavícula da criança fica dentro de um periósteo espesso, e o conoide e o trapezoide se inserem nesse periósteo, pela face inferior. Na fratura, o Rockwood and Wilkins (10ª ed., cap. 20) descreve o osso **saindo do tubo** pelo **periósteo superior**, enquanto os **coracoclaviculares continuam presos ao periósteo inferior**. O capítulo conclui que a **lesão desses ligamentos é rara** na criança.\n\n**Por que isso importa.** A estabilidade vertical se mantém pela dobradiça de periósteo e ligamentos. Quase todas as fraturas vão sem cirurgia, e, quando se opera, a sutura do periósteo basta nos menores. A pseudartrose do tipo II, alta no adulto (25% a 44%), é rara na criança.\n\n**Sem gabarito oficial no acervo.** Pela bibliografia, a afirmação está certa.\n\n**Na prova:** fratura lateral da clavícula da criança = coracoclaviculares intactos, presos ao periósteo inferior.\n\nO resumo de clavícula e escápula da criança explica o mecanismo na seção do terço lateral.",
+   "correta": "**A: certo.** O capítulo 20 do Rockwood and Wilkins diz que a lesão dos coracoclaviculares é rara na criança, porque eles continuam presos ao periósteo inferior enquanto o osso sai pelo superior.",
+   "incorretas": {
+    "B": "**Considerar a afirmação errada seria aplicar o padrão do adulto à criança.** No adulto os coracoclaviculares se rompem; na criança, ficam presos ao periósteo inferior."
+   },
+   "conferido": false,
+   "provavel": "A",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+    "secoes": [
+     "Clavícula: terço lateral"
+    ],
+    "blocos": [
+     "clavicula-terco-lateral-be6075a5",
+     "clavicula-terco-lateral-5f79a99d",
+     "clavicula-terco-lateral-ee4be395"
+    ],
+    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+    "trechosSha256": "79d11ca994d82f7d9bcad61995a90a876900531c4f841c0c4f7885f6f78ed8d8"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0533": {
+  "questaoSha256": "20e8a2c1a13dad2e6bf420deb74d4bc0b04b642c814ba66d56036892a32f8495",
+  "comentarioAnteriorSha256": "4b3a2c49d4e1881084bdec29f300d8fb1296ad13e97cfa25943a6135d594c5b3",
+  "comentario": {
+   "conceito": "A luxação esternoclavicular **posterior** é rara, mas perigosa: a ponta medial da clavícula vai para trás do esterno, junto da traqueia, do esôfago e dos grandes vasos. O Rockwood and Wilkins (10ª ed., cap. 20) relata disfagia ou dispneia em até 30%.\n\n**Uma nota sobre a criança.** A epífise medial da clavícula só ossifica aos 18 a 20 anos e fecha aos 22 a 25; luxação e fratura fisária têm incidência quase igual. A tomografia é o exame de escolha.\n\n**A manobra de redução fechada.** Feita **no centro cirúrgico**, com **cirurgião vascular de prontidão**:\n- paciente em **decúbito dorsal (supino)**;\n- **coxim espesso entre as escápulas**, que deixa os ombros caírem para trás e abre o espaço da articulação;\n- braço **abduzido em linha com a clavícula**, com **tração**;\n- depois, **extensão**, que alavanca a ponta medial para a frente;\n- se falhar, uma pinça de campo puxa a clavícula.\n\nO sucesso cai depois de **24 a 48 horas**, e com sintomas mediastinais a redução é aberta. O autor do capítulo opera todas as posteriores.\n\n**Na prova:** esternoclavicular posterior = supino, **coxim entre as escápulas**, **tração** do braço abduzido.\n\nO resumo de clavícula e escápula da criança descreve a manobra na seção esternoclavicular.",
+   "correta": "**D: entre as escápulas, associada à tração do membro superior do lado acometido.** É a manobra do capítulo: o coxim deixa os ombros caírem para trás e a tração em abdução alavanca a clavícula para a frente.",
+   "incorretas": {
+    "A": "**Coxim sob o ombro não abre o espaço esternoclavicular**, e a flexão do ombro não traciona a clavícula para a frente.",
+    "B": "**O coxim está certo, mas a flexão não.** O capítulo pede tração do braço abduzido e depois extensão.",
+    "C": "**A tração está certa, mas o coxim vai entre as escápulas**, não sob o ombro."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Esternoclavicular."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+    "secoes": [
+     "Esternoclavicular"
+    ],
+    "blocos": [
+     "esternoclavicular-e6a737f9",
+     "esternoclavicular-2bb38b19",
+     "esternoclavicular-b4e01956"
+    ],
+    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+    "trechosSha256": "67a033f7386d54db6c06d56125eeab0508e0736bd9b8bd7fc89b4a7ce3cb30e9"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}

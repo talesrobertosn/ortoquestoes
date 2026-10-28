@@ -1,0 +1,777 @@
+{
+ "pediatria-0515": {
+  "questaoSha256": "ea84a1a47f16f254413f5491ecae5de54c62203b02f87244fae9c2f13055301c",
+  "comentarioAnteriorSha256": "f3207505082ba1ddbfaad6f684a40072e93996c56b5ba8cbbc9e8d2fafb82774",
+  "comentario": {
+   "conceito": "Uma criança de 5 anos, um trauma de alta energia e um traço que passa **pela fise proximal** do fêmur, com a epífise **fora do acetábulo**. A pergunta é só de vocabulário, mas o vocabulário carrega o prognóstico.\n\n**A classificação de Delbet** organiza as fraturas do fêmur proximal da criança de dentro para fora, conforme o traço se afasta da cabeça. O Rockwood and Wilkins (10ª ed., cap. 24, de Paranjape e Upasani) traz:\n\n| Tipo | Onde passa o traço |\n|---|---|\n| **IA** | transepifisária (pela fise), **sem** luxação |\n| **IB** | transepifisária **com luxação** da cabeça |\n| II | transcervical, no meio do colo |\n| III | cervicotrocantérica (basocervical) |\n| IV | intertrocantérica, extracapsular |\n\n**Por que o subtipo importa.** Depois dos 4 anos, a cabeça femoral depende dos ramos retinaculares posterossuperiores da circunflexa femoral medial, que sobem colados ao colo; a fise bloqueia a irrigação vinda da metáfise. Quando a epífise sai do acetábulo, esses vasos se rompem: no IB, o capítulo fala em necrose **praticamente em 100%**, com fechamento da fise. O tipo I também é diferente da epifisiólise instável do adolescente: é trauma de alta energia na criança pequena, não trauma mínimo com pródromos.\n\n**Na prova:** transfisária + luxação da cabeça = **Delbet IB**, o pior prognóstico vascular da classificação.\n\nO resumo de fraturas do quadril da criança traz a tabela de Delbet com frequência e necrose de cada tipo.",
+   "correta": "**B: IB.** O traço atravessa a fise (tipo I) e a epífise está luxada (subtipo B). É o padrão de necrose quase certa no capítulo 24 do Rockwood and Wilkins.",
+   "incorretas": {
+    "A": "**IA é a transepifisária sem luxação.** O traço é o mesmo, mas a cabeça continua no acetábulo. O enunciado diz que a epífise luxou, o que muda o subtipo para B.",
+    "C": "**II é transcervical, no meio do colo, e não tem subtipo B na tabela do capítulo.** O traço do caso passa pela fise, não pelo colo.",
+    "D": "**III é cervicotrocantérica, na base do colo.** Fica longe da fise e não envolve luxação da cabeça; a letra A acrescentada não existe na classificação usada pelo capítulo.",
+    "E": "**IV é intertrocantérica, extracapsular, a de menor necrose.** É o oposto do caso: traço longe da cabeça e cabeça no lugar."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Classificação de DELBET; Anatomia e irrigação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Classificação de DELBET",
+     "Anatomia e irrigação"
+    ],
+    "blocos": [
+     "classificacao-de-delbet-e1115de7",
+     "classificacao-de-delbet-29878cdc",
+     "classificacao-de-delbet-8283998b",
+     "anatomia-e-irrigacao-be591f38"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0530": {
+  "questaoSha256": "aee724f31ac1b7fd4e547b5e1ba95f277dbd509849c8524d40fd7985dfa2998e",
+  "comentarioAnteriorSha256": "bdf3e264fd825363278d88e387c78261af4759f66800b064e2686400daa883eb",
+  "comentario": {
+   "conceito": "As fraturas do fêmur proximal são **menos de 1%** das fraturas da criança e quase sempre de **alta energia**; trauma mínimo sugere osso doente ou, no lactente, maus-tratos. Dentro desse grupo raro, a pergunta é qual tipo de Delbet aparece mais.\n\n**A frequência de cada tipo.** No Rockwood and Wilkins (10ª ed., cap. 24), o tipo **II, transcervical**, responde por **45% a 50%**: é o mais comum. O III, cervicotrocantérico, fica em cerca de 34%; o IV, intertrocantérico, em cerca de 12%; o I, transepifisário, em 8%.\n\n**O que acompanha a frequência.** O tipo II também é intracapsular e tem necrose alta (28% a 60%; 28% na metanálise de Moon e Mehlman). Por isso é o tipo mais cobrado: reúne o caso mais visto com uma complicação grave. A irrigação explica o risco: depois dos 4 anos a cabeça vive dos ramos retinaculares da circunflexa medial, que sobem pelo colo e são lesados por um traço transcervical desviado.\n\n**Na prova:** Delbet mais comum = **II**; maior necrose = **I** (IB quase 100%); menor necrose = **IV**.\n\nA tabela de Delbet, no resumo de fraturas do quadril da criança, traz as porcentagens lado a lado.",
+   "correta": "**B: II.** A fratura transcervical responde por 45% a 50% das fraturas do fêmur proximal da criança no capítulo 24 do Rockwood and Wilkins.",
+   "incorretas": {
+    "A": "**O tipo I é o menos frequente, cerca de 8%.** É o mais grave em necrose, sobretudo com luxação, mas não o mais comum.",
+    "C": "**O tipo III vem em segundo, com cerca de 34%.** Tem menos necrose que o II e mais tendência a varo quando mal tratado.",
+    "D": "**O tipo IV é intertrocantérico, cerca de 12%.** É o de menor necrose, não o mais frequente."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Classificação de DELBET; Anatomia e irrigação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Classificação de DELBET",
+     "Anatomia e irrigação"
+    ],
+    "blocos": [
+     "classificacao-de-delbet-e1115de7",
+     "classificacao-de-delbet-29878cdc",
+     "classificacao-de-delbet-8283998b",
+     "anatomia-e-irrigacao-be591f38"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0599": {
+  "questaoSha256": "2a2a0e7b45b3233b43e40a32ca67f127ef9f871fad385bf63629f054614b4947",
+  "comentarioAnteriorSha256": "00be0dfbd71489d6f818a0930fa920085f6c89ab90435152985ee1c1c6750f0b",
+  "comentario": {
+   "conceito": "Delbet e Colonna são os nomes da mesma classificação: Delbet descreveu os tipos e Colonna a popularizou. O Rockwood and Wilkins (10ª ed., cap. 24) a usa como **Delbet** para as fraturas do fêmur proximal da criança.\n\n**Os quatro tipos e quanto aparecem.**\n\n| Tipo | Traço | Frequência |\n|---|---|---|\n| I | transepifisário | 8% |\n| **II** | **transcervical** | **45% a 50%** |\n| III | cervicotrocantérico | cerca de 34% |\n| IV | intertrocantérico | cerca de 12% |\n\n**Por que o tipo II preocupa.** É intracapsular e corta o colo justamente onde sobem os ramos retinaculares da circunflexa femoral medial, que irrigam a cabeça depois dos 4 anos. A cápsula espessa também pode reter o hemartro e tamponar esses vasos. Daí a necrose alta, de 28% a 60%.\n\n**Na prova:** a fratura do colo mais frequente na criança é a **transcervical, Delbet II**.\n\nO resumo de fraturas do quadril da criança, na seção da classificação, mostra frequência e necrose por tipo.",
+   "correta": "**B: II.** A transcervical é a mais comum, com 45% a 50% dos casos no capítulo 24 do Rockwood and Wilkins.",
+   "incorretas": {
+    "A": "**Tipo I, transepifisário, é o mais raro (8%).** É lembrado pela necrose máxima, não pela frequência.",
+    "C": "**Tipo III, cervicotrocantérico, fica perto de 34%.** É o segundo mais comum.",
+    "D": "**Tipo IV, intertrocantérico, perto de 12%.** É o de prognóstico vascular mais favorável."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Classificação de DELBET; Anatomia e irrigação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Classificação de DELBET",
+     "Anatomia e irrigação"
+    ],
+    "blocos": [
+     "classificacao-de-delbet-e1115de7",
+     "classificacao-de-delbet-29878cdc",
+     "classificacao-de-delbet-8283998b",
+     "anatomia-e-irrigacao-be591f38"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0651": {
+  "questaoSha256": "50f275831c6fce74a0704e81aea527349c515654d1fb65e5f4ee66c46b576ea4",
+  "comentarioAnteriorSha256": "0b561a82cd3fff10321226f24a75f4636f07042c55aa23ffe9dabc31d78cf2c8",
+  "comentario": {
+   "conceito": "A necrose da cabeça femoral depois de uma fratura do fêmur proximal na criança depende de **quanto o traço se aproxima dos vasos que irrigam a cabeça**. Depois dos 4 anos, eles são os ramos retinaculares posterossuperiores da circunflexa femoral medial, que sobem pela face posterior e superior do colo até a epífise.\n\n**O gradiente da classificação de Delbet.** No Rockwood and Wilkins (10ª ed., cap. 24), a metanálise de Moon e Mehlman dá necrose de **38%, 28%, 18% e 5%** para os tipos I, II, III e IV. O tipo IV, **intertrocantérico e extracapsular**, fica abaixo da origem desses vasos no colo e longe da cabeça: por isso tem a menor taxa, cerca de 5%.\n\n**O preço do tipo IV é outro.** Os tipos III e IV, mais distais, tendem mais a **varo** quando mal tratados. A necrose também aumenta com o desvio e com a idade acima de 10 anos, em qualquer tipo.\n\n**Na prova:** menor necrose = **IV**; maior = **I**, e o IB, com luxação da cabeça, chega a quase 100%.\n\nA tabela de Delbet, no resumo de fraturas do quadril da criança, resume frequência e necrose de cada tipo.",
+   "correta": "**D: IV.** A intertrocantérica tem cerca de 5% de necrose, a menor da classificação, porque o traço é extracapsular e distante dos vasos retinaculares.",
+   "incorretas": {
+    "A": "**Tipo I é o de maior necrose.** Passa pela fise, junto da cabeça: 38% em média e quase 100% quando a epífise luxa.",
+    "B": "**Tipo II, transcervical, tem cerca de 28%.** Corta o colo onde sobem os retinaculares.",
+    "C": "**Tipo III, cervicotrocantérico, ainda tem cerca de 18%.** Menos que o II, mas bem acima dos 5% do IV."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Classificação de DELBET; Anatomia e irrigação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Classificação de DELBET",
+     "Anatomia e irrigação"
+    ],
+    "blocos": [
+     "classificacao-de-delbet-e1115de7",
+     "classificacao-de-delbet-29878cdc",
+     "classificacao-de-delbet-8283998b",
+     "anatomia-e-irrigacao-be591f38"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0858": {
+  "questaoSha256": "9bf61aafa33f915e4364aeb2db3ba0a3b9433cac8ef6ed068d60bce44101ca7e",
+  "comentarioAnteriorSha256": "94f48d8caeb005f6318c8237965d15167f23dcdbe81f266b99f599659d51b6b9",
+  "comentario": {
+   "conceito": "O caso descreve uma criança de 7 anos com fratura do fêmur proximal tratada com redução fechada, fixação percutânea e gesso. A pergunta não depende do tratamento: ela pede qual tipo de Delbet tem **menor risco de osteonecrose**.\n\n**A lógica vascular.** A partir dos 4 anos, a cabeça femoral depende dos ramos retinaculares posterossuperiores da circunflexa femoral medial, que sobem pelo colo; a fise já bloqueia a irrigação metafisária. Quanto mais proximal o traço, mais desses vasos ele ameaça.\n\n**Os números.** No Rockwood and Wilkins (10ª ed., cap. 24), a necrose média é de **38%, 28%, 18% e 5%** nos tipos I, II, III e IV. O **tipo IV, intertrocantérico**, é extracapsular e tem o menor risco. A classificação tem só quatro tipos; não existe tipo V.\n\n**Na prova:** Delbet IV, intertrocantérica, menor necrose (cerca de 5%), mas risco de varo se mal reduzida.\n\nNo resumo de fraturas do quadril da criança, a tabela de Delbet e o parágrafo da irrigação explicam esse gradiente.",
+   "correta": "**D: IV.** O traço intertrocantérico é extracapsular e fica abaixo dos vasos retinaculares do colo; a necrose média é de cerca de 5%.",
+   "incorretas": {
+    "A": "**Tipo I tem o maior risco.** A transepifisária fica colada à cabeça: 38% em média, e o IB, com luxação, quase 100%.",
+    "B": "**Tipo II, transcervical, tem cerca de 28%.** É intracapsular e corta o trajeto dos vasos.",
+    "C": "**Tipo III, cervicotrocantérico, tem cerca de 18%.** Ainda bem acima do IV.",
+    "E": "**Não há tipo V na classificação de Delbet.** O capítulo descreve quatro tipos, com o I subdividido em IA e IB."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Classificação de DELBET; Anatomia e irrigação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Classificação de DELBET",
+     "Anatomia e irrigação"
+    ],
+    "blocos": [
+     "classificacao-de-delbet-e1115de7",
+     "classificacao-de-delbet-29878cdc",
+     "classificacao-de-delbet-8283998b",
+     "anatomia-e-irrigacao-be591f38"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0920": {
+  "questaoSha256": "9f2528e00533fdae614e41e3c8448cb08317232ae09eadaf05f07ab06e9df451",
+  "comentarioAnteriorSha256": "df4f8c7ea0e54572fee21ef854ec9c55ea5a7aef80682522c8cc777ca4f32c30",
+  "comentario": {
+   "conceito": "A osteonecrose é a complicação mais grave e mais frequente das fraturas do quadril na criança, em torno de **30%** no geral. Ela segue um gradiente previsível pela classificação de Delbet.\n\n**Por que o tipo I lidera.** No tipo I, **transepifisário**, o traço passa pela própria fise, colado à cabeça. Os ramos retinaculares posterossuperiores da circunflexa femoral medial, única irrigação importante da cabeça depois dos 4 anos, são arrancados com facilidade. No Rockwood and Wilkins (10ª ed., cap. 24), a necrose do tipo I vai de **38% a 100%**, e o **IB**, com a cabeça luxada, chega a **praticamente 100%**, com fechamento da fise.\n\n**O resto da escada.** Tipo II, cerca de 28%; III, cerca de 18%; IV, cerca de 5%. Desvio e idade acima de 10 anos aumentam o risco em todos.\n\n**Na prova:** maior necrose = **Delbet I**; menor = **IV**; mais comum = **II**.\n\nO resumo de fraturas do quadril da criança, na tabela de Delbet, traz os três números juntos.",
+   "correta": "**A: I.** A transepifisária tem a maior necrose do grupo, 38% em média e quase 100% no IB, porque o traço está junto dos vasos que irrigam a cabeça.",
+   "incorretas": {
+    "B": "**Tipo II tem necrose alta, cerca de 28%, mas menor que o I.** É o mais frequente, o que costuma confundir.",
+    "C": "**Tipo III, cerca de 18%.** O traço já está na base do colo.",
+    "D": "**Tipo IV é o de menor necrose, cerca de 5%.** Extracapsular, longe da cabeça."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Classificação de DELBET; Anatomia e irrigação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Classificação de DELBET",
+     "Anatomia e irrigação"
+    ],
+    "blocos": [
+     "classificacao-de-delbet-e1115de7",
+     "classificacao-de-delbet-29878cdc",
+     "classificacao-de-delbet-8283998b",
+     "anatomia-e-irrigacao-be591f38"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0721": {
+  "questaoSha256": "1522a06d1e19bbf78c2eb47e5630a4ba3b139c188068009269092cab2b913454",
+  "comentarioAnteriorSha256": "ae6689a683d0963a7ec1cb62143e3fc4afd5fce57d59815517fc0103d9492390",
+  "comentario": {
+   "conceito": "Cada tipo de Delbet tem a sua complicação típica. Nos tipos proximais, o problema é a cabeça: necrose. Nos distais, o problema é o **alinhamento**.\n\n**O tipo IV.** É a fratura **intertrocantérica**, extracapsular, a de menor necrose (cerca de 5% no Rockwood and Wilkins, 10ª ed., cap. 24). Em compensação, o capítulo registra que os tipos III e IV têm **mais varo** quando mal tratados e relata **coxa vara** no tipo IV. O traço na região trocantérica, sob a força dos músculos do quadril, tende a fechar o ângulo cervicodiafisário se a redução e a fixação não o seguram.\n\n**Coxa vara no geral.** Aparece em 20% a 30% das fraturas do quadril da criança, menos com fixação. Remodela abaixo de **8 anos** ou com ângulo acima de **110 graus**; fora disso, osteotomia valgizante subtrocantérica.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a deformidade em varo, sustentada pelo capítulo.\n\n**Na prova:** tipo IV = pouca necrose, mais **varo**; tipo I = necrose.\n\nO resumo de fraturas do quadril da criança trata do varo na seção de coxa vara, fise e pseudartrose.",
+   "correta": "**C: deformidade em varo.** O capítulo associa os tipos III e IV a mais varo quando mal tratados e relata coxa vara no tipo IV, cuja necrose é a menor da classificação.",
+   "incorretas": {
+    "A": "**Pseudartrose é complicação dos tipos II e III (7%)**, ligada a redução não anatômica no colo. Não é a marca do tipo intertrocantérico.",
+    "B": "**Necrose avascular é justamente a complicação menos ligada ao tipo IV**, cerca de 5%. O traço extracapsular poupa os vasos retinaculares.",
+    "D": "**Valgo não é a deformidade descrita.** As fraturas do fêmur proximal da criança tendem a varo; o tratamento da coxa vara é a osteotomia valgizante."
+   },
+   "conferido": false,
+   "provavel": "C",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Classificação de DELBET; Anatomia e irrigação; Tratamento; Coxa vara, fise e pseudartrose."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Classificação de DELBET",
+     "Anatomia e irrigação",
+     "Tratamento",
+     "Coxa vara, fise e pseudartrose"
+    ],
+    "blocos": [
+     "classificacao-de-delbet-e1115de7",
+     "classificacao-de-delbet-29878cdc",
+     "classificacao-de-delbet-8283998b",
+     "anatomia-e-irrigacao-be591f38",
+     "tratamento-c4a2001b",
+     "coxa-vara-fise-e-pseudartrose-17944458"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "1200006ff89424cd07781022c21241c3477342ebca70d5e2d364d587e49185cf"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0707": {
+  "questaoSha256": "549ac4e4fc76a51d697c6408f747f55d6066bd55941ad9a94cb874baa35804eb",
+  "comentarioAnteriorSha256": "7a86dbdec3449970ba3663d8f6fcfab5374a885e9bdf36d48d34b1bbacd1194e",
+  "comentario": {
+   "conceito": "O objetivo no tratamento da fratura do colo do fêmur da criança é a **união anatômica**. O Rockwood and Wilkins (10ª ed., cap. 24) lembra que o tratamento conservador deixou coxa vara demais, e que a redução anatômica com fixação interna diminuiu necrose, varo e pseudartrose.\n\n**A manobra fechada nos tipos II e III.** O capítulo descreve redução com **tração, abdução e rotação interna**. A lógica é a da deformidade: o capítulo lembra, ao falar do gesso do tipo I, que essas fraturas tendem a **varo e rotação externa**. Abduzir corrige o varo; rodar internamente corrige a rotação externa.\n\n**Quando abrir.** Os autores preferem a redução aberta diante de **qualquer desvio residual ou cominuição**, pela via anterior de Smith-Petersen com incisão lateral para a fixação. Os parafusos vão acima do trocânter menor e, no tipo II, podem cruzar a fise se a estabilidade exigir; se não cruzam, entra o gesso.\n\n**Na prova:** redução fechada do Delbet II = tração, **abdução e rotação medial (interna)**.\n\nO resumo de fraturas do quadril da criança descreve a técnica na seção de tratamento.",
+   "correta": "**D: abdução seguida de rotação medial.** É a sequência descrita no capítulo 24 para a redução fechada dos tipos II e III, corrigindo o varo e a rotação externa do fragmento distal.",
+   "incorretas": {
+    "A": "**Adução e rotação lateral reproduzem a deformidade.** Fecham ainda mais o ângulo do colo e mantêm o fragmento rodado para fora.",
+    "B": "**A rotação medial está certa, mas a adução não.** Aduzir acentua o varo que a manobra precisa desfazer.",
+    "C": "**A abdução está certa, mas a rotação lateral mantém o desvio rotacional.** O capítulo pede rotação interna."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Tratamento"
+    ],
+    "blocos": [
+     "tratamento-089519c6",
+     "tratamento-c73ba8ee",
+     "tratamento-b247f0ce"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "9f76fbef863217168b882fc8b8a6f5f49ca8e04420eb0a3a645f183db184399b"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0730": {
+  "questaoSha256": "267d9dd5d4f75166b4829f028c07649747e46a0fc97e17dcf047895facc6212f",
+  "comentarioAnteriorSha256": "9f8142d7709ca93f3ebb31f390d22f56cfc9885de10825b3f01007a710242215",
+  "comentario": {
+   "conceito": "Esta questão percorre o tratamento de cada tipo de Delbet. O princípio do Rockwood and Wilkins (10ª ed., cap. 24) é a **redução anatômica com fixação estável**, e o tratamento conservador fica restrito a situações bem definidas.\n\n**O que o capítulo indica por tipo.**\n- **Tipo I:** até 2 anos e estável, gesso em abdução e rotação neutra; instável, fios lisos cruzando a fise e gesso. **Acima de 2 anos, fixar sempre**, mesmo sem desvio.\n- **Tipos II e III:** redução fechada (tração, abdução, rotação interna) ou aberta se houver qualquer desvio; **parafusos** acima do trocânter menor. Conservador só sem desvio, de 0 a 5 anos.\n- **Tipo IV:** sem desvio, abaixo de 3 a 4 anos, gesso de 6 a 12 semanas; desviado, parafuso deslizante ou placa pediátrica.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é o tipo II desviado com redução e fixação com parafusos, exatamente o que o capítulo descreve.\n\n**Na prova:** colo do fêmur da criança desviado = reduzir anatomicamente e fixar.\n\nNo resumo de fraturas do quadril da criança, a seção de tratamento separa as condutas por tipo.",
+   "correta": "**B: o tipo II, se desviado, deve ser tratado com redução e fixação com parafusos.** É a conduta do capítulo 24, que ainda prefere abrir diante de qualquer desvio residual.",
+   "incorretas": {
+    "A": "**O tipo I não é sempre cirúrgico.** Até 2 anos e estável, o capítulo indica gesso em abdução; a fixação obrigatória vale acima de 2 anos.",
+    "C": "**O tipo III não é preferencialmente gessado.** Gesso isolado só sem desvio e de 0 a 5 anos; desviado, reduz e fixa com parafusos.",
+    "D": "**O tipo IV não é preferencialmente operado.** Sem desvio na criança pequena, o capítulo indica gesso; a fixação fica para o desviado ou a criança maior."
+   },
+   "conferido": false,
+   "provavel": "B",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Tratamento"
+    ],
+    "blocos": [
+     "tratamento-089519c6",
+     "tratamento-1e26a06b",
+     "tratamento-c4a2001b",
+     "tratamento-c73ba8ee",
+     "tratamento-b247f0ce"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "8ca4ffb3b5bb90a80753a01980e57ac3f7019c7084617661b1bab707336a07fd"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0581": {
+  "questaoSha256": "fbca6c99f444d0969d0e43db92ca6c92899704168ea7d587ae1f1d5bb2ff0030",
+  "comentarioAnteriorSha256": "9c0d08824846a059237501014a67a08dfd4fb260f4e360b2135556e39ec35a3c",
+  "comentario": {
+   "alerta": "Gabarito oficial C (epifisária parcial) preservado. Pelo resumo do Rockwood and Wilkins, 10ª edição, capítulo 24, o tipo III de Ratliff é a necrose do colo, da linha de fratura até a fise (região metafisária, alternativa A); o acometimento parcial da cabeça é o tipo II. O comentário explica as duas leituras.",
+   "conceito": "Ratliff classificou a necrose avascular que aparece depois das fraturas do colo do fêmur na criança pela **área que morre**. A necrose é a complicação mais grave dessas fraturas, em torno de 30%, e surge em média 11 meses depois, às vezes até 2 anos.\n\n**Os três tipos no Rockwood and Wilkins (10ª ed., cap. 24).**\n\n| Tipo | Área necrosada | Prognóstico |\n|---|---|---|\n| I | cabeça inteira | o mais comum e o pior |\n| II | parte da cabeça | intermediário |\n| III | **colo, da fratura até a fise** | raro, bom se a fratura consolida |\n\n**A divergência desta questão.** A banca deu como resposta a região **epifisária parcial**. Pelo capítulo, essa é a descrição do **tipo II**. O tipo III fica abaixo da fise, no colo, o que corresponde à região **metafisária**. Mantemos o gabarito oficial, mas a leitura do livro aponta para a alternativa A.\n\n**O fator que se pode mudar.** O capítulo aponta a **qualidade da redução** como o principal fator modificável para reduzir a necrose; tratar em até 24 horas parece ajudar.\n\n**Na prova:** Ratliff I cabeça inteira (pior), II parcial, III colo (melhor). Se a banca repetir a pergunta, vale saber o que ela já considerou certo.\n\nNo resumo de fraturas do quadril da criança, a tabela de Ratliff fica na seção de necrose.",
+   "correta": "**C: epifisária parcial (gabarito oficial).** O capítulo do Rockwood and Wilkins descreve a necrose parcial da cabeça como o tipo II e reserva o III para o colo, entre a fratura e a fise; veja o alerta.",
+   "incorretas": {
+    "A": "**Metafisária é a região do tipo III pelo capítulo.** O tipo III atinge o colo, da linha de fratura até a fise, com bom prognóstico se a fratura consolida. A banca não aceitou esta leitura.",
+    "B": "**Epifisária total é o tipo I.** É o mais comum e o de pior prognóstico, com a cabeça inteira comprometida.",
+    "D": "**Epifisária e metafisária juntas não correspondem a nenhum tipo de Ratliff descrito no capítulo.** A classificação separa cabeça inteira, cabeça parcial e colo."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Necrose."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Necrose"
+    ],
+    "blocos": [
+     "necrose-94b3c083",
+     "necrose-42bbef0d",
+     "necrose-b86ebbe6"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "36aa81e79e91931f4985795d4a1f5a7b287ddeb67ff9765e32a873e69a9f64c8"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0819": {
+  "questaoSha256": "01672a8f0386ba4f16885e9d2fa009354c233d9321783905e1421da4ccbc71b5",
+  "comentarioAnteriorSha256": "6c347d0492077dda09b9e0969278db42bd28263c06f2598de15ec2dce9df0520",
+  "comentario": {
+   "conceito": "A classificação de Ratliff descreve **onde** está a necrose avascular que surge depois da fratura do colo do fêmur da criança, e cada localização tem um prognóstico.\n\n**O que diz o Rockwood and Wilkins (10ª ed., cap. 24).**\n- **Tipo I:** a **cabeça inteira** necrosa; é o mais comum e o **pior**.\n- **Tipo II:** só parte da cabeça; prognóstico intermediário.\n- **Tipo III:** necrose do **colo**, da linha de fratura até a fise; é raro e tem **bom prognóstico** se a fratura consolida.\n\nO raciocínio é anatômico: no tipo III a cabeça, que é a parte articular, continua viva. O problema fica no colo e se resolve se o osso consolidar. No tipo I, a superfície que carrega peso inteira perde a irrigação, e o capítulo relata resultados ruins em mais de 60% dos casos de necrose, piores acima de 10 anos.\n\n**Sem gabarito oficial no acervo.** Pela bibliografia, a afirmação está errada: o pior prognóstico é do tipo I, não do III.\n\n**Na prova:** Ratliff I = cabeça inteira, pior; III = colo, melhor.\n\nA tabela de Ratliff, no resumo de fraturas do quadril da criança, resume área e prognóstico.",
+   "correta": "**B: errado.** No capítulo 24 do Rockwood and Wilkins, o tipo III (necrose do colo) tem bom prognóstico se a fratura consolida; o pior é o tipo I, com a cabeça inteira acometida.",
+   "incorretas": {
+    "A": "**Afirmar que o tipo III é o pior inverte a classificação.** O III poupa a cabeça; o I, com necrose total da cabeça, é o mais comum e o de pior evolução."
+   },
+   "conferido": false,
+   "provavel": "B",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Necrose."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Necrose"
+    ],
+    "blocos": [
+     "necrose-94b3c083",
+     "necrose-42bbef0d",
+     "necrose-b86ebbe6"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "36aa81e79e91931f4985795d4a1f5a7b287ddeb67ff9765e32a873e69a9f64c8"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0537": {
+  "questaoSha256": "561db1845b46f1dc174948ae843ed17bd83a3a62289ef5163c6a3ab5999f3a11",
+  "comentarioAnteriorSha256": "5695c0386107dda2f814413e53e6a606752899499ca2ef16d9bc966fccc37145",
+  "comentario": {
+   "conceito": "A luxação traumática do quadril é rara na criança, **menos de 5%** das luxações, e tem uma característica que a separa do adulto: na criança pequena, ela pode acontecer com **pouca energia**.\n\n**Direção.** No Rockwood and Wilkins (10ª ed., cap. 24), a luxação é **posterior em mais de 90%** dos casos, com o quadril fletido e aduzido no momento do trauma; a anterior fica abaixo de 10%.\n\n**Energia e idade.** **Abaixo de 6 anos**, a luxação costuma ser de **baixa energia** e isolada, favorecida por hiperfrouxidão ligamentar, coxa valga ou pouca cobertura do acetábulo, que ainda é muito cartilaginoso. Acima dessa idade, é preciso alta energia, e as lesões associadas aparecem.\n\n**O relógio.** A redução é urgência: mais de **6 horas** até reduzir é o maior fator de risco para necrose, que gira em torno de 10%. Depois de reduzir, a imagem é obrigatória; espaço articular alargado que persiste sugere interposição e pede ressonância.\n\n**Na prova:** luxação do quadril da criança = **posterior**; na criança pequena, **baixa energia**.\n\nNo resumo de fraturas do quadril da criança, a seção de luxação traumática traz direção, energia e prazos.",
+   "correta": "**D: posterior, e abaixo de 5 anos associada a traumas de baixa energia.** O capítulo dá mais de 90% de luxações posteriores e descreve a criança pequena (abaixo de 6 anos) luxando com pouca energia.",
+   "incorretas": {
+    "A": "**Erra as duas partes.** A anterior é a minoria (menos de 10%), e na criança pequena a energia costuma ser baixa.",
+    "B": "**A energia está certa, mas a direção não.** A luxação anterior é rara; mais de 90% são posteriores.",
+    "C": "**A direção está certa, mas a energia não.** O capítulo descreve justamente a criança pequena luxando com baixa energia, por frouxidão e acetábulo cartilaginoso."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Luxação traumática do quadril."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-24-quadril",
+    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+    "secoes": [
+     "Luxação traumática do quadril"
+    ],
+    "blocos": [
+     "luxacao-traumatica-do-quadril-97f4077e",
+     "luxacao-traumatica-do-quadril-a36e6cc4",
+     "luxacao-traumatica-do-quadril-609a0129"
+    ],
+    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+    "trechosSha256": "c8a7c10fa1b5810c8900e93bae707ec214802f17bbcb22442684ae234e32ebd3"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0613": {
+  "questaoSha256": "b23bd9bbd069d79a292c3d80045481d1310b3211fa76e3633756ba9d9a29322b",
+  "comentarioAnteriorSha256": "dce4b7f15cb9771b9d19ecf9da8e4d8d953142198f31ea23e8b0fd303aef9e60",
+  "comentario": {
+   "conceito": "A **cartilagem trirradiada** é o ponto em Y onde ílio, ísquio e púbis se encontram no fundo do acetábulo. Ela é a placa de crescimento do acetábulo: enquanto está aberta, o acetábulo aprofunda e se expande junto com a cabeça femoral.\n\n**Quando fecha.** O Rockwood and Wilkins (10ª ed., cap. 23, de Sanders e Sankar) dá o fechamento por volta dos **12 anos nas meninas e 14 nos meninos**. A diferença entre os sexos é a mesma das outras fises: as meninas amadurecem antes.\n\n**Por que importa no trauma.** A trirradiada aberta muda a abordagem. Silber e Flynn mostraram que a **pelve imatura**, com a trirradiada aberta, deve ser tratada com foco nas lesões associadas e raramente é operada; a **pelve madura**, com a trirradiada fechada, é tratada como a do adulto. Vale a maturidade, não a idade. Uma lesão da trirradiada abaixo de 10 anos ameaça o crescimento e pode levar a displasia acetabular.\n\n**Outra cartilagem que confunde.** A sincondrose isquiopúbica funde entre 4 e 7 anos e pode simular fratura ou tumor; sua hiperostose dolorosa, a doença de Van Neck, é autolimitada.\n\n**Na prova:** trirradiada fecha entre **12 e 14 anos**.\n\nO resumo de fraturas da pelve da criança descreve o desenvolvimento na seção sobre a pelve da criança.",
+   "correta": "**B: 12 a 14 anos.** O capítulo 23 do Rockwood and Wilkins dá o fechamento por volta dos 12 anos nas meninas e 14 nos meninos.",
+   "incorretas": {
+    "A": "**De 9 a 11 anos a trirradiada ainda está aberta.** É a faixa em que uma lesão dela mais ameaça o crescimento do acetábulo.",
+    "C": "**De 15 a 17 anos é a idade de outros centros**, como a fusão da crista ilíaca e da espinha anterossuperior, não a da trirradiada.",
+    "D": "**De 18 a 20 anos é tarde demais.** Perto dessa faixa funde a apófise do ísquio, não a trirradiada."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: A pelve da criança."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+    "titulo": "Fraturas da pelve e do acetábulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+    "secoes": [
+     "A pelve da criança"
+    ],
+    "blocos": [
+     "a-pelve-da-crianca-270b4d6d",
+     "a-pelve-da-crianca-6b981e7d"
+    ],
+    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+    "trechosSha256": "dc1bb928f09bcb691038645223e68306e0b0007ce01ecce878a9cee29ab03f43"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0947": {
+  "questaoSha256": "0c0ed95813d39107f0c8b1c00c879a7fcae83c0550f4f1d94e30ae06ef15ee54",
+  "comentarioAnteriorSha256": "be5c13b8f19d71542cbaf2893e881a1cadc708c849c9e2f8f635f5124a01337b",
+  "comentario": {
+   "conceito": "A fratura da pelve na criança é rara, **menos de 1%** das fraturas, mas aparece em até 5% das crianças internadas por trauma contuso em centros de referência. A pergunta testa quatro ideias sobre ela.\n\n**De onde vem.** No Rockwood and Wilkins (10ª ed., cap. 23), **40% a 80%** vêm de acidentes com veículos, sobretudo atropelamentos: trauma de **alta energia**. Quedas de altura completam o quadro. O esporte responde por 4% a 11%, quase sempre avulsões.\n\n**Avulsão é tração, não pancada.** As avulsões nascem de contração violenta de músculos que cruzam quadril e joelho, entre 11 e 17 anos.\n\n**Lesões associadas.** De 58% a 87% das crianças têm outra lesão: outras fraturas em quase metade, **traumatismo craniano** (9% a 50%, a principal causa de morte), lesões toracoabdominais e geniturinárias. Uretra e bexiga são lesadas em cerca de 4%, e a hematúria chega a 50%; a elasticidade da pelve não protege o trato urinário.\n\n**Na prova:** pelve da criança = alta energia, lesões associadas que matam (cabeça), avulsão por tração.\n\nO resumo de fraturas da pelve da criança traz esses números na seção de lesões associadas e avaliação.",
+   "correta": "**B: são secundárias a trauma de alta energia ou queda de altura.** O capítulo atribui de 40% a 80% aos acidentes com veículos, sobretudo atropelamentos.",
+   "incorretas": {
+    "A": "**Avulsão não é trauma direto.** É arrancamento da apófise pela contração violenta de um músculo, no adolescente.",
+    "C": "**A lesão associada que mais pesa é o traumatismo craniano**, principal causa de morte; também aparecem outras fraturas e lesões toracoabdominais. O capítulo não destaca o membro superior.",
+    "D": "**A elasticidade da pelve não poupa o trato urinário.** Uretra e bexiga são lesadas em cerca de 4%, a hematúria chega a 50% e há lacerações vaginais e retais."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Lesões associadas e avaliação; Como ler este capítulo; Avulsões (tipo I)."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+    "titulo": "Fraturas da pelve e do acetábulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+    "secoes": [
+     "Lesões associadas e avaliação",
+     "Como ler este capítulo",
+     "Avulsões (tipo I)"
+    ],
+    "blocos": [
+     "lesoes-associadas-e-avaliacao-ab7c757b",
+     "lesoes-associadas-e-avaliacao-8ad856f6",
+     "como-ler-este-capitulo-e0cf127b",
+     "avulsoes-tipo-i-cf35bcfc"
+    ],
+    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+    "trechosSha256": "bf1f4dbcbcc7d7ed634485143bd3d48fead1d8385ac79d4c8b936ab194bc764f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0567": {
+  "questaoSha256": "ea3515053b3c733383a2a311b6059960ce585ff6f0e6ad42d9af1aa260851deb",
+  "comentarioAnteriorSha256": "80f6609099c57f2ab0cb0d20410828a3073533655b52fb0bfc942ddbad961fa4",
+  "comentario": {
+   "alerta": "Gabarito oficial C (IIIB e IV) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 23, define o tipo IIIB como estável e só o IV como instável, mas aproxima o IIIB do IV em transfusão, internação em UTI e lesões associadas. A leitura estrita da tabela daria a alternativa D.",
+   "conceito": "Torode e Zieg classificaram as fraturas da pelve da criança em quatro tipos, do mais simples ao mais grave. A versão modificada separou o tipo III em dois, e é aí que mora a pegadinha desta questão.\n\n**A classificação no Rockwood and Wilkins (10ª ed., cap. 23).**\n\n| Tipo | Lesão |\n|---|---|\n| I | avulsão |\n| II | asa do ilíaco |\n| IIIA | anel anterior simples, estável |\n| **IIIB** | anéis **anterior e posterior**, ainda **estável** |\n| **IV** | **instável**: IVa straddle, IVb anterior + posterior, IVc segmento entre anel anterior e acetábulo |\n\n**Por que a banca juntou IIIB e IV.** O capítulo chama o IIIB de estável, mas mostra que ele tem **mais transfusão, mais UTI e mais lesões associadas** que o IIIA, perto do comportamento do IV. A banca tratou os dois como o grupo instável. Pela letra da tabela, só o IV é instável; mantemos o gabarito oficial e registramos a diferença.\n\n**Na prova:** IIIB = anterior + posterior; a banca o coloca junto do IV como grupo de risco.\n\nNo resumo de fraturas da pelve da criança, a tabela de Torode e Zieg e o parágrafo seguinte mostram os dois lados.",
+   "correta": "**C: os tipos III-B e IV (gabarito oficial).** O capítulo chama o IIIB de estável, mas o aproxima do IV em transfusão, UTI e lesões associadas; veja o alerta.",
+   "incorretas": {
+    "A": "**Os tipos I e II são as lesões mais benignas.** Avulsões e fraturas da asa do ilíaco não rompem o anel e são tratadas com sintomáticos.",
+    "B": "**O IIIA é uma lesão isolada do anel anterior, estável e de menor morbidade.** O capítulo justamente separa o IIIA do IIIB por isso.",
+    "D": "**É a leitura estrita da tabela, mas não foi a resposta da banca.** O capítulo define o IIIB como estável; a banca o incluiu com o IV pelo comportamento clínico mais grave."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Classificação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+    "titulo": "Fraturas da pelve e do acetábulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+    "secoes": [
+     "Classificação"
+    ],
+    "blocos": [
+     "classificacao-157b6ed1",
+     "classificacao-927156f0",
+     "classificacao-890526e7"
+    ],
+    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+    "trechosSha256": "d5e27f93744ca22b927fe18985f6b3d3a11877f1df700528b1f8dba3503b227f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0620": {
+  "questaoSha256": "c80e17b85be5895fa5bad129a9aab15a6e35eb69ceb02b47becf93e84d472c03",
+  "comentarioAnteriorSha256": "8427905732aa213bb8bbccbb26105362515cb08f70adb303ac09d8be1819f6df",
+  "comentario": {
+   "conceito": "Quando os **ramos púbicos dos dois lados** quebram, superiores e inferiores, o segmento anterior do anel fica solto, como um fragmento flutuante. É a chamada fratura em cavaleiro, ou **straddle**.\n\n**Onde ela entra em Torode e Zieg.** No Rockwood and Wilkins (10ª ed., cap. 23), o tipo IV reúne as lesões **instáveis** do anel, e o **IVa** é justamente a fratura bilateral dos ramos superiores e inferiores. O IVb soma lesão anterior e posterior; o IVc isola um segmento entre o anel anterior e o acetábulo.\n\n**O que muda no manejo.** No straddle, o fragmento anterior sobe tracionado pelo reto abdominal, e a proximidade com a bexiga e a uretra exige procurar lesão urinária. A **cinta pélvica é contraindicada**, porque empurra os ilíacos para dentro. O capítulo orienta tratar como o IIIB, com atenção às lesões associadas.\n\n**Na prova:** ramos púbicos bilaterais = **Torode e Zieg IV (IVa, straddle)**.\n\nA tabela de Torode e Zieg, no resumo de fraturas da pelve da criança, traz os subtipos do IV.",
+   "correta": "**D: IV.** A fratura bilateral dos ramos púbicos é o subtipo IVa (straddle) da classificação de Torode e Zieg modificada, no capítulo 23 do Rockwood and Wilkins.",
+   "incorretas": {
+    "A": "**Tipo I é avulsão de apófise.** Não rompe o anel pélvico.",
+    "B": "**Tipo II é a fratura da asa do ilíaco**, fora do anel.",
+    "C": "**Tipo III é a lesão estável do anel**: anterior simples (IIIA) ou anterior com posterior estável (IIIB). Ramos bilaterais soltam o segmento anterior e passam ao tipo IV."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Classificação; Fraturas instáveis (tipo IV)."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+    "titulo": "Fraturas da pelve e do acetábulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+    "secoes": [
+     "Classificação",
+     "Fraturas instáveis (tipo IV)"
+    ],
+    "blocos": [
+     "classificacao-157b6ed1",
+     "classificacao-927156f0",
+     "classificacao-890526e7",
+     "fraturas-instaveis-tipo-iv-2efff893"
+    ],
+    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+    "trechosSha256": "20c0f25240a774b0ab882d0e05c23c1549bb4a486293f4ee2b13f591e6405cce"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0645": {
+  "questaoSha256": "7ecbf9307289005a8fd8c198d6d33c22bb4c9a8eba18eae111c525195c298c12",
+  "comentarioAnteriorSha256": "e42f5db62f148a37e71edce90d029eb2be4b9eb1d963220d3cb72328fb097aa2",
+  "comentario": {
+   "conceito": "A fratura dos **ramos púbicos dos dois lados**, superiores e inferiores, desconecta a frente do anel pélvico. O nome clássico é fratura em cavaleiro, **straddle**, porque costuma vir de queda montada sobre um objeto.\n\n**O subtipo.** Na classificação de Torode e Zieg modificada (Rockwood and Wilkins, 10ª ed., cap. 23), o tipo IV é o instável e se divide em três:\n- **IVa:** ramos superiores e inferiores bilaterais, o straddle;\n- **IVb:** ramos ou sínfise com lesão posterior (sacroilíaca, asa do sacro);\n- **IVc:** segmento instável entre o anel anterior e o acetábulo.\n\n**O que o straddle exige.** O fragmento anterior sobe pelo reto abdominal e fica junto da bexiga e da uretra, que precisam ser investigadas. A cinta pélvica é **contraindicada**, porque empurraria os ilíacos para dentro.\n\n**Na prova:** ramos bilaterais = **IVa**; anterior + posterior = **IVb**.\n\nNo resumo de fraturas da pelve da criança, a tabela de Torode e Zieg e a seção de fraturas instáveis mostram os subtipos.",
+   "correta": "**C: IVa.** É o subtipo straddle, com ramos superiores e inferiores fraturados dos dois lados, no capítulo 23 do Rockwood and Wilkins.",
+   "incorretas": {
+    "A": "**IIIA é lesão isolada do anel anterior, estável.** Uma fratura de um só lado, não dos dois.",
+    "B": "**IIIB soma anel anterior e posterior, ainda estável.** Não é a fratura bilateral dos ramos.",
+    "D": "**IVb é anterior com lesão posterior**, como sacroilíaca ou asa do sacro. O caso não tem componente posterior."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Classificação; Fraturas instáveis (tipo IV)."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+    "titulo": "Fraturas da pelve e do acetábulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+    "secoes": [
+     "Classificação",
+     "Fraturas instáveis (tipo IV)"
+    ],
+    "blocos": [
+     "classificacao-157b6ed1",
+     "classificacao-927156f0",
+     "classificacao-890526e7",
+     "fraturas-instaveis-tipo-iv-2efff893"
+    ],
+    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+    "trechosSha256": "20c0f25240a774b0ab882d0e05c23c1549bb4a486293f4ee2b13f591e6405cce"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0660": {
+  "questaoSha256": "20bc44fcdc8c0369c66e31bce35e11060f101040048a2de7f72ea8bf736b6a2a",
+  "comentarioAnteriorSha256": "c197ebe03a50acb8d08092e5edbd340bcba3ccc7cfe3e041263bf72e1083cedf",
+  "comentario": {
+   "conceito": "O anel pélvico perde a estabilidade quando quebra **na frente e atrás**. Na criança, a pelve é mais plástica e elástica e pode se romper num só ponto; quando a lesão atinge os dois arcos, o anel ganha mobilidade e o risco sobe.\n\n**Onde entra na classificação.** Pela tabela de Torode e Zieg modificada do Rockwood and Wilkins (10ª ed., cap. 23):\n- **IIIB:** anel anterior e posterior, ainda **estável**;\n- **IVb:** ramos ou sínfise **com lesão posterior** (sacroilíaca, asa do sacro), **instável**.\n\nO enunciado descreve o ramo anterior do púbis com um elemento posterior, o desenho do **IVb**, a lesão mais perigosa da pelve da criança, com hemorragia e necessidade de reanimação antes de tudo.\n\n**Como se trata.** Os autores fixam o tipo IV desviado e as fraturas do anel com desvio acima de **1 cm** com lesão anterior e posterior, porque a pelve **não remodela** assimetria: Smith mostrou sintomas em todos com mais de 1,1 cm.\n\n**Na prova:** ramo anterior + elemento posterior = **IVb**.\n\nA tabela de Torode e Zieg, no resumo de fraturas da pelve da criança, separa IIIB e IVb.",
+   "correta": "**D: 4b.** O ramo anterior com elemento posterior é o subtipo IVb (anterior + posterior, instável) da classificação modificada, no capítulo 23 do Rockwood and Wilkins.",
+   "incorretas": {
+    "A": "**O tipo I é avulsão**; a classificação não usa um subtipo 1c para lesão do anel.",
+    "B": "**O tipo II é a fratura da asa do ilíaco**, fora do anel pélvico.",
+    "C": "**O 3a é a lesão isolada do anel anterior, estável.** O enunciado acrescenta um elemento posterior."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Classificação."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+    "titulo": "Fraturas da pelve e do acetábulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+    "secoes": [
+     "Classificação"
+    ],
+    "blocos": [
+     "classificacao-157b6ed1",
+     "classificacao-927156f0",
+     "classificacao-890526e7"
+    ],
+    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+    "trechosSha256": "d5e27f93744ca22b927fe18985f6b3d3a11877f1df700528b1f8dba3503b227f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0845": {
+  "questaoSha256": "4e6f12d13f7d33de9a46eb488087ea11e243cd78928313c791cbd1ecfa4c7f48",
+  "comentarioAnteriorSha256": "fb0c44470c16a9d95e2e103be7a9b3670012453a6cbc34ae8a0694dd4bd67f29",
+  "comentario": {
+   "conceito": "As avulsões apofisárias da pelve são o tipo I de Torode e Zieg. Acontecem entre **11 e 17 anos**, quando as apófises ainda não se fundiram e são o ponto fraco entre o músculo e o osso: uma contração violenta arranca o núcleo de ossificação.\n\n**Cada espinha tem o seu músculo.** O Rockwood and Wilkins (10ª ed., cap. 23) traz:\n\n| Local | Frequência | Músculo |\n|---|---|---|\n| **Espinha anteroinferior** | **37%** | **reto femoral** |\n| Tuberosidade isquiática | 31% | isquiotibiais |\n| Espinha anterossuperior | 25% | sartório |\n| Crista ilíaca | 6% | oblíquos |\n\n**E cada esporte tem a sua avulsão.** No **futebol**, o chute e a arrancada puxam o reto femoral e o sartório: espinhas anteroinferior e anterossuperior. Na **ginástica**, o alongamento extremo arranca a tuberosidade isquiática pelos isquiotibiais. A anteroinferior é a mais comum.\n\n**Tratamento.** Quase sempre conservador, com repouso, posição que relaxe o músculo e retorno em 6 a 8 semanas. A isquiática é a que mais evolui com incapacidade e pseudartrose.\n\n**Na prova:** anteroinferior = **reto femoral, futebol**; anterossuperior = sartório; isquiática = isquiotibiais, ginástica.\n\nA tabela das avulsões, no resumo de fraturas da pelve da criança, junta local, frequência e músculo.",
+   "correta": "**D: reto femoral, em jogadores de futebol.** O reto femoral se origina na espinha anteroinferior, e o futebol é o esporte que o capítulo associa a essa avulsão.",
+   "incorretas": {
+    "A": "**Sartório se insere na espinha anterossuperior, e ginástica se liga à avulsão isquiática.** Erra o músculo e o esporte.",
+    "B": "**O músculo está certo, mas o esporte não.** A ginástica é associada à avulsão da tuberosidade isquiática pelos isquiotibiais.",
+    "C": "**O esporte está certo, mas o sartório arranca a espinha anterossuperior.** A anteroinferior é do reto femoral."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Avulsões (tipo I)."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+    "titulo": "Fraturas da pelve e do acetábulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+    "secoes": [
+     "Avulsões (tipo I)"
+    ],
+    "blocos": [
+     "avulsoes-tipo-i-ba5cd877",
+     "avulsoes-tipo-i-cf35bcfc",
+     "avulsoes-tipo-i-8d17af2b"
+    ],
+    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+    "trechosSha256": "ca2663796ef1692fa9e9c1ba976bb7e42dfa9c8ff9a63792799cd6f699ef1cca"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0694": {
+  "questaoSha256": "dbc8fe6c2d4e86ecfffb0d0762811e6a05618659efe9834cce2232b08abefbbd",
+  "comentarioAnteriorSha256": "a2048938afe60918e963159f770828f67c5ccfa5dd4cd34b49ae8a7d039c353c",
+  "comentario": {
+   "alerta": "Gabarito oficial A preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 23, não dá uma complicação específica para o tipo III; ele aponta a consolidação viciosa do anel como o principal desfecho adverso das fraturas da pelve da criança em geral e diz que pseudartrose e retardo são raros.",
+   "conceito": "O tipo III de Torode e Zieg é a lesão **estável** do anel pélvico: só o anel anterior (IIIA) ou anterior com posterior estável (IIIB). O tratamento é com sintomáticos, carga protegida e retorno em 6 a 8 semanas.\n\n**O que pode dar errado na pelve da criança.** O Rockwood and Wilkins (10ª ed., cap. 23) aponta dois desfechos adversos principais: a **consolidação viciosa do anel** e o fechamento prematuro da trirradiada. A consolidação viciosa traz discrepância de membros, dor lombar e sacroilíaca, escoliose e alterações do assoalho pélvico e do canal de parto. A pelve **não remodela** assimetria: Smith mostrou sintomas em todos com mais de 1,1 cm.\n\n**O que é raro.** A pseudartrose e a perda da redução são raras, porque a pelve da criança consolida rápido. Isso afasta as alternativas de falha e de retardo de consolidação.\n\n**Na prova:** complicação das fraturas do anel pélvico da criança = **consolidação viciosa**; pseudartrose é rara.\n\nA seção de complicações, no resumo de fraturas da pelve da criança, lista os desfechos.",
+   "correta": "**A: consolidação viciosa.** É o principal desfecho adverso das fraturas do anel pélvico da criança no capítulo 23 do Rockwood and Wilkins; veja o alerta sobre a falta de um dado específico do tipo III.",
+   "incorretas": {
+    "B": "**A falha de consolidação é rara na pelve da criança.** O capítulo atribui isso à consolidação rápida do osso imaturo.",
+    "C": "**O retardo de consolidação também é raro**, pelo mesmo motivo. A pelve da criança consolida depressa; o problema é consolidar torta.",
+    "D": "**A lesão da trirradiada é uma lesão do acetábulo**, com risco de fechamento prematuro e displasia. Não é a complicação típica de uma fratura estável do anel anterior."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Complicações; Asa, sacro, cóccix e anel estável (tipos II e III); Fraturas instáveis (tipo IV)."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+    "titulo": "Fraturas da pelve e do acetábulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+    "secoes": [
+     "Complicações",
+     "Asa, sacro, cóccix e anel estável (tipos II e III)",
+     "Fraturas instáveis (tipo IV)"
+    ],
+    "blocos": [
+     "complicacoes-d896ef7d",
+     "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-f0400c85",
+     "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-a53e8cba",
+     "fraturas-instaveis-tipo-iv-d7cb082d"
+    ],
+    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+    "trechosSha256": "9d26744de542423a6b6c7d7994839d5c48b2e01e33aecf5ee25442d938c121ba"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}

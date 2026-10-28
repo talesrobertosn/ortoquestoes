@@ -3,11 +3,11 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 394,
+  "pendente": 373,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 791,
-  "pendente-inspecao-imagem": 9,
-  "revisada": 1683
+  "pendente-fonte": 762,
+  "pendente-inspecao-imagem": 8,
+  "revisada": 1734
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -41,8 +41,8 @@
    "titulo": "Fratura da clavícula",
    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
    "estados": {
-    "pendente-fonte": 8,
-    "revisada": 65
+    "pendente-fonte": 7,
+    "revisada": 66
    }
   },
   "rockwood10-36-umero-proximal": {
@@ -116,8 +116,8 @@
    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
-    "pendente-fonte": 40,
-    "revisada": 86
+    "pendente-fonte": 39,
+    "revisada": 87
    }
   },
   "rockwood10-50-anel-pelvico": {
@@ -240,8 +240,8 @@
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
     "pendente": 79,
-    "pendente-fonte": 63,
-    "revisada": 73
+    "pendente-fonte": 39,
+    "revisada": 97
    }
   },
   "rockwoodcriancas10-06-sindrome-compartimental": {
@@ -249,8 +249,8 @@
    "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
    "estados": {
     "pendente": 79,
-    "pendente-fonte": 64,
-    "revisada": 76
+    "pendente-fonte": 40,
+    "revisada": 100
    }
   },
   "rockwoodcriancas10-07-patologicas-maus-tratos": {
@@ -297,20 +297,19 @@
    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
    "estados": {
-    "pendente": 37,
-    "pendente-fonte": 11,
-    "pendente-inspecao-imagem": 2,
-    "revisada": 1
+    "pendente": 28,
+    "pendente-fonte": 1,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 21
    }
   },
   "rockwoodcriancas10-20-clavicula-escapula": {
    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
    "estados": {
-    "pendente": 30,
-    "pendente-fonte": 6,
-    "pendente-inspecao-imagem": 2,
-    "revisada": 1
+    "pendente": 26,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 12
    }
   },
   "rockwoodcriancas10-21-coluna-cervical": {
@@ -318,35 +317,39 @@
    "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
    "estados": {
     "duplicada": 4,
-    "pendente": 54,
-    "pendente-fonte": 3,
-    "pendente-inspecao-imagem": 1
+    "pendente": 48,
+    "pendente-fonte": 1,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 8
    }
   },
   "rockwoodcriancas10-22-coluna-toracolombar": {
    "titulo": "Fraturas da coluna toracolombar na criança",
    "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
    "estados": {
-    "pendente": 38,
-    "pendente-fonte": 2
+    "pendente": 34,
+    "pendente-fonte": 1,
+    "revisada": 5
    }
   },
   "rockwoodcriancas10-23-pelve-acetabulo": {
    "titulo": "Fraturas da pelve e do acetábulo na criança",
    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
    "estados": {
-    "pendente": 43,
-    "pendente-fonte": 14,
-    "pendente-inspecao-imagem": 1
+    "pendente": 39,
+    "pendente-fonte": 1,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 17
    }
   },
   "rockwoodcriancas10-24-quadril": {
    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
    "estados": {
-    "pendente": 44,
-    "pendente-fonte": 16,
-    "pendente-inspecao-imagem": 1
+    "pendente": 40,
+    "pendente-fonte": 3,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 17
    }
   },
   "rockwoodcriancas10-25-diafise-femur": {
@@ -354,8 +357,8 @@
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
     "pendente": 15,
-    "pendente-fonte": 26,
-    "revisada": 81
+    "pendente-fonte": 22,
+    "revisada": 85
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
@@ -363,8 +366,8 @@
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
     "pendente": 15,
-    "pendente-fonte": 32,
-    "revisada": 87
+    "pendente-fonte": 28,
+    "revisada": 91
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
@@ -372,8 +375,8 @@
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
     "pendente": 15,
-    "pendente-fonte": 33,
-    "revisada": 83
+    "pendente-fonte": 29,
+    "revisada": 87
    }
   },
   "rockwoodcriancas10-28-joelho-intra-articular": {
@@ -391,8 +394,8 @@
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
     "pendente": 15,
-    "pendente-fonte": 27,
-    "revisada": 80
+    "pendente-fonte": 23,
+    "revisada": 84
    }
   },
   "rockwoodcriancas10-30-tornozelo": {
@@ -2943,8 +2946,8 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente-fonte",
-   "motivo": "A pergunta é de estabilização na criança. Os limites adultos de cifose e perda de altura do resumo não comprovam automaticamente o par pediátrico de 30 graus/50%. Necessária recomendação específica pediátrica para julgar todos os pares sem extrapolar população.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -2960,6 +2963,30 @@
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
    "questaoSha256": "991638c99fabf46441f0251122ae0dec9562b032f0a6129af861b230cd98d715",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Compressão e explosão"
+      ],
+      "blocos": [
+       "compressao-e-explosao-8c911be9",
+       "compressao-e-explosao-a0a58ceb"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "f37e6d58e9bc524daf3bf703ba5473d1b5965cf7793a482c10de14d4c9e34381"
+     }
+    ],
+    "questaoSha256": "991638c99fabf46441f0251122ae0dec9562b032f0a6129af861b230cd98d715",
+    "comentarioSha256": "1408c594b2068264b532fb4fd8121faf28932eed8e2d2ca57f08fa446c44b23e"
+   },
    "pendencia": "A pergunta é de estabilização na criança. Os limites adultos de cifose e perda de altura do resumo não comprovam automaticamente o par pediátrico de 30 graus/50%. Necessária recomendação específica pediátrica para julgar todos os pares sem extrapolar população."
   },
   "coluna-0304": {
@@ -3169,7 +3196,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3184,7 +3211,33 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "24b3a2a7266ba790e16dc68df4ac8472b3effbc7d9eb8045c6fdecc7160d839d"
+   "questaoSha256": "24b3a2a7266ba790e16dc68df4ac8472b3effbc7d9eb8045c6fdecc7160d839d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "SCIWORA e lesão medular",
+       "Mecanismos, lesões associadas e avaliação"
+      ],
+      "blocos": [
+       "sciwora-e-lesao-medular-9ae5196f",
+       "sciwora-e-lesao-medular-c9b6021a",
+       "mecanismos-lesoes-associadas-e-avaliacao-0ddd61bc"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "847d028c374f94425e726e4107a25b68f6a4d29eb8a9e11da00236408a52129d"
+     }
+    ],
+    "questaoSha256": "24b3a2a7266ba790e16dc68df4ac8472b3effbc7d9eb8045c6fdecc7160d839d",
+    "comentarioSha256": "9c9e3ae87b87d598faf2f83bdc440b08c33511f1a37d02e0c3b7c019452cce9f"
+   }
   },
   "coluna-0315": {
    "tema": "coluna",
@@ -36883,7 +36936,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -36898,7 +36951,34 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "ea84a1a47f16f254413f5491ecae5de54c62203b02f87244fae9c2f13055301c"
+   "questaoSha256": "ea84a1a47f16f254413f5491ecae5de54c62203b02f87244fae9c2f13055301c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Classificação de DELBET",
+       "Anatomia e irrigação"
+      ],
+      "blocos": [
+       "classificacao-de-delbet-e1115de7",
+       "classificacao-de-delbet-29878cdc",
+       "classificacao-de-delbet-8283998b",
+       "anatomia-e-irrigacao-be591f38"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+     }
+    ],
+    "questaoSha256": "ea84a1a47f16f254413f5491ecae5de54c62203b02f87244fae9c2f13055301c",
+    "comentarioSha256": "904e12010e84a1c6e3e3e216b42703c4f9e79ac511a6458d9e5632d107afd7d9"
+   }
   },
   "pediatria-0516": {
    "tema": "pediatria",
@@ -37214,8 +37294,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-fonte",
-   "motivo": "Desvio do fragmento proximal na fratura do úmero proximal infantil não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -37232,6 +37312,32 @@
     "rockwoodcriancas10-19-ombro-umero"
    ],
    "questaoSha256": "10c95f43cde4f28ac22f92b8a887a0ca423aae2d2f8f1b74d5622d9795282946",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: anatomia",
+       "Úmero proximal: classificação e tratamento"
+      ],
+      "blocos": [
+       "umero-proximal-anatomia-d40fae5f",
+       "umero-proximal-anatomia-5f8a04fb",
+       "umero-proximal-classificacao-e-tratamento-e2c0307e"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "f2c175ed6b8f48006df5ae9589fb3f650a6e74bdcb41e56c9fe047e933791f3b"
+     }
+    ],
+    "questaoSha256": "10c95f43cde4f28ac22f92b8a887a0ca423aae2d2f8f1b74d5622d9795282946",
+    "comentarioSha256": "f4b3615c4a651fe63f856f672c45dbe508e3fa90ed82cf18f8dac69cc3d76404"
+   },
    "pendencia": "Desvio do fragmento proximal na fratura do úmero proximal infantil não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0525": {
@@ -37542,8 +37648,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente-fonte",
-   "motivo": "Falta a definição e a distribuição de frequência dos tiposI–IV deDelbet nas fraturas PROXIMAIS do fêmur infantil. O corpo1 trata de incidência geral e o25 de fratura DIAFISÁRIA,não da hierarquia entre esses quatro tipos. Não confirmarII a partir do comentário antigo ou de padrões do adulto;oficialB preservado,sem selo.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -37561,6 +37667,33 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "aee724f31ac1b7fd4e547b5e1ba95f277dbd509849c8524d40fd7985dfa2998e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Classificação de DELBET",
+       "Anatomia e irrigação"
+      ],
+      "blocos": [
+       "classificacao-de-delbet-e1115de7",
+       "classificacao-de-delbet-29878cdc",
+       "classificacao-de-delbet-8283998b",
+       "anatomia-e-irrigacao-be591f38"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+     }
+    ],
+    "questaoSha256": "aee724f31ac1b7fd4e547b5e1ba95f277dbd509849c8524d40fd7985dfa2998e",
+    "comentarioSha256": "09e577d90bd9a719328c372d067576e87dd76e70aa9372699addc9e8ebdd44e0"
+   },
    "pendencia": "Falta a definição e a distribuição de frequência dos tiposI–IV deDelbet nas fraturas PROXIMAIS do fêmur infantil. O corpo1 trata de incidência geral e o25 de fratura DIAFISÁRIA,não da hierarquia entre esses quatro tipos. Não confirmarII a partir do comentário antigo ou de padrões do adulto;oficialB preservado,sem selo."
   },
   "pediatria-0531": {
@@ -37665,8 +37798,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente-fonte",
-   "motivo": "Manobra de redução da luxação esternoclavicular posterior na criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -37684,6 +37817,31 @@
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
    "questaoSha256": "20e8a2c1a13dad2e6bf420deb74d4bc0b04b642c814ba66d56036892a32f8495",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Esternoclavicular"
+      ],
+      "blocos": [
+       "esternoclavicular-e6a737f9",
+       "esternoclavicular-2bb38b19",
+       "esternoclavicular-b4e01956"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "67a033f7386d54db6c06d56125eeab0508e0736bd9b8bd7fc89b4a7ce3cb30e9"
+     }
+    ],
+    "questaoSha256": "20e8a2c1a13dad2e6bf420deb74d4bc0b04b642c814ba66d56036892a32f8495",
+    "comentarioSha256": "9daad5f393e36d77aa6fa9f42eb13930dd1f5f05afdc10fcfdde90660f6dd69c"
+   },
    "pendencia": "Manobra de redução da luxação esternoclavicular posterior na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0535": {
@@ -37726,8 +37884,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente-fonte",
-   "motivo": "Falta demonstração da direção mais frequente da luxação traumática do quadril infantil e comparação da energia antes/depois dos5anos. As duas dimensões precisam ser confirmadas para separarA/B/C/D. A discussão geral de quedas e exposição do corpo1 não prova que o padrão seja posterior e de baixa energia nessa faixa;oficialD preservado.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -37744,6 +37902,31 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "561db1845b46f1dc174948ae843ed17bd83a3a62289ef5163c6a3ab5999f3a11",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Luxação traumática do quadril"
+      ],
+      "blocos": [
+       "luxacao-traumatica-do-quadril-97f4077e",
+       "luxacao-traumatica-do-quadril-a36e6cc4",
+       "luxacao-traumatica-do-quadril-609a0129"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "c8a7c10fa1b5810c8900e93bae707ec214802f17bbcb22442684ae234e32ebd3"
+     }
+    ],
+    "questaoSha256": "561db1845b46f1dc174948ae843ed17bd83a3a62289ef5163c6a3ab5999f3a11",
+    "comentarioSha256": "9e2af1bd662ed421daa9157df73c1985661080477770446ad84ae07b47f6bed3"
+   },
    "pendencia": "Falta demonstração da direção mais frequente da luxação traumática do quadril infantil e comparação da energia antes/depois dos5anos. As duas dimensões precisam ser confirmadas para separarA/B/C/D. A discussão geral de quedas e exposição do corpo1 não prova que o padrão seja posterior e de baixa energia nessa faixa;oficialD preservado."
   },
   "pediatria-0538": {
@@ -38212,8 +38395,8 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente-fonte",
-   "motivo": "Falta ranking específico das indicações cirúrgicas das fraturas do TERÇO LATERAL da clavícula na CRIANÇA:exposta,vascular,posterior e neurológica. Saber que são indicações possíveis ou que cirurgia é excepcional não demonstra qual é a mais frequente. Corpo1 não traz esse protocolo nem essa comparação;oficialA e alerta antigo preservados sem selo.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -38230,6 +38413,31 @@
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
    "questaoSha256": "4e5f905377d38cc4143f2840abc3b70981af2c23575fe95b5969b3d7eb10a67d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Clavícula: terço lateral"
+      ],
+      "blocos": [
+       "clavicula-terco-lateral-d808c290",
+       "clavicula-terco-lateral-5f79a99d",
+       "clavicula-terco-lateral-be6075a5"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "48ceb45a2ab534b1f48d12ea77d95586eae963c801aedbd1b1e19b6cdf5902bc"
+     }
+    ],
+    "questaoSha256": "4e5f905377d38cc4143f2840abc3b70981af2c23575fe95b5969b3d7eb10a67d",
+    "comentarioSha256": "2c5a35ab4395c58e9f85c9fef5ed1ba62df3d1664205c8fd85d4327ee61428cd"
+   },
    "pendencia": "Falta ranking específico das indicações cirúrgicas das fraturas do TERÇO LATERAL da clavícula na CRIANÇA:exposta,vascular,posterior e neurológica. Saber que são indicações possíveis ou que cirurgia é excepcional não demonstra qual é a mais frequente. Corpo1 não traz esse protocolo nem essa comparação;oficialA e alerta antigo preservados sem selo."
   },
   "pediatria-0552": {
@@ -38789,8 +38997,8 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Torode e Zieg modificada das fraturas pélvicas da criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -38808,6 +39016,31 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "ea3515053b3c733383a2a311b6059960ce585ff6f0e6ad42d9af1aa260851deb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Classificação"
+      ],
+      "blocos": [
+       "classificacao-157b6ed1",
+       "classificacao-927156f0",
+       "classificacao-890526e7"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "d5e27f93744ca22b927fe18985f6b3d3a11877f1df700528b1f8dba3503b227f"
+     }
+    ],
+    "questaoSha256": "ea3515053b3c733383a2a311b6059960ce585ff6f0e6ad42d9af1aa260851deb",
+    "comentarioSha256": "0edfa41722d35d0c5ebdc06cffeb8c32081d37987d82c36faf7c7c9f7e34a2e6"
+   },
    "pendencia": "Classificação de Torode e Zieg modificada das fraturas pélvicas da criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0568": {
@@ -38911,7 +39144,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -38926,7 +39159,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-19-ombro-umero"
    ],
-   "questaoSha256": "35405c7f0f834fca61672c923768b0a583c3e32b10561d81b8fe837ec92be6c3"
+   "questaoSha256": "35405c7f0f834fca61672c923768b0a583c3e32b10561d81b8fe837ec92be6c3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: anatomia"
+      ],
+      "blocos": [
+       "umero-proximal-anatomia-f0be4955",
+       "umero-proximal-anatomia-d40fae5f",
+       "umero-proximal-anatomia-5f8a04fb"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "ecbee9e9cce0e0eefa315e971062f48fc5ea9ae39e62e843fb9ec5bc25154730"
+     }
+    ],
+    "questaoSha256": "35405c7f0f834fca61672c923768b0a583c3e32b10561d81b8fe837ec92be6c3",
+    "comentarioSha256": "3d57aef111e24e4a439c57a08ef323ab3a0ae5f89a759a7c39dac650a324a497"
+   }
   },
   "pediatria-0572": {
    "tema": "pediatria",
@@ -39060,8 +39318,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-fonte",
-   "motivo": "Lesão cervical baixa por carga axial na criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -39078,6 +39336,31 @@
     "rockwoodcriancas10-21-coluna-cervical"
    ],
    "questaoSha256": "34ddb8159c37aa7767b20ef2afb94d8105cabbb259874883cc75b28dad73e2b7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Cervical baixa (C3 a C7)"
+      ],
+      "blocos": [
+       "cervical-baixa-c3-a-c7-d1365fab",
+       "cervical-baixa-c3-a-c7-4e71d4fa",
+       "cervical-baixa-c3-a-c7-cb68fbf2"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "ed740d408d409960d33f942ddf757c9e0b2ae9b8e35fb72dce2f2bdb3f0e43ef"
+     }
+    ],
+    "questaoSha256": "34ddb8159c37aa7767b20ef2afb94d8105cabbb259874883cc75b28dad73e2b7",
+    "comentarioSha256": "d34e86532f46c78c07466f0e6e2b02fb5b830b265b956a75f96b4e17c8dd0cda"
+   },
    "pendencia": "Lesão cervical baixa por carga axial na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0579": {
@@ -39195,8 +39478,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Ratliff da necrose após fratura do quadril da criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -39213,6 +39496,31 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "fbca6c99f444d0969d0e43db92ca6c92899704168ea7d587ae1f1d5bb2ff0030",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Necrose"
+      ],
+      "blocos": [
+       "necrose-94b3c083",
+       "necrose-42bbef0d",
+       "necrose-b86ebbe6"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "36aa81e79e91931f4985795d4a1f5a7b287ddeb67ff9765e32a873e69a9f64c8"
+     }
+    ],
+    "questaoSha256": "fbca6c99f444d0969d0e43db92ca6c92899704168ea7d587ae1f1d5bb2ff0030",
+    "comentarioSha256": "d4c833fe5a70b43efd20d40a897bb0b91b37ec17dba043991593eb96321ea960"
+   },
    "pendencia": "Classificação de Ratliff da necrose após fratura do quadril da criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0582": {
@@ -39458,7 +39766,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39473,7 +39781,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "e62ebde84dc3ed8e7409be5bccaf7a035e1d2aa1f3a104a6bb27dee90805d266"
+   "questaoSha256": "e62ebde84dc3ed8e7409be5bccaf7a035e1d2aa1f3a104a6bb27dee90805d266",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Anatomia, mecanismos e atendimento inicial"
+      ],
+      "blocos": [
+       "anatomia-mecanismos-e-atendimento-inicial-c53da7ac",
+       "anatomia-mecanismos-e-atendimento-inicial-9ed4f490",
+       "anatomia-mecanismos-e-atendimento-inicial-0012f77d"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "7d4c61925a785a254102e87de52196fe060b699e3d0daa52d7c13cafc381a0c3"
+     }
+    ],
+    "questaoSha256": "e62ebde84dc3ed8e7409be5bccaf7a035e1d2aa1f3a104a6bb27dee90805d266",
+    "comentarioSha256": "c39b9b09c3145af5a4a75530a9e58371e5aba5bed3b9c1c2953f922779885811"
+   }
   },
   "pediatria-0588": {
    "tema": "pediatria",
@@ -39787,8 +40120,8 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente-fonte",
-   "motivo": "Imagem conferida (úmero proximal do adolescente com desvio total). Indicações de tratamento da fratura do úmero proximal na criança não estão nos resumos (o de epidemiologia só cita a curva de incidência).",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -39805,6 +40138,32 @@
     "rockwoodcriancas10-19-ombro-umero"
    ],
    "questaoSha256": "9f99c372fc6a88a932a58742bd2461a74711a7d4aa2c0de84b6e086a17532d10",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: classificação e tratamento"
+      ],
+      "blocos": [
+       "umero-proximal-classificacao-e-tratamento-e2c0307e",
+       "umero-proximal-classificacao-e-tratamento-0512b5c8",
+       "umero-proximal-classificacao-e-tratamento-85b800d0",
+       "umero-proximal-classificacao-e-tratamento-841c1a5b"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "4f6872189973fd730b17e4c3080284dd22aacdcba0d664761a5ac32ceaa1a628"
+     }
+    ],
+    "questaoSha256": "9f99c372fc6a88a932a58742bd2461a74711a7d4aa2c0de84b6e086a17532d10",
+    "comentarioSha256": "cdc0d2da2163c1d914f5a1833fcd47b469ee54b39b26b35750f64a9e75e67ec4"
+   },
    "pendencia": "Imagem conferida (úmero proximal do adolescente com desvio total). Indicações de tratamento da fratura do úmero proximal na criança não estão nos resumos (o de epidemiologia só cita a curva de incidência)."
   },
   "pediatria-0596": {
@@ -39935,8 +40294,8 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Delbet-Colonna e o tipo mais frequente de fratura do colo do fêmur na criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -39956,6 +40315,33 @@
     "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "2a2a0e7b45b3233b43e40a32ca67f127ef9f871fad385bf63629f054614b4947",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Classificação de DELBET",
+       "Anatomia e irrigação"
+      ],
+      "blocos": [
+       "classificacao-de-delbet-e1115de7",
+       "classificacao-de-delbet-29878cdc",
+       "classificacao-de-delbet-8283998b",
+       "anatomia-e-irrigacao-be591f38"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+     }
+    ],
+    "questaoSha256": "2a2a0e7b45b3233b43e40a32ca67f127ef9f871fad385bf63629f054614b4947",
+    "comentarioSha256": "3b07e8e5f6c5ff0ce8efa28c8505a4f891a9b3fa40e17c14f5456fdfb321b5f4"
+   },
    "pendencia": "Classificação de Delbet-Colonna e o tipo mais frequente de fratura do colo do fêmur na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0600": {
@@ -40235,7 +40621,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40250,7 +40636,33 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "ef95cf9a5a44fc939dcd3dc9902e9d9af3929c3c3d2a91d9f4897a5c82270aa1"
+   "questaoSha256": "ef95cf9a5a44fc939dcd3dc9902e9d9af3929c3c3d2a91d9f4897a5c82270aa1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "C1 e C2: atlas, odontoide e enforcado",
+       "Imagem e variantes normais"
+      ],
+      "blocos": [
+       "c1-e-c2-atlas-odontoide-e-enforcado-cc93063a",
+       "c1-e-c2-atlas-odontoide-e-enforcado-ff6c1839",
+       "imagem-e-variantes-normais-6d2318e9"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "f43135f95ef0aa935994bbce46536381ccff313feabd605ee1e25f3ba88ad729"
+     }
+    ],
+    "questaoSha256": "ef95cf9a5a44fc939dcd3dc9902e9d9af3929c3c3d2a91d9f4897a5c82270aa1",
+    "comentarioSha256": "7ec51f6480ed61cae6d7c2524ad43f790f89087930aecaee5808a5840ea6f624"
+   }
   },
   "pediatria-0606": {
    "tema": "pediatria",
@@ -40570,7 +40982,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40585,7 +40997,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo"
    ],
-   "questaoSha256": "b23bd9bbd069d79a292c3d80045481d1310b3211fa76e3633756ba9d9a29322b"
+   "questaoSha256": "b23bd9bbd069d79a292c3d80045481d1310b3211fa76e3633756ba9d9a29322b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "A pelve da criança"
+      ],
+      "blocos": [
+       "a-pelve-da-crianca-270b4d6d",
+       "a-pelve-da-crianca-6b981e7d"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "dc1bb928f09bcb691038645223e68306e0b0007ce01ecce878a9cee29ab03f43"
+     }
+    ],
+    "questaoSha256": "b23bd9bbd069d79a292c3d80045481d1310b3211fa76e3633756ba9d9a29322b",
+    "comentarioSha256": "21d825cde21fb827222c63cab592ed61beaa761c4fa61b1790c15bc256e27a40"
+   }
   },
   "pediatria-0614": {
    "tema": "pediatria",
@@ -40737,7 +41173,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40752,7 +41188,33 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-19-ombro-umero"
    ],
-   "questaoSha256": "eb5e2dfbd336a498f98c9cf0755e30a0bf1eef042fb6634cc48c7806f401e7b0"
+   "questaoSha256": "eb5e2dfbd336a498f98c9cf0755e30a0bf1eef042fb6634cc48c7806f401e7b0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: anatomia",
+       "Úmero proximal: classificação e tratamento"
+      ],
+      "blocos": [
+       "umero-proximal-anatomia-f0be4955",
+       "umero-proximal-anatomia-5f8a04fb",
+       "umero-proximal-classificacao-e-tratamento-85b800d0"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "b2f3c01e5ddeecd33da7dc2086363448d720f571280aef8a22f7c3a25e381298"
+     }
+    ],
+    "questaoSha256": "eb5e2dfbd336a498f98c9cf0755e30a0bf1eef042fb6634cc48c7806f401e7b0",
+    "comentarioSha256": "eaec179d7cfd2995d85cc4e9882749c9c86f7251b6ad35301e0345d8bbc1c7b8"
+   }
   },
   "pediatria-0618": {
    "tema": "pediatria",
@@ -40762,8 +41224,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente-fonte",
-   "motivo": "Falta curva etária específica das fraturas da DIÁFISE do ÚMERO infantil que compare0–3,3–6,6–9 e9–12anos. O corpo1 apresenta curvas gerais e menciona úmeroPROXIMAL no pico tardio,sem autorizar transferi-lo para a diáfise ou provar o pico0–3anos. OficialA preservado;sem selo.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -40780,6 +41242,30 @@
     "rockwoodcriancas10-19-ombro-umero"
    ],
    "questaoSha256": "a256a8f71a3cebc0a877c4194e80b9074325db700b66454d77c5b45bdf949dbe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Diáfise do úmero"
+      ],
+      "blocos": [
+       "diafise-do-umero-1594c017",
+       "diafise-do-umero-c60b57e3"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "b845aecd560f0b12e6fe09067e6bb7de5bd10998b82c55bc0d24bbb1b16997e4"
+     }
+    ],
+    "questaoSha256": "a256a8f71a3cebc0a877c4194e80b9074325db700b66454d77c5b45bdf949dbe",
+    "comentarioSha256": "aa58e60509c0cb13bffb389f498735e752a7af210d9892f6c2d4ae163f5492a4"
+   },
    "pendencia": "Falta curva etária específica das fraturas da DIÁFISE do ÚMERO infantil que compare0–3,3–6,6–9 e9–12anos. O corpo1 apresenta curvas gerais e menciona úmeroPROXIMAL no pico tardio,sem autorizar transferi-lo para a diáfise ou provar o pico0–3anos. OficialA preservado;sem selo."
   },
   "pediatria-0619": {
@@ -40853,8 +41339,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Torode e Zieg (ramos púbicos bilaterais) não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -40872,6 +41358,33 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "c80e17b85be5895fa5bad129a9aab15a6e35eb69ceb02b47becf93e84d472c03",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Classificação",
+       "Fraturas instáveis (tipo IV)"
+      ],
+      "blocos": [
+       "classificacao-157b6ed1",
+       "classificacao-927156f0",
+       "classificacao-890526e7",
+       "fraturas-instaveis-tipo-iv-2efff893"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "20c0f25240a774b0ab882d0e05c23c1549bb4a486293f4ee2b13f591e6405cce"
+     }
+    ],
+    "questaoSha256": "c80e17b85be5895fa5bad129a9aab15a6e35eb69ceb02b47becf93e84d472c03",
+    "comentarioSha256": "063ec26b826461abe0aba27b9525a67528edb29622c51b5e95d742e74be94ed3"
+   },
    "pendencia": "Classificação de Torode e Zieg (ramos púbicos bilaterais) não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0621": {
@@ -41321,8 +41834,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente-fonte",
-   "motivo": "Faltam limites de rotação medial e de varo/valgo aceitáveis na fratura DIAFISÁRIA do ÚMERO infantil,com idade e plano próprios. As tabelas do fêmur no corpo25 e a remodelação geral do corpo1 não fundamentam os pares15/20,15/40,30/20 ou30/40 desse outro osso. OficialA preservado.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -41339,6 +41852,31 @@
     "rockwoodcriancas10-19-ombro-umero"
    ],
    "questaoSha256": "d97e199416cc553d5aabf1399668b13a6c9611a27483514ad17c4121ef50bd84",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Diáfise do úmero"
+      ],
+      "blocos": [
+       "diafise-do-umero-ed0e929e",
+       "diafise-do-umero-1594c017",
+       "diafise-do-umero-c60b57e3"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "7a4656b28784493a551b158ac6501a4340326009d280008c1bbd01fcf276681d"
+     }
+    ],
+    "questaoSha256": "d97e199416cc553d5aabf1399668b13a6c9611a27483514ad17c4121ef50bd84",
+    "comentarioSha256": "ddc977695ffa1419adf9ffea27b36fdd2246d90d2e81963a226b9da08010ce9e"
+   },
    "pendencia": "Faltam limites de rotação medial e de varo/valgo aceitáveis na fratura DIAFISÁRIA do ÚMERO infantil,com idade e plano próprios. As tabelas do fêmur no corpo25 e a remodelação geral do corpo1 não fundamentam os pares15/20,15/40,30/20 ou30/40 desse outro osso. OficialA preservado."
   },
   "pediatria-0632": {
@@ -41401,8 +41939,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente-fonte",
-   "motivo": "Fratura distal da clavícula tipo V de Rockwood na criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -41420,6 +41958,34 @@
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
    "questaoSha256": "5fb374ebd15a1acbe16e46ef79daf2f7fded1a8149ea3f51f77d3190a341111c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Clavícula: terço lateral",
+       "Acromioclavicular"
+      ],
+      "blocos": [
+       "clavicula-terco-lateral-be6075a5",
+       "clavicula-terco-lateral-ee4be395",
+       "clavicula-terco-lateral-d808c290",
+       "clavicula-terco-lateral-5f79a99d",
+       "acromioclavicular-71a997a6"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "2482fa8ad6b9eeadb32695f5d18864dd349e921ded90b6a70f75e81f4a519fd5"
+     }
+    ],
+    "questaoSha256": "5fb374ebd15a1acbe16e46ef79daf2f7fded1a8149ea3f51f77d3190a341111c",
+    "comentarioSha256": "56ec45f424cd33d10170da33b2e16f716b0c70b8254294934a9ee197242d02f6"
+   },
    "pendencia": "Fratura distal da clavícula tipo V de Rockwood na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0634": {
@@ -41715,7 +42281,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41731,7 +42297,33 @@
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "7a45bc98f9612458548f2ea4c9694f721814455a620ed779b1f786fa0a5a39cb"
+   "questaoSha256": "7a45bc98f9612458548f2ea4c9694f721814455a620ed779b1f786fa0a5a39cb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: classificação e tratamento",
+       "Úmero proximal: anatomia"
+      ],
+      "blocos": [
+       "umero-proximal-classificacao-e-tratamento-e2c0307e",
+       "umero-proximal-classificacao-e-tratamento-841c1a5b",
+       "umero-proximal-anatomia-f0be4955"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "0e7cdc163a4d4b6b01f4becd77fb973856dff9d5b5d4d257c9f6a0990a13ec37"
+     }
+    ],
+    "questaoSha256": "7a45bc98f9612458548f2ea4c9694f721814455a620ed779b1f786fa0a5a39cb",
+    "comentarioSha256": "b058d8e19dbff2f854a716e77793531c492b33ea4a57d12241b7d5dbb10d4c2f"
+   }
   },
   "pediatria-0643": {
    "tema": "pediatria",
@@ -41850,8 +42442,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Torode e Zieg (ramos púbicos bilaterais) não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -41868,6 +42460,33 @@
     "rockwoodcriancas10-23-pelve-acetabulo"
    ],
    "questaoSha256": "7ecbf9307289005a8fd8c198d6d33c22bb4c9a8eba18eae111c525195c298c12",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Classificação",
+       "Fraturas instáveis (tipo IV)"
+      ],
+      "blocos": [
+       "classificacao-157b6ed1",
+       "classificacao-927156f0",
+       "classificacao-890526e7",
+       "fraturas-instaveis-tipo-iv-2efff893"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "20c0f25240a774b0ab882d0e05c23c1549bb4a486293f4ee2b13f591e6405cce"
+     }
+    ],
+    "questaoSha256": "7ecbf9307289005a8fd8c198d6d33c22bb4c9a8eba18eae111c525195c298c12",
+    "comentarioSha256": "b6d438ca2bad2585a112946fea9c8eb98e80d7b4dbad6c3025202344a14e2620"
+   },
    "pendencia": "Classificação de Torode e Zieg (ramos púbicos bilaterais) não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0646": {
@@ -42153,8 +42772,8 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente-fonte",
-   "motivo": "Falta classificaçãoDelbet I–IV com risco de necrose avascular por tipo nas fraturas proximais do fêmur da criança. O mecanismo vascular da haste em fratura diafisária no corpo25 não demonstra menor risco no tipoIV nem permite analisarI/II/III. OficialD preservado;sem selo.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -42172,6 +42791,33 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "50f275831c6fce74a0704e81aea527349c515654d1fb65e5f4ee66c46b576ea4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Classificação de DELBET",
+       "Anatomia e irrigação"
+      ],
+      "blocos": [
+       "classificacao-de-delbet-e1115de7",
+       "classificacao-de-delbet-29878cdc",
+       "classificacao-de-delbet-8283998b",
+       "anatomia-e-irrigacao-be591f38"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+     }
+    ],
+    "questaoSha256": "50f275831c6fce74a0704e81aea527349c515654d1fb65e5f4ee66c46b576ea4",
+    "comentarioSha256": "17783fc573911646544d68c938801a29072269d8e13ba2adea9aad86b9f2f0d3"
+   },
    "pendencia": "Falta classificaçãoDelbet I–IV com risco de necrose avascular por tipo nas fraturas proximais do fêmur da criança. O mecanismo vascular da haste em fratura diafisária no corpo25 não demonstra menor risco no tipoIV nem permite analisarI/II/III. OficialD preservado;sem selo."
   },
   "pediatria-0652": {
@@ -42433,8 +43079,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente-fonte",
-   "motivo": "Percentual das fraturas da clavícula segundo Guarniero (o capítulo 1 só cita a clavícula entre os locais frequentes e como bimodal) não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -42452,6 +43098,30 @@
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
    "questaoSha256": "535088fa14ab876b445f571ebba9ef145e5c2f125686a98632c02c9de049a659",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Clavícula: epidemiologia, mecanismos e recém-nascido"
+      ],
+      "blocos": [
+       "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d",
+       "clavicula-epidemiologia-mecanismos-e-recem-nasci-90905e86"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "c65cd365a3b4d3a7b2e1ebf1602de9a1de0e70dc3d90c8298cbc294ca68fb7af"
+     }
+    ],
+    "questaoSha256": "535088fa14ab876b445f571ebba9ef145e5c2f125686a98632c02c9de049a659",
+    "comentarioSha256": "24ca6813699e09d82b1eb146986cbf5a2a78eedd15681373862fe5f307702ef3"
+   },
    "pendencia": "Percentual das fraturas da clavícula segundo Guarniero (o capítulo 1 só cita a clavícula entre os locais frequentes e como bimodal) não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0658": {
@@ -42529,8 +43199,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Torode e Zieg (ramo anterior e elemento posterior) não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -42548,6 +43218,31 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "20bc44fcdc8c0369c66e31bce35e11060f101040048a2de7f72ea8bf736b6a2a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Classificação"
+      ],
+      "blocos": [
+       "classificacao-157b6ed1",
+       "classificacao-927156f0",
+       "classificacao-890526e7"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "d5e27f93744ca22b927fe18985f6b3d3a11877f1df700528b1f8dba3503b227f"
+     }
+    ],
+    "questaoSha256": "20bc44fcdc8c0369c66e31bce35e11060f101040048a2de7f72ea8bf736b6a2a",
+    "comentarioSha256": "a30542bbb79904df3ba2639fdcff4532d32e991142c38444dd9fcb97af4354a0"
+   },
    "pendencia": "Classificação de Torode e Zieg (ramo anterior e elemento posterior) não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0661": {
@@ -42864,8 +43559,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente-fonte",
-   "motivo": "Redução incruenta da fratura proximal do úmero da criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -42882,6 +43577,31 @@
     "rockwoodcriancas10-19-ombro-umero"
    ],
    "questaoSha256": "1f616d0c0c8b2c96f29bea859e3003076f15b71b839a6908b864ce23769f530d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: classificação e tratamento",
+       "Úmero proximal: anatomia"
+      ],
+      "blocos": [
+       "umero-proximal-classificacao-e-tratamento-e2c0307e",
+       "umero-proximal-anatomia-d40fae5f"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "3f47d34416388c66a300646314884d573dfd85fb6c6db5d5259db143e7d733dc"
+     }
+    ],
+    "questaoSha256": "1f616d0c0c8b2c96f29bea859e3003076f15b71b839a6908b864ce23769f530d",
+    "comentarioSha256": "d1d122d6adc8db3dfe343c81f3a726955584469f28bfce398111b0dcb80190ac"
+   },
    "pendencia": "Redução incruenta da fratura proximal do úmero da criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0668": {
@@ -43285,8 +44005,8 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente-fonte",
-   "motivo": "A pergunta exige prevalência pediátrica de fratura do terço médio (76–85% na opção D). O resumo 34 fornece 80–85% para as fraturas de clavícula em geral e discute epidemiologia adulta, mas não traz coorte pediátrica para confirmar o intervalo infantil e excluir as outras três faixas. Coincidência numérica não prova a população. Falta fonte pediátrica da frequência; D e comentário preservados, sem selo novo.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -43312,6 +44032,30 @@
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
    "questaoSha256": "083e5961d9fdf405e8596132ed8f28f070c4609b7d83aaacd3dd0e66927f9101",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Clavícula: epidemiologia, mecanismos e recém-nascido"
+      ],
+      "blocos": [
+       "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d",
+       "clavicula-epidemiologia-mecanismos-e-recem-nasci-90905e86"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "c65cd365a3b4d3a7b2e1ebf1602de9a1de0e70dc3d90c8298cbc294ca68fb7af"
+     }
+    ],
+    "questaoSha256": "083e5961d9fdf405e8596132ed8f28f070c4609b7d83aaacd3dd0e66927f9101",
+    "comentarioSha256": "c1946ed399dced72a69b8ee96353be61a922baa7d820a5ab7d0b07afc24e9a22"
+   },
    "pendencia": "A pergunta exige prevalência pediátrica de fratura do terço médio (76–85% na opção D). O resumo 34 fornece 80–85% para as fraturas de clavícula em geral e discute epidemiologia adulta, mas não traz coorte pediátrica para confirmar o intervalo infantil e excluir as outras três faixas. Coincidência numérica não prova a população. Falta fonte pediátrica da frequência; D e comentário preservados, sem selo novo."
   },
   "pediatria-0686": {
@@ -43635,8 +44379,8 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente-fonte",
-   "motivo": "Complicação da fratura pélvica tipo III de Torode e Zieg não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -43654,6 +44398,34 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "dbc8fe6c2d4e86ecfffb0d0762811e6a05618659efe9834cce2232b08abefbbd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Complicações",
+       "Asa, sacro, cóccix e anel estável (tipos II e III)",
+       "Fraturas instáveis (tipo IV)"
+      ],
+      "blocos": [
+       "complicacoes-d896ef7d",
+       "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-f0400c85",
+       "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-a53e8cba",
+       "fraturas-instaveis-tipo-iv-d7cb082d"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "9d26744de542423a6b6c7d7994839d5c48b2e01e33aecf5ee25442d938c121ba"
+     }
+    ],
+    "questaoSha256": "dbc8fe6c2d4e86ecfffb0d0762811e6a05618659efe9834cce2232b08abefbbd",
+    "comentarioSha256": "540a64c92e0a0ce384822c68b748c8d8978f230977d51fd05cc1e62b10e9f947"
+   },
    "pendencia": "Complicação da fratura pélvica tipo III de Torode e Zieg não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0695": {
@@ -44256,8 +45028,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-fonte",
-   "motivo": "Lado da fratura de clavícula no recém-nascido não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -44275,6 +45047,31 @@
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
    "questaoSha256": "28a307e8cf26678d4950ca6d0d6e3a649507f3493ca637830a911a9977267fca",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Clavícula: epidemiologia, mecanismos e recém-nascido"
+      ],
+      "blocos": [
+       "clavicula-epidemiologia-mecanismos-e-recem-nasci-5ea9db75",
+       "clavicula-epidemiologia-mecanismos-e-recem-nasci-a0e9c19c",
+       "clavicula-epidemiologia-mecanismos-e-recem-nasci-90905e86"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "e8127b896d6d4dc879f2ddf621ed56b16fb877abad5895f88565d691bc6ec547"
+     }
+    ],
+    "questaoSha256": "28a307e8cf26678d4950ca6d0d6e3a649507f3493ca637830a911a9977267fca",
+    "comentarioSha256": "64c1ab84bfa652b7d81783fb1446f1d915e468f4b567937f92c37ea41a623dac"
+   },
    "pendencia": "Lado da fratura de clavícula no recém-nascido não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0707": {
@@ -44285,8 +45082,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-fonte",
-   "motivo": "Falta técnica de redução fechada da fratura tipoII deDelbet na criança,com sequência fundamentada de adução/abdução e rotação medial/lateral. Nenhum desses movimentos pode ser derivado da tabela de tratamento da diáfise femoral do corpo25 ou da epidemiologia do corpo1. OficialD preservado;não importar manobra do adulto sem fonte.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -44304,6 +45101,31 @@
     "rockwoodcriancas10-24-quadril"
    ],
    "questaoSha256": "549ac4e4fc76a51d697c6408f747f55d6066bd55941ad9a94cb874baa35804eb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Tratamento"
+      ],
+      "blocos": [
+       "tratamento-089519c6",
+       "tratamento-c73ba8ee",
+       "tratamento-b247f0ce"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "9f76fbef863217168b882fc8b8a6f5f49ca8e04420eb0a3a645f183db184399b"
+     }
+    ],
+    "questaoSha256": "549ac4e4fc76a51d697c6408f747f55d6066bd55941ad9a94cb874baa35804eb",
+    "comentarioSha256": "e2880aa8812942167a30c84a8f3bacbc471e557497ca5d7df71edc176cb8a57c"
+   },
    "pendencia": "Falta técnica de redução fechada da fratura tipoII deDelbet na criança,com sequência fundamentada de adução/abdução e rotação medial/lateral. Nenhum desses movimentos pode ser derivado da tabela de tratamento da diáfise femoral do corpo25 ou da epidemiologia do corpo1. OficialD preservado;não importar manobra do adulto sem fonte."
   },
   "pediatria-0708": {
@@ -44606,7 +45428,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44621,7 +45443,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-19-ombro-umero"
    ],
-   "questaoSha256": "0e65766597ab22f064f509bfc6c86165d7a3d3246caea2da48cd3089333b72ef"
+   "questaoSha256": "0e65766597ab22f064f509bfc6c86165d7a3d3246caea2da48cd3089333b72ef",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: classificação e tratamento"
+      ],
+      "blocos": [
+       "umero-proximal-classificacao-e-tratamento-85b800d0",
+       "umero-proximal-classificacao-e-tratamento-841c1a5b"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "84c018aa3879a26dc03a60e6a0682257810e9d3ca7741a18b20ac128bc949759"
+     }
+    ],
+    "questaoSha256": "0e65766597ab22f064f509bfc6c86165d7a3d3246caea2da48cd3089333b72ef",
+    "comentarioSha256": "7cc110e480fb42d73a35898c851ebc3a9addc5147800fcfb6d6245ba67ad292b"
+   }
   },
   "pediatria-0716": {
    "tema": "pediatria",
@@ -44691,7 +45537,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44706,7 +45552,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "78fa01c78ffc148dbd9d823cff10e32f35becbf49d0e868c8e85e073911c6267"
+   "questaoSha256": "78fa01c78ffc148dbd9d823cff10e32f35becbf49d0e868c8e85e073911c6267",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Imagem e variantes normais"
+      ],
+      "blocos": [
+       "imagem-e-variantes-normais-c95c9882",
+       "imagem-e-variantes-normais-6d2318e9",
+       "imagem-e-variantes-normais-cac0827f"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "2ec4484476e66d374bda9b7a1984fd5898e49eb5a9f174a5ab0ebd8c0010cf99"
+     }
+    ],
+    "questaoSha256": "78fa01c78ffc148dbd9d823cff10e32f35becbf49d0e868c8e85e073911c6267",
+    "comentarioSha256": "e49d22e0c24d5c9a797aa309b34fe6889779c50e585bdddc476ed3e6d5401b72"
+   }
   },
   "pediatria-0718": {
    "tema": "pediatria",
@@ -44921,7 +45792,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44937,7 +45808,38 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "1522a06d1e19bbf78c2eb47e5630a4ba3b139c188068009269092cab2b913454"
+   "questaoSha256": "1522a06d1e19bbf78c2eb47e5630a4ba3b139c188068009269092cab2b913454",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Classificação de DELBET",
+       "Anatomia e irrigação",
+       "Tratamento",
+       "Coxa vara, fise e pseudartrose"
+      ],
+      "blocos": [
+       "classificacao-de-delbet-e1115de7",
+       "classificacao-de-delbet-29878cdc",
+       "classificacao-de-delbet-8283998b",
+       "anatomia-e-irrigacao-be591f38",
+       "tratamento-c4a2001b",
+       "coxa-vara-fise-e-pseudartrose-17944458"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "1200006ff89424cd07781022c21241c3477342ebca70d5e2d364d587e49185cf"
+     }
+    ],
+    "questaoSha256": "1522a06d1e19bbf78c2eb47e5630a4ba3b139c188068009269092cab2b913454",
+    "comentarioSha256": "a0253a1a322b2a3156856f22c7e18f543d51ce1fb9825307bf6012e0851f50b7"
+   }
   },
   "pediatria-0722": {
    "tema": "pediatria",
@@ -45109,8 +46011,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente-fonte",
-   "motivo": "Tratamento das fraturas do colo do fêmur da criança por tipo de Delbet não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -45130,6 +46032,33 @@
     "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "267d9dd5d4f75166b4829f028c07649747e46a0fc97e17dcf047895facc6212f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Tratamento"
+      ],
+      "blocos": [
+       "tratamento-089519c6",
+       "tratamento-1e26a06b",
+       "tratamento-c4a2001b",
+       "tratamento-c73ba8ee",
+       "tratamento-b247f0ce"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "8ca4ffb3b5bb90a80753a01980e57ac3f7019c7084617661b1bab707336a07fd"
+     }
+    ],
+    "questaoSha256": "267d9dd5d4f75166b4829f028c07649747e46a0fc97e17dcf047895facc6212f",
+    "comentarioSha256": "c572aebddaa8d548154d1b7296b5417ff95ac781298e39530214d8454495eaba"
+   },
    "pendencia": "Tratamento das fraturas do colo do fêmur da criança por tipo de Delbet não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0731": {
@@ -45793,7 +46722,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45808,7 +46737,31 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-19-ombro-umero"
    ],
-   "questaoSha256": "66c3d6b0f7c04ea32376a7a6984891a65a35a4e68d002aa7e9ccdbd8151e6358"
+   "questaoSha256": "66c3d6b0f7c04ea32376a7a6984891a65a35a4e68d002aa7e9ccdbd8151e6358",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: classificação e tratamento"
+      ],
+      "blocos": [
+       "umero-proximal-classificacao-e-tratamento-e2c0307e",
+       "umero-proximal-classificacao-e-tratamento-841c1a5b"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "0c5ce352964b391dd5d343af51597bec14afc51fa030001b9e4049ec8ffee5e0"
+     }
+    ],
+    "questaoSha256": "66c3d6b0f7c04ea32376a7a6984891a65a35a4e68d002aa7e9ccdbd8151e6358",
+    "comentarioSha256": "411ebab675bfe5943f986a15fc78e4f15cdc7c10ed264e486eee2111560e1fa1"
+   }
   },
   "pediatria-0754": {
    "tema": "pediatria",
@@ -46113,8 +47066,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente-fonte",
-   "motivo": "Instabilidade C1-C2 na fratura de Jefferson da criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -46131,6 +47084,32 @@
     "rockwoodcriancas10-21-coluna-cervical"
    ],
    "questaoSha256": "db91b8bb8669cf560e6b24c3fd90d3d01db134753189f84a934ff907571fc806",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "C1 e C2: atlas, odontoide e enforcado",
+       "Imagem e variantes normais"
+      ],
+      "blocos": [
+       "c1-e-c2-atlas-odontoide-e-enforcado-9ffea837",
+       "c1-e-c2-atlas-odontoide-e-enforcado-ff6c1839",
+       "imagem-e-variantes-normais-c95c9882"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "23ec4a2f519e8cb2a4e3956c82f2afcdd519158bc1e9fd6a527c21a526a6f13d"
+     }
+    ],
+    "questaoSha256": "db91b8bb8669cf560e6b24c3fd90d3d01db134753189f84a934ff907571fc806",
+    "comentarioSha256": "cb39dc57f8cbaf324f3f63834d3e9d7d99bb52d7d01c3b62fcbfe21ea019d901"
+   },
    "pendencia": "Instabilidade C1-C2 na fratura de Jefferson da criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0771": {
@@ -46958,8 +47937,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Ratliff e prognóstico da necrose não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -46979,6 +47958,31 @@
     "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "01672a8f0386ba4f16885e9d2fa009354c233d9321783905e1421da4ccbc71b5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Necrose"
+      ],
+      "blocos": [
+       "necrose-94b3c083",
+       "necrose-42bbef0d",
+       "necrose-b86ebbe6"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "36aa81e79e91931f4985795d4a1f5a7b287ddeb67ff9765e32a873e69a9f64c8"
+     }
+    ],
+    "questaoSha256": "01672a8f0386ba4f16885e9d2fa009354c233d9321783905e1421da4ccbc71b5",
+    "comentarioSha256": "c66a143e53cb45d1a3ba610a591ee772ef0882816be2a4fad5424752da29255c"
+   },
    "pendencia": "Classificação de Ratliff e prognóstico da necrose não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0820": {
@@ -47013,7 +48017,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47028,7 +48032,33 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-19-ombro-umero"
    ],
-   "questaoSha256": "98ae1a643a1e307e0e96599c0c435ccf6c09eb22c985ebc8c5abf5332786c38d"
+   "questaoSha256": "98ae1a643a1e307e0e96599c0c435ccf6c09eb22c985ebc8c5abf5332786c38d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: anatomia",
+       "Instabilidade do ombro"
+      ],
+      "blocos": [
+       "umero-proximal-anatomia-f0be4955",
+       "instabilidade-do-ombro-d8c2cceb",
+       "instabilidade-do-ombro-14626369"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "8e4c424a67d82fb4582dcaa06aa8602ea6d8d8b4aa01f2404d379f0a2b306464"
+     }
+    ],
+    "questaoSha256": "98ae1a643a1e307e0e96599c0c435ccf6c09eb22c985ebc8c5abf5332786c38d",
+    "comentarioSha256": "5f74a494fd57775d18f23de6eeefd9e04bce6b5b2aef5ef6723447597d78239a"
+   }
   },
   "pediatria-0822": {
    "tema": "pediatria",
@@ -47037,7 +48067,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47053,7 +48083,32 @@
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "d6e5defddf323bcff434d1ecadabcc1011cc772f5b94b1b8e3bb08a931246d87"
+   "questaoSha256": "d6e5defddf323bcff434d1ecadabcc1011cc772f5b94b1b8e3bb08a931246d87",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Clavícula: terço lateral"
+      ],
+      "blocos": [
+       "clavicula-terco-lateral-be6075a5",
+       "clavicula-terco-lateral-5f79a99d",
+       "clavicula-terco-lateral-ee4be395"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "79d11ca994d82f7d9bcad61995a90a876900531c4f841c0c4f7885f6f78ed8d8"
+     }
+    ],
+    "questaoSha256": "d6e5defddf323bcff434d1ecadabcc1011cc772f5b94b1b8e3bb08a931246d87",
+    "comentarioSha256": "9583a0ab69ba24665934bec7d925fe6a07475ee4789d143848f946a0e60003eb"
+   }
   },
   "pediatria-0823": {
    "tema": "pediatria",
@@ -47874,8 +48929,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente-fonte",
-   "motivo": "Avulsão da espinha ilíaca anteroinferior na criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -47892,6 +48947,31 @@
     "rockwoodcriancas10-23-pelve-acetabulo"
    ],
    "questaoSha256": "4e6f12d13f7d33de9a46eb488087ea11e243cd78928313c791cbd1ecfa4c7f48",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Avulsões (tipo I)"
+      ],
+      "blocos": [
+       "avulsoes-tipo-i-ba5cd877",
+       "avulsoes-tipo-i-cf35bcfc",
+       "avulsoes-tipo-i-8d17af2b"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "ca2663796ef1692fa9e9c1ba976bb7e42dfa9c8ff9a63792799cd6f699ef1cca"
+     }
+    ],
+    "questaoSha256": "4e6f12d13f7d33de9a46eb488087ea11e243cd78928313c791cbd1ecfa4c7f48",
+    "comentarioSha256": "b0aa482826b072945039704694671b668ea31a7fb23ea13fa907c7bfc9e3fc8e"
+   },
    "pendencia": "Avulsão da espinha ilíaca anteroinferior na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0846": {
@@ -48018,8 +49098,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -48034,7 +49114,31 @@
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "438edf83b42a86a7e899c940c6a3c731c0846748b221f6ae70d18dd4b6a66c71"
+   "questaoSha256": "438edf83b42a86a7e899c940c6a3c731c0846748b221f6ae70d18dd4b6a66c71",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: classificação e tratamento"
+      ],
+      "blocos": [
+       "umero-proximal-classificacao-e-tratamento-85b800d0",
+       "umero-proximal-classificacao-e-tratamento-841c1a5b"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "84c018aa3879a26dc03a60e6a0682257810e9d3ca7741a18b20ac128bc949759"
+     }
+    ],
+    "questaoSha256": "438edf83b42a86a7e899c940c6a3c731c0846748b221f6ae70d18dd4b6a66c71",
+    "comentarioSha256": "96cbf37c71857f6e853bd3cc3d22795866488db5bb3fc0c27102ec41701080c3"
+   }
   },
   "pediatria-0849": {
    "tema": "pediatria",
@@ -48184,7 +49288,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -48200,7 +49304,32 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "39f22474616f718c36eff3d2461313d7fd5b1878efa67501d8dac8a5d0bc8068"
+   "questaoSha256": "39f22474616f718c36eff3d2461313d7fd5b1878efa67501d8dac8a5d0bc8068",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Imagem e variantes normais"
+      ],
+      "blocos": [
+       "imagem-e-variantes-normais-c95c9882",
+       "imagem-e-variantes-normais-6d2318e9",
+       "imagem-e-variantes-normais-cac0827f"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "2ec4484476e66d374bda9b7a1984fd5898e49eb5a9f174a5ab0ebd8c0010cf99"
+     }
+    ],
+    "questaoSha256": "39f22474616f718c36eff3d2461313d7fd5b1878efa67501d8dac8a5d0bc8068",
+    "comentarioSha256": "c13dd9c838c08f4ab716b2d3d9c4492b09ad54528fd62dc118a460dabb12615c"
+   }
   },
   "pediatria-0858": {
    "tema": "pediatria",
@@ -48210,8 +49339,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Delbet-Colonna (questão de caso) não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -48231,6 +49360,33 @@
     "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "9bf61aafa33f915e4364aeb2db3ba0a3b9433cac8ef6ed068d60bce44101ca7e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Classificação de DELBET",
+       "Anatomia e irrigação"
+      ],
+      "blocos": [
+       "classificacao-de-delbet-e1115de7",
+       "classificacao-de-delbet-29878cdc",
+       "classificacao-de-delbet-8283998b",
+       "anatomia-e-irrigacao-be591f38"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+     }
+    ],
+    "questaoSha256": "9bf61aafa33f915e4364aeb2db3ba0a3b9433cac8ef6ed068d60bce44101ca7e",
+    "comentarioSha256": "3eb4327204f5ca722afb5bc0463860acfad72c94d4af68d029d2a3d0d2caca26"
+   },
    "pendencia": "Classificação de Delbet-Colonna (questão de caso) não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0863": {
@@ -49007,7 +50163,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49023,7 +50179,32 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "1501858ecdf98932f862b2396a5118b0bda28ea091a701046c90d4d4684b0a78"
+   "questaoSha256": "1501858ecdf98932f862b2396a5118b0bda28ea091a701046c90d4d4684b0a78",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+      "titulo": "Fraturas da coluna toracolombar na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+      "secoes": [
+       "Flexão-distração (CHANCE) e fratura-luxação"
+      ],
+      "blocos": [
+       "flexao-distracao-chance-e-fratura-luxacao-b198d03d",
+       "flexao-distracao-chance-e-fratura-luxacao-4f7bbbec",
+       "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
+      ],
+      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+      "trechosSha256": "637d34d58d9475f0faa594e2917856495b5a9c9454fefb46ef7017cd295fc009"
+     }
+    ],
+    "questaoSha256": "1501858ecdf98932f862b2396a5118b0bda28ea091a701046c90d4d4684b0a78",
+    "comentarioSha256": "288735d8479d4308cd803e55da61614344731fe18057ddef783a672cf1d616fd"
+   }
   },
   "pediatria-0914": {
    "tema": "pediatria",
@@ -49286,7 +50467,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49302,7 +50483,34 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "9f2528e00533fdae614e41e3c8448cb08317232ae09eadaf05f07ab06e9df451"
+   "questaoSha256": "9f2528e00533fdae614e41e3c8448cb08317232ae09eadaf05f07ab06e9df451",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Classificação de DELBET",
+       "Anatomia e irrigação"
+      ],
+      "blocos": [
+       "classificacao-de-delbet-e1115de7",
+       "classificacao-de-delbet-29878cdc",
+       "classificacao-de-delbet-8283998b",
+       "anatomia-e-irrigacao-be591f38"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "f7bc6658a1076062bfc7d9d72da31fe39dd9727ac74a4ddf83c8fc0d7d0d516f"
+     }
+    ],
+    "questaoSha256": "9f2528e00533fdae614e41e3c8448cb08317232ae09eadaf05f07ab06e9df451",
+    "comentarioSha256": "66319d624512adead355e03df4c23069adb980d01e1003d4b21989bf258c77ce"
+   }
   },
   "pediatria-0921": {
    "tema": "pediatria",
@@ -50019,7 +51227,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50035,7 +51243,33 @@
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "13b54b38835f3c52449fd0bb450be770351f34afc5898c07e0b2ffa38b07d8bf"
+   "questaoSha256": "13b54b38835f3c52449fd0bb450be770351f34afc5898c07e0b2ffa38b07d8bf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Úmero proximal: classificação e tratamento",
+       "Úmero proximal: anatomia"
+      ],
+      "blocos": [
+       "umero-proximal-classificacao-e-tratamento-0512b5c8",
+       "umero-proximal-classificacao-e-tratamento-e2c0307e",
+       "umero-proximal-anatomia-f0be4955"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "0765822c75702cd51ebdb4002d9198edddf66acce7b3f9731ba15332341d1ea1"
+     }
+    ],
+    "questaoSha256": "13b54b38835f3c52449fd0bb450be770351f34afc5898c07e0b2ffa38b07d8bf",
+    "comentarioSha256": "45c5f8607626a4b9fe517b697c619d2ec76b45317ca712f2eefb47f172b25d96"
+   }
   },
   "pediatria-0946": {
    "tema": "pediatria",
@@ -50073,7 +51307,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50089,7 +51323,35 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "0c0ed95813d39107f0c8b1c00c879a7fcae83c0550f4f1d94e30ae06ef15ee54"
+   "questaoSha256": "0c0ed95813d39107f0c8b1c00c879a7fcae83c0550f4f1d94e30ae06ef15ee54",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+      "titulo": "Fraturas da pelve e do acetábulo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+      "secoes": [
+       "Lesões associadas e avaliação",
+       "Como ler este capítulo",
+       "Avulsões (tipo I)"
+      ],
+      "blocos": [
+       "lesoes-associadas-e-avaliacao-ab7c757b",
+       "lesoes-associadas-e-avaliacao-8ad856f6",
+       "como-ler-este-capitulo-e0cf127b",
+       "avulsoes-tipo-i-cf35bcfc"
+      ],
+      "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+      "trechosSha256": "bf1f4dbcbcc7d7ed634485143bd3d48fead1d8385ac79d4c8b936ab194bc764f"
+     }
+    ],
+    "questaoSha256": "0c0ed95813d39107f0c8b1c00c879a7fcae83c0550f4f1d94e30ae06ef15ee54",
+    "comentarioSha256": "85b32b1ef3b181c1cd5b778d4814ba72ec86c65e69280c9f4f326dc6305e4934"
+   }
   },
   "pediatria-0948": {
    "tema": "pediatria",
@@ -50310,7 +51572,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50326,7 +51588,31 @@
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "e79e7edb6490a5e47ef0ac86a09e6dfa8db4b1032cc46fc8f3f27e367735370f"
+   "questaoSha256": "e79e7edb6490a5e47ef0ac86a09e6dfa8db4b1032cc46fc8f3f27e367735370f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-19-ombro-umero",
+      "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+      "secoes": [
+       "Diáfise do úmero"
+      ],
+      "blocos": [
+       "diafise-do-umero-1594c017",
+       "diafise-do-umero-c60b57e3"
+      ],
+      "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+      "trechosSha256": "b845aecd560f0b12e6fe09067e6bb7de5bd10998b82c55bc0d24bbb1b16997e4"
+     }
+    ],
+    "questaoSha256": "e79e7edb6490a5e47ef0ac86a09e6dfa8db4b1032cc46fc8f3f27e367735370f",
+    "comentarioSha256": "8892269d961e94cb124be2b0004332a1f8096d268d1cd2c6aef56f09e145878a"
+   }
   },
   "pediatria-0954": {
    "tema": "pediatria",
@@ -57210,9 +58496,9 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
-   "temComentario": false,
+   "temComentario": true,
    "citacoes": [
     {
      "c": "rockwoodcriancas10-21-coluna-cervical",
@@ -57226,7 +58512,31 @@
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "cbf3821324f55aaad61447d1186e157baed12b6f707b316226780641e5d1f612"
+   "questaoSha256": "cbf3821324f55aaad61447d1186e157baed12b6f707b316226780641e5d1f612",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-21-coluna-cervical",
+      "titulo": "Lesões da coluna cervical na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+      "secoes": [
+       "Junção occipitocervical"
+      ],
+      "blocos": [
+       "juncao-occipitocervical-c8308246",
+       "juncao-occipitocervical-cac0f2e4"
+      ],
+      "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+      "trechosSha256": "18aba2c2d965e5954e7ee548d4729a2747fef5c9bfdb6c56499dd91196cb84e0"
+     }
+    ],
+    "questaoSha256": "cbf3821324f55aaad61447d1186e157baed12b6f707b316226780641e5d1f612",
+    "comentarioSha256": "eb332c49370b051b1b42d37b889bfc98ec736004f458db0bf0cf061806f8653a"
+   }
   },
   "pediatria-1081": {
    "tema": "pediatria",
