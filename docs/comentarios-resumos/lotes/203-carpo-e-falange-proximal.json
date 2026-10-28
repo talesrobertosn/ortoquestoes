@@ -1,0 +1,162 @@
+{
+  "mao-2477": {
+    "questaoSha256": "f4602d2c72376477c5d508e74c09057adbbdae723cc5f25c4b28dbaf2138e9cf",
+    "comentarioAnteriorSha256": "71b9bb71a1e821a439d3ebb31489e811c1701667f2ecb4dae8f16a26996983ab",
+    "comentario": {
+      "conceito": "A combinação de **queda sobre a mão espalmada, punho estendido e desvio ulnar** é compatível com o mecanismo da dissociação escafossemilunar descrito no resumo. O capítulo acrescenta a supinação intercarpal ao mecanismo completo. Entre as opções, é a alternativa C que apresenta essa combinação sem inverter as tendências dos ossos (Rockwood adultos, 10ª ed., cap. 44, dissociação escafossemilunar).\n\nO escafoide e o piramidal exercem tendências opostas sobre o semilunar. O escafoide tende a **fletir**, enquanto o piramidal tende a **estender**. Quando o elo escafossemilunar deixa de equilibrar o conjunto e aparece o desalinhamento típico, o escafoide fica fletido e o semilunar tende à extensão, o padrão de **DISI**.\n\nIsso não obriga uma lesão aguda a apresentar imediatamente todos os sinais de colapso estático. O resumo ressalta que o alargamento do intervalo pode progredir com o tempo e que a deformidade estática depende também da falha dos estabilizadores secundários. Uma radiografia inicial sem diástase não exclui a lesão do ligamento.\n\nA pergunta mistura mecanismo do trauma e consequências do desacoplamento. Para não confundi-los, separe a posição do punho que inicia a lesão da tendência posterior dos ossos. A hiperextensão com desvio ulnar é o mecanismo apresentado; o escafoide estendido e o semilunar acompanhando-o em flexão não são a descrição do desequilíbrio escafossemilunar típico.\n\n**Por que esta questão foi criada.** Inspirada na questão 26 do SIMÃO 2021, que cobrou afirmações sobre a dissociação escafolunar aguda.",
+      "correta": "**Correta: C (queda com a mão espalmada, extensão e desvio ulnar).** Corresponde ao mecanismo descrito no resumo Rockwood10-44. Reconhecer o vetor do trauma permite distingui-lo das alternativas que trocam as posições resultantes dos ossos.",
+      "incorretas": {
+        "A": "No desequilíbrio escafossemilunar típico, o semilunar não acompanha o escafoide em flexão: o piramidal passa a favorecer sua extensão, formando DISI. O semilunar fletido é o padrão de VISI relacionado à perda de contenção lunopiramidal, outro elo da fileira proximal.",
+        "B": "O erro decisivo é atribuir extensão ao escafoide dissociado. Sua tendência é fletir quando perde a contenção do conjunto. A alternativa não descreve a mecânica apresentada, independentemente de acrescentar uma direção de rotação; o resumo sustenta a resposta pelo movimento de flexão do escafoide.",
+        "D": "O resumo descreve deslocamento dorsal do capitato no desequilíbrio em DISI. O capitato pertence à fileira distal, e esse achado não corresponde à translação palmar afirmada. A direção palmar da alternativa inverte o padrão de colapso apresentado para a perda do elo com o escafoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Padrões de instabilidade: DISI, VISI e o que é dissociativo; Anatomia ligamentar e cinemática do carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Anatomia ligamentar e cinemática do carpo"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-1944a7ce",
+          "dissociacao-escafossemilunar-1f9a739d",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
+          "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "5aba5b978fa4ba27accc594205b16deadc78707e581c3be6d4721d805c0c2a5d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2483": {
+    "questaoSha256": "19777ce305fcdb632a4305ed8d764f0d0191a69622e7b58430e390039b3c94c2",
+    "comentarioAnteriorSha256": "f76b7f810c06f1bb41136d9cb28ae49b70989402998e519764669c0b99e8ec96",
+    "comentario": {
+      "conceito": "No grau **III de Geissler**, existe desalinhamento nas articulações radiocárpica e mediocárpica e um espaço entre os ossos que admite a **sonda de aproximadamente 1 mm**. Esse é o achado da alternativa C. A classificação relaciona o aspecto artroscópico à perda de congruência e ao tamanho da abertura, não apenas à aparência do ligamento (Rockwood adultos, 10ª ed., cap. 44, classificações artroscópicas).\n\nNos graus iniciais, pode haver hemorragia ou atenuação com os ossos ainda congruentes; com a progressão, aparece incongruência. O grau III já acrescenta espaço suficiente para a sonda. No **grau IV**, a abertura é grosseira e permite a passagem do **artroscópio de 2,7 mm**. Portanto, “passa um instrumento” é uma descrição incompleta: é preciso dizer qual instrumento passa.\n\nA diferença entre sonda e artroscópio é a distinção prática central da pergunta. Um intervalo que recebe uma sonda fina não deve ser automaticamente chamado de grau IV. Da mesma forma, um ligamento com sangramento ou aspecto atenuado, mas sem abertura, não preenche a descrição do grau III.\n\nO resumo também aponta uma limitação: a classificação descreve frouxidão, mas nem sempre separa bem a frouxidão normal da instabilidade patológica. Os achados precisam ser interpretados com a lesão observada e o quadro clínico. A classificação ajuda a planejar estabilização artroscópica ou aberta, sem substituir a avaliação completa do punho.\n\n**Por que esta questão foi criada.** Inspirada na questão 92 do SIMÃO 2021, que perguntou o que corresponde ao grau III de GEISSLER.",
+      "correta": "**Correta: C (espaço que admite a sonda).** O grau III tem desalinhamento nas duas articulações e abertura para o probe de 1 mm. Esse detalhe o distingue tanto dos graus sem abertura significativa quanto do grau IV, em que passa o artroscópio.",
+      "incorretas": {
+        "A": "Alteração de aspecto e atenuação sem espaço entre os ossos não satisfazem o achado exigido para grau III. A descrição desse grau precisa incluir desalinhamento e uma abertura capaz de receber a sonda; a alternativa afirma justamente a ausência dessa abertura.",
+        "B": "A passagem livre do artroscópio de 2,7 mm caracteriza o grau IV, com instabilidade grosseira. A sonda é menor e pertence à descrição do grau III. Trocar os instrumentos faz uma lesão de maior abertura parecer equivalente à categoria perguntada.",
+        "D": "Hemorragia isolada aparece na descrição do grau I, com congruência preservada. O grau III não se limita ao aspecto hemorrágico do ligamento: exige perda de alinhamento e espaço para o probe. O sangramento, por si só, não gradua a abertura entre os ossos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-1aa45ccb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "3fc462fbfe0eeed235343bcb77e05da79dec952da3adafe774c58bed158d93b9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2524": {
+    "questaoSha256": "4e723ae05781060349c7eee9ce54275b1ae3e4005f42f50994736098802cda54",
+    "comentarioAnteriorSha256": "0d9cc5bc635a4c80664cb226515823b89b97edcd5b6d00302665e557b38c19d6",
+    "comentario": {
+      "conceito": "A fratura do **polo proximal do escafoide** recebe recomendação de fixação mesmo quando não está desviada na conduta dos autores apresentada pelo resumo. A localização acrescenta risco que não aparece apenas ao medir um degrau ou espaço no traço. Esse é o fundamento da alternativa A (Rockwood adultos, 10ª ed., cap. 44, fratura aguda do escafoide).\n\nO polo proximal depende de vasos que entram principalmente pela crista dorsal e seguem por dentro do osso. Uma fratura pode interromper esse caminho antes que o sangue chegue ao fragmento. A estabilidade fornecida pela fixação cria condições para revascularização e consolidação; o risco vascular não significa que todo fragmento proximal evoluirá inevitavelmente para necrose.\n\nA cintura sem desvio é uma situação diferente. O resumo discute gesso e fixação, com resultados finais semelhantes nos estudos e recuperação mais precoce após cirurgia em alguns cenários, às custas de complicações. Para os autores, a escolha pode ser compartilhada, levando em conta demanda e preferências. Alta demanda pode favorecer uma opção operatória, mas não transforma toda cintura alinhada na mesma indicação do polo proximal.\n\nA tuberosidade, por outro lado, é uma avulsão habitualmente estável e costuma ser imobilizada. Um ângulo intraescafoide lateral de 32° também não corresponde ao critério angular de instabilidade acima de 35°. Assim, localização proximal, estabilidade e demanda devem ser avaliadas como informações distintas, sem escolher a cirurgia a partir de qualquer número ou da palavra “jovem”.\n\n**Por que esta questão foi criada.** Inspirada na questão 76 do SIMÃO 2021, que perguntou em que caso de fratura do escafoide a cirurgia está sempre indicada (resposta esperada: polo proximal sem desvio).",
+      "correta": "**Correta: A (polo proximal).** O resumo recomenda operação mesmo sem desvio, em razão do risco de não união associado a essa localização e de sua irrigação vulnerável. A fixação procura estabilizar um fragmento que pode revascularizar e consolidar.",
+      "incorretas": {
+        "B": "A tuberosidade distal pertence ao padrão estável de Herbert A1 e costuma receber imobilização. Ela não compartilha automaticamente o risco do pequeno polo proximal. A localização distal precisa ser distinguida antes de transferir uma indicação cirúrgica entre fraturas do mesmo osso.",
+        "C": "A fixação pode ser discutida para uma cintura sem desvio em pessoa de alta demanda, mas o resumo trata essa escolha como compartilhada e controversa, com o gesso ainda sendo uma opção válida. Não é a recomendação anatômica específica de operar o polo proximal mesmo sem desvio.",
+        "D": "O ângulo lateral normal informado é 30° ± 5°, de modo que 32° não excede o limiar de 35° usado como critério angular de instabilidade. Uma medida nessa faixa não é, isoladamente, indicação de fixação. Outros achados poderiam mudar a decisão, mas não foram fornecidos nessa alternativa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: tratamento da fratura aguda; Escafoide: anatomia, irrigação e mecanismo; Escafoide: classificação de Herbert e Fisher."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: tratamento da fratura aguda",
+          "Escafoide: anatomia, irrigação e mecanismo",
+          "Escafoide: classificação de Herbert e Fisher"
+        ],
+        "blocos": [
+          "escafoide-tratamento-da-fratura-aguda-867cbaae",
+          "escafoide-tratamento-da-fratura-aguda-056fbc49",
+          "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd",
+          "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+          "escafoide-tratamento-da-fratura-aguda-ba8d8b1a",
+          "escafoide-tratamento-da-fratura-aguda-010810c7",
+          "escafoide-tratamento-da-fratura-aguda-28d72402",
+          "escafoide-classificacao-de-herbert-e-fisher-8972bd5a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "dea57355cd7cadc48ab893f358b1afe7011009d19b22a2a8001bc29d1082d3a3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1796": {
+    "questaoSha256": "7fa5fc20f018a54d6dfececbe348746db88669e61b4c6dd7457badd5cbea25f1",
+    "comentarioAnteriorSha256": "6f797c1cf028e35070467b9b4d0e93b79d97c7910b7360fcba326867fa041238",
+    "comentario": {
+      "conceito": "A fixação isolada com parafusos interfragmentários precisa de um **traço suficientemente longo** e de mais de um ponto de fixação. Para a diáfise da falange proximal, o resumo descreve traço **mais longo que duas vezes o diâmetro do osso** e **pelo menos dois parafusos**, com preferência dos autores por três (Rockwood adultos, 10ª ed., cap. 45, falange proximal).\n\nA alternativa B registra o limiar de duas vezes o diâmetro e o mínimo de dois parafusos. Há uma precisão importante na leitura: o texto consultado diz **mais longo que duas vezes**, portanto não autoriza tratar a igualdade exata de 2 diâmetros como garantia de adequação. A escolha depende da geometria real do traço e do espaço para implantes, não apenas de uma proporção arredondada.\n\nO traço espiral longo oferece uma superfície de contato ao longo da qual os fragmentos podem ser reduzidos e estabilizados. O número mínimo de parafusos faz parte da técnica descrita; não pode ser substituído por um único implante apenas porque ele produz compressão. Para padrões diferentes ou situações em que a fixação isolada não é apropriada, o capítulo apresenta fios e placas como outras possibilidades.\n\nA meta é permitir movimento cedo sem perder a redução. A falange proximal tem poucas inserções estabilizadoras na diáfise e sofre forças dos interósseos e do aparelho extensor. Uma fixação precisa controlar essa situação sem criar imobilização desnecessariamente longa; placas dão rigidez, mas também têm risco de aderências. O implante deve acompanhar o traço e as necessidades funcionais.\n\n**Por que esta questão foi criada.** Inspirada na questão 21 do SIMÃO 2026, que cobrou o comprimento do traço e o número de parafusos na fixação interfragmentária da falange proximal.",
+      "correta": "**Gabarito registrado: B (duas vezes o diâmetro e dois parafusos).** O resumo sustenta o mínimo de dois parafusos e situa a indicação em traços mais longos que duas vezes o diâmetro, preferindo três parafusos. A proporção da alternativa deve ser lida com essa ressalva de comprimento, não como autorização automática na igualdade exata.",
+      "incorretas": {
+        "A": "Um traço com apenas um diâmetro não cumpre a relação de comprimento descrita, e um parafuso também fica abaixo do mínimo de dois. A alternativa reduz tanto a superfície disponível para a técnica quanto o número de pontos de fixação previsto pelo resumo.",
+        "C": "A referência de comprimento se aproxima do limiar cobrado, mas a opção conserva apenas um parafuso. Ter compressão não dispensa o número mínimo de implantes que o resumo apresenta para a fixação isolada desse padrão de fratura.",
+        "D": "Um traço com três diâmetros pode oferecer comprimento para a técnica, mas quatro parafusos não são o mínimo descrito. O resumo exige pelo menos dois e relata preferência por três. A pergunta pede o mínimo, e não uma configuração com mais implantes que possa ser possível em um traço específico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Desvios das falanges e a falange proximal; Complicações e reabilitação comuns a todo o capítulo."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito registrado é B. No resumo Rockwood10-45, o traço da falange proximal deve ser mais longo que duas vezes o diâmetro e aceitar pelo menos dois parafusos; os autores preferem três. A redação “duas vezes” da alternativa não deve ser interpretada como garantia na igualdade exata do limiar."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Desvios das falanges e a falange proximal",
+          "Complicações e reabilitação comuns a todo o capítulo"
+        ],
+        "blocos": [
+          "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+          "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+          "complicacoes-e-reabilitacao-comuns-a-todo-o-capi-56751dae"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "5d90ddf10e8498b9c2e3053280418fc500804c693e2b003dd2eb4431bbf7746b"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

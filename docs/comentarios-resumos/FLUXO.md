@@ -23,7 +23,7 @@ Fluxo aprovado pelo Tales em 27/10/2026, para repetir sempre que entrarem **ques
    - o resumo sustenta a resposta e o raciocínio de **todas** as alternativas → escrever;
    - o dado decisivo não está no resumo, ou duas alternativas ficam defensáveis → `pendente-fonte`, com a frase exata do que falta;
    - questão com imagem → **abrir a imagem** (Read no arquivo de `public/imagens/`) antes; se a figura não bate com o enunciado, dizer no comentário e avisar o Tales;
-   - SIMÃO e SBCM ficam fora (só com o Green em mãos, ver `docs/mao/PROTOCOLO.md`).
+   - Para novas questões e revisão de fonte primária de SIMÃO/SBCM, exigir Green em mãos (`docs/mao/PROTOCOLO.md`). Na revisão secundária das candidatas existentes desta tarefa, incluir todas as provas conforme autorização atual documentada em `AGENTS.md` e `README.md`; usar apenas os resumos conferidos, com `baseResumo`, sem declarar páginas ou leitura primária não realizadas.
 6. **Escrever o rascunho** `work/rascunho-cNN.json`: `{id: {"resumo": ..., "blocos": [...], "imagensConferidas": [...], "comentario": {conceito, correta, incorretas, conferido: false, alerta?}}}`.
    - **Primeiro bloco = a seção mais específica**: é ela que o selo "Comentário baseado em resumo" e o convite "Leia o resumo" abrem.
    - Miniaula: o conceito primeiro, o mecanismo, a imagem descrita quando houver, um quadro "**Na prova:**", e uma linha final apontando a seção do resumo. Cada alternativa errada com o erro específico dela.

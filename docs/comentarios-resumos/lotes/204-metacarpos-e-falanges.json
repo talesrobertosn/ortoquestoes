@@ -1,0 +1,198 @@
+{
+  "mao-1797": {
+    "questaoSha256": "8bb30ada61388532a0cf9bd20b465c874f7236298a9f111a0ffb9a835b039a7b",
+    "comentarioAnteriorSha256": "e779f727df03e4612d77807a36d422c3c73d1f1c84a753f51c26188ebec237b2",
+    "comentario": {
+      "conceito": "Uma fratura unicondilar **desviada**, com degrau articular e desvio angular do dedo, precisa de **redução e fixação**. O objetivo é recuperar a superfície da articulação e o alinhamento, preservando a irrigação do fragmento. Na cabeça da falange proximal, isso exige manter a **inserção do ligamento colateral**, que leva sangue ao côndilo (Rockwood adultos, 10ª ed., cap. 45, falange proximal).\n\nAs fraturas condilares ficam expostas à força deformante dos colaterais. Uma imobilização sem restaurar a posição não corrige o degrau já presente e pode deixar a articulação incongruente. O resumo trata as desviadas como cirúrgicas e recomenda acompanhamento semanal mesmo para as que inicialmente não têm desvio.\n\nA redução pode ser obtida com pinça e estabilizada por fios finos ou parafusos, conforme o fragmento e a geometria da fratura. Quando se usam fios, o capítulo descreve pelo menos dois para controlar rotação. A opção entre fixação percutânea e abordagem aberta depende de conseguir uma redução adequada; a necessidade de ver a superfície não justifica desinserir o colateral do fragmento.\n\nO equilíbrio é entre estabilidade e mobilidade. A mão enrijece rapidamente, e uma fixação apropriada permite iniciar movimento sem perder a redução. Isso é diferente de aceitar uma articulação desviada em uma órtese ou de indicar uma fusão definitiva apenas porque a fratura é articular. A presença de risco de artrose não torna a artrose inevitável.\n\n**Por que esta questão foi criada.** Inspirada na questão 35 do SIMÃO 2026, que cobrou a conduta na fratura unicondilar desviada da falange proximal.",
+      "correta": "**Correta: A (redução e fixação preservando o colateral).** A fratura já está desviada e incongruente. A fixação deve restaurar a articulação sem retirar do fragmento a inserção ligamentar que participa de sua irrigação, reduzindo o risco de necrose do côndilo.",
+      "incorretas": {
+        "B": "O resumo admite tratamento com tala para fraturas sem desvio, mas o caso informa degrau articular e desvio angular. O tamanho pequeno do fragmento não transforma incongruência em indicação conservadora: o capítulo descreve fios finos e parafusos pequenos como opções de estabilização.",
+        "C": "A secção ou desinserção do colateral do fragmento contraria a orientação de preservá-lo por sua contribuição à irrigação. Recolocá-lo ao final não equivale a manter intacta essa conexão durante a abordagem. A exposição precisa ser planejada sem sacrificar o vínculo vascular do côndilo.",
+        "D": "A artrodese é um procedimento de salvamento, não a conduta primária obrigatória para toda fratura condilar articular. O capítulo propõe reconstrução por redução e fixação e relaciona prevenção de artrose à restauração da congruência. A palavra “sempre” transforma um risco em um desfecho certo que não foi demonstrado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Desvios das falanges e a falange proximal; Complicações e reabilitação comuns a todo o capítulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Desvios das falanges e a falange proximal",
+          "Complicações e reabilitação comuns a todo o capítulo"
+        ],
+        "blocos": [
+          "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+          "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+          "desvios-das-falanges-e-a-falange-proximal-617152de",
+          "complicacoes-e-reabilitacao-comuns-a-todo-o-capi-21d82626"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "b3648c5fd5ff0a9879769f547b1d903cb32c5e322a1fb186613da799055d18dc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1799": {
+    "questaoSha256": "2adc3e947f75fbc9caab9e9d108ccdb709cc6841cefc2fde75aaea17378a626b",
+    "comentarioAnteriorSha256": "229485775d825f58b48effa80d81ad52402cb77f7b9a818094c54b9a53b37cdf",
+    "comentario": {
+      "conceito": "O quarto e o quinto metacarpos toleram mais angulação que o segundo e o terceiro porque suas **articulações carpometacarpais são mais móveis**. Essa mobilidade permite compensar parte do desvio e manter a função. A diferença não significa liberdade para aceitar rotação ou qualquer grau de angulação (Rockwood adultos, 10ª ed., cap. 45, tolerância de desvio dos metacarpos).\n\nO resumo compara cerca de **5° de mobilidade carpometacarpal no indicador e no médio** com **25° a 30° no mínimo**. Os raios centrais formam uma estrutura mais rígida; os ulnares têm maior capacidade de acomodação. Portanto, um mesmo desvio não tem a mesma repercussão funcional em todos os dedos.\n\nTambém é necessário separar **colo e diáfise**. O capítulo fornece tolerâncias diferentes conforme o nível da fratura e admite até 50° no colo do quinto em situações apropriadas, enquanto os raios radiais exigem maior rigor. Esse limite não deve ser levado para qualquer metacarpo ou para qualquer localização.\n\nA avaliação clínica continua decisiva: rotação com cruzamento dos dedos, encurtamento importante e pseudogarra podem mudar a indicação. Maior mobilidade carpometacarpal explica a tolerância angular dos raios ulnares, mas não corrige um dedo que cruza o vizinho nem apaga o déficit de extensão decorrente de deformidade óssea.\n\n**Por que esta questão foi criada.** Inspirada na questão 84 do SIMÃO 2026, que cobrou quais metacarpos toleram mais angulação no colo e por quê.",
+      "correta": "**Correta: B (quarto e quinto, pela maior mobilidade carpometacarpal).** A diferença de mobilidade é o fundamento da maior tolerância angular nos raios ulnares. Ela permite compensar parte do desvio que os raios centrais, mais rígidos, acomodam menos.",
+      "incorretas": {
+        "A": "A alternativa inverte os grupos. Segundo e terceiro metacarpos têm menor mobilidade carpometacarpal e, por isso, menor capacidade de compensar angulação. O mecanismo citado é pertinente, mas foi atribuído aos raios errados.",
+        "C": "O grupo de metacarpos está correto, porém o resumo não explica a tolerância pelo menor comprimento. O fundamento apresentado é a mobilidade da CMC, que permite acomodar parte do desvio. Trocar essa explicação por uma regra de comprimento perde a relação articular que diferencia os raios.",
+        "D": "Segundo e terceiro não são os raios de maior tolerância, e a explicação não depende de supor ausência de músculos intrínsecos. A comparação relevante é entre CMC mais rígidas e mais móveis. O resumo ainda destaca a proteção dos metacarpos centrais pelos interósseos e ligamentos, sem lhes atribuir a maior tolerância proposta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Metacarpos: tolerância de desvio, colo do quinto e fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+        ],
+        "blocos": [
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "3527e6a20fb44ada5972c5e1d76607b2266325811d039a2398a669321033c68f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1800": {
+    "questaoSha256": "fe4f1abf13557354457ed5581a0c11ba01165e2718a8b3063d32b1ae34e4898e",
+    "comentarioAnteriorSha256": "9c1118956ffeefdb2b201fc5b59c7a87aeda336a2cc3cd126bb6a41bf5aa6f54",
+    "comentario": {
+      "conceito": "Nas luxações dorsais das metacarpofalângicas dos dedos, os mais acometidos são os **dedos de borda: indicador e mínimo**. A estrutura cuja interposição caracteriza o bloqueio da forma complexa é a **placa volar**. A pergunta exige acertar simultaneamente o grupo de dedos e o obstáculo à redução (Rockwood adultos, 10ª ed., cap. 45, luxação metacarpofalângica).\n\nA hiperextensão forçada rompe a placa volar em sua inserção membranosa no colo do metacarpo. Na forma simples, a falange ainda conserva contato com o dorso da cabeça. Na complexa, a cabeça atravessa tecidos volares, e a placa fica atrás dela, interposta entre a cabeça e a falange. O problema deixa de ser apenas um osso fora do lugar: há tecido preso no caminho da redução.\n\nO laço de Kaplan acrescenta estruturas que apertam o colo do metacarpo do indicador: lumbrical de um lado, tendão flexor do outro e ligamentos superficiais completando o anel. Elas participam da complexidade, mas não devem ser confundidas com a placa volar interposta que o resumo identifica como o principal bloqueio.\n\nPor isso a redução não deve usar tração ou hiperextensão indiscriminadas. Essas manobras podem levar a placa para trás da cabeça e transformar uma luxação simples em complexa. A força volar sobre a base da falange proximal, mantendo contato com a cabeça enquanto a MCF flete, procura reduzir sem produzir esse aprisionamento.\n\n**Por que esta questão foi criada.** Inspirada na questão 14 do SIMÃO 2026, que cobrou os dedos mais acometidos e a estrutura que torna irredutível a luxação dorsal da metacarpofalângica.",
+      "correta": "**Correta: A (indicador e mínimo; placa volar).** Os dedos de borda são os mais acometidos, com o indicador à frente do mínimo. A placa interposta atrás da cabeça metacarpiana é a estrutura que explica o bloqueio à redução na forma complexa.",
+      "incorretas": {
+        "B": "A placa volar está corretamente identificada, mas médio e anular não são o grupo predominante descrito. Os dedos centrais são protegidos pelos ligamentos intermetacarpais transversos de cada lado. A alternativa acerta o bloqueio e troca a distribuição anatômica das luxações.",
+        "C": "Indicador e mínimo correspondem aos dedos de borda, mas o obstáculo interposto apresentado pelo resumo é a placa volar, não um colateral. A relação entre cabeça metacarpiana, placa e base da falange é o que permite compreender a irredutibilidade.",
+        "D": "O segundo dedo da combinação deveria ser o mínimo, e não o médio. Além disso, o tendão flexor participa do laço que constrange o colo, enquanto a placa volar interposta é o bloqueio principal descrito. A alternativa troca tanto a frequência por dedo quanto a estrutura decisiva."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Luxação metacarpofalângica: simples, complexa e o laço de Kaplan."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Luxação metacarpofalângica: simples, complexa e o laço de Kaplan"
+        ],
+        "blocos": [
+          "luxacao-metacarpofalangica-simples-complexa-e-o--c441336b",
+          "luxacao-metacarpofalangica-simples-complexa-e-o--470f1eea",
+          "luxacao-metacarpofalangica-simples-complexa-e-o--7399d716",
+          "luxacao-metacarpofalangica-simples-complexa-e-o--f4761088",
+          "luxacao-metacarpofalangica-simples-complexa-e-o--c1c48ba0"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "185fc056cdffcfbfef8287968dedf4314d1fe4f74294c3e6e1b5886320fd8bb2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1932": {
+    "questaoSha256": "992d94684064b2070eadb41bd105ac7374f5574756c8c28ac7e8b5d778ed0779",
+    "comentarioAnteriorSha256": "38ccc7df5f60c6c741170a71597bb1cc102cef0229745d08bacf147549bf5eb8",
+    "comentario": {
+      "conceito": "A fratura da diáfise da falange proximal costuma angular com **ápice volar**. Os **interósseos fletem o fragmento proximal**, enquanto o aparelho extensor estende o distal. É a combinação de forças de lados diferentes do traço que produz a deformidade da alternativa B (Rockwood adultos, 10ª ed., cap. 45, desvios das falanges).\n\n“Ápice” é a convexidade formada no foco, não o nome da direção para a qual a ponta do dedo se move. Se o fragmento proximal fica fletido e o distal estendido, o ápice aponta para volar, embora o fragmento distal apareça desviado para dorsal. Confundir essas duas descrições leva a trocar a resposta apesar de reconhecer a imagem mental do desvio.\n\nO nível anatômico também importa. O **flexor superficial** se insere na falange média, e sua relação com o traço determina desvios dessa falange. Ele não deve ser usado como a força insercional que explica a flexão do fragmento proximal de uma fratura da falange proximal. Nesta última, os interósseos e o aparelho extensor oferecem a explicação descrita.\n\nA diáfise proximal tem poucas inserções estabilizadoras, e o capítulo a considera instável. A avaliação deve incluir alinhamento e rotação, além da angulação. Flexionar a metacarpofalângica pode fazer o aparelho extensor atuar como banda de tensão em fraturas transversas, mas a decisão de tratamento depende do conjunto da lesão, não apenas do nome do ápice.\n\n**Por que esta questão foi criada.** Inspirada na questão 1 do SIMÃO 2023, em que a banca cobrou a direção do ápice e o músculo responsável na fratura da diáfise da falange proximal, com distratores que trocavam o fragmento fletido e o músculo.",
+      "correta": "**Correta: B (ápice volar por flexão proximal dos interósseos).** A flexão do fragmento proximal e a extensão do distal formam o ápice volar descrito. O músculo responsável pela flexão proximal precisa ser associado ao osso e ao lado do traço corretos.",
+      "incorretas": {
+        "A": "A alternativa troca o ápice e usa o flexor superficial como explicação para a falange proximal. O superficial se prende à falange média, enquanto o padrão perguntado é explicado pelos interósseos no fragmento proximal e pelo aparelho extensor no distal.",
+        "C": "Os interósseos atuam no fragmento proximal, não produzindo a flexão distal afirmada. O resultado descrito no resumo é ápice volar com o distal estendido. Há uma inversão tanto do fragmento atingido pela força quanto da direção do ápice.",
+        "D": "A direção volar do ápice está correta, mas a força foi atribuída ao tendão errado. O flexor superficial está ligado à anatomia da falange média; na proximal, os interósseos fletem o fragmento proximal. Acertar a direção não basta quando a explicação anatômica está trocada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Desvios das falanges e a falange proximal; O que vale para a mão inteira."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Desvios das falanges e a falange proximal",
+          "O que vale para a mão inteira"
+        ],
+        "blocos": [
+          "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+          "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+          "o-que-vale-para-a-mao-inteira-efc0ddd3"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "614baad7a487f3832642db5ddd7f5fbdf2662300e556dee2deef27e7cff88a7a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1935": {
+    "questaoSha256": "12570bd5e4c59cb2ebf0da9c8ba69c1e416e01ffb103772ee81d0ad492714980",
+    "comentarioAnteriorSha256": "dcf4ef5a07f70d746cfe754a593d3ac21518e49f3c0a8a38939426df64b52eb8",
+    "comentario": {
+      "conceito": "As indicações de cirurgia no colo do metacarpo dependem de **função, rotação, encurtamento e tolerância angular de cada raio**. A questão registra a alternativa A como gabarito, mas seu limite de **1 cm de encurtamento** diverge do resumo consultado, que descreve tolerância de **5 a 6 mm**. A diferença de limites precisa ser reconhecida ao interpretar as alternativas (Rockwood adultos, 10ª ed., cap. 45, metacarpos).\n\nO encurtamento altera o equilíbrio extensor. O capítulo relaciona cada **2 mm** de encurtamento a cerca de **7° de déficit de extensão**; a possibilidade de hiperextensão da MCF permite alguma compensação, mas não autoriza estender indiscriminadamente a tolerância para 10 mm. A ausência de pseudogarra importante não equivale a ausência de repercussão do encurtamento.\n\nA **pseudogarra** nasce da consolidação com ápice dorsal: a cabeça fica mais volar, e o dedo hiperestende a MCF e flete a IFP ao tentar estender. Parece uma deformidade neurológica, mas a origem é óssea. O resumo a trata como indicação de cirurgia, proporcional à angulação.\n\nA rotação é outro problema: cruzamento dos dedos não é compensado pela maior mobilidade da CMC. Os raios ulnares acomodam mais angulação que os radiais, justamente porque têm articulações carpometacarpais mais móveis. A escolha do tratamento precisa avaliar essas dimensões separadamente, em vez de aceitar um desvio só porque outro parece tolerável.\n\n**Por que esta questão foi criada.** Inspirada na questão 9 do SIMÃO 2023, em que a banca cobrou as indicações cirúrgicas da fratura do colo com afirmativas sobre pseudogarra, rotação, tolerância dos dedos e encurtamento de 1 cm.",
+      "correta": "**Gabarito registrado: A (até 1 cm, sem pseudogarra significativa).** A letra é preservada, mas o resumo Rockwood10-45 admite 5 a 6 mm de encurtamento, não 10 mm. A alternativa não reproduz o limite da fonte consultada, e as outras três também contrariam suas regras clínicas.",
+      "incorretas": {
+        "B": "A pseudogarra é expressamente considerada uma indicação cirúrgica no resumo. Ela representa desequilíbrio de extensão causado pela deformidade óssea, e não apenas uma alteração estética. Negar seu papel na indicação retira da avaliação uma consequência funcional do desvio.",
+        "C": "A rotação é o desvio menos tolerado, e o cruzamento dos dedos é motivo para correção. A mobilidade carpometacarpal que ajuda a compensar angulação não resolve a sobreposição digital na flexão. A avaliação deve comparar a cascata com a outra mão.",
+        "D": "Os dedos radiais têm CMC mais rígidas e toleram menos angulação que os ulnares. O resumo mostra a mobilidade aumentando em direção ao mínimo, explicando a diferença. A alternativa inverte a relação entre mobilidade articular e capacidade de compensação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Metacarpos: tolerância de desvio, colo do quinto e fixação; O que vale para a mão inteira."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito registrado é A (até 1 cm de encurtamento sem pseudogarra significativa). O resumo Rockwood10-45 descreve tolerância de 5 a 6 mm e considera pseudogarra e rotação na indicação cirúrgica; nenhuma alternativa reproduz integralmente essas regras. A estimativa de encurtamento da questão diverge da fonte consultada."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Metacarpos: tolerância de desvio, colo do quinto e fixação",
+          "O que vale para a mão inteira"
+        ],
+        "blocos": [
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+          "o-que-vale-para-a-mao-inteira-efc0ddd3"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "cc757b3b64e577fd8cf696c26f14e4d5d403785248af5043312fdafbf893c302"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
