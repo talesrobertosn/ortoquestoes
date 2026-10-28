@@ -98,7 +98,7 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
       {!detalhada && fimPix && <p className="conta-renovacao__resumo conta-renovacao__resumo--pix">
         <span className="conta-renovacao__estado"><i aria-hidden="true" />Pix · sem cobrança automática</span>
         <span>Acesso até {diaMes(fimPix)}. {Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? 'A renovação já está aberta, sem perder nenhum dia.' : `A renovação abre em ${diaMes(fimPix - JANELA_RENOVACAO_PIX)}, sem perder nenhum dia.`}</span>
-        <a href={href(Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? '/assinatura' : '/conta/assinatura')}>{Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? 'Renovar no Pix' : 'Ver como funciona'}</a>
+        <a href={href(Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? '/assinatura' : '/conta/assinatura')}>{Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? 'Renovar (Pix ou cartão)' : 'Ver como funciona'}</a>
       </p>}
       {!detalhada && !fimPix && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <p className={'conta-renovacao__resumo' + (renovacaoCancelada ? ' conta-renovacao__resumo--desligada' : '')}>
         <span className="conta-renovacao__estado"><i aria-hidden="true" />Renovação automática {renovacaoCancelada ? 'desligada' : 'ligada'}</span>

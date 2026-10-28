@@ -129,7 +129,6 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
     if (!pagamentosHabilitados || !sessao) return
     eventoMeta('AddToCart', { content_name: plano.id, currency: 'BRL', value: plano.total })
     definirPlanoEscolhido(plano)
-    if (renovarPix) definirMeioPagamento('pix')
     definirPix(null)
     definirCpf('')
     definirAceitouCondicoes(false)
@@ -159,12 +158,19 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         definirAbrindoCheckout(false)
         return
       }
-      const pedir = (versao: string) => chamarFuncao<{ url: string }>('criar-checkout', {
+      const pedir = (versao: string) => chamarFuncao<{ url: string; inicio_cobranca?: string | null }>('criar-checkout', {
         plano: planoEscolhido.id,
         aceite_termos_versao: versao,
         aceite_confirmado: true,
       })
       const r = await pedir(VERSAO_CONDICOES_ASSINATURA)
+      // Renovando um Pix no cartão, só segue se o servidor marcou a primeira cobrança para o fim do Pix;
+      // uma versão antiga da função cobraria já, e aí a pessoa fica no Pix por enquanto.
+      if (renovarPix && !r.inicio_cobranca) {
+        definirMensagem('A renovação pelo cartão ainda está sendo ativada. Por enquanto, renove pelo Pix: nenhum dia se perde.')
+        definirAbrindoCheckout(false)
+        return
+      }
       location.assign(r.url)
     } catch (erro) {
       definirMensagem(erro instanceof Error ? erro.message : 'Não foi possível abrir o checkout.')
@@ -193,7 +199,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const fimAtualTexto = renovarPix ? new Date(fimAtual).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) : ''
   // Pagamentos desligados: todo botão de compra mostra "Em breve" e fica desabilitado, com ou sem conta.
   const semCompra = !pagamentosHabilitados || (Boolean(sessao) && ativa && !renovarPix)
-  const rotuloComprar = (p: Plano) => !pagamentosHabilitados ? 'Em breve' : !sessao ? 'Criar conta e assinar' : renovarPix ? `Renovar no Pix: ${p.nome.toLowerCase()}` : ativa ? 'Plano ativo' : `Assinar o ${p.nome.toLowerCase()}`
+  const rotuloComprar = (p: Plano) => !pagamentosHabilitados ? 'Em breve' : !sessao ? 'Criar conta e assinar' : renovarPix ? `Renovar: ${p.nome.toLowerCase()}` : ativa ? 'Plano ativo' : `Assinar o ${p.nome.toLowerCase()}`
   const fimTexto = metricas?.fim_periodo ? new Date(metricas.fim_periodo).toLocaleDateString('pt-BR') : null
   const semRenovacao = Boolean(metricas?.cancelar_ao_fim || acessoPagoAteOFim)
   // A barra fixa só existe quando dá para comprar; fora da tela, sai também da leitura e do Tab.
@@ -364,7 +370,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           <details><summary>Como funciona a garantia de 7 dias?</summary><p>Até 7 dias depois de cada cobrança aprovada (inclusive renovações e Pix), você pede o reembolso integral pelo botão em Minha conta, sem precisar falar com ninguém nem justificar. O pedido vai para o Mercado Pago na hora e o site confirma com ele; o acesso pago só é encerrado depois que o reembolso é confirmado. Se o Mercado Pago não confirmar a solicitação automática, o pedido é atendido manualmente pelo suporte, valendo a data em que você pediu: é só usar o canal de <a href={href('/contato')}>contato</a> para atendimento manual.</p></details>
           <details><summary>Em quanto tempo o dinheiro volta?</summary><p>No Pix, o Mercado Pago devolve o valor para a conta de onde saiu o pagamento; como o Pix é instantâneo, costuma ser rápido, mas o prazo final é do Mercado Pago e do seu banco. No cartão, o valor é estornado e aparece na fatura conforme o prazo do emissor do cartão, muitas vezes na fatura seguinte. Em nenhum dos dois casos você precisa pedir de novo.</p></details>
           <details><summary>Preciso falar com alguém para cancelar? E o meu histórico?</summary><p>Não. Desligar a renovação e pedir o reembolso dentro da garantia são botões em Minha conta. Depois dos 7 dias, cancelar impede as próximas cobranças e você mantém o acesso até o fim do período pago, sem devolução proporcional automática (seus direitos previstos em lei continuam preservados; veja as <a href={href('/condicoes-assinatura')}>condições da assinatura</a>). Respostas, revisões, anotações e desempenho nunca são apagados.</p></details>
-          <details><summary>Paguei no Pix. Posso renovar antes de acabar sem perder dias?</summary><p>Pode. O Pix não renova sozinho, por isso mandamos um aviso por e-mail alguns dias antes do fim. A renovação abre 7 dias antes do término: o botão "Renovar no Pix" aparece aqui e em Minha assinatura, e antes disso as duas páginas mostram a data em que ela abre. Os dias que faltam continuam valendo e o novo período começa no dia em que o atual termina. Nada se perde por pagar antes.</p></details>
+          <details><summary>Paguei no Pix. Posso renovar antes de acabar sem perder dias?</summary><p>Pode. O Pix não renova sozinho, por isso mandamos um aviso por e-mail alguns dias antes do fim. A renovação abre 7 dias antes do término, pelo Pix ou pelo cartão (que só faz a primeira cobrança quando o Pix termina): o botão "Renovar" aparece aqui e em Minha assinatura, e antes disso as duas páginas mostram a data em que ela abre. Os dias que faltam continuam valendo e o novo período começa no dia em que o atual termina. Nada se perde por pagar antes.</p></details>
           <details><summary>Posso usar junto com o meu curso preparatório?</summary><p>Pode, e combina bem. O Orto Questões não é curso: é onde você treina com as questões das provas, comentadas, e segue um plano diário pelo que mais cai. Muita gente assiste às aulas de um lado e usa o cronograma para transformar o que estudou em questão feita, todo dia.</p></details>
           <details><summary>Serve para o TEOT e para o TARO? E para outras provas?</summary><p>Sim. O acervo traz as provas oficiais já aplicadas do TEOT, do TARO, do R4 do ENARE e do TECOC, comentadas, e o cronograma pode ser montado para a data da sua prova. Para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril, há os {ROTULO_SIMULADOS}, escritos no padrão dessas bancas.</p></details>
           <details><summary>Como o cronograma é montado?</summary><p>Em quatro passos: a data da prova, quanto tempo você tem por dia, como é a sua semana (folgas e dias de plantão, que viram dias leves) e por onde começar. Um diagnóstico opcional de 30 questões mostra onde você está mais fraco. O plano passa três vezes pelo acervo: na 1ª passada, os assuntos de prioridade máxima de todas as áreas, pela contagem das provas oficiais; na 2ª, os de prioridade alta; na 3ª, o resto. Assim, se a rotina apertar, o que mais cai já foi visto. Cada área fica uns 3 dias em foco, com cerca de 30% de cada dia vindo de outra área para misturar, e entram {ROTULO_SIMULADOS} nas sessões. A cada duas semanas há um mini-simulado, e as duas últimas semanas são a reta final. Atrasou, a meta sobe no máximo 25%; numa semana difícil, dá para baixar para 10 questões por dia sem quebrar o plano.</p></details>
@@ -433,14 +439,16 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
                   <span className="ck__meio-texto"><strong>Pix <em className="ck__meio-selo">o mais prático</em></strong><small>Pagamento único de {real(planoEscolhido.total)}, liberado assim que cai. Sem renovação automática.</small></span>
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
                 </label>}
-                {!renovarPix && <label className={'ck__meio' + (meioPagamento === 'cartao' ? ' ck__meio--ativo' : '')}>
+                <label className={'ck__meio' + (meioPagamento === 'cartao' ? ' ck__meio--ativo' : '')}>
                   <input type="radio" name="meio-pagamento" checked={meioPagamento === 'cartao'} onChange={() => { definirMeioPagamento('cartao'); definirAceitouCondicoes(false); definirMensagem(null) }} />
                   <span className="ck__meio-icone"><IconeCartao tamanho={24} /></span>
-                  <span className="ck__meio-texto"><strong>Cartão de crédito</strong><small>Renovação automática a cada {planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}. Desliga com um botão quando quiser.</small></span>
+                  <span className="ck__meio-texto"><strong>Cartão de crédito{renovarPix && <em className="ck__meio-selo">não precisa lembrar</em>}</strong><small>{renovarPix
+                    ? `Primeira cobrança só em ${fimAtualTexto}, quando o Pix termina. Depois renova sozinho a cada ${planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}; desliga com um botão quando quiser.`
+                    : `Renovação automática a cada ${planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}. Desliga com um botão quando quiser.`}</small></span>
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
-                </label>}
+                </label>
               </fieldset>
-              {renovarPix && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Renovação antecipada: os {diasRestantes} {diasRestantes === 1 ? 'dia que falta' : 'dias que faltam'} continuam valendo. O novo período de {planoEscolhido.meses === 1 ? '1 mês' : `${planoEscolhido.meses} meses`} começa em {fimAtualTexto}, quando o atual termina.</p>}
+              {renovarPix && meioPagamento === 'pix' && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Renovação antecipada: os {diasRestantes} {diasRestantes === 1 ? 'dia que falta' : 'dias que faltam'} continuam valendo. O novo período de {planoEscolhido.meses === 1 ? '1 mês' : `${planoEscolhido.meses} meses`} começa em {fimAtualTexto}, quando o atual termina.</p>}
               {meioPagamento === 'pix' && <label className="campo ck__cpf"><span>CPF de quem vai pagar</span><input inputMode="numeric" autoComplete="off" maxLength={14} placeholder="000.000.000-00" value={cpf} aria-invalid={cpfInvalido} aria-describedby="ck-cpf-ajuda" onChange={evento => { definirCpf(evento.target.value); definirMensagem(null) }} />
                 <small id="ck-cpf-ajuda" className={cpfInvalido ? 'ck__cpf-erro' : undefined}>{cpfInvalido ? 'Este CPF não é válido: confira os números. Pode ser o CPF de qualquer pessoa que vá pagar o Pix.' : 'Pode ser o CPF de qualquer pessoa que vá pagar o Pix. Só serve para o Mercado Pago gerar o código e não fica salvo no seu perfil.'}</small></label>}
               <label className="ck__aceite"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) e os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> para este plano e este valor.</span></label>

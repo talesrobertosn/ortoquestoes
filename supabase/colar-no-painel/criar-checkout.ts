@@ -59,6 +59,16 @@ Deno.serve(async (req) => {
     if (!token || !origem || !payerEmail) return json({ erro: "checkout_nao_configurado" }, 503, req);
     const restritoContasTeste = ambiente === "teste" || Deno.env.get("MERCADO_PAGO_RESTRITO_CONTAS_TESTE") !== "false";
     if (restritoContasTeste && !await contaTesteAtiva(usuario.id)) return json({ erro: "checkout_requer_conta_teste" }, 403, req);
+    const vigentesResp = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=eq.ativa&fim_periodo=gt.${encodeURIComponent((/* @__PURE__ */ new Date()).toISOString())}&select=id_externo,fim_periodo`);
+    if (!vigentesResp.ok) throw new Error("consulta_assinatura_falhou");
+    const vigentes = await vigentesResp.json();
+    let inicioCobranca = null;
+    if (vigentes.length) {
+      if (!vigentes.every((a) => a.id_externo?.startsWith("pix:") && a.fim_periodo)) return json({ erro: "Voc\xEA j\xE1 tem uma assinatura no cart\xE3o em andamento." }, 409, req);
+      const fimPix = Math.max(...vigentes.map((a) => Date.parse(a.fim_periodo)));
+      if (fimPix - Date.now() > 7 * 864e5) return json({ erro: "A renova\xE7\xE3o abre nos 7 dias antes do fim do seu Pix, e os dias que faltam continuam valendo." }, 409, req);
+      inicioCobranca = new Date(fimPix).toISOString();
+    }
     const aceite = await banco("aceites_assinatura", {
       method: "POST",
       body: JSON.stringify({
@@ -87,13 +97,14 @@ Deno.serve(async (req) => {
           frequency: planos[plano].frequency,
           frequency_type: "months",
           transaction_amount: planos[plano].transaction_amount,
-          currency_id: "BRL"
+          currency_id: "BRL",
+          ...inicioCobranca ? { start_date: inicioCobranca } : {}
         }
       })
     });
     const dados = await resposta.json();
     if (!resposta.ok || !dados.init_point) return json({ erro: "mercado_pago_recusou_checkout" }, 502, req);
-    return json({ url: dados.init_point }, 200, req);
+    return json({ url: dados.init_point, inicio_cobranca: inicioCobranca }, 200, req);
   } catch (erro) {
     return json({ erro: erro instanceof Error ? erro.message : "erro_interno" }, 401, req);
   }

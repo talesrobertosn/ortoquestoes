@@ -30,14 +30,14 @@ export function RenovacaoPix({ fim, aoRenovar, agora = Date.now() }: { fim: numb
   const antes = mostrarHoje ? Math.max(diasAteAbrir, 7) : 0
   const janela = Math.max(Math.min(dias, 7), 4)
   const abreTexto = quando(abre, agora)
-  const rotuloBotao = aberta ? 'Renovar no Pix' : `Renovação abre ${abreTexto.includes(',') ? abreTexto : `em ${abreTexto}`}`
+  const rotuloBotao = aberta ? 'Renovar agora' : `Renovação abre ${abreTexto.includes(',') ? abreTexto : `em ${abreTexto}`}`
 
-  return <section className={'renova-pix' + (aberta ? ' renova-pix--aberta' : '')} aria-label="Renovação pelo Pix">
+  return <section className={'renova-pix' + (aberta ? ' renova-pix--aberta' : '')} aria-label="Renovar o acesso">
     <div className="renova-pix__topo">
       <span className="renova-pix__icone"><IconePixel nome="planos" tamanho={44} /></span>
       <div>
-        <h3>Renovação pelo Pix</h3>
-        <p>No Pix não há cobrança automática: você renova quando quiser continuar, e os dias que faltam nunca se perdem.</p>
+        <h3>Renovar seu acesso</h3>
+        <p>Seu plano é no Pix, sem cobrança automática. Renove pelo <strong>Pix</strong> ou passe para o <strong>cartão</strong>, que só cobra quando o Pix termina e depois renova sozinho. Os dias que faltam nunca se perdem.</p>
       </div>
       <span className="renova-pix__estado"><i aria-hidden="true" />{aberta ? 'Aberta agora' : `Abre ${abreTexto.includes(',') ? abreTexto.split(',')[0] : `em ${abreTexto}`}`}</span>
     </div>
@@ -57,8 +57,8 @@ export function RenovacaoPix({ fim, aoRenovar, agora = Date.now() }: { fim: numb
     </div>
 
     <p className="renova-pix__texto">{aberta
-      ? <><strong>Faltam {dias} {dias === 1 ? 'dia' : 'dias'}.</strong> A renovação já está aberta: pague agora e o novo período começa em {diaMes(fim)}, quando o atual termina. No plano mensal, o acesso vai até {diaMes(novoFim)}.</>
-      : <>Seu acesso vai até <strong>{diaMes(fim)}</strong>. A renovação abre <strong>{abreTexto.includes(',') ? abreTexto : `em ${abreTexto}`}</strong>, 7 dias antes do fim, e mandamos um lembrete por e-mail perto do fim. Renovando, o novo período começa em {diaMes(fim)}.</>}</p>
+      ? <><strong>Faltam {dias} {dias === 1 ? 'dia' : 'dias'}.</strong> A renovação já está aberta: no Pix, pague agora e o novo período começa em {diaMes(fim)}; no cartão, a primeira cobrança é só em {diaMes(fim)}. No plano mensal, o acesso vai até {diaMes(novoFim)}.</>
+      : <>Seu acesso vai até <strong>{diaMes(fim)}</strong>. A renovação abre <strong>{abreTexto.includes(',') ? abreTexto : `em ${abreTexto}`}</strong>, 7 dias antes do fim, e mandamos um lembrete por e-mail perto do fim. Renovando pelo Pix ou pelo cartão, o novo período começa em {diaMes(fim)}.</>}</p>
 
     {aberta
       ? (aoRenovar
