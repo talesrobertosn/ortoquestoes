@@ -3,11 +3,11 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 309,
+  "pendente": 279,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 753,
+  "pendente-fonte": 770,
   "pendente-inspecao-imagem": 4,
-  "revisada": 1811
+  "revisada": 1824
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -68,9 +68,8 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 24,
-    "pendente-fonte": 47,
-    "revisada": 106
+    "pendente-fonte": 59,
+    "revisada": 118
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -97,10 +96,10 @@
    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 8,
+    "pendente": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 97,
-    "revisada": 137
+    "pendente-fonte": 102,
+    "revisada": 138
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -26570,7 +26569,7 @@
      }
     ],
     "questaoSha256": "55a77f20c7ef16ee66c74bcbfddd3b95ce6f851a9b385f1cef96f963a67ae946",
-    "comentarioSha256": "c1ad880e25a3c2eb03318e320c9a83afbb1becc10113103bd75388226ba345b4"
+    "comentarioSha256": "030e8b8bffe84b6b7972fdfb1e5f6c7c13c78ece74f38217e34013cf656e51b0"
    }
   },
   "mao-2047": {
@@ -28272,14 +28271,39 @@
    ],
    "prova": "SIMÃO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "95d505fec03dd5da1e2aec62444567e4dc7c58be37e18f31e6d7bf9c5a197d35"
+   "questaoSha256": "95d505fec03dd5da1e2aec62444567e4dc7c58be37e18f31e6d7bf9c5a197d35",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Polegar: ligamento colateral ulnar e lesão de Stener"
+      ],
+      "blocos": [
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+       "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "20fb64f07757717ef6e08599204385d7b8b520079d4c18e3804a3c6e672fb69e"
+     }
+    ],
+    "questaoSha256": "95d505fec03dd5da1e2aec62444567e4dc7c58be37e18f31e6d7bf9c5a197d35",
+    "comentarioSha256": "5e5802fd35cedf39634e35b1b445215355303d47b56342552c79e95d31fb6f9f"
+   }
   },
   "mao-2483": {
    "tema": "mao",
@@ -28328,14 +28352,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 apresenta artroplastia dePLACA VOLAR para borda volar cominutiva e descreve a anatomia dosCHECKREINS,mas não manda LIBERÁ-LOS PARCIALMENTE para alongar/avançar a placa na fratura-luxação dorsal ANTIGA. Existência de uma estrutura não prova o gesto intraoperatório. Falta técnica independente de ganho de comprimento e comparação com excisão dos colaterais/fixação dorsal;A intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "89e47ed3ca825dfe8777e13b70403c1816da63c6ea7e74eca1fbc047e4af5bf9"
+   "questaoSha256": "89e47ed3ca825dfe8777e13b70403c1816da63c6ea7e74eca1fbc047e4af5bf9",
+   "pendencia": "O resumo45 apresenta artroplastia dePLACA VOLAR para borda volar cominutiva e descreve a anatomia dosCHECKREINS,mas não manda LIBERÁ-LOS PARCIALMENTE para alongar/avançar a placa na fratura-luxação dorsal ANTIGA. Existência de uma estrutura não prova o gesto intraoperatório. Falta técnica independente de ganho de comprimento e comparação com excisão dos colaterais/fixação dorsal;A intacta."
   },
   "mao-2493": {
    "tema": "mao",
@@ -28344,14 +28369,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 descreve o ápiceDORSAL metacarpiano,mas não atribui expressamente sua produção à tração dosINTERÓSSEOSnaDIÁFISE TRANSVERSA. A ação dos intrínsecos naFALANGEPROXIMAL está descrita para ápiceVOLAR,outra alavanca. Falta mecanismo específico do metacarpo para confirmar toda a opçãoC;sem selo por coincidência de deformidade.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "597f77d2885900fd167128e62895ec49b063b9e5c303625238543b95fb7dd2fb"
+   "questaoSha256": "597f77d2885900fd167128e62895ec49b063b9e5c303625238543b95fb7dd2fb",
+   "pendencia": "O corpo45 descreve o ápiceDORSAL metacarpiano,mas não atribui expressamente sua produção à tração dosINTERÓSSEOSnaDIÁFISE TRANSVERSA. A ação dos intrínsecos naFALANGEPROXIMAL está descrita para ápiceVOLAR,outra alavanca. Falta mecanismo específico do metacarpo para confirmar toda a opçãoC;sem selo por coincidência de deformidade."
   },
   "mao-2494": {
    "tema": "mao",
@@ -28360,14 +28386,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo45 aborda parafusos e fixação de falanges,mas não reproduz a tabela doGREEN que atribui ao dispositivoINTRAMEDULAR facilidade de inserção,dispensa de equipamento especial e ausência de pino saliente,nem sua comparação de estabilidade rotacional. Não deduzir essas propriedades de qualquer parafuso intramedular. Falta tabela/definição do dispositivo e seus três atributos;D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "05055d14db6881b4a23167bd66b34dfcab674f2a66807ce9f71534e5dfe20ff3"
+   "questaoSha256": "05055d14db6881b4a23167bd66b34dfcab674f2a66807ce9f71534e5dfe20ff3",
+   "pendencia": "O resumo45 aborda parafusos e fixação de falanges,mas não reproduz a tabela doGREEN que atribui ao dispositivoINTRAMEDULAR facilidade de inserção,dispensa de equipamento especial e ausência de pino saliente,nem sua comparação de estabilidade rotacional. Não deduzir essas propriedades de qualquer parafuso intramedular. Falta tabela/definição do dispositivo e seus três atributos;D intacta."
   },
   "mao-2504": {
    "tema": "mao",
@@ -28411,14 +28438,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 diferencia luxaçãoMCF simples(com contato entre falange e cabeça) e complexa(placa volar interposta),mas não dá a faixa60–80° de hiperextensão daSUBLUXAÇÃO simples em contraste com20–40°. A posição da placa é parcialmente coberta,mas os dois pares angulares decidem entreA/D. Falta comparação anatômica/numérica independente completa;A preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "721dc3004e625649f4b3d9dc3bee70cf1417c2d635f3a446253f142f8ed5f77d"
+   "questaoSha256": "721dc3004e625649f4b3d9dc3bee70cf1417c2d635f3a446253f142f8ed5f77d",
+   "pendencia": "O corpo45 diferencia luxaçãoMCF simples(com contato entre falange e cabeça) e complexa(placa volar interposta),mas não dá a faixa60–80° de hiperextensão daSUBLUXAÇÃO simples em contraste com20–40°. A posição da placa é parcialmente coberta,mas os dois pares angulares decidem entreA/D. Falta comparação anatômica/numérica independente completa;A preservada."
   },
   "mao-2524": {
    "tema": "mao",
@@ -28511,14 +28539,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo45 descreve fraturas da cabeça metacarpiana e manejo da cominuição,mas não apresenta a série deMcELFRESH/DOBYNS nem distribuição dos traços intra-articulares que demonstra COMINUTIVO como mais frequente. Indicação de tratamento não prova prevalência da série histórica. Falta frequência específica dos quatro padrões;A intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "f580f12f1b315bfe88a65b2de4ed6c455e33602ba2ce368ed1d207da6bfcaf69"
+   "questaoSha256": "f580f12f1b315bfe88a65b2de4ed6c455e33602ba2ce368ed1d207da6bfcaf69",
+   "pendencia": "O corpo45 descreve fraturas da cabeça metacarpiana e manejo da cominuição,mas não apresenta a série deMcELFRESH/DOBYNS nem distribuição dos traços intra-articulares que demonstra COMINUTIVO como mais frequente. Indicação de tratamento não prova prevalência da série histórica. Falta frequência específica dos quatro padrões;A intacta."
   },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
@@ -33804,14 +33833,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo40 associa fraturas desviadas/cominutivas da cabeça radial a lesões colaterais e descreve mecanismos emvalgo eposterolateral. Não apresenta os achados deRM eEXAME SOBANESTESIA comparando frequência de lesõesLATERAIS eMEDIAIS emMasonII/III MESMOSEM LUXAÇÃO,como pedido na alternativaD. Não atribuir dados de estudo não transcritos ao resumo. Falta evidência independente dessa população e contraste;D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "bb079624b5576a5a147055f6a63d978260c7a7ae810d1badba9c796a8ab168a9"
+   "questaoSha256": "bb079624b5576a5a147055f6a63d978260c7a7ae810d1badba9c796a8ab168a9",
+   "pendencia": "O corpo40 associa fraturas desviadas/cominutivas da cabeça radial a lesões colaterais e descreve mecanismos emvalgo eposterolateral. Não apresenta os achados deRM eEXAME SOBANESTESIA comparando frequência de lesõesLATERAIS eMEDIAIS emMasonII/III MESMOSEM LUXAÇÃO,como pedido na alternativaD. Não atribuir dados de estudo não transcritos ao resumo. Falta evidência independente dessa população e contraste;D intacta."
   },
   "ombro-cotovelo-0649": {
    "tema": "ombro-cotovelo",
@@ -33821,14 +33851,42 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "e89cd8c4905849d375c96ef9d2f6a7a9b4a6d5cbdc25546f4786dc0636e6934d"
+   "questaoSha256": "e89cd8c4905849d375c96ef9d2f6a7a9b4a6d5cbdc25546f4786dc0636e6934d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Tríade terrível"
+      ],
+      "blocos": [
+       "triade-terrivel-732ff782",
+       "triade-terrivel-fc91076c",
+       "triade-terrivel-7f75b022",
+       "triade-terrivel-fe3d9fe4",
+       "triade-terrivel-499f49dc",
+       "triade-terrivel-2c2c5123"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "c8da7a939fc9be28b31656577470ad5b18171236bab11fc0aabb69af5533df18"
+     }
+    ],
+    "questaoSha256": "e89cd8c4905849d375c96ef9d2f6a7a9b4a6d5cbdc25546f4786dc0636e6934d",
+    "comentarioSha256": "597f6a407ff8236fb31b012a3007f0ecdb1023deab55852dcaebc2a011e042af"
+   }
   },
   "ombro-cotovelo-0650": {
    "tema": "ombro-cotovelo",
@@ -33837,14 +33895,41 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "172f88e997c20168b9b9b551b9ba21ef4da28a36ec18669a374116af96092837"
+   "questaoSha256": "172f88e997c20168b9b9b551b9ba21ef4da28a36ec18669a374116af96092837",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Instabilidade rotatória posterolateral crônica",
+       "Quem segura o cotovelo"
+      ],
+      "blocos": [
+       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+       "quem-segura-o-cotovelo-d2f0137f",
+       "quem-segura-o-cotovelo-7b7c7f11",
+       "quem-segura-o-cotovelo-2b1e3945"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "e225cae551bfe0d6b3af7208b1048aa8608ea41ee88292901de90d7fb1a0cc51"
+     }
+    ],
+    "questaoSha256": "172f88e997c20168b9b9b551b9ba21ef4da28a36ec18669a374116af96092837",
+    "comentarioSha256": "e99bf05f714796e5323aaac7f3e85fb8ba81b4b9473ed4f41fc7bc43deb15e2d"
+   }
   },
   "ombro-cotovelo-0651": {
    "tema": "ombro-cotovelo",
@@ -33854,14 +33939,40 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "914c990e644cd66ff38dc3f563908ae6b9468f416a9b9671fe31bc1f4373dd9d"
+   "questaoSha256": "914c990e644cd66ff38dc3f563908ae6b9468f416a9b9671fe31bc1f4373dd9d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo",
+       "Fraturas do coronoide"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-2b1e3945",
+       "fraturas-do-coronoide-261ac45a",
+       "quem-segura-o-cotovelo-e54d94bb"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "810629c1d18b709a792b79ba69ceeb7ac16a52ff5168e91d7857bfbd2f956973"
+     }
+    ],
+    "questaoSha256": "914c990e644cd66ff38dc3f563908ae6b9468f416a9b9671fe31bc1f4373dd9d",
+    "comentarioSha256": "c1671c011d7e32396b7bc04b9587b6065e2207c6636b2a405bd1ff109f7d4d37"
+   }
   },
   "ombro-cotovelo-0652": {
    "tema": "ombro-cotovelo",
@@ -33870,14 +33981,39 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "dd3b0ad11ee4f5e8280dab688851e9bf462ba483a4cbf79bd6a4386d21b30ffe"
+   "questaoSha256": "dd3b0ad11ee4f5e8280dab688851e9bf462ba483a4cbf79bd6a4386d21b30ffe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Classificação e mecanismos",
+       "Diagnóstico"
+      ],
+      "blocos": [
+       "classificacao-e-mecanismos-bf9aae38",
+       "diagnostico-7ee8a436"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "d8126e6634e53ca9ca2336eeb0b7a5f379586c49f10b9f6d322cb8a147673404"
+     }
+    ],
+    "questaoSha256": "dd3b0ad11ee4f5e8280dab688851e9bf462ba483a4cbf79bd6a4386d21b30ffe",
+    "comentarioSha256": "fa6999e6605253dd94d76eca53abc0c10d4df533449e6887ac9316cc243c3661"
+   }
   },
   "ombro-cotovelo-0658": {
    "tema": "ombro-cotovelo",
@@ -33886,14 +34022,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo40 apresentaMASON eBROBERG-MORREY,mas não a modificação deHOTCHKISS com fratura reconstruível porRAFI e bloqueio como definição deII. Indicação de cirurgia por bloqueio não demonstra toda uma categoria classificatória específica nem a regra doIII. Falta classificaçãoHotchkiss independente com os tipos comparados;B intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "b2778b86c2f95e174730dd778b1923469a29cb4c181d7d2ba81fbac984844d3e"
+   "questaoSha256": "b2778b86c2f95e174730dd778b1923469a29cb4c181d7d2ba81fbac984844d3e",
+   "pendencia": "O resumo40 apresentaMASON eBROBERG-MORREY,mas não a modificação deHOTCHKISS com fratura reconstruível porRAFI e bloqueio como definição deII. Indicação de cirurgia por bloqueio não demonstra toda uma categoria classificatória específica nem a regra doIII. Falta classificaçãoHotchkiss independente com os tipos comparados;B intacta."
   },
   "ombro-cotovelo-0659": {
    "tema": "ombro-cotovelo",
@@ -33903,14 +34040,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo40 confirma posiçãoNEUTRA e placa10°ANTERIOR à linha média lateral,mas descreve a área não articular como cerca deUMTERÇO,sem definir o CENTRO de uma zona exata de110°. A opçãoA coincide com a referência de placa,mas falta a definição angular e a equivalência entre centro dessa zona e aquela linha para conferir o enunciado integral. Não transformar aproximação em medida exata;A preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "1732344c2a4859132c52d8050f09e04587b4b60b56192cfd89beb91e67b07373"
+   "questaoSha256": "1732344c2a4859132c52d8050f09e04587b4b60b56192cfd89beb91e67b07373",
+   "pendencia": "O corpo40 confirma posiçãoNEUTRA e placa10°ANTERIOR à linha média lateral,mas descreve a área não articular como cerca deUMTERÇO,sem definir o CENTRO de uma zona exata de110°. A opçãoA coincide com a referência de placa,mas falta a definição angular e a equivalência entre centro dessa zona e aquela linha para conferir o enunciado integral. Não transformar aproximação em medida exata;A preservada."
   },
   "ombro-cotovelo-0660": {
    "tema": "ombro-cotovelo",
@@ -33920,14 +34058,43 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "eac80985f9e907eed3424a0b2462beea8ed789376eff432fe082b95154bcc7d9"
+   "questaoSha256": "eac80985f9e907eed3424a0b2462beea8ed789376eff432fe082b95154bcc7d9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Tríade terrível",
+       "Instabilidade rotatória posteromedial em varo",
+       "Ulna proximal: olécrano e Monteggia posterior"
+      ],
+      "blocos": [
+       "triade-terrivel-fc91076c",
+       "triade-terrivel-a81922cb",
+       "triade-terrivel-732ff782",
+       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
+       "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "15c113b3bfe37dfc76ec1e458129f4936fde209c1b59b35b73227648341dfa25"
+     }
+    ],
+    "questaoSha256": "eac80985f9e907eed3424a0b2462beea8ed789376eff432fe082b95154bcc7d9",
+    "comentarioSha256": "0bab40bd460bc81975632419f855bb1ff0278c416cf389e6f472783aef64f7b0"
+   }
   },
   "ombro-cotovelo-0661": {
    "tema": "ombro-cotovelo",
@@ -33937,14 +34104,42 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "92a7d52bbde149b848f4d2c5f0d22604fab3b31c1b5c70084fceeee7d954f628"
+   "questaoSha256": "92a7d52bbde149b848f4d2c5f0d22604fab3b31c1b5c70084fceeee7d954f628",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Luxação simples do cotovelo",
+       "Tríade terrível",
+       "Instabilidade rotatória posteromedial em varo"
+      ],
+      "blocos": [
+       "luxacao-simples-do-cotovelo-d4159e35",
+       "triade-terrivel-1483748a",
+       "luxacao-simples-do-cotovelo-5d25ae81",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "3796948ed9a22ec0cdf5a45aac0f83df489b47ad16ea2f2af9c9b2dc8637260e"
+     }
+    ],
+    "questaoSha256": "92a7d52bbde149b848f4d2c5f0d22604fab3b31c1b5c70084fceeee7d954f628",
+    "comentarioSha256": "0d05b929007711753a4dbfa457e806704fc1f937d5cfe8fcf65bc7cd55bab2a6"
+   }
   },
   "ombro-cotovelo-0662": {
    "tema": "ombro-cotovelo",
@@ -33953,14 +34148,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Os corpos40einfantil12 identificamBadoII posterior e o40listaJupiterIIA/IIB/IIC/IID por nível. Não comparam aFREQUÊNCIAda metáfise proximal com diáfise,padrões articulares e múltiplos níveis naMonteggia posterior que permita escolher “mais comum”D. Predomínio deBadoII emadultos não é distribuição dos subtipos. Falta epidemiologia por nível compatível;D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "3542fdf32030b6f712be828d41d368ef50155e26c9639445ae1aab878346935a"
+   "questaoSha256": "3542fdf32030b6f712be828d41d368ef50155e26c9639445ae1aab878346935a",
+   "pendencia": "Os corpos40einfantil12 identificamBadoII posterior e o40listaJupiterIIA/IIB/IIC/IID por nível. Não comparam aFREQUÊNCIAda metáfise proximal com diáfise,padrões articulares e múltiplos níveis naMonteggia posterior que permita escolher “mais comum”D. Predomínio deBadoII emadultos não é distribuição dos subtipos. Falta epidemiologia por nível compatível;D intacta."
   },
   "ombro-cotovelo-0663": {
    "tema": "ombro-cotovelo",
@@ -33969,14 +34165,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo40 não descreve a viaBRYAN-MORREY doÚMERODISTAL,rebatimento medial→lateral do aparelho extensor,nem compara paratricipital/osteotomia doolécrano/via lateral e sua taxa de pseudartrose. A anatomia das vias laterais doRADIO não substitui a abordagem do úmero distal. Falta descrição cirúrgica independente das afirmações;A intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "be342830903a478827c71ab7e47c75fd3eed1975be3d077c7fff64a1aef2850f"
+   "questaoSha256": "be342830903a478827c71ab7e47c75fd3eed1975be3d077c7fff64a1aef2850f",
+   "pendencia": "O resumo40 não descreve a viaBRYAN-MORREY doÚMERODISTAL,rebatimento medial→lateral do aparelho extensor,nem compara paratricipital/osteotomia doolécrano/via lateral e sua taxa de pseudartrose. A anatomia das vias laterais doRADIO não substitui a abordagem do úmero distal. Falta descrição cirúrgica independente das afirmações;A intacta."
   },
   "ombro-cotovelo-0665": {
    "tema": "ombro-cotovelo",
@@ -33985,14 +34182,41 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "aeb51eedf2d68757247059d204a67349befb6ce050686cf84b2d8311d0db809f"
+   "questaoSha256": "aeb51eedf2d68757247059d204a67349befb6ce050686cf84b2d8311d0db809f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Ulna proximal: olécrano e Monteggia posterior"
+      ],
+      "blocos": [
+       "ulna-proximal-olecrano-e-monteggia-posterior-d94b44b4",
+       "ulna-proximal-olecrano-e-monteggia-posterior-15629400",
+       "ulna-proximal-olecrano-e-monteggia-posterior-e332dbdb",
+       "ulna-proximal-olecrano-e-monteggia-posterior-6bc1603b",
+       "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "b006b467e254575bd0af1af11ce3d81add99915d6042d62d8661b4dfd96daa8b"
+     }
+    ],
+    "questaoSha256": "aeb51eedf2d68757247059d204a67349befb6ce050686cf84b2d8311d0db809f",
+    "comentarioSha256": "0782dc68eecc802876f0a037280e2536e674a9b36d72214b5698116bf456b34b"
+   }
   },
   "ombro-cotovelo-0667": {
    "tema": "ombro-cotovelo",
@@ -34002,14 +34226,15 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo40 menciona a incidênciaRADIOCAPITELAR,mas não define cotovelo emPERFIL e tubo45°CEFÁLICO em comparação comAP/caudal. Mostrar a cabeça de perfil não prova sozinho o posicionamento e a direção do tubo. Falta protocolo radiográfico completo independente;C intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "6d44090c144241bc910d793dd6f4daeaacc51ba9ff0d422ad448226ea95f706b"
+   "questaoSha256": "6d44090c144241bc910d793dd6f4daeaacc51ba9ff0d422ad448226ea95f706b",
+   "pendencia": "O corpo40 menciona a incidênciaRADIOCAPITELAR,mas não define cotovelo emPERFIL e tubo45°CEFÁLICO em comparação comAP/caudal. Mostrar a cabeça de perfil não prova sozinho o posicionamento e a direção do tubo. Falta protocolo radiográfico completo independente;C intacta."
   },
   "ombro-cotovelo-0669": {
    "tema": "ombro-cotovelo",
@@ -34019,14 +34244,41 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "792f5418efeb5c75d7b756215171641bd54a0d8274a3e99ee3389115b955fb84"
+   "questaoSha256": "792f5418efeb5c75d7b756215171641bd54a0d8274a3e99ee3389115b955fb84",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo",
+       "Instabilidade rotatória posterolateral crônica"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-d2f0137f",
+       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+       "quem-segura-o-cotovelo-7b7c7f11",
+       "quem-segura-o-cotovelo-e5d8f9c3"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "27b85ee15745e9c56d2ef0602a94ddca8c5212649f3333e639f905c06ada774b"
+     }
+    ],
+    "questaoSha256": "792f5418efeb5c75d7b756215171641bd54a0d8274a3e99ee3389115b955fb84",
+    "comentarioSha256": "a1d7099936b5e11b0d7a05a20cc89559669204f3cb704f1502be26a82270c7d6"
+   }
   },
   "ombro-cotovelo-0670": {
    "tema": "ombro-cotovelo",
@@ -34036,14 +34288,40 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "7c2925c96a616b88a98c5e190273892be303e39fe553d80a9aba965eb743c111"
+   "questaoSha256": "7c2925c96a616b88a98c5e190273892be303e39fe553d80a9aba965eb743c111",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-2b1e3945",
+       "quem-segura-o-cotovelo-49b9c486",
+       "quem-segura-o-cotovelo-e5d8f9c3",
+       "quem-segura-o-cotovelo-e54d94bb"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "a97d9643175dfafc8e1c93488c7ec10775cd48d897fe2eb223f1efb9d331fc9c"
+     }
+    ],
+    "questaoSha256": "7c2925c96a616b88a98c5e190273892be303e39fe553d80a9aba965eb743c111",
+    "comentarioSha256": "45683945831b3c940063263f510418dd4c320b8a60d89b8b689db2e092b7da2d"
+   }
   },
   "ombro-cotovelo-0671": {
    "tema": "ombro-cotovelo",
@@ -34053,14 +34331,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo40 exige reconstrução da cabeça e da ulna e considera reparos colaterais,mas não atribui especificamente a INSTABILIDADE ULNOUMERAL persistente após fixação daMONTEGGIA POSTERIOR à restauração inadequada daCABEÇA RADIAL em comparação com lesões medial,capsular eanular. A ulna mal reduzida explica subluxaçãoRADIOCAPITELAR,outro desfecho. Falta relação causal e comparação específicas paraD;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "5e0f7f4149e6baefe789a2453ade6d473140266a5c0ced99d51596c6c6bd9750"
+   "questaoSha256": "5e0f7f4149e6baefe789a2453ade6d473140266a5c0ced99d51596c6c6bd9750",
+   "pendencia": "O corpo40 exige reconstrução da cabeça e da ulna e considera reparos colaterais,mas não atribui especificamente a INSTABILIDADE ULNOUMERAL persistente após fixação daMONTEGGIA POSTERIOR à restauração inadequada daCABEÇA RADIAL em comparação com lesões medial,capsular eanular. A ulna mal reduzida explica subluxaçãoRADIOCAPITELAR,outro desfecho. Falta relação causal e comparação específicas paraD;sem selo."
   },
   "ombro-cotovelo-0672": {
    "tema": "ombro-cotovelo",
@@ -34069,14 +34348,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo40 não apresenta a classificação das fraturas doCAPÍTULO UMERAL em que a cominutiva éIII,nem define qual versão da classificação se usa. Não transferirMasonIII daCABEÇA RADIAL ao capítulo só pelo número. Falta classificação própria independente com os tiposI–IV;A preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "83d85401d2044d365f8e4e8b839a2e480b47065409f9b5ec2502dee7b04cdacf"
+   "questaoSha256": "83d85401d2044d365f8e4e8b839a2e480b47065409f9b5ec2502dee7b04cdacf",
+   "pendencia": "O resumo40 não apresenta a classificação das fraturas doCAPÍTULO UMERAL em que a cominutiva éIII,nem define qual versão da classificação se usa. Não transferirMasonIII daCABEÇA RADIAL ao capítulo só pelo número. Falta classificação própria independente com os tiposI–IV;A preservada."
   },
   "ombro-cotovelo-0674": {
    "tema": "ombro-cotovelo",
@@ -34085,14 +34365,38 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "52607e4fddf631f9e74909510f330052305f4b077d88f05719c2189ce61e83ac"
+   "questaoSha256": "52607e4fddf631f9e74909510f330052305f4b077d88f05719c2189ce61e83ac",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-c4d889b2",
+       "fratura-da-cabeca-do-radio-3e116d65"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "29e91f7087e7009695c52008a2402522484e86e3e6d56ef1c663e9575d68eefa"
+     }
+    ],
+    "questaoSha256": "52607e4fddf631f9e74909510f330052305f4b077d88f05719c2189ce61e83ac",
+    "comentarioSha256": "682c4457272e4922f98b1a53736666b494d40b0d09e85afda19401fe1a8650d2"
+   }
   },
   "ombro-cotovelo-0676": {
    "tema": "ombro-cotovelo",
@@ -34101,14 +34405,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo40 não descreve padrões bicolares emT/Y/H/lambda doÚMERODISTAL,nem o pequeno fragmentoTROCLEAR potencialmente avascular doH. A preocupação geral com irrigação não prova essa geometria e suas inserções. Falta anatomia do padrãoH em fonte independente;C intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "71a5d89969442a78dc90545cd4fdf669c0441ad0e71a9a8112a46b348de6589d"
+   "questaoSha256": "71a5d89969442a78dc90545cd4fdf669c0441ad0e71a9a8112a46b348de6589d",
+   "pendencia": "O corpo40 não descreve padrões bicolares emT/Y/H/lambda doÚMERODISTAL,nem o pequeno fragmentoTROCLEAR potencialmente avascular doH. A preocupação geral com irrigação não prova essa geometria e suas inserções. Falta anatomia do padrãoH em fonte independente;C intacta."
   },
   "ombro-cotovelo-0677": {
    "tema": "ombro-cotovelo",
@@ -34117,14 +34422,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo40 não define fraturasTRANSCOLUNARES doÚMERODISTAL nem o traço que cruza as colunas SEM atingir superfície articular,em comparação com cápsula e número de padrões. “Fraturas do cotovelo”é apenas subtema candidato. Falta classificação anatômica independente correspondente;A preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "c79a928a4d07015c0e564755d1adb14376d55c0ed60f9311d5fcf0b662cf4fd3"
+   "questaoSha256": "c79a928a4d07015c0e564755d1adb14376d55c0ed60f9311d5fcf0b662cf4fd3",
+   "pendencia": "O resumo40 não define fraturasTRANSCOLUNARES doÚMERODISTAL nem o traço que cruza as colunas SEM atingir superfície articular,em comparação com cápsula e número de padrões. “Fraturas do cotovelo”é apenas subtema candidato. Falta classificação anatômica independente correspondente;A preservada."
   },
   "ombro-cotovelo-0678": {
    "tema": "ombro-cotovelo",
@@ -34133,14 +34439,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo40 não apresenta a classificação das fraturasARTICULARES doÚMERODISTAL por envolvimento posterolateral/medial crescente nem identificaTIPOI como cisalhamentoCORONAL. A classificação do coronoide é outra estrutura e não supre essa lacuna. Falta definição independente da série e comparação dos quatro padrões;B intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "e3863ce212be0d28db24d0c030949c6cd69ccd5587207252965a0b0826267014"
+   "questaoSha256": "e3863ce212be0d28db24d0c030949c6cd69ccd5587207252965a0b0826267014",
+   "pendencia": "O corpo40 não apresenta a classificação das fraturasARTICULARES doÚMERODISTAL por envolvimento posterolateral/medial crescente nem identificaTIPOI como cisalhamentoCORONAL. A classificação do coronoide é outra estrutura e não supre essa lacuna. Falta definição independente da série e comparação dos quatro padrões;B intacta."
   },
   "ombro-cotovelo-0679": {
    "tema": "ombro-cotovelo",
@@ -34149,14 +34456,38 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f7b25d0a2c54fe0b96d7af0cb7de879086c9caea7c82dd467b4696da5341a7ec"
+   "questaoSha256": "f7b25d0a2c54fe0b96d7af0cb7de879086c9caea7c82dd467b4696da5341a7ec",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Ulna proximal: olécrano e Monteggia posterior"
+      ],
+      "blocos": [
+       "ulna-proximal-olecrano-e-monteggia-posterior-79b0260b",
+       "ulna-proximal-olecrano-e-monteggia-posterior-f5dedde1"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "b34e984de68863d7d582fa8b62cf29f84e36ac4d6b215bc207deeea800e8ffbe"
+     }
+    ],
+    "questaoSha256": "f7b25d0a2c54fe0b96d7af0cb7de879086c9caea7c82dd467b4696da5341a7ec",
+    "comentarioSha256": "6305c7d2aa33c1e4e14f4fb5c7718d8427b9deee8592d6bcea8e2cb40e93b086"
+   }
   },
   "ombro-cotovelo-0680": {
    "tema": "ombro-cotovelo",
@@ -34165,14 +34496,38 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "3ea47f30303816a8df1504f2cde579219815fc068e67a238363ee15157877e5b"
+   "questaoSha256": "3ea47f30303816a8df1504f2cde579219815fc068e67a238363ee15157877e5b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-8dbbe2b9",
+       "fratura-da-cabeca-do-radio-a6880686"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "a88b96d28e11af69f39be393d30bf725dfb6eb34f72feb2c0334ef975f923523"
+     }
+    ],
+    "questaoSha256": "3ea47f30303816a8df1504f2cde579219815fc068e67a238363ee15157877e5b",
+    "comentarioSha256": "51c6f41c52261e1fa9407d909a1f3d15a0eb9c1080ef7a76104e5b54dd0c4bc9"
+   }
   },
   "ombro-cotovelo-0681": {
    "tema": "ombro-cotovelo",
@@ -34182,14 +34537,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo40 define lesão daMEMBRANAINTERÓSSEA naEssex-Lopresti,mas não mapeia cordãoOBLÍQUODISTAL,bandaACESSÓRIA ecordãoOBLÍQUOPROXIMAL nos três segmentos pedidos,nem diferencia cordão dorsal acessório. Função longitudinal não prova topografia de cada banda. Falta anatomia segmentar independente completa;B intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "752a98854895979ebbd5b572a41f4454f80f6f79240a6ec2fe2d7ee55497988f"
+   "questaoSha256": "752a98854895979ebbd5b572a41f4454f80f6f79240a6ec2fe2d7ee55497988f",
+   "pendencia": "O resumo40 define lesão daMEMBRANAINTERÓSSEA naEssex-Lopresti,mas não mapeia cordãoOBLÍQUODISTAL,bandaACESSÓRIA ecordãoOBLÍQUOPROXIMAL nos três segmentos pedidos,nem diferencia cordão dorsal acessório. Função longitudinal não prova topografia de cada banda. Falta anatomia segmentar independente completa;B intacta."
   },
   "osteometabolicas-0013": {
    "tema": "osteometabolicas",
