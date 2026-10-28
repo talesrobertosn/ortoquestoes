@@ -1,0 +1,458 @@
+{
+  "base": "b7633cb53107717cc2a418055d39acbdeea21738",
+  "lotes": {
+    "208": {
+      "revisadas": [
+        "mao-2480",
+        "ombro-cotovelo-0649",
+        "ombro-cotovelo-0650",
+        "ombro-cotovelo-0651"
+      ],
+      "lacunas": [
+        "mao-2491",
+        "mao-2493",
+        "mao-2494",
+        "mao-2513",
+        "mao-2548",
+        "ombro-cotovelo-0648"
+      ]
+    },
+    "209": {
+      "revisadas": [
+        "ombro-cotovelo-0652",
+        "ombro-cotovelo-0660",
+        "ombro-cotovelo-0661",
+        "ombro-cotovelo-0665",
+        "ombro-cotovelo-0669"
+      ],
+      "lacunas": [
+        "ombro-cotovelo-0658",
+        "ombro-cotovelo-0659",
+        "ombro-cotovelo-0662",
+        "ombro-cotovelo-0663",
+        "ombro-cotovelo-0667"
+      ]
+    },
+    "210": {
+      "revisadas": [
+        "ombro-cotovelo-0670",
+        "ombro-cotovelo-0674",
+        "ombro-cotovelo-0679",
+        "ombro-cotovelo-0680"
+      ],
+      "lacunas": [
+        "ombro-cotovelo-0671",
+        "ombro-cotovelo-0672",
+        "ombro-cotovelo-0676",
+        "ombro-cotovelo-0677",
+        "ombro-cotovelo-0678",
+        "ombro-cotovelo-0681"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwood10-45-fraturas-mao": {
+      "markdownSha256": "9ab6a8ca6fad48532543a911bbef85e47ad7a596c3b5322f2fc55a00358102f5",
+      "linhas": 674,
+      "compiladoSha256Bytes": "6f517267483f2173d3fee3492f3a79cff5aab7acffdf7db8f63f50050ce2cc79"
+    },
+    "rockwood10-40-cotovelo-cabeca-radio": {
+      "markdownSha256": "67a27eaeb3c15a985c2bb856ee42cbcd8f153b8c377d43eddeafdebcfae20d88",
+      "linhas": 554,
+      "compiladoSha256Bytes": "62967b1b8870d9338b64819257a219a5d5d79b71000511346d89e774765a2917"
+    },
+    "rockwoodcriancas10-12-monteggia": {
+      "markdownSha256": "d0f77d57aa743f9e993805b9ff0777748b3db0e6055610190e1f5c0d247443b9",
+      "linhas": 73,
+      "compiladoSha256Bytes": "5da810a5d2e138e9b846c3e8987741d2450a8e1a522b7f1cfd0e481e4b579460"
+    }
+  },
+  "leitura": "Corpo40 inteiro554linhas relido nesta passagem em1–160,161–335,336–554. Novo resumo infantil12 inteiro lido;usado apenas na definição deBadoI,sem importar frequências ou tratamento infantil para o adulto. Corpo45 inteiro lido anteriormente e hashpreservado;anatomia doLCU eStener relida. Notas de treino e comentários anteriores não sustentam as miniaulas.",
+  "referenciasHistoricas": {
+    "mao-2493": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 268"
+      ],
+      "comentarioAnteriorSha256": "c3bb0863f8b21e5d6479374870de9ec84065fdcfd8053b3f829ca3c53b3b01b5"
+    },
+    "mao-2548": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e das falanges), p. 260 e 261 (Quadro 7.2)"
+      ],
+      "comentarioAnteriorSha256": "c44c6356ed0163669bdb04ffec5f6ad114402382f3de8b4d3c528e2663fd685e"
+    },
+    "ombro-cotovelo-0650": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 22 (Luxação traumática complexa do cotovelo), p. 977",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 23 (Instabilidade crônica do cotovelo), p. 994 e 995"
+      ],
+      "comentarioAnteriorSha256": "44a1e6603c0b74dbcf27d5ca962bfb147fa9a595c5d2a20ae0c07676824a18db"
+    },
+    "ombro-cotovelo-0651": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 22 (Luxação traumática complexa do cotovelo), p. 977 e 986"
+      ],
+      "comentarioAnteriorSha256": "5626c50ae1a7f00e13b7329a6c017ad8746ac18231d29c327b956179fcb8c84b"
+    },
+    "ombro-cotovelo-0649": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 22 (Luxação traumática complexa do cotovelo), p. 981 e 986"
+      ],
+      "comentarioAnteriorSha256": "b9ddfdcc49774c4d6ce7f4aaa2bc1a9290ca7225e09e0ef6a8995b2199f156b4"
+    },
+    "mao-2480": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 349 e 350"
+      ],
+      "comentarioAnteriorSha256": "da656623add4c94c818c2730cc803f291c63dcb55c1bbd8fd67c29bece042fae"
+    },
+    "mao-2494": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 271"
+      ],
+      "comentarioAnteriorSha256": "ae4c811120fd789c1ae3ccda908dd90a1b3de932fc7f3f8ca7f51ea286ec8789"
+    },
+    "mao-2491": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 336 e 337 (Fig. 8.17)"
+      ],
+      "comentarioAnteriorSha256": "d2aa3dc653b6f76ac3f1a9b1865ffc48c1f747f9ddff84627b92bda55588e4a4"
+    },
+    "mao-2513": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 345"
+      ],
+      "comentarioAnteriorSha256": "d36280be916b8c47045e3bdd35bf37cc04f5f0ebb72851e9b91dffe5a2ecc3d0"
+    },
+    "ombro-cotovelo-0648": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 19 (Fraturas da cabeça do rádio), p. 900"
+      ],
+      "comentarioAnteriorSha256": "303774a53495bce57039a1bdbd3480c289ee8c6cdcfa668def2f5648c2ce4083"
+    },
+    "ombro-cotovelo-0663": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 18 (Fraturas do úmero distal), p. 875, 877, 881 e Fig. 18.23"
+      ],
+      "comentarioAnteriorSha256": "287e0d21acbd896589e432467910b13f6f624fba263f6373919242b35c89ad18"
+    },
+    "ombro-cotovelo-0662": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 20 (Fraturas da ulna proximal), p. 939 e Fig. 20.4"
+      ],
+      "comentarioAnteriorSha256": "bdf9dfafc47514430e0f4dc78615e78c4068279c1d143797eeef9fd77eff9004"
+    },
+    "ombro-cotovelo-0660": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 22 (Luxação complexa do cotovelo), p. 984 a 986"
+      ],
+      "comentarioAnteriorSha256": "d6895d2e1e20e97d2eb9e622523c1f187af46966ea2b9381ba37547206c04f6a"
+    },
+    "ombro-cotovelo-0652": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 20 (Fraturas da ulna proximal), p. 939, 944 e 945",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 41 (Fraturas da mão, punho e antebraço na criança), p. 1642 e 1643"
+      ],
+      "comentarioAnteriorSha256": "dcf2559d3c7171e1acb8071fc9cf45b367b9703592098b6b1b647a3e3e67738b"
+    },
+    "ombro-cotovelo-0658": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 19 (Fraturas da cabeça do rádio), p. 899 e 900 (Tabela 19.1)"
+      ],
+      "comentarioAnteriorSha256": "fa0c800d27cdf5a86a6361f066ecf5753213e4d7d65450d3eedccf404ec2b022"
+    },
+    "ombro-cotovelo-0661": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 22 (Luxação complexa do cotovelo), p. 978"
+      ],
+      "comentarioAnteriorSha256": "e866a4cffb5753377768d4cd6664006007ffd7c445e852806f07ef8c5b351d01"
+    },
+    "ombro-cotovelo-0669": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 22 (Luxação e instabilidade do cotovelo), p. 977"
+      ],
+      "comentarioAnteriorSha256": "34227ead8ea473592893c6b429f1e3cd06894c46ca2615424834ecbc61d204da"
+    },
+    "ombro-cotovelo-0665": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 20 (Fraturas da ulna proximal), p. 939 (Fig. 20.5)"
+      ],
+      "comentarioAnteriorSha256": "5d5e7072b0e295095746eba6f74883fe678740f12d2e8017dbb2cdecd8624aeb"
+    },
+    "ombro-cotovelo-0659": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 19 (Fraturas da cabeça do rádio), p. 901 e 903 (Fig. 19.8)"
+      ],
+      "comentarioAnteriorSha256": "6418e80b4a359d53bcb6b82623122f8a664c5797aef9ef71ce7966be84acf059"
+    },
+    "ombro-cotovelo-0667": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 19 (Fraturas da cabeça do rádio), p. 899"
+      ],
+      "comentarioAnteriorSha256": "9bdb4b4632a4b101d398749fc7e4630f69906d4bd2f76e5bd6e2a17b42f29327"
+    },
+    "ombro-cotovelo-0671": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 20 (Fraturas da ulna proximal), p. 939, 947 e 948 (Fig. 20.14)"
+      ],
+      "comentarioAnteriorSha256": "934706f6d54de18642fc0403bafd96be382eb7efaf7d488ac66678fb66d55ec6"
+    },
+    "ombro-cotovelo-0679": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 20 (Fraturas da ulna proximal), p. 938"
+      ],
+      "comentarioAnteriorSha256": "c19489ad215dd16a171d1106a8b002baf4890f6fade1b5d5c9793a3975d430e0"
+    },
+    "ombro-cotovelo-0670": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 22 (Luxação complexa do cotovelo), p. 977 e 979"
+      ],
+      "comentarioAnteriorSha256": "18d285181e2b3581fd6d18a492af03eac86932894ba63ba24d7c63da6c5485a7"
+    },
+    "ombro-cotovelo-0676": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 18 (Fraturas do úmero distal), p. 865 (Fig. 18.9)"
+      ],
+      "comentarioAnteriorSha256": "98b58e49e29fb3236fbd116febe39ab1c53f8506a8cd6b1b01fbbeb2afc931e7"
+    },
+    "ombro-cotovelo-0672": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 18 (Fraturas do úmero distal), p. 866 e Fig. 18.6"
+      ],
+      "comentarioAnteriorSha256": "ea601416227b1d9d134c9a807ab874bdd37f714c2d4e30d5b602d9eea77a8960"
+    },
+    "ombro-cotovelo-0678": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 18 (Fraturas do úmero distal), p. 867 e 868 (Figs. 18.12 e 18.13)"
+      ],
+      "comentarioAnteriorSha256": "aa39020c9c99ea035ff838345d9dae91a40cc78913b765df25342b482c902c7a"
+    },
+    "ombro-cotovelo-0680": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 21 (Distúrbios do antebraço), p. 968 e 969 (Fig. 21.31)"
+      ],
+      "comentarioAnteriorSha256": "42df280d32a4e16bac3882e93f212e0f9696a475120ee8a54c9c916d3a50d81d"
+    },
+    "ombro-cotovelo-0677": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 18 (Fraturas do úmero distal), p. 865 (Fig. 18.10)"
+      ],
+      "comentarioAnteriorSha256": "7a3a3713a7c8f5341fde4742ba993535982c0f06dcdbe8027ff06d37587420a5"
+    },
+    "ombro-cotovelo-0674": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 19 (Fraturas da cabeça do rádio), p. 901 e 918"
+      ],
+      "comentarioAnteriorSha256": "bd5dbb00c1e02a297cf54a2f460eec708233e7eaffa7e3dc9778d584888cfdd7"
+    },
+    "ombro-cotovelo-0681": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 21 (Distúrbios do antebraço), p. 951 (Fig. 21.2)"
+      ],
+      "comentarioAnteriorSha256": "c7279a78b2d6ac56a290e158356cdefbd526df63b368095e7199b9db565e8842"
+    }
+  },
+  "motivosCriacao": {
+    "mao-2480": {
+      "origem": {
+        "arquivo": "SIMAO 2021",
+        "pagina": 6,
+        "numeroOriginal": 39
+      },
+      "prova": "SIMÃO",
+      "ano": 2021,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 39 do SIMÃO 2021, que perguntou onde ocorre mais frequentemente a lesão do colateral ulnar do polegar.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 39 do SIMÃO 2021, que perguntou onde ocorre mais frequentemente a lesão do colateral ulnar do polegar."
+    },
+    "ombro-cotovelo-0649": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 99,
+        "numeroOriginal": 99
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 99 do SIMÃO 2026, que cobrou o protocolo de tratamento da tríade terrível.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 99 do SIMÃO 2026, que cobrou o protocolo de tratamento da tríade terrível."
+    },
+    "ombro-cotovelo-0650": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 86,
+        "numeroOriginal": 86
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 86 do SIMÃO 2026, que cobrou o movimento e a estrutura insuficiente na instabilidade rotatória posterolateral.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 86 do SIMÃO 2026, que cobrou o movimento e a estrutura insuficiente na instabilidade rotatória posterolateral."
+    },
+    "ombro-cotovelo-0651": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 88,
+        "numeroOriginal": 88
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 88 do SIMÃO 2026, que cobrou o feixe mais resistente do colateral medial e a sua inserção.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 88 do SIMÃO 2026, que cobrou o feixe mais resistente do colateral medial e a sua inserção."
+    },
+    "ombro-cotovelo-0652": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 92,
+        "numeroOriginal": 92
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 92 do SIMÃO 2026, que cobrou o tipo I de Bado.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 92 do SIMÃO 2026, que cobrou o tipo I de Bado."
+    },
+    "ombro-cotovelo-0660": {
+      "origem": {
+        "arquivo": "SIMAO 2023",
+        "pagina": 8,
+        "numeroOriginal": 29
+      },
+      "prova": "SIMÃO",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 29 do SIMÃO 2023, que perguntou por qual acesso a fratura do coronoide é geralmente tratada na luxação com fratura multifragmentada da cabeça do rádio. A mesma pergunta volta com as opções em outra ordem.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 29 do SIMÃO 2023, que perguntou por qual acesso a fratura do coronoide é geralmente tratada na luxação com fratura multifragmentada da cabeça do rádio."
+    },
+    "ombro-cotovelo-0661": {
+      "origem": {
+        "arquivo": "SIMAO 2023",
+        "pagina": 2,
+        "numeroOriginal": 69
+      },
+      "prova": "SIMÃO",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 69 do SIMÃO 2023, que perguntou o mecanismo da maioria das luxações do cotovelo. A mesma pergunta volta com as quatro combinações em outra ordem.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 69 do SIMÃO 2023, que perguntou o mecanismo da maioria das luxações do cotovelo."
+    },
+    "ombro-cotovelo-0665": {
+      "origem": {
+        "arquivo": "SBCM 2024",
+        "pagina": 47,
+        "numeroOriginal": 47
+      },
+      "prova": "SBCM",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 47 da SBCM 2024, que perguntou como a MAYO classifica a fratura do olécrano com o antebraço subluxado em relação ao úmero distal.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 47 da SBCM 2024, que perguntou como a MAYO classifica a fratura do olécrano com o antebraço subluxado em relação ao úmero distal."
+    },
+    "ombro-cotovelo-0669": {
+      "origem": {
+        "arquivo": "SBCM 2024",
+        "pagina": 99,
+        "numeroOriginal": 99
+      },
+      "prova": "SBCM",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 99 da SBCM 2024, que perguntou a principal estrutura que impede a instabilidade rotatória posterolateral do cotovelo.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 99 da SBCM 2024, que perguntou a principal estrutura que impede a instabilidade rotatória posterolateral do cotovelo."
+    },
+    "ombro-cotovelo-0670": {
+      "origem": {
+        "arquivo": "SBCM 2022",
+        "pagina": 22,
+        "numeroOriginal": 22
+      },
+      "prova": "SBCM",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 22 da SBCM 2022, que perguntou a porção mais resistente do colateral medial do cotovelo.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 22 da SBCM 2022, que perguntou a porção mais resistente do colateral medial do cotovelo."
+    },
+    "ombro-cotovelo-0674": {
+      "origem": {
+        "arquivo": "SBCM 2022",
+        "pagina": 79,
+        "numeroOriginal": 79
+      },
+      "prova": "SBCM",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 79 da SBCM 2022, que perguntou o tamanho do implante da cabeça do rádio pela forma elíptica da cabeça.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 79 da SBCM 2022, que perguntou o tamanho do implante da cabeça do rádio pela forma elíptica da cabeça."
+    },
+    "ombro-cotovelo-0679": {
+      "origem": {
+        "arquivo": "SBCM 2023",
+        "pagina": 60,
+        "numeroOriginal": 60
+      },
+      "prova": "SBCM",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 60 da SBCM 2023, que cobrou o elemento-chave do tratamento cirúrgico da fratura-luxação de MONTEGGIA.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 60 da SBCM 2023, que cobrou o elemento-chave do tratamento cirúrgico da fratura-luxação de MONTEGGIA."
+    },
+    "ombro-cotovelo-0680": {
+      "origem": {
+        "arquivo": "SBCM 2023",
+        "pagina": 62,
+        "numeroOriginal": 62
+      },
+      "prova": "SBCM",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 62 da SBCM 2023, que cobrou as características e o tratamento da lesão de ESSEX-LOPRESTI.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 62 da SBCM 2023, que cobrou as características e o tratamento da lesão de ESSEX-LOPRESTI."
+    }
+  },
+  "figuras": "Todos30 sem arquivo de imagem e sem necessidade de figura identificada no enunciado.",
+  "divergencia": "ombro0649 mantémA,mas fonte40 começa por coronoide/cápsula antes da cabeça radial;opçãoA inverte os dois primeiros gestos. Explicação ealerta preservam o gabarito,sem falsificar a ordem do resumo.",
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 13,
+    "lacunasComentariosIntactos": 17,
+    "demaisBytesPreservados": true,
+    "motivosCriacaoConferidos": 13,
+    "ui": "13/13casos390/1440 comresposta,aula,alertas efontes exatas aprovados;0649repetido após padronizar rótulos. Teste funcionalDCBA confirmouA→D emconceito,resposta ealerta da0649.",
+    "rotulos": "Sem rótulos de gabarito não remapeáveis:0649usaalternativaAemcada referência. Alteração de rótulo viaaplicar comhashatual,sem mudançaclínica."
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 307,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 752,
+      "pendente-inspecao-imagem": 4,
+      "revisada": 1814
+    }
+  },
+  "concorrencia": "Baseb763 inclui118comentários doPR613. PR612(205–207) ainda precisa ser incorporado/reconciliado antes desta publicação. Esta entrega altera apenas1comentário demao e12deombro-cotovelo;preserva demais bytes.",
+  "continuidade": "Próximo211:seleção local10candidatas já teve enunciados e alternativas lidos,mas sem aplicação/comentários novos. Inclui2332/2333 restantes da antiga206,0251/0300,congênitas0279/0316/0359/0508/0510 e0583;derivar de novo do catálogo publicado e fontes disponíveis. Não contar lacunas como conclusão."
+}

@@ -39371,19 +39371,43 @@
   "conferido": false
  },
  "mao-2480": {
-  "conceito": "O polegar do goleiro abre para fora, e o colateral ulnar cede. Onde ele rompe define a técnica de reparo.\n\n**O local mais comum.** O Green descreve a **avulsão distal do ligamento, na base da falange proximal, como a mais comum**; ela exige reinserção do ligamento no osso, com sutura de arrancamento ou âncora. As rupturas na substância e as proximais são menos comuns e historicamente foram suturadas ao próprio ligamento ou ao periósteo (Green, cap. 8, p. 350).\n\n**Por que importa.** É a avulsão distal que permite a lesão de STENER: com grande angulação radial, o ligamento rompe na inserção distal, a aponeurose do adutor desliza para distal, e o ligamento escapa por baixo dela; ao realinhar o polegar, a borda da aponeurose fica entre o ligamento e sua inserção (Green, cap. 8, p. 349, Fig. 8.33). A fratura por avulsão da base ulnar da falange proximal, na inserção do ligamento, também é o padrão de fratura mais comum associado.\n\n**Por que esta questão foi criada.** Inspirada na questão 39 do SIMÃO 2021, que perguntou onde ocorre mais frequentemente a lesão do colateral ulnar do polegar.\n\n> **Na prova:** colateral ulnar do polegar rompe mais na INSERÇÃO DISTAL (falange proximal): reinserção com ÂNCORA ou pull-out; é o que permite a lesão de STENER.",
-  "correta": "**B: na inserção distal, na falange proximal.** O Green descreve a avulsão distal como a mais comum (cap. 8, p. 350).",
+  "conceito": "O ligamento colateral ulnar da metacarpofalângica do polegar rompe com mais frequência na **inserção distal,na base da falange proximal**,alternativa B. A ruptura pode ocorrer também na substância ou na origem metacarpiana,mas esses não são os locais predominantes descritos no resumo (Rockwood adultos,10ª edição,capítulo 45,lesão de Stener).\n\nO LCU resiste ao desvio radial do polegar durante pinça e preensão. Na abdução forçada,a falha de sua inserção distal pode retirar essa contenção; o exame compara a frouxidão com a do outro lado e procura um ponto final firme para distinguir lesão parcial de completa. A localização da ruptura e sua extensão são perguntas diferentes: dizer “distal” não prova,por si,sua gravidade ou seu deslocamento.\n\nA aponeurose do adutor cobre o ligamento. Na **lesão de Stener**,o coto de uma ruptura completa fica superficial a essa aponeurose,que se interpõe entre ele e sua inserção óssea e impede a cicatrização. A lesão parcial não formaStener,pois preserva continuidade; nem toda ruptura completa exige que a interposição esteja demonstrada para merecer avaliação cirúrgica.\n\n**Na prova:** o ponto de fixação mais frequentemente perdido é a base da falange proximal,não a cabeça do metacarpo. A seção deStener explica por que identificar onde o ligamento se desprendeu ajuda a entender a interposição e o reparo.\n\n**Por que esta questão foi criada.** Inspirada na questão 39 do SIMÃO 2021, que perguntou onde ocorre mais frequentemente a lesão do colateral ulnar do polegar.",
+  "correta": "B. O corpo do resumo declara a ruptura distal,na inserção da base da falange proximal,como a mais comum. Esse é o lado que precisa voltar a se relacionar com o coto ligamentar para cicatrizar; uma aponeurose interposta pode impedir esse contato.",
   "incorretas": {
-   "A": "**Menos comum.** As rupturas na substância podem ser suturadas diretamente, mas são menos frequentes (Green, cap. 8, p. 350).",
-   "C": "**Menos comum.** As avulsões proximais são menos frequentes que as distais (Green, cap. 8, p. 350).",
-   "D": "**Não é o padrão descrito.** O local mais comum é a inserção distal (Green, cap. 8, p. 350)."
+   "A": "A ruptura na substância existe,mas não é a localização mais frequente segundo a fonte. Escolhê-la troca uma possibilidade anatômica pelo padrão predominante,que é o desprendimento distal.",
+   "C": "A origem na cabeça metacarpiana também pode romper,mas o resumo a cita como menos típica que a inserção distal. A questão pede o local mais comum,e não todas as formas possíveis de lesão doLCU.",
+   "D": "Uma lesão envolvendo substância e origem não é o padrão predominante descrito. A fonte aponta a inserção na base da falange proximal como a localização típica e distingue rupturas proximais e intraligamentares como alternativas possíveis."
   },
   "referencias": [
-   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
-   "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 349 e 350"
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Polegar: ligamento colateral ulnar e lesão de Stener."
   ],
-  "geradoEm": "2026-10-26",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-28",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Polegar: ligamento colateral ulnar e lesão de Stener"
+     ],
+     "blocos": [
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e"
+     ],
+     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+     "trechosSha256": "20fb64f07757717ef6e08599204385d7b8b520079d4c18e3804a3c6e672fb69e"
+    }
+   ],
+   "questaoSha256": "95d505fec03dd5da1e2aec62444567e4dc7c58be37e18f31e6d7bf9c5a197d35",
+   "comentarioSha256": "5e5802fd35cedf39634e35b1b445215355303d47b56342552c79e95d31fb6f9f"
+  }
  },
  "mao-2481": {
   "conceito": "Uma gestante corta o tendão na cozinha; outra tem um túnel do carpo que piorou com a gravidez. A primeira precisa de cirurgia logo; a segunda pode esperar. O que define o tempo é proteger o feto na fase em que os órgãos se formam.\n\n**O que o Green recomenda.** Na gestante, a anestesia local ou regional deve ser preferida, para reduzir os efeitos na fisiologia materna e a exposição farmacológica do feto. **Idealmente, os procedimentos devem ser adiados para o segundo trimestre, para minimizar a exposição teratogênica durante o período crítico da organogênese (15 a 56 dias)** e para limitar o risco de trabalho de parto prematuro (Green, cap. 1, p. 2).\n\n**Relação com o membro superior.** É a mesma janela em que o próprio membro superior se forma (o broto aparece por volta de 4 semanas e se completa em 8 semanas, isto é, 56 dias), o que explica por que a maioria das malformações congênitas surge nesse intervalo (Green, cap. 35).\n\n**Por que esta questão foi criada.** Inspirada na questão 19 do SIMÃO 2021, que perguntou até que dia vai o período crítico da organogênese.\n\n> **Na prova:** ORGANOGÊNESE: dias 15 a 56 (8 semanas). Cirurgia eletiva na gestante: 2º TRIMESTRE, de preferência com anestesia LOCAL ou REGIONAL.",
