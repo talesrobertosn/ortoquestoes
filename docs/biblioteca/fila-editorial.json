@@ -1,0 +1,5694 @@
+{
+ "geradoEm": "2026-10-29",
+ "assuntos": [
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Outras fraturas na criança",
+   "subtema": "Outras fraturas na criança",
+   "n": 95,
+   "oficiais": 95,
+   "teot": 20,
+   "taro": 75,
+   "citadas": 78,
+   "cobertura": 0.82,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-34-fratura-clavicula",
+    "rockwood10-44-carpo",
+    "rockwood10-57-diafise-femur",
+    "rockwood10-65-tornozelo",
+    "rockwoodcriancas10-02-consolidacao-fise"
+   ],
+   "comentarios": {
+    "basico": 17,
+    "incerto": 3,
+    "preservar": 75
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Lesões fisárias",
+   "subtema": "Lesões fisárias",
+   "n": 77,
+   "oficiais": 77,
+   "teot": 7,
+   "taro": 62,
+   "citadas": 69,
+   "cobertura": 0.9,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-17-sindrome-compartimental",
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-45-fraturas-mao",
+    "rockwoodcriancas10-02-consolidacao-fise",
+    "rockwoodcriancas10-04-gesso-tala",
+    "rockwoodcriancas10-08-mao-carpo"
+   ],
+   "comentarios": {
+    "basico": 26,
+    "preservar": 51
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Anatomia da mão e punho",
+   "subtema": "Anatomia da mão e punho",
+   "n": 68,
+   "oficiais": 68,
+   "teot": 12,
+   "taro": 28,
+   "citadas": 8,
+   "cobertura": 0.12,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-42-diafise-radio-ulna",
+    "rockwood10-44-carpo",
+    "rockwood10-45-fraturas-mao",
+    "rockwoodcriancas10-08-mao-carpo"
+   ],
+   "comentarios": {
+    "protegido-mao": 68
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "subtema": "Genuvaro, genuvalgo e torções",
+   "n": 60,
+   "oficiais": 60,
+   "teot": 7,
+   "taro": 37,
+   "citadas": 7,
+   "cobertura": 0.12,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas10-19-ombro-umero",
+    "rockwoodcriancas10-24-quadril",
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-29-diafise-tibia",
+    "rockwoodcriancas9-16-condilo-lateral",
+    "rockwoodcriancas9-17-fise-distal-umero"
+   ],
+   "comentarios": {
+    "basico": 53,
+    "incerto": 2,
+    "preservar": 5
+   },
+   "posicaoFila": 1
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "subtema": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "n": 57,
+   "oficiais": 57,
+   "teot": 5,
+   "taro": 23,
+   "citadas": 41,
+   "cobertura": 0.72,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-37-diafise-umero",
+    "rockwood10-40-cotovelo-cabeca-radio",
+    "rockwoodcriancas9-12-avaliacao-cotovelo",
+    "rockwoodcriancas9-13-supracondiliana",
+    "rockwoodcriancas9-14-fratura-em-t",
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
+   ],
+   "comentarios": {
+    "basico": 23,
+    "preservar": 34
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Lesões do manguito rotador",
+   "subtema": "Lesões do manguito rotador",
+   "n": 56,
+   "oficiais": 56,
+   "teot": 9,
+   "taro": 22,
+   "citadas": 1,
+   "cobertura": 0.02,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "comentarios": {
+    "basico": 48,
+    "incerto": 5,
+    "preservar": 3
+   },
+   "posicaoFila": 2
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "subtema": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "n": 53,
+   "oficiais": 53,
+   "teot": 6,
+   "taro": 37,
+   "citadas": 51,
+   "cobertura": 0.96,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-04-gesso-tala",
+    "rockwoodcriancas10-06-sindrome-compartimental",
+    "rockwoodcriancas10-11-colo-radio-olecrano",
+    "rockwoodcriancas10-12-monteggia",
+    "rockwoodcriancas9-12-avaliacao-cotovelo",
+    "rockwoodcriancas9-13-supracondiliana"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "incerto": 1,
+    "preservar": 43
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Anatomia do ombro",
+   "subtema": "Anatomia do ombro",
+   "n": 52,
+   "oficiais": 52,
+   "teot": 13,
+   "taro": 16,
+   "citadas": 9,
+   "cobertura": 0.17,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-34-fratura-clavicula",
+    "rockwood10-36-umero-proximal",
+    "rockwood10-40-cotovelo-cabeca-radio",
+    "rockwood10-42-diafise-radio-ulna"
+   ],
+   "comentarios": {
+    "basico": 42,
+    "incerto": 3,
+    "preservar": 7
+   },
+   "posicaoFila": 3
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "subtema": "Luxação do joelho e lesões ligamentares",
+   "n": 50,
+   "oficiais": 50,
+   "teot": 9,
+   "taro": 36,
+   "citadas": 22,
+   "cobertura": 0.44,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 30,
+    "incerto": 2,
+    "preservar": 18
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "subtema": "Neuropatia ulnar e outras compressões",
+   "n": 48,
+   "oficiais": 48,
+   "teot": 11,
+   "taro": 25,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 48
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Omartrose e artroplastia do ombro",
+   "subtema": "Omartrose e artroplastia do ombro",
+   "n": 48,
+   "oficiais": 48,
+   "teot": 4,
+   "taro": 20,
+   "citadas": 1,
+   "cobertura": 0.02,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "comentarios": {
+    "basico": 45,
+    "incerto": 2,
+    "preservar": 1
+   },
+   "posicaoFila": 4
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Anatomia do quadril",
+   "subtema": "Anatomia do quadril",
+   "n": 47,
+   "oficiais": 47,
+   "teot": 17,
+   "taro": 15,
+   "citadas": 7,
+   "cobertura": 0.15,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-50-anel-pelvico",
+    "rockwood10-51-acetabulo"
+   ],
+   "comentarios": {
+    "basico": 40,
+    "preservar": 7
+   },
+   "posicaoFila": 5
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "subtema": "Fraturas do antebraço e punho na criança",
+   "n": 45,
+   "oficiais": 45,
+   "teot": 5,
+   "taro": 31,
+   "citadas": 42,
+   "cobertura": 0.93,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-44-carpo",
+    "rockwoodcriancas10-02-consolidacao-fise",
+    "rockwoodcriancas10-04-gesso-tala",
+    "rockwoodcriancas10-06-sindrome-compartimental",
+    "rockwoodcriancas10-08-mao-carpo",
+    "rockwoodcriancas10-11-colo-radio-olecrano"
+   ],
+   "comentarios": {
+    "basico": 7,
+    "incerto": 2,
+    "preservar": 36
+   }
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Artroplastia total: componentes e fixação",
+   "subtema": "Artroplastia total: componentes e fixação",
+   "n": 45,
+   "oficiais": 45,
+   "teot": 6,
+   "taro": 23,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 45
+   },
+   "posicaoFila": 6
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Outras malformações congênitas",
+   "subtema": "Outras malformações congênitas",
+   "n": 44,
+   "oficiais": 44,
+   "teot": 4,
+   "taro": 31,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 44
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Instabilidade anterior do ombro",
+   "subtema": "Instabilidade anterior do ombro",
+   "n": 42,
+   "oficiais": 42,
+   "teot": 5,
+   "taro": 19,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 37,
+    "incerto": 5
+   },
+   "posicaoFila": 7
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "subtema": "Fraturas do fêmur e da perna na criança",
+   "n": 42,
+   "oficiais": 42,
+   "teot": 10,
+   "taro": 23,
+   "citadas": 40,
+   "cobertura": 0.95,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-17-sindrome-compartimental",
+    "rockwood10-57-diafise-femur",
+    "rockwoodcriancas10-04-gesso-tala",
+    "rockwoodcriancas10-24-quadril",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "comentarios": {
+    "basico": 11,
+    "incerto": 2,
+    "preservar": 29
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtema": "Fraturas da coluna toracolombar",
+   "n": 41,
+   "oficiais": 41,
+   "teot": 11,
+   "taro": 16,
+   "citadas": 35,
+   "cobertura": 0.85,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-49-fratura-toracolombar",
+    "rockwood10-50-anel-pelvico"
+   ],
+   "comentarios": {
+    "basico": 11,
+    "preservar": 30
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas diafisárias do antebraço",
+   "subtema": "Fraturas diafisárias do antebraço",
+   "n": 41,
+   "oficiais": 41,
+   "teot": 4,
+   "taro": 29,
+   "citadas": 33,
+   "cobertura": 0.8,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-17-sindrome-compartimental",
+    "rockwood10-40-cotovelo-cabeca-radio",
+    "rockwood10-42-diafise-radio-ulna"
+   ],
+   "comentarios": {
+    "basico": 16,
+    "preservar": 25
+   }
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Anatomia da coluna",
+   "subtema": "Anatomia da coluna",
+   "n": 40,
+   "oficiais": 40,
+   "teot": 6,
+   "taro": 19,
+   "citadas": 9,
+   "cobertura": 0.23,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-48-coluna-cervical",
+    "rockwood10-49-fratura-toracolombar"
+   ],
+   "comentarios": {
+    "basico": 32,
+    "preservar": 8
+   },
+   "posicaoFila": 8
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do úmero proximal",
+   "subtema": "Fratura do úmero proximal",
+   "n": 40,
+   "oficiais": 40,
+   "teot": 7,
+   "taro": 16,
+   "citadas": 39,
+   "cobertura": 0.97,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-34-fratura-clavicula",
+    "rockwood10-36-umero-proximal",
+    "rockwood10-37-diafise-umero",
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "comentarios": {
+    "basico": 10,
+    "preservar": 30
+   }
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Anatomia do pé e tornozelo",
+   "subtema": "Anatomia do pé e tornozelo",
+   "n": 39,
+   "oficiais": 39,
+   "teot": 12,
+   "taro": 16,
+   "citadas": 2,
+   "cobertura": 0.05,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-64-pilao-tibial",
+    "rockwood10-66-talus"
+   ],
+   "comentarios": {
+    "basico": 36,
+    "incerto": 1,
+    "preservar": 2
+   },
+   "posicaoFila": 9
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtema": "Displasia do desenvolvimento do quadril",
+   "n": 39,
+   "oficiais": 39,
+   "teot": 5,
+   "taro": 19,
+   "citadas": 2,
+   "cobertura": 0.05,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas10-21-coluna-cervical",
+    "rockwoodcriancas9-12-avaliacao-cotovelo"
+   ],
+   "comentarios": {
+    "basico": 36,
+    "incerto": 1,
+    "preservar": 2
+   },
+   "posicaoFila": 10
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Outros temas de trauma",
+   "subtema": "Outros temas de trauma",
+   "n": 38,
+   "oficiais": 38,
+   "teot": 3,
+   "taro": 34,
+   "citadas": 13,
+   "cobertura": 0.34,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-36-umero-proximal",
+    "rockwood10-37-diafise-umero",
+    "rockwood10-54-transtrocanterica",
+    "rockwood10-61-luxacao-joelho",
+    "rockwood10-63-diafise-tibia",
+    "rockwoodcriancas9-14-fratura-em-t"
+   ],
+   "comentarios": {
+    "basico": 29,
+    "incerto": 1,
+    "preservar": 8
+   },
+   "posicaoFila": 11
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Lesões dos tendões flexores",
+   "subtema": "Lesões dos tendões flexores",
+   "n": 37,
+   "oficiais": 37,
+   "teot": 3,
+   "taro": 22,
+   "citadas": 1,
+   "cobertura": 0.03,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "comentarios": {
+    "protegido-mao": 37
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtema": "Instabilidade do cotovelo",
+   "n": 37,
+   "oficiais": 37,
+   "teot": 6,
+   "taro": 20,
+   "citadas": 31,
+   "cobertura": 0.84,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-40-cotovelo-cabeca-radio",
+    "rockwood10-42-diafise-radio-ulna",
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
+   ],
+   "comentarios": {
+    "basico": 12,
+    "preservar": 25
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Síndrome compartimental",
+   "subtema": "Síndrome compartimental",
+   "n": 35,
+   "oficiais": 35,
+   "teot": 3,
+   "taro": 26,
+   "citadas": 33,
+   "cobertura": 0.94,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-17-sindrome-compartimental",
+    "rockwood10-37-diafise-umero",
+    "rockwood10-42-diafise-radio-ulna",
+    "rockwood10-57-diafise-femur",
+    "rockwood10-63-diafise-tibia",
+    "rockwoodcriancas9-13-supracondiliana"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "incerto": 1,
+    "preservar": 25
+   }
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Metástases ósseas",
+   "subtema": "Metástases ósseas",
+   "n": 35,
+   "oficiais": 35,
+   "teot": 5,
+   "taro": 20,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 35
+   },
+   "posicaoFila": 12
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtema": "Hérnia de disco lombar",
+   "n": 34,
+   "oficiais": 34,
+   "teot": 5,
+   "taro": 21,
+   "citadas": 2,
+   "cobertura": 0.06,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 31,
+    "incerto": 1,
+    "preservar": 2
+   },
+   "posicaoFila": 13
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Outras doenças congênitas",
+   "subtema": "Outras doenças congênitas",
+   "n": 34,
+   "oficiais": 34,
+   "teot": 4,
+   "taro": 21,
+   "citadas": 6,
+   "cobertura": 0.18,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas10-20-clavicula-escapula",
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
+   ],
+   "comentarios": {
+    "basico": 32,
+    "incerto": 1,
+    "preservar": 1
+   },
+   "posicaoFila": 14
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Osteomielite aguda",
+   "subtema": "Osteomielite aguda",
+   "n": 33,
+   "oficiais": 33,
+   "teot": 5,
+   "taro": 24,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 32,
+    "incerto": 1
+   },
+   "posicaoFila": 15
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtema": "Lesão do ligamento cruzado anterior",
+   "n": 33,
+   "oficiais": 33,
+   "teot": 5,
+   "taro": 18,
+   "citadas": 2,
+   "cobertura": 0.06,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 31,
+    "preservar": 2
+   },
+   "posicaoFila": 16
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Lesões do bíceps",
+   "subtema": "Lesões do bíceps",
+   "n": 33,
+   "oficiais": 33,
+   "teot": 4,
+   "taro": 20,
+   "citadas": 1,
+   "cobertura": 0.03,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
+   ],
+   "comentarios": {
+    "basico": 30,
+    "incerto": 3
+   },
+   "posicaoFila": 17
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Estadiamento, biópsia e margens",
+   "subtema": "Estadiamento, biópsia e margens",
+   "n": 33,
+   "oficiais": 33,
+   "teot": 8,
+   "taro": 16,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 33
+   },
+   "posicaoFila": 18
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtema": "Displasias esqueléticas e síndromes",
+   "n": 32,
+   "oficiais": 32,
+   "teot": 4,
+   "taro": 19,
+   "citadas": 3,
+   "cobertura": 0.09,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas10-06-sindrome-compartimental",
+    "rockwoodcriancas10-22-coluna-toracolombar",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "wilkins9-09-diafise-antebraco-crianca"
+   ],
+   "comentarios": {
+    "basico": 31,
+    "preservar": 1
+   },
+   "posicaoFila": 19
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Lesão medular e síndromes medulares",
+   "subtema": "Lesão medular e síndromes medulares",
+   "n": 31,
+   "oficiais": 31,
+   "teot": 3,
+   "taro": 19,
+   "citadas": 25,
+   "cobertura": 0.81,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-48-coluna-cervical",
+    "rockwood10-49-fratura-toracolombar",
+    "rockwoodcriancas10-22-coluna-toracolombar"
+   ],
+   "comentarios": {
+    "basico": 11,
+    "incerto": 2,
+    "preservar": 18
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Paralisia cerebral",
+   "subtema": "Paralisia cerebral",
+   "n": 31,
+   "oficiais": 31,
+   "teot": 7,
+   "taro": 17,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 28,
+    "incerto": 3
+   },
+   "posicaoFila": 20
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Escoliose idiopática",
+   "subtema": "Escoliose idiopática",
+   "n": 30,
+   "oficiais": 30,
+   "teot": 3,
+   "taro": 20,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 29,
+    "incerto": 1
+   },
+   "posicaoFila": 21
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Princípios de osteossíntese",
+   "subtema": "Princípios de osteossíntese",
+   "n": 30,
+   "oficiais": 30,
+   "teot": 3,
+   "taro": 18,
+   "citadas": 3,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-45-fraturas-mao",
+    "rockwood10-57-diafise-femur"
+   ],
+   "comentarios": {
+    "basico": 25,
+    "incerto": 2,
+    "preservar": 3
+   },
+   "posicaoFila": 22
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Anatomia do joelho",
+   "subtema": "Anatomia do joelho",
+   "n": 30,
+   "oficiais": 30,
+   "teot": 8,
+   "taro": 5,
+   "citadas": 4,
+   "cobertura": 0.13,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-61-luxacao-joelho",
+    "rockwood10-62-planalto-tibial"
+   ],
+   "comentarios": {
+    "basico": 26,
+    "preservar": 4
+   },
+   "posicaoFila": 23
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura da escápula",
+   "subtema": "Fratura da escápula",
+   "n": 30,
+   "oficiais": 30,
+   "teot": 3,
+   "taro": 12,
+   "citadas": 30,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-34-fratura-clavicula"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "preservar": 21
+   }
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtema": "Artroplastia total do joelho",
+   "n": 29,
+   "oficiais": 29,
+   "teot": 2,
+   "taro": 15,
+   "citadas": 3,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-58-femur-distal",
+    "rockwood10-60-patela-mecanismo-extensor",
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 26,
+    "incerto": 2,
+    "preservar": 1
+   },
+   "posicaoFila": 24
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura da clavícula",
+   "subtema": "Fratura da clavícula",
+   "n": 29,
+   "oficiais": 29,
+   "teot": 2,
+   "taro": 15,
+   "citadas": 28,
+   "cobertura": 0.97,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-34-fratura-clavicula"
+   ],
+   "comentarios": {
+    "basico": 6,
+    "preservar": 23
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas do tálus e do calcâneo",
+   "subtema": "Fraturas do tálus e do calcâneo",
+   "n": 29,
+   "oficiais": 29,
+   "teot": 6,
+   "taro": 16,
+   "citadas": 15,
+   "cobertura": 0.52,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-66-talus"
+   ],
+   "comentarios": {
+    "basico": 15,
+    "preservar": 14
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas dos metacarpos e falanges",
+   "subtema": "Fraturas dos metacarpos e falanges",
+   "n": 28,
+   "oficiais": 28,
+   "teot": 6,
+   "taro": 12,
+   "citadas": 27,
+   "cobertura": 0.96,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "comentarios": {
+    "basico": 7,
+    "preservar": 21
+   }
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Espondilólise e espondilolistese",
+   "subtema": "Espondilólise e espondilolistese",
+   "n": 27,
+   "oficiais": 27,
+   "teot": 3,
+   "taro": 18,
+   "citadas": 3,
+   "cobertura": 0.11,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 24,
+    "incerto": 2,
+    "preservar": 1
+   },
+   "posicaoFila": 25
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Pé torto congênito",
+   "subtema": "Pé torto congênito",
+   "n": 27,
+   "oficiais": 27,
+   "teot": 3,
+   "taro": 14,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 26,
+    "incerto": 1
+   },
+   "posicaoFila": 26
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura da patela e lesão do aparelho extensor",
+   "subtema": "Fratura da patela e lesão do aparelho extensor",
+   "n": 27,
+   "oficiais": 27,
+   "teot": 6,
+   "taro": 16,
+   "citadas": 17,
+   "cobertura": 0.63,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-60-patela-mecanismo-extensor",
+    "rockwood10-63-diafise-tibia"
+   ],
+   "comentarios": {
+    "basico": 12,
+    "preservar": 15
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Lesões dos tendões extensores",
+   "subtema": "Lesões dos tendões extensores",
+   "n": 26,
+   "oficiais": 26,
+   "teot": 2,
+   "taro": 16,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 26
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura da diáfise do fêmur",
+   "subtema": "Fratura da diáfise do fêmur",
+   "n": 26,
+   "oficiais": 26,
+   "teot": 3,
+   "taro": 17,
+   "citadas": 22,
+   "cobertura": 0.85,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-17-sindrome-compartimental",
+    "rockwood10-53-colo-femur",
+    "rockwood10-57-diafise-femur",
+    "rockwood10-58-femur-distal",
+    "rockwood10-63-diafise-tibia"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "preservar": 21
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Exame físico da mão e punho",
+   "subtema": "Exame físico da mão e punho",
+   "n": 25,
+   "oficiais": 25,
+   "teot": 6,
+   "taro": 11,
+   "citadas": 2,
+   "cobertura": 0.08,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-44-carpo"
+   ],
+   "comentarios": {
+    "protegido-mao": 25
+   }
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Hálux valgo",
+   "subtema": "Hálux valgo",
+   "n": 25,
+   "oficiais": 25,
+   "teot": 6,
+   "taro": 14,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 24,
+    "incerto": 1
+   },
+   "posicaoFila": 27
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Ossificação e crescimento",
+   "subtema": "Ossificação e crescimento",
+   "n": 25,
+   "oficiais": 25,
+   "teot": 3,
+   "taro": 21,
+   "citadas": 14,
+   "cobertura": 0.56,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-02-consolidacao-fise",
+    "rockwoodcriancas10-19-ombro-umero",
+    "rockwoodcriancas10-23-pelve-acetabulo",
+    "rockwoodcriancas10-24-quadril",
+    "rockwoodcriancas10-25-diafise-femur",
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "comentarios": {
+    "basico": 14,
+    "incerto": 1,
+    "preservar": 10
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Tíbia vara (Blount)",
+   "subtema": "Tíbia vara (Blount)",
+   "n": 25,
+   "oficiais": 25,
+   "teot": 3,
+   "taro": 16,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 25
+   },
+   "posicaoFila": 28
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Condrossarcoma",
+   "subtema": "Condrossarcoma",
+   "n": 25,
+   "oficiais": 25,
+   "teot": 4,
+   "taro": 16,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 24,
+    "incerto": 1
+   },
+   "posicaoFila": 29
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Artrogripose e doenças neuromusculares",
+   "subtema": "Artrogripose e doenças neuromusculares",
+   "n": 24,
+   "oficiais": 24,
+   "teot": 1,
+   "taro": 15,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 24
+   },
+   "posicaoFila": 30
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Joelho da criança",
+   "subtema": "Joelho da criança",
+   "n": 24,
+   "oficiais": 24,
+   "teot": 3,
+   "taro": 16,
+   "citadas": 9,
+   "cobertura": 0.38,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas10-28-joelho-intra-articular",
+    "rockwoodcriancas10-29-diafise-tibia"
+   ],
+   "comentarios": {
+    "basico": 14,
+    "incerto": 1,
+    "preservar": 9
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do anel pélvico",
+   "subtema": "Fratura do anel pélvico",
+   "n": 24,
+   "oficiais": 24,
+   "teot": 1,
+   "taro": 17,
+   "citadas": 24,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-50-anel-pelvico",
+    "rockwood10-51-acetabulo"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "preservar": 18,
+    "sem-comentario": 1
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do planalto tibial",
+   "subtema": "Fratura do planalto tibial",
+   "n": 24,
+   "oficiais": 24,
+   "teot": 4,
+   "taro": 14,
+   "citadas": 24,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-51-acetabulo",
+    "rockwood10-62-planalto-tibial",
+    "rockwood10-64-pilao-tibial"
+   ],
+   "comentarios": {
+    "basico": 8,
+    "preservar": 16
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas por estresse",
+   "subtema": "Fraturas por estresse",
+   "n": 24,
+   "oficiais": 24,
+   "teot": 4,
+   "taro": 15,
+   "citadas": 22,
+   "cobertura": 0.92,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-49-fratura-toracolombar",
+    "rockwood10-53-colo-femur"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "preservar": 15
+   }
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Outras infecções osteoarticulares",
+   "subtema": "Outras infecções osteoarticulares",
+   "n": 23,
+   "oficiais": 23,
+   "teot": 1,
+   "taro": 19,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 22,
+    "incerto": 1
+   },
+   "posicaoFila": 31
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtema": "Lesão do ligamento cruzado posterior",
+   "n": 23,
+   "oficiais": 23,
+   "teot": 8,
+   "taro": 12,
+   "citadas": 10,
+   "cobertura": 0.43,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 15,
+    "incerto": 1,
+    "preservar": 7
+   },
+   "posicaoFila": 32
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Instabilidade do carpo",
+   "subtema": "Instabilidade do carpo",
+   "n": 23,
+   "oficiais": 23,
+   "teot": 1,
+   "taro": 16,
+   "citadas": 23,
+   "cobertura": 1.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-44-carpo"
+   ],
+   "comentarios": {
+    "protegido-mao": 23
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Fraturas da pelve e do quadril na criança",
+   "subtema": "Fraturas da pelve e do quadril na criança",
+   "n": 23,
+   "oficiais": 23,
+   "teot": 2,
+   "taro": 18,
+   "citadas": 14,
+   "cobertura": 0.61,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-23-pelve-acetabulo",
+    "rockwoodcriancas10-24-quadril",
+    "rockwoodcriancas10-27-fise-proximal-tibia"
+   ],
+   "comentarios": {
+    "basico": 10,
+    "preservar": 13
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do úmero distal",
+   "subtema": "Fratura do úmero distal",
+   "n": 23,
+   "oficiais": 23,
+   "teot": 3,
+   "taro": 14,
+   "citadas": 9,
+   "cobertura": 0.39,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-37-diafise-umero",
+    "rockwood10-58-femur-distal",
+    "rockwoodcriancas9-12-avaliacao-cotovelo",
+    "rockwoodcriancas9-13-supracondiliana",
+    "rockwoodcriancas9-14-fratura-em-t",
+    "rockwoodcriancas9-16-condilo-lateral"
+   ],
+   "comentarios": {
+    "basico": 18,
+    "preservar": 5
+   },
+   "posicaoFila": 33
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Pseudartrose e retardo de consolidação",
+   "subtema": "Pseudartrose e retardo de consolidação",
+   "n": 22,
+   "oficiais": 22,
+   "teot": 6,
+   "taro": 12,
+   "citadas": 3,
+   "cobertura": 0.14,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-37-diafise-umero",
+    "rockwood10-63-diafise-tibia"
+   ],
+   "comentarios": {
+    "basico": 20,
+    "incerto": 1,
+    "preservar": 1
+   },
+   "posicaoFila": 34
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Marcha na criança",
+   "subtema": "Marcha na criança",
+   "n": 22,
+   "oficiais": 22,
+   "teot": 3,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 20,
+    "incerto": 1,
+    "preservar": 1
+   },
+   "posicaoFila": 35
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura da diáfise da tíbia",
+   "subtema": "Fratura da diáfise da tíbia",
+   "n": 22,
+   "oficiais": 22,
+   "teot": 3,
+   "taro": 13,
+   "citadas": 19,
+   "cobertura": 0.86,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-57-diafise-femur",
+    "rockwood10-58-femur-distal",
+    "rockwood10-63-diafise-tibia",
+    "rockwood10-65-tornozelo"
+   ],
+   "comentarios": {
+    "basico": 4,
+    "preservar": 18
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura subtrocantérica",
+   "subtema": "Fratura subtrocantérica",
+   "n": 22,
+   "oficiais": 22,
+   "teot": 3,
+   "taro": 13,
+   "citadas": 1,
+   "cobertura": 0.05,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-57-diafise-femur"
+   ],
+   "comentarios": {
+    "basico": 22
+   },
+   "posicaoFila": 36
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Osteossarcoma",
+   "subtema": "Osteossarcoma",
+   "n": 22,
+   "oficiais": 22,
+   "teot": 4,
+   "taro": 13,
+   "citadas": 1,
+   "cobertura": 0.05,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse"
+   ],
+   "comentarios": {
+    "basico": 22
+   },
+   "posicaoFila": 37
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Fraturas da coluna toracolombar",
+   "subtema": "Fraturas da coluna toracolombar",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 3,
+   "taro": 15,
+   "citadas": 8,
+   "cobertura": 0.38,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-48-coluna-cervical",
+    "rockwood10-49-fratura-toracolombar",
+    "rockwoodcriancas10-22-coluna-toracolombar"
+   ],
+   "comentarios": {
+    "basico": 12,
+    "incerto": 1,
+    "preservar": 8
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Lesões de nervos periféricos",
+   "subtema": "Lesões de nervos periféricos",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 3,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 21
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Outros temas do ombro e cotovelo",
+   "subtema": "Outros temas do ombro e cotovelo",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 2,
+   "taro": 13,
+   "citadas": 2,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
+   ],
+   "comentarios": {
+    "basico": 20,
+    "preservar": 1
+   },
+   "posicaoFila": 38
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Doença de Legg-Calvé-Perthes",
+   "subtema": "Doença de Legg-Calvé-Perthes",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 2,
+   "taro": 11,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 20,
+    "incerto": 1
+   },
+   "posicaoFila": 39
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Epifisiólise proximal do fêmur",
+   "subtema": "Epifisiólise proximal do fêmur",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 3,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 20,
+    "incerto": 1
+   },
+   "posicaoFila": 40
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do colo do fêmur",
+   "subtema": "Fratura do colo do fêmur",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 2,
+   "taro": 13,
+   "citadas": 20,
+   "cobertura": 0.95,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-53-colo-femur",
+    "rockwood10-54-transtrocanterica",
+    "rockwood10-57-diafise-femur"
+   ],
+   "comentarios": {
+    "basico": 6,
+    "preservar": 15
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do escafoide e do carpo",
+   "subtema": "Fratura do escafoide e do carpo",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 3,
+   "taro": 10,
+   "citadas": 20,
+   "cobertura": 0.95,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-44-carpo"
+   ],
+   "comentarios": {
+    "basico": 12,
+    "preservar": 9
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas expostas",
+   "subtema": "Fraturas expostas",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 1,
+   "taro": 17,
+   "citadas": 12,
+   "cobertura": 0.57,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-17-sindrome-compartimental",
+    "rockwood10-42-diafise-radio-ulna",
+    "rockwood10-49-fratura-toracolombar",
+    "rockwood10-50-anel-pelvico",
+    "rockwood10-57-diafise-femur",
+    "rockwood10-60-patela-mecanismo-extensor"
+   ],
+   "comentarios": {
+    "basico": 12,
+    "incerto": 1,
+    "preservar": 8
+   }
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Tumor de células gigantes",
+   "subtema": "Tumor de células gigantes",
+   "n": 21,
+   "oficiais": 21,
+   "teot": 6,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 21
+   },
+   "posicaoFila": 41
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Exame neurológico e radiculopatias",
+   "subtema": "Exame neurológico e radiculopatias",
+   "n": 20,
+   "oficiais": 20,
+   "teot": 2,
+   "taro": 6,
+   "citadas": 3,
+   "cobertura": 0.15,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 17,
+    "preservar": 3
+   },
+   "posicaoFila": 42
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Lesões meniscais",
+   "subtema": "Lesões meniscais",
+   "n": 20,
+   "oficiais": 20,
+   "teot": 4,
+   "taro": 9,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 18,
+    "incerto": 2
+   },
+   "posicaoFila": 43
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Doença de Dupuytren",
+   "subtema": "Doença de Dupuytren",
+   "n": 20,
+   "oficiais": 20,
+   "teot": 2,
+   "taro": 12,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 20
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Retalhos e cobertura cutânea",
+   "subtema": "Retalhos e cobertura cutânea",
+   "n": 20,
+   "oficiais": 20,
+   "teot": 2,
+   "taro": 11,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 20
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Exame físico do ombro",
+   "subtema": "Exame físico do ombro",
+   "n": 20,
+   "oficiais": 20,
+   "teot": 2,
+   "taro": 11,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 17,
+    "incerto": 3
+   },
+   "posicaoFila": 44
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Fraturas supracondilianas do úmero",
+   "subtema": "Fraturas supracondilianas do úmero",
+   "n": 20,
+   "oficiais": 20,
+   "teot": 3,
+   "taro": 14,
+   "citadas": 20,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-02-consolidacao-fise",
+    "rockwoodcriancas10-04-gesso-tala",
+    "rockwoodcriancas10-06-sindrome-compartimental",
+    "rockwoodcriancas9-12-avaliacao-cotovelo",
+    "rockwoodcriancas9-13-supracondiliana",
+    "rockwoodcriancas9-16-condilo-lateral"
+   ],
+   "comentarios": {
+    "basico": 3,
+    "preservar": 17
+   }
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Tumores benignos de partes moles",
+   "subtema": "Tumores benignos de partes moles",
+   "n": 20,
+   "oficiais": 20,
+   "teot": 3,
+   "taro": 11,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 20
+   },
+   "posicaoFila": 45
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Hérnia de disco e mielopatia cervical",
+   "subtema": "Hérnia de disco e mielopatia cervical",
+   "n": 19,
+   "oficiais": 19,
+   "teot": 1,
+   "taro": 13,
+   "citadas": 14,
+   "cobertura": 0.74,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "incerto": 1,
+    "preservar": 13
+   }
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Dor e analgesia",
+   "subtema": "Dor e analgesia",
+   "n": 19,
+   "oficiais": 19,
+   "teot": 1,
+   "taro": 13,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 19
+   },
+   "posicaoFila": 46
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Mão reumatoide",
+   "subtema": "Mão reumatoide",
+   "n": 19,
+   "oficiais": 19,
+   "teot": 3,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 19
+   }
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Pé diabético e neuroartropatia de Charcot",
+   "subtema": "Pé diabético e neuroartropatia de Charcot",
+   "n": 19,
+   "oficiais": 19,
+   "teot": 2,
+   "taro": 12,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 19
+   },
+   "posicaoFila": 47
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Osteonecrose da cabeça femoral",
+   "subtema": "Osteonecrose da cabeça femoral",
+   "n": 19,
+   "oficiais": 19,
+   "teot": 2,
+   "taro": 11,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 18,
+    "incerto": 1
+   },
+   "posicaoFila": 48
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Displasia fibrosa",
+   "subtema": "Displasia fibrosa",
+   "n": 19,
+   "oficiais": 19,
+   "teot": 4,
+   "taro": 13,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 19
+   },
+   "posicaoFila": 49
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Lesões ligamentares dos dedos",
+   "subtema": "Lesões ligamentares dos dedos",
+   "n": 18,
+   "oficiais": 18,
+   "teot": 1,
+   "taro": 9,
+   "citadas": 14,
+   "cobertura": 0.78,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-44-carpo",
+    "rockwood10-45-fraturas-mao"
+   ],
+   "comentarios": {
+    "protegido-mao": 18
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Artroscopia e vias de acesso do ombro",
+   "subtema": "Artroscopia e vias de acesso do ombro",
+   "n": 18,
+   "oficiais": 18,
+   "teot": 8,
+   "taro": 2,
+   "citadas": 5,
+   "cobertura": 0.28,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-36-umero-proximal",
+    "rockwood10-37-diafise-umero",
+    "rockwood10-42-diafise-radio-ulna"
+   ],
+   "comentarios": {
+    "basico": 12,
+    "preservar": 6
+   },
+   "posicaoFila": 50
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Capsulite adesiva",
+   "subtema": "Capsulite adesiva",
+   "n": 18,
+   "oficiais": 18,
+   "teot": 1,
+   "taro": 12,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 17,
+    "incerto": 1
+   },
+   "posicaoFila": 51
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtema": "Osteoporose: diagnóstico",
+   "n": 18,
+   "oficiais": 18,
+   "teot": 2,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 16,
+    "incerto": 2
+   },
+   "posicaoFila": 52
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do acetábulo",
+   "subtema": "Fratura do acetábulo",
+   "n": 18,
+   "oficiais": 18,
+   "teot": 2,
+   "taro": 12,
+   "citadas": 18,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-51-acetabulo"
+   ],
+   "comentarios": {
+    "basico": 2,
+    "preservar": 16
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do fêmur distal",
+   "subtema": "Fratura do fêmur distal",
+   "n": 18,
+   "oficiais": 18,
+   "teot": 3,
+   "taro": 9,
+   "citadas": 18,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-57-diafise-femur",
+    "rockwood10-58-femur-distal"
+   ],
+   "comentarios": {
+    "basico": 7,
+    "preservar": 11
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas da coluna cervical alta",
+   "subtema": "Fraturas da coluna cervical alta",
+   "n": 18,
+   "oficiais": 18,
+   "teot": 3,
+   "taro": 13,
+   "citadas": 17,
+   "cobertura": 0.94,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 3,
+    "preservar": 15
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Luxação do quadril e fratura da cabeça femoral",
+   "subtema": "Luxação do quadril e fratura da cabeça femoral",
+   "n": 18,
+   "oficiais": 18,
+   "teot": 4,
+   "taro": 9,
+   "citadas": 4,
+   "cobertura": 0.22,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-42-diafise-radio-ulna",
+    "rockwood10-51-acetabulo"
+   ],
+   "comentarios": {
+    "basico": 17,
+    "preservar": 1
+   },
+   "posicaoFila": 53
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Artrite séptica",
+   "subtema": "Artrite séptica",
+   "n": 17,
+   "oficiais": 17,
+   "teot": 5,
+   "taro": 11,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 15,
+    "incerto": 2
+   },
+   "posicaoFila": 54
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Consolidação óssea",
+   "subtema": "Consolidação óssea",
+   "n": 17,
+   "oficiais": 17,
+   "teot": 4,
+   "taro": 7,
+   "citadas": 1,
+   "cobertura": 0.06,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-34-fratura-clavicula"
+   ],
+   "comentarios": {
+    "basico": 16,
+    "preservar": 1
+   },
+   "posicaoFila": 55
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Imagem do ombro e cotovelo",
+   "subtema": "Imagem do ombro e cotovelo",
+   "n": 17,
+   "oficiais": 17,
+   "teot": 1,
+   "taro": 10,
+   "citadas": 3,
+   "cobertura": 0.18,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-36-umero-proximal"
+   ],
+   "comentarios": {
+    "basico": 14,
+    "preservar": 3
+   },
+   "posicaoFila": 56
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Coluna e pescoço da criança",
+   "subtema": "Coluna e pescoço da criança",
+   "n": 17,
+   "oficiais": 17,
+   "teot": 1,
+   "taro": 13,
+   "citadas": 4,
+   "cobertura": 0.24,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-21-coluna-cervical",
+    "rockwoodcriancas10-22-coluna-toracolombar"
+   ],
+   "comentarios": {
+    "basico": 14,
+    "incerto": 1,
+    "preservar": 2
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Luxação acromioclavicular",
+   "subtema": "Luxação acromioclavicular",
+   "n": 17,
+   "oficiais": 17,
+   "teot": 0,
+   "taro": 8,
+   "citadas": 3,
+   "cobertura": 0.18,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-34-fratura-clavicula"
+   ],
+   "comentarios": {
+    "basico": 15,
+    "preservar": 2
+   },
+   "posicaoFila": 57
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Lesões musculares",
+   "subtema": "Lesões musculares",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 4,
+   "taro": 11,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 15,
+    "incerto": 1
+   },
+   "posicaoFila": 58
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtema": "Instabilidade femoropatelar",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 2,
+   "taro": 9,
+   "citadas": 3,
+   "cobertura": 0.19,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-60-patela-mecanismo-extensor"
+   ],
+   "comentarios": {
+    "basico": 16
+   },
+   "posicaoFila": 59
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtema": "Osteocondrite dissecante",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 1,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 16
+   },
+   "posicaoFila": 60
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtema": "Ruptura dos tendões patelar e quadricipital",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 1,
+   "taro": 13,
+   "citadas": 16,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-60-patela-mecanismo-extensor"
+   ],
+   "comentarios": {
+    "basico": 8,
+    "preservar": 8
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Plexo braquial e paralisia obstétrica",
+   "subtema": "Plexo braquial e paralisia obstétrica",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 4,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 16
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Epicondilite lateral e medial",
+   "subtema": "Epicondilite lateral e medial",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 2,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 14,
+    "incerto": 2
+   },
+   "posicaoFila": 61
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Lesões nervosas do ombro e cotovelo",
+   "subtema": "Lesões nervosas do ombro e cotovelo",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 1,
+   "taro": 6,
+   "citadas": 4,
+   "cobertura": 0.25,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-36-umero-proximal",
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "comentarios": {
+    "basico": 11,
+    "incerto": 2,
+    "preservar": 3
+   },
+   "posicaoFila": 62
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Coalizões tarsais",
+   "subtema": "Coalizões tarsais",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 3,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 15,
+    "incerto": 1
+   },
+   "posicaoFila": 63
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Pé cavo",
+   "subtema": "Pé cavo",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 1,
+   "taro": 9,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 15,
+    "incerto": 1
+   },
+   "posicaoFila": 64
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Fraturas do tornozelo na criança",
+   "subtema": "Fraturas do tornozelo na criança",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 3,
+   "taro": 7,
+   "citadas": 15,
+   "cobertura": 0.94,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-65-tornozelo",
+    "rockwood10-66-talus",
+    "rockwoodcriancas10-30-tornozelo",
+    "rockwoodcriancas10-31-pe"
+   ],
+   "comentarios": {
+    "basico": 2,
+    "preservar": 14
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Mielomeningocele",
+   "subtema": "Mielomeningocele",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 2,
+   "taro": 9,
+   "citadas": 1,
+   "cobertura": 0.06,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas10-07-patologicas-maus-tratos",
+    "rockwoodcriancas10-26-fise-distal-femur"
+   ],
+   "comentarios": {
+    "basico": 15,
+    "preservar": 1
+   },
+   "posicaoFila": 65
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do rádio distal",
+   "subtema": "Fratura do rádio distal",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 5,
+   "taro": 5,
+   "citadas": 2,
+   "cobertura": 0.12,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-42-diafise-radio-ulna",
+    "rockwood10-44-carpo"
+   ],
+   "comentarios": {
+    "basico": 14,
+    "preservar": 2
+   },
+   "posicaoFila": 66
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do tornozelo",
+   "subtema": "Fratura do tornozelo",
+   "n": 16,
+   "oficiais": 16,
+   "teot": 6,
+   "taro": 6,
+   "citadas": 16,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-64-pilao-tibial",
+    "rockwood10-65-tornozelo"
+   ],
+   "comentarios": {
+    "basico": 1,
+    "preservar": 15
+   }
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Fraturas da coluna cervical",
+   "subtema": "Fraturas da coluna cervical",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 2,
+   "taro": 10,
+   "citadas": 14,
+   "cobertura": 0.93,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 2,
+    "preservar": 13
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Doença de Kienböck",
+   "subtema": "Doença de Kienböck",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 1,
+   "taro": 8,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 15
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Rizartrose e artrose da mão",
+   "subtema": "Rizartrose e artrose da mão",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 3,
+   "taro": 9,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 15
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Fraturas do úmero proximal e da escápula",
+   "subtema": "Fraturas do úmero proximal e da escápula",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 0,
+   "taro": 4,
+   "citadas": 6,
+   "cobertura": 0.4,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-34-fratura-clavicula",
+    "rockwood10-36-umero-proximal",
+    "rockwood10-37-diafise-umero"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "preservar": 6
+   },
+   "posicaoFila": 67
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtema": "Espondiloartrites e outras artrites",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 1,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 15
+   },
+   "posicaoFila": 68
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtema": "Tuberculose osteoarticular",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 5,
+   "taro": 6,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 15
+   },
+   "posicaoFila": 69
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Fraturas da clavícula e do úmero proximal na criança",
+   "subtema": "Fraturas da clavícula e do úmero proximal na criança",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 4,
+   "taro": 9,
+   "citadas": 12,
+   "cobertura": 0.8,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-34-fratura-clavicula",
+    "rockwoodcriancas10-19-ombro-umero",
+    "rockwoodcriancas10-20-clavicula-escapula"
+   ],
+   "comentarios": {
+    "basico": 3,
+    "preservar": 12
+   }
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Exame físico do quadril",
+   "subtema": "Exame físico do quadril",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 3,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 15
+   },
+   "posicaoFila": 70
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura transtrocantérica",
+   "subtema": "Fratura transtrocantérica",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 3,
+   "taro": 8,
+   "citadas": 13,
+   "cobertura": 0.87,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-53-colo-femur",
+    "rockwood10-54-transtrocanterica",
+    "rockwood10-57-diafise-femur"
+   ],
+   "comentarios": {
+    "basico": 8,
+    "preservar": 7
+   }
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Sarcoma de Ewing",
+   "subtema": "Sarcoma de Ewing",
+   "n": 15,
+   "oficiais": 15,
+   "teot": 3,
+   "taro": 6,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 15
+   },
+   "posicaoFila": 71
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Estenose do canal lombar",
+   "subtema": "Estenose do canal lombar",
+   "n": 14,
+   "oficiais": 14,
+   "teot": 3,
+   "taro": 8,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 11,
+    "incerto": 3
+   },
+   "posicaoFila": 72
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Imagem do joelho",
+   "subtema": "Imagem do joelho",
+   "n": 14,
+   "oficiais": 14,
+   "teot": 3,
+   "taro": 6,
+   "citadas": 2,
+   "cobertura": 0.14,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-60-patela-mecanismo-extensor",
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 11,
+    "incerto": 1,
+    "preservar": 2
+   },
+   "posicaoFila": 73
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Imagem do pé e tornozelo",
+   "subtema": "Imagem do pé e tornozelo",
+   "n": 14,
+   "oficiais": 14,
+   "teot": 2,
+   "taro": 9,
+   "citadas": 2,
+   "cobertura": 0.14,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-65-tornozelo",
+    "rockwood10-66-talus"
+   ],
+   "comentarios": {
+    "basico": 13,
+    "preservar": 1
+   },
+   "posicaoFila": 74
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Tendões fibulares e outras tendinopatias",
+   "subtema": "Tendões fibulares e outras tendinopatias",
+   "n": 14,
+   "oficiais": 14,
+   "teot": 4,
+   "taro": 8,
+   "citadas": 1,
+   "cobertura": 0.07,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-64-pilao-tibial",
+    "rockwood10-65-tornozelo"
+   ],
+   "comentarios": {
+    "basico": 13,
+    "preservar": 1
+   },
+   "posicaoFila": 75
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Ombro e cotovelo da criança",
+   "subtema": "Ombro e cotovelo da criança",
+   "n": 14,
+   "oficiais": 14,
+   "teot": 5,
+   "taro": 6,
+   "citadas": 8,
+   "cobertura": 0.57,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-19-ombro-umero",
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+    "rockwoodcriancas9-16-condilo-lateral",
+    "rockwoodcriancas9-17-fise-distal-umero"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "preservar": 9
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Osteogênese imperfeita",
+   "subtema": "Osteogênese imperfeita",
+   "n": 14,
+   "oficiais": 14,
+   "teot": 1,
+   "taro": 10,
+   "citadas": 2,
+   "cobertura": 0.14,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas10-07-patologicas-maus-tratos"
+   ],
+   "comentarios": {
+    "basico": 13,
+    "preservar": 1
+   },
+   "posicaoFila": 76
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura da diáfise do úmero",
+   "subtema": "Fratura da diáfise do úmero",
+   "n": 14,
+   "oficiais": 14,
+   "teot": 0,
+   "taro": 8,
+   "citadas": 13,
+   "cobertura": 0.93,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-37-diafise-umero",
+    "rockwood10-42-diafise-radio-ulna"
+   ],
+   "comentarios": {
+    "basico": 6,
+    "preservar": 8
+   }
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Cifose e doença de Scheuermann",
+   "subtema": "Cifose e doença de Scheuermann",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 10,
+    "incerto": 3
+   },
+   "posicaoFila": 77
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Rigidez do cotovelo",
+   "subtema": "Rigidez do cotovelo",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 1,
+   "taro": 8,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 13
+   },
+   "posicaoFila": 78
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Entorse e instabilidade lateral do tornozelo",
+   "subtema": "Entorse e instabilidade lateral do tornozelo",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 0,
+   "taro": 11,
+   "citadas": 5,
+   "cobertura": 0.38,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-65-tornozelo",
+    "rockwood10-66-talus"
+   ],
+   "comentarios": {
+    "basico": 10,
+    "preservar": 3
+   },
+   "posicaoFila": 79
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Fraturas do retropé, mediopé e antepé",
+   "subtema": "Fraturas do retropé, mediopé e antepé",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 0,
+   "taro": 11,
+   "citadas": 7,
+   "cobertura": 0.54,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-64-pilao-tibial",
+    "rockwood10-65-tornozelo",
+    "rockwood10-66-talus"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "incerto": 2,
+    "preservar": 6
+   }
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Fraturas do tornozelo e do pilão tibial",
+   "subtema": "Fraturas do tornozelo e do pilão tibial",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 1,
+   "taro": 9,
+   "citadas": 10,
+   "cobertura": 0.77,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-64-pilao-tibial",
+    "rockwood10-65-tornozelo"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "incerto": 1,
+    "preservar": 7
+   }
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Lesões osteocondrais do tálus",
+   "subtema": "Lesões osteocondrais do tálus",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 1,
+   "taro": 8,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 12,
+    "incerto": 1
+   },
+   "posicaoFila": 80
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Pé plano adquirido do adulto",
+   "subtema": "Pé plano adquirido do adulto",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 1,
+   "taro": 9,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 13
+   },
+   "posicaoFila": 81
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Luxações na criança",
+   "subtema": "Luxações na criança",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 2,
+   "taro": 7,
+   "citadas": 12,
+   "cobertura": 0.92,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+    "rockwoodcriancas9-17-fise-distal-umero"
+   ],
+   "comentarios": {
+    "basico": 2,
+    "preservar": 11
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Maus-tratos",
+   "subtema": "Maus-tratos",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 2,
+   "taro": 5,
+   "citadas": 11,
+   "cobertura": 0.85,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-07-patologicas-maus-tratos",
+    "rockwoodcriancas9-17-fise-distal-umero"
+   ],
+   "comentarios": {
+    "incerto": 1,
+    "preservar": 12
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Pseudartrose congênita da tíbia e deformidades da perna",
+   "subtema": "Pseudartrose congênita da tíbia e deformidades da perna",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 13
+   },
+   "posicaoFila": 82
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Imagem do quadril",
+   "subtema": "Imagem do quadril",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 2,
+   "taro": 6,
+   "citadas": 3,
+   "cobertura": 0.23,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-51-acetabulo"
+   ],
+   "comentarios": {
+    "basico": 10,
+    "preservar": 3
+   },
+   "posicaoFila": 83
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do pilão tibial",
+   "subtema": "Fratura do pilão tibial",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 1,
+   "taro": 8,
+   "citadas": 13,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-64-pilao-tibial",
+    "rockwood10-65-tornozelo"
+   ],
+   "comentarios": {
+    "basico": 3,
+    "preservar": 10
+   }
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Cisto ósseo simples",
+   "subtema": "Cisto ósseo simples",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 1,
+   "taro": 8,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 13
+   },
+   "posicaoFila": 84
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Mieloma múltiplo e plasmocitoma",
+   "subtema": "Mieloma múltiplo e plasmocitoma",
+   "n": 13,
+   "oficiais": 13,
+   "teot": 0,
+   "taro": 10,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 12,
+    "incerto": 1
+   },
+   "posicaoFila": 85
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Imagem da coluna",
+   "subtema": "Imagem da coluna",
+   "n": 12,
+   "oficiais": 12,
+   "teot": 2,
+   "taro": 5,
+   "citadas": 1,
+   "cobertura": 0.08,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 11,
+    "preservar": 1
+   },
+   "posicaoFila": 86
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Artrose e artroplastia do cotovelo",
+   "subtema": "Artrose e artroplastia do cotovelo",
+   "n": 12,
+   "oficiais": 12,
+   "teot": 1,
+   "taro": 5,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 11,
+    "incerto": 1
+   },
+   "posicaoFila": 87
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Fraturas do cotovelo e antebraço",
+   "subtema": "Fraturas do cotovelo e antebraço",
+   "n": 12,
+   "oficiais": 12,
+   "teot": 0,
+   "taro": 8,
+   "citadas": 7,
+   "cobertura": 0.58,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-33-fratura-escapula",
+    "rockwood10-34-fratura-clavicula",
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "comentarios": {
+    "basico": 4,
+    "preservar": 8
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Tendinite calcária",
+   "subtema": "Tendinite calcária",
+   "n": 12,
+   "oficiais": 12,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 12
+   },
+   "posicaoFila": 88
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Artrose do tornozelo, artrodese e artroplastia",
+   "subtema": "Artrose do tornozelo, artrodese e artroplastia",
+   "n": 12,
+   "oficiais": 12,
+   "teot": 2,
+   "taro": 6,
+   "citadas": 2,
+   "cobertura": 0.17,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-64-pilao-tibial",
+    "rockwood10-66-talus"
+   ],
+   "comentarios": {
+    "basico": 11,
+    "preservar": 1
+   },
+   "posicaoFila": 89
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Exame físico do pé e tornozelo",
+   "subtema": "Exame físico do pé e tornozelo",
+   "n": 12,
+   "oficiais": 12,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 2,
+   "cobertura": 0.17,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-65-tornozelo"
+   ],
+   "comentarios": {
+    "basico": 11,
+    "preservar": 1
+   },
+   "posicaoFila": 90
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Tendão calcâneo",
+   "subtema": "Tendão calcâneo",
+   "n": 12,
+   "oficiais": 12,
+   "teot": 1,
+   "taro": 9,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 12
+   },
+   "posicaoFila": 91
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Dor peritrocantérica e tendinopatias",
+   "subtema": "Dor peritrocantérica e tendinopatias",
+   "n": 12,
+   "oficiais": 12,
+   "teot": 2,
+   "taro": 8,
+   "citadas": 1,
+   "cobertura": 0.08,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse"
+   ],
+   "comentarios": {
+    "basico": 12
+   },
+   "posicaoFila": 92
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Amputações e próteses",
+   "subtema": "Amputações e próteses",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 2,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 9,
+    "incerto": 2
+   },
+   "posicaoFila": 93
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Gonartrose e osteotomias",
+   "subtema": "Gonartrose e osteotomias",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 11
+   },
+   "posicaoFila": 94
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Fibrocartilagem triangular e punho ulnar",
+   "subtema": "Fibrocartilagem triangular e punho ulnar",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 0,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 11
+   }
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtema": "Osteoporose: tratamento",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 1,
+   "taro": 9,
+   "citadas": 1,
+   "cobertura": 0.09,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-49-fratura-toracolombar"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "incerto": 1,
+    "preservar": 1
+   },
+   "posicaoFila": 95
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtema": "Raquitismo e osteomalácia",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 1,
+   "taro": 5,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 11
+   },
+   "posicaoFila": 96
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Metatarsalgia e neuroma de Morton",
+   "subtema": "Metatarsalgia e neuroma de Morton",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 11
+   },
+   "posicaoFila": 97
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Fraturas do pé na criança",
+   "subtema": "Fraturas do pé na criança",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 2,
+   "taro": 7,
+   "citadas": 6,
+   "cobertura": 0.55,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-66-talus",
+    "rockwoodcriancas10-31-pe"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "preservar": 6
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Mão da criança",
+   "subtema": "Mão da criança",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 0,
+   "taro": 8,
+   "citadas": 4,
+   "cobertura": 0.36,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-45-fraturas-mao",
+    "rockwoodcriancas10-08-mao-carpo",
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+    "wilkins9-08-radio-ulna-distal-crianca",
+    "wilkins9-09-diafise-antebraco-crianca"
+   ],
+   "comentarios": {
+    "basico": 8,
+    "incerto": 1,
+    "preservar": 2
+   }
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Impacto femoroacetabular",
+   "subtema": "Impacto femoroacetabular",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 1,
+   "taro": 5,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 11
+   },
+   "posicaoFila": 98
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Politrauma e controle de danos",
+   "subtema": "Politrauma e controle de danos",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 3,
+   "taro": 6,
+   "citadas": 3,
+   "cobertura": 0.27,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-50-anel-pelvico",
+    "rockwood10-51-acetabulo",
+    "rockwood10-63-diafise-tibia"
+   ],
+   "comentarios": {
+    "basico": 10,
+    "preservar": 1
+   },
+   "posicaoFila": 99
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Doença de Paget",
+   "subtema": "Doença de Paget",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 1,
+   "taro": 8,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 11
+   },
+   "posicaoFila": 100
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Histiocitose de células de Langerhans",
+   "subtema": "Histiocitose de células de Langerhans",
+   "n": 11,
+   "oficiais": 11,
+   "teot": 2,
+   "taro": 8,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 11
+   },
+   "posicaoFila": 101
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Infecções da coluna",
+   "subtema": "Infecções da coluna",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 2,
+   "taro": 6,
+   "citadas": 1,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "incerto": 1
+   },
+   "posicaoFila": 102
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Deformidades ósseas e alongamento",
+   "subtema": "Deformidades ósseas e alongamento",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 0,
+   "taro": 8,
+   "citadas": 1,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-63-diafise-tibia"
+   ],
+   "comentarios": {
+    "basico": 10
+   },
+   "posicaoFila": 103
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Exame físico do joelho",
+   "subtema": "Exame físico do joelho",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 2,
+   "taro": 5,
+   "citadas": 1,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "preservar": 1
+   },
+   "posicaoFila": 104
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Amputações e reimplantes",
+   "subtema": "Amputações e reimplantes",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 1,
+   "taro": 6,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 10
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Dedo em gatilho e outras tenossinovites",
+   "subtema": "Dedo em gatilho e outras tenossinovites",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 10
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Síndrome do túnel do carpo",
+   "subtema": "Síndrome do túnel do carpo",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 1,
+   "taro": 6,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 10
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Exame físico do cotovelo",
+   "subtema": "Exame físico do cotovelo",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 2,
+   "taro": 5,
+   "citadas": 1,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "comentarios": {
+    "basico": 8,
+    "preservar": 2
+   },
+   "posicaoFila": 105
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Lesões SLAP e do lábio superior",
+   "subtema": "Lesões SLAP e do lábio superior",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 2,
+   "taro": 3,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 9,
+    "incerto": 1
+   },
+   "posicaoFila": 106
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Hálux rígido",
+   "subtema": "Hálux rígido",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 10
+   },
+   "posicaoFila": 107
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Pé plano flexível",
+   "subtema": "Pé plano flexível",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 0,
+   "taro": 8,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 10
+   },
+   "posicaoFila": 108
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Osteocondroses",
+   "subtema": "Osteocondroses",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 2,
+   "cobertura": 0.2,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+    "rockwoodcriancas9-17-fise-distal-umero"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "incerto": 1
+   },
+   "posicaoFila": 109
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Outros temas de ortopedia pediátrica",
+   "subtema": "Outros temas de ortopedia pediátrica",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 2,
+   "taro": 8,
+   "citadas": 5,
+   "cobertura": 0.5,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-57-diafise-femur",
+    "rockwoodcriancas10-02-consolidacao-fise",
+    "rockwoodcriancas10-23-pelve-acetabulo",
+    "rockwoodcriancas10-24-quadril",
+    "rockwoodcriancas10-25-diafise-femur"
+   ],
+   "comentarios": {
+    "basico": 7,
+    "preservar": 3
+   }
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Sinovite transitória e artrite séptica do quadril",
+   "subtema": "Sinovite transitória e artrite séptica do quadril",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 0,
+   "taro": 5,
+   "citadas": 1,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas10-24-quadril"
+   ],
+   "comentarios": {
+    "basico": 10
+   },
+   "posicaoFila": 110
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Vias de acesso ao quadril",
+   "subtema": "Vias de acesso ao quadril",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 2,
+   "taro": 5,
+   "citadas": 3,
+   "cobertura": 0.3,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-50-anel-pelvico",
+    "rockwood10-51-acetabulo"
+   ],
+   "comentarios": {
+    "basico": 8,
+    "preservar": 2
+   },
+   "posicaoFila": 111
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Outras lesões pseudotumorais",
+   "subtema": "Outras lesões pseudotumorais",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 1,
+   "cobertura": 0.1,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-54-transtrocanterica"
+   ],
+   "comentarios": {
+    "basico": 9,
+    "preservar": 1
+   },
+   "posicaoFila": 112
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Sarcomas de partes moles",
+   "subtema": "Sarcomas de partes moles",
+   "n": 10,
+   "oficiais": 10,
+   "teot": 0,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 10
+   },
+   "posicaoFila": 113
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Lombalgia",
+   "subtema": "Lombalgia",
+   "n": 9,
+   "oficiais": 9,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 8,
+    "incerto": 1
+   },
+   "posicaoFila": 114
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Medicamentos e exames laboratoriais",
+   "subtema": "Medicamentos e exames laboratoriais",
+   "n": 9,
+   "oficiais": 9,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 9
+   },
+   "posicaoFila": 115
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Deformidades dos dedos",
+   "subtema": "Deformidades dos dedos",
+   "n": 9,
+   "oficiais": 9,
+   "teot": 0,
+   "taro": 7,
+   "citadas": 2,
+   "cobertura": 0.22,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "comentarios": {
+    "protegido-mao": 9
+   }
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtema": "Outros temas osteometabólicos",
+   "n": 9,
+   "oficiais": 9,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 9
+   },
+   "posicaoFila": 116
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Biomecânica e marcha",
+   "subtema": "Biomecânica e marcha",
+   "n": 9,
+   "oficiais": 9,
+   "teot": 3,
+   "taro": 4,
+   "citadas": 2,
+   "cobertura": 0.22,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-65-tornozelo",
+    "rockwood10-66-talus"
+   ],
+   "comentarios": {
+    "basico": 8,
+    "preservar": 1
+   },
+   "posicaoFila": 117
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Deformidades congênitas do pé",
+   "subtema": "Deformidades congênitas do pé",
+   "n": 9,
+   "oficiais": 9,
+   "teot": 1,
+   "taro": 6,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 9
+   },
+   "posicaoFila": 118
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Outros temas do pé e tornozelo",
+   "subtema": "Outros temas do pé e tornozelo",
+   "n": 9,
+   "oficiais": 9,
+   "teot": 2,
+   "taro": 4,
+   "citadas": 3,
+   "cobertura": 0.33,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-64-pilao-tibial",
+    "rockwood10-65-tornozelo",
+    "rockwood10-66-talus"
+   ],
+   "comentarios": {
+    "basico": 8,
+    "preservar": 1
+   },
+   "posicaoFila": 119
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Artroscopia do quadril e lesão labral",
+   "subtema": "Artroscopia do quadril e lesão labral",
+   "n": 9,
+   "oficiais": 9,
+   "teot": 1,
+   "taro": 5,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 9
+   },
+   "posicaoFila": 120
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Vias de acesso à coluna",
+   "subtema": "Vias de acesso à coluna",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 2,
+   "taro": 3,
+   "citadas": 5,
+   "cobertura": 0.62,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 4,
+    "preservar": 4
+   }
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Fixadores externos",
+   "subtema": "Fixadores externos",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 1,
+   "cobertura": 0.12,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-57-diafise-femur"
+   ],
+   "comentarios": {
+    "basico": 7,
+    "preservar": 1
+   },
+   "posicaoFila": 121
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Biomecânica da mão",
+   "subtema": "Biomecânica da mão",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 2,
+   "cobertura": 0.25,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-44-carpo"
+   ],
+   "comentarios": {
+    "protegido-mao": 8
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Luxação acromioclavicular e esternoclavicular",
+   "subtema": "Luxação acromioclavicular e esternoclavicular",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 0,
+   "taro": 3,
+   "citadas": 3,
+   "cobertura": 0.38,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-34-fratura-clavicula"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "preservar": 3
+   },
+   "posicaoFila": 122
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Peitoral maior e outras rupturas tendíneas",
+   "subtema": "Peitoral maior e outras rupturas tendíneas",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 7,
+    "incerto": 1
+   },
+   "posicaoFila": 123
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Pé reumatoide",
+   "subtema": "Pé reumatoide",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 1,
+   "taro": 5,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 8
+   },
+   "posicaoFila": 124
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Desenvolvimento neuropsicomotor",
+   "subtema": "Desenvolvimento neuropsicomotor",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 2,
+   "cobertura": 0.25,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwoodcriancas10-26-fise-distal-femur",
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "rockwoodcriancas9-12-avaliacao-cotovelo",
+    "rockwoodcriancas9-17-fise-distal-umero"
+   ],
+   "comentarios": {
+    "basico": 7,
+    "preservar": 1
+   },
+   "posicaoFila": 125
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Biomecânica e marcha",
+   "subtema": "Biomecânica e marcha",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 0,
+   "taro": 5,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 8
+   },
+   "posicaoFila": 126
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Fraturas do quadril e do acetábulo",
+   "subtema": "Fraturas do quadril e do acetábulo",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 1,
+   "taro": 7,
+   "citadas": 7,
+   "cobertura": 0.88,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse",
+    "rockwood10-51-acetabulo",
+    "rockwood10-53-colo-femur"
+   ],
+   "comentarios": {
+    "basico": 2,
+    "preservar": 6
+   }
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Osteotomias do quadril",
+   "subtema": "Osteotomias do quadril",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 0,
+   "taro": 6,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 8
+   },
+   "posicaoFila": 127
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas do mediopé e antepé",
+   "subtema": "Fraturas do mediopé e antepé",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 4,
+   "cobertura": 0.5,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse"
+   ],
+   "comentarios": {
+    "basico": 7,
+    "preservar": 1
+   }
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Encondroma e encondromatoses",
+   "subtema": "Encondroma e encondromatoses",
+   "n": 8,
+   "oficiais": 8,
+   "teot": 2,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 8
+   },
+   "posicaoFila": 128
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Menisco discoide",
+   "subtema": "Menisco discoide",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 7
+   },
+   "posicaoFila": 129
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Artrose do punho e artroscopia",
+   "subtema": "Artrose do punho e artroscopia",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 0,
+   "taro": 3,
+   "citadas": 1,
+   "cobertura": 0.14,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-44-carpo"
+   ],
+   "comentarios": {
+    "protegido-mao": 7
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Fraturas do escafoide e do carpo",
+   "subtema": "Fraturas do escafoide e do carpo",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 0,
+   "taro": 5,
+   "citadas": 7,
+   "cobertura": 1.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-44-carpo"
+   ],
+   "comentarios": {
+    "protegido-mao": 7
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Fraturas dos metacarpos e falanges",
+   "subtema": "Fraturas dos metacarpos e falanges",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 1,
+   "taro": 5,
+   "citadas": 5,
+   "cobertura": 0.71,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "comentarios": {
+    "protegido-mao": 7
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Anatomia do cotovelo",
+   "subtema": "Anatomia do cotovelo",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 1,
+   "cobertura": 0.14,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-40-cotovelo-cabeca-radio",
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "incerto": 1,
+    "preservar": 1
+   },
+   "posicaoFila": 130
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Hiperparatireoidismo e osteodistrofia renal",
+   "subtema": "Hiperparatireoidismo e osteodistrofia renal",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 1,
+   "taro": 3,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 7
+   },
+   "posicaoFila": 131
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Fasciíte plantar e dor no calcanhar",
+   "subtema": "Fasciíte plantar e dor no calcanhar",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 2,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 7
+   },
+   "posicaoFila": 132
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Coxartrose",
+   "subtema": "Coxartrose",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 0,
+   "taro": 7,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 7
+   },
+   "posicaoFila": 133
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Outros temas do quadril",
+   "subtema": "Outros temas do quadril",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 0,
+   "taro": 6,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 7
+   },
+   "posicaoFila": 134
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fraturas da coluna cervical baixa",
+   "subtema": "Fraturas da coluna cervical baixa",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 2,
+   "taro": 3,
+   "citadas": 7,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 1,
+    "preservar": 6
+   }
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Condroblastoma",
+   "subtema": "Condroblastoma",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 7
+   },
+   "posicaoFila": 135
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Osteocondroma e exostoses múltiplas",
+   "subtema": "Osteocondroma e exostoses múltiplas",
+   "n": 7,
+   "oficiais": 7,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 7
+   },
+   "posicaoFila": 136
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Outros temas da coluna",
+   "subtema": "Outros temas da coluna",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 0,
+   "taro": 5,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 6
+   },
+   "posicaoFila": 137
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Metodologia científica e estatística",
+   "subtema": "Metodologia científica e estatística",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 0,
+   "taro": 5,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 6
+   },
+   "posicaoFila": 138
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Biomecânica do joelho",
+   "subtema": "Biomecânica do joelho",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 2,
+   "cobertura": 0.33,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-60-patela-mecanismo-extensor",
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 5,
+    "preservar": 1
+   },
+   "posicaoFila": 139
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Lesões condrais",
+   "subtema": "Lesões condrais",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 1,
+   "taro": 4,
+   "citadas": 2,
+   "cobertura": 0.33,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-60-patela-mecanismo-extensor"
+   ],
+   "comentarios": {
+    "basico": 3,
+    "incerto": 1,
+    "preservar": 2
+   },
+   "posicaoFila": 140
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Outros temas do joelho",
+   "subtema": "Outros temas do joelho",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 0,
+   "taro": 4,
+   "citadas": 2,
+   "cobertura": 0.33,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-60-patela-mecanismo-extensor"
+   ],
+   "comentarios": {
+    "basico": 3,
+    "incerto": 2,
+    "preservar": 1
+   },
+   "posicaoFila": 141
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Impacto subacromial e acromioplastia",
+   "subtema": "Impacto subacromial e acromioplastia",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 0,
+   "taro": 3,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 6
+   },
+   "posicaoFila": 142
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Artroscopia do tornozelo",
+   "subtema": "Artroscopia do tornozelo",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 1,
+   "taro": 3,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 6
+   },
+   "posicaoFila": 143
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Fraturas periprotéticas do quadril",
+   "subtema": "Fraturas periprotéticas do quadril",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 2,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 6
+   },
+   "posicaoFila": 144
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Pubalgia e osteíte púbica",
+   "subtema": "Pubalgia e osteíte púbica",
+   "n": 6,
+   "oficiais": 6,
+   "teot": 0,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 6
+   },
+   "posicaoFila": 145
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Imagem em ortopedia",
+   "subtema": "Imagem em ortopedia",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 0,
+   "taro": 3,
+   "citadas": 1,
+   "cobertura": 0.2,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse"
+   ],
+   "comentarios": {
+    "basico": 5
+   },
+   "posicaoFila": 146
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Canto posterolateral",
+   "subtema": "Canto posterolateral",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 1,
+   "taro": 3,
+   "citadas": 2,
+   "cobertura": 0.4,
+   "situacao": "parcial",
+   "resumos": [
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 2,
+    "incerto": 1,
+    "preservar": 2
+   },
+   "posicaoFila": 147
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Osteonecrose do joelho",
+   "subtema": "Osteonecrose do joelho",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 0,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4,
+    "incerto": 1
+   },
+   "posicaoFila": 148
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Sindactilia e polidactilia",
+   "subtema": "Sindactilia e polidactilia",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 1,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 5
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Artroscopia do cotovelo",
+   "subtema": "Artroscopia do cotovelo",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 5
+   },
+   "posicaoFila": 149
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Ossificação heterotópica",
+   "subtema": "Ossificação heterotópica",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 1,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 5
+   },
+   "posicaoFila": 150
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Outras deformidades do pé na criança",
+   "subtema": "Outras deformidades do pé na criança",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 5
+   },
+   "posicaoFila": 151
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Trauma da coluna na criança",
+   "subtema": "Trauma da coluna na criança",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 2,
+   "taro": 2,
+   "citadas": 3,
+   "cobertura": 0.6,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwoodcriancas10-21-coluna-cervical",
+    "rockwoodcriancas10-22-coluna-toracolombar"
+   ],
+   "comentarios": {
+    "basico": 3,
+    "preservar": 2
+   }
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fratura do olécrano",
+   "subtema": "Fratura do olécrano",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 1,
+   "taro": 2,
+   "citadas": 4,
+   "cobertura": 0.8,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "comentarios": {
+    "basico": 1,
+    "preservar": 4
+   }
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Cisto ósseo aneurismático",
+   "subtema": "Cisto ósseo aneurismático",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 0,
+   "taro": 3,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 5
+   },
+   "posicaoFila": 152
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Osteoma osteoide",
+   "subtema": "Osteoma osteoide",
+   "n": 5,
+   "oficiais": 5,
+   "teot": 1,
+   "taro": 3,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 5
+   },
+   "posicaoFila": 153
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Escoliose congênita e neuromuscular",
+   "subtema": "Escoliose congênita e neuromuscular",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 1,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 154
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Osteomielite crônica",
+   "subtema": "Osteomielite crônica",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 0,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 155
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Artroscopia do joelho",
+   "subtema": "Artroscopia do joelho",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 2,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 156
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Reconstrução do LCA: enxertos e túneis",
+   "subtema": "Reconstrução do LCA: enxertos e túneis",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 1,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 157
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Fratura do rádio distal",
+   "subtema": "Fratura do rádio distal",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 4
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Imagem da mão e punho",
+   "subtema": "Imagem da mão e punho",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 1,
+   "taro": 2,
+   "citadas": 3,
+   "cobertura": 0.75,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [
+    "rockwood10-44-carpo"
+   ],
+   "comentarios": {
+    "protegido-mao": 4
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Biomecânica do ombro e cotovelo",
+   "subtema": "Biomecânica do ombro e cotovelo",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 2,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 158
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Lesão do subescapular",
+   "subtema": "Lesão do subescapular",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 1,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 3,
+    "incerto": 1
+   },
+   "posicaoFila": 159
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Infecções e artrites na criança",
+   "subtema": "Infecções e artrites na criança",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 0,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 160
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Trauma pediátrico",
+   "subtema": "Trauma pediátrico",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 1,
+   "cobertura": 0.25,
+   "situacao": "sem resumo",
+   "resumos": [
+    "rockwood10-24-fraturas-estresse"
+   ],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 161
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Cordoma",
+   "subtema": "Cordoma",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 162
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Displasia osteofibrosa e adamantinoma",
+   "subtema": "Displasia osteofibrosa e adamantinoma",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 0,
+   "taro": 4,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 163
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Fibroma não ossificante e defeito fibroso cortical",
+   "subtema": "Fibroma não ossificante e defeito fibroso cortical",
+   "n": 4,
+   "oficiais": 4,
+   "teot": 1,
+   "taro": 3,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 4
+   },
+   "posicaoFila": 164
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Tumores da coluna",
+   "subtema": "Tumores da coluna",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 2,
+    "incerto": 1
+   },
+   "posicaoFila": 165
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Outros temas de conceitos básicos",
+   "subtema": "Outros temas de conceitos básicos",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 3
+   },
+   "posicaoFila": 166
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Tratamento conservador e imobilização",
+   "subtema": "Tratamento conservador e imobilização",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 2,
+   "cobertura": 0.67,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-37-diafise-umero",
+    "rockwood10-45-fraturas-mao"
+   ],
+   "comentarios": {
+    "basico": 1,
+    "preservar": 2
+   }
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Joelho na criança",
+   "subtema": "Joelho na criança",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 3
+   },
+   "posicaoFila": 167
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Vias de acesso ao joelho",
+   "subtema": "Vias de acesso ao joelho",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 1,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 3
+   },
+   "posicaoFila": 168
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Deficiências longitudinais e mão torta",
+   "subtema": "Deficiências longitudinais e mão torta",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 1,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 3
+   }
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Outros temas da mão",
+   "subtema": "Outros temas da mão",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 1,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 3
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Instabilidade posterior e multidirecional",
+   "subtema": "Instabilidade posterior e multidirecional",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 3
+   },
+   "posicaoFila": 169
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Dedos menores em garra e em martelo",
+   "subtema": "Dedos menores em garra e em martelo",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 1,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 3
+   },
+   "posicaoFila": 170
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Coxa vara do desenvolvimento",
+   "subtema": "Coxa vara do desenvolvimento",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 2,
+    "incerto": 1
+   },
+   "posicaoFila": 171
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Deficiências longitudinais dos membros",
+   "subtema": "Deficiências longitudinais dos membros",
+   "n": 3,
+   "oficiais": 3,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 3
+   },
+   "posicaoFila": 172
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Biomecânica da coluna",
+   "subtema": "Biomecânica da coluna",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 1,
+   "taro": 0,
+   "citadas": 1,
+   "cobertura": 0.5,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-48-coluna-cervical"
+   ],
+   "comentarios": {
+    "basico": 1,
+    "preservar": 1
+   }
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Coluna cervical da criança e torcicolo",
+   "subtema": "Coluna cervical da criança e torcicolo",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 2
+   },
+   "posicaoFila": 173
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Artroplastia unicompartimental",
+   "subtema": "Artroplastia unicompartimental",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 2
+   },
+   "posicaoFila": 174
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Fratura da patela",
+   "subtema": "Fratura da patela",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 2,
+   "cobertura": 1.0,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-60-patela-mecanismo-extensor"
+   ],
+   "comentarios": {
+    "basico": 1,
+    "preservar": 1
+   }
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Ligamento colateral medial",
+   "subtema": "Ligamento colateral medial",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 1,
+   "cobertura": 0.5,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 1,
+    "preservar": 1
+   }
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Luxação do joelho",
+   "subtema": "Luxação do joelho",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 1,
+   "cobertura": 0.5,
+   "situacao": "coberto",
+   "resumos": [
+    "rockwood10-61-luxacao-joelho"
+   ],
+   "comentarios": {
+    "basico": 1,
+    "preservar": 1
+   }
+  },
+  {
+   "area": "joelho",
+   "areaNome": "Joelho",
+   "assunto": "Tendinopatias do aparelho extensor",
+   "subtema": "Tendinopatias do aparelho extensor",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 2
+   },
+   "posicaoFila": 175
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Doença de Paget",
+   "subtema": "Doença de Paget",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 0,
+   "taro": 2,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1,
+    "incerto": 1
+   },
+   "posicaoFila": 176
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Osteoblastoma",
+   "subtema": "Osteoblastoma",
+   "n": 2,
+   "oficiais": 2,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 2
+   },
+   "posicaoFila": 177
+  },
+  {
+   "area": "coluna",
+   "areaNome": "Coluna",
+   "assunto": "Espondiloartrites",
+   "subtema": "Espondiloartrites",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 178
+  },
+  {
+   "area": "conceitos-basicos",
+   "areaNome": "Conceitos básicos",
+   "assunto": "Doenças autoinflamatórias ósseas",
+   "subtema": "Doenças autoinflamatórias ósseas",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 179
+  },
+  {
+   "area": "mao",
+   "areaNome": "Mão e punho",
+   "assunto": "Tumores da mão",
+   "subtema": "Tumores da mão",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "fora (Mão, decisão do Tales)",
+   "resumos": [],
+   "comentarios": {
+    "protegido-mao": 1
+   }
+  },
+  {
+   "area": "ombro-cotovelo",
+   "areaNome": "Ombro e cotovelo",
+   "assunto": "Osteonecrose da cabeça umeral",
+   "subtema": "Osteonecrose da cabeça umeral",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 180
+  },
+  {
+   "area": "osteometabolicas",
+   "areaNome": "Osteometabólicas",
+   "assunto": "Artrite reumatoide",
+   "subtema": "Artrite reumatoide",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 181
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Lesão da sindesmose",
+   "subtema": "Lesão da sindesmose",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 182
+  },
+  {
+   "area": "pe-tornozelo",
+   "areaNome": "Pé e tornozelo",
+   "assunto": "Osteocondroses do pé",
+   "subtema": "Osteocondroses do pé",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 183
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Discrepância de comprimento dos membros",
+   "subtema": "Discrepância de comprimento dos membros",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 184
+  },
+  {
+   "area": "pediatria",
+   "areaNome": "Ortopedia pediátrica",
+   "assunto": "Raquitismo e doenças metabólicas na criança",
+   "subtema": "Raquitismo e doenças metabólicas na criança",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 185
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Displasia do quadril no adulto",
+   "subtema": "Displasia do quadril no adulto",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 0,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 186
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Luxação e instabilidade da artroplastia",
+   "subtema": "Luxação e instabilidade da artroplastia",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 187
+  },
+  {
+   "area": "quadril",
+   "areaNome": "Quadril",
+   "assunto": "Soltura, osteólise e revisão",
+   "subtema": "Soltura, osteólise e revisão",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 188
+  },
+  {
+   "area": "trauma",
+   "areaNome": "Trauma adulto",
+   "assunto": "Fixação externa e princípios de tratamento",
+   "subtema": "Fixação externa e princípios de tratamento",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 189
+  },
+  {
+   "area": "tumores",
+   "areaNome": "Tumores ósseos e de partes moles",
+   "assunto": "Fibroma condromixoide",
+   "subtema": "Fibroma condromixoide",
+   "n": 1,
+   "oficiais": 1,
+   "teot": 0,
+   "taro": 1,
+   "citadas": 0,
+   "cobertura": 0.0,
+   "situacao": "sem resumo",
+   "resumos": [],
+   "comentarios": {
+    "basico": 1
+   },
+   "posicaoFila": 190
+  }
+ ]
+}
