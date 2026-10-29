@@ -570,8 +570,10 @@ html.oq-sessao .sx-barra { top: var(--oq-cabecalho, 56px); }
 .faixa-cronograma {
   grid-template-columns: auto minmax(3rem, 1fr) auto;
   grid-template-areas: "texto barra numero";
-  gap: 0.75rem; width: auto; max-width: min(85%, 29rem); /* 15% menor (Tales, 29/10/2026): não come as bordas da questão. */
-  margin: 0 auto 0.45rem; padding: 0.3rem 0.95rem;
+  gap: 0.75rem; width: auto; max-width: min(100% - 2rem, 34rem);
+  /* A pílula fica do tamanho de sempre; o conteúdo (texto, barra e número) ocupa ~85% dela,
+     com respiro nas pontas (Tales, 29/10/2026). */
+  margin: 0 auto 0.45rem; padding: 0.3rem max(0.95rem, 7.5%);
   background: var(--superficie); border: 1px solid var(--traco); border-radius: 999px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
@@ -581,10 +583,10 @@ html.oq-sessao .sx-barra { top: var(--oq-cabecalho, 56px); }
 .faixa-cronograma__barra { grid-area: barra; grid-column: auto; }
 .faixa-cronograma__barra, .faixa-cronograma__barra span { height: 5px; border-radius: 999px; box-shadow: none; }
 @media (max-width: 40rem) {
-  .faixa-cronograma { max-width: 85%; gap: 0.55rem; padding-inline: 0.8rem; }
+  .faixa-cronograma { max-width: calc(100% - 1.5rem); gap: 0.55rem; padding-inline: max(0.8rem, 7.5%); }
 }
-/* Na tela larga a barra da sessão tira o limite de largura dos filhos (.conteudo); a faixa fica em 85%, centrada. */
-.sx-sessao .sx-barra > .faixa-cronograma { max-width: 85%; margin-inline: auto; }
+/* Na tela larga a barra da sessão zera o padding dos filhos (.conteudo); a faixa mantém o respiro do conteúdo. */
+.sx-sessao .sx-barra > .faixa-cronograma { padding-inline: max(0.95rem, 7.5%); }
 
 /* Coluna lateral */
 .sx-lado__bloco { border: 1px solid var(--traco); border-radius: var(--raio-cartao); box-shadow: var(--sombra); }
