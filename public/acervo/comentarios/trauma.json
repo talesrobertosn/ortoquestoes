@@ -44510,6 +44510,73 @@
    "comentarioSha256": "b13105e14476e93f8b53ee1906092cea969d638461d2e35be94a5e995988fcff"
   }
  },
+ "trauma-1721": {
+  "incorretas": {
+   "B": "**Mistura três regiões.** Os lumbricais são centrais, os interósseos palmares ficam junto aos metacarpais e o adutor do polegar possui espaço próprio nessa divisão. A associação não descreve um compartimento único.",
+   "C": "**Os interósseos não são o conteúdo pedido do plano tendíneo central.** Os palmares e dorsais ocupam os intervalos metacarpais; os lumbricais acompanham os flexores no centro da palma.",
+   "D": "**Reúne estruturas profundas, mas omite o plano central.** Interósseos palmares e dorsais e adutor do polegar são grupos relevantes na avaliação do esmagamento, porém separados do conjunto de lumbricais e tendões flexores perguntado.",
+   "E": "**Acerta os dois conjuntos de tendões, mas troca lumbricais por interósseos palmares.** A origem dos lumbricais nos tendões profundos ajuda a localizar por que eles pertencem à resposta."
+  },
+  "alerta": "O gabarito oficial é A. A nomenclatura dos compartimentos da mão não é uniforme entre as fontes: algumas agrupam músculos intrínsecos de modo diferente. Nesta questão, \"central palmar\" designa o plano dos tendões flexores e lumbricais, enquanto interósseos e adutor do polegar são tratados como compartimentos separados.",
+  "referencias": [
+   "Mayo Clinic, Orthopedic Emergencies, corte transversal da mão (2023): https://ce.mayo.edu/sites/default/files/media/2023-10/23_Wilke_Orthopedic_Emergencies_CA.pdf",
+   "AO Surgery Reference, Compartment syndrome in the hand: https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/further-reading/compartment-syndrome-hand"
+  ],
+  "conceito": "**No esmagamento da mão, a pressão pode subir em espaços anatômicos distintos.** A palma central abriga o trajeto dos tendões flexores superficial e profundo dos dedos e os lumbricais, pequenos músculos que nascem dos tendões do flexor profundo e seguem para o aparelho extensor. Em planos separados ficam os interósseos entre os metacarpais e o adutor do polegar, mais radial e profundo.\n\nEssa distinção não é apenas um exercício de nomes: uma incisão que libera um espaço pode não descomprimir os demais. Dor desproporcional, tensão local e dor ao alongar passivamente a musculatura exigem avaliação urgente; a presença de pulso não exclui síndrome compartimental. No caso, a pergunta pede reconhecer quais estruturas compartilham o plano central palmar adotado pela banca, sem inferir que o restante da mão está protegido.",
+  "correta": "**A: lumbricais e tendões flexores superficial e profundo.** Os lumbricais se relacionam diretamente aos tendões do flexor profundo no centro da palma, e ambos os conjuntos de tendões atravessam esse plano. É o agrupamento que corresponde ao compartimento central empregado na questão.",
+  "geradoEm": "2026-10-29",
+  "conferido": false
+ },
+ "trauma-1722": {
+  "incorretas": {
+   "A": "**A fixação definitiva é o ponto inadequado.** Revascularização e fasciotomia podem ser urgentes, mas uma osteossíntese longa eleva a carga fisiológica num paciente hemodinamicamente instável.",
+   "B": "**Inclui duas etapas geralmente postergadas.** Fixação definitiva de osso longo e abordagem ventral vertebral extensa não compõem o pacote inicial de controle de danos para o choque, embora possam ser indicadas após estabilização.",
+   "D": "**Fasciotomia e fixação externa são plausíveis, mas a fixação ventral vertebral não é a resposta inicial habitual.** Lesão medular ou instabilidade espinal exige proteção e avaliação especializada, sem converter automaticamente uma reconstrução ventral longa em cirurgia imediata durante choque.",
+   "E": "**Troca prioridades de controle de danos por duas cirurgias definitivas.** O fixador externo é temporário; reconstrução ventral e osteossíntese definitiva aguardam condições clínicas mais seguras, salvo necessidade excepcional individualizada."
+  },
+  "referencias": [
+   "Orthopaedic traumatology: fundamental principles and current controversies for the acute care surgeon (2018): https://pmc.ncbi.nlm.nih.gov/articles/PMC5887772/",
+   "Roles of Trauma CT and CTA in Salvaging the Threatened or Mangled Extremity (2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8906352/"
+  ],
+  "conceito": "**No politrauma instável, a primeira operação deve salvar a vida e o membro sem acrescentar uma agressão cirúrgica longa.** O controle de danos ortopédico estabiliza temporariamente fraturas de ossos longos, com frequência por fixador externo. Se há isquemia de extremidade, a reperfusão não pode esperar a osteossíntese definitiva; quando há síndrome compartimental, a fasciotomia precisa ser feita prontamente. A sequência exata entre estabilização e reparo vascular depende da lesão, do tempo de isquemia e da possibilidade de usar um desvio vascular temporário.\n\nPlacas ou hastes definitivas e reconstrução ventral de fratura vertebral podem ser necessárias depois, mas geralmente são adiadas até a ressuscitação e a melhora fisiológica. O objetivo é limitar tempo operatório, sangramento e o chamado segundo impacto inflamatório em quem já está em choque.",
+  "correta": "**C: revascularização, fixação externa e fasciotomia.** São intervenções que podem ser urgentes em um paciente instável: restauram fluxo, estabilizam rapidamente o osso e aliviam pressão muscular ameaçadora. A indicação concreta de cada uma depende das lesões presentes; a alternativa não afirma que todo politraumatizado precisa das três.",
+  "geradoEm": "2026-10-29",
+  "conferido": false
+ },
+ "trauma-1724": {
+  "incorretas": {
+   "B": "**Troca o componente energético por \"distúrbios emocionais\".** Saúde mental pode influenciar alimentação e treinamento, mas não substitui baixa disponibilidade energética ou comportamento alimentar alterado como componente da tríade.",
+   "C": "**Não reúne nenhum dos três componentes clássicos.** Polimenorreia significa ciclos frequentes, não a disfunção por supressão hormonal típica da tríade, e aumento muscular não é o marcador ósseo.",
+   "D": "**Acerta o eixo dietético, mas erra os outros dois.** Ciclos frequentes e ganho de musculatura não equivalem à amenorreia ou à baixa massa óssea da formulação histórica.",
+   "E": "**Acerta alimentação e amenorreia, mas não o terceiro componente.** O risco relevante é perda de saúde óssea e fratura por estresse, não aumento da musculatura."
+  },
+  "alerta": "O gabarito oficial A expressa a formulação histórica da tríade. A definição atual descreve um espectro de baixa disponibilidade energética, com ou sem transtorno alimentar, disfunção menstrual e baixa densidade mineral óssea; não exige amenorreia completa nem osteoporose estabelecida, especialmente em adolescente.",
+  "referencias": [
+   "American College of Sports Medicine, The Female Athlete Triad: https://www.acsm.org/docs/default-source/files-for-resource-library/the-female-athlete-triad.pdf",
+   "The Female Athlete Triad: Review of Current Literature (2021): https://pmc.ncbi.nlm.nih.gov/articles/PMC8702454/"
+  ],
+  "conceito": "**Uma atleta pode treinar mais energia do que consegue repor pela alimentação.** A baixa disponibilidade energética altera o eixo hormonal e pode causar ciclos menstruais irregulares ou ausência de menstruação. Ao mesmo tempo, compromete a formação e manutenção óssea, elevando o risco de lesão por estresse. Essa ligação entre nutrição, menstruação e osso é o centro da tríade da mulher atleta.\n\nA fórmula clássica de prova era distúrbio alimentar, amenorreia e osteoporose. Na prática atual, o espectro começa antes desses extremos: pode haver restrição alimentar sem transtorno formal, oligomenorreia sem amenorreia e densidade óssea reduzida sem osteoporose. Em uma menina de 14 anos com lesões repetidas, reconhecer precocemente esse processo é mais útil do que esperar todos os três diagnósticos avançados.",
+  "correta": "**A: distúrbios dietéticos, amenorreia e osteoporose.** É a tríade clássica que a questão pede. O mecanismo comum é o déficit energético, que se associa à disfunção menstrual e ao prejuízo da saúde óssea; o alerta delimita a terminologia moderna.",
+  "geradoEm": "2026-10-29",
+  "conferido": false
+ },
+ "trauma-1726": {
+  "incorretas": {
+   "A": "**O abdutor longo do polegar é dorsal profundo.** Pronador quadrado e flexor do carpo são volares, mas basta esse abdutor posterior para invalidar o trio.",
+   "B": "**Contém dois elementos de fora do plano volar.** O abdutor longo do polegar é dorsal e o braquiorradial integra o grupo lateral móvel, embora o pronador quadrado seja volar.",
+   "D": "**Flexor do carpo não torna volares os demais.** O abdutor longo do polegar ocupa o compartimento dorsal profundo; o braquiorradial, o lateral móvel.",
+   "E": "**Acerta o flexor profundo dos dedos e o flexor do carpo, mas inclui abdutor dorsal.** A alternativa C troca esse abdutor pelo pronador quadrado, que efetivamente está no volar profundo."
+  },
+  "alerta": "O enunciado usa \"flexor longo do carpo\", nome que não corresponde à nomenclatura anatômica usual. O gabarito oficial C é preservado porque pronador quadrado e flexor profundo dos dedos são volares e a terceira estrutura é descrita como flexora do carpo. A identificação exata desse músculo exigiria correção da redação original.",
+  "referencias": [
+   "Forearm Compartment Syndrome (2013): https://pmc.ncbi.nlm.nih.gov/articles/PMC4005420/",
+   "Anatomy of forearm compartments by high-resolution ultrasound (2021): https://pmc.ncbi.nlm.nih.gov/articles/PMC8630951/"
+  ],
+  "conceito": "**O antebraço se organiza em plano volar flexor-pronador, plano dorsal extensor-supinador e grupo lateral móvel.** No volar superficial estão, entre outros, flexores radial e ulnar do carpo e flexor superficial dos dedos; no profundo, pronador quadrado, flexor profundo dos dedos e flexor longo do polegar. O abdutor longo do polegar, apesar de levar \"longo\" no nome, fica no plano dorsal profundo. O braquiorradial pertence ao grupo lateral móvel.\n\nUma síndrome compartimental após esmagamento exige procurar dor intensa e progressiva, tensão e dor ao alongamento passivo, sem esperar perda de pulso. Para responder à anatomia, localize os músculos por sua posição fascial, não apenas pelo movimento que o nome sugere.",
+  "correta": "**C: pronador quadrado, flexor do carpo e flexor profundo dos dedos.** Os dois músculos precisamente nomeados pertencem ao volar profundo; músculos flexores do carpo pertencem ao volar superficial. A expressão imprecisa da alternativa está registrada no alerta.",
+  "geradoEm": "2026-10-29",
+  "conferido": false
+ },
  "trauma-1729": {
   "conceito": "Uma senhora de 92 anos cai em casa e quebra a diáfise do úmero. Com muitas doenças, a família prefere não operar. A órtese funcional resolve a maioria dessas fraturas, e a pergunta é até onde o osso pode consolidar torto sem prejudicar o braço.\n\n**Por que o úmero tolera tanto.** O úmero fica pendurado no ombro, uma articulação com enorme amplitude de movimento, que compensa boa parte de uma angulação ou rotação residual. Os músculos do braço envolvem o osso e escondem uma deformidade moderada. Por isso a diáfise do úmero é o osso longo em que o tratamento sem cirurgia, com a órtese funcional de Sarmiento, tem mais sucesso.\n\n**Os números do capítulo.** O Rockwood and Green (10ª ed., cap. 37) dá as tolerâncias em três lugares, e elas não são idênticas. No quadro do tratamento sem cirurgia: **20 graus ou menos de angulação**, **30 graus ou menos de rotação**, **3 cm ou menos de encurtamento** e algum contato ósseo. No texto das indicações cirúrgicas: não aceitar mais de 15 a 20 graus em qualquer direção, mais de 30 graus de rotação ou 2 a 3 cm de encurtamento no paciente ativo. E na série de Sarmiento, até 20 graus anterior ou posterior e 15 graus de varo foram bem tolerados.\n\n**E os números de Klenerman?** Os clássicos 20 graus de angulação anterior, 30 graus de varo e 3 cm de encurtamento, muito usados em comentários de prova, **não aparecem neste capítulo**. A diferença que importa é o varo: o capítulo é mais rígido, com 15 graus. Todos os autores, de qualquer forma, insistem que esses números são **arbitrários**, opinião de especialista, e que a decisão depende do paciente: dominância, trabalho, comorbidades e nível funcional. Para uma paciente de 92 anos com pouca demanda, aceita-se até mais.\n\n| Desvio | Limite do capítulo |\n|---|---|\n| Angulação | 20 graus (anterior ou posterior) |\n| Varo | 15 graus (série de Sarmiento) |\n| Rotação | 30 graus |\n| Encurtamento | 3 cm |\n\n> **Na prova:** úmero tolera cerca de 20 graus de angulação, 30 graus de rotação e 3 cm de encurtamento; o varo é o limite mais apertado.\n\nNo resumo de diáfise do úmero, a seção sobre quanto se tolera mostra as três versões dos números lado a lado.",
   "correta": "**A: angulação anterior de até 20º.** É o limite que o capítulo dá para o tratamento sem cirurgia (20 graus ou menos de angulação), e a série de Sarmiento mostrou que até 20 graus anterior ou posterior foram bem tolerados.",
@@ -44642,6 +44709,22 @@
    "questaoSha256": "4dafa8a793e500cea51f77dced35a5b6532b534bdd4ad3eadd9c2ce649f8330c",
    "comentarioSha256": "506a922332938a16257695e1be89c06f48d41fa022ee425b91c4ab1086d45bd9"
   }
+ },
+ "trauma-1733": {
+  "incorretas": {
+   "B": "**O limite clássico é acima de 90 batimentos por minuto.** Uma frequência acima de 80 pode continuar abaixo desse corte e não basta para o critério.",
+   "C": "**O limite respiratório é acima de 20 incursões por minuto.** Acima de 15 não define taquipneia pelo esquema de SIRS.",
+   "D": "**O corte de leucocitose é acima de 12.000 por microlitro.** Contagem acima de 10.000 pode permanecer fora do critério; também contam leucopenia abaixo de 4.000 ou desvio à esquerda importante.",
+   "E": "**O corte para formas jovens é maior que 10%.** Mais de 5% não alcança o valor estabelecido para esse componente do esquema clássico."
+  },
+  "referencias": [
+   "StatPearls, Systemic Inflammatory Response Syndrome: https://www.ncbi.nlm.nih.gov/books/NBK547669/",
+   "The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3): https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/"
+  ],
+  "conceito": "**SIRS descreve uma resposta inflamatória sistêmica, não necessariamente uma infecção.** O critério clássico exige pelo menos dois achados entre temperatura acima de 38 ou abaixo de 36 graus Celsius, frequência cardíaca acima de 90 por minuto, frequência respiratória acima de 20 por minuto ou PaCO2 abaixo de 32 mmHg, e leucócitos acima de 12.000, abaixo de 4.000 por microlitro ou mais de 10% de formas jovens.\n\nApós trauma, inflamação estéril pode preencher esses critérios. Eles não equivalem, por si, a sepse: a definição contemporânea de sepse exige infecção com disfunção orgânica. A questão pede reconhecer um parâmetro compatível com o esquema de SIRS, não diagnosticar a síndrome por um dado isolado.",
+  "correta": "**A: temperatura abaixo de 36 graus.** Hipotermia é um dos limites clássicos de SIRS. Para preencher a síndrome pelo critério histórico, ainda seria necessário outro parâmetro alterado.",
+  "geradoEm": "2026-10-29",
+  "conferido": false
  },
  "trauma-1734": {
   "conceito": "**O oponente do polegar pertence ao compartimento tenar.** O resumo descreve esse espaço com três músculos: abdutor curto, flexor curto e oponente do polegar. A presença da palavra “polegar” no nome de uma estrutura não basta para colocá-la no tenar.\n\nA mão tem dez compartimentos nessa divisão: tenar, hipotenar, adutor do polegar, quatro interósseos dorsais e três interósseos palmares. O adutor do polegar merece destaque porque possui compartimento próprio, embora também atue sobre o polegar. Os interósseos tampouco fazem parte do tenar.\n\nUma síndrome tenar ameaça a função dos músculos que ocupam esse espaço. Contudo, no esmagamento, a investigação não deve parar em uma região apenas porque o enunciado a destacou: os demais espaços podem estar envolvidos e precisam de avaliação apropriada. A divisão anatômica orienta o exame e a descompressão.\n\n**Leia “Braço, antebraço e mão”, na Biblioteca.** Compare os três músculos tenares com o adutor em compartimento separado e com os grupos interósseos.",
