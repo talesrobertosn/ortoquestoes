@@ -4,8 +4,8 @@
  "estados": {
   "duplicada": 97,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 895,
-  "revisada": 1982
+  "pendente-fonte": 887,
+  "revisada": 1990
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -85,8 +85,8 @@
    "estados": {
     "duplicada": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 115,
-    "revisada": 117
+    "pendente-fonte": 114,
+    "revisada": 118
    }
   },
   "rockwood10-45-fraturas-mao": {
@@ -235,16 +235,16 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente-fonte": 42,
-    "revisada": 173
+    "pendente-fonte": 39,
+    "revisada": 176
    }
   },
   "rockwoodcriancas10-06-sindrome-compartimental": {
    "titulo": "Síndrome compartimental na criança",
    "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
    "estados": {
-    "pendente-fonte": 42,
-    "revisada": 177
+    "pendente-fonte": 39,
+    "revisada": 180
    }
   },
   "rockwoodcriancas10-07-patologicas-maus-tratos": {
@@ -261,8 +261,8 @@
    "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
    "estados": {
     "duplicada": 1,
-    "pendente-fonte": 22,
-    "revisada": 19
+    "pendente-fonte": 19,
+    "revisada": 22
    }
   },
   "rockwoodcriancas10-11-colo-radio-olecrano": {
@@ -278,8 +278,8 @@
    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
    "estados": {
     "duplicada": 1,
-    "pendente-fonte": 28,
-    "revisada": 112
+    "pendente-fonte": 25,
+    "revisada": 115
    }
   },
   "rockwoodcriancas10-19-ombro-umero": {
@@ -335,24 +335,24 @@
    "titulo": "Fratura da diáfise do fêmur na criança",
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
-    "pendente-fonte": 20,
-    "revisada": 102
+    "pendente-fonte": 19,
+    "revisada": 103
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
    "titulo": "Fratura da fise distal do fêmur na criança",
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
-    "pendente-fonte": 25,
-    "revisada": 109
+    "pendente-fonte": 24,
+    "revisada": 110
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
-    "pendente-fonte": 27,
-    "revisada": 104
+    "pendente-fonte": 26,
+    "revisada": 105
    }
   },
   "rockwoodcriancas10-28-joelho-intra-articular": {
@@ -368,8 +368,8 @@
    "titulo": "Fraturas da tíbia e da fíbula na criança",
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
-    "pendente-fonte": 21,
-    "revisada": 101
+    "pendente-fonte": 20,
+    "revisada": 102
    }
   },
   "rockwoodcriancas10-30-tornozelo": {
@@ -416,8 +416,8 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
-    "pendente-fonte": 29,
-    "revisada": 91
+    "pendente-fonte": 28,
+    "revisada": 92
    }
   },
   "rockwoodcriancas9-16-condilo-lateral": {
@@ -441,8 +441,8 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente-fonte": 23,
-    "revisada": 83
+    "pendente-fonte": 20,
+    "revisada": 86
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -450,8 +450,8 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente-fonte": 22,
-    "revisada": 79
+    "pendente-fonte": 18,
+    "revisada": 83
    }
   }
  },
@@ -2036,14 +2036,14 @@
    "prova": "TARO",
    "ano": 2024,
    "estado": "pendente-fonte",
-   "motivo": "SCIWORA não é tratada nos resumos de coluna cervical e toracolombar do adulto.",
+   "motivo": "Resumo22novo defineSCIWORA e prognóstico,mas não compara frequência de indicação de IMOBILIZAÇÃO versus descompressão/artrodese nos traumas cervicais de BAIXA ENERGIA.21não fornece protocoloSCIWORA. Falta manejo independente do grupo específico;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
    "questaoSha256": "ab1e6277e05d222908953162459acc650166da9d9f37249f8bdf34a5bb09541f",
-   "pendencia": "SCIWORA não é tratada nos resumos de coluna cervical e toracolombar do adulto."
+   "pendencia": "Resumo22novo defineSCIWORA e prognóstico,mas não compara frequência de indicação de IMOBILIZAÇÃO versus descompressão/artrodese nos traumas cervicais de BAIXA ENERGIA.21não fornece protocoloSCIWORA. Falta manejo independente do grupo específico;sem selo."
   },
   "coluna-0205": {
    "tema": "coluna",
@@ -2862,7 +2862,7 @@
    "prova": "TARO",
    "ano": 2023,
    "estado": "pendente-fonte",
-   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) não trata das sincondroses do atlas na criança nem da idade de fusão dos arcos. Precisa de fonte de coluna pediátrica.",
+   "motivo": "Resumo21novo descreve sincondrose doATLAS,mas não informa a idade de fusão entre ARCOS ANTERIOR E POSTERIOR.7–9anos no texto é sincondroseDENTOCENTRAL,outra estrutura. Falta cronologia independente do atlas;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -2870,7 +2870,7 @@
     "rockwood10-49-fratura-toracolombar"
    ],
    "questaoSha256": "af171c93a43e383edcd01bab8ccb9867260281b3eb6853fcbe78ad8ca2e72fc2",
-   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) não trata das sincondroses do atlas na criança nem da idade de fusão dos arcos. Precisa de fonte de coluna pediátrica."
+   "pendencia": "Resumo21novo descreve sincondrose doATLAS,mas não informa a idade de fusão entre ARCOS ANTERIOR E POSTERIOR.7–9anos no texto é sincondroseDENTOCENTRAL,outra estrutura. Falta cronologia independente do atlas;sem selo."
   },
   "coluna-0300": {
    "tema": "coluna",
@@ -2881,14 +2881,14 @@
    "prova": "TEOT",
    "ano": 2024,
    "estado": "pendente-fonte",
-   "motivo": "SCIWORA (definição e Frankel) não é tratada nos resumos de coluna publicados.",
+   "motivo": "Resumo22novo define ausência deRX/TCe possívelRM,mas não define grausFRANKEL C/Epara comparar as quatro alternativas. Não equiparar classificação neurológica apenas a um déficit genérico. Falta graduação independente completa;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
    "questaoSha256": "c7b1d8f5ece92c7d1d95a1777651eb27ee07bc706011db91536f0ba250462f09",
-   "pendencia": "SCIWORA (definição e Frankel) não é tratada nos resumos de coluna publicados."
+   "pendencia": "Resumo22novo define ausência deRX/TCe possívelRM,mas não define grausFRANKEL C/Epara comparar as quatro alternativas. Não equiparar classificação neurológica apenas a um déficit genérico. Falta graduação independente completa;sem selo."
   },
   "coluna-0301": {
    "tema": "coluna",
@@ -2899,14 +2899,14 @@
    "prova": "TARO",
    "ano": 2022,
    "estado": "pendente-fonte",
-   "motivo": "SCIWORA (idade e segmento mais frequentes) não é tratada nos resumos de coluna publicados.",
+   "motivo": "Resumo22novo descreve MAIOR GRAVIDADE abaixo de8anos,mas alerta não fornecer FREQUÊNCIA etária ou SEGMENTO PREDOMINANTE. Gravidade não prova maior incidência cervical em crianças versus adolescentes. Falta distribuição independente;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
    "questaoSha256": "de247c7c6075930f82dac3fcfdf09cd9d1ed3569110f9b4c54e97cabaecf2cce",
-   "pendencia": "SCIWORA (idade e segmento mais frequentes) não é tratada nos resumos de coluna publicados."
+   "pendencia": "Resumo22novo descreve MAIOR GRAVIDADE abaixo de8anos,mas alerta não fornecer FREQUÊNCIA etária ou SEGMENTO PREDOMINANTE. Gravidade não prova maior incidência cervical em crianças versus adolescentes. Falta distribuição independente;sem selo."
   },
   "coluna-0302": {
    "tema": "coluna",
@@ -18292,8 +18292,8 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente-fonte",
-   "motivo": "Pico de incidência das fraturas diafisárias do antebraço da criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -18308,6 +18308,31 @@
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "67ed82632bd700feb9c68e88b77dbaf93ab2d391cb4da0ed707c83101efbd342",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "O exame: rotação, nervos e lesões associadas",
+       "Limites de angulação e remodelação"
+      ],
+      "blocos": [
+       "o-exame-rotacao-nervos-e-lesoes-associadas-447f5f27",
+       "limites-de-angulacao-e-remodelacao-cd21842f"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "91d67a1864b0527bc34abea982317bc1f0b65428c44108a565abe9d5399f1ac8"
+     }
+    ],
+    "questaoSha256": "67ed82632bd700feb9c68e88b77dbaf93ab2d391cb4da0ed707c83101efbd342",
+    "comentarioSha256": "33f8e5d82c0bec800a461f5206f04ab26cbb9a90a8dfe98a08e744be795b7bb5"
+   },
    "pendencia": "Pico de incidência das fraturas diafisárias do antebraço da criança não é tratado nos resumos pediátricos publicados."
   },
   "mao-1051": {
@@ -19150,14 +19175,37 @@
    ],
    "prova": "PUC-SP",
    "ano": 2021,
-   "estado": "pendente-fonte",
-   "motivo": "Ordem e idade de ossificação dos ossos do carpo não aparecem no resumo do capítulo 44.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
    "questaoSha256": "280b70b400a685e977dd13de7210835e62dc2cda745f1463d31d713ac7fecd13",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Anatomia, exame e remodelação"
+      ],
+      "blocos": [
+       "anatomia-exame-e-remodelacao-06a7a2e4"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+     }
+    ],
+    "questaoSha256": "280b70b400a685e977dd13de7210835e62dc2cda745f1463d31d713ac7fecd13",
+    "comentarioSha256": "dfd67d98074a61c3dcf5990905bf6ddf6148bc7a3a3329f71ec6ddc9ae1ab2d0"
+   },
    "pendencia": "Ordem e idade de ossificação dos ossos do carpo não aparecem no resumo do capítulo 44."
   },
   "mao-1130": {
@@ -31880,7 +31928,7 @@
    "prova": "TARO",
    "ano": 2006,
    "estado": "pendente-fonte",
-   "motivo": "Reconstrução do ligamento anular na luxação aguda da cabeça do rádio não é discutida no resumo do capítulo 15 (que só cita a secção parcial do anular na pronação dolorosa crônica).",
+   "motivo": "Resumo12novo trata redução fechada deMonteggia e anular interposto ou crônico,mas não define indicação geral de RECONSTRUÇÃO na LUXAÇÃO AGUDA ISOLADA da cabeça;reparo/reposição não são automaticamente enxerto reconstrutivo. Falta protocolo independente para julgar a afirmação genérica;sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [
     {
@@ -31895,7 +31943,7 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
    "questaoSha256": "e4099971e52532e74f6f96e078ccfc331d3da8f7e6e36baacdcd351c245d85a9",
-   "pendencia": "Reconstrução do ligamento anular na luxação aguda da cabeça do rádio não é discutida no resumo do capítulo 15 (que só cita a secção parcial do anular na pronação dolorosa crônica)."
+   "pendencia": "Resumo12novo trata redução fechada deMonteggia e anular interposto ou crônico,mas não define indicação geral de RECONSTRUÇÃO na LUXAÇÃO AGUDA ISOLADA da cabeça;reparo/reposição não são automaticamente enxerto reconstrutivo. Falta protocolo independente para julgar a afirmação genérica;sem gabarito oficial,semprovavel."
   },
   "ombro-cotovelo-0513": {
    "tema": "ombro-cotovelo",
@@ -32130,7 +32178,7 @@
    "prova": "PUC-SP",
    "ano": 2023,
    "estado": "pendente-fonte",
-   "motivo": "Luxação congênita da cabeça do rádio não é tratada no resumo do capítulo 15; falta resumo de deformidades congênitas do cotovelo.",
+   "motivo": "Resumo12novo cobre posterior,bilateralidade possível,cabeçaCONVEXA e capítuloHIPOPLÁSICO,mas não descreve OVOIDE como equivalente nem necessidade/frequência de cirurgia naINFÂNCIA. Falta morfologia completa e história natural para comparar todas as opções;sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [
     {
@@ -32145,7 +32193,7 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
    "questaoSha256": "0333b6e919da826fa2f9f3c95d86d99c4c2fb78c16dd32ff9321d456d149eecb",
-   "pendencia": "Luxação congênita da cabeça do rádio não é tratada no resumo do capítulo 15; falta resumo de deformidades congênitas do cotovelo."
+   "pendencia": "Resumo12novo cobre posterior,bilateralidade possível,cabeçaCONVEXA e capítuloHIPOPLÁSICO,mas não descreve OVOIDE como equivalente nem necessidade/frequência de cirurgia naINFÂNCIA. Falta morfologia completa e história natural para comparar todas as opções;sem gabarito oficial,semprovavel."
   },
   "ombro-cotovelo-0535": {
    "tema": "ombro-cotovelo",
@@ -36188,7 +36236,7 @@
    "prova": "TARO",
    "ano": 2017,
    "estado": "pendente-fonte",
-   "motivo": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados.",
+   "motivo": "Resumo12novo descrevePOSTERIOR,mas não distribui subtipoPOSTEROLATERAL versusPOSTEROMEDIAL exigidos pela dupla daC/D. Falta direção combinada independente;posterior isolado não decide a questão inteira. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -36203,7 +36251,7 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
    "questaoSha256": "a5cecaa06fbd3aca9ba8673cf4c86f569b97257630465e5861396aec0ab3152b",
-   "pendencia": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados."
+   "pendencia": "Resumo12novo descrevePOSTERIOR,mas não distribui subtipoPOSTEROLATERAL versusPOSTEROMEDIAL exigidos pela dupla daC/D. Falta direção combinada independente;posterior isolado não decide a questão inteira. Sem selo."
   },
   "pediatria-0061": {
    "tema": "pediatria",
@@ -36386,8 +36434,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-fonte",
-   "motivo": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -36402,6 +36450,31 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
    "questaoSha256": "65240302d78ba5c4afc75f80282c2605efe57ab6c5a96680696d821e92ead6b0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Diagnóstico",
+       "Classificação e mecanismos"
+      ],
+      "blocos": [
+       "diagnostico-7ee8a436",
+       "classificacao-e-mecanismos-bf9aae38"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "6e8327258750b1e31aa10f32583c6e3f9fa86dee1c2d46f47acddaa41ef10722"
+     }
+    ],
+    "questaoSha256": "65240302d78ba5c4afc75f80282c2605efe57ab6c5a96680696d821e92ead6b0",
+    "comentarioSha256": "37283d74ef491290359e2811c52813d7e69e27f1883e9744e3f9f0a24569174b"
+   },
    "pendencia": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados."
   },
   "pediatria-0097": {
@@ -37007,7 +37080,7 @@
    "prova": "TARO",
    "ano": 2024,
    "estado": "pendente-fonte",
-   "motivo": "Luxação congênita da cabeça do rádio (direção e tamanho da cabeça) não é tratada nos resumos publicados.",
+   "motivo": "Resumo12novo descreve direçãoPOSTERIOR,cabeçaCONVEXA e capítuloHIPOPLÁSICO,mas não informa cabeça radial MENOR que o normal,qualificador daD. Forma não prova tamanho. Falta comparação independente do tamanho cefálico;lacuna antiga parcialmente coberta,sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37023,7 +37096,7 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
    "questaoSha256": "d2c7b2d1cf1d7ed9cc5a704a04be2cbfa2869e733b4d07a8fbf87f74d5340321",
-   "pendencia": "Luxação congênita da cabeça do rádio (direção e tamanho da cabeça) não é tratada nos resumos publicados."
+   "pendencia": "Resumo12novo descreve direçãoPOSTERIOR,cabeçaCONVEXA e capítuloHIPOPLÁSICO,mas não informa cabeça radial MENOR que o normal,qualificador daD. Forma não prova tamanho. Falta comparação independente do tamanho cefálico;lacuna antiga parcialmente coberta,sem selo."
   },
   "pediatria-0288": {
    "tema": "pediatria",
@@ -37119,7 +37192,7 @@
    "prova": "SBOT-SP",
    "ano": null,
    "estado": "pendente-fonte",
-   "motivo": "Osteocondrite dissecante do cotovelo e o esporte associado não aparecem nos resumos publicados.",
+   "motivo": "Resumo11novo cita lesão de estresse em arremessadores e ginastas,mas não compara frequência da osteocondriteDISSECANTE entre ginástica,vôlei,basquete e judô. Trechos9-17de atletas não oferecem esse ranking;nota contextual não é prova. Falta comparação independente que sustente MAIS OBSERVADA;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37137,7 +37210,7 @@
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "15fed925ea30bff75622607c326fc928c92745971bc8b6956b572e298ca868e3",
-   "pendencia": "Osteocondrite dissecante do cotovelo e o esporte associado não aparecem nos resumos publicados."
+   "pendencia": "Resumo11novo cita lesão de estresse em arremessadores e ginastas,mas não compara frequência da osteocondriteDISSECANTE entre ginástica,vôlei,basquete e judô. Trechos9-17de atletas não oferecem esse ranking;nota contextual não é prova. Falta comparação independente que sustente MAIS OBSERVADA;sem selo."
   },
   "pediatria-0327": {
    "tema": "pediatria",
@@ -38261,8 +38334,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-fonte",
-   "motivo": "Classificação de Kozin das fraturas da base do metacarpo do polegar na criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -38280,6 +38353,44 @@
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "09c7f7b5f150155b13a7cbe97644ed3c8e14d5ddd908e2a3aab623409158f1bc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Polegar e metacarpais"
+      ],
+      "blocos": [
+       "polegar-e-metacarpais-4fd4e5e3"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "3e3e62b84c839325e42e5c4d217c221984dfe4d8e0b4407e6fffb2ec8658056b"
+     },
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Os tipos de SALTER-HARRIS"
+      ],
+      "blocos": [
+       "os-tipos-de-salter-harris-77cf0c10"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "9e78b4575705fb226ddc46fa81a11541db107ccc2edab5f4a492462da1bd668a"
+     }
+    ],
+    "questaoSha256": "09c7f7b5f150155b13a7cbe97644ed3c8e14d5ddd908e2a3aab623409158f1bc",
+    "comentarioSha256": "70e96324fb5d5884e13a8f59be4595a76ebdc6c5945ef64d190dd066b6c34381"
+   },
    "pendencia": "Classificação de Kozin das fraturas da base do metacarpo do polegar na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0523": {
@@ -39152,7 +39263,7 @@
    "prova": "TARO",
    "ano": 2024,
    "estado": "pendente-fonte",
-   "motivo": "Direção do desvio da epífise radial na fratura do colo do rádio com luxação reduzida não é tratado nos resumos pediátricos publicados.",
+   "motivo": "Resumo11novo separa fratura naREDUÇÃO(cabeça atrás) e naLUXAÇÃO(cabeça à frente). O enunciado cita REDUÇÃO ESPONTÂNEA com C/anterior oficial,mas não esclarece em qual fase a fratura ocorreu nem frequência por direção. Falta mecanismo temporal e comparação suficientes para uma aula que não confunda as fases;gabaritoC intacto,sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -39163,7 +39274,7 @@
     "rockwoodcriancas9-16-condilo-lateral"
    ],
    "questaoSha256": "e554c5ae9aaed3b77142549587b4cc9a816e2eb4706e6367e37f640eb5d2c339",
-   "pendencia": "Direção do desvio da epífise radial na fratura do colo do rádio com luxação reduzida não é tratado nos resumos pediátricos publicados."
+   "pendencia": "Resumo11novo separa fratura naREDUÇÃO(cabeça atrás) e naLUXAÇÃO(cabeça à frente). O enunciado cita REDUÇÃO ESPONTÂNEA com C/anterior oficial,mas não esclarece em qual fase a fratura ocorreu nem frequência por direção. Falta mecanismo temporal e comparação suficientes para uma aula que não confunda as fases;gabaritoC intacto,sem selo."
   },
   "pediatria-0541": {
    "tema": "pediatria",
@@ -41364,7 +41475,7 @@
    "prova": "TARO",
    "ano": 2021,
    "estado": "pendente-fonte",
-   "motivo": "Desvio do fragmento flutuante na fratura bilateral dos ramos púbicos da criança não é tratado nos resumos pediátricos publicados.",
+   "motivo": "Resumo23novo classifica ramos bilaterais comoIVa/straddle,mas não identifica RETO DO ABDOME como motor do fragmentoFLUTUANTE nem compara sartório,iliopsoas e retofemoral nesse padrão. Falta anatomia/vetor independente;avulsões apofisárias são outra lesão. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -41372,7 +41483,7 @@
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
    "questaoSha256": "9c6b62c9d0bbfb0ea8401dd27f2f1574535c05bfd14cbf30fe7bc61b24c75314",
-   "pendencia": "Desvio do fragmento flutuante na fratura bilateral dos ramos púbicos da criança não é tratado nos resumos pediátricos publicados."
+   "pendencia": "Resumo23novo classifica ramos bilaterais comoIVa/straddle,mas não identifica RETO DO ABDOME como motor do fragmentoFLUTUANTE nem compara sartório,iliopsoas e retofemoral nesse padrão. Falta anatomia/vetor independente;avulsões apofisárias são outra lesão. Sem selo."
   },
   "pediatria-0594": {
    "tema": "pediatria",
@@ -42141,8 +42252,8 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente-fonte",
-   "motivo": "Fratura Salter-Harris III da base da falange proximal do polegar não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -42160,6 +42271,31 @@
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "2e647e62f69b539990098f7446d7d191f89d17374a3169e7839338ef49f09e67",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Polegar e metacarpais",
+       "Anatomia, exame e remodelação"
+      ],
+      "blocos": [
+       "polegar-e-metacarpais-db3ac9cf",
+       "anatomia-exame-e-remodelacao-bc27de74"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "54f2ad2a7728fcaeb47bf77f0094025fde0d8e8f7207fc0c820cb5bad8145926"
+     }
+    ],
+    "questaoSha256": "2e647e62f69b539990098f7446d7d191f89d17374a3169e7839338ef49f09e67",
+    "comentarioSha256": "534ca1d0da7931df16375ddf771ff275ed37201a6d20eacdf277665c9992eee2"
+   },
    "pendencia": "Fratura Salter-Harris III da base da falange proximal do polegar não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0610": {
@@ -43928,8 +44064,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente-fonte",
-   "motivo": "Localização mais frequente da fratura do metacarpo na criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -43949,6 +44085,30 @@
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "bb982d735743fa8c3b992f94a9ff110dfbfdf0a6820bd4382b1e77449e0a5dfa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-08-mao-carpo",
+      "titulo": "Fraturas e luxações da mão e do carpo na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+      "secoes": [
+       "Polegar e metacarpais"
+      ],
+      "blocos": [
+       "polegar-e-metacarpais-74e087f7",
+       "polegar-e-metacarpais-4fd4e5e3"
+      ],
+      "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+      "trechosSha256": "2144f04bdb0b499b207ad698b8f8d8466ef18bbda6c1c2237036c70a360a2b9b"
+     }
+    ],
+    "questaoSha256": "bb982d735743fa8c3b992f94a9ff110dfbfdf0a6820bd4382b1e77449e0a5dfa",
+    "comentarioSha256": "d2c4d4a3c98bd27a1d2077317a815c0a0e9ffe6a9ed558fb87c9c1a6c546a6fe"
+   },
    "pendencia": "Localização mais frequente da fratura do metacarpo na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0645": {
@@ -45489,8 +45649,8 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente-fonte",
-   "motivo": "Complicação mais frequente da fratura proximal do fêmur na criança não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -45502,6 +45662,33 @@
     "rockwoodcriancas10-29-diafise-tibia"
    ],
    "questaoSha256": "9f3d486851caa90f439da25dd5267d1f3f7292da44f9357ac6a40e3c5d20ccf4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-24-quadril",
+      "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+      "secoes": [
+       "Necrose",
+       "Coxa vara, fise e pseudartrose",
+       "Classificação de DELBET"
+      ],
+      "blocos": [
+       "necrose-42bbef0d",
+       "coxa-vara-fise-e-pseudartrose-17944458",
+       "classificacao-de-delbet-29878cdc"
+      ],
+      "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+      "trechosSha256": "1a1ce382ed78569531889490bc13e741001ddeae653b1a889828b540d4068c5d"
+     }
+    ],
+    "questaoSha256": "9f3d486851caa90f439da25dd5267d1f3f7292da44f9357ac6a40e3c5d20ccf4",
+    "comentarioSha256": "aef665c7f43dfe3f2b43d3fac98d9dc4ffe1d8bdcea2272b3dd6c2fc93431951"
+   },
    "pendencia": "Complicação mais frequente da fratura proximal do fêmur na criança não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0680": {
@@ -46549,8 +46736,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-fonte",
-   "motivo": "Angulação aceita na fratura proximal do rádio acima de 10 anos não é tratado nos resumos pediátricos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -46558,6 +46745,29 @@
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
    "questaoSha256": "ba4b02ec20cd2579d566f34feb91b869464c2883d5975c4aeaebb0c031c3e846",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+      "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+      "secoes": [
+       "Rádio proximal: tratamento"
+      ],
+      "blocos": [
+       "radio-proximal-tratamento-bb1be85f"
+      ],
+      "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+      "trechosSha256": "2d828dced89e59c7a2244fd0b7c225af82a5c81a9dfbdf8a90699be0973c2134"
+     }
+    ],
+    "questaoSha256": "ba4b02ec20cd2579d566f34feb91b869464c2883d5975c4aeaebb0c031c3e846",
+    "comentarioSha256": "7ef747418e50768977bb2f88cf4d899c269b488ee3448e3e098f2466a89e5e72"
+   },
    "pendencia": "Angulação aceita na fratura proximal do rádio acima de 10 anos não é tratado nos resumos pediátricos publicados."
   },
   "pediatria-0702": {
@@ -50643,7 +50853,7 @@
    "prova": "TARO",
    "ano": 2006,
    "estado": "pendente-fonte",
-   "motivo": "Subluxação rotatória atlantoaxial de Fielding-Hawkins não é tratado nos resumos pediátricos publicados.",
+   "motivo": "Resumo48 defineFieldingIII>5mm com transverso/alares,mas não descreve diretamente risco NEUROLÓGICO desse grupoPEDIÁTRICO.21novo não desenvolveFielding. Falta associação independente da afirmação inteira;sem gabarito oficial,não atribuirprovavel por completar o risco de memória. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -50651,7 +50861,7 @@
     "rockwoodcriancas10-06-sindrome-compartimental"
    ],
    "questaoSha256": "8ca5685288bcc264e1d4bf8e90cf991265c4058d7d556acecd895fb6444567a9",
-   "pendencia": "Subluxação rotatória atlantoaxial de Fielding-Hawkins não é tratado nos resumos pediátricos publicados."
+   "pendencia": "Resumo48 defineFieldingIII>5mm com transverso/alares,mas não descreve diretamente risco NEUROLÓGICO desse grupoPEDIÁTRICO.21novo não desenvolveFielding. Falta associação independente da afirmação inteira;sem gabarito oficial,não atribuirprovavel por completar o risco de memória. Sem selo."
   },
   "pediatria-0836": {
    "tema": "pediatria",

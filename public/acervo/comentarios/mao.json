@@ -15885,18 +15885,44 @@
   "conferido": false
  },
  "mao-1050": {
-  "conceito": "**As fraturas diafisárias dos ossos do antebraço na criança têm pico na pré-adolescência e adolescência**, por volta dos 12 a 14 anos (em meninos, frequentemente ligado a esportes), enquanto as fraturas metafisárias distais do rádio predominam um pouco antes e são as mais comuns no geral.\n\n**Aceitação de desvio após redução fechada (aproximada):**\n\n| Idade | Angulação | Rotação | Translação |\n|---|---|---|---|\n| Até 9 anos | Até 15 graus | Até 45 graus | Completa aceitável |\n| 9 anos ou mais | Até 10 graus | Até 30 graus | |\n\nO remodelamento é maior quanto mais nova a criança e quanto mais perto da fise (distal). A rotação não remodela, e a perda da pronossupinação é a principal preocupação.\n\n**Tratamento cirúrgico:** fixação intramedular elástica (hastes de titânio) é o padrão nas fraturas instáveis ou irredutíveis; placas em adolescentes maiores ou fraturas cominutivas.",
-  "correta": "**Entre 12 e 14 anos.** É a faixa de pico das fraturas diafisárias do antebraço na criança e no adolescente.",
+  "conceito": "O gabarito oficial situa o pico entre **12 e 14 anos**, alternativa D. O resumo do Rockwood and Wilkins, **9ª edição, capítulo 9**, descreve uma faixa **mais ampla, de 12 a 16 anos**. A letra da banca é preservada, mas o intervalo do material consultado não deve ser silenciosamente reduzido.\n\nA diáfise do antebraço é a terceira fratura mais comum na infância na fonte, atrás do rádio distal e da supracondiliana. O risco cresce nos dois sexos até 11 ou 12 anos; depois cai nas meninas e sobe nos meninos. Assim, a distribuição não é uniforme em toda a infância.\n\nA idade também tem efeito terapêutico: crianças mais velhas remodelam menos, e traços mais proximais costumam ocorrer em pacientes maiores e ser mais difíceis de tratar. Esse é um motivo para diferenciar a **diáfise** da metáfise distal, sem transportar a epidemiologia de uma para a outra.\n\n**Na prova: ** registrar 12–14 para esta oficial e 12–16 como a faixa descrita no resumo. Nenhum desses intervalos transforma idade isolada em indicação de cirurgia.",
+  "correta": "Alternativa D. É a faixa registrada pela banca, contida no intervalo mais amplo de 12 a 16 anos informado pelo resumo. A diferença entre os intervalos fica explícita, sem mudar o gabarito nem afirmar equivalência exata.",
   "incorretas": {
-   "A": "Entre 5 e 7 anos há muitas fraturas do antebraço, mas o pico das diafisárias é mais tardio.",
-   "B": "Entre 8 e 10 anos predominam as fraturas metafisárias distais do rádio.",
-   "C": "Entre 10 e 12 anos a incidência está subindo, mas o pico é logo depois."
+   "A": "5 a 7 anos não corresponde ao pico descrito no resumo para a diáfise. Potencial de remodelação maior nessa idade não equivale a maior incidência.",
+   "B": "8 a 10 anos é um grupo frequente em ortopedia pediátrica, mas não o pico diafisário informado. A referência da fonte está na adolescência inicial.",
+   "C": "10 a 12 anos aproxima-se do período em que o risco cresce nos dois sexos, mas não é o intervalo de pico de 12 a 16 anos descrito. A questão pede incidência, não apenas a idade de mudança do padrão por sexo."
   },
   "referencias": [
-   "Waters PM, Skaggs DL, Flynn JM. Rockwood and Wilkins' Fractures in Children. 9ª ed. Wolters Kluwer; 2019."
+   "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: O exame: rotação, nervos e lesões associadas; Limites de angulação e remodelação."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "alerta": "A banca marcou alternativa D (12–14 anos). O resumo do capítulo 9 da 9ª edição descreve pico de 12–16 anos. Conservar o intervalo mais amplo da fonte e o gabarito oficial, sem tratar as duas faixas como idênticas.",
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "wilkins9-09-diafise-antebraco-crianca",
+     "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição (2020)",
+     "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+     "secoes": [
+      "O exame: rotação, nervos e lesões associadas",
+      "Limites de angulação e remodelação"
+     ],
+     "blocos": [
+      "o-exame-rotacao-nervos-e-lesoes-associadas-447f5f27",
+      "limites-de-angulacao-e-remodelacao-cd21842f"
+     ],
+     "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+     "trechosSha256": "91d67a1864b0527bc34abea982317bc1f0b65428c44108a565abe9d5399f1ac8"
+    }
+   ],
+   "questaoSha256": "67ed82632bd700feb9c68e88b77dbaf93ab2d391cb4da0ed707c83101efbd342",
+   "comentarioSha256": "33f8e5d82c0bec800a461f5206f04ab26cbb9a90a8dfe98a08e744be795b7bb5"
+  }
  },
  "mao-1051": {
   "conceito": "**Doença de Dupuytren e a classificação de Tubiana.** A doença de Dupuytren é uma **fibromatose da fáscia palmar e digital**: miofibroblastos proliferam e depositam colágeno tipo III, formando **nódulos** e depois **cordas** que contraem e puxam os dedos em flexão. Acomete mais homens de ascendência norte-europeia acima de 50 anos; associa-se a diabetes, alcoolismo, tabagismo, epilepsia e trauma. Afeta sobretudo o anular e o mínimo.\n\n**Classificação de Tubiana.** Gradua a gravidade em cada raio pela **soma dos déficits de extensão** das articulações (metacarpofalângica, interfalângica proximal e distal).\n\n| Estágio | Soma do déficit de extensão |\n|---|---|\n| N | Nódulo, sem contratura |\n| 1 | 0 a 45 graus |\n| 2 | 45 a 90 graus |\n| **3** | **90 a 135 graus** |\n| 4 | Mais de 135 graus |\n\n**Significado clínico do estágio 3.** A contratura já é importante: a mão não apoia espalmada na mesa (**teste de Hueston** positivo), atrapalha pegar objetos e colocar a mão no bolso. Nesse nível, a correção da **interfalângica proximal** é difícil, porque a cápsula e a placa volar se retraem secundariamente, e a recidiva após qualquer tratamento é mais frequente.\n\n**Indicações de tratamento.** Contratura da MF acima de cerca de 30 graus, qualquer contratura progressiva da IFP (cerca de 15 a 20 graus) ou Hueston positivo.\n\n**Opções.**\n- **Fasciotomia percutânea com agulha**: menos invasiva, recidiva maior.\n- **Colagenase** do *Clostridium histolyticum* injetada na corda, seguida de manipulação (ensaio de Hurst e colaboradores).\n- **Fasciectomia limitada** (padrão), ou dermofasciectomia com enxerto nas recidivas e diáteses agressivas.\n\n> Tubiana soma os déficits de extensão do raio: 90 a 135 graus é o estágio 3.",
@@ -17334,19 +17360,42 @@
   "conferido": false
  },
  "mao-1125": {
-  "conceito": "**Os ossos do carpo ossificam em uma sequência previsível, no sentido anti-horário quando se olha a mão direita em PA, começando pelo capitato.** Saber essa ordem ajuda a não confundir um núcleo ainda ausente com lesão, e é usado na estimativa da idade óssea.\n\n### Sequência de ossificação (idades aproximadas)\n\n| Ordem | Osso | Idade |\n|---|---|---|\n| 1 | Capitato | 1 a 3 meses |\n| 2 | Hamato | 2 a 4 meses |\n| 3 | Piramidal | Cerca de 2 a 3 anos |\n| 4 | Semilunar | Cerca de 3 a 4 anos |\n| 5 | Trapézio | Cerca de 4 a 5 anos |\n| 6 | Trapezoide | Cerca de 4 a 6 anos |\n| 7 | Escafoide | Cerca de 5 a 6 anos |\n| 8 | **Pisiforme** | **O último**; geralmente entre 8 e 12 anos (mais cedo nas meninas) |\n\nUm mnemônico: o capitato e o hamato no primeiro ano, depois \"gira\" pelo piramidal, semilunar, trapézio, trapezoide, escafoide e termina no pisiforme (que é sesamoide, dentro do flexor ulnar do carpo).\n\nA banca adotou a faixa de 6 a 8 anos para o pisiforme; muitas referências citam idades um pouco maiores (até 10 a 12 anos), mas o ponto central é que **o pisiforme é o último**.\n\n### Por que importa\n\n- em crianças, ossos ainda cartilaginosos não aparecem na radiografia; o escafoide, por exemplo, só ossifica por volta dos 5 a 6 anos, e por isso suas fraturas são raras antes dos 10 anos;\n- coalizões e ossos acessórios (os styloideum, os centrale) podem confundir.",
-  "correta": "**Pisiforme.** É o último osso do carpo a ossificar; a banca considerou a faixa de 6 a 8 anos.",
+  "conceito": "O último centro do carpo listado é o **pisiforme**, portanto a letra oficial é a **alternativa C**. Há diferença na idade: o resumo informa **9 a 10 anos**, enquanto a opção oferece 6 a 8 anos. Preservar a banca exige expor essa diferença, sem ensinar a idade da opção como se fosse a consultada (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nA sequência resumida começa com **capitato e hamato**, segue por piramidal, semilunar, escafoide, trapézio/trapezoide e termina no pisiforme. A idade de um centro depende da referência usada; este comentário documenta a do resumo, não inventa uma média para conciliar números diferentes.\n\nO escafoide aparece em torno do 5º ano e ossifica de **distal para proximal**. O capítulo lembra a possibilidade de falso aspecto de Terry–Thomas no carpo imaturo. Conhecer a sequência ajuda a não transformar cartilagem ainda não ossificada em ausência óssea patológica ou alargamento traumático por si só.\n\n**Na prova: ** pisiforme é o elemento que distingue a resposta, com a ressalva etária no alerta. Não trocar pelo escafoide apenas porque sua ossificação é importante no diagnóstico de fraturas.",
+  "correta": "Alternativa C é a oficial por identificar o pisiforme como último. A faixa 6 a 8 anos da opção diverge dos 9 a 10 anos do resumo; essa parte não é confirmada pela fonte consultada.",
   "incorretas": {
-   "A": "O escafoide ossifica antes do pisiforme, por volta dos 5 a 6 anos.",
-   "B": "O hamato é um dos primeiros a ossificar, nos primeiros meses de vida.",
-   "D": "O semilunar ossifica por volta dos 3 a 4 anos."
+   "A": "O escafoide não é o último na sequência do resumo: aparece por volta do 5º ano, antes do pisiforme. A faixa oferecida não muda essa ordem.",
+   "B": "Hamato está entre os primeiros centros, com referência de 4 meses no resumo. Não é o último osso do carpo a ossificar.",
+   "D": "Semilunar aparece por volta do 4º ano na fonte, antes de outros centros e do pisiforme. A alternativa erra o osso final, independentemente de sua faixa etária."
   },
   "referencias": [
-   "Greulich WW, Pyle SI. Radiographic Atlas of Skeletal Development of the Hand and Wrist. 2ª ed. Stanford University Press; 1959.",
-   "Waters PM, Skaggs DL, Flynn JM. Rockwood and Wilkins' Fractures in Children. 9ª ed. Wolters Kluwer; 2019."
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "alerta": "A banca marcou alternativa C (pisiforme, 6–8 anos). O resumo sustenta pisiforme por último, mas informa 9–10 anos. Idade divergente mantida explícita; gabarito oficial preservado.",
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-08-mao-carpo",
+     "titulo": "Fraturas e luxações da mão e do carpo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+     "secoes": [
+      "Anatomia, exame e remodelação"
+     ],
+     "blocos": [
+      "anatomia-exame-e-remodelacao-06a7a2e4"
+     ],
+     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+     "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+    }
+   ],
+   "questaoSha256": "280b70b400a685e977dd13de7210835e62dc2cda745f1463d31d713ac7fecd13",
+   "comentarioSha256": "dfd67d98074a61c3dcf5990905bf6ddf6148bc7a3a3329f71ec6ddc9ae1ab2d0"
+  }
  },
  "mao-1126": {
   "conceito": "**Os Guias da AMA (American Medical Association) para avaliação de incapacidade atribuem um peso a cada dedo na função da mão.** É a base das perícias e de muitas tabelas de indenização.\n\n### Valores da AMA\n\n| Dedo | Contribuição para a função da mão |\n|---|---|\n| Polegar | **40%** |\n| **Indicador** | **20%** |\n| Médio | 20% |\n| Anular | 10% |\n| Mínimo | 10% |\n\nA mão, por sua vez, representa **90% do membro superior**, e o membro superior representa 60% da pessoa inteira.\n\n### Como a amputação é convertida\n\n- dentro de cada dedo, a perda é proporcional ao nível: amputação na IFD vale cerca de 45% (no dedo longo) a 50% (no polegar, na IF) da função do dedo; na IFP (ou MF do polegar) cerca de 80% (dedo longo); na MF, 100% do dedo;\n- perdas de sensibilidade também são graduadas (perda total de sensibilidade de um dedo vale cerca de metade da amputação).\n\n### Na prática clínica\n\nOs números mostram por que o **polegar** é a prioridade absoluta na mão mutilada (40%) e por que, em amputações múltiplas, preservar ou reconstruir um polegar e um dedo que se oponha a ele é o objetivo central (transferência do segundo dedo do pé, policização, alongamento).",

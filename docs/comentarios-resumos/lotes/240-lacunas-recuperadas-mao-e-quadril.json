@@ -1,0 +1,202 @@
+{
+  "pediatria-0522": {
+    "questaoSha256": "09c7f7b5f150155b13a7cbe97644ed3c8e14d5ddd908e2a3aab623409158f1bc",
+    "comentarioAnteriorSha256": "778cd28b8b2ba3c313d354d8869acdd2f0cefc8858194fa3988e0bb64ad850b1",
+    "comentario": {
+      "conceito": "O gabarito oficial marca **alternativa A**, preservada, mas a classificação descrita no resumo identifica o equivalente do Bennett como **tipo D: Salter–Harris III ou IV**. O **tipo A é metafisário**. Essa divergência precisa permanecer explícita para não ensinar uma classificação errada (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nA diferença central é o **comprometimento articular**: o padrão D é o Bennett infantil, no qual o resumo descreve fios através da carpometacarpal. O padrão A é uma fratura metafisária, com tolerância angular de 20° a 30° na fonte, e não o equivalente articular perguntado.\n\nPara interpretar os nomes: em Salter–Harris **II**, o traço segue a fise e sai pela metáfise; em **III**, sai pela epífise até a articulação; em **IV**, atravessa metáfise, fise e epífise. Essa diferença entre um padrão fisário-metafisário e um padrão que alcança a articulação explica a separação dos grupos.\n\nO **tipo B** é Salter–Harris II com fragmento medial; o **C** é o padrão inverso, para o qual o capítulo descreve redução aberta por periósteo. Reconhecer esses grupos permite comparar cada opção sem confundir a letra da resposta com a letra da classificação.\n\n**Na prova: ** para esta oficial, guardar o registro da banca na alternativa A; para a classificação do resumo, ligar Bennett a tipo D. O comentário não altera o gabarito nem transforma os dois tipos em sinônimos.",
+      "correta": "Alternativa A é a registrada pela banca. Há divergência: ela oferece tipo A, que o resumo define como metafisário; pela descrição consultada, o equivalente de Bennett é tipo D, apresentado na alternativa D. A manutenção da letra oficial é documental, não uma confirmação da equivalência anatômica.",
+      "incorretas": {
+        "B": "Tipo B é Salter–Harris II com fragmento medial, no padrão habitual descrito. Não é a categoria articular III/IV identificada como Bennett infantil.",
+        "C": "Tipo C é o inverso do padrão B, descrito como Salter–Harris II com fragmento medial. O capítulo aponta o periósteo como razão para abrir esse padrão. A distinção que responde à pergunta é o grupo fisário-metafisário II versus o grupo articular III/IV do tipo D.",
+        "D": "Esta opção coincide com a classificação do resumo: tipo D, Salter–Harris III ou IV. Ela não foi a letra oficial registrada, mas é a equivalência bibliográfica sustentada. O alerta preserva essa diferença sem chamar a descrição correta da fonte de erro médico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Polegar e metacarpais.",
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: Os tipos de SALTER-HARRIS. Apenas definição dos trajetos de Salter–Harris,sem transportar frequência ou conduta do fêmur ao polegar."
+      ],
+      "conferido": false,
+      "alerta": "Divergência: a banca marcou alternativa A (tipo A). O resumo do capítulo 8 define tipo A como metafisário e tipo D (Salter–Harris III/IV) como equivalente de Bennett, correspondente à alternativa D. Gabarito oficial preservado; não ensinar A e D como equivalentes."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Polegar e metacarpais"
+        ],
+        "blocos": [
+          "polegar-e-metacarpais-4fd4e5e3"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "3e3e62b84c839325e42e5c4d217c221984dfe4d8e0b4407e6fffb2ec8658056b"
+      },
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "Os tipos de SALTER-HARRIS"
+        ],
+        "blocos": [
+          "os-tipos-de-salter-harris-77cf0c10"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "9e78b4575705fb226ddc46fa81a11541db107ccc2edab5f4a492462da1bd668a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0609": {
+    "questaoSha256": "2e647e62f69b539990098f7446d7d191f89d17374a3169e7839338ef49f09e67",
+    "comentarioAnteriorSha256": "5327edb0bdfdb6364ff20342707f9fafe3ded9a2061b77aa734ff24a967615ce",
+    "comentario": {
+      "conceito": "A Salter–Harris III da base da falange proximal do polegar corresponde à **avulsão do ligamento colateral ulnar**, com o ligamento preso ao fragmento do **canto ulnar**. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nNo esqueleto imaturo, a fise pode falhar antes do ligamento. O resumo diferencia os colaterais metacarpofalângicos, que vão **de epífise a epífise**, dos interfalângicos, que cruzam a fise. Isso ajuda a entender a ocorrência de um fragmento epifisário articular na avulsão.\n\nA **lesão de Stener** coloca o ligamento fora da aponeurose do adutor e indica cirurgia no resumo. Já a fratura sem desvio admite gesso por 4 a 6 semanas. Identificar o colateral no fragmento não autoriza chamar toda lesão de Stener nem operar automaticamente todo pequeno desvio sem avaliar o padrão.\n\n**Na prova: ** avulsão do canto ulnar com Salter–Harris III aponta para colateral ulnar. Distinguir o ligamento avulsionado da aponeurose que pode bloquear sua posição normal.",
+      "correta": "Alternativa B. O resumo identifica o colateral ulnar no fragmento do canto ulnar da base proximal. É o padrão ósseo do polegar do esquiador no imaturo.",
+      "incorretas": {
+        "A": "A placa volar integra a caixa estabilizadora descrita para as articulações, mas não é a estrutura atribuída ao fragmento ulnar desta lesão. O capítulo identifica o colateral ulnar na avulsão perguntada.",
+        "C": "O adutor aparece como referência da aponeurose na lesão de Stener, não como tendão que explica o fragmento da Salter–Harris III descrita. Confundir obstáculo anatômico com estrutura avulsionada troca a resposta.",
+        "D": "A fonte não atribui esse fragmento ao flexor curto. O padrão definido é o colateral ulnar preso à epífise, e não uma avulsão tendínea flexora."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Polegar e metacarpais; Anatomia, exame e remodelação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Polegar e metacarpais",
+          "Anatomia, exame e remodelação"
+        ],
+        "blocos": [
+          "polegar-e-metacarpais-db3ac9cf",
+          "anatomia-exame-e-remodelacao-bc27de74"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "54f2ad2a7728fcaeb47bf77f0094025fde0d8e8f7207fc0c820cb5bad8145926"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0644": {
+    "questaoSha256": "bb982d735743fa8c3b992f94a9ff110dfbfdf0a6820bd4382b1e77449e0a5dfa",
+    "comentarioAnteriorSha256": "d416478c5f9fd1cc64fb2e1e08e3160403c8daea230d115fa34fd0c9ea68538b",
+    "comentario": {
+      "conceito": "O **colo** é a localização mais frequente de fratura metacarpal na criança, especialmente no mínimo e anular, segundo o resumo. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nA frequência não torna toda fratura do colo simples. O capítulo orienta avaliar **déficit de extensão, rotação e cabeça na palma** como motivos para redução. Menos de 10° de rotação já podem fazer os dedos cruzarem, e rotação não deve ser julgada apenas numa imagem aparentemente alinhada.\n\nA tolerância angular depende do raio e da mobilidade carpometacarpal: o resumo cita indicador/médio 10° a 20° e anular/mínimo 30° a 40°. A localização mais frequente é uma informação epidemiológica; esses limites são informação de tratamento e não devem ser confundidos com uma regra única para todas as fraturas.\n\n**Na prova: ** responder colo para o local predominante, mas manter exame de alinhamento e função. Base do quinto e base do polegar têm padrões próprios, que não passam a ser os mais comuns por receberem nomes conhecidos.",
+      "correta": "Alternativa A. O colo é explicitamente o local mais frequente no resumo, com destaque para os metacarpais ulnares. Essa afirmação é independente dos critérios para aceitar ou reduzir uma fratura específica.",
+      "incorretas": {
+        "B": "A base tem padrões importantes, como Bennett reverso do mínimo e os tipos da base do polegar, mas não é o local mais frequente indicado. Importância técnica e frequência não são sinônimos.",
+        "C": "A diáfise não é a localização predominante informada para os metacarpais. Não transferir a epidemiologia de falanges ou antebraço para responder ao osso perguntado.",
+        "D": "A cabeça implica atenção articular, mas o capítulo destaca o colo como local mais frequente. Gravidade potencial do comprometimento articular não demonstra maior incidência."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Polegar e metacarpais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Polegar e metacarpais"
+        ],
+        "blocos": [
+          "polegar-e-metacarpais-74e087f7",
+          "polegar-e-metacarpais-4fd4e5e3"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "2144f04bdb0b499b207ad698b8f8d8466ef18bbda6c1c2237036c70a360a2b9b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0675": {
+    "questaoSha256": "9f3d486851caa90f439da25dd5267d1f3f7292da44f9357ac6a40e3c5d20ccf4",
+    "comentarioAnteriorSha256": "6054a1babc88fd4100d16423bf7646c9d38ad44bd25bfdb2224af9d1d792322b",
+    "comentario": {
+      "conceito": "A **osteonecrose da cabeça femoral** é a complicação **mais grave e frequente**, cerca de 30% no resumo. A alternativa D corresponde a essa comparação (Rockwood and Wilkins, 10ª edição, capítulo 24).\n\nO risco aumenta com desvio, idade e padrão da fratura. Na classificação de Delbet, a necrose na metanálise citada é 38%, 28%, 18% e 5% nos tipos I–IV; no IB com luxação, a fonte relata risco próximo de 100%. Não usar a média geral como previsão igual para toda fratura proximal.\n\nO fator modificável mais importante é a **qualidade da redução**. A fonte discute possível vantagem do tratamento até 24 horas, com estudos contrários; capsulotomia não reduziu necrose. Sinais podem surgir em média aos 11 meses e até 2 anos, justificando seguimento além da consolidação inicial.\n\n**Na prova: ** distinguir a complicação mais frequente das outras sequelas relevantes. Coxa vara, fechamento fisário e pseudartrose têm mecanismos e consequências próprios; uma fratura consolidada não prova que a cabeça permanecerá vascularizada.",
+      "correta": "Alternativa D. É a complicação nomeada como mais frequente e grave pelo resumo. A resposta deve manter a variação por tipo, desvio e idade, sem universalizar um percentual.",
+      "incorretas": {
+        "A": "Coxa vara ocorre em 20% a 30% na fonte e tem relação com alinhamento e tratamento; é importante, mas não é a complicação que o texto nomeia como a mais frequente na comparação geral.",
+        "B": "Pseudartrose é citada em 7%, sobretudo nos tipos II/III e com redução não anatômica. Não supera a osteonecrose no resumo.",
+        "C": "Fechamento fisário aparece em cerca de 28%, associado a implante atravessando a fise ou necrose. A fonte ainda define a necrose como a mais frequente; os grupos podem se sobrepor, não devem ter seus percentuais somados."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Necrose; Coxa vara, fise e pseudartrose; Classificação de DELBET."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Necrose",
+          "Coxa vara, fise e pseudartrose",
+          "Classificação de DELBET"
+        ],
+        "blocos": [
+          "necrose-42bbef0d",
+          "coxa-vara-fise-e-pseudartrose-17944458",
+          "classificacao-de-delbet-29878cdc"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "1a1ce382ed78569531889490bc13e741001ddeae653b1a889828b540d4068c5d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0701": {
+    "questaoSha256": "ba4b02ec20cd2579d566f34feb91b869464c2883d5975c4aeaebb0c031c3e846",
+    "comentarioAnteriorSha256": "6ffc754aabb567093488511844765c8ab575240753821b5d39b259a3b7e25425",
+    "comentario": {
+      "conceito": "Para crianças **acima de 10 anos**, o resumo utiliza **menos de 30°** como critério angular de tratamento não operatório do rádio proximal. A banca oferece 30° na **alternativa B**, o limiar correspondente, que deve ser lido com a precisão de que o texto usa **menor que**, não aceitação irrestrita do valor exato (Rockwood and Wilkins, 10ª edição, capítulo 11).\n\nA idade muda a tolerância: abaixo de 10 anos, o resumo admite angulação menor que 45°. Aplicar o limite das crianças menores ao grupo mais velho ignora a distinção de remodelação que a questão testa.\n\nO ângulo sozinho não decide: o capítulo exige **translação menor que 2 mm, rotação completa e cabeça alinhada ao capítulo**. A translação é mal tolerada pelo efeito came. Uma fratura abaixo do limiar que bloqueie rotação não atende automaticamente aos critérios conservadores.\n\n**Na prova: ** associar idade e limite, sem transformar uma pergunta angular em um protocolo inteiro. A escolha de tratamento precisa incluir função, alinhamento e lesões associadas.",
+      "correta": "Alternativa B. 30° é o limiar etário apresentado entre as opções, e corresponde à letra oficial. A redação da fonte é menos de 30° para maiores de 10 anos, com os demais critérios conservadores também atendidos.",
+      "incorretas": {
+        "A": "15° não é o limiar geral informado para o grupo acima de 10 anos. Pode representar um valor dentro da faixa, mas não responde ao limite etário perguntado.",
+        "C": "45° é a referência do grupo abaixo de 10 anos no resumo. Não deve ser transportada para a criança maior da questão.",
+        "D": "60° ultrapassa os limites não operatórios descritos para ambos os grupos. A opção não corresponde à tolerância etária apresentada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
+      ],
+      "conferido": false,
+      "alerta": "A banca usa 30° como limite na alternativa B; o resumo escreve angulação MENOR que 30° acima de 10 anos. Não ensinar aceitação automática do valor exato nem dispensar os demais critérios conservadores."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+        "secoes": [
+          "Rádio proximal: tratamento"
+        ],
+        "blocos": [
+          "radio-proximal-tratamento-bb1be85f"
+        ],
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+        "trechosSha256": "2d828dced89e59c7a2244fd0b7c225af82a5c81a9dfbdf8a90699be0973c2134"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

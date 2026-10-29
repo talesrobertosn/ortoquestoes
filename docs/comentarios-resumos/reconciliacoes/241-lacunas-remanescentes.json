@@ -1,0 +1,118 @@
+[
+  {
+    "id": "coluna-0179",
+    "questaoSha256": "ab1e6277e05d222908953162459acc650166da9d9f37249f8bdf34a5bb09541f",
+    "comentarioAnteriorSha256": "d6759d85064fd903555502475ab9df08457b76c52501451485a5bc6e96c5b31b",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-22-coluna-toracolombar",
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+      },
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo22novo defineSCIWORA e prognóstico,mas não compara frequência de indicação de IMOBILIZAÇÃO versus descompressão/artrodese nos traumas cervicais de BAIXA ENERGIA.21não fornece protocoloSCIWORA. Falta manejo independente do grupo específico;sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "SCIWORA não é tratada nos resumos de coluna cervical e toracolombar do adulto.",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "coluna-0299",
+    "questaoSha256": "af171c93a43e383edcd01bab8ccb9867260281b3eb6853fcbe78ad8ca2e72fc2",
+    "comentarioAnteriorSha256": "179734e546accc7c32ed7ff36e2ad0b5d1a596e3752c1f038c83c06079b2ad73",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo21novo descreve sincondrose doATLAS,mas não informa a idade de fusão entre ARCOS ANTERIOR E POSTERIOR.7–9anos no texto é sincondroseDENTOCENTRAL,outra estrutura. Falta cronologia independente do atlas;sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) não trata das sincondroses do atlas na criança nem da idade de fusão dos arcos. Precisa de fonte de coluna pediátrica.",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "coluna-0300",
+    "questaoSha256": "c7b1d8f5ece92c7d1d95a1777651eb27ee07bc706011db91536f0ba250462f09",
+    "comentarioAnteriorSha256": "f96ccb13f6cd28ed2da86408e2596b33ab26a2edf20e100a1fa359fdcfb83a53",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-22-coluna-toracolombar",
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo22novo define ausência deRX/TCe possívelRM,mas não define grausFRANKEL C/Epara comparar as quatro alternativas. Não equiparar classificação neurológica apenas a um déficit genérico. Falta graduação independente completa;sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "SCIWORA (definição e Frankel) não é tratada nos resumos de coluna publicados.",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "coluna-0301",
+    "questaoSha256": "de247c7c6075930f82dac3fcfdf09cd9d1ed3569110f9b4c54e97cabaecf2cce",
+    "comentarioAnteriorSha256": "a212d23448d53c2a0eed1ba4a2678f2af91b822c6a26aa7f58fb1427de218769",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-22-coluna-toracolombar",
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo22novo descreve MAIOR GRAVIDADE abaixo de8anos,mas alerta não fornecer FREQUÊNCIA etária ou SEGMENTO PREDOMINANTE. Gravidade não prova maior incidência cervical em crianças versus adolescentes. Falta distribuição independente;sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "SCIWORA (idade e segmento mais frequentes) não é tratada nos resumos de coluna publicados.",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "ombro-cotovelo-0512",
+    "questaoSha256": "e4099971e52532e74f6f96e078ccfc331d3da8f7e6e36baacdcd351c245d85a9",
+    "comentarioAnteriorSha256": "705aab30c076bfbe8346896c2a650ea74524bde1f2a46af41d1fbc48fc29c91e",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-12-monteggia",
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo12novo trata redução fechada deMonteggia e anular interposto ou crônico,mas não define indicação geral de RECONSTRUÇÃO na LUXAÇÃO AGUDA ISOLADA da cabeça;reparo/reposição não são automaticamente enxerto reconstrutivo. Falta protocolo independente para julgar a afirmação genérica;sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "Reconstrução do ligamento anular na luxação aguda da cabeça do rádio não é discutida no resumo do capítulo 15 (que só cita a secção parcial do anular na pronação dolorosa crônica).",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "ombro-cotovelo-0529",
+    "questaoSha256": "0333b6e919da826fa2f9f3c95d86d99c4c2fb78c16dd32ff9321d456d149eecb",
+    "comentarioAnteriorSha256": "587436b11f9c72f7fe5f33b91c02cef32ff134d57f462a1a5c07de79878876f4",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-12-monteggia",
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo12novo cobre posterior,bilateralidade possível,cabeçaCONVEXA e capítuloHIPOPLÁSICO,mas não descreve OVOIDE como equivalente nem necessidade/frequência de cirurgia naINFÂNCIA. Falta morfologia completa e história natural para comparar todas as opções;sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "Luxação congênita da cabeça do rádio não é tratada no resumo do capítulo 15; falta resumo de deformidades congênitas do cotovelo.",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0047",
+    "questaoSha256": "a5cecaa06fbd3aca9ba8673cf4c86f569b97257630465e5861396aec0ab3152b",
+    "comentarioAnteriorSha256": "edf85009af90add6a550e2a60c14379ee55f3d56f3aa41ae5fe6634c2f8c6f66",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-12-monteggia",
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo12novo descrevePOSTERIOR,mas não distribui subtipoPOSTEROLATERAL versusPOSTEROMEDIAL exigidos pela dupla daC/D. Falta direção combinada independente;posterior isolado não decide a questão inteira. Sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados.",
+    "semGabaritoOficial": false
+  }
+]
