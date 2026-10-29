@@ -1,21 +1,38 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from 'react'
 import { Icone } from '../componentes/Icone'
 import { gravar, ler } from '../estado/armazenamento'
+import { usarConta } from '../conta/ContextoConta'
+import { avisoVistoNaConta, marcarAvisoNaConta } from '../conta/avisosVistos'
 
 /**
  * Tutorial da Biblioteca e do leitor (27/10/2026), no molde do "Como usar" do Atlas: um cartão pixel
  * com passo, pontos e Voltar/Próximo. Cada passo acende o controle de verdade na tela (`alvo`, um
  * seletor CSS); passo sem o controle à vista (ex.: sem "Continuar estudando") é pulado.
- * Abre sozinho na primeira visita e depois só pelos botões "Como usar a Biblioteca" e "Ajuda".
+ * Abre sozinho uma vez por conta e depois só pelos botões "Como usar a Biblioteca" e "Ajuda"
+ * (Tales, 29/10/2026: voltava toda vez). Conta como visto ao abrir, não só ao fechar, e o "já vi"
+ * vai também para a conta (avisosVistos), valendo em qualquer aparelho.
  */
 export interface PassoGuia { alvo?: string; titulo: string; texto: string }
 export type GuiaId = 'biblioteca' | 'leitor'
+type Meta = Record<string, unknown> | undefined | null
 
 const CHAVE = 'resumos:guias'
-export const guiaVisto = (g: GuiaId) => !!ler<Partial<Record<GuiaId, number>>>(CHAVE, {})[g]
-export const marcarGuiaVisto = (g: GuiaId) => gravar(CHAVE, { ...ler<Partial<Record<GuiaId, number>>>(CHAVE, {}), [g]: Date.now() })
+const AVISO = { biblioteca: 'guia-biblioteca', leitor: 'guia-leitor' } as const
+export const guiaVisto = (g: GuiaId, meta?: Meta) => !!ler<Partial<Record<GuiaId, number>>>(CHAVE, {})[g] || avisoVistoNaConta(meta, AVISO[g])
+export const marcarGuiaVisto = (g: GuiaId, meta?: Meta) => {
+  gravar(CHAVE, { ...ler<Partial<Record<GuiaId, number>>>(CHAVE, {}), [g]: Date.now() })
+  if (meta) marcarAvisoNaConta(meta, AVISO[g])
+}
 /** Abre sozinho só para gente de verdade: nos testes automáticos (webdriver) o cartão não cobre a tela. */
-export const deveAbrirGuia = (g: GuiaId) => !guiaVisto(g) && !(typeof navigator !== 'undefined' && navigator.webdriver)
+export const deveAbrirGuia = (g: GuiaId, meta?: Meta) => !guiaVisto(g, meta) && !(typeof navigator !== 'undefined' && navigator.webdriver)
+
+/** Quem já viu o tutorial neste aparelho antes de o "já vi" ir para a conta leva a marca para a conta. */
+export function usarGuiaNaConta(g: GuiaId) {
+  const { sessao } = usarConta()
+  const meta = sessao?.user.user_metadata
+  useEffect(() => { if (meta && guiaVisto(g)) marcarAvisoNaConta(meta, AVISO[g]) }, [!!meta]) // eslint-disable-line react-hooks/exhaustive-deps
+  return meta
+}
 
 interface Caixa { top: number; left: number; width: number; height: number }
 
@@ -28,7 +45,11 @@ export function GuiaTour({ id, titulo, passos, rolar = true, aoFechar }: { id: G
   const p = lista[i]
   const ultimo = i === lista.length - 1
 
-  const fechar = useCallback(() => { marcarGuiaVisto(id); aoFechar() }, [id, aoFechar])
+  const { sessao } = usarConta()
+  const meta = sessao?.user.user_metadata
+  // Visto ao abrir: quem sai da página sem fechar o cartão não o recebe de novo.
+  useEffect(() => { marcarGuiaVisto(id, meta) }, [id]) // eslint-disable-line react-hooks/exhaustive-deps
+  const fechar = useCallback(() => { marcarGuiaVisto(id, meta); aoFechar() }, [id, meta, aoFechar])
 
   const medir = useCallback(() => {
     const el = p?.alvo ? document.querySelector<HTMLElement>(p.alvo) : null
