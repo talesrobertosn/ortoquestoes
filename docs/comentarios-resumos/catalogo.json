@@ -3,6 +3,7 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
+  "pendente": 5,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 879,
   "revisada": 1998
@@ -390,16 +391,18 @@
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
    "titulo": "Avaliação do cotovelo da criança traumatizada",
-   "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+   "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
    "estados": {
+    "pendente": 3,
     "pendente-fonte": 2,
     "revisada": 25
    }
   },
   "rockwoodcriancas9-13-supracondiliana": {
    "titulo": "Fratura supracondiliana do úmero na criança",
-   "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+   "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
    "estados": {
+    "pendente": 2,
     "pendente-fonte": 5,
     "revisada": 54
    }
@@ -16374,8 +16377,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Lesões nervosas: frequência, exame e conduta"
       ],
@@ -16383,7 +16386,7 @@
        "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31",
        "lesoes-nervosas-frequencia-exame-e-conduta-b0eb7804"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "2d057fe73d969dce2f98fddbdedad1cb907b8ae3bbd8b9b712bd7e8df4ec7acb"
      }
     ],
@@ -37703,42 +37706,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "68d84669af0bd21ef8473231b69d834722b7a2cb95450a3e373b8098acb65bbe",
-    "comentarioSha256": "6f44f3f53520a1d1bf7475ffb5d03ea2ecef68b7c9d364daf98f81c014909018"
+    "comentarioSha256": "b2c6ce2b82e628de010fe520843f601ada9a6d0e882d57e503713d390399bd9f"
    }
   },
   "pediatria-0379": {
@@ -38732,27 +38735,27 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "As lesões que a radiografia esconde"
       ],
       "blocos": [
        "as-lesoes-que-a-radiografia-esconde-7e866d45",
-       "as-lesoes-que-a-radiografia-esconde-218c010c",
-       "as-lesoes-que-a-radiografia-esconde-1920433c",
+       "as-lesoes-que-a-radiografia-esconde-190e531e",
+       "as-lesoes-que-a-radiografia-esconde-e31f36bb",
        "as-lesoes-que-a-radiografia-esconde-74fb220d",
        "as-lesoes-que-a-radiografia-esconde-0a04df77",
        "as-lesoes-que-a-radiografia-esconde-a01f2923",
        "as-lesoes-que-a-radiografia-esconde-6ff422b5",
        "as-lesoes-que-a-radiografia-esconde-1542b255"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "afac64e119d43028186b44bed45430b34d373ad51a454f8bc8985e3c6453c82c"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "7be1d5e6c648092ceb779c302efc0310c4b60f91005203c7f9cb0ed76dd2b08d"
      }
     ],
     "questaoSha256": "b8c482dce7df333b485a143b02caa03831855f1462a067ce60fe658fbfdff8f5",
-    "comentarioSha256": "42fb883ed1906b87cf08bacf91093e7aef2504b686bc2bc2d10d2d6ef1b448b3"
+    "comentarioSha256": "7cb4d1f3b4f32ef6b5768059f018fce2b947d11d6ee70c669fc2310172c1c74a"
    }
   },
   "pediatria-0526": {
@@ -39125,8 +39128,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Cúbito varo"
       ],
@@ -39144,12 +39147,12 @@
        "cubito-varo-afa22f7d",
        "cubito-varo-89dd8dce"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
      }
     ],
     "questaoSha256": "7426581c09c4646b4b3f5e162ff257b24a12174d6ff4b005606787a69d0f8361",
-    "comentarioSha256": "f1ac073beee6389a9663aabb6d3ac6e2eaa06e30a9a4dade511b29ef27e25f61"
+    "comentarioSha256": "65c18a20e4e5e54f1e29fa72f48fc4752bb9dcee6fe7b71690eccb3d4c746bc1"
    }
   },
   "pediatria-0533": {
@@ -41310,8 +41313,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Lesões nervosas: frequência, exame e conduta"
       ],
@@ -41319,12 +41322,12 @@
        "lesoes-nervosas-frequencia-exame-e-conduta-c85b81bf",
        "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "33d68b8289729a2af1bea316f59547b687da56f48de70517be45d3bb734c5c3e"
      }
     ],
     "questaoSha256": "2b76cc82dd9e1cb65be568b517e45b3eb958e9b2204c1017722e0ce7a2a93d64",
-    "comentarioSha256": "c0b34eecb607fd1560aebc81285ccc94c6b24b9a78974073fc446d22058b59ee"
+    "comentarioSha256": "aac4ec7c2d2c9378d9e966ccfbf74d071967d0df5aa135d1d91f6c9c8bfcfd62"
    }
   },
   "pediatria-0587": {
@@ -41604,8 +41607,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Redução fechada: técnica, periósteo e rotação"
       ],
@@ -41627,12 +41630,12 @@
        "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
        "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "7310d74b47cbdd9b3bd47348c34e3b9aa9cde7e05e6b484e697e188f1fd50553"
      }
     ],
     "questaoSha256": "3291018b687a9b6d7bceb2bdd5ff4aa8c7e4ba92211f17795480374a4f15c3bc",
-    "comentarioSha256": "fa66c55736dd3cae3b530b532287e0b5c124cb20730b43095f6a33f365cf463b"
+    "comentarioSha256": "18a7eb1023d8659ec82e2e5c2d5d2263b1e508883ce77d61cc8f14de00606c7a"
    }
   },
   "pediatria-0593": {
@@ -42023,8 +42026,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco"
       ],
@@ -42041,12 +42044,12 @@
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
      }
     ],
     "questaoSha256": "d3af28861ec77510ba169ea45dc6f73a306ced0feb8d1646a6e9a9187010ba7f",
-    "comentarioSha256": "56ad83cb98fe538e5b4daa13dd6650de6d9e3127ff6f6164cc1db97508039db2"
+    "comentarioSha256": "9c5e2625b0b00c1a1bdea5c29349675a0509fc88cc8c606ed3064d23f9063bc8"
    }
   },
   "pediatria-0601": {
@@ -42751,8 +42754,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Tratamento: tipo, momento e o fim do gesso em flexão",
        "O que remodela"
@@ -42766,7 +42769,7 @@
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
-       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-fd83ec62",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
@@ -42779,12 +42782,12 @@
        "o-que-remodela-acc7c25f",
        "o-que-remodela-10858a70"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "bb55e67512c17decd60f4fd8c380420328161f217df5b8b01f5c9bfb5f6a77dd"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "01332a0ff4a15336fd64410f91050206b4cf4167bfd944b707a91815370c0632"
      }
     ],
     "questaoSha256": "dc0a09d3671e4950e4a32a304c97caec999eaa0203eb62bcdf34f506133fec9a",
-    "comentarioSha256": "3bb824efed4b1ff07671d67ae27a9ef4bff56417e72871e34d92d3585530d6d4"
+    "comentarioSha256": "b6d9e6204d33adad24c8c0367a0b6b2af0d5223f5af35710969ecd3cf5d99503"
    }
   },
   "pediatria-0615": {
@@ -43965,8 +43968,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco"
       ],
@@ -43983,15 +43986,15 @@
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
      },
      {
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Lesões nervosas: frequência, exame e conduta"
       ],
@@ -44010,12 +44013,12 @@
        "lesoes-nervosas-frequencia-exame-e-conduta-c053f0be",
        "lesoes-nervosas-frequencia-exame-e-conduta-7fcb874d"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "a5799bfc95a6e2d9f14e9d2cd6bf2028186ab8d5afe0cf14ff2036401ac91768"
      }
     ],
     "questaoSha256": "bf493962cadad639c508fbb4e67e5e882dbdf25c359e1908db619e1b1acaf50f",
-    "comentarioSha256": "e8009dda506ca019a93fa51c34fcfb856928e1594afc865b9f1ed773edc88c89"
+    "comentarioSha256": "ade0b29ba8305ba39de2c16d9319be82280f27998b8c0302981c4d9d983ae412"
    }
   },
   "pediatria-0640": {
@@ -44451,7 +44454,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "os-centros-de-ossificacao-76c80b66",
+     "b": "os-centros-de-ossificacao-e2d8f1a5",
      "s": "Os centros de ossificação",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "central"
@@ -44487,42 +44490,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "2021bb7758f9f1c70874ba94c6444b84bbbe36b15f11f256074eb0763b305e0b",
-    "comentarioSha256": "2a23141732c659ac2ba5b91cd40e4ec4e9905e422726e23d1ad41c6ce36a0b15"
+    "comentarioSha256": "471f1279d5c9c1b8e4f4ce09185514711377691eb63495dc6ca15049d0fafa1d"
    }
   },
   "pediatria-0649": {
@@ -44733,8 +44736,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Cúbito varo"
       ],
@@ -44752,15 +44755,15 @@
        "cubito-varo-afa22f7d",
        "cubito-varo-89dd8dce"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
      },
      {
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Outras complicações"
       ],
@@ -44773,12 +44776,12 @@
        "outras-complicacoes-0f62bca9",
        "outras-complicacoes-484f2e26"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "c39b8fba6f4bbbb6c381998db40db94c07f732577d62deaa019e5ab1dd9ff97c"
      }
     ],
     "questaoSha256": "17c1e2ac643401942a5ae3bc9e3dc3cd737033a7aad53edb2e14081abcbf4155",
-    "comentarioSha256": "4bc0a11b2c9dcc17ce1a05a614587ed5689a9927601fa0714c7f067d37206e6b"
+    "comentarioSha256": "ee418f48c8147aee00e69b5d48299bff447f1102bb412b210212625d72a069a6"
    }
   },
   "pediatria-0654": {
@@ -45438,8 +45441,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Tratamento: tipo, momento e o fim do gesso em flexão",
        "Fixação: fios laterais, fio medial e cuidados depois",
@@ -45454,7 +45457,7 @@
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
-       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-fd83ec62",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
@@ -45482,7 +45485,7 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
@@ -45506,12 +45509,12 @@
        "sindrome-compartimental-156d424b",
        "sindrome-compartimental-c2479823"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "db3c03e7a4238fe936cbfae45a30a115bb4db12c730c157e276c78205f16363d"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "c47b8e7aa0d13b98f0a56bf690ae59a30d9af1e311696147d03f1a3dedf9f43a"
      }
     ],
     "questaoSha256": "f813c1881b5b2934c5e255e6b74938522710a18c5776a7c54c976755ea5aafdd",
-    "comentarioSha256": "e8e9593f29c93d9c05c031e0af1145533bbefed54f4e0e62a46a8458b46c1bd7"
+    "comentarioSha256": "54c7ec5b65df41d261baab251af77117633f670a00a015913f23cabd9b234994"
    }
   },
   "pediatria-0667": {
@@ -45616,42 +45619,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "0c74ccd30c13c341b08b01714d03f6a4f9690151e9e7b1a0c248dfc70026d241",
-    "comentarioSha256": "211aa30ff720994463e74b892a90c07ec0b6b1c5bf96704e82a959edcbfdc49c"
+    "comentarioSha256": "22ef941ed97dd8ece719cabd6e81bd08302dace7b5d1b5efcaf274c2ae019ac3"
    }
   },
   "pediatria-0670": {
@@ -45915,7 +45918,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "os-centros-de-ossificacao-76c80b66",
+     "b": "os-centros-de-ossificacao-e2d8f1a5",
      "s": "Os centros de ossificação",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "central"
@@ -45951,42 +45954,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "fe995add0c66ebdd53178cfcff2157a89b8c92c4c33c42f208e692d6d64494fd",
-    "comentarioSha256": "8b0ec14aee8241b2f79d5f4b3412d43d7ed64d6c9fcdfccf06e3f9fc1eae0341"
+    "comentarioSha256": "ab48454fd6095e790fcd8e973e57d8e2b840785610d13ee01ed929a46289e488"
    }
   },
   "pediatria-0685": {
@@ -46288,8 +46291,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco"
       ],
@@ -46306,12 +46309,12 @@
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
      }
     ],
     "questaoSha256": "6005b5d190c9248d1bfc2afb2bd5944248cd5504ad3552479c618000894f2578",
-    "comentarioSha256": "930eb6fb56228658c68ae222eed7218b3c217d3702429559f3b7a31e8d00e106"
+    "comentarioSha256": "80335c5e833c130b9122a7e00a7ff634a093e5a6052d648bd7a26d4979fb077e"
    }
   },
   "pediatria-0692": {
@@ -47982,8 +47985,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "O que remodela"
       ],
@@ -47991,12 +47994,12 @@
        "o-que-remodela-acc7c25f",
        "o-que-remodela-10858a70"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "982d327235260ca0dfc85e3b3dd9f55a31b3467646224687a5906d8d8835d09b"
      }
     ],
     "questaoSha256": "f2988ca47c19ad38e22722a0ed604a65e0464fb0bd29b71ea50085570c359bc0",
-    "comentarioSha256": "79cc6e4e398ff6d4664fc2d3d8bb5062f0c765304e6cd3e00d5b7db9264d414c"
+    "comentarioSha256": "8ed6bd81c3566e2471215f2a1339b2c83b17c4a8f6e217695dc7ad9e0acdc762"
    }
   },
   "pediatria-0721": {
@@ -48333,8 +48336,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "A mão sem pulso"
       ],
@@ -48359,12 +48362,12 @@
        "a-mao-sem-pulso-4ec07ae0",
        "a-mao-sem-pulso-e9a4fa79"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "1b9a116f9b7bf11e61eb7efcda534533cfbb93f580b94c5ef90323156133b04b"
      }
     ],
     "questaoSha256": "bd08a6cee49a94bfcf160dd130b35336627f2c2095a978f49d353c964204ca05",
-    "comentarioSha256": "8212015e47b039a2d2336ba34b14a3e4300f21d7dc707f1ebffb2e91b14ddfdd"
+    "comentarioSha256": "5df15a64d49e5dddaf256256b22da627548b0c44f4e3a722dc6e87f5b9eaf79e"
    }
   },
   "pediatria-0733": {
@@ -48528,7 +48531,7 @@
     },
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "linhas-e-angulos-da-radiografia-67b73396",
+     "b": "linhas-e-angulos-da-radiografia-5c01f228",
      "s": "Linhas e ângulos da radiografia",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "relacionada"
@@ -48549,46 +48552,46 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Linhas e ângulos da radiografia"
       ],
       "blocos": [
        "linhas-e-angulos-da-radiografia-3676b995",
        "linhas-e-angulos-da-radiografia-4f46cd3b",
-       "linhas-e-angulos-da-radiografia-e1c833db",
+       "linhas-e-angulos-da-radiografia-32a4af4e",
        "linhas-e-angulos-da-radiografia-8cbf1fde",
        "linhas-e-angulos-da-radiografia-31fa609b",
        "linhas-e-angulos-da-radiografia-f0727290",
        "linhas-e-angulos-da-radiografia-de8dc999",
        "linhas-e-angulos-da-radiografia-7cbbcae9",
        "linhas-e-angulos-da-radiografia-fd82cc21",
-       "linhas-e-angulos-da-radiografia-b86846bc",
+       "linhas-e-angulos-da-radiografia-a67e643e",
        "linhas-e-angulos-da-radiografia-f6d6e1e9",
        "linhas-e-angulos-da-radiografia-a8d7b42a",
-       "linhas-e-angulos-da-radiografia-1aa3e6c6",
-       "linhas-e-angulos-da-radiografia-9df8ac29",
-       "linhas-e-angulos-da-radiografia-568bffbc",
-       "linhas-e-angulos-da-radiografia-aaf24f22",
-       "linhas-e-angulos-da-radiografia-67b73396",
+       "linhas-e-angulos-da-radiografia-3a1006ec",
+       "linhas-e-angulos-da-radiografia-5c603728",
+       "linhas-e-angulos-da-radiografia-fdc49095",
+       "linhas-e-angulos-da-radiografia-ff1c88c4",
+       "linhas-e-angulos-da-radiografia-5c01f228",
        "linhas-e-angulos-da-radiografia-e70a341c",
-       "linhas-e-angulos-da-radiografia-875d3977",
+       "linhas-e-angulos-da-radiografia-396a6c19",
        "linhas-e-angulos-da-radiografia-a652b775",
        "linhas-e-angulos-da-radiografia-09f90a66",
        "linhas-e-angulos-da-radiografia-b665eac5",
-       "linhas-e-angulos-da-radiografia-d294bff7",
+       "linhas-e-angulos-da-radiografia-b66c9e60",
        "linhas-e-angulos-da-radiografia-22e1822a",
        "linhas-e-angulos-da-radiografia-adbebc39",
        "linhas-e-angulos-da-radiografia-8a71aa7e",
-       "linhas-e-angulos-da-radiografia-35e5f6e9"
+       "linhas-e-angulos-da-radiografia-556f2b82"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "d2cca0f0936679591d590b06f0740a2e78cd41ab783eaff464f66aff46e7cb8e"
      }
     ],
     "questaoSha256": "6b4f7726126acd2c970ea5321025f65899fcb970cb80b1078d0750e191fb524f",
-    "comentarioSha256": "149413ef7c64471fe06775327f4e67cde3bf305919fbadcf183fda5318105c5e"
+    "comentarioSha256": "f6b653b75edbee7dc98c0658234d2ba88882e6278f02c8ac8b0290aa1ba6316a"
    }
   },
   "pediatria-0740": {
@@ -48950,8 +48953,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Fratura supracondiliana em flexão"
       ],
@@ -48963,15 +48966,15 @@
        "fratura-supracondiliana-em-flexao-034a15ed",
        "fratura-supracondiliana-em-flexao-d4613b25"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "f7d1388787a15bee0bdb27993732fea7ad386e9ca56b8638df271b0b5127b15e"
      },
      {
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco"
       ],
@@ -48988,12 +48991,12 @@
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
      }
     ],
     "questaoSha256": "ff3ee578a7346576a8a002bd6768220ee80b6663ae12efec3acb5db9bdf358b2",
-    "comentarioSha256": "03564255f3020ed5e722f339beed0ad93a85dcde2b70932398538e14b0f7714c"
+    "comentarioSha256": "a147aadf87a0d824541a667f470f3a8d51d2917342f4f34cae1e0ddb17ca6ceb"
    }
   },
   "pediatria-0752": {
@@ -49483,8 +49486,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "A mão sem pulso"
       ],
@@ -49509,12 +49512,12 @@
        "a-mao-sem-pulso-4ec07ae0",
        "a-mao-sem-pulso-e9a4fa79"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "1b9a116f9b7bf11e61eb7efcda534533cfbb93f580b94c5ef90323156133b04b"
      }
     ],
     "questaoSha256": "5cf74f83872879eefdba8a45fc81061d4c5f53399d7415fb6c5c5bb2e0f19c23",
-    "comentarioSha256": "24a9f775d8008daccce6153099d16c536b21d8bcf6877e1b8adda9d795d6c502"
+    "comentarioSha256": "be54bb43bdb53aee134dbe1c75277d9e8bce8c03aad6f51c72eb21c228524b86"
    }
   },
   "pediatria-0773": {
@@ -51097,7 +51100,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "os-centros-de-ossificacao-76c80b66",
+     "b": "os-centros-de-ossificacao-e2d8f1a5",
      "s": "Os centros de ossificação",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "relacionada"
@@ -51133,42 +51136,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "14c67fcfbb04d17765add924d5dd442ac9b699dddee892977755576ff69968b3",
-    "comentarioSha256": "b3d386f7d65fa46bf9a05296f289e2f1827c60725ada4849048acab3cb6a058b"
+    "comentarioSha256": "3293cd7cb689724fa6b8264c9373fae0ac316ad19b1158b91ca129c8caba23a9"
    }
   },
   "pediatria-0840": {
@@ -51345,8 +51348,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Cúbito varo"
       ],
@@ -51364,12 +51367,12 @@
        "cubito-varo-afa22f7d",
        "cubito-varo-89dd8dce"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
      }
     ],
     "questaoSha256": "a6242dca4cf326ab9ea673961fa803a601d0bf06b377e82fa3bb7d8181c54d9e",
-    "comentarioSha256": "89d588bdfa8a8d28af56b587599e1373477a0e141f5f72dc5cb0a574feaf421b"
+    "comentarioSha256": "7ee734fb17a9b39b94fe7c3cc93da51545106f4dab2f96eb054dd746558ddbaa"
    }
   },
   "pediatria-0844": {
@@ -51758,8 +51761,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco",
        "Síndrome compartimental"
@@ -51789,12 +51792,12 @@
        "sindrome-compartimental-156d424b",
        "sindrome-compartimental-c2479823"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "ef2b948a8158529af0771c3de2ad408684113b0c625f124421904887bc2b5c74"
      }
     ],
     "questaoSha256": "23241158c11d1e50691c7377c5d02ad3767aab9660550d22b8f2f40ee3694e00",
-    "comentarioSha256": "aa379ac9372848b0bf4edd9ef256b1d6250b78bea462b9c44d1a5a4e9118373b"
+    "comentarioSha256": "7e382751c2c641f7f2f78a96c96cf0971249fa5a14c28ac12ccef7873b8a90b2"
    }
   },
   "pediatria-0851": {
@@ -52848,8 +52851,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Redução fechada: técnica, periósteo e rotação"
       ],
@@ -52871,12 +52874,12 @@
        "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
        "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "7310d74b47cbdd9b3bd47348c34e3b9aa9cde7e05e6b484e697e188f1fd50553"
      }
     ],
     "questaoSha256": "05d9fe0b6e50d93edfce90d40c84646d451f887cc3723ca4630508175bdbd1b6",
-    "comentarioSha256": "7b301ce6b312bb557649fe72e888b8c8a25ce37d10a673feaad50720dbbfed00"
+    "comentarioSha256": "a07a39f18abd66b1f85a2490279bf50f3d1b363153bfad8d789d58822a980e76"
    }
   },
   "pediatria-0915": {
@@ -53568,8 +53571,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco",
        "Exame clínico e imagem"
@@ -53601,12 +53604,12 @@
        "exame-clinico-e-imagem-47355d98",
        "exame-clinico-e-imagem-3e2479ab"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "40422be1a9fcddbb3a361c324985f6b282cb562a705b2765e355900d1be57ee3"
      }
     ],
     "questaoSha256": "29d12cf221923893577e50b28549369ee966ff9d75bd76766bb1e125c02a560e",
-    "comentarioSha256": "cf959416757bcf568b5f28dc21f43fc478ceae0776ee991800153daba741e815"
+    "comentarioSha256": "59e11fd50de3da0efb1b2ebc67d8c43cd0dd273ceeb2e35eed648305b9a73d92"
    }
   },
   "pediatria-0932": {
@@ -54562,7 +54565,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "linhas-e-angulos-da-radiografia-67b73396",
+     "b": "linhas-e-angulos-da-radiografia-5c01f228",
      "s": "Linhas e ângulos da radiografia",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "central"
@@ -54602,8 +54605,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco",
        "Exame clínico e imagem",
@@ -54643,7 +54646,7 @@
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
-       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-fd83ec62",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
@@ -54654,12 +54657,12 @@
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-e72363b7",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-abb4bfdb"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "03b9a20aeea25d1c69edf4a7812022e61787b61759d1e1971b50a3130561f94d"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "34570d4a97294f43dd22f422728be5dc2437a51550b54a7ebc3a9827f448808b"
      }
     ],
     "questaoSha256": "efde7391a76bae1d71912677678ac9f56600c9a7f2d25187240f295dd7bcc13a",
-    "comentarioSha256": "6d1b2ea444285ac9530b607332ecbd7db1bfa0af47c3680ccd8ae5aa52e005c5"
+    "comentarioSha256": "0fbd141d33157467796d0695c1f182a88836e76381a3ff07a92966497abf92aa"
    }
   },
   "pediatria-0957": {
@@ -56064,42 +56067,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "2236bf4e6296846831dfb1f2fa634086e48088f8b1e59fe93130c9e5d0c67fc7",
-    "comentarioSha256": "220a44802d8948aaf24220c2f88478dbeeebaac3abfff9797884c30ea471b48b"
+    "comentarioSha256": "a3170d80de7e2d0758d82ef76b8a887fffe92d992f79713c7b91f1e70c4e396b"
    }
   },
   "pediatria-0985": {
@@ -56116,7 +56119,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "os-centros-de-ossificacao-76c80b66",
+     "b": "os-centros-de-ossificacao-e2d8f1a5",
      "s": "Os centros de ossificação",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "treino"
@@ -56134,42 +56137,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "5cebe8306744d3fcb1115fddcdcad1726d1c550df90d96a75ce8ccd738b2fbfb",
-    "comentarioSha256": "fa23420d9a456d6d441c519865abbeebbd84143d126dd033a7300962b36295d4"
+    "comentarioSha256": "252dd7a088d48213905104895511238999f6e6d44f2ea7b1e17080ea395129db"
    }
   },
   "pediatria-0986": {
@@ -56204,42 +56207,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "d6f1d239fa7fdfa18d26e95c405339cef88e9335cabf2f07de416d69a00111ee",
-    "comentarioSha256": "90a97cee78150503d70c52c4c94a47480e931ea47ec3d94ef2b25fd8bf89ef78"
+    "comentarioSha256": "b2dd246caf51070c3df35c6e2a272ecfe6d39a1101a3154d519eaa279664a67c"
    }
   },
   "pediatria-0987": {
@@ -56255,7 +56258,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "linhas-e-angulos-da-radiografia-67b73396",
+     "b": "linhas-e-angulos-da-radiografia-5c01f228",
      "s": "Linhas e ângulos da radiografia",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "treino"
@@ -56273,46 +56276,46 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Linhas e ângulos da radiografia"
       ],
       "blocos": [
        "linhas-e-angulos-da-radiografia-3676b995",
        "linhas-e-angulos-da-radiografia-4f46cd3b",
-       "linhas-e-angulos-da-radiografia-e1c833db",
+       "linhas-e-angulos-da-radiografia-32a4af4e",
        "linhas-e-angulos-da-radiografia-8cbf1fde",
        "linhas-e-angulos-da-radiografia-31fa609b",
        "linhas-e-angulos-da-radiografia-f0727290",
        "linhas-e-angulos-da-radiografia-de8dc999",
        "linhas-e-angulos-da-radiografia-7cbbcae9",
        "linhas-e-angulos-da-radiografia-fd82cc21",
-       "linhas-e-angulos-da-radiografia-b86846bc",
+       "linhas-e-angulos-da-radiografia-a67e643e",
        "linhas-e-angulos-da-radiografia-f6d6e1e9",
        "linhas-e-angulos-da-radiografia-a8d7b42a",
-       "linhas-e-angulos-da-radiografia-1aa3e6c6",
-       "linhas-e-angulos-da-radiografia-9df8ac29",
-       "linhas-e-angulos-da-radiografia-568bffbc",
-       "linhas-e-angulos-da-radiografia-aaf24f22",
-       "linhas-e-angulos-da-radiografia-67b73396",
+       "linhas-e-angulos-da-radiografia-3a1006ec",
+       "linhas-e-angulos-da-radiografia-5c603728",
+       "linhas-e-angulos-da-radiografia-fdc49095",
+       "linhas-e-angulos-da-radiografia-ff1c88c4",
+       "linhas-e-angulos-da-radiografia-5c01f228",
        "linhas-e-angulos-da-radiografia-e70a341c",
-       "linhas-e-angulos-da-radiografia-875d3977",
+       "linhas-e-angulos-da-radiografia-396a6c19",
        "linhas-e-angulos-da-radiografia-a652b775",
        "linhas-e-angulos-da-radiografia-09f90a66",
        "linhas-e-angulos-da-radiografia-b665eac5",
-       "linhas-e-angulos-da-radiografia-d294bff7",
+       "linhas-e-angulos-da-radiografia-b66c9e60",
        "linhas-e-angulos-da-radiografia-22e1822a",
        "linhas-e-angulos-da-radiografia-adbebc39",
        "linhas-e-angulos-da-radiografia-8a71aa7e",
-       "linhas-e-angulos-da-radiografia-35e5f6e9"
+       "linhas-e-angulos-da-radiografia-556f2b82"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "d2cca0f0936679591d590b06f0740a2e78cd41ab783eaff464f66aff46e7cb8e"
      }
     ],
     "questaoSha256": "9719ad7737f816a225626cc2a61afaf706ec387c08f3ac55e718ff2620b52f33",
-    "comentarioSha256": "e9415b6ca11a41f979dcdb9a551f1aabd1865c4fb19e062ecb2722eda01f25bd"
+    "comentarioSha256": "bcfe81df8816ea156b876b4299029baa709e9ef80ff1c23d4b7cfa1700b6b0f5"
    }
   },
   "pediatria-0988": {
@@ -56346,46 +56349,46 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Linhas e ângulos da radiografia"
       ],
       "blocos": [
        "linhas-e-angulos-da-radiografia-3676b995",
        "linhas-e-angulos-da-radiografia-4f46cd3b",
-       "linhas-e-angulos-da-radiografia-e1c833db",
+       "linhas-e-angulos-da-radiografia-32a4af4e",
        "linhas-e-angulos-da-radiografia-8cbf1fde",
        "linhas-e-angulos-da-radiografia-31fa609b",
        "linhas-e-angulos-da-radiografia-f0727290",
        "linhas-e-angulos-da-radiografia-de8dc999",
        "linhas-e-angulos-da-radiografia-7cbbcae9",
        "linhas-e-angulos-da-radiografia-fd82cc21",
-       "linhas-e-angulos-da-radiografia-b86846bc",
+       "linhas-e-angulos-da-radiografia-a67e643e",
        "linhas-e-angulos-da-radiografia-f6d6e1e9",
        "linhas-e-angulos-da-radiografia-a8d7b42a",
-       "linhas-e-angulos-da-radiografia-1aa3e6c6",
-       "linhas-e-angulos-da-radiografia-9df8ac29",
-       "linhas-e-angulos-da-radiografia-568bffbc",
-       "linhas-e-angulos-da-radiografia-aaf24f22",
-       "linhas-e-angulos-da-radiografia-67b73396",
+       "linhas-e-angulos-da-radiografia-3a1006ec",
+       "linhas-e-angulos-da-radiografia-5c603728",
+       "linhas-e-angulos-da-radiografia-fdc49095",
+       "linhas-e-angulos-da-radiografia-ff1c88c4",
+       "linhas-e-angulos-da-radiografia-5c01f228",
        "linhas-e-angulos-da-radiografia-e70a341c",
-       "linhas-e-angulos-da-radiografia-875d3977",
+       "linhas-e-angulos-da-radiografia-396a6c19",
        "linhas-e-angulos-da-radiografia-a652b775",
        "linhas-e-angulos-da-radiografia-09f90a66",
        "linhas-e-angulos-da-radiografia-b665eac5",
-       "linhas-e-angulos-da-radiografia-d294bff7",
+       "linhas-e-angulos-da-radiografia-b66c9e60",
        "linhas-e-angulos-da-radiografia-22e1822a",
        "linhas-e-angulos-da-radiografia-adbebc39",
        "linhas-e-angulos-da-radiografia-8a71aa7e",
-       "linhas-e-angulos-da-radiografia-35e5f6e9"
+       "linhas-e-angulos-da-radiografia-556f2b82"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "d2cca0f0936679591d590b06f0740a2e78cd41ab783eaff464f66aff46e7cb8e"
      }
     ],
     "questaoSha256": "d97b65df9bd70b2a95a0d4ad41c5ba7727fb0d01aa85acb612e295ef769a5f74",
-    "comentarioSha256": "93aae1836c60f9f65015cc1fe8477c7711d4289bc0e82dc030fb38ce25a8cbad"
+    "comentarioSha256": "4d6e1ce9dfa15ca1212941cc276d08f5e83f442e28df652c4327d59189300076"
    }
   },
   "pediatria-0989": {
@@ -56419,46 +56422,46 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Linhas e ângulos da radiografia"
       ],
       "blocos": [
        "linhas-e-angulos-da-radiografia-3676b995",
        "linhas-e-angulos-da-radiografia-4f46cd3b",
-       "linhas-e-angulos-da-radiografia-e1c833db",
+       "linhas-e-angulos-da-radiografia-32a4af4e",
        "linhas-e-angulos-da-radiografia-8cbf1fde",
        "linhas-e-angulos-da-radiografia-31fa609b",
        "linhas-e-angulos-da-radiografia-f0727290",
        "linhas-e-angulos-da-radiografia-de8dc999",
        "linhas-e-angulos-da-radiografia-7cbbcae9",
        "linhas-e-angulos-da-radiografia-fd82cc21",
-       "linhas-e-angulos-da-radiografia-b86846bc",
+       "linhas-e-angulos-da-radiografia-a67e643e",
        "linhas-e-angulos-da-radiografia-f6d6e1e9",
        "linhas-e-angulos-da-radiografia-a8d7b42a",
-       "linhas-e-angulos-da-radiografia-1aa3e6c6",
-       "linhas-e-angulos-da-radiografia-9df8ac29",
-       "linhas-e-angulos-da-radiografia-568bffbc",
-       "linhas-e-angulos-da-radiografia-aaf24f22",
-       "linhas-e-angulos-da-radiografia-67b73396",
+       "linhas-e-angulos-da-radiografia-3a1006ec",
+       "linhas-e-angulos-da-radiografia-5c603728",
+       "linhas-e-angulos-da-radiografia-fdc49095",
+       "linhas-e-angulos-da-radiografia-ff1c88c4",
+       "linhas-e-angulos-da-radiografia-5c01f228",
        "linhas-e-angulos-da-radiografia-e70a341c",
-       "linhas-e-angulos-da-radiografia-875d3977",
+       "linhas-e-angulos-da-radiografia-396a6c19",
        "linhas-e-angulos-da-radiografia-a652b775",
        "linhas-e-angulos-da-radiografia-09f90a66",
        "linhas-e-angulos-da-radiografia-b665eac5",
-       "linhas-e-angulos-da-radiografia-d294bff7",
+       "linhas-e-angulos-da-radiografia-b66c9e60",
        "linhas-e-angulos-da-radiografia-22e1822a",
        "linhas-e-angulos-da-radiografia-adbebc39",
        "linhas-e-angulos-da-radiografia-8a71aa7e",
-       "linhas-e-angulos-da-radiografia-35e5f6e9"
+       "linhas-e-angulos-da-radiografia-556f2b82"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "e491f5b7b9afa8d8a81cfa54ad67ad140a3161607b75615f2632f5a832c4260d"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "d2cca0f0936679591d590b06f0740a2e78cd41ab783eaff464f66aff46e7cb8e"
      }
     ],
     "questaoSha256": "c4326fc8287f12acc960fe1d298a0d75859295d1a0fd7895edc740bc30d32762",
-    "comentarioSha256": "5f3e4fb3b35ff60e899b7468996c59ef1e9a75fab4ddc284ee4090b7d26cdc1c"
+    "comentarioSha256": "0484493c5d9455b2ddefa4c6a2eae50af91ae4e1ecfce0a192be67e2f0b81755"
    }
   },
   "pediatria-0990": {
@@ -56474,7 +56477,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "o-sinal-do-coxim-gorduroso-a0b4b82d",
+     "b": "o-sinal-do-coxim-gorduroso-1cba9917",
      "s": "O sinal do coxim gorduroso",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "treino"
@@ -56492,21 +56495,21 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "O sinal do coxim gorduroso"
       ],
       "blocos": [
        "o-sinal-do-coxim-gorduroso-dd0398cb",
-       "o-sinal-do-coxim-gorduroso-8040da34",
+       "o-sinal-do-coxim-gorduroso-a79470dc",
        "o-sinal-do-coxim-gorduroso-200db2d0",
-       "o-sinal-do-coxim-gorduroso-c78fc6f4",
+       "o-sinal-do-coxim-gorduroso-9719c34f",
        "o-sinal-do-coxim-gorduroso-0544c1f8",
        "o-sinal-do-coxim-gorduroso-b7bb16ad",
        "o-sinal-do-coxim-gorduroso-8a541421",
        "o-sinal-do-coxim-gorduroso-f48bdfda",
-       "o-sinal-do-coxim-gorduroso-0fdec553",
+       "o-sinal-do-coxim-gorduroso-45998c84",
        "o-sinal-do-coxim-gorduroso-f267b75d",
        "o-sinal-do-coxim-gorduroso-83cd049d",
        "o-sinal-do-coxim-gorduroso-13d152db",
@@ -56514,14 +56517,14 @@
        "o-sinal-do-coxim-gorduroso-3a01c1cc",
        "o-sinal-do-coxim-gorduroso-306d1211",
        "o-sinal-do-coxim-gorduroso-a0b4b82d",
-       "o-sinal-do-coxim-gorduroso-ad2f6620"
+       "o-sinal-do-coxim-gorduroso-1a9e5a3a"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "d349c2170783692ba22b8445e480899c24d14b0b5913768cd5ad4dd5f012d6ef"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "2500b57655f76b67f8dc2cbe5a25c65b0b7a131ad3ab1ca6b7f9e6a698b8b688"
      }
     ],
     "questaoSha256": "3be6400fc901c76ac79b31d63bf10f561deca18194af6938e87293ec867c8625",
-    "comentarioSha256": "793d942bf8cce77529c6edd2febacfb0a6adc33bf7a83b150ff591dd03c8e9fc"
+    "comentarioSha256": "73873a51b99b098519ef3bc4d8d55cf965a7d000d6bc058727d91fc5f87642ed"
    }
   },
   "pediatria-0991": {
@@ -56537,7 +56540,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "o-sinal-do-coxim-gorduroso-a0b4b82d",
+     "b": "o-sinal-do-coxim-gorduroso-1cba9917",
      "s": "O sinal do coxim gorduroso",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "treino"
@@ -56563,21 +56566,21 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "O sinal do coxim gorduroso"
       ],
       "blocos": [
        "o-sinal-do-coxim-gorduroso-dd0398cb",
-       "o-sinal-do-coxim-gorduroso-8040da34",
+       "o-sinal-do-coxim-gorduroso-a79470dc",
        "o-sinal-do-coxim-gorduroso-200db2d0",
-       "o-sinal-do-coxim-gorduroso-c78fc6f4",
+       "o-sinal-do-coxim-gorduroso-9719c34f",
        "o-sinal-do-coxim-gorduroso-0544c1f8",
        "o-sinal-do-coxim-gorduroso-b7bb16ad",
        "o-sinal-do-coxim-gorduroso-8a541421",
        "o-sinal-do-coxim-gorduroso-f48bdfda",
-       "o-sinal-do-coxim-gorduroso-0fdec553",
+       "o-sinal-do-coxim-gorduroso-45998c84",
        "o-sinal-do-coxim-gorduroso-f267b75d",
        "o-sinal-do-coxim-gorduroso-83cd049d",
        "o-sinal-do-coxim-gorduroso-13d152db",
@@ -56585,14 +56588,14 @@
        "o-sinal-do-coxim-gorduroso-3a01c1cc",
        "o-sinal-do-coxim-gorduroso-306d1211",
        "o-sinal-do-coxim-gorduroso-a0b4b82d",
-       "o-sinal-do-coxim-gorduroso-ad2f6620"
+       "o-sinal-do-coxim-gorduroso-1a9e5a3a"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "d349c2170783692ba22b8445e480899c24d14b0b5913768cd5ad4dd5f012d6ef"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "2500b57655f76b67f8dc2cbe5a25c65b0b7a131ad3ab1ca6b7f9e6a698b8b688"
      }
     ],
     "questaoSha256": "617ebedb8ef3d90a10a73b577062c03d6299d2c6cabd4095f922bbec1736e505",
-    "comentarioSha256": "a4f9f020bdb1fdafd77c3185e7d0ad19866a6c171f8c419d7be13df913b3da89"
+    "comentarioSha256": "bfbb9fb9fbb419bf39f83ff6ce353426a03ec912c3937d92ef23431cfee4780a"
    }
   },
   "pediatria-0992": {
@@ -56635,27 +56638,27 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "As lesões que a radiografia esconde"
       ],
       "blocos": [
        "as-lesoes-que-a-radiografia-esconde-7e866d45",
-       "as-lesoes-que-a-radiografia-esconde-218c010c",
-       "as-lesoes-que-a-radiografia-esconde-1920433c",
+       "as-lesoes-que-a-radiografia-esconde-190e531e",
+       "as-lesoes-que-a-radiografia-esconde-e31f36bb",
        "as-lesoes-que-a-radiografia-esconde-74fb220d",
        "as-lesoes-que-a-radiografia-esconde-0a04df77",
        "as-lesoes-que-a-radiografia-esconde-a01f2923",
        "as-lesoes-que-a-radiografia-esconde-6ff422b5",
        "as-lesoes-que-a-radiografia-esconde-1542b255"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "afac64e119d43028186b44bed45430b34d373ad51a454f8bc8985e3c6453c82c"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "7be1d5e6c648092ceb779c302efc0310c4b60f91005203c7f9cb0ed76dd2b08d"
      }
     ],
     "questaoSha256": "db52d2bc83ec4a9d9c82d64a8efe9db76a0ca6e003f957d38cccbbe909e855a8",
-    "comentarioSha256": "840ed487374d09325342227137b53f2dd3d9a98dcf5ad21e970f6cff02a9eb4a"
+    "comentarioSha256": "89af15334a359c0fbb9745d847a484cb932ca3cc11a57cd43cc015e0beacbbad"
    }
   },
   "pediatria-0993": {
@@ -56697,31 +56700,31 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "A irrigação do úmero distal"
       ],
       "blocos": [
-       "a-irrigacao-do-umero-distal-1352c1b3",
+       "a-irrigacao-do-umero-distal-3d66d085",
        "a-irrigacao-do-umero-distal-130360a3",
        "a-irrigacao-do-umero-distal-202717ee",
-       "a-irrigacao-do-umero-distal-17f9d1d8",
+       "a-irrigacao-do-umero-distal-cae5e1df",
        "a-irrigacao-do-umero-distal-a8056aad",
-       "a-irrigacao-do-umero-distal-ace611db",
+       "a-irrigacao-do-umero-distal-1f8bf6c7",
        "a-irrigacao-do-umero-distal-9607f0e9",
-       "a-irrigacao-do-umero-distal-869597bd",
+       "a-irrigacao-do-umero-distal-e64d4e39",
        "a-irrigacao-do-umero-distal-c494d1ed",
        "a-irrigacao-do-umero-distal-ee409116",
        "a-irrigacao-do-umero-distal-cba1e0a2",
        "a-irrigacao-do-umero-distal-59ab2b7b"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "ad5dccf535d05ea169874ba6bdca60b11546c297ea87ddb911a945df81e0dd2c"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "1394de9f87969f4c3cd63c9eb1a7d96b7ba7a1f72a26992b453443ed7ea13948"
      }
     ],
     "questaoSha256": "4e5cf28b8190f53dd0631f62e3b6e4b985ce6ea82735fb38a499e5bbcea7c7b7",
-    "comentarioSha256": "d67616e4486ed2ee1b74d7bfc7c0a970d58140ef42d993e959444a01b1fd28e0"
+    "comentarioSha256": "a8dd6e4dab97e9921d9a27079803b4d292c4c7a3b158c7cb615b26b087080c9e"
    }
   },
   "pediatria-0994": {
@@ -56737,7 +56740,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
-     "b": "os-centros-de-ossificacao-a722505d",
+     "b": "os-centros-de-ossificacao-da03b0cc",
      "s": "Os centros de ossificação",
      "t": "Avaliação do cotovelo da criança traumatizada",
      "p": "treino"
@@ -56763,42 +56766,42 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "Os centros de ossificação"
       ],
       "blocos": [
        "os-centros-de-ossificacao-4ca3d3d8",
        "os-centros-de-ossificacao-c5dc87aa",
-       "os-centros-de-ossificacao-6ba9367e",
+       "os-centros-de-ossificacao-b726bb02",
        "os-centros-de-ossificacao-4700c9c1",
        "os-centros-de-ossificacao-907a48a5",
-       "os-centros-de-ossificacao-28bbb1d9",
+       "os-centros-de-ossificacao-bc602db3",
        "os-centros-de-ossificacao-3b934ed5",
        "os-centros-de-ossificacao-b7e37565",
        "os-centros-de-ossificacao-7c16325b",
        "os-centros-de-ossificacao-4645b9cb",
-       "os-centros-de-ossificacao-72057f73",
-       "os-centros-de-ossificacao-e0d10148",
+       "os-centros-de-ossificacao-230b09c2",
+       "os-centros-de-ossificacao-54a61f02",
        "os-centros-de-ossificacao-dc5297fc",
-       "os-centros-de-ossificacao-917077a5",
-       "os-centros-de-ossificacao-e90d1e9b",
-       "os-centros-de-ossificacao-a722505d",
+       "os-centros-de-ossificacao-9da048fd",
+       "os-centros-de-ossificacao-f5e46f58",
+       "os-centros-de-ossificacao-da03b0cc",
        "os-centros-de-ossificacao-afcdc396",
        "os-centros-de-ossificacao-dc6c33c7",
-       "os-centros-de-ossificacao-76c80b66",
-       "os-centros-de-ossificacao-aebf51f5",
+       "os-centros-de-ossificacao-e2d8f1a5",
+       "os-centros-de-ossificacao-b94e5fba",
        "os-centros-de-ossificacao-00113b71",
        "os-centros-de-ossificacao-87c6852a",
        "os-centros-de-ossificacao-79e17682"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "2633ff79f6d4178d2c779bd1cb6d028d7ab8c8e4c51a0ffed15beeba116351ca"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "da6e3d84af562af695fb000d49b4d110701d1a5096f760b21a7d3cb75f8ea2b8"
      }
     ],
     "questaoSha256": "a0a1a25b1c131c1504241d1f724857c4d4319986a296c63626ba7b5404d51a14",
-    "comentarioSha256": "1ff7a9b5c89f609c1e38c1f6d9805cf9b5beae8387d0fea8601ea547896b17ca"
+    "comentarioSha256": "6bb47dcafd9ff7b589770f387fd209c89df3e1048bdbd68fc4940f5a58ce9ab2"
    }
   },
   "pediatria-0995": {
@@ -56832,8 +56835,8 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "O exame clínico e quem precisa de radiografia"
       ],
@@ -56848,7 +56851,7 @@
        "o-exame-clinico-e-quem-precisa-de-radiografia-671573c9",
        "o-exame-clinico-e-quem-precisa-de-radiografia-31e02f8b"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
       "trechosSha256": "ca1818f4e21d9701af8f79bf145c526f0ea489c86fad74d5582e744c3b9d48b2"
      },
      {
@@ -56903,7 +56906,7 @@
      }
     ],
     "questaoSha256": "95f0214a2dea34c68be7f181bed60fac8b3dff63a83f67c004454635b00347dc",
-    "comentarioSha256": "5fbcf747c5a3ddf91cd4b1245389ae9253df86d65f334912940a91d978245041"
+    "comentarioSha256": "2c38f7d6d58002df7496d3c73a06105899ccd3305ab082f14a84de9c63987738"
    }
   },
   "pediatria-0996": {
@@ -58897,30 +58900,30 @@
       "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
       "titulo": "Avaliação do cotovelo da criança traumatizada",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 13 · Evaluation of the Injured Pediatric Elbow",
       "secoes": [
        "As lesões que a radiografia esconde",
        "O sinal do coxim gorduroso"
       ],
       "blocos": [
        "as-lesoes-que-a-radiografia-esconde-7e866d45",
-       "as-lesoes-que-a-radiografia-esconde-218c010c",
-       "as-lesoes-que-a-radiografia-esconde-1920433c",
+       "as-lesoes-que-a-radiografia-esconde-190e531e",
+       "as-lesoes-que-a-radiografia-esconde-e31f36bb",
        "as-lesoes-que-a-radiografia-esconde-74fb220d",
        "as-lesoes-que-a-radiografia-esconde-0a04df77",
        "as-lesoes-que-a-radiografia-esconde-a01f2923",
        "as-lesoes-que-a-radiografia-esconde-6ff422b5",
        "as-lesoes-que-a-radiografia-esconde-1542b255",
        "o-sinal-do-coxim-gorduroso-dd0398cb",
-       "o-sinal-do-coxim-gorduroso-8040da34",
+       "o-sinal-do-coxim-gorduroso-a79470dc",
        "o-sinal-do-coxim-gorduroso-200db2d0",
-       "o-sinal-do-coxim-gorduroso-c78fc6f4",
+       "o-sinal-do-coxim-gorduroso-9719c34f",
        "o-sinal-do-coxim-gorduroso-0544c1f8",
        "o-sinal-do-coxim-gorduroso-b7bb16ad",
        "o-sinal-do-coxim-gorduroso-8a541421",
        "o-sinal-do-coxim-gorduroso-f48bdfda",
-       "o-sinal-do-coxim-gorduroso-0fdec553",
+       "o-sinal-do-coxim-gorduroso-45998c84",
        "o-sinal-do-coxim-gorduroso-f267b75d",
        "o-sinal-do-coxim-gorduroso-83cd049d",
        "o-sinal-do-coxim-gorduroso-13d152db",
@@ -58928,14 +58931,14 @@
        "o-sinal-do-coxim-gorduroso-3a01c1cc",
        "o-sinal-do-coxim-gorduroso-306d1211",
        "o-sinal-do-coxim-gorduroso-a0b4b82d",
-       "o-sinal-do-coxim-gorduroso-ad2f6620"
+       "o-sinal-do-coxim-gorduroso-1a9e5a3a"
       ],
-      "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
-      "trechosSha256": "c738cfc56f118d5464d0eba8e5bf69e3254e9732d66a3961ff420a828458bb69"
+      "sha256": "52e631146fb2d0a9d59a67db67df9159c6d46ddee674ff058529ddaad2166acc",
+      "trechosSha256": "e8957820567aba3c3535e3021325109d889149bedbc8b10089ff495d4c4da420"
      }
     ],
     "questaoSha256": "f5ddf56896ebcb1a982255fea29bb1aeaa7db8eab07540329bd71f8fd8291ad5",
-    "comentarioSha256": "b6e2b9af0b87bfb56adf3ab668c2e018bf6f0e8cca65b663d4fab6bb74ce1e04"
+    "comentarioSha256": "ce0ae0fd67355b6c4ae3b6dfe2d19bf22b4b9f4aad35f743dd7d4f2bb9ecac42"
    }
   },
   "pediatria-1023": {
@@ -59649,8 +59652,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco"
       ],
@@ -59667,15 +59670,15 @@
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
        "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
      },
      {
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Fixação: fios laterais, fio medial e cuidados depois"
       ],
@@ -59698,7 +59701,7 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
@@ -59710,12 +59713,12 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "c779980fcb3f047bb3a7497909be3b4fde92b287b14322a96fb004bfa16f89f2"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "c6940a96c2a2b7a6513eda3150127c922f3c918294efa12972d91b16775683f1"
      }
     ],
     "questaoSha256": "265f0c67d607687f2dda02d3bfec25831b7cb462fc72e27a91fc91a73c7a3887",
-    "comentarioSha256": "3760fafa4bd0f9df51a6922fb733321723b72725c297fa08303b15d3fc69d917"
+    "comentarioSha256": "a3183af50171dbc8bfc97dd32681c353247efe26f5cfb85a66a76ef4a8be0dc9"
    }
   },
   "pediatria-1033": {
@@ -59749,8 +59752,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Redução fechada: técnica, periósteo e rotação"
       ],
@@ -59772,12 +59775,12 @@
        "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
        "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "7310d74b47cbdd9b3bd47348c34e3b9aa9cde7e05e6b484e697e188f1fd50553"
      }
     ],
     "questaoSha256": "68954df7647f923d017bc6f43c12eb5d25cd3b94242cf307a5d0813d44c929da",
-    "comentarioSha256": "2beabc39f02a285edb730fbc30f81da6b302a2a10cdaadae9011e887dd1b16f1"
+    "comentarioSha256": "ff0049d9565c4979dbfc47c96969d77674af8ac78c9ff858f8d8e3f702912c20"
    }
   },
   "pediatria-1034": {
@@ -59811,8 +59814,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Exame clínico e imagem",
        "Cúbito varo"
@@ -59845,12 +59848,12 @@
        "cubito-varo-afa22f7d",
        "cubito-varo-89dd8dce"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "1bcce6a3d0e119079cf6c145df9e644db3f47fe380cce8e617c92f614ec11508"
      }
     ],
     "questaoSha256": "522721bf32fe6e68e63c3f6bdb305555b19fe4d4e3813e7f673f66afbd8de632",
-    "comentarioSha256": "6e29c43b03d517c6c077715090c77192321685b367d654f68b3518dac95f2f06"
+    "comentarioSha256": "6c6e24ebf523ba1fcbb086896191ad5528b002f6020364faf2fea047435cd93b"
    }
   },
   "pediatria-1035": {
@@ -59885,8 +59888,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Tratamento: tipo, momento e o fim do gesso em flexão",
        "O que remodela"
@@ -59900,7 +59903,7 @@
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
-       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-fd83ec62",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
@@ -59913,12 +59916,12 @@
        "o-que-remodela-acc7c25f",
        "o-que-remodela-10858a70"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "bb55e67512c17decd60f4fd8c380420328161f217df5b8b01f5c9bfb5f6a77dd"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "01332a0ff4a15336fd64410f91050206b4cf4167bfd944b707a91815370c0632"
      }
     ],
     "questaoSha256": "41ae637c4a6c999ae8f3d2fea0bc81a22413738dedbc9a9951e98c53947a0357",
-    "comentarioSha256": "b56d7173f0e8f1faa71c8921cad202b7f94d464d426b9371a9f3a9123a977c61"
+    "comentarioSha256": "6ad2c908e3e8cfbb5807feb886ea3f67611659a48b53e6abb5b013a7095bec0d"
    }
   },
   "pediatria-1036": {
@@ -59952,8 +59955,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "A mão sem pulso",
        "Síndrome compartimental",
@@ -60020,12 +60023,12 @@
        "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
        "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "2dfd5b155cd84b48de6be09af1f71198e6ba68db5aa7922a42e11b1f3daf6972"
      }
     ],
     "questaoSha256": "0c20fc781821b763b7e5639f2fb0943e3b6716f69162a1321901f9708ebf20f4",
-    "comentarioSha256": "8066ef5f3b2f71fcac438797423e1a870bad58192e3a6e0996859786e83b7426"
+    "comentarioSha256": "cd7add7b004e2569f825712e375f27a0eb5675ea02ea2f34361c7def477db208"
    }
   },
   "pediatria-1037": {
@@ -60059,8 +60062,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco",
        "A mão sem pulso",
@@ -60110,12 +60113,12 @@
        "sindrome-compartimental-156d424b",
        "sindrome-compartimental-c2479823"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "2f81cbcc5e694ec74c9db5f07462ac1ab58c5aee4a0d9b21ee03ef8bb54f2e01"
      }
     ],
     "questaoSha256": "7fd06f23220fe81afd7ba95379a54b70d62c0a81bd0b4771d0441ef459f89824",
-    "comentarioSha256": "f6e35e573c29366c6c2d3941930f96b69ff17c1ec2fc54808b172e0a9ae65c09"
+    "comentarioSha256": "8117de5d65d345c3b78e78baea8940f6971858cb61c1d5a6463ea317dd6b13ac"
    }
   },
   "pediatria-1038": {
@@ -60157,8 +60160,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Exame clínico e imagem",
        "Síndrome compartimental"
@@ -60191,12 +60194,12 @@
        "sindrome-compartimental-156d424b",
        "sindrome-compartimental-c2479823"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "665b1946d87f461ef1064e30786cfbaa25962c103f66ce4e1295085055cb8013"
      }
     ],
     "questaoSha256": "398521a595b1402f054d27ee23ee534a916ae4b0d0431dca1925eaa842668862",
-    "comentarioSha256": "04c452c2be40bf27a9014598bd9fbd25bbd6ddb1e76ac80033c5a4d78cc6a1f2"
+    "comentarioSha256": "c76831ec85e7af96174dc97c6a1b794d4926bee9bbd845f34e93e4573935bc5c"
    }
   },
   "pediatria-1039": {
@@ -60230,8 +60233,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Tratamento: tipo, momento e o fim do gesso em flexão",
        "Fixação: fios laterais, fio medial e cuidados depois"
@@ -60245,7 +60248,7 @@
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
-       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-fd83ec62",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
@@ -60273,7 +60276,7 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
@@ -60285,12 +60288,12 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "0810f1c8b96d9ecc62975f64c84296194d2d23267fc4a8873fbd708d69e80d68"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "f9ebe23561fe4c513c66fe93d84576f98de61a47d647c854f957e9fa15616de0"
      }
     ],
     "questaoSha256": "be24a618c04b90ac289857ee802a08700bd84609a1fd6a861c9c8d9e3f648116",
-    "comentarioSha256": "552559e5bfad3ce59ec34eb6ec6a5efb2f4e00f7358e3c3fa447295bd1a50dd5"
+    "comentarioSha256": "fb97fe9938672169aeabd2bc19d7f6fd373aa72bf4313236c0c70f8951b22757"
    }
   },
   "pediatria-1040": {
@@ -60306,7 +60309,7 @@
    "citacoes": [
     {
      "c": "rockwoodcriancas9-13-supracondiliana",
-     "b": "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
+     "b": "fixacao-fios-laterais-fio-medial-e-cuidados-depo-8a67cb75",
      "s": "Fixação: fios laterais, fio medial e cuidados depois",
      "t": "Fratura supracondiliana do úmero na criança",
      "p": "treino"
@@ -60324,8 +60327,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Fixação: fios laterais, fio medial e cuidados depois"
       ],
@@ -60348,7 +60351,7 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
@@ -60360,12 +60363,12 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "c779980fcb3f047bb3a7497909be3b4fde92b287b14322a96fb004bfa16f89f2"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "c6940a96c2a2b7a6513eda3150127c922f3c918294efa12972d91b16775683f1"
      }
     ],
     "questaoSha256": "40429c5cdcbabf2ce046e1db79f66fcbb4001cf274d3ba436b4d164e54e2341f",
-    "comentarioSha256": "4b8bc0cb0d33df39d803c8cd7ab928a03e76bffa88fa8d2d16c386a571c240e2"
+    "comentarioSha256": "50a79be8c30f9f2d518e6e05c20e4a96aa1f5e20fbc3d92b198b3b2ba8a895d1"
    }
   },
   "pediatria-1041": {
@@ -60399,8 +60402,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Fixação: fios laterais, fio medial e cuidados depois"
       ],
@@ -60423,7 +60426,7 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
@@ -60435,12 +60438,12 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "c779980fcb3f047bb3a7497909be3b4fde92b287b14322a96fb004bfa16f89f2"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "c6940a96c2a2b7a6513eda3150127c922f3c918294efa12972d91b16775683f1"
      }
     ],
     "questaoSha256": "7cd4f5f06cc13e60caf39f3e7aee8c1173697ccbb79a213058f2e5aa8106060f",
-    "comentarioSha256": "eee3e2ae5a8a20266d4a550c0abbca990ecbee8f3e06148d61d49bf35dc0397d"
+    "comentarioSha256": "3dd812f3516b110dc510123b14cd510aee526420bf88d3640c53f89819dd102b"
    }
   },
   "pediatria-1042": {
@@ -60474,8 +60477,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Classificação de GARTLAND e a cominuição medial"
       ],
@@ -60489,12 +60492,12 @@
        "classificacao-de-gartland-e-a-cominuicao-medial-5692660d",
        "classificacao-de-gartland-e-a-cominuicao-medial-e7fb4c3b"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "d90b9c9c87ff92e486942ed4b2aef5736ac4b471e8191c193bca2a32e5a4edf4"
      }
     ],
     "questaoSha256": "0e106ec9365b7ec44e6f23de59964100f74deffcffa1dc0ff0dad3e819d046de",
-    "comentarioSha256": "6af7d301bdb0dcac6c99dd4388ed6b66bfb7e6edc6f087faba23317ef03bd1b0"
+    "comentarioSha256": "4c16faebbfe82df87b957eadaf882698cca3921221171de955f67d50684da495"
    }
   },
   "pediatria-1043": {
@@ -60528,8 +60531,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Fratura supracondiliana em flexão"
       ],
@@ -60541,12 +60544,12 @@
        "fratura-supracondiliana-em-flexao-034a15ed",
        "fratura-supracondiliana-em-flexao-d4613b25"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "f7d1388787a15bee0bdb27993732fea7ad386e9ca56b8638df271b0b5127b15e"
      }
     ],
     "questaoSha256": "a11dd5dfb907210c195e60f17adda712cf9280fdeed21844b4558761deccd119",
-    "comentarioSha256": "091e59a608d77829f343a66b99db4649ffaa36a9a3cc7a2dc7f2e70cc70a15f0"
+    "comentarioSha256": "e9b0fc2a23d3ffad6244938e16ebb2a1fe2ea8823d57d61fa2fce262f589d431"
    }
   },
   "pediatria-1044": {
@@ -60587,8 +60590,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Redução aberta e fratura exposta",
        "Outras complicações"
@@ -60611,12 +60614,12 @@
        "outras-complicacoes-0f62bca9",
        "outras-complicacoes-484f2e26"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "a27331d1eb5b63ff41850ad01553a2ccc888f66411c298f90389644db951d755"
      }
     ],
     "questaoSha256": "80a2f5beeab9854e1e6aa6193e5d478ff96ec2f540b48de331145043f9c6ba2a",
-    "comentarioSha256": "decd1d189e6b3d84f4ccd122b330084618ba0de40a4bcf237398ef0dce587947"
+    "comentarioSha256": "029fbbd2ec6bb6922763b3a0343f59fc9a4adfd5cbac98fe656d84e50640a4e2"
    }
   },
   "pediatria-1045": {
@@ -60657,8 +60660,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Exame clínico e imagem",
        "Classificação de GARTLAND e a cominuição medial"
@@ -60687,12 +60690,12 @@
        "classificacao-de-gartland-e-a-cominuicao-medial-5692660d",
        "classificacao-de-gartland-e-a-cominuicao-medial-e7fb4c3b"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "b9b0c233ebbb0a52d7a8b0c0c46537d96391472aba6c0da4ab5c584492b7c7fb"
      }
     ],
     "questaoSha256": "a0c64a9ff692600650da79bae2deb0edfab46c28a24bad997bbcf549ce85ae07",
-    "comentarioSha256": "c0fae7fb9a94d0908ce7629e29112f896f06acd8b6b0f1d70b553331ae0cbfd0"
+    "comentarioSha256": "435ec865703f357392422310c069a377aaa211f2ba2fb83ec362f382abdf83c7"
    }
   },
   "pediatria-1046": {
@@ -61493,8 +61496,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Redução fechada: técnica, periósteo e rotação",
        "Redução aberta e fratura exposta",
@@ -61546,12 +61549,12 @@
        "a-mao-sem-pulso-4ec07ae0",
        "a-mao-sem-pulso-e9a4fa79"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "e8a2b49ac26b9a6629464475a52a1386e50c0950438906a609921ddd535fcff4"
      }
     ],
     "questaoSha256": "5efccb42f7ecbd8c7851d09031c1a8f4555ed155175116d94d257fdb9ceab49e",
-    "comentarioSha256": "820e08db1ae9af156b3a5da3f7f9213f731979830c5bd5e7c6a5ac71f5ff5009"
+    "comentarioSha256": "04b8ebd7c2039edccd6b52c7ed02c96f88f3200044487398d3d4ef61f31fe6f7"
    }
   },
   "pediatria-1083": {
@@ -74640,6 +74643,126 @@
     "comentarioSha256": "5e1f225b6212b52dbea5359456bf560e118b8474361d8157dbe611c1edfcda1d"
    }
   },
+  "pediatria-1360": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Ombro e cotovelo da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "b": "o-sinal-do-coxim-gorduroso-1cba9917",
+     "s": "O sinal do coxim gorduroso",
+     "t": "Avaliação do cotovelo da criança traumatizada",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas9-12-avaliacao-cotovelo"
+   ],
+   "questaoSha256": "8b3072a2f83a3ec43fe4be3583dea725ac54a0cdc3b76fa98fd6d4608cd250c5"
+  },
+  "pediatria-1361": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Ombro e cotovelo da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "b": "linhas-e-angulos-da-radiografia-c89ead3c",
+     "s": "Linhas e ângulos da radiografia",
+     "t": "Avaliação do cotovelo da criança traumatizada",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas9-12-avaliacao-cotovelo"
+   ],
+   "questaoSha256": "800495c8f0285fbd98fd9844290c42e51a58f8707539b392c6c77eec8529db51"
+  },
+  "pediatria-1362": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Ombro e cotovelo da criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas9-12-avaliacao-cotovelo",
+     "b": "outros-exames-e-quando-pedir-a4a2a9e0",
+     "s": "Outros exames e quando pedir",
+     "t": "Avaliação do cotovelo da criança traumatizada",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas9-12-avaliacao-cotovelo"
+   ],
+   "questaoSha256": "09cf53b351e30e597afe0c41b502b37032afc1b784547edc271cf29f0ad3a335"
+  },
+  "pediatria-1363": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas9-13-supracondiliana",
+     "b": "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-0621f38e",
+     "s": "Tratamento: tipo, momento e o fim do gesso em flexão",
+     "t": "Fratura supracondiliana do úmero na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas9-13-supracondiliana"
+   ],
+   "questaoSha256": "96daa39d1ee42cf07ce51dd7cb42ec1d225155c3e3e19aaa4d147b4dc4f154ea"
+  },
+  "pediatria-1364": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas supracondilianas do úmero"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas9-13-supracondiliana",
+     "b": "fixacao-fios-laterais-fio-medial-e-cuidados-depo-8a67cb75",
+     "s": "Fixação: fios laterais, fio medial e cuidados depois",
+     "t": "Fratura supracondiliana do úmero na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas9-13-supracondiliana"
+   ],
+   "questaoSha256": "55b85c7726da20ccfd71a658874114e0c0ff791aae42f1888a949ef60ae968aa"
+  },
   "quadril-0035": {
    "tema": "quadril",
    "subtemas": [
@@ -77139,8 +77262,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Síndrome compartimental"
       ],
@@ -77158,12 +77281,12 @@
        "sindrome-compartimental-156d424b",
        "sindrome-compartimental-c2479823"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "ef4cb581ced80e15a4fe95146db8711e8831dd210e5806dbb7a7b33534d35799"
      }
     ],
     "questaoSha256": "9c4d5e649dbf01c33820ee370989eee45d7d8f1671301face66e291cd7afb0bf",
-    "comentarioSha256": "2afd3add29460d763f70283d6b4072d7d0060fe717cd80ef7e40219f41a69587"
+    "comentarioSha256": "2c9d06a18eac5ef8f217d543eb407f1349181d5989d8f9f550e1ee779add103c"
    }
   },
   "trauma-0013": {
@@ -109357,8 +109480,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco",
        "Exame clínico e imagem",
@@ -109410,12 +109533,12 @@
        "a-mao-sem-pulso-4ec07ae0",
        "a-mao-sem-pulso-e9a4fa79"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "b4b53519fc89dd05677d870e89260865ede80e82b74e7815bc3e4ea61700ebc1"
      }
     ],
     "questaoSha256": "168cc7cd57bcd2f64882b9841f727d3be2bd34cc985d6cf0c98579358543069a",
-    "comentarioSha256": "c6623669c094509c31bb7d475a4d74c04e4752fba61ccd14716476c2d5c01da5"
+    "comentarioSha256": "57157ac40acc80299c568af5a32ae57771c30e014cb83108bfef61149ca9bce5"
    }
   },
   "trauma-1218": {
@@ -109453,8 +109576,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "A mão sem pulso",
        "Síndrome compartimental"
@@ -109492,12 +109615,12 @@
        "sindrome-compartimental-156d424b",
        "sindrome-compartimental-c2479823"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "3161e021ef3de2eb4d650c8e046e57aa0d13141739bc80e1ffb75e9886edfac0"
      }
     ],
     "questaoSha256": "e852835f3da642b294ba4a7464e5c17ad9ad30be2c4d66f10ef129ecc43eaf47",
-    "comentarioSha256": "bacb35ea246413d4580b7d433bc57992166920c9ac036c36b01a773cdb331a9b"
+    "comentarioSha256": "97b7bc050cdbabf47dddc6604427006e6ab8a89f019cde7328ea0aa456593c4d"
    }
   },
   "trauma-1219": {
@@ -109533,8 +109656,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Tratamento: tipo, momento e o fim do gesso em flexão",
        "A mão sem pulso"
@@ -109548,7 +109671,7 @@
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
-       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-fd83ec62",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
@@ -109578,12 +109701,12 @@
        "a-mao-sem-pulso-4ec07ae0",
        "a-mao-sem-pulso-e9a4fa79"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "ed3e74cb689c61513ef927d375497b520e6967b2f5adb06e8e42637da0a0657b"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "be002103c939ad501fc586f4a2e2967800cc5b0459d02c60ae8590401b780156"
      }
     ],
     "questaoSha256": "5b30734541f2cb75ab3c441a9a8e11143fdea0ea66acafbf28187a47428473b6",
-    "comentarioSha256": "f2af41ffb21d24a8c087bdf579fe8e23da3f29fe12bcf327a685198ed63b230c"
+    "comentarioSha256": "9e14a6999a5506a89d94d5c429f9e0eaf5a788428aa30bc88f65e9dfeb7842c4"
    }
   },
   "trauma-1220": {
@@ -109619,8 +109742,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Tratamento: tipo, momento e o fim do gesso em flexão",
        "Fixação: fios laterais, fio medial e cuidados depois",
@@ -109635,7 +109758,7 @@
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
-       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+       "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-fd83ec62",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
        "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
@@ -109663,7 +109786,7 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
@@ -109687,12 +109810,12 @@
        "sindrome-compartimental-156d424b",
        "sindrome-compartimental-c2479823"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "db3c03e7a4238fe936cbfae45a30a115bb4db12c730c157e276c78205f16363d"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "c47b8e7aa0d13b98f0a56bf690ae59a30d9af1e311696147d03f1a3dedf9f43a"
      }
     ],
     "questaoSha256": "bfa3ff576d4a2b56b361a2ca355683a73cdad5255fa029c8d64345b96c3ab832",
-    "comentarioSha256": "ecbe7ff71baf29349bc24a787ecf8280283f82165972ba9b72b04eb4527a5152"
+    "comentarioSha256": "16e1e2d3ec16ccefe1f5d10adfc0e50ef83b64c27f64dc1f2522831bc699e77a"
    }
   },
   "trauma-1221": {
@@ -109728,8 +109851,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Lesões nervosas: frequência, exame e conduta",
        "A mão sem pulso"
@@ -109768,12 +109891,12 @@
        "a-mao-sem-pulso-4ec07ae0",
        "a-mao-sem-pulso-e9a4fa79"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
       "trechosSha256": "b22e5313b807f3c2869dd04ae5d07aa13e542634e3efadcbb53f7d54c32fa768"
      }
     ],
     "questaoSha256": "a0a03516576e77c2a5267b66dba501ad155bd106ddcb24133ec6d4e35bb37203",
-    "comentarioSha256": "717d1e2dce096e250569beac51c356a2b02c99dd9adc91f495d378c30d2060b1"
+    "comentarioSha256": "6cb39d5fb5b2798e6a7642ab4ea85571dbad874d2f203e233ac2cc3c0e739d41"
    }
   },
   "trauma-1222": {
@@ -109809,8 +109932,8 @@
       "resumo": "rockwoodcriancas9-13-supracondiliana",
       "titulo": "Fratura supracondiliana do úmero na criança",
       "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
       "secoes": [
        "Mecanismo, direção do desvio e estruturas em risco",
        "Fixação: fios laterais, fio medial e cuidados depois",
@@ -109846,7 +109969,7 @@
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+       "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
        "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
@@ -109864,12 +109987,12 @@
        "fratura-supracondiliana-em-flexao-034a15ed",
        "fratura-supracondiliana-em-flexao-d4613b25"
       ],
-      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
-      "trechosSha256": "43b51d36fb6b70cbbd02378510531d8bb4fef9b8e0cc91234ac027d83125c5ee"
+      "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
+      "trechosSha256": "370abb92bf96020c94a39ae240a801ec77bdf22063d5519410647a8f6bbc54b5"
      }
     ],
     "questaoSha256": "edeb67ac333ec0b4dcbc8a0dc6abdf705f6d7e5e31705071f9a751b76fce3d99",
-    "comentarioSha256": "ec57d6c6279a8fd47588c7de55a8923d57127128c103e02fb48e41d575b6e3d3"
+    "comentarioSha256": "c636165e3e21a389d4b334b8fc3d916902538d721d7256328559069d0f2b5cf6"
    }
   },
   "trauma-1223": {
@@ -131048,7 +131171,7 @@
    "ano": 2022,
    "estado": "pendente-fonte",
    "motivo": "O resumo 17 lista dez compartimentos musculares da mão, mas não define o espaço CENTRAL PALMAR com lumbricais e tendões flexores superficial/profundo. Não se pode usar a lista de dez músculos/compartimentos para provar o conteúdo desse espaço fascial. Falta fonte anatômica do central palmar que permita julgar todos os conjuntos A a E.",
-   "temComentario": false,
+   "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
@@ -131066,7 +131189,7 @@
    "ano": 2022,
    "estado": "pendente-fonte",
    "motivo": "Bloqueio de protocolo, não ausência de cobertura temática: questão do ENARE Cirurgia da Mão (area:cirurgia-mao) cadastra-se no tema trauma. O padrão editorial exige Green com capítulo e página impressa para esse escopo. O livro local não está disponível; conferir no Green os componentes da tríade no contexto adolescente e todas as alternativas antes de criar comentário. Resumo do cap. 24 não substitui a exigência de fonte primária da Mão.",
-   "temComentario": false,
+   "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
@@ -131083,7 +131206,7 @@
    "ano": 2022,
    "estado": "pendente-fonte",
    "motivo": "O resumo 17 identifica grupos volar/dorsal/coxim móvel e o pronador quadrado, mas as opções repetem a estrutura não padronizada “flexor longo do carpo”. Não equivale automaticamente a flexor longo do polegar ou a flexores radial/ulnar do carpo. Falta confirmação do texto original ou fonte que esclareça a estrutura pretendida para comentar C sem renomear silenciosamente as opções.",
-   "temComentario": false,
+   "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",

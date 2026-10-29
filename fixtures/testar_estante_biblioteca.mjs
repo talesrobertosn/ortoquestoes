@@ -63,7 +63,9 @@ try {
   // (Sem ids fixos: cada capítulo publicado muda o "próximo"; a varredura abaixo confere a ordem do livro inteiro.)
   const proximoDo19 = m.proximoCapitulo(capitulos, cap('rockwoodcriancas10-19-ombro-umero'))
   assert.ok(proximoDo19 && m.chaveLivro(proximoDo19) === chaveInfantil10 && m.numeroCapitulo(proximoDo19) > 19, 'o próximo fica no mesmo livro e adiante')
-  assert.equal(m.proximoCapitulo([cap('rockwoodcriancas10-19-ombro-umero'), cap('rockwoodcriancas9-17-fise-distal-umero')], cap('rockwoodcriancas9-12-avaliacao-cotovelo'))?.id, 'rockwoodcriancas9-17-fise-distal-umero', 'outra edição não conta')
+  // Capítulos sintéticos: os resumos reais da 9ª edição vão sendo atualizados para a 10ª e mudariam o teste.
+  const de = (id, edicao, n) => ({ ...cap('rockwoodcriancas10-19-ombro-umero'), id, edicao, capitulo: `Capítulo ${n} · Teste` })
+  assert.equal(m.proximoCapitulo([de('dez-19', '10ª edição (2025)', 19), de('nove-17', '9ª edição', 17)], de('nove-12', '9ª edição', 12))?.id, 'nove-17', 'outra edição não conta')
   for (const l of livros) {
     assert.equal(m.proximoCapitulo(capitulos, l.capitulos[l.capitulos.length - 1]), null, `último de ${l.rotulo}`)
     for (let i = 0; i + 1 < l.capitulos.length; i++) assert.equal(m.proximoCapitulo(capitulos, l.capitulos[i])?.id, l.capitulos[i + 1].id)

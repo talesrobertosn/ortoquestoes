@@ -5,6 +5,7 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 97 |
+| pendente | 5 |
 | pendente-figura-ausente | 2 |
 | pendente-fonte | 879 |
 | revisada | 1998 |
@@ -57,8 +58,8 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas da tíbia e da fíbula na criança (`rockwoodcriancas10-29-diafise-tibia`) | 102 | 0 | 20 |
 | Fraturas do tornozelo na criança (`rockwoodcriancas10-30-tornozelo`) | 34 | 0 | 5 |
 | Fraturas, luxações e outras lesões do pé na criança (`rockwoodcriancas10-31-pe`) | 10 | 0 | 18 |
-| Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
-| Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 54 | 0 | 5 |
+| Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 5 |
+| Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 54 | 0 | 7 |
 | Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 15 | 0 | 4 |
 | Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança (`rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial`) | 94 | 0 | 26 |
 | Fraturas do côndilo lateral e do capítulo na criança (`rockwoodcriancas9-16-condilo-lateral`) | 84 | 0 | 18 |
