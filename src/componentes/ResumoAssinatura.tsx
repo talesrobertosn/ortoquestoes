@@ -5,6 +5,8 @@ import { usarConta } from '../conta/ContextoConta'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
 import { A_PARTIR_DE } from '../dados/planos'
+import { RenovacaoPix } from './RenovacaoPix'
+import { diaMes, JANELA_RENOVACAO_PIX, usarPeriodoPix } from '../conta/periodoPix'
 
 interface EstadoAssinatura {
   plano: string | null
@@ -50,6 +52,8 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
   }, [sessao])
 
   useEffect(() => { void atualizar() }, [atualizar])
+  // Pix não tem renovação automática para desligar: em vez de "Desligada", a conta mostra a renovação pelo Pix.
+  const periodoPix = usarPeriodoPix(sessao?.user.id, estado?.fim_periodo)
 
   async function gerenciar(acao: 'cancelar' | 'reembolsar') {
     definirProcessando(true)
@@ -73,8 +77,10 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
   const statusAtual = estado?.status_assinatura ?? ''
   const descricao = mensagensStatus[statusAtual]
   const periodoPagoVigente = Boolean(estado?.fim_periodo && new Date(estado.fim_periodo).getTime() > Date.now())
-  const renovacaoCancelada = (ativo && estado?.cancelar_ao_fim) || (statusAtual === 'cancelada' && periodoPagoVigente)
-  const statusExibido = renovacaoCancelada ? 'Sem renovação automática' : descricao?.titulo ?? 'Sem assinatura'
+  const pixAtivo = ativo && Boolean(periodoPix?.pix && periodoPix.fim)
+  const fimPix = pixAtivo ? periodoPix?.fim ?? null : null
+  const renovacaoCancelada = !pixAtivo && ((ativo && estado?.cancelar_ao_fim) || (statusAtual === 'cancelada' && periodoPagoVigente))
+  const statusExibido = pixAtivo ? 'Em dia · pago no Pix' : renovacaoCancelada ? 'Sem renovação automática' : descricao?.titulo ?? 'Sem assinatura'
   const planoVisivel = estado?.plano && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente))
     ? `Plano ${estado.plano}`
     : 'Plano gratuito'
@@ -89,7 +95,12 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
         <div><dt>Plano</dt><dd>{planoVisivel}</dd></div>
         <div><dt>Status</dt><dd>{statusExibido}</dd></div>
       </dl>
-      {!detalhada && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <p className={'conta-renovacao__resumo' + (renovacaoCancelada ? ' conta-renovacao__resumo--desligada' : '')}>
+      {!detalhada && fimPix && <p className="conta-renovacao__resumo conta-renovacao__resumo--pix">
+        <span className="conta-renovacao__estado"><i aria-hidden="true" />Pix · sem cobrança automática</span>
+        <span>Acesso até {diaMes(fimPix)}. {Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? 'A renovação já está aberta, sem perder nenhum dia.' : `A renovação abre em ${diaMes(fimPix - JANELA_RENOVACAO_PIX)}, sem perder nenhum dia.`}</span>
+        <a href={href(Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? '/assinatura' : '/conta/assinatura')}>{Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? 'Renovar (Pix ou cartão)' : 'Ver como funciona'}</a>
+      </p>}
+      {!detalhada && !fimPix && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <p className={'conta-renovacao__resumo' + (renovacaoCancelada ? ' conta-renovacao__resumo--desligada' : '')}>
         <span className="conta-renovacao__estado"><i aria-hidden="true" />Renovação automática {renovacaoCancelada ? 'desligada' : 'ligada'}</span>
         <span>{renovacaoCancelada ? `Acesso até ${data(estado?.fim_periodo ?? null)}, sem nova cobrança.` : `Próxima cobrança em ${data(estado?.fim_periodo ?? null)}. Você pode desligar sem cancelar a assinatura.`}</span>
         {!renovacaoCancelada && <a href={href('/conta/assinatura')}>Gerenciar renovação</a>}
@@ -102,7 +113,8 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
       {detalhada ? <>
       {estado?.plano && !ativo && <p className="ct-nota">Plano desta assinatura: {estado.plano}. Seu acesso atual é {planoVisivel.toLowerCase()}.</p>}
       <dl className="conta-assinatura__dados">
-        <div><dt>{estado?.cancelar_ao_fim || ['cancelada', 'vencida', 'reembolsada'].includes(statusAtual) ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Data informada pelo provedor'}</dt><dd>{data(estado?.fim_periodo ?? null)}</dd></div>
+        <div><dt>{fimPix ? 'Acesso até' : estado?.cancelar_ao_fim || ['cancelada', 'vencida', 'reembolsada'].includes(statusAtual) ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Data informada pelo provedor'}</dt><dd>{fimPix ? data(new Date(fimPix).toISOString()) : data(estado?.fim_periodo ?? null)}</dd></div>
+        {fimPix && <div><dt>Pagamento</dt><dd>Pix, sem cobrança automática</dd></div>}
         <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>
       </dl>
       {!(ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <p className="ct-nota">{renovacaoCancelada
@@ -110,7 +122,8 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
         : descricao?.explicacao ?? 'Você está na modalidade gratuita. Pode continuar estudando normalmente.'}</p>}
       {/* Renovação automática (19/10/2026, pedido do Tales): ligada ou desligada, à vista e separada
           do reembolso. Desligar não cancela a assinatura: o acesso continua até o fim do período pago. */}
-      {(ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <section className={'conta-renovacao' + (renovacaoCancelada ? ' conta-renovacao--desligada' : '')} aria-label="Renovação automática">
+      {fimPix && <RenovacaoPix fim={fimPix} />}
+      {!fimPix && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <section className={'conta-renovacao' + (renovacaoCancelada ? ' conta-renovacao--desligada' : '')} aria-label="Renovação automática">
         <div className="conta-renovacao__topo">
           <h3>Renovação automática</h3>
           <span className="conta-renovacao__estado"><i aria-hidden="true" />{renovacaoCancelada ? 'Desligada' : 'Ligada'}</span>
