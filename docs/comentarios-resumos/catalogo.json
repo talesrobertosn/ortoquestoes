@@ -4,8 +4,8 @@
  "estados": {
   "duplicada": 97,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 880,
-  "revisada": 1997
+  "pendente-fonte": 879,
+  "revisada": 1998
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -416,8 +416,8 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
-    "pendente-fonte": 27,
-    "revisada": 93
+    "pendente-fonte": 26,
+    "revisada": 94
    }
   },
   "rockwoodcriancas9-16-condilo-lateral": {
@@ -44924,8 +44924,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente-fonte",
-   "motivo": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -44940,6 +44940,31 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
    "questaoSha256": "af4282bd4db0df603a7ff2fbfe1ab7def78381b126a1d303c1f98727cd7b82e0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-12-monteggia",
+      "titulo": "Fratura-luxação de MONTEGGIA na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+      "secoes": [
+       "Diagnóstico",
+       "Classificação e mecanismos"
+      ],
+      "blocos": [
+       "diagnostico-7ee8a436",
+       "classificacao-e-mecanismos-bf9aae38"
+      ],
+      "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+      "trechosSha256": "6e8327258750b1e31aa10f32583c6e3f9fa86dee1c2d46f47acddaa41ef10722"
+     }
+    ],
+    "questaoSha256": "af4282bd4db0df603a7ff2fbfe1ab7def78381b126a1d303c1f98727cd7b82e0",
+    "comentarioSha256": "8adda899227f34474fbc6b3f9e5021a6d2793422bce700e76be4203d2d7971b0"
+   },
    "pendencia": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados."
   },
   "pediatria-0657": {

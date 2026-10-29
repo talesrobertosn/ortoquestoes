@@ -1,0 +1,66 @@
+{
+  "base": "3a889edd05a6614b23203e36bcd94ef27877f8ca",
+  "unidades": [
+    261,
+    262,
+    263,
+    264
+  ],
+  "candidatas": 40,
+  "novaMiniaula": 1,
+  "lacunasIntactas": 39,
+  "id": "pediatria-0656",
+  "questaoSha256": "af4282bd4db0df603a7ff2fbfe1ab7def78381b126a1d303c1f98727cd7b82e0",
+  "comentarioAnterior": {
+    "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita **mais comum do cotovelo**. A cabeça do rádio está fora da sua articulação com o capítulo desde o nascimento, geralmente em direção **posterior** (às vezes posterolateral ou anterior).\n\n**As características.**\n- Na maioria dos casos é **bilateral**.\n- Frequentemente se associa a **outras manifestações**: síndromes e anomalias, como a síndrome **unha-patela**, a síndrome de **Larsen**, a de **Klippel-Feil**, a sinostose radioulnar, a **artrogripose** e várias displasias esqueléticas.\n- **Não há história de trauma**.\n- É frequentemente **assintomática** na infância e descoberta por acaso ou por uma limitação discreta. Na adolescência, pode surgir **dor**, estalido ou uma proeminência palpável.\n\n**Como diferenciar da luxação traumática (Monteggia não diagnosticada).** A distinção é importante, porque a luxação traumática crônica pode ser reconstruída, e a congênita não.\n\n| Achado | Congênita | Traumática (crônica) |\n|---|---|---|\n| Lado | Frequentemente **bilateral** | **Unilateral** |\n| Cabeça do rádio | **Convexa** (abaulada), sem a concavidade normal; colo longo e fino | Côncava, de forma normal |\n| Capítulo | **Hipoplásico** | Normal |\n| Ulna | Pode ser curva | Ulna com sinais da fratura antiga, ou curva |\n| Associações | Síndromes e outras anomalias | Nenhuma; história de trauma |\n\n**O tratamento.**\n- **Observação**: na maioria, a função é boa.\n- Na adolescência ou na vida adulta, se houver **dor** ou limitação por uma cabeça proeminente: **ressecção da cabeça do rádio**, feita **após o fim do crescimento** (para não causar migração do rádio e desvio do punho).\n- A **redução** cirúrgica não costuma funcionar, porque as superfícies articulares são malformadas.",
+    "correta": "**Correta: B (posterior).** Na luxação congênita da cabeça do rádio, o desvio mais frequente é o **posterior** (às vezes posterolateral). Os desvios anterior e lateral são menos comuns.",
+    "incorretas": {
+      "A": "O desvio **anterior** ocorre, mas é **menos frequente** na forma congênita. A luxação anterior isolada e unilateral deve levantar a suspeita de uma Monteggia tipo I não diagnosticada.",
+      "C": "O desvio **medial** da cabeça do rádio não é um padrão típico da luxação congênita.",
+      "D": "O desvio **lateral** puro é menos comum que o posterior. Quando ocorre, costuma ser posterolateral."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 934 (referência indicada na prova TARO 2012, questão 1)",
+      "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+    ],
+    "geradoEm": "2026-10-05",
+    "conferido": false
+  },
+  "comentarioAnteriorSha256": "ea47fd761c8640a4ff00615317c90d388f90df79ebb7d105750e14277359469d",
+  "fonteIntegralmenteRelida": "rockwoodcriancas10-12-monteggia",
+  "raciocinio": "Corpo independente da seção Diagnóstico descreve congênita em geral posterior, cabeça convexa e capítulo hipoplásico; cada direção confrontada com predominância expressa, sem inventar frequência de desvios raros. Contraste com Bado separa trauma e origem congênita. Removidas referências antigas não reconsultadas, tratamento e maior parte de dados sindrômicos/bilateralidade sem cobertura; não generalizar contraindicação de reconstrução. Gabarito B preservado;conferido:false. Sem imagens na questão recuperada.",
+  "continuidade": "Próxima265, ainda não reavaliada nesta passagem; não contar lacunas como revisões concluídas.",
+  "fonte": {
+    "id": "rockwoodcriancas10-12-monteggia",
+    "markdownSha256Bytes": "d0f77d57aa743f9e993805b9ff0777748b3db0e6055610190e1f5c0d247443b9",
+    "compiladoSha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+    "linhas": 73
+  },
+  "fontesIntegralmenteRelidas": [
+    "rockwoodcriancas10-12-monteggia",
+    "rockwoodcriancas10-31-pe"
+  ],
+  "validacoes": {
+    "fixtures": "passou",
+    "validarAcervo": "passou",
+    "npmTest": "passou integralmente",
+    "build": "passou",
+    "replay": "1/1;39 lacunas intactas;demais bytes preservados",
+    "gitDiffCheck": "passou",
+    "interface": {
+      "larguras": [
+        390,
+        1440
+      ],
+      "resposta": "B",
+      "fonteExata": "rockwoodcriancas10-12-monteggia?bloco=diagnostico-7ee8a436",
+      "primeiraCapturaCelularInspecionada": true,
+      "capturasSha256Bytes": {
+        "261263-pediatria-0656-aula-pc.png": "17c4b759558fa844ec4c32af5136a5937bbc0c305c476a1d44a9559748771bcd",
+        "261263-pediatria-0656-fonte-cel.png": "b5e5f4758d7b3ffc150731061ee2fd6e6447cc35c463785c1a8a56c48c0534a2",
+        "261263-pediatria-0656-aula-cel.png": "a4284cad7cd45abb93fe5d935de9b4a05f5c70cff3ebad90c85fec5ba7c1a6d4",
+        "261263-pediatria-0656-fonte-pc.png": "bed6baa2c018ba2fd56ee6bed855a2eecdd08a3a6b102828dd5410e6147aba1b"
+      }
+    }
+  }
+}

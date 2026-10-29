@@ -1,0 +1,39 @@
+{
+  "pediatria-0656": {
+    "questaoSha256": "af4282bd4db0df603a7ff2fbfe1ab7def78381b126a1d303c1f98727cd7b82e0",
+    "comentarioAnteriorSha256": "ea47fd761c8640a4ff00615317c90d388f90df79ebb7d105750e14277359469d",
+    "comentario": {
+      "conceito": "Na **luxação congênita da cabeça do rádio**, o desvio mais frequente é o **posterior**, alternativa B. A cabeça radial está fora de sua relação habitual com o capítulo do úmero; “posterior” informa a direção desse deslocamento, não o lado do corpo nem a posição do antebraço. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 12, seção “Diagnóstico”, descreve a forma congênita como geralmente posterior, com cabeça convexa e capítulo hipoplásico.\n\n**A forma das superfícies ajuda a entender a origem.** A cabeça radial congênita é convexa, isto é, abaulada, e o capítulo é hipoplásico, com desenvolvimento reduzido. Esses achados indicam uma relação articular que se desenvolveu de maneira diferente. O resumo os contrapõe ao padrão da luxação traumática crônica, em que a cabeça pode permanecer côncava e a ulna apresentar alteração do seu arco. Assim, encontrar a cabeça fora do lugar não basta para chamar o quadro de congênito: é preciso observar também as superfícies e o alinhamento da ulna.\n\n**A direção não substitui o diagnóstico.** Uma cabeça posterior também pode aparecer em uma lesão traumática de MONTEGGIA tipo II. Na classificação de BADO, a direção da cabeça se associa à fratura ou deformidade da ulna: tipo I anterior, II posterior ou posterolateral, III lateral e IV anterior com fraturas dos dois ossos. Esses nomes descrevem uma lesão traumática, enquanto a pergunta já especifica a origem congênita. Não se deve transportar a frequência dos tipos de MONTEGGIA para responder à frequência dos desvios congênitos (Rockwood and Wilkins, 10ª edição, capítulo 12, “Classificação e mecanismos”).\n\nO desvio anterior merece atenção especial no diagnóstico diferencial: o resumo orienta suspeitar de trauma quando a luxação é anterior. Na investigação de uma possível lesão traumática, o eixo do rádio deve atravessar o centro do capítulo no **perfil verdadeiro**, e uma alteração do arco da ulna pode revelar deformidade plástica. O próprio texto admite que a forma congênita pode ser bilateral; isso é um dado complementar, sem permitir afirmar bilateralidade em todos os pacientes.\n\n**Na prova:** origem congênita, cabeça convexa e capítulo hipoplásico combinam com o padrão geralmente posterior. A questão pede o sentido mais frequente, não uma direção exclusiva nem uma decisão de tratamento.",
+      "correta": "Alternativa B. Posterior é a direção descrita como predominante na luxação congênita da cabeça radial. O dado deve ser associado à morfologia congênita, com cabeça convexa e capítulo hipoplásico: a posição posterior isolada também pode existir em trauma e não define a origem.",
+      "incorretas": {
+        "A": "Anterior não é o padrão predominante congênito descrito no resumo. Ao encontrar a cabeça radial à frente, o diagnóstico diferencial deve incluir trauma, especialmente a lesão de MONTEGGIA tipo I, que combina esse desvio com a deformidade da ulna. A suspeita é investigada pelo alinhamento radiocapitelar e pelo arco ulnar, em vez de presumir que toda luxação antiga seja congênita.",
+        "C": "Medial significa deslocamento para o lado interno, diferente de posterior, que é para trás. A descrição independente do quadro congênito aponta a predominância posterior, portanto o sentido medial não responde ao que foi perguntado. Isso não autoriza chamar qualquer desvio medial de impossível nem atribuir a ele uma frequência que a fonte não fornece.",
+        "D": "Lateral indica deslocamento para fora. Esse sentido aparece na classificação traumática de MONTEGGIA como tipo III, associado à ulna em varo, mas essa associação não o torna o desvio mais frequente da forma congênita. A distinção é entre direção e origem da lesão: para a origem congênita especificada, o resumo aponta posterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Classificação e mecanismos."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Diagnóstico",
+          "Classificação e mecanismos"
+        ],
+        "blocos": [
+          "diagnostico-7ee8a436",
+          "classificacao-e-mecanismos-bf9aae38"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "6e8327258750b1e31aa10f32583c6e3f9fa86dee1c2d46f47acddaa41ef10722"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
