@@ -1,0 +1,532 @@
+{
+ "pediatria-0821": {
+  "questaoSha256": "98ae1a643a1e307e0e96599c0c435ccf6c09eb22c985ebc8c5abf5332786c38d",
+  "comentarioAnteriorSha256": "3a88a6d596fc29c0ac191527453cc442c5f53126f700cbb43081b897b50fe1eb",
+  "comentario": {
+   "conceito": "A afirmação junta duas ideias: que a luxação do ombro é rara no esqueleto imaturo e que isso se deve à fise proximal do úmero estar dentro da cápsula. As duas não resistem ao que o Rockwood and Wilkins (10ª ed., cap. 19, de Donald S. Bae) descreve.\n\n**Onde fica a fise.** A fise proximal do úmero é **extracapsular**: só a sua porção **medial** fica dentro da cápsula. Por isso uma força que, no adulto, luxaria a articulação costuma, na criança pequena, quebrar a fise, o ponto mais fraco, e o ombro não chega a luxar. A explicação proposta pela questão inverte a anatomia.\n\n**A instabilidade no adolescente.** O capítulo dedica uma seção inteira à instabilidade do ombro, que está ficando **frequente** no adolescente atleta. A luxação traumática é anterior em cerca de 90%, e sem cirurgia recidiva em cerca de **70%**, mais em esportes de contato e arremesso.\n\n**Sem gabarito oficial no acervo.** Pela bibliografia, a afirmação está errada.\n\n**Na prova:** fise proximal do úmero é predominantemente **extracapsular**; a luxação no adolescente não é rara e recidiva muito.\n\nNo resumo de ombro e úmero da criança, a anatomia do úmero proximal e a seção de instabilidade tratam do tema.",
+   "correta": "**B: errado.** O capítulo descreve a fise proximal do úmero como extracapsular, com só a parte medial dentro da cápsula, e mostra que a instabilidade do ombro no adolescente está ficando frequente.",
+   "incorretas": {
+    "A": "**Concordar exigiria uma fise intracapsular, o que o capítulo não descreve.** Só a parte medial da fise fica dentro da cápsula; no imaturo, a fise costuma ceder antes da articulação, e no adolescente a luxação é cada vez mais comum."
+   },
+   "conferido": false,
+   "provavel": "B",
+   "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta B é a provável pela bibliografia. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 19, descreve a fise proximal do úmero como predominantemente extracapsular (só a parte medial fica dentro da cápsula) e a instabilidade do adolescente como frequente.",
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: anatomia; Instabilidade do ombro."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: anatomia",
+     "Instabilidade do ombro"
+    ],
+    "blocos": [
+     "umero-proximal-anatomia-f0be4955",
+     "instabilidade-do-ombro-d8c2cceb",
+     "instabilidade-do-ombro-14626369"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "8e4c424a67d82fb4582dcaa06aa8602ea6d8d8b4aa01f2404d379f0a2b306464"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0571": {
+  "questaoSha256": "35405c7f0f834fca61672c923768b0a583c3e32b10561d81b8fe837ec92be6c3",
+  "comentarioAnteriorSha256": "da8bca96cdc482277dcc851e2f25adb55c93de7cb6ffdfab971d0be8e1a82cec",
+  "comentario": {
+   "conceito": "Para não confundir um núcleo de ossificação com um fragmento de fratura, é preciso saber quando cada parte do úmero proximal aparece na radiografia.\n\n**A cronologia no Rockwood and Wilkins (10ª ed., cap. 19).**\n\n| Estrutura | Idade |\n|---|---|\n| Epífise da cabeça visível | cerca de 6 meses |\n| **Tuberosidade maior** | **1 a 3 anos** |\n| Tuberosidade menor | 4 a 5 anos |\n| Tuberosidades se unem | 5 a 7 anos |\n| Fundem-se à cabeça | 7 a 13 anos |\n| Fise fecha | 14 a 17 (meninas), 16 a 18 anos (meninos) |\n\n**Por que importa.** Numa criança de 2 anos, um núcleo arredondado lateral à cabeça pode ser a tuberosidade maior em ossificação, e não uma avulsão. No lactente, a cabeça ainda não ossificada pode \"desaparecer\" na radiografia de uma fratura fisária, e a ultrassonografia ajuda.\n\n**O crescimento.** A fise proximal faz **80%** do crescimento do úmero, por isso o úmero proximal remodela tanto.\n\n**Na prova:** tuberosidade maior aparece entre **1 e 3 anos**; a menor, entre 4 e 5.\n\nNo resumo de ombro e úmero da criança, a seção de anatomia do úmero proximal traz a cronologia.",
+   "correta": "**A: 1 a 3 anos.** É a idade de aparecimento do núcleo da tuberosidade maior no capítulo 19 do Rockwood and Wilkins.",
+   "incorretas": {
+    "B": "**De 4 a 5 anos aparece a tuberosidade menor**, não a maior.",
+    "C": "**De 6 a 7 anos é a fase em que as tuberosidades já se unem** (5 a 7 anos). O núcleo da maior surgiu bem antes.",
+    "D": "**De 8 a 9 anos as tuberosidades estão se fundindo à cabeça** (7 a 13 anos). Não é a idade de aparecimento."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: anatomia."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: anatomia"
+    ],
+    "blocos": [
+     "umero-proximal-anatomia-f0be4955",
+     "umero-proximal-anatomia-d40fae5f",
+     "umero-proximal-anatomia-5f8a04fb"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "ecbee9e9cce0e0eefa315e971062f48fc5ea9ae39e62e843fb9ec5bc25154730"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0524": {
+  "questaoSha256": "10c95f43cde4f28ac22f92b8a887a0ca423aae2d2f8f1b74d5622d9795282946",
+  "comentarioAnteriorSha256": "6acb8cac8937ca9687199ad5f701ba16225f5fd767f127215e7a1edc14663913",
+  "comentario": {
+   "conceito": "O desvio de uma fratura do úmero proximal não é aleatório: cada fragmento vai para onde os músculos que ficaram presos a ele o puxam. Por isso a pergunta começa dizendo onde está o traço em relação ao **peitoral maior**.\n\n**Acima do peitoral maior.** No Rockwood and Wilkins (10ª ed., cap. 19), o fragmento **proximal** fica só com o **manguito rotador**, e o manguito o leva para **abdução, flexão e rotação externa**. O fragmento distal, puxado pelo peitoral maior, sobe, vai para medial e roda internamente.\n\n**Nos outros níveis.** Entre o peitoral maior e o deltoide, o proximal aduz (peitoral) e o distal sobe e abduz (deltoide). Abaixo do deltoide, o proximal abduz e flete, e o distal sobe e vai para medial (bíceps e tríceps).\n\n**Daí a manobra de redução.** Se a cabeça está em abdução, flexão e rotação externa, a redução leva a diáfise até ela: tração com **abdução, flexão e rotação externa**.\n\n**Na prova:** acima do peitoral maior, cabeça em **flexão e rotação externa** (e abdução).\n\nA tabela de desvio pelos músculos, no resumo de ombro e úmero da criança, mostra os três níveis.",
+   "correta": "**B: flexão e rotação externa.** Acima do peitoral maior, o fragmento proximal fica só com o manguito, que o leva para abdução, flexão e rotação externa.",
+   "incorretas": {
+    "A": "**A flexão está certa, mas a rotação não.** Rotação interna é o desvio do fragmento distal, puxado pelo peitoral maior.",
+    "C": "**Erra as duas.** Extensão e rotação interna não correspondem à ação do manguito sobre a cabeça.",
+    "D": "**A rotação externa está certa, mas o manguito leva a cabeça para flexão, não extensão.**"
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: anatomia; Úmero proximal: classificação e tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: anatomia",
+     "Úmero proximal: classificação e tratamento"
+    ],
+    "blocos": [
+     "umero-proximal-anatomia-d40fae5f",
+     "umero-proximal-anatomia-5f8a04fb",
+     "umero-proximal-classificacao-e-tratamento-e2c0307e"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "f2c175ed6b8f48006df5ae9589fb3f650a6e74bdcb41e56c9fe047e933791f3b"
+   }
+  ],
+  "imagensConferidas": [],
+  "justificativaRemocaoAlerta": "O alerta antigo só observava que a banca omitiu a abdução; a miniaula nova explica que o fragmento proximal vai em abdução, flexão e rotação externa e que a alternativa B traz os dois componentes oferecidos. Não há divergência a registrar."
+ },
+ "pediatria-0617": {
+  "questaoSha256": "eb5e2dfbd336a498f98c9cf0755e30a0bf1eef042fb6634cc48c7806f401e7b0",
+  "comentarioAnteriorSha256": "ed29a493f5a3ebc4a19621fa33b5fcff5ee0f77690c960f3540858065309672b",
+  "comentario": {
+   "alerta": "Gabarito oficial D (posteromedial) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 19, diz que o fragmento metafisário do Salter-Harris II do úmero proximal costuma ser anterolateral (alternativa A), porque o periósteo é forte posteromedial e fraco anterolateral. O comentário explica as duas leituras.",
+   "conceito": "No Salter-Harris II, o traço passa pela fise e sai pela metáfise, levando um fragmento triangular de metáfise junto com a epífise (o fragmento de Thurston-Holland). De que lado fica esse fragmento depende do **periósteo**.\n\n**A lógica do periósteo.** O periósteo da criança é espesso e forte. Na fratura, ele se rompe do lado mais fraco e fica íntegro do lado mais forte. O fragmento metafisário fica do lado onde o periósteo **não** rasgou, como uma dobradiça.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 19) diz.** No úmero proximal, o periósteo é **forte posteromedial** e **fraco anterolateral**. O capítulo descreve o fragmento metafisário costumando ser **anterolateral**.\n\n**A divergência.** A banca deu **posteromedial** como resposta. Pela leitura do capítulo, a resposta seria anterolateral. Mantemos o gabarito oficial e registramos a diferença; se a questão voltar, vale saber o que a banca já considerou certo.\n\n**Outros fatos do Salter-Harris do úmero proximal.** O tipo I predomina abaixo de 5 anos, o II no maior, o III é raro e aparece com luxação glenoumeral.\n\n**Na prova:** periósteo forte **posteromedial**; o capítulo põe o fragmento do SH II **anterolateral**, a banca o pôs posteromedial.\n\nNo resumo de ombro e úmero da criança, a anatomia do úmero proximal traz o dado do periósteo.",
+   "correta": "**D: posteromedial (gabarito oficial).** O capítulo do Rockwood and Wilkins descreve o periósteo forte posteromedial e o fragmento metafisário costumando ser anterolateral; veja o alerta.",
+   "incorretas": {
+    "A": "**Anterolateral é a localização que o capítulo descreve como a mais comum**, do lado em que o periósteo é fraco. A banca não aceitou esta leitura.",
+    "B": "**Anteromedial não é a localização descrita no capítulo nem a escolhida pela banca.**",
+    "C": "**Posterolateral também não aparece no capítulo** como localização típica do fragmento metafisário."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: anatomia; Úmero proximal: classificação e tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: anatomia",
+     "Úmero proximal: classificação e tratamento"
+    ],
+    "blocos": [
+     "umero-proximal-anatomia-f0be4955",
+     "umero-proximal-anatomia-5f8a04fb",
+     "umero-proximal-classificacao-e-tratamento-85b800d0"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "b2f3c01e5ddeecd33da7dc2086363448d720f571280aef8a22f7c3a25e381298"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0945": {
+  "questaoSha256": "13b54b38835f3c52449fd0bb450be770351f34afc5898c07e0b2ffa38b07d8bf",
+  "comentarioAnteriorSha256": "4a16caf914dcb882e78088f6937f92f5433de92e238e4951f7684e67c24add1f",
+  "comentario": {
+   "conceito": "O úmero proximal da criança remodela muito, e por isso aceita desvios que assustariam em qualquer outro osso. Duas razões explicam isso: a fise proximal responde por **80%** do crescimento do úmero, e o ombro tem um arco de movimento enorme, que esconde deformidades.\n\n**O limite depende da idade.** A tabela 19-1 do Rockwood and Wilkins (10ª ed., cap. 19) traz:\n\n| Idade | Angulação | Desvio |\n|---|---|---|\n| Abaixo de 5 anos | 70 graus | 100% |\n| **5 a 11 anos** | **40 a 70 graus** | **50% a 100%** |\n| Acima de 12 anos | menos de 40 graus | menos de 50% |\n\nQuanto mais anos de crescimento restam, mais se tolera. A criança de 7 anos está na faixa intermediária.\n\n**O tratamento.** A maioria vai sem cirurgia, com tipoia. A redução fica para o adolescente, acima de 12 anos, com Neer-Horwitz III e IV fora desses limites: fios lisos nas fisárias, hastes elásticas nas metafisárias.\n\n**Na prova:** 7 anos = **40 a 70 graus** e **50% a 100%** de desvio.\n\nA tabela de alinhamento aceitável fica no resumo de ombro e úmero da criança, na seção de classificação e tratamento.",
+   "correta": "**D: 40-70° / 50-100%.** É a faixa da tabela 19-1 do capítulo para crianças de 5 a 11 anos.",
+   "incorretas": {
+    "A": "**90 graus e 100% vai além até da faixa mais tolerante.** Abaixo de 5 anos, o capítulo aceita 70 graus e 100% de desvio.",
+    "B": "**A angulação está certa, mas o desvio menor que 50% é o limite do adolescente acima de 12 anos.** Aos 7 anos aceita-se de 50% a 100%.",
+    "C": "**Menos de 40 graus é o limite do adolescente**, combinado aqui com o desvio da faixa intermediária. Mistura duas linhas da tabela."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento; Úmero proximal: anatomia."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: classificação e tratamento",
+     "Úmero proximal: anatomia"
+    ],
+    "blocos": [
+     "umero-proximal-classificacao-e-tratamento-0512b5c8",
+     "umero-proximal-classificacao-e-tratamento-e2c0307e",
+     "umero-proximal-anatomia-f0be4955"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "0765822c75702cd51ebdb4002d9198edddf66acce7b3f9731ba15332341d1ea1"
+   }
+  ],
+  "imagensConferidas": [],
+  "justificativaRemocaoAlerta": "O alerta antigo dizia que os limites variam entre protocolos. A miniaula nova apresenta a faixa como a tabela 19-1 do capítulo do Rockwood and Wilkins, por idade, e não como regra universal; o gabarito coincide com a tabela."
+ },
+ "pediatria-0667": {
+  "questaoSha256": "1f616d0c0c8b2c96f29bea859e3003076f15b71b839a6908b864ce23769f530d",
+  "comentarioAnteriorSha256": "c01c798ace01b0079647584e4f7ebbbe9b835be12f1a0d2947d7c23f7f560881",
+  "comentario": {
+   "conceito": "Reduzir uma fratura é levar o fragmento que se mexe até o fragmento que não se controla. No úmero proximal, quem manda é a **cabeça**, presa ao manguito rotador.\n\n**Para onde vai a cabeça.** Quando o traço está acima do peitoral maior, o manguito leva o fragmento proximal para **abdução, flexão e rotação externa** (Rockwood and Wilkins, 10ª ed., cap. 19). Não há como empurrar a cabeça de volta; a solução é levar a diáfise até ela.\n\n**A manobra do capítulo.** Tração e, então, **abdução, flexão e rotação externa**. O capítulo acrescenta um detalhe: antes, um pouco de **adução e rotação interna** relaxa o peitoral maior e ajuda a empurrar a diáfise para trás.\n\n**Quando não reduz.** Os bloqueios são o periósteo, a cápsula e o **cabo longo do bíceps**. No adolescente, a perda da redução chega a 50%, e a fixação entra: fios lisos nas fisárias, hastes elásticas nas metafisárias.\n\n**Na prova:** redução do úmero proximal = abdução + **flexão** + **rotação lateral** (externa).\n\nO resumo de ombro e úmero da criança descreve a manobra na seção de classificação e tratamento.",
+   "correta": "**D: flexão com rotação lateral.** Junto com a abdução, é a posição que leva a diáfise ao encontro da cabeça, puxada pelo manguito para abdução, flexão e rotação externa.",
+   "incorretas": {
+    "A": "**A rotação lateral está certa, mas a cabeça está em flexão, não extensão.** Estender afastaria a diáfise do fragmento proximal.",
+    "B": "**A flexão está certa, mas a rotação medial vai contra a rotação externa da cabeça.** O capítulo só usa adução e rotação interna antes, para relaxar o peitoral, não como posição final.",
+    "C": "**Erra as duas.** Extensão e rotação medial afastam a diáfise da posição da cabeça."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento; Úmero proximal: anatomia."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: classificação e tratamento",
+     "Úmero proximal: anatomia"
+    ],
+    "blocos": [
+     "umero-proximal-classificacao-e-tratamento-e2c0307e",
+     "umero-proximal-anatomia-d40fae5f"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "3f47d34416388c66a300646314884d573dfd85fb6c6db5d5259db143e7d733dc"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0595": {
+  "questaoSha256": "9f99c372fc6a88a932a58742bd2461a74711a7d4aa2c0de84b6e086a17532d10",
+  "comentarioAnteriorSha256": "e7cc8de529836453a12a689b47b8764b96fd593309ba26eb0f9f253a821fc60d",
+  "comentario": {
+   "conceito": "**O que as imagens mostram.** No AP e no perfil do ombro de um adolescente de 14 anos, a diáfise umeral está completamente desviada em relação à cabeça, sem contato entre os fragmentos e com cavalgamento. É uma fratura do úmero proximal com **desvio total**.\n\n**O que a idade muda.** O úmero proximal remodela muito, porque a fise faz 80% do crescimento do osso. Mas a remodelação acaba com o crescimento. A tabela 19-1 do Rockwood and Wilkins (10ª ed., cap. 19) aceita, **acima de 12 anos**, só **menos de 40 graus** de angulação e **menos de 50%** de desvio. Aos 14 anos, um desvio total está muito fora disso.\n\n**O tratamento do capítulo.** Acima de 12 anos com Neer-Horwitz III e IV inaceitáveis: **redução** com tração, abdução, flexão e rotação externa. No adolescente, a perda da redução chega a 50%, então se **fixa**. Nas fraturas **fisárias**, **fios lisos** paralelos, percutâneos, entrando no tubérculo deltoide ou acima, retirados com 4 semanas; nas metafisárias, hastes elásticas retrógradas.\n\n**Na prova:** adolescente com desvio inaceitável no úmero proximal = **redução fechada e fios percutâneos**.\n\nO resumo de ombro e úmero da criança traz a tabela e a técnica na seção de classificação e tratamento.",
+   "correta": "**D: redução incruenta e fixação percutânea com fios de Kirschner.** Aos 14 anos o desvio total é inaceitável; o capítulo reduz e fixa com fios lisos percutâneos, porque a redução se perde sem fixação no adolescente.",
+   "incorretas": {
+    "A": "**Tipoia serve à maioria das fraturas da criança, que remodelam.** Aos 14 anos sobra pouco crescimento, e o desvio total excede o limite de 50%.",
+    "B": "**Reduzir e só imobilizar deixa a fratura perder a redução**, o que o capítulo descreve em até 50% dos adolescentes. Por isso se fixa.",
+    "C": "**Redução aberta com parafusos canulados não é a técnica do capítulo.** A redução costuma ser fechada; quando há bloqueio (periósteo, cápsula, bíceps), abre-se, mas a fixação da fisária é com fios lisos."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: classificação e tratamento"
+    ],
+    "blocos": [
+     "umero-proximal-classificacao-e-tratamento-e2c0307e",
+     "umero-proximal-classificacao-e-tratamento-0512b5c8",
+     "umero-proximal-classificacao-e-tratamento-85b800d0",
+     "umero-proximal-classificacao-e-tratamento-841c1a5b"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "4f6872189973fd730b17e4c3080284dd22aacdcba0d664761a5ac32ceaa1a628"
+   }
+  ],
+  "imagensConferidas": [
+   "pediatria/pediatria-0595-1.jpeg"
+  ]
+ },
+ "pediatria-0642": {
+  "questaoSha256": "7a45bc98f9612458548f2ea4c9694f721814455a620ed779b1f786fa0a5a39cb",
+  "comentarioAnteriorSha256": "d93f80f669f46b109ae180d780fd2c6cb1553e5c25e0759c207b77ad23e20625",
+  "comentario": {
+   "alerta": "Gabarito oficial A (varo, recuperação espontânea) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 19, descreve as lesões nervosas nas fraturas do úmero proximal com desvio em valgo, com recuperação espontânea em 9 a 12 meses (alternativa B). As duas alternativas concordam na recuperação espontânea; divergem na direção do desvio.",
+   "conceito": "O nervo **axilar** é o mais exposto no úmero proximal da criança, e o plexo braquial passa logo abaixo. Uma fratura desviada pode estirar essas estruturas.\n\n**O que diz o Rockwood and Wilkins (10ª ed., cap. 19).** Entre as complicações, o capítulo descreve **lesão nervosa nas fraturas em valgo**, com **recuperação em 9 a 12 meses** na maioria.\n\n**A divergência.** A banca deu como resposta o desvio em **varo** com recuperação espontânea. Pelo capítulo, a direção seria **valgo**. As duas leituras concordam no ponto prático: a maioria **recupera sozinha**, e a exploração cirúrgica não é a regra. Mantemos o gabarito oficial e registramos a diferença.\n\n**O varo que existe.** O úmero varo, com ângulo abaixo de 140 graus e tuberosidade alta, é outra complicação, de crescimento, tratada com osteotomia; não é a lesão nervosa aguda.\n\n**Na prova:** lesão nervosa no úmero proximal da criança se recupera sozinha na maioria; o capítulo a liga ao **valgo**, a banca ao varo.\n\nNo resumo de ombro e úmero da criança, as complicações estão na seção de classificação e tratamento.",
+   "correta": "**A: varo e recuperação espontânea na maioria dos casos (gabarito oficial).** A recuperação espontânea é sustentada pelo capítulo, que porém liga a lesão nervosa ao desvio em valgo; veja o alerta.",
+   "incorretas": {
+    "B": "**É a leitura do capítulo:** lesão nervosa nas fraturas em valgo, com recuperação em 9 a 12 meses. A banca não aceitou esta alternativa.",
+    "C": "**A exploração cirúrgica não é a regra.** O capítulo descreve recuperação espontânea na maioria.",
+    "D": "**O valgo é o desvio do capítulo, mas a exploração na maioria não.** A lesão nervosa costuma se recuperar sem cirurgia."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento; Úmero proximal: anatomia."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: classificação e tratamento",
+     "Úmero proximal: anatomia"
+    ],
+    "blocos": [
+     "umero-proximal-classificacao-e-tratamento-e2c0307e",
+     "umero-proximal-classificacao-e-tratamento-841c1a5b",
+     "umero-proximal-anatomia-f0be4955"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "0e7cdc163a4d4b6b01f4becd77fb973856dff9d5b5d4d257c9f6a0990a13ec37"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0848": {
+  "questaoSha256": "438edf83b42a86a7e899c940c6a3c731c0846748b221f6ae70d18dd4b6a66c71",
+  "comentarioAnteriorSha256": "b53824946daf458b75c6356d26affdaaf21cb1fed33b730fa37f30ff8a1bc4ef",
+  "comentario": {
+   "conceito": "**O que a imagem mostra.** Quatro desenhos do úmero proximal com a fise marcada. Em **A**, o traço corre todo pela fise, separando a epífise da metáfise. Em **B**, ele passa pela fise e sai pela metáfise, levando um fragmento metafisário. Em **C**, atravessa a epífise até a articulação. Em **D**, cruza epífise, fise e metáfise. São os tipos **I, II, III e IV** de Salter-Harris.\n\n**O tipo depende da idade.** No Rockwood and Wilkins (10ª ed., cap. 19), o **Salter-Harris I predomina abaixo de 5 anos**; o **II**, na criança maior e no adolescente; o **III é raro** e aparece com luxação glenoumeral; o IV não foi relatado no úmero proximal. As fraturas metafisárias aparecem entre 5 e 12 anos.\n\n**No lactente.** a epífise ainda pouco ossificada pode \"desaparecer\" na radiografia; a ultrassonografia ajuda, e é preciso afastar infecção e maus-tratos.\n\n**Na prova:** descolamento do úmero proximal abaixo de 5 anos = **Salter-Harris I**.\n\nO resumo de ombro e úmero da criança traz a distribuição por idade na seção de classificação e tratamento.",
+   "correta": "**A: A.** O desenho A mostra o traço todo pela fise, o Salter-Harris I, o tipo que o capítulo descreve como predominante abaixo de 5 anos.",
+   "incorretas": {
+    "B": "**B é o Salter-Harris II**, com fragmento metafisário. É o tipo da criança maior e do adolescente.",
+    "C": "**C é o Salter-Harris III**, que entra na articulação. É raro e aparece com luxação glenoumeral.",
+    "D": "**D é o Salter-Harris IV**, que cruza metáfise, fise e epífise. O capítulo diz que não foi relatado no úmero proximal."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: classificação e tratamento"
+    ],
+    "blocos": [
+     "umero-proximal-classificacao-e-tratamento-85b800d0",
+     "umero-proximal-classificacao-e-tratamento-841c1a5b"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "84c018aa3879a26dc03a60e6a0682257810e9d3ca7741a18b20ac128bc949759"
+   }
+  ],
+  "imagensConferidas": [
+   "pediatria/pediatria-0848-m1.png"
+  ]
+ },
+ "pediatria-0714": {
+  "questaoSha256": "0e65766597ab22f064f509bfc6c86165d7a3d3246caea2da48cd3089333b72ef",
+  "comentarioAnteriorSha256": "980b8a6364b9875cd5dd66db6f0980e56a927cd0dea7f8fb043c1b0b3acac7b0",
+  "comentario": {
+   "conceito": "Os descolamentos epifisários do úmero proximal seguem a classificação de Salter-Harris, e cada tipo tem o seu contexto. A questão pergunta qual deles acompanha a **luxação glenoumeral**.\n\n**A distribuição no Rockwood and Wilkins (10ª ed., cap. 19).**\n- **Tipo I:** abaixo de 5 anos, traço todo pela fise.\n- **Tipo II:** na criança maior e no adolescente, com fragmento metafisário.\n- **Tipo III:** **raro**, aparece **com luxação glenoumeral**.\n- **Tipo IV:** não relatado no úmero proximal.\n\n**Por que o tipo III vem com a luxação.** O tipo III atravessa a epífise até a superfície articular. Para isso, a força tem de agir sobre a própria articulação, como na luxação, que leva a cabeça para fora e fende a epífise no caminho.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é o tipo III, sustentada pelo capítulo.\n\n**Na prova:** úmero proximal com luxação glenoumeral = **Salter-Harris III**.\n\nO resumo de ombro e úmero da criança traz os tipos na seção de classificação e tratamento.",
+   "correta": "**C: III.** O capítulo descreve o Salter-Harris III do úmero proximal como raro e associado à luxação glenoumeral.",
+   "incorretas": {
+    "A": "**O tipo I é o da criança abaixo de 5 anos**, com o traço todo pela fise, sem relação com a luxação.",
+    "B": "**O tipo II é o mais comum na criança maior e no adolescente**, com fragmento metafisário. Não é o que acompanha a luxação.",
+    "D": "**O tipo IV não foi relatado no úmero proximal**, segundo o capítulo."
+   },
+   "conferido": false,
+   "provavel": "C",
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: classificação e tratamento"
+    ],
+    "blocos": [
+     "umero-proximal-classificacao-e-tratamento-85b800d0",
+     "umero-proximal-classificacao-e-tratamento-841c1a5b"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "84c018aa3879a26dc03a60e6a0682257810e9d3ca7741a18b20ac128bc949759"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0753": {
+  "questaoSha256": "66c3d6b0f7c04ea32376a7a6984891a65a35a4e68d002aa7e9ccdbd8151e6358",
+  "comentarioAnteriorSha256": "3973d0f95bd64ee31e786332bda0cd466ecef9d37afc06e3f48618d91da0a716",
+  "comentario": {
+   "conceito": "Quando o descolamento epifisário do úmero proximal **não reduz** com a manobra fechada, quase sempre há alguma coisa presa entre os fragmentos.\n\n**Os bloqueios do Rockwood and Wilkins (10ª ed., cap. 19).** O capítulo lista três: o **periósteo**, a **cápsula** e o **cabo longo do bíceps**. O periósteo da criança é espesso e se rompe do lado mais fraco, anterolateral; a borda rasgada pode dobrar para dentro do traço e travar a redução. O cabo longo do bíceps, que corre no sulco entre as tuberosidades, também pode se interpor.\n\n**O que se faz.** Quando a redução fechada falha diante de desvio inaceitável, abre-se para retirar o tecido interposto, e a fratura é fixada: fios lisos nas fisárias, hastes elásticas nas metafisárias.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a interposição do periósteo, a primeira dos bloqueios do capítulo.\n\n**Na prova:** redução impossível no úmero proximal = **interposição** (periósteo, cápsula ou cabo longo do bíceps).\n\nO resumo de ombro e úmero da criança cita os bloqueios na seção de classificação e tratamento.",
+   "correta": "**C: interposição do periósteo.** É um dos três bloqueios à redução que o capítulo lista, junto com a cápsula e o cabo longo do bíceps.",
+   "incorretas": {
+    "A": "**Instabilidade dificulta manter a redução, não obtê-la.** O capítulo trata a perda da redução do adolescente com fixação; a redução impossível vem de tecido interposto.",
+    "B": "**Cominuição não está entre os bloqueios citados.** O capítulo atribui a falha da redução a periósteo, cápsula e bíceps.",
+    "D": "**O supraespinal se insere na tuberosidade maior e não é listado como bloqueio.** O tendão que se interpõe, segundo o capítulo, é o cabo longo do bíceps."
+   },
+   "conferido": false,
+   "provavel": "C",
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Úmero proximal: classificação e tratamento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Úmero proximal: classificação e tratamento"
+    ],
+    "blocos": [
+     "umero-proximal-classificacao-e-tratamento-e2c0307e",
+     "umero-proximal-classificacao-e-tratamento-841c1a5b"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "0c5ce352964b391dd5d343af51597bec14afc51fa030001b9e4049ec8ffee5e0"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0631": {
+  "questaoSha256": "d97e199416cc553d5aabf1399668b13a6c9611a27483514ad17c4121ef50bd84",
+  "comentarioAnteriorSha256": "ff476c4718ef129c1de4454c68ecb9d0d1993076fd34c88f84fa52c30a92152d",
+  "comentario": {
+   "conceito": "A diáfise do úmero tolera desvios porque o ombro e o cotovelo compensam muito: uma angulação ou rotação moderada não aparece no movimento. Mas há limites, e eles são diferentes para cada plano.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 19) aceita.**\n- **Varo:** 20 a 30 graus;\n- **ápice anterior:** 20 graus;\n- **rotação interna (medial):** 15 graus;\n- **encurtamento:** 1 a 2 cm.\n\nAté 30 graus remodelam no adolescente, e abaixo de 6 anos quase tudo remodela. As fraturas distais da diáfise tendem a varo e remodelam pouco.\n\n**O tratamento.** Tala de coaptação no início, **brace funcional** depois (o princípio de Sarmiento), consolidação em cerca de 6 semanas. Cirurgia para fratura exposta, lesão vascular, cotovelo flutuante ou alinhamento inaceitável.\n\n**Na prova:** diáfise do úmero da criança aceita **15 graus de rotação medial** e **20 a 30 graus de varo**.\n\nO resumo de ombro e úmero da criança traz os limites na seção de diáfise.",
+   "correta": "**A: 15 graus e 20 graus de varo.** São os limites de rotação interna e de varo do capítulo para a diáfise do úmero da criança.",
+   "incorretas": {
+    "B": "**A rotação de 15 graus está certa, mas 40 graus de varo passam do limite de 20 a 30 graus.**",
+    "C": "**30 graus de rotação medial é o dobro do aceitável, e o desvio que o capítulo tolera é em varo, não valgo.**",
+    "D": "**Erra os dois limites.** 30 graus de rotação e 40 graus de valgo não aparecem como aceitáveis no capítulo."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Diáfise do úmero."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Diáfise do úmero"
+    ],
+    "blocos": [
+     "diafise-do-umero-ed0e929e",
+     "diafise-do-umero-1594c017",
+     "diafise-do-umero-c60b57e3"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "7a4656b28784493a551b158ac6501a4340326009d280008c1bbd01fcf276681d"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0953": {
+  "questaoSha256": "e79e7edb6490a5e47ef0ac86a09e6dfa8db4b1032cc46fc8f3f27e367735370f",
+  "comentarioAnteriorSha256": "84ee13675c69589ce6047d44fc11471a2c2a1e34c86474619da342f8c6f3203c",
+  "comentario": {
+   "conceito": "A fratura da diáfise do úmero no parto acontece em bebês grandes, com distocia ou extração difícil. O recém-nascido não mexe o braço, mas a **mão funciona**: é uma **pseudoparalisia**, causada pela dor, e não por lesão do plexo.\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 19) ensina.** A imobilização é só para conforto, e a remodelação é enorme: cerca de **50% em 1 a 2 anos**. O cuidado é com a **rotação interna**: o braço do bebê tende a ficar junto ao corpo, com o antebraço sobre o tórax, e a fratura consolida rodada para dentro. O capítulo recomenda atenção a isso, posicionando o braço com o cotovelo estendido.\n\n**Diagnóstico diferencial.** Abaixo de 3 anos, a fratura da diáfise do úmero faz pensar em maus-tratos, embora só a minoria seja abusiva. No parto, a história explica a lesão.\n\n**Na prova:** fratura de parto da diáfise do úmero = consolida em **rotação interna**; o resto remodela.\n\nO resumo de ombro e úmero da criança trata da fratura de parto na seção de diáfise.",
+   "correta": "**C: rotação interna.** É a deformidade que o capítulo destaca na fratura de parto, porque o braço do bebê tende a ficar rodado para dentro junto ao corpo; angulação remodela, rotação quase não.",
+   "incorretas": {
+    "A": "**O valgo não é a deformidade típica.** As angulações da fratura de parto remodelam muito, cerca de 50% em 1 a 2 anos.",
+    "B": "**A angulação em flexão também remodela.** O desvio que persiste é rotacional.",
+    "D": "**A rotação é interna, não externa.** O bebê mantém o braço junto ao tronco, rodado para dentro."
+   },
+   "conferido": false,
+   "alerta": "A banca cobra uma complicação potencial. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 19, destaca o cuidado com a rotação interna na fratura de parto, mas o prognóstico é em geral excelente: a remodelação chega a 50% em 1 a 2 anos.",
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Diáfise do úmero."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Diáfise do úmero"
+    ],
+    "blocos": [
+     "diafise-do-umero-1594c017",
+     "diafise-do-umero-c60b57e3"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "b845aecd560f0b12e6fe09067e6bb7de5bd10998b82c55bc0d24bbb1b16997e4"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0618": {
+  "questaoSha256": "a256a8f71a3cebc0a877c4194e80b9074325db700b66454d77c5b45bdf949dbe",
+  "comentarioAnteriorSha256": "db02e6b5d033c02c35550a1b34ae43e96af91f4cd2c3e7bbe568233512740f76",
+  "comentario": {
+   "conceito": "As fraturas da diáfise do úmero são **20% ou menos** das fraturas do úmero na criança e têm uma distribuição **bimodal**: um pico nos **lactentes** e outro nos **adolescentes**.\n\n**O primeiro pico.** No Rockwood and Wilkins (10ª ed., cap. 19), o grupo dos lactentes inclui as fraturas de **parto** (bebês grandes, distocia, extração difícil) e as fraturas da primeira infância. Abaixo de 3 anos, a fratura da diáfise do úmero obriga a pensar em **maus-tratos**, embora só a minoria seja abusiva.\n\n**O segundo pico.** No adolescente, o mecanismo é o trauma de maior energia, como esporte e acidentes.\n\n**O que se cobra.** A banca pediu a faixa etária mais frequente, e o capítulo, ao descrever o pico dos lactentes, sustenta a faixa de **0 a 3 anos**. As faixas intermediárias ficam no vale entre os dois picos.\n\n**Na prova:** diáfise do úmero da criança = bimodal, lactentes e adolescentes; a faixa **0 a 3 anos** é a resposta cobrada.\n\nNo resumo de ombro e úmero da criança, a seção de diáfise traz a distribuição e a fratura de parto.",
+   "correta": "**A: 0 e 3 anos.** É a faixa do primeiro pico da distribuição bimodal descrita no capítulo, que inclui as fraturas de parto e as dos lactentes.",
+   "incorretas": {
+    "B": "**De 3 a 6 anos é o vale entre os dois picos.** O capítulo concentra as fraturas nos lactentes e nos adolescentes.",
+    "C": "**De 6 a 9 anos também fica entre os picos**, longe dos lactentes e antes da adolescência.",
+    "D": "**De 9 a 12 anos é a pré-adolescência.** O segundo pico do capítulo é o adolescente, e a faixa cobrada como a mais frequente é a dos lactentes."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do ombro e fraturas do úmero proximal e da diáfise na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft. Seções: Diáfise do úmero."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-19-ombro-umero",
+    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
+    "secoes": [
+     "Diáfise do úmero"
+    ],
+    "blocos": [
+     "diafise-do-umero-1594c017",
+     "diafise-do-umero-c60b57e3"
+    ],
+    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
+    "trechosSha256": "b845aecd560f0b12e6fe09067e6bb7de5bd10998b82c55bc0d24bbb1b16997e4"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}

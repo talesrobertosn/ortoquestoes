@@ -1,0 +1,42 @@
+{
+  "mao-2046": {
+    "questaoSha256": "55a77f20c7ef16ee66c74bcbfddd3b95ce6f851a9b385f1cef96f963a67ae946",
+    "comentarioAnteriorSha256": "c3ed6447e97ce8f6d79b751e1c4733b5456434869668a9f3f5de056d4904dc1f",
+    "comentario": {
+      "conceito": "A mensagem clínica é que uma **radiografia inicial normal não exclui fratura do escafoide**. Uma fratura sem desvio pode permanecer oculta no primeiro atendimento, de modo que história compatível e dor localizada exigem investigação ou acompanhamento, mesmo com a imagem inicial negativa (Rockwood adultos, 10ª ed., cap. 44, diagnóstico do escafoide).\n\nHá uma divergência numérica que precisa ficar explícita. O gabarito registrado na questão é **alternativa A, até 25%**; o corpo do resumo consultado informa que **30% a 40%** não são vistas inicialmente. Nenhuma das quatro alternativas reproduz essa faixa. Ao comparar as fontes, é preciso reconhecer essa diferença de estimativa, sem transformar 25% no valor descrito pelo resumo.\n\nO escafoide possui anatomia complexa, e a sobreposição radiográfica dificulta identificar o traço sem desvio. O resumo recomenda incidências específicas e orienta imobilizar a suspeita de fratura oculta, reavaliando em **7 a 10 dias**. Persistindo a suspeita, entram ressonância ou tomografia; quem precisa de uma definição imediata pode fazer exame avançado já na primeira avaliação.\n\nA ressonância é destacada para a fratura aguda oculta; a tomografia tem papel especialmente importante na forma, no desvio e no alinhamento do osso. A escolha depende da pergunta clínica. O ponto para a prática é não liberar uma suspeita consistente apenas porque o traço não apareceu, sem transformar estimativas diferentes de falso-negativo em um número universal.\n\n**Por que esta questão foi criada.** Inspirada na questão 67 da SBCM 2024, que perguntou que proporção das fraturas do escafoide não aparece nas radiografias iniciais.",
+      "correta": "**Alternativa A, resposta registrada (até 25%).** Essa é a letra preservada do acervo, mas o resumo Rockwood10-44 consultado dá 30% a 40% de fraturas não vistas inicialmente. A alternativa não reproduz a estimativa dessa fonte; resolver a diferença bibliográfica exige conferir a fonte primária da questão.",
+      "incorretas": {
+        "B": "O limite de 20% é ainda menor que os 25% registrados no gabarito e não cobre a faixa de 30% a 40% do resumo. Usá-lo como teto poderia reforçar uma confiança excessiva na radiografia inicial. O exame negativo precisa ser interpretado junto da história e da dor localizada.",
+        "C": "Até 15% não corresponde ao gabarito registrado nem à faixa do material consultado. Uma porcentagem menor não torna a investigação mais segura: o resumo descreve um contingente maior de fraturas ocultas e recomenda reavaliar ou investigar a suspeita persistente.",
+        "D": "Até 10% subestima ainda mais a proporção descrita no resumo. Não deve ser confundido com a frequência de outra complicação, como pseudartrose, que mede um desfecho diferente. Aqui o denominador é o das fraturas que não aparecem na primeira radiografia, antes de discutir consolidação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: diagnóstico e imagem."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito registrado é a alternativa A (até 25%). O resumo Rockwood10-44 informa 30% a 40% de fraturas não vistas nas radiografias iniciais; nenhuma alternativa reproduz essa faixa. O número da questão difere da estimativa da fonte consultada."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: diagnóstico e imagem"
+        ],
+        "blocos": [
+          "escafoide-diagnostico-e-imagem-54713833",
+          "escafoide-diagnostico-e-imagem-b1203433",
+          "escafoide-diagnostico-e-imagem-8899eeb9",
+          "escafoide-diagnostico-e-imagem-2c167e09",
+          "escafoide-diagnostico-e-imagem-c1f614fc"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "ae56c93b2af8c822d3838dcc42c4ae90465077605a8a8a160bf2087ed7ae6111"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

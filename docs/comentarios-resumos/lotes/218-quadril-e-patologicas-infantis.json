@@ -1,0 +1,221 @@
+{
+  "pediatria-1193": {
+    "questaoSha256": "4192e72cd7aabfe1c88b6cc02ece3f751a22c0f520973fcfb7a171bac19625dc",
+    "comentarioAnteriorSha256": "a056bb111eefb83e153d778b8ae509de9092b0357a36407bdc327467def4f5fc",
+    "comentario": {
+      "conceito": "Na **luxação traumática do quadril**, o fator mais associado à necrose destacado no resumo é o **tempo até reduzir**, alternativa D. A redução é urgente, e atraso acima de 6 horas é o maior fator de risco apresentado (Rockwood and Wilkins, 10ª edição, capítulo 24, luxação traumática).\n\nEssa pergunta não é a mesma da **fratura do colo**, em que a qualidade da redução é o principal fator modificável discutido. Embora ambos os cenários envolvam a cabeça femoral, o capítulo os organiza separadamente. Identificar qual lesão o enunciado descreve evita transportar a resposta de um cenário para outro.\n\nO resumo recomenda imagem após toda redução e investigação de interposição se o espaço permanecer alargado. Portanto, a urgência não termina em realizar uma manobra: é necessário verificar se a articulação ficou congruente. No adolescente, relaxamento e radioscopia também protegem contra o descolamento epifisário.\n\n**Na prova:** numa luxação, o relógio até a redução é decisivo. Tipo de imobilização posterior e particularidades etárias não substituem essa prioridade, nem justificam esperar por dias.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2024 (`pediatria-0537`), sobre a luxação traumática do quadril.",
+      "correta": "Alternativa D. O capítulo identifica mais de 6 horas até a redução como o maior fator de risco para necrose nesse contexto. O limite orienta urgência; não significa que um atendimento mais rápido garanta risco zero.",
+      "incorretas": {
+        "A": "O gesso tem indicações posteriores à redução, especialmente nos pequenos, mas não é o fator principal de necrose destacado. Escolher o tipo de imobilização não corrige o efeito de uma cabeça que permaneceu luxada por tempo excessivo.",
+        "B": "A idade abaixo de 6 anos ajuda a explicar luxações de baixa energia e frequentemente isoladas. O resumo não a coloca acima do atraso como principal fator de necrose; são características de perguntas diferentes.",
+        "C": "A direção anterior é menos frequente, mas não substitui o tempo até a redução como fator de risco dominante apresentado. Frequência ou direção anatômica não devem ser confundidas com a prioridade temporal do tratamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Luxação traumática do quadril; Necrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Luxação traumática do quadril",
+          "Necrose"
+        ],
+        "blocos": [
+          "luxacao-traumatica-do-quadril-a36e6cc4",
+          "luxacao-traumatica-do-quadril-97f4077e",
+          "necrose-42bbef0d"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "048a8e4bef943e9f686e13593c2d15819029e642d24f14103846f8a3f3275552"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1195": {
+    "questaoSha256": "9af672a8d8bd451edeb1456b83c0961e0815390036ee7f1f8ca8ad41f1aa8763",
+    "comentarioAnteriorSha256": "5c07f6e5e346f185ededa1bed172003627549a97f12dbc5479d47796b80db8d3",
+    "comentario": {
+      "conceito": "A fise femoral proximal contribui com cerca de **13% do crescimento do membro**, e a discrepância por sua parada tende a importar mais na **criança pequena**. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 24, coxa vara, fise e pseudartrose).\n\nO efeito de fechar uma fise depende de quanto ela contribui e de quanto crescimento ainda resta. O resumo dá cerca de 3 mm por ano para a fise proximal. A mesma perda de crescimento anual acumulada por mais anos pode ter consequência maior do que uma parada próxima da maturidade; não é adequado prever grande discrepância igual para todas as idades.\n\nO fechamento prematuro é relatado em cerca de **28%**, associado à necrose e ao implante que atravessa a fise. Isso não torna a fixação transfisária proibida: no tipo II, o capítulo admite cruzar quando necessário à estabilidade, comparando as sequelas fisárias às de pseudartrose e necrose.\n\n**Na prova:** 13% não é metade do membro. O risco precisa ser discutido com idade, crescimento restante e estabilidade da fratura, sem negar a possibilidade de parada nem sacrificar toda fixação para evitá-la.\n\n**Por que esta questão foi criada.** É uma questão de projeção, ligada aos tipos de DELBET (TARO 2025 `pediatria-0530`, TARO 2015 `pediatria-0599`).",
+      "correta": "Alternativa B. Mantém o percentual relativo ao membro inteiro e a maior importância clínica na criança pequena. O dado deve ser interpretado em conjunto com crescimento remanescente, não como previsão idêntica de encurtamento para cada paciente.",
+      "incorretas": {
+        "A": "A fonte fornece 13%, não 50%, e salienta que a discrepância pesa sobretudo na criança pequena. A opção erra o denominador e generaliza a consequência a todas as idades.",
+        "C": "O resumo informa fechamento em cerca de 28%, valor muito maior que menos de 2%. Não confundir a contribuição de crescimento da fise com a frequência da complicação: são percentuais de desfechos diferentes.",
+        "D": "A fonte relaciona o fechamento à necrose e ao implante cruzando a fise. A opção nega justamente as associações apresentadas, embora a possibilidade de atravessar a fise continue existindo quando a estabilidade exigir."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Coxa vara, fise e pseudartrose; Tratamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Coxa vara, fise e pseudartrose",
+          "Tratamento"
+        ],
+        "blocos": [
+          "coxa-vara-fise-e-pseudartrose-17944458",
+          "tratamento-089519c6"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "250c31e71bcf3bb2bf9f49ba777b4b2fb50a6a35ace7c3c246645ef847a705cb"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1196": {
+    "questaoSha256": "ce8c527ef2f32aa45f312b6bbfe1cedeb567952bcfa3e65f9beac26342cea1b1",
+    "comentarioAnteriorSha256": "64b2499d469815fc45ef622f01049b732457bed1d3584a3a9ebef4d01075765f",
+    "comentario": {
+      "conceito": "Lesão **central, bem delimitada**, no úmero proximal, com **fragmento caído**, é o padrão do **cisto ósseo simples** apresentado no resumo. Com fratura pouco desviada do membro superior, a conduta inicial é **conservadora**, com tipoia ou órtese, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nÉ necessário separar o tratamento da **fratura** do destino da **lesão de base**. A consolidação pode ocorrer sem que o cisto desapareça; o resumo relata cicatrização do cisto em apenas cerca de 10% nesse contexto conservador. Por isso, imobilizar a fratura não significa declarar a doença curada e encerrar todo acompanhamento.\n\nA localização também importa: o capítulo contrapõe o membro superior, tratado inicialmente de modo conservador, ao **quadril**, para o qual indica cirurgia. Não existe uma regra única de operar todo cisto fraturado ou de tratar todos os sítios com a mesma proteção.\n\n**Na prova:** identificar a lesão antes de escolher uma cirurgia agressiva. Se o diagnóstico não estiver claro, o resumo recomenda métodos temporários e biópsia planejada com cuidado; esse princípio não transforma uma apresentação típica de cisto simples do úmero em ressecção oncológica de urgência.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra fraturas patológicas em vários temas, e o cisto ósseo simples do úmero proximal é um exemplo típico descrito no resumo.",
+      "correta": "Alternativa A. Corresponde ao tratamento conservador inicial da fratura do membro superior por cisto simples. A estabilidade e a pouca deformidade do caso permitem priorizar a consolidação, mantendo avaliação posterior da lesão que pode persistir.",
+      "incorretas": {
+        "B": "Curetagem e enxerto são opções de tratamento da lesão, mas o resumo não exige realizá-los antes da consolidação dessa fratura típica do úmero. A opção troca o momento e torna urgente uma abordagem que não é a prioridade inicial descrita.",
+        "C": "A fonte orienta planejamento cuidadoso de biópsia quando o diagnóstico é incerto e métodos temporários para não complicar o tratamento. No caso típico de cisto simples pouco desviado do membro superior, a conduta inicial apresentada é conservadora, não biópsia aberta com placa por rotina.",
+        "D": "Ressecção com margens amplas é uma estratégia de outra natureza que não corresponde ao cisto simples típico apresentado. O diagnóstico e o sítio sustentam o tratamento inicial conservador, sem indicação de tratar toda lesão lítica como tumor maligno."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Lesões tumorais e pseudotumorais; Fraturas patológicas: princípios."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Lesões tumorais e pseudotumorais",
+          "Fraturas patológicas: princípios"
+        ],
+        "blocos": [
+          "lesoes-tumorais-e-pseudotumorais-56e622b4",
+          "fraturas-patologicas-principios-2c5dd0ce"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "5276c9ffb7ea6c2c147223b947a7566d7f808c0dcdcd2ec7424be0f92cc3dc58"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1197": {
+    "questaoSha256": "11877c31b446b36601bbe10b5cd87d622b62333972531d3cbabd95690b07743a",
+    "comentarioAnteriorSha256": "f2e89e264b75bc0f46007bc330aa009f6a55893061a384c248329bb290751171",
+    "comentario": {
+      "conceito": "O **cisto ósseo aneurismático** é descrito como **excêntrico, septado, expansivo além da largura da fise**, com **níveis líquidos** na ressonância. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nA comparação com o **cisto simples** depende da organização da lesão: o simples é central e de cavidade única, enquanto o aneurismático apresenta septações e expansão. A presença de uma fratura não torna esses padrões equivalentes; o diagnóstico de base orienta o tratamento depois de proteger o osso.\n\nO resumo informa que o aneurismático não cicatriza sozinho e pode recidivar. Já o cisto simples do membro superior pode ter a fratura tratada conservadoramente. Assim, reconhecer a imagem não é apenas dar um nome: impede presumir o mesmo comportamento evolutivo para toda cavidade óssea.\n\n**Na prova:** excêntrico + septos + expansão e níveis líquidos favorecem aneurismático. Vidro fosco e calcificação pontilhada são outras marcas da tabela e não devem ser incorporadas ao cisto só porque todas podem aparecer em lesões ósseas.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre o diagnóstico diferencial das lesões líticas que fraturam, tema que cruza pediatria e tumores.",
+      "correta": "Alternativa B. Reúne as características comparativas do cisto aneurismático descritas na fonte. O conjunto, e não uma única palavra como “lítico”, é que o diferencia do simples.",
+      "incorretas": {
+        "A": "Central e de cavidade única descreve o cisto simples na tabela. A alternativa aponta justamente o padrão usado como comparação, em vez das septações e da expansão do aneurismático.",
+        "C": "Aspecto diafisário em vidro fosco é a marca da displasia fibrosa. O resumo também lhe atribui comportamento diferente, com possibilidade de o enxerto ser substituído por displasia e preferência por haste em certos cenários.",
+        "D": "Calcificação pontilhada é a característica do encondroma na tabela. Ela não substitui a lesão excêntrica, septada e com níveis líquidos que a pergunta pede distinguir."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Lesões tumorais e pseudotumorais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Lesões tumorais e pseudotumorais"
+        ],
+        "blocos": [
+          "lesoes-tumorais-e-pseudotumorais-56e622b4"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "41bf4fb44683033089a4092082d5f497c118769918e56e62d5bf8335e011e353"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1198": {
+    "questaoSha256": "1bc38bfc8d34f5084a370b44e9e1c37ae068344574766b6c0891634df63102f5",
+    "comentarioAnteriorSha256": "808313881a90d056234021da032587e084ff7ee1f9cbace7cb370869f93a1fa6",
+    "comentario": {
+      "conceito": "Lesão **cortical, excêntrica e com borda esclerótica** corresponde ao padrão de **fibroma não ossificante** no resumo. A fratura deve ser **imobilizada até consolidar**, e a necessidade de tratar a lesão é decidida depois, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nConsolidação da fratura e desaparecimento da lesão não são sinônimos. A tabela informa expressamente que a **lesão persiste**, razão para não dispensar acompanhamento apenas porque o traço consolidou. O resumo menciona maior risco quando ela ocupa mais de 50% do diâmetro e no estágio Ritschl B.\n\nIsso permite organizar o cuidado em dois momentos: proteger o osso fraturado e, depois da união, discutir a lesão conforme risco e evolução. Antecipar curetagem e enxerto antes de qualquer imobilização não é a sequência proposta. O capítulo também recomenda métodos temporários quando o diagnóstico não é claro, para não prejudicar o tratamento da doença.\n\n**Na prova:** o aspecto típico ajuda a reconhecer a lesão, mas não autoriza dizer que a fratura a fará desaparecer. Imobilizar primeiro e reavaliar o risco depois preserva as duas partes do problema.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O fibroma não ossificante é uma lesão óssea da criança descrita no resumo, e a sequência \"consolidar primeiro, decidir depois\" é o ponto prático.",
+      "correta": "Alternativa C. Mantém a sequência descrita: imobilização para consolidação e eventual tratamento posterior da lesão persistente. O acompanhamento não termina automaticamente com a união do osso.",
+      "incorretas": {
+        "A": "O resumo indica imobilização e coloca a cirurgia depois de consolidar. A alternativa inverte a sequência e transforma curetagem/enxerto em urgência antes da proteção inicial da fratura.",
+        "B": "O tratamento apresentado para o padrão típico é imobilizar e avaliar eventual cirurgia após a união, não ressecção ampla por presunção oncológica. O diagnóstico de base precisa orientar a abordagem, sem converter automaticamente esse aspecto fibroso em uma indicação de margens amplas.",
+        "D": "A fonte afirma que a lesão persiste. Portanto, não se deve garantir seu desaparecimento com a fratura nem eliminar o seguimento que permite avaliar risco de nova lesão do osso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Lesões tumorais e pseudotumorais; Fraturas patológicas: princípios."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Lesões tumorais e pseudotumorais",
+          "Fraturas patológicas: princípios"
+        ],
+        "blocos": [
+          "lesoes-tumorais-e-pseudotumorais-56e622b4",
+          "fraturas-patologicas-principios-2c5dd0ce"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "5276c9ffb7ea6c2c147223b947a7566d7f808c0dcdcd2ec7424be0f92cc3dc58"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1200": {
+    "questaoSha256": "42cb8e353f469cfbc49156859f4a08479cadcc003627ad0183a536b5801b623a",
+    "comentarioAnteriorSha256": "d6d9b4caa8c3ec41622b3339d412c250f99073bfa0fe637b5400feef847f3c99",
+    "comentario": {
+      "conceito": "A **avulsão da apófise do olécrano** é descrita como **quase patognomônica de osteogênese imperfeita**, alternativa A. Isso é diferente de perguntar qual osso mais fratura nessa doença: o resumo aponta o fêmur como o mais comum (Rockwood and Wilkins, 10ª edição, capítulo 7, doenças sistêmicas).\n\nO capítulo relaciona a osteogênese imperfeita ao **colágeno tipo I** e descreve fraturas diafisárias transversas, pouco desviadas, com consolidação quase normal. Esses padrões podem ser frequentes sem ter o mesmo valor de reconhecimento específico da avulsão do olécrano.\n\nO termo “quase” também importa. O resumo usa a lesão como sinal fortemente sugestivo, não como autorização para dispensar toda avaliação da criança. A interpretação do conjunto clínico e da fragilidade óssea continua necessária.\n\n**Na prova:** separar frequência e especificidade. Fêmur é o osso mais acometido; avulsão olecraniana é o achado que o capítulo destaca como quase patognomônico. O manejo da fragilidade deve evitar imobilizações desnecessariamente longas e o ciclo de osteopenia descrito na fonte.\n\n**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TEPOP 2024 (`pediatria-0366`), sobre o tratamento das fraturas na osteogênese imperfeita, e ao TARO 2025 (`pediatria-0526`), sobre o calo hiperplásico.",
+      "correta": "Alternativa A. É a lesão à qual o resumo atribui esse valor de reconhecimento. A denominação apofisária e o mecanismo de avulsão distinguem o achado de uma fratura diafisária apenas comum.",
+      "incorretas": {
+        "B": "O fêmur é o osso mais fraturado, e fraturas transversas diafisárias são descritas na doença. Ser frequente, porém, não é o mesmo que ter o valor quase patognomônico que a fonte reserva à avulsão do olécrano.",
+        "C": "O padrão em galho verde do rádio não é o sinal ao qual o capítulo atribui alta especificidade para osteogênese imperfeita. A alternativa oferece uma fratura, mas não a avulsão apofisária destacada na pergunta.",
+        "D": "A fratura da clavícula ao nascimento não é o achado apresentado como quase patognomônico nesse resumo. O enunciado pede um sinal específico, e o capítulo o identifica na avulsão da apófise do olécrano."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Doenças sistêmicas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Doenças sistêmicas"
+        ],
+        "blocos": [
+          "doencas-sistemicas-a08cc9d3"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "0186965879f99bfcc877013818402cd00096d8123f4e9fb5c12ae47cf1e84155"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

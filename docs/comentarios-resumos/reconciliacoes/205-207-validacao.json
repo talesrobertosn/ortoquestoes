@@ -1,0 +1,566 @@
+{
+  "base": "b7633cb53107717cc2a418055d39acbdeea21738",
+  "dependenciaPublicacao": "PR611,headd20a575de2688227947bf19bfee8c822d3f01b20;não reaplicar201–204. Incorporar a publicação611 antes de abrir/mesclar oPR seguinte.",
+  "lotes": {
+    "205": {
+      "revisadas": [
+        "mao-1944",
+        "mao-2028",
+        "mao-2029",
+        "mao-2116"
+      ],
+      "lacunas": [
+        "mao-1936",
+        "mao-1937",
+        "mao-2027",
+        "mao-2030",
+        "mao-2114",
+        "mao-2115"
+      ]
+    },
+    "206": {
+      "revisadas": [
+        "mao-2389",
+        "mao-2394",
+        "mao-2252"
+      ],
+      "lacunas": [
+        "mao-2164",
+        "mao-2198",
+        "mao-2200",
+        "mao-2201",
+        "mao-2203",
+        "mao-2251",
+        "mao-2277"
+      ]
+    },
+    "207": {
+      "revisadas": [
+        "mao-2338",
+        "mao-2412",
+        "mao-2442"
+      ],
+      "lacunas": [
+        "mao-2334",
+        "mao-2339",
+        "mao-2347",
+        "mao-2354",
+        "mao-2386",
+        "mao-2390",
+        "mao-2428"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwood10-45-fraturas-mao": {
+      "markdownSha256": "9ab6a8ca6fad48532543a911bbef85e47ad7a596c3b5322f2fc55a00358102f5",
+      "compiladoSha256Bytes": "6f517267483f2173d3fee3492f3a79cff5aab7acffdf7db8f63f50050ce2cc79",
+      "leitura": "Capítulo infantil08 inteiro90linhas lido nesta passagem;adulto45 inteiro674linhas lido anteriormente,hash preservado e seções pertinentes relidas. Corpos independentes sustentam as alternativas;contextos de treino não usados como prova."
+    },
+    "rockwoodcriancas10-08-mao-carpo": {
+      "markdownSha256": "de9d1d385460ce8a0275d4026edb9feafcfe44fdc7d5cfc9bfc4be382ff56eae",
+      "compiladoSha256Bytes": "1c7b39c2868553c7ebf53656eec98dfd24285bdb5f73f1f092529a2d48c74422",
+      "leitura": "Capítulo infantil08 inteiro90linhas lido nesta passagem;adulto45 inteiro674linhas lido anteriormente,hash preservado e seções pertinentes relidas. Corpos independentes sustentam as alternativas;contextos de treino não usados como prova."
+    }
+  },
+  "referenciasHistoricas": {
+    "mao-2027": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 260, 262 e 263"
+      ],
+      "comentarioAnteriorSha256": "0de37bf5a39ae7bd637d11af6a1f04a2ea7e1da1dee79b67677a9ff7e7d4aa3d"
+    },
+    "mao-2029": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 260 e 261"
+      ],
+      "comentarioAnteriorSha256": "accd23b88852fce687ec52b3d043f67ee6a815df363081fb2ee159f17a5e7f75"
+    },
+    "mao-1936": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos Metacarpos e Falanges; R. Glenn Gaston), p. 263, 281 e 282"
+      ],
+      "comentarioAnteriorSha256": "3c7ecb1e2a6947db6163ae0cec7eda8e3cec60eb94b3879c9e0295a5528e1275"
+    },
+    "mao-1944": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 9 (O Perioníquio; Nicole Z. Sommer), p. 365 a 367"
+      ],
+      "comentarioAnteriorSha256": "e8bedec62f8e5662022377a96b184e35ddf2b1cd516def1bed3f78a747e16e2b"
+    },
+    "mao-2114": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 348, 349, 351 e 352 (Figs. 8.33 e 8.36)"
+      ],
+      "comentarioAnteriorSha256": "a7d46d38b53fc15193d224bc0e037eee45f680cf0728ee285fb1f4352d9bee4f"
+    },
+    "mao-2115": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 10 (Rigidez dos dedos), p. 387, 389, 390 e 400 (Fig. 10.3)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 326 e 343"
+      ],
+      "comentarioAnteriorSha256": "43530cb3acfe590f1632849a5ded2dd89e2c976fa74f38b55b87dd274abfb053"
+    },
+    "mao-2116": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 329, 331 e 338"
+      ],
+      "comentarioAnteriorSha256": "a6b256899be01c67762b076d340d8d5e4ee4aafa520b0c92a556f162e1ebe2e8"
+    },
+    "mao-1937": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 5 (Lesão do Tendão Extensor), p. 198 a 201",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 10 (O Dedo Duro), p. 388 e 389"
+      ],
+      "comentarioAnteriorSha256": "87173b90bd94d9e79ef0e5f46fb2d288833c4502f32bbbaa7b60f6f20568c900"
+    },
+    "mao-2028": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 284 e 285 (Fig. 7.29)"
+      ],
+      "comentarioAnteriorSha256": "db5416c205cad7cc8b773d51a067ebe2ca72fc7caa1d7842af5c5f968862d9bb"
+    },
+    "mao-2030": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 346 e 358 (Fig. 8.32)"
+      ],
+      "comentarioAnteriorSha256": "dde42abbcc2ec0f0b14e84aa8752e1c40a097d9a2f0a16d5ece31c605956658f"
+    },
+    "mao-2389": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 683"
+      ],
+      "comentarioAnteriorSha256": "244a5751a1f802495a66f6bf7ca87ebde1a8affcbce93955712b44c5bba7b3b6"
+    },
+    "mao-2251": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 41 (Fraturas da mão e do punho na criança), p. 1618"
+      ],
+      "comentarioAnteriorSha256": "952461cf72672bd56826f1669088ace6989d63908d32854da45c357076175fcb"
+    },
+    "mao-2394": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 41 (Fraturas da mão, do punho e do antebraço em crianças), p. 1618"
+      ],
+      "comentarioAnteriorSha256": "b3ce949c9f507bd63f05d1e0f00c6f07fbe4a07c859e13ad89f00fd727352a28"
+    },
+    "mao-2203": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 10 (O dedo rígido), p. 389 (Fig. 10.4)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 9 (O perioníquio), p. 365 e 366 (Fig. 9.1)"
+      ],
+      "comentarioAnteriorSha256": "8c5bbbc8d94a77f6f795ae40279d589fc7f3defe3b12a3661e898ad20db55be9"
+    },
+    "mao-2200": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 308"
+      ],
+      "comentarioAnteriorSha256": "5ac2f16f2fd815e0c39bfb058fddb90d849735708154b7ef9e1ef91224855292"
+    },
+    "mao-2277": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 345 a 347"
+      ],
+      "comentarioAnteriorSha256": "0e51da620622a0d8ce1ca007dfe41964c232fc4e31b7eae4a37a42c6bb216fc4"
+    },
+    "mao-2252": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 41 (Fraturas da mão e do punho na criança), p. 1601 a 1604 (Figs. 41.6 e 41.7)"
+      ],
+      "comentarioAnteriorSha256": "67b9839a49ec981b3eb131d19d5b43b1bf1248e725c2bd98a83a905d7a6f7aba"
+    },
+    "mao-2198": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 280 e 281"
+      ],
+      "comentarioAnteriorSha256": "d5d2dbab018555f1bbd1d05a1554e56000c30d0f4185c00ea61f3b31e27cf78d"
+    },
+    "mao-2201": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 311"
+      ],
+      "comentarioAnteriorSha256": "c5f02cc87f2513fb8680161a56e9d43aaa3553a7c1546e43e747670c6d74325f"
+    },
+    "mao-2164": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 41 (Fraturas da mão e do punho na criança), p. 1601 a 1604 (Figs. 41.6 e 41.7)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 345 e 346 (Fig. 8.32)"
+      ],
+      "comentarioAnteriorSha256": "07043f3d671417acac7aeecf49b546dafd93293779017a54e65a9d09fecebd5d"
+    },
+    "mao-2334": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 302"
+      ],
+      "comentarioAnteriorSha256": "b7f48cf8364c6840258e4a1bf9a53ba44afde5743056bc6e050319313c8a21e7"
+    },
+    "mao-2354": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 9 (O perioníquio), p. 365 e 369"
+      ],
+      "comentarioAnteriorSha256": "1366dae3abe839ea4845d6542b16842da00a90147cc2b97d57609a618b85b985"
+    },
+    "mao-2412": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 263 e 265 (Fig. 7.3)"
+      ],
+      "comentarioAnteriorSha256": "47b6337cd268ff02eece7922af1758630a4594abfbe33a3dede52f7479b76995"
+    },
+    "mao-2390": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 349"
+      ],
+      "comentarioAnteriorSha256": "e51c6aa5eedd0f1d2875359ad41706a724c159b1b681c4669ca67a092d762475"
+    },
+    "mao-2339": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 328 e 329"
+      ],
+      "comentarioAnteriorSha256": "1392758782725c931acd9a5252ccbb3db5615aa6b40be3bbcc12c01b1429f4a6"
+    },
+    "mao-2428": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 272 (Fig. 7.16)"
+      ],
+      "comentarioAnteriorSha256": "0e099215c02658e739b461d4b387e1b422072f79ef2f204469db7a56e0e913e2"
+    },
+    "mao-2338": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 8 (Luxações e lesões ligamentares dos dedos), p. 349 e 350 (Fig. 8.33)"
+      ],
+      "comentarioAnteriorSha256": "19f143739b9c6241d9150a7a4460038c970aab4de0b6753d79f572746392addc"
+    },
+    "mao-2386": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 268"
+      ],
+      "comentarioAnteriorSha256": "44d51951b134bfa48ee956bd8982c2f201778245ad871e3ef7b967d4f8fff7a9"
+    },
+    "mao-2347": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 309 e 310 (Fig. 7.56)"
+      ],
+      "comentarioAnteriorSha256": "e8e03d829a9519bdd55d94dfb074d9248e0ecdc180056b112089217b89e34ce3"
+    },
+    "mao-2442": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 7 (Fraturas dos metacarpos e falanges), p. 268"
+      ],
+      "comentarioAnteriorSha256": "f5fbab1bf2aa54b9746d1ce5a39466f90fe3a86de2c727c2bbd950630d40dc2a"
+    }
+  },
+  "motivosCriacao": {
+    "mao-1944": {
+      "origem": {
+        "arquivo": "SIMAO 2023",
+        "pagina": 2,
+        "numeroOriginal": 25
+      },
+      "prova": "SIMÃO",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 25 do SIMÃO 2023, em que a banca perguntou a conduta com a unha depois de retirá-la para drenar o hematoma da fratura da falange distal. O fato volta com as alternativas reescritas e em outra ordem.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 25 do SIMÃO 2023, em que a banca perguntou a conduta com a unha depois de retirá-la para drenar o hematoma da fratura da falange distal."
+    },
+    "mao-2028": {
+      "origem": {
+        "arquivo": "SBCM 2024",
+        "pagina": 45,
+        "numeroOriginal": 45
+      },
+      "prova": "SBCM",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 45 da SBCM 2024, que perguntou a classe de Weiss e Hastings do traço coronal dorsal.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 45 da SBCM 2024, que perguntou a classe de Weiss e Hastings do traço coronal dorsal."
+    },
+    "mao-2029": {
+      "origem": {
+        "arquivo": "SBCM 2024",
+        "pagina": 100,
+        "numeroOriginal": 100
+      },
+      "prova": "SBCM",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 100 da SBCM 2024, que perguntou que lesão a incidência de Brewerton ajuda a mostrar.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 100 da SBCM 2024, que perguntou que lesão a incidência de Brewerton ajuda a mostrar."
+    },
+    "mao-2116": {
+      "origem": {
+        "arquivo": "SBCM 2022",
+        "pagina": 17,
+        "numeroOriginal": 17
+      },
+      "prova": "SBCM",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 17 da SBCM 2022, que mostrava a foto do enxerto e perguntava a área doadora. Como a original dependia da imagem, a questão descreve o caso.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 17 da SBCM 2022, que mostrava a foto do enxerto e perguntava a área doadora."
+    },
+    "mao-2389": {
+      "origem": {
+        "arquivo": "SIMAO 2022",
+        "pagina": 6,
+        "numeroOriginal": 16
+      },
+      "prova": "SIMÃO",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 16 do SIMÃO 2022, que perguntou a localização e o tratamento predominantes da fratura do escafoide em crianças.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 16 do SIMÃO 2022, que perguntou a localização e o tratamento predominantes da fratura do escafoide em crianças."
+    },
+    "mao-2394": {
+      "origem": {
+        "arquivo": "SIMAO 2022",
+        "pagina": 6,
+        "numeroOriginal": 22
+      },
+      "prova": "SIMÃO",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 22 do SIMÃO 2022, que perguntou qual osso do carpo ossifica por último e pode ser confundido com fratura.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 22 do SIMÃO 2022, que perguntou qual osso do carpo ossifica por último e pode ser confundido com fratura."
+    },
+    "mao-2252": {
+      "origem": {
+        "arquivo": "SBCM 2023",
+        "pagina": 57,
+        "numeroOriginal": 57
+      },
+      "prova": "SBCM",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 57 da SBCM 2023, que cobrou o que caracteriza a fratura de SEYMOUR e o risco de não tratá-la.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 57 da SBCM 2023, que cobrou o que caracteriza a fratura de SEYMOUR e o risco de não tratá-la."
+    },
+    "mao-2338": {
+      "origem": {
+        "arquivo": "SIMAO 2024",
+        "pagina": 6,
+        "numeroOriginal": 6
+      },
+      "prova": "SIMÃO",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 6 do SIMÃO 2024, que cobrou o tratamento da lesão completa do colateral ulnar da metacarpofalângica do polegar.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 6 do SIMÃO 2024, que cobrou o tratamento da lesão completa do colateral ulnar da metacarpofalângica do polegar."
+    },
+    "mao-2412": {
+      "origem": {
+        "arquivo": "SIMAO 2022",
+        "pagina": 6,
+        "numeroOriginal": 43
+      },
+      "prova": "SIMÃO",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 43 do SIMÃO 2022, que cobrou afirmações sobre o tratamento das fraturas dos metacarpos.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 43 do SIMÃO 2022, que cobrou afirmações sobre o tratamento das fraturas dos metacarpos."
+    },
+    "mao-2442": {
+      "origem": {
+        "arquivo": "SIMAO 2022",
+        "pagina": 6,
+        "numeroOriginal": 78
+      },
+      "prova": "SIMÃO",
+      "ano": 2022,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 78 do SIMÃO 2022, que perguntou quanta angulação toleram as fraturas diafisárias do segundo e do terceiro metacarpos.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** Inspirada na questão 78 do SIMÃO 2022, que perguntou quanta angulação toleram as fraturas diafisárias do segundo e do terceiro metacarpos."
+    }
+  },
+  "lacunasSuperadas": {
+    "mao-2389": "O corpo44 sustenta imobilização de fraturas da criança e das distais sem desvio, mas não compara a FREQUÊNCIA de polo distal versus cintura especificamente na CRIANÇA. A predominância geral da cintura no capítulo de adultos não pode ser transferida para a população pediátrica para escolher C/D. Falta distribuição pediátrica por localização; D intacta.",
+    "mao-2394": "O resumo44 descreve anatomia dos ossos, não a ORDEM/IDADE DE OSSIFICAÇÃO carpal que permite identificar o pisiforme como último. Busca nos resumos publicados não encontrou a comparação de surgimento de pisiforme, escafoide, semilunar e capitato. Falta cronologia pediátrica independente; D preservada."
+  },
+  "reabertura": "2389 e2394 eram lacunas reais contra o resumo44;novo resumo infantil08 dá distribuição/localização pediátrica e cronologia. Ambas relidas individualmente com todas as alternativas;comentários novos e fontes do08. Pendências antigas retiradas do catálogo ativo e preservadas neste histórico.",
+  "divergencia": "mao2442:opçãoA tolerância zero atribuída aoGreen,masRockwood45 admite10° nos metacarposII/III. PreservadaA,sem atribuir regra zero ao resumo e sem declarar leitura doGreen.",
+  "figuras": "Todos30 sem arquivo de imagem e sem dependência de figura indispensável identificada.",
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 10,
+    "lacunasComentariosIntactos": 20,
+    "demaisBytesPreservados": true,
+    "motivosCriacaoConferidos": 10,
+    "ui": "13/13casos390/1440 com resposta,aula,alerta e links exatos,após correção de referências;teste funcionalDCBA nos4casos corrigidos."
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 309,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 753,
+      "pendente-inspecao-imagem": 4,
+      "revisada": 1811
+    }
+  },
+  "continuidade": "Próximo208:rascunhos locais de4miniaulas,ainda não aplicados;209/210 questões e opções lidas,sem revisão aplicada. Restam também2332/2333 da antiga206. Derivar a fila atual e os novos resumos,sem reduzir aos números antigos. Trabalho integral aberto.",
+  "baseOriginal": "d20a575de2688227947bf19bfee8c822d3f01b20",
+  "reconciliacao613": {
+    "head": "3335a34890624b68fa16ecd86586fb5770950f36",
+    "merge": "b7633cb53107717cc2a418055d39acbdeea21738",
+    "comentariosIntegraisPreservados": {
+      "pediatria": [
+        "pediatria-0010",
+        "pediatria-0065",
+        "pediatria-0097",
+        "pediatria-0146",
+        "pediatria-0160",
+        "pediatria-0173",
+        "pediatria-0327",
+        "pediatria-0362",
+        "pediatria-0366",
+        "pediatria-0383",
+        "pediatria-0422",
+        "pediatria-0478",
+        "pediatria-0515",
+        "pediatria-0517",
+        "pediatria-0518",
+        "pediatria-0524",
+        "pediatria-0530",
+        "pediatria-0531",
+        "pediatria-0533",
+        "pediatria-0535",
+        "pediatria-0537",
+        "pediatria-0539",
+        "pediatria-0543",
+        "pediatria-0546",
+        "pediatria-0550",
+        "pediatria-0557",
+        "pediatria-0564",
+        "pediatria-0567",
+        "pediatria-0568",
+        "pediatria-0571",
+        "pediatria-0576",
+        "pediatria-0581",
+        "pediatria-0582",
+        "pediatria-0587",
+        "pediatria-0588",
+        "pediatria-0595",
+        "pediatria-0596",
+        "pediatria-0597",
+        "pediatria-0599",
+        "pediatria-0605",
+        "pediatria-0611",
+        "pediatria-0613",
+        "pediatria-0615",
+        "pediatria-0617",
+        "pediatria-0618",
+        "pediatria-0620",
+        "pediatria-0624",
+        "pediatria-0626",
+        "pediatria-0631",
+        "pediatria-0633",
+        "pediatria-0637",
+        "pediatria-0640",
+        "pediatria-0642",
+        "pediatria-0645",
+        "pediatria-0650",
+        "pediatria-0651",
+        "pediatria-0657",
+        "pediatria-0659",
+        "pediatria-0660",
+        "pediatria-0662",
+        "pediatria-0667",
+        "pediatria-0685",
+        "pediatria-0686",
+        "pediatria-0693",
+        "pediatria-0694",
+        "pediatria-0700",
+        "pediatria-0704",
+        "pediatria-0706",
+        "pediatria-0707",
+        "pediatria-0708",
+        "pediatria-0711",
+        "pediatria-0712",
+        "pediatria-0714",
+        "pediatria-0717",
+        "pediatria-0718",
+        "pediatria-0721",
+        "pediatria-0724",
+        "pediatria-0730",
+        "pediatria-0735",
+        "pediatria-0742",
+        "pediatria-0748",
+        "pediatria-0753",
+        "pediatria-0770",
+        "pediatria-0815",
+        "pediatria-0819",
+        "pediatria-0820",
+        "pediatria-0821",
+        "pediatria-0822",
+        "pediatria-0824",
+        "pediatria-0827",
+        "pediatria-0831",
+        "pediatria-0841",
+        "pediatria-0842",
+        "pediatria-0845",
+        "pediatria-0848",
+        "pediatria-0851",
+        "pediatria-0858",
+        "pediatria-0867",
+        "pediatria-0905",
+        "pediatria-0910",
+        "pediatria-0913",
+        "pediatria-0920",
+        "pediatria-0924",
+        "pediatria-0926",
+        "pediatria-0928",
+        "pediatria-0929",
+        "pediatria-0930",
+        "pediatria-0934",
+        "pediatria-0945",
+        "pediatria-0947",
+        "pediatria-0949",
+        "pediatria-0953",
+        "pediatria-0954",
+        "pediatria-0955",
+        "pediatria-1080",
+        "pediatria-1081"
+      ],
+      "coluna": [
+        "coluna-0302",
+        "coluna-0312"
+      ]
+    },
+    "fontes205207Inalteradas": true,
+    "maoDaBaseInalterado": true,
+    "catalogo": "Preservadas todas as anotações remotas;reaplicadas apenas20pendências próprias e removidas2lacunas agora resolvidas. Catálogo integral recomposto."
+  },
+  "validacaoPosReconciliacao": "Fixtures,acervo,npm test,build,replay10/10,preservação integral dos118concorrentes eUI10/10em390/1440 repetidos eaprovados na baseb763. ExigirCIdoheadatual antes de merge.",
+  "revisaoHead0fe190da": {
+    "achado": 4403588666,
+    "problema": "Referências à letraA emconceito/alerta demao2442 não acompanhavam embaralhamento.",
+    "correcao": "Padronizadas referências como alternativaA;mesmo padrão corrigido em2320/1796/1935 doPR611. Nenhum conteúdo médico,gabarito,enunciado ou alternativa alterado. Aplicação formal em207-correcoes-referencias-letras.json;canonical207mantém hash do comentário original anterior à revisão.",
+    "replay": "10miniaulas+3correções de referências de comentários já revisados;20lacunas intactas e118concorrentes preservados.",
+    "validacao": "Fixtures,acervo,npm test,build,auditoria eUI13/13em390/1440 aprovados. Teste funcional de reordenarComentario DCBA confirmouB→C eA→D emalerta,conceito e resposta dos4casos.",
+    "pendente": "ExigirCI e revisão do novohead,comthread antiga resolvida apóspush."
+  }
+}

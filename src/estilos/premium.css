@@ -968,3 +968,39 @@
 .conta-renovacao__botao { justify-self: start; border-radius: 999px; }
 .conta-renovacao__resumo { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; margin: .9rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
 .conta-renovacao__resumo a { font-weight: 700; color: var(--verdete); }
+
+/* Renovação pelo Pix (28/10/2026): linha do tempo com o mês novo encaixado no fim do atual. */
+.renova-pix { display: grid; gap: .85rem; margin: 1.25rem 0 .5rem; padding: 1.1rem 1.25rem 1.25rem; border: 1px solid color-mix(in srgb, var(--verdete) 35%, var(--traco)); border-radius: var(--raio-cartao, 16px); background: color-mix(in srgb, var(--verdete-veu) 55%, var(--superficie)); text-align: left; }
+.renova-pix__topo { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .4rem .85rem; }
+.renova-pix__topo h3 { margin: 0; font-size: 1.1rem; }
+.renova-pix__topo p { margin: .15rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.renova-pix__icone { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--traco); }
+.renova-pix__estado { display: inline-flex; align-items: center; gap: .45rem; padding: .3rem .8rem; border-radius: 999px; background: var(--superficie); color: var(--ouro-texto); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ouro) 55%, var(--traco)); font-size: .85rem; font-weight: 700; white-space: nowrap; }
+.renova-pix__estado i { width: .5rem; height: .5rem; border-radius: 999px; background: currentColor; }
+.renova-pix--aberta .renova-pix__estado { background: var(--verdete); color: var(--sobre-destaque); box-shadow: none; }
+.renova-pix__linha { display: grid; gap: .45rem; padding: .2rem 0; }
+.renova-pix__barra { display: flex; gap: 3px; height: 14px; }
+.renova-pix__seg { flex-basis: 0; min-width: 0; border-radius: 4px; }
+.renova-pix__seg--antes { background: var(--verdete); }
+.renova-pix__seg--janela { background: repeating-linear-gradient(135deg, var(--verdete) 0 6px, color-mix(in srgb, var(--ouro) 80%, var(--verdete)) 6px 12px); }
+.renova-pix__seg--novo { background: color-mix(in srgb, var(--ouro) 22%, var(--superficie)); box-shadow: inset 0 0 0 2px var(--ouro); border-radius: 4px 8px 8px 4px; }
+.renova-pix__marcas { display: flex; font-size: .78rem; line-height: 1.2; color: var(--texto-2); }
+.renova-pix__marcas > span { flex-basis: 0; min-width: 0; display: grid; }
+.renova-pix__marcas b { color: var(--texto); font-weight: 700; }
+.renova-pix__marca-novo { flex: none !important; text-align: right; }
+.renova-pix__marca-novo b { color: var(--ouro-texto); }
+.renova-pix__texto { margin: 0; font-size: 1rem; }
+.renova-pix__botao { justify-self: start; border-radius: 999px; display: inline-flex; align-items: center; gap: .45rem; }
+.renova-pix__botao--espera { cursor: default; color: var(--texto-2); background: var(--superficie); box-shadow: inset 0 0 0 1px var(--traco-forte); }
+@media (max-width: 520px) {
+  .renova-pix__topo { grid-template-columns: auto 1fr; }
+  .renova-pix__estado { grid-column: 1 / -1; justify-self: start; }
+  .renova-pix__botao { justify-self: stretch; justify-content: center; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .renova-pix--aberta .renova-pix__seg--novo { animation: renova-pix-brilho 2.6s ease-in-out infinite; }
+  .renova-pix__icone img { animation: renova-pix-flutua 4s ease-in-out infinite; }
+}
+@keyframes renova-pix-brilho { 50% { background: color-mix(in srgb, var(--ouro) 45%, var(--superficie)); } }
+@keyframes renova-pix-flutua { 50% { transform: translateY(-3px); } }
+.conta-renovacao__resumo--pix .conta-renovacao__estado { background: color-mix(in srgb, var(--ouro) 18%, var(--superficie)); color: var(--ouro-texto); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ouro) 55%, var(--traco)); }

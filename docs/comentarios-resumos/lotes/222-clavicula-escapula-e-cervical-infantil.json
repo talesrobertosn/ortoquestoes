@@ -1,0 +1,332 @@
+{
+  "pediatria-1233": {
+    "questaoSha256": "cce3c82e40c76dd28da598445013a0dc10db85f273708b43b46100c7812105be",
+    "comentarioAnteriorSha256": "4be9f92801329790780fc4177f9ddb9cd37194a59c31d11c521c79f7f544f3df",
+    "comentario": {
+      "conceito": "O padrão exclusivo do esqueleto imaturo, **medial à fise e análogo ao IIA**, é o **Neer–Craig IV**, alternativa A. A classificação precisa ser distinguida da descrição dos vínculos ligamentares no enunciado (Rockwood and Wilkins, 10ª edição, capítulo 20, terço lateral).\n\nNa criança, o resumo descreve o osso saindo do **tubo periosteal**, com ruptura superior, enquanto os **coracoclaviculares permanecem presos ao periósteo inferior**. Portanto, não é preciso ensinar como equivalentes “presos à diáfise” e “presos ao periósteo inferior”: o deslocamento do osso e a integridade do envoltório explicam a particularidade infantil. Essa ressalva fica no alerta.\n\nA tabela separa o tipo IV do **I**, lateral aos coracoclaviculares e extra-articular, do **III**, que entra na articulação, do **IIB**, com lesão do conoide, e do **V**, com fragmento cortical inferior ainda preso aos ligamentos. Reconhecer uma frase verdadeira de outro tipo não responde qual é exclusivo do imaturo.\n\n**Na prova:** tipo IV, medial à fise, análogo ao IIA. Para estudar a anatomia, conservar a descrição periosteal da fonte, sem transformar a simplificação do enunciado em mecanismo literal.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2018 (`pediatria-0633`), que pergunta a estrutura rompida na fratura distal desviada da criança. O tipo IV, que só existe com fise aberta, é a pegadinha natural da classificação.",
+      "correta": "Alternativa A. A tabela atribui ao IV a localização medial à fise, a exclusividade do imaturo e a analogia ao IIA. O gabarito é preservado, com a ressalva anatômica do enunciado explicitada no alerta.",
+      "incorretas": {
+        "B": "O tipo I é lateral aos coracoclaviculares, extra-articular e pouco desviado. Não é o padrão medial à fise exclusivo do imaturo; o III acrescenta componente intra-articular, em vez de definir essa mesma categoria.",
+        "C": "O IIB fica entre os coracoclaviculares e envolve lesão do conoide, com subida proximal. Essa configuração é diferente do tipo IV peri-fisário que a tabela reserva ao esqueleto imaturo.",
+        "D": "O V tem fragmento cortical inferior preso aos coracoclaviculares e é instável, mas não é o tipo exclusivo do imaturo descrito como medial à fise. A alternativa oferece outra linha verdadeira da tabela, com identificação inadequada para a pergunta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito preservado: alternativa A, tipo IV de Neer–Craig, exclusivo do imaturo e análogo ao IIA na tabela. O enunciado resume os coracoclaviculares como presos à diáfise; o corpo do resumo descreve esses ligamentos presos ao PERIÓSTEO INFERIOR, com o osso saindo pelo periósteo superior. Não tratar as duas formulações anatômicas como automaticamente equivalentes."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+        "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+        "secoes": [
+          "Clavícula: terço lateral"
+        ],
+        "blocos": [
+          "clavicula-terco-lateral-ee4be395",
+          "clavicula-terco-lateral-be6075a5"
+        ],
+        "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+        "trechosSha256": "6820ccd7c20ff31502d0b641e9a89f92e361fef55f9e787e882f73a5dbead1b9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1234": {
+    "questaoSha256": "1e865eb354168b36fe81e3095a8aede33f2dc30aa05d3a620cd8fbfc4e4a8e21",
+    "comentarioAnteriorSha256": "a2672d40b93f3bc65f2758b9cb64dc8b55db90177391012307c1f24794d9d26d",
+    "comentario": {
+      "conceito": "Na fratura lateral da criança, o **osso rompe o periósteo superior e sai do tubo periosteal**, enquanto os **coracoclaviculares continuam presos ao periósteo inferior**. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 20, terço lateral).\n\nEsse arranjo explica por que o aspecto de separação acromioclavicular não exige a mesma sequência de rupturas ligamentares de um padrão adulto. O envoltório pode manter vínculos importantes mesmo quando o fragmento proximal sobe e fica proeminente.\n\nA posição também deve ser examinada no plano posterior. O resumo recomenda palpar atrás da acromioclavicular e usar incidência axilar, pois pode haver encarceramento no trapézio. Ver só uma saliência superior ou um AP pouco alterado não esclarece todos os componentes do desvio.\n\n**Na prova:** superior é o periósteo rompido; inferior é o periósteo que mantém os coracoclaviculares. Trocar os lados ou assumir ruptura dos ligamentos por rotina elimina a característica anatômica infantil.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0633`), que perguntou a estrutura que normalmente se rompe na fratura distal desviada tipo V de ROCKWOOD na criança (periósteo superior), e do TARO 2006 (`pediatria-0822`), que afirmou que a lesão dos coracoclaviculares é rara na fratura lateral da criança. Depois, faça as oficiais.",
+      "correta": "Alternativa C. Mantém o mecanismo periosteal e o ponto de fixação ligamentar descritos. A saída do osso não demonstra, por si, rompimento dos coracoclaviculares.",
+      "incorretas": {
+        "A": "A fonte descreve lesão dos coracoclaviculares como rara na criança e ruptura do periósteo superior. A opção inverte essa relação ao manter o periósteo íntegro e exigir a ruptura ligamentar como no padrão adulto.",
+        "B": "O resumo coloca a ruptura no periósteo superior, não no inferior, e prende os ligamentos ao periósteo inferior. A alternativa troca tanto a face rompida quanto o vínculo que permanece.",
+        "D": "Não é apresentada uma ruptura seletiva obrigatória do trapezoide com preservação do conoide como mecanismo típico infantil. O ponto decisivo do resumo é o tubo periosteal, com ligamentos coracoclaviculares mantidos no seu componente inferior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+        "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+        "secoes": [
+          "Clavícula: terço lateral"
+        ],
+        "blocos": [
+          "clavicula-terco-lateral-be6075a5",
+          "clavicula-terco-lateral-d808c290"
+        ],
+        "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+        "trechosSha256": "22ad5e055c5a9e60153f09360d2c9fa370377aea47315595177755df1cf87a1f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1235": {
+    "questaoSha256": "f2359efc4aef263690f840a0cedf3e72e141d023a135bb843fb4136e23026757",
+    "comentarioAnteriorSha256": "6de69576393891929bca437c6625c26aae192b7e056e458cb5b30550e002d9b4",
+    "comentario": {
+      "conceito": "Saliência dolorosa **atrás da acromioclavicular**, mesmo com pouco desvio no AP, exige investigar **deslocamento posterior e encarceramento no trapézio**. A incidência **axilar**, ou tomografia quando necessário, define esse componente; ele é a indicação cirúrgica mais comum na criança descrita pelo resumo. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 20, terço lateral).\n\nO AP não resolve todo desvio porque projeta a lesão numa orientação limitada. Palpar posteriormente e obter a projeção dirigida evita interpretar “pouco desvio no AP” como alinhamento satisfatório em todos os planos.\n\nÉ preciso distinguir **frequência** e **caráter absoluto** de uma indicação. Exposição e lesão neurovascular são relevantes, mas a pergunta pede a indicação mais comum desse padrão infantil, para a qual a fonte destaca posterior importante ou encarcerado. Pele em risco também não substitui a investigação do plano posterior.\n\n**Na prova:** dor/saliência posterior, pedir axilar e procurar trapézio. Os achados clínicos orientam a imagem que falta, em vez de escolher qualquer radiografia da articulação apenas por estar próxima da clavícula.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2023 (`pediatria-0550`), que perguntou a indicação cirúrgica mais frequente da fratura do terço lateral na criança. O gabarito oficial é a exposição da fratura; o capítulo aponta o desvio posterior significativo como a indicação mais comum. Resolva a oficial sabendo dessa divergência.",
+      "correta": "Alternativa B. Liga o exame apropriado ao desvio que pode ficar subestimado no AP e à indicação mais comum segundo o resumo. A tomografia complementa quando a incidência axilar não esclarece suficientemente.",
+      "incorretas": {
+        "A": "Lesão do plexo pode importar na avaliação neurovascular, mas não é a indicação mais comum apresentada nessa seção. O caso aponta para desvio posterior, e a fonte orienta axilar ou tomografia para estudá-lo.",
+        "C": "Zanca é uma projeção da avaliação acromioclavicular citada em outra seção. Fratura exposta é indicação importante, mas a frequência pedida para a criança é atribuída ao desvio posterior significativo, não à exposição.",
+        "D": "A radiografia com peso é citada para diferenciar graus de lesão acromioclavicular, não para substituir a axilar no encarceramento posterior. Desvio superior e pele em tenda não explicam por si a saliência atrás da articulação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: terço lateral; Acromioclavicular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+        "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+        "secoes": [
+          "Clavícula: terço lateral",
+          "Acromioclavicular"
+        ],
+        "blocos": [
+          "clavicula-terco-lateral-d808c290",
+          "acromioclavicular-71a997a6"
+        ],
+        "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+        "trechosSha256": "e2e568a0d10a220192378b75e8100da49319068855107d35eb2389b4e190b3e0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1237": {
+    "questaoSha256": "1e28132ab2ee129bfad85d8ebf9be6c1c8a454e77a427de4f58d4eee75c817d5",
+    "comentarioAnteriorSha256": "650f7a61682d1721f71f30c807863eb9a71ef272bb7e8fa8cb3849fe219cc943",
+    "comentario": {
+      "conceito": "O resumo indica cirurgia para **cavidade glenoidal com mais de 5 mm**, **colo tipo II com mais de 1 cm e 40°** e **coracoide acima de 2 cm**, alternativa A. São critérios de estruturas diferentes, que não devem virar uma regra de operar qualquer fratura da escápula (Rockwood and Wilkins, 10ª edição, capítulo 20, escápula).\n\nAlém do desvio, o capítulo inclui exposição, lesão neurovascular, dissociação escapulotorácica e rebordo grande com luxação. Fora dessas situações, descreve proteção com tipoia e retorno ao esporte em etapas. Identificar o segmento e a estabilidade é mais útil que o nome genérico “fratura escapular”.\n\nO **os acromiale** é apresentado como variante normal, não fratura. Essa informação orienta a interpretação da imagem; não constitui razão para operar rotineiramente o acrômio. No **ombro flutuante**, outra seção do mesmo resumo informa que fixar apenas a clavícula costuma bastar, com redução por ligamentotaxia.\n\n**Na prova:** associar cada limiar ao seu osso ou segmento. “Sempre”, “qualquer desvio” e “obrigatoriamente os dois ossos” apagam as distinções do capítulo.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os números (5 mm, 1 cm e 40 graus, 2 cm, 2 mm) são a matéria-prima das questões sobre escápula.",
+      "correta": "Alternativa A. Mantém os três grupos de indicação por localização e magnitude do desvio. Os valores são do resumo e precisam ser interpretados com estabilidade e lesões associadas, não somados como se fossem uma só medida.",
+      "incorretas": {
+        "B": "A variante os acromiale não justifica operar todo acrômio fraturado. O capítulo a diferencia de fratura e apresenta indicações cirúrgicas específicas; a confusão radiográfica deve ser resolvida no diagnóstico, não por cirurgia automática.",
+        "C": "O resumo informa que, no ombro flutuante, fixar só a clavícula costuma permitir redução da glenoide por ligamentotaxia. Isso contradiz a exigência universal de fixar os dois ossos.",
+        "D": "A fonte não manda operar toda fratura do corpo com qualquer desvio. Ela lista situações e segmentos de indicação e trata os demais de modo conservador; o nome escápula não elimina essa seleção."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Escápula; Clavícula: tratamento do terço médio."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+        "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+        "secoes": [
+          "Escápula",
+          "Clavícula: tratamento do terço médio"
+        ],
+        "blocos": [
+          "escapula-5f84a316",
+          "clavicula-tratamento-do-terco-medio-d1a9f002",
+          "escapula-71d50884"
+        ],
+        "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+        "trechosSha256": "d7efdaefc0d23e7e3850e8eec21468be48cf6dc5b63a1c4b478f788d723db381"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1238": {
+    "questaoSha256": "e80c33eb3104f33101669e221c3ea344cbe307da1dd150c6f4edf75463fc0903",
+    "comentarioAnteriorSha256": "9d474a60dfe099ebf7ad18d4d22113b47f529f2b5bb1caee41307c9df2565ac3",
+    "comentario": {
+      "conceito": "Se for tentada a redução fechada da **esternoclavicular posterior**, o resumo exige **centro cirúrgico e cirurgião vascular de prontidão**. A posição é **decúbito dorsal, coxim entre as escápulas e tração do braço abduzido em linha com a clavícula, seguida de extensão**: alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 20, esternoclavicular).\n\nA relação posterior exige planejamento mesmo quando não há disfagia ou dispneia. Esses sintomas podem estar presentes, mas sua ausência no adolescente não muda o ambiente e a prontidão recomendados para a manobra. A tomografia é o exame de escolha para definir a relação anatômica.\n\nO capítulo informa queda do sucesso fechado depois de **24–48 horas**, tornando inadequado esperar uma semana apenas pelo edema. Também registra que o autor opera todas as posteriores e descreve estabilização com sutura em oito; isso deve ser separado da pergunta condicional sobre como realizar uma tentativa fechada.\n\n**Na prova:** coxim entre as escápulas, e não sob o ombro lesado; paciente deitado, braço em abdução alinhado à clavícula, tração e depois extensão. Ambiente e posição são partes inseparáveis da resposta.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2025 (`pediatria-0533`), que perguntou a manobra de redução da luxação esternoclavicular posterior na criança (coxim entre as escápulas e tração do membro). Depois, faça a oficial.",
+      "correta": "Alternativa C. Conserva o ambiente, a prontidão vascular e a sequência de posicionamento do resumo. Não basta reconhecer apenas “tração”: o suporte e o vetor precisam estar corretos.",
+      "incorretas": {
+        "A": "O capítulo indica centro cirúrgico, com coxim entre as escápulas e braço abduzido em linha com a clavícula. A opção troca o ambiente, a posição do coxim e o posicionamento do braço.",
+        "B": "Paciente sentado com joelho entre as escápulas e tração dos dois ombros não é a técnica descrita. A fonte especifica decúbito dorsal e uma manobra dirigida ao braço do lado afetado.",
+        "D": "O sucesso da tentativa fechada diminui depois de 24–48 horas. Esperar 7 dias pelo edema contraria essa relação temporal e não corresponde à estratégia oferecida para o caso de 12 horas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Esternoclavicular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+        "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+        "secoes": [
+          "Esternoclavicular"
+        ],
+        "blocos": [
+          "esternoclavicular-e6a737f9",
+          "esternoclavicular-2bb38b19"
+        ],
+        "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+        "trechosSha256": "da7bbfe041b1467dcde5a99b9f1d9325fd942c2679a756210a556be428610689"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1239": {
+    "questaoSha256": "74bd55c4750c3326bf9931659f521cc5a52beaf6b3d467bf94f56045dc3b9879",
+    "comentarioAnteriorSha256": "2c0c88ebb689da4805b7e174ed2d27ebcd839ad8b24ef5b99032466de0653063",
+    "comentario": {
+      "conceito": "O **Rockwood IV**, com desvio **posterior para o trapézio**, é o tipo mais perdido no AP e mais operado nos jovens segundo o resumo. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 20, acromioclavicular).\n\nUm desvio para trás pode parecer pequeno numa projeção que não demonstra adequadamente esse plano. Por isso, a avaliação não deve terminar no AP; o capítulo inclui axilar e afirma que o tipo IV pede tomografia. A preocupação é localizar o fragmento e eventual encarceramento.\n\nNa criança, muitas lesões aparentemente acromioclaviculares são **pseudoluxações por separação epifisária**. O osso pode reproduzir o padrão saindo do periósteo, o que modifica a leitura anatômica em relação ao adulto. O resumo trata I, II e a maioria dos III sem cirurgia e indica operar IV, V e VI.\n\n**Na prova:** maior desvio superior não é sinônimo de maior chance de escapar no AP. A pergunta destaca o posterior IV, justamente o plano que exige imagem complementar.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O tipo IV reúne a armadilha diagnóstica e a indicação cirúrgica do capítulo.",
+      "correta": "Alternativa B. Reúne a direção posterior, o trapézio e a combinação de subdiagnóstico no AP e frequência cirúrgica descrita. O número deve ser ligado à direção, não só à altura da clavícula.",
+      "incorretas": {
+        "A": "O III tem elevação de 25–100% e a maioria pode ser tratada sem cirurgia no resumo. Não é o padrão posterior encarcerado que a questão destaca como mais perdido e mais operado nos jovens.",
+        "C": "O V ultrapassa 100% e fica subcutâneo; é operatório no esquema, mas a pergunta não pede qualquer tipo que opere. O destaque de desvio posterior pouco evidente no AP pertence ao IV.",
+        "D": "O VI é subacromial ou subcoracoide, diferente do desvio para trás no trapézio. Também integra os tipos cirúrgicos, mas não é o tipo identificado pela associação específica do enunciado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Acromioclavicular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+        "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+        "secoes": [
+          "Acromioclavicular"
+        ],
+        "blocos": [
+          "acromioclavicular-71a997a6",
+          "acromioclavicular-33396cfd"
+        ],
+        "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+        "trechosSha256": "6a5b4009f01790876cf45da25a12c1341ad55dd295ee61b8e46df5d58cdd38f3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1240": {
+    "questaoSha256": "160a41118e395b0808b03257fd19cedf851b0e0f25c58d767436ba359cc55488",
+    "comentarioAnteriorSha256": "e656bbd9cf44e3bc2ea4692e757a7c2b2cb641c77e903c19f144a912f7884793",
+    "comentario": {
+      "conceito": "Abaixo de **8 anos**, **frouxidão ligamentar, facetas horizontais e cabeça proporcionalmente grande** elevam o fulcro do movimento cervical. Isso explica a concentração das lesões na **cervical alta**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 21, anatomia e mecanismos).\n\nA coluna infantil é **hipermóvel** nesse contexto. A força aplicada à cabeça e a geometria das articulações não produzem o mesmo padrão que no adolescente ou no adulto. Reconhecer essa diferença ajuda a escolher a região que exige atenção na avaliação do pequeno, sem presumir que a ausência de uma fratura baixa encerre o exame.\n\nO capítulo também relaciona a cabeça grande ao transporte: a prancha comum pode fletir o pescoço, e recomenda recesso occipital ou elevação do tronco para manter neutralidade. Assim, a mesma anatomia que explica o fulcro alto tem consequência prática no posicionamento.\n\n**Na prova:** criança pequena, faceta horizontal e frouxidão levam o raciocínio para cima. Depois dessa faixa, o resumo descreve aproximação ao padrão adulto, não uma regra igual para toda idade.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2021 (`pediatria-0587`), que perguntou por que a lesão cervical abaixo de 8 anos é mais comum no segmento atlantoaxial (maior mobilidade por frouxidão ligamentar). Depois, faça a oficial.",
+      "correta": "Alternativa C. Reúne os três fatores anatômicos e o efeito sobre o fulcro que o resumo apresenta. A resposta é mecânica e relacionada ao desenvolvimento, não apenas uma preferência estatística sem explicação.",
+      "incorretas": {
+        "A": "A fonte descreve facetas horizontais, e não verticais, como parte da hipermobilidade do pequeno. A alternativa troca a geometria que explica o fulcro alto por uma característica diferente.",
+        "B": "O capítulo não atribui o padrão a musculatura proporcionalmente mais forte. A explicação dada é frouxidão, orientação facetária e cabeça grande; usar força muscular como causa substitui o mecanismo apresentado.",
+        "D": "A explicação do resumo não é uma medula curta protegendo o segmento baixo, mas a distribuição mecânica do movimento. O enunciado pede por que o fulcro e as lesões se concentram acima, o que os fatores da alternativa correta esclarecem."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Anatomia, mecanismos e atendimento inicial"
+        ],
+        "blocos": [
+          "anatomia-mecanismos-e-atendimento-inicial-c53da7ac",
+          "anatomia-mecanismos-e-atendimento-inicial-0012f77d"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "3deb3b24507229289f2f0d3c3e1f07b481aec2d305a81e78fd1778a0974f4650"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1241": {
+    "questaoSha256": "bf6ffca8c63caee0318260164add436d2b0a38e670f7b03b6b2923cdcccc91ef",
+    "comentarioAnteriorSha256": "1993d0a057b8e11ebf2c8142fb0a80ce4830014fe2fe31209eb47ab22090992a",
+    "comentario": {
+      "conceito": "A linha de **Swischuk e Rowe** une a **cortical anterior dos processos espinhosos de C1 e C3**; a cortical correspondente de **C2** deve ficar a até **3 mm** no esquema do resumo. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 21, imagem e variantes normais).\n\nO objetivo é distinguir a **pseudossubluxação fisiológica de C2–C3** de uma lesão verdadeira. O capítulo descreve a variante até cerca de 11 anos e com translação de até 3 mm. O simples degrau no perfil, isoladamente, não substitui a leitura da linha e do contexto traumático.\n\nOutras medidas da junção craniovertebral usam pontos diferentes. O resumo aborda intervalo côndilo–C1 na tomografia para lesão atlanto-occipital e considera medidas como básio–dente ultrapassadas ou enganosas na criança. Esses métodos não se tornam a linha de Swischuk apenas por pertencerem à avaliação cervical.\n\n**Na prova:** conservar três níveis, C1 e C3 definindo a linha, C2 sendo comparada. Não trocar uma referência entre espinhosos por pontos da base do crânio ou do odontoide.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0851`), que perguntou o que a linha espinolaminar de SWISCHUK avalia (pseudoluxação C2-C3), e do TARO 2020 (`pediatria-0717`), que perguntou o mesmo e está sem gabarito oficial. Depois, faça as oficiais.",
+      "correta": "Alternativa A. Define os marcos vertebrais e a relação de C2 com a linha conforme o resumo. A técnica se dirige à pseudossubluxação C2–C3, em vez de medir primariamente a articulação occipital.",
+      "incorretas": {
+        "B": "Ponta do odontoide e básio são marcos da junção craniovertebral, não as corticais dos espinhosos C1/C3 da linha pedida. O valor de 12 mm não é um limite de Swischuk apresentado no resumo.",
+        "C": "Básio e opístio pertencem à base craniana. A alternativa não reproduz a linha vertebral C1–C3 e a posição de C2 que definem o método solicitado, independentemente de outras medidas da junção.",
+        "D": "O intervalo côndilo–C1 é estudado no resumo para a luxação atlanto-occipital, com limites próprios na tomografia. Ele não é a linha de Swischuk usada para comparar o espinhoso de C2 com C1 e C3."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Imagem e variantes normais; Junção occipitocervical."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Imagem e variantes normais",
+          "Junção occipitocervical"
+        ],
+        "blocos": [
+          "imagem-e-variantes-normais-c95c9882",
+          "juncao-occipitocervical-c8308246"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "1e016823f687cc31849cccc5f0e96c0e1e650971886bdc04895c012c534960d3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1242": {
+    "questaoSha256": "f8fc7bd1dd7c7104f5934a85fe0da0b84f2c71a1d1a073e4a335af696abf53be",
+    "comentarioAnteriorSha256": "8a257adbd38526883dab91485d4b7183c7d07beaa02a32f041d150e49ac0f84a",
+    "comentario": {
+      "conceito": "Na criança pequena, a **cabeça grande** pode fazer a prancha comum colocar o pescoço em **flexão**. O resumo recomenda **recesso para o occipital ou colchão duplo sob o tronco, com colar**, para manter a posição neutra: alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 21, atendimento inicial).\n\nO apoio deve compensar a proporção entre cabeça e tórax, não acrescentar ainda mais altura sob a cabeça. Isso explica por que o local do acolchoamento importa tanto quanto a presença de uma prancha. A meta é proteger sem impor uma posição inadequada ao segmento suspeito de lesão.\n\nO capítulo descreve maior concentração de lesões altas abaixo dos 8 anos e relaciona cadeirinha voltada para a frente à distração alta em acidentes. O fato de o paciente ter sido retirado do carro não torna uma posição sentada uma estratégia equivalente de transporte para o cenário apresentado.\n\n**Na prova:** adaptar a prancha à anatomia infantil e conservar o colar. Retirar a proteção ou colocar coxim sob a cabeça para “acomodar” o occipital não corresponde à neutralidade que o protocolo procura.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A prancha da criança é uma regra prática, fácil de cobrar e que muda a conduta no atendimento inicial.",
+      "correta": "Alternativa D. Oferece as duas adaptações descritas para manter neutralidade e inclui o colar. A elevação é do tronco, ou há recesso para o occipital, em vez de aumentar o apoio sob a cabeça.",
+      "incorretas": {
+        "A": "O coxim sob a cabeça pode acentuar a flexão que o protocolo procura evitar. A fonte coloca o suporte sob o tronco ou cria um recesso occipital na prancha.",
+        "B": "Eliminar o colar não é a solução apresentada. O resumo recomenda adaptação da prancha à proporção da cabeça e manutenção do colar para proteção.",
+        "C": "A posição sentada voltada para a frente não é o transporte protegido recomendado para a suspeita apresentada. O capítulo relaciona essa configuração veicular à distração alta e oferece prancha adaptada com colar como conduta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Anatomia, mecanismos e atendimento inicial"
+        ],
+        "blocos": [
+          "anatomia-mecanismos-e-atendimento-inicial-0012f77d",
+          "anatomia-mecanismos-e-atendimento-inicial-c53da7ac",
+          "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "47517029371da7bde07215ffaf2e0d5dc3e784196a54ca258ab9ae9659d5371c"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

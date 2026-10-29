@@ -1,0 +1,55 @@
+{
+  "mao-0882": {
+    "questaoSha256": "b62ac1a84b5782db99facb6609faabc3f55ad4539415e46feb1795f566d8b8cb",
+    "comentarioAnteriorSha256": "24f10ec996f4cfe04b37327b280bbed791f5ff7c16b015603f298e7ef4c00326",
+    "comentario": {
+      "conceito": "A perda de flexão da **interfalângica do polegar** e das **interfalângicas distais do indicador e do médio**, sem déficit sensitivo, localiza a lesão no **nervo interósseo anterior**, alternativa C. Esses movimentos reúnem o flexor longo do polegar e a porção lateral do flexor profundo dos dedos, músculos que recebem esse ramo do mediano (Rockwood and Green, 10ª edição, capítulo 42, seção “Músculos e compartimentos”).\n\n**Localizar pelo músculo, não só pelo dedo.** O flexor longo do polegar produz a flexão distal do polegar. Nos dedos, o componente profundo é o que se testa ao pedir flexão da articulação distal. O flexor profundo tem inervação dividida: a metade lateral pertence ao interósseo anterior, enquanto a metade medial recebe o ulnar. Por isso a expressão “não flete os dedos” seria insuficiente; saber quais dedos e qual articulação deixa a distribuição muito mais específica.\n\n**Sensibilidade normal não exclui lesão nervosa.** O resumo pediátrico descreve expressamente a paralisia do interósseo anterior como perda da flexão longa do polegar e profunda do indicador **sem alteração sensitiva**. Já uma lesão completa do mediano compromete também a sensibilidade de seu território e outros músculos. Aqui, a ausência de perda sensitiva combina com o ramo seletivo, em vez de obrigar a procurar uma causa fora dos nervos (Rockwood and Wilkins, 9ª edição, capítulo 13, seção “Como examinar a criança”). Esse complemento é de anatomia e exame; não transfere para o caso um mecanismo de fratura ou tratamento pediátrico que o enunciado não informa.\n\nO outro interósseo das alternativas é o **posterior**, ligado ao sistema radial e à musculatura dorsal. Trocar anterior por posterior troca flexores profundos por extensores. A distribuição dos músculos explica a resposta melhor do que decorar apenas os nomes parecidos.\n\n**Na prova:** flexão distal do polegar e dos dedos laterais perdida, com sensibilidade preservada, aponta para o interósseo anterior. O enunciado permite localizar o ramo; não permite determinar sozinho o nível exato, a causa ou a conduta da lesão.",
+      "correta": "Alternativa C. O interósseo anterior reúne a inervação do flexor longo do polegar e da metade lateral do flexor profundo, além do pronador quadrado. A combinação motora do enunciado e a ausência de déficit sensitivo correspondem ao padrão descrito nos resumos.",
+      "incorretas": {
+        "A": "O cutâneo medial do antebraço não é o ramo identificado no mapa motor dos flexores longos apresentados. O dado decisivo do caso não é um território de pele do antebraço: é a perda conjunta de flexões distais comandadas pelo interósseo anterior. Escolher esta opção deixaria sem explicação o comprometimento do flexor longo do polegar e da porção lateral do profundo.",
+        "B": "O interósseo posterior pertence ao sistema radial e ao plano dorsal, onde estão os extensores dos dedos e do polegar. Seu comprometimento produz um problema de extensão, enquanto a questão descreve perda de flexão por músculos do plano volar profundo. O nome parecido não torna os dois ramos intercambiáveis.",
+        "D": "O ulnar inerva o flexor ulnar do carpo e a metade medial do flexor profundo. A porção lateral do profundo e o flexor longo do polegar pertencem ao interósseo anterior. Como o profundo tem inervação dividida, não se pode atribuir ao ulnar qualquer perda de flexão distal sem localizar quais dedos estão envolvidos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Seções: O antebraço como articulação: arco radial, forças e rotação.",
+        "Conteúdo consultado no resumo “Fratura supracondiliana do úmero na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Seções: Lesões nervosas: frequência, exame e conduta."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "O antebraço como articulação: arco radial, forças e rotação"
+        ],
+        "blocos": [
+          "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f",
+          "o-antebraco-como-articulacao-arco-radial-forcas--72528da9"
+        ],
+        "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+        "trechosSha256": "3c2b1e66d10149dca8ab38990117126cb09e69226ec62d7d5f926f89f60e9d06"
+      },
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Lesões nervosas: frequência, exame e conduta"
+        ],
+        "blocos": [
+          "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31",
+          "lesoes-nervosas-frequencia-exame-e-conduta-b0eb7804"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "2d057fe73d969dce2f98fddbdedad1cb907b8ae3bbd8b9b712bd7e8df4ec7acb"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

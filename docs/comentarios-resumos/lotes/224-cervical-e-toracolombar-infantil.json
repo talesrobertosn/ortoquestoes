@@ -1,0 +1,344 @@
+{
+  "pediatria-1249": {
+    "questaoSha256": "d3bc61ce0aa52e0054f2f7fb6f446aa7ac290eb4c17131906ce4db52b6d38082",
+    "comentarioAnteriorSha256": "e96e990830fd0af1cc9a028accbedf75e466887f43e876e385c430da2891b864",
+    "comentario": {
+      "conceito": "Na **cervical baixa, C3–C7**, a fratura mais comum descrita é a **compressão**; com carga axial de alta energia, o padrão destacado é a **explosão**. É a alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 21, cervical baixa).\n\nA pergunta combina **frequência** e **mecanismo**, não dois nomes intercambiáveis. O resumo associa compressão a flexão com carga axial e descreve a explosão como lesão de alta energia para a qual a tomografia avalia retropulsão. Diferenciar a forma do corpo e a relação com o canal integra o raciocínio, além de reconhecer o trauma.\n\nO capítulo separa ainda a luxação facetária, mais própria do adolescente, e a importância do complexo discoligamentar. Já a fratura do **enforcado fica em C2**, fora do segmento C3–C7 solicitado. É possível errar a questão escolhendo uma lesão cervical verdadeira, mas do nível errado.\n\n**Na prova:** confirmar o segmento e depois responder às duas metades: mais comum, compressão; carga axial de alta energia, explosão. Lesão ligamentar e luxação não devem substituir o nome da fratura que o capítulo pede.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2023 (`pediatria-0576`), que perguntou o que a carga axial produz na lesão cervical baixa da criança (fratura por explosão). Depois, faça a oficial.",
+      "correta": "Alternativa D. Mantém o padrão mais frequente e a associação mecânica descritos na seção pediátrica. A segunda resposta é explosão, não simplesmente qualquer lesão causada por força axial.",
+      "incorretas": {
+        "A": "A luxação facetária não é a fratura mais comum nomeada nessa seção, e a carga axial de alta energia é ligada à explosão. A opção troca as duas partes da associação solicitada.",
+        "B": "O complexo ligamentar importa para a estabilidade, mas a pergunta pede o padrão de fratura predominante e a lesão da carga axial. A fonte responde compressão e explosão, não lesão ligamentar e luxação facetária.",
+        "C": "O enforcado é lesão da pars de C2, acima da cervical baixa C3–C7. A opção erra a localização da primeira metade e troca a explosão da alta energia por compressão na segunda."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Cervical baixa (C3 a C7); C1 e C2: atlas, odontoide e enforcado."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Cervical baixa (C3 a C7)",
+          "C1 e C2: atlas, odontoide e enforcado"
+        ],
+        "blocos": [
+          "cervical-baixa-c3-a-c7-d1365fab",
+          "c1-e-c2-atlas-odontoide-e-enforcado-0f44c502"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "346fe7fdebceae9e8c0fbac487933ad77c3aff0b6f5d39452a9c0e30bfe6a3e5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1250": {
+    "questaoSha256": "db756812eb65321472ccc87805b887b49454425766a81e63e10acdac74053403",
+    "comentarioAnteriorSha256": "8cf295e718eecd43b73a9f24286ae2482e238b9f5d24b0c7afbb7888b828a943",
+    "comentario": {
+      "conceito": "A **cunha anterior normal**, o **ADI de até 4,5 mm** e o **alargamento de partes moles pelo choro** aparecem na lista de variantes que podem imitar lesão na criança, alternativa A. Reconhecê-las evita aplicar automaticamente referências adultas ao perfil de um paciente de 5 anos (Rockwood and Wilkins, 10ª edição, capítulo 21, imagem).\n\nO resumo diferencia uma variante de um sinal de instabilidade por **local, medida e contexto**. Não é adequado declarar normal todo degrau ou todo espaço aumentado apenas porque o paciente é criança. O método de Swischuk, o afastamento interespinhoso e o CCI respondem a perguntas anatômicas distintas.\n\nA fonte descreve pseudossubluxação de até 3 mm e põe C2 em relação à linha C1–C3; afastamento de C1–C2 acima de 10 mm indica lesão ligamentar. Na junção occipital, CCI acima de 4 mm fornece forte evidência de lesão, não uma variante de um menino de 5 anos.\n\n**Na prova:** a alternativa correta contém três variantes da tabela, mas o exame continua precisando ser interpretado no trauma real. Normalidade possível de um item não libera automaticamente todo o estudo cervical.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2019 (`pediatria-0638`), que perguntou em que nível a ossificação incompleta mais simula uma fratura por compressão na cervical baixa (C3). O capítulo cita a cunha anterior normal do corpo vertebral da criança, sem apontar o nível.",
+      "correta": "Alternativa A. Reúne achados expressamente listados como imitadores de lesão. O ADI deve ser interpretado por referência pediátrica, e o resumo admite a influência do choro sobre partes moles.",
+      "incorretas": {
+        "B": "Mais de 10 mm entre os espinhosos de C1 e C2 é o sinal de lesão ligamentar apresentado no capítulo. Não pertence à mesma categoria das variantes da tabela.",
+        "C": "CCI de 4,5 mm ultrapassa o limiar de 4 mm de forte evidência para lesão atlanto-occipital. A ressalva cartilaginosa dos muito pequenos não torna essa medida uma variante normal automática na criança de 5 anos.",
+        "D": "6 mm e linha de Swischuk alterada ultrapassam a relação fisiológica de até 3 mm descrita. A opção usa o nome de uma variante conhecida, mas acrescenta medidas que já não correspondem a ela no resumo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Imagem e variantes normais; Junção occipitocervical."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Imagem e variantes normais",
+          "Junção occipitocervical"
+        ],
+        "blocos": [
+          "imagem-e-variantes-normais-6d2318e9",
+          "imagem-e-variantes-normais-c95c9882",
+          "juncao-occipitocervical-c8308246"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "6d0c348e504872a21dad93b9dcea4af24d9db0f4a99e286e56c2921ecf9748d2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1251": {
+    "questaoSha256": "b15a79ad394d28720953072b999f515c28e1f732fbe0071a1d7358453aa94eee",
+    "comentarioAnteriorSha256": "4fe00607e587d5d5df18c052638c3056ecbe71f592f824fb365dbdc44c958347",
+    "comentario": {
+      "conceito": "A soma do **SLIC (Subaxial Cervical Injury Classification)**, classificação da lesão cervical subaxial, é **4 + 2 + 3 = 9**, alternativa B: **luxação facetária com rotação/translação**, complexo discoligamentar rompido e lesão medular incompleta. Como não há compressão persistente, não se acrescenta o ponto adicional (Rockwood crianças, 10ª edição, capítulo 21; tabela da classificação original reproduzida no resumo Rockwood adultos, 10ª edição, capítulo 48).\n\nO SLIC organiza a lesão em **três domínios**, e não em número de facetas luxadas. A tabela do resumo pediátrico fornece os pontos de morfologia, complexo e exame neurológico. A tabela original do resumo adulto explicita a correspondência da **luxação facetária** com a categoria morfológica de 4 pontos, completando a classificação sem importar um tratamento adulto para a criança.\n\nA incompleta vale **3**, e a completa vale **2** no domínio neurológico; o acréscimo por compressão contínua é separado. Uma lesão não pode ser contada ao mesmo tempo como completa e incompleta, nem a presença de duas facetas permite duplicar a morfologia.\n\n**Na prova:** escrever as três parcelas antes de olhar as opções. O total pedido é 9; a ausência expressa de compressão persistente é o dado que impede chegar a 10.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A soma da SLIC permite comparar os domínios e praticar a classificação.",
+      "correta": "Alternativa B. A morfologia soma 4, o complexo roto soma 2 e a lesão incompleta soma 3. Não há o ponto extra de compressão persistente. A classificação é a mesma nos dois resumos consultados; a complementação é de definição morfológica, sem transferência de protocolo cirúrgico.",
+      "incorretas": {
+        "A": "6 corresponde a 4 + 2, deixando de contar os 3 pontos da lesão medular incompleta. O exame neurológico é um domínio próprio e não pode ser omitido porque os dados ósseos e ligamentares já foram reconhecidos.",
+        "C": "4 contabiliza apenas a categoria morfológica. O caso acrescenta complexo rompido e lesão incompleta, que precisam entrar separadamente na soma.",
+        "D": "12 não resulta das categorias do caso e excede até o teto de 10 do esquema completo apresentado. Não se devem duplicar facetas, somar estados neurológicos incompatíveis ou acrescentar compressão que o enunciado excluiu."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Cervical baixa (C3 a C7).",
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Cervical baixa (C3 a C7)"
+        ],
+        "blocos": [
+          "cervical-baixa-c3-a-c7-cb68fbf2"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "bb5cd382057fec508c70e7e6b09fad9bb756b8c1b9531b897b36d46c6a17cc5f"
+      },
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Coluna subaxial: classificações e estabilidade"
+        ],
+        "blocos": [
+          "coluna-subaxial-classificacoes-e-estabilidade-c01dd9e0",
+          "coluna-subaxial-classificacoes-e-estabilidade-e22b0f15"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "deb51129432df6c049c1417d2754bed4352e7e2ae45a902078807b21e534ce75"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1253": {
+    "questaoSha256": "f7f9bcbad8d3c9550a91c21ad4b33a7de58ee9b6f021846598be49dc106ce3a9",
+    "comentarioAnteriorSha256": "69fc6e2e38054a2b91a5d31b0f77e63d893e811a1845940bf21e4349bcb450bc",
+    "comentario": {
+      "conceito": "A **metilprednisolona em dose alta é apenas uma opção**, e não tratamento obrigatório, no resumo do capítulo cervical pediátrico. A fonte relata **pouco ou nenhum benefício e mais complicações**, inclusive em crianças: alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 21, corticoide).\n\nO caso coloca o adolescente dentro de uma janela precoce, mas o horário não transforma uma opção em obrigação. A pergunta é sobre o posicionamento do capítulo, e ele não afirma benefício pediátrico comprovado que imponha o medicamento a todos os que chegam nas primeiras horas.\n\nO resumo cita a análise de Caruso com 354 crianças dentro dessa discussão. Esse dado não deve ser ampliado para uma proibição absoluta em toda pessoa menor de 18 anos ou para uso exclusivo nas lesões completas. São regras mais fortes que a orientação “opção” fornecida.\n\n**Na prova:** evitar os dois extremos: obrigatoriedade universal e contraindicação por idade universal. A lesão incompleta continua exigindo o cuidado do trauma e da medula; a controvérsia farmacológica não substitui essa avaliação.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Comparar opção e obrigação no uso do corticoide é o motivo da projeção, com os dados pediátricos do capítulo.",
+      "correta": "Alternativa D. Mantém o grau de recomendação e a limitação de benefício descritos. A apresentação em 3 horas não elimina a incerteza nem autoriza apresentar o corticoide como padrão obrigatório pediátrico.",
+      "incorretas": {
+        "A": "O capítulo não o torna obrigatório nas primeiras 8 horas nem apresenta benefício pediátrico comprovado como regra geral. A opção converte uma possibilidade controvertida em exigência universal.",
+        "B": "“Apenas opção” também não significa proibição absoluta abaixo de 18 anos. A alternativa impõe um corte etário e uma contraindicação universal que não correspondem à formulação da fonte.",
+        "C": "A fonte não restringe a opção somente à lesão completa. A questão informa uma incompleta, mas o grau de completude não é apresentado como esse gatilho exclusivo de indicação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Órteses, halo, corticoide e cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Órteses, halo, corticoide e cirurgia"
+        ],
+        "blocos": [
+          "orteses-halo-corticoide-e-cirurgia-5b91dc28"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "d44644c953dedb46748713f46dd4490a408f1efceb1d01bd52b097441bdef8e3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1254": {
+    "questaoSha256": "ac2a2ba90d826dbbf3372e1a9426d45a7648f1207312122b0e966a80e072a1c9",
+    "comentarioAnteriorSha256": "5a20c2e84fde634a1133038c63522f0464e9d7faf65c27516cd4998a97d851fc",
+    "comentario": {
+      "conceito": "O resumo relaciona **parto pélvico** a lesão **cervical baixa ou torácica alta por tração** e **parto cefálico** a lesão **cervical alta por rotação**. No lactente fora do contexto do parto, destaca maus-tratos como causa importante e majoritária nesse grupo descrito. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 21, mecanismos).\n\nA idade e o contexto mudam a leitura da força. Um bebê hipotônico após parto difícil exige pensar em lesão medular, e não atribuir toda falta de movimento a um problema periférico sem avaliação. Já uma lesão nova meses depois não recebe automaticamente a explicação obstétrica.\n\nNo pequeno, o capítulo cita quedas, acidentes de carro e atropelamentos; no adolescente, esporte e depois carro. Esses padrões não permitem escolher uma causa por hábito sem conferir o estágio de desenvolvimento e a cronologia do caso.\n\n**Na prova:** conservar o par posição de parto–força–nível. A suspeita de maus-tratos no lactente fora do parto exige avaliação, não equivale a comprovação de causa em todo indivíduo.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A sequência de mecanismos por idade, com o detalhe do parto pélvico e cefálico, é o tipo de dado que a prova transforma em alternativa.",
+      "correta": "Alternativa A. Mantém as duas associações obstétricas e a orientação do capítulo para o lactente fora do parto. O contexto temporal é indispensável para não trocar mecanismos de grupos diferentes.",
+      "incorretas": {
+        "B": "A opção inverte os pares: o resumo associa o pélvico à tração e nível mais baixo, e o cefálico à rotação e cervical alta. Acertar apenas as palavras tração e rotação sem ligá-las ao parto correto não resolve a questão.",
+        "C": "O capítulo não coloca quedas do berço como a maioria das causas nesse grupo fora do parto. Ele destaca maus-tratos no lactente e exige que mecanismo e desenvolvimento sejam compatíveis.",
+        "D": "No adolescente, a fonte dá destaque a esporte e carro, e não a predomínio de maus-tratos com acidentes automobilísticos raros. A opção transfere para outra idade o perfil que o capítulo discute no lactente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Anatomia, mecanismos e atendimento inicial"
+        ],
+        "blocos": [
+          "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "b6bf50b71d5e6302ce6dcb4dcd2152a75bec6f52c7188c88aa11db781069b1fd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1255": {
+    "questaoSha256": "7d0cc89fc1c776aea844185da9506732b7a3d5ea537442611d58858dc565d3cb",
+    "comentarioAnteriorSha256": "389c3ffe0d6c7588af5c46a989d01c80bbeff9959d787dc6c70e5b1f1d854fea",
+    "comentario": {
+      "conceito": "O **cinto apenas abdominal**, a colisão frontal e a marca horizontal com dor lombar apontam para **flexão–distração, padrão de Chance**, com necessidade de investigar o **abdome**, alternativa B. O resumo informa lesão abdominal em quase metade dos casos desse contexto (Rockwood and Wilkins, 10ª edição, capítulo 22, mecanismos e flexão–distração).\n\nO tronco flete sobre o cinto, com eixo à frente da coluna. O capítulo descreve comprometimento de três colunas e separa **Chance pelo osso** de **Smith pelos ligamentos**. Assim, um relato de cinto não se resume a uma cunha vertebral simples que possa ser avaliada independentemente das partes moles e do abdome.\n\nO resumo diferencia a faixa abdominal dos sistemas com **faixa de ombro ou cinco pontos**, que protegem. A presença de um dispositivo de retenção não demonstra, por si só, que todos os padrões de força foram evitados. A lesão abdominal pode mudar também o tratamento da coluna no protocolo apresentado.\n\n**Na prova:** marca do cinto e dor lombar pedem procurar a combinação de lesão vertebral e abdominal. A proporção quase de 50% pertence ao grupo resumido na fonte, não é uma certeza individual nem uma razão para examinar apenas a coluna.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O mecanismo do cinto e sua associação com lesão abdominal permitem comparar a fratura e os cuidados que não podem ser separados.",
+      "correta": "Alternativa B. Relaciona o mecanismo de flexão–distração ao cuidado abdominal obrigatório na avaliação do caso. A resposta precisa abranger as duas regiões, não apenas escolher o nome de uma fratura.",
+      "incorretas": {
+        "A": "A lesão por cinto abdominal é descrita como flexão–distração de três colunas, não compressão isolada. Tratar apenas com órtese sem investigar o abdome ignora a associação destacada e a possibilidade de componente ligamentar.",
+        "C": "Explosão por carga axial é outro padrão. O mecanismo do cinto envolve flexão sobre um eixo anterior, e limitar a tomografia à coluna deixa de abordar a lesão abdominal frequente nesse contexto.",
+        "D": "A dor lombar e a marca abdominal após retenção pela cintura não correspondem a uma simples luxação facetária cervical com alta. A fonte orienta investigação do padrão toracolombar e das lesões associadas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Flexão-distração (CHANCE) e fratura-luxação; Mecanismos, lesões associadas e avaliação; Como ler este capítulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+        "titulo": "Fraturas da coluna toracolombar na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+        "secoes": [
+          "Flexão-distração (CHANCE) e fratura-luxação",
+          "Mecanismos, lesões associadas e avaliação",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "flexao-distracao-chance-e-fratura-luxacao-b198d03d",
+          "mecanismos-lesoes-associadas-e-avaliacao-0ddd61bc",
+          "como-ler-este-capitulo-3906aa9a"
+        ],
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+        "trechosSha256": "a6168588d26119717ea3b2ef4796f3464334c88ec3b8cd1aa0495cfe3af5fd60"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1257": {
+    "questaoSha256": "f3d17af8155e7d45c76ed048e2fb8dbc3b2804fd30feade13328c3131a8f0992",
+    "comentarioAnteriorSha256": "844003803499b94421f92fdbe75950457edb3e857ce78768faf10b2adb13a0dd",
+    "comentario": {
+      "conceito": "A **fratura–luxação toracolombar em lactente que não anda** deve levantar suspeita de **maus-tratos**, alternativa A. O resumo cita esse padrão no trauma não acidental e orienta relacionar desenvolvimento, mecanismo relatado e gravidade da lesão (Rockwood and Wilkins, 10ª edição, capítulo 22, mecanismos; capítulo 7, reconhecimento).\n\nSuspeitar não é encerrar o diagnóstico nem determinar autoria. O capítulo de proteção recomenda investigar a história, quem presenciou, quando ocorreu e eventual demora no atendimento. O relato de queda do trocador precisa ser avaliado junto do achado grave, não aceito ou rejeitado por uma frase isolada.\n\nA fraqueza de ambas as pernas, **paraparesia**, também define uma prioridade clínica: o resumo toracolombar recomenda ressonância em todo déficit, e descreve fratura–luxação como lesão cirúrgica. Assim, investigar proteção infantil e tratar a lesão neurológica são cuidados simultâneos; nenhum substitui o outro.\n\n**Na prova:** num bebê de 8 meses sem marcha, a combinação exige investigação. A orientação de considerar maus-tratos não significa que toda fratura em não deambulador seja prova de abuso; contexto obstétrico, doenças e demais diferenciais precisam ser considerados quando pertinentes.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A ligação entre lesão da coluna do lactente e maus-tratos é um ponto de segurança útil na avaliação de um caso clínico.",
+      "correta": "Alternativa A. É a orientação de suspeita apresentada para o lactente não deambulador com lesão vertebral grave. O termo suspeita deve permanecer diferente de confirmação, com investigação do contexto e cuidado urgente da coluna.",
+      "incorretas": {
+        "B": "A fonte não considera a fragilidade da coluna uma justificativa suficiente para atribuir automaticamente a fratura–luxação à queda relatada. Desenvolvimento e desproporção da lesão exigem investigação, em vez de aceitar uma causalidade sem avaliação.",
+        "C": "O capítulo trata a fratura–luxação como indicação cirúrgica e pede ressonância diante de déficit. Apenas gesso, sem investigar proteção infantil e lesões associadas, deixa de abordar as duas prioridades do caso.",
+        "D": "A lesão é apresentada aos 8 meses, depois de um evento relatado, sem história que a estabeleça como obstétrica. O capítulo cervical separa o contexto do parto das lesões do lactente fora dele; não se deve usar a explicação obstétrica por rotina para evitar investigação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Mecanismos, lesões associadas e avaliação; Flexão-distração (CHANCE) e fratura-luxação.",
+        "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento.",
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+        "titulo": "Fraturas da coluna toracolombar na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+        "secoes": [
+          "Mecanismos, lesões associadas e avaliação",
+          "Flexão-distração (CHANCE) e fratura-luxação"
+        ],
+        "blocos": [
+          "mecanismos-lesoes-associadas-e-avaliacao-0ddd61bc",
+          "mecanismos-lesoes-associadas-e-avaliacao-e3b6d948",
+          "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
+        ],
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+        "trechosSha256": "1e67d0c682969011f5173c79b1336acdea44001fc5a76ff19ba1af86ea91beba"
+      },
+      {
+        "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "titulo": "Fraturas patológicas e maus-tratos na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
+        "secoes": [
+          "Reconhecimento"
+        ],
+        "blocos": [
+          "reconhecimento-a471746c"
+        ],
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+        "trechosSha256": "3c23dc6bcb7e170220de35b14fa7fe65a3fab96279e08eb9b0787172c8034187"
+      },
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "Anatomia, mecanismos e atendimento inicial"
+        ],
+        "blocos": [
+          "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "b6bf50b71d5e6302ce6dcb4dcd2152a75bec6f52c7188c88aa11db781069b1fd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1258": {
+    "questaoSha256": "dc5a9dab8b8940213d3292d312ba36837db70f7cc1377d3a143bad04ec08289e",
+    "comentarioAnteriorSha256": "e3336088df519108c275a51011bc65ece5eacbef357476647c4ca71552901bf7",
+    "comentario": {
+      "conceito": "Na fratura por **compressão**, o tratamento sem cirurgia é indicado com **partes moles posteriores íntegras e cifose menor que 30°**. Perda de altura anterior acima de **50%** leva o autor a considerar cirurgia: alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 22, compressão).\n\nA compressão compromete a **altura anterior**, mantendo a coluna média íntegra no esquema descrito. A integridade posterior é o que impede usar “sem déficit” como única condição para aceitar qualquer deformidade. O capítulo também considera a magnitude da cifose e da perda de altura.\n\nO protocolo conservador inclui uma órtese de proteção do tronco, como TLSO ou Jewett, por 4–6 semanas e mais um período semelhante de restrição. O resumo diferencia a **explosão**, que atinge colunas anterior e média: ela também pode ter tratamento não operatório se estiver estável, sem déficit e com complexo posterior íntegro. Portanto, não se deve ensinar que toda parede posterior fraturada obrigue cirurgia, mas tampouco confundi-la com a compressão simples da pergunta.\n\n**Na prova:** conferir morfologia, ligamentos, ângulo e altura. A expressão “considerar cirurgia” acima de 50% deve ser preservada, sem inventar um automatismo desligado do restante do caso.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2022 (`coluna-0302`), que perguntou a partir de quanto se recomenda estabilizar a fratura por compressão toracolombar da criança (30 graus de angulação e 50% de acunhamento). Depois, faça a oficial.",
+      "correta": "Alternativa C. Reúne as condições de estabilidade posterior, cifose e perda de altura exatamente como o resumo organiza a decisão. Ausência de déficit é importante, mas não torna os demais critérios dispensáveis.",
+      "incorretas": {
+        "A": "A parede posterior comprometida muda a comparação para explosão no esquema de colunas, e ausência de déficit isolada não demonstra toda a estabilidade necessária. A opção não descreve o critério completo da compressão conservadora.",
+        "B": "Mais de 50% de perda anterior é motivo para o autor considerar cirurgia, sobretudo com cifose aguda. Invocar remodelação para aceitar automaticamente esse grau inverte a recomendação da fonte.",
+        "D": "A integridade das partes moles posteriores é condição do tratamento sem cirurgia apresentado. Dor leve não substitui a estabilidade ligamentar nem neutraliza uma lesão do complexo posterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Compressão e explosão."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
+        "titulo": "Fraturas da coluna toracolombar na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
+        "secoes": [
+          "Compressão e explosão"
+        ],
+        "blocos": [
+          "compressao-e-explosao-8c911be9",
+          "compressao-e-explosao-6aac1f3f"
+        ],
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
+        "trechosSha256": "37216b34bc26f643957c66b9417d54fa4acbf0808797bf8c5056ded31cf9a0d1"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

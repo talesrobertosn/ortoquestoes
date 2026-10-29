@@ -1,0 +1,30 @@
+[
+  {
+    "id": "pediatria-1299",
+    "questaoSha256": "87963f79f14b8a61bb715a5eda1705473cdec095fdf713469d24480e3a4d5b4f",
+    "comentarioAnteriorSha256": "3bb20dc780dc0c7018bf5d28f651c17e3bd517af8d85f18e4376f17377f6af34",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-12-monteggia",
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "O corpo12 sustenta porção CENTRAL do tríceps,furo na ulna e força POSTERIOR,mas não descreve explicitamente o percurso EM VOLTA DO COLO DO RÁDIO contido na alternativaD. Falta descrição independente do trajeto completo da reconstrução;nome do ligamento e comentário anterior não substituem conferência anatômica. Sem selo.",
+    "estadoAnterior": "pendente"
+  },
+  {
+    "id": "pediatria-1302",
+    "questaoSha256": "47100df06eae1871976b9147b11b92772f1781a64fe36fe0b887369488361278",
+    "comentarioAnteriorSha256": "4b77b66780b42e65e718fe04e31f90eebfd9f8f2c4840f52428b19dde5ab4c88",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Corpo28 lista corno anterior do menisco medial e intermeniscal e frequências por TIPOS II/III,mas não fornece ranking medial PRIMEIRO seguido intermeniscal,como a alternativaD exige. Não converter ordem de lista em distribuição por estrutura nem confundir 26/65% com ranking. Falta frequência comparativa independente das estruturas interpostas;comentário preservado sem selo.",
+    "estadoAnterior": "pendente"
+  }
+]

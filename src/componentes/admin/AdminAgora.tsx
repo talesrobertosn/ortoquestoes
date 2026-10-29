@@ -85,7 +85,7 @@ export function AdminAgora({ conta, resumo, usuarios, atualizadoEm, assinaturas,
         <Tile rotulo="Contas no total" numero={nm.contas} aoClicar={() => verUsuarios('todos')} />
         <Tile rotulo="Cadastros hoje" numero={nm.cadastros} nota={nm.cadastros7d !== null ? `${n(nm.cadastros7d)} nos últimos 7 dias` : undefined} aoClicar={() => verUsuarios('novos')} />
         <Tile rotulo="Confirmaram o e-mail" numero={{ hoje: nm.confirmaramEmail, ontem: null }} nota={nm.confirmaramEmail !== null ? `de ${n(nm.contas.hoje)} contas, desde o começo · hoje: ${NAO_MEDIDO}` : 'precisa do funil (parte 2)'} />
-        <Tile rotulo="Assinantes com acesso" numero={nm.assinantes} aoClicar={() => verUsuarios('assinantes')} />
+        <Tile rotulo="Assinantes com acesso" numero={nm.assinantes} nota="pessoas: renovar não soma" aoClicar={() => verUsuarios('assinantes')} />
       </div>
       <h3 className="adm-numeros__grupo">Estudo</h3>
       <div className="adm-numeros__grade">
@@ -101,8 +101,9 @@ export function AdminAgora({ conta, resumo, usuarios, atualizadoEm, assinaturas,
       <h3 className="adm-numeros__grupo">Dinheiro</h3>
       <div className="adm-numeros__grade">
         <Tile rotulo="Pagaram hoje" numero={nm.pagaram} nota={nm.valorPago.hoje !== null ? real(nm.valorPago.hoje) + (nm.valorPago.ontem !== null ? ` · ontem ${real(nm.valorPago.ontem)}` : '') : avisoCobrancas ? 'precisa das cobranças gravadas (parte 23)' : undefined} destaque aoClicar={() => irPara('cobrancas')} />
-        <Tile rotulo="Novas assinaturas hoje" numero={nm.novasAssinaturas} aoClicar={() => irPara('assinaturas')} />
-        <Tile rotulo="Cancelamentos hoje" numero={nm.cancelamentos} bom="desce" aoClicar={() => irPara('assinaturas')} />
+        <Tile rotulo="Novas assinaturas hoje" numero={nm.novasAssinaturas} nota={nm.voltaram.hoje ? `primeira compra · +${nm.voltaram.hoje} voltaram a assinar` : 'primeira compra de cada pessoa'} aoClicar={() => irPara('cobrancas')} />
+        <Tile rotulo="Renovações hoje" numero={nm.renovacoes} nota="já eram assinantes (Pix ou cartão)" aoClicar={() => irPara('cobrancas')} />
+        <Tile rotulo="Desligaram a renovação hoje" numero={nm.cancelamentos} nota="seguem com acesso até o fim do período pago" bom="desce" aoClicar={() => irPara('assinaturas')} />
         <Tile rotulo="Pix pendentes" numero={nm.pixPendentes} nota="aguardando o primeiro pagamento" aoClicar={() => irPara('assinaturas')} />
       </div>
     </section>
@@ -165,7 +166,9 @@ export function AdminAgora({ conta, resumo, usuarios, atualizadoEm, assinaturas,
       <div className="adm-dinheiro">
         <Movimentos titulo="Pagaram hoje" lista={quadro.pagaram} total={nm.valorPago.hoje} ontem={nm.pagaram.ontem} semDados={!cobrancas} vazio="Nenhum pagamento recebido hoje ainda." usuarios={usuarios} abrirFicha={abrirFicha} />
         <Movimentos titulo="Novas assinaturas hoje" lista={quadro.novasAssinaturas} ontem={nm.novasAssinaturas.ontem} semDados={!assinaturas} vazio="Nenhuma assinatura nova hoje ainda." usuarios={usuarios} abrirFicha={abrirFicha} />
-        <Movimentos titulo="Cancelamentos hoje" lista={quadro.cancelamentos} ontem={nm.cancelamentos.ontem} semDados={!assinaturas} vazio="Nenhum cancelamento hoje." usuarios={usuarios} abrirFicha={abrirFicha} tom="ruim" />
+        <Movimentos titulo="Renovações hoje" lista={quadro.renovacoes} ontem={nm.renovacoes.ontem} semDados={!assinaturas} vazio="Nenhuma renovação hoje ainda." usuarios={usuarios} abrirFicha={abrirFicha} />
+        {quadro.voltaram.length > 0 && <Movimentos titulo="Voltaram a assinar hoje" lista={quadro.voltaram} ontem={nm.voltaram.ontem} semDados={!assinaturas} vazio="" usuarios={usuarios} abrirFicha={abrirFicha} />}
+        <Movimentos titulo="Desligaram a renovação hoje" lista={quadro.cancelamentos} ontem={nm.cancelamentos.ontem} semDados={!assinaturas} vazio="Ninguém desligou a renovação hoje." usuarios={usuarios} abrirFicha={abrirFicha} tom="ruim" />
         <Movimentos titulo="Pix pendentes" lista={quadro.pixPendentes} semDados={!assinaturas} vazio="Nenhum Pix aguardando pagamento." usuarios={usuarios} abrirFicha={abrirFicha} tom="aviso" quando="pedido" />
       </div>
     </section>
@@ -259,7 +262,7 @@ function Movimentos({ titulo, lista, total, ontem, semDados, vazio, usuarios, ab
         const u = usuarios?.find(x => x.id_usuario === m.id_usuario) ?? null
         return <li key={`${m.id_usuario}-${m.em ?? i}`}>
           <span className="adm-movimentos__quem"><strong>{m.nome ?? m.email ?? 'Conta sem nome'}</strong>{m.nome && m.email && <small>{m.email}</small>}</span>
-          <span className="adm-movimentos__o-que">{rotuloPlano(m.plano)} · {rotuloMeio(m.meio)}{m.valor !== null && <> · <b>{real(m.valor)}</b></>}</span>
+          <span className="adm-movimentos__o-que">{rotuloPlano(m.plano)} · {rotuloMeio(m.meio)}{m.valor !== null && <> · <b>{real(m.valor)}</b></>}{m.tipo && <> · <span className={'adm-selo ' + (m.tipo === 'nova' ? 'adm-selo--ok' : 'adm-selo--neutro')}>{m.tipo === 'nova' ? 'nova' : m.tipo === 'volta' ? 'voltou' : 'renovação'}</span></>}</span>
           <span className="adm-movimentos__quando">{m.em ? quando === 'pedido' ? `pedido ${haQuantoTempo(m.em)} (${data(m.em)})` : `às ${hora(m.em)}` : '—'}</span>
           {u && <button type="button" className="adm-link" onClick={() => abrirFicha(u, 'pagamentos')}><Icone nome="usuario" tamanho={15} /> Ver ficha</button>}
         </li>

@@ -1,8 +1,8 @@
 import { PLANOS as PRECOS } from '../../dados/planos'
 import type { PontoEmpilhado } from './AdminGraficos'
 import {
-  MES, NOME_MES, aReceberNoCartao, dataCancelamento, meioDe, pagaSemCobranca, precoDe,
-  recorrentesNoCartao, renovacaoDoPix, renovaSozinha, somarMesChave, vigente, type AssinaturaBase, type Cobranca,
+  MES, NOME_MES, aReceberNoCartao, inicioDoMes, dataCancelamento, meioDe, pagaSemCobranca, precoDe,
+  recorrentesNoCartao, renovacaoDoPix, renovaSozinha, somarMesChave, vigentesPorPessoa, type AssinaturaBase, type Cobranca,
 } from './receita'
 
 /**
@@ -42,8 +42,16 @@ export function calcularFinanceiro(assinaturas: AssinaturaBase[], todas: Cobranc
   const mrr = recorrentes.reduce((s, x) => s + x.mensal, 0)
   const aReceber = HORIZONTES.map(m => ({ meses: m, ...aReceberNoCartao(assinaturas, m, agora) }))
 
-  // Base com acesso agora.
-  const comAcesso = assinaturas.filter(a => vigente(a, ms))
+  // Base com acesso agora: uma linha por pessoa (Pix renovado antes do fim ou Pix → cartão não contam em dobro).
+  const comAcesso = vigentesPorPessoa(assinaturas, ms)
+
+  // Taxa de renovação do mês: de quem tinha o acesso terminando de 1º do mês até hoje (ou já renovou
+  // no mês), quantos renovaram. Perdeu = o acesso acabou no mês e a pessoa está sem acesso agora.
+  const inicioMes = inicioDoMes(esteMes).getTime()
+  const renovaramMes = new Set(todas.filter(c => c.tipo === 'renovacao' && c.em.getTime() >= inicioMes).map(c => c.id_usuario))
+  const comAcessoIds = new Set(comAcesso.map(a => a.id_usuario))
+  const perderamMes = new Set(assinaturas.filter(a => a.status !== 'reembolsada' && a.status !== 'pendente' && a.fim_periodo
+    && new Date(a.fim_periodo).getTime() >= inicioMes && new Date(a.fim_periodo).getTime() <= ms && !comAcessoIds.has(a.id_usuario) && !renovaramMes.has(a.id_usuario)).map(a => a.id_usuario))
   const porPlano = PRECOS.map(p => {
     const lista = comAcesso.filter(a => a.plano === p.id)
     const renovam = lista.filter(renovaSozinha).length
@@ -67,6 +75,8 @@ export function calcularFinanceiro(assinaturas: AssinaturaBase[], todas: Cobranc
     porPagante: pagantes ? total / pagantes : 0,
     serie: [...porMes].map(([k, v]): PontoEmpilhado => ({ rotulo: NOME_MES(k), rotuloCurto: curto(k), partes: [Math.round(v[0] * 100) / 100, Math.round(v[1] * 100) / 100] })),
     comAcesso: comAcesso.length, porPlano,
+    renovaramMes: renovaramMes.size, perderamMes: perderamMes.size,
+    taxaRenovacaoMes: renovaramMes.size + perderamMes.size ? Math.round(renovaramMes.size / (renovaramMes.size + perderamMes.size) * 100) : null,
     renovamAgora: comAcesso.filter(renovaSozinha).length,
     pixComAcesso: comAcesso.filter(a => meioDe(a) === 'pix').length,
     cartaoSemRenovar: comAcesso.filter(a => meioDe(a) === 'cartao' && !renovaSozinha(a)).length,

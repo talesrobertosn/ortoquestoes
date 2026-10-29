@@ -1,0 +1,58 @@
+[
+  {
+    "id": "pediatria-1194",
+    "questaoSha256": "8a32197da84e1d4328748908343de56412d4613313f0a6e6cc677a6cd7bf5a09",
+    "comentarioAnteriorSha256": "131ce7b0ffd5e72ad85e41346053f3d839ffaf4c711c67cc8808aeea10d970c3",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-24-quadril",
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "O resumo 24 diferencia lesão do isquiático ANTES da redução (observar) e DURANTE a manobra (explorar), mas não especifica a EXCEÇÃO de explorar o nervo se for necessária redução aberta POR OUTRO MOTIVO, parte da alternativa A, nem fornece prazo de 1 SEMANA ou uso de eletroneuromiografia imediata das demais opções. Falta protocolo independente de exploração/acompanhamento para conferir a recomendação inteira sem ampliar a frase “observar”; comentário preservado sem selo.",
+    "estadoAnterior": "pendente"
+  },
+  {
+    "id": "pediatria-1199",
+    "questaoSha256": "0e4c143087f467cc51955141367ae9258a08d76dbdfa250287b95aa93a59004c",
+    "comentarioAnteriorSha256": "2c242ae1acc3126d2a08082deb469dcda3a3afd6ffb8509aa5557559f66a164e",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "A tabela do resumo 07 sustenta que enxerto vira displasia, prefere haste e menciona cajado de pastor no fêmur proximal. Não fornece, porém, frequência comparativa da DEFORMIDADE na displasia POLIOSTÓTICA para julgar o qualificador “RARAMENTE” da alternativa C, nem desenvolve a distinção biomecânica de COMPARTILHAMENTO DE CARGA expressa em D. A menção a uma deformidade não demonstra sua frequência. Falta contexto quantitativo/biomecânico independente; cobertura parcial não recebe selo.",
+    "estadoAnterior": "pendente"
+  },
+  {
+    "id": "pediatria-1201",
+    "questaoSha256": "3aeb965c8bd8d4808fcf85d1b97cab39f5277f805bbd9c6d74f98ff072299b71",
+    "comentarioAnteriorSha256": "558e7982cc0b93dee0be42ee7c452a7af451c76fab75c60dec647d16adfd14fe",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "O resumo 07 diz que fratura fisária na mielomeningocele IMITA INFECÇÃO e pede imobilização longa sem carga, mas não descreve a combinação específica de LEUCÓCITOS/VHS elevados, ALARGAMENTO FISÁRIO e REAÇÃO PERIOSTEAL do caso, nem a distinção completa com artrite séptica, tumor e Charcot. Não usar a frase genérica para excluir infecção neste quadro clínico. Falta caracterização diagnóstica independente desses sinais e diferenciais; comentário intacto, sem selo.",
+    "estadoAnterior": "pendente"
+  },
+  {
+    "id": "pediatria-1202",
+    "questaoSha256": "2d9d6fc9d8349e5a545c2451f3735448f6c2655d3055a1f6285451ad3c8e638e",
+    "comentarioAnteriorSha256": "877337f7b608834e416b4323946947cd10c43cf7ffa57c1d5a4075a38809a103",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-07-patologicas-maus-tratos",
+        "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "O resumo 07 sustenta haste e mobilização precoce em Duchenne e alerta que 1 semana em cadeira pode encerrar a marcha, mas não especifica FISIOTERAPIA INTENSA, atributo da alternativa C, nem seu protocolo/intensidade na fratura femoral do deambulador. Falta descrição independente da reabilitação que permita conferir a opção inteira sem extrapolar mobilização precoce para uma intensidade não declarada. Comentário e gabarito preservados sem selo.",
+    "estadoAnterior": "pendente"
+  }
+]

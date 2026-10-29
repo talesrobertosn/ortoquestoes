@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from 'react'
 import { LOCAIS_MAXIMO, LOCAL_TAMANHO, SERVICO_VARIOS, trabalhaComoEspecialista } from '../conta/perfilEstudo'
-import { SERVICOS_CONHECIDOS } from './admin/servicosConhecidos'
+import { buscarServicos, localDoServico, servicoConhecido, servicoPeloNome, SERVICOS_CONHECIDOS } from './admin/servicosConhecidos'
 import { Icone } from './Icone'
 import '../estilos/componentes/PerfilRapido.css'
 
@@ -14,43 +14,97 @@ function textos(situacao: string) {
   return { rotulo: 'Hospital ou serviço da sua residência', exemplo: 'Ex.: Hospital das Clínicas, Santa Casa, INTO' }
 }
 
-/** Sugestões ao digitar: os serviços que o painel já reconhece pelo nome completo. */
+/** Sugestões dos "outros locais": os serviços que o painel já reconhece pelo nome completo. */
 const ID_SUGESTOES = 'servicos-sugeridos'
 const SUGESTOES = SERVICOS_CONHECIDOS.map((s) => s.nome)
-
-const ESCREVER = '__escrever__'
+const ID_LISTA = 'servicos-lista'
+/** A busca mostra até tantos serviços de uma vez; o resto aparece ao digitar. */
+const MAXIMO_NA_LISTA = 40
 
 /**
- * Escolha do serviço (21/10/2026, pedido do Tales): uma lista com os serviços que o site
- * conhece, e a primeira opção dela é escrever o nome, para quem não acha o seu. Ao escolher
- * essa opção, o campo de texto aparece logo abaixo, já com o cursor.
+ * Escolha do serviço (21/10/2026; busca em 29/10/2026, pedidos do Tales): um campo que já
+ * mostra os serviços que o site conhece, primeiro os do estado da pessoa, e filtra enquanto
+ * ela digita ("manda" acha o Mandaqui). A primeira opção é sempre escrever o nome, para quem
+ * não acha o seu. Quem escreve à mão algo parecido com um serviço da lista vê "Você quis
+ * dizer…?" e troca com um toque, para o mesmo hospital não ficar escrito de dois jeitos.
  */
-function EscolherServico({ valor, aoMudar, exemplo, obrigatorio, classeEntrada }: {
-  valor: string; aoMudar: (v: string) => void; exemplo: string; obrigatorio: boolean; classeEntrada: string
+function EscolherServico({ valor, aoMudar, exemplo, obrigatorio, classeEntrada, uf }: {
+  valor: string; aoMudar: (v: string) => void; exemplo: string; obrigatorio: boolean; classeEntrada: string; uf?: string
 }) {
-  const conhecido = SUGESTOES.includes(valor)
-  const [escrevendo, definirEscrevendo] = useState(!!valor.trim() && !conhecido)
-  const texto = useRef<HTMLInputElement>(null)
-  // Valor que chegou de fora (perfil carregado depois): escrito à mão abre o campo de texto.
-  useEffect(() => { if (valor.trim() && !SUGESTOES.includes(valor)) definirEscrevendo(true) }, [valor])
-  function escolher(v: string) {
-    if (v === ESCREVER) {
-      definirEscrevendo(true)
-      if (conhecido) aoMudar('')
-      window.setTimeout(() => texto.current?.focus(), 0)
-      return
-    }
-    definirEscrevendo(false)
-    aoMudar(v)
+  const escolhido = servicoPeloNome(valor)
+  const [aberta, definirAberta] = useState(false)
+  // Escolheu "escrever o nome": a lista não volta a abrir sozinha enquanto digita.
+  const [escrevendo, definirEscrevendo] = useState(false)
+  const [ativo, definirAtivo] = useState(0)
+  const entrada = useRef<HTMLInputElement>(null)
+  const achados = useMemo(() => (escolhido ? [] : buscarServicos(valor, uf).slice(0, MAXIMO_NA_LISTA)), [escolhido, valor, uf])
+  // Só uma sugestão (a pessoa confirma com um toque): vale também um serviço de outro estado, perto da divisa.
+  const sugestao = !escolhido && !aberta && valor.trim().length >= 3 ? servicoConhecido(valor, uf) ?? servicoConhecido(valor) : null
+  const total = achados.length + 1
+
+  function abrir() { if (!escrevendo) { definirAberta(true); definirAtivo(0) } }
+  function escolher(i: number) {
+    definirAberta(false)
+    if (i === 0) { definirEscrevendo(true); entrada.current?.focus(); return }
+    aoMudar(achados[i - 1].nome)
   }
-  return <>
-    <select id="campo-servico" className={'entrada campo-servico__lista ' + classeEntrada} required={obrigatorio && !escrevendo} value={escrevendo ? ESCREVER : conhecido ? valor : ''} onChange={(e) => escolher(e.target.value)}>
-      <option value="" disabled>Escolha na lista ou escreva o nome</option>
-      <option value={ESCREVER}>✎ Não achei o meu: escrever o nome</option>
-      {SUGESTOES.map((s) => <option key={s} value={s}>{s}</option>)}
-    </select>
-    {escrevendo && <input ref={texto} className={'entrada ' + classeEntrada} aria-label="Nome do serviço" required={obrigatorio} value={valor} onChange={(e) => aoMudar(e.target.value)} placeholder={exemplo} />}
-  </>
+  function trocar() {
+    aoMudar('')
+    definirEscrevendo(false)
+    definirAberta(true)
+    definirAtivo(0)
+    window.setTimeout(() => entrada.current?.focus(), 0)
+  }
+  function tecla(e: KeyboardEvent) {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault()
+      if (!aberta) { definirEscrevendo(false); definirAberta(true); definirAtivo(0); return }
+      definirAtivo((a) => (a + (e.key === 'ArrowDown' ? 1 : total - 1)) % total)
+    } else if (e.key === 'Enter' && aberta) { e.preventDefault(); escolher(ativo) }
+    else if (e.key === 'Escape' && aberta) { e.preventDefault(); definirAberta(false) }
+  }
+
+  if (escolhido) return (
+    <div className="servico-escolhido">
+      <span className="servico-escolhido__icone" aria-hidden="true"><Icone nome="certo" tamanho={16} /></span>
+      <span className="servico-escolhido__texto"><strong>{escolhido.nome}</strong><small>{localDoServico(escolhido)}</small></span>
+      <button id="campo-servico" type="button" className="servico-escolhido__trocar" onClick={trocar}>Trocar</button>
+    </div>
+  )
+  return (
+    <div className="servico-busca">
+      <input
+        ref={entrada} id="campo-servico" className={'entrada ' + classeEntrada} required={obrigatorio} value={valor}
+        placeholder={escrevendo ? exemplo : 'Busque pelo nome, sigla ou cidade'} autoComplete="off"
+        role="combobox" aria-expanded={aberta} aria-controls={ID_LISTA} aria-autocomplete="list"
+        aria-activedescendant={aberta ? `${ID_LISTA}-${ativo}` : undefined}
+        onFocus={abrir} onClick={abrir} onBlur={() => definirAberta(false)} onKeyDown={tecla}
+        onChange={(e) => { aoMudar(e.target.value); if (!escrevendo) { definirAberta(true); definirAtivo(0) } }}
+      />
+      {aberta && (
+        <ul id={ID_LISTA} className="servico-busca__lista" role="listbox" aria-label="Serviços">
+          {/* Clique sem tirar o foco do campo (onMouseDown), para o onBlur não fechar antes. */}
+          <li id={`${ID_LISTA}-0`} role="option" aria-selected={ativo === 0} className="servico-busca__opcao servico-busca__opcao--escrever" onMouseDown={(e) => { e.preventDefault(); escolher(0) }}>
+            <Icone nome="lapis" tamanho={16} />
+            <span>{valor.trim() ? <>Escrever o nome: usar <strong>“{valor.trim()}”</strong></> : 'Escrever o nome do meu serviço'}</span>
+          </li>
+          {achados.map((s, i) => (
+            <li key={s.nome} id={`${ID_LISTA}-${i + 1}`} role="option" aria-selected={ativo === i + 1} className="servico-busca__opcao" onMouseDown={(e) => { e.preventDefault(); escolher(i + 1) }}>
+              <span className="servico-busca__nome">{s.nome}</span>
+              <small>{localDoServico(s)}</small>
+            </li>
+          ))}
+          {!achados.length && <li className="servico-busca__vazio" role="presentation">Nenhum serviço da lista com esse nome. Escreva o nome completo, com a cidade.</li>}
+        </ul>
+      )}
+      {!aberta && escrevendo && <button type="button" className="servico-busca__ver" onMouseDown={(e) => e.preventDefault()} onClick={() => { definirEscrevendo(false); definirAberta(true); definirAtivo(0); entrada.current?.focus() }}>Ver a lista de serviços</button>}
+      {sugestao && sugestao !== valor && (
+        <p className="servico-busca__sugestao" role="status">
+          Você quis dizer <button type="button" onClick={() => { aoMudar(sugestao); definirEscrevendo(false) }}>{sugestao}</button>?
+        </p>
+      )}
+    </div>
+  )
 }
 
 /**
@@ -61,8 +115,10 @@ function EscolherServico({ valor, aoMudar, exemplo, obrigatorio, classeEntrada }
  * branco, como antes), o residente marca que também trabalha em outros serviços.
  * Sem `aoMudarLocais`, o campo é o de sempre (um serviço, ou "vários" para ortopedista).
  */
-export function CampoServico({ situacao, valor, aoMudar, locais = [], aoMudarLocais, obrigatorio = false, classeEntrada = '', extra }: {
+export function CampoServico({ situacao, valor, aoMudar, locais = [], aoMudarLocais, obrigatorio = false, classeEntrada = '', extra, uf }: {
   situacao: string; valor: string; aoMudar: (v: string) => void
+  /** Estado da pessoa: os serviços dele aparecem primeiro na lista. */
+  uf?: string
   locais?: string[]; aoMudarLocais?: (l: string[]) => void
   obrigatorio?: boolean; classeEntrada?: string; extra?: ReactNode
 }) {
@@ -83,7 +139,7 @@ export function CampoServico({ situacao, valor, aoMudar, locais = [], aoMudarLoc
         <label className="campo-servico__rotulo" htmlFor="campo-servico">{rotulo}</label>
         {!soVarios && (situacao === 'estudante'
           ? <input id="campo-servico" className={'entrada ' + classeEntrada} required={obrigatorio} value={valor} onChange={(e) => aoMudar(e.target.value)} placeholder={exemplo} />
-          : <EscolherServico valor={valor === SERVICO_VARIOS ? '' : valor} aoMudar={aoMudar} exemplo={exemplo} obrigatorio={obrigatorio} classeEntrada={classeEntrada} />)}
+          : <EscolherServico valor={valor === SERVICO_VARIOS ? '' : valor} aoMudar={aoMudar} exemplo={exemplo} obrigatorio={obrigatorio} classeEntrada={classeEntrada} uf={uf} />)}
         {podeVarios && (
           <label className="caixa campo-servico__varios">
             <input type="checkbox" checked={soVarios} onChange={(e) => aoMudar(e.target.checked ? SERVICO_VARIOS : '')} />
@@ -115,7 +171,7 @@ export function CampoServico({ situacao, valor, aoMudar, locais = [], aoMudarLoc
   return (
     <div className="campo campo-servico" data-campo="servico">
       <label className="campo-servico__rotulo" htmlFor="campo-servico">{rotulo}{varios && especialista && <span className="meta"> (se houver um principal)</span>}</label>
-      <EscolherServico valor={principal} aoMudar={mudarPrincipal} exemplo={exemplo} obrigatorio={obrigatorio && !varios} classeEntrada={classeEntrada} />
+      <EscolherServico valor={principal} aoMudar={mudarPrincipal} exemplo={exemplo} obrigatorio={obrigatorio && !varios} classeEntrada={classeEntrada} uf={uf} />
       <label className="caixa campo-servico__varios">
         <input type="checkbox" checked={varios} onChange={(e) => alternar(e.target.checked)} />
         <span>{especialista ? 'Trabalho em vários locais' : 'Também trabalho em outros serviços (plantões, clínicas)'}</span>

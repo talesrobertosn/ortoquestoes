@@ -1,0 +1,765 @@
+{
+ "pediatria-0910": {
+  "questaoSha256": "686d8f4308a4f37cd1f7c3d881487e5cf016935c9e143bd30bfec0d3c0c5ca11",
+  "comentarioAnteriorSha256": "b3dc0940e4bf445846896279f25c1a80e6a5cec941f2ead5b075324e60bbc654",
+  "comentario": {
+   "conceito": "A fratura de TILLAUX só existe numa janela curta da adolescência, e entender a ordem de fechamento da fise é o que explica por que ela acontece sempre no mesmo lugar.\n\n**A ordem de fechamento.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos 15 anos nas meninas e 17 nos meninos, em cerca de **18 meses**. O fechamento começa no **centro** (na saliência de KUMP), depois avança para o **medial** e termina no **lateral**.\n\n**Por que isso gera o TILLAUX.** Enquanto o lado lateral ainda está aberto, o **canto anterolateral** é a única parte frágil. Na rotação externa, o **ligamento tibiofibular anteroinferior** puxa justamente esse canto e o arranca: um **SALTER-HARRIS III anterolateral**. A mesma janela produz a **triplanar**.\n\n**Para lembrar.** \"Centro, medial, lateral\": o lateral é o último, e por isso o fragmento do TILLAUX é lateral.\n\n**Na prova:** fise distal da tíbia fecha **central → medial → lateral** em cerca de 18 meses.\n\nO resumo de fraturas do tornozelo na criança traz essa sequência na seção de anatomia e crescimento.",
+   "correta": "**B: central, medial e lateral.** É a ordem descrita no capítulo; o lateral fecha por último e deixa o canto anterolateral vulnerável ao TILLAUX.",
+   "incorretas": {
+    "A": "**Inverte medial e lateral.** Se o lateral fechasse antes do medial, o fragmento do TILLAUX seria medial, o que não acontece.",
+    "C": "**O fechamento não começa no medial**, e sim no centro.",
+    "D": "**Começa errado e termina errado.** O centro é o primeiro a fechar, não o último."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Anatomia e crescimento; TILLAUX juvenil."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Anatomia e crescimento",
+     "TILLAUX juvenil"
+    ],
+    "blocos": [
+     "anatomia-e-crescimento-67fc8391",
+     "anatomia-e-crescimento-ef899471",
+     "tillaux-juvenil-cd63515e"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "4d746e4fb09babf0ad1155648a8a973b0b6c53890ce399dafb53fb060cf32e08"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0650": {
+  "questaoSha256": "7ea6c2cb00929c3637d5abb65760c945c52554c8adf2ab458f606d2f23a5a2f6",
+  "comentarioAnteriorSha256": "2e0163d163152589a010a9fa35e3e1d5f7c0e72d2f91a0f06126187ee52aa882",
+  "comentario": {
+   "conceito": "A triplanar tem um desenho estranho, com traços em três planos, e a pergunta é: o que define esse desenho?\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**A resposta em uma frase.** O traço contorna o que já fechou e atravessa o que está aberto: o padrão da fratura é um negativo da **sequência de fechamento da fise**. Por isso a triplanar e o TILLAUX são chamadas **fraturas de transição**.\n\n**Na prova:** triplanar e TILLAUX = fraturas de transição; o padrão é dado pelo **fechamento assimétrico** da fise distal da tíbia.\n\nO resumo de fraturas do tornozelo na criança traz o fechamento na seção de anatomia e crescimento e o desenho da fratura na seção da triplanar.",
+   "correta": "**D: a sequência de fechamento da placa fisária da tíbia.** O fechamento central, depois medial e por último lateral deixa uma fise parcialmente aberta, e o traço segue esse mapa.",
+   "incorretas": {
+    "A": "**O mecanismo é indireto, de rotação externa**, não um trauma direto. E o trauma, sozinho, não explica o desenho em três planos.",
+    "B": "**O periósteo espesso da criança influencia a redução e a estabilidade**, mas não desenha o traço da triplanar.",
+    "C": "**A relação entre tíbia e fíbula não define o padrão.** A fíbula até limita o desvio no TILLAUX, mas o desenho vem da fise."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Anatomia e crescimento; Triplanar."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Anatomia e crescimento",
+     "Triplanar"
+    ],
+    "blocos": [
+     "anatomia-e-crescimento-67fc8391",
+     "anatomia-e-crescimento-ef899471",
+     "triplanar-9e66d94d"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "09576bb19767381e15ce2f68384a0cb47281d59fde3169d26df04e5751639b25"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0557": {
+  "questaoSha256": "90b281975428c2ae627415b8600d474b22b87c8ceb3f53fedb2fcfe76620378a",
+  "comentarioAnteriorSha256": "03e897fc3da07daf1b019f1c3eb1060c92076a35d47c2d4184379491f5095ee5",
+  "comentario": {
+   "conceito": "Das classificações de mecanismo da criança, uma pergunta se repete: em qual tipo a fíbula escapa inteira?\n\n**A classificação de DIAS-TACHDJIAN.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), DIAS e TACHDJIAN adaptaram a classificação de LAUGE-HANSEN para a criança: a **primeira palavra** é a posição do pé e a **segunda** é a força. Como os ligamentos se originam **distalmente à fise**, a energia que no adulto romperia ligamento ou quebraria maléolo passa pela fise.\n\n| Mecanismo | Lesão típica |\n|---|---|\n| Supinação-inversão | Grau I: fíbula SH I ou II. Grau II: SH III ou IV do maléolo medial |\n| Supinação-flexão plantar | SH I ou II da tíbia com desvio **posterior**, **sem fratura da fíbula** |\n| Supinação-rotação externa | SH II da tíbia, fragmento **posteromedial**; depois, espiral da fíbula |\n| Pronação-eversão-rotação externa | SH I ou II da tíbia, **fíbula transversa**, fragmento **lateral** |\n| Compressão axial | SH V, radiografia inicial normal |\n\n**A pista do fragmento de THURSTAN-HOLLAND.** O lado do espículo metafisário aponta o mecanismo: **lateral** = pronação-eversão-rotação externa; **posteromedial** = supinação-rotação externa; **posterior** = supinação-flexão plantar. O SALTER-HARRIS continua sendo a classificação recomendada para comunicar; a de mecanismo serve para planejar a redução, invertendo a força.\n\n**Por que a fíbula fica intacta na flexão plantar.** Com o pé em supinação e a força empurrando em **flexão plantar**, a epífise da tíbia é empurrada para **trás**, no plano sagital. Não há componente de rotação nem de eversão que torça ou dobre a fíbula. O resultado é um SH I ou II com desvio posterior, **difícil de ver no AP**: o perfil é que mostra.\n\n**Na prova:** **fíbula intacta = supinação-flexão plantar**.\n\nO resumo de fraturas do tornozelo na criança traz a tabela na seção de classificação e mecanismos.",
+   "correta": "**B: supinação-flexão plantar.** O capítulo define esse tipo como SH I ou II da tíbia com desvio posterior e sem fratura da fíbula.",
+   "incorretas": {
+    "A": "**Na supinação-inversão, a fíbula é a primeira a sofrer**: o grau I é justamente o SH I ou II da fíbula.",
+    "C": "**Supinação-rotação interna não faz parte da classificação.** O tipo existente é supinação-rotação **externa**, que no grau II fratura a fíbula em espiral.",
+    "D": "**Na pronação-eversão-rotação externa, a fíbula quebra de forma transversa**, junto com o SH I ou II da tíbia de fragmento lateral."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Classificação e mecanismos."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Classificação e mecanismos"
+    ],
+    "blocos": [
+     "classificacao-e-mecanismos-24094ed8",
+     "classificacao-e-mecanismos-cc38d18d",
+     "classificacao-e-mecanismos-c3279ecb",
+     "classificacao-e-mecanismos-7ec7e936"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "d20954af1552953a4e6ca99a7a44ce935e95ef467cf16fc65dfff46ecbd50836"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0955": {
+  "questaoSha256": "51edbf36ed5d6c28e619859785fd2dab91ec6c994b0c7f9b2f8ed57c71ed0976",
+  "comentarioAnteriorSha256": "68a8a854515e3a91dd487b1dd1e96860cef727bba7c911a5225ec345a108ce95",
+  "comentario": {
+   "conceito": "**O que a imagem mostra.** No AP (A), a **fíbula tem um traço transverso** logo acima da articulação, e a epífise da tíbia está deslocada para **lateral**, levando um fragmento metafisário do lado **lateral**. O perfil (B) completa a imagem, mas a chave está no AP: fíbula transversa e fragmento de THURSTAN-HOLLAND lateral.\n\n**A classificação de DIAS-TACHDJIAN.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), DIAS e TACHDJIAN adaptaram a classificação de LAUGE-HANSEN para a criança: a **primeira palavra** é a posição do pé e a **segunda** é a força. Como os ligamentos se originam **distalmente à fise**, a energia que no adulto romperia ligamento ou quebraria maléolo passa pela fise.\n\n| Mecanismo | Lesão típica |\n|---|---|\n| Supinação-inversão | Grau I: fíbula SH I ou II. Grau II: SH III ou IV do maléolo medial |\n| Supinação-flexão plantar | SH I ou II da tíbia com desvio **posterior**, **sem fratura da fíbula** |\n| Supinação-rotação externa | SH II da tíbia, fragmento **posteromedial**; depois, espiral da fíbula |\n| Pronação-eversão-rotação externa | SH I ou II da tíbia, **fíbula transversa**, fragmento **lateral** |\n| Compressão axial | SH V, radiografia inicial normal |\n\n**A pista do fragmento de THURSTAN-HOLLAND.** O lado do espículo metafisário aponta o mecanismo: **lateral** = pronação-eversão-rotação externa; **posteromedial** = supinação-rotação externa; **posterior** = supinação-flexão plantar. O SALTER-HARRIS continua sendo a classificação recomendada para comunicar; a de mecanismo serve para planejar a redução, invertendo a força.\n\n**Juntando as peças.** Pé pronado, força de eversão e rotação externa: a epífise da tíbia é empurrada para fora e a fíbula, apoiada nela, **dobra e quebra de forma transversa**. Fíbula transversa + fragmento lateral é exatamente a assinatura da **pronação-eversão-rotação externa**.\n\n**Na prova:** fíbula transversa + THURSTAN-HOLLAND **lateral** = **pronação-eversão-rotação externa**.\n\nO resumo de fraturas do tornozelo na criança traz a pista do fragmento na seção de classificação e mecanismos.",
+   "correta": "**D: pronação-eversão-rotação externa.** A fratura transversa da fíbula com a epífise e o fragmento da tíbia deslocados para lateral é o padrão descrito no capítulo para esse mecanismo.",
+   "incorretas": {
+    "A": "**Pronação-inversão não existe na classificação**: a inversão anda com a supinação. A supinação-inversão daria SH da fíbula e, no grau II, SH III ou IV do maléolo medial.",
+    "B": "**A supinação-flexão plantar deixa a fíbula intacta**, e a imagem mostra a fíbula fraturada.",
+    "C": "**A supinação-rotação externa tem fragmento posteromedial e fíbula em espiral**, de anteroinferior para posterossuperior, não transversa."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Classificação e mecanismos."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Classificação e mecanismos"
+    ],
+    "blocos": [
+     "classificacao-e-mecanismos-cc38d18d",
+     "classificacao-e-mecanismos-24094ed8",
+     "classificacao-e-mecanismos-7ec7e936"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "c0c1d25e0daf8388570040ac97523c166c56cc22dc1bcda739bc97e8a439fe95"
+   }
+  ],
+  "imagensConferidas": [
+   "tepop-2024-047.png"
+  ]
+ },
+ "pediatria-0543": {
+  "questaoSha256": "7077a9b9296dd402d4212431bf1b75d6aeca70ed59ccb8838988a92ae906afd5",
+  "comentarioAnteriorSha256": "096d8509a3672313da43f337f0505cebd4cc3da36f3fd0eb6a3d0c8ca9acea57",
+  "comentario": {
+   "conceito": "A fratura de TILLAUX é o exemplo clássico de como a fise do adolescente decide onde o osso vai quebrar.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O mecanismo.** O pé **roda para fora** (rotação externa, ou lateral). O **ligamento tibiofibular anteroinferior**, que vai da fíbula ao canto anterolateral da epífise tibial, fica tenso e **arranca** esse pedaço. Como o resto da fise já fechou, o traço desce verticalmente pela epífise até a articulação e depois corre pela fise ainda aberta: atravessa epífise e fise, sem metáfise. É a definição do **SALTER-HARRIS III**.\n\n**Como aparece.** A fíbula funciona como um anteparo e impede grande desvio: pouca deformidade, pouco edema e dor na **linha articular anterolateral** (na entorse comum, a dor fica abaixo da articulação). No AP a fíbula esconde o traço; por isso a **incidência da pinça** é essencial e a **tomografia** mede o degrau. Até 2 mm, gesso inguinopodálico; acima de 2 mm, redução em **rotação interna** (o inverso do mecanismo) e **parafuso epifisário**, que pode até cruzar a fise, porque quase não há crescimento a perder.\n\n**Na prova:** TILLAUX = **SALTER-HARRIS III anterolateral**, arrancado pelo **tibiofibular anteroinferior** em **rotação externa**.\n\nO resumo de fraturas do tornozelo na criança traz o TILLAUX em seção própria.",
+   "correta": "**B: III, e localização anterolateral.** O traço cruza epífise e fise sem metáfise (tipo III) e o fragmento é o canto anterolateral, o último a fechar.",
+   "incorretas": {
+    "A": "**O tipo II leva um espículo de metáfise**, que o TILLAUX não tem. A localização está certa, o tipo não.",
+    "C": "**O tipo está certo, o lado não.** O medial já fechou quando acontece o TILLAUX; o fragmento é anterolateral.",
+    "D": "**Erra o tipo e o lado.** O TILLAUX não cruza a metáfise (não é IV) e não é medial."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: TILLAUX juvenil; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "TILLAUX juvenil",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "tillaux-juvenil-cd63515e",
+     "tillaux-juvenil-25b3de43",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "d90ae1613ddaf5cffa106a02bcc7af3ef5562701713ba87f7b96527dd3a30eb2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0546": {
+  "questaoSha256": "2c48ffff012e0c05fc98f6ddee5c03c0cabf60c06db821d8f3361771e8f4961b",
+  "comentarioAnteriorSha256": "8b6b94e662fcfc437d10f2c0330e8dac2aecdbeb11f814016aa24ed02c9bde8f",
+  "comentario": {
+   "conceito": "A fratura juvenil de TILLAUX aparece em quase toda prova de pediatria porque junta anatomia, crescimento e classificação numa só lesão.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O mecanismo.** O pé **roda para fora** (rotação externa, ou lateral). O **ligamento tibiofibular anteroinferior**, que vai da fíbula ao canto anterolateral da epífise tibial, fica tenso e **arranca** esse pedaço. Como o resto da fise já fechou, o traço desce verticalmente pela epífise até a articulação e depois corre pela fise ainda aberta: atravessa epífise e fise, sem metáfise. É a definição do **SALTER-HARRIS III**.\n\n**Como aparece.** A fíbula funciona como um anteparo e impede grande desvio: pouca deformidade, pouco edema e dor na **linha articular anterolateral** (na entorse comum, a dor fica abaixo da articulação). No AP a fíbula esconde o traço; por isso a **incidência da pinça** é essencial e a **tomografia** mede o degrau. Até 2 mm, gesso inguinopodálico; acima de 2 mm, redução em **rotação interna** (o inverso do mecanismo) e **parafuso epifisário**, que pode até cruzar a fise, porque quase não há crescimento a perder.\n\n**Na prova:** TILLAUX = **SALTER-HARRIS III anterolateral**, arrancado pelo **tibiofibular anteroinferior** em **rotação externa**.\n\nO resumo de fraturas do tornozelo na criança traz o TILLAUX em seção própria.",
+   "correta": "**A: III e envolve a região anterolateral da tíbia distal.** É a definição do capítulo: SALTER-HARRIS III da porção anterolateral, a parte da fise ainda aberta.",
+   "incorretas": {
+    "B": "**O ligamento que arranca o fragmento é o anteroinferior**, preso no canto **anterior**. Posterolateral não é o lugar.",
+    "C": "**O lado está certo, o tipo não.** O TILLAUX não tem fragmento metafisário, então não é IV.",
+    "D": "**Erra o tipo e o lado.** Nem IV nem posterolateral."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: TILLAUX juvenil; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "TILLAUX juvenil",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "tillaux-juvenil-cd63515e",
+     "tillaux-juvenil-25b3de43",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "d90ae1613ddaf5cffa106a02bcc7af3ef5562701713ba87f7b96527dd3a30eb2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0686": {
+  "questaoSha256": "8417eb86dcc96c924cc6bc6d3e8737ec98acca5c245a7ddd22f497bb1489b89b",
+  "comentarioAnteriorSha256": "b183c5c44600cea13530da8ad8b929783860eed0d4085a512d893d0358cd239e",
+  "comentario": {
+   "conceito": "Classificar o TILLAUX fica fácil quando se entende por onde o traço passa.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O mecanismo.** O pé **roda para fora** (rotação externa, ou lateral). O **ligamento tibiofibular anteroinferior**, que vai da fíbula ao canto anterolateral da epífise tibial, fica tenso e **arranca** esse pedaço. Como o resto da fise já fechou, o traço desce verticalmente pela epífise até a articulação e depois corre pela fise ainda aberta: atravessa epífise e fise, sem metáfise. É a definição do **SALTER-HARRIS III**.\n\n**Como aparece.** A fíbula funciona como um anteparo e impede grande desvio: pouca deformidade, pouco edema e dor na **linha articular anterolateral** (na entorse comum, a dor fica abaixo da articulação). No AP a fíbula esconde o traço; por isso a **incidência da pinça** é essencial e a **tomografia** mede o degrau. Até 2 mm, gesso inguinopodálico; acima de 2 mm, redução em **rotação interna** (o inverso do mecanismo) e **parafuso epifisário**, que pode até cruzar a fise, porque quase não há crescimento a perder.\n\n**Na prova:** TILLAUX = **SALTER-HARRIS III anterolateral**, arrancado pelo **tibiofibular anteroinferior** em **rotação externa**.\n\nO resumo de fraturas do tornozelo na criança traz o TILLAUX em seção própria.",
+   "correta": "**C: III.** O traço desce pela epífise até a articulação e corre pela fise aberta, sem levar metáfise: SALTER-HARRIS III.",
+   "incorretas": {
+    "A": "**O tipo I corre só pela fise.** O TILLAUX tem traço vertical na epífise, que chega à articulação.",
+    "B": "**O tipo II leva um espículo metafisário**, ausente no TILLAUX. O SH II é a fratura fisária mais comum do tornozelo, mas não é o TILLAUX.",
+    "D": "**O tipo IV cruza epífise, fise e metáfise.** O TILLAUX para na fise."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: TILLAUX juvenil; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "TILLAUX juvenil",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "tillaux-juvenil-cd63515e",
+     "tillaux-juvenil-25b3de43",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "d90ae1613ddaf5cffa106a02bcc7af3ef5562701713ba87f7b96527dd3a30eb2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0905": {
+  "questaoSha256": "22882dc624f99a405baa55108d6c46dc650dcaf67a2e5ede25b17575d2529823",
+  "comentarioAnteriorSha256": "a7a7fd9a900e22dfa3220468427f7808be126343be719838421b2ef0a6e41b8d",
+  "comentario": {
+   "conceito": "No TILLAUX, o que define o fragmento é a combinação de dois fatos: qual parte da fise ainda está aberta e onde o ligamento puxa.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O mecanismo.** O pé **roda para fora** (rotação externa, ou lateral). O **ligamento tibiofibular anteroinferior**, que vai da fíbula ao canto anterolateral da epífise tibial, fica tenso e **arranca** esse pedaço. Como o resto da fise já fechou, o traço desce verticalmente pela epífise até a articulação e depois corre pela fise ainda aberta: atravessa epífise e fise, sem metáfise. É a definição do **SALTER-HARRIS III**.\n\n**Como aparece.** A fíbula funciona como um anteparo e impede grande desvio: pouca deformidade, pouco edema e dor na **linha articular anterolateral** (na entorse comum, a dor fica abaixo da articulação). No AP a fíbula esconde o traço; por isso a **incidência da pinça** é essencial e a **tomografia** mede o degrau. Até 2 mm, gesso inguinopodálico; acima de 2 mm, redução em **rotação interna** (o inverso do mecanismo) e **parafuso epifisário**, que pode até cruzar a fise, porque quase não há crescimento a perder.\n\n**Na prova:** TILLAUX = **SALTER-HARRIS III anterolateral**, arrancado pelo **tibiofibular anteroinferior** em **rotação externa**.\n\nO resumo de fraturas do tornozelo na criança traz o TILLAUX em seção própria.",
+   "correta": "**B: anterolateral.** É o canto onde se insere o tibiofibular anteroinferior e a parte da fise que fecha por último.",
+   "incorretas": {
+    "A": "**O anteromedial já fechou** quando o TILLAUX acontece, porque o fechamento vai do centro para o medial antes do lateral.",
+    "C": "**O fragmento posteromedial é o do SH II na supinação-rotação externa** de DIAS-TACHDJIAN, não o do TILLAUX.",
+    "D": "**O ligamento que traciona é o anteroinferior**, não o posteroinferior. Posterolateral não é o local da avulsão."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: TILLAUX juvenil; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "TILLAUX juvenil",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "tillaux-juvenil-cd63515e",
+     "tillaux-juvenil-25b3de43",
+     "anatomia-e-crescimento-c0299da0"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "89a0bd4d2f1f1d237d2dbc997358bc59d570673c68ac9a29b71143b1bccda59e"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0568": {
+  "questaoSha256": "e4a2a983907409141d8ee9b77af6873b010ebfca2a60cf665986f5ae8b32dc61",
+  "comentarioAnteriorSha256": "99afe5b5b1718051a8e6104099bb0d33d6532b5c02a8c119a8cadec37f830470",
+  "comentario": {
+   "conceito": "A pergunta é de mecanismo, e o mecanismo do TILLAUX se deduz da anatomia: quem se prende no canto anterolateral e quando ele fica tenso.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O mecanismo.** O pé **roda para fora** (rotação externa, ou lateral). O **ligamento tibiofibular anteroinferior**, que vai da fíbula ao canto anterolateral da epífise tibial, fica tenso e **arranca** esse pedaço. Como o resto da fise já fechou, o traço desce verticalmente pela epífise até a articulação e depois corre pela fise ainda aberta: atravessa epífise e fise, sem metáfise. É a definição do **SALTER-HARRIS III**.\n\n**Como aparece.** A fíbula funciona como um anteparo e impede grande desvio: pouca deformidade, pouco edema e dor na **linha articular anterolateral** (na entorse comum, a dor fica abaixo da articulação). No AP a fíbula esconde o traço; por isso a **incidência da pinça** é essencial e a **tomografia** mede o degrau. Até 2 mm, gesso inguinopodálico; acima de 2 mm, redução em **rotação interna** (o inverso do mecanismo) e **parafuso epifisário**, que pode até cruzar a fise, porque quase não há crescimento a perder.\n\n**Na prova:** TILLAUX = **SALTER-HARRIS III anterolateral**, arrancado pelo **tibiofibular anteroinferior** em **rotação externa**.\n\nO resumo de fraturas do tornozelo na criança traz o TILLAUX em seção própria.",
+   "correta": "**C: lateral, por tração do ligamento tibiofibular anteroinferior.** Na rotação lateral (externa) do pé, esse ligamento puxa o canto anterolateral e o arranca.",
+   "incorretas": {
+    "A": "**O ligamento está certo, a rotação não.** Rotação medial (interna) é a manobra de **redução** do TILLAUX, o inverso do mecanismo.",
+    "B": "**Erra a rotação e o ligamento.** O posteroinferior não se insere no canto anterolateral.",
+    "D": "**A rotação está certa, o ligamento não.** O fragmento é anterior, arrancado pelo anteroinferior."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: TILLAUX juvenil; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "TILLAUX juvenil",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "tillaux-juvenil-cd63515e",
+     "tillaux-juvenil-25b3de43",
+     "anatomia-e-crescimento-c0299da0"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "89a0bd4d2f1f1d237d2dbc997358bc59d570673c68ac9a29b71143b1bccda59e"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0842": {
+  "questaoSha256": "3f40a268b24ffda3fe7f0a1b0769e7ecb673168b2239bb6379461a49b99da041",
+  "comentarioAnteriorSha256": "097e8fa227109863f8c1f3d35e838cf2136367bf77ac22d592eaf63eeb112771",
+  "comentario": {
+   "conceito": "O TILLAUX é uma avulsão, e toda avulsão pede duas respostas: que força e que estrutura puxou.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O mecanismo.** O pé **roda para fora** (rotação externa, ou lateral). O **ligamento tibiofibular anteroinferior**, que vai da fíbula ao canto anterolateral da epífise tibial, fica tenso e **arranca** esse pedaço. Como o resto da fise já fechou, o traço desce verticalmente pela epífise até a articulação e depois corre pela fise ainda aberta: atravessa epífise e fise, sem metáfise. É a definição do **SALTER-HARRIS III**.\n\n**Como aparece.** A fíbula funciona como um anteparo e impede grande desvio: pouca deformidade, pouco edema e dor na **linha articular anterolateral** (na entorse comum, a dor fica abaixo da articulação). No AP a fíbula esconde o traço; por isso a **incidência da pinça** é essencial e a **tomografia** mede o degrau. Até 2 mm, gesso inguinopodálico; acima de 2 mm, redução em **rotação interna** (o inverso do mecanismo) e **parafuso epifisário**, que pode até cruzar a fise, porque quase não há crescimento a perder.\n\n**Na prova:** TILLAUX = **SALTER-HARRIS III anterolateral**, arrancado pelo **tibiofibular anteroinferior** em **rotação externa**.\n\nO resumo de fraturas do tornozelo na criança traz o TILLAUX em seção própria.",
+   "correta": "**D: externa e por tração do ligamento tibiofibular anterior.** O tibiofibular anteroinferior, tenso na rotação externa, arranca o canto anterolateral da epífise.",
+   "incorretas": {
+    "A": "**Erra a rotação e o ligamento.** O talofibular anterior liga fíbula ao tálus e é o ligamento da entorse, sem relação com a epífise tibial.",
+    "B": "**O ligamento está certo, a rotação não.** Rotação interna é a manobra de redução.",
+    "C": "**A rotação está certa, o ligamento não.** É a armadilha mais comum: **talo**fibular no lugar de **tibio**fibular. Só o tibiofibular chega à tíbia."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: TILLAUX juvenil; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "TILLAUX juvenil",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "tillaux-juvenil-cd63515e",
+     "tillaux-juvenil-25b3de43",
+     "anatomia-e-crescimento-c0299da0"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "89a0bd4d2f1f1d237d2dbc997358bc59d570673c68ac9a29b71143b1bccda59e"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0615": {
+  "questaoSha256": "842ffa2cf36180624f95013ea73de3178293eb4bd16de1ca70af6175f765a5ce",
+  "comentarioAnteriorSha256": "3268bf18a8fc0e4f6980ae29699b7e3672bd4cfb89d3c088d01bd4b69038c98e",
+  "comentario": {
+   "conceito": "Esta questão cobra a classificação do TILLAUX, mas a banca aceitou uma resposta mais larga que a do livro.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O mecanismo.** O pé **roda para fora** (rotação externa, ou lateral). O **ligamento tibiofibular anteroinferior**, que vai da fíbula ao canto anterolateral da epífise tibial, fica tenso e **arranca** esse pedaço. Como o resto da fise já fechou, o traço desce verticalmente pela epífise até a articulação e depois corre pela fise ainda aberta: atravessa epífise e fise, sem metáfise. É a definição do **SALTER-HARRIS III**.\n\n**Como aparece.** A fíbula funciona como um anteparo e impede grande desvio: pouca deformidade, pouco edema e dor na **linha articular anterolateral** (na entorse comum, a dor fica abaixo da articulação). No AP a fíbula esconde o traço; por isso a **incidência da pinça** é essencial e a **tomografia** mede o degrau. Até 2 mm, gesso inguinopodálico; acima de 2 mm, redução em **rotação interna** (o inverso do mecanismo) e **parafuso epifisário**, que pode até cruzar a fise, porque quase não há crescimento a perder.\n\n**Na prova:** TILLAUX = **SALTER-HARRIS III anterolateral**, arrancado pelo **tibiofibular anteroinferior** em **rotação externa**.\n\nO resumo de fraturas do tornozelo na criança traz o TILLAUX em seção própria.",
+   "correta": "**C: SALTER-HARRIS III ou IV (gabarito oficial).** A parte certa da alternativa é o **III**: o capítulo define o TILLAUX como SALTER-HARRIS III. O \"ou IV\" provavelmente aproxima o TILLAUX da triplanar, que tem componente metafisário; o capítulo trata a triplanar como entidade separada.",
+   "incorretas": {
+    "A": "**SALTER-HARRIS I e II não têm traço na epífise.** O TILLAUX é intra-articular.",
+    "B": "**Inclui o III, mas também o II**, que tem espículo metafisário e não descreve o TILLAUX. Pelo capítulo, a alternativa B contém a resposta certa tanto quanto a C; o gabarito oficial escolheu a C.",
+    "D": "**O tipo I não serve**, e o IV também não é o padrão do capítulo."
+   },
+   "conferido": false,
+   "alerta": "Gabarito oficial C (SALTER-HARRIS III ou IV) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 30, define o TILLAUX como SALTER-HARRIS III; o tipo IV não aparece para essa fratura. As alternativas B e C contêm o tipo III.",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: TILLAUX juvenil; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "TILLAUX juvenil",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "tillaux-juvenil-cd63515e",
+     "tillaux-juvenil-25b3de43",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "d90ae1613ddaf5cffa106a02bcc7af3ef5562701713ba87f7b96527dd3a30eb2"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0588": {
+  "questaoSha256": "d90d2725d5f15529f0333b5494e5473d1b4376b924ce2ebb6078e9aa36741b2e",
+  "comentarioAnteriorSha256": "6b05d03a1f282dedf7b7e7f8774f52d4ab40c4957785caddfc5a0f28ab671721",
+  "comentario": {
+   "conceito": "A triplanar engana porque cada radiografia mostra só uma parte da fratura.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**Na prova:** triplanar = **SH III no AP** e **SH II no perfil**; a regra para não inverter é que o espículo metafisário (o \"II\") é posterior e só aparece de lado.\n\nO resumo de fraturas do tornozelo na criança traz a triplanar em seção própria.",
+   "correta": "**B: II.** No perfil aparecem a fise aberta e o espículo da metáfise posterior: o desenho de um SALTER-HARRIS II.",
+   "incorretas": {
+    "A": "**O tipo I não tem fragmento metafisário**, e a triplanar tem.",
+    "C": "**O III é a aparência no AP**, onde se vê o traço vertical da epífise.",
+    "D": "**Nenhuma das duas incidências mostra um único traço cruzando epífise, fise e metáfise.** A soma dos planos lembra um IV, mas o capítulo descreve III no AP e II no perfil."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Triplanar; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Triplanar",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "triplanar-9e66d94d",
+     "triplanar-dbcb0e8c",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "c8aaf43019169f617104a357fc6cd6ddd68ee6f1433ab9aca1ce5fe38695c849"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0662": {
+  "questaoSha256": "e301c3feb830be2118be2a6bf86db2a50c51d1269e26034334431f528b332fb9",
+  "comentarioAnteriorSha256": "cd027ee9fde5d3c5508c9d3b980f8b34119775192a9c13052b864994a1c6819d",
+  "comentario": {
+   "conceito": "A pergunta testa a imagem que caracteriza a triplanar, e a ordem AP e perfil é tudo.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**Na prova:** triplanar = **SH III no AP** e **SH II no perfil**; a regra para não inverter é que o espículo metafisário (o \"II\") é posterior e só aparece de lado.\n\nO resumo de fraturas do tornozelo na criança traz a triplanar em seção própria.",
+   "correta": "**A: III e II.** AP com traço vertical na epífise (III) e perfil com espículo metafisário posterior (II), como descreve o capítulo.",
+   "incorretas": {
+    "B": "**Inverte as incidências**, a armadilha que o capítulo aponta.",
+    "C": "**Começa invertido e termina errado.** O IV não é a aparência em nenhuma das incidências.",
+    "D": "**O V é compressão axial**, de radiografia inicial normal, sem relação com a triplanar."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Triplanar; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Triplanar",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "triplanar-9e66d94d",
+     "triplanar-dbcb0e8c",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "c8aaf43019169f617104a357fc6cd6ddd68ee6f1433ab9aca1ce5fe38695c849"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0867": {
+  "questaoSha256": "880d83c8bb5a73e079ab1d4d81cdd8824160350c5b73cbd516fd0cc110c819f9",
+  "comentarioAnteriorSha256": "746e5e502db14a18c6942ecb26fc1f8879c5aa87e5aef792fdc87761e42056e7",
+  "comentario": {
+   "conceito": "O caso é típico: adolescente, entorse no esporte e fratura triplanar.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**A idade do caso.** O capítulo cita a série de KÄRRHOLM: nunca abaixo de 10 nem acima de 16,7 anos. Doze anos num menino é cedo, mas dentro da janela. A **tomografia** é obrigatória para medir o desvio: mudou a indicação cirúrgica em 27% numa série.\n\n**Na prova:** triplanar = **SH III no AP** e **SH II no perfil**; a regra para não inverter é que o espículo metafisário (o \"II\") é posterior e só aparece de lado.\n\nO resumo de fraturas do tornozelo na criança traz a triplanar em seção própria.",
+   "correta": "**D: SH III no AP e SH II no perfil.** É a aparência descrita no capítulo; aos 12 anos, num menino, a fise está no começo da janela de transição.",
+   "incorretas": {
+    "A": "**O AP não mostra SH I**: há traço vertical na epífise. E o perfil mostra II, não III.",
+    "B": "**O AP mostra o traço epifisário (III)**, não um II.",
+    "C": "**Inverte as incidências.**",
+    "E": "**O perfil mostra o espículo metafisário posterior**, ou seja, II, não III."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Triplanar; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Triplanar",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "triplanar-9e66d94d",
+     "triplanar-dbcb0e8c",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "c8aaf43019169f617104a357fc6cd6ddd68ee6f1433ab9aca1ce5fe38695c849"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0517": {
+  "questaoSha256": "8ffcd8345152704cf23af5003e6fda9a919cd599622b0e9a0bbb051f5194dd91",
+  "comentarioAnteriorSha256": "c338c420c0f6e3d139a177a6034e9b8d010c0cf2dc29ecf178a33c45ae59a9df",
+  "comentario": {
+   "conceito": "As alternativas misturam tipos e ossos; a resposta sai de lembrar que a triplanar é uma fratura da tíbia distal vista em duas incidências.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**Na prova:** triplanar = **SH III no AP** e **SH II no perfil**; a regra para não inverter é que o espículo metafisário (o \"II\") é posterior e só aparece de lado.\n\nO resumo de fraturas do tornozelo na criança traz a triplanar em seção própria.",
+   "correta": "**C: SH III da tíbia no AP e SH II da tíbia no perfil.** As duas aparências são da tíbia distal, como descreve o capítulo.",
+   "incorretas": {
+    "A": "**Inverte as incidências.**",
+    "B": "**O AP mostra III, não IV.** O perfil está certo.",
+    "D": "**Erra o AP e muda de osso no perfil.** A triplanar é uma fratura da tíbia; a fíbula fratura em cerca de metade dos casos, mas não é ela que dá a aparência.",
+    "E": "**Erra o perfil e também troca a tíbia pela fíbula.**"
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Triplanar; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Triplanar",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "triplanar-9e66d94d",
+     "triplanar-dbcb0e8c",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "c8aaf43019169f617104a357fc6cd6ddd68ee6f1433ab9aca1ce5fe38695c849"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0820": {
+  "questaoSha256": "4df1f8899c449fdbdc37e32481998a52f3c6dac2099b669c13828d5317307f27",
+  "comentarioAnteriorSha256": "827a191fd7cf9c01d5d572c558aafef4186ed51b8c8f1a148954ceb22e9f412e",
+  "comentario": {
+   "conceito": "A afirmação resume a triplanar numa frase; basta conferir a ordem.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**Na prova:** triplanar = **SH III no AP** e **SH II no perfil**; a regra para não inverter é que o espículo metafisário (o \"II\") é posterior e só aparece de lado.\n\nO resumo de fraturas do tornozelo na criança traz a triplanar em seção própria.",
+   "correta": "**A: Certo (resposta provável, sem gabarito oficial no acervo).** A afirmação reproduz a descrição do capítulo: SH III no AP e SH II no perfil.",
+   "incorretas": {
+    "B": "**A afirmação está correta.** Só estaria errada se invertesse as incidências."
+   },
+   "conferido": false,
+   "provavel": "A",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Triplanar; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Triplanar",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "triplanar-9e66d94d",
+     "triplanar-dbcb0e8c",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "c8aaf43019169f617104a357fc6cd6ddd68ee6f1433ab9aca1ce5fe38695c849"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0928": {
+  "questaoSha256": "ddc1627dec7b576376c45bca9b829ccbe45ecaa018160c0b4d838cccdfb84f48",
+  "comentarioAnteriorSha256": "de1189cfc59be6c55dfa1ac66c8555686f0405a3e5cc4d1664bc7ba360e4882d",
+  "comentario": {
+   "conceito": "A questão pede a definição radiográfica da triplanar.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**Na prova:** triplanar = **SH III no AP** e **SH II no perfil**; a regra para não inverter é que o espículo metafisário (o \"II\") é posterior e só aparece de lado.\n\nO resumo de fraturas do tornozelo na criança traz a triplanar em seção própria.",
+   "correta": "**C: SALTER-HARRIS III na incidência AP e SALTER-HARRIS II no perfil (resposta provável, sem gabarito oficial no acervo).** É a definição do capítulo.",
+   "incorretas": {
+    "A": "**O AP não mostra SH I**, porque há traço vertical na epífise.",
+    "B": "**Nem IV no AP nem III no perfil.** O perfil mostra o espículo metafisário, o II.",
+    "D": "**O V é compressão axial**, e o AP da triplanar é III."
+   },
+   "conferido": false,
+   "provavel": "C",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Triplanar; Anatomia e crescimento."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Triplanar",
+     "Anatomia e crescimento"
+    ],
+    "blocos": [
+     "triplanar-9e66d94d",
+     "triplanar-dbcb0e8c",
+     "anatomia-e-crescimento-67fc8391"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "c8aaf43019169f617104a357fc6cd6ddd68ee6f1433ab9aca1ce5fe38695c849"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0637": {
+  "questaoSha256": "1e513d6f35fb69fb7babc1e8335ad8823af703da5e18b2f3a984f269d261dc9c",
+  "comentarioAnteriorSha256": "935fd6713fc829b8e82408aa4a91f0824c50fea6b76be11021a1f436c46e6f7a",
+  "comentario": {
+   "conceito": "Para escolher a via de uma triplanar, é preciso saber de que lado está o fragmento epifisário, e na maioria ele está do mesmo lado do TILLAUX.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**Lateral ou medial.** O capítulo descreve o tipo **lateral** como o mais comum (19 de 21 numa série): parece um TILLAUX no AP, com o fragmento epifisário anterolateral. No **medial**, os planos se invertem.\n\n**O tratamento**, segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning):\n- até 2 mm (ou extra-articular): gesso longo, joelho a 30 a 40 graus, pé em **rotação interna** no lateral e em **eversão** no medial, tomografia e controle em 7 dias;\n- acima de 2 mm (65% na série de KÄRRHOLM): redução fechada em **rotação interna** (lateral) ou **abdução** (medial); se não reduzir, aberta pela via **anterolateral** (lateral) ou **anteromedial** (medial), com parafusos poupando a fise;\n- nas de três partes, fixa-se primeiro o SH II à metáfise e depois o SH III a ele.\n\n**Por que anterolateral na de duas partes.** A fratura de duas partes típica é a lateral; o degrau articular a reduzir fica no canto anterolateral, e a via sobre ele permite ver a superfície e passar os parafusos.\n\n**Na prova:** triplanar lateral (a mais comum) = redução em **rotação interna**, via **anterolateral**.\n\nO resumo de fraturas do tornozelo na criança traz o tratamento na seção da triplanar.",
+   "correta": "**A: anterolateral.** É a via que o capítulo indica para a triplanar lateral, o padrão mais comum das fraturas em duas partes.",
+   "incorretas": {
+    "B": "**A via anteromedial é a da triplanar medial**, menos comum.",
+    "C": "**A via posteromedial não é a indicada no capítulo** para nenhum tipo de triplanar.",
+    "D": "**O fragmento a reduzir na de duas partes lateral é anterior**; a via posterolateral não o expõe."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Triplanar."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Triplanar"
+    ],
+    "blocos": [
+     "triplanar-db4cdd14",
+     "triplanar-dbcb0e8c",
+     "triplanar-9e66d94d"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "66992b24cdf070247c32f90dd9e4e900f13df9d87f6ec6643a34603004426e69"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-1081": {
+  "questaoSha256": "c010fdb9b6436e0c87c59df3d40dfe44eef98a17a3d1b2463f33ed9983dbf209",
+  "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "comentario": {
+   "conceito": "Na criança, nem todo pedacinho de osso ao lado do maléolo é fratura: os ossículos acessórios são a grande armadilha da radiografia do tornozelo.\n\n**O que o capítulo descreve.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), os ossículos acessórios aparecem entre os **6 e 12 anos**: o **os subtibiale**, do lado medial, em **20%** das crianças, e o **os subfibulare**, lateral, em 1%. Eles podem ser confundidos com fratura e, quando lesados, os laterais dão mais sintomas persistentes.\n\n**O contexto clínico.** O mesmo trecho lembra que as **regras de Ottawa** valem acima de 5 anos e que o **exame de baixo risco** de BOUTIS (dor só na fíbula distal abaixo da articulação ou nos ligamentos laterais) dispensa radiografia: nenhuma fratura de alto risco em 381 crianças. A ressonância mostrou que muitos \"SH I da fíbula\" eram **entorses**, e os dois são tratados igual, com órtese ou bota removível por 3 a 4 semanas.\n\n**Na prova:** ossículos acessórios = **6 a 12 anos**; os subtibiale em 20%.\n\nO resumo de fraturas do tornozelo na criança traz os ossículos na seção de fíbula, entorse e exame de baixo risco.",
+   "correta": "**C: 7 a 10 anos.** É a única faixa inteira dentro do período de 6 a 12 anos descrito no capítulo.",
+   "incorretas": {
+    "A": "**De 6 meses a 2 anos, os próprios centros de ossificação da tíbia e da fíbula distais ainda estão aparecendo.** Os ossículos vêm depois.",
+    "B": "**3 a 5 anos fica antes da faixa** de 6 a 12 anos.",
+    "D": "**12 a 15 anos já está no fim ou fora da faixa**, e é a idade das fraturas de transição.",
+    "E": "**16 a 20 anos é a maturidade**; a fise está fechando ou fechada."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Fíbula, entorse e exame de baixo risco."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Fíbula, entorse e exame de baixo risco"
+    ],
+    "blocos": [
+     "fibula-entorse-e-exame-de-baixo-risco-b57c9c08",
+     "fibula-entorse-e-exame-de-baixo-risco-fb9adbff"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "b807d07ba9f73af347c8318c780a0375c46ee898ec95b0192ab691fe90a4259c"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0531": {
+  "questaoSha256": "a0d04e707f0da3144b9c6f56602954d05c8497f3f27275303758e9001c5851b1",
+  "comentarioAnteriorSha256": "9742669e2f19c17a07a47432fc31a31208905810bdb56ad2215afbfa8ea301b5",
+  "comentario": {
+   "conceito": "As fraturas fisárias do tornozelo podem deixar sequela de crescimento, e a direção da deformidade depende de qual fise parou.\n\n**A parada fisária**, segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning):\n- a ponte óssea costuma surgir após **SALTER-HARRIS III e IV** do maléolo medial (mecanismo de supinação-inversão), no local da fratura. A parte medial para, a lateral continua crescendo: **varo** progressivo;\n- a parada da **fíbula** com a tíbia crescendo dá **valgo**;\n- a parada completa da tíbia com a fíbula crescendo costuma ser compensada pela migração proximal da fíbula.\n\n**O que fazer.** Seguimento a cada 4 a 6 meses; linha de PARK-HARRIS assimétrica pede ressonância. Ponte acima de 7% deforma; de 25% a 40% com mais de 2 anos de crescimento: **ressecção** com interposição; acima de 50% com menos de 2 anos: **epifisiodese completa**; deformidade instalada: **osteotomia**. No SH II, alargamento fisário acima de 3 mm dá 60% de fechamento precoce.\n\n**A leitura do gabarito.** A banca deu o **valgo** como complicação mais comum. O capítulo não ranqueia as deformidades dessa forma: descreve a parada fisária como a complicação central e o **varo** como a deformidade típica da ponte medial. O valgo aparece com a parada da fíbula.\n\n**Na prova:** ponte **medial** após SH III e IV = **varo**; parada da **fíbula** = **valgo**.\n\nO resumo de fraturas do tornozelo na criança traz a parada fisária na seção de complicações.",
+   "correta": "**C: deformidade em valgo do tornozelo (gabarito oficial).** O capítulo descreve o valgo na parada da fíbula com a tíbia crescendo; a deformidade que ele associa às fraturas da tíbia (SH III e IV) é o varo.",
+   "incorretas": {
+    "A": "**Consolidação viciosa ocorre, mas o capítulo enfatiza a parada fisária** e a artrose nas fraturas intra-articulares mal reduzidas.",
+    "B": "**A sinostose tibiofibular é citada como complicação rara**, que pode alterar o crescimento.",
+    "D": "**Uma parada simétrica não gera deformidade angular**; a parada completa da tíbia tende a ser compensada pela fíbula, e a discrepância costuma ser pequena."
+   },
+   "conferido": false,
+   "alerta": "Gabarito oficial C (deformidade em valgo) preservado. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 30, descreve a parada fisária como a complicação importante e o varo como a deformidade típica da ponte após SALTER-HARRIS III e IV; o valgo aparece com a parada da fíbula. O capítulo não diz qual deformidade é a mais comum.",
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do tornozelo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 30 · Ankle Fractures. Seções: Complicações; Fraturas fisárias da tíbia distal."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas10-30-tornozelo",
+    "titulo": "Fraturas do tornozelo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 30 · Ankle Fractures",
+    "secoes": [
+     "Complicações",
+     "Fraturas fisárias da tíbia distal"
+    ],
+    "blocos": [
+     "complicacoes-0098515b",
+     "complicacoes-bd90690d",
+     "fraturas-fisarias-da-tibia-distal-3d0c52a3"
+    ],
+    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
+    "trechosSha256": "0764cd243ceb9891f2a35a1659464bdebad6ad3f77d6c799a786e76a06da489e"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}

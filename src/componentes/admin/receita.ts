@@ -32,11 +32,51 @@ export interface AssinaturaBase {
 }
 
 export type Meio = 'pix' | 'cartao'
+export type TipoCobranca = 'nova' | 'renovacao' | 'volta'
+/** Dias depois do fim do acesso em que pagar de novo ainda conta como renovação (e não "voltou a assinar"). */
+export const TOLERANCIA_RENOVACAO_DIAS = 30
+
+/**
+ * Classifica as cobranças pela pessoa, não pela assinatura (29/10/2026): no Pix cada renovação
+ * cria uma assinatura nova no banco, e passar do Pix ao cartão também. A primeira compra paga
+ * é "nova"; as seguintes são "renovacao" se chegam com o acesso vigente ou até
+ * TOLERANCIA_RENOVACAO_DIAS depois do fim, e "volta" se chegam depois disso. O acesso de cada
+ * pagamento começa no fim do anterior (renovação antecipada soma os dias) e dura os meses do plano.
+ */
+export function classificarCobrancas<C extends Pick<Cobranca, 'em' | 'id_usuario' | 'plano' | 'tipo'>>(lista: C[]): C[] {
+  const fimDe = new Map<string, number>()
+  for (const c of [...lista].sort((x, y) => x.em.getTime() - y.em.getTime())) {
+    const em = c.em.getTime()
+    const fim = fimDe.get(c.id_usuario)
+    c.tipo = fim === undefined ? 'nova' : em <= fim + TOLERANCIA_RENOVACAO_DIAS * 86_400_000 ? 'renovacao' : 'volta'
+    const inicio = fim !== undefined && fim > em ? fim : em
+    fimDe.set(c.id_usuario, somarMeses(new Date(inicio), precoDe(c.plano)?.meses ?? 1).getTime())
+  }
+  return lista
+}
+
+/**
+ * Uma assinatura por pessoa com acesso agora: quem renovou o Pix antes do fim tem dois períodos
+ * vigentes, e quem passou do Pix ao cartão também; contar linhas contaria a pessoa duas vezes.
+ * Fica o cartão que renova sozinho, se houver; senão, o acesso que vai mais longe.
+ */
+export function vigentesPorPessoa<A extends AssinaturaBase>(assinaturas: A[], agora = Date.now()): A[] {
+  const melhor = new Map<string, A>()
+  const fim = (a: A) => a.fim_periodo ? new Date(a.fim_periodo).getTime() : Infinity
+  for (const a of assinaturas) {
+    if (!vigente(a, agora)) continue
+    const atual = melhor.get(a.id_usuario)
+    if (!atual || (renovaSozinha(a) && !renovaSozinha(atual)) || (renovaSozinha(a) === renovaSozinha(atual) && fim(a) > fim(atual))) melhor.set(a.id_usuario, a)
+  }
+  return [...melhor.values()]
+}
 export interface Cobranca {
   em: Date; valor: number; plano: string; id_usuario: string
   /** Data ou valor deduzidos (renovação antiga reconstruída, ou paga sem a cobrança gravada). */
   estimada: boolean
-  tipo: 'nova' | 'renovacao'; meio: Meio
+  /** nova = primeira compra paga da pessoa; renovacao = pagou de novo com acesso ou até
+   *  TOLERANCIA_RENOVACAO_DIAS depois do fim; volta = pagou depois de mais tempo sem acesso. */
+  tipo: TipoCobranca; meio: Meio
   /** Número do pagamento no Mercado Pago, quando o banco guarda. */
   id_pagamento?: string | null
 }
@@ -219,7 +259,7 @@ export function cobrancas(assinaturas: AssinaturaBase[], reais?: CobrancaReal[] 
       id_pagamento: gravada ? real?.id_pagamento ?? null : null,
     }))
   }
-  return lista.sort((x, y) => x.em.getTime() - y.em.getTime())
+  return classificarCobrancas(lista.sort((x, y) => x.em.getTime() - y.em.getTime()))
 }
 
 /**
@@ -266,7 +306,12 @@ export interface Mes {
   novasPix: number
   receitaNovas: number
   renovacoes: number
+  /** Renovações pagas no Pix (as demais, no cartão). */
+  renovacoesPix: number
   receitaRenovacoes: number
+  /** Voltaram a assinar depois de mais de TOLERANCIA_RENOVACAO_DIAS sem acesso. */
+  voltas: number
+  receitaVoltas: number
   cancelamentos: number
   reembolsos: number
   valorReembolsado: number
@@ -282,13 +327,14 @@ export function mesAMes(assinaturas: AssinaturaBase[], meses = 12, agora = new D
   const atual = MES(agora)
   for (let i = meses - 1; i >= 0; i--) {
     const chave = somarMesChave(atual, -i)
-    mapa.set(chave, { chave, receita: 0, novasCartao: 0, novasPix: 0, receitaNovas: 0, renovacoes: 0, receitaRenovacoes: 0, cancelamentos: 0, reembolsos: 0, valorReembolsado: 0, pixEncerrados: 0, baseCartao: 0 })
+    mapa.set(chave, { chave, receita: 0, novasCartao: 0, novasPix: 0, receitaNovas: 0, renovacoes: 0, renovacoesPix: 0, receitaRenovacoes: 0, voltas: 0, receitaVoltas: 0, cancelamentos: 0, reembolsos: 0, valorReembolsado: 0, pixEncerrados: 0, baseCartao: 0 })
   }
   for (const c of lista) {
     const m = mapa.get(MES(c.em)); if (!m) continue
     m.receita += c.valor
     if (c.tipo === 'nova') { m.receitaNovas += c.valor; if (c.meio === 'pix') m.novasPix++; else m.novasCartao++ }
-    else { m.renovacoes++; m.receitaRenovacoes += c.valor }
+    else if (c.tipo === 'volta') { m.voltas++; m.receitaVoltas += c.valor }
+    else { m.renovacoes++; m.receitaRenovacoes += c.valor; if (c.meio === 'pix') m.renovacoesPix++ }
   }
   for (const a of assinaturas) {
     const cancelada = dataCancelamento(a)

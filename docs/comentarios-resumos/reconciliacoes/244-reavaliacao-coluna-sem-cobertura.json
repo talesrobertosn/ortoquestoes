@@ -1,0 +1,234 @@
+[
+  {
+    "id": "coluna-0009",
+    "questaoSha256": "515833e78cd29003b3954fe6112744afdade78b07ba6157ac1777f3ba10f4e72",
+    "comentarioAnteriorSha256": "9ffc15b2897695e3f3fa1a18b07b14b4a307a0bfa6f70997ab065e9c5a0fbe6a",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O capítulo 49 descreve a lesão primária como compressão aguda, mas não compara a frequência de impacto com compressão transitória versus persistente, distração e transecção. Falta fonte primária que sustente o ranking solicitado. A reprodução do gabarito no comentário contextual do resumo não demonstra qual mecanismo é o mais frequente.",
+    "reavaliacaoIndividual": "Compressão aguda em 49 não compara a frequência de compressão persistente/transitória, distração e transecção. O D oficial permanece sem comprovação quantitativa.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0011",
+    "questaoSha256": "cf25220ca27579399d5145905eec1743c6081cb5e6fb3480ca820b90242bc3de",
+    "comentarioAnteriorSha256": "f06d6958ee3020ec73f2add9778b12235f799a8a86dd6da9f802ca974f5fc6c4",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo de trauma toracolombar não descreve a execução e interpretação do Schober modificado. Falta fonte de semiologia que vincule a medida à limitação de mobilidade e compare os distratores de obliquidade, escoliose e hiperlordose; o subtema comum não fundamenta o exame.",
+    "reavaliacaoIndividual": "Não há descrição independente do Schober modificado nos resumos de trauma cervical/toracolombar; faltam técnica e interpretação para distinguir mobilidade, lordose, escoliose e obliquidade.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0049",
+    "questaoSha256": "b1287a1892af4bd089d9ea43d2a46e8d4432aaff09291fc3c3fa9788b421fe87",
+    "comentarioAnteriorSha256": "c617e579e27c7c0f04581fdd52baecfd0deae33c27c0d52c32225db3320d0eb9",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O capítulo 49 descreve o retorno do reflexo bulbocavernoso e suas limitações, mas afirma explicitamente não informar a duração do choque medular. Necessária fonte que compare as faixas de horas e justifique o intervalo oficial C, 24–48 horas; não usar a simples citação da prova como fonte.",
+    "reavaliacaoIndividual": "49 declara não informar a duração do choque medular; 48 define o marcador reflexo, não o intervalo entre as quatro faixas horárias.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0054",
+    "questaoSha256": "6f8b2938b6a6456a9a320c434bf7434107774df4f09cb3e001c5163d7660b4c1",
+    "comentarioAnteriorSha256": "9cb7b172e622b857cd0b8a1baba2084bd195cf02eb066f9d9aa0eef64f104267",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Imagem conferida (dissecção do acesso paraespinhal). O resumo de fratura toracolombar não descreve a via de Wiltse nem o intervalo entre multífido e longuíssimo; falta a anatomia do acesso paraespinhal.",
+    "reavaliacaoIndividual": "Figura aberta: plano posterior lombar desenhado com afastamento manual. 49 descreve exposição mediana subperiosteal, não a anatomia multífido/longuíssimo de Wiltse. A imagem sem rótulos não substitui a fonte anatômica.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [
+      {
+        "arquivo": "coluna/coluna-0054-1.jpeg",
+        "sha256Bytes": "db4362e4ebc398dc5e2db1851ac87e5ec55c7585d58e07343b1e48ba2bbdc0fe",
+        "abertaIndividualmente": true
+      }
+    ],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0076",
+    "questaoSha256": "9742c89d7016a5f6114f3d1ce91b636276180274e2a1556bccb945b7985e0699",
+    "comentarioAnteriorSha256": "50ea24ae2b12b15f5bbb3286b055b8de09d1d5a53e03d8bb1716d21e6d7c8dde",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O capítulo 49 sustenta que metilprednisolona é opção controversa, mas declara não desenvolver as síndromes medulares incompletas. Faltam os padrões motores da síndrome central e sensitivos da posterior necessários para conferir C e D, além da afirmação de hipertermia em B. Necessária fonte específica de síndromes medulares para revisar todas as alternativas.",
+    "reavaliacaoIndividual": "48 agora sustenta C (déficit maior nos membros superiores) e D (posterior altera propriocepção, preserva dor); 49 permite julgar A como opção controversa, não protocolo obrigatório. Falta fonte independente sobre hipertermia em B: pele quente não demonstra elevação da temperatura central. Não atribuir selo enquanto essa alternativa não estiver conferida.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0078",
+    "questaoSha256": "47dffeaa7ffad59c17663f3c5eb4313f2a6d6077489b4828f409d44a3adf1da2",
+    "comentarioAnteriorSha256": "b4ad8537ca2c626611856fa08136082c89919f6e20909d4737a32585ab1e0226",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Imagem coluna/coluna-0078-1.jpeg aberta individualmente: o desenho destaca área central/anterior e rotula a artéria espinhal anterior, mas não traz legenda que distinga síndrome central de território vascular anterior. O gabarito C pressupõe síndrome central com osteoartrite prévia; não usar esse gabarito ou o comentário antigo para decidir a identidade da figura. Necessária a figura original com legenda/território definido e confronto com os padrões central/anterior; sem essa confirmação, não atribuir baseResumo. Questão, gabarito e comentário preservados.",
+    "reavaliacaoIndividual": "Figura aberta: corte medular com área sombreada central/anterior e artéria espinal anterior rotulada. 48 sustenta a associação central/espondilose e distingue Brown-Séquard e anterior, mas a ilustração continua ambígua; falta identificação original da síndrome representada para conciliar o C oficial sem adivinhar a figura.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [
+      {
+        "arquivo": "coluna/coluna-0078-1.jpeg",
+        "sha256Bytes": "30c19508c9a8b986b074938c8360ae7153f2c21111e32bde44b362d5f26dfa0d",
+        "abertaIndividualmente": true
+      }
+    ],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0082",
+    "questaoSha256": "9214de27669f181358cc96b43f58f07dc65328294dd26836cc762b9899a0aec0",
+    "comentarioAnteriorSha256": "d07c32811a266428f30ba9926533b36511b210ed474dc25a47c9cd912b736a21",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O capítulo não define o teste de elevação bilateral dos membros inferiores nem a faixa de flexão dos quadris que localiza dor lombar. Necessária fonte de exame físico que sustente o corte >70 graus e diferencie as quatro faixas; não transferir o Lasègue unilateral para outro teste.",
+    "reavaliacaoIndividual": "Não foi encontrado no corpo dos resumos o teste de elevação BILATERAL com limiar de 70 graus e sua distinção sacroilíaca/lombar. Não transferir a interpretação do Lasègue unilateral.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0088",
+    "questaoSha256": "557f4709c18cc5e14e43a551f5753d9331b093c3a2f7ec154a559f7e16f97fae",
+    "comentarioAnteriorSha256": "be722fe867d60235c202294dc95e0bc9556712c88b813290d1b87a7987208d6f",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Comentário de anulada escrito (lote c08, retirado): o validador recusa porque a questão anulada ainda traz gabarito 'C' nos dados. Decidir se o campo gabarito sai da questão anulada; o texto está em work/rascunho e no scratchpad textos8.py.",
+    "reavaliacaoIndividual": "48/49 definem arco sacral e retorno do reflexo, mas não validam S2-S3 em comparação a todas as raízes das opções. Além da lacuna clínica, anulada com C ainda nos dados é recusada pelo validador de aplicação; preservar o gabarito, sem contornar o bloqueio.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0155",
+    "questaoSha256": "a1f9395c39543087f4539ebae536f267f55156aa7f0e2fc13202ef9380ea5b2a",
+    "comentarioAnteriorSha256": "854d72dc8930248bd18e41d3f957aae27e8f4d26875538675962f85023539e2e",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) explica o mecanismo simpático do choque neurogênico, mas não dá o nível medular (a banca usa a parte superior da coluna dorsal). Falta fonte que localize o nível acima do qual a lesão desencadeia o choque.",
+    "reavaliacaoIndividual": "48/49 explicam perda simpática, vasoplegia e bradicardia, mas não delimitam os níveis responsáveis pelo choque. Não converter mecanismo geral em prova de dorsal superior versus inferior/lombar.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0163",
+    "questaoSha256": "7153b134cb0007c272975dd8fac88013b3c7b6d49c026994f12453b1afd5305f",
+    "comentarioAnteriorSha256": "af140828727c42e990ac938cdfe71c650de242cceac3f05cebbfc1c9321ccced",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo informa a lordose lombossacra total, mas não a contribuição percentual de L4–L5 e L5–S1. Falta fonte da distribuição segmentar que compare 32%, 43%, 55% e 67%; não deduzir a proporção do ângulo global.",
+    "reavaliacaoIndividual": "49 não quantifica a contribuição conjunta dos discos L4-L5/L5-S1 para a lordose; não há base para escolher 67% em vez das outras três cifras.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  }
+]

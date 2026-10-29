@@ -1,0 +1,260 @@
+{
+  "pediatria-1183": {
+    "questaoSha256": "a89554d4bfb8cbd381298051c025575ec6e1d1c12bc29f1a384bcf72b4523f33",
+    "comentarioAnteriorSha256": "b8b9088956902574b92f4a71faeac5f33a49b8467add6ad12df44691791a73da",
+    "comentario": {
+      "conceito": "Depois de cerca de **4 anos**, a cabeça femoral depende principalmente dos **ramos retinaculares posterossuperiores da circunflexa femoral medial**, alternativa B. O trajeto posterior e superior do colo é tão importante quanto o nome da artéria (Rockwood and Wilkins, 10ª edição, capítulo 24, anatomia e irrigação).\n\nA **fise forma uma barreira** à contribuição metafisária para a cabeça. O resumo descreve irrigação metafisária praticamente inexistente por volta dos 4 anos; não se deve imaginar que vasos atravessem livremente essa cartilagem para compensar toda lesão dos vasos epifisários.\n\nAo longo do desenvolvimento, muitos vasos pequenos dão lugar a poucos maiores. A lesão de um deles pode comprometer uma porção da cabeça, o que ajuda a compreender a preocupação vascular nas fraturas do colo. O capítulo também descreve cápsula espessa e possibilidade de tamponamento pelo hemartro, sem tornar o ligamento redondo a principal fonte de socorro.\n\n**Na prova:** manter juntos circunflexa **medial**, ramos **posterossuperiores** e a idade em que a contribuição metafisária já é limitada. Não trocar “vasos epifisários laterais”, outro nome citado, por origem na circunflexa lateral.\n\n**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TARO 2006 (`pediatria-0799`), que fala dos vasos que cruzam a fise. O capítulo mostra que, por volta dos 4 anos, a fise é uma barreira.",
+      "correta": "Alternativa B. A fonte identifica esses ramos da circunflexa medial como irrigação predominante após os 4 anos. A posição no colo e a barreira fisária explicam por que lesões nessa região podem comprometer a epífise.",
+      "incorretas": {
+        "A": "O resumo informa contribuição muito pequena do ligamento redondo, não predominância. O valor de 20% citado no texto refere-se ao adulto e não deve ser transferido como se demonstrasse a principal fonte na criança maior.",
+        "C": "A fise é descrita como barreira, com contribuição metafisária praticamente inexistente por volta dos 4 anos. A alternativa pressupõe uma passagem transfisária que não corresponde à anatomia do grupo etário perguntado.",
+        "D": "A fonte coloca a origem na circunflexa medial e o trajeto na face posterior/superior do colo. A alternativa troca tanto a artéria quanto a topografia; a expressão “vasos epifisários laterais” não muda a origem medial desses ramos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Anatomia e irrigação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Anatomia e irrigação"
+        ],
+        "blocos": [
+          "anatomia-e-irrigacao-be591f38"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "71b12f4e495d081819b32a0d6d445ee998b97e63adbef83e1554989bfb775a8a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1184": {
+    "questaoSha256": "78c48791674023265fb9cc05f2cbfbc268e5b76f58c3c597a422056056d7d1ae",
+    "comentarioAnteriorSha256": "9320f7c106448422be52ab7e0f7caf56d04b598d05530d17e194ae6d5ab24407",
+    "comentario": {
+      "conceito": "Na classificação de **Ratliff**, o **tipo III** envolve o **colo, da fratura até a fise**, sendo raro e com bom prognóstico se houver consolidação. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 24, necrose).\n\nRatliff classifica a **distribuição da necrose**, enquanto Delbet classifica o padrão da fratura. Não basta reconhecer que ambos usam números romanos: uma mesma pergunta pode fornecer uma fratura e depois pedir onde ocorreu a necrose. São informações diferentes.\n\nNo Ratliff **I**, a cabeça inteira é acometida; é o tipo mais comum e de pior prognóstico na tabela. No **II**, só parte da cabeça é atingida, com prognóstico intermediário. No **III**, a localização no colo permite evolução melhor quando a fratura consolida, de modo que não se deve impor colapso universal apenas por haver necrose.\n\n**Na prova:** I cabeça inteira, II parte da cabeça, III colo. O limite entre a linha da fratura e a fise identifica o terceiro padrão, e a consolidação continua fazendo parte de seu prognóstico.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2023 (`pediatria-0581`), que pergunta a região acometida no tipo III de RATLIFF, e do TARO 2006 (`pediatria-0819`), sem gabarito, que afirma que o tipo III tem o pior prognóstico. Pelo capítulo, o tipo III é do colo (metafisário) e tem bom prognóstico. Depois, faça as oficiais.",
+      "correta": "Alternativa C. Descreve a área e a condição prognóstica do tipo III: colo entre fratura e fise, evolução favorável se consolidar. A localização é o elemento que o separa dos dois tipos epifisários.",
+      "incorretas": {
+        "A": "Cabeça inteira, maior frequência e pior prognóstico são características do Ratliff I. A opção usa informações verdadeiras da classificação, mas as atribui ao número errado.",
+        "B": "A necrose parcial da cabeça corresponde ao tipo II, não ao III. Mesmo que a perda vascular possa comprometer uma porção da cabeça, o critério pedido é a distribuição anatômica, que no III está no colo.",
+        "D": "O resumo não define o tipo III como necrose conjunta da cabeça e do colo nem como colapso inevitável. Sua tabela o localiza no colo e ressalta o bom prognóstico quando a fratura consolida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Necrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Necrose"
+        ],
+        "blocos": [
+          "necrose-94b3c083",
+          "necrose-42bbef0d"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "d04a4b9008441e31664745a34337e4e062a7e0624ef46887fe9cdcf8156831d0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1185": {
+    "questaoSha256": "3d563d416db73f81b8c9085c21f52463f6b8639f0bb133f40f434dfadad5b174",
+    "comentarioAnteriorSha256": "03e9b3c55ba3f0cea4a4806d5ccbc60cff114be0d0599b6fdb6d6461ef184945",
+    "comentario": {
+      "conceito": "A meta na fratura **Delbet II desviada** é a **redução anatômica com fixação estável**. Os autores abrem diante de qualquer desvio residual ou cominuição e permitem cruzar a fise se isso for necessário à estabilidade. É a alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 24, tratamento).\n\nO tipo II é **transcervical e intracapsular**. O resumo relata que o tratamento conservador produzia coxa vara em excesso e que redução anatômica com fixação diminuiu complicações. A expectativa genérica de remodelação não substitui o alinhamento exigido para esse padrão.\n\nA fise merece proteção, mas não a qualquer custo. O capítulo compara as sequelas fisárias às da **pseudartrose e necrose** e admite fixação transfisária do tipo II quando necessária. Evitar a fise deixando uma montagem instável inverte essa prioridade.\n\n**Na prova:** estabilidade e redução anatômica são condições de tratamento, não detalhes opcionais. O fato de o paciente ainda crescer não autoriza aceitar desvio ou substituir a fixação por gesso isolado numa fratura desviada do adolescente.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2022 (`pediatria-0707`), que pergunta a manobra de redução fechada do tipo II (abdução e rotação medial), e do TARO 2007 (`pediatria-0730`), sem gabarito, que afirma que o tipo II desviado deve ser reduzido e fixado com parafusos. Depois, faça as oficiais.",
+      "correta": "Alternativa D. Reúne as prioridades descritas: redução anatômica, abertura se a fechada deixar desvio e fixação que pode cruzar a fise para assegurar estabilidade. A permissão transfisária é contextual, não uma ordem para atravessar toda fise em qualquer fratura.",
+      "incorretas": {
+        "A": "O resumo restringe o conservador a grupos específicos de crianças pequenas e fraturas sem desvio. O adolescente com tipo II desviado precisa de redução e fixação; proteger a fise não justifica deixar a fratura sem estabilidade.",
+        "B": "Os autores exigem redução anatômica e abrem se houver qualquer desvio ou cominuição. A opção troca essa meta por uma promessa de remodelação que não é o critério do capítulo para aceitar a redução desse caso.",
+        "C": "O capítulo permite cruzar a fise no tipo II quando a estabilidade exige, considerando piores as sequelas de pseudartrose e necrose. A expressão “a qualquer custo”, mesmo com fixação instável, contradiz essa comparação de riscos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Tratamento; Classificação de DELBET."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Tratamento",
+          "Classificação de DELBET"
+        ],
+        "blocos": [
+          "tratamento-c73ba8ee",
+          "tratamento-089519c6",
+          "classificacao-de-delbet-e1115de7"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "3d8273969db04527cb4b9630b2f8c0cadf7516a4e4f09dabae717132b04fa489"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1187": {
+    "questaoSha256": "8aaa348d84561c423b3ab40a27af669491ccd070f5e397512bbc25e9b8c83983",
+    "comentarioAnteriorSha256": "2f7aa950d5591b1a4a71896eadb5a740ef59a6d520229eb017894acb29ecff23",
+    "comentario": {
+      "conceito": "A **qualidade da redução** é o principal fator **modificável** destacado para reduzir o risco de necrose após fratura do colo na criança. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 24, necrose).\n\nA palavra modificável separa o que o tratamento pode buscar corrigir do que já pertence ao trauma. O tipo de Delbet, o desvio inicial e a idade influenciam o risco, mas o cirurgião não transforma a fratura recebida em outro tipo simplesmente escolhendo uma técnica. Pode, porém, trabalhar para restaurar a anatomia.\n\nO capítulo menciona benefício possível do atendimento em até 24 horas, com estudos divergentes, e informa que a **capsulotomia não reduziu a necrose**. Assim, um gesto conhecido não deve ser promovido automaticamente à principal medida preventiva sem a evidência descrita.\n\n**Na prova:** reconhecer o padrão de risco e concentrar a resposta no fator que pode ser melhorado. Gesso e outros elementos do tratamento têm indicações próprias, mas não substituem a redução anatômica como prioridade apresentada.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada aos tipos de DELBET e à necrose, cobrados no TARO 2011 (`pediatria-0651`), na ENARE 2025 (`pediatria-0858`) e no TEOT 2025 (`pediatria-0920`).",
+      "correta": "Alternativa B. A fonte nomeia a qualidade da redução como o fator modificável mais importante. Isso não garante ausência de necrose, pois a lesão vascular inicial e o padrão de fratura continuam relevantes.",
+      "incorretas": {
+        "A": "A capsulotomia pode ser discutida no manejo do hemartro, mas o resumo informa que não reduziu a necrose nos dados apresentados. Não deve ocupar o lugar da qualidade da redução apenas por ser um procedimento possível.",
+        "C": "O gesso é usado seletivamente, conforme idade e estabilidade da fixação. Essa indicação não o torna o principal fator modificável de necrose descrito no capítulo; ele não corrige por si uma redução inadequada.",
+        "D": "Delbet informa o padrão da lesão e se associa ao risco, mas não é um fator que o tratamento possa modificar depois do trauma. A alternativa responde a uma pergunta sobre prognóstico anatômico, não sobre o principal fator modificável."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Necrose; Tratamento; Classificação de DELBET."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Necrose",
+          "Tratamento",
+          "Classificação de DELBET"
+        ],
+        "blocos": [
+          "necrose-42bbef0d",
+          "tratamento-089519c6",
+          "classificacao-de-delbet-29878cdc"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "db0b8eae800931a9e4ea79c16873b14a9d8032ba381d0c8e32114ffd04818d48"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1190": {
+    "questaoSha256": "68535bc5f22c703e7f0649220bc5f0d449c4e25d15ba9ade6de4b119ace6f658",
+    "comentarioAnteriorSha256": "7b39f72e7e2fbcb19f64b395f7b6aa6dfd3a120ae829efd41246844fc8434007",
+    "comentario": {
+      "conceito": "Na criança, a luxação traumática do quadril é **posterior em mais de 90%**. Abaixo dos 6 anos, pode ocorrer por **baixa energia**, de forma isolada, associada a frouxidão, coxa valga ou menor cobertura. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 24, luxação traumática).\n\nA idade muda a interpretação da energia necessária. No paciente maior, o resumo destaca alta energia e lesões associadas; no pequeno, as particularidades anatômicas permitem luxação sem o mesmo cenário de politrauma. Não se deve exigir acidente de alta energia para reconhecer toda luxação infantil.\n\nA redução continua uma **urgência**. O capítulo relaciona mais de 6 horas ao maior risco de necrose, cuja frequência é de cerca de 10% no contexto de luxação descrito. Esse número é diferente do risco quase universal da **fratura transepifisária com luxação, Delbet IB**. Chamar ambos apenas de “luxação” apaga uma distinção prognóstica essencial.\n\n**Na prova:** posterior é a direção predominante; baixa energia é possível nos menores. Nem o aspecto isolado diminui a urgência, nem a gravidade possível autoriza afirmar que necrose seja inevitável em toda luxação.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2024 (`pediatria-0537`), que pergunta a direção mais comum e a energia do trauma abaixo de 5 anos. Depois, faça a oficial, e também o TEOT 2024 (`pediatria-0561`), sobre a manobra de redução.",
+      "correta": "Alternativa A. Reúne direção, faixa etária e predisposição anatômica conforme o resumo. A baixa energia no pequeno não contradiz o diagnóstico; é uma característica reconhecida do grupo.",
+      "incorretas": {
+        "B": "A anterior representa menos de 10%, enquanto a posterior supera 90%. Além de inverter a frequência, a palavra “sempre” ignora as luxações de baixa energia do grupo mais novo.",
+        "C": "O capítulo descreve a luxação abaixo de 6 anos como frequentemente isolada e de baixa energia. Lesões associadas precisam ser avaliadas, mas não são uma condição obrigatória de toda luxação nessa idade.",
+        "D": "O resumo apresenta necrose em cerca de 10% no contexto de luxação traumática e ressalta o risco do atraso. O risco quase universal é do subtipo de fratura Delbet IB com cabeça luxada, não de toda luxação reduzida precocemente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Luxação traumática do quadril; Classificação de DELBET."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Luxação traumática do quadril",
+          "Classificação de DELBET"
+        ],
+        "blocos": [
+          "luxacao-traumatica-do-quadril-97f4077e",
+          "luxacao-traumatica-do-quadril-a36e6cc4",
+          "classificacao-de-delbet-e1115de7"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "9d2915d61fba5248de77f9d9c71a61d8c32494679af0e8a6643b5032fa252e9b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1191": {
+    "questaoSha256": "e8611fd00a7a7f2d0c07824deab444087a361e260a4c73ff86dce3a9bc5c24ae",
+    "comentarioAnteriorSha256": "5fb1c65126b973c5eb3910b418ce6e0873d39a31f7893f1bd1456008b5a8957a",
+    "comentario": {
+      "conceito": "No adolescente de **12–16 anos**, o resumo recomenda reduzir a luxação traumática com **anestesia geral, relaxamento e radioscopia**, para diminuir o risco de **descolar a epífise femoral** durante a manobra. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 24, luxação traumática).\n\nA urgência é real: o atraso acima de 6 horas aumenta o risco de necrose. Mas rapidez não significa aplicar força sem condições adequadas. O capítulo inclui a fratura transfisária entre os problemas que podem ocorrer durante a redução de uma luxação, o que explica o cuidado específico com o adolescente.\n\nDepois de reduzir, a avaliação por imagem continua necessária. Espaço articular alargado persistente pode indicar interposição, e a parede posterior cartilaginosa pode ser subestimada na tomografia. A conclusão da manobra não basta para presumir congruência completa.\n\n**Na prova:** urgência e segurança devem estar juntas. Não esperar dias em tração e não substituir relaxamento e controle radioscópico por uma tentativa de força com sedação leve.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2024 (`pediatria-0537`) e ao TEOT 2024 (`pediatria-0561`), sobre a luxação traumática e sua redução.",
+      "correta": "Alternativa B. É o conjunto explicitamente recomendado no grupo de 12–16 anos. O objetivo é permitir uma redução controlada e evitar uma complicação transfisária, sem abandonar a necessidade de reduzir com urgência.",
+      "incorretas": {
+        "A": "A recomendação do capítulo inclui anestesia geral, relaxamento e radioscopia. Retirar esses cuidados em nome da rapidez não corresponde ao protocolo descrito para o risco epifisário do adolescente.",
+        "C": "Esperar 3 dias em tração contraria a urgência: o resumo identifica mais de 6 horas como importante fator de risco de necrose. A tração proposta não resolve a necessidade de recolocar a cabeça oportunamente.",
+        "D": "O capítulo descreve redução com condições adequadas e investigação de obstáculos quando a congruência não é obtida. Não estabelece redução aberta de rotina para toda luxação posterior, sem tentativa fechada controlada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Luxação traumática do quadril; Classificação de DELBET."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Luxação traumática do quadril",
+          "Classificação de DELBET"
+        ],
+        "blocos": [
+          "luxacao-traumatica-do-quadril-a36e6cc4",
+          "classificacao-de-delbet-29878cdc"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "28e0233b4b0b1d64b3cc35713bd65929404686865765a8bd9fdd2055c6c0098a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1192": {
+    "questaoSha256": "b29509e65ae5c481a97dde7f7b1ef9521816646b8dadaa4c4bd431bc35de1753",
+    "comentarioAnteriorSha256": "d96e45b8bb5494506ade2e132b8604778223c7f289b36f6c9ccf4a7d2b7fc06b",
+    "comentario": {
+      "conceito": "O **alargamento articular que persiste** depois da redução deve levantar a suspeita de **interposição** de lábio, cápsula ou fragmento. A conduta é investigar com **ressonância magnética**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 24, luxação traumática).\n\nReduzir a cabeça não significa, por si só, que todas as estruturas tenham recuperado posição e congruência. O capítulo apresenta o espaço alargado persistente como sinal de obstáculo intra-articular, que pode exigir retirada aberta ou artroscópica. A imagem dirige essa decisão.\n\nA ressonância também interessa porque a parede posterior cartilaginosa é **subestimada pela tomografia**. Na criança, o osso visível pode representar só uma parte do que foi lesado. A comparação com o outro lado e a persistência descrita no caso impedem encerrar a avaliação apenas porque já houve uma manobra de redução.\n\n**Na prova:** não tratar redução não concêntrica como sucesso completo. Investigar o obstáculo é diferente de aumentar a força; observar por meses ou liberar carga automaticamente não segue o manejo apresentado.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A luxação do quadril na criança é cobrada (TARO 2024 `pediatria-0537`), e a redução não concêntrica é a armadilha clínica que o capítulo destaca.",
+      "correta": "Alternativa C. A ressonância pesquisa os tecidos e fragmentos que o resumo nomeia como possíveis causas do alargamento persistente. Identificar a interposição permite decidir como removê-la e recuperar congruência.",
+      "incorretas": {
+        "A": "O capítulo não classifica todo alargamento como hemartro inocente. Quando ele persiste, indica interposição possível; liberar carga sem esclarecer essa incongruência abandona o dado decisivo do caso.",
+        "B": "Mais força não identifica nem remove de maneira controlada o possível tecido interposto. O resumo direciona a avaliação à ressonância e à eventual retirada aberta ou artroscópica do obstáculo.",
+        "D": "A fonte não recomenda esperar 6 meses para investigar um espaço persistentemente alargado. A questão já fornece a persistência que orienta a pesquisa de interposição, para que o tratamento não termine numa articulação incongruente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Luxação traumática do quadril."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Luxação traumática do quadril"
+        ],
+        "blocos": [
+          "luxacao-traumatica-do-quadril-a36e6cc4"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "14e4636c4797ab3d0af69203ca31722dd3c3a190727e45f6fb4c6adf39490ae2"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

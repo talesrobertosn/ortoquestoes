@@ -1,0 +1,159 @@
+{
+  "mao-2292": {
+    "questaoSha256": "a83230301e0b9c1cf01dc8b30fa05ee7cbbbbd1895c9c0abe67040fb6df293ef",
+    "comentarioAnteriorSha256": "1d6acdaf216fa0ae8942a22734d6e5c7a8c6389b5e703170585fbfed3a655275",
+    "comentario": {
+      "conceito": "A **translação ulnar de todo o carpo em relação ao rádio** é um exemplo de instabilidade **não dissociativa**. O problema está na relação entre o conjunto carpal e o antebraço, e não obrigatoriamente na separação de dois ossos de uma mesma fileira. Essa localização da falha é o que distingue a alternativa D (Rockwood adultos, 10ª ed., cap. 44, padrões de instabilidade e luxação radiocárpica).\n\nNa instabilidade **dissociativa**, rompe-se um elo dentro de uma fileira, como o escafossemilunar ou o lunopiramidal. Na **não dissociativa**, as fileiras mantêm sua unidade interna, mas falham suas relações entre si ou com o rádio. Na **complexa**, há falha tanto dentro quanto entre fileiras, como nas lesões perilunares.\n\nO resumo descreve a translação ulnar como a forma mais frequente de instabilidade radiocárpica ligamentar. O carpo pode perder sua relação com o rádio mesmo sem uma dissociação intrínseca inicial. Se houver uma lesão perilunar associada, porém, passam a existir componentes adicionais; por isso é preciso avaliar também os espaços entre os ossos, em vez de chamar qualquer deslocamento ulnar de uma lesão puramente não dissociativa.\n\nA leitura anatômica é mais útil que decorar uma posição isolada. Pergunte onde está a falha: dentro da fileira proximal, entre fileiras ou entre carpo e rádio. O nome do osso que aparece deslocado não substitui essa análise do conjunto.\n\n**Por que esta questão foi criada.** Inspirada na questão 73 do SIMÃO 2024, que pediu um exemplo de instabilidade carpal não dissociativa.",
+      "correta": "**Correta: D (translocação ulnar do carpo em relação ao rádio).** É uma perda da relação radiocárpica do conjunto. Na forma não dissociativa, o deslocamento não exige romper um dos grandes ligamentos intrínsecos que unem os ossos da fileira proximal.",
+      "incorretas": {
+        "A": "A dissociação entre semilunar e piramidal rompe um elo dentro da fileira proximal. É, portanto, um exemplo de instabilidade dissociativa. A possível flexão do semilunar em VISI é consequência do desequilíbrio interno dessa fileira, diferente do deslocamento global do carpo sobre o rádio.",
+        "B": "A luxação perilunar dorsal compromete relações ao redor do semilunar e entre as fileiras. O corpo do resumo a classifica como instabilidade complexa, pois combina falhas dentro e entre fileiras.",
+        "C": "A luxação do semilunar corresponde à progressão avançada do padrão perilunar, no estágio IV de Mayfield. O semilunar gira para palmar após falhas sucessivas de contenção; não é uma simples translação radiocárpica de fileiras internamente preservadas. A etapa final não deve ser separada da cadeia de lesões que a produz."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Padrões de instabilidade: DISI, VISI e o que é dissociativo; Luxação radiocárpica; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Luxação radiocárpica",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-c0065304",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-8638f558",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-ae523a5b",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-48fd364d",
+          "luxacao-radiocarpica-1813152a",
+          "luxacao-radiocarpica-ffe770be",
+          "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "d38ea0ee63f8aaac421d8bcd57c59b80a695b328d951b3200ab4d567dbad5dfd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2293": {
+    "questaoSha256": "93909106f2ed779e984c9e07dfc3d6025a6b18e97bd944ec3d2b5970b4dddbe9",
+    "comentarioAnteriorSha256": "4a3ec0adc90d6ac7461d8bdaed3938037d4f70542932bfbc5b841602d78cc976",
+    "comentario": {
+      "conceito": "O índice original de altura do carpo é a **altura carpal dividida pelo comprimento do terceiro metacarpo**. A altura que se deseja avaliar fica no numerador; o terceiro metacarpo funciona como referência de tamanho no denominador. Inverter essa ordem produz outro número e muda completamente sua interpretação (Rockwood adultos, 10ª ed., cap. 44, altura do carpo e espaços).\n\nTrata-se de uma razão entre duas medidas de comprimento, portanto sem unidade. Em vez de comparar a altura em milímetros entre mãos de tamanhos diferentes, relaciona-se essa altura a uma dimensão da própria mão. Na PA, a proporção normal descrita pelo resumo fica em torno de **0,50**, com faixa de **0,45 a 0,60**.\n\nUma proporção de 0,50 significa que a altura medida corresponde à metade do comprimento do terceiro metacarpo. Se o carpo perde altura enquanto a referência metacarpiana se mantém, o quociente diminui. O capítulo considera valor **abaixo de 0,45** sugestivo de colapso. O sentido da alteração, portanto, decorre diretamente da fórmula.\n\nA medida complementa os espaços articulares e os arcos de Gilula. Ela quantifica altura, mas não revela sozinha qual ligamento rompeu ou qual osso fraturou. A investigação ainda precisa localizar o desarranjo responsável pelo colapso, sem transformar um índice alterado em um diagnóstico anatômico completo.\n\n**Por que esta questão foi criada.** Inspirada na questão 53 do SIMÃO 2024, que perguntou como se calcula o índice de altura do carpo.",
+      "correta": "**Correta: B (altura carpal/comprimento do terceiro metacarpo).** Essa é a fórmula descrita. A relação com uma referência da própria mão permite interpretar a perda de altura como redução do índice, em vez de depender apenas de um comprimento absoluto.",
+      "incorretas": {
+        "A": "A alternativa inverte numerador e denominador. Quando a altura corresponde à metade do comprimento do terceiro metacarpo, a razão correta é 0,50; a inversa seria 2. Assim, além de trocar a fórmula, ela inverte o sentido numérico da perda de altura.",
+        "C": "Colocar o comprimento do capitato sobre a altura do carpo substitui tanto o numerador quanto a referência do método perguntado. O capitato é um osso do próprio conjunto carpal, mas o índice original descrito utiliza a altura total em relação ao terceiro metacarpo.",
+        "D": "A largura do rádio distal não é o denominador dessa fórmula. A opção conserva a altura no numerador, mas troca a medida de referência. Reconhecer apenas a palavra “altura” não basta: os valores de normalidade do resumo pertencem à razão com o comprimento do terceiro metacarpo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Padrões de instabilidade: DISI, VISI e o que é dissociativo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo"
+        ],
+        "blocos": [
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-22ed1a15"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "50c9ddfbefd13f5a96025789b9ac721158bce58919ab0b90e06fd2e7d5a6386a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2320": {
+    "questaoSha256": "d654b7065692ccd45762fba94329c434ed17d2392551352147ab8d7a7e38c49a",
+    "comentarioAnteriorSha256": "36dc3020984ced8d5a4ca5a03d95bd4e2abb6d36c33dc0637f52a0262b22523a",
+    "comentario": {
+      "conceito": "A pergunta reúne **todas as fraturas do escafoide**, um grupo que mistura lesões estáveis, desviadas, proximais e diagnosticadas tardiamente. O resumo consultado informa pseudartrose em **até 10% no geral**, com risco muito menor nas fraturas bem alinhadas ou adequadamente imobilizadas. A população considerada é essencial para interpretar a porcentagem (Rockwood adultos, 10ª ed., cap. 44, pseudartrose do escafoide).\n\nO gabarito registrado é **B, entre 10% e 15%**. Essa faixa inclui 10%, mas seu limite de 15% não é o número geral apresentado pelo resumo. A diferença deve ficar explícita: a letra do acervo é preservada, e a fonte secundária é citada pelo valor que efetivamente oferece, sem converter “até 10%” em “10% a 15%”.\n\nO risco aumenta com desvio, polo proximal e atraso diagnóstico. O desvio compromete a estabilidade necessária para a união; no polo proximal, a irrigação depende de um trajeto retrógrado vulnerável à fratura. Essas condições ajudam a entender por que uma taxa de um subgrupo de alto risco não deve ser aplicada a todas as fraturas.\n\nA tabela do resumo mostra a dimensão dessa variação: sem cirurgia, fraturas sem desvio ou com desvio mínimo têm **1% a 5%**, enquanto as desviadas ficam entre **10% e 50%**. São grupos e tratamentos definidos. Antes de usar qualquer porcentagem para orientar um paciente, é preciso reconhecer localização, alinhamento e tratamento, em vez de escolher um número isolado para o escafoide inteiro.\n\n**Por que esta questão foi criada.** Inspirada na questão 88 do SIMÃO 2024, que cobrou a porcentagem de pseudartrose considerando todas as fraturas de escafoide.",
+      "correta": "**Gabarito registrado: B (10% a 15%).** É a alternativa preservada. O resumo Rockwood10-44 informa até 10% no conjunto das fraturas, e não a faixa inteira de 10% a 15%. A concordância no valor de 10% não permite atribuir ao resumo o limite superior de 15%.",
+      "incorretas": {
+        "A": "A faixa de 20% a 25% ultrapassa a estimativa geral do resumo. Valores dessa ordem podem caber na faixa ampla das fraturas desviadas tratadas sem cirurgia, mas esse subgrupo não corresponde ao conjunto de todas as fraturas perguntado. O denominador muda o significado do número.",
+        "C": "Entre 30% e 35% também seria uma estimativa muito superior ao valor geral informado. O resumo destaca desvio, polo proximal e atraso como riscos, mas não atribui essa faixa específica a todas as fraturas. Usar uma população de maior risco para representar o total superestima o problema nas lesões estáveis.",
+        "D": "Entre 40% e 45% aproxima-se do extremo alto da faixa descrita para fraturas desviadas sem cirurgia. O mesmo resumo apresenta taxas bem menores para as sem desvio. Aplicar esse intervalo ao conjunto apagaria a diferença entre estabilidade, localização e tratamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose; Escafoide: tratamento da fratura aguda; Escafoide: anatomia, irrigação e mecanismo."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito registrado é B (10% a 15%). O resumo Rockwood10-44 informa até 10% no geral, com variação importante conforme desvio e tratamento. A faixa da alternativa não é reproduzida integralmente pela fonte consultada; a fonte consultada não reproduz toda a faixa da alternativa."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose",
+          "Escafoide: tratamento da fratura aguda",
+          "Escafoide: anatomia, irrigação e mecanismo"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-74d9a418",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f3134361",
+          "escafoide-tratamento-da-fratura-aguda-ace416a4",
+          "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "c4c0b5b655f3e4400cf5ee0ee6e997cf5d0b7fd05de5824d67e7e5135cf7243c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2290": {
+    "questaoSha256": "5b1732a713f59445d6030378fb3869d91c674211668650dfa09daa75e3718afd",
+    "comentarioAnteriorSha256": "bccb6ad795044f1983ba40cd514b3cd8a90771df1bc9841e28bd158d9901cb9e",
+    "comentario": {
+      "conceito": "A redução e associação escafossemilunar, **RASL**, aparece entre as opções para lesão crônica em que o desalinhamento ainda pode ser reduzido. No algoritmo de tratamento de Garcia-Elias, o cenário de ligamento irreparável, deformidade **redutível** e cartilagem preservada corresponde ao **estágio IV** (Rockwood adultos, 10ª ed., cap. 44, dissociação escafossemilunar).\n\nA lógica do algoritmo vem antes do nome da operação. Se o ligamento ainda permite reparo, tenta-se restaurar o próprio tecido. Se é irreparável, mas os ossos podem voltar à posição e as superfícies estão preservadas, consideram-se procedimentos que mantenham a redução. Quando a deformidade é fixa ou há artrose, entram outras formas de salvamento.\n\nO resumo inclui a RASL na seção de tratamento crônico redutível e descreve a associação com parafuso, advertindo sobre **falha e soltura frequentes**. Isso é diferente de afirmar que seja a melhor técnica ou a preferência dos autores. Pertencer ao conjunto de opções de uma fase não demonstra superioridade sobre as demais reconstruções.\n\nAs duas versões de tabela apresentadas diferem nas fases finais: uma tem seis estágios e outra acrescenta translação ulnar, chegando a sete. O estágio IV mantém o mesmo núcleo de deformidade redutível sem artrose; VI e VII já representam condições tardias. Essa comparação permite responder sem confundir a numeração final com a indicação mecânica da RASL.\n\n**Por que esta questão foi criada.** Inspirada na questão 39 do SIMÃO 2024, que perguntou para qual estágio de GARCIA-ELIAS o RASL é indicado.",
+      "correta": "**Correta: D (estágio 4).** É a fase de lesão irreparável com deformidade redutível e cartilagem normal. O resumo situa a redução-associação entre as opções do tratamento crônico nessa condição, com ressalva sobre falha e soltura do parafuso.",
+      "incorretas": {
+        "A": "O estágio II é uma lesão completa ainda reparável e tem como opção o reparo do próprio ligamento, associado a estabilização e eventual capsulodese. A RASL é apresentada na seção da lesão crônica irreparável e redutível; não deve substituir a definição de reparabilidade da fase II.",
+        "B": "Na tabela de seis estágios, o VI já é irredutível e artrósico; na tabela de sete, o VI é a deformidade irredutível. As duas descrições se afastam da condição redutível em que se discutem as opções dessa seção. A possibilidade de colocar os ossos em posição é um requisito, não um detalhe dispensável.",
+        "C": "O VII pertence à versão de sete estágios e corresponde à cartilagem lesada. Isso encaminha a avaliação para salvamentos compatíveis com o desgaste, não para manter por redução-associação uma articulação cuja cartilagem seria normal. A opção mistura uma fase de artrose com a indicação do estágio IV."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-6cbb5bca",
+          "dissociacao-escafossemilunar-e468b322",
+          "dissociacao-escafossemilunar-8935e6ce",
+          "dissociacao-escafossemilunar-f6a7a76b"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "4f0c9b850768ad9e4e96cbc7aa40f4ba7b6ce774e1fd4c9e40f7591ff80e2413"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

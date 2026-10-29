@@ -1,0 +1,386 @@
+{
+  "pediatria-1173": {
+    "questaoSha256": "0b0c09d455a8378ec84b67a37ebd4c50bc8a3aa2c0cc2cb7d804887f275223e1",
+    "comentarioAnteriorSha256": "c33068b3a90d88ebc929eb2ba4266fae45353c2527995d37b41794bf44dbab84",
+    "comentario": {
+      "conceito": "Nas fraturas da pelve da criança, a principal causa de morte destacada no resumo é o **traumatismo cranioencefálico associado**, alternativa B. A gravidade do trauma não deve ser atribuída automaticamente ao sangramento da própria pelve, como poderia sugerir uma comparação apressada com o adulto (Rockwood and Wilkins, 10ª edição, capítulo 23, lesões associadas).\n\nEntre 58% e 87% dos pacientes das séries apresentadas têm lesões associadas. O traumatismo craniano é a comorbidade que mais pesa na mortalidade, seguido pelas lesões toracoabdominais. Isso explica por que uma classificação mecânica da fratura não substitui a avaliação do paciente inteiro.\n\nA **hemorragia pélvica** continua exigindo atenção, sobretudo nas lesões instáveis, mas responde por menos de 1% das mortes descritas no resumo. A fonte relaciona esse comportamento a vasos mais contráteis e ao predomínio de compressão lateral, que abre pouco o anel. Menor importância relativa não significa impossibilidade de sangramento grave.\n\n**Na prova:** a fratura é um marcador de trauma que pode ter comprometido outras regiões. Procurar a causa principal de morte no traumatismo craniano associado, sem negligenciar reanimação e lesões pélvicas.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TEPOP 2024 (`pediatria-0947`), que pergunta características gerais das fraturas da pelve e acetábulo, incluindo as lesões associadas.",
+      "correta": "Alternativa B. O resumo coloca o traumatismo craniano como a principal causa de morte nesse grupo. A resposta depende do perfil de lesões associadas da criança, não de assumir que a própria fratura é necessariamente a origem do evento fatal.",
+      "incorretas": {
+        "A": "A hemorragia da pelve pode ser grave nas fraturas instáveis, mas não lidera a mortalidade pediátrica descrita: a fonte informa menos de 1% e destaca as lesões associadas. Frequência de transfusão e causa principal de morte são desfechos diferentes.",
+        "C": "O capítulo não coloca embolia pulmonar como a principal causa de morte. O foco de mortalidade é o trauma associado, sobretudo craniano; substituir esse dado por uma complicação tromboembólica muda o desfecho dominante apresentado.",
+        "D": "Lesões uretrais precisam ser procuradas, especialmente em determinados padrões do anel, mas pertencem às lesões geniturinárias associadas. Não são apontadas como a principal causa de morte, lugar atribuído ao traumatismo craniano."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Lesões associadas e avaliação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Lesões associadas e avaliação"
+        ],
+        "blocos": [
+          "lesoes-associadas-e-avaliacao-ab7c757b"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "5096b7e23e62f2920311bd1ddf330bb12f76cacb707bf831ad8cc682c6914c0b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1174": {
+    "questaoSha256": "3d95b87b4f56f12ace7b7d6e44d5ef81f63476bef970c50c0479450f59cf967c",
+    "comentarioAnteriorSha256": "ca5dd0f6f01340bd90c3724f3d382589361777ed266a4b94d5226abf25f121ab",
+    "comentario": {
+      "conceito": "Na disjunção da sínfise púbica infantil, o resumo indica **reduzir com diástase de 2,5 cm ou mais ou rotação acima de 15°**, alternativa C. Uma medida pequena de abertura não deve ser interpretada automaticamente como instabilidade que precisa de redução (Rockwood and Wilkins, 10ª edição, capítulo 23, anel estável e sínfise).\n\nA sínfise da criança tem **elasticidade normal**. O capítulo diferencia sinais de separação e critérios para reduzir: diferença acima de 1 cm com compressão sugere separação, mas não é apresentada como regra de cirurgia universal. Abaixo de 2 cm, o tratamento descrito é sintomático.\n\nEssa distinção evita transformar toda mudança radiográfica em indicação operatória. O tamanho da abertura e a rotação são componentes da avaliação mecânica; o caso pede o limiar de redução, não apenas como reconhecer algum movimento da sínfise.\n\n**Na prova:** separar “há separação?” de “precisa reduzir?”. Para a segunda pergunta, usar 2,5 cm ou mais ou rotação acima de 15°, conforme os critérios apresentados no capítulo.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O capítulo dá números claros para a sínfise, um tema pouco cobrado e com cara de prova.",
+      "correta": "Alternativa C. Reúne os limites de diástase e rotação que o resumo apresenta para redução. O conectivo “ou” importa: não é necessário exigir que os dois estejam alterados ao mesmo tempo.",
+      "incorretas": {
+        "A": "5 mm isoladamente não é o limiar descrito para reduzir. A elasticidade da sínfise na criança impede equiparar qualquer pequeno alargamento aos critérios de 2,5 cm ou rotação importante.",
+        "B": "A diferença acima de 1 cm com compressão ajuda a reconhecer separação, mas a fonte não a transforma em cirurgia obrigatória para todo caso. A opção mistura reconhecimento da lesão com limiar de redução e acrescenta uma universalidade que o capítulo não dá.",
+        "D": "O critério de redução é apresentado para a própria diástase ou rotação da sínfise, sem exigir fratura acetabular associada. A presença de outra fratura pode importar na avaliação global, mas não substitui os limites solicitados."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Asa, sacro, cóccix e anel estável (tipos II e III)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Asa, sacro, cóccix e anel estável (tipos II e III)"
+        ],
+        "blocos": [
+          "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-f0400c85"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "8d933abee2300150c50c91972d6c4f1783c7a038e50c5d721ad9e778a1f2709d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1175": {
+    "questaoSha256": "fde6150a7c4e851b00c008624d429b62cd43b56f89ebfd4ebb061d4db13d3e4a",
+    "comentarioAnteriorSha256": "ee2af63cbeed4022470f7eb390d1f88e050f2f5b79b04a44376e5f66eea5159c",
+    "comentario": {
+      "conceito": "A fratura **straddle**, com ramos superiores e inferiores bilaterais, é classificada como **IVa** no esquema modificado. O resumo contraindica a **cinta pélvica** nesse padrão e manda afastar lesões de **bexiga e uretra**, alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 23, fraturas instáveis).\n\nA razão para evitar a cinta é mecânica: ela pode **empurrar o ilíaco para dentro**, em vez de corrigir adequadamente esse desenho de fratura. Não se deve transportar uma medida útil para um anel que abre para todo padrão pélvico. O capítulo permite cinta ou lençol em outro cenário: adolescente com abertura do anel e lesão anterior e posterior.\n\nO fragmento do straddle tende a subir pela ação do **reto abdominal**. A proximidade de bexiga e uretra torna a avaliação dessas estruturas parte central do cuidado, mesmo que o anel posterior esteja íntegro no caso. O resumo orienta tratar esse padrão como IIIB, sem propor a cinta como solução universal.\n\n**Na prova:** identificar o desenho antes do dispositivo. Straddle não é sinônimo de anel aberto que deva ser apertado; lembrar a direção do fragmento e a avaliação geniturinária.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2017 (`pediatria-0620`) e do TARO 2019 (`pediatria-0645`), que perguntam a classificação da fratura bilateral dos ramos (IV, IVa). Aqui o ângulo é a conduta. Depois, faça as oficiais.",
+      "correta": "Alternativa D. Conserva as duas orientações explícitas do capítulo: não usar cinta nesse padrão e investigar bexiga e uretra. O tratamento precisa respeitar a geometria da fratura, em vez de aplicar uma medida de compressão por rotina.",
+      "incorretas": {
+        "A": "O resumo atribui ao reto abdominal a subida do fragmento. A alternativa inverte a direção e troca o músculo responsável, afastando-se da mecânica descrita para o straddle.",
+        "B": "A cinta é especificamente contraindicada porque pode empurrar o ilíaco para dentro. Não é a mesma indicação citada para o adolescente cujo anel se abre com lesão anterior e posterior.",
+        "C": "O resumo orienta tratar o straddle como IIIB, dentro do cuidado dos padrões correspondentes, e não estabelece tração esquelética obrigatória por 4 semanas. A opção transforma uma técnica e uma duração em exigência universal sem corresponder à orientação apresentada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Fraturas instáveis (tipo IV); Asa, sacro, cóccix e anel estável (tipos II e III); Classificação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Fraturas instáveis (tipo IV)",
+          "Asa, sacro, cóccix e anel estável (tipos II e III)",
+          "Classificação"
+        ],
+        "blocos": [
+          "fraturas-instaveis-tipo-iv-2efff893",
+          "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-f0400c85",
+          "classificacao-157b6ed1"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "15111a4e2b491c67a5ceec986aa233185850ac44e0a8a8b217c978dd417fe0e0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1176": {
+    "questaoSha256": "420a95ce03ad479afd03cc13292ef2865dd1254f8bcbd610eb850d02bd8e8799",
+    "comentarioAnteriorSha256": "14fa95bd234c6525a7cb3b6caaca7c63e0e1967d0999e3b264fc93bb053ea884",
+    "comentario": {
+      "conceito": "A mensagem central é que a pelve infantil **não remodela de modo confiável a assimetria residual**. A alternativa A é a resposta registrada, mas a redação do resumo exige uma ressalva: Smith encontrou sintomas em todos com **mais de 1,1 cm**, enquanto a opção usa **igual ou acima de 1,1 cm** (Rockwood and Wilkins, 10ª edição, capítulo 23, fraturas instáveis).\n\nEsse dado observacional não é idêntico a uma regra cirúrgica universal. O mesmo resumo distingue outros critérios: Holden indica reduzir desvios acima de 2 cm; os autores fixam o tipo IV desviado e lesões do anel acima de 1 cm quando há comprometimento anterior e posterior. Não se deve fundir os limiares de diferentes contextos num único número sem condições.\n\nA consequência de aceitar uma pelve assimétrica pode incluir discrepância, dor lombar ou sacroilíaca e outros problemas funcionais. A possibilidade de crescimento da criança não justifica esperar que toda deformidade do anel desapareça.\n\n**Na prova:** manter a alternativa A e reter a limitação de remodelação. Para leitura fiel da fonte, o limiar da série é estritamente “mais de 1,1 cm”; o valor exato de 1,1 cm não recebe a mesma garantia de desfecho apenas por arredondamento.\n\n**Por que esta questão foi criada.** É uma questão de projeção, ligada ao TARO 2014 (`pediatria-0694`), que pergunta a complicação mais frequente da fratura tipo III. O capítulo dá peso à consolidação viciosa da pelve e ao limite de 1,1 cm.",
+      "correta": "Alternativa A é a resposta registrada e é a única que reconhece a importância da assimetria e a falta de remodelação confiável. A fonte, porém, descreve sintomas com mais de 1,1 cm, não demonstra a inclusão exata de 1,1 cm e apresenta critérios de fixação próprios dos autores. Essa diferença permanece explícita no alerta.",
+      "incorretas": {
+        "B": "O resumo não descreve remodelação garantida abaixo de 3 cm. Ao contrário, relata sintomas já acima de 1,1 cm e critérios de redução/fixação menores que 3 cm em contextos definidos; a opção posterga a preocupação com base numa capacidade de remodelação não apresentada.",
+        "C": "A importância da assimetria não é limitada a crianças acima de 15 anos. O capítulo orienta considerar maturidade, padrão e desvio, sem criar esse corte etário exclusivo.",
+        "D": "A fonte afirma que a assimetria pélvica não remodela adequadamente. A idade abaixo de 10 anos não autoriza prometer correção de toda deformidade, pois isso ignora o desfecho que motivou a pergunta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Fraturas instáveis (tipo IV); Complicações."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito preservado: alternativa A. O resumo relata sintomas em todos com MAIS DE 1,1 cm na série de Smith; a opção inclui IGUAL A 1,1 cm. Não declarar que a série prova o risco no valor exato nem fundir o dado observacional com uma indicação cirúrgica universal. Os autores apresentam critérios próprios para tipo IV e lesão anterior/posterior desviada."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Fraturas instáveis (tipo IV)",
+          "Complicações"
+        ],
+        "blocos": [
+          "fraturas-instaveis-tipo-iv-d7cb082d",
+          "complicacoes-d896ef7d"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "a1394cfa8c87d2d45d07d6c4ca5ca9b977b196098f21f446ee0435fdd1433fba"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1177": {
+    "questaoSha256": "81d0f600826ac058a08c8b4d0b4ae6b065e23bc35703a6ab82dbfe6c09cc0bf1",
+    "comentarioAnteriorSha256": "c8248fd02fb4ef0483de97bebd8c79bf1abf84be1dac231c49c67ffc803bbf70",
+    "comentario": {
+      "conceito": "A incidência **outlet**, com o raio cerca de **45° cefálico**, é dirigida ao **desvio superior** da hemipelve ou componente vertical do anel, alternativa B. A **inlet**, com inclinação caudal, responde melhor à pergunta sobre desvio posterior (Rockwood and Wilkins, 10ª edição, capítulo 23, imagem).\n\nAs duas projeções complementam o AP da bacia porque interrogam direções diferentes de deslocamento. Decorar apenas que ambas pertencem ao estudo da pelve não basta: a questão fornece a angulação cefálica e pede qual componente ela ajuda a mostrar.\n\nO acetábulo tem outra organização de estudo. O resumo cita incidências de **Judet** para o acetábulo e tomografia para sacro, sacroilíacas e acetábulo. Portanto, a avaliação de parede ou coluna acetabular não deve ser confundida com a finalidade principal da outlet do anel.\n\n**Na prova:** outlet/cefálico/superior; inlet/caudal/posterior. Primeiro identificar se a pergunta trata do anel ou das estruturas do acetábulo, e depois relacionar a projeção ao deslocamento.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra as incidências da pelve no trauma do adulto; o capítulo infantil traz os mesmos ângulos com os achados.",
+      "correta": "Alternativa B. A associação entre outlet e deslocamento superior é a explicitada no resumo. O dado de 45° em direção cefálica identifica essa projeção e o componente vertical solicitado.",
+      "incorretas": {
+        "A": "O desvio posterior é o componente relacionado à inlet, com o raio caudal no esquema da fonte. A alternativa troca as finalidades das duas projeções complementares.",
+        "C": "A parede posterior pertence ao estudo acetabular, para o qual o resumo destaca Judet e tomografia. A questão descreve outlet do anel, cuja finalidade indicada é mostrar deslocamento superior.",
+        "D": "A coluna anterior também é estrutura acetabular. Reconhecer seu nome não muda a função da outlet fornecida na pergunta; o componente solicitado dessa projeção é o superior/vertical do anel."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Lesões associadas e avaliação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Lesões associadas e avaliação"
+        ],
+        "blocos": [
+          "lesoes-associadas-e-avaliacao-c747bfd9"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "b9b0bdf3eb1160334963ecab8397a8a878b41a919287a8a657e2697d43345083"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1178": {
+    "questaoSha256": "f6c916bfe25d6e285fdf31cb14519c519d6ba51c487588c1f726b440663b77aa",
+    "comentarioAnteriorSha256": "ebaaae7e237b71237546146518d2578b9622b8afba82aa39a1b1f6d9a45d7b86",
+    "comentario": {
+      "conceito": "Após a luxação do quadril infantil, uma pequena lasca óssea da parede posterior pode representar só a parte **ossificada** de uma lesão maior e cartilaginosa. O exame indicado é a **ressonância magnética**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 23, acetábulo; capítulo 24, luxação traumática).\n\nO capítulo 23 recomenda ressonância nas fraturas do acetábulo da criança porque a parede posterior é cartilaginosa. O capítulo 24 reforça que a tomografia pode **subestimar essa parede**. Assim, “fragmento pequeno na tomografia” não equivale a “lesão irrelevante”.\n\nOs objetivos são avaliar **congruência e estabilidade** da articulação e identificar estruturas interpostas quando a redução não é concêntrica. O resumo descreve lábio, cápsula ou fragmento como possíveis obstáculos. A questão não informa que exista interposição neste menino; o ponto é que o tamanho da lesão não está resolvido por ver apenas poucos fragmentos ossificados.\n\n**Na prova:** na criança, o exame que mostra bem o osso não necessariamente dimensiona toda a cartilagem. Depois da redução, a avaliação por imagem continua necessária; uma reconstrução óssea mais elaborada não elimina essa limitação.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra a luxação do quadril e as fraturas do acetábulo em vários contextos; o detalhe da parede posterior cartilaginosa é próprio da criança.",
+      "correta": "Alternativa C. A ressonância investiga o componente cartilaginoso subestimado na tomografia e ajuda a entender a lesão real da parede posterior. A indicação decorre da anatomia imatura, não apenas do número de pequenos fragmentos visíveis.",
+      "incorretas": {
+        "A": "O fragmento ossificado pequeno pode ser só a parte visível de uma parede ainda cartilaginosa lesionada. Dispensar investigação com base nesse tamanho ignora exatamente a limitação da tomografia salientada pelos dois resumos.",
+        "B": "A pergunta é sobre dimensionar a parede posterior cartilaginosa após o trauma. A fonte indica ressonância para essa finalidade; cintilografia não é o método apresentado para definir esse componente anatômico.",
+        "D": "Uma nova reconstrução 3D da tomografia não elimina a subestimação da parede cartilaginosa destacada no capítulo. O resumo direciona a avaliação à ressonância, em vez de presumir que melhorar a representação do osso mede toda a lesão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Acetábulo.",
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Luxação traumática do quadril."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Acetábulo"
+        ],
+        "blocos": [
+          "acetabulo-d4619863"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "e2d966a06fcabf1d2a6b2b251ff3c18c5b8b7b7f9027b0dd9a7fbb32fcf12fdb"
+      },
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Luxação traumática do quadril"
+        ],
+        "blocos": [
+          "luxacao-traumatica-do-quadril-a36e6cc4"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "14e4636c4797ab3d0af69203ca31722dd3c3a190727e45f6fb4c6adf39490ae2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1179": {
+    "questaoSha256": "49f37d6a2cf86ac0ba6be346c867d92f587d013345370e0ac63046ee869ce15d",
+    "comentarioAnteriorSha256": "ee75a70d54635e358804e2ac61f9b38efa015a6bfb098a6e04e5ee69995f300e",
+    "comentario": {
+      "conceito": "A **hiperostose dolorosa da sincondrose isquiopúbica** por volta dos 7 anos corresponde à **doença de Van Neck**, alternativa D, descrita como autolimitada. O resumo alerta que essa região do desenvolvimento pode simular fratura ou tumor (Rockwood and Wilkins, 10ª edição, capítulo 23, desenvolvimento).\n\nÍsquio e púbis se unem no ramo inferior por volta dos 6–7 anos. A localização da alteração radiográfica na **junção isquiopúbica**, junto da idade, dá sentido ao diagnóstico. O achado não deve ser interpretado como uma avulsão de outra apófise apenas por estar na pelve.\n\nO capítulo diferencia também o cenário de **estresse** do adolescente corredor, investigado por ressonância, e as avulsões por contração muscular violenta entre 11 e 17 anos. O caso apresenta uma criança menor, sem história de esforço repetitivo, na topografia da hiperostose descrita.\n\n**Na prova:** idade, junção e aspecto devem ser lidos juntos. O caráter autolimitado de Van Neck é a informação do resumo para esse quadro; isso não torna qualquer dor pélvica ou qualquer imagem atípica automaticamente benigna.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2017 (`pediatria-0613`), sobre a fusão da trirradiada. As idades de fusão e as variantes da pelve que imitam doença têm cara de prova.",
+      "correta": "Alternativa D. Reúne a localização isquiopúbica, a idade aproximada e a evolução autolimitada da doença de Van Neck. Esses elementos explicam a alteração do desenvolvimento que pode ser confundida com uma lesão traumática ou tumoral.",
+      "incorretas": {
+        "A": "O resumo situa a fratura por estresse no cenário do adolescente corredor, com investigação por ressonância. A criança de 7 anos sem esforço repetitivo e com hiperostose na junção coincide mais precisamente com a condição de desenvolvimento descrita.",
+        "B": "A sincondrose pode simular tumor, mas a possibilidade de confusão não comprova osteossarcoma. A idade e a hiperostose na junção reproduzem o padrão de Van Neck do resumo; ausência de febre, isoladamente, também não deve ser usada como regra para excluir tumor em outros casos.",
+        "C": "A avulsão isquiática é uma lesão da tuberosidade ligada à tração muscular, geralmente no adolescente. A pergunta localiza a imagem na junção isquiopúbica de uma criança menor, outra estrutura e outro contexto de desenvolvimento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: A pelve da criança; Asa, sacro, cóccix e anel estável (tipos II e III); Avulsões (tipo I)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "A pelve da criança",
+          "Asa, sacro, cóccix e anel estável (tipos II e III)",
+          "Avulsões (tipo I)"
+        ],
+        "blocos": [
+          "a-pelve-da-crianca-270b4d6d",
+          "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii-a342e020",
+          "avulsoes-tipo-i-cf35bcfc"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "3aeb9581ef02db45ab75d7ed85a33a8a739b27f415d29aec2b7f7b1573f3d721"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1180": {
+    "questaoSha256": "b4449ca2887eb5dfbc64e089a6f541e77fa0a23bdf7695e818580a980ea58426",
+    "comentarioAnteriorSha256": "742bf2f34c769bc0683125372515c167b29015d9ca01a49250d9c04def352272",
+    "comentario": {
+      "conceito": "Para **Silber e Flynn**, a distinção central é a **maturidade esquelética**, indicada pela cartilagem **trirradiada aberta ou fechada**, alternativa A. O resumo salienta que vale a maturidade, não uma idade cronológica isolada (Rockwood and Wilkins, 10ª edição, capítulo 23, classificação).\n\nA pelve imatura tem mais plasticidade e elasticidade ligamentar e conserva cartilagens de crescimento. Nesse grupo, o capítulo destaca o cuidado com lesões associadas e a menor frequência de indicação operatória. Com a trirradiada fechada, o padrão de avaliação e tratamento se aproxima do adulto.\n\nIsso não significa que uma criança com trirradiada aberta jamais possa ter instabilidade. O próprio resumo ressalva que anel muito deformado, lesão posterior desviada ou trirradiada desviada são instáveis, qualquer que seja a idade. Maturidade organiza o raciocínio, mas não apaga a anatomia do trauma.\n\n**Na prova:** localizar a trirradiada e verificar se está aberta. Idade, peso e mecanismo podem contextualizar o caso, porém não substituem o critério esquelético pedido pela classificação.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TEPOP 2024 (`pediatria-0947`), sobre as características das fraturas da pelve da criança.",
+      "correta": "Alternativa A. É a distinção apresentada por Silber e Flynn: pelve imatura com trirradiada aberta e pelve madura com trirradiada fechada. O critério permite aproximar o tratamento do comportamento esquelético real.",
+      "incorretas": {
+        "B": "O capítulo não usa idade acima de 10 anos como substituto universal da maturidade. O fechamento da trirradiada varia no desenvolvimento; o achado aberto ou fechado é o parâmetro solicitado.",
+        "C": "O peso não é o critério definido para essa divisão. Ele não demonstra, por si só, se as cartilagens de crescimento da pelve estão abertas ou se o comportamento se aproxima do adulto.",
+        "D": "O mecanismo continua relevante para avaliar energia e lesões associadas, mas a formulação “independentemente da maturidade” contraria a distinção central do esquema. A fonte exige considerar o estágio esquelético."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Classificação; A pelve da criança."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Classificação",
+          "A pelve da criança"
+        ],
+        "blocos": [
+          "classificacao-927156f0",
+          "a-pelve-da-crianca-b7455ce8"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "5ab27a23a321df7b021fc031cce0322c9aefa8dc8394ef3fab40caeab2ffcbcf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1181": {
+    "questaoSha256": "d3d0325eec027d185e82f06363be7d8bab25c650619200af21ba800204dc3714",
+    "comentarioAnteriorSha256": "7908192c78ff1163ca0478dc4ce88a63c2e2afd42ffab2584859e012553fb4d9",
+    "comentario": {
+      "conceito": "Para a **parede posterior do acetábulo**, o acesso indicado é o **Kocher-Langenbeck**, alternativa B. O resumo contrapõe essa via posterior à **ilioinguinal**, anterior, e recomenda evitar acessos laterais estendidos (Rockwood and Wilkins, 10ª edição, capítulo 23, acetábulo).\n\nA escolha deve acompanhar a **localização da lesão** e os objetivos de recuperar congruência e estabilidade, com a trirradiada alinhada. Não basta que uma incisão pertença ao repertório da cirurgia pélvica: ela precisa oferecer exposição adequada ao setor que será reduzido e fixado.\n\nNa criança, a parede posterior pode ter componente cartilaginoso subestimado pelo osso visível. Por isso, o capítulo recomenda ressonância para compreender a lesão. Uma vez indicada a fixação posterior, a distinção anterior/posterior apresentada na fonte orienta a seleção da via.\n\n**Na prova:** parede posterior, Kocher-Langenbeck; setor anterior, ilioinguinal. Acesso estendido não é primeira escolha automática para obter uma exposição maior em um esqueleto em desenvolvimento.\n\n**Por que esta questão foi criada.** É uma questão de projeção. As fraturas do acetábulo da criança são raras, mas as vias e os princípios são os do adulto e caem bem em prova.",
+      "correta": "Alternativa B. O Kocher-Langenbeck é a via posterior explicitamente indicada pelo resumo. Corresponde à localização da parede a fixar, dentro do objetivo de restaurar uma articulação congruente e estável.",
+      "incorretas": {
+        "A": "A ilioinguinal é o acesso anterior citado no mesmo trecho. A alternativa troca a orientação da via em relação à parede posterior especificada no enunciado.",
+        "C": "O capítulo recomenda evitar vias laterais estendidas, em vez de usá-las como primeira escolha por rotina. Para a lesão posterior apresentada, oferece especificamente Kocher-Langenbeck.",
+        "D": "O Pfannenstiel não é a via posterior indicada nesse esquema do capítulo. Escolher uma incisão pélvica pelo nome não resolve a necessidade de abordar a parede posterior; a fonte vincula esse setor ao Kocher-Langenbeck."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da pelve e do acetábulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 23 · Pelvic and Acetabular Fractures. Seções: Acetábulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-23-pelve-acetabulo",
+        "titulo": "Fraturas da pelve e do acetábulo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
+        "secoes": [
+          "Acetábulo"
+        ],
+        "blocos": [
+          "acetabulo-d4619863"
+        ],
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
+        "trechosSha256": "e2d966a06fcabf1d2a6b2b251ff3c18c5b8b7b7f9027b0dd9a7fbb32fcf12fdb"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1182": {
+    "questaoSha256": "d357abd4faa2fbca3de1cc01f45829e63f7f481166ed9f2549b3975cf8d135fe",
+    "comentarioAnteriorSha256": "afe1cfcb31767306c126c574e10eaf95870be272a0461f33f71e5a80c2b762e0",
+    "comentario": {
+      "conceito": "A fratura **transepifisária com a cabeça luxada** é uma **Delbet IB**, o padrão de risco vascular extremo. O resumo descreve **necrose e fechamento fisário em praticamente todos os casos**, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 24, classificação de Delbet).\n\nÉ importante separar a média de um tipo amplo do comportamento desse **subtipo com luxação**. A metanálise citada fornece necrose de 38%, 28%, 18% e 5% para os tipos I a IV, mas a tabela destaca praticamente 100% para IB. Usar a média global do tipo I ou o baixo risco do IV apagaria a informação decisiva do caso.\n\nA anatomia ajuda a entender a vulnerabilidade: depois de cerca de 4 anos, a cabeça depende principalmente dos **ramos retinaculares posterossuperiores da circunflexa femoral medial**, e a fise limita a contribuição metafisária. A fratura transfisária com luxação põe em risco essa irrigação. Ser uma criança de 6 anos não torna essa lesão de bom prognóstico.\n\n**Na prova:** identificar primeiro o traço transepifisário e a presença de luxação. O resumo distingue esse trauma de alta energia na criança pequena da epifisiólise do adolescente, e não permite tratar a ausência de idade avançada como proteção suficiente.\n\n**Por que esta questão foi criada.** É gêmea da ENARE 2024 (`pediatria-0515`), que pede a classificação da transfisária com luxação (IB), e do TEOT 2025 (`pediatria-0920`), sobre o tipo com mais necrose (I). Depois, faça as oficiais.",
+      "correta": "Alternativa A. O subtipo IB reúne separação transepifisária e luxação, com necrose praticamente universal e fechamento fisário na tabela do resumo. A proporção pertence a esse padrão específico, não a todas as fraturas proximais do fêmur.",
+      "incorretas": {
+        "B": "A criança pequena pode sofrer justamente a fratura tipo I de alta energia, e o IB com luxação é o padrão de risco máximo. A idade de 6 anos não neutraliza a anatomia e o deslocamento que definem o prognóstico do caso.",
+        "C": "Cerca de 5% é o número associado ao tipo IV intertrocantérico, extracapsular. O caso é transepifisário com luxação, subtipo IB, para o qual a tabela informa risco muito maior.",
+        "D": "Necrose é a complicação mais grave e frequente destacada para as fraturas do quadril, especialmente no IB. A pseudartrose aparece em outro contexto, sobretudo nos tipos II e III; afirmar ausência de risco vascular contradiz o ponto central do resumo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Classificação de DELBET; Anatomia e irrigação; Coxa vara, fise e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-24-quadril",
+        "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+        "secoes": [
+          "Classificação de DELBET",
+          "Anatomia e irrigação",
+          "Coxa vara, fise e pseudartrose"
+        ],
+        "blocos": [
+          "classificacao-de-delbet-e1115de7",
+          "classificacao-de-delbet-29878cdc",
+          "anatomia-e-irrigacao-be591f38",
+          "coxa-vara-fise-e-pseudartrose-17944458"
+        ],
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+        "trechosSha256": "967682eda8e713a4fbbb2ac6366053d685bdc9a6d8884f98b578911789ae0d67"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

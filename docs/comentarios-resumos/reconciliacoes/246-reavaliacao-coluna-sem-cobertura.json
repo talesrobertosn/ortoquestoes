@@ -1,0 +1,256 @@
+[
+  {
+    "id": "coluna-0351",
+    "questaoSha256": "03f9d0c1cb053538f4fb3ef1b6177b8820be41062973cf4a8d054047828949be",
+    "comentarioAnteriorSha256": "40ebbe566864e9221564f7bb9db9e66c75e7736123dba3002807c0536e26cb34",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Sem gabarito oficial. O resumo permite tratamento não cirúrgico da explosão estável sem déficit, com ou sem órtese, e não indica operar pela ocupação isolada do canal. Falta resolver o sentido obrigatório de “deve ser tratada com imobilização em hiperextensão” no item original: opção válida não é obrigação universal. Não atribuir provavel único enquanto a formulação puder ser lida como escolha clássica de tratamento ou necessidade estrita de órtese.",
+    "reavaliacaoIndividual": "49 admite tratamento não operatório de explosão estável sem déficit, com ou sem órtese; 40% de canal isoladamente não define cirurgia. Permanece a ambiguidade de DEVE usar hiperextensão versus opção clássica válida; sem oficial e sem provável único.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0361",
+    "questaoSha256": "74bbf28441888db8cf499cfa09cb4b2dd32878918b383a7cf8ed5ec065c091a5",
+    "comentarioAnteriorSha256": "a70cab7a3ef799e15c051c26206a3f891b94232638d8b22367a0a3b69aac2c22",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) é de trauma; não trata da radiculopatia por hérnia de disco cervical nem do tratamento conservador. Precisa de fonte de doença degenerativa cervical.",
+    "reavaliacaoIndividual": "48 trata trauma cervical, não o algoritmo de hérnia foraminal degenerativa de 30 dias com esses achados. Não converter a conduta de fratura em indicação de repouso absoluto, fisioterapia, infiltração ou fusão neste caso.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0371",
+    "questaoSha256": "0d40af0ed57b8477b3dadee1f3e0879111b19edf02e939b1e11c220df279c108",
+    "comentarioAnteriorSha256": "6b6d251a21f09a87350378042f05b9dcc2d9faef7745231447a7e16392431f6b",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Figura aberta. O caso informa força II no membro inferior esquerdo, mas não fornece exame sacral ou contagem completa dos músculos-chave abaixo do nível neurológico; membro direito também tem trauma. Esses dados faltam para aplicar formalmente a distinção ASIA A/B/C/D. A TC não demonstra preservação sacral. Conferir o caso original completo antes de validar o B oficial como ASIA C com fonte suficiente.",
+    "reavaliacaoIndividual": "TC aberta: cortes da transição cervicotorácica. Força II de uma perna, com trauma da outra, não informa preservação sacral nem contagem de todos os músculos-chave. 48/49 definem ASIA, mas a figura não preenche os dados ausentes; B oficial não recebe selo.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [
+      {
+        "arquivo": "coluna/coluna-0371-1.png",
+        "sha256Bytes": "9fb7667ecff7434f3fd278eaa3d55654cbf9e82264eeefdf9d86aaa61c5abbf1",
+        "abertaIndividualmente": true
+      }
+    ],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0373",
+    "questaoSha256": "06b336569b55427c12b88198af1caf02335ccbb4b85ae71927c3feb7948b70ec",
+    "comentarioAnteriorSha256": "e433392791dc37e6c7f7f5ce26abdc9caf4c1c5ecc0a0fbae2509a58abb1839e",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O capítulo 49 explicita não informar duração do choque medular. Sustenta o marco pelo retorno do bulbocavernoso, mas não compara 24–48 horas, 12 horas, 5–7 e 7–10 dias. Conferir fonte específica e os limites do uso de tempo fixo; gabarito oficial A preservado, sem etiquetar o comentário contextual da prova como evidência.",
+    "reavaliacaoIndividual": "49 não oferece duração do choque medular; o retorno do reflexo não demonstra qual das quatro durações é usual. A oficial preservada sem contagem como revisão.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0375",
+    "questaoSha256": "946b4f78de51cc4cf584e4f33185e6f5d6831df373b58081cf1b43d430e0e769",
+    "comentarioAnteriorSha256": "86b459e4dec9be69cb12c10ae84ed20c151b432195e9ce00550f8a6c3002c176",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O trecho encadeado do caso informa sinais vitais, mas não descreve a avaliação neurológica que decide entre completa, central, periférica e incompleta. Necessário contexto completo com função sensitiva/motora e sacral; PA baixa e bradicardia não demonstram incompletude. Gabarito D mantido, sem revisão concluída.",
+    "reavaliacaoIndividual": "Caso encadeado não fornece exame sensitivo/motor e sacral suficiente para afirmar incompletude; hipotensão/bradicardia não fazem essa classificação. Falta o contexto neurológico completo, independentemente do D oficial.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0376",
+    "questaoSha256": "28c94ee47a5acafd33767a0e55eddb73eafe097e0ca3d1e3f8dec6ba5032ed85",
+    "comentarioAnteriorSha256": "c775a569d08ca39919d7b5543124fa9946b7aac08e3954a9e75ff1b66d333737",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Imagens conferidas (RM lombar). O tema é espondilodiscite/abscesso epidural e diagnóstico diferencial com metástase e hérnia; nenhum resumo publicado cobre infecção da coluna.",
+    "reavaliacaoIndividual": "Ambas as RM abertas: lesão vertebral/discal e coleções adjacentes no caso constitucional. Resumos de fratura não oferecem diagnóstico diferencial de abscesso epidural, metástase e infecção vertebral; falta fonte específica, sem inferir etiologia por imagem isolada.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [
+      {
+        "arquivo": "coluna/coluna-0376-1.png",
+        "sha256Bytes": "77deb2da1aa392d73d23c635a2166bd96d663f193e97d1014be0a27f21cefc94",
+        "abertaIndividualmente": true
+      },
+      {
+        "arquivo": "coluna/coluna-0376-2.png",
+        "sha256Bytes": "d036c36045efef008224e63dbb25ffceb919e4b170728aed406c751972af58c6",
+        "abertaIndividualmente": true
+      }
+    ],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0378",
+    "questaoSha256": "cbfe3557b96eaa60f01000b4ebde5263af8f4d0915f3e1d120f28b2f98ecce5c",
+    "comentarioAnteriorSha256": "2e6580276fdc7ceca4371c52f776263b3b5b9f8aa7218eccea9f4dc43ca5ab68",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Imagem conferida. Abscesso do psoas na espondilodiscite: nenhum resumo publicado cobre infecção da coluna.",
+    "reavaliacaoIndividual": "RM aberta: coleção paravertebral na imagem axial/coronal. Falta fonte de infecção vertebral e anatomia aplicada para comparação psoas/multífido/grande dorsal e metástase. O D da banca não substitui essa fonte.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [
+      {
+        "arquivo": "coluna/coluna-0378-1.png",
+        "sha256Bytes": "77deb2da1aa392d73d23c635a2166bd96d663f193e97d1014be0a27f21cefc94",
+        "abertaIndividualmente": true
+      }
+    ],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0380",
+    "questaoSha256": "a56d59d51d1f36c6c07cd4a9a84e5a5876af55e5fb34a6b57ca2839e3b8aaf8d",
+    "comentarioAnteriorSha256": "94d77ddc0b10bf065b03551588105aa93bbe57687d79f594e7806d8d555e68dd",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Caso clínico de espondilodiscite com complicação sistêmica (sepse, toxicidade medicamentosa) foge do resumo de trauma toracolombar.",
+    "reavaliacaoIndividual": "Caso exige diagnóstico sistêmico de sepse versus outras causas de icterícia e disfunção renal e indicação de drenagem/UTI. Trauma ósseo não sustenta esse algoritmo nem permite inventar antibiótico ou etiologia.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0386",
+    "questaoSha256": "a856b98fb113eeb7e8f33e9025668d53feeb56afbad918d4c099337e1270b28d",
+    "comentarioAnteriorSha256": "04557ed8d8db36815da1a5c69056de553c3fc3574f643f7ee7a660265039c088",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Os dois arquivos de RM/TC foram abertos. ASIA E e capacidade de andar não comprovam estabilidade por si. A resolução e os planos fornecidos não permitem confirmar de modo suficiente todos os critérios de morfologia, banda posterior e alinhamento sob carga para aplicar White/Panjabi sem inferência; necessários descrição ou imagens diagnósticas mais nítidas e dados completos da avaliação mecânica.",
+    "reavaliacaoIndividual": "Duas figuras abertas: RM e TC lombares com deformidade anterior vertebral. A qualidade/planos não comprovam todos os critérios mecânicos da avaliação solicitada; ASIA E e marcha não provam integridade posterior/estabilidade. Mantida necessidade de descrição ou imagens diagnósticas completas.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [
+      {
+        "arquivo": "coluna/coluna-0386-1.png",
+        "sha256Bytes": "2d97e4a8b7dcee97ae685fb5f3b010f720ef0bb507ab8ae804789b19b7e1f83b",
+        "abertaIndividualmente": true
+      },
+      {
+        "arquivo": "coluna/coluna-0386-2.png",
+        "sha256Bytes": "e090b2550d329ce9ab4a35454e0245db946a858823641f4d1b13e507661aca1d",
+        "abertaIndividualmente": true
+      }
+    ],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0388",
+    "questaoSha256": "28113a879258e61296099cf97b8013699d0dbdfeed3772cbec894dac6dbc2cff",
+    "comentarioAnteriorSha256": "537d1838912c104ab047dcc949b6f5d5d21814c3a73767e62958ab2abcd43d14",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O enunciado remete ao tipo de fratura do caso 21 sem descrevê-lo. Os arquivos da questão 0386 foram abertos, mas faltam definição suficiente da estabilidade e dados mecânicos para escolher colete versus estabilização. ASIA E/deambulação não bastam. Necessário caso original completo, sem presumir explosão estável pelo gabarito.",
+    "reavaliacaoIndividual": "Alternativas dependem da classificação mecânica do caso 0386, ausente como descrição no enunciado atual. Figuras do caso anterior abertas, mas sem resolução suficiente dessa classificação. Não transformar ASIA E em indicação automática de colete.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  }
+]

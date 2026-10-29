@@ -183,7 +183,8 @@ const snResumo = (e) => ({ ...e, total: e.ids.length })
 const snMudar = (edicao, mudar) => { const e = snExemplo().find((x) => x.edicao === edicao); if (!e) return [400, { code: 'P0001', message: 'edicao_invalida' }]; mudar(e); return [200, snResumo(e)] }
 const rpcsAdmin = {
   eh_administrador: () => [200, true],
-  listar_assinaturas_admin: () => [200, []],
+  // ASSINATURAS_ADMIN='[...]': assinaturas de exemplo para o Financeiro e o Agora do painel.
+  listar_assinaturas_admin: () => [200, process.env.ASSINATURAS_ADMIN ? JSON.parse(process.env.ASSINATURAS_ADMIN) : []],
   sn_admin_listar: () => [200, snExemplo().map(snResumo)],
   sn_admin_salvar: (_u, a) => {
     const lista = snExemplo()
@@ -227,6 +228,8 @@ async function atender(rota) {
   if (ADMIN && rpc && rpcsAdmin[rpc]) { const [s, c] = rpcsAdmin[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc && rpcs[rpc]) { const [s, c] = rpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc) return responder(200, null)
+  // ASSINATURAS_CONTA='[{"id_externo":"pix:1","fim_periodo":"..."}]': as assinaturas vigentes lidas pela REST (Pix ou cartão).
+  if (url.pathname === '/rest/v1/assinaturas' && process.env.ASSINATURAS_CONTA) return responder(200, JSON.parse(process.env.ASSINATURAS_CONTA))
   return responder(200, [])
 }
 function usuarioFalso(id) {

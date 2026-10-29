@@ -1,0 +1,160 @@
+[
+  {
+    "id": "pediatria-0802",
+    "questaoSha256": "7d51411ce2ba60144fc478bbf59e945fb1c1e10edfb7205aea663264f604a4da",
+    "comentarioAnteriorSha256": "d70f0bd5fa3dee40340a2426d32bb8d603152b5a1cc082be5ed7b3dbff708eff",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-19-ombro-umero",
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c"
+      },
+      {
+        "id": "rockwoodcriancas10-20-clavicula-escapula",
+        "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo19 de trauma não compara prognóstico de PARALISIA BRAQUIAL OBSTÉTRICA por acometimento PARAESCAPULAR. Falta neuroanatomia segmentar e dado prognóstico independente. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0803",
+    "questaoSha256": "43538a930e3109ab66962a34f302aae10e3946fe4ffbcdb2e43367f6565d0260",
+    "comentarioAnteriorSha256": "cfe60f7413e65854a578c0e19e91705d47349e0b6952147389ae673c1431916d",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-08-mao-carpo",
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos do trauma da mão não descrevem CENTRALIZAÇÃO na MÃO TORTA RADIAL nem resultados antes/depois de8anos. Falta indicação temporal independente;sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0804",
+    "questaoSha256": "d4c692268b08b6941aa4aa68bc3302e267eeddc493f1568a419156889cae6e30",
+    "comentarioAnteriorSha256": "e9c5d95b94efb30356ef7769934578567420b26424beae9ac148f03752e47896",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-08-mao-carpo",
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos08/45 não descrevem POLIDACTILIA PÓS-AXIAL em crianças negras nem frequência de outras malformações por fenótipo/população. Falta associação independente,sem inferir risco étnico. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0805",
+    "questaoSha256": "6ee1edda0685a25b568f933c3973821e8fbcef226943f4411fb4346d3b314ff9",
+    "comentarioAnteriorSha256": "991910e3397f95e26893bda877d566c6756a08cbe342ea05a1460122b08a2322",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo de trauma da tíbia/joelho não define DISPLASIA FIBROCARTILAGINOSA FOCAL e manejo INICIAL por observação versus RESSECÇÃO. Falta história natural e algoritmo independente. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0809",
+    "questaoSha256": "768476be14515310c0fd66f3a6510336eefdf2a3ca29a1fd201483ce8a0730b8",
+    "comentarioAnteriorSha256": "0c27fd346c606004ec37a713dc9296cdb8829e138ba6173699431fd137086577",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-23-pelve-acetabulo",
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+      },
+      {
+        "id": "rockwoodcriancas10-24-quadril",
+        "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos traumáticos do quadril não definem DISPLASIA EPIFISÁRIA MÚLTIPLA e comparação comPERTHES por cisto,bilateralidade e acetábulo. Falta fenótipo independente completo. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0810",
+    "questaoSha256": "002fb8dcf6af6cb03e305e56da862d50ac9365cbd7210066a88c461812e50d74",
+    "comentarioAnteriorSha256": "bf2b72b31a6a0ff600d78cebed1af78efc6fd9ccdf56cde5b7728b0daf6822e3",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos traumáticos não caracterizam ACONDROPLASIA por rizomelia,quadril e VARO/VALGO progressivo. Falta descrição independente dos três componentes;sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0811",
+    "questaoSha256": "e24bfb31014060af03253f916a1bb2b690ab590cc9732b54cd11ebda5fa45c12",
+    "comentarioAnteriorSha256": "8993685ce43a548ddc52ba35f44e2bb09988b8479a8e8be149ee08ec1610d6b7",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo21 não descreve LIBERAÇÃO PROXIMAL do torcicolo congênito e topografia doACESSÓRIO. Falta anatomia cirúrgica independente para julgar o item. Sem gabarito oficial,semprovavel.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": true
+  },
+  {
+    "id": "pediatria-0866",
+    "questaoSha256": "32f7a5938905288bdee8dfe5fe713b3e8d2a62c9325ac107e8c312ef39cbb762",
+    "comentarioAnteriorSha256": "7d6ab9b372a6a03be83bda0ccee5b56921185ee3946573d4c1f43bac214c6ec6",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-08-mao-carpo",
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumos de trauma/lesões neuromusculares não definem níveisGMFCS por auxílio de marcha,escada,cadeira e distância aos7anos. Falta tabela funcional independenteI–V,não classificar por descrição de outra doença. Sem selo.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "pediatria-0868",
+    "questaoSha256": "9b8315f12bade36b106437b65d75f175277f713273a657e63890e6127557adad",
+    "comentarioAnteriorSha256": "11834c1632aa065c7dea4f4aef1bbba66ce18c3b17ff663d7c73aa46276f1677",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo28 de trauma não define algoritmo da criança FEBRIL COM JOELHO DOLOROSO para escolherRX/hemograma/VHS/PCR versus punção,US ou observação. Falta investigação independente de infecção osteoarticular e diferenciação das quatro condutas;sem selo.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "pediatria-0869",
+    "questaoSha256": "56288221db6d3140a76a2cb68bfd93a8df52d3404bd5976c6eb437cae92a2547",
+    "comentarioAnteriorSha256": "bb9b27e2322089380b5f9518fd959a6b55c5f42673d77982189b3cab8fbe9ee3",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo28 não fornece protocolo de criança TORPOROSA39,5°C com provável infecção do joelho e indicação de PUNÇÃO CIRÚRGICA versusRM/cintilo/US. Falta conduta independente de emergência infecciosa;sem selo.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": false
+  }
+]

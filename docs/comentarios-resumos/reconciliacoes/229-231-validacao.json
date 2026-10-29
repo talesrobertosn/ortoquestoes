@@ -1,0 +1,740 @@
+{
+  "base": "3bdb06c47549c09eb9ddfaaa318855360fc553f1",
+  "lotes": {
+    "229": {
+      "revisadas": [
+        "pediatria-1306",
+        "pediatria-1307",
+        "pediatria-1308",
+        "pediatria-1309",
+        "pediatria-1310",
+        "pediatria-1312",
+        "pediatria-1313"
+      ],
+      "lacunas": [
+        "pediatria-1304",
+        "pediatria-1305",
+        "pediatria-1311"
+      ]
+    },
+    "230": {
+      "revisadas": [
+        "pediatria-1314",
+        "pediatria-1315",
+        "pediatria-1316",
+        "pediatria-1317",
+        "pediatria-1318",
+        "pediatria-1319",
+        "pediatria-1320",
+        "pediatria-1321",
+        "pediatria-1322",
+        "pediatria-1323"
+      ],
+      "lacunas": []
+    },
+    "231": {
+      "revisadas": [
+        "pediatria-1325",
+        "pediatria-1326",
+        "pediatria-1330"
+      ],
+      "lacunas": [
+        "pediatria-1324",
+        "pediatria-1327",
+        "pediatria-1328",
+        "pediatria-1329",
+        "pediatria-1331",
+        "pediatria-1332",
+        "pediatria-1333"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwoodcriancas10-28-joelho-intra-articular": {
+      "markdownSha256Bytes": "9aa2d83f578f483487ee3eaab5175f45de16194dce669ab3ce571a742732b2a9",
+      "linhas": 76,
+      "compiladoSha256Bytes": "473aa9b5dafaf72761c58c5c49f78f7e2cf57792c16ac9358ec6afb7cf66b399"
+    },
+    "rockwoodcriancas10-06-sindrome-compartimental": {
+      "markdownSha256Bytes": "90d73395ff8f3d799831eaee44b819a484cfb38d66f9c6edf3db9df94af0c4cc",
+      "linhas": 100,
+      "compiladoSha256Bytes": "738c60184cbfc2edd0035b227036d885a87ddfaabb53ccee4857ae57aab9adc5"
+    },
+    "rockwoodcriancas10-31-pe": {
+      "markdownSha256Bytes": "bcefde81858e506525d6237e21b859bcf3b1f18cc137cb5c959c75c9847535dd",
+      "linhas": 91,
+      "compiladoSha256Bytes": "76b4b6d000eb23f968a583b6b2810facaa9ac3b2a8b2fd220fe7eb92a5d2572e"
+    }
+  },
+  "leitura": "28/06/31 infantis integralmente lidos nesta passagem.17adulto já lido integralmente,trecho consultado para lacuna1324;66adulto apenas buscado,sem alegar leitura integral ou usá-lo como fonte. Notas questoes e comentários antigos não são prova independente.",
+  "referenciasHistoricas": {
+    "pediatria-1306": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seções Outcome Measures, Outcomes e Management of Expected Adverse Outcomes (Malunion, Fig. 28-13)"
+      ],
+      "comentarioAnteriorSha256": "ca28171feecfec69693d27a084a52d79b6a9e844007caf3b8e499814d9435f69"
+    },
+    "pediatria-1307": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seção Injuries Associated With Fractures of the Tibial Spine (Fig. 28-1)"
+      ],
+      "comentarioAnteriorSha256": "baa24d630b528d1d4903722645c6b1b22341d8e87484a1ddcb349485a2469451"
+    },
+    "pediatria-1308": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seção Patellar Sleeve Fractures (Figs. 28-14 e 28-15)"
+      ],
+      "comentarioAnteriorSha256": "21284c204743df347646140f1bda2a0fa891a6450f9cb7c929da7bbb1141d430"
+    },
+    "pediatria-1309": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seções Osteochondral Fractures (Mechanisms, Imaging, Treatment, Algoritmo 28-2)"
+      ],
+      "comentarioAnteriorSha256": "0509bac441255e7fdffebc9686e364c9ab44e918b8d261e6f0a8d867230b8726"
+    },
+    "pediatria-1310": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seções Patellar Dislocation (Pathoanatomy, Nonoperative Treatment, Authors' Preferred Treatment, Algoritmo 28-3)"
+      ],
+      "comentarioAnteriorSha256": "9f2d59e44c74ec496faeb93b5053966691a0786224a07122bdd763b844ae2d12"
+    },
+    "pediatria-1312": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seção Authors' Preferred Treatment of Ligament Injuries (Isolated Anterior Cruciate Ligament, Fig. 28-32, Tabela 28-3, Algoritmo 28-5)"
+      ],
+      "comentarioAnteriorSha256": "5d270b24c072e283cd0f47f4f48cc0ec3882bf749f85dc294c88ac0858c1d1ba"
+    },
+    "pediatria-1313": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seções Classification of Ligament Injuries e Authors' Preferred Treatment (MCL, LCL, PCL, Algoritmos 28-4, 28-6 e 28-7)"
+      ],
+      "comentarioAnteriorSha256": "82bedb3ffb423dd21b2cdf1d8ac44a4924873d37562cd9b604b1d8de90489be4"
+    },
+    "pediatria-1304": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seções Operative Treatment (screws e sutures, Figs. 28-10 e 28-11) e Authors' Preferred Treatment of Fractures of the Tibial Spine"
+      ],
+      "comentarioAnteriorSha256": "bd044f94df5c494e32a5f76102a18f6293043a3f392e05299d71c9852ea29644"
+    },
+    "pediatria-1305": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seção Management of Expected Adverse Outcomes in Fracture of the Tibial Spine (Arthrofibrosis)"
+      ],
+      "comentarioAnteriorSha256": "d927e7689fb59d5eda55e7454da860640c0b7c1357b9027c72f80bdad069ded6"
+    },
+    "pediatria-1311": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seções Operative Treatment of Patellar Dislocation e Authors' Preferred Treatment (MPFL reconstruction)"
+      ],
+      "comentarioAnteriorSha256": "ece4db2ce057d1876edd874ac5079af0f9105cb79266fb8994a3a34e644337eb"
+    },
+    "pediatria-1314": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28 (Intra-Articular Injuries of the Knee; Dennis E. Kramer e Mininder S. Kocher)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seção Knee Dislocation (Fig. 28-33, Algoritmo 28-8)"
+      ],
+      "comentarioAnteriorSha256": "bf1d4b065f7dd70ee68df1902896ebafb83609dfe4b9bdda3829ad16ce6d6fa8"
+    },
+    "pediatria-1315": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Diagnosis"
+      ],
+      "comentarioAnteriorSha256": "0427fa3ae3e6e5176df2d176b81e5b7cdca836a77758d103ef477d72e30fdbc7"
+    },
+    "pediatria-1316": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Diagnosis"
+      ],
+      "comentarioAnteriorSha256": "6ee1a3dd860699be78b8cd4e72e688343ef44e4219432fec4bb02991d0a50bbc"
+    },
+    "pediatria-1317": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seções Diagnosis (Table 6-1) e Treatment"
+      ],
+      "comentarioAnteriorSha256": "1c363cdd50ba4850a65c23314d74afb3fdae09bd5de6f1008fb19b65787c5641"
+    },
+    "pediatria-1318": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Upper Extremity"
+      ],
+      "comentarioAnteriorSha256": "8fe7c3835b506b7c5c953eba5862a08525a84b5e78a759f19b47a4661e54e459"
+    },
+    "pediatria-1319": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Upper Extremity (Forearm, Figs. 6-2 e 6-3, Tabela 6-2)"
+      ],
+      "comentarioAnteriorSha256": "e346e03a7529de5e8f7b0b06c495fa81290a58dfbc653f9ee8be8b1964d36a32"
+    },
+    "pediatria-1320": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Lower Extremity (Leg, Fig. 6-10, Tabela 6-4)"
+      ],
+      "comentarioAnteriorSha256": "0346d4367845b41df630cfad7380087c877287cd9a229ccdf2ce67eb0c652835"
+    },
+    "pediatria-1321": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Nonfracture Compartment Syndrome"
+      ],
+      "comentarioAnteriorSha256": "1d19e3f05843554f14014fde3f92cdcf60b3d4a73ed104a8d1240a39bc53aa8b"
+    },
+    "pediatria-1322": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Exercise-Induced or Exertional Compartment Syndrome"
+      ],
+      "comentarioAnteriorSha256": "0e943d0be91ce70bf683857422d8c3748e69886c765cd9656ed54172a1f73a26"
+    },
+    "pediatria-1323": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seções Neonatal Compartment Syndrome e Outcomes"
+      ],
+      "comentarioAnteriorSha256": "6ccfcd85d6e05c04a97f72ed912b4e3810b5913e940107255d60f5f8ec6793a3"
+    },
+    "pediatria-1325": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seções Hand e Postoperative Care (Figs. 6-6 a 6-8)"
+      ],
+      "comentarioAnteriorSha256": "01fbef187a1fc8f0e70ed6ef9f0f26fa166c2e637d9453522188676324c566cf"
+    },
+    "pediatria-1326": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seções Thigh e Foot (Tabelas 6-3 e 6-5, Figs. 6-9 e 6-11)"
+      ],
+      "comentarioAnteriorSha256": "0f1377555e1f398b8db2104679675de11c9ce101385ec451884fe9445632206c"
+    },
+    "pediatria-1330": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Talar Fractures (Fig. 31-6, Tabela 31-1) e Management of Expected Adverse Outcomes"
+      ],
+      "comentarioAnteriorSha256": "95fa2baa2d517da4cc9b7f23e08c3053db3f8aa2f34b6b2567a590763b4f03f7"
+    },
+    "pediatria-1324": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Treatment"
+      ],
+      "comentarioAnteriorSha256": "611f73daf66736128a281d8c9182b1574cc082c5aa2cf5edb742ef1ce84fe31f"
+    },
+    "pediatria-1327": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Established Contracture (Volkmann Contracture)"
+      ],
+      "comentarioAnteriorSha256": "d78a4cca1c90527467dae0b6ee0f3f87c769eaaba8a997e176ed488ff485ed35"
+    },
+    "pediatria-1328": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seções Established Contracture (Volkmann Contracture) e Outcomes"
+      ],
+      "comentarioAnteriorSha256": "0f7f4005bce30113cb821505d1f8b3e6813db4211f7a97785d6659b08efe6151"
+    },
+    "pediatria-1329": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6 (Compartment Syndrome in Children; Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, seção Outcomes"
+      ],
+      "comentarioAnteriorSha256": "c1a217e864b2ddfdea7c5d50ee2edb20adfbff9116450ef82acaa9052dc32357"
+    },
+    "pediatria-1331": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Treatment Options for Fractures of the Talar Neck (Fig. 31-8) e Management of Expected Adverse Outcomes"
+      ],
+      "comentarioAnteriorSha256": "a23acdc5bfadce444d644d0145d37f4c173fd56e1d6dc233522d752adba8e402"
+    },
+    "pediatria-1332": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Treatment Options for Fractures of the Talar Neck (Fig. 31-7) e Author's Preferred Technique"
+      ],
+      "comentarioAnteriorSha256": "f4d2f5120d752743f8c44ca7b6abb974270d9d5eb2aff36ebb9c20a88158a46f"
+    },
+    "pediatria-1333": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Fractures of the Lateral Process of the Talar Body (Fig. 31-9)"
+      ],
+      "comentarioAnteriorSha256": "93ed82d5b0f2067e7f0a7ea0d1fe993e61772079cf9319c2229a6495a685195c"
+    }
+  },
+  "motivosCriacao": {
+    "pediatria-1306": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0711",
+        "pediatria-0700",
+        "pediatria-0735"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0711`), que perguntou a que se associa o maior prejuízo funcional (perda da extensão total), do TEOT 2022 (`pediatria-0700`), que perguntou as complicações frequentes (instabilidade residual e perda de extensão), e do TARO 2007 (`pediatria-0735`), que perguntou a principal implicação da consolidação viciosa (sem gabarito; o capítulo sustenta a limitação da extensão). Depois, faça as oficiais.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0711`), que perguntou a que se associa o maior prejuízo funcional (perda da extensão total), do TEOT 2022 (`pediatria-0700`), que perguntou as complicações frequentes (instabilidade residual e perda de extensão), e do TARO 2007 (`pediatria-0735`), que perguntou a principal implicação da consolidação viciosa (sem gabarito; o capítulo sustenta a limitação da extensão). Depois, faça as oficiais.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1307": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0949"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0949`), que perguntou a lesão associada mais comum da fratura da espinha tibial (lesão meniscal). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`pediatria-0949`), que perguntou a lesão associada mais comum da fratura da espinha tibial (lesão meniscal). Depois, faça a oficial.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1308": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A luva patelar é a fratura da patela mais comum no adolescente e uma das que mais passam.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para reconhecer a luva patelar pela combinação de mecanismo, patela alta e falha de elevação ativa, sem subestimar uma pequena lasca radiográfica.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados.",
+      "ajusteEditorial": "Retirada frequência ou superlativo não demonstrado;motivo específico mantido."
+    },
+    "pediatria-1309": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A ressonância diante da hemartrose e o limite de 5 mm são os pontos práticos.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A ressonância diante da hemartrose e o limite de 5 mm são os pontos práticos.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1310": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A conduta da primeira luxação e os fatores de recidiva são o núcleo do tema.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A conduta da primeira luxação e os fatores de recidiva são o núcleo do tema.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1312": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0824"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2006 (`pediatria-0824`), que afirmou ser a reconstrução extra-articular a melhor indicação no imaturo. A oficial está sem gabarito; o capítulo não indica a extra-articular isolada, mas a combinada intra e extra-articular com banda iliotibial nos pré-adolescentes.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2006 (`pediatria-0824`), que afirmou ser a reconstrução extra-articular a melhor indicação no imaturo. A oficial está sem gabarito; o capítulo não indica a extra-articular isolada, mas a combinada intra e extra-articular com banda iliotibial nos pré-adolescentes.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1313": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. As condutas por ligamento e os prazos para associar o LCA são cobráveis.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. As condutas por ligamento e os prazos para associar o LCA são cobráveis.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1314": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O índice tornozelo-braquial e a frequência da lesão poplítea e fibular são os números de segurança.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O índice tornozelo-braquial e a frequência da lesão poplítea e fibular são os números de segurança.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1315": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. Os três As são o sinal precoce que a prova cobra na criança.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para reconhecer ansiedade, agitação e aumento da necessidade de analgésico como alerta precoce pediátrico, mesmo com pulsos presentes.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados.",
+      "ajusteEditorial": "Retirada frequência ou superlativo não demonstrado;motivo específico mantido."
+    },
+    "pediatria-1316": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A pressão basal mais alta da criança e a tolerância acima de 30 mmHg são a diferença entre a criança e o adulto.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A pressão basal mais alta da criança e a tolerância acima de 30 mmHg são a diferença entre a criança e o adulto.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1317": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0666"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2012 (`pediatria-0666`), que perguntou com que tratamento a isquemia de VOLKMANN na supracondiliana GARTLAND III é mais comum (gesso com flexão do cotovelo).",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2012 (`pediatria-0666`), que perguntou com que tratamento a isquemia de VOLKMANN na supracondiliana GARTLAND III é mais comum (gesso com flexão do cotovelo).",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1318": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0850"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0850`), que perguntou em que tipo de supracondiliana a síndrome compartimental é mais frequente (extensão com lesão do nervo mediano). Depois, faça a oficial.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0850`), que perguntou em que tipo de supracondiliana a síndrome compartimental é mais frequente (extensão com lesão do nervo mediano). Depois, faça a oficial.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1319": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [
+        "pediatria-0827"
+      ],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2006 (`pediatria-0827`), que afirmou que, no VOLKMANN do antebraço, os flexores radial e ulnar do carpo são os mais acometidos. A oficial está sem gabarito; o capítulo aponta o compartimento flexor profundo como o primeiro e mais afetado, o que não sustenta a afirmação.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2006 (`pediatria-0827`), que afirmou que, no VOLKMANN do antebraço, os flexores radial e ulnar do carpo são os mais acometidos. A oficial está sem gabarito; o capítulo aponta o compartimento flexor profundo como o primeiro e mais afetado, o que não sustenta a afirmação.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1320": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O perfil do adolescente grande e a liberação dos quatro compartimentos são o que a prova cobra na perna.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para relacionar o perfil de risco da fratura tibial no adolescente à necessidade de avaliar e liberar os quatro compartimentos.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados.",
+      "ajusteEditorial": "Retirada frequência ou superlativo não demonstrado;motivo específico mantido."
+    },
+    "pediatria-1321": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O caso sem fratura cobra a lembrança de que a síndrome não depende do osso quebrado.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O caso sem fratura cobra a lembrança de que a síndrome não depende do osso quebrado.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1322": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A forma crônica do esforço tem perfil e números próprios, diferentes da síndrome aguda.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A forma crônica do esforço tem perfil e números próprios, diferentes da síndrome aguda.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1323": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O atraso típico das idades extremas, e o bom prognóstico apesar dele, são cobráveis.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O atraso típico das idades extremas, e o bom prognóstico apesar dele, são cobráveis.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1325": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A sequência de liberação da mão é detalhe técnico típico de prova de mão.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção sobre a sequência anatômica da liberação da mão e a dermotomia médio-axial dos dedos tensos.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados.",
+      "ajusteEditorial": "Retirada frequência ou superlativo não demonstrado;motivo específico mantido."
+    },
+    "pediatria-1326": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A contagem dos compartimentos e o argumento da fise são cobráveis.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. A contagem dos compartimentos e o argumento da fise são cobráveis.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados."
+    },
+    "pediatria-1330": {
+      "origem": {
+        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      },
+      "prova": null,
+      "ano": null,
+      "linksOriginais": [],
+      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. A artéria do canal do tarso e a escala de necrose de HAWKINS são clássicos de prova.",
+      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção para relacionar a artéria do canal do tarso, a classificação de Hawkins e os limites dos dados prognósticos por idade.",
+      "ajustePontuacao": "Espaços de unidades,siglas e pontuação normalizados;metadados preservados.",
+      "ajusteEditorial": "Retirada frequência ou superlativo não demonstrado;motivo específico mantido."
+    }
+  },
+  "lacunas": [
+    {
+      "id": "pediatria-1304",
+      "questaoSha256": "83286c27e21a1176d9e829ea2684fb1e083c849c0e137216b4704746952c3ae7",
+      "comentarioAnteriorSha256": "bd044f94df5c494e32a5f76102a18f6293043a3f392e05299d71c9852ea29644",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 descreve parafuso epifisário para fragmento grande/perto da maturidade e sutura para pequeno/cominuto/mais novo,mas não especifica CANULADO,qualificador do implante daC. Falta descrição independente do tipo exato de parafuso;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1305",
+      "questaoSha256": "ae508198635dca95ca0ad4f3ce7af21429c349650b2a69f37774421516020b24",
+      "comentarioAnteriorSha256": "d927e7689fb59d5eda55e7454da860640c0b7c1357b9027c72f80bdad069ded6",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 informa78%dos graves sem movimento,mas não define o intervalo4–6SEMANAS de imobilização rígida nem demonstra diretamente a redução de risco com mobilização precoce na alternativaA. Falta protocolo/série independente com duração e efeito preventivo,não inferir causalidade do percentual. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1311",
+      "questaoSha256": "94ea615f361376b9cc524aa45db98db0fa10893f192de420c2f958162027ae49",
+      "comentarioAnteriorSha256": "ece4db2ce057d1876edd874ac5079af0f9105cb79266fb8994a3a34e644337eb",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo28 sustenta fixação epifisária distal àfise,pontoSchöttle e isometria,mas não descreve confirmação em PERFIL PERFEITO,nem o teste de não apertar na flexão,componentes técnicos daD. Falta técnica independente da referência radiográfica e do controle de tensão;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1324",
+      "questaoSha256": "762c9fb1a5818bda64e7722737a19006570b831e9e0c1358d703c7fb12caca99",
+      "comentarioAnteriorSha256": "611f73daf66736128a281d8c9182b1574cc082c5aa2cf5edb742ef1ce84fe31f",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-06-sindrome-compartimental",
+          "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo06 define cor,odor e ausência de contração do tecido necrótico,mas não especifica ESTÍMULO ELÉTRICO como método da alternativaC. Consulta ao resumo17adulto não preencheu esse método. Falta critério independente do teste de viabilidade completo;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1327",
+      "questaoSha256": "5d6b2d5d11dd8da0a503972db7dff9943eb39dc65d14f8553d5720ff96425f31",
+      "comentarioAnteriorSha256": "d78a4cca1c90527467dae0b6ee0f3f87c769eaaba8a997e176ed488ff485ed35",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-06-sindrome-compartimental",
+          "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo06 defineTsuge moderada e associação à supracondiliana5–10anos,mas não quantifica que seja a forma MAIS COMUM após essa fratura,como aC afirma. Falta distribuição comparativa dos graus no grupo pós-supracondiliana;sem converter associação em predominância. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1328",
+      "questaoSha256": "9a3520258a27139d242ae47576a7aa39cbdd51087f05787295c53373b55a6008",
+      "comentarioAnteriorSha256": "0f7f4005bce30113cb821505d1f8b3e6813db4211f7a97785d6659b08efe6151",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-06-sindrome-compartimental",
+          "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo06 sustenta terapia,órteses,deslizamento,neurólise,transferências e artrodese após maturidade,mas não compara diretamente recuperação de NERVO E MÚSCULO da criança COM ADULTO naD. Recupera muito não demonstra os dois tecidos na comparação etária. Falta dado independente completo;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1329",
+      "questaoSha256": "cde0dcf980f7d49507e7a1545b4ed51a2fa597755bdc25cf12e61883c7347be0",
+      "comentarioAnteriorSha256": "c1a217e864b2ddfdea7c5d50ee2edb20adfbff9116450ef82acaa9052dc32357",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-06-sindrome-compartimental",
+          "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo06 informa prognóstico>90%,resultados até72h e73%dos processos favoráveis ao paciente,mas não demonstra que DIAGNÓSTICO TARDIO seja CAUSA FREQUENTE de processos nesse denominador pediátrico,qualificador daB. Resumo17adulto tem outra série/percentuais;sem fundir coortes. Falta etiologia/frequência dos processos do grupo da questão. Sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1331",
+      "questaoSha256": "1c7b4d62657f065f74a439519809320b6c99dbacb80ca098ee1c3df9d1e6c254",
+      "comentarioAnteriorSha256": "a23acdc5bfadce444d644d0145d37f4c173fd56e1d6dc233522d752adba8e402",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 sustenta radiolucência6–8semanas,RM aos3meses quando ausente,e uso de titânio,mas não demonstra explicitamente a compatibilidade daRM com os PARAFUSOS DE TITÂNIO daA nem compara confiabilidade por idade daD. Busca no66adulto não trouxe essa descrição. Falta critério técnico independente do implante/limitação etária;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1332",
+      "questaoSha256": "4487e4231afc5bcf644a002791448e4ae408a1b93e6c7158b39094609296be89",
+      "comentarioAnteriorSha256": "f4d2f5120d752743f8c44ca7b6abb974270d9d5eb2aff36ebb9c20a88158a46f",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 sustenta reduçãoII em flexão plantar/pronação,fios se instável e tolerância até10°,mas não define aceitar POUCOS MILÍMETROS de desvio como alternativa à abertura/desvascularização naB. Não converter tolerância angular em translação. Falta limiar linear pediátrico e justificativa independente;sem selo.",
+      "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1333",
+      "questaoSha256": "3c561e349ee547176adf072aca549ed22c5eb60cb93fa8dd56b8908c92f99ee1",
+      "comentarioAnteriorSha256": "93ed82d5b0f2067e7f0a7ea0d1fe993e61772079cf9319c2229a6495a685195c",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo31 sustenta dorsiflexão/inversão,42%perdidas,encaixe/TC e DEGRAU>2–3mm,mas não equipara AFASTAMENTO articular ao mesmo limiar e não desenvolve a indicação de reduçãoABERTA daD. Resumo66adulto traz mecanismo diferente(eversão),sem preencher diretamente o protocolo pediátrico. Falta técnica/critério linear completo;sem selo.",
+      "estadoAnterior": "pendente"
+    }
+  ],
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 20,
+    "lacunasComentariosIntactos": 10,
+    "demaisBytesPreservados": true,
+    "motivosConferidos": 20,
+    "figurasNosCasos": 0,
+    "ui": "20/20 casos em390/1440:resposta,aula,alertas e links exatos. Primeiro1306 inspecionado visualmente."
+  },
+  "reconciliacao620": {
+    "head": "4d13c2ee9f41e811f21f0ed8f66c990bb0a21f59",
+    "merge": "3bdb06c47549c09eb9ddfaaa318855360fc553f1",
+    "ci": 40771254844,
+    "pages": 40771808448,
+    "publicar": 123112281056,
+    "avulsosIntegrais": 725,
+    "resumosIntegrais": 52,
+    "figuras": 43,
+    "observacao": "Guarda de versão e deploy efetivo aprovados;725avulsos integrais,52resumos,43figuras e letras conferidos emprodução. Revisão automática estava running no merge,sem achados recebidos e sem presumir aprovação."
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente": 73,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 824,
+      "revisada": 1980
+    }
+  },
+  "continuidade": "Próximas232–234 preparadas localmente,sem aplicação:232tem3rascunhos e7lacunas;233/234 apenas10lacunas específicas cada,sem comentários alterados. Revalidar remoto/catálogo e motivos/espaços antes de aplicar.233/234 candidatas por subtema sobretudo congênito/discoide sem cobertura nos resumos de trauma. Tarefa integral aberta;reavaliar lacunas antigas com fontes novas após fila pendente."
+}

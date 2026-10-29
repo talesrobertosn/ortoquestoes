@@ -190,7 +190,7 @@ export default function CompletarPerfil() {
           </button>)}
         </div>}
 
-        {!concluido && passo === 'servico' && <CampoServico situacao={situacao || String(meta.situacao ?? '')} valor={servico} aoMudar={definirServico} />}
+        {!concluido && passo === 'servico' && <CampoServico situacao={situacao || String(meta.situacao ?? '')} valor={servico} aoMudar={definirServico} uf={uf || String(meta.uf ?? '')} />}
 
         {!concluido && passo === 'nome' && <div className="cracha-perfil__duplo">
           <label className="campo">Nome<input className="entrada" autoComplete="given-name" value={nome} onChange={(e) => definirNome(e.target.value)} /></label>

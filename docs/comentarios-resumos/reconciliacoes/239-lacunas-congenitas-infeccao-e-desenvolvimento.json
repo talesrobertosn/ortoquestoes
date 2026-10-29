@@ -1,0 +1,47 @@
+[
+  {
+    "id": "pediatria-0887",
+    "questaoSha256": "badba7465e9f2844d025286deeaf3dfef25974e0293eeff673ea50016e09d046",
+    "comentarioAnteriorSha256": "e3b1f112e61e34d36229860c11e91d0d616fb582c8fdd7a866a74ab77c99176b",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo28 não comparaVHS/PCR para ACOMPANHAR RESPOSTA da infecção ao tratamento. Falta desempenho/cinética independente para julgar o item;gabaritoB preservado sem selo.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "pediatria-0888",
+    "questaoSha256": "c4ea3dd55064c3c66cf9504abcb32345872147fe698585140ea023ee81e49140",
+    "comentarioAnteriorSha256": "e3ebd34c6f8cb67d0a32d7d021a720ca8f1917b2b7893fdcc31012bab9b70960",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo28 não define probabilidade de SINOVIAL>80000/mm³ eNEUTRÓFILOS>75%na criança febril do caso. Falta referência independente de contagem/distribuição na artrite séptica;gabaritoA preservado sem selo.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "pediatria-0889",
+    "questaoSha256": "902a3cd1dec8802525d94d85370e1fb15e1bdebad22a5ae1d595c3ddcdc14887",
+    "comentarioAnteriorSha256": "b80a91c135d44dac88637e45327611a1a2bb1658ee23fa7f38bb6543a92d2784",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-28-joelho-intra-articular",
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo28 não desenvolve sensibilidade/cronologia doRXem INFECÇÃO ÓSSEA/ARTICULAR AGUDA nem utilidade de edema,espaço e destruição. Falta comparação independente de achados iniciais/tardios para julgar a utilidade;gabaritoB preservado sem selo.",
+    "estadoAnterior": "pendente",
+    "semGabaritoOficial": false
+  }
+]

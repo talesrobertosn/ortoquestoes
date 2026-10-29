@@ -1,0 +1,198 @@
+{
+  "ombro-cotovelo-0652": {
+    "questaoSha256": "dd3b0ad11ee4f5e8280dab688851e9bf462ba483a4cbf79bd6a4386d21b30ffe",
+    "comentarioAnteriorSha256": "dcf2559d3c7171e1acb8071fc9cf45b367b9703592098b6b1b647a3e3e67738b",
+    "comentario": {
+      "conceito": "No **BadoI**,a cabeça radial luxa para **anterior** e a ulna apresenta **ápice anterior**,alternativaD. O novo resumo de Monteggia pediátrico explicita a definição da classificação;usá-lo aqui para definir o tipo não significa transferir frequências ou condutas da criança para todo adulto (Rockwood and Wilkins,10ª edição,capítulo 12,classificação e mecanismos).\n\nA classificação combina a direção da cabeça do rádio com o padrão ulnar. A ulna deformada altera a relação entre os dois ossos do antebraço e a articulação radiocapitelar. Por isso,não se deve olhar apenas a fratura:em uma lesão suspeita,a cabeça precisa ser localizada em relação ao capítulo,e o alinhamento ulnar deve ser avaliado.\n\nOs demais tipos fornecem a comparação: **II é posterior ou posterolateral,com ápice posterior;III é lateral,com varo da ulna;IV combina luxação anterior com fraturas da ulna e do rádio**. Assim,I eIV compartilham a direção anterior,mas oIV acrescenta o rádio fraturado. A pergunta não fornece esse componente bilateral e pede o padrão doI.\n\n**Na prova:** I =anterior/anterior;II =posterior/posterior;III =lateral/varo;IV =anterior com os dois ossos. A seção de classificação do novo resumo contém as definições,enquanto o resumo de adultos trata principalmente da Monteggia posterior.\n\n**Por que esta questão foi criada.** Inspirada na questão 92 do SIMÃO 2026, que cobrou o tipo I de Bado.",
+      "correta": "D. A combinação entre ápice anterior da ulna e cabeça radial luxada anteriormente é exatamente a definição deBadoI apresentada na fonte. É necessário combinar as duas relações,em vez de classificar apenas pelo local metafisário ou diafisário da fratura.",
+      "incorretas": {
+        "A": "Ápice posterior e luxação posterior/posterolateral correspondem aoBadoII. A direção é oposta à do tipoI;trocar só o número não preserva a definição da classificação.",
+        "B": "O deslocamento lateral ou anterolateral aponta para o padrão lateral deBadoIII,associado ao varo ulnar na descrição do resumo. Local metafisário isoladamente não transforma essa luxação em tipoI.",
+        "C": "A luxação anterior acompanhada de fraturas da ulna e do rádio pertence aoBadoIV. Ela compartilha a direção anterior com oI,mas a fratura do rádio é justamente o componente que a separa do padrão solicitado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Diagnóstico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Classificação e mecanismos",
+          "Diagnóstico"
+        ],
+        "blocos": [
+          "classificacao-e-mecanismos-bf9aae38",
+          "diagnostico-7ee8a436"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "d8126e6634e53ca9ca2336eeb0b7a5f379586c49f10b9f6d322cb8a147673404"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0660": {
+    "questaoSha256": "eac80985f9e907eed3424a0b2462beea8ed789376eff432fe082b95154bcc7d9",
+    "comentarioAnteriorSha256": "d6895d2e1e20e97d2eb9e622523c1f187af46966ea2b9381ba37547206c04f6a",
+    "comentario": {
+      "conceito": "Na **tríade terrível**,o coronoide costuma ser tratado por **via lateral**,quando a exposição permite,alternativaD. A fratura multifragmentária da cabeça radial faz parte do mesmo planejamento de reconstrução,mas não autoriza ressecá-la sem repor (Rockwood adultos,10ª edição,capítulo 40,ordem da cirurgia da tríade).\n\nO coronoide integra o encaixe ósseo que impede instabilidade. Nas lesões pequenas da ponta,uma sutura da cápsula anterior por túneis ulnares pode recuperar a contenção;fragmentos maiores podem receber parafusos de trás para frente. A via é escolhida para alcançar esse componente e depois tratar a cabeça radial e o complexo lateral,sem abandonar a estabilidade global do cotovelo.\n\nO roteiro do resumo usa uma incisão posterior ou lateral e o intervalo lateral deKocher. Começa pelo coronoide,se possível pelo mesmo corredor,depois fixa ou substitui a cabeça e repara o colateral lateral. Se a redução continuar instável,o medial é abordado adicionalmente. Já a **faceta anteromedial** com instabilidade em varo é outro padrão:naquele caso,a fonte recomenda via medial e placa de suporte.\n\n**Na prova:** luxação +cabeça radial +coronoide,padrão de tríade → lateral como acesso habitual ao coronoide,se viável. A resposta não quer dizer que toda fratura do coronoide seja lateral nem dispensa uma via complementar quando o padrão exigir.\n\n**Por que esta questão foi criada.** Inspirada na questão 29 do SIMÃO 2023, que perguntou por qual acesso a fratura do coronoide é geralmente tratada na luxação com fratura multifragmentada da cabeça do rádio.",
+      "correta": "D. O resumo descreve tratar primeiro o coronoide pela via lateral,se possível,no contexto da tríade terrível. Esse corredor integra a abordagem da cabeça radial e do complexo lateral; a exposição e o padrão do fragmento determinam se outra via será necessária.",
+      "incorretas": {
+        "A": "A via medial é importante para a faceta anteromedial do coronoide e para instabilidade medial residual. Contudo,na sequência habitual da tríade descrita na fonte,o coronoide é inicialmente acessado por lateral,se possível. A alternativa troca o padrão de abordagem por outro contexto da mesma região.",
+        "B": "Acesso anterior não é o corredor habitual indicado no roteiro da tríade do resumo. A cápsula anterior pode ser suturada por túneis na ulna,mas tratar a cápsula não implica que a pele e os planos de acesso tenham de ser anteriores.",
+        "C": "A lesão transolecraniana constitui um padrão diferente,com fratura do olécrano e relação radioulnar proximal relativamente preservada. Uma tríade terrível não exige,por definição,um acesso transolecraniano; a fonte descreve o corredor lateral para o coronoide quando viável."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Tríade terrível; Instabilidade rotatória posteromedial em varo; Ulna proximal: olécrano e Monteggia posterior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Tríade terrível",
+          "Instabilidade rotatória posteromedial em varo",
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "triade-terrivel-fc91076c",
+          "triade-terrivel-a81922cb",
+          "triade-terrivel-732ff782",
+          "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
+          "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "15c113b3bfe37dfc76ec1e458129f4936fde209c1b59b35b73227648341dfa25"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0661": {
+    "questaoSha256": "92a7d52bbde149b848f4d2c5f0d22604fab3b31c1b5c70084fceeee7d954f628",
+    "comentarioAnteriorSha256": "e866a4cffb5753377768d4cd6664006007ffd7c445e852806f07ef8c5b351d01",
+    "comentario": {
+      "conceito": "O mecanismo clássico da luxação posterolateral do cotovelo combina **valgo,carga axial e rotação externa/supinação do antebraço**,alternativaC. A mão apoiada transmite compressão enquanto o antebraço gira para fora em relação ao úmero,permitindo a perda progressiva da contenção lateral e capsular (Rockwood adultos,10ª edição,capítulo 40,mecanismo da luxação simples e da tríade terrível).\n\nNo modelo clássico deO'Driscoll,a lesão de partes moles começa no colateral lateral,atravessa a cápsula e pode terminar no colateral medial. A sequência explica por que a instabilidade pode persistir mesmo com redução radiográfica inicial e por que é necessário testar a articulação após reduzi-la. O medial nem sempre se rompe por completo.\n\nO resumo faz uma ressalva:estudos mais recentes por imagem e vídeo encontraram casos com falha medial predominante e lateral preservado. Assim,a sequência clássica orienta a pergunta,mas não deve ser imposta como descrição obrigatória de todo paciente. O padrão em **varo e pronação**,por sua vez,se associa à instabilidade posteromedial e à faceta anteromedial do coronoide,uma combinação diferente.\n\n**Na prova:** para a luxação posterolateral típica,pensar em valgo +axial +rotação externa. A seção de mecanismo da tríade chama essa rotação de supinação;as opções em rotação interna ou varo mudam elementos essenciais do padrão.\n\n**Por que esta questão foi criada.** Inspirada na questão 69 do SIMÃO 2023, que perguntou o mecanismo da maioria das luxações do cotovelo.",
+      "correta": "C. A opção reúne os três componentes descritos para o mecanismo clássico posterolateral:compressão axial,carga emvalgo e rotação externa/supinação. O conjunto é mais informativo que qualquer força isolada,e corresponde ao modelo usado pela pergunta.",
+      "incorretas": {
+        "A": "Mantém valgo e compressão,mas troca a rotação externa pela interna. A fonte descreve a supinação/rotação externa no mecanismo posterolateral;alterar esse componente deixa de reproduzir o padrão pedido.",
+        "B": "Troca tanto o valgo quanto a rotação externa do padrão clássico. Varo com pronação/rotação interna se aproxima do mecanismo posteromedial descrito no capítulo,não da luxação posterolateral típica da pergunta.",
+        "D": "A rotação externa aparece no padrão posterolateral,mas a alternativa a combina com varo em vez devalgo. Misturar parte de dois mecanismos não reproduz a combinação valgo,carga axial e supinação apresentada no resumo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Luxação simples do cotovelo; Tríade terrível; Instabilidade rotatória posteromedial em varo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Luxação simples do cotovelo",
+          "Tríade terrível",
+          "Instabilidade rotatória posteromedial em varo"
+        ],
+        "blocos": [
+          "luxacao-simples-do-cotovelo-d4159e35",
+          "triade-terrivel-1483748a",
+          "luxacao-simples-do-cotovelo-5d25ae81",
+          "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "3796948ed9a22ec0cdf5a45aac0f83df489b47ad16ea2f2af9c9b2dc8637260e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0665": {
+    "questaoSha256": "aeb51eedf2d68757247059d204a67349befb6ce050686cf84b2d8311d0db809f",
+    "comentarioAnteriorSha256": "5d5e7072b0e295095746eba6f74883fe678740f12d2e8017dbb2cdecd8624aeb",
+    "comentario": {
+      "conceito": "Na classificação de **Mayo do olécrano**,a perda da estabilidade umeroulnar define o **tipoIII**,alternativaD. O dado decisivo é o antebraço subluxado em relação ao úmero,e não a direção específica da subluxação ou a presença isolada de cominuição (Rockwood adultos,10ª edição,capítulo 40,ulna proximal).\n\nA classificação organiza três critérios: **desvio,estabilidade e cominuição**. O tipoI é sem desvio; oII é desviado,mas estável; oIII é instável. Cada tipo recebeA se não cominutivo ouB se cominutivo. Portanto,umIIA e umIIB diferem quanto ao número e à integridade dos fragmentos,mas ambos mantêm a condição de estabilidade do grupoII.\n\nEssa distinção tem consequência mecânica. A reconstrução precisa restituir a incisura e o alinhamento ulnar,com fixação suficientemente firme para permitir movimento protegido precoce. O resumo reserva a banda de tensão aos padrões simples,sem cominuição e estáveis;fraturas cominutivas e associadas à instabilidade favorecem placa. A letra do subtipo não substitui o julgamento da congruência umeroulnar.\n\n**Na prova:** se há subluxação do antebraço em relação ao úmero,éIII. Só depois avaliar se éA ouB. A figura e a seção deMayo do resumo relacionam a categoria à subluxação e à cominuição.\n\n**Por que esta questão foi criada.** Inspirada na questão 47 da SBCM 2024, que perguntou como a MAYO classifica a fratura do olécrano com o antebraço subluxado em relação ao úmero distal.",
+      "correta": "D. A subluxação umeroulnar demonstra instabilidade,critério do tipoIII deMayo. A direção pode variar,mas não muda esse eixo classificatório. Sem informação de cominuição,não é necessário escolher entreIIIA eIIIB para responder.",
+      "incorretas": {
+        "A": "O tipoI é sem desvio no esquema do resumo. A articulação subluxada do caso apresenta instabilidade,e por isso pertence ao grupoIII,mesmo que o enunciado não quantifique a separação de cada fragmento.",
+        "B": "IIA significa fratura desviada,estável e sem cominuição. A ausência de cominuição não compensaria uma subluxação umeroulnar; é o componente de instabilidade que exclui o grupoII neste caso.",
+        "C": "IIB é desviado,estável e cominutivo. A cominuição pode mudar a escolha do implante,mas o caso pede uma articulação subluxada,logo instável. Confundir cominuição com instabilidade troca dois critérios independentes da classificação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-d94b44b4",
+          "ulna-proximal-olecrano-e-monteggia-posterior-15629400",
+          "ulna-proximal-olecrano-e-monteggia-posterior-e332dbdb",
+          "ulna-proximal-olecrano-e-monteggia-posterior-6bc1603b",
+          "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "b006b467e254575bd0af1af11ce3d81add99915d6042d62d8661b4dfd96daa8b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0669": {
+    "questaoSha256": "792f5418efeb5c75d7b756215171641bd54a0d8274a3e99ee3389115b955fb84",
+    "comentarioAnteriorSha256": "34227ead8ea473592893c6b429f1e3cd06894c46ca2615424834ecbc61d204da",
+    "comentario": {
+      "conceito": "A banda especificamente ligada à contenção da instabilidade rotatória posterolateral é o **ligamento colateral ulnar lateral**,alternativaD. Ele integra o complexo lateral e se prende à **crista do supinador da ulna**,criando uma conexão que ajuda a impedir que rádio e ulna girem para fora do úmero como uma unidade (Rockwood adultos,10ª edição,capítulo 40,lado lateral).\n\nO complexo inclui também o colateral radial e o anular. O radial nasce no epicôndilo lateral e se mistura ao anular; este abraça a cabeça radial e se fixa à ulna junto à incisura radial. O colateral ulnar lateral passa por trás do radial e alcança a crista ulnar,distalmente ao anular. Reconhecer esse trajeto distingue a banda pedida de estruturas vizinhas que também contribuem para a estabilidade.\n\nQuando o lado lateral não cicatriza de modo competente,a supinação pode permitir que o antebraço rode e a cabeça radial subluxe para posterior em relação ao capítulo. A pronação tende a estabilizar esse cotovelo. Na instabilidade crônica,a fonte descreve reconstrução ligamentar com enxerto,com melhores condições mecânicas quando há cabeça radial nativa ou prótese para apoiar o conjunto.\n\n**Na prova:** anular segura a relação da cabeça com a ulna; a cabeça radial é um apoio ósseo secundário; o colateral ulnar lateral é a banda identificada com a falha rotatória posterolateral. A seçãoLado lateral mostra a diferença de trajetos.\n\n**Por que esta questão foi criada.** Inspirada na questão 99 da SBCM 2024, que perguntou a principal estrutura que impede a instabilidade rotatória posterolateral do cotovelo.",
+      "correta": "D. O resumo identifica o colateral ulnar lateral como a banda que falha na instabilidade posterolateral. Sua inserção na crista do supinador da ulna o distingue do radial e explica sua participação na contenção do movimento do antebraço em relação ao úmero.",
+      "incorretas": {
+        "A": "O anular abraça a cabeça radial e se prende à incisura radial da ulna. Ele participa do complexo lateral,mas não é a banda que a fonte associa especificamente à falha rotatória posterolateral; essa identificação pertence ao colateral ulnar lateral.",
+        "B": "A cabeça radial contribui para a estabilidade e ganha importância quando outros estabilizadores estão lesados. É,porém,um apoio ósseo secundário na divisão do resumo,e não a estrutura ligamentar cuja insuficiência caracteriza a rotação posterolateral crônica.",
+        "C": "O colateral radial se mistura ao anular e faz parte do complexo lateral,mas seu trajeto não equivale ao da banda ulnar lateral até a crista do supinador. A alternativa escolhe uma estrutura vizinha,sem identificar a banda especificamente ligada à insuficiência descrita."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Quem segura o cotovelo; Instabilidade rotatória posterolateral crônica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Quem segura o cotovelo",
+          "Instabilidade rotatória posterolateral crônica"
+        ],
+        "blocos": [
+          "quem-segura-o-cotovelo-d2f0137f",
+          "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+          "quem-segura-o-cotovelo-7b7c7f11",
+          "quem-segura-o-cotovelo-e5d8f9c3"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "27b85ee15745e9c56d2ef0602a94ddca8c5212649f3333e639f905c06ada774b"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

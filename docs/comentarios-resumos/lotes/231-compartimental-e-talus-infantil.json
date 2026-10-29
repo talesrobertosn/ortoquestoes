@@ -1,0 +1,110 @@
+{
+  "pediatria-1325": {
+    "questaoSha256": "1f590ed0ea918b9e41251c7085dfe3e041b145744075802e32668a150206b03e",
+    "comentarioAnteriorSha256": "01fbef187a1fc8f0e70ed6ef9f0f26fa166c2e637d9453522188676324c566cf",
+    "comentario": {
+      "conceito": "A mão tem **10 compartimentos** no resumo. A liberação começa pelo **túnel do carpo estendido**, seguida dos planos indicados; os interósseos recebem incisões dorsais entre **2º–3º e 4º–5º metacarpais**, e dedos tensos recebem **dermotomia médio-axial**. A alternativa B corresponde ao esquema (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nA descompressão não é apenas uma incisão dorsal genérica: o capítulo também descreve primeiro espaço, tenar e hipotenar com liberações separadas. Nos dedos, **Cleland e Grayson** podem comprimir os vasos digitais, explicando a atenção à pele tensa e à linha médio-axial.\n\nApós a fasciotomia, o resumo mantém incisões **abertas**, sem suturas de retenção, com reavaliação em 24 a 48 horas. O túnel do carpo tem fechamento retardado descrito; isso não autoriza fechar todas as incisões primariamente.\n\n**Na prova: ** distinguir número de compartimentos, acesso e tratamento dos dedos. Abrir só o túnel do carpo não prova que todos os planos tensos estejam descomprimidos; cada região precisa ser avaliada.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre a sequência anatômica da liberação da mão e a dermotomia médio-axial dos dedos tensos.",
+      "correta": "Alternativa B. Mantém o número de compartimentos, a sequência de abertura e as incisões descritas. A dermotomia dos dedos é médio-axial, não uma incisão volar central indiscriminada.",
+      "incorretas": {
+        "A": "O capítulo descreve 10 compartimentos, não quatro. A abertura precisa atender aos planos acometidos e à técnica, sem usar um número de outra região como guia da mão.",
+        "C": "A linha indicada para dedos tensos é médio-axial. A linha média volar não é o acesso descrito e não deve ser escolhida apenas por estar sobre a superfície palmar.",
+        "D": "O tratamento inclui incisões abertas e reavaliações, sem fechamento primário universal. Fechar todas imediatamente contraria o esquema de controle do edema e da viabilidade."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro superior e antebraço; Formas especiais e tratamento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+        "titulo": "Síndrome compartimental na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+        "secoes": [
+          "Membro superior e antebraço",
+          "Formas especiais e tratamento"
+        ],
+        "blocos": [
+          "membro-superior-e-antebraco-cc585328",
+          "formas-especiais-e-tratamento-db1ca75e"
+        ],
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+        "trechosSha256": "e145a83c48e34a9f339c56bfbd9c74b01b807dd38e3f3db4e74dd38856a6a358"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1326": {
+    "questaoSha256": "8ccc852955295b5f714c64ce8a9e978111ef088cb2a9553de50b4faa91989628",
+    "comentarioAnteriorSha256": "0f1377555e1f398b8db2104679675de11c9ce101385ec451884fe9445632206c",
+    "comentario": {
+      "conceito": "A **coxa tem 3 compartimentos** e o **pé 9**. Na criança com crescimento restante, o capítulo recomenda **limiar baixo para fasciotomia do pé**, pela possibilidade de **parada fisária**. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nNa coxa, os compartimentos são **anterior, medial e posterior**; a fonte descreve incisão lateral longa, às vezes acrescentando medial. Não existe a obrigação de duas incisões em todos os casos do esquema apresentado.\n\nNo pé, esmagamento e lesão de Lisfranc estão entre os cenários citados. O resumo recomenda duas incisões dorsais e, muitas vezes, uma medial. A preocupação com crescimento diferencia a criança da tendência conservadora de alguns adultos; não se deve importar essa tendência automaticamente.\n\n**Na prova: ** manter separados os números da coxa, da perna e do pé. A indicação depende de avaliação, mas o risco de fise explica por que “não fazer como em alguns adultos” é uma simplificação perigosa no pé infantil.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A contagem dos compartimentos e o argumento da fise são cobráveis.",
+      "correta": "Alternativa A. Reúne contagem anatômica e particularidade pediátrica de indicação. O risco de parada fisária sustenta a vigilância e o limiar descritos, sem tornar o número de incisões uma regra única para toda região.",
+      "incorretas": {
+        "B": "A coxa tem três compartimentos no resumo, não quatro. A incisão lateral longa pode precisar de complemento medial, mas duas incisões não são obrigatórias em todos.",
+        "C": "A fonte recomenda limiar baixo no pé com crescimento, ao contrário da tendência citada em alguns adultos. A opção inverte justamente a particularidade pediátrica.",
+        "D": "O pé tem nove compartimentos, e as vias descritas são dorsais com possível complemento medial. Quatro planos e uma incisão plantar não reproduzem essa anatomia e técnica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro inferior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+        "titulo": "Síndrome compartimental na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+        "secoes": [
+          "Membro inferior"
+        ],
+        "blocos": [
+          "membro-inferior-867bf23e"
+        ],
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+        "trechosSha256": "55bbd0239cce7c17e097567dbba9f8dbaaa1f314301ff2a61c619b69d746be64"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1330": {
+    "questaoSha256": "c3eeeeed255d0a8a1ebfabfe416a473a0022ccc67dd3356269e19e133cf810e4",
+    "comentarioAnteriorSha256": "95fa2baa2d517da4cc9b7f23e08c3053db3f8aa2f34b6b2567a590763b4f03f7",
+    "comentario": {
+      "conceito": "A principal fonte arterial citada é a **artéria do canal do tarso**, ramo da **tibial posterior**. A necrose aumenta com a gravidade de Hawkins no adulto, e o prognóstico tende a ser mais favorável abaixo de 12 anos no resumo infantil. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 31).\n\nO tálus tem cerca de **dois terços de cartilagem** e **nenhuma inserção tendínea**. Recebe também ramo deltoide para a porção medial e contribuições pediosa/fibular na região do seio do tarso. Não confundir canal do tarso com seio do tarso nem atribuir suprimento a tendões inexistentes.\n\nHawkins organiza as articulações deslocadas: I sem desvio; II subtalar; III também tibiotalar; IV acrescenta talonavicular. O resumo informa necrose adulta de 0–10%, 20–50%, 80–100% e 100%, respectivamente; na criança, cita 0–20% e uma série sem casos abaixo de 12 anos. Esta última observação não garante risco zero para toda criança pequena.\n\n**Na prova: ** anatomia vascular explica a atenção ao desvio e às articulações luxadas. Interpretar idade como dado prognóstico, sem dispensar seguimento ou aplicar percentuais adultos como previsão individual infantil.\n\n**Por que esta questão foi criada.** É uma questão de projeção para relacionar a artéria do canal do tarso, a classificação de Hawkins e os limites dos dados prognósticos por idade.",
+      "correta": "Alternativa C. Identifica corretamente vaso e origem, e mantém a diferença prognóstica por idade descrita. A classificação adulta informa a relação com desvio, mas não substitui os dados pediátricos.",
+      "incorretas": {
+        "A": "O tálus não tem inserções tendíneas no resumo. Portanto, não há garantia de nutrição por vários tendões; os vasos chegam por portas anatômicas que exigem preservação.",
+        "B": "A principal artéria é a do canal, ramo da tibial posterior. Seio do tarso e pediosa/fibular são contribuições distintas; trocar canal por seio muda a origem pedida.",
+        "D": "A fonte descreve prognóstico mais favorável no grupo abaixo de 12 anos, com ausência de necrose numa série. A opção inverte essa comparação, sem que isso permita declarar risco inexistente nos pequenos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Tálus."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-31-pe",
+        "titulo": "Fraturas, luxações e outras lesões do pé na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
+        "secoes": [
+          "Tálus"
+        ],
+        "blocos": [
+          "talus-cf87a357",
+          "talus-fc63dd2f"
+        ],
+        "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
+        "trechosSha256": "f5af65935e46d297b4d3a805fb3e97b49312d4d6452c14512cf1e762c295a22c"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

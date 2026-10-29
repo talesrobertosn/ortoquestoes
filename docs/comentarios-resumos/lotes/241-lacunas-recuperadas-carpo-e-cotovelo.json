@@ -1,0 +1,113 @@
+{
+  "mao-1050": {
+    "questaoSha256": "67ed82632bd700feb9c68e88b77dbaf93ab2d391cb4da0ed707c83101efbd342",
+    "comentarioAnteriorSha256": "5557de89b779bffa84f2efc498b50a4379f2dc4757fe2312cd6fc88f90f066d3",
+    "comentario": {
+      "conceito": "O gabarito oficial situa o pico entre **12 e 14 anos**, alternativa D. O resumo do Rockwood and Wilkins, **9ª edição, capítulo 9**, descreve uma faixa **mais ampla, de 12 a 16 anos**. A letra da banca é preservada, mas o intervalo do material consultado não deve ser silenciosamente reduzido.\n\nA diáfise do antebraço é a terceira fratura mais comum na infância na fonte, atrás do rádio distal e da supracondiliana. O risco cresce nos dois sexos até 11 ou 12 anos; depois cai nas meninas e sobe nos meninos. Assim, a distribuição não é uniforme em toda a infância.\n\nA idade também tem efeito terapêutico: crianças mais velhas remodelam menos, e traços mais proximais costumam ocorrer em pacientes maiores e ser mais difíceis de tratar. Esse é um motivo para diferenciar a **diáfise** da metáfise distal, sem transportar a epidemiologia de uma para a outra.\n\n**Na prova: ** registrar 12–14 para esta oficial e 12–16 como a faixa descrita no resumo. Nenhum desses intervalos transforma idade isolada em indicação de cirurgia.",
+      "correta": "Alternativa D. É a faixa registrada pela banca, contida no intervalo mais amplo de 12 a 16 anos informado pelo resumo. A diferença entre os intervalos fica explícita, sem mudar o gabarito nem afirmar equivalência exata.",
+      "incorretas": {
+        "A": "5 a 7 anos não corresponde ao pico descrito no resumo para a diáfise. Potencial de remodelação maior nessa idade não equivale a maior incidência.",
+        "B": "8 a 10 anos é um grupo frequente em ortopedia pediátrica, mas não o pico diafisário informado. A referência da fonte está na adolescência inicial.",
+        "C": "10 a 12 anos aproxima-se do período em que o risco cresce nos dois sexos, mas não é o intervalo de pico de 12 a 16 anos descrito. A questão pede incidência, não apenas a idade de mudança do padrão por sexo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: O exame: rotação, nervos e lesões associadas; Limites de angulação e remodelação."
+      ],
+      "conferido": false,
+      "alerta": "A banca marcou alternativa D (12–14 anos). O resumo do capítulo 9 da 9ª edição descreve pico de 12–16 anos. Conservar o intervalo mais amplo da fonte e o gabarito oficial, sem tratar as duas faixas como idênticas."
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "O exame: rotação, nervos e lesões associadas",
+          "Limites de angulação e remodelação"
+        ],
+        "blocos": [
+          "o-exame-rotacao-nervos-e-lesoes-associadas-447f5f27",
+          "limites-de-angulacao-e-remodelacao-cd21842f"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "91d67a1864b0527bc34abea982317bc1f0b65428c44108a565abe9d5399f1ac8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1125": {
+    "questaoSha256": "280b70b400a685e977dd13de7210835e62dc2cda745f1463d31d713ac7fecd13",
+    "comentarioAnteriorSha256": "982cda7a17c754be5a3a113e9df6b93cdbe630eee1ac268b5ba2d6a9ff53c408",
+    "comentario": {
+      "conceito": "O último centro do carpo listado é o **pisiforme**, portanto a letra oficial é a **alternativa C**. Há diferença na idade: o resumo informa **9 a 10 anos**, enquanto a opção oferece 6 a 8 anos. Preservar a banca exige expor essa diferença, sem ensinar a idade da opção como se fosse a consultada (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nA sequência resumida começa com **capitato e hamato**, segue por piramidal, semilunar, escafoide, trapézio/trapezoide e termina no pisiforme. A idade de um centro depende da referência usada; este comentário documenta a do resumo, não inventa uma média para conciliar números diferentes.\n\nO escafoide aparece em torno do 5º ano e ossifica de **distal para proximal**. O capítulo lembra a possibilidade de falso aspecto de Terry–Thomas no carpo imaturo. Conhecer a sequência ajuda a não transformar cartilagem ainda não ossificada em ausência óssea patológica ou alargamento traumático por si só.\n\n**Na prova: ** pisiforme é o elemento que distingue a resposta, com a ressalva etária no alerta. Não trocar pelo escafoide apenas porque sua ossificação é importante no diagnóstico de fraturas.",
+      "correta": "Alternativa C é a oficial por identificar o pisiforme como último. A faixa 6 a 8 anos da opção diverge dos 9 a 10 anos do resumo; essa parte não é confirmada pela fonte consultada.",
+      "incorretas": {
+        "A": "O escafoide não é o último na sequência do resumo: aparece por volta do 5º ano, antes do pisiforme. A faixa oferecida não muda essa ordem.",
+        "B": "Hamato está entre os primeiros centros, com referência de 4 meses no resumo. Não é o último osso do carpo a ossificar.",
+        "D": "Semilunar aparece por volta do 4º ano na fonte, antes de outros centros e do pisiforme. A alternativa erra o osso final, independentemente de sua faixa etária."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação."
+      ],
+      "conferido": false,
+      "alerta": "A banca marcou alternativa C (pisiforme, 6–8 anos). O resumo sustenta pisiforme por último, mas informa 9–10 anos. Idade divergente mantida explícita; gabarito oficial preservado."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Anatomia, exame e remodelação"
+        ],
+        "blocos": [
+          "anatomia-exame-e-remodelacao-06a7a2e4"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0091": {
+    "questaoSha256": "65240302d78ba5c4afc75f80282c2605efe57ab6c5a96680696d821e92ead6b0",
+    "comentarioAnteriorSha256": "8cacbabf3d8f53e90538f38bc2239d21c1b520af6d59a876a68db219d5a5a6f0",
+    "comentario": {
+      "conceito": "A luxação congênita da cabeça radial é em geral **posterior**, alternativa B, segundo o resumo do Rockwood and Wilkins, 10ª edição, capítulo 12.\n\nA fonte descreve **cabeça convexa, capítulo hipoplásico** e possível bilateralidade. Esses achados ajudam a distinguir a condição congênita do Monteggia crônico traumático, com **cabeça côncava, arco ulnar alterado e anular ossificado**.\n\nA história sem trauma lembrado não decide sozinha. O resumo afirma que toda luxação **anterior** é suspeita de trauma, e a morfologia das superfícies importa para o diagnóstico e a possibilidade de reconstrução. Uma cabeça fora do lugar deve ser estudada junto da ulna e do capítulo.\n\n**Na prova: ** posterior é a direção predominante, sem transformar a palavra em diagnóstico isolado. Não confundir a direção da forma congênita com os padrões de Bado da lesão traumática.",
+      "correta": "Alternativa B. É a direção usual explicitamente descrita para a forma congênita. A confirmação depende da morfologia e do conjunto clínico-radiográfico, não apenas da posição.",
+      "incorretas": {
+        "A": "Lateral é uma direção importante na classificação de Monteggia III, mas não a predominante congênita apresentada no resumo. São contextos diferentes.",
+        "C": "O componente anterior não corresponde ao padrão congênito predominante. A fonte manda suspeitar de trauma diante de luxação anterior, sem equipará-la automaticamente à variante congênita.",
+        "D": "Também propõe componente anterior, que não é a direção usual descrita. A diferenciação congênita/traumática exige analisar superfícies e ulna, em vez de escolher uma direção anterior por familiaridade."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Classificação e mecanismos."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Diagnóstico",
+          "Classificação e mecanismos"
+        ],
+        "blocos": [
+          "diagnostico-7ee8a436",
+          "classificacao-e-mecanismos-bf9aae38"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "6e8327258750b1e31aa10f32583c6e3f9fa86dee1c2d46f47acddaa41ef10722"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

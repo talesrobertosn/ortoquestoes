@@ -1,0 +1,291 @@
+{
+  "pediatria-1294": {
+    "questaoSha256": "8d6b773d2e362f24e9c9a72adf6f8aa66f0add76d67155f8ef3c76999170aba2",
+    "comentarioAnteriorSha256": "2d505e91971a4461947e68768de9c0f052555bd322f60c964845c1e0276844e9",
+    "comentario": {
+      "conceito": "No **Monteggia I por deformidade plástica**, a redução começa pela **ulna**, corrigindo seu alinhamento, e só depois se flete o cotovelo para reduzir a cabeça radial. O gesso fica em cerca de **110° a 120° de flexão**, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA deformidade plástica não tem o mesmo aspecto de uma fratura completa, mas altera o conjunto rádio–ulna e precisa de correção. O resumo recomenda anestesia para a manipulação, com tração e pressão no ápice ulnar. Reduzir apenas a cabeça sem corrigir a ulna deixa a causa do desalinhamento sem tratamento.\n\nO protocolo pelo padrão da ulna admite redução fechada para plástica e galho verde; não é a mesma escolha para uma fratura completa instável. Após o tratamento fechado do tipo I, o capítulo descreve radiografias a cada **1 a 2 semanas** e imobilização por **4 a 6 semanas**.\n\nA posição depende do tipo: o **II é imobilizado em extensão**, ao contrário do I. **Na prova:** verificar ordem de redução e direção da luxação antes de escolher a posição do gesso. A flexão também exige cuidado, pois o capítulo alerta para síndrome compartimental e para evitar hiperflexão no gesso.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A ordem da redução (ulna, depois cabeça) e a posição de flexão são o núcleo do tratamento fechado.",
+      "correta": "Alternativa A. Preserva a sequência ulna primeiro, cabeça depois e a posição de 110° a 120° para o tipo I. A correção do alinhamento ulnar é parte essencial da redução, não uma etapa dispensável.",
+      "incorretas": {
+        "B": "Inverte a ordem. O resumo orienta corrigir primeiro a ulna e depois fletir para reduzir a cabeça, em vez de tentar resolver a luxação deixando a deformidade ulnar para o fim.",
+        "C": "Extensão é a posição destacada para o tipo II. Neste tipo I, a orientação é flexão de 110° a 120°, após corrigir a ulna; não há indicação de aplicar a posição do II indistintamente.",
+        "D": "A cabeça aparentemente reduzida não autoriza aceitar a deformidade da ulna. O protocolo começa pela correção ulnar e exige acompanhar o alinhamento, pois a lesão é do conjunto e não apenas da cabeça."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo; Complicações e MONTEGGIA crônico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Tratamento agudo",
+          "Complicações e MONTEGGIA crônico"
+        ],
+        "blocos": [
+          "tratamento-agudo-35192e58",
+          "complicacoes-e-monteggia-cronico-15c4cbe6"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "8f8ee92301ff8f915e6f11fd52e10fa69b64ad85cc45b7ae6be709ea0c55a435"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1295": {
+    "questaoSha256": "df8ed2e4c67d96eb422a4c136eeb1968729bc1bbc88c3955a30b7a5c46fa9a81",
+    "comentarioAnteriorSha256": "5bce559eeca9b1d64e0dd43744eb989ebb5350460edbc46abce1bd288249264e",
+    "comentario": {
+      "conceito": "Quando a cabeça continua irredutível **depois de corrigida a ulna**, o resumo destaca **interposição do ligamento anular**. Ele pode sair da ulna com uma **manga de periósteo em continuidade**, tornando-se obstáculo à redução. A alternativa B corresponde a essa explicação e à via de **Kocher com pronação** (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA ordem é decisiva: antes de atribuir toda resistência a partes moles, conferir a correção da ulna. O capítulo também manda verificar deformidade plástica do rádio. Uma cabeça que não encaixa completamente não deve ser considerada reduzida apenas porque o desvio diminuiu.\n\nA abordagem permite retirar o tecido do caminho e restabelecer a posição do anular. No caso crônico, o mesmo capítulo prefere utilizar o **anular nativo** quando possível e associa a reconstrução à correção da ulna. Isso não significa que todo caso agudo precise da técnica de enxerto do crônico.\n\n**Na prova:** ulna corrigida + cabeça ainda bloqueada sugere anular interposto. Identificar a causa do bloqueio orienta a exposição; não trocar um obstáculo ligamentar por tenotomia ou observação sem resolver a incongruência.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A redução imperfeita aceita é a porta de entrada do MONTEGGIA crônico.",
+      "correta": "Alternativa B. É a interposição e a continuidade periosteal descritas no capítulo, com acesso de Kocher em pronação. A redução deve recuperar a congruência e a posição do ligamento, após verificar o alinhamento ósseo.",
+      "incorretas": {
+        "A": "O obstáculo descrito nessa situação é o anular, não uma ruptura no meio do colateral medial. Um reparo medial não corresponde à abordagem do tecido interposto citada no resumo.",
+        "C": "O capítulo orienta procurar a causa da irredutibilidade, sobretudo anular interposto e deformidade plástica do rádio. Observar uma redução incompleta sob a hipótese não demonstrada de fratura do capítulo não resolve o problema apresentado.",
+        "D": "A ação do bíceps participa do mecanismo do tipo I, mas isso não torna contratura a causa mais provável da cabeça bloqueada após correção ulnar. Tenotomia imediata não é a conduta descrita para esse cenário."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo; Complicações e MONTEGGIA crônico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Tratamento agudo",
+          "Complicações e MONTEGGIA crônico"
+        ],
+        "blocos": [
+          "tratamento-agudo-35192e58",
+          "complicacoes-e-monteggia-cronico-c7cab5d6"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "ba0613eca0722cc812e334ecdc7dcf6be0dc090271b015cfe34ed5939912916d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1296": {
+    "questaoSha256": "7c12981fe56a97ce011c967688b7d1fd8d13e130d4846fe625a7b179c9c77be2",
+    "comentarioAnteriorSha256": "b951879382db1b17b3355ff9cb3fced2848b7db565629a6a69093243d3b31b4c",
+    "comentario": {
+      "conceito": "A perda de extensão das **metacarpofalângicas** e da **retropulsão do polegar** corresponde ao exame do **nervo interósseo posterior** descrito no capítulo. No Monteggia III, esse nervo merece atenção especial. A alternativa C reúne identificação e evolução (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nO resumo informa lesão do **radial em 10% a 20%**, principalmente do interósseo posterior, como complicação mais comum, mais presente nos tipos I e III. O percentual se refere ao grupo radial citado, não deve ser automaticamente convertido numa incidência exclusiva de qualquer ramo ou subtipo.\n\nA orientação é **expectante**, com retorno da função em até **12 semanas** e possibilidade de esperar até seis meses no contexto apresentado pelo capítulo. Isso exige documentar o exame e acompanhar a recuperação; não equivale a dispensar avaliação de outros problemas do membro.\n\n**Na prova:** distinguir o padrão motor do interósseo posterior das lesões mediana e ulnar. O diagnóstico de uma paresia após redução não implica, por si, exploração imediata ou transferência tendinosa precoce.\n\n**Por que esta questão foi criada.** É uma questão de projeção para reconhecer a perda de extensão das metacarpofalângicas e da retropulsão do polegar,relacionando o interósseo posterior ao MonteggiaIII e à observação da recuperação.",
+      "correta": "Alternativa C. Os movimentos testados apontam para o interósseo posterior, e o capítulo recomenda observação da recuperação. A referência de 12 semanas descreve a evolução esperada, sem garantir o mesmo prazo para cada criança.",
+      "incorretas": {
+        "A": "Os testes citados são os usados para o interósseo posterior no resumo, não para o mediano. A fonte ainda classifica lesão mediana como rara e não impõe exploração imediata para o padrão apresentado.",
+        "B": "O resumo associa o ulnar ao tipo II; destaca o interósseo posterior nos tipos I e III. A opção erra tanto a identificação motora quanto a associação principal.",
+        "D": "A evolução habitualmente recuperável e a conduta expectante descritas não justificam transferência tendinosa precoce de rotina. É preciso acompanhar a recuperação neural, em vez de tratar o déficit inicial como definitivo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Complicações e MONTEGGIA crônico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Diagnóstico",
+          "Complicações e MONTEGGIA crônico"
+        ],
+        "blocos": [
+          "diagnostico-7ee8a436",
+          "complicacoes-e-monteggia-cronico-15c4cbe6"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "152182ccde07c32d9e0bf4f11918205ee747e9dc0470031dc6b97e127779d091"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1297": {
+    "questaoSha256": "e420225e3efa0d8848409f854d051ca9c6c645b5440ba0ec9a6905e6a00d356d",
+    "comentarioAnteriorSha256": "c9a3bfe15c00a443187aba932e21ac39af30351d919eb1a40c1d3d7b3a18c610",
+    "comentario": {
+      "conceito": "**Cabeça radial convexa e capítulo hipoplásico**, com luxação em geral **posterior** e por vezes **bilateral**, favorecem luxação congênita. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA ausência de uma história clara de trauma não decide sozinha. O resumo contrapõe à forma congênita a luxação traumática crônica com **cabeça côncava, arco ulnar alterado e anular ossificado**. Uma luxação anterior deve levantar suspeita de trauma.\n\nA morfologia também importa para reconstruir o Monteggia crônico: o capítulo favorece a reconstrução quando a cabeça permanece **côncava** e o capítulo **convexo**, de preferência cedo e abaixo de 10 a 12 anos; cabeça convexa/aumentada, capítulo achatado e artrose são desfavoráveis.\n\n**Na prova:** interpretar formato das superfícies, direção e ulna, sem usar “sem trauma lembrado” como diagnóstico. Os achados favorecem uma hipótese; a decisão reconstrutiva exige avaliar a articulação completa, não apenas a idade.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre luxação congênita e MONTEGGIA crônico decide se a criança vai ou não para a reconstrução.",
+      "correta": "Alternativa A. Reúne o padrão morfológico e a direção mais típicos da forma congênita no resumo. Bilateralidade é possível, não uma condição obrigatória.",
+      "incorretas": {
+        "B": "Cabeça côncava e capítulo preservado aproximam-se da morfologia traumática crônica potencialmente reconstruível, não da combinação convexa/hipoplásica destacada para a congênita.",
+        "C": "Luxação anterior com alteração do arco ulnar é suspeita de trauma segundo o capítulo. Não é o conjunto que favorece a forma congênita posterior com capítulo hipoplásico.",
+        "D": "Anular ossificado faz parte da descrição da luxação traumática crônica. Esse achado não substitui a morfologia convexa e hipoplasia capitular do padrão congênito."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Complicações e MONTEGGIA crônico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Diagnóstico",
+          "Complicações e MONTEGGIA crônico"
+        ],
+        "blocos": [
+          "diagnostico-7ee8a436",
+          "complicacoes-e-monteggia-cronico-c7cab5d6"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "d85f5861517e1fa4b8f0f6ec9e93babd0335441bb17eb4fddba40ec0d2cff2a5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1298": {
+    "questaoSha256": "1f0c6559dc477c6ba733b608af32757299d35c96a6baf6f4b59d763e7cbdc979",
+    "comentarioAnteriorSha256": "821f60ef683529fd0f02817f79ddbf7ebe9ebf0c9f1f04e88686802bf2bee5c3",
+    "comentario": {
+      "conceito": "A menina tem **8 anos**, cabeça ainda **côncava** e capítulo preservado: são condições favoráveis à reconstrução do Monteggia crônico no resumo. A técnica preferida combina **osteotomia de abertura da ulna, redução e reparo do anular nativo**, com **fasciotomias profiláticas**. Na deformidade plástica, a osteotomia fica **proximal ao ápice**, alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nO procedimento não tenta resolver apenas o ligamento: corrigir a geometria ulnar é um fator-chave para recuperar a relação radiocapitelar. O capítulo descreve proteção do radial, desbridamento, calibração com pino radiocapitelar provisório e placa sem enxerto na técnica dos autores; ressalta não deixar o pino.\n\nA história natural não é benigna: podem surgir valgo, dor, perda de rotação/flexão e neuropatia tardia. Ainda assim, indicação depende da morfologia. Cabeça convexa ou aumentada, capítulo achatado e artrose são contraindicações descritas; não basta operar todo caso antigo pela passagem do tempo.\n\n**Na prova:** ligar indicação, localização da osteotomia e preferência pelo tecido nativo. Reconstrução do anular com enxerto e correção da ulna são decisões diferentes; substituir a ulna deformada por uma reconstrução isolada deixa o problema mecânico sem correção.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A reconstrução do crônico reúne indicação, contraindicação e técnica.",
+      "correta": "Alternativa B. Reproduz o conjunto da técnica e a particularidade da deformidade plástica. Oito anos e superfícies ainda favoráveis sustentam considerar reconstrução, em vez de aguardar degeneração.",
+      "incorretas": {
+        "A": "A técnica preferida para esse quadro preservável é reconstrutiva, não excisão da cabeça. A cabeça côncava e o capítulo conservado são justamente os elementos que favorecem tentar recuperar a articulação.",
+        "C": "O resumo destaca a osteotomia da ulna como fator-chave e prefere o anular nativo quando utilizável. Reconstruir apenas o ligamento com tríceps sem corrigir a ulna não corresponde à técnica descrita.",
+        "D": "A história natural é descrita como não benigna, e a preferência é por reconstruir cedo em crianças com morfologia favorável. Esperar automaticamente até a maturidade ignora os elementos de indicação presentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Complicações e MONTEGGIA crônico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-12-monteggia",
+        "titulo": "Fratura-luxação de MONTEGGIA na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+        "secoes": [
+          "Complicações e MONTEGGIA crônico"
+        ],
+        "blocos": [
+          "complicacoes-e-monteggia-cronico-c7cab5d6"
+        ],
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+        "trechosSha256": "440972a518252a167f7d44c0aafe5f464dae3d625e4d7fb8eecdf057f482b315"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1300": {
+    "questaoSha256": "d6f81583e5108244e5dedb4cd799bb1a1da476bf70ed459c756724d338fdeebf",
+    "comentarioAnteriorSha256": "dded65e251acdb5215363e4c36b9b918d8e5bcdf20898924e79692b27bd0ea2e",
+    "comentario": {
+      "conceito": "O mecanismo mais comum descrito para a fratura da **espinha tibial** é **valgo forçado com rotação externa da tíbia**. A espinha incompletamente ossificada é mais fraca à tração que o ligamento, favorecendo **avulsão condroepifisária da inserção do LCA**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nO capítulo situa a lesão sobretudo em **11 a 12 anos** e diferencia velocidade da carga: **lenta favorece espinha; rápida favorece LCA**. A hemartrose do caso é compatível com lesão intra-articular, mas não elimina a necessidade de avaliar meniscos e estruturas associadas.\n\nHiperflexão, hiperextensão e rotação interna também aparecem como mecanismos possíveis. Isso precisa ser separado da pergunta sobre o **mais comum segundo o capítulo**. As oficiais espelhadas de TARO2018 e2014 privilegiam hiperextensão; seus gabaritos são preservados, com a divergência explicitada, sem apagar a possibilidade de hiperextensão da lista do resumo.\n\n**Na prova:** distinguir mecanismo possível de predominante e osso imaturo de ligamento. Não confundir avulsão da espinha com ruptura ligamentar por apenas lembrar a sigla LCA.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0624`), que deu como gabarito hiperextensão com rotação lateral, e do TARO 2014 (`pediatria-0693`), que deu hiperextensão. O capítulo aponta o valgo forçado com rotação externa da tíbia como o mais comum e cita a hiperextensão entre os possíveis. Resolva as oficiais sabendo dessa divergência.",
+      "correta": "Alternativa C. Combina o vetor predominante informado e a fraqueza relativa do osso imaturo, explicando por que ocorre a avulsão. É a resposta deste simulado baseado no capítulo, mantendo a ressalva sobre as oficiais.",
+      "incorretas": {
+        "A": "Hiperflexão é possível no resumo, mas não o mecanismo mais comum descrito; além disso, a explicação inverte a relação de resistência: o osso imaturo é mais fraco que o ligamento.",
+        "B": "O vetor predominante apresentado é valgo com rotação externa, não varo com rotação interna. A falha da questão está na avulsão condroepifisária da espinha, não numa definição genérica da fise proximal como ponto de ruptura.",
+        "D": "Trauma direto anterior não é o mecanismo predominante listado, e a opção erra a explicação ao tornar o osso mais resistente. O capítulo explica a avulsão pela menor resistência do osso imaturo em relação ao ligamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Fratura da espinha tibial"
+        ],
+        "blocos": [
+          "fratura-da-espinha-tibial-4d91936f"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "8b25fc6c484f315df1c08e51ac7623d6231b00a1dabb7feebc7a91ca3edb92ea"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1301": {
+    "questaoSha256": "cfefb9758e347a8ed5d0bc88c1ac9d28633b8afe4e26fbdb99135c4018bb6d35",
+    "comentarioAnteriorSha256": "28e63aa9d402d541b79079c07a28ff0191506882f9860a149bddaf076a0ce596",
+    "comentario": {
+      "conceito": "Elevação do **terço a metade anterior** do fragmento com **dobradiça posterior preservada** define **Meyers e McKeever II**. A alternativa A responde ao tipo solicitado (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nA classificação é lida no **perfil**: tipo I tem desvio mínimo; II mantém a articulação posterior; III apresenta separação completa com rotação; IV é cominuto, acréscimo de Zaricznyj. A dobradiça é o discriminador entre elevação parcial e fragmento inteiramente separado.\n\nA distinção orienta a conduta. No tipo II, o resumo recomenda tentar redução em **extensão**, com redução em cerca de 50%; se não reduzir, cirurgia. O tipo I admite imobilização em extensão completa, enquanto III vai para cirurgia. Encarceramento do menisco medial e do intermeniscal pode impedir redução.\n\n**Na prova:** nomear o tipo pela relação do fragmento com a epífise, sem tratar toda elevação como separação completa. A classificação não torna dispensável investigar partes moles quando a tentativa de redução falha.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2024 (`pediatria-0535`), que mostrou uma figura e pediu o tipo de MEYERS e MCKEEVER (tipo II). Depois, faça a oficial.",
+      "correta": "Alternativa A. O tipo II conserva a dobradiça posterior apesar da elevação anterior. Essa relação é exatamente a do enunciado, e não um fragmento totalmente separado ou cominuto.",
+      "incorretas": {
+        "B": "Tipo I tem desvio mínimo. Elevação do terço a metade anterior com dobradiça posterior é a descrição específica do tipo II, mais informativa que dizer apenas que o fragmento não se separou completamente.",
+        "C": "Tipo III apresenta separação completa e rotação. A persistência da dobradiça posterior do caso impede enquadrá-lo nessa categoria.",
+        "D": "Tipo IV de Zaricznyj é cominuição. O enunciado descreve uma dobradiça, sem caracterizar o fragmento cominuto que define esse acréscimo à classificação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Fratura da espinha tibial"
+        ],
+        "blocos": [
+          "fratura-da-espinha-tibial-c280bbe9",
+          "fratura-da-espinha-tibial-4d91936f"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "38d8181ee94b4ec5e7508580f6221ae04eac8cd5dd241c3250ba9dfb762ba9f1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1303": {
+    "questaoSha256": "a2b8cc1007c775e820945f4ee509497e5628a7949821e3b8770f20cf7e668c92",
+    "comentarioAnteriorSha256": "4cddf69c3cad35ba25f7bd1b983617a26fecbc17acbadab41bf16d1cc051c1ce",
+    "comentario": {
+      "conceito": "A fratura da espinha tibial **tipo I**, de desvio mínimo, recebe **gesso ou órtese em extensão completa por cerca de 6 semanas**, com radiografia em **1 a 2 semanas** e retorno ao esporte em **3 a 4 meses**, segundo o resumo. Para o menino do caso, corresponde à alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 28).\n\nA escolha conservadora depende do tipo e do alinhamento, não apenas da idade. O tipo II tenta redução em extensão; persistindo desvio, indica-se cirurgia. O III tem separação completa e é cirúrgico no esquema apresentado. Fixação artroscópica não é uma exigência do tipo I.\n\nO regime não operatório em **extensão completa** deve ser distinguido do pós-operatório descrito, que utiliza arco de **0° a 30° por 6 semanas** e órtese em extensão à noite. Misturar protocolos de grupos diferentes altera justamente o ponto cobrado.\n\n**Na prova:** manter posição, prazo e controle radiográfico do tratamento escolhido. O retorno esportivo indicado é uma referência do capítulo, não uma autorização automática independente de reavaliação da consolidação e da função.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A imobilização em extensão completa e os prazos são os detalhes práticos do tratamento conservador.",
+      "correta": "Alternativa B. Reproduz o esquema não operatório do tipo I e seus prazos. Gesso/órtese em extensão e controle inicial são diferentes de liberar movimento imediato ou fixar todo fragmento.",
+      "incorretas": {
+        "A": "Troca extensão completa por 30° de flexão e reduz o período a 3 semanas. Não é o regime não operatório do tipo I informado no resumo.",
+        "C": "Fixação é discutida para os padrões desviados que não reduzem e para o tipo III. O tipo I apresentado admite tratamento não operatório, sem indicação automática de parafuso artroscópico.",
+        "D": "O resumo prescreve imobilização e acompanhamento, não movimento livre imediato sem proteção. O desvio mínimo permite tratamento conservador, mas não elimina o período de consolidação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões intra-articulares do joelho na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 28 · Intra-Articular Injuries of the Knee. Seções: Fratura da espinha tibial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-28-joelho-intra-articular",
+        "titulo": "Lesões intra-articulares do joelho na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
+        "secoes": [
+          "Fratura da espinha tibial"
+        ],
+        "blocos": [
+          "fratura-da-espinha-tibial-c280bbe9"
+        ],
+        "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
+        "trechosSha256": "685465300b7438ec4d1800e0961ed11423c55fb9389ca1c96a55e5a7b929bf7d"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

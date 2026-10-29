@@ -182,6 +182,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0, reais = nul
         <p>{reais
           ? 'Cobranças gravadas no banco: Pix pelo valor pago, cartão pelo valor contratado no checkout. O banco guarda só a última cobrança de cada cartão; as renovações anteriores são reconstruídas a cada período do plano (marcadas como estimadas). Reembolsos descontados.'
           : 'Reconstruídos a partir das assinaturas: cada cobrança pelo preço do plano; reembolsos descontados.'} Cartão renova sozinho; Pix é compra avulsa, sem renovação. Os valores são brutos: não descontam a taxa do Mercado Pago e não substituem o extrato dele.</p>
+        <p>Nova, renovação ou volta é decidido pela pessoa, não pela assinatura: a primeira compra paga é a nova; pagar de novo com o acesso valendo (ou até 30 dias depois do fim) é renovação, no Pix ou no cartão, inclusive quem passou do Pix para o cartão; pagar depois disso é "voltou a assinar". Assinantes com acesso contam pessoas, então quem renovou o Pix antes do fim não conta duas vezes.</p>
         <p>Receita recorrente por mês = soma dos cartões que renovam sozinhos, cada um dividido pelos meses do plano (anual ÷ 12, semestral ÷ 6). Pix não entra, porque não renova.</p>
         <p>A receita do mês é comparada com o mês passado até o mesmo dia, para não comparar meio mês com um mês inteiro.</p>
       </details>
@@ -195,20 +196,22 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0, reais = nul
           <small>{plural(d.recorrentes.length, 'cartão renovando sozinho', 'cartões renovando sozinhos')} · {real(d.valorRecorrente)} por ciclo</small>
         </Numero>
         <Numero rotulo="Assinantes com acesso" valor={d.comAcesso.toLocaleString('pt-BR')}>
-          <small>{d.renovamAgora} no cartão que renova · {d.pixComAcesso} no Pix{d.cartaoSemRenovar ? ` · ${d.cartaoSemRenovar} cancelado(s) com acesso` : ''}</small>
+          <small>pessoas, cada uma contada uma vez (renovar não soma) · {d.renovamAgora} no cartão que renova · {d.pixComAcesso} no Pix{d.cartaoSemRenovar ? ` · ${d.cartaoSemRenovar} cancelado(s) com acesso` : ''}</small>
           <small>conversão {conversao === null ? '—' : `${conversao}%`}: {d.pagantes} de {usuarios ?? '—'} cadastrados já pagaram</small>
         </Numero>
         <Numero rotulo={`Assinaturas novas em ${mesAtual}`} valor={novasAgora}>
           <Comparacao atual={novasAgora} anterior={novasAntes} base={mesAnterior} />
-          <small>{atual?.novasCartao ?? 0} no cartão · {atual?.novasPix ?? 0} no Pix · {real(atual?.receitaNovas ?? 0)}</small>
+          <small>primeira compra de cada pessoa · {atual?.novasCartao ?? 0} no cartão · {atual?.novasPix ?? 0} no Pix · {real(atual?.receitaNovas ?? 0)}</small>
+          {(atual?.voltas ?? 0) > 0 && <small>+ {plural(atual?.voltas ?? 0, 'pessoa voltou', 'pessoas voltaram')} a assinar ({real(atual?.receitaVoltas ?? 0)})</small>}
         </Numero>
-        <Numero rotulo={`Cancelamentos em ${mesAtual}`} valor={atual?.cancelamentos ?? 0}>
+        <Numero rotulo={`Renovações desligadas em ${mesAtual}`} valor={atual?.cancelamentos ?? 0}>
           <Comparacao atual={atual?.cancelamentos ?? 0} anterior={anterior?.cancelamentos ?? 0} base={mesAnterior} bom="desce" />
-          <small>renovação do cartão desligada · {plural(atual?.reembolsos ?? 0, 'reembolso', 'reembolsos')}</small>
+          <small>seguem com acesso até o fim do período pago · {plural(atual?.reembolsos ?? 0, 'reembolso', 'reembolsos')}</small>
         </Numero>
-        <Numero rotulo={`Renovações automáticas em ${mesAtual}`} valor={atual?.renovacoes ?? 0}>
+        <Numero rotulo={`Renovações em ${mesAtual}`} valor={atual?.renovacoes ?? 0}>
           <Comparacao atual={atual?.renovacoes ?? 0} anterior={anterior?.renovacoes ?? 0} base={mesAnterior} />
-          <small>{real(atual?.receitaRenovacoes ?? 0)} renovados</small>
+          <small>{(atual?.renovacoes ?? 0) - (atual?.renovacoesPix ?? 0)} no cartão · {atual?.renovacoesPix ?? 0} no Pix · {real(atual?.receitaRenovacoes ?? 0)} renovados</small>
+          <small>{d.taxaRenovacaoMes === null ? 'taxa de renovação: ninguém venceu no mês ainda' : `taxa de renovação ${d.taxaRenovacaoMes}%: ${d.renovaramMes} de ${d.renovaramMes + d.perderamMes} que venciam`}</small>
         </Numero>
         <Numero rotulo="Renovações em 30 dias" valor={d.renovacoes30}>
           <small>{real(d.valorRenovacoes30)} previstos no cartão, se ninguém cancelar</small>

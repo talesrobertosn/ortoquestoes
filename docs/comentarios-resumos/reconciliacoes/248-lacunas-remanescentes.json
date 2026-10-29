@@ -1,0 +1,171 @@
+[
+  {
+    "id": "coluna-0514",
+    "questaoSha256": "88b6a41605318c1d890c6f71fdc697546abaff49061319ac23c76014903dadbe",
+    "comentarioAnteriorSha256": "cbd327f0d1be57ae24c10a84edbb494e2cbef39831719f2750414c92d0201033",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "Faltam no resumo 48 os graus de Biffl e o corte que classifica irregularidade com estenose de 15% como grau I, além da indicação de terapia antitrombótica e reimagem em 7–10 dias. O texto geral sobre lesão vertebral não fornece esses critérios nem permite excluir todas as propostas de stent/tratamento das quatro alternativas. Necessária classificação e diretriz vascular primária correspondente; enunciado, D e comentário preservados.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "conceitos-basicos-0067",
+    "questaoSha256": "2b82a8bb6168399f8cd7c86c1f20421305b56f0b7ca262eceb8cf49136f0bc03",
+    "comentarioAnteriorSha256": "65ebf6bbd5d205523aeb4d09bb9f1b9fe501348f1586340b2b1165f4c6b4434e",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-63-diafise-tibia",
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "O corpo do resumo 63 admite troca de haste no retardo/pseudartrose sem infecção de uma tíbia já tratada com haste. A pergunta pede método preferencial de toda pseudartrose diafisária sem informar infecção, alinhamento, defeito ou implante inicial. Falta a fonte da preferência geral e da técnica fresada fechada versus aberta/enxerto/placa/osteotomia fibular para esse denominador. Não extrapolar uma indicação selecionada para toda pseudartrose tibial; B oficial e comentário preservados.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "conceitos-basicos-0073",
+    "questaoSha256": "3bef4c5ebab4843459fff62282584ac52cf6dc4fe616ed7ceb6f5f43f3587a60",
+    "comentarioAnteriorSha256": "e7732a1b90ac0a1186f891b83628dc6e9cb5eb5f802957cb08c8a463ba932303",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-63-diafise-tibia",
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [
+      {
+        "arquivo": "conceitos-basicos/conceitos-basicos-0073-1.jpeg",
+        "sha256Bytes": "8fa4b709e02d9d09c760b9cf5c4a3657005ad25488fdb15c6ae9b22fb277d5f6",
+        "abertaIndividualmente": true
+      }
+    ],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "Imagem conferida (espaçador e enxerto). O resumo de diáfise da tíbia descreve o espaçador com antibiótico seguido de enxerto, mas afirma que o capítulo não usa o epônimo Masquelet; a resposta é o epônimo, e Judet/Papineau/RIA não estão definidos no resumo.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "conceitos-basicos-0087",
+    "questaoSha256": "9caa3cd44f5e8015df443774e52c61550b552e185c538ad3a7a171e59e57e0cf",
+    "comentarioAnteriorSha256": "95c0eb387d3d6dcab8aacb5cb301424ab19ad51c77a73c4c9bec6ef9f80ac17e",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-24-fraturas-estresse",
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "O resumo fornece o padrão trifásico da fratura, mas não a fisiologia de distribuição extracelular, fluxo, pool, atividade osteoblástica e depuração renal que decide as quatro alternativas. Necessária fonte de medicina nuclear para conferir a definição de cada fase; não usar apenas o padrão focal/tardio como prova de D.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "conceitos-basicos-0095",
+    "questaoSha256": "6c5c5ca9e7f3a31e8b4cebcdc6702625f4f674770fae40f9e74498ff4303b79e",
+    "comentarioAnteriorSha256": "1705862cfbf46f109da83525fbab54ae66d27352efd030e206948b48f79610f9",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-63-diafise-tibia",
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "O corpo do resumo 63 trata a osteotomia da consolidação viciosa, mas não define CORA nem compara os encontros de eixos mecânicos e anatômicos. O próprio contexto remete ao capítulo 31. Falta definição primária e construção dos eixos para diferenciar B de C/D e do ponto cortical de A; não usar a resposta do bloco contextual como fonte.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "conceitos-basicos-0331",
+    "questaoSha256": "bafb1abea2651ec4f07f53cb931adf27fee10ede2ff3cc5f7aab8eaf48f1eb9d",
+    "comentarioAnteriorSha256": "d05a3af7f62c58f2bd3a79f901151baee808dc4aa2dca27fc7f1cc2921b071d7",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-58-femur-distal",
+        "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [
+      {
+        "arquivo": "conceitos-basicos/conceitos-basicos-0331-1.jpeg",
+        "sha256Bytes": "277155bda71773fcfcc9d4cc4744414ef2ebf7aa739670955a8694aec6902be2",
+        "abertaIndividualmente": true
+      }
+    ],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "Imagem conferida (pseudartroses do fêmur distal com fenda). O resumo de fêmur distal fala em evitar fenda residual e implante rígido demais (Perren), mas não classifica a pseudartrose em atrófica/hipertrófica nem liga cada tipo à rigidez; falta o capítulo 1 (consolidação) do Rockwood.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "conceitos-basicos-0332",
+    "questaoSha256": "83800509aa4c388eb8ffc7602116e4c6c18cd81742111c4dfe8d2cb685827961",
+    "comentarioAnteriorSha256": "d3414e7d2cef51ea6fc5a5e38e13c05d23ff0eccc42c2da4795c6cd8b505b6ae",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-58-femur-distal",
+        "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "O corpo do resumo 58 favorece placa longa e parafusos espaçados, mas não compara resistência do construto entre número de parafusos, bloqueio nas extremidades, distribuição diafisária e omissão perto do foco. Falta o ensaio ou trecho primário de biomecânica para sustentar que o aumento principal é a distância entre parafusos, sem confundir resistência, rigidez e comprimento de trabalho.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "conceitos-basicos-0338",
+    "questaoSha256": "6057ddb4ce60f1c4b4bb22f728b5fe3468ab9311363d2a10a93636259ce3f3e5",
+    "comentarioAnteriorSha256": "8a71394e04b5f79cdeb51406c683ea4a7ffc0d46d235ba8edb3d15b016906bbd",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-63-diafise-tibia",
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "O resumo 63 discute fresagem, circulação e dimensões dos parafusos, mas não demonstra qual modo de rigidez é a principal limitação de uma haste não fresada fina. Faltam comparação biomecânica e distinção entre cisalhamento, flexão e compressão/axial. O contexto que cita baixa rigidez não sustenta individualmente a alternativa C nem os distratores; preservar C oficial.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "conceitos-basicos-0353",
+    "questaoSha256": "5a22a26e48c9cc950109044d33238b52e8a4a2812006a2d97411cafe2ed47a48",
+    "comentarioAnteriorSha256": "11dc097cd44ec7af5e73effb111a45f1f1d3dc52e1403edae8ee721920ae0385",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-51-acetabulo",
+        "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f"
+      },
+      {
+        "id": "rockwood10-62-planalto-tibial",
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8"
+      }
+    ],
+    "alcanceConsulta": "Reavaliação das alternativas e dos trechos pertinentes à lacuna; não alegar releitura integral de 24/51/58/62/63 nesta unidade. Notas questoes não usadas como fonte independente.",
+    "imagensInspecionadas": [],
+    "estadoFinal": "pendente-fonte",
+    "pendencia": "Após leitura integral do 62, há comparação de resultados clínicos segundo alinhamento, estabilidade e degrau, com limitações da medida radiográfica, mas não uma hierarquia universal de recuperação biológica da cartilagem. O 51 relaciona redução/congruência à evolução do acetábulo. Falta a fonte primária do capítulo de lesão cartilaginosa que sustente exatamente o par como fator mais importante da recuperação da cartilagem, sem trocar desfecho clínico por regeneração histológica. A oficial e comentário anterior preservados.",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  }
+]
