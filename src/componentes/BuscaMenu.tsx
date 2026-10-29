@@ -16,7 +16,7 @@ import { Icone, type NomeIcone } from './Icone'
 export interface PaginaBusca { destino: string; rotulo: string; texto: string; icone: NomeIcone; chaves?: string }
 
 interface Resultado { chave: string; tipo: 'pagina' | 'resumo' | 'assunto' | 'flashcards' | 'questoes'; titulo: ReactNode; detalhe?: ReactNode; destino: string; icone: NomeIcone; peso: number }
-interface IndiceResumos { capitulos: Array<{ id: string; t: string; e: string }>; itens: Array<[number, string, string, string]> }
+interface IndiceResumos { capitulos: Array<{ id: string; t: string; e: string; r?: string; s?: string }>; itens: Array<[number, string, string, string]> }
 interface IndiceFlash { areas: Record<string, { nome: string; assuntos?: Record<string, number> }> }
 
 const normalizar = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
@@ -71,22 +71,44 @@ export function BuscaMenu({ paginas, aoIr }: { paginas: PaginaBusca[]; aoIr: () 
       if (contemTodos(tudo, termos)) saida.push({ chave: 'p' + p.destino + p.rotulo, tipo: 'pagina', titulo: p.rotulo, detalhe: p.texto, destino: p.destino, icone: p.icone, peso: contemTodos(nome, termos) ? 100 : 60 })
     }
     if (resumos) {
-      const porCap = new Map<number, number>()
+      // Um resultado por resumo (Tales, 29/10/2026: achar pelos termos, sem uma enxurrada de trechos, e com
+      // preferência para os resumos, que são as aulas do site). O resumo vale pelo lugar em que o termo aparece:
+      // título, palavras-chave do cabeçalho, subtemas e títulos de seção pesam mais que um trecho solto, e
+      // o resultado abre na parte que mais combina.
+      const porCap = new Map<number, { secao?: [string, string]; trecho?: [string, string, string]; trechos: number }>()
       for (const [ci, bloco, secao, texto] of resumos.itens) {
-        const cap = resumos.capitulos[ci]
-        const alvo = normalizar(`${texto} ${secao} ${cap.t}`)
-        if (!contemTodos(alvo, termos)) continue
-        const n = porCap.get(ci) ?? 0
-        if (n >= 3) continue
-        porCap.set(ci, n + 1)
-        const titulo = bloco.startsWith('h-') && contemTodos(normalizar(secao), termos)
-        saida.push({ chave: 'r' + cap.id + bloco, tipo: 'resumo', titulo: <>{cap.t} <small>› {secao}</small></>, detalhe: titulo ? 'Seção do resumo' : trecho(texto, termos), destino: `/resumos/${cap.id}?bloco=${encodeURIComponent(bloco)}`, icone: 'livro', peso: (titulo ? 90 : contemTodos(normalizar(texto), termos) ? 70 : 40) - n * 5 })
+        const doTexto = contemTodos(normalizar(texto), termos)
+        const daSecao = bloco.startsWith('h-') && contemTodos(normalizar(secao), termos)
+        if (!doTexto && !daSecao) continue
+        const achado = porCap.get(ci) ?? { trechos: 0 }
+        if (daSecao) achado.secao ??= [bloco, secao]
+        else { achado.trechos++; achado.trecho ??= [bloco, secao, texto] }
+        porCap.set(ci, achado)
       }
-      for (const cap of resumos.capitulos) if (contemTodos(normalizar(cap.t), termos)) saida.push({ chave: 'rc' + cap.id, tipo: 'resumo', titulo: <>Resumo: {cap.t}</>, detalhe: 'Abrir o resumo do capítulo', destino: `/resumos/${cap.id}`, icone: 'livro', peso: 95 })
+      const candidatos: Resultado[] = []
+      resumos.capitulos.forEach((cap, ci) => {
+        const achado = porCap.get(ci)
+        const noTitulo = contemTodos(normalizar(cap.t), termos)
+        const nasChaves = contemTodos(normalizar(cap.r ?? ''), termos)
+        // Subtema largo ("Outras fraturas na criança") vale menos que as palavras-chave do próprio capítulo.
+        const noSubtema = contemTodos(normalizar(cap.s ?? ''), termos)
+        if (!noTitulo && !nasChaves && !noSubtema && !achado) return
+        const pontos = (nasChaves ? 35 : 0) + (noSubtema ? 12 : 0) + (achado?.secao ? 25 : 0) + Math.min(achado?.trechos ?? 0, 6) * 3
+        const [bloco] = achado?.secao ?? achado?.trecho ?? []
+        const detalhe = noTitulo ? 'Abrir o resumo do capítulo' : achado?.secao ? <>Seção: {achado.secao[1]}</> : achado?.trecho ? <>{achado.trecho[1]} › {trecho(achado.trecho[2], termos)}</> : 'Abrir o resumo do capítulo'
+        candidatos.push({ chave: 'rc' + cap.id, tipo: 'resumo', titulo: <>Resumo: {cap.t}</>, detalhe,
+          destino: bloco && !noTitulo ? `/resumos/${cap.id}?bloco=${encodeURIComponent(bloco)}` : `/resumos/${cap.id}`, icone: 'livro',
+          // Termo no título vem sempre primeiro (92 ou mais); chaves ou seção ficam acima de assuntos e flashcards
+          // (80 a 89); achado só num trecho solto fica abaixo deles.
+          peso: noTitulo ? 92 + pontos / 10 : pontos >= 25 ? 80 + pontos / 10 : 50 + pontos })
+      })
+      saida.push(...candidatos.sort((a, b) => b.peso - a.peso).slice(0, 6))
     }
-    for (const s of subtemas) if (contemTodos(normalizar(s), termos)) saida.push({ chave: 's' + s, tipo: 'assunto', titulo: <>Treinar: {s}</>, detalhe: 'Questões ainda não respondidas deste assunto', destino: consultaTreinoAssunto(s), icone: 'alvo', peso: 75 })
+    // Assuntos e flashcards entram em número limitado, para a lista não virar uma enxurrada numa busca larga.
+    let assuntos = 0, grupos = 0
+    for (const s of subtemas) if (contemTodos(normalizar(s), termos) && assuntos++ < 4) saida.push({ chave: 's' + s, tipo: 'assunto', titulo: <>Treinar: {s}</>, detalhe: 'Questões ainda não respondidas deste assunto', destino: consultaTreinoAssunto(s), icone: 'alvo', peso: 75 })
     if (flash) for (const [area, a] of Object.entries(flash.areas)) for (const assunto of Object.keys(a.assuntos ?? {})) {
-      if (contemTodos(normalizar(assunto), termos)) saida.push({ chave: 'f' + area + assunto, tipo: 'flashcards', titulo: <>Flashcards: {assunto}</>, detalhe: `${a.nome} · ${a.assuntos![assunto]} flashcards`, destino: `/flashcards/biblioteca?${new URLSearchParams({ categoria: 'area:' + area, area, assunto, n: '20' })}`, icone: 'raio', peso: 65 })
+      if (contemTodos(normalizar(assunto), termos) && grupos++ < 3) saida.push({ chave: 'f' + area + assunto, tipo: 'flashcards', titulo: <>Flashcards: {assunto}</>, detalhe: `${a.nome} · ${a.assuntos![assunto]} flashcards`, destino: `/flashcards/biblioteca?${new URLSearchParams({ categoria: 'area:' + area, area, assunto, n: '20' })}`, icone: 'raio', peso: 65 })
     }
     const ordenados = saida.sort((a, b) => b.peso - a.peso).slice(0, 14)
     ordenados.push({ chave: 'q', tipo: 'questoes', titulo: <>Buscar “{q.trim()}” nas questões</>, detalhe: 'Enunciados e alternativas de todo o acervo', destino: `/treinar?busca=${encodeURIComponent(q.trim())}`, icone: 'busca', peso: 0 })

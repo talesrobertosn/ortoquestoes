@@ -159,7 +159,9 @@ for (const l of Object.values(porQuestao)) l.sort((x, y) => ['central', 'relacio
 await writeFile(join(DESTINO, 'questoes.json'), JSON.stringify(porQuestao))
 // Busca do menu (16/10/2026): cada trecho dos resumos com o título da seção, para achar uma classificação
 // ou um epônimo e abrir o resumo direto nele (#/resumos/<id>?bloco=<bloco>). Baixado só quando alguém busca.
-const busca = { capitulos: capitulos.map(({ capitulo: c }) => ({ id: c.id, t: c.titulo, e: c.especialidade })), itens: [] }
+// Desde 29/10/2026 cada capítulo leva também as palavras-chave (a linha resumo: do cabeçalho, `r`) e os
+// subtemas (`s`), que pesam mais que um trecho solto na ordem dos resultados.
+const busca = { capitulos: capitulos.map(({ capitulo: c }) => ({ id: c.id, t: c.titulo, e: c.especialidade, r: semMarcas(c.resumo ?? ''), s: (c.subtemas ?? []).join('; ') })), itens: [] }
 capitulos.forEach(({ capitulo }, ci) => {
   for (const s of capitulo.secoes) {
     busca.itens.push([ci, `h-${s.id}`, s.titulo, s.titulo])
