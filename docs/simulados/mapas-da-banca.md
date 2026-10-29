@@ -4031,3 +4031,21 @@ tempos de imobilização, gesso pendente, tala em pinça.
 **Divergências.** Nenhuma com gabarito; `0747` está sem gabarito e o capítulo sustenta só a supinação; o mecanismo de `0523` não está no capítulo.
 
 **Aproveitamento:** `pediatria-1369` a `pediatria-1383`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.794 caracteres.
+
+## Consolidação, fise e remodelação na criança, Rockwood and Wilkins 10ª ed., cap. 2
+
+**Recorte.** Lesões fisárias e Ossificação e crescimento em Ortopedia pediátrica (questões gerais, sem as de região), mais periósteo e remodelação, todas as provas.
+A banca cobra a anatomia da fise (LACROIX: TARO 2010 `pediatria-0431`, TARO 2016 `0474`, TARO 2018 `0622`; zona mais frágil: TARO 2018 `0625`),
+SALTER-HARRIS e PETERSON (CET-PR `0909`, ENARE `1066` e `0922`, TARO 2016 `0607`, TEOT 2024 `0559`), a irrigação epifisária (TARO 2022 `0569`),
+o risco no fêmur distal (TARO 2022 `0570`), as linhas de PARK e HARRIS (TARO 2024 `0538`), o periósteo roto (TARO 2021 `0592` e `0594`, TEPOP 2024 `0944`)
+e a remodelação (TARO 2021 `0591`).
+
+**Forma.** Enunciados curtos, sem imagem; muitas questões de pares (estrutura e função).
+
+**Lacunas com cara de prova (projeção).** Quatro tarefas do periósteo, GARTLAND 3B e equimose, redução pela dobradiça, deformação e vascularização,
+KOLODNY, TRUETA e RHINELANDER, estabilidade absoluta e relativa, distúrbio sem parada e guia no lado convexo.
+
+**Divergências.** `0569` (o capítulo cita úmero proximal, não rádio proximal, como tipo A); `0625` (o capítulo não subdivide a zona hipertrófica);
+`0944` (o capítulo sustenta periósteo volar roto e dorsal íntegro no ápice volar). Sem gabarito: `0825` e `0826` (o capítulo os contradiz), `0720`, `0830`.
+
+**Aproveitamento:** `pediatria-1384` a `pediatria-1398`, 15 questões, gabarito A4/B4/C4/D3, mediana de 4.633 caracteres.
