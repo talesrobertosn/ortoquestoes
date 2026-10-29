@@ -103,7 +103,7 @@ export function AdminAgora({ conta, resumo, usuarios, atualizadoEm, assinaturas,
         <Tile rotulo="Pagaram hoje" numero={nm.pagaram} nota={nm.valorPago.hoje !== null ? real(nm.valorPago.hoje) + (nm.valorPago.ontem !== null ? ` · ontem ${real(nm.valorPago.ontem)}` : '') : avisoCobrancas ? 'precisa das cobranças gravadas (parte 23)' : undefined} destaque aoClicar={() => irPara('cobrancas')} />
         <Tile rotulo="Novas assinaturas hoje" numero={nm.novasAssinaturas} nota={nm.voltaram.hoje ? `primeira compra · +${nm.voltaram.hoje} voltaram a assinar` : 'primeira compra de cada pessoa'} aoClicar={() => irPara('cobrancas')} />
         <Tile rotulo="Renovações hoje" numero={nm.renovacoes} nota="já eram assinantes (Pix ou cartão)" aoClicar={() => irPara('cobrancas')} />
-        <Tile rotulo="Cancelamentos hoje" numero={nm.cancelamentos} bom="desce" aoClicar={() => irPara('assinaturas')} />
+        <Tile rotulo="Desligaram a renovação hoje" numero={nm.cancelamentos} nota="seguem com acesso até o fim do período pago" bom="desce" aoClicar={() => irPara('assinaturas')} />
         <Tile rotulo="Pix pendentes" numero={nm.pixPendentes} nota="aguardando o primeiro pagamento" aoClicar={() => irPara('assinaturas')} />
       </div>
     </section>
@@ -168,7 +168,7 @@ export function AdminAgora({ conta, resumo, usuarios, atualizadoEm, assinaturas,
         <Movimentos titulo="Novas assinaturas hoje" lista={quadro.novasAssinaturas} ontem={nm.novasAssinaturas.ontem} semDados={!assinaturas} vazio="Nenhuma assinatura nova hoje ainda." usuarios={usuarios} abrirFicha={abrirFicha} />
         <Movimentos titulo="Renovações hoje" lista={quadro.renovacoes} ontem={nm.renovacoes.ontem} semDados={!assinaturas} vazio="Nenhuma renovação hoje ainda." usuarios={usuarios} abrirFicha={abrirFicha} />
         {quadro.voltaram.length > 0 && <Movimentos titulo="Voltaram a assinar hoje" lista={quadro.voltaram} ontem={nm.voltaram.ontem} semDados={!assinaturas} vazio="" usuarios={usuarios} abrirFicha={abrirFicha} />}
-        <Movimentos titulo="Cancelamentos hoje" lista={quadro.cancelamentos} ontem={nm.cancelamentos.ontem} semDados={!assinaturas} vazio="Nenhum cancelamento hoje." usuarios={usuarios} abrirFicha={abrirFicha} tom="ruim" />
+        <Movimentos titulo="Desligaram a renovação hoje" lista={quadro.cancelamentos} ontem={nm.cancelamentos.ontem} semDados={!assinaturas} vazio="Ninguém desligou a renovação hoje." usuarios={usuarios} abrirFicha={abrirFicha} tom="ruim" />
         <Movimentos titulo="Pix pendentes" lista={quadro.pixPendentes} semDados={!assinaturas} vazio="Nenhum Pix aguardando pagamento." usuarios={usuarios} abrirFicha={abrirFicha} tom="aviso" quando="pedido" />
       </div>
     </section>

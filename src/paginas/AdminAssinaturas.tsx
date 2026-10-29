@@ -283,7 +283,7 @@ type FiltroAssinatura = 'vigentes' | 'todas' | 'pendente' | 'falha_pagamento' | 
 type Periodo = 'tudo' | '7' | '30' | '90' | '365'
 const FILTROS_ASSINATURA: Array<[FiltroAssinatura, string]> = [
   ['vigentes', 'Com acesso'], ['todas', 'Todas'], ['pendente', 'Pendentes'],
-  ['falha_pagamento', 'Falha no pagamento'], ['encerradas', 'Canceladas, expiradas e reembolsadas'],
+  ['falha_pagamento', 'Falha no pagamento'], ['encerradas', 'Encerradas, expiradas e reembolsadas'],
 ]
 const PERIODOS: Array<[Periodo, string]> = [['tudo', 'Desde sempre'], ['7', 'Últimos 7 dias'], ['30', 'Últimos 30 dias'], ['90', 'Últimos 3 meses'], ['365', 'Último ano']]
 const TOM_SELO = { ok: 'adm-selo--ok', aviso: 'adm-selo--aviso', ruim: 'adm-selo--ruim', neutro: 'adm-selo--neutro' } as const
@@ -374,7 +374,7 @@ function Assinaturas({ linhas, usuarios }: { linhas: LinhaAssinatura[]; usuarios
             <div><dt>Assinante desde</dt><dd>{data(inicio)} <small>({haQuanto(inicio)})</small></dd></div>
             <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em ? data(a.ultima_cobranca_em) : '—'}</dd></div>
             <div><dt>{proxima.rotulo}</dt><dd>{data(proxima.valor)}</dd></div>
-            {a.cancelada_em && <div><dt>Cancelou em</dt><dd>{data(a.cancelada_em)}</dd></div>}
+            {a.cancelada_em && <div><dt>Desligou a renovação em</dt><dd>{data(a.cancelada_em)}</dd></div>}
           </dl>
           {s.detalhe && <small className="adm-ajuda">{s.detalhe}</small>}
           {u && <button type="button" className="adm-link adm-cartao__acao" onClick={() => definirFicha(u)}><Icone nome="usuario" tamanho={15} /> Abrir a ficha e os pagamentos</button>}

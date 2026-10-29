@@ -377,7 +377,7 @@ export function montarExportacao(dados: DadosPainel, op: OpcoesExportacao, agora
     '- **Cartão:** renova sozinho a cada período do plano. **Pix:** pago uma vez; o acesso termina no fim do período (não renova).',
     '- **Receita recorrente por mês:** soma dos cartões que renovam sozinhos, cada um dividido pelos meses do plano (anual ÷ 12, semestral ÷ 6).',
     '- **Pagamento estimado:** renovação antiga do cartão reconstruída pelo período do plano (o banco guarda só a última de cada cartão) ou assinatura paga sem o pagamento gravado.',
-    '- **Situações:** Ativa · Cancelada (acesso até dd/mm) · Cancelada · Expirada · Aguardando renovação · Pendente · Falha no pagamento · Reembolsada · Pausada. Cortesia é acesso liberado pelo administrador, sem pagamento (aparece na ficha da pessoa).',
+    '- **Situações:** Ativa · Renovação desligada (não cobra mais, sem reembolso; acesso até o fim do período pago) · Encerrada · Expirada · Aguardando renovação · Pendente · Falha no pagamento · Reembolsada · Pausada. Cortesia é acesso liberado pelo administrador, sem pagamento (aparece na ficha da pessoa).',
     '- **Viu os planos:** abriu a página de planos e preços nos últimos 30 dias (o histórico de páginas guarda 30 dias).',
   ], '')
   md.push('## Limitações', '')

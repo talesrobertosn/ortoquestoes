@@ -15,7 +15,7 @@ export const rotuloMeio = (meio: string | null | undefined) => (meio === 'pix' |
 
 /** O status como o banco grava, em uma palavra. A situação completa (com a data do acesso) sai de `situacaoAssinatura`. */
 export const STATUS_ASSINATURA: Record<string, string> = {
-  ativa: 'Ativa', cancelada: 'Cancelada', reembolsada: 'Reembolsada', vencida: 'Expirada',
+  ativa: 'Ativa', cancelada: 'Renovação desligada', reembolsada: 'Reembolsada', vencida: 'Expirada',
   falha_pagamento: 'Falha no pagamento', pendente: 'Pendente', pausada: 'Pausada',
 }
 /** Acesso liberado pelo administrador, sem pagamento (não é uma assinatura). */
@@ -27,7 +27,7 @@ export type ChaveSituacao =
   | 'pendente' | 'falha_pagamento' | 'reembolsada' | 'pausada' | 'outra'
 export interface Situacao {
   chave: ChaveSituacao
-  /** Nome curto, para o selo: "Ativa", "Cancelada (acesso até 03/11)". */
+  /** Nome curto, para o selo: "Ativa", "Renovação desligada", "Encerrada". */
   rotulo: string
   tom: Tom
   /** Uma frase sobre o que acontece a seguir. */
@@ -37,19 +37,34 @@ export interface Situacao {
 /** "03/11", no relógio de Brasília. */
 export const diaMes = (iso: string | null | undefined) =>
   iso ? new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' }) : ''
+/** "03/11" no ano corrente; "03/11/2027" em outro ano (o anual comprado hoje não pode parecer que acaba hoje). */
+export const diaMesAno = (iso: string | null | undefined, agora = Date.now()) => {
+  if (!iso) return ''
+  const ano = (ms: number) => new Date(ms).toLocaleDateString('pt-BR', { year: 'numeric', timeZone: 'America/Sao_Paulo' })
+  return ano(new Date(iso).getTime()) === ano(agora) ? diaMes(iso)
+    : new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'America/Sao_Paulo' })
+}
 
 /**
  * Situação de uma assinatura em linguagem do dia a dia. Usa as mesmas regras de acesso do resto
  * do painel (`vigente` e `meioDe`, em receita.ts), só traduz:
  * - Ativa: cartão que renova sozinho, ou Pix dentro do período pago.
- * - Cancelada (acesso até dd/mm): a renovação foi desligada, mas o período pago ainda vale.
- * - Cancelada: renovação desligada e período acabado.
+ * - Renovação desligada: só a renovação automática foi desligada; não haverá
+ *   nova cobrança, sem reembolso, e o período pago ainda vale (29/10/2026: "Cancelada" confundia).
+ * - Encerrada: renovação desligada e período pago acabado.
  * - Expirada: Pix que terminou, ou assinatura vencida.
  * - Aguardando renovação: cartão ativo cujo período acabou e a cobrança nova ainda não chegou.
  * - Pendente, Falha no pagamento, Reembolsada, Pausada: como o banco grava.
  */
+/** Desligou só a renovação automática: continua assinante até o fim do que já pagou. */
+const DESLIGADA = (ate: string): Situacao => ({
+  // O selo fica curto (o nome da pessoa precisa caber no cartão); a data vai no "Acesso até" e no detalhe.
+  chave: 'cancelada_com_acesso', rotulo: 'Renovação desligada', tom: 'aviso',
+  detalhe: `Desligou só a renovação automática: não haverá nova cobrança e o acesso pago continua${ate ? ` até ${ate}` : ''}. Não houve reembolso.`,
+})
+
 export function situacaoAssinatura(a: AssinaturaBase, agora = Date.now()): Situacao {
-  const ate = diaMes(a.fim_periodo)
+  const ate = diaMesAno(a.fim_periodo, agora)
   const comAcesso = vigente(a, agora)
   const pix = meioDe(a) === 'pix'
   const acabou = !!a.fim_periodo && new Date(a.fim_periodo).getTime() <= agora
@@ -61,14 +76,14 @@ export function situacaoAssinatura(a: AssinaturaBase, agora = Date.now()): Situa
     case 'vencida': return { chave: 'expirada', rotulo: 'Expirada', tom: 'neutro', detalhe: acabou ? `O acesso terminou em ${ate}.` : 'O acesso terminou.' }
     case 'cancelada':
       return comAcesso
-        ? { chave: 'cancelada_com_acesso', rotulo: ate ? `Cancelada (acesso até ${ate})` : 'Cancelada (com acesso)', tom: 'aviso', detalhe: 'Não renova; o período pago continua valendo.' }
-        : { chave: 'cancelada', rotulo: 'Cancelada', tom: 'neutro', detalhe: acabou ? `Sem renovação; o acesso terminou em ${ate}.` : 'Sem renovação e sem acesso pago.' }
+        ? DESLIGADA(ate)
+        : { chave: 'cancelada', rotulo: 'Encerrada', tom: 'neutro', detalhe: acabou ? `A renovação foi desligada e o período pago terminou em ${ate}.` : 'Renovação desligada e sem acesso pago.' }
     case 'ativa':
       if (!comAcesso) return pix
         ? { chave: 'expirada', rotulo: 'Expirada', tom: 'neutro', detalhe: ate ? `Pix: o acesso terminou em ${ate}.` : 'Pix: o acesso terminou.' }
         : { chave: 'aguardando_renovacao', rotulo: 'Aguardando renovação', tom: 'aviso', detalhe: 'O período acabou e a cobrança nova do cartão ainda não chegou.' }
       if (pix) return { chave: 'ativa', rotulo: 'Ativa', tom: 'ok', detalhe: ate ? `Pix: acesso até ${ate}, sem renovação automática.` : 'Pix: sem renovação automática.' }
-      if (a.cancelar_ao_fim) return { chave: 'cancelada_com_acesso', rotulo: ate ? `Cancelada (acesso até ${ate})` : 'Cancelada (com acesso)', tom: 'aviso', detalhe: 'Pediu o cancelamento: não renova, e o período pago continua valendo.' }
+      if (a.cancelar_ao_fim) return DESLIGADA(ate)
       return { chave: 'ativa', rotulo: 'Ativa', tom: 'ok', detalhe: ate ? `Cartão: renova sozinho em ${ate}.` : 'Cartão: renova sozinho.' }
     default: return { chave: 'outra', rotulo: STATUS_ASSINATURA[a.status] ?? a.status, tom: 'neutro', detalhe: '' }
   }
