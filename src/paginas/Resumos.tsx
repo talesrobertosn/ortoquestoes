@@ -3,7 +3,7 @@ import { carregarCapitulo, carregarIndiceBiblioteca, textosDoCapitulo } from '..
 import { resolverAncora } from '../biblioteca/ancoras'
 import { CORES, type Capitulo, type CorMarca, type IndiceBiblioteca, type Leitura, type Marca, type ResumoCapitulo } from '../biblioteca/tipos'
 import { CHAVE_CONSULTA_ESTANTE, FILTROS_PADRAO, chaveLivro, consultaDosFiltros, estadoLeitura, filtrarEstante, filtrosAtivos, filtrosDaConsulta, livrosDaEstante, numeroCapitulo, rotuloLivro, type EstadoLeitura, type FiltrosEstante, type OrdemEstante } from '../biblioteca/estante'
-import { GuiaTour, deveAbrirGuia, type PassoGuia } from '../biblioteca/GuiaTour'
+import { GuiaTour, deveAbrirGuia, usarGuiaNaConta, type PassoGuia } from '../biblioteca/GuiaTour'
 import { usarBiblioteca } from '../biblioteca/usarBiblioteca'
 import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
@@ -91,8 +91,9 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
     }, 250)
     return () => window.clearTimeout(t)
   }, [filtros]) // eslint-disable-line react-hooks/exhaustive-deps
-  // Primeira visita: o tutorial abre sozinho, depois que a estante já está na tela.
-  useEffect(() => { if (dados && deveAbrirGuia('biblioteca')) { const t = window.setTimeout(() => definirGuia(true), 600); return () => window.clearTimeout(t) } }, [!!dados]) // eslint-disable-line react-hooks/exhaustive-deps
+  // Primeira visita da conta: o tutorial abre sozinho, depois que a estante já está na tela.
+  const metaGuia = usarGuiaNaConta('biblioteca')
+  useEffect(() => { if (dados && deveAbrirGuia('biblioteca', metaGuia)) { const t = window.setTimeout(() => definirGuia(true), 600); return () => window.clearTimeout(t) } }, [!!dados, !!metaGuia]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (dados === undefined) return <Carregando linhas={6} rotulo="Abrindo a biblioteca" />
   if (dados === null) return <Estado titulo="Não foi possível abrir a biblioteca." acoes={<button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button>}><p>Confira a conexão.</p></Estado>

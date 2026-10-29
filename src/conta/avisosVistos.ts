@@ -6,7 +6,7 @@ import { supabase } from './supabase'
  * no navegador do aparelho; agora vai também para a conta (user_metadata.avisos_vistos), e
  * vale em qualquer aparelho e depois de limpar os dados do navegador.
  */
-export type AvisoUnico = 'cronograma-simulados' | 'cronograma-tour'
+export type AvisoUnico = 'cronograma-simulados' | 'cronograma-tour' | 'guia-biblioteca' | 'guia-leitor'
 
 export function avisoVistoNaConta(meta: Record<string, unknown> | undefined | null, aviso: AvisoUnico): boolean {
   const lista = meta?.avisos_vistos

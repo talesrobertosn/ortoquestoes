@@ -3,7 +3,7 @@ import { carregarCapitulo, carregarIndiceBiblioteca, pedacos, questoesReais, tex
 import { criarAncora, faixasDoBloco, resolverAncora, type Ancora, type AncoraResolvida } from '../biblioteca/ancoras'
 import { CORES, ehTexto, type Bloco, type Capitulo, type CorMarca, type Marca, type Preferencias, type Radar, type ResumoCapitulo } from '../biblioteca/tipos'
 import { chaveLivro, numeroCapitulo, proximoCapitulo, rotuloLivro, voltarAEstante } from '../biblioteca/estante'
-import { GuiaTour, deveAbrirGuia, type PassoGuia } from '../biblioteca/GuiaTour'
+import { GuiaTour, deveAbrirGuia, usarGuiaNaConta, type PassoGuia } from '../biblioteca/GuiaTour'
 import { usarBiblioteca, usarEstadoSalvamento } from '../biblioteca/usarBiblioteca'
 import { FrasesDoTema } from '../biblioteca/FrasesDoTema'
 import { GRAVAR_SOZINHO_S, PASSO_MS, novoCronometro, passoCronometro, registrarAtividade, retirarTempo } from '../biblioteca/tempoLeitura'
@@ -122,8 +122,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   useEffect(() => { let vivo = true; carregarIndiceBiblioteca().then((d) => { if (vivo) definirEstante(d.capitulos) }).catch(() => {}); return () => { vivo = false } }, [])
   const proximo = useMemo(() => proximoCapitulo(estante, capitulo), [estante, capitulo])
   const [guia, definirGuia] = useState(false)
-  // Primeira vez no leitor: a ajuda abre sozinha depois que o texto assentou (só uma vez por aparelho).
-  useEffect(() => { if (deFundo || !deveAbrirGuia('leitor')) return; const t = window.setTimeout(() => definirGuia(true), 1200); return () => window.clearTimeout(t) }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  // Primeira vez no leitor: a ajuda abre sozinha depois que o texto assentou (só uma vez por conta).
+  const metaGuia = usarGuiaNaConta('leitor')
+  useEffect(() => { if (deFundo || !deveAbrirGuia('leitor', metaGuia)) return; const t = window.setTimeout(() => definirGuia(true), 1200); return () => window.clearTimeout(t) }, [!!metaGuia]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Marcações: reencontra cada âncora no texto atual ──
   const doCapitulo = useMemo(() => bib.marcas.filter((m) => m.capitulo === capitulo.id), [bib.marcas, capitulo.id])
