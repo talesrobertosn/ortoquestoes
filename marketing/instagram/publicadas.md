@@ -39,3 +39,5 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0338 | Síndrome compartimental: nervo altera a partir de 30 minutos, Matsen (TARO 2014) | posts/2026-10-23-box-isquemia (feed) |
 | coluna-0049 | Choque medular termina em 24 a 48 horas, bulbocavernoso (TEOT 2022) | posts/2026-10-23-box-isquemia (stories) |
 | coluna-0281 | Longo do pescoço afastado na via anterior C6-C7, cadeia simpática (TARO 2026) | posts/2026-10-27-mecanica-longo-do-pescoco (stories) |
+| pediatria-0955 | Dias-Tachdjian: fíbula transversa e fragmento lateral, pronação–eversão–rotação externa (TEPOP 2024) | posts/2026-10-29-negatoscopio-aeroporto (feed) |
+| tumores-0318 | Condroblastoma: lítica epifisária em adolescente com fise aberta (TARO 2024) | posts/2026-10-29-negatoscopio-aeroporto (stories) |
