@@ -63,7 +63,7 @@
    "taro": 28,
    "citadas": 8,
    "cobertura": 0.12,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-44-carpo",
@@ -71,8 +71,11 @@
     "rockwoodcriancas10-08-mao-carpo"
    ],
    "comentarios": {
-    "protegido-mao": 68
-   }
+    "basico": 59,
+    "incerto": 2,
+    "preservar": 7
+   },
+   "posicaoFila": 1
   },
   {
    "area": "pediatria",
@@ -99,7 +102,7 @@
     "incerto": 2,
     "preservar": 5
    },
-   "posicaoFila": 1
+   "posicaoFila": 2
   },
   {
    "area": "trauma",
@@ -146,7 +149,7 @@
     "incerto": 5,
     "preservar": 3
    },
-   "posicaoFila": 2
+   "posicaoFila": 3
   },
   {
    "area": "pediatria",
@@ -198,7 +201,7 @@
     "incerto": 3,
     "preservar": 7
    },
-   "posicaoFila": 3
+   "posicaoFila": 4
   },
   {
    "area": "trauma",
@@ -232,11 +235,14 @@
    "taro": 25,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 48
-   }
+    "basico": 45,
+    "incerto": 2,
+    "preservar": 1
+   },
+   "posicaoFila": 5
   },
   {
    "area": "ombro-cotovelo",
@@ -258,7 +264,7 @@
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 4
+   "posicaoFila": 6
   },
   {
    "area": "quadril",
@@ -280,7 +286,7 @@
     "basico": 40,
     "preservar": 7
    },
-   "posicaoFila": 5
+   "posicaoFila": 7
   },
   {
    "area": "pediatria",
@@ -324,7 +330,7 @@
    "comentarios": {
     "basico": 45
    },
-   "posicaoFila": 6
+   "posicaoFila": 8
   },
   {
    "area": "mao",
@@ -337,11 +343,13 @@
    "taro": 31,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 44
-   }
+    "basico": 43,
+    "incerto": 1
+   },
+   "posicaoFila": 9
   },
   {
    "area": "ombro-cotovelo",
@@ -360,7 +368,7 @@
     "basico": 37,
     "incerto": 5
    },
-   "posicaoFila": 7
+   "posicaoFila": 10
   },
   {
    "area": "pediatria",
@@ -452,7 +460,7 @@
     "basico": 32,
     "preservar": 8
    },
-   "posicaoFila": 8
+   "posicaoFila": 11
   },
   {
    "area": "trauma",
@@ -498,7 +506,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 9
+   "posicaoFila": 12
   },
   {
    "area": "pediatria",
@@ -521,7 +529,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 10
+   "posicaoFila": 13
   },
   {
    "area": "trauma",
@@ -548,7 +556,7 @@
     "incerto": 1,
     "preservar": 8
    },
-   "posicaoFila": 11
+   "posicaoFila": 14
   },
   {
    "area": "mao",
@@ -561,13 +569,16 @@
    "taro": 22,
    "citadas": 1,
    "cobertura": 0.03,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [
     "rockwood10-45-fraturas-mao"
    ],
    "comentarios": {
-    "protegido-mao": 37
-   }
+    "basico": 35,
+    "incerto": 1,
+    "preservar": 1
+   },
+   "posicaoFila": 15
   },
   {
    "area": "ombro-cotovelo",
@@ -633,7 +644,7 @@
    "comentarios": {
     "basico": 35
    },
-   "posicaoFila": 12
+   "posicaoFila": 16
   },
   {
    "area": "coluna",
@@ -655,7 +666,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 13
+   "posicaoFila": 17
   },
   {
    "area": "pediatria",
@@ -678,7 +689,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 14
+   "posicaoFila": 18
   },
   {
    "area": "conceitos-basicos",
@@ -697,7 +708,7 @@
     "basico": 32,
     "incerto": 1
    },
-   "posicaoFila": 15
+   "posicaoFila": 19
   },
   {
    "area": "joelho",
@@ -718,7 +729,7 @@
     "basico": 31,
     "preservar": 2
    },
-   "posicaoFila": 16
+   "posicaoFila": 20
   },
   {
    "area": "ombro-cotovelo",
@@ -739,7 +750,7 @@
     "basico": 30,
     "incerto": 3
    },
-   "posicaoFila": 17
+   "posicaoFila": 21
   },
   {
    "area": "tumores",
@@ -757,7 +768,7 @@
    "comentarios": {
     "basico": 33
    },
-   "posicaoFila": 18
+   "posicaoFila": 22
   },
   {
    "area": "pediatria",
@@ -781,7 +792,7 @@
     "basico": 31,
     "preservar": 1
    },
-   "posicaoFila": 19
+   "posicaoFila": 23
   },
   {
    "area": "coluna",
@@ -823,7 +834,7 @@
     "basico": 28,
     "incerto": 3
    },
-   "posicaoFila": 20
+   "posicaoFila": 24
   },
   {
    "area": "coluna",
@@ -842,7 +853,7 @@
     "basico": 29,
     "incerto": 1
    },
-   "posicaoFila": 21
+   "posicaoFila": 25
   },
   {
    "area": "conceitos-basicos",
@@ -865,7 +876,7 @@
     "incerto": 2,
     "preservar": 3
    },
-   "posicaoFila": 22
+   "posicaoFila": 26
   },
   {
    "area": "joelho",
@@ -887,7 +898,7 @@
     "basico": 26,
     "preservar": 4
    },
-   "posicaoFila": 23
+   "posicaoFila": 27
   },
   {
    "area": "trauma",
@@ -932,7 +943,7 @@
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 24
+   "posicaoFila": 28
   },
   {
    "area": "trauma",
@@ -1016,7 +1027,7 @@
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 25
+   "posicaoFila": 29
   },
   {
    "area": "pediatria",
@@ -1035,7 +1046,7 @@
     "basico": 26,
     "incerto": 1
    },
-   "posicaoFila": 26
+   "posicaoFila": 30
   },
   {
    "area": "trauma",
@@ -1069,11 +1080,13 @@
    "taro": 16,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 26
-   }
+    "basico": 23,
+    "incerto": 3
+   },
+   "posicaoFila": 31
   },
   {
    "area": "trauma",
@@ -1110,13 +1123,15 @@
    "taro": 11,
    "citadas": 2,
    "cobertura": 0.08,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [
     "rockwood10-44-carpo"
    ],
    "comentarios": {
-    "protegido-mao": 25
-   }
+    "basico": 24,
+    "preservar": 1
+   },
+   "posicaoFila": 32
   },
   {
    "area": "pe-tornozelo",
@@ -1135,7 +1150,7 @@
     "basico": 24,
     "incerto": 1
    },
-   "posicaoFila": 27
+   "posicaoFila": 33
   },
   {
    "area": "pediatria",
@@ -1179,7 +1194,7 @@
    "comentarios": {
     "basico": 25
    },
-   "posicaoFila": 28
+   "posicaoFila": 34
   },
   {
    "area": "tumores",
@@ -1198,7 +1213,7 @@
     "basico": 24,
     "incerto": 1
    },
-   "posicaoFila": 29
+   "posicaoFila": 35
   },
   {
    "area": "pediatria",
@@ -1216,7 +1231,7 @@
    "comentarios": {
     "basico": 24
    },
-   "posicaoFila": 30
+   "posicaoFila": 36
   },
   {
    "area": "pediatria",
@@ -1324,7 +1339,7 @@
     "basico": 22,
     "incerto": 1
    },
-   "posicaoFila": 31
+   "posicaoFila": 37
   },
   {
    "area": "joelho",
@@ -1346,7 +1361,7 @@
     "incerto": 1,
     "preservar": 7
    },
-   "posicaoFila": 32
+   "posicaoFila": 38
   },
   {
    "area": "mao",
@@ -1359,12 +1374,13 @@
    "taro": 16,
    "citadas": 23,
    "cobertura": 1.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "coberto",
    "resumos": [
     "rockwood10-44-carpo"
    ],
    "comentarios": {
-    "protegido-mao": 23
+    "basico": 6,
+    "preservar": 17
    }
   },
   {
@@ -1413,7 +1429,7 @@
     "basico": 18,
     "preservar": 5
    },
-   "posicaoFila": 33
+   "posicaoFila": 39
   },
   {
    "area": "conceitos-basicos",
@@ -1436,7 +1452,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 34
+   "posicaoFila": 40
   },
   {
    "area": "pediatria",
@@ -1456,7 +1472,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 35
+   "posicaoFila": 41
   },
   {
    "area": "trauma",
@@ -1499,7 +1515,7 @@
    "comentarios": {
     "basico": 22
    },
-   "posicaoFila": 36
+   "posicaoFila": 42
   },
   {
    "area": "tumores",
@@ -1519,7 +1535,7 @@
    "comentarios": {
     "basico": 22
    },
-   "posicaoFila": 37
+   "posicaoFila": 43
   },
   {
    "area": "coluna",
@@ -1555,11 +1571,13 @@
    "taro": 10,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 21
-   }
+    "basico": 20,
+    "incerto": 1
+   },
+   "posicaoFila": 44
   },
   {
    "area": "ombro-cotovelo",
@@ -1581,7 +1599,7 @@
     "basico": 20,
     "preservar": 1
    },
-   "posicaoFila": 38
+   "posicaoFila": 45
   },
   {
    "area": "pediatria",
@@ -1600,7 +1618,7 @@
     "basico": 20,
     "incerto": 1
    },
-   "posicaoFila": 39
+   "posicaoFila": 46
   },
   {
    "area": "pediatria",
@@ -1619,7 +1637,7 @@
     "basico": 20,
     "incerto": 1
    },
-   "posicaoFila": 40
+   "posicaoFila": 47
   },
   {
    "area": "trauma",
@@ -1706,7 +1724,7 @@
    "comentarios": {
     "basico": 21
    },
-   "posicaoFila": 41
+   "posicaoFila": 48
   },
   {
    "area": "coluna",
@@ -1727,7 +1745,7 @@
     "basico": 17,
     "preservar": 3
    },
-   "posicaoFila": 42
+   "posicaoFila": 49
   },
   {
    "area": "joelho",
@@ -1746,7 +1764,7 @@
     "basico": 18,
     "incerto": 2
    },
-   "posicaoFila": 43
+   "posicaoFila": 50
   },
   {
    "area": "mao",
@@ -1759,11 +1777,13 @@
    "taro": 12,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 20
-   }
+    "basico": 19,
+    "incerto": 1
+   },
+   "posicaoFila": 51
   },
   {
    "area": "mao",
@@ -1776,11 +1796,13 @@
    "taro": 11,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 20
-   }
+    "basico": 19,
+    "incerto": 1
+   },
+   "posicaoFila": 52
   },
   {
    "area": "ombro-cotovelo",
@@ -1799,7 +1821,7 @@
     "basico": 17,
     "incerto": 3
    },
-   "posicaoFila": 44
+   "posicaoFila": 53
   },
   {
    "area": "pediatria",
@@ -1842,7 +1864,7 @@
    "comentarios": {
     "basico": 20
    },
-   "posicaoFila": 45
+   "posicaoFila": 54
   },
   {
    "area": "coluna",
@@ -1881,7 +1903,7 @@
    "comentarios": {
     "basico": 19
    },
-   "posicaoFila": 46
+   "posicaoFila": 55
   },
   {
    "area": "mao",
@@ -1894,11 +1916,12 @@
    "taro": 10,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 19
-   }
+    "basico": 19
+   },
+   "posicaoFila": 56
   },
   {
    "area": "pe-tornozelo",
@@ -1916,7 +1939,7 @@
    "comentarios": {
     "basico": 19
    },
-   "posicaoFila": 47
+   "posicaoFila": 57
   },
   {
    "area": "quadril",
@@ -1935,7 +1958,7 @@
     "basico": 18,
     "incerto": 1
    },
-   "posicaoFila": 48
+   "posicaoFila": 58
   },
   {
    "area": "tumores",
@@ -1953,7 +1976,7 @@
    "comentarios": {
     "basico": 19
    },
-   "posicaoFila": 49
+   "posicaoFila": 59
   },
   {
    "area": "mao",
@@ -1966,13 +1989,14 @@
    "taro": 9,
    "citadas": 14,
    "cobertura": 0.78,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "coberto",
    "resumos": [
     "rockwood10-44-carpo",
     "rockwood10-45-fraturas-mao"
    ],
    "comentarios": {
-    "protegido-mao": 18
+    "basico": 7,
+    "preservar": 11
    }
   },
   {
@@ -1997,7 +2021,7 @@
     "basico": 12,
     "preservar": 6
    },
-   "posicaoFila": 50
+   "posicaoFila": 60
   },
   {
    "area": "ombro-cotovelo",
@@ -2016,7 +2040,7 @@
     "basico": 17,
     "incerto": 1
    },
-   "posicaoFila": 51
+   "posicaoFila": 61
   },
   {
    "area": "osteometabolicas",
@@ -2035,7 +2059,7 @@
     "basico": 16,
     "incerto": 2
    },
-   "posicaoFila": 52
+   "posicaoFila": 62
   },
   {
    "area": "trauma",
@@ -2118,7 +2142,7 @@
     "basico": 17,
     "preservar": 1
    },
-   "posicaoFila": 53
+   "posicaoFila": 63
   },
   {
    "area": "conceitos-basicos",
@@ -2137,7 +2161,7 @@
     "basico": 15,
     "incerto": 2
    },
-   "posicaoFila": 54
+   "posicaoFila": 64
   },
   {
    "area": "conceitos-basicos",
@@ -2158,7 +2182,7 @@
     "basico": 16,
     "preservar": 1
    },
-   "posicaoFila": 55
+   "posicaoFila": 65
   },
   {
    "area": "ombro-cotovelo",
@@ -2180,7 +2204,7 @@
     "basico": 14,
     "preservar": 3
    },
-   "posicaoFila": 56
+   "posicaoFila": 66
   },
   {
    "area": "pediatria",
@@ -2224,7 +2248,7 @@
     "basico": 15,
     "preservar": 2
    },
-   "posicaoFila": 57
+   "posicaoFila": 67
   },
   {
    "area": "conceitos-basicos",
@@ -2243,7 +2267,7 @@
     "basico": 15,
     "incerto": 1
    },
-   "posicaoFila": 58
+   "posicaoFila": 68
   },
   {
    "area": "joelho",
@@ -2263,7 +2287,7 @@
    "comentarios": {
     "basico": 16
    },
-   "posicaoFila": 59
+   "posicaoFila": 69
   },
   {
    "area": "joelho",
@@ -2281,7 +2305,7 @@
    "comentarios": {
     "basico": 16
    },
-   "posicaoFila": 60
+   "posicaoFila": 70
   },
   {
    "area": "joelho",
@@ -2314,11 +2338,12 @@
    "taro": 7,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 16
-   }
+    "basico": 16
+   },
+   "posicaoFila": 71
   },
   {
    "area": "ombro-cotovelo",
@@ -2337,7 +2362,7 @@
     "basico": 14,
     "incerto": 2
    },
-   "posicaoFila": 61
+   "posicaoFila": 72
   },
   {
    "area": "ombro-cotovelo",
@@ -2361,7 +2386,7 @@
     "incerto": 2,
     "preservar": 3
    },
-   "posicaoFila": 62
+   "posicaoFila": 73
   },
   {
    "area": "pe-tornozelo",
@@ -2380,7 +2405,7 @@
     "basico": 15,
     "incerto": 1
    },
-   "posicaoFila": 63
+   "posicaoFila": 74
   },
   {
    "area": "pe-tornozelo",
@@ -2399,7 +2424,7 @@
     "basico": 15,
     "incerto": 1
    },
-   "posicaoFila": 64
+   "posicaoFila": 75
   },
   {
    "area": "pediatria",
@@ -2444,7 +2469,7 @@
     "basico": 15,
     "preservar": 1
    },
-   "posicaoFila": 65
+   "posicaoFila": 76
   },
   {
    "area": "trauma",
@@ -2466,7 +2491,7 @@
     "basico": 14,
     "preservar": 2
    },
-   "posicaoFila": 66
+   "posicaoFila": 77
   },
   {
    "area": "trauma",
@@ -2520,11 +2545,12 @@
    "taro": 8,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 15
-   }
+    "basico": 15
+   },
+   "posicaoFila": 78
   },
   {
    "area": "mao",
@@ -2537,11 +2563,12 @@
    "taro": 9,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 15
-   }
+    "basico": 15
+   },
+   "posicaoFila": 79
   },
   {
    "area": "ombro-cotovelo",
@@ -2565,7 +2592,7 @@
     "basico": 9,
     "preservar": 6
    },
-   "posicaoFila": 67
+   "posicaoFila": 80
   },
   {
    "area": "osteometabolicas",
@@ -2583,7 +2610,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 68
+   "posicaoFila": 81
   },
   {
    "area": "osteometabolicas",
@@ -2601,7 +2628,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 69
+   "posicaoFila": 82
   },
   {
    "area": "pediatria",
@@ -2641,7 +2668,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 70
+   "posicaoFila": 83
   },
   {
    "area": "trauma",
@@ -2681,7 +2708,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 71
+   "posicaoFila": 84
   },
   {
    "area": "coluna",
@@ -2700,7 +2727,7 @@
     "basico": 11,
     "incerto": 3
    },
-   "posicaoFila": 72
+   "posicaoFila": 85
   },
   {
    "area": "joelho",
@@ -2723,7 +2750,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 73
+   "posicaoFila": 86
   },
   {
    "area": "pe-tornozelo",
@@ -2745,7 +2772,7 @@
     "basico": 13,
     "preservar": 1
    },
-   "posicaoFila": 74
+   "posicaoFila": 87
   },
   {
    "area": "pe-tornozelo",
@@ -2767,7 +2794,7 @@
     "basico": 13,
     "preservar": 1
    },
-   "posicaoFila": 75
+   "posicaoFila": 88
   },
   {
    "area": "pediatria",
@@ -2811,7 +2838,7 @@
     "basico": 13,
     "preservar": 1
    },
-   "posicaoFila": 76
+   "posicaoFila": 89
   },
   {
    "area": "trauma",
@@ -2851,7 +2878,7 @@
     "basico": 10,
     "incerto": 3
    },
-   "posicaoFila": 77
+   "posicaoFila": 90
   },
   {
    "area": "ombro-cotovelo",
@@ -2869,7 +2896,7 @@
    "comentarios": {
     "basico": 13
    },
-   "posicaoFila": 78
+   "posicaoFila": 91
   },
   {
    "area": "pe-tornozelo",
@@ -2891,7 +2918,7 @@
     "basico": 10,
     "preservar": 3
    },
-   "posicaoFila": 79
+   "posicaoFila": 92
   },
   {
    "area": "pe-tornozelo",
@@ -2956,7 +2983,7 @@
     "basico": 12,
     "incerto": 1
    },
-   "posicaoFila": 80
+   "posicaoFila": 93
   },
   {
    "area": "pe-tornozelo",
@@ -2974,7 +3001,7 @@
    "comentarios": {
     "basico": 13
    },
-   "posicaoFila": 81
+   "posicaoFila": 94
   },
   {
    "area": "pediatria",
@@ -3034,7 +3061,7 @@
    "comentarios": {
     "basico": 13
    },
-   "posicaoFila": 82
+   "posicaoFila": 95
   },
   {
    "area": "quadril",
@@ -3055,7 +3082,7 @@
     "basico": 10,
     "preservar": 3
    },
-   "posicaoFila": 83
+   "posicaoFila": 96
   },
   {
    "area": "trauma",
@@ -3094,7 +3121,7 @@
    "comentarios": {
     "basico": 13
    },
-   "posicaoFila": 84
+   "posicaoFila": 97
   },
   {
    "area": "tumores",
@@ -3113,7 +3140,7 @@
     "basico": 12,
     "incerto": 1
    },
-   "posicaoFila": 85
+   "posicaoFila": 98
   },
   {
    "area": "coluna",
@@ -3134,7 +3161,7 @@
     "basico": 11,
     "preservar": 1
    },
-   "posicaoFila": 86
+   "posicaoFila": 99
   },
   {
    "area": "ombro-cotovelo",
@@ -3153,7 +3180,7 @@
     "basico": 11,
     "incerto": 1
    },
-   "posicaoFila": 87
+   "posicaoFila": 100
   },
   {
    "area": "ombro-cotovelo",
@@ -3193,7 +3220,7 @@
    "comentarios": {
     "basico": 12
    },
-   "posicaoFila": 88
+   "posicaoFila": 101
   },
   {
    "area": "pe-tornozelo",
@@ -3215,7 +3242,7 @@
     "basico": 11,
     "preservar": 1
    },
-   "posicaoFila": 89
+   "posicaoFila": 102
   },
   {
    "area": "pe-tornozelo",
@@ -3236,7 +3263,7 @@
     "basico": 11,
     "preservar": 1
    },
-   "posicaoFila": 90
+   "posicaoFila": 103
   },
   {
    "area": "pe-tornozelo",
@@ -3254,7 +3281,7 @@
    "comentarios": {
     "basico": 12
    },
-   "posicaoFila": 91
+   "posicaoFila": 104
   },
   {
    "area": "quadril",
@@ -3274,7 +3301,7 @@
    "comentarios": {
     "basico": 12
    },
-   "posicaoFila": 92
+   "posicaoFila": 105
   },
   {
    "area": "conceitos-basicos",
@@ -3293,7 +3320,7 @@
     "basico": 9,
     "incerto": 2
    },
-   "posicaoFila": 93
+   "posicaoFila": 106
   },
   {
    "area": "joelho",
@@ -3311,7 +3338,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 94
+   "posicaoFila": 107
   },
   {
    "area": "mao",
@@ -3324,11 +3351,12 @@
    "taro": 7,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 11
-   }
+    "basico": 11
+   },
+   "posicaoFila": 108
   },
   {
    "area": "osteometabolicas",
@@ -3350,7 +3378,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 95
+   "posicaoFila": 109
   },
   {
    "area": "osteometabolicas",
@@ -3368,7 +3396,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 96
+   "posicaoFila": 110
   },
   {
    "area": "pe-tornozelo",
@@ -3386,7 +3414,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 97
+   "posicaoFila": 111
   },
   {
    "area": "pediatria",
@@ -3451,7 +3479,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 98
+   "posicaoFila": 112
   },
   {
    "area": "trauma",
@@ -3474,7 +3502,7 @@
     "basico": 10,
     "preservar": 1
    },
-   "posicaoFila": 99
+   "posicaoFila": 113
   },
   {
    "area": "tumores",
@@ -3492,7 +3520,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 100
+   "posicaoFila": 114
   },
   {
    "area": "tumores",
@@ -3510,7 +3538,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 101
+   "posicaoFila": 115
   },
   {
    "area": "coluna",
@@ -3531,7 +3559,7 @@
     "basico": 9,
     "incerto": 1
    },
-   "posicaoFila": 102
+   "posicaoFila": 116
   },
   {
    "area": "conceitos-basicos",
@@ -3551,7 +3579,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 103
+   "posicaoFila": 117
   },
   {
    "area": "joelho",
@@ -3572,7 +3600,7 @@
     "basico": 9,
     "preservar": 1
    },
-   "posicaoFila": 104
+   "posicaoFila": 118
   },
   {
    "area": "mao",
@@ -3585,11 +3613,12 @@
    "taro": 6,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 10
-   }
+    "basico": 10
+   },
+   "posicaoFila": 119
   },
   {
    "area": "mao",
@@ -3602,11 +3631,13 @@
    "taro": 4,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 10
-   }
+    "basico": 8,
+    "incerto": 2
+   },
+   "posicaoFila": 120
   },
   {
    "area": "mao",
@@ -3619,11 +3650,12 @@
    "taro": 6,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 10
-   }
+    "basico": 10
+   },
+   "posicaoFila": 121
   },
   {
    "area": "ombro-cotovelo",
@@ -3644,7 +3676,7 @@
     "basico": 8,
     "preservar": 2
    },
-   "posicaoFila": 105
+   "posicaoFila": 122
   },
   {
    "area": "ombro-cotovelo",
@@ -3663,7 +3695,7 @@
     "basico": 9,
     "incerto": 1
    },
-   "posicaoFila": 106
+   "posicaoFila": 123
   },
   {
    "area": "pe-tornozelo",
@@ -3681,7 +3713,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 107
+   "posicaoFila": 124
   },
   {
    "area": "pe-tornozelo",
@@ -3699,7 +3731,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 108
+   "posicaoFila": 125
   },
   {
    "area": "pediatria",
@@ -3721,7 +3753,7 @@
     "basico": 9,
     "incerto": 1
    },
-   "posicaoFila": 109
+   "posicaoFila": 126
   },
   {
    "area": "pediatria",
@@ -3765,7 +3797,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 110
+   "posicaoFila": 127
   },
   {
    "area": "quadril",
@@ -3787,7 +3819,7 @@
     "basico": 8,
     "preservar": 2
    },
-   "posicaoFila": 111
+   "posicaoFila": 128
   },
   {
    "area": "tumores",
@@ -3808,7 +3840,7 @@
     "basico": 9,
     "preservar": 1
    },
-   "posicaoFila": 112
+   "posicaoFila": 129
   },
   {
    "area": "tumores",
@@ -3826,7 +3858,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 113
+   "posicaoFila": 130
   },
   {
    "area": "coluna",
@@ -3845,7 +3877,7 @@
     "basico": 8,
     "incerto": 1
    },
-   "posicaoFila": 114
+   "posicaoFila": 131
   },
   {
    "area": "conceitos-basicos",
@@ -3863,7 +3895,7 @@
    "comentarios": {
     "basico": 9
    },
-   "posicaoFila": 115
+   "posicaoFila": 132
   },
   {
    "area": "mao",
@@ -3876,13 +3908,15 @@
    "taro": 7,
    "citadas": 2,
    "cobertura": 0.22,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [
     "rockwood10-45-fraturas-mao"
    ],
    "comentarios": {
-    "protegido-mao": 9
-   }
+    "basico": 7,
+    "preservar": 2
+   },
+   "posicaoFila": 133
   },
   {
    "area": "osteometabolicas",
@@ -3900,7 +3934,7 @@
    "comentarios": {
     "basico": 9
    },
-   "posicaoFila": 116
+   "posicaoFila": 134
   },
   {
    "area": "pe-tornozelo",
@@ -3922,7 +3956,7 @@
     "basico": 8,
     "preservar": 1
    },
-   "posicaoFila": 117
+   "posicaoFila": 135
   },
   {
    "area": "pe-tornozelo",
@@ -3940,7 +3974,7 @@
    "comentarios": {
     "basico": 9
    },
-   "posicaoFila": 118
+   "posicaoFila": 136
   },
   {
    "area": "pe-tornozelo",
@@ -3963,7 +3997,7 @@
     "basico": 8,
     "preservar": 1
    },
-   "posicaoFila": 119
+   "posicaoFila": 137
   },
   {
    "area": "quadril",
@@ -3981,7 +4015,7 @@
    "comentarios": {
     "basico": 9
    },
-   "posicaoFila": 120
+   "posicaoFila": 138
   },
   {
    "area": "coluna",
@@ -4022,7 +4056,7 @@
     "basico": 7,
     "preservar": 1
    },
-   "posicaoFila": 121
+   "posicaoFila": 139
   },
   {
    "area": "mao",
@@ -4035,13 +4069,15 @@
    "taro": 4,
    "citadas": 2,
    "cobertura": 0.25,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [
     "rockwood10-44-carpo"
    ],
    "comentarios": {
-    "protegido-mao": 8
-   }
+    "basico": 7,
+    "preservar": 1
+   },
+   "posicaoFila": 140
   },
   {
    "area": "ombro-cotovelo",
@@ -4062,7 +4098,7 @@
     "basico": 5,
     "preservar": 3
    },
-   "posicaoFila": 122
+   "posicaoFila": 141
   },
   {
    "area": "ombro-cotovelo",
@@ -4081,7 +4117,7 @@
     "basico": 7,
     "incerto": 1
    },
-   "posicaoFila": 123
+   "posicaoFila": 142
   },
   {
    "area": "pe-tornozelo",
@@ -4099,7 +4135,7 @@
    "comentarios": {
     "basico": 8
    },
-   "posicaoFila": 124
+   "posicaoFila": 143
   },
   {
    "area": "pediatria",
@@ -4123,7 +4159,7 @@
     "basico": 7,
     "preservar": 1
    },
-   "posicaoFila": 125
+   "posicaoFila": 144
   },
   {
    "area": "quadril",
@@ -4141,7 +4177,7 @@
    "comentarios": {
     "basico": 8
    },
-   "posicaoFila": 126
+   "posicaoFila": 145
   },
   {
    "area": "quadril",
@@ -4181,7 +4217,7 @@
    "comentarios": {
     "basico": 8
    },
-   "posicaoFila": 127
+   "posicaoFila": 146
   },
   {
    "area": "trauma",
@@ -4219,7 +4255,7 @@
    "comentarios": {
     "basico": 8
    },
-   "posicaoFila": 128
+   "posicaoFila": 147
   },
   {
    "area": "joelho",
@@ -4237,7 +4273,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 129
+   "posicaoFila": 148
   },
   {
    "area": "mao",
@@ -4250,13 +4286,15 @@
    "taro": 3,
    "citadas": 1,
    "cobertura": 0.14,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [
     "rockwood10-44-carpo"
    ],
    "comentarios": {
-    "protegido-mao": 7
-   }
+    "basico": 6,
+    "preservar": 1
+   },
+   "posicaoFila": 149
   },
   {
    "area": "mao",
@@ -4269,12 +4307,14 @@
    "taro": 5,
    "citadas": 7,
    "cobertura": 1.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "coberto",
    "resumos": [
     "rockwood10-44-carpo"
    ],
    "comentarios": {
-    "protegido-mao": 7
+    "basico": 1,
+    "incerto": 1,
+    "preservar": 5
    }
   },
   {
@@ -4288,12 +4328,13 @@
    "taro": 5,
    "citadas": 5,
    "cobertura": 0.71,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "coberto",
    "resumos": [
     "rockwood10-45-fraturas-mao"
    ],
    "comentarios": {
-    "protegido-mao": 7
+    "basico": 2,
+    "preservar": 5
    }
   },
   {
@@ -4317,7 +4358,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 130
+   "posicaoFila": 150
   },
   {
    "area": "osteometabolicas",
@@ -4335,7 +4376,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 131
+   "posicaoFila": 151
   },
   {
    "area": "pe-tornozelo",
@@ -4353,7 +4394,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 132
+   "posicaoFila": 152
   },
   {
    "area": "quadril",
@@ -4371,7 +4412,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 133
+   "posicaoFila": 153
   },
   {
    "area": "quadril",
@@ -4389,7 +4430,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 134
+   "posicaoFila": 154
   },
   {
    "area": "trauma",
@@ -4427,7 +4468,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 135
+   "posicaoFila": 155
   },
   {
    "area": "tumores",
@@ -4445,7 +4486,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 136
+   "posicaoFila": 156
   },
   {
    "area": "coluna",
@@ -4463,7 +4504,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 137
+   "posicaoFila": 157
   },
   {
    "area": "conceitos-basicos",
@@ -4481,7 +4522,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 138
+   "posicaoFila": 158
   },
   {
    "area": "joelho",
@@ -4503,7 +4544,7 @@
     "basico": 5,
     "preservar": 1
    },
-   "posicaoFila": 139
+   "posicaoFila": 159
   },
   {
    "area": "joelho",
@@ -4525,7 +4566,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 140
+   "posicaoFila": 160
   },
   {
    "area": "joelho",
@@ -4547,7 +4588,7 @@
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 141
+   "posicaoFila": 161
   },
   {
    "area": "ombro-cotovelo",
@@ -4565,7 +4606,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 142
+   "posicaoFila": 162
   },
   {
    "area": "pe-tornozelo",
@@ -4583,7 +4624,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 143
+   "posicaoFila": 163
   },
   {
    "area": "quadril",
@@ -4601,7 +4642,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 144
+   "posicaoFila": 164
   },
   {
    "area": "quadril",
@@ -4619,7 +4660,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 145
+   "posicaoFila": 165
   },
   {
    "area": "conceitos-basicos",
@@ -4639,7 +4680,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 146
+   "posicaoFila": 166
   },
   {
    "area": "joelho",
@@ -4661,7 +4702,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 147
+   "posicaoFila": 167
   },
   {
    "area": "joelho",
@@ -4680,7 +4721,7 @@
     "basico": 4,
     "incerto": 1
    },
-   "posicaoFila": 148
+   "posicaoFila": 168
   },
   {
    "area": "mao",
@@ -4693,11 +4734,12 @@
    "taro": 1,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 5
-   }
+    "basico": 5
+   },
+   "posicaoFila": 169
   },
   {
    "area": "ombro-cotovelo",
@@ -4715,7 +4757,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 149
+   "posicaoFila": 170
   },
   {
    "area": "ombro-cotovelo",
@@ -4733,7 +4775,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 150
+   "posicaoFila": 171
   },
   {
    "area": "pediatria",
@@ -4751,7 +4793,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 151
+   "posicaoFila": 172
   },
   {
    "area": "pediatria",
@@ -4810,7 +4852,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 152
+   "posicaoFila": 173
   },
   {
    "area": "tumores",
@@ -4828,7 +4870,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 153
+   "posicaoFila": 174
   },
   {
    "area": "coluna",
@@ -4846,7 +4888,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 154
+   "posicaoFila": 175
   },
   {
    "area": "conceitos-basicos",
@@ -4864,7 +4906,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 155
+   "posicaoFila": 176
   },
   {
    "area": "joelho",
@@ -4882,7 +4924,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 156
+   "posicaoFila": 177
   },
   {
    "area": "joelho",
@@ -4900,7 +4942,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 157
+   "posicaoFila": 178
   },
   {
    "area": "mao",
@@ -4913,11 +4955,12 @@
    "taro": 2,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 4
-   }
+    "basico": 4
+   },
+   "posicaoFila": 179
   },
   {
    "area": "mao",
@@ -4930,12 +4973,13 @@
    "taro": 2,
    "citadas": 3,
    "cobertura": 0.75,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "coberto",
    "resumos": [
     "rockwood10-44-carpo"
    ],
    "comentarios": {
-    "protegido-mao": 4
+    "basico": 3,
+    "preservar": 1
    }
   },
   {
@@ -4954,7 +4998,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 158
+   "posicaoFila": 180
   },
   {
    "area": "ombro-cotovelo",
@@ -4973,7 +5017,7 @@
     "basico": 3,
     "incerto": 1
    },
-   "posicaoFila": 159
+   "posicaoFila": 181
   },
   {
    "area": "pediatria",
@@ -4991,7 +5035,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 160
+   "posicaoFila": 182
   },
   {
    "area": "trauma",
@@ -5011,7 +5055,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 161
+   "posicaoFila": 183
   },
   {
    "area": "tumores",
@@ -5029,7 +5073,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 162
+   "posicaoFila": 184
   },
   {
    "area": "tumores",
@@ -5047,7 +5091,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 163
+   "posicaoFila": 185
   },
   {
    "area": "tumores",
@@ -5065,7 +5109,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 164
+   "posicaoFila": 186
   },
   {
    "area": "coluna",
@@ -5084,7 +5128,7 @@
     "basico": 2,
     "incerto": 1
    },
-   "posicaoFila": 165
+   "posicaoFila": 187
   },
   {
    "area": "conceitos-basicos",
@@ -5102,7 +5146,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 166
+   "posicaoFila": 188
   },
   {
    "area": "conceitos-basicos",
@@ -5141,7 +5185,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 167
+   "posicaoFila": 189
   },
   {
    "area": "joelho",
@@ -5159,7 +5203,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 168
+   "posicaoFila": 190
   },
   {
    "area": "mao",
@@ -5172,11 +5216,12 @@
    "taro": 1,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 3
-   }
+    "basico": 3
+   },
+   "posicaoFila": 191
   },
   {
    "area": "mao",
@@ -5189,11 +5234,12 @@
    "taro": 0,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 3
-   }
+    "basico": 3
+   },
+   "posicaoFila": 192
   },
   {
    "area": "ombro-cotovelo",
@@ -5211,7 +5257,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 169
+   "posicaoFila": 193
   },
   {
    "area": "pe-tornozelo",
@@ -5229,7 +5275,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 170
+   "posicaoFila": 194
   },
   {
    "area": "pediatria",
@@ -5248,7 +5294,7 @@
     "basico": 2,
     "incerto": 1
    },
-   "posicaoFila": 171
+   "posicaoFila": 195
   },
   {
    "area": "pediatria",
@@ -5266,7 +5312,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 172
+   "posicaoFila": 196
   },
   {
    "area": "coluna",
@@ -5304,7 +5350,7 @@
    "comentarios": {
     "basico": 2
    },
-   "posicaoFila": 173
+   "posicaoFila": 197
   },
   {
    "area": "joelho",
@@ -5322,7 +5368,7 @@
    "comentarios": {
     "basico": 2
    },
-   "posicaoFila": 174
+   "posicaoFila": 198
   },
   {
    "area": "joelho",
@@ -5400,7 +5446,7 @@
    "comentarios": {
     "basico": 2
    },
-   "posicaoFila": 175
+   "posicaoFila": 199
   },
   {
    "area": "osteometabolicas",
@@ -5419,7 +5465,7 @@
     "basico": 1,
     "incerto": 1
    },
-   "posicaoFila": 176
+   "posicaoFila": 200
   },
   {
    "area": "tumores",
@@ -5437,7 +5483,7 @@
    "comentarios": {
     "basico": 2
    },
-   "posicaoFila": 177
+   "posicaoFila": 201
   },
   {
    "area": "coluna",
@@ -5455,7 +5501,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 178
+   "posicaoFila": 202
   },
   {
    "area": "conceitos-basicos",
@@ -5473,7 +5519,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 179
+   "posicaoFila": 203
   },
   {
    "area": "mao",
@@ -5486,11 +5532,12 @@
    "taro": 1,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "fora (Mão, decisão do Tales)",
+   "situacao": "sem resumo",
    "resumos": [],
    "comentarios": {
-    "protegido-mao": 1
-   }
+    "basico": 1
+   },
+   "posicaoFila": 204
   },
   {
    "area": "ombro-cotovelo",
@@ -5508,7 +5555,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 180
+   "posicaoFila": 205
   },
   {
    "area": "osteometabolicas",
@@ -5526,7 +5573,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 181
+   "posicaoFila": 206
   },
   {
    "area": "pe-tornozelo",
@@ -5544,7 +5591,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 182
+   "posicaoFila": 207
   },
   {
    "area": "pe-tornozelo",
@@ -5562,7 +5609,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 183
+   "posicaoFila": 208
   },
   {
    "area": "pediatria",
@@ -5580,7 +5627,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 184
+   "posicaoFila": 209
   },
   {
    "area": "pediatria",
@@ -5598,7 +5645,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 185
+   "posicaoFila": 210
   },
   {
    "area": "quadril",
@@ -5616,7 +5663,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 186
+   "posicaoFila": 211
   },
   {
    "area": "quadril",
@@ -5634,7 +5681,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 187
+   "posicaoFila": 212
   },
   {
    "area": "quadril",
@@ -5652,7 +5699,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 188
+   "posicaoFila": 213
   },
   {
    "area": "trauma",
@@ -5670,7 +5717,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 189
+   "posicaoFila": 214
   },
   {
    "area": "tumores",
@@ -5688,7 +5735,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 190
+   "posicaoFila": 215
   }
  ]
 }
