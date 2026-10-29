@@ -9,8 +9,9 @@ comentários ou resumos. Rode de novo quando o acervo, a Biblioteca ou a contage
 Cobertura de um assunto do ranking (src/dados/incidencia.json, que já conta só questões de prova,
 sem cópias, anuladas ou autorais): coberto quando algum resumo declara o subtema ou quando os resumos
 citam como central ou relacionada pelo menos metade das questões oficiais dele; parcial de 30% a 50%;
-sem resumo abaixo disso. A área Mão e punho fica de fora (trabalho com o Green, docs/mao/PROTOCOLO.md)
-até decisão do Tales.
+sem resumo abaixo disso. Na área Mão e punho entram só as questões de provas gerais (TEOT, TARO e as
+outras fora de PROVAS_MAO; Tales, 29/10/2026); as provas de acesso e título de Cirurgia da Mão ficam
+protegidas (trabalho com o Green, docs/mao/PROTOCOLO.md) e não contam na posição.
 
 Estado de cada comentário de questão oficial do assunto:
   protegido-mao   prova de acesso ou título de Cirurgia da Mão, ou tema mao
@@ -34,7 +35,6 @@ SAIDA_JSON = RAIZ / "docs/biblioteca/fila-editorial.json"
 # Provas de acesso ou título de Cirurgia da Mão (nomes como estão no acervo).
 PROVAS_MAO = {"SBCM", "SIMÃO", "ENARE Cirurgia da Mão", "USP-SP", "UFG", "PUC-SP", "INTO", "FMRP-USP",
               "IAUPE", "Einstein", "UERJ"}
-AREAS_FORA = {"mao"}
 
 
 def ler(p: Path):
@@ -53,7 +53,7 @@ def tamanho(c: dict) -> tuple[int, int]:
 
 
 def estado_comentario(tema: str, q: dict, c: dict | None, cat: dict) -> str:
-    if tema == "mao" or q.get("prova") in PROVAS_MAO:
+    if q.get("prova") in PROVAS_MAO:
         return "protegido-mao"
     if not c:
         return "sem-comentario"
@@ -85,13 +85,12 @@ def main() -> int:
     for a in inc["areas"]:
         for f in a["focos"]:
             sub = f.get("noAcervo") or f["nome"]
-            ids = [i for i, (t, q) in qs.items() if t == a["slug"] and sub in q.get("subtemas", []) and oficial(q)]
+            ids = [i for i, (t, q) in qs.items() if t == a["slug"] and sub in q.get("subtemas", []) and oficial(q)
+                   and q.get("prova") not in PROVAS_MAO]
             citadas = [i for i in ids if any(x["p"] in ("central", "relacionada") for x in mapa.get(i, []))]
             cob = len(citadas) / len(ids) if ids else 0.0
             resumos = sorted({x["c"] for i in citadas for x in mapa.get(i, []) if x["p"] in ("central", "relacionada")})
-            if a["id"] in AREAS_FORA:
-                situacao = "fora (Mão, decisão do Tales)"
-            elif (a["slug"], sub) in declarados or cob >= 0.5:
+            if (a["slug"], sub) in declarados or cob >= 0.5:
                 situacao = "coberto"
             elif cob >= 0.3:
                 situacao = "parcial"
@@ -99,7 +98,9 @@ def main() -> int:
                 situacao = "sem resumo"
             estados = Counter(estado_comentario(qs[i][0], qs[i][1], cs.get(i), cat.get(i, {})) for i in ids)
             linhas.append({
-                "area": a["id"], "areaNome": a["nome"], "assunto": f["nome"], "subtema": sub, "n": f.get("n", len(ids)),
+                "area": a["id"], "areaNome": a["nome"], "assunto": f["nome"], "subtema": sub,
+                # Na Mão, a contagem geral inclui as provas protegidas: a posição usa só as provas gerais.
+                "n": len(ids) if a["slug"] == "mao" else f.get("n", len(ids)),
                 "oficiais": len(ids), "teot": sum(qs[i][1]["prova"] == "TEOT" for i in ids),
                 "taro": sum(qs[i][1]["prova"] == "TARO" for i in ids), "citadas": len(citadas), "cobertura": round(cob, 2),
                 "situacao": situacao, "resumos": resumos[:6], "comentarios": dict(sorted(estados.items())),
@@ -117,12 +118,12 @@ def main() -> int:
         f"Gerada por `scripts/biblioteca/fila_editorial.py` em {date.today().strftime('%d/%m/%Y')}. Não editar à mão: rodar o script de novo.",
         "A ordem é a da contagem de questões de prova de `src/dados/incidencia.json` (TEOT, TARO, CET-PR, TECOC e ENARE, sem cópias, anuladas ou autorais).",
         "Coberto: algum resumo declara o subtema ou os resumos citam pelo menos metade das questões oficiais. Parcial: 30% a 50%.",
-        "A área Mão e punho fica de fora até decisão do Tales (trabalho com o Green).",
+        "Na área Mão e punho contam só as provas gerais (TEOT, TARO e outras); as provas de acesso e título de Cirurgia da Mão ficam protegidas.",
         "",
         "Comentários: `preservar` (revisão médica, proveniência de resumo ou já em miniaula), `basico` (elegível depois do resumo novo),",
         "`incerto` (não mexer sem olhar), `sem-comentario`, `protegido-mao`.",
         "",
-        f"Assuntos no ranking: {len(linhas)}; cobertos {contagem['coberto']}; parciais {contagem['parcial']}; sem resumo {contagem['sem resumo']}; fora {sum(v for k, v in contagem.items() if k.startswith('fora'))}.",
+        f"Assuntos no ranking: {len(linhas)}; cobertos {contagem['coberto']}; parciais {contagem['parcial']}; sem resumo {contagem['sem resumo']}.",
         "",
         "## Fila (sem resumo ou parcial)",
         "",
