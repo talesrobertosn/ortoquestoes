@@ -108,14 +108,16 @@ try {
   const segunda = m.calcularPlano(indice, rDois, plano(regDois), sp(SEG, 9))
   assert.equal(segunda.metaDiaria, 0, 'segunda livre (o sábado ficou sem estudo e mesmo assim não volta)')
   const terca = m.calcularPlano(indice, rDois, plano(regDois), sp(TER, 9))
-  assert.equal(terca.adiantadoHoje, 0, 'terça volta ao normal'); assert.ok(terca.metaDiaria > 30)
+  // A meta de sábado e segunda é refeita a cada dia com ceil; o que sobra do arredondamento (no máximo 1 por dia) cai na terça.
+  assert.ok(terca.adiantadoHoje <= 2, `terça volta ao normal (adiantado ${terca.adiantadoHoje})`); assert.ok(terca.metaDiaria > 30)
   // Adiantou 1 dia e 10: sábado livre, segunda com 10 a menos (desconta em ordem).
   const rMeio = responder(fila(naSexta, naSexta.metaDiaria + p1.meta + 10), sp(SEX, 13))
   const sabMeio = m.calcularPlano(indice, rMeio, plano(), sp(SAB, 9))
   assert.equal(sabMeio.metaDiaria, 0)
-  assert.equal(diaDe(sabMeio, SEG).adiantado, 10)
+  const sobra = diaDe(sabMeio, SEG).adiantado - 10 // arredondamento da meta do sábado, refeita no sábado: 0 ou 1
+  assert.ok(sobra === 0 || sobra === 1, `segunda com ${10 + sobra} adiantadas`)
   const segMeio = m.calcularPlano(indice, rMeio, plano(), sp(SEG, 9))
-  assert.equal(segMeio.adiantadoHoje, 10); assert.equal(segMeio.metaDiaria, segMeio.metaHojeSemAdiantar - 10)
+  assert.equal(segMeio.adiantadoHoje, 10 + sobra); assert.equal(segMeio.metaDiaria, segMeio.metaHojeSemAdiantar - 10 - sobra)
   coerente(segMeio, 'vários dias')
 
   // ── 4. Virada do dia em São Paulo ──

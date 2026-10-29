@@ -266,6 +266,8 @@ def livro_curto(capitulo: dict) -> str:
         return "Rockwood infantil"
     if "Rockwood" in livro:
         return "Rockwood adulto"
+    if "Netter" in livro:
+        return "Netter"
     return livro
 
 

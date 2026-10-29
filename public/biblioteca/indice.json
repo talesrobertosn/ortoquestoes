@@ -2,6 +2,133 @@
  "geradoEm": "2026-10-29",
  "capitulos": [
   {
+   "id": "netter-anatomia-mao-punho-antebraco",
+   "versao": 1,
+   "titulo": "Anatomia da mão, do punho e do antebraço",
+   "especialidade": "mao",
+   "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
+   "edicao": "2ª edição",
+   "capitulo": "Capítulo 5 · Antebraço e Capítulo 6 · Mão",
+   "resumo": "Mediano e interósseo anterior (FPD 2 e 3, FLP, pronador quadrado), radial, interósseo posterior e FROHSE, ulnar e GUYON; compartimentos extensores I a VI e compartimento móvel; lumbricais (1 e 2 mediano e unipenados, 3 e 4 ulnar e bipenados), DAB e PAD; túnel do carpo (nove tendões, ramo recorrente 50/30/20), ligamentos do punho e espaço de POIRIER; arcos palmares (superficial ulnar, profundo radial, principal do polegar), escafoide 75% dorsal; aparelho extensor, polias A2 e A4, vínculos, efeito came; espaços tenar, mediopalmar e de PARONA.",
+   "acesso": "gratis",
+   "minutos": 12,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-nervos-do-antebraco-e-da-mao",
+     "titulo": "Os nervos do antebraço e da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "compartimentos-extensores-e-os-compartimentos-do",
+     "titulo": "Compartimentos extensores e os compartimentos do antebraço",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-intrinsecos-lumbricais-e-interosseos",
+     "titulo": "Os intrínsecos: lumbricais e interósseos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tunel-do-carpo-canal-de-guyon-e-os-ligamentos-do",
+     "titulo": "Túnel do carpo, canal de GUYON e os ligamentos do punho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-vasos-arcos-palmares-e-a-arteria-radial",
+     "titulo": "Os vasos: arcos palmares e a artéria radial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "aparelho-extensor-polias-e-as-articulacoes-dos-d",
+     "titulo": "Aparelho extensor, polias e as articulações dos dedos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-espacos-da-mao-e-a-ponta-do-dedo",
+     "titulo": "Os espaços da mão e a ponta do dedo",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0497",
+    "mao-0344",
+    "mao-0170",
+    "mao-0165",
+    "mao-0403",
+    "mao-0315",
+    "mao-0533",
+    "mao-0535",
+    "mao-0627",
+    "mao-0394",
+    "mao-0104",
+    "mao-0027",
+    "mao-0049",
+    "mao-0410",
+    "mao-0094",
+    "mao-0171",
+    "mao-0570",
+    "mao-0084",
+    "mao-0549",
+    "mao-0630",
+    "mao-0313",
+    "mao-0417",
+    "mao-0166",
+    "mao-0442",
+    "mao-0169",
+    "mao-0540",
+    "mao-0181",
+    "mao-0577",
+    "mao-0238",
+    "mao-0342",
+    "mao-0312",
+    "mao-0634",
+    "mao-0314",
+    "mao-0632",
+    "mao-0319",
+    "mao-0420",
+    "mao-0518",
+    "mao-0255",
+    "mao-0109",
+    "mao-0066",
+    "mao-0320",
+    "mao-0598",
+    "mao-0652",
+    "mao-0318",
+    "mao-0127",
+    "mao-0225"
+   ],
+   "treino": [
+    "mao-2561",
+    "mao-2562",
+    "mao-2566",
+    "mao-2571",
+    "mao-2559",
+    "mao-2563",
+    "mao-2560",
+    "mao-2565",
+    "mao-2567",
+    "mao-2564",
+    "mao-2572",
+    "mao-2568",
+    "mao-2569",
+    "mao-2573",
+    "mao-2570"
+   ],
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ]
+  },
+  {
    "id": "rockwood10-17-sindrome-compartimental",
    "versao": 1,
    "titulo": "Síndrome compartimental aguda",
