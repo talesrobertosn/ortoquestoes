@@ -1,0 +1,500 @@
+{
+  "base": "c9b99c7f5b7982e282bedbf4b19124af7bb6410d",
+  "lotes": {
+    "242": {
+      "revisadas": [
+        "mao-1300",
+        "mao-1216",
+        "trauma-0959"
+      ],
+      "lacunas": [
+        "mao-1056",
+        "mao-1541",
+        "pediatria-0918",
+        "trauma-1011",
+        "pediatria-0014",
+        "pediatria-0061",
+        "pediatria-0147"
+      ]
+    },
+    "243": {
+      "revisadas": [
+        "trauma-0989"
+      ],
+      "lacunas": [
+        "trauma-0094",
+        "trauma-0310",
+        "trauma-1025",
+        "trauma-1018",
+        "trauma-1003",
+        "mao-0768",
+        "trauma-0269",
+        "ombro-cotovelo-0358",
+        "trauma-0026"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwoodcriancas10-08-mao-carpo": {
+      "markdownSha256Bytes": "de9d1d385460ce8a0275d4026edb9feafcfe44fdc7d5cfc9bfc4be382ff56eae",
+      "linhas": 90,
+      "compiladoSha256Bytes": "1c7b39c2868553c7ebf53656eec98dfd24285bdb5f73f1f092529a2d48c74422"
+    },
+    "rockwoodcriancas10-06-sindrome-compartimental": {
+      "markdownSha256Bytes": "90d73395ff8f3d799831eaee44b819a484cfb38d66f9c6edf3db9df94af0c4cc",
+      "linhas": 100,
+      "compiladoSha256Bytes": "738c60184cbfc2edd0035b227036d885a87ddfaabb53ccee4857ae57aab9adc5"
+    },
+    "rockwood10-17-sindrome-compartimental": {
+      "markdownSha256Bytes": "107ddaf36dbfdf0b0657c7a053055ded2a93270e959dbd8bb3eb5c8c80c0ad92",
+      "linhas": 381,
+      "compiladoSha256Bytes": "54a893206b40a9e69e37cff835989dee0fd725c0ac466ae19aa774b8a3be962f"
+    },
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial": {
+      "markdownSha256Bytes": "0f877a7dca7188c5c98cb9578a20bcd4f3a6e30253d9d49c1e53201441088ced",
+      "linhas": 516,
+      "compiladoSha256Bytes": "52562ea6a0a24ab1045dfd9c5c137aee69854a02c0a17acae7a8ea10c3151770"
+    },
+    "rockwoodcriancas10-21-coluna-cervical": {
+      "markdownSha256Bytes": "980864b664c75234f6579503daa0c2c46b1dde22647327185ac770151244f8d1",
+      "linhas": 118,
+      "compiladoSha256Bytes": "1f700e7cb63d84958d702e701917c5651d18ae9e49306c94ab329f372a61b90b"
+    }
+  },
+  "leitura": "9-15integralmente relido516linhas(1–175,176–350,351–516).08/06/17/21já integralmente lidos,hashes estáveis e trechos necessários relidos.27tíbiaproximal integralmente lido para delimitar0918,com51–122recuperado após truncamento da saída combinada. Busca parcial9-08para timing daRM/43% não substitui prova clínica;9-16apenas trecho consultado para fronteira pediátrica0310,não alegar releitura integral nesta unidade. Notas questoes não são prova independente.",
+  "referenciasHistoricas": {
+    "mao-1300": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Simultaneous juxta-epiphyseal proximal phalanx fracture with flexor tendon entrapment in a child: a case report and review of literature. https://pubmed.ncbi.nlm.nih.gov/22561910/"
+      ],
+      "comentarioAnteriorSha256": "73c733b26562b095ad47cd2cf817083a6a515018ad768949dd2349172b5ba0fc"
+    },
+    "mao-1216": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Ouellette EA, Kelly R. Compartment syndromes of the hand. J Bone Joint Surg Am. 1996;78(10):1515-22.",
+        "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de síndrome compartimental."
+      ],
+      "comentarioAnteriorSha256": "dabcf6c9f3496ac05c4eab203c6574eeb0af38ab8dc9ffc73126fb6c21d82850"
+    },
+    "trauma-0959": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": null,
+      "comentarioAnteriorSha256": "bc14d09d9108f740037d1014d1017a9502f894a0e2a487a6754bc6c794c2b611"
+    },
+    "mao-1056": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Waters PM, Skaggs DL, Flynn JM. Rockwood and Wilkins' Fractures in Children. 9ª ed. Wolters Kluwer; 2019.",
+        "Gholson JJ, Bae DS, Zurakowski D, Waters PM. Scaphoid fractures in children and adolescents: contemporary injury patterns and factors influencing time to union. J Bone Joint Surg Am. 2011;93(13):1210-9."
+      ],
+      "comentarioAnteriorSha256": "f5a72d82abc5f6c7f3d03573bb22882f495c7ae5b67ae56df2ee6dd79d81f366"
+    },
+    "mao-1541": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "The Treatment of Closed Finger and Metacarpal Fractures. https://pubmed.ncbi.nlm.nih.gov/37963039/"
+      ],
+      "comentarioAnteriorSha256": "1128d5518e75628eb283dc3f784cecaf10f213dcc8365f9ffe9cff25b945a02a"
+    },
+    "pediatria-0918": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Compartment syndrome complicating tibial tubercle avulsion. https://pubmed.ncbi.nlm.nih.gov/8403649/",
+        "Outcomes and Complications of Tibial Tubercle Fractures in Pediatric Patients: A Systematic Review of the Literature. https://pubmed.ncbi.nlm.nih.gov/25887827/",
+        "Epidemiology of Acute Compartment Syndrome After Pediatric Tibial Tubercle and Tibial Shaft Fractures. https://pubmed.ncbi.nlm.nih.gov/39482931/"
+      ],
+      "comentarioAnteriorSha256": "a6317452aa2e604dc1aae6866d7ba09e8deceb31739dd06ebe816604fdf785da"
+    },
+    "trauma-1011": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": null,
+      "comentarioAnteriorSha256": "23e58bf3a43f7755fb3cddce1d4ea4f1bfc8f85805298ac723427cecf6dfa900"
+    },
+    "pediatria-0014": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "0ba35ca8851511dd3a07fec3968852de8b6616580cfe872a30953a3d3a3bfde2"
+    },
+    "pediatria-0061": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "086817feb7c252b27e9823f1f9a798d61cead388944f68a30ce454b44cc246f1"
+    },
+    "pediatria-0147": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "https://posna.org/physician-education/study-guide/congenital-radial-head-dislocation",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de afecções congênitas do membro superior."
+      ],
+      "comentarioAnteriorSha256": "d71a87e10e560f7fa8a52b5ac36232e3141075088d14d0d0c315e5ebfc19bef1"
+    },
+    "trauma-0989": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn), Cap. 21"
+      ],
+      "comentarioAnteriorSha256": "ed2de5da40f9237ef99e6ca6086b429cbf7cca0a7d1d24a0dcab8b5fe7c646de"
+    },
+    "trauma-0094": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": null,
+      "comentarioAnteriorSha256": "092d88e66c3fdeebdd3244707214179b8f08d52086111966c381c175f1e841e4"
+    },
+    "trauma-0310": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": null,
+      "comentarioAnteriorSha256": "9d22a4e05986fee323cf62ba378800438ad60a0f707fca0866d3ec6081b365f0"
+    },
+    "trauma-1025": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn), Cap. 12"
+      ],
+      "comentarioAnteriorSha256": "89646a39e8f856cb4255f0891c01ea07ffe5c4a63da1f0d2db4da633783f44b2"
+    },
+    "trauma-1018": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 52, p. 2199.",
+        "Dejour H, Walch G, Nove-Josserand L, Guier C. Factors of patellar instability: an anatomic radiographic study. Knee Surg Sports Traumatol Arthrosc. 1994;2(1):19-26."
+      ],
+      "comentarioAnteriorSha256": "22cbe630e11b7c22490021fb7f4a8ac31bcfba9477a1a42e7ec0da1bfd8f4e74"
+    },
+    "trauma-1003": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": null,
+      "comentarioAnteriorSha256": "30b749eeedb1db157bae25469e02f9f64fd8b02e3b3fb408a5ec7ff27db8f835"
+    },
+    "mao-0768": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am. 1963;45:587-622.",
+        "Waters PM, Skaggs DL, Flynn JM. Rockwood and Wilkins' Fractures in Children. 9ª ed. Wolters Kluwer; 2019."
+      ],
+      "comentarioAnteriorSha256": "b62fc3fc04891e58297e071df1a97b33e7363bd42fff637f809e2afa098f82e8"
+    },
+    "trauma-0269": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": null,
+      "comentarioAnteriorSha256": "4f4f2d5f817f2edce1ffe2c5781206ec96cf72128e4018b9eded226e73b1ec27"
+    },
+    "ombro-cotovelo-0358": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": null,
+      "comentarioAnteriorSha256": "8de358947c2ff0c5cbfda6b0b3d4ffaeef62785842740b7bb744b3a3e2bbe36d"
+    },
+    "trauma-0026": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": null,
+      "comentarioAnteriorSha256": "49e22f53975665b1a08c4891acc162994ba64c5d5f5a7e151213d3de7df56d57"
+    }
+  },
+  "lacunas": [
+    {
+      "id": "mao-1056",
+      "questaoSha256": "a97f6e0139992a88e0a62b270d01f5ab11874bd6513baa30a0ca7a182923f94d",
+      "comentarioAnteriorSha256": "f5a72d82abc5f6c7f3d03573bb22882f495c7ae5b67ae56df2ee6dd79d81f366",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        },
+        {
+          "id": "rockwood10-44-carpo",
+          "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo08novo permite imobilizar/rever ouRMna suspeita de escafoide,mas não prova a proibição/recomendação de NÃO FAZER RM IMEDIATA em todo trauma de punho daC. O9-08de rádio distal também declara não discutir esse timing;3–13%de associadas não substitui a conduta. Falta protocolo independente de imagem imediata da população inteira. C oficial preservada,sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Sem base para refutar todas as alternativas: o capítulo 8 não discute a ressonância imediata nem a fratura do polo proximal do escafoide em criança pequena."
+    },
+    {
+      "id": "mao-1541",
+      "questaoSha256": "324feb994d17e10f8b44cfc0c092788e0d5d3d23f086b9385273440ea7d7cbcf",
+      "comentarioAnteriorSha256": "1128d5518e75628eb283dc3f784cecaf10f213dcc8365f9ffe9cff25b945a02a",
+      "resumosConsultados": [
+        {
+          "id": "rockwood10-45-fraturas-mao",
+          "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231"
+        },
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "08novo informa limites PEDIÁTRICOS10–20°nos raios centrais,não10–15°no COLO ADULTO daC.45dá10°na DIÁFISE,não esse intervalo cervical;enunciado não define criança. Falta limiar adulto específico e posição deIFnaJahss daB. Não transferir números pediátricos ou diafisários;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "A pergunta é sobre colo de metacarpos centrais e o gabarito usa 10 a 15 graus. O resumo fornece 10 graus para diáfise do segundo e terceiro, mas não número específico para o colo; não transferir automaticamente limite diafisário ao colo. Conferir a fonte do valor do enunciado."
+    },
+    {
+      "id": "pediatria-0918",
+      "questaoSha256": "ac27cd307331a264b30a8fb44d020fe8906b588aa27f9402502b8d95ece91f5f",
+      "comentarioAnteriorSha256": "a6317452aa2e604dc1aae6866d7ba09e8deceb31739dd06ebe816604fdf785da",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-27-fise-proximal-tibia",
+          "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "27novo descreve recorrente tibial anterior e risco compartimental,mas a revisão de336fraturas encontrou irritação/material56%das complicações e0%compartimental,SEM estratificar o grupo REDUÇÃO FECHADA+FIXAÇÃO PERCUTÂNEA da pergunta. Isso não prova o ranking Cnesse tratamento nem autoriza aplicar a taxa geral diretamente. Falta série/protocolo específico;C oficial intacta,sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "C oficial pede a complicação mais comum APÓS redução fechada e fixação percutânea da tuberosidade tibial na criança. O resumo17 ensina síndrome e risco de fraturas da tíbia em geral, mas não compara pseudartrose, viciosa, síndrome compartimental e Osgood-Schlatter nessa lesão e nesse tratamento. Falta fonte específica de tuberosidade pediátrica que separe complicação mais temida, lesão associada e complicação mais frequente. C/comentário preservados."
+    },
+    {
+      "id": "trauma-1011",
+      "questaoSha256": "959f0a94cce2091b69fe8ecb8426f72fddd6064ed1a4db94503c77d6934289c0",
+      "comentarioAnteriorSha256": "23e58bf3a43f7755fb3cddce1d4ea4f1bfc8f85805298ac723427cecf6dfa900",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-24-quadril",
+          "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4"
+        },
+        {
+          "id": "rockwood10-24-fraturas-estresse",
+          "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "24infantilnovo sustenta compressão corticalINFERIOR sem carga e tensãoSUPERIOR instável,mas não descreve COLAPSO EM VALGO daDnem rankingCOXA VALGA naA. O limiar qualquerVAROnão prova a cinemática de toda compressão. Falta descrição independente completa para comparar o caso adolescente;E preservada sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "A fonte sustenta a proteção da compressão e o alto risco da tensão, mas não descreve como julgar o colapso em valgo da alternativa D nem a epidemiologia de complicações no adolescente de 13 anos. Falta fonte específica pediátrica para conferir todas as alternativas, preservando a E oficial."
+    },
+    {
+      "id": "pediatria-0014",
+      "questaoSha256": "2a99c6c772876ae6257aa1dcfab1b564fefd1580a2ff7b0ea4851e4a3e8f8a4c",
+      "comentarioAnteriorSha256": "0ba35ca8851511dd3a07fec3968852de8b6616580cfe872a30953a3d3a3bfde2",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        },
+        {
+          "id": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+          "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "12novo informa às vezes BILATERAL,não MAIORIA,nem frequência de OUTRAS MALFORMAÇÕES na luxação congênita isolada da cabeça.15cita síndromes na luxação congênita do COTOVELO INTEIRO e explicita a limitação de seu escopo. Não combinar populações para inferir maioria bilateral e associada;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Luxação congênita da cabeça do rádio (lateralidade e associações) não é tratada nos resumos publicados."
+    },
+    {
+      "id": "pediatria-0061",
+      "questaoSha256": "65978eace2fd552241797983d59c113eb39285ddecb42aca643cb14959c243ad",
+      "comentarioAnteriorSha256": "086817feb7c252b27e9823f1f9a798d61cead388944f68a30ce454b44cc246f1",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        },
+        {
+          "id": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+          "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "12novo confirma direçãoPOSTERIOR,mas não demonstra perda preferencial deEXTENSÃO versusFLEXÃO na congênita isolada.15discute perdas na luxação traumática do cotovelo inteiro,outra condição. Falta exame funcional congênito independente para separarBdeD;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Luxação congênita da cabeça do rádio (direção e limitação de movimento) não é tratada nos resumos publicados."
+    },
+    {
+      "id": "pediatria-0147",
+      "questaoSha256": "1d1f340a19f099ab4287ead10f6df66ff69458ee4bb4be272387ef19e4583547",
+      "comentarioAnteriorSha256": "d71a87e10e560f7fa8a52b5ac36232e3141075088d14d0d0c315e5ebfc19bef1",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        },
+        {
+          "id": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+          "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "12novo diferencia morfologia congênita de traumática e indicação de reconstrução noMonteggiaCRÔNICO,mas não define manejo inicial CONSERVADOR da luxação CONGÊNITA ISOLADA na criança.15declara não fornecer essa conduta. Falta história natural/algoritmo independente,não usar contraindicação de reconstrução traumática como prova de observação congênita. Sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Tratamento da luxação congênita da cabeça do rádio não é tratado nos resumos publicados."
+    },
+    {
+      "id": "trauma-0094",
+      "questaoSha256": "b3a0dffbf2470652e10915534f84f42c9e915599ede06f441ccfddfa4fe927e4",
+      "comentarioAnteriorSha256": "092d88e66c3fdeebdd3244707214179b8f08d52086111966c381c175f1e841e4",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-22-coluna-toracolombar",
+          "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "22novo propõe ESTIRAMENTO e mecanismoVASCULAR naSCIWORA,mas não compara frequência de FLEXÃO+DISTRAÇÃO versus flexão/rotação e compressão nas combinações da pergunta. A nota contextual cita a banca,não é prova biomecânica independente. Falta mecanismo predominante completo;B oficial mantida sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Mecanismo da SCIWORA não é tratado nos resumos de coluna publicados."
+    },
+    {
+      "id": "trauma-0310",
+      "questaoSha256": "0f7ebd6a35ca717716d5f3d4453a6ed221ed3a7851c90e1748e07f5921615665",
+      "comentarioAnteriorSha256": "9d22a4e05986fee323cf62ba378800438ad60a0f707fca0866d3ec6081b365f0",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas9-16-condilo-lateral",
+          "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Trecho independente pediátrico9-16nomeia OSTEONECROSE como complicação principal quando o fragmento é mantido e admite perda de movimento com ou sem cirurgia. A oficialAgenérica(sem idade/tratamento) pergunta principal e marca amplitude. Falta comparação funcional/epidemiológica no escopo do enunciado para reconciliar a divergência;sem generalizar o capítulo pediátrico a todos os casos. Sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Complicações da fratura do capítulo umeral não aparecem nos resumos publicados (não há resumo de úmero distal do adulto)."
+    },
+    {
+      "id": "trauma-1025",
+      "questaoSha256": "012024bfb1838be42826c7d766b9fbd8891b5960b68005b96b1f1abc858059b6",
+      "comentarioAnteriorSha256": "89646a39e8f856cb4255f0891c01ea07ffe5c4a63da1f0d2db4da633783f44b2",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "12novo informaNIPno conjunto e mais nosI/III,e ULNAR noII,mas não ranqueia a FREQUÊNCIA de todos os nervos especificamente noBADOII. A oficialD(NIP)não deve ser sustentada pelo percentual radial global nem substituída automaticamente porAcom base em associação. Falta distribuição específica por tipo/ramo;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Nervo mais acometido na Monteggia tipo II da criança não é informado nos resumos 42 e Wilkins 9 (que só tratam do interósseo posterior na cirurgia e no exame)."
+    },
+    {
+      "id": "trauma-1018",
+      "questaoSha256": "0bbed1a0f2fd6763399ec89846f53f435a28fcc163f8d496308e82157f0c19bf",
+      "comentarioAnteriorSha256": "22cbe630e11b7c22490021fb7f4a8ac31bcfba9477a1a42e7ec0da1bfd8f4e74",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "28novo cita TA-GT>16–20mm e apófise fechada para osteotomia,mas não separa o limiar15mm por TRÓCLEA NORMAL versusDISPLÁSICA,qualificador que distingueA/C. Não transferir intervalo geral infantil ao subgrupo adulto ou inferir corte menor na displasia. Falta algoritmo estratificado independente;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "O capítulo 60 cita o TT-TG aumentado só como fator predisponente da luxação; os cortes para osteotomia da tuberosidade (15 ou 20 mm, tróclea normal ou displásica) não estão no resumo."
+    },
+    {
+      "id": "trauma-1003",
+      "questaoSha256": "1ccab8e415be75ecea77a89fe675011fcd66750cd0a01094f9dfd0e33c594cc9",
+      "comentarioAnteriorSha256": "30b749eeedb1db157bae25469e02f9f64fd8b02e3b3fb408a5ec7ff27db8f835",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-28-joelho-intra-articular",
+          "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "28novo lista anteversão,ânguloQ e valgo como risco de instabilidade patelar,mas não descreve direção da VARIAÇÃO DOQpelas combinações de versão femoral/rotação distal/torção tibial da mulher adulta. Lista de fatores não prova a relação tridimensional de cada alternativa. Falta biomecânica independente completa;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Ângulo Q e influência da versão femoral e da torção tibial não aparecem no resumo de colo do fêmur nem nos demais resumos publicados."
+    },
+    {
+      "id": "mao-0768",
+      "questaoSha256": "8b603e14b5becdbdbd0034a4a1b2d2eb9e53da1a4398aacb67d4ca7003aee74c",
+      "comentarioAnteriorSha256": "b62fc3fc04891e58297e071df1a97b33e7363bd42fff637f809e2afa098f82e8",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-08-mao-carpo",
+          "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "08novo explicaSHIIIna avulsão dosCOLATERAISmetacarpofalângicos,mas não informa GRANDE MAIORIA das fraturas da CABEÇA DO METACARPO por tipoI–V. Inserção ligamentar/avulsão falângica não prova distribuição de fraturas metacarpais da cabeça. Falta epidemiologia fisária por localização;C preservada sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Padrão Salter-Harris das fraturas da cabeça do metacarpo na criança não aparece no resumo do capítulo 45 (fraturas e luxações da mão), que trata de trauma ósseo e ligamentar; falta a fonte da cirurgia da mão (Green) ou outro resumo."
+    },
+    {
+      "id": "trauma-0269",
+      "questaoSha256": "60db98fa8fcda3f434b2b804bbccdda89daf792a35e2d021693bbe785abe40cd",
+      "comentarioAnteriorSha256": "4f4f2d5f817f2edce1ffe2c5781206ec96cf72128e4018b9eded226e73b1ec27",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+          "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "11novo descreveTRÍCEPS e mecanismo das fraturas do olécrano,mas não define perda de EXTENSÃO ATIVA versusPASSIVA como teste de descontinuidade do APARELHO EXTENSOR. Não converter mecanismo em exame clínico completo nem usar dados da luvaPATELAR. Falta definição funcional independente;C preservada sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "O resumo do Rockwood cap. 40 (cotovelo) não descreve a lesão do aparelho extensor na fratura do olécrano nem o exame da extensão ativa. Precisa de fonte da seção de olécrano que trate do mecanismo extensor."
+    },
+    {
+      "id": "ombro-cotovelo-0358",
+      "questaoSha256": "8af434db4ae2d02211ba638ccfaaa005d0e95e472a9c01a72250766b7f93c6c4",
+      "comentarioAnteriorSha256": "8de358947c2ff0c5cbfda6b0b3d4ffaeef62785842740b7bb744b3a3e2bbe36d",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+          "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "9-15integralmente relido descreve a luxação inveterada e a tensão doBÍCEPS no mecanismo agudo,mas declara não desenvolver limitação da PRONAÇÃO crônica por esse músculo versus supinador/braquiorradial/extensorradial. Agudo não prova obstáculo crônico. Falta biomecânica independente do quadro inveterado;C preservada sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "O resumo do Rockwood cap. 40 (cotovelo) não trata da luxação inveterada nem do papel do bíceps na limitação da pronação. Precisa de fonte sobre luxação crônica do cotovelo."
+    },
+    {
+      "id": "trauma-0026",
+      "questaoSha256": "a1932ba1964fd10639b0f64685cd464d02b9028668d876ae10f9fd641f5bedda",
+      "comentarioAnteriorSha256": "49e22f53975665b1a08c4891acc162994ba64c5d5f5a7e151213d3de7df56d57",
+      "resumosConsultados": [
+        {
+          "id": "rockwood10-48-coluna-cervical",
+          "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+        },
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "21novo traz fratura pela sincondrose eHosalkar,não frequência1%doAnderson–D’AlonzoI;48apenas raridade doIisolado. Falta origem ligamentar+frequência exata para toda aA e comparação com18%;não fundir Hosalkarcom classificação adulta. Sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) diz apenas que o tipo I isolado é raríssimo; não traz o ligamento (alar) nem a frequência de 1% cobrados. Precisa da fonte com essas cifras."
+    }
+  ],
+  "provavel": {
+    "mao-1216": {
+      "letra": "B",
+      "gabaritoOficial": null,
+      "justificativa": "Única opção sustentada:início pelo túnel do carpo;10compartimentos,incisões2–3/4–5,e adutor integrante dos planos potencialmente liberados. Não atribuir resposta à banca."
+    }
+  },
+  "alertas": {
+    "trauma-0959": "C/ventral+flexão oficial preservada;fonte também permiteA/supino+flexão. Não ensinar exclusividade de decúbito.",
+    "trauma-0989": "HosalkarIIacima da sincondrose;IA/B/Cpelo foco,sufixos de magnitude não mudam o nível anatômico."
+  },
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 4,
+    "lacunasComentariosIntactos": 16,
+    "demaisBytesPreservados": true,
+    "figurasNosCasos": 0,
+    "ui": "4/4em390/1440:resposta,aula,alertas e links exatos,incluindo caso sem gabarito comprovavelB. Primeiro1216inspecionado visualmente.",
+    "fonteAlternativas": "As20questões e todas as alternativas foram lidas;3oficiais e1provável com resposta única. Nenhum motivo de criação inventado."
+  },
+  "reconciliacao625": {
+    "head": "e5122e776c5f138934d75270b911bf1806ec0077",
+    "merge": "c9b99c7f5b7982e282bedbf4b19124af7bb6410d",
+    "ci": 40800539839,
+    "pages": 40800753874,
+    "publicar": 123209035025,
+    "avulsosIntegrais": 847,
+    "resumosIntegrais": 52,
+    "figuras": 43,
+    "observacao": "Guarda de versão e deploy efetivo aprovados;status real da revisão registrado na prova625,sem aprovação presumida."
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 883,
+      "revisada": 1994
+    }
+  },
+  "triagemTecnicaLacunas": {
+    "fontesComHashAlterado": 0,
+    "lacunasSemEvidenciaEstruturadaUniforme": 480,
+    "observacao": "Essa triagem de hashes NÃO é revisão clínica nem valida cobertura. As480têm pendência no catálogo,mas precisam reavaliação individual priorizada;não etiquetar emmassa."
+  },
+  "continuidade": "Próxima244exportada localmente:coluna0009/0011/0049/0054/0076/0078/0082/0088/0155/0163. Enunciados e alternativas já lidos,sem aplicação;0054/0078exigem abrir figuras nesta passagem;0088anulada tem bloqueio do validador por gabarito mantido,não mudar o oficial para contornar. Resumo49tem619linhas,consulta de trechos iniciada;não alegar releitura integral atual. Prosseguir lacunas antigas com fontes atuais. Não declarar883lacunas como revisões concluídas."
+}

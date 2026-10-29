@@ -1,0 +1,134 @@
+{
+  "mao-1300": {
+    "questaoSha256": "ec1abcb6ce31ef04968d1e8e53c449d35f940d2e3b6ce99f0f4c1a46cb594cc5",
+    "comentarioAnteriorSha256": "73c733b26562b095ad47cd2cf817083a6a515018ad768949dd2349172b5ba0fc",
+    "comentario": {
+      "conceito": "A interposição de tecido mole cria um **obstáculo mecânico à redução**. O resumo orienta **redução aberta quando há irreducibilidade por periósteo ou tendão**, o que sustenta a alternativa A: expor e retirar o tecido do caminho, permitindo restabelecer a relação dos fragmentos (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nNa criança, a fise é mais fraca que o ligamento; por isso, uma lesão próxima da articulação pode separar a epífise em vez de produzir uma luxação ligamentar típica do adulto. O enunciado não define o grau de Salter–Harris e, para decidir a conduta, é suficiente reconhecer a irreducibilidade.\n\nA redução fechada é útil quando consegue recuperar o alinhamento. Quando o tecido está preso, porém, insistir em força ou tração não equivale a remover o bloqueio. A finalidade da abertura é resolver a causa da irreducibilidade, sem assumir um implante específico que a questão não informa.\n\n**Na prova:** distinguir desvio que pode ser corrigido de um bloqueio anatômico. O fragmento não deve ser aceito deslocado apenas porque a criança remodela; o resumo também ressalta que rotação não se corrige adequadamente e que o perfil verdadeiro importa na avaliação dos dedos.",
+      "correta": "Alternativa A. É a conduta descrita para a fratura irredutível por tecido interposto: abertura e liberação do obstáculo. A decisão responde à causa mecânica apresentada, sem transformar toda fratura fisária em indicação de cirurgia.",
+      "incorretas": {
+        "B": "Redução fechada e gesso podem servir a outros padrões, mas a interposição que impede a redução não desaparece por imobilizar. A opção não trata o obstáculo definido no enunciado.",
+        "C": "Tração gradual não é a solução indicada pelo resumo para periósteo ou tendão presos no foco irredutível. Aplicar mais tempo de força não substitui a liberação do tecido.",
+        "D": "Observação deixa sem correção a interposição e o desalinhamento que ela mantém. Remodelação não é justificativa para ignorar um bloqueio mecânico da redução."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Falanges; Anatomia, exame e remodelação; Como ler este capítulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-08-mao-carpo",
+        "titulo": "Fraturas e luxações da mão e do carpo na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+        "secoes": [
+          "Falanges",
+          "Anatomia, exame e remodelação",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "falanges-2573c6e7",
+          "anatomia-exame-e-remodelacao-06a7a2e4",
+          "como-ler-este-capitulo-d65b64a6"
+        ],
+        "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+        "trechosSha256": "b7d5e37358d27dc9ec799ce6d08bcf81c16b5afc77b280c233a29bd0ef7143ef"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1216": {
+    "questaoSha256": "2c2ca4f9fcf82fdd7e12364c22d751affecc137823fbaddbaef8a9f4c099d13f",
+    "comentarioAnteriorSha256": "dabcf6c9f3496ac05c4eab203c6574eeb0af38ab8dc9ffc73126fb6c21d82850",
+    "comentario": {
+      "conceito": "A resposta **provável é a alternativa B**: o resumo pediátrico orienta começar pela **liberação estendida do túnel do carpo**, seguida das demais liberações necessárias. Não há gabarito oficial no acervo; a resposta é identificada como provável porque é a única opção sustentada pelo conjunto anatômico e técnico consultado (Rockwood and Wilkins, 10ª edição, capítulo 6; complemento anatômico no Rockwood and Green, 10ª edição, capítulo 17).\n\nA mão tem **10 compartimentos musculares**: tenar, hipotenar, adutor do polegar, quatro interósseos dorsais e três palmares. Isso é diferente dos nove compartimentos descritos para o pé. A contagem precisa acompanhar a região, não ser decorada sem localizar as estruturas.\n\nO resumo descreve incisões dorsais entre **segundo–terceiro e quarto–quinto metacarpais**, além do primeiro espaço e das liberações tenar/hipotenar. Dedos tensos podem precisar de dermotomia médio-axial. Abrir o túnel do carpo é o começo do acesso, não uma garantia de que todos os planos da mão já foram descomprimidos.\n\n**Na prova:** avaliar cada compartimento e confirmar a descompressão do que está comprometido. O adutor é um compartimento reconhecido, não uma região proibida de liberação.",
+      "correta": "Alternativa B, provável. É a sequência inicial explicitamente indicada no resumo. A ausência de gabarito oficial permanece registrada; não se atribui a letra à banca.",
+      "incorretas": {
+        "A": "O número descrito para a mão é 10, incluindo o adutor e os sete interósseos. Nove é a contagem citada para o pé, outro segmento.",
+        "C": "A técnica descrita usa os intervalos segundo–terceiro e quarto–quinto, não uma única incisão entre terceiro e quarto. A opção não reproduz o acesso aos planos interósseos apresentado.",
+        "D": "O adutor do polegar integra os compartimentos da mão e não é excluído do princípio de descompressão dos planos acometidos. A proibição absoluta da opção não corresponde à anatomia e à liberação por compartimentos descritas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro superior e antebraço.",
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Os compartimentos de cada região."
+      ],
+      "conferido": false,
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+        "titulo": "Síndrome compartimental na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+        "secoes": [
+          "Membro superior e antebraço"
+        ],
+        "blocos": [
+          "membro-superior-e-antebraco-cc585328"
+        ],
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+        "trechosSha256": "a86a5b10d1b80869c2f056927c49191bab0b4095a33f444f17df2f55acafa929"
+      },
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-231bd2af"
+        ],
+        "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
+        "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0959": {
+    "questaoSha256": "5e710bdd500a257dc911d538e935c7bfe4ff4a0da1c94f5077ecef5df1114471",
+    "comentarioAnteriorSha256": "bc14d09d9108f740037d1014d1017a9502f894a0e2a487a6754bc6c794c2b611",
+    "comentario": {
+      "conceito": "A banca registra **decúbito ventral com cotovelo fletido**, alternativa C, para a manobra de **Parvin**. O resumo descreve a técnica de tração com o cotovelo perto de **90°**, mas permite execução **em supino ou prono**. Portanto, a flexão é o ponto comum; o decúbito ventral não é exclusivo na fonte (Rockwood and Wilkins, 9ª edição, capítulo 15).\n\nA técnica combina uma mão tracionando a face anterior do antebraço no eixo do úmero, outra força para distal e **contraforça por auxiliar ou lençol na axila**. O objetivo é vencer a tensão muscular e trazer o antebraço de trás para a frente, estabilizando depois em flexão.\n\nO capítulo recomenda corrigir o desvio medial/lateral antes da passagem para a frente e evitar **hiperextensão**: com o coronoide travado, ela aumenta a força sobre o braquial e favorece encarceramento do mediano, sobretudo com pronação. Analgesia e relaxamento adequados permitem reduzir com menos força.\n\n**Na prova:** conservar a alternativa C da oficial, mas reconhecer que a alternativa A também descreve uma posição permitida no resumo. A fonte não torna a questão unívoca pelo decúbito; as opções em extensão não correspondem à posição de Parvin apresentada.",
+      "correta": "Alternativa C é a registrada pela banca e combina prono com flexão, uma das posições permitidas. Há ressalva: o resumo também admite supino com flexão, como na alternativa A. A manutenção da letra oficial não significa excluir essa variante técnica.",
+      "incorretas": {
+        "A": "Supino com flexão também é permitido na tabela do resumo. Assim, esta opção tem apoio bibliográfico, embora não seja o gabarito registrado. O alerta explicita a falta de exclusividade do decúbito para não ensinar que supino seria uma posição errada por si só.",
+        "B": "O cotovelo em extensão não é a posição descrita para Parvin, que fica perto de 90°. O capítulo ainda alerta contra hiperextensão durante a redução pelo aumento de tensão anterior e risco neural.",
+        "D": "Prono é uma posição permitida, mas a extensão do cotovelo não reproduz a técnica. O componente de flexão é necessário para reconhecer a manobra descrita, independentemente de supino ou prono."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Seções: Redução e cuidados depois da redução."
+      ],
+      "conferido": false,
+      "alerta": "A banca marcou alternativa C (ventral e flexão). O resumo permite Parvin em supino ou prono com cotovelo fletido perto de 90°, portanto também sustenta alternativa A. A posição ventral não é exclusiva; gabarito oficial preservado."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+        "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+        "secoes": [
+          "Redução e cuidados depois da redução"
+        ],
+        "blocos": [
+          "reducao-e-cuidados-depois-da-reducao-04e55ad8",
+          "reducao-e-cuidados-depois-da-reducao-96944a11",
+          "reducao-e-cuidados-depois-da-reducao-a678fb7a",
+          "reducao-e-cuidados-depois-da-reducao-a84074e0",
+          "reducao-e-cuidados-depois-da-reducao-4da02e55",
+          "reducao-e-cuidados-depois-da-reducao-1bacffab"
+        ],
+        "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
+        "trechosSha256": "932738f1076c4d6d61e9df5545354c4e053052b57e0a086754d1b00eee2ce187"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

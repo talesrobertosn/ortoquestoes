@@ -1,0 +1,37 @@
+{
+  "trauma-0989": {
+    "questaoSha256": "1ee1b2e733048f2999ce07f151cc41bae35070f27682ce4edcddd20eebd9fed0",
+    "comentarioAnteriorSha256": "ed2de5da40f9237ef99e6ca6086b429cbf7cca0a7d1d24a0dcab8b5fe7c646de",
+    "comentario": {
+      "conceito": "Na classificação de **Hosalkar**, a fratura do odontoide **acima da sincondrose** é **tipo II**, alternativa D. O grupo **tipo I** passa pela própria sincondrose e se divide em IA, IB e IC; esses sufixos não mudam o nível do traço para acima dela (Rockwood and Wilkins, 10ª edição, capítulo 21).\n\nA **sincondrose dentocentral** é a ligação entre o dente e o corpo de C2 no esqueleto imaturo. O resumo situa seu fechamento em **7 a 9 anos** e descreve a fratura que passa por ela como **Salter–Harris I**. Esse último nome descreve o trajeto fisário; Hosalkar organiza o nível e as subdivisões da lesão do odontoide.\n\nNos subtipos de Hosalkar I, o resumo apresenta faixas de desvio: IA menor que 10%, IB entre 10% e 100% e IC acima de 100%. A questão não informa um percentual nem pede calculá-lo: o dado decisivo é o traço **acima** da ligação, que já o coloca no grupo II.\n\n**Na prova:** localizar primeiro o traço em relação à sincondrose, depois considerar um subtipo se ele a atravessar. Não escolher IA, IB ou IC só porque a lesão ocorreu na criança; o nível anatômico continua definindo o grupo.",
+      "correta": "Alternativa D. Tipo II é o traço acima da sincondrose. A informação de localização é suficiente e dispensa atribuir um grau de desvio que o enunciado não fornece.",
+      "incorretas": {
+        "A": "IA pertence às fraturas que passam pela sincondrose e representa a menor faixa de desvio descrita no grupo I. Não é a categoria de traço acima da ligação dentocentral.",
+        "B": "IB continua no grupo que atravessa a sincondrose; a faixa intermediária de desvio não muda o nível para acima dela. O enunciado descreve tipo II, não um subtipo I.",
+        "C": "IC é o maior desvio do grupo pela sincondrose. Maior deslocamento e traço acima são critérios diferentes: a letra C não transforma a fratura do grupo I em uma do grupo II."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: C1 e C2: atlas, odontoide e enforcado."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-21-coluna-cervical",
+        "titulo": "Lesões da coluna cervical na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+        "secoes": [
+          "C1 e C2: atlas, odontoide e enforcado"
+        ],
+        "blocos": [
+          "c1-e-c2-atlas-odontoide-e-enforcado-cc93063a"
+        ],
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+        "trechosSha256": "7c792aa680f2444beaa3922964c914273034d87d0385186362f42b67ec225f67"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

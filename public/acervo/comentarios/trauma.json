@@ -19903,15 +19903,47 @@
   "conferido": false
  },
  "trauma-0959": {
+  "conceito": "A banca registra **decúbito ventral com cotovelo fletido**, alternativa C, para a manobra de **Parvin**. O resumo descreve a técnica de tração com o cotovelo perto de **90°**, mas permite execução **em supino ou prono**. Portanto, a flexão é o ponto comum; o decúbito ventral não é exclusivo na fonte (Rockwood and Wilkins, 9ª edição, capítulo 15).\n\nA técnica combina uma mão tracionando a face anterior do antebraço no eixo do úmero, outra força para distal e **contraforça por auxiliar ou lençol na axila**. O objetivo é vencer a tensão muscular e trazer o antebraço de trás para a frente, estabilizando depois em flexão.\n\nO capítulo recomenda corrigir o desvio medial/lateral antes da passagem para a frente e evitar **hiperextensão**: com o coronoide travado, ela aumenta a força sobre o braquial e favorece encarceramento do mediano, sobretudo com pronação. Analgesia e relaxamento adequados permitem reduzir com menos força.\n\n**Na prova:** conservar a alternativa C da oficial, mas reconhecer que a alternativa A também descreve uma posição permitida no resumo. A fonte não torna a questão unívoca pelo decúbito; as opções em extensão não correspondem à posição de Parvin apresentada.",
+  "correta": "Alternativa C é a registrada pela banca e combina prono com flexão, uma das posições permitidas. Há ressalva: o resumo também admite supino com flexão, como na alternativa A. A manutenção da letra oficial não significa excluir essa variante técnica.",
   "incorretas": {
-   "A": "**Posição errada.** A manobra de Parvin é feita em decúbito ventral, e não dorsal.",
-   "B": "**Posição errada.** Além do decúbito dorsal, a extensão não é a posição da manobra.",
-   "D": "**Cotovelo errado.** O decúbito ventral está certo, mas o cotovelo fica fletido, com o antebraço pendente."
+   "A": "Supino com flexão também é permitido na tabela do resumo. Assim, esta opção tem apoio bibliográfico, embora não seja o gabarito registrado. O alerta explicita a falta de exclusividade do decúbito para não ensinar que supino seria uma posição errada por si só.",
+   "B": "O cotovelo em extensão não é a posição descrita para Parvin, que fica perto de 90°. O capítulo ainda alerta contra hiperextensão durante a redução pelo aumento de tensão anterior e risco neural.",
+   "D": "Prono é uma posição permitida, mas a extensão do cotovelo não reproduz a técnica. O componente de flexão é necessário para reconhecer a manobra descrita, independentemente de supino ou prono."
   },
-  "conceito": "**Reduzir com gravidade, não com força.** A **luxação posterior** do cotovelo deve ser reduzida **o quanto antes**, e a **técnica** importa. Manobras com tração vigorosa e alavanca aumentam o risco de **lesão condral**, de **encarcerar** fragmentos ou o **nervo mediano** na articulação e de fraturas, e exigem sedação profunda. As técnicas em **decúbito ventral** usam a **gravidade** e o relaxamento muscular.\n\n**A manobra de Parvin.** O paciente fica em **decúbito ventral**, com o braço apoiado na **borda da mesa** e o **antebraço pendente**, com o **cotovelo fletido**. O médico faz **tração suave** e prolongada no punho, para baixo, por alguns minutos, enquanto os músculos relaxam. Quando o **olécrano** começa a deslizar distalmente, o braço é **elevado** suavemente, e o cotovelo se reduz. Muitas vezes nem precisa de sedação.\n\n**A manobra de Meyn e Quigley.** Semelhante: decúbito ventral, antebraço pendente com o cotovelo fletido, tração no punho, e o **polegar** do médico guiando o **olécrano** para o lugar.\n\n**As manobras em decúbito dorsal.** Tração longitudinal no antebraço com contratração no braço, **correção** do desvio medial ou lateral primeiro, e depois **flexão** do cotovelo empurrando o olécrano. A hiperextensão antes da redução deve ser **evitada** (lesa o braquial e aumenta o risco de encarcerar o mediano).\n\n**Depois da redução.** Testar o **arco estável** (em que ângulo de extensão ele reluxa, em pronação e supinação), examinar os **nervos** (sobretudo o mediano e o ulnar) e os **pulsos**, e fazer **radiografias** para confirmar a redução concêntrica e procurar fraturas (coronoide, cabeça do rádio, epicôndilo medial na criança, que pode ficar encarcerado). Mobilização precoce.\n\n**Na prova:** manobra de **Parvin** = **decúbito ventral**, antebraço pendente com o **cotovelo fletido**, tração suave no punho e elevação do braço.",
-  "correta": "**Em decúbito ventral com o cotovelo em flexão.** O antebraço pende da borda da mesa, a tração suave relaxa os músculos, e o braço é elevado quando o olécrano desliza.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Seções: Redução e cuidados depois da redução."
+  ],
+  "conferido": false,
+  "alerta": "A banca marcou alternativa C (ventral e flexão). O resumo permite Parvin em supino ou prono com cotovelo fletido perto de 90°, portanto também sustenta alternativa A. A posição ventral não é exclusiva; gabarito oficial preservado.",
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+     "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "secoes": [
+      "Redução e cuidados depois da redução"
+     ],
+     "blocos": [
+      "reducao-e-cuidados-depois-da-reducao-04e55ad8",
+      "reducao-e-cuidados-depois-da-reducao-96944a11",
+      "reducao-e-cuidados-depois-da-reducao-a678fb7a",
+      "reducao-e-cuidados-depois-da-reducao-a84074e0",
+      "reducao-e-cuidados-depois-da-reducao-4da02e55",
+      "reducao-e-cuidados-depois-da-reducao-1bacffab"
+     ],
+     "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
+     "trechosSha256": "932738f1076c4d6d61e9df5545354c4e053052b57e0a086754d1b00eee2ce187"
+    }
+   ],
+   "questaoSha256": "5e710bdd500a257dc911d538e935c7bfe4ff4a0da1c94f5077ecef5df1114471",
+   "comentarioSha256": "0a5ce364bdbd39f7bf50f347a92c5d73867d2ec308b7191447caa718a8abf60b"
+  }
  },
  "trauma-0960": {
   "conceito": "A questão agora restringe a comparação aos **ligamentos**. A resposta oficial é o **LCA**, alternativa C, coerente com a série de fraturas operadas avaliadas por RM que o resumo destaca. Isso é diferente de perguntar a lesão de partes moles mais frequente, quando o menisco lateral aparece à frente.\n\nEm Gardner, com 103 fraturas operadas, a RM mostrou LCA em 77% e canto posterolateral em 68%; o menisco lateral apareceu em 91%. O LCA se prende na região anterior da espinha medial e pode ser afetado pelo componente rotacional e pelos traços que alcançam as espinhas (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\n**O método muda o que se encontra.** Delamarter avaliou 39 fraturas com radiografias sob estresse e achados cirúrgicos e encontrou predomínio de lesões do colateral medial. Portanto, o gabarito não deve virar a afirmação de que o LCA será sempre o ligamento mais lesado em qualquer população ou método diagnóstico.\n\nNa urgência, a frouxidão em valgo pode refletir o afundamento ósseo; o exame ligamentar deve ser repetido depois da fixação. A RM é sensível, mas os autores não a usam de rotina, e a indicação de tratar cada achado depende do quadro, não apenas de sua presença na imagem.\n\n> **Na prova:** LCA é a resposta ligamentar; não o confunda com o menisco lateral, que lidera as partes moles na série de RM.",
@@ -20768,18 +20800,41 @@
   "conferido": false
  },
  "trauma-0989": {
+  "conceito": "Na classificação de **Hosalkar**, a fratura do odontoide **acima da sincondrose** é **tipo II**, alternativa D. O grupo **tipo I** passa pela própria sincondrose e se divide em IA, IB e IC; esses sufixos não mudam o nível do traço para acima dela (Rockwood and Wilkins, 10ª edição, capítulo 21).\n\nA **sincondrose dentocentral** é a ligação entre o dente e o corpo de C2 no esqueleto imaturo. O resumo situa seu fechamento em **7 a 9 anos** e descreve a fratura que passa por ela como **Salter–Harris I**. Esse último nome descreve o trajeto fisário; Hosalkar organiza o nível e as subdivisões da lesão do odontoide.\n\nNos subtipos de Hosalkar I, o resumo apresenta faixas de desvio: IA menor que 10%, IB entre 10% e 100% e IC acima de 100%. A questão não informa um percentual nem pede calculá-lo: o dado decisivo é o traço **acima** da ligação, que já o coloca no grupo II.\n\n**Na prova:** localizar primeiro o traço em relação à sincondrose, depois considerar um subtipo se ele a atravessar. Não escolher IA, IB ou IC só porque a lesão ocorreu na criança; o nível anatômico continua definindo o grupo.",
+  "correta": "Alternativa D. Tipo II é o traço acima da sincondrose. A informação de localização é suficiente e dispensa atribuir um grau de desvio que o enunciado não fornece.",
   "incorretas": {
-   "A": "**Pela sincondrose.** O grupo I descreve as lesões através da sincondrose, e não acima dela.",
-   "B": "**Pela sincondrose.** O IB também é uma lesão da sincondrose, com outro grau de desvio ou associação.",
-   "C": "**Pela sincondrose.** O IC pertence ao grupo das lesões através da sincondrose."
+   "A": "IA pertence às fraturas que passam pela sincondrose e representa a menor faixa de desvio descrita no grupo I. Não é a categoria de traço acima da ligação dentocentral.",
+   "B": "IB continua no grupo que atravessa a sincondrose; a faixa intermediária de desvio não muda o nível para acima dela. O enunciado descreve tipo II, não um subtipo I.",
+   "C": "IC é o maior desvio do grupo pela sincondrose. Maior deslocamento e traço acima são critérios diferentes: a letra C não transforma a fratura do grupo I em uma do grupo II."
   },
-  "conceito": "**O odontoide da criança é diferente.** O **dente** de C2 se une ao **corpo** do áxis por uma placa cartilaginosa, a **sincondrose** (dentocentral ou basilar), que fica **abaixo** do nível das facetas de C1-C2, dentro do corpo de C2. Ela se funde por volta dos **5 a 7 anos**, podendo deixar uma linha esclerótica visível até a adolescência. Antes da fusão, a sincondrose é o **elo fraco**: um trauma em flexão ou extensão **descola** o dente através dela, como uma fratura fisária, e não produz a fratura da base típica do adulto.\n\n**A classificação de Hosalkar.** Organiza as lesões do odontoide na criança. **Tipo I**: lesões através da **sincondrose** (descolamento fisário), subdivididas pelo desvio e pelas lesões associadas; são as mais comuns em crianças pequenas e têm **excelente potencial de consolidação** e de remodelação. **Tipo II**: fratura **acima** do nível da sincondrose, no dente já ossificado, semelhante à fratura do adulto, em crianças maiores.\n\n**O tratamento.** As lesões da **sincondrose** geralmente vão bem com **redução** (extensão leve) e **imobilização** (halo ou órtese rígida, como o colete Minerva) por 6 a 12 semanas, porque consolidam como fraturas fisárias. Fraturas acima da sincondrose, instáveis ou irredutíveis, podem exigir fixação. A **lesão medular** é rara.\n\n**Cuidados na imagem.** A radiografia da coluna cervical da criança engana: a **pseudossubluxação** C2-C3 é normal até cerca de 8 anos (linha de Swischuk ajuda), a sincondrose aberta pode parecer fratura, e o **os odontoideum** (dente separado, com bordas corticadas) pode ser sequela de uma lesão antiga da sincondrose ou variação. Tomografia e ressonância esclarecem.\n\n**Na prova:** Hosalkar: tipo **I** = lesão **pela sincondrose** (fisária, comum na criança pequena); tipo **II** = fratura **acima** da sincondrose, semelhante ao adulto.",
-  "correta": "**II.** A fratura acima do nível da sincondrose basilar, no dente já ossificado, é o tipo II de Hosalkar, semelhante à do adulto.",
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn), Cap. 21"
+   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: C1 e C2: atlas, odontoide e enforcado."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-21-coluna-cervical",
+     "titulo": "Lesões da coluna cervical na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
+     "secoes": [
+      "C1 e C2: atlas, odontoide e enforcado"
+     ],
+     "blocos": [
+      "c1-e-c2-atlas-odontoide-e-enforcado-cc93063a"
+     ],
+     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
+     "trechosSha256": "7c792aa680f2444beaa3922964c914273034d87d0385186362f42b67ec225f67"
+    }
+   ],
+   "questaoSha256": "1ee1b2e733048f2999ce07f151cc41bae35070f27682ce4edcddd20eebd9fed0",
+   "comentarioSha256": "1fc0b5fc96494f0eb5adf358f10112eb072573a9c57c6eed8403dccd5cef4f3a"
+  }
  },
  "trauma-0990": {
   "incorretas": {
