@@ -204,9 +204,9 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0, reais = nul
           <small>primeira compra de cada pessoa · {atual?.novasCartao ?? 0} no cartão · {atual?.novasPix ?? 0} no Pix · {real(atual?.receitaNovas ?? 0)}</small>
           {(atual?.voltas ?? 0) > 0 && <small>+ {plural(atual?.voltas ?? 0, 'pessoa voltou', 'pessoas voltaram')} a assinar ({real(atual?.receitaVoltas ?? 0)})</small>}
         </Numero>
-        <Numero rotulo={`Cancelamentos em ${mesAtual}`} valor={atual?.cancelamentos ?? 0}>
+        <Numero rotulo={`Renovações desligadas em ${mesAtual}`} valor={atual?.cancelamentos ?? 0}>
           <Comparacao atual={atual?.cancelamentos ?? 0} anterior={anterior?.cancelamentos ?? 0} base={mesAnterior} bom="desce" />
-          <small>renovação do cartão desligada · {plural(atual?.reembolsos ?? 0, 'reembolso', 'reembolsos')}</small>
+          <small>seguem com acesso até o fim do período pago · {plural(atual?.reembolsos ?? 0, 'reembolso', 'reembolsos')}</small>
         </Numero>
         <Numero rotulo={`Renovações em ${mesAtual}`} valor={atual?.renovacoes ?? 0}>
           <Comparacao atual={atual?.renovacoes ?? 0} anterior={anterior?.renovacoes ?? 0} base={mesAnterior} />

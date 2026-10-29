@@ -33,9 +33,12 @@ try {
   // Cartão renovando.
   assert.deepEqual([s({ status: 'ativa', meio: 'cartao', fim_periodo: dia(10) }).rotulo, s({ status: 'ativa', meio: 'cartao', fim_periodo: dia(10) }).tom], ['Ativa', 'ok'])
   // Pediu cancelamento: ainda tem acesso até o fim do período.
-  assert.equal(s({ status: 'ativa', meio: 'cartao', cancelar_ao_fim: true, cancelada_em: dia(-2), fim_periodo: '2026-11-03T15:00:00Z' }).rotulo, 'Cancelada (acesso até 03/11)')
+  assert.equal(s({ status: 'ativa', meio: 'cartao', cancelar_ao_fim: true, cancelada_em: dia(-2), fim_periodo: '2026-11-03T15:00:00Z' }).rotulo, 'Renovação desligada')
+  assert.match(s({ status: 'ativa', meio: 'cartao', cancelar_ao_fim: true, fim_periodo: '2026-11-03T15:00:00Z' }).detalhe, /até 03\/11\. Não houve reembolso/)
   assert.equal(s({ status: 'cancelada', meio: 'cartao', cancelar_ao_fim: true, fim_periodo: '2026-11-03T15:00:00Z' }).chave, 'cancelada_com_acesso')
-  assert.equal(s({ status: 'cancelada', meio: 'cartao', cancelar_ao_fim: true, fim_periodo: dia(-5) }).rotulo, 'Cancelada')
+  assert.equal(s({ status: 'cancelada', meio: 'cartao', cancelar_ao_fim: true, fim_periodo: dia(-5) }).rotulo, 'Encerrada')
+  // Anual de outro ano: a data leva o ano, para não parecer que acaba hoje.
+  assert.match(s({ status: 'ativa', meio: 'cartao', cancelar_ao_fim: true, fim_periodo: '2099-10-29T15:00:00Z' }).detalhe, /até 29\/10\/2099/)
   // Pix: ativo é "Ativa"; depois do fim, "Expirada" (Pix não renova).
   assert.equal(s({ status: 'ativa', meio: 'pix', cancelar_ao_fim: true, fim_periodo: dia(20) }).rotulo, 'Ativa')
   assert.equal(s({ status: 'ativa', meio: 'pix', cancelar_ao_fim: true, fim_periodo: dia(-1) }).rotulo, 'Expirada')

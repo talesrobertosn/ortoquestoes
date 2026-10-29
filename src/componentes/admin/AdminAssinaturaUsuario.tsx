@@ -82,7 +82,7 @@ export function AdminAssinaturaUsuario({ idUsuario, email }: { idUsuario: string
             <div><dt>Criada em</dt><dd>{data(a.criada_em)}</dd></div>
             <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em ? dataHora(a.ultima_cobranca_em) : '—'}</dd></div>
             <div><dt>{proxima.rotulo}</dt><dd>{data(proxima.valor)}</dd></div>
-            {a.cancelada_em && <div><dt>Cancelou em</dt><dd>{data(a.cancelada_em)}</dd></div>}
+            {a.cancelada_em && <div><dt>Desligou a renovação em</dt><dd>{data(a.cancelada_em)}</dd></div>}
           </dl>
           {s.detalhe && <small className="adm-ajuda">{s.detalhe}</small>}
           <small className="adm-evento__codigo">{a.meio === 'cartao' ? `assinatura ${a.id_externo ?? '—'}` : `pedido ${a.id_externo?.slice(4) ?? '—'}`}{a.ultima_cobranca_id ? ` · pagamento ${a.ultima_cobranca_id}` : ''} · atualizada {dataHora(a.atualizada_em)}</small>
