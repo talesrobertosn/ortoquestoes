@@ -3,10 +3,9 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 97,
-  "pendente": 73,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 824,
-  "revisada": 1980
+  "pendente-fonte": 895,
+  "revisada": 1982
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -253,8 +252,7 @@
    "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
    "estados": {
     "duplicada": 3,
-    "pendente": 1,
-    "pendente-fonte": 11,
+    "pendente-fonte": 12,
     "revisada": 27
    }
   },
@@ -263,8 +261,7 @@
    "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
    "estados": {
     "duplicada": 1,
-    "pendente": 6,
-    "pendente-fonte": 16,
+    "pendente-fonte": 22,
     "revisada": 19
    }
   },
@@ -281,8 +278,7 @@
    "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
    "estados": {
     "duplicada": 1,
-    "pendente": 1,
-    "pendente-fonte": 27,
+    "pendente-fonte": 28,
     "revisada": 112
    }
   },
@@ -290,8 +286,7 @@
    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
    "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c",
    "estados": {
-    "pendente": 2,
-    "pendente-fonte": 7,
+    "pendente-fonte": 9,
     "revisada": 42
    }
   },
@@ -299,8 +294,7 @@
    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
    "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
    "estados": {
-    "pendente": 2,
-    "pendente-fonte": 6,
+    "pendente-fonte": 8,
     "revisada": 31
    }
   },
@@ -309,8 +303,7 @@
    "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
    "estados": {
     "duplicada": 4,
-    "pendente": 15,
-    "pendente-fonte": 10,
+    "pendente-fonte": 25,
     "revisada": 33
    }
   },
@@ -318,8 +311,7 @@
    "titulo": "Fraturas da coluna toracolombar na criança",
    "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
    "estados": {
-    "pendente": 1,
-    "pendente-fonte": 9,
+    "pendente-fonte": 10,
     "revisada": 30
    }
   },
@@ -327,8 +319,7 @@
    "titulo": "Fraturas da pelve e do acetábulo na criança",
    "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f",
    "estados": {
-    "pendente": 10,
-    "pendente-fonte": 7,
+    "pendente-fonte": 17,
     "revisada": 41
    }
   },
@@ -336,8 +327,7 @@
    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
    "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
    "estados": {
-    "pendente": 10,
-    "pendente-fonte": 10,
+    "pendente-fonte": 20,
     "revisada": 41
    }
   },
@@ -370,8 +360,7 @@
    "sha256": "79a3cf7fd170f9530d323c431915a4a443706be111a0b03e6877474364f115cc",
    "estados": {
     "duplicada": 2,
-    "pendente": 24,
-    "pendente-fonte": 8,
+    "pendente-fonte": 32,
     "revisada": 30
    }
   },
@@ -387,8 +376,7 @@
    "titulo": "Fraturas do tornozelo na criança",
    "sha256": "c2a797cfb27495793b74caea76138a9d47934ec27f049d0d791c8d062e02318c",
    "estados": {
-    "pendente": 1,
-    "pendente-fonte": 4,
+    "pendente-fonte": 5,
     "revisada": 34
    }
   },
@@ -396,9 +384,8 @@
    "titulo": "Fraturas, luxações e outras lesões do pé na criança",
    "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
    "estados": {
-    "pendente": 16,
-    "pendente-fonte": 4,
-    "revisada": 8
+    "pendente-fonte": 18,
+    "revisada": 10
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -36183,14 +36170,15 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo21 trata trauma cervical e diferenciais de instabilidade,mas não descreve prognóstico conservador do TORCICOLO MUSCULAR CONGÊNITO por FIBROSE DISTAL doECM,nem comparação com plagiocefalia,nódulo e idade. Falta fonte independente para o fatorD e distratores;subtema pescoço não comprova cobertura. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "7cae7977b9fcc0d8a7a9c380fcfb6d1dd08523efcff321e6c6bf54940ebf3afe"
+   "questaoSha256": "7cae7977b9fcc0d8a7a9c380fcfb6d1dd08523efcff321e6c6bf54940ebf3afe",
+   "pendencia": "O resumo21 trata trauma cervical e diferenciais de instabilidade,mas não descreve prognóstico conservador do TORCICOLO MUSCULAR CONGÊNITO por FIBROSE DISTAL doECM,nem comparação com plagiocefalia,nódulo e idade. Falta fonte independente para o fatorD e distratores;subtema pescoço não comprova cobertura. Sem selo."
   },
   "pediatria-0047": {
    "tema": "pediatria",
@@ -36381,14 +36369,15 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo28 é de lesões intra-articulares doJOELHO e não compara osteocondrite dissecante doCAPÍTULO com PANNER por idade,sintomas mecânicos,rigidez e esclerose. Busca naBiblioteca só encontrouPanner emnota contextual do capítulo9-15,que declara o epônimo vindo deoutra fonte. Falta comparação independente completa;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "d91b8a63db7ba9b23c86f885f8755caaa361083f874487ea8e3843e106ed7b18"
+   "questaoSha256": "d91b8a63db7ba9b23c86f885f8755caaa361083f874487ea8e3843e106ed7b18",
+   "pendencia": "O resumo28 é de lesões intra-articulares doJOELHO e não compara osteocondrite dissecante doCAPÍTULO com PANNER por idade,sintomas mecânicos,rigidez e esclerose. Busca naBiblioteca só encontrouPanner emnota contextual do capítulo9-15,que declara o epônimo vindo deoutra fonte. Falta comparação independente completa;sem selo."
   },
   "pediatria-0091": {
    "tema": "pediatria",
@@ -36560,14 +36549,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo21 não define forma indolor mais comum doTORCICOLO CONGÊNITO MUSCULAR,orientação da inclinação e cronologia da massa/deformidade. O trauma cervical não prova a alternativaB nem a análise das demais. Falta anatomia e apresentação clínica independente doECMcongênito;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "b510a55667bffdbf1c7926adef3da4bb22f457da6941250689e895e9ca831c08"
+   "questaoSha256": "b510a55667bffdbf1c7926adef3da4bb22f457da6941250689e895e9ca831c08",
+   "pendencia": "O resumo21 não define forma indolor mais comum doTORCICOLO CONGÊNITO MUSCULAR,orientação da inclinação e cronologia da massa/deformidade. O trauma cervical não prova a alternativaB nem a análise das demais. Falta anatomia e apresentação clínica independente doECMcongênito;sem selo."
   },
   "pediatria-0144": {
    "tema": "pediatria",
@@ -36667,15 +36657,16 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Os resumos23/24 tratam trauma de pelve/quadril,não DEFEITO FEMORAL FOCAL PROXIMAL ou GILLEPSIE/GILLESPIE tipoA e presença de cabeça/normalidade acetabular. Busca naBiblioteca sem definição independente. Falta classificação congênita para comparar as quatro combinações;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "40922fd7b2c9f197d91d04c98a364926937d7e375506e1dba31927c2b89a9d4a"
+   "questaoSha256": "40922fd7b2c9f197d91d04c98a364926937d7e375506e1dba31927c2b89a9d4a",
+   "pendencia": "Os resumos23/24 tratam trauma de pelve/quadril,não DEFEITO FEMORAL FOCAL PROXIMAL ou GILLEPSIE/GILLESPIE tipoA e presença de cabeça/normalidade acetabular. Busca naBiblioteca sem definição independente. Falta classificação congênita para comparar as quatro combinações;sem selo."
   },
   "pediatria-0156": {
    "tema": "pediatria",
@@ -36684,14 +36675,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo28 não descreve MENISCO DISCOIDE/Wrisberg,incidência,lateralidade,lesões atraumáticas nem indicação de MENISCECTOMIA TOTAL. A referência aWrisberg no61adulto é ligamento meniscofemoral,não tratamento do discoide. Falta fonte independente e eventual ressalva ao gabaritoB,sem alterá-lo de memória;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "91b4de2fb5656fe6dc4f9f2fbc90e35dd0ee1cd95ccc4da3d05365a63de9c730"
+   "questaoSha256": "91b4de2fb5656fe6dc4f9f2fbc90e35dd0ee1cd95ccc4da3d05365a63de9c730",
+   "pendencia": "O resumo28 não descreve MENISCO DISCOIDE/Wrisberg,incidência,lateralidade,lesões atraumáticas nem indicação de MENISCECTOMIA TOTAL. A referência aWrisberg no61adulto é ligamento meniscofemoral,não tratamento do discoide. Falta fonte independente e eventual ressalva ao gabaritoB,sem alterá-lo de memória;sem selo."
   },
   "pediatria-0160": {
    "tema": "pediatria",
@@ -36758,14 +36750,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não desenvolve WATANABE tipo3,fixação periférica,bilateralidade e ausência doLIGAMENTO CORONÁRIO noWrisberg. Wrisberg meniscofemoral no61adulto não prova variante de discoide. Falta anatomia/classificação independente completa;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "58053e5a67434b087525cb769b0f769d19af0efac7d3715d0d70d51bcef35b91"
+   "questaoSha256": "58053e5a67434b087525cb769b0f769d19af0efac7d3715d0d70d51bcef35b91",
+   "pendencia": "Resumo28 não desenvolve WATANABE tipo3,fixação periférica,bilateralidade e ausência doLIGAMENTO CORONÁRIO noWrisberg. Wrisberg meniscofemoral no61adulto não prova variante de discoide. Falta anatomia/classificação independente completa;sem selo."
   },
   "pediatria-0162": {
    "tema": "pediatria",
@@ -36775,14 +36768,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 trata lesões traumáticas do pé,não frequência do METATARSO ADUTO,associações,resposta conservadora e taxa de deformidade residual. Falta fonte independente para aA e comparação das demais,não usar coincidência de subtema ou comentário antigo;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "c4f03e2679b3e7fe5570ae16ffc16ca64d45fce8f059d9eccda19a5d9249c080"
+   "questaoSha256": "c4f03e2679b3e7fe5570ae16ffc16ca64d45fce8f059d9eccda19a5d9249c080",
+   "pendencia": "Resumo31 trata lesões traumáticas do pé,não frequência do METATARSO ADUTO,associações,resposta conservadora e taxa de deformidade residual. Falta fonte independente para aA e comparação das demais,não usar coincidência de subtema ou comentário antigo;sem selo."
   },
   "pediatria-0164": {
    "tema": "pediatria",
@@ -36890,14 +36884,15 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não define inserção do CORNO POSTERIOR DO MENISCO MEDIAL na borda tibial viaCORONÁRIO.61adulto descreve meniscofemorais doLATERAL,e62adulto artrotomia submeniscal LATERAL:não provam diretamente a inserção MEDIAL perguntada. Falta anatomia independente desse corno e comparação com oblíquo/poplíteo;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "f49ccef074a10f6e4685d5422c508b75283804f0552442902e23be868689c796"
+   "questaoSha256": "f49ccef074a10f6e4685d5422c508b75283804f0552442902e23be868689c796",
+   "pendencia": "Resumo28 não define inserção do CORNO POSTERIOR DO MENISCO MEDIAL na borda tibial viaCORONÁRIO.61adulto descreve meniscofemorais doLATERAL,e62adulto artrotomia submeniscal LATERAL:não provam diretamente a inserção MEDIAL perguntada. Falta anatomia independente desse corno e comparação com oblíquo/poplíteo;sem selo."
   },
   "pediatria-0198": {
    "tema": "pediatria",
@@ -36906,14 +36901,15 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 de trauma do joelho não descreve posição embrionária da PATELA ANTES DA ROTAÇÃO AXIAL DOS MEMBROS INFERIORES. Rotação cervical do48 e alinhamento traumático não cobrem embriologia. Falta desenvolvimento independente para conferir lateral/medial/anterior/posterior;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "7999bdd3eb923e78d0fa824071e0b98499f8b3eb7655e9ed4e379dde8bc8d8a0"
+   "questaoSha256": "7999bdd3eb923e78d0fa824071e0b98499f8b3eb7655e9ed4e379dde8bc8d8a0",
+   "pendencia": "Resumo28 de trauma do joelho não descreve posição embrionária da PATELA ANTES DA ROTAÇÃO AXIAL DOS MEMBROS INFERIORES. Rotação cervical do48 e alinhamento traumático não cobrem embriologia. Falta desenvolvimento independente para conferir lateral/medial/anterior/posterior;sem selo."
   },
   "pediatria-0241": {
    "tema": "pediatria",
@@ -36957,14 +36953,15 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não aborda meniscoDISCOIDE assintomático incidental nem compara observação,saucerização,meniscoplastia e ressecção total. Falta indicação independente de preservar sem tratamento nesse cenário;lesão meniscal traumática não prova manejo da variante. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "0bb7e152a8aca37eec4782f0b9ca4f83fc8d63ba72fc6cc9314fae60d6d495f8"
+   "questaoSha256": "0bb7e152a8aca37eec4782f0b9ca4f83fc8d63ba72fc6cc9314fae60d6d495f8",
+   "pendencia": "Resumo28 não aborda meniscoDISCOIDE assintomático incidental nem compara observação,saucerização,meniscoplastia e ressecção total. Falta indicação independente de preservar sem tratamento nesse cenário;lesão meniscal traumática não prova manejo da variante. Sem selo."
   },
   "pediatria-0277": {
    "tema": "pediatria",
@@ -36973,14 +36970,15 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não distribui tipos de rotura do meniscoDISCOIDE:radial,oblíqua,longitudinal ou clivagem horizontal. Falta frequência comparativa independente que sustente aD;não inferir de meniscos traumáticos usuais. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "06cc32dcd19a1f203c8bb22658de8b7722bad065ccb12e9bc559ab2a2b7b9b20"
+   "questaoSha256": "06cc32dcd19a1f203c8bb22658de8b7722bad065ccb12e9bc559ab2a2b7b9b20",
+   "pendencia": "Resumo28 não distribui tipos de rotura do meniscoDISCOIDE:radial,oblíqua,longitudinal ou clivagem horizontal. Falta frequência comparativa independente que sustente aD;não inferir de meniscos traumáticos usuais. Sem selo."
   },
   "pediatria-0279": {
    "tema": "pediatria",
@@ -37051,14 +37049,15 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo21 não descreve vetor da inclinação e rotação do queixo no TORCICOLO MUSCULAR CONGÊNITO porECM. Falta anatomia funcional independente para distinguir lado da lesão/oposto em cada componente;sem usar comentário antigo. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "8010d968e2680ea9f5b632df6446b5d6401c5cedb089392153481ac7751ad1f8"
+   "questaoSha256": "8010d968e2680ea9f5b632df6446b5d6401c5cedb089392153481ac7751ad1f8",
+   "pendencia": "Resumo21 não descreve vetor da inclinação e rotação do queixo no TORCICOLO MUSCULAR CONGÊNITO porECM. Falta anatomia funcional independente para distinguir lado da lesão/oposto em cada componente;sem usar comentário antigo. Sem selo."
   },
   "pediatria-0314": {
    "tema": "pediatria",
@@ -37221,14 +37220,15 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo21 não descreve trajeto doNERVO ACESSÓRIO na liberação proximal doECMnem por que a inserção óssea o protege. A menção ao hipoglosso no côndilo não cobre essa via. Falta anatomia cirúrgica independente e comparação com frênico/hipoglosso/cervical transverso. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "804f1b7b38fe968b041a6ce2e70d5ae0fddd0b7861a59b603f53f635b9e15ecd"
+   "questaoSha256": "804f1b7b38fe968b041a6ce2e70d5ae0fddd0b7861a59b603f53f635b9e15ecd",
+   "pendencia": "Resumo21 não descreve trajeto doNERVO ACESSÓRIO na liberação proximal doECMnem por que a inserção óssea o protege. A menção ao hipoglosso no côndilo não cobre essa via. Falta anatomia cirúrgica independente e comparação com frênico/hipoglosso/cervical transverso. Sem selo."
   },
   "pediatria-0358": {
    "tema": "pediatria",
@@ -37238,14 +37238,15 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 trata trauma do joelho,não LUXAÇÃO CONGÊNITA e associações aQUADRIL/PÉ TORTO ou TALO VERTICAL. Falta distribuição congênita independente para comparar as quatro duplas;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "e8486d391804844b1610920d39cd2a699284e0c3c1fcbc2dbba2261f36087923"
+   "questaoSha256": "e8486d391804844b1610920d39cd2a699284e0c3c1fcbc2dbba2261f36087923",
+   "pendencia": "Resumo28 trata trauma do joelho,não LUXAÇÃO CONGÊNITA e associações aQUADRIL/PÉ TORTO ou TALO VERTICAL. Falta distribuição congênita independente para comparar as quatro duplas;sem selo."
   },
   "pediatria-0359": {
    "tema": "pediatria",
@@ -37411,14 +37412,15 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo21 não classifica TORCICOLO CONGÊNITO em tumoral doECM,muscular epostural,nem cronologia da assimetria e valor deUS/RX. Falta apresentação/subgrupos independentes completos;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "c1da2958ba7c44faccd7cdd818edfc4db0ca558f36f47db0b4477f7f05d75275"
+   "questaoSha256": "c1da2958ba7c44faccd7cdd818edfc4db0ca558f36f47db0b4477f7f05d75275",
+   "pendencia": "Resumo21 não classifica TORCICOLO CONGÊNITO em tumoral doECM,muscular epostural,nem cronologia da assimetria e valor deUS/RX. Falta apresentação/subgrupos independentes completos;sem selo."
   },
   "pediatria-0378": {
    "tema": "pediatria",
@@ -37505,14 +37507,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo21 não define KLIPPEL-FEIL e a relação com torcicolo indolor/anomalias ósseas,nem diferenciaALFREDEL eSPRENGEL. Busca no48adulto apenas encontrou contexto pós-infeccioso deGrisel emnota contextual. Falta diferencial congênito independente completo;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "fcfcb8e798ceb5f86ffd9eee3d0afe6c562f822b3c7ea172f200960aef1771d6"
+   "questaoSha256": "fcfcb8e798ceb5f86ffd9eee3d0afe6c562f822b3c7ea172f200960aef1771d6",
+   "pendencia": "Resumo21 não define KLIPPEL-FEIL e a relação com torcicolo indolor/anomalias ósseas,nem diferenciaALFREDEL eSPRENGEL. Busca no48adulto apenas encontrou contexto pós-infeccioso deGrisel emnota contextual. Falta diferencial congênito independente completo;sem selo."
   },
   "pediatria-0382": {
    "tema": "pediatria",
@@ -37522,8 +37525,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos21/23/24 tratam trauma,não indicação de artrodese atéPELVE na ESCOLIOSE NEUROMUSCULAR por deambulação e limiar de obliquidade>15°. Falta algoritmo independente para comparar>10°,>15°ou qualquer obliquidade por capacidade de marcha. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -37531,7 +37534,8 @@
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "d9c51a88b445c081ea4225529fd1631f1e66cee074412750e483f09c626faea5"
+   "questaoSha256": "d9c51a88b445c081ea4225529fd1631f1e66cee074412750e483f09c626faea5",
+   "pendencia": "Resumos21/23/24 tratam trauma,não indicação de artrodese atéPELVE na ESCOLIOSE NEUROMUSCULAR por deambulação e limiar de obliquidade>15°. Falta algoritmo independente para comparar>10°,>15°ou qualquer obliquidade por capacidade de marcha. Sem selo."
   },
   "pediatria-0383": {
    "tema": "pediatria",
@@ -37599,14 +37603,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo30 é trauma do tornozelo e não define fase deMÉDIO APOIO da marcha normal,contração EXCÊNTRICA do tibialposterior e INVERSÃO subtalar. Menção traumática do tendão não cobre sua função temporal. Falta biomecânica independente para comparar as quatro combinações;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-30-tornozelo"
    ],
-   "questaoSha256": "8363bee758860221742f7b79b1a3cef88a248b63e4bccd25cbd73f16cfdf6523"
+   "questaoSha256": "8363bee758860221742f7b79b1a3cef88a248b63e4bccd25cbd73f16cfdf6523",
+   "pendencia": "Resumo30 é trauma do tornozelo e não define fase deMÉDIO APOIO da marcha normal,contração EXCÊNTRICA do tibialposterior e INVERSÃO subtalar. Menção traumática do tendão não cobre sua função temporal. Falta biomecânica independente para comparar as quatro combinações;sem selo."
   },
   "pediatria-0392": {
    "tema": "pediatria",
@@ -37615,14 +37620,15 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não associa DISCOIDE WRISBERG a osteocondrite dissecante do CÔNDILO FEMORAL LATERAL nem compara planaltos/côndilo medial. Meniscofemoral Wrisberg no61adulto não demonstra essa associação. Falta epidemiologia/anatomia independente da variante;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "6dc46fbbf9f028d7f806486c0f78582f4ff18f4383a455e010d453e3503b7031"
+   "questaoSha256": "6dc46fbbf9f028d7f806486c0f78582f4ff18f4383a455e010d453e3503b7031",
+   "pendencia": "Resumo28 não associa DISCOIDE WRISBERG a osteocondrite dissecante do CÔNDILO FEMORAL LATERAL nem compara planaltos/côndilo medial. Meniscofemoral Wrisberg no61adulto não demonstra essa associação. Falta epidemiologia/anatomia independente da variante;sem selo."
   },
   "pediatria-0422": {
    "tema": "pediatria",
@@ -37698,14 +37704,15 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 não descreve OSTEOTOMIA DAS BASES METATARSAIS na sequela de pé torto/metatarso aduto e não compara parada de crescimento doPRIMEIRO com recidiva,subluxação e proeminência. Proteção da fise noLisfranc é outro procedimento e não prova ranking de complicações. Falta técnica e prognóstico independentes;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "b2a667281bf92747e79a11dad8718ad0c5d5a2e0aa268c37aef3cd4731e2cc39"
+   "questaoSha256": "b2a667281bf92747e79a11dad8718ad0c5d5a2e0aa268c37aef3cd4731e2cc39",
+   "pendencia": "Resumo31 não descreve OSTEOTOMIA DAS BASES METATARSAIS na sequela de pé torto/metatarso aduto e não compara parada de crescimento doPRIMEIRO com recidiva,subluxação e proeminência. Proteção da fise noLisfranc é outro procedimento e não prova ranking de complicações. Falta técnica e prognóstico independentes;sem selo."
   },
   "pediatria-0468": {
    "tema": "pediatria",
@@ -37731,15 +37738,16 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos20/21 não quantificam presença doOSSO OMOVERTEBRAL na deformidade deSPRENGEL. Falta prevalência independente para comparar todos,metade,terço e sexto;sem inventar estatística. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical",
     "rockwoodcriancas10-22-coluna-toracolombar"
    ],
-   "questaoSha256": "639e6fdacaf730deced91def9cda2b659cef59ed5dbdd3359f00d257a5acc059"
+   "questaoSha256": "639e6fdacaf730deced91def9cda2b659cef59ed5dbdd3359f00d257a5acc059",
+   "pendencia": "Resumos20/21 não quantificam presença doOSSO OMOVERTEBRAL na deformidade deSPRENGEL. Falta prevalência independente para comparar todos,metade,terço e sexto;sem inventar estatística. Sem selo."
   },
   "pediatria-0478": {
    "tema": "pediatria",
@@ -37838,14 +37846,15 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não descreve alterações radiográficas associadas ao MENISCO DISCOIDE LATERAL,especialmente CABEÇA ALTA DA FÍBULA,interlinha,espinha e côndilo. Falta associação independente para conferirA e distratores. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "603de6168df50bb7c562cf1e7339b989bfc5f65ea3d608d1a37c99f5689e4351"
+   "questaoSha256": "603de6168df50bb7c562cf1e7339b989bfc5f65ea3d608d1a37c99f5689e4351",
+   "pendencia": "Resumo28 não descreve alterações radiográficas associadas ao MENISCO DISCOIDE LATERAL,especialmente CABEÇA ALTA DA FÍBULA,interlinha,espinha e côndilo. Falta associação independente para conferirA e distratores. Sem selo."
   },
   "pediatria-0508": {
    "tema": "pediatria",
@@ -39691,14 +39700,15 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não desenvolve critérios deINSTABILIDADE da OSTEOCONDRITE DISSECANTE JUVENIL naRM-T2,nem diferencia hipersinal da interface,edema e ruptura da superfície. Fratura osteocondral traumática e edema de estresse não provam critério daOCD. Falta definição independente completa;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "eea2e73438f6716bc95be1fe4eb3bf17dd62f60b71dbf8044be0ed46e8b1751b"
+   "questaoSha256": "eea2e73438f6716bc95be1fe4eb3bf17dd62f60b71dbf8044be0ed46e8b1751b",
+   "pendencia": "Resumo28 não desenvolve critérios deINSTABILIDADE da OSTEOCONDRITE DISSECANTE JUVENIL naRM-T2,nem diferencia hipersinal da interface,edema e ruptura da superfície. Fratura osteocondral traumática e edema de estresse não provam critério daOCD. Falta definição independente completa;sem selo."
   },
   "pediatria-0554": {
    "tema": "pediatria",
@@ -45298,14 +45308,15 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo21 não distribui acometimento ESTERNAL,CLAVICULAR,OCCIPITAL ou das três porções doECMno TORCICOLO MUSCULAR CONGÊNITO. Falta frequência anatômica independente;sem converter referência geral ao pescoço em cobertura. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "cd647acb46cdb3aa313e00a45a0729d8ee42ee77d5889f947f4003c18fe0917c"
+   "questaoSha256": "cd647acb46cdb3aa313e00a45a0729d8ee42ee77d5889f947f4003c18fe0917c",
+   "pendencia": "Resumo21 não distribui acometimento ESTERNAL,CLAVICULAR,OCCIPITAL ou das três porções doECMno TORCICOLO MUSCULAR CONGÊNITO. Falta frequência anatômica independente;sem converter referência geral ao pescoço em cobertura. Sem selo."
   },
   "pediatria-0671": {
    "tema": "pediatria",
@@ -45500,14 +45511,15 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos de trauma do membro superior não classificam DEFICIÊNCIA PRÉ-AXIAL como falha de formaçãoLONGITUDINAL,nem comparam terminal/intercalar/transversa. Falta classificação congênita independente;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "b1d7ef30eef54ba50d2a04b871d912a274df6c2abf3de048353d958ab4933a93"
+   "questaoSha256": "b1d7ef30eef54ba50d2a04b871d912a274df6c2abf3de048353d958ab4933a93",
+   "pendencia": "Resumos de trauma do membro superior não classificam DEFICIÊNCIA PRÉ-AXIAL como falha de formaçãoLONGITUDINAL,nem comparam terminal/intercalar/transversa. Falta classificação congênita independente;sem selo."
   },
   "pediatria-0682": {
    "tema": "pediatria",
@@ -47789,14 +47801,15 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 não descreve biomecânica doPÉ PLANO VALGO FLEXÍVEL,pronação relativa,tensão interóssea e vetores do calcâneo/tálus. Sem gabarito oficial,essas lacunas impedem resposta única sustentada e não autorizamprovavel. Falta anatomia independente completa;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "a40ab4f3cd340f30210ba09d5cb7baaef4f6a2d2091cf145fda4308e14a9a2c6"
+   "questaoSha256": "a40ab4f3cd340f30210ba09d5cb7baaef4f6a2d2091cf145fda4308e14a9a2c6",
+   "pendencia": "Resumo31 não descreve biomecânica doPÉ PLANO VALGO FLEXÍVEL,pronação relativa,tensão interóssea e vetores do calcâneo/tálus. Sem gabarito oficial,essas lacunas impedem resposta única sustentada e não autorizamprovavel. Falta anatomia independente completa;sem selo."
   },
   "pediatria-0729": {
    "tema": "pediatria",
@@ -47959,14 +47972,15 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo21 não define a síndrome deGRISEL;48adulto descreve instabilidadeC1–C2pós-infecciosa,mas não frequência deAFEBRIL,espasmo e REDUÇÃO ESPONTÂNEA daA/B/D. Não confundir êxito do tratamento não operatório com redução espontânea. Sem gabarito oficial e sem resposta única apoiada,não usarprovavel. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "5099351291e5eb0b7f7071884a3e43de49c1d843e37931a3a6c9888ef94834bd"
+   "questaoSha256": "5099351291e5eb0b7f7071884a3e43de49c1d843e37931a3a6c9888ef94834bd",
+   "pendencia": "Resumo21 não define a síndrome deGRISEL;48adulto descreve instabilidadeC1–C2pós-infecciosa,mas não frequência deAFEBRIL,espasmo e REDUÇÃO ESPONTÂNEA daA/B/D. Não confundir êxito do tratamento não operatório com redução espontânea. Sem gabarito oficial e sem resposta única apoiada,não usarprovavel. Sem selo."
   },
   "pediatria-0734": {
    "tema": "pediatria",
@@ -48182,14 +48196,15 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 não aborda redução doPÉ TORTO CONGÊNITO nem compara obstáculos tibionavicular,calcaneonavicular plantar,cápsula talonavicular e tibialposterior. Interposição do tibialposterior na luxação subtalarTRAUMÁTICA é outro quadro. Sem gabarito oficial e sem critério independente,não usarprovavel. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "8d8782567f3a03cdddc23cab382929acd03b3769385a75aed1e7acc4ca84d5d9"
+   "questaoSha256": "8d8782567f3a03cdddc23cab382929acd03b3769385a75aed1e7acc4ca84d5d9",
+   "pendencia": "Resumo31 não aborda redução doPÉ TORTO CONGÊNITO nem compara obstáculos tibionavicular,calcaneonavicular plantar,cápsula talonavicular e tibialposterior. Interposição do tibialposterior na luxação subtalarTRAUMÁTICA é outro quadro. Sem gabarito oficial e sem critério independente,não usarprovavel. Sem selo."
   },
   "pediatria-0742": {
    "tema": "pediatria",
@@ -48279,15 +48294,16 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo19 trata ombro/úmeroTRAUMÁTICOS,não paralisia braquialOBSTÉTRICA e padrões ERB-DUCHENNE/KLUMPKE,Horner e reflexo deMoro. Falta anatomia segmentar e exame neonatal independente. Sem gabarito oficial e sem cobertura das quatro opções,não usarprovavel. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "dd4fb55bb9554aeba226337004afbd2ba4717f71fec3ec66dc975c1c023551d9"
+   "questaoSha256": "dd4fb55bb9554aeba226337004afbd2ba4717f71fec3ec66dc975c1c023551d9",
+   "pendencia": "Resumo19 trata ombro/úmeroTRAUMÁTICOS,não paralisia braquialOBSTÉTRICA e padrões ERB-DUCHENNE/KLUMPKE,Horner e reflexo deMoro. Falta anatomia segmentar e exame neonatal independente. Sem gabarito oficial e sem cobertura das quatro opções,não usarprovavel. Sem selo."
   },
   "pediatria-0746": {
    "tema": "pediatria",
@@ -48791,14 +48807,15 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta no resumo21 anatomia da viaMASTÓIDEA do torcicolo congênito e risco aoACESSÓRIO,comparado a facial,hipoglosso e laríngeo. Sem gabarito oficial,sem resposta única demonstrada nas fontes;semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "45584416016d93235b77e9f6e539a53457968ba9a7e96fc93abdccd50c5b2460"
+   "questaoSha256": "45584416016d93235b77e9f6e539a53457968ba9a7e96fc93abdccd50c5b2460",
+   "pendencia": "Falta no resumo21 anatomia da viaMASTÓIDEA do torcicolo congênito e risco aoACESSÓRIO,comparado a facial,hipoglosso e laríngeo. Sem gabarito oficial,sem resposta única demonstrada nas fontes;semprovavel."
   },
   "pediatria-0758": {
    "tema": "pediatria",
@@ -48808,14 +48825,15 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 de trauma não descreve métodoPONSETI e FULCRO na bordaLATERAL DO TÁLUS,nem compara calcaneocuboide,maléolo e calcâneo. Sem gabarito oficial,semprovavel sem técnica independente.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "1441ea3430a07804cab0535389c6440f30bf78ad402832089ba99e58ba0ca43c"
+   "questaoSha256": "1441ea3430a07804cab0535389c6440f30bf78ad402832089ba99e58ba0ca43c",
+   "pendencia": "Resumo31 de trauma não descreve métodoPONSETI e FULCRO na bordaLATERAL DO TÁLUS,nem compara calcaneocuboide,maléolo e calcâneo. Sem gabarito oficial,semprovavel sem técnica independente."
   },
   "pediatria-0761": {
    "tema": "pediatria",
@@ -48824,14 +48842,15 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos23/24 não tratam DEFEITO FOCAL PROXIMAL do fêmur e associação com INSTABILIDADE ANTEROPOSTERIOR do joelho. Falta anatomia ligamentar congênita e frequência dos padrões. Sem gabarito oficial,não atribuirprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "717760c19426440369f1c10f0c25828a411309dbc4049ea5b57d73155e8db0dc"
+   "questaoSha256": "717760c19426440369f1c10f0c25828a411309dbc4049ea5b57d73155e8db0dc",
+   "pendencia": "Resumos23/24 não tratam DEFEITO FOCAL PROXIMAL do fêmur e associação com INSTABILIDADE ANTEROPOSTERIOR do joelho. Falta anatomia ligamentar congênita e frequência dos padrões. Sem gabarito oficial,não atribuirprovavel."
   },
   "pediatria-0763": {
    "tema": "pediatria",
@@ -48841,15 +48860,16 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos23/24 não estabelecem relação geométrica/valores entre ÍNDICE ACETABULAR40° e CENTRO-BORDA deWIBERG naDDQ. Falta método e limiar independente,não deduzir uma soma angular de memória. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "4dd982cd10c4f7a8347cc9c6f24753ff521af82cfaf20dfb651581355aff6a0e"
+   "questaoSha256": "4dd982cd10c4f7a8347cc9c6f24753ff521af82cfaf20dfb651581355aff6a0e",
+   "pendencia": "Resumos23/24 não estabelecem relação geométrica/valores entre ÍNDICE ACETABULAR40° e CENTRO-BORDA deWIBERG naDDQ. Falta método e limiar independente,não deduzir uma soma angular de memória. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0766": {
    "tema": "pediatria",
@@ -49019,14 +49039,15 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo21 não descreve a via proximal doECMcongênito e risco aoACESSÓRIO versus facial,hipoglosso e vago. Falta anatomia cirúrgica independente. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "98c9f45ac3d2122782fe8351d4f9f5c557f6003f15575167e6963bacb3d1d5c6"
+   "questaoSha256": "98c9f45ac3d2122782fe8351d4f9f5c557f6003f15575167e6963bacb3d1d5c6",
+   "pendencia": "Resumo21 não descreve a via proximal doECMcongênito e risco aoACESSÓRIO versus facial,hipoglosso e vago. Falta anatomia cirúrgica independente. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0772": {
    "tema": "pediatria",
@@ -49161,15 +49182,16 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos23/24 não quantificam ANTEVERSÃO FEMORAL ao NASCIMENTO e aos16ANOS para comparar as quatro duplas. Falta desenvolvimento angular independente,sem inventar números. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "a8b36d2b61b17fda764f3e5303b127e52023283e22dff3370f867b689f3af279"
+   "questaoSha256": "a8b36d2b61b17fda764f3e5303b127e52023283e22dff3370f867b689f3af279",
+   "pendencia": "Resumos23/24 não quantificam ANTEVERSÃO FEMORAL ao NASCIMENTO e aos16ANOS para comparar as quatro duplas. Falta desenvolvimento angular independente,sem inventar números. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0778": {
    "tema": "pediatria",
@@ -49179,15 +49201,16 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos23/24 não descrevem a evolução pareada da ANTEVERSÃO e ROTAÇÃO EXTERNA do quadril do nascimento aos10anos. Falta biomecânica do desenvolvimento para conferir aumento/diminuição de cada componente. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "49733bef664db21e414b9271597e894b52658a1aa562ae01f2380fbe0553ca45"
+   "questaoSha256": "49733bef664db21e414b9271597e894b52658a1aa562ae01f2380fbe0553ca45",
+   "pendencia": "Resumos23/24 não descrevem a evolução pareada da ANTEVERSÃO e ROTAÇÃO EXTERNA do quadril do nascimento aos10anos. Falta biomecânica do desenvolvimento para conferir aumento/diminuição de cada componente. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0779": {
    "tema": "pediatria",
@@ -49267,14 +49290,15 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos08 e45 são de trauma/fraturas,não POLEGAR EM GATILHO PEDIÁTRICO e indicação de aberturaA1ouA2por idade6meses/1ano. Falta protocolo independente;sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "5f1853996836a0321678f79b62e5e3fed44a313d526b36a0f7766277fe860c70"
+   "questaoSha256": "5f1853996836a0321678f79b62e5e3fed44a313d526b36a0f7766277fe860c70",
+   "pendencia": "Resumos08 e45 são de trauma/fraturas,não POLEGAR EM GATILHO PEDIÁTRICO e indicação de aberturaA1ouA2por idade6meses/1ano. Falta protocolo independente;sem gabarito oficial,semprovavel."
   },
   "pediatria-0790": {
    "tema": "pediatria",
@@ -49302,15 +49326,16 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos23/24 não descrevem OSTEOTOMIA DE SALTER naDDQ e efeito na CONFIGURAÇÃO/CAPACIDADE do acetábulo. Falta técnica e biomecânica independente para julgarCerto/Errado. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "18c272257f8cef141018665ebd6246e7ac4b120cb5f34729f7e359cf46c9855f"
+   "questaoSha256": "18c272257f8cef141018665ebd6246e7ac4b120cb5f34729f7e359cf46c9855f",
+   "pendencia": "Resumos23/24 não descrevem OSTEOTOMIA DE SALTER naDDQ e efeito na CONFIGURAÇÃO/CAPACIDADE do acetábulo. Falta técnica e biomecânica independente para julgarCerto/Errado. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0794": {
    "tema": "pediatria",
@@ -49351,15 +49376,16 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos23/24 não classificam ultrassonografia deGRAF tipoIV,deslocamento inferior,teto e eversão/inversão doLABRUM. Falta definição independente de todos os componentes;sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "db4f2f564db731fa04eb8624e95f24c15c6257636d899e9e10fb9ad1d7b06cf9"
+   "questaoSha256": "db4f2f564db731fa04eb8624e95f24c15c6257636d899e9e10fb9ad1d7b06cf9",
+   "pendencia": "Resumos23/24 não classificam ultrassonografia deGRAF tipoIV,deslocamento inferior,teto e eversão/inversão doLABRUM. Falta definição independente de todos os componentes;sem gabarito oficial,semprovavel."
   },
   "pediatria-0798": {
    "tema": "pediatria",
@@ -49448,15 +49474,16 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo19 de trauma não compara prognóstico de PARALISIA BRAQUIAL OBSTÉTRICA por acometimento PARAESCAPULAR. Falta neuroanatomia segmentar e dado prognóstico independente. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-20-clavicula-escapula"
    ],
-   "questaoSha256": "7d51411ce2ba60144fc478bbf59e945fb1c1e10edfb7205aea663264f604a4da"
+   "questaoSha256": "7d51411ce2ba60144fc478bbf59e945fb1c1e10edfb7205aea663264f604a4da",
+   "pendencia": "Resumo19 de trauma não compara prognóstico de PARALISIA BRAQUIAL OBSTÉTRICA por acometimento PARAESCAPULAR. Falta neuroanatomia segmentar e dado prognóstico independente. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0803": {
    "tema": "pediatria",
@@ -49465,14 +49492,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos do trauma da mão não descrevem CENTRALIZAÇÃO na MÃO TORTA RADIAL nem resultados antes/depois de8anos. Falta indicação temporal independente;sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "43538a930e3109ab66962a34f302aae10e3946fe4ffbcdb2e43367f6565d0260"
+   "questaoSha256": "43538a930e3109ab66962a34f302aae10e3946fe4ffbcdb2e43367f6565d0260",
+   "pendencia": "Resumos do trauma da mão não descrevem CENTRALIZAÇÃO na MÃO TORTA RADIAL nem resultados antes/depois de8anos. Falta indicação temporal independente;sem gabarito oficial,semprovavel."
   },
   "pediatria-0804": {
    "tema": "pediatria",
@@ -49481,14 +49509,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos08/45 não descrevem POLIDACTILIA PÓS-AXIAL em crianças negras nem frequência de outras malformações por fenótipo/população. Falta associação independente,sem inferir risco étnico. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "d4c692268b08b6941aa4aa68bc3302e267eeddc493f1568a419156889cae6e30"
+   "questaoSha256": "d4c692268b08b6941aa4aa68bc3302e267eeddc493f1568a419156889cae6e30",
+   "pendencia": "Resumos08/45 não descrevem POLIDACTILIA PÓS-AXIAL em crianças negras nem frequência de outras malformações por fenótipo/população. Falta associação independente,sem inferir risco étnico. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0805": {
    "tema": "pediatria",
@@ -49498,14 +49527,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo de trauma da tíbia/joelho não define DISPLASIA FIBROCARTILAGINOSA FOCAL e manejo INICIAL por observação versus RESSECÇÃO. Falta história natural e algoritmo independente. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "6ee1edda0685a25b568f933c3973821e8fbcef226943f4411fb4346d3b314ff9"
+   "questaoSha256": "6ee1edda0685a25b568f933c3973821e8fbcef226943f4411fb4346d3b314ff9",
+   "pendencia": "Resumo de trauma da tíbia/joelho não define DISPLASIA FIBROCARTILAGINOSA FOCAL e manejo INICIAL por observação versus RESSECÇÃO. Falta história natural e algoritmo independente. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0809": {
    "tema": "pediatria",
@@ -49515,15 +49545,16 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos traumáticos do quadril não definem DISPLASIA EPIFISÁRIA MÚLTIPLA e comparação comPERTHES por cisto,bilateralidade e acetábulo. Falta fenótipo independente completo. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "768476be14515310c0fd66f3a6510336eefdf2a3ca29a1fd201483ce8a0730b8"
+   "questaoSha256": "768476be14515310c0fd66f3a6510336eefdf2a3ca29a1fd201483ce8a0730b8",
+   "pendencia": "Resumos traumáticos do quadril não definem DISPLASIA EPIFISÁRIA MÚLTIPLA e comparação comPERTHES por cisto,bilateralidade e acetábulo. Falta fenótipo independente completo. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0810": {
    "tema": "pediatria",
@@ -49533,14 +49564,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos traumáticos não caracterizam ACONDROPLASIA por rizomelia,quadril e VARO/VALGO progressivo. Falta descrição independente dos três componentes;sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "002fb8dcf6af6cb03e305e56da862d50ac9365cbd7210066a88c461812e50d74"
+   "questaoSha256": "002fb8dcf6af6cb03e305e56da862d50ac9365cbd7210066a88c461812e50d74",
+   "pendencia": "Resumos traumáticos não caracterizam ACONDROPLASIA por rizomelia,quadril e VARO/VALGO progressivo. Falta descrição independente dos três componentes;sem gabarito oficial,semprovavel."
   },
   "pediatria-0811": {
    "tema": "pediatria",
@@ -49549,14 +49581,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo21 não descreve LIBERAÇÃO PROXIMAL do torcicolo congênito e topografia doACESSÓRIO. Falta anatomia cirúrgica independente para julgar o item. Sem gabarito oficial,semprovavel.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "e24bfb31014060af03253f916a1bb2b690ab590cc9732b54cd11ebda5fa45c12"
+   "questaoSha256": "e24bfb31014060af03253f916a1bb2b690ab590cc9732b54cd11ebda5fa45c12",
+   "pendencia": "Resumo21 não descreve LIBERAÇÃO PROXIMAL do torcicolo congênito e topografia doACESSÓRIO. Falta anatomia cirúrgica independente para julgar o item. Sem gabarito oficial,semprovavel."
   },
   "pediatria-0812": {
    "tema": "pediatria",
@@ -51529,14 +51562,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos de trauma/lesões neuromusculares não definem níveisGMFCS por auxílio de marcha,escada,cadeira e distância aos7anos. Falta tabela funcional independenteI–V,não classificar por descrição de outra doença. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo"
    ],
-   "questaoSha256": "32f7a5938905288bdee8dfe5fe713b3e8d2a62c9325ac107e8c312ef39cbb762"
+   "questaoSha256": "32f7a5938905288bdee8dfe5fe713b3e8d2a62c9325ac107e8c312ef39cbb762",
+   "pendencia": "Resumos de trauma/lesões neuromusculares não definem níveisGMFCS por auxílio de marcha,escada,cadeira e distância aos7anos. Falta tabela funcional independenteI–V,não classificar por descrição de outra doença. Sem selo."
   },
   "pediatria-0867": {
    "tema": "pediatria",
@@ -51596,14 +51630,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 de trauma não define algoritmo da criança FEBRIL COM JOELHO DOLOROSO para escolherRX/hemograma/VHS/PCR versus punção,US ou observação. Falta investigação independente de infecção osteoarticular e diferenciação das quatro condutas;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "9b8315f12bade36b106437b65d75f175277f713273a657e63890e6127557adad"
+   "questaoSha256": "9b8315f12bade36b106437b65d75f175277f713273a657e63890e6127557adad",
+   "pendencia": "Resumo28 de trauma não define algoritmo da criança FEBRIL COM JOELHO DOLOROSO para escolherRX/hemograma/VHS/PCR versus punção,US ou observação. Falta investigação independente de infecção osteoarticular e diferenciação das quatro condutas;sem selo."
   },
   "pediatria-0869": {
    "tema": "pediatria",
@@ -51612,14 +51647,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não fornece protocolo de criança TORPOROSA39,5°C com provável infecção do joelho e indicação de PUNÇÃO CIRÚRGICA versusRM/cintilo/US. Falta conduta independente de emergência infecciosa;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "56288221db6d3140a76a2cb68bfd93a8df52d3404bd5976c6eb437cae92a2547"
+   "questaoSha256": "56288221db6d3140a76a2cb68bfd93a8df52d3404bd5976c6eb437cae92a2547",
+   "pendencia": "Resumo28 não fornece protocolo de criança TORPOROSA39,5°C com provável infecção do joelho e indicação de PUNÇÃO CIRÚRGICA versusRM/cintilo/US. Falta conduta independente de emergência infecciosa;sem selo."
   },
   "pediatria-0870": {
    "tema": "pediatria",
@@ -51629,14 +51665,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não define sensibilidade doGRAM em ARTRITE SÉPTICA infantil nem o valor30%daC e indicação de ARTROTOMIA após Gramnegativo. Falta dado/protocolo independente,não inventar estatística ou confundir negativo com exclusão;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "8150f370af9b67ad21ce642f4286b6c08d0e7dead8235e92fd3c3fb5254ffc15"
+   "questaoSha256": "8150f370af9b67ad21ce642f4286b6c08d0e7dead8235e92fd3c3fb5254ffc15",
+   "pendencia": "Resumo28 não define sensibilidade doGRAM em ARTRITE SÉPTICA infantil nem o valor30%daC e indicação de ARTROTOMIA após Gramnegativo. Falta dado/protocolo independente,não inventar estatística ou confundir negativo com exclusão;sem selo."
   },
   "pediatria-0871": {
    "tema": "pediatria",
@@ -51645,14 +51682,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não informa CONTAGEM SINOVIAL NORMAL e proporção MONONUCLEAR versus polimorfonuclear nos limiares5000/50000. Falta referência laboratorial independente para conferirB e distratores;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "6266759597ccaedf97df8acc049ae8913a077d65b7ce32dc374baf85f2d94466"
+   "questaoSha256": "6266759597ccaedf97df8acc049ae8913a077d65b7ce32dc374baf85f2d94466",
+   "pendencia": "Resumo28 não informa CONTAGEM SINOVIAL NORMAL e proporção MONONUCLEAR versus polimorfonuclear nos limiares5000/50000. Falta referência laboratorial independente para conferirB e distratores;sem selo."
   },
   "pediatria-0872": {
    "tema": "pediatria",
@@ -51661,14 +51699,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não descreve epidemiologia etária/cultura difícil deKINGELLA KINGAE versus pneumococo,MRSA eH.influenzae. Falta fonte microbiológica independente,não inferir de infecção traumática de outro segmento;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "b95616bd05967254aee4571776eac46bef4f640a385b2c5df5a39f677cdc93d1"
+   "questaoSha256": "b95616bd05967254aee4571776eac46bef4f640a385b2c5df5a39f677cdc93d1",
+   "pendencia": "Resumo28 não descreve epidemiologia etária/cultura difícil deKINGELLA KINGAE versus pneumococo,MRSA eH.influenzae. Falta fonte microbiológica independente,não inferir de infecção traumática de outro segmento;sem selo."
   },
   "pediatria-0877": {
    "tema": "pediatria",
@@ -51697,15 +51736,16 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos23/24 não definem imagem diagnóstica daDDQ aos6MESES e comparaçãoRXAP/US/RM/TC. Trauma da bacia comRXAPnão prova algoritmo do quadril congênito. Falta critério etário independente;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "a862d97f5a055ff84199fc1f0be28f79a55a35936a4bacb98e47205d37e94170"
+   "questaoSha256": "a862d97f5a055ff84199fc1f0be28f79a55a35936a4bacb98e47205d37e94170",
+   "pendencia": "Resumos23/24 não definem imagem diagnóstica daDDQ aos6MESES e comparaçãoRXAP/US/RM/TC. Trauma da bacia comRXAPnão prova algoritmo do quadril congênito. Falta critério etário independente;sem selo."
   },
   "pediatria-0879": {
    "tema": "pediatria",
@@ -51714,15 +51754,16 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos23/24 não definem tratamento daDDQ aos6MESES por PAVLIK,FREJKA,REDUÇÃO INCRUENTA COM GESSO ou aberta. Falta algoritmo etário/estabilidade independente,sem transpor redução de luxaçãoTRAUMÁTICA. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril"
    ],
-   "questaoSha256": "62043b3dcacd64f04ecb6568c3420231b1d41f8a0aaafb1b7d0b9443d36ed14a"
+   "questaoSha256": "62043b3dcacd64f04ecb6568c3420231b1d41f8a0aaafb1b7d0b9443d36ed14a",
+   "pendencia": "Resumos23/24 não definem tratamento daDDQ aos6MESES por PAVLIK,FREJKA,REDUÇÃO INCRUENTA COM GESSO ou aberta. Falta algoritmo etário/estabilidade independente,sem transpor redução de luxaçãoTRAUMÁTICA. Sem selo."
   },
   "pediatria-0881": {
    "tema": "pediatria",
@@ -51731,14 +51772,15 @@
    ],
    "prova": "R4 Coluna Joinville",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo07 descreve história suspeita e investigação de maus-tratos,mas não correlaciona especificamente COMA+HEMORRAGIA RETINIANA a trauma abusivo nem fornece diferencial com meningite,queda,intoxicação e convulsão. Falta evidência independente do conjunto neuro-oftalmológico;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-07-patologicas-maus-tratos"
    ],
-   "questaoSha256": "7677ba74b9be857bf92aabec9efe770f3b821c3ab0f6ef222bfb07b2c7b557db"
+   "questaoSha256": "7677ba74b9be857bf92aabec9efe770f3b821c3ab0f6ef222bfb07b2c7b557db",
+   "pendencia": "Resumo07 descreve história suspeita e investigação de maus-tratos,mas não correlaciona especificamente COMA+HEMORRAGIA RETINIANA a trauma abusivo nem fornece diferencial com meningite,queda,intoxicação e convulsão. Falta evidência independente do conjunto neuro-oftalmológico;sem selo."
   },
   "pediatria-0882": {
    "tema": "pediatria",
@@ -51748,15 +51790,16 @@
    ],
    "prova": "R4 Coluna Joinville",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos21/22 de trauma não definem prognóstico de progressão daEIA porRisser,puberdade,menarca,telarca e distância dedo-chão. Falta estratificação independente para identificar o critério não relacionado;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-08-mao-carpo",
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "6ec80e9fd6b39f261d10074517ff276f03d7d987c2a2a7a89e7bde3daeb0d80e"
+   "questaoSha256": "6ec80e9fd6b39f261d10074517ff276f03d7d987c2a2a7a89e7bde3daeb0d80e",
+   "pendencia": "Resumos21/22 de trauma não definem prognóstico de progressão daEIA porRisser,puberdade,menarca,telarca e distância dedo-chão. Falta estratificação independente para identificar o critério não relacionado;sem selo."
   },
   "pediatria-0883": {
    "tema": "pediatria",
@@ -51765,14 +51808,15 @@
    ],
    "prova": "R4 Coluna Joinville",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumos de trauma cervical/toracolombar não classificam ESCOLIOSE IDIOPÁTICA DO ADOLESCENTE por idade,ADAMS e triângulo do talhe,nem a diferenciam de cifose/congênita/infantil. Falta diagnóstico morfológico independente;sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-21-coluna-cervical"
    ],
-   "questaoSha256": "2fee1ca192b680fc726f7221b5b8b42e0cf2f5e42b8d4b3644393757e441e4bb"
+   "questaoSha256": "2fee1ca192b680fc726f7221b5b8b42e0cf2f5e42b8d4b3644393757e441e4bb",
+   "pendencia": "Resumos de trauma cervical/toracolombar não classificam ESCOLIOSE IDIOPÁTICA DO ADOLESCENTE por idade,ADAMS e triângulo do talhe,nem a diferenciam de cifose/congênita/infantil. Falta diagnóstico morfológico independente;sem selo."
   },
   "pediatria-0885": {
    "tema": "pediatria",
@@ -51782,14 +51826,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não define CINÉTICA DA VHS na infecção infantil,pico3–5DIAS e normalização3SEMANAS. Falta dado laboratorial independente;gabaritoA preservado sem confirmar números de memória. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "ad17ca0008e7c4105e9515339cc149936bfb4fa644239f5303d50a51952bd6ad"
+   "questaoSha256": "ad17ca0008e7c4105e9515339cc149936bfb4fa644239f5303d50a51952bd6ad",
+   "pendencia": "Resumo28 não define CINÉTICA DA VHS na infecção infantil,pico3–5DIAS e normalização3SEMANAS. Falta dado laboratorial independente;gabaritoA preservado sem confirmar números de memória. Sem selo."
   },
   "pediatria-0886": {
    "tema": "pediatria",
@@ -51799,14 +51844,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não define CINÉTICA DA PCR,início6HORAS,pico2DIAS e normalização1SEMANA. Falta dado laboratorial independente;gabaritoA preservado sem inventar cronologia. Sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "53b2fc0124e0e304c00f1778a6f397981ac4e94d26050de032cdae6a2443658b"
+   "questaoSha256": "53b2fc0124e0e304c00f1778a6f397981ac4e94d26050de032cdae6a2443658b",
+   "pendencia": "Resumo28 não define CINÉTICA DA PCR,início6HORAS,pico2DIAS e normalização1SEMANA. Falta dado laboratorial independente;gabaritoA preservado sem inventar cronologia. Sem selo."
   },
   "pediatria-0887": {
    "tema": "pediatria",
@@ -51816,14 +51862,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não comparaVHS/PCR para ACOMPANHAR RESPOSTA da infecção ao tratamento. Falta desempenho/cinética independente para julgar o item;gabaritoB preservado sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "badba7465e9f2844d025286deeaf3dfef25974e0293eeff673ea50016e09d046"
+   "questaoSha256": "badba7465e9f2844d025286deeaf3dfef25974e0293eeff673ea50016e09d046",
+   "pendencia": "Resumo28 não comparaVHS/PCR para ACOMPANHAR RESPOSTA da infecção ao tratamento. Falta desempenho/cinética independente para julgar o item;gabaritoB preservado sem selo."
   },
   "pediatria-0888": {
    "tema": "pediatria",
@@ -51833,14 +51880,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não define probabilidade de SINOVIAL>80000/mm³ eNEUTRÓFILOS>75%na criança febril do caso. Falta referência independente de contagem/distribuição na artrite séptica;gabaritoA preservado sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "c4ea3dd55064c3c66cf9504abcb32345872147fe698585140ea023ee81e49140"
+   "questaoSha256": "c4ea3dd55064c3c66cf9504abcb32345872147fe698585140ea023ee81e49140",
+   "pendencia": "Resumo28 não define probabilidade de SINOVIAL>80000/mm³ eNEUTRÓFILOS>75%na criança febril do caso. Falta referência independente de contagem/distribuição na artrite séptica;gabaritoA preservado sem selo."
   },
   "pediatria-0889": {
    "tema": "pediatria",
@@ -51850,14 +51898,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo28 não desenvolve sensibilidade/cronologia doRXem INFECÇÃO ÓSSEA/ARTICULAR AGUDA nem utilidade de edema,espaço e destruição. Falta comparação independente de achados iniciais/tardios para julgar a utilidade;gabaritoB preservado sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwoodcriancas10-28-joelho-intra-articular"
    ],
-   "questaoSha256": "902a3cd1dec8802525d94d85370e1fb15e1bdebad22a5ae1d595c3ddcdc14887"
+   "questaoSha256": "902a3cd1dec8802525d94d85370e1fb15e1bdebad22a5ae1d595c3ddcdc14887",
+   "pendencia": "Resumo28 não desenvolve sensibilidade/cronologia doRXem INFECÇÃO ÓSSEA/ARTICULAR AGUDA nem utilidade de edema,espaço e destruição. Falta comparação independente de achados iniciais/tardios para julgar a utilidade;gabaritoB preservado sem selo."
   },
   "pediatria-0905": {
    "tema": "pediatria",
@@ -73141,8 +73190,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 sustenta79%mediais,maior profundidade eIIacístico cirúrgico,mas não descreve morfologia EM TAÇA nem mecanismo específico da lesãoLATERAL naC para conferir o conjunto. Falta descrição independente completa,não usar nota contextual ou comentário anterior. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73156,7 +73205,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "8bbd662aea5a8d3c5fca8e7c03ef5ef14dd7e1951907ebb17111bfd22893b052"
+   "questaoSha256": "8bbd662aea5a8d3c5fca8e7c03ef5ef14dd7e1951907ebb17111bfd22893b052",
+   "pendencia": "Resumo31 sustenta79%mediais,maior profundidade eIIacístico cirúrgico,mas não descreve morfologia EM TAÇA nem mecanismo específico da lesãoLATERAL naC para conferir o conjunto. Falta descrição independente completa,não usar nota contextual ou comentário anterior. Sem selo."
   },
   "pediatria-1335": {
    "tema": "pediatria",
@@ -73165,7 +73215,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -73180,7 +73230,32 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "859c8c1e6e39fb7d810ab6587bca5b7b81250ff2625930cbd28f3d85e0aa1747"
+   "questaoSha256": "859c8c1e6e39fb7d810ab6587bca5b7b81250ff2625930cbd28f3d85e0aa1747",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-31-pe",
+      "titulo": "Fraturas, luxações e outras lesões do pé na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
+      "secoes": [
+       "Calcâneo e luxação subtalar",
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "calcaneo-e-luxacao-subtalar-da0d400e",
+       "como-ler-este-capitulo-134e020b"
+      ],
+      "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
+      "trechosSha256": "713187cab68f3b763d4cbc66567ca39ce184574782a9e43b680c315da8f29a8c"
+     }
+    ],
+    "questaoSha256": "859c8c1e6e39fb7d810ab6587bca5b7b81250ff2625930cbd28f3d85e0aa1747",
+    "comentarioSha256": "52db6e26ad1961287dfcb832fbe13aedc45a4d02bd316770fb16d720970a6404"
+   }
   },
   "pediatria-1336": {
    "tema": "pediatria",
@@ -73189,8 +73264,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 orienta cirurgia adolescente apósEDEMA,mas não define aguardar resolução das FLICTENAS,qualificador daB. Falta protocolo pediátrico da condição cutânea/timing,não presumir equivalência edema=flictenas. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73204,7 +73279,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "a22dabac624056128e1f0923262e155a298d20d0b82998ce78f967cf1ce19fb8"
+   "questaoSha256": "a22dabac624056128e1f0923262e155a298d20d0b82998ce78f967cf1ce19fb8",
+   "pendencia": "Resumo31 orienta cirurgia adolescente apósEDEMA,mas não define aguardar resolução das FLICTENAS,qualificador daB. Falta protocolo pediátrico da condição cutânea/timing,não presumir equivalência edema=flictenas. Sem selo."
   },
   "pediatria-1337": {
    "tema": "pediatria",
@@ -73214,8 +73290,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 sustenta medial85%,inversão,tálus noencaixe,navicular vazio e tibialposterior interposto,mas não define CABEÇA PALPADA LATERALMENTE daD. Falta anatomia clínica independente desse achado. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73230,7 +73306,8 @@
     "rockwoodcriancas10-12-monteggia",
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "5cd7fedc497ba9d02dbc9ece44b577eb3664ff96e911481aeb4dd6b1969b9099"
+   "questaoSha256": "5cd7fedc497ba9d02dbc9ece44b577eb3664ff96e911481aeb4dd6b1969b9099",
+   "pendencia": "Resumo31 sustenta medial85%,inversão,tálus noencaixe,navicular vazio e tibialposterior interposto,mas não define CABEÇA PALPADA LATERALMENTE daD. Falta anatomia clínica independente desse achado. Sem selo."
   },
   "pediatria-1338": {
    "tema": "pediatria",
@@ -73239,8 +73316,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 sustenta cuboide,quebra-nozes,71%RXinicialnormal e GESSO2–3semanas,mas não autoriza BOTA nem explicita confirmação noRXseguinte,como aB. Falta protocolo independente de diagnóstico tardio e alternativa de imobilização. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73254,7 +73331,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "44a3296bba8f67eacca06a4a7a15b1ef42df02facdd5afe41439b5fa385f10d9"
+   "questaoSha256": "44a3296bba8f67eacca06a4a7a15b1ef42df02facdd5afe41439b5fa385f10d9",
+   "pendencia": "Resumo31 sustenta cuboide,quebra-nozes,71%RXinicialnormal e GESSO2–3semanas,mas não autoriza BOTA nem explicita confirmação noRXseguinte,como aB. Falta protocolo independente de diagnóstico tardio e alternativa de imobilização. Sem selo."
   },
   "pediatria-1339": {
    "tema": "pediatria",
@@ -73263,7 +73341,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -73278,7 +73356,30 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "3d8f937b56286591f7af20fe0b52d489fc22e39c8553f1c2cd5dfc1ac938e574"
+   "questaoSha256": "3d8f937b56286591f7af20fe0b52d489fc22e39c8553f1c2cd5dfc1ac938e574",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-31-pe",
+      "titulo": "Fraturas, luxações e outras lesões do pé na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
+      "secoes": [
+       "Mediopé e LISFRANC"
+      ],
+      "blocos": [
+       "mediope-e-lisfranc-1ab697b9"
+      ],
+      "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
+      "trechosSha256": "25631303f832572a20f649ca2d4d425936ef8cb25249778bc835c88d6b5dd501"
+     }
+    ],
+    "questaoSha256": "3d8f937b56286591f7af20fe0b52d489fc22e39c8553f1c2cd5dfc1ac938e574",
+    "comentarioSha256": "55a2d8f98132362745c0550c8e6b8e8d408835e4f87c7f22f9a98dad26c4cd81"
+   }
   },
   "pediatria-1340": {
    "tema": "pediatria",
@@ -73287,8 +73388,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Revisão automática622identificou lacuna editorial válida:resumo31 apenas nomeiaHardcastleB,não define anatomia dos tiposA/B/C(total/parcial/divergente). A questão exige compararBcomC,e o comentário antigo não é fonte para recuperar a classificação. Falta descrição independente dos padrões e respectivas incongruências para uma aula autônoma. Restaurado comentário anterior integralmente,sem selo;não contar revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73302,7 +73403,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "9ed4fdc03cc99d5399973bf34b2adc3bfa1d5d8925918043a9278bb8fd704355"
+   "questaoSha256": "9ed4fdc03cc99d5399973bf34b2adc3bfa1d5d8925918043a9278bb8fd704355",
+   "pendencia": "Revisão automática622identificou lacuna editorial válida:resumo31 apenas nomeiaHardcastleB,não define anatomia dos tiposA/B/C(total/parcial/divergente). A questão exige compararBcomC,e o comentário antigo não é fonte para recuperar a classificação. Falta descrição independente dos padrões e respectivas incongruências para uma aula autônoma. Restaurado comentário anterior integralmente,sem selo;não contar revisão concluída."
   },
   "pediatria-1341": {
    "tema": "pediatria",
@@ -73311,8 +73413,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 sustenta primeiro até5e quinto depois e limites gerais20°/5mm,mas não especifica primeiro ISOLADO daD. Também separa primeiro com10°ou qualquer encurtamento,o que exige ressalva à regra geral. Falta definição independente do padrão isolado;sem selo,sem ensinar20°como limite universal do primeiro.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73326,7 +73428,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "5bcb130bd31c40ff531b6b3b7cdf71a6bee21daeee1d5a47f6ca6be94e54d26d"
+   "questaoSha256": "5bcb130bd31c40ff531b6b3b7cdf71a6bee21daeee1d5a47f6ca6be94e54d26d",
+   "pendencia": "Resumo31 sustenta primeiro até5e quinto depois e limites gerais20°/5mm,mas não especifica primeiro ISOLADO daD. Também separa primeiro com10°ou qualquer encurtamento,o que exige ressalva à regra geral. Falta definição independente do padrão isolado;sem selo,sem ensinar20°como limite universal do primeiro."
   },
   "pediatria-1342": {
    "tema": "pediatria",
@@ -73335,8 +73438,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 define apófise longitudinal,mas não explicita orientação TRANSVERSAL da fratura nem a comparação completa naA. Falta diferenciação radiográfica independente de ambas,não inferir toda linha não longitudinal como fratura. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73350,7 +73453,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "741553550eed26102a25218c085640d714f61b40b6dc21a1c3d0d6c53df5b654"
+   "questaoSha256": "741553550eed26102a25218c085640d714f61b40b6dc21a1c3d0d6c53df5b654",
+   "pendencia": "Resumo31 define apófise longitudinal,mas não explicita orientação TRANSVERSAL da fratura nem a comparação completa naA. Falta diferenciação radiográfica independente de ambas,não inferir toda linha não longitudinal como fratura. Sem selo."
   },
   "pediatria-1343": {
    "tema": "pediatria",
@@ -73359,8 +73463,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Resumo31 sustenta segundo/colo,bota4–6semgesso,navicular sagital e retorno5,6meses,mas não especifica CARGA PARCIAL naCnem frequência deRXinicialpositivo daD. Falta protocolo independente de carga/imagem das fraturas de estresse;sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73374,7 +73478,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "03909a00f97422eb1e181a09c25f45bdb6765b7118797435748a47b0928e48a4"
+   "questaoSha256": "03909a00f97422eb1e181a09c25f45bdb6765b7118797435748a47b0928e48a4",
+   "pendencia": "Resumo31 sustenta segundo/colo,bota4–6semgesso,navicular sagital e retorno5,6meses,mas não especifica CARGA PARCIAL naCnem frequência deRXinicialpositivo daD. Falta protocolo independente de carga/imagem das fraturas de estresse;sem selo."
   },
   "pediatria-1344": {
    "tema": "pediatria",
@@ -73383,8 +73488,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo31 associa prego através do tênis aPseudomonas e recomenda internar,RM e desbridar,mas não desenvolve o diagnóstico de ARTRITE SÉPTICA/OSTEOMIELITE,a osteocondrite específica,nem a extensão do desbridamento emPARTES MOLES,CARTILAGEM E OSSO e antibióticoVENOSO daB. Falta protocolo independente do quadro profundo completo;sem ampliar por memória. Sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73398,7 +73503,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-31-pe"
    ],
-   "questaoSha256": "bacf25036a4cccba6c91484f98c21c7b6ef25dd7e23c9fdbc08c1214344c238f"
+   "questaoSha256": "bacf25036a4cccba6c91484f98c21c7b6ef25dd7e23c9fdbc08c1214344c238f",
+   "pendencia": "O resumo31 associa prego através do tênis aPseudomonas e recomenda internar,RM e desbridar,mas não desenvolve o diagnóstico de ARTRITE SÉPTICA/OSTEOMIELITE,a osteocondrite específica,nem a extensão do desbridamento emPARTES MOLES,CARTILAGEM E OSSO e antibióticoVENOSO daB. Falta protocolo independente do quadro profundo completo;sem ampliar por memória. Sem selo."
   },
   "pediatria-1345": {
    "tema": "pediatria",

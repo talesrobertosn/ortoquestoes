@@ -34879,19 +34879,43 @@
   "conferido": false
  },
  "pediatria-1335": {
-  "conceito": "O calcâneo da criança quebra pouco e quebra diferente: a cartilagem absorve a energia e o traço raramente entra na articulação.\n\n**A frequência e o padrão.** Rara: **1 em 100.000** fraturas. Abaixo dos **14 anos**, predominam as **extra-articulares** (o calcâneo absorve a compressão em vez de a dissipar pela articulação); **78%** extra-articulares numa série. No adolescente, o padrão é o do adulto, com menos cominuição mesmo com quedas maiores (Rockwood crianças, 10ª ed., cap. 31).\n\n**O mecanismo.** **Queda de altura**, de longe o mais comum; depois, **veículos**; também esmagamento (com síndrome compartimental) e cortador de grama (expostas). Na criança pequena, quedas menores de **4 pés** geram fraturas sem desvio, **diagnosticadas tarde**.\n\n**O diagnóstico tardio.** **44%** a **55%** perdidas inicialmente. A radiografia de **2 semanas** costuma mostrar o traço. Incidências: **anteroposterior**, **perfil** (faceta posterior, BOHLER) e **axial de HARRIS**; oblíquas para o processo anterior. **Tomografia** é o melhor exame; a ressonância ajuda na criança pequena. Diferenciais: **SEVER**, osteomielite, cisto, fratura de estresse.\n\n**Os ângulos.** **BOHLER**: adulto **20 a 40 graus**; na criança, **um pouco menor** (ossificação incompleta): comparar com o **lado oposto**. O calcâneo só se parece com o do adulto **depois dos 10 anos**. **GISSANE**: **95 a 105 graus**.\n\n**Associadas.** Mais fraturas dos **membros inferiores** que no adulto (o dobro) e menos do **esqueleto axial** (metade); avaliar coluna lombar, punho e membros.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O calcâneo da criança é extra-articular, oculto e tem BOHLER próprio.\n\n> **Na prova:** calcâneo da criança: **raro**, **extra-articular** (**78%**) abaixo de 14 anos; **44% a 55%** perdidas, radiografia de **2 semanas**; BOHLER **20 a 40** no adulto, **menor** na criança: comparar com o **outro lado**; GISSANE **95 a 105**.",
-  "correta": "**C: é rara, a maioria abaixo dos 14 anos é extra-articular, muitas passam despercebidas (44% a 55%) e a radiografia de 2 semanas costuma mostrar o traço; o ângulo de BOHLER deve ser comparado com o lado oposto.** São os dados do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "A fratura do calcâneo infantil é **rara** e, abaixo dos 14 anos, predomina o padrão **extra-articular**, 78% no resumo. **44% a 55%** podem passar despercebidas; a radiografia de **2 semanas** é um recurso diagnóstico. A alternativa C reúne esses dados (Rockwood and Wilkins, 10ª edição, capítulo 31).\n\nA radiografia inicial sem traço não elimina a lesão numa criança com dor após queda. O pé imaturo tem grande componente cartilaginoso, e o capítulo orienta comparação com o outro lado quando há dúvida. Tomografia é destacada como o melhor exame para caracterizar a fratura calcânea.\n\nO ângulo de **Böhler é menor na criança** que no adulto, cuja referência citada é 20°a 40°. Por isso, a comparação contralateral é mais informativa que transportar um intervalo adulto como normalidade obrigatória aos 6 anos.\n\n**Na prova: ** combinar baixa frequência, possibilidade de imagem inicial negativa e particularidade angular. Não concluir que a dor é apenas contusão porque falta um traço evidente no primeiro RX.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O calcâneo da criança é extra-articular, oculto e tem BOHLER próprio.",
+  "correta": "Alternativa C. Mantém a predominância extra-articular, o risco de lesão oculta e a avaliação contralateral. A radiografia tardia faz parte da investigação citada, sem dispensar imagem adicional se o quadro exigir.",
   "incorretas": {
-   "A": "**Duplo erro.** É rara (1 em 100.000 fraturas) e, na criança, sobretudo extra-articular.",
-   "B": "**Falso.** Muitas vezes o traço não aparece na radiografia inicial; 44% a 55% foram perdidas.",
-   "D": "**Ao contrário.** Na criança o ângulo é um pouco menor, pela ossificação incompleta."
+   "A": "A lesão é rara e, pelo resumo, a maioria nos menores de 14 anos é extra-articular. A opção inverte frequência e padrão.",
+   "B": "A proporção de 44% a 55% de perdas contradiz a afirmação de que o traço quase sempre aparece inicialmente. O contexto clínico deve sustentar a investigação.",
+   "D": "O ângulo infantil é menor, não maior que o adulto. Usar a comparação contralateral evita confundir desenvolvimento com deformidade ou deixar uma fratura passar."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Calcaneal Fractures (Fig. 31-9)"
+   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Calcâneo e luxação subtalar; Como ler este capítulo."
   ],
+  "conferido": false,
   "geradoEm": "2026-10-28",
-  "conferido": false
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-31-pe",
+     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
+     "secoes": [
+      "Calcâneo e luxação subtalar",
+      "Como ler este capítulo"
+     ],
+     "blocos": [
+      "calcaneo-e-luxacao-subtalar-da0d400e",
+      "como-ler-este-capitulo-134e020b"
+     ],
+     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
+     "trechosSha256": "713187cab68f3b763d4cbc66567ca39ce184574782a9e43b680c315da8f29a8c"
+    }
+   ],
+   "questaoSha256": "859c8c1e6e39fb7d810ab6587bca5b7b81250ff2625930cbd28f3d85e0aa1747",
+   "comentarioSha256": "52db6e26ad1961287dfcb832fbe13aedc45a4d02bd316770fb16d720970a6404"
+  }
  },
  "pediatria-1336": {
   "conceito": "O calcâneo da criança remodela; o do adolescente, não. O tratamento acompanha essa linha divisória.\n\n**A criança.** Abaixo dos **10 anos**, **quase todas as fechadas** vão **sem cirurgia**, **inclusive as intra-articulares desviadas**, pela remodelação. **Extra-articular**: gesso suropodálico por **6 semanas**, carga quando confortável (após 2 a 3 semanas). **Intra-articular sem desvio**: gesso **sem carga** por 6 semanas (Rockwood crianças, 10ª ed., cap. 31).\n\n**Língua.** Pode ir sem cirurgia se o afastamento posterior for **menor que 1 cm** e o tendão calcâneo não estiver encurtado; às vezes, redução percutânea de ESSEX-LOPRESTI (pino como alavanca).\n\n**O adolescente.** **Intra-articular desviada** = **redução aberta e fixação**, como no adulto: restaurar a faceta posterior, a altura e a largura. **Adiar** até o edema ceder e as **flictenas** resolverem; retalhos espessos; placa específica; enxerto se preciso. Via em **L lateral** (cuidado com o **sural**). Bons resultados em séries de 11,5 a 13 anos. Cirurgia exigente: se não tem experiência, encaminhar.\n\n**As complicações.** **Deiscência da ferida** é a mais comum após redução aberta no adulto (até **25%**), menos na criança (menos fatores de risco: tabagismo, obesidade, diabetes); fechamento em **duas camadas**, terapia de pressão negativa na incisão. **Síndrome dolorosa complexa regional**: mais em **meninas** perto da puberdade, sobretudo no membro inferior; fisioterapia intensiva, equipe multidisciplinar. **Tendões fibulares**: implante saliente (retirar ajuda), parede lateral desviada nos não operados.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A linha dos 10 anos e a indicação do adolescente são o centro do tema.\n\n> **Na prova:** abaixo de **10 anos** = **conservador** (até intra-articular desviada); extra-articular = gesso **6 semanas**; adolescente intra-articular desviada = **redução aberta** após o **edema ceder**; complicação mais comum da cirurgia = **deiscência**.",
@@ -34939,19 +34963,41 @@
   "conferido": false
  },
  "pediatria-1339": {
-  "conceito": "A lesão de LISFRANC é discreta, perdida com facilidade e cara quando perdida. Na criança, o segundo metatarsal encaixado e a equimose plantar contam a história.\n\n**O mecanismo.** Golpe direto (objeto caindo) ou indireto: **flexão plantar forçada do antepé com rotação**; a maioria no **esporte**. Três padrões: **ponta do pé** (o mais comum; **56%** na série de WILEY), **calcanhar-dedos** (ajoelhado) e **antepé preso** com queda para trás. No patinete, dorsiflexão com abdução: fratura da base do segundo metatarsal com esmagamento do cuboide (Rockwood crianças, 10ª ed., cap. 31).\n\n**A anatomia.** As bases são trapezoidais, de base dorsal: um **arco romano**. O **segundo metatarsal** fica **encaixado** no degrau dos cuneiformes, por isso costuma quebrar na luxação. Os **ligamentos intermetatarsais** não existem entre o **primeiro e o segundo**; o segundo se prende ao **cuneiforme medial** pelo **ligamento de LISFRANC**. Plantares fortes, dorsais fracos. A **artéria pediosa** e o **nervo fibular profundo** passam entre o primeiro e o segundo.\n\n**O exame.** Dor e edema na base do primeiro e do segundo; **equimose plantar** (Fig. 31-27); dor ao abduzir e pronar o antepé ou na elevação do calcanhar em apoio único. Avaliar síndrome compartimental no esmagamento.\n\n**A imagem.** Anteroposterior, perfil e oblíqua, **com carga** se possível; **comparar com o outro pé**. No anteroposterior, a borda **medial do segundo metatarsal** alinha com a do **cuneiforme médio**; na oblíqua, a medial do **quarto** com a do **cuboide**. Acima de **6 anos**, distância **primeiro-segundo metatarsal menor que 3 mm** e **cuneiforme medial-segundo menor que 2 mm**. Normal e suspeita mantida: **tomografia** ou **ressonância**. **Fratura da base do segundo metatarsal** pode ser luxação reduzida; com **fratura do cuboide**, é **altamente suspeita** de LISFRANC (Fig. 31-31).\n\n**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0718`), que perguntou qual combinação de fraturas é altamente sugestiva de LISFRANC; a oficial está sem gabarito, e o capítulo aponta a base do segundo metatarsal com o cuboide. Depois, faça a oficial.\n\n> **Na prova:** LISFRANC: **ponta do pé** (56%); **segundo metatarsal encaixado**; ligamento **cuneiforme medial-segundo metatarsal**; **equimose plantar**; radiografia **com carga** e **outro pé**; **segundo metatarsal + cuboide** = altamente sugestivo.",
-  "correta": "**C: a equimose plantar é sinal importante; radiografias com carga, comparadas com o outro pé, e fratura da base do segundo metatarsal com fratura do cuboide são altamente sugestivas.** É o que o capítulo descreve (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "**Equimose plantar no mediopé** após trauma é uma pista importante de **Lisfranc**. O resumo recomenda radiografias **com carga e comparação com o outro pé**; a combinação de **base do segundo metatarsal com cuboide** fraturados é altamente sugestiva. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 31).\n\nO segundo metatarsal fica encaixado no mediopé, e o ligamento de Lisfranc une **cuneiforme medial ao segundo metatarsal**. A anatomia explica por que avaliar só a distância entre metatarsais, sem reconhecer o cuneiforme e a congruência, é incompleto.\n\nO mecanismo em ponta do pé aparece em 56% no resumo. Acima de 6 anos, ele cita intervalos normais menores que 3 mm entre primeiro e segundo metatarsais e menores que 2 mm entre cuneiforme medial e segundo. São referências do capítulo, que devem acompanhar a qualidade da incidência e a comparação.\n\n**Na prova: ** uma radiografia sem carga normal não encerra a investigação quando equimose e mecanismo mantêm a suspeita. O diagnóstico tardio, após 6 semanas, tem prognóstico pior na fonte.\n\n**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0718`), que perguntou qual combinação de fraturas é altamente sugestiva de LISFRANC; a oficial está sem gabarito, e o capítulo aponta a base do segundo metatarsal com o cuboide. Depois, faça a oficial.",
+  "correta": "Alternativa C. Combina o sinal clínico, o método radiográfico e a associação óssea descrita. Esses dados aumentam a suspeita, não dependem de um grande desvio aparente para merecer atenção.",
   "incorretas": {
-   "A": "**Mecanismo menos comum.** O mais comum foi a queda na ponta do pé (56%); o antepé preso foi 22%.",
-   "B": "**Inserção errada.** O ligamento de LISFRANC une o cuneiforme medial ao segundo metatarsal; entre o primeiro e o segundo não há ligamento intermetatarsal.",
-   "D": "**Falso.** A carga estressa a articulação; sem ela, a lesão sutil passa despercebida, e com suspeita mantida pede-se tomografia ou ressonância."
+   "A": "O mecanismo destacado é apoio em ponta do pé, não a queda para trás descrita como predominante. O enunciado já oferece mecanismo e equimose coerentes com a lesão.",
+   "B": "O ligamento não une primeiro e segundo metatarsais: ele vai do cuneiforme medial ao segundo metatarsal. Confundir sua inserção altera a relação anatômica que estabiliza o conjunto.",
+   "D": "A fonte recomenda carga e comparação quando se avalia o padrão sutil. Radiografia sem carga isolada não basta para excluir a lesão diante do contexto clínico."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Tarsometatarsal Injuries (Figs. 31-26 a 31-32)"
+   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Mediopé e LISFRANC."
   ],
+  "conferido": false,
   "geradoEm": "2026-10-28",
-  "conferido": false
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-31-pe",
+     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
+     "secoes": [
+      "Mediopé e LISFRANC"
+     ],
+     "blocos": [
+      "mediope-e-lisfranc-1ab697b9"
+     ],
+     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
+     "trechosSha256": "25631303f832572a20f649ca2d4d425936ef8cb25249778bc835c88d6b5dd501"
+    }
+   ],
+   "questaoSha256": "3d8f937b56286591f7af20fe0b52d489fc22e39c8553f1c2cd5dfc1ac938e574",
+   "comentarioSha256": "55a2d8f98132362745c0550c8e6b8e8d408835e4f87c7f22f9a98dad26c4cd81"
+  }
  },
  "pediatria-1340": {
   "conceito": "Na criança, a lesão de LISFRANC costuma ser parcial e pouco desviada. A meta é a mesma do adulto: articulação congruente e estável, confirmada com carga.\n\n**A classificação de HARDCASTLE.** **A**: incongruência **total**. **B**: **parcial** (primeiro metatarsal para medial ou os quatro laterais para lateral). **C**: **divergente**. Não contempla a lesão **sem desvio**, a mais facilmente perdida. **Na criança, a maioria é B com desvio mínimo**; A e C são raras (Rockwood crianças, 10ª ed., cap. 31).\n\n**Sem desvio ou \"entorse\".** Gesso suropodálico por **6 semanas** (WILEY usou 3 a 4 semanas com bons resultados).\n\n**Desviada.** Redução **anatômica**. MYERSON: após redução fechada, desvio **maior que 2 mm** ou ângulo talometatarsal **acima de 15 graus** = mau resultado. A autora: desvio **menor que 1 a 2 mm** = gesso **sem carga 6 semanas**, radiografia com carga depois; **acima de 1 a 2 mm** = **redução fechada** e **fios percutâneos**. O fio **mais importante** fixa o **segundo metatarsal ao cuneiforme medial**; retirar em 4 a 6 semanas.\n\n**Aberta.** Rara na criança pequena; numa série com média de 14,2 anos, **34%** (mais com fises fechadas). Obstáculos: **tendão tibial anterior**, fragmentos entre o segundo metatarsal e o cuneiforme médio, incongruência do primeiro. Duas incisões longitudinais; parafusos de 3,5 mm **evitando a fise proximal do primeiro metatarsal**; laterais com fios (preservar mobilidade); retirar os parafusos cedo.\n\n**Complicações.** A mais comum é a **artrose pós-traumática** (lesão perdida, perda de redução, lesão da cartilagem). Diagnóstico após **6 semanas** = resultados **ruins**. Artrodese rara na criança; não fundir as laterais.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O limite de 1 a 2 mm e o fio-chave são cobráveis.\n\n> **Na prova:** criança = **HARDCASTLE B**, desvio mínimo; **menor que 1 a 2 mm** = gesso **sem carga 6 semanas**; maior = **redução + fios** (chave: **segundo metatarsal-cuneiforme medial**); evitar a **fise do primeiro metatarsal**; complicação = **artrose**; diagnóstico após **6 semanas** = pior.",

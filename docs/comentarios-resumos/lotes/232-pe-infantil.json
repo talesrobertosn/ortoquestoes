@@ -1,0 +1,74 @@
+{
+  "pediatria-1335": {
+    "questaoSha256": "859c8c1e6e39fb7d810ab6587bca5b7b81250ff2625930cbd28f3d85e0aa1747",
+    "comentarioAnteriorSha256": "ddfba793512015b40562bdc8aeb4b92a1d43ef2ed741b810016778003597f557",
+    "comentario": {
+      "conceito": "A fratura do calcâneo infantil é **rara** e, abaixo dos 14 anos, predomina o padrão **extra-articular**, 78% no resumo. **44% a 55%** podem passar despercebidas; a radiografia de **2 semanas** é um recurso diagnóstico. A alternativa C reúne esses dados (Rockwood and Wilkins, 10ª edição, capítulo 31).\n\nA radiografia inicial sem traço não elimina a lesão numa criança com dor após queda. O pé imaturo tem grande componente cartilaginoso, e o capítulo orienta comparação com o outro lado quando há dúvida. Tomografia é destacada como o melhor exame para caracterizar a fratura calcânea.\n\nO ângulo de **Böhler é menor na criança** que no adulto, cuja referência citada é 20°a 40°. Por isso, a comparação contralateral é mais informativa que transportar um intervalo adulto como normalidade obrigatória aos 6 anos.\n\n**Na prova: ** combinar baixa frequência, possibilidade de imagem inicial negativa e particularidade angular. Não concluir que a dor é apenas contusão porque falta um traço evidente no primeiro RX.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O calcâneo da criança é extra-articular, oculto e tem BOHLER próprio.",
+      "correta": "Alternativa C. Mantém a predominância extra-articular, o risco de lesão oculta e a avaliação contralateral. A radiografia tardia faz parte da investigação citada, sem dispensar imagem adicional se o quadro exigir.",
+      "incorretas": {
+        "A": "A lesão é rara e, pelo resumo, a maioria nos menores de 14 anos é extra-articular. A opção inverte frequência e padrão.",
+        "B": "A proporção de 44% a 55% de perdas contradiz a afirmação de que o traço quase sempre aparece inicialmente. O contexto clínico deve sustentar a investigação.",
+        "D": "O ângulo infantil é menor, não maior que o adulto. Usar a comparação contralateral evita confundir desenvolvimento com deformidade ou deixar uma fratura passar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Calcâneo e luxação subtalar; Como ler este capítulo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-31-pe",
+        "titulo": "Fraturas, luxações e outras lesões do pé na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
+        "secoes": [
+          "Calcâneo e luxação subtalar",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "calcaneo-e-luxacao-subtalar-da0d400e",
+          "como-ler-este-capitulo-134e020b"
+        ],
+        "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
+        "trechosSha256": "713187cab68f3b763d4cbc66567ca39ce184574782a9e43b680c315da8f29a8c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1339": {
+    "questaoSha256": "3d8f937b56286591f7af20fe0b52d489fc22e39c8553f1c2cd5dfc1ac938e574",
+    "comentarioAnteriorSha256": "e7c58e64ed75459e0cfe37f3825739b6c4ce4f035b8fe0f59e758cc5cf1c5029",
+    "comentario": {
+      "conceito": "**Equimose plantar no mediopé** após trauma é uma pista importante de **Lisfranc**. O resumo recomenda radiografias **com carga e comparação com o outro pé**; a combinação de **base do segundo metatarsal com cuboide** fraturados é altamente sugestiva. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 31).\n\nO segundo metatarsal fica encaixado no mediopé, e o ligamento de Lisfranc une **cuneiforme medial ao segundo metatarsal**. A anatomia explica por que avaliar só a distância entre metatarsais, sem reconhecer o cuneiforme e a congruência, é incompleto.\n\nO mecanismo em ponta do pé aparece em 56% no resumo. Acima de 6 anos, ele cita intervalos normais menores que 3 mm entre primeiro e segundo metatarsais e menores que 2 mm entre cuneiforme medial e segundo. São referências do capítulo, que devem acompanhar a qualidade da incidência e a comparação.\n\n**Na prova: ** uma radiografia sem carga normal não encerra a investigação quando equimose e mecanismo mantêm a suspeita. O diagnóstico tardio, após 6 semanas, tem prognóstico pior na fonte.\n\n**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0718`), que perguntou qual combinação de fraturas é altamente sugestiva de LISFRANC; a oficial está sem gabarito, e o capítulo aponta a base do segundo metatarsal com o cuboide. Depois, faça a oficial.",
+      "correta": "Alternativa C. Combina o sinal clínico, o método radiográfico e a associação óssea descrita. Esses dados aumentam a suspeita, não dependem de um grande desvio aparente para merecer atenção.",
+      "incorretas": {
+        "A": "O mecanismo destacado é apoio em ponta do pé, não a queda para trás descrita como predominante. O enunciado já oferece mecanismo e equimose coerentes com a lesão.",
+        "B": "O ligamento não une primeiro e segundo metatarsais: ele vai do cuneiforme medial ao segundo metatarsal. Confundir sua inserção altera a relação anatômica que estabiliza o conjunto.",
+        "D": "A fonte recomenda carga e comparação quando se avalia o padrão sutil. Radiografia sem carga isolada não basta para excluir a lesão diante do contexto clínico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Mediopé e LISFRANC."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-31-pe",
+        "titulo": "Fraturas, luxações e outras lesões do pé na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
+        "secoes": [
+          "Mediopé e LISFRANC"
+        ],
+        "blocos": [
+          "mediope-e-lisfranc-1ab697b9"
+        ],
+        "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
+        "trechosSha256": "25631303f832572a20f649ca2d4d425936ef8cb25249778bc835c88d6b5dd501"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
