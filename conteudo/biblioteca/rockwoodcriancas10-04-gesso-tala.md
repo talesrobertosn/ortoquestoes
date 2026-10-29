@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-04-gesso-tala
-versao: 1
+versao: 2
 titulo: Gesso e tala na criança
 especialidade: pediatria
 acesso: gratis
@@ -31,7 +31,7 @@ As técnicas de redução são a tração longitudinal, a manipulação que recr
 
 **O corte.** Com o alinhamento confirmado, o gesso do antebraço é aberto e afastado do lado **oposto ao desvio inicial**: tendência a desviar para **dorsal**, abrir na face **volar**; para volar, abrir na dorsal. Na fibra de vidro, espaçadores mantêm as bordas abertas.
 
-**O gesso curto.** Estudos randomizados de boa qualidade mostraram que as fraturas dos **dois ossos do terço distal** vão **igualmente bem com gesso curto ou longo**; o gesso antebraquiopalmar serve para a maioria das fraturas do rádio e da ulna distais, desde que **oval** no corte, com **índice do gesso perto de 0,7** (largura anteroposterior dividida pela profundidade em perfil).
+**O gesso curto.** Estudos randomizados de boa qualidade mostraram que as fraturas dos **dois ossos do terço distal** vão **igualmente bem com gesso curto ou longo**; o gesso antebraquiopalmar serve para a maioria das fraturas do rádio e da ulna distais, desde que **oval** no corte, com **índice do gesso perto de 0,7** (diâmetro interno do gesso no perfil dividido pelo diâmetro no AP, no nível da fratura, como define o resumo do rádio distal).
 
 **O gesso longo em extensão com o polegar incluído.** Para a fratura que perde a redução quando o cotovelo é fletido a 90 graus. Incluir o polegar controla toda a rotação do antebraço e mantém o comprimento obtido sob tração. Algodão extra sobre a tabaqueira anatômica e o polegar, polegar em abdução e oposição neutras, molde do antebraço em leve pronação e molde supracondiliano sob leve tração; a borda palmar é recortada para liberar a flexão das metacarpofalângicas (Fig. 4-15).
 
