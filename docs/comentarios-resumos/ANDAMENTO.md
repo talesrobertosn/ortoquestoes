@@ -5,7 +5,7 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 97 |
-| pendente | 5 |
+| pendente | 9 |
 | pendente-figura-ausente | 2 |
 | pendente-fonte | 879 |
 | revisada | 1998 |
@@ -41,10 +41,10 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 30 | 0 | 23 |
 | Epidemiologia das fraturas na criança (`rockwoodcriancas10-01-epidemiologia-fraturas`) | 176 | 0 | 39 |
 | Síndrome compartimental na criança (`rockwoodcriancas10-06-sindrome-compartimental`) | 180 | 0 | 39 |
-| Fraturas patológicas e maus-tratos na criança (`rockwoodcriancas10-07-patologicas-maus-tratos`) | 27 | 0 | 15 |
+| Fraturas patológicas e maus-tratos na criança (`rockwoodcriancas10-07-patologicas-maus-tratos`) | 27 | 0 | 16 |
 | Fraturas e luxações da mão e do carpo na criança (`rockwoodcriancas10-08-mao-carpo`) | 23 | 0 | 19 |
-| Fraturas do colo do rádio e do olécrano na criança (`rockwoodcriancas10-11-colo-radio-olecrano`) | 78 | 0 | 15 |
-| Fratura-luxação de MONTEGGIA na criança (`rockwoodcriancas10-12-monteggia`) | 115 | 0 | 26 |
+| Fraturas do colo do rádio e do olécrano na criança (`rockwoodcriancas10-11-colo-radio-olecrano`) | 78 | 0 | 16 |
+| Fratura-luxação de MONTEGGIA na criança (`rockwoodcriancas10-12-monteggia`) | 115 | 0 | 27 |
 | Luxação do ombro e fraturas do úmero proximal e da diáfise na criança (`rockwoodcriancas10-19-ombro-umero`) | 42 | 0 | 9 |
 | Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança (`rockwoodcriancas10-20-clavicula-escapula`) | 31 | 0 | 8 |
 | Lesões da coluna cervical na criança (`rockwoodcriancas10-21-coluna-cervical`) | 33 | 0 | 29 |
@@ -60,11 +60,11 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas, luxações e outras lesões do pé na criança (`rockwoodcriancas10-31-pe`) | 10 | 0 | 18 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 5 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 54 | 0 | 7 |
-| Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 15 | 0 | 4 |
-| Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança (`rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial`) | 94 | 0 | 26 |
-| Fraturas do côndilo lateral e do capítulo na criança (`rockwoodcriancas9-16-condilo-lateral`) | 84 | 0 | 18 |
-| Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo (`rockwoodcriancas9-17-fise-distal-umero`) | 38 | 0 | 2 |
-| Fraturas do rádio e da ulna distais na criança (`wilkins9-08-radio-ulna-distal-crianca`) | 86 | 0 | 21 |
-| Fraturas da diáfise do rádio e da ulna na criança (`wilkins9-09-diafise-antebraco-crianca`) | 83 | 0 | 19 |
+| Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 15 | 0 | 5 |
+| Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança (`rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial`) | 94 | 0 | 27 |
+| Fraturas do côndilo lateral e do capítulo na criança (`rockwoodcriancas9-16-condilo-lateral`) | 84 | 0 | 19 |
+| Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo (`rockwoodcriancas9-17-fise-distal-umero`) | 38 | 0 | 3 |
+| Fraturas do rádio e da ulna distais na criança (`wilkins9-08-radio-ulna-distal-crianca`) | 86 | 0 | 22 |
+| Fraturas da diáfise do rádio e da ulna na criança (`wilkins9-09-diafise-antebraco-crianca`) | 83 | 0 | 20 |
 
 Detalhes e pendências por ID: [catalogo.json](catalogo.json). Protocolo: [README.md](README.md).

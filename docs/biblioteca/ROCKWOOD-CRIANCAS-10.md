@@ -37,16 +37,16 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 6 | Compartment Syndrome in Children | 263 a 305 | Feito em 28/10/2026: `rockwoodcriancas10-06-sindrome-compartimental`, `pediatria-1315` a `1329` |
 | 7 | Pathologic Fractures and Nonaccidental Injuries | 306 a 444 | Feito em 27/10/2026: `rockwoodcriancas10-07-patologicas-maus-tratos`, `pediatria-1196` a `1210` |
 | 8 | Hand and Carpal Bones | 445 a 633 | Feito em 28/10/2026: `rockwoodcriancas10-08-mao-carpo`, `pediatria-1345` a `1359` |
-| 9 | Distal Radius and Ulna | 634 a 789 | 9ª ed. já tem resumo (`wilkins9-08`); atualizar com a 10ª |
-| 10 | Diaphyseal Radius and Ulna | 790 a 935 | 9ª ed. já tem resumo (`wilkins9-09`); atualizar |
+| 9 | Distal Radius and Ulna | 634 a 789 | Atualizado em 29/10/2026: `wilkins9-08-radio-ulna-distal-crianca` (versão 2, novo autor), `pediatria-1368` |
+| 10 | Diaphyseal Radius and Ulna | 790 a 935 | Atualizado em 29/10/2026: `wilkins9-09-diafise-antebraco-crianca` (versão 2, novos autores; infecção profunda nas expostas e órtese após o gesso), sem simulado novo |
 | 11 | Radial Neck and Olecranon | 936 a 1084 | Feito em 28/10/2026: `rockwoodcriancas10-11-colo-radio-olecrano`, `pediatria-1270` a `1284` |
 | 12 | Monteggia Fracture-Dislocation | 1085 a 1219 | Feito em 28/10/2026: `rockwoodcriancas10-12-monteggia`, `pediatria-1285` a `1299` |
 | 13 | Evaluation of the Injured Pediatric Elbow | 1220 a 1271 | Atualizado em 28/10/2026: `rockwoodcriancas9-12-avaliacao-cotovelo` (versão 2), `pediatria-1360` a `1362` (JONES, linha radiocapitelar, metanálise do coxim, ultrassonografia) |
 | 14 | Supracondylar Fractures | 1272 a 1425 | Atualizado em 28/10/2026: `rockwoodcriancas9-13-supracondiliana` (versão 2, novos autores), `pediatria-1363` e `1364` (IIA e IIB, fio medial mini-aberto) |
-| 15 | T-Condylar Fractures | 1426 a 1475 | 9ª ed. já tem resumo; atualizar |
-| 16 | Medial Epicondyle and Elbow Dislocations | 1476 a 1594 | 9ª ed. já tem resumo; atualizar |
-| 17 | Lateral Condylar and Capitellar | 1595 a 1670 | 9ª ed. já tem resumo; atualizar |
-| 18 | Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar | 1671 a 1771 | 9ª ed. já tem resumo; atualizar |
+| 15 | T-Condylar Fractures | 1426 a 1475 | Atualizado em 29/10/2026: `rockwoodcriancas9-14-fratura-em-t` (versão 2, novo autor; via TRAP e complicações), `pediatria-1365` |
+| 16 | Medial Epicondyle and Elbow Dislocations | 1476 a 1594 | Atualizado em 29/10/2026: `rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial` (versão 2, novos autores; arremessador e luxação associada), `pediatria-1366` |
+| 17 | Lateral Condylar and Capitellar | 1595 a 1670 | Atualizado em 29/10/2026: `rockwoodcriancas9-16-condilo-lateral` (versão 2, novos autores; fios expostos contra enterrados), sem simulado novo |
+| 18 | Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar | 1671 a 1771 | Atualizado em 29/10/2026: `rockwoodcriancas9-17-fise-distal-umero` (versão 2, novos autores), `pediatria-1367` |
 | 19 | Shoulder Dislocation and Proximal Humerus | 1772 a 1943 | Feito em 27/10/2026: `rockwoodcriancas10-19-ombro-umero`, `pediatria-1211` a `1224` |
 | 20 | Clavicle and Scapula | 1944 a 2072 | Feito em 28/10/2026: `rockwoodcriancas10-20-clavicula-escapula`, `pediatria-1225` a `1239` |
 | 21 | Cervical Spine | 2073 a 2164 | Feito em 28/10/2026: `rockwoodcriancas10-21-coluna-cervical`, `pediatria-1240` a `1254` |

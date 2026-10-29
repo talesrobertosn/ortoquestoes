@@ -515,12 +515,12 @@
    "B": "**O transverso liga olécrano e coronoide na própria ulna.** Não é a porção que parte do úmero e se insere no tubérculo sublime para resistir ao valgo. O resumo pediátrico complementar lhe atribui pouca função estabilizadora, ao contrário da importância do feixe anterior medial. Confundi-los apaga a diferença entre uma ligação ulnar local e uma contenção umeroulnar.",
    "C": "**O colateral ulnar lateral chega à crista do supinador, não ao tubérculo sublime.** Ele integra o complexo lateral e é importante para conter rotação posterolateral. O termo “ulnar” informa seu destino ósseo, não o transforma em um ligamento medial. Seguir o trajeto desde o epicôndilo lateral diferencia essa estrutura do feixe anterior do colateral medial."
   },
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Quem segura o cotovelo.",
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15. Complemento anatômico consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, seção O epicôndilo medial: anatomia, ossificação e estabilidade, Biblioteca OrtoQuestões."
   ],
-  "geradoEm": "2026-10-21",
+  "conferido": false,
+  "geradoEm": "2026-10-29",
   "baseResumo": {
    "tipo": "resumo",
    "versao": 1,
@@ -549,8 +549,8 @@
      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
      "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "9ª edição",
-     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 16 · Medial Epicondyle Fractures and Dislocations of the Elbow",
      "secoes": [
       "O epicôndilo medial: anatomia, ossificação e estabilidade"
      ],
@@ -558,12 +558,12 @@
       "o-epicondilo-medial-anatomia-ossificacao-e-estab-31a428cf",
       "o-epicondilo-medial-anatomia-ossificacao-e-estab-efabbd4f"
      ],
-     "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
+     "sha256": "815fd22160a13e0bd820f30ad8a2c334771c9d656525be0eace87e6169423eb7",
      "trechosSha256": "ba8808756346f6327f40a3fc0dde18524a4dc0d5702141a3798fcbc5b776c755"
     }
    ],
    "questaoSha256": "89f5191e964bf4a813c37922d6eaead449d4a9272e3e5953d645f0da8fd798db",
-   "comentarioSha256": "2af06fa608c19746477ab899aa83d6e15f595d8df5386bde0e00e5bea9875751"
+   "comentarioSha256": "231dcf2da3ffef6e018fb5d30378a05f742810ac0e5af42ad336d4b4b4885edc"
   }
  },
  "ombro-cotovelo-0033": {
@@ -3878,12 +3878,12 @@
    "B": "**O complexo lateral é o ponto inicial na sequência de O'Driscoll.** É essencial para a estabilidade, mas não o último a romper no modelo perguntado. A alternativa inverte começo e fim.",
    "D": "**O ligamento anular não é a etapa final identificada nessa sequência.** O modelo nomeia complexo lateral, cápsula anterior e complexo medial. A opção não representa a perda final das restrições mediais."
   },
-  "conferido": false,
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Mecanismo e exame da luxação posterior."
   ],
   "alerta": "A chave C corresponde à sequência de O'Driscoll. O capítulo pediátrico também descreve teoria que inicia pelo valgo e lesão medial; não extrapolar a ordem da questão para todos os mecanismos de luxação.",
-  "geradoEm": "2026-10-20",
+  "conferido": false,
+  "geradoEm": "2026-10-29",
   "baseResumo": {
    "tipo": "resumo",
    "versao": 1,
@@ -3892,8 +3892,8 @@
      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
      "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "9ª edição",
-     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 16 · Medial Epicondyle Fractures and Dislocations of the Elbow",
      "secoes": [
       "Mecanismo e exame da luxação posterior"
      ],
@@ -3907,12 +3907,12 @@
       "mecanismo-e-exame-da-luxacao-posterior-a935d2bf",
       "mecanismo-e-exame-da-luxacao-posterior-12e22a02"
      ],
-     "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
+     "sha256": "815fd22160a13e0bd820f30ad8a2c334771c9d656525be0eace87e6169423eb7",
      "trechosSha256": "28f2ddf94a247dba9bdfe626ba27c727612029c415f33ce53963a6fed0fa4feb"
     }
    ],
    "questaoSha256": "80015809463e02379f79e753996f9607a8cd519be894fe7339c10e599a4c42f0",
-   "comentarioSha256": "5a1c2d97c68f9571ed1c640dc360fa21786d6c4d919ed17201b7cb9270b3a9f2"
+   "comentarioSha256": "187e9ac3aadf3a8788cfd838265491079556d1417be64e39ad0b5d264ccafad1"
   }
  },
  "ombro-cotovelo-0333": {
@@ -6509,12 +6509,12 @@
   "incorretas": {
    "A": "**Considerar certo deixaria o membro deformado enquanto o feixe continua ameaçado.** A indicação de exploração depende da persistência do comprometimento e do contexto, não de uma proibição geral da redução fechada. Na luxação exposta ou irredutível, a via aberta pode ser necessária por razões adicionais."
   },
-  "conferido": false,
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures. Conteúdo consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, Biblioteca OrtoQuestões, seções Nervos e artéria na luxação."
   ],
   "provavel": "B",
-  "geradoEm": "2026-10-20",
+  "conferido": false,
+  "geradoEm": "2026-10-29",
   "baseResumo": {
    "tipo": "resumo",
    "versao": 1,
@@ -6523,8 +6523,8 @@
      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
      "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "9ª edição",
-     "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 16 · Medial Epicondyle Fractures and Dislocations of the Elbow",
      "secoes": [
       "Nervos e artéria na luxação"
      ],
@@ -6553,12 +6553,12 @@
       "nervos-e-arteria-na-luxacao-584aebf5",
       "nervos-e-arteria-na-luxacao-0d677891"
      ],
-     "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
+     "sha256": "815fd22160a13e0bd820f30ad8a2c334771c9d656525be0eace87e6169423eb7",
      "trechosSha256": "ab20f38c8f15fb27947a6342fe8eb21a5a56fe0e26da34ba9c898611ec17e24d"
     }
    ],
    "questaoSha256": "7093b35f86941610b18b4c6d769cfd0c412099ea69fc83d7d2b8443bb61e63ff",
-   "comentarioSha256": "0bd3fe74fafb7909000d7fc0de7a45a720aeca572fdb317cb8d6f16a54883dc7"
+   "comentarioSha256": "f1288fbcbc1051bdff4170f9eb56c7cd0c44148dba0d7a4a5d3b05f6c9d49078"
   }
  },
  "ombro-cotovelo-0509": {

@@ -1,14 +1,14 @@
 ---
 id: wilkins9-09-diafise-antebraco-crianca
-versao: 1
+versao: 2
 titulo: Fraturas da diáfise do rádio e da ulna na criança
 especialidade: pediatria
 acesso: gratis
 livro: Rockwood and Wilkins' Fractures in Children
-edicao: 9ª edição (2020)
-capitulo: Capítulo 9 · Diaphyseal Radius and Ulna Fractures
-autores: Charles T. Mehlman e Eric J. Wall
-fonte: Capítulo enviado pelo Tales em 19/10/2026 (radio_distal_kids.pdf, páginas 48 a 93; as páginas anteriores são o capítulo 8, rádio e ulna distais, e a página 94 é o início do capítulo 10)
+edicao: 10ª edição (2025)
+capitulo: Capítulo 10 · Diaphyseal Radius and Ulna Fractures
+autores: Kevin J. Little e Eric J. Wall (10ª edição); Charles T. Mehlman e Eric J. Wall (9ª edição)
+fonte: Escrito com o capítulo 9 da 9ª edição (enviado pelo Tales em 19/10/2026) e conferido em 28/10/2026 com o capítulo 10 da 10ª edição, que mantém as condutas; acrescenta infecção profunda de 1,2% nas expostas tratadas pelos protocolos atuais e que órtese após a retirada do gesso não reduziu a refratura. As figuras citadas seguem a numeração da 9ª edição.
 subtemas: Fraturas do antebraço e punho na criança
 resumo: Galho verde e a regra do ápice (dorsal = pronação, reduz em supinação), deformidade plástica (ulna, 20 a 30 kg por 2 a 3 minutos, VORLAT e DE BOECK acima de 10 graus e 6 anos), refratura (galho verde, menino, 6 meses), tuberosidade bicipital, limites de 20, 15 e 10 graus, haste elástica de METAIZEAU, MONTEGGIA perdida, sinostose e síndrome compartimental.
 ---

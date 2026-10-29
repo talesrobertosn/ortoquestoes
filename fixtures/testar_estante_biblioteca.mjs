@@ -28,8 +28,11 @@ try {
     const ns = l.capitulos.map(m.numeroCapitulo)
     assert.deepEqual(ns, [...ns].sort((a, b) => a - b), `capítulos fora de ordem em ${l.rotulo}`)
   }
-  const infantis = livros.filter((l) => l.rotulo.startsWith('Rockwood infantil')).map((l) => l.rotulo)
-  assert.deepEqual(infantis.slice(0, 2), ['Rockwood infantil · 10ª ed.', 'Rockwood infantil · 9ª ed.'])
+  assert.ok(livros.some((l) => l.rotulo === 'Rockwood infantil · 10ª ed.'))
+  // Edição nova antes da antiga, com capítulos sintéticos (os resumos reais da 9ª edição foram atualizados para a 10ª).
+  const base = cap('rockwoodcriancas10-19-ombro-umero')
+  const edicoes = m.livrosDaEstante([{ ...base, id: 'nove', edicao: '9ª edição' }, { ...base, id: 'dez', edicao: '10ª edição (2025)' }]).map((l) => l.rotulo)
+  assert.deepEqual(edicoes, ['Rockwood infantil · 10ª ed.', 'Rockwood infantil · 9ª ed.'])
 
   // Estado de leitura.
   assert.equal(m.estadoLeitura(undefined), 'novo')

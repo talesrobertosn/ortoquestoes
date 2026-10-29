@@ -1,16 +1,16 @@
 ---
 id: rockwoodcriancas9-14-fratura-em-t
-versao: 1
+versao: 2
 titulo: Fratura em T (intercondiliana) do úmero distal na criança
 especialidade: pediatria
 acesso: gratis
 livro: Rockwood and Wilkins' Fractures in Children
-edicao: 9ª edição
-capitulo: Capítulo 14 · T-Condylar Fractures of the Distal Humerus
-autores: Carley Vuillermin e Peter M. Waters
-fonte: Capítulo enviado pelo Tales em 19/10/2026 (a9fcba5c-222-1-75.pdf, páginas 60 a 75)
+edicao: 10ª edição (2025)
+capitulo: Capítulo 15 · T-Condylar Fractures of the Distal Humerus
+autores: Brian P. Scannell (10ª edição); Carley Vuillermin e Peter M. Waters (9ª edição)
+fonte: Escrito com o capítulo 14 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 15 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 9ª edição.
 subtemas: ;
-resumo: Fratura de transição do adolescente (12,8 anos, lado não dominante), flexão com fragmentos anteriores, traço até o ápice da tróclea contra THURSTON-HOLLAND, TC × RM, TONIOLO e WILKINS, AO C1 e C2, divisão do tríceps, BRYAN-MORREY e osteotomia, articulação antes das colunas, placas a 90 graus, algoritmo aos 8 anos, rigidez e nervo ulnar.
+resumo: Fratura de transição do adolescente (12,8 anos, lado não dominante), flexão com fragmentos anteriores, traço até o ápice da tróclea contra THURSTON-HOLLAND, TC × RM, TONIOLO e WILKINS, AO C1 e C2, divisão do tríceps, BRYAN-MORREY e osteotomia, articulação antes das colunas, placas a 90 graus, algoritmo aos 8 anos, rigidez e nervo ulnar; na 10ª edição, via TRAP, ulnar pós-operatório de 5% a 8% e reoperação até 24%.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -381,6 +381,14 @@ Curativo macio bem acolchoado e **órtese articulada**. A **movimentação passi
 - Houve um caso de osteonecrose da tróclea, uma pseudartrose e perda de movimento em muitos operados, mas nenhum com perda importante de função ou dor.
 
 # Complicações {radar=confirmado}
+
+**Na 10ª edição** (capítulo 15, agora de Brian P. Scannell, que mantém o texto anterior), entram números novos: sintomas do **ulnar no pós-operatório** em **5% a 8%**; **reoperação** para retirar material ou tratar rigidez em até **24%**, a discutir com a família antes da cirurgia. Nas **C3** cominutas do adolescente, além da osteotomia do olécrano, os autores citam a via **TRAP** (retalho do tríceps com pedículo do ancôneo): parecida com a BRYAN-MORREY, mas com incisão em **V** que solta o ancôneo da ulna proximal, com exposição articular sem diferença importante em relação à osteotomia.
+
+!questoes treino=pediatria-1365
+conceito: Na fratura em T do adolescente, a C3 vai por osteotomia ou TRAP; o ulnar dá sintomas em 5% a 8% depois da cirurgia, e a reoperação chega a 24%.
+como: Questão de projeção sobre o que a 10ª edição acrescentou; nenhuma questão oficial do conjunto analisado cobrou a via TRAP ou a taxa de reoperação.
+armadilha: Transpor o ulnar de rotina, ou temer a parada do crescimento numa fratura do fim do crescimento.
+!fim
 
 ## O que esperar
 

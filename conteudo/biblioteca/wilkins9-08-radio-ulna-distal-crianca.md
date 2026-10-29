@@ -1,21 +1,21 @@
 ---
 id: wilkins9-08-radio-ulna-distal-crianca
-versao: 1
+versao: 2
 titulo: Fraturas do rádio e da ulna distais na criança
 especialidade: pediatria
 acesso: gratis
 livro: Rockwood and Wilkins' Fractures in Children
-edicao: 9ª edição (2020)
-capitulo: Capítulo 8 · Fractures of the Distal Radius and Ulna
-autores: William L. Hennrikus e Donald S. Bae
-fonte: Capítulo enviado pelo Tales em 19/10/2026 (radio_distal_kids.pdf, 94 páginas; o capítulo 8 ocupa as pp. 1 a 47, páginas impressas 385 a 466)
+edicao: 10ª edição (2025)
+capitulo: Capítulo 9 · Fractures of the Distal Radius and Ulna
+autores: Apurva S. Shah (10ª edição); William L. Hennrikus e Donald S. Bae (9ª edição)
+fonte: Escrito com o capítulo 8 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 9 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 9ª edição.
 subtemas: Fraturas do antebraço e punho na criança
 resumo: Toro, galho verde e baioneta; a rotação de cada ápice; periósteo íntegro e o que se interpõe; THURSTON-HOLLAND e a fise que não se força depois de 7 dias; perda de redução em 20% a 30% e índice do gesso de 0,7; Galeazzi conservador; parada fisária de 4% no rádio e até 55% na ulna; a ginasta e o impacto ulnocarpal.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo foi escrito a partir do capítulo 8 do Rockwood and Wilkins' Fractures in Children, de Hennrikus e Bae, na ordem em que as provas cobram o tema. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo. A edição não aparece impressa nas páginas enviadas; pela numeração (capítulo 8, páginas 385 a 466) e pela bibliografia, trata-se muito provavelmente da 9ª edição.
+Este resumo foi escrito a partir do capítulo 8 do Rockwood and Wilkins' Fractures in Children, de Hennrikus e Bae, na ordem em que as provas cobram o tema. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo. A edição não aparece impressa nas páginas enviadas; pela numeração (capítulo 8, páginas 385 a 466) e pela bibliografia, trata-se muito provavelmente da 9ª edição. Em 28/10/2026, o resumo foi atualizado com o capítulo 9 da 10ª edição (2025), agora de Apurva S. Shah, que acrescenta os números de um registro multicêntrico, a remodelação coronal e a parada do crescimento nas fisárias articulares.
 
 O punho da criança cai quase todo ano no TARO e no TEOT, e a banca gira em poucos blocos: **a rotação que produz cada galho verde** (ápice volar com supinação, ápice dorsal com pronação) e a manobra que a desfaz; **o periósteo** (qual lado fica íntegro na baioneta e o que se interpõe na fratura irredutível); **a fise distal do rádio** (SALTER-HARRIS II, THURSTON-HOLLAND, a redução que não se força depois de 7 dias); **as complicações** (a perda de redução e a consolidação viciosa); **o Galeazzi da criança**, que, ao contrário do adulto, é tratado sem cirurgia; e **a lesão fisária por estresse da ginasta**. Por baixo de tudo está uma ideia só: o rádio distal da criança tem uma fise muito ativa ao lado e um periósteo grosso em volta, e por isso remodela muito, reduz bem e quase nunca precisa de placa.
 
@@ -24,6 +24,14 @@ A fronteira com o capítulo vizinho (fraturas diafisárias do rádio e da ulna) 
 > Na prova: **ápice volar = supinação, reduz em pronação**; **ápice dorsal = pronação, reduz em supinação**; na baioneta dorsal o **periósteo dorsal fica íntegro**; fratura irredutível com desvio dorsal: **periósteo volar ou pronador quadrado**; com desvio volar: **periósteo dorsal ou extensores**; fise do rádio distal **não se remanipula depois de 7 dias**; perda de redução em **20% a 30%**; **Galeazzi da criança é conservador**; parada fisária em **cerca de 4% no rádio e 10% a 55% na ulna**.
 
 # Epidemiologia e quem se machuca {radar=confirmado}
+
+**Na 10ª edição.** Num registro prospectivo multicêntrico americano, **44%** das fraturas do rádio distal foram **toro**, **31%** completas ou bicorticais metafisárias, **21%** fisárias e só **2% a 3%** galho verde; das fisárias, **quase 85%** eram **SALTER-HARRIS II**. LYNCH mostrou, abaixo de 12 anos, remodelação **coronal** de **2,3 graus por mês** e sugeriu aceitar até **24 graus** de desvio coronal. As raras **SALTER-HARRIS III e IV** tiveram distúrbio de crescimento em **43%** (KALLINI); nas fisárias desviadas em geral, a parada fica em **4% a 7%**, e o autor pede radiografia de controle **6 a 9 meses** depois. A fratura exposta é cerca de **1%** das metafisárias; o padrão segue cirúrgico, embora séries retrospectivas mostrem infecção de 2,5% a 4% no GUSTILO 1 tratado sem centro cirúrgico.
+
+!questoes treino=pediatria-1368
+conceito: Toro é o padrão mais comum do rádio distal (44%) e a fisária é quase sempre SALTER-HARRIS II; abaixo de 12 anos, até 24 graus coronais remodelam; as fisárias articulares param o crescimento em 43%.
+como: Questão de projeção sobre o que a 10ª edição acrescentou; nenhuma questão oficial do conjunto analisado cobrou esses números.
+armadilha: Achar que o galho verde é o padrão mais comum do rádio distal.
+!fim
 
 As fraturas do antebraço são as fraturas de ossos longos **mais comuns da criança**: incidência anual de cerca de **1,5 por 100 crianças** e até **40%** de todas as fraturas pediátricas. Dentro do antebraço, o **rádio e a ulna distais** são os mais acometidos, e a **metáfise distal do rádio** é o local de fratura mais comum do antebraço na criança e no adolescente. Os picos de incidência ocorrem no **estirão de crescimento pré-adolescente**, e o membro mais atingido é o **não dominante, no sexo masculino**.
 

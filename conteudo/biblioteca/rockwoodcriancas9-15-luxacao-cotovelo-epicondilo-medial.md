@@ -1,14 +1,14 @@
 ---
 id: rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial
-versao: 1
+versao: 2
 titulo: Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança
 especialidade: pediatria
 acesso: gratis
 livro: Rockwood and Wilkins' Fractures in Children
-edicao: 9ª edição
-capitulo: Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures
-autores: Anthony Stans e Todd Milbrandt
-fonte: PDF enviado pelo Tales em 19/10/2026 (7d1ff148-222-76-130.pdf, páginas 1 a 40)
+edicao: 10ª edição (2025)
+capitulo: Capítulo 16 · Medial Epicondyle Fractures and Dislocations of the Elbow
+autores: Benjamin R. Wilson e Vishwas Talwalkar (10ª edição); Anthony Stans e Todd Milbrandt (9ª edição)
+fonte: Escrito com o capítulo 15 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 16 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 9ª edição.
 subtemas: Côndilo lateral, epicôndilo medial e rádio proximal na criança
 resumo: Epicôndilo medial como a fratura que mais acompanha a luxação, ulnar o nervo mais lesado e mediano o mais grave (FOURRIER, MATEV), encarceramento como única indicação absoluta, ROBERTS, PARVIN, rigidez e imobilização curta, e a pronação dolorosa do ligamento anular (2 a 3 anos, hiperpronação).
 ---
@@ -419,6 +419,14 @@ A tendência é operar mais: implantes melhores, técnica melhor, mais valor ao 
 - **Estabilidade:** WOODS e TULLOS indicavam cirurgia pela instabilidade no teste da gravidade em quem precisa de um cotovelo estável. Até 14 anos, o feixe anterior do colateral costuma sair com o fragmento; a partir dos 15, grandes fragmentos podem sair sem lesão ligamentar.
 - **Resultados:** sem cirurgia, JOSEFSSON e DANIELSSON tiveram **mais de 60% de pseudartrose** com bons resultados após **35 anos**; com cirurgia, LOUAHEM teve 130 excelentes e 9 bons em 139, e HINES, que operava tudo acima de 2 mm, **96%** bons ou excelentes.
 - **Sem cirurgia na prática:** imobilizar **5 a 14 dias** e mover; tala removível fora de casa. A rigidez é a complicação mais comum; fisioterapia só se o movimento ativo não vier, sem alongamento passivo.
+
+**Na 10ª edição** (capítulo 16, de Benjamin R. Wilson e Vishwas Talwalkar), os autores resumem suas indicações em três: **fragmento encarcerado**, **déficit importante do ulnar** e **estabilidade** em quem vai exigir o lado medial; o tratamento sem cirurgia imobiliza por **7 a 14 dias**. Estudos recentes sugerem que a **luxação do cotovelo associada** à fratura também seja indicação de cirurgia, pela lesão maior de partes moles e pelo risco de instabilidade residual. Nos **atletas de arremesso**, em que a contração dos flexores ao lançar pode arrancar o epicôndilo, CAIN teve **97%** de retorno ao esporte após a cirurgia e recomenda **limiar baixo** para operar. Na imagem, oblíquas e a incidência **axial do úmero distal** ajudam quando as iniciais não convencem. O decúbito **ventral** deu resultados **semelhantes** ao supino, mas a facilidade da redução fez muitos cirurgiões mudarem.
+
+!questoes treino=pediatria-1366
+conceito: Na 10ª edição, o arremessador tem limiar baixo para cirurgia, a luxação associada pesa a favor de operar, e o decúbito ventral facilita a redução com resultado semelhante ao supino.
+como: Questão de projeção sobre o que a 10ª edição acrescentou; nenhuma questão oficial do conjunto analisado cobrou essas indicações.
+armadilha: Tratar sem cirurgia o epicôndilo desviado do arremessador de alta demanda.
+!fim
 
 ## A técnica dos autores
 
