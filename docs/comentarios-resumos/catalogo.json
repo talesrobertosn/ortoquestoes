@@ -4,8 +4,8 @@
  "estados": {
   "duplicada": 97,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 894,
-  "revisada": 1983
+  "pendente-fonte": 895,
+  "revisada": 1982
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -384,8 +384,8 @@
    "titulo": "Fraturas, luxações e outras lesões do pé na criança",
    "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
    "estados": {
-    "pendente-fonte": 17,
-    "revisada": 11
+    "pendente-fonte": 18,
+    "revisada": 10
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -73388,8 +73388,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "revisada",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Revisão automática622identificou lacuna editorial válida:resumo31 apenas nomeiaHardcastleB,não define anatomia dos tiposA/B/C(total/parcial/divergente). A questão exige compararBcomC,e o comentário antigo não é fonte para recuperar a classificação. Falta descrição independente dos padrões e respectivas incongruências para uma aula autônoma. Restaurado comentário anterior integralmente,sem selo;não contar revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73404,29 +73404,7 @@
     "rockwoodcriancas10-31-pe"
    ],
    "questaoSha256": "9ed4fdc03cc99d5399973bf34b2adc3bfa1d5d8925918043a9278bb8fd704355",
-   "baseResumo": {
-    "tipo": "resumo",
-    "versao": 1,
-    "fontes": [
-     {
-      "resumo": "rockwoodcriancas10-31-pe",
-      "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-      "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "10ª edição (2025)",
-      "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-      "secoes": [
-       "Mediopé e LISFRANC"
-      ],
-      "blocos": [
-       "mediope-e-lisfranc-1ab697b9"
-      ],
-      "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-      "trechosSha256": "25631303f832572a20f649ca2d4d425936ef8cb25249778bc835c88d6b5dd501"
-     }
-    ],
-    "questaoSha256": "9ed4fdc03cc99d5399973bf34b2adc3bfa1d5d8925918043a9278bb8fd704355",
-    "comentarioSha256": "dfdc15d79fcabd505f5512e86d61ff1aff754dbf1f8c46fa1c3d49318c06c13f"
-   }
+   "pendencia": "Revisão automática622identificou lacuna editorial válida:resumo31 apenas nomeiaHardcastleB,não define anatomia dos tiposA/B/C(total/parcial/divergente). A questão exige compararBcomC,e o comentário antigo não é fonte para recuperar a classificação. Falta descrição independente dos padrões e respectivas incongruências para uma aula autônoma. Restaurado comentário anterior integralmente,sem selo;não contar revisão concluída."
   },
   "pediatria-1341": {
    "tema": "pediatria",

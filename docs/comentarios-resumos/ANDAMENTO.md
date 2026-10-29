@@ -6,8 +6,8 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | --- | ---: |
 | duplicada | 97 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 894 |
-| revisada | 1983 |
+| pendente-fonte | 895 |
+| revisada | 1982 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -56,7 +56,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Lesões intra-articulares do joelho na criança (`rockwoodcriancas10-28-joelho-intra-articular`) | 30 | 0 | 34 |
 | Fraturas da tíbia e da fíbula na criança (`rockwoodcriancas10-29-diafise-tibia`) | 101 | 0 | 21 |
 | Fraturas do tornozelo na criança (`rockwoodcriancas10-30-tornozelo`) | 34 | 0 | 5 |
-| Fraturas, luxações e outras lesões do pé na criança (`rockwoodcriancas10-31-pe`) | 11 | 0 | 17 |
+| Fraturas, luxações e outras lesões do pé na criança (`rockwoodcriancas10-31-pe`) | 10 | 0 | 18 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 54 | 0 | 5 |
 | Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 15 | 0 | 4 |

@@ -1,11 +1,10 @@
 {
-  "base": "d2c274f00886419f5de7011c048c82a6f5195aa9",
+  "base": "80d6710bde20a49f64873911c60c191c38b6ddf1",
   "lotes": {
     "232": {
       "revisadas": [
         "pediatria-1335",
-        "pediatria-1339",
-        "pediatria-1340"
+        "pediatria-1339"
       ],
       "lacunas": [
         "pediatria-1334",
@@ -14,7 +13,8 @@
         "pediatria-1338",
         "pediatria-1341",
         "pediatria-1342",
-        "pediatria-1343"
+        "pediatria-1343",
+        "pediatria-1340"
       ]
     },
     "233": {
@@ -178,13 +178,6 @@
       ],
       "comentarioAnteriorSha256": "e7c58e64ed75459e0cfe37f3825739b6c4ce4f035b8fe0f59e758cc5cf1c5029"
     },
-    "pediatria-1340": {
-      "referenciasAnterioresNaoConferidasNestaPassagem": [
-        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Classification, Treatment Options e Author's Preferred Treatment for Tarsometatarsal Injuries (Fig. 31-33)"
-      ],
-      "comentarioAnteriorSha256": "8bedc38c813361598cacfa0f8c748f312dd971cc1e680899222e9290e81aee7b"
-    },
     "pediatria-1334": {
       "referenciasAnterioresNaoConferidasNestaPassagem": [
         "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
@@ -233,6 +226,13 @@
         "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Stress Fractures"
       ],
       "comentarioAnteriorSha256": "f5902d8980e3110d966855b25fb1ef305a0779da8e489a33932d86bf5c2f5b44"
+    },
+    "pediatria-1340": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+        "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Classification, Treatment Options e Author's Preferred Treatment for Tarsometatarsal Injuries (Fig. 31-33)"
+      ],
+      "comentarioAnteriorSha256": "8bedc38c813361598cacfa0f8c748f312dd971cc1e680899222e9290e81aee7b"
     },
     "pediatria-1344": {
       "referenciasAnterioresNaoConferidasNestaPassagem": [
@@ -704,18 +704,6 @@
       ],
       "paragrafoAnterior": "**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0718`), que perguntou qual combinação de fraturas é altamente sugestiva de LISFRANC; a oficial está sem gabarito, e o capítulo aponta a base do segundo metatarsal com o cuboide. Depois, faça a oficial.",
       "paragrafoPreservado": "**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0718`), que perguntou qual combinação de fraturas é altamente sugestiva de LISFRANC; a oficial está sem gabarito, e o capítulo aponta a base do segundo metatarsal com o cuboide. Depois, faça a oficial."
-    },
-    "pediatria-1340": {
-      "origem": {
-        "arquivo": "Rockwood and Wilkins' Fractures in Children 10th Edition",
-        "pagina": null,
-        "numeroOriginal": null
-      },
-      "prova": null,
-      "ano": null,
-      "linksOriginais": [],
-      "paragrafoAnterior": "**Por que esta questão foi criada.** É uma questão de projeção. O limite de 1 a 2 mm e o fio-chave são cobráveis.",
-      "paragrafoPreservado": "**Por que esta questão foi criada.** É uma questão de projeção. O limite de 1 a 2 mm e o fio-chave são cobráveis."
     }
   },
   "lacunas": [
@@ -816,6 +804,21 @@
       "imagensInspecionadas": [],
       "pendencia": "Resumo31 sustenta segundo/colo,bota4–6semgesso,navicular sagital e retorno5,6meses,mas não especifica CARGA PARCIAL naCnem frequência deRXinicialpositivo daD. Falta protocolo independente de carga/imagem das fraturas de estresse;sem selo.",
       "estadoAnterior": "pendente"
+    },
+    {
+      "id": "pediatria-1340",
+      "questaoSha256": "9ed4fdc03cc99d5399973bf34b2adc3bfa1d5d8925918043a9278bb8fd704355",
+      "comentarioAnteriorSha256": "8bedc38c813361598cacfa0f8c748f312dd971cc1e680899222e9290e81aee7b",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-31-pe",
+          "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Revisão automática622identificou lacuna editorial válida:resumo31 apenas nomeiaHardcastleB,não define anatomia dos tiposA/B/C(total/parcial/divergente). A questão exige compararBcomC,e o comentário antigo não é fonte para recuperar a classificação. Falta descrição independente dos padrões e respectivas incongruências para uma aula autônoma. Restaurado comentário anterior integralmente,sem selo;não contar revisão concluída.",
+      "estadoAnterior": "pendente",
+      "correcaoReview": 4406387576
     },
     {
       "id": "pediatria-1344",
@@ -1808,16 +1811,16 @@
     "acervo": true,
     "npmTest": true,
     "build": true,
-    "replay": 3,
-    "lacunasComentariosIntactos": 70,
+    "replay": 2,
+    "lacunasComentariosIntactos": 71,
     "demaisBytesPreservados": true,
-    "motivosConferidos": 3,
+    "motivosConferidos": 2,
     "figurasNosCasos": 0,
-    "ui": "3/3 em390/1440:resposta,aula e links exatos. Primeiro1335inspecionado visualmente."
+    "ui": "2/2 em390/1440:resposta,aula e links exatos. Primeiro1335inspecionado visualmente."
   },
   "reconciliacao621": {
     "head": "11cdcbeeeb56bc7da7be41f13d8894d64a25e226",
-    "merge": "d2c274f00886419f5de7011c048c82a6f5195aa9",
+    "merge": "80d6710bde20a49f64873911c60c191c38b6ddf1",
     "ci": 40772866571,
     "pages": 40773201371,
     "publicar": 123117221986,
@@ -1832,9 +1835,27 @@
     "estados": {
       "duplicada": 97,
       "pendente-figura-ausente": 2,
-      "pendente-fonte": 894,
-      "revisada": 1983
+      "pendente-fonte": 895,
+      "revisada": 1982
     }
   },
-  "continuidade": "Fila pendente sem motivo esgotada,mas894lacunas NÃO são revisões concluídas. Reavaliação das lacunas antigas já encontrou fonte suficiente para5rascunhos da240:0522(com divergência de classificação),0609,0644,0675,0701(limiar estrito). Sem aplicação nesta entrega;240ainda precisa fechar5casos restantes0280/0321/0540/0593/0834.241exportada:coluna0179/0299/0300/0301,mao1050/1125,ombro0512/0529,pediatria0047/0091,sem aplicação. Fonte09Wilkins9tempico12–16contra12–14naoficial1050;ler integralmente antes de citar. Continuar revisando lacunas antigas contra52fontes atuais;não declarar todas revisáveis concluídas."
+  "continuidade": "Fila pendente sem motivo esgotada,mas894lacunas NÃO são revisões concluídas. Reavaliação das lacunas antigas já encontrou fonte suficiente para5rascunhos da240:0522(com divergência de classificação),0609,0644,0675,0701(limiar estrito). Sem aplicação nesta entrega;240ainda precisa fechar5casos restantes0280/0321/0540/0593/0834.241exportada:coluna0179/0299/0300/0301,mao1050/1125,ombro0512/0529,pediatria0047/0091,sem aplicação. Fonte09Wilkins9tempico12–16contra12–14naoficial1050;ler integralmente antes de citar. Continuar revisando lacunas antigas contra52fontes atuais;não declarar todas revisáveis concluídas.",
+  "correcaoRevisao622": {
+    "comentario": 4406387576,
+    "questao": "pediatria-1340",
+    "motivo": "HardcastleA/B/C não definidos anatomicamente no resumo31;comentário anterior restaurado e caso pendente-fonte,sem selo.",
+    "novaValidacao": "Fixtures,acervo,npm test,build,replay2/2,71comentários intactos,UI2/2após correção e reconciliação."
+  },
+  "concorrencia": {
+    "baseAtual": "80d6710bde20a49f64873911c60c191c38b6ddf1",
+    "prsPreservados": [
+      623,
+      624
+    ],
+    "commits": [
+      "9d7d5bd9f3d9beaf631b2a7451bd502b9d29e589",
+      "28fb6d0a2bd45e0980cca8dd5188e51daff6729c"
+    ],
+    "observacao": "Integrados sem editar qualquer arquivo da funcionalidade concorrente;auditoria relativa à base publicada80d6710b assegura ausência de diff próprio emsrc,Supabase e scripts."
+  }
 }
