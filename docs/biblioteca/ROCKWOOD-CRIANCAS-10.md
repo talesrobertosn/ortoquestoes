@@ -32,7 +32,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 1 | Epidemiology of Fractures in Children | 25 a 61 | Codex: `rockwoodcriancas10-01-epidemiologia-fraturas`, `pediatria-1083` a `1093` |
 | 2 | Fracture Repair in Children | 62 a 126 | Codex |
 | 3 | Pharmacology of Pediatric Fracture Care | 127 a 145 | Codex |
-| 4 | Cast and Splint Immobilization | 146 a 204 | Codex |
+| 4 | Cast and Splint Immobilization | 146 a 204 | Feito em 29/10/2026: `rockwoodcriancas10-04-gesso-tala`, `pediatria-1369` a `1383` |
 | 5 | Management of the Severely Injured Child | 205 a 262 | Codex |
 | 6 | Compartment Syndrome in Children | 263 a 305 | Feito em 28/10/2026: `rockwoodcriancas10-06-sindrome-compartimental`, `pediatria-1315` a `1329` |
 | 7 | Pathologic Fractures and Nonaccidental Injuries | 306 a 444 | Feito em 27/10/2026: `rockwoodcriancas10-07-patologicas-maus-tratos`, `pediatria-1196` a `1210` |
@@ -104,3 +104,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 6 | `pediatria-0850`, `0666`, `0827` | Sem gabarito: `0827` (o capítulo aponta o compartimento flexor profundo, não os flexores do carpo). |
 | 31 | `pediatria-0626`, `0596`, `0718`, `0704`, `0582`, `0597` | Sem gabarito: `0718` (o capítulo aponta base do segundo metatarsal com cuboide). Relacionadas: `0518` (SEVER) e `0512` (apófise do quinto). |
 | 8 | `pediatria-0583`, `0609`, `0644`, `0522`, `0562`, `0823` | `0522`: gabarito tipo A; o capítulo dá o D como equivalente ao BENNETT. Sem gabarito: `0823` (sustentada). |
+| 4 | `pediatria-0702`, `0541`, `0523`, `0666`, `0747` | Sem gabarito: `0747` (o capítulo sustenta a supinação, não a posição do punho). Mecanismo do galho verde (`0523`) fora do capítulo. |

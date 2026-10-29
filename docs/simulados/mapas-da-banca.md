@@ -4015,3 +4015,19 @@ luxação complexa da metacarpofalângica, interfalângica proximal, fibrocartil
 **Divergências.** TARO 2026 `0522`: gabarito tipo A; na classificação do capítulo, o tipo A é metafisário e o D é o equivalente ao BENNETT.
 
 **Aproveitamento:** `pediatria-1345` a `pediatria-1359`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.767 caracteres.
+
+## Gesso e tala na criança, Rockwood and Wilkins 10ª ed., cap. 4
+
+**Recorte.** Busca por gesso, tala, spica, pelvipodálico, galho verde com rotação, índice do gesso, queimadura, cunha e úlcera, todas as provas.
+A banca cobra o capítulo dentro de outros temas: a rotação que reduz o galho verde do antebraço (SBOT-SP `pediatria-0702`, ápice dorsal com supinação;
+TARO 2026 `0523` e TARO 2008 `0747`, mecanismo e posição do punho) e a bota gessada com tração na spica do fêmur (TARO 2024 `0541`, síndrome compartimental).
+
+**Forma.** Enunciados curtos, sem imagem; perguntas de conduta e de técnica.
+
+**Lacunas com cara de prova (projeção).** Queimadura (50 °C, 24 camadas), fibra de vidro com estirar e relaxar, quanto alivia abrir o gesso, cotovelo flutuante com paralisia,
+detalhes da spica, lado da abertura do gesso, gesso curto no terço distal, úlcera do calcanhar, fios intra-articulares, serra (0,72%), osteopenia neuromuscular,
+tempos de imobilização, gesso pendente, tala em pinça.
+
+**Divergências.** Nenhuma com gabarito; `0747` está sem gabarito e o capítulo sustenta só a supinação; o mecanismo de `0523` não está no capítulo.
+
+**Aproveitamento:** `pediatria-1369` a `pediatria-1383`, 15 questões, gabarito A4/B4/C4/D3, mediana de 2.794 caracteres.
