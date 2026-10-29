@@ -1,0 +1,232 @@
+[
+  {
+    "id": "pediatria-0695",
+    "questaoSha256": "d2b83c3afd01de9a2a8f964b276d7db0546a06d0f2779ffa242cc288aee9de83",
+    "comentarioAnteriorSha256": "151c0cf6733c351dec2fcf807f17cf3643c65686fb25e004c635feb7855f1367",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f"
+      },
+      {
+        "id": "rockwoodcriancas10-06-sindrome-compartimental",
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+      },
+      {
+        "id": "rockwoodcriancas10-19-ombro-umero",
+        "sha256": "4c673f741d5219196af7e5d7dbb1b00e5527d759f6061eea5b8a928f22cbd96c"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Rockwood crianças 10ª ed., cap. 19: o capítulo cita trauma direto anterior ou posterior no úmero proximal, sem apontar a região posterolateral do gabarito nem permitir descartar as outras alternativas.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0722",
+    "questaoSha256": "aec8d331ec6cceb078ce9b7fca82ced91f74fab5616e9e05cd85138e6cc9f1db",
+    "comentarioAnteriorSha256": "2dccc199b3469f32ac9855f3bd2e83c49d504940fcd5c9c2eae5e3e61527a7fb",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-12-monteggia",
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+      },
+      {
+        "id": "rockwoodcriancas9-13-supracondiliana",
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254"
+      },
+      {
+        "id": "wilkins9-08-radio-ulna-distal-crianca",
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7"
+      },
+      {
+        "id": "wilkins9-09-diafise-antebraco-crianca",
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo 13 lido integralmente: pronação para desvio posteromedial (A) e supinação para posterolateral (D) são ambas condutas sustentadas, conforme a dobradiça periosteal preservada. O enunciado não restringe a direção e não há chave oficial. Não atribuir provavel única. Falta a versão primária da questão ou esclarecimento do contexto que exclua uma das alternativas.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0746",
+    "questaoSha256": "cd6bcdee16f556e9e608bcf133d917991fee90ea945e743af404c2911e9ce0f0",
+    "comentarioAnteriorSha256": "1219f6f0535dc503875f27c3f4c8686db9a208f9d20e870cfb49f3dd477e0f2d",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f"
+      },
+      {
+        "id": "rockwoodcriancas10-06-sindrome-compartimental",
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Sinal clínico da displasia do quadril aos seis meses não é tratado nos resumos pediátricos publicados.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0755",
+    "questaoSha256": "a7e0dc0ed3e601b12088d48b96bd510131ec7c533514968aff90cf66e4ae3590",
+    "comentarioAnteriorSha256": "548dee9b69e05435e3dc5959529df7e63414e01ab46997713b577885a14c3819",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      },
+      {
+        "id": "rockwoodcriancas10-22-coluna-toracolombar",
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Rockwood crianças 10ª ed., caps. 21 e 22: o capítulo define a SCIWORA de PANG e WILBERGER e a gravidade abaixo de 8 anos, mas não compara a frequência entre crianças, adolescentes, adultos jovens e idosos; sem gabarito oficial.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0756",
+    "questaoSha256": "18ad0a22ab89fb9b33f4f17b2edf56c3a508d4ac694658ca8350e85e85f50d2b",
+    "comentarioAnteriorSha256": "7b184f4a0568ac8dec8cbfe25a0b9e432bfeab04f70d2bda4ab9945e05236b7f",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f"
+      },
+      {
+        "id": "rockwoodcriancas10-06-sindrome-compartimental",
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Reflexo de Galant não é tratado nos resumos pediátricos publicados.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0768",
+    "questaoSha256": "4db18b8358a87a35ca8acae522b8dafcbd3f8e8689954654ae6192ae98d7d661",
+    "comentarioAnteriorSha256": "5f4b7318ee51851658e9d663e5831e452d38f4a59890f19ebf5180199903142e",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+      },
+      {
+        "id": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+        "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d"
+      },
+      {
+        "id": "rockwoodcriancas9-16-condilo-lateral",
+        "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb"
+      },
+      {
+        "id": "rockwoodcriancas9-17-fise-distal-umero",
+        "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo do capítulo 16 lido integralmente: no conjunto das fraturas consolidadas, varo é mais frequente; porém o alerta registra valgo na seção específica de consolidação viciosa. A pergunta exige a deformidade mais frequente da consolidação viciosa, não de todas as fraturas consolidadas. Falta esclarecer essa população e o trecho primário que sustenta a frequência; sem chave oficial, não promover a preferência interpretativa por B a resposta única. Conferir também a distinção de pseudartrose com valgo.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0769",
+    "questaoSha256": "794bf131c3d89b6490263bd430893ce10d246fa0f4e4478003cc0c6a6ae00121",
+    "comentarioAnteriorSha256": "29a9e82bd6baf84d55c6aa0344c66d7eec0cf5a3316b6e5cc887d01327c1d17b",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f"
+      },
+      {
+        "id": "rockwoodcriancas10-06-sindrome-compartimental",
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Evolução da coxa vara congênita não é tratado nos resumos pediátricos publicados.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0780",
+    "questaoSha256": "a98d24b93d1bf9cd08d6195dc65260acb8c422eb8f75ba8ff6192834027b9ecc",
+    "comentarioAnteriorSha256": "4cb578aa20dc0ff5195848bd3f28c8847c3df3e3e08fdd31b484462b567a3d37",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f"
+      },
+      {
+        "id": "rockwoodcriancas10-06-sindrome-compartimental",
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Classificação de Cleary e Omer da sinostose radioulnar não é tratado nos resumos pediátricos publicados.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0790",
+    "questaoSha256": "3f9ce09d220957534d9c7a5342be1a1f63b54ecb62ae04c4238f96b431523549",
+    "comentarioAnteriorSha256": "cde3bfad2842a3867943131b4a76744adf03d2b950a275542c00d56062ae0e7e",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f"
+      },
+      {
+        "id": "rockwoodcriancas10-06-sindrome-compartimental",
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Ângulo de Kite e valgo do retropé não é tratado nos resumos pediátricos publicados.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "pediatria-0798",
+    "questaoSha256": "e3606d7724dea3672a5e8f92f9a14dc80c8649308e9417a7aacee50b7807e2a3",
+    "comentarioAnteriorSha256": "bf185d882cab7cd21226d39ddd04e5a099fed2efb074c9ebd79338d721a794f8",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f"
+      },
+      {
+        "id": "rockwoodcriancas10-06-sindrome-compartimental",
+        "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c"
+      }
+    ],
+    "alcance": "Confronto individual do enunciado e de todas as alternativas com corpo independente e lacuna existente; sem usar questão contextual ou comentário antigo como fonte. Releitura integral nova dos capítulos pediátricos12 e31; demais capítulos já consultados nesta tarefa, com seções pertinentes rechecadas.",
+    "imagensInspecionadas": [],
+    "pendencia": "Posição da coxa na deficiência focal proximal do fêmur não é tratado nos resumos pediátricos publicados.",
+    "estadoFinal": "pendente-fonte",
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  }
+]
