@@ -19048,20 +19048,58 @@
   "conferido": false
  },
  "mao-1216": {
-  "provavel": "B",
-  "conceito": "**Esta prova (PUC-SP 2023) não tem gabarito oficial confiável no acervo; a resposta indicada é a que a bibliografia sustenta.**\n\n**A síndrome compartimental da mão exige fasciotomia de todos os compartimentos acometidos.** A mão tem **10 compartimentos** osteofasciais.\n\n### Os 10 compartimentos e como liberá-los\n\n| Compartimento | Quantos | Acesso |\n|---|---|---|\n| Interósseos dorsais | 4 | **Duas incisões dorsais longitudinais, sobre o 2º e o 4º metacarpos** (cada uma dá acesso aos dois espaços vizinhos) |\n| Interósseos palmares (volares) | 3 | Pelas mesmas incisões dorsais, passando ao lado dos metacarpos |\n| **Adutor do polegar** | 1 | Pela incisão dorsal sobre o 2º metacarpo (ao longo do primeiro interósseo dorsal) |\n| Tenar | 1 | Incisão na borda radial do 1º metacarpo |\n| Hipotenar | 1 | Incisão na borda ulnar do 5º metacarpo |\n\nAlém disso:\n- **túnel do carpo:** liberação (estendida), principalmente quando há sintomas do mediano ou quando o antebraço também é descomprimido; muitos autores iniciam por ela;\n- **dedos:** não têm compartimento verdadeiro, mas podem ser descomprimidos por incisões **mediolaterais** (no lado não oponente: ulnar no indicador, médio e anular; radial no mínimo e no polegar);\n- **antebraço:** se acometido, fasciotomia volar e dorsal.\n\n### Diagnóstico\n\nDor desproporcional, mão tensa, MF estendidas e IFP fletidas; dor ao estiramento passivo dos intrínsecos (MF em extensão com IFP em flexão; abdução e adução dos dedos). Pressão compartimental quando o exame é duvidoso.",
-  "correta": "**A descompressão deve se iniciar com uma liberação estendida do túnel do carpo.** É o passo inicial descrito por vários autores, seguido das incisões dorsais, tenar e hipotenar.",
+  "conceito": "A resposta **provável é a alternativa B**: o resumo pediátrico orienta começar pela **liberação estendida do túnel do carpo**, seguida das demais liberações necessárias. Não há gabarito oficial no acervo; a resposta é identificada como provável porque é a única opção sustentada pelo conjunto anatômico e técnico consultado (Rockwood and Wilkins, 10ª edição, capítulo 6; complemento anatômico no Rockwood and Green, 10ª edição, capítulo 17).\n\nA mão tem **10 compartimentos musculares**: tenar, hipotenar, adutor do polegar, quatro interósseos dorsais e três palmares. Isso é diferente dos nove compartimentos descritos para o pé. A contagem precisa acompanhar a região, não ser decorada sem localizar as estruturas.\n\nO resumo descreve incisões dorsais entre **segundo–terceiro e quarto–quinto metacarpais**, além do primeiro espaço e das liberações tenar/hipotenar. Dedos tensos podem precisar de dermotomia médio-axial. Abrir o túnel do carpo é o começo do acesso, não uma garantia de que todos os planos da mão já foram descomprimidos.\n\n**Na prova:** avaliar cada compartimento e confirmar a descompressão do que está comprometido. O adutor é um compartimento reconhecido, não uma região proibida de liberação.",
+  "correta": "Alternativa B, provável. É a sequência inicial explicitamente indicada no resumo. A ausência de gabarito oficial permanece registrada; não se atribui a letra à banca.",
   "incorretas": {
-   "A": "A mão tem **10** compartimentos (4 interósseos dorsais, 3 palmares, tenar, hipotenar e adutor).",
-   "C": "Os interósseos dorsais são liberados por duas incisões dorsais **sobre o 2º e o 4º metacarpos**, não por uma incisão entre o 3º e o 4º.",
-   "D": "O compartimento adutor pode e deve ser liberado, pela incisão dorsal sobre o 2º metacarpo."
+   "A": "O número descrito para a mão é 10, incluindo o adutor e os sete interósseos. Nove é a contagem citada para o pé, outro segmento.",
+   "C": "A técnica descrita usa os intervalos segundo–terceiro e quarto–quinto, não uma única incisão entre terceiro e quarto. A opção não reproduz o acesso aos planos interósseos apresentado.",
+   "D": "O adutor do polegar integra os compartimentos da mão e não é excluído do princípio de descompressão dos planos acometidos. A proibição absoluta da opção não corresponde à anatomia e à liberação por compartimentos descritas."
   },
   "referencias": [
-   "Ouellette EA, Kelly R. Compartment syndromes of the hand. J Bone Joint Surg Am. 1996;78(10):1515-22.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de síndrome compartimental."
+   "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro superior e antebraço.",
+   "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Os compartimentos de cada região."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "provavel": "B",
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
+     "titulo": "Síndrome compartimental na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
+     "secoes": [
+      "Membro superior e antebraço"
+     ],
+     "blocos": [
+      "membro-superior-e-antebraco-cc585328"
+     ],
+     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
+     "trechosSha256": "a86a5b10d1b80869c2f056927c49191bab0b4095a33f444f17df2f55acafa929"
+    },
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Os compartimentos de cada região"
+     ],
+     "blocos": [
+      "os-compartimentos-de-cada-regiao-231bd2af"
+     ],
+     "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
+     "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
+    }
+   ],
+   "questaoSha256": "2c2ca4f9fcf82fdd7e12364c22d751affecc137823fbaddbaef8a9f4c099d13f",
+   "comentarioSha256": "72ac202338a55b426335727d2a79c9be3bfd3fc92fa8abf9f9c09aeab0172802"
+  }
  },
  "mao-1217": {
   "provavel": "C",
@@ -20345,18 +20383,45 @@
   "conferido": false
  },
  "mao-1300": {
-  "conceito": "**Tecido mole interposto transforma uma fratura potencialmente redutível numa lesão com bloqueio mecânico.** No descolamento epifisário, a separação ocorre na região da fise. Tendão, periósteo ou outro tecido pode ocupar o espaço e impedir que os fragmentos voltem à posição.\n\nA presença de interposição já foi dada no enunciado. Portanto, a dúvida não é apenas quanto tempo imobilizar: é como remover a barreira à redução. A abordagem aberta permite identificar e liberar o tecido preso, obter alinhamento e avaliar estabilidade. Fixação adicional depende do padrão e da estabilidade obtida.\n\nA manipulação deve preservar a fise e sua irrigação. Manobras repetidas ou força excessiva podem aumentar lesão dos tecidos sem vencer o bloqueio. Após a redução, é necessário acompanhamento de consolidação, alinhamento e crescimento, porque uma fise traumatizada pode desenvolver alteração tardia.\n\nRedução fechada é apropriada em muitas fraturas pediátricas, mas sua preferência habitual não se sobrepõe a uma interposição demonstrada. O princípio é conseguir redução segura, e não insistir numa técnica menos invasiva que já não consegue resolver a causa.",
-  "correta": "A redução aberta remove o tecido interposto e permite reposicionar a epífise. É a conduta coerente com o bloqueio descrito. Deve-se proteger a fise, verificar estabilidade e acompanhar crescimento; abrir a lesão não elimina automaticamente o risco de sequelas do trauma inicial.",
+  "conceito": "A interposição de tecido mole cria um **obstáculo mecânico à redução**. O resumo orienta **redução aberta quando há irreducibilidade por periósteo ou tendão**, o que sustenta a alternativa A: expor e retirar o tecido do caminho, permitindo restabelecer a relação dos fragmentos (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nNa criança, a fise é mais fraca que o ligamento; por isso, uma lesão próxima da articulação pode separar a epífise em vez de produzir uma luxação ligamentar típica do adulto. O enunciado não define o grau de Salter–Harris e, para decidir a conduta, é suficiente reconhecer a irreducibilidade.\n\nA redução fechada é útil quando consegue recuperar o alinhamento. Quando o tecido está preso, porém, insistir em força ou tração não equivale a remover o bloqueio. A finalidade da abertura é resolver a causa da irreducibilidade, sem assumir um implante específico que a questão não informa.\n\n**Na prova:** distinguir desvio que pode ser corrigido de um bloqueio anatômico. O fragmento não deve ser aceito deslocado apenas porque a criança remodela; o resumo também ressalta que rotação não se corrige adequadamente e que o perfil verdadeiro importa na avaliação dos dedos.",
+  "correta": "Alternativa A. É a conduta descrita para a fratura irredutível por tecido interposto: abertura e liberação do obstáculo. A decisão responde à causa mecânica apresentada, sem transformar toda fratura fisária em indicação de cirurgia.",
   "incorretas": {
-   "B": "Redução fechada e imobilização podem tratar lesões sem bloqueio, mas não removem um tecido interposto já reconhecido. Se a posição continuar inadequada, imobilizar apenas conserva a deformidade. Insistência em manipulações pode agravar a lesão fisária.",
-   "C": "Tração gradual não resolve de forma confiável a presença de tecido no foco fisário e prolonga uma situação que necessita redução anatômica. A interposição deve ser abordada diretamente, em vez de aumentar progressivamente a força sobre uma barreira mecânica.",
-   "D": "Observar sem reduzir uma lesão bloqueada deixa a fise e o alinhamento em situação inadequada. A capacidade de remodelação infantil não justifica aceitar qualquer desvio, especialmente com interposição. O acompanhamento é necessário depois do tratamento, não em substituição a ele."
+   "B": "Redução fechada e gesso podem servir a outros padrões, mas a interposição que impede a redução não desaparece por imobilizar. A opção não trata o obstáculo definido no enunciado.",
+   "C": "Tração gradual não é a solução indicada pelo resumo para periósteo ou tendão presos no foco irredutível. Aplicar mais tempo de força não substitui a liberação do tecido.",
+   "D": "Observação deixa sem correção a interposição e o desalinhamento que ela mantém. Remodelação não é justificativa para ignorar um bloqueio mecânico da redução."
   },
   "referencias": [
-   "Simultaneous juxta-epiphyseal proximal phalanx fracture with flexor tendon entrapment in a child: a case report and review of literature. https://pubmed.ncbi.nlm.nih.gov/22561910/"
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Falanges; Anatomia, exame e remodelação; Como ler este capítulo."
   ],
-  "geradoEm": "2026-10-10T19:31:27+00:00",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-08-mao-carpo",
+     "titulo": "Fraturas e luxações da mão e do carpo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+     "secoes": [
+      "Falanges",
+      "Anatomia, exame e remodelação",
+      "Como ler este capítulo"
+     ],
+     "blocos": [
+      "falanges-2573c6e7",
+      "anatomia-exame-e-remodelacao-06a7a2e4",
+      "como-ler-este-capitulo-d65b64a6"
+     ],
+     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+     "trechosSha256": "b7d5e37358d27dc9ec799ce6d08bcf81c16b5afc77b280c233a29bd0ef7143ef"
+    }
+   ],
+   "questaoSha256": "ec1abcb6ce31ef04968d1e8e53c449d35f940d2e3b6ce99f0f4c1a46cb594cc5",
+   "comentarioSha256": "48ea92596fa00339962e642d6d2434919a8cd6e6a8ce60f71b0025c4e320f871"
+  }
  },
  "mao-1301": {
   "conceito": "**Uma ferida crônica pode ficar presa numa fase inflamatória e não avançar para fechamento.** Perfusão deficiente, pressão, edema, infecção, biofilme e doenças sistêmicas precisam ser corrigidos. Escolher uma cobertura sem tratar esses fatores limita o resultado.\n\nA terapia de pressão negativa remove exsudato e produz deformação do leito. A macrodeformação aproxima bordas; a microdeformação transmite estímulos mecânicos às células e pode favorecer granulação e vias associadas à angiogênese, incluindo VEGF. Isso não significa que o aparelho esterilize uma ferida ou substitua desbridamento e controle da causa.\n\n| Recurso | Aplicação e limite |\n| :--- | :--- |\n| Alginato e hidrofibra | Absorção de exsudato; escolha depende da umidade do leito |\n| Prata | Ação antimicrobiana em situações selecionadas; uso deve ser reavaliado |\n| Pressão negativa | Manejo do exsudato e preparo do leito, com indicação e proteção adequadas |\n\nEm feridas crônicas, bactérias podem se organizar em biofilme, uma comunidade protegida por matriz, além da forma livre. Essa organização ajuda a explicar persistência e necessidade de manejo repetido do leito. “Mais antimicrobiano” não é sempre melhor: toxicidade para células reparadoras e uso sem indicação também prejudicam a cicatrização.",
