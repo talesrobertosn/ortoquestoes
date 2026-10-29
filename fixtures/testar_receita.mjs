@@ -126,6 +126,30 @@ try {
   assert.equal(mesesReais.find(x => x.chave === '2026-09').receita, 0)
   assert.equal(mesesReais.find(x => x.chave === '2026-09').reembolsos, 1)
 
+  // Nova, renovação ou volta pela pessoa (29/10/2026): no Pix cada renovação é uma assinatura nova no banco.
+  {
+    const pix = (id, pago, fim, plano = 'mensal') => ({ id_usuario: id, id_externo: `pix:${id}${pago}`, plano, status: 'ativa', inicio_periodo: pago, criada_em: pago, ultima_cobranca_em: pago, fim_periodo: fim, cancelar_ao_fim: true })
+    const linhas = [
+      pix('ana', '2026-09-04T12:00:00Z', '2026-10-04T12:00:00Z'),
+      pix('ana', '2026-10-01T12:00:00Z', '2099-11-04T12:00:00Z'),   // renovou antes do fim
+      pix('bia', '2026-01-10T12:00:00Z', '2026-02-10T12:00:00Z'),
+      pix('bia', '2026-06-10T12:00:00Z', '2099-07-10T12:00:00Z'),   // voltou meses depois
+      pix('caio', '2026-10-20T12:00:00Z', '2099-11-20T12:00:00Z'),  // primeira compra
+    ]
+    const tipos = (id) => m.cobrancas(linhas).filter(c => c.id_usuario === id).map(c => c.tipo)
+    assert.deepEqual(tipos('ana'), ['nova', 'renovacao'], 'Pix renovado antes do fim é renovação')
+    assert.deepEqual(tipos('bia'), ['nova', 'volta'], 'Pix pago meses depois do fim é volta')
+    assert.deepEqual(tipos('caio'), ['nova'], 'primeira compra é nova')
+    // Pix → cartão: a primeira cobrança do cartão é renovação, não nova.
+    const cartao = { id_usuario: 'caio', id_externo: 'pre1', plano: 'mensal', status: 'ativa', inicio_periodo: '2026-11-18T12:00:00Z', criada_em: '2026-11-18T12:00:00Z', ultima_cobranca_em: '2026-11-20T12:00:00Z', fim_periodo: '2099-12-20T12:00:00Z', cancelar_ao_fim: false }
+    assert.deepEqual(m.cobrancas([...linhas, cartao]).filter(c => c.id_usuario === 'caio').map(c => c.tipo), ['nova', 'renovacao'], 'Pix → cartão é renovação')
+    // Pessoas com acesso: Ana tem dois períodos vigentes e conta uma vez; o cartão de Caio fica no lugar do Pix.
+    const agoraMs = Date.parse('2026-10-02T12:00:00Z')
+    assert.equal(linhas.filter(a => m.vigente(a, agoraMs)).length, 4, 'linhas vigentes')
+    assert.equal(m.vigentesPorPessoa(linhas, agoraMs).length, 3, 'pessoas com acesso')
+    assert.equal(m.vigentesPorPessoa([...linhas, cartao], Date.parse('2026-11-25T12:00:00Z')).find(a => a.id_usuario === 'caio').id_externo, 'pre1', 'cartão que renova vence o Pix')
+  }
+
   console.log('Receita do painel: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })

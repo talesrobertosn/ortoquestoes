@@ -8,7 +8,7 @@
 import { diaAnterior, diaSP, estudoDeHoje, type DiaSerie } from './estudoHoje'
 import { resumoDaPagina } from './formatos'
 import type { SinalUsuario } from './sinais'
-import { meioDe, precoDe, vigente, type AssinaturaBase, type CobrancaReal } from './receita'
+import { cobrancas as cobrancasDe, precoDe, vigentesPorPessoa, meioDe, type AssinaturaBase, type CobrancaReal, type TipoCobranca } from './receita'
 
 export interface PessoaDoDia {
   id_usuario: string; nome: string | null; email: string | null
@@ -36,7 +36,9 @@ export interface FeitoHoje<P extends PessoaDoDia = PessoaDoDia> {
   em: string | null
 }
 
-export interface MovimentoDinheiro { id_usuario: string; nome: string | null; email: string | null; plano: string; meio: string; valor: number | null; em: string | null }
+export interface MovimentoDinheiro { id_usuario: string; nome: string | null; email: string | null; plano: string; meio: string; valor: number | null; em: string | null
+  /** Nos pagamentos: primeira compra, renovação ou volta (classificarCobrancas). */
+  tipo?: TipoCobranca }
 
 export interface QuadroDoDia<P extends PessoaDoDia = PessoaDoDia> {
   hoje: string; ontem: string
@@ -44,7 +46,7 @@ export interface QuadroDoDia<P extends PessoaDoDia = PessoaDoDia> {
     contas: Numero; cadastros: Numero; cadastros7d: number | null; confirmaramEmail: number | null
     entraram: Numero; estudaram: Numero; pessoasQuestoes: Numero; cincoOuMais: Numero
     questoes: Numero; flashcards: Numero; resumosAbertos: Numero
-    assinantes: Numero; pagaram: Numero; valorPago: Numero; novasAssinaturas: Numero; cancelamentos: Numero; pixPendentes: Numero
+    assinantes: Numero; pagaram: Numero; valorPago: Numero; novasAssinaturas: Numero; renovacoes: Numero; voltaram: Numero; cancelamentos: Numero; pixPendentes: Numero
   }
   estudaram: FeitoHoje<P>[]
   /** Abriram o site hoje sem responder nem usar flashcards. */
@@ -53,6 +55,10 @@ export interface QuadroDoDia<P extends PessoaDoDia = PessoaDoDia> {
   maisAtivosSemana: P[]
   pagaram: MovimentoDinheiro[]
   novasAssinaturas: MovimentoDinheiro[]
+  /** Pagaram de novo sem perder o acesso (ou até 30 dias depois), em qualquer meio. */
+  renovacoes: MovimentoDinheiro[]
+  /** Pagaram de novo depois de mais de 30 dias sem acesso. */
+  voltaram: MovimentoDinheiro[]
   cancelamentos: MovimentoDinheiro[]
   pixPendentes: MovimentoDinheiro[]
 }
@@ -108,8 +114,18 @@ export function quadroDoDia<P extends PessoaDoDia>({ usuarios, sinais, serie, re
   const soma = (xs: Array<{ valor: number | null }>) => xs.reduce((s, x) => s + (x.valor ?? 0), 0)
   const ass = assinaturas ?? []
   const inicioDe = (a: AssinaturaBase) => a.criada_em ?? a.inicio_periodo ?? a.ultima_atualizacao ?? null
-  const novasHoje = ass.filter(a => a.status !== 'pendente' && eHoje(inicioDe(a))).sort((a, b) => t(inicioDe(b)) - t(inicioDe(a))).map(a => movA(a, inicioDe(a)))
-  const novasOntem = ass.filter(a => a.status !== 'pendente' && eOntem(inicioDe(a))).length
+  // Nova, renovação ou volta pela pessoa, não pela assinatura (no Pix cada renovação cria uma
+  // assinatura nova no banco; passar do Pix ao cartão também). Ver classificarCobrancas.
+  const classificadas = assinaturas ? cobrancasDe(ass, cobrancas) : []
+  const linhaDe = new Map(ass.map(a => [a.id_usuario, a]))
+  const movC = (c: (typeof classificadas)[number]): MovimentoDinheiro => {
+    const a = linhaDe.get(c.id_usuario)
+    return { ...mov({ id_usuario: c.id_usuario, nome: a?.nome, usuario: a?.usuario, plano: c.plano, valor: c.valor }, c.em.toISOString(), c.meio), tipo: c.tipo }
+  }
+  const doTipo = (tipo: TipoCobranca, dia: (v: string | null | undefined) => boolean) => classificadas.filter(c => c.tipo === tipo && dia(c.em.toISOString()))
+  const deHoje = (tipo: TipoCobranca) => doTipo(tipo, eHoje).sort((a, b) => b.em.getTime() - a.em.getTime()).map(movC)
+  const novasHoje = deHoje('nova'), renovacoesHoje = deHoje('renovacao'), voltaramHoje = deHoje('volta')
+  const tipoDoPagamento = new Map(classificadas.map(c => [`${c.id_usuario}|${diaSP(c.em.toISOString())}|${c.meio}`, c.tipo]))
   const canceladas = (dia: (v: string | null | undefined) => boolean) => ass.filter(a => (a.status === 'cancelada' || a.cancelar_ao_fim) && dia(a.cancelada_em))
   const cancelamentosHoje = canceladas(eHoje).sort((a, b) => t(b.cancelada_em) - t(a.cancelada_em)).map(a => movA(a, a.cancelada_em ?? null))
   const pixPendentes = ass.filter(a => a.status === 'pendente').sort((a, b) => t(inicioDe(b)) - t(inicioDe(a))).map(a => movA(a, inicioDe(a)))
@@ -133,15 +149,18 @@ export function quadroDoDia<P extends PessoaDoDia>({ usuarios, sinais, serie, re
       questoes: n(estudo.questoes?.hoje ?? resumo?.respondidas_hoje ?? null, estudo.questoes?.ontem ?? null),
       flashcards: n(estudo.flashcards),
       resumosAbertos: n(usuarios ? resumosHoje.size : null),
-      assinantes: n(resumo?.assinantes_vigentes ?? (assinaturas ? ass.filter(a => vigente(a, agora)).length : null)),
+      assinantes: n(resumo?.assinantes_vigentes ?? (assinaturas ? vigentesPorPessoa(ass, agora).length : null)),
       pagaram: n(cobrancas ? pagaramHoje.length : null, cobrancas ? pagaramOntem.length : null),
       valorPago: n(cobrancas ? soma(pagaramHoje) : null, cobrancas ? soma(pagaramOntem.map(c => ({ valor: valorDe(c) }))) : null),
-      novasAssinaturas: n(assinaturas ? novasHoje.length : null, assinaturas ? novasOntem : null),
+      novasAssinaturas: n(assinaturas ? novasHoje.length : null, assinaturas ? doTipo('nova', eOntem).length : null),
+      renovacoes: n(assinaturas ? renovacoesHoje.length : null, assinaturas ? doTipo('renovacao', eOntem).length : null),
+      voltaram: n(assinaturas ? voltaramHoje.length : null, assinaturas ? doTipo('volta', eOntem).length : null),
       cancelamentos: n(assinaturas ? cancelamentosHoje.length : null, assinaturas ? canceladas(eOntem).length : null),
       pixPendentes: n(assinaturas ? pixPendentes.length : null),
     },
     estudaram, entraram, recemCadastrados, maisAtivosSemana,
-    pagaram: pagaramHoje, novasAssinaturas: novasHoje, cancelamentos: cancelamentosHoje, pixPendentes,
+    pagaram: pagaramHoje.map(m => ({ ...m, tipo: tipoDoPagamento.get(`${m.id_usuario}|${hoje}|${m.meio}`) })),
+    novasAssinaturas: novasHoje, renovacoes: renovacoesHoje, voltaram: voltaramHoje, cancelamentos: cancelamentosHoje, pixPendentes,
   }
 }
 

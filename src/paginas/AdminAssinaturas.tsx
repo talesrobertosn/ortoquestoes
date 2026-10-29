@@ -26,7 +26,7 @@ import { proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../com
 import type { CobrancaReal } from '../componentes/admin/receita'
 import { AdminOpinioesFlashcards } from '../componentes/admin/AdminOpinioesFlashcards'
 import { contaDeTeste } from '../componentes/admin/contasTeste'
-import { meioDe, precoDe } from '../componentes/admin/receita'
+import { meioDe, precoDe, vigentesPorPessoa } from '../componentes/admin/receita'
 import { real } from '../dados/planos'
 import { usarLidos } from '../componentes/admin/lidos'
 import { CINCO_MIN, usarRpc } from '../componentes/admin/usarRpc'
@@ -175,7 +175,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
 
   const errosPagamento = eventos?.filter(ev => ev.status_processamento === 'erro' && !lidosPagamento.lidos.has(String(ev.id))).length ?? 0
   const contadores: Partial<Record<Aba, number>> = {
-    usuarios: contadoresQ.dados?.usuarios ?? usuarios?.length, assinaturas: reais?.filter(vigente).length,
+    usuarios: contadoresQ.dados?.usuarios ?? usuarios?.length, assinaturas: reais ? vigentesPorPessoa(reais).length : undefined,
     pagamentos: errosPagamento || undefined, conteudo: pendenciasConteudo || undefined,
   }
   const onlineAgora = usuarios ? usuarios.filter(u => u.online).length : contadoresQ.dados?.online ?? undefined
@@ -312,6 +312,15 @@ function Assinaturas({ linhas, usuarios }: { linhas: LinhaAssinatura[]; usuarios
       .sort((x, y) => (new Date(inicioDe(y)).getTime() - new Date(inicioDe(x)).getTime()) * (ordem === 'recentes' ? 1 : -1))
   }, [linhas, filtro, recorte, busca, ordem, passa])
   const usuarioDe = (id: string) => usuarios?.find(u => u.id_usuario === id) ?? null
+  // Renovação: a pessoa já tinha uma assinatura paga antes desta (no Pix, cada renovação vira uma linha nova;
+  // passar do Pix ao cartão também). A primeira paga de cada pessoa é a "nova".
+  const ordemNaPessoa = useMemo(() => {
+    const mapa = new Map<string, number>()
+    const porPessoa = new Map<string, LinhaAssinatura[]>()
+    for (const a of linhas) if (a.status !== 'pendente' && a.status !== 'falha_pagamento') porPessoa.set(a.id_usuario, [...(porPessoa.get(a.id_usuario) ?? []), a])
+    for (const lista of porPessoa.values()) lista.sort((x, y) => new Date(inicioDe(x)).getTime() - new Date(inicioDe(y)).getTime()).forEach((a, i) => mapa.set(`${a.id_usuario}:${a.ultima_atualizacao}:${inicioDe(a)}`, i))
+    return mapa
+  }, [linhas])
 
   return <section className="empilha adm-secao" aria-labelledby="adm-titulo-assinaturas">
     <div className="adm-secao__cabeca"><div>
@@ -358,6 +367,7 @@ function Assinaturas({ linhas, usuarios }: { linhas: LinhaAssinatura[]; usuarios
           <div className="adm-cartao__selos">
             <span className="adm-selo adm-selo--neutro">{rotuloPlano(a.plano)}{preco ? ` · ${real(preco.total)}` : ''}</span>
             <span className={'adm-selo adm-selo--meio adm-selo--' + meioDe(a)}>{rotuloMeio(meioDe(a))}</span>
+            {(ordemNaPessoa.get(`${a.id_usuario}:${a.ultima_atualizacao}:${inicio}`) ?? 0) > 0 && <span className="adm-selo adm-selo--neutro" title="Já era assinante antes desta: conta como renovação, não como assinatura nova">Renovação</span>}
             {contaDeTeste(a) && <span className="adm-selo adm-selo--aviso">Teste</span>}
           </div>
           <dl className="adm-cartao__dados">

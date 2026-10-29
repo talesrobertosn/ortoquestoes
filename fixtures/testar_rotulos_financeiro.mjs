@@ -51,7 +51,9 @@ try {
   assert.notEqual(m.proximaData({ id_usuario: 'x', plano: 'mensal', status: 'falha_pagamento', meio: 'cartao', fim_periodo: dia(-3) }, agora).rotulo, 'Próxima cobrança')
 
   // Tipos de cobrança.
-  assert.equal(m.rotuloTipoCobranca({ meio: 'pix', tipo: 'nova' }), 'Compra no Pix')
+  assert.equal(m.rotuloTipoCobranca({ meio: 'pix', tipo: 'nova' }), 'Assinatura nova')
+  assert.equal(m.rotuloTipoCobranca({ meio: 'pix', tipo: 'renovacao' }), 'Renovação no Pix')
+  assert.equal(m.rotuloTipoCobranca({ meio: 'pix', tipo: 'volta' }), 'Voltou a assinar')
   assert.equal(m.rotuloTipoCobranca({ meio: 'cartao', tipo: 'nova' }), 'Assinatura nova')
   assert.equal(m.rotuloTipoCobranca({ meio: 'cartao', tipo: 'renovacao' }), 'Renovação automática')
 
