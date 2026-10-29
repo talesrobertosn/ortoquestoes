@@ -183,7 +183,8 @@ const snResumo = (e) => ({ ...e, total: e.ids.length })
 const snMudar = (edicao, mudar) => { const e = snExemplo().find((x) => x.edicao === edicao); if (!e) return [400, { code: 'P0001', message: 'edicao_invalida' }]; mudar(e); return [200, snResumo(e)] }
 const rpcsAdmin = {
   eh_administrador: () => [200, true],
-  listar_assinaturas_admin: () => [200, []],
+  // ASSINATURAS_ADMIN='[...]': assinaturas de exemplo para o Financeiro e o Agora do painel.
+  listar_assinaturas_admin: () => [200, process.env.ASSINATURAS_ADMIN ? JSON.parse(process.env.ASSINATURAS_ADMIN) : []],
   sn_admin_listar: () => [200, snExemplo().map(snResumo)],
   sn_admin_salvar: (_u, a) => {
     const lista = snExemplo()

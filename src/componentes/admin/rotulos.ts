@@ -90,7 +90,8 @@ export const SITUACAO_COBRANCA = { paga: 'Paga', estimada: 'Estimada', reembolsa
 export type SituacaoCobranca = keyof typeof SITUACAO_COBRANCA
 /** "Compra no Pix", "Assinatura nova" (1ª cobrança do cartão) ou "Renovação automática". */
 export const rotuloTipoCobranca = (c: Pick<Cobranca, 'meio' | 'tipo'>) =>
-  c.meio === 'pix' ? 'Compra no Pix' : c.tipo === 'nova' ? 'Assinatura nova' : 'Renovação automática'
+  c.tipo === 'nova' ? 'Assinatura nova' : c.tipo === 'volta' ? 'Voltou a assinar'
+    : c.meio === 'pix' ? 'Renovação no Pix' : 'Renovação automática'
 
 /** Pedido Pix (tabela pedidos_pix), com o status que o Mercado Pago devolve. */
 export const STATUS_PIX: Record<string, string> = {
