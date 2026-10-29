@@ -4,8 +4,8 @@
  "estados": {
   "duplicada": 97,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 881,
-  "revisada": 1996
+  "pendente-fonte": 880,
+  "revisada": 1997
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -95,8 +95,8 @@
    "estados": {
     "duplicada": 4,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 101,
-    "revisada": 141
+    "pendente-fonte": 100,
+    "revisada": 142
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -16342,14 +16342,54 @@
    ],
    "prova": "UFG",
    "ano": 2017,
-   "estado": "pendente-fonte",
-   "motivo": "Lesão do nervo interósseo anterior não aparece no resumo do capítulo 45 (fraturas e luxações da mão), que trata de trauma ósseo e ligamentar; falta a fonte da cirurgia da mão (Green) ou outro resumo.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
    "questaoSha256": "b62ac1a84b5782db99facb6609faabc3f55ad4539415e46feb1795f566d8b8cb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "O antebraço como articulação: arco radial, forças e rotação"
+      ],
+      "blocos": [
+       "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f",
+       "o-antebraco-como-articulacao-arco-radial-forcas--72528da9"
+      ],
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+      "trechosSha256": "3c2b1e66d10149dca8ab38990117126cb09e69226ec62d7d5f926f89f60e9d06"
+     },
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Lesões nervosas: frequência, exame e conduta"
+      ],
+      "blocos": [
+       "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31",
+       "lesoes-nervosas-frequencia-exame-e-conduta-b0eb7804"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "2d057fe73d969dce2f98fddbdedad1cb907b8ae3bbd8b9b712bd7e8df4ec7acb"
+     }
+    ],
+    "questaoSha256": "b62ac1a84b5782db99facb6609faabc3f55ad4539415e46feb1795f566d8b8cb",
+    "comentarioSha256": "91a6af12c38ca8bcd220224ce44d5e72dac7758640468b0965861da15a37c112"
+   },
    "pendencia": "Lesão do nervo interósseo anterior não aparece no resumo do capítulo 45 (fraturas e luxações da mão), que trata de trauma ósseo e ligamentar; falta a fonte da cirurgia da mão (Green) ou outro resumo."
   },
   "mao-0886": {
