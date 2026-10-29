@@ -4,8 +4,8 @@
  "estados": {
   "duplicada": 97,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 882,
-  "revisada": 1995
+  "pendente-fonte": 881,
+  "revisada": 1996
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -200,8 +200,8 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente-fonte": 50,
-    "revisada": 100
+    "pendente-fonte": 49,
+    "revisada": 101
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -8260,8 +8260,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-fonte",
-   "motivo": "O resumo 63 descreve corte no lado côncavo e abertura por cunha, com possível alívio no convexo, mas não especifica a dobradiça que deve permanecer íntegra no exemplo em valgo. Falta descrição ou figura primária da técnica aplicada ao valgo para conferir lado da dobradiça e força no segmento distal, sem confundir lado do corte com lado preservado. Não aberta figura de livro ausente do resumo digital; A oficial preservada.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -8276,6 +8276,29 @@
     "rockwood10-63-diafise-tibia"
    ],
    "questaoSha256": "a721ba4ec8b0a4a976dbb25963dd56caa3e28b762e22a7cdd3ea80aef5255b29",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-29-diafise-tibia",
+      "titulo": "Fraturas da tíbia e da fíbula na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+      "secoes": [
+       "Diáfise: o desvio depende da fíbula"
+      ],
+      "blocos": [
+       "diafise-o-desvio-depende-da-fibula-fa1caf1e"
+      ],
+      "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+      "trechosSha256": "55968137897ee04554a42ab2487248c04039a87e3d5c7448ead2282a6b271e8a"
+     }
+    ],
+    "questaoSha256": "a721ba4ec8b0a4a976dbb25963dd56caa3e28b762e22a7cdd3ea80aef5255b29",
+    "comentarioSha256": "9499c4e66892d5b6e8ea3851a697b7d94bbb1ee3a92538011b257f7c469cbd15"
+   },
    "pendencia": "O resumo 63 descreve corte no lado côncavo e abertura por cunha, com possível alívio no convexo, mas não especifica a dobradiça que deve permanecer íntegra no exemplo em valgo. Falta descrição ou figura primária da técnica aplicada ao valgo para conferir lado da dobradiça e força no segmento distal, sem confundir lado do corte com lado preservado. Não aberta figura de livro ausente do resumo digital; A oficial preservada."
   },
   "conceitos-basicos-0364": {

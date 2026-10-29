@@ -1,0 +1,37 @@
+{
+  "conceitos-basicos-0362": {
+    "questaoSha256": "a721ba4ec8b0a4a976dbb25963dd56caa3e28b762e22a7cdd3ea80aef5255b29",
+    "comentarioAnteriorSha256": "b2f01b8d7826a1e93a6a088fb0b1dbf9e97a27836721e5ffa8893ecd75b035e8",
+    "comentario": {
+      "conceito": "A correção do **valgo** com cunha de abertura no gesso preserva a **dobradiça medial** e leva o segmento distal em **varo**, alternativa A. O ponto central é não confundir o lado que se abre com o lado que permanece unido. O resumo da tíbia pediátrica orienta cortar o gesso do lado oposto ao ápice da deformidade, mantendo uma faixa íntegra sobre o ápice (Rockwood and Wilkins, 10ª edição, capítulo 29, seção “Gesso, alinhamento aceitável e cunha”).\n\n**Reconstruindo a geometria.** Em valgo, o segmento distal se afasta lateralmente do alinhamento; o ápice da angulação fica do lado medial. A faixa medial de gesso é preservada como uma dobradiça. Ao abrir a cunha do lado lateral, o segmento distal gira em torno dessa faixa e volta em direção medial: uma correção em varo. Aplicar mais valgo levaria o segmento justamente na direção da deformidade que se pretende desfazer.\n\n**Por que não cortar toda a circunferência?** A faixa preservada mantém a ligação entre as partes proximal e distal do gesso e organiza a correção como uma abertura angular. O capítulo descreve deixar cerca de um quarto do gesso sobre o ápice. A abertura e a dobradiça, portanto, ocupam lados opostos; memorizar apenas “lado medial” sem dizer qual função ele cumpre favorece a troca das opções.\n\nA fonte descreve a técnica na criança e recomenda vigiar sinais de **síndrome compartimental** após a cunha. Seus limites pediátricos de alinhamento ou de remodelação não são critérios gerais para qualquer paciente. A pergunta aqui exige a direção mecânica da correção, não uma indicação universal de tratamento.\n\n**Na prova:** valgo → ápice e dobradiça mediais → abertura lateral → força corretiva em varo.",
+      "correta": "Alternativa A. Mantém o gesso medial íntegro sobre o ápice e corrige o deslocamento lateral do segmento distal com força em varo. A dobradiça não é o lado aberto pela cunha.",
+      "incorretas": {
+        "B": "Preserva a dobradiça do lado adequado, mas aplica força em valgo. Isso mantém ou aumenta a direção da deformidade inicial, em vez de trazê-la de volta ao alinhamento. Acertar a dobradiça não compensa inverter a correção.",
+        "C": "A força em varo corresponde à correção do valgo, mas a dobradiça lateral inverte o plano da cunha de abertura descrita. Para esse desvio, o lado lateral é o que deve abrir; o gesso preservado fica sobre o ápice medial.",
+        "D": "Inverte os dois componentes: preserva o lado lateral como dobradiça e dirige o segmento distal em mais valgo. Não reproduz a abertura oposta ao ápice nem o sentido necessário para desfazer o desvio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Diáfise: o desvio depende da fíbula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Diáfise: o desvio depende da fíbula"
+        ],
+        "blocos": [
+          "diafise-o-desvio-depende-da-fibula-fa1caf1e"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "55968137897ee04554a42ab2487248c04039a87e3d5c7448ead2282a6b271e8a"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
