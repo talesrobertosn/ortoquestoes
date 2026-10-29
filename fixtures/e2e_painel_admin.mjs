@@ -88,6 +88,12 @@ const rpcs = {
     { id_usuario: u(1).id_usuario, planos_vezes: 3, planos_ultima: iso(agora - 2 * HORA), condicoes_ultima: null, flashcards_unicos: 0, flashcards_7d: 0, flashcards_ultima: null, cripta_andar: null, locais_trabalho: null },
     { id_usuario: u(2).id_usuario, planos_vezes: 0, planos_ultima: null, condicoes_ultima: null, flashcards_unicos: 40, flashcards_7d: 25, flashcards_ultima: iso(agora - 10 * MIN), cripta_andar: 7, locais_trabalho: null },
   ],
+  // Cortesias (parte 36): uma valendo sem prazo, uma com prazo no futuro e uma vencida (não conta).
+  cortesias_admin: () => [
+    { id_usuario: u(4).id_usuario, ate: null, motivo: 'preceptor', criado_em: iso(agora - 9 * DIA) },
+    { id_usuario: u(8).id_usuario, ate: iso(agora + 20 * DIA), motivo: null, criado_em: iso(agora - 2 * DIA) },
+    { id_usuario: u(9).id_usuario, ate: iso(agora - DIA), motivo: 'sorteio', criado_em: iso(agora - 40 * DIA) },
+  ],
   funil_admin: () => [{ cadastrados: 14, confirmaram: 12, responderam: 11, passaram_50: 8, passaram_500: 3, assinaram: 5 }],
   retencao_admin: () => [],
   resumo_lembretes_admin: () => [],
@@ -228,6 +234,13 @@ try {
   await pc.p.locator('.adm-nav__item', { hasText: 'Pessoas' }).click()
   await pc.p.waitForSelector('.adm-usuarios')
   assert.equal(await pc.p.locator('.adm-vivo, .adm-kpis-usuarios').count(), 0)
+  // Cortesia ativa: selo na pessoa e filtro só com as que valem agora (a vencida fica de fora).
+  await pc.p.locator('.adm-chip', { hasText: /^Cortesia/ }).click()
+  assert.equal(await pc.p.locator('.adm-usuarios > li').count(), 2)
+  const comCortesia = await pc.p.locator('.adm-usuarios').innerText()
+  for (const t of [u(4).nome, u(8).nome, 'Cortesia sem prazo', 'Cortesia até']) assert.ok(comCortesia.includes(t), t)
+  assert.ok(!comCortesia.includes(u(9).nome), 'cortesia vencida não entra no filtro')
+  await pc.p.locator('.adm-chip', { hasText: /^Todos/ }).click()
   await foto(pc.p, 'pessoas-1366')
   await pc.p.locator('.adm-parte', { hasText: 'Crescimento' }).click()
   await pc.p.waitForTimeout(800)
