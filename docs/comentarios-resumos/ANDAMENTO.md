@@ -6,8 +6,8 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | --- | ---: |
 | duplicada | 97 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 882 |
-| revisada | 1995 |
+| pendente-fonte | 881 |
+| revisada | 1996 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -34,7 +34,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 42 | 0 | 41 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 53 | 0 | 70 |
 | Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 34 | 0 | 11 |
-| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 100 | 0 | 55 |
+| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 101 | 0 | 54 |
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 33 | 0 | 16 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 47 | 0 | 19 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 30 | 0 | 23 |
