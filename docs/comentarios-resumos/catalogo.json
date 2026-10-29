@@ -4,8 +4,8 @@
  "estados": {
   "duplicada": 97,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 883,
-  "revisada": 1994
+  "pendente-fonte": 882,
+  "revisada": 1995
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -39,8 +39,8 @@
    "titulo": "Fratura da clavícula",
    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
    "estados": {
-    "pendente-fonte": 7,
-    "revisada": 66
+    "pendente-fonte": 6,
+    "revisada": 67
    }
   },
   "rockwood10-36-umero-proximal": {
@@ -1355,7 +1355,7 @@
    "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-fonte",
-   "motivo": "O capítulo 49 sustenta que metilprednisolona é opção controversa, mas declara não desenvolver as síndromes medulares incompletas. Faltam os padrões motores da síndrome central e sensitivos da posterior necessários para conferir C e D, além da afirmação de hipertermia em B. Necessária fonte específica de síndromes medulares para revisar todas as alternativas.",
+   "motivo": "48 agora sustenta C (déficit maior nos membros superiores) e D (posterior altera propriocepção, preserva dor); 49 permite julgar A como opção controversa, não protocolo obrigatório. Falta fonte independente sobre hipertermia em B: pele quente não demonstra elevação da temperatura central. Não atribuir selo enquanto essa alternativa não estiver conferida.",
    "temComentario": true,
    "citacoes": [
     {
@@ -1378,7 +1378,7 @@
     "rockwood10-49-fratura-toracolombar"
    ],
    "questaoSha256": "9742c89d7016a5f6114f3d1ce91b636276180274e2a1556bccb945b7985e0699",
-   "pendencia": "O capítulo 49 sustenta que metilprednisolona é opção controversa, mas declara não desenvolver as síndromes medulares incompletas. Faltam os padrões motores da síndrome central e sensitivos da posterior necessários para conferir C e D, além da afirmação de hipertermia em B. Necessária fonte específica de síndromes medulares para revisar todas as alternativas."
+   "pendencia": "48 agora sustenta C (déficit maior nos membros superiores) e D (posterior altera propriocepção, preserva dor); 49 permite julgar A como opção controversa, não protocolo obrigatório. Falta fonte independente sobre hipertermia em B: pele quente não demonstra elevação da temperatura central. Não atribuir selo enquanto essa alternativa não estiver conferida."
   },
   "coluna-0078": {
    "tema": "coluna",
@@ -2738,14 +2738,14 @@
    "prova": "TARO",
    "ano": 2025,
    "estado": "pendente-fonte",
-   "motivo": "O capítulo adulto não desenvolve a fratura da apófise posterior no esqueleto imaturo nem sua distribuição etária. Necessária fonte pediátrica que confirme adolescência e explique a lesão antes de comparar as outras faixas de idade.",
+   "motivo": "22 já cobre lesão da placa terminal/apófise do anel no atleta jovem, seu diagnóstico e tratamento; não compara a frequência entre recém-nascidos, 2-4, 5-9 e adolescentes. Falta distribuição etária independente, não a simples existência da lesão pediátrica. D oficial preservado sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
    "questaoSha256": "00f1b4ae2baa580fc66a233317795aa00807c73196eb1a918cce9a9a97955c2b",
-   "pendencia": "O capítulo adulto não desenvolve a fratura da apófise posterior no esqueleto imaturo nem sua distribuição etária. Necessária fonte pediátrica que confirme adolescência e explique a lesão antes de comparar as outras faixas de idade."
+   "pendencia": "22 já cobre lesão da placa terminal/apófise do anel no atleta jovem, seu diagnóstico e tratamento; não compara a frequência entre recém-nascidos, 2-4, 5-9 e adolescentes. Falta distribuição etária independente, não a simples existência da lesão pediátrica. D oficial preservado sem selo."
   },
   "coluna-0297": {
    "tema": "coluna",
@@ -8036,8 +8036,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente-fonte",
-   "motivo": "O resumo 34 confirma que a clavícula é o primeiro osso a ossificar, mas não descreve a via intramembranosa versus endocondral, necessária para distinguir B/D e explicar as alternativas do úmero. O bloco citado reconhece a ausência do tipo de ossificação no capítulo. Falta fonte primária sobre as vias de formação desses ossos; comentário antigo e gabarito D não suprem essa evidência.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -8052,6 +8052,46 @@
     "rockwood10-34-fratura-clavicula"
    ],
    "questaoSha256": "a47d3d5b8711d1ecd55c8a00cb530e66de89f4936788ec53afecf157577e250a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+      "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+      "secoes": [
+       "Clavícula: epidemiologia, mecanismos e recém-nascido",
+       "Esternoclavicular"
+      ],
+      "blocos": [
+       "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d",
+       "esternoclavicular-2bb38b19"
+      ],
+      "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+      "trechosSha256": "cf0c6635f0ede1f7edeb503660233ec98d6a120245065cc05745fdc0f219cb11"
+     },
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+      ],
+      "blocos": [
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-680fb88a"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "201921ba9695c32f5f91e750ef4323a34067bd5bec47489a0e961018acf74103"
+     }
+    ],
+    "questaoSha256": "a47d3d5b8711d1ecd55c8a00cb530e66de89f4936788ec53afecf157577e250a",
+    "comentarioSha256": "e6443cbb52d187e3639955e5eff4a5396ea4712c2f7a94c2d9c2960a4f90ca37"
+   },
    "pendencia": "O resumo 34 confirma que a clavícula é o primeiro osso a ossificar, mas não descreve a via intramembranosa versus endocondral, necessária para distinguir B/D e explicar as alternativas do úmero. O bloco citado reconhece a ausência do tipo de ossificação no capítulo. Falta fonte primária sobre as vias de formação desses ossos; comentário antigo e gabarito D não suprem essa evidência."
   },
   "conceitos-basicos-0329": {

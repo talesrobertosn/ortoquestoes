@@ -1,0 +1,49 @@
+{
+  "base": "0782b912d588c55effbec326bb03c7ddb990168a",
+  "questao": "conceitos-basicos-0196",
+  "questaoSha256": "a47d3d5b8711d1ecd55c8a00cb530e66de89f4936788ec53afecf157577e250a",
+  "comentarioAnterior": {
+    "incorretas": {
+      "A": "O úmero se forma por ossificação endocondral, mas não é o primeiro osso a ossificar.",
+      "B": "A clavícula é o primeiro osso, mas ossifica principalmente pela via intramembranosa, e não pela endocondral.",
+      "C": "O úmero não é o primeiro osso e se forma por ossificação endocondral."
+    },
+    "conceito": "Os ossos se formam por dois caminhos diferentes:\n\n**Ossificação endocondral**: primeiro se forma um molde de **cartilagem**, que depois é substituído por osso. É assim que se formam a maioria dos ossos longos, como o úmero, o fêmur e a tíbia.\n\n**Ossificação intramembranosa**: o osso se forma **diretamente** a partir do tecido embrionário (mesênquima), sem passar por cartilagem. É assim que se formam os ossos chatos do crânio e da face.\n\nA **clavícula** é especial. Ela é o **primeiro osso do corpo a começar a ossificar**, por volta da 5ª semana de gestação, e faz isso principalmente pela via **intramembranosa**, a partir de dois centros.\n\nCuriosamente, ela também tem um dos últimos pontos a terminar o crescimento: a placa de crescimento da ponta perto do esterno se fecha só por volta dos 25 anos. Por isso, muitas \"luxações\" da articulação entre clavícula e esterno em adolescentes e adultos jovens são, na verdade, fraturas dessa placa de crescimento.\n\nUma doença ligada a esse tipo de ossificação é a **disostose cleidocraniana**, um defeito genético que afeta justamente os ossos de formação intramembranosa: as clavículas podem faltar ou ser pequenas, e o crânio demora a fechar.",
+    "correta": "A clavícula, por ossificação intramembranosa. É o primeiro osso do corpo a ossificar, e o faz diretamente do mesênquima, sem molde de cartilagem.",
+    "referencias": [
+      "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.1"
+    ],
+    "geradoEm": "2026-10-03",
+    "conferido": false
+  },
+  "comentarioAnteriorSha256": "6989a8986262566070d287b35b1b8902328d6fc5378d93a4fd971dd050cbdb32",
+  "novaFonteDecisiva": "rockwoodcriancas10-20-clavicula-escapula: corpo independente informa ossificação intramembranosa; combinado ao primeiro osso em rockwood10-34-fratura-clavicula. Não usado como prova o bloco contextual 34 que só citava o gabarito.",
+  "leituraIntegralAtual": {
+    "rockwood10-34-fratura-clavicula": {
+      "linhas": 541,
+      "markdownSha256Bytes": "d1bd1dc81bc579002851de0ba2b2f041f5ef72462898f197db2deea6eb7a61da",
+      "capituloSha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d"
+    },
+    "rockwoodcriancas10-20-clavicula-escapula": {
+      "linhas": 116,
+      "markdownSha256Bytes": "077e092cc8bb1f99fb0c50bb868a47af888449c282bedadd799d353c09af11ed",
+      "capituloSha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4"
+    }
+  },
+  "lacunas": 9,
+  "unidadeTotal": 10,
+  "conferido": false,
+  "gabaritoOficialPreservado": "D",
+  "continuidade": "Próxima249: conceitos-basicos-0362/0365/0369/0373/0374/0375/0376/0382/0392/0402. Ainda não avaliada.",
+  "validacao": {
+    "fixtures": true,
+    "acervoJsonTodasAlternativas": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 1,
+    "lacunasComentariosIntactos": 49,
+    "demaisBytesPreservados": true,
+    "ui": "390/1440: resposta oficial D, selo e link do primeiro bloco corretos; captura celular aberta e inspecionada.",
+    "observacao": "A auditoria inicial de documentação esperava apenas pendencia; catalogo.atualizar espelha a mesma frase em motivo. Expectativa corrigida, ambos os campos conferidos; nenhum estado afetado."
+  }
+}

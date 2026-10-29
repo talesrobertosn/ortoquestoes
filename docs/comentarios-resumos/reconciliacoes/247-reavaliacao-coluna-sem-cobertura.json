@@ -1,0 +1,228 @@
+[
+  {
+    "id": "coluna-0409",
+    "questaoSha256": "f628d4516eb4412ebb21876764fa6d139b811d7c44e5cdf7da9feeb9dc9fb425",
+    "comentarioAnteriorSha256": "7557d3808a286c0300196265eb863fc0795b1bf5b0d0c8fefbc91dd8e898e022",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Imagem conferida (radiografias em inclinação). Classificação de Lenke e critérios de curva estrutural na escoliose: fora dos resumos publicados.",
+    "reavaliacaoIndividual": "Figura aberta: duas radiografias em inclinação lateral com marcações angulares. Não há resumo publicado de Lenke/estruturalidade da escoliose; os números visíveis não substituem seus critérios.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [
+      {
+        "arquivo": "coluna/coluna-0409-1.png",
+        "sha256Bytes": "3b12edc3cb76502d1bc155ea4f118930b837ebe5f51986b258de90c2d52b774f",
+        "abertaIndividualmente": true
+      }
+    ],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0449",
+    "questaoSha256": "3d4269deb70d930378808155171ec4bfa455c45bb9bc28fa24ddabb46139d877",
+    "comentarioAnteriorSha256": "b31dd08691c932e652070e5839d8419f80cba5353abdbe6d8258fc61ebcf65ed",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) não trata da síndrome de Klippel-Feil. Precisa de fonte de malformações congênitas da coluna.",
+    "reavaliacaoIndividual": "48/21 não desenvolvem síndrome de Klippel-Feil e a comparação de fusão congênita com instabilidade, diástase, cisto e osteófitos. Falta fonte de malformações cervicais.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0452",
+    "questaoSha256": "9fc6a37bbdb30a2bbf0ef634d240737affe40a032d1759ff59f5c0cd57c88592",
+    "comentarioAnteriorSha256": "9e5b9138fde36b154d5cee85594aba1a062d7d6dc6520e007a218bd9af6b79c9",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "A questão exige diagnóstico diferencial não traumático com sintomas constitucionais e cifose angular. O resumo não desenvolve tuberculose vertebral, mielopatia, doenças reumáticas e hérnia nesse contexto, e há caracteres corrompidos no enunciado. Necessário texto original e fonte de infecção vertebral; não transformar cifose traumática em prova de mal de Pott.",
+    "reavaliacaoIndividual": "Sintomas constitucionais e cifose angular exigem fonte de infecção vertebral e diagnóstico diferencial não traumático; persistem caracteres corrompidos no enunciado. Não corrigir OCR ou declarar mal de Pott a partir da resposta antiga.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0462",
+    "questaoSha256": "1ad7ba2e883be06a1bddbf6f5544f125c53326e6df3f74e4266a4394d5822049",
+    "comentarioAnteriorSha256": "b7fc31511640119014adf20c010e630daf022327f4b88ac940904ecc29358f5c",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Risser 1 e curva idiopática lombar de 50 graus requerem algoritmo de escoliose do adolescente. O capítulo de fraturas não define os limites de observação, colete e cirurgia dessa doença. Falta fonte específica que julgue idade óssea, progressão e cada alternativa.",
+    "reavaliacaoIndividual": "Risser 1, 12 anos e curva idiopática de 50 graus exigem algoritmo de escoliose e crescimento. Os resumos de fraturas não definem colete/cirurgia/fisioterapia/espera nesses limites.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0465",
+    "questaoSha256": "7d22adc6f92776843b2f434a4401b6a8c28d56bb1d9bfe15c82050840251f127",
+    "comentarioAnteriorSha256": "94169386cf7bf6a1ebc385521daba1a27e14dd9f09c275ae99d03be9743f9794",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O corpo do resumo 48 confirma risco relevante de pseudartrose do tipo II e apresenta séries com taxas próprias de união/não união, mas não informa a faixa de 26%–80% do item. Não converter taxas de consolidação de populações diferentes numa faixa publicada de pseudartrose nem usar o bloco contextual da própria questão como prova. Falta a fonte primária da faixa quantitativa e sua população/tratamento. A oficial e comentário preservados, sem revisão concluída.",
+    "reavaliacaoIndividual": "48 fornece séries próprias de união e não união do odontoide, não a faixa conservadora 26%-80% da assertiva. Não combinar populações para inventar intervalo publicado.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0466",
+    "questaoSha256": "519bb72405d914a93864c2e56d4c27492b3fbcba7e0a5ab171fdbac9f5d6b197",
+    "comentarioAnteriorSha256": "24e95da8c21da4fd219cc3a11ff40cf044a76a4d132e1dfeb39f0f9d9446b870",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) usa 5 mm e 10 graus como limites cirúrgicos e cita 6 mm, mas não menciona o retardo no diagnóstico como fator de risco de pseudartrose, que o item julga certo.",
+    "reavaliacaoIndividual": "Limites de desvio/angulação em 48 não provam o componente retardo diagnóstico como fator de pseudartrose. Julgamento Certo exige sustentar a assertiva inteira.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0467",
+    "questaoSha256": "b364f58f007073afd25567ae5d2ed7ae32b0706723e528b1ec8df9cbddb10e10",
+    "comentarioAnteriorSha256": "5b5fbaa80a39eca0124531fa276199cc990286586492b9a5e8cff7cb17a35199",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo 48 descreve a fratura do odontoide como cada vez mais típica do idoso que cai, mas não compara a frequência de todas as fraturas cervicais na população acima de 70 anos. Falta fonte epidemiológica que sustente ser a mais comum nessa faixa específica; frequência crescente ou caso ilustrado não demonstra ranking. A oficial e comentário preservados, sem baseResumo.",
+    "reavaliacaoIndividual": "48 descreve tendência no idoso, não o ranking de todas as fraturas cervicais acima de 70 anos. Crescimento de incidência não equivale a mais comum.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0468",
+    "questaoSha256": "7331f9711752ac179bfcca01e0e814c4f5d756fe852a767e22299675581c708b",
+    "comentarioAnteriorSha256": "477109835a6c4c7dd02441afc3d2099b61951fdf6361538bf2fa8191c01f83b5",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O corpo do resumo 48 não fornece a faixa de 2%–27% de envolvimento neurológico na fratura do odontoide do item. O percentual geral de déficit toracolombar do resumo 49 pertence a outra população e não comprova esse intervalo. Falta fonte primária da frequência e gravidade nessa fratura específica; não usar a resposta contextual como evidência. A oficial e comentário preservados.",
+    "reavaliacaoIndividual": "48 não fornece 2%-27% de déficit no odontoide nem sustenta todo o qualificador de gravidade/fatalidade. Frequências toracolombares de 49 são outra população.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0490",
+    "questaoSha256": "3bb5f765d78ad4dba83b315d28fb24be2ca41fdf85f23c54608d100017d9fbfe",
+    "comentarioAnteriorSha256": "0639d137ed19f53a9aa2b058c063eaf5caa15a71462af9be36ef5a1525425fd4",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Sem gabarito oficial. O resumo descreve mecanismo da Chance e um caso em L3, mas não compara frequência da localização clássica entre dorsal alta/baixa e lombar alta/baixa. Caso ilustrado não prova ranking. Necessária distribuição por nível antes de atribuir provavel único.",
+    "reavaliacaoIndividual": "Caso de Chance em L3 e mecanismo do cinto em 49 não demonstram localização clássica por frequência regional. Sem oficial, não atribuir provável C com base apenas na figura ilustrativa.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0511",
+    "questaoSha256": "088afc2328a3caea9f1445db9d69778f55be38bb772efe6c19290bda6738ac2a",
+    "comentarioAnteriorSha256": "452ac1d807f8e2c5c8c57ad1b44b7a7db64c9f2df7d09fdd33794cce76b518f1",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Falta no corpo independente do resumo 48 o algoritmo completo da regra canadense: idade >=65 como alto risco e a classificação de dor tardia, paciente sentado e colisão traseira simples entre fatores que permitem avaliar mobilidade, sem excluir o restante do algoritmo. O corpo apenas menciona idade/mecanismo/sinais/exame/rotação e compara desempenho com NEXUS. Necessária fonte original do algoritmo para justificar cada opção; enunciado, D e comentário preservados.",
+    "reavaliacaoIndividual": "48 menciona componentes da regra canadense, mas não o algoritmo completo nem a categorização independente de todas as quatro opções. Falta comprovar idade >=65 como indicação isolada e o papel dos três fatores de baixo risco.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  }
+]

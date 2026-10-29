@@ -6,8 +6,8 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | --- | ---: |
 | duplicada | 97 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 883 |
-| revisada | 1994 |
+| pendente-fonte | 882 |
+| revisada | 1995 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -16,7 +16,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 52 | 0 | 18 |
 | Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 39 | 0 | 29 |
 | Fratura da escápula (`rockwood10-33-fratura-escapula`) | 108 | 0 | 28 |
-| Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 66 | 0 | 7 |
+| Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 67 | 0 | 6 |
 | Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 66 | 0 | 28 |
 | Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 39 | 0 | 13 |
 | Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 119 | 0 | 66 |
