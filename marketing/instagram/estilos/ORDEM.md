@@ -15,13 +15,15 @@ Como funciona ([ordem.json](ordem.json)):
 4. **Pedido do Tales vence a fila:** "no modelo padrão" ou um estilo citado por ele é o que vale; registre no histórico e a fila segue dali.
 5. **Modelo novo aprovado:** entra na lista, logo depois do estilo com o visual mais diferente dele (claro depois de escuro, por exemplo).
 
+**Mecânica fina / Relojoaria anatômica não se usa mais** (Tales, 27/10/2026: "nunca mais usar esse tema, já foi usado tipo 8 vezes"). Saiu de `ordem.json`; não escolher nem por sorteio nem por pedido genérico de stories.
+
 Ordem atual:
 
 | Feed | Stories |
 |---|---|
 | 1. Jornal | 1. Cartaz de cinema |
 | 2. Cofre de duas chaves | 2. Busca (aprovado em 22/10/2026) |
-| 3. Busca (aprovado em 22/10/2026) | 3. Mecânica fina |
+| 3. Busca (aprovado em 22/10/2026) | 3. ~~Mecânica fina~~ (fora do rodízio desde 27/10/2026) |
 | 4. Tabela de Snellen | 4. Raspadinha da prova |
 | 5. GPS do nervo | 5. Planta de engenharia |
 | 6. Caderneta de topografia | 6. Exame de DNA |

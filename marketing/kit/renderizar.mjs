@@ -32,6 +32,10 @@ if (args[0] === 'modelo') {
   const r = conferir(post)
   if (imprimir(arq, r) && !forcar) { console.error('\nCorrija os erros acima (ou use --forcar só para ver um rascunho).'); process.exit(1) }
 }
+// Estilos aposentados pelo Tales: o kit recusa, mesmo com --forcar (Mecânica fina, 27/10/2026).
+const APOSENTADOS = ['mecanica-fina']
+const vetado = post.pecas.find((p) => APOSENTADOS.includes(p.estilo))
+if (vetado) { console.error(`O estilo ${vetado.estilo} foi aposentado (Tales, 27/10/2026). Troque o estilo desta peça por outro da fila (marketing/instagram/estilos/ORDEM.md).`); process.exit(1) }
 mkdirSync(saida, { recursive: true })
 
 // Chromium do ambiente (CHROMIUM ou /opt/pw-browsers); sem ele, o do próprio Playwright
