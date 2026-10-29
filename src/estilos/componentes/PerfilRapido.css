@@ -23,3 +23,43 @@
 .campo-locais__tirar { width: 40px; height: 40px; }
 .campo-locais__mais { justify-self: start; min-height: 36px; padding: .3rem .7rem; border: 1px dashed var(--traco-forte); border-radius: var(--raio-pill, 999px); background: var(--superficie); color: var(--verdete); font: inherit; font-size: var(--corpo-menor); font-weight: 700; cursor: pointer; }
 .campo-locais__mais:hover { border-color: var(--verdete); }
+
+/* Serviço: busca com a lista dos conhecidos (29/10/2026). A lista fica no fluxo da página,
+   não flutuando, para nunca ser cortada pelo cartão nem cobrir o teclado no celular. */
+.servico-busca { display: grid; gap: .4rem; min-width: 0; }
+.servico-busca__lista {
+  list-style: none; margin: 0; padding: .3rem; max-height: 17rem; overflow-y: auto; overscroll-behavior: contain;
+  border: 1px solid var(--traco-forte); border-radius: var(--raio-pequeno, 6px); background: var(--superficie);
+  box-shadow: 0 8px 22px rgb(0 0 0 / .08);
+}
+.servico-busca__opcao {
+  display: grid; gap: .05rem; padding: .5rem .65rem; border-radius: var(--raio-pequeno, 6px); cursor: pointer;
+  font-size: var(--corpo-menor); line-height: 1.3;
+}
+.servico-busca__opcao small { color: var(--texto-2); }
+.servico-busca__opcao[aria-selected="true"], .servico-busca__opcao:hover { background: var(--verdete-veu); }
+.servico-busca__opcao--escrever {
+  display: flex; align-items: center; gap: .45rem; margin-bottom: .25rem; padding-block: .6rem;
+  border-bottom: 1px dashed var(--traco-forte); border-radius: var(--raio-pequeno, 6px) var(--raio-pequeno, 6px) 0 0;
+  color: var(--verdete); font-weight: 700;
+}
+.servico-busca__opcao--escrever strong { overflow-wrap: anywhere; }
+.servico-busca__nome { font-weight: 600; color: var(--texto); }
+.servico-busca__vazio { padding: .5rem .65rem; color: var(--texto-2); font-size: var(--corpo-menor); }
+.servico-busca__ver, .servico-busca__sugestao button {
+  padding: 0; border: 0; background: none; color: var(--verdete); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; text-align: left;
+}
+.servico-busca__ver { justify-self: start; font-size: var(--corpo-menor); }
+.servico-busca__sugestao { margin: 0; padding: .5rem .7rem; border-left: 3px solid var(--ouro, #c9a227); border-radius: var(--raio-pequeno, 6px); background: var(--superficie-2); font-size: var(--corpo-menor); }
+.servico-escolhido {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .6rem;
+  padding: .6rem .75rem; border: 1px solid var(--verdete); border-radius: var(--raio-pequeno, 6px); background: var(--verdete-veu);
+}
+.servico-escolhido__icone { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--verdete); color: #fff; }
+.servico-escolhido__texto { display: grid; min-width: 0; line-height: 1.3; }
+.servico-escolhido__texto small { color: var(--texto-2); }
+.servico-escolhido__trocar {
+  min-height: 36px; padding: .3rem .8rem; border: 1px solid var(--traco-forte); border-radius: var(--raio-pill, 999px);
+  background: var(--superficie); color: var(--texto); font: inherit; font-size: var(--corpo-menor); font-weight: 700; cursor: pointer;
+}
+.servico-escolhido__trocar:hover { border-color: var(--verdete); }
