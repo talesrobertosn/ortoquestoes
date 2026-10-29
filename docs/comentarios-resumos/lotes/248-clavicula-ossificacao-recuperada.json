@@ -1,0 +1,55 @@
+{
+  "conceitos-basicos-0196": {
+    "questaoSha256": "a47d3d5b8711d1ecd55c8a00cb530e66de89f4936788ec53afecf157577e250a",
+    "comentarioAnteriorSha256": "6989a8986262566070d287b35b1b8902328d6fc5378d93a4fd971dd050cbdb32",
+    "comentario": {
+      "conceito": "**A clavícula é o primeiro osso a começar a ossificar**, e o resumo pediátrico descreve sua ossificação como **intramembranosa**. A resposta reúne esses dois dados: alternativa D. O resumo adulto fornece a precedência e o início com 5 a 6 semanas de gestação; o pediátrico especifica a via de formação e situa o início com cerca de 5 semanas e meia (Rockwood and Green, 10ª edição, capítulo 34, seção “O osso”; Rockwood and Wilkins, 10ª edição, capítulo 20, seção “Clavícula: epidemiologia, mecanismos e recém-nascido”).\n\n**Começar cedo não significa terminar cedo.** A ossificação inicial da clavícula ocorre ainda na gestação, mas suas extremidades continuam amadurecendo por muitos anos. O resumo pediátrico informa que a epífise medial só ossifica aos 18 a 20 anos e fecha aos 22 a 25 anos. São acontecimentos distintos: o início de formação do osso e o fechamento de uma placa de crescimento na sua extremidade.\n\nEssa diferença tem consequência clínica. A clavícula funciona como um esteio entre o tronco e o braço, mas a região medial do adolescente ou adulto jovem ainda pode ter uma fise aberta. Por isso uma lesão perto da esternoclavicular pode ser uma **fratura fisária**, em vez de uma luxação verdadeira. O aspecto de um osso já formado não permite presumir que todas as suas regiões terminaram de amadurecer.\n\n**Na prova:** separar duas perguntas — qual osso começa primeiro e qual via de ossificação foi citada. A clavícula satisfaz a primeira; “intramembranosa” completa a combinação. Não confundir o início embrionário com a ossificação tardia da epífise medial.",
+      "correta": "Alternativa D. A precedência da clavícula vem do resumo adulto, e a ossificação intramembranosa está expressa no resumo pediátrico. As duas informações pertencem à mesma estrutura e sustentam a combinação pedida.",
+      "incorretas": {
+        "A": "A opção atribui ao úmero o primeiro lugar na sequência de ossificação. Esse é o erro decisivo: o osso que começa primeiro é a clavícula. A menção à via endocondral não corrige a troca da estrutura.",
+        "B": "Escolhe corretamente a clavícula, mas troca a via de ossificação apresentada na fonte pediátrica. O capítulo 20 descreve ossificação intramembranosa; portanto, acertar o osso não basta para tornar a combinação correta.",
+        "C": "Usa o nome da via indicada para a clavícula, mas a associa ao úmero e o coloca como primeiro osso a ossificar. O enunciado exige a precedência da estrutura, não apenas reconhecer a palavra “intramembranosa”. A combinação sustentada continua sendo clavícula e via intramembranosa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries. Seções: Clavícula: epidemiologia, mecanismos e recém-nascido; Esternoclavicular.",
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-20-clavicula-escapula",
+        "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
+        "secoes": [
+          "Clavícula: epidemiologia, mecanismos e recém-nascido",
+          "Esternoclavicular"
+        ],
+        "blocos": [
+          "clavicula-epidemiologia-mecanismos-e-recem-nasci-1583ed0d",
+          "esternoclavicular-2bb38b19"
+        ],
+        "sha256": "c9e4ec3fa77d9842a0600da340aa34ff14466bf4e116e63b5a216a9b43f5d4e4",
+        "trechosSha256": "cf0c6635f0ede1f7edeb503660233ec98d6a120245065cc05745fdc0f219cb11"
+      },
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-680fb88a"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "201921ba9695c32f5f91e750ef4323a34067bd5bec47489a0e961018acf74103"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

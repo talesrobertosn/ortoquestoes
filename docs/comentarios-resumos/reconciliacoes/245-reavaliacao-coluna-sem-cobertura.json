@@ -1,0 +1,244 @@
+[
+  {
+    "id": "coluna-0177",
+    "questaoSha256": "9d5e84678c9aa46a41badd337d6cbf29567628436ffe24e5e7ff71d05b78ded2",
+    "comentarioAnteriorSha256": "bb5c54a542ee971dce14837c6b247f193197c6a25bd0cb5d2cbcdb7d3d3c8ba3",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) diz que a síndrome central é a lesão habitual da coluna espondilótica sem instabilidade, mas não dá a frequência relativa das síndromes incompletas. Falta fonte epidemiológica.",
+    "reavaliacaoIndividual": "48 chama a central de forma habitual na coluna espondilótica sem instabilidade, não de síndrome incompleta mais frequente em TODO trauma raquimedular. Não transferir a população desse ranking.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0205",
+    "questaoSha256": "08a1bbb30674481bf41dd9e0d236b58352eee0d8d32eb7e7324d9b9a9975e8fe",
+    "comentarioAnteriorSha256": "3aa882e0977493a6c7d99a60d6edd54bf490d78a531c8141d5cf126505d65bb2",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O cap. 24 descreve dor na espondilólise (fratura da pars), mas a questão pergunta a manifestação inicial mais frequente da espondilolistese na criança/adolescente. Falta fonte específica dessa condição e população que compare dor, deformidade, marcha e radiculopatia; não transferir o ranking de outra doença.",
+    "reavaliacaoIndividual": "Espondilólise dolorosa da pars não prova a manifestação inicial mais frequente da espondilolistese pediátrica. Mantida a exigência de comparação específica com deformidade, marcha e radiculopatia.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0226",
+    "questaoSha256": "31660d28ba76d176990c242259261efe49143b33c036f6aa41981532e7da6ae8",
+    "comentarioAnteriorSha256": "dc4553b6142d0eef8e30c7c9d646a142ab3ba1ed02b48c39a8a1beed3cf8d9fd",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo aborda a pars, não fornece o critério de progressão de escorregamento >50% nem os critérios pediátricos de estabilidade/cronicidade da espondilolistese. Conferir essas afirmações e cada distrator em fonte específica de espondilolistese antes de validar a alternativa C inteira.",
+    "reavaliacaoIndividual": "A fonte de fratura da pars não fornece o algoritmo pediátrico completo da espondilolistese, sobretudo progressão >50% e estabilidade/cronicidade. Não validar C inteira por dor persistente isolada.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0227",
+    "questaoSha256": "95170e4227be53a4ce5e14eb45ee310bb56729f5acd4e0a759a057b7df291dae",
+    "comentarioAnteriorSha256": "a751f2596b0ab7c786aec264695071c1c46b9ead117c2da37719956ac2ccb123",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Rockwood crianças 10ª ed., caps. 21 e 22: o cap. 22 sustenta que a SCIWORA é mais grave abaixo de 8 anos, mas não discute a localização preferencial (cervical ou lombar), que é a outra metade de cada alternativa.",
+    "reavaliacaoIndividual": "21: trauma cervical abaixo de 8 anos migra para segmentos altos; 22: SCIWORA é mais GRAVE abaixo de 8. Nenhum desses fatos demonstra maior FREQUÊNCIA de SCIWORA cervical nessa faixa em comparação aos quatro subgrupos das opções.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      },
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      },
+      {
+        "id": "rockwoodcriancas10-22-coluna-toracolombar",
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0262",
+    "questaoSha256": "16b707a31f40269f8e262b7198839be653917e73e35e3e2345a7d6d85f9c2963",
+    "comentarioAnteriorSha256": "42a7d6e10784d8cf242aa707deff22d54cb8e2ec1dd60894e7ec4c30c33d4f5e",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do cap. 49 informa origem habitual da Adamkiewicz à esquerda entre T8 e T10, variando de T7 a L4; não fornece o percentual de 80% entre T9 e T11 exigido no enunciado. Falta fonte da frequência e do intervalo atribuído pela banca para avaliar a afirmação quantitativa inteira, sem inventar percentual ou usar a resposta contextual como comprovação.",
+    "reavaliacaoIndividual": "49 informa origem habitual à esquerda em T8-T10 e variação T7-L4; a banca D exige 80% em T9-T11. Falta a frequência do intervalo exato. Não usar a nota contextual da própria questão como prova.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0265",
+    "questaoSha256": "b106565acea9273e8d6e1cfb88a744a5bda62864c9694003d1164612477b1308",
+    "comentarioAnteriorSha256": "f14d735907570da75eeb248fc01b7ad68a800e3129e2a32d2fd7e1660b2d5b21",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Imagem conferida (músculo profundo paramediano lombar). O resumo de fratura toracolombar não descreve o multífido nem os planos musculares do acesso posterior paraespinhal.",
+    "reavaliacaoIndividual": "Figura aberta: seta amarela aponta musculatura profunda paramediana posterior. 49 não define multífido, iliocostal, longuíssimo e quadrado lombar nem o plano paraespinhal. Identificação visual isolada não completa a análise anatômica das opções.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [
+      {
+        "arquivo": "coluna/coluna-0265-1.png",
+        "sha256Bytes": "b0bad4d1010a90e92b549f1e297e9fab160096b095971c7c36423ebc855c6295",
+        "abertaIndividualmente": true
+      }
+    ],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0296",
+    "questaoSha256": "00f1b4ae2baa580fc66a233317795aa00807c73196eb1a918cce9a9a97955c2b",
+    "comentarioAnteriorSha256": "4f15354be9f1879c9814afbc116311bcbfe29206c7f795c76012c7cab2a59ab6",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O capítulo adulto não desenvolve a fratura da apófise posterior no esqueleto imaturo nem sua distribuição etária. Necessária fonte pediátrica que confirme adolescência e explique a lesão antes de comparar as outras faixas de idade.",
+    "reavaliacaoIndividual": "22 já cobre lesão da placa terminal/apófise do anel no atleta jovem, seu diagnóstico e tratamento; não compara a frequência entre recém-nascidos, 2-4, 5-9 e adolescentes. Falta distribuição etária independente, não a simples existência da lesão pediátrica. D oficial preservado sem selo.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      },
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      },
+      {
+        "id": "rockwoodcriancas10-22-coluna-toracolombar",
+        "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0315",
+    "questaoSha256": "11c01f31e9ac134fb4b0d1fec4b8b2d75620092e9726d3feefee54360949ed03",
+    "comentarioAnteriorSha256": "8187224dd5794e3f24f1b56122ee6b1fa36b6ec6d60cc4a8cd38b7baa216b2ca",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) traz só os limites de 3,5 mm e 11 graus, não a lista de pontos de WHITE e PANJABI. Precisa da tabela original de pontuação.",
+    "reavaliacaoIndividual": "48 fornece 3,5 mm e 11 graus, mas não a tabela de pontos de White/Panjabi. Sem gabarito oficial, não fabricar provável a partir dos limites isolados.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0324",
+    "questaoSha256": "d768098f7ff8d799a5b4a9b6d176542b93950ada4b8cef073ffadc88b8cccfe6",
+    "comentarioAnteriorSha256": "c68208eaae918e4b84746f6f0ec922c5394563bec059937f5c4132e748c38e1e",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) destaca infecção (com enxerto ou implante) e edema que obriga a adiar a extubação, sem dizer qual é a complicação mais grave da via transoral. Falta fonte que hierarquize.",
+    "reavaliacaoIndividual": "48 descreve infecção e obstrução respiratória pelo edema transoral, sem ordenar a gravidade nem resolver a disputa A/D. Sem gabarito oficial, não manter A antiga como se fosse conclusão sustentada única.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  },
+  {
+    "id": "coluna-0334",
+    "questaoSha256": "8de8e365510195e2b26802f15e24340bd8d9503b4483dbc4d3816b3e5c4030b5",
+    "comentarioAnteriorSha256": "7368b93dae358f870bc693d742c1665e4c9d9d7606c82988b00b3d5d10bdac00",
+    "estadoAnterior": "pendente-fonte",
+    "estadoFinal": "pendente-fonte",
+    "pendenciaAnterior": "Sem gabarito oficial; o capítulo não descreve claudicação da estenose lombar nem a relação entre elevação do membro e variabilidade da distância de marcha. Falta fonte de estenose para sustentar resposta bibliográfica única; não escolher provavel com base no comentário antigo.",
+    "reavaliacaoIndividual": "Fontes de trauma não desenvolvem estenose degenerativa lombar, teste de elevação e distância de claudicação. Não atribuir provável ao caso sem gabarito oficial.",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwood10-49-fratura-toracolombar",
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "comentarioAlterado": false,
+    "seloAtribuido": false
+  }
+]
