@@ -1,21 +1,21 @@
 ---
 id: rockwoodcriancas9-17-fise-distal-umero
-versao: 1
+versao: 2
 titulo: Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo
 especialidade: pediatria
 acesso: gratis
 livro: Rockwood and Wilkins' Fractures in Children
-edicao: 9ª edição
-capitulo: Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures
-autores: Michael Glotzbecker
-fonte: PDF enviado pelo Tales em 19/10/2026 (21a99eda-222-131-162.pdf, páginas 8 a 31; a página 32 já é o capítulo 18)
+edicao: 10ª edição (2025)
+capitulo: Capítulo 18 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures
+autores: Oduche Igboechi e Joshua M. Abzug (10ª edição); Michael Glotzbecker (9ª edição)
+fonte: Escrito com o capítulo 17 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 18 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 9ª edição.
 subtemas: ;
 resumo: Lactente com rádio e ulna em bloco para posteromedial e capítulo alinhado ao rádio, maus-tratos em até metade abaixo dos 2 anos, DELEE, ultrassonografia, pronação e dois fios laterais, cúbito varo; côndilo medial em espelho do lateral (SALTER-HARRIS IV, KILFOYLE, pseudartrose em varo); osteonecrose da tróclea tipos A e B; epicôndilo lateral só operado se encarcerado.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo foi escrito a partir do capítulo 17 do Rockwood and Wilkins' Fractures in Children (9ª edição), de Michael Glotzbecker, na ordem em que as provas cobram o tema. Ele reorganiza as ideias em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo ligadas a cada ponto. Os números são os do capítulo.
+Este resumo foi escrito a partir do capítulo 17 do Rockwood and Wilkins' Fractures in Children (9ª edição), de Michael Glotzbecker, na ordem em que as provas cobram o tema, e atualizado com o capítulo 18 da 10ª edição (2025), de Oduche Igboechi e Joshua M. Abzug, que acrescenta o risco de maus-tratos 13 vezes maior, a taxa de erro do diagnóstico inicial e os resultados de uma série de 79 operadas. Ele reorganiza as ideias em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo ligadas a cada ponto. Os números são os do capítulo.
 
 O capítulo reúne as lesões raras do cotovelo infantil que o autor chama de **TRASH** (the radiographic appearance seemed harmless, "a radiografia parecia inofensiva"): fraturas que acontecem antes de os núcleos de ossificação aparecerem e que, por isso, passam despercebidas, com consequências sérias anos depois. São quatro grupos: o **descolamento epifisário total do úmero distal** (separação transfisária) antes da ossificação do capítulo, a **fratura do côndilo medial** antes da ossificação da tróclea, o **epicôndilo lateral** e as **fraturas osteocondrais** da criança com menos de 10 anos que deixam o cotovelo incongruente e instável. Fecha com a sequela que une quase todas: a **osteonecrose da tróclea**. Muitas vezes, a ultrassonografia, a artrografia ou a ressonância são necessárias para fazer o diagnóstico a tempo.
 
@@ -114,6 +114,14 @@ armadilha: Tróclea como primeiro núcleo: ela só ossifica entre 7 e 10 anos, s
 O capítulo insiste: **pense sempre em maus-tratos** nessa lesão, principalmente no padrão do **grupo A**, a menos que ela tenha ocorrido no parto. Um lactente pequeno dificilmente sofre essa fratura nas quedas comuns do primeiro ano. Dos 16 casos de DELEE, **seis** vieram de abuso documentado ou muito suspeito, todos **abaixo dos 2 anos**; outros relatos confirmaram a frequência, e **até 50%** dessas fraturas em menores de 2 anos podem resultar de maus-tratos. O índice de suspeita deve ser alto diante de **história inconsistente** com o mecanismo ou de **várias lesões**. Como os pais podem atrasar a procura por atendimento, o próprio atraso é um sinal.
 
 **O que pedir.** Na suspeita, o capítulo indica **cintilografia óssea e inventário esquelético**, à procura de **fraturas metafisárias em canto**, **fraturas de costela** e **fraturas em diferentes fases de consolidação**, sem ignorar a possibilidade de **trauma craniano**. Numa série de 16 pacientes avaliados com ultrassonografia, **10 (63%)** tinham outra fratura no mesmo úmero: em **alça de balde** em cinco e **avulsões condilares** em seis. Reconhecer o abuso e intervir, diz o autor, pode mudar ou até salvar a vida da criança.
+
+**Na 10ª edição.** Abaixo dos **3 anos**, a transfisária é **mal diagnosticada** pelo radiologista na radiografia inicial em até **78%**. CROWE comparou 23 transfisárias e 205 supracondilianas operadas nessa idade: maus-tratos em **26%** das transfisárias desviadas contra **2%** das supracondilianas, risco **13 vezes** maior. A fratura é a **segunda** forma mais comum de apresentação do abuso, depois de queimaduras e equimoses. Quanto aos resultados, ABZUG reuniu **79** operadas em 25 anos: **62%** tratadas após 24 horas, redução aberta em só **2,5%**, artrografia em **87%**, fios **só laterais** em **78%** e complicações em **14%** (perda de movimento, varo ou valgo). A redução guiada por ultrassonografia teve **7,4%** de varo; numa revisão de 33 casos tratados sobretudo sem cirurgia, 88% recuperaram o ângulo de carregamento.
+
+!questoes treino=pediatria-1367
+conceito: Abaixo dos 3 anos, a transfisária é mal diagnosticada em até 78% e tem risco de maus-tratos 13 vezes o da supracondiliana; trata-se em geral com redução fechada, fios laterais e artrografia.
+como: Questão de projeção sobre o que a 10ª edição acrescentou; nenhuma questão oficial do conjunto analisado cobrou esses números.
+armadilha: Achar que o risco de maus-tratos da transfisária é igual ao da supracondiliana na mesma idade.
+!fim
 
 > Na prova: descolamento do úmero distal fora do parto, abaixo dos 2 anos, é **maus-tratos até prova em contrário**; peça **inventário esquelético** atrás de **canto metafisário**, **alça de balde**, **costelas** e fraturas em **fases diferentes**.
 

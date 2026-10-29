@@ -1,21 +1,21 @@
 ---
 id: rockwoodcriancas9-16-condilo-lateral
-versao: 1
+versao: 2
 titulo: Fraturas do côndilo lateral e do capítulo na criança
 especialidade: pediatria
 acesso: gratis
 livro: Rockwood and Wilkins' Fractures in Children
-edicao: 9ª edição
-capitulo: Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus
-autores: Derek M. Kelly e Jeffrey R. Sawyer
-fonte: PDF enviado pelo Tales em 19/10/2026 (7d1ff148-222-76-130.pdf, páginas 41 a 55, e 21a99eda-222-131-162.pdf, páginas 1 a 8; páginas 957 a 1000 do livro)
+edicao: 10ª edição (2025)
+capitulo: Capítulo 17 · Lateral Condylar and Capitellar Fractures of the Distal Humerus
+autores: Benjamin W. Sheffer e Jeffrey R. Sawyer (10ª edição); Derek M. Kelly e Jeffrey R. Sawyer (9ª edição)
+fonte: Escrito com o capítulo 16 da 9ª edição (enviado pelo Tales em 19/10/2026) e conferido em 28/10/2026 com o capítulo 17 da 10ª edição, que mantém o texto, os dados e as preferências dos autores; as figuras citadas seguem a numeração da 9ª edição.
 subtemas: Côndilo lateral, epicôndilo medial e rádio proximal na criança
 resumo: Extensores radiais e colaterais no fragmento, oblíqua interna, MILCH e SALTER-HARRIS IV, JAKOB, WEISS e SONG (2 mm), redução em extensão e supinação, dissecção posterior e necrose, esporão (75%), cúbito varo, pseudartrose com valgo e ulnar tardio, FLYNN (1 cm) e HAHN-STEINTHAL.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo foi escrito a partir do capítulo 16 do Rockwood and Wilkins' Fractures in Children (9ª edição), de Derek Kelly e Jeffrey Sawyer, na ordem em que as provas cobram o tema. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo.
+Este resumo foi escrito a partir do capítulo 16 do Rockwood and Wilkins' Fractures in Children (9ª edição), de Derek Kelly e Jeffrey Sawyer, na ordem em que as provas cobram o tema, e conferido com o capítulo 17 da 10ª edição (2025), de Benjamin W. Sheffer e Jeffrey R. Sawyer, que mantém o texto, os números e as condutas. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo.
 
 A fratura do côndilo lateral é a fratura fisária e articular mais traiçoeira do cotovelo da criança: o cotovelo deforma pouco, a radiografia mostra só uma lasca de metáfise e a maior parte do fragmento é cartilagem invisível. A banca gira em torno de poucos blocos: **o que fica preso ao fragmento e por que ele desvia** (os extensores radiais do carpo), **a classificação pelo desvio** (JAKOB, SONG, o corte de 2 mm), **MILCH com SALTER-HARRIS**, **a via de acesso que poupa a irrigação posterior** e, sobretudo, **as complicações**: esporão lateral, cúbito varo, pseudartrose, cúbito valgo progressivo e paralisia tardia do nervo ulnar. A fratura do capítulo do adolescente fecha o capítulo e aparece na prova de adulto pelos epônimos HAHN-STEINTHAL e KOCHER-LORENZ e pela necrose.
 
@@ -251,7 +251,7 @@ armadilha: Pseudartrose: pode acompanhar a necrose da metáfise, mas a consequê
 
 ## Fios, parafusos e o momento da cirurgia
 
-**Fios lisos** são o método mais usado. Atravessar a fise com fio liso **não causa distúrbio de crescimento**: a área do fio é pequena perto da área da fise e só **20%** do crescimento do úmero vem da fise distal. O risco de parada de crescimento com o parafuso transfisário também é muito baixo, pelas mesmas razões. Fios **enterrados** têm mais migração, implante sintomático e protrusão pela pele (até 40%), com infecção tardia e custo maior; fios **expostos** têm infecção inicial semelhante ou um pouco maior. O capítulo prefere deixá-los fora da pele, retirados no consultório.
+**Fios lisos** são o método mais usado. Atravessar a fise com fio liso **não causa distúrbio de crescimento**: a área do fio é pequena perto da área da fise e só **20%** do crescimento do úmero vem da fise distal. O risco de parada de crescimento com o parafuso transfisário também é muito baixo, pelas mesmas razões. Fios **enterrados** têm mais migração, implante sintomático e protrusão pela pele (até 40%), com infecção tardia e custo maior; fios **expostos** têm infecção inicial semelhante ou um pouco maior (DAS DE, 235 crianças: infecção superficial de **9,8%** com fios expostos contra **3,1%** com enterrados, mas complicação total maior com os enterrados e economia média de 3.442 dólares com os expostos). O capítulo prefere deixá-los fora da pele, retirados no consultório.
 
 !questoes relacionadas=pediatria-0614 treino=pediatria-1002
 conceito: Fio liso atravessando a fise não causa distúrbio de crescimento (só 20% do crescimento do úmero vem da fise distal); fios enterrados têm menos infecção superficial, mas mais migração e protrusão (até 40%), e os autores deixam os fios fora da pele.
