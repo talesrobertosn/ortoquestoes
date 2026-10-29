@@ -1483,19 +1483,43 @@
   "conferido": false
  },
  "pediatria-0091": {
-  "conceito": "**A anomalia congênita mais comum do cotovelo.** Na luxação congênita da cabeça do rádio, a cabeça se desenvolve fora da articulação e, sem o molde do capítulo, cresce deformada.\n\n**A direção mais frequente: posterior.** A maioria das luxações congênitas é **posterior** (ou posterolateral). As anteriores e laterais são menos comuns. Essa é uma das pistas para diferenciá-la da luxação **traumática** não diagnosticada (Monteggia negligenciada), que geralmente é **anterior**.\n\n**Os achados que sugerem a forma congênita.**\n- Frequentemente **bilateral**.\n- **Cabeça do rádio pequena e convexa** (cupuliforme), em vez de côncava.\n- **Colo do rádio alongado** e rádio mais longo em relação à ulna.\n- **Capítulo hipoplásico**.\n- **Ulna reta**, sem o arqueamento de uma fratura antiga.\n- Sem história de trauma.\n- **Associações**: sinostose radioulnar, síndrome unha-patela (nail-patella), Ehlers-Danlos, Larsen, artrogripose, Klinefelter.\n\n| Aspecto | Congênita | Monteggia negligenciada |\n|---|---|---|\n| Direção | **Posterior** | Geralmente anterior |\n| Cabeça do rádio | Convexa, colo longo | Forma normal |\n| Ulna | Reta | Arqueada |\n| Lado | Frequentemente bilateral | Unilateral |\n\n**Quadro clínico.** Muitas crianças são **assintomáticas**. Percebe-se uma proeminência posterolateral do cotovelo e alguma limitação da extensão ou da rotação. A dor pode aparecer na adolescência ou na vida adulta.\n\n**Tratamento.** A tentativa de **reduzir** a cabeça congênita não funciona, porque a cabeça deformada não se encaixa no capítulo hipoplásico. Observa-se a criança. Se houver dor ou bloqueio na idade adulta, faz-se **ressecção da cabeça do rádio** após o fim do crescimento.",
-  "correta": "**Correta: B (posterior).** Na luxação congênita da cabeça do rádio, a direção mais frequente é a **posterior** (ou posterolateral), o que ajuda a diferenciá-la da Monteggia negligenciada, geralmente anterior.",
+  "conceito": "A luxação congênita da cabeça radial é em geral **posterior**, alternativa B, segundo o resumo do Rockwood and Wilkins, 10ª edição, capítulo 12.\n\nA fonte descreve **cabeça convexa, capítulo hipoplásico** e possível bilateralidade. Esses achados ajudam a distinguir a condição congênita do Monteggia crônico traumático, com **cabeça côncava, arco ulnar alterado e anular ossificado**.\n\nA história sem trauma lembrado não decide sozinha. O resumo afirma que toda luxação **anterior** é suspeita de trauma, e a morfologia das superfícies importa para o diagnóstico e a possibilidade de reconstrução. Uma cabeça fora do lugar deve ser estudada junto da ulna e do capítulo.\n\n**Na prova: ** posterior é a direção predominante, sem transformar a palavra em diagnóstico isolado. Não confundir a direção da forma congênita com os padrões de Bado da lesão traumática.",
+  "correta": "Alternativa B. É a direção usual explicitamente descrita para a forma congênita. A confirmação depende da morfologia e do conjunto clínico-radiográfico, não apenas da posição.",
   "incorretas": {
-   "A": "A luxação **lateral** pura ocorre, mas é menos frequente que a posterior.",
-   "C": "A luxação **anterolateral** é menos comum na forma congênita; a direção anterior lembra mais a lesão traumática.",
-   "D": "A luxação **anteromedial** é rara na forma congênita."
+   "A": "Lateral é uma direção importante na classificação de Monteggia III, mas não a predominante congênita apresentada no resumo. São contextos diferentes.",
+   "C": "O componente anterior não corresponde ao padrão congênito predominante. A fonte manda suspeitar de trauma diante de luxação anterior, sem equipará-la automaticamente à variante congênita.",
+   "D": "Também propõe componente anterior, que não é a direção usual descrita. A diferenciação congênita/traumática exige analisar superfícies e ulna, em vez de escolher uma direção anterior por familiaridade."
   },
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Congenital Radial Head Dislocation. https://posna.org/physician-education/study-guide/congenital-radial-head-dislocation",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Classificação e mecanismos."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-12-monteggia",
+     "titulo": "Fratura-luxação de MONTEGGIA na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
+     "secoes": [
+      "Diagnóstico",
+      "Classificação e mecanismos"
+     ],
+     "blocos": [
+      "diagnostico-7ee8a436",
+      "classificacao-e-mecanismos-bf9aae38"
+     ],
+     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
+     "trechosSha256": "6e8327258750b1e31aa10f32583c6e3f9fa86dee1c2d46f47acddaa41ef10722"
+    }
+   ],
+   "questaoSha256": "65240302d78ba5c4afc75f80282c2605efe57ab6c5a96680696d821e92ead6b0",
+   "comentarioSha256": "37283d74ef491290359e2811c52813d7e69e27f1883e9744e3f9f0a24569174b"
+  }
  },
  "pediatria-0092": {
   "conceito": "**A distrofia muscular facioescapuloumeral (FSH).** É uma das distrofias musculares mais comuns. Tem herança **autossômica dominante** (tipo 1, ligado à contração da região D4Z4 do cromossomo 4q35, que libera a expressão tóxica do gene **DUX4**). Começa geralmente na **adolescência** ou no adulto jovem, com evolução lenta e frequentemente **assimétrica**.\n\n**O padrão de fraqueza.**\n| Região | Achados |\n|---|---|\n| **Face** | Fraqueza do orbicular dos olhos e da boca: não fecha os olhos com força, não assobia, sorriso transverso |\n| **Cintura escapular** | **Estabilizadores da escápula**: **trapézio**, **serrátil anterior**, **romboides** e levantador da escápula; **escápula alada** |\n| **Braço** | Bíceps e tríceps (o \"braço de Popeye\", com antebraço preservado) |\n| Membros inferiores | Tibial anterior (pé caído), em fases mais avançadas |\n\n**O deltoide preservado.** O **deltoide** é classicamente **preservado** na FSH. O problema do ombro não é o motor do braço, e sim a **escápula**: sem trapézio e serrátil, ela não se estabiliza no tórax e roda quando o deltoide contrai, de modo que a força do deltoide se perde e a criança não consegue elevar o braço acima de 90°.\n\n**O tratamento ortopédico: a escapulotoracodese.** A **fixação da escápula** às costelas (artrodese escapulotorácica, com placas, fios ou parafusos e enxerto) cria uma base estável para o **deltoide** funcionar. É justamente porque o deltoide está preservado que a cirurgia melhora a elevação do braço (ganho de cerca de 30° a 40° de flexão e abdução). Antes de indicar, faz-se o **teste**: o examinador fixa manualmente a escápula contra o tórax e pede para o paciente elevar o braço; se a elevação melhora, a cirurgia é indicada.\n\n**As complicações** incluem pneumotórax, lesão do plexo braquial, perda de função respiratória e pseudartrose.",
@@ -7285,20 +7309,58 @@
   }
  },
  "pediatria-0522": {
-  "conceito": "**As fraturas da base do 1º metacarpo na criança.** A **fise do 1º metacarpo** fica na **base** (proximal), como nas falanges, ao contrário dos outros metacarpos, que têm a fise na cabeça (distal). Por isso, as fraturas da base do polegar na criança podem envolver a fise e a articulação trapeziometacarpal.\n\n**A classificação usual (tipos A a D).**\n| Tipo | Descrição |\n|---|---|\n| **A** | Fratura **metafisária**, sem envolver a fise |\n| **B** | Salter-Harris **II** com fragmento metafisário do lado **ulnar** (ápice lateral) |\n| **C** | Salter-Harris **II** com fragmento do lado **radial** (ápice medial) |\n| **D** | Salter-Harris **III** **intra-articular** (equivalente de Bennett na descrição usual) |\n\n**A fratura de Bennett no adulto.** É a fratura-luxação intra-articular da base do 1º metacarpo: um fragmento volar-ulnar fica preso pelo ligamento oblíquo anterior ao trapézio, enquanto a diáfise é puxada para proximal e radial pelo **abdutor longo do polegar** e aduzida pelo adutor do polegar. O equivalente pediátrico, na descrição usual, é a **Salter-Harris III** da base, que também é intra-articular.\n\n**O que a banca considerou.** A resposta oficial foi o **tipo A**. Na descrição mais usada da classificação, o equivalente de Bennett seria o tipo **D**; a alternativa D seria defensável num recurso.\n\n**O tratamento.**\n- **Metafisárias e Salter-Harris II**: redução fechada (com tração e pressão no ápice) e gesso axilopalmar ou antebraquiopalmar com polegar incluído; fios percutâneos se instáveis. O remodelamento é grande, e aceita-se angulação de até cerca de 20° a 30° perto da fise.\n- **Intra-articular desviada** (Salter-Harris III): redução **anatômica** (fechada com fios ou aberta) e fixação, com degrau articular menor que 1 a 2 mm, para evitar artrose da trapeziometacarpal.",
-  "correta": "**Correta: A (segundo a banca).** A banca indicou o tipo A como o equivalente pediátrico da fratura de Bennett; na descrição usual da classificação, porém, esse equivalente é o tipo D (Salter-Harris III intra-articular).",
+  "conceito": "O gabarito oficial marca **alternativa A**, preservada, mas a classificação descrita no resumo identifica o equivalente do Bennett como **tipo D: Salter–Harris III ou IV**. O **tipo A é metafisário**. Essa divergência precisa permanecer explícita para não ensinar uma classificação errada (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nA diferença central é o **comprometimento articular**: o padrão D é o Bennett infantil, no qual o resumo descreve fios através da carpometacarpal. O padrão A é uma fratura metafisária, com tolerância angular de 20° a 30° na fonte, e não o equivalente articular perguntado.\n\nPara interpretar os nomes: em Salter–Harris **II**, o traço segue a fise e sai pela metáfise; em **III**, sai pela epífise até a articulação; em **IV**, atravessa metáfise, fise e epífise. Essa diferença entre um padrão fisário-metafisário e um padrão que alcança a articulação explica a separação dos grupos.\n\nO **tipo B** é Salter–Harris II com fragmento medial; o **C** é o padrão inverso, para o qual o capítulo descreve redução aberta por periósteo. Reconhecer esses grupos permite comparar cada opção sem confundir a letra da resposta com a letra da classificação.\n\n**Na prova: ** para esta oficial, guardar o registro da banca na alternativa A; para a classificação do resumo, ligar Bennett a tipo D. O comentário não altera o gabarito nem transforma os dois tipos em sinônimos.",
+  "correta": "Alternativa A é a registrada pela banca. Há divergência: ela oferece tipo A, que o resumo define como metafisário; pela descrição consultada, o equivalente de Bennett é tipo D, apresentado na alternativa D. A manutenção da letra oficial é documental, não uma confirmação da equivalência anatômica.",
   "incorretas": {
-   "B": "O tipo B é Salter-Harris II com fragmento ulnar, uma fratura extra-articular.",
-   "C": "O tipo C é Salter-Harris II com fragmento radial, também extra-articular.",
-   "D": "O tipo D, Salter-Harris III intra-articular, é o equivalente de Bennett na descrição usual, mas a banca não o aceitou."
+   "B": "Tipo B é Salter–Harris II com fragmento medial, no padrão habitual descrito. Não é a categoria articular III/IV identificada como Bennett infantil.",
+   "C": "Tipo C é o inverso do padrão B, descrito como Salter–Harris II com fragmento medial. O capítulo aponta o periósteo como razão para abrir esse padrão. A distinção que responde à pergunta é o grupo fisário-metafisário II versus o grupo articular III/IV do tipo D.",
+   "D": "Esta opção coincide com a classificação do resumo: tipo D, Salter–Harris III ou IV. Ela não foi a letra oficial registrada, mas é a equivalência bibliográfica sustentada. O alerta preserva essa diferença sem chamar a descrição correta da fonte de erro médico."
   },
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.6",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas da mão."
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Polegar e metacarpais.",
+   "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: Os tipos de SALTER-HARRIS. Apenas definição dos trajetos de Salter–Harris,sem transportar frequência ou conduta do fêmur ao polegar."
   ],
-  "alerta": "Na classificação usual das fraturas da base do 1º metacarpo na criança (tipos A a D), o tipo A é metafisário e o tipo D (Salter-Harris III intra-articular) é o equivalente pediátrico da fratura de Bennett. A banca indicou A; a alternativa D seria defensável em recurso.",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "alerta": "Divergência: a banca marcou alternativa A (tipo A). O resumo do capítulo 8 define tipo A como metafisário e tipo D (Salter–Harris III/IV) como equivalente de Bennett, correspondente à alternativa D. Gabarito oficial preservado; não ensinar A e D como equivalentes.",
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-08-mao-carpo",
+     "titulo": "Fraturas e luxações da mão e do carpo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+     "secoes": [
+      "Polegar e metacarpais"
+     ],
+     "blocos": [
+      "polegar-e-metacarpais-4fd4e5e3"
+     ],
+     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+     "trechosSha256": "3e3e62b84c839325e42e5c4d217c221984dfe4d8e0b4407e6fffb2ec8658056b"
+    },
+    {
+     "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+     "titulo": "Fratura da fise distal do fêmur na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+     "secoes": [
+      "Os tipos de SALTER-HARRIS"
+     ],
+     "blocos": [
+      "os-tipos-de-salter-harris-77cf0c10"
+     ],
+     "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+     "trechosSha256": "9e78b4575705fb226ddc46fa81a11541db107ccc2edab5f4a492462da1bd668a"
+    }
+   ],
+   "questaoSha256": "09c7f7b5f150155b13a7cbe97644ed3c8e14d5ddd908e2a3aab623409158f1bc",
+   "comentarioSha256": "70e96324fb5d5884e13a8f59be4595a76ebdc6c5945ef64d190dd066b6c34381"
+  }
  },
  "pediatria-0523": {
   "conceito": "**O ápice volar no galho verde do antebraço se associa ao mecanismo de supinação.** No osso imaturo, a deformidade angular pode ser a expressão de uma força rotacional. Assim, olhar apenas a direção em que o osso dobrou perde parte importante do mecanismo.\n\nO galho verde mantém continuidade em parte das corticais, ao contrário da fratura completa. O capítulo explica que a força de rotação deforma o conjunto rádio-ulna e que reduzir pode exigir uma manobra derrotatória, além de corrigir o ângulo. Para ápice volar, o mecanismo é hipersupinação e a manobra habitual é pronação; para ápice dorsal, é o inverso.\n\n| Ápice | Mecanismo | Redução habitual |\n|---|---|---|\n| Volar | Supinação | Pronação |\n| Dorsal | Pronação | Supinação |\n\nMecanismo e tratamento não são a mesma resposta. Rodar a palma em direção ao ápice é o atalho atribuído a Noonan e Price para lembrar a redução. Ele não deve ser aplicado como se descrevesse a força que produziu a lesão.\n\n**Leia “A regra do ápice”, na Biblioteca.** Compare a pergunta sobre mecanismo com a pergunta sobre redução e identifique se o texto descreve o ápice ou o deslocamento do fragmento distal.",
@@ -10138,19 +10200,43 @@
   }
  },
  "pediatria-0609": {
-  "conceito": "**A lesão do ligamento colateral ulnar do polegar na criança.** No adulto, a força em **abdução** (valgo) sobre a metacarpofalângica do polegar rompe o **ligamento colateral ulnar** (o \"polegar do esquiador\" ou do guarda-caça). Na criança, o ligamento é **mais resistente** que a fise e o osso: em vez de romper, ele **arranca** um fragmento da **base da falange proximal**, onde se insere na epífise.\n\n**A lesão resultante.** Uma fratura **Salter-Harris III** da base da falange proximal do polegar, com um fragmento **epifisário ulnar** (às vezes Salter-Harris IV, se o traço chega à metáfise). É o **equivalente pediátrico** do polegar do esquiador.\n\n**Por que importa.** O fragmento leva o ligamento junto: se ele estiver **desviado** ou rodado, a articulação fica **instável** (pinça fraca), e a superfície articular fica incongruente. Pode haver também a **lesão de Stener** equivalente: o fragmento com o ligamento fica preso fora da aponeurose do adutor e não volta ao lugar sozinho.\n\n**A comparação das estruturas.**\n| Estrutura | Lesão típica |\n|---|---|\n| **Colateral ulnar** | Avulsão epifisária ulnar da base da falange proximal (Salter-Harris III), pela abdução forçada |\n| Placa volar | Avulsão da base volar na hiperextensão |\n| Adutor do polegar | Insere-se no sesamoide ulnar e na base da falange; a sua aponeurose é a que se interpõe na lesão de Stener |\n| Flexor curto do polegar | Insere-se no sesamoide radial; raramente avulsiona |\n\n**O tratamento.** Fragmento **sem desvio** (menos de 1,5 a 2 mm) e articulação estável: **gesso** antebraquiopalmar com o polegar incluído por cerca de 4 semanas. Fragmento **desviado** ou rodado (mais de 2 mm, ou mais de 10% a 25% da superfície articular) ou instabilidade: **redução aberta** e fixação com fios ou parafuso, com reinserção do ligamento.",
-  "correta": "**Correta: B (do ligamento colateral ulnar).** Na criança, a abdução forçada do polegar faz o colateral ulnar arrancar um fragmento epifisário da base da falange proximal: é a Salter-Harris III equivalente ao polegar do esquiador.",
+  "conceito": "A Salter–Harris III da base da falange proximal do polegar corresponde à **avulsão do ligamento colateral ulnar**, com o ligamento preso ao fragmento do **canto ulnar**. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nNo esqueleto imaturo, a fise pode falhar antes do ligamento. O resumo diferencia os colaterais metacarpofalângicos, que vão **de epífise a epífise**, dos interfalângicos, que cruzam a fise. Isso ajuda a entender a ocorrência de um fragmento epifisário articular na avulsão.\n\nA **lesão de Stener** coloca o ligamento fora da aponeurose do adutor e indica cirurgia no resumo. Já a fratura sem desvio admite gesso por 4 a 6 semanas. Identificar o colateral no fragmento não autoriza chamar toda lesão de Stener nem operar automaticamente todo pequeno desvio sem avaliar o padrão.\n\n**Na prova: ** avulsão do canto ulnar com Salter–Harris III aponta para colateral ulnar. Distinguir o ligamento avulsionado da aponeurose que pode bloquear sua posição normal.",
+  "correta": "Alternativa B. O resumo identifica o colateral ulnar no fragmento do canto ulnar da base proximal. É o padrão ósseo do polegar do esquiador no imaturo.",
   "incorretas": {
-   "A": "A avulsão da **placa volar** ocorre na **hiperextensão** e produz um fragmento volar, e não a Salter-Harris III ulnar típica.",
-   "C": "O **adutor do polegar** se insere no sesamoide ulnar e na base da falange; sua aponeurose participa da lesão de Stener, mas não é a estrutura que avulsiona o fragmento.",
-   "D": "O **flexor curto do polegar** se insere no sesamoide radial e raramente causa avulsão."
+   "A": "A placa volar integra a caixa estabilizadora descrita para as articulações, mas não é a estrutura atribuída ao fragmento ulnar desta lesão. O capítulo identifica o colateral ulnar na avulsão perguntada.",
+   "C": "O adutor aparece como referência da aponeurose na lesão de Stener, não como tendão que explica o fragmento da Salter–Harris III descrita. Confundir obstáculo anatômico com estrutura avulsionada troca a resposta.",
+   "D": "A fonte não atribui esse fragmento ao flexor curto. O padrão definido é o colateral ulnar preso à epífise, e não uma avulsão tendínea flexora."
   },
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children 8th Ed (referência indicada na prova TARO 2016, questão 80)",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas da mão."
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Polegar e metacarpais; Anatomia, exame e remodelação."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-08-mao-carpo",
+     "titulo": "Fraturas e luxações da mão e do carpo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+     "secoes": [
+      "Polegar e metacarpais",
+      "Anatomia, exame e remodelação"
+     ],
+     "blocos": [
+      "polegar-e-metacarpais-db3ac9cf",
+      "anatomia-exame-e-remodelacao-bc27de74"
+     ],
+     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+     "trechosSha256": "54f2ad2a7728fcaeb47bf77f0094025fde0d8e8f7207fc0c820cb5bad8145926"
+    }
+   ],
+   "questaoSha256": "2e647e62f69b539990098f7446d7d191f89d17374a3169e7839338ef49f09e67",
+   "comentarioSha256": "534ca1d0da7931df16375ddf771ff275ed37201a6d20eacdf277665c9992eee2"
+  }
  },
  "pediatria-0610": {
   "conceito": "**A lasca metafisária visível não representa todo o fragmento condilar lateral.** O traço começa na metáfise posterolateral, acompanha a fise e entra na articulação, levando grande componente cartilaginoso. O rasgo de partes moles fica entre a origem do extensor radial longo do carpo e a do braquiorradial.\n\nOs **extensores radial longo e radial curto do carpo**, junto dos colaterais laterais, permanecem no fragmento distal. A tração desses músculos participa de seu deslocamento e rotação e contribui para a dificuldade de consolidação. A flexão do punho estira os extensores presos e pode aumentar a dor. O braquiorradial fica acima do rasgo, no úmero proximal. A questão cobra qual músculo corresponde à ligação descrita, e não apenas qual tem função extensora.",
@@ -11466,19 +11552,42 @@
   }
  },
  "pediatria-0644": {
-  "conceito": "**As fraturas da mão na criança.** São muito comuns, sobretudo na adolescência, por esportes e brigas. Na criança, as **falanges** fraturam mais que os metacarpos, e a **base da falange proximal do dedo mínimo** é um dos locais mais frequentes de todos (a fratura \"extra-oitava\", Salter-Harris II).\n\n**Os metacarpos.** Entre as fraturas dos metacarpos, a localização **mais frequente** é o **colo**, e o metacarpo mais acometido é o **quinto**. É a **fratura do boxeador**, típica do adolescente que dá um soco numa superfície dura.\n\n| Localização no metacarpo | Frequência | Comentário |\n|---|---|---|\n| **Colo** | **A mais comum** | Sobretudo o 5º; angulação **dorsal** do ápice (cabeça para palmar) |\n| Diáfise | Menos frequente | Atenção à **rotação** |\n| Base | Pouco frequente | Instabilidade na carpometacarpal, sobretudo no 5º e no polegar |\n| Cabeça (epífise) | Rara | Pode ser **intra-articular**, e então precisa de redução anatômica |\n\n**Por que o colo.** O colo é a região **mais fina** e menos protegida do metacarpo, e recebe diretamente o impacto axial do soco sobre a cabeça. A fise dos metacarpos (exceto o polegar) fica na **cabeça**, distal. Por isso, as fraturas de colo ficam **próximas à fise**, com bom potencial de remodelação no plano de movimento.\n\n**Quanto se tolera na fratura do colo do quinto metacarpo.**\n- A articulação carpometacarpal do 4º e do 5º dedos é **móvel** e compensa angulações maiores. No 5º metacarpo, muitos aceitam **até 40° ou mais** no adolescente, e mais na criança pequena.\n- No 2º e no 3º, a compensação é pequena, e se toleram apenas cerca de **10 a 15°**.\n- A **rotação** nunca é tolerada: o dedo cruza sobre o vizinho ao fechar a mão (dedo em tesoura).\n\n**O tratamento.** A maioria é tratada com **redução fechada** (manobra de Jahss: flexão de 90° na metacarpofalângica e na interfalângica proximal, empurrando a cabeça para dorsal) e **tala** em posição intrínseca-plus. A fixação percutânea fica para fraturas instáveis, rotadas ou muito anguladas.",
-  "correta": "**Correta: A (no colo).** Na criança e no adolescente, a fratura do metacarpo é mais frequente no **colo**, sobretudo no quinto metacarpo (fratura do boxeador), pelo impacto axial de um soco sobre a cabeça.",
+  "conceito": "O **colo** é a localização mais frequente de fratura metacarpal na criança, especialmente no mínimo e anular, segundo o resumo. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 8).\n\nA frequência não torna toda fratura do colo simples. O capítulo orienta avaliar **déficit de extensão, rotação e cabeça na palma** como motivos para redução. Menos de 10° de rotação já podem fazer os dedos cruzarem, e rotação não deve ser julgada apenas numa imagem aparentemente alinhada.\n\nA tolerância angular depende do raio e da mobilidade carpometacarpal: o resumo cita indicador/médio 10° a 20° e anular/mínimo 30° a 40°. A localização mais frequente é uma informação epidemiológica; esses limites são informação de tratamento e não devem ser confundidos com uma regra única para todas as fraturas.\n\n**Na prova: ** responder colo para o local predominante, mas manter exame de alinhamento e função. Base do quinto e base do polegar têm padrões próprios, que não passam a ser os mais comuns por receberem nomes conhecidos.",
+  "correta": "Alternativa A. O colo é explicitamente o local mais frequente no resumo, com destaque para os metacarpais ulnares. Essa afirmação é independente dos critérios para aceitar ou reduzir uma fratura específica.",
   "incorretas": {
-   "B": "As fraturas da **base** dos metacarpos são **menos frequentes** e se concentram no polegar e no 5º metacarpo.",
-   "C": "As fraturas da **diáfise** ocorrem, mas são menos frequentes que as do colo. Nelas, a rotação deve ser avaliada com cuidado.",
-   "D": "As fraturas da **cabeça** (epífise) são **raras**. Quando ocorrem, podem ser intra-articulares e exigir redução anatômica."
+   "B": "A base tem padrões importantes, como Bennett reverso do mínimo e os tipos da base do polegar, mas não é o local mais frequente indicado. Importância técnica e frequência não são sinônimos.",
+   "C": "A diáfise não é a localização predominante informada para os metacarpais. Não transferir a epidemiologia de falanges ou antebraço para responder ao osso perguntado.",
+   "D": "A cabeça implica atenção articular, mas o capítulo destaca o colo como local mais frequente. Gravidade potencial do comprometimento articular não demonstra maior incidência."
   },
   "referencias": [
-   "Beaty JH, Kasser JR. Rockwood and Wilkins’ Fractures in Children. 8aedição. Philadelphia: Lippincott Williams & Wilkins, 2015. 8 Ed. 433 Pg (referência indicada na prova TARO 2019, questão 55)",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Polegar e metacarpais."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-08-mao-carpo",
+     "titulo": "Fraturas e luxações da mão e do carpo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
+     "secoes": [
+      "Polegar e metacarpais"
+     ],
+     "blocos": [
+      "polegar-e-metacarpais-74e087f7",
+      "polegar-e-metacarpais-4fd4e5e3"
+     ],
+     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
+     "trechosSha256": "2144f04bdb0b499b207ad698b8f8d8466ef18bbda6c1c2237036c70a360a2b9b"
+    }
+   ],
+   "questaoSha256": "bb982d735743fa8c3b992f94a9ff110dfbfdf0a6820bd4382b1e77449e0a5dfa",
+   "comentarioSha256": "d2c4d4a3c98bd27a1d2077317a815c0a0e9ffe6a9ed558fb87c9c1a6c546a6fe"
+  }
  },
  "pediatria-0645": {
   "conceito": "A fratura dos **ramos púbicos dos dois lados**, superiores e inferiores, desconecta a frente do anel pélvico. O nome clássico é fratura em cavaleiro, **straddle**, porque costuma vir de queda montada sobre um objeto.\n\n**O subtipo.** Na classificação de Torode e Zieg modificada (Rockwood and Wilkins, 10ª ed., cap. 23), o tipo IV é o instável e se divide em três:\n- **IVa:** ramos superiores e inferiores bilaterais, o straddle;\n- **IVb:** ramos ou sínfise com lesão posterior (sacroilíaca, asa do sacro);\n- **IVc:** segmento instável entre o anel anterior e o acetábulo.\n\n**O que o straddle exige.** O fragmento anterior sobe pelo reto abdominal e fica junto da bexiga e da uretra, que precisam ser investigadas. A cinta pélvica é **contraindicada**, porque empurraria os ilíacos para dentro.\n\n**Na prova:** ramos bilaterais = **IVa**; anterior + posterior = **IVb**.\n\nNo resumo de fraturas da pelve da criança, a tabela de Torode e Zieg e a seção de fraturas instáveis mostram os subtipos.",
@@ -12656,19 +12765,45 @@
   }
  },
  "pediatria-0675": {
-  "conceito": "**As fraturas da extremidade proximal do fêmur na criança.** São raras (menos de 1% das fraturas pediátricas) e quase sempre causadas por **trauma de alta energia**, ou por lesões patológicas (cisto ósseo, displasia fibrosa). O osso jovem é muito resistente, e a energia necessária para quebrá-lo também lesa os vasos.\n\n**A vulnerabilidade vascular da cabeça femoral infantil.** A cabeça depende quase exclusivamente dos **vasos retinaculares** (ramos da **artéria circunflexa femoral medial**) que sobem pela superfície do colo:\n- a **fise** é uma barreira que impede a irrigação a partir da metáfise;\n- a artéria do ligamento redondo contribui pouco até a adolescência;\n- o **hematoma intracapsular** sob tensão comprime os vasos.\n\n**A classificação de Delbet e o risco de necrose.**\n\n| Tipo | Local | Risco aproximado de osteonecrose |\n|---|---|---|\n| I | Transepifisária | Até 80 a 100% (sobretudo com luxação) |\n| II | Transcervical | Cerca de 40 a 50% |\n| III | Cervicotrocantérica | Cerca de 20 a 30% |\n| IV | Intertrocantérica | Cerca de 10% |\n\n**As complicações, da mais à menos frequente.**\n1. **Osteonecrose da cabeça femoral**: a **mais frequente** e a **mais grave**, em cerca de **30%** no geral (Ratliff I, com necrose de toda a cabeça, é a de pior prognóstico).\n2. **Coxa vara**: cerca de 15 a 30%, por consolidação viciosa ou alteração do crescimento.\n3. **Fechamento prematuro da fise**: cerca de 5 a 60%, conforme o tipo e o uso de implantes atravessando a fise; causa encurtamento.\n4. **Pseudartrose**: cerca de 5 a 10%, mais nos tipos II e III tratados sem fixação.\n\n**Prevenção.** Redução **anatômica e urgente**, **fixação estável** (o gesso isolado tem altas taxas de perda da redução e coxa vara), **descompressão** do hematoma (capsulotomia ou aspiração), poupando a fise quando possível nas crianças pequenas.",
-  "correta": "**Correta: D (a osteonecrose da cabeça femoral).** Nas fraturas do fêmur proximal da criança, a osteonecrose é a complicação mais frequente e mais grave, em cerca de 30% dos casos, pela dependência da cabeça femoral dos vasos retinaculares.",
+  "conceito": "A **osteonecrose da cabeça femoral** é a complicação **mais grave e frequente**, cerca de 30% no resumo. A alternativa D corresponde a essa comparação (Rockwood and Wilkins, 10ª edição, capítulo 24).\n\nO risco aumenta com desvio, idade e padrão da fratura. Na classificação de Delbet, a necrose na metanálise citada é 38%, 28%, 18% e 5% nos tipos I–IV; no IB com luxação, a fonte relata risco próximo de 100%. Não usar a média geral como previsão igual para toda fratura proximal.\n\nO fator modificável mais importante é a **qualidade da redução**. A fonte discute possível vantagem do tratamento até 24 horas, com estudos contrários; capsulotomia não reduziu necrose. Sinais podem surgir em média aos 11 meses e até 2 anos, justificando seguimento além da consolidação inicial.\n\n**Na prova: ** distinguir a complicação mais frequente das outras sequelas relevantes. Coxa vara, fechamento fisário e pseudartrose têm mecanismos e consequências próprios; uma fratura consolidada não prova que a cabeça permanecerá vascularizada.",
+  "correta": "Alternativa D. É a complicação nomeada como mais frequente e grave pelo resumo. A resposta deve manter a variação por tipo, desvio e idade, sem universalizar um percentual.",
   "incorretas": {
-   "A": "A **coxa vara** é a segunda complicação mais comum, sobretudo quando a fratura não é fixada.",
-   "B": "A **pseudartrose** é menos frequente, em cerca de 5 a 10%.",
-   "C": "O **fechamento prematuro da fise** ocorre, mas é menos comum que a osteonecrose, e frequentemente se associa a ela."
+   "A": "Coxa vara ocorre em 20% a 30% na fonte e tem relação com alinhamento e tratamento; é importante, mas não é a complicação que o texto nomeia como a mais frequente na comparação geral.",
+   "B": "Pseudartrose é citada em 7%, sobretudo nos tipos II/III e com redução não anatômica. Não supera a osteonecrose no resumo.",
+   "C": "Fechamento fisário aparece em cerca de 28%, associado a implante atravessando a fise ou necrose. A fonte ainda define a necrose como a mais frequente; os grupos podem se sobrepor, não devem ter seus percentuais somados."
   },
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children, 6th Ed., p. 874 (referência indicada na prova TARO 2013, questão 31)",
-   "Ratliff AH. Fractures of the neck of the femur in children. J Bone Joint Surg Br. 1962;44-B(3):528-542."
+   "Conteúdo consultado no resumo “Fraturas do colo do fêmur e luxação traumática do quadril na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children. Seções: Necrose; Coxa vara, fise e pseudartrose; Classificação de DELBET."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-24-quadril",
+     "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
+     "secoes": [
+      "Necrose",
+      "Coxa vara, fise e pseudartrose",
+      "Classificação de DELBET"
+     ],
+     "blocos": [
+      "necrose-42bbef0d",
+      "coxa-vara-fise-e-pseudartrose-17944458",
+      "classificacao-de-delbet-29878cdc"
+     ],
+     "sha256": "5b35cda17f6903c48d7f2c7b2665d779d891532200a459e1da8c8f0f748a5ac4",
+     "trechosSha256": "1a1ce382ed78569531889490bc13e741001ddeae653b1a889828b540d4068c5d"
+    }
+   ],
+   "questaoSha256": "9f3d486851caa90f439da25dd5267d1f3f7292da44f9357ac6a40e3c5d20ccf4",
+   "comentarioSha256": "aef665c7f43dfe3f2b43d3fac98d9dc4ffe1d8bdcea2272b3dd6c2fc93431951"
+  }
  },
  "pediatria-0676": {
   "conceito": "**O método de Ponseti em duas fases.** O tratamento do pé torto congênito tem uma fase de **correção** e uma fase de **manutenção**.\n\n**Na correção**, há uma sequência de gessos semanais, com manipulação na ordem do mnemônico **CAVE**:\n1. **Cavo**: corrige-se primeiro, supinando o antepé (elevando o primeiro raio).\n2. **Aduto** e **varo**: o pé é abduzido em torno da **cabeça do tálus**, que serve de fulcro.\n3. **Equino**: por último, geralmente com a **tenotomia percutânea do tendão calcâneo**, feita na maioria dos casos.\n\n**Na manutenção**, entra a **órtese de abdução** (botas presas a uma barra, a antiga Denis Browne). Sem ela, o pé torto **recidiva** com muita frequência. A falta de adesão é a principal causa de recidiva.\n\n**Os parâmetros da órtese.**\n\n| Parâmetro | Valor |\n|---|---|\n| Rotação externa do pé **afetado** | **60 a 70°** |\n| Rotação externa do pé **normal** (casos unilaterais) | 30 a 40° |\n| **Dorsiflexão** | **10 a 15°**, pela curvatura da barra |\n| Distância entre as botas | Largura dos **ombros** |\n\n**Por que esses números.**\n- A **rotação externa** mantém o pé abduzido, impedindo que o aduto e o varo voltem.\n- A **dorsiflexão** vem da barra dobrada para baixo no centro, com a convexidade voltada para o chão. Ela mantém o tendão calcâneo alongado e evita a recidiva do equino.\n- A distância entre os ombros deixa os quadris em abdução confortável.\n\n**O tempo de uso.**\n- **23 horas por dia** nos primeiros 3 meses após o último gesso.\n- Depois, **à noite e nos cochilos** até os **4 anos** de idade.\n\n**Quando o pé recidiva.** Na recidiva, repetem-se gessos e às vezes a tenotomia. Na recidiva dinâmica em supinação após os 3 anos, faz-se a **transferência do tibial anterior** para o cuneiforme lateral.",
@@ -13611,19 +13746,42 @@
   }
  },
  "pediatria-0701": {
-  "conceito": "**A fratura do colo do rádio na criança.** Na criança, a cabeça do rádio é em grande parte **cartilaginosa**, e a força de uma queda com o cotovelo estendido em **valgo** se concentra no **colo** e na fise (geralmente Salter-Harris II ou fratura metafisária). A cabeça bascula lateralmente. O pico é entre **9 e 10 anos**.\n\n**A classificação de O'Brien (pela angulação).**\n| Tipo | Angulação | Conduta |\n|---|---|---|\n| I | Até **30°** | Imobilização curta e mobilização precoce |\n| II | 30° a 60° | **Redução** fechada ou percutânea |\n| III | Mais de **60°** | Redução percutânea ou intramedular (Metaizeau); aberta se falhar |\n\n**Por que a rotação sofre mais.** A cabeça do rádio gira dentro do **ligamento anular** e contra a incisura radial da ulna e o capítulo na **pronossupinação**. Qualquer deformidade, hipertrofia ou perda de congruência afeta diretamente essa rotação, enquanto a flexão e a extensão, que dependem sobretudo da articulação umeroulnar, ficam relativamente preservadas.\n\n**As sequelas.**\n- **Perda da pronação**: a **mais frequente**; a supinação também pode diminuir, mas menos.\n- **Cabeça hipertrofiada** ou deformada (a mais comum das alterações radiográficas), incongruente com o capítulo e com a ulna.\n- **Necrose da cabeça**: mais comum depois de redução **aberta**.\n- **Sinostose radioulnar proximal**: a pior sequela funcional, com bloqueio total da rotação; ligada à redução aberta e ao trauma de alta energia.\n- **Fechamento precoce da fise**: encurtamento discreto do rádio e cúbito valgo leve.\n\n**Como reduzir as sequelas.** Aceitar até cerca de **30°** de angulação, reduzir de forma fechada ou percutânea (técnica de **Metaizeau**, com haste intramedular), evitar a redução aberta sempre que possível (é o maior fator de mau resultado) e mobilizar cedo.\n\n**A idade e o limite de angulação.** O potencial de remodelação da cabeça do rádio depende do crescimento restante:\n- **abaixo de 10 anos**: aceita-se até cerca de **30° a 45°** de angulação, conforme a referência, com bom resultado;\n- **acima de 10 anos**: o potencial cai, e o limite passa a ser de cerca de **30°**.\n\nAlém da angulação, contam a **translação** da cabeça e, sobretudo, a **rotação do antebraço** no exame (sob anestesia, se preciso): se a pronação e a supinação estão livres, o tratamento conservador é aceitável mesmo perto do limite.",
-  "correta": "**Correta: B (30 graus).** Na criança acima de 10 anos, o potencial de remodelação é menor, e o limite de angulação aceito para o tratamento conservador da fratura do colo do rádio é de cerca de 30°.",
+  "conceito": "Para crianças **acima de 10 anos**, o resumo utiliza **menos de 30°** como critério angular de tratamento não operatório do rádio proximal. A banca oferece 30° na **alternativa B**, o limiar correspondente, que deve ser lido com a precisão de que o texto usa **menor que**, não aceitação irrestrita do valor exato (Rockwood and Wilkins, 10ª edição, capítulo 11).\n\nA idade muda a tolerância: abaixo de 10 anos, o resumo admite angulação menor que 45°. Aplicar o limite das crianças menores ao grupo mais velho ignora a distinção de remodelação que a questão testa.\n\nO ângulo sozinho não decide: o capítulo exige **translação menor que 2 mm, rotação completa e cabeça alinhada ao capítulo**. A translação é mal tolerada pelo efeito came. Uma fratura abaixo do limiar que bloqueie rotação não atende automaticamente aos critérios conservadores.\n\n**Na prova: ** associar idade e limite, sem transformar uma pergunta angular em um protocolo inteiro. A escolha de tratamento precisa incluir função, alinhamento e lesões associadas.",
+  "correta": "Alternativa B. 30° é o limiar etário apresentado entre as opções, e corresponde à letra oficial. A redação da fonte é menos de 30° para maiores de 10 anos, com os demais critérios conservadores também atendidos.",
   "incorretas": {
-   "A": "15° é conservador demais; até 30° o resultado sem cirurgia é bom nessa idade.",
-   "C": "45° é o limite aceito abaixo dos 10 anos, não acima.",
-   "D": "60° compromete a rotação do antebraço em qualquer idade."
+   "A": "15° não é o limiar geral informado para o grupo acima de 10 anos. Pode representar um valor dentro da faixa, mas não responde ao limite etário perguntado.",
+   "C": "45° é a referência do grupo abaixo de 10 anos no resumo. Não deve ser transportada para a criança maior da questão.",
+   "D": "60° ultrapassa os limites não operatórios descritos para ambos os grupos. A opção não corresponde à tolerância etária apresentada."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas do rádio proximal.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas do cotovelo."
+   "Conteúdo consultado no resumo “Fraturas do colo do rádio e do olécrano na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 11 · Radial Neck and Olecranon Fractures. Seções: Rádio proximal: tratamento."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "alerta": "A banca usa 30° como limite na alternativa B; o resumo escreve angulação MENOR que 30° acima de 10 anos. Não ensinar aceitação automática do valor exato nem dispensar os demais critérios conservadores.",
+  "geradoEm": "2026-10-29",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-11-colo-radio-olecrano",
+     "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
+     "secoes": [
+      "Rádio proximal: tratamento"
+     ],
+     "blocos": [
+      "radio-proximal-tratamento-bb1be85f"
+     ],
+     "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa",
+     "trechosSha256": "2d828dced89e59c7a2244fd0b7c225af82a5c81a9dfbdf8a90699be0973c2134"
+    }
+   ],
+   "questaoSha256": "ba4b02ec20cd2579d566f34feb91b869464c2883d5975c4aeaebb0c031c3e846",
+   "comentarioSha256": "7ef747418e50768977bb2f88cf4d899c269b488ee3448e3e098f2466a89e5e72"
+  }
  },
  "pediatria-0702": {
   "conceito": "**Galho verde com ápice dorsal se reduz por supinação, desfazendo o componente em pronação.** Quando rádio e ulna fraturam em níveis diferentes, o resumo destaca um componente rotacional importante; a angulação não deve ser interpretada apenas como uma dobra isolada.\n\nA continuidade parcial do osso transmite forças e permite que uma manobra derrotatória corrija boa parte da angulação. Por isso, neste padrão, a direção da rotação é o dado decisivo. Para ápice volar, a lógica se inverte: mecanismo em supinação e redução em pronação. É necessário ler “ápice”, sem substituí-lo mentalmente pelo lado para onde o fragmento distal se deslocou.\n\nA tração prolongada descrita para certas fraturas completas e encurtadas tem outra finalidade: recuperar comprimento e permitir realinhamento dos segmentos. Ela não deve ser acrescentada como etapa obrigatória a toda redução em galho verde. Isso não significa que nenhuma manipulação complementar possa ser necessária; significa que o mecanismo derrotatório é o que diferencia as alternativas deste caso.\n\n**Leia “A regra do ápice” e “Níveis diferentes, mesmo nível”, na Biblioteca.** Primeiro identifique qual força precisa ser desfeita; depois julgue se o padrão também exige recuperar comprimento.",

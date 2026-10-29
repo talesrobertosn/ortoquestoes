@@ -1,0 +1,455 @@
+{
+  "base": "9c8cdb4484c581ab1db6b758123bb303f4728e5b",
+  "lotes": {
+    "240": {
+      "revisadas": [
+        "pediatria-0522",
+        "pediatria-0609",
+        "pediatria-0644",
+        "pediatria-0675",
+        "pediatria-0701"
+      ],
+      "lacunas": [
+        "pediatria-0280",
+        "pediatria-0321",
+        "pediatria-0540",
+        "pediatria-0593",
+        "pediatria-0834"
+      ]
+    },
+    "241": {
+      "revisadas": [
+        "mao-1050",
+        "mao-1125",
+        "pediatria-0091"
+      ],
+      "lacunas": [
+        "coluna-0179",
+        "coluna-0299",
+        "coluna-0300",
+        "coluna-0301",
+        "ombro-cotovelo-0512",
+        "ombro-cotovelo-0529",
+        "pediatria-0047"
+      ]
+    }
+  },
+  "fontes": {
+    "rockwoodcriancas10-08-mao-carpo": {
+      "markdownSha256Bytes": "de9d1d385460ce8a0275d4026edb9feafcfe44fdc7d5cfc9bfc4be382ff56eae",
+      "linhas": 90,
+      "compiladoSha256Bytes": "1c7b39c2868553c7ebf53656eec98dfd24285bdb5f73f1f092529a2d48c74422"
+    },
+    "rockwoodcriancas10-11-colo-radio-olecrano": {
+      "markdownSha256Bytes": "445ad7cd832bd16c7c342f57765e1adc89501f99120c7a2ec3b11fd697c27ce1",
+      "linhas": 87,
+      "compiladoSha256Bytes": "be1c630bd150cbd1bc8a356e411758dda701fd5784d31aab6bf6fa2fa66afe41"
+    },
+    "rockwoodcriancas10-12-monteggia": {
+      "markdownSha256Bytes": "d0f77d57aa743f9e993805b9ff0777748b3db0e6055610190e1f5c0d247443b9",
+      "linhas": 73,
+      "compiladoSha256Bytes": "5da810a5d2e138e9b846c3e8987741d2450a8e1a522b7f1cfd0e481e4b579460"
+    },
+    "rockwoodcriancas10-24-quadril": {
+      "markdownSha256Bytes": "8e85d4d1e8f246263e94ab2672ef60afdba414571c8b15fb8d644101db7b1659",
+      "linhas": 129,
+      "compiladoSha256Bytes": "a8ec354b5b2058498d1230a62c742d1753759aee07139fd025083dc46083936c"
+    },
+    "rockwoodcriancas10-26-fise-distal-femur": {
+      "markdownSha256Bytes": "9da9f842419ea0b154b852bb9ca9ea8e9c268adf02fda7319d7917ae0ce65aae",
+      "linhas": 324,
+      "compiladoSha256Bytes": "d1008933af1a0781be28355aa217c2d13b5bd55b73307a8fc38dfed3d98fb5ac"
+    },
+    "wilkins9-09-diafise-antebraco-crianca": {
+      "markdownSha256Bytes": "8cd65d3d867b420cdd87adeffeae2a072e2f671a15707ec8cb6ab32f8a97d0e2",
+      "linhas": 531,
+      "compiladoSha256Bytes": "640277884eefe1bce33daaf68ad368ded46ed75809161eeaaf7f547c619f0ecb"
+    }
+  },
+  "leitura": "08integralmente relido;11/12/24já integralmente lidos,hashes preservados.26lido integralmente324linhas nesta passagem,apenas geometria Salter–HarrisII/III/IV aproveitada no0522,sem importar epidemiologia/conduta do joelho. Wilkins9-09integralmente relido531linhas(1–180,181–355,356–531;338–430recuperado após truncamento da saída combinada).21/22/48 consultados para delimitar as lacunas. Fontes secundárias,sem páginas primárias inventadas;notas questoes não usadas como prova.",
+  "referenciasHistoricas": {
+    "pediatria-0522": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.6",
+        "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas da mão."
+      ],
+      "comentarioAnteriorSha256": "778cd28b8b2ba3c313d354d8869acdd2f0cefc8858194fa3988e0bb64ad850b1"
+    },
+    "pediatria-0609": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins's fractures in Children 8th Ed (referência indicada na prova TARO 2016, questão 80)",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas da mão."
+      ],
+      "comentarioAnteriorSha256": "5327edb0bdfdb6364ff20342707f9fafe3ded9a2061b77aa734ff24a967615ce"
+    },
+    "pediatria-0644": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Beaty JH, Kasser JR. Rockwood and Wilkins’ Fractures in Children. 8aedição. Philadelphia: Lippincott Williams & Wilkins, 2015. 8 Ed. 433 Pg (referência indicada na prova TARO 2019, questão 55)",
+        "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+      ],
+      "comentarioAnteriorSha256": "d416478c5f9fd1cc64fb2e1e08e3160403c8daea230d115fa34fd0c9ea68538b"
+    },
+    "pediatria-0675": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins's fractures in Children, 6th Ed., p. 874 (referência indicada na prova TARO 2013, questão 31)",
+        "Ratliff AH. Fractures of the neck of the femur in children. J Bone Joint Surg Br. 1962;44-B(3):528-542."
+      ],
+      "comentarioAnteriorSha256": "6054a1babc88fd4100d16423bf7646c9d38ad44bd25bfdb2224af9d1d792322b"
+    },
+    "pediatria-0701": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas do rádio proximal.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas do cotovelo."
+      ],
+      "comentarioAnteriorSha256": "6ffc754aabb567093488511844765c8ab575240753821b5d39b259a3b7e25425"
+    },
+    "pediatria-0280": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do cotovelo e do antebraço.",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de afecções congênitas do membro superior."
+      ],
+      "comentarioAnteriorSha256": "2e15960a2ae7fd45b2a2ae647be6138f45b7d9de9d2575f816ecd9606b7376af"
+    },
+    "pediatria-0321": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de lesões esportivas.",
+        "Kocher MS, Waters PM, Micheli LJ. Upper extremity injuries in the paediatric athlete. Sports Med. 2000;30(2):117-35."
+      ],
+      "comentarioAnteriorSha256": "4feedfe8d1fa866154b139a5ac9d7a9c0add22be967dfffdcd79f29a710c57b9"
+    },
+    "pediatria-0540": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 10"
+      ],
+      "comentarioAnteriorSha256": "7e92eac2fc76f9d9cd69b8f11c88cc52d1a325c637ee926c9810c52ed8f84bf0"
+    },
+    "pediatria-0593": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 22",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "c90124770fed1d9c067d4d5f4b767aacfed493c7d78f3620687d464c964eef6a"
+    },
+    "pediatria-0834": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation. (Fixed rotatory subluxation of the atlanto-axial joint). J Bone Joint Surg Am. 1977;59(1):37-44.",
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5th Edition, p. 836."
+      ],
+      "comentarioAnteriorSha256": "1cceacb8c5872ad42e85bc00500f6d536179661d74f9ff02fab47b38026b39cc"
+    },
+    "mao-1050": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Waters PM, Skaggs DL, Flynn JM. Rockwood and Wilkins' Fractures in Children. 9ª ed. Wolters Kluwer; 2019."
+      ],
+      "comentarioAnteriorSha256": "5557de89b779bffa84f2efc498b50a4379f2dc4757fe2312cd6fc88f90f066d3"
+    },
+    "mao-1125": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Greulich WW, Pyle SI. Radiographic Atlas of Skeletal Development of the Hand and Wrist. 2ª ed. Stanford University Press; 1959.",
+        "Waters PM, Skaggs DL, Flynn JM. Rockwood and Wilkins' Fractures in Children. 9ª ed. Wolters Kluwer; 2019."
+      ],
+      "comentarioAnteriorSha256": "982cda7a17c754be5a3a113e9df6b93cdbe630eee1ac268b5ba2d6a9ff53c408"
+    },
+    "pediatria-0091": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Pediatric Orthopaedic Society of North America (POSNA). Congenital Radial Head Dislocation. https://posna.org/physician-education/study-guide/congenital-radial-head-dislocation",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "8cacbabf3d8f53e90538f38bc2239d21c1b520af6d59a876a68db219d5a5a6f0"
+    },
+    "coluna-0179": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Pang D, Wilberger JE Jr. Spinal cord injury without radiographic abnormalities in children. J Neurosurg. 1982;57(1):114-129.",
+        "Pang D. Spinal cord injury without radiographic abnormality in children, 2 decades later. Neurosurgery. 2004;55(6):1325-1343."
+      ],
+      "comentarioAnteriorSha256": "d6759d85064fd903555502475ab9df08457b76c52501451485a5bc6e96c5b31b"
+    },
+    "coluna-0299": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 20"
+      ],
+      "comentarioAnteriorSha256": "179734e546accc7c32ed7ff36e2ad0b5d1a596e3752c1f038c83c06079b2ad73"
+    },
+    "coluna-0300": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.2"
+      ],
+      "comentarioAnteriorSha256": "f96ccb13f6cd28ed2da86408e2596b33ab26a2edf20e100a1fa359fdcfb83a53"
+    },
+    "coluna-0301": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 20"
+      ],
+      "comentarioAnteriorSha256": "a212d23448d53c2a0eed1ba4a2678f2af91b822c6a26aa7f58fb1427de218769"
+    },
+    "ombro-cotovelo-0512": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 8ª edição, p. 1456."
+      ],
+      "comentarioAnteriorSha256": "705aab30c076bfbe8346896c2a650ea74524bde1f2a46af41d1fbc48fc29c91e"
+    },
+    "ombro-cotovelo-0529": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Sachar K, Mih AD. Congenital radial head dislocations. Hand Clin. 1998;14(1):39-47.",
+        "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de anomalias congênitas do cotovelo."
+      ],
+      "comentarioAnteriorSha256": "587436b11f9c72f7fe5f33b91c02cef32ff134d57f462a1a5c07de79878876f4"
+    },
+    "pediatria-0047": {
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
+        "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/",
+        "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+      ],
+      "comentarioAnteriorSha256": "edf85009af90add6a550e2a60c14379ee55f3d56f3aa41ae5fe6634c2f8c6f66"
+    }
+  },
+  "lacunas": [
+    {
+      "id": "pediatria-0280",
+      "questaoSha256": "d2c7b2d1cf1d7ed9cc5a704a04be2cbfa2869e733b4d07a8fbf87f74d5340321",
+      "comentarioAnteriorSha256": "2e15960a2ae7fd45b2a2ae647be6138f45b7d9de9d2575f816ecd9606b7376af",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo12novo descreve direçãoPOSTERIOR,cabeçaCONVEXA e capítuloHIPOPLÁSICO,mas não informa cabeça radial MENOR que o normal,qualificador daD. Forma não prova tamanho. Falta comparação independente do tamanho cefálico;lacuna antiga parcialmente coberta,sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Luxação congênita da cabeça do rádio (direção e tamanho da cabeça) não é tratada nos resumos publicados.",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0321",
+      "questaoSha256": "15fed925ea30bff75622607c326fc928c92745971bc8b6956b572e298ca868e3",
+      "comentarioAnteriorSha256": "4feedfe8d1fa866154b139a5ac9d7a9c0add22be967dfffdcd79f29a710c57b9",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+          "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo11novo cita lesão de estresse em arremessadores e ginastas,mas não compara frequência da osteocondriteDISSECANTE entre ginástica,vôlei,basquete e judô. Trechos9-17de atletas não oferecem esse ranking;nota contextual não é prova. Falta comparação independente que sustente MAIS OBSERVADA;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Osteocondrite dissecante do cotovelo e o esporte associado não aparecem nos resumos publicados.",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0540",
+      "questaoSha256": "e554c5ae9aaed3b77142549587b4cc9a816e2eb4706e6367e37f640eb5d2c339",
+      "comentarioAnteriorSha256": "7e92eac2fc76f9d9cd69b8f11c88cc52d1a325c637ee926c9810c52ed8f84bf0",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+          "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo11novo separa fratura naREDUÇÃO(cabeça atrás) e naLUXAÇÃO(cabeça à frente). O enunciado cita REDUÇÃO ESPONTÂNEA com C/anterior oficial,mas não esclarece em qual fase a fratura ocorreu nem frequência por direção. Falta mecanismo temporal e comparação suficientes para uma aula que não confunda as fases;gabaritoC intacto,sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Direção do desvio da epífise radial na fratura do colo do rádio com luxação reduzida não é tratado nos resumos pediátricos publicados.",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0593",
+      "questaoSha256": "9c6b62c9d0bbfb0ea8401dd27f2f1574535c05bfd14cbf30fe7bc61b24c75314",
+      "comentarioAnteriorSha256": "c90124770fed1d9c067d4d5f4b767aacfed493c7d78f3620687d464c964eef6a",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-23-pelve-acetabulo",
+          "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo23novo classifica ramos bilaterais comoIVa/straddle,mas não identifica RETO DO ABDOME como motor do fragmentoFLUTUANTE nem compara sartório,iliopsoas e retofemoral nesse padrão. Falta anatomia/vetor independente;avulsões apofisárias são outra lesão. Sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Desvio do fragmento flutuante na fratura bilateral dos ramos púbicos da criança não é tratado nos resumos pediátricos publicados.",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "pediatria-0834",
+      "questaoSha256": "8ca5685288bcc264e1d4bf8e90cf991265c4058d7d556acecd895fb6444567a9",
+      "comentarioAnteriorSha256": "1cceacb8c5872ad42e85bc00500f6d536179661d74f9ff02fab47b38026b39cc",
+      "resumosConsultados": [
+        {
+          "id": "rockwood10-48-coluna-cervical",
+          "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+        },
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo48 defineFieldingIII>5mm com transverso/alares,mas não descreve diretamente risco NEUROLÓGICO desse grupoPEDIÁTRICO.21novo não desenvolveFielding. Falta associação independente da afirmação inteira;sem gabarito oficial,não atribuirprovavel por completar o risco de memória. Sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Subluxação rotatória atlantoaxial de Fielding-Hawkins não é tratado nos resumos pediátricos publicados.",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "coluna-0179",
+      "questaoSha256": "ab1e6277e05d222908953162459acc650166da9d9f37249f8bdf34a5bb09541f",
+      "comentarioAnteriorSha256": "d6759d85064fd903555502475ab9df08457b76c52501451485a5bc6e96c5b31b",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-22-coluna-toracolombar",
+          "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+        },
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo22novo defineSCIWORA e prognóstico,mas não compara frequência de indicação de IMOBILIZAÇÃO versus descompressão/artrodese nos traumas cervicais de BAIXA ENERGIA.21não fornece protocoloSCIWORA. Falta manejo independente do grupo específico;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "SCIWORA não é tratada nos resumos de coluna cervical e toracolombar do adulto.",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "coluna-0299",
+      "questaoSha256": "af171c93a43e383edcd01bab8ccb9867260281b3eb6853fcbe78ad8ca2e72fc2",
+      "comentarioAnteriorSha256": "179734e546accc7c32ed7ff36e2ad0b5d1a596e3752c1f038c83c06079b2ad73",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-21-coluna-cervical",
+          "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo21novo descreve sincondrose doATLAS,mas não informa a idade de fusão entre ARCOS ANTERIOR E POSTERIOR.7–9anos no texto é sincondroseDENTOCENTRAL,outra estrutura. Falta cronologia independente do atlas;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "O resumo do Rockwood cap. 48 (coluna cervical) não trata das sincondroses do atlas na criança nem da idade de fusão dos arcos. Precisa de fonte de coluna pediátrica.",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "coluna-0300",
+      "questaoSha256": "c7b1d8f5ece92c7d1d95a1777651eb27ee07bc706011db91536f0ba250462f09",
+      "comentarioAnteriorSha256": "f96ccb13f6cd28ed2da86408e2596b33ab26a2edf20e100a1fa359fdcfb83a53",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-22-coluna-toracolombar",
+          "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo22novo define ausência deRX/TCe possívelRM,mas não define grausFRANKEL C/Epara comparar as quatro alternativas. Não equiparar classificação neurológica apenas a um déficit genérico. Falta graduação independente completa;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "SCIWORA (definição e Frankel) não é tratada nos resumos de coluna publicados.",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "coluna-0301",
+      "questaoSha256": "de247c7c6075930f82dac3fcfdf09cd9d1ed3569110f9b4c54e97cabaecf2cce",
+      "comentarioAnteriorSha256": "a212d23448d53c2a0eed1ba4a2678f2af91b822c6a26aa7f58fb1427de218769",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-22-coluna-toracolombar",
+          "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo22novo descreve MAIOR GRAVIDADE abaixo de8anos,mas alerta não fornecer FREQUÊNCIA etária ou SEGMENTO PREDOMINANTE. Gravidade não prova maior incidência cervical em crianças versus adolescentes. Falta distribuição independente;sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "SCIWORA (idade e segmento mais frequentes) não é tratada nos resumos de coluna publicados.",
+      "semGabaritoOficial": false
+    },
+    {
+      "id": "ombro-cotovelo-0512",
+      "questaoSha256": "e4099971e52532e74f6f96e078ccfc331d3da8f7e6e36baacdcd351c245d85a9",
+      "comentarioAnteriorSha256": "705aab30c076bfbe8346896c2a650ea74524bde1f2a46af41d1fbc48fc29c91e",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo12novo trata redução fechada deMonteggia e anular interposto ou crônico,mas não define indicação geral de RECONSTRUÇÃO na LUXAÇÃO AGUDA ISOLADA da cabeça;reparo/reposição não são automaticamente enxerto reconstrutivo. Falta protocolo independente para julgar a afirmação genérica;sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Reconstrução do ligamento anular na luxação aguda da cabeça do rádio não é discutida no resumo do capítulo 15 (que só cita a secção parcial do anular na pronação dolorosa crônica).",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "ombro-cotovelo-0529",
+      "questaoSha256": "0333b6e919da826fa2f9f3c95d86d99c4c2fb78c16dd32ff9321d456d149eecb",
+      "comentarioAnteriorSha256": "587436b11f9c72f7fe5f33b91c02cef32ff134d57f462a1a5c07de79878876f4",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo12novo cobre posterior,bilateralidade possível,cabeçaCONVEXA e capítuloHIPOPLÁSICO,mas não descreve OVOIDE como equivalente nem necessidade/frequência de cirurgia naINFÂNCIA. Falta morfologia completa e história natural para comparar todas as opções;sem gabarito oficial,semprovavel.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Luxação congênita da cabeça do rádio não é tratada no resumo do capítulo 15; falta resumo de deformidades congênitas do cotovelo.",
+      "semGabaritoOficial": true
+    },
+    {
+      "id": "pediatria-0047",
+      "questaoSha256": "a5cecaa06fbd3aca9ba8673cf4c86f569b97257630465e5861396aec0ab3152b",
+      "comentarioAnteriorSha256": "edf85009af90add6a550e2a60c14379ee55f3d56f3aa41ae5fe6634c2f8c6f66",
+      "resumosConsultados": [
+        {
+          "id": "rockwoodcriancas10-12-monteggia",
+          "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+        }
+      ],
+      "imagensInspecionadas": [],
+      "pendencia": "Resumo12novo descrevePOSTERIOR,mas não distribui subtipoPOSTEROLATERAL versusPOSTEROMEDIAL exigidos pela dupla daC/D. Falta direção combinada independente;posterior isolado não decide a questão inteira. Sem selo.",
+      "estadoAnterior": "pendente-fonte",
+      "pendenciaAnterior": "Direção da luxação congênita da cabeça do rádio não é tratada nos resumos publicados.",
+      "semGabaritoOficial": false
+    }
+  ],
+  "alertas": {
+    "pediatria-0522": "A oficial preservada;resumo tipoDarticular versusAmetafisário,todos os tipos explicados,com geometriaSHno26.",
+    "pediatria-0701": "B/30°oficial versus MENOR que30°nafonte,demais critérios conservadores preservados.",
+    "mao-1050": "D/12–14oficial versus12–16na9ªedição.",
+    "mao-1125": "C/pisiforme6–8oficial versuspisiforme9–10nafonte."
+  },
+  "validacao": {
+    "fixtures": true,
+    "acervo": true,
+    "npmTest": true,
+    "build": true,
+    "replay": 8,
+    "lacunasComentariosIntactos": 12,
+    "demaisBytesPreservados": true,
+    "motivosCriacaoInventados": 0,
+    "figurasNosCasos": 0,
+    "ui": "8/8em390/1440:resposta,aula,alertas e links exatos;0522repetido após remover frase editorial. Captura do alerta0522inspecionada visualmente.",
+    "ordemAlternativas": "0522tem opções que são letras de classificação e é corretamente fixa na ordem da prova;teste do fallback verifica texto original e aviso de letras da prova,sem forçar remapeamento de tipos.",
+    "microcorrecao": "Após validação8/8,retirada apenas frase editorial interna da análiseCde0522;demais7comentários intactos. Fixtures,acervo,build,replay,teste de ordem eUI0522repetidos."
+  },
+  "reconciliacao622": {
+    "head": "bcf97affd778a5ace7cb9e8de40865cf3c66e07c",
+    "merge": "9c8cdb4484c581ab1db6b758123bb303f4728e5b",
+    "ci": 40799083618,
+    "pages": 40799573759,
+    "publicar": 123205242123,
+    "avulsosIntegrais": 828,
+    "resumosIntegrais": 52,
+    "figuras": 43,
+    "review": "Bot do head anteriorbaaf7792 apontouHardcastle1340;comentário restaurado,threadPRRT_kwDOUO0Yd86xVPkjresolvida/outdated. Restauração/replay echecks atuais verificados,sem nova aprovação automática presumida.",
+    "concorrentes": [
+      623,
+      624
+    ]
+  },
+  "inventario": {
+    "resumos": 52,
+    "questoes": 2976,
+    "estados": {
+      "duplicada": 97,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 887,
+      "revisada": 1990
+    }
+  },
+  "continuidade": "Próxima242já tem3rascunhos sem aplicação:mao1300,mao1216(provávelB,sem oficial) e trauma0959(Coficial,fonte também permiteA). Sete casos restantes lidos:mao1056/1541,pediatria0918,trauma1011,pediatria0014/0061/0147;precisam concluir registro das lacunas. Resumos9-15cotovelo516linhas e27tíbiaproximal lidos integralmente nesta passagem;aplicação futura após fechar unidade. Prosseguir auditoria das887lacunas antigas contra52fontes atuais,não declarar tudo revisável concluído."
+}

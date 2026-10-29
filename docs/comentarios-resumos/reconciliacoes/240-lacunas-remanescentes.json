@@ -1,0 +1,86 @@
+[
+  {
+    "id": "pediatria-0280",
+    "questaoSha256": "d2c7b2d1cf1d7ed9cc5a704a04be2cbfa2869e733b4d07a8fbf87f74d5340321",
+    "comentarioAnteriorSha256": "2e15960a2ae7fd45b2a2ae647be6138f45b7d9de9d2575f816ecd9606b7376af",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-12-monteggia",
+        "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo12novo descreve direçãoPOSTERIOR,cabeçaCONVEXA e capítuloHIPOPLÁSICO,mas não informa cabeça radial MENOR que o normal,qualificador daD. Forma não prova tamanho. Falta comparação independente do tamanho cefálico;lacuna antiga parcialmente coberta,sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "Luxação congênita da cabeça do rádio (direção e tamanho da cabeça) não é tratada nos resumos publicados.",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "pediatria-0321",
+    "questaoSha256": "15fed925ea30bff75622607c326fc928c92745971bc8b6956b572e298ca868e3",
+    "comentarioAnteriorSha256": "4feedfe8d1fa866154b139a5ac9d7a9c0add22be967dfffdcd79f29a710c57b9",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo11novo cita lesão de estresse em arremessadores e ginastas,mas não compara frequência da osteocondriteDISSECANTE entre ginástica,vôlei,basquete e judô. Trechos9-17de atletas não oferecem esse ranking;nota contextual não é prova. Falta comparação independente que sustente MAIS OBSERVADA;sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "Osteocondrite dissecante do cotovelo e o esporte associado não aparecem nos resumos publicados.",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "pediatria-0540",
+    "questaoSha256": "e554c5ae9aaed3b77142549587b4cc9a816e2eb4706e6367e37f640eb5d2c339",
+    "comentarioAnteriorSha256": "7e92eac2fc76f9d9cd69b8f11c88cc52d1a325c637ee926c9810c52ed8f84bf0",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-11-colo-radio-olecrano",
+        "sha256": "7008ef98f525f6decc9df8a7104301a93f991a9c87dd04b4f747235b7be5d2fa"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo11novo separa fratura naREDUÇÃO(cabeça atrás) e naLUXAÇÃO(cabeça à frente). O enunciado cita REDUÇÃO ESPONTÂNEA com C/anterior oficial,mas não esclarece em qual fase a fratura ocorreu nem frequência por direção. Falta mecanismo temporal e comparação suficientes para uma aula que não confunda as fases;gabaritoC intacto,sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "Direção do desvio da epífise radial na fratura do colo do rádio com luxação reduzida não é tratado nos resumos pediátricos publicados.",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "pediatria-0593",
+    "questaoSha256": "9c6b62c9d0bbfb0ea8401dd27f2f1574535c05bfd14cbf30fe7bc61b24c75314",
+    "comentarioAnteriorSha256": "c90124770fed1d9c067d4d5f4b767aacfed493c7d78f3620687d464c964eef6a",
+    "resumosConsultados": [
+      {
+        "id": "rockwoodcriancas10-23-pelve-acetabulo",
+        "sha256": "a03fad85c573317a7bd4fbb6ad418ee7896aab7aa70a596635948024ef5fe17f"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo23novo classifica ramos bilaterais comoIVa/straddle,mas não identifica RETO DO ABDOME como motor do fragmentoFLUTUANTE nem compara sartório,iliopsoas e retofemoral nesse padrão. Falta anatomia/vetor independente;avulsões apofisárias são outra lesão. Sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "Desvio do fragmento flutuante na fratura bilateral dos ramos púbicos da criança não é tratado nos resumos pediátricos publicados.",
+    "semGabaritoOficial": false
+  },
+  {
+    "id": "pediatria-0834",
+    "questaoSha256": "8ca5685288bcc264e1d4bf8e90cf991265c4058d7d556acecd895fb6444567a9",
+    "comentarioAnteriorSha256": "1cceacb8c5872ad42e85bc00500f6d536179661d74f9ff02fab47b38026b39cc",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-48-coluna-cervical",
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35"
+      },
+      {
+        "id": "rockwoodcriancas10-21-coluna-cervical",
+        "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822"
+      }
+    ],
+    "imagensInspecionadas": [],
+    "pendencia": "Resumo48 defineFieldingIII>5mm com transverso/alares,mas não descreve diretamente risco NEUROLÓGICO desse grupoPEDIÁTRICO.21novo não desenvolveFielding. Falta associação independente da afirmação inteira;sem gabarito oficial,não atribuirprovavel por completar o risco de memória. Sem selo.",
+    "estadoAnterior": "pendente-fonte",
+    "pendenciaAnterior": "Subluxação rotatória atlantoaxial de Fielding-Hawkins não é tratado nos resumos pediátricos publicados.",
+    "semGabaritoOficial": true
+  }
+]
