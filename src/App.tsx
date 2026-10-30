@@ -316,8 +316,8 @@ export function App() {
       <AvisoArmazenamento />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
-          {comCracha && <Suspense fallback={null}><CompletarPerfil /></Suspense>}
           {lugar && <Suspense fallback={<div className="vl-espera" aria-hidden="true" />}><CenaPagina id={lugar} /></Suspense>}
+          {comCracha && <Suspense fallback={null}><CompletarPerfil /></Suspense>}
           <ErroDePagina caminho={rota.caminho}>
           <Suspense fallback={<EsperaPixel />}>
             {pagina}

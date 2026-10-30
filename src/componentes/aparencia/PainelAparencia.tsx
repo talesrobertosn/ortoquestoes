@@ -49,7 +49,7 @@ export function PainelAparencia() {
           <span>Começar</span>
         </span>
         <figcaption>
-          <strong>{NOME_PERIODO[periodo]}</strong> · interface {interfaceEscura ? 'escura' : 'clara'}
+          <strong>{NOME_PERIODO[periodo]}</strong><span>Interface {interfaceEscura ? 'escura' : 'clara'}</span>
           {cenario === 'horario' && <small>muda sozinho com a hora</small>}
         </figcaption>
       </figure>

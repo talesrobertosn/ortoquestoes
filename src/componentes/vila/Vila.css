@@ -7,8 +7,9 @@
 
 /* A cena tem a altura da faixa; o palco tem a proporção da arte (3:1), cobre a faixa e se ancora à direita, onde
    ficam os focos e o mascote. */
-.vl-cena { position: relative; height: clamp(9.5rem, 19vw, 15rem); container-type: size; overflow: hidden; }
-.vl-palco { position: absolute; right: 0; top: 50%; width: max(100cqw, calc(100cqh * 3)); aspect-ratio: 3 / 1; translate: 0 -50%;
+.vl-cena { position: relative; height: clamp(10rem, 21vw, 17rem); container-type: size; overflow: hidden; }
+/* ancorado no chão: a linha y = 157 da arte encosta na base da faixa (o mascote nunca é cortado; sobra corte no céu) */
+.vl-palco { --vl-l: max(100cqw, calc(100cqh * 3)); position: absolute; right: 0; bottom: calc(var(--vl-l) / 3 * -0.02); width: var(--vl-l); aspect-ratio: 3 / 1;
   animation: vl-camera 0.9s cubic-bezier(.2, .7, .2, 1) both; }
 .vl-palco__fundo { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; user-select: none; }
 /* véu do lado do texto e a borda de baixo, para as placas */
