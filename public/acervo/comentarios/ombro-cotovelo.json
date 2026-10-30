@@ -23,14 +23,18 @@
  },
  "ombro-cotovelo-0003": {
   "incorretas": {
-   "A": "Lateralizar e subir o centro de rotação faria o contrário do que se busca: diminuiria a alavanca do deltoide e deixaria o músculo frouxo.",
-   "B": "A medialização está certa, mas o úmero é abaixado, não elevado. Subir o centro de rotação afrouxaria o deltoide.",
-   "C": "O abaixamento está certo, mas a lateralização não é o princípio original de Grammont. É uma modificação posterior, feita para reduzir o notching e melhorar a rotação."
+   "A": "**Erra as duas direções.** Lateralizar e subir o centro de rotação deixaria o deltoide mais curto e com menos alavanca, o contrário do que a prótese reversa busca. É o comportamento do ombro com artropatia, em que a cabeça sobe por falta do manguito.",
+   "B": "**Acerta a medialização e erra a altura.** Medializar o centro de rotação está certo, mas subir o úmero encurtaria o deltoide. A prótese reversa abaixa o úmero em relação ao acrômio para tensionar o deltoide.",
+   "C": "**Acerta a altura e erra a medialização.** Baixar o úmero ajuda a tensionar o deltoide, mas o Campbell diz que todos os modelos medializam o centro de rotação, e não o lateralizam. Os desenhos mais modernos ajustam o grau de medialização, sem abandoná-la."
   },
-  "conceito": "No ombro normal, o **manguito rotador** (quatro tendões que abraçam a cabeça do úmero) tem uma função que passa despercebida: ele **segura a cabeça centrada** na glenoide enquanto o deltoide levanta o braço. Quando o manguito rompe de forma grande e sem conserto, o deltoide puxa e a cabeça simplesmente sobe, em vez de girar. O paciente não consegue elevar o braço, a chamada pseudoparalisia.\n\nA **prótese reversa** resolve isso invertendo as peças: a \"bola\" (glenosfera) é presa na escápula e o \"copo\" fica no úmero. Os princípios dessa prótese foram definidos por **Grammont**, e são dois:\n\n**Medializar** o centro de rotação, trazendo-o para junto da glenoide, mais para dentro. Com o centro de giro mais longe do deltoide, o braço de alavanca do músculo aumenta, e ele passa a conseguir elevar o braço sozinho, sem o manguito. De quebra, a força que tenta soltar a peça da escápula diminui.\n\n**Abaixar** o úmero, alongando o deltoide. Um músculo um pouco esticado gera mais força e recruta mais fibras, e essa tensão também mantém a prótese estável, já que não há manguito para centrá-la.\n\nEsses princípios têm um preço. Com o úmero mais perto da escápula, a borda da peça umeral bate na borda inferior da escápula e vai desgastando o osso, o chamado *notching* escapular. Além disso, os rotadores externos que sobraram perdem alavanca, e a rotação externa fica limitada. Por isso, desenhos mais recentes **lateralizam** parcialmente os componentes, um refinamento posterior ao conceito original.",
-  "correta": "Medialização do offset e abaixamento do centro de rotação. Medializar aumenta a alavanca do deltoide; abaixar o úmero tensiona o deltoide e estabiliza a prótese.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Na prótese reversa, o objetivo é dar ao deltoide condições de trabalhar sozinho. A banca pergunta como isso é feito, e o Campbell resume em uma frase.\n\n**O princípio.** A biomecânica da prótese reversa gira em torno de **recrutar o deltoide** para restaurar o movimento ativo num ombro sem manguito. **Todos os modelos medializam o centro de rotação** em algum grau e, em geral, **alongam o deltoide**, aumentando o seu braço de alavanca para a elevação anterior (cap. 12).\n\n**O desenho de GRAMMONT.** O original medializava o centro de rotação **na face da glenoide** e usava um ângulo colodiafisário umeral de **155 graus**, para que o deltoide puxasse em linha reta vertical. Com o centro de rotação mais medial e o úmero mais baixo em relação ao acrômio, o deltoide fica mais tenso e com mais alavanca.\n\n**Lendo as alternativas.** A banca fala em medializar e baixar o centro de rotação. A medialização é a frase literal do Campbell; o abaixamento do úmero é o que alonga o deltoide. A combinação oposta, lateralizar e subir, tiraria do deltoide justamente a tensão e a alavanca de que ele precisa. O resumo Manguito rotador: exame, roturas e tratamento liga a artropatia ao tratamento.",
+  "correta": "**D: medialização do offset umeral e o abaixamento do centro de rotação da cabeça umeral.** É o gabarito oficial e corresponde ao princípio descrito no Campbell: medializar o centro de rotação e alongar o deltoide, aumentando o seu braço de alavanca (cap. 12).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 12 (Shoulder and Elbow Arthroplasty), Reverse total shoulder arthroplasty: biomechanics",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0004": {
   "incorretas": {
@@ -56,14 +60,18 @@
  },
  "ombro-cotovelo-0006": {
   "incorretas": {
-   "A": "O ligamento coracoumeral, do coracoide ao úmero, reforça a cápsula na região do intervalo rotador e limita a rotação externa com o braço junto ao corpo. Sua retração é o que trava a rotação externa no ombro congelado.",
-   "C": "O ligamento glenoumeral médio limita a translação anterior com o braço em abdução moderada. Tem papel na instabilidade anterior traumática, não no escape do manguito.",
-   "D": "O ligamento glenoumeral superior limita a descida da cabeça com o braço junto ao corpo. Não é o freio contra a subida da cabeça."
+   "A": "**É um ligamento do intervalo rotador.** O coracoumeral vai do coracoide às tuberosidades, entre o supraespinal e o subescapular, e fica contraído na capsulite adesiva. Não é o teto que segura a cabeça contra a subida, papel do arco coracoacromial.",
+   "C": "**Estabiliza em outra direção.** O glenoumeral médio limita a rotação externa nas faixas baixa e média de abdução e tem pouco efeito a 90 graus. Não contém a migração superior da cabeça.",
+   "D": "**É contenção inferior, e não superior.** O Campbell descreve o glenoumeral superior como o principal freio à subluxação inferior com o braço a 0 grau de abdução. A fuga anterossuperior é contida pelo arco coracoacromial, acima da articulação."
   },
-  "conceito": "Quando o manguito rotador rompe por completo e não é reparado, a cabeça do úmero perde quem a segura centrada e vai **subindo** com o tempo. Ela passa a se apoiar num \"teto\" formado pelo acrômio, pelo processo coracoide e pelo **ligamento coracoacromial**, que liga um ao outro. Esse conjunto é o **arco coracoacromial**, e nesse estágio ele vira o último freio que impede a cabeça de escapar para cima.\n\nCom os anos, a cabeça desgasta a articulação, num quadro chamado **artropatia do manguito rotador**. Na fase final, se o ligamento coracoacromial se rompe ou desgasta, não sobra mais nada para conter a cabeça. Ela escapa para **cima e para a frente**, a **instabilidade** (ou escape) **anterossuperior**: o paciente tenta elevar o braço e a cabeça do úmero salta para a frente, visível debaixo da pele, sem conseguir levantar o membro.\n\nEssa sequência traz uma lição prática importante. No ombro com rotura do manguito grande e irreparável, **não se deve ressecar o ligamento coracoacromial** nem fazer uma acromioplastia extensa (retirar osso do acrômio para \"abrir espaço\"). Fazer isso remove o último freio e pode provocar o escape anterossuperior. Quando o escape já existe, o tratamento costuma ser a prótese reversa.\n\nOs outros ligamentos da questão são estabilizadores da cápsula da articulação, com outras funções.",
-  "correta": "Ligamento coracoacromial. Com o manguito ausente, ele forma o teto que contém a cabeça; quando falha, a cabeça escapa para cima e para a frente.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "A cabeça do úmero sobe aos poucos quando o manguito falha. Primeiro, ela encosta no acrômio; depois, no ligamento que liga o coracoide ao acrômio. Quando esse último freio cede, ela escapa para a frente e para cima, e dá para ver a cabeça sob a pele.\n\n**O arco coracoacromial.** Fica acima da articulação e é formado pelo **coracoide** e pelo **acrômio anterior**, unidos pelo **ligamento coracoacromial**; a clavícula distal costuma ser considerada parte dele (Campbell, cap. 46).\n\n**O último freio.** O arco serve de contenção contra a migração superior do úmero proximal, e **a ruptura dele é o passo final da cascata** que termina na **fuga anterossuperior** dos ombros degenerativos com roturas maciças. Na fuga, a cabeça **luxa para a frente e para cima** quando o paciente tenta elevar o braço e fica **palpável e visível** no subcutâneo.\n\n**A consequência cirúrgica.** É por isso que o Campbell prefere **preservar o ligamento coracoacromial**, e reinseri-lo depois da acromioplastia, e diz que a deficiência do arco com roturas anterossuperiores não tem tratamento eficaz: a melhor prevenção é preservar o arco. O resumo Manguito rotador: exame, roturas e tratamento liga a artropatia à prótese reversa.",
+  "correta": "**B: coracoacromial.** O Campbell descreve a ruptura do arco coracoacromial, com o seu ligamento, como o passo final da cascata que leva à fuga anterossuperior da cabeça umeral nas roturas maciças (cap. 46).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Anatomy and Biomechanics (coracoacromial arch, anterosuperior escape)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0007": {
   "incorretas": {
@@ -189,14 +197,18 @@
  },
  "ombro-cotovelo-0015": {
   "incorretas": {
-   "B": "**Speed é resistido.** A flexão anterior do braço contra resistência, com cotovelo estendido e antebraço supinado, avalia a cabeça longa do bíceps no sulco intertubercular.",
-   "C": "**Yocum é ativo.** O próprio paciente eleva o cotovelo com a mão apoiada no ombro oposto. Também é manobra de impacto, mas não é passiva.",
-   "D": "**O'Brien é ativo contra resistência.** Com o braço a 90 graus de flexão e leve adução, o paciente resiste à força para baixo com o polegar para baixo e depois com a palma para cima. Avalia lesão SLAP e articulação acromioclavicular."
+   "B": "**É teste do bíceps.** No teste de SPEED, o paciente resiste à flexão do ombro com o cotovelo estendido e o antebraço supinado; a dor no sulco bicipital sugere lesão do bíceps. É feito contra resistência, e não por mobilização passiva.",
+   "C": "**Também é de impacto, mas ativo.** No teste de YOCUM, o paciente põe a mão no ombro oposto e eleva o cotovelo. Quem faz o movimento é o paciente, e não o examinador, e por isso ele não responde à pergunta sobre a mobilização passiva.",
+   "D": "**Examina o lábio superior e a acromioclavicular.** O teste de O'BRIEN, ou da compressão ativa, pede ao paciente que resista à flexão do braço em adução e rotação interna. É um teste contra resistência, voltado para as lesões do lábio superior, e não do manguito."
   },
-  "conceito": "**Como se faz o Neer.** O **teste de Neer** é **passivo**. O examinador fica atrás do paciente, estabiliza a escápula com uma das mãos, impedindo que ela báscule, e com a outra **eleva o braço** em rotação interna até o máximo. A dor, geralmente entre 90 e 130 graus, indica impacto: o tubérculo maior, o supraespinal e a bursa são comprimidos contra a face anteroinferior do acrômio e o ligamento coracoacromial. Sem estabilizar a escápula, o paciente compensa com a báscula e o teste perde sensibilidade.\n\n**O teste de infiltração de Neer.** Para confirmar que a dor vem do espaço subacromial, injeta-se anestésico na bursa subacromial e repete-se a manobra. Se a dor some, a origem é subacromial. Se persiste, pense em outra causa, como a acromioclavicular ou a glenoumeral.\n\n**Ativo, passivo ou resistido.** A diferença entre os testes que a banca mistura está no tipo de movimento. **Neer** e **Hawkins-Kennedy** são **passivos**. O **Yocum** é **ativo**: mão no ombro oposto e elevação do cotovelo. O **Speed** é **resistido**: flexão anterior contra resistência com cotovelo estendido e antebraço supinado, para a cabeça longa do bíceps. O **O'Brien** é ativo contra resistência, em duas posições do antebraço, para lesão SLAP e acromioclavicular. O **Jobe** (lata vazia) e a rotação externa resistida testam a força do manguito.\n\n**O limite dos testes de impacto.** São sensíveis e pouco específicos: dor ao Neer aparece também na rotura do manguito, na capsulite adesiva e na artrose acromioclavicular. O valor diagnóstico cresce quando se combinam os testes com a história (idade, esforço acima da cabeça, dor noturna) e com a avaliação de força.\n\n**Na prova:** o teste **passivo** de avaliação do manguito e do impacto é o de **Neer**: escápula estabilizada e elevação passiva do braço em rotação interna.",
-  "correta": "**Teste de Neer.** É a elevação **passiva** do braço em rotação interna com a escápula estabilizada, que comprime o manguito e a bursa contra o arco coracoacromial. A dor positiva sugere impacto subacromial.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "Quase todos os testes do ombro pedem que o paciente faça força. O de NEER é diferente: quem faz o movimento é o examinador. É isso que a banca chama de \"mobilização passiva\".\n\n**O teste.** NEER descreveu o teste do impacto em **1972**. Com o paciente sentado, o examinador **eleva o braço em flexão anterior forçada** enquanto **estabiliza a escápula**, o que faz a tuberosidade maior bater no acrômio (Campbell, 14ª ed., cap. 46). A manobra **provoca dor** nas lesões de impacto de todos os estágios.\n\n**O que ele não é.** Não mede força de um músculo. E não é específico: o próprio Campbell diz que ele também dói na capsulite adesiva, na artrose, na tendinite calcária e em lesões ósseas.\n\n**E os outros testes.** SPEED e O'BRIEN (compressão ativa) são testes do bíceps e do lábio superior, feitos contra resistência. YOCUM é outra manobra de impacto, em que o próprio paciente eleva o cotovelo com a mão no ombro oposto. Nenhum deles é passivo como o de NEER. O resumo Manguito rotador: exame, roturas e tratamento reúne os testes.\n\n**O que a banca quis testar.** A diferença entre provocar dor por mobilização passiva e testar força contra resistência.",
+  "correta": "**A: Neer.** No teste de NEER, o examinador eleva passivamente o braço em flexão anterior forçada, com a escápula estabilizada, levando a tuberosidade maior contra o acrômio; é o teste de mobilização passiva do impacto (Campbell, cap. 46).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Neer impingement sign and impingement test",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0016": {
   "conceito": "**A estabilidade depende do encaixe ósseo e das partes moles.** O resumo organiza as contenções estáticas em dois grupos. Entre os **primários** estão o processo coronoide e os ligamentos colaterais medial e lateral. Entre os **secundários**, a cápsula, a articulação radiocapitelar e as origens comuns dos flexores e extensores.\n\nEssa divisão expressa hierarquia funcional, não uma separação entre estruturas úteis e inúteis. O coronoide participa da contenção contra varo e cargas axiais e rotatórias. O colateral medial, sobretudo seu feixe anterior, é fundamental contra o valgo; o complexo lateral controla varo e rotação posterolateral. A cabeça do rádio resiste secundariamente ao valgo e ganha importância quando outra contenção está lesada.\n\nA tróclea faz parte do encaixe ulnoumeral e não deve ser ensinada como irrelevante. O ponto da alternativa é que, **na lista usada pelo resumo**, o componente ósseo nominalmente destacado entre os três primários é o coronoide. O único par de alternativas formado por dois integrantes dessa lista é coronoide e colateral lateral.\n\nAs estruturas secundárias podem se tornar decisivas em uma combinação de lesões. É por isso que retirar a cabeça radial sem repor seu apoio pode ser problemático quando os ligamentos ou outras contenções também falharam. Classificar como secundário não autoriza desprezar o elemento na decisão clínica.\n\n**Leia “Quem segura o cotovelo” na Biblioteca, incluindo os parágrafos sobre as direções de força.** Associar cada estrutura a valgo, varo e rotação ajuda a usar a classificação em outras questões e na interpretação das fraturas-luxações.",
@@ -645,14 +657,18 @@
  },
  "ombro-cotovelo-0040": {
   "incorretas": {
-   "A": "**Precisa estar íntegro.** O subescapular faz o par de forças com o manguito posterior no plano transverso. Sua integridade é justamente pré-requisito para o bom resultado da transferência do grande dorsal.",
-   "C": "**Transferência para o outro lado.** O peitoral maior substitui o subescapular na rotura anterossuperior irreparável, não o supra e o infraespinal.",
-   "D": "**O bíceps não é transferido.** Na rotura maciça, a cabeça longa do bíceps costuma ser tratada com tenotomia ou tenodese para aliviar a dor, mas não serve como transferência para o manguito."
+   "A": "**É uma transposição, e para outro problema.** O Campbell descreve a transposição do subescapular, de COFIELD, para cobrir grandes defeitos do supraespinal, com risco de instabilidade anterior e fraqueza da rotação interna. Ela não repõe o infraespinal, que é rotador externo, e não é a transferência indicada para a rotura posterossuperior.",
+   "C": "**É a transferência do outro lado.** O peitoral maior é transferido nas roturas anterossuperiores, do subescapular e do supraespinal, passando sob o tendão conjunto até a tuberosidade menor. Para a rotura posterior, o músculo é o grande dorsal.",
+   "D": "**O bíceps não é usado como transferência para o manguito posterior.** Ela não substitui a força do infraespinal. A alternativa usa uma estrutura que está no campo cirúrgico para confundir."
   },
-  "conceito": "**A lógica das transferências.** Quando uma rotura maciça do manguito é **irreparável**, pelo grau de retração e de infiltração gordurosa, uma alternativa no paciente mais jovem e sem artrose é **transferir um músculo** saudável para substituir o vetor de força que falta. A escolha segue o que foi perdido.\n\n**Perda posterossuperior: grande dorsal.** Quando se perdem **supraespinal e infraespinal**, o paciente perde a **rotação externa**: não consegue manter o braço rodado para fora (sinal do retardo em rotação externa) e, ao levar a mão à boca, precisa abduzir o braço como quem toca uma corneta (**sinal de Hornblower**, que indica perda também do redondo menor). A transferência indicada é a do **grande dorsal**, descrita por **Gerber** a partir da ideia de L'Episcopo para a paralisia obstétrica. O tendão é desinserido do úmero e levado por cima para o tubérculo maior, onde passa a funcionar como **rotador externo** e ainda ajuda a abaixar a cabeça do úmero. Uma alternativa atual, com vetor mais parecido com o do infraespinal, é a transferência do **trapézio inferior** alongado com enxerto.\n\n**Perda anterossuperior: peitoral maior.** Quando o irreparável é o **subescapular**, com lift-off, belly-press e bear-hug positivos, transfere-se o **peitoral maior**, de preferência passado por baixo do tendão conjunto para reproduzir melhor o vetor do subescapular.\n\n**Quando a transferência funciona e quando não.** Os resultados dependem de deltoide funcionante, subescapular íntegro (no caso do grande dorsal), ausência de artrose glenoumeral significativa, boa mobilidade passiva e paciente disposto a uma reabilitação longa. No paciente mais velho, com artrose ou pseudoparalisia, a **prótese reversa** é a solução mais previsível. Outras opções para o irreparável incluem o reparo parcial, a reconstrução capsular superior e o espaçador subacromial.\n\n**Na prova:** rotura irreparável **supra e infraespinal**: transferência do **grande dorsal**; **subescapular** irreparável: **peitoral maior**.",
-  "correta": "**Grande dorsal.** Transferido para o tubérculo maior, ele passa a funcionar como rotador externo e depressor da cabeça do úmero, substituindo o infraespinal e o supraespinal perdidos. É a técnica de Gerber para a rotura posterossuperior irreparável.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "Para cada lado do ombro, um músculo emprestado. É assim que o Campbell organiza as transferências tendíneas nas roturas irreparáveis, e é o lado da rotura que decide.\n\n**As duas transferências clássicas** (cap. 46, Massive and Irreparable Tears):\n- **Roturas posterossuperiores** (supraespinal e infraespinal): transfere-se o **grande dorsal**, pela técnica de GERBER. O tendão é liberado da diáfise umeral, protegendo os nervos axilar e radial, passado entre o infraespinal e redondo menor e o deltoide e fixado no úmero superolateral.\n- **Roturas anterossuperiores** (subescapular e supraespinal): transfere-se o **peitoral maior**, com o arco coracoacromial intacto.\n\n**O que esperar.** Ganhos pequenos, mas estatisticamente significativos, em movimento e força. O resultado é melhor quando há boa flexão anterior e rotação externa ativas antes da cirurgia; função ruim e fraqueza generalizada predizem mau resultado. Lembre também que, nas roturas maciças irreparáveis, o reparo parcial mostrou-se superior ao desbridamento e às transferências.\n\n**Por que os outros não servem aqui.** O subescapular e o bíceps são estruturas do lado anterior; o subescapular, inclusive, pode ser transposto para cima nas roturas do supraespinal (COFIELD), com risco de instabilidade anterior. O resumo Manguito rotador: exame, roturas e tratamento compara as opções.",
+  "correta": "**B: grande dorsal.** Para as roturas irreparáveis posterossuperiores, do supraespinal e do infraespinal, o Campbell descreve a transferência do grande dorsal pela técnica de GERBER (cap. 46).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Massive and irreparable tears: tendon transfers (Technique 46.3)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0041": {
   "incorretas": {
@@ -835,14 +851,18 @@
  },
  "ombro-cotovelo-0053": {
   "incorretas": {
-   "A": "**É o impacto subcoracoide.** O subescapular preso entre o coracoide e o tubérculo menor causa dor anterior na flexão com rotação interna e adução; não é o impacto de Walch.",
-   "B": "**Não descrito.** Não existe síndrome de impacto entre o supraespinal e o lábio inferior; o contato relevante é com a borda posterossuperior.",
-   "D": "**É o impacto anterossuperior.** O contato do subescapular e da polia do bíceps com a borda anterossuperior da glenoide é descrito, mas é outra entidade, em flexão com rotação interna."
+   "A": "**É o impacto subcoracoide.** O contato entre o subescapular e o processo coracoide aparece com o braço em flexão e rotação interna, e o Campbell cita a distância de cerca de 6,8 mm entre a ponta do coracoide e o úmero, na tomografia, como sugestiva. É outro impacto, anterior.",
+   "B": "**Erra o lado da glenoide.** O impacto interno é posterossuperior: o manguito encosta na borda de cima e de trás da glenoide quando o braço está armado. O complexo labral inferior não participa desse contato.",
+   "D": "**Erra o lado e os tendões.** A borda anterossuperior da glenoide, com o subescapular, descreveria um contato anterior, mais próximo do impacto subcoracoide. O impacto interno do arremessador é posterior, entre o manguito posterossuperior e a borda posterossuperior."
   },
-  "conceito": "**Impacto que vem de dentro.** O **impacto interno posterossuperior**, descrito por Walch, é o contato entre a **face articular** dos tendões do **supraespinal** e do **infraespinal** e a **borda posterossuperior da glenoide**, com o lábio posterossuperior preso entre eles. Ocorre na posição de **armar o arremesso**, com o braço em abdução de 90 graus e rotação externa máxima.\n\n**Fisiológico até virar doença.** Todo ombro faz esse contato nessa posição. Ele se torna patológico no atleta de arremesso (beisebol, vôlei, handebol, tênis, natação), pela repetição de milhares de vezes, e produz lesões características: **lesão parcial articular** do manguito posterossuperior, lesão do **lábio posterossuperior** (lesão SLAP pelo mecanismo de peel-back), alterações císticas no tubérculo maior e, às vezes, lesão osteocondral na glenoide posterior.\n\n**O mecanismo de fundo.** O arremessador desenvolve **GIRD**, o déficit de rotação interna glenoumeral: a cápsula **posteroinferior** encurta com os anos, o centro de rotação da cabeça migra para posterossuperior e o contato entre o manguito e a glenoide se intensifica. Somam-se a discinesia escapular e a frouxidão anterior adquirida. O atleta se queixa de dor posterior no ombro ao armar o arremesso e de perda de velocidade (o \"braço morto\").\n\n**Tratamento.** Primeiro, reabilitação: alongamento da cápsula posterior (sleeper stretch e alongamento em adução horizontal), correção da escápula e da mecânica do arremesso, o que resolve a maioria. A artroscopia, com desbridamento das lesões parciais e reparo labral quando necessário, fica para a falha do programa.\n\n**Os outros impactos, para não confundir.** O **impacto subacromial** é externo: a face bursal do supraespinal contra o acrômio e o ligamento coracoacromial, na elevação. O **impacto subcoracoide** é o subescapular preso entre coracoide e tubérculo menor, na flexão com rotação interna e adução. O **impacto anterossuperior** envolve o subescapular e a polia do bíceps contra a borda anterossuperior da glenoide.\n\n**Na prova:** impacto interno de Walch: **supraespinal e infraespinal** (face articular) contra a **borda posterossuperior da glenoide**, em abdução e rotação externa, no arremessador com GIRD.",
-  "correta": "**Supraespinal e infraespinal e a borda posterossuperior da glenoide.** Em abdução e rotação externa máxima, a face articular desses tendões encosta na borda posterossuperior da glenoide e no lábio; a repetição no arremessador gera lesões parciais articulares e labrais.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "O impacto clássico acontece em cima, sob o acrômio. O impacto interno acontece dentro da articulação, atrás, e no momento em que o arremessador arma o braço. É a diferença de lugar que resolve a questão.\n\n**O que o Campbell descreve.** No impacto interno, ocorre um **contato interno do manguito rotador com a borda posterossuperior da glenoide** quando o braço está **abduzido, estendido e em rotação externa**, como na posição de armação do arremesso (cap. 46). As provas chamam esse quadro de impacto interno de WALCH, em referência à descrição dele.\n\n**Normal ou doença.** O contato **provavelmente é um fenômeno normal**, mas fica **patológico em alguns pacientes**. Aparece muito em **arremessadores que perderam rotação interna**: a perda faz o centro de rotação da cabeça umeral subir e aumenta o contato entre o manguito e as inserções do bíceps.\n\n**Os tendões em jogo.** A face profunda do manguito posterossuperior, isto é, do **supraespinal e do infraespinal**, é a que encosta na borda posterossuperior da glenoide nessa posição.\n\n**Para não confundir com os outros impactos.** O impacto subcoracoide envolve o coracoide e o subescapular; o externo, o arco coracoacromial e o supraespinal. O resumo Manguito rotador: exame, roturas e tratamento compara os três.",
+  "correta": "**C: supraespinal e infraespinal e a borda posterossuperior da glenoide.** É o contato que o Campbell descreve no impacto interno, com o braço em abdução, extensão e rotação externa, a posição de armação do arremesso (cap. 46).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Internal impingement",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0054": {
   "incorretas": {
@@ -868,14 +888,18 @@
  },
  "ombro-cotovelo-0056": {
   "incorretas": {
-   "A": "**Hawkins é teste de impacto.** Com ombro e cotovelo a 90 graus, a rotação interna forçada leva o tubérculo maior contra o ligamento coracoacromial; dói no impacto subacromial, não mede a força de um músculo.",
-   "B": "**Jobe avalia o supraespinal.** O braço fica a 90 graus no plano da escápula, em rotação interna, e resiste à força para baixo. A posição da imagem é outra.",
-   "D": "**Yocum é impacto, não subescapular.** Também começa com a mão no ombro oposto, mas o paciente eleva ativamente o cotovelo, e a dor indica impacto subacromial."
+   "A": "**O HAWKINS é teste de impacto.** Ele é feito com o ombro em flexão de 90 graus e o examinador forçando a rotação interna, para provocar dor sob o arco coracoacromial. Não se pede ao paciente que mantenha a mão no ombro oposto, e o teste não isola o supraespinal.",
+   "B": "**O JOBE examina o supraespinal em outra posição.** O braço fica em abdução no plano da escápula, e o paciente resiste à força para baixo. Na foto, o braço está aduzido, com a mão no ombro oposto, e a força do examinador é de rotação externa.",
+   "D": "**A mão está no ombro oposto, mas o teste é outro.** No YOCUM, é o paciente quem eleva o cotovelo, e a dor sugere impacto subacromial. Na foto, quem faz força é o examinador, tentando rodar o braço para fora: é o bear hug, para o subescapular."
   },
-  "conceito": "**Como se faz o bear hug.** O paciente coloca a **palma da mão sobre o ombro oposto**, com os dedos estendidos e o cotovelo à frente do corpo. O examinador tenta **afastar a mão** do ombro, aplicando uma força em rotação externa, enquanto o paciente resiste mantendo a mão no lugar. Se o paciente não consegue resistir, ou tem fraqueza clara comparada com o outro lado, o teste é positivo para lesão do **subescapular**.\n\n**Por que ele é útil.** Na série de Barth, o bear hug foi o mais sensível dos testes do subescapular e detectou lesões pequenas da parte **superior** do tendão, as mais comuns e mais fáceis de perder. Outra vantagem é poder ser feito por quem não consegue levar a mão às costas, exigência do lift-off.\n\n**A bateria do subescapular.** **Lift-off** (Gerber): mão nas costas, o paciente tenta afastá-la do corpo; se não consegue, há lesão extensa. **Belly-press** (Napoleão): mão no abdome, o paciente pressiona mantendo o cotovelo à frente e o punho reto; na lesão, o cotovelo cai para trás e o punho flexiona. **Bear hug**, descrito acima. Somam-se o aumento da rotação externa passiva e a luxação medial do bíceps na imagem.\n\n**Os testes das outras alternativas.** O **Jobe**, com o braço a 90 graus de elevação no plano da escápula e rotação interna (lata vazia), resistindo à força para baixo, avalia o **supraespinal**. O **Hawkins-Kennedy**, com ombro e cotovelo a 90 graus e rotação interna forçada, e o **Yocum**, com a mão no ombro oposto e elevação ativa do cotovelo, são testes de **impacto subacromial**, não de força de um músculo específico. Repare que o Yocum e o bear hug começam com a mão no ombro oposto: no Yocum o paciente **eleva o cotovelo**; no bear hug ele **resiste** a que a mão seja afastada.\n\n**Na prova:** mão no ombro oposto resistindo à tentativa de afastá-la: **bear hug**, teste do **subescapular**; Jobe é do supraespinal, Hawkins e Yocum são de impacto.",
-  "correta": "**Bear hug, que avalia a lesão do subescapular.** Com a mão no ombro oposto e o cotovelo à frente, o paciente resiste à tentativa do examinador de afastar a mão; a incapacidade indica lesão do subescapular, sobretudo da parte superior do tendão.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "Na foto, o paciente segura o próprio ombro do outro lado, como num abraço, e o examinador tenta tirar a mão dele de lá. Quem resiste a esse puxão é o subescapular.\n\n**O teste do abraço de urso (bear hug).** O Campbell descreve: põe-se a **mão do paciente no ombro contralateral**, e ele deve **manter essa posição enquanto o examinador tenta rodar externamente** o membro (cap. 52). Como o subescapular é o principal rotador interno, a fraqueza dele deixa a mão escapar. O livro acrescenta que o bear hug parece ser **mais sensível para as roturas da borda superior** do subescapular.\n\n**Os três testes do subescapular.**\n- **Lift-off:** o paciente não consegue afastar o dorso da mão das costas.\n- **Belly-press:** não consegue pressionar a palma contra o abdome mantendo o cotovelo à frente do tronco.\n- **Bear hug:** não consegue manter a mão no ombro oposto contra a rotação externa.\n\nJuntos, os três chegam a uma sensibilidade de cerca de **80%**, e a **ressonância** é o padrão-ouro para as roturas do subescapular.\n\n**Por que as outras alternativas não servem.** HAWKINS e JOBE examinam o lado superior do manguito; YOCUM também põe a mão no ombro oposto, mas o paciente eleva o cotovelo e o teste é de impacto. O resumo Manguito rotador: exame, roturas e tratamento traz os testes lado a lado.\n\n> **Na prova:** **bear hug** = mão no **ombro oposto**, examinador tenta a **rotação externa** = **subescapular** (mais sensível para a borda superior).",
+  "correta": "**C: BEAR HUG e avalia a lesão do subescapular.** A mão do paciente está no ombro oposto, e o examinador tenta rodar externamente o braço: é o teste do abraço de urso descrito no Campbell para o subescapular (cap. 52).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 52 (Arthroscopy of the Upper Extremity), subscapularis tears (bear hug test)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0057": {
   "incorretas": {
@@ -2908,17 +2932,19 @@
  },
  "ombro-cotovelo-0242": {
   "incorretas": {
-   "A": "A distância está certa, mas o tendão mais acometido é o supraespinhal. O infraespinhal vem em segundo lugar.",
-   "C": "Erra o tendão e o local. O infraespinhal não é o mais acometido, e o depósito típico fica no corpo do tendão, não na inserção.",
-   "D": "O tendão está certo, mas a calcificação clássica fica a 1,5 a 2 cm da inserção, e não na própria inserção."
+   "A": "**Acerta a distância e erra o tendão.** O infraespinal pode ter depósitos, mas o local mais comum é o supraespinal. A alternativa usa o número certo com o tendão errado.",
+   "C": "**Erra o tendão e a localização.** O depósito típico é do supraespinal, e não do infraespinal, e fica a 1,5 a 2 cm da inserção, e não na inserção. Depósitos insercionais lembram outras entesopatias.",
+   "D": "**Acerta o tendão e erra o local.** O supraespinal é o mais acometido, mas o depósito fica dentro do tendão, a 1,5 a 2 cm da inserção. A banca troca o detalhe da distância, que é o que separa a tendinite calcária de uma calcificação insercional."
   },
-  "conceito": "A **tendinopatia calcária** é a formação de um depósito de cálcio dentro de um tendão do manguito rotador. O tendão mais acometido, de longe, é o **supraespinhal**, que passa por cima da cabeça do úmero. Em seguida vem o infraespinhal e, raramente, o subescapular.\n\nA localização dentro do tendão também é característica. O depósito costuma se formar a cerca de **1,5 a 2 cm da inserção** no osso (a tuberosidade maior, ou troquiter), e não na inserção propriamente dita. Essa região coincide com a **zona crítica de Codman**, uma faixa do tendão com menos vasos, na fronteira entre o sangue que vem do músculo e o que vem do osso. É a mesma região em que começam muitas roturas degenerativas do manguito.\n\nA diferença entre um depósito no corpo do tendão e uma calcificação na inserção importa. A calcificação típica, no corpo do tendão, segue o ciclo descrito por Uhthoff: forma-se, fica parada por um tempo e depois é reabsorvida pelo próprio corpo, muitas vezes com uma fase de dor intensa. As calcificações na inserção se comportam de outro jeito, como uma doença da entese (a junção entre tendão e osso), e não seguem esse ciclo.\n\nNa prática, saber onde o depósito costuma estar orienta a punção guiada por ultrassom (a barbotagem), que procura justamente essa região.",
-  "correta": "Supraespinal, a 1,5 a 2 cm da inserção. O depósito se forma no corpo do tendão, na zona crítica de Codman, onde há menos vasos.",
+  "conceito": "O detalhe que a banca escolheu é a distância. A tendinite calcária não fica colada ao osso: ela mora um pouco antes da inserção, dentro do tendão.\n\n**O que o Campbell diz.** A tendinite calcária é um distúrbio doloroso e em grande parte autolimitado, em que os tendões do manguito são infiltrados por depósitos de cálcio. O local mais comum é **dentro do tendão do supraespinal**, a **1,5 a 2 cm da inserção na tuberosidade maior** (cap. 46).\n\n**Quem.** Começa em geral depois dos 30 anos, atinge cerca de 10% da população, sobretudo **mulheres de 30 a 60 anos**; 10% têm depósitos bilaterais.\n\n**As fases.** Calcificação, com uma fase de repouso pouco dolorosa; **reabsorção**, a fase mais dolorosa, em que o cálcio fica com aspecto de pasta de dente e cristais podem migrar para a bursa; e pós-calcificação, em que o tendão se reconstitui.\n\n**O tratamento.** A história natural é benigna. O **agulhamento guiado por ultrassom** é, pela melhor evidência, o tratamento não operatório de escolha; a artroscopia fica para as falhas. E a doença **não aumenta o risco de rotura do manguito**. O resumo Manguito rotador: exame, roturas e tratamento resume a doença.\n\n> **Na prova:** calcária = **supraespinal**, **1,5 a 2 cm** da inserção, e não insercional.",
+  "correta": "**B: supraespinal, 1,5 cm a 2 cm da sua inserção.** O Campbell descreve esse como o local mais comum dos depósitos da tendinite calcária, dentro do supraespinal e afastado da tuberosidade maior (cap. 46).",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 46"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 46",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Calcific tendinitis",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
   ],
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0243": {
   "incorretas": {
@@ -3972,14 +3998,18 @@
  },
  "ombro-cotovelo-0345": {
   "incorretas": {
-   "B": "O infraespinhal fica atrás, do lado oposto ao subescapular, e é acometido nas lesões que avançam para trás a partir do supraespinhal.",
-   "C": "O supraespinhal pode ser acometido quando a lesão do subescapular se estende para cima, mas isso descreve a extensão da rotura do manguito, e não a associação característica, que é com o bíceps.",
-   "D": "O redondo menor fica atrás e embaixo, longe do subescapular, e costuma ser o último tendão a ceder nas lesões grandes posteriores."
+   "B": "**É um tendão posterior.** O infraespinal pode se romper junto com o supraespinal nas roturas posterossuperiores, mas não tem relação anatômica com o subescapular nem com a bainha do bíceps. A associação que a banca pede é anterior.",
+   "C": "**Participa da bainha, mas não é a associação clássica.** O supraespinal forma o teto da bainha do bíceps e pode se romper junto nas roturas anterossuperiores. A associação que o Campbell destaca, pela anatomia da bainha, é a do subescapular com a cabeça longa do bíceps.",
+   "D": "**Fica longe do subescapular.** O redondo menor é o tendão mais posterior e inferior do manguito. Romper o subescapular, anterior, não tem relação anatômica com ele."
   },
-  "conceito": "O tendão da **cabeça longa do bíceps** nasce no alto da glenoide, atravessa a articulação do ombro e faz uma curva quase em ângulo reto para descer por um canal na frente do úmero, o sulco intertubercular. Para fazer essa curva sem escapar, ele é segurado por uma espécie de tipoia chamada **polia do bíceps**.\n\nEssa polia é formada pelo ligamento glenoumeral superior, pelo ligamento coracoumeral e pelas fibras mais altas do tendão do **subescapular**, que formam a parede de dentro e o assoalho dela.\n\nQuando a parte de cima do subescapular rompe, a polia perde sua parede de dentro. O tendão do bíceps passa a escorregar para **dentro** (subluxação ou luxação medial), saindo do sulco. Fora do lugar, ele sofre atrito constante, se desgasta e pode acabar rompendo.\n\nPor isso existe uma regra clínica: **toda lesão do subescapular obriga a examinar o bíceps**, e todo bíceps instável obriga a examinar o subescapular. Na prática, o bíceps luxado para dentro é um sinal indireto de lesão do subescapular.\n\nNa artroscopia, existe um marcador para achar o subescapular retraído: o **sinal da vírgula**, um arco de tecido (restos da polia) que fica preso ao canto de cima do tendão rompido e aponta onde ele está.",
-  "correta": "Da cabeça longa do bíceps. As fibras de cima do subescapular formam a polia do bíceps; quando rompem, o tendão do bíceps escapa para dentro, sofre atrito e pode romper.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Imagine o tendão do bíceps entrando no sulco como um cabo num túnel. O teto do túnel é feito pelo supraespinal; o chão, pelo subescapular. Se o chão cede, o cabo escorrega.\n\n**A anatomia que o Campbell descreve.** Os tendões do **supraespinal e do subescapular** se unem numa **bainha em volta do tendão do bíceps** na entrada do sulco bicipital. O **teto** da bainha é uma parte do supraespinal, e o **assoalho**, uma lâmina do subescapular. Essa relação explica a **coexistência frequente das roturas do subescapular com lesões ou instabilidade da cabeça longa do bíceps** (cap. 46).\n\n**Na prática.** Diante de uma rotura do subescapular, olhe o bíceps: ele pode estar luxado medialmente, deslizando para dentro por cima do tendão roto. E, diante de um bíceps instável, examine o subescapular com lift-off, belly-press e bear hug.\n\n**As outras alternativas.** O infraespinal, o supraespinal isolado e o redondo menor são tendões do manguito superior e posterior; podem se romper com o subescapular nas roturas maciças, mas a associação anatômica direta, que a banca cobra, é com a cabeça longa do bíceps. O resumo Manguito rotador: exame, roturas e tratamento detalha a bainha.",
+  "correta": "**A: da cabeça longa do bíceps.** O subescapular forma o assoalho da bainha do bíceps na entrada do sulco, e por isso as roturas dele coexistem com frequência com lesões ou instabilidade da cabeça longa do bíceps (Campbell, cap. 46).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Anatomy and Biomechanics (biceps sheath)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0346": {
   "incorretas": {
@@ -4857,14 +4887,18 @@
  },
  "ombro-cotovelo-0406": {
   "incorretas": {
-   "A": "**Abdutor.** A paralisia do deltoide limita a abdução e a elevação, e não produz o gesto do corneteiro.",
-   "B": "**Teste de Jobe.** O supraespinal é avaliado pela elevação no plano da escápula com o polegar para baixo.",
-   "C": "**Rotador interno.** O redondo maior não faz rotação externa e não participa desse sinal."
+   "A": "**O deltoide não é o alvo do teste.** Ele eleva o braço, e a fraqueza dele aparece na abdução e na flexão, por exemplo depois de uma lesão do nervo axilar ou de uma desinserção na acromioplastia. No teste de PATTE, o deltoide só ajuda a manter o braço elevado; o que se mede é a rotação lateral.",
+   "B": "**O supraespinal tem o próprio teste.** É examinado pelo teste de JOBE, com o braço em abdução no plano da escápula e resistência à elevação. Ele também participa da rotação externa no início do movimento, mas não é o músculo isolado na posição do corneteiro.",
+   "C": "**O redondo maior faz o contrário.** É rotador interno e adutor do braço e não pertence ao manguito rotador. A semelhança do nome com o redondo menor é a armadilha da alternativa: os dois saem da borda lateral da escápula, mas trabalham em sentidos opostos."
   },
-  "conceito": "**O sinal do corneteiro.** Descrito por **Patte**, avalia o **redondo menor**, o rotador externo mais inferior do manguito. O paciente tenta levar a mão à boca. Sem o redondo menor, não consegue rodar externamente e compensa **abduzindo** o ombro, com o **cotovelo acima da mão**, como quem toca uma corneta. Uma variante é pedir que mantenha o braço em 90 graus de abdução e rotação externa: o braço cai para dentro (**drop sign**).\n\n**O peso prognóstico.** Com o corneteiro positivo, a lesão posterossuperior já avançou até o último rotador externo, geralmente com **infiltração gordurosa** alta do infraespinal e do redondo menor. O reparo tende a **falhar**. Na **artroplastia reversa**, a elevação volta, mas não a **rotação externa ativa**; por isso se associa a transferência do **grande dorsal** (com ou sem redondo maior), que devolve a capacidade de levar a mão à boca e à nuca.\n\n**Os testes do manguito, músculo a músculo.** **Supraespinal**: Jobe (lata vazia), drop arm. **Infraespinal**: rotação externa resistida com o braço junto ao corpo e **retardo em rotação externa** (lag sign). **Infraespinal e redondo menor** em abdução: **teste de Patte**. **Redondo menor**: **corneteiro**. **Subescapular**: lift-off, belly-press, bear-hug e retardo em rotação interna.\n\n**Os distratores.** O **deltoide** é avaliado pela abdução contra resistência e pela palpação do músculo; sua paralisia (lesão do axilar) impede a abdução, e não a rotação externa. O **redondo maior** é **rotador interno**, fora do manguito.\n\n**Na prova:** **corneteiro** = **redondo menor**; se positivo, a artroplastia reversa isolada não devolve a rotação externa.",
-  "correta": "**Redondo menor.** Sem ele, o paciente não roda externamente e precisa abduzir o ombro, elevando o cotovelo acima da mão, para levá-la à boca.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "**Direto:** o sinal do corneteiro é o teste de PATTE, e ele examina o **redondo menor**.\n\n**Como se faz.** Paciente de pé; o examinador eleva o braço a **90 graus no plano da escápula** e flete o **cotovelo a 90 graus**; pede-se a **rotação lateral** do ombro. Fraqueza ou dor tornam o teste positivo (Campbell, 14ª ed., cap. 46, Patte sign). O nome em inglês, hornblower, é o mesmo que o português traduziu como corneteiro.\n\n**Por que ele importa.** O Campbell lembra que o redondo menor foi por muito tempo visto como coadjuvante, mas que tem recebido mais atenção justamente quando os outros tendões falham. Numa rotura posterossuperior extensa, ele pode ser o último a segurar a rotação externa.\n\n**Os outros músculos das alternativas.** O deltoide é motor da elevação, avaliado pela força em abdução e flexão; o supraespinal, pelo teste de JOBE; o redondo maior é rotador interno e adutor, e não faz parte do manguito. O resumo Manguito rotador: exame, roturas e tratamento traz todos os testes.\n\n> **Na prova:** **corneteiro (PATTE)** = **redondo menor**; braço a 90 graus, cotovelo a 90, rotação externa contra resistência.",
+  "correta": "**D: redondo menor.** O sinal de PATTE, ou do corneteiro, avalia a força do redondo menor, com o braço a 90 graus no plano da escápula e o cotovelo fletido, pedindo rotação lateral (Campbell, cap. 46).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Patte (hornblower) sign",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0407": {
   "incorretas": {
@@ -4890,14 +4924,18 @@
  },
  "ombro-cotovelo-0409": {
   "incorretas": {
-   "A": "O ligamento glenoumeral médio segura o deslocamento anterior em abertura intermediária do braço e não faz parte da polia nem do sinal da vírgula.",
-   "B": "O ligamento coracoacromial fica fora da articulação, formando o teto do ombro com o acrômio. Não é visto de dentro da articulação e não forma a vírgula.",
-   "D": "O ligamento transverso do úmero cobre o sulco do bíceps mais abaixo e não participa do sinal da vírgula."
+   "A": "**Acerta o superior e troca o outro.** O glenoumeral superior participa da vírgula, mas o médio fica mais abaixo, na cápsula anterior, e limita a rotação externa nas faixas baixa e média de abdução. O parceiro do superior na alça medial é o coracoumeral.",
+   "B": "**O coracoacromial fica do lado de fora.** Ele forma o teto do arco coracoacromial, sobre o manguito, e o Campbell recomenda preservá-lo para evitar a subluxação anterossuperior. O coracoumeral está certo, mas sozinho não basta.",
+   "D": "**O transverso do úmero fecha o sulco.** Ele mantém o bíceps no sulco bicipital, mais abaixo; não é parte da alça medial da bainha que aparece como vírgula nas roturas do subescapular. O glenoumeral superior está certo, mas o parceiro é o coracoumeral."
   },
-  "conceito": "O tendão da cabeça longa do bíceps entra na articulação do ombro e faz uma curva fechada para descer pelo sulco na frente do úmero. O que o segura nessa curva é a **polia do bíceps**, formada pelo **ligamento glenoumeral superior**, pelo **ligamento coracoumeral** e pelas fibras de cima do tendão do **subescapular**.\n\nEsses dois ligamentos se prendem no canto de cima e de fora do tendão do subescapular. Quando o subescapular rompe e retrai para dentro, ele leva junto esse conjunto de ligamentos. Na artroscopia, esse tecido aparece como um arco espesso em forma de **vírgula**, cuja ponta aponta exatamente para o canto do tendão retraído. É o **sinal da vírgula** (*comma sign*).\n\nNa prática, ele funciona como um fio guia: o cirurgião encontra a vírgula e a segue até o subescapular, mesmo quando o tendão está bem retraído.\n\nDois pontos importantes. O sinal é formado por estruturas da frente do ombro e indica lesão do **subescapular**; se aparece numa lesão do supraespinhal, é sinal de que o subescapular também está envolvido. E a mesma anatomia explica por que lesões do subescapular costumam vir com instabilidade do bíceps: sem a parede de dentro da polia, o tendão do bíceps escapa para dentro, sofre atrito e pode romper.",
-  "correta": "Glenoumeral superior e coracoumeral. São os ligamentos da polia do bíceps que se prendem no subescapular e retraem junto com ele, formando a vírgula.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "A vírgula da artroscopia do ombro é feita de dois ligamentos, e os dois vivem no mesmo lugar: o intervalo rotador, entre o supraespinal e o subescapular.\n\n**A resposta do Campbell.** O tecido da vírgula representa a **alça medial da bainha do bíceps**, formada pelo **ligamento coracoumeral** e pelo **ligamento glenoumeral superior** (cap. 52). Ele aparece nas **roturas retraídas do subescapular** e serve para encontrar e tracionar o tendão.\n\n**O intervalo rotador.** É a região triangular entre o supraespinal e o subescapular, e contém o **ligamento coracoumeral**, o **tendão do bíceps** e o **glenoumeral superior** (cap. 46). É desse conteúdo que sai a alça medial, que segura o bíceps no lugar; por isso a rotura do subescapular coexiste com frequência com a instabilidade do bíceps.\n\n**Por que os outros ligamentos não entram.** O **coracoacromial** forma o teto do arco coracoacromial, acima do manguito; o **glenoumeral médio** fica mais abaixo, na cápsula anterior; o **transverso do úmero** fecha o sulco bicipital. O resumo Manguito rotador: exame, roturas e tratamento traz o intervalo e a vírgula.",
+  "correta": "**C: glenoumeral superior e coracoumeral.** São os dois ligamentos que formam a alça medial da bainha do bíceps, o tecido da vírgula, segundo o Campbell (cap. 52).",
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 52 (Arthroscopy of the Upper Extremity), subscapularis tears (comma tissue)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0410": {
   "incorretas": {
@@ -5563,17 +5601,19 @@
  },
  "ombro-cotovelo-0458": {
   "incorretas": {
-   "A": "**O axilar percorre o espaço quadrangular.** Seu risco é mais associado a procedimentos próximos ao colo umeral e ao deltoide, não à tração do coto supraespinal.",
-   "B": "**Não existe nervo “supraespinal” como nome anatômico.** O músculo supraespinal é inervado pelo supraescapular.",
-   "C": "**Os nervos subescapulares suprem o subescapular e o redondo maior.** Eles não são a estrutura tensionada ao avançar o supraespinal retraído."
+   "A": "**É o nervo do deltoide.** O nervo axilar corre profundo ao deltoide e está em risco na acromioplastia e nas vias laterais, e também na transferência do grande dorsal, junto à ponta proximal do tendão. Não é o nervo esticado pela tração medial do supraespinal.",
+   "B": "**Não existe um nervo com esse nome.** O supraespinal é inervado pelo nervo supraescapular. A alternativa joga com a semelhança entre os nomes do músculo e do nervo, uma confusão comum.",
+   "C": "**Está do lado anterior da escápula.** Os nervos subescapulares inervam o subescapular e o redondo maior e ficam longe do trajeto da tração do supraespinal. O nervo em risco, segundo o Campbell, é o supraescapular, junto do colo da escápula."
   },
-  "conceito": "**O nervo acompanha o manguito retraído.** O nervo supraescapular cruza a incisura supraescapular, inerva o supraespinal e depois contorna a espinha da escápula rumo ao infraespinal. Numa ruptura extensa e retraída, mobilizar ou tracionar fortemente o coto do supraespinal em direção à tuberosidade maior pode tensionar esse nervo, especialmente em seus pontos de fixação anatômica.\n\n**O limite é biológico, não um número universal.** O risco depende da retração, da qualidade do tendão e das liberações realizadas. Por isso, não basta puxar até o coto alcançar o osso: é preciso avaliar se o reparo ficará sob tensão excessiva e considerar alternativas quando a mobilização segura não é possível. O nervo axilar e os nervos subescapulares pertencem a trajetos e músculos diferentes.",
-  "correta": "**D: nervo supraescapular.** É o nervo funcionalmente ligado ao supraespinal e pode sofrer tração durante a mobilização de um manguito muito retraído.",
+  "conceito": "O tendão retraído do supraespinal não chega à tuberosidade, e o cirurgião puxa. Até onde dá para puxar sem pagar caro? O Campbell responde com um número.\n\n**O número.** O **nervo supraescapular** fica a apenas **1,8 cm da borda posterossuperior da glenoide**; por isso, a **mobilização do manguito não deve passar disso**. Se for preciso mais, faz-se a liberação da cápsula (cap. 46, Complications). Na técnica de reparo aberto, o livro repete: ao mobilizar, evite lesar o nervo supraescapular.\n\n**Por que o nervo sofre.** A tração no coto proximal do supraespinal se transmite medialmente, em direção ao colo da escápula, por onde o nervo passa. Lesá-lo tiraria força justamente dos músculos do reparo, o supraespinal e o infraespinal.\n\n**Os nervos das outras alternativas.** O **axilar** é o nervo do deltoide, em risco na acromioplastia e nas vias que mexem no deltoide; o Campbell diz que a perda do deltoide anterior é a pior complicação comum da acromioplastia. Os **subescapulares** inervam o subescapular e o redondo maior, na frente da escápula. E o \"nervo supraespinal\" não existe com esse nome: o nervo do supraespinal é o supraescapular. O resumo Manguito rotador: exame, roturas e tratamento reúne as complicações.\n\n> **Na prova:** tração do supraespinal = nervo **supraescapular**, a **1,8 cm** da borda posterossuperior da glenoide.",
+  "correta": "**D: supraescapular.** O Campbell alerta que o nervo supraescapular fica a 1,8 cm da borda posterossuperior da glenoide e que a mobilização do manguito não deve ultrapassar essa distância (cap. 46).",
   "referencias": [
-   "Canale & Beaty: Campbell’s Operative Orthopaedics, 10th Ed., p. 2350 (referência indicada na prova TARO 2013, questão 27)"
+   "Canale & Beaty: Campbell’s Operative Orthopaedics, 10th Ed., p. 2350 (referência indicada na prova TARO 2013, questão 27)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Complications (suprascapular nerve 1.8 cm)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0459": {
   "incorretas": {
@@ -5705,17 +5745,19 @@
  },
  "ombro-cotovelo-0466": {
   "incorretas": {
-   "A": "**Infraespinal ocupa a parte posterior do manguito.** Não forma a polia anterior do bíceps responsável pela vírgula.",
-   "B": "**Supraespinal pode ter lesão associada.** A vírgula, porém, marca a borda do subescapular retraído, não uma ruptura isolada do supraespinal.",
-   "D": "**Redondo menor também é posterior.** Seu trajeto não produz o sinal artroscópico descrito na região da polia do bíceps."
+   "A": "**É do manguito posterior.** O infraespinal se retrai para trás, e a mobilização dele envolve outros cuidados, como o nervo supraescapular. A vírgula é uma estrutura anterior, ligada ao intervalo rotador e ao subescapular.",
+   "B": "**O supraespinal forma o teto da bainha, não a vírgula.** Ele participa da bainha do bíceps, mas o tecido da vírgula é a alça medial dessa bainha, presa ao subescapular. Numa rotura retraída do supraespinal, a referência é outra.",
+   "D": "**Fica longe da bainha do bíceps.** O redondo menor é o tendão mais posterior e inferior do manguito, examinado pelo teste de PATTE. Não tem relação com o intervalo rotador nem com o tecido da vírgula."
   },
-  "conceito": "**Uma pista para achar o subescapular.** Numa ruptura retraída, o tendão do subescapular pode desaparecer da visão artroscópica habitual ao migrar medialmente. Um remanescente da polia do bíceps, formado sobretudo por fibras dos ligamentos coracoumeral e glenoumeral superior, permanece preso à borda superolateral do tendão e desenha uma vírgula. Seguir esse tecido ajuda a localizar o coto para liberá-lo e avaliar a possibilidade de reparo no tubérculo menor.\n\n**A polia e o bíceps devem ser examinados juntos.** A lesão do subescapular frequentemente compromete a contenção da cabeça longa do bíceps, que pode subluxar ou luxar medialmente. O sinal não indica uma ruptura isolada do supraespinal ou dos tendões posteriores do manguito; sua utilidade específica é apontar para o subescapular retraído.",
-  "correta": "**C: subescapular.** O sinal da vírgula é o tecido da polia preso à sua borda superolateral, visível mesmo quando o tendão está retraído.",
+  "conceito": "Na artroscopia, uma rotura antiga do subescapular parece ter desaparecido: o tendão recuou para baixo do coracoide. Mas ficou uma pista, uma faixa de tecido em forma de vírgula presa ao canto superior dele. É o sinal da vírgula.\n\n**O que o Campbell descreve.** O **\"tecido da vírgula\"** representa a **alça medial da bainha do bíceps**, formada pelo **ligamento coracoumeral** e pelo **ligamento glenoumeral superior**. Ele é encontrado em geral nas **roturas retraídas do subescapular** e ajuda na mobilização: o cirurgião pode passar um ponto de tração dentro dele ou na parte superolateral do tendão (cap. 52).\n\n**Por que ele aparece no subescapular.** O subescapular forma o **assoalho da bainha do bíceps** na entrada do sulco, e o supraespinal, o teto. Quando o subescapular se rompe e retrai, a alça medial da bainha, presa a ele, vai junto, e desenha a vírgula.\n\n**Na prática.** Às vezes é preciso o artroscópio de 70 graus para ver bem; o subescapular é reparado **antes** da rotura posterossuperior. Os autores tentam preservar o tecido da vírgula, embora um estudo recente mostre que desbridá-lo não piora o resultado. O resumo Manguito rotador: exame, roturas e tratamento traz a anatomia.",
+  "correta": "**C: subescapular.** O tecido da vírgula, alça medial da bainha do bíceps formada pelo coracoumeral e pelo glenoumeral superior, é encontrado nas roturas retraídas do subescapular, segundo o Campbell (cap. 52).",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 52"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 52",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 52 (Arthroscopy of the Upper Extremity), subscapularis tears (comma tissue)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0467": {
   "incorretas": {
@@ -5995,20 +6037,22 @@
  },
  "ombro-cotovelo-0479": {
   "incorretas": {
-   "A": "**Supraespinal participa da polia, sobretudo lateralmente.** Não é a associação mais característica quando o bíceps luxa para medial.",
-   "B": "**Infraespinal é posterior.** Não forma a contenção medial do bíceps na entrada do sulco.",
-   "D": "**Redondo menor também é posterior.** Sua rotura não explica a luxação medial do tendão bicipital."
+   "A": "**Forma o teto, não o assoalho.** O supraespinal compõe a parte de cima da bainha do bíceps, e a rotura dele pode desestabilizar o tendão para cima. Para o bíceps sair do sulco para dentro, quem precisa ter cedido é o subescapular, que forma o lado medial e o assoalho.",
+   "B": "**É um tendão posterior.** O infraespinal não participa da bainha do bíceps. A luxação medial do bíceps é um problema anterior, ligado ao subescapular.",
+   "D": "**Fica longe do sulco bicipital.** O redondo menor é o tendão mais posterior e inferior do manguito. Não tem papel na contenção do bíceps."
   },
   "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10044783/",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10939872/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10939872/",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Anatomy and Biomechanics (biceps sheath)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
   ],
-  "conceito": "**Bíceps deslocado medialmente é uma pista para examinar o subescapular.** A cabeça longa do bíceps é contida na entrada do sulco intertubercular pela polia formada por ligamentos e fibras do manguito. Uma falha da contenção medial pode coexistir com rotura das fibras superiores do subescapular. A associação é frequente, mas não obrigatória: uma polia lesada pode permitir instabilidade do bíceps sem rotura completa desse tendão.",
-  "correta": "**C, subescapular (resposta provável).** É o tendão mais diretamente relacionado à contenção medial do bíceps e a lesão associada que deve ser procurada.",
+  "conceito": "Para o bíceps sair do sulco para dentro, alguma coisa precisa ter cedido no lado de dentro. E o lado de dentro do sulco, na entrada, é feito pelo subescapular.\n\n**A bainha do bíceps.** O Campbell explica que o supraespinal e o subescapular formam uma **bainha em volta do tendão do bíceps** na entrada do sulco bicipital: o **teto** vem do supraespinal, e o **assoalho**, de uma lâmina do **subescapular**. É por isso que as **roturas do subescapular coexistem com frequência com lesões ou instabilidade da cabeça longa do bíceps** (cap. 46). Na artroscopia, a alça medial dessa bainha, feita do coracoumeral e do glenoumeral superior, aparece como o tecido da vírgula nas roturas retraídas.\n\n**O raciocínio inverso.** A pergunta parte do bíceps luxado medialmente e pede o tendão roto. Se o bíceps escorregou para dentro, o assoalho medial, o subescapular, provavelmente se rompeu.\n\n**Sobre esta questão.** A banca não divulgou o gabarito, e o acervo mantém a resposta provável C, que é a que a anatomia do Campbell sustenta. O resumo Manguito rotador: exame, roturas e tratamento detalha a bainha e a vírgula.",
+  "correta": "**C: subescapular.** É a resposta provável para esta questão sem gabarito oficial: o subescapular forma o assoalho da bainha do bíceps, e a rotura dele se associa com frequência à instabilidade da cabeça longa do bíceps, segundo o Campbell (cap. 46).",
   "provavel": "C",
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0480": {
   "conceito": "**Tendinite calcária do ombro.** É a deposição de cristais de hidroxiapatita de cálcio dentro do tendão do manguito rotador, principalmente do **supraespinal**, perto da inserção. É mais comum em mulheres de 30 a 60 anos.\n\n**Fases (Uhthoff).**\n1. **Pré-calcificação**: metaplasia fibrocartilaginosa do tendão.\n2. **Calcificação**: fase **formativa** (depósito duro, em giz, pouco doloroso) e fase de **repouso**.\n3. **Reabsorção**: o cálcio fica pastoso, há reação inflamatória intensa e **dor aguda** muito forte; a calcificação pode drenar para a bursa.\n4. **Pós-calcificação**: reparo do tendão.\n\nÉ uma doença **autolimitada** na maioria dos casos.\n\n**Tratamento.** Conservador na maioria: analgésicos, anti-inflamatórios, fisioterapia, infiltração subacromial. Para dor persistente: ondas de choque, **barbotagem guiada por ultrassom** (lavagem com agulha). Cirurgia (remoção artroscópica do depósito, às vezes com acromioplastia) nos casos refratários.\n\n**Dor persistente após a cirurgia.** A causa mais citada é a **capsulite adesiva (ombro congelado) secundária**: a dor, a imobilização e a inflamação pós-operatória favorecem a rigidez, com perda de movimento ativo e passivo, principalmente da rotação externa. Por isso, a reabilitação precoce com ganho de amplitude é fundamental. Outras causas: remoção incompleta do cálcio, lesão do manguito pela ressecção e, raramente, infecção.\n\n> Dor persistente e rigidez após cirurgia da tendinite calcária: pense em capsulite adesiva.",
@@ -6028,20 +6072,22 @@
  },
  "ombro-cotovelo-0481": {
   "incorretas": {
-   "A": "**Artéria axilar está inferior e medial.** Não é a estrutura diretamente ameaçada pelo avanço do supraespinal.",
-   "B": "**Artéria toracoacromial tem trajeto anterior.** Não é o limite anatômico mais característico dessa mobilização.",
-   "D": "**Nervos subescapulares suprem outros músculos.** A tração do supraespinal coloca em foco o nervo supraescapular."
+   "A": "**Fica longe do campo da mobilização.** A artéria axilar está na axila, abaixo do coracoide e do peitoral menor, e preocupa nas cirurgias anteriores e nas fraturas do úmero proximal. A tração do supraespinal acontece em cima e atrás.",
+   "B": "**Também está na frente.** A artéria toracoacromial nasce da axilar e se ramifica na região do coracoide e do acrômio anterior, encontrada no acesso deltopeitoral e na acromioplastia aberta. Não é a estrutura ameaçada pela mobilização medial do supraespinal.",
+   "D": "**Inerva outros músculos.** Os nervos subescapulares correm na face anterior da escápula, para o subescapular e o redondo maior. O nervo que contorna o colo da escápula, ao alcance da tração do supraespinal, é o supraescapular."
   },
   "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/15889025/",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC4596187/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC4596187/",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Complications (suprascapular nerve 1.8 cm)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
   ],
-  "conceito": "**O limite anatômico da mobilização do supraespinal é o nervo que o inerva.** Em roturas extensas e retraídas, avançar lateralmente o músculo e seu tendão para o reparo pode tensionar os ramos do nervo supraescapular, fixados no trajeto pelas incisuras supraescapular e espinoglenoidal. Não há um limite universal em centímetros aplicável a todo ombro: estudos anatômicos e clínicos apontam riscos diferentes. A ideia da questão é reconhecer a estrutura em risco e evitar tração excessiva durante a liberação.",
-  "correta": "**C, nervo supraescapular (resposta provável).** Seus ramos motores alcançam o supraespinal e podem ser tensionados pela mobilização ampla.",
+  "conceito": "É a mesma pergunta do TARO 2013, feita cinco anos antes e com outras alternativas. A resposta vem do mesmo trecho do Campbell.\n\n**O limite.** Na mobilização do manguito, o **nervo supraescapular**, que fica a apenas **1,8 cm da borda posterossuperior da glenoide**, é o que está em risco; por isso a mobilização não deve passar dessa distância, e a cápsula é liberada quando é preciso mais (Campbell, 14ª ed., cap. 46). Durante a técnica aberta, o livro repete a recomendação de evitar a lesão desse nervo.\n\n**As alternativas vasculares.** A **artéria axilar** e a **toracoacromial** estão na frente e embaixo, no caminho do acesso deltopeitoral e da região do coracoide, longe da tração medial do supraespinal. O **nervo subescapular** inerva o subescapular e o redondo maior, na face anterior da escápula.\n\n**Sobre esta questão.** A banca não divulgou o gabarito; o acervo mantém a resposta provável C, que é a que o Campbell sustenta, como registra o alerta. O resumo Manguito rotador: exame, roturas e tratamento reúne as complicações do reparo.",
+  "correta": "**C: do nervo supraescapular.** É a resposta provável para esta questão sem gabarito oficial: o Campbell diz que o nervo supraescapular está a 1,8 cm da borda posterossuperior da glenoide e que a mobilização do manguito não deve ir além disso (cap. 46).",
   "provavel": "C",
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0482": {
   "incorretas": {
@@ -7679,19 +7725,21 @@
   "conferido": false
  },
  "ombro-cotovelo-0565": {
-  "conceito": "O manguito rotador estabiliza dinamicamente a cabeça umeral. Uma ruptura anterossuperior envolve o componente anterior, especialmente o subescapular, associado em diferentes extensões ao supraespinhal. A perda desse componente compromete a rotação interna e o equilíbrio de forças que mantém a cabeça centrada na glenoide.\n\nNa transferência tendinosa, um músculo funcional é redirecionado para substituir parte da ação perdida. Para a lesão anterossuperior irreparável, a resposta clássica entre as opções é o peitoral maior, um rotador interno que pode ser transferido para compensar a deficiência anterior. Já o grande dorsal é classicamente lembrado para rupturas posterosuperiores, situação funcional diferente.\n\nIrreparabilidade não se define apenas por tamanho: retração, infiltração gordurosa, qualidade do tendão e possibilidade de mobilização importam. A escolha atual também depende de artropatia, centralização da cabeça, idade, demanda e alternativas de reconstrução ou artroplastia. O texto usa enxerto, mas descreve funcionalmente uma transferência tendinosa, que mantém uma unidade musculotendínea ativa. O gabarito não deve ser aplicado como escolha universal para todo ombro irreparável.",
-  "correta": "O peitoral maior pode ser transferido para compensar a deficiência do subescapular e do setor anterossuperior. Sua função de rotação interna fornece o fundamento biomecânico da escolha. Os resultados dependem de seleção, técnica e estado articular; cabeça descentralizada e artropatia avançada limitam a aplicação dessa solução.",
+  "conceito": "Se a rotura irreparável é na frente, o músculo emprestado vem da frente também: o peitoral maior, que como o subescapular roda o braço para dentro.\n\n**A transferência do peitoral maior.** Para as roturas **anterossuperiores**, do **subescapular e do supraespinal**, o Campbell descreve a transferência do peitoral maior, com uma condição: o **arco coracoacromial deve estar intacto** (cap. 46).\n\n**A técnica, em quatro passos.**\n1. A porção **esternocostal** é liberada da inserção comum no úmero e dissecada da porção **clavicular**, mais superficial, sem lesar o seu nervo.\n2. Ela é passada **profunda à porção clavicular** e **sob o tendão conjunto** até a **tuberosidade menor**.\n3. O **nervo musculocutâneo** é identificado e protegido, e o tendão passa **superficial a ele**.\n4. Passar sob o tendão conjunto melhora os vetores posterior e inferior da transferência.\n\nO livro acrescenta que a mesma transferência serve para deficiências anteriores e instabilidade depois de artroplastia.\n\n**Por que \"enxerto\".** A banca chamou de enxerto o tendão transferido; o conceito é o de transferência de um músculo vivo, com o seu nervo, e não de um enxerto livre. O Campbell, aliás, diz que **enxertos livres** tiveram pouco sucesso e não são recomendados.\n\n**E o grande dorsal?** É a transferência para o lado oposto, a rotura **posterossuperior**. O resumo Manguito rotador: exame, roturas e tratamento compara as duas.",
+  "correta": "**B: Peitoral maior.** Para as roturas irreparáveis anterossuperiores, o Campbell descreve a transferência da porção esternocostal do peitoral maior, passada sob o tendão conjunto até a tuberosidade menor, com o arco coracoacromial intacto (cap. 46).",
   "incorretas": {
-   "A": "O grande dorsal é uma opção clássica para lesões irreparáveis posterosuperiores, com seleção apropriada do subescapular e dos demais estabilizadores. A pergunta trata do setor anterior, cujo déficit funcional é diferente. Existem técnicas contemporâneas para outras indicações, mas elas não substituem a associação tradicional cobrada entre anterossuperior e peitoral maior.",
-   "C": "O redondo maior é rotador interno e adutor, mas não é a transferência isolada clássica escolhida nesta questão. Pode integrar outras reconstruções, por exemplo associada ao grande dorsal em situações selecionadas de deficiência de rotação externa. Compartilhar uma ação muscular não significa ter o mesmo vetor, excursão e indicação cirúrgica.",
-   "D": "O tendão conjunto inclui a cabeça curta do bíceps e o coracobraquial. Ele participa de técnicas que têm outras finalidades, incluindo procedimentos de estabilidade do ombro. Não corresponde ao substituto ativo clássico do subescapular apresentado entre as opções. A indicação depende do problema funcional, não apenas de existir um tendão próximo."
+   "A": "**É a transferência para a rotura posterossuperior.** O grande dorsal repõe o supraespinal e o infraespinal, rotadores externos e elevadores; é fixado no úmero superolateral. Para o subescapular, rotador interno anterior, o músculo transferido é o peitoral maior.",
+   "C": "**Não é a transferência descrita.** O redondo maior é rotador interno e adutor, inserido perto do grande dorsal, mas o Campbell não o descreve como opção para a rotura anterossuperior. A alternativa aproveita a vizinhança com o grande dorsal.",
+   "D": "**O tendão conjunto é o caminho, e não o enxerto.** Na técnica descrita, o peitoral maior é passado por baixo do tendão conjunto, o que melhora o vetor da transferência. O próprio tendão conjunto, do coracobraquial e da cabeça curta do bíceps, não é transferido."
   },
   "referencias": [
    "Long-Term Outcome After Pectoralis Major Transfer for Irreparable Anterosuperior Rotator Cuff Tears. https://pubmed.ncbi.nlm.nih.gov/28145955/",
-   "Tendon transfers for irreparable rotator cuff tears: An update. https://pubmed.ncbi.nlm.nih.gov/28461910/"
+   "Tendon transfers for irreparable rotator cuff tears: An update. https://pubmed.ncbi.nlm.nih.gov/28461910/",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46 (Shoulder and Elbow Injuries; Robert H. MILLER III, Frederick M. AZAR e Thomas W. THROCKMORTON), Massive and irreparable tears: pectoralis major transfer",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0566": {
   "conceito": "O tendão distal do bíceps se insere na tuberosidade radial e transmite força para flexão do cotovelo e, sobretudo, supinação. Sua ruptura completa pode passar despercebida se a deformidade for pequena ou se a aponeurose bicipital permanecer íntegra. A palpação precisa distinguir o tendão verdadeiro de outras estruturas fibrosas.\n\nNo Hook test, ou teste do gancho, o cotovelo fica fletido e o paciente realiza supinação ativa, tensionando o tendão. O examinador introduz o indicador pelo lado lateral, de lateral para medial, tentando enganchá-lo por baixo do cordão tendíneo. Não conseguir enganchar um tendão identificável sugere ruptura completa.\n\nA entrada medial pode encontrar a aponeurose bicipital, chamada lacertus fibrosus, e produzir uma falsa impressão de continuidade. A supinação passiva também não reproduz a ativação muscular padronizada. O teste não tem sensibilidade perfeita em todas as populações, especialmente em rupturas parciais ou com estruturas adjacentes preservadas; história, comparação contralateral e imagem quando indicada complementam o exame.",
@@ -7803,20 +7851,22 @@
   "alerta": "Gabarito do material: D. A proporção de 50% é um dado didático aproximado e depende do denominador epidemiológico; não é prevalência populacional."
  },
  "ombro-cotovelo-0573": {
-  "conceito": "Ellman classifica lesões parciais pela localização e pela profundidade. A letra identifica superfície articular, bursal ou intersticial; o grau representa a profundidade: I menor que 3 mm, II de 3 a 6 mm e III maior que 6 mm. Medir profundidade não é medir extensão anteroposterior nem retração do tendão.\n\nComo o sistema pressupõe uma espessura aproximada de 10 a 12 mm, esses graus são frequentemente relacionados a menos de 25%, 25%-50% e mais de 50% de espessura. Essa correspondência não é exata para todos os tendões. O grau III é uma lesão de alta profundidade e pode influenciar a escolha terapêutica, mas sintomas, qualidade tecidual e resposta ao tratamento também importam.",
-  "correta": "Mais de 6 mm é o corte em profundidade da classificação original e a resposta assinalada. O valor diferencia o grau III do II. Ele deve ser aplicado à profundidade da lesão, e não ao seu comprimento sobre a superfície do tendão.",
+  "conceito": "A classificação de ELLMAN usa milímetros, e o Campbell traduz os milímetros em porcentagem. Esta questão fica justamente na fronteira entre as duas formas de dizer a mesma coisa, e o alerta explica por quê.\n\n**ELLMAN, como o Campbell apresenta.** Roturas parciais **articulares (A)**, **bursais (B)** ou **intratendíneas (C)**, de **grau 1** se envolvem **3 mm ou menos**, **grau 2** de **3 a 6 mm** e **grau 3** se envolvem **mais de 6 mm** de tendão (cap. 52, Fig. 52.34).\n\n**A conversão.** Na técnica de reparo das roturas articulares, o livro diz que **uma rotura de mais de 6 mm de profundidade indica uma lesão de 50% da espessura** (Technique 52.20). Por isso o grau 3, acima de 6 mm, corresponde na prática às roturas de mais da metade do tendão, as que a maioria dos cirurgiões repara.\n\n**Por que há duas respostas defensáveis.** A alternativa A traz o critério de ELLMAN em milímetros; a C, a porcentagem equivalente. O acervo mantém a resposta provável A, a definição literal da classificação, com a ressalva do alerta. O resumo Manguito rotador: exame, roturas e tratamento traz a tabela.\n\n> **Na prova:** ELLMAN 3 = **mais de 6 mm**, o que equivale a cerca de **50%** da espessura.",
+  "correta": "**A: 6 mm.** É a resposta provável que o acervo mantém para esta questão sem gabarito oficial: o grau 3 de ELLMAN é a rotura parcial de mais de 6 mm, como descreve o Campbell; a alternativa C traduz o mesmo limite em porcentagem, como registra o alerta (cap. 52).",
   "incorretas": {
-   "B": "Oito milímetros pode representar uma lesão de grau III, mas não é o limite inferior que o define. Uma rotura com 7 mm já se enquadra nesse grau. A opção troca um exemplo possível por um critério classificatório.",
-   "C": "Mais de 50% de espessura é a correspondência proporcional usual de grau III. Portanto, essa alternativa também é defensável se o enunciado aceitar o critério percentual. A questão não oferece resposta inequivocamente única; não se deve ensinar que uma lesão acima de metade da espessura é grau II.",
-   "D": "Mais de 75% também descreve uma lesão profunda, porém não é o corte mínimo do grau III. Exigi-lo deixaria lesões entre 50% e 75% fora do grupo de alta profundidade. A questão procura o limiar, e não a maior gravidade possível dentro dele."
+   "B": "**Não é o limite da classificação.** ELLMAN usa os cortes de 3 e de 6 mm; não existe o corte de 8 mm. A alternativa aproveita a ideia de que o grau 3 é o mais profundo para oferecer um número maior.",
+   "C": "**Diz o mesmo limite com outra régua.** O Campbell afirma que mais de 6 mm de profundidade indica uma lesão de 50% da espessura. Por isso esta alternativa também descreve o grau 3, e a questão fica ambígua, como registra o alerta. A definição literal de ELLMAN é em milímetros, e o acervo mantém a resposta A.",
+   "D": "**Exagera a profundidade.** Setenta e cinco por cento da espessura também é grau 3, mas não é o limite que define o grau. O corte que separa o grau 3 é o de mais de 6 mm, ou cerca de metade da espessura."
   },
   "referencias": [
-   "Classifications in Brief: The Ellman and Snyder Classifications of Partial-thickness Rotator Cuff Tears. https://pmc.ncbi.nlm.nih.gov/articles/PMC11827997/"
+   "Classifications in Brief: The Ellman and Snyder Classifications of Partial-thickness Rotator Cuff Tears. https://pmc.ncbi.nlm.nih.gov/articles/PMC11827997/",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 52 (Arthroscopy of the Upper Extremity), Partial-thickness rotator cuff tears (Ellman, Fig. 52.34; Technique 52.20)",
+   "Biblioteca OrtoQuestões, resumo Manguito rotador: exame, roturas e tratamento (campbell14-manguito-rotador)"
   ],
-  "geradoEm": "2026-10-07",
   "conferido": false,
   "provavel": "A",
-  "alerta": "Questão ambígua: o material assinala A (>6 mm), mas C (>50% da espessura) também corresponde habitualmente ao grau III. A relação percentual depende da espessura do tendão."
+  "alerta": "Questão ambígua: o material assinala A (>6 mm), mas C (>50% da espessura) também corresponde habitualmente ao grau III. A relação percentual depende da espessura do tendão.",
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0574": {
   "conceito": "Wright e Cofield descrevem fraturas humerais após artroplastia pela relação com a ponta da haste. A classificação utiliza A, B e C; a questão chama o terceiro grupo de tipo 3. A e B se localizam ao redor da ponta, com diferença na extensão proximal; C situa-se distalmente à haste.\n\nNa publicação original, as fraturas C envolviam a diáfise distal ao implante e se estendiam à metáfise distal, correspondendo à redação assinalada. Na utilização contemporânea, o ponto definidor permanece a localização distal à ponta. Para tratar, é necessário avaliar adicionalmente estabilidade da haste, alinhamento, reserva óssea e viabilidade de fixação. A letra sozinha não determina revisão do componente.",
