@@ -56,9 +56,9 @@ export const LUGARES: Record<IdLugar, Lugar> = {
   correio: { id: 'correio', pagina: 'Indique e ganhe', destino: '/indicar', texto: 'Chame um colega e os dois ganham dias.', exterior: true, mascote: 'acenar',
     segredo: { x: 260, y: 60, w: 50, h: 40, fala: 'Carta para o R1: "Estude o Salter-Harris". Entregue.' }, saidas: ['guilda', 'bau', 'quarto'] },
   guilda: { id: 'guilda', pagina: 'Liga da residência', destino: '/ligas', texto: 'O ranking privado do seu serviço.', exterior: false, mascote: 'acenar',
-    segredo: { x: 240, y: 10, w: 60, h: 50, fala: 'O estandarte do seu serviço está torto. Alguém arruma isso.' }, saidas: ['arena', 'correio', 'trofeus'] },
+    segredo: { x: 151, y: 33, w: 18, h: 64, fala: 'Tô aqui desde o R1. Ninguém me deu alta.' }, saidas: ['arena', 'correio', 'trofeus'] },
   conselho: { id: 'conselho', pagina: 'Painel do administrador', destino: '/admin', texto: 'Assinaturas, números e cartas do site.', exterior: false, mascote: 'ler',
-    segredo: { x: 240, y: 80, w: 60, h: 40, fala: 'O livro-razão fecha. Pode dormir tranquilo, Tales.' }, saidas: ['quarto', 'correio', 'arena'] },
+    segredo: { x: 396, y: 72, w: 56, h: 56, fala: 'Senha do cofre: o ângulo de Böhler. Entre 20 e 40, boa sorte.' }, saidas: ['quarto', 'correio', 'arena'] },
 }
 
 /** Ordem do mapa da vila (do centro para as bordas). */
