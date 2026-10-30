@@ -105,6 +105,22 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 - **Comentários oficiais:** 23.
 - **Pendentes:** Vancouver, infecção, artrodese, recapeamento e as questões antigas sem gabarito.
 
+## Ciclos 9 a 13
+
+| Ciclo | Tema | Fonte | PR | Simulados | Oficiais |
+| --- | --- | --- | --- | --- | --- |
+| 9 | Outras malformações congênitas (mão) | Green 8ª ed., caps. 35 a 38 | 674 | mao-2582 a 2591 | 20 |
+| 10 | Instabilidade anterior do ombro | Campbell 14ª ed., cap. 47 | 675 | ombro-cotovelo-0712 a 0719 | 15 |
+| 11 | Anatomia da coluna | Campbell 14ª ed., cap. 37; Netter cap. 2 | 676 | coluna-0564 a 0571 | 8 |
+| 12 | Anatomia do pé e tornozelo | Netter caps. 9 e 10; Hoppenfeld | 677 | pe-tornozelo-0425 a 0430 | 14 |
+| 13 | Displasia do desenvolvimento do quadril | Tachdjian 6ª ed., cap. 13 | 678 | pediatria-1419 a 1426 | 24 |
+
+**O que mudou no método.**
+- Desde o ciclo 8, cada comentário oficial tem o gabarito conferido contra o acervo antes de ser aplicado. O conversor recusa o lote se a letra da correta não bater com o gabarito, ou se faltar alguma alternativa.
+- Divergências entre o livro e a banca ficam em alerta, com o gabarito preservado.
+- `testar_sincronia_aparelhos` falha perto da meia-noite, por causa dos relógios simulados de -7 e +9 minutos. Basta rodar de novo depois das 00h10.
+- `aplicar_comentarios.py` teve um erro transitório do Windows (Errno 22) ao gravar o arquivo. Repetir resolveu.
+
 ## Melhorias de sistema feitas no caminho
 
 | PR | Melhoria |
