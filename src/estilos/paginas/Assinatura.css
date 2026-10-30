@@ -566,11 +566,15 @@
 .vd-bib__passos h3 { margin: 0; font-size: 1.05rem; }
 .vd-bib__passos p { margin: 0.3rem 0 0; color: var(--texto-2); line-height: 1.55; }
 /* O cartão como ele aparece no leitor: papel, com a sombra de degrau da temporada. */
-.vd-bib__cartao { margin: 0; padding: 1.4rem 1.4rem 1rem; border-radius: 4px; background: #fbf7ee; color: #1f2523; box-shadow: 0 0 0 2px #c99a3c, 7px 7px 0 2px rgba(154, 107, 18, 0.28); transform: rotate(-0.6deg); }
-.vd-bib__texto { margin: 0 0 1rem; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.04rem; line-height: 1.65; }
+.vd-bib__cartao { display: grid; margin: 0; padding: 1.4rem 1.4rem 1rem; border-radius: 4px; background: #fbf7ee; color: #1f2523; text-decoration: none; box-shadow: 0 0 0 2px #c99a3c, 7px 7px 0 2px rgba(154, 107, 18, 0.28); transform: rotate(-0.6deg); transition: transform 0.25s var(--vd-curva), box-shadow 0.25s var(--vd-curva); }
+.vd-bib__cartao:hover { transform: rotate(0deg) translateY(-3px); box-shadow: 0 0 0 2px #c99a3c, 9px 10px 0 2px rgba(154, 107, 18, 0.32); }
+.vd-bib__fonte { justify-self: start; margin-bottom: 0.7rem; color: #8a5f12; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+.vd-bib__legenda { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 0.8rem; font-size: 0.78rem; color: #6d6253; text-align: center; }
+.vd-bib__legenda b { display: inline-flex; align-items: center; gap: 0.2rem; color: #14655e; }
+.vd-bib__texto { display: block; margin: 0 0 1rem; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.04rem; line-height: 1.65; }
 .vd-bib__questao { display: grid; gap: 0.45rem; padding: 0.9rem 1rem; border-left: 4px solid #c99a3c; border-radius: 2px 4px 4px 2px; background: #f3e9d6; }
 .vd-bib__selo { justify-self: start; margin: 0; padding: 0.1rem 0.45rem; background: #1b1208; color: #f4cf7c; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
-.vd-bib__conceito { margin: 0; font-weight: 700; line-height: 1.45; }
+.vd-bib__conceito { display: block; margin: 0; font-weight: 700; line-height: 1.45; }
 .vd-bib__como, .vd-bib__armadilha { margin: 0; font-size: 0.9rem; line-height: 1.5; color: #4a4336; }
 .vd-bib__cartao figcaption { margin-top: 0.8rem; font-size: 0.78rem; color: #6d6253; text-align: center; }
 .vd-bib__estudo { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2rem; align-items: start; margin-top: 2.2rem; }

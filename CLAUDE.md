@@ -50,6 +50,8 @@ Em 19/10/2026, Tales aprovou a **Caderneta de topografia** (feed) e o **Bingo da
 Em 22/10/2026, Tales aprovou a **Busca** (feed e stories: o sintoma digitado num buscador com a marca Orto Questões, a questão como resultado e a resposta no trecho em destaque). Veja [o guia](marketing/instagram/estilos/BUSCA.md).
 
 ## Telas do site
+Regra do Tales (30/10/2026): **todo pedido, mesmo simples, passa antes por um brainstorm interno** para entregar a melhor experiência possível (design, interação, celular, claro/escuro, textos). Decida e faça; não devolva a lista de opções para ele escolher, a não ser que a escolha mude o pedido.
+
 Foco maior em imagens (Tales, 19/10/2026): prefira **objetos pixel animados** (como o livro da Biblioteca embaixo da questão, que flutua, entreabre e abre ao clicar) a caixas só de texto. Regras e referência em [docs/design/OBJETOS-ANIMADOS.md](docs/design/OBJETOS-ANIMADOS.md).
 
 Regra do Tales (19/10/2026): a tela começa **sempre limpa**, só com o essencial. O resto (mapa, Pomodoro, placar, atalhos, dicas) fica como **opção visível** para a pessoa adicionar, como o botão "Personalizar" da sessão; nunca ligado de entrada.
