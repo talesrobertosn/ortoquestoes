@@ -157,15 +157,15 @@ VERSO = ("#9a2a2e", "#6e1a1e", "#e0b050")     # verso das cartas: vermelho com f
 PERIODOS = {
     "manha": dict(
         ceu=("#6aa4e0", "#a8cff0", "#f6ead0"), astro=None, amb="#8a9ab8", amb_k=0.62,
-        sol="#fff0d0", sol_k=1.35, desce=0.62, lado=0.55, fogo_k=0.55, velas=False, lampiao=False,
+        sol="#fff0d0", sol_k=1.35, desce=0.62, lado=1.5, fogo_k=0.55, velas=False, lampiao=False,
         quente="#ffe6c0", fria="#2a3c66", feixe_k=0.9, poeira="#fff4d8", jan_k=1.0),
     "tarde": dict(
-        ceu=("#4a3c7a", "#e8865a", "#ffd286"), astro=(236, 70), amb="#8a6a78", amb_k=0.48,
-        sol="#ffa456", sol_k=1.7, desce=1.05, lado=0.95, fogo_k=0.8, velas=True, lampiao=False,
+        ceu=("#7a5088", "#f0905a", "#ffd890"), astro=(230, 55), amb="#8a6a78", amb_k=0.48,
+        sol="#ffa456", sol_k=1.7, desce=0.95, lado=2.1, fogo_k=0.8, velas=True, lampiao=False,
         quente="#ffd08a", fria="#3a2450", feixe_k=1.25, poeira="#ffd8a0", jan_k=1.05),
     "noite": dict(
         ceu=("#040a1e", "#0e1a3e", "#22306a"), astro=(238, 46), amb="#2a3870", amb_k=0.42,
-        sol="#8eaaff", sol_k=0.5, desce=0.62, lado=0.95, fogo_k=1.25, velas=True, lampiao=True,
+        sol="#8eaaff", sol_k=0.5, desce=0.62, lado=1.7, fogo_k=1.25, velas=True, lampiao=True,
         quente="#ffcf8a", fria="#0c1638", feixe_k=0.55, poeira="#c8d8ff", jan_k=0.85),
 }
 
@@ -236,7 +236,7 @@ def parede(per: dict) -> tuple[Camada, np.ndarray]:
     for y in range(0, CHAO):
         for x in range(W):
             v = mancha[y, x]
-            fum = max(0.0, 1 - y / 46) * 0.5 + max(0.0, 1 - abs(x - 432) / 70) * max(0.0, 1 - y / 70) * 0.4
+            fum = max(0.0, 1 - y / 40) * 0.3 + max(0.0, 1 - abs(x - 432) / 70) * max(0.0, 1 - y / 70) * 0.4
             k = 0 if v > 0.68 else 1 if v > 0.44 else 2 if v > 0.25 else 3
             base = cor_de(REBOCO[k]) * (1 - fum * 0.55) + hexa("#3a2a1e") * fum * 0.25
             c.c[y, x, :3] = np.clip(base * (0.97 + g.random() * 0.06), 0, 1)
@@ -405,13 +405,6 @@ def janela(c: Camada, nome: str, per: dict) -> tuple[np.ndarray, np.ndarray]:
     c.ret(x0 - 8, y1 + 1, x1 - x0 + 16, 3, CARVALHO[0])
     c.ret(x0 - 8, y1 + 3, x1 - x0 + 16, 1, CARVALHO[2])
     c.ret(x0 - 7, y1 + 4, x1 - x0 + 14, 2, CARVALHO[4])
-    # Vasinho de gerânio no peitoril e uma vela apagada.
-    c.ret(x0 + 2, y1 - 3, 6, 4, "#a8583a")
-    c.ret(x0 + 2, y1 - 3, 6, 1, "#c8704a")
-    c.ret(x0 + 7, y1 - 2, 1, 3, "#7a3a24")
-    for (dx, dy, cor) in ((1, -5, "#3e7a3a"), (3, -6, "#4e8a40"), (5, -5, "#3e7a3a"), (2, -7, "#d0303a"), (4, -8, "#e84048"),
-                          (6, -6, "#d0303a"), (0, -4, "#2e5a2e"), (3, -4, "#2e5a2e"), (6, -4, "#2e5a2e"), (4, -7, "#ff7070")):
-        c.p(x0 + 1 + dx, y1 + dy, cor)
     # Folhas da janela abertas (persianas de madeira com dobradiças).
     for (xa, sentido) in ((x0 - 17, -1), (x1 + 6, 1)):
         for y in range(y0 - 4, y1 + 1):
@@ -435,19 +428,30 @@ def janela(c: Camada, nome: str, per: dict) -> tuple[np.ndarray, np.ndarray]:
             if x in (cxm - 1, cxm) or y in (59, 60) or x in (x0, x1 - 1) or y == y1:
                 c.p(x, y, CARVALHO[1] if x in (cxm - 1,) or y == 59 else CARVALHO[3])
                 continue
-            # rodelas de 6 px: centro grosso (mais escuro, distorce), borda clara
-            u, v = (x - x0 + 3) % 6, (y - y0 + 6) % 6
+            # vidraças pequenas de 7 x 6 presas no chumbo; cada uma com um tom e um reflexo diagonal
+            u, v = (x - x0) % 7, (y - y0 + 6) % 6
             if u == 0 or v == 0:
-                c.p(x, y, "#2a2a2c")
+                c.p(x, y, "#262426")
                 continue
-            d = math.hypot(u - 3, v - 3)
-            k_rod = 0.72 if d < 1.2 else 1.06 if d > 2.1 else 0.92
-            fonte = ceu[min(y1, y + (1 if d < 1.2 else 0)), x]
-            vidro = fonte * k_rod * (0.94 + g.random() * 0.08) + hexa("#c8e0d0") * 0.05
-            if d < 1.2:
-                vidro = vidro * 0.92 + hexa("#a0c8a0") * 0.06
+            pane = ((x - x0) // 7) * 13 + (y - y0 + 6) // 6
+            tinta = 0.9 + 0.14 * ((pane * 37) % 7) / 6
+            fonte = ceu[y, x]
+            vidro = fonte * tinta + hexa("#d8ecd8") * 0.04
+            if (u + v) in (4, 5) and u < 5:
+                vidro = vidro * 1.12 + 0.03                      # reflexo do vidro antigo
             emis[y, x] = vidro * per["jan_k"]
             trans[y, x] = 0.4 + 0.8 * float(fonte.mean()) if nome != "noite" else 0.6 + 0.9 * float(fonte.mean())
+    # Vasinho de gerânio no peitoril e uma vela apagada.
+    emis[y1 - 3:y1 + 1, x0 + 2:x0 + 9] = 0
+    trans[y1 - 3:y1 + 1, x0 + 2:x0 + 9] = 0
+    c.ret(x0 + 2, y1 - 3, 6, 4, "#a8583a")
+    c.ret(x0 + 2, y1 - 3, 6, 1, "#c8704a")
+    c.ret(x0 + 7, y1 - 2, 1, 3, "#7a3a24")
+    for (dx, dy, cor) in ((1, -5, "#3e7a3a"), (3, -6, "#4e8a40"), (5, -5, "#3e7a3a"), (2, -7, "#d0303a"), (4, -8, "#e84048"),
+                          (6, -6, "#d0303a"), (0, -4, "#2e5a2e"), (3, -4, "#2e5a2e"), (6, -4, "#2e5a2e"), (4, -7, "#ff7070")):
+        c.p(x0 + 1 + dx, y1 + dy, cor)
+        emis[y1 + dy, x0 + 1 + dx] = 0
+        trans[y1 + dy, x0 + 1 + dx] = 0
     # Trinco de ferro na travessa.
     c.ret(cxm - 2, 58, 4, 4, FERRO[2])
     c.p(cxm - 1, 58, FERRO[0])
@@ -549,9 +553,17 @@ def balcao(per: dict) -> tuple[Camada, Camada, np.ndarray]:
             fundo.ret(xm, ys + 2, 2, 4, CARVALHO[2])
             fundo.p(xm + 1, ys + 5, CARVALHO[3])
     # Ganchos com canecas penduradas embaixo da prateleira de cima.
+    gm = np.random.default_rng(12)
     for x in range(74, 178, 9):
-        fundo.ret(x + 2, 42, 1, 2, FERRO[1])
-        caneca(fundo, x, 49, "#9a7a5a" if (x // 9) % 2 else "#8a8a90", alt=5, asa_dir=(x // 9) % 2 == 0)
+        if gm.random() < 0.18:
+            fundo.ret(x + 2, 42, 1, 2, FERRO[1])               # gancho vazio
+            fundo.p(x + 2, 44, FERRO[0])
+            continue
+        alt = 4 + int(gm.random() * 3)
+        cor = ("#9a7a5a", "#8a8a90", "#7a5a3a", "#a89070", "#6a7a80")[int(gm.random() * 5)]
+        dx = int(gm.random() * 3) - 1
+        fundo.ret(x + 2 + dx, 42, 1, 2, FERRO[1])
+        caneca(fundo, x + dx, 44 + alt, cor, alt=alt, asa_dir=gm.random() < 0.5)
     # Barris na prateleira baixa à esquerda.
     for (bx, by) in ((16, 75), (40, 75)):
         barril_deitado(fundo, bx, by, 9)
@@ -1130,15 +1142,17 @@ def carta(c: Camada, x: int, y: int, virada: bool, inclina: int = 0, w: int = 8,
                 if borda and j == h - 1:
                     cor = "#a87a30"
             c.p(xx, yy, cor)
-    if virada:   # osso: diáfise com as duas epífises bilobadas
-        my = y + h // 2
-        mx0 = x + 1 + round(inclina * (h // 2) / max(h - 1, 1))
-        c.ret(mx0 + 2, my, w - 6, 1, "#6a5a42")
-        for ex in (mx0 + 1, mx0 + w - 4):
-            c.p(ex, my, "#4a3a28")
+    if virada:   # osso de desenho: diáfise e as duas pontas bilobadas (um nó em cima e outro embaixo)
+        my = y + max(1, h // 2)
+        off = round(inclina * (my - y) / max(h - 1, 1))
+        xa, xb = x + 1 + off, x + w - 2 + off
+        c.ret(xa + 1, my, xb - xa - 1, 1, "#8a7a60")
+        for ex in (xa, xb):
             c.p(ex, my - 1, "#4a3a28")
-            if h > 3:
+            if my + 1 < y + h:
                 c.p(ex, my + 1, "#4a3a28")
+            else:
+                c.p(ex, my, "#4a3a28")
 
 
 def cadeira_de_tras(c: Camada, cx: int, topo: int, yb: int) -> None:
@@ -1329,19 +1343,8 @@ def mobilia(per: dict) -> tuple[Camada, Camada, np.ndarray, list, list]:
 
 # ─────────────────────────────── Primeiro plano ───────────────────────────────
 def primeiro_plano() -> Camada:
-    """Perto da câmera (vai desfocado): um barril no canto de baixo à esquerda e ervas penduradas no alto à direita."""
+    """Perto da câmera (vai desfocado): ramos de ervas penduradas no alto à direita."""
     c = Camada(1.0)
-    cx, cy, r = 14, 168, 30
-    for y in range(110, H):
-        for x in range(0, 50):
-            d = abs(x + 0.5 - cx) / r
-            if d > 1 or y < cy - math.sqrt(max(0, 1 - d * d)) * 70:
-                continue
-            tab = int((x - cx + r) / 6)
-            cor = cor_de(CARVALHO[2 if tab % 2 else 3]) * (1.1 - d * 0.5)
-            if (y - 118) % 22 < 3:
-                cor = cor_de(FERRO[2])
-            c.p(x, y, cor)
     g = np.random.default_rng(81)
     for (x, comp) in ((452, 26), (466, 20), (476, 30)):
         c.linha(x, 0, x, 4, "#6a5a3a")
@@ -1468,7 +1471,7 @@ def feixe_da_janela(trans: np.ndarray, opacos: np.ndarray, per: dict) -> tuple[n
         if i == passos:
             np.add.at(mancha, (py[ok], px[ok]), pw[ok])
         else:
-            perto = min(1.0, max(0.0, (t - 0.04) / 0.25))
+            perto = min(1.0, max(0.0, (t - 0.1) / 0.35)) ** 1.5
             np.add.at(feixe, (py[ok], px[ok]), raio_peso[ok] * perto * (1 - 0.6 * t ** 2))
     feixe = desfocar(feixe[:, :, None], 3)[:, :, 0]
     feixe *= 0.55 + 0.9 * ruido_feixe
@@ -1580,7 +1583,7 @@ def montar(nome: str) -> Image.Image:
     for (vx, vy) in luzes_mesa:
         luz += em_faixas(luz3d(vx, vy, 0.62, 34, z3, prof=50), 5, 0.4)[:, :, None] * hexa("#ffb860") * 0.6
     for (vx, vy) in luzes_pend:
-        luz += em_faixas(luz3d(vx, vy, 0.25, 60, z3, prof=50), 5, 0.4)[:, :, None] * hexa("#ffa850") * 0.55
+        luz += em_faixas(luz3d(vx, vy, 0.25, 90, z3, prof=50), 6, 0.4)[:, :, None] * hexa("#ffa850") * 0.75
     if per["velas"]:
         luz += luz3d(142, 80, 0.32, 26, z3, prof=50)[:, :, None] * hexa("#ffb050") * 0.45
     luz *= (1 - ao3 * 0.8)[:, :, None]
@@ -1663,7 +1666,7 @@ def montar(nome: str) -> Image.Image:
     img = img * (1 - calma) + suave_ * calma
 
     # Vinheta e grão.
-    v = ((XS / W - 0.6) ** 2 * 1.2 + (YS / H - 0.55) ** 2 * 1.5)
+    v = ((XS / W - 0.6) ** 2 * 1.2 + (YS / H - 0.6) ** 2 * 0.9)
     img *= (1 - np.clip(v - 0.08, 0, 1) * 1.0)[:, :, None]
     g = np.random.default_rng(99)
     img += (g.random(img.shape[:2]).astype(np.float32)[:, :, None] - 0.5) * 0.018

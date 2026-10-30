@@ -38,7 +38,7 @@ W, H, ESC = 480, 160, 3
 CHAO = 118                       # onde a parede encontra o assoalho
 FUGA = (290, 40)                 # ponto de fuga do assoalho
 JX, JY, JR, JBASE = 252, 36, 26, 96   # janela: centro do arco, meia largura do vidro, base do vidro
-VELA = (441, 93)                 # chama da vela na escrivaninha
+VELA = (441, 87)                 # chama da vela na escrivaninha
 LANTERNA = (306, 31)             # chama da lamparina pendurada
 
 
@@ -139,7 +139,7 @@ class Camada:
 # ─────────────────────────────── Paletas ───────────────────────────────
 PINHO = ("#b88a56", "#94683e", "#6e4a2a", "#4a3018", "#2a1a0c")      # luz → sombra (madeira do telhado e móveis)
 NOGUEIRA = ("#a8723e", "#7e5030", "#5a3820", "#3c2412", "#24150a")
-REBOCO = ("#d8ccb4", "#c4b69c", "#a89a80", "#8a7c64", "#6a5e4a")
+REBOCO = ("#e2d4b8", "#d0bf9f", "#bba98a", "#9e8c6e", "#776650")
 PEDRA = ("#a49c94", "#847c76", "#645c58", "#443e3c")
 LATAO = ("#fff0b0", "#e8c060", "#b88a34", "#7a5620", "#4a3010")
 FERRO = ("#8a8a90", "#5a5a62", "#3a3a42", "#1e1e24")
@@ -178,7 +178,7 @@ def paredes() -> Camada:
     umid = ruido(15, 26)
     for y in range(0, CHAO):
         for x in range(W):
-            v = 0.5 + (pinc[y, x] - 0.5) * 0.55 + (rn2[y, x] - 0.5) * 0.5 + (grao[y, x] - 0.5) * 0.22
+            v = 0.52 + (pinc[y, x] - 0.5) * 0.6 + (rn2[y, x] - 0.5) * 0.22 + (grao[y, x] - 0.5) * 0.2
             k = 0 if v > 0.78 else 1 if v > 0.5 else 2 if v > 0.26 else 3
             cor = cor_de(REBOCO[k])
             if 0.5 < v < 0.56 and (x + y) % 2 == 0:
@@ -188,8 +188,7 @@ def paredes() -> Camada:
             c.c[y, x, :3] = cor
             c.c[y, x, 3] = 1
     # Pedras aparecendo onde o reboco caiu: fiadas irregulares, cada pedra com luz em cima e sombra embaixo.
-    for (cx, cy, rx, ry, sem) in ((60, 92, 22, 8, 1), (304, 90, 14, 7, 2), (160, 32, 13, 7, 3), (432, 44, 11, 6, 4),
-                                  (376, 78, 9, 5, 5), (124, 50, 9, 5, 6)):
+    for (cx, cy, rx, ry, sem) in ((60, 92, 22, 8, 1), (304, 90, 14, 7, 2), (160, 32, 13, 7, 3), (432, 44, 11, 6, 4)):
         gg = np.random.default_rng(40 + sem)
         borda = ruido(50 + sem, 2, 64, 32)
         cortes = {}
@@ -393,7 +392,7 @@ def ceu(per: str) -> np.ndarray:
         astro, r_astro, cor_astro, halo_astro = (236, 22), 4.2, "#fffcec", "#ffe8b0"
     elif per == "tarde":
         paradas = [(0, "#2e2462"), (0.32, "#8a3e6a"), (0.62, "#e8704a"), (0.85, "#ffb060"), (1, "#ffd890")]
-        astro, r_astro, cor_astro, halo_astro = (238, 74), 5.5, "#fff0b0", "#ff9040"
+        astro, r_astro, cor_astro, halo_astro = (244, 56), 5.0, "#fff0b0", "#ff9040"
     else:
         paradas = [(0, "#040820"), (0.55, "#0e1a44"), (1, "#24346a")]
         astro, r_astro, cor_astro, halo_astro = (266, 24), 4.6, "#f4f6ff", "#8aa0e0"
@@ -433,8 +432,8 @@ def ceu(per: str) -> np.ndarray:
                 else:
                     e[y, x] = hexa(cor_astro) * (1.3 if per == "manha" else 1.15)
     # Serra ao longe.
-    serra = {"manha": "#8ea8cc", "tarde": "#9a5a7a", "noite": "#18224a"}[per]
-    morro = {"manha": "#5e8a6a", "tarde": "#6a4050", "noite": "#121a3a"}[per]
+    serra = {"manha": "#8ea8cc", "tarde": "#c87a84", "noite": "#18224a"}[per]
+    morro = {"manha": "#5e8a6a", "tarde": "#8a4a58", "noite": "#121a3a"}[per]
     for x in range(x0, x1):
         hs = 74 - int(5 * math.sin(x / 9.0) + 3 * math.sin(x / 3.7 + 1))
         for y in range(hs, JBASE + 1):
@@ -469,7 +468,7 @@ def ceu(per: str) -> np.ndarray:
                 if not (x0 <= xx < x1):
                     continue
                 topo = yb - alt + int(abs(xx + 0.5 - meio) * alt / (larg / 2) * 0.8)
-                for y in range(topo, min(JBASE + 1, yb + 3)):
+                for y in range(topo, min(JBASE + 1, yb + 2)):
                     if y < yb:
                         cor = hexa(telha[0] if xx < meio else telha[1])
                         if (y - topo) % 2 == 1 and per != "noite":
@@ -793,7 +792,7 @@ def cama(c: Camada) -> None:
     c.ret(24, 108, 22, 1, "#c8bca8")
     c.p(44, 103, "#d8d0c0")
     # Colcha de retalhos: cobre do travesseiro até o pé e cai pela frente com uma barra.
-    retalhos = ["#9a3a34", "#d8c49a", "#2e4670", "#5e7e5a", "#b8744a", "#e4d8bc", "#3e5e7a", "#a8884a"]
+    retalhos = ["#9a3a34", "#d8c49a", "#2e4670", "#5e7e5a", "#b8744a", "#bfae8c", "#3e5e7a", "#a8884a"]
     g = np.random.default_rng(14)
     grade = g.integers(0, len(retalhos), size=(10, 30))
     for y in range(106, 134):
@@ -811,8 +810,6 @@ def cama(c: Camada) -> None:
             emenda = (x - 46) % 9 == 0 or (y - 106) % 6 == 0
             if emenda:
                 cor = cor * 0.72
-                if (x + y) % 2 == 0:
-                    cor = hexa("#f0e4c8") * 0.85
             elif grade[v % 10, u % 30] % 3 == 0 and (x + y) % 3 == 0:
                 cor = cor * 1.18
             elif grade[v % 10, u % 30] % 3 == 1 and (x - 46) % 9 == 4 and (y - 106) % 6 == 3:
@@ -878,7 +875,7 @@ def cabideiro(c: Camada) -> None:
         xl, xr = px - meia, px + meia
         for x in range(int(xl), int(xr) + 1):
             u = (x - xl) / max(1, xr - xl)
-            k = 1 if u < 0.15 else 0 if u < 0.42 else 1 if u < 0.62 else 2 if u < 0.85 else 3
+            k = 3 if u < 0.12 else 2 if u < 0.35 else 1 if u < 0.6 else 0 if u < 0.88 else 1
             # Pregas verticais.
             if (x - px) % 5 == 2 and y > 70:
                 k = min(4, k + 1)
@@ -922,44 +919,51 @@ def cabideiro(c: Camada) -> None:
     c.ret(px + 3, 63, 6, 2, "#2a6a8a")
     c.ret(px + 4, 67, 4, 1, "#8a9098")
     c.ret(px + 4, 69, 3, 1, "#8a9098")
-    # Estetoscópio: olivas no gancho, tubos descendo, o Y e a campânula prateada.
-    est = ("#3a3a44", "#22222a", "#5a5a6a")
-    c.p(px - 5, 34, FERRO[0])
-    c.p(px + 5, 34, FERRO[0])
-    c.linha(px - 5, 35, px - 7, 46, est[2])
-    c.linha(px + 5, 35, px + 6, 46, est[2])
-    for y in range(46, 74):
-        c.p(px - 7 - (1 if 52 < y < 66 else 0), y, est[0])
-        c.p(px + 6 + (1 if 52 < y < 66 else 0), y, est[1])
-    c.linha(px - 7, 74, px - 1, 80, est[0])
-    c.linha(px + 6, 74, px, 80, est[1])
-    c.linha(px - 1, 80, px - 2, 90, est[0])
-    c.ret(px - 3, 76, 3, 1, FERRO[0])
-    c.elipse(px - 3, 92, 2.6, 2.4, "#c8ccd8")
-    c.elipse(px - 3.5, 91.5, 1.3, 1.1, "#ffffff")
-    c.p(px - 1, 93, "#6a6e7a")
-    # Mochila de lona encostada no pé do cabideiro.
+    # Estetoscópio pendurado no pescoço do jaleco: tubos descendo pelas lapelas, o Y e a campânula prateada.
+    est = ("#3a3a48", "#24242e", "#5a5a6c")
+    c.linha(px - 4, 41, px - 6, 44, est[2])               # arco atrás da gola
+    c.linha(px + 4, 41, px + 6, 44, est[1])
+    c.ret(px - 3, 40, 7, 1, est[0])
+    for y in range(44, 62):
+        c.p(px - 6 + (1 if y > 56 else 0), y, est[0])
+        c.p(px + 6 - (1 if y > 56 else 0), y, est[1])
+    c.linha(px - 5, 62, px - 2, 67, est[0])
+    c.linha(px + 5, 62, px + 2, 67, est[1])
+    c.ret(px - 2, 67, 4, 1, FERRO[0])                     # o Y de metal
+    c.linha(px, 68, px - 2, 75, est[0])
+    c.elipse(px - 2.5, 77, 2.6, 2.4, "#c8ccd8")
+    c.elipse(px - 3, 76.5, 1.3, 1.1, "#ffffff")
+    c.p(px - 1, 78, "#6a6e7a")
+    c.p(px - 6, 44, FERRO[0])
+    c.p(px + 6, 44, FERRO[0])
+    # Mochila de lona encostada no pé do cabideiro: corpo arredondado, tampa com fivela, bolso da frente e alças.
     mx, my = 188, 118
     lona = ("#a0703e", "#7e5430", "#5e3c20", "#3c2614")
-    c.ret(mx, my + 2, 18, 22, lona[1])
-    c.ret(mx, my + 2, 2, 22, lona[0])
-    c.ret(mx + 15, my + 2, 3, 22, lona[2])
-    c.elipse(mx + 9, my + 3, 9, 3, lona[1])
-    c.elipse(mx + 8, my + 2, 6, 1.5, lona[0])
-    c.ret(mx + 1, my + 2, 16, 10, lona[2])                # aba
-    c.ret(mx + 1, my + 2, 16, 1, lona[0])
-    c.ret(mx + 1, my + 11, 16, 1, lona[3])
-    for bx in (mx + 4, mx + 12):                          # correias com fivela
-        c.ret(bx, my + 6, 2, 10, "#5a3018")
-        c.ret(bx - 1, my + 14, 4, 2, LATAO[2])
-        c.p(bx, my + 14, LATAO[0])
-    c.ret(mx + 3, my + 16, 12, 6, lona[1])                # bolso da frente
-    c.ret(mx + 3, my + 16, 12, 1, lona[0])
+    for y in range(my, my + 24):
+        for x in range(mx, mx + 18):
+            canto = (y - my < 3) and (min(x - mx, mx + 17 - x) < 3 - (y - my))
+            if canto:
+                continue
+            k = 0 if x - mx < 2 else 1 if x - mx < 12 else 2 if x - mx < 16 else 3
+            c.p(x, y, lona[k])
+    for x in range(mx + 1, mx + 17):                      # tampa com borda curva
+        fundo = my + 9 + int(1.5 * math.sin((x - mx) / 17 * math.pi))
+        for y in range(my + 1, fundo):
+            c.p(x, y, lona[1] if x - mx > 2 else lona[0])
+        c.p(x, fundo, lona[3])
+        c.p(x, my + 1, lona[0])
+    c.ret(mx + 8, my + 7, 2, 5, "#4a2814")                # tira e fivela central
+    c.ret(mx + 7, my + 10, 4, 2, LATAO[2])
+    c.p(mx + 8, my + 10, LATAO[0])
+    c.ret(mx + 3, my + 14, 12, 8, lona[2])                # bolso da frente com zíper
+    c.ret(mx + 3, my + 14, 12, 1, lona[0])
+    c.ret(mx + 4, my + 15, 10, 1, "#2a1a0c")
+    c.p(mx + 12, my + 16, FERRO[0])
     c.ret(mx + 3, my + 21, 12, 1, lona[3])
+    c.ret(mx + 16, my + 4, 2, 18, "#4a2814")              # alça lateral
     c.ret(mx, my + 23, 18, 1, lona[3])
-    c.linha(mx + 9, my, mx + 9, my - 3, "#5a3018")        # alça de mão
-    c.linha(mx + 5, my, mx + 9, my - 3, "#5a3018")
-    c.linha(mx + 13, my, mx + 9, my - 3, "#5a3018")
+    c.linha(mx + 6, my, mx + 9, my - 3, "#4a2814")        # alça de mão
+    c.linha(mx + 12, my, mx + 9, my - 3, "#4a2814")
     # Rolo de atadura e um livro saindo da mochila.
     c.ret(mx + 13, my - 1, 4, 4, "#f4f0e8")
     c.p(mx + 14, my, "#c8c4bc")
@@ -1075,6 +1079,15 @@ def escrivaninha(c: Camada, e: np.ndarray, vela_acesa: float) -> None:
     for x in (410, 422):
         c.ret(x, 127, 2, 14, PINHO[2])
     c.ret(411, 135, 12, 1, PINHO[3])
+    # Caneca de café (residente!) no canto da mesa.
+    c.ret(389, 96, 6, 7, "#d8d4cc")
+    c.ret(389, 96, 1, 7, "#f4f0e8")
+    c.ret(394, 96, 1, 7, "#9a968e")
+    c.ret(389, 97, 6, 1, "#3a2010")
+    c.ret(390, 100, 4, 1, "#2a6a8a")
+    c.p(395, 98, "#c8c4bc")
+    c.p(396, 99, "#c8c4bc")
+    c.p(395, 101, "#c8c4bc")
     # Pilha de anotações e cadernos (folhas soltas, um pouco desalinhadas, com post-its).
     y = ty - 1
     for (dx, larg, esp, cor) in ((0, 20, 2, "#2a4470"), (1, 19, 1, "#efe8d6"), (-1, 20, 1, "#e4dcc4"), (2, 18, 2, "#8e2a2a"),
@@ -1186,7 +1199,7 @@ def chao_e_tapete() -> Camada:
         c.c[CHAO, x, :3] *= 0.5
         c.c[CHAO + 1, x, :3] *= 0.72
     # Tapete trançado oval (anéis de trança em cores alternadas), em perspectiva, no meio do quarto.
-    Xc, Zc, RX, RZ = 30.0, 55.0, 74.0, 9.6
+    Xc, Zc, RX, RZ = 32.0, 55.0, 64.0, 9.0
     aneis = ["#6e2626", "#b0925e", "#2e4258", "#c4b48e", "#7a2e2a", "#56664a", "#b0925e", "#34485e", "#c4b48e", "#6a3440",
              "#b0925e", "#2e4258", "#7a2a2a"]
     for y in range(CHAO + 2, H):
@@ -1208,7 +1221,7 @@ def chao_e_tapete() -> Camada:
                 k *= 0.72
             if r > 0.965:
                 k *= 0.6
-            c.c[y, x, :3] = np.clip(cor * k * (0.94 + g.random() * 0.1), 0, 1)
+            c.c[y, x, :3] = np.clip(cor * k * 0.86 * (0.94 + g.random() * 0.1), 0, 1)
     return c
 
 
@@ -1280,8 +1293,8 @@ def contraluz(alfa: np.ndarray, dx: int, dy: int) -> np.ndarray:
 
 # Luz de cada hora: ambiente, luz da janela, cor do feixe e da mancha, desvio do feixe, vela e lamparina.
 LUZ = {
-    "manha": dict(amb=("#7a88b0", 0.72), janela=("#e8eeff", 0.95), sol="#fff0c8", mancha=1.9, feixe=0.75,
-                  desvio=(64, 6), alvo=(158, 121), vela=0.0, lamp=0.0, poeira="#fff4d8",
+    "manha": dict(amb=("#8a96b8", 0.9), janela=("#eef2ff", 1.15), sol="#fff0c8", mancha=1.9, feixe=0.6,
+                  desvio=(92, 12), alvo=(158, 121), vela=0.0, lamp=0.0, poeira="#fff4d8",
                   quente="#ffe8c0", fria="#28304a", contraste=1.06, exposicao=1.0),
     "tarde": dict(amb=("#6a4058", 0.62), janela=("#ffa070", 0.95), sol="#ffa04a", mancha=2.1, feixe=1.0,
                   desvio=(112, 30), alvo=(152, 123), vela=0.7, lamp=0.0, poeira="#ffc880",
@@ -1328,7 +1341,7 @@ def feixes(trans: np.ndarray, opacos: np.ndarray, desvio, alvo) -> tuple[np.ndar
         if i == passos:
             np.add.at(mancha, (py[ok], px[ok]), pw[ok])
         else:
-            perto = min(1.0, max(0.0, (t - 0.05) / 0.3))
+            perto = min(1.0, max(0.0, (t - 0.1) / 0.35))
             np.add.at(feixe, (py[ok], px[ok]), raio_peso[ok] * perto * perto * (1 - 0.5 * t ** 3))
     feixe = desfocar(feixe[:, :, None], 3)[:, :, 0]
     feixe *= 0.6 + 0.8 * ruido_feixe
@@ -1461,6 +1474,8 @@ def montar(per: str) -> Image.Image:
     else:
         img += fumaca(vx, vy, 40, 1.3)[:, :, None] * hexa("#d8d8e0") * 0.5
 
+    # Vapor do café.
+    img += fumaca(392, 95, 34, 0.4)[:, :, None] * hexa("#e8e4e0") * 0.45
     # Halos das chamas.
     halo = np.zeros_like(z3)
     if L["vela"] > 0:

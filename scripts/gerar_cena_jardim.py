@@ -208,13 +208,13 @@ def curva(pontos, passos: int = 60):
 PERIODOS = {
     "manha": dict(
         luz=(-0.7, -0.7), amb="#94acd4", amb_k=0.46, sol="#ffe8bc", sol_k=1.12, sol_obj=0.85, sombra=(0.7, 0.28),
-        nevoa="#cfe0ec", lamp_k=0.0, jan_k=0.0, flor_k=0.45, quente="#fff0d0", fria="#2a4a72", rec="#fff0c0", rec_k=0.45),
+        nevoa="#cfe0ec", lamp_k=0.0, jan_k=0.0, flor_k=0.32, quente="#fff0d0", fria="#2a4a72", rec="#fff0c0", rec_k=0.45),
     "tarde": dict(
-        luz=(0.75, -0.6), amb="#9a7cb8", amb_k=0.48, sol="#ffb060", sol_k=1.25, sol_obj=0.22, sombra=(-0.95, 0.9),
+        luz=(0.75, -0.6), amb="#9a7cb8", amb_k=0.5, sol="#ffb060", sol_k=1.5, sol_obj=0.22, sombra=(-0.95, 0.9),
         nevoa="#f0a888", lamp_k=0.55, jan_k=0.55, flor_k=0.8, quente="#ffd49a", fria="#3a2a5e", rec="#ffa850", rec_k=1.2),
     "noite": dict(
-        luz=(0.3, -0.95), amb="#3a4c94", amb_k=0.34, sol="#8aa4ff", sol_k=0.32, sol_obj=0.5, sombra=(-0.35, 0.3),
-        nevoa="#18244c", lamp_k=1.25, jan_k=1.4, flor_k=1.7, quente="#ffcf8a", fria="#0a1532", rec="#9ab4ff", rec_k=0.55),
+        luz=(0.3, -0.95), amb="#4a5ca8", amb_k=0.46, sol="#9ab4ff", sol_k=0.55, sol_obj=0.6, sombra=(-0.35, 0.3),
+        nevoa="#1c2a58", lamp_k=1.5, jan_k=1.4, flor_k=1.35, quente="#ffcf8a", fria="#0a1532", rec="#9ab4ff", rec_k=0.55),
 }
 SOL_TARDE = (432, 64)
 LUA = (262, 19)
@@ -513,44 +513,75 @@ def pintar_morros(nome: str) -> Camada:
 
 def casinha(c: Camada, jan: Camada, x0: int, w: int, base: int, hp: int, ht: int, telhado, seed: int, luz,
             janelas=1, chamine=False) -> None:
-    """Casinha da vila: parede caiada com o lado da sombra, telhado de barro em fiadas, janelas (acendem à noite)."""
-    lado_esq = luz[0] < 0
-    x1 = x0 + w
-    for y in range(base - hp, base):
-        for x in range(x0, x1):
-            t = (x - x0) / max(1, w - 1)
-            sombra = t > 0.72 if lado_esq else t < 0.28
-            k = hash01(x, y, seed) * 0.08
-            c.p(x, y, mistura("#efe4cc", "#c8b89c", k * 3) if not sombra else mistura("#b4a690", "#9a8c7a", k * 3))
-    c.ret(x0, base - hp, w, 1, "#6a5848")
-    # telhado de duas águas visto de lado (beiral saliente)
-    t0, t1, t2 = (hexa(q) for q in telhado)
-    for j in range(ht):
-        y = base - hp - 1 - j
-        enc = j * 0.9
-        for x in range(int(x0 - 2 + enc), int(x1 + 2 - enc)):
-            fila = j % 2
-            cor = t0 if (x + fila * 2) % 4 == 0 else t1
-            if j == 0:
-                cor = t2
-            if not lado_esq and x > (x0 + x1) / 2:
-                cor = cor * 1.08
-            c.p(x, y, cor)
-    if chamine:
-        cx = x0 + w * 3 // 4
-        c.ret(cx, base - hp - ht - 2, 3, ht, "#8a6a5a")
-        c.ret(cx - 1, base - hp - ht - 3, 5, 1, "#5a4038")
+    """Casinha da vila em três quartos: a empena de frente (caiada, cor de cada casa), a parede do lado na sombra,
+    telhado de barro em fiadas com a cumeeira, porta, janelas (acendem à noite) e chaminé."""
     g = np.random.default_rng(seed)
+    cal = [("#f2e8d2", "#cfc0a4"), ("#f0dcc0", "#c8b090"), ("#f4e0d8", "#c8aca4"), ("#e8e4d4", "#b8b4a4")][seed % 4]
+    lado_esq = luz[0] < 0
+    wf = int(w * 0.55)                  # largura da empena de frente
+    xf0 = x0 if lado_esq else x0 + w - wf
+    xs0, xs1 = (xf0 + wf, x0 + w) if lado_esq else (x0, xf0)
+    for y in range(base - hp, base):
+        for x in range(x0, x0 + w):
+            k = hash01(x, y, seed) * 0.25
+            frente = xf0 <= x < xf0 + wf
+            c.p(x, y, mistura(cal[0], cal[1], k) if frente else mistura(cal[1], "#8a7c6c", 0.35 + k))
+    c.ret(x0, base - 1, w, 1, "#7a6a58")
+    # empena triangular da frente
+    cxf = xf0 + wf / 2
+    for j in range(ht):
+        meia = wf / 2 * (1 - j / ht)
+        for x in range(int(cxf - meia), int(cxf + meia) + 1):
+            c.p(x, base - hp - 1 - j, mistura(cal[0], cal[1], 0.2 + hash01(x, j, seed) * 0.2))
+    # o telhado do lado: um paralelogramo de telhas, da beira da empena até o fundo
+    t0, t1, t2 = (hexa(q) for q in telhado)
+    for j in range(ht + 1):
+        y = base - hp - 1 - j
+        meia = wf / 2 * (1 - j / (ht + 0.5))
+        xa = cxf + meia if lado_esq else xs0 - 1
+        xb = xs1 + 1 if lado_esq else cxf - meia
+        if lado_esq:
+            xa, xb = cxf + meia - 1, xs1 + 1 - j * 0.3
+        else:
+            xa, xb = xs0 - 1 + j * 0.3, cxf - meia + 1
+        for x in range(int(xa), int(xb) + 1):
+            fila = (base - hp - 1 - y) % 2
+            cor = t2 if (x + fila * 2) % 4 == 0 else t1
+            if j == ht:
+                cor = t0
+            c.p(x, y, cor)
+    # beirais da empena (as duas águas vistas de frente)
+    for j in range(ht + 1):
+        meia = wf / 2 * (1 - j / (ht + 0.5)) + 1
+        y = base - hp - 1 - j
+        c.p(cxf - meia, y, t0)
+        c.p(cxf - meia - 1, y + 1, t1)
+        c.p(cxf + meia, y, t2 if lado_esq else t0)
+    c.ret(cxf, base - hp - ht - 1, 1, 1, t0)
+    # porta
+    px = int(xf0 + wf / 2 - 1)
+    c.ret(px, base - 5, 3, 4, "#5a3a26")
+    c.p(px + 2, base - 3, "#d8b060")
+    if chamine:
+        cx = int(x0 + w * (0.7 if lado_esq else 0.3))
+        c.ret(cx, base - hp - ht - 2, 3, ht - 1, "#9a7a6a")
+        c.ret(cx + 2, base - hp - ht - 2, 1, ht - 1, "#6a5048")
+        c.ret(cx - 1, base - hp - ht - 3, 5, 1, "#5a4038")
     for k in range(janelas):
-        jx = x0 + 3 + int((w - 7) * (k + 0.5) / janelas) - 1
-        jy = base - hp + 3
-        if jy + 3 > base:
+        if k == 0:
+            jx, jy = int(xf0 + 1 + (wf - 4) * 0.15), base - hp + 2
+        else:
+            jx, jy = int(xs0 + (xs1 - xs0) * k / (janelas + 0.4)), base - hp + 2
+        if jy + 3 > base - 1 or jx < x0:
             continue
         c.ret(jx, jy, 2, 3, "#3a3442")
         if g.random() < 0.85:
             jan.ret(jx, jy, 2, 3, "#ffc068")
             jan.p(jx, jy, "#fff0c0")
-        c.ret(jx - 1, jy + 3, 4, 1, "#d8c8b0")
+        c.ret(jx - 1, jy + 3, 4, 1, "#e8dcc8")
+        if k == 0:
+            c.p(jx - 1, jy + 2, "#e07a8a")  # vasinho na janela
+            c.p(jx + 2, jy + 2, "#f0c040")
 
 
 def pintar_vila(nome: str, per: dict) -> tuple[Camada, Camada, list]:
@@ -878,6 +909,7 @@ def pintar_chao(nome: str, per: dict, flores: list) -> tuple[Camada, np.ndarray]
             off = (k - (n_lado - 1) / 2) * (lw * 2 / n_lado) * 0.95 + g.normal(0, rx * 0.12)
             rxx = rx * (0.85 + g.random() * 0.3) * (1.0 if n_lado == 1 else 1.1)
             cx, cy = x + off, y + g.normal(0, 0.3)
+            c.mascara(elipse(cx + 0.6, cy + 0.9, rxx + 0.6, ry * 1.05 + 0.5), "#24301c", 0.75)
             pedra(c, cx, cy, rxx, ry * (0.9 + g.random() * 0.25), luz, 2100 + seed, musgo=0.25, paleta=PEDRA_CAMINHO,
                   chata=True)
             ocup |= elipse(cx, cy, rxx + 1, ry + 1)
@@ -934,11 +966,12 @@ def flor(c: Camada, flores: list, x: float, y: float, cor: str, miolo: str, bril
 
 CORES_FLOR = [  # (pétala, miolo, brilho da estrelinha)
     ("#fff6e0", "#f8c840", "#fff4c8"),
-    ("#ffd0e4", "#ffe890", "#ffe0f0"),
-    ("#d4c4ff", "#fff0a0", "#e4dcff"),
-    ("#fff09a", "#e8a030", "#fff8c0"),
-    ("#c4ecff", "#ffffff", "#dff6ff"),
-    ("#ffb0c8", "#fff2b0", "#ffd4e4"),
+    ("#f27a9e", "#ffe890", "#ffd8e8"),
+    ("#a68ae8", "#fff0a0", "#e4dcff"),
+    ("#f8d040", "#c87820", "#fff8c0"),
+    ("#78a8f0", "#ffffff", "#dff0ff"),
+    ("#e85a5a", "#ffe0a0", "#ffd0c8"),
+    ("#ffb0c8", "#fff2b0", "#ffe4ec"),
 ]
 
 
@@ -999,10 +1032,10 @@ def canteiro_pedra(c: Camada, flores: list, luz, x0: int, x1: int, ytop: int, yc
         for x in range(x0, x1):
             c.p(x, y, TERRA[int(hash01(x, y, 9) * 3) + 1])
     g = np.random.default_rng(x0 + 7)
-    n = int((x1 - x0) / 6)
+    n = int((x1 - x0) / 3.2)
     for i in range(n):
         x = x0 + 4 + (x1 - x0 - 8) * (i + g.random() * 0.7) / n
-        y = ytop + 2 + g.random() * (ychao - ytop - 8)
+        y = ytop + 3 + (i % 3) / 2 * (ychao - ytop - 9) + g.normal(0, 1)
         if g.random() < 0.35:  # lavanda: espigas
             for k in range(5):
                 xx = x + k - 2 + g.normal(0, 0.4)
@@ -1061,7 +1094,7 @@ def poco(c: Camada, e: Camada, luz, cx: int, base: int) -> None:
             col = int((ang + fila * 0.22) / 0.34)
             fx = ((ang + fila * 0.22) / 0.34) % 1
             ey = (y - topo) % 4
-            k = 0.62 - u * (0.45 if luz[0] < 0 else -0.45) * 0.7 - abs(u) ** 4 * 0.35 + (hash01(col, fila, 4) - 0.5) * 0.35
+            k = 0.5 - u * (0.45 if luz[0] < 0 else -0.45) * 0.7 - abs(u) ** 4 * 0.35 + (hash01(col, fila, 4) - 0.5) * 0.35
             if ey == 3 or fx < 0.1:
                 c.p(x, y, "#2e2824")
                 continue
@@ -1200,7 +1233,7 @@ def lanterna(c: Camada, e: Camada, luzes: list, x: int, base: int, alt: int, for
     c.ret(x - 3, gy - 3, 7, 1, "#34343c")
     c.ret(x - 1, gy - 4, 3, 1, "#34343c")
     c.p(x, gy - 5, "#5a5a64")
-    luzes.append((x, gy + 3, 34 * forte, 0.7, "#ffb060", 0.85 * forte, "lamp"))
+    luzes.append((x, gy + 3, 44 * forte, 0.62, "#ffb060", 0.9 * forte, "lamp"))
 
 
 def regador(c: Camada, e: Camada, luz, x: int, base: int) -> None:
@@ -1254,13 +1287,35 @@ def bota_de_gesso(c: Camada, flores: list, luz, x: int, base: int) -> None:
     touceira(c, flores, x + 3.5, base - 16, 3.6, luz, 1901, 4)
 
 
+def vaso(c: Camada, flores: list, luz, x: int, base: int, tam: float, seed: int) -> None:
+    """Vaso de barro com borda, sombra do lado e uma moita florida."""
+    w = int(5 + tam * 3)
+    h = int(4 + tam * 2.5)
+    for y in range(base - h, base):
+        t = (y - base + h) / h
+        meia = w / 2 - t * 1.2
+        for x in range(int(x - meia), int(x + meia) + 1):
+            u = (x - (x - 0)) if False else 0
+        for xx in range(int(x - meia), int(x + meia) + 1):
+            u = (xx - x) / max(meia, 1)
+            i = 0 if u < -0.4 else 1 if u < 0.3 else 2
+            if luz[0] > 0:
+                i = 2 - i
+            c.p(xx, y, ("#e08a5c", "#b8603c", "#7a3a24")[i])
+    c.ret(x - w / 2 - 1, base - h - 1, w + 3, 2, "#c8704a")
+    c.ret(x - w / 2 - 1, base - h - 1, w + 3, 1, "#f0a878")
+    touceira(c, flores, x + 0.5, base - h - 3, 2.5 + tam * 1.6, luz, seed, 2 + int(tam * 2))
+
+
 def pintar_objetos(nome: str, per: dict, flores: list) -> Objetos:
     luz = per["luz"]
     ob = Objetos()
     ob.add(CHAO + 1, faixa_pe_do_muro, flores, luz, 92, 404)
     ob.add(CHAO + 1, faixa_pe_do_muro, flores, luz, 457, 480)
     ob.add(CHAO + 1, lanterna, ob.emissivo, ob.luzes, 400, CHAO + 1, 16, 0.6)
+    ob.add(110, vaso, flores, luz, 392, 110, 0.6, 1601)
     ob.add(116, banco, luz, 150, 116)
+    ob.add(121, vaso, flores, luz, 138, 121, 1.0, 1602)
     ob.add(120, touceira, flores, 214, 114, 7, luz, 1501, 7)
     ob.add(121, touceira, flores, 232, 116, 5, luz, 1502, 5)
     ob.add(124, poco, ob.emissivo, luz, 270, 122)
@@ -1268,6 +1323,7 @@ def pintar_objetos(nome: str, per: dict, flores: list) -> Objetos:
     ob.add(128, lanterna, ob.emissivo, ob.luzes, 318, 128, 24)
     ob.add(130, lanterna, ob.emissivo, ob.luzes, 461, 130, 30)
     ob.add(148, canteiro_pedra, flores, luz, 390, 478, 124, 148)
+    ob.add(134, vaso, flores, luz, 186, 134, 1.2, 1603)
     ob.add(149, canteiro_madeira, flores, luz, 196, 304, 136, 149)
     ob.add(150, regador, ob.emissivo, luz, 318, 150)
     return ob
@@ -1503,7 +1559,7 @@ def montar(nome: str) -> Image.Image:
     for (x, y, cor, k) in flores:
         fl[int(min(H - 1, y)), int(min(W - 1, x))] += k
     fl_luz = desfocar(ampliar(fl[:, :, None]), 9)[:, :, 0]
-    luz = luz + fl_luz[:, :, None] * hexa("#fff0d0") * per["flor_k"] * 6.0
+    luz = luz + fl_luz[:, :, None] * hexa("#fff0d0") * per["flor_k"] ** 2 * 3.0
     # vaga-lumes à noite
     vagas = []
     if nome == "noite":
@@ -1536,7 +1592,7 @@ def montar(nome: str) -> Image.Image:
     nev = hexa(per["nevoa"])
     brilho_nev = 1.0
     if nome == "tarde":
-        brilho_nev = 1 + luz_pontual(SOL_TARDE[0], SOL_TARDE[1], 90, 0.6)[:, :, None] * 0.9
+        brilho_nev = 1 + luz_pontual(SOL_TARDE[0], SOL_TARDE[1], 70, 0.6)[:, :, None] * 0.45
     mn = m_nev[:, :, None] * s_
     img = img * (1 - mn) + nev * brilho_nev * mn
 
@@ -1567,11 +1623,11 @@ def montar(nome: str) -> Image.Image:
         brilho_s = np.exp(-np.hypot(GXa - sx, (GYa - sy) * 1.2) / 7)
         raios = raios_de_luz((vis_ceu * (0.3 + brilho_s * 3)).astype(np.float32), (sx, sy), passos=96, alcance=0.97, queda=0.976)
         raios = desfocar(raios[:, :, None], 3)[:, :, 0]
-        img += raios[:, :, None] * hexa("#ffc078") * 1.6
+        img += raios[:, :, None] * hexa("#ffc078") * 1.0
         f = facho(sx, sy + 4, 372, 150, 4, 24, 1.3) * (0.55 + 0.6 * poe) * (GYa > CHAO - 30)
         f = desfocar(f[:, :, None], 3)[:, :, 0] * (1 - obj_a * 0.5)
         img += f[:, :, None] * hexa("#ffb468") * 0.3
-        cor_poeira, peso_poeira = "#ffe0a8", f * 2.4 + raios * 1.5
+        cor_poeira, peso_poeira = "#ffe0a8", (f * 2.4 + raios * 1.5) * suave(50, 80, GYa)
     else:
         f = facho(LUA[0], 26, 250, 140, 10, 40, 1.2) * np.clip(1.1 - GYa / 190, 0, 1) * (0.6 + 0.5 * poe)
         f = desfocar(f[:, :, None], 4)[:, :, 0] * (1 - obj_a * 0.6)

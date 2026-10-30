@@ -355,14 +355,14 @@ class Montagem:
 
 
 # ─────────────────────────────── A hora do dia (versões das páginas) ───────────────────────────────
-def remapear(cam: Camada, rampa, manter: float = 0.18) -> None:
+def remapear(cam: Camada, rampa, manter: float = 0.18, faixa=None) -> None:
     """Repinta uma camada distante com a paleta da hora (perspectiva aérea): cada pixel guarda o seu valor (claro ou
     escuro, relativo à camada) e ganha a cor da rampa [(0..1, cor), ...]; `manter` conserva um pouco do matiz."""
     a = cam.c[:, :, 3]
     if not (a > 0).any():
         return
     lum = cam.c[:, :, :3] @ np.array([0.3, 0.55, 0.15], dtype=np.float32)
-    lo, hi = np.percentile(lum[a > 0], (2, 98))
+    lo, hi = faixa or np.percentile(lum[a > 0], (2, 98))
     t = np.clip((lum - lo) / max(hi - lo, 1e-3), 0, 1)
     ts = np.array([r[0] for r in rampa], dtype=np.float32)
     cs = np.array([hexa(r[1]) for r in rampa], dtype=np.float32)
@@ -1957,27 +1957,128 @@ def envelope(c: Camada, x: int, y: int, w: int, h: int, cor: str = "#f4ead4", ab
         c.ret(x + w - 3, y + 1, 2, 2, "#c84a3a")
 
 
+# ── O correio nas três horas do dia (páginas internas: Indique e ganhe, Contato).
+def ceu_correio_hora() -> np.ndarray:
+    if PERIODO == "manha":
+        return ceu_hora([(0, "#2e62b6"), (36, "#4c8ad4"), (70, "#8cbce8"), (94, "#c8def0"), (108, "#f0eee2"), (160, "#f4ecdc")],
+                        sol=(96, 26, 4, "#fff0c8", 0.28, 90),
+                        nuvens=dict(yc=52, esp=40, limiar=0.55, ex=36, ey=8, luz="#ffffff", sombra="#a2b6d6", miolo="#dae4f2",
+                                    lado_luz=-1, luz_dy=-1, forca=0.95), seed=401)
+    if PERIODO == "tarde":
+        return ceu_hora([(0, "#3a3e86"), (26, "#6e5a98"), (56, "#d27e7c"), (80, "#ffa868"), (98, "#ffd088"), (112, "#fff0c4"),
+                         (160, "#ffe4ac")],
+                        sol=(192, 103, 7, "#ffb050", 0.85, 160),
+                        nuvens=dict(yc=66, esp=36, limiar=0.55, ex=50, ey=4, luz="#fff0b0", sombra="#a8586e", miolo="#e0806e",
+                                    lado_luz=-1, luz_dy=1, forca=0.9), seed=402)
+    return ceu_hora([(0, "#03061a"), (30, "#0a1134"), (66, "#16214c"), (96, "#253468"), (112, "#30407a"), (160, "#30407a")],
+                    lua=(176, 30, 6, True),
+                    nuvens=dict(yc=70, esp=30, limiar=0.6, ex=50, ey=4, luz="#9aa8dc", sombra="#18204a", miolo="#2a3466",
+                                lado_luz=-1, luz_dy=-1, forca=0.8),
+                    estrelas=240, seed=403)
+
+
+def montar_correio_hora(ceu, longe, e_longe, meio_c, e_meio, rua, pr, fundo_int, pr2, pb, vasos, pr_frente, em, vaga, frente,
+                        luzes) -> Image.Image:
+    P = PERIODO
+    rampas_longe = {"manha": [(0, "#5a6e9a"), (0.6, "#7c90b8"), (1, "#d4dcee")],
+                    "tarde": [(0, "#3a2244"), (0.6, "#5a3256"), (1, "#ff9a7a")],
+                    "noite": [(0, "#0c1128"), (0.6, "#162042"), (1, "#4a5a90")]}
+    rampas_meio = {"manha": [(0, "#3c4c6c"), (0.5, "#56688a"), (1, "#b8c6dc")],
+                   "tarde": [(0, "#1e1428"), (0.5, "#2e1e38"), (1, "#c86a6a")],
+                   "noite": [(0, "#070a1c"), (0.5, "#0e1430"), (1, "#3a4a80")]}
+    remapear(longe, rampas_longe[P], 0.15, faixa=(0.17, 0.52))
+    remapear(meio_c, rampas_meio[P], 0.15, faixa=(0.1, 0.45))
+    # Sombras: a caixa de correio, o saco, o caixote e a bicicleta no chão; o toldo na parede, embaixo dele.
+    a = pr_frente.c[:, :, 3]
+    comp, cis = {"manha": (0.3, 0.8), "tarde": (0.45, 1.5), "noite": (0.2, 0.3)}[P]
+    sombra = np.zeros((H, W), dtype=np.float32)
+    for (xa, xb, base) in ((240, 266, 136), (400, 424, 131), (268, 290, 131), (288, 334, 131)):
+        recorte = np.zeros_like(a)
+        recorte[:base, xa:xb] = a[:base, xa:xb]
+        sombra = np.maximum(sombra, sombra_projetada(recorte, base, comp, cis))
+    alt_toldo = {"manha": 9, "tarde": 4, "noite": 3}[P]
+    toldo = ((_XS > 284 + 3) & (_XS < 369 + 3) & (_YS > 79) & (_YS < 79 + alt_toldo)).astype(np.float32)
+    sombra = np.maximum(sombra, desfocar(toldo[:, :, None], 1.2)[:, :, 0] * 0.8)
+
+    m = Montagem(ceu)
+    m.camada(longe, 1.6)
+    if P != "manha":
+        m.emissivo(e_longe, 1.0, halo=0.5 if P == "tarde" else 0.8)
+    m.camada(meio_c, 0.8)
+    if P != "manha":
+        m.emissivo(e_meio, 0.5, halo=0.4 if P == "tarde" else 0.7)
+    m.camada(rua, 0.2)
+    m.camada(pr)
+    if P == "noite":
+        m.camada(fundo_int, solida=False)
+    else:  # de dia o interior fica na penumbra de dentro, mais escuro e frio que a rua, com o lampião aceso lá no fundo
+        dentro = Camada()
+        dentro.c = fundo_int.c.copy()
+        k = {"manha": (0.62, "#8aa0c8"), "tarde": (0.75, "#ffb070")}[P]
+        dentro.c[:, :, :3] = dentro.c[:, :, :3] * k[0] * (0.7 + 0.3 * hexa(k[1]))
+        m.camada(dentro, solida=False)
+    m.camada(pr2)
+    m.camada(pb)
+    m.camada(vasos)
+    m.camada(pr_frente)
+    if P == "manha":
+        m.camada(apagar(em, pr2))
+        m.iluminar("#a8b2d0", [(325, 100, 40, 0.75, "#ffaa50", 0.2)], mapa=mapa_sol("#fff0d4", 0.6, sombra, 0.85))
+        pocas = ((ruido(291, 30, 6) > 0.58) & (_YS > 137) & (_XS > 236)).astype(np.float32)
+        m.reflexo(133.5, pocas, 0.5, 1.2)
+        ceu_claro = np.clip((m.img.mean(2) - 0.8) * 3, 0, 1) * (1 - m.solido)
+        raios = raios_radiais(ceu_claro, (96, 26), alcance=0.7)
+        m.somar(desfocar(raios[:, :, None], 6)[:, :, 0], "#fff4d8", 0.2)
+        m.camada(frente, 6, escurecer=0.6)
+        return m.acabar("#fff0d4", "#24366a", esquerda=0.4, centro_v=(0.66, 0.55), contraste=1.1, bloom=0.3)
+    if P == "tarde":
+        m.camada(apagar(em, pr2, vidro=("#3a2430", "#a8605a", "#ffd8a0"), aceso=0.45))
+        acesas = [l[:5] + (l[5] * 0.35,) for l in luzes]
+        poente = [(192, 108, 230, 0.5, "#ff9060", 0.3), (268, 60, 40, 1.2, "#ffa070", 0.3)]
+        m.iluminar("#7e6a90", acesas + poente, mapa=mapa_sol("#ffb070", 0.6, sombra, 0.9))
+        pocas = ((ruido(291, 30, 6) > 0.52) & (_YS > 136) & (_XS > 236)).astype(np.float32)
+        pocas = np.maximum(pocas, ((ruido(292, 18, 4) > 0.7) & (_YS > 140) & (_XS > 120)).astype(np.float32) * 0.7)
+        m.reflexo(133.5, pocas, 0.7, 1.2)
+        ceu_claro = np.clip((m.img.mean(2) - 0.62) * 2, 0, 1) * (1 - m.solido) * (_GYS < 112 * ESC)
+        raios = raios_radiais(ceu_claro, (192, 103), alcance=0.75)
+        m.somar(desfocar(raios[:, :, None], 6)[:, :, 0], "#ffb070", 0.7)
+        m.camada(frente, 6, escurecer=0.45)
+        return m.acabar("#ffcf8a", "#3a1e4e", esquerda=0.4, centro_v=(0.66, 0.55), bloom=0.6)
+    fortes = [l[:5] + (l[5] * 1.15,) for l in luzes]
+    m.iluminar("#2c3266", fortes + [(325, 124, 70, 0.3, "#ffa050", 0.4)], mapa=mapa_sol("#7a8ad0", 0.16, sombra, 0.9))
+    m.emissivo(em, 0, halo=0.5)
+    pocas = ((ruido(291, 30, 6) > 0.52) & (_YS > 136) & (_XS > 236)).astype(np.float32)
+    pocas = np.maximum(pocas, ((ruido(292, 18, 4) > 0.7) & (_YS > 140) & (_XS > 120)).astype(np.float32) * 0.7)
+    m.reflexo(133.5, pocas, 0.75, 1.2)
+    m.emissivo(vaga, 0, halo=1.0)
+    m.camada(frente, 6, escurecer=0.35)
+    return m.acabar("#ffd8a8", "#121848", esquerda=0.4, centro_v=(0.66, 0.55))
+
+
 def cena_correio() -> Image.Image:
     luzes: list = []
-    ceu = gradiente([(0, "#121838"), (26, "#262a5c"), (56, "#523c76"), (80, "#a65a78"), (96, "#e88a6e"), (110, "#ffc08a"), (160, "#ffc890")])
-    d = np.hypot((_XS - 190) / 170, (_YS - 112) / 46)
-    ceu += np.exp(-d * d * 1.4)[:, :, None] * hexa("#ff9a70") * 0.3
-    g = np.random.default_rng(201)
-    for _ in range(120):
-        x, y = int(g.random() * W), int(g.random() ** 1.8 * 60)
-        b = (0.25 + g.random() * 0.6) * (1 - y / 70)
-        ceu[y, x] = np.minimum(1, ceu[y, x] + b)
-    nv = ruido(202, 50, 5) * 0.7 + ruido(203, 12, 2) * 0.3
-    for y in range(44, 100):
-        for x in range(W):
-            v = nv[y, x] - 0.57 - abs(y - 76) / 80
-            if v > 0:
-                k = min(1, v * 7) * 0.8
-                t = (y - 44) / 56
-                cor = mistura("#4a3470", "#f0907a", t)
-                if nv[min(H - 1, y + 2), x] - 0.57 - abs(y + 2 - 76) / 80 < 0:
-                    cor = mistura("#e07a8a", "#ffd8a8", t)
-                ceu[y, x] = ceu[y, x] * (1 - k) + cor * k
+    if PERIODO is None:
+        ceu = gradiente([(0, "#121838"), (26, "#262a5c"), (56, "#523c76"), (80, "#a65a78"), (96, "#e88a6e"), (110, "#ffc08a"), (160, "#ffc890")])
+        d = np.hypot((_XS - 190) / 170, (_YS - 112) / 46)
+        ceu += np.exp(-d * d * 1.4)[:, :, None] * hexa("#ff9a70") * 0.3
+        g = np.random.default_rng(201)
+        for _ in range(120):
+            x, y = int(g.random() * W), int(g.random() ** 1.8 * 60)
+            b = (0.25 + g.random() * 0.6) * (1 - y / 70)
+            ceu[y, x] = np.minimum(1, ceu[y, x] + b)
+        nv = ruido(202, 50, 5) * 0.7 + ruido(203, 12, 2) * 0.3
+        for y in range(44, 100):
+            for x in range(W):
+                v = nv[y, x] - 0.57 - abs(y - 76) / 80
+                if v > 0:
+                    k = min(1, v * 7) * 0.8
+                    t = (y - 44) / 56
+                    cor = mistura("#4a3470", "#f0907a", t)
+                    if nv[min(H - 1, y + 2), x] - 0.57 - abs(y + 2 - 76) / 80 < 0:
+                        cor = mistura("#e07a8a", "#ffd8a8", t)
+                    ceu[y, x] = ceu[y, x] * (1 - k) + cor * k
+    else:
+        ceu = ceu_correio_hora()
 
     # ── Telhados da vila ao longe (silhuetas), com a torre da igrejinha e janelas acesas.
     longe = Camada()
@@ -2432,7 +2533,7 @@ def cena_correio() -> Image.Image:
     # ── Vasos de flores na calçada e primeiro plano desfocado.
     vasos = Camada()
     flores = ["#f4a7c4", "#ffe07a", "#c8a8f8", "#ffffff", "#f07a6a"]
-    for (vx, vy) in ((364, 131), (440, 131)):
+    for (vx, vy) in ((364, 131), (440, 131)) if PERIODO is None else ((440, 131),):
         vasos.ret(vx - 4, vy - 6, 9, 6, "#a8583a")
         vasos.ret(vx - 4, vy - 6, 9, 1, "#d08060")
         vasos.ret(vx + 3, vy - 5, 1, 5, "#6a3020")
@@ -2449,6 +2550,9 @@ def cena_correio() -> Image.Image:
     for _ in range(16):
         vaga.p(250 + g.random() * 230, 60 + g.random() * 80, "#fff0b0", 0.35 + g.random() * 0.4)
 
+    if PERIODO is not None:
+        return montar_correio_hora(ceu, longe, e_longe, meio_c, e_meio, rua, pr, fundo_int, pr2, pb, vasos, pr_frente,
+                                   em, vaga, frente, luzes)
     # ── Montagem.
     m = Montagem(ceu)
     m.camada(longe, 1.6)

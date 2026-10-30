@@ -154,7 +154,7 @@ def parede() -> tuple[Camada, np.ndarray]:
     g = np.random.default_rng(11)
     n = ruido(12, 5)
     n2 = ruido(13, 2)
-    fuligem = ruido(14, 24)
+    fuligem = desfocar(ruido(14, 30)[:, :, None], 4)[:, :, 0]
     # pedras irregulares em fiadas
     y = 12
     fiada = 0
@@ -186,7 +186,7 @@ def parede() -> tuple[Camada, np.ndarray]:
     # fuligem: escurece em cima, perto da coifa e em manchas
     ys, xs = np.mgrid[0:H, 0:W].astype(np.float32)
     sujo = 0.25 * (1 - suave(12, 70, ys)) + 0.45 * np.exp(-(((xs - 407) / 70) ** 2 + ((ys - 40) / 50) ** 2))
-    sujo += (fuligem - 0.5) * 0.25
+    sujo += (fuligem - 0.5) * 0.12
     sujo = np.clip(sujo, 0, 0.7)
     c.c[:CHAO, :, :3] *= (1 - sujo[:CHAO, :, None])
     # rodapé úmido e escuro
@@ -668,7 +668,7 @@ def forja() -> tuple[Camada, Camada, np.ndarray, np.ndarray]:
     # cinta de ferro com rebites na borda da coifa
     for y in range(60, 66):
         for x in range(360, 452):
-            k = 5 if y == 60 else 4 if y == 61 else 3 if y < 64 else 2 if y == 64 else 1
+            k = 4 if y == 60 else 3 if y == 61 else 2 if y < 64 else 1
             if y == 62 and x % 7 == 3:
                 k = 6
             if y == 63 and x % 7 == 3:
@@ -699,7 +699,7 @@ def forja() -> tuple[Camada, Camada, np.ndarray, np.ndarray]:
                 k = 6 if y == 91 else 3                                     # aresta da frente pega a luz
             if x < xa + 1:
                 k = 6
-            cor = hexa(PEDRA[k]) * (0.75 + 0.25 * t)
+            cor = hexa(PEDRA[k]) * (0.55 + 0.2 * t)
             # pó de carvão espalhado na laje
             cor = cor * (1 - 0.45 * math.exp(-((x - FOGO[0]) / 34) ** 2) * (0.6 + n2[y, x] * 0.6))
             c.p(x, y, cor)
@@ -732,21 +732,23 @@ def forja() -> tuple[Camada, Camada, np.ndarray, np.ndarray]:
             emis.p(x, y, cor, 1 if calor > 0.22 else 0.6)
             if calor <= 0.22:
                 c.p(x, y, "#1a1210")
-    # chamas: línguas recortadas subindo para a boca
-    for (x, alt, larg, fase) in ((392, 7, 1.6, 0.3), (398, 11, 2.4, 1.1), (404, 15, 3.0, 2.0), (409, 13, 2.6, 0.7),
-                                 (415, 10, 2.2, 1.6), (421, 7, 1.8, 2.6), (427, 5, 1.4, 0.9), (387, 4, 1.0, 1.9)):
-        base = 78 - 5 * math.sqrt(max(0, 1 - ((x - FOGO[0]) / 27) ** 2))
-        for j in range(alt):
-            v = j / alt
-            w = larg * (1 - v ** 1.3)
-            dx = math.sin(j * 0.75 + fase) * 1.1 * v
-            for i in range(-int(w + 0.5), int(w + 0.5) + 1):
-                if abs(i) > w + 0.2:
-                    continue
-                miolo = abs(i) < w * 0.5
-                cor = ("#fffbe8" if v < 0.3 and miolo else "#ffe070" if v < 0.5 or (miolo and v < 0.7)
-                       else "#ff9a2a" if v < 0.8 else "#e8501a")
-                emis.p(x + i + dx, base - j, cor, 1 if v < 0.75 else 0.65)
+    # chamas: campo de ruído esticado para cima, recortado por um envelope que afina com a altura (línguas soltas)
+    fn = ruido_ret(45, 2, 5)
+    fn2 = ruido_ret(46, 3, 3)
+    for y in range(58, 82):
+        for x in range(384, 432):
+            dx = (x + 0.5 - FOGO[0]) / 24
+            base = 79 - 5 * math.sqrt(max(0, 1 - dx * dx))
+            alt = (base - y) / 19                     # 0 na brasa, 1 no alto
+            if alt < -0.1 or abs(dx) > 1:
+                continue
+            env = (1 - abs(dx) ** 1.5) * (1 - max(0, alt)) ** 0.8
+            v = fn[y, x] * 0.7 + fn2[y, x] * 0.45 - 0.15 + env * 0.55 - max(0, alt) * 0.5
+            if v < 0.62:
+                continue
+            q = (v - 0.62) / 0.5 + (1 - max(0, alt)) * 0.3
+            cor = "#fff8dc" if q > 0.95 else "#ffe27a" if q > 0.7 else "#ffac38" if q > 0.45 else "#ff7424" if q > 0.22 else "#d84414"
+            emis.p(x, y, cor, 1 if q > 0.22 else 0.75)
     # tenaz e atiçador deitados na laje
     c.linha(436, 82, 452, 89, FERRO[4])
     c.linha(437, 83, 452, 90, FERRO[2])
@@ -757,7 +759,7 @@ def forja() -> tuple[Camada, Camada, np.ndarray, np.ndarray]:
     # frente de tijolo (y 93–112) e o cinzeiro aberto
     for y in range(93, 113):
         for x in range(362, 452):
-            k = tijolo(x, y, 4, alt=4, larg=8)
+            k = tijolo(x, y, 3, alt=4, larg=8)
             if x < 364:
                 k = min(5, k + 1)
             if x > 448:
@@ -780,25 +782,35 @@ def forja() -> tuple[Camada, Camada, np.ndarray, np.ndarray]:
     for (x, y) in ((398, 108), (402, 109), (409, 108), (414, 109), (406, 107), (411, 109)):
         emis.p(x, y, "#ff6a20", 0.85)
         emis.p(x + 1, y, "#b8360e", 0.6)
-    # o fole: tábuas, couro pregueado, bico de latão entrando na lateral da forja
-    for i in range(29):
-        x = 450 + i
-        ytop = 64 + i * 0.1
-        ybot = 88 - i * 0.3
-        for y in range(int(ytop), int(ybot) + 1):
-            if y <= ytop + 1.5:
-                c.p(x, y, MADEIRA[4] if y <= ytop + 0.5 else MADEIRA[3])
-            elif y >= ybot - 1.5:
-                c.p(x, y, MADEIRA[2] if y < ybot - 0.5 else MADEIRA[1])
-            else:
-                dobra = ((y - ytop) / max(1, ybot - ytop) * 5 + i * 0.03) % 1
-                k = 4 if dobra < 0.22 else 3 if dobra < 0.5 else 2 if dobra < 0.8 else 1
-                if x > 474:
-                    k = max(0, k - 1)
-                c.p(x, y, COURO[k])
-        if i % 5 == 2:
-            c.p(x, int(ytop) + 1, LATAO[4])
-            c.p(x, int(ybot) - 1, LATAO[2])
+    # o fole (de lado): duas tábuas em pera presas na dobradiça do bico, couro sanfonado entre elas
+    hx, hy = 452, 83
+    for y in range(58, 96):
+        for x in range(452, 480):
+            dxh, dyh = x + 0.5 - hx, y + 0.5 - hy
+            ang = math.atan2(dyh, dxh)
+            r = math.hypot(dxh, dyh)
+            a_top, a_bot = -0.62, 0.42                       # abertura (radianos) das duas tábuas
+            if not (a_top <= ang <= a_bot) or r > 28 or r < 2:
+                continue
+            # tábua de cima e de baixo (bordas do leque), com espessura
+            if ang < a_top + 2.2 / max(r, 1):
+                c.p(x, y, MADEIRA[4] if ang < a_top + 1.0 / max(r, 1) else MADEIRA[3])
+                continue
+            if ang > a_bot - 2.2 / max(r, 1):
+                c.p(x, y, MADEIRA[2] if ang > a_bot - 1.0 / max(r, 1) else MADEIRA[1])
+                continue
+            if r > 26.5:
+                c.p(x, y, MADEIRA[2])                          # a tábua de trás (borda larga)
+                continue
+            # pregas: faixas de raio (sanfona), clara em cima de cada dobra
+            dobra = (r / 3.1) % 1
+            k = 4 if dobra < 0.2 else 3 if dobra < 0.45 else 2 if dobra < 0.8 else 1
+            k = max(0, k - (1 if ang > 0.1 else 0))
+            c.p(x, y, COURO[k])
+    for t in range(4, 28, 4):                                  # tachas de latão nas tábuas
+        c.p(round(hx + t * math.cos(-0.6)), round(hy + t * math.sin(-0.6)) + 1, LATAO[4])
+        c.p(round(hx + t * math.cos(0.4)), round(hy + t * math.sin(0.4)) - 1, LATAO[2])
+    c.disco(hx, hy, 2, (LATAO[4], LATAO[3], LATAO[1]))         # dobradiça
     for x in range(444, 452):
         c.p(x, 83, LATAO[4] if x < 447 else LATAO[3])
         c.p(x, 84, LATAO[1])
@@ -807,8 +819,8 @@ def forja() -> tuple[Camada, Camada, np.ndarray, np.ndarray]:
     c.ret(454, 87, 1, 113 - 87, MADEIRA[4])
     c.ret(473, 80, 3, 114 - 80, MADEIRA[2])
     c.ret(473, 80, 1, 114 - 80, MADEIRA[3])
-    c.linha(462, 65, 479, 40, MADEIRA[4])
-    c.linha(463, 65, 480, 40, MADEIRA[1])
+    c.linha(466, 70, 479, 40, MADEIRA[4])
+    c.linha(467, 70, 480, 40, MADEIRA[1])
     for y in range(14, 42, 2):
         c.p(477, y, FERRO[3])
         c.p(477, y + 1, FERRO[1])
@@ -856,11 +868,11 @@ def chao() -> Camada:
         # tamanho da fiada em pixels nesta linha (para as arestas)
         dz_px = fila_z / (K / (y + 0.5 - hz) ** 2)
         for x in range(W):
-            X = (x + 0.5 - fx) * z / 2.2 + fila * 0.37 + (fila % 3) * 0.21
-            larg = 0.9 + ((fila * 7) % 5) * 0.06
+            larg = 15.0 + ((fila * 7) % 5) * 1.6
+            X = (x + 0.5 - fx) * z + fila * 6.3 + (fila % 3) * 4.1
             col = math.floor(X / larg)
             fx_ = X / larg - col
-            px_lado = larg * 2.2 / z            # largura da laje em px
+            px_lado = larg / z                  # largura da laje em px
             semente = (fila * 131 + col * 71) % 997
             tom = (semente % 13) / 13
             v = n[y, x] * 0.45 + n2[y, x] * 0.3 + tom * 0.35
@@ -877,12 +889,12 @@ def chao() -> Camada:
             # trincas finas em algumas lajes
             if semente % 7 == 0 and abs((fx_ - 0.3) - (fz - 0.5) * 0.6) < 0.5 / max(px_lado, 1) and 0.15 < fz < 0.9:
                 k = 1
-            cor = hexa(PEDRA[k]) * (0.92 + 0.16 * n2[y, x])
+            cor = hexa(PEDRA[k]) * (1.02 + 0.16 * n2[y, x])
             # pó de carvão perto da forja e no caminho até a bigorna
             carvao = math.exp(-(((x - 404) / 60) ** 2 + ((y - 114) / 10) ** 2)) * 0.85
             carvao += math.exp(-(((x - 296) / 34) ** 2 + ((y - 142) / 7) ** 2)) * 0.45
             carvao *= 0.5 + n2[y, x] * 0.9
-            cor = cor * (1 - min(0.7, carvao))
+            cor = cor * (1 - min(0.45, carvao * 0.6))
             # gasto: caminho da porta até a bigorna, mais liso e claro
             gasto = math.exp(-(((x - 240 - (y - CHAO) * 0.8) / 28) ** 2)) * 0.14
             cor = cor * (1 + gasto)
@@ -981,13 +993,19 @@ def bigorna(c: Camada, emis: Camada) -> None:
             c.p(x, 102, base2 if not furo else "#0a0c10")
     c.p(284, 101, ACO[5])
     c.p(285, 101, ACO[5])
-    # martelo deitado na mesa, cabo para a esquerda (sobre o chifre)
-    c.ret(268, 98, 18, 2, MADEIRA[4])
-    c.ret(268, 99, 18, 1, MADEIRA[2])
-    c.ret(285, 95, 5, 8, FERRO[3])
-    c.ret(285, 95, 5, 1, FERRO[5])
-    c.ret(285, 95, 1, 8, FERRO[4])
-    c.ret(289, 96, 1, 7, FERRO[1])
+    # martelo encostado no toco, à esquerda: cabeça no chão, cabo inclinado
+    for i in range(20):
+        x, y = 271 + i * 0.32, 141 - i
+        c.p(round(x), round(y), MADEIRA[4])
+        c.p(round(x) + 1, round(y), MADEIRA[2])
+    c.ret(266, 139, 10, 4, FERRO[3])
+    c.ret(266, 139, 10, 1, FERRO[5])
+    c.ret(266, 139, 1, 4, FERRO[4])
+    c.ret(275, 140, 1, 3, FERRO[1])
+    # marreta pequena deitada na mesa, atrás da placa
+    c.ret(296, 99, 14, 1, MADEIRA[4])
+    c.ret(293, 98, 4, 3, FERRO[4])
+    c.ret(293, 98, 4, 1, FERRO[6])
 
 
 def barril(c: Camada, emis: Camada) -> None:
@@ -1183,9 +1201,9 @@ PERIODOS = {
     "tarde": dict(amb="#c8987c", k_amb=0.5, forja=1.05, porta="#ffb478", k_porta=0.9,
                   sol="#ffa456", k_sol=1.25, sol_dx=0.95, sol_comp=64, ceu=1.12,
                   quente="#ffc890", fria="#2e1c3e", esquerda=0.32, fumaca="#d4aa8c", lamparina=0.45),
-    "noite": dict(amb="#3e5290", k_amb=0.26, forja=1.4, porta="#5a74b8", k_porta=0.42,
+    "noite": dict(amb="#4256a0", k_amb=0.32, forja=1.4, porta="#5a74b8", k_porta=0.42,
                   sol="#9ab4ec", k_sol=0.45, sol_dx=-0.3, sol_comp=30, ceu=1.0,
-                  quente="#ffc890", fria="#121c40", esquerda=0.34, fumaca="#5a5e74", lamparina=1.0),
+                  quente="#ffc890", fria="#121c40", esquerda=0.3, fumaca="#5a5e74", lamparina=1.0),
 }
 
 
@@ -1279,6 +1297,7 @@ def montar(periodo: str) -> Image.Image:
     sombra_f = desfocar(ampliar(sombra_f[:, :, None]), 4)[:, :, 0]
     forja_luz_chao = forja_luz * (1 - sombra_f * 0.85)
     luz += forja_luz_chao[:, :, None] * hexa("#ff9444") * 1.25 * kf
+    luz += (luz_pontual(372, 128, 70, 0.4) * (1 - sombra_f * 0.85))[:, :, None] * hexa("#ff8a3a") * 0.55 * kf   # poça quente no chão
     luz += luz_pontual(FOGO[0], FOGO[1] + 6, 46, 0.8)[:, :, None] * hexa("#ffc070") * 0.45 * kf * tampa[:, :, None]
     luz += luz_pontual(306, 102, 18, 0.8)[:, :, None] * hexa("#ff9040") * 0.8           # a placa em brasa
     if P["lamparina"] > 0:
@@ -1305,13 +1324,13 @@ def montar(periodo: str) -> Image.Image:
     # corpo da forja e do fole, com a mesma luz; a frente de tijolo só vê a luz rebatida; a boca, o fogo direto
     fl = luz.copy()
     fm = desfocar(ampliar(frente_m[:, :, None]), 1)[:, :, 0]
-    fl = fl * (1 - fm[:, :, None] * 0.55)
+    fl = fl * (1 - fm[:, :, None] * 0.62)
     forja_rgb = forja_a[:, :, :3] * fl
     int_a = ampliar(interior[:, :, None])[:, :, 0]
     forja_rgb += forja_a[:, :, :3] * (luz_pontual(FOGO[0], FOGO[1] - 2, 40, 0.45) * int_a)[:, :, None] * hexa("#ff7a2a") * 7 * kf
     # a borda de baixo da coifa e a cinta recebem o fogo por baixo
     sob = np.exp(-((ys - 64) / 3.5) ** 2) * np.exp(-((xs - FOGO[0]) / 40) ** 2)
-    forja_rgb += forja_a[:, :, :3] * sob[:, :, None] * hexa("#ffa050") * 2.2 * kf
+    forja_rgb += forja_a[:, :, :3] * sob[:, :, None] * hexa("#ff9040") * 1.1 * kf
     img = img * (1 - forja_a[:, :, 3:4]) + forja_rgb * forja_a[:, :, 3:4]
 
     # objetos do meio (bigorna, barril): luz do lugar + o feixe que passa por eles + contorno quente da forja
@@ -1353,7 +1372,7 @@ def montar(periodo: str) -> Image.Image:
 
     # feixe volumétrico entrando pela porta, com poeira dançando
     vol_f = vol_a * (1 - vao_a) * (GRADE_Y < (CHAO + comp) * ESC)
-    img += vol_f[:, :, None] * hexa(P["sol"]) * P["k_sol"] * 0.32
+    img += vol_f[:, :, None] * hexa(P["sol"]) * P["k_sol"] * 0.5
     poeira(81, 1100, (190, 28, 340, 156), "#fff2d8", img, vol_f * 1.6, 0.7)
     poeira(82, 500, (350, 10, 470, 90), "#ffc080", img, forja_luz * 0.5, 0.55)
 

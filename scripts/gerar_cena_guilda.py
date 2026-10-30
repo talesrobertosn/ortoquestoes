@@ -230,13 +230,13 @@ def pedra(c: Camada, x0, y0, x1, y1, tons, seed: int, bw: int = 12, bh: int = 6,
 PERIODOS = {
     "manha": dict(
         ceu=("#4a86d8", "#9cc4ee", "#fff2d4"), astro="sol", astro_cor="#fffbe8", nuvem=("#ffffff", "#c4d4ea"),
-        morro=("#7a9ab8", "#5a7a9a"), amb="#c4d0e4", amb_k=1.0, sol="#fff0cc", sol_k=1.35,
-        proj=(0.62, -0.42), feixe="#fff0d0", feixe_k=0.95, fogo=0.32, velas=0, quente="#ffe6b8", fria="#26385e",
+        morro=("#7a9ab8", "#5a7a9a"), amb="#c4d0e4", amb_k=0.86, sol="#fff0cc", sol_k=2.0,
+        proj=(0.62, -0.42), feixe="#fff0d0", feixe_k=1.35, fogo=0.32, velas=0, quente="#ffe6b8", fria="#26385e",
         bloom_lim=0.9, bloom_k=0.32, exposicao=1.0, estrelas=False),
     "tarde": dict(
         ceu=("#3e3a84", "#e0705a", "#ffc070"), astro="sol", astro_cor="#ffe2a0", nuvem=("#ffd090", "#a85a7a"),
         morro=("#6a3a5a", "#4a2a4a"), amb="#d89a72", amb_k=0.78, sol="#ffa04a", sol_k=1.7,
-        proj=(0.95, -0.95), feixe="#ff9a48", feixe_k=1.15, fogo=0.62, velas=1, quente="#ffc890", fria="#3a2a5a",
+        proj=(0.95, -0.95), feixe="#ff9a48", feixe_k=1.3, fogo=0.62, velas=1, quente="#ffc890", fria="#3a2a5a",
         bloom_lim=0.86, bloom_k=0.4, exposicao=1.0, estrelas=False),
     "noite": dict(
         ceu=("#060a1e", "#14204a", "#2a3a72"), astro="lua", astro_cor="#eef2ff", nuvem=("#3a4a7a", "#1a2448"),
@@ -699,7 +699,7 @@ def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada,
     # feixes de luz das janelas
     direcao = (b_proj, 1 + a_proj)
     vol = feixes(vidro, direcao, 110, chao_y)
-    img += vol[:, :, None] * hexa(per["feixe"]) * per["feixe_k"] * 1.4
+    img += vol[:, :, None] * hexa(per["feixe"]) * per["feixe_k"] * 2.4
     poeira(int(chao_y * 7 + a_proj * 100), 900, (0, 0, W, chao_y + 30), per["feixe"], img, vol * 3.2, 0.7)
 
     # primeiro plano desfocado, iluminado pela mesma luz
@@ -760,6 +760,12 @@ def g_parede(per: dict, nome: str, fogo: Camada, luzes: list) -> tuple[Camada, n
     c.ret(0, 81, W, 1, MADEIRA[5])
     c.ret(0, 82, W, 1, MADEIRA[3])
     c.ret(0, 94, W, 2, MADEIRA[0])
+    # oclusão e manchas: escurece embaixo da viga, nos cantos e em manchas de umidade/fuligem
+    mancha = ruido(13, 26) * 0.6 + ruido(14, 9) * 0.4
+    ys_, xs_ = np.mgrid[0:H, 0:W].astype(np.float32)
+    ao = 1 - 0.38 * suave(26, 10, ys_) - 0.18 * suave(0.55, 0.85, mancha) - 0.12 * suave(80, 96, ys_)
+    ao -= 0.25 * suave(60, 0, xs_)
+    c.c[:G_CHAO, :, :3] *= np.clip(ao, 0.3, 1)[:G_CHAO, :, None]
     # teto: forro de tábuas, a viga mestra e as mãos-francesas
     madeira(c, 0, 0, W, 6, CARVALHO, tabua=3, base=1, seed=21)
     madeira(c, 0, 6, W, 5, MADEIRA, base=3, seed=22, nos=12)
@@ -806,7 +812,7 @@ def g_parede(per: dict, nome: str, fogo: Camada, luzes: list) -> tuple[Camada, n
     if per["velas"] >= 1:
         fogo.ret(lx - 1, ly + 5, 3, 2, "#ffd890")
         fogo.p(lx, ly + 5, "#fff6d8")
-        luzes.append((lx, ly + 6, 34, "#ffb460", 0.55))
+        luzes.append((lx, ly + 6, 46, "#ffb460", 0.5 * per["velas"]))
     vidro_cor = c.c[:, :, :3] * vidro[:, :, None]
     return c, vidro, vidro_cor
 
@@ -952,12 +958,14 @@ def g_placar(c: Camada) -> None:
         for j in range(5):
             c.p(bx + lado * j, y0 + 9 - j // 2, "#5aa04a" if j % 2 else "#3a7a3a")
             c.p(bx + lado * j, y0 + 6 + (j % 2), "#7ac05a")
-    # quadro de furos (feltro escuro)
+    # quadro de furos (tábua de pinho clara, gasta no meio)
     bx0, by0, bw, bh = x0 + 4, y0 + 14, w - 8, h - 18
     for y in range(by0, by0 + bh):
         for x in range(bx0, bx0 + bw):
-            v = NV_GRAO[y, x]
-            c.p(x, y, "#2e2418" if v > 0.7 else "#262016" if v > 0.3 else "#211b12")
+            v = NV_MADEIRA[(y * 5) % H, (x * 2) % W] * 0.7 + NV_GRAO[y, x] * 0.3
+            c.p(x, y, "#b89464" if v > 0.62 else "#a6824f" if v > 0.36 else "#94723f")
+    c.ret(bx0, by0, bw, 1, "#4a3018")
+    c.ret(bx0, by0, 1, bh, "#4a3018")
     servicos = [("dourado", 0.96, "coroa"), ("vermelho", 0.83, "osso"), ("azul", 0.7, "escudo"),
                 ("verde", 0.58, "estrela"), ("roxo", 0.41, "cruz"), ("laranja", 0.27, "coluna")]
     passo = bh // len(servicos)
@@ -968,40 +976,48 @@ def g_placar(c: Camada) -> None:
         c.ret(bx0 + 1, yr, 5, passo - 1, tons[1])
         c.ret(bx0 + 1, yr, 5, 1, tons[0])
         c.ret(bx0 + 5, yr, 1, passo - 1, tons[3])
-        escrever(c, bx0 + 8, yr, str(r + 1), "#e8dcc0" if r else ouro[5], "#0e0a06")
+        c.p(bx0 + 3, yr + 2, "#fff4d0")
+        escrever(c, bx0 + 8, yr, str(r + 1), "#2a1808" if r else METAIS["ouro"][1], "#d8b884")
         # trilha de furos
         xt0, xt1 = bx0 + 13, bx0 + bw - 3
         furos = list(range(xt0, xt1, 3))
         for xf in furos:
-            c.p(xf, yr + 2, "#0c0806")
-            c.p(xf, yr + 3, "#4a3a24")
-        # pino: posição pela pontuação; o rastro (pino de trás) mais apagado
+            c.p(xf, yr + 2, "#2a180a")
+            c.p(xf, yr + 3, "#c8a878")
+        # o fio da cor do serviço do começo até o pino (lê-se como uma barra do ranking) e o pino
         k = int(pont * (len(furos) - 1))
-        for (kk, alfa) in ((max(0, k - 3 - r % 3), 0.55), (k, 1.0)):
-            xp = furos[kk]
-            c.p(xp + 1, yr + 3, "#000000", 0.5 * alfa)
-            c.ret(xp, yr, 1, 3, tons[0] if alfa == 1 else tons[2], alfa)
-            c.p(xp, yr - 1, "#ffffff" if alfa == 1 else tons[1], alfa)
-            c.p(xp, yr + 2, tons[2], alfa)
+        xp = furos[k]
+        for x in range(xt0, xp):
+            c.p(x, yr + 2, tons[1])
+            c.p(x, yr + 1, tons[0], 0.55)
+            c.p(x, yr + 3, "#000000", 0.18)
+        c.ret(xp - 1, yr - 1, 3, 5, "#1a0e06")
+        c.ret(xp, yr - 1, 1, 4, tons[0])
+        c.p(xp, yr - 1, "#ffffff")
+        c.p(xp, yr + 2, tons[2])
+        c.p(xp + 1, yr, tons[1])
+        c.p(xp + 1, yr + 1, tons[2])
+        c.p(xp + 2, yr + 3, "#000000", 0.35)
         # a coroa do primeiro lugar
         if r == 0:
-            xp = furos[k]
-            c.bitmap(xp - 2, yr - 4 if yr - 4 > by0 else yr, ["#.#.#", "#####"], {"#": ouro[5]})
+            c.bitmap(xp - 2, yr - 6, ["#.#.#", "#####"], {"#": ouro[5]})
+            c.p(xp, yr - 6, "#ffffff")
         if r < len(servicos) - 1:
             for x in range(bx0 + 7, bx0 + bw - 1):
-                c.p(x, yr + passo - 1, "#16100a")
-    # recado pregado no canto, com alfinete vermelho
-    rx, ry = x0 + w - 13, y0 + h - 15
-    for y in range(ry, ry + 13):
-        for x in range(rx, rx + 11):
-            torto = (y - ry) * 0.12
+                c.p(x, yr + passo - 1, "#7a5a32")
+    # recado pregado embaixo da moldura, com alfinete vermelho
+    rx, ry = x0 + w - 18, y0 + h - 3
+    for y in range(ry, ry + 12):
+        for x in range(rx, rx + 10):
+            torto = (y - ry) * 0.15
             xx = round(x + torto)
-            cor = PERGAMINHO[4] if x < rx + 9 else PERGAMINHO[3]
-            if y == ry + 12 or x == rx + 10:
+            cor = PERGAMINHO[4] if x < rx + 8 else PERGAMINHO[3]
+            if y == ry + 11 or x == rx + 9:
                 cor = PERGAMINHO[2]
-            if (y - ry) in (4, 6, 8, 10) and rx + 2 <= x < rx + 8 - ((y + x) % 3 == 0):
+            if (y - ry) in (4, 6, 8) and rx + 2 <= x < rx + 7 - ((y + x) % 3 == 0):
                 cor = "#6a5038"
             c.p(xx, y, cor)
+    c.ret(rx + 2, ry + 12, 9, 1, "#000000", 0.3)
     c.disco(rx + 5.5, ry + 2, 1.3, ("#ff7a6a", "#d8302a", "#7a1414"))
     # taça pequena em cima da moldura
     tx = x0 + w // 2
@@ -1096,7 +1112,7 @@ def g_lareira(c: Camada, per: dict, fogo: Camada, luzes: list) -> None:
             junta = (y - btopo) % 3 == 0 or (x + fila * 3) % 7 == 0
             prof = 1 - abs(dx) * 0.5
             fuligem = suave(G_CHAO - 20, btopo, y)
-            base_c = misturar("#6a2a1a", "#120a08", min(1.0, fuligem * 1.2 + 0.2))
+            base_c = misturar("#6a2a1a" if per["fogo"] > 0.4 else "#3a1e16", "#120a08", min(1.0, fuligem * 1.2 + 0.2))
             if junta:
                 base_c = base_c * 0.55
             c.p(x, y, base_c * (0.7 + 0.3 * prof))
@@ -1126,9 +1142,16 @@ def g_lareira(c: Camada, per: dict, fogo: Camada, luzes: list) -> None:
         x, y = cx - 13 + int(gb.random() * 27), G_CHAO - 8 + int(gb.random() * 8)
         if c.c[y, x, 3] > 0 and gb.random() < 0.8:
             fogo.p(x, y, "#ff6a1a" if gb.random() < 0.6 else "#ffb040", 0.55 + per["fogo"] * 0.45)
-    alt = {0.32: 3.0, 0.62: 11.0, 1.0: 17.0}.get(per["fogo"], 10.0)
+    alt = {0.32: 0.0, 0.62: 11.0, 1.0: 17.0}.get(per["fogo"], 10.0)
     g_fogo(fogo, cx, G_CHAO - 6, 13, alt, 56)
     g_fogo(fogo, cx - 6, G_CHAO - 5, 6, alt * 0.7, 57)
+    if per["fogo"] < 0.4:
+        # de manhã: só brasas e um fio de fumaça subindo para a coifa
+        for j in range(26):
+            y = G_CHAO - 7 - j
+            for k2 in range(2):
+                x = cx + round(math.sin(j * 0.32 + k2 * 2.1) * (1 + j * 0.12)) + k2 * 2 - 1
+                c.p(x, y, "#b8b0a8", 0.32 * (1 - j / 26))
     luzes.append((cx, G_CHAO - 10, 78, "#ff8a3a", 0.85 * per["fogo"]))
     luzes.append((cx, G_CHAO - 8, 30, "#ffc070", 0.55 * per["fogo"]))
     # na cornija: castiçais, ampulheta, caneca e uma caveirinha
@@ -1258,17 +1281,17 @@ def g_mesa(per: dict, fogo: Camada, luzes: list) -> tuple[Camada, Camada]:
     """A mesa comprida (tampo de tábuas em leve perspectiva, cavaletes), os dois bancos e tudo em cima dela.
     Devolve a camada e o que faz sombra."""
     c = Camada()
-    y_fundo, y_frente = 104, 113
-    xa0, xb0, xa1, xb1 = 110, 306, 100, 314
+    y_fundo, y_frente = 101, 114
+    xa0, xb0, xa1, xb1 = 112, 304, 98, 316
 
     def borda(y):
         t = (y - y_fundo) / (y_frente - y_fundo)
         return xa0 + (xa1 - xa0) * t, xb0 + (xb1 - xb0) * t
 
     # banco de trás (só o assento aparece por cima da mesa)
-    madeira(c, 118, 100, 182, 2, MADEIRA, base=3, seed=71)
-    c.ret(118, 100, 182, 1, MADEIRA[4])
-    c.ret(118, 102, 182, 2, MADEIRA[1])
+    madeira(c, 118, 97, 182, 2, MADEIRA, base=3, seed=71)
+    c.ret(118, 97, 182, 1, MADEIRA[4])
+    c.ret(118, 99, 182, 2, MADEIRA[1])
     # tampo: tábuas no comprimento
     for y in range(y_fundo, y_frente):
         xa, xb = borda(y)
@@ -1286,8 +1309,11 @@ def g_mesa(per: dict, fogo: Camada, luzes: list) -> tuple[Camada, Camada]:
         c.p(int(round(xb)) - 1, y, MADEIRA[2])
     # aba da frente e cabeceiras
     c.ret(xa1, y_frente, xb1 - xa1, 1, MADEIRA[5])
-    madeira(c, xa1, y_frente + 1, xb1 - xa1, 3, MADEIRA, base=2, seed=72)
-    c.ret(xa1, y_frente + 3, xb1 - xa1, 1, MADEIRA[0])
+    madeira(c, xa1, y_frente + 1, xb1 - xa1, 4, MADEIRA, base=2, seed=72)
+    c.ret(xa1, y_frente + 4, xb1 - xa1, 1, MADEIRA[0])
+    for xr in range(xa1 + 6, xb1 - 4, 24):
+        c.p(xr, y_frente + 2, FERRO[5])
+        c.p(xr + 1, y_frente + 3, FERRO[2])
     # cavaletes (pés em X) e a travessa
     for xl in (112, 206, 300):
         for j in range(16):
@@ -1300,24 +1326,24 @@ def g_mesa(per: dict, fogo: Camada, luzes: list) -> tuple[Camada, Camada]:
     c.ret(112, y_frente + 10, 190, 2, MADEIRA[1])
     c.ret(112, y_frente + 10, 190, 1, MADEIRA[2])
     # banco da frente
-    madeira(c, 96, 121, 222, 3, MADEIRA, base=3, seed=73)
-    c.ret(96, 121, 222, 1, MADEIRA[5])
-    c.ret(96, 124, 222, 2, MADEIRA[2])
-    c.ret(96, 125, 222, 1, MADEIRA[0])
-    for xl in (102, 206, 310):
+    madeira(c, 94, 124, 226, 3, MADEIRA, base=3, seed=73)
+    c.ret(94, 124, 226, 1, MADEIRA[5])
+    c.ret(94, 127, 226, 2, MADEIRA[2])
+    c.ret(94, 128, 226, 1, MADEIRA[0])
+    for xl in (100, 206, 312):
         for j in range(12):
-            c.p(xl - 2 - j * 0.15, 126 + j, MADEIRA[3])
-            c.p(xl - 1 - j * 0.15, 126 + j, MADEIRA[1])
-            c.p(xl + 2 + j * 0.15, 126 + j, MADEIRA[2])
-            c.p(xl + 3 + j * 0.15, 126 + j, MADEIRA[1])
+            c.p(xl - 2 - j * 0.15, 129 + j, MADEIRA[3])
+            c.p(xl - 1 - j * 0.15, 129 + j, MADEIRA[1])
+            c.p(xl + 2 + j * 0.15, 129 + j, MADEIRA[2])
+            c.p(xl + 3 + j * 0.15, 129 + j, MADEIRA[1])
     # um manto esquecido no banco e uma bolsa de couro
     for j in range(7):
         for i in range(10 - j // 2):
             dobra = math.sin(i * 1.3 + j)
-            c.p(150 + i + j // 3, 119 + j, "#5a2a6a" if dobra > 0.2 else "#3e1a4c")
-    c.ret(262, 117, 6, 4, "#7a4a24")
-    c.ret(262, 117, 6, 1, "#a06a3a")
-    c.p(265, 119, METAIS["ouro"][4])
+            c.p(150 + i + j // 3, 122 + j, "#5a2a6a" if dobra > 0.2 else "#3e1a4c")
+    c.ret(262, 120, 6, 4, "#7a4a24")
+    c.ret(262, 120, 6, 1, "#a06a3a")
+    c.p(265, 122, METAIS["ouro"][4])
     sombra = Camada()
     sombra.c[:] = c.c
     # ── em cima da mesa
@@ -1443,7 +1469,7 @@ def lustre_roda(c: Camada, fogo: Camada, cx: int, y: int, larg: int, acesa: bool
         c.p(cx + i, y - round(1.2 * (1 - (i / meia) ** 2)) + 1, MADEIRA[1], 0.8)
     for i in range(-meia, meia + 1, max(3, larg // 5)):
         yy = y + round(1.6 * (1 - (i / meia) ** 2))
-        vela(c, fogo, cx + i, yy, 3, acesa, luzes, 0.7, 28)
+        vela(c, fogo, cx + i, yy, 3, acesa, luzes, 0.45, 24)
 
 
 def g_frente() -> Camada:
@@ -1479,12 +1505,12 @@ def g_frente() -> Camada:
 def g_sombras() -> Camada:
     """Sombras de contato no chão (debaixo da mesa, dos bancos e dos braseiros)."""
     c = Camada()
-    for y in range(114, 136):
+    for y in range(116, 142):
         for x in range(90, 324):
-            k = 0.62 * (1 - abs(y - 124) / 13) * (1 - max(0, abs(x - 207) - 96) / 12)
+            k = 0.62 * (1 - abs(y - 128) / 14) * (1 - max(0, abs(x - 207) - 96) / 12)
             if k > 0:
                 c.p(x, y, "#000000", min(0.75, k))
-    for (cx, cy, rx) in ((456, 139, 13), (74, 125, 10), (160, 96, 10)):
+    for (cx, cy, rx) in ((456, 139, 13), (160, 96, 10)):
         c.elipse(cx, cy, rx, 2.2, "#000000", 0.5)
     return c
 
@@ -1507,10 +1533,9 @@ def montar_guilda(nome: str) -> Image.Image:
     fundo.c[G_CHAO:] = np.where(chao.c[G_CHAO:, :, 3:4] > 0, chao.c[G_CHAO:], fundo.c[G_CHAO:])
     mesa, ocl = g_mesa(per, fogo, luzes)
     braseiro(mesa, fogo, 456, 139, per["fogo"], luzes, 81)
-    braseiro(mesa, fogo, 74, 125, per["fogo"], luzes, 83, 0.5)
     ocl_b = Camada()
     ocl_b.c[:] = ocl.c
-    lustre_roda(mesa, fogo, 172, 26, 28, per["velas"] >= 2, luzes)
+    lustre_roda(mesa, fogo, 208, 46, 30, per["velas"] >= 2, luzes)
     frente = g_frente()
     sombras = g_sombras()
     img = compor(per, fundo, mesa, frente, fogo, sombras, vidro, vidro_cor, luzes, G_CHAO, ocl_b)

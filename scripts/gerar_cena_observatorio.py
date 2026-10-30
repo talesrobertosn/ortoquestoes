@@ -224,7 +224,7 @@ def tons_idx(tons, k: float):
 # Paletas (do escuro ao claro). A luz da hora entra depois, na montagem.
 LATAO = ["#2a1a08", "#5a3a12", "#8a5e1e", "#b8862e", "#dcae48", "#f4d27a", "#fff0b8"]
 LATAO_ESC = ["#1e1206", "#3a2610", "#5e4018", "#7e5a22"]
-FERRO = ["#14141c", "#22222e", "#323244", "#46465c", "#62627a", "#8a8aa0"]
+FERRO = ["#121214", "#1e1e24", "#2c2c34", "#3e3e48", "#56565f", "#7c7c86"]
 MADEIRA = ["#1e120a", "#2e1c10", "#422816", "#58361e", "#704628", "#8a5a34", "#a6703f"]
 PERGAMINHO = ["#8a6e48", "#b0905e", "#ccae78", "#e2c892", "#f2e0b0", "#faf0d0"]
 TINTA = "#2e2016"
@@ -234,16 +234,16 @@ PEDRA = ("#9a8c84", "#7c706c", "#605654", "#443c3e", "#2e282c")
 # ─────────────────────────────── Horas do dia ───────────────────────────────
 PERIODOS = {
     "manha": dict(
-        ceu=("#4f8ed6", "#8cc0ea", "#e6f0f0"), amb="#9aa6c8", amb_k=0.62, ceu_luz="#bcd4f4", ceu_k=0.55,
-        sol="#ffe2a8", sol_k=1.05, rumo=(-0.62, -1.0), feixe=0.20, lamp=0.0, vela=0.0,
+        ceu=("#4f8ed6", "#8cc0ea", "#e6f0f0"), amb="#9eaacc", amb_k=0.72, ceu_luz="#bcd4f4", ceu_k=0.7,
+        sol="#ffe6b0", sol_k=1.4, rumo=(-0.62, -1.0), feixe=0.20, lamp=0.0, vela=0.0,
         quente="#ffe8c4", fria="#22406a", montanha=("#7a9ccc", "#9ab6d8"), nuvem=("#ffffff", "#c6d8ee")),
     "tarde": dict(
         ceu=("#36326e", "#c8706a", "#ffc47c"), amb="#9a7898", amb_k=0.56, ceu_luz="#ffb07a", ceu_k=0.55,
         sol="#ff9a50", sol_k=1.25, rumo=(-1.18, -1.0), feixe=0.26, lamp=0.5, vela=0.45,
         quente="#ffd49a", fria="#36285a", montanha=("#5a4a7a", "#8a5e7a"), nuvem=("#ffd2a0", "#b0708a")),
     "noite": dict(
-        ceu=("#030716", "#0a1432", "#182a58"), amb="#2c3a72", amb_k=0.36, ceu_luz="#5a78d0", ceu_k=0.30,
-        sol="#8eaaff", sol_k=0.42, rumo=(0.42, -1.0), feixe=0.10, lamp=1.35, vela=1.05,
+        ceu=("#030716", "#0a1432", "#182a58"), amb="#34447e", amb_k=0.5, ceu_luz="#5a78d0", ceu_k=0.42,
+        sol="#8eaaff", sol_k=0.8, rumo=(0.42, -1.0), feixe=0.16, lamp=1.5, vela=1.05,
         quente="#ffcf8a", fria="#0a1432", montanha=("#0c1430", "#141e40"), nuvem=("#28385e", "#141e3a")),
 }
 
@@ -465,7 +465,7 @@ def parede() -> Camada:
                 for xx in range(max(0, x), min(W, x + larg)):
                     ex, ey = xx - x, yy - y
                     if ex == larg - 1 or ey == alt - 1:
-                        cor = "#1a1416"
+                        cor = "#2e2426"
                     else:
                         base = k0 + (n[yy, xx] - 0.5) * 0.3 + (n2[yy, xx] - 0.5) * 0.2
                         if ey == 0:
@@ -496,13 +496,47 @@ def parede() -> Camada:
         c.p(x, y0 + 1, "#1a1008")
         c.p(x, y1 - 2, "#4a2e1a")
         c.p(x, y1 - 1, "#2a1a10")
-    # Mísulas de pedra sob o trilho (as costelas da torre).
-    for mx in (60, 150, 240, 330, 420):
-        for j in range(6):
-            w = 5 - j // 2
-            c.ret(mx - w, y0 + j, w * 2 + 1, 1, PEDRA[1] if j < 2 else PEDRA[2])
-            c.p(mx - w, y0 + j, PEDRA[0])
-            c.p(mx + w, y0 + j, PEDRA[3])
+    # Lambri de madeira na metade de baixo da parede: almofadas com moldura e friso.
+    ly0 = 106
+    for y in range(ly0, y1 - 2):
+        for x in range(W):
+            pnl = (x + 4) // 22
+            ex = (x + 4) % 22
+            ey = y - ly0
+            k = 0.5 + (hash01(pnl, 77) - 0.5) * 0.15 + (hash01(x, y // 3, 78) - 0.5) * 0.08
+            if ey < 2:
+                k = 0.85 if ey == 0 else 0.3
+            elif ex in (0, 1):
+                k = 0.35 if ex == 0 else 0.62
+            elif ex == 21:
+                k = 0.2
+            elif 4 <= ex <= 18 and 5 <= ey <= 14:
+                # almofada rebaixada: borda de cima/esquerda escura, de baixo/direita clara
+                if ex == 4 or ey == 5:
+                    k = 0.25
+                elif ex == 18 or ey == 14:
+                    k = 0.72
+                else:
+                    k += 0.06
+            c.p(x, y, tons_idx(MADEIRA, k))
+    # Esteios de madeira que sobem até o trilho, com mísulas de pedra no topo.
+    for px_ in (66, 156, 246, 388):
+        for y in range(y0, y1 - 1):
+            for dx in range(-2, 3):
+                k = (0.72, 0.6, 0.48, 0.36, 0.16)[dx + 2]
+                k += (hash01(px_, y // 2, 81) - 0.5) * 0.1
+                c.p(px_ + dx, y, tons_idx(MADEIRA, k))
+        for y in (y0 + 10, y1 - 22):
+            c.ret(px_ - 2, y, 5, 1, FERRO[1])
+            c.p(px_, y, LATAO[4])
+        for j in range(5):
+            w = 5 - j
+            c.ret(px_ - w, y0 + 2 + j, w * 2 + 1, 1, PEDRA[1] if j < 2 else PEDRA[2])
+            c.p(px_ - w, y0 + 2 + j, PEDRA[0])
+            c.p(px_ + w, y0 + 2 + j, PEDRA[3])
+    # A torre é redonda: a parede escurece nas pontas.
+    curva_ = 1 - 0.38 * ((_XS - 300) / 300) ** 2
+    c.c[:, :, :3] *= curva_[:, :, None]
     return c
 
 
@@ -579,7 +613,7 @@ def lado_esquerdo() -> tuple[Camada, Camada]:
                     c.p(x + 10, ye - 2 - k * 3, PERGAMINHO[5])
                 x += 13
                 continue
-            if r < 0.22 and ys == 72:
+            if r < 0.22 and ys == 72 and not e.c[:, :, 3].any():
                 # vela na estante (acesa à noite)
                 c.ret(x + 1, ye - 6, 3, 6, "#e8dcc0")
                 c.ret(x, ye - 1, 5, 1, LATAO[2])
@@ -1033,6 +1067,54 @@ def femur(c: Camada, x: int, y: int) -> None:
     c.p(x + 16, y, osso[1])
 
 
+def planetario() -> tuple[Camada, Camada]:
+    """Planetário de latão pendurado na cúpula por uma corrente: o sol no meio e os planetas nos braços.
+    Devolve (camada, emissivo do sol de vidro, aceso à noite)."""
+    c, e = Camada(), Camada()
+    cx, cy = 420.0, 33.0
+    for y in range(0, int(cy) - 6):
+        c.p(cx + (0 if y % 3 else 1) - 0.5, y, FERRO[3] if y % 3 else FERRO[5])
+    c.linha(cx - 6, cy - 9, cx, cy - 6, FERRO[3])
+    c.linha(cx + 6, cy - 9, cx, cy - 6, FERRO[3])
+    # haste e pé
+    c.ret(cx - 0.5, cy, 1, 12, LATAO[2])
+    c.ret(cx - 3, cy + 12, 7, 2, LATAO[3])
+    c.ret(cx - 3, cy + 13, 7, 1, LATAO[1])
+    orbitas = [(7, 0.0, "#c86a3a", 1), (11, 1.9, "#4a8ad0", 1.5), (15, 4.2, "#c8a060", 1.2), (20, 2.7, "#e0c890", 2)]
+    # metade de trás das órbitas
+    for (r, _, _, _) in orbitas:
+        for k in range(int(r * 10)):
+            a = k / (r * 10) * math.tau
+            if math.sin(a) < 0:
+                c.p(cx + math.cos(a) * r, cy + 3 + math.sin(a) * r * 0.28, LATAO[1], 0.8)
+    # o sol (vidro âmbar com aro)
+    for y in range(int(cy) - 4, int(cy) + 5):
+        for x in range(int(cx) - 4, int(cx) + 5):
+            d = math.hypot(x + 0.5 - cx, y + 0.5 - cy)
+            if d < 3.6:
+                k = 0.6 - ((x - cx) * 0.5 + (y - cy) * 0.6) / 5
+                c.p(x, y, tons_idx(["#7a3a10", "#c8701e", "#f0a838", "#ffd870"], k))
+                e.p(x, y, tons_idx(["#c86a18", "#ffa030", "#ffd060", "#fff0b0"], k + 0.2))
+    for (r, a, cor, rp) in orbitas:
+        for k in range(int(r * 10)):
+            aa = k / (r * 10) * math.tau
+            if math.sin(aa) >= 0:
+                c.p(cx + math.cos(aa) * r, cy + 3 + math.sin(aa) * r * 0.28, LATAO[3], 0.9)
+        px_, py_ = cx + math.cos(a) * r, cy + 3 + math.sin(a) * r * 0.28
+        c.linha(cx, cy + 3, px_, py_ - 2, LATAO[2])
+        c.linha(px_, py_ - 2, px_, py_, LATAO[2])
+        rr = rp + 0.6
+        for y in range(int(py_ - rr - 2), int(py_ + rr + 1)):
+            for x in range(int(px_ - rr - 1), int(px_ + rr + 2)):
+                d = math.hypot(x + 0.5 - px_, y + 0.5 - (py_ - 1.5))
+                if d < rr + 0.2:
+                    k = 0.55 - ((x - px_) * 0.6 + (y - py_ + 1.5) * 0.6) / max(rr, 1)
+                    c.p(x, y, mistura(cor, "#ffffff" if k > 0.8 else "#000000", 0.35 if k > 0.8 else max(0, 0.45 - k * 0.5)))
+        if r == 20:  # o anel de saturno
+            c.linha(px_ - 4, py_ - 1, px_ + 4, py_ - 2.5, "#f0dca8")
+    return c, e
+
+
 def primeiro_plano() -> Camada:
     """Balaústre da escada em caracol à esquerda e rolos de mapas à direita (desfocados na montagem)."""
     c = Camada()
@@ -1160,7 +1242,8 @@ def camadas():
     lun_t, lun_f = luneta()
     c_mesa, c_obj, e_lamp, sombra_mesa = mesa()
     c_frente = primeiro_plano()
-    return dict(cup=c_cup, fenda=m_fenda, par=c_par, chao=c_chao, esq=c_esq, e_vela_esq=e_vela_esq, graf=c_graf,
+    c_plan, e_plan = planetario()
+    return dict(plan=c_plan, e_plan=e_plan, cup=c_cup, fenda=m_fenda, par=c_par, chao=c_chao, esq=c_esq, e_vela_esq=e_vela_esq, graf=c_graf,
                 arm_t=arm_t, arm_f=arm_f, lun_t=lun_t, lun_f=lun_f, mesa=c_mesa, obj=c_obj, e_lamp=e_lamp,
                 sombra_mesa=sombra_mesa, frente=c_frente)
 
@@ -1174,7 +1257,7 @@ def montar(nome: str) -> Image.Image:
     img = ampliar(ceu)
     solido = np.zeros(img.shape[:2], dtype=np.float32)
     objeto = np.zeros(img.shape[:2], dtype=np.float32)  # o que não é parede nem cúpula (recebe o feixe inteiro)
-    planos = [("cup", 0.5, False), ("par", 0.5, False), ("chao", 0.3, False), ("esq", 0.9, True), ("graf", 0.2, False),
+    planos = [("cup", 0.5, False), ("par", 0.5, False), ("chao", 0.3, False), ("esq", 0.5, True), ("graf", 0.2, False), ("plan", 0.4, True),
               ("arm_t", 0.3, True), ("arm_f", 0.3, True), ("lun_t", 0, True), ("lun_f", 0, True), ("mesa", 0.2, True),
               ("obj", 0.2, True)]
     for chave, r, obj in planos:
@@ -1210,6 +1293,11 @@ def montar(nome: str) -> Image.Image:
     luz += luz_pontual(AX, 40, 120, 0.9)[:, :, None] * hexa(per["ceu_luz"]) * per["ceu_k"]
     luz += luz_pontual(AX, 0, 70, 1.2)[:, :, None] * hexa(per["ceu_luz"]) * per["ceu_k"] * 0.6
     sol = hexa(per["sol"]) * per["sol_k"]
+    # luz rebatida pela mancha de sol no chão (aquece a mesa, o pé da luneta e o lambri)
+    linhas = feixe1[136:150]
+    if linhas.sum() > 1:
+        mx_ = float((linhas.sum(0) * np.arange(W)).sum() / linhas.sum())
+        luz += luz_pontual(mx_, 140, 95, 0.55)[:, :, None] * sol * 0.32
     rec = (0.16 + 0.84 * np.maximum(chao_m, objeto))[:, :, None]  # a parede está atrás do feixe: recebe menos
     luz += feixe[:, :, None] * sol * 1.35 * rec
     # chamas
@@ -1217,7 +1305,7 @@ def montar(nome: str) -> Image.Image:
         lx, ly = LAMPARINA
         sm = sombra_projetada(L["sombra_mesa"], (lx, ly), 0.45)
         sm = desfocar(ampliar(sm[:, :, None]), 3)[:, :, 0] * (1 - objeto) * (1 - chao_m)
-        poca = luz_de_chama(lx, ly, 95, 0.75, 3)[:, :, None] * hexa("#ff9a48") * 1.15
+        poca = luz_de_chama(lx, ly, 125, 0.7, 3)[:, :, None] * hexa("#ff9a48") * 1.15
         miolo = luz_pontual(lx, ly, 26, 0.9)[:, :, None] * hexa("#ffd890") * 0.9
         luz += (poca + miolo) * per["lamp"] * (1 - sm * 0.8)[:, :, None]
     if per["vela"] > 0:
@@ -1245,6 +1333,8 @@ def montar(nome: str) -> Image.Image:
         for (dx, dy, cor) in ((0, 0, "#fff6d0"), (0, -1, "#ffd070"), (0, -2, "#ff9a3a"), (0, 1, "#ffe8a0")):
             chamas.p(vx + dx, vy + dy, cor)
         colar(chamas, L["e_vela_esq"])
+    if nome == "noite":
+        colar(chamas, L["e_plan"])
     if chamas.c[:, :, 3].any():
         ch = ampliar(chamas.c)
         img = sobre(img, ch)
@@ -1259,7 +1349,7 @@ def montar(nome: str) -> Image.Image:
     # ── Feixe volumétrico e poeira suspensa nele.
     vol = feixe * np.clip((_GYS / ESC - 52) / 22, 0, 1) * (1 - 0.35 * np.clip((_GYS / ESC - 62) / 90, 0, 1))
     vol = desfocar(vol[:, :, None], 3)
-    img += vol * sol * per["feixe"]
+    img += vol * sol * per["feixe"] * 1.6
     # bordas da fenda acesas pelo céu
     img += desfocar(ampliar(L["fenda"][:, :, None]), 6) * (1 - ampliar(L["fenda"][:, :, None])) * hexa(per["ceu_luz"]) * 0.10
     g = np.random.default_rng(91)
