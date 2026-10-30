@@ -24,7 +24,6 @@ import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
 import { TopoDia, TopoVisitante } from '../componentes/inicio/cena/TopoDia'
 import type { Atalho } from '../componentes/inicio/cena/TopoDia'
-import { MapaCorpo } from '../componentes/inicio/cena/MapaCorpo'
 import { Mascote } from '../componentes/mascote/Mascote'
 import '../estilos/paginas/InicioHd.css'
 import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
@@ -547,13 +546,30 @@ export function Inicio() {
           </div>
         </section>
 
-        {/* Treinar por tema: a prancha de anatomia, com a névoa saindo conforme o progresso (MapaCorpo.tsx). */}
-        <div id="hd-temas">
-          <MapaCorpo temas={temas.map((tema) => {
-            const quantidade = contagens!.porTema[tema.slug] ?? 0
-            return { slug: tema.slug, nome: tema.nome, quantidade, feitas: Math.min(quantidade, respondidasPorTema[tema.slug] ?? 0), destino: `/treinar?areas=${AREAS_TREINO.join(',')}&temas=${tema.slug}` }
-          })} />
-        </div>
+        {/* Treinar por tema: as regiões em quadros; a névoa sai conforme você responde as questões do tema. */}
+        <section className="hd-mapa" id="hd-temas" aria-labelledby="ip-temas-titulo">
+          <header className="hd-faixa">
+            <h2 id="ip-temas-titulo">Treinar por tema</h2>
+            <p>Um toque monta a sessão do tema. A névoa sai conforme você passa por ele.</p>
+          </header>
+          <ul className="hd-regioes">
+            {temas.map((tema, i) => {
+              const quantidade = contagens!.porTema[tema.slug] ?? 0
+              const feitas = Math.min(quantidade, respondidasPorTema[tema.slug] ?? 0)
+              const porcento = quantidade ? Math.round((feitas / quantidade) * 100) : 0
+              return (
+                <li key={tema.slug}>
+                  <a className={'hd-regiao' + (feitas > 0 ? '' : ' hd-regiao--nova')} href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${tema.slug}`)}
+                    style={{ '--nevoa': `${100 - Math.max(feitas > 0 ? 2 : 0, porcento)}%`, '--i': i } as CSSProperties}>
+                    <span className="hd-regiao__nome">{tema.nome}</span>
+                    <span className="hd-regiao__pct numerico">{feitas > 0 ? `${Math.max(1, porcento)}%` : 'Novo'}</span>
+                    <span className="hd-regiao__trilho" aria-hidden="true"><span style={{ width: `${Math.max(feitas > 0 ? 2 : 0, porcento)}%` }} /></span>
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
 
         {/* Atlas 3D e Resumos lado a lado, cada um na sua moldura. */}
         <div className="hd-galeria" id="hd-galeria">
