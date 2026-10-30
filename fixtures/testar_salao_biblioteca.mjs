@@ -27,7 +27,7 @@ try {
     for (const l of grade) for (const ch of l) assert.ok(ch === '.' || paleta[ch], `${g}: letra "${ch}" fora de ${p}`)
   }
   assert.equal(sp.sombraPixel(['k.', '.k'], { k: '#000' }, 2), '2px 2px 0 0 #000,4px 4px 0 0 #000')
-  // Objetos do menu (30/10/2026): mesma regra, uma paleta só.
+  // Desenhos da seção "Hoje" do menu: mesma regra, uma paleta só.
   const mn = await carregar('src/componentes/menu/sprites.ts')
   for (const [nome, grade] of Object.entries(mn.OBJETOS_MENU)) {
     assert.equal(new Set(grade.map((l) => l.length)).size, 1, `menu ${nome}: linhas de larguras diferentes`)

@@ -494,3 +494,11 @@
 @media (hover: none), (max-width: 40rem) {
   .sl-pop--preso { left: 8px !important; right: 8px; top: auto !important; bottom: calc(76px + env(safe-area-inset-bottom)); width: auto !important; transform: none; border-top-width: 10px; }
 }
+
+/* Cartão preso no celular: fundo escurecido que fecha ao tocar, alça para arrastar e o X grande no canto. */
+.sl-pop-fundo { position: fixed; inset: 0; z-index: 74; background: rgba(12, 8, 4, 0.58); animation: sl-pop 0.18s ease-out; }
+.sl-pop__alca { justify-self: center; width: 44px; height: 5px; margin: -0.3rem 0 0.1rem; border-radius: 999px; background: #c9b89a; }
+.sl-pop__fechar { position: absolute; top: 6px; right: 6px; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; background: #efe4cf; color: #2a1a0e; cursor: pointer; }
+.sl-pop__fechar:active { background: #e3d3b4; }
+.sl-pop--preso .sl-pop__livro { padding-right: 46px; }
+.sl-pop--preso { transition: transform 0.2s ease-out; }
