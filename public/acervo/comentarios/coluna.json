@@ -366,41 +366,19 @@
   "conferido": false
  },
  "coluna-0023": {
-  "conceito": "Ao expor o arco posterior de C1, avançar lateralmente não significa apenas encontrar mais osso. A **artéria vertebral passa pela borda superior do arco**, aproximando-se da região da dissecção. É ela que justifica o limite de cerca de **1,5 cm da linha média** perguntado.\n\nDepois de subir pelos forames transversos, a vertebral sai do forame de C1 e contorna o arco posterior. O resumo descreve sua posição a cerca de 1 cm da linha média na borda superior e a perfuração da membrana atlanto-occipital posterior perto de 1,5 cm. Por isso distingue o limite geral de 1,5 cm do cuidado ainda mais restrito, de 1 cm, na borda superior (Rockwood, 10ª ed., cap. 48, “A artéria vertebral e a dissecção de C1”).\n\n**O limite depende da superfície exposta.** O capítulo admite dissecção mais lateral pela borda inferior para acessar a massa lateral; não é uma licença para transferir essa margem à borda superior. Também alerta para o ponticulus posticus, uma ponte óssea sobre a artéria que não deve ser confundida com ponto de entrada de parafuso.\n\nA regra numérica ajuda a lembrar o perigo, mas conhecer a anatomia individual e a imagem continua essencial. Um limite decorado não elimina variantes vasculares.\n\n> **Na prova:** limite lateral do arco posterior de C1 protege a vertebral, especialmente vulnerável na borda superior.",
-  "correta": "**A: artéria vertebral.** Seu contorno sobre o arco posterior de C1 explica os limites de 1,5 cm em geral e cerca de 1 cm ao longo da borda superior.",
+  "conceito": "O arco posterior do atlas é fino e fundo, e a cerca de 1,5 cm da linha média aparece um sulco. É nesse sulco que corre a artéria vertebral.\n\n**A técnica, no Campbell** (cap. 37, via posterior a C1 e C2):\n- Identifica-se o **tubérculo posterior de C1** na linha média e disseca-se subperiostealmente. O anel costuma ser **fino**: a pressão direta pode **fraturá-lo** ou o instrumento pode **escorregar e perfurar a membrana atlanto-occipital**. A dura fica vulnerável nas bordas do anel.\n- O **segundo gânglio cervical** é um **marco** importante: fica **cerca de 1,5 cm lateral na lâmina de C1, no sulco da artéria vertebral**. Há pouca indicação para dissecar além desse sulco.\n- A **artéria vertebral** pode ser lesada pela perfuração da membrana atlanto-occipital **na borda superior do anel, mais lateral que os 1,5 cm** habitualmente seguros.\n- Abaixo de C2, o limite lateral seguro é a margem lateral das facetas.\n\n**Por que a artéria e não o gânglio.** O gânglio é o marco que avisa onde fica o sulco; a estrutura que o limite de 1,5 cm protege, e cuja lesão é catastrófica, é a **artéria vertebral**.\n\n**O que a banca quis testar.** O limite lateral seguro da dissecção de C1. O resumo Anatomia da coluna e vias de acesso traz a técnica.",
+  "correta": "**A: a artéria vertebral.** Além de cerca de 1,5 cm da linha média, na borda superior do arco de C1, está o sulco da artéria vertebral (Campbell, cap. 37).",
   "incorretas": {
-   "B": "**Troca o risco vascular por uma raiz.** A distância pedida acompanha o trajeto da vertebral ao sair de C1 e contornar o arco. Não é uma medida definida pelo espaçamento entre raízes nervosas.",
-   "C": "**É outro cuidado da exposição cervical alta.** O resumo menciona a raiz C2 e a possível anestesia do couro cabeludo se ela for ligada. Isso não explica a restrição junto à borda superior do arco de C1, onde passa a artéria.",
-   "D": "**Não identifica a estrutura que contorna o arco.** O gânglio cervical não é o vaso descrito no sulco superior de C1. A pergunta associa o limite lateral ao caminho da vertebral, não a um limite de dissecção baseado no gânglio."
+   "B": "**Não é o que o limite protege.** A raiz de C1 é pequena e não define o limite lateral da dissecção.",
+   "C": "**Não é o alvo.** A raiz e o gânglio de C2 ficam abaixo do arco de C1; o limite protege a artéria vertebral.",
+   "D": "**É o marco, não o risco principal.** O Campbell usa o segundo gânglio cervical para localizar o sulco da artéria vertebral, que é o que se deve proteger."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Anatomia aplicada e biomecânica."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Posterior approach to C1-C2 (técnica)",
+   "Biblioteca OrtoQuestões, resumo Anatomia da coluna e vias de acesso (campbell14-anatomia-coluna)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Anatomia aplicada e biomecânica"
-     ],
-     "blocos": [
-      "anatomia-aplicada-e-biomecanica-764a919c"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "ab10086ea0c9e6553432f99a9a7b62900063b62fcc6e260209be1e2a8098b471"
-    }
-   ],
-   "questaoSha256": "7f7a411a65e01ba0658abb488fbd2399ac17b4b42e4f59fbf87fb1c0e1df0f9f",
-   "comentarioSha256": "e204d9ad62020558709913b489e3c48a66c60283b4a2010f4493624fcc7d89a6"
-  }
+  "geradoEm": "2026-10-30",
+  "conferido": false
  },
  "coluna-0024": {
   "incorretas": {
@@ -470,42 +448,19 @@
   "conferido": false
  },
  "coluna-0027": {
-  "conceito": "A lateralidade é o ponto de concordância: a artéria de **Adamkiewicz costuma nascer à esquerda**. Já a faixa de níveis exige uma ressalva. O gabarito oficial escolheu **T9–T11 à esquerda**, enquanto o resumo do Rockwood descreve origem habitual **entre T8 e T10**, com variação de **T7 a L4**.\n\nEssa divergência não deve ser apagada mudando a letra nem atribuindo ao livro o intervalo da prova. A anatomia é variável, e nenhuma das quatro alternativas reproduz exatamente a faixa habitual citada na fonte consultada. A alternativa D é apresentada como resposta oficial, não como transcrição exata do Rockwood (resumo do Rockwood, 10ª ed., cap. 49, “Vias de acesso e a artéria de Adamkiewicz”).\n\nNa cirurgia, a variação importa mais que uma regra rígida de nível: o capítulo descreve ligadura dos vasos segmentares perto da aorta para preservar colaterais, com pinçamento temporário e neuromonitorização antes de ligar vasos relevantes. A faixa memorizada não substitui o cuidado com a perfusão medular.\n\nLeia a seção no resumo da Biblioteca com o alerta em mente: lado habitual e intervalo da banca são informações que precisam ser distinguidas.",
-  "correta": "**D: T9–T11 à esquerda, segundo o gabarito oficial.** O lado coincide com o padrão habitual do resumo, mas os níveis não são exatamente os do texto consultado, que informa T8–T10. A letra foi preservada e a divergência está explicitada.",
+  "conceito": "Na coluna torácica, a medula vive de pouco sangue. A artéria de ADAMKIEWICZ é a grande nutridora da sua parte baixa, e saber onde ela costuma estar é uma questão de segurança cirúrgica.\n\n**O que o Campbell diz** (cap. 37, p. 1646 e 1647). A **artéria de ADAMKIEWICZ** é a **maior nutridora da medula lombar** e fica **do lado esquerdo**, em geral **entre T9 e T11**, em **80% dos indivíduos**. O livro faz uma ressalva: o canal arterial longitudinal anterior da medula, e não uma nutridora isolada, é o crucial, e **preservar essa artéria não garante** a circulação; convém proteger cada artéria contribuinte tanto quanto possível.\n\n**A zona crítica.** A irrigação é rica nas intumescências cervical e lombar e **muito mais pobre de T4 a T9**, onde o canal também é mais estreito. Essa é a **zona vascular crítica**, em que interferir na circulação mais provavelmente causa paraplegia.\n\n**Por que o lado esquerdo importa.** Nas vias anteriores toracoabdominais e nas ligaduras de segmentares, a esquerda entre T9 e T11 é o território onde a lesão dessa nutridora pode custar a medula lombar.\n\n**O que a banca quis testar.** O nível e o lado mais frequentes. O resumo Anatomia da coluna e vias de acesso traz a irrigação.",
+  "correta": "**D: T9-T11 e à esquerda.** O Campbell situa a artéria de ADAMKIEWICZ à esquerda, em geral entre T9 e T11 (cap. 37, p. 1646 e 1647).",
   "incorretas": {
-   "A": "**O lado direito não é o habitual descrito.** Há variação anatômica, mas a fonte destaca a esquerda. Além disso, T7–T9 não reproduz sua faixa habitual T8–T10, de modo que a alternativa não resolve a divergência de níveis.",
-   "B": "**Repete os níveis da banca e troca o lado.** O resumo descreve origem mais frequentemente esquerda. A faixa T9–T11, por si, já precisa da ressalva bibliográfica; colocá-la à direita afasta também a lateralidade habitual.",
-   "C": "**Acerta o lado habitual, mas não o intervalo exato da fonte.** T7–T9 e T8–T10 se sobrepõem parcialmente; isso não torna a primeira uma reprodução do segundo. A escolha oficial foi D, e o resumo não permite fingir que uma das duas faixas esquerdas coincide integralmente com o livro."
+   "A": "**Lado e nível errados.** A artéria fica em geral à esquerda, entre T9 e T11.",
+   "B": "**Nível certo, lado errado.** O lado habitual é o esquerdo.",
+   "C": "**Lado certo, nível errado.** O nível habitual é de T9 a T11."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Vias de acesso e a artéria de Adamkiewicz."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Blood supply of the spinal cord, p. 1646 e 1647",
+   "Biblioteca OrtoQuestões, resumo Anatomia da coluna e vias de acesso (campbell14-anatomia-coluna)"
   ],
-  "conferido": false,
-  "alerta": "Gabarito oficial D (T9–T11 à esquerda) preservado. O resumo do Rockwood, 10ª edição, capítulo 49, descreve origem habitual à esquerda entre T8 e T10, com variação de T7 a L4. Nenhuma alternativa reproduz exatamente essa faixa habitual; não atribuir ao livro o intervalo da banca nem tratar sobreposição parcial como concordância integral.",
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-49-fratura-toracolombar",
-     "titulo": "Fraturas e luxações da coluna toracolombar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
-     "secoes": [
-      "Vias de acesso e a artéria de Adamkiewicz"
-     ],
-     "blocos": [
-      "vias-de-acesso-e-a-arteria-de-adamkiewicz-6062370a"
-     ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
-     "trechosSha256": "8e0a7a0f14d682eec95c9864b7ae491a7305666aa885411defbc2e2fb3be5e1a"
-    }
-   ],
-   "questaoSha256": "7f043b1fe649f179de4583634ccd7e35717d74be3101095d3dcd9ec093993d91",
-   "comentarioSha256": "e981d6447a04eeff93dafa706240cdd12c13b6416c243670c005d7ea7f85eecc"
-  }
+  "geradoEm": "2026-10-30",
+  "conferido": false
  },
  "coluna-0028": {
   "incorretas": {
@@ -1075,18 +1030,18 @@
   "conferido": false
  },
  "coluna-0054": {
-  "conceito": "### Acesso paraespinhal (Wiltse)\n- **Incisão:** paramediana, ~4 a 5 cm lateral à linha média.\n- **Plano:** ==entre o multífido (medial) e o longuíssimo (lateral)==, desenvolvido com o **dedo**, como na figura, até as facetas e os processos transversos.\n- **Vantagens:**\n  - chega **diretamente** às **facetas**, aos processos transversos e ao **forame**, sem descolar a musculatura da linha média;\n  - **menos lesão muscular** e sangramento;\n  - preserva a inserção do multífido e o **ramo medial** do ramo dorsal, que inerva o multífido.\n- **Usos:**\n  - **hérnia foraminal e extraforaminal**;\n  - artrodese **posterolateral** (intertransversária);\n  - parafusos pediculares (técnicas minimamente invasivas);\n  - descompressão foraminal na espondilolistese.\n\n### Os paraespinhais lombares\nDe medial para lateral:\n- **transversoespinhais** (multífido, rotadores, os mais profundos, junto às lâminas);\n- **eretores da espinha:** **longuíssimo** e **iliocostal**.\n\n> **Na prova:** Wiltse = plano ==multífido × longuíssimo==.",
-  "correta": "**Multífido e longuíssimo.**",
+  "conceito": "A via de WILTSE não descola músculo do osso: ela passa entre dois músculos, por um plano que já existe.\n\n**A via, no Campbell** (cap. 37, técnica 37.26). WILTSE e SPENCER refinaram a via paraespinhal, uma **separação longitudinal do grupo sacroespinhal** para expor a face posterolateral da coluna lombar. A fáscia lombodorsal é aberta **cerca de 2 cm lateral à linha média**, e entra-se num **plano de clivagem natural entre o multífido e o longuíssimo**, aberto por **dissecção digital romba**; as fibras transversas do **multífido** são então separadas das suas fortes inserções fasciais.\n\n**Os músculos, de medial para lateral.** O **multífido** é o mais **medial e profundo**, colado às lâminas e às facetas; o **longuíssimo** fica lateral a ele; o **iliocostal** é o mais lateral. O **quadrado lombar** está mais anterior, entre a crista ilíaca e a 12ª costela, fora do plano posterior.\n\n**Por que a via existe.** Leva direto à faceta, ao processo transverso e à região foraminal e extraforaminal, com menos dano muscular que a desinserção ampla da via mediana.\n\n**O que a banca quis testar.** O plano intermuscular da via paraespinhal. O resumo Anatomia da coluna e vias de acesso traz a técnica.",
+  "correta": "**D: multífido e longuíssimo.** É o plano de clivagem natural da via paraespinhal de WILTSE e SPENCER (Campbell, cap. 37).",
   "incorretas": {
-   "A": "**Multífido e rotadores.**\n- Os rotadores são profundos, junto às lâminas; não formam o plano.",
-   "B": "**Iliolombar e multífido.**\n- \"Iliolombar\" é um **ligamento**, não um dos músculos do plano.",
-   "C": "**Iliolombar e longuíssimo.**\n- Idem."
+   "A": "**Os rotadores ficam sob o multífido.** Junto às lâminas, eles não formam o plano da via, que é lateral ao multífido.",
+   "B": "**Não existe músculo iliolombar no plano.** O iliolombar é um ligamento; o plano é entre o multífido e o longuíssimo.",
+   "C": "**Mesmo erro.** O iliolombar é ligamento, e o longuíssimo faz par com o multífido no plano de WILTSE."
   },
   "referencias": [
-   "Aebi M, Arlet V, Webb JK. AO Spine Manual. Surgical anatomy of the lumbar posterior approaches.",
-   "Benzel EC. Spine Surgery: Techniques, Complication Avoidance, and Management. Posterior lumbar approaches."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Paraspinal approach to lumbar spine, técnica 37.26 (WILTSE e SPENCER)",
+   "Biblioteca OrtoQuestões, resumo Anatomia da coluna e vias de acesso (campbell14-anatomia-coluna)"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "coluna-0055": {
@@ -2526,19 +2481,18 @@
   "conferido": false
  },
  "coluna-0167": {
-  "conceito": "### Acessos à transição cervicotorácica\n- **Cervical anterior baixo** (Smith-Robinson estendido): costuma alcançar **C7-T1** e, às vezes, **T1-T2**, conforme o biotipo (pescoço longo e magro) e a posição do esterno.\n- ==Transesternal / manubriotomia==: a divisão do **manúbrio** ou do esterno amplia a exposição até cerca de ==T3-T4==. O **tronco braquiocefálico**, a **veia braquiocefálica esquerda** e o **arco aórtico** limitam a descida (na figura, os grandes vasos aparecem abaixo da vértebra indicada).\n- **Toracotomia alta** (3ª costela) ou pela janela entre os grandes vasos: para T3-T5.\n- **Posteriores / posterolaterais** (costotransversectomia, lateral extracavitário): alternativas para acessar o corpo sem abrir o mediastino.\n\n### Riscos do acesso transesternal\n- **Grandes vasos**, **ducto torácico** (à esquerda), **laríngeo recorrente**.\n- **Pleura**, traqueia e esôfago.\n\n### Na prática\nA **TC ou RM sagital pré-operatória** mostra até onde a linha do esterno permite chegar em cada paciente.\n\n> **Na prova:** via transesternal = até ==T4== (na figura e no gabarito).",
-  "correta": "**T4.**",
+  "conceito": "A transição cervicotorácica fica atrás do esterno, cercada por grandes vasos. Para chegar lá pela frente, às vezes é preciso abrir o esterno, e o Campbell diz até onde isso leva.\n\n**As vias da região, no Campbell** (cap. 37). São três: a **cervical anterior baixa**, que chega até **T1** na parte inferior; a **transtorácica alta**; e a **transesternal**. Para uma **exposição igual das colunas cervical e torácica, de C4 a T4**, o livro recomenda a **divisão do esterno**, a mesma usada na cirurgia cardíaca. Para chegar a T3-T4, podem ser divididas as veias tímica e inominada esquerda, expondo até o arco aórtico.\n\n**A técnica.** Incisão do entalhe supraesternal até abaixo do xifoide, com extensões diagonais na base do pescoço; descolamento da pleura atrás do esterno; divisão com serra de GIGLI. O ducto torácico sobe à esquerda do esôfago a partir de T4.\n\n**O critério de CHO.** Antes de abrir o esterno, vale olhar a radiografia de perfil: se a linha da incisão ao nível desejado passa acima do manúbrio, a via de SMITH-ROBINSON basta.\n\n**O que a banca quis testar.** O limite caudal da via transesternal. O resumo Anatomia da coluna e vias de acesso traz as vias.",
+  "correta": "**C: T4.** A divisão do esterno expõe a coluna de C4 a T4 (Campbell, cap. 37).",
   "incorretas": {
-   "A": "**T2.**\n- Muitas vezes acessível sem abrir o esterno.",
-   "B": "**T3.**\n- Acima do limite indicado na figura.",
-   "D": "**T5.**\n- Abaixo do alcance usual; exige toracotomia."
+   "A": "**Alcança mais.** A via transesternal vai além de T2, até T4.",
+   "B": "**Alcança mais.** T3 está dentro do alcance; o limite descrito é T4.",
+   "D": "**Além do limite.** O Campbell descreve a exposição até T4; abaixo disso, a via transtorácica é mais adequada."
   },
-  "alerta": "O limite inferior varia com biotipo, esterno e arco aórtico; a resposta segue o nível indicado na figura e o gabarito.",
   "referencias": [
-   "Bohlman HH et al. Anterior approaches to the cervicothoracic junction.",
-   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Anterior approaches to the cervicothoracic junction, técnica 37.9 (transsternal), p. 1655 a 1658",
+   "Biblioteca OrtoQuestões, resumo Anatomia da coluna e vias de acesso (campbell14-anatomia-coluna)"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "coluna-0168": {
@@ -2887,43 +2841,19 @@
   "conferido": false
  },
  "coluna-0208": {
-  "conceito": "Ao fletir e estender a coluna lombar, as vértebras precisam se mover numa direção permitida pelas articulações posteriores. As **facetas orientadas no plano sagital** favorecem esse movimento. A comparação com a torácica torna o raciocínio mais claro: ali as facetas são coronais, os discos são finos e as costelas acrescentam rigidez.\n\nO resumo descreve a região lombossacra como móvel em flexão e extensão justamente pela orientação sagital das facetas. A forma das superfícies articulares ajuda a guiar o movimento; o conjunto da região, incluindo discos e musculatura, participa de sua mecânica, mas não substitui essa orientação anatômica como resposta (resumo do Rockwood, 10ª ed., cap. 49, “Regiões, anatomia e lesões associadas”).\n\nEssa mudança entre um segmento torácico rígido e outro lombar móvel ajuda a entender por que a transição toracolombar é vulnerável ao trauma. Leia essa seção no resumo da Biblioteca para relacionar a anatomia ao comportamento da coluna.",
-  "correta": "**D: orientação das facetas articulares.** O alinhamento sagital das facetas lombares favorece flexão e extensão. É a característica articular que responde diretamente à mobilidade no plano perguntado.",
+  "conceito": "O movimento de cada segmento da coluna é decidido pelas facetas: elas funcionam como trilhos, e a direção do trilho define para onde a vértebra pode ir.\n\n**O que o Netter mostra** (cap. 2, osteologia regional). Na tabela das regiões, cada uma tem o seu movimento dominante; C1-C2, por exemplo, são ossos únicos que permitem a **rotação** da cabeça. Na **lombar**, a orientação das facetas passa do **semicoronal ao sagital**, e a **rotação é mínima**.\n\n**A lógica do trilho.** Facetas **sagitais**, como as lombares, deslizam para frente e para trás uma sobre a outra: permitem **flexão e extensão** e travam a rotação. Facetas **coronais**, como as torácicas, permitem rotação e inclinação, mas limitam a flexão e a extensão, que também são limitadas pelo gradil costal.\n\n**Por que as outras não decidem.** Discos mais altos aumentam a amplitude em todos os planos, não especificamente na flexão e extensão; a ausência de costelas libera a lombar, mas não explica por que ela não roda; a musculatura abdominal move a coluna, mas não define a direção do movimento.\n\n**O que a banca quis testar.** O papel das facetas na direção do movimento. O resumo Anatomia da coluna e vias de acesso traz a osteologia.",
+  "correta": "**D: orientação das facetas articulares.** As facetas lombares, de orientação sagital, favorecem a flexão e a extensão e limitam a rotação (Netter, cap. 2).",
   "incorretas": {
-   "A": "**A altura discal é parte da comparação, mas não substitui a orientação articular.** O resumo relaciona discos finos à rigidez torácica e facetas sagitais à flexão e extensão lombar. A opção destaca um componente sem identificar o guia articular cobrado.",
-   "B": "**Retirar a contenção costal não explica sozinho o plano do movimento.** As costelas contribuem para a rigidez torácica. A maior liberdade lombar em flexão e extensão é associada especificamente às facetas sagitais na fonte.",
-   "C": "**Controle muscular não equivale à orientação das articulações.** A pergunta é de anatomia regional: não atribui a mobilidade maior a um grupo muscular. A fonte localiza a explicação na disposição das facetas."
+   "A": "**Aumentam a amplitude em geral.** A altura do disco não explica a preferência pela flexão e extensão.",
+   "B": "**Libera, mas não direciona.** A falta de costelas não explica por que a lombar quase não roda.",
+   "C": "**Move, mas não decide a direção.** A direção do movimento é imposta pelas facetas."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Regiões, anatomia e lesões associadas."
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 2 (Spine), Osteology (características regionais)",
+   "Biblioteca OrtoQuestões, resumo Anatomia da coluna e vias de acesso (campbell14-anatomia-coluna)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-49-fratura-toracolombar",
-     "titulo": "Fraturas e luxações da coluna toracolombar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
-     "secoes": [
-      "Regiões, anatomia e lesões associadas"
-     ],
-     "blocos": [
-      "regioes-anatomia-e-lesoes-associadas-f5dd2b97",
-      "regioes-anatomia-e-lesoes-associadas-2166ad9f",
-      "regioes-anatomia-e-lesoes-associadas-107ede6e"
-     ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
-     "trechosSha256": "529a4d805a78ba3870bd0ba5bb1a97f18bd4f266792dacda9e0a0af17c59a59c"
-    }
-   ],
-   "questaoSha256": "40c830bb63219bd975d641c36fa82a0ff4b8d8de290edcc1eef68aa93fa9d76f",
-   "comentarioSha256": "8b65196154768204dd6e18fba8a33662b9fabc5dd6b592acb3bfc69387df4d15"
-  }
+  "geradoEm": "2026-10-30",
+  "conferido": false
  },
  "coluna-0209": {
   "incorretas": {
@@ -3597,17 +3527,18 @@
   "conferido": false
  },
  "coluna-0262": {
+  "conceito": "A mesma artéria, agora com o número que o Campbell usa: 80%.\n\n**O que o Campbell diz** (cap. 37, p. 1646 e 1647). A **artéria de ADAMKIEWICZ** é a **maior nutridora da medula lombar** e fica **do lado esquerdo**, em geral **entre T9 e T11**, em **80% dos indivíduos**. O livro faz uma ressalva: o canal arterial longitudinal anterior da medula, e não uma nutridora isolada, é o crucial, e **preservar essa artéria não garante** a circulação; convém proteger cada artéria contribuinte tanto quanto possível.\n\n**A zona crítica.** A irrigação é rica nas intumescências cervical e lombar e **muito mais pobre de T4 a T9**, onde o canal também é mais estreito. Essa é a **zona vascular crítica**, em que interferir na circulação mais provavelmente causa paraplegia.\n\n**Por que o lado esquerdo importa.** Nas vias anteriores toracoabdominais e nas ligaduras de segmentares, a esquerda entre T9 e T11 é o território onde a lesão dessa nutridora pode custar a medula lombar.\n\n**O que a banca quis testar.** O nível e o lado em 80% das pessoas. O resumo Anatomia da coluna e vias de acesso traz a irrigação.",
+  "correta": "**D: T9 e T11 à esquerda.** É a localização da artéria de ADAMKIEWICZ em 80% dos indivíduos, segundo o Campbell (cap. 37, p. 1646 e 1647).",
   "incorretas": {
-   "A": "Erra o nível e o lado. A artéria costuma entrar mais abaixo, entre T9 e T11, e do lado esquerdo.",
-   "B": "O lado esquerdo está certo, mas o nível é baixo demais: T7 a T9 é mais alto que a faixa habitual de T9 a T11.",
-   "C": "O nível está certo, mas a artéria de Adamkiewicz entra pela esquerda na grande maioria das pessoas."
+   "A": "**Lado e nível errados.** Em 80% dos indivíduos, a artéria fica à esquerda, entre T9 e T11.",
+   "B": "**Lado certo, nível errado.** O nível habitual é de T9 a T11.",
+   "C": "**Nível certo, lado errado.** O lado habitual é o esquerdo."
   },
-  "conceito": "A medula não é irrigada por um tubo único que desce do cérebro. A **artéria espinal anterior**, que nutre os dois terços anteriores da medula, recebe reforços ao longo do caminho de artérias que entram junto com as raízes nervosas, as **artérias radiculomedulares**. Na região torácica média, esses reforços são poucos, e a irrigação é mais pobre.\n\nA maior e mais importante delas é a **artéria de Adamkiewicz**, também chamada de artéria radicular magna. É ela que garante a maior parte do sangue para a medula toracolombar e o cone medular. Em cerca de **80%** das pessoas, ela entra pelo lado **esquerdo**, entre **T9 e T11** (variando, no total, de T5 a L2). O lado esquerdo tem lógica: a aorta fica à esquerda da coluna, e as artérias intercostais e lombares desse lado são mais curtas e diretas.\n\nPor que isso cai em prova de ortopedia? Porque cirurgias da coluna torácica e toracolombar por via anterior, assim como cirurgias de aorta e embolizações, podem lesar essa artéria. O resultado é isquemia da medula na distribuição da espinal anterior: a **síndrome medular anterior**, com paraplegia e perda de dor e temperatura, mas com a propriocepção preservada.\n\nAlgumas precauções reduzem o risco: preferir o acesso pela direita quando a doença permite, ligar os vasos segmentares no meio do corpo vertebral, longe do forame onde a artéria radicular entra, e, em casos de risco alto, estudar a anatomia com angiografia medular antes da cirurgia.",
-  "correta": "Entre T9 e T11, à esquerda. É a localização da artéria de Adamkiewicz em cerca de 80% das pessoas, acompanhando a posição da aorta à esquerda da coluna.",
   "referencias": [
-   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Blood supply of the spinal cord, p. 1646 e 1647",
+   "Biblioteca OrtoQuestões, resumo Anatomia da coluna e vias de acesso (campbell14-anatomia-coluna)"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "coluna-0264": {
@@ -3626,18 +3557,18 @@
   "conferido": false
  },
  "coluna-0265": {
-  "conceito": "### O músculo indicado\nVista **posterior** da coluna lombar, com os eretores superficiais parcialmente removidos. A seta aponta o músculo **profundo e medial**, que preenche o sulco entre os **espinhosos** e os **processos transversos / facetas**: o ==multífido==.\n\n### Multífido\n- **Grupo:** **transversoespinhal** (com rotadores e semiespinhal), o mais volumoso na lombar.\n- **Inervação:** **ramo medial** do ramo dorsal (segmentar), o mesmo que inerva a faceta.\n- **Função:** principal **estabilizador segmentar** da coluna lombar. Atrofia e infiltração gordurosa associam-se à **lombalgia crônica**. É alvo da reabilitação (\"core\").\n\n### No acesso de Wiltse\nO plano de dissecção é entre o ==multífido (medial)== e o **longuíssimo (lateral)**.\n\n### Os outros\n- **Longuíssimo:** eretor, lateral ao multífido.\n- **Iliocostal:** eretor mais **lateral**.\n- **Quadrado lombar:** mais **anterior e lateral**, entre a 12ª costela, a crista ilíaca e os transversos.\n\n> **Na prova:** músculo lombar profundo e medial, referência do acesso paraespinhal = ==multífido==.",
-  "correta": "**Multífido.**",
+  "conceito": "A seta aponta o músculo profundo e medial dos paravertebrais lombares, o que fica colado às lâminas e às facetas. É a referência medial da via paraespinhal.\n\n**A via, no Campbell** (cap. 37, técnica 37.26). WILTSE e SPENCER refinaram a via paraespinhal, uma **separação longitudinal do grupo sacroespinhal** para expor a face posterolateral da coluna lombar. A fáscia lombodorsal é aberta **cerca de 2 cm lateral à linha média**, e entra-se num **plano de clivagem natural entre o multífido e o longuíssimo**, aberto por **dissecção digital romba**; as fibras transversas do **multífido** são então separadas das suas fortes inserções fasciais.\n\n**Os músculos, de medial para lateral.** O **multífido** é o mais **medial e profundo**, colado às lâminas e às facetas; o **longuíssimo** fica lateral a ele; o **iliocostal** é o mais lateral. O **quadrado lombar** está mais anterior, entre a crista ilíaca e a 12ª costela, fora do plano posterior.\n\n**Por que a via existe.** Leva direto à faceta, ao processo transverso e à região foraminal e extraforaminal, com menos dano muscular que a desinserção ampla da via mediana.\n\n**Como reconhecer na imagem.** Num corte axial, o **multífido** é a massa triangular encostada no processo espinhoso e na lâmina; o **longuíssimo** fica logo lateral, e o **iliocostal**, mais lateral ainda. O **quadrado lombar** aparece à frente do processo transverso.\n\n**O que a banca quis testar.** O músculo de referência da via paraespinhal. O resumo Anatomia da coluna e vias de acesso traz a técnica.",
+  "correta": "**A: multífido.** É o músculo medial e profundo cuja borda lateral, junto ao longuíssimo, define o plano da via paraespinhal (Campbell, cap. 37).",
   "incorretas": {
-   "B": "**Iliocostal.**\n- O mais lateral dos eretores.",
-   "C": "**Longuíssimo.**\n- Lateral ao multífido; o outro limite do plano de Wiltse.",
-   "D": "**Quadrado lombar.**\n- Mais anterior e lateral."
+   "B": "**É o mais lateral.** O iliocostal fica lateral ao longuíssimo, longe do plano da via.",
+   "C": "**É o vizinho lateral.** O longuíssimo forma o outro lado do plano, mas não é o músculo profundo e medial.",
+   "D": "**Fica anterior.** O quadrado lombar está à frente do processo transverso, fora da via posterior."
   },
   "referencias": [
-   "Wiltse LL et al. The paraspinal sacrospinalis-splitting approach to the lumbar spine. Spine.",
-   "Gray's Anatomy. Deep back muscles."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Paraspinal approach to lumbar spine, técnica 37.26 (WILTSE e SPENCER)",
+   "Biblioteca OrtoQuestões, resumo Anatomia da coluna e vias de acesso (campbell14-anatomia-coluna)"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "coluna-0266": {
@@ -3845,45 +3776,19 @@
   "conferido": false
  },
  "coluna-0281": {
-  "conceito": "**O que a figura mostra.** É um corte axial do pescoço com as fáscias coloridas. Na frente estão a traqueia e o esôfago; dos lados, as bainhas carotídeas; atrás deles, a fáscia pré-vertebral, em laranja. A seta aponta o músculo que fica colado à face anterolateral do corpo vertebral, logo atrás dessa fáscia e medial à bainha carotídea. É o **longo do pescoço** (longus colli).\n\n**Onde ele entra na via anterior.** Na via de **Smith-Robinson**, o plano superficial fica entre o esternocleidomastóideo e os infra-hióideos, e o profundo entre a bainha carotídea, lateral, e a traqueia com o esôfago, mediais. Afastadas as fáscias alar e pré-vertebral, chega-se à coluna, coberta lateralmente pelos dois longos do pescoço. Para ver o disco inteiro e alcançar o limite lateral, os processos uncinados e a articulação uncovertebral, o cirurgião eleva esse músculo e o afasta para os lados.\n\n**O cuidado que o Rockwood destaca.** Sobre a parte lateral do longo do pescoço corre a **cadeia simpática**. Retração ou cautério agressivos ali causam **síndrome de Horner** (ptose, miose e anidrose do mesmo lado). Por isso a elevação é feita junto ao osso, e os afastadores ficam sob a borda do músculo.\n\n**Na prova:** músculo sobre a face anterolateral do corpo vertebral, afastado para expor a uncovertebral, é o longo do pescoço; o risco dele é a cadeia simpática.\n\nA lista da vértebra subaxial, no resumo de coluna cervical, junta uncinados, tubérculo carotídeo e longo do pescoço numa só leitura.",
-  "correta": "**B: longus colli.** É o músculo pré-vertebral que cobre a face anterolateral das vértebras, como na seta. Elevado e afastado para lateral, expõe o disco até os uncinados, o limite lateral do corpo na cirurgia anterior.",
+  "conceito": "Na via anterior cervical, depois de passar entre o feixe carotídeo e a traqueia, o cirurgião encontra a coluna coberta por dois músculos longitudinais, um de cada lado da linha média. São eles que se afastam para expor o disco e as uncovertebrais.\n\n**A técnica, no Campbell** (cap. 37, técnica 37.5):\n- Incisão, de preferência à **esquerda**, dois a três dedos acima da clavícula para C5-C7.\n- Platisma; borda anterior do esternocleidomastóideo; pulso carotídeo; divisão da camada média da fáscia com o **omo-hióideo**, medial ao feixe carotídeo.\n- Feixe carotídeo para **lateral**; traqueia, esôfago e tireoide para **medial**.\n- Divisão da fáscia pré-traqueal e pré-vertebral sobre os **longus colli**.\n- Os **longus colli** são **afastados subperiostealmente para lateral até as articulações uncovertebrais**.\n\n**Os cuidados.** A **cadeia simpática** corre sobre o longus colli (dissecar demais para lateral causa HORNER), e a **artéria vertebral** fica lateral às uncovertebrais.\n\n**Por que as outras não.** O **omo-hióideo** é cruzado ou afastado num plano mais superficial; o **escaleno anterior** fica lateral, junto ao frênico; o **esplênio do pescoço** é um músculo posterior.\n\n**O que a banca quis testar.** O músculo afastado até a unciforme. O resumo Anatomia da coluna e vias de acesso traz a via.",
+  "correta": "**B: longus colli.** É descolado subperiostealmente para lateral até as articulações uncovertebrais na via anterior (Campbell, cap. 37).",
   "incorretas": {
-   "A": "**O omo-hióideo é um músculo superficial, da alça infra-hióidea.** Ele aparece no plano superficial da via e pode ser seccionado ou afastado para abrir caminho, mas está longe da coluna. Não cobre a face do corpo vertebral nem esconde a uncovertebral.",
-   "C": "**O esplênio do pescoço é um músculo da nuca.** Fica atrás, entre os grupos musculares posteriores da coluna, e nem aparece no campo da via anterior. O corte da figura mostra a seta na frente da vértebra.",
-   "D": "**O escaleno anterior é lateral, sobre os processos transversos.** Ele fica para fora da bainha carotídea, não medial a ela sobre o corpo vertebral. Afastá-lo não exporia a uncovertebral e colocaria em risco estruturas que a via anterior padrão não precisa visitar."
+   "A": "**É mais superficial.** O omo-hióideo é dividido ou afastado antes, junto à camada média da fáscia.",
+   "C": "**É posterior.** O esplênio do pescoço não aparece na via anterior.",
+   "D": "**É lateral.** O escaleno anterior fica fora do corredor da via, junto ao nervo frênico."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Anatomia aplicada e biomecânica; Vias de acesso, fixação e complicações."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Anterior approach, C3 to C7, técnica 37.5 (SOUTHWICK e ROBINSON)",
+   "Biblioteca OrtoQuestões, resumo Anatomia da coluna e vias de acesso (campbell14-anatomia-coluna)"
   ],
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Anatomia aplicada e biomecânica",
-      "Vias de acesso, fixação e complicações"
-     ],
-     "blocos": [
-      "anatomia-aplicada-e-biomecanica-08887344",
-      "anatomia-aplicada-e-biomecanica-abd6af76",
-      "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
-      "vias-de-acesso-fixacao-e-complicacoes-e9530706"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "55c0a25e89d56343a5fcf488e7f3a365b4356d23568f1a95a464e24ae00cefb0"
-    }
-   ],
-   "questaoSha256": "78f79597ae53300356cdd706e17a1268d1136bdc2114690c275eda7975d7c766",
-   "comentarioSha256": "b3f6fe5d0749b53f0b62b3e0a935650180f49b1a3d0bec54aff619ff4f51b043"
-  }
+  "geradoEm": "2026-10-30",
+  "conferido": false
  },
  "coluna-0282": {
   "incorretas": {
@@ -10185,6 +10090,126 @@
   "conceito": "Numa paciente com artrite reumatoide, a dor nas pequenas articulações das mãos não é a única preocupação articular. A junção entre atlas (C1) e áxis (C2) tem articulações sinoviais e ligamentos que permitem grande mobilidade, mas também precisam manter o processo odontoide bem contido. A **sinovite inflamatória**, o tecido proliferativo chamado pannus e a lesão dos estabilizadores podem permitir deslocamento entre C1 e C2. Por isso, a **instabilidade atlantoaxial** é o padrão cervical clássico e o mais frequente entre as alterações listadas.\n\nA consequência potencial não é apenas dor cervical. Se a relação C1-C2 se altera e o espaço para as estruturas neurais diminui, podem surgir sinais de compressão medular; sintomas e imagens precisam ser interpretados juntos. A literatura também reconhece **assentamento cranial** ou migração vertical e subluxações abaixo de C2. A doença, portanto, não se resume a uma única deformidade, embora uma delas seja a resposta mais provável para esta pergunta.\n\nUma meta-análise de estudos sobre acometimento cervical encontrou a subluxação atlantoaxial como a forma mais comum, aproximadamente duas vezes mais frequente que assentamento vertical ou subluxação subaxial nas populações examinadas. Esse dado explica a escolha de C1-C2 sem converter uma tendência populacional em diagnóstico automático de toda paciente com artrite reumatoide. Para um caso individual, exame neurológico, duração e atividade da doença e avaliação por imagem importam.",
   "correta": "**D: instabilidade C1-C2.** A inflamação sinovial e a lesão dos tecidos que estabilizam a articulação atlantoaxial favorecem subluxação entre atlas e áxis. Entre os padrões cervicais da artrite reumatoide, é o mais frequente na meta-análise citada.",
   "geradoEm": "2026-10-24",
+  "conferido": false
+ },
+ "coluna-0564": {
+  "conceito": "A medula torácica vive no limite: canal estreito e pouco sangue. Uma ligadura a mais no lugar errado pode transformar uma correção de escoliose em paraplegia.\n\n**A artéria de ADAMKIEWICZ, no Campbell** (cap. 37, p. 1646 e 1647). É a **maior nutridora da medula lombar** e fica **do lado esquerdo**, em geral **entre T9 e T11**, em **80% dos indivíduos**. O livro acrescenta um aviso: o canal arterial longitudinal anterior da medula, e não uma única nutridora, é o que importa; **preservar essa grande artéria não garante** a circulação. Em princípio, convém proteger cada artéria contribuinte tanto quanto possível.\n\n**A zona crítica.** A irrigação é rica nas **intumescências cervical e lombar**, mas a da medula torácica, de **T4 a T9**, é **muito mais pobre**. Nesse segmento, o **canal é mais estreito** e a irrigação é a pior: é a **zona vascular crítica**, onde interferir na circulação mais provavelmente causa paraplegia.\n\n**A rede.** Os três canais arteriais longitudinais (uma espinal anterior e duas posteriores) funcionam como um círculo de WILLIS alongado, com inversão do fluxo conforme a demanda. As artérias segmentares saem da aorta, aos pares, e correm junto aos corpos vertebrais.\n\n**Na sala.** Na via anterior torácica, ligam-se as artérias segmentares no meio do corpo vertebral, longe do forame, para preservar as anastomoses. Do lado esquerdo, entre T9 e T11, o cuidado é redobrado.\n\n**Por que esta questão foi criada.** É uma gêmea das questões do TARO sobre a localização da artéria de ADAMKIEWICZ.\n\n> **Na prova:** ADAMKIEWICZ = **esquerda**, **T9 a T11**, **80%**; zona crítica = **T4 a T9** (canal estreito, pouco sangue); preservar uma artéria **não garante** a medula.",
+  "correta": "**B: a artéria de ADAMKIEWICZ é a maior nutridora da medula lombar, em geral à esquerda entre T9 e T11 (80%); o segmento de T4 a T9 é a zona vascular crítica, com o canal mais estreito e a pior irrigação.** É a descrição do Campbell (cap. 37, p. 1646 e 1647).",
+  "incorretas": {
+   "A": "**Lado e nível errados.** O Campbell situa a artéria à esquerda, em geral entre T9 e T11.",
+   "C": "**O livro diz o contrário.** A preservação dessa grande nutridora não garante a circulação; o canal longitudinal anterior é o que importa.",
+   "D": "**É onde a irrigação é rica.** As intumescências têm irrigação abundante; a pobre é a da medula torácica, de T4 a T9."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Blood supply of the spinal cord, p. 1646 e 1647"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "coluna-0565": {
+  "conceito": "O arco posterior do atlas é fino, fundo e tem um sulco onde passa a artéria vertebral. A regra de 1,5 cm existe porque o sulco começa ali.\n\n**A técnica, no Campbell** (cap. 37, via posterior a C1 e C2):\n- O **anel de C1** costuma ficar **mais profundo** que o processo espinhoso de C2; identifica-se o **tubérculo posterior de C1** na linha média e inicia-se a dissecção subperiosteal.\n- O anel é muitas vezes **fino**: a pressão direta pode **fraturá-lo** ou fazer o instrumento **escorregar e perfurar a membrana atlanto-occipital**. A **dura-máter** fica vulnerável nas bordas superior e inferior do anel.\n- O **segundo gânglio cervical** é um **marco importante** do anel de C1 lateralmente: fica **cerca de 1,5 cm lateral, na lâmina de C1, no sulco da artéria vertebral**. Há pouca indicação de dissecar lateralmente a esse sulco.\n- A **artéria vertebral** pode ser lesada pela perfuração da membrana atlanto-occipital **na borda superior** do anel, **mais lateral que os 1,5 cm** habitualmente seguros.\n- **Abaixo de C2**, o limite lateral seguro da dissecção é a **margem lateral das facetas**.\n\n**Como guardar.** Em C1, a artéria vertebral sai do forame transverso, faz uma curva para trás e corre **sobre a borda superior do arco posterior**, no sulco. Os 1,5 cm são a distância da linha média até o começo desse sulco.\n\n**Por que esta questão foi criada.** É uma gêmea da questão do TARO sobre o limite lateral da dissecção de C1.\n\n> **Na prova:** C1 = no máximo **1,5 cm** da linha média; além disso, **artéria vertebral** (borda **superior**, sulco); **segundo gânglio cervical** = marco no sulco; abaixo de C2 = **margem lateral das facetas**.",
+  "correta": "**A: o segundo gânglio cervical fica cerca de 1,5 cm lateral na lâmina de C1, no sulco da artéria vertebral; a artéria vertebral pode ser lesada além desses 1,5 cm, e o anel fino de C1 pode fraturar ou deixar o instrumento escorregar pela membrana atlanto-occipital.** É o que o Campbell descreve (cap. 37).",
+  "incorretas": {
+   "B": "**Longe demais.** O Campbell considera seguros cerca de 1,5 cm da linha média; além disso está o sulco da artéria vertebral.",
+   "C": "**Borda errada.** A artéria corre no sulco sobre a borda superior do arco e é lesada pela perfuração da membrana atlanto-occipital acima do anel.",
+   "D": "**É o contrário.** O anel de C1 costuma ser fino e mais profundo que o processo espinhoso de C2."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Posterior approach to C1-C2 (técnica)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "coluna-0566": {
+  "conceito": "A via de WILTSE é uma porta lateral para a coluna lombar. Em vez de descolar os músculos do osso, como na via mediana, o cirurgião passa entre dois deles por um plano que já existe.\n\n**A técnica, no Campbell** (cap. 37, técnica 37.26, WILTSE e SPENCER). WILTSE e SPENCER refinaram a via paraespinhal, que faz uma **separação longitudinal do grupo sacroespinhal** para expor a face posterolateral da coluna lombar.\n- Paciente em decúbito ventral ou ajoelhado; incisão centrada no segmento; infiltração com epinefrina.\n- Dissecção até a **fáscia lombodorsal**; a pele e o subcutâneo são afastados.\n- **Incisão da fáscia cerca de 2 cm lateral à linha média**.\n- Entra-se num **plano de clivagem natural entre o multífido e o longuíssimo**, separado por **dissecção digital romba**.\n- As fibras transversas do **multífido** são separadas das suas inserções fasciais fortes com eletrocautério ou elevador.\n\n**Os músculos, de medial para lateral.** O **multífido** é o mais medial e profundo, junto às lâminas e às facetas; o **longuíssimo** fica lateral a ele; o **iliocostal** é o mais lateral. O plano de WILTSE fica entre os dois primeiros e leva direto à faceta e ao processo transverso.\n\n**Por que é útil.** Dá acesso à região foraminal e extraforaminal, às fusões intertransversárias e às hérnias laterais, com menos dano muscular que a via mediana.\n\n**Por que esta questão foi criada.** É uma gêmea das questões de imagem do TEOT e de provas de Ortopedia sobre o plano da via paraespinhal.\n\n> **Na prova:** WILTSE = fáscia **2 cm lateral**; plano **multífido / longuíssimo**; dissecção **digital romba**; multífido = o **medial e profundo**.",
+  "correta": "**C: a fáscia lombodorsal é aberta cerca de 2 cm lateral à linha média, e entra-se num plano de clivagem natural entre o multífido e o longuíssimo, separado com dissecção digital romba.** É a técnica de WILTSE e SPENCER no Campbell (cap. 37).",
+  "incorretas": {
+   "A": "**Incisão e plano errados.** A fáscia é aberta cerca de 2 cm lateral à linha média, e o plano é entre o multífido e o longuíssimo.",
+   "B": "**Plano errado.** Os rotadores ficam sob o multífido, junto às lâminas; o plano de WILTSE é lateral ao multífido.",
+   "D": "**É justamente o que a via evita.** A separação longitudinal entre os músculos poupa a desinserção ampla da via mediana."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Paraspinal approach to lumbar spine, técnica 37.26 (WILTSE e SPENCER), p. 1677 e 1678"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "coluna-0567": {
+  "conceito": "A coluna cervical tem sete vértebras e oito raízes. Essa raiz \"a mais\" muda a regra de numeração no meio do caminho, e é aí que as provas armam a pegadinha.\n\n**A regra, no Campbell** (cap. 37, p. 1642):\n- **C2 a C7** saem **acima do pedículo de mesmo número**. Exemplo: a raiz de **C6** sai pelo forame **entre os pedículos de C5 e C6**.\n- **C8** sai pelo forame **entre os pedículos de C7 e T1**: não existe vértebra C8.\n- **Abaixo de C8**, todas as raízes saem **abaixo do pedículo de mesmo número**. Exemplo: **L4** sai **entre os pedículos de L4 e L5**.\n\n**Por que isso importa na clínica.** Na coluna cervical, uma hérnia em **C5-C6** comprime a raiz de **C6**. Na lombar, uma hérnia **posterolateral em L4-L5** costuma comprimir a raiz que **atravessa** o espaço para sair abaixo, a de **L5**; uma hérnia **foraminal** no mesmo nível pega a raiz que **sai** ali, a de **L4**.\n\n**O resto do capítulo.** O livro lembra que a coluna tem 33 vértebras, que a lordose cervical e lombar se desenvolve com a postura ereta e que os tratos da medula explicam as síndromes medulares (Tabela 37.1).\n\n**Por que esta questão foi criada.** É uma gêmea das questões de imagem que pedem a raiz assinalada num forame.\n\n> **Na prova:** **C2 a C7** = **acima** do pedículo; **C8** = entre **C7 e T1**; **abaixo de C8** = **abaixo** do pedículo; hérnia **C5-C6** = raiz **C6**.",
+  "correta": "**D: as raízes de C2 a C7 saem acima do pedículo de mesmo número (C6 entre os pedículos de C5 e C6); C8 sai entre C7 e T1; abaixo de C8, cada raiz sai abaixo do pedículo de mesmo número (L4 entre L4 e L5).** É a regra do Campbell (cap. 37, p. 1642).",
+  "incorretas": {
+   "A": "**Vale só abaixo de C8.** De C2 a C7, as raízes saem acima do pedículo de mesmo número.",
+   "B": "**Um nível abaixo.** A raiz de C6 sai entre os pedículos de C5 e C6.",
+   "C": "**Não existe pedículo de C8.** A raiz de C8 sai entre os pedículos de C7 e T1."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Anatomy (spinal nerves), p. 1642"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "coluna-0568": {
+  "conceito": "O parafuso pedicular cervical dá a fixação mais forte da região, mas passa a milímetros de duas estruturas que não perdoam: a medula por dentro e a artéria vertebral por fora. O Campbell explica qual lado é mais frágil.\n\n**O que o livro descreve** (cap. 37, p. 1644):\n- De **C3 a C6**, a **artéria vertebral** corre **risco significativo de lesão iatrogênica** na colocação do parafuso pedicular.\n- A **cortical lateral** do pedículo, que protege a artéria, é a **mais fina**; a **cortical medial**, voltada para a medula, é **quase duas vezes mais espessa**. Por isso a perfuração lateral é mais fácil que a medial.\n- **Variações do trajeto** da artéria também aumentam o risco.\n- Em **C2** e em **C7-T1**, o risco é **menor**: em C2 a artéria segue um trajeto **mais posterior e lateral**, e em C7-T1 ela fica **fora do forame transverso**.\n\n**A consequência prática.** Na coluna subaxial, a massa lateral é a alternativa mais usada; o parafuso pedicular exige planejamento por tomografia e, se usado, mira-se com cuidado medial, sabendo que a parede medial resiste mais.\n\n**Para a torácica e a lombar.** O mesmo capítulo descreve os pedículos torácicos (diâmetro horizontal de 0,7 a 1,6 cm, com mínimo de 0,5 cm em T5; direção quase sagital de T4 a L4) e o ponto de entrada na interseção da linha do meio do processo transverso com a margem lateral da faceta.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre o risco vascular na instrumentação cervical.\n\n> **Na prova:** **C3 a C6** = artéria vertebral em risco; cortical **lateral** = a **mais fina**; medial = **2x** mais espessa; **C2** e **C7-T1** = risco menor.",
+  "correta": "**A: de C3 a C6 a artéria vertebral corre risco significativo; a cortical lateral do pedículo, que a protege, é a mais fina, e a medial, voltada para a medula, é quase duas vezes mais espessa; em C2 e em C7-T1 o risco é menor.** É a descrição do Campbell (cap. 37, p. 1644).",
+  "incorretas": {
+   "B": "**É a mais espessa.** A cortical medial é quase duas vezes mais espessa que a lateral.",
+   "C": "**Em C7-T1 ela fica fora do forame.** É por isso que o risco é menor nesse nível.",
+   "D": "**Trajeto errado e risco menor.** Em C2, a artéria segue um trajeto mais posterior e lateral, e o risco é menor que de C3 a C6."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Cervical pedicle anatomy, p. 1644"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "coluna-0569": {
+  "conceito": "A transição cervicotorácica é um funil: a coluna muda de lordose para cifose, fica funda, e na frente dela se acumulam grandes vasos, traqueia, esôfago e o ducto torácico. Cada nível pede uma porta diferente.\n\n**As três vias, no Campbell** (cap. 37, p. 1655 a 1658):\n1. **Cervical anterior baixa:** incisão acima da clavícula, pela esquerda; dá acesso até **T1** na parte inferior.\n2. **Transtorácica alta.**\n3. **Transesternal:** incisão do entalhe supraesternal até o xifoide, divisão do esterno com serra de GIGLI, afastando a pleura. Para expor **igualmente a coluna cervical e a torácica, de C4 a T4**, a **divisão do esterno é a recomendada**. Para chegar a T3-T4 pode ser preciso dividir as veias tímica e inominada esquerda e expor até o arco aórtico.\n\n**Como escolher.** O **critério de CHO** permite usar a via padrão de SMITH-ROBINSON quando, na radiografia de perfil, a linha da incisão planejada até o nível mais baixo passa **acima do manúbrio** (Fig. 37.16). Se a linha bate no manúbrio, é preciso dividi-lo ou mudar de via.\n\n**Os cuidados.** O **ducto torácico** sobe **à esquerda do esôfago** a partir de **T4** até a junção da jugular interna com a subclávia esquerdas. Na deformidade cifótica, a veia inominada pode estar tensa e romper.\n\n**Por que esta questão foi criada.** É uma gêmea da questão de imagem sobre até onde a via transesternal alcança.\n\n> **Na prova:** cervical baixa = até **T1**; **transesternal** = **C4 a T4**; CHO = linha **acima do manúbrio** permite SMITH-ROBINSON; ducto torácico **à esquerda** do esôfago a partir de **T4**.",
+  "correta": "**C: as três vias da região são a cervical anterior baixa (até T1), a transtorácica alta e a transesternal; a divisão do esterno é recomendada para expor igualmente de C4 a T4, e o ducto torácico sobe à esquerda do esôfago a partir de T4.** É a descrição do Campbell (cap. 37).",
+  "incorretas": {
+   "A": "**Alcance exagerado.** A via cervical anterior baixa chega até T1.",
+   "B": "**Pode ser necessária.** Para T3 e T4, o Campbell recomenda a divisão do esterno ou, em alguns casos, a ressecção do manúbrio.",
+   "D": "**Inverte o critério.** A via de SMITH-ROBINSON serve quando a linha passa acima do manúbrio."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Anterior approaches to the cervicothoracic junction, p. 1655 a 1658 (Fig. 37.16 a 37.18)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "coluna-0570": {
+  "conceito": "A via anterior cervical é provavelmente a via de coluna mais feita no mundo. Ela funciona porque passa por um corredor natural entre dois tubos: o feixe carotídeo de um lado, a traqueia e o esôfago do outro.\n\n**A técnica, no Campbell** (cap. 37, técnica 37.5):\n- **Incisão:** transversa para um ou dois níveis, longitudinal para três ou mais. A **esquerda é preferida** pela **anatomia mais constante do nervo laríngeo recorrente** e pelo menor risco de lesão.\n- **Nível:** **três a quatro dedos acima da clavícula** expõe **C3-C5**; **dois a três dedos** expõe **C5-C7**. Em pescoços longos e finos, pode alcançar C2-C3 se a linha do disco passar abaixo do ângulo da mandíbula.\n- Incisa-se o platisma, identifica-se a borda anterior do **esternocleidomastóideo** e palpa-se o pulso carotídeo; divide-se a camada média da fáscia que envolve o omo-hióideo, medial ao feixe carotídeo.\n- O **esternocleidomastóideo e o feixe carotídeo** vão para **lateral**; o **esôfago**, que fica **atrás da traqueia**, a **traqueia** e a **tireoide** vão para **medial**.\n- Divide-se a fáscia pré-traqueal e pré-vertebral sobre os **longus colli**, que são **afastados subperiostealmente para lateral até as articulações uncovertebrais**.\n- Fecha-se sobre dreno, para evitar hematoma e obstrução da via aérea.\n\n**Os riscos.** A **cadeia simpática** corre sobre o longus colli; dissecar demais para lateral causa síndrome de HORNER. Lateral às uncovertebrais está a **artéria vertebral**.\n\n**Por que esta questão foi criada.** É uma gêmea da questão do TARO sobre o músculo afastado até a articulação unciforme.\n\n> **Na prova:** lado **esquerdo** (laríngeo recorrente); **3-4 dedos** = C3-C5, **2-3 dedos** = C5-C7; carotídeo **lateral**, víscera **medial**; **longus colli** afastado até as **uncovertebrais**.",
+  "correta": "**B: a incisão à esquerda é preferida pela anatomia mais constante do laríngeo recorrente; três a quatro dedos acima da clavícula expõe C3-C5 e dois a três dedos, C5-C7; o feixe carotídeo vai para lateral, traqueia, esôfago e tireoide para medial, e o longus colli é afastado subperiostealmente até as articulações uncovertebrais.** É a técnica do Campbell (cap. 37).",
+  "incorretas": {
+   "A": "**Lado trocado.** O Campbell prefere a esquerda, onde o laríngeo recorrente tem anatomia mais constante.",
+   "C": "**É posterior.** O esôfago fica atrás da traqueia e é afastado com ela para medial.",
+   "D": "**Não se secciona.** O longus colli é descolado subperiostealmente para lateral até as uncovertebrais."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Anterior approach, C3 to C7, técnica 37.5 (SOUTHWICK e ROBINSON), p. 1653 e 1654"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "coluna-0571": {
+  "conceito": "O pedículo é a ponte entre o corpo e o arco posterior, e é por ele que passa o parafuso. Conhecer a sua largura e a sua inclinação em cada nível é o que separa uma fixação segura de uma perfuração.\n\n**Os pedículos torácicos, no Campbell** (cap. 37, p. 1645, Fig. 37.4):\n- **Diâmetro vertical:** de 0,7 a 1,5 cm.\n- **Diâmetro horizontal:** de **0,7 a 1,6 cm**, com **mínimo de 0,5 cm em T5**, o pedículo mais estreito, no meio da zona vascular crítica.\n- **Direção:** quase **sagital de T4 a L4**, com ângulo que raramente passa de 10 graus. Acima, mais **oblíqua**: **T1 36 graus**, **T2 34 graus**, **T3 23 graus**.\n- **Ponto de entrada torácico** (Fig. 37.5): interseção das linhas pelo meio das facetas articulares inferiores e pelo meio da inserção dos processos transversos, cerca de 1 mm abaixo da faceta.\n\n**O ponto de entrada lombar** (p. 1644 e 1646). Os pontos de referência mais importantes são o espaço da faceta e o meio do processo transverso: baixa-se uma linha da **margem lateral da faceta** que cruza a linha que **divide o processo transverso**, sobre o pedículo. Para o parafuso mais cefálico de uma montagem, o livro prefere um ponto um pouco abaixo do meio no AP (8 horas no pedículo esquerdo e 4 horas no direito), para não invadir a faceta de cima.\n\n**Por que T5 importa.** O pedículo mais fino coincide com a região de T4 a T9, onde o canal é mais estreito e a irrigação é a pior. Um parafuso medial ali é especialmente perigoso.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre a anatomia aplicada à instrumentação.\n\n> **Na prova:** pedículo mais estreito = **T5** (0,5 cm); **T4 a L4** quase **sagital**; T1 **36°**, T2 **34°**, T3 **23°**; lombar = **faceta lateral × meio do transverso**.",
+  "correta": "**D: o diâmetro horizontal do pedículo torácico vai de 0,7 a 1,6 cm, com mínimo de 0,5 cm em T5; a direção é quase sagital de T4 a L4 e mais oblíqua acima (T1 36, T2 34, T3 23 graus); no lombar, o ponto de entrada fica na interseção da linha do meio do processo transverso com a margem lateral da faceta.** É a descrição do Campbell (cap. 37).",
+  "incorretas": {
+   "A": "**É em T5.** O Campbell registra o diâmetro horizontal mínimo de 0,5 cm em T5.",
+   "B": "**É o contrário.** Os pedículos torácicos altos são os mais oblíquos (T1 36 graus); de T4 a L4 a direção é quase sagital.",
+   "C": "**Ponto errado.** A entrada torácica fica na interseção da linha das facetas inferiores com a dos processos transversos."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 37 (Anatomic Approaches to the Spine), Thoracic and lumbar pedicle anatomy, p. 1644 a 1646 (Fig. 37.4 e 37.5)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  }
 }
