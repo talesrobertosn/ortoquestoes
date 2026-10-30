@@ -244,45 +244,19 @@
   "conferido": false
  },
  "joelho-0021": {
-  "conceito": "O fragmento de Segond fica na **margem lateral da tíbia**. O ponto decisivo não é simplesmente haver um pequeno fragmento perto do joelho, mas de qual osso e de qual margem ele se desprendeu.\n\nO resumo relaciona a avulsão de Segond ao ligamento anterolateral e à cápsula anterolateral. Assim, o fragmento é uma pista óssea de lesão de partes moles: procurar apenas uma grande fratura e ignorar a pequena avulsão pode deixar escapar o padrão ligamentar associado (Rockwood, 10ª ed., cap. 61, “Radiografias”).\n\nÉ especialmente útil comparar com o **sinal arqueado**: nele, a avulsão é da cabeça da fíbula, e a suspeita recai sobre o canto posterolateral. O canto reúne colateral fibular, tendão do poplíteo e ligamento popliteofibular. Segond e sinal arqueado são laterais, mas não são o mesmo fragmento nem apontam para o mesmo conjunto anatômico.\n\nA eminência intercondilar ocupa outra região da tíbia, entre os planaltos; a margem medial está do lado oposto ao anterolateral. Localizar o fragmento antes de nomear a lesão evita tratar toda avulsão como sinônimo de Segond. A avaliação ligamentar e a RM completam a investigação quando indicada.\n\n> **Na prova:** Segond é tibial e lateral; cabeça da fíbula remete ao sinal arqueado.",
-  "correta": "**A: margem lateral da tíbia.** A avulsão acompanha a inserção do complexo anterolateral descrita no capítulo. O pequeno fragmento deve levar à investigação da lesão ligamentar, não ser lido apenas como uma fratura isolada.",
+  "conceito": "Um pequeno fragmento ósseo ao lado do platô tibial lateral, na radiografia de frente, conta uma história grande: o LCA rompeu.\n\n**O que o Campbell diz** (cap. 45, p. 2284). A **fratura de SEGOND**, **avulsão da cápsula lateral** da tíbia, é **patognomônica** de lesão do LCA (Fig. 45.93). Na seção do **ligamento anterolateral**, o livro situa a fratura justamente na inserção tibial desse ligamento, que SEGOND identificou em 1879. Outros sinais indiretos: a fratura da eminência tibial (avulsão do próprio LCA) e a impactação do côndilo femoral lateral no sulco terminal.\n\n**O mecanismo.** Na rotação interna da tíbia com o joelho em varo, a cápsula lateral e o ligamento anterolateral arrancam um fragmento da margem lateral do platô, logo atrás do tubérculo de GERDY.\n\n**O que a banca quis testar.** A localização da avulsão de SEGOND. O resumo Lesão do ligamento cruzado anterior traz a imagem.",
+  "correta": "**A: margem lateral da tíbia.** A fratura de SEGOND é a avulsão da cápsula lateral, na margem lateral do platô tibial (Campbell, cap. 45).",
   "incorretas": {
-   "B": "**Troca a lateralidade da lesão.** A margem medial da tíbia não é o local da avulsão anterolateral de Segond. Reconhecer o lado é indispensável antes de relacionar o fragmento às estruturas ligamentares.",
-   "C": "**Confunde a borda com a região entre os planaltos.** A eminência intercondilar é central, enquanto Segond é marginal e lateral. A proximidade no mesmo osso não torna as duas avulsões equivalentes.",
-   "D": "**Aponta para o sinal arqueado, não para Segond.** A avulsão da cabeça da fíbula é uma pista de lesão do canto posterolateral. O osso de origem já separa os dois achados: fíbula em D, tíbia na resposta correta."
+   "B": "**Lado oposto.** A avulsão é lateral; uma avulsão medial lembraria a lesão do colateral medial ou o SEGOND reverso, associado ao LCP.",
+   "C": "**É outra lesão.** A fratura da eminência intercondilar é a avulsão do próprio LCA.",
+   "D": "**É o sinal arqueado.** A avulsão do ápice da cabeça da fíbula indica lesão do canto posterolateral."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Imagem; Canto posterolateral."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Radiographic studies (p. 2284) e Anterolateral ligament (cap. 45, p. 2206)",
+   "Biblioteca OrtoQuestões, resumo Lesão do ligamento cruzado anterior (campbell14-lca)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Imagem",
-      "Canto posterolateral"
-     ],
-     "blocos": [
-      "imagem-c89ac8ba",
-      "imagem-0472b462",
-      "imagem-54f5e9e5",
-      "canto-posterolateral-66452e25"
-     ],
-     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
-     "trechosSha256": "d00b247f3e314f6a2d4f02a8a6fe5666a84effb94db7691c02ad85e9ed2ef571"
-    }
-   ],
-   "questaoSha256": "9af4526afbee1335329352b0a35c12a1bcad2b6753197062fd0777fba55a97ea",
-   "comentarioSha256": "a776f5c5039de6b5759ae9851d01109598a627f70c463cbfeea2fe7dde8bac9a"
-  }
+  "geradoEm": "2026-10-30",
+  "conferido": false
  },
  "joelho-0022": {
   "incorretas": {
@@ -460,14 +434,18 @@
   "conferido": false
  },
  "joelho-0032": {
+  "conceito": "A fossa intercondilar é o espaço por onde o LCA passa. Se ela é estreita, o ligamento tem menos espaço e pode ser menor, e esse é um dos fatores discutidos para o risco maior nas mulheres.\n\n**O que o Campbell diz** (cap. 45, p. 2285). Atletas mulheres de futebol, basquete e rúgbi têm de **duas a oito vezes mais** lesões do LCA. Entre os fatores **intrínsecos** possíveis estão a frouxidão, os hormônios, o alinhamento, as **dimensões da fossa** e o tamanho do ligamento. O livro cita estudos em que o índice de largura da fossa foi **maior nos homens** e uma série em que **as mulheres tinham fossas significativamente mais estreitas**.\n\n**A leitura do gabarito.** A fossa é **menor nas mulheres** e é tratada como fator que **interfere** na ocorrência da lesão. Na mesma série, a ruptura do enxerto foi igual entre os sexos depois da plastia da fossa, o que reforça a ideia de que o espaço importa.\n\n**O que a banca quis testar.** O sexo com fossa mais estreita e o seu papel. O resumo Lesão do ligamento cruzado anterior traz os fatores.",
+  "correta": "**D: nas mulheres e interfere na ocorrência da lesão.** As mulheres têm fossa mais estreita, um dos fatores intrínsecos ligados ao risco maior (Campbell, cap. 45).",
   "incorretas": {
-   "A": "**Troca o grupo médio e nega a associação.** Homens não apresentam, em média, a incisura absoluta mais estreita, e a largura pode se relacionar ao risco.",
-   "B": "**A primeira metade segue a comparação da banca.** A segunda ignora a associação observada entre incisura estreita e lesão do LCA.",
-   "C": "**Reconhece a associação, mas troca o grupo.** A média da largura intercondilar costuma ser menor nas mulheres, com ampla variação individual."
+   "A": "**Sexo errado.** O índice da fossa foi maior nos homens.",
+   "B": "**Sexo certo, papel errado.** A dimensão da fossa está entre os fatores intrínsecos discutidos para a lesão.",
+   "C": "**Erra o sexo.** A fossa mais estreita é a das mulheres."
   },
-  "conceito": "**A incisura abriga o LCA.** A largura da incisura intercondilar femoral varia com o tamanho e a forma do fêmur. Em média, mulheres apresentam medidas absolutas menores do que homens, embora haja grande sobreposição individual. Uma incisura relativamente estreita tem sido associada a maior risco de lesão do LCA em estudos observacionais com ambos os sexos. Por isso não se deve tratar o sexo, isoladamente, como medida anatômica de risco.\n\n**Associação não prova o mecanismo.** A hipótese mecânica é que um espaço menor abrigue um LCA menor ou favoreça contato do ligamento com a parede óssea em determinados movimentos. A relação também pode refletir outras características ósseas e ligamentares. Lesão sem contato costuma ocorrer durante desaceleração, aterrissagem ou mudança de direção com controle inadequado da rotação e do valgo do joelho; treinamento neuromuscular aborda fatores modificáveis que uma radiografia não mostra.\n\n**Como ler a pergunta.** O enunciado pede duas comparações: a média de largura entre sexos e se essa medida se relaciona com a ocorrência da lesão. A resposta oficial combina \"menor nas mulheres\" com \"interfere\", entendendo interferência como associação de risco, não causa única ou determinística.",
-  "correta": "**Menor nas mulheres e associada à lesão do LCA.** A incisura estreita aparece como fator anatômico de risco em estudos, inclusive após comparar pessoas do mesmo sexo.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Incidence in women and intercondylar notch, p. 2285",
+   "Biblioteca OrtoQuestões, resumo Lesão do ligamento cruzado anterior (campbell14-lca)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "joelho-0033": {
@@ -1146,14 +1124,18 @@
   "conferido": false
  },
  "joelho-0080": {
+  "conceito": "A grande vantagem dos isquiotibiais não está no enxerto em si, mas no que fica para trás: a área doadora.\n\n**O que o Campbell diz** (cap. 45, p. 2292). **O uso do enxerto de isquiotibiais aumentou nos últimos anos por causa da sua baixa morbidade da área doadora.** Nas comparações com o tendão patelar, a **dor ao ajoelhar** foi maior com o patelar em todos os estudos que a avaliaram; alguns estudos mostraram **um pouco mais de frouxidão** com os isquiotibiais. Qualquer escolha deixa alguma morbidade.\n\n**As outras alternativas.**\n- **Alta resistência:** o enxerto quádruplo de isquiotibiais é forte, mas o argumento clássico a favor dele é a área doadora.\n- **Estoque para reintervenções:** não é vantagem própria; os isquiotibiais colhidos não voltam a ser usados.\n- **Cicatrização no túnel:** o enxerto tendão-osso cicatriza mais devagar no túnel que o bloco ósseo do patelar; é uma desvantagem, não uma vantagem.\n\n**O que a banca quis testar.** A vantagem dos isquiotibiais. O resumo Lesão do ligamento cruzado anterior traz a escolha do enxerto.",
+  "correta": "**B: baixa morbidade local.** É a razão citada pelo Campbell para o aumento do uso dos isquiotibiais (cap. 45, p. 2292).",
   "incorretas": {
-   "A": "**Resistência mecânica isolada não é a vantagem distintiva pedida.** A resistência depende de número de feixes, diâmetro e preparação, e não substitui a avaliação da integração e da morbidade.",
-   "C": "**O enxerto não aumenta o estoque para revisões.** A retirada dos flexores utiliza uma das opções autólogas, deixando a escolha futura condicionada ao que ainda estiver disponível.",
-   "D": "**Integração osso-osso é vantagem do enxerto patelar com blocos ósseos.** Os flexores precisam integrar tecido tendinoso à parede do túnel ósseo."
+   "A": "**Não é o argumento principal.** O Campbell destaca a baixa morbidade doadora.",
+   "C": "**Não é vantagem.** Os tendões colhidos não ficam disponíveis para novas cirurgias.",
+   "D": "**É o contrário.** O enxerto de partes moles cicatriza no túnel mais devagar que o bloco ósseo do tendão patelar."
   },
-  "conceito": "**Escolher enxerto é equilibrar benefícios.** Na reconstrução do LCA, os tendões semitendíneo e, quando necessário, grácil fornecem enxerto sem retirar o terço central do tendão patelar. Em comparação com o enxerto osso-tendão-osso patelar, a colheita dos flexores costuma provocar menos dor anterior e desconforto ao ajoelhar. Essa menor morbidade da área doadora é a vantagem central perguntada.\n\n**Há contrapartidas.** A retirada pode reduzir força de flexão ou rotação interna, e o diâmetro do enxerto varia conforme o paciente. Como o enxerto é tendinoso nas extremidades, sua integração aos túneis ósseos difere da cicatrização osso-osso proporcionada pelos blocos ósseos do enxerto patelar. Isso não significa que todo paciente com flexores terá pior resultado: idade, demanda esportiva, técnica, fixação e reabilitação importam.\n\n**Estoque para revisão não é vantagem intrínseca.** Usar os flexores consome uma opção autóloga. Em eventual revisão, a escolha depende de túneis prévios e dos enxertos ainda disponíveis, não de uma reserva automaticamente maior criada pela primeira cirurgia.",
-  "correta": "**Menor morbidade local da colheita.** Em geral, o enxerto dos flexores causa menos dor anterior e menos incômodo ao ajoelhar do que o enxerto patelar.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Graft selection, p. 2292",
+   "Biblioteca OrtoQuestões, resumo Lesão do ligamento cruzado anterior (campbell14-lca)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "joelho-0081": {
@@ -2693,16 +2675,19 @@
   "conferido": false
  },
  "joelho-0188": {
-  "conceito": "**A fratura de Segond.** É uma pequena avulsão da **borda lateral do planalto tibial**, logo abaixo da linha articular, causada pela tração da cápsula lateral e do complexo anterolateral durante rotação interna com varo. Na radiografia em AP, aparece como um fragmento fino e alongado ao lado do planalto lateral. O valor clínico está na associação: a fratura de Segond tem **forte relação com a lesão do ligamento cruzado anterior**, e por isso a sua presença exige investigar o LCA e os meniscos.\n\n**Como diferenciar das outras imagens laterais do joelho.** A **fabela** é um sesamoide arredondado dentro do gastrocnêmio lateral, atrás do côndilo, de contorno liso. O **sinal arqueado** é a avulsão da **cabeça da fíbula**, pela inserção do complexo posterolateral. O **Pellegrini-Stieda** é uma calcificação no **lado medial**, junto à origem femoral do colateral medial.\n\n**Na prova:** avulsão da borda lateral do planalto tibial é **Segond**, e Segond lembra **LCA**.",
-  "correta": "**Fratura de Segond.** Avulsão da borda lateral do planalto tibial, com forte associação à lesão do ligamento cruzado anterior.",
+  "conceito": "Na radiografia de frente do joelho, a seta aponta um fragmento na margem lateral do platô tibial. É o sinal radiográfico mais específico da lesão do LCA.\n\n**O que o Campbell diz** (cap. 45, p. 2284). A **fratura de SEGOND**, **avulsão da cápsula lateral** da tíbia, é **patognomônica** de lesão do LCA (Fig. 45.93). Na seção do **ligamento anterolateral**, o livro situa a fratura justamente na inserção tibial desse ligamento, que SEGOND identificou em 1879. Outros sinais indiretos: a fratura da eminência tibial (avulsão do próprio LCA) e a impactação do côndilo femoral lateral no sulco terminal.\n\n**O mecanismo.** Na rotação interna da tíbia com o joelho em varo, a cápsula lateral e o ligamento anterolateral arrancam um fragmento da margem lateral do platô, logo atrás do tubérculo de GERDY.\n\n**Os distratores.**\n- **Fabela:** sesamoide no gastrocnêmio lateral, atrás do côndilo, normal.\n- **Sinal arqueado:** avulsão do ápice da fíbula, do canto posterolateral.\n- **PELLEGRINI-STIEDA:** calcificação junto ao epicôndilo medial, após lesão do colateral medial.\n\n**O que a banca quis testar.** O reconhecimento da fratura de SEGOND. O resumo Lesão do ligamento cruzado anterior traz a imagem.",
+  "correta": "**C: a fratura de SEGOND.** É a avulsão da cápsula lateral da tíbia, patognomônica de lesão do LCA (Campbell, cap. 45).",
   "incorretas": {
-   "A": "**Sesamoide, não fratura.** A fabela é arredondada, lisa e fica atrás do côndilo femoral lateral.",
-   "B": "**Fica na fíbula.** O sinal arqueado é a avulsão da cabeça da fíbula, ligada ao canto posterolateral.",
-   "D": "**Lado errado.** A calcificação de Pellegrini-Stieda fica no lado medial, junto à origem do colateral medial."
+   "A": "**É um sesamoide normal.** A fabela fica atrás do côndilo femoral lateral.",
+   "B": "**É do canto posterolateral.** O sinal arqueado é a avulsão do ápice da cabeça da fíbula.",
+   "D": "**É medial.** A calcificação de PELLEGRINI-STIEDA fica junto ao epicôndilo femoral medial."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Radiographic studies, p. 2284 (Fig. 45.93)",
+   "Biblioteca OrtoQuestões, resumo Lesão do ligamento cruzado anterior (campbell14-lca)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
  },
  "joelho-0189": {
   "conceito": "### Padrões de lesão meniscal\nA figura mostra uma ruptura que vai **da borda livre (interna) em direção à periferia**, **perpendicular às fibras circunferenciais**: lesão ==radial==.\n\n| Tipo | Plano | Consequência |\n|---|---|---|\n| **Radial** | perpendicular às fibras circunferenciais | se chega à periferia (ou à raiz), perde-se o **hoop stress**: equivale à meniscectomia |\n| **Longitudinal (vertical)** | paralela às fibras | na zona **vermelha**, ótima para sutura; pode virar **alça de balde** |\n| **Horizontal** | divide o menisco em lâminas superior e inferior | típica **degenerativa**; associa-se a **cisto meniscal** |\n| **Flap / oblíqua, complexa** | combinações | |\n| **Rampa** | junção meniscocapsular do corno posterior medial | associada ao LCA |\n\n### Tratamento da radial\n- **Completas:** **suturar** sempre que possível (técnicas \"em cruz\" ou transtibiais), para restaurar o hoop stress.\n- **Parciais** pequenas na zona avascular: regularização.\n\n> **Na prova:** ruptura perpendicular às fibras, da borda livre para a periferia = ==radial==.",
@@ -2999,14 +2984,18 @@
   }
  },
  "joelho-0209": {
+  "conceito": "O LCA vive dentro da fossa intercondilar, coberto de sinóvia, e recebe o sangue de uma artéria que entra por trás, perfurando a cápsula.\n\n**O que o Campbell diz** (cap. 45, p. 2283). **A irrigação principal do ligamento vem da artéria genicular média**, que **perfura a cápsula posterior** e entra na **fossa intercondilar** perto da inserção femoral. Uma contribuição adicional vem do **coxim gorduroso retropatelar**, pelas **geniculares inferiores medial e lateral**, e ganha importância quando o ligamento está lesado. As **inserções ósseas contribuem pouco**.\n\n**Por que importa.** A irrigação pobre e o meio sinovial ajudam a explicar por que o LCA rompido não cicatriza sozinho, ao contrário do colateral medial.\n\n**O que a banca quis testar.** A artéria principal do LCA. O resumo Lesão do ligamento cruzado anterior traz a anatomia.",
+  "correta": "**A: genicular média.** É a principal fonte de sangue do LCA, entrando pela cápsula posterior na fossa intercondilar (Campbell, cap. 45, p. 2283).",
   "incorretas": {
-   "B": "As geniculares laterais, superior e inferior, irrigam a cápsula, o menisco lateral e as partes moles da periferia do joelho, e não são a fonte principal do LCA.",
-   "C": "As geniculares inferiores contribuem pouco, pelo coxim gorduroso infrapatelar. Não são a artéria principal do LCA.",
-   "D": "As geniculares superiores participam da rede em volta do joelho e da irrigação da patela, mas não irrigam o LCA de forma relevante."
+   "B": "**Contribui pouco.** As geniculares laterais participam pelo coxim gorduroso, como fonte secundária.",
+   "C": "**Fonte secundária.** As geniculares inferiores chegam pelo coxim gorduroso e ganham importância após a lesão.",
+   "D": "**Não é a principal.** As geniculares superiores irrigam sobretudo o fêmur distal e a cápsula."
   },
-  "conceito": "O ligamento cruzado anterior vive num lugar pouco irrigado. Ele fica dentro do joelho, no espaço entre os côndilos do fêmur, mas envolto por uma capa de membrana sinovial, como uma salsicha dentro da pele. Por isso se diz que ele é intra-articular, mas extrassinovial. E é exatamente por essa capa que chega quase todo o seu sangue.\n\nA artéria principal é a **genicular média**, um ramo da artéria poplítea que sai na parte de trás do joelho, atravessa a cápsula posterior e o ligamento poplíteo oblíquo e entra direto no intercôndilo. Lá, ela se ramifica na sinovial que cobre os dois cruzados e, dessa rede, pequenos vasos penetram nos ligamentos. Uma contribuição menor vem das geniculares inferiores, através do coxim gorduroso que fica atrás do tendão patelar. As inserções ósseas do ligamento quase não participam.\n\nEssa irrigação pobre ajuda a explicar dois fatos clínicos. Primeiro, o LCA rompido praticamente não cicatriza sozinho: ele está banhado em líquido sinovial, que impede a formação de um coágulo estável entre os cotos, e o sangue que chega é pouco. Segundo, quando o ligamento é reconstruído com um enxerto de tendão, esse enxerto passa meses morrendo em parte, sendo revascularizado e se remodelando até se parecer com um ligamento, processo chamado de ligamentização. É nessa fase que o enxerto fica mais fraco, e por isso a reabilitação respeita prazos antes do retorno ao esporte.\n\nAs geniculares superiores e inferiores, medial e lateral, formam uma rede em volta do joelho e irrigam a cápsula, os meniscos na periferia e a patela, mas não são a fonte principal dos cruzados.",
-  "correta": "Genicular média. Ramo da artéria poplítea, ela atravessa a cápsula posterior e irriga os cruzados pela sinovial que os envolve.",
-  "geradoEm": "2026-10-02",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Anatomy, p. 2283",
+   "Biblioteca OrtoQuestões, resumo Lesão do ligamento cruzado anterior (campbell14-lca)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "joelho-0210": {
@@ -3301,14 +3290,18 @@
   "conferido": false
  },
  "joelho-0227": {
+  "conceito": "Na reconstrução em dupla banda, cada enxerto é fixado na posição em que a banda nativa que ele substitui está tensa.\n\n**As bandas, no Campbell** (cap. 45, p. 2283). O LCA tem duas bandas funcionais, **anteromedial (AM)** e **posterolateral (PL)**, **nomeadas pela inserção na tíbia**. O seccionamento seletivo mostrou que **a banda AM fica tensa em flexão**, sendo a restrição primária nessa posição, enquanto **a PL, mais volumosa, fica tensa em extensão** e é a principal resistência à **hiperextensão**. A tensão do ligamento é mínima entre 30 e 40 graus. O livro avisa que essa descrição é uma simplificação: as fibras são recrutadas de forma diferente em cada posição.\n\n**Como lembrar.** Em flexão, a inserção femoral da AM, mais proximal e anterior, se afasta da tíbia e estica a banda; em extensão, é a PL, mais distal e posterior, que se estica.\n\n**Aplicando.** A banda **AM** é fixada em **flexão**; a **PL**, em **extensão**. Assim cada uma assume a função da original na faixa de movimento em que trabalha.\n\n**O que a banca quis testar.** O tensionamento na dupla banda. O resumo Lesão do ligamento cruzado anterior traz a biomecânica.",
+  "correta": "**C: flexão e extensão.** A banda anteromedial é tensionada em flexão e a posterolateral em extensão, como as bandas nativas (Campbell, cap. 45).",
   "incorretas": {
-   "A": "Fixar a banda anteromedial em extensão a deixaria frouxa em flexão, perdendo o controle da translação anterior a 90 graus.",
-   "B": "Fixar a banda posterolateral em flexão a deixaria frouxa em extensão, perdendo o controle rotacional perto da extensão.",
-   "D": "A ordem está invertida: a anteromedial é tensionada em flexão e a posterolateral em extensão."
+   "A": "**A AM trabalha em flexão.** Tensioná-la em extensão a deixaria frouxa quando é mais necessária.",
+   "B": "**A PL trabalha em extensão.** Fixá-la em flexão a deixaria tensa demais em extensão.",
+   "D": "**Inverte as duas.** A AM é fixada em flexão e a PL, em extensão."
   },
-  "conceito": "O ligamento cruzado anterior não é um cordão único. Ele é formado por dois feixes, chamados de bandas e nomeados pelo lugar onde se prendem na **tíbia**: a banda **anteromedial** (AM) e a banda **posterolateral** (PL). Elas se enrolam uma na outra e trabalham em momentos diferentes do movimento.\n\nCom o joelho **estendido**, a banda **posterolateral** está esticada e a anteromedial relativamente frouxa. A PL é importante para o controle da **rotação** perto da extensão, justamente a posição em que acontece o pivot shift, o deslizamento rotatório que o paciente sente como falseio. Com o joelho **dobrado**, a situação se inverte: a PL afrouxa, e a banda **anteromedial** fica tensa, sendo a principal responsável por impedir a tíbia de ir para a frente a 90 graus (o teste da gaveta anterior). Esse revezamento se chama comportamento recíproco.\n\nA reconstrução em **dupla banda** tenta reproduzir isso com dois enxertos, um em cada posição anatômica. E a regra para fixá-los é simples: cada enxerto é fixado na posição em que a sua banda nativa está tensa. A **AM** é fixada com o joelho em **flexão** (algo em torno de 45 a 60 graus, conforme a técnica) e a **PL** perto da **extensão** completa. Se a PL fosse fixada em flexão, ficaria frouxa em extensão e perderia sua função rotacional; se a AM fosse fixada em extensão, ficaria frouxa em flexão.\n\nVale o contexto: apesar da lógica anatômica, os ensaios clínicos não mostraram vantagem consistente da dupla banda sobre a reconstrução anatômica com banda única, que é hoje a técnica mais usada, às vezes associada a um procedimento lateral.",
-  "correta": "Flexão e extensão. Cada enxerto é tensionado na posição em que sua banda nativa está tensa: a anteromedial em flexão e a posterolateral perto da extensão.",
-  "geradoEm": "2026-10-02",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Biomechanics, p. 2283",
+   "Biblioteca OrtoQuestões, resumo Lesão do ligamento cruzado anterior (campbell14-lca)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "joelho-0228": {
@@ -3598,14 +3591,18 @@
   "conferido": false
  },
  "joelho-0249": {
+  "conceito": "Os testes do LCA têm uma coisa em comum: todos procuram a tíbia indo para a frente, de um jeito ou de outro.\n\n**O que o Campbell diz** (cap. 45, p. 2283). O **teste de LACHMAN** é o **mais sensível** para o deslocamento anterior da tíbia (**95%**). O **pivot shift**, que exige paciente relaxado e colateral medial íntegro, reproduz a subluxação rotatória do joelho sem LCA. A **gaveta anterior** a 90 graus completa o trio: o LCA responde por cerca de **85%** da resistência a ela. O artrômetro documenta a diferença entre os lados.\n\n**Os distratores.**\n- **Dial test:** avalia o **canto posterolateral** e o LCP (rotação externa da tíbia).\n- **Gaveta posterior:** **LCP**.\n- **McMURRAY:** **menisco**.\n- **Estresse em valgo:** **colateral medial**.\n\n**O que a banca quis testar.** As manobras do LCA. O resumo Lesão do ligamento cruzado anterior traz o exame.",
+  "correta": "**A: Lachman, gaveta anterior e pivot shift.** São as três manobras que avaliam o LCA; o LACHMAN é a mais sensível (Campbell, cap. 45).",
   "incorretas": {
-   "B": "O Lachman e a gaveta anterior avaliam o LCA, mas o dial test avalia o canto posterolateral.",
-   "C": "A gaveta posterior avalia o LCP e o dial test, o canto posterolateral. Só o pivot shift é teste do LCA.",
-   "D": "O McMurray avalia o menisco e o estresse em valgo, o ligamento colateral medial. Só o Lachman é teste do LCA."
+   "B": "**O dial test é do canto posterolateral.** Não avalia o LCA.",
+   "C": "**A gaveta posterior e o dial test são do LCP e do canto posterolateral.** Só o pivot shift é do LCA.",
+   "D": "**McMURRAY e valgo avaliam menisco e colateral medial.** Só o LACHMAN é do LCA."
   },
-  "conceito": "O ligamento cruzado anterior tem duas funções principais: impedir que a tíbia deslize para a **frente** em relação ao fêmur e controlar a **rotação** da tíbia, especialmente perto da extensão. Os três testes clássicos do LCA avaliam exatamente isso.\n\nO **teste de Lachman** é feito com o joelho dobrado a cerca de 20 a 30 graus. O examinador segura a coxa com uma mão e puxa a tíbia para a frente com a outra, avaliando quanto ela desliza e se há um ponto final firme ou mole. É o teste **mais sensível**, principalmente na lesão aguda, porque nessa posição o joelho dói menos e os isquiotibiais relaxam com mais facilidade.\n\nA **gaveta anterior** avalia o mesmo deslizamento, mas com o joelho a 90 graus. Na lesão aguda, é menos sensível: a dor faz os isquiotibiais contraírem, e o corno posterior do menisco medial funciona como um calço que segura a tíbia.\n\nO **pivot shift** testa a rotação. Com o joelho estendido, o examinador aplica valgo e roda a tíbia para dentro, e então dobra o joelho. Se o LCA está roto, a tíbia começa subluxada para a frente e, por volta de 20 a 30 graus, volta ao lugar com um ressalto. É o teste mais **específico** e o que melhor reproduz a sensação de falseio do paciente, mas é difícil de fazer no paciente acordado; sob anestesia, fica bem mais fácil.\n\nOs outros testes da questão avaliam outras estruturas: a gaveta posterior avalia o LCP; o dial, o canto posterolateral; o McMurray, o menisco; e o estresse em valgo, o colateral medial.",
-  "correta": "Lachman, gaveta anterior e pivot shift. Os dois primeiros avaliam a translação anterior da tíbia e o terceiro, a instabilidade rotatória, as duas funções do LCA.",
-  "geradoEm": "2026-10-02",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, History and physical examination, p. 2283",
+   "Biblioteca OrtoQuestões, resumo Lesão do ligamento cruzado anterior (campbell14-lca)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "joelho-0250": {
@@ -3648,14 +3645,18 @@
   "conferido": false
  },
  "joelho-0253": {
+  "conceito": "As duas bandas do LCA se revezam: uma trabalha em flexão, a outra em extensão.\n\n**As bandas, no Campbell** (cap. 45, p. 2283). O LCA tem duas bandas funcionais, **anteromedial (AM)** e **posterolateral (PL)**, **nomeadas pela inserção na tíbia**. O seccionamento seletivo mostrou que **a banda AM fica tensa em flexão**, sendo a restrição primária nessa posição, enquanto **a PL, mais volumosa, fica tensa em extensão** e é a principal resistência à **hiperextensão**. A tensão do ligamento é mínima entre 30 e 40 graus. O livro avisa que essa descrição é uma simplificação: as fibras são recrutadas de forma diferente em cada posição.\n\n**Como lembrar.** Em flexão, a inserção femoral da AM, mais proximal e anterior, se afasta da tíbia e estica a banda; em extensão, é a PL, mais distal e posterior, que se estica.\n\n**O que a banca quis testar.** A posição em que a banda anteromedial fica tensa. O resumo Lesão do ligamento cruzado anterior traz a biomecânica.",
+  "correta": "**B: a banda anteromedial está tensa em flexão.** É a restrição primária ao deslocamento anterior nessa posição (Campbell, cap. 45, p. 2283).",
   "incorretas": {
-   "A": "Em extensão, quem fica tensa é a banda posterolateral. A anteromedial fica relativamente frouxa nessa posição.",
-   "C": "O LCA não tem banda anterolateral. Esse nome pertence ao LCP, e a banda anterolateral do LCP fica tensa em flexão, não em extensão.",
-   "D": "A frase descreve corretamente o LCP, cuja banda anterolateral fica tensa em flexão. A pergunta é sobre o LCA, que tem bandas anteromedial e posterolateral."
+   "A": "**Posição trocada.** Em extensão, quem fica tensa é a posterolateral.",
+   "C": "**A banda não se chama anterolateral.** As bandas do LCA são a anteromedial e a posterolateral.",
+   "D": "**Mesmo erro de nome.** Não existe banda anterolateral do LCA; o ligamento anterolateral é uma estrutura capsular separada."
   },
-  "conceito": "O ligamento cruzado anterior, o LCA, não é um cordão único. Ele é formado por dois feixes, chamados de **bandas**, que recebem o nome pela posição em que se inserem na **tíbia**: a banda **anteromedial** (AM), que fica mais à frente e para dentro, e a banda **posterolateral** (PL), mais atrás e para fora.\n\nAs duas não trabalham ao mesmo tempo. Com o joelho **estendido**, a banda PL fica esticada e a AM fica relativamente frouxa. Quando o joelho **dobra**, a inserção no fêmur gira, as duas bandas se cruzam, e a situação se inverte: a **AM fica tensa em flexão** e a PL relaxa.\n\nIsso explica achados do exame físico. A gaveta anterior, feita com o joelho a 90 graus, depende mais da banda AM. Já a estabilidade rotacional perto da extensão, que o pivot shift testa, depende bastante da banda PL. Numa lesão parcial, de uma banda só, os testes podem dar resultados diferentes entre si.\n\nO ligamento cruzado posterior, o LCP, também tem duas bandas, mas com outros nomes: **anterolateral**, tensa em flexão, e **posteromedial**, tensa em extensão. A questão usa esse detalhe como armadilha, porque \"banda anterolateral\" é nome de banda do LCP, não do LCA.",
-  "correta": "A banda anteromedial está tensa em flexão. Quando o joelho dobra, as bandas do LCA se cruzam, a anteromedial estica e a posterolateral relaxa.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Biomechanics, p. 2283",
+   "Biblioteca OrtoQuestões, resumo Lesão do ligamento cruzado anterior (campbell14-lca)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "joelho-0254": {
@@ -6052,6 +6053,81 @@
   "conceito": "A patela não é mantida no sulco troclear por uma estrutura isolada. Seu alinhamento resulta da forma óssea, dos **restritores passivos** e da ação dos **músculos** que movem o joelho. “Dinâmico”, na distinção anatômica mais direta, significa um componente capaz de **contrair** e modificar a força aplicada à patela durante o movimento. O quadríceps é o principal conjunto muscular nessa função.\n\nO **reto femoral** é uma das quatro cabeças do quadríceps e participa da extensão do joelho. Sua força chega à patela pelo tendão quadricipital, enquanto os vastos medial e lateral aplicam vetores com componentes diferentes. Por isso, entre as alternativas, o reto femoral é o estabilizador muscular inequívoco. O ligamento patelar, os retináculos e o ligamento meniscopatelar são tecidos conjuntivos que restringem ou transmitem forças, mas não se contraem ativamente como músculo.\n\nA alternativa da **banda iliotibial** exige nuance. Ela própria é uma faixa fibrosa, não um músculo, mas recebe tração de músculos proximais e tem conexões laterais capazes de influenciar a mecânica patelar. Algumas revisões a relacionam à estabilidade funcional ou mesmo a listam entre estabilizadores dinâmicos em esquemas amplos. Assim, a oposição “reto femoral dinâmico, banda iliotibial totalmente estática e irrelevante” seria simplificação excessiva. A prova favorece D porque é o único músculo apresentado, não porque a banda nunca participa do movimento.\n\nNa instabilidade femoropatelar, essa divisão é útil para organizar o exame: força e controle muscular, integridade dos ligamentos mediais, morfologia da tróclea e alinhamento do membro devem ser considerados em conjunto.",
   "correta": "**D: reto femoral.** É músculo do quadríceps e contribui ativamente para a força e o controle da patela. Corresponde ao gabarito oficial e ao exemplo mais claro de estabilizador dinâmico entre as alternativas.",
   "geradoEm": "2026-10-25",
+  "conferido": false
+ },
+ "joelho-0383": {
+  "conceito": "O LCA não é uma corda única: são feixes que se revezam conforme o joelho dobra. Entender quem trabalha em cada posição explica os testes clínicos e a reconstrução em dupla banda.\n\n**A anatomia, no Campbell** (cap. 45, p. 2283):\n- Duas bandas funcionais, **anteromedial (AM)** e **posterolateral (PL)**, **nomeadas pela inserção na tíbia**. A AM é um pouco maior.\n- No fêmur, a AM se insere mais proximal e anterior; a PL, mais distal e posterior. A **crista intercondilar lateral** (\"crista do residente\") é a borda anterior da inserção femoral; a **crista bifurcada** separa as duas bandas.\n- Comprimento de 31 a 35 mm.\n- O ligamento é coberto de sinóvia, portanto **extrassinovial**.\n- **Irrigação principal: artéria genicular média**, que perfura a cápsula posterior e entra na fossa intercondilar perto da inserção femoral. O coxim gorduroso (geniculares inferiores) contribui, sobretudo após a lesão. As inserções ósseas contribuem pouco.\n- Inervação pelo **nervo articular posterior**, ramo do tibial; há mecanorreceptores (função proprioceptiva).\n\n**A biomecânica.** O LCA é a **restrição primária ao deslocamento anterior** da tíbia: cerca de **85%** da resistência à gaveta anterior a **90 graus** de flexão. A **banda AM fica tensa em flexão**; a **PL, em extensão**, e é a principal resistência à **hiperextensão**. A tensão é **mínima entre 30 e 40 graus**. O livro lembra que essa divisão é simplificada: as fibras são recrutadas de forma diferente em cada posição.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre as bandas, a irrigação e a dupla banda.\n\n> **Na prova:** **AM** = tensa em **flexão**; **PL** = tensa em **extensão** (hiperextensão); irrigação = **genicular média**; **85%** da gaveta a 90°; tensão mínima **30 a 40°**.",
+  "correta": "**B: o LCA tem as bandas anteromedial e posterolateral, nomeadas pela inserção na tíbia; a anteromedial fica tensa em flexão e a posterolateral em extensão, resistindo à hiperextensão; a irrigação principal vem da artéria genicular média, e o LCA responde por cerca de 85% da resistência à gaveta anterior a 90 graus.** É a descrição do Campbell (cap. 45).",
+  "incorretas": {
+   "A": "**Troca as bandas.** A anteromedial é a tensa em flexão e a restrição primária na gaveta; a posterolateral fica tensa em extensão.",
+   "C": "**É extrassinovial.** E as inserções ósseas contribuem pouco; o sangue vem sobretudo da genicular média.",
+   "D": "**É mínima.** O Campbell registra a menor tensão entre 30 e 40 graus de flexão."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Anatomy e Biomechanics, p. 2283"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "joelho-0384": {
+  "conceito": "A história da lesão do LCA é tão típica que, sozinha, já coloca o diagnóstico acima de 70%. O exame confirma, e o melhor momento para examinar é antes de o joelho inchar.\n\n**A história, no Campbell** (cap. 45, p. 2283). Começa com uma **desaceleração, um salto ou uma mudança de direção sem contato**. O paciente descreve o joelho \"saindo do lugar e voltando\", ouve ou sente um **estalo**, cai e não consegue voltar à atividade. Em **poucas horas** o joelho **incha**, e a punção mostra **hemartrose**. Nesse cenário, a chance de lesão do LCA é **maior que 70%**.\n\n**O exame.**\n- O exame é **mais fácil antes da hemartrose**; depois, a dor e a defesa muscular atrapalham.\n- **LACHMAN:** o teste **mais sensível** para o deslocamento anterior (**95%**); excursão maior que a do outro lado e **ausência de parada firme**.\n- **Pivot shift:** exige paciente **relaxado** e **ligamento colateral medial íntegro**; reproduz o movimento patológico; é mais fácil na lesão **crônica** ou sob **anestesia**.\n- **Artrômetro** (KT-1000/2000): na lesão aguda, diferença de **3 mm ou mais** em **90%**; em 95% dos joelhos normais a diferença é **menor que 3 mm**. É mais útil na lesão crônica, sem dor e defesa.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre as manobras de avaliação do LCA.\n\n> **Na prova:** estalo + hemartrose = **> 70%** de LCA; **LACHMAN** = o mais **sensível** (95%); **pivot shift** = relaxado, **colateral medial íntegro**; artrômetro **≥ 3 mm**.",
+  "correta": "**C: nesse cenário a chance de lesão do LCA passa de 70%; o teste de LACHMAN é o mais sensível (95%); o pivot shift exige paciente relaxado e ligamento colateral medial íntegro, e o artrômetro mostra diferença de 3 mm ou mais em 90% das lesões agudas.** É o que o Campbell descreve (cap. 45).",
+  "incorretas": {
+   "A": "**É o contrário.** A hemartrose rápida depois de um estalo eleva a chance de LCA acima de 70%.",
+   "B": "**É mais fácil na lesão crônica ou sob anestesia.** Na fase aguda, a dor e a defesa muscular atrapalham o pivot shift.",
+   "D": "**É incomum.** Em 95% dos joelhos normais a diferença é menor que 3 mm."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, History and physical examination, p. 2283 e 2284"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "joelho-0385": {
+  "conceito": "Na lesão do LCA, a tíbia salta para a frente e roda; nesse instante, o côndilo femoral lateral bate na parte de trás do platô tibial lateral. As marcas desse choque aparecem na radiografia e na ressonância.\n\n**Na radiografia, segundo o Campbell** (cap. 45, p. 2284). A radiografia **costuma ser normal**, mas três achados ajudam:\n- A **fratura da eminência tibial** indica avulsão da inserção tibial do LCA.\n- A **fratura de SEGOND**, **avulsão da cápsula lateral** da tíbia, é **patognomônica** da lesão do LCA (Fig. 45.93). Na seção do ligamento anterolateral, o livro situa a fratura justamente na inserção desse ligamento.\n- A **impactação do côndilo femoral lateral** no **sulco terminal** (o \"sinal do sulco femoral lateral\") sugere a lesão.\n\n**Na ressonância.** É o exame mais útil, com acurácia de 95% a 100% nos estudos recentes. Como o LCA cruza o joelho obliquamente, um corte sagital puro raramente o mostra inteiro; o **plano não ortogonal**, com o joelho em **rotação externa de cerca de 15 graus**, costuma mostrá-lo num só corte. As **contusões ósseas** aparecem em **80%**, sobretudo no **côndilo femoral lateral** e no **platô tibial lateral**; um estudo de 525 pacientes não as associou à dor depois da reconstrução.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre a fratura de SEGOND.\n\n> **Na prova:** **SEGOND** = avulsão da **cápsula lateral da tíbia**, **patognomônica**; contusões no **lateral** (fêmur e tíbia) em **80%**; RM com **15° de rotação externa**.",
+  "correta": "**A: a fratura de SEGOND, avulsão da cápsula lateral da tíbia, é patognomônica de lesão do LCA; a impactação do côndilo femoral lateral no sulco terminal sugere a lesão; as contusões ósseas aparecem em 80%, sobretudo no côndilo femoral lateral e no platô tibial lateral; e a ressonância com rotação externa de cerca de 15 graus mostra o ligamento inteiro.** É o que o Campbell descreve (cap. 45).",
+  "incorretas": {
+   "B": "**É lateral.** A fratura de SEGOND é a avulsão da cápsula lateral da tíbia.",
+   "C": "**É o compartimento lateral.** As contusões ocorrem sobretudo no côndilo femoral lateral e no platô tibial lateral.",
+   "D": "**Costuma ser normal.** O diagnóstico vem da clínica e da ressonância; a radiografia dá sinais indiretos."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, History and physical examination: radiographic studies, p. 2284 (Fig. 45.93 e 45.94)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "joelho-0386": {
+  "conceito": "A mesma jogada, o mesmo esporte e um risco várias vezes maior para a atleta mulher. O Campbell lista os possíveis motivos, e a fossa intercondilar está entre eles.\n\n**O que o Campbell diz** (cap. 45, p. 2285). Os dados do sistema de vigilância da NCAA e vários estudos mostram **taxas de lesão do LCA de duas a oito vezes maiores** em jogadoras de **futebol, basquete e rúgbi** do que nos homens. Os fatores possíveis:\n- **Extrínsecos:** movimento do corpo, força muscular, interface entre o calçado e o solo, nível de habilidade.\n- **Intrínsecos:** frouxidão articular, influências hormonais, alinhamento do membro, **dimensões da fossa intercondilar** e **tamanho do ligamento**.\n\n**A fossa.** O livro cita estudos em que o índice da largura da fossa foi **maior nos homens**, e uma série de reconstruções em que as **mulheres tinham fossas significativamente mais estreitas**. A fossa estreita é um dos fatores intrínsecos discutidos para a lesão; na mesma série, a taxa de ruptura do enxerto foi igual entre os sexos, provavelmente porque se fez a plastia da fossa.\n\n**A prevenção.** Programas de treino neuromuscular (aterrissagem, desaceleração, fortalecimento) são a base da prevenção nas atletas, porque atuam nos fatores extrínsecos modificáveis.\n\n**Por que esta questão foi criada.** É uma gêmea da questão do TARO sobre a largura da fossa intercondilar e o sexo.\n\n> **Na prova:** mulheres = **2 a 8x** mais lesões; fatores **extrínsecos** e **intrínsecos**; fossa **mais estreita** nas mulheres.",
+  "correta": "**D: atletas mulheres de futebol, basquete e rúgbi têm de duas a oito vezes mais lesões; os fatores podem ser extrínsecos (movimento, força, interface calçado-solo, habilidade) ou intrínsecos (frouxidão, hormônios, alinhamento, dimensões da fossa e tamanho do ligamento), e as mulheres têm fossa intercondilar mais estreita.** É o que o Campbell descreve (cap. 45).",
+  "incorretas": {
+   "A": "**É maior nas mulheres.** As taxas são de duas a oito vezes maiores nos mesmos esportes.",
+   "B": "**É o contrário.** O índice da fossa foi maior nos homens, e as mulheres tiveram fossas mais estreitas.",
+   "C": "**São vários.** O livro lista fatores extrínsecos e intrínsecos, entre eles os hormonais."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Incidence in women and intercondylar notch, p. 2285"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "joelho-0387": {
+  "conceito": "Não existe enxerto perfeito para o LCA: cada um troca um problema por outro. O Campbell resume essa troca com os dados das comparações.\n\n**Os autoenxertos, no Campbell** (cap. 45, p. 2292). O uso do **enxerto de isquiotibiais aumentou** nos últimos anos pela **baixa morbidade da área doadora**. Nas comparações com o **tendão patelar**:\n- **frouxidão um pouco maior** no artrômetro com os isquiotibiais em três de sete estudos;\n- **dor ao ajoelhar maior com o tendão patelar** em todos os quatro estudos que a avaliaram;\n- **dor anterior do joelho** maior com o tendão patelar em apenas um de nove estudos.\n\nA conclusão do livro: **qualquer escolha deixa alguma morbidade**.\n\n**O aloenxerto** (p. 2304). As vantagens citadas (sem morbidade doadora, cirurgia mais curta, incisões menores, mais disponibilidade) foram ofuscadas pelo **risco de transmissão de doenças**, com relatos de infecções graves.\n\n**A reabilitação** (p. 2305). Iniciar os **exercícios de amplitude de movimento até 4 semanas** reduz a incidência de **artrofibrose**, e a reabilitação intensiva ajuda a prevenir a artrofibrose precoce e a recuperar força e função mais cedo.\n\n**Uma sutileza que cai em prova.** O tendão patelar é **mais curto e mais rígido** que o enxerto de isquiotibiais, com bloco ósseo nas pontas; por isso costuma ser fixado com menos tensão que os flexores.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre as vantagens dos isquiotibiais e as complicações do tendão patelar.\n\n> **Na prova:** isquiotibiais = **baixa morbidade doadora** (um pouco mais de frouxidão); patelar = **dor ao ajoelhar**; aloenxerto = sem morbidade doadora, risco de **doença**; movimento até **4 semanas** = menos **artrofibrose**.",
+  "correta": "**B: o uso dos isquiotibiais aumentou pela baixa morbidade da área doadora; nas comparações, a dor ao ajoelhar foi maior com o tendão patelar, e alguns estudos mostraram um pouco mais de frouxidão com os isquiotibiais; o aloenxerto evita a morbidade doadora, mas traz o risco de transmissão de doenças; e iniciar o movimento até 4 semanas reduz a artrofibrose.** É o que o Campbell descreve (cap. 45).",
+  "incorretas": {
+   "A": "**É o dos isquiotibiais.** A baixa morbidade doadora é a vantagem citada para os isquiotibiais.",
+   "C": "**Tem o risco de transmissão.** As vantagens do aloenxerto foram ofuscadas pelo risco de doenças.",
+   "D": "**É o contrário.** O movimento precoce e a reabilitação intensiva ajudam a prevenir a artrofibrose."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), Anterior cruciate ligament injuries, Graft selection (p. 2292), allografts (p. 2304), rehabilitation (p. 2305)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  }
 }
