@@ -117,7 +117,7 @@ const COR_GRUPO: Record<string, string> = { 'Estudar o conteúdo': '#3f8a3a', 'P
 /** Cor da capinha de cada atalho do dia a dia. */
 const CAPA: Record<string, string> = { '/treinar': '#3f8a3a', '/revisao': '#2f6aa8', '/flashcards': '#b8452f', '/cronograma': '#9a6a2f', '/cronograma-mao': '#1f7a80', '/indicar': '#7a4a8c' }
 /** Partículas de luz (posição, tamanho e ritmo fixos, para não mudar a cada abertura). */
-const POEIRA = Array.from({ length: 22 }, (_, k) => ({
+const POEIRA = Array.from({ length: 12 }, (_, k) => ({
   x: (k * 37 + 11) % 100, y: (k * 53 + 7) % 100, s: k % 5 === 0 ? 14 + (k % 3) * 6 : 2 + (k % 3), t: 9 + (k % 7) * 1.7, d: -((k * 1.3) % 9), bokeh: k % 5 === 0,
 }))
 const idGrupo = (titulo: string) => 'mn-g-' + titulo.normalize('NFD').replace(/[^a-zA-Z]/g, '').toLowerCase()
