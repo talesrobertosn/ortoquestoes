@@ -30,18 +30,30 @@ export function JanelaCentral({ aberta, aoFechar, rotulo, children, className = 
     const anterior = document.activeElement as HTMLElement | null
     const rolagem = document.body.style.overflow
     document.body.style.overflow = 'hidden'
-    caixa.current?.querySelector<HTMLElement>('.jc__fechar')?.focus()
+    // Visíveis só: uma janela pode esconder o X próprio e trazer o seu (o menu em livro tem a aba "Fechar").
+    const visiveis = (lista: NodeListOf<HTMLElement>) => [...lista].filter((el) => el.getClientRects().length > 0)
+    const SELETOR = 'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    const focarInicio = () => {
+      if (!caixa.current) return
+      const alvo = visiveis(caixa.current.querySelectorAll<HTMLElement>('.jc__fechar'))[0] ?? visiveis(caixa.current.querySelectorAll<HTMLElement>(SELETOR))[0]
+      alvo?.focus()
+    }
+    focarInicio()
+    // O conteúdo pode chegar depois (carregado sob demanda): se o foco ainda não entrou, entra quando ele aparecer.
+    const observador = new MutationObserver(() => { if (caixa.current && !caixa.current.contains(document.activeElement)) focarInicio() })
+    if (caixa.current) observador.observe(caixa.current, { childList: true, subtree: true })
+    const parar = window.setTimeout(() => observador.disconnect(), 3000)
     const teclar = (e: KeyboardEvent) => {
       if (e.key === 'Escape') { e.stopPropagation(); fechar.current(); return }
       if (e.key !== 'Tab' || !caixa.current) return
-      const focaveis = caixa.current.querySelectorAll<HTMLElement>('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')
+      const focaveis = visiveis(caixa.current.querySelectorAll<HTMLElement>(SELETOR))
       if (!focaveis.length) return
       const primeiro = focaveis[0], ultimo = focaveis[focaveis.length - 1]
       if (e.shiftKey && document.activeElement === primeiro) { e.preventDefault(); ultimo.focus() }
       else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primeiro.focus() }
     }
     document.addEventListener('keydown', teclar, true)
-    return () => { document.removeEventListener('keydown', teclar, true); document.body.style.overflow = rolagem; anterior?.focus?.() }
+    return () => { observador.disconnect(); window.clearTimeout(parar); document.removeEventListener('keydown', teclar, true); document.body.style.overflow = rolagem; anterior?.focus?.() }
   }, [aberta])
 
   if (!aberta) return null
