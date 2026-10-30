@@ -107,6 +107,10 @@ export default function ConteudoMenu({ caminho, aoFechar }: { caminho: string; a
   const [gato, definirGato] = useState(false)
   const [relogioVolta, definirRelogioVolta] = useState(false)
   const toques = useRef<number[]>([])
+  // Atrasos das animações (gato, relógio): fechar o menu ou ir para outra página cancela todos.
+  const relogios = useRef<number[]>([])
+  const depois = (f: () => void, ms: number) => { relogios.current.push(window.setTimeout(f, ms)) }
+  useEffect(() => () => relogios.current.forEach((t) => window.clearTimeout(t)), [])
   const agora = useMemo(() => new Date(), [])
   useEffect(() => { if (!aviso) return; const t = window.setTimeout(() => definirAviso(null), 4200); return () => window.clearTimeout(t) }, [aviso])
 
@@ -155,7 +159,7 @@ export default function ConteudoMenu({ caminho, aoFechar }: { caminho: string; a
     if (toques.current.length < 5) return
     toques.current = []
     definirRelogioVolta(true)
-    window.setTimeout(() => definirRelogioVolta(false), 1600)
+    depois(() => definirRelogioVolta(false), 1600)
     const novo = acharSegredo('relogioMenu')
     definirAviso(`${novo ? 'Segredo encontrado! ' : ''}Revisão é voltar no tempo, na hora certa.`)
   }
@@ -164,7 +168,7 @@ export default function ConteudoMenu({ caminho, aoFechar }: { caminho: string; a
     definirGato(true)
     const novo = acharSegredo('gatoMenu')
     definirAviso(`${novo ? 'Segredo encontrado! ' : ''}O gato pulou para a Biblioteca. Siga-o!`)
-    window.setTimeout(() => { aoFechar(); navegar('/resumos') }, semMovimento() ? 300 : 1300)
+    depois(() => { aoFechar(); navegar('/resumos') }, semMovimento() ? 300 : 1300)
   }
 
   // Clique num objeto: um aperto curto (só visual) e a navegação segue normal; Ctrl, Cmd e botão do meio abrem direto.
