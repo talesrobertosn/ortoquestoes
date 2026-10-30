@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+"""Mede se resumos e comentários estão no padrão de profundidade do site.
+
+Padrão (docs/biblioteca/PILOTO-AUTOMATICO.md e Tales, 30/10/2026):
+  - resumo: no mínimo o nível dos modelos rockwood10-53 e rockwood10-66 (45 KB); o roteiro sugere 60 a 90 KB;
+  - comentário: conceito + correta + incorretas com mínimo de 4,5 mil caracteres; as referências mao-2164 e mao-0853 têm cerca de 6 mil.
+
+Uso:
+  python3 scripts/biblioteca/medir_profundidade.py resumo <id> [<id> ...]
+  python3 scripts/biblioteca/medir_profundidade.py comentarios <id-de-questão> [...]
+  python3 scripts/biblioteca/medir_profundidade.py faixa <tema> <primeiro-id> <ultimo-id>
+"""
+import json
+import statistics
+import sys
+from pathlib import Path
+
+RAIZ = Path(__file__).resolve().parents[2]
+MIN_RESUMO = 45_000  # o modelo rockwood10-53 tem ~48 KB; o roteiro sugere 60 a 90 KB
+MIN_COMENTARIO = 4_500  # as referências mao-2164 e mao-0853 têm 6 a 6,4 mil
+
+
+def tamanho_comentario(c: dict) -> int:
+    inc = c.get("incorretas") or {}
+    return len(c.get("conceito", "")) + len(c.get("correta", "")) + sum(len(v) for v in inc.values())
+
+
+def comentarios(ids: list[str]) -> None:
+    por_tema: dict[str, list[str]] = {}
+    for i in ids:
+        por_tema.setdefault(i.rsplit("-", 1)[0], []).append(i)
+    tamanhos = []
+    for tema, lista in por_tema.items():
+        dados = json.loads((RAIZ / f"public/acervo/comentarios/{tema}.json").read_text(encoding="utf-8"))
+        dados = dados.get("comentarios", dados)
+        for i in lista:
+            n = tamanho_comentario(dados[i]) if i in dados else 0
+            tamanhos.append(n)
+            print(f"{'OK  ' if n >= MIN_COMENTARIO else 'CURTO'} {n:6d}  {i}")
+    if tamanhos:
+        print(f"mediana {statistics.median(tamanhos):.0f} (meta {MIN_COMENTARIO} ou mais)")
+
+
+def main() -> int:
+    if len(sys.argv) < 3:
+        print(__doc__)
+        return 1
+    modo, args = sys.argv[1], sys.argv[2:]
+    if modo == "resumo":
+        for i in args:
+            n = len((RAIZ / f"conteudo/biblioteca/{i}.md").read_text(encoding="utf-8"))
+            print(f"{'OK  ' if n >= MIN_RESUMO else 'CURTO'} {n:7d}  {i}")
+    elif modo == "comentarios":
+        comentarios(args)
+    elif modo == "faixa":
+        tema, a, b = args
+        ini, fim = int(a.rsplit("-", 1)[1]), int(b.rsplit("-", 1)[1])
+        comentarios([f"{tema}-{n:04d}" for n in range(ini, fim + 1)])
+    else:
+        print(__doc__)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
