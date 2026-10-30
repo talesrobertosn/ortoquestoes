@@ -67,6 +67,44 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 - **Pendentes:** as imagens de cotovelo e antebraço classificadas no subtema, e os ligamentos coracoclaviculares.
 - **Observação:** os comentários deste ciclo ficaram curtos (mediana de 1,8 mil caracteres); os próximos voltam ao tamanho de miniaula completa.
 
+## Ciclo 5 · Neuropatias de compressão (mão, provas gerais)
+
+- **Estado:** publicado (PRs 666 a 668).
+- **Fonte:** Green 8ª ed., cap. 26.
+- **Resumo:** `green8-neuropatias-compressao`.
+- **Simulados:** mao-2574 a 2581.
+- **Comentários oficiais:** 17.
+- **Pendentes:** túnel do carpo (testes e números) e desfiladeiro torácico, sem trecho lido suficiente.
+- **Problema:** um comentário novo da mao-0102, amostra da página inicial, quebrou o teste das amostras. Por isso foi criado `scripts/pos_aplicar.sh`.
+
+## Ciclo 6 · Omartrose e artroplastia do ombro
+
+- **Estado:** publicado (PRs 669 e 670).
+- **Fonte:** Campbell 14ª ed., caps. 12 e 13.
+- **Resumo:** `campbell14-omartrose-artroplastia`.
+- **Simulados:** ombro-cotovelo-0704 a 0711.
+- **Comentários oficiais:** 18.
+- **Pendentes:** questões do TECOC sem fonte local.
+
+## Ciclo 7 · Anatomia do quadril (47 questões)
+
+- **Estado:** publicado (PRs 671 e 672).
+- **Fonte:** Netter's Concise, 2ª ed., caps. 7 e 8.
+- **Resumo:** `netter-anatomia-quadril-coxa`.
+- **Simulados:** quadril-0715 a 0722.
+- **Comentários oficiais:** 20, sendo 11 de imagem, explicados pelo que o gabarito indica.
+- **Problemas:**
+  - A PR 671 falhou porque o `indice.json` não entrou no commit. O lembrete agora está em `pos_aplicar.sh`.
+  - A PR 672 pegou o teste `testar_sincronia_aparelhos` perto da meia-noite: os relógios simulados de -7 e +9 minutos caem em dias diferentes. O teste foi rodado de novo depois das 00h10.
+
+## Ciclo 8 · Artroplastia total do quadril: componentes e fixação (45 questões)
+
+- **Fonte:** Campbell 14ª ed., cap. 3 (página impressa = PDF menos 19).
+- **Resumo:** `campbell14-ath-biomecanica-componentes`.
+- **Simulados:** quadril-0723 a 0732.
+- **Comentários oficiais:** 23.
+- **Pendentes:** Vancouver, infecção, artrodese, recapeamento e as questões antigas sem gabarito.
+
 ## Melhorias de sistema feitas no caminho
 
 | PR | Melhoria |
@@ -77,7 +115,8 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 | 654 | `scripts/livros.py` (leitura enxuta dos livros) e a passagem para o MacBook (`docs/prompts/CONTINUAR-NO-MACBOOK.md`, `scripts/macbook/preparar.sh`). |
 | 656 | `fila_editorial.py` preserva os comentários que já citam um resumo da Biblioteca. |
 | 660 | `scripts/publicar_pr.sh` só mescla com os checks verdes. |
+| 668 | `scripts/pos_aplicar.sh`: regenera índices, Biblioteca e amostras e roda os testes que mais quebram. |
 
 ## Próximo
 
-Ciclo 5: Neuropatia ulnar e outras compressões (mão, provas gerais; Green cap. 26 local e Campbell cap. 77). Depois, Omartrose e artroplastia do ombro.
+Seguir a fila (`scripts/biblioteca/fila_editorial.py`). Na sequência: outras malformações congênitas da mão, instabilidade anterior do ombro e anatomia da coluna.
