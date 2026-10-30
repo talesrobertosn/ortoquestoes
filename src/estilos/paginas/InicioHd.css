@@ -435,3 +435,28 @@
   .hd-diario__lombada { display: none; }
   .hd-diario__pagina + .hd-diario__lombada + .hd-diario__pagina { border-top: 0; }
 }
+
+/* ── Cenários pintados de cada seção (scripts/gerar_cena_atlas.py, _biblioteca, _arena e _vila) ──
+   O cenário cobre o quadro inteiro, ancorado à direita (onde fica o foco da pintura); um véu escuro à esquerda
+   segura o texto. No celular, a versão de 960 px. */
+.hd :is(.qa, .er, .cx--temas, .hd-estandarte, .ap, .cr-destaque, .faixa-planos, .inicio-planos-atalho, .ig) { position: relative; isolation: isolate; }
+.hd :is(.qa, .er, .cx--temas, .hd-estandarte, .ap, .cr-destaque, .faixa-planos, .inicio-planos-atalho, .ig)::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: var(--cena-veu), var(--cena); background-size: cover, cover; background-position: center, right center; background-repeat: no-repeat; }
+.hd :is(.qa, .er, .cx--temas, .hd-estandarte, .ap, .cr-destaque, .faixa-planos, .inicio-planos-atalho, .ig) {
+  --cena-veu: linear-gradient(90deg, rgba(6, 8, 14, 0.9) 0%, rgba(6, 8, 14, 0.78) 34%, rgba(6, 8, 14, 0.28) 62%, rgba(6, 8, 14, 0.08) 100%); }
+.hd .qa { --cena: var(--cena-atlas); }
+.hd .er { --cena: var(--cena-biblioteca); --cena-veu: linear-gradient(90deg, rgba(10, 6, 4, 0.9), rgba(10, 6, 4, 0.72) 45%, rgba(10, 6, 4, 0.45)); }
+.hd .cx--temas { --cena: var(--cena-arena); }
+.hd .hd-estandarte { --cena: var(--cena-trofeus); --cena-veu: radial-gradient(70% 90% at 50% 40%, rgba(6, 8, 14, 0.35), rgba(6, 8, 14, 0.85)); }
+.hd :is(.ap, .cr-destaque) { --cena: var(--cena-torre); }
+.hd :is(.faixa-planos, .inicio-planos-atalho) { --cena: var(--cena-bau); }
+.hd .ig { --cena: var(--cena-correio); }
+@media (max-width: 60rem) {
+  .hd .qa { --cena: var(--cena-atlas-p); } .hd .er { --cena: var(--cena-biblioteca-p); } .hd .cx--temas { --cena: var(--cena-arena-p); }
+  .hd .hd-estandarte { --cena: var(--cena-trofeus-p); } .hd :is(.ap, .cr-destaque) { --cena: var(--cena-torre-p); }
+  .hd :is(.faixa-planos, .inicio-planos-atalho) { --cena: var(--cena-bau-p); } .hd .ig { --cena: var(--cena-correio-p); }
+  .hd :is(.qa, .er, .cx--temas, .ap, .cr-destaque, .faixa-planos, .inicio-planos-atalho, .ig) { --cena-veu: linear-gradient(180deg, rgba(6, 8, 14, 0.55), rgba(6, 8, 14, 0.88)); }
+}
+/* A pintura do gabinete já tem o esqueleto: a arte antiga do quadro do Atlas sai. */
+.hd .qa__arte { display: none; }
+.hd .hd-estandarte__luz { display: none; }

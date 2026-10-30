@@ -29,7 +29,7 @@ import '../estilos/paginas/InicioHd.css'
 import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
 import { usarConquistas } from '../estado/usarConquistas'
 import { emblemasQuaseLa } from '../estado/conquistas'
-import { FLASHCARDS_NA_CAPA, fraseGratis, recurso } from '../config'
+import { FLASHCARDS_NA_CAPA, fraseGratis, recurso, urlCss } from '../config'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -96,6 +96,11 @@ const PROVAS_DO_ACERVO = [
   { nome: 'Fellowship de quadril', cor: '#c5a8f0' },
   { nome: 'TECOC', cor: '#9fd8f2' },
 ]
+
+/** Os cenários pintados de cada seção (scripts/gerar_cena_*.py), como variáveis do CSS (url() absoluto). */
+const CENAS_SECOES = Object.fromEntries(['atlas', 'biblioteca', 'arena', 'trofeus', 'torre', 'bau', 'correio'].flatMap((n) => [
+  [`--cena-${n}`, urlCss(`pixel/inicio/secao-${n}.webp`)], [`--cena-${n}-p`, urlCss(`pixel/inicio/secao-${n}-960.webp`)],
+])) as CSSProperties
 
 /** A ação do topo do painel: uma só, a mais útil agora. */
 interface ProximaAcao {
@@ -292,7 +297,7 @@ export function Inicio() {
   // estandartes das provas, molduras e o portão final). Os textos, convites e links são os de sempre.
   if (pedeConta) {
     return (
-      <div className="ip ip--vitrine hd">
+      <div className="ip ip--vitrine hd" style={CENAS_SECOES}>
         <TopoVisitante
           titulo={cabecalhoDoDia.semNome}
           proposta={<>As provas de ortopedia, <em>comentadas como uma aula</em>.</>}
@@ -389,7 +394,7 @@ export function Inicio() {
   ]
   const temas = temAcervo ? indice!.temas.filter((tema) => (contagens!.porTema[tema.slug] ?? 0) > 0) : []
   return (
-    <div className="ip ip--painel hd">
+    <div className="ip ip--painel hd" style={CENAS_SECOES}>
       <TopoDia
         selo="Seu dia de estudo"
         titulo={titulo}
