@@ -2053,9 +2053,9 @@ def montar_trofeus_hora() -> Image.Image:
     # de dia, a luz que entra pela janela rebate e clareia a sala em volta dela
     if P != "noite":
         jx_, jy_, jw_, jh_ = JANELA
-        luz += luz_pontual(jx_ + jw_ / 2, SA_CHAO + 10, 120, 0.5)[:, :, None] * hexa(cor_j) * (0.3 if P == "manha" else 0.25)
+        luz += luz_pontual(jx_ + jw_ / 2, SA_CHAO + 10, 140, 0.5)[:, :, None] * hexa(cor_j) * (0.38 if P == "manha" else 0.25)
     janela_a = ampliar(janela[:, :, None])[:, :, 0]
-    luz_img = luz * (1 - janela_a[:, :, None]) + janela_a[:, :, None] * 1.25
+    luz_img = luz * (1 - janela_a[:, :, None]) + janela_a[:, :, None] * {"manha": 0.78, "tarde": 1.05, "noite": 1.25}[P]
     img = img * luz_img
 
     # Mancha da janela projetada no chão pela lua (losangos e montantes inclusos), azulada.
@@ -2068,7 +2068,7 @@ def montar_trofeus_hora() -> Image.Image:
             if 0 <= int(wy) < H and 0 <= int(wx) < W:
                 patch[y, x] = janela[int(wy), int(wx)] * (1 if 300 < wx < 380 else 0)
     patch = desfocar(ampliar(patch[:, :, None]), 2.5)[:, :, 0]
-    k_patch = {"manha": 1.5, "tarde": 1.6, "noite": 1.6}[P]
+    k_patch = {"manha": 0.85, "tarde": 1.5, "noite": 1.6}[P]
     img += img * patch[:, :, None] * hexa(cor_j) * k_patch + patch[:, :, None] * hexa(cor_j2) * 0.4
 
     # Reflexo no mármore polido (a parede espelhada na linha do chão), só fora do tapete.
@@ -2124,7 +2124,7 @@ def montar_trofeus_hora() -> Image.Image:
     vol = desfocar(vol[:, :, None], 8)[:, :, 0] / 60
     vol *= (GRADE_Y < (SA_CHAO + 40) * ESC)
     img += vol[:, :, None] * hexa({"manha": "#fff0d4", "tarde": "#ffa860", "noite": "#7a9ae0"}[P]) * \
-        {"manha": 1.5, "tarde": 1.7, "noite": 1.7}[P]
+        {"manha": 0.75, "tarde": 1.5, "noite": 1.7}[P]
     foco = facho(px + 8, -4, px, py - 60, 5, 20, dureza=1.8) * np.clip((py - 52 - ys) / 30, 0, 1)
     foco = desfocar(foco[:, :, None], 5)[:, :, 0]
     img += foco[:, :, None] * hexa("#ffd890") * 0.32 * (0.5 + 0.5 * k_vela)

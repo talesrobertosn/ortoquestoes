@@ -1592,7 +1592,7 @@ def montar(nome: str) -> Image.Image:
 
     # ── albedo com profundidade de campo, e os mapas de névoa, sol e "perto da fogueira"
     nev_chao = np.clip(1 - (GYa - ampliar(CRISTA3[None, :].repeat(H, 0)[:, :, None])[:, :, 0]) / 30, 0, 1) * 0.16
-    kn = {"manha": 0.72, "tarde": 0.95, "noite": 0.9}[nome]
+    kn = {"manha": 0.52, "tarde": 0.95, "noite": 0.9}[nome]
     planos = [  # (camada, desfoque, névoa, recebe sol, recebe fogo)
         (m_longe.c, 1.0, 0.56 * kn, 0.6, 0.0),
         (m_perto.c, 0.8, 0.44 * kn, 0.65, 0.0),
@@ -1723,7 +1723,7 @@ def montar(nome: str) -> Image.Image:
     faixas = ampliar((ruido_ret(611, 46, 2.2) * 0.6 + ruido_ret(612, 18, 1.5) * 0.4)[:, :, None])[:, :, 0]
     vale = np.zeros_like(GYa)
     for crista, alcance, k_, alvo in ((CRISTA2, 6.0, 1.0, 3), (CRISTA3, 5.0, 0.8, 5), (CRISTA1, 6.5, 0.85, 1),
-                                      (CRISTA_M2, 4.0, 0.5, 0)):
+                                      (CRISTA_M2, 4.0, 0.3, 0)):
         cr = ampliar(np.broadcast_to(crista[None, :], (H, W))[:, :, None])[:, :, 0]
         acima = cr - GYa
         banda = np.exp(-np.clip(acima, 0, None) / alcance) * (acima > -1.5) * suave(-1.5, 1.5, acima)
@@ -1760,7 +1760,7 @@ def montar(nome: str) -> Image.Image:
     if nome == "manha":
         raios = raios_de_luz(vis_ceu.astype(np.float32), (40, -60), passos=80, alcance=0.95)
         raios = desfocar(raios[:, :, None], 5)[:, :, 0]
-        img += raios[:, :, None] * hexa("#fff0c8") * 0.55
+        img += raios[:, :, None] * hexa("#fff0c8") * 0.3
         peso_poeira, cor_poeira = raios * 1.6 * (GYa > 60), "#fff4d0"
     elif nome == "tarde":
         brilho = np.exp(-np.hypot(GXa - SOL_TARDE[0], (GYa - SOL_TARDE[1]) * 1.2) / 7)
@@ -1840,7 +1840,7 @@ def montar(nome: str) -> Image.Image:
     calma = ((1 - suave(0.3, 0.46, xn)) * (0.55 + 0.45 * (1 - suave(0.45, 0.9, yn))))[:, :, None]
     media = desfocar(np.clip(img, 0, 1.2), 14)
     img = media + (img - media) * (1 - 0.3 * calma)
-    img *= 1 - 0.2 * calma
+    img *= 1 - 0.25 * calma
     v = (xn - 0.55) ** 2 * 1.2 + (yn - 0.55) ** 2 * 1.5
     img *= (1 - np.clip(v - 0.08, 0, 1) * 1.1)[:, :, None]
     gg = np.random.default_rng(99)

@@ -238,7 +238,7 @@ def pedra(c: Camada, x0, y0, x1, y1, tons, seed: int, bw: int = 12, bh: int = 6,
 PERIODOS = {
     "manha": dict(
         ceu=("#3a74cc", "#78b0e8", "#cfe6fa"), astro="sol", astro_cor="#fffbe8", nuvem=("#ffffff", "#c4d4ea"),
-        morro=("#7a9ab8", "#5a7a9a"), amb="#bccae4", amb_k=0.72, sol="#fff0cc", sol_k=2.0,
+        morro=("#7a9ab8", "#5a7a9a"), amb="#c4d4f0", amb_k=0.8, sol="#fff0cc", sol_k=2.0,
         proj=(0.62, -0.42), feixe="#fff0d0", feixe_k=1.35, fogo=0.32, velas=0, quente="#ffe6b8", fria="#26385e",
         bloom_lim=0.9, bloom_k=0.32, exposicao=1.0, estrelas=False),
     "tarde": dict(
@@ -1561,13 +1561,19 @@ def montar_guilda(nome: str) -> Image.Image:
     lustre_roda(mesa, fogo, 208, 46, 30, per["velas"] >= 2, luzes)
     frente = g_frente()
     sombras = g_sombras()
-    img = compor(per, fundo, mesa, frente, fogo, sombras, vidro, vidro_cor, luzes, G_CHAO, ocl_b)
+    # luz difusa do céu que entra pelas janelas e clareia o salão (fria de manhã, dourada à tarde)
+    k_dif = {"manha": 0.38, "tarde": 0.3, "noite": 0.07}[nome]
+    extra = np.zeros((H * ESC, W * ESC, 3), dtype=np.float32)
+    for (x0, y0, w, h) in G_JANELAS:
+        extra += luz_pontual(x0 + w / 2, y0 + h * 0.6, 95, 0.75)[:, :, None] * hexa(per["sol"]) * k_dif
+        extra += luz_pontual(x0 + w / 2 + per["proj"][1] * 30, G_CHAO + 22, 60, 0.35)[:, :, None] * hexa(per["sol"]) * k_dif * 0.8
+    img = compor(per, fundo, mesa, frente, fogo, sombras, vidro, vidro_cor, luzes, G_CHAO, ocl_b, extra_luz=extra)
     return acabamento(img, per, esquerda=0.36, seed=97)
 
 
 # ═════════════════════════════════════ 2. SALA DO CONSELHO ═════════════════════════════════════
 C_CHAO = 98
-C_VITRAL = (252, 12, 48, 70)      # x, y, largura, altura
+C_VITRAL = (252, 19, 48, 63)      # x, y, largura, altura
 C_MESA = (250, 120, 64, 11)       # centro, meias-larguras da elipse do tampo
 C_COFRE = (398, 84, 48, 40)       # x, y do topo da frente, largura, altura
 PEDRA_C = ("#1a1820", "#363240", "#433e4e", "#504a5c", "#666074", "#868096")
@@ -1609,8 +1615,8 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
                 if dentro(x, y, 1.5):
                     k = 3 if lado else 0
                 c.p(x, y, pedra_t[max(0, min(4, k))])
-    mc1 = (cx, y0 + 30, 12.5)      # medalhão de cima
-    mc2 = (cx, y0 + 58, 7.5)       # medalhão de baixo
+    mc1 = (cx, y0 + 21, 12.5)      # medalhão de cima
+    mc2 = (cx, y0 + 50, 7.5)       # medalhão de baixo
     g = np.random.default_rng(301)
     for y in range(y0 - 20, y0 + h):
         for x in range(int(cx - r), int(cx + r) + 1):
@@ -1647,7 +1653,7 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
                     chumbo = True
                 elif (y // 4) % 3 == 0:
                     cor = "#f0c040"
-            elif y < y0 + 14:
+            elif y < y0 + 5:
                 cor = "#a01a2a" if (x * 3 + y) % 7 else "#d03848"
                 if (x + y) % 6 == 0 or (x - y) % 6 == 0:
                     chumbo = True
@@ -1657,12 +1663,12 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
                 cor = ("#2a9a5a", "#e8a030", "#7a3aa8")[q]
                 if (x + y) % 5 == 0 or (x - y) % 5 == 0:
                     chumbo = True
-            if abs(x + 0.5 - cx) < 1.0 and y > y0 + 44 and not d2 < mc2[2] + 1:
+            if abs(x + 0.5 - cx) < 1.0 and y > y0 + 36 and not d2 < mc2[2] + 1:
                 cor, chumbo = "#4a4656", False
                 c.p(x, y, cor)
                 continue
-            if y in (y0 + 44, y0 + 45) and d1 > mc1[2] + 1 and d2 > mc2[2] + 1:
-                c.p(x, y, "#5a5668" if y == y0 + 44 else "#2e2a36")
+            if y in (y0 + 36, y0 + 37) and d1 > mc1[2] + 1 and d2 > mc2[2] + 1:
+                c.p(x, y, "#5a5668" if y == y0 + 36 else "#2e2a36")
                 continue
             if chumbo:
                 c.p(x, y, "#18161c")
@@ -1939,6 +1945,12 @@ def c_chao() -> Camada:
             if (x * 3 + y * 5) % 7 == 0:
                 cor = misturar(cor, "#000000", 0.15)
             c.p(x, y, cor)
+    # um rolo caído no chão, à esquerda da mesa
+    for i in range(12):
+        c.p(150 + i, 141 - i * 0.25, PERGAMINHO[4])
+        c.p(150 + i, 142 - i * 0.25, PERGAMINHO[2])
+    c.disco(150, 141.5, 1.5, (PERGAMINHO[5], PERGAMINHO[3], PERGAMINHO[1]))
+    c.ret(156, 140, 1, 2, "#b02a2a")
     return c
 
 
@@ -1954,6 +1966,10 @@ def c_cadeira(c: Camada, x0: int, w: int, y_topo: int, y_assento: int, y_pe: int
         for j in range(dy):
             c.p(x0 + i, y_topo - 1 - j, CARVALHO[4] if j == dy - 1 else CARVALHO[3])
     c.p(x0 + w // 2, y_topo - 4, METAIS["ouro"][4])
+    c.p(x0 + w // 2, y_topo - 5, METAIS["ouro"][6])
+    for xf in (x0, x0 + w - 1):
+        c.ret(xf, y_topo - 3, 1, 3, CARVALHO[4] if xf == x0 else CARVALHO[2])
+        c.disco(xf + 0.5, y_topo - 3.5, 1.3, (METAIS["ouro"][5], METAIS["ouro"][3], METAIS["ouro"][1]))
     # estofado
     c.ret(x0 + 2, y_topo + 3, w - 4, y_assento - y_topo - 5, "#7a1a22")
     c.ret(x0 + 2, y_topo + 3, w - 4, 1, "#a82a32")
@@ -1961,6 +1977,9 @@ def c_cadeira(c: Camada, x0: int, w: int, y_topo: int, y_assento: int, y_pe: int
     for y in range(y_topo + 3, y_assento - 2, 3):
         c.p(x0 + 2, y, METAIS["ouro"][4])
         c.p(x0 + w - 3, y, METAIS["ouro"][3])
+    # medalhão bordado no espaldar
+    c.disco(x0 + w / 2, y_topo + 9, 2.2, (METAIS["ouro"][5], METAIS["ouro"][3], METAIS["ouro"][2]))
+    c.p(int(x0 + w / 2) - 1, y_topo + 8, "#7a1a22")
     if lado:
         c.ret(x0 - 2, y_assento, w + 10, 2, "#8a1e28")
         c.ret(x0 - 2, y_assento + 2, w + 10, 2, CARVALHO[2])
@@ -2324,7 +2343,7 @@ def montar_conselho(nome: str) -> Image.Image:
     vx, vy, vw, vh = C_VITRAL
     media = vidro_cor[vy:vy + vh, vx:vx + vw].reshape(-1, 3).mean(0)
     media = media / max(1e-3, float(media.max()))
-    k_dif = {"manha": 0.42, "tarde": 0.46, "noite": 0.14}[nome]
+    k_dif = {"manha": 0.62, "tarde": 0.5, "noite": 0.16}[nome]
     extra = (luz_pontual(vx + vw / 2, vy + vh * 0.7, 150, 0.7)[:, :, None] * media * k_dif
              + luz_pontual(vx + vw / 2, C_CHAO + 18, 70, 0.4)[:, :, None] * media * k_dif * 0.8)
     tampo = np.zeros((H, W), dtype=np.float32)
@@ -2332,8 +2351,8 @@ def montar_conselho(nome: str) -> Image.Image:
     yy, xx = np.mgrid[0:H, 0:W]
     tampo[((xx + 0.5 - cx) / rx) ** 2 + ((yy + 0.5 - cy) / ry) ** 2 <= 1] = 1
     img = compor(per, fundo, meio, c_frente(), fogo, c_sombras(), vidro, vidro_cor, luzes, C_CHAO, ocl,
-                 feixe_colorido=True, comp_feixe=90, desf_patch=4.5, patch_meio=tampo, k_feixe=0.6, k_patch_meio=0.4,
-                 proj={"manha": (0.55, -0.3), "tarde": (0.72, -0.85), "noite": (0.5, 0.3)}[nome], extra_luz=extra)
+                 feixe_colorido=True, comp_feixe=90, desf_patch=4.5, patch_meio=tampo, k_feixe=0.6, k_patch_meio=0.25,
+                 proj={"manha": (0.85, -0.3), "tarde": (1.0, -0.8), "noite": (0.62, 0.3)}[nome], extra_luz=extra)
     # brilho do negatoscópio (emissivo) e cintilância do metal
     rad = np.zeros((H, W), dtype=np.float32)
     rad[24:58, 334:362] = {"manha": 0.25, "tarde": 0.3, "noite": 0.7}[nome]

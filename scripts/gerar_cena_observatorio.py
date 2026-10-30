@@ -249,8 +249,9 @@ PERIODOS = {
 
 
 # ─────────────────────────────── Céu (visto pela fenda) ───────────────────────────────
-ESTRELAS_FEMUR = [(309, 8), (314, 13), (322, 10), (313, 21), (318, 31), (320, 41), (315, 50), (326, 49)]
-LIGACOES_FEMUR = [(0, 1), (1, 2), (1, 3), (2, 4), (3, 4), (4, 5), (5, 6), (5, 7), (6, 7)]
+# Contorno de um fêmur direito: cabeça, colo, trocânteres, diáfise e côndilos.
+ESTRELAS_FEMUR = [(305, 5), (301, 9), (306, 13), (311, 20), (313, 34), (311, 49), (317, 52), (324, 49), (320, 34), (323, 11), (312, 9)]
+LIGACOES_FEMUR = [(i, (i + 1) % 11) for i in range(11)]
 CRUZEIRO = [(250, 36), (252, 54), (244, 45), (258, 44), (254, 48)]
 
 
@@ -311,10 +312,12 @@ def pintar_ceu(nome: str, per: dict) -> np.ndarray:
                     ceu[yy, xx] = ceu[yy, xx] * (1 - a) + hexa(cor) * a
         ligar(ESTRELAS_FEMUR, LIGACOES_FEMUR, "#6a86d8", 0.42)
         ligar(CRUZEIRO, [(0, 1), (2, 3)], "#6a86d8", 0.38)
-        for (x, y) in ESTRELAS_FEMUR + CRUZEIRO[:4]:
-            ceu[y, x] = hexa("#ffffff") * 1.4
-            for (dx, dy) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
-                ceu[y + dy, x + dx] = ceu[y + dy, x + dx] * 0.4 + hexa("#c8d8ff") * 0.6
+        for i, (x, y) in enumerate(ESTRELAS_FEMUR + CRUZEIRO[:4]):
+            forte = i in (0, 3, 5, 7, 9, 11, 12, 13, 14)
+            ceu[y, x] = hexa("#ffffff") * (1.4 if forte else 1.05)
+            if forte:
+                for (dx, dy) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    ceu[y + dy, x + dx] = ceu[y + dy, x + dx] * 0.4 + hexa("#c8d8ff") * 0.6
         x, y = CRUZEIRO[4]
         ceu[y, x] = hexa("#dce6ff")
         # a lua crescente, para onde a luneta aponta
