@@ -412,6 +412,7 @@
 .rs-pixel__livro--0 { height: calc(var(--u) * 33); }
 .rs-pixel__livro--1 { height: calc(var(--u) * 29); animation: rs-espia 7s ease-in-out infinite; }
 .rs-pixel__livro--2 { height: calc(var(--u) * 31); }
+.rs-pixel__livro--3 { height: calc(var(--u) * 27); }
 .rs-pixel__livro--fino { width: calc(var(--u) * 5); height: calc(var(--u) * 26); }
 .rs-pixel__livro--baixo { height: calc(var(--u) * 22); transform: rotate(-12deg) translateX(calc(var(--u) * 1.4)); }
 .rs-pixel__livro--deitado { align-self: flex-end; width: calc(var(--u) * 18); height: calc(var(--u) * 5); margin-left: calc(var(--u) * 2); background: linear-gradient(180deg, color-mix(in srgb, var(--rs-area) 78%, #000) 0 22%, var(--rs-area) 22% 78%, color-mix(in srgb, var(--rs-area) 62%, #000) 78%); }
@@ -483,6 +484,7 @@
 
 /* Livros da estante: cabeçalho com um livrinho pixel e fio de ouro */
 .rs-grupo { display: grid; gap: 0.7rem; }
+.rs-grupo__sobre { margin: -0.2rem 0 0.2rem; max-width: 62rem; color: var(--rs-suave, var(--texto-suave, #5b6b67)); font-size: 0.93rem; line-height: 1.5; }
 .rs-grupo__titulo { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.7rem; margin: 1rem 0 0.1rem; padding-bottom: 0.6rem; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: clamp(1.3rem, 2.4vw, 1.6rem); line-height: 1.15; }
 .rs-grupo__titulo::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: linear-gradient(90deg, var(--rs-ouro) 0 5rem, var(--rs-borda) 5rem); }
 .rs-grupo__icone { flex: none; width: 1.1rem; height: 1.4rem; border: 2px solid var(--rs-tinta); border-radius: 1px 3px 3px 1px; background: linear-gradient(90deg, color-mix(in srgb, var(--rs-area, var(--verdete)) 70%, #000) 0 25%, var(--rs-area, var(--verdete)) 25%); box-shadow: 2px 2px 0 var(--rs-sombra); }

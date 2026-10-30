@@ -122,7 +122,8 @@ export interface Preferencias {
   em: number
 }
 
-export const PREFERENCIAS_PADRAO: Preferencias = { tipo: 'pref', tema: 'claro', fonte: 19, entrelinha: 1.7, largura: 'media', justificar: false, modo: 'rolagem', fonteFamilia: 'serifa', prova: true, em: 0 }
+// Sépia é o padrão de quem nunca escolheu (Tales, 30/10/2026); a escolha da pessoa fica salva na conta.
+export const PREFERENCIAS_PADRAO: Preferencias = { tipo: 'pref', tema: 'sepia', fonte: 19, entrelinha: 1.7, largura: 'media', justificar: false, modo: 'rolagem', fonteFamilia: 'serifa', prova: true, em: 0 }
 
 export type DocBiblioteca = Marca | Leitura | Preferencias
 
