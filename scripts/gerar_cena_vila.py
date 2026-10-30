@@ -28,7 +28,19 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 PASTA = Path(__file__).resolve().parents[1] / "public" / "pixel" / "inicio"
+PASTA_PAGINAS = Path(__file__).resolve().parents[1] / "public" / "pixel" / "paginas"
 W, H, ESC = 480, 160, 3
+PERIODOS = ("manha", "tarde", "noite")
+# Hora do dia da versão das páginas internas. None = a versão da página inicial (secao-*), que fica exatamente como era.
+PERIODO: str | None = None
+
+
+def hora(orig, manha=None, tarde=None, noite=None):
+    """Valor de um parâmetro da luz conforme a hora do dia; na versão da página inicial devolve sempre `orig`."""
+    if PERIODO is None:
+        return orig
+    v = {"manha": manha, "tarde": tarde, "noite": noite}[PERIODO]
+    return orig if v is None else v
 
 
 # ─────────────────────────────── Pincéis ───────────────────────────────
@@ -280,12 +292,15 @@ class Montagem:
         else:  # luz própria (o interior aceso de uma janela): o que fica por baixo deixa de receber a luz de fora
             self.solido = self.solido * (1 - arr[:, :, 3])
 
-    def iluminar(self, ambiente, luzes) -> None:
-        """ambiente: cor (multiplica); luzes: [(cx, cy, raio, achatar, cor, força)] somadas, só no que não é céu."""
+    def iluminar(self, ambiente, luzes, mapa: np.ndarray | None = None) -> None:
+        """ambiente: cor (multiplica); luzes: [(cx, cy, raio, achatar, cor, força)] somadas, só no que não é céu;
+        mapa: luz extra já calculada por pixel (o sol com as sombras projetadas, nas versões das páginas)."""
         soma = np.zeros_like(self.img)
         for (cx, cy, raio, achatar, cor, forca) in luzes:
             soma += luz_pontual(cx, cy, raio, achatar)[:, :, None] * hexa(cor) * forca
         luz = hexa(ambiente) + soma * self.recep[:, :, None]
+        if mapa is not None:
+            luz = luz + mapa
         s = self.solido[:, :, None]
         self.img = self.img * (1 - s) + self.img * s * luz
 
@@ -315,13 +330,13 @@ class Montagem:
         self.img = self.img + mapa[:, :, None] * hexa(cor) * forca
 
     def acabar(self, quente: str, fria: str, esquerda: float = 0.5, vinheta: float = 1.0, centro_v=(0.62, 0.55),
-               contraste: float = 1.08, seed: int = 99) -> Image.Image:
+               contraste: float = 1.08, seed: int = 99, bloom: float = 1.0) -> Image.Image:
         img = self.img
         xs, ys = _GXS / (W * ESC), _GYS / (H * ESC)
         # Brilho (bloom) das luzes fortes, em dois raios.
         lum = img.mean(2, keepdims=True)
         claro = np.clip(img - 0.62, 0, None) * np.clip((lum - 0.55) * 3, 0, 1)
-        img = img + desfocar(claro, 6) * 0.55 + desfocar(claro, 20) * 0.6
+        img = img + (desfocar(claro, 6) * 0.55 + desfocar(claro, 20) * 0.6) * bloom
         # Correção de cor: sombras frias, luzes quentes.
         q, f = hexa(quente), hexa(fria)
         lum = np.clip(img.mean(2, keepdims=True), 0, 1)
@@ -337,6 +352,126 @@ class Montagem:
         g = np.random.default_rng(seed)
         img += (g.random(img.shape[:2]).astype(np.float32)[:, :, None] - 0.5) * 0.024
         return Image.fromarray(np.clip(img * 255, 0, 255).astype(np.uint8))
+
+
+# ─────────────────────────────── A hora do dia (versões das páginas) ───────────────────────────────
+def remapear(cam: Camada, rampa, manter: float = 0.18) -> None:
+    """Repinta uma camada distante com a paleta da hora (perspectiva aérea): cada pixel guarda o seu valor (claro ou
+    escuro, relativo à camada) e ganha a cor da rampa [(0..1, cor), ...]; `manter` conserva um pouco do matiz."""
+    a = cam.c[:, :, 3]
+    if not (a > 0).any():
+        return
+    lum = cam.c[:, :, :3] @ np.array([0.3, 0.55, 0.15], dtype=np.float32)
+    lo, hi = np.percentile(lum[a > 0], (2, 98))
+    t = np.clip((lum - lo) / max(hi - lo, 1e-3), 0, 1)
+    ts = np.array([r[0] for r in rampa], dtype=np.float32)
+    cs = np.array([hexa(r[1]) for r in rampa], dtype=np.float32)
+    nova = np.stack([np.interp(t, ts, cs[:, i]) for i in range(3)], 2).astype(np.float32)
+    media = np.maximum(lum[:, :, None], 1e-3)
+    matiz = cam.c[:, :, :3] / media * nova.mean(2, keepdims=True)
+    cam.c[:, :, :3] = np.where(a[:, :, None] > 0, nova * (1 - manter) + np.clip(matiz, 0, 1) * manter, cam.c[:, :, :3])
+
+
+def apagar(e: Camada, base: Camada | None = None, vidro=("#1e2a3a", "#5a7898", "#c8dcf0"), aceso: float = 0.0) -> Camada:
+    """De dia, o que brilha à noite (vidro de janela, lampião) vira vidro apagado refletindo o céu: escuro embaixo,
+    claro em cima, um risco de reflexo na diagonal. `base`: os caixilhos escuros pintados por baixo continuam
+    aparecendo. `aceso` (0..1): um resto da luz de dentro misturado ao vidro (uma vela já acesa ao entardecer)."""
+    out = Camada()
+    a = e.c[:, :, 3].copy()
+    if base is not None:
+        lum_b = base.c[:, :, :3].mean(2)
+        a *= ~((base.c[:, :, 3] > 0.5) & (lum_b < 0.3))
+    # posição relativa dentro de cada vidraça (pelo contorno vertical da máscara)
+    acima = np.zeros_like(a)
+    for k in range(1, 7):
+        acima += np.roll(a, k, 0) > 0
+    t = np.clip(acima / 6, 0, 1)
+    risco = (np.mod(_XS + _YS * 0.8, 9) < 2).astype(np.float32)
+    v0, v1, v2 = hexa(vidro[0]), hexa(vidro[1]), hexa(vidro[2])
+    cor = v1[None, None] * (1 - t[:, :, None]) * 0.9 + v0[None, None] * t[:, :, None]
+    cor = cor + (v2 - cor) * (risco * 0.45)[:, :, None]
+    if aceso > 0:
+        cor = cor * (1 - aceso) + e.c[:, :, :3] * aceso
+    out.c[:, :, :3] = cor
+    out.c[:, :, 3] = a
+    return out
+
+
+def sombra_projetada(alfa: np.ndarray, base_y: float, comp: float, cis: float, borrar: float = 1.2) -> np.ndarray:
+    """Sombra de um objeto no chão (em pixels da arte): espelha a silhueta para baixo a partir da base, achata por
+    `comp` (sol alto = curta, sol baixo = longa) e inclina `cis` px por px de altura (o lado oposto ao sol)."""
+    out = np.zeros((H, W), dtype=np.float32)
+    ys, xs = np.nonzero(alfa > 0.5)
+    for y, x in zip(ys, xs):
+        alt = base_y - y
+        if alt < 0:
+            continue
+        yy = int(round(base_y + alt * comp))
+        xx = int(round(x + alt * cis))
+        if 0 <= yy < H and 0 <= xx < W:
+            out[yy, xx] = 1
+    # fecha os buracos da projeção e amacia a borda (penumbra)
+    out = desfocar(out[:, :, None], borrar)[:, :, 0]
+    return np.clip(out * 3, 0, 1) * (_YS > base_y - 1)
+
+
+def ceu_hora(paradas, sol=None, lua=None, nuvens=None, estrelas: int = 0, seed: int = 0) -> np.ndarray:
+    """Céu de uma hora do dia, pintado em pixel art: gradiente, halo e disco do sol (ou da lua com as crateras),
+    nuvens com a borda virada para a luz acesa e a barriga na sombra, estrelas que cintilam.
+    sol = (x, y, raio_disco, cor_halo, força, raio_halo); lua = (x, y, raio, cheia); nuvens = dict(...)."""
+    ceu = gradiente(paradas)
+    g = np.random.default_rng(seed)
+    if estrelas:
+        for _ in range(estrelas):
+            x, y = int(g.random() * W), int(g.random() ** 1.6 * 100)
+            b = (0.25 + g.random() * 0.75) * (1 - y / 110)
+            ceu[y, x] = np.minimum(1, ceu[y, x] + b * hexa("#e8ecff"))
+            if b > 0.75:
+                for (dx, dy) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    if 0 <= x + dx < W and 0 <= y + dy < H:
+                        ceu[y + dy, x + dx] = np.minimum(1, ceu[y + dy, x + dx] + b * 0.3)
+        # a Via Láctea, uma faixa de poeira clara cruzando o alto
+        faixa = np.exp(-(((_YS - (8 + (_XS - 240) * 0.12)) / 14) ** 2)) * ruido(seed + 1, 6) * (_XS > 170)
+        ceu += (faixa * 0.16)[:, :, None] * hexa("#b8c0ff")
+        for _ in range(500):
+            x, y = int(g.random() * W), int(g.random() * 60)
+            if faixa[y, x] > 0.25 and g.random() < faixa[y, x]:
+                ceu[y, x] = np.minimum(1, ceu[y, x] + 0.22)
+    if nuvens:
+        nv = ruido(seed + 2, nuvens.get("ex", 30), nuvens.get("ey", 7)) * 0.65 + ruido(seed + 3, 9, 4) * 0.35
+        yc, esp = nuvens["yc"], nuvens["esp"]
+        dens = nv - nuvens.get("limiar", 0.55) - np.abs(_YS - yc) / esp
+        dx, dy = nuvens.get("lado_luz", -1), nuvens.get("luz_dy", -1)  # direção de onde vem a luz
+        perto = np.roll(np.roll(dens, -2 * dy, 0), -2 * dx, 1)
+        acesa = np.clip((dens - perto) * 9 + 0.5, 0, 1)
+        k = np.clip(dens * 7, 0, 1) * nuvens.get("forca", 0.9)
+        cor = hexa(nuvens["sombra"]) * (1 - acesa[:, :, None]) + hexa(nuvens["luz"]) * acesa[:, :, None]
+        miolo = np.clip(dens * 5 - 0.6, 0, 1)[:, :, None]
+        cor = cor * (1 - miolo * 0.35) + hexa(nuvens.get("miolo", nuvens["sombra"])) * miolo * 0.35
+        ceu = ceu * (1 - k[:, :, None]) + cor * k[:, :, None]
+    if sol:
+        sx_, sy_, r, cor_h, forca, raio_h = sol
+        d = np.hypot(_XS - sx_, (_YS - sy_) * 1.05)
+        ceu += (np.clip(1 - d / raio_h, 0, 1) ** 2 * forca)[:, :, None] * hexa(cor_h)
+        ceu += (np.exp(-(d / (r * 1.7)) ** 2) * 0.55)[:, :, None] * hexa("#fff4d8")
+        ceu = np.where((d < r)[:, :, None], hexa("#fffbec") * 1.5, ceu)
+    if lua:
+        mx, my, r, cheia = lua
+        d = np.hypot(_XS - mx, _YS - my)
+        ceu += (np.exp(-(d / (r * 3.2)) ** 2) * 0.32)[:, :, None] * hexa("#b8c4ff")
+        ceu += (np.exp(-(d / (r * 9)) ** 2) * 0.1)[:, :, None] * hexa("#8a9aff")
+        for y in range(int(my - r - 1), int(my + r + 2)):
+            for x in range(int(mx - r - 1), int(mx + r + 2)):
+                dd = math.hypot(x - mx, y - my)
+                if dd > r or not (0 <= x < W and 0 <= y < H):
+                    continue
+                if not cheia and math.hypot(x - mx - r * 0.55, y - my + r * 0.3) < r * 0.85:
+                    continue
+                cor = mistura("#fffaf0", "#d8d8e8", dd / r * 0.7)
+                if hash01(x // 2, y // 2, 77) > 0.72 and dd < r - 1:
+                    cor = cor * 0.86
+                ceu[y, x] = cor
+    return ceu
 
 
 # ═══════════════════════════════ 1. A torre do relógio ═══════════════════════════════
@@ -766,43 +901,171 @@ def casa(c: Camada, e: Camada, x0: int, x1: int, base: int, parede_topo: int, cu
         c.ret(chx - 1, cumeeira + 1, 7, 2, "#4a3438")
 
 
+# ── A torre nas três horas do dia (páginas internas: Revisão).
+def ceu_torre_hora() -> np.ndarray:
+    if PERIODO == "manha":
+        ceu = ceu_hora([(0, "#2c5cb0"), (34, "#4a86d2"), (66, "#86b6e6"), (88, "#bcd8ee"), (100, "#e2ecf0"), (112, "#f8eedc"),
+                        (160, "#f8eedc")],
+                       sol=(160, 20, 4, "#fff0c8", 0.3, 95),
+                       nuvens=dict(yc=46, esp=46, limiar=0.55, ex=34, ey=9, luz="#ffffff", sombra="#9eb4d6", miolo="#d8e4f2",
+                                   lado_luz=-1, luz_dy=-1, forca=0.95), seed=301)
+        for (bx, by, abre) in ((330, 34, 1), (340, 30, 0), (348, 36, 1), (262, 44, 0)):
+            for (dx, dy) in ((-2, -abre), (-1, 0), (0, 1 - abre), (1, 0), (2, -abre)):
+                ceu[by + dy, bx + dx] = hexa("#34405a")
+        return ceu
+    if PERIODO == "tarde":
+        ceu = ceu_hora([(0, "#34408a"), (24, "#6a5a9a"), (52, "#d0807e"), (76, "#ffaa6a"), (92, "#ffcf84"), (104, "#fff0c0"),
+                        (160, "#ffe2a8")],
+                       sol=(250, 95, 7, "#ffb050", 0.8, 150),
+                       nuvens=dict(yc=58, esp=40, limiar=0.55, ex=48, ey=4, luz="#fff0b0", sombra="#a8586e", miolo="#e0806e",
+                                   lado_luz=-1, luz_dy=1, forca=0.92), seed=302)
+        return ceu
+    ceu = ceu_hora([(0, "#03061a"), (34, "#0a1134"), (70, "#17224e"), (98, "#26346a"), (112, "#33437a"), (160, "#33437a")],
+                   lua=(238, 22, 6, True),
+                   nuvens=dict(yc=64, esp=34, limiar=0.6, ex=50, ey=4, luz="#9aa8dc", sombra="#18204a", miolo="#2a3466",
+                               lado_luz=-1, luz_dy=-1, forca=0.8),
+                   estrelas=300, seed=303)
+    return ceu
+
+
+def nevoa(m: "Montagem", y0: float, y1: float, cor, forca: float, seed: int, x0: float = 0) -> None:
+    """Faixa de névoa no fundo do vale (por cima do que já está montado), mais densa no meio da faixa."""
+    yy = _GYS / ESC
+    meio, meia = (y0 + y1) / 2, (y1 - y0) / 2
+    k = np.clip(1 - np.abs(yy - meio) / meia, 0, 1) ** 1.5
+    n = ampliar(ruido(seed, 40, 5)[:, :, None])[:, :, 0]
+    k = k * (0.45 + 0.75 * n) * suave_np(x0 - 40, x0 + 40, _GXS / ESC) * forca
+    m.img = m.img * (1 - k[:, :, None]) + hexa(cor) * k[:, :, None]
+
+
+def suave_np(a: float, b: float, x):
+    t = np.clip((x - a) / (b - a), 0, 1)
+    return t * t * (3 - 2 * t)
+
+
+def mapa_sol(cor, forca: float, sombra: np.ndarray, sombra_k: float = 0.8) -> np.ndarray:
+    """Luz do sol (ou da lua) por pixel em 3x, apagada onde cai a sombra projetada."""
+    s = desfocar(ampliar(sombra[:, :, None]), 2)[:, :, 0]
+    return (1 - s * sombra_k)[:, :, None] * hexa(cor) * forca
+
+
+def montar_torre_hora(ceu, longe, meio_c, e_longe, campo, paralelos, objetos, predios, emiss, emiss_p, emiss_rel,
+                      emiss_amp, vagalumes, frente, luzes, amp) -> Image.Image:
+    P = PERIODO
+    rampas_longe = {"manha": [(0, "#56709e"), (0.6, "#7a92bc"), (1, "#c4d4ea")],
+                    "tarde": [(0, "#52284c"), (0.55, "#763a5e"), (1, "#ffa888")],
+                    "noite": [(0, "#10162e"), (0.6, "#1c2650"), (1, "#56669e")]}
+    rampas_meio = {"manha": [(0, "#304a5c"), (0.45, "#4a6a76"), (0.8, "#7e9aa2"), (1, "#bccabc")],
+                   "tarde": [(0, "#1c1226"), (0.5, "#321e3a"), (0.85, "#6a3a54"), (1, "#c86a64")],
+                   "noite": [(0, "#080c22"), (0.5, "#121a3a"), (1, "#4a5a92")]}
+    remapear(longe, rampas_longe[P], 0.12)
+    remapear(meio_c, rampas_meio[P], 0.3)
+    # Sombras projetadas no chão: a torre, as casas e a ampulheta. De manhã o sol vem do alto à esquerda (sombra curta
+    # para a direita); à tarde está baixo atrás da colina (sombra comprida vindo para a frente); à noite, a lua.
+    a = predios.c[:, :, 3]
+    comp, cis = {"manha": (0.28, 0.75), "tarde": (0.55, 0.55), "noite": (0.22, 0.35)}[P]
+    sombra = np.zeros((H, W), dtype=np.float32)
+    for (xa, xb, base) in ((368, 434, 142), (326, 372, 133), (434, W, 140), (amp[0] - 20, amp[0] + 21, amp[1])):
+        recorte = np.zeros_like(a)
+        recorte[:int(base), xa:xb] = a[:int(base), xa:xb]
+        sombra = np.maximum(sombra, sombra_projetada(recorte, base, comp, cis))
+    sombra *= (_YS > 120)
+
+    m = Montagem(ceu)
+    m.camada(longe, 1.8)
+    m.camada(meio_c, 0.9)
+    if P == "noite":
+        m.emissivo(e_longe, 0.3, halo=1.0)
+    elif P == "tarde":
+        m.emissivo(e_longe, 0.3, halo=0.3)
+    m.camada(campo, 0.3)
+    if P == "manha":
+        nevoa(m, 99, 115, "#dce6f0", 0.42, 311, x0=120)
+    elif P == "tarde":
+        nevoa(m, 100, 114, "#ffc89a", 0.35, 312, x0=120)
+    else:
+        nevoa(m, 100, 116, "#3a4a80", 0.45, 313, x0=120)
+    m.camada(paralelos)
+    m.camada(objetos)
+    m.camada(predios)
+    if P == "manha":
+        m.camada(apagar(emiss, objetos, aceso=0.0))
+        m.camada(apagar(emiss_p, predios, aceso=0.0))
+        m.camada(emiss_rel)
+        m.iluminar("#aab4d0", [(amp[0], amp[1] - 18, 30, 0.8, "#ffc860", 0.15)],
+                   mapa=mapa_sol("#fff0d4", 0.62, sombra, 0.85))
+        m.emissivo(emiss_amp, 0, halo=0.12)
+        # Raios do sol da manhã atravessando as nuvens.
+        ceu_claro = np.clip((m.img.mean(2) - 0.8) * 3, 0, 1) * (1 - m.solido)
+        raios = raios_radiais(ceu_claro, (168, 22), alcance=0.7)
+        m.somar(desfocar(raios[:, :, None], 6)[:, :, 0], "#fff4d8", 0.2)
+        m.camada(frente, 6, escurecer=0.62)
+        return m.acabar("#fff0d4", "#24366a", esquerda=0.42, centro_v=(0.62, 0.5), contraste=1.1, bloom=0.3)
+    if P == "tarde":
+        m.camada(apagar(emiss, objetos, vidro=("#3a2430", "#a8605a", "#ffd8a0")))
+        m.camada(apagar(emiss_p, predios, vidro=("#3a2430", "#a8605a", "#ffd8a0"), aceso=0.3))
+        m.camada(emiss_rel)
+        poente = [(252, 92, 230, 0.4, "#ff9a5a", 0.3)]
+        janelas = [l[:5] + (l[5] * 0.25,) for l in luzes]
+        m.iluminar("#8a6e8e", janelas + poente, mapa=mapa_sol("#ffb470", 0.62, sombra, 0.9))
+        m.emissivo(emiss_amp, 0, halo=0.25)
+        ceu_claro = np.clip((m.img.mean(2) - 0.6) * 2, 0, 1) * (1 - m.solido) * (_GYS < 108 * ESC)
+        raios = raios_radiais(ceu_claro, (252, 89), alcance=0.75)
+        m.somar(desfocar(raios[:, :, None], 6)[:, :, 0], "#ffb070", 0.75)
+        m.camada(frente, 6, escurecer=0.42)
+        return m.acabar("#ffcf8a", "#3a1e4e", esquerda=0.42, centro_v=(0.62, 0.55), bloom=0.55)
+    lua_mapa = mapa_sol("#7a8ad0", 0.2, sombra, 0.9)
+    fortes = [l[:5] + (l[5] * 1.2,) for l in luzes]
+    m.iluminar("#2e3468", fortes + [(238, 22, 260, 0.6, "#6a7ac8", 0.12)], mapa=lua_mapa)
+    m.emissivo(emiss, 0, halo=1.1)
+    m.emissivo(emiss_p, 0, halo=0.8)
+    m.emissivo(emiss_rel, 0, halo=0.18)
+    m.emissivo(emiss_amp, 0, halo=0.4)
+    m.emissivo(vagalumes, 0, halo=1.4)
+    m.camada(frente, 6, escurecer=0.3)
+    return m.acabar("#ffd8a8", "#121848", esquerda=0.42, centro_v=(0.66, 0.55))
+
+
 def cena_torre() -> Image.Image:
     luzes: list = []
-    ceu = gradiente([(0, "#090c26"), (28, "#1a1d4c"), (58, "#43306a"), (80, "#9a4c70"), (94, "#e07c64"),
-                     (104, "#ffb070"), (116, "#ffd49a"), (160, "#ffd49a")])
-    # Brilho do poente atrás das colinas.
-    d = np.hypot((_XS - 268) / 150, (_YS - 108) / 40)
-    ceu += np.exp(-d * d * 1.5)[:, :, None] * hexa("#ff9a6a") * 0.35
-    # Nuvens finas em faixas, acesas por baixo.
-    nv = ruido(11, 46, 4) * 0.7 + ruido(12, 12, 2) * 0.3
-    for y in range(40, 98):
-        for x in range(W):
-            v = nv[y, x] - 0.56 - abs(y - 74) / 90
-            if v > 0:
-                k = min(1, v * 7) * 0.85
-                t = (y - 40) / 58
-                cor = mistura("#4a3070", "#e88a80", t)
-                if nv[min(H - 1, y + 2), x] - 0.56 - abs(y + 2 - 74) / 90 < 0:
-                    cor = mistura("#d8708a", "#ffd0a0", t)
-                ceu[y, x] = ceu[y, x] * (1 - k) + cor * k
-    # Estrelas (mais no alto) e a lua crescente perto da divisa do texto.
-    g = np.random.default_rng(5)
-    for _ in range(170):
-        x, y = int(g.random() * W), int(g.random() ** 1.7 * 70)
-        b = (0.3 + g.random() * 0.7) * (1 - y / 80)
-        ceu[y, x] = np.minimum(1, ceu[y, x] + b)
-        if b > 0.8:
-            for (dx, dy) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
-                if 0 <= x + dx < W and 0 <= y + dy < H:
-                    ceu[y + dy, x + dx] = np.minimum(1, ceu[y + dy, x + dx] + b * 0.35)
-    # Aura dourada atrás do castelo da prova (o destino da estrada).
-    ceu += np.exp(-(((_XS - 286) / 26) ** 2 + ((_YS - 66) / 22) ** 2))[:, :, None] * hexa("#ffcf80") * 0.22
-    mx, my = 246, 22
-    ceu += np.exp(-((_XS - mx) ** 2 + (_YS - my) ** 2) / 140)[:, :, None] * hexa("#b8a8ff") * 0.25
-    for y in range(my - 8, my + 9):
-        for x in range(mx - 8, mx + 9):
-            if math.hypot(x - mx, y - my) < 6.5 and math.hypot(x - mx - 3, y - my + 2) > 5.2:
-                ceu[y, x] = hexa("#fff4d8") if math.hypot(x - mx, y - my) < 5.5 else hexa("#e8d8c0")
+    if PERIODO is None:
+        ceu = gradiente([(0, "#090c26"), (28, "#1a1d4c"), (58, "#43306a"), (80, "#9a4c70"), (94, "#e07c64"),
+                         (104, "#ffb070"), (116, "#ffd49a"), (160, "#ffd49a")])
+        # Brilho do poente atrás das colinas.
+        d = np.hypot((_XS - 268) / 150, (_YS - 108) / 40)
+        ceu += np.exp(-d * d * 1.5)[:, :, None] * hexa("#ff9a6a") * 0.35
+        # Nuvens finas em faixas, acesas por baixo.
+        nv = ruido(11, 46, 4) * 0.7 + ruido(12, 12, 2) * 0.3
+        for y in range(40, 98):
+            for x in range(W):
+                v = nv[y, x] - 0.56 - abs(y - 74) / 90
+                if v > 0:
+                    k = min(1, v * 7) * 0.85
+                    t = (y - 40) / 58
+                    cor = mistura("#4a3070", "#e88a80", t)
+                    if nv[min(H - 1, y + 2), x] - 0.56 - abs(y + 2 - 74) / 90 < 0:
+                        cor = mistura("#d8708a", "#ffd0a0", t)
+                    ceu[y, x] = ceu[y, x] * (1 - k) + cor * k
+        # Estrelas (mais no alto) e a lua crescente perto da divisa do texto.
+        g = np.random.default_rng(5)
+        for _ in range(170):
+            x, y = int(g.random() * W), int(g.random() ** 1.7 * 70)
+            b = (0.3 + g.random() * 0.7) * (1 - y / 80)
+            ceu[y, x] = np.minimum(1, ceu[y, x] + b)
+            if b > 0.8:
+                for (dx, dy) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    if 0 <= x + dx < W and 0 <= y + dy < H:
+                        ceu[y + dy, x + dx] = np.minimum(1, ceu[y + dy, x + dx] + b * 0.35)
+        # Aura dourada atrás do castelo da prova (o destino da estrada).
+        ceu += np.exp(-(((_XS - 286) / 26) ** 2 + ((_YS - 66) / 22) ** 2))[:, :, None] * hexa("#ffcf80") * 0.22
+        mx, my = 246, 22
+        ceu += np.exp(-((_XS - mx) ** 2 + (_YS - my) ** 2) / 140)[:, :, None] * hexa("#b8a8ff") * 0.25
+        for y in range(my - 8, my + 9):
+            for x in range(mx - 8, mx + 9):
+                if math.hypot(x - mx, y - my) < 6.5 and math.hypot(x - mx - 3, y - my + 2) > 5.2:
+                    ceu[y, x] = hexa("#fff4d8") if math.hypot(x - mx, y - my) < 5.5 else hexa("#e8d8c0")
+    else:
+        ceu = ceu_torre_hora()
 
     # ── Montanhas ao longe (enevoadas).
     longe = Camada()
@@ -971,7 +1234,8 @@ def cena_torre() -> Image.Image:
     casa(predios, emiss_p, 434, 492, 140, 104, 80, luzes, 51)
     casa(predios, emiss_p, 326, 370, 133, 108, 92, luzes, 52, chamine=True, tons_telhado=("#7a5a6e", "#5a4058", "#3e2a40"), janelas=(0.5, 0.76))
     luzes += torre(predios, emiss_p, 398, emiss_rel)
-    luzes += ampulheta(predios, emiss_amp, 322, 152)
+    amp_x, amp_b = (322, 152) if PERIODO is None else (307, 150)  # nas páginas, o chão de x 330-380 fica livre
+    luzes += ampulheta(predios, emiss_amp, amp_x, amp_b)
     # Canteiros de flores na borda da praça e vasos junto à torre.
     g = np.random.default_rng(61)
     flores = ["#f4a7c4", "#ffe07a", "#c8a8f8", "#ffffff", "#f07a6a", "#ff9ac0"]
@@ -987,7 +1251,7 @@ def cena_torre() -> Image.Image:
             predios.p(x, y, flores[int(g.random() * len(flores))])
         else:
             predios.p(x, y, "#5a8a44")
-    for (vx, vy) in ((374, 141), (424, 141), (350, 146), (456, 148)):
+    for (vx, vy) in ((374, 141), (424, 141), (350, 146), (456, 148)) if PERIODO is None else ((424, 141), (456, 148)):
         predios.ret(vx - 3, vy - 4, 7, 5, "#a8583a")
         predios.ret(vx - 3, vy - 4, 7, 1, "#d08060")
         predios.ret(vx + 2, vy - 3, 1, 4, "#6a3020")
@@ -1023,7 +1287,7 @@ def cena_torre() -> Image.Image:
                 predios.linha(fx_, y - alt * frac, x2 - larg2 - 5 - 6 * s2, y2 - (3 + 9 * s2) * frac, "#7a5234")
     # Lampiões da praça.
     lampiao(predios, emiss_p, 462, 152, 0.95, luzes)
-    lampiao(predios, emiss_p, 298, 158, 1.0, luzes)
+    lampiao(predios, emiss_p, 298 if PERIODO is None else 240, 158, 1.0, luzes)
     # Passarinhos voltando para a torre.
     for (bx, by) in ((440, 30), (452, 24), (433, 21), (300, 40)):
         for (dx, dy) in ((-2, -1), (-1, 0), (0, 1), (1, 0), (2, -1)):
@@ -1052,6 +1316,9 @@ def cena_torre() -> Image.Image:
         y = 96 + g.random() * 58
         vagalumes.p(x, y, "#f0ff9a", 0.6 + g.random() * 0.4)
 
+    if PERIODO is not None:
+        return montar_torre_hora(ceu, longe, meio_c, e_longe, campo, paralelos, objetos, predios, emiss, emiss_p,
+                                 emiss_rel, emiss_amp, vagalumes, frente, luzes, (amp_x, amp_b))
     # ── Montagem.
     m = Montagem(ceu)
     m.camada(longe, 1.8)
@@ -2211,9 +2478,32 @@ def cena_correio() -> Image.Image:
 CENAS = {"torre": cena_torre, "bau": cena_bau, "correio": cena_correio}
 
 
+def salvar_pagina(img: Image.Image, nome: str) -> None:
+    PASTA_PAGINAS.mkdir(parents=True, exist_ok=True)
+    destino = PASTA_PAGINAS / f"{nome}.webp"
+    img.save(destino, quality=84, method=6)
+    img.resize((960, 320), Image.LANCZOS).save(PASTA_PAGINAS / f"{nome}-960.webp", quality=84, method=6)
+    print(nome, destino.stat().st_size // 1024, "KB,", (PASTA_PAGINAS / f"{nome}-960.webp").stat().st_size // 1024, "KB (960)")
+
+
 def main() -> None:
+    """Sem argumentos: as três seções da página inicial (public/pixel/inicio/secao-*).
+    Com --paginas: as versões das páginas internas em public/pixel/paginas/<cena>-<manha|tarde|noite>(-960).webp;
+    dá para pedir só algumas cenas e/ou horas (ex.: --paginas torre noite)."""
+    global PERIODO
+    args = sys.argv[1:]
+    if "--paginas" in args:
+        resto = [a for a in args if a != "--paginas"]
+        cenas = [a for a in resto if a in CENAS] or list(CENAS)
+        horas = [a for a in resto if a in PERIODOS] or list(PERIODOS)
+        for nome in cenas:
+            for p in horas:
+                PERIODO = p
+                salvar_pagina(CENAS[nome](), f"{nome}-{p}")
+        PERIODO = None
+        return
     PASTA.mkdir(parents=True, exist_ok=True)
-    pedidas = sys.argv[1:] or list(CENAS)
+    pedidas = args or list(CENAS)
     for nome in pedidas:
         img = CENAS[nome]()
         destino = PASTA / f"secao-{nome}.webp"
