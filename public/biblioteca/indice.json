@@ -2,6 +2,83 @@
  "geradoEm": "2026-10-30",
  "capitulos": [
   {
+   "id": "campbell14-anatomia-coluna",
+   "versao": 1,
+   "titulo": "Anatomia da coluna e vias de acesso",
+   "especialidade": "coluna",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "14ª edição (2021)",
+   "capitulo": "Capítulo 37 · Vias de acesso anatômicas à coluna",
+   "resumo": "Saída das raízes (C2 a C7 acima do pedículo, C8 entre C7 e T1, abaixo de C8 abaixo do pedículo); pedículos cervicais e artéria vertebral (C3 a C6); pedículos torácicos (T5 o mais estreito) e pontos de entrada; irrigação da medula (ADAMKIEWICZ à esquerda, T9 a T11, zona crítica T4 a T9); via anterior cervical (lado esquerdo, longus colli); transição cervicotorácica (transesternal C4 a T4, critério de CHO); via posterior de C1 (1,5 cm); via paraespinhal de WILTSE (multífido e longuíssimo); facetas e movimento.",
+   "acesso": "gratis",
+   "minutos": 4,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "raizes-pediculos-e-facetas",
+     "titulo": "Raízes, pedículos e facetas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-irrigacao-da-medula",
+     "titulo": "A irrigação da medula",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-cervicais",
+     "titulo": "As vias cervicais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-via-paraespinhal-lombar",
+     "titulo": "A via paraespinhal lombar",
+     "radar": "confirmado"
+    }
+   ],
+   "questoes": [
+    "coluna-0208",
+    "coluna-0098",
+    "coluna-0097",
+    "coluna-0272",
+    "coluna-0169",
+    "coluna-0099",
+    "coluna-0206",
+    "coluna-0264",
+    "coluna-0075",
+    "coluna-0262",
+    "coluna-0027",
+    "coluna-0101",
+    "coluna-0023",
+    "coluna-0281",
+    "coluna-0167",
+    "coluna-0085",
+    "coluna-0216",
+    "coluna-0233",
+    "coluna-0054",
+    "coluna-0265",
+    "coluna-0192",
+    "coluna-0222",
+    "coluna-0286"
+   ],
+   "treino": [
+    "coluna-0567",
+    "coluna-0568",
+    "coluna-0571",
+    "coluna-0564",
+    "coluna-0565",
+    "coluna-0569",
+    "coluna-0570",
+    "coluna-0566"
+   ],
+   "subtemas": [
+    "Anatomia da coluna"
+   ]
+  },
+  {
    "id": "campbell14-ath-biomecanica-componentes",
    "versao": 1,
    "titulo": "Artroplastia total do quadril: biomecânica, componentes e fixação",
