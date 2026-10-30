@@ -583,7 +583,7 @@ def montar(p: Pose) -> Rig:
     pesc = tr.p(0, -28.4 - p.resp * 0.5)
     piv = (pesc[0] + p.cab_dx, pesc[1] + p.cab_dy)
     ang_c = p.inclina + p.cab
-    cab = Quadro2D(Quadro2D(piv, ang_c).p(0, -24), ang_c)
+    cab = Quadro2D(Quadro2D(piv, ang_c).p(0, -21), ang_c)   # o crânio sem mandíbula desce um pouco
     r = Rig(raiz, P, tr, cab)
     for lado, s, (a1, a2, a3, _) in (("e", -1, p.be), ("d", 1, p.bd)):
         om = tr.p(s * 10.2, -22.8 - p.resp * 0.7)
@@ -681,14 +681,12 @@ def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
     q = r.cab
     uv = q.uv()
     v = p.vira
-    # calota: larga em cima, maçãs do rosto e maxila mais estreitas
+    # calota: larga e redonda em cima
     calota = elipse((0, -6.5), 25.0, 20.5)
-    rosto = elipse((0 + v * 0.8, 9.5), 17.0, 9.0)
-    macas = circulo((-14.5 + v * 1.2, 7.5), 4.0) | circulo((14.5 + v * 1.2, 7.5), 4.0)
-    # queixo arredondado, emendado no rosto: o crânio é uma peça só, sem dentes nem mandíbula separada
-    # (o Tales pediu, 30/10/2026)
-    queixo = elipse((v * 1.2, 17.8), 9.0, 5.0)
-    f = calota.suave(rosto, 5.0).suave(macas, 2.5).suave(queixo, 3.5)
+    # rosto largo que fecha numa curva redonda logo abaixo do nariz: crânio de peça só, sem queixo saliente,
+    # sem mandíbula nem dentes (referência do Tales, 30/10/2026)
+    rosto = elipse((0 + v * 0.8, 8.0), 20.5, 10.5)
+    f = calota.suave(rosto, 6.0)
     t.pinta(q.forma(f), "osso", 8.0, R=13.0, pid="cranio", uv=uv, semente=51)
     # sombras de modelado: têmporas, abaixo das maçãs, testa mais clara
     for sx in (-1, 1):
@@ -722,8 +720,8 @@ def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
     nz = (v * 2.4, 13.4)
     nariz = (circulo((nz[0] - 1.0, nz[1] - 0.6), 1.15) | circulo((nz[0] + 1.0, nz[1] - 0.6), 1.15)) | poligono([(nz[0] - 2.0, nz[1] - 0.4), (nz[0] + 2.0, nz[1] - 0.4), (nz[0], nz[1] + 2.0)])
     t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.2, pid="cranio", tom=0.1)
-    # sem boca desenhada: só uma sombra suave embaixo do queixo, para dar volume
-    t.pinta(q.forma(elipse((v * 1.2, 21.6), 7.0, 2.2)), "osso", 0, sobre="cranio", tom=-0.12, uv=uv, semente=51, normal=False)
+    # sem boca desenhada: só a sombra da curva de baixo do rosto, para dar volume
+    t.pinta(q.forma(elipse((v * 1.0, 19.0), 14.0, 2.4)), "osso", 0, sobre="cranio", tom=-0.1, uv=uv, semente=51, normal=False)
     if sob_capuz:
         # sombra do capuz no alto do crânio
         def sombra_capuz(X, Y):
@@ -758,8 +756,8 @@ def tronco(t: Tela, r: Rig, p: Pose):
     t.pinta(q.forma(capsula((0, -23.6), (0, -12.0), 1.35, 1.0) | elipse((0, -23.0), 2.4, 1.8) | circulo((0, -11.0), 0.8)), "osso", 4.7, R=1.5, pid="esterno", uv=uv, semente=77)
     for s in (-1, 1):
         t.pinta(q.forma(traco(bezier((s * 1.8, -24.6), (s * 6.0, -26.6), (s * 10.0, -23.6), 7), 0.85)), "osso", 4.8, R=1.0, pid=f"clavicula{s}", uv=uv, semente=78)
-    # vértebras do pescoço
-    for k, y in enumerate((-27.4, -25.6)):
+    # vértebras do pescoço (aparecem entre o crânio redondo e as clavículas)
+    for k, y in enumerate((-31.0, -29.2, -27.4, -25.6)):
         t.pinta(q.forma(caixa((0, y), 1.9, 0.75, r=0.5)), "osso", 7.0, R=1.0, pid=f"cervical{k}", uv=uv, semente=79)
     # pelve (quase toda sob o cinto e o saiote)
     pel = elipse((-4.6, 0.8), 4.8, 3.6, 20).suave(elipse((4.6, 0.8), 4.8, 3.6, -20), 1.5).suave(caixa((0, 2.0), 2.4, 3.0, r=1.2), 1.0)
