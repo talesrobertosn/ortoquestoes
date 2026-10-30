@@ -66,14 +66,19 @@
   "conferido": false
  },
  "quadril-0007": {
+  "conceito": "A coxa tem três compartimentos, e cada um tem o seu nervo. Quem guarda esse par, compartimento e nervo, resolve a questão eliminando, antes mesmo de discutir as artérias.\n\n**Os três compartimentos, segundo o Netter** (cap. 8):\n- **Anterior:** o quadríceps (vasto lateral, intermédio, medial e reto femoral), todos do **nervo femoral**.\n- **Posterior:** o bíceps femoral, o semitendíneo, o semimembranáceo e o **nervo ciático**.\n- **Medial:** o **adutor magno, o adutor longo, o adutor curto e o grácil**, com a artéria e a veia femorais.\n\n**O nervo do compartimento medial.** O **obturatório** (L2 a L4) sai pelo canal obturatório e se divide em duas: a divisão anterior inerva o **grácil** e o **adutor longo**; o **adutor curto** recebe das duas divisões; o **adutor magno**, da posterior. A parte isquiocondilar do adutor magno, a que funciona como isquiotibial, recebe também o ramo tibial do ciático.\n\n**Como a eliminação funciona aqui.** Qualquer alternativa que ponha o **nervo femoral** no compartimento medial cai na hora: é o nervo do anterior. Sobram B e D, ambas com o obturatório. Entre elas, a banca escolheu a combinação do grácil com a **artéria femoral profunda**, a grande artéria da coxa que dá os ramos para os adutores e as perfurantes. Como o livro também põe os vasos femorais no compartimento medial, o alerta registra a ambiguidade.\n\n**Na fasciotomia.** O Netter lembra que a incisão lateral libera os compartimentos anterior e posterior, e a medial, o compartimento medial. O resumo Anatomia do quadril e da coxa traz a tabela dos compartimentos.\n\n**O que a banca quis testar.** O par compartimento medial e nervo obturatório, com o grácil como representante.",
+  "correta": "**B: grácil, a artéria femoral profunda e o nervo obturatório.** O grácil e o obturatório são do compartimento medial (Netter, cap. 8); a artéria escolhida pela banca é a profunda, como registra o alerta.",
   "incorretas": {
-   "A": "O grácil está certo, mas a artéria femoral superficial e o nervo femoral pertencem ao compartimento anterior.",
-   "C": "O adutor curto e a femoral profunda são do compartimento medial, mas o nervo desse compartimento é o obturatório, e não o femoral.",
-   "D": "O adutor curto e o nervo obturatório estão certos, mas a artéria femoral superficial pertence ao compartimento anterior."
+   "A": "**O nervo femoral não é do compartimento medial.** Ele inerva o quadríceps e o sartório, no compartimento anterior. O grácil está certo, mas o nervo derruba a alternativa.",
+   "C": "**Mesmo erro do nervo.** O adutor curto é medial, mas inervado pelo obturatório (divisões anterior e posterior), não pelo femoral.",
+   "D": "**Não é o gabarito, embora o livro ajude.** O adutor curto e o obturatório são do compartimento medial, e o Netter também coloca ali os vasos femorais. A banca, porém, considerou correta a combinação com a femoral profunda."
   },
-  "conceito": "A coxa é dividida por lâminas de tecido fibroso (as fáscias) em **três compartimentos**, e cada um tem seus músculos, seu nervo principal e seus vasos:\n\n**Compartimento anterior**: o **quadríceps** (que estica o joelho) e o sartório. Nervo: **femoral**. O vaso que passa por ele é a **artéria femoral** (chamada de superficial), que desce pelo canal dos adutores.\n\n**Compartimento medial**: os músculos **adutores** (longo, curto e magno), que aproximam a coxa da linha média, mais o **grácil**, o obturador externo e o pectíneo. Nervo: **obturatório**. Vaso principal: a **artéria femoral profunda**, que corre entre os adutores, além da artéria obturatória.\n\n**Compartimento posterior**: os **isquiotibiais** (que dobram o joelho e estendem o quadril). Nervo: **ciático**. Recebe sangue dos ramos perfurantes da femoral profunda.\n\n**Sobre a femoral profunda**: ela nasce da artéria femoral comum, alguns centímetros abaixo do ligamento inguinal (na virilha), e dá ramos importantes: as artérias **circunflexas** (medial e lateral), que contornam o colo do fêmur, e as **perfurantes**, que atravessam para o compartimento de trás. A **circunflexa femoral medial** é a principal fonte de sangue da cabeça do fêmur.\n\nDuas exceções que caem em prova: o **adutor magno** tem dupla inervação (a parte adutora pelo obturatório e a parte de trás pelo ciático), e o **pectíneo** pode receber ramos do nervo femoral.\n\n**Na prova**: no compartimento medial estão o grácil, a artéria femoral profunda e o nervo obturatório.",
-  "correta": "Grácil, a artéria femoral profunda e o nervo obturatório. São o músculo, o vaso e o nervo do compartimento medial.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Compartments) e Nerves (Obturator)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "alerta": "O Netter lista no compartimento medial a artéria e a veia femorais, o que tornaria defensável também a alternativa D (adutor curto, femoral superficial e obturatório). O gabarito oficial (B) foi preservado: a artéria femoral profunda dá ramos a esse compartimento e é a resposta que a banca quis.",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0008": {
@@ -146,17 +151,18 @@
   "conferido": false
  },
  "quadril-0014": {
+  "conceito": "No acesso posterior, o cirurgião desinsere os rotadores curtos e, se descer demais, o quadrado femoral. É justamente sob esse músculo que passa a artéria que sustenta a cabeça femoral do adulto.\n\n**A artéria.** O Netter (cap. 8) descreve a **circunflexa femoral medial** passando entre o pectíneo e o psoas e depois **posterior ao colo, sob o quadrado femoral**. Na tabela dos músculos da nádega, o comentário do quadrado femoral é direto: o **ramo ascendente da circunflexa medial corre sob o músculo**. É a **principal fonte de sangue da cabeça femoral no adulto**.\n\n**O risco no acesso posterior.** Na tabela da via posterior, o livro lista três estruturas ameaçadas: o **nervo ciático**, a **artéria glútea inferior** (na extensão proximal) e a **circunflexa femoral medial, sob o quadrado femoral**, em risco se o músculo for seccionado. Numa artroplastia isso pesa pouco, porque a cabeça é retirada; numa luxação traumática reduzida aberta, numa osteossíntese ou numa cirurgia de preservação, é decisivo.\n\n**Por que as outras não são.** A **circunflexa lateral** é menos significativa para a cabeça no adulto: o ramo ascendente sobe pela frente do colo e ajuda a formar o anel extracapsular; o transverso vai ao trocânter maior; o descendente corre sob o reto femoral e irriga a coxa. Nenhum deles está no campo do acesso posterior.\n\n**O que a banca quis testar.** A ligação entre o trajeto da circunflexa medial, o quadrado femoral e a vitalidade da cabeça. O resumo Anatomia do quadril e da coxa traz o desenho completo da circulação.",
+  "correta": "**C: ascendente da artéria circunflexa medial.** O Netter descreve o ramo ascendente da circunflexa medial sob o quadrado femoral, em risco no acesso posterior, e a circunflexa medial como principal fonte da cabeça no adulto (cap. 8).",
   "incorretas": {
-   "A": "A circunflexa lateral irriga principalmente o trocânter e a parte da frente do fêmur. Seu ramo transverso não é o responsável pela cabeça.",
-   "B": "A artéria (circunflexa medial) está certa, mas o ramo que sobe para formar os vasos da cabeça é o ascendente (profundo), e não o transverso.",
-   "D": "O ramo descendente da circunflexa lateral desce pela coxa e irriga o músculo vasto lateral, e não a cabeça femoral."
+   "A": "**O transverso da circunflexa lateral vai ao trocânter maior.** Ele participa do anel extracapsular, mas não é o vaso que mantém a cabeça viva nem está no campo da via posterior.",
+   "B": "**Ramo errado.** O ramo que sobe por trás do colo, sob o quadrado femoral, e chega à cabeça é o ascendente (o ramo profundo) da circunflexa medial.",
+   "D": "**O descendente da circunflexa lateral desce pela coxa.** Corre sob o reto femoral, irriga o vasto lateral e aparece na via anterolateral e na lateral da coxa, longe da cabeça femoral."
   },
-  "conceito": "A cabeça do fêmur recebe sangue por poucos caminhos, e o principal deles corre justamente pela **parte de trás** do quadril. Por isso, quem opera pelo **acesso posterior** precisa conhecer esse vaso.\n\n**A principal artéria da cabeça femoral no adulto** é o **ramo profundo, ou ascendente, da artéria circunflexa femoral medial**. Seu trajeto:\n\nela contorna o fêmur por trás, passando entre o músculo **obturador externo** e o **quadrado femoral**;\n\nsobe por trás do colo, ficando atrás do tendão do obturador externo e à frente dos pequenos músculos rotadores (gêmeos e obturador interno);\n\nentra na cápsula na parte de cima e de trás do colo e se divide nos **vasos retinaculares**, que correm sobre o colo até a cabeça.\n\nHá outras fontes menores: a artéria do ligamento redondo (que vem da obturatória), ramos da circunflexa lateral e da glútea inferior. Mas elas não sustentam a cabeça sozinhas.\n\n**Regras para proteger o vaso no acesso posterior**:\n\n**não soltar o quadrado femoral**, porque o vaso corre junto dele;\n\ncortar os rotadores curtos a **mais de 1,5 cm** de sua inserção no trocânter;\n\npreservar o tendão do **obturador externo**, que protege o vaso.\n\nToda a técnica de **luxação cirúrgica do quadril de Ganz** foi desenhada para preservar essa artéria.\n\n**Na prova**: no acesso posterior, preserva-se o ramo ascendente (profundo) da circunflexa femoral medial.",
-  "correta": "Ascendente da artéria circunflexa medial. É a principal fonte de sangue da cabeça femoral no adulto e corre pela região posterior do quadril.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Arteries e Muscles (Quadratus femoris); Surgical approaches (Posterior approach)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0015": {
@@ -185,14 +191,18 @@
   "conferido": false
  },
  "quadril-0017": {
+  "conceito": "Pergunta curta, duas metades. Uma se resolve pelo compartimento; a outra, pela artéria que realmente irriga os músculos da coxa.\n\n**O nervo.** O vasto lateral nasce no **trocânter maior e no lábio lateral da linha áspera** e faz parte do quadríceps, no compartimento anterior. Todo o quadríceps é do **nervo femoral**. O Netter lembra isso na via lateral da coxa: divide-se o vasto lateral, inervado pelo femoral, ou ele é elevado do septo intermuscular.\n\n**A artéria.** Aqui está a pegadinha. A **artéria femoral** (a \"superficial\" das provas) passa pela coxa sem irrigar muito: corre no canal adutor e vira a poplítea. Quem irriga a coxa é a **artéria femoral profunda**, que o Netter chama de **principal fonte de sangue da coxa**. Dela saem a circunflexa lateral, cujo **ramo descendente** corre sob o reto femoral até o vasto lateral, e os **ramos perfurantes**, que contornam o fêmur por trás.\n\n**A prova cirúrgica disso.** Na via lateral da coxa, o livro manda ligar o ramo descendente da circunflexa lateral e as perfurantes da femoral profunda. São os vasos do vasto lateral aparecendo no campo.\n\n**O obturatório.** Fica com os adutores e o grácil, no compartimento medial. Não chega ao quadríceps.\n\n**O que a banca quis testar.** Se o candidato sabe que a femoral superficial é uma artéria de passagem e que a profunda nutre a musculatura. O resumo Anatomia do quadril e da coxa traz os compartimentos e as artérias.",
+  "correta": "**A: femoral e artéria femoral profunda.** O vasto lateral é do quadríceps (nervo femoral), e a femoral profunda é a principal fonte de sangue da coxa, pelos ramos da circunflexa lateral e pelas perfurantes (Netter, cap. 8).",
   "incorretas": {
-   "B": "A artéria está certa, mas o nervo obturatório inerva os adutores e o grácil, no compartimento medial, e não o quadríceps.",
-   "C": "O nervo está certo, mas a femoral superficial atravessa a coxa quase sem ramos para os músculos e vai irrigar a perna.",
-   "D": "Os dois estão errados: o obturatório não inerva o quadríceps, e a femoral superficial não é a artéria do vasto lateral."
+   "B": "**O obturatório é do compartimento medial.** Inerva os adutores e o grácil, não o quadríceps.",
+   "C": "**Acerta o nervo, erra a artéria.** A femoral superficial atravessa a coxa pelo canal adutor até a poplítea; a irrigação do vasto lateral vem da femoral profunda.",
+   "D": "**Erra as duas metades.** Nem o nervo (obturatório) nem a artéria (femoral superficial) correspondem ao vasto lateral."
   },
-  "conceito": "O **vasto lateral** é a parte do **quadríceps** que fica do lado de fora da coxa. O quadríceps é o grande músculo da frente da coxa, formado por quatro partes (reto femoral, vasto lateral, vasto medial e vasto intermédio), e sua função é **esticar o joelho**.\n\n**Inervação**: todo o quadríceps é inervado pelo **nervo femoral**, o nervo do compartimento anterior da coxa.\n\n**Irrigação**: o vasto lateral recebe sangue principalmente do **ramo descendente da artéria circunflexa femoral lateral**, que nasce da **artéria femoral profunda**.\n\nVale entender a divisão de trabalho entre as duas artérias da coxa:\n\na **femoral profunda** é a que irriga os **músculos** da coxa. Dela saem as circunflexas (medial e lateral) e as perfurantes;\n\na **femoral superficial** é uma artéria de **passagem**. Ela desce pela coxa, atravessa o canal dos adutores praticamente sem dar ramos para os músculos e, atrás do joelho, vira a artéria poplítea, que vai irrigar a perna.\n\nEsses detalhes têm uso prático. O ramo descendente da circunflexa lateral é o vaso do **retalho anterolateral da coxa**, muito usado em cirurgia reconstrutiva. E nos acessos ao fêmur pelo lado de fora, os ramos perfurantes atravessam o vasto lateral e precisam ser ligados ou cauterizados para não sangrar.\n\nO **nervo obturatório**, citado em algumas alternativas, inerva o compartimento **medial** (os adutores e o grácil), e não o quadríceps.\n\n**Na prova**: o vasto lateral é inervado pelo nervo femoral e irrigado pela femoral profunda.",
-  "correta": "Femoral e artéria femoral profunda. O nervo femoral inerva todo o quadríceps, e o sangue chega pelo ramo descendente da circunflexa lateral, ramo da femoral profunda.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Anterior compartment), Arteries (Profunda femoris) e Surgical approaches (Lateral approach to thigh)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0018": {
@@ -328,14 +338,18 @@
   "conferido": false
  },
  "quadril-0030": {
+  "conceito": "Imagine a cabeça femoral como uma casa alimentada por canos que sobem pelo lado de fora do colo, rente à cápsula, e entram pelo telhado de trás. Esse é o desenho que o Netter faz da circulação, e a resposta sai dele.\n\n**Os três andares, no Netter** (cap. 8):\n1. **Anel extracapsular** na base do colo, formado sobretudo pelas **circunflexas medial e lateral**.\n2. **Artérias cervicais ascendentes**, que sobem pelo colo por fora do osso e continuam dentro da cápsula; são os vasos capsulares (retinaculares) da questão, que formam um segundo anel na base da cabeça.\n3. **Epifisárias**, que **entram no osso na borda da superfície articular, no colo póstero-superior**. A epifisária lateral irriga a maior parte da área de carga.\n\n**De onde vem a pressão sobre a região póstero-superior.** A fonte principal é a **circunflexa femoral medial**, que passa **posterior ao colo, sob o quadrado femoral**. Ela alimenta os vasos que sobem pela face posterior e superior. A artéria do ligamento redondo dá suprimento mínimo no adulto.\n\n**Por que importa.** Uma fratura desviada do colo, a luxação ou uma dissecção posterior agressiva ameaçam exatamente esses vasos. O Netter registra que a interrupção da circulação na fratura ou na luxação leva à osteonecrose.\n\n**O que a banca quis testar.** A localização dos vasos que de fato entram na cabeça. O resumo Anatomia do quadril e da coxa traz a tabela das artérias.",
+  "correta": "**D: superior e posterior.** As artérias entram no osso no colo póstero-superior, alimentadas sobretudo pela circunflexa medial, que passa por trás do colo (Netter, cap. 8).",
   "incorretas": {
-   "A": "Há vasos na frente e embaixo, mas eles contribuem pouco para a irrigação da cabeça no adulto.",
-   "B": "A região posterior está certa, mas a entrada decisiva é superior, e não inferior.",
-   "C": "A região superior está certa, mas a entrada principal é posterior, e não anterior."
+   "A": "**É o lado oposto.** A face anteroinferior do colo não é a porta de entrada dos vasos principais da cabeça.",
+   "B": "**Acerta o posterior, erra o andar.** Os vasos sobem pelo colo e entram na borda póstero-superior da superfície articular, não inferior.",
+   "C": "**Acerta o superior, erra o lado.** A circunflexa lateral, anterior, é menos significativa para a cabeça no adulto; a fonte principal corre por trás do colo."
   },
-  "conceito": "A cabeça do fêmur no adulto recebe sangue por três caminhos, mas um deles é de longe o mais importante:\n\n**Artéria do ligamento redondo**: entra pelo ligamento que liga a cabeça ao fundo do acetábulo. Vem da artéria obturatória e contribui **pouco** no adulto.\n\n**Vasos do colo (metafisários)**: sobem pelo osso do colo. Durante o crescimento, são bloqueados pela placa de crescimento; no adulto, contribuem de forma limitada.\n\n**Vasos retinaculares**: são a **fonte principal**. São os ramos finais do ramo profundo da **artéria circunflexa femoral medial**.\n\n**Por onde entram os retinaculares?** Eles atravessam a cápsula perto da inserção dela na parte de **cima e de trás** (posterossuperior) do colo. Depois sobem colados à superfície do colo, sob uma dobra de tecido (o retináculo de Weitbrecht), e entram na cabeça logo abaixo da cartilagem.\n\n**Consequências clínicas importantes**:\n\numa **fratura desviada do colo do fêmur** rompe esses vasos, e por isso pode levar à necrose da cabeça e à falta de consolidação;\n\na cápsula de **cima e de trás** deve ser preservada nas vias de acesso;\n\na técnica de **luxação cirúrgica de Ganz** foi desenhada para proteger o ramo profundo da circunflexa medial;\n\nparafusos ou ressecções de osso na região posterossuperior do colo podem lesar esses vasos.\n\n**Na prova**: os vasos capsulares que mais irrigam a cabeça femoral ficam nas regiões superior e posterior.",
-  "correta": "Superior e posterior. É por essa região do colo que entram os vasos retinaculares, ramos da circunflexa medial e principal fonte de sangue da cabeça.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Arteries (Femoral head blood supply)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0031": {
@@ -594,17 +608,18 @@
   "conferido": false
  },
  "quadril-0047": {
-  "conceito": "### O sartório\n- Músculo mais **longo** do corpo.\n- Vai da **EIAS** à face medial da tíbia proximal (pata de ganso, com grácil e semitendíneo).\n- Ações: flexão, abdução e rotação externa do quadril; flexão do joelho (\"posição de alfaiate\").\n- Compartimento **anterior** da coxa: inervado pelo ==nervo femoral==.\n\n### Relações úteis\n- Forma o **teto do canal dos adutores** (de Hunter), onde passam a artéria e a veia femorais e o **nervo safeno**.\n- Limite lateral do **triângulo femoral**.\n- Intervalo superficial do acesso de Smith-Petersen (com o tensor da fáscia lata).\n- Avulsão da **EIAS** no adolescente é arrancamento do sartório.\n\n### Nervos sensitivos puros (não inervam músculos)\n- **Safeno:** ramo terminal do femoral, face medial da perna e do pé.\n- **Cutâneo femoral lateral:** face lateral da coxa.\n\n> **Na prova:** sartório = ==nervo femoral==.",
-  "correta": "**Músculo do compartimento anterior.**\n- A seta mostra o sartório, que cruza obliquamente a coxa anterior.\n- Todo o compartimento anterior é inervado pelo nervo femoral.",
+  "conceito": "A seta aponta um músculo da face anterior da coxa. Pela regra dos compartimentos, isso basta para responder: anterior é femoral.\n\n**O nervo femoral, no Netter** (cap. 8): raízes **L2 a L4**, desce **entre o psoas e o ilíaco**, passa sob o ligamento inguinal **lateral à artéria femoral** e se abre no trígono femoral. Inerva o **quadríceps** (reto femoral e os três vastos), o **sartório** e o ilíaco. Dá o **safeno**, que é sensitivo.\n\n**Os músculos que a seta pode estar mostrando na frente da coxa.**\n- **Reto femoral:** no meio, da espinha ilíaca anteroinferior e do rebordo acetabular.\n- **Sartório:** oblíquo, da espinha ilíaca anterossuperior.\n- **Vastos:** lateral (trocânter maior e linha áspera), medial (linha intertrocantérica e linha áspera) e intermédio (sob o reto).\n\nTodos do femoral.\n\n**As alternativas que caem.**\n- **Safeno:** ramo sensitivo do femoral; não inerva músculo.\n- **Obturatório:** compartimento medial, adutores e grácil.\n- **Cutâneo femoral (lateral):** sensitivo puro da face lateral da coxa; o Netter anota \"motor: nenhum\".\n\n**Na cirurgia.** O Netter alerta que o afastamento medial vigoroso nas vias anterior e anterolateral pode lesar o nervo femoral, e o quadríceps fraco depois da prótese é um sinal a investigar.\n\n**O que a banca quis testar.** A regra do compartimento anterior. O resumo Anatomia do quadril e da coxa traz a tabela dos nervos.",
+  "correta": "**B: femoral.** Os músculos da face anterior da coxa, quadríceps e sartório, são inervados pelo nervo femoral (Netter, cap. 8).",
   "incorretas": {
-   "A": "**Nervo só sensitivo.**\n- O safeno é ramo terminal do femoral para a pele da face medial da perna.\n- Não inerva músculo algum.",
-   "C": "**Compartimento medial.**\n- O obturatório inerva adutores, grácil e obturador externo.\n- Não inerva o sartório.",
-   "D": "**Também sensitivo.**\n- O cutâneo femoral lateral inerva a pele da face lateral da coxa.\n- Não tem ramos motores."
+   "A": "**O safeno é sensitivo.** É ramo do femoral para a pele da face medial da perna e não tem ramos motores.",
+   "C": "**O obturatório é do compartimento medial.** Inerva os adutores e o grácil.",
+   "D": "**O cutâneo femoral lateral não tem função motora.** É sensitivo da face lateral da coxa e cruza abaixo da espinha ilíaca anterossuperior."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 8"
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Anterior compartment) e Nerves (Femoral)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0048": {
@@ -836,14 +851,18 @@
   "conferido": false
  },
  "quadril-0067": {
+  "conceito": "Direto: o parafuso do acetábulo é seguro onde há osso espesso e nenhum vaso grande do outro lado. Isso acontece no quadrante póstero-superior.\n\n**A regra, no Netter** (cap. 8, complicações da artroplastia do quadril):\n- **Anterossuperior:** ameaça os **vasos ilíacos externos**.\n- **Anteroinferior:** ameaça os **vasos obturatórios**, que correm sob o ligamento transverso do acetábulo e também se lesam com afastadores mal posicionados.\n- **Póstero-superior:** **seguro**.\n\n**O sistema de WASIELEWSKI.** Divide o acetábulo com uma linha da espinha ilíaca anterossuperior ao centro do acetábulo e outra perpendicular a ela, no centro. Nascem quatro quadrantes. Os dois anteriores olham para os vasos pélvicos; os dois posteriores, para o osso da coluna posterior e da incisura isquiática. O póstero-superior tem o maior estoque ósseo e a menor ameaça; o póstero-inferior aproxima o parafuso da incisura e das estruturas que passam por ela, o que o deixa atrás do póstero-superior em segurança.\n\n**Na sala.** Na dúvida, parafusos curtos e direcionados para trás e para cima, longe da metade anterior. O Netter também lembra a posição do componente: 35 a 45 graus de inclinação e 15 a 30 graus de anteversão.\n\n**O que a banca quis testar.** Uma regra de segurança que todo cirurgião de quadril aplica. O resumo Anatomia do quadril e da coxa traz os quadrantes.",
+  "correta": "**D: póstero-superior.** É o quadrante seguro para os parafusos acetabulares (Netter, cap. 8, complicações da artroplastia).",
   "incorretas": {
-   "A": "No quadrante ântero-inferior, o nervo e os vasos obturatórios ficam logo além da parede interna do osso.",
-   "B": "O quadrante póstero-inferior é aceitável, mas tem osso mais fino e risco para os vasos pudendos e o nervo ciático.",
-   "C": "O quadrante ântero-superior é a \"zona da morte\": os vasos ilíacos externos passam do outro lado da parede, e uma perfuração pode ser fatal."
+   "A": "**Ameaça os vasos obturatórios.** O Netter liga o parafuso no quadrante anteroinferior à lesão dos vasos obturatórios.",
+   "B": "**Não é o mais seguro.** O póstero-inferior fica mais perto da incisura isquiática e das estruturas que passam por ela; a zona segura é a póstero-superior.",
+   "C": "**É o mais perigoso para os grandes vasos.** O parafuso no anterossuperior pode atingir os vasos ilíacos externos."
   },
-  "conceito": "Muitas taças de prótese de quadril **sem cimento** são reforçadas com **parafusos** que atravessam o fundo da taça e entram no osso da bacia. O perigo é que, do outro lado do osso, dentro da pelve, passam vasos e nervos importantes. Se um parafuso atravessar a parede interna, pode lesá-los.\n\n**Wasielewski** criou um mapa para orientar o cirurgião, dividindo o acetábulo em **quatro quadrantes** com duas linhas:\n\na primeira vai da **espinha ilíaca anterossuperior** (EIAS, a saliência óssea da frente da bacia) até o centro do acetábulo e continua para trás;\n\na segunda é perpendicular à primeira, passando pelo centro.\n\n**Os quadrantes e seus riscos**:\n\n**póstero-superior**: o **mais seguro**. O osso ali é **espesso**, e as estruturas do outro lado (vasos e nervo glúteos superiores, nervo ciático) ficam relativamente longe, com bastante osso no caminho;\n\n**póstero-inferior**: aceitável, com cuidado. O osso é mais fino, e há risco para os vasos e o nervo pudendos e o ciático;\n\n**ântero-superior**: a chamada \"**zona da morte**\". Do outro lado passam a **artéria e a veia ilíacas externas**, e uma lesão ali pode ser fatal;\n\n**ântero-inferior**: perigoso, pelo **nervo e vasos obturatórios**.\n\n**Regra prática**: colocar os parafusos no quadrante póstero-superior, com comprimento adequado, sentindo a parede interna do osso. Evitar os quadrantes anteriores.\n\n**Na prova**: o quadrante mais seguro para parafusos acetabulares é o póstero-superior.",
-  "correta": "Póstero-superior. Tem o osso mais espesso do acetábulo, e as estruturas importantes ficam longe, o que permite parafusos mais longos com segurança.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Hip arthroplasty (Complications)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0068": {
@@ -869,25 +888,35 @@
   "conferido": false
  },
  "quadril-0070": {
+  "conceito": "Quatro afirmações, quatro capítulos diferentes da anatomia do quadril. A questão funciona como um checklist do fêmur proximal.\n\n**Osso** (Netter, cap. 8):\n- O **calcar femoral** é osso denso, orientado na vertical, na **face posteromedial** do fêmur proximal.\n- O colo é **antevertido** de **10 a 15 graus** no adulto, com ângulo cervicodiafisário de 120 a 135 graus.\n\n**Nervo** (cap. 7). O **nervo glúteo superior** (L4 a S1) sai pelo forame isquiático maior **acima do piriforme** e inerva o **glúteo médio, o glúteo mínimo e o tensor da fáscia lata**. A falha desses abdutores dá a **marcha de TRENDELENBURG**, como o livro anota no glúteo médio.\n\n**Artéria** (cap. 8). A principal fonte da cabeça femoral no adulto é a **circunflexa femoral medial**, que passa sob o quadrado femoral. A lateral é menos significativa.\n\n**Como ler a questão.** Três afirmações erram por inversão: retroversão no lugar de anteversão, anterolateral no lugar de posteromedial, lateral no lugar de medial. Só a da inervação está inteira.\n\n**O que a banca quis testar.** Se o candidato tem os quatro números e nomes do quadril na ponta da língua. O resumo Anatomia do quadril e da coxa reúne os quatro.",
+  "correta": "**C: os músculos glúteo médio e mínimo são inervados pelo nervo glúteo superior.** É a inervação descrita pelo Netter, que inclui também o tensor da fáscia lata (cap. 7).",
   "incorretas": {
-   "A": "O colo do fêmur normal é anteversado (voltado para a frente) cerca de 10° a 15° no adulto, e não retrovertido.",
-   "B": "O calcar fica na região posteromedial do fêmur, e não anterolateral.",
-   "D": "A principal fonte de sangue da cabeça no adulto é a circunflexa medial. A lateral irriga sobretudo o trocânter e a parte da frente."
+   "A": "**É anteversão.** O colo femoral do adulto é antevertido de 10 a 15 graus, segundo o Netter.",
+   "B": "**É posteromedial.** O calcar é o osso denso vertical da face posteromedial do fêmur proximal.",
+   "D": "**É a medial.** A circunflexa femoral medial é a principal fonte da cabeça no adulto; a lateral é menos significativa."
   },
-  "conceito": "Quatro fatos de anatomia do quadril que costumam ser cobrados:\n\n**A versão do colo**: o colo do fêmur aponta para a **frente** em relação ao resto do osso. Isso se chama **anteversão**, e no adulto fica em torno de 10° a 15° (ao nascer é maior, cerca de 30° a 40°). Retroversão (colo voltado para trás) não é o normal.\n\n**O calcar femoral**: é uma placa de osso **denso** que sai da parede de trás e de dentro (**posteromedial**) do fêmur, logo abaixo do pequeno trocânter. Ele reforça o colo e é um apoio importante para a haste de uma prótese.\n\n**A inervação dos glúteos médio e mínimo**: os dois são inervados pelo **nervo glúteo superior**, que também inerva o tensor da fáscia lata. Esse nervo sai da bacia **acima do músculo piriforme**. Como esses músculos são os principais **abdutores** (mantêm a bacia nivelada quando apoiamos numa perna só), a lesão do nervo causa fraqueza e a marcha de **Trendelenburg** (a bacia cai para o lado oposto a cada passo). O nervo corre risco em acessos laterais que sobem demais acima do trocânter, no portal anterolateral da artroscopia e em parafusos da bacia.\n\nO **glúteo máximo**, por outro lado, é inervado pelo **nervo glúteo inferior**, que sai abaixo do piriforme.\n\n**A irrigação da cabeça do fêmur**: a principal fonte no adulto é a **artéria circunflexa femoral medial** (seu ramo profundo). A circunflexa **lateral** irriga sobretudo o trocânter e a parte da frente.\n\n**Na prova**: os glúteos médio e mínimo são inervados pelo nervo glúteo superior.",
-  "correta": "Os músculos glúteo médio e mínimo são inervados pelo nervo glúteo superior. Sua lesão enfraquece a abdução e causa a marcha de Trendelenburg.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Osteology (Proximal femur), Arteries e Nerves",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 7 (Pelvis), Nerves (Superior gluteal)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0071": {
+  "conceito": "Cada via de acesso tem um nervo que a define. Na via anterior, é um nervo sensitivo pequeno, que cruza logo abaixo da espinha ilíaca anterossuperior.\n\n**A via anterior, no Netter** (cap. 8). O plano superficial é entre o **sartório** (femoral) e o **tensor da fáscia lata** (glúteo superior); o profundo, entre o **reto femoral** e o **glúteo médio**. Em risco: o **nervo cutâneo femoral lateral**, o nervo femoral e o ramo ascendente da circunflexa lateral. O livro manda **afastar o cutâneo femoral lateral para anterior**. O nervo (L2 e L3) cruza logo abaixo da espinha e é sensitivo da face lateral da coxa; a lesão dá dormência ou dor nessa face.\n\n**As outras afirmações.**\n- **Via lateral direta (HARDINGE):** divide o glúteo médio, um terço anterior e dois terços posteriores, e o Netter sublinha que **não precisa de osteotomia do trocânter**.\n- **Via posterior:** põe em risco o ciático, a glútea inferior e a **circunflexa femoral medial sob o quadrado femoral**, a principal artéria da cabeça. Longe de prevenir, pode contribuir para a osteonecrose quando o músculo é seccionado.\n- **Via ilioinguinal:** o Netter a indica para as fraturas **anteriores** do acetábulo (parede e coluna anteriores, ambas as colunas). As fraturas posteriores vão pela de KOCHER-LANGENBECK.\n\n**O que a banca quis testar.** O nervo típico de cada via e a lógica de quais estruturas cada uma alcança. O resumo Anatomia do quadril e da coxa traz as vias lado a lado.",
+  "correta": "**C: no acesso anterior há risco de lesão do nervo cutâneo femoral lateral.** O Netter lista o cutâneo femoral lateral entre as estruturas em risco e manda afastá-lo para anterior (cap. 8).",
   "incorretas": {
-   "A": "A via posterior não previne a osteonecrose. Nela, o cirurgião precisa proteger o principal vaso da cabeça femoral.",
-   "B": "A via de Hardinge divide o glúteo médio e o vasto lateral, sem cortar o trocânter.",
-   "D": "A via ilioinguinal aborda a coluna anterior e a parede interna. A coluna posterior é abordada pela via de Kocher-Langenbeck."
+   "A": "**É o contrário.** O acesso posterior ameaça a circunflexa femoral medial sob o quadrado femoral, a principal fonte da cabeça no adulto.",
+   "B": "**A via lateral direta não exige osteotomia.** Divide-se o glúteo médio; a ausência de osteotomia do trocânter é justamente uma das vantagens que o Netter aponta.",
+   "D": "**A ilioinguinal é anterior.** Serve às fraturas da parede e da coluna anteriores e às de ambas as colunas; a coluna posterior é abordada pela de KOCHER-LANGENBECK."
   },
-  "conceito": "A questão confere quatro afirmações sobre as **vias de acesso** ao quadril e ao acetábulo:\n\n**Via posterior e osteonecrose**: a via posterior **não previne** osteonecrose. É justamente nela que o cirurgião precisa proteger o ramo profundo da artéria circunflexa femoral medial, a principal fonte de sangue da cabeça do fêmur, que corre pela parte de trás.\n\n**Via de Hardinge**: é uma via lateral em que o cirurgião **divide** o músculo glúteo médio e o vasto lateral, mantendo-os como uma faixa contínua presa ao trocânter. **Não há corte do trocânter**. A osteotomia do trocânter é usada em outras vias.\n\n**Via anterior e o nervo cutâneo femoral lateral**: esse nervo, só de sensibilidade, cruza logo abaixo e para dentro da espinha ilíaca anterossuperior, dentro do campo da incisão. A **dormência na frente e do lado da coxa** é a queixa nervosa mais comum depois da via anterior. Esta afirmação está correta.\n\n**Via ilioinguinal**: é a via de Letournel para as fraturas do acetábulo, feita pela frente, acima da virilha. Ela permite abordar a **coluna anterior**, a parede anterior e a superfície quadrilátera (a parede interna da pelve), e **não** a coluna posterior. A coluna posterior é abordada pela via de **Kocher-Langenbeck**, por trás.\n\nOutras vias do acetábulo: a via de **Stoppa modificada**, por dentro da pelve, para a superfície quadrilátera (com cuidado com uma ligação vascular chamada corona mortis), e a via **iliofemoral estendida**, que alcança as duas colunas.\n\n**Na prova**: na via anterior do quadril há risco de lesão do nervo cutâneo femoral lateral.",
-  "correta": "No acesso anterior há risco de lesão do nervo cutâneo femoral lateral. O nervo cruza o campo da incisão, e a dormência na coxa é a queixa nervosa mais comum dessa via.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Surgical approaches (Anterior, Lateral e Posterior approaches)",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 7 (Pelvis), Acetabular fractures (Surgical approaches)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0072": {
@@ -1037,18 +1066,18 @@
   "conferido": false
  },
  "quadril-0083": {
-  "conceito": "### Rotadores curtos do quadril (de cima para baixo)\n1. **Piriforme:** sai pelo forame isquiático maior; referência do acesso posterior.\n2. ==Gêmeo superior==: origem na **espinha isquiática**.\n3. **Obturador interno:** sai pelo forame isquiático menor; seu tendão é o \"centro\" do grupo.\n4. **Gêmeo inferior:** origem na **tuberosidade isquiática**.\n5. **Quadrado femoral:** mais inferior e largo; junto a ele passa o ramo profundo da circunflexa medial.\n- **Obturador externo:** mais profundo, abaixo do colo.\n\n### Regra dos gêmeos\n- Os dois gêmeos \"abraçam\" o tendão do obturador interno: o **superior acima**, o **inferior abaixo**; inserem-se junto com ele na fossa trocantérica (tendão conjunto).\n\n### No acesso posterior\n- Os rotadores são desinseridos e reparados (reparo reduz luxação).\n- O **nervo ciático** passa posterior a eles (e anterior ao piriforme na maioria das pessoas).\n\n> **Na prova:** faixa acima do obturador interno = ==gêmeo superior==.",
-  "correta": "**Faixa acima do obturador interno.**\n- O gêmeo superior nasce na espinha isquiática e fica logo acima do tendão do obturador interno, como na imagem.",
+  "conceito": "Os gêmeos são como dois trilhos finos que acompanham o tendão do obturador interno, um em cima e outro embaixo. A seta aponta o de cima.\n\n**A sequência, no Netter** (cap. 8): **piriforme**, **gêmeo superior**, **obturador interno**, **gêmeo inferior**, **quadrado femoral**. São os **rotadores externos curtos**, e o livro anota que eles são **desinseridos na via posterior**.\n\n**Os detalhes que separam um do outro.**\n- O **obturador interno** sai da pelve pelo **forame isquiático menor**, dobra sobre o ísquio e forma o tendão central.\n- O **gêmeo superior** nasce da **espinha isquiática** e se junta ao tendão por cima.\n- O **gêmeo inferior** nasce da **tuberosidade isquiática** (na tabela de origens do Netter, ele aparece no ísquio, ao lado do quadrado femoral) e se junta por baixo.\n- O **piriforme**, acima de tudo, sai pelo forame isquiático maior.\n\n**O truque de imagem.** Ache o tendão do obturador interno. O que está **logo acima** dele, entre ele e o piriforme, é o gêmeo superior; o que está **logo abaixo**, entre ele e o quadrado femoral, é o gêmeo inferior.\n\n**Na cirurgia.** Os rotadores curtos são soltos para expor a cápsula posterior, e o Netter recomenda **repará-los para prevenir a luxação**. Rebatidos, também protegem o ciático.\n\n**O que a banca quis testar.** A ordem dos rotadores externos curtos. O resumo Anatomia do quadril e da coxa traz a pilha completa.",
+  "correta": "**C: gêmeo superior.** É o músculo fino entre o piriforme e o obturador interno, na pilha dos rotadores externos curtos (Netter, cap. 8).",
   "incorretas": {
-   "A": "**Mais cranial.**\n- O piriforme fica acima do conjunto e passa pelo forame isquiático maior.",
-   "B": "**Fica abaixo.**\n- O gêmeo inferior está abaixo do tendão do obturador interno.",
-   "D": "**É o tendão central.**\n- O obturador interno fica entre os dois gêmeos, não na posição superior."
+   "A": "**O piriforme está acima.** É o rotador mais alto, triangular, que sai pelo forame isquiático maior.",
+   "B": "**O gêmeo inferior está abaixo do obturador interno.** Fica entre o tendão do obturador interno e o quadrado femoral.",
+   "D": "**O obturador interno é o tendão do meio.** Os dois gêmeos o acompanham, um acima e outro abaixo."
   },
   "referencias": [
-   "Gray's Anatomy. Gluteal region and short external rotators.",
-   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Gluteal region; short external rotators)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0084": {
@@ -1121,18 +1150,18 @@
   "conferido": false
  },
  "quadril-0087": {
-  "conceito": "### Ligamentos capsulares do quadril\n| Ligamento | Posição | Limita |\n|---|---|---|\n| iliofemoral (Y de Bigelow) | anterior, superior | extensão, rotação externa |\n| ==pubofemoral== | ==anteroinferior==, do ramo superior do púbis à cápsula | ==abdução== e rotação externa (e extensão) |\n| isquiofemoral | posterior | rotação interna |\n| zona orbicular | circunferencial no colo | distração |\n\n### Pubofemoral\n- Nasce no ramo superior do púbis e na eminência iliopúbica.\n- Funde-se à cápsula e à porção medial do iliofemoral.\n- Forma com o iliofemoral um \"Z\" na face anterior da cápsula.\n\n### Os distratores\n- **Iliopectíneo:** nome da eminência e do arco (bursa iliopectínea), não de um reforço capsular.\n- **Colopúbico:** não existe.\n\n> **Na prova:** reforço capsular **anteroinferior** = ==ligamento pubofemoral==.",
-  "correta": "**Reforço anteroinferior da cápsula.**\n- O pubofemoral vai do ramo superior do púbis à cápsula anteroinferior.\n- Limita principalmente a abdução e a rotação externa.",
+  "conceito": "A cápsula do quadril tem três espessamentos com nomes que dizem de onde vêm: ílio, púbis e ísquio, todos indo ao fêmur. A seta aponta o que nasce no púbis.\n\n**Os ligamentos capsulares, no Netter** (cap. 8, Joints):\n\n| Ligamento | Inserções | Função |\n|---|---|---|\n| **Iliofemoral** (Y de BIGELOW), duas bandas | superior, do ílio junto às espinhas anteriores ao trocânter maior; inferior, do ílio à linha intertrocantérica | o mais forte; **suporte anterior, resiste à extensão** |\n| **Pubofemoral** | do **ramo púbico anterior** à linha intertrocantérica | **impede a hiperextensão**; suporte inferior |\n| **Isquiofemoral** | do acetábulo posterior ao colo superior | largo e relativamente fraco; pouco suporte posterior |\n\nO livro anota ainda que a cápsula posterior não cobre todo o colo, de modo que a parte lateral posterior do colo é extracapsular.\n\n**Como reconhecer o pubofemoral na figura.** Na vista anterior, o iliofemoral é o Y grande que desce do ílio, junto às espinhas anteriores. O pubofemoral fica **embaixo e medial**, saindo do ramo superior do púbis em direção ao colo. Entre os dois, o Netter mostra a **bursa iliopectínea**, que fica sobre o espaço entre os ligamentos.\n\n**As distrações.** Iliopectíneo é o nome de uma bursa e de uma eminência, não de um ligamento capsular. Colopúbico não é termo anatômico.\n\n**O que a banca quis testar.** Os três ligamentos da cápsula e a posição de cada um. O resumo Anatomia do quadril e da coxa traz a anatomia.",
+  "correta": "**D: pubofemoral.** É o espessamento capsular que sai do ramo púbico anterior para a linha intertrocantérica, inferior e medial ao iliofemoral (Netter, cap. 8).",
   "incorretas": {
-   "A": "**Mais superior.**\n- O iliofemoral é o grande ligamento em Y da face anterior e superior.",
-   "B": "**Não é ligamento capsular.**\n- Iliopectíneo nomeia a eminência e o arco, não o reforço da cápsula.",
-   "C": "**Não existe.**\n- Colopúbico não é ligamento reconhecido do quadril."
+   "A": "**O iliofemoral é o Y anterior.** Desce do ílio, junto às espinhas anteriores, acima e lateral ao pubofemoral.",
+   "B": "**Iliopectíneo nomeia a bursa e a eminência.** A bursa iliopectínea fica sobre o espaço entre o iliofemoral e o pubofemoral; não é um ligamento capsular.",
+   "C": "**Não existe ligamento colopúbico.** É um distrator."
   },
   "referencias": [
-   "Gray's Anatomy. Hip joint ligaments.",
-   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Joints (Hip joint: capsular ligaments)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0092": {
@@ -1460,36 +1489,49 @@
   "conferido": false
  },
  "quadril-0131": {
-  "conceito": "### Compartimento medial (adutor) da coxa\n| Músculo | Posição no corte | Inervação |\n|---|---|---|\n| pectíneo | mais proximal e anterior | **femoral** (± obturatório) |\n| ==adutor longo== | ==mais superficial e anterior== | ==obturatório (ramo anterior)== |\n| adutor curto | atrás do longo | obturatório (anterior e posterior) |\n| adutor magno, porção adutora | mais profundo e posterior | obturatório (ramo posterior) |\n| adutor magno, porção isquiática | posterior | **tibial** (isquiático) |\n| grácil | mais medial e superficial | obturatório (ramo anterior) |\n\n### Nervo obturatório\n- Raízes **L2 a L4**; sai pelo canal obturatório.\n- O **adutor curto** separa os ramos **anterior** (à frente) e **posterior** (atrás).\n\n### Relevância clínica\n- O adutor longo é o tendão mais lesado nas **pubalgias** do atleta.\n- Forma a borda medial do **triângulo femoral**.\n\n> **Na prova:** adutor mais superficial no corte = ==adutor longo, obturatório==.",
-  "correta": "**Adutor longo, obturatório.**\n- É o adutor mais superficial e anterior no corte.\n- Recebe o ramo anterior do nervo obturatório, como quase todo o compartimento medial.",
+  "conceito": "Na imagem, a seta aponta o adutor longo, o mais anterior e mais superficial dos adutores. A segunda metade da alternativa, a inervação, é o que realmente separa as opções.\n\n**O adutor longo.** Nasce no **corpo do púbis** e desce até a linha áspera (Netter, cap. 8). É um marco de superfície: forma a borda medial do trígono femoral e, mais abaixo, a parede do canal adutor, junto com o vasto medial e sob o sartório.\n\n**Como diferenciar do adutor curto.** O curto nasce do corpo e do ramo inferior do púbis e fica **atrás** do longo, separando as duas divisões do obturatório: a anterior passa na frente dele e a posterior atrás. Numa dissecção anterior, o primeiro adutor que aparece é o longo.\n\n**A inervação.** Todos os adutores e o grácil estão no compartimento medial, do **nervo obturatório** (L2 a L4). O adutor longo recebe a **divisão anterior**; o curto, as duas; o magno, a posterior, além do ramo tibial do ciático para a parte isquiocondilar. O **femoral** é do compartimento anterior.\n\n**Na clínica.** O adutor longo é o músculo da distensão da virilha do atleta e o plano superficial da via medial do quadril, entre ele e o grácil, ambos do obturatório.\n\n**O que a banca quis testar.** Reconhecer o adutor longo na imagem e lembrar que os adutores são do obturatório. O resumo Anatomia do quadril e da coxa traz as origens e a inervação.",
+  "correta": "**D: longo, inervado pelo obturatório.** O adutor longo é o mais anterior dos adutores e recebe a divisão anterior do obturatório (Netter, cap. 8).",
   "incorretas": {
-   "A": "**Erra os dois.**\n- O adutor curto é mais profundo, e nenhum dos adutores depende do femoral.",
-   "B": "**Músculo errado.**\n- A inervação está certa, mas o adutor curto fica atrás do longo.",
-   "C": "**Nervo errado.**\n- O femoral inerva o compartimento anterior; o adutor longo é obturatório."
+   "A": "**Músculo e nervo errados.** O adutor curto fica atrás do longo, e nenhum adutor é inervado pelo femoral.",
+   "B": "**Nervo certo, músculo errado.** O curto é do obturatório, mas fica atrás do longo; a seta aponta o mais anterior.",
+   "C": "**Músculo certo, nervo errado.** O adutor longo é do obturatório; o femoral inerva o quadríceps e o sartório."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Medial compartment) e Nerves (Obturator)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0132": {
-  "conceito": "### Piriforme: a chave da região glútea profunda\n- Origem: face **anterior do sacro**; sai pelo **forame isquiático maior** e se insere na ponta do trocânter maior.\n- Divide o forame em **suprapiriforme** e **infrapiriforme**.\n\n### O que passa acima e abaixo\n| Acima do piriforme | Abaixo do piriforme |\n|---|---|\n| vasos e nervo glúteos superiores | ==nervo isquiático==, glúteos inferiores, pudendo, cutâneo femoral posterior, nervos do obturador interno e do quadrado femoral |\n\n### Variações do isquiático (Beaton e Anson)\n- Na maioria (cerca de 85 a 90%), o nervo passa **inteiro abaixo** do piriforme.\n- Variante mais comum: divisão fibular **através** do músculo.\n\n### Rotadores curtos de cima para baixo\n1. ==piriforme==\n2. gêmeo superior\n3. obturador interno\n4. gêmeo inferior\n5. quadrado femoral\n\n> **Na prova:** músculo logo acima da saída do isquiático = ==piriforme==.",
-  "correta": "**Acima da emergência do isquiático.**\n- O piriforme sai pelo forame isquiático maior e o nervo emerge logo abaixo dele.",
+  "conceito": "Mais uma vez o piriforme, agora contra vizinhos mais traiçoeiros: o glúteo mínimo, acima, e o gêmeo superior e o obturador interno, abaixo.\n\n**Por que o piriforme é a chave.** O Netter descreve o piriforme como o **ponto de referência** da saída da pelve: os **vasos e o nervo glúteos superiores saem acima** dele, e o **ciático, o glúteo inferior e o pudendo, abaixo**. Ele se insere no ponto de entrada das hastes intramedulares, a fossa piriforme, e é usado como **referência para o nervo ciático**.\n\n**A pilha dos rotadores curtos.** De cima para baixo: **piriforme**, **gêmeo superior**, **obturador interno**, **gêmeo inferior**, **quadrado femoral**. O Netter anota que o obturador interno **sai pelo forame isquiático menor**, enquanto o piriforme sai pelo **maior**. Essa diferença ajuda muito nas imagens: o piriforme vem do interior da pelve por cima da espinha isquiática; o obturador interno contorna o ísquio por baixo dela.\n\n**Como separar na figura.**\n- **Piriforme:** triangular, o mais alto, sob a borda do glúteo médio.\n- **Glúteo mínimo:** acima e mais profundo, na fossa ilíaca externa.\n- **Gêmeo superior:** fino, logo abaixo do piriforme, encostado no tendão do obturador interno.\n- **Obturador interno:** tendão que dobra no ísquio, entre os dois gêmeos.\n\n**O que a banca quis testar.** O piriforme e a sua relação com os vizinhos imediatos. O resumo Anatomia do quadril e da coxa traz a sequência.",
+  "correta": "**A: piriforme.** É o rotador mais alto, que sai pelo forame isquiático maior e serve de referência para o ciático (Netter, caps. 7 e 8).",
   "incorretas": {
-   "B": "**Mais anterior e profundo.**\n- O glúteo mínimo fica sob o glúteo médio, insere-se na face anterior do trocânter.",
-   "C": "**Abaixo do piriforme.**\n- O gêmeo superior é o pequeno músculo entre o piriforme e o obturador interno.",
-   "D": "**Mais inferior.**\n- O obturador interno fica entre os dois gêmeos, abaixo da saída do nervo."
+   "B": "**O glúteo mínimo está acima e mais profundo.** Ocupa a fossa ilíaca externa sob o médio e vai à face anterior do trocânter.",
+   "C": "**O gêmeo superior é o degrau seguinte.** Fino, logo abaixo do piriforme, junto ao tendão do obturador interno.",
+   "D": "**O obturador interno sai pelo forame isquiático menor.** Dobra em torno do ísquio entre os dois gêmeos."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 7 (Pelvis), Greater sciatic foramen",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Gluteal region)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0133": {
-  "conceito": "### Face anterior da coxa\n| Músculo | Aspecto | Inervação |\n|---|---|---|\n| sartório | fita fina e oblíqua, da EIAS à pata de ganso | femoral |\n| ==reto femoral== | ==ventre fusiforme central==, lateral ao feixe femoral | femoral |\n| iliopsoas | proximal, medial, no assoalho do triângulo femoral | femoral (ilíaco) / plexo lombar (psoas) |\n| grácil | fino, compartimento medial | obturatório |\n| vastos | em volta do reto | femoral |\n\n### Reto femoral\n- Único componente **biarticular** do quadríceps.\n- Origens: **cabeça direta** na EIAI e **refletida** no sulco supra-acetabular.\n- Ventre com padrão **bipenado** e septo central (sítio típico das lesões musculares).\n\n### Triângulo femoral\n- Limites: ligamento inguinal, sartório (lateral) e adutor longo (medial).\n- Conteúdo, de lateral para medial: **nervo, artéria, veia** (NAV).\n\n> **Na prova:** ventre central da face anterior = ==reto femoral==.",
-  "correta": "**Ventre central anterior.**\n- O reto femoral ocupa a parte central e superficial do compartimento anterior, lateral ao feixe femoral.",
+  "conceito": "A imagem mostra o reto femoral, o único componente do quadríceps que cruza duas articulações. Essa característica explica a sua origem e as suas lesões.\n\n**O reto femoral, no Netter** (cap. 8):\n- **Origem:** duas cabeças, a direta na **espinha ilíaca anteroinferior** e a indireta (refletida) no **rebordo acetabular superior**.\n- **Ação:** **flete a coxa e estende a perna**.\n- **Comentário:** **pode avulsionar a espinha ilíaca anteroinferior**, a fratura-avulsão do adolescente que chuta.\n- Inervação: **femoral**, como todo o quadríceps.\n\n**Como diferenciar dos vizinhos na imagem.**\n- **Sartório:** faixa fina e oblíqua que nasce na **espinha ilíaca anterossuperior** e cruza a coxa de lateral para medial.\n- **Grácil:** fino, na borda medial, nascendo do corpo e do ramo inferior do púbis.\n- **Iliopsoas:** passa sob o ligamento inguinal e vai ao trocânter menor; na frente da coxa só aparece no alto, no assoalho do trígono femoral.\n- **Reto femoral:** fusiforme, no **meio da coxa anterior**, entre o vasto lateral e o medial, descendo até o tendão do quadríceps.\n\n**Nas vias de acesso.** Na via anterior do quadril, o reto femoral forma o plano profundo com o glúteo médio, e o Netter descreve o desinserir das duas cabeças para expor a cápsula.\n\n**O que a banca quis testar.** Reconhecer o reto femoral pela posição central e pela origem dupla. O resumo Anatomia do quadril e da coxa traz a tabela de origens.",
+  "correta": "**D: reto femoral.** É o músculo fusiforme do meio da coxa anterior, com origem na espinha ilíaca anteroinferior e no rebordo acetabular superior (Netter, cap. 8).",
   "incorretas": {
-   "A": "**Compartimento medial.**\n- O grácil é fino e longo, na face medial da coxa.",
-   "B": "**Formato de fita.**\n- O sartório cruza obliquamente a coxa em fita estreita.",
-   "C": "**Mais proximal e medial.**\n- O iliopsoas forma o assoalho do triângulo femoral, próximo ao feixe vascular."
+   "A": "**O grácil é medial e fino.** Nasce no púbis e desce pela borda medial da coxa até a pata de ganso.",
+   "B": "**O sartório é oblíquo.** Nasce na espinha ilíaca anterossuperior e cruza a coxa de lateral para medial, em faixa estreita.",
+   "C": "**O iliopsoas vai ao trocânter menor.** Aparece apenas no alto da coxa, no assoalho do trígono femoral, e não desce pelo meio da coxa."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Anterior compartment)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0134": {
@@ -1504,18 +1546,18 @@
   "conferido": false
  },
  "quadril-0135": {
-  "conceito": "**A imagem.** Vista anterior da coxa. A seta aponta um músculo da porção **medial e proximal** da coxa, medial ao sartório, no grupo dos **adutores**: o **adutor longo**.\n\n**O compartimento medial (adutor) da coxa.**\n\n| Músculo | Inervação |\n|---|---|\n| **Pectíneo** | **Femoral** (às vezes também o obturatório): a exceção do grupo |\n| **Adutor longo** | **Obturatório** |\n| Adutor curto | Obturatório |\n| **Adutor magno** | **Duplo**: porção adutora pelo **obturatório**; porção isquiotibial (do ísquio) pelo **ciático** (tibial) |\n| **Grácil** | Obturatório |\n| Obturador externo | Obturatório |\n\n**O nervo obturatório.** Nasce das raízes **L2, L3 e L4** do plexo lombar, desce na pelve e sai pelo **canal obturatório**, dividindo-se em ramo **anterior** (que passa sobre o adutor curto) e ramo **posterior** (sob o adutor curto). Inerva os adutores e dá a sensibilidade de uma pequena área na face medial da coxa.\n\n**O adutor longo.** Nasce no **corpo do púbis**, logo abaixo da crista púbica, e se insere no terço médio da **linha áspera**. É o adutor mais anterior e o mais palpável: forma a borda **medial do triângulo femoral** (o lateral é o sartório, e a base é o ligamento inguinal).\n\n**A importância clínica.**\n- As **lesões do adutor longo** (estiramentos, avulsões na origem) são causa comum de **pubalgia** e dor na virilha em jogadores de futebol.\n- A **tenotomia dos adutores** (adutor longo e grácil, às vezes com a neurectomia do ramo anterior do obturatório) é feita na **paralisia cerebral** para tratar a contratura em adução e prevenir a luxação do quadril.\n- A lesão do nervo obturatório (em cirurgias pélvicas e fraturas do anel) causa **fraqueza da adução** e marcha com o membro em abdução.",
-  "correta": "**Correta: D (obturador).** O músculo indicado pertence ao grupo **adutor** da coxa (adutor longo), inervado pelo **nervo obturatório** (L2 a L4). A exceção do grupo é o pectíneo, inervado pelo femoral.",
+  "conceito": "Quando a pergunta é a inervação de um músculo mostrado na imagem, o atalho é sempre o mesmo: em que compartimento ele está? Aqui a resposta é o compartimento medial, e o nervo é o obturatório.\n\n**O nervo obturatório, no Netter** (cap. 8):\n- Raízes **L2 a L4**; sai pelo **canal obturatório** e se divide em anterior e posterior.\n- **Motor:** **grácil** e **adutor longo** (divisão anterior), **adutor curto** (as duas), **adutor magno** (posterior). Na figura do livro aparece também o **obturador externo**.\n- **Sensitivo:** face **inferomedial** da coxa, pelo ramo cutâneo.\n- **Risco cirúrgico:** pode ser lesado por **afastadores colocados atrás do ligamento transverso do acetábulo** na artroplastia.\n\n**O mapa dos três compartimentos.**\n- Anterior: quadríceps e sartório, do **femoral**.\n- Medial: adutores e grácil, do **obturatório**.\n- Posterior: isquiotibiais, do **ciático**. A parte isquiocondilar do adutor magno, a que se comporta como isquiotibial, recebe também o ramo tibial.\n\n**Por que o safeno não entra.** O safeno é ramo **sensitivo** do femoral: corre no canal adutor e inerva a pele da face medial da perna. Não inerva músculo.\n\n**O que a banca quis testar.** Ligar o músculo do compartimento medial ao seu nervo. O resumo Anatomia do quadril e da coxa traz a tabela dos nervos.",
+  "correta": "**D: obturador.** O músculo indicado pertence ao compartimento medial, cujos músculos (adutores e grácil) são inervados pelo nervo obturatório (Netter, cap. 8).",
   "incorretas": {
-   "A": "O **nervo ciático** inerva os isquiotibiais e a porção isquiotibial do adutor magno, e não o adutor longo.",
-   "B": "O **nervo safeno** é um ramo **sensitivo** do femoral (face medial da perna e do pé) e não inerva músculos.",
-   "C": "O **nervo femoral** inerva o quadríceps, o sartório e o pectíneo, mas não os adutores longos."
+   "A": "**O ciático é do compartimento posterior.** Inerva os isquiotibiais e, pelo ramo tibial, só a parte isquiocondilar do adutor magno.",
+   "B": "**O safeno é sensitivo.** Ramo do femoral, inerva a pele da face medial da perna e não dá ramos motores.",
+   "C": "**O femoral é do compartimento anterior.** Inerva o quadríceps e o sartório, não os músculos mediais."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
-   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Nerves (Obturator) e Muscles (Medial compartment)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0136": {
@@ -1545,14 +1587,18 @@
   "conferido": false
  },
  "quadril-0138": {
-  "conceito": "### Quadrado femoral\n- O **mais inferior** dos rotadores curtos, de formato quadrangular.\n- Origem na **tuberosidade isquiática**, inserção no **tubérculo quadrado** da crista intertrocantérica.\n- Rotação externa do quadril.\n- Inervação: nervo para o quadrado femoral (L4 a S1), que também supre o gêmeo inferior.\n\n### Por que importa\n- A ==artéria circunflexa femoral medial== (ramo profundo) corre na sua **borda superior**.\n- Por isso, no acesso posterior e na luxação cirúrgica, o quadrado femoral **não é desinserido**.\n- **Impacto isquiofemoral:** redução do espaço entre ísquio e trocânter menor, com edema do quadrado femoral na RM.\n\n### Sequência de cima para baixo\n1. piriforme\n2. gêmeo superior\n3. obturador interno\n4. gêmeo inferior\n5. ==quadrado femoral==\n- O **obturador externo** fica mais profundo, sob o quadrado femoral.\n\n> **Na prova:** rotador curto mais inferior e quadrangular = ==quadrado femoral==.",
-  "correta": "**O mais inferior dos rotadores.**\n- O quadrado femoral vai da tuberosidade isquiática à crista intertrocantérica.\n- Tem forma quadrangular e fica abaixo do gêmeo inferior.",
+  "conceito": "Na face posterior do quadril, os rotadores curtos se empilham como degraus do piriforme para baixo. O último e mais largo deles é o quadrado femoral, o músculo da seta.\n\n**A ordem de cima para baixo, no Netter** (cap. 8): **piriforme**, **gêmeo superior**, **obturador interno**, **gêmeo inferior** e, por fim, **quadrado femoral**. O obturador externo fica mais profundo, inserido na fossa trocantérica.\n\n**Como reconhecer o quadrado femoral.** É **quadrangular, com fibras horizontais**, da **tuberosidade isquiática** até a crista intertrocantérica, no **andar inferior** dos rotadores. Os gêmeos e o obturador interno são estreitos e convergem para um tendão comum; o piriforme é triangular e sai da pelve pela incisura isquiática maior.\n\n**A importância cirúrgica.** O comentário do Netter para o quadrado femoral é um aviso: o **ramo ascendente da circunflexa femoral medial corre sob o músculo**. Na via posterior, seccionar o quadrado femoral ameaça a principal artéria da cabeça femoral. Por isso, nas cirurgias que preservam a cabeça, ele é poupado.\n\n**O nervo.** Recebe o nervo para o quadrado femoral, que sai abaixo do piriforme.\n\n**O que a banca quis testar.** Reconhecer o último rotador curto e, de quebra, lembrar a artéria que passa por baixo dele. O resumo Anatomia do quadril e da coxa traz a ordem dos rotadores.",
+  "correta": "**C: quadrado femoral.** É o rotador curto mais inferior, quadrangular, da tuberosidade isquiática à crista intertrocantérica, com a circunflexa medial por baixo (Netter, cap. 8).",
   "incorretas": {
-   "A": "**O mais superior.**\n- O piriforme fica no alto, junto à saída do isquiático.",
-   "B": "**Acima do quadrado.**\n- O gêmeo inferior é o pequeno músculo entre o obturador interno e o quadrado femoral.",
-   "D": "**Mais profundo.**\n- O obturador externo fica sob o quadrado femoral e não aparece assim na dissecção posterior."
+   "A": "**O piriforme é o mais alto.** Triangular, sai pela incisura isquiática maior e serve de referência para o nervo ciático.",
+   "B": "**O gêmeo inferior é estreito.** Fica logo acima do quadrado femoral, junto ao tendão do obturador interno.",
+   "D": "**O obturador externo é mais profundo.** Insere-se na fossa trocantérica e só aparece quando o quadrado femoral é afastado."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Gluteal region) e Surgical approaches (Posterior approach)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0139": {
@@ -1578,14 +1624,18 @@
   "conferido": false
  },
  "quadril-0141": {
-  "conceito": "### Os três glúteos\n| Músculo | Plano | Origem | Inserção | Nervo |\n|---|---|---|---|---|\n| máximo | superficial | ílio posterior, sacro, cóccix | tuberosidade glútea e banda iliotibial | glúteo inferior |\n| médio | intermediário | face externa do ílio | faceta lateral e posterossuperior do trocânter | glúteo superior |\n| ==mínimo== | ==profundo== | face externa do ílio, abaixo do médio | ==faceta anterior== do trocânter | glúteo superior |\n\n### Relações\n- O glúteo mínimo fica **acima** do piriforme e sob o glúteo médio.\n- O **nervo glúteo superior** corre entre o médio e o mínimo.\n- O mínimo tem fibras aderidas à **cápsula** superior do quadril.\n\n### Clínica\n- Tendinopatia e ruptura de glúteo médio e mínimo: o \"manguito rotador do quadril\".\n- Fraqueza dos dois: marcha de Trendelenburg.\n\n> **Na prova:** músculo profundo, acima do piriforme, na faceta anterior do trocânter = ==glúteo mínimo==.",
-  "correta": "**Camada mais profunda.**\n- Com glúteo máximo rebatido e médio afastado, o músculo acima do piriforme é o glúteo mínimo.",
+  "conceito": "Os três glúteos se empilham em camadas, do mais superficial ao mais profundo. A seta aponta a camada de baixo, o glúteo mínimo, colado ao osso e à cápsula.\n\n**As três camadas.**\n- **Glúteo máximo:** o mais superficial e volumoso; cobre os outros. Inervação: **glúteo inferior**. O Netter anota que ele precisa ser dividido na via posterior.\n- **Glúteo médio:** a camada intermediária, em leque, inserido na face **posterior** do trocânter maior, segundo a tabela de inserções. Inervação: **glúteo superior**; se falha, marcha de TRENDELENBURG.\n- **Glúteo mínimo:** o mais **profundo**, sob o médio, inserido na face **anterior** do trocânter maior. Inervação: **glúteo superior**. O Netter diz que ele trabalha junto com o médio.\n\n**Como reconhecer na imagem.** O mínimo é menor, triangular, fica na fossa ilíaca externa sob o médio e termina num tendão que passa à frente do trocânter, rente à cápsula. O **piriforme** está logo abaixo da borda inferior dos dois, saindo da pelve.\n\n**Na clínica.** Na via lateral direta, divide-se o médio e **libera-se o mínimo**. A tendinopatia dos abdutores (médio e mínimo) é uma das causas da dor peritrocantérica.\n\n**O que a banca quis testar.** A estratificação dos glúteos e as suas inserções no trocânter. O resumo Anatomia do quadril e da coxa traz as inserções.",
+  "correta": "**C: glúteo mínimo.** É a camada mais profunda dos glúteos, sob o médio, inserida na face anterior do trocânter maior (Netter, cap. 8).",
   "incorretas": {
-   "A": "**Referência inferior.**\n- O piriforme aparece abaixo, junto à saída do isquiático.",
-   "B": "**Mais superficial.**\n- O glúteo médio cobre o mínimo.",
-   "D": "**Já rebatido.**\n- O glúteo máximo foi afastado nesta dissecção."
+   "A": "**O piriforme está abaixo dos glúteos menores.** Sai da pelve pela incisura isquiática maior e se insere no ponto de entrada das hastes, a fossa piriforme.",
+   "B": "**O médio é a camada intermediária.** Cobre o mínimo e se insere na face posterior do trocânter maior.",
+   "D": "**O máximo é o superficial.** Cobre todos os outros e é do glúteo inferior."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Gluteal region) e Origins and insertions",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0151": {
@@ -1667,14 +1717,19 @@
   "conferido": false
  },
  "quadril-0161": {
-  "conceito": "### Piriforme\n- Origem: **face anterior do sacro** (S2 a S4), margem da incisura isquiática maior.\n- Sai da pelve pelo **forame isquiático maior** e insere-se na **ponta do trocânter maior**.\n- Ações: rotação externa em extensão; abdução com o quadril fletido.\n- Inervação: nervo para o piriforme (S1 e S2).\n\n### Por que é a chave da região\n- Divide o forame isquiático maior em **supra** e **infrapiriforme**.\n- O nervo isquiático sai, na maioria, **logo abaixo** dele.\n- No acesso posterior, é o primeiro rotador identificado, na borda superior do conjunto.\n\n### Camadas da região glútea\n| Camada | Estruturas |\n|---|---|\n| superficial | glúteo máximo |\n| intermediária | glúteo médio |\n| profunda | glúteo mínimo, ==piriforme==, gêmeos, obturador interno, quadrado femoral |\n\n> **Na prova:** músculo do sacro ao trocânter, saindo pelo forame isquiático maior = ==piriforme==.",
-  "correta": "**Do sacro ao trocânter.**\n- A estrutura 1 atravessa o forame isquiático maior até a ponta do trocânter: é o piriforme.",
+  "conceito": "O piriforme é o ponto de referência de toda a região glútea profunda. O Netter o chama assim, literalmente: o músculo de referência.\n\n**O que o Netter diz** (cap. 7 e cap. 8):\n- O piriforme **sai pelo forame isquiático maior** e o divide em dois andares.\n- **Acima dele:** o **nervo e a artéria glúteos superiores**.\n- **Abaixo dele:** as estruturas do mnemônico **POP'S IQ** (pudendo, nervo do obturador interno, cutâneo posterior da coxa, ciático, glúteo inferior e nervo do quadrado femoral), com os vasos glúteos inferiores e pudendos internos.\n- Como variação anatômica, o **ciático**, sobretudo a divisão fibular, pode sair **acima ou através** do piriforme.\n- Insere-se no **ponto de entrada da haste intramedular** e é usado como **referência para o nervo ciático**.\n\n**Como reconhecer na imagem.** É **triangular**, com a base no sacro e a ponta no trocânter maior, logo **abaixo da borda inferior do glúteo médio e do mínimo** e logo **acima do gêmeo superior**. Se a figura mostra um músculo saindo do interior da pelve por cima do nervo ciático, é ele.\n\n**Na cirurgia.** Na via posterior, o Netter lembra que rebater o piriforme sobre o ciático o protege.\n\n**O que a banca quis testar.** Reconhecer o divisor da região glútea. O resumo Anatomia do quadril e da coxa traz a saída da pelve.",
+  "correta": "**A: piriforme.** É o músculo triangular que sai pelo forame isquiático maior, entre os glúteos menores e o gêmeo superior, referência para o ciático (Netter, caps. 7 e 8).",
   "incorretas": {
-   "B": "**Profundo ao médio, mais anterior.**\n- O glúteo mínimo nasce no ílio e vai à faceta anterior do trocânter.",
-   "C": "**Mais superficial e lateral.**\n- O glúteo médio cobre o mínimo e o piriforme em parte.",
-   "D": "**Logo abaixo.**\n- O gêmeo superior é pequeno e fica abaixo do piriforme."
+   "B": "**O glúteo mínimo fica acima e mais profundo.** Nasce na fossa ilíaca externa, sob o médio, e vai à face anterior do trocânter.",
+   "C": "**O glúteo médio é um leque largo.** Cobre o mínimo e se insere na face posterior do trocânter maior, acima do piriforme.",
+   "D": "**O gêmeo superior é estreito e fica abaixo.** Acompanha o tendão do obturador interno, logo abaixo do piriforme."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 7 (Pelvis), Greater sciatic foramen",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Muscles (Gluteal region)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0162": {
@@ -1875,31 +1930,35 @@
   "conferido": false
  },
  "quadril-0189": {
+  "conceito": "A retirada de enxerto da crista ilíaca anterior é uma das cirurgias mais simples da ortopedia, e uma das que mais deixam queixa sensitiva. O motivo está nos nervos que passam perto da espinha ilíaca anterossuperior.\n\n**O cutâneo femoral lateral.** O Netter (cap. 8) descreve o nervo (L2 e L3) **cruzando logo abaixo da espinha ilíaca anterossuperior**, onde **pode ser comprimido**, e sem função motora: é sensitivo da **face lateral da coxa**. Uma incisão ou uma retirada de osso que avance para a espinha, ou um afastador mal posto, ameaçam o nervo e dão a meralgia parestésica.\n\n**Os ramos do plexo lombar.** No mesmo livro, o ilio-hipogástrico e o ilioinguinal (L1) saem de baixo do psoas e perfuram os músculos da parede abdominal. Correm na parede, por dentro e perto da crista ilíaca anterior, o que explica por que uma dissecção na face interna do ílio pode alcançá-los.\n\n**Por que os glúteos e os cluneais não são a resposta.** O **glúteo superior** sai pela incisura isquiática, acima do piriforme, e fica longe do ílio anterior. Os **cluneais superiores** cruzam a crista ilíaca **posterior** e são o problema da retirada de enxerto **posterior**.\n\n**Como guardar.** Ílio anterior = nervos anteriores (cutâneo femoral lateral e ilioinguinal); ílio posterior = cluneais superiores.\n\n**O que a banca quis testar.** A anatomia de superfície em volta da espinha ilíaca anterossuperior. O resumo Anatomia do quadril e da coxa traz o trajeto do cutâneo femoral lateral.",
+  "correta": "**C: cutâneo femoral lateral e ilioinguinal.** O cutâneo femoral lateral cruza logo abaixo da espinha ilíaca anterossuperior (Netter, cap. 8), e o ilioinguinal corre na parede abdominal junto ao ílio anterior; a confirmação desse segundo risco é da banca, como registra o alerta.",
   "incorretas": {
-   "A": "O nervo glúteo superior é profundo e fica na parte de trás da bacia, e não é atingido na retirada anterior.",
-   "B": "Os nervos cluneais superiores são o risco na retirada da parte de trás da crista, e não da frente.",
-   "D": "O cutâneo femoral lateral está certo, mas os cluneais superiores pertencem à crista posterior."
+   "A": "**O glúteo superior está longe.** Ele sai pela incisura isquiática maior, acima do piriforme, na face posterior da pelve.",
+   "B": "**Os dois são posteriores.** O glúteo superior e os cluneais superiores são preocupações da região posterior, não da crista anterior.",
+   "D": "**Acerta um, erra o outro.** O cutâneo femoral lateral está em risco, mas os cluneais superiores cruzam a crista ilíaca posterior e pesam na retirada de enxerto posterior."
   },
-  "conceito": "A **crista ilíaca** (a borda de cima da bacia, que dá para sentir na cintura) é a fonte mais comum de **enxerto ósseo** retirado do próprio paciente. O enxerto pode ser retirado da parte **da frente** ou **de trás** da crista, e cada região tem os seus nervos em risco.\n\n**Na retirada anterior** (perto da espinha ilíaca anterossuperior, a EIAS):\n\no **nervo cutâneo femoral lateral**, nervo de sensibilidade da frente e do lado da coxa, passa logo para dentro e para baixo da EIAS. Por isso, a incisão deve começar **2 a 3 cm atrás** da espinha. A lesão causa dormência ou queimação na coxa (meralgia parestésica);\n\no **nervo ilioinguinal** (e o ílio-hipogástrico), que correm na parede do abdome junto à crista. Uma dissecção muito para dentro pode lesá-los, causando dor ou dormência na virilha.\n\n**Na retirada posterior**:\n\nos **nervos cluneais superiores**, que cruzam a crista alguns centímetros para fora da espinha ilíaca posterossuperior e dão sensibilidade à pele da nádega;\n\nmais fundo, perto da incisura isquiática, o **nervo glúteo superior** e os vasos glúteos.\n\n**Outras complicações da retirada**: a dor crônica no local é a mais comum; também pode haver fratura por arrancamento da EIAS (pela tração do músculo sartório) se o enxerto for retirado muito perto dela, hérnia pelo defeito e hematoma.\n\n**Na prova**: na retirada de enxerto do ílio anterior, os nervos em risco são o cutâneo femoral lateral e o ilioinguinal.",
-  "correta": "Cutâneo femoral lateral e ilioinguinal. São os nervos que correm junto à parte da frente da crista ilíaca, perto da EIAS e na parede do abdome.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Nerves (Lumbar plexus: Lateral femoral cutaneous)",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 7 (Pelvis), Nerves (Lumbar plexus)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
   ],
-  "geradoEm": "2026-10-03",
+  "alerta": "O Netter confirma o trajeto do cutâneo femoral lateral logo abaixo da espinha ilíaca anterossuperior, mas o capítulo lido não discute a retirada de enxerto do ílio nem o risco do ilioinguinal nessa cirurgia. O gabarito oficial foi preservado.",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0190": {
-  "conceito": "### Canal dos adutores (Hunter)\n- Do ápice do triângulo femoral ao **hiato dos adutores**, no terço médio da coxa.\n- Limites:\n  - **anterolateral:** vasto medial;\n  - **posterior:** adutor longo e adutor magno;\n  - **teto (anteromedial):** sartório e membrana vastoadutora.\n\n### Conteúdo\n| Estrutura | Observação |\n|---|---|\n| ==artéria femoral== | torna-se poplítea ao cruzar o hiato |\n| veia femoral | posterior à artéria |\n| ==nervo safeno== | ramo sensitivo do femoral; cruza a artéria de lateral para medial |\n| nervo para o vasto medial | na porção proximal |\n\n### Fora do canal\n- **Veia safena magna:** subcutânea, na face medial.\n- **Nervo femoral:** divide-se logo abaixo do ligamento inguinal.\n\n### Clínica\n- **Bloqueio do canal adutor** na artroplastia do joelho: analgesia sensitiva com pouca perda motora do quadríceps.\n- Lesão do safeno: hipoestesia medial da perna.\n\n> **Na prova:** no canal adutor = ==nervo safeno e artéria femoral==.",
-  "correta": "**Safeno e artéria femoral.**\n- No canal adutor o componente nervoso já é o safeno, ramo terminal do femoral.\n- Acompanha a artéria femoral até o hiato dos adutores.",
+  "conceito": "O canal adutor é um túnel no terço médio da coxa por onde a artéria femoral passa da frente para trás do joelho. Quem viaja com ela é o nervo safeno.\n\n**Os limites, no Netter** (cap. 8): o canal fica **sob o sartório**, **entre o vasto medial e o adutor longo**. A **artéria femoral** entra nele vindo do trígono femoral, corre por toda a extensão e **passa pelo hiato dos adutores**, onde vira a **artéria poplítea**.\n\n**O conteúdo.** Na figura do canal aberto, o Netter mostra a **artéria e a veia femorais**, o **nervo safeno** e o **nervo para o vasto medial**. O safeno é ramo sensitivo do femoral; acompanha os vasos e sai do canal antes do hiato para inervar a pele da face medial da perna.\n\n**Por que as outras combinações falham.**\n- O **tronco do nervo femoral** se ramifica logo no trígono femoral, abaixo do ligamento inguinal. Não chega ao canal como tronco.\n- A **veia safena magna** é **superficial**, no tecido subcutâneo da face medial da coxa, fora do canal; ela só mergulha na fossa oval para drenar na veia femoral.\n\n**Na clínica.** O bloqueio do canal adutor anestesia o safeno sem paralisar o quadríceps. A artéria femoral pode ser lesada no hiato dos adutores em fraturas distais do fêmur.\n\n**O que a banca quis testar.** O conteúdo do canal adutor. O resumo Anatomia do quadril e da coxa traz os limites.",
+  "correta": "**A: ao nervo safeno e à artéria femoral.** São as estruturas que correm no canal adutor, sob o sartório, entre o vasto medial e o adutor longo (Netter, cap. 8).",
   "incorretas": {
-   "B": "**Femoral termina antes.**\n- O nervo femoral se divide logo abaixo do ligamento inguinal.",
-   "C": "**Safena magna é superficial.**\n- Corre no subcutâneo, fora do canal.",
-   "D": "**Os dois errados.**\n- O nervo é o safeno, e a veia do canal é a femoral."
+   "B": "**O nervo femoral não entra no canal.** Ele se ramifica no trígono femoral; o que segue com a artéria é o ramo safeno.",
+   "C": "**A safena magna é superficial.** Corre no subcutâneo da face medial da coxa, fora do canal adutor.",
+   "D": "**Erra as duas.** Nem o tronco femoral nem a safena magna estão no canal."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 8"
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Arteries (Femoral artery) e figuras do canal adutor",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0191": {
@@ -1929,15 +1988,20 @@
   "conferido": false
  },
  "quadril-0193": {
+  "conceito": "A questão tem duas camadas: qual dos nervos glúteos e qual dos seus ramos. A primeira é a que mais pesa, e o Netter a resolve.\n\n**Qual nervo.** O **glúteo superior** (L4 a S1) sai pelo forame isquiático maior **acima do piriforme** e inerva o **glúteo médio, o glúteo mínimo e o tensor da fáscia lata** (Netter, cap. 7). O **glúteo inferior** (L5 a S2) inerva **só o glúteo máximo**. Isso elimina de cara as alternativas A e C.\n\n**Qual ramo.** Depois de sair, o glúteo superior corre entre o glúteo médio e o mínimo e se abre em ramos; a banca considera que o glúteo médio recebe o ramo superior. O Netter não chega a esse nível de detalhe, por isso o alerta.\n\n**A aplicação.** Na **via lateral direta**, o Netter descreve a divisão do glúteo médio, um terço anterior e dois terços posteriores, e lista o **nervo glúteo superior** entre as estruturas em risco. Uma divisão que suba demais lesa os ramos e enfraquece o abdutor, que se manifesta como marcha de TRENDELENBURG.\n\n**Como não errar.** Glúteo superior acima do piriforme, para os três abdutores; glúteo inferior abaixo, para o extensor.\n\n**O que a banca quis testar.** O nervo dos abdutores e o detalhe da sua divisão. O resumo Anatomia do quadril e da coxa traz a tabela dos nervos.",
+  "correta": "**B: superior do nervo glúteo superior.** O glúteo médio é inervado pelo glúteo superior (Netter, cap. 7); a indicação do ramo superior é da banca, como registra o alerta.",
   "incorretas": {
-   "A": "O nervo glúteo inferior sai abaixo do piriforme e inerva o glúteo máximo, e não o glúteo médio.",
-   "C": "Pelo mesmo motivo, o nervo glúteo inferior não inerva o glúteo médio.",
-   "D": "O ramo inferior do glúteo superior também inerva o glúteo médio e tem respaldo anatômico (veja o alerta), mas não é o gabarito desta versão."
+   "A": "**Nervo errado.** O glúteo inferior inerva apenas o glúteo máximo.",
+   "C": "**Nervo errado de novo.** Seja qual for o ramo, o glúteo inferior não chega ao glúteo médio.",
+   "D": "**Nervo certo, ramo trocado pela banca.** O glúteo superior é o nervo do glúteo médio; a banca atribui o músculo ao ramo superior."
   },
-  "conceito": "O **glúteo médio** é o principal músculo **abdutor** do quadril: afasta a coxa da linha média e, mais importante, mantém a bacia nivelada quando apoiamos numa perna só. Ele é inervado pelo **nervo glúteo superior**.\n\n**O nervo glúteo superior**:\n\nnasce das raízes L4, L5 e S1;\n\nsai da bacia pelo forame isquiático maior, **acima do músculo piriforme**. É o único nervo que sai por cima do piriforme;\n\ncorre entre o **glúteo médio** e o **glúteo mínimo**, junto com a artéria glútea superior.\n\n**Seus ramos**:\n\n**ramo superior**: corre ao longo da borda de cima do glúteo mínimo e vai para o **glúteo médio** (e o mínimo);\n\n**ramo inferior**: corre entre o médio e o mínimo, mais para o lado de fora, inervando os dois e terminando no **tensor da fáscia lata**.\n\nAssim, o glúteo médio recebe fibras dos **dois ramos** (veja o alerta).\n\n**O nervo glúteo inferior** é diferente: sai **abaixo** do piriforme e inerva só o **glúteo máximo**, o grande músculo que estende o quadril.\n\n**Clínica**: a lesão do glúteo superior causa fraqueza dos abdutores e a marcha de **Trendelenburg** (a bacia cai para o lado oposto a cada passo). O nervo corre risco na via de Hardinge, se a dissecção subir mais de 3 a 5 cm acima do trocânter, e na via de Watson-Jones.\n\n**Na prova**: o glúteo médio é inervado pelo nervo glúteo superior; o gabarito desta questão aponta o ramo superior.",
-  "alerta": "O nervo glúteo superior se divide em um ramo superior, que vai ao glúteo médio, e um ramo inferior, que corre entre o glúteo médio e o mínimo inervando os dois e terminando no tensor da fáscia lata. O glúteo médio recebe, portanto, fibras dos dois ramos, e a alternativa D também tem respaldo anatômico. Esta questão foi aplicada em outra prova com gabarito apontando o ramo inferior. O gabarito oficial desta versão foi mantido.",
-  "correta": "Superior do nervo glúteo superior, segundo o gabarito. O glúteo médio é inervado pelo nervo glúteo superior, cujo ramo superior se dirige a ele.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 7 (Pelvis), Nerves (Sacral plexus: Superior gluteal)",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Surgical approaches (Lateral approach to hip)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do quadril e da coxa (netter-anatomia-quadril-coxa)"
+  ],
+  "alerta": "O Netter confirma que o nervo glúteo superior inerva o glúteo médio, mas não divide o nervo em ramos superior e inferior. O gabarito oficial (B) foi preservado.",
+  "geradoEm": "2026-10-29",
   "conferido": false
  },
  "quadril-0194": {
