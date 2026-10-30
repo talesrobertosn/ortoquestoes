@@ -6,6 +6,7 @@
 // (hash do texto normalizado + seção). As marcações das pessoas se ancoram nesse id e no trecho
 // exato; se um parágrafo for reescrito, o leitor reencontra o trecho pelo texto (src/biblioteca/ancoras.ts).
 import { createHash } from 'node:crypto'
+import { existsSync } from 'node:fs'
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -92,10 +93,16 @@ function analisar(texto, arquivo) {
         if (!central.length && !relacionadas.length && !treino.length) erros.push(`${onde}: !questoes sem nenhuma questão`)
         secao.blocos.push({ id: idBloco('q' + [...central, ...relacionadas, ...treino].join()), tipo: 'questoes', central, relacionadas, treino, conceito: campos.conceito, ...(campos.como ? { como: campos.como } : {}), ...(campos.armadilhas.length ? { armadilhas: campos.armadilhas } : {}), ...(campos.alerta ? { alerta: campos.alerta } : {}) })
       } else if (diretiva[1] === 'figura') {
-        const numero = diretiva[2].trim()
+        // `!figura 48.47 imagem=ombro-cotovelo/campbell14-48-47.jpeg`: recorte do livro em public/imagens, autorizado
+        // pelo Tales em 30/10/2026 ("pode pôr print de imagem sem medo"). Sem imagem=, o leitor mostra só a referência.
+        // As páginas públicas de SEO continuam sem a figura original (gerar_resumos_seo.py).
+        const [numero, ...resto] = diretiva[2].trim().split(/\s+/)
+        const arquivoImagem = resto.join(' ').match(/imagem=(\S+)/)?.[1]
         const legenda = corpo.join(' ').trim()
-        // Sem licença de reprodução confirmada, a figura original não é publicada: o leitor mostra a referência.
-        secao.blocos.push({ id: idBloco('fig' + numero), tipo: 'figura', numero, legenda, imagem: null, licenca: 'pendente' })
+        if (arquivoImagem) {
+          if (!existsSync(join(RAIZ, 'public/imagens', arquivoImagem))) erros.push(`${onde}: figura ${numero} sem o arquivo public/imagens/${arquivoImagem}`)
+        }
+        secao.blocos.push({ id: idBloco('fig' + numero), tipo: 'figura', numero, legenda, imagem: arquivoImagem ? `imagens/${arquivoImagem}` : null, licenca: arquivoImagem ? 'autorizada' : 'pendente' })
       } else {
         const linhasTabela = corpo.filter((c) => c.trim().startsWith('|')).map((c) => c.trim().replace(/^\||\|$/g, '').split('|').map((x) => x.trim()))
         secao.blocos.push({ id: idBloco('tab' + diretiva[2]), tipo: 'tabela', titulo: diretiva[2].trim(), cab: linhasTabela[0] ?? [], linhas: linhasTabela.slice(1).filter((r) => !r.every((x) => /^-+$/.test(x))) })

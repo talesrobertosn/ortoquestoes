@@ -14,4 +14,6 @@ node scripts/biblioteca/gerar.mjs | tail -1
 for t in testar_amostras_inicio testar_cronograma_adiantar testar_adiantar_ponta_a_ponta testar_ligacoes_resumos; do
   node "fixtures/$t.mjs" >/dev/null || { echo "FALHOU: fixtures/$t.mjs"; exit 1; }
 done
+# Trava de profundidade (30/10/2026): resumo novo < 45 KB ou comentário novo < 4,5 mil não passa.
+(python3 scripts/biblioteca/trava_profundidade.py || python scripts/biblioteca/trava_profundidade.py) || exit 1
 echo "pos_aplicar: tudo certo"
