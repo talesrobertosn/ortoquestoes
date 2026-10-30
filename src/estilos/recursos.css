@@ -193,70 +193,8 @@
 /* Cronograma: resumo sempre visível e o porquê de cada semana */
 
 
-.jc__caixa.mn-janela { width: min(58rem, 100%); }
-.mn { display: grid; gap: 1.25rem; }
-.mn__cabeca { position: relative; padding: 1.6rem 5rem 0 2.25rem; }
-.mn__titulo { margin: 0; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.6rem; letter-spacing: -0.01em; color: var(--texto); }
-.mn__cabeca p { margin: 0.35rem 0 0; color: var(--sobre-heroi-2); }
-.mn-janela .mn > :not(.mn__cabeca) { margin-inline: 2.25rem; }
-.mn-janela .mn { padding-bottom: 1.6rem; }
-.painel .mn__cabeca { display: none; }
-
-.mn-retomar {
-  display: flex; align-items: center; gap: 0.85rem; padding: 0.85rem 1rem; border-radius: var(--raio-cartao); text-decoration: none;
-  background: var(--verdete); color: var(--sobre-destaque); box-shadow: 0 6px 18px color-mix(in srgb, var(--verdete) 30%, transparent);
-}
-.mn-retomar:hover { filter: brightness(1.06); }
-.mn-retomar strong { display: block; font-size: 1rem; }
-.mn-retomar small { display: block; opacity: 0.88; font-size: var(--corpo-menor); }
-.mn-retomar__icone { display: grid; place-items: center; width: 2.3rem; height: 2.3rem; border-radius: 50%; background: rgba(255, 255, 255, 0.2); flex: none; }
-
-.mn__grupos { display: grid; gap: 1.1rem; }
-@media (min-width: 60rem) { .mn__grupos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem 2rem; } }
-
-/* As quatro do dia a dia: cartões iguais, no estilo pixel do site (borda e sombra dura). */
-.mn-principais { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.6rem; }
-.mn-principal { position: relative; display: grid; gap: 0.15rem; align-content: start; padding: 0.85rem 0.9rem; border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); color: var(--texto); text-decoration: none; box-shadow: 3px 3px 0 var(--px-sombra); transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, border-color 0.12s; }
-.mn-principal:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--px-sombra); border-color: var(--verdete); }
-.mn-principal:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--px-sombra); }
-.mn-principal[aria-current="page"] { border-color: var(--verdete); background: var(--verdete-veu); }
-.mn-principal__icone { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; margin-bottom: 0.35rem; border-radius: var(--raio-controle); background: var(--verdete-veu); color: var(--verdete); }
-.mn-principal strong { font-size: 1rem; font-weight: 700; }
-.mn-principal small { color: var(--texto-2); font-size: 0.78rem; line-height: 1.3; }
-.mn-principal__selo { position: absolute; top: 0.6rem; right: 0.6rem; }
-@media (max-width: 40rem) { .mn-principais { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-
-/* Planos e indicação: no fim, discretos, lado a lado. */
-.mn-extras { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.6rem; }
-.mn-extra { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; padding: 0.65rem 0.8rem; border: 1px solid var(--traco); border-radius: var(--raio-cartao); background: var(--superficie-2); color: var(--texto); text-decoration: none; }
-.mn-extra:hover { border-color: var(--ouro, #c9952f); }
-.mn-extra strong { display: block; font-size: 0.92rem; }
-.mn-extra small { display: block; color: var(--texto-2); font-size: 0.78rem; line-height: 1.3; }
-.mn-extra__icone { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: var(--raio-controle); background: linear-gradient(135deg, #fff0bf, #f7d77c); color: #6b4a06; }
-.mn-extra--indicar .mn-extra__icone { background: color-mix(in srgb, #1fa855 18%, var(--superficie)); color: #15803d; }
-.mn-grupo__titulo { margin: 0 0 0.35rem 0.7rem; color: var(--texto-2); font-size: 0.72rem; font-weight: 750; letter-spacing: 0.1em; text-transform: uppercase; }
-.mn-grupo ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.15rem; }
-
-.mn-item {
-  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.8rem;
-  min-height: 3.4rem; padding: 0.5rem 0.7rem; border: 1px solid transparent; border-radius: var(--raio-cartao); color: var(--texto); text-decoration: none;
-  transition: background-color 0.12s ease-out, border-color 0.12s ease-out;
-}
-.mn-item:hover { background: var(--superficie-2); }
-.mn-item:focus-visible { outline: 2px solid var(--verdete); outline-offset: 1px; }
-.mn-item[aria-current="page"] { background: var(--verdete-veu); border-color: color-mix(in srgb, var(--verdete) 35%, transparent); }
-.mn-item__icone { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: var(--raio-controle); background: var(--verdete-veu); color: var(--verdete); }
-.mn-item--assinante .mn-item__icone { background: linear-gradient(135deg, #fff0bf, #f7d77c); color: #6b4a06; }
-.mn-item__texto strong { display: block; font-size: 0.98rem; font-weight: 650; line-height: 1.25; }
-.mn-item__texto small { display: block; margin-top: 0.1rem; color: var(--texto-2); font-size: 0.8rem; line-height: 1.35; }
-.mn-item__seta { color: var(--texto-2); opacity: 0.6; }
-.mn-item:hover .mn-item__seta { opacity: 1; color: var(--verdete); }
-.mn-item--destaque { border-color: color-mix(in srgb, #e3ad2f 55%, transparent); background: linear-gradient(135deg, color-mix(in srgb, #f2c14e 14%, var(--superficie)), var(--superficie)); }
-.mn-item--destaque .mn-item__texto strong { font-size: 1.05rem; }
-.mn-item--destaque:hover { background: linear-gradient(135deg, color-mix(in srgb, #f2c14e 22%, var(--superficie)), var(--superficie-2)); }
-
-.mn__rodape { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin-top: 0; padding: 1rem 0.7rem 0; border-top: var(--borda); font-size: 0.8rem; }
-.mn__rodape a { color: var(--texto-2); }
+.jc__caixa.mn-janela { width: min(60rem, 100%); }
+.mn-carregando { min-height: 60vh; }
 
 /* ---- Sessão: deslizar para trocar de questão ------------------------------ */
 @keyframes dica-deslizar { 0% { opacity: 0; transform: translate(-50%, 8px); } 8%, 88% { opacity: 1; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, 4px); } }
@@ -280,18 +218,6 @@
 
 
 
-/* Atalho dos planos no topo do menu (temporada pixel art). */
-.mn-planos {
-  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.8rem; margin: 0 0 1rem; padding: 0.8rem 1rem;
-  border-radius: var(--raio-cartao); border: 2px solid color-mix(in srgb, var(--ouro) 70%, transparent); color: var(--texto); text-decoration: none;
-  background: radial-gradient(120% 160% at 0% 0%, var(--ouro-veu), transparent 60%), var(--superficie);
-}
-.mn-planos:hover { border-color: var(--ouro); color: var(--texto); }
-.mn-planos img { image-rendering: pixelated; }
-.mn-planos strong { display: block; font-size: 1.05rem; }
-.mn-planos small { display: block; color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
-.mn-planos__acao { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.45rem 0.8rem; border-radius: 999px; background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; font-weight: 800; font-size: var(--meta); white-space: nowrap; }
-@media (max-width: 30rem) { .mn-planos { grid-template-columns: auto minmax(0, 1fr); } .mn-planos__acao { grid-column: 1 / -1; justify-content: center; } }
 
 /* Atalho dos planos (página inicial e Minha conta) e ícones em pixel art: globais. */
 .inicio-planos-atalho {
@@ -419,14 +345,6 @@
   .ig__acoes > .ig__whatsapp, .ig__acoes > .ig__copiar { flex: 1 1 auto; }
 }
 
-/* Menu: destaque do Indique e ganhe, irmão do baú dos planos. */
-.mn-indicar { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem 1rem; padding: 0.75rem 1rem; margin-bottom: 0.75rem; border-radius: var(--raio-cartao); text-decoration: none; color: #f3ead6; border: 2px solid #c99a3b; background: linear-gradient(160deg, #2a1d0e, #3a2a12 60%, #23412f); }
-.mn-indicar:hover { color: #fff6e0; border-color: #f4cf7c; }
-.mn-indicar img { image-rendering: pixelated; }
-.mn-indicar strong { display: block; font-size: 1.05rem; color: #fff6e0; }
-.mn-indicar small { display: block; color: #e6d9bd; font-size: var(--meta); line-height: 1.35; }
-.mn-indicar__acao { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.45rem 0.8rem; border-radius: 999px; background: #1fa855; color: #fff; font-weight: 800; font-size: var(--meta); white-space: nowrap; }
-@media (max-width: 30rem) { .mn-indicar { grid-template-columns: auto minmax(0, 1fr); } .mn-indicar__acao { grid-column: 1 / -1; justify-content: center; } }
 
 /* Questão dissertativa: escreve, compara com a resposta esperada e se autoavalia. */
 .dissertativa { display: grid; gap: 0.9rem; margin-top: 0.5rem; }
@@ -450,34 +368,7 @@
 .atalho-flashcards > svg:first-child { color: var(--ouro-texto); }
 .atalho-flashcards span { display: grid; gap: 0.15rem; }
 .atalho-flashcards small { color: var(--texto-2); }
-/* Resumos em chamas no menu (16/10/2026): o fogo fica atrás do item e o item ganha um brilho de brasa. */
-.mn-item--fogo { position: relative; isolation: isolate; margin: 0.9rem 0 0.35rem; border-color: rgba(255, 140, 50, 0.55); background: linear-gradient(135deg, color-mix(in srgb, #ff8a2a 16%, var(--superficie)), var(--superficie)); box-shadow: 0 0 18px rgba(255, 110, 30, 0.28); }
-.mn-item--fogo:hover { background: linear-gradient(135deg, color-mix(in srgb, #ff8a2a 24%, var(--superficie)), var(--superficie-2)); }
-.mn-item--fogo .mn-item__icone { background: linear-gradient(135deg, #ffd27a, #ff7a2a); color: #4a1a04; }
 
-/* Busca do menu: páginas, trechos dos resumos, assuntos, flashcards e questões. */
-.mn-busca { position: relative; margin-bottom: 1rem; }
-.mn-busca__campo { display: flex; align-items: center; gap: 0.55rem; padding: 0 0.4rem 0 0.9rem; min-height: 3rem; border: 1.5px solid color-mix(in srgb, var(--verdete) 30%, var(--traco)); border-radius: 999px; background: var(--superficie-2); color: var(--verdete); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06); transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s; }
-.mn-busca__campo:hover { border-color: color-mix(in srgb, var(--verdete) 55%, var(--traco)); }
-.mn-busca__campo:focus-within { border-color: var(--verdete); background: var(--superficie); box-shadow: 0 0 0 4px color-mix(in srgb, var(--verdete) 20%, transparent); }
-.mn-busca__campo input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--texto); font: inherit; font-size: 1rem; padding: 0.7rem 0; }
-.mn-busca__campo input::-webkit-search-cancel-button { display: none; }
-.mn-busca__limpar { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border: 0; border-radius: 50%; background: var(--superficie-2); color: var(--texto-2); cursor: pointer; }
-.mn-busca__limpar:hover { color: var(--texto); }
-.mn-busca__lista { margin: 0.5rem 0 0; padding: 0.35rem; list-style: none; display: grid; gap: 0.1rem; max-height: min(26rem, 60vh); overflow-y: auto; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); }
-.mn-busca__item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; padding: 0.55rem 0.65rem; border-radius: var(--raio-controle); color: var(--texto); text-decoration: none; }
-[aria-selected="true"] > .mn-busca__item { background: var(--verdete-veu); }
-.mn-busca__icone { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: var(--raio-controle); background: var(--superficie-2); color: var(--verdete); }
-.mn-busca__item--resumo .mn-busca__icone { background: linear-gradient(135deg, #fff0bf, #f7d77c); color: #6b4a06; }
-.mn-busca__item--flashcards .mn-busca__icone { color: #c2410c; }
-.mn-busca__texto { min-width: 0; }
-.mn-busca__texto strong { display: block; font-size: 0.93rem; font-weight: 650; line-height: 1.3; overflow-wrap: anywhere; }
-.mn-busca__texto strong small { color: var(--texto-2); font-weight: 550; }
-.mn-busca__texto > small { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 0.1rem; color: var(--texto-2); font-size: 0.78rem; line-height: 1.4; }
-.mn-busca__texto > small b { color: var(--texto); background: color-mix(in srgb, #f2c14e 35%, transparent); border-radius: 3px; font-weight: 700; }
-.mn-busca__tipo { font-size: 0.66rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; color: var(--texto-2); }
-.mn-busca__carregando { padding: 0.5rem 0.75rem; color: var(--texto-2); font-size: 0.8rem; }
-@media (max-width: 30rem) { .mn-busca__tipo { display: none; } }
 
 /* Selo de novidade (25/10/2026): pílula dourada fina, com um brilho que atravessa a cada poucos segundos. */
 .selo-novo { position: relative; display: inline-flex; align-items: center; overflow: hidden; padding: 0.08rem 0.45rem; border: 1px solid color-mix(in srgb, #c9952f 60%, transparent); border-radius: 999px; background: linear-gradient(135deg, #fff7df, #f6dfa1); color: #6b4a06; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; line-height: 1.4; text-transform: uppercase; vertical-align: middle; white-space: nowrap; }
@@ -486,14 +377,6 @@
 @keyframes selo-brilho { 0%, 70% { transform: translateX(-120%); } 100% { transform: translateX(120%); } }
 @media (prefers-reduced-motion: reduce) { .selo-novo::after { animation: none; display: none; } }
 
-.mn-planos-faixa { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; padding: 0.7rem 0.9rem; border: 2px solid #c9952f; border-radius: 6px; background: linear-gradient(135deg, #fffaf0, #fbefd2); color: #3b2604; text-decoration: none; box-shadow: 3px 3px 0 color-mix(in srgb, #c9952f 35%, transparent); }
-.mn-planos-faixa:hover { border-color: #a87a1d; }
-.mn-planos-faixa strong { display: block; font-size: 1rem; }
-.mn-planos-faixa small { display: block; color: #6b5a3a; font-size: 0.8rem; line-height: 1.35; }
-.mn-planos-faixa__acao { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.45rem 0.85rem; border-radius: 999px; background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; font-weight: 800; font-size: 0.82rem; white-space: nowrap; }
-:root[data-tema="escuro"] .mn-planos-faixa { background: linear-gradient(135deg, #2e2412, #3a2d12); color: #ffe9b8; }
-:root[data-tema="escuro"] .mn-planos-faixa small { color: #d9c79e; }
-@media (max-width: 30rem) { .mn-planos-faixa { grid-template-columns: auto minmax(0, 1fr); } .mn-planos-faixa__acao { grid-column: 1 / -1; justify-content: center; } }
 
 /* Faixa dos planos na página inicial (25/10/2026): fina, dourada, sempre no começo para quem não assina. */
 .faixa-planos { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.9rem; padding: 0.75rem 1rem; border: 2px solid #c9952f; border-radius: 6px; background: linear-gradient(135deg, #fffaf0, #fbefd2); color: #3b2604; text-decoration: none; box-shadow: 4px 4px 0 color-mix(in srgb, #c9952f 30%, transparent); }
@@ -526,20 +409,6 @@
 .ip-px--osso i:nth-child(3) { right: 2px; }
 :root[data-tema="escuro"] .ip-px i { box-shadow: 0 0 0 2px #050807; }
 
-/* Menu: Resumos e Atlas 3D em destaque (25/10/2026), cartões largos com arte e um fundo leve de cada cor. */
-.mn-destaques { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
-.mn-destaque { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 0.8rem 0.95rem; border: 2px solid var(--px-borda); border-radius: 6px; color: var(--texto); text-decoration: none; box-shadow: 3px 3px 0 var(--px-sombra); transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, border-color 0.12s; }
-.mn-destaque--livros { background: linear-gradient(135deg, color-mix(in srgb, #b5523a 10%, var(--superficie)), var(--superficie)); }
-.mn-destaque--osso { background: linear-gradient(135deg, color-mix(in srgb, #1d8a7f 13%, var(--superficie)), var(--superficie)); }
-.mn-destaque:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--px-sombra); border-color: var(--verdete); }
-.mn-destaque:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--px-sombra); }
-.mn-destaque[aria-current="page"] { border-color: var(--verdete); }
-.mn-destaque__texto strong { display: flex; align-items: center; gap: 0.4rem; font-size: 1.05rem; font-weight: 700; }
-.mn-destaque__texto small { display: block; margin-top: 0.1rem; color: var(--texto-2); font-size: 0.8rem; line-height: 1.35; }
-.mn-destaque__seta { color: var(--texto-2); }
-.mn-destaque:hover .mn-destaque__seta { color: var(--verdete); }
-@media (max-width: 40rem) { .mn-destaques { grid-template-columns: 1fr; } }
 /* Atlas 3D: a mão dissecada do próprio atlas no lugar do osso desenhado (pedido do Tales, 25/10/2026). */
-.mn-destaque__imagem, .ip-atlas-icone { flex: none; object-fit: contain; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.18)); }
-.mn-destaque__imagem { width: 52px; height: 52px; margin: -6px 0; }
+.ip-atlas-icone { flex: none; object-fit: contain; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.18)); }
 .ip-atlas-icone { width: 44px; height: 44px; margin: -4px 0; }

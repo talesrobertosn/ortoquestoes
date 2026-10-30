@@ -8,13 +8,16 @@ import { ehTexto } from './tipos'
  */
 
 let indice: Promise<IndiceBiblioteca> | null = null
+let indiceEmMemoria: IndiceBiblioteca | null = null
+/** O índice da Biblioteca, se alguma tela já o carregou (o menu não baixa por conta própria). */
+export const indiceBibliotecaCarregado = () => indiceEmMemoria
 const capitulos = new Map<string, Promise<Capitulo | null>>()
 
 export function carregarIndiceBiblioteca(): Promise<IndiceBiblioteca> {
   indice ??= fetch(recurso('biblioteca/indice.json'), { cache: 'no-cache' }).then((r) => {
     if (!r.ok) throw new Error(`Índice da biblioteca: ${r.status}`)
     return r.json() as Promise<IndiceBiblioteca>
-  }).catch((e) => { indice = null; throw e })
+  }).then((i) => (indiceEmMemoria = i)).catch((e) => { indice = null; throw e })
   return indice
 }
 

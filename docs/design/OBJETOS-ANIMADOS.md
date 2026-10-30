@@ -44,6 +44,13 @@ a um botão. Código em `src/biblioteca/salao/`; o CSS em `src/estilos/paginas/S
 - **Sons** sintetizados (`sons.ts`), desligados de início.
 - Teste: `fixtures/testar_salao_biblioteca.mjs`.
 
+## O menu no estilo do salão (30/10/2026)
+O menu (`src/componentes/menu/ConteudoMenu.tsx`, CSS em `src/estilos/componentes/Menu.css`) é uma parede de madeira com
+o relógio e o fichário de busca, a mesa "Hoje" (sessão pendente, revisão do dia e resumo em andamento, só com dados que
+já estão no aparelho), as prateleiras Estudar e Desafios com um objeto em pixel por página (`menu/sprites.ts`, cada um
+com a sua animação), a gaveta "Seu progresso" e a recepção. O conteúdo e o CSS descem só quando o menu abre (com
+pré-carga no tempo ocioso). Segredos: o gato em cima da prateleira e o relógio que volta no tempo (5 toques).
+
 ## Ideias para os próximos pontos
 Ficam aqui para quando o Tales pedir ou quando a tela for refeita:
 - **Simulado Nacional:** um ingresso que destaca o canhoto ao se inscrever.
