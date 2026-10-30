@@ -1,0 +1,168 @@
+---
+id: tachdjian6-alinhamento-torcoes-coxa-vara
+versao: 1
+titulo: Alinhamento, torções e coxa vara na criança
+especialidade: pediatria
+acesso: gratis
+livro: Tachdjian's Pediatric Orthopaedics
+edicao: 6ª edição (2021)
+capitulo: Capítulo 16 · Congenital Coxa Vara, Capítulo 17 · Disorders of the Femur e Capítulo 18 · Disorders of the Leg
+autores: Daniel J. Sucato, John A. Herring e Robert Lane Wimberly (editor John A. Herring)
+fonte: Livro conferido localmente em 29/10/2026, capítulos 4, 16, 17 e 18, com o capítulo 4 do Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), para o perfil rotacional. Páginas citadas só quando aparecem no sumário do capítulo.
+subtemas: Genuvaro, genuvalgo e torções; Tíbia vara (Blount); Coxa vara do desenvolvimento
+resumo: Curva do alinhamento (varo máximo 6 a 12 meses, neutro 18 a 24, valgo máximo 2 a 4 anos, adulto aos 8); valgo patológico (osteodistrofia renal, COZEN, displasias, exostoses); BLOUNT (obeso, impulso lateral, torção interna e procurvato, LANGENSKIÖLD, órtese antes dos 3 anos, osteotomia com hipercorreção antes dos 4, epifisiólise nos estágios IV e V); displasia fibrocartilaginosa focal; perfil de STAHELI, anteversão de 40 a 16 graus, torção tibial e indicações de osteotomia; encurvamentos anterolateral, posteromedial e anteromedial; coxa vara do desenvolvimento (V invertido, HILGENREINER-epifisário 45 e 60, osteotomia valgizante, BORDEN, recidiva).
+---
+
+# Como ler este capítulo {radar=fundamento}
+
+Este resumo é inspirado em três capítulos do Tachdjian's Pediatric Orthopaedics (6ª edição, 2021), editado por John A. HERRING: o 16, Congenital Coxa Vara, de Daniel J. SUCATO; o 17, Disorders of the Femur, do próprio HERRING; e o 18, Disorders of the Leg, de Robert Lane WIMBERLY. O perfil rotacional usa também o capítulo 4 do Lovell and Winter's Pediatric Orthopaedics (7ª edição, 2014). O texto reorganiza as ideias em português, na ordem em que as provas cobram.
+
+O fio que costura tudo é uma pergunta de consultório: **isso é normal para a idade?** A maior parte das pernas arqueadas, dos joelhos que se batem e dos pés que entram é uma fase do desenvolvimento, e a melhor conduta é explicar e reavaliar. O resto do capítulo ensina a reconhecer as exceções: a tíbia vara de BLOUNT, o valgo do raquitismo e o pós-traumático, os encurvamentos congênitos da tíbia e a coxa vara do desenvolvimento.
+
+> **Na prova:** varo máximo **6 a 12 meses**, valgo máximo **2 a 4 anos**; **BLOUNT** = obeso, osteotomia **antes dos 4 anos**; **osteodistrofia renal** = valgo; anteversão **40 → 16 graus**; torção tibial = causa **mais comum** até 7 anos; **posteromedial** = benigno com **discrepância**; coxa vara = **V invertido**, HILGENREINER-epifisário **> 60 opera**.
+
+# O alinhamento angular normal {radar=confirmado}
+
+O recém-nascido tem **10 a 15 graus de varo**. As medidas do ângulo tibiofemoral e da distância intercondilar mostram **varo máximo entre 6 e 12 meses**, **alinhamento neutro entre 18 e 24 meses**, **valgo máximo por volta dos 4 anos** (cerca de 8 graus) e uma redução lenta até uma média de 6 graus aos 11 anos (cap. 18, Genu Varum). O capítulo descreve o valgo como **normal entre 2 e 8 anos**, com o **máximo entre 2 e 4 anos**, e o alinhamento maduro, de **5 a 7 graus de valgo**, **por volta dos 8 anos**.
+
+!tabela A curva do alinhamento do joelho (cap. 18)
+| Idade | Alinhamento esperado |
+| --- | --- |
+| nascimento | varo de 10 a 15 graus |
+| 6 a 12 meses | varo máximo |
+| 18 a 24 meses | neutro |
+| 2 a 4 anos | valgo máximo (cerca de 8 graus aos 4 anos) |
+| por volta dos 8 anos | valgo do adulto, 5 a 7 graus |
+!fim
+
+**O varo fisiológico** se define por um ângulo tibiofemoral de **pelo menos 10 graus de varo**, **fise radiograficamente normal** e arqueamento de ápice lateral da tíbia proximal e, muitas vezes, do fêmur distal. A torção tibial interna associada exagera a aparência. A criança chega depois da idade de ficar de pé, entre 12 e 24 meses, em geral pela preocupação dos pais; não precisa de radiografia. A correção espontânea até os 24 meses é bem documentada; o varo que **persiste ou progride depois dos 24 meses**, ou que é claramente **assimétrico**, merece radiografia e seguimento mais próximo.
+
+**O valgo fisiológico** não pede radiografia, a não ser que haja **baixa estatura**, história de **trauma, infecção ou doença metabólica óssea**, ou **assimetria importante**. Uma anteversão femoral aumentada pode imitar o valgo. Depois dos 8 anos, o valgo idiopático excessivo, com alteração de marcha, dor, mau alinhamento patelar ou queixa estética importante, pode ser corrigido por **crescimento guiado** (hemiepifisiodese), que exige alguns anos de crescimento restante.
+
+!questoes central=pediatria-0112 relacionadas=pediatria-0264 treino=pediatria-1399
+conceito: Varo máximo entre 6 e 12 meses, neutro entre 18 e 24, valgo máximo entre 2 e 4 anos, valgo do adulto (5 a 7 graus) por volta dos 8; radiografia só com baixa estatura, assimetria, trauma, infecção ou doença metabólica.
+como: O TEOT 2021 pediu a idade do valgo fisiológico máximo (4 anos); a SBOT-SP, a faixa de idade (2 a 4 anos).
+armadilha: Confundir o valgo máximo dos 4 anos com o alinhamento definitivo dos 8, ou pedir radiografia para todo valgo simétrico da idade.
+!fim
+
+# Geno valgo patológico {radar=confirmado}
+
+**Pós-traumático (fenômeno de COZEN).** Depois de uma fratura **metafisária proximal da tíbia**, a tíbia pode crescer em **valgo**; o capítulo cita uma incidência sugerida de **53%**, com a ressalva de que o denominador é desconhecido. O gesso moldado em varo é usado, mas **não há evidência de que previna**, e a **redução aberta para retirar partes moles interpostas também não preveniu**. O mais importante é **avisar os pais**, desde a fratura, e deixar claro que a deformidade não vem de tratamento mal feito. O valgo atinge o **máximo 1 a 2 anos depois** e **melhora espontaneamente** ao longo de anos; é sobretudo estético. Trata-se principalmente com **observação**; se for extremo ou progressivo, **crescimento guiado** (feito até 3 anos do início, evita a deformidade em Z). A **osteotomia é contraindicada até o começo da adolescência**, porque pode reproduzir o valgo.
+
+**Raquitismo.** Qualquer raquitismo pode dar valgo acentuado, mas classicamente a **osteodistrofia renal** é a que mais produz **valgo**: a doença óssea fica ativa na idade do **valgo fisiológico**. O **raquitismo hipofosfatêmico familiar** fica ativo no começo da infância, na idade do varo fisiológico, e tende ao **varo** (Fig. 18.43). O tratamento clínico vem primeiro; sem ele, a cirurgia tende a falhar. Órteses (KAFO, órteses de BLOUNT invertidas) são mal toleradas e raramente funcionam. O **crescimento guiado** é menos previsível, pela fise doente, e deve começar **assim que a deformidade aparecer**.
+
+**Outras causas.** Displasias espondiloepifisárias e metafisárias, com frouxidão articular que confunde a medida (artrografia e fixador externo ajudam); valgo assimétrico na displasia fibrosa, na encondromatose de OLLIER e na displasia fibrocartilaginosa focal do fêmur distal; e as **exostoses múltiplas**, com valgo simétrico que muitas vezes não precisa de tratamento. Nas exostoses, convém **adiar a retirada de uma exostose medial da tíbia proximal**, porque a ressecção pode acelerar o valgo, como no fenômeno de COZEN.
+
+!questoes central=pediatria-0486 relacionadas=pediatria-0818 treino=pediatria-1402,pediatria-1403
+conceito: Osteodistrofia renal produz valgo, porque fica ativa na idade do valgo; hipofosfatêmico tende ao varo; a fratura metafisária proximal da tíbia cresce em valgo, com máximo em 1 a 2 anos, melhora espontânea e osteotomia contraindicada.
+como: O TARO 2008 perguntou a condição mais associada ao joelho valgo infantil patológico; o TARO 2006, a sequela mais frequente da fratura proximal da tíbia na criança.
+armadilha: Atribuir o valgo pós-fratura a erro de tratamento e operar cedo, ou trocar a osteodistrofia renal pelo raquitismo hipofosfatêmico.
+alerta: O TARO 2006 (`pediatria-0818`) está sem gabarito oficial. O Tachdjian descreve o valgo depois da fratura metafisária proximal da tíbia, o que sustenta "Certo"; a questão fala em região proximal da diáfise.
+!fim
+
+# Tíbia vara: BLOUNT e displasia fibrocartilaginosa {radar=confirmado}
+
+**Definição.** A tíbia vara é um **retardo do crescimento da parte medial da fise proximal da tíbia**, com arqueamento persistente ou progressivo e, depois, alterações da epífise. A forma **infantil** começa antes dos 3 anos e é a mais comum; a **adolescente**, aos 8 anos ou mais; o Tachdjian reconhece também a **juvenil**, entre as duas. ERLACHER descreveu a doença em 1922 e BLOUNT, em 1937.
+
+**A criança típica.** Lembra a do varo fisiológico, mas costuma ser **obesa** (muitas vezes acima do percentil 95 de peso) e tem **impulso lateral** (lateral thrust) na marcha. Pelo princípio de HUETER-VOLKMANN, a compressão do planalto medial de uma criança de 2 anos pesada, com 20 graus de varo, basta para frear a fise medial. Além do varo, há **torção tibial interna** e **procurvato** (angulação de ápice anterior), que deve ser reconhecido e, se preciso, corrigido.
+
+**LANGENSKIÖLD.** Seis estágios radiográficos (1952), que avançam com a idade. Para ele, os **I e II** costumavam voltar ao normal com tratamento, os **III e IV** podiam voltar, e os **V e VI** recidivavam. Em populações não brancas, a classificação errou o prognóstico: os estágios apareceram mais cedo (até aos 17 meses), estágios II e III progrediram a VI apesar do tratamento, as meninas negras tiveram pior prognóstico, e o bom resultado previsível com uma osteotomia só veio **até os 4 anos**, e não até os 8.
+
+!tabela Conduta na tíbia vara infantil, segundo o estágio (cap. 18)
+| Situação | Conduta |
+| --- | --- |
+| diagnóstico confirmado | tratar logo; observar é inadequado |
+| menor de 3 anos, estágio I ou II | órtese por no máximo 1 ano (sucesso em até metade, melhor se unilateral) |
+| sem correção com órtese | osteotomia antes dos 4 anos, com bom resultado em quase 90% |
+| estágios I, II e talvez III | crescimento guiado é alternativa (contraindicado com barra irressecável) |
+| estágio III depois dos 4 anos | osteotomia pode funcionar, com risco de recidiva crescente |
+| estágios IV e V, menor de 10 anos, 2 anos ou mais de crescimento | realinhamento com epifisiólise medial |
+| estágio VI com ponte e pouco crescimento | osteotomia, fechamento completo da fise e equalização do comprimento |
+!fim
+
+**A osteotomia.** **Hipercorrigir** o eixo mecânico para **pelo menos 5 graus de valgo** e **lateralizar** o fragmento distal; corrigir a **torção interna** rodando externamente o fragmento distal; **osteotomia da fíbula** por incisão separada, poupando os ramos motores do fibular; fixação interna, porque o gesso sozinho falha; e **fasciotomia profilática** dos compartimentos anterior, lateral e posterior, pela incidência alta de síndrome compartimental. Nos estágios **IV e V**, a fise medial já se comporta como uma **parada parcial**, e a osteotomia isolada recidiva; nos operados antes dos 7 anos com epifisiólise, 80% depois só precisaram de correção angular.
+
+**Displasia fibrocartilaginosa focal.** Descrita por BELL em 1985, é rara e benigna. O varo é **abrupto, na transição metáfise-diáfise**, **sem envolver a fise**, com **esclerose da cortical medial** e uma **lucência** logo acima, que corresponde ao tecido fibrocartilaginoso na **inserção da pata de ganso** (Box 18.3). A criança pode ter aparente hiperextensão do joelho. **Pouco mais da metade corrige sozinha**, sobretudo com **varo abaixo de 30 graus**; a conduta de consenso é **não operatória** (observação ou órtese), com osteotomia só se houver progressão ou falta de melhora. Pode surgir discrepância de comprimento.
+
+!questoes central=pediatria-0726 relacionadas=pediatria-0806,pediatria-0805 treino=pediatria-1400,pediatria-1401,pediatria-1410
+conceito: BLOUNT é a fise medial freada pela compressão: obeso, impulso lateral, varo com torção interna e procurvato; órtese só antes dos 3 anos, osteotomia com hipercorreção e rotação externa antes dos 4; IV e V já se comportam como parada. A displasia fibrocartilaginosa poupa a fise e costuma corrigir sozinha.
+como: O TARO 2007 perguntou as deformidades associadas ao BLOUNT; o TARO 2006, se a osteotomia aos 4 anos corrige só o ângulo e se a displasia fibrocartilaginosa inicial deve ser ressecada.
+armadilha: Usar o limite antigo de 8 anos de LANGENSKIÖLD, esquecer a rotação do fragmento distal ou operar a displasia fibrocartilaginosa que vai se corrigir.
+alerta: As três questões do TARO (`pediatria-0726`, `pediatria-0806` e `pediatria-0805`) estão sem gabarito oficial. O Tachdjian descreve torção tibial interna e procurvato no BLOUNT, sem usar os termos joelho recurvado ou flexo; recomenda corrigir a torção interna na osteotomia, o que sustenta "Errado" na 0806; e trata a displasia fibrocartilaginosa sem ressecção, o que sustenta "Errado" na 0805.
+!fim
+
+# Perfil rotacional: anteversão femoral e torção tibial {radar=confirmado}
+
+**O exame de STAHELI.** Em decúbito ventral, avalia-se a **rotação interna e externa do quadril** (que estimam a anteversão), o **ângulo coxa-pé** (que estima a torção tibial) e a **borda lateral do pé** (que mostra o metatarso aduto). Na marcha, mede-se o **ângulo de progressão do pé**. As três causas benignas mais comuns de marcha em rotação interna são **metatarso aduto**, **torção tibial interna** e **anteversão femoral aumentada** (Tachdjian, cap. 4). No Lovell and Winter, o ângulo de progressão do pé entre 1 e 4 anos varia de **15 graus para dentro a 25 graus para fora**, e o ângulo coxa-pé normal vai de 25 graus para dentro a 25 graus para fora; no adulto, a progressão normal é de 10 a 15 graus para fora.
+
+**Anteversão femoral** (cap. 17, p. 625). É **máxima na infância**, cerca de **40 graus no lactente**, e cai para **16 graus no adulto**. SHANDS e STEELE encontraram 39 graus entre 3 e 12 meses, 31 graus ao fim do segundo ano e uma queda de 1 a 2 graus por ano até 24 graus aos 10 anos; FABRY, acompanhando 1148 quadris, viu a anteversão ir de 40 graus ao nascer a 16 graus aos 16 anos. Com a anteversão aumentada, a criança anda com o quadril rodado para dentro, **patelas rodadas medialmente** e pés para dentro, a não ser que uma torção tibial externa compense. No exame, **rotação interna excessiva** e **rotação externa diminuída**. A maioria **melhora com o crescimento**. Tônus aumentado (paralisia cerebral) retarda a redução; obesos costumam ter anteversão menor. A relação com artrose de quadril e joelho não foi demonstrada.
+
+**Tratamento da anteversão.** Explicar aos pais que a marcha em rotação interna é comum e **não melhora com exercícios, órteses, modo de sentar ou broncas**; FABRY não viu benefício da goteira de DENIS BROWNE nem dos cabos torcionais. As **indicações de STAHELI** para a osteotomia: **mais de 8 anos**, incapacidade estética e funcional importante, **anteversão acima de 50 graus**, **rotação interna acima de 85 e externa abaixo de 10 graus**, e família ciente dos riscos. As séries de osteotomias derrotativas têm complicações importantes; HERRING prefere as **proximais**.
+
+**Torção tibial** (cap. 18, Tibial Torsion). No feto, o pé está rodado medialmente; o **maléolo medial** está atrás do lateral no feto precoce, **no mesmo nível ao nascer** e **à frente** na idade da marcha. O ângulo bimaleolar vai de **cerca de 5 graus ao nascer** a **15 graus na maturidade**. A torção tibial é a **causa mais comum de marcha em rotação interna ou externa até os 7 anos**; depois, o fêmur passa a pesar mais. A torção interna costuma aparecer **por volta dos 12 meses**, quando se desfaz a contratura em rotação externa do quadril do recém-nascido; marcha em rotação interna no lactente sugere metatarso aduto. O tratamento é **observação e orientação**; órteses são ineficazes, e a **goteira de DENIS BROWNE pode causar valgo** ou torção lateral excessiva. Deformidade moderada a grave que não se resolve pede atenção para **paralisia cerebral**. A osteotomia é rara: **mais de 15 graus de progressão interna ou 30 graus externa aos 8 anos ou mais**, com prejuízo real, feita na **região supramaleolar**; a osteotomia rotacional **proximal** da tíbia é **contraindicada**.
+
+**Síndrome de malalinhamento torcional.** Anteversão femoral aumentada com torção tibial externa: marcha desajeitada e sintomas patelofemorais. A maioria é tratada sem cirurgia; quando se opera, é preciso corrigir fêmur e tíbia.
+
+!questoes central=pediatria-0440 relacionadas=pediatria-0776,pediatria-0778,pediatria-0311,pediatria-0349,pediatria-0200,pediatria-0073 treino=pediatria-1404,pediatria-1405
+conceito: Anteversão de 40 graus no lactente a 16 no adulto, com rotação interna excessiva e externa pequena no exame em decúbito ventral; a tíbia roda lateralmente com o crescimento (bimaleolar de 5 a 15 graus); quase tudo melhora sozinho, e órteses não ajudam.
+como: O TARO pediu a anteversão aos 6 meses com a rotação da tíbia, a anteversão ao nascer e aos 16 anos e o sentido da rotação lateral do quadril com a idade; a SBOT-SP, o ângulo coxa-pé aos 2 e 8 anos; o TEPOP 2024, o ângulo de progressão do pé de 1 a 4 anos; o TARO 2023 mostrou o teste do ângulo coxa-pé; o TARO 2015 associou a rotação interna da perna ao pé torto.
+armadilha: Achar que a anteversão aumenta com a idade, prescrever DENIS BROWNE para torção tibial ou indicar osteotomia proximal da tíbia.
+alerta: As questões do TARO 2009 (`pediatria-0776` e `pediatria-0778`) estão sem gabarito oficial. O Tachdjian sustenta 40 graus ao nascer e 16 aos 16 anos, e a redução da anteversão com aumento da rotação lateral do quadril. Os valores médios do ângulo coxa-pé aos 2 e 8 anos (`pediatria-0311`) não aparecem nos capítulos lidos.
+!fim
+
+# Os encurvamentos congênitos da tíbia {radar=confirmado}
+
+O Tachdjian reconhece três (cap. 18, Bowing of the Tibia), e o lado para onde o ápice aponta decide o prognóstico:
+
+!tabela Encurvamentos congênitos da tíbia (cap. 18)
+| Ápice | Associação | Prognóstico |
+| --- | --- | --- |
+| anterolateral | pseudartrose ou displasia da tíbia, neurofibromatose | pode ameaçar o membro |
+| posteromedial | pé em calcâneo, contratura em dorsiflexão | benigno; deixa discrepância |
+| anterior ou anteromedial | deficiência congênita da fíbula | o da hemimelia fibular |
+!fim
+
+**O posteromedial.** Benigno, presente ao nascer, atribuído à **má posição intrauterina**, com até **60 graus** de angulação, panturrilha mais fina e às vezes uma covinha na pele no ápice. Costuma ser isolado. O arco se **resolve espontaneamente**, muitas vezes nos **primeiros 6 meses**; o pé melhora até os 9 meses; aos 2 anos, a angulação residual é mínima. A **discrepância de comprimento** é o que fica: **frequentemente acima de 2,5 cm**, em média **13% do comprimento do membro**. O encunhamento da epífise distal da tíbia pode deixar o tornozelo em valgo, por isso a criança é seguida **até a maturidade**.
+
+**Tratamento.** Alongamento suave da contratura em dorsiflexão (nos graves, gesso seriado em flexão plantar e órtese até a marcha); a manipulação pelos pais costuma bastar, e não se precisa de órtese depois da marcha. A **osteotomia** fica para o **encurvamento residual importante depois dos 3 a 4 anos**; o osso **consolida normalmente, sem risco de pseudartrose**. A discrepância é tratada em geral por **epifisiodese contralateral**; se a previsão passar de **5 cm**, considera-se o **alongamento da tíbia**.
+
+!questoes central=pediatria-0098 relacionadas=pediatria-0032,pediatria-0423,pediatria-0338,pediatria-0669 treino=pediatria-1406
+conceito: Posteromedial é benigno, com pé em calcâneo valgo, corrige o ângulo sozinho e deixa discrepância; anterolateral é o da pseudartrose e da neurofibromatose; anteromedial, o da hemimelia fibular.
+como: O TEOT 2022 perguntou a associação do defeito posteromedial; o TARO 2018, a evolução do ângulo e do comprimento; o TEPOP 2024, o tratamento; o TARO 2013, o encurvamento associado à pseudartrose.
+armadilha: Associar o encurvamento posteromedial à pseudartrose ou à neurofibromatose, que são do anterolateral.
+alerta: O gabarito oficial do TARO 2010 (`pediatria-0423`) é "pseudartrose" para a curvatura congênita posteromedial. O Tachdjian descreve o posteromedial como benigno, associado ao pé em calcâneo, e diz que a osteotomia não tem risco de pseudartrose; a associação com a pseudartrose é do encurvamento anterolateral. O gabarito oficial foi mantido.
+!fim
+
+# Coxa vara do desenvolvimento {radar=confirmado}
+
+**Definição** (cap. 16, p. 616). Defeito **cartilaginoso primário do colo femoral**, com **ângulo cervicodiafisário diminuído**, **colo curto**, **hipercrescimento relativo do trocanter maior** e **encurtamento do membro**. Não aparece ao nascer: a criança se apresenta **depois da idade da marcha**, às vezes só na adolescência. O termo **do desenvolvimento** fica para a forma pós-natal sem outra causa, com encurtamento discreto e radiografia característica, associada ou não a displasia esquelética; a coxa vara adquirida e a da deficiência femoral são entidades à parte.
+
+**Epidemiologia.** Cerca de **1 em 25.000** nascidos vivos (JOHANNING), **sem predileção racial** e **igual nos dois sexos**. Associa-se a displasias **autossômicas dominantes**: **disostose cleidocraniana**, **disostose metafisária de JANSEN** e **displasia espondilometafisária** (sobretudo KOZLOWSKI). Os bilaterais são os que mais se associam a displasia generalizada.
+
+**Clínica.** **Claudicação indolor** (TRENDELENBURG e discrepância pequena), às vezes cansaço ou dor glútea; nos bilaterais, marcha anserina. **Abdução e rotação interna limitadas**, TRENDELENBURG positivo, **sem telescopagem nem ORTOLANI**. O encurtamento raramente passa de **3 cm** na maturidade.
+
+**Radiografia** (p. 617). Ângulo cervicodiafisário diminuído, **fise alargada e vertical** e, de forma característica, um **fragmento triangular na parte medial do colo**, junto à fise, **entre duas faixas radiotransparentes em V invertido**: a superior é a fise; a inferior, uma área de maturação defeituosa (Fig. 16.1). A **displasia acetabular** acompanha e piora com o varo. A causa provável é um defeito primário da ossificação endocondral da parte medial do colo. O ângulo cervicodiafisário médio é de 148 graus com 1 ano e cai para 120 graus no adulto.
+
+!tabela Ângulo de HILGENREINER-epifisário (WEINSTEIN), cap. 16
+| Ângulo | Conduta |
+| --- | --- |
+| normal: 0 a 25 graus (média 16) | nenhuma |
+| abaixo de 45 graus | observar; discrepância e displasia esquelética |
+| 45 a 59 graus | prognóstico indeterminado: radiografias seriadas, cirurgia se sintomas ou progressão |
+| 60 graus ou mais | osteotomia valgizante |
+!fim
+
+**Tratamento** (p. 619). Órtese em abdução, tração e exercícios **provavelmente não funcionam**. A **osteotomia valgizante** do fêmur proximal, **intertrocantérica ou subtrocantérica**, é o **único tratamento cirúrgico definitivo adequado**: corrige o varo, **põe a fise na horizontal** (aliviando o cisalhamento que PAUWELS descreveu) e estimula a ossificação do defeito. A **epifisiodese isolada do trocanter maior** foi desaconselhada pelos próprios LANGENSKIÖLD e SALENIUS; **pinos e enxerto no colo** sem corrigir o varo falharam. A técnica de **BORDEN** é uma osteotomia **intertrocantérica** com lâmina-placa de **140 graus**; os autores preferem placas bloqueadas ou parafuso deslizante. A cirurgia é feita assim que a ossificação permitir uma fixação segura, porque a displasia acetabular piora com a idade. A **recidiva** vai de **30% a 70%** e diminui quando o ângulo de HILGENREINER-epifisário fica **abaixo de 38 a 40 graus** (CARROLL, CORDES); DESAI e JOHNSON associaram bons resultados em 20 anos a 35 graus ou menos com cervicodiafisário de 130 graus ou mais. Nas condrodisplasias com ossificação muito ruim, a recidiva é alta.
+
+!questoes central=pediatria-0085 relacionadas=pediatria-0443,pediatria-0490,pediatria-0281,pediatria-0201,pediatria-0049,pediatria-0407,pediatria-0247,pediatria-0094 treino=pediatria-1407,pediatria-1408,pediatria-1409
+conceito: Defeito primário do colo com V invertido e fise vertical; sem predileção por raça ou sexo, associada à cleidocraniana; abdução e rotação interna limitadas, sem dor; HILGENREINER-epifisário acima de 60 opera, abaixo de 45 observa; a osteotomia valgizante, como a intertrocantérica de BORDEN, é o tratamento definitivo.
+como: O TARO 2014 pediu o achado radiográfico característico; o TARO 2024, o nível da osteotomia de BORDEN; o TARO 2023, a epidemiologia; o TARO 2017, os movimentos limitados; o TARO 2012, a indicação cirúrgica; o TEOT 2024, a associação mais frequente; o TEOT 2022, o tratamento definitivo; o TARO, o caso clínico do menino de 4 anos e a parte do fêmur acometida.
+armadilha: Dizer que acomete mais meninos caucasianos, esperar dor e ORTOLANI, ou escolher a epifisiodese do trocanter como tratamento definitivo.
+alerta: O gabarito do TARO 2012 (`pediatria-0407`) indica cirurgia com ângulo cervicodiafisário abaixo de 100 graus e HILGENREINER-epifisário acima de 60. O Tachdjian sustenta o limite de 60 graus; o valor de 100 graus para o ângulo cervicodiafisário não aparece no capítulo lido.
+!fim
+
+# Fechamento {radar=fundamento}
+
+Quase toda a ortopedia deste resumo começa com a mesma frase para os pais: **é normal para a idade, e vamos reavaliar**. O que separa o normal do patológico é a **idade fora da curva** (varo depois dos 2 anos, valgo excessivo depois dos 8), a **assimetria**, a **baixa estatura**, a **progressão** e os achados que não cabem na variação normal: obesidade com impulso lateral, fise alterada, V invertido no colo, ápice anterolateral na tíbia.
+
+> **Na prova:** **normal**: varo até 2 anos, valgo de 2 a 8 (máximo 2 a 4), anteversão que cai de 40 a 16 graus, torção tibial que roda para fora; **patológico**: BLOUNT (osteotomia **antes dos 4 anos**, hipercorrigir), valgo da **osteodistrofia renal**, COZEN (**observar**), encurvamento **anterolateral** (pseudartrose), coxa vara com HILGENREINER-epifisário **acima de 60**.
