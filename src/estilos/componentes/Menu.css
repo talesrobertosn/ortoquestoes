@@ -122,7 +122,7 @@ a.mn-aba:hover, button.mn-aba:hover, .mn-aba:focus-visible { transform: translat
 .mn-faixa__cadeado { flex: none; display: grid; place-items: center; width: 20px; height: 20px; background: var(--mn-ouro); color: var(--mn-contorno); box-shadow: inset 0 0 0 2px var(--mn-contorno), inset 0 3px 0 #ffe39a; }
 .mn-faixa:hover, .mn-faixa:focus-visible { border-color: var(--mn-contorno); background: var(--cor); color: #fff8e6; outline: 0; box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25), inset 0 -3px 0 rgba(0, 0, 0, 0.2); }
 .mn-faixa:hover .mn-faixa__seta, .mn-faixa:focus-visible .mn-faixa__seta { opacity: 1; transform: none; color: #fff8e6; }
-.mn-faixa[aria-current="page"] { border-color: var(--mn-contorno); background: #fbf1d6; }
+.mn-faixa[aria-current="page"]:not(:hover):not(:focus-visible) { border-color: var(--mn-contorno); background: #fbf1d6; }
 .mn-faixa[aria-current="page"]::before { content: ""; position: absolute; left: -13px; top: 50%; width: 8px; height: 12px; margin-top: -6px; background: var(--mn-tinta); clip-path: polygon(0 0, 100% 50%, 0 100%); }
 
 /* A busca vira uma etiqueta de papel. */
