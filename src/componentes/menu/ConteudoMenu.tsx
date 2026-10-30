@@ -104,6 +104,7 @@ const SINONIMOS: Record<string, string> = {
 }
 /** Páginas que não estão no menu, mas que a busca deve achar. */
 const EXTRAS_BUSCA: PaginaBusca[] = [
+  { destino: '/indicar', rotulo: 'Indique e ganhe', texto: '7 dias do plano completo para você e o colega', icone: 'grupo', chaves: 'indicar convite amigo colega ganhar dias gratis' },
   { destino: '/resumos/frases', rotulo: 'Frases que caem', texto: 'Uma frase por assunto, dos comentários das questões de prova', icone: 'livro', chaves: 'resumao frases na prova vespera' },
   { destino: '/resumos/caderno', rotulo: 'Meu caderno de estudo', texto: 'Seus destaques e notas dos resumos', icone: 'lapis', chaves: 'marcacoes notas grifos destaques' },
   { destino: '/conquistas', rotulo: 'Conquistas e emblemas', texto: 'Inventário de emblemas e vitrine', icone: 'medalha', chaves: 'emblemas medalhas trofeus' },

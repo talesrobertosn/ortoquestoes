@@ -182,6 +182,7 @@
 @media (max-width: 40rem) { .mn-hoje ul { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { .mn-item, .mn-principal__icone, .mn-hoje__cartao { transition: none; } .mn-item:hover { transform: none; } }
 
-/* Os cinco cartões do dia a dia numa fileira no computador; no celular, o que sobra ocupa a fileira toda. */
-@media (min-width: 40.01rem) { .mn-principais { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
-@media (max-width: 40rem) { .mn-principal:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+/* Os cinco cartões do dia a dia numa fileira na janela do computador; no painel lateral (celular e telas médias),
+   duas colunas e o que sobra ocupa a fileira toda. */
+.mn-janela .mn-principais { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.painel .mn-principal:last-child:nth-child(odd) { grid-column: 1 / -1; }
