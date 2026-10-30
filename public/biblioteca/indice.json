@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-29",
+ "geradoEm": "2026-10-30",
  "capitulos": [
   {
    "id": "netter-anatomia-mao-punho-antebraco",
@@ -6745,6 +6745,109 @@
     "pediatria-1019"
    ],
    "subtemas": []
+  },
+  {
+   "id": "tachdjian6-alinhamento-torcoes-coxa-vara",
+   "versao": 1,
+   "titulo": "Alinhamento, torções e coxa vara na criança",
+   "especialidade": "pediatria",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021)",
+   "capitulo": "Capítulo 16 · Congenital Coxa Vara, Capítulo 17 · Disorders of the Femur e Capítulo 18 · Disorders of the Leg",
+   "resumo": "Curva do alinhamento (varo máximo 6 a 12 meses, neutro 18 a 24, valgo máximo 2 a 4 anos, adulto aos 8); valgo patológico (osteodistrofia renal, COZEN, displasias, exostoses); BLOUNT (obeso, impulso lateral, torção interna e procurvato, LANGENSKIÖLD, órtese antes dos 3 anos, osteotomia com hipercorreção antes dos 4, epifisiólise nos estágios IV e V); displasia fibrocartilaginosa focal; perfil de STAHELI, anteversão de 40 a 16 graus, torção tibial e indicações de osteotomia; encurvamentos anterolateral, posteromedial e anteromedial; coxa vara do desenvolvimento (V invertido, HILGENREINER-epifisário 45 e 60, osteotomia valgizante, BORDEN, recidiva).",
+   "acesso": "gratis",
+   "minutos": 16,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-alinhamento-angular-normal",
+     "titulo": "O alinhamento angular normal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "geno-valgo-patologico",
+     "titulo": "Geno valgo patológico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tibia-vara-blount-e-displasia-fibrocartilaginosa",
+     "titulo": "Tíbia vara: BLOUNT e displasia fibrocartilaginosa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "perfil-rotacional-anteversao-femoral-e-torcao-ti",
+     "titulo": "Perfil rotacional: anteversão femoral e torção tibial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-encurvamentos-congenitos-da-tibia",
+     "titulo": "Os encurvamentos congênitos da tíbia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coxa-vara-do-desenvolvimento",
+     "titulo": "Coxa vara do desenvolvimento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0112",
+    "pediatria-0264",
+    "pediatria-0486",
+    "pediatria-0818",
+    "pediatria-0726",
+    "pediatria-0806",
+    "pediatria-0805",
+    "pediatria-0440",
+    "pediatria-0776",
+    "pediatria-0778",
+    "pediatria-0311",
+    "pediatria-0349",
+    "pediatria-0200",
+    "pediatria-0073",
+    "pediatria-0098",
+    "pediatria-0032",
+    "pediatria-0423",
+    "pediatria-0338",
+    "pediatria-0669",
+    "pediatria-0085",
+    "pediatria-0443",
+    "pediatria-0490",
+    "pediatria-0281",
+    "pediatria-0201",
+    "pediatria-0049",
+    "pediatria-0407",
+    "pediatria-0247",
+    "pediatria-0094"
+   ],
+   "treino": [
+    "pediatria-1399",
+    "pediatria-1402",
+    "pediatria-1403",
+    "pediatria-1400",
+    "pediatria-1401",
+    "pediatria-1410",
+    "pediatria-1404",
+    "pediatria-1405",
+    "pediatria-1406",
+    "pediatria-1407",
+    "pediatria-1408",
+    "pediatria-1409"
+   ],
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções",
+    "Tíbia vara (Blount)",
+    "Coxa vara do desenvolvimento"
+   ]
   },
   {
    "id": "wilkins9-08-radio-ulna-distal-crianca",
