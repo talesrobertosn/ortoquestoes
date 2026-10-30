@@ -52,12 +52,14 @@ e confira cada resultado antes de usar.
 
 ## O mascote
 
-`src/componentes/mascote/` — esqueleto chibi original em SVG, montado por articulações (pescoço, mandíbula, ombros,
-cotovelos, punhos, quadris, joelhos). Use `<Mascote />` em qualquer tela: `comportamento` fixo, `fantasia`
-(`halloween` em outubro, automático), `falar={false}`, `interativo={false}` (dentro de link). Comportamentos em
-`comportamentos.ts`, animações em `Mascote.css`, falas em `falas.ts`. Ele **não** usa touca e **não** aparece como um
-esqueleto realista grande (o Tales recusou os dois). Novo comportamento = objeto preso na mão certa + keyframes das
-articulações + 8 a 10 falas.
+Esqueletinho original de armadura (crânio grande com rachadura, órbitas pretas grandes, expressão séria, ombreira,
+cinto e pano vermelho), em pixel art HD-2D: `scripts/gerar_mascote.py` gera `public/pixel/mascote/esqueleto.png`
+(uma linha por comportamento, 8 quadros de 96 x 128) e `gato.png`; a lista das linhas fica em
+`src/componentes/mascote/sprites.ts`. Use `<Mascote />` em qualquer tela: `comportamento` fixo, `fantasia`
+(`halloween` em outubro, automático: manto de capuz, foice, lanterna de abóbora, castiçal e morcegos), `falar={false}`,
+`interativo={false}` (dentro de link). Falas em `falas.ts`. O Tales recusou: touca, sorriso/expressão feliz, bochecha
+rosada, esqueleto realista grande, versão vetorial "chapada" e sorvete. Comportamento novo = nova linha no script +
+`sprites.ts` + 8 a 10 falas. No cenário, o mascote e o gato recebem a luz da hora do dia (filtros em `InicioHd.css`).
 
 ## Montar na tela
 

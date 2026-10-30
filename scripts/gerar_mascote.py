@@ -254,27 +254,27 @@ MATS: dict[str, Mat] = {
     "osso": Mat(rampa("#2a2030", "#45343f", "#67524b", "#8b725a", "#ae9472", "#cbb68e", "#e3d3ac", "#f6edd2"), hx("#1a1118"), rim=0.5, tex=0.07),
     "dente": Mat(rampa("#4a3a42", "#8d7a66", "#c9b896", "#e9dcbb", "#fbf4e0"), hx("#1a1118"), rim=0.2, tex=0.03),
     "interior": Mat(rampa("#0e0910", "#170f19", "#211723", "#2e2129", "#3c2c30"), hx("#0c070c"), rim=0.0, amb=0.45, kd=0.5),
-    "orbita": Mat(rampa("#040206", "#08050b", "#0e0912", "#16101a", "#211823", "#30232c"), hx("#0c070c"), rim=0.0, amb=0.2, kd=0.8),
+    "orbita": Mat(rampa("#040206", "#08050b", "#0e0912", "#16101a", "#211823", "#30232c"), hx("#0c070c"), rim=0.0, amb=0.2, kd=0.8, luz_pontual=0.2),
     "brilho": Mat(rampa("#26343e", "#4d6a78", "#86a8b4", "#c8dde0"), TINTA, emite=True, bloom=0.0),
     # armadura
-    "aco": Mat(rampa("#16161e", "#262833", "#3a3e4a", "#535a66", "#717a84", "#939ca3", "#b8c0c2", "#e2e6e2"), hx("#0e0d14"), rim=0.55, tex=0.06, brilho=0.9),
+    "aco": Mat(rampa("#16161e", "#262833", "#3a3e4a", "#535a66", "#717a84", "#939ca3", "#b8c0c2", "#e2e6e2"), hx("#0e0d14"), rim=0.55, tex=0.02, brilho=0.9),
     "ferrugem": Mat(rampa("#2a120c", "#4a2214", "#6e3a1e", "#93552a", "#b0733a"), hx("#140a08"), rim=0.2, tex=0.12),
     "couro": Mat(rampa("#1a0f0c", "#2c1a13", "#43281b", "#5c3824", "#784a2e", "#93603a", "#ad7a4c"), hx("#120a08"), rim=0.35, tex=0.08),
     "latao": Mat(rampa("#2a1a08", "#4f3410", "#7a5418", "#a87a26", "#d2a83c", "#f0d670", "#fff4b8"), hx("#170e05"), rim=0.3, brilho=1.0),
     "pano": Mat(rampa("#1a080c", "#2e0d14", "#47121c", "#621a24", "#7e252c", "#9a3536", "#b44c44"), hx("#12060a"), rim=0.4, tex=0.06),
-    "capa": Mat(rampa("#0d0716", "#170d24", "#221333", "#2f1a45", "#3e2358", "#4f2e6c", "#653e82", "#7f5798"), hx("#08040e"), rim=0.55, tex=0.05),
-    "forro": Mat(rampa("#07040b", "#0d0812", "#150d1c", "#1e1428"), hx("#05030a"), rim=0.0, amb=0.5, kd=0.4),
+    "capa": Mat(rampa("#0d0716", "#170d24", "#221333", "#2f1a45", "#3e2358", "#4f2e6c", "#653e82", "#7f5798"), hx("#08040e"), rim=0.55, tex=0.05, luz_pontual=0.55),
+    "forro": Mat(rampa("#07040b", "#0d0812", "#150d1c", "#1e1428"), hx("#05030a"), rim=0.0, amb=0.5, kd=0.4, luz_pontual=0.4),
     # objetos
     "madeira": Mat(rampa("#1c100a", "#311c10", "#4c2e18", "#6a4322", "#8a5c30", "#a87642", "#c49358"), hx("#120a06"), rim=0.3, tex=0.1),
     "papel": Mat(rampa("#5a4a3e", "#8f7c66", "#bba88a", "#dccbaa", "#efe4c8", "#fbf6e6"), hx("#22160f"), rim=0.15, tex=0.03),
-    "tinta": Mat(rampa("#3a2c2a", "#5a4840", "#7a6656"), hx("#22160f"), rim=0.0),
-    "capa_livro": Mat(rampa("#14080a", "#2a0e12", "#45161a", "#622024", "#80302e", "#9c443c"), hx("#100507"), rim=0.35, tex=0.05),
-    "caneca": Mat(rampa("#141c26", "#1f2e3e", "#2c4458", "#3d5e76", "#557c94", "#7ea0b2", "#b4ccd4"), hx("#0b1018"), rim=0.4, brilho=0.6),
+    "tinta": Mat(rampa("#2a1e1e", "#3e2e2a", "#5a4638"), hx("#22160f"), rim=0.0, amb=0.2, kd=0.5),
+    "capa_livro": Mat(rampa("#061214", "#0b2226", "#12343a", "#1a4a50", "#246468", "#348080"), hx("#030a0c"), rim=0.35, tex=0.05),
+    "caneca": Mat(rampa("#200608", "#3e0c10", "#621418", "#8a2020", "#b0322a", "#d24e3a", "#ee7a5a"), hx("#120304"), rim=0.4, brilho=0.6),
     "cafe": Mat(rampa("#120804", "#26140a", "#3e2414", "#5a3820"), hx("#0c0604"), rim=0.0, brilho=0.4),
     "filme": Mat(rampa("#0a1220", "#0f1c30", "#16283f", "#203852", "#2c4a66"), hx("#05080f"), rim=0.2, brilho=0.3),
     "raiox": Mat(rampa("#2a4a6a", "#5084aa", "#8cc0dc", "#cbeaf6", "#f4ffff"), hx("#05080f"), emite=True, bloom=0.35),
     "marsh": Mat(rampa("#5a3a28", "#8a5a36", "#b88048", "#d8a868", "#ecd0a0", "#f8ecd8", "#fffaf0"), hx("#22140c"), rim=0.2),
-    "borracha": Mat(rampa("#2a0a0c", "#4a1014", "#6e1a1c", "#962826", "#bc3c32", "#dc5c48"), hx("#140506"), rim=0.35, brilho=0.4),
+    "borracha": Mat(rampa("#3a1010", "#6a1e1a", "#a0342a", "#d4523c", "#f07a5a", "#ffa880"), hx("#1a0606"), rim=0.35, brilho=0.4),
     "abobora": Mat(rampa("#2a0e04", "#4a1a06", "#74300a", "#a0480e", "#c86414", "#e8862a", "#f8aa50"), hx("#160702"), rim=0.35, tex=0.06),
     "talo": Mat(rampa("#14180a", "#262c10", "#3c4418", "#566024"), hx("#0a0c04"), rim=0.2),
     "chama": Mat(rampa("#7a2008", "#c84a10", "#f08a20", "#ffc040", "#ffe890", "#fffbe8"), hx("#3a1004"), emite=True, bloom=0.8),
@@ -468,8 +468,8 @@ class Tela:
                 at = np.clip(1 - dist / lr, 0, 1) ** 1.5
                 k = np.floor(lam * at * lf * 5) / 5
                 soma += k[..., None] * lc
-            emis = np.array([MATS[nm].emite for nm in NOMES_MAT] + [True])[self.mat]
-            fator = np.where(cheio & ~emis, 1.0, 0.0)[..., None]
+            resp_luz = np.array([0.0 if MATS[nm].emite else MATS[nm].luz_pontual for nm in NOMES_MAT] + [0.0])[self.mat]
+            fator = np.where(cheio, resp_luz, 0.0)[..., None]
             out = out + soma * fator * (0.35 + out)
         # linhas internas: a peça de trás ganha um traço escuro onde a da frente começa
         cont = np.zeros((h, w), bool)
@@ -554,6 +554,7 @@ class Pose:
     pano: float = 0.0              # balanço do saiote e da capa
     capa: bool = False
     sombra: bool = True
+    olhar: tuple = (0.0, 0.0)      # para onde vai o brilho no fundo das órbitas
 
 
 def _dir(a, s):
@@ -711,26 +712,34 @@ def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
         t.pinta(arco, "osso", 0, sobre="cranio", tom=0.1, uv=uv, semente=51, normal=False)
         # brilho fraco e frio, quase apagado, no fundo
         if p.brilho > 0:
-            gx = cx + sx * -1.3 + v * 1.2
-            t.pinta(q.forma(circulo((gx, 6.4), 1.05)), "brilho", 8.02, pid="cranio", tom=0.3 * p.brilho, sem_contorno=True)
-            t.pinta(q.forma(circulo((gx - 0.4, 5.9), 0.55)), "brilho", 8.03, pid="cranio", tom=0.75 * p.brilho, sem_contorno=True)
-            gp = q.p(gx, 6.2)
+            gx = cx + sx * -1.3 + v * 1.2 + p.olhar[0]
+            gy = 6.4 + p.olhar[1]
+            t.pinta(q.forma(circulo((gx, gy), 1.05)), "brilho", 8.02, pid="cranio", tom=0.3 * p.brilho, sem_contorno=True)
+            t.pinta(q.forma(circulo((gx - 0.4, gy - 0.5), 0.55)), "brilho", 8.03, pid="cranio", tom=0.75 * p.brilho, sem_contorno=True)
+            gp = q.p(gx, gy)
             t.luz(gp[0], gp[1], 2.0, "#5d7f90", 6.5, 0.6 * p.brilho)
     # cavidade nasal pequena
     nz = (v * 2.4, 13.4)
     nariz = (circulo((nz[0] - 1.0, nz[1] - 0.6), 1.15) | circulo((nz[0] + 1.0, nz[1] - 0.6), 1.15)) | poligono([(nz[0] - 2.0, nz[1] - 0.4), (nz[0] + 2.0, nz[1] - 0.4), (nz[0], nz[1] + 2.0)])
     t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.2, pid="cranio", tom=0.1)
-    # boca: fileira curta e reta de dentes, fechada
+    # boca: fileira curta e reta de dentes, fechada. Cada dente é encaixado na grade de pixels (sem serrilhado)
     bx = v * 2.0
-    t.pinta(q.forma(caixa((bx, 18.9), 7.2, 2.7, r=1.0)), "orbita", 8.35, R=-1.0, pid="dentes_fundo", sem_contorno=True)
-    for k in range(-3, 3):
-        x0 = bx + k * 2.3 + 0.15
-        t.pinta(q.forma(caixa((x0 + 1.0, 17.55), 0.95, 1.35, r=0.4)), "dente", 8.4, R=0.9, pid="dentes", sem_contorno=True, tom=0.02)
-        t.pinta(q.forma(caixa((x0 + 1.0, 20.25), 0.95, 1.15, r=0.4)), "dente", 8.4, R=0.9, pid="dentes", sem_contorno=True, tom=-0.04)
+    t.pinta(q.forma(caixa((bx, 19.0), 8.6, 2.9, r=1.0)), "orbita", 8.35, R=-1.0, pid="dentes_fundo", sem_contorno=True)
+    rad = math.radians(q.ang)
+    for i in range(5):
+        lx = bx - 6.0 + i * 3.0
+        cx_, cy_ = q.p(lx, 17.4)
+        cx_, cy_ = round(cx_), round(cy_)
+        dx3, dy3 = round(-math.sin(rad) * 3.0), 3
+        t.pinta(caixa((cx_, cy_), 1.0, 1.0), "dente", 8.4, R=0.9, pid="dentes", sem_contorno=True, tom=0.04 if i != 0 else -0.04)
+        t.pinta(caixa((cx_ + dx3, cy_ + dy3), 1.0, 1.0), "dente", 8.4, R=0.9, pid="dentes", sem_contorno=True, tom=-0.06 if i != 4 else -0.14)
     if sob_capuz:
         # sombra do capuz no alto do crânio
-        t.pinta(q.forma(semiplano((0, -6), (0, 1))), "osso", 0, sobre="cranio", tom=lambda X, Y: -0.3 * np.ones_like(X), uv=uv, semente=51, normal=False)
-        t.pinta(q.forma(elipse((0, -12), 30, 9)), "osso", 0, sobre="cranio", tom=-0.42, uv=uv, semente=51, normal=False)
+        def sombra_capuz(X, Y):
+            _, vv = uv(X, Y)
+            return -0.62 * np.clip((4.0 - vv) / 20.0, 0, 1) ** 0.8
+        t.pinta(q.forma(semiplano((0, 6), (0, 1))), "osso", 0, sobre="cranio", tom=sombra_capuz, normal=False)
+        t.pinta(q.forma(semiplano((0, 6), (0, 1))), "osso", 0, sobre="mandibula", tom=sombra_capuz, normal=False)
 
 
 def tronco(t: Tela, r: Rig, p: Pose):
@@ -818,26 +827,28 @@ def armadura(t: Tela, r: Rig, p: Pose, capa=False):
         m = (a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k)
         ang = math.degrees(math.atan2(b[1] - a[1], b[0] - a[0]))
         t.pinta(caixa(m, 0.6, 2.25, r=0.3, ang=ang), "aco", zb + 0.02, R=0.8, pid="bracadeira_faixa", sem_contorno=True)
+    if capa:
+        return   # a ombreira fica por baixo da capa
     # ombreira de aço redonda, amassada, com rebites, ferrugem e arranhões, no ombro esquerdo (da tela)
     om = r.j["ombro_e"]
     a1 = p.be[0]
-    qo = Quadro2D((om[0] - 1.0, om[1] - 0.2), -(a1 - 14) * 0.35 + 14 + p.inclina * 0.5)
-    lam = elipse((0.3, 3.6), 6.6, 2.8) | elipse((0.6, 5.6), 5.4, 2.2)
-    t.pinta(qo.forma(lam), "aco", p.ze + 0.55, R=2.0, pid="ombreira2", semente=101, tom=-0.08)
-    dom = elipse((0, 0.2), 7.6, 4.9) - elipse((0, 5.8), 9.0, 1.6)
-    amassado = lambda X, Y: (0.0 * X, 0.0 * X)
-    t.pinta(qo.forma(dom), "aco", p.ze + 0.6, R=5.5, pid="ombreira", semente=102, uv=qo.uv())
-    t.pinta(qo.forma(elipse((0, 0.2), 7.6, 4.9) - elipse((0, -0.2), 6.3, 3.8)), "aco", 0, sobre="ombreira", tom=0.12, normal=False)
-    t.pinta(qo.forma(semiplano((0, 2.2), (0, -1))), "aco", 0, sobre="ombreira", tom=-0.18, normal=False)
-    d_c = qo.p(-1.8, 0.4)
-    t.pinta(circulo(d_c, 1.4), "aco", 0, sobre="ombreira", R=-1.6, tom=-0.05)          # amassado
-    for (x, y) in ((-4.2, 1.6), (0.0, 3.0), (4.2, 1.6)):
-        t.pinta(qo.forma(circulo((x, y), 0.6)), "aco", 0, sobre="ombreira", R=0.6, tom=0.15)
-    for (x, y, rr) in ((3.2, -1.8, 0.9), (-3.6, 3.0, 0.7), (1.6, 2.2, 0.6), (-0.5, -3.4, 0.5)):
-        t.pinta(qo.forma(circulo((x, y), rr).borda(0.3, 1.6, 7)), "ferrugem", 0, sobre="ombreira", R=0.8)
-    t.pinta(qo.forma(capsula((-2.6, -2.8), (1.2, -3.6), 0.35)), "aco", 0, sobre="ombreira", tom=0.3)
-    t.pinta(qo.forma(capsula((2.0, 0.6), (4.4, -0.8), 0.35)), "aco", 0, sobre="ombreira", tom=0.25)
-    t.pinta(qo.forma(capsula((2.4, 1.0), (4.6, -0.4), 0.3)), "aco", 0, sobre="ombreira", tom=-0.25)
+    qo = Quadro2D((om[0] - 1.6, om[1] - 0.4), -(a1 - 14) * 0.35 + 12 + p.inclina * 0.5)
+    uvo = qo.uv()
+    # lâmina de baixo (escalonada) e a cúpula com aba
+    t.pinta(qo.forma(elipse((0.4, 4.4), 7.4, 2.5)), "aco", p.ze + 0.55, R=2.0, pid="ombreira2", uv=uvo, semente=101, tom=-0.1)
+    dom = elipse((0, 0.6), 8.4, 4.9)
+    t.pinta(qo.forma(dom), "aco", p.ze + 0.6, R=6.5, pid="ombreira", semente=102, uv=uvo)
+    # aba (borda virada) clara em cima, sombra embaixo
+    t.pinta(qo.forma(dom - elipse((0, 0.0), 7.0, 3.7)), "aco", 0, sobre="ombreira", tom=0.1, normal=False)
+    t.pinta(qo.forma(elipse((0, 4.6), 8.4, 1.6)), "aco", 0, sobre="ombreira", tom=-0.2, normal=False)
+    # amassado: côncavo, com o lado de baixo claro
+    t.pinta(qo.forma(elipse((-2.4, 0.2), 1.6, 1.2)), "aco", 0, sobre="ombreira", R=-1.4, uv=uvo, semente=102)
+    for (x, y) in ((-5.4, 2.4), (0.0, 3.6), (5.4, 2.4)):
+        t.pinta(qo.forma(circulo((x, y), 0.65)), "aco", 0, sobre="ombreira", R=0.7, tom=0.12)
+    for (x, y, rr) in ((4.2, -1.6, 0.8), (-5.6, 3.8, 0.6), (2.0, 3.0, 0.45)):
+        t.pinta(qo.forma(circulo((x, y), rr)), "ferrugem", 0, sobre="ombreira", R=0.8)
+    t.pinta(qo.forma(capsula((-3.6, -2.8), (0.6, -3.6), 0.32)), "aco", 0, sobre="ombreira", tom=0.3, normal=False)
+    t.pinta(qo.forma(capsula((2.6, 0.4), (5.2, -1.0), 0.3)), "aco", 0, sobre="ombreira", tom=-0.3, normal=False)
     # tira que prende a ombreira e corre para a correia
     t.pinta(qo.forma(traco([(3.0, 2.0), (6.0, 4.0)], 0.9)), "couro", p.ze + 0.58, R=0.9, pid="tira_ombreira")
 
@@ -942,3 +953,667 @@ def capa(t: Tela, r: Rig, p: Pose):
     t.pinta(c.forma(fora - abertura), "capa", 9.0, R=5.0, pid="capuz", uv=c.uv(), relevo=rel_c, semente=130)
     t.pinta(c.forma(abertura.engrossa(1.3) - abertura), "forro", 0, sobre="capuz", R=-1.2)
     t.pinta(c.forma(elipse((-9, -22), 8.0, 4.0)), "capa", 0, sobre="capuz", tom=0.06, normal=False)
+
+
+# ═══════════════════════════════ objetos ═══════════════════════════════
+class _QuadroEsc(Quadro2D):
+    """Quadro com escala uniforme (para desenhar um objeto maior sem refazer as medidas)."""
+
+    def __init__(self, o, ang, k):
+        super().__init__(o, ang)
+        self.k = k
+
+    def p(self, x, y=None):
+        if y is None:
+            x, y = x
+        return super().p(x * self.k, y * self.k)
+
+    def forma(self, fl: Forma) -> Forma:
+        g, k = fl.f, self.k
+        x0, y0, x1, y1 = fl.bb
+        esc = Forma(lambda X, Y: g(X / k, Y / k) * k, (x0 * k, y0 * k, x1 * k, y1 * k))
+        return Quadro2D.forma(Quadro2D(self.o, self.ang), esc)
+
+    def uv(self):
+        f = Quadro2D(self.o, self.ang).uv()
+        return lambda X, Y: tuple(a / self.k for a in f(X, Y))
+
+
+def _escala(q: Quadro2D, k: float) -> Quadro2D:
+    return _QuadroEsc(q.o, q.ang, k)
+
+
+def espada(t: Tela, q: Quadro2D, z: float):
+    """Espada curta e gasta. Origem no meio do cabo; +y aponta para a ponta."""
+    q = Quadro2D(q.o, q.ang, 1.0)
+    q = _escala(q, 1.3)
+    uv = q.uv()
+    t.pinta(q.forma(circulo((0, -3.6), 1.35)), "latao", z, R=1.4, pid="espada_pomo")
+    t.pinta(q.forma(capsula((0, -2.6), (0, 2.4), 1.0)), "couro", z, R=1.0, pid="espada_cabo", uv=uv, semente=140)
+    for y in (-1.6, 0.0, 1.6):
+        t.pinta(q.forma(capsula((-1.0, y - 0.5), (1.0, y + 0.3), 0.3)), "couro", 0, sobre="espada_cabo", tom=-0.2, normal=False)
+    t.pinta(q.forma(caixa((0, 3.4), 4.2, 0.85, r=0.5) | circulo((-4.0, 3.2), 0.95) | circulo((4.0, 3.2), 0.95)), "aco", z + 0.05, R=1.0, pid="espada_guarda")
+    lam = poligono([(-1.7, 4.2), (1.7, 4.2), (1.55, 15.4), (0.0, 18.4), (-1.55, 15.4)])
+    lam = lam - circulo((1.9, 9.0), 0.6) - circulo((-1.9, 12.6), 0.55) - circulo((1.8, 13.8), 0.45)
+    t.pinta(q.forma(lam), "aco", z - 0.05, R=1.4, pid="espada_lamina", uv=uv, plano=(-0.35, -0.2, 0.9), semente=141)
+    t.pinta(q.forma(capsula((0.0, 5.0), (0.0, 14.0), 0.42)), "aco", 0, sobre="espada_lamina", tom=-0.22, normal=False)
+    t.pinta(q.forma(capsula((-0.9, 5.0), (-0.9, 14.4), 0.3)), "aco", 0, sobre="espada_lamina", tom=0.22, normal=False)
+    for (x, y, rr) in ((0.8, 6.4, 0.55), (-0.6, 10.8, 0.5), (0.7, 15.2, 0.45)):
+        t.pinta(q.forma(circulo((x, y), rr).borda(0.25, 1.8, 3)), "ferrugem", 0, sobre="espada_lamina", R=0.6)
+
+
+def livro(t: Tela, c, ang: float, virar: float, z: float):
+    """Livro aberto. virar em 0..1 = a folha da direita passando para a esquerda."""
+    q = Quadro2D(c, ang)
+    uv = q.uv()
+    capa_l = poligono([(-12.4, -3.4), (0, -1.4), (12.4, -3.4), (12.8, 6.4), (0, 8.4), (-12.8, 6.4)])
+    t.pinta(q.forma(capa_l), "capa_livro", z, R=1.2, pid="livro_capa", plano=(0, 0.45, 0.9))
+    for s_ in (-1, 1):
+        pts = bezier((0, -1.6), (s_ * 6, -4.8), (s_ * 11.6, -3.6), 6) + bezier((s_ * 11.9, 5.4), (s_ * 6, 4.6), (0, 7.0), 6)
+        t.pinta(q.forma(poligono(pts)), "papel", z + 0.1, R=-2.0 if False else 2.0, pid=f"livro_pag{s_}", plano=(s_ * -0.25, 0.4, 0.88), uv=uv, semente=150)
+        for k in range(4):
+            y0 = -1.0 + k * 1.75
+            x_a, x_b = s_ * 2.2, s_ * (9.6 if k != 3 else 6.0)
+            curva = 1.6 - k * 0.15
+            t.pinta(q.forma(traco([(x_a, y0 - 0.3), ((x_a + x_b) / 2, y0 - curva), (x_b, y0 - 0.9)], 0.42)), "tinta", 0, sobre=f"livro_pag{s_}", R=0.5)
+        # bloco de folhas (espessura) embaixo de cada página
+        t.pinta(q.forma(traco(bezier((s_ * 11.9, 5.6), (s_ * 6, 4.8), (0, 7.2), 6), 0.5)), "papel", z + 0.05, R=0.6, pid=f"livro_bloco{s_}", tom=-0.25)
+        if s_ < 0:   # figura: um fêmur desenhado na página esquerda, em vermelho
+            pass
+    t.pinta(q.forma(capsula((0, -1.4), (0, 7.4), 0.45)), "papel", z + 0.15, R=0.5, pid="livro_meio", tom=-0.35)
+    t.pinta(q.forma(traco([(0.6, -1.6), (1.2, 3.0), (0.8, 9.6)], 0.45)), "borracha", z + 0.16, R=0.5, pid="livro_fita")
+    if 0 < virar < 1:
+        # folha virando: comprime no x e sobe
+        k = math.cos(virar * math.pi)
+        topo = -1.6 - math.sin(virar * math.pi) * 5.0
+        pts = [(0, -1.6), (k * 11.0, topo - 1.2), (k * 11.3, topo + 8.0), (0, 7.0)]
+        t.pinta(q.forma(poligono(pts)), "papel", z + 0.3, R=1.5, pid="livro_folha", plano=(-k * 0.5, 0.3, 0.8), tom=0.06)
+
+
+def caneca(t: Tela, q: Quadro2D, z: float, cheia=True):
+    """Caneca esmaltada vermelha com borda branca. Origem no centro; alça para +x."""
+    q = _escala(q, 1.3)
+    uv = q.uv()
+    t.pinta(q.forma(traco([(3.0, -2.4), (5.6, -2.0), (5.8, 1.4), (3.0, 1.8)], 0.85)), "caneca", z - 0.1, R=0.9, pid="caneca_alca")
+    corpo = caixa((0, 0), 3.4, 4.2, r=1.0)
+    t.pinta(q.forma(corpo), "caneca", z, R=3.0, pid="caneca", uv=uv, semente=160)
+    t.pinta(q.forma(elipse((0, -4.0), 3.3, 1.1)), "papel", z + 0.05, R=0.8, pid="caneca", tom=0.1)
+    t.pinta(q.forma(caixa((0, -3.2), 3.4, 0.45)), "papel", 0, sobre="caneca", R=1.0)
+    if cheia:
+        t.pinta(q.forma(elipse((0, -3.8), 2.4, 0.7)), "cafe", z + 0.1, R=-0.8, pid="caneca", sem_contorno=True)
+    for x, y in ((-1.6, 1.0), (1.2, -1.4), (2.0, 2.6)):   # lascado do esmalte
+        t.pinta(q.forma(circulo((x, y), 0.5)), "orbita", 0, sobre="caneca", R=-0.5, tom=0.2)
+    t.pinta(q.forma(capsula((-2.3, -2.2), (-2.3, 2.2), 0.35)), "caneca", 0, sobre="caneca", tom=0.3, normal=False)
+
+
+def vapor(t: Tela, x, y, k, n=3, alt=14):
+    """Fios de vapor subindo (efeito, sem contorno)."""
+    for j in range(n):
+        for i in range(alt):
+            fase = (i + k * 2 + j * 5) % alt
+            yy = y - fase
+            xx = x + (j - 1) * 2.2 + math.sin(fase * 0.55 + j * 2 + k * 0.8) * 1.4
+            a = 0.85 * (1 - fase / alt) * (0.55 if (fase + j) % 3 == 0 else 1)
+            if a > 0.06:
+                t.ponto_fx(xx, yy, "#f2f0ea", a)
+
+
+def filme_raiox(t: Tela, q: Quadro2D, z: float, luz: float):
+    """Filme de raio X de um fêmur, contra a luz. Origem na borda de baixo (onde a mão segura)."""
+    t.pinta(q.forma(caixa((0, -13.0), 10.0, 13.0, r=0.8)), "filme", z, R=1.0, pid="filme", tom=0.05 * luz)
+    t.pinta(q.forma(caixa((0, -13.0), 8.6, 11.6, r=0.6)), "filme", 0, sobre="filme", tom=0.12 * luz, normal=False)
+    # fêmur: cabeça, colo, trocânter, diáfise e côndilos
+    fem = (circulo((-4.4, -22.0), 2.2) | capsula((-3.4, -21.0), (-0.4, -19.0), 1.0) | circulo((1.4, -20.6), 1.0)
+           | capsula((0.0, -19.6), (1.2, -6.2), 1.25, 1.05) | circulo((-0.1, -4.6), 1.55) | circulo((2.7, -4.8), 1.5))
+    medula = capsula((0.3, -17.0), (1.1, -8.2), 0.42)
+    t.pinta(q.forma(fem), "raiox", z + 0.05, R=1.0, pid="filme", tom=0.55 + 0.3 * luz, sem_contorno=True)
+    t.pinta(q.forma(medula), "raiox", z + 0.06, R=1.0, pid="filme", tom=0.3 + 0.2 * luz, sem_contorno=True)
+    # etiqueta e marcador "D"
+    t.pinta(q.forma(caixa((-6.0, -2.6), 2.2, 1.0, r=0.2)), "papel", z + 0.05, R=0.6, pid="filme_etq")
+    t.pinta(q.forma(caixa((6.4, -23.0), 0.4, 1.1) | caixa((7.0, -23.0), 0.8, 1.1) - caixa((7.0, -23.0), 0.2, 0.5)), "raiox", z + 0.05, pid="filme", tom=0.6, sem_contorno=True)
+
+
+def osso_pequeno(t: Tela, c, ang, z, pid, sem=0):
+    q = _escala(Quadro2D(c, ang), 1.35)
+    f = capsula((-3.0, 0), (3.0, 0), 0.85)
+    for x in (-3.3, 3.3):
+        f = f.suave(circulo((x, -0.9), 1.15), 0.6).suave(circulo((x, 0.9), 1.15), 0.6)
+    t.pinta(q.forma(f), "osso", z, R=1.2, pid=pid, uv=q.uv(), semente=170 + sem)
+
+
+def martelo(t: Tela, q: Quadro2D, z: float):
+    """Martelo de reflexo. Origem na mão; o cabo segue +y e a cabeça triangular fica na ponta."""
+    t.pinta(q.forma(capsula((0, -1.5), (0, 9.5), 0.65)), "aco", z - 0.1, R=0.8, pid="martelo_cabo")
+    cab = poligono([(-4.4, 9.4), (4.4, 9.4), (0.0, 12.6)])
+    cab = cab.suave(capsula((-3.4, 10.0), (3.4, 10.0), 0.9), 0.8)
+    t.pinta(q.forma(cab), "borracha", z, R=1.6, pid="martelo_cab", uv=q.uv())
+    t.pinta(q.forma(caixa((0, 9.4), 1.0, 0.7)), "aco", z + 0.05, R=0.6, pid="martelo_anel")
+
+
+def espeto(t: Tela, q: Quadro2D, z: float, tostado: float, k: int):
+    """Graveto com marshmallow. Origem na mão; o graveto segue -x."""
+    t.pinta(q.forma(traco([(1.6, 0.2), (-7, 0.9), (-14, 2.0), (-19.5, 2.9)], [0.75, 0.7, 0.6, 0.5])), "madeira", z - 0.1, R=0.8, pid="espeto", uv=q.uv(), semente=180)
+    t.pinta(q.forma(capsula((-9, 1.2), (-10.5, -1.0), 0.4)), "madeira", z - 0.12, R=0.5, pid="espeto")   # galhinho
+    mq = Quadro2D(q.p(-21.5, 3.0), q.ang + 8)
+    t.pinta(mq.forma(caixa((0, 0), 3.4, 3.0, r=1.4)), "marsh", z, R=2.4, pid="marsh",
+            tom=lambda X, Y: -0.5 * tostado * np.clip(1.0 - (X - mq.o[0] + 3.4) / 4.5, 0, 1))
+    t.pinta(mq.forma(caixa((-2.6, 0.4), 0.8, 2.4, r=0.6)), "marsh", 0, sobre="marsh", tom=-0.3 * tostado, normal=False)
+    # brasas subindo
+    for j in range(4):
+        fy = ((k * 3 + j * 7) % 22)
+        x = mq.o[0] - 3 + math.sin(fy * 0.5 + j) * 2.5 + j * 1.5
+        y = mq.o[1] + 18 - fy
+        if fy < 20:
+            t.ponto_fx(x, y, "#ffd27a" if fy < 8 else "#ff8a3a", 0.9 - fy / 26)
+
+
+def foice(t: Tela, q: Quadro2D, z: float):
+    """Foice: origem na mão; o cabo vai de +12 (baixo) a -76 (alto); a lâmina curva para a esquerda."""
+    uv = q.uv()
+    t.pinta(q.forma(traco([(0, 24), (0.3, -10), (0.0, -46), (0.6, -72)], [1.05, 1.1, 1.1, 1.0])), "madeira", z - 0.2, R=1.2, pid="foice_cabo", uv=uv, semente=190)
+    for y in (-4.0, -40.0, -66.0):
+        t.pinta(q.forma(caixa((0.2, y), 1.6, 0.8, r=0.3)), "couro", z - 0.15, R=0.8, pid="foice_tira")
+    t.pinta(q.forma(caixa((0.5, -71.0), 1.9, 2.6, r=0.6)), "aco", z - 0.1, R=1.0, pid="foice_colar")
+    fora = bezier((1.8, -73.0), (-14.0, -86.0), (-38.0, -66.0), 12)
+    dentro = bezier((-38.0, -66.0), (-17.0, -77.5), (0.4, -68.6), 12)
+    lam = poligono(fora + dentro)
+    lam = lam - circulo((-20.0, -76.0), 0.8) - circulo((-28.0, -72.6), 0.7)
+    t.pinta(q.forma(lam), "aco", z - 0.05, R=2.0, pid="foice_lamina", uv=uv, plano=(-0.3, -0.35, 0.88), semente=191)
+    fio = bezier((-1.0, -69.8), (-17.0, -78.2), (-35.0, -66.8), 10)
+    t.pinta(q.forma(traco(fio, 0.45)), "aco", 0, sobre="foice_lamina", tom=0.45, normal=False)
+    for (x, y, rr) in ((-6.0, -78.0, 0.8), (-12.0, -80.0, 0.6), (-2.0, -75.0, 0.6)):
+        t.pinta(q.forma(circulo((x, y), rr).borda(0.3, 1.6, 4)), "ferrugem", 0, sobre="foice_lamina", R=0.6)
+
+
+def lanterna_abobora(t: Tela, q: Quadro2D, z: float, chama: float, k: int):
+    """Abóbora entalhada com vela dentro, presa por uma alça de arame. Origem na mão."""
+    t.pinta(q.forma(traco(bezier((-6.2, 6.6), (0.0, -3.6), (6.2, 6.6), 9), 0.42)), "aco", z - 0.3, R=0.5, pid="alca")
+    c = (0.0, 12.0)
+    corpo = elipse(c, 7.6, 6.2).suave(elipse((c[0] - 3.6, c[1] + 0.2), 4.6, 5.8), 1.0).suave(elipse((c[0] + 3.6, c[1] + 0.2), 4.6, 5.8), 1.0)
+    gomos = lambda X, Y: (0.45 * np.sin((X - q.o[0]) * 0.85), 0.0 * X)
+    t.pinta(q.forma(corpo), "abobora", z, R=4.0, pid="abobora", uv=q.uv(), relevo=gomos, semente=200)
+    t.pinta(q.forma(traco([(0.2, 6.4), (0.6, 4.6), (1.8, 3.6)], [1.0, 0.85, 0.6])), "talo", z + 0.1, R=0.9, pid="talo")
+    luz = 0.65 + 0.35 * chama
+    cara = (poligono([(-4.6, 10.6), (-1.6, 10.6), (-3.1, 8.0)]) | poligono([(1.6, 10.6), (4.6, 10.6), (3.1, 8.0)])
+            | poligono([(-0.6, 12.4), (0.6, 12.4), (0.0, 11.2)])
+            | poligono([(-5.0, 13.6), (5.0, 13.6), (4.0, 16.2), (2.6, 15.0), (1.4, 16.6), (0, 15.2), (-1.4, 16.6), (-2.6, 15.0), (-4.0, 16.2)]))
+    t.pinta(q.forma(cara), "lanterna_luz", z + 0.1, pid="abobora", tom=lambda X, Y: luz - 0.25 * np.clip((Y - q.p(0, 13)[1]) / 4, 0, 1), sem_contorno=True)
+    lp = q.p(0.0, 11.0)
+    t.luz(lp[0], lp[1], 18.0, "#ff9a3a", 70.0, 1.3 * luz)
+
+
+def chama(t: Tela, base, alt, k, sem, z):
+    """Chama de vela que tremula."""
+    bal = math.sin(k * 1.9 + sem) * 0.6
+    f = poligono([(base[0] - 1.2, base[1]), (base[0] + 1.2, base[1]), (base[0] + 0.9 + bal * 0.4, base[1] - alt * 0.5), (base[0] + bal, base[1] - alt)]) \
+        .suave(circulo((base[0], base[1] - 0.8), 1.25), 0.6)
+    cy = base[1]
+    t.pinta(f, "chama", z, pid=f"chama{sem}", sem_contorno=True,
+            tom=lambda X, Y: np.clip(1.05 - (cy - Y) / (alt * 1.05) * 0.9 - np.abs(X - base[0]) * 0.18, 0.05, 1))
+
+
+def candelabro(t: Tela, q: Quadro2D, z: float, k: int):
+    """Castiçal de latão com três velas. Origem na mão; sobe para -y."""
+    uv = q.uv()
+    q = _escala(q, 1.3)
+    uv = q.uv()
+    t.pinta(q.forma(capsula((0, 3.5), (0, -8.5), 0.85) | elipse((0, 4.0), 2.4, 1.1) | circulo((0, -2.0), 1.3)), "latao", z - 0.1, R=1.0, pid="cand_haste", uv=uv)
+    braco_c = traco(bezier((-7.0, -11.0), (-6.0, -6.6), (0.0, -7.6), 7), 0.65) | traco(bezier((7.0, -11.0), (6.0, -6.6), (0.0, -7.6), 7), 0.65)
+    t.pinta(q.forma(braco_c), "latao", z - 0.05, R=0.8, pid="cand_bracos", uv=uv)
+    for i, (x, y, h) in enumerate(((-7.0, -11.6, 5.2), (0.0, -9.6, 6.6), (7.0, -11.6, 4.4))):
+        t.pinta(q.forma(elipse((x, y), 2.0, 0.8)), "latao", z, R=0.8, pid=f"cand_copo{i}")
+        t.pinta(q.forma(caixa((x, y - h / 2 - 0.4), 1.15, h / 2, r=0.4) | circulo((x + 1.0, y - h + 1.6), 0.5)), "cera", z + 0.05, R=1.2, pid=f"vela{i}")
+        tremor = 0.5 + 0.5 * math.sin(k * 2.1 + i * 2.4)
+        topo = q.p(x, y - h - 0.6)
+        chama(t, topo, 4.2 + tremor * 1.6, k, i, z + 0.2)
+        t.luz(topo[0], topo[1] - 2, 22.0, "#ffb050", 60.0, 0.6 + 0.25 * tremor)
+
+
+def morcego(t: Tela, c, asa: float, olha: int, z: float, nome: str):
+    """Morcego pequeno e original: corpo redondo, orelhas pontudas e asas de dedos longos.
+    asa em -1..1 (baixo..cima)."""
+    q = _escala(Quadro2D(c), 1.35)
+    corpo = elipse((0, 0), 2.4, 2.8).suave(circulo((0, -2.6), 2.0), 0.9)
+    orelhas = poligono([(-2.0, -3.6), (-1.0, -3.8), (-1.8, -6.4)]) | poligono([(2.0, -3.6), (1.0, -3.8), (1.8, -6.4)])
+    for s_ in (-1, 1):
+        ay = -asa * 5.0
+        pts = [(s_ * 1.6, -1.6), (s_ * 5.0, -2.0 + ay * 0.6), (s_ * 9.6, -1.4 + ay), (s_ * 8.4, 0.6 + ay * 0.8),
+               (s_ * 7.0, 0.2 + ay * 0.6), (s_ * 5.6, 1.6 + ay * 0.5), (s_ * 4.0, 0.8 + ay * 0.3), (s_ * 1.6, 1.0)]
+        t.pinta(q.forma(poligono(pts)), "morcego_asa", z - 0.05, R=1.0, pid=nome + "_asa")
+        t.pinta(q.forma(traco([(s_ * 1.6, -1.6), (s_ * 5.0, -2.0 + ay * 0.6), (s_ * 9.6, -1.4 + ay)], 0.4)), "morcego", z - 0.04, R=0.5, pid=nome + "_asa")
+    t.pinta(q.forma(corpo | orelhas), "morcego", z, R=2.2, pid=nome)
+    for s_ in (-1, 1):
+        t.pinta(q.forma(circulo((s_ * 0.85 + olha * 0.5, -2.8), 0.45)), "olho_morcego", z + 0.05, pid=nome, tom=0.9, sem_contorno=True)
+
+
+def zz(t: Tela, x, y, tam, a):
+    """Letra z de sono em pixel."""
+    for i in range(tam):
+        t.ponto_fx(x + i, y, "#cfe4ff", a)
+        t.ponto_fx(x + i, y + tam - 1, "#cfe4ff", a)
+        t.ponto_fx(x + tam - 1 - i, y + i, "#cfe4ff", a)
+
+
+# ═══════════════════════════════ as linhas (comportamentos) ═══════════════════════════════
+def _sn(k, n=NQ, desloc=0.0):
+    return math.sin((k + desloc) / n * TAU)
+
+
+def _cs(k, n=NQ, desloc=0.0):
+    return math.cos((k + desloc) / n * TAU)
+
+
+BASE = Pose()
+
+
+def q_acenar(k):
+    p = replace(BASE, inclina=1.2 * _sn(k), resp=0.5 + 0.5 * _sn(k), vira=0.15, cab=-1.5 * _sn(k),
+                bd=(108.0 + 3 * _sn(k), 168.0 + 30 * _sn(k), 172.0 + 34 * _sn(k, desloc=0.4), "aberta"),
+                be=(12.0, 2.0, 0.0, "punho"), pano=k / NQ * TAU)
+    t = Tela()
+    esqueleto(t, p, lambda t, r: espada(t, mao_quadro(r, "e", 4), p.ze + 0.3))
+    return t
+
+
+def q_ler(k):
+    virar = max(0.0, min(1.0, (k - 3) / 3.0)) if 3 <= k <= 6 else 0.0
+    p = replace(BASE, resp=0.5 + 0.5 * _sn(k), cab=3.0 + 1.0 * _sn(k), cab_dy=1.0, olhar=(0.4 * _sn(k, desloc=1), 1.2),
+                be=(38.0, -40.0, -60.0, "punho"), bd=(38.0, -40.0, -60.0, "punho"), ze=6.0, zd=6.0, pano=k / NQ * TAU)
+    t = Tela()
+
+    def ex(t, r):
+        a, b = r.j["palma_e"], r.j["palma_d"]
+        livro(t, ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 - 3.4), 0.0, virar, 6.3)
+    esqueleto(t, p, ex)
+    return t
+
+
+def q_cafe(k):
+    gole = [0.0, 0.25, 0.75, 1.0, 1.0, 0.85, 0.4, 0.05][k]
+    a1 = 24 + 36 * gole
+    a2 = -60 - 110 * gole
+    a3 = -70 - 105 * gole
+    p = replace(BASE, resp=0.5 + 0.5 * _sn(k), cab=-3.5 * gole, cab_dx=0.4 * gole, vira=0.25 * gole, olhar=(0.6 * gole, 0.8 * gole),
+                bd=(a1, a2, a3, "punho"), be=(26.0, -40.0, -50.0, "punho"), pano=k / NQ * TAU, brilho=1.0 - 0.5 * gole)
+    t = Tela()
+
+    def ex(t, r):
+        pa = r.j["palma_d"]
+        # segura pela alça: o corpo da caneca fica do lado de dentro da mão
+        cq = Quadro2D((pa[0] - 4.8, pa[1] - 0.6), -18 * gole)
+        caneca(t, cq, p.zd + 0.35)
+        topo = cq.p(-0.5, -5.4)
+        vapor(t, topo[0], topo[1] - 1, k, 3 if gole < 0.6 else 2, 14)
+    esqueleto(t, p, ex)
+    return t
+
+
+def q_dormir(k):
+    s = _sn(k)
+    p = replace(BASE, resp=0.5 + 0.5 * s, cab=11.0 + 1.6 * s, cab_dy=1.6 + 0.7 * s, cab_dx=0.6, inclina=1.6 + 0.4 * s, brilho=0.0,
+                be=(7.0 + 1.0 * s, 1.0, -2.0, "aberta"), bd=(7.0 + 1.0 * s, 1.0, -2.0, "aberta"), pe=(7.0, -2.0), pd=(7.0, -2.0), pano=0.3 * s)
+    t = Tela()
+    esqueleto(t, p)
+    # três "z" subindo e sumindo
+    for j in range(3):
+        fase = ((k + j * 8 / 3) % NQ) / NQ
+        x = 74 + fase * 10 + math.sin(fase * TAU) * 1.5
+        y = 40 - fase * 26
+        tam = 3 + int(fase * 3)
+        zz(t, x, y, tam, 0.95 * (1 - fase ** 2))
+    return t
+
+
+def q_alongar(k):
+    a = [0.0, 0.3, 0.75, 1.0, 1.0, 0.85, 0.45, 0.1][k]
+    p = replace(BASE, y=-1.4 * a, resp=a, cab=0.0, cab_dy=-1.2 * a, inclina=1.5 * math.sin(a * math.pi) * (1 if k < 4 else -1) * 0.6,
+                be=(14 + 122 * a, 6 + 160 * a, 4 + 172 * a, "aberta"), bd=(14 + 122 * a, 6 + 160 * a, 4 + 172 * a, "aberta"),
+                pe=(9.0 - 3 * a, -4.0 + 4 * a), pd=(9.0 - 3 * a, -4.0 + 4 * a), ze=6.0 - 5.2 * (a > 0.6), zd=6.0 - 5.2 * (a > 0.6),
+                brilho=1.0 - 0.8 * (a > 0.9), pano=k / NQ * TAU)
+    t = Tela()
+    esqueleto(t, p)
+    return t
+
+
+def q_raiox(k):
+    sobe = [0.0, 0.45, 0.85, 1.0, 1.0, 1.0, 1.0, 0.6][k]
+    luz = [0.3, 0.5, 0.8, 1.0, 0.85, 1.0, 0.9, 0.6][k]
+    p = replace(BASE, resp=0.5 + 0.5 * _sn(k), vira=0.55 * sobe, cab=-5.0 * sobe, cab_dx=0.6 * sobe, olhar=(1.2 * sobe, -1.0 * sobe),
+                bd=(70 + 45 * sobe, 100 + 50 * sobe, 120 + 50 * sobe, "punho"), be=(28.0, -40.0, -50.0, "punho"), zd=8.8, pano=k / NQ * TAU)
+    t = Tela()
+
+    def ex(t, r):
+        q = mao_quadro(r, "d")
+        fq = Quadro2D(q.p(0, -1.5), 10 + 3 * _sn(k) + (1 - sobe) * 2)
+        filme_raiox(t, Quadro2D((fq.o[0] + 4.6, fq.o[1] + 3), fq.ang - 3), 9.5, luz)
+        cl = fq.p(6.5, -12)
+        t.luz(cl[0], cl[1], 4.0, "#9fd8ff", 40.0, 0.55 * luz)
+    esqueleto(t, p, ex)
+    return t
+
+
+def q_malabares(k):
+    b = math.sin(k / NQ * TAU * 3)
+    p = replace(BASE, resp=0.5 + 0.5 * _sn(k), cab=1.5 * _sn(k), olhar=(0, -1.6),
+                be=(32.0 - 5 * b, 64.0 - 14 * b, 150.0, "aberta"), bd=(32.0 + 5 * b, 64.0 + 14 * b, 150.0, "aberta"), pano=k / NQ * TAU)
+    t = Tela()
+
+    def ex(t, r):
+        for i in range(3):
+            th = TAU * (k / NQ + i / 3)
+            x = 48 + 34 * math.cos(th)
+            y = 52 - 42 * math.sin(th) if math.sin(th) > 0 else 52 - 34 * math.sin(th)
+            osso_pequeno(t, (x, y), math.degrees(th) * 2 + i * 40, 9.6, f"malabar{i}", i)
+    esqueleto(t, p, ex)
+    return t
+
+
+def q_reflexo(k):
+    # 0-1 levanta o martelo, 2 bate, 3-4 a perna chuta, 5-7 volta
+    martelo_a = [0.0, -0.6, 0.6, 0.4, 0.2, 0.0, 0.0, 0.0][k]
+    chute = [0.0, 0.0, 0.1, 1.0, 0.7, 0.3, 0.1, 0.0][k]
+    p = replace(BASE, inclina=-3.0, resp=0.5, cab=4.0 - 2.0 * chute, vira=0.5, olhar=(1.0, 1.4), cab_dy=0.5,
+                pd=(74.0 - 2 * chute, 2.0 + 88 * chute), pe=(4.0, -1.0), y=-0.5,
+                bd=(52.0 - 18 * martelo_a, 18.0 - 40 * martelo_a, -10.0 - 40 * martelo_a, "punho"), be=(34.0, -20.0, -30.0, "punho"),
+                pano=1.2 * chute + k * 0.3)
+    t = Tela()
+
+    def ex(t, r):
+        martelo(t, _escala(mao_quadro(r, "d", 20), 1.35), p.zd + 0.3)
+        if k in (2, 3):
+            jo = r.j["joelho_d"]
+            for (dx, dy) in ((-3, -3), (0, -5), (3, -4), (5, -1), (-4, 0)):
+                t.ponto_fx(jo[0] + dx, jo[1] + dy - 1, "#fff6c8", 0.95)
+                t.ponto_fx(jo[0] + dx * 0.6, jo[1] + dy * 0.6 - 1, "#ffd27a", 0.7)
+    esqueleto(t, p, ex)
+    return t
+
+
+def q_marshmallow(k):
+    s = _sn(k)
+    p = replace(BASE, x=5.0, inclina=-3.5, resp=0.5 + 0.5 * s, vira=-0.7, cab=-2.0, olhar=(-1.4, 1.2),
+                be=(40.0 + 2 * s, 48.0 + 3 * s, 76.0, "punho"), bd=(40.0, -60.0, -70.0, "punho"), pano=k / NQ * TAU)
+    t = Tela()
+    # a fogueira está à esquerda, fora do quadro
+    t.luz(-16.0, 100.0, 40.0, "#ff8a2a", 130.0, 1.5 + 0.2 * math.sin(k * 2.3))
+
+    def ex(t, r):
+        espeto(t, mao_quadro(r, "e", -88), p.ze + 0.3, 0.7, k)
+    esqueleto(t, p, ex)
+    return t
+
+
+def q_parado(k):
+    vira = [0.0, 0.0, -0.45, -0.5, 0.0, 0.45, 0.5, 0.0][k]
+    brilho = 0.0 if k == 7 else 1.0
+    p = replace(BASE, resp=0.5 + 0.5 * _sn(k), cab_dy=0.5 * _sn(k, desloc=0.5), vira=vira, brilho=brilho,
+                olhar=(vira * 1.4, 0.0), bd=(12.0, 2.0, 0.0, "punho"), be=(14.0, 4.0, 2.0, "aberta"), pano=k / NQ * TAU)
+    t = Tela()
+    esqueleto(t, p, lambda t, r: espada(t, mao_quadro(r, "d", -4), p.zd + 0.3))
+    return t
+
+
+# ─────────── Halloween ───────────
+def q_foice(k):
+    ph = k / NQ * TAU
+    s, c = math.sin(ph), math.cos(ph)
+    p = replace(BASE, capa=True, y=-abs(math.sin(ph)) * 1.2, inclina=1.0 * s, resp=0.5 + 0.5 * s, vira=0.1,
+                pe=(9.0 + 9 * s, -4.0 - 8 * max(0.0, s)), pd=(9.0 - 9 * s, -4.0 - 8 * max(0.0, -s)),
+                be=(16.0 + 10 * s, 8.0 + 10 * s, 6.0, "aberta"), bd=(30.0, -8.0, -12.0, "punho"), pano=ph * 1.0)
+    t = Tela()
+    esqueleto(t, p, lambda t, r: foice(t, mao_quadro(r, "d", 12 - 1.2 * s), p.zd + 0.3))
+    return t
+
+
+def q_abobora(k):
+    chamas = [0.8, 1.0, 0.7, 0.9, 0.6, 1.0, 0.85, 0.7][k]
+    p = replace(BASE, capa=True, resp=0.5 + 0.5 * _sn(k), cab=2.0, olhar=(-0.4, 1.0),
+                bd=(40.0, -108.0, -125.0, "punho"), be=(16.0, 6.0, 4.0, "aberta"), pano=k / NQ * TAU)
+    t = Tela()
+    esqueleto(t, p, lambda t, r: lanterna_abobora(t, Quadro2D(r.j["palma_d"], 5 * _sn(k)), 9.4, chamas, k))
+    return t
+
+
+def q_velas(k):
+    p = replace(BASE, capa=True, resp=0.5 + 0.5 * _sn(k), vira=0.35, cab=-2.0, olhar=(0.8, -0.6),
+                bd=(96.0, 112.0, 175.0, "punho"), be=(16.0, 6.0, 4.0, "aberta"), pano=k / NQ * TAU)
+    t = Tela()
+    esqueleto(t, p, lambda t, r: candelabro(t, Quadro2D(r.j["palma_d"], 0 + 2 * _sn(k)), 9.4, k))
+    return t
+
+
+def q_morcegos(k):
+    ph = k / NQ * TAU
+    p = replace(BASE, capa=True, resp=0.5 + 0.5 * math.sin(ph), vira=0.55 * math.cos(ph), olhar=(1.0 * math.cos(ph), -0.6),
+                be=(14.0, 4.0, 2.0, "aberta"), bd=(14.0, 4.0, 2.0, "aberta"), pano=ph)
+    t = Tela()
+
+    def ex(t, r):
+        asas = [1.0, 0.2, -1.0, 0.2]
+        for i, (cy, rx, ry, sent, des) in enumerate(((30.0, 31.0, 8.0, 1, 0.0), (86.0, 31.5, 7.0, -1, 0.5))):
+            th = ph * sent + des * TAU
+            x = 48 + rx * math.cos(th)
+            y = cy + ry * math.sin(th) + 1.5 * math.sin(ph * 2 + i)
+            frente = math.sin(th) > 0
+            morcego(t, (x, y), asas[(k + i * 2) % 4], 1 if math.cos(th) * sent < 0 else -1, 10.0 if frente else 0.2, f"morcego{i}")
+    esqueleto(t, p, ex)
+    return t
+
+
+LINHAS = [
+    ("acenar", "acenando", False, q_acenar),
+    ("ler", "lendo", False, q_ler),
+    ("cafe", "tomando café", False, q_cafe),
+    ("dormir", "cochilando", False, q_dormir),
+    ("alongar", "se espreguiçando", False, q_alongar),
+    ("raiox", "olhando um raio X", False, q_raiox),
+    ("malabares", "fazendo malabares com ossos", False, q_malabares),
+    ("reflexo", "testando o próprio reflexo patelar", False, q_reflexo),
+    ("marshmallow", "assando marshmallow", False, q_marshmallow),
+    ("parado", "parado", False, q_parado),
+    ("foice", "passeando com a foice", True, q_foice),
+    ("abobora", "com a lanterna de abóbora", True, q_abobora),
+    ("velas", "com o castiçal de velas", True, q_velas),
+    ("morcegos", "com os morcegos", True, q_morcegos),
+]
+
+
+def folha_esqueleto(so=None) -> Image.Image:
+    folha = Image.new("RGBA", (FW * NQ, FH * len(LINHAS)), (0, 0, 0, 0))
+    for li, (ident, _, _, fn) in enumerate(LINHAS):
+        if so and ident not in so:
+            continue
+        for k in range(NQ):
+            folha.paste(Image.fromarray(fn(k).render(), "RGBA"), (k * FW, li * FH))
+    return folha
+
+
+# ═══════════════════════════════ o gato (laranja tigrado, peito e patas brancos) ═══════════════════════════════
+def listras(cx, cy, ang, freq, larg, seed, bb):
+    """Faixas de tigrado (onduladas) como forma para decalque."""
+    ca, sa = math.cos(math.radians(ang)), math.sin(math.radians(ang))
+
+    def f(X, Y):
+        u = (X - cx) * ca + (Y - cy) * sa
+        v = -(X - cx) * sa + (Y - cy) * ca
+        w = np.sin(u * freq + 0.6 * np.sin(v * 0.45 + seed) + ruido(u * 0.3, v * 0.3, seed) * 0.8)
+        return (larg - w) * 1.6
+    return Forma(f, bb)
+
+
+def gato_sentado(t: Tela, k: int, cauda: float, pisca: bool, tala: bool, cabeca_inc: float = 0.0, pata_ergue: float = 0.0):
+    t.origem = (0.0, 0.0)
+    for x in range(14, 50):   # sombra no chão
+        d = abs(x + 0.5 - 32) / 18
+        if d < 1:
+            t.ponto_fx(x, 38, "#0c0710", 0.4 if d < 0.6 else 0.25, sob=True)
+            if d < 0.7:
+                t.ponto_fx(x, 39, "#0c0710", 0.2, sob=True)
+    resp = 0.4 * math.sin(k / GQ * TAU)
+    # cauda atrás, balançando
+    a = math.radians(cauda)
+    base = (21.0, 34.5)
+    meio = (11.5 + 1.5 * math.sin(a), 32.0)
+    alto = (9.0 + 6.0 * math.sin(a), 23.0 + 1.0 * abs(math.sin(a)))
+    ponta = (12.5 + 9.0 * math.sin(a), 17.5 + 2.0 * abs(math.sin(a)))
+    pts = bezier(base, meio, alto, 6)[:-1] + bezier(alto, (alto[0] - 1.0 + 2 * math.sin(a), 18.0), ponta, 5)
+    t.pinta(traco(pts, [2.4, 2.3, 2.2, 2.1, 2.0, 1.9, 1.85, 1.8, 1.7, 1.6]).borda(0.35, 1.3, 3), "pelo", 1.0, R=2.0, pid="cauda", semente=301)
+    t.pinta(traco(pts[-3:], 1.9), "pelo_listra", 0, sobre="cauda", R=1.8)
+    for i in (2, 4, 6):
+        q_ = pts[i]
+        t.pinta(circulo(q_, 1.0), "pelo_listra", 0, sobre="cauda", R=1.5)
+    # quadril e corpo
+    quad = elipse((28.0, 30.0), 10.5, 8.0 + resp * 0.3).borda(0.4, 1.0, 5)
+    t.pinta(quad, "pelo", 2.0, R=6.0, pid="corpo", semente=302)
+    corpo = elipse((35.0, 24.5 - resp * 0.2), 7.4, 10.4, -12).borda(0.4, 1.0, 6)
+    t.pinta(corpo, "pelo", 2.2, R=5.0, pid="peito", semente=303)
+    t.pinta(listras(28, 30, 80, 0.9, 0.45, 2, (16, 20, 40, 39)), "pelo_listra", 0, sobre="corpo", R=3.0)
+    t.pinta(listras(34, 24, 75, 1.0, 0.5, 4, (26, 13, 44, 36)), "pelo_listra", 0, sobre="peito", R=3.0)
+    t.pinta(elipse((38.2, 25.0), 3.8, 6.8, -10).borda(0.5, 1.2, 9), "pelo_branco", 0, sobre="peito", R=4.0)
+    # pata de trás aparecendo
+    t.pinta(elipse((22.5, 36.6), 4.6, 1.8), "pelo_branco", 2.4, R=1.6, pid="pata_tras", semente=304)
+    # patas da frente
+    for i, x in enumerate((34.6, 39.6)):
+        topo = 27.0
+        fim = 36.2 - (pata_ergue if i == 1 else 0)
+        t.pinta(capsula((x, topo), (x + 0.2, fim), 1.9, 1.8).borda(0.25, 1.4, 11 + i), "pelo", 3.0 + i * 0.1, R=1.8, pid=f"pata{i}", semente=305 + i)
+        t.pinta(capsula((x, fim - 2.6), (x + 0.2, fim), 1.9, 1.8), "pelo_branco", 0, sobre=f"pata{i}", R=1.8)
+        t.pinta(elipse((x + 0.6, fim + 0.8), 2.5, 1.4), "pelo_branco", 3.05 + i * 0.1, R=1.2, pid=f"pata{i}")
+        for dx in (-0.4, 0.9):
+            t.pinta(capsula((x + 0.6 + dx, fim + 0.2), (x + 0.6 + dx, fim + 1.6), 0.25), "pelo_branco", 0, sobre=f"pata{i}", tom=-0.3, normal=False)
+        if tala and i == 1:
+            # tala azul com duas faixas brancas no antebraço
+            t.pinta(caixa((x + 0.2, (topo + fim) / 2 + 0.6), 2.6, 3.4, r=1.0), "tala", 3.3, R=1.6, pid="tala", semente=320)
+            for yy in ((topo + fim) / 2 - 1.4, (topo + fim) / 2 + 2.4):
+                t.pinta(caixa((x + 0.2, yy), 2.9, 0.75, r=0.4), "faixa", 3.35, R=0.9, pid="faixa", semente=321)
+            t.pinta(capsula((x - 1.4, (topo + fim) / 2 - 2.2), (x - 1.4, (topo + fim) / 2 + 3.6), 0.35), "tala", 0, sobre="tala", tom=0.3, normal=False)
+    # cabeça
+    q = Quadro2D((38.5, 13.2 + resp * 0.3), cabeca_inc)
+    for s_ in (-1, 1):   # orelhas
+        orelha = poligono([(s_ * 2.0, -4.6), (s_ * 7.6, -3.0), (s_ * 5.6, -10.4)])
+        t.pinta(q.forma(orelha.suave(circulo((s_ * 5.0, -4.6), 1.6), 0.8)), "pelo", 3.6, R=1.6, pid=f"orelha{s_}", semente=330)
+        t.pinta(q.forma(poligono([(s_ * 3.2, -4.8), (s_ * 6.4, -3.8), (s_ * 5.3, -8.4)])), "rosa", 0, sobre=f"orelha{s_}", R=-1.0)
+        for j in range(2):
+            t.pinta(q.forma(capsula((s_ * (4.3 + j * 0.8), -5.2), (s_ * (4.8 + j * 0.9), -8.6), 0.22)), "pelo_branco", 3.7, R=0.4, pid=f"tufo{s_}", sem_contorno=True)
+    cab = elipse((0, 0), 8.2, 6.8).suave(elipse((0, 2.8), 6.6, 4.6), 1.5).borda(0.35, 1.2, 13)
+    bochechas = elipse((-6.6, 2.6), 2.6, 2.2) | elipse((6.6, 2.6), 2.6, 2.2)
+    t.pinta(q.forma(cab.suave(bochechas.borda(0.5, 1.5, 14), 1.0)), "pelo", 4.0, R=5.5, pid="cabeca", uv=q.uv(), semente=331)
+    # "M" na testa e listras das bochechas
+    for x0, y0, x1, y1 in ((-2.4, -6.4, -1.6, -3.4), (0.0, -6.8, 0.0, -3.6), (2.4, -6.4, 1.6, -3.4)):
+        t.pinta(q.forma(capsula((x0, y0), (x1, y1), 0.55)), "pelo_listra", 0, sobre="cabeca", R=0.8)
+    for s_ in (-1, 1):
+        for j in range(2):
+            t.pinta(q.forma(capsula((s_ * 8.4, 0.6 + j * 1.8), (s_ * 6.4, 1.0 + j * 1.6), 0.45)), "pelo_listra", 0, sobre="cabeca", R=0.6)
+    t.pinta(q.forma(elipse((0, 3.6), 4.0, 2.7).borda(0.3, 1.5, 15)), "pelo_branco", 0, sobre="cabeca", R=2.4)
+    t.pinta(q.forma(poligono([(-1.1, 1.6), (1.1, 1.6), (0, 2.8)])), "rosa", 4.1, R=0.8, pid="nariz", sem_contorno=True)
+    t.pinta(q.forma(traco([(-1.6, 4.4), (-0.6, 4.8), (0, 4.0), (0.6, 4.8), (1.6, 4.4)], 0.3)), "pupila", 4.1, R=0.5, pid="boca", sem_contorno=True)
+    for s_ in (-1, 1):
+        cx_ = s_ * 3.4
+        if pisca:
+            t.pinta(q.forma(traco([(cx_ - 1.6, -0.4), (cx_, 0.3), (cx_ + 1.6, -0.4)], 0.42)), "pupila", 4.2, R=0.5, pid="olho", sem_contorno=True)
+        else:
+            t.pinta(q.forma(elipse((cx_, -0.6), 1.75, 1.9)), "pupila", 4.15, R=0.6, pid="olho", sem_contorno=True)
+            t.pinta(q.forma(elipse((cx_, -0.5), 1.35, 1.55)), "olho_gato", 4.2, pid="olho", tom=lambda X, Y: 0.95 - np.clip((q.o[1] - 1.8 - Y) * -0.25, 0, 0.6), sem_contorno=True)
+            t.pinta(q.forma(elipse((cx_ + 0.15, -0.5), 0.45, 1.5)), "pupila", 4.25, pid="olho", sem_contorno=True)
+            t.pinta(q.forma(circulo((cx_ - 0.6, -1.4), 0.42)), "olho_gato", 4.3, pid="olho", tom=1.0, sem_contorno=True)
+    # bigodes
+    for s_ in (-1, 1):
+        for j, dy in enumerate((-0.4, 0.8)):
+            for i in range(5):
+                x = q.p(s_ * (4.6 + i * 1.1), 3.0 + dy + i * 0.25 * (j * 2 - 1))
+                t.ponto_fx(x[0], x[1], "#f6efe0", 0.75 - i * 0.12)
+
+
+def gato_dormindo(t: Tela, k: int):
+    t.origem = (0.0, 0.0)
+    for x in range(10, 54):
+        d = abs(x + 0.5 - 32) / 22
+        if d < 1:
+            t.ponto_fx(x, 38, "#0c0710", 0.42 if d < 0.6 else 0.25, sob=True)
+    resp = math.sin(k / GQ * TAU)
+    corpo = elipse((29.0, 30.0 - resp * 0.35), 16.5, 8.0 + resp * 0.45).borda(0.4, 1.0, 21)
+    t.pinta(corpo, "pelo", 2.0, R=7.0, pid="corpo", semente=340)
+    t.pinta(listras(29, 30, 90, 0.85, 0.42, 7, (12, 20, 46, 39)), "pelo_listra", 0, sobre="corpo", R=3.0)
+    t.pinta(elipse((36.0, 34.4), 7.0, 2.6).borda(0.4, 1.3, 22), "pelo_branco", 0, sobre="corpo", R=2.0)
+    # cauda enrolada na frente
+    pts = bezier((13.5, 30.5), (16.0, 37.6), (33.0, 36.2), 10)
+    t.pinta(traco(pts, [2.4, 2.4, 2.3, 2.3, 2.2, 2.1, 2.0, 1.9, 1.8, 1.7]).borda(0.3, 1.3, 23), "pelo", 3.0, R=2.0, pid="cauda", semente=341)
+    for i in (2, 4, 6, 8):
+        t.pinta(circulo(pts[i], 1.05), "pelo_listra", 0, sobre="cauda", R=1.5)
+    t.pinta(traco(pts[-2:], 1.9), "pelo_listra", 0, sobre="cauda", R=1.5)
+    # patinhas recolhidas sob a cabeça
+    t.pinta(elipse((44.5, 35.2), 3.2, 1.6), "pelo_branco", 3.2, R=1.2, pid="patas", semente=342)
+    # cabeça deitada, de olhos fechados
+    q = Quadro2D((43.0, 27.6 - resp * 0.25), 14)
+    tw = 1 if k == 3 else 0
+    for s_ in (-1, 1):
+        orelha = poligono([(s_ * 2.0, -4.0), (s_ * 7.2, -2.6), (s_ * (5.4 + tw * 0.6 * (s_ > 0)), -9.4 + tw * 1.2 * (s_ > 0))])
+        t.pinta(q.forma(orelha.suave(circulo((s_ * 4.8, -4.2), 1.5), 0.8)), "pelo", 3.6, R=1.6, pid=f"orelha{s_}", semente=343)
+        t.pinta(q.forma(poligono([(s_ * 3.2, -4.4), (s_ * 6.0, -3.4), (s_ * 5.1, -7.6)])), "rosa", 0, sobre=f"orelha{s_}", R=-1.0)
+    cab = elipse((0, 0), 7.8, 6.2).suave(elipse((0, 2.6), 6.4, 4.2), 1.5).borda(0.35, 1.2, 24)
+    t.pinta(q.forma(cab), "pelo", 4.0, R=5.0, pid="cabeca", uv=q.uv(), semente=344)
+    for x0 in (-2.2, 0.0, 2.2):
+        t.pinta(q.forma(capsula((x0, -5.8), (x0 * 0.7, -3.2), 0.5)), "pelo_listra", 0, sobre="cabeca", R=0.8)
+    t.pinta(q.forma(elipse((0, 3.4), 3.8, 2.5).borda(0.3, 1.5, 25)), "pelo_branco", 0, sobre="cabeca", R=2.4)
+    t.pinta(q.forma(poligono([(-1.0, 1.6), (1.0, 1.6), (0, 2.6)])), "rosa", 4.1, R=0.8, pid="nariz", sem_contorno=True)
+    for s_ in (-1, 1):
+        t.pinta(q.forma(traco([(s_ * 3.4 - 1.6, -0.6), (s_ * 3.4, 0.4), (s_ * 3.4 + 1.6, -0.6)], 0.42)), "pupila", 4.2, R=0.5, pid="olho", sem_contorno=True)
+    # zz pequenos
+    fase = (k % GQ) / GQ
+    zz(t, 51 + fase * 5, 17 - fase * 10, 4, 0.9 * (1 - fase))
+
+
+LINHAS_GATO = [("dormindo", "dormindo"), ("acordado", "acordado"), ("tala", "com a tala no braço")]
+
+
+def q_gato(linha: str, k: int) -> Tela:
+    t = Tela(GW, GH)
+    if linha == "dormindo":
+        gato_dormindo(t, k)
+    elif linha == "acordado":
+        gato_sentado(t, k, cauda=28 * math.sin(k / GQ * TAU), pisca=(k == 4), tala=False)
+    else:
+        gato_sentado(t, k, cauda=18 * math.sin(k / GQ * TAU), pisca=(k == 2), tala=True, cabeca_inc=-6 + 2 * math.sin(k / GQ * TAU),
+                     pata_ergue=0.8 + 0.6 * math.sin(k / GQ * TAU))
+    return t
+
+
+def folha_gato() -> Image.Image:
+    folha = Image.new("RGBA", (GW * GQ, GH * len(LINHAS_GATO)), (0, 0, 0, 0))
+    for li, (ident, _) in enumerate(LINHAS_GATO):
+        for k in range(GQ):
+            folha.paste(Image.fromarray(q_gato(ident, k).render(), "RGBA"), (k * GW, li * GH))
+    return folha
+
+
+# ═══════════════════════════════ saída ═══════════════════════════════
+def salvar(img: Image.Image, caminho: Path) -> None:
+    """Grava em PNG; usa paleta de 256 cores (pixel art cabe nela) quando fica menor."""
+    caminho.parent.mkdir(parents=True, exist_ok=True)
+    img.save(caminho, optimize=True)
+    tam = caminho.stat().st_size
+    pal = img.quantize(256, method=Image.Quantize.FASTOCTREE)
+    tmp = caminho.with_suffix(".tmp.png")
+    pal.save(tmp, optimize=True)
+    if tmp.stat().st_size < tam:
+        tmp.replace(caminho)
+    else:
+        tmp.unlink()
+    print(caminho.relative_to(PASTA.parents[2]), img.size, caminho.stat().st_size, "bytes")
+
+
+def main() -> None:
+    salvar(folha_esqueleto(), PASTA / "esqueleto.png")
+    salvar(folha_gato(), PASTA / "gato.png")
+    if "--previa" in sys.argv:
+        destino = Path(sys.argv[sys.argv.index("--previa") + 1])
+        destino.mkdir(parents=True, exist_ok=True)
+        for nome in ("esqueleto", "gato"):
+            im = Image.open(PASTA / f"{nome}.png").convert("RGBA")
+            fundo = Image.new("RGBA", im.size, (34, 44, 40, 255))
+            fundo.alpha_composite(im)
+            fundo.resize((im.width * 2, im.height * 2), Image.NEAREST).save(destino / f"{nome}-2x.png")
+
+
+if __name__ == "__main__":
+    main()
