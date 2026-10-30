@@ -17,6 +17,7 @@ import {
 } from './sprites'
 import { EVENTO_SEGREDO, NOME_RARIDADE, SEGREDOS, acharSegredo, diasAteProva, epoca, madrugada, palavraMagica, raridade, segredosAchados, type IdSegredo } from './segredos'
 import { RAROS } from './raros'
+import { FRASES_AREAS_AMOSTRA } from '../porta'
 import { ligarSom, somLigado, tocar } from './sons'
 import '../../estilos/paginas/Salao.css'
 
@@ -223,7 +224,7 @@ export function Salao(p: PropsSalao) {
   const [posEscada, definirPosEscada] = useState<CSSProperties | undefined>(undefined)
   useLayoutEffect(() => {
     const alvo = primeiraBusca ? raiz.current?.querySelector<HTMLElement>('.sl-lombada--alvo') : null
-    definirPosEscada(alvo ? { left: alvo.offsetLeft - 14, top: alvo.offsetTop + alvo.offsetHeight + 10 - 150, right: 'auto' } : undefined)
+    definirPosEscada(alvo ? { left: alvo.offsetLeft - 44, top: alvo.offsetTop + alvo.offsetHeight + 10 - 150, right: 'auto' } : undefined)
   }, [primeiraBusca])
   const indicePassagem = Math.min(2, livros.length - 1)
   const lamparinas = efeitos.has('codman') ? [0, 1, 2, 3] : [0, 1]
@@ -294,7 +295,7 @@ export function Salao(p: PropsSalao) {
       {/* ── Móveis: mesa de leitura, quadro-negro e escrivaninha ── */}
       <div className="sl-moveis">
         <MesaLeitura continuar={p.continuar} capitulos={capitulos} />
-        <QuadroNegro />
+        <QuadroNegro premium={p.premium} />
         <div className="sl-escrivaninha">
           <a className="sl-caderno" href={href('/resumos/caderno')} data-guia="caderno">
             <span className="sl-caderno__capa" aria-hidden="true"><i /></span>
@@ -407,6 +408,9 @@ function Lombada({ c, leitura, fechado, apagada, alvo, guia, aoFocar, aoClicar }
 /** A ficha do livro, como um item de inventário: raridade, atributos e o botão de leitura. */
 function FichaItem({ c, selo, leitura, fechado, indice, aoFechar }: { c: ResumoCapitulo; selo?: string; leitura?: Leitura; fechado: boolean; indice: Indice | null; aoFechar: () => void }) {
   const [abrindo, definirAbrindo] = useState(false)
+  const relogio = useRef<number | undefined>(undefined)
+  // Fechar a ficha (Esc, X ou "Devolver") durante a animação cancela a ida para o leitor.
+  useEffect(() => () => window.clearTimeout(relogio.current), [])
   const estado = estadoLeitura(leitura)
   const r = raridade(c.questoes.length)
   const provas = provasDoCapitulo(indice, c.questoes)
@@ -419,7 +423,7 @@ function FichaItem({ c, selo, leitura, fechado, indice, aoFechar }: { c: ResumoC
     if (abrindo) return
     tocar('pagina')
     definirAbrindo(true)
-    window.setTimeout(() => navegar(destino), ABRIR_MS)
+    relogio.current = window.setTimeout(() => navegar(destino), ABRIR_MS)
   }
   return (
     <JanelaCentral aberta aoFechar={aoFechar} rotulo={`Ficha: ${c.titulo}`} className="sl-janela-ficha">
@@ -475,7 +479,7 @@ function MesaLeitura({ continuar, capitulos }: { continuar: Array<{ c: ResumoCap
 }
 
 /** Quadro-negro: uma frase que cai por dia (do adendo Frases que caem); um toque apaga e escreve outra. */
-function QuadroNegro() {
+function QuadroNegro({ premium }: { premium: boolean }) {
   const [frases, definir] = useState<Frase[] | null>(null)
   const [i, definirI] = useState(0)
   const [apagando, definirApagando] = useState(false)
@@ -484,12 +488,13 @@ function QuadroNegro() {
     const t = window.setTimeout(() => {
       fetch(recurso('acervo/resumao.json')).then((r) => (r.ok ? r.json() : null)).then((d: { areas: Array<{ focos: Array<{ frases: Frase[] }> }> } | null) => {
         if (!vivo || !d) return
-        const todas = d.areas.flatMap((a) => a.focos.flatMap((f) => f.frases))
+        // Sem assinatura, só a amostra aberta da página das frases (FRASES_AREAS_AMOSTRA, a mesma da página).
+        const todas = (premium ? d.areas : d.areas.slice(0, FRASES_AREAS_AMOSTRA)).flatMap((a) => a.focos.flatMap((f) => f.frases))
         definir(ordemDoDia(todas.map((f) => ({ ...f, id: f.id })), hojeBR()))
       }).catch(() => undefined)
     }, 400)
     return () => { vivo = false; window.clearTimeout(t) }
-  }, [])
+  }, [premium])
   const f = frases?.[i % (frases.length || 1)]
   const outra = () => {
     if (!frases) return

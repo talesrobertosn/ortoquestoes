@@ -34,6 +34,7 @@ try {
   assert.equal(sg.palavraMagica('  Garden ')?.segredo, 'garden')
   assert.equal(sg.palavraMagica('CAFÉ')?.segredo, 'cafe')
   assert.equal(sg.palavraMagica('garden fratura'), null)
+  for (const q of ['constructor', '__proto__', 'toString', 'hasOwnProperty']) assert.equal(sg.palavraMagica(q), null, q)
   for (const p of Object.values(sg.PALAVRAS)) assert.ok(sg.SEGREDOS.some((s) => s.id === p.segredo))
   assert.equal(sg.epoca(new Date(2026, 9, 30)), 'halloween')
   assert.equal(sg.epoca(new Date(2026, 9, 23)), null)

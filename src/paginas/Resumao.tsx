@@ -1,3 +1,4 @@
+import { FRASES_AREAS_AMOSTRA } from '../biblioteca/porta'
 import { Fragment, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { usarSemCopia } from '../biblioteca/semCopia'
 import { recurso } from '../config'
@@ -21,7 +22,7 @@ import { enviarMarcas } from '../conta/cronograma'
 import { hojeBR } from '../util/dia'
 
 /** Áreas que quem não assina vê inteiras, como amostra. */
-const AREAS_AMOSTRA = 1
+const AREAS_AMOSTRA = FRASES_AREAS_AMOSTRA
 /** Tamanhos de letra da leitura (o do meio é o padrão). */
 const FONTES = ['menor', 'normal', 'maior', 'enorme'] as const
 type Fonte = typeof FONTES[number]

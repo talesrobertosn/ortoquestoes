@@ -51,7 +51,8 @@ export const PALAVRAS: Record<string, { segredo: IdSegredo; aviso: string }> = {
   lowell: { segredo: 'lowell', aviso: 'Curvas suaves em S: o gato se espreguiçou do jeito certo.' },
 }
 const normalizar = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim()
-export const palavraMagica = (busca: string) => PALAVRAS[normalizar(busca)] ?? null
+/** Só as palavras do dicionário: "constructor" ou "__proto__" na busca não viram palavra mágica. */
+export const palavraMagica = (busca: string) => { const p = normalizar(busca); return Object.prototype.hasOwnProperty.call(PALAVRAS, p) ? PALAVRAS[p] : null }
 
 /** Época do ano no salão: abóboras de 24 a 31 de outubro, pisca-pisca em dezembro. */
 export function epoca(d: Date): 'halloween' | 'natal' | null {
