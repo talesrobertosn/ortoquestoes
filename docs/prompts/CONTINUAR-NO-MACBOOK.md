@@ -1,10 +1,10 @@
-# Continuar o OrtoQuestões no MacBook
+# Continuar o OrtoQuestões em outro computador (Mac ou Windows)
 
-Documento único com todas as orientações que o Tales deu ao Claude até 30/10/2026.
+Documento único com todas as orientações que o Tales deu ao Claude até 30/10/2026. Vale para o MacBook e para qualquer outro PC.
 
 ## Como começar
 
-**No Terminal do Mac, rode uma vez:**
+### No Mac (Terminal, uma vez)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/talesrobertosn/ortoquestoes/claude/pdfs-questoes-tp64dr/scripts/macbook/preparar.sh | bash
@@ -14,9 +14,23 @@ O script faz quatro coisas:
 - cria `~/OrtoQuestoes-Biblioteca` com as pastas `livros`, `provas`, `resumos`, `lotes`, `figuras` e `prints`;
 - instala as ferramentas (git, gh, node, poppler, python, pillow);
 - clona o repositório em `~/ortoquestoes`;
-- extrai o zip do material de trabalho (lotes, figuras, prints e checkpoint), se ele estiver em Downloads ou na Mesa. No Windows, ele está em `Downloads\OrtoQuestoes-material-de-trabalho-2026-10-30.zip`: copie esse arquivo para o Mac antes de rodar o comando.
+- extrai o zip do material de trabalho (lotes, figuras, prints e checkpoint), se ele estiver em Downloads ou na Mesa.
 
-Depois, copie os livros para `~/OrtoQuestoes-Biblioteca/livros`, abra o Claude Code em `~/ortoquestoes` e mande:
+### No Windows (PowerShell, uma vez)
+
+Instale antes Git, GitHub CLI, Node, Python 3 e Poppler (`winget install Git.Git GitHub.cli OpenJS.NodeJS.LTS Python.Python.3.12 oschwartz10612.Poppler`). Depois:
+
+```powershell
+git clone https://github.com/talesrobertosn/ortoquestoes.git $HOME\ortoquestoes; cd $HOME\ortoquestoes; git checkout claude/pdfs-questoes-tp64dr; gh auth login
+```
+
+Crie a pasta `$HOME\OrtoQuestoes-Biblioteca` e extraia nela o zip do material de trabalho.
+
+### Nos dois
+
+1. Copie para o computador novo o zip mais recente do material de trabalho, `OrtoQuestoes-material-de-trabalho-2026-10-30b.zip` (no Windows antigo, em `Downloads`). Ele traz os lotes, as figuras, os prints e o `CHECKPOINT-GERAL.md`.
+2. Copie os livros para `OrtoQuestoes-Biblioteca/livros` (os mesmos nomes de arquivo; o Green em capítulos separados).
+3. Abra o Claude Code na pasta do repositório e mande:
 
 > Leia docs/prompts/CONTINUAR-NO-MACBOOK.md e siga tudo, continuamente.
 
@@ -58,6 +72,7 @@ Você continua um trabalho longo no **OrtoQuestões** (ortoquestoes.com.br), um 
 | `python3 scripts/gerar_indice.py`, `node scripts/biblioteca/gerar.mjs`, `python3 scripts/validar_acervo.py` | Índices, Biblioteca e validação, sempre antes da PR. |
 | `bash scripts/pos_aplicar.sh` | Faz tudo isso de uma vez, regenera as amostras da página inicial e roda os testes que mais quebram (amostras, Cronograma, ligações). Rode antes de toda PR. |
 | `bash scripts/publicar_pr.sh "Título" corpo.md` | Push, PR, espera os checks e só mescla se passarem. |
+| `python3 scripts/frases_livro.py cap.txt "regex" [n]` | Acha frases num capítulo extraído com `livros.py ler`, com a página do PDF. |
 
 No Mac, rode o Python com `PYTHONUTF8=1` se aparecer erro de codificação.
 
@@ -80,7 +95,7 @@ No Mac, rode o Python com `PYTHONUTF8=1` se aparecer erro de codificação.
 6. **Comentários oficiais:** reescreva em miniaula só os que a fila marca como `basico`. Preserve o gabarito, o `alerta`, o `provavel` e as referências. Ponha figuras de livro quando ajudarem de verdade.
 7. **Validar e publicar:**
    - crie o branch a partir de `origin/claude/pdfs-questoes-tp64dr`;
-   - commit terminado em `Co-Authored-By: Claude <noreply@anthropic.com>`;
+   - commit terminado com a linha de coautoria do Claude que o sistema indicar;
    - PR com corpo terminado em `🤖 Generated with [Claude Code](https://claude.com/claude-code)`;
    - **mescle só depois que o check "verificar" passar**;
    - confira o deploy ("Publicar no GitHub Pages").
@@ -162,51 +177,85 @@ Sempre extremamente gentis e formais (ver CLAUDE.md).
 
 ---
 
-## Onde paramos (30/10/2026, madrugada, no Windows)
+## Onde paramos (30/10/2026, de madrugada, no Windows)
 
-**Ciclos já publicados** (PRs 646 a 653, todas mescladas):
+### Ciclos publicados (todos mesclados, check verde e deploy concluído)
 
-1. **Anatomia da mão e punho:**
-   - resumo `netter-anatomia-mao-punho-antebraco`;
-   - 15 simulados (mao-2559 a 2573);
-   - 11 comentários oficiais em miniaula;
-   - **pendentes** cerca de 32 comentários básicos: questões com imagem e questões que pedem o Green ou o Campbell.
-2. **Genuvaro, genuvalgo e torções, parte A:**
-   - resumo `tachdjian6-alinhamento-torcoes-coxa-vara`;
-   - 12 simulados (pediatria-1399 a 1410);
-   - 28 comentários oficiais;
-   - 6 figuras do Tachdjian em 13 comentários.
+| Ciclo | Tema | Fonte | Resumo | Simulados | PRs |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Anatomia da mão e punho | Netter | `netter-anatomia-mao-punho-antebraco` | mao-2559 a 2573 | 646 a 648 |
+| 2 | Genuvaro, torções; deficiências | Tachdjian | `tachdjian6-alinhamento-torcoes-coxa-vara`, `tachdjian6-deficiencias-membros` | pediatria-1399 a 1418 | 649 a 658 |
+| 3 | Manguito rotador | Campbell cap. 46 | `campbell14-manguito-rotador` | ombro-cotovelo-0686 a 0695 | 659 a 661 |
+| 4 | Anatomia do ombro | Netter | `netter-anatomia-ombro-braco` | ombro-cotovelo-0696 a 0703 | 662 a 663 |
+| 5 | Neuropatias compressivas | Green cap. 26 | `green8-neuropatias-compressao` | mao-2574 a 2581 | 666 a 668 |
+| 6 | Omartrose e artroplastia do ombro | Campbell caps. 12 e 13 | `campbell14-omartrose-artroplastia` | ombro-cotovelo-0704 a 0711 | 669 a 670 |
+| 7 | Anatomia do quadril | Netter caps. 7 e 8 | `netter-anatomia-quadril-coxa` | quadril-0715 a 0722 | 671 a 672 |
+| 8 | Artroplastia do quadril | Campbell cap. 3 | `campbell14-ath-biomecanica-componentes` | quadril-0723 a 0732 | 673 |
+| 9 | Malformações congênitas da mão | Green caps. 35 a 38 | `green8-malformacoes-congenitas` | mao-2582 a 2591 | 674 |
+| 10 | Instabilidade anterior do ombro | Campbell cap. 47 | `campbell14-instabilidade-ombro` | ombro-cotovelo-0712 a 0719 | 675 |
+| 11 | Anatomia da coluna | Campbell cap. 37 | `campbell14-anatomia-coluna` | coluna-0564 a 0571 | 676 |
+| 12 | Anatomia do pé e tornozelo | Netter caps. 9 e 10, Hoppenfeld | `netter-anatomia-pe-tornozelo` | pe-tornozelo-0425 a 0430 | 677 |
+| 13 | Displasia do desenvolvimento do quadril | Tachdjian cap. 13 | `tachdjian6-ddq` | pediatria-1419 a 1426 | 678 |
+| 14 | Tendões flexores | Green cap. 6 | `green8-tendoes-flexores` | mao-2592 a 2597 | 680 |
+| 15 | Metástases ósseas | Campbell cap. 27 | `campbell14-metastases-osseas` | tumores-0393 a 0398 | 681 |
+| 16 | Hérnia de disco lombar e cervical | Campbell caps. 38 e 39 | `campbell14-hernia-disco` | coluna-0572 a 0577 | 682 |
+| 17 | Osteomielite aguda | Tachdjian cap. 23 | `tachdjian6-osteomielite` | conceitos-basicos-0416 a 0420 | 683 |
+| 18 | Lesão do LCA | Campbell cap. 45 | `campbell14-lca` | joelho-0383 a 0387 | 684 |
+| 19 | Ruptura distal do bíceps | Campbell cap. 48 | `campbell14-biceps-distal` | ombro-cotovelo-0720 a 0723 | 685 |
 
-3. **Genuvaro, parte B (deficiências dos membros):**
-   - resumo `tachdjian6-deficiencias-membros`;
-   - simulados pediatria-1411 a 1418;
-   - 12 comentários oficiais;
-   - figuras de AITKEN e JONES.
-4. **Manguito rotador:**
-   - resumo `campbell14-manguito-rotador`;
-   - simulados ombro-cotovelo-0686 a 0695;
-   - 16 comentários oficiais;
-   - lacunas sem fonte local (TECOC, peitoral maior, YOCUM, PASTA) listadas no checkpoint local.
-5. **Anatomia do ombro:**
-   - resumo `netter-anatomia-ombro-braco`;
-   - simulados ombro-cotovelo-0696 a 0703;
-   - 12 comentários oficiais.
+### Página impressa por livro (para citar a página certa)
+Campbell 2021: a diferença entre a página do PDF e a impressa muda por capítulo. Confira no cabeçalho de `livros.py ler`. Já medidas: cap. 3 (PDF menos 19), cap. 27 (menos 107), cap. 37 (menos 193), cap. 38 (menos 195), cap. 39 (menos 200), cap. 45 (menos 249), cap. 47 (menos 275), cap. 48 (menos 283). Tachdjian: cap. 13 (menos 77), cap. 23 (menos 146). Netter e Green traduzido: sem página impressa no texto; cite capítulo e seção.
 
-**Próximo:** ciclo 5, Neuropatia ulnar e outras compressões, das provas gerais da área de mão. Fontes: o cap. 26 do Green (Neuropatias compressivas), em PDF próprio na pasta de livros, e o cap. 77 do Campbell 2021. Depois, Omartrose e artroplastia do ombro (Campbell, cap. 12).
+### O que falta
 
-**Atenção ao tamanho dos comentários:** os ciclos 3 e 4 ficaram com comentários curtos (mediana de 1,8 a 2,1 mil caracteres). Volte à miniaula completa, calibrada pela `mao-2164`, variando o estilo.
+**1. Seguir a fila** (`python3 scripts/biblioteca/fila_editorial.py`). Próximos candidatos:
+- Estadiamento, biópsia e margens (tumores; Campbell cap. 24);
+- Displasias esqueléticas e síndromes (Tachdjian cap. 36);
+- Paralisia cerebral (Tachdjian);
+- e os demais na ordem da `FILA-EDITORIAL.md`.
 
-**Publicação:** use sempre `bash scripts/publicar_pr.sh "Título" corpo.md`. Ele só mescla quando os checks passam.
+Adiados por serem mistos, sem capítulo-fonte único: "Outros temas de trauma" e "Outras doenças congênitas". Faça-os em pedaços, por assunto.
 
-**Pendências isoladas:**
-- O tutorial da Biblioteca reapareceu numa conta que já o tinha visto; investigar `src/conta/avisosVistos.ts` e `GuiaTour`.
-- Rockwood infantil: cap. 5, com lote A escrito e não aplicado, e cap. 3. Entram quando a fila chegar a eles.
+**2. Questões oficiais pendentes dos ciclos feitos.** Ficaram sem comentário porque o livro lido não as sustentava. A lista completa por ciclo está em `CHECKPOINT-GERAL.md`. As principais:
+- **Extensores e banda sagital** (mao-0016, 0039, 0058, 0068, 0106, 0109, 0124, 0127, 0183, 0228, 0435, 0514): Green, "4- T. extensor".
+- **Infecção pós-osteossíntese e CIERNY e MADER** (conceitos-basicos-0013, 0045, 0058, 0171, 0194, 0208, 0227): Campbell cap. 21.
+- **Infecção vertebral do adulto** (conceitos-basicos-0035, 0054, 0072, 0078, 0225): Campbell cap. 42.
+- **Peitoral maior, cabeça longa do bíceps e BENNETT** (ombro-cotovelo-0054, 0078, 0315, 0412, 0452, 0001, 0311, 0352, 0464).
+- **Menisco** (joelho-0026, 0038, 0051, 0071, 0170, 0221, 0223): Campbell cap. 45, seção de menisco.
+- **Artroplastia do quadril:** Vancouver, infecção, recapeamento e artrodese (Campbell caps. 3 a 5).
+- **TECOC de ombro e cotovelo:** sem fonte local.
+- **Mão:** túnel do carpo e desfiladeiro (ciclo 5) e cerca de 32 questões de anatomia da mão.
+- **Imagem:** muitas questões de anatomia com imagem (coluna, quadril, pé). Só comente quando o gabarito deixar a estrutura clara.
 
-**Livros para os próximos ciclos:**
-- Campbell 2021: o Tales diz que é o mais importante.
-- Rockwood adulto, 10ª ed.
-- The Adult Hip 2017, para artroplastia do quadril.
-- Netter, Tachdjian e Lovell and Winter, 7ª ed.
-- Green, em capítulos separados, só para a mão.
+**3. Pendências isoladas:**
+- O tutorial da Biblioteca reapareceu numa conta que já o tinha visto. Investigar `src/conta/avisosVistos.ts` e `GuiaTour`.
+- Rockwood infantil: cap. 5, com lote A escrito e não aplicado, e cap. 3.
+- Mandar um print de questão nova ao Tales de vez em quando.
 
-**Tarefa agendada no Windows:** a "OrtoQuestões: retomar a fila editorial" roda a cada 2 horas no app do Windows. A última rodada é às 10h07 de 30/10/2026; depois ela não volta a rodar, para não disputar com o Mac. Se ainda aparecer, desative-a no app do Windows, seção Agendadas.
+### Método que funcionou (ciclos 8 a 19)
+1. Liste as oficiais do subtema, usando `oficial()` e `estado_comentario()` de `fila_editorial.py`. Pule as provas protegidas da mão.
+2. Ache o capítulo com `livros.py capitulos`, `titulos` e `buscar`. Extraia com `livros.py ler <livro> p1 p2 > cap.txt` e procure com `scripts/frases_livro.py`.
+3. Escreva `lote_a.py`, com 5 a 10 simulados, e `oficiais.py`, só com as oficiais que o livro sustenta. Ponha `alerta` quando o livro divergir da banca e feche com "O que a banca quis testar".
+4. Crie o branch a partir de `origin/claude/pdfs-questoes-tp64dr` e rode `aplicar_lote.py`.
+5. Converta `oficiais.py` em JSON conferindo, para cada questão:
+   - que a letra da correta é igual ao gabarito do acervo;
+   - que as incorretas são exatamente as demais letras.
+
+   Depois rode `aplicar_comentarios.py`. Essa conferência pegou um erro meu na quadril-0330.
+6. Escreva o resumo `.md`:
+   - `treino=` com os ids dos simulados recém-criados;
+   - `alerta` para as relacionadas que o livro não sustenta.
+7. Rode `bash scripts/pos_aplicar.sh`.
+8. Faça commit de tudo, **inclusive `public/acervo/indice.json`**. Sem ele o check falha, porque não acha os ids novos.
+9. Publique com `bash scripts/publicar_pr.sh`.
+
+### Armadilhas conhecidas
+- **`testar_sincronia_aparelhos` falha perto da meia-noite**, por causa dos relógios simulados de -7 e +9 minutos. Rode de novo depois das 00h10 (`gh run rerun <id> --failed`).
+- **`testar_adiantar_ponta_a_ponta` pode quebrar por arredondamento** quando o acervo cresce. Já tem tolerância de até 2 questões; se voltar, ajuste a tolerância, sem desligar o teste.
+- **No Windows:**
+  - `aplicar_comentarios.py` às vezes dá `OSError Errno 22` ao gravar `comentarios/ombro-cotovelo.json`; repetir resolve, e depois confira o JSON;
+  - caminhos longos de scratchpad quebram o Python, então use uma pasta temporária curta.
+- **Comentários curtos:** a mediana ficou em 1,8 a 2,4 mil caracteres. Mire 2,5 a 3,5 mil, em miniaula, variando o estilo.
+
+### Tarefa agendada no Windows
+A "OrtoQuestões: retomar a fila editorial" roda no app do Windows até 10h07 de 30/10/2026. Se for continuar em outro computador, desative-a no Windows (app, seção Agendadas), para as duas máquinas não trabalharem ao mesmo tempo.
