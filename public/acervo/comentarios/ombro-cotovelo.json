@@ -12,14 +12,19 @@
  },
  "ombro-cotovelo-0002": {
   "incorretas": {
-   "B": "O nervo musculocutâneo pode ser lesado na luxação, mas bem menos que o axilar. A artéria está certa.",
-   "C": "A artéria circunflexa posterior do úmero acompanha o nervo axilar no espaço quadrangular, mas a lesão vascular descrita na luxação anterior é a do tronco da artéria axilar.",
-   "D": "Erra os dois: o nervo mais lesado é o axilar e o vaso é a artéria axilar."
+   "B": "**Erra o nervo.** O musculocutâneo nasce do fascículo lateral e perfura o coracobraquial, longe da cápsula inferior. Não é o nervo que o Netter associa às luxações glenoumerais; esse é o axilar.",
+   "C": "**Acerta o nervo e troca a artéria.** A artéria circunflexa posterior do úmero acompanha o axilar no espaço quadrangular, por isso a alternativa parece lógica. O gabarito da banca, porém, marca a artéria axilar para a luxação anterior.",
+   "D": "**Erra os dois.** O musculocutâneo não é o nervo da luxação, e a circunflexa posterior, embora acompanhe o axilar, não é a artéria do gabarito. A alternativa mistura o nervo errado com o vaso do espaço quadrangular."
   },
-  "conceito": "Na **luxação anterior do ombro**, a cabeça do úmero sai da glenoide (a \"cavidade\" da escápula onde ela se encaixa) e vai para a frente e para baixo. Nesse caminho, ela estica as estruturas que passam logo abaixo e à frente da articulação: o plexo braquial e os vasos axilares.\n\nO nervo mais lesado é o **nervo axilar**. Ele nasce do fascículo posterior do plexo braquial, com fibras de C5 e C6, passa por baixo da articulação e contorna o colo do úmero por trás, através de uma passagem entre músculos chamada **espaço quadrangular**, para chegar ao deltoide. Nesse trajeto ele fica preso, sem folga. Quando a cabeça do úmero desce e vai para a frente, o nervo é esticado diretamente. A lesão é frequente, ainda mais em pacientes acima dos 50 anos, e quase sempre é uma neuropraxia, um \"atordoamento\" do nervo que se recupera em semanas a meses.\n\nExaminar o axilar **antes e depois** da redução é obrigatório. Como testar a força do deltoide é impossível com o ombro luxado e doendo, o exame que funciona é a **sensibilidade** da parte lateral do ombro, sobre o deltoide, a região do \"emblema militar\".\n\nO vaso lesado é a **artéria axilar**, o tronco principal que leva sangue para o braço. A lesão é rara, mas grave, e acontece mais em idosos, cujas artérias são endurecidas pela aterosclerose e não se esticam, principalmente em luxações antigas ou em manobras de redução feitas com força. Inchaço que cresce na axila, pulso do punho fraco ou ausente e mão pálida exigem avaliação vascular de urgência.",
-  "correta": "Nervo axilar e artéria axilar. O nervo axilar, preso no espaço quadrangular, é esticado pela cabeça luxada; a artéria axilar é o vaso que pode romper, sobretudo em idosos.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Depois de reduzir uma luxação anterior do ombro, o médico encosta o dedo na face lateral do ombro e pede para o paciente contrair o deltoide. Esse gesto de dez segundos existe por causa de um nervo que passa exatamente onde a cabeça do úmero desceu.\n\n**O nervo.** O **axilar** (C5 e C6) nasce do fascículo posterior e passa **diretamente abaixo da cápsula articular**; depois segue para trás com a artéria circunflexa posterior do úmero pelo **espaço quadrangular** e se curva para a frente cerca de 5 cm abaixo do acrômio. O Netter's Concise diz que ele **pode ser lesado nas luxações glenoumerais** e nas vias laterais (cap. 3). Inerva o deltoide e o redondo menor e dá a sensibilidade da face lateral proximal do braço.\n\n**Por que ele e não o musculocutâneo.** O musculocutâneo sai do fascículo lateral, mais anterior, e entra no coracobraquial cerca de 8 cm abaixo do coracoide; está mais longe da cápsula inferior, onde a cabeça luxada pressiona.\n\n**E a artéria.** A banca pede também a artéria, e o gabarito marca a axilar. O capítulo lido não traz esse dado, como registra o alerta; o que ele mostra é a relação do nervo axilar com a circunflexa posterior no espaço quadrangular, o que explica por que essa artéria aparece como distrator. O resumo Anatomia do ombro e do braço traz o plexo.\n\n**O que a banca quis testar.** A lesão nervosa típica da luxação anterior, e se o candidato sabe que o nervo, e não só a artéria, está em risco.",
+  "correta": "**A: axilar e a artéria axilar.** É o gabarito oficial. O nervo axilar, logo abaixo da cápsula, é o nervo lesado nas luxações glenoumerais, segundo o Netter's Concise; o dado sobre a artéria não aparece no capítulo lido, como registra o alerta.",
+  "conferido": false,
+  "alerta": "Gabarito oficial A preservado. O Netter's Concise (cap. 3) confirma que o nervo axilar pode ser lesado nas luxações glenoumerais, porque corre logo abaixo da cápsula; o capítulo lido não diz qual artéria é a mais acometida na luxação anterior.",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Nerves: brachial plexus, posterior cord (axillary nerve)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0003": {
   "incorretas": {
@@ -705,14 +710,18 @@
  },
  "ombro-cotovelo-0044": {
   "incorretas": {
-   "A": "**Cápsula fina, reforços fazem o trabalho.** A cápsula glenoumeral é frouxa e redundante para permitir o movimento; quem restringe a translação são os espessamentos ligamentares dentro dela.",
-   "B": "**Importante, mas secundário.** O lábio aprofunda a glenoide, veda a articulação e serve de ancoragem aos ligamentos, mas não é o restritor primário da translação anteroposterior.",
-   "C": "**Age em outra faixa de abdução.** O glenoumeral médio restringe a translação anterior em abdução intermediária, cerca de 45 a 60 graus, e pode estar ausente em parte das pessoas."
+   "A": "**A cápsula é o tecido, não o estabilizador específico.** Os ligamentos glenoumerais são justamente espessamentos da cápsula anterior e inferior. A cápsula sozinha, sem esses reforços, não é o estabilizador primário que a banca procura.",
+   "B": "**O lábio ajuda, mas como para-choque.** O Netter diz que o lábio aprofunda a glenoide, aumenta a área de contato e serve de inserção para os ligamentos. A desinserção dele causa instabilidade porque solta os ligamentos, mas o freio da translação é o glenoumeral inferior.",
+   "C": "**Tem papel menor.** O glenoumeral médio limita a rotação externa nas faixas baixa e média de abdução. O ligamento que o Netter chama de o mais importante, e que segura a translação nos dois sentidos, é o inferior."
   },
-  "conceito": "**A rede que segura a cabeça.** Entre os estabilizadores estáticos do ombro, o mais importante é o **ligamento glenoumeral inferior**. Ele tem a forma de uma rede de dormir presa à glenoide e ao colo do úmero, com uma **banda anterior**, uma **banda posterior** e o **recesso axilar** entre elas. Com o braço em **abdução de 90 graus**, posição funcional e posição de luxação, essa rede passa por baixo da cabeça e controla a translação para a frente, para trás e para baixo.\n\n**Como ela funciona na rotação.** Em **rotação externa**, a banda anterior desliza para a frente e para baixo e segura a cabeça contra a translação **anterior**. Em **rotação interna**, é a banda posterior que vai para trás e impede a translação **posterior**. Por isso esse ligamento é o restritor primário da translação anteroposterior, e a banda anterior é a estrutura que se arranca da glenoide na **lesão de Bankart**, ou do úmero na **HAGL**.\n\n**Cada ligamento em sua posição.** O **glenoumeral superior**, com o coracoumeral, restringe a translação inferior com o braço ao lado do corpo; sua falha dá o sinal do sulco. O **glenoumeral médio** age na abdução intermediária, de 45 a 60 graus, e é variável, podendo faltar. O **lábio** aprofunda a glenoide em cerca de 50%, cria um efeito de vedação e ancora os ligamentos. Completam a estabilidade estática a congruência óssea, a pressão intra-articular negativa e a adesão do líquido sinovial.\n\n**Os estabilizadores dinâmicos.** O **manguito rotador** comprime a cabeça contra a glenoide (compressão côncava) e forma pares de forças que a mantêm centrada; a cabeça longa do bíceps e os músculos da escápula ajudam a posicionar a glenoide sob a cabeça. Na instabilidade multidirecional, sem lesão estrutural, é o fortalecimento desses estabilizadores que trata a maioria dos pacientes.\n\n**Na prova:** o restritor primário da translação anteroposterior é o **ligamento glenoumeral inferior**, que trabalha em abdução; banda anterior na rotação externa, posterior na interna.",
-  "correta": "**O ligamento glenoumeral inferior.** Com o braço em abdução, suas bandas anterior e posterior sustentam a cabeça como uma rede e impedem a translação para a frente e para trás, conforme a rotação do braço.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "A cápsula, o lábio e os ligamentos fazem parte da mesma parede, mas a banca pergunta qual peça segura a cabeça quando ela tenta escapar para a frente ou para trás. O Netter's Concise responde sem rodeios: é o glenoumeral inferior.\n\n**O ligamento mais importante.** O Netter descreve o **glenoumeral inferior** como **o ligamento mais importante** do ombro. Ele forma uma **rede** (sling) que se tensiona em **abdução e rotação externa**, pela **banda anterior**, e em **rotação interna**, pela **banda posterior** (cap. 3).\n\n**Como ele trabalha nas duas direções.**\n- A **banda anterior** resiste à **translação anterior e inferior** em abdução e rotação externa, e precisa ser tensionada na instabilidade anterior e na multidirecional.\n- A **banda posterior** resiste à **translação posterior** em rotação interna e 90 graus de flexão.\n\nÉ por isso que ele é o estabilizador primário da translação **anteroposterior**: segura a cabeça para os dois lados, conforme a posição do braço.\n\n**Os outros.** Os ligamentos são espessamentos da cápsula anterior e inferior, e **não há ligamentos posteriores nem superiores** verdadeiros. O **lábio** aprofunda a glenoide e funciona como para-choque e ponto de inserção dos ligamentos. O **glenoumeral médio** tem papel menor. O resumo Anatomia do ombro e do braço traz a tabela dos ligamentos.",
+  "correta": "**D: o ligamento glenoumeral inferior.** O Netter's Concise o descreve como o ligamento mais importante, com uma banda anterior que resiste à translação anterior e uma posterior que resiste à translação posterior (cap. 3).",
+  "conferido": false,
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Joints: glenohumeral (ligaments)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0045": {
   "conceito": "No perfil da escápula, a cabeça umeral normal fica **centrada no Y**, na projeção da glenoide. O Y é a referência escapular; a pergunta não pede para onde a cabeça pode luxar, mas onde ela deve estar quando a articulação está alinhada.\n\nA avaliação do trauma precisa responder a duas perguntas diferentes: como o osso quebrou e se a cabeça continua articulada com a glenoide. Uma radiografia isolada pode mostrar a fratura e esconder a luxação. A série do capítulo inclui AP do ombro, AP verdadeira da escápula ou Grashey, perfil em Y e axilar; a legenda independente da figura 36-3 explicita a cabeça centrada na glenoide (Rockwood, 10ª ed., cap. 36, “Radiografias e tomografia”).\n\n**As projeções se complementam.** O Grashey abre o espaço glenoumeral, o perfil fornece uma direção perpendicular e a axilar é destacada para verificar a relação cabeça–glenoide e os tubérculos. Se a dor impede a posição axilar usual, o capítulo apresenta as adaptações de Velpeau e Codman, sem exigir que o paciente force a abdução dolorosa.\n\nO perfil em Y também serve para angulação e translação de fraturas da escápula, mas essas medidas da borda lateral são outro problema. Uma cabeça que parece desviada deve motivar confirmação da congruência em mais de um plano; não se deve aceitar “anterior” ou “posterior” como posição normal só porque um desses deslocamentos é conhecido nas luxações.\n\n> **Na prova:** cabeça central no Y é a relação normal; a série completa evita perder uma luxação.",
@@ -785,14 +794,18 @@
  },
  "ombro-cotovelo-0047": {
   "incorretas": {
-   "A": "**Nervo próprio.** O subclávio é inervado pelo nervo do subclávio, pequeno ramo do tronco superior do plexo.",
-   "B": "**Nervos peitorais.** O peitoral maior recebe os nervos peitorais medial e lateral, dos fascículos medial e lateral, e não o musculocutâneo.",
-   "C": "**Nervos subescapulares.** O subescapular é inervado pelos nervos subescapulares superior e inferior, ramos do fascículo posterior."
+   "A": "**Tem nervo próprio.** O subclávio é inervado pelo nervo para o subclávio, que sai do tronco superior e desce atrás da clavícula. Ele deprime a clavícula e protege os vasos subclávios, sem relação com o musculocutâneo.",
+   "B": "**É dos nervos peitorais.** O peitoral maior recebe o peitoral lateral, na porção clavicular, e o peitoral medial, na porção esternal. Não divide nervo com o bíceps.",
+   "C": "**É do fascículo posterior.** O subescapular é inervado pelos nervos subescapulares superior e inferior. O musculocutâneo, que inerva a cabeça curta do bíceps, vem do fascículo lateral."
   },
-  "conceito": "**O tendão conjunto.** A **cabeça curta do bíceps** e o **coracobraquial** se originam juntos na ponta do processo **coracoide**, formando o **tendão conjunto**. Os dois são inervados pelo **nervo musculocutâneo**, ramo do fascículo lateral do plexo braquial (C5 a C7), que também inerva o **braquial**. Os três são os músculos do compartimento anterior do braço.\n\n**O trajeto do musculocutâneo.** O nervo nasce na axila, **perfura o coracobraquial**, em média cerca de 5 cm abaixo da ponta do coracoide (às vezes bem mais perto), desce entre o bíceps e o braquial inervando os dois e, no cotovelo, sai lateralmente ao tendão do bíceps como **nervo cutâneo lateral do antebraço**, puramente sensitivo. Uma lesão alta dá perda da flexão do cotovelo e hipoestesia na face lateral do antebraço.\n\n**Onde isso importa na cirurgia.** Nas transferências do coracoide para a glenoide (**Latarjet** e **Bristow**), o tendão conjunto é mobilizado com o nervo preso a ele, e o musculocutâneo é o nervo mais lesado nessas operações, quase sempre por tração, com neuropraxia transitória. O mesmo nervo, no seu trecho sensitivo, é o mais lesado na reinserção do bíceps distal por via anterior única.\n\n**A inervação dos distratores.** O **subclávio** recebe o nervo do subclávio, ramo do tronco superior. O **peitoral maior** recebe os nervos peitorais **lateral** (do fascículo lateral) e **medial** (do fascículo medial), cujos nomes vêm do fascículo de origem e não da posição no músculo. O **subescapular** recebe os nervos subescapulares superior e inferior, do fascículo posterior, que também dá o toracodorsal e o axilar.\n\n**Na prova:** cabeça curta do bíceps e **coracobraquial** compartilham origem no coracoide e inervação pelo **musculocutâneo**, o nervo em risco na Latarjet.",
-  "correta": "**Coracobraquial.** Ele divide com a cabeça curta do bíceps a origem na ponta do coracoide e a inervação pelo nervo musculocutâneo, que atravessa o próprio coracobraquial.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "**Direto:** a cabeça curta do bíceps e o coracobraquial nascem juntos no coracoide, formam o tendão conjunto e têm o mesmo nervo, o **musculocutâneo**.\n\n**A tabela do Netter's Concise** (cap. 4, Arm): o **coracobraquial** nasce no **coracoide** e se insere no terço médio do úmero; a **cabeça curta do bíceps** também nasce no **coracoide**; os dois são inervados pelo **musculocutâneo**, e o livro comenta que ambos fazem **parte do tendão conjunto**. A cabeça longa nasce no tubérculo supraglenoidal e também é do musculocutâneo; o braquial recebe o musculocutâneo na parte medial e o radial na lateral.\n\n**O detalhe do trajeto.** O musculocutâneo **perfura o coracobraquial** cerca de 8 cm abaixo do coracoide e depois corre entre o bíceps e o braquial. Por isso, ele é o nervo do músculo que atravessa e dos dois que acompanha.\n\n**Os outros músculos.** O **subclávio** tem nervo próprio, o nervo para o subclávio, que sai do tronco superior. O **peitoral maior** é dos nervos peitorais lateral e medial. O **subescapular**, dos subescapulares superior e inferior, do fascículo posterior. O resumo Anatomia do ombro e do braço traz a tabela.",
+  "correta": "**D: coracobraquial.** A cabeça curta do bíceps e o coracobraquial nascem no coracoide, formam o tendão conjunto e são inervados pelo musculocutâneo, segundo o Netter's Concise (cap. 4).",
+  "conferido": false,
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 4 (Arm), Muscles: anterior compartment",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0048": {
   "incorretas": {
@@ -1054,14 +1067,18 @@
  },
  "ombro-cotovelo-0068": {
   "incorretas": {
-   "A": "**Músculo e nervo trocados.** O redondo maior existe logo ao lado, mas é inervado pelo subescapular inferior, e o toracodorsal é o nervo do grande dorsal.",
-   "C": "**Músculo certo, nervo do vizinho.** O grande dorsal está identificado, mas o subescapular inferior inerva o redondo maior e parte do subescapular, não o grande dorsal.",
-   "D": "**Os dois errados.** O músculo indicado é o grande dorsal, e não o redondo maior; o subescapular inferior não é a resposta."
+   "A": "**Erra o músculo.** O redondo maior é o vizinho do grande dorsal, mas é inervado pelo subescapular inferior, e não pelo toracodorsal. O gabarito aponta o grande dorsal na imagem.",
+   "C": "**Acerta o músculo e erra o nervo.** O subescapular inferior inerva o redondo maior e a parte inferior do subescapular. O grande dorsal tem nervo próprio, o toracodorsal.",
+   "D": "**Erra os dois em relação ao gabarito.** O redondo maior e o subescapular inferior formam um par correto entre si, mas o músculo apontado é o grande dorsal, com o toracodorsal. A alternativa é a mais tentadora para quem confunde os dois músculos na imagem."
   },
-  "conceito": "**O grande dorsal.** O **latíssimo do dorso** é o músculo mais largo do corpo. Origina-se nos processos espinhosos das seis últimas vértebras torácicas e das lombares pela fáscia toracolombar, na crista ilíaca e nas últimas costelas, às vezes também no ângulo inferior da escápula. Suas fibras convergem num tendão plano que contorna o redondo maior por baixo e se insere no **assoalho do sulco intertubercular** do úmero. É adutor, extensor e rotador interno do braço, o músculo de escalar, remar e usar muletas.\n\n**A inervação e o pedículo.** É inervado pelo **nervo toracodorsal** (C6 a C8), ramo do fascículo posterior do plexo braquial, que desce pela parede posterior da axila junto com a **artéria toracodorsal**, ramo da subescapular, e entra no músculo pela sua face profunda. Esse pedículo longo e confiável é o que faz do grande dorsal o retalho de eleição em reconstruções da mama, do tórax e do membro superior, e o que permite transferi-lo como unidade motora.\n\n**O vizinho que confunde.** O **redondo maior** corre lado a lado com o grande dorsal na parede posterior da axila, mas nasce no **ângulo inferior da escápula** e se insere na **crista do tubérculo menor**; é inervado pelo **nervo subescapular inferior**. Os dois são rotadores internos e adutores, e por isso são às vezes transferidos juntos na paralisia obstétrica.\n\n**Onde ele aparece na ortopedia.** Na rotura irreparável posterossuperior do manguito, o tendão do grande dorsal é levado ao **tubérculo maior** para funcionar como **rotador externo** (transferência de Gerber, derivada de L'Episcopo). Na paralisia obstétrica com contratura em rotação interna, a transferência do grande dorsal e do redondo maior para o manguito posterior melhora a rotação externa.\n\n**Na prova:** grande dorsal: insere no sulco intertubercular e é inervado pelo **toracodorsal**; o redondo maior é inervado pelo **subescapular inferior**.",
-  "correta": "**Grande dorsal e nervo toracodorsal.** O músculo largo que cruza a parede posterior da axila até o sulco intertubercular é o grande dorsal, inervado pelo nervo toracodorsal, ramo do fascículo posterior que desce com os vasos toracodorsais.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "O músculo apontado é o grande dorsal, o maior da parede posterior do tronco, que sobe até o úmero ao lado do redondo maior. A pergunta é o nervo, e é aí que os dois vizinhos se separam.\n\n**O nervo do grande dorsal.** O **toracodorsal** (C7 e C8) sai do **fascículo posterior** e corre com a artéria toracodorsal, **profundo ao grande dorsal**, que ele inerva (Netter's Concise, cap. 3). O livro também o chama de subescapular médio.\n\n**O vizinho que confunde.** O **redondo maior** nasce no ângulo inferior da escápula, roda internamente e aduz o braço, como o grande dorsal, e se insere perto dele. Mas é inervado pelo **subescapular inferior** (C5 e C6), que também vai para a parte inferior do subescapular. O comentário do Netter: o redondo maior **protege o nervo radial na via posterior**.\n\n**A ordem no fascículo posterior.** Subescapular superior, toracodorsal, subescapular inferior, axilar e radial. Lembrar essa sequência evita trocar os dois. O resumo Anatomia do ombro e do braço traz o plexo.",
+  "correta": "**B: grande dorsal e o nervo toracodorsal.** O grande dorsal é inervado pelo toracodorsal, ramo do fascículo posterior que corre profundo a ele, segundo o Netter's Concise (cap. 3).",
+  "conferido": false,
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Nerves: brachial plexus, posterior cord",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0069": {
   "incorretas": {
@@ -1254,14 +1271,18 @@
  },
  "ombro-cotovelo-0085": {
   "incorretas": {
-   "A": "**Os dois errados.** O fascículo medial dá o ulnar, não o axilar, e o lateral dá o musculocutâneo, não o ulnar.",
-   "C": "**Invertido e errado.** O lateral origina o musculocutâneo e a raiz lateral do mediano; o axilar vem do posterior, e o ulnar, do medial.",
-   "D": "**Invertido.** O axilar vem do posterior e o ulnar do medial, não o contrário."
+   "A": "**Inverte o axilar.** O fascículo medial dá o ulnar, e não o axilar; e o fascículo lateral dá o musculocutâneo e a raiz lateral do mediano, e não o ulnar. A alternativa troca os dois.",
+   "C": "**Erra os dois.** O fascículo lateral não dá o axilar, e o posterior não dá o ulnar. O posterior leva o axilar e o radial; o medial, o ulnar.",
+   "D": "**Acerta o ulnar no lugar errado da frase.** O ulnar vem do fascículo medial, mas a ordem pedida é axilar e ulnar, e o axilar é do posterior. A alternativa inverte a sequência e põe o axilar no medial."
   },
-  "conceito": "**Como o plexo se organiza.** O plexo braquial nasce das raízes **C5 a T1**, que formam três **troncos** (superior, médio e inferior); cada tronco se divide em uma divisão anterior e uma posterior; e as divisões se reúnem em três **fascículos**, nomeados pela posição em relação à **artéria axilar**: lateral, medial e posterior. Dos fascículos saem os ramos terminais.\n\n**O fascículo posterior.** Formado pelas **divisões posteriores dos três troncos**, é o plexo dos músculos **extensores e abdutores**. Dá o nervo **axilar** (deltoide e redondo menor) e o **radial** (tríceps, extensores do punho e dos dedos), além dos nervos subescapular superior, **toracodorsal** (grande dorsal) e subescapular inferior (redondo maior e parte do subescapular).\n\n**Os fascículos lateral e medial.** O **lateral**, das divisões anteriores dos troncos superior e médio, dá o **musculocutâneo**, a raiz lateral do **mediano** e o peitoral lateral. O **medial**, da divisão anterior do tronco inferior (C8 e T1), dá o nervo **ulnar**, a raiz medial do mediano, o peitoral medial e os cutâneos mediais do braço e do antebraço. O **mediano** é o único ramo terminal com dupla origem, formando o \"M\" na axila junto com o musculocutâneo e o ulnar.\n\n**Por que isso cai na clínica.** Como axilar e radial vêm do mesmo fascículo, a lesão do **fascículo posterior** (por exemplo, na luxação anterior do ombro ou por uso inadequado de muleta) dá déficit combinado do deltoide e de toda a extensão do cotovelo, do punho e dos dedos, diferente da lesão isolada do axilar. Já a lesão do tronco inferior ou do fascículo medial (paralisia de Klumpke, costela cervical) compromete os músculos intrínsecos da mão, inervados pelo ulnar e pelo mediano.\n\n**Na prova:** axilar e radial saem do **fascículo posterior**; ulnar, do **medial**; musculocutâneo, do **lateral**; mediano, do lateral e do medial.",
-  "correta": "**Posterior e medial.** O axilar é ramo do fascículo posterior, com o radial; o ulnar é o ramo terminal do fascículo medial.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "O plexo braquial termina em três fascículos, e cada um tem a sua turma. Guardar quem sai de cada fascículo resolve metade das questões de nervo do ombro.\n\n**Os fascículos no Netter's Concise** (cap. 3):\n- **Lateral:** peitoral lateral, raiz lateral do mediano e **musculocutâneo**.\n- **Medial:** peitoral medial, raiz medial do mediano, **ulnar** e os nervos cutâneos mediais do braço e do antebraço.\n- **Posterior:** subescapular superior, **toracodorsal**, subescapular inferior, **axilar** e **radial**.\n\n**O axilar.** Nasce do **fascículo posterior** (C5 e C6), passa logo abaixo da cápsula, sai pelo espaço quadrangular e inerva o deltoide e o redondo menor.\n\n**O ulnar.** É o grande ramo do **fascículo medial** (C7, C8 e T1), que desce pelo braço medial e passa atrás do epicôndilo medial.\n\n**Um jeito de lembrar.** O fascículo **posterior** inerva tudo o que estende e o que está atrás: o deltoide e o redondo menor pelo axilar, o tríceps e os extensores pelo radial, o grande dorsal pelo toracodorsal. O fascículo **medial** leva os nervos da borda medial do membro. O resumo Anatomia do ombro e do braço traz o plexo inteiro.",
+  "correta": "**B: posterior e medial.** O axilar sai do fascículo posterior, e o ulnar, do fascículo medial, como mostra o plexo braquial no Netter's Concise (cap. 3).",
+  "conferido": false,
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Nerves: brachial plexus (cords)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0086": {
   "incorretas": {
@@ -3115,25 +3136,33 @@
  },
  "ombro-cotovelo-0253": {
   "incorretas": {
-   "A": "**Face anterior.** O subescapular ocupa a fossa subescapular, na frente da escápula, e se insere no tubérculo menor.",
-   "B": "**Largo e fino.** O grande dorsal vem do dorso e da pelve e contorna o redondo maior para se inserir no assoalho do sulco intertubercular.",
-   "D": "**Não chega ao úmero.** O serrátil anterior vai das costelas à borda medial da escápula, na parede torácica."
+   "A": "**Fica na frente da escápula.** O subescapular ocupa a fossa subescapular, na face anterior, e é o rotador interno do manguito. Na imagem, o músculo apontado sai do ângulo inferior da escápula.",
+   "B": "**É o vizinho, mas vem de mais longe.** O grande dorsal acompanha o redondo maior até o úmero, mas nasce na parede posterior do tronco e é inervado pelo toracodorsal. A troca entre os dois é a mais comum nas imagens.",
+   "D": "**Vai para outro lugar.** O serrátil anterior nasce nas costelas e se insere na borda medial da escápula, segurando-a no tórax. Não chega ao úmero."
   },
-  "conceito": "**O redondo maior.** Nasce na face posterior do **ângulo inferior da escápula** e se insere na **crista do tubérculo menor**, o lábio **medial** do sulco intertubercular. É adutor, extensor e rotador interno do braço, e é inervado pelo **nervo subescapular inferior**. Anatomicamente fica junto ao **grande dorsal**, que o contorna por baixo, gira ao redor dele e se insere no **assoalho** do sulco. É chamado de \"pequeno ajudante do grande dorsal\".\n\n**Os espaços da axila posterior.** O redondo maior forma a borda **inferior** de três espaços. **Espaço quadrangular**: redondo menor em cima, redondo maior embaixo, cabeça longa do tríceps medial e úmero lateral; passam o **nervo axilar** e a **artéria circunflexa posterior** do úmero. **Espaço triangular** (medial): redondo menor, redondo maior e cabeça longa do tríceps; passa a **artéria circunflexa da escápula**. **Intervalo triangular** (lateral, abaixo do redondo maior): redondo maior em cima, cabeça longa e cabeça lateral do tríceps; passam o **nervo radial** e a **artéria braquial profunda**.\n\n**Como separar dos vizinhos.** O **subescapular** fica na face anterior da escápula e vai ao tubérculo menor. O **grande dorsal** é largo e fino, vem das costas e da pelve, e se insere no assoalho do sulco. O **serrátil anterior** nasce das costelas e se prende na borda medial da escápula, sem chegar ao úmero.\n\n**Uso cirúrgico.** O redondo maior, junto com o grande dorsal, é transferido para recuperar a **rotação externa** (procedimento de L'Episcopo) nas lesões maciças posterossuperiores e na paralisia obstétrica.\n\n**Na prova:** o músculo grosso que vai do ângulo inferior da escápula ao lábio medial do sulco e forma a borda inferior do espaço quadrangular é o **redondo maior**.",
-  "correta": "**Redondo maior.** Nasce no ângulo inferior da escápula, se insere na crista do tubérculo menor e forma a borda inferior dos espaços quadrangular e triangular.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "A seta aponta o redondo maior, o músculo que vai do ângulo inferior da escápula ao úmero e que, na prática cirúrgica, serve de referência para achar o nervo radial.\n\n**O redondo maior, no Netter's Concise** (cap. 3): nasce no **ângulo inferior da escápula**, roda o braço **internamente** e o **aduz**, e o livro comenta que ele **protege o nervo radial na via posterior**. É inervado pelo **subescapular inferior**. Ele limita por baixo o espaço quadrangular e o espaço triangular, e por cima o intervalo triangular.\n\n**Os vizinhos das alternativas.**\n- O **grande dorsal** passa junto do redondo maior até o úmero, mas nasce bem mais embaixo, nas costas, e é do toracodorsal.\n- O **subescapular** está na face anterior da escápula, na fossa subescapular.\n- O **serrátil anterior** nasce nas costelas 1 a 8 e se insere na borda medial da escápula.\n\nO resumo Anatomia do ombro e do braço traz a tabela dos músculos.",
+  "correta": "**C: redondo maior.** É o músculo que nasce no ângulo inferior da escápula, roda internamente e aduz o braço, inervado pelo subescapular inferior, segundo o Netter's Concise (cap. 3).",
+  "conferido": false,
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Muscles: rotator cuff (teres major)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0254": {
   "incorretas": {
-   "B": "**Passa mais abaixo.** O radial cruza o intervalo triangular, abaixo do redondo maior, e segue pelo sulco espiral.",
-   "C": "**Face anterior.** Os nervos subescapulares correm na face anterior da escápula, inervando subescapular e redondo maior.",
-   "D": "**Borda superior da escápula.** O supraescapular passa pela incisura supraescapular e pela espinoglenoidal, inervando supraespinal e infraespinal."
+   "B": "**Passa mais abaixo.** O radial desce pelo intervalo triangular, com a artéria profunda do braço, até o sulco espiral do úmero. Na face posterior do ombro, ele fica abaixo e medial ao axilar.",
+   "C": "**Fica na frente da escápula.** Os subescapulares superior e inferior correm na parede posterior da axila, pela face anterior da escápula, para o subescapular e o redondo maior. Não contornam o úmero por trás.",
+   "D": "**Passa por cima.** O supraescapular cruza a incisura supraescapular, sob o ligamento, e depois a espinoglenoidal, para o supraespinal e o infraespinal. Não desce até o colo do úmero."
   },
-  "conceito": "**O nervo axilar.** É ramo **terminal** do **fascículo posterior** (C5 e C6), junto com o radial. Passa pela borda inferior do **subescapular**, perto da cápsula anteroinferior, cruza o **espaço quadrangular** com a **artéria circunflexa posterior** e contorna o **colo cirúrgico** do úmero por trás. Ali se divide em ramo **posterior**, que inerva o **redondo menor** e a parte posterior do deltoide e dá o **cutâneo lateral superior do braço** (a pele do \"distintivo do regimento\"), e ramo **anterior**, que dá a volta sob o deltoide e inerva as porções média e anterior.\n\n**A zona de perigo nas vias.** Na via que **divide o deltoide** (anterolateral), o nervo cruza a face profunda do músculo a cerca de **5 a 7 cm** abaixo da borda lateral do acrômio; a divisão além disso desnerva o deltoide anterior. Na **via deltopeitoral**, ele fica na borda inferior do subescapular. Na **artroscopia**, os portais posteriores e as suturas capsulares inferiores são pontos de risco.\n\n**Quando ele se lesa.** Na **luxação anterior** do ombro (até cerca de 40% com alguma alteração eletroneuromiográfica, sobretudo em idosos), na **fratura do colo cirúrgico**, em contusões diretas e na **síndrome do espaço quadrangular** do arremessador. O quadro é fraqueza da abdução e hipoestesia na face lateral do ombro. A maioria recupera; sem sinal de recuperação em 3 a 6 meses, pensa-se em exploração, neurólise, enxerto ou transferência (ramo do tríceps para o axilar).\n\n**Os outros nervos da lista.** O **radial** desce pelo intervalo triangular e pelo sulco espiral. O **subescapular** (superior e inferior) inerva o subescapular e o redondo maior, na face anterior. O **supraescapular** cruza a incisura supraescapular e a espinoglenoidal.\n\n**Na prova:** o nervo que atravessa o **espaço quadrangular** e contorna o colo cirúrgico por trás é o **axilar**, a cerca de 5 cm do acrômio.",
-  "correta": "**Axilar.** Ramo do fascículo posterior que passa pelo espaço quadrangular com a circunflexa posterior e contorna o colo cirúrgico, inervando deltoide e redondo menor.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "A seta aponta o nervo axilar, o que sai pela janela de quatro lados atrás do ombro e se curva para a frente sob o deltoide.\n\n**O axilar, no Netter's Concise** (cap. 3): nasce do **fascículo posterior** (C5 e C6), passa **logo abaixo da cápsula**, vai para trás com a **artéria circunflexa posterior do úmero** pelo **espaço quadrangular** e se curva para a frente cerca de **5 cm abaixo do acrômio**. Inerva o **deltoide** (ramo profundo) e o **redondo menor** (ramo superficial) e dá a sensibilidade lateral proximal do braço. Pode ser lesado nas luxações glenoumerais e nas vias laterais.\n\n**Como reconhecer na imagem.** É o nervo que contorna o úmero proximal por trás, saindo do espaço quadrangular para a face profunda do deltoide. O **radial** desce mais abaixo, pelo intervalo triangular, para o sulco espiral; o **subescapular** fica na frente da escápula; o **supraescapular** passa por cima, pela incisura supraescapular. O resumo Anatomia do ombro e do braço traz os nervos e os espaços.",
+  "correta": "**A: axilar.** É o nervo do fascículo posterior que sai pelo espaço quadrangular com a circunflexa posterior e inerva o deltoide e o redondo menor, segundo o Netter's Concise (cap. 3).",
+  "conferido": false,
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Nerves: brachial plexus, posterior cord (axillary nerve)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0255": {
   "conceito": "Na face inferior da clavícula, a seta marca o **tubérculo conoide**, local de inserção do **ligamento conoide**, alternativa A. O relevo fica no setor lateral do osso, mas o conoide é o componente **medial** do par coracoclavicular.\n\nO outro componente é o trapezoide, mais lateral, que se insere numa crista inferior vizinha. Os dois ligamentos nascem da base do coracoide e limitam a subida da clavícula lateral. Essa disposição é o fundamento das classificações das fraturas distais: o que muda é quais ligações permanecem com cada fragmento (Rockwood, 10ª ed., cap. 34, “Os ligamentos laterais”).\n\nNo IIA, o traço medial ao conoide deixa ambos os ligamentos no fragmento distal. No IIB, o conoide se rompe e o trapezoide continua preso ao distal. Reconhecer o tubérculo na peça anatômica ajuda a reconstruir essa relação numa radiografia, sem transformar uma área de inserção em diagnóstico automático de fratura.\n\n**Face inferior não significa uma única estrutura.** Há subclávio e, na extremidade medial, a inserção costoclavicular. O que decide esta figura é o relevo específico e sua localização, não apenas o lado inferior da clavícula.\n\n> **Na prova:** tubérculo conoide recebe o conoide; trapezoide fica numa crista mais lateral.",
@@ -3264,14 +3293,18 @@
  },
  "ombro-cotovelo-0263": {
   "incorretas": {
-   "A": "**Não é o torácico longo.** O número 1 marca outra estrutura do plexo, que não inerva o serrátil anterior.",
-   "C": "**Não é o torácico longo.** O número 3 corresponde a outro ramo, sem relação com o serrátil.",
-   "D": "**Não é o torácico longo.** O número 4 marca estrutura diferente do nervo que desce pela face lateral do tórax."
+   "A": "**Não é o nervo do serrátil.** Pelo gabarito, a estrutura 1 é outra, vizinha do plexo. O serrátil anterior é inervado pelo torácico longo, que desce sobre o próprio músculo na parede lateral do tórax.",
+   "C": "**Também não é o torácico longo.** A estrutura 3 não corresponde ao nervo que corre sobre o serrátil. Lembre que o torácico longo nasce das raízes, e não dos fascículos, e desce rente ao tórax.",
+   "D": "**Não é o nervo pedido.** A estrutura 4 é outra da região. O nervo do serrátil, cuja paralisia dá a escápula alada medial, é o torácico longo, assinalado pelo número 2."
   },
-  "conceito": "**O nervo torácico longo.** Nasce **diretamente das raízes** de **C5, C6 e C7**, antes de formar troncos, desce **atrás** do plexo, atravessa o **escaleno médio** (as fibras de C5 e C6) e corre pela **face lateral do tórax**, sobre o serrátil anterior, junto à linha axilar média. É um nervo longo, fino e superficial, o que o torna vulnerável.\n\n**O que o serrátil faz.** Mantém a escápula **colada ao tórax**, a **protrai** e, com o trapézio, faz a **rotação superior** da escápula na elevação do braço. Sem ele, o paciente não eleva bem o braço acima de 90 graus e a escápula se descola.\n\n**A escápula alada medial.** A lesão do torácico longo gera escápula alada **medial**: a borda medial e o ângulo inferior se afastam do tórax e se deslocam **medial e para cima**, mais evidente ao empurrar uma parede com os braços estendidos. As causas são **estiramento** (esportes, carregar mochila pesada), **iatrogenia** (mastectomia com esvaziamento axilar, cirurgias torácicas, cirurgia da primeira costela), trauma direto e **Parsonage-Turner**. A maioria recupera em 6 a 24 meses; sem recuperação, transfere-se o **peitoral maior** (cabeça esternal) para o ângulo inferior da escápula.\n\n**O contraste lateral.** A lesão do **acessório** (trapézio), comum após biópsia de linfonodo no triângulo posterior do pescoço, dá escápula alada **lateral**: a escápula cai e se desloca lateralmente, com ombro caído. O tratamento de escolha é a transferência de **Eden-Lange** (levantador e romboides).\n\n**Na prova:** serrátil anterior = **torácico longo**, direto das raízes **C5 a C7**; lesão dá escápula alada **medial**. Trapézio = acessório, alada **lateral**.",
-  "correta": "**O número 2.** Corresponde ao nervo torácico longo, que sai das raízes de C5 a C7, desce atrás do plexo e corre na face lateral do tórax até o serrátil anterior.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "O serrátil anterior segura a escápula colada no tórax. Quando o nervo dele falha, a borda medial da escápula se descola, e o paciente fica com a escápula alada. O nervo responsável é o mais longo e o mais exposto da parede lateral do tórax.\n\n**O nervo do serrátil.** O **torácico longo** sai diretamente das **raízes C5 a C7** e corre na **face anterior do serrátil anterior**, com a artéria torácica lateral (Netter's Concise, cap. 3). O comentário do livro na tabela dos músculos: a **paralisia do serrátil resulta em escápula alada medial**.\n\n**Na imagem.** O número do gabarito, o 2, corresponde ao torácico longo, descendo pela parede lateral do tórax, sobre o serrátil. Os outros números marcam estruturas vizinhas do plexo e da parede torácica, que não inervam o serrátil.\n\n**Os nervos das raízes, para comparar.** O **dorsal da escápula** (C3 a C5) perfura o escaleno médio e vai para o levantador da escápula e os romboides. O resumo Anatomia do ombro e do braço traz o plexo.",
+  "correta": "**B: 2.** O gabarito aponta o nervo torácico longo, que nasce das raízes C5 a C7 e corre na face anterior do serrátil anterior, inervando-o, segundo o Netter's Concise (cap. 3).",
+  "conferido": false,
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Nerves: brachial plexus (roots: long thoracic)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0295": {
   "incorretas": {
@@ -4648,14 +4681,18 @@
  },
  "ombro-cotovelo-0388": {
   "incorretas": {
-   "A": "**Inervado pelo ramo profundo.** O supinador recebe ramos do ramo profundo antes e dentro do músculo, e é afetado na compressão na bifurcação.",
-   "B": "**Ramo do interósseo posterior.** O extensor ulnar do carpo é inervado pelo interósseo posterior, e sua perda explica o desvio radial do punho.",
-   "D": "**Ramo do interósseo posterior.** O extensor dos dedos depende do interósseo posterior, e sua paralisia impede a extensão dos dedos."
+   "A": "**É inervado depois da divisão.** O supinador recebe o ramo profundo, que passa justamente por dentro dele, na arcada de FROHSE. Uma compressão na bifurcação ou no supinador o atinge.",
+   "B": "**Também é do ramo profundo.** O extensor ulnar do carpo é inervado pelo interósseo posterior, depois da divisão. Na compressão, ele perde força, e o punho passa a estender com desvio radial.",
+   "D": "**É o músculo que mais denuncia a lesão.** O extensor comum dos dedos é do interósseo posterior; a queda dos dedos sem queda do punho é o sinal clássico da lesão abaixo da bifurcação."
   },
-  "conceito": "**A ordem dos ramos do radial.** O nervo radial dá ramos motores em sequência, e a ordem explica os quadros clínicos. No braço, antes do sulco espiral e dentro dele, inerva o **tríceps** e o **ancôneo**. Depois de perfurar o septo intermuscular lateral, ainda como tronco, inerva o **braquiorradial**, o **extensor radial longo do carpo** e, de forma variável, o **extensor radial curto**. Só então, na frente do cotovelo, se divide em ramo **superficial**, sensitivo, e **profundo**, motor.\n\n**O ramo profundo.** Passa pela **arcada de Frohse** (borda proximal do supinador), inerva o **supinador** (os ramos saem antes e dentro do músculo) e sai como **interósseo posterior**, inervando o **extensor dos dedos**, o **extensor do dedo mínimo**, o **extensor ulnar do carpo**, o **abdutor longo do polegar**, os **extensores curto e longo do polegar** e o **extensor do indicador**.\n\n**A síndrome do interósseo posterior.** Compressão na arcada de Frohse, por **cistos**, **lipomas**, sinovite reumatoide, bandas fibrosas ou os vasos recorrentes radiais (a \"corda de Henry\"). O paciente não estende os dedos nem o polegar, mas **estende o punho**, porque o ERLC está preservado; o punho vai em **desvio radial**, porque falta o extensor ulnar do carpo. **Não há perda sensitiva**, pois o ramo superficial é poupado. Diferente da lesão alta do radial, que dá mão caída completa com perda sensitiva no dorso radial da mão.\n\n**A síndrome do túnel radial.** Mesmo local, mas com **dor** sem déficit motor: dor 4 a 5 cm distal ao epicôndilo, sobre o supinador, piora com supinação resistida e extensão resistida do dedo médio. Confunde-se com epicondilite lateral, e as duas podem coexistir.\n\n**Na prova:** compressão na bifurcação do radial poupa os músculos inervados **antes** dela: braquiorradial e **extensor radial longo do carpo**; o punho estende em desvio radial.",
-  "correta": "**Extensor radial longo do carpo.** Seu ramo motor sai do tronco do radial antes da bifurcação, e por isso ele segue funcionando, mantendo a extensão do punho em desvio radial.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conceito": "O nervo radial chega ao cotovelo, dá alguns ramos e só então se divide em superficial e profundo. Quem recebeu o ramo antes da divisão escapa de uma compressão que acontece depois. É essa a lógica da questão.\n\n**O que o Netter descreve.** No antebraço, o radial inerva o **braquiorradial** e o **extensor radial longo do carpo** **antes de se dividir**. Depois, o ramo profundo, como nervo interósseo posterior, passa pela arcada de FROHSE, no supinador, e inerva o supinador e os extensores, incluindo o extensor comum dos dedos e o extensor ulnar do carpo. O ramo superficial é sensitivo (Netter Atlas de Anatomia Ortopédica, cap. 5, Nervos).\n\n**Aplicando.** Uma compressão na bifurcação, ou logo depois dela, atinge os ramos que saem dali para baixo: supinador, extensores dos dedos, extensor ulnar do carpo. O **extensor radial longo do carpo**, inervado antes da divisão, fica **poupado**, e o punho continua estendendo, ainda que com desvio radial.\n\n**Uma pista clínica.** Na paralisia do interósseo posterior, o paciente estende o punho para o lado radial e não estende os dedos: é o extensor radial longo, poupado, trabalhando sozinho. O resumo Anatomia do ombro e do braço e o resumo de anatomia da mão e do antebraço tratam dos nervos.",
+  "correta": "**C: extensor radial longo do carpo.** Ele recebe o ramo do radial antes da divisão em superficial e profundo, segundo o Netter, e por isso é poupado numa compressão na bifurcação ou depois dela (cap. 5).",
+  "conferido": false,
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed. (Jon C. THOMPSON), cap. 5 (Antebraço), Nervos: radial",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0389": {
   "incorretas": {
@@ -5208,14 +5245,18 @@
  },
  "ombro-cotovelo-0429": {
   "incorretas": {
-   "A": "O nervo axilar está certo, mas a artéria braquial profunda passa pelo intervalo triangular, junto com o nervo radial.",
-   "B": "O nervo toracodorsal e a artéria subescapular correm mais fundo na axila, indo para o grande dorsal. Não passam pelo espaço quadrangular.",
-   "C": "O nervo e a artéria supraescapulares passam por entalhes da escápula, na parte de cima e de trás, longe do espaço quadrangular."
+   "A": "**Acerta o nervo e erra a artéria.** A artéria profunda do braço acompanha o radial pelo intervalo triangular, abaixo e lateral ao espaço quadrangular. O companheiro do axilar é a circunflexa posterior do úmero.",
+   "B": "**É outro feixe.** O nervo toracodorsal desce com a artéria toracodorsal, ramo da subescapular, profundo ao grande dorsal, na parede posterior da axila. Não passa pelo espaço quadrangular.",
+   "C": "**É a compressão de outro lugar.** O nervo e a artéria supraescapulares passam pela incisura supraescapular e pela espinoglenoidal, onde o nervo pode ser comprimido, com atrofia do supraespinal e do infraespinal. Não é o espaço quadrangular."
   },
-  "conceito": "Atrás do ombro, alguns músculos se cruzam e deixam pequenas passagens por onde nervos e vasos atravessam. Os músculos que formam essas passagens são o **redondo menor** (em cima), o **redondo maior** (logo abaixo), a **cabeça longa do tríceps** (que desce na vertical entre eles) e o **úmero**.\n\nO **espaço quadrangular** tem quatro lados: redondo menor em cima, redondo maior embaixo, cabeça longa do tríceps do lado de dentro e o colo do úmero do lado de fora. Por ele passam só duas estruturas: o **nervo axilar** e a **artéria circunflexa posterior do úmero**. É por ali que o nervo axilar contorna o úmero para chegar ao deltoide.\n\nPara comparar: o **espaço triangular**, do lado de dentro da cabeça longa do tríceps, deixa passar a artéria circunflexa da escápula. E o **intervalo triangular**, abaixo do redondo maior, deixa passar o nervo radial e a artéria braquial profunda.\n\nA **síndrome do espaço quadrangular** é a compressão do nervo axilar e da artéria nesse espaço, típica de atletas que arremessam ou jogam com o braço acima da cabeça. Músculos hipertrofiados ou faixas fibrosas apertam o espaço quando o braço é aberto e rodado para fora. O atleta sente dor mal localizada atrás do ombro, formigamento na parte de fora do braço e, com o tempo, pode ter atrofia do deltoide e do redondo menor.\n\nO diagnóstico é difícil. Ajudam a ressonância (que pode mostrar atrofia do redondo menor), a eletroneuromiografia e a arteriografia feita com o braço aberto e rodado para fora, posição que mostra a artéria sendo fechada.",
-  "correta": "Axilar e a artéria circunflexa posterior do úmero. São as duas únicas estruturas que passam pelo espaço quadrangular.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Na síndrome do espaço quadrangular, o atleta que arremessa sente uma dor mal localizada no ombro e, às vezes, fraqueza do deltoide. O que está sendo comprimido é exatamente o conteúdo da janela de quatro lados.\n\n**O conteúdo.** Pela tabela do Netter's Concise (cap. 3), o espaço quadrangular, limitado pelo redondo menor, pelo redondo maior, pela cabeça longa do tríceps e pela borda medial do úmero, transmite o **nervo axilar** e a **artéria circunflexa posterior do úmero**. O Campbell acrescenta que bandas fibrosas são a causa mais citada da compressão e que o quadro acomete sobretudo jovens arremessadores (cap. 46).\n\n**Por que as outras duplas não servem.**\n- A **artéria profunda do braço** passa com o **radial** no intervalo triangular, e não com o axilar.\n- O **toracodorsal** e a **artéria subescapular** correm na parede posterior da axila, para o grande dorsal.\n- O **supraescapular** e a **artéria supraescapular** passam pela incisura supraescapular e pela espinoglenoidal, acima e atrás, onde ocorre outra síndrome compressiva.\n\nO resumo Anatomia do ombro e do braço traz os três espaços.",
+  "correta": "**D: axilar e a artéria circunflexa posterior do úmero.** São as duas estruturas que atravessam o espaço quadrangular no Netter's Concise, e por isso as duas comprimidas na síndrome (cap. 3).",
+  "conferido": false,
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Muscles: rotator cuff (espaços)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0430": {
   "incorretas": {
@@ -5660,17 +5701,19 @@
  },
  "ombro-cotovelo-0462": {
   "incorretas": {
-   "B": "**O radial passa pelo intervalo triangular.** Segue para a face posterior do braço com a artéria braquial profunda.",
-   "C": "**O musculocutâneo perfura o coracobraquial.** Sua rota é anterior no braço, fora do espaço quadrangular.",
-   "D": "**O subescapular inferior não percorre esse espaço.** É ramo posterior do plexo para subescapular e redondo maior; o conteúdo nervoso clássico é o axilar."
+   "B": "**Passa pela janela de baixo.** O radial desce pelo intervalo triangular, entre o redondo maior e as cabeças longa e lateral do tríceps, com a artéria profunda do braço, a caminho do sulco espiral. É o espaço vizinho, e por isso a troca é comum.",
+   "C": "**Está na frente.** O musculocutâneo sai do fascículo lateral e perfura o coracobraquial, no compartimento anterior do braço. Não passa por nenhum dos espaços posteriores.",
+   "D": "**Fica na parede posterior da axila.** O subescapular inferior inerva a parte inferior do subescapular e o redondo maior, e corre pela frente da escápula. Não atravessa o espaço quadrangular."
   },
-  "conceito": "**Quatro limites, dois acompanhantes.** O espaço quadrangular é delimitado pelo redondo menor acima, redondo maior abaixo, cabeça longa do tríceps medialmente e colo cirúrgico do úmero lateralmente. Por ele passam o nervo axilar e os vasos circunflexos umerais posteriores. Ao contornar o úmero, o nervo segue para o deltoide e o redondo menor, o que explica o déficit de abdução e a alteração sensitiva lateral após lesão no colo cirúrgico ou luxação do ombro.\n\n**Não confunda os espaços posteriores.** O intervalo triangular, abaixo do redondo maior, conduz o nervo radial com a artéria braquial profunda. O espaço triangular mais medial contém a artéria circunflexa da escápula. Associar cada passagem a seus limites evita trocar axilar por radial.",
-  "correta": "**A: nervo axilar.** Ele atravessa o espaço quadrangular junto aos vasos circunflexos umerais posteriores.",
+  "conceito": "Vire o ombro de costas e conte os lados da janela por onde passa o nervo do deltoide. São quatro, e é daí que vem o nome.\n\n**O espaço quadrangular.** Na tabela do Netter's Concise (cap. 3), os limites são o **redondo menor**, o **redondo maior**, a **cabeça longa do tríceps** e a **borda medial do úmero**; o conteúdo é o **nervo axilar** e a **artéria circunflexa posterior do úmero**.\n\n**As outras duas janelas.** O **espaço triangular**, só de músculos, leva a artéria circunflexa da escápula. O **intervalo triangular**, abaixo e lateral, entre o redondo maior e as cabeças longa e lateral do tríceps, leva o **nervo radial** e a **artéria profunda do braço**.\n\n**Onde isso importa.** A síndrome do espaço quadrangular comprime o axilar e a circunflexa posterior; o axilar, depois de sair pelo espaço, curva-se para a frente cerca de 5 cm abaixo do acrômio, o limite da via lateral. O resumo Anatomia do ombro e do braço traz a tabela dos três espaços.\n\n> **Na prova:** quadrangular = **axilar**; intervalo triangular = **radial**.",
+  "correta": "**A: axilar.** O nervo axilar, com a artéria circunflexa posterior do úmero, é o conteúdo do espaço quadrangular na tabela do Netter's Concise (cap. 3).",
   "referencias": [
-   "Rockwood and Green’s fractures in Adults. 6th Ed., p. 1150 (referência indicada na prova TARO 2013, questão 63)"
+   "Rockwood and Green’s fractures in Adults. 6th Ed., p. 1150 (referência indicada na prova TARO 2013, questão 63)",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 3 (Shoulder), Muscles: rotator cuff (espaços)",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0463": {
   "incorretas": {
@@ -7635,19 +7678,21 @@
   "conferido": false
  },
  "ombro-cotovelo-0559": {
-  "conceito": "Na figura, a seta 1 indica o coracobraquial e a seta 2 indica o nervo musculocutâneo em sua relação com esse músculo. O coracobraquial nasce no processo coracoide e se insere na face medial da diáfise umeral. Como termina no úmero, participa da flexão e adução do ombro, sem cruzar o cotovelo.\n\nA cabeça curta do bíceps também nasce no coracoide, formando com o coracobraquial o tendão conjunto proximal. Essa origem compartilhada explica a confusão visual, mas os músculos seguem destinos diferentes: o bíceps continua até o rádio e participa da flexão do cotovelo e da supinação.\n\nO musculocutâneo sai do fascículo lateral do plexo braquial, tipicamente perfura o coracobraquial e depois segue entre bíceps e braquial. Após fornecer ramos motores, continua como nervo cutâneo lateral do antebraço. O mediano tem outro trajeto, acompanhando o eixo vascular do braço sem ser o nervo que tipicamente perfura o coracobraquial. Existem variações, mas a imagem cobra a disposição anatômica habitual.",
-  "correta": "Coracobraquial e musculocutâneo formam o par característico demonstrado. Reconhecer a origem coracoide, a inserção umeral e a passagem do nervo pelo músculo resolve a figura. Essa relação tem aplicação cirúrgica: afastamento excessivo do tendão conjunto pode tracionar o musculocutâneo, mesmo que o nervo não esteja imediatamente visível no campo.",
+  "conceito": "Na imagem, a seta 1 aponta o coracobraquial, e a seta 2, o nervo que o atravessa. Poucos músculos do corpo são perfurados por um nervo, e esse é o caso mais cobrado.\n\n**O músculo.** O **coracobraquial** nasce no **coracoide**, insere-se no **terço médio do úmero**, flete e aduz o braço e faz parte do **tendão conjunto**, com a cabeça curta do bíceps (Netter's Concise, cap. 4).\n\n**O nervo.** O **musculocutâneo** sai do fascículo lateral e **perfura o coracobraquial cerca de 8 cm abaixo do coracoide**; depois corre entre o bíceps e o braquial e termina como **nervo cutâneo lateral do antebraço**. Inerva o coracobraquial, o bíceps e o braquial.\n\n**Como não errar na imagem.** O ponto em que o nervo some dentro de um ventre muscular, logo abaixo do coracoide, é o coracobraquial. O resumo Anatomia do ombro e do braço traz o compartimento anterior.",
+  "correta": "**B: Coracobraquial e nervo musculocutâneo.** O musculocutâneo perfura o coracobraquial cerca de 8 cm abaixo do coracoide, como descreve o Netter's Concise (cap. 4).",
   "incorretas": {
-   "A": "A identificação do coracobraquial está correta, mas a do nervo está errada. O mediano desce no braço associado à artéria braquial e não é o elemento que tipicamente atravessa esse músculo. A opção mistura uma estrutura muscular corretamente reconhecida com um nervo cujo território funcional e percurso são diferentes.",
-   "C": "A cabeça curta do bíceps compartilha a origem coracoide, mas não corresponde ao músculo de inserção medial umeral marcado. Além disso, o mediano não fornece a inervação motora usual do bíceps. Portanto, a alternativa erra tanto a continuidade do músculo quanto o nervo relacionado à perfuração mostrada.",
-   "D": "O musculocutâneo realmente inerva o bíceps, o que torna a alternativa plausível. Contudo, inervar um músculo e perfurá-lo são relações diferentes: a passagem característica assinalada ocorre no coracobraquial. A cabeça curta segue para o ventre do bíceps e para o tendão distal, não para uma inserção na diáfise umeral."
+   "A": "**Acerta o músculo e erra o nervo.** O mediano não é o nervo que o Netter descreve perfurando o coracobraquial. Quem atravessa o músculo é o musculocutâneo, cerca de 8 cm abaixo do coracoide.",
+   "C": "**Erra os dois.** A cabeça curta do bíceps acompanha o coracobraquial no tendão conjunto, mas não é atravessada por nervo; e o nervo que perfura o coracobraquial é o musculocutâneo, e não o mediano.",
+   "D": "**Acerta o nervo e erra o músculo.** O musculocutâneo inerva a cabeça curta do bíceps, mas o músculo que ele perfura é o coracobraquial. A cabeça curta está ao lado, no tendão conjunto, e por isso a troca é fácil na imagem."
   },
   "referencias": [
    "Anatomy, Shoulder and Upper Limb, Musculocutaneous Nerve. NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK534199/",
-   "A Review of the Typical Course of the Musculocutaneous Nerve into the Coracobrachialis Muscle: Its Variability and Possible Clinical Implications. https://pubmed.ncbi.nlm.nih.gov/37933506/"
+   "A Review of the Typical Course of the Musculocutaneous Nerve into the Coracobrachialis Muscle: Its Variability and Possible Clinical Implications. https://pubmed.ncbi.nlm.nih.gov/37933506/",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 4 (Arm), Muscles: anterior compartment; Nerves: musculocutaneous",
+   "Biblioteca OrtoQuestões, resumo Anatomia do ombro e do braço (netter-anatomia-ombro-braco)"
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0560": {
   "conceito": "O lábio glenoidal é um anel fibrocartilaginoso que amplia a profundidade da glenoide e participa da inserção capsuloligamentar. Na instabilidade anterior, a lesão pode envolver seu segmento anteroinferior, como na lesão de Bankart. Para interpretar a ressonância é necessário localizar essa margem, e não apenas reconhecer que existe uma lesão labral.\n\nO plano axial mostra diretamente as margens anterior e posterior da glenoide, a relação com a cabeça umeral e a continuidade do complexo capsulolabral. Por isso, é a resposta entre os planos apresentados. O protocolo clínico continua multiplanar: cortes coronais oblíquos e sagitais oblíquos acrescentam informações sobre manguito, musculatura, osso e outros segmentos do lábio.\n\nQuando há dúvida, a artroressonância e sequências em abdução e rotação externa, posição conhecida como ABER, podem ampliar a demonstração de algumas lesões anteroinferiores. O aumento de sensibilidade depende da técnica e não transforma qualquer ressonância axial em exame definitivo. A pergunta cobra a orientação anatômica mais útil para o lábio anterior.",
