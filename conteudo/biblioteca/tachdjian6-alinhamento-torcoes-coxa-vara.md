@@ -107,7 +107,7 @@ alerta: As três questões do TARO (`pediatria-0726`, `pediatria-0806` e `pediat
 conceito: Anteversão de 40 graus no lactente a 16 no adulto, com rotação interna excessiva e externa pequena no exame em decúbito ventral; a tíbia roda lateralmente com o crescimento (bimaleolar de 5 a 15 graus); quase tudo melhora sozinho, e órteses não ajudam.
 como: O TARO pediu a anteversão aos 6 meses com a rotação da tíbia, a anteversão ao nascer e aos 16 anos e o sentido da rotação lateral do quadril com a idade; a SBOT-SP, o ângulo coxa-pé aos 2 e 8 anos; o TEPOP 2024, o ângulo de progressão do pé de 1 a 4 anos; o TARO 2023 mostrou o teste do ângulo coxa-pé; o TARO 2015 associou a rotação interna da perna ao pé torto.
 armadilha: Achar que a anteversão aumenta com a idade, prescrever DENIS BROWNE para torção tibial ou indicar osteotomia proximal da tíbia.
-alerta: As questões do TARO 2009 (`pediatria-0776` e `pediatria-0778`) estão sem gabarito oficial. O Tachdjian sustenta 40 graus ao nascer e 16 aos 16 anos, e a redução da anteversão com aumento da rotação lateral do quadril. Os valores médios do ângulo coxa-pé aos 2 e 8 anos (`pediatria-0311`) não aparecem nos capítulos lidos.
+alerta: As questões do TARO 2009 (`pediatria-0776` e `pediatria-0778`) estão sem gabarito oficial. O Tachdjian sustenta 40 graus ao nascer e 16 aos 16 anos; e, como a contratura em rotação externa do quadril do recém-nascido se desfaz no primeiro ano, a rotação lateral também diminui com a idade, o que sustenta a resposta provável D na 0778. Os valores médios do ângulo coxa-pé aos 2 e 8 anos (`pediatria-0311`) não aparecem nos capítulos lidos.
 !fim
 
 # Os encurvamentos congênitos da tíbia {radar=confirmado}
