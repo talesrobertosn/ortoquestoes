@@ -3,6 +3,8 @@
 # que mais quebram no "verificar" (amostras da página inicial e o Cronograma, que dependem do tamanho do acervo).
 # Criado em 30/10/2026, quando um comentário novo da mao-0102 (amostra da página inicial) quebrou o teste das amostras.
 #   bash scripts/pos_aplicar.sh
+# Depois, faça commit também de public/acervo/indice.json quando houver questões novas: o "verificar" confere os ids
+# citados nos resumos contra esse índice (PR 671 falhou por isso, em 31/10/2026).
 set -euo pipefail
 export PYTHONUTF8=1
 python3 scripts/gerar_indice.py >/dev/null 2>&1 || python scripts/gerar_indice.py >/dev/null
