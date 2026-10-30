@@ -28,7 +28,7 @@ from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageFilter
+from PIL import Image
 
 PASTA = Path(__file__).resolve().parents[1] / "public" / "pixel" / "inicio"
 W, H, ESC = 480, 160, 3
@@ -142,20 +142,13 @@ MARMORE = ("#3a3a44", "#6a6a76", "#a4a2aa", "#d4d0d4", "#f2eeec")
 
 
 def tom_metal(t: float, w: float) -> int:
+    """Tom do metal pela posição t (-1 borda esquerda, +1 borda direita): faixa clara à esquerda do eixo, miolo
+    saturado, escuro à direita e o reflexo fino na borda direita."""
     if w < 1.2:
         return 4 if t < 0 else 2
-    if t < -0.84:
-        return 2
-    if t < -0.56:
-        return 4
-    if t < -0.18:
-        return 5
-    if t < 0.12:
-        return 3
-    if t < 0.52:
-        return 2
-    if t < 0.8:
-        return 1
+    for limite, k in ((-0.84, 2), (-0.62, 3), (-0.48, 4), (-0.28, 5), (-0.12, 4), (0.15, 3), (0.5, 2), (0.8, 1)):
+        if t < limite:
+            return k
     return 3
 
 
@@ -1058,12 +1051,12 @@ def frente_arena() -> Camada:
     """Primeiro plano (vai bem desfocado): coluna na sombra à esquerda, cordas do toldo com bandeirolas no alto à
     direita e montes de areia embaixo."""
     c = Camada()
-    for x in range(-4, 14):
+    for x in range(-4, 8):
         for y in range(H):
             canelura = (x % 4 == 1)
-            c.p(x, y, "#4a382e" if canelura else "#6a5444" if x < 9 else "#3a2a22")
-    c.ret(-4, 0, 20, 8, "#5a4638")
-    c.ret(-4, 8, 22, 3, "#7a6250")
+            c.p(x, y, "#4a382e" if canelura else "#6a5444" if x < 6 else "#9a7a5a")
+    c.ret(-4, 0, 14, 8, "#5a4638")
+    c.ret(-4, 8, 15, 3, "#7a6250")
     for (cx, cy, r) in ((60, 172, 20), (110, 178, 16), (424, 176, 20), (478, 166, 20)):
         c.disco(cx, cy, r, ("#e0b880", "#b48c60", "#6a5038"))
     for (xa, ya, xb, yb, flecha) in ((236, -4, 330, 10, 6), (410, 2, 500, 30, 7)):
@@ -1185,7 +1178,7 @@ SA_CHAO = 108                 # linha onde a parede do fundo encontra o chão
 SA_FUGA = (340, 66)           # ponto de fuga
 PEDESTAL = (340, 122)         # centro e chão do pedestal
 JANELA = (306, 12, 68, 82)    # x, y, largura, altura da janela grande atrás do pedestal
-LUA = (352, 28)
+LUA = (362, 25)
 
 
 def parede_salao() -> tuple[Camada, np.ndarray, list]:
@@ -1304,6 +1297,19 @@ def estante(c: Camada, x0: int, y0: int, w: int, h: int, prateleiras: int, seed:
     c.ret(x0 + w, y0, 3, h, MADEIRA[1])
     c.ret(x0 - 4, y0 + h, w + 8, 4, MADEIRA[2])
     c.ret(x0 - 4, y0 + h, w + 8, 1, MADEIRA[4])
+    # armário de baixo até o chão: portas almofadadas com puxadores de latão
+    yb0 = y0 + h + 4
+    c.ret(x0 - 3, yb0, w + 6, SA_CHAO - yb0, MADEIRA[1])
+    porta = max(14, w // max(1, round(w / 26)))
+    for xp in range(x0, x0 + w - 6, porta):
+        larg_p = min(porta - 2, x0 + w - xp)
+        c.ret(xp, yb0 + 2, larg_p, SA_CHAO - yb0 - 5, MADEIRA[2])
+        c.ret(xp, yb0 + 2, larg_p, 1, MADEIRA[3])
+        c.ret(xp + 2, yb0 + 4, larg_p - 4, SA_CHAO - yb0 - 9, MADEIRA[1])
+        c.ret(xp + 2, yb0 + 4, 1, SA_CHAO - yb0 - 9, MADEIRA[0])
+        c.p(xp + larg_p - 3, yb0 + (SA_CHAO - yb0) // 2, METAIS["ouro"][5])
+        c.p(xp + larg_p - 3, yb0 + (SA_CHAO - yb0) // 2 + 1, METAIS["ouro"][2])
+    c.ret(x0 - 3, SA_CHAO - 2, w + 6, 2, MADEIRA[0])
     # fundo de veludo vinho com pregas
     for y in range(y0, y0 + h):
         for x in range(x0, x0 + w):
@@ -1502,7 +1508,7 @@ def pedestal_salao(brilhos: list, luzes_ped: list) -> Camada:
     # faixa gravada no bojo
     for x in range(round(px - larg[8]), round(px + larg[8]) + 1):
         c.p(x, yt + 8, METAIS["ouro"][2] if x > px else METAIS["ouro"][3])
-    brilhos += [(px - 7, yt + 6, 2.0), (px - 1, yt - 12, 1.6), (px - 3, yt + 26, 1.0)]
+    brilhos += [(px - 7, yt + 6, 2.0), (px - 1, yt - 12, 1.6), (px - 3, yt + 22, 0.8)]
     # castiçais de pé alto dos dois lados do tapete
     for cx in (px - 34, px + 34):
         castical(c, cx, py + 3, 28, luzes_ped)
@@ -1595,10 +1601,10 @@ def montar_trofeus() -> Image.Image:
     xs, ys = GRADE_X / ESC, GRADE_Y / ESC
     # Luz: ambiente frio da noite, velas e lustres quentes, o pedestal sob um foco dourado.
     luz = np.ones_like(img) * hexa("#5a6aaa") * 0.42
-    luz = luz * (0.7 + 0.3 * suave(40, 300, xs))[:, :, None]
+    luz = luz * (0.8 + 0.2 * suave(40, 300, xs))[:, :, None]
     for (lx, ly, k) in luzes:
-        luz += luz_pontual(lx, ly, 46, 0.8)[:, :, None] * hexa("#ffb060") * 0.55 * k
-        luz += luz_pontual(lx, ly, 12, 1)[:, :, None] * hexa("#ffe0a0") * 0.6 * k
+        luz += luz_pontual(lx, ly, 46, 0.8)[:, :, None] * hexa("#ffb060") * 0.26 * k
+        luz += luz_pontual(lx, ly, 12, 1)[:, :, None] * hexa("#ffe0a0") * 0.1 * k
     for (lx, ly) in luzes_ped:
         luz += luz_pontual(lx, ly, 34, 0.9)[:, :, None] * hexa("#ffa850") * 0.22
         luz += luz_pontual(lx, ly, 8, 1)[:, :, None] * hexa("#ffe0a0") * 0.5
@@ -1634,7 +1640,9 @@ def montar_trofeus() -> Image.Image:
     img += refl * (rm * queda * 0.32)[:, :, None]
 
     # Pedestal e castiçais por cima, com a mesma luz, e o reflexo deles.
-    ped_luz = luz * 1.0 + luz_pontual(px, py - 50, 26, 1.2)[:, :, None] * hexa("#ffe8b0") * 0.45
+    # a taça recebe sobretudo a luz quente das velas e do foco (o azul da lua só a contorna por trás)
+    na_taca = luz_pontual(px - 4, py - 62, 26, 1.4)[:, :, None]
+    ped_luz = luz * (1 - na_taca * 0.45) + na_taca * hexa("#ffc878") * 0.75
     ped_rgb = ped_a[:, :, :3] * ped_luz
     yb = py * ESC + ESC
     refl_p = np.zeros_like(ped_a)
@@ -1646,8 +1654,19 @@ def montar_trofeus() -> Image.Image:
     refl_p = desfocar_rgba(refl_p, 3)
     img += refl_p[:, :, :3] * (refl_p[:, :, 3] * rm * 0.3)[:, :, None]
     img = img * (1 - ped_a[:, :, 3:4]) + ped_rgb * ped_a[:, :, 3:4]
+    # contraluz: a borda da taça e do pedestal acende com o azul da janela
+    a_ped = ped.c[:, :, 3]
+    borda = np.zeros_like(a_ped)
+    borda[:, 1:] = np.maximum(borda[:, 1:], a_ped[:, 1:] * (1 - a_ped[:, :-1]))
+    borda[:, :-1] = np.maximum(borda[:, :-1], a_ped[:, :-1] * (1 - a_ped[:, 1:]))
+    borda[1:, :] = np.maximum(borda[1:, :], a_ped[1:, :] * (1 - a_ped[:-1, :]) * 0.7)
+    jx, jy, jw, jh = JANELA
+    borda[:, :jx - 2] = 0
+    borda[:, jx + jw + 2:] = 0
+    borda[jy + jh:, :] = 0
+    img += ampliar(borda[:, :, None]) * hexa("#9ab8ff") * 0.45
     # lustres
-    teto_rgb = teto_a[:, :, :3] * (luz * 1.1 + 0.25)
+    teto_rgb = teto_a[:, :, :3] * (luz * 0.9 + 0.2)
     img = img * (1 - teto_a[:, :, 3:4]) + teto_rgb * teto_a[:, :, 3:4]
 
     # Fachos de luar entrando pela janela grande (desfoque direcional) e foco dourado no pedestal.
@@ -1660,7 +1679,7 @@ def montar_trofeus() -> Image.Image:
     vol = desfocar(vol[:, :, None], 8)[:, :, 0] / 60
     vol *= (GRADE_Y < (SA_CHAO + 40) * ESC)
     img += vol[:, :, None] * hexa("#7a9ae0") * 1.7
-    foco = facho(px + 6, -4, px, py - 30, 6, 22) * np.clip(1.2 - ys / 130, 0, 1)
+    foco = facho(px + 8, -4, px, py - 60, 5, 20, dureza=1.8) * np.clip((py - 52 - ys) / 30, 0, 1)
     foco = desfocar(foco[:, :, None], 5)[:, :, 0]
     img += foco[:, :, None] * hexa("#ffd890") * 0.32
     poeira(301, 500, (300, 0, 400, 120), "#fff0d0", img, foco * 2.0, 0.8)
@@ -1680,7 +1699,7 @@ def montar_trofeus() -> Image.Image:
             img[Y + d, X] += k * hexa("#fff4d8")
             img[Y, X + d] += k * hexa("#fff4d8")
 
-    return acabamento(img, "#ffd8a0", "#1a2a5a", esquerda=0.38, seed=92, bloom_lim=0.8, bloom_k=0.45, vinheta_y=0.5)
+    return acabamento(img, "#ffd8a0", "#1a2a5a", esquerda=0.34, seed=92, bloom_lim=0.8, bloom_k=0.45, vinheta_y=0.5)
 
 
 # ─────────────────────────────── Saída ───────────────────────────────
