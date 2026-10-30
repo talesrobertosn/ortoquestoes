@@ -22,14 +22,18 @@
   "conferido": false
  },
  "quadril-0003": {
+  "conceito": "Quando o colo da prótese bate na borda da taça, a borda vira um fulcro e a cabeça é alavancada para fora. O jump distance mede quanto a cabeça precisa subir nessa alavanca até escapar.\n\n**A definição do Campbell** (cap. 3, p. 185, Fig. 3.12). O jump distance é a **distância que a cabeça precisa percorrer para escapar da borda do componente acetabular**, aproximadamente **a metade do diâmetro da cabeça**. Uma cabeça menor tem uma distância menor a percorrer.\n\n**Por que a cabeça grande é mais estável.** Por dois motivos que se somam:\n1. Para o mesmo colo, a cabeça maior aumenta a **relação cabeça-colo**, e o colo demora mais para bater na borda (de 28 para 32 mm, 8 graus a mais de flexão no modelo citado).\n2. Quando bate, a cabeça maior precisa de um **salto maior** para sair.\n\nNuma grande série com cabeças de 36 mm ou mais, a luxação foi de 0,05%.\n\n**Como ler as alternativas.** A banca separa dois detalhes: até onde vai a distância (a **borda da taça**) e quanto ela vale (**metade do diâmetro**). Raciocine com a geometria: para sair de um hemisfério, o centro da cabeça precisa subir até o plano da borda, o que corresponde ao raio, ou seja, à metade do diâmetro. O dobro do diâmetro não tem base geométrica.\n\n**O que a banca quis testar.** A definição exata do jump distance e o seu valor. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a relação entre cabeça, colo e estabilidade.",
+  "correta": "**C: percorrer até a borda do componente acetabular e equivale à metade do seu diâmetro.** É a definição do Campbell (cap. 3, p. 185).",
   "incorretas": {
-   "A": "A medida (metade do diâmetro) está certa, mas a referência é a borda do componente acetabular, e não \"sair do acetábulo\".",
-   "B": "Erra as duas partes: a referência não é sair do acetábulo, e a distância é o raio, e não o dobro do diâmetro.",
-   "D": "A referência (a borda do componente) está certa, mas a distância é a metade do diâmetro, e não o dobro."
+   "A": "**Acerta o valor, mas a banca quis a referência da borda do componente.** O Campbell define a distância até escapar da borda da taça; a formulação \"sair do acetábulo\" foi considerada menos precisa.",
+   "B": "**Erra o valor.** O jump distance corresponde aproximadamente à metade do diâmetro, não ao dobro.",
+   "D": "**Acerta a referência, erra o valor.** A distância até a borda equivale à metade do diâmetro da cabeça."
   },
-  "conceito": "Na **artroplastia total do quadril**, a articulação é trocada por uma prótese: uma **taça** (o componente acetabular, com um forro de plástico ou cerâmica chamado inserto) e uma **haste** no fêmur com uma **cabeça** esférica que gira dentro da taça.\n\nA **luxação** (a cabeça sair da taça) é uma das complicações mais temidas. Para entender o que protege contra ela, existe o conceito de **jump distance**, ou \"distância de salto\".\n\n**O que é**: o quanto a cabeça precisa se deslocar para o lado, **dentro do componente acetabular**, até chegar à **borda** dele. Ao passar dessa borda, ela luxa.\n\n**Quanto vale**: numa taça que é uma meia esfera, essa distância é igual ao **raio da cabeça**, ou seja, **metade do diâmetro**. Uma cabeça de 28 mm tem jump distance de cerca de 14 mm; uma de 36 mm, de cerca de 18 mm.\n\nDaí vem uma regra importante: **cabeças maiores são mais estáveis**, porque precisam se deslocar mais antes de luxar. Além disso, uma cabeça maior em relação ao colo da haste demora mais para o colo bater na borda da taça, o que aumenta o arco de movimento antes do impacto.\n\n**O que diminui a jump distance**: taças com cobertura menor que meia esfera, insertos com borda baixa, ou a taça colocada muito vertical. Insertos com uma borda elevada de um lado aumentam a distância naquele lado, mas podem facilitar o impacto do lado oposto.\n\nOutros fatores também contam para a estabilidade: a posição correta dos componentes, o comprimento do membro, a tensão dos músculos e o reparo da cápsula.\n\n**Na prova**: jump distance é o percurso da cabeça até a borda do componente acetabular, e equivale à metade do diâmetro da cabeça.",
-  "correta": "Percorrer até a borda do componente acetabular e equivale à metade do seu diâmetro. Numa taça em meia esfera, a cabeça percorre o próprio raio até a borda, onde a estabilidade acaba.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Femoral components: head size, p. 185 (Fig. 3.11 e 3.12)",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0004": {
@@ -93,14 +97,18 @@
   "conferido": false
  },
  "quadril-0009": {
+  "conceito": "Direto: cabeça maior dá mais movimento e mais estabilidade. O Campbell explica os dois ganhos com a mesma figura.\n\n**O arco de movimento.** Para um mesmo diâmetro de colo, a cabeça maior **aumenta a relação cabeça-colo**, e o arco antes de o colo bater na borda da taça fica **maior** (cap. 3, p. 185). No modelo de realidade virtual citado, passar de **28 para 32 mm** acrescentou **8 graus de flexão** antes do impacto.\n\n**A estabilidade.** O impacto é o gatilho da luxação: a borda vira fulcro e a cabeça é alavancada para fora. A cabeça maior adia o impacto e, quando ele acontece, precisa vencer um **jump distance maior** (cerca da metade do diâmetro). Por isso o livro diz que a cabeça de diâmetro maior é, em teoria, **mais estável**. Com 36 mm ou mais, a luxação foi de 0,05% numa grande série.\n\n**Os limites.** O diâmetro é limitado pelo tamanho do acetábulo. O colo também conta: **colo circular com cabeça de saia** reduz muito o arco; **colo trapezoidal sem saia** é o ideal. Acima de 38 mm, o impacto passa a ser osso com osso.\n\n**O preço.** No polietileno, o Campbell registra desgaste volumétrico maior com cabeças de 36 a 40 mm, e na taça cimentada a cabeça maior aumenta o estresse na interface cimento-osso.\n\n**O que a banca quis testar.** Os dois efeitos da cabeça grande, que andam juntos. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a tabela.",
+  "correta": "**B: amplia o arco de movimento e a estabilidade.** A cabeça maior aumenta a relação cabeça-colo e o jump distance (Campbell, cap. 3, p. 185).",
   "incorretas": {
-   "A": "É o contrário: a cabeça maior amplia o arco de movimento e aumenta a estabilidade. O que ela pode piorar é a espessura do inserto e o desgaste.",
-   "C": "O arco de movimento aumenta, mas a estabilidade também aumenta, pela jump distance maior.",
-   "D": "A estabilidade aumenta, mas o arco de movimento também aumenta, pela melhor relação entre a cabeça e o colo."
+   "A": "**É o contrário nos dois efeitos.** A cabeça maior amplia o arco antes do impacto e aumenta a estabilidade.",
+   "C": "**Acerta o arco, erra a estabilidade.** O jump distance cresce com o diâmetro, e a cabeça maior é mais estável.",
+   "D": "**Erra o arco.** A cabeça maior aumenta a relação cabeça-colo e, com ela, o arco de movimento antes do impacto."
   },
-  "conceito": "Na **artroplastia total do quadril**, a escolha do **diâmetro da cabeça** da prótese influencia duas coisas importantes, por mecanismos diferentes:\n\n**Arco de movimento**: depende da **relação cabeça-colo**, ou seja, do tamanho da cabeça em comparação com a espessura do colo da haste. Com uma cabeça maior, o colo demora mais para **bater na borda** da taça quando o quadril se move. Assim, o quadril consegue se mover mais antes do impacto. Isso é importante porque, quando o colo bate na borda, ele funciona como uma alavanca que pode empurrar a cabeça para fora.\n\n**Estabilidade**: depende da **jump distance**, a distância que a cabeça precisa percorrer dentro da taça até chegar à borda e luxar. Essa distância é igual ao **raio** da cabeça. Uma cabeça de 28 mm precisa percorrer cerca de 14 mm; uma de 36 mm, cerca de 18 mm. Quanto maior a cabeça, mais difícil luxar.\n\nPortanto, a cabeça maior **amplia o arco de movimento** e **aumenta a estabilidade**.\n\n**Mas há um preço**:\n\no forro de plástico (polietileno) dentro da taça fica **mais fino**, porque a cabeça ocupa mais espaço;\n\na superfície que desliza é maior, o que aumentava o **desgaste** nos polietilenos antigos. Com os polietilenos modernos (altamente reticulados) e cabeças de cerâmica, esse problema diminuiu muito;\n\nnas próteses **metal com metal** de cabeça grande, o desgaste liberou íons metálicos e causou reações nos tecidos, e elas foram abandonadas;\n\ncabeças grandes de metal podem causar corrosão na junção entre a cabeça e o colo (a chamada trunionose).\n\n**Na prova**: cabeça maior amplia o arco de movimento e aumenta a estabilidade.",
-  "correta": "Amplia o arco de movimento e a estabilidade. A relação cabeça-colo maior adia o impacto do colo na borda, e a jump distance maior exige mais deslocamento para luxar.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Femoral components: head size and neck geometry, p. 185",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0010": {
@@ -327,14 +335,19 @@
   "conferido": false
  },
  "quadril-0029": {
+  "conceito": "Na displasia alta, o cirurgião desce o centro de rotação para o acetábulo verdadeiro e, com isso, alonga o membro. O nervo que mais sofre com esse alongamento e com a dissecção difícil é o ciático.\n\n**Os números do Campbell** (cap. 3, p. 254). O risco de paralisia nervosa é de **0,5%** na artroplastia primária por artrose, **2,3% na displasia** e 3,5% nas revisões. Os nervos que podem ser lesados são o ciático, o femoral, o obturatório, o cutâneo femoral lateral e o glúteo superior, por trauma direto, tração, pressão, posicionamento, isquemia ou calor. O **ciático** é o mais exposto, sobretudo quando está preso em tecido cicatricial ou é tracionado por afastadores na borda posterior do acetábulo.\n\n**O papel do alongamento.** Numa série, a lesão do **ramo fibular** ocorreu com alongamentos de **1,9 a 3,7 cm**, e a paralisia **completa do ciático** com **4 a 5,1 cm**. Outros autores, incluindo uma série de 508 artroplastias por displasia, não acharam correlação com o alongamento e atribuíram a lesão ao trauma mecânico. Em qualquer caso, a displasia grave reúne os dois fatores.\n\n**Por que o ramo fibular.** É a divisão mais lateral e mais presa do ciático, e por isso a que mais sofre; o paciente acorda com pé caído.\n\n**CROWE 3 e 4.** São as displasias com maior migração da cabeça, em que o componente no acetábulo verdadeiro exige mais descida do centro e, muitas vezes, osteotomia de encurtamento do fêmur.\n\n**O que a banca quis testar.** O nervo da displasia alta. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz as complicações.",
+  "correta": "**D: isquiático.** O ciático é o nervo mais vulnerável na artroplastia, e a displasia tem risco de paralisia quatro vezes maior que a artrose primária (Campbell, cap. 3, p. 254).",
   "incorretas": {
-   "A": "O nervo femoral pode ser lesado por compressão de um afastador na borda da frente do acetábulo, mas não é a lesão típica do alongamento.",
-   "B": "O nervo pudendo sofre com o apoio da virilha na mesa de tração, usada em artroscopias e fraturas, e não é a complicação principal desta cirurgia.",
-   "C": "O nervo obturatório corre risco na parede interna do acetábulo, com parafusos ou cimento dentro da pelve, e não pelo alongamento do membro."
+   "A": "**É possível, mas não é o principal.** O femoral se lesa por afastadores anteriores, sem a relação com o alongamento que caracteriza a displasia alta.",
+   "B": "**Não é complicação típica.** O pudendo se lesa por compressão do poste perineal na mesa de tração, não na artroplastia da displasia.",
+   "C": "**Também é possível, por afastadores ou parafusos anteroinferiores, mas não é o principal.** A displasia alta ameaça o ciático pelo alongamento e pela dissecção."
   },
-  "conceito": "Na **displasia do quadril** grave do adulto, a cabeça do fêmur pode ter saído do acetábulo e subido pela bacia. A **classificação de Crowe** mede o quanto a cabeça subiu:\n\n**Crowe I**: subluxação de menos de 50%;\n\n**Crowe II**: entre 50% e 75%;\n\n**Crowe III**: entre 75% e 100%;\n\n**Crowe IV**: mais de 100%, ou seja, uma **luxação alta**, com a cabeça bem acima do acetábulo verdadeiro.\n\n**O problema na artroplastia**: para colocar a taça no **acetábulo verdadeiro** (o lugar certo), o cirurgião precisa **descer o fêmur vários centímetros**. Isso **alonga** o membro de uma vez, e os nervos que estavam acostumados a uma perna mais curta são **esticados**.\n\nO nervo que menos tolera esse estiramento é o **nervo isquiático** (ou ciático), o grande nervo da parte de trás da coxa. Dentro dele, a **divisão fibular** é a mais vulnerável: ela é mais presa na saída da bacia e tem menos tecido protetor. A lesão causa o **pé caído**, a incapacidade de levantar a ponta do pé.\n\n**Como prevenir**:\n\nlimitar o **alongamento** feito de uma vez (em geral, poucos centímetros);\n\nquando é preciso descer muito o fêmur, fazer uma **osteotomia de encurtamento** do fêmur logo abaixo do trocânter, que permite colocar a cabeça no lugar sem esticar o nervo;\n\ntestar a tensão do nervo no fim da cirurgia e, em casos selecionados, monitorar a função do nervo durante a operação.\n\n**Na prova**: na artroplastia do quadril displásico Crowe III e IV, a principal lesão nervosa é do isquiático.",
-  "correta": "Isquiático. Descer a cabeça até o acetábulo verdadeiro alonga o membro, e o isquiático, especialmente sua divisão fibular, não tolera esse estiramento.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Complications: neurologic injuries, p. 254 e 255",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Developmental dysplasia, p. 235 e 236",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0030": {
@@ -365,14 +378,18 @@
   "conferido": false
  },
  "quadril-0032": {
+  "conceito": "A displasia e a revisão tentam o cirurgião a subir o acetábulo para achar osso bom. O Campbell avisa o que isso custa em forças.\n\n**O que o livro descreve** (cap. 3, p. 180). A posição do centro de rotação, de cima para baixo, também afeta as forças geradas em torno do implante. Num modelo matemático, a **força de reação articular foi menor com o centro na posição anatômica** do que numa posição **superior e lateral** ou posterior.\n\n**O detalhe que costuma cair.** O deslocamento **apenas superior, sem lateralização**, aumenta relativamente pouco o estresse no **osso periacetabular**. Isso importa na displasia e na revisão: uma taça um pouco mais alta pode ganhar cobertura em osso viável. Mesmo assim, estudos clínicos mostraram mais lucências progressivas e migração quando o centro ficou fora da posição anatômica, em protrusão, displasia e revisão.\n\n**A lógica.** Ao lateralizar, o braço de alavanca do peso corporal cresce, os abdutores precisam de mais força e a soma das duas carrega o implante. Por isso o efeito é sobre o **implante** e sobre a carga articular, não sobre o osso periacetabular, que é o que o deslocamento só superior poupa.\n\n**O que a banca quis testar.** A diferença entre subir o centro (aceitável) e subir e lateralizar (aumenta as forças sobre o implante). O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz as alavancas.",
+  "correta": "**A: o implante.** O centro superior e lateral aumenta a força de reação articular que o implante suporta (Campbell, cap. 3, p. 180).",
   "incorretas": {
-   "B": "A força exigida dos abdutores realmente aumenta, mas a consequência associada à sobrevida da prótese é a carga sobre o implante.",
-   "C": "O osso ao redor do acetábulo recebe a carga transmitida, mas o efeito descrito é sobre o implante e a sua fixação.",
-   "D": "Os ligamentos da frente não são afetados pela mudança da gangorra no plano frontal."
+   "B": "**Não é a resposta da banca.** O braço dos abdutores muda com o offset e o trocânter; a questão trata da força que chega ao implante.",
+   "C": "**É justamente o que o deslocamento só superior poupa.** O Campbell registra pouco aumento de estresse periacetabular com o centro superior sem lateralização.",
+   "D": "**Não é o foco.** Os ligamentos anteriores não são citados entre os efeitos do centro de rotação."
   },
-  "conceito": "Na artroplastia do quadril, a posição em que a taça é colocada define o **centro de rotação** da articulação, e isso muda as forças que passam pela prótese.\n\nLembre da **gangorra** do quadril em apoio numa perna só: de um lado, o **peso do corpo**, que age a partir do centro do corpo; do outro, os **músculos abdutores**, que se prendem no trocânter maior. A cabeça do fêmur é o ponto de apoio. Quanto maior o braço do peso do corpo em relação ao braço dos abdutores, maior a força que atravessa a articulação.\n\n**O que acontece com o centro de rotação alto e lateral?**\n\n**Lateralizar** (levar para fora) **alonga o braço do peso do corpo**;\n\n**subir** o centro muda a linha de ação dos abdutores e diminui a eficiência deles.\n\nO resultado é que a **força resultante** que atravessa a prótese **aumenta**. A consequência clínica que importa é a maior carga sobre o **implante**, com mais **soltura** (principalmente da taça) e mais **desgaste**.\n\nIsso tem uma aplicação prática na displasia e nas revisões, quando nem sempre é possível colocar a taça no lugar anatômico. Nesses casos, prefere-se subir o centro mas mantê-lo **medial** (o chamado centro alto medializado), que altera pouco as forças. O pior cenário é o centro **alto e lateral**.\n\nPelo mesmo mecanismo, os abdutores também precisam fazer mais força. Mas o que falha e encurta a vida da artroplastia é o implante.\n\n**Na prova**: o centro de rotação alto e lateral aumenta as forças sobre o implante.",
-  "correta": "O implante. Com o centro alto e lateral, cresce o braço do peso do corpo, a força que atravessa a prótese aumenta e, com ela, a soltura e o desgaste.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Applied biomechanics: forces acting on the hip, p. 180",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0033": {
@@ -464,14 +481,18 @@
   "conferido": false
  },
  "quadril-0038": {
+  "conceito": "Imagine o osso trabecular da pelve como um colchão de espuma e a taça cimentada como um prato apoiado nele. Prato fino sobre espuma sem a capa dura afunda num ponto; prato grosso sobre a capa intacta distribui o peso.\n\n**O que o Campbell descreve** (cap. 3, p. 182 e 183):\n- Com taça cimentada de polietileno, os **picos de estresse** aparecem no osso pélvico.\n- Os picos **aumentam quando o osso subcondral é removido**.\n- Os **maiores estresses no cimento e no osso trabecular** surgem com **polietileno de parede fina** e **subcondral removido**.\n- Uma taça de **parede espessa, de 5 mm ou mais**, reduz o estresse no trabecular, como o dorso metálico.\n- **Conclusão do livro:** **preservar o subcondral** e usar **taça espessa** (ou dorso metálico) diminui os picos de estresse no trabecular.\n\n**E o dorso metálico, então?** No laboratório ele ajuda, mas o seguimento longo não mostrou benefício sustentado do dorso metálico cimentado, e algumas séries tiveram sobrevida pior. Por isso o compromisso recomendado é a taça **toda de polietileno, espessa**, com o **subcondral preservado**.\n\n**O que a banca quis testar.** As duas variáveis que controlam o estresse no trabecular. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a seção.",
+  "correta": "**D: polietilenos espessos e preservar o osso subcondral.** É a combinação que reduz os picos de estresse no osso trabecular (Campbell, cap. 3, p. 183).",
   "incorretas": {
-   "A": "As duas escolhas estão erradas: o polietileno fino concentra a tensão, e retirar o osso subcondral deixa a carga sobre o osso esponjoso, que se deforma.",
-   "B": "Preservar o osso subcondral está certo, mas o polietileno fino concentra a tensão e se desgasta mais.",
-   "C": "O polietileno espesso está certo, mas retirar o osso subcondral desfaz a vantagem, porque a carga passa ao osso esponjoso."
+   "A": "**É a pior combinação.** O Campbell descreve os maiores estresses no cimento e no trabecular com polietileno fino e subcondral removido.",
+   "B": "**Acerta o subcondral, erra a espessura.** O polietileno fino concentra o estresse; a parede de 5 mm ou mais o reduz.",
+   "C": "**Acerta a espessura, erra o subcondral.** Remover o subcondral aumenta os picos de estresse no trabecular."
   },
-  "conceito": "Na artroplastia do quadril com **taça cimentada**, o componente acetabular é uma peça de **polietileno** (um plástico muito resistente) fixada ao osso da bacia por uma camada de **cimento ósseo**. A carga que vem da cabeça passa do polietileno para o cimento e, daí, para o osso. Para que a taça dure, essa carga precisa chegar ao osso de forma **bem distribuída**.\n\nDois fatores são decisivos:\n\n**A espessura do polietileno**: um polietileno **espesso** espalha a carga por uma área maior e reduz os picos de tensão sobre o cimento e o osso. Além disso, desgasta menos e dura mais. Um polietileno fino concentra a tensão e se desgasta mais rápido.\n\n**O osso subcondral**: é a camada de osso **mais dura e rígida**, logo abaixo da cartilagem do acetábulo. Ela funciona como uma base firme para o cimento. Se o cirurgião fresa demais e retira essa camada, o cimento passa a se apoiar no **osso esponjoso**, mais mole, que se deforma com a carga. Isso favorece a soltura da taça.\n\nPor isso, a recomendação é usar **polietileno espesso** e **preservar o osso subcondral**.\n\nOutros cuidados da cimentação: manter uma camada de cimento uniforme de poucos milímetros, fazer pequenos orifícios no osso para o cimento se ancorar, manter o leito **seco** (sem sangue) na hora de cimentar e não deixar a taça muito vertical.\n\n**Na prova**: para proteger o osso da pelve com taça cimentada, use polietileno espesso e preserve o osso subcondral.",
-  "correta": "Polietilenos espessos e preservar o osso subcondral. O polietileno espesso distribui a carga e o osso subcondral oferece uma base rígida ao cimento.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone (pelvic side), p. 182 e 183",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0039": {
@@ -708,47 +729,65 @@
   }
  },
  "quadril-0054": {
+  "conceito": "A gangorra do quadril tem dois braços. Medializar o acetábulo mexe no braço do peso; aumentar o offset mexe no braço dos abdutores. A questão testa se o candidato sabe qual mexe em qual.\n\n**As alavancas, no Campbell** (cap. 3, p. 179 e 180, Fig. 3.1). O braço do peso corporal vai do centro de gravidade ao centro da cabeça; o dos abdutores, da face lateral do trocânter ao centro da cabeça. A razão normal é de cerca de **2,5 para 1**.\n\n**Medializar.** Aproximar o acetábulo da linha média **encurta o braço do peso corporal**. O momento do peso cai, e os abdutores precisam de **menos força** para equilibrar.\n\n**Aumentar o offset.** Um colo de **offset alto** afasta o fêmur do centro de rotação e **alonga o braço dos abdutores**. O Campbell mostra o efeito oposto quando o offset é insuficiente: o braço abdutor encurta e surgem **mais força de reação articular, claudicação, impacto ósseo e luxação** (p. 184).\n\n**A leitura do gabarito.** O offset aumentado melhora a capacidade dos abdutores de equilibrar a pelve, que a banca chamou de aumento de força. O alerta registra a sutileza: a força necessária, em rigor, diminui.\n\n**O que a banca quis testar.** Qual braço cada manobra altera. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a figura das alavancas.",
+  "correta": "**D: o offset aumentado do colo do fêmur na prótese do quadril aumenta a força da musculatura abdutora.** O offset alonga o braço de alavanca dos abdutores (Campbell, cap. 3, p. 179 e 184); a leitura da palavra \"força\" está no alerta.",
   "incorretas": {
-   "A": "Medializar o acetábulo encurta o braço do peso do corpo, e não o aumenta. É por isso que reduz a carga na articulação.",
-   "B": "Com o braço do peso do corpo menor, os abdutores precisam de menos força para equilibrar a bacia. A eficiência deles melhora, e não piora.",
-   "C": "O offset femoral não muda o braço do peso do corpo. Ele muda o braço dos abdutores."
+   "A": "**É o contrário.** A medialização encurta o braço de alavanca do peso corporal.",
+   "B": "**Não é o que a banca considerou.** A medialização reduz o momento do peso e, com ele, a força exigida dos abdutores; a afirmação foi tratada como incorreta pela banca, que quis o efeito do offset.",
+   "C": "**Erra o braço.** O offset alonga o braço dos abdutores, não o do peso corporal."
   },
-  "conceito": "Para entender as forças numa prótese de quadril, volte à **gangorra** do quadril quando estamos apoiados numa perna só. O ponto de apoio é o **centro de rotação** (a cabeça). De um lado está o **peso do corpo**; do outro, os **músculos abdutores**, presos no trocânter maior. Cada lado tem o seu **braço de alavanca**, a distância até o ponto de apoio.\n\nCada manobra cirúrgica muda um braço diferente:\n\n**Medializar o acetábulo** (colocar a taça mais para dentro): aproxima o centro de rotação da linha média do corpo. Isso **encurta o braço do peso do corpo**. Os abdutores precisam de menos força para equilibrar, e a carga sobre a articulação diminui.\n\n**Aumentar o offset femoral**: o offset é a distância horizontal entre o centro da cabeça e o eixo do fêmur. Aumentá-lo afasta o trocânter do centro de rotação e **alonga o braço dos abdutores**. Com um braço maior, o mesmo músculo gera **mais momento** (mais \"força de giro\") para a mesma contração. É nesse sentido que se diz que o offset aumentado **aumenta a força da musculatura abdutora**: ela fica mais eficiente. A carga sobre a articulação cai e a marcha melhora.\n\nO contrário também vale: **lateralizar** o acetábulo alonga o braço do peso e aumenta a carga; **reduzir** o offset encurta o braço dos abdutores, enfraquecendo a marcha (sinal de Trendelenburg) e deixando a prótese menos estável.\n\nHá limites: um offset exagerado alonga o membro, causa dor na região do trocânter e aumenta o esforço sobre a haste.\n\n**Na prova**: offset aumentado alonga o braço dos abdutores e aumenta sua força; medializar o acetábulo encurta o braço do peso do corpo.",
-  "correta": "O offset aumentado do colo do fêmur aumenta a força da musculatura abdutora. Ele alonga o braço de alavanca dos abdutores, que geram mais momento com a mesma contração.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Applied biomechanics: forces acting on the hip, p. 179 e 180 (Fig. 3.1); Femoral components: offset, p. 184",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "alerta": "Mecanicamente, alongar o braço de alavanca dos abdutores reduz a força que eles precisam fazer para equilibrar a pelve. A alternativa D, gabarito oficial, deve ser lida como aumento da eficiência ou do momento abdutor. O gabarito foi preservado.",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0055": {
+  "conceito": "O stress shielding tem endereço certo no fêmur. Quando a haste carrega a carga, a primeira região a ficar sem estímulo é a que antes recebia toda a compressão do colo: a cortical proximal medial, o calcar.\n\n**O dado do Campbell** (cap. 3, p. 181 e 182). Uma análise de fêmures recuperados em autópsia mostrou que, **com implantes cimentados e não cimentados**, a **maior queda da densidade mineral ocorreu na cortical proximal medial**. A densitometria mostra que a perda progride por pelo menos **5 anos**, e ela **não ocorre no recapeamento**.\n\n**Por que ali.** No fêmur normal, o colo transmite a carga para a cortical medial proximal. Depois da prótese, a carga desce pela haste e entra no osso mais abaixo, deixando a região do calcar descarregada.\n\n**O que piora.** O livro cita que hastes não cimentadas tiveram mais perda proximal que as cimentadas, que o cromo-cobalto teve quase o dobro de perda do titânio, e que hastes grossas com fixação no istmo concentram o stress shielding. Um colar apoiado no colo poderia carregar a região medial proximal, mas é difícil conseguir esse contato.\n\n**O que a banca quis testar.** A localização da perda óssea depois da artroplastia. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a transferência de carga.",
+  "correta": "**D: proximal e medial.** É a região da maior queda da densidade mineral com implantes cimentados e não cimentados (Campbell, cap. 3, p. 182).",
   "incorretas": {
-   "A": "A região distal continua recebendo carga pela haste, e o osso ali se mantém ou até engrossa.",
-   "B": "A cortical distal medial também recebe carga, e não é onde a perda é maior.",
-   "C": "A região proximal lateral também perde densidade, mas menos que o calcar, do lado de dentro."
+   "A": "**É onde a carga chega.** A região distal recebe a carga da haste e pode até hipertrofiar na ponta do revestimento poroso.",
+   "B": "**Erra o nível.** A perda máxima é proximal, não distal.",
+   "C": "**Erra o lado.** A cortical lateral não é a que recebia a compressão do colo; a perda maior é medial."
   },
-  "conceito": "O osso é um tecido vivo que se adapta à carga: ele se mantém forte onde é **solicitado** e perde densidade onde deixa de receber carga. Essa ideia é conhecida como **lei de Wolff**.\n\nNuma artroplastia do quadril, a **haste** colocada dentro do fêmur é mais rígida que o osso. Quando ela está bem fixa, parte da carga que antes passava pela parte de cima do fêmur passa a descer **pela haste**, direto para a parte de baixo. O osso da parte de cima fica \"protegido\" da carga e, sem ser solicitado, **perde densidade**. Esse fenômeno se chama **stress shielding** (desvio, ou blindagem, de carga).\n\n**Onde a perda é maior?** Na região **proximal e medial** do fêmur, chamada de **calcar**, logo abaixo do colo, do lado de dentro. Na divisão do fêmur em zonas usada para avaliar próteses (as **zonas de Gruen**), essa é a **zona 7**. A região proximal e lateral (zona 1, perto do trocânter) também perde densidade, mas menos.\n\nJá na parte de baixo, perto da ponta da haste, o osso continua recebendo carga e pode até **engrossar** (hipertrofia da cortical).\n\n**O que aumenta o stress shielding**: hastes muito **rígidas** (de cromo-cobalto) e **grossas**, hastes que se fixam principalmente na parte de baixo e osso já fraco antes da cirurgia.\n\n**O que diminui**: hastes mais flexíveis (de titânio), com formato e revestimento que favorecem a fixação na parte de cima do fêmur.\n\n**Na prova**: a maior perda de densidade óssea ocorre na cortical proximal e medial (o calcar, zona 7 de Gruen).",
-  "correta": "Proximal e medial. É o calcar, a zona 7 de Gruen, que deixa de receber carga quando a haste a transmite para baixo.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone, p. 181 e 182",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0056": {
+  "conceito": "Esta é a outra face da questão do TEOT: em vez de perguntar como reduzir o estresse, pergunta quando ele é máximo. A resposta é a combinação inversa.\n\n**O Campbell, literalmente no conceito** (cap. 3, p. 183). Os **maiores estresses no cimento e no osso trabecular** se desenvolvem quando se usa um componente acetabular de **polietileno de parede fina** e quando o **osso subcondral foi removido**.\n\n**As duas variáveis.**\n- **Espessura do polietileno:** a parede de 5 mm ou mais distribui a carga, como faria um dorso metálico; a parede fina concentra.\n- **Osso subcondral:** é a capa dura que espalha a carga sobre o trabecular. Removê-lo aumenta os picos de estresse.\n\n**A consequência prática.** O livro recomenda a taça **toda de polietileno, espessa**, com o **subcondral preservado**, como o compromisso entre stress shielding e concentração de estresse. Foi por isso que a medialização agressiva de CHARNLEY, que fresava até o fundo, perdeu espaço.\n\n**O que a banca quis testar.** A combinação que mais sobrecarrega o cimento e o trabecular. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz o acetábulo cimentado.",
+  "correta": "**D: mais fina e o osso subcondral é ressecado.** É a combinação de maior estresse no cimento e no osso trabecular (Campbell, cap. 3, p. 183).",
   "incorretas": {
-   "A": "Polietileno espesso com subcondral preservado é a combinação de menor estresse, justamente a recomendação técnica.",
-   "B": "Ressecar o subcondral piora, mas o polietileno espesso distribui a carga e compensa em parte.",
-   "C": "O polietileno fino piora, mas preservar o subcondral mantém o apoio na camada de osso mais resistente."
+   "A": "**É a melhor combinação.** Polietileno espesso e subcondral preservado reduzem os picos de estresse.",
+   "B": "**Acerta a ressecção, erra a espessura.** O polietileno espesso atenua o estresse mesmo sem subcondral.",
+   "C": "**Acerta a espessura, erra o subcondral.** Com o subcondral preservado, o estresse no trabecular é menor."
   },
-  "conceito": "Na taça **cimentada** da prótese de quadril, a carga que vem da cabeça passa pelo **polietileno** (o plástico da taça), depois pelo **cimento** e, por fim, chega ao **osso**. Quanto mais concentrada a carga, maior o **estresse** (a tensão) sobre o cimento e o osso, e maior o risco de a taça se soltar com o tempo.\n\nDois fatores definem esse estresse:\n\n**A espessura do polietileno**: um polietileno **espesso** espalha a carga por uma área maior. Um polietileno **fino** concentra a carga em pontos menores, aumentando a tensão.\n\n**O osso subcondral**: é a camada de osso mais **dura e rígida**, logo abaixo da cartilagem do acetábulo. Quando ela é preservada, o cimento se apoia numa base firme. Quando é **ressecada** (retirada ao fresar demais), o cimento passa a se apoiar no **osso esponjoso**, muito mais mole, e a tensão no osso trabecular aumenta.\n\nCombinando os dois:\n\npolietileno espesso com subcondral preservado: **menor** estresse;\n\npolietileno espesso com subcondral ressecado, ou fino com subcondral preservado: estresse **intermediário**;\n\npolietileno **fino** com subcondral **ressecado**: **maior** estresse.\n\nPor isso as regras técnicas são: usar polietileno com espessura mínima adequada, fresar com cuidado preservando a placa subcondral, fazer pequenos orifícios para ancorar o cimento e manter o leito seco.\n\n**Na prova**: o maior estresse acontece com polietileno mais fino e osso subcondral ressecado.",
-  "correta": "Mais fina e o osso subcondral é ressecado. É a soma das duas piores condições: o polietileno fino concentra a carga e, sem o subcondral, o cimento se apoia em osso mole.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone (pelvic side), p. 183",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0057": {
+  "conceito": "A chave desta questão está em uma única condição que parece assustadora e não é: a bacteriúria assintomática. Quem sabe disso elimina três alternativas.\n\n**O que o Campbell diz** (cap. 3, p. 200):\n- **Contraindicações absolutas:** **infecção ativa** do quadril ou de **qualquer outra região** e **doenças clínicas instáveis** que aumentem muito o risco de morbidade ou mortalidade.\n- **Bacteriúria assintomática não se associou a infecção do sítio cirúrgico e não deve ser considerada contraindicação.**\n\n**Os fatores que pesam sem proibir** (p. 201):\n- **Obesidade:** fator de risco para atraso de cicatrização, infecção profunda, eventos cardíacos e lesão renal. Não há IMC que contraindique de forma definitiva, mas os estudos estratificam pelo IMC de 40, e se recomenda adiar com dieta estruturada.\n- **Tabagismo:** aumenta as complicações da ferida (1,8% contra 1,1% numa série); recomenda-se parar por pelo menos **6 semanas** antes.\n- **Diabetes:** HbA1c entre 7,5 e 8% como limite provável de risco.\n\n**E a demência?** O livro não a discute nessa seção, mas a lógica é a de uma condição que prejudica a reabilitação, a adesão às precauções e a capacidade de se beneficiar da cirurgia, o que a banca tratou como contraindicação relativa.\n\n**O que a banca quis testar.** Separar o que adia ou pesa contra a cirurgia do que não muda nada. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz as contraindicações.",
+  "correta": "**B: demência severa, obesidade mórbida e tabagismo.** São condições que pesam contra a cirurgia sem proibi-la, e a única alternativa sem a bacteriúria assintomática, que o Campbell exclui expressamente (cap. 3, p. 200).",
   "incorretas": {
-   "A": "A bacteriúria assintomática é investigada e tratada quando indicado antes da cirurgia, e não faz parte da lista de contraindicações relativas.",
-   "C": "A presença da bacteriúria assintomática descaracteriza essa lista de contraindicações relativas.",
-   "D": "Esta alternativa também inclui a bacteriúria, e por isso não é a lista pedida."
+   "A": "**Inclui a bacteriúria assintomática.** O Campbell afirma que ela não deve ser considerada contraindicação.",
+   "C": "**Também inclui a bacteriúria assintomática.** Não há associação com infecção do sítio cirúrgico.",
+   "D": "**Mesmo erro.** A bacteriúria assintomática não é contraindicação."
   },
-  "conceito": "Antes de indicar uma **artroplastia total do quadril**, o cirurgião avalia condições que podem impedir ou atrapalhar a cirurgia. Elas se dividem em dois grupos:\n\n**Contraindicações absolutas** (não se deve operar):\n\n**infecção ativa**, no quadril ou em outro lugar do corpo;\n\nausência ou paralisia dos **músculos abdutores**, sem os quais a prótese fica instável;\n\ndoença clínica que torne a anestesia inviável;\n\nartropatia neuropática grave (como a de Charcot).\n\n**Contraindicações relativas** (a cirurgia pode ser feita, mas o risco é maior e o resultado tende a ser pior):\n\n**demência grave**: o paciente não colabora com a reabilitação nem com os cuidados para não luxar, e cai mais;\n\n**obesidade mórbida**: aumenta infecção, luxação e dificuldade técnica;\n\n**tabagismo**: piora a cicatrização, aumenta a infecção e prejudica a fixação do osso na prótese;\n\ntambém diabetes mal controlado, imunossupressão, doença dos vasos e pele de má qualidade.\n\n**E a bacteriúria assintomática** (bactérias na urina, sem sintomas)? Ela entra no grupo das possíveis **fontes de infecção**, que são investigadas e tratadas quando indicado antes da cirurgia, assim como problemas nos dentes e feridas na pele. Ela não faz parte da lista clássica de contraindicações relativas.\n\nAntes da cirurgia, procura-se **otimizar** o paciente: parar de fumar algumas semanas antes, controlar o peso e o diabetes, e tratar os portadores da bactéria *Staphylococcus aureus*.\n\n**Na prova**: demência grave, obesidade mórbida e tabagismo são contraindicações relativas da artroplastia do quadril.",
-  "correta": "Demência severa, obesidade mórbida e tabagismo. São três condições que pioram os resultados sem impedir a cirurgia.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Indications and contraindications; Preoperative patient evaluation and optimization, p. 200 e 201",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "alerta": "O Campbell não apresenta uma lista formal de contraindicações relativas com demência grave e obesidade mórbida; trata a obesidade e o tabagismo como fatores de risco a otimizar e afirma que a bacteriúria assintomática não é contraindicação. O gabarito oficial (B) foi preservado.",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0058": {
@@ -763,14 +802,18 @@
   "conferido": false
  },
  "quadril-0059": {
+  "conceito": "A ossificação heterotópica é osso que se forma onde não devia, nos músculos em volta da prótese. A questão pergunta qual caminho até o quadril mais a provoca.\n\n**O que o Campbell diz** (cap. 3, p. 254). A técnica cirúrgica pode influir: as **vias anterior e anterolateral têm risco maior** de ossificação heterotópica que as vias **transtrocantérica e posterior**.\n\n**Os outros fatores de risco** listados no livro: ossificação heterotópica prévia, **artrose hipertrófica**, **espondilite anquilosante**, **DISH**, doença de PAGET, **sexo masculino** e etnia afro-americana.\n\n**A evolução.** A calcificação aparece na radiografia na terceira ou quarta semana, mas o osso só amadurece em 1 a 2 anos. A classificação de **BROOKER** descreve a extensão: I, ilhas de osso; II, espículas com pelo menos 1 cm entre si; III, menos de 1 cm; IV, anquilose. A maioria é assintomática; os graus III e IV podem limitar o movimento e doer.\n\n**A prevenção.** Não é rotina para todos; vale nos grupos de risco, com **radioterapia em dose baixa** (até 500 cGy, até 8 horas antes ou até 72 horas depois) ou **AINE**. A ressecção é rara e só depois que a cintilografia mostra osso maduro.\n\n**O que a banca quis testar.** A via de acesso associada a mais ossificação. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz as complicações.",
+  "correta": "**A: anterior.** As vias anterior e anterolateral têm mais risco de ossificação heterotópica que a transtrocantérica e a posterior (Campbell, cap. 3, p. 254).",
   "incorretas": {
-   "B": "A via posterior é justamente a que apresenta a menor incidência nas séries comparativas.",
-   "C": "A osteotomia do trocânter também aumenta o risco, por deixar osso exposto e hematoma, mas as comparações destacam as vias anterior e anterolateral.",
-   "D": "O acesso posterolateral tem incidência semelhante à da via posterior, que é a menor."
+   "B": "**Tem risco menor.** O Campbell coloca a via posterior entre as de menor risco.",
+   "C": "**Também tem risco menor.** A via transtrocantérica aparece ao lado da posterior, com menos ossificação que as anteriores.",
+   "D": "**É uma variação da via posterior.** Não está entre as de maior risco descritas pelo livro."
   },
-  "conceito": "A **ossificação heterotópica** é a formação de **osso de verdade dentro dos músculos e das partes moles** ao redor do quadril, onde não deveria haver osso. Depois de uma artroplastia, ela aparece como uma resposta ao **trauma cirúrgico**: células do músculo lesado entram em contato com fragmentos de osso fresado e com o hematoma e passam a fabricar osso. Ela é graduada pela **classificação de Brooker**, de I a IV. Na maioria das vezes não dá sintomas; só os graus mais altos (III e IV) costumam limitar o movimento.\n\n**Fatores de risco**:\n\n**do paciente**: ter tido ossificação heterotópica antes (o maior de todos), espondilite anquilosante, hiperostose esquelética difusa, sexo masculino e artrose com muitos osteófitos;\n\n**da cirurgia**: o **acesso usado** (nas séries comparativas, as vias **anteriores e anterolaterais** aparecem com incidência maior que a via posterior), a osteotomia do trocânter, a lesão muscular extensa, os restos de osso deixados no campo e o hematoma.\n\n**Prevenção** nos pacientes de alto risco:\n\num anti-inflamatório, a **indometacina**, por cerca de uma a duas semanas;\n\nou **radioterapia** em dose única, logo antes ou logo depois da cirurgia;\n\ne cuidados técnicos: lavar bem os restos de osso, controlar o sangramento e respeitar o músculo.\n\n**Tratamento**: retirar o osso só nos casos graves com sintomas, depois que ele amadureceu (em geral 6 a 12 meses), sempre com prevenção para que não volte.\n\n**Na prova**: entre as opções, a ossificação heterotópica é mais frequente na via anterior.",
-  "correta": "Anterior. Nas séries comparativas, as vias anteriores e anterolaterais apresentam incidência maior de ossificação heterotópica que a via posterior.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Complications: heterotopic ossification, p. 254",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0060": {
@@ -796,14 +839,18 @@
   "conferido": false
  },
  "quadril-0062": {
+  "conceito": "O polietileno foi por décadas o ponto fraco da prótese do quadril. A versão altamente reticulada resolveu boa parte do problema, e a questão quer saber por quê.\n\n**O polietileno convencional** era esterilizado com 2,5 Mrad de radiação, que gera **radicais livres**, predispõe à **oxidação** e aumenta o desgaste (Campbell, cap. 3, p. 197).\n\n**A reticulação.** Com **5 a 10 Mrad**, as cadeias fazem mais ligações cruzadas, e o material ganha **resistência ao desgaste notável**. Os radicais livres que sobram são apagados pela **refusão** (quase todos, à custa de tenacidade) ou pelo **recozimento** (menos eficaz, mas preserva as propriedades), ou capturados pela **vitamina E**. O resultado é um polietileno com **menos oxidação e menos desgaste**, hoje o par dominante com cabeça de cromo-cobalto ou cerâmica.\n\n**As outras afirmações.**\n- **Cabeça maior:** com cabeças de 36 a 40 mm, o **desgaste volumétrico foi maior** que com cabeças menores numa série citada (p. 198). Maior cabeça não significa menos desgaste.\n- **Cerâmica:** tem baixo atrito e ótimo desgaste in vitro, mas não é isenta de complicações; o livro discute fratura e outros problemas das superfícies alternativas. \"Cr/Cr\" nem é um par cerâmico.\n- **\"Sempre maior na cabeça de metal\":** generalização sem base; o desgaste depende do par e do polietileno.\n\n**O que a banca quis testar.** A vantagem do polietileno reticulado. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a tabela da fabricação.",
+  "correta": "**D: o polietileno crosslinked sofre menos oxidação e menos desgaste.** A reticulação com extinção dos radicais livres dá resistência ao desgaste e à oxidação (Campbell, cap. 3, p. 197).",
   "incorretas": {
-   "A": "O \"sempre\" invalida a alternativa. O desgaste depende do par de materiais, do diâmetro e do polietileno, e não é regra que a cabeça de metal gere mais.",
-   "B": "No polietileno convencional é o contrário: uma cabeça maior percorre mais distância a cada ciclo e gera mais desgaste.",
-   "C": "O par cerâmica-cerâmica tem complicações próprias, como o rangido e, raramente, a fratura. Não é isento de problemas."
+   "A": "**Generalização sem base.** O desgaste volumétrico depende do par de superfícies e do polietileno, não é sempre maior com a cabeça de metal.",
+   "B": "**É o contrário no volume.** O Campbell cita desgaste volumétrico maior com cabeças de 36 a 40 mm.",
+   "C": "**Nenhum par é isento de complicações.** A cerâmica tem riscos próprios, e Cr/Cr nem descreve um par cerâmico."
   },
-  "conceito": "Na prótese de quadril, a cabeça gira dentro de um forro, e o atrito entre as duas superfícies (o **par tribológico**) gera **desgaste**. As partículas de desgaste, principalmente as de **polietileno**, provocam uma reação do organismo que destrói o osso ao redor (a **osteólise**) e acaba soltando a prótese. Por isso, diminuir o desgaste é um dos grandes objetivos da artroplastia.\n\n**O polietileno de alta reticulação** (crosslinked) foi uma das grandes evoluções:\n\nna **primeira geração**, o polietileno é irradiado, o que cria **ligações cruzadas** entre as cadeias do plástico e reduz muito o desgaste. Porém, a irradiação deixa **radicais livres**, que reagem com o oxigênio (**oxidação**) e deixam o material frágil com o tempo;\n\nna **segunda geração**, tratamentos térmicos ou a adição de **vitamina E** neutralizam esses radicais livres. O resultado é **menos desgaste e menos oxidação**.\n\nEsse material permitiu usar **cabeças maiores** com segurança e reduziu muito a osteólise.\n\n**Os pares mais usados**:\n\n**metal ou cerâmica contra polietileno reticulado**: o padrão atual, previsível;\n\n**cerâmica contra cerâmica**: desgaste mínimo, mas pode **ranger** e, raramente, **fraturar**;\n\n**metal contra metal**: liberava íons metálicos e causava reações nos tecidos (pseudotumores), e foi abandonado.\n\n**Sobre o tamanho da cabeça**: no polietileno **convencional**, uma cabeça maior percorre mais distância a cada passo e gera **mais** desgaste. Com o polietileno reticulado, esse efeito ficou pequeno.\n\n**Na prova**: o polietileno crosslinked sofre menos oxidação e menos desgaste.",
-  "correta": "O polietileno crosslinked sofre menos oxidação e menos desgaste. As ligações cruzadas reduzem o desgaste, e as versões modernas eliminam os radicais livres que causavam a oxidação.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Alternative bearings: highly crosslinked polyethylene, p. 197 e 198",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0063": {
@@ -942,18 +989,18 @@
   "conferido": false
  },
  "quadril-0074": {
-  "conceito": "### Os quadrantes de Wasielewski na figura\n- Linha da **EIAS** ao centro do acetábulo, prolongada para trás.\n- Linha perpendicular a ela pelo centro.\n\n| Quadrante | Situação |\n|---|---|\n| ==póstero-superior== | ==zona segura==: osso espesso, estruturas nobres mais distantes |\n| póstero-inferior | aceitável com cautela: ciático, pudendos, vasos glúteos inferiores |\n| ântero-superior | **zona da morte**: artéria e veia ilíacas externas |\n| ântero-inferior | nervo e vasos obturatórios |\n\n### Técnica segura\n- Parafusos no póstero-superior, direcionados para a incisura isquiática.\n- Comprimento medido; evitar perfurar a cortical interna com broca longa.\n- Na revisão com perda óssea, planejar com TC.\n\n> **Na prova:** quadrante mais seguro = ==póstero-superior==.",
-  "correta": "**Zona segura de Wasielewski.**\n- O quadrante póstero-superior tem o maior estoque ósseo do acetábulo.\n- As estruturas neurovasculares ficam mais distantes da cortical interna nessa região.",
+  "conceito": "Parafuso de acetábulo atravessa a pelve, e o que está do outro lado não se vê. A regra de WASIELEWSKI existe para dizer onde a ponta do parafuso encontra osso e onde encontra um vaso.\n\n**Como se desenham os quadrantes** (Campbell, cap. 3, p. 210, Fig. 3.46). Uma linha da **espinha ilíaca anterossuperior** passa pelo **centro do acetábulo**; outra, perpendicular, também pelo centro.\n\n**O que cada quadrante ameaça.**\n- **Anterossuperior:** o parafuso emerge na pelve **perto da artéria e da veia ilíacas externas**.\n- **Anteroinferior:** pode lesar o **nervo e os vasos obturatórios**.\n- **Posteriores:** **não emergem dentro da pelve**; podem chegar à **incisura isquiática** e ameaçar o **nervo ciático** e os **vasos glúteos superiores**, mas a broca e a rosca podem ser **palpadas** ali, o que permite evitar a lesão.\n\n**Por que o póstero-superior é o escolhido.** Os dois quadrantes posteriores são a zona de trabalho, e o superior tem o maior estoque ósseo, longe da incisura e dos vasos pélvicos. O Campbell acrescenta um detalhe: com o componente num **centro de rotação alto**, só as **metades periféricas** dos quadrantes posteriores são seguras.\n\n**O que a banca quis testar.** A regra de segurança mais usada na fixação do acetábulo não cimentado. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz os quadrantes.",
+  "correta": "**A: póstero-superior.** É o quadrante mais seguro para os parafusos, longe dos vasos pélvicos e com maior estoque ósseo (Campbell, cap. 3, p. 210).",
   "incorretas": {
-   "B": "**Aceitável, com mais risco.**\n- O póstero-inferior aproxima-se do nervo ciático e das estruturas da incisura isquiática.",
-   "C": "**Zona da morte.**\n- O ântero-superior tem os vasos ilíacos externos logo além da parede.",
-   "D": "**Feixe obturatório.**\n- O ântero-inferior aproxima-se do nervo e dos vasos obturatórios."
+   "B": "**É posterior, mas não é o mais seguro.** O póstero-inferior não emerge na pelve, mas fica mais perto da incisura isquiática, com o ciático e os vasos glúteos superiores.",
+   "C": "**É o mais perigoso para os grandes vasos.** O parafuso anterossuperior emerge perto da artéria e da veia ilíacas externas.",
+   "D": "**Ameaça o feixe obturatório.** O parafuso anteroinferior pode lesar o nervo e os vasos obturatórios."
   },
   "referencias": [
-   "Wasielewski RC et al. Acetabular anatomy and the transacetabular fixation of screws in total hip arthroplasty. J Bone Joint Surg Am. 1990.",
-   "Campbell's Operative Orthopaedics. Total hip arthroplasty."
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Implantation of cementless acetabular component (Fig. 3.46), p. 210",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0075": {
@@ -1007,17 +1054,18 @@
   "conferido": false
  },
  "quadril-0079": {
+  "conceito": "O módulo de elasticidade mede quanto um material resiste a deformar. Uma haste rígida não deforma e carrega a carga sozinha; uma haste mais flexível se deforma junto com o osso e divide a carga com ele.\n\n**A frase do Campbell** (cap. 3, p. 181): a **diminuição do módulo de elasticidade da haste diminui o estresse na haste e aumenta o estresse no osso** ao redor. É o que acontece com ligas de módulo mais baixo, como o **titânio**, sobretudo com diâmetro pequeno.\n\n**Por que isso é bom para o osso.** A transferência de estresse ao fêmur é desejável: é o estímulo fisiológico que mantém a massa óssea e evita a osteoporose de desuso. O oposto, a haste rígida que poupa o osso, é o **stress shielding**.\n\n**O diâmetro atrapalha.** A rigidez à flexão cresce com a **quarta potência do diâmetro**. Uma haste de titânio grossa fica rígida e perde o benefício do módulo baixo.\n\n**Como guardar.** Pense em duas molas em paralelo segurando o mesmo peso: a mais mole carrega menos. Se a haste ficar mais mole, o osso, a outra mola, passa a carregar mais.\n\n**O que a banca quis testar.** A relação inversa entre o módulo da haste e o estresse no osso. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a transferência de carga.",
+  "correta": "**C: diminuição do estresse na haste e aumento do estresse no osso.** É a frase do Campbell sobre o módulo de elasticidade (cap. 3, p. 181).",
   "incorretas": {
-   "A": "Como a carga é dividida, o estresse não pode aumentar nas duas estruturas. Mais estresse na haste descreveria uma haste mais rígida.",
-   "B": "Mais carga na haste e menos no osso é o quadro da haste rígida, com módulo alto.",
-   "D": "A carga não desaparece: se a haste assume menos, o osso assume mais."
+   "A": "**Erra a haste.** Uma haste menos rígida carrega menos carga, e o estresse nela diminui.",
+   "B": "**Inverte os dois.** O módulo menor reduz o estresse na haste e aumenta o do osso.",
+   "D": "**Erra o osso.** A carga que a haste deixa de carregar vai para o osso, cujo estresse aumenta."
   },
-  "conceito": "O **módulo de elasticidade** é uma medida de **rigidez** de um material: quanto maior o módulo, mais rígido ele é e menos se deforma sob carga.\n\nNuma prótese de quadril, a **haste** e o **fêmur** dividem a carga, como **duas estruturas lado a lado**. A regra é: a mais rígida das duas assume a maior parte da carga.\n\n**Haste rígida** (módulo alto, como o **cromo-cobalto**): ela assume a maior parte da carga. O estresse na haste é **maior** e no osso é **menor**. O osso, pouco solicitado, perde densidade, principalmente na parte de cima e de dentro do fêmur (o calcar). Esse fenômeno se chama **stress shielding**, ou desvio de carga.\n\n**Haste mais flexível** (módulo mais baixo, como o **titânio**): ela se deforma junto com o fêmur e assume **menos** carga. O estresse na haste **diminui** e o estresse no osso **aumenta**. O osso, mais solicitado, se mantém melhor, e o desvio de carga diminui.\n\nPara comparação, a rigidez aproximada dos materiais: o osso cortical tem módulo bem menor que o titânio, que por sua vez é bem menos rígido que o cromo-cobalto.\n\n**Há um limite**: uma haste flexível demais aumenta o **micromovimento** entre a haste e o osso na parte de cima e pode concentrar tensão em pontos da própria haste, com risco de fadiga e quebra.\n\n**Na prova**: diminuir o módulo de elasticidade da haste diminui o estresse na haste e aumenta o estresse no osso.",
-  "correta": "Diminuição do estresse na haste e aumento do estresse no osso. A haste mais flexível assume menos carga, e o osso passa a ser mais solicitado.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 3"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone, p. 181",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0080": {
@@ -1250,15 +1298,18 @@
   "conferido": false
  },
  "quadril-0116": {
+  "conceito": "A haste cimentada falha começando pela interface entre a haste e o cimento: ela descola, e o ombro da haste se afasta do cimento. Por isso o primeiro sinal aparece no alto e do lado de fora.\n\n**Os sinais de soltura, no Campbell** (cap. 3, p. 278):\n1. **Radiolucência entre o terço superolateral da haste (zona 1 de GRUEN) e o cimento**, indicando descolamento e possível deformação precoce da haste.\n2. Radiolucência entre o cimento e o osso.\n3. **Afundamento** da haste, sozinha ou com o manto.\n4. Mudança da haste para uma posição **mais em varo**.\n5. **Fragmentação do cimento** entre a face superomedial da haste e o colo (zona 7).\n6. **Fratura do manto**, mais comum perto da **ponta** (zona 4).\n\n**A mecânica do varo.** A carga empurra a cabeça para baixo e para medial. A haste solta gira em torno da ponta: o ombro cai para medial e a ponta vai para lateral. Resultado: lucência **superolateral** e haste em **varo**. A lucência isolada no terço inferomedial não é o sinal descrito.\n\n**Um cuidado técnico.** O livro lembra que 10 graus de rotação do membro já mudam a aparência da haste; compare sempre radiografias em posição padronizada.\n\n**O que a banca quis testar.** O sinal mais precoce do descolamento da haste cimentada. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a lista.",
+  "correta": "**A: radioluscência entre o terço superolateral da haste e o manto de cimento adjacente.** É o descolamento da haste na zona 1 de GRUEN, primeiro sinal da lista do Campbell (cap. 3, p. 278).",
   "incorretas": {
-   "B": "A haste solta inclina para varo, e não para valgo: a parte de cima vai para dentro e a ponta encosta no lado de fora.",
-   "C": "A linha inferomedial também é descrita na soltura, como a outra metade do padrão em pivô, e esta alternativa é idêntica à D (veja o alerta).",
-   "D": "Esta alternativa tem exatamente o mesmo texto da C (veja o alerta)."
+   "B": "**É varo.** A haste solta gira com o ombro para medial e assume uma posição mais em varo.",
+   "C": "**Lado errado da haste.** A lucência que indica descolamento é a do terço superolateral; a região inferomedial não é a descrita.",
+   "D": "**Mesmo erro de localização.** O sinal clássico está no terço superolateral, entre a haste e o cimento."
   },
-  "conceito": "Uma **haste cimentada** está fixa dentro do fêmur por uma camada de **cimento ósseo**. Com o tempo, ela pode **se soltar**, seja entre a haste e o cimento, seja entre o cimento e o osso. Na radiografia, os sinais de soltura são:\n\numa **linha radiolucente** (uma faixa escura) que vai aumentando nas interfaces haste-cimento ou cimento-osso;\n\n**migração** da haste: ela afunda ou **inclina em varo** (a parte de cima vai para dentro e a ponta encosta no lado de fora do osso);\n\n**fratura do manto de cimento**;\n\nquebra ou deformação da própria haste.\n\n**Os padrões de falha de Gruen**: uma das formas mais típicas é a haste funcionando como um **pivô** (girando dentro do cimento), que produz linhas escuras **em cima e do lado de fora** (superolateral) e **embaixo e do lado de dentro** (inferomedial). Outras formas são a haste afundando como um pistão e a haste quebrando por fadiga.\n\nPara descrever onde estão essas linhas, o fêmur é dividido nas **zonas de Gruen**, de 1 (em cima, do lado de fora, perto do trocânter) a 7 (em cima, do lado de dentro, o calcar), com a zona 4 na ponta da haste.\n\n**A classificação de Harris** gradua a certeza da soltura: **definitiva** quando há migração ou fratura do cimento; **provável** quando a linha escura ocupa toda a interface; **possível** quando ocupa metade ou mais.\n\nO gabarito aceita a linha **superolateral** entre a haste e o cimento, que é a metade de cima do padrão em pivô (veja o alerta sobre as alternativas C e D).\n\n**Na prova**: a radiolucência superolateral entre haste e cimento indica soltura; a haste solta inclina em varo.",
-  "correta": "Radioluscência entre o terço superolateral da haste e o manto de cimento adjacente. Ela mostra que a haste está se descolando do cimento na parte de cima, metade do padrão em pivô.",
-  "alerta": "Esta questão tem duas alternativas idênticas: a C e a D dizem exatamente a mesma coisa (radioluscência entre o terço inferomedial da haste e o manto de cimento). Vale registrar também que essa radioluscência inferomedial é, ela própria, um sinal descrito de descolamento, o padrão clássico do afrouxamento cimentado é justamente o par superolateral mais inferomedial, produzido pela haste que pivota dentro do cimento. A alternativa marcada como certa é apenas metade desse par.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Loosening: femoral loosening, cemented femoral components, p. 278",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0117": {
@@ -1450,31 +1501,33 @@
   }
  },
  "quadril-0128": {
+  "conceito": "DORR olhou o fêmur proximal na radiografia e percebeu que a forma diz muito sobre a qualidade do osso. O tipo C é o fêmur que perdeu as paredes por dentro.\n\n**O tipo C, no Campbell** (cap. 3, p. 181). Perdeu **grande parte das corticais medial e posterior**. O canal fica **muito largo**, sobretudo no **perfil**, com aspecto de **chaminé** (stovepipe). É típico de **mulheres idosas pós-menopausa** e é um ambiente **menos favorável à fixação não cimentada**.\n\n**Os outros tipos.**\n- **A:** corticais grossas no AP e grande cortical posterior no perfil; canal distal estreito, em **taça de champanhe**; homens e jovens.\n- **B:** perda óssea das corticais **medial e posterior**, canal mais largo, mas forma preservada.\n\n**Por que medial e posterior.** O livro mede a espessura cortical no AP (onde se vê a medial) e no perfil (onde se vê a posterior). É nessas duas que o fêmur envelhecido afina, e o perfil denuncia o canal largo do tipo C.\n\n**O que a banca quis testar.** As corticais que definem a perda óssea na classificação de DORR. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a tabela.",
+  "correta": "**B: medial e posterior.** O tipo C de DORR perdeu grande parte das corticais medial e posterior (Campbell, cap. 3, p. 181).",
   "incorretas": {
-   "A": "A parede medial está certa, mas a cortical anterior não é a que mais perde osso.",
-   "C": "A perda é nas paredes medial e posterior, e não lateral e anterior.",
-   "D": "A parede posterior está certa, mas a outra é a medial, e não a lateral."
+   "A": "**Acerta a medial, erra a outra.** A perda que acompanha a medial é a posterior, vista no perfil.",
+   "C": "**Erra as duas.** DORR descreve perda medial e posterior, não lateral e anterior.",
+   "D": "**Acerta a posterior, erra a outra.** A cortical lateral não é a que define o tipo C."
   },
-  "conceito": "A **classificação de Dorr** descreve o **formato do fêmur proximal** na radiografia. Ela ajuda o cirurgião a escolher se a haste da prótese será cimentada ou não. Os tipos:\n\n**Tipo A**, \"**taça de champanhe**\": as paredes do osso (as corticais) são **grossas** e o canal é estreito e afunilado para baixo. Típico de homens jovens com osso de boa qualidade. Aceita bem hastes **sem cimento**.\n\n**Tipo B**: intermediário, com alguma perda de osso nas paredes de dentro e de trás.\n\n**Tipo C**, \"**chaminé**\": as corticais são **finas** e o canal é **largo** e reto, como uma chaminé. A perda de osso é acentuada nas paredes **medial** (de dentro) e **posterior** (de trás). Típico de idosos e mulheres com osteoporose. Nesses casos, costuma-se preferir a **haste cimentada**.\n\n**Por que medial e posterior?** Com a idade e a osteoporose, o afinamento do osso é mais evidente no **calcar** (a parede de dentro, logo abaixo do colo) e na parede de trás. Na radiografia de perfil, a parede de trás fina aparece como perda do contorno posterior.\n\n**O índice canal-calcar** quantifica isso: divide-se o diâmetro do canal 10 cm abaixo do trocânter menor pelo diâmetro na altura do trocânter menor. Quando passa de 0,75, o fêmur é do tipo C.\n\n**Implicação**: no fêmur tipo C, uma haste sem cimento tem mais risco de **fraturar o osso** durante a cirurgia e de **afundar** depois.\n\n**Na prova**: no tipo C de Dorr, a maior perda óssea é nas corticais medial e posterior.",
-  "correta": "Medial e posterior. No fêmur em chaminé, o afinamento se concentra no calcar, do lado de dentro, e na parede de trás.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 3"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone, p. 181 (Fig. 3.3)",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0129": {
+  "conceito": "CHARNLEY pensou a prótese como engenheiro: se a gangorra do quadril é desigual, encurte o braço que atrapalha e alongue o que ajuda.\n\n**O conceito original, no Campbell** (cap. 3, p. 180). Parte integrante da artroplastia de CHARNLEY era:\n- **encurtar o braço de alavanca do peso corporal aprofundando o acetábulo** (medialização);\n- **alongar o braço dos abdutores reinserindo o trocânter maior osteotomizado mais lateralmente**.\n\nCom isso, o momento do peso diminui e a força que os abdutores precisam fazer também. A Fig. 3.1 mostra os dois passos, e ainda a reinserção lateral e distal do trocânter, que tensiona os abdutores.\n\n**O que mudou.** O Campbell registra que hoje nenhuma das duas técnicas é enfatizada. A medialização deu lugar à **preservação do osso subcondral**, aprofundando só o necessário para cobrir a taça. A **osteotomia do trocânter** quase não se faz mais, pelos problemas de reinserção; o braço abdutor passou a ser ajustado pelo **offset** da haste. A via original de CHARNLEY era anterolateral, em decúbito dorsal, com osteotomia do trocânter e luxação anterior.\n\n**O que a banca quis testar.** Os dois pilares do conceito de CHARNLEY. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz as alavancas.",
+  "correta": "**B: medialização do componente acetabular e osteotomia do grande trocanter com reinserção lateralizada.** São os dois passos do conceito de CHARNLEY (Campbell, cap. 3, p. 180).",
   "incorretas": {
-   "A": "A medialização está certa, mas a ideia era aumentar o braço de alavanca dos abdutores, e não diminuí-lo.",
-   "C": "As duas partes estão erradas: lateralizar a taça alongaria o braço do peso, e a ideia era aumentar o braço dos abdutores.",
-   "D": "A osteotomia do trocânter está certa, mas a taça era medializada, e não lateralizada."
+   "A": "**Acerta a medialização, erra o braço abdutor.** CHARNLEY queria alongar o braço dos abdutores, não diminuí-lo.",
+   "C": "**Erra os dois.** A lateralização do acetábulo alongaria o braço do peso, e diminuir o braço abdutor iria contra a ideia.",
+   "D": "**Acerta o trocânter, erra o acetábulo.** O acetábulo era aprofundado (medializado), não lateralizado."
   },
-  "conceito": "**John Charnley** criou, nos anos 1960, a **artroplastia de baixo atrito**, que é a base das próteses de quadril modernas. Seu conceito tinha três pilares:\n\n**Baixo atrito**: uma cabeça pequena, de **22 mm**, articulando com uma taça de **polietileno** de alta densidade. A cabeça pequena desliza menos a cada movimento e gera menos atrito.\n\n**Fixação com cimento**: os componentes eram fixados ao osso com cimento ósseo (polimetilmetacrilato).\n\n**Biomecânica**: reduzir a carga sobre a prótese mexendo nos dois lados da \"gangorra\" do quadril.\n\nPara entender esse terceiro pilar, lembre que, no apoio numa perna só, a cabeça do fêmur é o ponto de apoio de uma gangorra. De um lado está o **peso do corpo**, com braço de alavanca longo; do outro, os **abdutores**, com braço curto. Charnley fazia duas coisas:\n\n**medializava o componente acetabular** (colocava a taça mais para dentro): isso **encurta o braço do peso do corpo**;\n\nfazia uma **osteotomia do trocânter maior** e o **reinseria mais para fora** (lateralizado) e para baixo: isso **alonga o braço dos abdutores**.\n\nAs duas manobras juntas diminuem a força que os abdutores precisam fazer e, assim, a **carga sobre o implante**.\n\n**Por que a osteotomia do trocânter caiu em desuso?** Porque o trocânter às vezes não consolidava, e os fios usados para fixá-lo davam problemas. Hoje, o mesmo efeito de alongar o braço dos abdutores é obtido com hastes de **offset maior**.\n\n**Na prova**: o conceito de Charnley inclui medializar o acetábulo e reinserir o trocânter lateralizado.",
-  "correta": "Medialização do componente acetabular e osteotomia do grande trocânter com reinserção lateralizada. A primeira encurta o braço do peso e a segunda alonga o braço dos abdutores.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 3"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Applied biomechanics: forces acting on the hip, p. 179 e 180 (Fig. 3.1)",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0130": {
@@ -1639,17 +1692,18 @@
   "conferido": false
  },
  "quadril-0151": {
+  "conceito": "Duas imagens do cotidiano resumem a classificação de DORR: a taça de champanhe, estreita embaixo e larga em cima, e o cano de chaminé, largo de cima a baixo.\n\n**A correspondência, no Campbell** (cap. 3, p. 181):\n- **Tipo A, taça de champanhe:** corticais grossas, canal distal estreito, aspecto de funil acentuado. Homens e jovens; boa fixação cimentada ou não cimentada.\n- **Tipo B:** perda das corticais medial e posterior, canal mais largo, forma preservada.\n- **Tipo C, chaminé (stovepipe):** grande perda das corticais medial e posterior, canal muito largo, sobretudo no perfil. Mulheres idosas; ambiente menos favorável à haste não cimentada.\n\n**A ordem da questão.** A banca pediu primeiro a chaminé e depois a taça. Ler na ordem é metade do acerto: chaminé = **C**, taça de champanhe = **A**.\n\n**Na prática.** O formato ajuda a escolher a haste: o fêmur em taça segura bem um implante não cimentado; o fêmur em chaminé favorece a fixação cimentada, que os registros também preferem acima dos 75 anos.\n\n**O que a banca quis testar.** As duas imagens extremas de DORR. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a tabela.",
+  "correta": "**A: C e A.** A chaminé é o tipo C e a taça de champanhe é o tipo A (Campbell, cap. 3, p. 181).",
   "incorretas": {
-   "B": "A chaminé é mesmo o tipo C, mas a taça de champanhe é o tipo A, e não o B.",
-   "C": "Esta alternativa inverte os dois formatos.",
-   "D": "Nem a chaminé é o tipo A, nem a taça de champanhe é o tipo B."
+   "B": "**Erra a taça.** O tipo B tem a forma preservada, sem o funil acentuado da taça de champanhe, que é o tipo A.",
+   "C": "**Inverte a ordem.** O enunciado pede primeiro a chaminé (C) e depois a taça (A).",
+   "D": "**Erra os dois.** A chaminé é C, não A; e a taça é A, não B."
   },
-  "conceito": "A **classificação de Dorr** descreve o formato da parte de cima do fêmur na radiografia, ajudando a escolher o tipo de haste da prótese. Os nomes dos tipos vêm do desenho que o canal do osso forma:\n\n**Tipo A**, \"**taça de champanhe**\" (champagne flute): as paredes do osso (corticais) são **grossas**, e o canal é estreito e se afunila para baixo, lembrando uma taça alta. É típico de homens jovens com osso de boa qualidade. Aceita bem hastes **sem cimento**.\n\n**Tipo B**: intermediário, com alguma perda de osso nas paredes de dentro e de trás.\n\n**Tipo C**, \"**chaminé**\" (stovepipe): as corticais são **finas**, e o canal é **largo e reto**, sem afunilamento, como um cano de chaminé. É típico de idosos e mulheres com osteoporose. Nesses casos, prefere-se a haste **cimentada**, porque uma haste sem cimento tem mais risco de fraturar o osso na cirurgia e de afundar depois.\n\n**O índice canal-calcar** quantifica a forma: é a divisão do diâmetro do canal 10 cm abaixo do trocânter menor pelo diâmetro na altura do trocânter menor. Abaixo de 0,5 indica tipo A; acima de 0,75, tipo C.\n\n**Na prova**: chaminé é o tipo C, e taça de champanhe é o tipo A de Dorr.",
-  "correta": "C e A. A chaminé, com corticais finas e canal largo, é o tipo C; a taça de champanhe, com corticais grossas e canal afunilado, é o tipo A.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 3"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone, p. 181 (Fig. 3.3)",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0152": {
@@ -1744,14 +1798,18 @@
   "conferido": false
  },
  "quadril-0163": {
+  "conceito": "O acetábulo não fica parado quando a pessoa senta: a pelve gira para trás e leva a taça junto. A coluna lombar é quem permite esse giro, e uma coluna fundida muda tudo.\n\n**O normal, no Campbell** (cap. 3, p. 203 e 204). Ao passar de em pé para sentado, a pelve **inclina para posterior** para acomodar a flexão do quadril. Essa inclinação **aumenta a anteversão do acetábulo** e reduz o impacto anterior com o quadril fletido.\n\n**Quando a coluna está fundida ou rígida.** A **artrodese lombar** ou a rigidez degenerativa **impedem essa acomodação**, o que pode levar a impacto anterior excessivo ao sentar ou impacto posterior em pé. Alguns desses pacientes têm **inclinação pélvica posterior excessiva em pé**, o que **aumenta a anteversão funcional do acetábulo** e o risco de **instabilidade anterior**.\n\n**O tamanho do problema.** Uma metanálise citada pelo livro mostrou que a **história de artrodese da coluna dobra o risco de luxação precoce** e mais que **triplica o risco de revisão**.\n\n**O que fazer.** Pedir radiografias de perfil da coluna e da pelve em pé e sentado, e adaptar a posição do componente.\n\n**Por que as outras não.** Displasia e fraturas alteram a anatomia local, mas não a anteversão funcional que depende do movimento da pelve sobre a coluna.\n\n**O que a banca quis testar.** A relação quadril e coluna. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a seção.",
+  "correta": "**A: artrodese lombar.** A coluna fundida altera a inclinação pélvica e a anteversão funcional da taça, e dobra o risco de luxação precoce (Campbell, cap. 3, p. 203 e 204).",
   "incorretas": {
-   "B": "A displasia dificulta a colocação da taça, mas não altera a anteversão funcional pela mecânica entre coluna e bacia.",
-   "C": "A artroplastia por fratura do colo luxa mais por outros motivos, como músculos não retraídos, idade e alterações cognitivas.",
-   "D": "A fratura do acetábulo afeta o apoio e a fixação da taça, e não a inclinação da bacia ao mudar de posição."
+   "B": "**Altera a anatomia, não a dinâmica pélvica.** A displasia exige cuidado com a cobertura e o centro de rotação, mas não muda a anteversão funcional pela postura.",
+   "C": "**Não altera a anteversão funcional.** A fratura do colo envolve outros riscos de luxação (cápsula, músculos, idade), mas não a relação pelve e coluna.",
+   "D": "**Mexe na anatomia do acetábulo, não na postura.** A anteversão funcional depende do movimento da pelve sobre a coluna lombar."
   },
-  "conceito": "A **anteversão** da taça é o quanto ela está virada para a frente. Ela é fundamental para a estabilidade da prótese. Mas existe uma diferença importante entre a anteversão **radiográfica** e a anteversão **funcional**:\n\na **radiográfica** é a posição da taça em relação à **bacia**, e não muda depois da cirurgia;\n\na **funcional** é a posição da taça em relação ao **chão** e ao fêmur durante as atividades, e ela **muda** conforme a bacia se inclina.\n\n**Como a bacia se mexe**: quando ficamos em pé, a bacia se inclina para a frente. Quando **sentamos**, a coluna lombar se dobra e a bacia **gira para trás** (retroversão pélvica). Esse giro para trás **aumenta a anteversão funcional** da taça, e isso **protege** o quadril: ao sentar, o quadril dobra muito, e a taça mais aberta para a frente evita que o colo bata na borda e que a cabeça escape para trás.\n\n**O problema da coluna rígida**: quando a coluna lombar está **fundida** (artrodese lombar) ou rígida por doença, a bacia **não consegue** se inclinar ao mudar de posição. A taça fica numa orientação fixa, que pode ficar fora da faixa segura em alguma posição. Resultado: **impacto e luxação**. Por isso, a artrodese lombar, principalmente longa ou incluindo o sacro, é um **fator de risco importante** de luxação depois da artroplastia.\n\n**Como planejar**: radiografias **em pé e sentado** mostram quanto a bacia se move. Nos pacientes de risco, o cirurgião ajusta a posição da taça e pode usar cabeças maiores ou próteses de **dupla mobilidade**, mais estáveis.\n\n**Na prova**: a artrodese lombar altera a anteversão funcional da taça e aumenta o risco de luxação.",
-  "correta": "Artrodese lombar. Com a coluna fundida, a bacia não gira para trás ao sentar, a taça sai da faixa segura e a luxação fica mais provável.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), The hip-spine relationship, p. 203 e 204",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0164": {
@@ -1833,14 +1891,18 @@
   "conferido": false
  },
  "quadril-0174": {
+  "conceito": "O stress shielding é maior quando a haste prende o fêmur longe, lá embaixo, e é rígida o bastante para carregar a carga sozinha até lá. É exatamente o perfil da haste não cimentada de fixação distal.\n\n**O que o Campbell descreve** (cap. 3, p. 181). Quando a haste está fixada por crescimento ósseo, a carga vai preferencialmente pela estrutura mais rígida, e o osso do **fêmur proximal fica aliviado**. Quase todos os fêmures com reabsorção proximal moderada ou grave tinham hastes de **13,5 mm ou mais**. Com **press-fit no istmo** e crescimento ósseo, o stress shielding foi **maior**. Em hastes maiores, mais revestimento poroso também significou mais stress shielding (Fig. 3.4, haste de revestimento extenso com perda de densidade proximal em 2 anos).\n\n**A comparação.** A metanálise citada encontrou **mais perda proximal nas hastes não cimentadas** que nas cimentadas. Hastes cônicas de titânio tiveram pouca atrofia proximal, e hastes de geometria distal cilíndrica, que enchem a diáfise, muito mais.\n\n**As outras opções.**\n- **Titânio:** módulo menor, transfere mais carga ao osso, sobretudo em diâmetros pequenos.\n- **Recapeamento:** a perda de densidade proximal **não ocorre**.\n- **Cimentadas:** menos perda proximal que as não cimentadas.\n\n**O que a banca quis testar.** O tipo de haste que mais causa stress shielding. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a transferência de carga.",
+  "correta": "**B: não-cimentados de fixação distal.** A fixação no istmo de hastes grossas e porosas concentra a carga distalmente e alivia o fêmur proximal (Campbell, cap. 3, p. 181).",
   "incorretas": {
-   "A": "A haste cimentada reparte a carga ao longo do manto de cimento e gera menos desvio.",
-   "C": "O titânio é menos rígido que o cromo-cobalto e, por isso, reduz o desvio de carga, em vez de aumentá-lo.",
-   "D": "O resurfacing preserva o colo e mantém a carga na parte de cima do fêmur; esse é justamente o seu argumento biomecânico."
+   "A": "**Causam menos.** Na metanálise citada, as hastes cimentadas tiveram menos perda proximal que as não cimentadas.",
+   "C": "**O titânio ajuda o osso.** O módulo menor transfere mais estresse ao fêmur; teve metade da perda do cromo-cobalto.",
+   "D": "**Não causa perda proximal.** O Campbell registra que a queda da densidade proximal não ocorre no recapeamento."
   },
-  "conceito": "O **stress shielding** (desvio de carga) é a perda de osso que acontece quando a **haste** da prótese passa a carregar a força que antes passava pelo próprio fêmur. O osso que deixa de ser solicitado **perde densidade**, principalmente na parte de cima e de dentro do fêmur (o calcar).\n\nO quanto isso acontece depende de **onde a haste transfere a carga** para o osso:\n\n**haste cimentada**: o cimento reparte a carga ao longo de toda a haste, e o desvio é **menor**;\n\n**haste sem cimento com fixação proximal** (presa na parte de cima, na metáfise): a carga continua entrando no osso na parte de cima, e o desvio é **menor**;\n\n**haste sem cimento com fixação distal** (presa no corpo do osso, na diáfise): a haste, geralmente cilíndrica e com revestimento poroso ao longo de quase toda a superfície, **trava na parte de baixo**. A carga desce pela haste e \"pula\" a parte de cima do fêmur, que fica descarregada. É o tipo com **maior** stress shielding;\n\n**resurfacing**: preserva o colo e mantém a carga na parte de cima do fêmur, com desvio **mínimo**.\n\n**Outros fatores que aumentam o desvio**: haste mais **grossa**, material mais **rígido** (como o cromo-cobalto) e osso já fraco antes da cirurgia.\n\nO **titânio** é menos rígido que o cromo-cobalto, e por isso causa **menos** stress shielding, e não mais.\n\n**Na prova**: o stress shielding é mais comum com hastes sem cimento de fixação distal.",
-  "correta": "Não cimentados de fixação distal. A haste trava na diáfise e leva a carga direto para baixo, deixando a parte de cima do fêmur sem estímulo.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone, p. 181 e 182 (Fig. 3.4)",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0175": {
@@ -2078,14 +2140,18 @@
   "conferido": false
  },
  "quadril-0205": {
+  "conceito": "Medicamentos e doenças da coagulação aumentam o sangramento, mas o hematoma da prótese, na maioria das vezes, nasce na sala: é o vaso que ficou sem cuidar.\n\n**O Campbell é taxativo** (cap. 3, p. 253): **o fator cirúrgico mais importante na prevenção do hematoma é a hemostasia cuidadosa**. A triagem pré-operatória serve para identificar os outros riscos: antiagregantes, anti-inflamatórios, anticoagulantes, fitoterápicos, discrasias e coagulopatias, e história pessoal ou familiar de sangramento.\n\n**Onde sangra.** O livro lista as fontes comuns:\n1. Ramos dos **vasos obturatórios** perto do ligamento redondo, do ligamento transverso e dos osteófitos inferiores.\n2. A **primeira perfurante da femoral profunda**, sob a inserção do glúteo máximo.\n3. Ramos dos **vasos femorais** perto da cápsula anterior.\n4. Ramos dos **vasos glúteos inferiores e superiores**.\n\n**O sangramento tardio.** Depois de uma semana, pode vir de **falso aneurisma** ou do **impacto do iliopsoas** na borda da taça.\n\n**O tratamento.** A maioria se resolve com curativos, suspensão do anticoagulante e observação. Cirurgia se houver **deiscência**, **necrose da borda**, **paralisia nervosa** ou **hematoma infectado**.\n\n**O que a banca quis testar.** Que a técnica pesa mais que os remédios. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz as complicações.",
+  "correta": "**D: a hemostasia intraoperatória inadequada.** O Campbell aponta a hemostasia cuidadosa como o fator cirúrgico mais importante na prevenção do hematoma (cap. 3, p. 253).",
   "incorretas": {
-   "A": "As doenças da coagulação agravam o sangramento, mas são incomuns e não explicam a maioria dos hematomas.",
-   "B": "O anticoagulante aumenta o sangramento de um vaso já mal controlado, mas não é o fator principal.",
-   "C": "O anti-inflamatório altera as plaquetas, mas pesa menos que a hemostasia feita na cirurgia."
+   "A": "**É fator de risco, mas não o mais importante.** As discrasias devem ser identificadas antes; o determinante principal é a hemostasia.",
+   "B": "**Também é fator de risco a triar.** O anticoagulante aumenta o sangramento, mas o livro coloca a hemostasia como o fator principal.",
+   "C": "**Fator menor.** Os anti-inflamatórios entram na triagem, sem ser o fator mais importante."
   },
-  "conceito": "O **hematoma** depois de uma artroplastia é um acúmulo de sangue na ferida. Ele parece um problema pequeno, mas pode ter consequências sérias: distende a ferida, favorece a **abertura** dos pontos e a **drenagem persistente** de líquido. E a ferida que drena por muito tempo é uma porta de entrada importante para a **infecção da prótese**.\n\n**Os fatores que levam ao hematoma**:\n\n**hemostasia intraoperatória inadequada**: é o fator **mais importante**. Hemostasia é o controle do sangramento durante a cirurgia, ligando ou cauterizando os vasos. Se algum vaso fica sangrando, forma-se o hematoma. É o único fator **totalmente sob controle do cirurgião**;\n\n**anticoagulantes** usados para prevenir trombose: eles **amplificam** o sangramento de um vaso que não foi bem controlado, mas não são a causa principal;\n\n**anti-inflamatórios e antiagregantes**: alteram a função das plaquetas, com peso menor;\n\n**doenças da coagulação**: são incomuns, mas graves;\n\n**espaço morto** e fechamento inadequado por planos: favorecem o acúmulo.\n\n**Prevenção**: hemostasia cuidadosa (vasos perfurantes, artérias circunflexas, leito do acetábulo); uso do **ácido tranexâmico**, que reduz o sangramento e as transfusões; fechamento meticuloso por planos; e uma profilaxia de trombose bem equilibrada.\n\n**Conduta**: se a ferida continua drenando por muitos dias, considera-se uma reabordagem cirúrgica para lavar e limpar, antes que a infecção se instale.\n\n**Na prova**: o fator mais importante na formação do hematoma é a hemostasia intraoperatória inadequada.",
-  "correta": "A hemostasia intraoperatória inadequada. O controle do sangramento durante a cirurgia é o que decide se haverá coleção, e está totalmente nas mãos do cirurgião.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Complications: hematoma formation, p. 253 e 254",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0206": {
@@ -2111,14 +2177,18 @@
   "conferido": false
  },
  "quadril-0208": {
+  "conceito": "A anteversão aponta a abertura da taça para a frente. Se for demais, a cabeça encontra a saída na frente, e é para lá que ela sai.\n\n**O que o Campbell diz** (cap. 3, p. 211). Se o fêmur tem **anteversão excessiva** ou se a haste é anatômica com anteversão embutida no colo, a taça deve ir com **menos anteversão**. **A anteversão excessiva da taça nesse caso pode resultar em luxação anterior.** A meta é uma **anteversão combinada** do fêmur e do acetábulo entre **25 e 40 graus**.\n\n**A lógica das direções.**\n- **Anteversão excessiva:** a taça olha demais para a frente; a extensão e a rotação externa levam a cabeça para fora **anteriormente**.\n- **Anteversão insuficiente ou retroversão:** a taça olha para trás; a flexão, a adução e a rotação interna (sentar, cruzar as pernas) levam a cabeça para fora **posteriormente**.\n\n**E a via posterior?** A via posterior é a que mais se associa à luxação posterior, por abrir a cápsula e os rotadores atrás. Mas a pergunta é sobre o erro de posição: excesso de anteversão, independentemente da via, abre a porta da frente.\n\n**O que a banca quis testar.** A direção da luxação causada pela anteversão excessiva. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz a posição do acetábulo.",
+  "correta": "**A: anterior.** A anteversão excessiva da taça pode resultar em luxação anterior (Campbell, cap. 3, p. 211).",
   "incorretas": {
-   "B": "A luxação posterior resulta da situação oposta: anteversão insuficiente ou taça retrovertida.",
-   "C": "A luxação superior está ligada à inclinação excessiva da taça, e não à anteversão.",
-   "D": "A luxação inferior não é o padrão resultante de alterações da anteversão."
+   "B": "**É o erro oposto.** A luxação posterior se associa à anteversão insuficiente ou à retroversão, somadas à flexão e à rotação interna.",
+   "C": "**Não é a direção da anteversão.** A luxação superior se associa mais à inclinação excessiva, não à anteversão.",
+   "D": "**Direção rara e sem relação com a anteversão.** O excesso de anteversão leva a cabeça para a frente."
   },
-  "conceito": "A posição da **taça** (o componente acetabular) é decisiva para a estabilidade da prótese de quadril. Ela é descrita por dois ângulos:\n\n**Inclinação** (ou abdução): o quanto a taça está \"em pé\" ou \"deitada\" vista de frente;\n\n**Anteversão**: o quanto a taça está virada **para a frente**.\n\n**Uma regra simples**: a cabeça tende a luxar para o lado em que a taça está \"**aberta demais**\".\n\n**Anteversão excessiva** (taça muito virada para a frente): quando o quadril vai para trás e gira para fora (extensão com rotação externa), o colo bate na borda **de trás** da taça. Essa borda funciona como alavanca e empurra a cabeça para fora **pela frente**. Resultado: **luxação anterior**.\n\n**Anteversão insuficiente ou retroversão** (taça virada para trás): quando o quadril dobra, fecha e gira para dentro (como ao sentar e cruzar as pernas), o colo bate na borda **da frente**, e a cabeça sai **por trás**. Resultado: **luxação posterior**.\n\n**Inclinação excessiva** (taça muito em pé): favorece a luxação para cima e para fora e o desgaste da borda.\n\nA **zona segura de Lewinnek** sugere inclinação de cerca de 40° e anteversão de cerca de 15°, com margem de 10° para cada lado. Hoje se sabe que a posição funcional, que depende do movimento da bacia, também importa.\n\n**Na via posterior**, a luxação mais comum é a **posterior**, por isso muitos cirurgiões dão alguns graus a mais de anteversão. Mas, se exagerarem, o problema se inverte e a prótese passa a luxar **para a frente**.\n\n**Na prova**: o excesso de anteversão da taça pode resultar em luxação anterior.",
-  "correta": "Anterior. Com a taça muito virada para a frente, a extensão com rotação externa leva o colo à borda de trás, que alavanca a cabeça para fora pela frente.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Implantation of cementless acetabular component, p. 211",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0209": {
@@ -2248,14 +2318,18 @@
   "conferido": false
  },
  "quadril-0221": {
+  "conceito": "Parafuso de acetábulo atravessa a pelve, e o que está do outro lado não se vê. A regra de WASIELEWSKI existe para dizer onde a ponta do parafuso encontra osso e onde encontra um vaso.\n\n**Como se desenham os quadrantes** (Campbell, cap. 3, p. 210, Fig. 3.46). Uma linha da **espinha ilíaca anterossuperior** passa pelo **centro do acetábulo**; outra, perpendicular, também pelo centro.\n\n**O que cada quadrante ameaça.**\n- **Anterossuperior:** o parafuso emerge na pelve **perto da artéria e da veia ilíacas externas**.\n- **Anteroinferior:** pode lesar o **nervo e os vasos obturatórios**.\n- **Posteriores:** **não emergem dentro da pelve**; podem chegar à **incisura isquiática** e ameaçar o **nervo ciático** e os **vasos glúteos superiores**, mas a broca e a rosca podem ser **palpadas** ali, o que permite evitar a lesão.\n\n**Por que o póstero-superior é o escolhido.** Os dois quadrantes posteriores são a zona de trabalho, e o superior tem o maior estoque ósseo, longe da incisura e dos vasos pélvicos. O Campbell acrescenta um detalhe: com o componente num **centro de rotação alto**, só as **metades periféricas** dos quadrantes posteriores são seguras.\n\n**O que a banca quis testar.** A regra de segurança mais usada na fixação do acetábulo não cimentado. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz os quadrantes.",
+  "correta": "**A: póstero-superior.** É a zona de segurança de WASIELEWSKI para os parafusos do acetábulo (Campbell, cap. 3, p. 210).",
   "incorretas": {
-   "B": "O quadrante posteroinferior é a segunda opção, mas o osso é mais fino e há risco para o nervo ciático e os vasos pudendos com parafusos longos.",
-   "C": "O quadrante anterossuperior é a zona de maior perigo, porque os vasos ilíacos externos passam logo além da parede interna.",
-   "D": "O quadrante anteroinferior é perigoso, porque expõe o nervo e os vasos obturatórios."
+   "B": "**É posterior, mas não é o mais seguro.** O póstero-inferior não emerge na pelve, mas fica mais perto da incisura isquiática, com o ciático e os vasos glúteos superiores.",
+   "C": "**É o mais perigoso para os grandes vasos.** O parafuso anterossuperior emerge perto da artéria e da veia ilíacas externas.",
+   "D": "**Ameaça o feixe obturatório.** O parafuso anteroinferior pode lesar o nervo e os vasos obturatórios."
   },
-  "conceito": "Muitas taças sem cimento são reforçadas com **parafusos** que atravessam o fundo da taça e entram no osso da bacia. O perigo está do outro lado do osso: dentro da pelve passam vasos e nervos importantes. Para orientar o cirurgião, **Wasielewski** dividiu o acetábulo em **quatro quadrantes**:\n\ntraça-se uma linha da **espinha ilíaca anterossuperior** (EIAS) até o centro do acetábulo, prolongando-a para trás;\n\ntraça-se outra linha perpendicular a ela, passando pelo centro.\n\n**Os quadrantes e seus riscos**:\n\n**posterossuperior**: a **zona segura**. É onde o osso é **mais espesso**, e as estruturas do outro lado (o nervo ciático e os vasos glúteos superiores) só correm risco com parafusos longos demais;\n\n**posteroinferior**: segunda opção, com parafusos curtos. O osso é mais fino, e há risco para o ciático e os vasos pudendos;\n\n**anterossuperior**: a \"**zona da morte**\". Os **vasos ilíacos externos** passam logo além da parede interna do osso. Deve ser evitado;\n\n**anteroinferior**: perigoso, pelo **nervo e vasos obturatórios**. Também deve ser evitado.\n\n**Dicas práticas**: os parafusos no quadrante posterossuperior, com comprimento adequado, pegam o melhor osso com segurança. O cirurgião mede a profundidade e sente a parede interna antes de escolher o parafuso. Um jeito de lembrar: \"**a**nterior é **a**rtéria\"; atrás e em cima está o osso bom.\n\n**Na prova**: o quadrante mais seguro para os parafusos do acetábulo é o posterossuperior.",
-  "correta": "Póstero-superior. Tem o osso mais espesso e, com comprimento adequado, não há estrutura importante logo além da parede interna.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Implantation of cementless acetabular component (Fig. 3.46), p. 210",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0222": {
@@ -3911,17 +3985,19 @@
   "conferido": false
  },
  "quadril-0330": {
+  "conceito": "O braço dos abdutores vai do trocânter maior ao centro da cabeça. Tudo que aproxima o trocânter do centro da cabeça encurta esse braço, e a questão pede duas condições que fazem isso.\n\n**O que o Campbell lista** (cap. 3, p. 180). O braço abdutor encurta:\n- quando parte ou toda a cabeça se perde ou o **colo fica curto**;\n- quando o **trocânter fica posterior**, como nas **deformidades em rotação externa**;\n- em muitos pacientes com **displasia** do quadril.\n\n**A metade sem discussão: o colo curto.** O colo é a própria alavanca. Encurtá-lo aproxima o trocânter do centro da cabeça. Na prótese, isso equivale a um **offset insuficiente**, que o livro associa a mais força de reação articular, claudicação, impacto e luxação (p. 184). Por isso as alternativas com alongamento do colo caem logo.\n\n**A metade discutível: a rotação.** O texto do Campbell aponta a rotação **externa**, que leva o trocânter para trás. A banca escolheu a rotação **medial** como resposta, e o gabarito oficial foi mantido, com a divergência registrada no alerta. Na prova, quem marca pelo livro escolheria C; quem segue o gabarito desta banca, D.\n\n**A gravidade.** No quadril artrósico, a razão entre o braço do peso e o dos abdutores pode ir de 2,5 para **4 para 1**; aproximá-la de 1 para 1 reduz teoricamente a carga em 30%.\n\n**O que a banca quis testar.** As condições que encurtam o braço abdutor, com o colo curto como ponto firme. O resumo Artroplastia total do quadril: biomecânica, componentes e fixação traz as alavancas.",
+  "correta": "**D: encurtamento do colo femoral e deformidade em rotação medial.** É o gabarito oficial; o encurtamento do colo encurta o braço abdutor (Campbell, cap. 3, p. 180), e a divergência sobre a direção da rotação está no alerta.",
   "incorretas": {
-   "A": "Alongar o colo afasta a cabeça do eixo do fêmur e aumenta o braço de alavanca, portanto esta combinação não reduz a alavanca.",
-   "B": "A rotação medial reduz o braço, mas o alongamento do colo faz o contrário e aumenta o offset, então a combinação não está correta.",
-   "C": "O colo curto reduz o braço, mas a rotação lateral não é o fator descrito; a perda de offset efetivo no plano frontal vem da rotação medial, a anteversão excessiva."
+   "A": "**O alongamento do colo faz o contrário.** Afastar o centro da cabeça do trocânter alonga o braço abdutor.",
+   "B": "**Erra o colo.** O alongamento do colo alonga o braço abdutor, seja qual for a rotação.",
+   "C": "**Não é o gabarito oficial, embora o livro a apoie.** O Campbell cita o trocânter posterior das deformidades em rotação externa como causa de encurtamento do braço abdutor; a banca considerou correta a rotação medial."
   },
-  "conceito": "Os **abdutores** do quadril (principalmente o glúteo médio e o mínimo) seguram a pelve nivelada quando ficamos apoiados numa perna só, durante a marcha. Para isso eles trabalham como numa gangorra, cujo ponto de apoio é o **centro da cabeça femoral**.\n\n**Braço de alavanca abdutor** é a distância entre o centro de rotação da cabeça e a linha de ação dos abdutores. Na prática, ele depende muito do **offset femoral**, a distância horizontal do centro da cabeça até o eixo da diáfise. Quanto maior esse braço, menos força os músculos precisam fazer e menor é a carga sobre a articulação.\n\n**O que diminui o braço de alavanca**:\n\n**colo curto**: traz a cabeça para perto do eixo do fêmur, reduzindo o offset;\n\n**rotação medial do colo** (anteversão excessiva): o colo \"aponta para frente\", e no plano frontal, que é o plano dos abdutores, o offset efetivo fica menor. Pense que o colo continua do mesmo tamanho, mas parte dele foi \"gasta\" apontando para frente, e não para o lado;\n\ncolo em valgo e trocânter maior medializado também reduzem.\n\n**Consequências** de um braço curto: os abdutores trabalham em desvantagem, surge a **marcha de Trendelenburg** (a pelve cai do lado oposto), aumenta a carga na articulação e o quadril fica mais instável.\n\nNa artroplastia, o cirurgião restaura o offset com hastes lateralizadas, cabeças com colo mais longo e versão correta.\n\n**Na prova**: o braço de alavanca abdutor diminui com colo curto e rotação medial.",
-  "correta": "Colo curto reduz o offset, e a rotação medial, por anteversão excessiva, reduz o offset efetivo no plano dos abdutores; as duas coisas encurtam o braço de alavanca.",
   "referencias": [
-   "Canale : Campbell’s Operative Orthopaedics, 11th Ed., p.315 (referência indicada na prova TARO 2013, questão 3)"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Applied biomechanics: forces acting on the hip, p. 180; Femoral components: offset, p. 184",
+   "Biblioteca OrtoQuestões, resumo Artroplastia total do quadril: biomecânica, componentes e fixação (campbell14-ath-biomecanica-componentes)"
   ],
-  "geradoEm": "2026-10-03",
+  "alerta": "O Campbell associa o encurtamento do braço abdutor ao trocânter posterior das deformidades em rotação externa (lateral), o que apoiaria a alternativa C. O gabarito oficial (D, rotação medial) foi preservado; o encurtamento do colo é consenso entre as duas leituras.",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "quadril-0331": {
@@ -10068,6 +10144,159 @@
    "Netter's Concise Orthopaedic Anatomy, 2ª ed. (Jon C. THOMPSON; Netter Atlas de Anatomia Ortopédica), cap. 8 (Thigh/Hip), Arteries (Femoral artery) e Osteology (Proximal femur)"
   ],
   "geradoEm": "2026-10-29",
+  "conferido": false
+ },
+ "quadril-0723": {
+  "conceito": "Pense numa gangorra com o fulcro no centro da cabeça femoral. De um lado, o peso do corpo puxa a pelve para baixo com um braço longo; do outro, os abdutores seguram com um braço curto. Toda a biomecânica da prótese é a tentativa de deixar essa gangorra menos desigual.\n\n**Os números do Campbell** (cap. 3, p. 179 e 180, Fig. 3.1):\n- O braço do **peso corporal** vai do centro de gravidade ao centro da cabeça; o dos **abdutores**, da face lateral do trocânter maior ao centro da cabeça.\n- A razão entre eles é de cerca de **2,5 para 1**. Para manter a pelve nivelada no apoio monopodal, os abdutores precisam fazer cerca de **2,5 vezes o peso corporal**.\n- A carga na cabeça femoral é a soma das duas forças: cerca de **3 vezes o peso corporal** na fase de apoio, e quase o mesmo ao elevar a perna estendida. Correr, saltar ou levantar peso pode chegar a **10 vezes**.\n- No **quadril artrósico**, com perda da cabeça, colo curto, trocânter posterior (rotação externa) ou displasia, a razão pode chegar a **4 para 1**.\n- Cirurgicamente, aproximar a razão de **1 para 1** reduz teoricamente a carga total em **30%**.\n\n**Como se mexe na gangorra.** Medializar o acetábulo **encurta o braço do peso**; usar colo de **offset alto** e reinserir o trocânter mais lateral **alongam o braço dos abdutores**. Essa era a ideia original de CHARNLEY. O Campbell lembra que hoje nenhuma das duas técnicas é enfatizada: preservar o osso subcondral substituiu a medialização agressiva, e quase não se faz osteotomia do trocânter. O braço abdutor é ajustado sobretudo pelo offset do componente femoral.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre as forças na prótese, o conceito de CHARNLEY e o efeito do offset.\n\n> **Na prova:** **2,5 : 1** (normal), **4 : 1** (artrose); abdutores = **2,5 x peso**; cabeça = **3 x peso**; **1 : 1** reduz **30%**; medializar = encurta o braço do **peso**; offset = alonga o dos **abdutores**.",
+  "correta": "**A: a relação entre o braço de alavanca do peso corporal e o dos abdutores é de cerca de 2,5 para 1, o que exige dos abdutores cerca de 2,5 vezes o peso corporal no apoio monopodal; aproximar essa relação de 1 para 1 reduz teoricamente a carga no quadril em 30%.** São os números do Campbell (cap. 3, p. 179 e 180).",
+  "incorretas": {
+   "B": "**Subestima muito.** A carga na cabeça é a soma do peso com a força dos abdutores, calculada em cerca de 3 vezes o peso corporal no apoio.",
+   "C": "**É o contrário.** O braço dos abdutores encurta no quadril artrósico, e a razão pode chegar a 4 para 1.",
+   "D": "**Medializar encurta o braço do peso.** Ao aproximar o centro de rotação da linha média, o braço de alavanca do peso corporal diminui, o que reduz a força que os abdutores precisam fazer."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Applied biomechanics: forces acting on the hip, p. 179 e 180 (Fig. 3.1)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0724": {
+  "conceito": "Antes de escolher a haste, o cirurgião olha a forma do fêmur. Um funil estreito segura bem qualquer implante; um tubo largo de paredes finas é outra história. DORR transformou essa impressão numa classificação.\n\n**A classificação, no Campbell** (cap. 3, p. 181, Fig. 3.3):\n\n| Tipo | Imagem | Quem | Fixação |\n|---|---|---|---|\n| **A** | corticais grossas no AP e grande cortical posterior no perfil; canal distal estreito: **funil, taça de champanhe** | **homens e jovens** | boa fixação cimentada ou não cimentada |\n| **B** | perda óssea das corticais **medial e posterior**, canal mais largo; forma preservada | | fixação sem problema |\n| **C** | perda de **grande parte das corticais medial e posterior**; canal muito largo, sobretudo no **perfil**: **chaminé** (stovepipe) | **mulheres idosas, pós-menopausa** | ambiente **menos favorável à fixação não cimentada** |\n\n**O raciocínio por trás.** A haste não cimentada depende de contato justo com o osso para ganhar estabilidade inicial e depois crescimento ósseo. Num canal largo de corticais finas, esse contato é difícil. O Campbell lembra ainda, na seção dos componentes cimentados, que os registros mostram resultados melhores com fixação femoral cimentada acima dos 75 anos, sobretudo pelo menor risco de fratura periprotética.\n\n**A pegadinha.** As provas trocam as corticais. Nos tipos B e C, a perda é **medial e posterior**, não lateral nem anterior.\n\n**Por que esta questão foi criada.** É uma gêmea das questões do TEOT e do TARO sobre os tipos de DORR e suas formas.\n\n> **Na prova:** **A** = taça de champanhe (homem jovem); **C** = chaminé (mulher idosa); perda **medial e posterior**; C = pior para **não cimentada**.",
+  "correta": "**C: trata-se do tipo C, em chaminé, com perda de grande parte das corticais medial e posterior, ambiente menos favorável à fixação não cimentada.** É a descrição do Campbell para o tipo C (cap. 3, p. 181).",
+  "incorretas": {
+   "A": "**O tipo A é o oposto.** Corticais grossas e canal distal estreito, em taça de champanhe, típico de homens e jovens.",
+   "B": "**Erra as corticais.** No tipo B, a perda é das corticais medial e posterior, e a forma do fêmur está preservada.",
+   "D": "**Essa é a classificação de CROWE.** CROWE mede a migração da cabeça na displasia em relação à linha das lágrimas; DORR descreve a forma e as corticais do fêmur proximal."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone, p. 180 e 181 (Fig. 3.3)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0725": {
+  "conceito": "O osso é preguiçoso de um jeito útil: ele se mantém onde recebe carga e some onde não recebe. Quando uma haste rígida carrega todo o peso, o fêmur proximal fica de férias e começa a reabsorver. É o stress shielding.\n\n**O módulo de elasticidade.** O Campbell (cap. 3, p. 181) é direto: **diminuir o módulo de elasticidade da haste diminui o estresse na haste e aumenta o estresse no osso** ao redor. Ligas de **titânio**, de módulo mais baixo, fazem isso, sobretudo com diâmetro pequeno.\n\n**O diâmetro manda mais que o material.** A **rigidez à flexão é proporcional à quarta potência do diâmetro**. Uma haste um pouco mais grossa fica muito mais rígida, e o ganho do titânio se perde. O livro registra que quase todos os fêmures com reabsorção proximal moderada ou grave tinham hastes de **13,5 mm ou mais**, e que o **press-fit no istmo** com crescimento ósseo aumentava o stress shielding. Em hastes maiores, mais revestimento poroso também significou mais stress shielding.\n\n**Onde e quanto.**\n- A maior queda da densidade mineral ocorre na **cortical proximal e medial**, com hastes cimentadas e não cimentadas.\n- Uma metanálise citada pelo Campbell achou **mais perda proximal com hastes não cimentadas** que com cimentadas, e **quase o dobro com cromo-cobalto** que com titânio.\n- A perda progride por pelo menos **5 anos** e **não ocorre no recapeamento** (resurfacing).\n- Hastes cônicas de titânio causaram pouca atrofia proximal; hastes cilíndricas que enchem a diáfise, muito mais.\n\n**Importa?** O stress shielding não parece piorar os resultados precoces ou intermediários, mas torna a revisão mais difícil quando o estoque ósseo foi perdido.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre módulo de elasticidade, localização da perda óssea e tipo de haste que mais causa stress shielding.\n\n> **Na prova:** **módulo menor** = menos estresse na **haste**, mais no **osso**; rigidez ∝ **diâmetro⁴**; perda máxima **proximal medial**; **não cimentada distal e grossa** = mais stress shielding.",
+  "correta": "**B: a diminuição do módulo de elasticidade diminui o estresse na haste e aumenta o estresse no osso; a rigidez à flexão cresce com a quarta potência do diâmetro, e hastes não cimentadas grossas, com fixação no istmo, causam mais reabsorção proximal.** É o que o Campbell descreve (cap. 3, p. 181).",
+  "incorretas": {
+   "A": "**É o contrário.** Uma haste mais rígida (módulo maior) carrega mais carga e poupa o osso, o que aumenta o stress shielding.",
+   "C": "**Inverte a comparação.** Na metanálise citada pelo Campbell, as hastes não cimentadas tiveram mais perda óssea proximal que as cimentadas.",
+   "D": "**Erra a região.** A maior queda da densidade mineral ocorre na cortical proximal e medial do fêmur."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone, p. 181 e 182 (Fig. 3.4)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0726": {
+  "conceito": "O acetábulo cimentado transfere carga para um osso trabecular delicado. Se a taça for fina e o osso subcondral for fresado até sumir, a carga chega concentrada e o cimento e o osso sofrem. A questão pede as duas medidas que distribuem melhor essa carga.\n\n**O que o Campbell descreve** (cap. 3, p. 182 e 183):\n- Com uma taça cimentada de polietileno, os **picos de estresse** se desenvolvem no osso pélvico.\n- Os picos **aumentam quando o osso subcondral é removido** e diminuem com dorso metálico.\n- Os **maiores estresses no cimento e no osso trabecular** surgem com **polietileno de parede fina** e **osso subcondral removido**.\n- Uma taça de **parede espessa, de 5 mm ou mais**, reduz o estresse no osso trabecular, de modo semelhante ao dorso metálico.\n- Uma cabeça femoral maior pode aumentar o estresse na interface cimento-osso em até 9%.\n\n**E o dorso metálico?** Os bons resultados iniciais espalharam o uso de componentes cimentados com dorso metálico, mas o acompanhamento longo **não mostrou benefício sustentado**, e em algumas séries a sobrevida foi **pior** que a dos componentes sem metal. A conclusão do livro: **polietileno espesso, todo de polietileno, e preservação do subcondral** são o compromisso satisfatório, sem stress shielding nem concentração excessiva.\n\n**A ligação com CHARNLEY.** A medialização profunda do conceito original deu lugar à **preservação do osso subcondral**: hoje se aprofunda o acetábulo só o necessário para cobrir a taça.\n\n**Por que esta questão foi criada.** É uma gêmea das questões do TEOT e de provas de Ortopedia sobre espessura do polietileno e osso subcondral.\n\n> **Na prova:** **pior** = polietileno **fino** + subcondral **removido**; **melhor** = polietileno **espesso (≥ 5 mm)** + subcondral **preservado**; dorso metálico cimentado = **sem benefício** a longo prazo.",
+  "correta": "**D: polietileno de parede espessa (5 mm ou mais) e preservação do osso subcondral.** É o compromisso recomendado pelo Campbell para o acetábulo cimentado (cap. 3, p. 183).",
+  "incorretas": {
+   "A": "**É a pior combinação.** O Campbell descreve os maiores estresses no cimento e no osso trabecular justamente com polietileno fino e subcondral removido.",
+   "B": "**A sobrevida não foi superior.** O dorso metálico cimentado não mostrou benefício sustentado, e em algumas séries foi pior que o componente todo de polietileno.",
+   "C": "**A medialização perdeu espaço.** O princípio de medializar deu lugar à preservação do osso subcondral; aprofunda-se só o necessário para a cobertura da taça."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Stress transfer to bone (pelvic side), p. 182 e 183"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0727": {
+  "conceito": "Três números posicionam o centro de rotação da prótese: altura vertical, offset e versão. O offset é o que mais conversa com os abdutores.\n\n**A definição, no Campbell** (cap. 3, p. 184, Fig. 3.6): **offset** (horizontal) é a distância do **centro da cabeça** a uma **linha que passa pelo eixo da parte distal da haste**. Depende sobretudo do desenho da haste. O comprimento do colo é medido do centro da cabeça à base do colar; a altura vertical depende da base do colo, da cabeça modular e da profundidade de inserção.\n\n**Por que ele importa.** Offset **insuficiente encurta o braço de alavanca dos abdutores** e leva a:\n- **aumento da força de reação articular**;\n- **claudicação**;\n- **impacto ósseo**, que pode causar **luxação**.\n\n**Como aumentar o offset, e o preço de cada jeito.**\n- **Colo modular mais longo:** aumenta o offset, mas também a altura vertical, e pode **alongar demais o membro**.\n- **Reduzir o ângulo colo-haste** (tipicamente para cerca de **127 graus**): aumenta o offset e **reduz levemente a altura**.\n- **Prender o colo mais medial na haste:** aumenta o offset **sem mudar a altura**; o comprimento do membro não se altera.\n\n**A versão.** O fêmur normal tem **10 a 15 graus de anteversão**, e o colo protético deve se aproximar disso; com haste cimentada se ajusta girando a haste no canal.\n\n**Por que esta questão foi criada.** É uma gêmea das questões de imagem sobre a distância que representa o offset e das que perguntam o efeito do offset.\n\n> **Na prova:** offset = **centro da cabeça → eixo distal da haste**; pouco offset = **abdutor fraco, mais carga, claudicação, impacto, luxação**; offset alto sem alongar = **colo medializado**.",
+  "correta": "**A: é a distância do centro da cabeça a uma linha pelo eixo da parte distal da haste; offset insuficiente encurta o braço dos abdutores e aumenta a força de reação articular, a claudicação e o impacto ósseo, que pode levar à luxação.** São a definição e as consequências descritas pelo Campbell (cap. 3, p. 184).",
+  "incorretas": {
+   "B": "**Essa é a medida do comprimento do colo.** Do centro da cabeça à base do colar mede-se o comprimento do colo, não o offset.",
+   "C": "**Altera, sim.** O colo mais longo aumenta o offset e a altura vertical juntos, com risco de alongar demais o membro.",
+   "D": "**Erra a altura.** Reduzir o ângulo colo-haste aumenta o offset, mas reduz levemente a altura vertical."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Femoral components: offset, vertical height and version, p. 183 e 184 (Fig. 3.6 e 3.9)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0728": {
+  "conceito": "Por que as cabeças ficaram maiores nas últimas décadas? Por dois motivos mecânicos simples, ambos a favor da estabilidade, e um material novo que permitiu usá-las.\n\n**O primeiro motivo: o arco antes do impacto.** Para um mesmo diâmetro de colo, a cabeça maior **aumenta a relação cabeça-colo** e o arco de movimento antes de o colo bater na borda da taça (Campbell, cap. 3, p. 185, Fig. 3.11). Quando o impacto acontece, a cabeça é alavancada para fora. No modelo citado pelo livro, passar de **28 para 32 mm** deu **8 graus a mais de flexão** antes do impacto.\n\n**O segundo motivo: o jump distance.** É a **distância que a cabeça precisa percorrer para escapar da borda da taça**, aproximadamente **a metade do diâmetro da cabeça** (Fig. 3.12). Cabeça maior, salto maior. Numa grande série com cabeças de **36 mm ou mais**, a luxação foi de **0,05%**.\n\n**O colo também conta.** Um **colo circular**, sobretudo com **cabeça de saia** (que alarga o colo), reduz muito o arco. O **colo trapezoidal** dá mais arco sem impacto. A configuração ideal é **colo trapezoidal com cabeça grande sem saia**. Acima de 38 mm, o impacto passa a ser só osso com osso, independente da cabeça.\n\n**O limite e o preço.** O diâmetro é limitado pelo tamanho do acetábulo. Na seção do polietileno, o Campbell registra que, com cabeças de 36 a 40 mm, o **desgaste volumétrico foi maior** que com cabeças menores, e cita fraturas de liner fino na borda. Na fixação cimentada, a cabeça maior pode aumentar o estresse na interface cimento-osso.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre jump distance e efeito da cabeça grande no arco e na estabilidade.\n\n> **Na prova:** cabeça **maior** = **mais arco** + **mais jump distance** (≈ **metade do diâmetro**) = **mais estável**; ideal = **colo trapezoidal, sem saia**; preço = **mais desgaste volumétrico**.",
+  "correta": "**C: a cabeça maior aumenta a relação cabeça-colo e o arco antes do impacto, e o jump distance, aproximadamente a metade do diâmetro, também cresce; o colo trapezoidal e a cabeça sem saia favorecem o arco de movimento.** É o que o Campbell descreve (cap. 3, p. 185).",
+  "incorretas": {
+   "A": "**É o contrário.** Para o mesmo colo, a cabeça maior é que aumenta a relação cabeça-colo e o arco antes do impacto.",
+   "B": "**Erra a definição e o valor.** O jump distance é a distância até escapar da borda da taça, e equivale aproximadamente à metade do diâmetro da cabeça.",
+   "D": "**É a pior combinação.** O colo circular, sobretudo com cabeça de saia, reduz dramaticamente o arco de movimento até o impacto."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Femoral components: head size and neck geometry, p. 185 (Fig. 3.11 a 3.14)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Highly crosslinked polyethylene, p. 198"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0729": {
+  "conceito": "O polietileno convencional foi o calcanhar de aquiles da prótese: gastava, soltava partículas e as partículas causavam osteólise. O polietileno altamente reticulado mudou isso, mas a fabricação tem uma troca que as provas adoram.\n\n**De onde vem o problema.** O polietileno convencional era esterilizado com **2,5 Mrad** de radiação gama ou de feixe de elétrons. Isso gera **radicais livres**, que predispõem à **oxidação** e tornam o material mais suscetível ao desgaste (Campbell, cap. 3, p. 197).\n\n**A reticulação.** Doses maiores, de **5 a 10 Mrad**, criam mais ligações cruzadas entre as cadeias e dão uma **resistência ao desgaste notável**. Mas a radiação também deixa **radicais livres não combinados**; se ficarem, o material sofre **degradação oxidativa grave**.\n\n**As duas maneiras de apagar os radicais:**\n\n| Processo | Temperatura | Radicais livres | Propriedades mecânicas |\n|---|---|---|---|\n| **Refusão (remelting)** | **acima** do ponto de fusão (cerca de 135 °C) | **praticamente eliminados** | **cristalinidade menor**: perde tenacidade à fratura e resistência à tração |\n| **Recozimento (annealing)** | **logo abaixo** do ponto de fusão | eliminados **de forma menos eficaz** | **preservadas** |\n\n**As soluções mais novas.** A **vitamina E** (dopagem) captura radicais livres sem precisar de refusão; outro processo aplica a radiação em três doses menores, com recozimento depois de cada uma.\n\n**Na prática.** O polietileno altamente reticulado, articulado com cabeça de cromo-cobalto ou de cerâmica, é hoje o par dominante na artroplastia do quadril e substituiu em grande parte o UHMWPE convencional.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre as vantagens do polietileno reticulado em oxidação e desgaste.\n\n> **Na prova:** reticulação = **5 a 10 Mrad**; **refusão** = sem radicais, **perde tenacidade**; **recozimento** = mantém propriedades, **sobra radical**; **vitamina E** = antioxidante sem refusão.",
+  "correta": "**B: a reticulação usa 5 a 10 Mrad de radiação, que deixa radicais livres; a refusão (remelting) os elimina quase totalmente, mas reduz a cristalinidade e a tenacidade, enquanto o recozimento (annealing) preserva as propriedades mecânicas, mas extingue menos radicais.** É a descrição do Campbell (cap. 3, p. 197).",
+  "incorretas": {
+   "A": "**2,5 Mrad é a esterilização convencional.** A reticulação exige doses de 5 a 10 Mrad.",
+   "C": "**Troca os dois processos.** O recozimento aquece logo abaixo do ponto de fusão; acima dele é a refusão.",
+   "D": "**É o contrário.** Os radicais livres residuais tornam o polietileno suscetível à degradação oxidativa; por isso precisam ser extintos."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Alternative bearings: highly crosslinked polyethylene, p. 197 e 198"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0730": {
+  "conceito": "Um acetábulo bem posicionado em pé pode estar mal posicionado sentado. Isso acontece porque a pelve gira quando a pessoa senta, e a coluna lombar é quem permite esse giro.\n\n**O normal, no Campbell** (cap. 3, p. 203 e 204):\n- Ao passar de **em pé para sentado**, a pelve **inclina para posterior** para acomodar a flexão do quadril, com redução da lordose lombar e achatamento da inclinação sacral (variação normal de **11 a 30 graus**).\n- Essa inclinação posterior **aumenta a anteversão do acetábulo** e também a inclinação, o que **reduz o impacto anterior** com o quadril fletido.\n\n**Quando a coluna não ajuda.** A **deformidade e a rigidez lombar**, por degeneração ou **artrodese**, impedem essa acomodação. O resultado:\n- **impacto anterior excessivo ao sentar** (o acetábulo não ganha a anteversão de que precisaria), com risco de luxação posterior;\n- ou **impacto posterior em pé**.\n\n**Os números.** Uma metanálise citada pelo livro mostrou que a **história de artrodese da coluna dobra o risco de luxação precoce** e mais que **triplica o risco de revisão**.\n\n**O que fazer.** Para quem tem fusão, deformidade ou rigidez, pedir **radiografias de perfil da coluna e da pelve em pé e sentado** e adaptar o plano. Na coluna rígida, **mais anteversão do componente** compensa a falta de inclinação posterior. O outro lado da moeda: alguns pacientes têm **inclinação posterior excessiva em pé**, o que **aumenta a anteversão funcional** e o risco de **instabilidade anterior**. Na técnica de implantação, o livro recomenda uma anteversão combinada de 25 a 40 graus.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre a artrodese lombar como fator que altera a anteversão funcional e a luxação.\n\n> **Na prova:** sentar = pelve **posterior** = **mais anteversão**; coluna **rígida/fundida** = perde essa acomodação; fusão = **2x luxação**, **3x revisão**; pedir **perfil em pé e sentado**.",
+  "correta": "**D: a história de artrodese da coluna dobra o risco de luxação precoce; a coluna rígida impede a inclinação pélvica posterior ao sentar, que normalmente aumenta a anteversão do acetábulo, e esses pacientes podem precisar de mais anteversão do componente.** É a relação quadril e coluna descrita no Campbell (cap. 3, p. 203 e 204).",
+  "incorretas": {
+   "A": "**Altera, e muito.** A metanálise citada pelo Campbell mostrou o dobro do risco de luxação precoce e mais que o triplo do risco de revisão.",
+   "B": "**É o contrário.** Ao sentar, a pelve inclina para posterior, e a anteversão do acetábulo aumenta.",
+   "C": "**A coluna rígida reduz essa inclinação.** A rigidez impede a inclinação posterior normal ao sentar, o que exige adaptação do plano."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), The hip-spine relationship, p. 203 e 204",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Implantation of cementless acetabular component, p. 211"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0731": {
+  "conceito": "A regra dos quadrantes costuma ser decorada como \"póstero-superior é seguro\". O Campbell conta a história completa, e ela tem um detalhe que separa quem decorou de quem entendeu.\n\n**Como se desenham os quadrantes** (cap. 3, p. 210, Fig. 3.46). Uma linha vai da **espinha ilíaca anterossuperior** pelo **centro do acetábulo**; outra, perpendicular a ela, também pelo centro. Nascem quatro quadrantes: anterossuperior, anteroinferior, póstero-superior e póstero-inferior.\n\n**O que cada um ameaça.**\n- **Anterossuperior:** os parafusos emergem dentro da pelve **perigosamente perto da artéria e da veia ilíacas externas**.\n- **Anteroinferior:** podem lesar o **nervo e os vasos obturatórios**.\n- **Póstero-superior e póstero-inferior:** os parafusos **não emergem dentro da pelve**, mas podem passar para a **incisura isquiática** e ameaçar o **nervo ciático** e os **vasos glúteos superiores**. A broca e a rosca podem ser **palpadas** na incisura quando saem, o que permite evitar a lesão.\n\n**O detalhe do centro alto.** WASIELEWSKI e colaboradores observaram que, com o componente implantado num **centro de rotação alto**, **só as metades periféricas dos quadrantes posteriores** são seguras.\n\n**Na sala.** Os quadrantes posteriores são a zona de trabalho; a palpação da incisura é o seguro. Os anteriores ficam para quando não há alternativa, com parafusos curtos e cuidado redobrado.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre o quadrante mais seguro de WASIELEWSKI, com o detalhe que o Campbell acrescenta.\n\n> **Na prova:** linha **EIAS → centro do acetábulo**; **anterossuperior** = **ilíacos externos**; **anteroinferior** = **obturatórios**; **posteriores** = ciático e glúteos superiores na incisura (palpáveis); centro alto = só a **periferia posterior**.",
+  "correta": "**B: os parafusos dos quadrantes posteriores não emergem dentro da pelve, mas podem chegar à incisura isquiática e ameaçar o nervo ciático e os vasos glúteos superiores; com centro de rotação alto, só as metades periféricas dos quadrantes posteriores são seguras.** É o sistema de WASIELEWSKI descrito no Campbell (cap. 3, p. 210).",
+  "incorretas": {
+   "A": "**Troca os vasos.** O anteroinferior ameaça o nervo e os vasos obturatórios; os ilíacos externos ficam no anterossuperior.",
+   "C": "**É o mais perigoso.** O parafuso anterossuperior emerge perto da artéria e da veia ilíacas externas.",
+   "D": "**A linha parte da anterossuperior.** O sistema usa uma linha da espinha ilíaca anterossuperior pelo centro do acetábulo e uma perpendicular a ela."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Implantation of cementless acetabular component (Fig. 3.46), p. 210"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "quadril-0732": {
+  "conceito": "Na haste cimentada, a falha começa quase sempre no mesmo lugar: a haste descola do cimento. O Campbell diz que as evidências apontam para o início da falha na interface prótese-cimento, com descolamento e depois fratura do cimento. Os sinais radiográficos seguem essa história.\n\n**Os sinais de soltura da haste cimentada** (Campbell, cap. 3, p. 278):\n1. **Radiolucência entre o terço superolateral da haste (zona 1 de GRUEN) e o manto de cimento**: descolamento da haste e possível deformação precoce.\n2. Radiolucência entre o **manto de cimento e o osso**.\n3. **Afundamento** da haste, sozinha ou com o manto.\n4. Mudança da haste para uma posição **mais em varo**.\n5. **Fragmentação do cimento**, sobretudo entre a face superomedial da haste e o colo (zona 7 de GRUEN).\n6. **Fratura do manto**, mais comum perto da **ponta da haste** (zona 4).\n\n**Por que o varo.** A carga no quadril empurra a cabeça para medial e para baixo. Uma haste solta gira em torno da ponta: o ombro vai para medial e a ponta, para lateral. Por isso a lucência aparece no **terço superolateral** e a haste cai em **varo**, não em valgo.\n\n**A técnica radiográfica.** O livro lembra que 10 graus de rotação do membro já mudam a aparência da haste. Comparar radiografias exige posição padronizada.\n\n**Para não confundir.** **Hipertrofia cortical** na extremidade do revestimento poroso e \"spot welds\" são sinais de **fixação estável** de haste **não cimentada**, não de soltura.\n\n**Por que esta questão foi criada.** É uma gêmea da questão da SBOT-SP sobre o sinal de soltura da haste cimentada.\n\n> **Na prova:** haste cimentada solta = **lucência superolateral (zona 1)**, lucência cimento-osso, **afundamento**, **varo**, cimento fragmentado (zona 7) ou fraturado na ponta (zona 4).",
+  "correta": "**A: radiolucência entre o terço superolateral da haste (zona 1 de GRUEN) e o manto de cimento, indicando descolamento da haste do cimento.** É o primeiro sinal da lista do Campbell (cap. 3, p. 278).",
+  "incorretas": {
+   "B": "**É varo.** A haste solta gira com o ombro para medial e cai para uma posição mais em varo.",
+   "C": "**É sinal de estabilidade.** A hipertrofia cortical na extremidade do revestimento poroso aparece em hastes não cimentadas bem fixadas.",
+   "D": "**Não sugere soltura.** A ausência de linhas radiolucentes fala a favor de fixação estável."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Loosening: femoral loosening, cemented femoral components, p. 278",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 3 (Arthroplasty of the Hip), Cemented femoral components, p. 186"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  }
 }
