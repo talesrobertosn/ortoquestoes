@@ -71,14 +71,18 @@
   "conferido": false
  },
  "mao-0007": {
+  "conceito": "A zona de atividade polarizadora é o centro que diz ao broto do membro qual lado é o do polegar e qual é o do mínimo. Quando ela falha ou aparece no lugar errado, o resultado típico é um membro com dedos a mais.\n\n**O que o Green descreve** (cap. 35). Três centros de sinalização organizam o broto: a **crista ectodérmica apical** comanda o eixo **proximodistal**; a **zona de atividade polarizadora (ZPA)**, o eixo **anteroposterior, isto é, radioulnar**; e o centro **Wnt**, o eixo **dorsoventral**. A ZPA age pela proteína **sonic hedgehog**.\n\n**A experiência clássica.** O **transplante da ZPA**, ou da sonic hedgehog, para o lado anterior do broto causa **duplicação em imagem espelhada do lado ulnar**. O capítulo ilustra a **mão espelhada com sete dedos** explicada por esse mecanismo. No capítulo 36, o Green também liga a apresentação variável da **dimelia ulnar** à disfunção da ZPA.\n\n**Por que as outras não.**\n- As **deformidades transversas** dependem da **crista ectodérmica apical**, que comanda o crescimento do ombro para os dedos.\n- A **síndrome unha-patela** é um distúrbio do eixo **dorsoventral** (centro Wnt e genes dorsais), em que faltam estruturas dorsais como a unha.\n- A **camptodactilia** é uma contratura em flexão da interfalângica proximal, sem relação com o eixo radioulnar.\n\n**O que a banca quis testar.** A ligação entre cada centro de sinalização e o tipo de malformação. O resumo Malformações congênitas da mão e do antebraço traz a tabela dos centros.",
+  "correta": "**A: polidactilia.** A zona de atividade polarizadora governa o eixo radioulnar, e o seu transplante produz duplicação em espelho, como na mão de sete dedos (Green, cap. 35).",
   "incorretas": {
-   "B": "A camptodactilia é uma contratura em flexão da interfalângica proximal, ligada a anomalias de partes moles como o lumbrical ou o flexor superficial, e não à zona de atividade polarizada.",
-   "C": "A síndrome unha-patela resulta de falha do eixo dorsoventral, por mutação do gene LMX1B.",
-   "D": "As deficiências transversas vêm de falha da crista ectodérmica apical, que controla o eixo proximal-distal."
+   "B": "**Não é um distúrbio de eixo.** A camptodactilia é a contratura em flexão da interfalângica proximal, sem relação com a zona de atividade polarizadora.",
+   "C": "**É do eixo dorsoventral.** A síndrome unha-patela se liga à sinalização dorsal (centro Wnt), não à zona de atividade polarizadora.",
+   "D": "**É da crista ectodérmica apical.** As deficiências transversas resultam de falha do eixo proximodistal."
   },
-  "conceito": "O membro superior se forma no embrião a partir de um **broto**, e seu crescimento é organizado em **três eixos**. Cada eixo é controlado por um **centro sinalizador** diferente, e cada falha produz um tipo diferente de malformação:\n\n**Eixo proximal-distal** (do ombro aos dedos): controlado pela **crista ectodérmica apical** (AER), uma faixa na ponta do broto, que produz fatores chamados FGF. Se ela falha, o membro para de crescer naquele ponto: são as **deficiências transversas** (o membro termina \"cortado\").\n\n**Eixo anteroposterior** (radial-ulnar, do polegar ao mínimo): controlado pela **zona de atividade polarizada** (ZPA), um grupo de células na borda **posterior (ulnar)** do broto, que produz uma molécula chamada **Sonic hedgehog** (Shh). A concentração de Shh diz a cada dedo \"quem ele é\". Se há Shh **em excesso** ou num lugar errado, os **raios se duplicam**: é a **polidactilia**, e em casos extremos a **mão em espelho** (dimelia ulnar).\n\n**Eixo dorsoventral** (dorso e palma): controlado pelo ectoderma dorsal, com moléculas como Wnt7a e LMX1B. Sua falha causa, por exemplo, a **síndrome unha-patela**.\n\n**Na prova**: a zona de atividade polarizada controla o eixo radioulnar por meio do Sonic hedgehog, e sua falha causa polidactilia.",
-  "correta": "A zona de atividade polarizada controla o eixo radioulnar, e alterações no seu sinal, o Sonic hedgehog, duplicam raios e causam polidactilia.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 35 (Embriologia da extremidade superior), centros de sinalização (Fig. 35.8 e 35.9)",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0008": {
@@ -294,19 +298,19 @@
   "conferido": false
  },
  "mao-0020": {
+  "conceito": "O membro superior inteiro se forma em cerca de um mês. É nessa janela curta e frágil que a maioria das malformações acontece, e a questão quer saber quando ela fica.\n\n**O relógio do Green** (cap. 35):\n- A formação dos **brotos dos membros começa cerca de 4 semanas** após o início da gestação e **está completa em 8 semanas**.\n- **A maioria das anomalias congênitas do membro superior ocorre nesse período de 4 a 8 semanas**, de desenvolvimento rápido.\n- Aos **53 dias**, o embrião tem 22 a 24 mm e os dedos já estão separados.\n- **Depois de 8 semanas** começa o **período fetal**, de diferenciação, maturação e crescimento das estruturas que já existem.\n\n**Como converter para meses.** Da 4ª à 8ª semana é o **segundo mês** de gestação. Por isso o livro apoiaria a alternativa B. A banca considerou correto o terceiro mês, e o gabarito oficial foi preservado, com a divergência no alerta.\n\n**Por que a janela importa na clínica.** Ela explica por que as malformações do membro superior se associam a defeitos cardíacos, renais e vertebrais que se formam na mesma época (como na associação VACTERL) e por que os teratógenos só causam deformidade quando agem nesse período.\n\n**O que a banca quis testar.** O período embrionário em que a organogênese do membro pode ser interrompida. O resumo Malformações congênitas da mão e do antebraço traz o relógio do desenvolvimento.",
+  "correta": "**C: terceiro mês.** É o gabarito oficial; o Green situa a maioria das anomalias entre a 4ª e a 8ª semana, como registra o alerta (cap. 35).",
   "incorretas": {
-   "A": "No primeiro mês o broto do membro está apenas começando a surgir, no fim da quarta semana.",
-   "B": "O segundo mês concentra o período crítico real dos membros, mas não foi a resposta aceita pelo gabarito.",
-   "D": "No quarto mês a organogênese já terminou e predominam crescimento e maturação."
+   "A": "**Cedo demais.** No primeiro mês, o broto do membro ainda está começando; a formação vai da 4ª à 8ª semana.",
+   "B": "**É o que o livro apoia, mas não o gabarito.** A janela de 4 a 8 semanas corresponde ao segundo mês; a banca considerou correto o terceiro.",
+   "D": "**Já é período fetal.** Depois da 8ª semana, as estruturas apenas amadurecem e crescem."
   },
-  "conceito": "O membro superior se forma muito cedo na gestação. Conhecer a cronologia ajuda a entender quando uma agressão (um medicamento, uma infecção, uma alteração genética) pode causar uma **malformação**.\n\n**A sequência do desenvolvimento**:\n\npor volta da **4ª semana** (cerca de 26 dias), surge o **broto** do membro superior;\n\nna **5ª e 6ª semanas**, forma-se a placa da mão;\n\nna **7ª semana**, aparecem os raios dos dedos, e as células entre eles começam a morrer de forma programada (apoptose) para separá-los;\n\npor volta da **8ª semana**, os dedos estão separados e a **organogênese** (a formação dos órgãos e estruturas) dos membros termina;\n\ndo **3º mês em diante**, predominam crescimento, ossificação e maturação.\n\n**A diferença entre malformação e deformação**:\n\nagressões durante a organogênese causam **malformações**: a estrutura não se forma ou se forma errada. O exemplo clássico é a **talidomida**, que causou focomelia (mãos ligadas diretamente ao tronco);\n\ndepois desse período, predominam as **deformações**: uma estrutura que se formou normal é alterada por forças externas, como as **bridas amnióticas**, que estrangulam os dedos.\n\n**Sobre esta questão**: o gabarito oficial é o terceiro mês, que corresponde a considerar a organogênese até o fim do primeiro trimestre. Pela embriologia atual, o período crítico dos membros se concentra entre a 4ª e a 8ª semanas, isto é, principalmente no segundo mês.\n\n**Na prova**: o gabarito aceita o terceiro mês, mas a organogênese dos membros se concentra entre a 4ª e a 8ª semanas.",
-  "correta": "É o gabarito oficial: a banca considera a organogênese até o fim do primeiro trimestre, embora os eventos críticos dos membros ocorram entre a 4ª e a 8ª semanas.",
-  "alerta": "A formulação é imprecisa: embriologia moderna situa a organogênese principal dos membros entre a 4ª e a 8ª semanas, isto é, sobretudo no segundo mês. O gabarito C provavelmente usa uma divisão ampla do primeiro trimestre e merece conferência no original.",
   "referencias": [
-   "Moore KL, Persaud TVN, Torchia MG. The Developing Human. 11th ed. Elsevier; 2020. Development of limbs.",
-   "Kozin SH. Upper-extremity congenital anomalies. J Bone Joint Surg Am. 2003;85:1564-1576."
+   "Green's Operative Hand Surgery, 8ª ed., cap. 35 (Embriologia da extremidade superior), pontos críticos (formação do broto do membro)",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
   ],
-  "geradoEm": "2026-10-03",
+  "alerta": "O Green situa a maioria das anomalias congênitas do membro superior entre a 4ª e a 8ª semana de gestação, isto é, no segundo mês, o que apoiaria a alternativa B. O gabarito oficial (C, terceiro mês) foi preservado.",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0021": {
@@ -344,14 +348,18 @@
   "conferido": false
  },
  "mao-0024": {
+  "conceito": "Girar de uma vez um antebraço que nunca girou estica tudo o que passa por ele: músculos, vasos e nervos. Quanto maior a rotação, maior a tensão no compartimento.\n\n**O que o Green descreve** (cap. 38). Uma **mudança substancial na rotação do antebraço** pode causar **lesão por tração do nervo interósseo posterior** ou **síndrome compartimental**. Por isso o paciente fica internado com **elevação estrita** e **monitoração neurovascular** para a síndrome compartimental. Para reduzir o risco, foram propostas a **ressecção de 5 mm de osso** no local da osteotomia e a **fasciotomia profilática** do antebraço. Na técnica descrita, o pino oblíquo pode ser retirado à beira do leito para ajustar a rotação e aliviar o nervo.\n\n**As complicações das séries.** Síndrome compartimental, comprometimento vascular, paralisia do nervo radial e perda de correção; as taxas são altas.\n\n**Por que a resposta é a compartimental.** A pergunta fala em derrotação de 90 graus, uma mudança grande. É exatamente o cenário em que o livro insiste na vigilância compartimental e nas medidas de prevenção.\n\n**O que a banca quis testar.** O risco principal da osteotomia derrotatória ampla. O resumo Malformações congênitas da mão e do antebraço traz a sinostose.",
+  "correta": "**D: síndrome compartimental.** A derrotação ampla do antebraço pode causar síndrome compartimental, e o Green recomenda vigilância e medidas de prevenção (cap. 38).",
   "incorretas": {
-   "A": "A pseudartrose é incomum, porque as crianças consolidam bem as osteotomias.",
-   "B": "A recidiva é problema da tentativa de separar os ossos com interposição; a osteotomia derrotativa não separa os ossos, apenas muda a posição.",
-   "C": "A lesão do nervo radial ou do interósseo posterior é possível, mas menos frequente que a complicação vascular."
+   "A": "**Não é a preocupação principal.** O Green não destaca a pseudartrose entre as complicações típicas.",
+   "B": "**A osteotomia não toca a sinostose.** A derrotação é feita através da sinostose ou abaixo dela, e a recidiva não é a complicação descrita.",
+   "C": "**Aparece, mas não é a principal.** A paralisia do radial está na lista, mas a síndrome compartimental é o risco que motiva a vigilância e a fasciotomia."
   },
-  "conceito": "A **sinostose radioulnar congênita** é a fusão entre o **rádio e a ulna** na parte proximal do antebraço, porque eles não se separaram durante a formação do embrião. É **bilateral** em cerca de 60% dos casos.\n\n**A consequência**: sem a articulação entre os dois ossos, o antebraço **não gira**. Fica fixo numa posição, muitas vezes em **pronação** (palma para baixo). A criança compensa girando o ombro e o punho.\n\n**Quando operar**: quando a pronação fixa é grande (acima de cerca de 60°) e atrapalha a função, como levar a mão à boca ou receber objetos com a palma para cima. Faz-se uma **osteotomia derrotativa**: corta-se o osso fundido e gira-se o antebraço para uma posição mais útil, geralmente perto da posição neutra.\n\n**A complicação mais frequente**: quando a rotação é grande e feita de uma vez, por exemplo **90°**, os músculos, a fáscia e os vasos do antebraço são **torcidos**. Isso pode dificultar o retorno do sangue e aumentar a pressão dentro dos compartimentos musculares: é a **síndrome compartimental**.\n\n**Como prevenir**:\n\nlimitar a correção aguda a cerca de 60° a 85°;\n\nfazer a osteotomia em dois níveis ou a correção gradual com fixador externo;\n\nconsiderar a fasciotomia profilática;\n\nvigiar a circulação e a dor desproporcional no pós-operatório.\n\n**Na prova**: a complicação mais frequente da derrotação de 90° na sinostose radioulnar é a síndrome compartimental.",
-  "correta": "Girar 90° de uma vez torce músculos, fáscia e vasos do antebraço, e a síndrome compartimental é a complicação mais frequente.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Sinostose radioulnar proximal: osteotomia de derrotação e complicações",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0025": {
@@ -557,17 +565,18 @@
   "conferido": false
  },
  "mao-0038": {
+  "conceito": "UPTON descreveu a mão de APERT em três formas que lembram objetos do dia a dia. Associar a imagem ao número resolve a questão.\n\n**A classificação, no Green** (cap. 36, Tabela 36.1). Baseia-se no envolvimento da primeira comissura e na aparência da massa central:\n- **Tipo I, mão em pá:** massa digital plana no plano palmar, boas metacarpofalângicas, sinfalangismo variável nas interfalângicas.\n- **Tipo II, mão em luva ou em colher:** a massa forma uma **concavidade palmar**, com os metacarpos abertos na base e as pontas firmemente fundidas, com sinoníquia central.\n- **Tipo III, mão em casco ou em botão de rosa:** o **polegar está incorporado** à massa, que fica bem côncava, com sinoníquia dos dedos.\n\n**Como lembrar.** A pá é plana; a colher já se curva; o botão de rosa se fecha sobre o polegar.\n\n**A ordem do tratamento.** As anomalias craniofaciais são abordadas primeiro, em geral por volta dos 3 meses. Na mão, liberar o polegar converte a mão em pá e deixa os dedos centrais crescerem.\n\n**O que a banca quis testar.** A forma do tipo II de UPTON. O resumo Malformações congênitas da mão e do antebraço traz a tabela.",
+  "correta": "**C: colher.** O tipo II de UPTON é a mão em luva ou em colher, com concavidade palmar (Green, cap. 36, Tabela 36.1).",
   "incorretas": {
-   "A": "A mão em pá é o tipo I, a forma mais leve, com polegar separado e palma plana.",
-   "B": "Mão em foice não faz parte da classificação de Upton.",
-   "D": "O botão de rosa é o tipo III, a forma mais grave, com todos os dedos fundidos, inclusive o polegar."
+   "A": "**É o tipo I.** A mão em pá é a forma mais plana, com massa digital no plano palmar.",
+   "B": "**Não faz parte da classificação.** UPTON descreve pá, colher (ou luva) e casco (ou botão de rosa).",
+   "D": "**É o tipo III.** A mão em botão de rosa (ou casco) tem o polegar incorporado à massa."
   },
-  "conceito": "A **síndrome de Apert** (acrocefalossindactilia) é uma doença genética causada por mutação no gene **FGFR2**. Ela combina:\n\n**craniossinostose**: fechamento precoce das suturas do crânio, principalmente a coronal, que deforma a cabeça;\n\nhipoplasia do terço médio da face;\n\n**sindactilia complexa** das mãos e dos pés, com fusão de ossos e pele.\n\n**A classificação de Upton da mão de Apert**:\n\n**tipo I, mão em pá**: a forma mais leve. O polegar está separado ou só parcialmente unido, e a palma é plana;\n\n**tipo II, mão em colher** (ou em luva): o **indicador, o médio e o anelar** estão fundidos, inclusive nos ossos, e a **palma fica côncava**, como uma colher. O polegar desvia para o lado radial, e o anelar e o mínimo têm uma sindactilia simples. É o tipo **mais comum**;\n\n**tipo III, mão em botão de rosa** (ou casco): a forma mais grave. **Todos os dedos**, inclusive o polegar, estão fundidos, com as unhas unidas numa só.\n\n**Outros achados**: falange do polegar em forma de delta, fusões entre falanges e entre metacarpos, e rigidez de ombro e cotovelo.\n\n**A cirurgia**: é feita em várias etapas, começando pelas bordas (a primeira comissura, entre polegar e indicador, e o espaço entre anelar e mínimo) e depois os dedos centrais.\n\n**Na prova**: Upton tipo II na síndrome de Apert é a mão em colher.",
-  "correta": "O tipo II de Upton é a mão em colher, com fusão do indicador ao anelar e palma côncava, e é o tipo mais frequente.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 80"
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Síndrome de APERT (Tabela 36.1)",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0039": {
@@ -670,14 +679,19 @@
   "conferido": false
  },
  "mao-0047": {
+  "conceito": "A deformidade de MADELUNG é um crescimento torto do rádio distal: a parte ulnar e palmar da fise para, o resto continua, e o rádio se curva, com a superfície articular inclinada para ulnar e palmar e a ulna saliente no dorso.\n\n**A causa, segundo o Green** (cap. 38). O distúrbio de crescimento se deve a uma combinação de **lesão óssea na porção ulnar da fise** do rádio distal com um **ligamento palmar anormal que prende o semilunar ao rádio, proximal à fise**: o **ligamento de VICKERS**.\n\n**O quadro.** **Geralmente bilateral**, torna-se **clinicamente aparente no início da adolescência**, com dor, deformidade ou ulna proeminente.\n\n**O tratamento.** Em crescimento, a **fisiólise com liberação do ligamento de VICKERS** pode reduzir a dor e melhorar gradualmente a deformidade. Na deformidade leve a moderada sem artrose da radioulnar distal, a **fisiólise com osteotomia em cúpula** é o procedimento mais comum. Na cirurgia, a reflexão ulnar do pronador quadrado expõe o ligamento, que é liberado da metáfise.\n\n**A questão.** Metade dela o Green resolve: a deformidade é **geralmente bilateral**, o que elimina B e D. O predomínio no **sexo feminino** é a outra metade da resposta da banca; o capítulo ilustra o quadro com uma adolescente, mas o trecho lido não dá a proporção entre os sexos, como registra o alerta.\n\n**O que a banca quis testar.** O perfil típico da doença. O resumo Malformações congênitas da mão e do antebraço traz a seção.",
+  "correta": "**A: feminino e bilateral.** A bilateralidade é descrita pelo Green (cap. 38); o predomínio feminino é o gabarito oficial, como registra o alerta.",
   "incorretas": {
-   "B": "O sexo está certo, mas a forma clássica é bilateral; a forma unilateral sugere causa pós-traumática ou pós-infecciosa.",
-   "C": "A lateralidade está certa, mas o predomínio é feminino.",
-   "D": "Erra os dois: o predomínio é feminino e a forma clássica é bilateral."
+   "B": "**Erra a lateralidade.** O Green descreve a deformidade de MADELUNG como geralmente bilateral.",
+   "C": "**Acerta a lateralidade, mas não é o gabarito.** A banca considerou a doença mais frequente no sexo feminino.",
+   "D": "**Erra as duas.** A deformidade é geralmente bilateral, e a banca a considera mais frequente em mulheres."
   },
-  "conceito": "A **deformidade de Madelung** é causada por uma **falha de crescimento** de uma parte da placa de crescimento (fise) distal do rádio: a porção **volar e ulnar**. Enquanto o resto da fise cresce normalmente, essa parte fica para trás, e o rádio cresce **torto e curto**.\n\nMuitas vezes há um ligamento anormal, o **ligamento de Vickers**, que vai do semilunar ao rádio e \"freia\" essa parte da fise.\n\n**O perfil**:\n\né mais frequente em **meninas**;\n\né geralmente **bilateral**, embora muitas vezes assimétrica;\n\naparece na **adolescência**, durante o estirão de crescimento;\n\nquando é bilateral numa menina de baixa estatura, deve-se pensar em **discondrosteose de Léri-Weill** (alteração no gene SHOX) ou na síndrome de Turner.\n\n**Os achados**:\n\na cabeça da **ulna fica saliente** no dorso do punho;\n\na mão parece escorregar para a palma;\n\no rádio fica curto e curvo, e a superfície articular fica muito inclinada para ulnar e para volar;\n\no carpo assume uma forma de cunha, com o semilunar afundado entre o rádio e a ulna;\n\na supinação e a extensão ficam limitadas.\n\n**Tratamento**: se não há sintomas, observa-se. Com dor ou piora, faz-se a liberação do ligamento de Vickers com retirada da ponte na fise (em crianças), osteotomia do rádio ou encurtamento da ulna.\n\n**Na prova**: a deformidade de Madelung é mais frequente no sexo feminino e é bilateral.",
-  "correta": "A forma clássica é bilateral e predomina no sexo feminino, aparecendo na adolescência com o estirão.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deformidade de MADELUNG",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "alerta": "O Green confirma que a deformidade de MADELUNG geralmente é bilateral, mas o trecho lido não traz a distribuição por sexo; o predomínio feminino é o gabarito oficial (A), que foi preservado.",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0048": {
@@ -892,14 +906,18 @@
   "conferido": false
  },
  "mao-0061": {
+  "conceito": "O polegar em gatilho da criança não é a tenossinovite do adulto. É um problema de tamanho: o tendão engrossa e não passa pela primeira polia.\n\n**O mecanismo, no Green** (cap. 37). O gatilho ocorre quando a **área de secção transversal do flexor longo do polegar excede a área da polia A1**: uma **incompatibilidade de tamanho**. O espessamento nodular do tendão, o **nódulo de NOTTA**, é palpável **imediatamente proximal à polia A1**. A criança costuma se apresentar com a interfalângica travada em flexão.\n\n**Isolada ou sindrômica?** O capítulo trata o polegar em gatilho como uma condição local do tendão e da polia, não como parte de uma síndrome, ao contrário de muitas outras malformações do polegar (hipoplasia, polegar trifalângico), que pedem investigação sistêmica.\n\n**Por que a A1.** É a polia sobre a metacarpofalângica, a primeira que o tendão encontra ao entrar no canal do polegar. A A2 fica sobre a falange proximal e não é o local do conflito.\n\n**O que a banca quis testar.** A natureza isolada da doença e a polia envolvida. O resumo Malformações congênitas da mão e do antebraço traz o polegar da criança.",
+  "correta": "**A: isolada que acomete a polia A1.** O conflito é entre o flexor longo do polegar e a polia A1, com o nódulo de NOTTA logo proximal (Green, cap. 37).",
   "incorretas": {
-   "B": "A polia A2 não é o ponto de travamento e não deve ser cortada, porque sua perda faz o tendão se afastar do osso.",
-   "C": "O polegar em gatilho infantil não é sindrômico; só os gatilhos múltiplos fazem investigar síndromes.",
-   "D": "Erra nos dois pontos: não é sindrômico e não acomete a polia A2."
+   "B": "**Polia errada.** O conflito é na polia A1, não na A2.",
+   "C": "**Polia certa, contexto errado.** O polegar em gatilho da criança é uma condição local, isolada.",
+   "D": "**Erra as duas.** Nem sindrômica nem na polia A2."
   },
-  "conceito": "O **polegar em gatilho da criança** é diferente do dedo em gatilho do adulto. No adulto, há inflamação da bainha do tendão. Na criança, **não é inflamatório**: há uma **desproporção** entre o tendão e o túnel por onde ele passa.\n\n**O mecanismo**: o **flexor longo do polegar** tem um espessamento, o **nódulo de Notta**, que fica grande demais para passar pela **polia A1**, a faixa fibrosa na base do polegar, na altura da metacarpofalângica. O tendão trava.\n\n**Como se apresenta**:\n\na **interfalângica do polegar fica presa em flexão** (a ponta do polegar dobrada), muitas vezes sem o estalido típico do adulto;\n\num **nódulo** palpável na base do polegar, do lado da palma;\n\nos pais frequentemente acham que foi um trauma.\n\n**É uma alteração isolada**: não faz parte de síndromes, embora possa ser bilateral em cerca de 25% a 30% dos casos.\n\n**Tratamento**:\n\n**observação**: uma parte considerável melhora sozinha até os 3 ou 4 anos;\n\n**órtese** em extensão, em alguns serviços;\n\n**liberação cirúrgica da polia A1**, que é curativa. O cuidado é com os **nervos digitais**, que no polegar ficam muito próximos e superficiais.\n\n**Atenção**: gatilhos em **vários dedos** na criança fazem pensar em doenças sistêmicas, como mucopolissacaridose, artrite idiopática juvenil ou síndrome de Down.\n\n**Na prova**: o polegar em gatilho infantil é uma alteração isolada que acomete a polia A1.",
-  "correta": "É uma desproporção isolada entre o flexor longo do polegar, com o nódulo de Notta, e a polia A1; a liberação da A1 resolve quando não há melhora espontânea.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 37 (Deformidades do polegar), Polegar em gatilho",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0062": {
@@ -1077,14 +1095,18 @@
   "geradoEm": "2026-10-29"
  },
  "mao-0073": {
+  "conceito": "Direto ao número: na sindactilia isolada, mais da metade dos casos une o médio e o anelar.\n\n**A distribuição, no Green** (cap. 36). Na sindactilia isolada:\n- **terceira comissura** (médio e anelar): **55%**;\n- **quarta** (anelar e mínimo): **25%**;\n- **segunda** (indicador e médio): **15%**;\n- **primeira** (polegar e indicador): **5%**.\n\nNa sindactilia **sindrômica**, a distribuição entre as comissuras é mais igual.\n\n**Os outros números do capítulo.** Cerca de 1 em 2.000 nascidos vivos; **bilateral em 50%**; **2 homens para 1 mulher**; em cerca de 30% é autossômica dominante, com expressividade variável e penetrância incompleta. O mecanismo é a **falha da apoptose do mesênquima interdigital**.\n\n**Por que a comissura importa no tratamento.** O Green separa a primeira e a quarta comissuras cedo, entre 3 e 6 meses, porque unem dedos de comprimentos diferentes e desviam com o crescimento; a segunda e a terceira, como a do médio e anelar desta questão, depois dos 18 meses.\n\n**O que a banca quis testar.** A comissura mais acometida. O resumo Malformações congênitas da mão e do antebraço traz a epidemiologia.",
+  "correta": "**C: 3o e 4o dedos.** A terceira comissura, entre o médio e o anelar, responde por 55% das sindactilias isoladas (Green, cap. 36).",
   "incorretas": {
-   "A": "O 1º espaço, entre polegar e indicador, é o menos comum e, quando presente, sugere quadro sindrômico.",
-   "B": "O 2º espaço, entre indicador e médio, é o terceiro em frequência.",
-   "D": "O 4º espaço, entre anelar e mínimo, é o segundo mais frequente, depois do 3º."
+   "A": "**É a menos comum.** A primeira comissura responde por apenas 5% das sindactilias isoladas.",
+   "B": "**É a terceira em frequência.** A segunda comissura soma cerca de 15%.",
+   "D": "**É a segunda mais comum.** A quarta comissura responde por cerca de 25%, atrás da terceira."
   },
-  "conceito": "A **sindactilia** é a união congênita de dois ou mais dedos vizinhos. Junto com a polidactilia, é uma das malformações mais comuns da mão.\n\n**Por que acontece**: no embrião, a mão começa como uma \"pá\" e os dedos se separam porque as células entre eles **morrem de forma programada** (apoptose), entre a 6ª e a 8ª semanas. Se esse processo falha, os dedos ficam unidos.\n\n**A frequência por espaço**:\n\n**3º espaço** (entre **médio e anelar**): cerca de **50%** dos casos, o mais comum;\n\n4º espaço (entre anelar e mínimo): cerca de 30%;\n\n2º espaço (entre indicador e médio): cerca de 15%;\n\n1º espaço (entre polegar e indicador): cerca de 5%, e quando aparece faz pensar em síndromes, como a de Apert.\n\n**Outros dados**: predomina no **sexo masculino**, é bilateral em cerca de metade dos casos e pode ter história familiar.\n\n**Quando operar**:\n\nquando os dedos unidos têm **tamanhos diferentes** (1º e 4º espaços), operar **cedo**, entre 6 e 12 meses. O dedo mais longo é \"puxado\" pelo mais curto e cresce torto;\n\nno 3º espaço, com dedos de tamanhos parecidos, pode-se esperar até cerca de 18 meses;\n\nnas formas complexas ou sindrômicas, a cirurgia é planejada em etapas.\n\n**Na prova**: a sindactilia é mais frequente entre o 3º e o 4º dedos, médio e anelar.",
-  "correta": "A sindactilia entre médio e anelar, no 3º espaço, responde por cerca de metade dos casos.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Sindactilia: epidemiologia",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0074": {
@@ -1099,14 +1121,18 @@
   "conferido": false
  },
  "mao-0075": {
+  "conceito": "Corrigir o punho de uma criança com mão torta radial parece sempre uma boa ideia, até que se pergunte como ela leva a comida à boca. A resposta define a principal contraindicação.\n\n**O que o Green diz** (cap. 38). Algumas crianças com deficiência radial têm **contratura em extensão do cotovelo**. Nesse caso, a **centralização é contraindicada**, porque o **desvio radial do punho é necessário para a mão alcançar o rosto**. Com o cotovelo que não dobra, a mão torta é a adaptação que permite comer, escovar os dentes e se pentear; endireitá-la tiraria essa função.\n\n**O contexto.** A deficiência radial é o tipo mais comum de deficiência longitudinal, muitas vezes bilateral e assimétrica, classificada por BAYNE e KLUG em quatro tipos pela gravidade radiográfica do rádio. As complicações a longo prazo da centralização formal (recidiva, rigidez, lesão da fise ulnar) levaram alguns cirurgiões a preferir reconstruções de partes moles.\n\n**Na avaliação.** Antes de operar, investigam-se as associações sistêmicas (VACTERL, TAR, HOLT-ORAM, anemia de FANCONI), porque algumas mudam o prognóstico e o momento da cirurgia.\n\n**O que a banca quis testar.** A contraindicação funcional, que pesa mais que qualquer achado radiográfico. O resumo Malformações congênitas da mão e do antebraço traz a deficiência radial.",
+  "correta": "**D: rigidez em extensão do cotovelo.** Sem flexão do cotovelo, o desvio radial do punho é o que leva a mão ao rosto, e a centralização é contraindicada (Green, cap. 38).",
   "incorretas": {
-   "A": "A ausência do polegar não impede a centralização; a reconstrução do polegar é planejada depois.",
-   "B": "A camptodactilia não tem relação com a decisão sobre o punho.",
-   "C": "A pronossupinação comprometida é esperada na deficiência radial e não contraindica a centralização."
+   "A": "**Não contraindica.** A ausência do polegar é tratada à parte, em geral com policização do indicador depois da correção do punho.",
+   "B": "**Não contraindica.** A camptodactilia é comum na deficiência radial e não impede a correção do punho.",
+   "C": "**Não é a principal.** A falta de pronossupinação não tira a função de levar a mão ao rosto, que depende do cotovelo."
   },
-  "conceito": "Na **mão torta radial** (deficiência longitudinal do rádio), a mão fica desviada para o lado radial porque falta o rádio para apoiá-la. A **centralização** é a cirurgia que coloca o carpo sobre a ulna, deixando o punho reto e estável.\n\n**Por que nem sempre centralizar**: a criança com mão torta radial muitas vezes também tem o **cotovelo rígido**, travado em extensão. Nesse caso, ela não consegue dobrar o cotovelo para levar a mão à boca. O **desvio radial do punho** é exatamente o que **compensa**: com a mão torta, ela consegue alcançar o rosto, a boca e a cabeça. Se o punho for alinhado, essa compensação some, e a criança **perde a capacidade de levar a mão ao rosto**.\n\n**Por isso, a principal contraindicação** à centralização é o **cotovelo rígido em extensão**. Antes de operar, é preciso verificar se o cotovelo dobra o suficiente.\n\n**Outras situações em que não se centraliza**: adulto que já se adaptou bem, doença sistêmica grave (como anemia de Fanconi ou cardiopatia importante) e partes moles muito retraídas, que precisam ser alongadas antes com distração.\n\n**O que não contraindica**:\n\na **ausência do polegar**: a reconstrução do polegar (policização) é feita depois da centralização;\n\na **pronossupinação ausente**: faz parte do próprio quadro;\n\na **camptodactilia** (dedo dobrado na interfalângica proximal): não interfere na decisão sobre o punho.\n\n**Na prova**: a principal contraindicação à centralização na mão torta radial é o cotovelo rígido em extensão.",
-  "correta": "Com o cotovelo travado em extensão, o desvio radial do punho é o que permite levar a mão à boca; alinhar o punho tiraria essa função.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deficiência radial longitudinal: anatomia pertinente e centralização",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0076": {
@@ -1252,14 +1278,18 @@
   "conferido": false
  },
  "mao-0083": {
+  "conceito": "A deformidade de MADELUNG é um crescimento torto do rádio distal: a parte ulnar e palmar da fise para, o resto continua, e o rádio se curva, com a superfície articular inclinada para ulnar e palmar e a ulna saliente no dorso.\n\n**A causa, segundo o Green** (cap. 38). O distúrbio de crescimento se deve a uma combinação de **lesão óssea na porção ulnar da fise** do rádio distal com um **ligamento palmar anormal que prende o semilunar ao rádio, proximal à fise**: o **ligamento de VICKERS**.\n\n**O quadro.** **Geralmente bilateral**, torna-se **clinicamente aparente no início da adolescência**, com dor, deformidade ou ulna proeminente.\n\n**O tratamento.** Em crescimento, a **fisiólise com liberação do ligamento de VICKERS** pode reduzir a dor e melhorar gradualmente a deformidade. Na deformidade leve a moderada sem artrose da radioulnar distal, a **fisiólise com osteotomia em cúpula** é o procedimento mais comum. Na cirurgia, a reflexão ulnar do pronador quadrado expõe o ligamento, que é liberado da metáfise.\n\n**A pergunta ao contrário.** Aqui a banca dá o ligamento e pede a doença. Basta lembrar que o ligamento de VICKERS amarra o semilunar ao rádio proximal à fise, e que a fisiólise com a sua liberação é um dos tratamentos da deformidade de MADELUNG.\n\n**O que a banca quis testar.** A associação entre o epônimo e a doença. O resumo Malformações congênitas da mão e do antebraço traz a seção.",
+  "correta": "**D: MADELUNG.** O ligamento de VICKERS é o ligamento palmar anormal da deformidade de MADELUNG (Green, cap. 38).",
   "incorretas": {
-   "A": "A síndrome de Apert é a acrocefalossindactilia, sem relação com o ligamento de Vickers.",
-   "B": "Jansen é uma condrodisplasia metafisária, que não tem esse ligamento.",
-   "C": "Streeter é a síndrome das bandas de constrição, causada por bandas externas, e não por ligamento anômalo no punho."
+   "A": "**APERT é a acrocefalossindactilia.** O problema da mão é a sindactilia complexa, sem o ligamento de VICKERS.",
+   "B": "**JANSEN é uma condrodisplasia metafisária.** Não se associa ao ligamento de VICKERS.",
+   "C": "**STREETER nomeia as bandas de constrição.** A sequência de bandas amnióticas não tem relação com esse ligamento."
   },
-  "conceito": "O **ligamento de Vickers** é uma faixa fibrosa **anormal** que vai da parte **volar e ulnar** da metáfise do **rádio distal** até o **semilunar**. Ele é o achado característico da **deformidade de Madelung**.\n\n**Como ele causa a deformidade**: ele prende e \"amarra\" o canto volar e ulnar da **placa de crescimento** (fise) do rádio distal. Esse canto **para de crescer**, enquanto o restante da fise continua crescendo. O resultado é um rádio que cresce **torto**:\n\no rádio fica curvo, com a convexidade para dorsal e radial;\n\na superfície articular fica muito inclinada para volar e ulnar;\n\no semilunar afunda entre o rádio e a ulna, e o carpo toma a forma de cunha;\n\na ulna fica saliente no dorso, e a mão parece escorregar para a palma.\n\n**O tratamento**:\n\nem crianças ainda em crescimento: **retirar o ligamento de Vickers** e liberar a fise (fisiólise), para que ela volte a crescer de forma equilibrada;\n\ncom o esqueleto maduro: osteotomia do rádio e encurtamento da ulna.\n\n**Os outros nomes da questão**:\n\n**Apert**: acrocefalossindactilia, com fechamento precoce do crânio e sindactilia complexa;\n\n**Jansen**: um tipo de displasia das metáfises (condrodisplasia metafisária);\n\n**Streeter**: síndrome das bandas de constrição (bandas amnióticas).\n\n**Na prova**: o ligamento de Vickers está relacionado à deformidade de Madelung.",
-  "correta": "O ligamento de Vickers prende o semilunar ao canto volar-ulnar do rádio distal, freia essa parte da fise e gera a deformidade de Madelung.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deformidade de MADELUNG",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0084": {
@@ -2261,17 +2291,18 @@
   "conferido": false
  },
  "mao-0157": {
+  "conceito": "Corrigir o punho de uma criança com mão torta radial parece sempre uma boa ideia, até que se pergunte como ela leva a comida à boca. A resposta define a principal contraindicação.\n\n**O que o Green diz** (cap. 38). Algumas crianças com deficiência radial têm **contratura em extensão do cotovelo**. Nesse caso, a **centralização é contraindicada**, porque o **desvio radial do punho é necessário para a mão alcançar o rosto**. Com o cotovelo que não dobra, a mão torta é a adaptação que permite comer, escovar os dentes e se pentear; endireitá-la tiraria essa função.\n\n**O contexto.** A deficiência radial é o tipo mais comum de deficiência longitudinal, muitas vezes bilateral e assimétrica, classificada por BAYNE e KLUG em quatro tipos pela gravidade radiográfica do rádio. As complicações a longo prazo da centralização formal (recidiva, rigidez, lesão da fise ulnar) levaram alguns cirurgiões a preferir reconstruções de partes moles.\n\n**Na avaliação.** Antes de operar, investigam-se as associações sistêmicas (VACTERL, TAR, HOLT-ORAM, anemia de FANCONI), porque algumas mudam o prognóstico e o momento da cirurgia.\n\n**Lendo a alternativa D.** A contraindicação clássica é a presença de anomalias associadas **incompatíveis** com uma vida longa, não compatíveis. A alternativa inverte a ideia.\n\n**O que a banca quis testar.** A mesma contraindicação funcional, escrita como flexão inadequada do cotovelo. O resumo Malformações congênitas da mão e do antebraço traz a deficiência radial.",
+  "correta": "**C: inadequada flexão do cotovelo.** Sem flexão do cotovelo, a criança depende do desvio radial do punho para alcançar o rosto, e a centralização é contraindicada (Green, cap. 38).",
   "incorretas": {
-   "A": "A ausência do polegar não impede a cirurgia; a reconstrução do polegar é feita depois da centralização.",
-   "B": "A ausência total do rádio é o tipo mais comum e é justamente a indicação típica da centralização.",
-   "D": "Anomalias compatíveis com vida longa justificam a reconstrução; contraindicam as doenças graves, com expectativa de vida curta."
+   "A": "**Não contraindica.** O polegar ausente é reconstruído depois, em geral por policização do indicador.",
+   "B": "**É justamente o tipo mais grave que mais se beneficia.** A ausência total do rádio (tipo IV de BAYNE e KLUG) não contraindica a correção.",
+   "D": "**Inverte a regra.** Anomalias associadas compatíveis com vida longa não impedem a cirurgia; o problema seria o contrário."
   },
-  "conceito": "Na **mão torta radial** (falta do rádio), a mão desvia para o lado radial. A cirurgia de **centralização** coloca o carpo sobre a ulna e deixa o punho reto. Mas nem toda criança se beneficia dela.\n\n**A principal contraindicação: flexão inadequada do cotovelo**. Muitas crianças com mão torta radial também têm o cotovelo **rígido em extensão**. Sem conseguir dobrar o cotovelo, elas usam o **desvio radial do punho** para **levar a mão à boca** e ao rosto. Se o punho for alinhado, essa compensação desaparece e a criança perde a capacidade de comer e se cuidar sozinha. Por isso, antes de operar, é preciso confirmar que o cotovelo dobra o suficiente.\n\n**Outras situações em que não se opera**: adultos que já se adaptaram bem, doenças sistêmicas graves e partes moles muito retraídas (que precisam ser alongadas antes).\n\n**O que não é contraindicação**:\n\n**ausência do polegar**: a reconstrução do polegar (policização) é feita depois da centralização;\n\n**ausência total do rádio**: é o tipo **mais comum** de mão torta radial e o alvo principal da cirurgia;\n\n**anomalias associadas compatíveis com vida longa**: se a criança tem boa expectativa de vida, isso **justifica** a reconstrução. O que contraindica são doenças graves, com expectativa de vida curta.\n\n**Na prova**: na mão torta radial, a flexão inadequada do cotovelo contraindica a cirurgia.",
-  "correta": "Sem flexão adequada do cotovelo, o desvio radial do punho é o que leva a mão ao rosto, e alinhar o punho tiraria essa função.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 80"
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deficiência radial longitudinal: anatomia pertinente e centralização",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0158": {
@@ -2544,17 +2575,18 @@
   "conferido": false
  },
  "mao-0180": {
+  "conceito": "Quando os dois polegares duplicados são do mesmo tamanho, nenhum deles sozinho será um bom polegar. A ideia de BILHAUT e CLOQUET foi juntar as metades.\n\n**A técnica, no Green** (cap. 37). Ressecam-se as **porções centrais do osso e da unha de cada componente** e aproximam-se as bordas que ficaram, unindo os dois num polegar só. A operação é **difícil**, e a **deformidade da unha** e a **rigidez da interfalângica** são problemas comuns. Uma técnica de BILHAUT-CLOQUET **modificada** foi usada em polegares **WASSEL tipos II e III**, quando os componentes eram **simétricos** e a unha de cada um era menor que dois terços da contralateral.\n\n**O contexto da duplicação.** O tipo mais comum de WASSEL é o **IV** (falanges proximal e distal duplicadas sobre uma cabeça de metacarpo bífida, cerca de 50%). Quando um componente é menor, o habitual é **remover o componente radial** e reconstruir o restante (ligamento colateral, inserções tendíneas).\n\n**Por que as outras não.**\n- **Dimelia ulnar:** a mão em espelho se trata com ablação dos dedos supranumerários e reconstrução do polegar, em geral por policização.\n- **Acrossindactilia:** separação das pontas unidas, típica das bandas de constrição.\n- **Polegar trifalângico:** retirada ou fusão da falange extra e correção do desvio.\n\n**O que a banca quis testar.** A indicação do BILHAUT-CLOQUET. O resumo Malformações congênitas da mão e do antebraço traz a duplicação do polegar.",
+  "correta": "**D: duplicação do polegar.** O BILHAUT-CLOQUET une as metades de dois polegares duplicados e simétricos (Green, cap. 37).",
   "incorretas": {
-   "A": "Na dimelia ulnar, a mão em espelho, não há polegar; o tratamento é transformar um dedo em polegar e retirar os excedentes.",
-   "B": "A acrossindactilia, da síndrome das bandas de constrição, é tratada com liberação dos dedos.",
-   "C": "O polegar trifalângico tem uma falange extra, mas não é uma duplicação de raios; trata-se com ressecção da falange ou osteotomia."
+   "A": "**Outra deformidade.** Na dimelia ulnar, retiram-se os dedos supranumerários e se reconstrói o polegar.",
+   "B": "**Outra técnica.** A acrossindactilia se trata separando as pontas unidas.",
+   "C": "**Outro problema.** No polegar trifalângico, o foco é a falange extra e o desvio."
   },
-  "conceito": "Na **duplicação do polegar** (polidactilia pré-axial), a criança nasce com dois polegares, geralmente **ambos menores** que um polegar normal. O objetivo da cirurgia é construir **um bom polegar**.\n\n**As estratégias**:\n\n**retirar o polegar menor e reconstruir o outro**: é a técnica **mais usada**, quando um dos polegares é claramente melhor (geralmente o ulnar). Retira-se o polegar radial e reconstroem-se o ligamento colateral e a inserção do abdutor curto no polegar que fica;\n\n**técnica de Bilhaut-Cloquet**: indicada quando os **dois polegares são parecidos** e ambos pequenos. Retira-se a **metade central** de cada um (a parte que fica entre eles) e **unem-se as duas metades externas**, formando um único polegar. A vantagem é que o polegar resultante tem **largura** adequada, com osso e unha dos dois;\n\n**on-top plasty**: quando um polegar tem a ponta boa e o outro tem a base boa, coloca-se a parte distal de um sobre a base do outro.\n\n**As desvantagens da Bilhaut-Cloquet**: a unha pode ficar com um **sulco** ou deformada no meio, as articulações podem ficar rígidas, pode haver desvio e lesão da placa de crescimento. Modificações da técnica tentam poupar a articulação ou a unha.\n\n**As outras condições da questão**:\n\n**dimelia ulnar** (mão em espelho): não há polegar, e sim dedos duplicados em espelho; trata-se transformando um dos dedos em polegar e retirando os excedentes;\n\n**acrossindactilia**: dedos fundidos nas pontas pelas bandas amnióticas; trata-se com liberação;\n\n**polegar trifalângico**: polegar com uma falange a mais; trata-se retirando a falange extra ou com osteotomias.\n\n**Na prova**: a técnica de Bilhaut-Cloquet é indicada na duplicação do polegar, quando os dois são semelhantes e hipoplásicos.",
-  "correta": "A Bilhaut-Cloquet une as metades externas de dois polegares semelhantes e pequenos, formando um polegar de largura adequada.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
+   "Green's Operative Hand Surgery, 8ª ed., cap. 37 (Deformidades do polegar), Duplicação do polegar: técnica de BILHAUT-CLOQUET (Fig. 37.47)",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0181": {
@@ -2989,15 +3021,19 @@
   "conferido": false
  },
  "mao-0249": {
+  "conceito": "A braquidactilia é o dedo curto por osso curto. Entre os ossos da mão, há um que encurta muito mais vezes que os outros: a falange média.\n\n**O que o Green diz** (cap. 36). Os ossos mais comumente envolvidos são a **falange média** (**braquimesofalangia**), seguida do **metacarpo** (**braquimetacarpia**). O ponto crítico do capítulo repete: o osso mais afetado é a falange média.\n\n**Por que a falange média.** É o último segmento do dedo a se definir no desenvolvimento e o que mais sofre com alterações de sinalização. Por isso a falange média curta aparece em tantas síndromes e é a base da clinodactilia do mínimo.\n\n**A ligação com a clinodactilia.** Uma falange média curta e trapezoidal, ou com a fise em C (a delta-falange), desvia o dedo. O Green define a clinodactilia notável como angulação maior que 10 graus, muitas vezes bilateral e herdada como autossômica dominante.\n\n**O que a banca quis testar.** O osso mais acometido na braquidactilia. O resumo Malformações congênitas da mão e do antebraço traz as deformidades dos dedos.",
+  "correta": "**A: falange média.** É o osso mais comumente envolvido na braquidactilia, seguido do metacarpo (Green, cap. 36).",
   "incorretas": {
-   "B": "A falange proximal é acometida em poucas formas e com menos frequência que a média.",
-   "C": "A extremidade distal do rádio não faz parte da braquidactilia, que é o encurtamento dos dedos.",
-   "D": "A braquimetacarpia afeta o metacarpo inteiro, e não só sua metáfise, e é menos frequente que o acometimento da falange média.",
-   "E": "O acometimento não é da metáfise proximal do metacarpo, e a braquimetacarpia é menos comum que a da falange média."
+   "B": "**Não é o mais comum.** A falange proximal é menos acometida que a média e que o metacarpo.",
+   "C": "**Não é braquidactilia.** O rádio distal não faz parte do dedo.",
+   "D": "**O metacarpo vem em segundo.** A braquimetacarpia é menos frequente que a braquimesofalangia.",
+   "E": "**Mesmo raciocínio.** O metacarpo é o segundo osso mais acometido, atrás da falange média."
   },
-  "conceito": "**Braquidactilia** significa \"dedos curtos\": o encurtamento de um ou mais segmentos dos dedos, por alteração no crescimento dos ossos.\n\n**O segmento mais acometido é a falange média**. Uma explicação é que ela é a **última** falange a se formar e tem o centro de ossificação mais tardio, ficando mais exposta a alterações do desenvolvimento.\n\n**O exemplo mais comum**: a falange média curta do **dedo mínimo** (braquimesofalangia), muitas vezes com a ponta do dedo desviada para o lado (**clinodactilia**).\n\n**A classificação de Bell** separa os tipos pelo osso afetado. Por exemplo:\n\n**tipo A**: falanges médias curtas;\n\n**tipo B**: falanges médias e distais pequenas ou ausentes;\n\n**tipo D**: falange distal do polegar curta e larga;\n\n**tipo E**: **metacarpos curtos** (braquimetacarpia).\n\n**A braquimetacarpia**: quando o 4º e o 5º metacarpos são curtos, ao fechar a mão some o \"nó\" daquele dedo (o sinal do nó ausente). Pode se associar a doenças como o pseudo-hipoparatireoidismo e a síndrome de Turner.\n\n**O tratamento**: geralmente nenhum, porque a função costuma ser boa. Em casos selecionados, pode-se alongar o osso por distração.\n\n**Na prova**: o local mais comum de acometimento da braquidactilia é a falange média.",
-  "correta": "A falange média é a última a se formar e a mais exposta a alterações do crescimento; a braquimesofalangia do mínimo é o exemplo mais comum.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Braquidactilia",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0250": {
@@ -3711,14 +3747,18 @@
   "conferido": false
  },
  "mao-0307": {
+  "conceito": "Uma criança com sinostose unilateral e antebraço em neutro usa a mão quase normalmente, compensando com o ombro e o punho. Não há o que ganhar com cirurgia, e há bastante a perder.\n\n**O que o Green diz** (cap. 38):\n- A **ressecção da sinostose** para devolver a rotação tem sido **mal sucedida**: falhou em **22 de 23 antebraços** numa revisão. A interposição de retalho fascial pode evitar a recidiva, mas a rotação ganha é pequena.\n- A **osteotomia derrotatória** está indicada na **pronação extrema fixa, acima de 60 graus, que interfere na função**.\n- Na sinostose **unilateral**, quando se opera, o antebraço vai para **0 a 15 graus de pronação**; na bilateral, o dominante fica em 10 a 20 graus de pronação e o não dominante em neutro.\n\n**Aplicando ao caso.** Unilateral e em **posição neutra**: o antebraço já está onde a osteotomia o colocaria. A conduta é **não cirúrgica**. O Green também registra que a maioria dos casos é tratada por observação.\n\n**O que a banca quis testar.** Que a cirurgia depende da posição e da função, não da sinostose em si. O resumo Malformações congênitas da mão e do antebraço traz a sinostose.",
+  "correta": "**A: o não cirúrgico.** Em posição neutra, o antebraço unilateral já está na posição funcional que a osteotomia buscaria (Green, cap. 38).",
   "incorretas": {
-   "B": "A ressecção da sinostose tem recidiva quase certa: os ossos voltam a se unir.",
-   "C": "A ressecção com interposição tem resultado inconstante e não se justifica num antebraço já funcional.",
-   "D": "A osteotomia serve para tirar o antebraço da pronação acentuada; fixá-lo em pronação seria piorar a posição."
+   "B": "**Costuma falhar.** A ressecção falhou em 22 de 23 antebraços numa revisão citada pelo Green.",
+   "C": "**Ganho pequeno.** A interposição evita a recidiva, mas devolve pouca rotação, e o antebraço em neutro não precisa dela.",
+   "D": "**Sem indicação.** A osteotomia se reserva à pronação fixa acima de 60 graus com prejuízo funcional."
   },
-  "conceito": "Na **sinostose radioulnar congênita**, rádio e ulna ficam unidos na parte proximal e o antebraço **não gira**. O que define o tratamento é **em que posição** ele ficou travado e **quanto isso atrapalha** a vida da criança.\n\n**Por que a posição importa**: com o antebraço perto da **posição neutra**, a mão consegue levar comida à boca, escrever e segurar objetos. O ombro e o punho compensam bem a falta de rotação. Em **pronação acentuada** (palma virada para baixo, acima de cerca de 60°), a criança não consegue receber objetos com a palma para cima nem lavar o rosto.\n\n**A conduta**:\n\n**unilateral, em neutro ou pouca pronação**: **tratamento não cirúrgico**. O outro lado é normal e a função está preservada;\n\n**pronação acentuada com limitação funcional**: **osteotomia derrotativa**, levando o antebraço para perto do neutro;\n\n**bilateral em pronação acentuada**: derrotar pelo menos um lado.\n\n**O que não funciona**: **ressecar a ponte** óssea para devolver o movimento, com ou sem interposição de tecido, tem **recidiva** frequente e resultado ruim.\n\n**Na prova**: sinostose unilateral com antebraço em posição neutra = **não operar**.",
-  "correta": "Em posição neutra o antebraço é funcional, o outro lado compensa, e não há o que ganhar com cirurgia.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Sinostose radioulnar proximal: tipos de operações",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0308": {
@@ -4068,17 +4108,18 @@
   "conferido": false
  },
  "mao-0339": {
+  "conceito": "A deformidade de MADELUNG é um crescimento torto do rádio distal: a parte ulnar e palmar da fise para, o resto continua, e o rádio se curva, com a superfície articular inclinada para ulnar e palmar e a ulna saliente no dorso.\n\n**A causa, segundo o Green** (cap. 38). O distúrbio de crescimento se deve a uma combinação de **lesão óssea na porção ulnar da fise** do rádio distal com um **ligamento palmar anormal que prende o semilunar ao rádio, proximal à fise**: o **ligamento de VICKERS**.\n\n**O quadro.** **Geralmente bilateral**, torna-se **clinicamente aparente no início da adolescência**, com dor, deformidade ou ulna proeminente.\n\n**O tratamento.** Em crescimento, a **fisiólise com liberação do ligamento de VICKERS** pode reduzir a dor e melhorar gradualmente a deformidade. Na deformidade leve a moderada sem artrose da radioulnar distal, a **fisiólise com osteotomia em cúpula** é o procedimento mais comum. Na cirurgia, a reflexão ulnar do pronador quadrado expõe o ligamento, que é liberado da metáfise.\n\n**O nome.** O ligamento leva o nome de **VICKERS**, que o descreveu e propôs a sua liberação com a fisiólise. É ele que as provas pedem, às vezes como pergunta direta, às vezes ao contrário, perguntando a doença do ligamento.\n\n**O que a banca quis testar.** O epônimo do ligamento. O resumo Malformações congênitas da mão e do antebraço traz a seção.",
+  "correta": "**D: VICKERS.** O ligamento palmar anormal que prende o semilunar ao rádio, proximal à fise, é o ligamento de VICKERS (Green, cap. 38).",
   "incorretas": {
-   "A": "Salter dá nome à classificação das fraturas da fise e à osteotomia inominada do quadril.",
-   "B": "Bowels não descreveu nenhuma estrutura relacionada à deformidade de Madelung.",
-   "C": "Langer dá nome às linhas de tensão da pele e a uma displasia mesomélica, e não ao ligamento."
+   "A": "**SALTER nomeia a classificação das fraturas da fise.** Não descreveu o ligamento da deformidade de MADELUNG.",
+   "B": "**Não se relaciona à doença.** O ligamento espessado é o de VICKERS.",
+   "C": "**LANGER nomeia outra coisa.** A displasia mesomélica de LANGER e as linhas de LANGER da pele não são o ligamento da deformidade de MADELUNG."
   },
-  "conceito": "A **deformidade de Madelung** é uma falha de crescimento do **canto volar e ulnar da fise distal do rádio**. O rádio fica curto e curvo, a ulna fica saliente no dorso e a mão parece subluxada para volar. É típica de **meninas**, bilateral e aparece na adolescência. Em menina baixa com doença bilateral, pensar na **discondrosteose de Léri-Weill** (gene SHOX).\n\n**O ligamento de Vickers** é a estrutura **espessada** nessa doença. É uma banda fibrosa anormal que vai do **semilunar** até a **metáfise volar e ulnar do rádio**. No caminho, ela atravessa a fise e funciona como uma amarra que **freia o crescimento** daquele canto. Por isso, na criança que ainda cresce e tem dor ou deformidade progressiva, o tratamento é **ressecar o ligamento de Vickers** e liberar a fise (fisiólise).\n\n**Os epônimos que aparecem como distratores**:\n\n**Salter**: classificação das fraturas da fise (Salter-Harris) e osteotomia inominada do quadril;\n\n**Langer**: linhas de tensão da pele e uma forma de **displasia mesomélica** (que pode ter deformidade de Madelung, mas não dá nome ao ligamento);\n\n**Bowels** (ou Bowles): sem relação com esta deformidade.\n\n**Na prova**: ligamento espessado na deformidade de Madelung = **Vickers**.",
-  "correta": "O ligamento de Vickers, do semilunar à metáfise volar e ulnar do rádio, está espessado e trava o crescimento desse canto da fise.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deformidade de MADELUNG",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0340": {
@@ -4715,14 +4756,18 @@
   "conferido": false
  },
  "mao-0424": {
+  "conceito": "Nem toda união de dedos é sindactilia verdadeira. Na sequência de bandas de constrição, os dedos se formaram separados e depois foram colados por cima, na ponta.\n\n**O que o Green descreve** (cap. 36). A **sequência do anel de constrição** pode apresentar **sindactilia terminal**: as pontas dos dedos são unidas por uma ponte de partes moles (**acrossindactilia**), ou há sindactilia **fenestrada**, com membrana proximal e seios que atravessam a base (pseudossindactilia). As conexões são **descontínuas**. As pistas de que é banda e não simbraquidactilia: ausência de restos de unha nos dedos encurtados, presença de anéis de constrição e mão de tamanho simétrico.\n\n**Por que \"não é falha de formação\".** Os dedos chegaram a se formar e a se separar; a união vem de um evento posterior, de fora para dentro. É o oposto da sindactilia verdadeira, que é falha de apoptose, e da simbraquidactilia, que é falha de formação.\n\n**As outras afirmações.**\n- **Momento da cirurgia:** o Green separa a primeira e a quarta comissuras entre **3 e 6 meses** e a segunda e a terceira **depois dos 18 meses**; não há uma idade única ideal na segunda metade do primeiro ano.\n- **Radiografia suficiente:** o próprio capítulo mostra um caso em que a **ressonância** revelou uma interfalângica proximal compartilhada, decisiva para o plano. A radiografia nem sempre basta.\n- **Metaplasia cutânea e hiperplasia do subcutâneo:** não é o que o capítulo descreve; o problema típico é a **falta de pele** para cobrir os dois dedos separados.\n\n**O que a banca quis testar.** A diferença entre a acrossindactilia das bandas e as outras sindactilias. O resumo Malformações congênitas da mão e do antebraço traz a seção.",
+  "correta": "**B: na acrossindactilia, há associação com a síndrome de banda de constricção, não representando falha de formação.** A união terminal das pontas é uma apresentação da sequência do anel de constrição (Green, cap. 36).",
   "incorretas": {
-   "A": "A cirurgia de rotina é por volta de 12 a 18 meses; antes, só quando os dedos unidos têm tamanhos diferentes.",
-   "C": "No bebê, a radiografia não mostra o esqueleto cartilaginoso; para definir fusões, usam-se ultrassom ou ressonância.",
-   "D": "Cleland e Grayson são ligamentos ligados ao Dupuytren, e não à sindactilia."
+   "A": "**Não há idade única.** O Green separa a primeira e a quarta comissuras entre 3 e 6 meses e a segunda e a terceira depois dos 18 meses.",
+   "C": "**Nem sempre bastam.** O capítulo mostra um caso em que a ressonância revelou uma interfalângica proximal compartilhada, que mudou a decisão.",
+   "D": "**Não é o que o capítulo descreve.** O problema clássico da sindactilia é a falta de pele para cobrir os dedos separados, não metaplasia nem hiperplasia."
   },
-  "conceito": "**Sindactilia** é a união entre dedos vizinhos, por falha na separação dos dedos durante a formação da mão (que acontece por morte programada das células entre os raios digitais, entre a 6ª e a 8ª semana).\n\n**A acrossindactilia é diferente**: os dedos **chegam a se formar e se separar**, mas depois são unidos na ponta por **bandas de constrição** (síndrome da banda amniótica). Por isso é classificada como **disrupção**, e não como falha de formação. A pista é uma **fenestra**, um pequeno túnel de pele na base, que mostra onde a comissura original existia.\n\n**As outras afirmações da questão**:\n\n**idade da cirurgia**: a rotina é por volta de **12 a 18 meses**. Opera-se mais cedo só quando os dedos unidos têm **tamanhos diferentes** (polegar com indicador, anelar com mínimo), porque o menor puxa o maior e deforma;\n\n**exames**: no bebê, boa parte do esqueleto ainda é **cartilagem**, e a radiografia não mostra fusões cartilaginosas. Quando a anatomia importa, usa-se **ultrassom ou ressonância**;\n\n**ligamentos de Cleland e Grayson**: são estruturas da fáscia digital envolvidas no **Dupuytren**, não na sindactilia.\n\n**A cirurgia** separa um lado do dedo por vez, com retalho dorsal para refazer a comissura e enxerto de pele total.\n\n**Na prova**: acrossindactilia = **bandas de constrição**, não falha de formação.",
-  "correta": "Na acrossindactilia os dedos se formaram e foram unidos depois pelas bandas de constrição: é uma disrupção, e não uma falha de formação.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Sindactilia: sequência do anel de constrição e método preferido dos autores",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0425": {
@@ -4918,17 +4963,18 @@
   "conferido": false
  },
  "mao-0439": {
+  "conceito": "Sem mão, o antebraço ainda tem dois ossos. O KRUKENBERG transforma esses dois ossos numa pinça, com sensibilidade, algo que nenhuma prótese oferece.\n\n**O procedimento, no Green** (cap. 38). O **rádio e a ulna são separados**, e os músculos são reinseridos de modo que o **rádio aperte contra a ulna**. É indicado **raramente**, por exemplo numa **criança cega** com deficiência abaixo do cotovelo e **antebraço longo**, para quem a sensibilidade da pinça é preciosa. Há poucos dados publicados sobre ganho funcional, e a aparência do antebraço de KRUKENBERG é muito diferente do normal.\n\n**O contexto.** A deficiência transversal é quase sempre unilateral e esporádica, mais comum no antebraço proximal; na classificação de SWANSON, é uma falha de formação transversal. **Observação e apoio emocional** são os pilares do tratamento; o alongamento do antebraço tem alta taxa de complicações e não melhora a função.\n\n**E o FOUCHER?** Não é o procedimento de separação dos ossos do antebraço; a pinça entre rádio e ulna é o KRUKENBERG.\n\n**O que a banca quis testar.** O nome do procedimento e o que ele faz com os ossos. O resumo Malformações congênitas da mão e do antebraço traz a deficiência transversal.",
+  "correta": "**D: KRUKENBERG, com a separação do rádio e da ulna.** O rádio e a ulna são separados e os músculos reinseridos para formar uma pinça (Green, cap. 38).",
   "incorretas": {
-   "A": "Foucher é um retalho de pele para o polegar, e fundir rádio e ulna eliminaria qualquer pinça.",
-   "B": "O nome está certo, mas a técnica separa rádio e ulna; fundi-los eliminaria a pinça.",
-   "C": "A separação está certa, mas a técnica é de Krukenberg, e não de Foucher."
+   "A": "**Nome e técnica errados.** A pinça entre os ossos do antebraço é o KRUKENBERG, e ela depende de separar os ossos.",
+   "B": "**Nome certo, técnica invertida.** O KRUKENBERG separa o rádio e a ulna; fundi-los tiraria a pinça.",
+   "C": "**Técnica certa, nome errado.** A separação do rádio e da ulna para formar uma pinça é o KRUKENBERG."
   },
-  "conceito": "Na **agenesia do punho e da mão** (ausência congênita da mão), a criança fica com o antebraço terminando num coto. Próteses ajudam, mas não têm **sensibilidade**.\n\n**A operação de Krukenberg** transforma o antebraço numa **pinça**: o **rádio** e a **ulna** são **separados** em dois ramos, cada um revestido de pele e músculo. Os músculos do antebraço passam a **abrir e fechar** os dois ramos, como os dedos de uma pinça.\n\n**A grande vantagem**: é uma pinça **com sensibilidade**. A pessoa sente o que segura, consegue usar sem olhar e no escuro, e não precisa de manutenção. Por isso é especialmente indicada para quem não tem as duas mãos ou para pessoas **cegas**, que dependem do tato.\n\n**Requisitos**: coto com cerca de 10 cm a partir do olécrano, cotovelo que dobre bem e boa preparação psicológica da família e do paciente.\n\n**A objeção principal** é **estética**: a aparência do antebraço dividido exige uma conversa franca antes.\n\n**Foucher** não é esta operação: ele dá nome ao retalho *kite* (da 1ª artéria metacarpal dorsal), usado para cobrir o polegar.\n\n**Na prova**: agenesia da mão = **Krukenberg**, com **separação** do rádio e da ulna.",
-  "correta": "A operação de Krukenberg separa rádio e ulna em dois ramos que funcionam como uma pinça com sensibilidade.",
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 29"
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deficiência transversal (procedimento de KRUKENBERG)",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0440": {
@@ -5680,14 +5726,18 @@
   "conferido": false
  },
  "mao-0489": {
+  "conceito": "A deformidade de MADELUNG é um crescimento torto do rádio distal: a parte ulnar e palmar da fise para, o resto continua, e o rádio se curva, com a superfície articular inclinada para ulnar e palmar e a ulna saliente no dorso.\n\n**A causa, segundo o Green** (cap. 38). O distúrbio de crescimento se deve a uma combinação de **lesão óssea na porção ulnar da fise** do rádio distal com um **ligamento palmar anormal que prende o semilunar ao rádio, proximal à fise**: o **ligamento de VICKERS**.\n\n**O quadro.** **Geralmente bilateral**, torna-se **clinicamente aparente no início da adolescência**, com dor, deformidade ou ulna proeminente.\n\n**O tratamento.** Em crescimento, a **fisiólise com liberação do ligamento de VICKERS** pode reduzir a dor e melhorar gradualmente a deformidade. Na deformidade leve a moderada sem artrose da radioulnar distal, a **fisiólise com osteotomia em cúpula** é o procedimento mais comum. Na cirurgia, a reflexão ulnar do pronador quadrado expõe o ligamento, que é liberado da metáfise.\n\n**Por que só na adolescência.** A deformidade é de **crescimento**. Ela precisa de anos de crescimento assimétrico da fise para aparecer, e o estirão do início da adolescência é quando a curva do rádio e a saliência da ulna ficam evidentes. Antes disso, o punho pode parecer normal.\n\n**O que a banca quis testar.** A idade em que a doença é reconhecida. O resumo Malformações congênitas da mão e do antebraço traz a seção.",
+  "correta": "**D: na adolescência.** O Green descreve a deformidade como clinicamente aparente no início da adolescência (cap. 38).",
   "incorretas": {
-   "A": "No nascimento a fise ainda não produziu crescimento suficiente para revelar a deformidade.",
-   "B": "No lactente o crescimento diferencial ainda é pequeno demais.",
-   "C": "Na infância as alterações, quando existem, são discretas; o reconhecimento vem com o estirão."
+   "A": "**Cedo demais.** A deformidade é de crescimento e não aparece ao nascimento.",
+   "B": "**Também cedo demais.** O crescimento assimétrico ainda não teve tempo de deformar o rádio.",
+   "C": "**Ainda antes do estirão.** A deformidade se torna aparente no início da adolescência."
   },
-  "conceito": "A **deformidade de Madelung** é um crescimento desigual da **fise distal do rádio**: a porção **volar e ulnar** cresce menos, muitas vezes presa pelo **ligamento de Vickers** (uma banda que vai do semilunar ao rádio). O resto da fise segue crescendo, e o rádio se curva.\n\n**Quando aparece**: a diferença só fica visível quando a fise trabalha muito, no **estirão da adolescência** (segunda década). Antes disso, é discreta e sem sintomas.\n\n**O perfil**: **meninas**, em geral **bilateral** e às vezes assimétrica. Se a menina for de baixa estatura, pensar em **discondrosteose de Léri-Weill** (gene **SHOX**) e em Turner.\n\n**O que se vê**:\n\n**clínica**: ulna proeminente no dorso, mão desviada para volar, supinação e extensão limitadas;\n\n**radiografia**: rádio curto e curvo, superfície articular inclinada demais para ulnar e para volar, carpo em **cunha** com o semilunar afundado.\n\n**O tratamento**: observar se não houver sintomas. Com dor ou deformidade progressiva: soltar o ligamento de Vickers com fisiólise (no jovem), osteotomia do rádio em cúpula e encurtamento da ulna.\n\n**Na prova**: Madelung é reconhecido na **adolescência**, no estirão.",
-  "correta": "A deformidade fica evidente na adolescência, quando o estirão acentua o crescimento desigual da fise distal do rádio.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deformidade de MADELUNG",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0490": {
@@ -6024,14 +6074,18 @@
   "conferido": false
  },
  "mao-0516": {
+  "conceito": "A deformidade de KIRNER é uma curva pequena, em lugar muito específico: a ponta do dedo mínimo, que se dobra para a palma e para o lado radial.\n\n**A descrição do Green** (cap. 36). A deformidade de KIRNER é a **curvatura palmar e radial progressiva da falange distal**, que **geralmente afeta o dedo mínimo**. Foi descrita por KIRNER em 1927, na literatura alemã, e depois por THOMAS em 1936. Há relatos de causa adquirida, como osteocondrite da epífise ou epifisiólise focal com angulação pela tração do flexor forte, mas o consenso é de causa **congênita**, pela epidemiologia. Discute-se uma inserção distal anômala do flexor profundo.\n\n**Como não confundir com as vizinhas.**\n- **Clinodactilia:** desvio lateral do dedo, em geral do mínimo, pela falange média.\n- **Camptodactilia:** contratura em flexão da interfalângica proximal.\n- **Braquidactilia:** falange média curta.\n- **KIRNER:** falange **distal** do **mínimo**, curva **palmar e radial**.\n\n**O que a banca quis testar.** A localização da deformidade de KIRNER. O resumo Malformações congênitas da mão e do antebraço traz as deformidades dos dedos.",
+  "correta": "**B: falange distal do dedo mínimo da mão.** É a curvatura palmar e radial progressiva da falange distal, em geral do mínimo (Green, cap. 36).",
   "incorretas": {
-   "A": "A cabeça do terceiro metacarpo não é sede da deformidade de Kirner.",
-   "C": "A metacarpofalângica do polegar não tem relação com Kirner.",
-   "D": "A interfalangiana proximal lembra a camptodactilia, que também acomete o mínimo, não o indicador."
+   "A": "**Osso errado.** A deformidade de KIRNER não acomete o metacarpo.",
+   "C": "**Dedo errado.** O polegar não é o dedo da deformidade de KIRNER.",
+   "D": "**Articulação e dedo errados.** A flexão da interfalângica proximal lembra a camptodactilia, e o dedo típico de KIRNER é o mínimo."
   },
-  "conceito": "A **deformidade de Kirner** é uma curvatura da **falange distal do dedo mínimo** para **volar e radial**, com aspecto de **bico** ou garra. A causa é um distúrbio da **fise** da falange distal.\n\n**O perfil**: começa entre **8 e 12 anos**, mais em **meninas**, em geral **bilateral** e **indolor**.\n\n**O tratamento**: quase sempre **observação**. Nos casos graves, por estética, fazem-se osteotomias da falange distal.\n\n**Os diferenciais**: fratura fisária da falange distal e lesão por congelamento.\n\n**As outras deformidades do mínimo**, que costumam ser confundidas:\n\n**clinodactilia**: desvio no plano **coronal** (para radial), pela **falange média** em forma de delta;\n\n**camptodactilia**: contratura em **flexão da IFP**, por lumbrical ou flexor superficial anômalo;\n\n**falange delta**: falange em trapézio, com a fise em C, que causa desvio angular.\n\n**Na prova**: Kirner = **falange distal do dedo mínimo**.",
-  "correta": "A deformidade de Kirner é a curvatura volar e radial da falange distal do dedo mínimo.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Deformidade de KIRNER (Fig. 36.91)",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0517": {
@@ -6149,14 +6203,18 @@
   "conferido": false
  },
  "mao-0524": {
+  "conceito": "Na mão de APERT, tudo está fundido, mas nem tudo tem a mesma pressa. A primeira cirurgia mira a função mais valiosa: separar o polegar para que a criança consiga pinçar.\n\n**O que o Green descreve** (cap. 36). Os problemas da mão de APERT incluem sindactilia (**inclusive a da primeira comissura**), sinoníquia, sinfalangismo ou rigidez, braquidactilia, clinodactilia do polegar e sinostoses intermetacarpais. A liberação do polegar **converte a mão na configuração plana de pá** e **permite o crescimento livre dos dedos centrais**. A ordem e o número das liberações seguintes dependem do tipo e da preferência do cirurgião.\n\n**Antes da mão, o crânio.** As anomalias craniofaciais são tratadas primeiro pelas equipes de neurocirurgia e bucomaxilofacial, em geral por volta dos **3 meses**, o que também deixa a anestesia mais segura.\n\n**E as outras opções?**\n- **Ressecção de um raio:** no tipo III, pode-se ressecar o raio do indicador, do médio ou do anelar; ressecar o indicador, sobretudo se desviado, **alarga a primeira comissura**. É uma possibilidade em casos selecionados, não o primeiro passo.\n- **Policização do indicador:** é a reconstrução do polegar ausente ou muito hipoplásico; na mão de APERT o polegar existe, curto e desviado.\n\n**O que a banca quis testar.** A prioridade do tratamento. O resumo Malformações congênitas da mão e do antebraço traz a mão de APERT.",
+  "correta": "**A: abertura da primeira comissura.** Liberar o polegar transforma a mão em pá e permite o crescimento dos dedos centrais (Green, cap. 36).",
   "incorretas": {
-   "B": "O polegar existe, só está preso; a policização é para o polegar ausente ou muito hipoplásico.",
-   "C": "Amputar o terceiro dedo é medida de exceção em casos extremos, nunca o primeiro passo.",
-   "D": "Ressecar um dedo central também é exceção e não é o primeiro procedimento."
+   "B": "**É reconstrução de polegar ausente.** Na mão de APERT o polegar existe; o primeiro passo é libertá-lo.",
+   "C": "**Não é o primeiro procedimento.** A ressecção de raio pode entrar no tipo III, em casos selecionados, depois da liberação do polegar.",
+   "D": "**Mesma lógica.** Ressecar um dedo central é uma opção posterior para casos selecionados, não a primeira cirurgia."
   },
-  "conceito": "Na **síndrome de Apert** (mutação do FGFR2), a mão tem **sindactilia complexa**: os dedos estão fundidos por pele e muitas vezes por osso, com unhas compartilhadas. A classificação de **Upton** vai da mão em pá (I), passando pela mão em colher (II, a mais comum), até a mão em botão de rosa (III, com o polegar também fundido).\n\n**A prioridade é a pinça**: sem um **polegar livre**, a mão não pega nada. Por isso, o **primeiro** procedimento é a **abertura da 1ª comissura**, soltando o polegar (com retalhos e enxerto de pele). Junto, costuma-se liberar o **4º espaço**, nas bordas da mão.\n\n**A sequência**: depois das bordas, liberam-se os espaços **centrais**, em vários tempos, até por volta de 3 a 4 anos. A regra é **nunca liberar os dois lados de um mesmo dedo** no mesmo tempo, para não comprometer a irrigação.\n\n**O que não é o primeiro passo**: o polegar **existe**, só está preso, então a **policização** não faz sentido; e **amputar ou ressecar** um dedo central é medida de exceção, em mãos com dedos demais fundidos para separar com segurança, nunca a primeira cirurgia.\n\n**Na prova**: primeiro procedimento na mão de Apert = **abrir a 1ª comissura**.",
-  "correta": "A abertura da 1ª comissura solta o polegar e cria a pinça, que é a prioridade funcional na mão de Apert.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Síndrome de APERT",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0525": {
@@ -6636,14 +6694,18 @@
   "geradoEm": "2026-09-13"
  },
  "mao-0562": {
+  "conceito": "Na mão torta radial, o cirurgião que procura o nervo radial no punho não o encontra. O que aparece no lado radial, grosso e superficial, é o mediano, e é ele que corre risco.\n\n**A anatomia, segundo o Green** (cap. 38):\n- O **nervo radial** geralmente **está ausente abaixo do cotovelo**.\n- A **artéria radial** em geral também falta.\n- O **nervo mediano está sempre presente** e é **muitas vezes a estrutura mais proeminente do lado radial do punho**.\n\n**Por que isso importa.** A incisão da centralização e das reconstruções de partes moles passa pelo lado radial do punho, onde o mediano assume o lugar que seria do ramo superficial do radial. Um cirurgião que confunda a corda tensa do lado radial com uma banda fibrosa pode seccioná-lo. A regra prática: na mão torta radial, toda estrutura grossa do lado radial é o mediano até prova em contrário.\n\n**Por que as outras não.** O **musculocutâneo** termina no braço e no antebraço lateral, longe do campo do punho; o **radial** e o seu ramo **interósseo posterior** costumam estar ausentes ou atrofiados abaixo do cotovelo.\n\n**O que a banca quis testar.** A anatomia alterada da deficiência radial. O resumo Malformações congênitas da mão e do antebraço traz a seção.",
+  "correta": "**A: mediano.** O nervo mediano está sempre presente e é muitas vezes a estrutura mais proeminente do lado radial do punho, onde a cirurgia acontece (Green, cap. 38).",
   "incorretas": {
-   "B": "O musculocutâneo termina no antebraço como nervo cutâneo lateral e não está no campo cirúrgico do punho.",
-   "C": "O nervo radial costuma terminar acima do cotovelo nessa malformação.",
-   "D": "O interósseo posterior é ramo do radial, que costuma estar ausente no antebraço distal."
+   "B": "**Fica longe do campo.** O musculocutâneo não chega ao punho.",
+   "C": "**Costuma faltar.** O nervo radial geralmente está ausente abaixo do cotovelo na deficiência radial.",
+   "D": "**Também costuma faltar.** O interósseo posterior é ramo do radial, ausente ou hipoplásico abaixo do cotovelo."
   },
-  "conceito": "Na **mão torta radial**, todo o lado radial do membro se forma mal. O rádio é curto ou ausente, e as partes moles do lado radial também faltam ou são anômalas: músculos, a artéria radial e, com frequência, o **nervo radial superficial**.\n\n**O mediano assume o lado radial**: o **nervo radial** costuma **terminar acima do cotovelo**. O **mediano** então faz o papel dele: inerva a sensibilidade do lado radial da mão e corre **superficial**, desviado para a **borda radial do punho**, logo abaixo da pele.\n\n**Por que isso importa na cirurgia**: a **centralização** (ou radialização) é feita exatamente nessa região. Uma incisão no lado radial do punho, como seria natural, encontra o mediano logo abaixo da pele, fora do lugar habitual. Ele é o nervo de **maior risco**.\n\n**Outros cuidados**: soltar as partes moles retraídas do lado radial, avaliar se o cotovelo dobra (cotovelo rígido em extensão contraindica a centralização) e investigar as síndromes associadas (Fanconi, Holt-Oram, TAR, VACTERL) antes de operar.\n\n**Na prova**: nervo em risco na correção da mão torta radial = **mediano**, superficial e radial no punho.",
-  "correta": "O mediano substitui o radial ausente, fica superficial e desviado para o lado radial do punho, bem no campo da centralização.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deficiência radial longitudinal: anatomia pertinente",
+   "Biblioteca OrtoQuestões, resumo Malformações congênitas da mão e do antebraço (green8-malformacoes-congenitas)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0563": {
@@ -41579,6 +41641,156 @@
    "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28, Compressão do nervo ulnar no canal de Guyon, p. 1103"
   ],
   "geradoEm": "2026-10-29",
+  "conferido": false
+ },
+ "mao-2582": {
+  "conceito": "Toda malformação da mão começa numa conversa entre três centros de sinalização do broto do membro. Quando um deles fala demais ou de menos, o resultado aparece no recém-nascido.\n\n**Os três centros, segundo o Green** (cap. 35):\n\n| Centro | Eixo que comanda | Exemplo de falha |\n|---|---|---|\n| **Crista ectodérmica apical (AER)** | **proximodistal** (do ombro aos dedos) | deficiências transversas |\n| **Zona de atividade polarizadora (ZPA)** | **anteroposterior, isto é, radioulnar** | duplicações, polidactilia |\n| **Centro Wnt** | **dorsoventral** (dorso e palma) | |\n\n**A experiência que explica a mão em espelho.** O transplante da **ZPA**, ou da proteína **sonic hedgehog** que ela produz, para o lado anterior do broto causa **duplicação em imagem espelhada do lado ulnar** do membro. É o modelo da mão espelhada de sete dedos que o capítulo ilustra. Por isso as provas ligam a ZPA à **polidactilia**.\n\n**O relógio.** A formação do broto começa cerca de **4 semanas** após o início da gestação e está completa em **8 semanas**. A **maioria das anomalias congênitas do membro superior ocorre nesse período de 4 a 8 semanas**, de desenvolvimento rápido e frágil. Depois de 8 semanas começa o **período fetal**, de diferenciação, maturação e crescimento das estruturas que já existem. Aos 53 dias os dedos já estão separados.\n\n**A base celular.** O mesoderma da placa lateral forma osso, cartilagem e tendão; o mesoderma somático forma músculos, nervos e vasos.\n\n**Por que esta questão foi criada.** É uma gêmea das questões do TARO sobre a ZPA e sobre o período em que as malformações acontecem.\n\n> **Na prova:** **AER** = proximodistal; **ZPA** (sonic hedgehog) = **radioulnar**, duplicação **ulnar em espelho**; **Wnt** = dorsoventral; anomalias = **4 a 8 semanas**.",
+  "correta": "**C: a crista ectodérmica apical governa o eixo proximodistal, a zona de atividade polarizadora governa o eixo anteroposterior (radioulnar) e o centro Wnt, o dorsoventral; o transplante da zona de atividade polarizadora ou da proteína sonic hedgehog duplica em espelho o lado ulnar.** É o que o Green descreve (cap. 35).",
+  "incorretas": {
+   "A": "**Troca os centros.** O eixo radioulnar é da zona de atividade polarizadora; a crista ectodérmica apical comanda o eixo proximodistal.",
+   "B": "**Erra o relógio.** O broto começa por volta da 4ª semana e se completa em 8 semanas, antes do período fetal.",
+   "D": "**É o contrário.** A maioria das anomalias ocorre entre a 4ª e a 8ª semana; depois disso, o período fetal é de maturação e crescimento."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 35 (Embriologia da extremidade superior, Scott H. KOZIN), centros de sinalização e pontos críticos"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2583": {
+  "conceito": "Até a sexta semana, a mão do embrião é uma pá. Os dedos aparecem porque as células entre eles morrem de forma programada. A sindactilia é essa morte que não aconteceu.\n\n**O mecanismo, no Green** (cap. 36). A sindactilia é uma **falha da apoptose do mesênquima interdigital**. Na síndrome de APERT, a sinalização alterada dos fatores de crescimento de fibroblastos pode negar a apoptose mediada por BMP, e o resultado é a sindactilia.\n\n**Os números.**\n- Cerca de **1 em 2.000** nascidos vivos; uma das anomalias congênitas mais comuns da mão.\n- **Bilateral em 50%**; **2 homens para 1 mulher**; 10 vezes mais frequente em brancos que em negros.\n- Em cerca de **30%** é hereditária, autossômica dominante com expressividade variável e penetrância incompleta.\n- **Na forma isolada:** **terceira comissura (médio e anelar) 55%**, quarta (anelar e mínimo) 25%, segunda (indicador e médio) 15%, primeira (polegar e indicador) 5%. Na sindrômica, a distribuição é mais igual.\n\n**Como se classifica.**\n- **Simples:** só pele e partes moles.\n- **Complexa:** com **união óssea**, mais comum entre os **tufos das falanges distais**.\n- **Complicada:** com tecido ósseo desorganizado ligando os dedos, típica das formas sindrômicas.\n- **Completa ou incompleta:** conforme a membrana vá ou não até a ponta.\n\n**Associações.** Mão fendida, deficiência ulnar, simbraquidactilia, sinpolidactilia e síndromes como POLAND (mão hipoplásica com simbraquidactilia e hipoplasia do peitoral).\n\n**Por que esta questão foi criada.** É uma gêmea das questões do TARO sobre a comissura mais acometida e o que se encontra na sindactilia simples.\n\n> **Na prova:** **falha de apoptose**; **3ª comissura (55%)**; **bilateral 50%**; **homens 2 : 1**; complexa = fusão dos **tufos distais**.",
+  "correta": "**A: é uma falha da apoptose do mesênquima interdigital; na forma isolada, a terceira comissura é a mais acometida (55%), seguida da quarta (25%), da segunda (15%) e da primeira (5%); é bilateral em metade dos casos.** São os dados do Green (cap. 36).",
+  "incorretas": {
+   "B": "**Inverte o sexo.** O Green descreve proporção de 2 homens para 1 mulher.",
+   "C": "**Erra o local.** Na sindactilia complexa, a união óssea é mais comum entre os tufos das falanges distais.",
+   "D": "**É a menos acometida.** Na forma isolada, a primeira comissura responde por apenas 5%; a terceira é a mais comum."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Sindactilia: epidemiologia e patoanatomia (Fig. 36.2)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2584": {
+  "conceito": "Por que separar algumas comissuras cedo e outras mais tarde? Porque o problema não é o mesmo. Quando dedos de comprimentos muito diferentes estão presos, o maior é puxado pelo menor durante o crescimento e desvia.\n\n**O método preferido dos autores do Green** (cap. 36):\n- **Primeira e quarta comissuras:** separadas **entre 3 e 6 meses**. São as que unem dedos de **comprimentos diferentes** (polegar e indicador; anelar e mínimo), e a união precoce leva a **desvio angular e rotacional** com o crescimento.\n- **Segunda e terceira comissuras:** separadas **depois dos 18 meses**. Unem dedos de comprimento parecido, e esperar facilita a cirurgia e dá resultados mais previsíveis.\n\n**A técnica.** Retalhos de pele combinados com **enxertos de pele de espessura total**, conforme CRONIN (1943). Na primeira comissura, às vezes é preciso ligar a artéria digital radial própria do indicador para alargar o espaço.\n\n**As complicações.** As agudas são incomuns: problemas vasculares por fechamento apertado, resolvidos soltando pontos e enxertando. As tardias são comuns:\n- **web creep** (a comissura sobe): até **8%** com técnicas clássicas de enxerto, e outros **42%** com espessamento da membrana sem creep;\n- contraturas, desvios e deformidades da unha;\n- **queloide**, frequente nos dedos separados que também têm **macrodactilia**, prevenível com **metotrexato**.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre o momento ideal da cirurgia de sindactilia.\n\n> **Na prova:** **1ª e 4ª** = **3 a 6 meses** (comprimentos diferentes); **2ª e 3ª** = **após 18 meses**; web creep até **8%**; queloide na **macrodactilia**.",
+  "correta": "**D: a primeira e a quarta comissuras são separadas entre 3 e 6 meses, e a segunda e a terceira depois dos 18 meses; com enxertos clássicos, o web creep chega a 8%, e o queloide é comum nos dedos com macrodactilia.** É o método preferido dos autores do Green (cap. 36).",
+  "incorretas": {
+   "A": "**Cedo demais para todas.** Só a primeira e a quarta comissuras são separadas cedo, entre 3 e 6 meses; a segunda e a terceira esperam até depois dos 18 meses.",
+   "B": "**Inverte as comissuras.** A terceira une dedos de comprimento parecido e é separada depois dos 18 meses.",
+   "C": "**Subestima.** O Green relata web creep em até 8% com técnicas clássicas de enxerto, e espessamento da membrana em outros 42%."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Sindactilia: método preferido dos autores e complicações"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2585": {
+  "conceito": "A mão de APERT é a sindactilia no seu grau máximo: dedos fundidos em bloco, unhas unidas, articulações rígidas e um polegar desviado. UPTON organizou essas mãos em três tipos, e as provas pedem a forma de cada um.\n\n**A classificação, no Green** (cap. 36, Tabela 36.1). Baseia-se no **envolvimento da primeira comissura** e na **aparência da massa central**:\n\n| Tipo | Forma | Primeira comissura e massa central |\n|---|---|---|\n| **I** | **pá** | massa digital plana no plano palmar, boas metacarpofalângicas, grau variável de sinfalangismo |\n| **II** | **colher ou luva** | massa com concavidade palmar, metacarpos abertos e pontas firmemente fundidas, com sinoníquia central |\n| **III** | **casco ou botão de rosa** | **polegar incorporado** à massa, bem côncava, com sinoníquia dos dedos |\n\n**Os problemas a resolver.** O Green lista sindactilia (incluindo a primeira comissura), **sinoníquia**, **sinfalangismo** ou rigidez, **braquidactilia**, **clinodactilia do polegar** e **sinostoses intermetacarpais** pequenas (tipos II e III). Há também displasia e rigidez de ombro e cotovelo, que em geral não precisam de cirurgia.\n\n**A ordem.** As anomalias **craniofaciais** são tratadas antes pelas equipes de neurocirurgia e bucomaxilofacial, em geral **por volta dos 3 meses**, o que também torna a anestesia mais segura. Na mão, liberar o polegar transforma a mão na configuração plana de pá e deixa os dedos centrais crescerem. No tipo III, pode-se ressecar um raio (indicador, médio ou anelar); ressecar o **indicador**, sobretudo se desviado, **alarga a primeira comissura**.\n\n**Por que esta questão foi criada.** É uma gêmea das questões do TARO sobre a forma do tipo II de UPTON e o primeiro procedimento na mão de APERT.\n\n> **Na prova:** UPTON **I = pá**, **II = colher/luva**, **III = casco/botão de rosa**; crânio primeiro (**~3 meses**); na mão, a **primeira comissura** abre o caminho.",
+  "correta": "**B: a classificação considera a primeira comissura e a massa central: tipo I em pá, tipo II em colher ou luva, tipo III em casco ou botão de rosa; as anomalias craniofaciais são abordadas antes, por volta dos 3 meses.** É a descrição do Green (cap. 36, Tabela 36.1).",
+  "incorretas": {
+   "A": "**Troca os tipos.** A mão em pá é o tipo I; o tipo III é a mão em casco ou botão de rosa, com o polegar incluído na massa.",
+   "C": "**Erra os tipos.** O Green associa as sinostoses intermetacarpais pequenas aos tipos II e III.",
+   "D": "**Pode ser indicada.** No tipo III, o Green admite ressecar o raio do indicador, do médio ou do anelar; o do indicador alarga a primeira comissura."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Síndrome de APERT (Tabela 36.1)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2586": {
+  "conceito": "Na mão torta radial falta, em graus variados, tudo o que fica do lado do polegar: rádio, carpo radial, polegar, músculos, a artéria radial e o nervo radial abaixo do cotovelo. O que sobra do lado radial muda a anatomia que o cirurgião encontra.\n\n**Epidemiologia, no Green** (cap. 38). É incomum, mas é o **tipo mais comum de deficiência longitudinal congênita** (cerca de 1 em 5.000 nascidos vivos num estudo finlandês). É **muitas vezes bilateral e assimétrica**. A avaliação inclui VACTERL, TAR (trombocitopenia com rádio ausente), HOLT-ORAM e anemia de FANCONI.\n\n**A classificação.** BAYNE e KLUG dividiram a deficiência em **quatro tipos pela gravidade radiográfica do rádio** (de rádio curto até ausente); JAMES e colaboradores a modificaram para incluir deficiências do polegar ou do carpo com rádio de comprimento normal (Tabela 38.2).\n\n**A anatomia que importa na cirurgia.**\n- O **nervo radial** geralmente **falta abaixo do cotovelo**; a **artéria radial** em geral também.\n- O **nervo mediano está sempre presente** e é **muitas vezes a estrutura mais proeminente do lado radial do punho**. É o nervo em risco na dissecção.\n\n**Quando não centralizar.** Algumas crianças têm **contratura em extensão do cotovelo**. Nesse caso, a **centralização é contraindicada**, porque o **desvio radial do punho é necessário para a mão alcançar o rosto**. Corrigir o punho tiraria a única forma de a criança comer e se cuidar.\n\n**O debate atual.** As complicações a longo prazo da centralização formal (recidiva, rigidez, lesão da fise ulnar) levaram alguns cirurgiões a preferir a reconstrução de partes moles com retalho bilobado e distração prévia.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre a contraindicação à centralização e o nervo em risco.\n\n> **Na prova:** a **mais comum** das longitudinais; **bilateral e assimétrica**; **mediano** = sempre presente, proeminente no lado radial; **cotovelo rígido em extensão** = **não centralizar**.",
+  "correta": "**C: é o tipo mais comum de deficiência longitudinal, muitas vezes bilateral e assimétrica; o nervo mediano está sempre presente e é muitas vezes a estrutura mais proeminente do lado radial do punho; na contratura em extensão do cotovelo, a centralização é contraindicada.** É a descrição do Green (cap. 38).",
+  "incorretas": {
+   "A": "**É o contrário.** A deficiência radial é o tipo mais comum de deficiência longitudinal congênita.",
+   "B": "**Troca os nervos.** O nervo radial geralmente falta abaixo do cotovelo; quem fica proeminente no lado radial do punho é o mediano.",
+   "D": "**Erra a base.** BAYNE e KLUG classificaram pela gravidade radiográfica da deficiência do rádio; a modificação de JAMES acrescentou os casos com rádio normal."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deficiência radial longitudinal: avaliação e anatomia pertinente (Tabela 38.2)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2587": {
+  "conceito": "A criança com sinostose radioulnar raramente reclama de dor. Os pais percebem que ela pega o prato ou a moeda de um jeito estranho, compensando com o ombro e o punho. A decisão cirúrgica depende de quanto a posição fixa atrapalha.\n\n**O que é, no Green** (cap. 38). A sinostose radioulnar proximal congênita é uma **falha na separação pré-natal** do rádio e da ulna. É **quase sempre proximal**. Começa cartilaginosa e só aparece na radiografia quando ossifica. Associa-se a APERT, artrogripose, síndrome alcoólica fetal e KLINEFELTER. As crianças costumam ser vistas **entre 2 e 6 anos**, com ausência indolor de rotação, antebraço fixo em **pronação** (mais comum) ou supinação e leve contratura em flexão do cotovelo.\n\n**A classificação de CLEARY e OMER** (Tabela 38.6): 1, sem osso visível e cabeça reduzida; 2, sinostose óssea e cabeça reduzida; 3, cabeça hipoplásica luxada para posterior; 4, sinostose curta com cabeça luxada para anterior, em cogumelo.\n\n**Por que não ressecar.** A ressecção da sinostose para devolver a rotação **falhou em 22 de 23 antebraços** numa revisão; a interposição de retalho fascial pode evitar a recidiva, mas a rotação ganha é pequena.\n\n**Quando operar e como.** A **pronação extrema fixa (mais de 60 graus)** que atrapalha a função indica **osteotomia derrotatória**:\n- **unilateral:** antebraço em **0 a 15 graus de pronação**;\n- **bilateral:** dominante em **10 a 20 graus de pronação**, não dominante em **rotação neutra**.\n\n**As complicações.** Uma mudança grande de rotação pode causar **tração do interósseo posterior** ou **síndrome compartimental**; daí a internação com elevação e vigilância, a ressecção de 5 mm de osso e a fasciotomia profilática. As séries relatam síndrome compartimental, comprometimento vascular, paralisia do radial e perda de correção.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre a conduta na sinostose unilateral e a complicação da osteotomia derrotatória.\n\n> **Na prova:** **não ressecar**; osteotomia se **pronação fixa > 60°** com prejuízo; unilateral **0 a 15° de pronação**; complicação = **compartimental** e **interósseo posterior**.",
+  "correta": "**A: a pronação fixa acima de 60 graus que atrapalha a função indica osteotomia derrotatória, colocando o antebraço unilateral entre 0 e 15 graus de pronação; a ressecção da sinostose costuma falhar, e as complicações incluem síndrome compartimental e lesão do interósseo posterior.** É a conduta descrita no Green (cap. 38).",
+  "incorretas": {
+   "B": "**É o que costuma falhar.** A ressecção com mobilização falhou em 22 de 23 antebraços numa revisão citada pelo Green.",
+   "C": "**Erra a posição.** No caso bilateral, o dominante fica em 10 a 20 graus de pronação e o não dominante em rotação neutra.",
+   "D": "**É quase sempre proximal.** O Green descreve a sinostose congênita como quase sempre proximal."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Sinostose radioulnar proximal (Tabela 38.6)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2588": {
+  "conceito": "Na deformidade de MADELUNG, a parte ulnar e palmar da fise do rádio distal para de crescer, enquanto o resto continua. O rádio se curva, a superfície articular inclina para ulnar e palmar e a ulna fica saliente no dorso.\n\n**O quadro, no Green** (cap. 38). A deformidade de MADELUNG **geralmente é bilateral** e se torna **clinicamente aparente no início da adolescência**. A queixa pode ser dor, deformidade ou ulna proeminente, como na adolescente de 17 anos ilustrada no capítulo.\n\n**O culpado anatômico.** O Green atribui o distúrbio de crescimento a uma combinação de **lesão óssea na porção ulnar da fise** do rádio distal com um **ligamento palmar anormal que prende o semilunar ao rádio, proximal à fise**: o **ligamento de VICKERS**. Na cirurgia, a reflexão ulnar do pronador quadrado expõe o ligamento, que é liberado da metáfise radial; um retalho de periósteo do rádio distal que o inclui é elevado de proximal para distal.\n\n**O tratamento, conforme a idade e a deformidade.**\n- **Em crescimento:** a **fisiólise com liberação do ligamento de VICKERS** pode **reduzir a dor e melhorar gradualmente a deformidade**.\n- **Deformidade leve a moderada, sem artrose da radioulnar distal:** a **fisiólise combinada com osteotomia em cúpula** é o procedimento mais comum.\n- O objetivo é uma variância ulnar neutra ou levemente negativa.\n\n**Como guardar.** MADELUNG é a doença da adolescente com o punho \"em baioneta\" e o ligamento de VICKERS. O nome do ligamento cai sozinho, em questões diretas.\n\n**Por que esta questão foi criada.** É uma gêmea das questões do TARO sobre o ligamento de VICKERS, a idade de reconhecimento e a lateralidade.\n\n> **Na prova:** **bilateral**, **adolescência**; **ligamento de VICKERS** (semilunar à metáfise, proximal à fise); **fisiólise + liberação**; leve a moderada sem artrose = **fisiólise + osteotomia em cúpula**.",
+  "correta": "**D: geralmente é bilateral e se torna aparente no início da adolescência; há um ligamento espessado proximal à fise (ligamento de VICKERS), e a fisiólise com liberação desse ligamento pode reduzir a dor e corrigir gradualmente a deformidade durante o crescimento.** É a descrição do Green (cap. 38).",
+  "incorretas": {
+   "A": "**Erra as duas coisas.** O Green descreve a deformidade como geralmente bilateral e aparente no início da adolescência.",
+   "B": "**Ligamento errado.** O ligamento espessado da deformidade de MADELUNG é o de VICKERS, na face palmar e ulnar, proximal à fise.",
+   "C": "**Não é o mais comum.** Para deformidade leve a moderada sem artrose da radioulnar distal, o procedimento mais comum é a fisiólise com osteotomia em cúpula."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deformidade de MADELUNG"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2589": {
+  "conceito": "O polegar da criança traz dois problemas bem diferentes que as provas costumam juntar: o polegar duplicado, que nasce assim, e o polegar em gatilho, que aparece nos primeiros anos e tem uma explicação mecânica simples.\n\n**A duplicação, no Green** (cap. 37). A classificação de **WASSEL** conta os elementos duplicados: falange distal bífida (I) ou duplicada (II), falange proximal bífida (III) ou duplicada (IV), metacarpo bífido (V) ou duplicado (VI), e componente trifalângico (VII). O **tipo mais comum é o IV**: **falanges proximal e distal duplicadas compartilhando uma articulação com a cabeça do metacarpo bífida**, em cerca de **50%** dos casos. A polidactilia pré-axial é mais comum em brancos, indígenas americanos e muitas populações asiáticas.\n\n**O BILHAUT-CLOQUET.** Quando os dois polegares são **simétricos**, retira-se a porção central de cada um e se aproximam as bordas, unindo as duas metades num polegar só. A operação é difícil, e a **deformidade da unha** e a **rigidez da interfalângica** são problemas comuns. Uma versão modificada foi usada em WASSEL II e III com polegares simétricos e unha menor que dois terços da contralateral. Quando um componente é claramente menor, o habitual é **remover o componente radial** e reconstruir o que fica.\n\n**O polegar em gatilho.** O gatilho aparece quando a **área do flexor longo do polegar excede a área da polia A1**: uma incompatibilidade de tamanho. O **nódulo de NOTTA**, espessamento do tendão, é palpável **logo proximal à polia A1**.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre a indicação do BILHAUT-CLOQUET e a polia do polegar em gatilho.\n\n> **Na prova:** WASSEL **IV** = o mais comum (~50%); **BILHAUT-CLOQUET** = polegares **simétricos**, problema de **unha e rigidez**; gatilho = **FLP x polia A1**, **NOTTA** proximal à A1.",
+  "correta": "**B: o tipo mais comum de WASSEL é o IV, com falanges proximal e distal duplicadas sobre uma cabeça de metacarpo bífida (cerca de 50%); o BILHAUT-CLOQUET une as metades centrais de polegares simétricos, com deformidade da unha e rigidez da interfalângica como problemas comuns; no gatilho, o flexor longo do polegar é maior que a polia A1, com o nódulo de NOTTA logo proximal.** É a descrição do Green (cap. 37).",
+  "incorretas": {
+   "A": "**Não é o mais comum.** O Green aponta o tipo IV como o mais frequente, em cerca de metade dos casos.",
+   "C": "**É o contrário.** O BILHAUT-CLOQUET se reserva aos polegares simétricos; com um componente hipoplásico, remove-se esse componente.",
+   "D": "**Polia errada e lado errado.** O nódulo de NOTTA fica imediatamente proximal à polia A1."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 37 (Deformidades do polegar, Scott H. KOZIN), Duplicação do polegar (Tabela de WASSEL; Fig. 37.47) e polegar em gatilho"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2590": {
+  "conceito": "Três deformidades pequenas, três nomes que caem em prova. O segredo é saber qual osso cada uma acomete.\n\n**Braquidactilia, no Green** (cap. 36). Dedos curtos por ossos curtos. Os ossos mais acometidos são a **falange média** (**braquimesofalangia**), seguida do **metacarpo** (braquimetacarpia). A falange média é o osso mais \"frágil\" no desenvolvimento, por isso aparece em tantas síndromes.\n\n**Clinodactilia.** Desvio do dedo no plano coronal, quase sempre do mínimo, para radial.\n- O Green define a **clinodactilia notável** como angulação **maior que 10 graus**.\n- Pode ser herdada como **autossômica dominante** e **geralmente é bilateral**.\n- Faz parte de muitas síndromes, e nelas pode envolver outros dedos, inclusive o polegar.\n- A grave pode ser óbvia no recém-nascido, mas **a maioria é reconhecida mais tarde**, à medida que a angulação cresce.\n- A correção, quando indicada, usa osteotomia em cunha de fechamento, de abertura ou reversa, e trata a falta de partes moles no lado côncavo.\n\n**Deformidade de KIRNER.** **Curvatura palmar e radial progressiva da falange distal**, que **geralmente afeta o dedo mínimo**. Descrita por KIRNER em 1927. Há relatos de causa adquirida (osteocondrite, epifisiólise focal com tração do flexor profundo), mas o consenso é de causa **congênita**; discute-se uma inserção distal anômala do flexor profundo.\n\n**Como não confundir.** Clinodactilia = desvio **lateral**, em geral pela falange média; KIRNER = curva **palmar** da **falange distal**; camptodactilia = **flexão** da interfalângica proximal.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre o osso da braquidactilia e a localização da deformidade de KIRNER.\n\n> **Na prova:** braquidactilia = **falange média**; clinodactilia notável **> 10°**, bilateral, herdada; **KIRNER** = **falange distal do mínimo**, curva palmar e radial.",
+  "correta": "**C: na braquidactilia, o osso mais acometido é a falange média, seguida do metacarpo; a clinodactilia notável tem mais de 10 graus e muitas vezes é bilateral e herdada; a deformidade de KIRNER é a curvatura palmar e radial progressiva da falange distal, em geral do dedo mínimo.** São as descrições do Green (cap. 36).",
+  "incorretas": {
+   "A": "**Erra a ordem.** O osso mais acometido é a falange média; o metacarpo vem em segundo.",
+   "B": "**Erra as duas.** A maioria é reconhecida mais tarde, com o crescimento, e a forma herdada geralmente é bilateral.",
+   "D": "**Osso errado.** A deformidade de KIRNER acomete a falange distal, em geral do dedo mínimo."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36 (Deformidades da mão e dos dedos), Braquidactilia, clinodactilia e deformidade de KIRNER (Fig. 36.91)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2591": {
+  "conceito": "Um bebê nasce com o antebraço terminando logo abaixo do cotovelo, com pequenos brotos onde seriam os dedos. A primeira pergunta dos pais é sobre o que fazer; a resposta do Green é quase sempre: acompanhar, apoiar e protetizar quando fizer sentido.\n\n**O que é, no Green** (cap. 38). Na classificação de **SWANSON**, foi chamada de **falha de formação transversal**; hoje é descrita como falha de formação do eixo ou da diferenciação de todo o membro. É **quase sempre unilateral** e **esporádica**. O nível **mais comum é o antebraço proximal**: o tipo curto abaixo do cotovelo é a deficiência transversal mais frequente do membro superior.\n\n**O tratamento.** **Observação e apoio emocional** são os pilares do método preferido dos autores. Os brotos digitais no coto só são removidos se infectarem com frequência ou se as unhas incomodarem. O alongamento do antebraço tem **alta taxa de complicações e não melhora a função**. O transplante de mão é contraindicado em crianças com deficiência transversa.\n\n**O KRUKENBERG.** O rádio e a ulna são **separados**, e os músculos são reinseridos de modo que o rádio aperte contra a ulna, como uma pinça. É indicado **raramente**, por exemplo numa **criança cega** com deficiência abaixo do cotovelo e **antebraço longo**, que precisa da sensibilidade da pinça para explorar o mundo. Há poucos dados de ganho funcional, e a aparência é muito diferente do normal.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre o procedimento de KRUKENBERG e a classificação de SWANSON.\n\n> **Na prova:** **unilateral**, **esporádica**, **antebraço proximal**; SWANSON = **falha de formação transversal**; **KRUKENBERG** = **separa** rádio e ulna (pinça), criança **cega**.",
+  "correta": "**A: é quase sempre unilateral e esporádica, mais comum no antebraço proximal; na classificação de SWANSON é uma falha de formação transversal; observação e apoio emocional são os pilares, e o KRUKENBERG, que separa o rádio da ulna, pode ser indicado raramente, como na criança cega com antebraço longo.** É a descrição do Green (cap. 38).",
+  "incorretas": {
+   "B": "**É o contrário.** O Green descreve a deficiência transversal como quase sempre unilateral e esporádica.",
+   "C": "**O KRUKENBERG separa.** O rádio e a ulna são separados para formar uma pinça; nada é fundido.",
+   "D": "**Não é rotineiro.** O alongamento tem alta taxa de complicações e não melhora a função, segundo o Green."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deficiência transversal (procedimento de KRUKENBERG)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  }
 }
