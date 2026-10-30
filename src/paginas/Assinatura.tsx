@@ -25,6 +25,7 @@ import { PreviaCronograma } from '../componentes/vendas/PreviaCronograma'
 import { IconePix, IconeCartao } from '../componentes/vendas/IconesPagamento'
 import { usarRevelar } from '../componentes/vendas/usarRevelar'
 import { SecaoBiblioteca } from '../componentes/vendas/SecaoBiblioteca'
+import { SecaoAtlas } from '../componentes/vendas/SecaoAtlas'
 import { RenovacaoPix } from '../componentes/RenovacaoPix'
 import { usarPeriodoPix } from '../conta/periodoPix'
 import '../estilos/paginas/Assinatura.css'
@@ -311,6 +312,9 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
       {/* 4b. Biblioteca de resumos: aberta para todos, explicada por inteiro (16/10/2026). */}
       <SecaoBiblioteca />
 
+      {/* 4c. Atlas 3D: o mini-atlas com os pinos e o que cada plano vê (30/10/2026). */}
+      <SecaoAtlas />
+
       {/* 5. OrtoQuestões Simulados, por engenharia reversa. */}
       <SecaoSimulados />
 
@@ -342,7 +346,10 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             ...(FLASHCARDS_NA_VENDA ? [['Flashcards por dia (beta)', fraseGratis('flashcardsPorDia'), 'Sem limite'] as const] : []),
             ['Cronograma até a prova: a lista de cada dia, o que mais cai primeiro, dia de plantão e reta final', false, true],
             ['Temas que mais caem, área por área e assunto por assunto', false, true],
-            ['Biblioteca de resumos e frases que caem', false, true],
+            // A Biblioteca é aberta a todos (todos os resumos com acesso: gratis); as frases que caem têm amostra no gratuito.
+            ['Biblioteca de resumos, na ordem em que a prova cobra', true, true],
+            ['Frases que caem, assunto por assunto', 'Amostra', 'Todas'],
+            ['Atlas 3D: clique no osso e veja as classificações', 'Ossos e músculos', 'Todas as camadas'],
             ['Como a turma respondeu e treino pelas que a turma mais erra', false, true],
             ['Simulado Nacional todo mês, com sua posição', false, true],
             ['Liga da residência e relatório do mês', false, true],
@@ -375,6 +382,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           <details><summary>Serve para o TEOT e para o TARO? E para outras provas?</summary><p>Sim. O acervo traz as provas oficiais já aplicadas do TEOT, do TARO, do R4 do ENARE e do TECOC, comentadas, e o cronograma pode ser montado para a data da sua prova. Para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril, há os {ROTULO_SIMULADOS}, escritos no padrão dessas bancas.</p></details>
           <details><summary>Como o cronograma é montado?</summary><p>Em quatro passos: a data da prova, quanto tempo você tem por dia, como é a sua semana (folgas e dias de plantão, que viram dias leves) e por onde começar. Um diagnóstico opcional de 30 questões mostra onde você está mais fraco. O plano passa três vezes pelo acervo: na 1ª passada, os assuntos de prioridade máxima de todas as áreas, pela contagem das provas oficiais; na 2ª, os de prioridade alta; na 3ª, o resto. Assim, se a rotina apertar, o que mais cai já foi visto. Cada área fica uns 3 dias em foco, com cerca de 30% de cada dia vindo de outra área para misturar, e entram {ROTULO_SIMULADOS} nas sessões. A cada duas semanas há um mini-simulado, e as duas últimas semanas são a reta final. Atrasou, a meta sobe no máximo 25%; numa semana difícil, dá para baixar para 10 questões por dia sem quebrar o plano.</p></details>
           <details><summary>O que são os {ROTULO_SIMULADOS}?</summary><p>Questões inéditas, escritas pelo Orto Questões por engenharia reversa das provas: estudamos o estilo, o nível e o que a banca repete, e escrevemos questões novas no mesmo padrão a partir da bibliografia. Não são questões oficiais nem cópia de prova sigilosa; trazem aviso na tela e comentário completo com a citação do livro.</p></details>
+          <details><summary>O que é o Atlas 3D? Funciona no celular?</summary><p>É um esqueleto inteiro em 3D, com os músculos e, para assinantes, os nervos, as artérias, as veias, os ligamentos e as fáscias. Você gira, aproxima e clica: cada parte do osso abre as fraturas e as classificações que caem na prova, o trecho do resumo que as explica e as questões daquela estrutura. Roda no navegador do celular e do computador, sem instalar nada. Na conta grátis, ossos e músculos ficam abertos.</p></details>
           <details><summary>Funciona no celular?</summary><p>Funciona no celular, no tablet e no computador, sem instalar nada, e você continua de onde parou. A conta fica aberta em um aparelho por vez; ao entrar em outro, o progresso vai junto.</p></details>
           <details><summary>Como funciona o limite do plano gratuito?</summary><p>{fraseGratis('perguntaPlanos')} Comentários, revisões e desempenho continuam abertos.</p></details>
         </div>
@@ -408,6 +416,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             <p className="ck__total">{planoEscolhido.meses === 1 ? `${real(planoEscolhido.total)} por mês` : `${real(planoEscolhido.total)} ${planoEscolhido.meses === 6 ? 'a cada 6 meses' : 'por ano'}`}{planoEscolhido.meses > 1 && <> · economia de {real(MENSAL * planoEscolhido.meses - planoEscolhido.total)}</>}</p>
             <ul className="ck__beneficios">
               <li><Icone nome="certo" tamanho={14} /> Cronograma, Simulado Nacional e todos os recursos</li>
+              <li><Icone nome="certo" tamanho={14} /> Atlas 3D com todas as camadas e todas as frases que caem</li>
               <li><Icone nome="certo" tamanho={14} /> Garantia de 7 dias: reembolso integral pelo botão</li>
             </ul>
           </header>
@@ -655,6 +664,7 @@ function SecaoRecursos({ servico }: { servico: string | null }) {
   const recursos: Array<{ img: string; titulo: string; texto: string; destino: string }> = [
     { img: 'pixel/ranking.png', titulo: 'Simulado Nacional, todo mês', texto: 'A mesma prova para todo o Brasil: 50 questões oficiais do TEOT e do TARO em duas horas, no peso do que mais cai. Corrigida na hora, com o comentário de cada questão, a sua posição e o que rende revisar, área por área.', destino: '/simulado-nacional' },
     { img: 'pixel/treinar.png', titulo: 'Frases que caem', texto: 'O que cai, em uma frase por assunto: as frases "Na prova" que você relê em minutos, junto dos resumos da Biblioteca.', destino: '/resumos/frases' },
+    { img: 'atlas3d/icone-mao.png', titulo: 'Atlas 3D com todas as camadas', texto: 'Nervos, artérias, veias, ligamentos e fáscias por cima dos ossos e músculos: a anatomia das vias de acesso, região por região, ligada às questões.', destino: '/atlas' },
     { img: 'pixel/liga.png', titulo: 'Liga da residência', texto: servico ? `Um ranking privado só seu e dos seus colegas. Crie a liga do ${servico}, mande o convite no grupo e estudem juntos.` : 'Um ranking privado do seu serviço. Crie a liga, mande o convite no grupo do WhatsApp e estudem juntos.', destino: '/ligas' },
     { img: 'pixel/relatorio.png', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, o acerto, os temas que subiram e o próximo passo.', destino: '/conta?secao=estudo' },
     { img: 'pixel/turma.png', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e onde está a pegadinha. E sessões só com as que a turma mais erra.', destino: '/treinar' },

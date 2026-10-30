@@ -12,6 +12,7 @@ import { IconePixel } from '../componentes/IconePixel'
 import { bibliotecaVisivel } from '../biblioteca/recomendar'
 import { SeloNovo } from '../componentes/SeloNovo'
 import { QuadroAtlas } from '../componentes/QuadroAtlas'
+import { EstanteResumos } from '../componentes/inicio/EstanteResumos'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { ChamadaSimuladoNacional } from '../componentes/ChamadaSimuladoNacional'
@@ -314,6 +315,7 @@ export function Inicio() {
         <FaixaPlanos />
         <ChamadaSimuladoNacional />
         <QuadroAtlas />
+        {bibliotecaVisivel() && <EstanteResumos />}
 
         <section className="ip-pilares ip-entra" aria-labelledby="ip-pilares-titulo" style={{ '--i': 1 } as CSSProperties}>
           <h2 id="ip-pilares-titulo" className="ip-pilares__titulo">O que o Orto Questões faz por você</h2>
@@ -438,7 +440,7 @@ export function Inicio() {
         {bibliotecaVisivel() && (
           <a className="ip-atalho" href={href('/resumos')}>
             <span className="ip-px ip-px--livros" aria-hidden="true"><i /><i /><i /></span>
-            <span><strong>Resumos <SeloNovo texto="Beta" /></strong><small>Novos toda semana</small></span>
+            <span><strong>Resumos</strong><small>Leia antes das questões</small></span>
           </a>
         )}
         <a className="ip-atalho" href={href('/atlas')}>
@@ -584,6 +586,8 @@ export function Inicio() {
         </section>
 
         <QuadroAtlas />
+        {/* Resumos com o mesmo peso do Atlas (pedido do Tales, 30/10/2026): a estante logo abaixo dele. */}
+        {bibliotecaVisivel() && <EstanteResumos />}
 
         <div className="ip-dupla">
           <CaixasAssinante />

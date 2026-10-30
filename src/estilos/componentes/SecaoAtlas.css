@@ -1,0 +1,68 @@
+/* Atlas 3D na página de vendas (30/10/2026): o mesmo quadro verde da capa, com o esqueleto, pinos dourados
+   numerados (como no modelo padrão de marketing) e a ficha da região ao lado. */
+.vd-atlas__palco {
+  position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(12rem, 0.8fr) minmax(0, 1.2fr); gap: 1.5rem; align-items: center;
+  padding: 1.6rem 1.8rem; border: 2px solid #0a1f19; border-radius: 22px; color: #f3ecd6;
+  background: #0f2a22; background-image: radial-gradient(rgba(159, 227, 212, 0.16) 1px, transparent 1.4px); background-size: 22px 22px;
+  box-shadow: 6px 6px 0 rgba(10, 31, 25, 0.35);
+}
+.vd-atlas__palco::after { content: ""; position: absolute; inset: 6px; z-index: -1; border: 1px solid rgba(227, 184, 96, 0.3); border-radius: 17px; pointer-events: none; }
+
+.vd-atlas__corpo { position: relative; justify-self: center; width: min(100%, 13.5rem); aspect-ratio: 316 / 740;
+  background: radial-gradient(60% 45% at 50% 50%, rgba(47, 168, 140, 0.28), transparent 70%); }
+.vd-atlas__corpo img { display: block; width: 100%; height: 100%; filter: drop-shadow(0 14px 14px rgba(0, 0, 0, 0.35)); user-select: none; }
+.vd-atlas__eixo { position: absolute; right: -0.6rem; bottom: 0; padding: 0 0.4rem; background: #0b2b27; color: #9fe3d4; font-family: var(--fonte-pixel); font-size: 0.8rem; box-shadow: 2px 2px 0 #072320; }
+
+.vd-atlas__pino {
+  position: absolute; display: grid; place-items: center; width: 1.9rem; height: 1.9rem; padding: 0; translate: -50% -50%;
+  border: 2px solid #0a1f19; border-radius: 50%; background: linear-gradient(135deg, #f3cf7a, #c9962f); color: #2b1d02;
+  font-family: var(--fonte-pixel); font-size: 0.95rem; font-weight: 700; line-height: 1; cursor: pointer;
+  box-shadow: 2px 2px 0 #0a1f19, 0 0 0 4px rgba(243, 207, 122, 0.25);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.vd-atlas__pino::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid #f3cf7a; opacity: 0; pointer-events: none; }
+.vd-atlas__pino:hover { transform: scale(1.12); }
+.vd-atlas__pino:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.vd-atlas__pino--ativo { background: #fff4d6; transform: scale(1.15); }
+.vd-atlas__pino--ativo::after { animation: vd-atlas-onda 1.8s ease-out infinite; }
+@keyframes vd-atlas-onda { 0% { opacity: 0.9; transform: scale(0.8); } 100% { opacity: 0; transform: scale(1.7); } }
+
+.vd-atlas__ficha { display: grid; gap: 0.6rem; min-width: 0; }
+.vd-atlas__dica { display: inline-flex; align-items: center; gap: 0.35rem; margin: 0; color: #edd69f; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.vd-atlas__cartao {
+  display: grid; gap: 0.55rem; padding: 1.1rem 1.2rem; border: 2px solid #0a1f19; border-radius: 8px; background: #f6f1e3; color: #23302b;
+  box-shadow: 4px 4px 0 #0a1f19; animation: vd-atlas-abre 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes vd-atlas-abre { from { opacity: 0; transform: translateY(6px) scale(0.98); } }
+.vd-atlas__regiao { display: flex; align-items: center; gap: 0.6rem; font-family: var(--fonte-marca); font-size: 1.35rem; font-weight: 700; color: #14423a; }
+.vd-atlas__lesoes { margin: 0; color: #4b5a54; line-height: 1.45; }
+.vd-atlas__rotulo { margin: 0.2rem 0 0; color: #7a5710; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.vd-atlas__chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
+.vd-atlas__chips li { padding: 0.2rem 0.6rem; border: 2px solid #14423a; border-radius: 4px; background: #fff; color: #14423a; font-size: 0.86rem; font-weight: 750; box-shadow: 2px 2px 0 #14423a; }
+.vd-atlas__questoes { margin: 0.15rem 0 0; color: #4b5a54; font-size: 0.9rem; }
+.vd-atlas__questoes b { color: #14655e; font-size: 1.05rem; }
+.vd-atlas__resumo { display: inline-flex; align-items: center; gap: 0.4rem; width: fit-content; color: #14655e; font-size: 0.88rem; font-weight: 700; text-underline-offset: 3px; }
+.vd-atlas__ver { justify-self: start; display: inline-flex; align-items: center; gap: 0.45rem; margin-top: 0.2rem; border-radius: 12px; text-decoration: none; }
+
+.vd-atlas__base { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 1.5rem; margin-top: 1.5rem; }
+.vd-atlas__passos { display: grid; gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
+.vd-atlas__passos li { display: grid; grid-template-columns: 2.8rem minmax(0, 1fr); gap: 0.9rem; align-items: start; padding: 0.85rem 1rem; border-radius: var(--vd-raio, 14px); background: var(--superficie); border: 2px solid var(--vd-borda, var(--traco)); }
+.vd-atlas__passos h3 { margin: 0; font-size: 1rem; }
+.vd-atlas__passos p { margin: 0.2rem 0 0; color: var(--texto-2); line-height: 1.5; }
+.vd-atlas__camadas { display: grid; align-content: start; gap: 0.7rem; padding: 1rem 1.1rem; border: 2px solid var(--vd-borda, var(--traco)); border-radius: var(--vd-raio, 14px); background: var(--superficie); }
+.vd-atlas__camadas .vd-atlas__rotulo { color: var(--ouro-texto); }
+.vd-atlas__camadas ul { display: grid; gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
+.vd-atlas__camadas li { display: grid; gap: 0.1rem; padding: 0.5rem 0.7rem; border-left: 4px solid var(--traco); background: color-mix(in srgb, var(--superficie) 85%, var(--texto) 4%); }
+.vd-atlas__camadas li span { color: var(--texto-2); font-size: 0.78rem; font-weight: 700; }
+.vd-atlas__camadas li b { font-size: 0.95rem; }
+.vd-atlas__camadas li.vd-atlas__camada--pro { border-left-color: var(--px-ouro, #c9962f); background: color-mix(in srgb, var(--superficie) 88%, #e3b860 12%); }
+
+@media (prefers-reduced-motion: reduce) {
+  .vd-atlas__pino--ativo::after, .vd-atlas__cartao { animation: none; }
+}
+@media (max-width: 52rem) {
+  .vd-atlas__palco { grid-template-columns: minmax(0, 1fr); padding: 1.2rem 1rem 1.3rem; }
+  .vd-atlas__corpo { width: min(62%, 12rem); }
+  .vd-atlas__base { grid-template-columns: minmax(0, 1fr); }
+  .vd-atlas__ver { justify-self: stretch; justify-content: center; }
+}

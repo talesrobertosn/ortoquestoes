@@ -35,17 +35,19 @@ export function SecaoBiblioteca() {
           ))}
         </ol>
 
-        {/* O cartão como ele aparece no leitor (exemplo real do resumo do colo do fêmur). */}
-        <figure className="vd-bib__cartao" data-revelar aria-label="Exemplo do cartão de questão dentro do resumo">
-          <p className="vd-bib__texto">Na via lateral direta de Hardinge, o limite proximal é o <b>nervo glúteo superior</b>, que corre entre o glúteo médio e o mínimo; o risco aumenta quando a divisão do músculo passa de <b>cerca de 5 cm acima do trocânter</b>.</p>
-          <div className="vd-bib__questao">
-            <p className="vd-bib__selo">Já caiu: TEOT 2024</p>
-            <p className="vd-bib__conceito">Na via de Hardinge, dissecar mais de 3 a 5 cm acima do trocânter lesa o nervo glúteo superior.</p>
-            <p className="vd-bib__como"><strong>Como isso cai na prova:</strong> uma questão de anatomia cirúrgica pura; a distância é a pista.</p>
-            <p className="vd-bib__armadilha"><strong>Armadilha:</strong> marcar o ciático, que é o nervo em risco na via posterior.</p>
-          </div>
-          <figcaption>Assim fica cada ponto cobrado, no meio do texto.</figcaption>
-        </figure>
+        {/* O cartão como ele aparece no leitor (pedido do Tales, 30/10/2026: um resumo do Rockwood como exemplo).
+            Trecho real do resumo do colo do fêmur; as cinco provas são as questões centrais desse bloco. */}
+        <a className="vd-bib__cartao" href={href('/resumos/rockwood10-53-colo-femur?bloco=fratura-desviada-no-jovem-38a46d78')} data-revelar aria-label="Exemplo real: o índice de Garden no resumo do colo do fêmur, do Rockwood. Abrir o trecho">
+          <span className="vd-bib__fonte">Rockwood adulto · Cap. 53 · Fratura do colo do fêmur</span>
+          <span className="vd-bib__texto">O <b>índice de alinhamento de Garden</b> compara as trabéculas compressivas da cabeça com a cortical medial da diáfise: <b>cerca de 160° no AP</b> e <b>180° no perfil</b>. Na radioscopia é mais fácil usar o <b>sinal de Lowell</b>, as curvas suaves em S na junção da cabeça com o colo.</span>
+          <span className="vd-bib__questao">
+            <span className="vd-bib__selo">Já caiu 5 vezes: TARO 2013, 2021, 2022 e 2026 · ENARE R4 2024</span>
+            <span className="vd-bib__conceito">Índice de Garden: cerca de 160° no AP e 180° no perfil; sinal de Lowell: curvas em S na junção cabeça-colo.</span>
+            <span className="vd-bib__como"><strong>Como isso cai na prova:</strong> as alternativas trocam os valores do AP e do perfil e oferecem 125° a 135°, que é o ângulo cervicodiafisário, não o índice.</span>
+            <span className="vd-bib__armadilha"><strong>Armadilha:</strong> inverter AP e perfil (180° e 160°).</span>
+          </span>
+          <span className="vd-bib__legenda">Assim fica cada ponto cobrado, no meio do texto. <b>Ler este trecho <Icone nome="direita" tamanho={13} /></b></span>
+        </a>
       </div>
 
       <div className="vd-bib__estudo" data-revelar>
@@ -59,7 +61,7 @@ export function SecaoBiblioteca() {
           </ul>
         </div>
         {capitulos.length > 0 && <div className="vd-bib__estante" aria-label="Resumos publicados">
-          <p className="vd-bib__estante-titulo">Já na estante <small>novos toda semana</small></p>
+          <p className="vd-bib__estante-titulo">Já na estante <small>{capitulos.length} resumos · novos toda semana</small></p>
           <ul>{capitulos.slice(0, NA_ESTANTE).map((c) => <li key={c.id} style={{ ['--vd-area' as string]: corDaArea(c.especialidade) }}><a href={href(`/resumos/${c.id}`)}><i aria-hidden="true" /><span>{c.titulo}</span><small>~{c.minutos} min</small></a></li>)}</ul>
           {capitulos.length > NA_ESTANTE && <a className="vd-link vd-bib__todos" href={href('/resumos')}>Ver a estante inteira <Icone nome="direita" tamanho={14} /></a>}
         </div>}
