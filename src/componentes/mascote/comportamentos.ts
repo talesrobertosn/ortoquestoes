@@ -1,76 +1,28 @@
-// Gerado por scripts/gerar_mascote.py: não edite à mão.
-/** Os comportamentos do mascote, na ordem das linhas de public/pixel/mascote/esqueleto.webp. */
-export const QUADRO = { largura: 240, altura: 272, quadros: 12 } as const
+/**
+ * Os comportamentos do mascote (30/10/2026). Cada um é uma animação das articulações do esqueleto (Mascote.css) com
+ * os objetos daquela cena (EsqueletoSvg.tsx). Os de Halloween só entram no sorteio em outubro (a fantasia do mês).
+ */
 export const COMPORTAMENTOS = [
-  {
-    "id": "ler",
-    "nome": "lendo",
-    "duracao": 4.2
-  },
-  {
-    "id": "cafe",
-    "nome": "tomando café",
-    "duracao": 3.6
-  },
-  {
-    "id": "marshmallow",
-    "nome": "assando marshmallow",
-    "duracao": 3.2
-  },
-  {
-    "id": "dormir",
-    "nome": "cochilando",
-    "duracao": 3.8
-  },
-  {
-    "id": "alongar",
-    "nome": "se espreguiçando",
-    "duracao": 3.0
-  },
-  {
-    "id": "acenar",
-    "nome": "acenando",
-    "duracao": 2.2
-  },
-  {
-    "id": "flashcards",
-    "nome": "revisando flashcards",
-    "duracao": 3.0
-  },
-  {
-    "id": "raiox",
-    "nome": "olhando um raio X",
-    "duracao": 3.4
-  },
-  {
-    "id": "anotar",
-    "nome": "fazendo anotações",
-    "duracao": 3.6
-  },
-  {
-    "id": "violao",
-    "nome": "tocando cavaquinho",
-    "duracao": 2.4
-  },
-  {
-    "id": "malabares",
-    "nome": "fazendo malabares com ossos",
-    "duracao": 2.0
-  },
-  {
-    "id": "reflexo",
-    "nome": "testando o próprio reflexo patelar",
-    "duracao": 2.6
-  },
-  {
-    "id": "comer",
-    "nome": "comendo uma maçã",
-    "duracao": 3.4
-  },
-  {
-    "id": "estetoscopio",
-    "nome": "auscultando o próprio peito",
-    "duracao": 3.2
-  }
+  { id: 'acenar', nome: 'acenando', halloween: false },
+  { id: 'dancar', nome: 'dançando', halloween: false },
+  { id: 'ler', nome: 'lendo', halloween: false },
+  { id: 'cafe', nome: 'tomando café', halloween: false },
+  { id: 'dormir', nome: 'cochilando', halloween: false },
+  { id: 'alongar', nome: 'se espreguiçando', halloween: false },
+  { id: 'raiox', nome: 'olhando um raio X', halloween: false },
+  { id: 'malabares', nome: 'fazendo malabares com ossos', halloween: false },
+  { id: 'reflexo', nome: 'testando o próprio reflexo patelar', halloween: false },
+  { id: 'comer', nome: 'comendo uma maçã', halloween: false },
+  { id: 'marshmallow', nome: 'assando marshmallow', halloween: false },
+  { id: 'foice', nome: 'passeando com a foice', halloween: true },
+  { id: 'sorvete', nome: 'tomando sorvete', halloween: true },
+  { id: 'doces', nome: 'brincando com os doces da abóbora', halloween: true },
 ] as const
+
 export type IdComportamento = (typeof COMPORTAMENTOS)[number]['id']
+export type Fantasia = 'nenhuma' | 'halloween'
+
+/** A fantasia do mês: outubro é Halloween. */
+export function fantasiaDoMes(d = new Date()): Fantasia {
+  return d.getMonth() === 9 ? 'halloween' : 'nenhuma'
+}

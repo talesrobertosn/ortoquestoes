@@ -76,8 +76,8 @@ export function CenaDiorama({ linhaFogo, periodo }: { linhaFogo: number; periodo
         <span className="hd-luz-fogo" style={{ left: `${(240 / 480) * 100}%`, top: `${(140 / 200) * 100}%`, '--forca': linhaFogo === 0 ? 0.2 : 1 } as CSSProperties} />
         <span className={`hd-fogo hd-fogo--${linhaFogo}`} style={{ ...lugar(220, 104, 40, 48), '--linha': linhaFogo } as CSSProperties} />
         {linhaFogo > 0 && <span className="hd-brasas" style={lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
-        {/* O mascote, sentado no tronco: um comportamento diferente a cada visita (componentes/mascote). */}
-        <Mascote className="hd-mascote" style={lugar(236, 87, 80, 90.67)} />
+        {/* O mascote, em pé ao lado da fogueira: um comportamento diferente a cada visita (componentes/mascote). */}
+        <Mascote className="hd-mascote" style={lugar(262, 96, 46, 66.7)} />
         <button type="button" tabIndex={-1} className="hd-gato" style={lugar(226, 155, 22, 10)}
           onClick={() => definirGato((g) => (g === 'dormindo' ? 'acordado' : 'tala'))}>
           <PixelSvg grade={gato === 'dormindo' ? GATO_DORMINDO : GATO_ACORDADO} paleta={paletaGato} />
