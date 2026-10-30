@@ -118,6 +118,15 @@ class Camada:
                 if ch in cores:
                     self.p(x0 + i, y0 + j, cores[ch], a)
 
+    def contornar(self, cor: str, a: float = 1.0) -> None:
+        """Contorno de 1 px por fora da silhueta (como nos sprites)."""
+        m = self.c[:, :, 3] > 0.5
+        viz = np.zeros_like(m)
+        for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+            viz |= np.roll(np.roll(m, dy, 0), dx, 1)
+        borda = viz & ~m
+        self.mascara(borda, cor, a)
+
     def juntar(self, outra: "Camada") -> None:
         a = outra.c[:, :, 3:4]
         na = a + self.c[:, :, 3:4] * (1 - a)
@@ -1087,7 +1096,7 @@ def fogueira(c: Camada, e: Camada, luz) -> None:
     pedras = []
     for k in range(15):
         a = k / 15 * math.tau + 0.2
-        pedras.append((fx + math.cos(a) * 17, fy + 1 + math.sin(a) * 6.2, k))
+        pedras.append((fx + math.cos(a) * 17, fy + 0.5 + math.sin(a) * 5.4, k))
     pedras.sort(key=lambda p: p[1])
     for (x, y, k) in pedras:
         pedra(c, x, y, 2.6 + g.random() * 0.9, 1.9 + g.random() * 0.6, luz, seed=700 + k, paleta=PEDRA[:5], escuro=0.15)
@@ -1366,9 +1375,10 @@ def pintar_acampamento(nome: str, per: dict) -> Objetos:
     o.add(152, tora, 258, 304, 147, luz)
     o.add(154, livros, 311, 154)
     o.add(156, tripe_e_panela, o.emissivo, 339, 156, luz)
-    o.add(122, placa, 318, 122, luz)
+    o.add(122, placa, 325, 122, luz)
     o.add(112, lanterna_pendurada, o.emissivo, 322, 63, luz)
     fx, fy = FOGO
+    o.cam.contornar("#140c08", 0.55)
     o.luzes += [(211, 144, "#ffc870", 34, 0.85), (322, 80, "#ffc870", 40, 0.9), (339, 152, "#ff8a3a", 14, 0.35)]
     return o
 
@@ -1632,6 +1642,22 @@ def montar(nome: str) -> Image.Image:
     sol_ = solido[:, :, None]
     img = img * (1 - sol_) + img * sol_ * luz
 
+    # ── luz de recorte: as bordas das copas viradas para o sol (ou a lua) contra o fundo acendem
+    alto_a = np.maximum.reduce([meio.c[:, :, 3], dossel.c[:, :, 3], perto.c[:, :, 3]]) > 0.5
+    ddx, ddy = (-2, -2) if nome == "manha" else (2, -1) if nome == "tarde" else (0, -2)
+    viz = np.roll(np.roll(alto_a, -ddy, 0), -ddx, 1)
+    viz[:3, :] = True     # o roll dá a volta na imagem: as bordas não recebem recorte
+    viz[-3:, :] = True
+    viz[:, :3] = True
+    viz[:, -3:] = True
+    recorte = (alto_a & ~viz).astype(np.float32)
+    recorte = desfocar(ampliar(recorte[:, :, None]), 1.0)[:, :, 0]
+    perto_luz = {"manha": luz_pontual(150, 0, 260, 0.8), "tarde": luz_pontual(320, 55, 150, 1.0),
+                 "noite": luz_pontual(240, 30, 140, 1.0)}[nome]
+    k_rec = {"manha": 0.55, "tarde": 1.1, "noite": 0.5}[nome]
+    cor_rec = {"manha": "#ffe2a0", "tarde": "#ffa850", "noite": "#8aa8ff"}[nome]
+    img += (recorte * perto_luz)[:, :, None] * hexa(cor_rec) * k_rec
+
     # ── névoa por distância (mais clara onde o sol atravessa)
     nev = hexa(per["nevoa"]) * per["nevoa_k"]
     brilho_nev = 1.0
@@ -1703,9 +1729,9 @@ def montar(nome: str) -> Image.Image:
         x = 339 + math.sin(t * 9) * (1 + t * 3) + t * 3
         y = 140 - t * 26
         X, Y = int(x * ESC), int(y * ESC)
-        vap[Y - 2:Y + 3, X - 2:X + 3] += (1 - t) * 0.5
-    vap = desfocar(vap[:, :, None], 4)[:, :, 0]
-    img += vap[:, :, None] * hexa("#e8e4dc") * {"manha": 0.35, "tarde": 0.35, "noite": 0.18}[nome]
+        vap[Y - 2:Y + 3, X - 3:X + 4] += (1 - t) * t * 4 * 0.35
+    vap = desfocar(vap[:, :, None], 6)[:, :, 0]
+    img = img + vap[:, :, None] * (hexa("#d8d4cc") - img * 0.5) * {"manha": 0.3, "tarde": 0.25, "noite": 0.15}[nome]
     # folhas caindo (dia) e borboletas na manhã, pixel a pixel
     gl = np.random.default_rng(29)
     if nome != "noite":
@@ -1724,6 +1750,15 @@ def montar(nome: str) -> Image.Image:
             for (dx, dy) in ((0, 0), (2, 0), (0, 1), (2, 1)):
                 img[Y + dy * ESC:Y + (dy + 1) * ESC, X + dx * ESC:X + (dx + 1) * ESC] = hexa(cor) * 1.1
             img[Y:Y + 2 * ESC, X + ESC:X + 2 * ESC] = hexa("#2a2018")
+    # brilhos na água: estrelinhas de 4 pontas
+    for (bx, by) in brilhos[:8]:
+        X, Y = int(bx * ESC + 1), int(by * ESC + 1)
+        kb = {"manha": 0.7, "tarde": 0.9, "noite": 0.35}[nome]
+        for d in range(-5, 6):
+            k = (1 - abs(d) / 6) ** 2 * kb
+            if 0 <= Y + d < H * ESC and 0 <= X + d < W * ESC:
+                img[Y + d, X] += k
+                img[Y, X + d] += k
     # vaga-lumes: núcleo e halo
     if vagas:
         vl = np.zeros((H * ESC, W * ESC), np.float32)
@@ -1750,6 +1785,11 @@ def montar(nome: str) -> Image.Image:
     img = img * (0.78 + 0.22 * (lum * q + (1 - lum) * (fr_ * 0.5 + 0.5)))
     img = np.clip((img - 0.48) * 1.08 + 0.48, 0, 1.2)
     xn, yn = GX / (W * ESC), GY / (H * ESC)
+    # área do título (alto à esquerda): menos contraste e um pouco mais escura, sem corte visível
+    calma = ((1 - suave(0.26, 0.46, xn)) * (1 - suave(0.42, 0.62, yn)))[:, :, None]
+    media = desfocar(np.clip(img, 0, 1.2), 16)
+    img = media + (img - media) * (1 - 0.35 * calma)
+    img *= 1 - 0.16 * calma
     v = (xn - 0.5) ** 2 * 1.3 + (yn - 0.6) ** 2 * 1.6
     img *= (1 - np.clip(v - 0.08, 0, 1) * 1.1)[:, :, None]
     gg = np.random.default_rng(99)
