@@ -254,7 +254,7 @@ MATS: dict[str, Mat] = {
     "osso": Mat(rampa("#2a2030", "#45343f", "#67524b", "#8b725a", "#ae9472", "#cbb68e", "#e3d3ac", "#f6edd2"), hx("#1a1118"), rim=0.5, tex=0.07),
     "dente": Mat(rampa("#4a3a42", "#8d7a66", "#c9b896", "#e9dcbb", "#fbf4e0"), hx("#1a1118"), rim=0.2, tex=0.03),
     "interior": Mat(rampa("#0e0910", "#170f19", "#211723", "#2e2129", "#3c2c30"), hx("#0c070c"), rim=0.0, amb=0.45, kd=0.5),
-    "orbita": Mat(rampa("#040206", "#08050b", "#0e0912", "#16101a", "#211823", "#30232c"), hx("#0c070c"), rim=0.0, amb=0.2, kd=0.8, luz_pontual=0.2),
+    "orbita": Mat(rampa("#0a0709", "#151012", "#221b1d", "#312829", "#403637", "#4f4446"), hx("#0c070c"), rim=0.0, amb=0.2, kd=0.8, luz_pontual=0.2),
     "brilho": Mat(rampa("#26343e", "#4d6a78", "#86a8b4", "#c8dde0"), TINTA, emite=True, bloom=0.0),
     # armadura
     "aco": Mat(rampa("#16161e", "#262833", "#3a3e4a", "#535a66", "#717a84", "#939ca3", "#b8c0c2", "#e2e6e2"), hx("#0e0d14"), rim=0.55, tex=0.02, brilho=0.9),
@@ -685,41 +685,34 @@ def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
     calota = elipse((0, -6.5), 25.0, 20.5)
     # rosto largo que fecha numa curva redonda logo abaixo do nariz: crânio de peça só, sem queixo saliente,
     # sem mandíbula nem dentes (referência do Tales, 30/10/2026)
-    rosto = elipse((0 + v * 0.8, 8.0), 20.5, 10.5)
+    rosto = elipse((-5.5 + v * 0.8, 8.5), 19.5, 10.0)
     f = calota.suave(rosto, 6.0)
     t.pinta(q.forma(f), "osso", 8.0, R=13.0, pid="cranio", uv=uv, semente=51)
-    # sombras de modelado: têmporas, abaixo das maçãs, testa mais clara
-    for sx in (-1, 1):
-        t.pinta(q.forma(elipse((sx * 20.5 + v * 0.6, 3.0), 3.6, 7.5)), "osso", 0, sobre="cranio", tom=-0.13, uv=uv, semente=51, normal=False)
-        t.pinta(q.forma(elipse((sx * 11.0 + v * 1.3, 15.2), 3.4, 1.8)), "osso", 0, sobre="cranio", tom=-0.12, uv=uv, semente=51, normal=False)
+    # sombras de modelado: a face virada três-quartos para a esquerda, a nuca clara e redonda à direita
+    t.pinta(q.forma(elipse((-20.0 + v * 0.6, 9.0), 4.0, 8.0)), "osso", 0, sobre="cranio", tom=-0.12, uv=uv, semente=51, normal=False)
+    t.pinta(q.forma(elipse((-4.0 + v * 1.3, 14.6), 9.0, 2.2)), "osso", 0, sobre="cranio", tom=-0.08, uv=uv, semente=51, normal=False)
     t.pinta(q.forma(elipse((-7 + v, -16.0), 8.0, 5.5)), "osso", 0, sobre="cranio", tom=0.05, uv=uv, semente=51, normal=False)
     # rachadura irregular no alto à direita, com a beira de baixo clara
     rach = [(9.5, -25.6), (10.6, -22.8), (9.4, -20.6), (12.2, -18.0), (11.6, -15.6), (13.8, -13.4)]
     t.pinta(q.forma(traco([(x + 0.7, y + 0.7) for x, y in rach], 0.5)), "osso", 0, sobre="cranio", tom=0.16, uv=uv, semente=51, normal=False)
     t.pinta(q.forma(traco(rach, 0.55)), "orbita", 0, sobre="cranio", R=-1, tom=0.25)
     t.pinta(q.forma(capsula((12.2, -18.0), (14.8, -19.4), 0.45)), "orbita", 0, sobre="cranio", R=-1, tom=0.25)
-    # órbitas: ovais enormes, afastadas e baixas, com a borda de cima reta e levemente caída para dentro (sério)
-    for sx in (-1, 1):
-        cx = sx * 10.6 + v * 2.2 + (sx * v * -0.6)
-        rx = 7.6 * (1 - 0.12 * v * sx)
-        orb = elipse((cx, 5.2), rx, 8.6, ang=sx * -6) & semiplano((0, -2.2), (-sx * 0.10, -1))
-        dente_orb = lambda X, Y, cx=cx: -0.32 * np.clip(1 - (Y - (q.o[1] - 4)) / 10.0, 0, 1)
+    # órbitas em três-quartos (referência do Tales, 30/10/2026): a da direita grande e redonda, com aro de osso claro;
+    # a da esquerda estreita, encostada na borda do crânio. Fundo cinza-escuro, sem brilho nos olhos.
+    ox = v * 2.0
+    grande = elipse((0.6 + ox, 3.0), 8.0, 7.6, ang=-8)
+    aro = elipse((0.6 + ox, 3.0), 9.9, 9.4, ang=-8) - grande
+    t.pinta(q.forma(aro), "osso", 0, sobre="cranio", tom=0.12, uv=uv, semente=51, normal=False)
+    lateral = elipse((-19.6 + ox, 3.6), 4.2, 5.9, ang=6) & f
+    for orb in (grande, lateral):
+        # sombra mais funda no alto da órbita, fundo um pouco mais claro embaixo
         t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=0.0, uv=uv)
-        # sobrancelha óssea: arco claro logo acima da borda
-        arco = q.forma(elipse((cx, 5.0), rx + 1.6, 9.8, ang=sx * -6) - elipse((cx, 5.6), rx + 0.2, 8.8, ang=sx * -6)) & q.forma(semiplano((0, -1.2), (0, 1)))
-        t.pinta(arco, "osso", 0, sobre="cranio", tom=0.1, uv=uv, semente=51, normal=False)
-        # brilho fraco e frio, quase apagado, no fundo
-        if p.brilho > 0:
-            gx = cx + sx * -1.3 + v * 1.2 + p.olhar[0]
-            gy = 6.4 + p.olhar[1]
-            t.pinta(q.forma(circulo((gx, gy), 1.05)), "brilho", 8.02, pid="cranio", tom=0.3 * p.brilho, sem_contorno=True)
-            t.pinta(q.forma(circulo((gx - 0.4, gy - 0.5), 0.55)), "brilho", 8.03, pid="cranio", tom=0.75 * p.brilho, sem_contorno=True)
-            gp = q.p(gx, gy)
-            t.luz(gp[0], gp[1], 2.0, "#5d7f90", 6.5, 0.6 * p.brilho)
-    # cavidade nasal pequena
-    nz = (v * 2.4, 13.4)
-    nariz = (circulo((nz[0] - 1.0, nz[1] - 0.6), 1.15) | circulo((nz[0] + 1.0, nz[1] - 0.6), 1.15)) | poligono([(nz[0] - 2.0, nz[1] - 0.4), (nz[0] + 2.0, nz[1] - 0.4), (nz[0], nz[1] + 2.0)])
-    t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.2, pid="cranio", tom=0.1)
+    t.pinta(q.forma(elipse((1.4 + ox, 4.6), 5.6, 4.8, ang=-8)), "orbita", 0, sobre="cranio", tom=0.18, normal=False)
+    t.pinta(q.forma(elipse((-19.0 + ox, 5.0), 2.4, 3.6)), "orbita", 0, sobre="cranio", tom=0.14, normal=False)
+    # cavidade nasal pequena, embaixo entre as órbitas, puxada para a esquerda
+    nz = (-11.0 + v * 2.4, 11.6)
+    nariz = poligono([(nz[0] - 2.2, nz[1] - 1.4), (nz[0] + 2.2, nz[1] - 1.4), (nz[0], nz[1] + 2.0)]).suave(circulo((nz[0], nz[1] - 0.8), 1.5), 0.6)
+    t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.2, pid="cranio", tom=0.05)
     # sem boca desenhada: só a sombra da curva de baixo do rosto, para dar volume
     t.pinta(q.forma(elipse((v * 1.0, 19.0), 14.0, 2.4)), "osso", 0, sobre="cranio", tom=-0.1, uv=uv, semente=51, normal=False)
     if sob_capuz:
