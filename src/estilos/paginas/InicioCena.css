@@ -1,0 +1,236 @@
+/* Página inicial, topo do painel e atalhos (30/10/2026, pedido do Tales com o Octopath Traveler II de referência).
+   A cena do acampamento em pixel art com luz "HD-2D" (CenaAcampamento.tsx) fica por trás; por cima, o título, o
+   cartão da próxima ação com o botão de cristal e o painel da sequência no estilo da interface dos jogos. Os nomes
+   são os de sempre: a fantasia está só na arte. */
+
+.cn-heroi {
+  --cn-texto: #f6eedb; --cn-texto-2: #d9ccb0; --cn-ouro: #f0c46a; --cn-borda: rgba(232, 206, 150, 0.5);
+  position: relative; isolation: isolate; overflow: hidden;
+  display: grid; grid-template-columns: minmax(0, 24rem) minmax(0, 1fr) minmax(0, 18rem);
+  grid-template-areas: "titulo . hud" ". . hud" "acao . hud"; gap: 1rem 1.5rem;
+  min-height: 36rem; padding: clamp(1.2rem, 2.4vw, 1.8rem);
+  border: 4px solid #0e0a06; color: var(--cn-texto); background: #10160e;
+  box-shadow: inset 0 0 0 2px rgba(232, 206, 150, 0.35), 0 18px 40px -18px rgba(0, 0, 0, 0.55);
+}
+/* Véu à esquerda para o título ler bem em qualquer hora do dia. */
+.cn-heroi::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(6, 8, 14, 0.55), rgba(6, 8, 14, 0.18) 38%, transparent 55%), linear-gradient(0deg, rgba(6, 8, 14, 0.45), transparent 35%); }
+
+.cn-heroi__titulo { grid-area: titulo; display: grid; gap: 0.5rem; align-content: start; max-width: 30rem; }
+.cn-selo { justify-self: start; margin: 0; padding: 0.2rem 0.7rem; background: rgba(10, 12, 20, 0.6); color: var(--cn-ouro); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+  box-shadow: inset 0 0 0 1px var(--cn-borda); }
+.cn-heroi h1 { margin: 0; color: #fffaf0; font-size: clamp(2rem, 3.6vw, 2.9rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.025em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.55), 0 0 26px rgba(0, 0, 0, 0.55); }
+.cn-lide { margin: 0; max-width: 34ch; color: var(--cn-texto); font-size: 1rem; line-height: 1.45; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
+.cn-lide strong { color: var(--cn-ouro); }
+
+/* Painéis no estilo da interface dos jogos: vidro escuro, filete dourado e losangos nos cantos. */
+.cn-acao, .cn-hud { position: relative; background: linear-gradient(180deg, rgba(16, 20, 32, 0.84), rgba(8, 10, 18, 0.9));
+  box-shadow: inset 0 0 0 1px var(--cn-borda), inset 0 0 0 4px rgba(0, 0, 0, 0.35), inset 0 0 0 5px rgba(232, 206, 150, 0.14), 0 14px 34px rgba(0, 0, 0, 0.45);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.cn-acao::before, .cn-acao::after, .cn-hud::before, .cn-hud::after { content: ""; position: absolute; width: 9px; height: 9px; background: var(--cn-ouro); transform: rotate(45deg);
+  box-shadow: 0 0 8px rgba(240, 196, 106, 0.7); }
+.cn-acao::before, .cn-hud::before { top: -4px; left: -4px; }
+.cn-acao::after, .cn-hud::after { bottom: -4px; right: -4px; }
+
+.cn-heroi__acao { grid-area: acao; align-self: end; display: grid; gap: 0.6rem; max-width: 24rem; }
+.cn-acao { display: grid; gap: 0.55rem; padding: 1.1rem 1.25rem 1.25rem; }
+.cn-acao--carregando { min-height: 12rem; }
+.cn-acao__selo { margin: 0; color: var(--cn-ouro); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.cn-acao__titulo { margin: 0; color: #fffaf0; font-size: 1.45rem; font-weight: 800; line-height: 1.15; }
+.cn-acao__detalhe { margin: 0; color: var(--cn-texto-2); font-size: 0.93rem; line-height: 1.45; }
+.cn-acao__detalhe strong { color: var(--cn-texto); }
+.cn-acao__progresso { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0.7rem; color: var(--cn-texto-2); font-size: 0.85rem; }
+.cn-acao__progresso strong { color: #fffaf0; font-size: 1rem; }
+.cn-depois { justify-self: start; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.75rem; background: rgba(10, 12, 20, 0.7); color: var(--cn-texto); font-size: 0.85rem; font-weight: 650; text-decoration: none;
+  box-shadow: inset 0 0 0 1px var(--cn-borda); }
+.cn-depois:hover { color: #fff; background: rgba(10, 12, 20, 0.85); }
+
+/* O botão de cristal (o "Atacar" do Octopath): hexágono azul com brilho que corre. */
+.cn-cristal { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; justify-self: stretch; margin-top: 0.3rem;
+  min-height: 3.4rem; padding: 0.7rem 2.2rem; border: 0; color: #fff; font: inherit; font-size: 1.12rem; font-weight: 800; letter-spacing: 0.01em; text-decoration: none; cursor: pointer;
+  text-shadow: 0 1px 0 rgba(0, 40, 60, 0.7), 0 0 10px rgba(160, 240, 255, 0.6);
+  background: linear-gradient(180deg, #a8f0fa 0%, #48c4dc 38%, #1a8cae 62%, #0f5f80 100%);
+  clip-path: polygon(16px 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 16px 100%, 0 50%);
+  transition: filter 0.15s, transform 0.15s; }
+.cn-cristal::before { content: ""; position: absolute; inset: 3px; z-index: -1; clip-path: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), transparent 45%), linear-gradient(180deg, #5fd3e8, #1677a0); }
+.cn-cristal::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.55) 48%, transparent 60%);
+  transform: translateX(-120%); animation: cn-reflexo 4.5s ease-in-out infinite; }
+@keyframes cn-reflexo { 0%, 60% { transform: translateX(-120%); } 85%, 100% { transform: translateX(120%); } }
+.cn-cristal:hover, .cn-cristal:focus-visible { filter: brightness(1.12) drop-shadow(0 0 10px rgba(120, 220, 255, 0.6)); color: #fff; outline: 0; }
+.cn-cristal:focus-visible { filter: brightness(1.15) drop-shadow(0 0 0 #fff) drop-shadow(0 0 6px #fff); }
+.cn-cristal:active { transform: translateY(1px) scale(0.99); }
+.cn-cristal:disabled { filter: grayscale(0.7) brightness(0.8); cursor: not-allowed; }
+
+/* Barras com nome claro (como vida e energia dos jogos). */
+.cn-barra { position: relative; display: block; height: 10px; background: rgba(255, 255, 255, 0.1); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(232, 206, 150, 0.22); overflow: hidden; }
+.cn-barra > span { position: absolute; inset: 1px auto 1px 1px; max-width: calc(100% - 2px); transition: width 0.9s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.cn-barra--verde > span { background: linear-gradient(180deg, #b6f59a, #4fbf4a 50%, #2a8a34); }
+.cn-barra--azul > span { background: linear-gradient(180deg, #a9dcff, #4a9be0 50%, #2563b0); }
+.cn-barra--ouro > span { background: linear-gradient(180deg, #ffe7a3, #f0b840 50%, #c48218); }
+
+/* Painel da sequência. */
+.cn-hud { grid-area: hud; align-self: start; display: grid; gap: 0.95rem; padding: 1rem 1.1rem 1.1rem; }
+.cn-hud__rotulo { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin: 0 0 0.35rem; color: var(--cn-ouro); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.cn-hud__rotulo b { color: #fffaf0; font-size: 0.85rem; letter-spacing: 0; }
+.cn-hud__rotulo a { color: var(--cn-texto-2); font-size: 0.75rem; font-weight: 650; letter-spacing: 0; text-transform: none; text-decoration: none; display: inline-flex; align-items: center; gap: 0.15rem; }
+.cn-hud__rotulo a:hover { color: #fff; }
+.cn-hud__seq { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.85rem; align-items: center; }
+.cn-hud__seq p { margin: 0; }
+.cn-hud__numero { color: var(--cn-texto); font-size: 0.95rem; font-weight: 700; }
+.cn-hud__numero strong { margin-right: 0.15rem; color: var(--cn-ouro); font-family: var(--fonte-pixel-titulo); font-size: 2.6rem; font-weight: 400; line-height: 0.9; text-shadow: 0 2px 0 #000, 0 0 14px rgba(240, 196, 106, 0.45); }
+.cn-hud__nota { color: var(--cn-texto-2); font-size: 0.78rem; line-height: 1.35; }
+.cn-hud__nota b { color: var(--cn-ouro); }
+.cn-hud__barra-linha small { display: block; margin-top: 0.3rem; color: var(--cn-texto-2); font-size: 0.75rem; }
+/* A chama do painel, desenhada em CSS, na cor do estágio da sequência. */
+.cn-hud__chama { --c1: #ffe08a; --c2: #ff8a2a; position: relative; width: 38px; height: 46px; }
+.cn-hud__chama::before { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 55% at 50% 70%, var(--c1), var(--c2) 60%, transparent 62%);
+  clip-path: polygon(50% 0, 66% 22%, 80% 40%, 86% 64%, 78% 86%, 60% 100%, 40% 100%, 22% 86%, 14% 64%, 22% 42%, 34% 30%, 42% 12%);
+  filter: drop-shadow(0 0 8px var(--c2)); animation: cn-chama 0.9s steps(3) infinite alternate; transform-origin: 50% 100%; }
+.cn-hud__chama::after { content: ""; position: absolute; left: 6px; right: 6px; bottom: -2px; height: 6px; background: #5a3a22; box-shadow: inset 0 2px 0 #7a4a26, 0 0 0 2px #1b1208; }
+@keyframes cn-chama { to { transform: scale(0.92, 1.06) skewX(-3deg); } }
+.cn-hud__chama--cinzas::before { --c1: #9aa0a6; --c2: #5a6066; filter: none; animation: none; transform: scaleY(0.4); }
+.cn-hud__chama--azul { --c1: #c8ecff; --c2: #3a8cf0; }
+.cn-hud__chama--arcana { --c1: #f0d8ff; --c2: #9a4ae0; }
+.cn-hud__chama--lendaria { --c1: #fff6c8; --c2: #f0b020; }
+
+/* A semana em sete tochas. */
+.cn-tochas { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.2rem; margin: 0; padding: 0; list-style: none; }
+.cn-tocha { position: relative; display: grid; justify-items: center; gap: 0; }
+.cn-tocha__fogo { width: 12px; height: 16px; margin-bottom: -1px; background: radial-gradient(60% 55% at 50% 70%, #ffe08a, #ff8a2a 60%, transparent 62%);
+  clip-path: polygon(50% 0, 75% 35%, 88% 70%, 70% 100%, 30% 100%, 12% 70%, 25% 35%); filter: drop-shadow(0 0 6px #ff9a3a); animation: cn-chama 0.7s steps(3) infinite alternate; transform-origin: 50% 100%; }
+.cn-tocha__haste { width: 6px; height: 18px; background: linear-gradient(90deg, #7a4a26, #5a3418); box-shadow: 0 0 0 1px #1b1208; }
+.cn-tocha small { margin-top: 0.25rem; color: var(--cn-texto-2); font-size: 0.66rem; font-weight: 700; }
+.cn-tocha--parcial .cn-tocha__fogo { transform: scale(0.6); opacity: 0.75; transform-origin: 50% 100%; }
+.cn-tocha--perdido .cn-tocha__fogo, .cn-tocha--futuro .cn-tocha__fogo { background: #4a4a50; filter: none; animation: none; transform: scaleY(0.25); transform-origin: 50% 100%; opacity: 0.6; }
+.cn-tocha--hoje .cn-tocha__fogo { background: radial-gradient(60% 55% at 50% 70%, #ffd0a0, #c06a2a 60%, transparent 62%); opacity: 0.6; transform: scale(0.7); }
+.cn-tocha--hoje small, .cn-tocha--hoje-feito small { color: var(--cn-ouro); }
+.cn-tocha--hoje::after, .cn-tocha--hoje-feito::after { content: ""; position: absolute; inset: -4px 2px 14px; box-shadow: inset 0 0 0 1px rgba(240, 196, 106, 0.6); pointer-events: none; }
+
+.cn-hud__quase ul { display: grid; gap: 0.55rem; margin: 0; padding: 0; list-style: none; }
+.cn-hud__quase li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.6rem; align-items: center; }
+.cn-hud__quase li > span { display: grid; gap: 0.15rem; min-width: 0; }
+.cn-hud__quase strong { overflow: hidden; color: var(--cn-texto); font-size: 0.85rem; text-overflow: ellipsis; white-space: nowrap; }
+.cn-hud__quase small { color: var(--cn-texto-2); font-size: 0.72rem; }
+.cn-hud__quase .cn-barra { height: 7px; }
+
+/* ── A cena ── */
+.cn-cena { --px: 0; --py: 0; position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.cn-svg { display: block; width: 100%; height: 100%; }
+.cn-cena--manha { --ceu-1: #86bde6; --ceu-2: #f3e0b8; --ceu-3: #f1c98e; --monte: #8698b2; --mata: #3b5a3a; --mata-luz: #58804a; --chao: #4c7a38; --grama-luz: #6c9c48; --grama-escura: #3a5e2a;
+  --clareira: #ab8c5a; --tufo: #3d6a2e; --frente: #10180e; --tom: #fff; --tom-op: 0; --luz-fogo: 0.5; }
+.cn-cena--tarde { --ceu-1: #f2a868; --ceu-2: #f6d49a; --ceu-3: #e89a62; --monte: #8e6c7c; --mata: #3e4f30; --mata-luz: #6d7a3a; --chao: #586e30; --grama-luz: #84903e; --grama-escura: #3e5426;
+  --clareira: #b48a52; --tufo: #46602a; --frente: #1a140c; --tom: #ffb070; --tom-op: 0.28; --luz-fogo: 0.7; }
+.cn-cena--noite { --ceu-1: #070d22; --ceu-2: #17224a; --ceu-3: #2c3760; --monte: #2a3658; --mata: #1c2c30; --mata-luz: #2a4038; --chao: #263a2a; --grama-luz: #34503a; --grama-escura: #1a2a20;
+  --clareira: #6a5a44; --tufo: #22382a; --frente: #05080a; --tom: #2a3a8a; --tom-op: 0.55; --luz-fogo: 1; }
+.cn-ceu-1 { stop-color: var(--ceu-1); } .cn-ceu-2 { stop-color: var(--ceu-2); } .cn-ceu-3 { stop-color: var(--ceu-3); }
+.cn-montes { fill: var(--monte); }
+.cn-mata { fill: var(--mata); } .cn-mata .cn-mata-luz { fill: var(--mata-luz); } .cn-mata .cn-tronco-fundo { fill: #2a1e14; }
+.cn-chao { fill: var(--chao); }
+.cn-chao-pontos .cn-grama-luz { fill: var(--grama-luz); } .cn-chao-pontos .cn-grama-escura { fill: var(--grama-escura); }
+.cn-clareira { fill: var(--clareira); opacity: 0.85; }
+.cn-tufos { fill: var(--tufo); }
+.cn-frente { fill: var(--frente); } .cn-frente .cn-frente-tronco { fill: #1a120a; }
+.cn-sombras { fill: rgba(0, 0, 0, 0.3); }
+.cn-tom { fill: var(--tom); opacity: var(--tom-op); mix-blend-mode: multiply; pointer-events: none; }
+.cn-luzes { mix-blend-mode: screen; pointer-events: none; }
+.cn-luz-fogo { opacity: var(--luz-fogo); transform-origin: 164px 110px; animation: cn-tremula 2.6s ease-in-out infinite; }
+.cn-luz-lanterna { opacity: calc(var(--luz-fogo) * 0.9); }
+@keyframes cn-tremula { 0%, 100% { transform: scale(1); } 30% { transform: scale(1.05); opacity: calc(var(--luz-fogo) * 0.85); } 60% { transform: scale(0.97); } }
+.cn-sol { fill: #fff2c4; filter: drop-shadow(0 0 4px #fff0b0); }
+.cn-lua { fill: #e8eefc; filter: drop-shadow(0 0 3px #bcd0ff); }
+.cn-cena--manha .cn-lua, .cn-cena--tarde .cn-lua, .cn-cena--noite .cn-sol { display: none; }
+.cn-cena--tarde .cn-sol { fill: #ffd890; transform: translate(-40px, 40px); }
+.cn-estrelas { fill: #fff; display: none; }
+.cn-cena--noite .cn-estrelas { display: inline; }
+.cn-estrelas rect { animation: cn-pisca 3s ease-in-out infinite; animation-delay: calc(var(--i) * -0.37s); }
+@keyframes cn-pisca { 50% { opacity: 0.2; } }
+
+/* Parallax: o fundo anda menos, a frente anda mais (unidades da arte). */
+.cn-camada { transition: transform 0.35s ease-out; }
+.cn-camada--fundo { transform: translate(calc(var(--px) * -2.5px), calc(var(--py) * -1px)); }
+.cn-camada--meio { transform: translate(calc(var(--px) * -4px), calc(var(--py) * -1.5px)); }
+.cn-camada--frente { transform: translate(calc(var(--px) * -9px), calc(var(--py) * -3px)); }
+
+.cn-fogo { animation: cn-fogo-quadros 0.66s steps(4) infinite; }
+.cn-fogo--cinzas .cn-fogo { animation-duration: 2.4s; }
+@keyframes cn-fogo-quadros { to { transform: translateX(-128px); } }
+.cn-brasas rect { fill: #ffd27a; animation: cn-brasa var(--t) linear var(--d) infinite; }
+@keyframes cn-brasa { 0% { transform: translate(0, 0); opacity: 0; } 15% { opacity: 1; } 100% { transform: translate(var(--dx), -40px); opacity: 0; } }
+.cn-residente, .cn-gato { transition: filter 0.15s; }
+.cn-residente:hover, .cn-gato:hover { filter: brightness(1.18); }
+.cn-balao text { font-family: var(--fonte-pixel-titulo); font-size: 4.6px; fill: #1b1208; }
+.cn-balao { animation: cn-balao 0.25s steps(3); }
+@keyframes cn-balao { from { opacity: 0; transform: translateY(2px); } }
+
+/* Luz por cima da cena. */
+.cn-raios { position: absolute; inset: -10% -5% 20%; pointer-events: none; mix-blend-mode: screen; filter: blur(14px);
+  background: linear-gradient(112deg, transparent 22%, rgba(255, 236, 190, 0.5) 26%, transparent 32%, transparent 40%, rgba(255, 236, 190, 0.32) 44%, transparent 49%, transparent 60%, rgba(255, 230, 180, 0.22) 63%, transparent 68%);
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent 85%); mask-image: linear-gradient(180deg, #000, transparent 85%); animation: cn-raios 10s ease-in-out infinite alternate; }
+@keyframes cn-raios { from { opacity: 0.65; transform: translateX(-1.5%); } to { opacity: 1; transform: translateX(1.5%); } }
+.cn-cena--tarde .cn-raios { filter: blur(14px) sepia(0.6) saturate(2); }
+.cn-cena--noite .cn-raios { display: none; }
+.cn-vinheta { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(120% 95% at 55% 55%, transparent 50%, rgba(4, 3, 2, 0.55) 100%); }
+.cn-vagalumes { position: absolute; inset: 0; pointer-events: none; display: none; }
+.cn-cena--noite .cn-vagalumes { display: block; }
+.cn-vagalumes i { position: absolute; width: 3px; height: 3px; background: #e8ff9a; box-shadow: 0 0 6px 2px rgba(210, 255, 120, 0.7); border-radius: 50%; opacity: 0;
+  animation: cn-vagalume var(--t) ease-in-out var(--d) infinite; }
+@keyframes cn-vagalume { 0%, 100% { opacity: 0; transform: translate(0, 0); } 30% { opacity: 1; } 50% { transform: translate(14px, -10px); } 70% { opacity: 0.8; } }
+.cn-folhas { position: absolute; inset: 0; pointer-events: none; }
+.cn-cena--noite .cn-folhas { display: none; }
+.cn-folhas i { position: absolute; top: -4%; width: 6px; height: 4px; background: #c8a040; box-shadow: inset -2px 0 0 #8a6a20; opacity: 0;
+  animation: cn-folha var(--t) linear var(--d) infinite; }
+.cn-cena--tarde .cn-folhas i { background: #d8703a; box-shadow: inset -2px 0 0 #9a4020; }
+@keyframes cn-folha { 0% { opacity: 0; transform: translate(0, 0) rotate(0); } 10% { opacity: 0.9; } 50% { transform: translate(60px, 260px) rotate(200deg); } 90% { opacity: 0.8; } 100% { opacity: 0; transform: translate(10px, 520px) rotate(400deg); } }
+
+/* Caminho do cronograma, logo abaixo da cena, na mesma família visual. */
+.ip-caminho-solto { padding: 0.9rem; background: linear-gradient(180deg, #121a12, #0d120c); border: 4px solid #0e0a06; box-shadow: inset 0 0 0 2px rgba(232, 206, 150, 0.25); color: #f6eedb; margin-top: calc(-1 * var(--e-5, 1.5rem) + 0.5rem); }
+
+/* ── Atalhos: a praça com as construções ── */
+.cn-praca { position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 0.6rem; padding: 1.1rem 1rem 0.9rem;
+  background: linear-gradient(180deg, #d9c9a2 0, #cdb98c 62%, #a8916a 62%, #b39d76 100%); border: 4px solid #2a1a0e;
+  box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.25), inset 0 -4px 0 rgba(0, 0, 0, 0.12), 0 12px 28px -16px rgba(0, 0, 0, 0.5); }
+/* Calçamento de pedra no pé da praça. */
+.cn-praca::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 38%; pointer-events: none; opacity: 0.35;
+  background-image: linear-gradient(90deg, rgba(60, 40, 20, 0.5) 1px, transparent 1px), linear-gradient(0deg, rgba(60, 40, 20, 0.5) 1px, transparent 1px); background-size: 18px 10px; }
+.cn-predio { position: relative; display: grid; justify-items: center; gap: 0.35rem; padding: 0.3rem 0.2rem 0; color: #2a1a0e; text-decoration: none; }
+.cn-predio .pd { width: 100%; max-width: 8.5rem; height: auto; aspect-ratio: 40 / 36; filter: drop-shadow(0 4px 0 rgba(40, 24, 10, 0.25)); transition: transform 0.15s steps(2), filter 0.2s; }
+.cn-predio:hover .pd, .cn-predio:focus-visible .pd { transform: translateY(-4px); filter: drop-shadow(0 8px 0 rgba(40, 24, 10, 0.2)) drop-shadow(0 0 12px rgba(255, 210, 120, 0.55)); }
+.pd-janela { transition: fill 0.2s; }
+.cn-predio:hover .pd-janela, .cn-predio:focus-visible .pd-janela { fill: #ffe9a0; }
+.cn-placa { position: relative; z-index: 1; display: grid; gap: 0.05rem; justify-items: center; width: 100%; max-width: 11rem; padding: 0.35rem 0.5rem 0.45rem; text-align: center;
+  background: linear-gradient(180deg, #a9703e, #8a5530); color: #fff4dc; box-shadow: inset 0 2px 0 #c98a50, inset 0 -3px 0 #5b3519, 0 0 0 2px #2a1a0e, 0 3px 0 2px rgba(0, 0, 0, 0.2); }
+.cn-placa strong { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.95rem; font-weight: 800; text-shadow: 0 1px 0 #3a2210; }
+.cn-placa small { color: #f3dfbd; font-size: 0.74rem; line-height: 1.25; }
+.cn-predio:focus-visible { outline: 3px solid #2f6aa8; outline-offset: 2px; }
+.cn-predio__contador { position: absolute; top: 0.1rem; right: calc(50% - 4.4rem); z-index: 2; min-width: 1.9rem; padding: 0.1rem 0.35rem; background: #c0392b; color: #fff; font-size: 0.8rem; text-align: center;
+  box-shadow: 0 0 0 2px #2a1a0e, inset 0 2px 0 #e05a4a; animation: cn-sino 2.4s ease-in-out infinite; }
+@keyframes cn-sino { 0%, 80%, 100% { transform: rotate(0); } 85% { transform: rotate(-10deg); } 90% { transform: rotate(10deg); } 95% { transform: rotate(-5deg); } }
+
+:root[data-tema="escuro"] .cn-praca { background: linear-gradient(180deg, #2a2a3a 0, #232434 62%, #1a1b28 62%, #1e2030 100%); border-color: #05060a; }
+:root[data-tema="escuro"] .cn-praca .pd { filter: brightness(0.82) drop-shadow(0 4px 0 rgba(0, 0, 0, 0.4)); }
+:root[data-tema="escuro"] .cn-praca .pd-janela { fill: #ffd27a; }
+
+/* ── Celular e tablet: a cena em cima, os painéis embaixo, em coluna ── */
+@media (max-width: 60rem) {
+  .cn-heroi { grid-template-columns: minmax(0, 1fr); grid-template-areas: "titulo" "cena" "acao" "hud"; min-height: 0; padding: 0 0 1rem; gap: 0; background: linear-gradient(180deg, #10160e, #0b0f0a); }
+  .cn-heroi::before { display: none; }
+  .cn-heroi__titulo { grid-area: titulo; padding: 1rem 1rem 0.9rem; background: linear-gradient(180deg, #0c1220, #10160e); }
+  /* A cena com zoom no acampamento (o desenho fica maior que a tela e centrado na fogueira). */
+  .cn-cena { position: relative; grid-area: cena; height: clamp(14rem, 60vw, 19rem); z-index: 0; }
+  .cn-svg { position: absolute; bottom: 0; left: -48%; width: 190%; height: auto; }
+  .cn-heroi h1 { font-size: clamp(1.55rem, 6.6vw, 2.1rem); }
+  .cn-lide { font-size: 0.9rem; }
+  .cn-heroi__acao, .cn-hud { margin: 0 0.75rem; max-width: none; }
+  .cn-heroi__acao { grid-area: acao; margin-top: -2.4rem; margin-bottom: 0.9rem; z-index: 1; }
+  .cn-praca { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(8.4rem, 36%); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .cn-praca::-webkit-scrollbar { display: none; }
+  .cn-predio { scroll-snap-align: start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cn-fogo, .cn-brasas rect, .cn-luz-fogo, .cn-estrelas rect, .cn-raios, .cn-vagalumes i, .cn-folhas i, .cn-cristal::after, .cn-hud__chama::before, .cn-tocha__fogo, .cn-predio__contador, .cn-balao { animation: none; }
+  .cn-folhas, .cn-brasas { display: none; }
+  .cn-camada, .cn-predio .pd { transition: none; }
+}

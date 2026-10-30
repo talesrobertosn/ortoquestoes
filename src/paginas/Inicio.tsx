@@ -22,7 +22,10 @@ import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
-import { type DiaSequencia, PainelSequencia } from '../componentes/inicio/PainelSequencia'
+import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
+import { TopoDia } from '../componentes/inicio/cena/TopoDia'
+import { Predio } from '../componentes/inicio/cena/Predios'
+import '../estilos/paginas/InicioCena.css'
 import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
 import { usarConquistas } from '../estado/usarConquistas'
 import { emblemasQuaseLa } from '../estado/conquistas'
@@ -376,77 +379,53 @@ export function Inicio() {
   const pctAcao = acao?.progresso && acao.progresso.total ? Math.min(100, Math.round((acao.progresso.feitas / acao.progresso.total) * 100)) : null
   return (
     <div className="ip ip--painel">
-      <section className="ip-heroi ip-heroi--painel ip-entra" aria-labelledby="ip-painel-titulo">
-        <div className="ip-heroi__texto">
-          <p className="tr-heroi__selo ip-heroi__selo">Seu dia de estudo</p>
-          <h1 id="ip-painel-titulo">{titulo}</h1>
-          <p className="ip-heroi__lide">{calculo && !calculo.provaPassou
-            ? <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a prova. {cabecalhoDoDia.incentivo}</>
-            : cabecalhoDoDia.incentivo}</p>
-
-          {acao && (
-            <div className="ip-acao">
-              <p className="ip-acao__selo">{acao.selo}</p>
-              <h2 className="ip-acao__titulo">{acao.titulo}</h2>
-              <p className="ip-acao__detalhe">{acao.detalhe}</p>
-              {acao.progresso && (
-                acao.progresso.total > 0 && acao.progresso.total <= 40
-                  ? <span className="ip-blocos" role="img" aria-label={`${acao.progresso.feitas} de ${acao.progresso.total}`} style={{ gridTemplateColumns: `repeat(${acao.progresso.total}, minmax(0, 1fr))` }}>
-                    {Array.from({ length: acao.progresso.total }, (_, i) => <span key={i} className={i < acao.progresso!.feitas ? 'cheio' : ''} style={{ '--i': i } as CSSProperties} />)}
-                  </span>
-                  : <span className="ip-barra" role="img" aria-label={`${pctAcao}%`}><span style={{ width: `${pctAcao}%` }} /></span>
-              )}
-              <div className="ip-acao__linha">
-                {acao.destino
-                  ? <a className="botao ip-botao-ouro botao--grande" href={href(acao.destino)}><Icone nome={acao.icone} tamanho={18} /> {acao.botao}</a>
-                  : <button type="button" className="botao ip-botao-ouro botao--grande" onClick={acao.aoClicar} disabled={acao.desabilitada}><Icone nome={acao.icone} tamanho={18} /> {acao.botao}</button>}
-                {acao.progresso && <span className="ip-acao__conta numerico"><strong>{acao.progresso.feitas}</strong> de {acao.progresso.total}</span>}
+      {/* Topo (30/10/2026): a cena do acampamento em pixel art com luz HD-2D, a próxima ação e a sequência. */}
+      <TopoDia
+        selo="Seu dia de estudo"
+        titulo={titulo}
+        lide={calculo && !calculo.provaPassou ? <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a prova. {cabecalhoDoDia.incentivo}</> : cabecalhoDoDia.incentivo}
+        streak={streak} dias={diasSequencia} quaseLa={quaseLa} conquistadas={conquistadas} totalConquistas={totalConquistas}
+        acao={acao ? (
+          <div className="cn-acao">
+            <p className="cn-acao__selo">{acao.selo}</p>
+            <h2 className="cn-acao__titulo">{acao.titulo}</h2>
+            <p className="cn-acao__detalhe">{acao.detalhe}</p>
+            {acao.progresso && (
+              <div className="cn-acao__progresso">
+                <span className="cn-barra cn-barra--ouro" role="img" aria-label={`${acao.progresso.feitas} de ${acao.progresso.total}`}><span style={{ width: `${pctAcao ?? 0}%` }} /></span>
+                <span className="numerico"><strong>{acao.progresso.feitas}</strong> de {acao.progresso.total}</span>
               </div>
-              {/* O que vem depois, sem competir com a ação principal. */}
-              {(metaHoje || sessaoEmAndamento) && revisarHoje > 0 && (
-                <a className="ip-acao__depois" href={href('/revisao')}><Icone nome="calendario" tamanho={15} /> Depois: {revisarHoje} {revisarHoje === 1 ? 'questão' : 'questões'} para rever hoje <Icone nome="direita" tamanho={14} /></a>
-              )}
-            </div>
-          )}
+            )}
+            {acao.destino
+              ? <a className="cn-cristal" href={href(acao.destino)}><Icone nome={acao.icone} tamanho={20} /> {acao.botao}</a>
+              : <button type="button" className="cn-cristal" onClick={acao.aoClicar} disabled={acao.desabilitada}><Icone nome={acao.icone} tamanho={20} /> {acao.botao}</button>}
+          </div>
+        ) : <div className="cn-acao cn-acao--carregando" aria-busy="true" />}
+        depois={(metaHoje || sessaoEmAndamento) && revisarHoje > 0 ? (
+          <a className="cn-depois" href={href('/revisao')}><Icone nome="calendario" tamanho={15} /> Depois: {revisarHoje} {revisarHoje === 1 ? 'questão' : 'questões'} para rever hoje <Icone nome="direita" tamanho={14} /></a>
+        ) : undefined}
+      />
+      {(cronogramaNoPainel && calculo && cronograma.plano) || (!cronograma.carregando && !calculo) ? (
+        <div className="ip-caminho-solto">
+          {cronogramaNoPainel && calculo && cronograma.plano && <CaminhoProva calculo={calculo} plano={cronograma.plano} />}
+          {!cronograma.carregando && !calculo && <CaminhoConvite premium={cronograma.premium} />}
         </div>
+      ) : null}
 
-        <PainelSequencia streak={streak} dias={diasSequencia} quaseLa={quaseLa} conquistadas={conquistadas} totalConquistas={totalConquistas} />
-        {cronogramaNoPainel && calculo && cronograma.plano && <CaminhoProva calculo={calculo} plano={cronograma.plano} />}
-        {!cronograma.carregando && !calculo && <CaminhoConvite premium={cronograma.premium} />}
-      </section>
-
-      {/* Atalhos (25/10/2026, pedido do Tales: harmonia): todos do mesmo jeito, ícone em pixel e uma linha de contexto.
-          Novidade ganha o selo fino, sem fogo. */}
-      <nav className="ip-atalhos ip-entra" aria-label="Atalhos" style={{ '--i': 1 } as CSSProperties}>
-        <a className="ip-atalho" href={href('/treinar')}>
-          <IconePixel nome="treinar" tamanho={40} />
-          <span><strong>Treinar</strong><small>Monte a sua sessão</small></span>
-        </a>
-        <a className="ip-atalho" href={href('/revisao')}>
-          <IconePixel nome="revisao" tamanho={40} />
-          <span><strong>Revisão</strong><small>{revisarHoje ? `${revisarHoje.toLocaleString('pt-BR')} para hoje` : 'Em dia por hoje'}</small></span>
-          {revisarHoje > 0 && <b className="ip-atalho__contador numerico">{revisarHoje > 99 ? '99+' : revisarHoje}</b>}
+      {/* Atalhos (30/10/2026): cada um é uma construção em pixel art, com o nome real na placa. */}
+      <nav className="cn-praca" aria-label="Atalhos">
+        <a className="cn-predio" href={href('/treinar')}><Predio tipo="treinar" /><span className="cn-placa"><strong>Treinar</strong><small>Monte a sua sessão</small></span></a>
+        <a className="cn-predio" href={href('/revisao')}>
+          <Predio tipo="revisao" />
+          {revisarHoje > 0 && <b className="cn-predio__contador numerico">{revisarHoje > 99 ? '99+' : revisarHoje}</b>}
+          <span className="cn-placa"><strong>Revisão</strong><small>{revisarHoje ? `${revisarHoje.toLocaleString('pt-BR')} para hoje` : 'Em dia por hoje'}</small></span>
         </a>
         {FLASHCARDS_NA_CAPA && <>
-          <a className="ip-atalho" href={href('/flashcards/biblioteca')}>
-            <span className="ip-px ip-px--cartas" aria-hidden="true"><i /><i /><i /></span>
-            <span><strong>Estudar flashcards</strong><small>Revisão espaçada</small></span>
-          </a>
-          <a className="ip-atalho" href={href('/flashcards/cripta')}>
-            <IconePixel nome="ranking" tamanho={40} />
-            <span><strong>Jogar o Torneio</strong><small>Flashcards no modo jogo</small></span>
-          </a>
+          <a className="cn-predio" href={href('/flashcards/biblioteca')}><Predio tipo="flashcards" /><span className="cn-placa"><strong>Estudar flashcards</strong><small>Revisão espaçada</small></span></a>
+          <a className="cn-predio" href={href('/flashcards/cripta')}><Predio tipo="torneio" /><span className="cn-placa"><strong>Jogar o Torneio</strong><small>Flashcards no modo jogo</small></span></a>
         </>}
-        {bibliotecaVisivel() && (
-          <a className="ip-atalho" href={href('/resumos')}>
-            <span className="ip-px ip-px--livros" aria-hidden="true"><i /><i /><i /></span>
-            <span><strong>Resumos</strong><small>Leia antes das questões</small></span>
-          </a>
-        )}
-        <a className="ip-atalho" href={href('/atlas')}>
-          <img className="ip-atlas-icone" src={recurso('atlas3d/icone-mao.png')} width={44} height={44} alt="" loading="lazy" decoding="async" />
-          <span><strong>Atlas 3D <SeloNovo /></strong><small>Clique no osso</small></span>
-        </a>
+        {bibliotecaVisivel() && <a className="cn-predio" href={href('/resumos')}><Predio tipo="resumos" /><span className="cn-placa"><strong>Resumos</strong><small>Leia antes das questões</small></span></a>}
+        <a className="cn-predio" href={href('/atlas')}><Predio tipo="atlas" /><span className="cn-placa"><strong>Atlas 3D <SeloNovo /></strong><small>Clique no osso</small></span></a>
       </nav>
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
