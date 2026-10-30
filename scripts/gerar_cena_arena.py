@@ -424,7 +424,11 @@ def estandarte(c: Camada, x0: int, y0: int, w: int, h: int, pano: str, emblema: 
 
 
 def chama(c: Camada, x: int, y: int, tam: int = 1) -> None:
-    """Chama de tocha/vela em pixel art (a luz vem depois, na montagem)."""
+    """Chama de tocha/vela em pixel art (a luz vem depois, na montagem). De manhã (páginas) fica só o pavio."""
+    if PERIODO == "manha":
+        c.p(x, y, "#2a1e18")
+        c.p(x, y - 1, "#1a1210", 0.8)
+        return
     if tam <= 0:
         c.p(x, y, "#fff2b0")
         c.p(x, y - 1, "#ffb040", 0.8)
@@ -1217,7 +1221,7 @@ def ceu_arena_hora() -> np.ndarray:
             if b > 0.8 and 0 < x < W - 1 and y > 0:
                 for (dx, dy) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                     ceu[y + dy, x + dx] = np.minimum(1, ceu[y + dy, x + dx] + b * 0.3)
-        mx, my, r = 312, 12, 5.5  # lua cheia, alta, à direita do centro
+        mx, my, r = 380, 9, 5.5  # lua cheia, alta, no vão entre os dois gomos do velário
         for y in range(H):
             for x in range(W):
                 d = math.hypot(x - mx, y - my)
@@ -1352,7 +1356,7 @@ def montar_arena_hora() -> Image.Image:
 
     xs, ys = GRADE_X / ESC, GRADE_Y / ESC
     px, py = PODIO
-    sol = {"manha": (26, 2), "tarde": AR_SOL, "noite": (312, 12)}[P]
+    sol = {"manha": (26, 2), "tarde": AR_SOL, "noite": (380, 9)}[P]
     # Lado da sombra: de manhã o sol nasce atrás da arquibancada da esquerda e a sombra dela cobre a areia da esquerda
     # (o lado do texto); à tarde, como na página inicial; à noite não há sol: o luar banha tudo de leve.
     if P == "manha":
@@ -1373,7 +1377,7 @@ def montar_arena_hora() -> Image.Image:
     if P == "noite":
         m = m * 0.55 + 0.25 * suave(150, 330, xs)
     luz = amb_sombra * (1 - m[:, :, None]) + amb_sol * m[:, :, None]
-    topo_facho = {"manha": (190, -6), "tarde": (392, -6), "noite": (306, -6)}[P]
+    topo_facho = {"manha": (190, -6), "tarde": (392, -6), "noite": (366, -6)}[P]
     cor_f = {"manha": "#fff2d0", "tarde": "#ffd8a0", "noite": "#a8b8ff"}[P]
     f_luz = facho(topo_facho[0], topo_facho[1], px + 2, py - 30, 10, 40)
     luz = luz + f_luz[:, :, None] * hexa(cor_f) * 0.16
@@ -1407,7 +1411,8 @@ def montar_arena_hora() -> Image.Image:
     fachos *= 1 - 0.65 * pod_a[:, :, 3]
     k_f = {"manha": 0.42, "tarde": 0.5, "noite": 0.3}[P]
     img += fachos[:, :, None] * hexa(cor_f) * k_f
-    poeira(82, 1100, (px - 120, 0, px + 120, 150), "#fff0c0" if P != "noite" else "#c8d4ff", img, fachos * 2.4, 1.0)
+    poeira(82, 1100 if P != "noite" else 380, (px - 120, 0, px + 120, 150), "#fff0c0" if P != "noite" else "#c8d4ff", img,
+           fachos * 2.4, 1.0 if P != "noite" else 0.55)
     g = np.random.default_rng(84)
     for _ in range(70):
         x, y = px - 30 + g.random() * 70, 20 + g.random() * 100
@@ -1515,7 +1520,22 @@ def parede_salao() -> tuple[Camada, np.ndarray, list]:
             t = (y - jy) / jh
             cor = misturar("#16224e", "#3a5a9a", t) + (ceu[y, x] - 0.5) * 0.12
             d = math.hypot(x - LUA[0], y - LUA[1])
-            if d < 7:
+            if PERIODO in ("manha", "tarde"):
+                # de dia o vitral mostra o céu claro com nuvens; à tarde, o sol baixo dentro da janela
+                if PERIODO == "manha":
+                    cor = misturar("#5a9ae0", "#d8ecf8", t ** 0.8) + (ceu[y, x] - 0.5) * 0.08
+                    if ceu[y, x] > 0.6 and 0.15 < t < 0.75:
+                        cor = cor * 0.4 + hexa("#ffffff") * 0.6
+                else:
+                    cor = misturar("#7a5aa0", "#ffc070", min(1, t * 1.3)) + (ceu[y, x] - 0.5) * 0.08
+                    ds = math.hypot(x - (jx + jw * 0.62), y - (jy + jh - 16))
+                    if ds < 5.5:
+                        cor = hexa("#fffbe0")
+                    elif ds < 26:
+                        cor = cor + hexa("#ffd080") * (1 - ds / 26) ** 1.5 * 0.9
+                if (x - y) % 7 == 3 and ((x + y) % 7 == 0 or (x - y) % 7 == 0):
+                    pass
+            elif d < 7:
                 cor = hexa("#f4f6ff") if math.hypot(x - LUA[0] + 2, y - LUA[1] + 2) > 2 or d > 5 else hexa("#d4dcf4")
                 if (x * 7 + y * 3) % 11 == 0 and d < 6:
                     cor = hexa("#c4cce8")
@@ -1546,7 +1566,8 @@ def parede_salao() -> tuple[Camada, np.ndarray, list]:
                 v = (y - wy) / (ww / 2)
                 if v < 1 and v < 1 - math.sqrt(max(0, 1 - dx * dx)):
                     continue
-                cor = misturar("#1a2654", "#34508c", (y - wy) / wh)
+                cor = misturar(*{"manha": ("#6aa6e4", "#d0e6f6"), "tarde": ("#8a6aa8", "#ffb878")}.get(
+                    PERIODO, ("#1a2654", "#34508c")), (y - wy) / wh)
                 if (x + y) % 5 == 0 or (x - y) % 5 == 0:
                     cor = cor * 0.55
                     mascara[y, x] = max(mascara[y, x], 0.3)
@@ -1978,9 +1999,161 @@ def montar_trofeus() -> Image.Image:
     return acabamento(img, "#ffd8a0", "#1a2a5a", esquerda=0.34, seed=92, bloom_lim=0.8, bloom_k=0.45, vinheta_y=0.5)
 
 
+def montar_trofeus_hora() -> Image.Image:
+    """O Salão dos troféus numa hora do dia (página Conquistas): a luz entra pela janela grande (sol da manhã, poente
+    ou luar), as velas e os lustres ficam apagados de manhã, baixinhos à tarde e acesos à noite."""
+    P = PERIODO
+    k_vela = {"manha": 0.0, "tarde": 0.55, "noite": 1.0}[P]
+    cor_j = {"manha": "#fff0d0", "tarde": "#ffa860", "noite": "#8ab0ff"}[P]
+    cor_j2 = {"manha": "#d8c8a0", "tarde": "#c86a3a", "noite": "#4a6ab8"}[P]
+    parede, janela, _ = parede_salao()
+    brilhos: list = []
+    estantes = Camada()
+    estante(estantes, 10, 20, 160, 66, 3, 201, brilhos, 0.5)
+    estante(estantes, 230, 22, 56, 64, 3, 202, brilhos, 1.0)
+    estante(estantes, 396, 22, 62, 64, 3, 203, brilhos, 1.0)
+    bandeiras = estandartes_salao()
+    luzes: list = []
+    tetos = Camada()
+    lustre(tetos, 256, 18, 26, luzes, 1.0)
+    lustre(tetos, 430, 12, 22, luzes, 0.9)
+    lustre(tetos, 96, 16, 22, luzes, 0.45)
+    chao, reflete = chao_salao()
+    luzes_ped: list = []
+    ped = pedestal_salao(brilhos, luzes_ped)
+    px, py = PEDESTAL
+
+    fundo = parede.c.copy()
+    for cam in (estantes, bandeiras):
+        a = cam.c[:, :, 3:4]
+        fundo[:, :, :3] = fundo[:, :, :3] * (1 - a) + cam.c[:, :, :3] * a
+    fundo_a = desfocar_rgba(ampliar(fundo), 0.7)
+    chao_a = ampliar(chao.c)
+    ped_a = ampliar(ped.c)
+    teto_a = desfocar_rgba(ampliar(tetos.c), 1.2)
+
+    img = np.zeros((H * ESC, W * ESC, 3), dtype=np.float32)
+    img = sobre(img, fundo_a)
+    img = sobre(img, chao_a)
+
+    xs, ys = GRADE_X / ESC, GRADE_Y / ESC
+    # Luz: ambiente frio da noite, velas e lustres quentes, o pedestal sob um foco dourado.
+    luz = np.ones_like(img) * hexa({"manha": "#c4c4d8", "tarde": "#b4848a", "noite": "#5a6aaa"}[P]) * \
+        {"manha": 0.62, "tarde": 0.5, "noite": 0.42}[P]
+    luz = luz * (0.8 + 0.2 * suave(40, 300, xs))[:, :, None]
+    for (lx, ly, k) in luzes:
+        luz += luz_pontual(lx, ly, 46, 0.8)[:, :, None] * hexa("#ffb060") * 0.26 * k * k_vela
+        luz += luz_pontual(lx, ly, 12, 1)[:, :, None] * hexa("#ffe0a0") * 0.1 * k * k_vela
+    for (lx, ly) in luzes_ped:
+        luz += luz_pontual(lx, ly, 34, 0.9)[:, :, None] * hexa("#ffa850") * 0.22 * k_vela
+        luz += luz_pontual(lx, ly, 8, 1)[:, :, None] * hexa("#ffe0a0") * 0.5 * k_vela
+    # poça de luz quente na cabeceira do tapete
+    luz += luz_pontual(px, py + 8, 44, 0.32)[:, :, None] * hexa("#ffb870") * 0.45 * (0.4 + 0.6 * k_vela)
+    luz += luz_pontual(px, py - 30, 44, 1.2)[:, :, None] * hexa("#ffd890") * 0.3 * (0.6 + 0.4 * k_vela)
+    # de dia, a luz que entra pela janela rebate e clareia a sala em volta dela
+    if P != "noite":
+        jx_, jy_, jw_, jh_ = JANELA
+        luz += luz_pontual(jx_ + jw_ / 2, SA_CHAO + 10, 120, 0.5)[:, :, None] * hexa(cor_j) * (0.3 if P == "manha" else 0.25)
+    janela_a = ampliar(janela[:, :, None])[:, :, 0]
+    luz_img = luz * (1 - janela_a[:, :, None]) + janela_a[:, :, None] * 1.25
+    img = img * luz_img
+
+    # Mancha da janela projetada no chão pela lua (losangos e montantes inclusos), azulada.
+    jx, jy, jw, jh = JANELA
+    patch = np.zeros((H, W), dtype=np.float32)
+    for y in range(SA_CHAO + 2, H):
+        for x in range(W):
+            wy = jy + jh - (y - (SA_CHAO + 2)) / (H - SA_CHAO - 2) * jh
+            wx = x + (y - SA_CHAO) * {"manha": 0.7, "tarde": 1.6, "noite": 1.1}[P] + 12
+            if 0 <= int(wy) < H and 0 <= int(wx) < W:
+                patch[y, x] = janela[int(wy), int(wx)] * (1 if 300 < wx < 380 else 0)
+    patch = desfocar(ampliar(patch[:, :, None]), 2.5)[:, :, 0]
+    k_patch = {"manha": 1.5, "tarde": 1.6, "noite": 1.6}[P]
+    img += img * patch[:, :, None] * hexa(cor_j) * k_patch + patch[:, :, None] * hexa(cor_j2) * 0.4
+
+    # Reflexo no mármore polido (a parede espelhada na linha do chão), só fora do tapete.
+    yc = SA_CHAO * ESC
+    refl = np.zeros_like(img)
+    for y in range(yc, H * ESC):
+        ys_ = 2 * yc - y
+        if ys_ >= 0:
+            refl[y] = img[ys_]
+    refl = desfocar(refl, 3)
+    rm = ampliar(reflete[:, :, None])[:, :, 0]
+    queda = np.clip(1 - (GRADE_Y - yc) / (60 * ESC), 0, 1)
+    img += refl * (rm * queda * 0.32)[:, :, None]
+
+    # Pedestal e castiçais por cima, com a mesma luz, e o reflexo deles.
+    # a taça recebe sobretudo a luz quente das velas e do foco (o azul da lua só a contorna por trás)
+    na_taca = luz_pontual(px - 4, py - 62, 26, 1.4)[:, :, None]
+    ped_luz = luz * (1 - na_taca * 0.45) + na_taca * hexa("#ffc878") * (0.45 + 0.3 * k_vela)
+    ped_rgb = ped_a[:, :, :3] * ped_luz
+    yb = py * ESC + ESC
+    refl_p = np.zeros_like(ped_a)
+    for y in range(yb, H * ESC):
+        ys_ = 2 * yb - y
+        if 0 <= ys_ < H * ESC:
+            refl_p[y, :, :3] = ped_rgb[ys_]
+            refl_p[y, :, 3] = ped_a[ys_, :, 3]
+    refl_p = desfocar_rgba(refl_p, 3)
+    img += refl_p[:, :, :3] * (refl_p[:, :, 3] * rm * 0.3)[:, :, None]
+    img = img * (1 - ped_a[:, :, 3:4]) + ped_rgb * ped_a[:, :, 3:4]
+    # contraluz: a borda da taça e do pedestal acende com o azul da janela
+    a_ped = ped.c[:, :, 3]
+    borda = np.zeros_like(a_ped)
+    borda[:, 1:] = np.maximum(borda[:, 1:], a_ped[:, 1:] * (1 - a_ped[:, :-1]))
+    borda[:, :-1] = np.maximum(borda[:, :-1], a_ped[:, :-1] * (1 - a_ped[:, 1:]))
+    borda[1:, :] = np.maximum(borda[1:, :], a_ped[1:, :] * (1 - a_ped[:-1, :]) * 0.7)
+    jx, jy, jw, jh = JANELA
+    borda[:, :jx - 2] = 0
+    borda[:, jx + jw + 2:] = 0
+    borda[jy + jh:, :] = 0
+    img += ampliar(borda[:, :, None]) * hexa({"manha": "#fff4e0", "tarde": "#ffb870", "noite": "#9ab8ff"}[P]) * 0.5
+    # lustres
+    teto_rgb = teto_a[:, :, :3] * (luz * 0.9 + 0.2)
+    img = img * (1 - teto_a[:, :, 3:4]) + teto_rgb * teto_a[:, :, 3:4]
+
+    # Fachos de luar entrando pela janela grande (desfoque direcional) e foco dourado no pedestal.
+    vol = np.zeros(img.shape[:2], dtype=np.float32)
+    jm = desfocar(janela_a[:, :, None], 2)[:, :, 0]
+    incl = {"manha": 0.7, "tarde": 1.6, "noite": 1.1}[P]
+    for i in range(0, 60):
+        dx, dy = -int(i * incl * ESC * 0.6), int(i * ESC * 0.6)
+        sh = np.roll(np.roll(jm, dy, 0), dx, 1)
+        vol += sh * (1 - i / 60)
+    vol = desfocar(vol[:, :, None], 8)[:, :, 0] / 60
+    vol *= (GRADE_Y < (SA_CHAO + 40) * ESC)
+    img += vol[:, :, None] * hexa({"manha": "#fff0d4", "tarde": "#ffa860", "noite": "#7a9ae0"}[P]) * \
+        {"manha": 1.5, "tarde": 1.7, "noite": 1.7}[P]
+    foco = facho(px + 8, -4, px, py - 60, 5, 20, dureza=1.8) * np.clip((py - 52 - ys) / 30, 0, 1)
+    foco = desfocar(foco[:, :, None], 5)[:, :, 0]
+    img += foco[:, :, None] * hexa("#ffd890") * 0.32 * (0.5 + 0.5 * k_vela)
+    poeira(301, 500, (300, 0, 400, 120), "#fff0d0", img, foco * 2.0, 0.8)
+    poeira(302, 600, (180, 20, 420, 150), {"manha": "#fff8e8", "tarde": "#ffd0a0", "noite": "#c0d4ff"}[P], img, vol * 3.0, 0.8)
+
+    # Cintilância dos metais: estrelinhas de 4 pontas nos reflexos (mais fortes onde há luz).
+    for item in brilhos:
+        bx, by, kb = item
+        X, Y = int(bx * ESC + 1), int(by * ESC + 1)
+        if not (8 < X < W * ESC - 8 and 8 < Y < H * ESC - 8):
+            continue
+        perto = float(luz[Y, X].mean())
+        forca = kb * min(1.6, 0.35 + perto * 1.2)
+        r = 4 + int(forca * 3)
+        for d in range(-r, r + 1):
+            k = (1 - abs(d) / (r + 1)) ** 2 * forca * 0.9
+            img[Y + d, X] += k * hexa("#fff4d8")
+            img[Y, X + d] += k * hexa("#fff4d8")
+
+    quente, fria = {"manha": ("#fff0d8", "#26386a"), "tarde": ("#ffcf98", "#3a2050"), "noite": ("#ffd8a0", "#1a2a5a")}[P]
+    return acabamento(img, quente, fria, esquerda=0.34, seed=92, bloom_lim=0.8 if P == "noite" else 0.86,
+                      bloom_k=0.45 if P == "noite" else 0.35, vinheta_y=0.5)
+
+
+
 # ─────────────────────────────── Saída ───────────────────────────────
 CENAS = {"arena": ("secao-arena", montar_arena), "trofeus": ("secao-trofeus", montar_trofeus)}
-CENAS_PAGINAS = {"arena": montar_arena_hora}
+CENAS_PAGINAS = {"arena": montar_arena_hora, "trofeus": montar_trofeus_hora}
 
 
 def salvar_pagina(img: Image.Image, nome: str) -> None:

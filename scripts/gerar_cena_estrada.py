@@ -519,7 +519,7 @@ def estrato(c: Camada, cx: float, cy: float, larg: float, alt: float, seed: int,
         for y in range(int(math.floor(topo)), int(math.ceil(base)) + 1):
             v = np.clip((y - topo) / max(base - topo, 1), 0, 1)
             if por_baixo:
-                k = 0.12 + v ** 1.5 * 0.5 + (0.35 if y >= int(math.ceil(base)) - 1 else 0) + perto * 0.45
+                k = 0.2 + v * 0.48 + (0.3 if y >= int(math.ceil(base)) - 1 else 0) + perto * 0.4
             else:
                 k = 0.2 + (1 - v) * 0.5 + (0.3 if y <= int(math.floor(topo)) + 1 else 0) + perto * 0.3
             k += BAYER[y % 4, x % 4] * 0.18
@@ -555,7 +555,7 @@ def pintar_ceu(nome: str, per: dict) -> np.ndarray:
     elif nome == "tarde":
         ceu += (np.exp(-d / 70) * 0.85 + np.exp(-d / 22) * 0.9 + np.exp(-d / 6) * 1.6)[:, :, None] * hexa("#ffd890")
         ceu += (np.exp(-np.abs(YA - 54) / 8) * np.exp(-np.abs(XA - ax) / 180) * 0.4)[:, :, None] * hexa("#ffb070")
-        p = pal("#6a4a7e", "#8a5478", "#b06478", "#d47a74", "#f09a72", "#ffbe7c", "#ffe0a4")
+        p = pal("#5e4278", "#7e4c78", "#a45a78", "#cc6e76", "#ee9070", "#ffb878", "#ffe2a4")
         for (x, y, l, a, s) in ((150, 18, 150, 13, 11), (318, 29, 130, 11, 12), (462, 16, 100, 10, 13), (46, 35, 90, 8, 14),
                                 (236, 43, 90, 6, 15), (436, 40, 60, 5, 16), (330, 10, 80, 7, 17)):
             estrato(nv, x, y, l, a, s, p, (ax, ay))
@@ -1207,16 +1207,23 @@ def carroca(c: Camada, e: Camada, x0: int, base: int, luz) -> list:
         topo = by0 - 17 + 6 * (1 - math.sqrt(max(0, 1 - ponta * ponta))) + abs(u) * 1.5
         for y in range(int(topo), by0 + 1):
             v = (y - topo) / max(1, by0 - topo)
-            nz = math.sqrt(max(0.05, 1 - v * v * 0.6))
-            k = 0.25 + (-v + 0.4) * L[1] * -0.9 + nz * 0.3 + u * L[0] * 0.25 + (0.2 if v < 0.2 else 0)
-            k += math.sin(x * 1.9 + y * 0.4) * 0.05 + (((x * 13 + y * 7) % 9) / 9 - 0.5) * 0.08
-            if (x - bx0 + 3) % 9 in (0, 1):
-                k -= 0.12 if (x - bx0 + 3) % 9 == 0 else -0.06
+            baia = ((x - bx0 + 3) % 9) / 9                       # posição entre dois arcos (0..1)
+            k = 0.62 - v * 0.3 + (0.16 if v < 0.18 else 0)       # alto aceso pelo céu, embaixo mais escuro
+            k += u * L[0] * 0.28                                 # lado virado para o sol
+            k += math.sin(math.pi * baia) * 0.1 + (baia - 0.5) * L[0] * 0.25   # a lona estufa entre os arcos
+            k += math.sin(x * 2.3 + y * 0.9) * 0.03 + (((x * 13 + y * 7) % 9) / 9 - 0.5) * 0.07
+            if (x - bx0 + 3) % 9 == 0:
+                k -= 0.2                                         # o arco por baixo da lona marca uma dobra
             if y == int(topo):
-                k += 0.15
+                k += 0.12
             if y >= by0 - 1:
-                k -= 0.2
+                k -= 0.28
+            if abs(u) > 0.86:
+                k -= 0.12 * (abs(u) - 0.86) / 0.14
             c.p(x, y, LONA[int(np.clip(k * 7, 0, 6))])
+        if (x - bx0 + 3) % 9 == 0 and bx0 < x < bx1:            # amarras de corda na barra
+            c.p(x, by0 - 1, "#6a5034")
+            c.p(x, by0, "#8a6a44")
     # abertura de trás franzida, com a perna engessada aparecendo
     for y in range(by0 - 10, by0 - 2):
         dy = (y - (by0 - 6)) / 4

@@ -654,10 +654,10 @@ def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada,
            vidro: np.ndarray, vidro_cor: np.ndarray, luzes: list, chao_y: int, ocluir: Camada,
            extra_luz=None, desf_fundo: float = 0.8, desf_frente: float = 3.0, feixe_colorido: bool = False,
            comp_feixe: float = 110, desf_patch: float = 1.6, patch_meio: np.ndarray | None = None,
-           k_feixe: float = 1.0) -> np.ndarray:
+           k_feixe: float = 1.0, k_patch_meio: float = 0.9, proj: tuple[float, float] | None = None) -> np.ndarray:
     """Montagem comum em 3x: albedo das camadas x luz (ambiente + janelas + luzes pontuais), mancha das janelas no
     chão com as sombras dos objetos, vidro e fogo emissivos, feixes com poeira. Devolve a imagem em float."""
-    a_proj, b_proj = per["proj"]
+    a_proj, b_proj = proj or per["proj"]
     fundo_a = desfocar_rgba(ampliar(fundo.c), desf_fundo)
     meio_a = ampliar(meio.c)
     frente_a = desfocar_rgba(ampliar(frente.c), desf_frente)
@@ -687,7 +687,7 @@ def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada,
         somb = np.maximum(somb, sh * (1 - i / 30))
     patch_chao = patch * (1 - np.clip(somb, 0, 1)[:, :, None] * 0.85)
     pm = meio.c[:, :, 3:4] > 0.5 if patch_meio is None else patch_meio[:, :, None] > 0.5
-    patch = np.where(pm, patch * 0.9, np.where(meio.c[:, :, 3:4] > 0.5, patch * 0.15, patch_chao))
+    patch = np.where(pm, patch * k_patch_meio, np.where(meio.c[:, :, 3:4] > 0.5, patch * 0.15, patch_chao))
     patch_a = desfocar(ampliar(patch), desf_patch)
     luz += patch_a * hexa(per["sol"]) * per["sol_k"] * 1.4
     for (lx, ly, r, cor, k) in luzes:
@@ -1589,7 +1589,7 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
     x0, y0, w, h = C_VITRAL
     cx, r = x0 + w / 2, w / 2
     tinta = {"manha": (hexa("#fff6e8"), 1.0), "tarde": (hexa("#ffb878"), 0.95), "noite": (hexa("#7a9ae8"), 0.4)}[nome]
-    pedra_t = ("#141218", "#2e2a36", "#4a4656", "#6a6678", "#8a86a0")
+    pedra_t = ("#141218", "#2a2632", "#3e3a4a", "#55516a", "#6e6a84")
 
     def dentro(x, y, folga=0.0):
         rx = r + folga
@@ -1602,7 +1602,7 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
 
     for y in range(y0 - 22, y0 + h + 2):
         for x in range(int(cx - r - 6), int(cx + r + 7)):
-            if dentro(x, y, 5) and not dentro(x, y, 0):
+            if dentro(x, y, 3) and not dentro(x, y, 0):
                 lado = x < cx
                 aduela = (int(math.atan2((y0 + r) - y, x - cx) * 8) % 2) if y < y0 + r else ((y - y0) // 6) % 2
                 k = (3 if lado else 1) + aduela
@@ -1697,20 +1697,21 @@ def c_prateleira_rolos(c: Camada, x0: int, y0: int, x1: int, y1: int, seed: int)
             c.ret(cx, cy, 1, ch, CARVALHO[3])
             tipo = g.random()
             if tipo < 0.72:
-                # pontas de rolos empilhados (dois embaixo, um em cima), cada um com o miolo enrolado
-                pos = [(cx + 4, cy + ch - 3), (cx + 8, cy + ch - 3), (cx + 6, cy + ch - 6)]
-                if g.random() < 0.4:
-                    pos = pos[:2]
-                for (rx, ry) in pos:
-                    tom = PERGAMINHO[3] if g.random() < 0.6 else PERGAMINHO[4]
-                    c.bitmap(rx - 2, ry - 1, [".##.", "####", "####", ".##."], {"#": tom})
-                    c.p(rx - 1, ry - 1, PERGAMINHO[5])
-                    c.p(rx + 1, ry + 2, PERGAMINHO[2])
-                    c.p(rx + 1, ry + 1, PERGAMINHO[2])
-                    c.p(rx, ry + 1, PERGAMINHO[2])
-                    c.p(rx - 1 + (g.random() < 0.5), ry, PERGAMINHO[1])
-                    if g.random() < 0.3:
-                        c.p(rx - 2, ry, ("#c8302a", "#2c5aa8", "#2c8a4a")[int(g.random() * 3)])
+                # rolos deitados vistos de lado: cilindros de comprimentos diferentes, ponta clara, fita no meio
+                n = 2 + int(g.random() * 2)
+                for i in range(n):
+                    ry = cy + ch - 3 - i * 3
+                    comp = 6 + int(g.random() * 4)
+                    rx = cx + 2 + int(g.random() * (cw - comp - 2))
+                    tom = 3 if g.random() < 0.6 else 4
+                    c.ret(rx, ry, comp, 1, PERGAMINHO[tom + 1 if tom < 5 else 5])
+                    c.ret(rx, ry + 1, comp, 1, PERGAMINHO[tom])
+                    c.ret(rx, ry + 2, comp, 1, PERGAMINHO[tom - 2])
+                    c.ret(rx - 1, ry, 1, 3, PERGAMINHO[tom - 1])
+                    c.p(rx - 1, ry + 1, PERGAMINHO[1])
+                    if g.random() < 0.45:
+                        cor_f = ("#c8302a", "#2c5aa8", "#2c8a4a", "#d8a032")[int(g.random() * 4)]
+                        c.ret(rx + comp // 2, ry, 1, 3, cor_f)
                 if g.random() < 0.3:
                     # fita pendurada para fora
                     fx = cx + 4 + int(g.random() * 5)
@@ -1985,13 +1986,13 @@ def c_mapa(c: Camada, g: np.random.Generator) -> list:
             u = (x - xa) / (xb - xa)
             vv = (y - far) / (near - far)
             n = terra[40 + int(vv * 26), 150 + int(u * 110)]
-            cor = PERGAMINHO[4] if n > 0.5 else "#9ab4b4" if n < 0.44 else "#b4c8c0"
-            if 0.48 < n < 0.52:
-                cor = "#6a5038"
-            if 0.6 < n < 0.7 and (x + y) % 2 == 0:
-                cor = "#6a9a4a"
-            if n >= 0.7:
-                cor = PERGAMINHO[3]
+            cor = PERGAMINHO[4] if n > 0.5 else "#93acae"
+            if n > 0.5:
+                viz = min(terra[40 + int(vv * 26) + dy_, 150 + int(u * 110) + dx_] for dy_ in (-1, 0, 1) for dx_ in (-1, 0, 1))
+                if viz <= 0.5:
+                    cor = "#7a5a3a"
+            elif n > 0.47:
+                cor = "#a8c0bc"
             # borda do papel e cantos enrolados
             if x == int(round(xa)) or x == int(round(xb)) - 1 or y in (far, near - 1):
                 cor = PERGAMINHO[2]
@@ -2002,6 +2003,12 @@ def c_mapa(c: Camada, g: np.random.Generator) -> list:
         c.p(mx - 1, my + 1, "#5a4430")
         c.p(mx + 1, my + 1, "#8a7050")
         c.p(mx, my - 1, "#f4ecd8")
+    # florestas (tufos de três pontinhos)
+    for (fx_, fy_) in ((230, 117), (233, 118), (256, 122), (259, 121), (282, 119), (285, 120), (248, 125)):
+        if c.c[fy_, fx_, 0] > 0.7:
+            c.p(fx_, fy_, "#4a7a3a")
+            c.p(fx_ + 1, fy_, "#3a6a2a")
+            c.p(fx_, fy_ - 1, "#6a9a4a")
     # rio
     for i in range(18):
         c.p(250 + i * 0.8, 114 + i * 0.6 + math.sin(i * 0.8), "#4a7aa8")
@@ -2309,12 +2316,20 @@ def montar_conselho(nome: str) -> Image.Image:
     c_lustre(meio, fogo, C_MESA[0], 24, 34, per["velas"] >= 2, luzes)
     # o negatoscópio: luz fria e fraca (mais visível à noite)
     luzes.append((348, 41, 30, "#9ac0ff", {"manha": 0.1, "tarde": 0.12, "noite": 0.35}[nome]))
+    # a sala inteira recebe a luz difusa do vitral, na cor média dele
+    vx, vy, vw, vh = C_VITRAL
+    media = vidro_cor[vy:vy + vh, vx:vx + vw].reshape(-1, 3).mean(0)
+    media = media / max(1e-3, float(media.max()))
+    k_dif = {"manha": 0.42, "tarde": 0.46, "noite": 0.14}[nome]
+    extra = (luz_pontual(vx + vw / 2, vy + vh * 0.7, 150, 0.7)[:, :, None] * media * k_dif
+             + luz_pontual(vx + vw / 2, C_CHAO + 18, 70, 0.4)[:, :, None] * media * k_dif * 0.8)
     tampo = np.zeros((H, W), dtype=np.float32)
     cx, cy, rx, ry = C_MESA
     yy, xx = np.mgrid[0:H, 0:W]
     tampo[((xx + 0.5 - cx) / rx) ** 2 + ((yy + 0.5 - cy) / ry) ** 2 <= 1] = 1
     img = compor(per, fundo, meio, c_frente(), fogo, c_sombras(), vidro, vidro_cor, luzes, C_CHAO, ocl,
-                 feixe_colorido=True, comp_feixe=90, desf_patch=4.5, patch_meio=tampo, k_feixe=0.6)
+                 feixe_colorido=True, comp_feixe=90, desf_patch=4.5, patch_meio=tampo, k_feixe=0.6, k_patch_meio=0.4,
+                 proj={"manha": (0.55, -0.3), "tarde": (0.72, -0.85), "noite": (0.5, 0.3)}[nome], extra_luz=extra)
     # brilho do negatoscópio (emissivo) e cintilância do metal
     rad = np.zeros((H, W), dtype=np.float32)
     rad[24:58, 334:362] = {"manha": 0.25, "tarde": 0.3, "noite": 0.7}[nome]

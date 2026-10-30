@@ -365,6 +365,7 @@ def cupula() -> tuple[Camada, np.ndarray]:
     dentro_gomo = ((phi + 5) % 10) / 10            # 0..1 de uma nervura à outra
     nerv_d = np.minimum(dentro_gomo, 1 - dentro_gomo) * 10 * px_por_grau
     veio = ruido(51, 11, 1) * 0.6 + ruido(52, 3, 1) * 0.4
+    ferrugem = ruido(53, 5, 3)
     alb = np.zeros((H, W, 3), dtype=np.float32)
     for y in range(int(BASE)):
         for x in range(W):
@@ -408,18 +409,36 @@ def cupula() -> tuple[Camada, np.ndarray]:
                 cor = LATAO[4] if d < 1.0 else LATAO[2] if d < 2.4 else LATAO_ESC[1] if d < 4 else "#120a04"
                 c.p(x, y, cor)
             elif porta[y, x]:
+                # Chapas de ferro pintado de verde, em faixas, com costuras rebitadas e a tinta gasta.
                 r = rel[y, x] - FENDA - 5
-                base = 0.5 + (hash01(int(r // 9), fiada[y, x] // 4, 8) - 0.5) * 0.12
+                vv = v[y, x]
+                chapa = int(r // 10)
+                faixa_v = int(vv / 0.11)
+                base = 0.55 + (hash01(chapa, faixa_v, 8) - 0.5) * 0.16 - r / 62 * 0.25 - vv * 0.25
+                base += (ferrugem[y, x] - 0.5) * 0.18
                 if r > 58:
-                    base = 0.05
-                elif r < 2:
-                    base = 0.8
-                cor = mistura("#1a2a2a", "#4a6662", base)
-                if int(r) % 9 == 0 and r > 3:
-                    cor = mistura("#0e1818", "#2a3a3a", 0.5)
-                if int(r) % 9 == 2 and (fiada[y, x] % 2 == 0) and (v[y, x] / 0.036) % 1 < 0.3:
-                    cor = hexa("#a8b8a8")
-                c.p(x, y, cor)
+                    base = 0.04
+                elif r < 1.5:
+                    base = 0.95
+                elif r < 3:
+                    base = 0.3
+                cor = mistura("#14201e", "#55786e", np.clip(base, 0, 1))
+                if ferrugem[y, x] > 0.74 and r > 3:
+                    cor = cor * 0.6 + hexa("#7a4a2a") * 0.4
+                em_r = (r % 10)
+                em_v = (vv / 0.11) % 1
+                if 3 < r < 58:
+                    if em_r < 0.8:
+                        cor = mistura("#0a1210", "#1e2c2a", 0.5)
+                    elif em_r < 1.6:
+                        cor = cor * 1.25
+                    if em_v < 0.08 * (1 / max(cv[y, x], 0.3)):
+                        cor = mistura("#0a1210", "#1e2c2a", 0.5)
+                    elif em_v < 0.16:
+                        cor = cor * 1.2
+                    if 1.6 <= em_r < 2.6 and int(em_v * 6) % 2 == 0 and (em_v * 6) % 1 < 0.45:
+                        cor = hexa("#b8c8b8")  # rebites
+                c.p(x, y, np.clip(cor, 0, 1))
     # Sombra que a porta joga na madeira (à direita dela).
     sombra = ((rel >= FENDA + 62) & (rel < FENDA + 70) & dentro).astype(np.float32)
     c.c[:, :, :3] *= (1 - sombra * 0.45 * (1 - (rel - FENDA - 62) / 8).clip(0, 1))[:, :, None]
@@ -534,6 +553,31 @@ def parede() -> Camada:
             c.ret(px_ - w, y0 + 2 + j, w * 2 + 1, 1, PEDRA[1] if j < 2 else PEDRA[2])
             c.p(px_ - w, y0 + 2 + j, PEDRA[0])
             c.p(px_ + w, y0 + 2 + j, PEDRA[3])
+    # Manivela da porta da fenda no esteio, com a corrente subindo até o trilho.
+    mx_, my_ = 246, 96
+    for k in range(int(BASE) + 4, my_ - 5):
+        c.p(mx_ - 3 + (k % 2), k, FERRO[4] if k % 2 else FERRO[2])
+    for y in range(my_ - 6, my_ + 7):
+        for x in range(mx_ - 6, mx_ + 7):
+            d = math.hypot(x - mx_, y - my_)
+            ang = math.atan2(y - my_, x - mx_)
+            if 4.6 < d < 6.2:
+                c.p(x, y, FERRO[4] if (ang < 0) else FERRO[2])
+            elif d < 4.6 and abs(math.sin(ang * 2)) < 0.25:
+                c.p(x, y, FERRO[3])
+            elif d < 1.3:
+                c.p(x, y, LATAO[4])
+    c.linha(mx_, my_, mx_ + 5, my_ + 6, FERRO[3])
+    c.ret(mx_ + 5, my_ + 5, 2, 3, MADEIRA[5])
+    # Teias de aranha nos cantos altos.
+    for (tx, ty, sx) in ((2, y0 + 2, 1), (W - 3, y0 + 2, -1)):
+        for k in range(5):
+            a_ = k / 4 * math.pi / 2
+            c.linha(tx, ty, tx + sx * math.cos(a_) * 14, ty + math.sin(a_) * 14, "#c8c8d0", 0.25)
+        for rr in (4, 8, 12):
+            for k in range(12):
+                a_ = k / 11 * math.pi / 2
+                c.p(tx + sx * math.cos(a_) * rr, ty + math.sin(a_) * rr, "#c8c8d0", 0.25)
     # A torre é redonda: a parede escurece nas pontas.
     curva_ = 1 - 0.38 * ((_XS - 300) / 300) ** 2
     c.c[:, :, :3] *= curva_[:, :, None]
@@ -563,6 +607,40 @@ def chao() -> Camada:
                 base = 0.1
             base -= (1 - prof) * 0.12
             c.p(x, y, tons_idx(MADEIRA[1:], base))
+    # Tapete gasto debaixo da esfera armilar: barra, losangos e franjas, em perspectiva.
+    ty0, ty1 = 131, 151
+    for y in range(ty0, ty1):
+        t = (y - ty0) / (ty1 - ty0)
+        xa, xb = 176 - t * 26, 262 + t * 22
+        for x in range(int(xa), int(xb) + 1):
+            u = (x - xa) / (xb - xa)
+            bu, bt = min(u, 1 - u) * (xb - xa) / 3, min(t, 1 - t) * 20 / 3
+            borda = min(bu * 1.0, bt * 1.6)
+            if borda < 0.7:
+                cor = "#3a1a16"
+            elif borda < 1.6:
+                cor = "#b08a4a" if (x + y) % 3 else "#6a2a22"
+            elif borda < 2.2:
+                cor = "#2a1e3a"
+            else:
+                dx_, dy_ = abs(u - 0.5) * 2, abs(t - 0.5) * 2
+                los = dx_ + dy_ * 1.1
+                if los < 0.28:
+                    cor = "#c89a50" if los < 0.12 else "#2e3a5a"
+                elif abs(los - 0.5) < 0.06:
+                    cor = "#c89a50"
+                elif abs(los - 0.72) < 0.05:
+                    cor = "#2e3a5a"
+                else:
+                    cor = "#7a2a24" if (x // 2 + y) % 5 else "#6a2420"
+            k = hash01(x, y, 99)
+            cc = hexa(cor) * (0.85 + k * 0.2) * (0.85 + t * 0.2)
+            if k < 0.06:
+                cc = cc * 0.7  # puído
+            c.p(x, y, cc)
+        if y == ty1 - 1:
+            for x in range(int(xa), int(xb) + 1, 2):
+                c.p(x, ty1, "#d8c8a0", 0.7)
     # Rosa dos ventos de latão no chão (elipse achatada), em volta do pé da luneta.
     cx, cy, rx, ry = 300.0, 146.0, 50.0, 9.0
     for y in range(int(cy - ry) - 1, H):
@@ -1287,6 +1365,8 @@ def camadas():
     c_graf = graficos_parede()
     arm_t, arm_f = armilar(214.0, 94.0, 17.0, 147)
     lun_t, lun_f = luneta()
+    lun_f.contornar("#1a0e06", 0.85)
+    arm_f.contornar("#1a0e06", 0.35)
     c_mesa, c_obj, e_lamp, sombra_mesa = mesa()
     c_frente = primeiro_plano()
     c_plan, e_plan = planetario()
@@ -1319,7 +1399,7 @@ def montar(nome: str) -> Image.Image:
 
     # Sombras de contato: debaixo da mesa, do baú, do pé da luneta e da esfera.
     ao = Camada()
-    for (cx, cy, rx, ry, a) in ((434, 146, 46, 4, 0.75), (434, 117, 44, 3, 0.45), (140, 147, 21, 2.5, 0.7), (300, 147, 13, 2.5, 0.8), (214, 147, 10, 2, 0.7),
+    for (cx, cy, rx, ry, a) in ((434, 146, 46, 4, 0.75), (434, 117, 44, 3, 0.45), (140, 147, 21, 2.5, 0.7), (300, 147, 13, 2.5, 0.8), (214, 147, 12, 2.5, 0.7),
                                 (70, 147, 10, 2, 0.6), (174, 146, 12, 2, 0.6), (434, 132, 42, 14, 0.4)):
         ao.elipse(cx, cy, rx, ry, "#000000", a)
     for x in range(W):  # o rodapé escurece a junção parede/chão
