@@ -273,6 +273,8 @@ def livro_curto(capitulo: dict) -> str:
         return "Tachdjian"
     if "Campbell" in livro:
         return "Campbell"
+    if "Green" in livro:
+        return "Green"
     return livro
 
 

@@ -30,10 +30,11 @@ export function nomeCurtoLivro(livro: string): string {
 /** O nome que cabe numa lombada: "Netter", "Tachdjian", "Rockwood adulto". */
 export function apelidoLivro(livro: string): string {
   const curto = nomeCurtoLivro(livro)
-  return /^Netter/i.test(curto) ? 'Netter' : /^Tachdjian/i.test(curto) ? 'Tachdjian' : /^Campbell/i.test(curto) ? 'Campbell' : curto
+  return /^Netter/i.test(curto) ? 'Netter' : /^Tachdjian/i.test(curto) ? 'Tachdjian' : /^Campbell/i.test(curto) ? 'Campbell' : /^Green/i.test(curto) ? 'Green' : curto
 }
 /** Uma linha sobre o livro, embaixo do nome na estante (pedido do Tales, 30/10/2026: "descrever bem na página de resumos"). */
 const SOBRE_LIVRO: Array<[RegExp, string]> = [
+  [/Green’s Operative|Green's Operative/i, 'Green’s Operative Hand Surgery, a referência de cirurgia da mão: nervos, tendões, fraturas, retalhos e reconstrução, capítulo a capítulo.'],
   [/Campbell/i, 'Campbell’s Operative Orthopaedics, o tratado de cirurgia ortopédica da Campbell Clinic: técnica, indicação e resultado, área por área.'],
   [/Tachdjian/i, 'A referência de ortopedia pediátrica, editada por John A. Herring: deformidades, displasias, quadril, coluna e trauma da criança, capítulo a capítulo.'],
   [/Netter/i, 'O atlas de anatomia ortopédica de Jon C. Thompson, com as ilustrações de Frank H. Netter: anatomia aplicada, vias de acesso e exame físico por região.'],
