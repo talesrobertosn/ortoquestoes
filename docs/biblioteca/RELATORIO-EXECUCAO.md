@@ -121,6 +121,20 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 - `testar_sincronia_aparelhos` falha perto da meia-noite, por causa dos relógios simulados de -7 e +9 minutos. Basta rodar de novo depois das 00h10.
 - `aplicar_comentarios.py` teve um erro transitório do Windows (Errno 22) ao gravar o arquivo. Repetir resolveu.
 
+## Ciclos 14 a 20
+
+| Ciclo | Tema | Fonte | PR | Simulados | Oficiais |
+| --- | --- | --- | --- | --- | --- |
+| 14 | Tendões flexores | Green 8ª ed., cap. 6 | 680 | mao-2592 a 2597 | 10 |
+| 15 | Metástases ósseas | Campbell 14ª ed., cap. 27 | 681 | tumores-0393 a 0398 | 18 |
+| 16 | Hérnia de disco lombar e cervical | Campbell 14ª ed., caps. 38 e 39 | 682 | coluna-0572 a 0577 | 18 |
+| 17 | Osteomielite aguda | Tachdjian 6ª ed., cap. 23 | 683 | conceitos-basicos-0416 a 0420 | 9 |
+| 18 | Lesão do LCA | Campbell 14ª ed., cap. 45 | 684 | joelho-0383 a 0387 | 8 |
+| 19 | Ruptura distal do bíceps | Campbell 14ª ed., cap. 48 | 685 | ombro-cotovelo-0720 a 0723 | 7 |
+| 20 | Estadiamento, biópsia e margens | Campbell 14ª ed., cap. 24 (apoio dos caps. 25 a 28) | 687 | tumores-0399 a 0406 | 28 |
+
+**No ciclo 20.** Os comentários voltaram ao tamanho pedido (mediana de cerca de 2,7 mil caracteres). Um conversor por lote confere o gabarito contra o acervo e recusa travessão e o fecho de simulado nas oficiais. Ficaram pendentes a classificação de TOMITA (o Campbell só traz a figura) e uma questão sem gabarito. No Windows, `aplicar_lote.py` precisa de `PYTHONUTF8=1`.
+
 ## Melhorias de sistema feitas no caminho
 
 | PR | Melhoria |
@@ -135,4 +149,4 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 
 ## Próximo
 
-Seguir a fila (`scripts/biblioteca/fila_editorial.py`). Na sequência: outras malformações congênitas da mão, instabilidade anterior do ombro e anatomia da coluna.
+Seguir a fila (`scripts/biblioteca/fila_editorial.py`). Na sequência: displasias esqueléticas e síndromes, paralisia cerebral, escoliose idiopática e princípios de osteossíntese. Os temas mistos (outros temas de trauma, outras doenças congênitas) seguem adiados.
