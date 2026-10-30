@@ -1,0 +1,117 @@
+---
+id: netter-anatomia-ombro-braco
+versao: 1
+titulo: Anatomia do ombro e do braço
+especialidade: ombro-cotovelo
+acesso: gratis
+livro: Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)
+edicao: 2ª edição
+capitulo: Capítulo 3 · Ombro e Capítulo 4 · Braço
+autores: Jon C. Thompson (ilustrações de Frank H. Netter)
+fonte: Livro conferido localmente em 30/10/2026 (original em inglês, 2009), capítulos 3 e 4, sobretudo as tabelas de músculos, nervos, espaços e articulações. Sem página impressa no texto extraído; as referências citam capítulo e seção.
+subtemas: Anatomia do ombro
+resumo: Quatro articulações e o ritmo 2:1; estabilizadores estáticos e dinâmicos; ligamentos glenoumerais (inferior, o mais importante), intervalo rotador e polia do bíceps; músculos do manguito, deltoide e redondo maior com os comentários clínicos; espaços triangular, quadrangular e intervalo triangular; plexo braquial (dorsal da escápula, torácico longo, supraescapular, peitorais, subescapulares, toracodorsal, axilar); compartimento anterior do braço e musculocutâneo.
+---
+
+# Como ler este capítulo {radar=fundamento}
+
+Este resumo é inspirado nos capítulos 3 (Ombro) e 4 (Braço) do Netter's Concise Orthopaedic Anatomy (2ª edição), de Jon C. THOMPSON, com as ilustrações de Frank H. NETTER, publicado no Brasil como Netter Atlas de Anatomia Ortopédica. O livro organiza a anatomia em tabelas com uma coluna de comentários clínicos, e é por ela que este resumo segue.
+
+A anatomia do ombro nas provas vem quase sempre como **imagem**: uma seta num músculo, num nervo ou num espaço. Por isso, mais do que listas, vale guardar **três mapas**: o dos espaços posteriores, o do plexo braquial e o dos músculos com os seus nervos.
+
+> **Na prova:** **quadrangular** = **axilar + circunflexa posterior**; axilar = **fascículo posterior**, **deltoide + redondo menor**; **musculocutâneo perfura o coracobraquial**; **glenoumeral inferior** = o mais importante; **torácico longo** = serrátil; **subescapular inferior** = **redondo maior**.
+
+# A articulação e a estabilidade {radar=confirmado}
+
+- **Quatro articulações:** esternoclavicular, glenoumeral, acromioclavicular e escapulotorácica, que se movem juntas. Na abdução, a relação é de **2 para 1** entre a glenoumeral e a escapulotorácica.
+- **Amplitudes:** flexão de 0 a 170 graus; extensão de 0 a 60; abdução de 0 a 170 ou 180; rotação externa até 70 graus.
+- **Estabilizadores estáticos:** glenoide, **lábio** (para-choque e inserção dos ligamentos), congruência, ligamentos glenoumerais e cápsula, **pressão intra-articular negativa**.
+- **Estabilizadores dinâmicos:** **manguito**, **bíceps**, músculos da escápula e propriocepção.
+
+!tabela Ligamentos glenoumerais (Netter's Concise, cap. 3)
+| Ligamento | Papel |
+| --- | --- |
+| **inferior** | **o mais importante**: rede que se tensiona em abdução e rotação externa (banda anterior) e em rotação interna (banda posterior); a anterior resiste à translação anterior e inferior em abdução e rotação externa, a posterior à translação posterior em rotação interna e flexão de 90 graus |
+| **superior** (com o coracoumeral) | resiste à translação inferior em adução; faz parte da polia do bíceps |
+| geral | espessamentos da cápsula anterior e inferior; **não há ligamentos posteriores nem superiores** |
+!fim
+
+O **intervalo rotador** é o triângulo entre a borda anterior do supraespinal e a borda superior do subescapular, com o glenoumeral superior, o coracoumeral, o bíceps e a cápsula anterossuperior; fechá-lo diminui o sinal do sulco. A **polia do bíceps** é formada pelo glenoumeral superior, pelo coracoumeral e pelo subescapular. A **esternoclavicular** é a única articulação verdadeira entre o membro superior e o esqueleto axial.
+
+!questoes central=ombro-cotovelo-0044 treino=ombro-cotovelo-0699,ombro-cotovelo-0702
+conceito: O glenoumeral inferior é a rede principal: a banda anterior segura a translação anterior em abdução e rotação externa, a posterior segura a posterior em rotação interna; não há ligamentos posteriores ou superiores verdadeiros.
+como: O TARO 2015 perguntou o estabilizador primário da translação anteroposterior.
+armadilha: Escolher a cápsula ou o lábio, que ajudam, mas não são o estabilizador ligamentar primário.
+!fim
+
+# Os músculos {radar=confirmado}
+
+!tabela Manguito, deltoide e redondo maior (Netter's Concise, cap. 3)
+| Músculo | Origem | Ação | Comentário clínico |
+| --- | --- | --- | --- |
+| supraespinal | fossa supraespinal | abdução, estabilidade | preso no impacto; o mais rompido |
+| infraespinal | fossa infraespinal | rotação externa | rotação externa fraca: rotura ou nervo na incisura |
+| redondo menor | escápula lateral | rotação externa | raramente roto |
+| subescapular | fossa subescapular | rotação interna, adução | em risco na via anterior |
+| deltoide | clavícula, acrômio, espinha da escápula | abdução | atrofia na lesão do axilar |
+| redondo maior | ângulo inferior da escápula | rotação interna, adução | protege o radial na via posterior |
+!fim
+
+**Deltopeitorais.** O **peitoral maior** (clavícula e esterno ao sulco intertubercular) é aduto e rotador interno e pode se romper no supino. O **peitoral menor** (costelas 3 a 5 ao coracoide) divide a artéria axilar em três partes. O **serrátil anterior** (costelas 1 a 8 à borda medial) segura a escápula no tórax, e a paralisia dele dá a escápula alada medial.
+
+!tabela Compartimento anterior do braço (Netter's Concise, cap. 4)
+| Músculo | Origem | Inserção | Nervo |
+| --- | --- | --- | --- |
+| coracobraquial | coracoide | terço médio do úmero | musculocutâneo |
+| bíceps, cabeça longa | tubérculo supraglenoidal | tuberosidade do rádio | musculocutâneo |
+| bíceps, cabeça curta | coracoide | tuberosidade do rádio | musculocutâneo |
+| braquial | úmero distal anterior | tuberosidade da ulna | musculocutâneo (medial) e radial (lateral) |
+!fim
+
+A cabeça curta do bíceps e o coracobraquial formam o **tendão conjunto**. O braquial, com inervação dupla, é dividido ao meio na via anterior do úmero. A rotura do bíceps dá o "braço de Popeye".
+
+!questoes central=ombro-cotovelo-0047 relacionadas=ombro-cotovelo-0559,ombro-cotovelo-0124,ombro-cotovelo-0127,ombro-cotovelo-0253,ombro-cotovelo-0317,ombro-cotovelo-0318,ombro-cotovelo-0379,ombro-cotovelo-0455 treino=ombro-cotovelo-0698,ombro-cotovelo-0703
+conceito: Cabeça curta do bíceps e coracobraquial nascem no coracoide, formam o tendão conjunto e são do musculocutâneo, que perfura o coracobraquial; o redondo maior nasce no ângulo inferior e protege o radial.
+como: O TARO 2014 perguntou o músculo que divide o nervo com a cabeça curta do bíceps; o TEOT 2025 mostrou o coracobraquial atravessado pelo musculocutâneo; TEOT e TARO pedem nas imagens a origem e a inserção dos músculos do ombro, o redondo maior e o redondo menor.
+armadilha: Trocar o redondo maior pelo grande dorsal nas imagens, ou pôr a cabeça curta no tubérculo supraglenoidal.
+!fim
+
+# Os espaços posteriores {radar=confirmado}
+
+!tabela Espaços da face posterior do ombro (Netter's Concise, cap. 3)
+| Espaço | Limites | Conteúdo |
+| --- | --- | --- |
+| triangular | redondo menor, redondo maior, cabeça longa do tríceps | artéria circunflexa da escápula |
+| quadrangular | redondo menor, redondo maior, cabeça longa do tríceps, borda medial do úmero | nervo axilar e artéria circunflexa posterior do úmero |
+| intervalo triangular | redondo maior, cabeças longa e lateral do tríceps | nervo radial e artéria profunda do braço |
+!fim
+
+!questoes central=ombro-cotovelo-0462 relacionadas=ombro-cotovelo-0429,ombro-cotovelo-0485,ombro-cotovelo-0113,ombro-cotovelo-0061 treino=ombro-cotovelo-0696
+conceito: Quatro lados (o úmero é o quarto) = quadrangular, com o axilar e a circunflexa posterior; o triangular leva a circunflexa da escápula, e o intervalo triangular, o radial com a profunda do braço.
+como: O TARO 2013 e o TARO 2008 perguntaram o que passa pelo espaço quadrangular; o TECOC, as estruturas da síndrome do espaço quadrangular; as provas mostram os espaços em imagens.
+armadilha: Pôr o radial ou a artéria profunda do braço no espaço quadrangular.
+!fim
+
+# O plexo braquial no ombro {radar=confirmado}
+
+- **Raízes:** **dorsal da escápula** (C3 a C5; perfura o escaleno médio) para o levantador da escápula e os romboides; **torácico longo** (C5 a C7; corre no serrátil com a torácica lateral) para o **serrátil anterior**.
+- **Tronco superior:** **supraescapular** (C5 e C6), que passa sob o ligamento na **incisura supraescapular** (supraespinal) e depois pela **incisura espinoglenoidal**, onde pode ser comprimido (infraespinal); sensibilidade da cápsula. O nervo para o subclávio também sai daqui.
+- **Fascículo lateral:** **peitoral lateral**, para a porção clavicular do peitoral maior; raiz lateral do mediano; **musculocutâneo**.
+- **Fascículo medial:** **peitoral medial**, para o peitoral menor e a porção esternal do peitoral maior; raiz medial do mediano; ulnar; cutâneos mediais do braço e do antebraço.
+- **Fascículo posterior:** **subescapular superior** (subescapular superior); **toracodorsal** (C7 e C8), para o **grande dorsal**; **subescapular inferior**, para o subescapular inferior e o **redondo maior**; **axilar**; **radial**.
+- **Axilar (C5 e C6):** logo abaixo da cápsula; vai para trás com a circunflexa posterior pelo espaço quadrangular e curva-se para a frente cerca de **5 cm abaixo do acrômio**. Lesa-se nas **luxações glenoumerais** e nas vias laterais. Inerva o **deltoide** (ramo profundo) e o **redondo menor** (ramo superficial); dá a sensibilidade lateral proximal do braço (cutâneo lateral superior do braço).
+- **Musculocutâneo:** perfura o **coracobraquial** cerca de **8 cm abaixo do coracoide**, corre entre o bíceps e o braquial e termina como **cutâneo lateral do antebraço**.
+- **Nervo acessório (XI):** trapézio e esternocleidomastóideo.
+
+!questoes central=ombro-cotovelo-0085 relacionadas=ombro-cotovelo-0002,ombro-cotovelo-0068,ombro-cotovelo-0263,ombro-cotovelo-0254,ombro-cotovelo-0362,ombro-cotovelo-0564,ombro-cotovelo-0437,ombro-cotovelo-0359,ombro-cotovelo-0388 treino=ombro-cotovelo-0697,ombro-cotovelo-0700,ombro-cotovelo-0701
+conceito: Do fascículo posterior saem o axilar, o radial, o toracodorsal e os subescapulares; do medial, o ulnar; o torácico longo e o dorsal da escápula saem das raízes; o axilar se lesa na luxação.
+como: Uma prova de Ortopedia pediu os fascículos do axilar e do ulnar; o TARO 2020, a lesão nervosa da luxação anterior; as imagens do TEOT, do TARO e do TECOC pedem o grande dorsal com o toracodorsal, o nervo do serrátil, o axilar, o musculocutâneo e os nervos do plexo; o TARO 2007, o músculo poupado na compressão do radial na bifurcação.
+armadilha: Pôr o redondo maior no toracodorsal ou no axilar, ou o serrátil no dorsal da escápula.
+alerta: Na questão da luxação anterior (`ombro-cotovelo-0002`), o Netter confirma a lesão do nervo axilar nas luxações glenoumerais, mas o capítulo lido não diz qual artéria é a mais acometida; o gabarito oficial foi preservado.
+!fim
+
+# Fechamento {radar=fundamento}
+
+Quase toda imagem de anatomia do ombro se resolve com três perguntas: **de que lado da escápula** está a estrutura (anterior, com o subescapular e o tendão conjunto, ou posterior, com os espaços); **que nervo a inerva** (e de que fascículo ele vem); e **o que o livro comenta** sobre ela, porque é o comentário clínico que a banca transforma em alternativa.
+
+> **Na prova:** **anterior** = subescapular, tendão conjunto, musculocutâneo; **posterior** = espaços (axilar no quadrangular, radial no intervalo); **fascículo posterior** = axilar, radial, toracodorsal e subescapulares.
