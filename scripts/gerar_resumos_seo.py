@@ -32,6 +32,7 @@ from __future__ import annotations
 import html
 import re
 import shutil
+from collections import Counter
 import sys
 from pathlib import Path
 
@@ -409,8 +410,12 @@ def pagina_resumo(capitulo: dict, data: str, nomes_area: dict[str, str], acervo:
 
 def pagina_indice(capitulos: list[dict], data: str, nomes_area: dict[str, str], ordem_areas: list[str]) -> str:
     raiz = "../"
-    titulo = "Resumos de ortopedia grátis: Rockwood adulto e infantil | Orto Questões"
-    descricao = ("Resumos de ortopedia grátis, capítulo a capítulo do Rockwood adulto e infantil, para residência, TEOT e TARO, "
+    # Os livros saem da própria Biblioteca, na ordem em que mais aparecem (o título envelhecia a cada livro novo).
+    livros = [l for l, _ in Counter(livro_curto(c) for c in capitulos).most_common()]
+    lista = ", ".join(livros[:-1]) + " e " + livros[-1] if len(livros) > 1 else (livros[0] if livros else "")
+    curtos = list(dict.fromkeys(l.split()[0] for l in livros))  # "Rockwood adulto" e "Rockwood infantil" viram "Rockwood"
+    titulo = "Resumos de ortopedia grátis: " + (", ".join(curtos[:-1]) + " e " + curtos[-1] if len(curtos) > 1 else "".join(curtos)) + " | Orto Questões"
+    descricao = (f"Resumos de ortopedia grátis, capítulo a capítulo ({lista}), para a residência, o TEOT e o TARO, "
                  "com as questões de prova que cobraram cada conceito.")
     colecao = {
         "@context": "https://schema.org",

@@ -573,8 +573,8 @@ def resumir(texto: str, limite: int) -> str:
 def pagina_banco(d: dict) -> tuple[str, dict]:
     pasta = "banco-de-questoes-ortopedia"
     titulo = "Banco de questões de ortopedia comentadas: TEOT, TARO e R4 | Orto Questões"
-    descricao = ("Orto Questões (OrtoQuestões): banco de questões de ortopedia com provas do TEOT, TARO e R4, gabarito "
-                 "da banca e comentário de cada alternativa. Conta grátis.")
+    descricao = ("Orto Questões (OrtoQuestões): banco de questões de ortopedia para a residência, com provas do TEOT, TARO e R4, "
+                 "gabarito da banca e comentário de cada alternativa. Conta grátis.")
     pct = round(100 * d["comentadas"] / max(1, d["total"]))
     faq = [
         ("O que é o Orto Questões?",
