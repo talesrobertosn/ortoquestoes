@@ -36,14 +36,48 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
   - as 19 questões fora do tema, que ficam para os ciclos dos seus temas.
 - **Prints:** pediatria-0085 com a figura; estante com o Tachdjian (2026-10-30, desktop).
 
+## Ciclo 2, parte B · Deficiências dos membros (pediatria)
+
+- **Estado:** publicado (PRs 655 a 658).
+- **Fontes:** Tachdjian 6ª ed., cap. 21; Campbell 2021, cap. 29 (Derek M. KELLY).
+- **Resumo:** `tachdjian6-deficiencias-membros`.
+- **Simulados:** pediatria-1411 a 1418.
+- **Comentários oficiais:** 12.
+- **Figuras:** AITKEN (Fig. 21.13, p. 886) e JONES (Fig. 21.34, p. 901).
+- **Alertas:** 0154 (PALEY fibular não está nos livros) e 0153 (GILLESPIE no lugar de AITKEN).
+
+## Ciclo 3 · Lesões do manguito rotador (ombro; 56 questões)
+
+- **Estado:** publicado (PRs 659 a 661).
+- **Fontes:** Campbell 2021, caps. 46, 52 e 12.
+- **Resumo:** `campbell14-manguito-rotador`.
+- **Simulados:** ombro-cotovelo-0686 a 0695.
+- **Comentários oficiais:** 16.
+- **Lacunas sem fonte local** (questões do TECOC e do peitoral maior, YOCUM, PASTA, porcentagens de GOUTALLIER): ver o checkpoint.
+- **Problema:** a PR 659 foi mesclada com o teste vermelho, porque o `| head` mascarava a falha. A PR 660 corrigiu o teste do Adiantar (teto de 100 em `hoje.n`) e criou `scripts/publicar_pr.sh`.
+- **Print:** 0056 (bear hug).
+
+## Ciclo 4 · Anatomia do ombro (52 questões)
+
+- **Estado:** publicado (PRs 662 e 663).
+- **Fonte:** Netter's Concise, 2ª ed., caps. 3 e 4.
+- **Resumo:** `netter-anatomia-ombro-braco`.
+- **Simulados:** ombro-cotovelo-0696 a 0703.
+- **Comentários oficiais:** 12.
+- **Pendentes:** as imagens de cotovelo e antebraço classificadas no subtema, e os ligamentos coracoclaviculares.
+- **Observação:** os comentários deste ciclo ficaram curtos (mediana de 1,8 mil caracteres); os próximos voltam ao tamanho de miniaula completa.
+
 ## Melhorias de sistema feitas no caminho
 
 | PR | Melhoria |
 | --- | --- |
 | 651 | SEO: o título do índice /resumos/ passa a sair dos livros da Biblioteca; o banco de questões fala em residência. |
 | 652 | O validador recusa o fecho de simulado em questão oficial. Estante com a descrição de cada livro, lombadas curtas e "Caps. 16 a 18". O leitor abre em sépia por padrão. |
-| em andamento | `scripts/figuras_livro.py`: localizar, gerar prévia, recortar e anexar figuras de livro aos comentários. |
+| 653 | `scripts/figuras_livro.py`: localizar, gerar prévia, recortar e anexar figuras de livro aos comentários. |
+| 654 | `scripts/livros.py` (leitura enxuta dos livros) e a passagem para o MacBook (`docs/prompts/CONTINUAR-NO-MACBOOK.md`, `scripts/macbook/preparar.sh`). |
+| 656 | `fila_editorial.py` preserva os comentários que já citam um resumo da Biblioteca. |
+| 660 | `scripts/publicar_pr.sh` só mescla com os checks verdes. |
 
 ## Próximo
 
-Ciclo 2, parte B: deficiências dos membros. Depois, Manguito rotador (posição 2 da fila).
+Ciclo 5: Neuropatia ulnar e outras compressões (mão, provas gerais; Green cap. 26 local e Campbell cap. 77). Depois, Omartrose e artroplastia do ombro.
