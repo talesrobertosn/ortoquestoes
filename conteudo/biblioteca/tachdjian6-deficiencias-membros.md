@@ -50,7 +50,7 @@ armadilha: Responder longitudinal terminal, que vale só quando faltam os raios 
 | Tipo | Cabeça | Acetábulo | Cabeça e diáfise |
 | --- | --- | --- | --- |
 | A | presente | normal | unem; a pseudartrose subtrocantérica costuma consolidar, com varo |
-| B | presente | normal | não unem: pseudartrose persistente |
+| B | presente | adequado ou moderadamente displásico | não unem: pseudartrose persistente |
 | C | ausente | displásico ou ausente | tufo ósseo na ponta proximal |
 | D | ausente | ausente ou pobre | fêmur curtíssimo, sem tufo; muitas vezes bilateral |
 !fim
