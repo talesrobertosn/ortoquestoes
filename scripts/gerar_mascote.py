@@ -1,8 +1,8 @@
 """O mascote em pixel art HD-2D (30/10/2026): o esqueleto guerreiro chibi e o gato, feitos do zero por este script.
 
 Nada é baixado nem gerado por IA: cada pixel sai das formas (campos de distância), da luz calculada e das paletas
-abaixo. O personagem é original: crânio grande e redondo com rachadura, órbitas ovais enormes e baixas, dentes
-retos, expressão séria; corpo pequeno com costelas e coluna; armadura leve (ombreira de aço amassada com correia,
+abaixo. O personagem é original: crânio grande e redondo com rachadura, órbitas ovais enormes e baixas, sem dentes à mostra (crânio de peça
+só), expressão séria; corpo pequeno com costelas e coluna; armadura leve (ombreira de aço amassada com correia,
 cinto com fivela, saiote de pano vermelho esfarrapado, braçadeira de couro). Nos comportamentos de Halloween ele
 veste por cima uma capa roxa com capuz.
 
@@ -685,11 +685,11 @@ def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
     calota = elipse((0, -6.5), 25.0, 20.5)
     rosto = elipse((0 + v * 0.8, 9.5), 17.0, 9.0)
     macas = circulo((-14.5 + v * 1.2, 7.5), 4.0) | circulo((14.5 + v * 1.2, 7.5), 4.0)
-    f = calota.suave(rosto, 5.0).suave(macas, 2.5)
+    # queixo arredondado, emendado no rosto: o crânio é uma peça só, sem dentes nem mandíbula separada
+    # (o Tales pediu, 30/10/2026)
+    queixo = elipse((v * 1.2, 17.8), 9.0, 5.0)
+    f = calota.suave(rosto, 5.0).suave(macas, 2.5).suave(queixo, 3.5)
     t.pinta(q.forma(f), "osso", 8.0, R=13.0, pid="cranio", uv=uv, semente=51)
-    # mandíbula pequena (peça da frente: ganha o traço da junta)
-    mand = caixa((v * 1.2, 20.6), 8.6, 3.3, r=2.6).suave(elipse((v * 1.2, 22.4), 6.0, 2.0), 1.2)
-    t.pinta(q.forma(mand), "osso", 8.3, R=3.0, pid="mandibula", uv=uv, semente=52)
     # sombras de modelado: têmporas, abaixo das maçãs, testa mais clara
     for sx in (-1, 1):
         t.pinta(q.forma(elipse((sx * 20.5 + v * 0.6, 3.0), 3.6, 7.5)), "osso", 0, sobre="cranio", tom=-0.13, uv=uv, semente=51, normal=False)
@@ -722,24 +722,14 @@ def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
     nz = (v * 2.4, 13.4)
     nariz = (circulo((nz[0] - 1.0, nz[1] - 0.6), 1.15) | circulo((nz[0] + 1.0, nz[1] - 0.6), 1.15)) | poligono([(nz[0] - 2.0, nz[1] - 0.4), (nz[0] + 2.0, nz[1] - 0.4), (nz[0], nz[1] + 2.0)])
     t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.2, pid="cranio", tom=0.1)
-    # boca: fileira curta e reta de dentes, fechada. Cada dente é encaixado na grade de pixels (sem serrilhado)
-    bx = v * 2.0
-    t.pinta(q.forma(caixa((bx, 19.0), 8.6, 2.9, r=1.0)), "orbita", 8.35, R=-1.0, pid="dentes_fundo", sem_contorno=True)
-    rad = math.radians(q.ang)
-    for i in range(5):
-        lx = bx - 6.0 + i * 3.0
-        cx_, cy_ = q.p(lx, 17.4)
-        cx_, cy_ = round(cx_), round(cy_)
-        dx3, dy3 = round(-math.sin(rad) * 3.0), 3
-        t.pinta(caixa((cx_, cy_), 1.0, 1.0), "dente", 8.4, R=0.9, pid="dentes", sem_contorno=True, tom=0.04 if i != 0 else -0.04)
-        t.pinta(caixa((cx_ + dx3, cy_ + dy3), 1.0, 1.0), "dente", 8.4, R=0.9, pid="dentes", sem_contorno=True, tom=-0.06 if i != 4 else -0.14)
+    # sem boca desenhada: só uma sombra suave embaixo do queixo, para dar volume
+    t.pinta(q.forma(elipse((v * 1.2, 21.6), 7.0, 2.2)), "osso", 0, sobre="cranio", tom=-0.12, uv=uv, semente=51, normal=False)
     if sob_capuz:
         # sombra do capuz no alto do crânio
         def sombra_capuz(X, Y):
             _, vv = uv(X, Y)
             return -0.62 * np.clip((4.0 - vv) / 20.0, 0, 1) ** 0.8
         t.pinta(q.forma(semiplano((0, 6), (0, 1))), "osso", 0, sobre="cranio", tom=sombra_capuz, normal=False)
-        t.pinta(q.forma(semiplano((0, 6), (0, 1))), "osso", 0, sobre="mandibula", tom=sombra_capuz, normal=False)
 
 
 def tronco(t: Tela, r: Rig, p: Pose):
