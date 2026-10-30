@@ -38,7 +38,7 @@ A nomenclatura ISO/ISPO troca os nomes antigos por descrições (Box 21.2): a he
 
 !questoes central=pediatria-0132 treino=pediatria-1417
 conceito: Transversal atravessa o membro, longitudinal pega um lado só; terminal não tem nada distal, intercalar tem; a hemimelia fibular é sempre longitudinal, e com o pé normal é intercalar.
-como: O TARO perguntou como se classifica a hemimelia fibular com o pé normal.
+como: Uma prova de Ortopedia sem edição identificada perguntou como se classifica a hemimelia fibular com o pé normal.
 armadilha: Responder longitudinal terminal, que vale só quando faltam os raios laterais do pé.
 !fim
 
@@ -67,9 +67,9 @@ armadilha: Responder longitudinal terminal, que vale só quando faltam os raios 
 
 !questoes central=pediatria-0153 relacionadas=pediatria-0165,pediatria-0007,pediatria-0096,pediatria-0045,pediatria-0076,pediatria-0393,pediatria-0429 treino=pediatria-1411,pediatria-1412,pediatria-1413
 conceito: AITKEN conta o que sobra do quadril (A une, B não une, C sem cabeça com tufo, D sem nada); GILLESPIE escolhe o tratamento (A alonga, B rotacionoplastia ou amputação, C prótese); a criança tem quadril em flexão, abdução e rotação externa e costuma ter hemimelia fibular.
-como: O TARO perguntou cabeça e acetábulo no tipo A, o tipo com pseudartrose do colo, a contratura do quadril, a anomalia mais associada, o grupo para alongamento, o tipo de PALEY da pseudartrose móvel e as alterações a pesquisar no fêmur curto; o TEOT 2022, a posição do segmento femoral.
+como: Uma prova de Ortopedia pediu cabeça e acetábulo no tipo A e o tipo com pseudartrose do colo; o TARO, a contratura do quadril (2020), a anomalia mais associada (2017), o grupo para alongamento (2014), o tipo de PALEY da pseudartrose móvel (2012) e as alterações a pesquisar no fêmur curto (2010); o TEOT 2022, a posição do segmento femoral.
 armadilha: Confundir AITKEN A e B, que têm cabeça e acetábulo, ou pôr o quadril em adução e rotação interna.
-alerta: O TARO 2015 (`pediatria-0153`) chama de GILLESPIE a descrição de cabeça e acetábulo, que é a do AITKEN; a resposta B vale nas duas leituras. As anomalias cardíacas (`pediatria-0429`) são citadas pelo Campbell para a DFFP, e não especificamente para o fêmur curto congênito.
+alerta: A questão `pediatria-0153` chama de GILLESPIE a descrição de cabeça e acetábulo, que é a do AITKEN; a resposta B vale nas duas leituras. As anomalias cardíacas (`pediatria-0429`) são citadas pelo Campbell para a DFFP, e não especificamente para o fêmur curto congênito.
 !fim
 
 # Hemimelia fibular {radar=confirmado}
@@ -84,7 +84,7 @@ alerta: O TARO 2015 (`pediatria-0153`) chama de GILLESPIE a descrição de cabe�
 
 !questoes central=pediatria-0009 relacionadas=pediatria-0154 treino=pediatria-1414,pediatria-1415
 conceito: Hemimelia fibular é a deficiência de osso longo mais comum e atinge o membro todo: fêmur curto, joelho valgo com côndilo lateral hipoplásico e LCA ausente, pé equinovalgo com coalizão e raios laterais faltando; a decisão entre alongar e amputar depende do pé e da discrepância (BIRCH).
-como: O TARO 2020 pediu o côndilo hipoplásico e o tipo de instabilidade do joelho; outro TARO, o tipo de PALEY do tornozelo em equinovalgo fixo.
+como: O TARO 2020 pediu o côndilo hipoplásico e o tipo de instabilidade do joelho; uma prova de Ortopedia, o tipo de PALEY do tornozelo em equinovalgo fixo.
 armadilha: Pôr o côndilo medial ou a instabilidade em varo e valgo; decidir o tratamento só pelo tamanho da fíbula.
 alerta: A classificação de PALEY da hemimelia fibular (`pediatria-0154`) não aparece nos livros lidos (Tachdjian cap. 21, Campbell cap. 29 e o volume 1 do Lovell and Winter); o gabarito oficial C foi preservado sem conferência no livro.
 !fim
