@@ -455,14 +455,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0027": {
+  "conceito": "O teste do gancho parece simples, mas tem duas regras de execução: a contração é ativa e o dedo entra pelo lado lateral.\n\n**O teste do gancho, no Campbell** (cap. 48, p. 2522 e 2523, Fig. 48.47). Com o **cotovelo em flexão e supinação ativas**, o examinador deve conseguir **enganchar o dedo indicador** sob uma estrutura em corda na fossa antecubital se o tendão estiver íntegro. Foi relatado com **100% de sensibilidade e especificidade**. O cuidado: **enganchar pela borda lateral** do tendão, entrando **de lateral para medial**, e **não pela medial**, porque o **lacerto fibroso**, que vai para o lado medial, pode ser confundido com um tendão íntegro.\n\n**Por que ativo.** A contração ativa em supinação tensiona o tendão e o torna uma corda palpável; um tendão roto, retraído, não forma essa corda.\n\n**O que a banca quis testar.** A face de palpação e a flexão ativa. O resumo Ruptura distal do bíceps traz os testes.",
+  "correta": "**A: lateral, com flexão ativa do cotovelo.** O dedo engancha o tendão pela borda lateral, com flexão e supinação ativas (Campbell, cap. 48).",
   "incorretas": {
-   "B": "**O lado que engana.** Pelo lado medial, o lacertus fibrosus íntegro pode ser palpado como uma faixa tensa e confundido com o tendão, gerando falso-negativo.",
-   "C": "**Tendão frouxo não se palpa.** O lado está certo, mas sem contração ativa o tendão não fica tenso, e o teste perde a validade mesmo com o tendão íntegro.",
-   "D": "**Lado e contração errados.** Palpar pelo lado medial com o cotovelo passivo soma as duas fontes de erro do teste."
+   "B": "**Borda errada.** Pela medial, o lacerto fibroso pode ser confundido com o tendão.",
+   "C": "**A flexão é ativa.** Sem contração, o tendão não forma a corda palpável.",
+   "D": "**Erra os dois.** O teste usa flexão ativa e entrada pela borda lateral."
   },
-  "conceito": "**A lesão.** A ruptura do bíceps distal é típica de **homens de 40 a 60 anos**, no membro dominante, por uma **contração excêntrica** súbita: o cotovelo em flexão é forçado para a extensão contra carga. O paciente sente um estalo na fossa antecubital, aparece equimose e o ventre do bíceps sobe (deformidade de Popeye reversa). Tabagismo e uso de anabolizantes aumentam o risco. A perda funcional mais importante é de **supinação**, cerca de 40 a 50% da força, e de flexão, cerca de 30%.\n\n**O teste do gancho.** Descrito por O'Driscoll, é o exame clínico mais confiável para a ruptura completa. Com o cotovelo a 90 graus e o paciente fazendo **flexão e supinação ativas**, o examinador introduz o indicador pela face **lateral** da fossa antecubital e tenta **enganchar** o tendão de lateral para medial. Com o tendão íntegro, o dedo passa por baixo de uma corda tensa; com o tendão roto, não há o que enganchar.\n\n**Por que pela face lateral e com contração ativa.** O **lacertus fibrosus**, a aponeurose bicipital, costuma ficar íntegro em parte das rupturas e é palpável pelo lado medial como uma faixa tensa: palpar por ali gera falso-negativo. E o tendão só vira uma corda palpável quando está sob contração ativa; na flexão passiva, ele fica frouxo mesmo íntegro.\n\n**Tratamento.** No paciente ativo, a reinserção anatômica na tuberosidade do rádio deve ser feita cedo, em geral nas primeiras duas a três semanas, antes da retração. Pode ser por uma incisão anterior, com botão cortical, âncoras ou parafuso de interferência, sob risco de lesão do nervo cutâneo lateral do antebraço, ou por duas incisões, com risco de ossificação heterotópica e sinostose radioulnar. Nas lesões crônicas retraídas, reconstrói-se com enxerto.\n\n**Na prova:** teste do gancho: dedo pela **face lateral** da fossa antecubital, com **flexão e supinação ativas**; pela face medial, o lacertus engana.",
-  "correta": "**Face lateral, com flexão ativa do cotovelo.** O indicador entra pelo lado lateral e engancha o tendão sob contração ativa, com o antebraço supinado. Se não há corda para enganchar, a ruptura é completa.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2522 e 2523",
+   "Biblioteca OrtoQuestões, resumo Ruptura distal do bíceps (campbell14-biceps-distal)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "ombro-cotovelo-0028": {
@@ -600,14 +604,18 @@
   }
  },
  "ombro-cotovelo-0033": {
+  "conceito": "Para a ruptura completa do bíceps distal, um teste se destaca pelos números relatados.\n\n**O teste do gancho, no Campbell** (cap. 48, p. 2522 e 2523, Fig. 48.47). Com o **cotovelo em flexão e supinação ativas**, o examinador deve conseguir **enganchar o dedo indicador** sob uma estrutura em corda na fossa antecubital se o tendão estiver íntegro. Foi relatado com **100% de sensibilidade e especificidade**. O cuidado: **enganchar pela borda lateral** do tendão, entrando **de lateral para medial**, e **não pela medial**, porque o **lacerto fibroso**, que vai para o lado medial, pode ser confundido com um tendão íntegro.\n\n**Por que ativo.** A contração ativa em supinação tensiona o tendão e o torna uma corda palpável; um tendão roto, retraído, não forma essa corda.\n\n**Os outros testes.**\n- **Compressão (squeeze):** cotovelo a 60 a 80 graus, antebraço levemente pronado; a ausência de supinação ao apertar o ventre é positiva; valor preditivo de 95%, sensibilidade de 100%.\n- **SPEED** e **YERGASON:** avaliam a **cabeça longa** do bíceps no ombro, não a ruptura distal.\n\n**O que a banca quis testar.** O teste com 100% de sensibilidade e especificidade. O resumo Ruptura distal do bíceps traz os testes.",
+  "correta": "**A: hook test.** Foi relatado com 100% de sensibilidade e especificidade para a avulsão completa (Campbell, cap. 48).",
   "incorretas": {
-   "B": "**Speed é do ombro.** A flexão anterior resistida com cotovelo estendido e antebraço supinado provoca dor na cabeça longa do bíceps, no sulco intertubercular. Não avalia a inserção distal.",
-   "C": "**Yergason também é proximal.** A supinação resistida com cotovelo a 90 graus testa a cabeça longa do bíceps e a estabilidade dela no sulco, no ombro.",
-   "D": "**Válido, mas inferior.** O biceps squeeze de Ruland avalia a ruptura distal, como o teste de Thompson faz no Aquiles, porém com acurácia menor que a do hook test."
+   "B": "**É do ombro.** O SPEED avalia a cabeça longa do bíceps.",
+   "C": "**Também do ombro.** O YERGASON avalia a cabeça longa e a sua estabilidade no sulco.",
+   "D": "**É bom, mas com outros números.** O squeeze tem sensibilidade de 100% e valor preditivo positivo de 95%."
   },
-  "conceito": "**O melhor teste para a ruptura completa.** O **hook test**, descrito por O'Driscoll, teve na série original 100% de sensibilidade e 100% de especificidade para a ruptura **completa** do bíceps distal, desempenho superior ao da ressonância, que pode errar nas lesões parciais e no edema. Estudos posteriores mostraram valores um pouco menores, mas ele segue como o exame clínico mais confiável.\n\n**A técnica, em detalhe.** Paciente com o cotovelo a 90 graus fazendo **flexão e supinação ativas**. O examinador introduz o indicador pela face **lateral** da fossa antecubital e tenta enganchar o tendão de lateral para medial. Com o tendão íntegro, o dedo passa por baixo de uma corda tensa de cerca de 1 cm; com o tendão roto, não há o que enganchar. Pelo lado medial, o **lacertus fibrosus** íntegro engana, e sem contração ativa o tendão fica frouxo.\n\n**Os outros testes e o que avaliam.** O **biceps squeeze** (Ruland) é o equivalente do teste de Thompson do tendão de Aquiles: com o cotovelo fletido e o antebraço relaxado, aperta-se o ventre do bíceps; se o antebraço não supina, o tendão está roto. É útil, porém menos específico. O teste da **flexão-pronação passiva** observa se o ventre do bíceps se move. **Speed** e **Yergason** avaliam a cabeça **longa** do bíceps no ombro, no sulco intertubercular, e não a inserção distal.\n\n**Por que a pressa.** A reinserção anatômica na tuberosidade do rádio é mais simples e dá melhor resultado nas primeiras duas a três semanas, antes da retração. Depois disso o tendão encurta e cicatriza em posição, e a reconstrução exige enxerto para ligar o coto retraído à tuberosidade. Sem cirurgia, o paciente perde cerca de 40% da força de supinação e 30% da de flexão, o que pesa muito no trabalhador braçal.\n\n**Na prova:** para a ruptura **completa** do bíceps distal, o teste de maior acurácia é o **hook test** (100% na série original); Speed e Yergason são do bíceps proximal.",
-  "correta": "**Hook test.** Na série de O'Driscoll, o teste do gancho identificou todas as rupturas completas e não deu falso-positivo, com 100% de sensibilidade e especificidade, desempenho superior ao da ressonância.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2522 e 2523",
+   "Biblioteca OrtoQuestões, resumo Ruptura distal do bíceps (campbell14-biceps-distal)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "ombro-cotovelo-0034": {
@@ -2931,17 +2939,18 @@
   "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0238": {
+  "conceito": "O teste de compressão do bíceps funciona como o de THOMPSON no tendão calcâneo: apertar o músculo deve mover a articulação. O ângulo do cotovelo é escolhido para isolar o bíceps.\n\n**O teste, no Campbell** (cap. 48, p. 2522). Paciente **sentado**, cotovelo a **60 a 80 graus** de flexão, antebraço **levemente pronado**. Essa flexão **minimiza a tensão no braquial** e ajuda a **isolar o bíceps na supinação**; a pronação leve tensiona o tendão. O examinador aperta o ventre com as duas mãos; a **ausência de supinação** indica ruptura. **Valor preditivo positivo de 95%**, **sensibilidade de 100%**.\n\n**Por que não estendido.** Com o cotovelo estendido, o bíceps fica em desvantagem e a supinação ao apertar é pequena mesmo com o tendão íntegro; com flexão máxima, o braquial e a postura atrapalham.\n\n**O que a banca quis testar.** O ângulo do teste. O resumo Ruptura distal do bíceps traz os testes.",
+  "correta": "**D: 60 a 80 graus.** É a flexão que minimiza o braquial e isola o bíceps na supinação (Campbell, cap. 48).",
   "incorretas": {
-   "A": "Com o cotovelo quase esticado, o bíceps fica alongado e não é possível apoiar o antebraço na coxa. Não é a posição descrita para o teste.",
-   "B": "De 20 a 40 graus ainda está longe da faixa descrita e reproduz mal o giro esperado.",
-   "C": "De 40 a 60 graus se aproxima, mas a descrição original do teste especifica 60 a 80 graus."
+   "A": "**Cotovelo quase estendido.** O bíceps fica em desvantagem, e o teste perde valor.",
+   "B": "**Ainda pouco fletido.** O livro recomenda 60 a 80 graus.",
+   "C": "**Perto, mas fora da faixa.** A faixa descrita é de 60 a 80 graus."
   },
-  "conceito": "O **tendão distal do bíceps** se prende no rádio, logo abaixo do cotovelo. Além de dobrar o cotovelo, o bíceps é o principal músculo que gira o antebraço para a palma ficar para cima, a **supinação**. Quando esse tendão rompe, o paciente perde força justamente nesses dois movimentos.\n\nO **teste da compressão** (*squeeze test*), descrito por Ruland, aproveita isso. A ideia é a mesma do teste de Thompson para o tendão de Aquiles: em vez de pedir ao paciente que faça força, o examinador aperta o músculo e observa se o tendão transmite o movimento.\n\nO paciente fica sentado, com o antebraço apoiado sobre a coxa, o cotovelo dobrado entre **60 e 80 graus** e o antebraço levemente virado para baixo (pronação). O examinador aperta com firmeza o ventre do bíceps com as duas mãos. Se o tendão está inteiro, o aperto puxa o rádio e o antebraço gira um pouco para cima: aparece a supinação. Se o tendão está rompido, nada acontece, e o teste é positivo.\n\nA posição de 60 a 80 graus é a descrita originalmente porque deixa o bíceps relaxado, apoiado, e em boa posição para transmitir o giro.\n\nO teste da compressão é um bom complemento ao **teste do gancho** (*hook test*), em que o examinador tenta enganchar o dedo por baixo do tendão na dobra do cotovelo, considerado o exame clínico mais confiável.",
-  "correta": "De 60 a 80 graus. É a flexão da descrição original, com o antebraço apoiado na coxa, em que o aperto do bíceps produz supinação se o tendão estiver íntegro.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 46"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2522",
+   "Biblioteca OrtoQuestões, resumo Ruptura distal do bíceps (campbell14-biceps-distal)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "ombro-cotovelo-0239": {
@@ -3501,17 +3510,18 @@
   ]
  },
  "ombro-cotovelo-0302": {
+  "conceito": "O TARO detalhou o teste: posição do cotovelo e direção do dedo.\n\n**O teste do gancho, no Campbell** (cap. 48, p. 2522 e 2523, Fig. 48.47). Com o **cotovelo em flexão e supinação ativas**, o examinador deve conseguir **enganchar o dedo indicador** sob uma estrutura em corda na fossa antecubital se o tendão estiver íntegro. Foi relatado com **100% de sensibilidade e especificidade**. O cuidado: **enganchar pela borda lateral** do tendão, entrando **de lateral para medial**, e **não pela medial**, porque o **lacerto fibroso**, que vai para o lado medial, pode ser confundido com um tendão íntegro.\n\n**Por que ativo.** A contração ativa em supinação tensiona o tendão e o torna uma corda palpável; um tendão roto, retraído, não forma essa corda.\n\n**O que a banca quis testar.** A posição ativa e a direção lateral para medial. O resumo Ruptura distal do bíceps traz os testes.",
+  "correta": "**A: flexão e supinação ativas, lateral para medial.** É a execução descrita no Campbell (cap. 48).",
   "incorretas": {
-   "B": "A contração ativa está certa, mas entrar pelo lado de dentro faz o dedo encontrar primeiro o lacertus fibroso, que pode simular o tendão e esconder a ruptura.",
-   "C": "A direção está certa, mas com o braço posicionado passivamente o tendão fica frouxo e pode não ser palpado mesmo se estiver inteiro.",
-   "D": "Erra os dois: o tendão frouxo pela posição passiva e o risco de confundir o lacertus fibroso pela direção medial."
+   "B": "**Direção errada.** Entrando pela medial, o lacerto fibroso pode simular o tendão.",
+   "C": "**Precisa ser ativa.** A contração ativa é o que transforma o tendão numa corda palpável.",
+   "D": "**Erra os dois.** O teste é ativo e de lateral para medial."
   },
-  "conceito": "O **teste do gancho** (*hook test*), descrito por O'Driscoll, é o exame clínico mais confiável para diagnosticar a ruptura do **tendão distal do bíceps**, que se prende no rádio logo abaixo do cotovelo. Cada detalhe da técnica existe para evitar um erro.\n\n**A posição.** O paciente dobra o cotovelo a 90 graus e gira a palma para cima (**flexão e supinação ativas**), fazendo força. É a contração do próprio paciente que estica o tendão e o transforma numa corda firme, fácil de palpar. Se o examinador apenas posicionar o braço (de forma passiva), o tendão fica frouxo e pode não ser sentido mesmo estando inteiro, o que daria um falso positivo.\n\n**A direção.** O examinador tenta enganchar o dedo indicador por baixo do tendão, entrando pelo **lado de fora** da dobra do cotovelo e indo **para dentro** (de lateral para medial). O motivo é o **lacertus fibroso**, uma expansão do bíceps em forma de lâmina que sai do lado de dentro do tendão e se espalha sobre os músculos do antebraço. Em muitas rupturas, o lacertus continua inteiro. Se o dedo entrar pelo lado de dentro, ele encontra primeiro essa lâmina tensa e pode confundi-la com o tendão, dando um falso negativo.\n\nSe o tendão está íntegro, o dedo passa por baixo de uma corda bem definida. Se está rompido, não há nada para enganchar.",
-  "correta": "Flexão e supinação ativas, palpando de lateral para medial. A contração ativa estica o tendão, e entrar pelo lado de fora evita confundir o lacertus fibroso com o tendão.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2522 e 2523",
+   "Biblioteca OrtoQuestões, resumo Ruptura distal do bíceps (campbell14-biceps-distal)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "ombro-cotovelo-0303": {
@@ -4821,14 +4831,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0391": {
+  "conceito": "O perfil é tão típico que vira pergunta direta: quem rompe o bíceps distal, e em que posição?\n\n**O que o Campbell diz** (cap. 48, p. 2522). A ruptura distal ocorre tipicamente em **homens de meia-idade**, ao **levantar peso com o cotovelo fletido a 90 graus**, ou quando o bíceps se contrai contra uma **resistência inesperada**. Há estalo, dor, equimose na fossa antecubital, ventre que sobe e fraqueza da flexão e da supinação.\n\n**Por que a meia-idade.** O tendão já degenerou o bastante para romper com uma carga que um jovem suportaria, e o paciente ainda faz esforços pesados.\n\n**O que a banca quis testar.** O perfil e o mecanismo. O resumo Ruptura distal do bíceps traz o quadro.",
+  "correta": "**A: de meia-idade, com o cotovelo em flexão de 90 graus.** É o perfil e o mecanismo descritos no Campbell (cap. 48).",
   "incorretas": {
-   "B": "A faixa etária está certa, mas a lesão típica acontece com o cotovelo dobrado, quando o bíceps está contraído, e não esticado.",
-   "C": "O mecanismo está certo, mas a ruptura do tendão é rara no jovem, cujo tendão ainda não sofreu o desgaste da meia-idade.",
-   "D": "Erra os dois: nem a faixa etária jovem nem o cotovelo esticado correspondem ao padrão da lesão."
+   "B": "**Posição errada.** O mecanismo típico é com o cotovelo fletido a 90 graus.",
+   "C": "**Idade errada.** O livro descreve homens de meia-idade.",
+   "D": "**Erra os dois.** Nem jovens nem cotovelo estendido."
   },
-  "conceito": "A ruptura do **tendão distal do bíceps**, que se prende no rádio logo abaixo do cotovelo, tem um perfil tão típico que quase se faz o diagnóstico pela história.\n\nO paciente costuma ser **homem**, de **meia-idade** (por volta dos 40 aos 60 anos), muitas vezes no braço dominante, e o tabagismo e o uso de anabolizantes aumentam o risco. Em mulheres, a lesão é rara.\n\nO mecanismo é uma **carga inesperada que força a extensão** de um cotovelo que está **dobrado a cerca de 90 graus**, fazendo força. Por exemplo: segurar uma caixa pesada que escorrega, ou tentar segurar algo que cai. Nessa posição, o bíceps está contraído; quando o peso vence, o músculo é esticado à força (contração excêntrica) e o tendão é arrancado do osso.\n\nA idade importa porque, na meia-idade, o tendão já passou por um desgaste prévio, perto da inserção, numa região com pouca irrigação. No jovem, com tendão saudável, essa ruptura é incomum.\n\nNo exame, há dor e estalo na dobra do cotovelo, hematoma, o volume do bíceps sobe no braço, e o **teste do gancho** não encontra o tendão: com o cotovelo a 90 graus e a palma girada para cima com força, o examinador tenta enganchar o dedo por baixo do tendão, entrando pelo lado de fora, e não há nada para enganchar.\n\nA principal perda de força é na **supinação** (girar a palma para cima), mais do que na flexão. Por isso, no paciente ativo, a indicação é reinserir o tendão no lugar certo.",
-  "correta": "De meia-idade, com o cotovelo em flexão de 90 graus. O tendão já desgastado é arrancado quando uma carga inesperada força a extensão do cotovelo dobrado.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2522",
+   "Biblioteca OrtoQuestões, resumo Ruptura distal do bíceps (campbell14-biceps-distal)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "ombro-cotovelo-0392": {
@@ -5616,17 +5630,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0450": {
+  "conceito": "Na ressonância, a estrutura lesada indicada pelas setas é o tendão distal do bíceps, a corda que desce pela fossa antecubital até a tuberosidade do rádio.\n\n**O que o Campbell diz** (cap. 48, p. 2523). A **ressonância** distingue a ruptura **completa da parcial** e mostra **tendinose**, **tenossinovite**, **hematoma** e **contusão do braquial**. A posição **FABS** (cotovelo a 90 graus, ombro em 180 graus de abdução e antebraço supinado) dá um **corte longitudinal verdadeiro** do tendão. Numa comparação, a acurácia foi de **86%** na ressonância e **45%** no ultrassom.\n\n**Os distratores.** O **braquial** se insere na tuberosidade da ulna, mais profundo; o **ligamento colateral lateral ulnar** é posterolateral; o **tríceps** é posterior, no olécrano.\n\n**O que a banca quis testar.** O reconhecimento do tendão distal do bíceps lesado. O resumo Ruptura distal do bíceps traz a imagem.",
+  "correta": "**C: tendão distal do bíceps braquial.** É a estrutura da fossa antecubital que vai à tuberosidade do rádio, bem avaliada pela ressonância (Campbell, cap. 48).",
   "incorretas": {
-   "A": "**Mais profundo.** O braquial fica sob o bíceps e se insere na tuberosidade da ulna.",
-   "B": "**Face lateral.** O colateral ulnar lateral vai do epicôndilo lateral à crista do supinador, fora da fossa cubital.",
-   "D": "**Face posterior.** O tríceps se insere no olécrano, atrás do cotovelo."
+   "A": "**Fica mais profundo e vai à ulna.** O braquial se insere na tuberosidade da ulna.",
+   "B": "**É posterolateral.** O colateral lateral ulnar não fica na fossa antecubital.",
+   "D": "**É posterior.** O tríceps se insere no olécrano."
   },
-  "conceito": "**Como achar o bíceps distal na ressonância.** O tendão distal do bíceps desce pela fossa cubital, lateral à artéria braquial e ao mediano, e mergulha em direção à **tuberosidade do rádio**, girando cerca de 90 graus. Por ser **oblíquo**, é difícil vê-lo inteiro nos cortes padrão; os **axiais** acompanham o tendão em sequência, e a posição **FABS** (flexão, abdução do ombro e supinação, com o paciente em decúbito ventral e o braço acima da cabeça) mostra o tendão em um só corte até a inserção.\n\n**Os sinais de lesão.** **Completa**: ausência do tendão na tuberosidade, coto retraído com líquido ao redor, edema e hematoma na fossa cubital. **Parcial**: tendão espessado ou afilado, com hipersinal em T2 perto da inserção, e bursite **bicipitorradial** (entre o tendão e a tuberosidade). O **lacerto fibroso** íntegro limita a retração, e a lesão pode parecer menor do que é.\n\n**Quem rompe e como.** Homem de meia-idade, contração **excêntrica** contra carga, estalo, dor e equimose, **Popeye reverso**. O **hook test** é positivo (não se consegue enganchar o tendão pela lateral com o cotovelo fletido e supinado). Tabagismo e anabolizantes aumentam o risco.\n\n**Os outros tendões.** O **braquial** fica mais profundo, sobre a cápsula, e vai à tuberosidade da **ulna**. O **tríceps** fica atrás, no olécrano; sua ruptura é rara e está ligada a anabolizantes, insuficiência renal e hiperparatireoidismo. O **colateral ulnar lateral** vai do epicôndilo lateral à crista do supinador, na face lateral.\n\n**Na prova:** tendão anterior da fossa cubital indo à tuberosidade do **rádio** = **bíceps distal**; FABS mostra o tendão em um corte.",
-  "correta": "**Tendão distal do bíceps braquial.** As setas marcam o tendão na fossa cubital, em direção à tuberosidade do rádio, com sinal alterado e descontinuidade de lesão.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 3"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2523",
+   "Biblioteca OrtoQuestões, resumo Ruptura distal do bíceps (campbell14-biceps-distal)"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "ombro-cotovelo-0451": {
@@ -7901,18 +7916,18 @@
   "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0566": {
-  "conceito": "O tendão distal do bíceps se insere na tuberosidade radial e transmite força para flexão do cotovelo e, sobretudo, supinação. Sua ruptura completa pode passar despercebida se a deformidade for pequena ou se a aponeurose bicipital permanecer íntegra. A palpação precisa distinguir o tendão verdadeiro de outras estruturas fibrosas.\n\nNo Hook test, ou teste do gancho, o cotovelo fica fletido e o paciente realiza supinação ativa, tensionando o tendão. O examinador introduz o indicador pelo lado lateral, de lateral para medial, tentando enganchá-lo por baixo do cordão tendíneo. Não conseguir enganchar um tendão identificável sugere ruptura completa.\n\nA entrada medial pode encontrar a aponeurose bicipital, chamada lacertus fibrosus, e produzir uma falsa impressão de continuidade. A supinação passiva também não reproduz a ativação muscular padronizada. O teste não tem sensibilidade perfeita em todas as populações, especialmente em rupturas parciais ou com estruturas adjacentes preservadas; história, comparação contralateral e imagem quando indicada complementam o exame.",
-  "correta": "De lateral para medial, em supinação ativa, descreve a técnica correta. A ativação do bíceps destaca o tendão, e a entrada lateral ajuda a afastar a confusão com o lacertus medial. O resultado deve ser integrado à força, à dor e ao restante do exame, porque um teste aparentemente íntegro não exclui toda lesão parcial.",
+  "conceito": "Mais uma versão do teste do gancho: direção e tipo de supinação.\n\n**O teste do gancho, no Campbell** (cap. 48, p. 2522 e 2523, Fig. 48.47). Com o **cotovelo em flexão e supinação ativas**, o examinador deve conseguir **enganchar o dedo indicador** sob uma estrutura em corda na fossa antecubital se o tendão estiver íntegro. Foi relatado com **100% de sensibilidade e especificidade**. O cuidado: **enganchar pela borda lateral** do tendão, entrando **de lateral para medial**, e **não pela medial**, porque o **lacerto fibroso**, que vai para o lado medial, pode ser confundido com um tendão íntegro.\n\n**Por que ativo.** A contração ativa em supinação tensiona o tendão e o torna uma corda palpável; um tendão roto, retraído, não forma essa corda.\n\n**O que a banca quis testar.** A direção e a supinação ativa. O resumo Ruptura distal do bíceps traz os testes.",
+  "correta": "**A: de lateral para medial, em supinação ativa.** É a execução que evita confundir o lacerto fibroso com o tendão (Campbell, cap. 48).",
   "incorretas": {
-   "B": "A supinação ativa está correta, mas o acesso medial pode enganchar a aponeurose bicipital em vez do tendão distal verdadeiro. Uma aponeurose preservada pode persistir mesmo quando o tendão foi avulsionado. A direção da palpação, portanto, não é um detalhe cosmético: ela modifica a possibilidade de falso resultado tranquilizador.",
-   "C": "A direção lateral para medial é adequada, mas a técnica descrita originalmente utiliza supinação ativa. Ativação muscular torna o tendão mais reconhecível e padroniza a tensão examinada. Apenas girar o antebraço passivamente não equivale a testar a continuidade do tendão sob contração do bíceps.",
-   "D": "A alternativa erra a direção e a forma de supinação. A entrada medial favorece confusão com o lacertus, e a supinação passiva reduz a padronização da tensão tendínea. A combinação pode produzir palpação de uma estrutura fibrosa sem demonstrar que ela seja o tendão distal funcional que a prova pretende avaliar."
+   "B": "**Direção errada.** De medial para lateral, o lacerto pode enganar.",
+   "C": "**A supinação é ativa.** Sem ela, o tendão não fica tenso.",
+   "D": "**Erra os dois.** O teste é de lateral para medial, em supinação ativa."
   },
   "referencias": [
-   "O’Driscoll SW et al. The hook test for distal biceps tendon avulsion. https://pubmed.ncbi.nlm.nih.gov/17687121/",
-   "Distal biceps hook test: sensitivity in acute and chronic tears and ability to predict the need for graft reconstruction. https://pmc.ncbi.nlm.nih.gov/articles/PMC7400716/"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2522 e 2523",
+   "Biblioteca OrtoQuestões, resumo Ruptura distal do bíceps (campbell14-biceps-distal)"
   ],
-  "geradoEm": "2026-10-07",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "ombro-cotovelo-0567": {
@@ -11161,6 +11176,66 @@
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 47 (Recurrent Dislocations)",
    "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 47 (Recurrent Dislocations), Shoulder, Pathologic anatomy (p. 2440) e Anterior instability: surgical treatment (p. 2446 a 2448, Table 47.5 e 47.6, Fig. 47.26)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "ombro-cotovelo-0720": {
+  "conceito": "A ruptura distal do bíceps tem um retrato falado: o homem de meia-idade que segura uma carga pesada com o cotovelo dobrado, sente um estalo e vê o músculo subir no braço.\n\n**O quadro, no Campbell** (cap. 48, p. 2522). A ruptura distal do tendão do bíceps ocorre tipicamente em **homens de meia-idade**, ao **levantar peso com o cotovelo fletido a 90 graus** ou quando o bíceps se contrai contra uma **resistência inesperada**. Pode haver um **estalo**, seguido de **dor**, **inchaço** e **equimose na fossa antecubital**. A **migração proximal do ventre** é evidente, com um **defeito palpável**. No início há **fraqueza da flexão e da supinação**.\n\n**A supinação.** Com o cotovelo estendido, o **bíceps é duas vezes mais potente que o supinador** na supinação do antebraço, e essa vantagem cresce com o cotovelo fletido. Por isso a maioria dos autores reinsere o tendão na **tuberosidade do rádio**, para devolver a força de supinação.\n\n**A ruptura parcial.** As rupturas completas são dramáticas e fáceis de diagnosticar; as **parciais** não: têm dor e fraqueza parecidas, mas o tendão ainda é palpável. A compressão do nervo mediano no antebraço proximal pode resultar de uma ruptura parcial. A ressonância distingue as duas.\n\n**Por que esta questão foi criada.** É uma gêmea da questão do TARO sobre o perfil do paciente e a posição do cotovelo.\n\n> **Na prova:** **homem de meia-idade**, cotovelo a **90°**, carga ou resistência inesperada; **estalo**, equimose antecubital, ventre **sobe**; fraqueza de **flexão e supinação** (bíceps = 2x o supinador).",
+  "correta": "**A: acomete tipicamente homens de meia-idade, ao levantar peso com o cotovelo fletido a 90 graus ou quando o bíceps contrai contra uma resistência inesperada; há estalo, dor, equimose na fossa antecubital, migração proximal do ventre e fraqueza da flexão e da supinação.** É a descrição do Campbell (cap. 48).",
+  "incorretas": {
+   "B": "**Perfil e posição errados.** O Campbell descreve homens de meia-idade com o cotovelo fletido a 90 graus.",
+   "C": "**O bíceps é o grande supinador.** Com o cotovelo estendido, é duas vezes mais potente que o supinador.",
+   "D": "**É o contrário.** As parciais são difíceis de diagnosticar, com quadro parecido e tendão ainda palpável."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2522 e 2523"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "ombro-cotovelo-0721": {
+  "conceito": "O bíceps distal tem dois testes de consultório, e cada um tem um detalhe de execução que a prova cobra: o ângulo do cotovelo num, a borda do tendão no outro.\n\n**O teste de compressão (squeeze), no Campbell** (cap. 48, p. 2522). É o equivalente do teste de THOMPSON do tendão calcâneo:\n- paciente **sentado**, cotovelo a **60 a 80 graus** de flexão (minimiza a ação do braquial e isola o bíceps na supinação);\n- antebraço **levemente pronado**, para tensionar o tendão;\n- o examinador, do mesmo lado, **aperta o ventre** com as duas mãos (uma na junção miotendínea distal, outra no ventre);\n- a **ausência de supinação** é o teste **positivo** (ruptura do tendão ou do ventre).\n- **Valor preditivo positivo de 95%**, **sensibilidade de 100%**.\n\n**O teste do gancho (hook test).** Com o cotovelo em **flexão e supinação ativas**, o examinador deve conseguir **enganchar o dedo indicador** sob uma estrutura em corda na fossa antecubital se o tendão estiver íntegro (Fig. 48.47). Relatado com **100% de sensibilidade e especificidade**. O cuidado: **enganchar pela borda lateral** do tendão, **de lateral para medial**, e não pela medial, porque o **lacerto fibroso** pode ser confundido com um tendão íntegro.\n\n**Por que esta questão foi criada.** É uma gêmea das várias questões do TARO e do TEOT sobre o teste do gancho e o teste de compressão.\n\n> **Na prova:** **squeeze** = cotovelo **60 a 80°**, antebraço pronado, **sem supinação** = ruptura; **hook** = flexão e supinação **ativas**, **lateral para medial** (evitar o **lacerto**); 100% / 100%.",
+  "correta": "**C: no teste de compressão, com o paciente sentado e o cotovelo a 60 a 80 graus e o antebraço levemente pronado, a ausência de supinação ao apertar o ventre indica ruptura (valor preditivo de 95%, sensibilidade de 100%); no teste do gancho, com flexão e supinação ativas, o dedo engancha o tendão pela borda lateral, para não confundir com o lacerto fibroso (100% de sensibilidade e especificidade).** É o que o Campbell descreve (cap. 48).",
+  "incorretas": {
+   "A": "**Ângulo e sinal errados.** O cotovelo fica a 60 a 80 graus, e é a ausência de supinação que indica ruptura.",
+   "B": "**Borda e ativação erradas.** A flexão e a supinação são ativas, e o dedo entra pela borda lateral.",
+   "D": "**Tem alta acurácia.** O teste do gancho foi relatado com 100% de sensibilidade e especificidade."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2522 e 2523 (Fig. 48.47)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "ombro-cotovelo-0722": {
+  "conceito": "O tendão distal do bíceps corre obliquamente e gira até a tuberosidade do rádio. Num corte comum, ele aparece em pedaços; numa posição especial, inteiro.\n\n**O que o Campbell diz** (cap. 48, p. 2523). A **ressonância** ajuda a distinguir a ruptura **completa da parcial**, e a definir **tendinose**, **tenossinovite**, **hematoma** e **contusão do braquial**. A posição **FABS** (flexed abducted supinated: **cotovelo a 90 graus**, **ombro em 180 graus de abdução**, **antebraço supinado**) foi recomendada para obter um **corte longitudinal verdadeiro** do tendão.\n\n**O ultrassom.** É potencialmente mais rápido e barato, mas **muito dependente do examinador**. Numa comparação para rupturas completas, a **acurácia** foi de **86% com a ressonância** e **45% com o ultrassom**.\n\n**A consequência.** O diagnóstico das completas é clínico (gancho e compressão); a imagem entra para as dúvidas, sobretudo as parciais, e para o planejamento.\n\n**Por que esta questão foi criada.** É uma gêmea da questão do TARO que mostra o tendão distal lesado na ressonância.\n\n> **Na prova:** RM = **completa x parcial**; posição **FABS** (90° de cotovelo, 180° de abdução, supinação); RM **86%** x US **45%**.",
+  "correta": "**B: a ressonância distingue a ruptura completa da parcial e mostra tendinose, tenossinovite, hematoma e contusão do braquial; a posição FABS (cotovelo a 90 graus, ombro em 180 graus de abdução e antebraço supinado) dá um corte longitudinal verdadeiro; numa comparação, a acurácia foi de 86% na ressonância e 45% no ultrassom.** É o que o Campbell descreve (cap. 48).",
+  "incorretas": {
+   "A": "**É o contrário.** A acurácia foi de 86% na ressonância e 45% no ultrassom.",
+   "C": "**Ajuda, sim.** O Campbell cita a ressonância justamente para distinguir completa de parcial.",
+   "D": "**Posição invertida.** FABS é ombro abduzido e antebraço supinado."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2523"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "ombro-cotovelo-0723": {
+  "conceito": "Reinserir o bíceps no lugar certo devolve a supinação; o caminho para chegar até a tuberosidade é que gera as complicações.\n\n**O alvo, no Campbell** (cap. 48, p. 2523). A maioria dos autores concorda que o tendão deve ser **reinserido na posição normal na tuberosidade do rádio**, para **restaurar a força de supinação**. Reinseri-lo no braquial devolveria a flexão, mas não a supinação.\n\n**As vias.**\n- **Duas incisões (BOYD e ANDERSON):** restaura a supinação e **evita os perigos da dissecção profunda na fossa antecubital**. Houve preocupação com **ossificação heterotópica** e **sinostose radioulnar**; os autores do Campbell usam osteótomo em vez de broca e mínima violação da membrana interóssea para evitá-las.\n- **Uma incisão:** com âncoras, parafusos de interferência, botões ou parafusos de tenodese, também com bons resultados.\n- **As comparações:** numa série de 784 reparos, a via dupla teve **mais paralisia do interósseo posterior**, **ossificação heterotópica** e **reoperações**; noutra, de 970, mais **sinostose radioulnar** e **neurite**. A maioria dos estudos, porém, mostra resultados semelhantes.\n\n**O reparo tardio.** O atraso traz retração do tendão, atrofia e cicatriz, com mais complicações iniciais; relatos recentes mostram que a **reconstrução tardia (mais de 21 dias)** tem **resultado funcional semelhante** ao do reparo agudo, por exemplo com enxerto de semitendíneo.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre as vias e as complicações do reparo.\n\n> **Na prova:** reinserir na **tuberosidade do rádio** (supinação); via **dupla** (BOYD e ANDERSON) = mais **interósseo posterior**, **ossificação** e **sinostose** em algumas séries; tardio (> 21 dias) = resultado semelhante, mais complicações iniciais.",
+  "correta": "**D: a maioria dos autores reinsere o tendão na tuberosidade do rádio para devolver a supinação; a via dupla de BOYD e ANDERSON evita a dissecção profunda da fossa antecubital, mas numa série teve mais paralisia do interósseo posterior, ossificação heterotópica e reoperações, e noutra mais sinostose radioulnar; a reconstrução tardia tem mais complicações iniciais, mas resultados funcionais semelhantes.** É o que o Campbell descreve (cap. 48).",
+  "incorretas": {
+   "A": "**Devolve só a flexão.** A supinação depende da reinserção na tuberosidade do rádio.",
+   "B": "**É o contrário.** A via dupla teve mais sinostose radioulnar na comparação citada.",
+   "C": "**Não é contraindicada.** A reconstrução tardia teve resultado funcional semelhante ao do reparo agudo."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), Distal biceps tendon rupture, p. 2523 e 2524"
   ],
   "geradoEm": "2026-10-30",
   "conferido": false
