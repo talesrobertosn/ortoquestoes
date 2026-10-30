@@ -1588,7 +1588,7 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
     A cor que passa depende da hora (sol branco, poente laranja, luar azul e fraco)."""
     x0, y0, w, h = C_VITRAL
     cx, r = x0 + w / 2, w / 2
-    tinta = {"manha": (hexa("#fff6e8"), 1.0), "tarde": (hexa("#ffb878"), 0.95), "noite": (hexa("#7a9ae8"), 0.4)}[nome]
+    tinta = {"manha": (hexa("#fff6e8"), 1.0), "tarde": (hexa("#ffb878"), 0.95), "noite": (hexa("#8aa6f0"), 0.55)}[nome]
     pedra_t = ("#141218", "#2a2632", "#3e3a4a", "#55516a", "#6e6a84")
 
     def dentro(x, y, folga=0.0):
@@ -1607,7 +1607,7 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
                 aduela = (int(math.atan2((y0 + r) - y, x - cx) * 8) % 2) if y < y0 + r else ((y - y0) // 6) % 2
                 k = (3 if lado else 1) + aduela
                 if dentro(x, y, 1.5):
-                    k = 4 if lado else 0
+                    k = 3 if lado else 0
                 c.p(x, y, pedra_t[max(0, min(4, k))])
     mc1 = (cx, y0 + 30, 12.5)      # medalhão de cima
     mc2 = (cx, y0 + 58, 7.5)       # medalhão de baixo
@@ -2314,6 +2314,10 @@ def montar_conselho(nome: str) -> Image.Image:
     c_cofre(meio, fogo, brilhos)
     ocl.c = np.maximum(ocl.c, meio.c * (np.arange(W)[None, :, None] > 390))
     c_lustre(meio, fogo, C_MESA[0], 24, 34, per["velas"] >= 2, luzes)
+    if nome == "noite":
+        luzes = [(x, y, r * 1.25, cor, k * 1.7) for (x, y, r, cor, k) in luzes]
+    elif nome == "tarde":
+        luzes = [(x, y, r * 1.1, cor, k * 1.25) for (x, y, r, cor, k) in luzes]
     # o negatoscópio: luz fria e fraca (mais visível à noite)
     luzes.append((348, 41, 30, "#9ac0ff", {"manha": 0.1, "tarde": 0.12, "noite": 0.35}[nome]))
     # a sala inteira recebe a luz difusa do vitral, na cor média dele
