@@ -53,3 +53,6 @@ export function voltarDaPorta(capitulo: string, porta: Porta): string {
 /** Link da conta (criar ou entrar) que volta para a parte em que a leitura parou. */
 export const linkDaPorta = (modo: 'criar' | 'entrar', capitulo: string, porta: Porta) =>
   `/conta?modo=${modo}&voltar=${encodeURIComponent(voltarDaPorta(capitulo, porta))}`
+
+/** Frases que caem sem assinatura: quantas áreas ficam abertas (a página das frases e o quadro-negro do salão). */
+export const FRASES_AREAS_AMOSTRA = 1

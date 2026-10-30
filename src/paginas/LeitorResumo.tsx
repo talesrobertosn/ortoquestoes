@@ -22,6 +22,7 @@ import { calcularPorta, linkDaPorta, SECOES_ABERTAS } from '../biblioteca/porta'
 import { PortaLeitura } from '../biblioteca/PortaLeitura'
 import { usarSemCopia } from '../biblioteca/semCopia'
 import { flashcardsDosSubtemas, linkFlashcards, usarAreasDosFlashcards } from '../biblioteca/ligacoes'
+import { PrateleiraVazia } from '../biblioteca/salao/PrateleiraVazia'
 import '../estilos/paginas/Resumos.css'
 
 const QuestaoDireta = lazy(() => import('./QuestaoDireta').then((m) => ({ default: m.QuestaoDireta })))
@@ -70,7 +71,7 @@ export function LeitorResumo({ id, consulta }: { id: string; consulta: URLSearch
   }, [id])
   if (falhou) return <Estado titulo="Não foi possível abrir o resumo." acoes={<button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button>}><p>Confira a conexão.</p></Estado>
   if (capitulo === undefined) return <Carregando linhas={8} rotulo="Abrindo o resumo" />
-  if (capitulo === null) return <Estado titulo="Resumo não encontrado." acoes={<a className="botao botao--principal" href={href('/resumos')}>Ver a biblioteca</a>}><p>O endereço pode ter mudado.</p></Estado>
+  if (capitulo === null) return <Estado titulo="Resumo não encontrado." acoes={<a className="botao botao--principal" href={href('/resumos')}>Ver a biblioteca</a>}><PrateleiraVazia /><p>Este capítulo ainda não foi escrito, ou o endereço mudou.</p></Estado>
   // Desde 16/10/2026 todos os resumos são abertos (acesso: gratis); o portão fica para um resumo marcado como assinante.
   if (capitulo.acesso !== 'gratis' && !acesso.premium) {
     if (acesso.logado && !acesso.carregado) return <Carregando linhas={6} rotulo="Conferindo o acesso" />

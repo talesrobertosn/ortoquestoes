@@ -705,3 +705,11 @@
 .lr-fim__selo { border: 0; border-radius: 50%; box-shadow: none; }
 @media (prefers-reduced-motion: reduce) { .lr-cobranca__lista button, .lr-cobranca__resolver { transition: none; } }
 .lr-salvo__pct { font-family: inherit; font-variant-numeric: tabular-nums; }
+
+/* Salão (30/10/2026): as variáveis da vitrine valem também para o fichário dentro do salão. */
+.rs--salao { --rs-tinta: var(--px-tinta, #1b1208); --rs-ouro: var(--px-ouro, #f4cf7c); --rs-ouro-sombra: var(--px-ouro-sombra, #6b4a0c); --rs-borda: var(--px-borda, #c9d5d1); --rs-sombra: var(--px-sombra, rgba(20, 101, 94, 0.16)); display: grid; gap: 1rem; max-width: 76rem; }
+/* Estante | Lista: dois botões juntos, o escolhido em dourado. */
+.rs-modo { display: inline-flex; border: 2px solid #1b1208; border-radius: 4px; overflow: hidden; }
+.rs-modo button { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 38px; padding: 0 0.75rem; border: 0; background: var(--superficie); color: var(--texto); font: inherit; font-size: 0.86rem; font-weight: 700; cursor: pointer; }
+.rs-modo button + button { border-left: 2px solid #1b1208; }
+.rs-modo button[aria-pressed="true"] { background: #e3b860; color: #1b1208; }

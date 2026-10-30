@@ -11,12 +11,13 @@ import { Icone } from '../componentes/Icone'
 import { Carregando, Estado } from '../componentes/Estados'
 import { href } from '../util/rotas'
 import { LeitorResumo } from './LeitorResumo'
-import { gravar } from '../estado/armazenamento'
+import { gravar, ler } from '../estado/armazenamento'
 import { usarPremium } from '../conta/premium'
 import { corDaArea } from '../dados/coresAreas'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis } from '../conta/supabase'
 import { SECOES_ABERTAS } from '../biblioteca/porta'
+import { Salao, provasDoCapitulo } from '../biblioteca/salao/Salao'
 import '../estilos/paginas/Resumos.css'
 
 /** Adendo da Biblioteca: as frases "Na prova" (o antigo Resumão), em #/resumos/frases. */
@@ -68,6 +69,15 @@ const PASSOS_BIBLIOTECA: PassoGuia[] = [
   { alvo: '[data-guia="caderno"]', titulo: 'Seu caderno de estudo', texto: 'Todos os destaques e notas de todos os resumos, em todos os aparelhos. Dá para revisar em sequência e exportar.' },
   { alvo: '[data-guia="ajuda"]', titulo: 'Ajuda sempre à mão', texto: 'Este tutorial volta quando você quiser, por aqui. Dentro do leitor, o botão Ajuda explica os controles da leitura.' },
 ]
+/** O mesmo tour no salão (modo estante): os passos apontam para os móveis e para as lombadas. */
+const PASSOS_SALAO: PassoGuia[] = PASSOS_BIBLIOTECA.map((p) =>
+  p.alvo === '[data-guia="continuar"]' ? { ...p, titulo: 'A mesa de leitura', texto: 'O capítulo que você está lendo fica aberto na mesa, com quanto já leu. Sem leitura em andamento, a bibliotecária sugere um capítulo que cai muito.' }
+  : p.alvo === '[data-guia="cartao"]' ? { ...p, titulo: 'Cada livro é um resumo', texto: 'A cor da lombada é a área, a altura é o tempo de leitura e a pedrinha na base diz o quanto cai na prova (comum, raro, épico ou lendário). Toque para ver a ficha.' }
+  : p.alvo === '[data-guia="ajuda"]' ? { ...p, titulo: 'A coruja bibliotecária', texto: 'Toque na coruja para uma dica ou para refazer este tour. Dizem que o salão guarda segredos...' }
+  : p)
+
+type Modo = 'estante' | 'lista'
+const CHAVE_MODO = 'resumos:modo'
 
 function Estante({ consulta }: { consulta: URLSearchParams }) {
   const dados = usarIndiceBiblioteca()
@@ -79,6 +89,8 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
   // #/resumos?area=mao abre já filtrado (cronograma da mão); os outros filtros também vivem no endereço.
   const [filtros, definirFiltros] = useState<FiltrosEstante>(() => filtrosDaConsulta(consulta))
   const [guia, definirGuia] = useState(false)
+  const [modo, definirModo] = useState<Modo>(() => ler<Modo>(CHAVE_MODO, 'estante') === 'lista' ? 'lista' : 'estante')
+  const trocarModo = (m: Modo) => { definirModo(m); gravar(CHAVE_MODO, m) }
   const mudar = (m: Partial<FiltrosEstante>) => definirFiltros((f) => ({ ...f, ...m }))
   // Um link novo para a estante (ex.: #/resumos?area=mao vindo do cronograma) troca os filtros.
   const consultaTexto = consulta.toString()
@@ -104,15 +116,44 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
   const comCapitulos = new Set(dados.capitulos.map((c) => c.especialidade))
   const destaques = marcas.filter((m) => !m.marcador).length
   const cartao = (c: ResumoCapitulo, primeiro: boolean) => <CartaoResumo key={c.id} c={c} guia={primeiro} fechado={c.acesso !== 'gratis' && !premium} indice={indice} leitura={leituras[c.id]} destaques={marcas.filter((m) => m.capitulo === c.id && !m.marcador).length} />
+  const botaoModo = <span className="rs-modo" role="group" aria-label="Como ver a biblioteca">
+    <button type="button" aria-pressed={modo === 'estante'} onClick={() => trocarModo('estante')}><Icone nome="livro" tamanho={15} /> Estante</button>
+    <button type="button" aria-pressed={modo === 'lista'} onClick={() => trocarModo('lista')}><Icone nome="menu" tamanho={15} /> Lista</button>
+  </span>
+  const fichario = (estante: boolean) => <section className="rs-busca" id="rs-estante" aria-label="Buscar e filtrar resumos">
+    <label className="rs-busca__campo" data-guia="busca"><Icone nome="busca" tamanho={17} /><span className="so-leitor">Buscar resumo</span>
+      <input type="search" value={filtros.q} onChange={(e) => mudar({ q: e.target.value })} placeholder="Buscar tema, classificação ou livro" />
+    </label>
+    <div className="rs-busca__filtros" data-guia="filtros">
+      <label><span>Livro</span><select value={filtros.livro ?? ''} onChange={(e) => mudar({ livro: e.target.value || null })}><option value="">Todos os livros</option>{livros.map((l) => <option key={l.chave} value={l.chave}>{l.rotulo}</option>)}</select></label>
+      <label><span>Área</span><select value={filtros.area ?? ''} onChange={(e) => mudar({ area: e.target.value || null })}><option value="">Todas as áreas</option>{ESPECIALIDADES.filter((e) => comCapitulos.has(e.slug)).map((e) => <option key={e.slug} value={e.slug}>{e.nome}</option>)}</select></label>
+      {!estante && <label><span>Ordenar</span><select value={filtros.ordem} onChange={(e) => mudar({ ordem: e.target.value as OrdemEstante })}>{ORDENS.map((o) => <option key={o.v} value={o.v}>{o.nome}</option>)}</select></label>}
+      <div className="rs-busca__progresso" role="group" aria-label="Progresso">{PROGRESSOS.map((p) => <button key={p.nome} type="button" aria-pressed={filtros.progresso === p.v} onClick={() => mudar({ progresso: p.v })}>{p.nome}</button>)}</div>
+    </div>
+    {ativos && <p className="rs-busca__resultado" role="status"><span className="numerico">{filtrados.length}</span> {filtrados.length === 1 ? 'resumo encontrado' : 'resumos encontrados'}{estante && filtrados.length > 0 ? ': os livros acesos na estante' : ''}<button type="button" onClick={() => definirFiltros({ ...FILTROS_PADRAO, ordem: filtros.ordem })}><Icone nome="fechar" tamanho={14} /> Limpar filtros</button></p>}
+  </section>
+  const porta = visitante ? <p className="rs-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Leitura completa grátis com conta.</b> Sem conta, cada resumo abre as {SECOES_ABERTAS} primeiras partes. <a href={href('/conta?modo=criar&voltar=%2Fresumos')}>Criar conta grátis</a></span></p> : null
+
+  if (modo === 'estante') return (
+    <div className="rs rs--salao">
+      <Salao capitulos={dados.capitulos} livros={livros} achados={new Set(filtrados.map((c) => c.id))} filtrosAtivos={ativos} busca={filtros.q}
+        leituras={leituras} destaques={destaques} premium={premium} indice={indice} continuar={continuar} aviso={porta}
+        fichario={<>{fichario(true)}{!filtrados.length && <p className="rs-busca__nada">Nenhum livro com esses filtros. {filtros.q.trim() ? `Nada para “${filtros.q.trim()}”. ` : ''}<button type="button" onClick={() => definirFiltros(FILTROS_PADRAO)}>Limpar filtros</button></p>}</>}
+        botaoModo={botaoModo} aoAbrirGuia={() => definirGuia(true)} />
+      <p className="rs-nota">Os resumos são texto autoral a partir dos capítulos citados, com revisão técnica; as questões e os anos vêm do acervo do site. Figuras originais só aparecem quando há licença de reprodução.</p>
+      {guia && <GuiaTour id="biblioteca" titulo="Como usar a Biblioteca" passos={PASSOS_SALAO} aoFechar={() => definirGuia(false)} />}
+    </div>
+  )
+
   const grupos = filtros.ordem === 'livro' ? livros.map((l) => ({ ...l, capitulos: filtrados.filter((c) => chaveLivro(c) === l.chave) })).filter((l) => l.capitulos.length) : null
   return (
     <div className="rs rs--vitrine empilha-2">
       <header className="rs-topo rs-topo--vitrine">
         <div className="rs-topo__texto">
-          <p className="rs-topo__selo"><Icone nome="livro" tamanho={14} /> Biblioteca OrtoQuestões · Beta</p>
+          <p className="rs-topo__selo"><Icone nome="livro" tamanho={14} /> Biblioteca OrtoQuestões</p>
           <h1>Biblioteca de <em>resumos</em></h1>
           <p className="rs-topo__lide">Estude pelos livros de referência, com foco no que realmente cai nas provas. Cada resumo segue o capítulo original, mostra onde o assunto já foi cobrado e abre as questões ali mesmo, sem perder o parágrafo. <b>Leitura grátis.</b></p>
-          {visitante && <p className="rs-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Leitura completa grátis com conta.</b> Sem conta, cada resumo abre as {SECOES_ABERTAS} primeiras partes. <a href={href('/conta?modo=criar&voltar=%2Fresumos')}>Criar conta grátis</a></span></p>}
+          {porta}
           <p className="rs-novidade"><i aria-hidden="true" /> Biblioteca em expansão: capítulos novos toda semana</p>
           <div className="rs-topo__acoes">
             {continuar[0]
@@ -121,6 +162,7 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
             <a className="botao" href={href('/resumos/caderno')} data-guia="caderno"><Icone nome="lapis" tamanho={16} /> Meu caderno{destaques ? <small className="rs-contador numerico">{destaques}</small> : null}</a>
             <a className="botao" href={href('/resumos/frases')}><Icone nome="raio" tamanho={16} /> Frases que caem</a>
             <button type="button" className="botao" onClick={() => definirGuia(true)} data-guia="ajuda"><Icone nome="interrogacao" tamanho={16} /> Como usar a Biblioteca</button>
+            {botaoModo}
           </div>
         </div>
         <EstantePixel livros={livros.slice(0, 4).map((l) => ({ rotulo: `${apelidoLivro(l.capitulos[0].livro)} · ${l.rotulo.split(' · ')[1]}`, cor: corDaArea(l.capitulos[0].especialidade) }))} />
@@ -141,18 +183,7 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
         })}</ul>
       </section>}
 
-      <section className="rs-busca" id="rs-estante" aria-label="Buscar e filtrar resumos">
-        <label className="rs-busca__campo" data-guia="busca"><Icone nome="busca" tamanho={17} /><span className="so-leitor">Buscar resumo</span>
-          <input type="search" value={filtros.q} onChange={(e) => mudar({ q: e.target.value })} placeholder="Buscar tema, classificação ou livro" />
-        </label>
-        <div className="rs-busca__filtros" data-guia="filtros">
-          <label><span>Livro</span><select value={filtros.livro ?? ''} onChange={(e) => mudar({ livro: e.target.value || null })}><option value="">Todos os livros</option>{livros.map((l) => <option key={l.chave} value={l.chave}>{l.rotulo}</option>)}</select></label>
-          <label><span>Área</span><select value={filtros.area ?? ''} onChange={(e) => mudar({ area: e.target.value || null })}><option value="">Todas as áreas</option>{ESPECIALIDADES.filter((e) => comCapitulos.has(e.slug)).map((e) => <option key={e.slug} value={e.slug}>{e.nome}</option>)}</select></label>
-          <label><span>Ordenar</span><select value={filtros.ordem} onChange={(e) => mudar({ ordem: e.target.value as OrdemEstante })}>{ORDENS.map((o) => <option key={o.v} value={o.v}>{o.nome}</option>)}</select></label>
-          <div className="rs-busca__progresso" role="group" aria-label="Progresso">{PROGRESSOS.map((p) => <button key={p.nome} type="button" aria-pressed={filtros.progresso === p.v} onClick={() => mudar({ progresso: p.v })}>{p.nome}</button>)}</div>
-        </div>
-        {ativos && <p className="rs-busca__resultado" role="status"><span className="numerico">{filtrados.length}</span> {filtrados.length === 1 ? 'resumo encontrado' : 'resumos encontrados'}<button type="button" onClick={() => definirFiltros({ ...FILTROS_PADRAO, ordem: filtros.ordem })}><Icone nome="fechar" tamanho={14} /> Limpar filtros</button></p>}
-      </section>
+      {fichario(false)}
 
       {!filtrados.length && <div className="rs-vazio">
         <span className="rs-vazio__livro" aria-hidden="true"><i /><i /><i /></span>
@@ -196,19 +227,6 @@ function EstantePixel({ livros }: { livros: Array<{ rotulo: string; cor: string 
       <span className="rs-pixel__tabua" />
     </div>
   )
-}
-
-/** As provas em que o capítulo já caiu, como chips: "TARO 2007–2024". Só das questões citadas no resumo (ids). */
-function provasDoCapitulo(indice: Indice | null, ids: string[]): string[] {
-  if (!indice) return []
-  const porProva = new Map<string, number[]>()
-  for (const id of ids) {
-    const q = indice.questoes.find((x) => x.id === id)
-    if (!q || q.p === null || q.p === undefined) continue
-    const p = indice.provas[q.p]
-    const l = porProva.get(p) ?? []; if (q.a) l.push(q.a); porProva.set(p, l)
-  }
-  return [...porProva].sort((a, b) => b[1].length - a[1].length).map(([p, anos]) => anos.length ? `${p} ${Math.min(...anos)}${Math.max(...anos) !== Math.min(...anos) ? `–${Math.max(...anos)}` : ''}` : p)
 }
 
 const ESTADO_NOME: Record<EstadoLeitura, string> = { novo: 'Não iniciado', andamento: 'Em andamento', concluido: 'Concluído' }

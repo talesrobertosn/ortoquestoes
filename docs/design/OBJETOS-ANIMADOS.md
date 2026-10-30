@@ -27,6 +27,23 @@ dos ícones soltos.
 7. **Sem imagem gerada por IA e sem desenho de anatomia** (regra da marca). Para conteúdo médico, use a imagem real da questão.
 8. **Tela limpa primeiro** (regra de 19/10): o objeto entra onde ajuda a entender ou convida a uma ação, e não para enfeitar.
 
+## O salão da Biblioteca (30/10/2026)
+A página dos Resumos (#/resumos) virou um salão de jogo em pixel, a pedido do Tales ("como se a página inteira fosse um
+jogo"): uma estante de madeira por livro, uma lombada por resumo (cor da área, altura pelo tempo de leitura, pedrinha de
+raridade pelo quanto cai na prova), ficha de item ao tocar, mesa de leitura, quadro-negro com a frase do dia,
+escrivaninha, fichário de busca com a escada que corre até o livro achado, e dia e noite pelo tema. O modo Lista continua
+a um botão. Código em `src/biblioteca/salao/`; o CSS em `src/estilos/paginas/Salao.css`.
+
+- **Personagens em pixel art de verdade**, desenhados como grades de letras em `sprites.ts` e transformados em
+  `box-shadow` pelo componente `Sprite` (sem imagem): coruja, gato, planta, lamparina, abóbora, morcego e xícara.
+  Para um personagem novo, desenhe a grade, crie a paleta e acrescente o par no teste.
+- **Segredos** (`segredos.ts`, 15 hoje), com caderneta e pistas: passagem secreta para a Sala dos raros (curiosidades
+  históricas dos resumos, em `raros.ts`, com link para a seção), gato, coruja, lanterna, relógio, escada, palavras do
+  fichário ("garden", "codman", "café", "gesso", "lowell"), "ortoquestoes" no teclado, madrugada, época do ano e o
+  capítulo 404. Ao criar um segredo novo, dê nome e pista e mantenha-o possível no celular.
+- **Sons** sintetizados (`sons.ts`), desligados de início.
+- Teste: `fixtures/testar_salao_biblioteca.mjs`.
+
 ## Ideias para os próximos pontos
 Ficam aqui para quando o Tales pedir ou quando a tela for refeita:
 - **Simulado Nacional:** um ingresso que destaca o canhoto ao se inscrever.
