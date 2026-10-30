@@ -56,6 +56,8 @@ Você continua um trabalho longo no **OrtoQuestões** (ortoquestoes.com.br), um 
 | `python3 scripts/simulados/aplicar_lote.py <pasta> <tema> lote_a,lote_b --conferir` | Confere e aplica os simulados; os ids saem em sequência. |
 | `python3 scripts/aplicar_comentarios.py lote.json --seco` | Grava comentários; recebe `{id: comentário}` com `conceito`, `correta`, `incorretas`, `referencias` e, quando houver, `alerta`, `provavel` e `imagens`. |
 | `python3 scripts/gerar_indice.py`, `node scripts/biblioteca/gerar.mjs`, `python3 scripts/validar_acervo.py` | Índices, Biblioteca e validação, sempre antes da PR. |
+| `bash scripts/pos_aplicar.sh` | Faz tudo isso de uma vez, regenera as amostras da página inicial e roda os testes que mais quebram (amostras, Cronograma, ligações). Rode antes de toda PR. |
+| `bash scripts/publicar_pr.sh "Título" corpo.md` | Push, PR, espera os checks e só mescla se passarem. |
 
 No Mac, rode o Python com `PYTHONUTF8=1` se aparecer erro de codificação.
 
