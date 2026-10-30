@@ -6,7 +6,7 @@ import { corDaArea } from '../../dados/coresAreas'
 import { href, navegar } from '../../util/rotas'
 import { Icone } from '../../componentes/Icone'
 import { JanelaCentral } from '../../componentes/JanelaCentral'
-import { apelidoLivro, capitulosDoResumo, estadoLeitura, numeroCapitulo, rotuloLivro, sobreLivro } from '../estante'
+import { apelidoLivro, capitulosDoResumo, tituloLombada, estadoLeitura, numeroCapitulo, rotuloLivro, sobreLivro } from '../estante'
 import { ordemDoDia } from '../recomendar'
 import type { Leitura, ResumoCapitulo } from '../tipos'
 import { hojeBR } from '../../util/dia'
@@ -45,7 +45,7 @@ const DICAS = [
   'Fita pendurada é livro que você começou. Estrela dourada é livro lido até o fim.',
   'No fichário, busque por classificação: "Schatzker", "Neer", "Garden"...',
   'Leia o resumo do tema antes das questões: você chega sabendo o que a banca procura.',
-  'Este salão guarda segredos. A caderneta, no topo, mostra as pistas.',
+  'Dizem que este salão guarda segredos. Um deles leva às pistas de todos os outros.',
 ]
 
 interface Frase { texto: string; id: string; origem?: string }
@@ -64,10 +64,27 @@ export interface PropsSalao {
   indice: Indice | null
   continuar: Array<{ c: ResumoCapitulo; l?: Leitura }>
   aviso?: ReactNode
-  fichario: ReactNode
+  fichario?: ReactNode
   botaoModo: ReactNode
   aoAbrirGuia: () => void
+  /** Pedido do painel "Encontre o resumo": ir até a lombada e abrir a ficha (n muda a cada pedido). */
+  irPara?: { id: string; n: number } | null
+  /** Pedido do painel: rolar até a estante do livro. */
+  irLivro?: { chave: string; n: number } | null
 }
+
+/** Id da estante de um livro no endereço da página (o painel do topo rola até ele). */
+export const idEstante = (chave: string) => `sl-l-${chave.normalize('NFD').replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase()}`
+
+/** Cor da capa de cada obra (placa da estante e popup), para reconhecer o livro de longe. */
+const CAPAS: Array<[RegExp, string]> = [
+  [/Fractures in Adults/i, '#a8322d'], [/Fractures in Children/i, '#2b5c9e'], [/Campbell/i, '#23395b'],
+  [/Tachdjian/i, '#1f6f78'], [/Green/i, '#2f6b3a'], [/Netter/i, '#b5762a'],
+]
+export const corDaCapa = (livro: string) => CAPAS.find(([r]) => r.test(livro))?.[1] ?? '#5b3519'
+
+/** Popup da lombada: aonde ele aparece e se ficou preso (toque no celular). */
+interface Pop { c: ResumoCapitulo; x: number; topo: number; base: number; preso: boolean }
 
 /**
  * Salão da Biblioteca (pedido do Tales, 30/10/2026: "como se a página inteira fosse um jogo"). Uma estante
@@ -79,11 +96,11 @@ export function Salao(p: PropsSalao) {
   const raiz = useRef<HTMLDivElement>(null)
   const agora = useAgora()
   const [ficha, definirFicha] = useState<{ c: ResumoCapitulo; selo?: string } | null>(null)
-  const [foco, definirFoco] = useState<ResumoCapitulo | null>(null)
+  const [pop, definirPop] = useState<Pop | null>(null)
+  const [realce, definirRealce] = useState<string | null>(null)
   const [aviso, definirAviso] = useState<{ texto: string; n: number } | null>(null)
   const [chuva, definirChuva] = useState(0)
   const [achados, definirAchados] = useState<IdSegredo[]>(() => segredosAchados())
-  const [caderneta, definirCaderneta] = useState(false)
   const [som, definirSom] = useState(() => somLigado())
   const [passagem, definirPassagem] = useState<'fechada' | 'girando' | 'aberta'>('fechada')
   const [lampadas, definirLampadas] = useState([true, true])
@@ -148,11 +165,44 @@ export function Salao(p: PropsSalao) {
   const lidos = capitulos.filter((c) => estadoLeitura(leituras[c.id]) === 'concluido').length
 
   const abrirFicha = (c: ResumoCapitulo, selo?: string) => { tocar('puxar'); definirFicha({ c, selo }) }
+  const temMouse = () => typeof matchMedia !== 'undefined' && matchMedia('(hover: hover) and (pointer: fine)').matches
+  const mostrarPop = (c: ResumoCapitulo, el: HTMLElement, preso = false) => {
+    const r = el.getBoundingClientRect()
+    definirPop({ c, x: r.left + r.width / 2, topo: r.top, base: r.bottom, preso })
+  }
   const lombadaClique = (c: ResumoCapitulo) => (e: MouseEvent<HTMLAnchorElement>) => {
     if (!cliqueComum(e)) return
     e.preventDefault()
+    // No celular, o primeiro toque puxa o livro e mostra os dados; o segundo (ou "Abrir a ficha") abre.
+    if (!temMouse() && pop?.c.id !== c.id) { tocar('puxar'); mostrarPop(c, e.currentTarget, true); return }
+    definirPop(null)
     abrirFicha(c)
   }
+  // Rolar a página tira o popup (ele fica preso à posição do livro na tela).
+  useEffect(() => {
+    if (!pop) return
+    const fechar = () => definirPop(null)
+    window.addEventListener('scroll', fechar, { passive: true, once: true })
+    return () => window.removeEventListener('scroll', fechar)
+  }, [pop])
+  // Painel do topo: ir até a lombada (realce e ficha) ou até a estante do livro.
+  useEffect(() => {
+    if (!p.irPara) return
+    const { id } = p.irPara
+    const c = capitulos.find((x) => x.id === id)
+    if (!c) return
+    const el = raiz.current?.querySelector<HTMLElement>(`.sl-estante:not(.sl-estante--cobrados) [data-cap="${CSS.escape(id)}"]`)
+    el?.scrollIntoView({ behavior: semMovimento() ? 'auto' : 'smooth', block: 'center' })
+    definirRealce(id)
+    const t1 = window.setTimeout(() => abrirFicha(c), el && !semMovimento() ? 750 : 0)
+    const t2 = window.setTimeout(() => definirRealce(null), 2600)
+    return () => { window.clearTimeout(t1); window.clearTimeout(t2) }
+  }, [p.irPara?.n]) // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (!p.irLivro) return
+    document.getElementById(idEstante(p.irLivro.chave))?.scrollIntoView({ behavior: semMovimento() ? 'auto' : 'smooth', block: 'start' })
+  }, [p.irLivro?.n]) // eslint-disable-line react-hooks/exhaustive-deps
+  const cobrados = useMemo(() => [...capitulos].sort((a, b) => b.questoes.length - a.questoes.length).slice(0, 10), [capitulos])
 
   // ── Personagens e objetos ──
   const tocarGato = () => {
@@ -224,7 +274,7 @@ export function Salao(p: PropsSalao) {
   const [posEscada, definirPosEscada] = useState<CSSProperties | undefined>(undefined)
   useLayoutEffect(() => {
     const alvo = primeiraBusca ? raiz.current?.querySelector<HTMLElement>('.sl-lombada--alvo') : null
-    definirPosEscada(alvo ? { left: alvo.offsetLeft - 44, top: alvo.offsetTop + alvo.offsetHeight + 10 - 150, right: 'auto' } : undefined)
+    definirPosEscada(alvo ? { left: alvo.offsetLeft - 44, top: alvo.offsetTop + alvo.offsetHeight + 10 - 210, right: 'auto' } : undefined)
   }, [primeiraBusca])
   const indicePassagem = Math.min(2, livros.length - 1)
   const lamparinas = efeitos.has('codman') ? [0, 1, 2, 3] : [0, 1]
@@ -281,7 +331,6 @@ export function Salao(p: PropsSalao) {
             {p.continuar[0]
               ? <a className="rs-botao-ouro" href={href(`/resumos/${p.continuar[0].c.id}`)}><Icone nome="livro" tamanho={18} /> Continuar de onde parei</a>
               : <button type="button" className="rs-botao-ouro" onClick={() => document.getElementById('sl-estantes')?.scrollIntoView({ behavior: semMovimento() ? 'auto' : 'smooth', block: 'start' })}><Icone nome="livro" tamanho={18} /> Escolher um livro</button>}
-            <button type="button" className="sl-botao" onClick={() => definirCaderneta(true)}><Icone nome="interrogacao" tamanho={15} /> Segredos <b className="numerico">{achados.length}/{SEGREDOS.length}</b></button>
             <button type="button" className="sl-botao" aria-pressed={som} onClick={() => { ligarSom(!som); definirSom(!som); if (!som) window.setTimeout(() => tocar('tique'), 0) }}>{som ? 'Som ligado' : 'Som desligado'}</button>
             {p.botaoModo}
           </div>
@@ -312,10 +361,8 @@ export function Salao(p: PropsSalao) {
         </div>
       </div>
 
-      <div className="sl-fichario">
-        <span className="sl-fichario__gavetas" aria-hidden="true"><i>A–F</i><i>G–N</i><i>O–Z</i></span>
-        <div className="sl-fichario__ficha">{p.fichario}</div>
-      </div>
+      {/* O painel "Encontre o resumo" (normal, sem pixel) logo antes das estantes, onde se procura o livro. */}
+      {p.fichario && <div className="sl-encontre">{p.fichario}</div>}
 
       {efeitos.has('cafe') && <section className="sl-cafe" aria-label="Café de plantão">
         <Sprite grade={XICARA} paleta={PALETA_XICARA} px={4} className="sl-cafe__xicara" />
@@ -325,20 +372,37 @@ export function Salao(p: PropsSalao) {
       </section>}
 
       {/* ── As estantes, uma por livro ── */}
-      <div className="sl-estantes" id="sl-estantes">
+      <div className="sl-estantes" id="sl-estantes" onMouseLeave={() => { if (pop && !pop.preso) definirPop(null) }}>
+        {!p.filtrosAtivos && <section className="sl-estante sl-estante--larga sl-estante--cobrados" aria-labelledby="sl-cobrados">
+          <header className="sl-estante__placa">
+            <span className="sl-capa sl-capa--trofeu" aria-hidden="true"><b>★</b></span>
+            <div className="sl-estante__nome">
+              <h2 id="sl-cobrados"><span>Mais cobrados nas provas</span></h2>
+              <p className="sl-estante__sobre">Os {cobrados.length} capítulos com mais questões de prova, de todos os livros. Bom lugar para começar.</p>
+            </div>
+          </header>
+          <div className="sl-estante__corpo">
+            <ul className="sl-prateleiras" aria-label="Mais cobrados nas provas">
+              {cobrados.map((c) => <Lombada key={c.id} c={c} leitura={leituras[c.id]} fechado={c.acesso !== 'gratis' && !p.premium} apagada={false} alvo={false}
+                ativo={pop?.c.id === c.id} livroNaLombada aoMostrar={(el) => temMouse() && mostrarPop(c, el)} aoEsconder={() => definirPop((x) => (x?.preso ? x : null))} aoClicar={lombadaClique(c)} />)}
+            </ul>
+          </div>
+        </section>}
         {livros.map((l, li) => {
           const algum = !p.filtrosAtivos || l.capitulos.some((c) => p.achados.has(c.id))
           if (!algum) return null
           if (li === indicePassagem && passagem === 'aberta') return <SalaRaros key="raros" achados={achados} aoVoltar={() => { tocar('gaveta'); definirPassagem('fechada') }} />
           const lidosLivro = l.capitulos.filter((c) => estadoLeitura(leituras[c.id]) === 'concluido').length
           const completo = lidosLivro === l.capitulos.length
-          const temFoco = foco && l.capitulos.includes(foco) ? foco : null
           const [nome, edicao] = [apelidoLivro(l.capitulos[0].livro), l.rotulo.split(' · ')[1]]
           return (
-            <section key={l.chave} className={'sl-estante' + (l.capitulos.length > 12 ? ' sl-estante--larga' : '') + (li === indicePassagem && passagem === 'girando' ? ' sl-estante--girando' : '')} aria-labelledby={`sl-e-${li}`}>
+            <section key={l.chave} id={idEstante(l.chave)} className={'sl-estante' + (l.capitulos.length > 12 ? ' sl-estante--larga' : '') + (li === indicePassagem && passagem === 'girando' ? ' sl-estante--girando' : '')} aria-labelledby={`sl-e-${li}`}>
               <header className="sl-estante__placa">
-                <h2 id={`sl-e-${li}`}><span>{nome}</span> <small>{edicao}</small></h2>
-                <p className="sl-estante__sobre">{sobreLivro(l.capitulos[0].livro)}</p>
+                <span className="sl-capa" style={{ '--capa': corDaCapa(l.capitulos[0].livro) } as CSSProperties} aria-hidden="true"><b>{nome.split(' ')[0]}</b><small>{edicao}</small></span>
+                <div className="sl-estante__nome">
+                  <h2 id={`sl-e-${li}`}><span>{nome}</span> <small>{edicao} · {l.capitulos.length} {l.capitulos.length === 1 ? 'resumo' : 'resumos'}</small></h2>
+                  <p className="sl-estante__sobre">{sobreLivro(l.capitulos[0].livro)}</p>
+                </div>
                 {li === 1 && <button type="button" className={`sl-gato sl-gato--${gato}`} onClick={tocarGato} aria-label="Gato da biblioteca">
                   <Sprite grade={gato === 0 ? GATO_DORMINDO : gato === 1 ? GATO_ORELHA : GATO_ACORDADO} paleta={PALETA_GATO} px={3} />
                   <span className="sl-gato__gesso" aria-hidden="true" />
@@ -346,19 +410,17 @@ export function Salao(p: PropsSalao) {
                 </button>}
                 <p className={'sl-estante__conta' + (completo ? ' sl-estante__conta--completa' : '')}>{completo ? <><Icone nome="estrela" tamanho={13} /> Coleção completa</> : <><b className="numerico">{lidosLivro}</b> de {l.capitulos.length} lidos</>}</p>
               </header>
-              <div className="sl-estante__corpo" onMouseLeave={() => definirFoco(null)}>
+              <div className="sl-estante__corpo">
                 {(primeiraBusca ? l.capitulos.some((c) => c.id === primeiraBusca) : li === 0) && (
                   <button type="button" className={`sl-escada sl-escada--${Math.min(escada, 3)}`} onClick={tocarEscada} aria-label="Escada da biblioteca" style={posEscada} />
                 )}
                 <ul className="sl-prateleiras" aria-label={`Resumos do ${l.rotulo}`}>
                   {l.capitulos.map((c, ci) => <Lombada key={c.id} c={c} guia={li === 0 && ci === 0} leitura={leituras[c.id]} fechado={c.acesso !== 'gratis' && !p.premium}
-                    apagada={p.filtrosAtivos && !p.achados.has(c.id)} alvo={c.id === primeiraBusca} aoFocar={definirFoco} aoClicar={lombadaClique(c)} />)}
+                    apagada={p.filtrosAtivos && !p.achados.has(c.id)} alvo={c.id === primeiraBusca || c.id === realce} ativo={pop?.c.id === c.id}
+                    aoMostrar={(el) => temMouse() && mostrarPop(c, el)} aoEsconder={() => definirPop((x) => (x?.preso ? x : null))} aoClicar={lombadaClique(c)} />)}
                   <li className="sl-enfeite" aria-hidden="true">{li % 2 ? <span className="sl-ampulheta" /> : <span className="sl-pilha"><i /><i /><i /></span>}{li % 3 === 2 && <Sprite grade={PLANTA} paleta={PALETA_PLANTA} px={2} />}</li>
                   {li === indicePassagem && <li className="sl-torto"><button type="button" onClick={abrirPassagem} aria-label="Um livro torto na prateleira" /></li>}
                 </ul>
-                <p className="sl-estante__plaquinha" aria-hidden="true">{temFoco
-                  ? <><b>{temFoco.titulo}</b> <span>Cap. {numeroCapitulo(temFoco)} · ~{temFoco.minutos} min · {NOME_RARIDADE[raridade(temFoco.questoes.length)]}</span></>
-                  : <span>{l.capitulos.length} {l.capitulos.length === 1 ? 'resumo' : 'resumos'} · toque num livro para ver a ficha</span>}</p>
               </div>
             </section>
           )
@@ -366,10 +428,9 @@ export function Salao(p: PropsSalao) {
       </div>
       <div className="sl-piso" aria-hidden="true" />
 
+      {pop && <PopLombada pop={pop} leitura={leituras[pop.c.id]} indice={p.indice} fechado={pop.c.acesso !== 'gratis' && !p.premium}
+        aoAbrir={() => { const c = pop.c; definirPop(null); abrirFicha(c) }} aoFechar={() => definirPop(null)} />}
       {ficha && <FichaItem c={ficha.c} selo={ficha.selo} leitura={leituras[ficha.c.id]} fechado={ficha.c.acesso !== 'gratis' && !p.premium} indice={p.indice} aoFechar={() => definirFicha(null)} />}
-      <JanelaCentral aberta={caderneta} aoFechar={() => definirCaderneta(false)} rotulo="Caderneta de segredos" className="sl-janela-caderneta">
-        <Caderneta achados={achados} />
-      </JanelaCentral>
     </div>
   )
 }
@@ -381,27 +442,65 @@ function useAgora() {
   return agora
 }
 
-function Lombada({ c, leitura, fechado, apagada, alvo, guia, aoFocar, aoClicar }: { c: ResumoCapitulo; leitura?: Leitura; fechado: boolean; apagada: boolean; alvo: boolean; guia: boolean; aoFocar: (c: ResumoCapitulo | null) => void; aoClicar: (e: MouseEvent<HTMLAnchorElement>) => void }) {
+interface PropsLombada {
+  c: ResumoCapitulo; leitura?: Leitura; fechado: boolean; apagada: boolean; alvo: boolean; ativo: boolean; guia?: boolean
+  /** Na prateleira dos mais cobrados, a lombada leva também o nome curto do livro. */
+  livroNaLombada?: boolean
+  aoMostrar: (el: HTMLElement) => void; aoEsconder: () => void; aoClicar: (e: MouseEvent<HTMLAnchorElement>) => void
+}
+function Lombada({ c, leitura, fechado, apagada, alvo, ativo, guia, livroNaLombada, aoMostrar, aoEsconder, aoClicar }: PropsLombada) {
   const estado = estadoLeitura(leitura)
   const r = raridade(c.questoes.length)
   const n = numeroCapitulo(c)
   const estilo = {
     '--cor': corDaArea(c.especialidade),
-    '--alt': `${70 + Math.round(Math.min(c.minutos, 70) / 70 * 40)}px`,
-    '--larg': `${20 + Math.round(Math.min(c.questoes.length, 100) / 100 * 10)}px`,
+    '--alt': `${142 + Math.round(Math.min(c.minutos, 70) / 70 * 34)}px`,
+    '--larg': `${32 + Math.round(Math.min(c.questoes.length, 100) / 100 * 8)}px`,
   } as CSSProperties
   return (
     <li className={apagada ? 'sl-li--apagada' : undefined}>
-      <a href={href(`/resumos/${c.id}`)} className={`sl-lombada sl-lombada--${estado}${alvo ? ' sl-lombada--alvo' : ''}`} style={estilo} onClick={aoClicar}
-        onMouseEnter={() => aoFocar(c)} onFocus={() => aoFocar(c)} onBlur={() => aoFocar(null)} data-guia={guia ? 'cartao' : undefined} tabIndex={apagada ? -1 : undefined}>
+      <a href={href(`/resumos/${c.id}`)} className={`sl-lombada sl-lombada--${estado}${alvo ? ' sl-lombada--alvo' : ''}${ativo ? ' sl-lombada--ativa' : ''}`} style={estilo} onClick={aoClicar}
+        onMouseEnter={(e) => aoMostrar(e.currentTarget)} onMouseLeave={aoEsconder} onFocus={(e) => aoMostrar(e.currentTarget)} onBlur={aoEsconder}
+        data-cap={c.id} data-guia={guia ? 'cartao' : undefined} tabIndex={apagada ? -1 : undefined} aria-describedby={ativo ? 'sl-pop' : undefined}>
         <span className="sl-lombada__num" aria-hidden="true">{n === Number.MAX_SAFE_INTEGER ? '·' : n}</span>
+        <span className="sl-lombada__titulo" aria-hidden="true">{livroNaLombada ? `${apelidoLivro(c.livro)} · ` : ''}{tituloLombada(c.titulo)}</span>
         <span className={`sl-gema sl-gema--${r}`} aria-hidden="true" />
         {estado === 'andamento' && <span className="sl-lombada__fita" aria-hidden="true" />}
         {estado === 'concluido' && <span className="sl-lombada__selo" aria-hidden="true" />}
         {fechado && <span className="sl-lombada__cadeado" aria-hidden="true"><Icone nome="cadeado" tamanho={10} /></span>}
-        <span className="so-leitor">{c.titulo}, capítulo {n}, cerca de {c.minutos} minutos, {NOME_RARIDADE[r].toLowerCase()}{estado === 'concluido' ? ', lido' : estado === 'andamento' ? `, ${leitura?.progresso ?? 0}% lido` : ''}{fechado ? ', para assinantes' : ''}</span>
+        <span className="so-leitor">{c.titulo}, {apelidoLivro(c.livro)}, capítulo {n}, cerca de {c.minutos} minutos, {c.questoes.length} questões de prova{estado === 'concluido' ? ', lido' : estado === 'andamento' ? `, ${leitura?.progresso ?? 0}% lido` : ''}{fechado ? ', para assinantes' : ''}</span>
       </a>
     </li>
+  )
+}
+
+/** Popup ao passar o mouse (ou no primeiro toque): os dados do livro ao lado da lombada. */
+function PopLombada({ pop, leitura, indice, fechado, aoAbrir, aoFechar }: { pop: Pop; leitura?: Leitura; indice: Indice | null; fechado: boolean; aoAbrir: () => void; aoFechar: () => void }) {
+  const { c } = pop
+  const estado = estadoLeitura(leitura)
+  const pct = estado === 'concluido' ? 100 : leitura?.progresso ?? 0
+  const r = raridade(c.questoes.length)
+  const provas = provasDoCapitulo(indice, c.questoes)
+  const largura = Math.min(300, window.innerWidth - 24)
+  const x = Math.max(12 + largura / 2, Math.min(window.innerWidth - 12 - largura / 2, pop.x))
+  const embaixo = pop.topo < 300
+  const estilo = { left: x, top: embaixo ? pop.base + 12 : pop.topo - 12, width: largura, '--capa': corDaCapa(c.livro) } as CSSProperties
+  return (
+    <div id="sl-pop" role="tooltip" className={`sl-pop${embaixo ? ' sl-pop--embaixo' : ''}${pop.preso ? ' sl-pop--preso' : ''}`} style={estilo}>
+      <p className="sl-pop__livro"><b>{apelidoLivro(c.livro)}</b> · {c.capitulo.split('·')[0].trim()}<span className={`sl-raridade sl-raridade--${r}`}><span className={`sl-gema sl-gema--${r}`} /> {NOME_RARIDADE[r]}</span></p>
+      <strong className="sl-pop__titulo">{c.titulo}</strong>
+      <dl className="sl-pop__dados">
+        <div><dt>Leitura</dt><dd>{c.minutos} min</dd></div>
+        <div><dt>Questões de prova</dt><dd>{c.questoes.length}</dd></div>
+        <div><dt>Simulados</dt><dd>{c.treino.length}</dd></div>
+      </dl>
+      {provas.length > 0 && <p className="sl-pop__provas"><span>Já caiu em</span> {provas.slice(0, 3).join(' · ')}{provas.length > 3 ? ` e mais ${provas.length - 3}` : ''}</p>}
+      <ol className="sl-pop__partes">{c.secoes.slice(0, 3).map((s) => <li key={s.id}>{s.titulo}</li>)}{c.secoes.length > 3 && <li className="sl-pop__mais">e mais {c.secoes.length - 3} partes</li>}</ol>
+      <div className="sl-pop__xp"><span style={{ width: `${pct}%` }} /><b>{estado === 'concluido' ? 'Lido até o fim' : estado === 'andamento' ? `${pct}% lido` : 'Ainda não aberto'}{fechado ? ' · assinantes' : ''}</b></div>
+      {pop.preso
+        ? <div className="sl-pop__acoes"><button type="button" className="rs-botao-ouro" onClick={aoAbrir}><Icone nome="livro" tamanho={16} /> Abrir a ficha</button><button type="button" className="botao" onClick={aoFechar}>Fechar</button></div>
+        : <p className="sl-pop__dica">Clique para abrir a ficha</p>}
+    </div>
   )
 }
 
@@ -438,7 +537,7 @@ function FichaItem({ c, selo, leitura, fechado, indice, aoFechar }: { c: ResumoC
           <h2>{c.titulo}</h2>
           <p className="sl-ficha__ref">{rotuloLivro(c)} · {c.capitulo.split('·')[0].trim()}</p>
           <dl className="sl-ficha__atributos">
-            <div><dt>Leitura</dt><dd className="numerico">~{c.minutos} min</dd></div>
+            <div><dt>Leitura</dt><dd className="numerico">{c.minutos} min</dd></div>
             <div><dt>Questões de prova</dt><dd className="numerico">{c.questoes.length}</dd></div>
             <div><dt>Simulados</dt><dd className="numerico">{c.treino.length}</dd></div>
             <div><dt>Partes</dt><dd className="numerico">{c.secoes.length}</dd></div>

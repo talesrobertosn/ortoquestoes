@@ -117,3 +117,14 @@ export const CHAVE_CONSULTA_ESTANTE = 'resumos:estante'
 export function voltarAEstante(): string {
   try { const c = sessionStorage.getItem(CHAVE_CONSULTA_ESTANTE); return c ? `/resumos?${c}` : '/resumos' } catch { return '/resumos' }
 }
+/**
+ * O título que cabe na lombada: sem o começo que se repete em quase todos ("Fratura do colo do fêmur" → "Colo do
+ * fêmur") e sem "na criança" (a estante já diz que é infantil). O título completo fica no popup e na ficha.
+ */
+export function tituloLombada(titulo: string): string {
+  const prefixo = /^(fraturas? e luxa[çc][õo]es|fraturas?|les[õo]es)\s+(d[aoe]s?|n[ao]s?)\s+/i
+  let curto = titulo.replace(/\s+na crian[çc]a$/i, '')
+  // "Luxação do joelho" fica como está: sem "luxação", o título muda de sentido.
+  if (prefixo.test(curto)) curto = curto.replace(prefixo, '').replace(/ e d[aoe]s? /g, ' e ')
+  return curto.charAt(0).toUpperCase() + curto.slice(1)
+}

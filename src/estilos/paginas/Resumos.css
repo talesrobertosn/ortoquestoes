@@ -713,3 +713,39 @@
 .rs-modo button { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 38px; padding: 0 0.75rem; border: 0; background: var(--superficie); color: var(--texto); font: inherit; font-size: 0.86rem; font-weight: 700; cursor: pointer; }
 .rs-modo button + button { border-left: 2px solid #1b1208; }
 .rs-modo button[aria-pressed="true"] { background: #e3b860; color: #1b1208; }
+
+/* "Encontre o resumo" (30/10/2026): caminho, Livro → Tema, busca com sugestões. Visual normal do site. */
+.rs-achar { display: grid; gap: 0.8rem; padding: 1rem 1.1rem 1.05rem; border: 2px solid var(--rs-borda); border-radius: 8px; background: var(--superficie); color: var(--texto); box-shadow: 4px 4px 0 var(--rs-sombra); scroll-margin-top: 90px; }
+.rs-achar__topo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.4rem 1rem; }
+.rs-achar h2 { display: inline-flex; align-items: center; gap: 0.45rem; margin: 0; font-family: var(--fonte-marca); font-size: 1.15rem; }
+.rs-achar h2 svg { color: var(--verdete); }
+.rs-caminho { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; font-size: 0.9rem; color: var(--texto-2); }
+.rs-caminho button, .rs-caminho a { padding: 0.15rem 0.35rem; border: 0; border-radius: 4px; background: none; color: var(--verdete); font: inherit; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.rs-caminho [aria-current="page"] { color: var(--texto); text-decoration: none; background: var(--verdete-veu, rgba(20, 101, 94, 0.08)); }
+.rs-achar__linha { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1.4fr); gap: 0.7rem; align-items: end; }
+.rs-achar__campo { display: grid; gap: 0.3rem; min-width: 0; }
+.rs-achar__campo > span:first-child, .rs-achar__filtros label > span { font-size: 0.74rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--texto-2); }
+.rs-achar select, .rs-achar__entrada { width: 100%; min-height: 46px; padding: 0 0.7rem; border: 2px solid var(--rs-borda); border-radius: 6px; background: var(--fundo); color: var(--texto); font: inherit; font-size: 0.95rem; }
+.rs-achar select { cursor: pointer; text-overflow: ellipsis; }
+.rs-achar select:focus, .rs-achar__entrada:focus-within { border-color: var(--verdete); outline: none; box-shadow: 3px 3px 0 var(--verdete-veu, rgba(20, 101, 94, 0.15)); }
+.rs-achar__entrada { display: flex; align-items: center; gap: 0.5rem; color: var(--verdete); }
+.rs-achar__entrada input { flex: 1; min-width: 0; min-height: 42px; border: 0; background: none; color: var(--texto); font: inherit; outline: none; }
+.rs-achar__busca { position: relative; }
+.rs-sugestoes { position: absolute; left: 0; right: 0; top: calc(100% + 4px); z-index: 30; display: grid; margin: 0; padding: 0.3rem; list-style: none; border: 2px solid var(--texto); border-radius: 6px; background: var(--superficie); box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.18); }
+.rs-sugestoes li { display: grid; gap: 0.1rem; padding: 0.45rem 0.6rem; border-radius: 4px; cursor: pointer; }
+.rs-sugestoes li[aria-selected="true"] { background: var(--verdete-veu, rgba(20, 101, 94, 0.1)); }
+.rs-sugestoes small { color: var(--texto-2); font-size: 0.78rem; }
+.rs-achar__filtros { display: flex; flex-wrap: wrap; align-items: end; gap: 0.6rem 0.9rem; padding-top: 0.7rem; border-top: 1px dashed var(--rs-borda); }
+.rs-achar__filtros label { display: grid; gap: 0.25rem; min-width: 12rem; }
+.rs-achar__filtros select { min-height: 40px; font-size: 0.88rem; }
+.rs-achar__resultado { display: flex; align-items: center; gap: 0.4rem; margin: 0 0 0 auto; font-size: 0.88rem; }
+.rs-achar__resultado button { display: inline-flex; align-items: center; gap: 0.2rem; padding: 0.2rem 0.5rem; border: 2px solid var(--rs-borda); border-radius: 4px; background: none; color: var(--texto); font: inherit; font-weight: 700; cursor: pointer; }
+@media (max-width: 52rem) {
+  .rs-achar__linha { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .rs-achar__busca { grid-column: 1 / -1; }
+}
+@media (max-width: 34rem) {
+  .rs-achar__linha { grid-template-columns: minmax(0, 1fr); }
+  .rs-achar__filtros label { min-width: 0; width: 100%; }
+  .rs-achar__resultado { margin-left: 0; }
+}
