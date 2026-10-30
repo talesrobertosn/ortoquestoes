@@ -61,21 +61,21 @@
    "oficiais": 68,
    "teot": 12,
    "taro": 28,
-   "citadas": 8,
-   "cobertura": 0.12,
-   "situacao": "sem resumo",
+   "citadas": 51,
+   "cobertura": 0.75,
+   "situacao": "coberto",
    "resumos": [
+    "netter-anatomia-mao-punho-antebraco",
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-44-carpo",
     "rockwood10-45-fraturas-mao",
     "rockwoodcriancas10-08-mao-carpo"
    ],
    "comentarios": {
-    "basico": 59,
+    "basico": 48,
     "incerto": 2,
-    "preservar": 7
-   },
-   "posicaoFila": 1
+    "preservar": 18
+   }
   },
   {
    "area": "pediatria",
@@ -86,9 +86,9 @@
    "oficiais": 60,
    "teot": 7,
    "taro": 37,
-   "citadas": 7,
-   "cobertura": 0.12,
-   "situacao": "sem resumo",
+   "citadas": 46,
+   "cobertura": 0.77,
+   "situacao": "coberto",
    "resumos": [
     "rockwoodcriancas10-19-ombro-umero",
     "rockwoodcriancas10-24-quadril",
@@ -98,11 +98,10 @@
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "comentarios": {
-    "basico": 53,
-    "incerto": 2,
-    "preservar": 5
-   },
-   "posicaoFila": 2
+    "basico": 14,
+    "incerto": 1,
+    "preservar": 45
+   }
   },
   {
    "area": "trauma",
@@ -149,7 +148,7 @@
     "incerto": 5,
     "preservar": 3
    },
-   "posicaoFila": 3
+   "posicaoFila": 1
   },
   {
    "area": "pediatria",
@@ -201,7 +200,7 @@
     "incerto": 3,
     "preservar": 7
    },
-   "posicaoFila": 4
+   "posicaoFila": 2
   },
   {
    "area": "trauma",
@@ -233,16 +232,18 @@
    "oficiais": 48,
    "teot": 11,
    "taro": 25,
-   "citadas": 0,
-   "cobertura": 0.0,
+   "citadas": 1,
+   "cobertura": 0.02,
    "situacao": "sem resumo",
-   "resumos": [],
+   "resumos": [
+    "netter-anatomia-mao-punho-antebraco"
+   ],
    "comentarios": {
     "basico": 45,
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 5
+   "posicaoFila": 3
   },
   {
    "area": "ombro-cotovelo",
@@ -264,7 +265,7 @@
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 6
+   "posicaoFila": 4
   },
   {
    "area": "quadril",
@@ -286,7 +287,7 @@
     "basico": 40,
     "preservar": 7
    },
-   "posicaoFila": 7
+   "posicaoFila": 5
   },
   {
    "area": "pediatria",
@@ -330,7 +331,7 @@
    "comentarios": {
     "basico": 45
    },
-   "posicaoFila": 8
+   "posicaoFila": 6
   },
   {
    "area": "mao",
@@ -349,7 +350,7 @@
     "basico": 43,
     "incerto": 1
    },
-   "posicaoFila": 9
+   "posicaoFila": 7
   },
   {
    "area": "ombro-cotovelo",
@@ -368,7 +369,7 @@
     "basico": 37,
     "incerto": 5
    },
-   "posicaoFila": 10
+   "posicaoFila": 8
   },
   {
    "area": "pediatria",
@@ -391,9 +392,9 @@
     "rockwoodcriancas10-27-fise-proximal-tibia"
    ],
    "comentarios": {
-    "basico": 11,
+    "basico": 10,
     "incerto": 2,
-    "preservar": 29
+    "preservar": 30
    }
   },
   {
@@ -460,7 +461,7 @@
     "basico": 32,
     "preservar": 8
    },
-   "posicaoFila": 11
+   "posicaoFila": 9
   },
   {
    "area": "trauma",
@@ -506,7 +507,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 12
+   "posicaoFila": 10
   },
   {
    "area": "pediatria",
@@ -529,7 +530,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 13
+   "posicaoFila": 11
   },
   {
    "area": "trauma",
@@ -556,7 +557,7 @@
     "incerto": 1,
     "preservar": 8
    },
-   "posicaoFila": 14
+   "posicaoFila": 12
   },
   {
    "area": "mao",
@@ -567,10 +568,11 @@
    "oficiais": 37,
    "teot": 3,
    "taro": 22,
-   "citadas": 1,
-   "cobertura": 0.03,
+   "citadas": 6,
+   "cobertura": 0.16,
    "situacao": "sem resumo",
    "resumos": [
+    "netter-anatomia-mao-punho-antebraco",
     "rockwood10-45-fraturas-mao"
    ],
    "comentarios": {
@@ -578,7 +580,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 15
+   "posicaoFila": 13
   },
   {
    "area": "ombro-cotovelo",
@@ -644,7 +646,7 @@
    "comentarios": {
     "basico": 35
    },
-   "posicaoFila": 16
+   "posicaoFila": 14
   },
   {
    "area": "coluna",
@@ -666,7 +668,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 17
+   "posicaoFila": 15
   },
   {
    "area": "pediatria",
@@ -677,19 +679,20 @@
    "oficiais": 34,
    "teot": 4,
    "taro": 21,
-   "citadas": 6,
-   "cobertura": 0.18,
+   "citadas": 7,
+   "cobertura": 0.21,
    "situacao": "sem resumo",
    "resumos": [
     "rockwoodcriancas10-20-clavicula-escapula",
-    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
+    "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+    "tachdjian6-alinhamento-torcoes-coxa-vara"
    ],
    "comentarios": {
-    "basico": 32,
+    "basico": 31,
     "incerto": 1,
-    "preservar": 1
+    "preservar": 2
    },
-   "posicaoFila": 18
+   "posicaoFila": 16
   },
   {
    "area": "conceitos-basicos",
@@ -708,7 +711,7 @@
     "basico": 32,
     "incerto": 1
    },
-   "posicaoFila": 19
+   "posicaoFila": 17
   },
   {
    "area": "joelho",
@@ -729,7 +732,7 @@
     "basico": 31,
     "preservar": 2
    },
-   "posicaoFila": 20
+   "posicaoFila": 18
   },
   {
    "area": "ombro-cotovelo",
@@ -750,7 +753,7 @@
     "basico": 30,
     "incerto": 3
    },
-   "posicaoFila": 21
+   "posicaoFila": 19
   },
   {
    "area": "tumores",
@@ -768,7 +771,7 @@
    "comentarios": {
     "basico": 33
    },
-   "posicaoFila": 22
+   "posicaoFila": 20
   },
   {
    "area": "pediatria",
@@ -792,7 +795,7 @@
     "basico": 31,
     "preservar": 1
    },
-   "posicaoFila": 23
+   "posicaoFila": 21
   },
   {
    "area": "coluna",
@@ -834,7 +837,7 @@
     "basico": 28,
     "incerto": 3
    },
-   "posicaoFila": 24
+   "posicaoFila": 22
   },
   {
    "area": "coluna",
@@ -853,7 +856,7 @@
     "basico": 29,
     "incerto": 1
    },
-   "posicaoFila": 25
+   "posicaoFila": 23
   },
   {
    "area": "conceitos-basicos",
@@ -876,7 +879,7 @@
     "incerto": 2,
     "preservar": 3
    },
-   "posicaoFila": 26
+   "posicaoFila": 24
   },
   {
    "area": "joelho",
@@ -898,7 +901,7 @@
     "basico": 26,
     "preservar": 4
    },
-   "posicaoFila": 27
+   "posicaoFila": 25
   },
   {
    "area": "trauma",
@@ -943,7 +946,7 @@
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 28
+   "posicaoFila": 26
   },
   {
    "area": "trauma",
@@ -1027,7 +1030,7 @@
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 29
+   "posicaoFila": 27
   },
   {
    "area": "pediatria",
@@ -1046,7 +1049,7 @@
     "basico": 26,
     "incerto": 1
    },
-   "posicaoFila": 30
+   "posicaoFila": 28
   },
   {
    "area": "trauma",
@@ -1078,15 +1081,18 @@
    "oficiais": 26,
    "teot": 2,
    "taro": 16,
-   "citadas": 0,
-   "cobertura": 0.0,
+   "citadas": 5,
+   "cobertura": 0.19,
    "situacao": "sem resumo",
-   "resumos": [],
+   "resumos": [
+    "netter-anatomia-mao-punho-antebraco"
+   ],
    "comentarios": {
-    "basico": 23,
-    "incerto": 3
+    "basico": 22,
+    "incerto": 3,
+    "preservar": 1
    },
-   "posicaoFila": 31
+   "posicaoFila": 29
   },
   {
    "area": "trauma",
@@ -1131,7 +1137,7 @@
     "basico": 24,
     "preservar": 1
    },
-   "posicaoFila": 32
+   "posicaoFila": 30
   },
   {
    "area": "pe-tornozelo",
@@ -1150,7 +1156,7 @@
     "basico": 24,
     "incerto": 1
    },
-   "posicaoFila": 33
+   "posicaoFila": 31
   },
   {
    "area": "pediatria",
@@ -1161,8 +1167,8 @@
    "oficiais": 25,
    "teot": 3,
    "taro": 21,
-   "citadas": 14,
-   "cobertura": 0.56,
+   "citadas": 15,
+   "cobertura": 0.6,
    "situacao": "coberto",
    "resumos": [
     "rockwoodcriancas10-02-consolidacao-fise",
@@ -1173,9 +1179,9 @@
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
    "comentarios": {
-    "basico": 14,
+    "basico": 13,
     "incerto": 1,
-    "preservar": 10
+    "preservar": 11
    }
   },
   {
@@ -1187,14 +1193,16 @@
    "oficiais": 25,
    "teot": 3,
    "taro": 16,
-   "citadas": 0,
-   "cobertura": 0.0,
-   "situacao": "sem resumo",
-   "resumos": [],
+   "citadas": 1,
+   "cobertura": 0.04,
+   "situacao": "coberto",
+   "resumos": [
+    "tachdjian6-alinhamento-torcoes-coxa-vara"
+   ],
    "comentarios": {
-    "basico": 25
-   },
-   "posicaoFila": 34
+    "basico": 24,
+    "preservar": 1
+   }
   },
   {
    "area": "tumores",
@@ -1213,7 +1221,7 @@
     "basico": 24,
     "incerto": 1
    },
-   "posicaoFila": 35
+   "posicaoFila": 32
   },
   {
    "area": "pediatria",
@@ -1231,7 +1239,7 @@
    "comentarios": {
     "basico": 24
    },
-   "posicaoFila": 36
+   "posicaoFila": 33
   },
   {
    "area": "pediatria",
@@ -1242,18 +1250,19 @@
    "oficiais": 24,
    "teot": 3,
    "taro": 16,
-   "citadas": 9,
-   "cobertura": 0.38,
+   "citadas": 10,
+   "cobertura": 0.42,
    "situacao": "coberto",
    "resumos": [
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-28-joelho-intra-articular",
-    "rockwoodcriancas10-29-diafise-tibia"
+    "rockwoodcriancas10-29-diafise-tibia",
+    "tachdjian6-alinhamento-torcoes-coxa-vara"
    ],
    "comentarios": {
-    "basico": 14,
+    "basico": 13,
     "incerto": 1,
-    "preservar": 9
+    "preservar": 10
    }
   },
   {
@@ -1339,7 +1348,7 @@
     "basico": 22,
     "incerto": 1
    },
-   "posicaoFila": 37
+   "posicaoFila": 34
   },
   {
    "area": "joelho",
@@ -1361,7 +1370,7 @@
     "incerto": 1,
     "preservar": 7
    },
-   "posicaoFila": 38
+   "posicaoFila": 35
   },
   {
    "area": "mao",
@@ -1392,17 +1401,19 @@
    "oficiais": 23,
    "teot": 2,
    "taro": 18,
-   "citadas": 14,
-   "cobertura": 0.61,
+   "citadas": 17,
+   "cobertura": 0.74,
    "situacao": "coberto",
    "resumos": [
     "rockwoodcriancas10-23-pelve-acetabulo",
     "rockwoodcriancas10-24-quadril",
-    "rockwoodcriancas10-27-fise-proximal-tibia"
+    "rockwoodcriancas10-27-fise-proximal-tibia",
+    "tachdjian6-alinhamento-torcoes-coxa-vara",
+    "tachdjian6-deficiencias-membros"
    ],
    "comentarios": {
-    "basico": 10,
-    "preservar": 13
+    "basico": 7,
+    "preservar": 16
    }
   },
   {
@@ -1429,7 +1440,7 @@
     "basico": 18,
     "preservar": 5
    },
-   "posicaoFila": 39
+   "posicaoFila": 36
   },
   {
    "area": "conceitos-basicos",
@@ -1452,7 +1463,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 40
+   "posicaoFila": 37
   },
   {
    "area": "pediatria",
@@ -1463,16 +1474,18 @@
    "oficiais": 22,
    "teot": 3,
    "taro": 10,
-   "citadas": 0,
-   "cobertura": 0.0,
+   "citadas": 1,
+   "cobertura": 0.05,
    "situacao": "sem resumo",
-   "resumos": [],
+   "resumos": [
+    "tachdjian6-alinhamento-torcoes-coxa-vara"
+   ],
    "comentarios": {
-    "basico": 20,
+    "basico": 19,
     "incerto": 1,
-    "preservar": 1
+    "preservar": 2
    },
-   "posicaoFila": 41
+   "posicaoFila": 38
   },
   {
    "area": "trauma",
@@ -1515,7 +1528,7 @@
    "comentarios": {
     "basico": 22
    },
-   "posicaoFila": 42
+   "posicaoFila": 39
   },
   {
    "area": "tumores",
@@ -1535,7 +1548,7 @@
    "comentarios": {
     "basico": 22
    },
-   "posicaoFila": 43
+   "posicaoFila": 40
   },
   {
    "area": "coluna",
@@ -1577,7 +1590,7 @@
     "basico": 20,
     "incerto": 1
    },
-   "posicaoFila": 44
+   "posicaoFila": 41
   },
   {
    "area": "ombro-cotovelo",
@@ -1599,7 +1612,7 @@
     "basico": 20,
     "preservar": 1
    },
-   "posicaoFila": 45
+   "posicaoFila": 42
   },
   {
    "area": "pediatria",
@@ -1618,7 +1631,7 @@
     "basico": 20,
     "incerto": 1
    },
-   "posicaoFila": 46
+   "posicaoFila": 43
   },
   {
    "area": "pediatria",
@@ -1637,7 +1650,7 @@
     "basico": 20,
     "incerto": 1
    },
-   "posicaoFila": 47
+   "posicaoFila": 44
   },
   {
    "area": "trauma",
@@ -1724,7 +1737,7 @@
    "comentarios": {
     "basico": 21
    },
-   "posicaoFila": 48
+   "posicaoFila": 45
   },
   {
    "area": "coluna",
@@ -1745,7 +1758,7 @@
     "basico": 17,
     "preservar": 3
    },
-   "posicaoFila": 49
+   "posicaoFila": 46
   },
   {
    "area": "joelho",
@@ -1764,7 +1777,7 @@
     "basico": 18,
     "incerto": 2
    },
-   "posicaoFila": 50
+   "posicaoFila": 47
   },
   {
    "area": "mao",
@@ -1783,7 +1796,7 @@
     "basico": 19,
     "incerto": 1
    },
-   "posicaoFila": 51
+   "posicaoFila": 48
   },
   {
    "area": "mao",
@@ -1794,15 +1807,18 @@
    "oficiais": 20,
    "teot": 2,
    "taro": 11,
-   "citadas": 0,
-   "cobertura": 0.0,
+   "citadas": 1,
+   "cobertura": 0.05,
    "situacao": "sem resumo",
-   "resumos": [],
+   "resumos": [
+    "netter-anatomia-mao-punho-antebraco"
+   ],
    "comentarios": {
-    "basico": 19,
-    "incerto": 1
+    "basico": 18,
+    "incerto": 1,
+    "preservar": 1
    },
-   "posicaoFila": 52
+   "posicaoFila": 49
   },
   {
    "area": "ombro-cotovelo",
@@ -1821,7 +1837,7 @@
     "basico": 17,
     "incerto": 3
    },
-   "posicaoFila": 53
+   "posicaoFila": 50
   },
   {
    "area": "pediatria",
@@ -1864,7 +1880,7 @@
    "comentarios": {
     "basico": 20
    },
-   "posicaoFila": 54
+   "posicaoFila": 51
   },
   {
    "area": "coluna",
@@ -1903,7 +1919,7 @@
    "comentarios": {
     "basico": 19
    },
-   "posicaoFila": 55
+   "posicaoFila": 52
   },
   {
    "area": "mao",
@@ -1921,7 +1937,7 @@
    "comentarios": {
     "basico": 19
    },
-   "posicaoFila": 56
+   "posicaoFila": 53
   },
   {
    "area": "pe-tornozelo",
@@ -1939,7 +1955,7 @@
    "comentarios": {
     "basico": 19
    },
-   "posicaoFila": 57
+   "posicaoFila": 54
   },
   {
    "area": "quadril",
@@ -1958,7 +1974,7 @@
     "basico": 18,
     "incerto": 1
    },
-   "posicaoFila": 58
+   "posicaoFila": 55
   },
   {
    "area": "tumores",
@@ -1976,7 +1992,7 @@
    "comentarios": {
     "basico": 19
    },
-   "posicaoFila": 59
+   "posicaoFila": 56
   },
   {
    "area": "mao",
@@ -1987,10 +2003,11 @@
    "oficiais": 18,
    "teot": 1,
    "taro": 9,
-   "citadas": 14,
-   "cobertura": 0.78,
+   "citadas": 16,
+   "cobertura": 0.89,
    "situacao": "coberto",
    "resumos": [
+    "netter-anatomia-mao-punho-antebraco",
     "rockwood10-44-carpo",
     "rockwood10-45-fraturas-mao"
    ],
@@ -2021,7 +2038,7 @@
     "basico": 12,
     "preservar": 6
    },
-   "posicaoFila": 60
+   "posicaoFila": 57
   },
   {
    "area": "ombro-cotovelo",
@@ -2040,7 +2057,7 @@
     "basico": 17,
     "incerto": 1
    },
-   "posicaoFila": 61
+   "posicaoFila": 58
   },
   {
    "area": "osteometabolicas",
@@ -2059,7 +2076,7 @@
     "basico": 16,
     "incerto": 2
    },
-   "posicaoFila": 62
+   "posicaoFila": 59
   },
   {
    "area": "trauma",
@@ -2142,7 +2159,7 @@
     "basico": 17,
     "preservar": 1
    },
-   "posicaoFila": 63
+   "posicaoFila": 60
   },
   {
    "area": "conceitos-basicos",
@@ -2161,7 +2178,7 @@
     "basico": 15,
     "incerto": 2
    },
-   "posicaoFila": 64
+   "posicaoFila": 61
   },
   {
    "area": "conceitos-basicos",
@@ -2182,7 +2199,7 @@
     "basico": 16,
     "preservar": 1
    },
-   "posicaoFila": 65
+   "posicaoFila": 62
   },
   {
    "area": "ombro-cotovelo",
@@ -2204,7 +2221,7 @@
     "basico": 14,
     "preservar": 3
    },
-   "posicaoFila": 66
+   "posicaoFila": 63
   },
   {
    "area": "pediatria",
@@ -2248,7 +2265,7 @@
     "basico": 15,
     "preservar": 2
    },
-   "posicaoFila": 67
+   "posicaoFila": 64
   },
   {
    "area": "conceitos-basicos",
@@ -2267,7 +2284,7 @@
     "basico": 15,
     "incerto": 1
    },
-   "posicaoFila": 68
+   "posicaoFila": 65
   },
   {
    "area": "joelho",
@@ -2287,7 +2304,7 @@
    "comentarios": {
     "basico": 16
    },
-   "posicaoFila": 69
+   "posicaoFila": 66
   },
   {
    "area": "joelho",
@@ -2305,7 +2322,7 @@
    "comentarios": {
     "basico": 16
    },
-   "posicaoFila": 70
+   "posicaoFila": 67
   },
   {
    "area": "joelho",
@@ -2343,7 +2360,7 @@
    "comentarios": {
     "basico": 16
    },
-   "posicaoFila": 71
+   "posicaoFila": 68
   },
   {
    "area": "ombro-cotovelo",
@@ -2362,7 +2379,7 @@
     "basico": 14,
     "incerto": 2
    },
-   "posicaoFila": 72
+   "posicaoFila": 69
   },
   {
    "area": "ombro-cotovelo",
@@ -2386,7 +2403,7 @@
     "incerto": 2,
     "preservar": 3
    },
-   "posicaoFila": 73
+   "posicaoFila": 70
   },
   {
    "area": "pe-tornozelo",
@@ -2405,7 +2422,7 @@
     "basico": 15,
     "incerto": 1
    },
-   "posicaoFila": 74
+   "posicaoFila": 71
   },
   {
    "area": "pe-tornozelo",
@@ -2424,7 +2441,7 @@
     "basico": 15,
     "incerto": 1
    },
-   "posicaoFila": 75
+   "posicaoFila": 72
   },
   {
    "area": "pediatria",
@@ -2469,7 +2486,7 @@
     "basico": 15,
     "preservar": 1
    },
-   "posicaoFila": 76
+   "posicaoFila": 73
   },
   {
    "area": "trauma",
@@ -2491,7 +2508,7 @@
     "basico": 14,
     "preservar": 2
    },
-   "posicaoFila": 77
+   "posicaoFila": 74
   },
   {
    "area": "trauma",
@@ -2550,7 +2567,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 78
+   "posicaoFila": 75
   },
   {
    "area": "mao",
@@ -2568,7 +2585,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 79
+   "posicaoFila": 76
   },
   {
    "area": "ombro-cotovelo",
@@ -2592,7 +2609,7 @@
     "basico": 9,
     "preservar": 6
    },
-   "posicaoFila": 80
+   "posicaoFila": 77
   },
   {
    "area": "osteometabolicas",
@@ -2610,7 +2627,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 81
+   "posicaoFila": 78
   },
   {
    "area": "osteometabolicas",
@@ -2628,7 +2645,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 82
+   "posicaoFila": 79
   },
   {
    "area": "pediatria",
@@ -2668,7 +2685,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 83
+   "posicaoFila": 80
   },
   {
    "area": "trauma",
@@ -2708,7 +2725,7 @@
    "comentarios": {
     "basico": 15
    },
-   "posicaoFila": 84
+   "posicaoFila": 81
   },
   {
    "area": "coluna",
@@ -2727,7 +2744,7 @@
     "basico": 11,
     "incerto": 3
    },
-   "posicaoFila": 85
+   "posicaoFila": 82
   },
   {
    "area": "joelho",
@@ -2750,7 +2767,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 86
+   "posicaoFila": 83
   },
   {
    "area": "pe-tornozelo",
@@ -2772,7 +2789,7 @@
     "basico": 13,
     "preservar": 1
    },
-   "posicaoFila": 87
+   "posicaoFila": 84
   },
   {
    "area": "pe-tornozelo",
@@ -2794,7 +2811,7 @@
     "basico": 13,
     "preservar": 1
    },
-   "posicaoFila": 88
+   "posicaoFila": 85
   },
   {
    "area": "pediatria",
@@ -2838,7 +2855,7 @@
     "basico": 13,
     "preservar": 1
    },
-   "posicaoFila": 89
+   "posicaoFila": 86
   },
   {
    "area": "trauma",
@@ -2878,7 +2895,7 @@
     "basico": 10,
     "incerto": 3
    },
-   "posicaoFila": 90
+   "posicaoFila": 87
   },
   {
    "area": "ombro-cotovelo",
@@ -2896,7 +2913,7 @@
    "comentarios": {
     "basico": 13
    },
-   "posicaoFila": 91
+   "posicaoFila": 88
   },
   {
    "area": "pe-tornozelo",
@@ -2918,7 +2935,7 @@
     "basico": 10,
     "preservar": 3
    },
-   "posicaoFila": 92
+   "posicaoFila": 89
   },
   {
    "area": "pe-tornozelo",
@@ -2983,7 +3000,7 @@
     "basico": 12,
     "incerto": 1
    },
-   "posicaoFila": 93
+   "posicaoFila": 90
   },
   {
    "area": "pe-tornozelo",
@@ -3001,7 +3018,7 @@
    "comentarios": {
     "basico": 13
    },
-   "posicaoFila": 94
+   "posicaoFila": 91
   },
   {
    "area": "pediatria",
@@ -3054,14 +3071,18 @@
    "oficiais": 13,
    "teot": 1,
    "taro": 7,
-   "citadas": 0,
-   "cobertura": 0.0,
+   "citadas": 3,
+   "cobertura": 0.23,
    "situacao": "sem resumo",
-   "resumos": [],
+   "resumos": [
+    "tachdjian6-alinhamento-torcoes-coxa-vara",
+    "tachdjian6-deficiencias-membros"
+   ],
    "comentarios": {
-    "basico": 13
+    "basico": 10,
+    "preservar": 3
    },
-   "posicaoFila": 95
+   "posicaoFila": 92
   },
   {
    "area": "quadril",
@@ -3082,7 +3103,7 @@
     "basico": 10,
     "preservar": 3
    },
-   "posicaoFila": 96
+   "posicaoFila": 93
   },
   {
    "area": "trauma",
@@ -3121,7 +3142,7 @@
    "comentarios": {
     "basico": 13
    },
-   "posicaoFila": 97
+   "posicaoFila": 94
   },
   {
    "area": "tumores",
@@ -3140,7 +3161,7 @@
     "basico": 12,
     "incerto": 1
    },
-   "posicaoFila": 98
+   "posicaoFila": 95
   },
   {
    "area": "coluna",
@@ -3161,7 +3182,7 @@
     "basico": 11,
     "preservar": 1
    },
-   "posicaoFila": 99
+   "posicaoFila": 96
   },
   {
    "area": "ombro-cotovelo",
@@ -3180,7 +3201,7 @@
     "basico": 11,
     "incerto": 1
    },
-   "posicaoFila": 100
+   "posicaoFila": 97
   },
   {
    "area": "ombro-cotovelo",
@@ -3220,7 +3241,7 @@
    "comentarios": {
     "basico": 12
    },
-   "posicaoFila": 101
+   "posicaoFila": 98
   },
   {
    "area": "pe-tornozelo",
@@ -3242,7 +3263,7 @@
     "basico": 11,
     "preservar": 1
    },
-   "posicaoFila": 102
+   "posicaoFila": 99
   },
   {
    "area": "pe-tornozelo",
@@ -3263,7 +3284,7 @@
     "basico": 11,
     "preservar": 1
    },
-   "posicaoFila": 103
+   "posicaoFila": 100
   },
   {
    "area": "pe-tornozelo",
@@ -3281,7 +3302,7 @@
    "comentarios": {
     "basico": 12
    },
-   "posicaoFila": 104
+   "posicaoFila": 101
   },
   {
    "area": "quadril",
@@ -3301,7 +3322,7 @@
    "comentarios": {
     "basico": 12
    },
-   "posicaoFila": 105
+   "posicaoFila": 102
   },
   {
    "area": "conceitos-basicos",
@@ -3320,7 +3341,7 @@
     "basico": 9,
     "incerto": 2
    },
-   "posicaoFila": 106
+   "posicaoFila": 103
   },
   {
    "area": "joelho",
@@ -3338,7 +3359,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 107
+   "posicaoFila": 104
   },
   {
    "area": "mao",
@@ -3356,7 +3377,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 108
+   "posicaoFila": 105
   },
   {
    "area": "osteometabolicas",
@@ -3378,7 +3399,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 109
+   "posicaoFila": 106
   },
   {
    "area": "osteometabolicas",
@@ -3396,7 +3417,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 110
+   "posicaoFila": 107
   },
   {
    "area": "pe-tornozelo",
@@ -3414,7 +3435,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 111
+   "posicaoFila": 108
   },
   {
    "area": "pediatria",
@@ -3479,7 +3500,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 112
+   "posicaoFila": 109
   },
   {
    "area": "trauma",
@@ -3502,7 +3523,7 @@
     "basico": 10,
     "preservar": 1
    },
-   "posicaoFila": 113
+   "posicaoFila": 110
   },
   {
    "area": "tumores",
@@ -3520,7 +3541,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 114
+   "posicaoFila": 111
   },
   {
    "area": "tumores",
@@ -3538,7 +3559,7 @@
    "comentarios": {
     "basico": 11
    },
-   "posicaoFila": 115
+   "posicaoFila": 112
   },
   {
    "area": "coluna",
@@ -3559,7 +3580,7 @@
     "basico": 9,
     "incerto": 1
    },
-   "posicaoFila": 116
+   "posicaoFila": 113
   },
   {
    "area": "conceitos-basicos",
@@ -3579,7 +3600,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 117
+   "posicaoFila": 114
   },
   {
    "area": "joelho",
@@ -3600,7 +3621,7 @@
     "basico": 9,
     "preservar": 1
    },
-   "posicaoFila": 118
+   "posicaoFila": 115
   },
   {
    "area": "mao",
@@ -3618,7 +3639,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 119
+   "posicaoFila": 116
   },
   {
    "area": "mao",
@@ -3637,7 +3658,7 @@
     "basico": 8,
     "incerto": 2
    },
-   "posicaoFila": 120
+   "posicaoFila": 117
   },
   {
    "area": "mao",
@@ -3655,7 +3676,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 121
+   "posicaoFila": 118
   },
   {
    "area": "ombro-cotovelo",
@@ -3676,7 +3697,7 @@
     "basico": 8,
     "preservar": 2
    },
-   "posicaoFila": 122
+   "posicaoFila": 119
   },
   {
    "area": "ombro-cotovelo",
@@ -3695,7 +3716,7 @@
     "basico": 9,
     "incerto": 1
    },
-   "posicaoFila": 123
+   "posicaoFila": 120
   },
   {
    "area": "pe-tornozelo",
@@ -3713,7 +3734,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 124
+   "posicaoFila": 121
   },
   {
    "area": "pe-tornozelo",
@@ -3731,7 +3752,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 125
+   "posicaoFila": 122
   },
   {
    "area": "pediatria",
@@ -3753,7 +3774,7 @@
     "basico": 9,
     "incerto": 1
    },
-   "posicaoFila": 126
+   "posicaoFila": 123
   },
   {
    "area": "pediatria",
@@ -3797,7 +3818,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 127
+   "posicaoFila": 124
   },
   {
    "area": "quadril",
@@ -3819,7 +3840,7 @@
     "basico": 8,
     "preservar": 2
    },
-   "posicaoFila": 128
+   "posicaoFila": 125
   },
   {
    "area": "tumores",
@@ -3840,7 +3861,7 @@
     "basico": 9,
     "preservar": 1
    },
-   "posicaoFila": 129
+   "posicaoFila": 126
   },
   {
    "area": "tumores",
@@ -3858,7 +3879,7 @@
    "comentarios": {
     "basico": 10
    },
-   "posicaoFila": 130
+   "posicaoFila": 127
   },
   {
    "area": "coluna",
@@ -3877,7 +3898,7 @@
     "basico": 8,
     "incerto": 1
    },
-   "posicaoFila": 131
+   "posicaoFila": 128
   },
   {
    "area": "conceitos-basicos",
@@ -3895,7 +3916,7 @@
    "comentarios": {
     "basico": 9
    },
-   "posicaoFila": 132
+   "posicaoFila": 129
   },
   {
    "area": "mao",
@@ -3906,17 +3927,18 @@
    "oficiais": 9,
    "teot": 0,
    "taro": 7,
-   "citadas": 2,
-   "cobertura": 0.22,
-   "situacao": "sem resumo",
+   "citadas": 3,
+   "cobertura": 0.33,
+   "situacao": "parcial",
    "resumos": [
+    "netter-anatomia-mao-punho-antebraco",
     "rockwood10-45-fraturas-mao"
    ],
    "comentarios": {
-    "basico": 7,
-    "preservar": 2
+    "basico": 6,
+    "preservar": 3
    },
-   "posicaoFila": 133
+   "posicaoFila": 130
   },
   {
    "area": "osteometabolicas",
@@ -3934,7 +3956,7 @@
    "comentarios": {
     "basico": 9
    },
-   "posicaoFila": 134
+   "posicaoFila": 131
   },
   {
    "area": "pe-tornozelo",
@@ -3956,7 +3978,7 @@
     "basico": 8,
     "preservar": 1
    },
-   "posicaoFila": 135
+   "posicaoFila": 132
   },
   {
    "area": "pe-tornozelo",
@@ -3974,7 +3996,7 @@
    "comentarios": {
     "basico": 9
    },
-   "posicaoFila": 136
+   "posicaoFila": 133
   },
   {
    "area": "pe-tornozelo",
@@ -3997,7 +4019,7 @@
     "basico": 8,
     "preservar": 1
    },
-   "posicaoFila": 137
+   "posicaoFila": 134
   },
   {
    "area": "quadril",
@@ -4015,7 +4037,7 @@
    "comentarios": {
     "basico": 9
    },
-   "posicaoFila": 138
+   "posicaoFila": 135
   },
   {
    "area": "coluna",
@@ -4056,7 +4078,7 @@
     "basico": 7,
     "preservar": 1
    },
-   "posicaoFila": 139
+   "posicaoFila": 136
   },
   {
    "area": "mao",
@@ -4077,7 +4099,7 @@
     "basico": 7,
     "preservar": 1
    },
-   "posicaoFila": 140
+   "posicaoFila": 137
   },
   {
    "area": "ombro-cotovelo",
@@ -4098,7 +4120,7 @@
     "basico": 5,
     "preservar": 3
    },
-   "posicaoFila": 141
+   "posicaoFila": 138
   },
   {
    "area": "ombro-cotovelo",
@@ -4117,7 +4139,7 @@
     "basico": 7,
     "incerto": 1
    },
-   "posicaoFila": 142
+   "posicaoFila": 139
   },
   {
    "area": "pe-tornozelo",
@@ -4135,7 +4157,7 @@
    "comentarios": {
     "basico": 8
    },
-   "posicaoFila": 143
+   "posicaoFila": 140
   },
   {
    "area": "pediatria",
@@ -4159,7 +4181,7 @@
     "basico": 7,
     "preservar": 1
    },
-   "posicaoFila": 144
+   "posicaoFila": 141
   },
   {
    "area": "quadril",
@@ -4177,7 +4199,7 @@
    "comentarios": {
     "basico": 8
    },
-   "posicaoFila": 145
+   "posicaoFila": 142
   },
   {
    "area": "quadril",
@@ -4217,7 +4239,7 @@
    "comentarios": {
     "basico": 8
    },
-   "posicaoFila": 146
+   "posicaoFila": 143
   },
   {
    "area": "trauma",
@@ -4255,7 +4277,7 @@
    "comentarios": {
     "basico": 8
    },
-   "posicaoFila": 147
+   "posicaoFila": 144
   },
   {
    "area": "joelho",
@@ -4273,7 +4295,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 148
+   "posicaoFila": 145
   },
   {
    "area": "mao",
@@ -4294,7 +4316,7 @@
     "basico": 6,
     "preservar": 1
    },
-   "posicaoFila": 149
+   "posicaoFila": 146
   },
   {
    "area": "mao",
@@ -4330,6 +4352,7 @@
    "cobertura": 0.71,
    "situacao": "coberto",
    "resumos": [
+    "netter-anatomia-mao-punho-antebraco",
     "rockwood10-45-fraturas-mao"
    ],
    "comentarios": {
@@ -4358,7 +4381,7 @@
     "incerto": 1,
     "preservar": 1
    },
-   "posicaoFila": 150
+   "posicaoFila": 147
   },
   {
    "area": "osteometabolicas",
@@ -4376,7 +4399,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 151
+   "posicaoFila": 148
   },
   {
    "area": "pe-tornozelo",
@@ -4394,7 +4417,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 152
+   "posicaoFila": 149
   },
   {
    "area": "quadril",
@@ -4412,7 +4435,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 153
+   "posicaoFila": 150
   },
   {
    "area": "quadril",
@@ -4430,7 +4453,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 154
+   "posicaoFila": 151
   },
   {
    "area": "trauma",
@@ -4468,7 +4491,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 155
+   "posicaoFila": 152
   },
   {
    "area": "tumores",
@@ -4486,7 +4509,7 @@
    "comentarios": {
     "basico": 7
    },
-   "posicaoFila": 156
+   "posicaoFila": 153
   },
   {
    "area": "coluna",
@@ -4504,7 +4527,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 157
+   "posicaoFila": 154
   },
   {
    "area": "conceitos-basicos",
@@ -4522,7 +4545,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 158
+   "posicaoFila": 155
   },
   {
    "area": "joelho",
@@ -4544,7 +4567,7 @@
     "basico": 5,
     "preservar": 1
    },
-   "posicaoFila": 159
+   "posicaoFila": 156
   },
   {
    "area": "joelho",
@@ -4566,7 +4589,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 160
+   "posicaoFila": 157
   },
   {
    "area": "joelho",
@@ -4588,7 +4611,7 @@
     "incerto": 2,
     "preservar": 1
    },
-   "posicaoFila": 161
+   "posicaoFila": 158
   },
   {
    "area": "ombro-cotovelo",
@@ -4606,7 +4629,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 162
+   "posicaoFila": 159
   },
   {
    "area": "pe-tornozelo",
@@ -4624,7 +4647,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 163
+   "posicaoFila": 160
   },
   {
    "area": "quadril",
@@ -4642,7 +4665,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 164
+   "posicaoFila": 161
   },
   {
    "area": "quadril",
@@ -4660,7 +4683,7 @@
    "comentarios": {
     "basico": 6
    },
-   "posicaoFila": 165
+   "posicaoFila": 162
   },
   {
    "area": "conceitos-basicos",
@@ -4680,7 +4703,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 166
+   "posicaoFila": 163
   },
   {
    "area": "joelho",
@@ -4702,7 +4725,7 @@
     "incerto": 1,
     "preservar": 2
    },
-   "posicaoFila": 167
+   "posicaoFila": 164
   },
   {
    "area": "joelho",
@@ -4721,7 +4744,7 @@
     "basico": 4,
     "incerto": 1
    },
-   "posicaoFila": 168
+   "posicaoFila": 165
   },
   {
    "area": "mao",
@@ -4739,7 +4762,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 169
+   "posicaoFila": 166
   },
   {
    "area": "ombro-cotovelo",
@@ -4757,7 +4780,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 170
+   "posicaoFila": 167
   },
   {
    "area": "ombro-cotovelo",
@@ -4775,7 +4798,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 171
+   "posicaoFila": 168
   },
   {
    "area": "pediatria",
@@ -4793,7 +4816,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 172
+   "posicaoFila": 169
   },
   {
    "area": "pediatria",
@@ -4852,7 +4875,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 173
+   "posicaoFila": 170
   },
   {
    "area": "tumores",
@@ -4870,7 +4893,7 @@
    "comentarios": {
     "basico": 5
    },
-   "posicaoFila": 174
+   "posicaoFila": 171
   },
   {
    "area": "coluna",
@@ -4888,7 +4911,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 175
+   "posicaoFila": 172
   },
   {
    "area": "conceitos-basicos",
@@ -4906,7 +4929,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 176
+   "posicaoFila": 173
   },
   {
    "area": "joelho",
@@ -4924,7 +4947,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 177
+   "posicaoFila": 174
   },
   {
    "area": "joelho",
@@ -4942,7 +4965,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 178
+   "posicaoFila": 175
   },
   {
    "area": "mao",
@@ -4953,14 +4976,16 @@
    "oficiais": 4,
    "teot": 0,
    "taro": 2,
-   "citadas": 0,
-   "cobertura": 0.0,
+   "citadas": 1,
+   "cobertura": 0.25,
    "situacao": "sem resumo",
-   "resumos": [],
+   "resumos": [
+    "netter-anatomia-mao-punho-antebraco"
+   ],
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 179
+   "posicaoFila": 176
   },
   {
    "area": "mao",
@@ -4998,7 +5023,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 180
+   "posicaoFila": 177
   },
   {
    "area": "ombro-cotovelo",
@@ -5017,7 +5042,7 @@
     "basico": 3,
     "incerto": 1
    },
-   "posicaoFila": 181
+   "posicaoFila": 178
   },
   {
    "area": "pediatria",
@@ -5035,7 +5060,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 182
+   "posicaoFila": 179
   },
   {
    "area": "trauma",
@@ -5055,7 +5080,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 183
+   "posicaoFila": 180
   },
   {
    "area": "tumores",
@@ -5073,7 +5098,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 184
+   "posicaoFila": 181
   },
   {
    "area": "tumores",
@@ -5091,7 +5116,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 185
+   "posicaoFila": 182
   },
   {
    "area": "tumores",
@@ -5109,7 +5134,7 @@
    "comentarios": {
     "basico": 4
    },
-   "posicaoFila": 186
+   "posicaoFila": 183
   },
   {
    "area": "coluna",
@@ -5128,7 +5153,7 @@
     "basico": 2,
     "incerto": 1
    },
-   "posicaoFila": 187
+   "posicaoFila": 184
   },
   {
    "area": "conceitos-basicos",
@@ -5146,7 +5171,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 188
+   "posicaoFila": 185
   },
   {
    "area": "conceitos-basicos",
@@ -5185,7 +5210,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 189
+   "posicaoFila": 186
   },
   {
    "area": "joelho",
@@ -5203,7 +5228,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 190
+   "posicaoFila": 187
   },
   {
    "area": "mao",
@@ -5221,7 +5246,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 191
+   "posicaoFila": 188
   },
   {
    "area": "mao",
@@ -5232,14 +5257,16 @@
    "oficiais": 3,
    "teot": 1,
    "taro": 0,
-   "citadas": 0,
-   "cobertura": 0.0,
-   "situacao": "sem resumo",
-   "resumos": [],
+   "citadas": 1,
+   "cobertura": 0.33,
+   "situacao": "parcial",
+   "resumos": [
+    "netter-anatomia-mao-punho-antebraco"
+   ],
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 192
+   "posicaoFila": 189
   },
   {
    "area": "ombro-cotovelo",
@@ -5257,7 +5284,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 193
+   "posicaoFila": 190
   },
   {
    "area": "pe-tornozelo",
@@ -5275,7 +5302,7 @@
    "comentarios": {
     "basico": 3
    },
-   "posicaoFila": 194
+   "posicaoFila": 191
   },
   {
    "area": "pediatria",
@@ -5288,13 +5315,12 @@
    "taro": 0,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "sem resumo",
+   "situacao": "coberto",
    "resumos": [],
    "comentarios": {
     "basico": 2,
     "incerto": 1
-   },
-   "posicaoFila": 195
+   }
   },
   {
    "area": "pediatria",
@@ -5307,12 +5333,11 @@
    "taro": 0,
    "citadas": 0,
    "cobertura": 0.0,
-   "situacao": "sem resumo",
+   "situacao": "coberto",
    "resumos": [],
    "comentarios": {
     "basico": 3
-   },
-   "posicaoFila": 196
+   }
   },
   {
    "area": "coluna",
@@ -5350,7 +5375,7 @@
    "comentarios": {
     "basico": 2
    },
-   "posicaoFila": 197
+   "posicaoFila": 192
   },
   {
    "area": "joelho",
@@ -5368,7 +5393,7 @@
    "comentarios": {
     "basico": 2
    },
-   "posicaoFila": 198
+   "posicaoFila": 193
   },
   {
    "area": "joelho",
@@ -5446,7 +5471,7 @@
    "comentarios": {
     "basico": 2
    },
-   "posicaoFila": 199
+   "posicaoFila": 194
   },
   {
    "area": "osteometabolicas",
@@ -5465,7 +5490,7 @@
     "basico": 1,
     "incerto": 1
    },
-   "posicaoFila": 200
+   "posicaoFila": 195
   },
   {
    "area": "tumores",
@@ -5483,7 +5508,7 @@
    "comentarios": {
     "basico": 2
    },
-   "posicaoFila": 201
+   "posicaoFila": 196
   },
   {
    "area": "coluna",
@@ -5501,7 +5526,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 202
+   "posicaoFila": 197
   },
   {
    "area": "conceitos-basicos",
@@ -5519,7 +5544,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 203
+   "posicaoFila": 198
   },
   {
    "area": "mao",
@@ -5537,7 +5562,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 204
+   "posicaoFila": 199
   },
   {
    "area": "ombro-cotovelo",
@@ -5555,7 +5580,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 205
+   "posicaoFila": 200
   },
   {
    "area": "osteometabolicas",
@@ -5573,7 +5598,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 206
+   "posicaoFila": 201
   },
   {
    "area": "pe-tornozelo",
@@ -5591,7 +5616,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 207
+   "posicaoFila": 202
   },
   {
    "area": "pe-tornozelo",
@@ -5609,7 +5634,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 208
+   "posicaoFila": 203
   },
   {
    "area": "pediatria",
@@ -5627,7 +5652,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 209
+   "posicaoFila": 204
   },
   {
    "area": "pediatria",
@@ -5645,7 +5670,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 210
+   "posicaoFila": 205
   },
   {
    "area": "quadril",
@@ -5663,7 +5688,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 211
+   "posicaoFila": 206
   },
   {
    "area": "quadril",
@@ -5681,7 +5706,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 212
+   "posicaoFila": 207
   },
   {
    "area": "quadril",
@@ -5699,7 +5724,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 213
+   "posicaoFila": 208
   },
   {
    "area": "trauma",
@@ -5717,7 +5742,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 214
+   "posicaoFila": 209
   },
   {
    "area": "tumores",
@@ -5735,7 +5760,7 @@
    "comentarios": {
     "basico": 1
    },
-   "posicaoFila": 215
+   "posicaoFila": 210
   }
  ]
 }

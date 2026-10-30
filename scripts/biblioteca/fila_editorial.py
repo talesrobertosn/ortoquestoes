@@ -59,6 +59,10 @@ def estado_comentario(tema: str, q: dict, c: dict | None, cat: dict) -> str:
         return "sem-comentario"
     if c.get("conferido") or cat.get("estado") in ("revisada", "preservar-revisao-medica"):
         return "preservar"
+    # Já reescrito a partir de um resumo da Biblioteca (o ciclo cita o resumo nas referências): não refazer,
+    # mesmo quando o comentário saiu mais direto de propósito (Tales, 30/10/2026: "às vezes mais direto").
+    if any(str(r).startswith("Biblioteca OrtoQuestões, resumo") for r in c.get("referencias") or []):
+        return "preservar"
     total, menor = tamanho(c)
     if total >= 3500 and menor >= 250:
         return "preservar"
