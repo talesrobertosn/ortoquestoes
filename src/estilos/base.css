@@ -1897,3 +1897,6 @@ section[class$="-heroi"]::before, section[class$="-heroi"]::after, .heroi-escuro
 .termos-pagina h2, .rz-area { scroll-margin-top: 5rem; }
 .termos-pagina h2:focus, .rz-area:focus { outline: none; }
 .termos-pagina h2:focus-visible, .rz-area:focus-visible { outline: 2px solid var(--verdete); outline-offset: 4px; }
+
+/* Lugar reservado do topo pintado das páginas (componentes/vila), enquanto o código dele chega: nada pula. */
+.vl-espera { height: clamp(9.5rem, 19vw, 15rem); margin: 0 0 1.25rem; border-radius: 0.9rem; background: #120e0a; }

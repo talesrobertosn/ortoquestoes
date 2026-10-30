@@ -1,0 +1,139 @@
+/* A Vila do Orto (30/10/2026): o topo pintado das páginas, as portas do fim e o mapa. Moldura no estilo do resto do
+   site HD-2D (vidro escuro, filete dourado), pixel art ampliada sem suavizar; animações só de transform/opacity. */
+.vl { --vl-ouro: #f0c46a; --vl-ouro-2: #b9873a; position: relative; margin: 0 0 1.25rem; border-radius: 0.9rem; overflow: hidden; isolation: isolate;
+  background: #120e0a; box-shadow: 0 0 0 1px rgba(240, 196, 106, 0.4), inset 0 0 0 1px rgba(0, 0, 0, 0.5), 0 14px 34px -18px rgba(0, 0, 0, 0.6); }
+.vl::before, .vl::after { content: ""; position: absolute; z-index: 4; width: 9px; height: 9px; top: 6px; rotate: 45deg; background: var(--vl-ouro); box-shadow: 0 0 6px rgba(240, 196, 106, 0.6); pointer-events: none; }
+.vl::before { left: 6px; } .vl::after { right: 6px; }
+
+/* A cena tem a altura da faixa; o palco tem a proporção da arte (3:1), cobre a faixa e se ancora à direita, onde
+   ficam os focos e o mascote. */
+.vl-cena { position: relative; height: clamp(9.5rem, 19vw, 15rem); container-type: size; overflow: hidden; }
+.vl-palco { position: absolute; right: 0; top: 50%; width: max(100cqw, calc(100cqh * 3)); aspect-ratio: 3 / 1; translate: 0 -50%;
+  animation: vl-camera 0.9s cubic-bezier(.2, .7, .2, 1) both; }
+.vl-palco__fundo { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; user-select: none; }
+/* véu do lado do texto e a borda de baixo, para as placas */
+.vl-cena::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 2;
+  background: linear-gradient(90deg, rgba(12, 9, 6, 0.42), rgba(12, 9, 6, 0) 38%), linear-gradient(0deg, rgba(12, 9, 6, 0.55), rgba(12, 9, 6, 0) 34%); }
+@keyframes vl-camera { from { opacity: 0.3; transform: translateX(2.5%) scale(1.03); } }
+
+/* O mascote e o balão. */
+.vl-mascote { position: absolute; z-index: 1; }
+.vl--manha .vl-mascote .mascote__corpo { filter: brightness(1.04) sepia(0.08) drop-shadow(3px 2px 0 rgba(40, 24, 8, 0.25)); }
+.vl--tarde .vl-mascote .mascote__corpo { filter: sepia(0.28) saturate(1.15) brightness(0.98) drop-shadow(-4px 2px 0 rgba(60, 20, 0, 0.25)); }
+.vl--noite .vl-mascote .mascote__corpo { filter: brightness(0.8) sepia(0.35) saturate(1.2) hue-rotate(-6deg) drop-shadow(-3px 0 6px rgba(255, 160, 70, 0.4)); }
+.vl-balao { position: absolute; z-index: 5; width: max-content; max-width: min(17rem, 62vw); padding: 0.45rem 0.65rem; translate: -88% -100%;
+  background: #fbf3df; color: #1b1208; font-size: 0.8rem; font-weight: 650; line-height: 1.3; box-shadow: 0 0 0 2px #1b1208, 3px 4px 0 2px rgba(0, 0, 0, 0.3);
+  animation: vl-balao 0.28s steps(3); }
+.vl-balao::after { content: ""; position: absolute; right: 10%; bottom: -8px; width: 10px; height: 9px; background: #fbf3df; clip-path: polygon(0 0, 100% 0, 50% 100%); }
+@keyframes vl-balao { from { opacity: 0; transform: translateY(6px); } }
+
+/* O segredo: invisível até passar o mouse ou tocar; brilha um pouco de tempos em tempos para quem repara. */
+.vl-segredo { position: absolute; z-index: 1; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 0.4rem; }
+.vl-segredo:focus-visible { outline: 2px dashed var(--vl-ouro); outline-offset: 2px; }
+.vl-segredo__brilho { position: absolute; left: 50%; top: 40%; width: 6px; height: 6px; rotate: 45deg; background: #fff6d6; opacity: 0;
+  box-shadow: 0 0 8px 2px rgba(255, 230, 160, 0.9); animation: vl-piscar 9s ease-in-out infinite 3s; }
+.vl-segredo:hover .vl-segredo__brilho { opacity: 1; animation: none; }
+.vl-segredo--achado .vl-segredo__brilho { animation: none; }
+@keyframes vl-piscar { 0%, 90%, 100% { opacity: 0; transform: scale(0.4); } 94% { opacity: 1; transform: scale(1.2); } }
+
+/* Céu vivo. */
+.vl-ceu { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.vl-ceu i { position: absolute; display: block; }
+.vl-nuvem { top: var(--y); left: -18%; width: 16%; height: 7%; opacity: calc(0.55 * var(--e)); border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 250, 240, 0.85), rgba(255, 250, 240, 0)); filter: blur(0.5px);
+  animation: vl-nuvem var(--t) linear infinite var(--d); }
+.vl--tarde .vl-nuvem { background: radial-gradient(closest-side, rgba(255, 190, 130, 0.8), rgba(255, 170, 110, 0)); }
+@keyframes vl-nuvem { to { transform: translateX(780%); } }
+.vl-sol { right: 4%; top: -30%; width: 36%; height: 90%; border-radius: 50%; mix-blend-mode: screen;
+  background: radial-gradient(closest-side, rgba(255, 236, 180, 0.35), rgba(255, 220, 150, 0)); animation: vl-respira 7s ease-in-out infinite; }
+.vl--tarde .vl-sol { right: auto; left: 40%; top: 10%; background: radial-gradient(closest-side, rgba(255, 150, 70, 0.32), rgba(255, 120, 40, 0)); }
+@keyframes vl-respira { 50% { opacity: 0.65; transform: scale(1.06); } }
+.vl-estrela { width: 2px; height: 2px; background: #fff; box-shadow: 0 0 4px #cfe4ff; animation: vl-cintila var(--t) ease-in-out infinite var(--d); }
+@keyframes vl-cintila { 50% { opacity: 0.15; } }
+.vl-vagalume { width: 3px; height: 3px; border-radius: 50%; background: #fff3a8; box-shadow: 0 0 6px 2px rgba(255, 228, 110, 0.7);
+  animation: vl-vaga var(--t) ease-in-out infinite alternate var(--d); }
+@keyframes vl-vaga { 0% { opacity: 0; transform: translate(0, 0); } 30% { opacity: 1; } 100% { opacity: 0.2; transform: translate(14px, -18px); } }
+.vl-chuva { inset: -20% 0 0; background: repeating-linear-gradient(104deg, rgba(200, 220, 255, 0) 0 9px, rgba(200, 220, 255, 0.28) 9px 10px);
+  background-size: 46px 46px; animation: vl-chuva 0.45s linear infinite; opacity: 0.8; }
+@keyframes vl-chuva { to { background-position: -12px 46px; } }
+.vl-feixe { left: 30%; top: -20%; width: 40%; height: 150%; rotate: 18deg; mix-blend-mode: screen; opacity: 0.5;
+  background: linear-gradient(90deg, rgba(255, 236, 190, 0), rgba(255, 236, 190, 0.22) 45%, rgba(255, 236, 190, 0)); animation: vl-respira 9s ease-in-out infinite; }
+.vl--tarde .vl-feixe { background: linear-gradient(90deg, rgba(255, 170, 90, 0), rgba(255, 170, 90, 0.24) 45%, rgba(255, 170, 90, 0)); }
+.vl-poeira { width: 2px; height: 2px; background: rgba(255, 244, 214, 0.85); animation: vl-poeira var(--t) linear infinite var(--d); }
+@keyframes vl-poeira { 0% { opacity: 0; transform: translate(0, 0); } 20%, 80% { opacity: 0.9; } 100% { opacity: 0; transform: translate(10px, 24px); } }
+.vl-brasa { width: 2px; height: 2px; background: #ffb35a; box-shadow: 0 0 5px 1px rgba(255, 140, 40, 0.8); animation: vl-brasa var(--t) ease-out infinite var(--d); }
+@keyframes vl-brasa { 0% { opacity: 0; transform: translate(0, 20px); } 25% { opacity: 1; } 100% { opacity: 0; transform: translate(-8px, -30px); } }
+
+/* Fora da tela ou com "menos animação", tudo para. */
+.vl--parado :is(.vl-ceu i, .vl-segredo__brilho, .mascote__sprite) { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .vl-palco, .vl-ceu i, .vl-segredo__brilho, .vl-balao { animation: none; }
+  .vl-chuva, .vl-nuvem, .vl-vagalume, .vl-poeira, .vl-brasa { display: none; }
+}
+
+/* As placas: nomes reais das páginas, em madeira com filete dourado. */
+.vl-placas { position: absolute; z-index: 3; left: 0.75rem; bottom: 0.65rem; display: flex; flex-wrap: wrap; gap: 0.4rem; max-width: calc(100% - 1.5rem); }
+.vl-placa { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 2rem; padding: 0.25rem 0.65rem; border-radius: 0.35rem; text-decoration: none;
+  color: #fdf1d6; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.01em;
+  background: linear-gradient(180deg, rgba(92, 58, 30, 0.92), rgba(58, 34, 16, 0.94)); box-shadow: 0 0 0 1px rgba(240, 196, 106, 0.55), 0 3px 0 rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.vl-placa:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px var(--vl-ouro), 0 5px 0 rgba(0, 0, 0, 0.3), 0 0 14px rgba(240, 196, 106, 0.35); color: #fff; }
+.vl-placa:focus-visible { outline: 3px solid var(--vl-ouro); outline-offset: 2px; }
+.vl-placa--mapa { background: linear-gradient(180deg, rgba(20, 40, 44, 0.92), rgba(10, 24, 26, 0.94)); }
+@media (max-width: 40rem) {
+  .vl { border-radius: 0.7rem; }
+  .vl-placa { font-size: 0.74rem; min-height: 1.85rem; padding-inline: 0.5rem; }
+  .vl-placa:nth-child(2) { display: none; }
+  .vl-balao { max-width: 13rem; font-size: 0.74rem; }
+}
+
+/* As portas do fim da página. */
+.vl-saidas { margin: 2.5rem 0 0.5rem; padding-top: 1.25rem; border-top: 1px solid var(--traco, #d8dedc); }
+.vl-saidas__titulo { margin: 0 0 0.75rem; font-size: 1.05rem; }
+.vl-saidas ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+@media (max-width: 48rem) { .vl-saidas ul { grid-template-columns: 1fr; } }
+.vl-porta { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0.2rem 0.6rem; height: 100%; padding: 0.45rem 0.75rem 0.7rem 0.45rem;
+  border-radius: 0.8rem; border: 1px solid var(--traco, #d8dedc); background: var(--superficie, #fff); color: inherit; text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
+.vl-porta:hover { transform: translateY(-2px); border-color: var(--vl-ouro-2, #b9873a); box-shadow: 0 10px 22px -14px rgba(0, 0, 0, 0.45); }
+.vl-porta:focus-visible { outline: 3px solid var(--verdete, #1f6b5c); outline-offset: 2px; }
+.vl-porta__vista { grid-column: 1 / -1; position: relative; aspect-ratio: 3 / 1; overflow: hidden; border-radius: 0.55rem; background: #1a1410;
+  box-shadow: inset 0 0 0 1px rgba(240, 196, 106, 0.35); }
+.vl-porta__vista img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; image-rendering: pixelated; transition: transform 0.5s ease; }
+.vl-porta:hover .vl-porta__vista img { transform: scale(1.05); }
+.vl-porta__texto { display: grid; gap: 0.1rem; padding-left: 0.3rem; }
+.vl-porta__texto strong { font-size: 0.92rem; }
+.vl-porta__texto small { color: var(--texto-2, #5a6664); font-size: 0.78rem; line-height: 1.3; }
+.vl-porta > svg { color: var(--verdete, #1f6b5c); }
+.vl-saidas__mapa { display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.8rem; color: var(--verdete, #1f6b5c); font-size: 0.86rem; font-weight: 650; }
+
+/* O mapa da vila. */
+.vl-mapa__topo { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
+.vl-mapa__selo { display: inline-flex; align-items: center; gap: 0.35rem; margin: 0; color: var(--verdete, #1f6b5c); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.vl-mapa__topo h1 { margin: 0.2rem 0 0.4rem; }
+.vl-mapa__lide { margin: 0; max-width: 40rem; color: var(--texto-2, #5a6664); }
+.vl-mapa__placar { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin: 0.75rem 0 0; font-size: 0.9rem; }
+.vl-mapa__placar strong { font-size: 1.15rem; }
+.vl-mapa__mascote { width: 4.5rem; flex: none; }
+.vl-mapa__grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.9rem; margin: 0; padding: 0; list-style: none; }
+.vl-quadro { display: grid; gap: 0.45rem; padding: 0.45rem 0.45rem 0.7rem; border-radius: 0.85rem; color: inherit; text-decoration: none;
+  background: var(--superficie, #fff); border: 1px solid var(--traco, #d8dedc); transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
+.vl-quadro:hover { transform: translateY(-3px) rotate(-0.4deg); border-color: var(--vl-ouro-2, #b9873a); box-shadow: 0 14px 26px -16px rgba(0, 0, 0, 0.5); }
+.vl-quadro:focus-visible { outline: 3px solid var(--verdete, #1f6b5c); outline-offset: 2px; }
+.vl-quadro__vista { position: relative; aspect-ratio: 3 / 1.25; overflow: hidden; border-radius: 0.55rem; background: #1a1410;
+  box-shadow: inset 0 0 0 2px rgba(240, 196, 106, 0.45); }
+.vl-quadro__vista img { width: 100%; height: 100%; object-fit: cover; object-position: 66% 50%; image-rendering: pixelated; }
+.vl-quadro--nevoa .vl-quadro__vista img { filter: grayscale(0.7) brightness(0.75) blur(1.5px); }
+.vl-quadro__nevoa { position: absolute; inset: 0; display: block; background: rgba(214, 222, 228, 0.35); }
+.vl-quadro__nevoa i { position: absolute; display: block; width: 80%; height: 60%; border-radius: 50%; background: radial-gradient(closest-side, rgba(240, 244, 248, 0.75), rgba(240, 244, 248, 0));
+  animation: vl-nevoa 14s ease-in-out infinite alternate; }
+.vl-quadro__nevoa i:first-child { left: -20%; top: 10%; }
+.vl-quadro__nevoa i:last-child { right: -20%; bottom: -10%; animation-delay: -7s; }
+@keyframes vl-nevoa { to { transform: translateX(25%); } }
+.vl-quadro:hover .vl-quadro__nevoa { opacity: 0.6; transition: opacity 0.3s; }
+.vl-quadro__selo { position: absolute; right: 0.4rem; top: 0.35rem; color: #ffd76a; font-size: 1.05rem; text-shadow: 0 0 6px rgba(255, 200, 80, 0.9), 0 1px 0 #000; }
+.vl-quadro__texto { display: grid; gap: 0.1rem; padding: 0 0.3rem; }
+.vl-quadro__texto small { color: var(--texto-2, #5a6664); font-size: 0.8rem; }
+@media (prefers-reduced-motion: reduce) { .vl-quadro__nevoa i { animation: none; } .vl-quadro, .vl-porta, .vl-porta__vista img { transition: none; } }
+
+[data-tema="escuro"] .vl-porta, [data-tema="escuro"] .vl-quadro { background: var(--superficie); }

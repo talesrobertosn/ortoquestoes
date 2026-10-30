@@ -16,7 +16,7 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarLeitura, usarEtiquetas, usarRitmoRevisao } from '../estado/preferencias'
-import { usarTema } from '../estado/tema'
+import { PainelAparencia } from '../componentes/aparencia/PainelAparencia'
 import { dadosAceiteTermos, dataDaVersao, VERSAO_TERMOS } from '../conta/termos'
 import { AvisoTermos } from '../componentes/AvisoTermos'
 import { dadosOrigem } from '../conta/origem'
@@ -57,7 +57,8 @@ const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 
 const SECOES_CONTA = [
   ['perfil', 'usuario', 'Perfil', 'Nome, etapa, serviço e contato'],
   ['assinatura', 'medalha', 'Assinatura e pagamentos', 'Plano, cobranças e garantia'],
-  ['preferencias', 'filtro', 'Preferências', 'Estudo, aparência e e-mails'],
+  ['aparencia', 'sol', 'Aparência', 'Cenário do horário, claro ou escuro'],
+  ['preferencias', 'filtro', 'Preferências', 'Estudo, leitura e e-mails'],
   ['ranking', 'trofeu', 'Ranking e privacidade', 'Apelido, emblemas e o que aparece'],
   ['aparelhos', 'celular', 'Aparelhos e sincronização', 'Seu progresso em todo aparelho'],
   ['seguranca', 'cadeado', 'Login e segurança', 'Senha e e-mail de acesso'],
@@ -66,7 +67,7 @@ const SECOES_CONTA = [
 ] as const
 type SecaoConta = (typeof SECOES_CONTA)[number][0]
 /** Endereços antigos que continuam valendo (ex.: "?secao=estudo" no menu e na página de planos). */
-const SECOES_ANTIGAS: Record<string, SecaoConta> = { estudo: 'preferencias' }
+const SECOES_ANTIGAS: Record<string, SecaoConta> = { estudo: 'preferencias', tema: 'aparencia' }
 function secaoDaConsulta(consulta?: URLSearchParams): SecaoConta | null {
   const pedida = consulta?.get('secao') ?? ''
   const id = SECOES_ANTIGAS[pedida] ?? pedida
@@ -211,7 +212,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const { ritmo, definirRitmo } = usarRitmoRevisao()
   const { densidade, definirDensidade, fonte, definirFonte } = usarLeitura()
   const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()
-  const { tema, trocar: trocarTema } = usarTema()
   const perfil = sessao?.user.user_metadata ?? {}
   const [nome, definirNome] = useState(String(perfil.nome ?? ''))
   // Guarda o primeiro nome neste aparelho para a tela de entrar cumprimentar pelo nome na próxima visita.
@@ -751,6 +751,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           </section>
         </div>}
 
+        {secao === 'aparencia' && <section id="ct-aparencia" className="ct-cartao">
+          {cabecalhoSecao('sol', 'Aparência', 'O cenário pintado segue a hora do dia, e a cor da interface é uma escolha à parte. Vale na hora.', 'ct-icone--ouro')}
+          <PainelAparencia />
+        </section>}
+
         {secao === 'preferencias' && <div className="ct-pilha">
           <section id="ct-estudo" className="ct-cartao">
             {cabecalhoSecao('livro', 'Estudo', 'Meta de revisão e como as questões aparecem. Vale na hora.')}
@@ -758,8 +763,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             <InterruptorLocal ligado={mostrarEtiquetas} aoMudar={definirEtiquetas}>Mostrar a etiqueta do assunto antes de responder</InterruptorLocal>
           </section>
           <section className="ct-cartao">
-            {cabecalhoSecao('sol', 'Leitura e aparência', 'Tema, densidade e tamanho da fonte neste aparelho.')}
-            <div className="ct-opcao"><span className="ct-opcao__rotulo">Tema</span><div className="ct-seg ct-seg--tema">{([['claro', 'Claro', 'sol'], ['escuro', 'Escuro', 'lua']] as const).map(([valor, rotulo, icone]) => <button key={valor} type="button" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}><Icone nome={icone} tamanho={15} /> {rotulo}</button>)}</div></div>
+            {cabecalhoSecao('livro', 'Leitura', 'Densidade e tamanho da fonte neste aparelho.')}
+            <ul className="ct-links"><li><a href={linkSecao('aparencia')}><Icone nome="sol" tamanho={17} /><span><strong>Claro, escuro e cenário do horário</strong><small>Agora ficam em Aparência.</small></span><Icone nome="direita" tamanho={16} /></a></li></ul>
             <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
             <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
             <PreferenciaEncontros />

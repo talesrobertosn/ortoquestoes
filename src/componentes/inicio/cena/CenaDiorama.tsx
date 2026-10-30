@@ -3,6 +3,7 @@ import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
 import { SPRITE_GATO, LINHAS_GATO, linhaGato } from '../../mascote/sprites'
 import { urlCss } from '../../../config'
+import type { Periodo } from '../../../estado/aparencia'
 
 /**
  * O cenário "HD-2D" do topo da página inicial (30/10/2026, pedido do Tales com o Octopath Traveler II de referência).
@@ -14,12 +15,7 @@ import { urlCss } from '../../../config'
  * O esqueleto é o mascote (componentes/mascote): faz uma coisa diferente a cada visita e fala; dois cliques no gato
  * e ele aparece com uma tala.
  */
-export type Periodo = 'manha' | 'tarde' | 'noite'
-
-export function periodoAgora(d = new Date()): Periodo {
-  const h = Number(new Intl.DateTimeFormat('en-US', { hour: 'numeric', hourCycle: 'h23', timeZone: 'America/Sao_Paulo' }).format(d))
-  return h >= 5 && h < 12 ? 'manha' : h >= 12 && h < 18 ? 'tarde' : 'noite'
-}
+export { periodoAgora, type Periodo } from '../../../estado/aparencia'
 
 /** Posição e tamanho em porcentagem do palco, a partir de pixels da arte (480 x 200). */
 const lugar = (x: number, y: number, w: number, h: number): CSSProperties => ({ left: `${(x / 480) * 100}%`, top: `${(y / 200) * 100}%`, width: `${(w / 480) * 100}%`, height: `${(h / 200) * 100}%` })

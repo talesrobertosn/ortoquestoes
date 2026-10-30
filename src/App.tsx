@@ -20,6 +20,7 @@ import { ErroDePagina } from './componentes/ErroDePagina'
 import { ExigeConta } from './componentes/ExigeConta'
 import { ConviteDiario } from './componentes/ConviteDiario'
 import { AvisoCookies } from './componentes/AvisoCookies'
+import { lugarDaRota } from './componentes/vila/lugares'
 
 // Cada página é carregada apenas ao ser visitada. Além de reduzir o JavaScript
 // inicial, isso evita baixar o acervo completo para rotas administrativas,
@@ -29,6 +30,10 @@ const Encontros = lazy(() => import('./eventos/Encontros'))
 const ConquistasDoDia = lazy(() => import('./eventos/ConquistasDoDia'))
 const ConviteAssinar = lazy(() => import('./convite/ConviteAssinar'))
 const CompletarPerfil = lazy(() => import('./componentes/CompletarPerfil'))
+// A Vila do Orto (30/10/2026): o topo pintado e as portas do fim das páginas de uso frequente, e o mapa do site.
+const CenaPagina = lazy(() => import('./componentes/vila/CenaPagina').then(({ CenaPagina }) => ({ default: CenaPagina })))
+const Saidas = lazy(() => import('./componentes/vila/Saidas').then(({ Saidas }) => ({ default: Saidas })))
+const MapaVila = lazy(() => import('./paginas/MapaVila').then(({ MapaVila }) => ({ default: MapaVila })))
 
 const Inicio = lazy(() => carregadores.Inicio().then(({ Inicio }) => ({ default: Inicio })))
 const Treinar = lazy(() => carregadores.Treinar().then(({ Treinar }) => ({ default: Treinar })))
@@ -74,6 +79,7 @@ const TITULOS: Record<string, string> = {
   '/projeto': 'O projeto | Orto Questões (OrtoQuestões): questões de ortopedia comentadas',
   '/contato': 'Suporte e contato | Orto Questões',
   '/conta': 'Minha conta | Orto Questões',
+  '/mapa': 'Mapa do site | Orto Questões',
   '/conta/assinatura': 'Dados da assinatura | Orto Questões',
   '/dados': 'Seu desempenho | Orto Questões',
   '/favoritas': 'Suas favoritas | Orto Questões',
@@ -217,6 +223,9 @@ function paginaDaRota(rota: Rota): ReactNode {
       pagina = FLASHCARDS_LIBERADO ? <Flashcards secao={segundo} /> : <NaoEncontrada />
       break
     // Atlas Ortopédico 3D (25/10/2026): pop-up por cima do site, como os flashcards; fechar volta à página de origem.
+    case 'mapa':
+      pagina = <MapaVila />
+      break
     case 'atlas':
       pagina = <Atlas3D segmentos={rota.segmentos} consulta={rota.consulta} aoFechar={() => navegar(rotaDoFundo('/'), true)} />
       break
@@ -286,6 +295,7 @@ export function App() {
   const [primeiroFundo] = fundo.segmentos
 
   const estreita = ['sessao', 'questao'].includes(primeiroFundo ?? '')
+  const lugar = lugarDaRota(fundo)
   // Crachá do perfil no topo, para quem tem conta e ainda tem algo a responder; fora de
   // onde a pessoa está respondendo, pagando ou já editando a conta.
   // Depois de montado, fica até o fim da visita: a última resposta completa o perfil e ele ainda agradece.
@@ -307,11 +317,13 @@ export function App() {
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           {comCracha && <Suspense fallback={null}><CompletarPerfil /></Suspense>}
+          {lugar && <Suspense fallback={<div className="vl-espera" aria-hidden="true" />}><CenaPagina id={lugar} /></Suspense>}
           <ErroDePagina caminho={rota.caminho}>
           <Suspense fallback={<EsperaPixel />}>
             {pagina}
           </Suspense>
           </ErroDePagina>
+          {lugar && <Suspense fallback={null}><Saidas id={lugar} /></Suspense>}
         </div>
       </main>
       {sobreposto && <ErroDePagina caminho={rota.caminho}><Suspense fallback={<div className="espera-jogo"><EsperaPixel rotulo="Abrindo o jogo" /></div>}>{sobreposto}</Suspense></ErroDePagina>}

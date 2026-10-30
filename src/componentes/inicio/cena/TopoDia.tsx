@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties, type ReactNode } from 'react'
+import { type CSSProperties, type ReactNode } from 'react'
 import { META_STREAK_DIARIA, type Streak } from '../../../estado/streak'
 import type { QuaseLa } from '../../../estado/conquistas'
 import { href } from '../../../util/rotas'
@@ -7,7 +7,8 @@ import { Icone } from '../../Icone'
 import { Medalha } from '../../Medalha'
 import { estagioDaSequencia, textoProximoEstagio } from '../estagiosFogueira'
 import type { DiaSequencia } from '../PainelSequencia'
-import { CenaDiorama, periodoAgora, type Periodo } from './CenaDiorama'
+import { CenaDiorama } from './CenaDiorama'
+import { usarPeriodo } from '../../../estado/aparencia'
 
 /**
  * Topo do painel do dia (30/10/2026, refeito do zero a pedido do Tales, com o Octopath Traveler II de referência).
@@ -28,19 +29,6 @@ const TOCHA: Record<DiaSequencia['estado'], number> = { feito: 0, 'hoje-feito': 
 const SPRITES = {
   '--sprite-fogo': urlCss('pixel/inicio/fogo.png'), '--sprite-tocha': urlCss('pixel/inicio/tocha.png'),
 } as CSSProperties
-
-/** Período do dia, refeito a cada 5 minutos; o tema escuro força a noite. */
-function usarPeriodo(): Periodo {
-  const calcular = (): Periodo => (document.documentElement.dataset.tema === 'escuro' ? 'noite' : periodoAgora())
-  const [p, definir] = useState<Periodo>(calcular)
-  useEffect(() => {
-    const id = window.setInterval(() => definir(calcular()), 300_000)
-    const obs = new MutationObserver(() => definir(calcular()))
-    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['data-tema'] })
-    return () => { window.clearInterval(id); obs.disconnect() }
-  }, [])
-  return p
-}
 
 export function TopoDia({ selo, titulo, lide, acao, botao, depois, atalhos, streak, dias, quaseLa, conquistadas, totalConquistas }: {
   selo: string; titulo: string; lide: ReactNode; acao: ReactNode; botao: ReactNode; depois?: ReactNode; atalhos: Atalho[]

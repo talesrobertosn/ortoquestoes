@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useState } from 'react'
-import { gravar, ler, remover } from './armazenamento'
+import { gravar, ler } from './armazenamento'
+import { periodoAgora } from './aparencia'
 
-export type Tema = 'claro' | 'escuro' | 'sistema'
+/** 'horario': clara de dia e escura à noite (das 18h às 5h, hora de Brasília), com o cenário. */
+export type Tema = 'claro' | 'escuro' | 'sistema' | 'horario'
 
 const COR_BARRA: Record<'claro' | 'escuro', string> = { claro: '#F1F3F2', escuro: '#101615' }
 
@@ -13,7 +15,8 @@ const ESCURO_NO_APARELHO = '(prefers-color-scheme: dark)'
  */
 function aplicar(tema: Tema) {
   const raiz = document.documentElement
-  const efetivo = tema === 'sistema' ? (window.matchMedia(ESCURO_NO_APARELHO).matches ? 'escuro' : 'claro') : tema
+  const efetivo = tema === 'sistema' ? (window.matchMedia(ESCURO_NO_APARELHO).matches ? 'escuro' : 'claro')
+    : tema === 'horario' ? (periodoAgora() === 'noite' ? 'escuro' : 'claro') : tema
   raiz.dataset.tema = efetivo
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', COR_BARRA[efetivo])
 }
@@ -24,12 +27,16 @@ export function usarTema() {
   // primeira pintura.
   const [tema, definir] = useState<Tema>(() => {
     const salvo = ler<Tema | null>('tema', null)
-    if (salvo === 'claro' || salvo === 'escuro') return salvo
+    if (salvo === 'claro' || salvo === 'escuro' || salvo === 'horario' || salvo === 'sistema') return salvo
     return document.documentElement.dataset.tema === 'escuro' ? 'escuro' : 'claro'
   })
 
   useEffect(() => {
     aplicar(tema)
+    if (tema === 'horario') {
+      const id = window.setInterval(() => aplicar('horario'), 300_000)
+      return () => window.clearInterval(id)
+    }
     if (tema !== 'sistema') return
     const aparelho = window.matchMedia(ESCURO_NO_APARELHO)
     const mudou = () => aplicar('sistema')
@@ -38,8 +45,7 @@ export function usarTema() {
   }, [tema])
 
   const trocar = useCallback((proximo: Tema) => {
-    if (proximo === 'sistema') remover('tema')
-    else gravar('tema', proximo)
+    gravar('tema', proximo)
     definir(proximo)
   }, [])
 
