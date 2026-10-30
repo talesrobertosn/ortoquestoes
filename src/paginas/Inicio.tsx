@@ -445,10 +445,11 @@ export function Inicio() {
             Os marcadores na borda levam às outras partes da página. */}
         <section className="hd-diario" aria-label="Seu estudo, onde render mais e a sua semana">
           <nav className="hd-diario__marcadores" aria-label="Ir para">
-            <a href="#hd-temas" style={{ '--cor': '#2f8a7e' } as CSSProperties}>Temas</a>
-            <a href="#hd-galeria" style={{ '--cor': '#2f6aa8' } as CSSProperties}>Atlas e Resumos</a>
-            <a href="#hd-assinante" style={{ '--cor': '#7a4a8c' } as CSSProperties}>O que mais cai</a>
-            <a href="#hd-trofeus" style={{ '--cor': '#b8452f' } as CSSProperties}>Ranking</a>
+            {/* Botões, não links com #: o # do endereço é a rota do site (util/rotas.ts). */}
+            {([['hd-temas', '#2f8a7e', 'Temas'], ['hd-galeria', '#2f6aa8', 'Atlas e Resumos'], ['hd-assinante', '#7a4a8c', 'O que mais cai'], ['hd-trofeus', '#b8452f', 'Ranking']] as const).map(([id, cor, nomeSecao]) => (
+              <button key={id} type="button" style={{ '--cor': cor } as CSSProperties}
+                onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })}>{nomeSecao}</button>
+            ))}
           </nav>
           <div className="hd-diario__folhas">
           <div className="hd-diario__pagina">

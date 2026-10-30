@@ -389,9 +389,9 @@
 .hd-diario__lombada { display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; background: linear-gradient(90deg, #b89a6a, #7d6140 50%, #b89a6a); }
 .hd-diario__lombada i { display: block; width: 32px; height: 11px; border: 3px solid #1b0f06; background: #c9b593; box-shadow: inset 0 3px 0 #efe3c8; }
 .hd-diario__marcadores { position: absolute; top: 2.2rem; right: 0; display: grid; gap: 0.5rem; }
-.hd-diario__marcadores a { display: block; width: 2.9rem; padding: 0.45rem 0.4rem 0.45rem 0.9rem; background: var(--cor); color: #fff4dc; font-size: 0.66rem; font-weight: 800; line-height: 1.1; text-decoration: none;
+.hd-diario__marcadores button { display: block; width: 2.9rem; padding: 0.45rem 0.4rem 0.45rem 0.9rem; background: var(--cor); color: #fff4dc; font: inherit; font-size: 0.66rem; font-weight: 800; line-height: 1.1; text-decoration: none; border: 0; cursor: pointer;
   writing-mode: vertical-rl; transform: rotate(180deg); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0); box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.35); transition: transform 0.15s; }
-.hd-diario__marcadores a:hover, .hd-diario__marcadores a:focus-visible { transform: rotate(180deg) translateX(-5px); outline: 0; }
+.hd-diario__marcadores button:hover, .hd-diario__marcadores button:focus-visible { transform: rotate(180deg) translateX(-5px); outline: 0; }
 /* Dentro do diário, as janelas viram páginas de papel: tinta escura e destaques em vermelho e verde. */
 .hd-diario .hd-janela { gap: 0.65rem; padding: 0.7rem 1.1rem; background: none; box-shadow: none; }
 .hd-diario .hd-janela + .hd-janela { border-top: 2px dashed rgba(122, 86, 52, 0.35); box-shadow: none; padding-top: 1rem; }
@@ -429,8 +429,8 @@
 @media (max-width: 60rem) {
   .hd-diario { padding: 0; }
   .hd-diario__marcadores { position: static; display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.4rem; }
-  .hd-diario__marcadores a { width: auto; writing-mode: horizontal-tb; transform: none; padding: 0.35rem 0.7rem; }
-  .hd-diario__marcadores a:hover { transform: translateY(-2px); }
+  .hd-diario__marcadores button { width: auto; writing-mode: horizontal-tb; transform: none; padding: 0.35rem 0.7rem; }
+  .hd-diario__marcadores button:hover { transform: translateY(-2px); }
   .hd-diario__folhas { grid-template-columns: minmax(0, 1fr); padding: 8px 8px 14px; }
   .hd-diario__lombada { display: none; }
   .hd-diario__pagina + .hd-diario__lombada + .hd-diario__pagina { border-top: 0; }
