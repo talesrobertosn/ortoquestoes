@@ -31,7 +31,19 @@ import numpy as np
 from PIL import Image
 
 PASTA = Path(__file__).resolve().parents[1] / "public" / "pixel" / "inicio"
+PASTA_PAGINAS = Path(__file__).resolve().parents[1] / "public" / "pixel" / "paginas"
 W, H, ESC = 480, 160, 3
+PERIODOS = ("manha", "tarde", "noite")
+# Hora do dia da versão das páginas internas. None = a versão da página inicial (secao-*), que fica exatamente como era.
+PERIODO: str | None = None
+
+
+def hora(orig, manha=None, tarde=None, noite=None):
+    """Valor de um parâmetro da luz conforme a hora do dia; na versão da página inicial devolve sempre `orig`."""
+    if PERIODO is None:
+        return orig
+    v = {"manha": manha, "tarde": tarde, "noite": noite}[PERIODO]
+    return orig if v is None else v
 
 
 # ─────────────────────────────── Pincéis básicos ───────────────────────────────
@@ -769,7 +781,11 @@ def parede_arena() -> tuple[Camada, list[tuple[int, int]], np.ndarray]:
         c.ret(x - 1, y, 3, 1, "#3a2a1a")
         c.ret(x, y - 2, 1, 4, "#5a3a22")
         c.ret(x - 1, y - 3, 3, 1, "#2a1a10")
-        chama(c, x, y - 4, 1)
+        if PERIODO == "manha":  # de manhã as tochas estão apagadas: só o pavio preto
+            c.ret(x - 1, y - 5, 3, 2, "#1e1612")
+            c.p(x, y - 6, "#2a2018")
+        else:
+            chama(c, x, y - 4, 2 if PERIODO == "noite" else 1)
         tochas.append((x, y - 5))
     return c, tochas, abertos
 
@@ -864,7 +880,7 @@ def chao_arena() -> Camada:
 def objetos_arena(c: Camada) -> None:
     """O que ficou na areia: escudo redondo caído, lança, armário de armas e barris junto ao muro, pétalas de rosa."""
     # escudo redondo caído (vermelho com borda de bronze e umbo dourado)
-    for (ex, ey, rx, pano) in ((150, 141, 10, "vermelho"), (448, 150, 8, "azul")):
+    for (ex, ey, rx, pano) in ((150, 141, 10, "vermelho") if PERIODO is None else (104, 143, 10, "vermelho"), (448, 150, 8, "azul")):
         tons = PANOS[pano]
         for y in range(ey - 5, ey + 5):
             for x in range(ex - rx - 1, ex + rx + 2):
@@ -876,10 +892,11 @@ def objetos_arena(c: Camada) -> None:
                     c.p(x, y, cor)
         c.ret(ex - rx, ey + 4, rx * 2, 1, "#7e5e40", 0.6)
     # lança caída
-    c.linha(170, 152, 222, 140, MADEIRA[3])
-    c.linha(170, 153, 222, 141, MADEIRA[1])
-    c.linha(222, 140, 228, 138, METAIS["prata"][4])
-    c.linha(222, 141, 228, 139, METAIS["prata"][2])
+    lx = 0 if PERIODO is None else -60  # nas páginas o pódio veio para x 262: a lança vai junto para a esquerda
+    c.linha(170 + lx, 152, 222 + lx, 140, MADEIRA[3])
+    c.linha(170 + lx, 153, 222 + lx, 141, MADEIRA[1])
+    c.linha(222 + lx, 140, 228 + lx, 138, METAIS["prata"][4])
+    c.linha(222 + lx, 141, 228 + lx, 139, METAIS["prata"][2])
     # armário de armas junto ao muro, à direita: lanças em pé e escudos pendurados
     x0, yb = 404, 114
     c.ret(x0, yb - 20, 44, 2, MADEIRA[3])

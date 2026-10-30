@@ -318,19 +318,14 @@ def exterior(periodo: str) -> np.ndarray:
                 out[75 - alt - j, x] = teto
         if periodo != "manha":
             out[73 - alt + 3, cx] = hexa("#ffd070") if periodo == "noite" else cast * 0.7
-    if periodo == "tarde":                                               # o sol se pondo atrás da colina
-        sx, sy = 241, 77
+    if periodo == "tarde":                       # o sol está fora do quadro, à esquerda: o céu brilha daquele lado
         for y in range(py, py + ph):
             for x in range(px, px + pw):
-                d = math.hypot(x - sx, y - sy)
-                topo = 80 - 6 * math.sin((x - px) / 22) - 3 * math.sin((x - px) / 7.5)
-                if d < 5.5 and y < topo:
-                    out[y, x] = hexa("#fff6d0") if d < 4 else hexa("#ffd890")
-                elif d < 26:
-                    out[y, x] += hexa("#ff9a40") * (1 - d / 26) ** 2 * (0.8 if y < topo else 0.35)
+                d = math.hypot(x - (px - 14), y - 74)
+                out[y, x] += hexa("#ffa040") * max(0.0, 1 - d / 70) ** 1.6 * 0.75
     # casa em frente (enxaimel): parede caiada, vigas, janela e telhado
     cas = {"manha": ("#e8dcc0", "#b8a888", "#6a4a30", "#9a4a34", "#5a2a20"),
-           "tarde": ("#f0b880", "#b07a58", "#5a3420", "#a0402a", "#5a2018"),
+           "tarde": ("#d8a07a", "#9a6458", "#4a2a20", "#9a3a28", "#4a1a16"),
            "noite": ("#3a4260", "#2a3048", "#161a2a", "#2a2440", "#14121e")}[periodo]
     x0, x1, base, beiral = 199, 231, 96, 56
     for y in range(beiral - 14, base):

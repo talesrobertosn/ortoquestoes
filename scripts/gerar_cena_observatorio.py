@@ -238,12 +238,12 @@ PERIODOS = {
         sol="#ffe6b0", sol_k=1.4, rumo=(-0.62, -1.0), feixe=0.20, lamp=0.0, vela=0.0,
         quente="#ffe8c4", fria="#22406a", montanha=("#7a9ccc", "#9ab6d8"), nuvem=("#ffffff", "#c6d8ee")),
     "tarde": dict(
-        ceu=("#36326e", "#c8706a", "#ffc47c"), amb="#9a7898", amb_k=0.56, ceu_luz="#ffb07a", ceu_k=0.55,
+        ceu=("#36326e", "#c8706a", "#ffc47c"), amb="#9a7898", amb_k=0.64, ceu_luz="#ffb07a", ceu_k=0.55,
         sol="#ff9a50", sol_k=1.25, rumo=(-1.18, -1.0), feixe=0.26, lamp=0.5, vela=0.45,
         quente="#ffd49a", fria="#36285a", montanha=("#5a4a7a", "#8a5e7a"), nuvem=("#ffd2a0", "#b0708a")),
     "noite": dict(
-        ceu=("#030716", "#0a1432", "#182a58"), amb="#34447e", amb_k=0.5, ceu_luz="#5a78d0", ceu_k=0.42,
-        sol="#8eaaff", sol_k=0.8, rumo=(0.42, -1.0), feixe=0.16, lamp=1.5, vela=1.05,
+        ceu=("#030716", "#0a1432", "#182a58"), amb="#34447e", amb_k=0.58, ceu_luz="#5a78d0", ceu_k=0.42,
+        sol="#8eaaff", sol_k=0.8, rumo=(-0.22, -1.0), feixe=0.2, lamp=1.5, vela=1.05,
         quente="#ffcf8a", fria="#0a1432", montanha=("#0c1430", "#141e40"), nuvem=("#28385e", "#141e3a")),
 }
 
@@ -765,13 +765,19 @@ def armilar(cx: float, cy: float, r: float, base: int) -> tuple[Camada, Camada]:
 
     lt = [LATAO[1], LATAO[2], LATAO[4], LATAO[5]]
     lt_esc = [LATAO[0], LATAO[1], LATAO[3], LATAO[4]]
-    anel((1, 0, 0.12), r + 1.5, lt_esc, larga=True)                       # meridiano fixo (de frente, inclinado)
-    anel((0, 1, 0), r + 1.5, lt, marcas=12)                                # horizonte
+    anel((0.18, 0, 1), r + 1.5, lt_esc, larga=True)                      # meridiano fixo, quase de frente
+    anel((0.18, 0, 1), r + 2.5, lt_esc)
+    anel((0, 1, 0.18), r + 1.5, lt, marcas=12, larga=True)                 # horizonte
     eixo = (math.sin(0.5), math.cos(0.5), 0.25)
-    anel(eixo, r, lt, marcas=8)                                            # equador
-    anel((math.sin(0.5 + inc), math.cos(0.5 + inc), -0.4), r, [LATAO[2], LATAO[3], LATAO[5], LATAO[6]], larga=True, marcas=12)  # eclíptica
-    anel((0.95, -0.2, 0.25), r, lt)                                        # coluro
-    anel(eixo, r * 0.42, lt)                                               # círculo polar (pequeno)
+    anel(eixo, r - 0.5, lt, marcas=8, larga=True)                          # equador
+    anel((math.sin(0.5 + inc), math.cos(0.5 + inc), -0.4), r - 0.5, [LATAO[2], LATAO[3], LATAO[5], LATAO[6]], larga=True, marcas=12)  # eclíptica
+    anel((0.95, -0.2, 0.25), r - 1, lt)                                    # coluro
+    anel(eixo, r * 0.45, lt)                                               # círculo polar
+    # Garfo que segura o meridiano no pé.
+    for k in range(-3, 4):
+        tras.p(cx + k, cy + r + 3 + abs(k) * 0, LATAO[2] if k else LATAO[4])
+    tras.linha(cx - 3, cy + r + 3, cx - r * 0.55, cy + r * 0.8, LATAO[2])
+    tras.linha(cx + 3, cy + r + 3, cx + r * 0.55, cy + r * 0.8, LATAO[1])
     # A Terra no meio e o eixo polar.
     ex, ey = math.sin(0.5), math.cos(0.5)
     frente.linha(cx - ex * (r + 4), cy + ey * (r + 4), cx + ex * (r + 4), cy - ey * (r + 4), LATAO[3])
@@ -1299,7 +1305,7 @@ def montar(nome: str) -> Image.Image:
     solido = np.zeros(img.shape[:2], dtype=np.float32)
     objeto = np.zeros(img.shape[:2], dtype=np.float32)  # o que não é parede nem cúpula (recebe o feixe inteiro)
     planos = [("cup", 0.5, False), ("par", 0.5, False), ("chao", 0.3, False), ("esq", 0.5, True), ("graf", 0.2, False), ("plan", 0.4, True),
-              ("arm_t", 0.3, True), ("arm_f", 0.3, True), ("lun_t", 0, True), ("lun_f", 0, True), ("mesa", 0.2, True),
+              ("arm_t", 0.15, True), ("arm_f", 0.1, True), ("lun_t", 0, True), ("lun_f", 0, True), ("mesa", 0.2, True),
               ("obj", 0.2, True)]
     for chave, r, obj in planos:
         a = desfocar_rgba(ampliar(L[chave].c), r)
@@ -1403,7 +1409,7 @@ def montar(nome: str) -> Image.Image:
     for _ in range(2600):
         x, y = int(g.random() * W * ESC), int(g.random() * H * ESC)
         k = calor[y, x]
-        if k > 0.1 and g.random() < k * 0.6:
+        if k > 0.08 and g.random() < k * 0.9:
             tam = 1 if g.random() < 0.7 else 2
             poeira[y:y + tam, x:x + tam] += 0.5 + g.random() * 0.5
     poeira = desfocar(np.clip(poeira, 0, 1)[:, :, None], 0.6)

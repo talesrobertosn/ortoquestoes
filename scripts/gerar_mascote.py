@@ -21,6 +21,8 @@ import sys
 from dataclasses import dataclass, field, replace
 from pathlib import Path
 
+import os
+
 import numpy as np
 from PIL import Image
 
@@ -583,7 +585,7 @@ def montar(p: Pose) -> Rig:
     pesc = tr.p(0, -28.4 - p.resp * 0.5)
     piv = (pesc[0] + p.cab_dx, pesc[1] + p.cab_dy)
     ang_c = p.inclina + p.cab
-    cab = Quadro2D(Quadro2D(piv, ang_c).p(0, -26.5), ang_c)
+    cab = Quadro2D(Quadro2D(piv, ang_c).p(0, DESCE_CRANIO), ang_c)
     r = Rig(raiz, P, tr, cab)
     for lado, s, (a1, a2, a3, _) in (("e", -1, p.be), ("d", 1, p.bd)):
         om = tr.p(s * 10.2, -22.8 - p.resp * 0.7)
@@ -677,49 +679,88 @@ def perna(t: Tela, r: Rig, p: Pose, lado: str):
         t.pinta(capsula((x, c[1] + 0.2), (x + s * 0.25, c[1] + 1.9), 0.55), "osso", 2.7, R=0.7, pid=f"dedo_pe_{lado}", semente=26 + k)
 
 
+# Modelo do rosto (30/10/2026, o Tales escolhe entre modelos): ROSTO=<nome> python3 scripts/gerar_mascote.py
+ROSTO = os.environ.get("ROSTO", "frente_dentes")
+DESCE_CRANIO = {"tres_quartos": -21.0, "frente_liso": -22.0}.get(ROSTO, -26.5)
+
+
 def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
     q = r.cab
     uv = q.uv()
     v = p.vira
-    # crânio de frente (referência do Tales, 30/10/2026): calota grande, maçãs do rosto saltadas dos lados e a maxila
-    # estreita embaixo, com uma fileira só de dentes grandes e claros
+    # calota comum a todos os modelos, com a rachadura no alto à direita
     calota = elipse((0, -6.5), 25.0, 20.5)
-    rosto = elipse((v * 0.8, 7.0), 23.0, 11.0)
-    macas = circulo((-22.6 + v * 1.2, 12.0), 3.4) | circulo((22.6 + v * 1.2, 12.0), 3.4)
-    maxila = caixa((0.4 + v * 1.4, 21.4), 13.6, 5.6, r=3.2)
-    f = calota.suave(rosto, 5.0).suave(macas, 2.0).suave(maxila, 2.6)
+    frente = ROSTO != "tres_quartos"
+    if ROSTO == "tres_quartos":
+        rosto = elipse((-5.5 + v * 0.8, 8.5), 19.5, 10.0)
+        f = calota.suave(rosto, 6.0)
+    elif ROSTO == "frente_liso":
+        rosto = elipse((v * 0.8, 7.5), 22.0, 11.5)
+        macas = circulo((-22.0 + v * 1.2, 11.0), 3.2) | circulo((22.0 + v * 1.2, 11.0), 3.2)
+        f = calota.suave(rosto, 5.0).suave(macas, 2.0)
+    else:
+        rosto = elipse((v * 0.8, 7.0), 23.0, 11.0)
+        macas = circulo((-22.6 + v * 1.2, 12.0), 3.4) | circulo((22.6 + v * 1.2, 12.0), 3.4)
+        maxila = caixa((0.4 + v * 1.4, 21.4), 13.6 if ROSTO != "frente_pequeno" else 11.0, 5.6, r=3.2)
+        f = calota.suave(rosto, 5.0).suave(macas, 2.0).suave(maxila, 2.6)
     t.pinta(q.forma(f), "osso", 8.0, R=13.0, pid="cranio", uv=uv, semente=51)
-    # sombras de modelado: têmporas, embaixo das maçãs (onde a maxila entra) e a testa mais clara
     for sx in (-1, 1):
         t.pinta(q.forma(elipse((sx * 21.0 + v * 0.6, 1.0), 3.4, 7.0)), "osso", 0, sobre="cranio", tom=-0.12, uv=uv, semente=51, normal=False)
-        t.pinta(q.forma(elipse((sx * 16.8 + v * 1.3, 17.6), 3.0, 2.6)), "osso", 0, sobre="cranio", tom=-0.16, uv=uv, semente=51, normal=False)
+        if ROSTO in ("frente_dentes", "frente_pequeno", "frente_brilho"):
+            t.pinta(q.forma(elipse((sx * 16.8 + v * 1.3, 17.6), 3.0, 2.6)), "osso", 0, sobre="cranio", tom=-0.16, uv=uv, semente=51, normal=False)
     t.pinta(q.forma(elipse((-7 + v, -16.0), 8.0, 5.5)), "osso", 0, sobre="cranio", tom=0.05, uv=uv, semente=51, normal=False)
-    # rachadura irregular no alto à direita, com a beira de baixo clara
     rach = [(9.5, -25.6), (10.6, -22.8), (9.4, -20.6), (12.2, -18.0), (11.6, -15.6), (13.8, -13.4)]
     t.pinta(q.forma(traco([(x + 0.7, y + 0.7) for x, y in rach], 0.5)), "osso", 0, sobre="cranio", tom=0.16, uv=uv, semente=51, normal=False)
     t.pinta(q.forma(traco(rach, 0.55)), "orbita", 0, sobre="cranio", R=-1, tom=0.25)
     t.pinta(q.forma(capsula((12.2, -18.0), (14.8, -19.4), 0.45)), "orbita", 0, sobre="cranio", R=-1, tom=0.25)
-    # órbitas: ovais grandes, em pé e levemente abertas para fora, escuras e sem brilho
-    for sx in (-1, 1):
-        cx = sx * 12.0 + v * 2.2
-        orb = elipse((cx, 4.2), 7.4 * (1 - 0.1 * v * sx), 9.6, ang=sx * 8)
-        t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=0.0, uv=uv)
-        t.pinta(q.forma(elipse((cx + sx * 0.4, 5.6), 5.0, 6.6, ang=sx * 8)), "orbita", 0, sobre="cranio", tom=0.12, normal=False)
-    # nariz: duas fendas pequenas
-    for sx in (-1, 1):
-        t.pinta(q.forma(elipse((sx * 1.5 + v * 2.4, 11.4), 0.95, 2.4, ang=sx * -10)), "orbita", 8.01, R=-1.0, pid="cranio", tom=0.05)
-    # dentes: uma fileira só, grandes e claros, separados por traços finos encaixados na grade de pixels
-    bx = 0.4 + v * 1.4
-    t.pinta(q.forma(traco(bezier((bx - 11.0, 18.8), (bx, 18.0), (bx + 11.0, 18.8), 9), 0.55)), "orbita", 0, sobre="cranio", tom=0.2)
-    t.pinta(q.forma(traco(bezier((bx - 10.4, 22.6), (bx, 24.2), (bx + 10.4, 22.6), 9), 0.55)), "orbita", 0, sobre="cranio", tom=0.2)
-    t.pinta(q.forma(elipse((bx, 20.0), 14.0, 5.4)), "osso", 0, sobre="cranio", tom=0.1, uv=uv, semente=51, normal=False)
-    t.pinta(q.forma(caixa((bx, 20.9), 10.6, 1.8, r=0.6)), "osso", 0, sobre="cranio", tom=0.26, uv=uv, semente=51, normal=False)
-    for i in range(1, 7):
-        # cada traço é uma coluna de 1 pixel encaixada na grade (não some quando a cabeça inclina)
-        x = bx - 10.5 + i * 3.0
-        (x0, y0), (_, y1) = q.p(x, 19.6), q.p(x, 22.4 + 0.6 * (1 - abs(i - 3.5) / 3.5))
-        cx_, ya, yb = round(x0) + 0.5, round(y0), round(y1)
-        t.pinta(caixa((cx_, (ya + yb) / 2 + 0.5), 0.5, max(1.0, (yb - ya) / 2)), "orbita", 8.4, R=0.3, pid="dentes", sem_contorno=True, tom=0.28)
+
+    if not frente:
+        # três-quartos para a esquerda: órbita grande com aro claro e a estreita na borda; nariz embaixo à esquerda
+        ox = v * 2.0
+        grande = elipse((0.6 + ox, 3.0), 8.0, 7.6, ang=-8)
+        t.pinta(q.forma(elipse((0.6 + ox, 3.0), 9.9, 9.4, ang=-8) - grande), "osso", 0, sobre="cranio", tom=0.12, uv=uv, semente=51, normal=False)
+        lateral = elipse((-19.6 + ox, 3.6), 4.2, 5.9, ang=6) & f
+        for orb in (grande, lateral):
+            t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=0.0, uv=uv)
+        t.pinta(q.forma(elipse((1.4 + ox, 4.6), 5.6, 4.8, ang=-8)), "orbita", 0, sobre="cranio", tom=0.18, normal=False)
+        t.pinta(q.forma(elipse((-19.0 + ox, 5.0), 2.4, 3.6)), "orbita", 0, sobre="cranio", tom=0.14, normal=False)
+        nz = (-11.0 + v * 2.4, 11.6)
+        nariz = poligono([(nz[0] - 2.2, nz[1] - 1.4), (nz[0] + 2.2, nz[1] - 1.4), (nz[0], nz[1] + 2.0)]).suave(circulo((nz[0], nz[1] - 0.8), 1.5), 0.6)
+        t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.2, pid="cranio", tom=0.05)
+        t.pinta(q.forma(elipse((v * 1.0, 19.0), 14.0, 2.4)), "osso", 0, sobre="cranio", tom=-0.1, uv=uv, semente=51, normal=False)
+    else:
+        # de frente: órbitas ovais em pé (menores no modelo "pequeno"), nariz de duas fendas
+        rx, ry = (6.2, 8.0) if ROSTO == "frente_pequeno" else (7.4, 9.6)
+        for sx in (-1, 1):
+            cx = sx * (11.4 if ROSTO == "frente_pequeno" else 12.0) + v * 2.2
+            orb = elipse((cx, 4.2), rx * (1 - 0.1 * v * sx), ry, ang=sx * 8)
+            t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=0.0, uv=uv)
+            t.pinta(q.forma(elipse((cx + sx * 0.4, 5.6), rx * 0.68, ry * 0.69, ang=sx * 8)), "orbita", 0, sobre="cranio", tom=0.12, normal=False)
+            if ROSTO == "frente_brilho":
+                # um pontinho de luz no alto de cada órbita
+                gx, gy = cx - 2.2, 0.6
+                t.pinta(q.forma(circulo((gx, gy), 1.25)), "brilho", 8.03, pid="cranio", tom=0.9, sem_contorno=True)
+        for sx in (-1, 1):
+            t.pinta(q.forma(elipse((sx * 1.5 + v * 2.4, 11.4), 0.95, 2.4, ang=sx * -10)), "orbita", 8.01, R=-1.0, pid="cranio", tom=0.05)
+        if ROSTO == "frente_liso":
+            # sem dentes: só a sombra da curva de baixo do rosto
+            t.pinta(q.forma(elipse((v * 1.0, 17.8), 13.0, 2.4)), "osso", 0, sobre="cranio", tom=-0.1, uv=uv, semente=51, normal=False)
+        else:
+            # uma fileira só de dentes grandes e claros, separados por traços encaixados na grade de pixels
+            bx = 0.4 + v * 1.4
+            meia = 10.6 if ROSTO != "frente_pequeno" else 8.0
+            n = 7 if ROSTO != "frente_pequeno" else 5
+            passo = 2 * meia / n
+            t.pinta(q.forma(traco(bezier((bx - meia - 0.4, 18.8), (bx, 18.0), (bx + meia + 0.4, 18.8), 9), 0.55)), "orbita", 0, sobre="cranio", tom=0.2)
+            t.pinta(q.forma(traco(bezier((bx - meia + 0.2, 22.6), (bx, 24.2), (bx + meia - 0.2, 22.6), 9), 0.55)), "orbita", 0, sobre="cranio", tom=0.2)
+            t.pinta(q.forma(elipse((bx, 20.0), meia + 3.4, 5.4)), "osso", 0, sobre="cranio", tom=0.1, uv=uv, semente=51, normal=False)
+            t.pinta(q.forma(caixa((bx, 20.9), meia, 1.8, r=0.6)), "osso", 0, sobre="cranio", tom=0.26, uv=uv, semente=51, normal=False)
+            for i in range(1, n):
+                # cada traço é uma coluna de 1 pixel encaixada na grade (não some quando a cabeça inclina)
+                x = bx - meia + i * passo
+                (x0, y0), (_, y1) = q.p(x, 19.6), q.p(x, 22.4 + 0.6 * (1 - abs(i - n / 2) / (n / 2)))
+                cx_, ya, yb = round(x0) + 0.5, round(y0), round(y1)
+                t.pinta(caixa((cx_, (ya + yb) / 2 + 0.5), 0.5, max(1.0, (yb - ya) / 2)), "orbita", 8.4, R=0.3, pid="dentes", sem_contorno=True, tom=0.28)
     if sob_capuz:
         # sombra do capuz no alto do crânio
         def sombra_capuz(X, Y):
@@ -1585,10 +1626,13 @@ def salvar(img: Image.Image, caminho: Path) -> None:
         tmp.replace(caminho)
     else:
         tmp.unlink()
-    print(caminho.relative_to(PASTA.parents[2]), img.size, caminho.stat().st_size, "bytes")
+    print(caminho.relative_to(PASTA.parents[2]) if caminho.is_relative_to(PASTA.parents[2]) else caminho, img.size, caminho.stat().st_size, "bytes")
 
 
 def main() -> None:
+    if os.environ.get("SAIDA"):
+        salvar(folha_esqueleto(), Path(os.environ["SAIDA"]))
+        return
     salvar(folha_esqueleto(), PASTA / "esqueleto.png")
     salvar(folha_gato(), PASTA / "gato.png")
     if "--previa" in sys.argv:

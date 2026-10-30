@@ -497,6 +497,44 @@ def nuvens_faixa(c: Camada, y0: float, y1: float, seed: int, paleta: np.ndarray,
     c.mascara(m, paleta[idx])
 
 
+def estrato(c: Camada, cx: float, cy: float, larg: float, alt: float, seed: int, paleta: np.ndarray, fonte) -> None:
+    """Nuvem comprida de poente (ou de luar): topo em calombos, base quase reta, acesa do lado do astro, com fiapos."""
+    g = np.random.default_rng(seed)
+    fx, fy = fonte
+    por_baixo = fy > cy
+    nt = len(paleta)
+    fases = [g.random() * 6.28 for _ in range(4)]
+    for x in range(int(cx - larg / 2), int(cx + larg / 2) + 1):
+        if not 0 <= x < W:
+            continue
+        u = (x - cx) / (larg / 2)
+        env = max(0.0, 1 - u * u) ** 0.6
+        calombo = 0.55 + 0.25 * math.sin(x / 5.3 + fases[0]) + 0.15 * math.sin(x / 2.1 + fases[1]) \
+            + 0.12 * math.sin(x / 11 + fases[2])
+        topo = cy - alt * env * calombo
+        base = cy + 0.6 + alt * 0.22 * env * (0.5 + 0.5 * math.sin(x / 7 + fases[3]))
+        if base - topo < 0.8:
+            continue
+        perto = math.exp(-math.hypot(x - fx, (cy - fy) * 1.6) / 120)
+        for y in range(int(math.floor(topo)), int(math.ceil(base)) + 1):
+            v = np.clip((y - topo) / max(base - topo, 1), 0, 1)
+            if por_baixo:
+                k = 0.12 + v ** 1.5 * 0.5 + (0.35 if y >= int(math.ceil(base)) - 1 else 0) + perto * 0.45
+            else:
+                k = 0.2 + (1 - v) * 0.5 + (0.3 if y <= int(math.floor(topo)) + 1 else 0) + perto * 0.3
+            k += BAYER[y % 4, x % 4] * 0.18
+            c.p(x, y, paleta[int(np.clip(k * nt, 0, nt - 1))])
+    # fiapos que saem das pontas
+    for lado in (-1, 1):
+        for f in range(2):
+            y = int(cy + f - 0.5 * f)
+            comp = larg * (0.15 + g.random() * 0.25)
+            x0 = cx + lado * larg / 2 * (0.8 - f * 0.15)
+            for k in range(int(comp)):
+                if g.random() < 0.82:
+                    c.p(x0 + lado * k, y + (1 if por_baixo and f else 0), paleta[int(np.clip((0.55 + 0.3 * (f == 1)) * nt, 0, nt - 1))])
+
+
 def pintar_ceu(nome: str, per: dict) -> np.ndarray:
     topo, meio, horiz = (hexa(c) for c in per["ceu"])
     t = np.clip(YA / 70, 0, 1)[:, :, None]
@@ -517,10 +555,10 @@ def pintar_ceu(nome: str, per: dict) -> np.ndarray:
     elif nome == "tarde":
         ceu += (np.exp(-d / 70) * 0.85 + np.exp(-d / 22) * 0.9 + np.exp(-d / 6) * 1.6)[:, :, None] * hexa("#ffd890")
         ceu += (np.exp(-np.abs(YA - 54) / 8) * np.exp(-np.abs(XA - ax) / 180) * 0.4)[:, :, None] * hexa("#ffb070")
-        p = pal("#4a3466", "#6e3e6c", "#9c4e6c", "#cc6a6c", "#f08e6c", "#ffb878", "#ffdca0")
-        for (x, y, l, a, s) in ((150, 16, 120, 8, 11), (300, 26, 110, 7, 12), (455, 14, 90, 7, 13), (40, 30, 80, 6, 14),
-                                (250, 42, 70, 4.5, 15), (420, 40, 60, 4, 16)):
-            nuvem(nv, x, y, l, a, s, p, (ax, ay + 20), 0.5)
+        p = pal("#6a4a7e", "#8a5478", "#b06478", "#d47a74", "#f09a72", "#ffbe7c", "#ffe0a4")
+        for (x, y, l, a, s) in ((150, 18, 150, 13, 11), (318, 29, 130, 11, 12), (462, 16, 100, 10, 13), (46, 35, 90, 8, 14),
+                                (236, 43, 90, 6, 15), (436, 40, 60, 5, 16), (330, 10, 80, 7, 17)):
+            estrato(nv, x, y, l, a, s, p, (ax, ay))
         f = ruido_ret(15, 50, 2) * suave(2, 14, YA) * suave(46, 20, YA)
         ceu += (np.clip(f - 0.5, 0, 1) * 0.7)[:, :, None] * hexa("#ffb488")
         # disco do sol
@@ -540,8 +578,8 @@ def pintar_ceu(nome: str, per: dict) -> np.ndarray:
         via = np.exp(-((YA + 0.38 * XA - 150) / 14) ** 2) * (ruido(9, 5) * 0.6 + ruido(10, 2) * 0.4) * 0.3
         ceu += via[:, :, None] * hexa("#8a9ad8")
         ceu += (np.exp(-d / 40) * 0.35 + np.exp(-d / 12) * 0.4)[:, :, None] * hexa("#8aa4ee")
-        for (x, y, l, a, s) in ((190, 36, 110, 6, 21), (410, 12, 90, 6, 22), (70, 18, 70, 5, 23)):
-            nuvem(nv, x, y, l, a, s, p, (ax, ay), 0.5)
+        for (x, y, l, a, s) in ((190, 40, 120, 10, 21), (420, 15, 90, 8, 22), (70, 22, 80, 7, 23), (360, 46, 70, 5, 24)):
+            estrato(nv, x, y, l, a, s, p, (ax, ay))
     a = nv.c[:, :, 3:4]
     ceu = ceu * (1 - a) + nv.c[:, :, :3] * a
     if nome == "noite":
@@ -933,6 +971,10 @@ def pintar_chao(nome: str, per: dict):
     lados = suave(150, 30, XA) * 0.22 + suave(400, 470, XA) * 0.12
     s = np.gradient(suavizar1d(CRISTA3, 8))
     v = v + (1 - prof) * 0.1 - lados + np.clip(s[None, :] * (-1 if luz[0] < 0 else 1) * -2, -0.1, 0.1)
+    hf = ruido(311, 26) * 0.6 + ruido(312, 11) * 0.4
+    lxs, lys = (-1, -1) if luz[0] < 0 else (1, -1)
+    relevo = (hf - np.roll(np.roll(hf, lys * 2, 0), lxs * 2, 1)) * 5.5
+    v = v - relevo * (0.4 + prof * 0.6)
     idx = pontilhar(np.clip((v - 0.26) * 1.08, 0, 1), len(GRAMA), 0.6)
     c.mascara(m, GRAMA[idx])
     # a estrada: sulcos de roda, faixa de capim no meio, poças e bordas irregulares
@@ -961,7 +1003,7 @@ def pintar_chao(nome: str, per: dict):
         e = (((XA - px) / rx) ** 2 + ((YA - py) / (rx * 0.32 + 0.6)) ** 2) <= 1
         poca_m |= e & estrada
     ceu_ag = hexa(per["ceu_agua"])
-    agua = ceu_ag * (0.85 + 0.15 * (YA % 2)[:, :, None]) * np.ones((H, W, 3), np.float32)
+    agua = ceu_ag * (0.62 + 0.12 * (YA % 2)[:, :, None]) * np.ones((H, W, 3), np.float32)
     c.mascara(poca_m, agua)
     c.mascara(poca_m & ~np.roll(poca_m, 1, 0), TERRA[1])
     # pedrinhas na estrada
@@ -1104,8 +1146,6 @@ def placa(c: Camada, x: int, yb: int, luz) -> None:
                 if (xx * 5 + y * 3) % 11 == 0 or (y == meio + 1 and xx % 9 == 2):
                     k -= 1
                 c.p(xx, y, MADEIRA[max(0, k)])
-        c.p(x + 1, y0 + 1, "#c8c8c0")
-        c.p(x + 1, y0 + 7, "#9a9a92")
         larg = len(palavra) * 4 - 1
         tx = (x0 + x1) // 2 - larg // 2 + (2 if ponta < 0 else -3)
         texto(c, tx, y0 + 2, palavra, "#f2e6c4", MADEIRA[1])
@@ -1115,28 +1155,34 @@ def placa(c: Camada, x: int, yb: int, luz) -> None:
 
 
 def muleta(c: Camada, x: int, yb: int, luz) -> None:
-    """Muleta axilar de madeira encostada na cerca (o segredo da cena)."""
+    """Muleta axilar de madeira encostada na cerca (o segredo da cena): duas hastes que se abrem, apoio da axila
+    acolchoado, empunhadura e ponteira de borracha."""
     lx = -1 if luz[0] < 0 else 1
-    topo = (x - 4, yb - 21)
-    for k in range(22):
-        t = k / 21
-        px = x + (topo[0] - x) * t
-        py = yb + (topo[1] - yb) * t
-        abre = 0 if t < 0.35 else min(1.6, (t - 0.35) * 5)
-        if abre < 0.5:
-            c.p(px, py, MADEIRA[6 if lx < 0 else 4])
-            c.p(px + 1, py, MADEIRA[3])
+    comp = 25
+    tx, ty = x - 6, yb - comp
+    for k in range(comp + 1):
+        t = k / comp
+        px = x + (tx - x) * t
+        py = yb - k
+        abre = 0.0 if t < 0.38 else min(1.8, (t - 0.38) * 6.0)
+        claro, escuro = (MADEIRA[6], MADEIRA[3]) if lx < 0 else (MADEIRA[5], MADEIRA[2])
+        if abre < 0.6:
+            c.p(px, py, claro)
+            c.p(px + 1, py, escuro)
         else:
-            c.p(px - abre, py, MADEIRA[6 if lx < 0 else 4])
-            c.p(px + abre + 1, py, MADEIRA[4])
-    # apoio da axila (almofada) e a empunhadura
-    c.ret(topo[0] - 2, topo[1] - 1, 6, 2, "#5a3a2a")
-    c.ret(topo[0] - 2, topo[1] - 1, 6, 1, "#8a5a40")
-    hy = int(yb - 21 * 0.62)
-    hx = int(x + (topo[0] - x) * 0.62)
-    c.ret(hx - 1, hy, 4, 1, "#3a2a20")
-    c.ret(hx - 1, hy - 1, 4, 1, "#6a4a34")
-    c.ret(x - 1, yb - 1, 3, 2, "#2a2a2e")     # ponteira de borracha
+            c.p(round(px - abre), py, claro)
+            c.p(round(px + abre) + 1, py, escuro)
+    # apoio da axila (almofada de couro) e a empunhadura
+    c.ret(tx - 3, ty - 2, 8, 1, "#9a6a48")
+    c.ret(tx - 3, ty - 1, 8, 1, "#6a4230")
+    c.p(tx - 3, ty - 2, "#6a4230")
+    c.p(tx + 4, ty - 2, "#6a4230")
+    hy = yb - int(comp * 0.68)
+    hx = round(x + (tx - x) * 0.68)
+    c.ret(hx - 2, hy, 5, 1, "#3a2a20")
+    c.ret(hx - 2, hy - 1, 5, 1, "#7a5238")
+    c.ret(x - 1, yb - 1, 3, 2, "#2a2a2e")
+    c.p(x - 1, yb - 1, "#4a4a50")
 
 
 def carroca(c: Camada, e: Camada, x0: int, base: int, luz) -> list:
@@ -1272,10 +1318,10 @@ def fogueira(c: Camada, e: Camada, x: int, y: int, nome: str, luz) -> None:
         e.p(x + dx, y + dy, "#ff8a3a")
     if nome == "manha":
         return
-    alt = 5 if nome == "tarde" else 8
+    alt = 6 if nome == "tarde" else 10
     for j in range(alt):
         t = j / alt
-        meia = (1 - t) * (3.2 if nome == "noite" else 2.4) * (0.7 + 0.3 * math.sin(j * 1.7))
+        meia = (1 - t) * (3.6 if nome == "noite" else 2.6) * (0.7 + 0.3 * math.sin(j * 1.7))
         for xx in range(int(x - meia), int(x + meia) + 1):
             u = abs(xx + 0.5 - x) / max(meia, 0.5)
             cor = "#fff2b0" if u < 0.4 and t < 0.6 else "#ffc04a" if u < 0.75 else "#ff6a20"
@@ -1327,7 +1373,7 @@ def pintar_objetos(nome: str, per: dict) -> Objetos:
             ob.cam.juntar(t)
     # placa com setas e a muleta encostada
     ob.add(138, placa, 248, 138, luz)
-    ob.add(134, muleta, 219, 134, luz)
+    ob.add(134, muleta, 221, 134, luz)
     # acampamento: carroça, barril, caixotes, fogueira e o fêmur
     t, e = Camada(), Camada()
     luzes = carroca(t, e, 396, 137, luz)
@@ -1479,6 +1525,14 @@ def raios_de_luz(mascara: np.ndarray, fonte: tuple[float, float], passos: int = 
         acum += mascara[py, px] * peso
         peso *= queda
     return acum / passos
+
+
+def facho(x_topo, y_topo, x_base, y_base, larg_topo, larg_base, dureza: float = 1.0) -> np.ndarray:
+    t = np.clip((GYa - y_topo) / (y_base - y_topo), 0, 1.3)
+    centro = x_topo + (x_base - x_topo) * t
+    larg = larg_topo + (larg_base - larg_topo) * t
+    dist = np.abs(GXa - centro) / np.maximum(larg, 0.5)
+    return np.exp(-dist ** (2 * dureza) * 2.4) * (GYa > y_topo)
 
 
 def projetar_sombra(alfa: np.ndarray, base: np.ndarray, vetor) -> np.ndarray:
@@ -1707,7 +1761,13 @@ def montar(nome: str) -> Image.Image:
                              queda=0.976)
         raios = desfocar(raios[:, :, None], 3)[:, :, 0]
         img += raios[:, :, None] * hexa("#ffc078") * 2.3
-        peso_poeira, cor_poeira = raios * 3 * (GYa > 58), "#ffd8a0"
+        sx_, sy_ = SOL_TARDE
+        f = (facho(sx_, sy_, 300, 170, 3, 34, 1.3) * 0.5 + facho(sx_, sy_, 430, 170, 3, 26, 1.3) * 0.45 +
+             facho(sx_, sy_, 200, 150, 2, 22, 1.4) * 0.3 + facho(sx_, sy_, 360, 170, 2, 14, 1.4) * 0.35)
+        f = f * (0.5 + 0.7 * poe) * suave(sy_ + 4, sy_ + 40, GYa)
+        f = desfocar(f[:, :, None], 3)[:, :, 0] * (1 - obj_a * 0.5)
+        img += f[:, :, None] * hexa("#ffb468") * 0.38
+        peso_poeira, cor_poeira = raios * 3 * (GYa > 58) + f * 1.5, "#ffd8a0"
     else:
         raios = raios_de_luz(vis_ceu.astype(np.float32) * np.exp(-np.hypot(GXa - ax, GYa - ay) / 30),
                              (ax, ay), passos=60, alcance=0.9)
@@ -1752,7 +1812,7 @@ def montar(nome: str) -> Image.Image:
         img += desfocar(vl[:, :, None], 14) * hexa("#80d040") * 1.6
     # reflexo do céu nas poças: brilho em pontinhos
     pa = ampliar(poca[:, :, None].astype(np.float32))[:, :, 0]
-    img += (pa * ((GX.astype(int) // 3 + GY.astype(int) // 3) % 5 == 0))[:, :, None] * hexa(per["ceu_agua"]) * 0.4
+    img += (pa * ((GX.astype(int) // 3 + GY.astype(int) // 3) % 7 == 0))[:, :, None] * hexa(per["ceu_agua"]) * 0.25
 
     # ── primeiro plano desfocado e escuro
     fr = desfocar_rgba(ampliar(frente.c), 8)

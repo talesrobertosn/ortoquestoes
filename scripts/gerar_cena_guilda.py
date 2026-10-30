@@ -1561,8 +1561,772 @@ def montar_guilda(nome: str) -> Image.Image:
     return acabamento(img, per, esquerda=0.36, seed=97)
 
 
+# ═════════════════════════════════════ 2. SALA DO CONSELHO ═════════════════════════════════════
+C_CHAO = 98
+C_VITRAL = (252, 12, 48, 70)      # x, y, largura, altura
+C_MESA = (250, 120, 64, 11)       # centro, meias-larguras da elipse do tampo
+C_COFRE = (398, 84, 48, 40)       # x, y do topo da frente, largura, altura
+PEDRA_C = ("#16141c", "#2e2a36", "#3a3644", "#464252", "#5a5668", "#787488")
+
+
+def c_tampo_y(x: float) -> tuple[float, float] | None:
+    cx, cy, rx, ry = C_MESA
+    u = (x + 0.5 - cx) / rx
+    if abs(u) > 1:
+        return None
+    d = ry * math.sqrt(1 - u * u)
+    return cy - d, cy + d
+
+
+def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> None:
+    """O vitral ogival: barra de quadrados vermelhos e azuis, medalhão com a rosa dos ventos dourada sobre azul,
+    duas lancetas de losangos verdes, âmbar e roxos e o medalhão de baixo com o osso branco sobre vermelho.
+    A cor que passa depende da hora (sol branco, poente laranja, luar azul e fraco)."""
+    x0, y0, w, h = C_VITRAL
+    cx, r = x0 + w / 2, w / 2
+    tinta = {"manha": (hexa("#fff6e8"), 1.25), "tarde": (hexa("#ffb878"), 1.15), "noite": (hexa("#7a9ae8"), 0.42)}[nome]
+    pedra_t = ("#141218", "#2e2a36", "#4a4656", "#6a6678", "#8a86a0")
+
+    def dentro(x, y, folga=0.0):
+        rx = r + folga
+        if y >= y0 + r:
+            return abs(x + 0.5 - cx) <= rx and y < y0 + h + folga
+        dy = y0 + r - (y + 0.5)
+        d1 = math.hypot(x + 0.5 - (cx - rx * 0.45), dy)
+        d2 = math.hypot(x + 0.5 - (cx + rx * 0.45), dy)
+        return abs(x + 0.5 - cx) <= rx and d1 <= rx * 1.45 and d2 <= rx * 1.45
+
+    for y in range(y0 - 22, y0 + h + 2):
+        for x in range(int(cx - r - 6), int(cx + r + 7)):
+            if dentro(x, y, 5) and not dentro(x, y, 0):
+                lado = x < cx
+                aduela = (int(math.atan2((y0 + r) - y, x - cx) * 8) % 2) if y < y0 + r else ((y - y0) // 6) % 2
+                k = (3 if lado else 1) + aduela
+                if dentro(x, y, 1.5):
+                    k = 4 if lado else 0
+                c.p(x, y, pedra_t[max(0, min(4, k))])
+    mc1 = (cx, y0 + 30, 12.5)      # medalhão de cima
+    mc2 = (cx, y0 + 58, 7.5)       # medalhão de baixo
+    g = np.random.default_rng(301)
+    for y in range(y0 - 20, y0 + h):
+        for x in range(int(cx - r), int(cx + r) + 1):
+            if not dentro(x, y):
+                continue
+            u = (x + 0.5 - cx) / r
+            d1 = math.hypot(x + 0.5 - mc1[0], y + 0.5 - mc1[1])
+            d2 = math.hypot(x + 0.5 - mc2[0], y + 0.5 - mc2[1])
+            chumbo = False
+            if abs(d1 - mc1[2]) < 0.7 or abs(d2 - mc2[2]) < 0.7:
+                chumbo = True
+                cor = None
+            elif d1 < mc1[2]:
+                ang = math.atan2(y + 0.5 - mc1[1], x + 0.5 - mc1[0])
+                raio_estrela = mc1[2] * (0.38 + 0.5 * abs(math.cos(ang * 4)) ** 6) * (0.75 if int((ang + math.pi) / (math.pi / 4)) % 2 else 1)
+                if d1 < 2.2:
+                    cor = "#fff8e0"
+                elif d1 < raio_estrela:
+                    cor = "#f6c84a" if (x - mc1[0]) * (y - mc1[1]) < 0 else "#d89a28"
+                else:
+                    cor = "#1c3a9a" if (x + y) % 5 else "#2a4cb8"
+                if d1 > mc1[2] - 2:
+                    cor = "#c8283a"
+            elif d2 < mc2[2]:
+                cor = "#b81e2e" if (x + y) % 4 else "#d83040"
+                xx, yy = x - int(mc2[0]) + 5, y - int(mc2[1]) + 2
+                osso = [".#.....#.", "##.....##", ".#######.", "##.....##", ".#.....#."]
+                if 0 <= yy < 5 and 0 <= xx < 9 and osso[yy][xx] == "#":
+                    cor = "#f8f2e4"
+            elif abs(u) > 0.76 or y < y0 + 4:
+                # barra: quadrados alternados
+                cor = "#c8283a" if ((y // 4) + (x > cx)) % 2 else "#2848b8"
+                if (y % 4 == 0) or abs(abs(u) - 0.76) < 0.06:
+                    chumbo = True
+                elif (y // 4) % 3 == 0:
+                    cor = "#f0c040"
+            elif y < y0 + 14:
+                cor = "#a01a2a" if (x * 3 + y) % 7 else "#d03848"
+                if (x + y) % 6 == 0 or (x - y) % 6 == 0:
+                    chumbo = True
+            else:
+                # lancetas: losangos
+                q = ((x + y) // 5 + (x - y) // 5) % 3
+                cor = ("#2a9a5a", "#e8a030", "#7a3aa8")[q]
+                if (x + y) % 5 == 0 or (x - y) % 5 == 0:
+                    chumbo = True
+            if abs(x + 0.5 - cx) < 1.0 and y > y0 + 44 and not d2 < mc2[2] + 1:
+                cor, chumbo = "#4a4656", False
+                c.p(x, y, cor)
+                continue
+            if y in (y0 + 44, y0 + 45) and d1 > mc1[2] + 1 and d2 > mc2[2] + 1:
+                c.p(x, y, "#5a5668" if y == y0 + 44 else "#2e2a36")
+                continue
+            if chumbo:
+                c.p(x, y, "#18161c")
+                vidro[y, x] = 0.12
+                continue
+            base = hexa(cor) * (0.9 + g.random() * 0.2)
+            luz_t, k = tinta
+            emis = base * luz_t * k
+            c.c[y, x, :3] = emis
+            c.c[y, x, 3] = 1
+            vidro[y, x] = 1.0
+            vidro_cor[y, x] = base * luz_t * (k / 1.25)
+    # peitoril
+    c.ret(int(cx - r - 5), y0 + h, int(w + 11), 2, pedra_t[4])
+    c.ret(int(cx - r - 5), y0 + h + 2, int(w + 11), 1, pedra_t[0])
+
+
+def c_prateleira_rolos(c: Camada, x0: int, y0: int, x1: int, y1: int, seed: int) -> None:
+    """Estante de escaninhos cheia de rolos de pergaminho (pontas em espiral, fitas e lacres), alguns livros e
+    plaquinhas de latão; uma escada encostada."""
+    g = np.random.default_rng(seed)
+    madeira(c, x0 - 3, y0 - 4, x1 - x0 + 6, y1 - y0 + 4, CARVALHO, vertical=True, base=2, seed=seed)
+    c.ret(x0 - 4, y0 - 6, x1 - x0 + 8, 3, CARVALHO[4])
+    c.ret(x0 - 4, y0 - 6, x1 - x0 + 8, 1, CARVALHO[5])
+    cw, ch = 12, 10
+    for cy in range(y0, y1 - ch + 1, ch):
+        for cx in range(x0, x1 - cw + 1, cw):
+            # fundo do escaninho
+            c.ret(cx + 1, cy + 1, cw - 1, ch - 1, "#0e0806")
+            c.ret(cx + 1, cy + 1, cw - 1, 1, "#060302")
+            c.ret(cx, cy, cw, 1, CARVALHO[4])
+            c.ret(cx, cy, 1, ch, CARVALHO[3])
+            tipo = g.random()
+            if tipo < 0.72:
+                # pontas de rolos empilhados
+                n = 3 + int(g.random() * 3)
+                for i in range(n):
+                    rx = cx + 3 + (i % 3) * 3 + (i // 3) * 1.5
+                    ry = cy + ch - 2.5 - (i // 3) * 3
+                    tom = PERGAMINHO[3] if g.random() < 0.6 else PERGAMINHO[4]
+                    c.disco(rx, ry, 1.6, (tom, PERGAMINHO[2], PERGAMINHO[1]))
+                    c.p(int(rx), int(ry), PERGAMINHO[1])
+                    if g.random() < 0.25:
+                        c.p(int(rx) + 1, int(ry), ("#c8302a", "#2c5aa8", "#2c8a4a")[int(g.random() * 3)])
+                if g.random() < 0.3:
+                    # fita pendurada para fora
+                    fx = cx + 4 + int(g.random() * 5)
+                    c.ret(fx, cy + ch - 1, 1, 3, "#b02a2a")
+                    c.p(fx, cy + ch + 1, "#e04a3a")
+            elif tipo < 0.88:
+                # livros em pé
+                x = cx + 2
+                while x < cx + cw - 2:
+                    larg = 2 if g.random() < 0.7 else 1
+                    alt = ch - 3 - int(g.random() * 2)
+                    cor = ("#6a1a1a", "#1a3a5a", "#2a4a2a", "#5a3a1a", "#3a2a4a")[int(g.random() * 5)]
+                    c.ret(x, cy + ch - alt, larg, alt, cor)
+                    c.p(x, cy + ch - alt + 2, METAIS["ouro"][3])
+                    x += larg
+            else:
+                # um rolo grande deitado com lacre
+                c.ret(cx + 2, cy + ch - 4, cw - 3, 3, PERGAMINHO[3])
+                c.ret(cx + 2, cy + ch - 4, cw - 3, 1, PERGAMINHO[4])
+                c.disco(cx + 6, cy + ch - 2.5, 1.2, ("#e04a3a", "#a01a1a", "#5a0a0a"))
+            # plaquinha de latão
+            c.ret(cx + cw // 2 - 1, cy + ch - 1, 3, 1, METAIS["ouro"][3])
+    c.ret(x0 - 3, y1, x1 - x0 + 6, 2, CARVALHO[1])
+    # escada encostada
+    for lado in (0, 9):
+        c.linha(x1 - 26 + lado, y0 + 2, x1 - 18 + lado, C_CHAO + 1, CARVALHO[4] if lado == 0 else CARVALHO[3])
+    for j in range(6, C_CHAO - y0, 8):
+        t = j / (C_CHAO - y0)
+        xa = x1 - 26 + 8 * t
+        c.ret(int(xa), y0 + j, 10, 1, CARVALHO[4])
+
+
+def c_radiografia(c: Camada, x0: int, y0: int, w: int, h: int) -> None:
+    """Negatoscópio emoldurado com a radiografia de uma mão: rádio, ulna, carpo, metacarpos e falanges."""
+    ouro = METAIS["ouro"]
+    c.ret(x0 - 3, y0 - 3, w + 6, h + 6, ouro[1])
+    c.ret(x0 - 2, y0 - 2, w + 4, h + 4, ouro[3])
+    c.ret(x0 - 2, y0 - 2, w + 4, 1, ouro[5])
+    c.ret(x0 - 2, y0 - 2, 1, h + 4, ouro[4])
+    c.ret(x0 + w + 1, y0 - 2, 1, h + 4, ouro[1])
+    for (cx_, cy_) in ((x0 - 2, y0 - 2), (x0 + w + 1, y0 - 2), (x0 - 2, y0 + h + 1), (x0 + w + 1, y0 + h + 1)):
+        c.p(cx_, cy_, ouro[6])
+    for y in range(y0, y0 + h):
+        for x in range(x0, x0 + w):
+            v = (x - x0) / w
+            c.p(x, y, misturar("#2a3a4a", "#1a2432", v + (y - y0) / h * 0.3))
+    ossos = "#dfeaf2"
+    meio_o = "#a8bccc"
+    mx = x0 + w // 2
+    # antebraço
+    for y in range(y0 + h - 8, y0 + h):
+        c.ret(mx - 5, y, 3, 1, meio_o)
+        c.p(mx - 5, y, ossos)
+        c.ret(mx + 1, y, 3, 1, meio_o)
+        c.p(mx + 1, y, ossos)
+    # carpo
+    for (dx, dy) in ((-4, -10), (-2, -11), (0, -11), (2, -10), (-3, -12), (-1, -13), (1, -13), (3, -12)):
+        c.p(mx + dx, y0 + h + dy, ossos)
+    # metacarpos e dedos (com os espaços articulares)
+    dedos = [(-5, 7, -0.45), (-2, 11, -0.12), (0, 12, 0.0), (2, 11, 0.12), (4, 9, 0.3)]
+    for i, (dx, comp, inc) in enumerate(dedos):
+        bx, by = mx + dx, y0 + h - 14
+        if i == 0:
+            bx, by = mx - 5, y0 + h - 11
+        for j in range(comp):
+            if j in (5, 8, 10) and i > 0 or (i == 0 and j in (3, 5)):
+                continue
+            x = bx + inc * j * (1.6 if i == 0 else 1)
+            c.p(round(x), by - j, ossos if j % 3 else meio_o)
+    # placa e parafusos (uma fixação no rádio, piada interna)
+    c.ret(mx - 6, y0 + h - 6, 1, 5, "#ffffff")
+    for k in range(3):
+        c.p(mx - 5, y0 + h - 5 + k * 2, "#ffffff")
+    c.bitmap(x0 + 2, y0 + 2, ["#.#", ".#.", "#.#"], {"#": "#c8d8e8"}, 0.7)
+
+
+def c_parede(per: dict, nome: str, fogo: Camada, luzes: list) -> tuple[Camada, np.ndarray, np.ndarray]:
+    """Teto de caixotões, parede de pedra fria com lambri de carvalho, o vitral, a estante de rolos, a tapeçaria,
+    o negatoscópio com a radiografia, a prateleira com a balança e o armário de livros-razão."""
+    c = Camada()
+    vidro = np.zeros((H, W), dtype=np.float32)
+    vidro_cor = np.zeros((H, W, 3), dtype=np.float32)
+    pedra(c, 0, 8, W, 76, PEDRA_C, 211, bw=15, bh=7)
+    madeira(c, 0, 76, W, 22, CARVALHO, vertical=True, base=2, seed=212)
+    for x0 in range(0, W, 26):
+        c.ret(x0, 76, 2, 22, CARVALHO[1])
+        c.ret(x0 + 4, 80, 18, 14, CARVALHO[3])
+        c.ret(x0 + 5, 81, 16, 12, CARVALHO[2])
+        c.ret(x0 + 4, 80, 18, 1, CARVALHO[5])
+        c.ret(x0 + 4, 93, 18, 1, CARVALHO[1])
+        c.ret(x0 + 7, 84, 12, 6, CARVALHO[3])
+        c.ret(x0 + 7, 84, 12, 1, CARVALHO[1])
+        c.ret(x0 + 7, 89, 12, 1, CARVALHO[4])
+    c.ret(0, 75, W, 1, METAIS["ouro"][2])
+    c.ret(0, 76, W, 1, CARVALHO[5])
+    c.ret(0, 96, W, 2, CARVALHO[0])
+    # teto de caixotões
+    madeira(c, 0, 0, W, 8, CARVALHO, base=2, seed=213)
+    for x in range(0, W, 32):
+        c.ret(x, 0, 4, 8, CARVALHO[1])
+        c.ret(x + 4, 1, 28, 5, CARVALHO[3])
+        c.ret(x + 6, 2, 24, 3, CARVALHO[2])
+        c.p(x + 18, 3, METAIS["ouro"][3])
+    c.ret(0, 7, W, 1, METAIS["ouro"][2])
+    c.ret(0, 8, W, 1, CARVALHO[0])
+    # oclusão e manchas
+    mancha = ruido(214, 24) * 0.6 + ruido(215, 8) * 0.4
+    ys_, xs_ = np.mgrid[0:H, 0:W].astype(np.float32)
+    ao = 1 - 0.4 * suave(24, 8, ys_) - 0.15 * suave(0.55, 0.85, mancha) - 0.12 * suave(80, 98, ys_)
+    ao -= 0.25 * suave(70, 0, xs_)
+    c.c[:C_CHAO, :, :3] *= np.clip(ao, 0.3, 1)[:C_CHAO, :, None]
+    c_vitral(c, vidro, vidro_cor, nome)
+    c_prateleira_rolos(c, 10, 16, 166, 96, 220)
+    # tapeçaria com o brasão (pena e osso cruzados) entre a estante e o vitral
+    estandarte(c, 194, 16, 36, 50, "verde", "coroa", fase=0.5, ponta="reta", vento=0.05)
+    for lado in (-1, 1):
+        x1, y1, x2, y2 = 212 - lado * 8, 34, 212 + lado * 8, 54
+        c.linha(x1, y1, x2, y2, OSSO[1] if lado < 0 else "#f4f0e8")
+        c.linha(x1 + 1, y1, x2 + 1, y2, OSSO[2] if lado < 0 else "#c8c0b0")
+    c.disco(204.5, 34.5, 1.6, (OSSO[0], OSSO[1], OSSO[3]))
+    c.disco(220.5, 54.5, 1.6, (OSSO[0], OSSO[1], OSSO[3]))
+    c.bitmap(218, 31, ["..##", ".##.", "##..", "#..."], {"#": "#f4f0e8"})
+    # arandelas dos dois lados do vitral
+    for xs in (241, 311):
+        c.ret(xs - 2, 56, 5, 1, METAIS["ouro"][3])
+        c.ret(xs - 1, 57, 3, 1, METAIS["ouro"][1])
+        c.linha(xs, 58, xs, 62, METAIS["ouro"][2])
+        c.ret(xs - 2, 62, 5, 2, METAIS["ouro"][2])
+        vela(c, fogo, xs, 56, 5, per["velas"] >= 2, luzes, 0.8, 34)
+    c_radiografia(c, 334, 24, 28, 34)
+    # prateleira da balança, em cima do cofre
+    cx_b = C_COFRE[0] + C_COFRE[2] // 2
+    madeira(c, cx_b - 26, 60, 52, 3, CARVALHO, base=3, seed=230)
+    c.ret(cx_b - 26, 60, 52, 1, CARVALHO[5])
+    for xb in (cx_b - 20, cx_b + 18):
+        for j in range(5):
+            c.ret(xb, 63 + j, 5 - j, 1, CARVALHO[2])
+    ouro = METAIS["ouro"]
+    c.ret(cx_b - 4, 58, 9, 2, ouro[2])
+    c.ret(cx_b - 4, 58, 9, 1, ouro[4])
+    c.ret(cx_b, 42, 1, 16, ouro[4])
+    c.ret(cx_b + 1, 42, 1, 16, ouro[2])
+    c.disco(cx_b + 0.5, 41, 1.4, (ouro[6], ouro[4], ouro[2]))
+    c.linha(cx_b - 12, 45, cx_b + 12, 43, ouro[4])
+    for (px_, py_) in ((cx_b - 12, 45), (cx_b + 12, 43)):
+        c.linha(px_, py_, px_ - 4, py_ + 8, ouro[2])
+        c.linha(px_, py_, px_ + 4, py_ + 8, ouro[2])
+        c.ret(px_ - 5, py_ + 8, 11, 1, ouro[4])
+        c.ret(px_ - 4, py_ + 9, 9, 1, ouro[2])
+    # na balança: um osso de um lado, moedas do outro (pesando um contra o outro)
+    c.bitmap(cx_b - 16, 50, ["#.....#", "#######", "#.....#"], {"#": OSSO[1]})
+    for k in range(3):
+        c.ret(cx_b + 9, 49 - k, 6, 1, ouro[4] if k % 2 else ouro[3])
+    vela(c, fogo, cx_b + 22, 60, 6, per["velas"] >= 1, luzes, 0.7, 30)
+    # armário de livros-razão na ponta direita
+    madeira(c, 456, 14, 24, 84, CARVALHO, vertical=True, base=2, seed=240)
+    for yb in range(18, 96, 13):
+        c.ret(458, yb + 11, 22, 2, CARVALHO[4])
+        x = 459
+        g = np.random.default_rng(yb)
+        while x < 480:
+            larg = 3 + int(g.random() * 2)
+            cor = ("#5a1a14", "#2a1a10", "#3a2a1a", "#1a2a3a")[int(g.random() * 4)]
+            c.ret(x, yb + 2, larg, 9, cor)
+            c.ret(x, yb + 4, larg, 1, ouro[3])
+            c.ret(x, yb + 8, larg, 1, ouro[2])
+            x += larg + 1
+    return c, vidro, vidro_cor
+
+
+def piso_lajes(c: Camada, chao_y: int, fuga: tuple[float, float], k: float, f: float, tons, seed: int) -> None:
+    """Lajes de pedra em perspectiva (amostradas 4 x 4): fiadas desencontradas, tom por laje, desgaste e juntas."""
+    g = np.random.default_rng(seed)
+    tom = g.random(4096)
+    fx, fy = fuga
+    ss = 4
+    ys, xs = np.mgrid[chao_y * ss:H * ss, 0:W * ss].astype(np.float32)
+    ys, xs = (ys + 0.5) / ss, (xs + 0.5) / ss
+    prof = ys - fy
+    v = k * f / prof
+    iv = np.floor(v / 1.4).astype(np.int32)
+    u = (xs - fx) * k / prof + (iv % 2) * 0.5
+    iu = np.floor(u / 1.6).astype(np.int32)
+    t = tom[(iu * 31 + iv * 17) % 4096]
+    fu, fv = (u / 1.6) % 1, (v / 1.4) % 1
+    nv = np.asarray(Image.fromarray((ruido(seed + 5, 6) * 255).astype(np.uint8)).resize((W * ss, H * ss), Image.BILINEAR),
+                    dtype=np.float32)[chao_y * ss:] / 255
+    base = np.stack([hexa(tons[1]), hexa(tons[2]), hexa(tons[3]), hexa(tons[4])])
+    idx = np.clip((t * 2.6 + nv * 1.2).astype(np.int32), 0, 3)
+    cor = base[idx]
+    cor = np.where(((fu < 0.035) | (fv < 0.05))[..., None], hexa(tons[0]), cor)
+    cor = np.where(((fv > 0.05) & (fv < 0.12))[..., None], cor * 1.1, cor)
+    cor = cor.reshape(H - chao_y, ss, W, ss, 3).mean((1, 3))
+    c.c[chao_y:, :, :3] = cor
+    c.c[chao_y:, :, 3] = 1
+
+
+def c_chao() -> Camada:
+    """Lajes de pedra e o grande tapete redondo debaixo da mesa (medalhão, barra de ondas e franja)."""
+    c = Camada()
+    piso_lajes(c, C_CHAO, (250, 40), 7.0, 110, ("#141218", "#2e2a34", "#3a3640", "#46424c", "#56525e"), 251)
+    tcx, tcy, rx, ry = 250, 134, 104, 16
+    for y in range(int(tcy - ry) - 2, min(H, int(tcy + ry) + 3)):
+        for x in range(int(tcx - rx) - 3, int(tcx + rx) + 4):
+            d = math.hypot((x + 0.5 - tcx) / rx, (y + 0.5 - tcy) / ry)
+            if d > 1.03:
+                continue
+            ang = math.atan2((y - tcy) / ry, (x - tcx) / rx)
+            if d > 1.0:
+                cor = "#d8c8a0" if (x % 2) else "#a89870"
+            elif d > 0.95:
+                cor = "#1a2a5a"
+            elif d > 0.84:
+                onda = math.sin(ang * 26) * 0.03
+                cor = "#c89a3a" if abs(d - 0.895 - onda) < 0.022 else "#2a3a7a"
+            elif d > 0.8:
+                cor = "#8a1a24"
+            else:
+                pet = abs(math.cos(ang * 4)) ** 3
+                cor = "#6a1420" if d > 0.3 + pet * 0.35 else "#8a2230"
+                if abs(d - (0.3 + pet * 0.35)) < 0.04:
+                    cor = "#d8a848"
+                if d < 0.14:
+                    cor = "#d8a848" if d > 0.08 else "#2a3a7a"
+            if (x * 3 + y * 5) % 7 == 0:
+                cor = misturar(cor, "#000000", 0.15)
+            c.p(x, y, cor)
+    return c
+
+
+def c_cadeira(c: Camada, x0: int, w: int, y_topo: int, y_assento: int, y_pe: int, lado: bool = False) -> None:
+    """Cadeira de espaldar alto entalhado, estofado vermelho com tachas de latão."""
+    madeira(c, x0, y_topo, w, y_assento - y_topo, CARVALHO, vertical=True, base=3, seed=x0)
+    c.ret(x0, y_topo, w, 1, CARVALHO[5])
+    c.ret(x0, y_topo, 1, y_assento - y_topo, CARVALHO[5])
+    c.ret(x0 + w - 1, y_topo, 1, y_assento - y_topo, CARVALHO[1])
+    # coroamento entalhado
+    for i in range(w):
+        dy = round(2.5 * math.sin(i / max(1, w - 1) * math.pi))
+        for j in range(dy):
+            c.p(x0 + i, y_topo - 1 - j, CARVALHO[4] if j == dy - 1 else CARVALHO[3])
+    c.p(x0 + w // 2, y_topo - 4, METAIS["ouro"][4])
+    # estofado
+    c.ret(x0 + 2, y_topo + 3, w - 4, y_assento - y_topo - 5, "#7a1a22")
+    c.ret(x0 + 2, y_topo + 3, w - 4, 1, "#a82a32")
+    c.ret(x0 + w - 3, y_topo + 3, 1, y_assento - y_topo - 5, "#4a0e14")
+    for y in range(y_topo + 3, y_assento - 2, 3):
+        c.p(x0 + 2, y, METAIS["ouro"][4])
+        c.p(x0 + w - 3, y, METAIS["ouro"][3])
+    if lado:
+        c.ret(x0 - 2, y_assento, w + 10, 2, "#8a1e28")
+        c.ret(x0 - 2, y_assento + 2, w + 10, 2, CARVALHO[2])
+        for xl in (x0, x0 + w + 6):
+            c.ret(xl, y_assento + 4, 2, y_pe - y_assento - 4, CARVALHO[3])
+            c.p(xl, y_pe - 1, CARVALHO[1])
+
+
+def c_mapa(c: Camada, g: np.random.Generator) -> list:
+    """O mapa aberto em cima da mesa: papel em perspectiva com mar, costa, montanhas, florestas, rio, a rota
+    tracejada vermelha até o X, a rosa dos ventos e os peões. Devolve brilhos (as pontas dos peões dourados)."""
+    far, near = 111, 128
+    xa0, xb0, xa1, xb1 = 214, 288, 204, 300
+    terra = ruido(261, 9) * 0.65 + ruido(262, 4) * 0.35
+
+    def borda(y):
+        t = (y - far) / (near - far)
+        return xa0 + (xa1 - xa0) * t, xb0 + (xb1 - xb0) * t
+
+    for y in range(far, near):
+        xa, xb = borda(y)
+        for x in range(int(round(xa)), int(round(xb))):
+            u = (x - xa) / (xb - xa)
+            vv = (y - far) / (near - far)
+            n = terra[int(vv * 60) + 40, int(u * 150) + 160]
+            cor = PERGAMINHO[4] if n > 0.48 else "#b8c4a8"
+            if 0.46 < n < 0.5:
+                cor = "#6a5038"
+            if n > 0.66 and (x + y * 2) % 4 == 0:
+                cor = "#7a6a52"
+            if 0.56 < n < 0.6 and (x * 3 + y) % 5 == 0:
+                cor = "#4a7a3a"
+            if NV_GRAO[y, x] > 0.93:
+                cor = misturar(cor, PERGAMINHO[1], 0.3)
+            # borda do papel e cantos enrolados
+            if x == int(round(xa)) or x == int(round(xb)) - 1 or y in (far, near - 1):
+                cor = PERGAMINHO[2]
+            c.p(x, y, cor)
+    # montanhas (^) em terra alta
+    for (mx, my) in ((236, 114), (241, 115), (246, 114), (270, 120), (274, 121)):
+        c.p(mx, my, "#5a4430")
+        c.p(mx - 1, my + 1, "#5a4430")
+        c.p(mx + 1, my + 1, "#8a7050")
+        c.p(mx, my - 1, "#f4ecd8")
+    # rio
+    for i in range(18):
+        c.p(250 + i * 0.8, 114 + i * 0.6 + math.sin(i * 0.8), "#4a7aa8")
+    # rota tracejada até o X
+    pts = [(222, 124), (232, 120), (246, 121), (258, 117), (276, 116)]
+    for (a, b) in zip(pts, pts[1:]):
+        n = int(math.hypot(b[0] - a[0], b[1] - a[1]))
+        for i in range(n):
+            if i % 3 < 2:
+                t = i / n
+                c.p(round(a[0] + (b[0] - a[0]) * t), round(a[1] + (b[1] - a[1]) * t), "#b82020")
+    c.bitmap(276, 114, ["#.#", ".#.", "#.#"], {"#": "#d82020"})
+    # rosa dos ventos no canto de baixo
+    rx, ry = 290, 124
+    c.linha(rx - 4, ry, rx + 4, ry, "#5a4430")
+    c.linha(rx, ry - 3, rx, ry + 3, "#5a4430")
+    c.p(rx, ry - 3, "#b82020")
+    c.p(rx, ry, METAIS["ouro"][4])
+    # peões e bandeirinhas
+    brilhos = []
+    for (px_, py_, cor) in ((228, 121, "#c8302a"), (252, 118, "#2c5aa8"), (264, 124, "#2c8a4a"), (276, 112, METAIS["ouro"][4])):
+        c.p(px_ + 1, py_ + 1, "#000000", 0.35)
+        c.ret(px_, py_ - 2, 1, 3, cor)
+        c.p(px_, py_ - 3, cor)
+        c.p(px_ - 1, py_, cor)
+        c.p(px_ + 1, py_, misturar(cor, "#000000", 0.4))
+        c.p(px_, py_ - 3, misturar(cor, "#ffffff", 0.5))
+        brilhos.append((px_, py_ - 3))
+    c.ret(240, 112, 1, 4, "#3a2a1a")
+    c.ret(241, 112, 3, 2, "#e8c040")
+    # canto enrolado (perto, à direita) e o fêmur de peso no canto de trás
+    for j in range(4):
+        c.ret(xb1 - 4 + j, near - 4 + j, 4 - j, 1, PERGAMINHO[5] if j < 2 else PERGAMINHO[3])
+    c.bitmap(214, 109, [".#.........#.", "##.........##", ".###########.", "##.........##", ".#.........#."],
+             {"#": OSSO[1]})
+    c.ret(216, 111, 9, 1, OSSO[0])
+    c.ret(216, 113, 9, 1, OSSO[3])
+    # lupa sobre o mapa
+    c.disco(262, 123, 2.6, ("#d8eaf4", "#9ab8cc", "#5a7a8a"))
+    c.p(261, 122, "#ffffff")
+    for i in range(4):
+        c.p(264 + i, 125 + i // 2, MADEIRA[3])
+    return brilhos
+
+
+def c_mesa(per: dict, fogo: Camada, luzes: list) -> tuple[Camada, Camada, list]:
+    """Cadeiras, a mesa redonda de pé central entalhado, o mapa, o livro-razão, pena e tinteiro, velas, moedas."""
+    c = Camada()
+    cx, cy, rx, ry = C_MESA
+    # cadeiras de trás (só o espaldar aparece) e a da esquerda, de lado
+    c_cadeira(c, 204, 16, 86, 112, 112)
+    c_cadeira(c, 280, 16, 84, 112, 112)
+    # tampo: elipse de carvalho com tábuas radiais e borda moldurada
+    for y in range(cy - ry - 1, cy + ry + 5):
+        for x in range(cx - rx - 1, cx + rx + 2):
+            d = math.hypot((x + 0.5 - cx) / rx, (y + 0.5 - cy) / ry)
+            d_b = math.hypot((x + 0.5 - cx) / rx, (y + 0.5 - cy - 4) / ry)
+            if d <= 1:
+                v = NV_MADEIRA[(y * 7) % H, x % W] * 0.6 + NV_MADEIRA2[(y * 3) % H, (x * 2) % W] * 0.4
+                k = 4 if v > 0.62 else 3 if v > 0.36 else 2
+                if d > 0.93:
+                    k = 5 if y < cy else 4
+                if 0.86 < d < 0.89:
+                    k = 1
+                c.p(x, y, CARVALHO[k])
+            elif d_b <= 1 and y >= cy:
+                # espessura da borda (meia elipse da frente)
+                u = (x + 0.5 - cx) / rx
+                c.p(x, y, CARVALHO[3] if u < -0.4 else CARVALHO[2] if u < 0.5 else CARVALHO[1])
+                if d_b > 0.96 or y == cy + ry + 3:
+                    c.p(x, y, CARVALHO[0])
+    # pé central: coluna torneada e garras
+    for y in range(cy + ry + 4, 146):
+        t = (y - cy - ry - 4) / (146 - cy - ry - 4)
+        meia = 5 + 3 * abs(math.sin(t * math.pi * 2.2)) if t < 0.75 else 6 + (t - 0.75) * 30
+        for x in range(int(cx - meia), int(cx + meia) + 1):
+            u = (x - cx) / max(meia, 1)
+            c.p(x, y, CARVALHO[4] if u < -0.4 else CARVALHO[3] if u < 0.2 else CARVALHO[2] if u < 0.7 else CARVALHO[1])
+    for lado in (-1, 1):
+        for j in range(5):
+            c.ret(cx + lado * (8 + j * 2) - (2 if lado < 0 else 0), 141 + j // 2, 3, 2, CARVALHO[3] if lado < 0 else CARVALHO[2])
+        c.disco(cx + lado * 18, 145, 1.6, (METAIS["ouro"][5], METAIS["ouro"][3], METAIS["ouro"][1]))
+    ocl = Camada()
+    ocl.c[:] = c.c
+    g = np.random.default_rng(271)
+    brilhos = c_mapa(c, g)
+    # livro-razão aberto: capa de couro, páginas com colunas de números, fita
+    lx0, ly0 = 190, 120
+    c.ret(lx0 - 1, ly0 - 1, 24, 9, "#5a1a14")
+    c.ret(lx0 - 1, ly0 + 7, 24, 1, "#3a0e0a")
+    for y in range(ly0, ly0 + 7):
+        for x in range(lx0, lx0 + 22):
+            meio_p = abs(x - (lx0 + 11)) < 1
+            cor = PERGAMINHO[5] if x < lx0 + 11 else PERGAMINHO[4]
+            if meio_p:
+                cor = PERGAMINHO[2]
+            elif (y - ly0) % 2 == 1 and ((x - lx0) % 11) not in (0, 1, 10) and (x * 7 + y * 3) % 5:
+                cor = "#4a3a2a" if (x - lx0) % 11 < 7 else "#a82a24"
+            c.p(x, y, cor)
+    c.ret(lx0 + 11, ly0 + 7, 1, 3, "#c8302a")
+    # tinteiro e pena
+    c.disco(217.5, 120, 2.2, ("#4a5a6a", "#1a222a", "#0a0e12"))
+    c.ret(216, 117, 3, 1, "#2a3440")
+    for i in range(10):
+        x, y = 218 + i * 0.6, 117 - i
+        c.p(x, y, "#f4f0e8" if i > 2 else "#c8c0b0")
+        if i > 3:
+            c.p(x + 1, y, "#d8d0c4" if i % 2 else "#ffffff")
+            c.p(x - 1, y + 1, "#b8b0a0", 0.8)
+    # selo de cera e o bastão de lacre
+    c.ret(232, 126, 6, 1, "#b02020")
+    c.ret(232, 127, 6, 1, "#7a1010")
+    c.ret(240, 124, 2, 3, MADEIRA[3])
+    c.disco(241, 127.2, 1.4, (METAIS["ouro"][5], METAIS["ouro"][3], METAIS["ouro"][1]))
+    # castiçais altos de prata e as velas
+    for (xv, yb, alt) in ((227, 113, 7), (291, 116, 6)):
+        m = METAIS["prata"]
+        c.ret(xv - 2, yb - 1, 5, 1, m[3])
+        c.ret(xv - 2, yb - 1, 2, 1, m[5])
+        c.ret(xv, yb - 9, 1, 8, m[4])
+        c.p(xv, yb - 6, m[6])
+        c.ret(xv - 1, yb - 10, 3, 1, m[5])
+        vela(c, fogo, xv, yb - 10, alt, per["velas"] >= 1, luzes, 1.0, 34)
+    # pilhas de moedas e uma bolsa
+    for (mx, my, n) in ((300, 125, 5), (305, 123, 3), (296, 127, 2)):
+        for k in range(n):
+            c.ret(mx - 2, my - k, 5, 1, METAIS["ouro"][4] if k % 2 else METAIS["ouro"][3])
+            c.p(mx - 2, my - k, METAIS["ouro"][5])
+        brilhos.append((mx - 1, my - n))
+    c.disco(306, 128, 2.6, ("#a87a4a", "#7a4a24", "#4a2a12"), achatar=0.7)
+    c.ret(305, 125, 3, 1, "#c8a040")
+    # cadeira da esquerda, de lado, na frente da mesa
+    c_cadeira(c, 168, 12, 92, 126, 142, lado=True)
+    ocl2 = Camada()
+    ocl2.c[:] = c.c
+    return c, ocl2, brilhos
+
+
+def c_cofre(c: Camada, fogo: Camada, brilhos: list) -> None:
+    """O cofre de ferro: frente rebitada com chapas, cantoneiras de latão, o disco do segredo com marcas, o volante
+    da maçaneta, o espelho da fechadura, pés de bola; em cima, livros-razão e uma bolsinha; moedas no chão."""
+    x0, y0, w, h = C_COFRE
+    f = FERRO
+    ouro = METAIS["ouro"]
+    # lateral direita (em perspectiva) e tampo
+    for y in range(y0 - 3, y0 + h):
+        for x in range(x0 + w, x0 + w + 6):
+            topo = y0 - 3 + (x - x0 - w) * 0.5
+            if y >= topo:
+                c.p(x, y, f[1] if (y + x) % 9 else f[0])
+    for y in range(y0 - 3, y0):
+        for x in range(x0 + (y0 - y) * 2 - 6 + 6, x0 + w + (y0 - y) * 2):
+            c.p(x, y, f[4] if y == y0 - 3 else f[3])
+    # frente
+    for y in range(y0, y0 + h):
+        for x in range(x0, x0 + w):
+            v = NV_GRAO[y, x]
+            c.p(x, y, f[3] if v > 0.6 else f[2])
+    c.ret(x0, y0, w, 1, f[5])
+    c.ret(x0, y0, 1, h, f[4])
+    c.ret(x0 + w - 1, y0, 1, h, f[1])
+    c.ret(x0, y0 + h - 1, w, 1, f[0])
+    # porta com moldura e rebites
+    px0, py0, pw, ph = x0 + 4, y0 + 4, w - 8, h - 8
+    c.ret(px0, py0, pw, ph, f[2])
+    c.ret(px0, py0, pw, 1, f[1])
+    c.ret(px0, py0, 1, ph, f[1])
+    c.ret(px0 + pw - 1, py0, 1, ph, f[4])
+    c.ret(px0, py0 + ph - 1, pw, 1, f[4])
+    for x in range(x0 + 2, x0 + w - 1, 4):
+        for y in (y0 + 2, y0 + h - 3):
+            c.p(x, y, f[6])
+            c.p(x + 1, y + 1, f[0])
+    for y in range(y0 + 6, y0 + h - 4, 4):
+        for x in (x0 + 2, x0 + w - 3):
+            c.p(x, y, f[6])
+            c.p(x + 1, y + 1, f[0])
+    # cantoneiras de latão
+    for (cx_, cy_, sx, sy) in ((x0, y0, 1, 1), (x0 + w - 1, y0, -1, 1), (x0, y0 + h - 1, 1, -1), (x0 + w - 1, y0 + h - 1, -1, -1)):
+        for i in range(5):
+            for j in range(5 - i):
+                c.p(cx_ + sx * i, cy_ + sy * j, ouro[4] if i + j < 2 else ouro[3] if i + j < 4 else ouro[2])
+    # disco do segredo
+    dx_, dy_ = x0 + 17, y0 + h // 2
+    c.disco(dx_ + 0.5, dy_ + 0.5, 7.5, (f[5], f[4], f[1]))
+    c.disco(dx_ + 0.5, dy_ + 0.5, 5.2, (ouro[5], ouro[3], ouro[1]))
+    c.disco(dx_ + 0.5, dy_ + 0.5, 2.5, (f[4], f[2], f[0]))
+    for k in range(16):
+        a = k / 16 * math.tau
+        c.p(round(dx_ + 0.5 + math.cos(a) * 6.6 - 0.5), round(dy_ + 0.5 + math.sin(a) * 6.6 - 0.5), f[6] if k % 4 == 0 else f[1])
+    c.p(dx_, dy_ - 7, "#d83020")
+    c.p(dx_ - 2, dy_ - 2, "#ffffff")
+    brilhos.append((dx_ - 2, dy_ - 3))
+    # volante da maçaneta
+    vx, vy = x0 + 34, y0 + h // 2
+    for k in range(3):
+        a = k / 3 * math.tau + 0.4
+        c.linha(vx, vy, vx + math.cos(a) * 5, vy + math.sin(a) * 5, ouro[3])
+        c.disco(vx + math.cos(a) * 5 + 0.5, vy + math.sin(a) * 5 + 0.5, 1.2, (ouro[6], ouro[4], ouro[2]))
+    c.disco(vx + 0.5, vy + 0.5, 1.6, (ouro[5], ouro[3], ouro[1]))
+    # espelho da fechadura
+    c.ret(x0 + 31, y0 + h - 11, 6, 6, ouro[3])
+    c.ret(x0 + 31, y0 + h - 11, 6, 1, ouro[5])
+    c.ret(x0 + 33, y0 + h - 10, 2, 2, "#000000")
+    c.p(x0 + 33, y0 + h - 8, "#000000")
+    # placa do fabricante
+    c.ret(x0 + 12, y0 + 6, 24, 3, ouro[2])
+    c.ret(x0 + 13, y0 + 7, 22, 1, ouro[4])
+    for x in range(x0 + 15, x0 + 33, 2):
+        c.p(x, y0 + 7, ouro[1])
+    # pés
+    for xp in (x0 + 3, x0 + w - 6):
+        c.disco(xp + 1.5, y0 + h + 1, 2, (f[5], f[3], f[1]))
+    # livros-razão e a bolsinha em cima
+    for k, cor in enumerate(("#5a1a14", "#1a3a5a", "#3a2a1a")):
+        c.ret(x0 + 6 + k, y0 - 6 - k * 3, 22 - k * 2, 3, cor)
+        c.ret(x0 + 6 + k, y0 - 6 - k * 3, 22 - k * 2, 1, misturar(cor, "#ffffff", 0.25))
+        c.ret(x0 + 27 - k, y0 - 5 - k * 3, 1, 2, PERGAMINHO[4])
+    c.disco(x0 + 36, y0 - 6, 3.4, ("#b8844a", "#8a5a2a", "#4a2a12"), achatar=0.8)
+    c.ret(x0 + 35, y0 - 10, 3, 1, ouro[3])
+    # moedas que escaparam, no chão
+    for (mx, my) in ((x0 - 4, y0 + h + 3), (x0 - 9, y0 + h + 6), (x0 + 6, y0 + h + 7), (x0 - 1, y0 + h + 8)):
+        c.ret(mx, my, 3, 1, ouro[4])
+        c.p(mx, my, ouro[6])
+        brilhos.append((mx, my))
+
+
+def c_lustre(c: Camada, fogo: Camada, cx: int, y: int, larg: int, acesa: bool, luzes: list) -> None:
+    """Lustre de anel de ferro com velas e pingentes de cristal."""
+    for yy in range(8, y - 5):
+        c.p(cx, yy, FERRO[4] if yy % 2 else FERRO[2])
+    for lado in (-1, 1):
+        c.linha(cx, y - 5, cx + lado * larg // 2, y, FERRO[3])
+    meia = larg // 2
+    for i in range(-meia, meia + 1):
+        yy = y + round(2 * (1 - (i / meia) ** 2))
+        c.p(cx + i, yy, FERRO[4] if i < 0 else FERRO[2])
+        c.p(cx + i, yy + 1, FERRO[1])
+        c.p(cx + i, y - round(1.4 * (1 - (i / meia) ** 2)) + 1, FERRO[2], 0.8)
+    for i in range(-meia, meia + 1, max(3, larg // 6)):
+        yy = y + round(2 * (1 - (i / meia) ** 2))
+        vela(c, fogo, cx + i, yy, 3, acesa, luzes, 0.45, 26)
+        c.p(cx + i, yy + 2, "#c8e0ff")
+        c.p(cx + i, yy + 3, "#ffffff", 0.6)
+
+
+def c_frente() -> Camada:
+    """Primeiro plano desfocado: cesto de rolos à esquerda, globo terrestre no pé à direita."""
+    c = Camada()
+    for y in range(128, H):
+        meia = 18 + (y - 128) * 0.15
+        for x in range(int(26 - meia), int(26 + meia)):
+            trama = (x + y) % 3 == 0 or (x - y) % 4 == 0
+            c.p(x, y, "#7a5a32" if trama else "#a07a46")
+    c.elipse(26, 128, 18, 2.5, "#4a3420")
+    for (rx, ry) in ((16, 120), (22, 116), (30, 118), (36, 122), (26, 112)):
+        for j in range(12):
+            c.p(rx + j * 0.2, ry + j, PERGAMINHO[3])
+            c.p(rx + 1 + j * 0.2, ry + j, PERGAMINHO[2])
+        c.disco(rx + 0.5, ry, 1.6, (PERGAMINHO[5], PERGAMINHO[3], PERGAMINHO[1]))
+    # globo
+    gx, gy, gr = 470, 124, 14
+    for y in range(gy - gr, gy + gr + 1):
+        for x in range(gx - gr, gx + gr + 1):
+            d = math.hypot(x - gx, y - gy)
+            if d <= gr:
+                n = NV_MADEIRA[(y * 3) % H, (x * 5) % W]
+                cor = "#4a7a5a" if n > 0.55 else "#3a5a8a"
+                if x - gx < -gr * 0.3 and y - gy < 0:
+                    cor = misturar(cor, "#ffffff", 0.2)
+                if x - gx > gr * 0.4:
+                    cor = misturar(cor, "#000000", 0.35)
+                c.p(x, y, cor)
+    for k in range(-gr - 2, gr + 3):
+        a = k / (gr + 2)
+        c.p(gx + round(math.sin(a * 1.4) * (gr + 2) * 0.3) - 1, gy + k, METAIS["ouro"][3])
+    c.ret(gx - 2, gy + gr + 1, 4, 14, MADEIRA[3])
+    c.ret(gx - 10, H - 4, 20, 4, MADEIRA[2])
+    return c
+
+
+def c_sombras() -> Camada:
+    c = Camada()
+    cx, cy, rx, ry = C_MESA
+    for y in range(cy, 150):
+        for x in range(cx - rx - 6, cx + rx + 8):
+            d = math.hypot((x - cx - 3) / (rx + 2), (y - 140) / 10)
+            if d < 1:
+                c.p(x, y, "#000000", 0.55 * (1 - d) ** 0.6)
+    x0, y0, w, h = C_COFRE
+    c.ret(x0 - 2, y0 + h - 1, w + 12, 4, "#000000", 0.5)
+    c.elipse(176, 142, 12, 2, "#000000", 0.45)
+    return c
+
+
+def montar_conselho(nome: str) -> Image.Image:
+    per = PERIODOS[nome]
+    fogo = Camada()
+    luzes: list = []
+    fundo, vidro, vidro_cor = c_parede(per, nome, fogo, luzes)
+    chao = c_chao()
+    fundo.c[C_CHAO:] = np.where(chao.c[C_CHAO:, :, 3:4] > 0, chao.c[C_CHAO:], fundo.c[C_CHAO:])
+    meio, ocl, brilhos = c_mesa(per, fogo, luzes)
+    c_cofre(meio, fogo, brilhos)
+    ocl.c = np.maximum(ocl.c, meio.c * (np.arange(W)[None, :, None] > 390))
+    c_lustre(meio, fogo, C_MESA[0], 24, 34, per["velas"] >= 2, luzes)
+    # o negatoscópio: luz fria e fraca (mais visível à noite)
+    luzes.append((348, 41, 30, "#9ac0ff", {"manha": 0.1, "tarde": 0.12, "noite": 0.35}[nome]))
+    img = compor(per, fundo, meio, c_frente(), fogo, c_sombras(), vidro, vidro_cor, luzes, C_CHAO, ocl,
+                 feixe_colorido=True, comp_feixe=90)
+    # brilho do negatoscópio (emissivo) e cintilância do metal
+    rad = np.zeros((H, W), dtype=np.float32)
+    rad[24:58, 334:362] = {"manha": 0.25, "tarde": 0.3, "noite": 0.7}[nome]
+    ra = desfocar(ampliar(rad[:, :, None]), 1.0)
+    img += img * ra * 1.2
+    xs = np.mgrid[0:H * ESC, 0:W * ESC][1]
+    for (bx, by) in brilhos:
+        X, Y = int(bx * ESC + 1), int(by * ESC + 1)
+        if not (6 < X < W * ESC - 6 and 6 < Y < H * ESC - 6):
+            continue
+        forca = 0.5 + float(img[Y, X].mean()) * 0.8
+        r = 3 + int(forca * 2)
+        for d in range(-r, r + 1):
+            k = (1 - abs(d) / (r + 1)) ** 2 * forca * 0.7
+            img[Y + d, X] += k * hexa("#fff4d8")
+            img[Y, X + d] += k * hexa("#fff4d8")
+    return acabamento(img, per, esquerda=0.38, seed=131)
+
+
 # ─────────────────────────────── Saída ───────────────────────────────
-CENAS = {"guilda": montar_guilda}
+CENAS = {"guilda": montar_guilda, "conselho": montar_conselho}
 
 
 def main() -> None:

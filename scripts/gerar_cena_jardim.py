@@ -1542,7 +1542,7 @@ def montar(nome: str) -> Image.Image:
     folhas = ruido(61, 7) * 0.6 + ruido(62, 3) * 0.4
     salpico = np.floor(suave(0.4, 0.62, folhas) * 3.99) / 3
     salpico = desfocar(ampliar(salpico[:, :, None]), 0.8)[:, :, 0]
-    sob_carvalho = (1 - suave(150, 215, GXa)) * (GYa > 60)
+    sob_carvalho = (1 - suave(150, 215, GXa)) * suave(70, 86, GYa)
     if nome == "manha":
         mapa_sol = 1 - sob_carvalho * (1 - salpico * 0.85)
     elif nome == "tarde":
@@ -1627,7 +1627,7 @@ def montar(nome: str) -> Image.Image:
         f = (facho(150, 0, 236, 128, 6, 22, 1.6) * 0.8 + facho(186, 0, 286, 118, 4, 14, 1.6) * 0.6 +
              facho(118, 10, 176, 120, 3, 9, 1.5) * 0.45)
         f = f * np.clip(1.25 - GYa / 160, 0, 1) * (0.55 + 0.7 * poe) * suave(30, 70, GYa)
-        f = desfocar(f[:, :, None], 2.5)[:, :, 0] * (1 - obj_a * 0.5) * (0.25 + 0.75 * alfas[6] + 0.6 * e_chao)
+        f = desfocar(f[:, :, None], 2.5)[:, :, 0] * (1 - obj_a * 0.5) * np.clip(0.75 * alfas[6] + 0.6 * e_chao, 0, 1)
         img += f[:, :, None] * hexa("#fff0c0") * 0.4
         cor_poeira, peso_poeira = "#fff6d8", f * 1.6
     elif nome == "tarde":
