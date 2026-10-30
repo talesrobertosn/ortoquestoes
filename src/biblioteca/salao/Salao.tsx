@@ -485,8 +485,26 @@ function PopLombada({ pop, leitura, indice, fechado, aoAbrir, aoFechar }: { pop:
   const x = Math.max(12 + largura / 2, Math.min(window.innerWidth - 12 - largura / 2, pop.x))
   const embaixo = pop.topo < 300
   const estilo = { left: x, top: embaixo ? pop.base + 12 : pop.topo - 12, width: largura, '--capa': corDaCapa(c.livro) } as CSSProperties
-  return (
-    <div id="sl-pop" role="tooltip" className={`sl-pop${embaixo ? ' sl-pop--embaixo' : ''}${pop.preso ? ' sl-pop--preso' : ''}`} style={estilo}>
+  // No celular o cartão fica preso embaixo: fecha pelo X, tocando fora, arrastando para baixo ou com Esc
+  // (pedido do Tales, 30/10/2026: "é difícil fechar").
+  const inicioToque = useRef<number | null>(null)
+  const [arrasto, definirArrasto] = useState(0)
+  useEffect(() => {
+    if (!pop.preso) return
+    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') aoFechar() }
+    window.addEventListener('keydown', tecla)
+    return () => window.removeEventListener('keydown', tecla)
+  }, [pop.preso, aoFechar])
+  return (<>
+    {pop.preso && <div className="sl-pop-fundo" onClick={aoFechar} aria-hidden="true" />}
+    <div id="sl-pop" role={pop.preso ? 'dialog' : 'tooltip'} aria-label={pop.preso ? `Dados do livro: ${c.titulo}` : undefined}
+      className={`sl-pop${embaixo ? ' sl-pop--embaixo' : ''}${pop.preso ? ' sl-pop--preso' : ''}`}
+      style={pop.preso && arrasto > 0 ? { ...estilo, transform: `translateY(${arrasto}px)`, transition: 'none' } : estilo}
+      onTouchStart={(e) => { if (pop.preso) inicioToque.current = e.touches[0].clientY }}
+      onTouchMove={(e) => { if (inicioToque.current !== null) definirArrasto(Math.max(0, e.touches[0].clientY - inicioToque.current)) }}
+      onTouchEnd={() => { if (inicioToque.current !== null && arrasto > 70) aoFechar(); inicioToque.current = null; definirArrasto(0) }}>
+      {pop.preso && <span className="sl-pop__alca" aria-hidden="true" />}
+      {pop.preso && <button type="button" className="sl-pop__fechar" onClick={aoFechar} aria-label="Fechar"><Icone nome="fechar" tamanho={22} /></button>}
       <p className="sl-pop__livro"><b>{apelidoLivro(c.livro)}</b> · {c.capitulo.split('·')[0].trim()}<span className={`sl-raridade sl-raridade--${r}`}><span className={`sl-gema sl-gema--${r}`} /> {NOME_RARIDADE[r]}</span></p>
       <strong className="sl-pop__titulo">{c.titulo}</strong>
       <dl className="sl-pop__dados">
@@ -501,7 +519,7 @@ function PopLombada({ pop, leitura, indice, fechado, aoAbrir, aoFechar }: { pop:
         ? <div className="sl-pop__acoes"><button type="button" className="rs-botao-ouro" onClick={aoAbrir}><Icone nome="livro" tamanho={16} /> Abrir a ficha</button><button type="button" className="botao" onClick={aoFechar}>Fechar</button></div>
         : <p className="sl-pop__dica">Clique para abrir a ficha</p>}
     </div>
-  )
+  </>)
 }
 
 /** A ficha do livro, como um item de inventário: raridade, atributos e o botão de leitura. */

@@ -8,7 +8,7 @@ import { ler, gravar } from '../../estado/armazenamento'
 
 export type IdSegredo =
   | 'passagem' | 'gato' | 'garden' | 'codman' | 'cafe' | 'gesso' | 'lowell' | 'coruja' | 'lanterna'
-  | 'madrugada' | 'orto' | 'relogio' | 'escada' | 'cap404' | 'sazonal' | 'gatoMenu' | 'relogioMenu'
+  | 'madrugada' | 'orto' | 'relogio' | 'escada' | 'cap404' | 'sazonal'
 
 export interface Segredo { id: IdSegredo; nome: string; pista: string }
 
@@ -28,8 +28,6 @@ export const SEGREDOS: Segredo[] = [
   { id: 'escada', nome: 'O livro mais alto', pista: 'Suba a escada da biblioteca.' },
   { id: 'cap404', nome: 'O capítulo 404', pista: 'Procure um capítulo que ainda não foi escrito.' },
   { id: 'sazonal', nome: 'Visita de época', pista: 'Volte no fim de outubro ou em dezembro.' },
-  { id: 'gatoMenu', nome: 'O gato fugiu para o menu', pista: 'Ele também cochila fora do salão.' },
-  { id: 'relogioMenu', nome: 'Voltar no tempo', pista: 'No menu, o tempo também anda para trás.' },
 ]
 
 const CHAVE = 'resumos:segredos'
