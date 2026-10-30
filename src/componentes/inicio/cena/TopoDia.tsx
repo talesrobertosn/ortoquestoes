@@ -26,7 +26,7 @@ const TOCHA: Record<DiaSequencia['estado'], number> = { feito: 0, 'hoje-feito': 
 
 /** As folhas de sprites (url() absoluto: relativo em variável CSS some no site publicado). */
 const SPRITES = {
-  '--sprite-fogo': urlCss('pixel/inicio/fogo.png'), '--sprite-tocha': urlCss('pixel/inicio/tocha.png'), '--sprite-esqueleto': urlCss('pixel/inicio/esqueleto.png'),
+  '--sprite-fogo': urlCss('pixel/inicio/fogo.png'), '--sprite-tocha': urlCss('pixel/inicio/tocha.png'),
 } as CSSProperties
 
 /** Período do dia, refeito a cada 5 minutos; o tema escuro força a noite. */

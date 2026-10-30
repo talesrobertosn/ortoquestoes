@@ -1,5 +1,6 @@
 import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type ReactElement } from 'react'
 import { recurso } from '../../../config'
+import { Mascote } from '../../mascote/Mascote'
 import { GATO_ACORDADO, GATO_DORMINDO, PALETA_GATO, type Grade, type Paleta } from '../../../biblioteca/salao/sprites'
 
 /**
@@ -9,7 +10,8 @@ import { GATO_ACORDADO, GATO_DORMINDO, PALETA_GATO, type Grade, type Paleta } fr
  * a fogueira da sequência (scripts/gerar_sprites_inicio.py, um estágio por linha), o esqueleto lendo no tronco e o
  * gato. O "palco" tem a proporção da arte (480 x 200) e cobre o espaço; as posições são porcentagens da arte.
  *
- * Segredos: cinco cliques no esqueleto e ele cochila; dois cliques no gato e ele aparece com uma tala.
+ * O esqueleto é o mascote (componentes/mascote): faz uma coisa diferente a cada visita e fala; dois cliques no gato
+ * e ele aparece com uma tala.
  */
 export type Periodo = 'manha' | 'tarde' | 'noite'
 
@@ -38,10 +40,8 @@ const PixelSvg = memo(function PixelSvg({ grade, paleta }: { grade: Grade; palet
 const lugar = (x: number, y: number, w: number, h: number): CSSProperties => ({ left: `${(x / 480) * 100}%`, top: `${(y / 200) * 100}%`, width: `${(w / 480) * 100}%`, height: `${(h / 200) * 100}%` })
 
 export function CenaDiorama({ linhaFogo, periodo }: { linhaFogo: number; periodo: Periodo }) {
-  const [cliques, definirCliques] = useState(0)
   const [gato, definirGato] = useState<'dormindo' | 'acordado' | 'tala'>('dormindo')
   const palco = useRef<HTMLDivElement>(null)
-  const dormindo = cliques >= 5
 
   // Parallax leve com o mouse (computador, sem "menos animação").
   useEffect(() => {
@@ -76,13 +76,12 @@ export function CenaDiorama({ linhaFogo, periodo }: { linhaFogo: number; periodo
         <span className="hd-luz-fogo" style={{ left: `${(240 / 480) * 100}%`, top: `${(140 / 200) * 100}%`, '--forca': linhaFogo === 0 ? 0.2 : 1 } as CSSProperties} />
         <span className={`hd-fogo hd-fogo--${linhaFogo}`} style={{ ...lugar(220, 104, 40, 48), '--linha': linhaFogo } as CSSProperties} />
         {linhaFogo > 0 && <span className="hd-brasas" style={lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
-        <button type="button" tabIndex={-1} className={'hd-esqueleto' + (dormindo ? ' hd-esqueleto--dormindo' : '')} style={lugar(263, 121, 26, 32)}
-          onClick={() => definirCliques((n) => (n >= 5 ? 0 : n + 1))} />
+        {/* O mascote, sentado no tronco: um comportamento diferente a cada visita (componentes/mascote). */}
+        <Mascote className="hd-mascote" style={lugar(236, 87, 80, 90.67)} />
         <button type="button" tabIndex={-1} className="hd-gato" style={lugar(226, 155, 22, 10)}
           onClick={() => definirGato((g) => (g === 'dormindo' ? 'acordado' : 'tala'))}>
           <PixelSvg grade={gato === 'dormindo' ? GATO_DORMINDO : GATO_ACORDADO} paleta={paletaGato} />
         </button>
-        {dormindo && <span className="hd-balao" style={{ left: `${(276 / 480) * 100}%`, top: `${(116 / 200) * 100}%` }}>Zzz… plantão de 24 h conta?</span>}
         {gato === 'tala' && <span className="hd-balao" style={{ left: `${(237 / 480) * 100}%`, top: `${(150 / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
         <span className="hd-particulas">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>

@@ -73,6 +73,10 @@
   transform: translate(calc(-50% + var(--mx) * -16px), calc(-50% + var(--my) * -8px)) scale(1.03); transition: transform 0.5s ease-out; }
 .hd-palco__fundo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
 .hd-palco > * { position: absolute; }
+.hd-palco > .hd-mascote { position: absolute; pointer-events: auto; }
+.hd-palco--tarde .hd-mascote .mascote__corpo { filter: sepia(0.2) saturate(1.1) drop-shadow(0 3px 0 rgba(0, 0, 0, 0.25)); }
+.hd-palco--noite .hd-mascote .mascote__corpo { filter: brightness(0.92) sepia(0.4) saturate(1.25) drop-shadow(-3px 0 6px rgba(255, 160, 70, 0.45)); }
+.hd-mascote .mascote__balao { font-size: clamp(0.72rem, 1.1cqw, 0.85rem); }
 .hd-fogo { background-image: var(--sprite-fogo); background-repeat: no-repeat; background-size: 600% 800%; background-position: 0 calc(var(--linha) / 7 * 100%); image-rendering: pixelated;
   animation: hd-fogo 0.75s steps(6) infinite; filter: drop-shadow(0 0 10px rgba(255, 170, 70, 0.55)); }
 .hd-fogo--5 { filter: drop-shadow(0 0 12px rgba(90, 160, 255, 0.65)); }
@@ -84,15 +88,9 @@
 .hd-palco--tarde .hd-luz-fogo { --luz: 0.6; }
 .hd-palco--noite .hd-luz-fogo { --luz: 0.95; }
 @keyframes hd-tremula { 0%, 100% { transform: translate(-50%, -50%) scale(1); } 30% { transform: translate(-50%, -50%) scale(1.06); opacity: calc(var(--forca) * var(--luz, 0.4) * 0.8); } 65% { transform: translate(-50%, -50%) scale(0.97); } }
-.hd-esqueleto { padding: 0; border: 0; background: var(--sprite-esqueleto) 0 0 / 400% 100% no-repeat; image-rendering: pixelated; cursor: pointer; pointer-events: auto;
-  animation: hd-ler 5s steps(1) infinite; filter: drop-shadow(-2px 2px 0 rgba(0, 0, 0, 0.25)); }
-@keyframes hd-ler { 0%, 82% { background-position-x: 0; } 83%, 100% { background-position-x: 33.333%; } }
-.hd-esqueleto--dormindo { animation: hd-cochilo 2.4s steps(1) infinite; }
-@keyframes hd-cochilo { 0%, 50% { background-position-x: 66.667%; } 51%, 100% { background-position-x: 100%; } }
 .hd-gato { padding: 0; border: 0; background: none; cursor: pointer; pointer-events: auto; }
-.hd-esqueleto:hover, .hd-gato:hover { filter: brightness(1.15) drop-shadow(0 0 6px rgba(255, 230, 160, 0.6)); }
-.hd-palco--tarde .hd-esqueleto, .hd-palco--tarde .hd-gato { filter: sepia(0.25) saturate(1.1); }
-.hd-palco--noite .hd-esqueleto, .hd-palco--noite .hd-gato { filter: brightness(0.92) sepia(0.45) saturate(1.3); }
+.hd-palco--tarde .hd-gato { filter: sepia(0.25) saturate(1.1); }
+.hd-palco--noite .hd-gato { filter: brightness(0.92) sepia(0.45) saturate(1.3); }
 .hd-balao { transform: translate(-50%, -100%); padding: 0.25rem 0.55rem; white-space: nowrap; background: #fbf3df; color: #1b1208; font-family: var(--fonte-pixel-titulo); font-size: clamp(0.85rem, 1.3cqw, 1.1rem); line-height: 1.1;
   box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px rgba(0, 0, 0, 0.3); animation: hd-balao 0.25s steps(3); }
 .hd-balao::after { content: ""; position: absolute; left: 50%; bottom: -7px; width: 8px; height: 8px; margin-left: -4px; background: #fbf3df; clip-path: polygon(0 0, 100% 0, 50% 100%); }
@@ -330,7 +328,52 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hd-fogo, .hd-status__chama, .hd-tocha__sprite, .hd-luz-fogo, .hd-esqueleto, .hd-brasas i, .hd-particulas i, .hd-cristal::after, .hd-colunas__trilho > span, .hd-estandarte__trofeu, .hd-balao { animation: none; }
+  .hd-fogo, .hd-status__chama, .hd-tocha__sprite, .hd-luz-fogo, .hd-brasas i, .hd-particulas i, .hd-cristal::after, .hd-colunas__trilho > span, .hd-estandarte__trofeu, .hd-balao { animation: none; }
   .hd-brasas, .hd-particulas { display: none; }
   .hd-palco, .hd-regiao, .hd-missao, .hd-losango__pedra { transition: none; }
 }
+
+/* ── O interior dos quadros de sempre, no mundo noturno (30/10/2026) ──
+   Dentro das molduras e dos avisos, as cores do site viram as do acampamento à noite: vidro escuro, filete dourado,
+   verde-água no lugar do verdete. Os quadros com cor própria (Atlas, estante, cronograma, planos, indicação, "Até a
+   prova", Simulado Nacional) ganham cada um um fundo de cena e a mesma tipografia. */
+.hd-moldura, .hd-avisos {
+  --superficie: #141a24; --superficie-2: #1b2230; --traco: rgba(232, 206, 150, 0.22); --traco-forte: rgba(232, 206, 150, 0.4);
+  --grafite: #f3ead6; --ardosia: #c9bc9e; --texto: #f3ead6; --texto-2: #c9bc9e; --fundo: #0e131c;
+  --verdete: #5fd8c0; --verdete-tinta: #8ee8d4; --verdete-veu: rgba(95, 216, 192, 0.12); --sobre-destaque: #0e131c;
+  --ouro: #f0c46a; --ouro-veu: rgba(240, 196, 106, 0.14); --ouro-texto: #f0c46a; --sombra: none; --sombra-media: 0 0 0 1px rgba(232, 206, 150, 0.2);
+  --borda: 1px solid rgba(232, 206, 150, 0.22); --px-borda: rgba(232, 206, 150, 0.5); --px-sombra: rgba(0, 0, 0, 0.45);
+  --heroi: radial-gradient(70% 90% at 15% 0%, rgba(255, 190, 100, 0.16), transparent 60%), linear-gradient(180deg, #121a26, #0b1018);
+  --sobre-heroi: #f6eedb; --sobre-heroi-2: #cfc2a6; --heroi-vidro: rgba(255, 255, 255, 0.05); --heroi-traco: rgba(232, 206, 150, 0.25);
+  --acerto-texto: #8ee08a; --erro-texto: #f0958c; --aviso-texto: #ecc47a; color-scheme: dark;
+}
+.hd-moldura > * { border-radius: 0 !important; }
+.hd-moldura .botao { border-radius: 0; }
+.hd-moldura .botao--ouro, .hd-moldura .botao.botao--ouro { background: linear-gradient(180deg, #ffe7a3, #f0b840 50%, #c48218); color: #1b1208; border-color: #0a0806; box-shadow: 0 0 0 1px #0a0806, 0 0 14px rgba(255, 200, 90, 0.35); }
+.hd-moldura .botao:not(.botao--ouro) { background: rgba(240, 196, 106, 0.06); color: #f0c46a; border-color: rgba(240, 196, 106, 0.55); }
+
+/* Atlas 3D: o gabinete de anatomia à luz de vela. */
+.hd .qa { background: radial-gradient(45% 80% at 72% 55%, rgba(120, 200, 255, 0.16), transparent 70%), radial-gradient(60% 70% at 10% 0%, rgba(255, 190, 100, 0.14), transparent 60%), linear-gradient(180deg, #0f1724, #090d15) !important;
+  border: 0 !important; box-shadow: none !important; color: #f6eedb; }
+/* Estante de resumos: a biblioteca à noite, com a luz de uma lamparina. */
+.hd .er { background: radial-gradient(50% 70% at 25% 10%, rgba(255, 196, 110, 0.2), transparent 65%), linear-gradient(180deg, #1c140e, #120c08) !important; border: 0 !important; box-shadow: none !important; color: #f3ead6; }
+.hd .er :is(h2, strong, p, b) { color: inherit; }
+.hd .er__capa strong { color: #fffaf0 !important; }
+/* Cronograma e "Até a prova": a estrada até o castelo, de noite. */
+.hd .cr-destaque, .hd .ap { background: radial-gradient(50% 80% at 85% 20%, rgba(150, 180, 255, 0.14), transparent 65%), linear-gradient(180deg, #111a28, #0a0f18) !important; border: 0 !important; box-shadow: none !important; }
+/* Planos (baú) e a faixa dos planos. */
+.hd .faixa-planos, .hd .inicio-planos-atalho { background: radial-gradient(60% 120% at 0% 50%, rgba(240, 196, 106, 0.2), transparent 60%), linear-gradient(180deg, #1a1610, #100d08) !important; color: #f6eedb !important; border: 1px solid rgba(240, 196, 106, 0.5) !important; border-radius: 0 !important; box-shadow: 0 0 0 1px #0a0806 !important; }
+.hd :is(.faixa-planos, .inicio-planos-atalho) :is(small, p) { color: #cfc2a6 !important; }
+.hd :is(.faixa-planos, .inicio-planos-atalho) strong { color: #fffaf0 !important; }
+/* Indique e ganhe: o mensageiro. */
+.hd .ig { background: radial-gradient(60% 90% at 90% 50%, rgba(95, 216, 192, 0.14), transparent 65%), linear-gradient(180deg, #13101c, #0b0912) !important; border-radius: 0 !important; border-color: rgba(240, 196, 106, 0.5) !important; }
+/* Simulado Nacional e a novidade dos simulados. */
+.hd .cs-nac, .hd .pe-novidade { border-radius: 0 !important; background: radial-gradient(50% 90% at 100% 0%, rgba(240, 120, 90, 0.16), transparent 65%), linear-gradient(180deg, #181018, #0e0a10) !important; border: 1px solid rgba(240, 196, 106, 0.45) !important; color: #f6eedb; }
+/* "O que a prova mais cobra" e os recursos do assinante: listas no vidro. */
+.hd .hd-moldura > :is(section, div, aside) { background-color: #121823; }
+.hd .pg-recurso, .hd .cx-top > li { background: rgba(255, 255, 255, 0.04) !important; border: 1px solid rgba(232, 206, 150, 0.2) !important; border-radius: 0 !important; }
+.hd .er__desc { color: #d9ccb0 !important; }
+.hd .er__desc b { color: #f0c46a !important; }
+.hd .er__placa { background: rgba(10, 8, 6, 0.75) !important; color: #f3ead6 !important; border-color: rgba(240, 196, 106, 0.55) !important; }
+.hd .er__placa b { color: #fffaf0 !important; }
+.hd .er__placa span { color: #cfc2a6 !important; }

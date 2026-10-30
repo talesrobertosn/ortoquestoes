@@ -1,7 +1,6 @@
 """Sprites animados do topo da página inicial (30/10/2026), feitos do zero por este script (nada baixado nem de IA).
 
 Gera em public/pixel/inicio/:
-- esqueleto.png: o esqueleto de touca cirúrgica sentado no tronco, lendo (2 quadros) e cochilando (2 quadros), 26 x 32 cada;
 - fogo.png: a fogueira da sequência, 8 estágios (linhas, na ordem de estagiosFogueira.ts) x 6 quadros, 40 x 48 cada;
 - tocha.png: a tocha dos dias da semana, 3 estados (acesa, fraca, apagada) x 4 quadros, 14 x 30 cada.
 O CSS amplia com image-rendering: pixelated.
@@ -21,87 +20,6 @@ PASTA = Path(__file__).resolve().parents[1] / "public" / "pixel" / "inicio"
 def cor(h: str, a: int = 255) -> tuple[int, int, int, int]:
     h = h.lstrip("#")
     return (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16), a)
-
-
-# ─────────────────────────────── Esqueleto ───────────────────────────────
-PALETA_ESQ = {"k": "#1b1208", "w": "#f4ecd8", "W": "#c8bca2", "d": "#8a7e6a", "g": "#4fa08a", "G": "#7cc8b0", "r": "#8a3a2a",
-              "p": "#fbf3df", "P": "#d8cdb0", "t": "#6a5a48", "z": "#2a1f14"}
-CABECA = [
-    "..........kkkkkkk.........",
-    ".........kgGggggggk.......",
-    "........kgGgggggggggk.....",
-    "........kkkkkkkkkkkkk.....",
-    "........kwwwwwwwwwwWk.....",
-]
-OLHOS_ABERTOS = [
-    ".......kwwkkkwwwkkkwWk....",
-    ".......kwwkzkwwwkzkwWk....",
-]
-OLHOS_FECHADOS = [
-    ".......kwwwwwwwwwwwwWk....",
-    ".......kwwkkkwwwkkkwWk....",
-]
-ROSTO = [
-    ".......kwwwwwwkwwwwwWk....",
-    "........kwwwwwwwwwwWk.....",
-    "........kwkwkwkwkwkWk.....",
-    ".........kkwwwwwwWkk......",
-    "............kwWk..........",
-    "........kkkkkwWkkkkk......",
-    ".......kwwkwkwWkwkwwk.....",
-    "......kwWk.kwwwWk.kWwk....",
-]
-LIVRO_A = [
-    ".....kkkkkkkkkkkkkkkkkk...",
-    ".....krppppppppkpppppprk..",
-    ".....krpttpttppkptpttprk..",
-    ".....krppppppppkpppppprk..",
-    ".....krpttpttppkpttpttrk..",
-    ".....kkkkkkkkkkkkkkkkkkk..",
-]
-LIVRO_B = [  # a página da direita virando
-    ".....kkkkkkkkkkkkkkkk.....",
-    ".....krppppppppkppppkk....",
-    ".....krpttpttppkpPPPPk....",
-    ".....krppppppppkpPPPPPk...",
-    ".....krpttpttppkkkkkkkkk..",
-    ".....kkkkkkkkkkk..........",
-]
-PERNAS = [
-    "..........kwwwwWWk........",
-    ".........kwwkkkkwwk.......",
-    ".......kkwwk....kwwkk.....",
-    "....kkwwwwk......kwwwwkk..",
-    "....kwWkkk........kkkWwk..",
-    "....kwk..............kwk..",
-    "....kwk..............kwk..",
-    "...kwwWk............kwwWk.",
-    "...kkkkk............kkkkk.",
-]
-
-
-def grade_para_img(linhas: list[str], paleta: dict[str, str], largura: int, altura: int) -> Image.Image:
-    img = Image.new("RGBA", (largura, altura), (0, 0, 0, 0))
-    topo = altura - len(linhas)
-    for y, linha in enumerate(linhas):
-        for x, c in enumerate(linha[:largura]):
-            if c != "." and c in paleta:
-                img.putpixel((x, topo + y), cor(paleta[c]))
-    return img
-
-
-def esqueleto() -> Image.Image:
-    quadros = [
-        CABECA + OLHOS_ABERTOS + ROSTO + LIVRO_A + PERNAS,
-        CABECA + OLHOS_ABERTOS + ROSTO + LIVRO_B + PERNAS,
-        ["." * 26] + CABECA + OLHOS_FECHADOS + ROSTO[:-1] + LIVRO_A + PERNAS,
-        CABECA + OLHOS_FECHADOS + ROSTO + LIVRO_A + PERNAS,
-    ]
-    w, h = 26, 32
-    folha = Image.new("RGBA", (w * len(quadros), h), (0, 0, 0, 0))
-    for i, q in enumerate(quadros):
-        folha.alpha_composite(grade_para_img(q, PALETA_ESQ, w, h), (i * w, 0))
-    return folha
 
 
 # ─────────────────────────────── Fogo ───────────────────────────────
@@ -205,7 +123,7 @@ def tocha() -> Image.Image:
 
 def main() -> None:
     PASTA.mkdir(parents=True, exist_ok=True)
-    for nome, img in (("esqueleto", esqueleto()), ("fogo", fogo()), ("tocha", tocha())):
+    for nome, img in (("fogo", fogo()), ("tocha", tocha())):
         img.save(PASTA / f"{nome}.png", optimize=True)
         print(nome, img.size, (PASTA / f"{nome}.png").stat().st_size, "bytes")
 
