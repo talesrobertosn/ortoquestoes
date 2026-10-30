@@ -1,6 +1,8 @@
 # Orientação permanente para Claude
 
-Leia [AGENTS.md](AGENTS.md). Todo trabalho de comentários segue
+Leia [AGENTS.md](AGENTS.md).
+
+**Prioridade (Tales, 30/10/2026):** refazer os resumos e comentários curtos dos ciclos 3 a 20, conforme [docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md](docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md). Resumo com no mínimo 45 KB, comentário com no mínimo 4,5 mil caracteres; meça com `scripts/biblioteca/medir_profundidade.py` antes de publicar. Todo trabalho de comentários segue
 [docs/padrao-editorial-comentarios.md](docs/padrao-editorial-comentarios.md):
 aula independente, fundamentos e mecanismos explicados, e análise rica de todas
 as alternativas, inclusive a correta. Essa diretriz do dono do projeto substitui

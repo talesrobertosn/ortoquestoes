@@ -2,6 +2,12 @@
 
 Documento único com todas as orientações que o Tales deu ao Claude até 30/10/2026. Vale para o MacBook e para qualquer outro PC.
 
+> **PRIORIDADE MÁXIMA (Tales, 30/10/2026):** os resumos e os comentários dos ciclos 3 a 20 ficaram curtos demais. Antes de seguir a fila, refaça tudo o que está em [docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md](../biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md).
+> - **Resumo:** no mínimo 45 KB (o roteiro sugere 60 a 90 KB).
+> - **Comentário:** no mínimo 4,5 mil caracteres.
+>
+> Meça com `scripts/biblioteca/medir_profundidade.py`.
+
 ## Como começar
 
 ### No Mac (Terminal, uma vez)
@@ -28,11 +34,15 @@ Crie a pasta `$HOME\OrtoQuestoes-Biblioteca` e extraia nela o zip do material de
 
 ### Nos dois
 
-1. Copie para o computador novo o zip mais recente do material de trabalho, `OrtoQuestoes-material-de-trabalho-2026-10-30b.zip` (no Windows antigo, em `Downloads`). Ele traz os lotes, as figuras, os prints e o `CHECKPOINT-GERAL.md`.
+1. Baixe da nuvem o material de trabalho (lotes, figuras, prints e `CHECKPOINT-GERAL.md`). Ele está guardado como rascunho de release no GitHub, visível só para você:
+   ```bash
+   gh release download material-2026-10-30 -R talesrobertosn/ortoquestoes -D ~/Downloads
+   ```
+   Depois, no Mac, rode o `preparar.sh`, que já extrai o zip de Downloads. No Windows, extraia o zip em `OrtoQuestoes-Biblioteca`.
 2. Copie os livros para `OrtoQuestoes-Biblioteca/livros` (os mesmos nomes de arquivo; o Green em capítulos separados).
 3. Abra o Claude Code na pasta do repositório e mande:
 
-> Leia docs/prompts/CONTINUAR-NO-MACBOOK.md e siga tudo, continuamente.
+> Leia docs/prompts/CONTINUAR-NO-MACBOOK.md e siga tudo, continuamente, começando pelo REFAZER-RESUMOS-E-COMENTARIOS.md.
 
 ---
 
@@ -208,6 +218,8 @@ Campbell 2021: a diferença entre a página do PDF e a impressa muda por capítu
 
 ### O que falta
 
+**0. Refazer os resumos e os comentários curtos** (veja `docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md`). Isso vem antes de tudo.
+
 **1. Seguir a fila** (`python3 scripts/biblioteca/fila_editorial.py`). Próximos candidatos:
 - Estadiamento, biópsia e margens (tumores; Campbell cap. 24);
 - Displasias esqueléticas e síndromes (Tachdjian cap. 36);
@@ -235,7 +247,7 @@ Adiados por serem mistos, sem capítulo-fonte único: "Outros temas de trauma" e
 ### Método que funcionou (ciclos 8 a 19)
 1. Liste as oficiais do subtema, usando `oficial()` e `estado_comentario()` de `fila_editorial.py`. Pule as provas protegidas da mão.
 2. Ache o capítulo com `livros.py capitulos`, `titulos` e `buscar`. Extraia com `livros.py ler <livro> p1 p2 > cap.txt` e procure com `scripts/frases_livro.py`.
-3. Escreva `lote_a.py`, com 5 a 10 simulados, e `oficiais.py`, só com as oficiais que o livro sustenta. Ponha `alerta` quando o livro divergir da banca e feche com "O que a banca quis testar".
+3. Leia o capítulo inteiro, não só os trechos das questões. Escreva `lote_a.py`, com 10 a 15 simulados, e `oficiais.py`, só com as oficiais que o livro sustenta. Ponha `alerta` quando o livro divergir da banca e feche com "O que a banca quis testar".
 4. Crie o branch a partir de `origin/claude/pdfs-questoes-tp64dr` e rode `aplicar_lote.py`.
 5. Converta `oficiais.py` em JSON conferindo, para cada questão:
    - que a letra da correta é igual ao gabarito do acervo;
@@ -255,7 +267,7 @@ Adiados por serem mistos, sem capítulo-fonte único: "Outros temas de trauma" e
 - **No Windows:**
   - `aplicar_comentarios.py` às vezes dá `OSError Errno 22` ao gravar `comentarios/ombro-cotovelo.json`; repetir resolve, e depois confira o JSON;
   - caminhos longos de scratchpad quebram o Python, então use uma pasta temporária curta.
-- **Comentários curtos:** a mediana ficou em 1,8 a 2,4 mil caracteres. Mire 2,5 a 3,5 mil, em miniaula, variando o estilo.
+- **Comentários e resumos curtos:** este foi o maior erro. Comentário com menos de 4,5 mil caracteres e resumo com menos de 45 KB não podem ser publicados; meça antes com `medir_profundidade.py`.
 
 ### Tarefa agendada no Windows
 A "OrtoQuestões: retomar a fila editorial" roda no app do Windows até 10h07 de 30/10/2026. Se for continuar em outro computador, desative-a no Windows (app, seção Agendadas), para as duas máquinas não trabalharem ao mesmo tempo.
