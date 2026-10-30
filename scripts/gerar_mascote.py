@@ -264,7 +264,9 @@ MATS: dict[str, Mat] = {
     "couro": Mat(rampa("#1a0f0c", "#2c1a13", "#43281b", "#5c3824", "#784a2e", "#93603a", "#ad7a4c"), hx("#120a08"), rim=0.35, tex=0.08),
     "latao": Mat(rampa("#2a1a08", "#4f3410", "#7a5418", "#a87a26", "#d2a83c", "#f0d670", "#fff4b8"), hx("#170e05"), rim=0.3, brilho=1.0),
     "pano": Mat(rampa("#1a080c", "#2e0d14", "#47121c", "#621a24", "#7e252c", "#9a3536", "#b44c44"), hx("#12060a"), rim=0.4, tex=0.06),
-    "capa": Mat(rampa("#0d0716", "#170d24", "#221333", "#2f1a45", "#3e2358", "#4f2e6c", "#653e82", "#7f5798"), hx("#08040e"), rim=0.55, tex=0.05, luz_pontual=0.55),
+    "capa": (Mat(rampa("#08080b", "#0f0f14", "#17171e", "#202029", "#2a2a35", "#363642", "#454552", "#585866"), hx("#050507"), rim=0.55, tex=0.05, luz_pontual=0.55)
+             if os.environ.get("CAPA") == "escura" else
+             Mat(rampa("#0d0716", "#170d24", "#221333", "#2f1a45", "#3e2358", "#4f2e6c", "#653e82", "#7f5798"), hx("#08040e"), rim=0.55, tex=0.05, luz_pontual=0.55)),
     "forro": Mat(rampa("#07040b", "#0d0812", "#150d1c", "#1e1428"), hx("#05030a"), rim=0.0, amb=0.5, kd=0.4, luz_pontual=0.4),
     # objetos
     "madeira": Mat(rampa("#1c100a", "#311c10", "#4c2e18", "#6a4322", "#8a5c30", "#a87642", "#c49358"), hx("#120a06"), rim=0.3, tex=0.1),
@@ -681,7 +683,7 @@ def perna(t: Tela, r: Rig, p: Pose, lado: str):
 
 # Modelo do rosto (30/10/2026, o Tales escolhe entre modelos): ROSTO=<nome> python3 scripts/gerar_mascote.py
 ROSTO = os.environ.get("ROSTO", "frente_dentes")
-DESCE_CRANIO = {"tres_quartos": -21.0, "frente_liso": -22.0}.get(ROSTO, -26.5)
+DESCE_CRANIO = {"tres_quartos": -21.0, "frente_liso": -22.0, "frente_redondo": -25.0}.get(ROSTO, -26.5)
 
 
 def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
@@ -700,13 +702,15 @@ def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
         f = calota.suave(rosto, 5.0).suave(macas, 2.0)
     else:
         rosto = elipse((v * 0.8, 7.0), 23.0, 11.0)
-        macas = circulo((-22.6 + v * 1.2, 12.0), 3.4) | circulo((22.6 + v * 1.2, 12.0), 3.4)
-        maxila = caixa((0.4 + v * 1.4, 21.4), 13.6 if ROSTO != "frente_pequeno" else 11.0, 5.6, r=3.2)
+        rm = 1.8 if ROSTO == "frente_redondo" else 3.4
+        macas = circulo((-22.6 + v * 1.2, 12.0), rm) | circulo((22.6 + v * 1.2, 12.0), rm)
+        maxila = (caixa((0.4 + v * 1.4, 20.6), 9.0, 4.8, r=3.0) if ROSTO == "frente_redondo"
+                  else caixa((0.4 + v * 1.4, 21.4), 13.6 if ROSTO != "frente_pequeno" else 11.0, 5.6, r=3.2))
         f = calota.suave(rosto, 5.0).suave(macas, 2.0).suave(maxila, 2.6)
     t.pinta(q.forma(f), "osso", 8.0, R=13.0, pid="cranio", uv=uv, semente=51)
     for sx in (-1, 1):
         t.pinta(q.forma(elipse((sx * 21.0 + v * 0.6, 1.0), 3.4, 7.0)), "osso", 0, sobre="cranio", tom=-0.12, uv=uv, semente=51, normal=False)
-        if ROSTO in ("frente_dentes", "frente_pequeno", "frente_brilho"):
+        if ROSTO in ("frente_dentes", "frente_pequeno", "frente_brilho", "frente_redondo"):
             t.pinta(q.forma(elipse((sx * 16.8 + v * 1.3, 17.6), 3.0, 2.6)), "osso", 0, sobre="cranio", tom=-0.16, uv=uv, semente=51, normal=False)
     t.pinta(q.forma(elipse((-7 + v, -16.0), 8.0, 5.5)), "osso", 0, sobre="cranio", tom=0.05, uv=uv, semente=51, normal=False)
     rach = [(9.5, -25.6), (10.6, -22.8), (9.4, -20.6), (12.2, -18.0), (11.6, -15.6), (13.8, -13.4)]
@@ -730,26 +734,36 @@ def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
         t.pinta(q.forma(elipse((v * 1.0, 19.0), 14.0, 2.4)), "osso", 0, sobre="cranio", tom=-0.1, uv=uv, semente=51, normal=False)
     else:
         # de frente: órbitas ovais em pé (menores no modelo "pequeno"), nariz de duas fendas
-        rx, ry = (6.2, 8.0) if ROSTO == "frente_pequeno" else (7.4, 9.6)
+        rx, ry = {"frente_pequeno": (6.2, 8.0), "frente_redondo": (7.6, 7.8)}.get(ROSTO, (7.4, 9.6))
         for sx in (-1, 1):
-            cx = sx * (11.4 if ROSTO == "frente_pequeno" else 12.0) + v * 2.2
-            orb = elipse((cx, 4.2), rx * (1 - 0.1 * v * sx), ry, ang=sx * 8)
+            cx = sx * {"frente_pequeno": 11.4, "frente_redondo": 10.6}.get(ROSTO, 12.0) + v * 2.2
+            orb = elipse((cx, 4.6 if ROSTO == "frente_redondo" else 4.2), rx * (1 - 0.1 * v * sx), ry, ang=sx * 8)
+            if ROSTO == "frente_redondo":
+                # órbitas redondas e bem pretas, como nas referências do ceifador e do esqueleto da picareta
+                t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=-0.35, uv=uv)
+                continue
             t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=0.0, uv=uv)
             t.pinta(q.forma(elipse((cx + sx * 0.4, 5.6), rx * 0.68, ry * 0.69, ang=sx * 8)), "orbita", 0, sobre="cranio", tom=0.12, normal=False)
             if ROSTO == "frente_brilho":
                 # um pontinho de luz no alto de cada órbita
                 gx, gy = cx - 2.2, 0.6
                 t.pinta(q.forma(circulo((gx, gy), 1.25)), "brilho", 8.03, pid="cranio", tom=0.9, sem_contorno=True)
-        for sx in (-1, 1):
-            t.pinta(q.forma(elipse((sx * 1.5 + v * 2.4, 11.4), 0.95, 2.4, ang=sx * -10)), "orbita", 8.01, R=-1.0, pid="cranio", tom=0.05)
+        if ROSTO == "frente_redondo":
+            # nariz pequeno em coração invertido
+            nz = (v * 2.4, 12.4)
+            nariz = (circulo((nz[0] - 1.1, nz[1] - 0.6), 1.25) | circulo((nz[0] + 1.1, nz[1] - 0.6), 1.25)) | poligono([(nz[0] - 2.3, nz[1] - 0.3), (nz[0] + 2.3, nz[1] - 0.3), (nz[0], nz[1] + 2.0)])
+            t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.0, pid="cranio", tom=-0.2)
+        else:
+            for sx in (-1, 1):
+                t.pinta(q.forma(elipse((sx * 1.5 + v * 2.4, 11.4), 0.95, 2.4, ang=sx * -10)), "orbita", 8.01, R=-1.0, pid="cranio", tom=0.05)
         if ROSTO == "frente_liso":
             # sem dentes: só a sombra da curva de baixo do rosto
             t.pinta(q.forma(elipse((v * 1.0, 17.8), 13.0, 2.4)), "osso", 0, sobre="cranio", tom=-0.1, uv=uv, semente=51, normal=False)
         else:
             # uma fileira só de dentes grandes e claros, separados por traços encaixados na grade de pixels
             bx = 0.4 + v * 1.4
-            meia = 10.6 if ROSTO != "frente_pequeno" else 8.0
-            n = 7 if ROSTO != "frente_pequeno" else 5
+            meia = {"frente_pequeno": 8.0, "frente_redondo": 6.6}.get(ROSTO, 10.6)
+            n = {"frente_pequeno": 5, "frente_redondo": 5}.get(ROSTO, 7)
             passo = 2 * meia / n
             t.pinta(q.forma(traco(bezier((bx - meia - 0.4, 18.8), (bx, 18.0), (bx + meia + 0.4, 18.8), 9), 0.55)), "orbita", 0, sobre="cranio", tom=0.2)
             t.pinta(q.forma(traco(bezier((bx - meia + 0.2, 22.6), (bx, 24.2), (bx + meia - 0.2, 22.6), 9), 0.55)), "orbita", 0, sobre="cranio", tom=0.2)
