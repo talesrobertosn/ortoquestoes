@@ -303,10 +303,10 @@ class Montagem:
         ys = np.arange(hh)
         fonte_y = np.clip(2 * yl - ys, 0, hh - 1)
         espelho = self.img[fonte_y]
-        onda = (np.sin(_GXS[0] / 5.0) * 1.5).astype(int)
-        espelho = np.stack([np.roll(espelho[:, :, i], 0, 1) for i in range(3)], 2)
+        # ondulação: cada linha da poça desloca um pouco para os lados
+        desloc = (np.sin(ys / 2.3) * 2).astype(int)
+        espelho = np.stack([espelho[i] if desloc[i] == 0 else np.roll(espelho[i], desloc[i], 0) for i in range(hh)])
         espelho = desfocar(espelho, desfoque)
-        espelho = np.roll(espelho, 1, 1) * 0.5 + espelho * 0.5 + onda[None, :, None] * 0
         m = ampliar(mascara[:, :, None])[:, :, 0]
         m = desfocar(m[:, :, None], 1.5)[:, :, 0] * (ys[:, None] > yl)
         self.img = self.img * (1 - m[:, :, None] * forca) + espelho * hexa("#c8d0ff") * m[:, :, None] * forca
@@ -423,10 +423,6 @@ def torre(c: Camada, e: Camada, cx: int = 398, er: Camada | None = None) -> list
     interior = np.zeros((H, W, 3), dtype=np.float32) + hexa("#3a2220")
     interior = interior + (1 - np.clip(np.abs(_XS - cx) / 16, 0, 1))[:, :, None] * hexa("#5a3020")
     c.mascara(arco, interior)
-    for yy in range(cb_y0 + 1, cb_y1):  # moldura do arco (aduelas)
-        for xx in range(cx - 17, cx + 18):
-            if arco[yy, xx] == 0 and (arco[yy, min(W - 1, xx + 1)] or arco[yy, xx - 1] or arco[max(0, yy - 1), xx] if yy > 0 else 0):
-                pass
     borda = (desfocar(arco[:, :, None], 0.8)[:, :, 0] > 0.05) & (arco == 0) & (_YS > cb_y0 - 2) & (_YS < cb_y1)
     c.mascara(borda.astype(np.float32), "#e6cdbf")
     # Viga e o sino.
@@ -578,7 +574,7 @@ def torre(c: Camada, e: Camada, cx: int = 398, er: Camada | None = None) -> list
     luzes.append((cx + 5, base, 30, 0.6, "#ffaa50", 0.6))
     contorno = (desfocar(porta[:, :, None], 0.8)[:, :, 0] > 0.05) & (porta == 0) & (_YS < base) & (_YS > py0 - 3)
     c.mascara(contorno.astype(np.float32), "#d8c0b8")
-    for (sx_, lado_) in ((px0 - 6, -1), (px0 + 22, 1)):
+    for sx_ in (px0 - 6, px0 + 22):
         c.ret(sx_, py0 + 4, 4, 1, "#2a2030")
         c.ret(sx_, py0 - 3, 4, 7, "#2a2030")
         e.ret(sx_ + 1, py0 - 2, 2, 5, "#ffd890")
@@ -667,7 +663,6 @@ def ampulheta(c: Camada, e: Camada, cx: int, base: int) -> list:
         for kx in (cx - 19, cx + 19):
             c.disco(kx, y + 1.5, 2.4, ("#ffe8a0", "#d09a40", "#6a4418"))
         # remate no centro (botão dourado)
-        yb = y - 2 if not baixo else y + 4
         if not baixo:
             c.disco(cx + 0.5, y - 1.5, 2.2, ("#ffe8a0", "#d09a40", "#6a4418"))
     tampa(topo, False)
@@ -771,14 +766,6 @@ def casa(c: Camada, e: Camada, x0: int, x1: int, base: int, parede_topo: int, cu
         c.ret(chx - 1, cumeeira + 1, 7, 2, "#4a3438")
 
 
-def fumaca(c: Camada, x: float, y: float, seed: int) -> None:
-    g = np.random.default_rng(seed)
-    for k in range(26):
-        t = k / 26
-        c.disco(x + math.sin(t * 5 + seed) * 4 * t + t * 10, y - t * 34, 1.5 + t * 4, ("#a89ab8", "#8a7ca0", "#6e6488"))
-    c.c[:, :, 3] *= 0.32
-
-
 def cena_torre() -> Image.Image:
     luzes: list = []
     ceu = gradiente([(0, "#090c26"), (28, "#1a1d4c"), (58, "#43306a"), (80, "#9a4c70"), (94, "#e07c64"),
@@ -865,9 +852,12 @@ def cena_torre() -> Image.Image:
         meio_c.ret(tx, kb - alt, larg, alt, "#544470")
         meio_c.ret(tx + larg - 2, kb - alt, 2, alt, "#3a2e56")
         meio_c.ret(tx, kb - alt, 1, alt, "#d89aa8")
-        for k in range(larg // 2 + 3):
-            meio_c.ret(tx - 1 + k, kb - alt - (larg // 2 + 2 - k) - 1, larg + 2 - 2 * k, 1, "#2a2448" if k > (larg // 2) else "#3a3060")
-            meio_c.p(tx - 1 + k, kb - alt - (larg // 2 + 2 - k) - 1, "#b07a90")
+        for k in range(larg // 2 + 2):  # telhado cônico: largo embaixo, ponta em cima
+            yk = kb - alt - 1 - k * 2
+            meio_c.ret(tx - 1 + k, yk - 1, larg + 2 - 2 * k, 2, "#3a3060")
+            meio_c.ret(tx + larg // 2, yk - 1, larg // 2 + 1 - k, 2, "#2a2448")
+            meio_c.p(tx - 1 + k, yk - 1, "#b07a90")
+        meio_c.p(tx + larg // 2, kb - alt - 3 - (larg // 2 + 2) * 2, "#3a3060")
     meio_c.ret(kx - 1, kb - 5, 3, 5, "#1e1830")
     meio_c.ret(kx, kb - 37, 1, 7, "#2a2238")
     meio_c.ret(kx + 1, kb - 37, 5, 2, "#e04a3a")
@@ -875,8 +865,9 @@ def cena_torre() -> Image.Image:
     e_longe = Camada()
     for (wx, wy) in ((kx - 1, kb - 19), (kx + 1, kb - 19), (kx, kb - 13), (kx - 12, kb - 11), (kx + 9, kb - 9), (kx - 7, kb - 4),
                      (kx + 5, kb - 4), (kx + 14, kb - 6)):
-        e_longe.p(wx, wy, "#ffd070")
-    e_longe.ret(kx - 1, kb - 3, 3, 3, "#ffb050", 0.8)
+        e_longe.ret(wx, wy, 1, 2, "#ffd070")
+        e_longe.p(wx, wy, "#fff0b0")
+    e_longe.ret(kx - 1, kb - 4, 3, 4, "#ffb050", 0.9)
     luzes.append((kx, kb - 10, 14, 1.0, "#ffb060", 0.4))
     # Caminho em zigue-zague subindo a colina até o portão.
     for (a, b) in (((270, 104), (291, 96)), ((291, 96), (276, 90)), ((276, 90), (287, kb - 1))):
@@ -979,7 +970,6 @@ def cena_torre() -> Image.Image:
     emiss_amp = Camada()
     casa(predios, emiss_p, 434, 492, 140, 104, 80, luzes, 51)
     casa(predios, emiss_p, 326, 370, 133, 108, 92, luzes, 52, chamine=True, tons_telhado=("#7a5a6e", "#5a4058", "#3e2a40"), janelas=(0.5, 0.76))
-    fumo = Camada()
     luzes += torre(predios, emiss_p, 398, emiss_rel)
     luzes += ampulheta(predios, emiss_amp, 322, 152)
     # Canteiros de flores na borda da praça e vasos junto à torre.
@@ -1065,12 +1055,11 @@ def cena_torre() -> Image.Image:
     # ── Montagem.
     m = Montagem(ceu)
     m.camada(longe, 1.8)
-    m.emissivo(e_longe, 0.8, halo=0.6)
     m.camada(meio_c, 0.9)
+    m.emissivo(e_longe, 0.3, halo=0.8)
     m.camada(campo, 0.3)
     m.camada(paralelos)
     m.camada(objetos)
-    m.camada(fumo, 1.5, solida=False)
     m.camada(predios)
     # Ambiente do anoitecer (frio) e a luz do poente vindo do horizonte, à esquerda da torre.
     luzes_poente = [(268, 96, 220, 0.4, "#ff8a6a", 0.28)]
@@ -1089,7 +1078,8 @@ def cena_torre() -> Image.Image:
 
 
 # ═══════════════════════════════ 2. O baú do tesouro ═══════════════════════════════
-def relevo(seed: int, n: int = 160, esticar: float = 1.0, fino: float = 0.18, y0: float = 0, y1: float = H) -> np.ndarray:
+def relevo(seed: int, n: int = 160, esticar: float = 1.0, fino: float = 0.18, y0: float = 0, y1: float = H,
+           torcer: float = 0.0) -> np.ndarray:
     """Mapa de altura de rocha em blocos: células de Voronoi abauladas (cada uma uma pedra), fendas entre elas e
     um ruído fino por cima."""
     g = np.random.default_rng(seed)
@@ -1099,8 +1089,11 @@ def relevo(seed: int, n: int = 160, esticar: float = 1.0, fino: float = 0.18, y0
     f2 = np.full((H, W), 1e9, dtype=np.float32)
     alt = np.zeros((H, W), dtype=np.float32)
     alturas = g.random(n).astype(np.float32)
+    # Coordenadas torcidas por ruído: as bordas das pedras ficam orgânicas, não poligonais.
+    xs = _XS + (ruido(seed + 3, 9) - 0.5) * torcer * 2 + (ruido(seed + 4, 3) - 0.5) * torcer * 0.25
+    ys = _YS + (ruido(seed + 5, 9) - 0.5) * torcer * 2 + (ruido(seed + 6, 3) - 0.5) * torcer * 0.25
     for i in range(n):
-        d = np.sqrt(((_XS - px[i]) / esticar) ** 2 + (_YS - py[i]) ** 2)
+        d = np.sqrt(((xs - px[i]) / esticar) ** 2 + (ys - py[i]) ** 2)
         menor = d < f1
         f2 = np.where(menor, f1, np.minimum(f2, d))
         alt = np.where(menor, alturas[i], alt)
@@ -1195,7 +1188,7 @@ def cena_bau() -> Image.Image:
     fonte = (bx + 2, 104)
     cristal = (458, 82)
     # ── Paredes da caverna, com relevo virado para o ouro e para os cristais.
-    h_parede = relevo(101, 120, esticar=1.3)
+    h_parede = relevo(101, 150, esticar=1.4, torcer=9)
     rampa_parede = ["#0a0e1a", "#121a2c", "#1c283e", "#283850", "#384a62", "#4e6078", "#6e7c92"]
     parede = rocha_iluminada(h_parede, [(fonte[0], fonte[1], 26, 1.15), (cristal[0], cristal[1], 22, 0.55), (150, -30, 60, 0.25)],
                              rampa_parede, forca=2.3, base=0.12)
@@ -1204,7 +1197,6 @@ def cena_bau() -> Image.Image:
     parede *= np.clip(1.2 - dist * 0.6, 0.5, 1)[:, :, None]
     parede *= np.clip(0.55 + _YS / 90, 0, 1)[:, :, None]  # o teto se perde no escuro
     parede *= (0.72 + 0.4 * ruido(105, 34, 10))[:, :, None]  # dobras grandes da rocha
-    ceu = parede  # não há céu: a parede é o fundo
     fundo = Camada()
     fundo.mascara(np.ones((H, W), dtype=np.float32), parede)
 
@@ -1303,7 +1295,7 @@ def cena_bau() -> Image.Image:
 
     # ── Chão de pedra com relevo, poça d'água à esquerda do baú.
     chao = Camada()
-    h_chao = relevo(111, 260, esticar=3.0, y0=115)
+    h_chao = relevo(111, 260, esticar=3.0, y0=115, torcer=5)
     rampa_chao = ["#0c0e16", "#141722", "#1e2230", "#2a2e3c", "#3c3e4c", "#54525e", "#76707a"]
     pedra = rocha_iluminada(h_chao, [(fonte[0], fonte[1] + 10, 18, 1.3), (cristal[0], cristal[1] + 30, 20, 0.4)], rampa_chao, forca=3.0, base=0.22)
     borda_chao = 120 + 3 * np.sin(_XS / 23) + 2 * np.sin(_XS / 7)
@@ -2072,7 +2064,7 @@ def cena_correio() -> Image.Image:
     pb.poligono([(px0 - 4, py0 + 1), ((px0 + px1) / 2, py0 - 10), (px1 + 4, py0 + 1)], "#3e5a8a")
     pb.linha(px0 - 4, py0 + 1, (px0 + px1) / 2, py0 - 10, "#7aa0d0")
     pb.ret(px0 - 4, py0 + 1, px1 - px0 + 8, 1, "#24385a")
-    for fila, yy in enumerate((py0 + 6, py0 + 20)):
+    for yy in (py0 + 6, py0 + 20):
         for k, xx in enumerate((px0 + 8, px0 + 22, px0 + 36)):
             pb.elipse(xx, yy, 2.8, 3.2, "#3a2414")
             pb.elipse(xx - 0.5, yy + 0.5, 2.0, 2.4, "#1a0e08")
@@ -2208,9 +2200,9 @@ def cena_correio() -> Image.Image:
     m.iluminar("#545890", luzes + poente)
     m.emissivo(em, 0, halo=0.35)
     # Poças na rua depois da chuva da tarde, refletindo o correio aceso.
-    pocas = ((ruido(291, 30, 6) > 0.6) & (_YS > 137) & (_XS > 236)).astype(np.float32)
+    pocas = ((ruido(291, 30, 6) > 0.52) & (_YS > 136) & (_XS > 236)).astype(np.float32)
     pocas = np.maximum(pocas, ((ruido(292, 18, 4) > 0.7) & (_YS > 140) & (_XS > 120)).astype(np.float32) * 0.7)
-    m.reflexo(133.5, pocas, 0.55, 1.5)
+    m.reflexo(133.5, pocas, 0.72, 1.2)
     m.emissivo(vaga, 0, halo=1.0)
     m.camada(frente, 6, escurecer=0.45)
     return m.acabar("#ffd8a8", "#1a1a48", esquerda=0.4, centro_v=(0.66, 0.55))
