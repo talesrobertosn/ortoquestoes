@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { carregarCapitulo, carregarIndiceBiblioteca, textosDoCapitulo } from '../biblioteca/conteudo'
 import { resolverAncora } from '../biblioteca/ancoras'
 import { CORES, type Capitulo, type CorMarca, type IndiceBiblioteca, type Leitura, type Marca, type ResumoCapitulo } from '../biblioteca/tipos'
-import { CHAVE_CONSULTA_ESTANTE, FILTROS_PADRAO, chaveLivro, consultaDosFiltros, estadoLeitura, filtrarEstante, filtrosAtivos, filtrosDaConsulta, livrosDaEstante, numeroCapitulo, rotuloLivro, type EstadoLeitura, type FiltrosEstante, type OrdemEstante } from '../biblioteca/estante'
+import { CHAVE_CONSULTA_ESTANTE, FILTROS_PADRAO, chaveLivro, consultaDosFiltros, estadoLeitura, filtrarEstante, filtrosAtivos, filtrosDaConsulta, livrosDaEstante, numeroCapitulo, rotuloLivro, apelidoLivro, sobreLivro, capitulosDoResumo, type EstadoLeitura, type FiltrosEstante, type OrdemEstante } from '../biblioteca/estante'
 import { GuiaTour, deveAbrirGuia, usarGuiaNaConta, type PassoGuia } from '../biblioteca/GuiaTour'
 import { usarBiblioteca } from '../biblioteca/usarBiblioteca'
 import { usarIndice } from '../dados/usarIndice'
@@ -123,7 +123,7 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
             <button type="button" className="botao" onClick={() => definirGuia(true)} data-guia="ajuda"><Icone nome="interrogacao" tamanho={16} /> Como usar a Biblioteca</button>
           </div>
         </div>
-        <EstantePixel livros={livros.slice(0, 3).map((l) => ({ rotulo: l.rotulo, cor: corDaArea(l.capitulos[0].especialidade) }))} />
+        <EstantePixel livros={livros.slice(0, 4).map((l) => ({ rotulo: `${apelidoLivro(l.capitulos[0].livro)} · ${l.rotulo.split(' · ')[1]}`, cor: corDaArea(l.capitulos[0].especialidade) }))} />
         <span className="rs-topo__horizonte" aria-hidden="true" />
       </header>
 
@@ -163,6 +163,7 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
 
       {grupos ? grupos.map((g, gi) => <section key={g.chave} className="rs-grupo" aria-labelledby={`rs-l-${gi}`}>
         <h2 id={`rs-l-${gi}`} className="rs-grupo__titulo" style={{ ['--rs-area' as string]: corDaArea(g.capitulos[0].especialidade) }}><i className="rs-grupo__icone" aria-hidden="true" /><span>{g.rotulo.split(' · ')[0]}</span><small>{g.rotulo.split(' · ')[1]}</small><button type="button" className="rs-grupo__filtrar" onClick={() => mudar({ livro: filtros.livro === g.chave ? null : g.chave })} aria-pressed={filtros.livro === g.chave}>{filtros.livro === g.chave ? 'Ver todos os livros' : 'Só este livro'}</button></h2>
+        {sobreLivro(g.capitulos[0].livro) && <p className="rs-grupo__sobre">{sobreLivro(g.capitulos[0].livro)}</p>}
         <ul className="rs-lista">{g.capitulos.map((c, i) => cartao(c, gi === 0 && i === 0))}</ul>
       </section>) : filtrados.length > 0 && <ul className="rs-lista">{filtrados.map((c, i) => cartao(c, i === 0))}</ul>}
 
@@ -216,15 +217,17 @@ function CartaoResumo({ c, fechado, indice, leitura, destaques, guia }: { c: Res
   const estado = estadoLeitura(leitura)
   const provas = provasDoCapitulo(indice, c.questoes)
   const n = numeroCapitulo(c)
+  const caps = capitulosDoResumo(c)
+  const ultimo = caps.length > 1 ? caps[caps.length - 1] : null
   const area = ESPECIALIDADES.find((e) => e.slug === c.especialidade)?.nome ?? c.especialidade
   const pct = estado === 'concluido' ? 100 : leitura?.progresso ?? 0
   return (
     <li className={`rs-cartao rs-cartao--${estado}${fechado ? ' rs-cartao--fechado' : ''}`} style={{ ['--rs-area' as string]: corDaArea(c.especialidade) }} data-guia={guia ? 'cartao' : undefined}>
       <a href={href(`/resumos/${c.id}`)}>
-        <span className="rs-cartao__numero" aria-hidden="true"><small>Cap.</small>{n === Number.MAX_SAFE_INTEGER ? '·' : n}</span>
+        <span className="rs-cartao__numero" aria-hidden="true"><small>{ultimo ? 'Caps.' : 'Cap.'}</small>{n === Number.MAX_SAFE_INTEGER ? '·' : n}{ultimo && <small>{caps.length > 2 ? 'a' : 'e'} {ultimo}</small>}</span>
         <span className="rs-cartao__corpo">
           <span className="rs-cartao__topo">
-            <span className="rs-cartao__ref"><span className="so-leitor">{rotuloLivro(c)}, capítulo {n}. </span>{area}{fechado && <span className="rs-livro__cadeado"><Icone nome="cadeado" tamanho={12} /> Assinantes</span>}</span>
+            <span className="rs-cartao__ref"><span className="so-leitor">{rotuloLivro(c)}, {ultimo ? `capítulos ${n} ${caps.length > 2 ? 'a' : 'e'} ${ultimo}` : `capítulo ${n}`}. </span>{area}{fechado && <span className="rs-livro__cadeado"><Icone nome="cadeado" tamanho={12} /> Assinantes</span>}</span>
             <span className={`rs-estado rs-estado--${estado}`}>{estado === 'concluido' && <Icone nome="certo" tamanho={12} />}{estado === 'andamento' ? `${pct}% lido` : ESTADO_NOME[estado]}</span>
           </span>
           <strong className="rs-cartao__titulo">{c.titulo}</strong>

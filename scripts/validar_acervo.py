@@ -51,7 +51,12 @@ CAMPOS_COMENTARIO = {
     "formato",
     # Só sem gabarito oficial: a letra que a bibliografia sustenta.
     "provavel",
+    # Figuras recortadas dos livros, com fonte e página na legenda (autorizado pelo Tales em 30/10/2026).
+    "imagens",
 }
+# "Por que esta questão foi criada" fala de nós como autores: só cabe em OrtoQuestões Simulados.
+# Na prova oficial, o fecho fala da banca (Tales, 30/10/2026).
+FECHO_SIMULADO = "Por que esta questão foi criada"
 
 # Ferramentas de leitura elidem o meio de arquivos grandes. Quando essa
 # elisão é gravada de volta, o arquivo perde conteúdo de forma silenciosa —
@@ -62,6 +67,7 @@ MARCAS_TRUNCAMENTO = ("bytes omitted", "chars omitted", "characters omitted", "l
 def conferir_comentarios(
     gabaritos: dict[str, str | None],
     letras: dict[str, set[str]],
+    simulados: set[str] = frozenset(),
 ) -> tuple[list[str], list[str], int]:
     """Valida os arquivos de comentário contra as questões do acervo."""
     erros: list[str] = []
@@ -95,6 +101,8 @@ def conferir_comentarios(
             if qid not in letras:
                 erros.append(f"{onde}: comenta uma questão que não existe no acervo")
                 continue
+            if qid not in simulados and FECHO_SIMULADO in json.dumps(comentario, ensure_ascii=False):
+                erros.append(f"{onde}: questão oficial com '{FECHO_SIMULADO}' (só para simulado; use o fecho sobre a banca)")
             if not str(comentario.get("correta") or "").strip():
                 # Questão lançada só com a resposta pela bibliografia: o texto vem depois.
                 if comentario.get("provavel") and not comentario.get("incorretas") and not comentario.get("conceito"):
@@ -170,6 +178,7 @@ def principal() -> int:
     # Alimentam a conferência dos comentários, logo adiante.
     gabaritos: dict[str, str | None] = {}
     letras_da_questao: dict[str, set[str]] = {}
+    simulados: set[str] = set()
     # Resposta pela bibliografia que passou a valer como gabarito de correção.
     bibliograficas: dict[str, str] = {}
     # cópia -> questão mantida (campo duplicataDe)
@@ -217,6 +226,8 @@ def principal() -> int:
             if identificador != "(sem id)":
                 gabaritos[identificador] = gabarito
                 letras_da_questao[identificador] = {l for l in letras if l}
+                if questao.get("simulado"):
+                    simulados.add(identificador)
             if questao.get("area") not in (None, "cirurgia-mao", "r4-enare", "r4-coluna", "fellowship-quadril"):
                 erros.append(f"{onde}: área desconhecida: {questao.get('area')!r}")
             if "areasAdicionais" in questao:
@@ -299,7 +310,7 @@ def principal() -> int:
             avisos.append(f"{copia}: gabarito diferente da questão mantida ({mantida})")
 
     erros_ia, avisos_ia, total_comentarios = conferir_comentarios(
-        gabaritos, letras_da_questao
+        gabaritos, letras_da_questao, simulados
     )
     erros.extend(erros_ia)
     avisos.extend(avisos_ia)
