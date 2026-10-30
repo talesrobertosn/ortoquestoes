@@ -1,4 +1,4 @@
-import { lazy, Suspense, useMemo, type CSSProperties } from 'react'
+import { lazy, Suspense, useMemo, useState, type CSSProperties } from 'react'
 import { usarConta } from '../../conta/ContextoConta'
 import type { PaginaBusca } from '../BuscaMenu'
 import { SeloNovo } from '../SeloNovo'
@@ -16,7 +16,6 @@ import { Sprite } from '../../biblioteca/salao/Sprite'
 import { href } from '../../util/rotas'
 import { recurso } from '../../config'
 import { Icone, type NomeIcone } from '../Icone'
-import { SeloAssinante } from '../Premium'
 import { A_PARTIR_DE } from '../../dados/planos'
 import { usarNacionalAbertoATodos } from '../../dados/nacionalEmDestaque'
 import { AMPULHETA, ESTANTE, FOLHA, PALETA_MENU } from './sprites'
@@ -110,19 +109,21 @@ const EXTRAS_BUSCA: PaginaBusca[] = [
   { destino: '/conquistas', rotulo: 'Conquistas e emblemas', texto: 'Inventário de emblemas e vitrine', icone: 'medalha', chaves: 'emblemas medalhas trofeus' },
 ]
 
-/** Cor da lombada de cada grupo (o filete à esquerda dos itens, como livros na prateleira). */
-const LOMBADA: Record<string, string> = { 'Estudar o conteúdo': '#2f7a4a', 'Provas e disputa': '#b0452f', 'Seu progresso': '#2b6cb0', 'Conta e ajuda': '#8a5530' }
-/** Cor da "capa de livro" atrás do ícone de cada cartão do dia a dia. */
-const CAPA: Record<string, string> = { '/treinar': '#2f7a4a', '/revisao': '#2b5c9e', '/flashcards': '#a8322d', '/cronograma': '#8a5530', '/cronograma-mao': '#1f6f78' }
-/** Lombadas da prateleira do topo: cores e alturas fixas (decoração, sem dado). */
-const CORES_TOPO = ['#a8322d', '#2b5c9e', '#c99a3c', '#2f7a4a', '#7a3f8f', '#1f6f78', '#b5762a', '#5b3a8f']
-const LOMBADAS_TOPO = Array.from({ length: 70 }, (_, i) => CORES_TOPO[(i * 5 + (i % 3)) % CORES_TOPO.length])
+/** Cor de cada grupo: a plaquinha do sumário, a faixa ativa e o marcador colorido na borda do livro. */
+const COR_GRUPO: Record<string, string> = { 'Estudar o conteúdo': '#3f8a3a', 'Provas e disputa': '#b8452f', 'Seu progresso': '#2f6aa8', 'Conta e ajuda': '#7a4a8c' }
+/** Cor da capinha de cada atalho do dia a dia. */
+const CAPA: Record<string, string> = { '/treinar': '#3f8a3a', '/revisao': '#2f6aa8', '/flashcards': '#b8452f', '/cronograma': '#9a6a2f', '/cronograma-mao': '#1f7a80', '/indicar': '#7a4a8c' }
+/** Partículas de luz (posição, tamanho e ritmo fixos, para não mudar a cada abertura). */
+const POEIRA = Array.from({ length: 22 }, (_, k) => ({
+  x: (k * 37 + 11) % 100, y: (k * 53 + 7) % 100, s: k % 5 === 0 ? 14 + (k % 3) * 6 : 2 + (k % 3), t: 9 + (k % 7) * 1.7, d: -((k * 1.3) % 9), bokeh: k % 5 === 0,
+}))
+const idGrupo = (titulo: string) => 'mn-g-' + titulo.normalize('NFD').replace(/[^a-zA-Z]/g, '').toLowerCase()
 
 /**
- * Menu (refeito em 30/10/2026, pedido do Tales: "bem parecido como era antes, só que com detalhes de biblioteca").
- * A organização de antes, em lista, com a seção "Hoje" (de onde parou nas questões, a revisão do dia e o resumo em
- * leitura) e toques de biblioteca: a prateleira no topo, as etiquetas de latão nos grupos, a lombada colorida em cada
- * item e a tábua entre os grupos.
+ * Menu em forma de livro aberto em pixel (30/10/2026, pedido do Tales com diários de jogo como referência).
+ * Página esquerda: "Hoje" (de onde parou nas questões, a revisão do dia e o resumo em leitura) e os atalhos do dia a
+ * dia. Página direita: a busca e o sumário com todas as páginas em faixas, tudo à vista. No celular (painel), as duas
+ * páginas viram uma só, em coluna. Abas de papel no alto, marcadores coloridos na borda e a fita embaixo.
  */
 export default function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => void }) {
   const { sessao } = usarConta()
@@ -172,97 +173,136 @@ export default function ConteudoMenu({ caminho, aoFechar }: { caminho: string; a
     ...EXTRAS_BUSCA,
   ]
 
+  // A nota no pé da página direita mostra o que tem em cada item sob o mouse (no celular, o texto já vem na faixa).
+  const [dica, definirDica] = useState<{ rotulo: string; texto: string } | null>(null)
+  const mostrar = (item: { rotulo: string; texto: string }) => ({ onMouseEnter: () => definirDica(item), onFocus: () => definirDica(item) })
+  const atalhos: Array<Item & { arte?: 'livros' | 'osso' }> = [...PRINCIPAIS, ...DESTAQUES,
+    { destino: '/indicar', rotulo: 'Indique e ganhe', texto: '7 dias do plano completo para você e o colega', icone: 'grupo' }]
+  const irAoGrupo = (titulo: string) => {
+    const grupo = document.getElementById(idGrupo(titulo))
+    grupo?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+    grupo?.querySelector<HTMLElement>('a')?.focus({ preventScroll: true })
+  }
+
   return (
-    <div className="mn">
-      <header className="mn__cabeca">
-        <h2 className="mn__titulo">Menu</h2>
-      </header>
-      {/* A prateleira do topo: decoração de biblioteca, fina, sem dado. */}
-      <div className="mn-prateleira-topo" aria-hidden="true">{LOMBADAS_TOPO.map((cor, i) => <i key={i} style={{ background: cor, height: `${16 + ((i * 7) % 11)}px` }} />)}</div>
-      <Suspense fallback={<CampoBuscaVazio />}><BuscaMenu paginas={paginasBusca} aoIr={aoFechar} /></Suspense>
-
-      {hoje.length > 0 && <section className="mn-hoje" aria-labelledby="mn-hoje-titulo">
-        <p className="mn-etiqueta" id="mn-hoje-titulo">Hoje</p>
-        <ul>{hoje.map((h) => <li key={h.destino}><a className="mn-hoje__cartao" href={href(h.destino)} onClick={aoFechar}>
-          <span className="mn-hoje__arte" aria-hidden="true"><Sprite grade={h.arte} paleta={PALETA_MENU} px={2} /></span>
-          <span className="mn-hoje__texto"><strong>{h.titulo}</strong><small>{h.texto}</small>{h.pct !== null && <span className="mn-hoje__barra" aria-hidden="true"><span style={{ width: `${h.pct}%` }} /></span>}</span>
-          <Icone nome="direita" tamanho={16} />
-        </a></li>)}</ul>
-      </section>}
-
-      <nav className="mn-principais" aria-label="O dia a dia">
-        {PRINCIPAIS.map((item) => (
-          <a key={item.destino} className="mn-principal" href={href(item.destino)} onClick={aoFechar} aria-current={atualDe(item) ? 'page' : undefined}>
-            <span className="mn-principal__icone" aria-hidden="true" style={{ '--capa': CAPA[item.destino] ?? '#2f7a4a' } as CSSProperties}><Icone nome={item.icone} tamanho={20} /></span>
-            <strong>{item.rotulo}</strong>
-            <small>{item.texto}</small>
-            {bloqueadoDe(item) && <span className="mn-principal__selo"><SeloAssinante /></span>}
-          </a>
-        ))}
-      </nav>
-
-      <nav className="mn-destaques" aria-label="Em destaque">
-        {DESTAQUES.map((item) => (
-          <a key={item.destino} className={`mn-destaque mn-destaque--${item.arte}`} href={href(item.destino)} onClick={aoFechar} aria-current={atualDe(item) ? 'page' : undefined}>
-            {item.arte === 'osso'
-              ? <img className="mn-destaque__imagem" src={recurso('atlas3d/icone-mao.png')} width={52} height={52} alt="" loading="lazy" decoding="async" />
-              : <span className={`ip-px ip-px--${item.arte}`} aria-hidden="true"><i /><i /><i /></span>}
-            <span className="mn-destaque__texto"><strong>{item.rotulo}{item.novo && <> <SeloNovo texto={item.novo} /></>}</strong><small>{item.texto}</small></span>
-            <span className="mn-destaque__seta" aria-hidden="true"><Icone nome="direita" tamanho={16} /></span>
-          </a>
-        ))}
-      </nav>
-
-      {/* Planos logo abaixo do dia a dia (pedido do Tales, 25/10/2026: tem de ser fácil de achar) */}
-      {!premium && (
-        <a className="mn-planos-faixa" href={href('/assinatura')} onClick={aoFechar}>
-          <span className="mn-extra__icone" aria-hidden="true"><Icone nome="medalha" tamanho={18} /></span>
-          <span><strong>Planos e assinatura</strong><small>Cronograma, Simulado Nacional e todas as camadas do Atlas · a partir de {A_PARTIR_DE}/mês</small></span>
-          <span className="mn-planos-faixa__acao">Ver planos <Icone nome="direita" tamanho={14} /></span>
-        </a>
-      )}
-
-      <div className="mn__grupos">
-        {grupos.map((grupo) => (
-          <nav key={grupo.titulo} className="mn-grupo" aria-label={grupo.titulo} style={{ '--lombada': LOMBADA[grupo.titulo] ?? '#8a5530' } as CSSProperties}>
-            <p className="mn-grupo__titulo mn-etiqueta">{grupo.titulo}</p>
-            <ul>
-              {grupo.itens.map((item) => {
-                const bloqueado = bloqueadoDe(item)
-                // Relatório do mês é só por e-mail: quem não assina vai para os planos.
-                const destino = bloqueado && item.rotulo === 'Relatório do mês' ? '/assinatura' : item.destino
-                return (
-                  <li key={item.rotulo}>
-                    <a
-                      className={'mn-item' + (item.assinante ? ' mn-item--assinante' : '')}
-                      href={href(destino)}
-                      onClick={aoFechar}
-                      aria-current={atualDe(item) && item.rotulo !== 'Relatório do mês' ? 'page' : undefined}
-                    >
-                      <span className="mn-item__icone" aria-hidden="true"><Icone nome={item.icone} tamanho={18} /></span>
-                      <span className="mn-item__texto"><strong>{item.rotulo}{item.novo && <> <SeloNovo texto={item.novo} /></>}</strong><small>{item.texto}</small></span>
-                      {bloqueado ? <SeloAssinante /> : <span className="mn-item__seta" aria-hidden="true"><Icone nome="direita" tamanho={16} /></span>}
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-          </nav>
-        ))}
+    <div className="mn-livro">
+      {/* Luz de cena "HD-2D" (pedido do Tales, 30/10/2026, Octopath Traveler II de referência): feixes de luz quente
+          entrando de cima, poeira e bokeh flutuando no ar. Só decoração, sem clique. */}
+      <span className="mn-luz" aria-hidden="true">
+        <span className="mn-luz__feixes" />
+        {POEIRA.map((p, k) => <i key={k} className={p.bokeh ? 'bokeh' : ''} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s`, '--s': `${p.s}px` } as CSSProperties} />)}
+      </span>
+      {/* Um pouco de poeira passa também na frente do livro, sem cobrir a leitura. */}
+      <span className="mn-luz mn-luz--frente" aria-hidden="true">
+        {POEIRA.filter((p) => !p.bokeh).slice(0, 8).map((p, k) => <i key={k} style={{ left: `${(p.x + 43) % 100}%`, top: `${(p.y + 29) % 100}%`, '--t': `${p.t + 3}s`, '--d': `${p.d}s`, '--s': '2px' } as CSSProperties} />)}
+      </span>
+      {/* Abas de papel no alto do livro (como "exit" e "options" dos diários de jogo). */}
+      <div className="mn-livro__abas">
+        <p className="mn-aba mn-aba--titulo">Menu</p>
+        <span className="mn-livro__vao" />
+        {conta[0] && contasDisponiveis && <a className="mn-aba" href={href(conta[0].destino)} onClick={aoFechar}>{sessao ? 'Minha conta' : 'Entrar'}</a>}
+        <button type="button" className="mn-aba mn-aba--fechar" onClick={aoFechar} aria-label="Fechar o menu">Fechar <Icone nome="fechar" tamanho={16} /></button>
       </div>
 
-      <div className="mn-extras">
-        <a className="mn-extra mn-extra--indicar" href={href('/indicar')} onClick={aoFechar}>
-          <span className="mn-extra__icone" aria-hidden="true"><Icone nome="grupo" tamanho={18} /></span>
-          <span><strong>Indique e ganhe</strong><small>7 dias do plano completo para você e o colega</small></span>
-          <Icone nome="direita" tamanho={16} />
-        </a>
+      <div className="mn-livro__capa">
+        <span className="mn-livro__canto mn-livro__canto--1" aria-hidden="true" /><span className="mn-livro__canto mn-livro__canto--2" aria-hidden="true" />
+        <span className="mn-livro__canto mn-livro__canto--3" aria-hidden="true" /><span className="mn-livro__canto mn-livro__canto--4" aria-hidden="true" />
+        <div className="mn-livro__miolo">
+          {/* Página esquerda: o dia de hoje e os atalhos do dia a dia. */}
+          <section className="mn-pagina mn-pagina--esq" aria-label="Hoje e o dia a dia">
+            <h2 className="mn-faixa-titulo"><span>Hoje</span></h2>
+            {hoje.length > 0
+              ? <ul className="mn-hoje">{hoje.map((h) => <li key={h.destino}><a className="mn-hoje__linha" href={href(h.destino)} onClick={aoFechar}>
+                <span className="mn-hoje__arte" aria-hidden="true"><Sprite grade={h.arte} paleta={PALETA_MENU} px={2} /></span>
+                <span className="mn-hoje__texto"><strong>{h.titulo}</strong><small>{h.texto}</small>
+                  {h.pct !== null && <span className="mn-blocos" aria-hidden="true">{Array.from({ length: 10 }, (_, k) => <i key={k} className={k < Math.round(h.pct! / 10) ? 'cheio' : ''} />)}</span>}</span>
+                <span className="mn-hoje__ir" aria-hidden="true">▸</span>
+              </a></li>)}</ul>
+              : <a className="mn-hoje__vazio" href={href('/treinar')} onClick={aoFechar}>
+                <span className="mn-hoje__arte" aria-hidden="true"><Sprite grade={FOLHA} paleta={PALETA_MENU} px={2} /></span>
+                <span className="mn-hoje__texto"><strong>Página em branco</strong><small>Nada pendente por hoje. Que tal começar uma sessão?</small></span>
+                <span className="mn-hoje__ir" aria-hidden="true">▸</span>
+              </a>}
+
+            <h2 className="mn-faixa-titulo mn-faixa-titulo--verde"><span>Dia a dia</span></h2>
+            <nav className="mn-atalhos" aria-label="O dia a dia">
+              {atalhos.map((item) => (
+                <a key={item.destino} className="mn-atalho" href={href(item.destino)} onClick={aoFechar} aria-current={atualDe(item) ? 'page' : undefined}
+                  style={{ '--capa': CAPA[item.destino] ?? '#8a5530' } as CSSProperties} {...mostrar(item)}>
+                  <span className="mn-atalho__arte" aria-hidden="true">
+                    {item.arte === 'osso'
+                      ? <img src={recurso('atlas3d/icone-mao.png')} width={40} height={40} alt="" loading="lazy" decoding="async" />
+                      : item.arte === 'livros' ? <span className="ip-px ip-px--livros"><i /><i /><i /></span>
+                        : <span className="mn-atalho__capa"><Icone nome={item.icone} tamanho={20} /></span>}
+                  </span>
+                  <strong>{item.rotulo}</strong>
+                  <small className="mn-atalho__texto">{item.texto}</small>
+                  {bloqueadoDe(item) && <span className="mn-atalho__cadeado" title="Recurso do assinante"><Icone nome="cadeado" tamanho={12} /></span>}
+                  {item.novo && <span className="mn-atalho__novo">{item.novo}</span>}
+                </a>
+              ))}
+            </nav>
+
+            {/* Pé da página: a mesinha de estudo com a vela acesa, a fonte de luz da cena. */}
+            <div className="mn-mesa" aria-hidden="true">
+              <Sprite grade={ESTANTE} paleta={PALETA_MENU} px={3} />
+              <span className="mn-vela"><span className="mn-vela__chama" /><span className="mn-vela__halo" /></span>
+              <Sprite grade={AMPULHETA} paleta={PALETA_MENU} px={3} />
+              <p>Um capítulo por dia, e a prova vira rotina.</p>
+            </div>
+          </section>
+
+          <span className="mn-livro__lombada" aria-hidden="true">{Array.from({ length: 7 }, (_, k) => <i key={k} />)}</span>
+
+          {/* Página direita: a busca e o sumário de todas as páginas, em faixas. */}
+          <section className="mn-pagina mn-pagina--dir" aria-label="Sumário" onMouseLeave={() => definirDica(null)}>
+            <h2 className="mn-faixa-titulo mn-faixa-titulo--azul"><span>Sumário</span></h2>
+            <Suspense fallback={<CampoBuscaVazio />}><BuscaMenu paginas={paginasBusca} aoIr={aoFechar} /></Suspense>
+            <div className="mn-sumario">
+              {grupos.map((grupo) => (
+                <nav key={grupo.titulo} id={idGrupo(grupo.titulo)} className="mn-capitulo" aria-label={grupo.titulo} style={{ '--cor': COR_GRUPO[grupo.titulo] ?? '#8a5530' } as CSSProperties}>
+                  <p className="mn-placa">{grupo.titulo}</p>
+                  <ul>
+                    {grupo.itens.map((item) => {
+                      const bloqueado = bloqueadoDe(item)
+                      // Relatório do mês é só por e-mail: quem não assina vai para os planos.
+                      const destino = bloqueado && item.rotulo === 'Relatório do mês' ? '/assinatura' : item.destino
+                      return (
+                        <li key={item.rotulo}>
+                          <a className="mn-faixa" href={href(destino)} onClick={aoFechar} {...mostrar(item)}
+                            aria-current={atualDe(item) && item.rotulo !== 'Relatório do mês' ? 'page' : undefined}>
+                            <span className="mn-faixa__texto"><strong>{item.rotulo}{item.novo && <> <SeloNovo texto={item.novo} /></>}</strong><small>{item.texto}</small></span>
+                            {bloqueado ? <span className="mn-faixa__cadeado" title="Recurso do assinante"><Icone nome="cadeado" tamanho={13} /></span> : <span className="mn-faixa__seta" aria-hidden="true">▸</span>}
+                          </a>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </nav>
+              ))}
+            </div>
+            <p className="mn-nota" aria-hidden="true">
+              {dica ? <><b>{dica.rotulo}</b> {dica.texto}</> : 'Passe o mouse num item para ler o que tem dentro.'}
+            </p>
+            {!premium && (
+              <a className="mn-planos" href={href('/assinatura')} onClick={aoFechar}>
+                <strong>Planos e assinatura</strong><small>a partir de {A_PARTIR_DE}/mês</small><span aria-hidden="true">▸</span>
+              </a>
+            )}
+            <p className="mn-rodape">
+              <a href={href('/termos')} onClick={aoFechar}>Termos de uso</a>
+              <a href={href('/condicoes-assinatura')} onClick={aoFechar}>Condições da assinatura</a>
+            </p>
+          </section>
+        </div>
       </div>
 
-      <p className="mn__rodape">
-        <a href={href('/termos')} onClick={aoFechar}>Termos de uso</a>
-        <a href={href('/condicoes-assinatura')} onClick={aoFechar}>Condições da assinatura</a>
-      </p>
+      {/* Marcadores coloridos na borda do livro: um por capítulo do sumário. */}
+      <div className="mn-livro__marcadores">
+        {grupos.map((g) => <button key={g.titulo} type="button" className="mn-marcador" style={{ '--cor': COR_GRUPO[g.titulo] ?? '#8a5530' } as CSSProperties}
+          onClick={() => irAoGrupo(g.titulo)} title={g.titulo} aria-label={`Ir para ${g.titulo}`} />)}
+      </div>
+      <span className="mn-livro__fita" aria-hidden="true" />
     </div>
   )
 }
