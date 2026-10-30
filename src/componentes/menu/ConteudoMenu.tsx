@@ -10,6 +10,9 @@ import { CHAVE_SESSAO } from '../../estado/sessao'
 import { usarContextoLocal } from '../../estado/usarContextoLocal'
 import { AREAS_TREINO, FILTROS_VAZIOS, type EstadoSessao } from '../../dados/tipos'
 import { contar, indiceCarregado } from '../../dados/acervo'
+import { calcularPlano } from '../../dados/planoEstudo'
+import { usarPlanoSalvo } from '../../conta/cronograma'
+import type { RegistroQuestao } from '../../estado/revisao'
 import { indiceBibliotecaCarregado } from '../../biblioteca/conteudo'
 import { usarBiblioteca } from '../../biblioteca/usarBiblioteca'
 import { Sprite } from '../../biblioteca/salao/Sprite'
@@ -145,10 +148,18 @@ export default function ConteudoMenu({ caminho, aoFechar }: { caminho: string; a
     .filter((l): l is NonNullable<typeof l> => !!l && (l.progresso ?? 0) > 2 && !l.concluidoEm && (l.progresso ?? 0) < 95)
     .sort((a, b) => b.em - a.em)[0] ?? null, [leituras])
   const tituloLeitura = leitura ? indiceBibliotecaCarregado()?.capitulos.find((c) => c.id === leitura.capitulo)?.titulo ?? null : null
+  // Cronograma do assinante: o quanto do plano já foi feito e o que falta (só com o índice já na memória).
+  const { plano } = usarPlanoSalvo(premium)
+  const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
+  const crono = useMemo(() => {
+    const indice = indiceCarregado()
+    return premium && plano && indice ? calcularPlano(indice, respondidas, plano) : null
+  }, [premium, plano, respondidas])
   const hoje = [
-    pendente && { destino: '/sessao', titulo: 'Continuar de onde parei', texto: `${sessaoLocal?.origem === 'cronograma' ? 'Sessão do cronograma' : 'Sua última sessão'} · ${pendente.feitas} de ${pendente.total} respondidas`, arte: FOLHA, pct: Math.round((pendente.feitas / pendente.total) * 100) },
+    pendente && { destino: '/sessao', titulo: `Continuar a sessão · questão ${Math.min(pendente.feitas + 1, pendente.total)} de ${pendente.total}`, texto: `${sessaoLocal?.origem === 'cronograma' ? 'Sessão do cronograma' : 'Sua última sessão'} · ${pendente.feitas} respondidas, faltam ${pendente.total - pendente.feitas}`, arte: FOLHA, pct: Math.round((pendente.feitas / pendente.total) * 100) },
+    crono && !crono.provaPassou && crono.alvo > 0 && { destino: '/cronograma', titulo: `Cronograma · ${Math.min(100, Math.round((crono.feitas / crono.alvo) * 100))}% do plano`, texto: `${crono.restante > 0 ? `Faltam ${crono.restante.toLocaleString('pt-BR')} questões` : 'Plano em dia'} e ${crono.diasAteProva} ${crono.diasAteProva === 1 ? 'dia' : 'dias'} até a prova${crono.metaDiaria ? ` · hoje ${crono.feitasHoje} de ${crono.metaDiaria}` : ''}`, arte: AMPULHETA, pct: Math.min(100, Math.round((crono.feitas / crono.alvo) * 100)) },
     revisarHoje > 0 && { destino: '/revisao', titulo: 'Revisão de hoje', texto: `${revisarHoje} ${revisarHoje === 1 ? 'questão volta' : 'questões voltam'} hoje`, arte: AMPULHETA, pct: null },
-    leitura && { destino: `/resumos/${leitura.capitulo}`, titulo: tituloLeitura ? `Resumo: ${tituloLeitura}` : 'Continuar a leitura', texto: `Onde você parou · ${leitura.progresso}% lido`, arte: ESTANTE, pct: leitura.progresso },
+    leitura && { destino: `/resumos/${leitura.capitulo}`, titulo: tituloLeitura ? `Resumo: ${tituloLeitura}` : 'Continuar a leitura', texto: `Último resumo lido · ${leitura.progresso}% lido, faltam ${100 - (leitura.progresso ?? 0)}%`, arte: ESTANTE, pct: leitura.progresso },
   ].filter(Boolean) as Array<{ destino: string; titulo: string; texto: string; arte: typeof FOLHA; pct: number | null }>
 
   const conta: Item[] = [
@@ -244,12 +255,12 @@ export default function ConteudoMenu({ caminho, aoFechar }: { caminho: string; a
             </nav>
 
             {/* Pé da página: a mesinha de estudo com a vela acesa, a fonte de luz da cena. */}
-            <div className="mn-mesa" aria-hidden="true">
+            {hoje.length < 3 && <div className="mn-mesa" aria-hidden="true">
               <Sprite grade={ESTANTE} paleta={PALETA_MENU} px={3} />
               <span className="mn-vela"><span className="mn-vela__chama" /><span className="mn-vela__halo" /></span>
               <Sprite grade={AMPULHETA} paleta={PALETA_MENU} px={3} />
               <p>Um capítulo por dia, e a prova vira rotina.</p>
-            </div>
+            </div>}
           </section>
 
           <span className="mn-livro__lombada" aria-hidden="true">{Array.from({ length: 7 }, (_, k) => <i key={k} />)}</span>
