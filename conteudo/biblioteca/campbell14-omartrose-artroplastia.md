@@ -30,7 +30,7 @@ A escolha cirúrgica na artrose do ombro depende de **duas peças**. A primeira 
   - roturas completas do manguito são **incomuns** (cerca de 10%);
   - afinamento do subescapular e alterações do bíceps;
   - **volume capsular aumentado atrás** e **contração capsular na frente**.
-- **Tratamento:** as glenoides com erosão posterior importante se beneficiam de fresagem e de sistemas de alinhamento. Na suspeita de infecção depois de cirurgia prévia, a cultura do líquido fica pelo menos 14 dias, para isolar o *Cutibacterium*.
+- **Tratamento:** as glenoides com erosão posterior importante se beneficiam de fresagem e de sistemas de alinhamento. Na suspeita de infecção depois de cirurgia prévia, a cultura do líquido fica pelo menos 14 dias, para isolar o Cutibacterium.
 
 !questoes central=ombro-cotovelo-0172 relacionadas=ombro-cotovelo-0445,ombro-cotovelo-0050,ombro-cotovelo-0390 treino=ombro-cotovelo-0704
 conceito: Na artrose primária, a cabeça escorrega para trás e gasta a glenoide posterior; a cápsula anterior contrai; o osteófito típico é inferior; o manguito costuma estar íntegro.
