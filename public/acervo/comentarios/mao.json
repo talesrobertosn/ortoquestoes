@@ -225,14 +225,18 @@
  },
  "mao-0017": {
   "incorretas": {
-   "A": "O supinador comprime o nervo interósseo posterior, ramo do radial, na arcada de Frohse, e não o ulnar.",
-   "B": "O pronador redondo comprime o nervo mediano no cotovelo, e não o ulnar.",
-   "D": "A arcada do flexor superficial dos dedos comprime o mediano ou o interósseo anterior, e não o ulnar."
+   "A": "**Comprime outro nervo.** O supinador é o principal ponto de compressão do ramo profundo do radial, o interósseo posterior, pela borda anterior ou posterior. Fica no lado lateral do antebraço, longe do ulnar.",
+   "B": "**É do mediano.** O pronador redondo, na intersecção das suas cabeças, é o local mais comum de compressão proximal do mediano no antebraço. O ulnar passa pelo lado medial, atrás do epicôndilo, sem atravessar o pronador.",
+   "D": "**Também é do mediano.** O arco fibroso do flexor superficial dos dedos, a cerca de 6,5 cm da linha epicondilar, é um ponto de compressão do mediano e do interósseo anterior. Não está no trajeto do ulnar no cotovelo."
   },
-  "conceito": "A **síndrome do túnel cubital** é a compressão do **nervo ulnar** no cotovelo. É a **segunda neuropatia compressiva mais comum** do membro superior, depois do túnel do carpo.\n\n**Onde o nervo é comprimido**: o ulnar passa atrás do epicôndilo medial e entra no antebraço **entre as duas cabeças do músculo flexor ulnar do carpo** (uma presa no úmero e outra na ulna). Essas duas cabeças são unidas por uma faixa fibrosa, a **aponeurose do flexor ulnar do carpo** (arcada de Osborne). Quando o cotovelo dobra, essa faixa se estica sobre o nervo, e a pressão dentro do túnel aumenta. Por isso os sintomas pioram ao dormir com o braço dobrado ou ao falar ao telefone.\n\n**Os sinais**:\n\nformigamento no anelar e no mínimo;\n\nperda de sensibilidade no **dorso ulnar** da mão (o ramo dorsal do ulnar sai antes do punho, o que ajuda a diferenciar da compressão no canal de Guyon);\n\nfraqueza e atrofia dos interósseos, especialmente o primeiro, entre polegar e indicador;\n\nsinal de **Froment** (o paciente dobra a ponta do polegar para segurar um papel, compensando a fraqueza do adutor);\n\nsinal de **Wartenberg** (o dedo mínimo fica afastado).\n\n**Para não confundir**: o **supinador** comprime o nervo interósseo posterior (ramo do radial), e o **pronador redondo** e o **flexor superficial dos dedos** comprimem o nervo mediano.\n\n**Tratamento cirúrgico**: liberação do nervo no lugar, transposição anterior ou epicondilectomia medial.\n\n**Na prova**: no túnel cubital, o nervo ulnar é comprimido pelo flexor ulnar do carpo, entre suas duas cabeças.",
-  "correta": "O nervo ulnar passa entre as duas cabeças do flexor ulnar do carpo, e a aponeurose que as une se tensiona sobre ele na flexão do cotovelo.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Siga o nervo ulnar descendo pelo braço como quem segue um fio por dentro de uma parede. Ele passa atrás do epicôndilo medial, entra num túnel e sai dele mergulhando entre as duas cabeças de um músculo. É nesse músculo que a banca quer chegar.\n\n**O trajeto, no Green** (8ª ed., cap. 28, p. 1106, de J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON):\n- O ulnar (C8 e T1) é ramo terminal do **fascículo medial**.\n- No braço, fica posteromedial à artéria braquial, posterior ao septo intermuscular e anterior à cabeça medial do tríceps.\n- Passa **atrás do epicôndilo medial** e **medial ao olécrano**.\n- Entra no **túnel cubital**, cujo teto é uma **camada fascial tensa** que vai do **flexor ulnar do carpo** ao **ligamento de OSBORNE**.\n- Segue profundamente no antebraço **entre as cabeças ulnar e umeral do flexor ulnar do carpo**.\n\n**Os pontos de compressão.** O Green lista a arcada de STRUTHERS, o septo intermuscular, a **fáscia do flexor ulnar do carpo**, o ancôneo epitroclear, o ligamento de OSBORNE e as **bandas fasciais dentro do flexor ulnar do carpo**. Ou seja, o flexor ulnar do carpo aparece duas vezes na lista: pela fáscia que forma o túnel e pelas bandas entre as suas cabeças.\n\n**Por que os outros músculos não entram.** O **supinador** comprime o interósseo posterior, do radial; o **pronador redondo** e o **flexor superficial dos dedos** comprimem o mediano no antebraço proximal. Nenhum deles fica no caminho do ulnar no cotovelo.\n\n**O que a banca quis testar.** Se o candidato sabe que o túnel cubital é feito, em boa parte, do próprio flexor ulnar do carpo. O resumo Neuropatias de compressão no membro superior traz o túnel e os pontos de compressão.",
+  "correta": "**C: flexor ulnar do carpo.** O teto do túnel cubital é a fáscia que vai do flexor ulnar do carpo ao ligamento de OSBORNE, e o nervo segue entre as cabeças desse músculo; o Green lista a fáscia e as bandas do flexor ulnar do carpo entre os pontos de compressão (cap. 28, p. 1106).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Síndrome do túnel cubital, anatomia, p. 1106",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0018": {
   "conceito": "Na fratura-luxação perissemilunar, a energia percorre o carpo em volta do semilunar. O padrão clássico resulta de **hiperextensão, desvio ulnar e supinação intercarpal**. O semilunar inicialmente permanece contido pelos ligamentos palmares, enquanto o escafoide e a fileira distal são forçados a se mover. A falha progride do lado radial para o ulnar.\n\nA palavra fratura diferencia o **grande arco**, em que a trajetória passa por ossos e ligamentos, do pequeno arco, predominantemente ligamentar. Uma fratura do escafoide pode substituir a ruptura escafossemilunar na trajetória da força; por isso, não se deve presumir que toda fratura-luxação rompa obrigatoriamente esse ligamento.\n\nExiste uma sequência invertida, com desvio radial e pronação, que começa pela ligação lunopiramidal. Distinguir os dois sentidos explica as alternativas melhor do que decorar apenas um dos movimentos. Fonte secundária: resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
@@ -593,14 +597,18 @@
  },
  "mao-0041": {
   "incorretas": {
-   "A": "O pronador redondo recebe ramos do mediano antes da saída do interósseo anterior e muitas vezes é o próprio local de compressão, mas não fica fraco nessa síndrome.",
-   "B": "O flexor radial do carpo é inervado pelo mediano acima da origem do interósseo anterior, e fica preservado.",
-   "D": "O interósseo anterior inerva o flexor profundo do indicador; o flexor superficial é inervado diretamente pelo mediano e fica preservado."
+   "A": "**Recebe ramo do tronco do mediano.** O pronador redondo é inervado antes da saída do interósseo anterior e fica bom na síndrome. É, aliás, um dos pontos de compressão do próprio mediano.",
+   "B": "**Também é do tronco do mediano.** O flexor radial do carpo pertence à camada superficial e recebe ramo direto do mediano. Na síndrome do interósseo anterior, o punho continua fletindo normalmente.",
+   "D": "**É inervado fora do interósseo anterior.** O flexor superficial recebe ramos do tronco do mediano. Por isso, na síndrome, o paciente ainda flete a interfalângica proximal do indicador e perde só a distal."
   },
-  "conceito": "O **nervo interósseo anterior** é um ramo do **nervo mediano** que sai no antebraço proximal, cerca de 4 a 6 cm abaixo do cotovelo, logo depois de o mediano passar pelo pronador redondo. É um nervo **só motor**: não leva sensibilidade da pele.\n\n**Os três músculos que ele inerva**:\n\n**flexor longo do polegar** (dobra a ponta do polegar);\n\n**flexor profundo** do **indicador** e do **médio** (dobra a ponta desses dedos);\n\n**pronador quadrado** (prona o antebraço, perto do punho).\n\n**A síndrome do interósseo anterior**:\n\ndor na parte de cima do antebraço;\n\n**sem perda de sensibilidade**;\n\no sinal típico é o **sinal do \"O\"**: ao tentar fazer um \"O\" encostando a ponta do polegar na ponta do indicador, o paciente não consegue dobrar a ponta dos dois dedos e encosta as polpas achatadas, formando uma pinça em forma de lágrima;\n\na fraqueza do pronador quadrado é testada pedindo pronação com o **cotovelo fletido**, posição em que o pronador redondo ajuda pouco.\n\n**Causas**: compressão por bandas do pronador redondo ou do flexor superficial, músculos acessórios ou vasos. Um diagnóstico diferencial importante é a **neurite braquial** (Parsonage-Turner), uma inflamação do nervo que costuma melhorar sozinha. Por isso, geralmente se observa por 3 a 6 meses antes de operar.\n\n**Na prova**: na síndrome do interósseo anterior há fraqueza do flexor longo do polegar, dos flexores profundos do indicador e do médio e do pronador quadrado.",
-  "correta": "O flexor longo do polegar é um dos três músculos inervados pelo interósseo anterior, e sua fraqueza produz metade do sinal do \"O\".",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "**Direto:** o interósseo anterior inerva três músculos, e só um deles está nas alternativas: o flexor longo do polegar.\n\n**O que o Green diz** (cap. 28, p. 1100). O nervo interósseo anterior inerva o **flexor profundo dos dedos do indicador e do médio**, o **flexor longo do polegar** e o **pronador quadrado**, e dá fibras sensitivas só para as articulações radiocarpal, intercarpal, carpometacarpal e radioulnar. Por isso a síndrome dá fraqueza sem perda de pele, e a pinça entre o polegar e o indicador perde a flexão das pontas.\n\n**Os outros músculos são do tronco do mediano.** O **pronador redondo**, o **flexor radial do carpo** e o **flexor superficial do indicador** recebem ramos do mediano antes ou fora do interósseo anterior; ficam bons na síndrome.\n\n**Um detalhe do livro.** O interósseo anterior é relativamente preso no ponto em que se separa do mediano, o que favorece lesões por tração. E a paralisia de novo dele, sem trauma, provavelmente é uma **neurite** (amiotrofia nevrálgica de PARSONAGE e TURNER), e não uma compressão mecânica. O resumo Neuropatias de compressão no membro superior traz o interósseo anterior.",
+  "correta": "**C: flexor longo do polegar.** É um dos três músculos do interósseo anterior, ao lado do flexor profundo do indicador e do médio e do pronador quadrado, segundo o Green (cap. 28, p. 1100).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo mediano no antebraço: nervo interósseo anterior, p. 1100",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0042": {
   "incorretas": {
@@ -637,14 +645,18 @@
  },
  "mao-0045": {
   "incorretas": {
-   "A": "O ligamento transverso do carpo forma o teto do túnel do carpo, no punho, e cobre o nervo mediano, e não o ulnar no cotovelo.",
-   "C": "A estrutura de Struthers fica proximal ao túnel cubital, cerca de 8 cm acima do epicôndilo, e não forma o teto do túnel.",
-   "D": "O ligamento colateral ulnar forma o assoalho do túnel cubital: o nervo passa por cima dele, e não por baixo."
+   "A": "**É do punho.** O ligamento transverso do carpo é o teto do túnel do carpo, sobre o mediano. No cotovelo, o teto do túnel cubital é a fáscia de OSBORNE.",
+   "C": "**Fica acima do cotovelo.** A arcada de STRUTHERS é uma banda tendínea ligada ao septo intermuscular, que passa sobre o ulnar no braço distal. É ponto de compressão do ulnar, mas não o teto do túnel cubital.",
+   "D": "**É o assoalho, e não o teto.** O ligamento colateral ulnar fica sob o nervo no túnel cubital. O nervo passa por cima dele e sob a fáscia de OSBORNE."
   },
-  "conceito": "O **túnel cubital** é o canal por onde o **nervo ulnar** passa atrás do cotovelo, no lado medial. Ele é formado por:\n\n**paredes**: o **epicôndilo medial** do úmero e o **olécrano** da ulna;\n\n**assoalho**: a cápsula do cotovelo e os feixes posterior e transverso do **ligamento colateral ulnar**;\n\n**teto**: a **fáscia (ou ligamento) de Osborne**, uma faixa fibrosa em arco que vai do epicôndilo medial ao olécrano e continua com a aponeurose entre as duas cabeças do flexor ulnar do carpo.\n\n**Por que o teto importa**: quando o cotovelo dobra, o epicôndilo e o olécrano se afastam, e a fáscia de Osborne se **estica** sobre o nervo, diminuindo o espaço. Por isso os sintomas da síndrome do túnel cubital pioram com o cotovelo fletido. Na cirurgia, cortar essa fáscia é o primeiro passo da descompressão.\n\n**Outros pontos onde o ulnar pode ser comprimido**, de cima para baixo: a arcada de Struthers (cerca de 8 cm acima do epicôndilo), o septo intermuscular medial, o próprio epicôndilo, o túnel cubital, entre as cabeças do flexor ulnar do carpo e na aponeurose flexora profunda.\n\n**Para não confundir**:\n\n**ligamento transverso do carpo**: é o teto do túnel do carpo, no punho, e cobre o nervo mediano;\n\n**ligamento de Struthers**: vai de um pequeno esporão do úmero ao epicôndilo e pode comprimir o **mediano**.\n\n**Na prova**: no túnel cubital, o nervo ulnar passa sob a fáscia de Osborne.",
-  "correta": "A fáscia de Osborne forma o teto do túnel cubital, entre o epicôndilo medial e o olécrano, e se tensiona sobre o nervo ulnar na flexão do cotovelo.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Três nomes próprios, três lugares diferentes, e uma pergunta simples: sob qual deles o nervo passa no túnel cubital? A resposta está no teto do túnel.\n\n**O teto do túnel cubital.** O Green descreve o túnel como definido por uma **camada fascial tensa** que se estende do **flexor ulnar do carpo** ao **ligamento de OSBORNE** (cap. 28, p. 1106). A banca chamou essa estrutura de fáscia de OSBORNE; é o mesmo teto, a faixa que fecha o túnel por cima do nervo, entre o epicôndilo medial e o olécrano.\n\n**Onde ficam os outros nomes.**\n- **Arcada de STRUTHERS:** uma banda tendínea ligada ao **septo intermuscular**, que corre obliquamente abaixo do ulnar até o tríceps, **acima** do cotovelo. É ponto de compressão do ulnar, mas antes do túnel.\n- **Ligamento de STRUTHERS:** outra estrutura, que vai do processo supracondilar e comprime o **mediano**.\n- **Ligamento colateral ulnar:** forma o **assoalho** do túnel, e não o teto.\n\n**Por que importa.** Na descompressão in situ, é esse teto, a fáscia de OSBORNE, que se libera. Na transposição, o Green lembra que as estruturas que podem criar novos pontos de compressão, como o septo intermuscular, precisam ser ressecadas. O resumo Neuropatias de compressão no membro superior traz a anatomia do túnel.\n\n**O que a banca quis testar.** Nomes próprios parecidos, em lugares diferentes do mesmo nervo.",
+  "correta": "**B: a fáscia de OSBORNE.** O teto do túnel cubital é a camada fascial que vai do flexor ulnar do carpo ao ligamento de OSBORNE, e o nervo ulnar passa sob ela, segundo o Green (cap. 28, p. 1106).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Síndrome do túnel cubital, anatomia, p. 1106",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0046": {
   "incorretas": {
@@ -780,14 +792,19 @@
  },
  "mao-0055": {
   "incorretas": {
-   "A": "Parestesia intermitente com fraqueza apenas subjetiva caracteriza o grau I.",
-   "B": "Parestesia permanente sem fraqueza mensurável mistura graus e não define o grau III, que exige fraqueza objetiva.",
-   "C": "Parestesia ainda intermitente com fraqueza mensurável fica no grau intermediário, sem chegar ao III."
+   "A": "**Seria um estágio inicial.** Parestesia intermitente com fraqueza só subjetiva descreve um nervo ainda pouco lesado. No Green, o grau I de McGOWAN não tem fraqueza muscular; o grau III é o da atrofia.",
+   "B": "**Fica no meio do caminho.** A parestesia permanente indica sofrimento maior do nervo, mas, sem fraqueza objetiva, não alcança o grau III. A banca exige a fraqueza mensurável para o último grau.",
+   "C": "**Corresponde a um grau intermediário.** Fraqueza mensurável com parestesia ainda intermitente lembra o grau II, que o Green descreve como fraqueza sem atrofia. O grau III é o do dano motor estabelecido."
   },
-  "conceito": "A **síndrome do túnel cubital** é a compressão do **nervo ulnar** no cotovelo. A **classificação de McGowan** gradua a gravidade combinando a sensibilidade e a força:\n\n**grau I**: formigamento **intermitente** (vai e volta) e **fraqueza subjetiva**: o paciente sente a mão mais fraca, mas o exame não mostra déficit;\n\n**grau II**: formigamento intermitente ou persistente, com **fraqueza mensurável** no exame, ainda sem atrofia importante;\n\n**grau III**: formigamento **permanente** e **fraqueza mensurável**, com **atrofia** dos músculos intrínsecos da mão.\n\n**Como reconhecer o grau III no exame**:\n\n**atrofia do primeiro interósseo dorsal**, o músculo entre o polegar e o indicador, que deixa um \"buraco\" no dorso da mão;\n\n**garra** do anelar e do mínimo;\n\nsinal de **Froment** (dobra a ponta do polegar para segurar um papel);\n\nsinal de **Wartenberg** (o mínimo fica afastado).\n\n**O prognóstico**: o grau III tem o **pior prognóstico**. Mesmo após a descompressão, a recuperação da força costuma ser incompleta, porque já houve perda de fibras nervosas e atrofia muscular.\n\n**Tratamento**: nos graus leves, evitar manter o cotovelo dobrado por muito tempo e usar órtese noturna com o cotovelo mais estendido; nos avançados, descompressão do nervo no lugar ou transposição anterior.\n\n**Na prova**: McGowan grau III é parestesia permanente com fraqueza mensurável e atrofia.",
-  "correta": "No grau III há parestesia constante, fraqueza objetiva e atrofia intrínseca, o grau de pior prognóstico.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Classificar a neuropatia ulnar no cotovelo serve para dizer o quanto o nervo já sofreu. McGOWAN fez isso olhando o que o paciente perdeu de força. O alerta explica uma diferença de palavras entre o livro e a banca.\n\n**McGOWAN, como o Green descreve.** O sistema se baseia **predominantemente na perda da função motora** do nervo ulnar e **não inclui as alterações sensitivas**. **Grau I:** sem fraqueza muscular. **Grau II:** fraqueza muscular sem atrofia. **Grau III:** atrofia muscular. O livro diz que é amplamente citado, mas de aplicabilidade clínica limitada (cap. 28, p. 1105).\n\n**A leitura da banca.** O gabarito marca o grau III como parestesia permanente e fraqueza mensurável. Na prática, as duas descrições apontam para o mesmo estágio: a compressão avançada, com dano motor estabelecido. A diferença é que o Green usa a atrofia como marco, e a banca, a combinação de sintoma sensitivo permanente com fraqueza.\n\n**O que o Green acrescenta ao raciocínio.** Nos casos graves, há atrofia dos intrínsecos, FROMENT e WARTENBERG positivos e garra do anular e do mínimo. O eletrodiagnóstico separa a lesão desmielinizante, que recupera rápido, da axonal, de recuperação lenta e incompleta. E a sensibilidade evolui de parestesia intermitente para dormência persistente à medida que o nervo sofre mais.\n\n**Como guardar para a prova.** O grau III é o último degrau: dano motor estabelecido. O resumo Neuropatias de compressão no membro superior traz a classificação.",
+  "correta": "**D: parestesia permanente e fraqueza mensurável.** É o gabarito oficial. Corresponde ao estágio mais avançado da classificação de McGOWAN, que o Green define pela atrofia muscular, como registra o alerta (cap. 28, p. 1105).",
+  "conferido": false,
+  "alerta": "Gabarito oficial D preservado. No Green (8ª ed., cap. 28, p. 1105), a classificação de McGOWAN é motora: grau I sem fraqueza, grau II com fraqueza sem atrofia e grau III com atrofia muscular, sem incluir as alterações sensitivas. O gabarito descreve o grau III como parestesia permanente com fraqueza mensurável, a forma usada em outras fontes.",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Síndrome do túnel cubital, classificação de McGowan, p. 1105",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0056": {
   "conceito": "No estágio III de Mayfield, a lesão chegou ao lado ulnar do semilunar: ocorre falha **lunopiramidal**, também chamada semilunopiramidal ou piramidal-semilunar. A ordem dos nomes não muda os dois ossos conectados.\n\nA sequência começa no lado radial, com a dissociação escafossemilunar ou a fratura do escafoide. No estágio II, o capitato se desloca para dorsal em relação ao semilunar, pelo espaço de Poirier. Com a progressão para o III, rompe a contenção ulnar, e o padrão resultante mais comum é a luxação mediocárpica: o carpo está deslocado, mas o semilunar continua na fossa do rádio.\n\nA ruptura radiocárpica dorsal é o passo seguinte, permitindo que o próprio semilunar gire para palmar no estágio IV. Essa é a distinção decisiva entre luxação **ao redor do semilunar** e luxação **do semilunar**. Fonte secundária: resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
@@ -1046,14 +1063,18 @@
  },
  "mao-0072": {
   "incorretas": {
-   "A": "O nervo radial passa entre o braquial e o braquiorradial acima do cotovelo, mas o ventre do braquial não é ponto de compressão do interósseo posterior.",
-   "B": "O ancôneo é um músculo posterior do cotovelo, fora do trajeto do nervo interósseo posterior.",
-   "C": "O pronador redondo comprime o nervo mediano, e não o interósseo posterior."
+   "A": "**Não é ponto de compressão do radial profundo.** O braquial está no compartimento anterior do braço, e o radial inerva só a parte lateral dele. A compressão do ramo profundo acontece mais abaixo, no túnel radial.",
+   "B": "**Fica do outro lado.** O ancôneo é do lado posterior do cotovelo, perto do olécrano. Não faz parte do túnel radial, por onde passa o ramo profundo.",
+   "C": "**É ponto de compressão do mediano.** O pronador redondo, na intersecção das suas cabeças, é o local mais comum de compressão proximal do mediano. O radial passa pelo lado lateral, pelo supinador."
   },
-  "conceito": "O **nervo radial**, ao chegar ao cotovelo, se divide em um ramo **superficial** (sensitivo) e no **nervo interósseo posterior** (motor), que inerva os extensores do punho e dos dedos. O **túnel radial** é o caminho que o nervo percorre ao redor da cabeça do rádio até atravessar o músculo supinador.\n\n**Os cinco pontos de compressão no túnel radial**:\n\n**bandas fibrosas** na frente da articulação entre rádio e capítulo;\n\na **alça de Henry**: vasos recorrentes radiais que cruzam o nervo;\n\na **borda medial tendínea do extensor radial curto do carpo**, que pode comprimir o nervo, sobretudo com o antebraço em pronação e o punho dobrado;\n\na **arcada de Frohse**: a borda de cima do músculo supinador, o ponto **mais comum**;\n\na **borda de baixo** do supinador.\n\n**As duas síndromes**:\n\n**síndrome do túnel radial**: **dor** no antebraço proximal, cerca de 3 a 4 dedos **abaixo** do epicôndilo lateral, **sem fraqueza**;\n\n**síndrome do interósseo posterior**: **fraqueza**: os dedos não estendem (dedos caídos), e o punho estende desviando para radial, porque o extensor radial longo do carpo, inervado antes, continua funcionando. Não há perda de sensibilidade.\n\n**Diferencial com a epicondilite lateral** (cotovelo de tenista): na epicondilite, a dor é **em cima** do epicôndilo; no túnel radial, ela fica mais abaixo, sobre o músculo.\n\n**Na prova**: um dos pontos de compressão do interósseo posterior é a borda (origem) do extensor radial curto do carpo.",
-  "correta": "A borda medial tendínea do extensor radial curto do carpo é um dos pontos de compressão do interósseo posterior no túnel radial.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "No túnel radial, o ramo profundo do radial passa por uma série de estruturas no cotovelo lateral, e qualquer uma delas pode apertá-lo. O Green diz qual é a mais importante e qual vem em segundo lugar.\n\n**O que comprime** (cap. 28, p. 1114): a compressão do ramo profundo do radial no antebraço pode ser causada por vários elementos do túnel radial, mas é causada **principalmente pela borda anterior ou posterior do supinador**, e **menos frequentemente pela origem tendínea do extensor radial curto do carpo**.\n\n**Lendo as alternativas.** Das quatro, só a **origem do extensor radial curto do carpo** está entre os elementos do túnel radial que o Green cita. O supinador, que seria a resposta mais forte, não aparece nas opções.\n\n**As outras alternativas.**\n- O **braquial** é do compartimento anterior do braço e tem inervação dupla, musculocutâneo e radial, mas não é citado como ponto de compressão.\n- O **ancôneo** é do lado posterior do cotovelo.\n- O **pronador redondo** comprime o **mediano**.\n\nO resumo Neuropatias de compressão no membro superior traz o radial.",
+  "correta": "**D: na origem do músculo extensor radial curto do carpo.** É, entre as alternativas, o elemento do túnel radial que o Green cita como causa de compressão do ramo profundo, depois das bordas do supinador (cap. 28, p. 1114).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo radial profundo, p. 1114",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0073": {
   "incorretas": {
@@ -1352,14 +1373,18 @@
  },
  "mao-0093": {
   "incorretas": {
-   "A": "Alteração sensitiva indica lesão acima da divisão do radial, ou seja, uma lesão mais alta, e não do interósseo posterior.",
-   "C": "A força está alterada, e não preservada; o déficit motor é o que define a síndrome.",
-   "D": "Se força e sensibilidade estivessem preservadas, não haveria síndrome a diagnosticar."
+   "A": "**A sensibilidade fica normal.** O ramo profundo não leva fibras para a pele. A perda sensitiva no dorso radial da mão é do ramo superficial, como no WARTENBERG.",
+   "C": "**Inverte o quadro.** Força preservada com sensibilidade diminuída é o perfil da compressão do ramo superficial, a síndrome de WARTENBERG. No interósseo posterior, os extensores enfraquecem.",
+   "D": "**Seria um nervo normal.** Na síndrome do interósseo posterior, os músculos que ele inerva perdem força. Força e sensibilidade preservadas descreveriam outra causa de dor, sem compressão nervosa."
   },
-  "conceito": "O **nervo radial** desce pelo braço e, perto do cotovelo, se divide em dois ramos:\n\n**ramo superficial**: é **sensitivo**. Leva a sensibilidade do **dorso radial da mão** (dorso do polegar, do indicador e do espaço entre eles);\n\n**nervo interósseo posterior**: é **motor puro**. Atravessa o músculo supinador e inerva os extensores do antebraço: o extensor ulnar do carpo, o extensor comum dos dedos, o extensor do mínimo, o abdutor longo e os extensores do polegar e o extensor do indicador.\n\nAntes da divisão, o radial já inervou o tríceps, o braquiorradial e o **extensor radial longo do carpo**.\n\n**A síndrome do interósseo posterior**:\n\n**dedos caídos**: o paciente não consegue estender os dedos na metacarpofalângica;\n\no polegar não consegue se elevar para trás (retropulsão);\n\no **punho ainda estende**, mas **desviando para radial**: o extensor radial longo do carpo, inervado antes da divisão, funciona, e o extensor ulnar do carpo, inervado pelo interósseo posterior, está paralisado;\n\n**a sensibilidade fica preservada**, porque o ramo sensitivo saiu antes.\n\n**Para diferenciar**:\n\n**lesão alta do radial** (por exemplo, numa fratura do úmero): **punho caído** e perda de sensibilidade no dorso radial da mão;\n\n**ruptura dos tendões extensores** (como na artrite reumatoide): ao dobrar o punho, os dedos não se estendem pelo efeito de tenodese, o que mostra que o tendão está rompido.\n\n**Na prova**: na síndrome do interósseo posterior, a força dos extensores dos dedos e do polegar está alterada e a sensibilidade preservada.",
-  "correta": "O interósseo posterior é motor puro: os extensores dos dedos e do polegar enfraquecem, e a sensibilidade fica normal porque o ramo sensitivo sai antes.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "O ramo profundo do radial é um nervo de músculos. Quando ele é comprimido, os extensores perdem força, mas a pele não percebe nada. É uma regra simples que vale ponto.\n\n**O que o nervo faz.** O ramo profundo do radial, o interósseo posterior, entra no supinador e inerva o próprio supinador e os extensores, entre eles o **extensor comum dos dedos** e o **extensor longo do polegar**. Ele é **motor**. A sensibilidade do dorso radial da mão é do **ramo superficial**, que se separa no epicôndilo lateral e segue outro caminho, entre o braquiorradial e o extensor radial longo do carpo (Green, cap. 28, p. 1113 e 1114).\n\n**Por isso, na síndrome do interósseo posterior.** **Força alterada** nos extensores dos dedos e do polegar; **sensibilidade preservada**. O punho estende, com desvio radial, porque o extensor radial longo foi inervado antes da divisão.\n\n**O contraste com o WARTENBERG.** Na compressão do ramo superficial, é o contrário: alteração sensitiva no dorso radial, sem fraqueza. O Green lembra que, nesse caso, o teste de dez e o teste do colapso sensorial ajudam. O resumo Neuropatias de compressão no membro superior traz os dois ramos.",
+  "correta": "**B: alterada e a sensibilidade preservada.** O interósseo posterior é motor e inerva os extensores dos dedos e do polegar; a sensibilidade do dorso radial depende do ramo superficial, que não passa pelo supinador (Green, cap. 28, p. 1113 e 1114).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo radial profundo, p. 1114",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0094": {
   "conceito": "**A imagem.** Mostra a **via posterior do antebraço** (via de **Thompson**), com o antebraço visto pela face dorsal. Os afastadores abrem o intervalo entre o **extensor radial curto do carpo** (acima, radial) e o **extensor comum dos dedos** (abaixo, ulnar). No fundo, aparece o **nervo interósseo posterior** saindo do **supinador**. A seta aponta o ventre afastado para o lado ulnar: o **extensor comum dos dedos**.\n\n**A via de Thompson.**\n- **Indicação**: acesso à **diáfise proximal e média do rádio** pela face dorsal, e ao nervo interósseo posterior.\n- **Intervalo**:\n  - **proximal**: entre o **extensor radial curto do carpo** e o **extensor comum dos dedos**;\n  - **distal**: entre o extensor radial curto do carpo e o **extensor longo do polegar**.\n- Os músculos do intervalo são inervados pelo **radial** (o extensor radial curto pelo nervo radial ou pelo seu ramo profundo) e pelo **interósseo posterior** (extensor comum). Por isso, o intervalo não é verdadeiramente internervoso, mas é seguro.\n- Na parte proximal, o rádio fica coberto pelo **supinador**, por onde passa o **nervo interósseo posterior**.\n\n**O nervo interósseo posterior: o perigo da via.** O nervo entra no supinador pela **arcada de Frohse** e o atravessa, contornando o colo do rádio. Para expor o rádio proximal, é preciso **identificar o nervo** dentro do supinador e protegê-lo, ou **supinar** o antebraço e desinserir o supinador do rádio, afastando-o com o nervo dentro. A lesão do nervo causa a perda da **extensão dos dedos** e do polegar (dedos caídos), com a extensão do punho preservada em desvio radial.\n\n**Os músculos extensores do antebraço.**\n\n| Grupo | Músculos |\n|---|---|\n| **Superficial** (do epicôndilo lateral) | Braquiorradial, extensor radial longo e curto do carpo, **extensor comum dos dedos**, extensor do dedo mínimo, extensor ulnar do carpo, ancôneo |\n| **Profundo** | Supinador, abdutor longo do polegar, extensor curto e longo do polegar, extensor do indicador |\n\n**As outras vias do antebraço.**\n- **Via de Henry** (anterior): entre o braquiorradial e o pronador redondo (proximal) ou o flexor radial do carpo (distal). Expõe todo o rádio pela face volar.\n- **Via de Boyd**: acesso à ulna proximal e ao rádio proximal entre o ancôneo e o extensor ulnar do carpo.",
@@ -1454,14 +1479,18 @@
  },
  "mao-0102": {
   "incorretas": {
-   "A": "A garra ulnar aparece nas duas, e é até mais evidente na lesão baixa, pelo paradoxo ulnar.",
-   "B": "A atrofia dos intrínsecos aparece nas duas, porque o ramo motor profundo é atingido nos dois níveis.",
-   "D": "A alteração da sudorese palmar ocorre nos dois níveis e não ajuda a localizar a lesão."
+   "A": "**Aparece nos dois.** A garra ulnar vem da fraqueza dos intrínsecos, inervados pelo ramo profundo, atingido tanto no cotovelo quanto no punho. O Green diz até que a garra da compressão no punho é pior, pela força sem oposição do flexor profundo.",
+   "B": "**Também aparece nos dois.** A atrofia dos intrínsecos depende do ramo motor profundo, que sofre nas duas localizações. Ela mostra a gravidade, mas não localiza a compressão.",
+   "D": "**Não é o sinal que localiza.** O Green não usa a sudorese para diferenciar o cotovelo do punho. O sinal que ele descreve para separar os dois é a sensibilidade do dorso ulnar, que depende do ramo cutâneo dorsal."
   },
-  "conceito": "O **nervo ulnar** pode ser comprimido em dois lugares principais:\n\n**no cotovelo**: **síndrome do túnel cubital** (lesão alta);\n\n**no punho**: **síndrome do canal de Guyon** (lesão baixa), um túnel formado entre o pisiforme e o hâmulo do hamato.\n\n**O detalhe anatômico que separa as duas**: o ulnar dá um ramo para a pele **antes** de chegar ao punho, o **ramo cutâneo dorsal**. Ele sai cerca de 5 a 8 cm acima do punho e leva a sensibilidade do **dorso ulnar da mão** (o dorso do lado do mínimo).\n\nno **túnel cubital**, a compressão está **acima** da saída desse ramo, e a sensibilidade **dorsoulnar fica alterada**;\n\nno **canal de Guyon**, a compressão está **abaixo** da saída do ramo, e a sensibilidade **dorsoulnar fica preservada**.\n\n**Outras diferenças**:\n\nna lesão alta, também ficam fracos o flexor ulnar do carpo e o flexor profundo do anelar e do mínimo; na baixa, eles estão normais;\n\na **garra** do anelar e do mínimo é, curiosamente, **mais evidente na lesão baixa**. É o **paradoxo ulnar**: na lesão alta, o flexor profundo também está fraco, e os dedos dobram menos;\n\no **Tinel** é positivo no cotovelo ou no punho, conforme o local.\n\n**O que não diferencia**: a atrofia dos músculos intrínsecos e a alteração do suor na palma aparecem nas duas.\n\n**Causas no canal de Guyon**: cisto sinovial (a mais comum), fratura do hâmulo do hamato, trombose da artéria ulnar e ciclistas que apoiam o peso nessa região.\n\n**Na prova**: a alteração da sensibilidade dorsoulnar da mão diferencia o túnel cubital (alterada) do canal de Guyon (preservada).",
-  "correta": "O ramo cutâneo dorsal do ulnar sai antes do canal de Guyon, por isso a sensibilidade dorsoulnar se altera no túnel cubital e fica preservada no Guyon.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Dois pacientes com garra ulnar e atrofia dos interósseos. Um tem o problema no cotovelo; o outro, no punho. A mão parece igual. O que muda é um pedaço de pele no dorso da mão.\n\n**O ramo que sai antes.** O Green explica que **parestesias nos lados dorsal e volar do anular e do mínimo indicam compressão proximal ao punho**, porque o **ramo cutâneo dorsal sai do ulnar vários centímetros proximal à prega do punho** (cap. 28, p. 1103). Uma compressão no canal de GUYON acontece depois que esse ramo já saiu; por isso a sensibilidade **dorsoulnar** da mão fica normal. No túnel cubital, o ramo dorsal ainda faz parte do nervo comprimido, e o dorso pode formigar.\n\n**Por que os outros sinais não servem para separar.**\n- **Garra ulnar:** aparece nos dois. O Green diz até que a garra da compressão distal é pior, porque o flexor profundo, poupado, puxa sem oposição.\n- **Atrofia intrínseca:** os intrínsecos dependem do ramo profundo, que é atingido tanto no cotovelo quanto no punho.\n- **Sudorese:** o Green não a usa para separar os dois sítios; o sinal que localiza é a pele do dorso.\n\n**O que o livro acrescenta.** Dormência no território do ramo dorsal, no braço ou no antebraço, deve alertar para locais mais proximais: plexo, desfiladeiro e túnel cubital. O resumo Neuropatias de compressão no membro superior traz a comparação entre os dois sítios.",
+  "correta": "**C: alteração da sensibilidade dorsoulnar da mão.** O ramo cutâneo dorsal sai do ulnar vários centímetros acima do punho; por isso o dorso ulnar só se altera nas compressões proximais, como a do túnel cubital, e fica normal no canal de GUYON (Green, cap. 28, p. 1103).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo ulnar no canal de Guyon, p. 1103",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0103": {
   "incorretas": {
@@ -1798,14 +1827,19 @@
  },
  "mao-0129": {
   "incorretas": {
-   "A": "A compressão do mediano no punho, o túnel do carpo, é muito mais comum que a compressão do ulnar no punho.",
-   "B": "A compressão do ulnar no cotovelo, o túnel cubital, é bem mais frequente que no canal de Guyon.",
-   "C": "No canal de Guyon o ramo dorsal já saiu, e os sintomas são apenas palmares, sem acometer o dorso."
+   "A": "**Inverte a frequência.** A síndrome do túnel do carpo é a neuropatia compressiva mais comum do membro superior, e a compressão do ulnar no cotovelo, a segunda. A compressão do ulnar no punho é bem menos frequente que as duas.",
+   "B": "**O Green diz o contrário.** O ulnar é mais comumente comprimido no cotovelo, no túnel cubital, e menos frequentemente no punho, no canal de GUYON.",
+   "C": "**É o oposto do que o canal produz.** Como o ramo cutâneo dorsal sai vários centímetros acima do punho, uma compressão no canal de GUYON não dá sintomas dorsais. Sintomas dorsais e palmares indicam compressão proximal ao punho."
   },
-  "conceito": "O **nervo ulnar** chega ao punho e entra no **canal de Guyon**, um túnel entre o **pisiforme** (do lado ulnar) e o **hâmulo do hamato** (do lado radial). Mas, antes disso, ele já deu um ramo importante.\n\n**O ramo cutâneo dorsal**: sai do ulnar cerca de **5 a 8 cm acima do pisiforme**, contorna a cabeça da ulna pelo dorso e leva a sensibilidade do **dorso ulnar da mão** e do dorso do anelar e do mínimo. Ele **não passa** pelo canal de Guyon.\n\n**A consequência clínica**: na compressão do ulnar **no canal de Guyon**, o ramo dorsal já saiu. Por isso os sintomas são **só palmares**, e o dorso da mão tem sensibilidade normal. Já na compressão no cotovelo, o dorso também fica dormente.\n\n**A frequência das compressões nervosas**:\n\na compressão do **mediano no punho** (túnel do carpo) é de longe a **mais comum**;\n\na do **ulnar no cotovelo** (túnel cubital) é a segunda;\n\na do **ulnar no punho** (canal de Guyon) é **rara**.\n\n**O canal de Guyon**: o teto é o ligamento palmar do carpo; o assoalho, o ligamento transverso do carpo e o ligamento entre o pisiforme e o hamato.\n\n**Importância cirúrgica**: o ramo dorsal do ulnar corre risco nos portais ulnares da artroscopia do punho e nos acessos à ulna distal, e sua lesão pode formar um neuroma doloroso.\n\n**Na prova**: o ramo sensitivo dorsal do ulnar sai cerca de 8 cm acima do pisiforme, por isso o Guyon poupa o dorso da mão.",
-  "correta": "O ramo sensitivo dorsal sai cerca de 5 a 8 cm proximal ao pisiforme, fora do canal de Guyon, e por isso a compressão no Guyon poupa o dorso ulnar.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "A compressão do ulnar no punho tem uma assinatura que vem de onde o nervo dá o seu ramo para o dorso da mão. É esse detalhe anatômico que a alternativa certa descreve.\n\n**O que o Green diz** (cap. 28, p. 1103):\n- O ulnar é **mais comumente comprimido no cotovelo**, no túnel cubital, e **menos frequentemente no punho**, no canal de GUYON.\n- O **ramo cutâneo dorsal** sai do nervo **vários centímetros proximal à prega do punho**. Por isso, parestesias no dorso e na palma do anular e do mínimo indicam compressão acima do punho.\n- No canal de GUYON, as zonas definem os sintomas: **I**, motor e sensitivo; **II**, motor puro; **III**, sensitivo puro.\n\n**Aplicando às alternativas.**\n- A compressão do ulnar no punho **não** é mais comum que a do mediano: o túnel do carpo é a neuropatia compressiva mais comum, e o túnel cubital, a segunda.\n- Também **não** é mais comum que no cotovelo.\n- No canal de GUYON, os sintomas **não** são dorsais, justamente porque o ramo dorsal já saiu antes.\n- Resta a descrição do ramo dorsal saindo proximal ao punho. O número de 8 cm é da banca, como registra o alerta.\n\nO resumo Neuropatias de compressão no membro superior traz o canal de GUYON e o ramo dorsal.",
+  "correta": "**D: tem o ramo sensitivo dorsal saindo a 8 cm proximal ao pisiforme.** É o gabarito oficial. O Green confirma que o ramo cutâneo dorsal sai vários centímetros proximal à prega do punho, sem dar o número, como registra o alerta (cap. 28, p. 1103).",
+  "conferido": false,
+  "alerta": "Gabarito oficial D preservado. O Green (8ª ed., cap. 28, p. 1103) diz que o ramo cutâneo dorsal sai do ulnar vários centímetros proximal à prega do punho, sem dar a distância de 8 cm ao pisiforme que a alternativa cita.",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo ulnar, p. 1103",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0130": {
   "incorretas": {
@@ -2904,15 +2938,19 @@
  },
  "mao-0245": {
   "incorretas": {
-   "A": "A compressão na zona I, antes da divisão do nervo, daria déficit motor e sensitivo.",
-   "C": "A compressão na zona III, do ramo superficial, daria apenas alteração sensitiva.",
-   "D": "O canal de Guyon tem três zonas; não existe a zona IV.",
-   "E": "Não existe a zona IIIB no canal de Guyon."
+   "A": "**Teria alteração sensitiva.** Na zona I, o nervo é comprimido antes de se dividir, e os dois ramos sofrem, com déficits motores e sensitivos. O caso não tem alteração sensitiva.",
+   "C": "**É o contrário.** A zona III corresponde ao ramo superficial, com alterações sensitivas puras, sem garra nem fraqueza dos interósseos.",
+   "D": "**Não é uma das zonas do Green.** O capítulo descreve três zonas no canal de GUYON. A alternativa usa uma numeração que não existe nessa descrição.",
+   "E": "**Também não está na descrição do Green.** A subdivisão IIIB não faz parte das três zonas do livro. E, mesmo que existisse, uma zona ligada ao ramo superficial seria sensitiva, e não motora."
   },
-  "conceito": "O **canal de Guyon** é um túnel no lado ulnar do punho, entre o **pisiforme** e o **hâmulo do hamato**, por onde passam o **nervo** e a **artéria ulnares**. Dentro dele, o nervo ulnar se **divide** em dois ramos:\n\n**ramo superficial**: **sensitivo**, leva a sensibilidade da palma do lado do mínimo e do anelar;\n\n**ramo profundo**: **motor**, inerva os músculos intrínsecos da mão (interósseos, adutor do polegar, lumbricais ulnares e parte dos hipotenares).\n\n**As três zonas do canal**:\n\n**zona I**: **antes** da divisão do nervo. A compressão aí dá déficit **motor e sensitivo**;\n\n**zona II**: ao redor do **ramo profundo**. A compressão dá déficit **só motor**, sem alteração de sensibilidade;\n\n**zona III**: ao redor do **ramo superficial**. A compressão dá déficit **só sensitivo**.\n\n**O caso da questão**: o paciente tem sinais **motores** sem alteração de sensibilidade:\n\n**sinal de Egawa**: não consegue desviar o dedo médio para os lados com a mão espalmada (fraqueza dos interósseos);\n\n**sinal de Duchenne**: garra do anelar e do mínimo (fraqueza dos lumbricais ulnares e interósseos).\n\nFraqueza **só motora** e **sensibilidade normal** localizam a compressão no **ramo profundo**, ou seja, na **zona II**.\n\n**As causas**: cisto sinovial (a mais comum), fratura do hâmulo do hamato, trombose da artéria ulnar e ciclistas que apoiam o peso nessa região.\n\n**Na prova**: Egawa e Duchenne positivos sem alteração sensitiva indicam compressão na zona II do canal de Guyon.",
-  "correta": "Sinais motores sem alteração sensitiva localizam a compressão no ramo profundo, motor, que corresponde à zona II do canal de Guyon.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "O paciente tem sinais motores do ulnar na mão, e a sensibilidade está perfeita. Dentro do canal de GUYON, só um trecho do nervo explica força sem pele.\n\n**As zonas, segundo o Green** (cap. 28, p. 1103): o nervo pode ser comprimido **antes da bifurcação (zona I)**, com déficits **motores e sensitivos**; ao longo do **ramo motor profundo (zona II)**, com **perda motora pura**; ou ao longo do **ramo sensitivo superficial (zona III)**, com **alterações sensitivas puras**.\n\n**Os sinais do enunciado.** EGAWA e DUCHENNE são sinais motores do ulnar, ligados aos intrínsecos, e o paciente não tem alteração sensitiva: é a **zona II**. O ramo profundo inerva os hipotenares, os dois lumbricais mediais, os interósseos, o adutor do polegar e metade do flexor curto do polegar.\n\n**Por que as outras zonas não servem.** As zonas IV e IIIB das alternativas não fazem parte das três zonas que o Green descreve. E a zona III seria sensitiva pura, o contrário do caso.\n\n**O que o livro manda fazer.** Diante de uma paralisia motora isolada, pedir imagem e eletrodiagnóstico, porque o canal de GUYON tem muitas lesões que ocupam espaço: gânglios, trombose e pseudoaneurismas. O resumo Neuropatias de compressão no membro superior traz a tabela das zonas.",
+  "correta": "**B: zona II do canal de GUYON.** Sinais motores puros, sem alteração sensitiva, são a perda motora pura que o Green atribui à compressão do ramo motor profundo, a zona II (cap. 28, p. 1103).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo ulnar no canal de Guyon, zonas, p. 1103",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0246": {
   "incorretas": {
@@ -3699,17 +3737,19 @@
  },
  "mao-0309": {
   "incorretas": {
-   "B": "A supinação afasta os tendões e alivia o nervo, em vez de comprimi-lo.",
-   "C": "A pronação está certa, mas é a flexão do punho que estira o nervo, e não a extensão.",
-   "D": "Nem a supinação nem a extensão comprimem ou estiram o ramo sensitivo do radial."
+   "B": "**A supinação afasta os tendões.** Na pronação, o braquiorradial e o extensor radial longo se aproximam e apertam o nervo. Na supinação, eles se afastam, e a compressão diminui.",
+   "C": "**A extensão alivia o nervo.** O sensitivo radial se alonga quando o punho vai para a flexão ulnar. A extensão do punho encurta esse trajeto e não reproduz os sintomas.",
+   "D": "**Os dois componentes aliviam.** Supinação e extensão do punho afastam os tendões e diminuem a tensão no nervo. É o oposto da manobra provocativa do WARTENBERG."
   },
-  "conceito": "A **síndrome de Wartenberg** é a compressão do **ramo sensitivo do nervo radial** no antebraço distal, cerca de 8 a 9 cm acima do estiloide radial. Ali o nervo deixa de ser profundo e fica sob a pele, passando **entre dois tendões**: o **braquiorradial** e o **extensor radial longo do carpo**.\n\n**Causas**: relógio ou pulseira apertados, **algemas**, trauma local. Por ser um nervo só sensitivo, **não há fraqueza**: há queimação, formigamento e perda de sensibilidade no **dorso radial da mão**.\n\n**A manobra provocativa**:\n\na **pronação forçada** aproxima os dois tendões como as lâminas de uma tesoura e aperta o nervo entre eles;\n\na **flexão do punho** (com desvio ulnar) estira o nervo;\n\nsomadas à **percussão** sobre o trajeto do nervo, reproduzem os sintomas.\n\n**Diferença com De Quervain**: na tenossinovite de De Quervain, a dor é ao **mover o polegar**, a sensibilidade é normal e não há Tinel. No Wartenberg há **Tinel positivo** e alteração da sensibilidade. O teste de Finkelstein pode doer nos dois, porque também estira o nervo.\n\n**Tratamento**: retirar a compressão e usar órtese; se falhar, liberação cirúrgica do nervo.\n\n**Na prova**: Wartenberg = percussão com **pronação e flexão forçada do punho**.",
-  "correta": "A pronação fecha a tesoura entre braquiorradial e extensor radial longo do carpo, e a flexão do punho estira o nervo.",
+  "conceito": "O relógio de pulso aperta, o antebraço gira para dentro, o punho dobra para o lado do mínimo: é nesse movimento que os sintomas do WARTENBERG aparecem. O Green explica a mecânica.\n\n**A anatomia** (cap. 28, p. 1113). O nervo sensitivo radial entra no subcutâneo **entre os tendões do braquiorradial e do extensor radial longo do carpo**, no antebraço médio. **Na pronação**, esses dois tendões **se aproximam**; e, quando o punho vai da extensão radial para a **flexão ulnar**, o nervo **se alonga** e pode ser comprimido entre eles.\n\n**O diagnóstico.** Suspeita-se do aprisionamento quando os sintomas são reproduzidos pela **pronação do antebraço e flexão ulnar do punho**. Há também um sinal de percussão positivo no ponto em que o nervo sai da fáscia profunda, e a tabela de testes do capítulo lista a mesma manobra para o sensitivo radial. A banca juntou a percussão com o movimento provocativo.\n\n**Por que as outras combinações não servem.** A supinação afasta os dois tendões, e a extensão do punho encurta o trajeto do nervo; as duas aliviam a tensão. O resumo Neuropatias de compressão no membro superior traz o WARTENBERG.",
+  "correta": "**A: pronação e flexão forçada do punho.** O Green diz que os sintomas da compressão do sensitivo radial são reproduzidos pela pronação do antebraço com flexão ulnar do punho, posição em que os tendões do braquiorradial e do extensor radial longo se aproximam e o nervo se alonga (cap. 28, p. 1113).",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.4.5"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.4.5",
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo radial superficial (Wartenberg), p. 1113",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
   ],
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "mao-0310": {
   "incorretas": {
@@ -4171,25 +4211,33 @@
  },
  "mao-0347": {
   "incorretas": {
-   "A": "O nervo ulnar corre pelo lado medial do antebraço e não tem relação com o músculo de Gantzer.",
-   "B": "O radial e seus ramos ficam no compartimento dorsal, fora do plano volar profundo onde está o Gantzer.",
-   "D": "O axilar inerva o deltoide e o redondo menor, no ombro, longe do antebraço."
+   "A": "**O ulnar tem os seus próprios músculos.** As estruturas que comprimem o ulnar são o ancôneo epitroclear, o flexor ulnar do carpo, o ligamento de OSBORNE e a arcada de STRUTHERS. O GANTZER fica no compartimento flexor profundo, junto do mediano.",
+   "B": "**O radial se comprime em outro lugar.** O interósseo posterior se comprime no supinador, e o sensitivo radial, entre o braquiorradial e o extensor radial longo do carpo. O GANTZER pertence ao compartimento flexor.",
+   "D": "**Está no ombro.** O axilar passa pelo espaço quadrangular, com a artéria circunflexa posterior do úmero. Não tem relação com os músculos do antebraço."
   },
-  "conceito": "O **nervo interósseo anterior** é um ramo **motor puro** do nervo **mediano**. Sai logo abaixo do pronador redondo e desce sobre a membrana interóssea. Inerva o **flexor longo do polegar**, a parte do **flexor profundo do indicador e do médio** e o **pronador quadrado**.\n\n**O músculo de Gantzer** é uma **cabeça acessória do flexor longo do polegar**, presente em boa parte das pessoas. Ele cruza por cima do interósseo anterior e pode **comprimi-lo**. Na maioria das vezes não causa nada.\n\n**Outras causas de compressão do interósseo anterior**: borda fibrosa do pronador redondo ou do flexor superficial, vasos anômalos, tumores. A causa **mais comum** de paralisia espontânea, porém, é a **neurite braquial** (síndrome de Parsonage-Turner), e não uma compressão.\n\n**O quadro clínico**:\n\n**sinal do O** (Kiloh-Nevin): ao fazer um \"ok\", a pinça sai com as **polpas achatadas**, porque o polegar e o indicador não fletem a articulação da ponta;\n\no **flexor superficial** está preservado, então a interfalângica proximal do indicador flete normalmente;\n\n**sensibilidade normal**, porque o nervo é só motor.\n\n**Na prova**: músculo de Gantzer = compressão do **nervo mediano** (ramo interósseo anterior).",
-  "correta": "O músculo de Gantzer, cabeça acessória do flexor longo do polegar, pode comprimir o interósseo anterior, ramo do mediano.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "O nome é estranho, mas o músculo é simples: uma cabeça a mais do flexor longo do polegar, que nem todo mundo tem. Quando existe, ela passa perto de um nervo e pode apertá-lo.\n\n**O músculo de GANTZER.** O Green o descreve como a **cabeça acessória do flexor longo do polegar** e o lista, com o palmar profundo e o flexor radial curto do carpo, entre os **músculos acessórios e anômalos** que podem comprimir o **nervo mediano** no antebraço (cap. 28, p. 1100).\n\n**Por que o mediano.** O flexor longo do polegar é inervado pelo interósseo anterior, ramo do mediano, e a cabeça acessória fica no antebraço proximal, na região em que o mediano e o interósseo anterior passam. A compressão ali pode dar distúrbio sensitivo do mediano, disfunção motora dos músculos do interósseo anterior e do mediano, ou os dois.\n\n**Os outros nervos das alternativas.** O **ulnar** tem os seus próprios pontos: STRUTHERS, OSBORNE, flexor ulnar do carpo, ancôneo epitroclear. O **radial** se comprime no supinador e entre o braquiorradial e o extensor radial longo. O **axilar**, no espaço quadrangular. O resumo Neuropatias de compressão no membro superior traz os pontos de cada nervo.",
+  "correta": "**C: mediano.** O Green lista o músculo de GANTZER, cabeça acessória do flexor longo do polegar, entre os músculos acessórios que podem comprimir o nervo mediano no antebraço (cap. 28, p. 1100).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo mediano no cotovelo e antebraço, p. 1100",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0348": {
   "incorretas": {
-   "A": "A ordem está invertida: Chow é a de dois portais, e Agee a de portal único.",
-   "C": "Nenhuma das duas usa portal único distal; o portal único de Agee é proximal.",
-   "D": "As técnicas não são iguais; o número de portais é justamente o que as diferencia."
+   "A": "**Inverte as técnicas.** O portal único proximal é o de AGEE, e o duplo, proximal e distal, é o de CHOW. A alternativa troca a ordem pedida.",
+   "C": "**Erra CHOW.** A técnica de CHOW não é de portal único: ela tem um portal de entrada no punho e um de saída na palma. E AGEE também não usa portal distal.",
+   "D": "**Acerta AGEE e erra CHOW.** AGEE usa um portal único proximal, mas CHOW usa dois portais. A diferença entre as duas é justamente o número de incisões."
   },
-  "conceito": "A **liberação do túnel do carpo** consiste em cortar o **ligamento transverso do carpo** para aliviar a pressão sobre o nervo mediano. Pode ser feita de forma **aberta** (incisão na palma) ou **endoscópica**.\n\n**As duas técnicas endoscópicas clássicas**:\n\n**Chow**: **dois portais**: uma entrada no antebraço distal, logo acima do punho, e uma saída na palma. O endoscópio atravessa o túnel de um portal ao outro;\n\n**Agee**: **portal único proximal**, com uma pequena incisão no punho. Um dispositivo com lâmina retrátil corta o ligamento de dentro do túnel.\n\n**Endoscópica × aberta**: a endoscópica dá **retorno mais rápido** ao trabalho e menos dor na cicatriz nas primeiras semanas. Após cerca de **3 meses**, os resultados funcionais são **semelhantes**.\n\n**Complicações da liberação**:\n\n**liberação incompleta**, a principal causa de sintomas que persistem; risco maior na endoscópica pela visão limitada;\n\nlesão do **ramo cutâneo palmar** (neuroma doloroso), do **ramo motor** do mediano ou do **arco palmar superficial**;\n\n**dor do pilar**, nas eminências tenar e hipotenar;\n\nsíndrome dolorosa regional complexa.\n\n**Na prova**: Chow = **portal duplo**; Agee = **portal único proximal**.",
-  "correta": "A técnica de Chow usa dois portais, um no punho e outro na palma, e a de Agee usa um único portal proximal.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Duas técnicas endoscópicas para cortar o mesmo ligamento, e a diferença está em quantos cortes na pele cada uma faz.\n\n**CHOW: dois portais** (Green, cap. 28, p. 1097). O **portal de entrada** fica no punho, marcado a partir do pisiforme: uma linha de 1 a 1,5 cm radial ao polo proximal dele e outra 0,5 cm proximal, com uma incisão transversal de 1 cm. A cânula é passada; com a ponta no gancho do hamato, punho e dedos são hiperestendidos. O **portal de saída**, de 0,5 cm, fica na palma, 1 cm proximal à linha que bissecta o ângulo do polegar abduzido com o terceiro espaço.\n\n**AGEE: um portal** (p. 1098). Uma incisão **transversal de 2 a 3 cm** na **prega distal do punho**, com garrote; anestesia geral ou regional no começo e local com a experiência.\n\n**Por que a resposta é a B.** A banca descreveu CHOW como duplo e AGEE como único proximal, que é exatamente a descrição do Green. O resumo Neuropatias de compressão no membro superior traz a liberação do túnel do carpo.",
+  "correta": "**B: duplo - único proximal.** CHOW usa dois portais, entrada no punho e saída na palma, e AGEE usa um portal único na prega distal do punho, segundo o Green (cap. 28, p. 1097 e 1098).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Técnicas endoscópicas de Chow e de Agee, p. 1097 e 1098",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0349": {
   "incorretas": {
@@ -4341,14 +4389,18 @@
  },
  "mao-0395": {
   "incorretas": {
-   "A": "O grau I tem só queixas sensitivas ou fraqueza subjetiva, sem déficit que o exame consiga mostrar.",
-   "C": "O grau III exige atrofia muscular, que o enunciado não descreve.",
-   "D": "A classificação de McGowan tem só três graus; não existe o grau IV."
+   "A": "**O grau I não tem fraqueza.** Na classificação de McGOWAN, o grau I não apresenta fraqueza muscular. Um FROMENT positivo já demonstra fraqueza do adutor do polegar, o que tira o paciente desse grau.",
+   "C": "**Exigiria atrofia.** O grau III é definido pela atrofia muscular. O enunciado traz só o FROMENT positivo, que indica fraqueza, sem descrever atrofia dos intrínsecos.",
+   "D": "**Não existe grau IV.** A classificação de McGOWAN tem três graus. A alternativa aproveita classificações de outros temas que vão até IV."
   },
-  "conceito": "A **classificação de McGowan** gradua a compressão do **nervo ulnar no cotovelo** (síndrome do túnel cubital) pela gravidade do quadro clínico:\n\n**grau I**: queixas **sensitivas** (formigamento no 4º e 5º dedos) e, no máximo, uma fraqueza que o paciente sente, mas que **o exame não mostra**;\n\n**grau II**: **fraqueza objetiva** dos músculos intrínsecos, que o examinador consegue medir, **sem atrofia**;\n\n**grau III**: fraqueza **com atrofia** muscular, sobretudo do **1º interósseo dorsal**, garra do 4º e 5º dedos e paralisia evidente.\n\n**Onde entra o sinal de Froment**: o paciente segura uma folha de papel entre o polegar e o indicador. Sem a força do **adutor do polegar** (inervado pelo ulnar), ele dobra a ponta do polegar, usando o flexor longo do polegar (do mediano) para compensar. É, portanto, uma **fraqueza objetiva**: o paciente já saiu do grau I. Se ainda **não há atrofia**, está no **grau II**.\n\n**Por que importa**: o prognóstico piora muito no grau III, em que a recuperação motora costuma ser incompleta mesmo após a cirurgia. Operar antes da atrofia dá melhores resultados.\n\n**Tratamento**: nos graus leves, evitar dobrar o cotovelo por muito tempo e usar órtese noturna em extensão. Nos graus mais avançados, descompressão in situ ou transposição anterior do nervo.\n\n**Na prova**: Froment positivo, sem atrofia = **McGowan II**.",
-  "correta": "O Froment positivo mostra fraqueza objetiva do adutor; sem atrofia descrita, o paciente está no grau II de McGowan.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Peça ao paciente que segure uma folha de papel entre o polegar e o indicador enquanto você puxa. Se o polegar dobrar na ponta para segurar, o adutor está fraco e o flexor longo está compensando: é o sinal de FROMENT. A pergunta é em que degrau de McGOWAN esse paciente está.\n\n**McGOWAN no Green.** Classificação motora, sem as alterações sensitivas: **grau I**, sem fraqueza; **grau II**, **fraqueza muscular sem atrofia**; **grau III**, atrofia (cap. 28, p. 1105).\n\n**O FROMENT como medida de fraqueza.** O sinal mostra fraqueza do **adutor do polegar**, inervado pelo ramo profundo do ulnar. O Green o lista entre os achados dos casos graves de compressão, junto com o WARTENBERG, a garra e a atrofia. Um FROMENT positivo já tira o paciente do grau I, que não tem fraqueza. Sem atrofia descrita, o lugar dele é o **grau II**.\n\n**Como isso aparece no consultório.** A maioria dos pacientes chega nos estágios iniciais, sem déficit motor óbvio, e o teste sensitivo cuidadoso ajuda a quantificar o problema. Quando surge fraqueza objetiva, como no FROMENT, a compressão já avançou. O resumo Neuropatias de compressão no membro superior traz a classificação e os sinais.\n\n**O que a banca quis testar.** A tradução de um sinal clínico em grau de classificação.",
+  "correta": "**B: II.** O FROMENT positivo mostra fraqueza do adutor do polegar; na classificação de McGOWAN do Green, fraqueza sem atrofia é o grau II (cap. 28, p. 1105).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Síndrome do túnel cubital, classificação de McGowan e clínica, p. 1105",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0396": {
   "incorretas": {
@@ -6011,14 +6063,18 @@
  },
  "mao-0519": {
   "incorretas": {
-   "A": "A aponeurose bicipital é ponto de compressão do nervo mediano.",
-   "C": "O braquiorradial se insere no estiloide do rádio, longe do ponto de entrada do nervo no supinador.",
-   "D": "A borda do extensor radial curto é outro ponto de compressão do túnel radial, mas não é a arcada de Frohse."
+   "A": "**Comprime o mediano.** A aponeurose bicipital, o lacertus fibroso, é um dos pontos de compressão do mediano no cotovelo. O radial passa pelo lado lateral.",
+   "C": "**Fica no punho.** O braquiorradial se insere no estiloide do rádio. Na região do cotovelo, ele cobre o radial, mas a compressão do ramo profundo acontece na entrada do supinador.",
+   "D": "**É ponto de compressão, mas não é a arcada de FROHSE.** O Green cita a origem tendínea do extensor radial curto do carpo como causa menos frequente de compressão do ramo profundo. A arcada de FROHSE é a entrada do supinador."
   },
-  "conceito": "O **nervo interósseo posterior** (ramo profundo do radial) passa por um caminho estreito no antebraço proximal, o **túnel radial**, com cinco pontos de compressão (FREAS):\n\n**F**: bandas **fibrosas** na frente da radiocapitelar;\n\n**R**: alça de **Henry**, os vasos recorrentes radiais;\n\n**E**: borda medial tendínea do **extensor radial curto do carpo**;\n\n**A**: **arcada de Frohse**, a borda **proximal do supinador**, tendínea em muitas pessoas; é o ponto **mais comum**;\n\n**S**: borda **distal** do supinador.\n\n**Duas síndromes**: na **síndrome do túnel radial**, só há **dor**, 3 a 4 dedos distal ao epicôndilo, sem fraqueza (diferencial com a epicondilite, em que a dor é sobre o epicôndilo). Na **paralisia do interósseo posterior**, há **fraqueza**: dedos caídos e punho que estende em desvio radial, sem alteração de sensibilidade.\n\n**As estruturas das outras alternativas**: a **aponeurose bicipital** (lacerto fibroso) é ponto de compressão do **mediano**; o **braquiorradial** se insere no estiloide do rádio, longe do túnel; e a borda do extensor radial curto é um ponto do túnel radial, mas não é a arcada de Frohse.\n\n**Na prova**: arcada de Frohse = **entrada do supinador**.",
-  "correta": "A arcada de Frohse é a borda proximal do supinador, onde o interósseo posterior entra no músculo.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Antes de chegar aos extensores, o ramo profundo do radial precisa atravessar um músculo: o supinador. Na porta de entrada desse músculo, as provas colocam um nome próprio, a arcada de FROHSE.\n\n**O que o Green diz.** A compressão do ramo profundo do radial é causada **principalmente pela borda anterior ou posterior do supinador**, e menos frequentemente pela origem tendínea do extensor radial curto do carpo (cap. 28, p. 1114). A **borda de entrada** do supinador é a que as provas chamam de **arcada de FROHSE**.\n\n**O que acontece com a compressão ali.** O ramo profundo é **motor**; a sensibilidade fica normal. O braquiorradial e o extensor radial longo do carpo, inervados antes da divisão, ficam bons, e o punho estende com desvio radial. Os extensores dos dedos e do polegar, e o extensor ulnar do carpo, enfraquecem.\n\n**As outras alternativas.** A **aponeurose bicipital**, o lacertus, comprime o **mediano**. A **inserção do braquiorradial** fica no estiloide do rádio, longe do cotovelo. A **origem do extensor radial curto** é ponto de compressão, mas secundário, e não é a arcada de FROHSE. O resumo Neuropatias de compressão no membro superior traz o radial.",
+  "correta": "**B: entrada do músculo supinador.** A arcada de FROHSE é a borda de entrada do supinador, e o Green diz que as bordas do supinador são a principal causa de compressão do ramo profundo do radial (cap. 28, p. 1114).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo radial profundo, p. 1114",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0520": {
   "incorretas": {
@@ -6171,14 +6227,18 @@
  },
  "mao-0531": {
   "incorretas": {
-   "A": "A cabeça umeral do flexor ulnar do carpo forma o túnel cubital, onde se comprime o nervo ulnar.",
-   "C": "A arcada de Struthers, no septo intermuscular medial, comprime o ulnar; o mediano é comprimido pelo ligamento de Struthers.",
-   "D": "O bíceps comprime o mediano pelo lacerto fibroso, e não por uma cabeça medial."
+   "A": "**É do ulnar.** O nervo ulnar segue entre as cabeças ulnar e umeral do flexor ulnar do carpo, e as bandas desse músculo são ponto de compressão do ulnar. O mediano passa pelo pronador e pelo flexor superficial.",
+   "C": "**Também é do ulnar.** A arcada de STRUTHERS, banda tendínea do septo intermuscular medial, passa sobre o ulnar acima do cotovelo. O STRUTHERS do mediano é o ligamento do processo supracondilar, outra estrutura.",
+   "D": "**Não existe essa cabeça.** O bíceps tem cabeça longa, do tubérculo supraglenoidal, e cabeça curta, do coracoide. O que comprime o mediano perto do bíceps é o lacertus fibroso, a aponeurose bicipital."
   },
-  "conceito": "A **síndrome do pronador** é a compressão do **mediano** no cotovelo e no antebraço proximal. Ela tem quatro pontos possíveis, de proximal para distal:\n\n**ligamento de Struthers**: liga um **processo supracondilar** do úmero ao epicôndilo medial; a radiografia mostra o esporão;\n\n**lacerto fibroso** (aponeurose bicipital): dor à flexão resistida do cotovelo em supinação;\n\n**entre as cabeças do pronador redondo**: dor à pronação resistida com o cotovelo estendido;\n\n**arcada aponeurótica do flexor superficial dos dedos**: dor à **flexão resistida da IFP do dedo médio**.\n\n**O quadro**: dor no antebraço proximal e parestesia no território do mediano, **incluindo a eminência tenar** (o ramo cutâneo palmar sai antes do túnel do carpo). Não há o sintoma noturno típico do túnel do carpo, o Phalen é negativo, e a eletroneuromiografia muitas vezes é normal.\n\n**Não confundir os dois Struthers**: o **ligamento** de Struthers comprime o **mediano**; a **arcada** de Struthers, no septo intermuscular medial, comprime o **ulnar**. A cabeça umeral do flexor ulnar do carpo forma o **túnel cubital**, também do ulnar.\n\n**Na prova**: ponto de compressão na síndrome do pronador = **arcada do flexor superficial dos dedos** (entre os quatro).",
-  "correta": "A arcada aponeurótica do flexor superficial dos dedos é um dos pontos de compressão do mediano na síndrome do pronador.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conceito": "Na síndrome do pronador, o mediano é estrangulado no antebraço proximal, num corredor estreito com várias portas. A banca pede uma delas.\n\n**Os pontos de compressão proximal do mediano** (Green, cap. 28, p. 1100):\n- O local mais comum de compressão proximal é **no antebraço, no nível do pronador**, citado sobretudo na intersecção das cabeças profunda e superficial do pronador redondo.\n- A **fibrose do lacertus**.\n- A **borda tendínea do arco do flexor superficial dos dedos**, a cerca de **6,5 cm** da linha epicondilar.\n- Músculos acessórios: **GANTZER**, palmar profundo e flexor radial curto do carpo.\n- Acima do cotovelo, o **ligamento de STRUTHERS**, com processo supracondilar.\n\n**Na cirurgia.** Os pontos técnicos do Green incluem soltar o lacertus, alongar o tendão superficial do pronador redondo, ressecar a cabeça profunda do pronador e soltar o arco do flexor superficial. A armadilha que o livro aponta é justamente liberar mal o arco do pronador e o do flexor superficial.\n\n**As alternativas que não são do mediano.** A cabeça umeral do flexor ulnar do carpo e a arcada de STRUTHERS do septo intermuscular comprimem o **ulnar**. A cabeça medial do bíceps não existe: o bíceps tem cabeça longa e curta. O resumo Neuropatias de compressão no membro superior traz o mapa.",
+  "correta": "**B: arcada aponeurótica do músculo flexor superficial dos dedos.** A borda tendínea do arco do flexor superficial é um dos pontos de compressão do mediano no antebraço proximal descritos no Green (cap. 28, p. 1100).",
+  "conferido": false,
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo mediano no cotovelo e antebraço, p. 1100",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
+  ],
+  "geradoEm": "2026-10-29"
  },
  "mao-0532": {
   "incorretas": {
@@ -7675,20 +7735,22 @@
   "conferido": false
  },
  "mao-0614": {
-  "conceito": "**Síndrome de Wartenberg.** É a compressão do **ramo sensitivo superficial do nervo radial** no antebraço distal, descrita por Wartenberg como \"cheiralgia parestésica\". Causa dor e parestesia no **dorso radial da mão**, do polegar e da primeira comissura, sem déficit motor.\n\n**Anatomia.** O nervo radial se divide no cotovelo em ramo profundo (interósseo posterior, motor) e ramo superficial (sensitivo). O ramo superficial desce sob o **braquiorradial** e, cerca de **9 cm acima do estiloide radial**, torna-se subcutâneo, emergindo **entre os tendões do braquiorradial e do extensor radial longo do carpo**.\n\n**Mecanismo da compressão.** Na **pronação**, o tendão do extensor radial longo do carpo cruza sob o do braquiorradial, criando um efeito de **tesoura** que comprime o nervo no ponto em que ele sai entre os dois. Fatores: pulseiras e relógios apertados, algemas, gessos, trauma direto, movimentos repetitivos de pronação e desvio ulnar.\n\n**Diagnóstico.**\n- Tinel positivo no ponto de emergência.\n- Sintomas reproduzidos pela **pronação forçada com desvio ulnar e flexão do punho** (teste de provocação de Dellon e Mackinnon).\n- Diferencial com a **tenossinovite de De Quervain** (o Finkelstein pode ser positivo em ambos) e radiculopatia de C6.\n\n**Diferenças de outras compressões do radial.**\n\n| Síndrome | Ramo | Local principal |\n|---|---|---|\n| **Wartenberg** | **Sensitivo superficial** | **Entre braquiorradial e extensor radial longo do carpo** |\n| Interósseo posterior | Motor profundo | Arcada de Frohse (supinador) |\n| Túnel radial | Profundo, com dor sem déficit | Arcada de Frohse, ERCC, vasos recorrentes |\n\n**Tratamento.** Retirar a compressão externa, órtese e infiltração; na falha, liberação do nervo entre os tendões (com liberação da fáscia).\n\n> Wartenberg: ramo sensitivo do radial comprimido entre braquiorradial e extensor radial longo do carpo, pior em pronação.",
-  "correta": "**B: braquiorradial e extensor radial longo do carpo (resposta pela bibliografia).** O ramo sensitivo do radial emerge entre esses dois tendões, onde a pronação cria um efeito de tesoura que o comprime.",
+  "conceito": "Na face radial do antebraço, dois tendões correm lado a lado e, no meio deles, o ramo sensitivo do radial sai para a pele. Quando os dois se aproximam, o nervo fica preso como numa tesoura.\n\n**O que o Green descreve.** O nervo sensitivo radial se separa do radial no epicôndilo lateral, abaixo do braquiorradial, e **entra no subcutâneo entre os tendões do braquiorradial e do extensor radial longo do carpo**, no antebraço médio (cap. 28, p. 1113). Em 3% a 10%, ele perfura o tendão do braquiorradial. Na pronação, os dois tendões se aproximam e podem comprimi-lo; a flexão ulnar do punho o alonga.\n\n**A história.** WARTENBERG, em 1932, descreveu cinco casos e chamou o quadro de **cheiralgia parestésica**. O diagnóstico diferencial principal é a DE QUERVAIN, e as duas podem coexistir.\n\n**Sobre esta questão.** A banca não divulgou o gabarito, e o acervo mantém a resposta provável B, que é exatamente a do Green. O resumo Neuropatias de compressão no membro superior traz o WARTENBERG.",
+  "correta": "**B: braquiorradial e extensor radial longo do carpo.** É a resposta provável para esta questão sem gabarito oficial: o Green descreve o nervo sensitivo radial saindo para o subcutâneo entre esses dois tendões, onde é comprimido na síndrome de WARTENBERG (cap. 28, p. 1113).",
   "incorretas": {
-   "A": "**Extensor longo do polegar e extensor radial longo do carpo** não delimitam o ponto de emergência do nervo; o extensor longo do polegar cruza os radiais mais distalmente, no punho.",
-   "C": "**Braquiorradial e abdutor longo do polegar**: o abdutor longo cruza o antebraço distal sobre os radiais, mas o nervo emerge entre braquiorradial e extensor radial longo, mais proximal.",
-   "D": "**Extensor longo do polegar e abdutor longo do polegar** formam os limites da tabaqueira anatômica (com o curto), onde passam ramos sensitivos já subcutâneos, não o ponto de compressão de Wartenberg."
+   "A": "**Põe o nervo longe do ponto de saída.** O extensor longo do polegar corre mais distal e dorsal, contornando o tubérculo de LISTER. O nervo sensitivo radial sai para a pele mais acima, entre o braquiorradial e o extensor radial longo do carpo.",
+   "C": "**O abdutor longo fica mais distal.** Ele cruza a face radial do rádio no terço distal, junto do extensor curto do polegar. O ponto de saída do nervo, onde ocorre a compressão, é entre o braquiorradial e o extensor radial longo.",
+   "D": "**São dois tendões do polegar, mais distais.** O extensor longo e o abdutor longo do polegar não formam a tesoura que comprime o nervo sensitivo radial. A DE QUERVAIN envolve o abdutor longo, e por isso entra no diagnóstico diferencial, mas a compressão nervosa é mais proximal."
   },
   "referencias": [
    "Tratado de Ortopedia da SBOT 2007. p.308.",
-   "Dellon AL, Mackinnon SE. Radial sensory nerve entrapment in the forearm. J Hand Surg Am. 1986;11(2):199-205."
+   "Dellon AL, Mackinnon SE. Radial sensory nerve entrapment in the forearm. J Hand Surg Am. 1986;11(2):199-205.",
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo radial superficial (Wartenberg), p. 1113",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
   ],
   "provavel": "B",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "mao-0615": {
   "conceito": "**Instabilidade escafossemilunar e os ângulos do carpo.** O ligamento escafossemilunar, sobretudo sua porção dorsal, une dois ossos com tendências opostas: o **escafoide tende a fletir** e o **semilunar tende a estender** (puxado pelo piramidal). Quando o ligamento rompe (com falha dos estabilizadores secundários), cada um segue sua tendência: o escafoide flete e o semilunar estende. Esse padrão é a **instabilidade segmentar dorsal intercalada (DISI)**.\n\n**Ângulos medidos no perfil verdadeiro do punho.**\n\n| Ângulo | Normal | Alteração na DISI |\n|---|---|---|\n| **Escafossemilunar** | 30 a 60 graus (média de 47) | **Acima de 60 graus**; acima de 70 é praticamente diagnóstico |\n| Capitatossemilunar | 0 a 15 graus (alguns aceitam até 20) | Aumentado, pelo semilunar estendido e o capitato desviado |\n| Radiossemilunar | Até cerca de 10 a 15 graus | Semilunar estendido |\n\nLinscheid e colaboradores sistematizaram esses ângulos e os padrões DISI e VISI.\n\n**Outros sinais radiográficos.**\n- **Sinal de Terry Thomas**: espaço escafossemilunar maior que 3 mm no AP (melhor com punho cerrado e desvio ulnar).\n- **Sinal do anel cortical**: o escafoide fletido aparece encurtado, com o tubérculo projetado como um anel.\n- Ressonância e artroscopia (classificação de Geissler) confirmam a lesão ligamentar.\n\n**Evolução.** Sem tratamento, a instabilidade progride para artrose em padrão **SLAC** (scapholunate advanced collapse): estiloide radial, depois fossa do escafoide, depois mediocarpal; a radiossemilunar é poupada.\n\n> Ângulo escafossemilunar acima de 60 graus confirma a DISI da instabilidade escafossemilunar.",
@@ -8124,18 +8186,20 @@
   "conferido": false
  },
  "mao-0637": {
-  "conceito": "**O nervo mediano no antebraço proximal.** Logo abaixo do cotovelo, o mediano pode ser comprimido em vários pontos:\n- o **ligamento de Struthers** (quando há um processo supracondilar);\n- o **lacerto fibroso** (aponeurose bicipital);\n- entre as **duas cabeças do pronador redondo**;\n- o **arco do flexor superficial dos dedos**.\n\nNessa região, o mediano dá o **nervo interósseo anterior**, um ramo **só motor**. Por isso, há duas síndromes de compressão muito diferentes:\n\n| Característica | Síndrome do pronador | Síndrome do interósseo anterior |\n|---|---|---|\n| Nervo comprimido | **Tronco do mediano** | **Interósseo anterior** (ramo motor) |\n| Dor | **Dor** na face anterior do antebraço proximal | Dor vaga no antebraço (às vezes) |\n| **Sensibilidade** | **Alterada**: parestesia nos 3 dedos e meio radiais e na **eminência tenar** (ramo cutâneo palmar) | **Normal** (o ramo é só motor) |\n| Motor | Fraqueza leve ou ausente | **Fraqueza** do **flexor longo do polegar**, do **flexor profundo do indicador** e do pronador quadrado |\n| Pinça | Normal | **Alterada**: não faz o \"**O**\" (sinal do OK): faz a pinça com as articulações distais em extensão |\n\n**Por que a afirmação está errada.** O quadro de **alteração da pinça** entre o polegar e o indicador, **sem alteração de sensibilidade**, é o da síndrome do **interósseo anterior**, e não da síndrome do pronador. Na síndrome do pronador, o quadro característico é **dor** no antebraço proximal com **alteração sensitiva** no território do mediano.\n\n**Síndrome do pronador x túnel do carpo.** Ambas causam parestesia nos dedos radiais, mas:\n- na síndrome do pronador, há alteração sensitiva também na **eminência tenar** (o ramo cutâneo palmar sai **antes** do túnel do carpo e fica poupado no túnel);\n- os sintomas **noturnos** e o sinal de Phalen são típicos do **túnel do carpo**;\n- na síndrome do pronador, a dor piora com a **pronação contra resistência** e o Tinel é positivo no antebraço proximal.\n\n**O tratamento.** Repouso, órtese, modificação de atividades e, se não melhorar, **descompressão** cirúrgica de todos os pontos possíveis. Na síndrome do interósseo anterior, deve-se pensar também na **neurite braquial** (síndrome de Parsonage-Turner), que se recupera espontaneamente.",
-  "correta": "**Provável correta: B (Errado).** A alteração da pinça entre o polegar e o indicador sem alteração da sensibilidade é o quadro da síndrome do **interósseo anterior** (ramo só motor). Na síndrome do **pronador**, o quadro característico é a dor no antebraço proximal com **alteração sensitiva** no território do mediano, incluindo a eminência tenar.",
+  "conceito": "Alteração da pinça sem alteração da sensibilidade é uma descrição clássica, mas de outra síndrome. A afirmação troca dois quadros vizinhos.\n\n**A síndrome do pronador.** É a compressão do **tronco do mediano** no antebraço proximal: pronador redondo, lacertus, arco do flexor superficial. O Green diz que a compressão ali pode produzir **distúrbios sensitivos** na distribuição do mediano, disfunção motora dos músculos do interósseo anterior e do mediano, **ou os dois** (cap. 28, p. 1100). E, na indicação cirúrgica, descreve pacientes com **queixas sensitivas** do mediano localizadas no pronador, em geral tratados com alongamento, sem cirurgia. Ou seja: a síndrome do pronador costuma ter queixa sensitiva.\n\n**A síndrome do interósseo anterior.** O interósseo anterior inerva o flexor profundo do indicador e do médio, o flexor longo do polegar e o pronador quadrado, e só tem fibras sensitivas articulares. A **pinça sem alteração da sensibilidade** é a assinatura dele.\n\n**Sobre esta questão.** A banca não divulgou o gabarito; o acervo mantém a resposta provável B, que é a que o Green sustenta. O resumo Neuropatias de compressão no membro superior compara as duas síndromes.",
+  "correta": "**B: Errado.** É a resposta provável para esta questão sem gabarito oficial: a alteração da pinça sem alteração sensitiva é o quadro do interósseo anterior; na síndrome do pronador, o Green descreve distúrbios sensitivos do mediano, com ou sem déficit motor (cap. 28, p. 1100).",
   "incorretas": {
-   "A": "A afirmação descreve a síndrome do **interósseo anterior**, e não a do pronador. Na síndrome do pronador, a **sensibilidade** está alterada."
+   "A": "**Descreve a síndrome vizinha.** Pinça alterada com sensibilidade normal é o quadro do interósseo anterior, nervo motor puro, que inerva o flexor longo do polegar e o flexor profundo do indicador. A síndrome do pronador comprime o tronco do mediano e costuma ter queixas sensitivas."
   },
   "referencias": [
    "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 236.",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Green's Operative Hand Surgery, 8ª ed. (tradução), cap. 28 (Neuropatias de compressão; J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON), Compressão do nervo mediano no cotovelo e antebraço, p. 1100",
+   "Biblioteca OrtoQuestões, resumo Neuropatias de compressão no membro superior (green8-neuropatias-compressao)"
   ],
   "provavel": "B",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-29"
  },
  "mao-0638": {
   "conceito": "**O que é o tumor glômico.** É um tumor benigno originado do **corpo glômico**, uma estrutura neuromioarterial da derme responsável pela **termorregulação**, que controla o fluxo entre arteríolas e vênulas. Os corpos glômicos são muito numerosos na **ponta dos dedos**, e por isso o tumor ocorre sobretudo na região **subungueal** (cerca de 75% na mão, a maioria sob a unha). É mais comum em mulheres de 30 a 50 anos.\n\n**A tríade clássica.**\n1. **Dor intensa, paroxística**, desproporcional ao tamanho da lesão (que costuma ter poucos milímetros).\n2. **Hipersensibilidade ao frio**: imersão em água fria desencadeia dor.\n3. **Dor puntiforme, muito localizada**, exatamente sobre o tumor.\n\n**A dor é localizada, não difusa.** Essa é uma das pistas diagnósticas mais importantes. Os testes clínicos exploram justamente a localização precisa:\n- **Teste de Love**: a pressão com a ponta de um alfinete ou clipe em um ponto exato reproduz a dor intensa, enquanto pontos vizinhos não doem.\n- **Teste de Hildreth**: a dor desaparece quando se aplica um torniquete no braço, cessando o fluxo.\n- **Teste do frio**: a imersão em água fria provoca dor.\n\n**Exame físico.** Pode haver uma mancha azulada ou avermelhada sob a unha, deformidade ou estria ungueal, mas a unha também pode parecer normal. Na radiografia, às vezes há uma **erosão** na falange distal.\n\n**Diagnóstico e tratamento.** A **ressonância** mostra uma lesão pequena, hiperintensa em T2, que realça com contraste. O tratamento é a **excisão cirúrgica completa**, geralmente com remoção da lâmina ungueal e incisão no leito ungueal, reparado com cuidado para evitar deformidade da unha. A recidiva ocorre quando a excisão é incompleta ou há lesões múltiplas.",
