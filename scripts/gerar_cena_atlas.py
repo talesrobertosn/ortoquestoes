@@ -28,7 +28,7 @@ PASTA = Path(__file__).resolve().parents[1] / "public" / "pixel" / "inicio"
 W, H, ESC = 480, 160, 3
 
 # Pontos de referência da cena (em pixels da arte).
-CHAMAS = [(207.5, 81.0, 0.85), (327.5, 77.0, 1.05), (336.5, 88.0, 0.85)]  # x, y, força de cada vela
+CHAMAS = [(215.5, 81.0, 0.85), (327.5, 77.0, 1.05), (336.5, 88.0, 0.85)]  # x, y, força de cada vela
 VITRINE = (354, 4, 448, 144)  # x0, y0, x1, y1 (moldura inteira)
 VIDRO = (358, 13, 444, 127)  # área do vidro
 ESQ = (401, 126)  # pés do esqueleto (centro, chão da vitrine)
@@ -167,8 +167,8 @@ def hash01(x: int, y: int, s: int = 0) -> float:
 
 
 # ─────────────────────────────── Materiais (albedo; a luz vem na montagem) ───────────────────────────────
-OSSO = ("#f6eedc", "#d4c6a4", "#9a8868")
-OSSO_ESCURO = "#5a4c3a"
+OSSO = ("#f0e6cc", "#c4b28c", "#7e6a4c")
+OSSO_ESCURO = "#4a3c2c"
 LATAO = ("#f2cf7a", "#c8963a", "#7a5420")
 MOGNO = ("#8a4a2c", "#5e2e1a", "#3a1a10")
 CARVALHO = ("#9a6a40", "#74482a", "#4e2e1a")
@@ -467,7 +467,7 @@ def furar(c: Camada, cx: float, cy: float, rx: float, ry: float) -> None:
                 c.c[y, x, 3] = 0
 
 
-def passar_a_tinta(c: Camada, forma: Camada, tinta: str, papel: str, hachura: bool = True) -> None:
+def passar_a_tinta(c: Camada, forma: Camada, tinta: str, papel: str, hachura: bool = True, luz_esq: bool = False) -> None:
     """Transforma uma silhueta em desenho de atlas: contorno a pena, miolo no papel e hachuras do lado da sombra."""
     m = forma.c[:, :, 3] > 0.5
     borda = m & ~(np.roll(m, 1, 0) & np.roll(m, -1, 0) & np.roll(m, 1, 1) & np.roll(m, -1, 1))
@@ -476,7 +476,9 @@ def passar_a_tinta(c: Camada, forma: Camada, tinta: str, papel: str, hachura: bo
             c.p(x, y, tinta)
         else:
             c.p(x, y, papel)
-            if hachura and (not m[y, min(W - 1, x + 2)] or not m[y, min(W - 1, x + 3)]) and (x + y) % 2 == 0:
+            if luz_esq and not m[y, max(0, x - 2)]:
+                c.p(x, y, "#ffffff", 0.22)
+            if hachura and not m[y, min(W - 1, x + 2)] and y % 2 == 0:
                 c.p(x, y, tinta, 0.55)
 
 
@@ -485,37 +487,36 @@ def desenhar_quadril(c: Camada, cx: float, py: float, tinta: str) -> None:
     f = Camada()
     preto = ("#000000",) * 3
     for s in (-1, 1):
-        f.poligono([(cx + s * 2, py - 3), (cx + s * 5, py - 7), (cx + s * 9.5, py - 7.5), (cx + s * 12.5, py - 5),
-                    (cx + s * 12.6, py - 1), (cx + s * 10.6, py + 3), (cx + s * 8.6, py + 5), (cx + s * 5, py + 3.5),
-                    (cx + s * 2.6, py)], "#000000")
-        f.osso(cx + s * 8, py + 5, cx + s * 1.3, py + 8.5, 1.4, 1.4, preto)  # ramo superior do púbis
-        f.osso(cx + s * 8, py + 5.5, cx + s * 5.6, py + 11, 1.7, 1.6, preto)  # ísquio
-        f.osso(cx + s * 5.4, py + 11.2, cx + s * 1.3, py + 9.6, 1.0, 1.0, preto)  # ramo inferior
-        f.disco(cx + s * 9.6, py + 4.4, 2.4, "#000000", granulado=0)  # cabeça do fêmur no acetábulo
-        f.osso(cx + s * 10.4, py + 5.2, cx + s * 12.6, py + 7.8, 1.6, 1.7, preto)  # colo
-        f.elipse(cx + s * 13.4, py + 6.8, 1.6, 2.4, "#000000")  # trocânter maior
-        f.osso(cx + s * 12.6, py + 8, cx + s * 7.0, py + 35, 2.0, 1.6, preto)  # diáfise
-        f.poligono([(cx + s * 8.6, py + 33), (cx + s * 5.6, py + 33), (cx + s * 3.8, py + 38), (cx + s * 10.2, py + 38)], "#000000")
-        f.elipse(cx + s * 5.0, py + 38, 1.9, 1.9, "#000000")  # côndilo medial
-        f.elipse(cx + s * 9.0, py + 38, 1.9, 1.9, "#000000")  # côndilo lateral
-    f.poligono([(cx - 3.4, py - 4), (cx + 3.4, py - 4), (cx + 1.2, py + 5), (cx - 1.2, py + 5)], "#000000")  # sacro
+        # Asa do ilíaco aberta como uma borboleta (crista alta e larga, espinha ilíaca na ponta de fora).
+        f.poligono([(cx + s * 2.5, py - 2), (cx + s * 6, py - 6.5), (cx + s * 10, py - 8), (cx + s * 13, py - 7),
+                    (cx + s * 14, py - 4.6), (cx + s * 12.4, py - 2.6), (cx + s * 11.4, py + 1), (cx + s * 9.6, py + 4.6),
+                    (cx + s * 6, py + 5), (cx + s * 3.6, py + 3)], "#000000")
+        f.osso(cx + s * 8, py + 5.4, cx + s * 1.2, py + 8.6, 1.5, 1.5, preto)  # ramo superior do púbis
+        f.osso(cx + s * 8.2, py + 5.6, cx + s * 6.2, py + 11.6, 1.8, 1.7, preto)  # ísquio
+        f.osso(cx + s * 6, py + 11.6, cx + s * 1.4, py + 10, 1.1, 1.1, preto)  # ramo inferior
+        f.disco(cx + s * 10, py + 4.8, 2.4, "#000000", granulado=0)  # cabeça do fêmur no acetábulo
+        f.osso(cx + s * 10.8, py + 5.6, cx + s * 13, py + 8.2, 1.6, 1.7, preto)  # colo
+        f.elipse(cx + s * 13.8, py + 7.2, 1.6, 2.4, "#000000")  # trocânter maior
+        f.osso(cx + s * 13, py + 8.4, cx + s * 7.2, py + 35, 2.0, 1.6, preto)  # diáfise
+        f.poligono([(cx + s * 8.8, py + 33), (cx + s * 5.8, py + 33), (cx + s * 4.0, py + 38), (cx + s * 10.4, py + 38)], "#000000")
+        f.elipse(cx + s * 5.2, py + 38, 1.9, 1.9, "#000000")  # côndilo medial
+        f.elipse(cx + s * 9.2, py + 38, 1.9, 1.9, "#000000")  # côndilo lateral
     for s in (-1, 1):
-        furar(f, cx + s * 4.4, py + 8.4, 1.6, 1.3)  # forames obturados
-        furar(f, cx + s * 3.6, py + 1.8, 1.4, 2.0)  # abertura pélvica dos lados do sacro
-        furar(f, cx + s * 7.0, py + 39.4, 0.9, 1.4)  # fossa intercondilar
-    furar(f, cx, py + 6.8, 2.0, 1.1)
-    passar_a_tinta(c, f, tinta, "#e2c896")
+        furar(f, cx + s * 4.6, py + 8.8, 1.7, 1.4)  # forames obturados
+        furar(f, cx + s * 7.2, py + 39.4, 0.9, 1.4)  # fossa intercondilar
+    furar(f, cx, py + 12.6, 2.6, 2.4)  # arco púbico
+    furar(f, cx, py + 2.4, 5.4, 3.6)  # abertura pélvica
+    f.poligono([(cx - 3.2, py - 3.6), (cx + 3.2, py - 3.6), (cx + 1.2, py + 3.6), (cx - 1.2, py + 3.6)], "#000000")  # sacro
+    passar_a_tinta(c, f, tinta, "#b88a58", hachura=True, luz_esq=True)
     for s in (-1, 1):
         for k in range(5):  # hachura da fossa ilíaca
-            c.p(cx + s * (5 + k * 1.2), py - 4.6 + k * 0.9, tinta, 0.5)
-            c.p(cx + s * (5.6 + k * 1.1), py - 2.8 + k * 0.8, tinta, 0.3)
-        c.p(cx + s * 1.1, py - 2, tinta, 0.7)  # forames sacrais
-        c.p(cx + s * 0.9, py + 0.4, tinta, 0.7)
-        c.p(cx + s * 0.8, py + 2.6, tinta, 0.6)
-        c.p(cx + s * 10.4, py + 3.6, tinta, 0.6)  # fóvea
-        c.linha(cx + s * 11.8, py + 6.2, cx + s * 11.2, py + 9.8, tinta, 0.5)  # linha intertrocantérica
-        c.p(cx + s * 10.8, py + 11.6, tinta)  # trocânter menor
-    c.ret(cx, py + 8.6, 1, 2, tinta)  # sínfise púbica
+            c.p(cx + s * (6 + k * 1.3), py - 5.4 + k * 0.6, tinta, 0.45)
+        c.p(cx + s * 1.1, py - 1.6, tinta, 0.7)  # forames sacrais
+        c.p(cx + s * 0.9, py + 0.6, tinta, 0.7)
+        c.p(cx + s * 10.8, py + 4, tinta, 0.6)  # fóvea
+        c.linha(cx + s * 12.2, py + 6.6, cx + s * 11.6, py + 10.2, tinta, 0.5)  # linha intertrocantérica
+        c.p(cx + s * 11.2, py + 12, tinta)  # trocânter menor
+    c.ret(cx, py + 8.4, 1, 2, tinta)  # sínfise púbica
 
 
 def mapa_anatomico() -> Camada:
@@ -710,7 +711,6 @@ def prateleiras_direita() -> Camada:
     for k, (larg, cor) in enumerate(((22, LIVROS[3]), (19, LIVROS[1]), (21, LIVROS[7]), (17, LIVROS[2]))):
         livro_deitado(c, xb + (k % 2), 66 - k * 3, larg, 3, cor)
     pote(c, xb + 25, 66, 10, 13, "#8aa08a", "#d8a8a0", "cerebro", 4)
-    pote(c, xb + 30, 40 - 0, 0, 0, "#000000", "#000000", "olho", 0) if False else None
     return c
 
 
@@ -746,8 +746,6 @@ def chao() -> Camada:
                 ye = PAREDE_CHAO + 3 + int(hash01(tab, k, 9) * (H - PAREDE_CHAO - 4))
                 if y == ye and hash01(tab, k, 4) > 0.35:
                     c.p(x, y, "#1a0e08")
-                    if du > 2.0 / escala and x % 2 == 0 and hash01(x, tab) > 0.5:
-                        pass
             # Pregos ao lado das emendas.
             if int(du * escala) == 3 and (y - PAREDE_CHAO) % 17 == (tab * 5) % 17:
                 c.p(x, y, "#2a1a10")
@@ -908,7 +906,7 @@ def objetos_mesa() -> tuple[Camada, Camada, Camada]:
     """
     c, v, e = Camada(), Camada(), Camada()
     # Sombras de contato no tampo.
-    for (x, y, w) in ((236, 111, 68), (220, 109, 12), (302, 109, 26), (200, 110, 16), (322, 107, 22)):
+    for (x, y, w) in ((236, 111, 68), (222, 109, 12), (302, 109, 26), (200, 110, 16), (209, 110, 14), (322, 107, 22)):
         c.ret(x, y, w, 2, "#120806", 0.45)
     # Livro aberto: capa de couro vermelho, páginas curvas com desenhos de ossos e texto.
     capa = "#5a1a1e"
@@ -966,15 +964,15 @@ def objetos_mesa() -> tuple[Camada, Camada, Camada]:
     c.poligono([(320, 112), (330, 112), (331, 118), (322, 119)], "#d8ccb0")
     c.linha(320, 112, 330, 112, "#fffaf0")
     # Tinteiro de vidro escuro com tampa de latão e a pena.
-    c.ret(222, 104, 8, 6, "#1a1a2a")
-    c.ret(223, 104, 1, 5, "#5a6a8a")
-    c.ret(222, 109, 8, 1, "#0a0a10")
-    c.ret(223, 102, 6, 2, LATAO[1])
-    c.ret(223, 102, 6, 1, LATAO[0])
-    c.ret(224, 101, 4, 1, "#0a0a14")
+    c.ret(224, 104, 8, 6, "#1a1a2a")
+    c.ret(225, 104, 1, 5, "#5a6a8a")
+    c.ret(224, 109, 8, 1, "#0a0a10")
+    c.ret(225, 102, 6, 2, LATAO[1])
+    c.ret(225, 102, 6, 1, LATAO[0])
+    c.ret(226, 101, 4, 1, "#0a0a14")
     for k in range(16):
         t = k / 15
-        px, py = 226 + t * 13, 101 - t * 15 + 3 * t * t
+        px, py = 228 + t * 12, 101 - t * 15 + 3 * t * t
         c.p(px, py, "#e8e0d0" if k > 2 else "#3a2a1a")
         if k > 3:
             larg = 2.2 * math.sin((t - 0.18) / 0.82 * math.pi)
@@ -1002,23 +1000,23 @@ def objetos_mesa() -> tuple[Camada, Camada, Camada]:
     c.linha(sx - 1, sy - 4, sx + 2, sy - 2, OSSO[2])
     c.p(sx + 3, sy + 2, OSSO[2])
     # Castiçais de latão e velas.
-    c.elipse(207.5, 109.5, 6, 1.6, LATAO, luz=(0.3, -1))
-    c.ret(205, 107, 6, 2, LATAO[1])
-    c.ret(205, 107, 6, 1, LATAO[0])
-    c.disco(214, 108.5, 1.6, LATAO, granulado=0)
-    c.p(214, 108, "#2a1a10")
+    c.elipse(215.5, 109.5, 5.5, 1.6, LATAO, luz=(0.3, -1))
+    c.ret(213, 107, 6, 2, LATAO[1])
+    c.ret(213, 107, 6, 1, LATAO[0])
+    c.disco(209, 108.5, 1.6, LATAO, granulado=0)
+    c.p(209, 108, "#2a1a10")
     c.elipse(332, 108.5, 9, 1.8, LATAO, luz=(-0.3, -1))
     c.ret(330, 104, 4, 4, LATAO[1])
     c.ret(330, 104, 1, 4, LATAO[0])
     c.ret(326, 104, 4, 2, LATAO[1])
     c.ret(334, 104, 5, 2, LATAO[1])
     c.ret(326, 104, 13, 1, LATAO[0])
-    vela(v, e, 206, 107, 22, 4, 1)
+    vela(v, e, 214, 107, 22, 4, 1)
     vela(v, e, 326, 104, 23, 4, 2)
     vela(v, e, 335, 104, 13, 4, 3)
     # Cera acumulada nos pratinhos.
-    v.ret(204, 107, 2, 1, CERA[1])
-    v.ret(210, 107, 1, 1, CERA[1])
+    v.ret(212, 107, 2, 1, CERA[1])
+    v.ret(218, 107, 1, 1, CERA[1])
     v.ret(334, 104, 2, 1, CERA[0])
     v.ret(339, 104, 1, 1, CERA[1])
     return c, v, e
@@ -1204,15 +1202,16 @@ def vitrine(sk: Camada) -> tuple[Camada, Camada, Camada, Camada]:
     gx0, gy0, gx1, gy1 = VIDRO
     cx, base = ESQ
     # Interior: fundo de veludo azul-petróleo, laterais em perspectiva e o piso da vitrine.
-    n = ruido(61, 3)
+    n = ruido_veio(61, 3, 14) * 0.7 + ruido(62, 6) * 0.3
     bx0, by0, bx1, by1 = gx0 + 7, gy0 + 5, gx1 - 7, base - 6
     for y in range(gy0, gy1 + 1):
         for x in range(gx0, gx1 + 1):
             if bx0 <= x <= bx1 and by0 <= y <= by1:
                 v = n[y, x]
-                cor = "#1e4a4e" if v > 0.62 else "#163a3e" if v > 0.35 else "#10302e"
-                if (x - bx0) % 9 == 0:
-                    cor = "#0e2a2a"
+                prega = math.sin((x - bx0) / 7.5 * math.pi * 2 + v * 2.5)
+                cor = "#1e4a4e" if prega > 0.45 else "#173e42" if prega > -0.35 else "#10302f"
+                if prega > 0.85:
+                    cor = "#245458"
             elif y > by1:
                 cor = "#3a2418" if (y + x // 6) % 3 else "#2a1810"
                 if y == by1 + 1:
@@ -1487,7 +1486,7 @@ def montar() -> Image.Image:
     c_chao_obj = objetos_chao()
 
     # Sombras projetadas na parede pelas velas (só as coisas acima da chama fazem sombra para cima).
-    obj_parede = (c_prat.c[:, :, 3] > 0.5) | (c_mapa.c[:, :, 3] > 0.5) & False
+    obj_parede = c_prat.c[:, :, 3] > 0.5
     obj_mesa = c_obj.c[:, :, 3] > 0.5
     sombra_vela = []
     for (lx, ly, _) in CHAMAS:
@@ -1530,12 +1529,13 @@ def montar() -> Image.Image:
     interior = ((XS >= gx0 * ESC) & (XS < (gx1 + 1) * ESC) & (YS >= gy0 * ESC) & (YS < (gy1 + 1) * ESC)).astype(np.float32)
     interior = desfocar(interior[:, :, None], 2)[:, :, 0]
     ciano = hexa("#62e6f0")
-    luz += interior[:, :, None] * (luz_pontual(ESQ[0], gy0, 75, 1.4)[:, :, None] * ciano * 1.5 + ciano * 0.22)
+    luz += interior[:, :, None] * (luz_pontual(ESQ[0], gy0, 75, 1.4)[:, :, None] * ciano * 1.15 + ciano * 0.2)
     luz += luz_pontual(ESQ[0], 140, 70, 0.35)[:, :, None] * hexa("#3ab8d0") * 0.55 * (1 - interior[:, :, None])
-    luz += luz_pontual(ESQ[0], 70, 85, 1.0)[:, :, None] * hexa("#3ab8d0") * 0.25 * (1 - interior[:, :, None])
+    luz += luz_pontual(ESQ[0] + 10, 80, 105, 0.9)[:, :, None] * hexa("#3ab8d0") * 0.38 * (1 - interior[:, :, None])
     # Luar: em volta da janela e a mancha dos caixilhos no assoalho.
     jx0, jy0, jx1, jy1 = JANELA
     luz += luz_pontual((jx0 + jx1) / 2, 50, 45, 1.2)[:, :, None] * hexa("#7a9ae0") * 0.35
+    luz += luz_pontual(90, 70, 150, 0.7)[:, :, None] * hexa("#6a86c8") * 0.22  # luar difuso na estante
     mancha = Camada()
     for y in range(PAREDE_CHAO + 4, H):
         t = (y - PAREDE_CHAO - 4) / 34
@@ -1563,26 +1563,38 @@ def montar() -> Image.Image:
     img = sobre(img, cham)
     halo = desfocar(cham[:, :, :3] * cham[:, :, 3:4], 5) * 1.6 + desfocar(cham[:, :, :3] * cham[:, :, 3:4], 18) * 1.4
     img += halo * hexa("#ffb060")
+    for (lx, ly, k) in CHAMAS:  # brilho alongado para cima, como chama que dança
+        img += luz_pontual(lx, ly - 5, 5, 2.6)[:, :, None] * hexa("#ffc880") * 0.22 * k
 
     # Cone de luz da luminária da vitrine, com poeira fria flutuando dentro.
     tv = np.clip((YS / ESC - gy0) / (gy1 - gy0), 0, 1)
     cone = np.exp(-((XS - ESQ[0] * ESC) / ((14 + tv * 30) * ESC)) ** 2 * 2) * (1 - tv * 0.7) * interior
-    img += desfocar(cone[:, :, None], 4) * hexa("#5ad8e8") * 0.13
+    img += desfocar(cone[:, :, None], 4) * hexa("#5ad8e8") * 0.16
     gc = np.random.default_rng(78)
     for _ in range(70):
         x = int((gx0 + 3 + gc.random() * (gx1 - gx0 - 6)) * ESC)
         y = int((gy0 + 4 + gc.random() * (gy1 - gy0 - 12)) * ESC)
         img[y:y + 2, x:x + 2] += hexa("#b8f4ff") * (0.15 + gc.random() * 0.35) * (0.4 + cone[y, x])
 
+    # Reflexos no verniz: as chamas no tampo da mesa e a vitrine no assoalho.
+    refl = np.zeros(img.shape[:2], dtype=np.float32)
+    for (lx, ly, k) in CHAMAS:
+        refl += luz_pontual(lx, 110.5, 4, 2.2) * k
+    tampo = ((YS >= 97 * ESC) & (YS < 112 * ESC)).astype(np.float32)
+    img += desfocar((refl * tampo)[:, :, None], 2) * hexa("#ffb870") * 0.35
+    piso = (YS > 145 * ESC).astype(np.float32)
+    rv = np.exp(-((XS - ESQ[0] * ESC) / (34 * ESC)) ** 2 * 2) * np.clip(1 - (YS / ESC - 145) / 16, 0, 1) * piso
+    img += rv[:, :, None] * hexa("#4ac0d8") * 0.10
+
     # Feixe de luar volumétrico, da janela até o chão, e poeira suspensa (mais visível perto das velas).
     t = np.clip((YS / ESC - 40) / 100, 0, 1)
     centro = (34 + t * 60) * ESC
     feixe = np.exp(-((XS - centro) / ((16 + t * 12) * ESC)) ** 2 * 2) * (YS > 40 * ESC) * (1 - t * 0.5)
-    img += desfocar(feixe[:, :, None], 6) * hexa("#5a78c0") * 0.09
+    img += desfocar(feixe[:, :, None], 6) * hexa("#5a78c0") * 0.13
     g = np.random.default_rng(77)
     poeira = np.zeros(img.shape[:2], dtype=np.float32)
     calor = sum(luz_pontual(lx, ly, 60, 0.9) for (lx, ly, _) in CHAMAS) + feixe * 0.6
-    for _ in range(900):
+    for _ in range(1600):
         x, y = int(g.random() * W * ESC), int(g.random() * H * ESC)
         k = calor[y, x]
         if k > 0.08 and g.random() < k:
@@ -1615,7 +1627,7 @@ def montar() -> Image.Image:
     calma = np.clip((0.52 - xn) / 0.14, 0, 1)[:, :, None]
     media = desfocar_f(np.clip(img, 0, 1.3), 18)
     img = media + (img - media) * (1 - 0.4 * calma)
-    img *= 1 - 0.22 * calma
+    img *= 1 - 0.08 * calma
 
     # Vinheta e grão.
     v = ((xn - 0.58) ** 2 * 1.2 + (YS / (H * ESC) - 0.45) ** 2 * 1.3)
@@ -1627,8 +1639,8 @@ def montar() -> Image.Image:
 def main() -> None:
     PASTA.mkdir(parents=True, exist_ok=True)
     img = montar()
-    img.save(PASTA / "secao-atlas.webp", quality=82, method=6)
-    img.resize((960, 320), Image.LANCZOS).save(PASTA / "secao-atlas-960.webp", quality=80, method=6)
+    img.save(PASTA / "secao-atlas.webp", quality=85, method=6)
+    img.resize((960, 320), Image.LANCZOS).save(PASTA / "secao-atlas-960.webp", quality=84, method=6)
     for nome in ("secao-atlas.webp", "secao-atlas-960.webp"):
         print(nome, (PASTA / nome).stat().st_size // 1024, "KB")
 

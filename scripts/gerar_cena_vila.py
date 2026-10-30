@@ -1170,15 +1170,12 @@ def cena_bau() -> Image.Image:
     h_parede = relevo(101, 120, esticar=1.3)
     rampa_parede = ["#0a0e1a", "#121a2c", "#1c283e", "#283850", "#384a62", "#4e6078", "#6e7c92"]
     parede = rocha_iluminada(h_parede, [(fonte[0], fonte[1], 26, 1.15), (cristal[0], cristal[1], 22, 0.55), (150, -30, 60, 0.25)],
-                             rampa_parede, forca=3.2, base=0.08)
+                             rampa_parede, forca=2.3, base=0.12)
     # Fundo mais escuro longe do baú e no alto (a caverna some no escuro).
     dist = np.hypot((_XS - fonte[0]) / 260, (_YS - fonte[1]) / 140)
     parede *= np.clip(1.2 - dist * 0.6, 0.5, 1)[:, :, None]
     parede *= np.clip(0.55 + _YS / 90, 0, 1)[:, :, None]  # o teto se perde no escuro
     parede *= (0.72 + 0.4 * ruido(105, 34, 10))[:, :, None]  # dobras grandes da rocha
-    # O túnel ao fundo, à esquerda (escuro e calmo).
-    tunel = elipse_m(96, 88, 34, 40) * (_YS < 120)
-    parede = parede * (1 - tunel[:, :, None] * 0.8) + tunel[:, :, None] * hexa("#04060c") * 0.8
     ceu = parede  # não há céu: a parede é o fundo
     fundo = Camada()
     fundo.mascara(np.ones((H, W), dtype=np.float32), parede)
@@ -1211,22 +1208,71 @@ def cena_bau() -> Image.Image:
         teto.ret(xx, 0, 1, alt, "#1a2232")
         teto.p(xx, alt, "#3a4660")
 
-    # Colunas de rocha (estalactite que encontrou a estalagmite) no meio do caminho, dando profundidade.
-    colunas = Camada()
-    for (cx_c, larg_c, seed_c) in ((226, 13, 1), (60, 18, 2)):
-        nn = ruido(190 + seed_c, 2, 6)
-        for y in range(0, H):
-            t = y / H
-            meia = larg_c * (1 - 0.45 * math.exp(-((t - 0.45) / 0.18) ** 2)) + 3 * math.sin(y / 7 + seed_c)
-            if t > 0.72:
-                meia += (t - 0.72) * 60
-            for x in range(int(cx_c - meia), int(cx_c + meia) + 1):
-                u = (x - cx_c) / max(meia, 1)
-                k = u + (nn[y, x % W] - 0.5) * 0.7
-                cor = "#4a5874" if k > 0.5 else "#2e3a52" if k > -0.1 else "#1a2234" if k > -0.6 else "#10162a"
-                if y % 9 == 0 and hash01(x, y) > 0.4:
-                    cor = "#141a2c"
-                colunas.p(x, y, cor)
+    # Arco antigo de pedra lavrada no fundo, atrás do baú (a câmara do tesouro), com o nicho escuro por dentro.
+    arco = Camada()
+    ax, ay, r_in, r_out = bx + 2, 84, 40, 51
+    nicho = (elipse_m(ax, ay, r_in, r_in) * (_YS <= ay)) + ((np.abs(_XS - ax) <= r_in) & (_YS > ay) & (_YS < 124))
+    arco.mascara(np.clip(nicho, 0, 1), "#070a12", 0.75)
+    n_ad = 15
+    for y in range(int(ay - r_out - 1), int(ay) + 1):
+        for x in range(int(ax - r_out - 1), int(ax + r_out) + 2):
+            d = math.hypot(x - ax, y - ay)
+            if r_in <= d < r_out:
+                ang = math.atan2(ay - y, x - ax)  # 0..pi
+                seg = ang / math.pi * n_ad
+                junta = abs(seg - round(seg)) < 0.09 * (r_out / max(d, 1))
+                fr = (d - r_in) / (r_out - r_in)
+                chave = abs(ang - math.pi / 2) < math.pi / n_ad / 2
+                if junta:
+                    cor = "#141a28"
+                elif fr < 0.18:
+                    cor = "#8a8aa0"  # face de dentro, virada para o ouro
+                elif fr > 0.85:
+                    cor = "#242c40"
+                else:
+                    k = hash01(int(seg), 3)
+                    cor = mistura("#5a6680", "#3a4660", k)
+                if chave and not junta:
+                    cor = mistura(cor, "#a8a0a8", 0.4)
+                arco.p(x, y, cor)
+    for lado in (-1, 1):  # pilastras
+        x0p = ax + lado * r_in if lado > 0 else ax - r_out
+        for y in range(int(ay), 124):
+            for x in range(int(x0p), int(x0p + (r_out - r_in))):
+                fr = (x - x0p) / (r_out - r_in)
+                fr = fr if lado > 0 else 1 - fr
+                cor = "#8a8aa0" if fr < 0.18 else "#242c40" if fr > 0.85 else ("#4a5670" if (y // 6) % 2 else "#525e78")
+                if (y - int(ay)) % 6 == 0:
+                    cor = "#141a28"
+                arco.p(x, y, cor)
+        cap_x = ax + lado * (r_in + (r_out - r_in) / 2)
+        arco.ret(cap_x - 7, ay - 1, 14, 3, "#6a7088")
+        arco.ret(cap_x - 7, ay - 1, 14, 1, "#a8a8b8")
+    # Emblema na pedra-chave: uma estrela de oito pontas gravada.
+    for (dx, dy) in ((0, -3), (0, 3), (-3, 0), (3, 0), (-2, -2), (2, 2), (-2, 2), (2, -2), (0, -1), (0, 1), (-1, 0), (1, 0), (0, 0)):
+        arco.p(ax + dx, ay - r_in - 5 + dy, "#d8b050" if (dx, dy) != (0, 0) else "#fff0a0")
+    # Estalagmites pelo chão.
+    estal = Camada()
+    for (sx0, larg_s, alt_s) in ((404, 6, 26), (414, 4, 15), (250, 5, 20), (241, 3, 11), (120, 7, 30), (134, 4, 16), (452, 5, 18)):
+        base_y = 126 + (sx0 % 7)
+        for y in range(base_y - alt_s, base_y + 2):
+            t = (y - (base_y - alt_s)) / alt_s
+            meia = larg_s * min(1, t) ** 0.8
+            for x in range(int(sx0 - meia), int(sx0 + meia) + 1):
+                u = (x - sx0) / max(meia, 0.5) * (1 if sx0 < bx else -1)
+                cor = "#8a92aa" if u > 0.4 else "#56607a" if u > -0.3 else "#2a3246"
+                if (y + x // 3) % 7 == 0:
+                    cor = "#2a3448"
+                estal.p(x, y, cor)
+    # Cogumelos que brilham fraquinho no canto esquerdo (calmo, só para ter vida).
+    cogumelos = Camada()
+    g = np.random.default_rng(141)
+    for _ in range(9):
+        x, y = 70 + g.random() * 110, 132 + g.random() * 16
+        estal.ret(x, y - 2, 1, 3, "#8aa0a8")
+        cogumelos.ret(x - 1, y - 3, 3, 1, "#5af0d0", 0.8)
+        cogumelos.p(x, y - 4, "#b8fff0", 0.8)
+
     # ── Chão de pedra com relevo, poça d'água à esquerda do baú.
     chao = Camada()
     h_chao = relevo(111, 260, esticar=3.0, y0=115)
@@ -1248,6 +1294,19 @@ def cena_bau() -> Image.Image:
     reflexo += (estria * (np.sin(_YS * 2.3) > 0))[:, :, None] * hexa("#c08a3a") * 0.9
     chao.mascara(poca, reflexo)
     chao.mascara((poca > 0) & (elipse_m(252, 147.5, 30, 5.5) > 0) & ~(elipse_m(252, 148.5, 29, 5) > 0), "#6a7a90", 0.7)
+
+    # Estrado de pedra em dois degraus sob o baú.
+    for (dy, rx, ry, alt_d) in ((8, 60, 8, 5), (0, 48, 6, 5)):
+        cyd = bb + dy
+        topo_d = elipse_m(bx + 2, cyd, rx, ry)
+        frente_d = ((np.abs(_XS - bx - 2) <= rx) & (_YS > cyd) & (_YS <= cyd + alt_d)) | (elipse_m(bx + 2, cyd + alt_d, rx, ry) > 0)
+        frente_d = frente_d & ~(topo_d > 0) & (_YS >= cyd)
+        juntas = ((_XS.astype(int) - bx) % 11 == 0)
+        chao.mascara(frente_d.astype(np.float32), "#3e4458")
+        chao.mascara((frente_d & juntas).astype(np.float32), "#141824")
+        chao.mascara(topo_d, "#6e6c7e")
+        chao.mascara(topo_d * (elipse_m(bx + 2, cyd, rx - 2, ry - 1.2) == 0), "#a8a2b0")
+        chao.mascara(topo_d * (ruido(150 + dy, 3) > 0.62), "#4a4a5a", 0.6)
 
     # ── Cristais azuis crescendo da parede à direita (luz fria que contrasta com o ouro).
     cristais = Camada()
@@ -1432,29 +1491,31 @@ def cena_bau() -> Image.Image:
             chao_ouro.p(mx_ - sa * r, my_ + ca * r, "#c02a2a")
             chao_ouro.p(mx_ + ca - sa * r, my_ + sa + ca * r, "#8a1a1a")
         chao_ouro.disco(mx_ + 1, my_ + 3, 1.6, ("#e04040", "#a01a1a", "#600a0a"))
-    # Bússola de latão aberta: tampa em pé atrás, aro dourado, rosa dos ventos e agulha vermelha.
-    cx2, cy2 = 408, 150
-    chao_ouro.elipse(cx2 + 1, cy2 - 8, 7.5, 5.5, "#7a4a14")
-    chao_ouro.elipse(cx2 + 1, cy2 - 8, 6, 4.2, "#2a1a0c")
-    chao_ouro.elipse(cx2 - 1, cy2 - 10, 2.5, 1.5, "#c8902e", 0.6)
+    # Bússola de latão aberta: tampa em pé atrás, aro dourado grosso, rosa dos ventos e agulha vermelha.
+    cx2, cy2 = 408, 151
+    chao_ouro.elipse(cx2, cy2 - 9, 8, 6, "#c8902e")
+    chao_ouro.elipse(cx2, cy2 - 9, 6.5, 4.6, "#6a4014")
+    chao_ouro.elipse(cx2 - 1, cy2 - 10, 4.5, 3, "#8a5a1e")
+    chao_ouro.p(cx2 - 3, cy2 - 12, "#fff0a0")
     for y in range(int(cy2 - 6), int(cy2 + 7)):
         for x in range(int(cx2 - 9), int(cx2 + 10)):
             d = math.hypot((x - cx2) / 8.5, (y - cy2) / 5.2)
             if d <= 1:
-                if d > 0.74:
+                if d > 0.66:
                     luz_ = (x - cx2) * -0.6 + (y - cy2) * -1
-                    chao_ouro.p(x, y, "#fff0a0" if luz_ > 2 else "#e0a838" if luz_ > -2 else "#8a5414")
+                    chao_ouro.p(x, y, "#fff0a0" if luz_ > 2.5 else "#e0a838" if luz_ > -1.5 else "#a86a1c" if luz_ > -4 else "#6a4014")
                 else:
-                    chao_ouro.p(x, y, "#f4ead2" if d < 0.55 else "#d8c8a4")
-    for (dx, dy) in ((0, -3), (0, 3), (-5, 0), (5, 0)):
-        chao_ouro.p(cx2 + dx, cy2 + dy, "#5a4030")
-    chao_ouro.linha(cx2 - 4, cy2 + 2, cx2, cy2, "#e8e8f0")
-    chao_ouro.linha(cx2, cy2, cx2 + 4, cy2 - 2, "#d82a2a")
-    chao_ouro.p(cx2 + 4, cy2 - 2, "#ff5a4a")
+                    chao_ouro.p(x, y, "#d8ccb0" if d < 0.5 else "#b8a888")
+    for (dx, dy) in ((0, -3), (0, 3), (-4, 0), (4, 0)):
+        chao_ouro.p(cx2 + dx, cy2 + dy, "#3a2a20")
+    chao_ouro.linha(cx2 - 3, cy2 + 2, cx2, cy2, "#f4f4ff", grossura=1)
+    chao_ouro.linha(cx2 - 2, cy2 + 2, cx2, cy2 + 1, "#c8c8d8")
+    chao_ouro.linha(cx2, cy2, cx2 + 3, cy2 - 2, "#e02a2a")
+    chao_ouro.linha(cx2 + 1, cy2, cx2 + 3, cy2 - 1, "#a01a1a")
     chao_ouro.p(cx2, cy2, "#ffe08a")
-    chao_ouro.p(cx2 - 5, cy2 - 3, "#ffffff")
-    chao_ouro.p(cx2 - 4, cy2 - 4, "#ffffff", 0.6)
-    chao_ouro.ret(cx2 + 9, cy2 - 1, 3, 1, "#c8902e")  # argola
+    chao_ouro.p(cx2 - 4, cy2 - 3, "#ffffff", 0.8)
+    chao_ouro.ret(cx2 + 9, cy2 - 1, 3, 2, "#c8902e")  # argola
+    chao_ouro.p(cx2 + 11, cy2 - 1, "#fff0a0")
 
     # ── Brilhos sobre o ouro (emissivos) e o interior aceso do baú.
     brilhos = Camada()
@@ -1477,7 +1538,7 @@ def cena_bau() -> Image.Image:
         x, y = 430 + g.normal(0, 20), 80 + g.normal(0, 25)
         poeira.p(x, y, "#a8f0ff", 0.4 + g.random() * 0.5)
     luzes += [(fonte[0], fonte[1] - 6, 160, 0.62, "#ffa030", 0.85), (fonte[0], fonte[1] - 14, 40, 0.8, "#ffd070", 0.25),
-              (bx, bb + 8, 80, 0.3, "#ffb040", 0.4)]
+              (bx, bb + 6, 120, 0.25, "#ffa040", 0.75)]
     # Primeiro plano: rochas e estalagmites bem perto, desfocadas.
     frente = Camada()
     for (cx3, cy3, r) in ((-10, 172, 34), (30, 182, 22), (476, 176, 24), (448, 186, 18)):
@@ -1493,10 +1554,11 @@ def cena_bau() -> Image.Image:
 
     # ── Montagem.
     m = Montagem(np.zeros((H, W, 3), dtype=np.float32))
-    m.camada(fundo, 1.3)
+    m.camada(fundo, 1.6)
     m.camada(teto, 0.8)
+    m.camada(arco, 0.7)
     m.camada(chao, 0.3)
-    m.camada(colunas, 1.2)
+    m.camada(estal, 0.5)
     m.camada(cristais)
     m.camada(chao_ouro, luz_k=0.75)
     m.camada(bau, luz_k=0.62)
@@ -1524,6 +1586,7 @@ def cena_bau() -> Image.Image:
     m.emissivo(emis_cr, 0, halo=0.5)
     m.emissivo(brilhos, 0, halo=0.8)
     m.emissivo(poeira, 0.3, halo=0.6)
+    m.emissivo(cogumelos, 0.3, halo=0.8)
     m.camada(frente, 5, escurecer=0.6)
     return m.acabar("#ffd8a0", "#0e1838", esquerda=0.36, centro_v=(0.6, 0.6), contraste=1.08)
 
