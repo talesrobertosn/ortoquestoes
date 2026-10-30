@@ -1449,9 +1449,154 @@ def monte_de_moedas(c: Camada, cx: float, base: float, rx: float, alt: float, n:
             c.p(x + 1, y - 2, "#a8661a")
 
 
+# ── O baú nas três horas do dia (páginas internas: Planos e Assinatura). A caverna não tem janela: a hora entra por
+# uma fenda no teto, com um pedaço de céu, raízes penduradas e o feixe de luz que pousa no chão livre do mascote.
+FENDA = (300, 4)
+
+
+def fenda_bau() -> tuple[Camada, Camada]:
+    """Devolve (céu visto pela fenda, que não recebe luz; borda de rocha com raízes e folhas, que recebe)."""
+    ceu_f, borda = Camada(), Camada()
+    cores = {"manha": ("#8cc4f0", "#e8f4ff"), "tarde": ("#ff9a50", "#ffe0a0"), "noite": ("#1a2a5a", "#4a5a9a")}[PERIODO]
+    fx, fy = FENDA
+    for x in range(fx - 19, fx + 20):
+        u = (x - fx) / 19
+        meia = 5.5 * (1 - u * u) ** 0.8 + 0.7 * math.sin(x * 1.3)
+        y0 = 3 + 1.5 * math.sin(x * 0.4)
+        for y in range(int(y0 - meia), int(y0 + meia) + 1):
+            if 0 <= y < H:
+                k = abs(y - y0) / max(meia, 0.5)
+                ceu_f.p(x, y, mistura(cores[1], cores[0], k))
+        borda.p(x, int(y0 + meia) + 1, "#5a6a7a")
+        borda.p(x, int(y0 + meia) + 2, "#2a3446")
+    if PERIODO == "noite":
+        for (sx, sy) in ((fx - 8, 2), (fx + 4, 4), (fx + 11, 1), (fx - 2, 0)):
+            ceu_f.p(sx, sy, "#ffffff")
+        ceu_f.disco(fx + 7, 4, 2.2, ("#fffaf0", "#e8e8f4", "#c8c8dc"))  # a lua espiando
+    elif PERIODO == "manha":
+        for (cx_, cy_) in ((fx - 9, 4), (fx - 5, 3), (fx + 6, 6)):
+            ceu_f.disco(cx_, cy_, 2.2, ("#ffffff", "#f4f8ff", "#d0e0f4"))
+    else:
+        ceu_f.disco(fx - 6, 6, 3, ("#fffbe0", "#fff0b0", "#ffd080"))  # o sol baixo, quase de lado
+    # raízes e trepadeiras caindo pela fenda, com folhinhas
+    g = np.random.default_rng(181)
+    for k in range(7):
+        x = fx - 12 + k * 4 + g.random() * 2
+        comp = 6 + g.random() * 16
+        for j in range(int(comp)):
+            xx = x + math.sin(j * 0.45 + k) * 1.2
+            borda.p(xx, 6 + j, "#4a3a2a" if j % 3 else "#6a5238")
+            if j % 4 == 2 and k % 2 == 0:
+                borda.p(xx + 1, 6 + j, "#4e8a3a")
+                borda.p(xx - 1, 7 + j, "#6aa84a")
+    return ceu_f, borda
+
+
+def tochas_bau(arco: Camada, bx: int) -> tuple[Camada, list]:
+    """Duas tochas de ferro nas pilastras do arco: à noite acesas, à tarde com a chama baixa, de manhã apagadas
+    (pavio preto com um fio de fumaça)."""
+    fogo = Camada()
+    luzes = []
+    for x in (bx - 46, bx + 50):
+        y = 100
+        arco.ret(x - 1, y, 3, 9, "#2a2228")
+        arco.ret(x - 1, y, 1, 9, "#5a4a50")
+        arco.ret(x - 2, y - 2, 5, 2, "#3a2a2a")
+        arco.ret(x + 2, y + 5, 3, 1, "#2a2228")
+        if PERIODO == "manha":
+            arco.ret(x - 1, y - 4, 3, 2, "#1a1414")
+            for j in range(10):
+                fogo.p(x + math.sin(j * 0.8) * 1.3, y - 6 - j * 1.4, "#c8c8d8", 0.25 - j * 0.02)
+            continue
+        alto = 10 if PERIODO == "noite" else 6
+        for j in range(alto):
+            meia = (alto - j) / alto * (2.8 if PERIODO == "noite" else 2.0)
+            for dx in range(int(-meia), int(meia) + 1):
+                cor = "#fff4c0" if abs(dx) < meia * 0.4 and j < alto * 0.6 else "#ffb040" if j < alto * 0.8 else "#ff6a20"
+                fogo.p(x + dx + (j > alto * 0.6) * 0.5, y - 3 - j, cor)
+        forca = 1.0 if PERIODO == "noite" else 0.45
+        luzes += [(x, y - 5, 56, 0.9, "#ff9a40", forca), (x, y - 5, 14, 1.0, "#ffd080", forca * 0.7)]
+    return fogo, luzes
+
+
+def montar_bau_hora(fundo, teto, arco, chao, estal, cristais, chao_ouro, bau, em, emis_cr, brilhos, poeira, cogumelos,
+                    frente, luzes, bx, bb, fonte) -> Image.Image:
+    P = PERIODO
+    ceu_f, borda_f = fenda_bau()
+    # a fenda abre a faixa de rocha do teto
+    buraco = ceu_f.c[:, :, 3] > 0
+    teto.c[buraco] = 0
+    fogo, luzes_tocha = tochas_bau(arco, bx)
+    fx, fy = FENDA
+    # onde o feixe pousa no chão: de manhã inclinado, à tarde bem deitado (sol baixo), à noite quase a pino (lua alta)
+    pouso, larg_ar, cor_f, forca_f = {"manha": ((368, 150), (5, 22), "#fff0c8", 0.95),
+                                      "tarde": ((420, 152), (5, 26), "#ffa850", 0.9),
+                                      "noite": ((350, 150), (4, 16), "#9ab0ff", 0.6)}[P]
+    m = Montagem(np.zeros((H, W, 3), dtype=np.float32))
+    m.camada(fundo, 1.6)
+    m.camada(ceu_f, 0, solida=False)
+    m.camada(teto, 0.8)
+    m.camada(borda_f, 0.4)
+    m.camada(arco, 0.7)
+    m.camada(chao, 0.3)
+    m.camada(estal, 0.5)
+    m.camada(cristais)
+    m.camada(chao_ouro, luz_k=0.75)
+    m.camada(bau, luz_k=0.62)
+    # A mancha de luz que o feixe deixa no chão (e na rocha atrás, de leve), como luz que ilumina o que toca.
+    yy, xx = _GYS / ESC, _GXS / ESC
+    t = np.clip((yy - fy) / (pouso[1] - fy), 0, 1.2)
+    centro = fx + (pouso[0] - fx) * t
+    larg = larg_ar[0] + (larg_ar[1] - larg_ar[0]) * t
+    feixe = np.exp(-((xx - centro) / larg) ** 4 * 1.5)
+    mancha = np.exp(-(((xx - pouso[0]) / (larg_ar[1] * 1.1)) ** 2 + ((yy - pouso[1] + 2) / 7) ** 2) * 1.6)
+    mapa = (mancha * 1.6 + feixe * 0.3 * (yy > 118))[:, :, None] * hexa(cor_f) * forca_f
+    amb = {"manha": "#6e82b8", "tarde": "#5e4a6a", "noite": "#2e3a6e"}[P]
+    # a luz do dia que entra rebate no chão claro e acende de leve a rocha em volta do pouso
+    rebate = luz_pontual(pouso[0], pouso[1] - 10, 90, 0.6)[:, :, None] * hexa(cor_f) * {"manha": 0.35, "tarde": 0.3, "noite": 0.12}[P]
+    tochas = luzes_tocha if P != "manha" else []
+    m.iluminar(amb, luzes + tochas + [(142, 140, 60, 0.35, "#5a7ac8", 0.45)], mapa=mapa + rebate)
+    # O feixe no ar: volumétrico, com faixas (as raízes recortam a luz) e a poeira dançando.
+    faixas = 0.6 + 0.4 * np.sin((xx - centro) * 1.1 + 2) ** 2
+    ar = feixe * faixas * np.clip(1.15 - t * 0.55, 0, 1) * (yy > fy)
+    m.somar(desfocar(ar[:, :, None], 4)[:, :, 0], cor_f, 0.38 * forca_f)
+    m.somar(desfocar(ar[:, :, None], 14)[:, :, 0], cor_f, 0.18 * forca_f)
+    g = np.random.default_rng(191)
+    for _ in range(900):
+        px_, py_ = g.random() * W * ESC, g.random() * H * ESC
+        X, Y = int(px_), int(py_)
+        k = ar[Y, X] * (0.4 + g.random() * 0.9)
+        if k > 0.08 and X < W * ESC - 3 and Y < H * ESC - 3:
+            m.img[Y:Y + 2, X:X + 2] += hexa(cor_f) * k * 0.9
+    # Raios de luz dourada saindo do baú, em leque (o ouro brilha sozinho a qualquer hora).
+    ang = np.arctan2(_GYS - fonte[1] * ESC, _GXS - fonte[0] * ESC)
+    r = np.hypot(_GXS - fonte[0] * ESC, (_GYS - fonte[1] * ESC) * 1.2) / ESC
+    leque = np.zeros_like(r)
+    g = np.random.default_rng(171)
+    for _ in range(11):
+        a0 = -math.pi / 2 + g.normal(0, 0.5)
+        largura = 0.03 + g.random() * 0.07
+        leque += np.exp(-((ang - a0) / largura) ** 2) * (0.5 + g.random() * 0.7)
+    leque *= np.exp(-r / 85) * np.clip((r - 4) / 12, 0, 1) * (_GYS < (fonte[1] + 6) * ESC)
+    m.somar(desfocar(leque[:, :, None], 3)[:, :, 0], "#ffc860", {"manha": 0.35, "tarde": 0.45, "noite": 0.55}[P])
+    m.somar(luz_pontual(bx + 2, 108, 34, 0.45), "#ffc858", 0.55)
+    m.somar(luz_pontual(bx + 2, 112, 16, 0.6), "#fff0b0", 0.35)
+    m.emissivo(em, 0, halo=0.6)
+    m.emissivo(emis_cr, 0, halo=0.5)
+    m.emissivo(brilhos, 0, halo=0.8)
+    m.emissivo(poeira, 0.3, halo=0.6)
+    m.emissivo(cogumelos, 0.3, halo={"manha": 0.2, "tarde": 0.5, "noite": 1.0}[P])
+    m.emissivo(fogo, 0.3, halo=0.0 if P == "manha" else 1.4)
+    m.camada(frente, 5, escurecer=0.6)
+    quente = {"manha": "#fff0d0", "tarde": "#ffcf90", "noite": "#ffd8a0"}[P]
+    fria = {"manha": "#1e2c58", "tarde": "#2a1a44", "noite": "#0c1434"}[P]
+    return m.acabar(quente, fria, esquerda=0.36, centro_v=(0.56, 0.6), contraste=1.08)
+
+
 def cena_bau() -> Image.Image:
     luzes: list = []
-    bx, bb = 336, 140  # centro e base do baú
+    # centro e base do baú; nas páginas o baú vai para o miolo, à esquerda do chão livre do mascote (x 330-380)
+    bx, bb = (336, 140) if PERIODO is None else (262, 140)
     fonte = (bx + 2, 104)
     cristal = (458, 82)
     # ── Paredes da caverna, com relevo virado para o ouro e para os cristais.
@@ -1540,7 +1685,10 @@ def cena_bau() -> Image.Image:
         arco.p(ax + dx, ay - r_in - 5 + dy, "#d8b050" if (dx, dy) != (0, 0) else "#fff0a0")
     # Estalagmites pelo chão.
     estal = Camada()
-    for (sx0, larg_s, alt_s) in ((404, 6, 26), (414, 4, 15), (250, 5, 20), (241, 3, 11), (120, 7, 30), (134, 4, 16), (452, 5, 18)):
+    estalagmites = ((404, 6, 26), (414, 4, 15), (250, 5, 20), (241, 3, 11), (120, 7, 30), (134, 4, 16), (452, 5, 18))
+    if PERIODO is not None:
+        estalagmites = ((404, 6, 26), (414, 4, 15), (120, 7, 30), (134, 4, 16), (452, 5, 18), (176, 4, 14))
+    for (sx0, larg_s, alt_s) in estalagmites:
         base_y = 126 + (sx0 % 7)
         for y in range(base_y - alt_s, base_y + 2):
             t = (y - (base_y - alt_s)) / alt_s
@@ -1575,12 +1723,13 @@ def cena_bau() -> Image.Image:
         r = 1 + g.random() * 2.5
         chao.disco(x, y, r, ("#5a5662", "#33323e", "#1a1a24"), luz=(1 if x < bx else -1, -0.6))
     # Poça: espelho escuro com o reflexo do ouro em estrias.
-    poca = elipse_m(252, 147, 30, 5.5)
+    pcx, pcy, est_x = (252, 147, 300) if PERIODO is None else (368, 148, 330)
+    poca = elipse_m(pcx, pcy, 30, 5.5)
     reflexo = np.zeros((H, W, 3), dtype=np.float32) + hexa("#0a1424")
-    estria = (np.sin(_XS * 1.7) * 0.5 + 0.5) * np.exp(-((_XS - 300) / 40) ** 2)
+    estria = (np.sin(_XS * 1.7) * 0.5 + 0.5) * np.exp(-((_XS - est_x) / 40) ** 2)
     reflexo += (estria * (np.sin(_YS * 2.3) > 0))[:, :, None] * hexa("#c08a3a") * 0.9
     chao.mascara(poca, reflexo)
-    chao.mascara((poca > 0) & (elipse_m(252, 147.5, 30, 5.5) > 0) & ~(elipse_m(252, 148.5, 29, 5) > 0), "#6a7a90", 0.7)
+    chao.mascara((poca > 0) & (elipse_m(pcx, pcy + 0.5, 30, 5.5) > 0) & ~(elipse_m(pcx, pcy + 1.5, 29, 5) > 0), "#6a7a90", 0.7)
 
     # Estrado de pedra em dois degraus sob o baú.
     for (dy, rx, ry, alt_d) in ((8, 60, 8, 5), (0, 48, 6, 5)):
@@ -1742,7 +1891,7 @@ def cena_bau() -> Image.Image:
     for (jx, jy, tp) in ((x0 + 2, 106, 1), (bx - 6, 101, 0), (bx + 22, 105, 2), (bx - 26, 108, 3), (bx + 4, 107, 4)):
         joia(bau, jx, jy, tp, 2)
     # Livro grosso de capa azul com cantos de ouro e um medalhão (deitado, em perspectiva).
-    lx, ly = 278, 149
+    lx, ly = (278, 149) if PERIODO is None else (198, 150)
     capa = poligono_m([(lx - 15, ly - 2), (lx + 7, ly - 9), (lx + 17, ly - 3), (lx - 5, ly + 4)])
     pag_a = poligono_m([(lx - 15, ly - 2), (lx - 5, ly + 4), (lx - 5, ly + 9), (lx - 15, ly + 3)])
     pag_b = poligono_m([(lx - 5, ly + 4), (lx + 17, ly - 3), (lx + 17, ly + 2), (lx - 5, ly + 9)])
@@ -1839,6 +1988,9 @@ def cena_bau() -> Image.Image:
     for _ in range(14):
         moeda(frente, 380 + g.random() * 80, 150 + g.random() * 10, g.random())
 
+    if PERIODO is not None:
+        return montar_bau_hora(fundo, teto, arco, chao, estal, cristais, chao_ouro, bau, em, emis_cr, brilhos, poeira,
+                               cogumelos, frente, luzes, bx, bb, fonte)
     # ── Montagem.
     m = Montagem(np.zeros((H, W, 3), dtype=np.float32))
     m.camada(fundo, 1.6)

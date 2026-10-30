@@ -196,23 +196,31 @@ def pedra(c: Camada, x0, y0, x1, y1, tons, seed: int, bw: int = 12, bh: int = 6,
     g = np.random.default_rng(seed)
     n = ruido(seed + 1, 5)
     tom_bloco: dict = {}
+    # cada fiada tem os seus blocos de largura variada (amarração irregular de pedra aparelhada)
+    bordas: dict = {}
+    for fila in range((y1 - y0) // bh + 2):
+        xs_b, x = [], x0 - int(g.random() * bw)
+        while x < x1 + bw:
+            xs_b.append(x)
+            x += max(4, int(bw * (0.6 + g.random() * 0.8)))
+        bordas[fila] = np.array(xs_b)
     for y in range(max(0, y0), min(H, y1)):
         fila = (y - y0) // bh
         jy = (y - y0) % bh
-        off = (fila % 2) * (bw // 2) + (fila * 5 % 3)
+        bb = bordas[fila]
         for x in range(max(0, x0), min(W, x1)):
-            col = (x - x0 + off) // bw
-            jx = (x - x0 + off) % bw
+            col = int(np.searchsorted(bb, x, side="right")) - 1
+            jx = x - bb[col]
+            larg_b = bb[col + 1] - bb[col] if col + 1 < len(bb) else bw
             chave = (fila, col)
             if chave not in tom_bloco:
                 tom_bloco[chave] = (g.random(), g.random(), g.random())
             t0, t1, t2 = tom_bloco[chave]
-            if jy == 0 or jx == 0:
+            if jy == 0 or jx == 0 or (jy == 1 and jx == 1 and t2 > 0.6):
                 cor = tons[0]
-                # cantos lascados: a argamassa invade o bloco
             elif luz_topo and jy == 1:
                 cor = tons[4] if t1 > 0.25 else tons[3]
-            elif jy == bh - 1 or jx == bw - 1:
+            elif jy == bh - 1 or jx == larg_b - 1:
                 cor = tons[1]
             else:
                 v = n[y, x] + (NV_GRAO[y, x] - 0.5) * 0.35 + (t0 - 0.5) * 0.5
@@ -229,8 +237,8 @@ def pedra(c: Camada, x0, y0, x1, y1, tons, seed: int, bw: int = 12, bh: int = 6,
 # ─────────────────────────────── Céu das janelas (a hora do dia) ───────────────────────────────
 PERIODOS = {
     "manha": dict(
-        ceu=("#4a86d8", "#9cc4ee", "#fff2d4"), astro="sol", astro_cor="#fffbe8", nuvem=("#ffffff", "#c4d4ea"),
-        morro=("#7a9ab8", "#5a7a9a"), amb="#c4d0e4", amb_k=0.86, sol="#fff0cc", sol_k=2.0,
+        ceu=("#3a74cc", "#78b0e8", "#cfe6fa"), astro="sol", astro_cor="#fffbe8", nuvem=("#ffffff", "#c4d4ea"),
+        morro=("#7a9ab8", "#5a7a9a"), amb="#bccae4", amb_k=0.72, sol="#fff0cc", sol_k=2.0,
         proj=(0.62, -0.42), feixe="#fff0d0", feixe_k=1.35, fogo=0.32, velas=0, quente="#ffe6b8", fria="#26385e",
         bloom_lim=0.9, bloom_k=0.32, exposicao=1.0, estrelas=False),
     "tarde": dict(
@@ -557,7 +565,7 @@ def luz_faixas(cx: float, cy: float, raio: float, achatar: float = 1.0, faixas: 
     """Luz pontual com a borda em degraus (o halo em faixas dos jogos de pixel art), suavizado de leve."""
     l = luz_pontual(cx, cy, raio, achatar)
     q = np.floor(l * faixas + 0.5) / faixas
-    return q * 0.55 + l * 0.45
+    return q * 0.3 + l * 0.7
 
 
 def projetar(vidro_cor: np.ndarray, chao_y: int, a: float, b: float, y_min: int | None = None) -> np.ndarray:
@@ -594,7 +602,8 @@ def feixes(vidro: np.ndarray, direcao: tuple[float, float], comprimento: float, 
             sh[:, :sx] = 0
         elif sx < 0:
             sh[:, sx:] = 0
-        vol += sh * (1 - i / passos) ** 1.3
+        t = i / passos
+        vol += sh * (min(1.0, t * 6) * (1 - t) ** 1.2)
     vol = desfocar(vol[:, :, None], 6)[:, :, 0] / passos
     vol *= np.clip(1 - (GRADE_Y / ESC - chao_y) / 40, 0, 1)
     return vol
@@ -641,7 +650,8 @@ def acabamento(img: np.ndarray, per: dict, esquerda: float, seed: int, vinheta_y
 
 def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada, sombras: Camada,
            vidro: np.ndarray, vidro_cor: np.ndarray, luzes: list, chao_y: int, ocluir: Camada,
-           extra_luz=None, desf_fundo: float = 0.8, desf_frente: float = 3.0) -> np.ndarray:
+           extra_luz=None, desf_fundo: float = 0.8, desf_frente: float = 3.0, feixe_colorido: bool = False,
+           comp_feixe: float = 110) -> np.ndarray:
     """Montagem comum em 3x: albedo das camadas x luz (ambiente + janelas + luzes pontuais), mancha das janelas no
     chão com as sombras dos objetos, vidro e fogo emissivos, feixes com poeira. Devolve a imagem em float."""
     a_proj, b_proj = per["proj"]
@@ -672,7 +682,8 @@ def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada,
         sy = int(round(a_proj * i * 0.8))
         sh = np.roll(np.roll(occ, sy, 0), sx, 1)
         somb = np.maximum(somb, sh * (1 - i / 30))
-    patch = patch * (1 - np.clip(somb, 0, 1)[:, :, None] * 0.85)
+    patch_chao = patch * (1 - np.clip(somb, 0, 1)[:, :, None] * 0.85)
+    patch = np.where(meio.c[:, :, 3:4] > 0.5, patch * 0.9, patch_chao)
     patch_a = desfocar(ampliar(patch), 1.6)
     luz += patch_a * hexa(per["sol"]) * per["sol_k"] * 1.4
     for (lx, ly, r, cor, k) in luzes:
@@ -698,8 +709,14 @@ def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada,
 
     # feixes de luz das janelas
     direcao = (b_proj, 1 + a_proj)
-    vol = feixes(vidro, direcao, 110, chao_y)
-    img += vol[:, :, None] * hexa(per["feixe"]) * per["feixe_k"] * 2.4
+    vol = feixes(vidro, direcao, comp_feixe, chao_y)
+    if feixe_colorido:
+        # o vitral tinge os feixes: cada canal arrastado separadamente, normalizado pela máscara
+        vc_n = vidro_cor / max(1e-3, float(vidro_cor.max()))
+        vol_rgb = np.stack([feixes(vc_n[:, :, k], direcao, comp_feixe, chao_y) for k in range(3)], axis=2)
+        img += (vol_rgb * 0.75 + vol[:, :, None] * 0.25) * hexa(per["feixe"]) * per["feixe_k"] * 3.2
+    else:
+        img += vol[:, :, None] * hexa(per["feixe"]) * per["feixe_k"] * 2.4
     poeira(int(chao_y * 7 + a_proj * 100), 900, (0, 0, W, chao_y + 30), per["feixe"], img, vol * 3.2, 0.7)
 
     # primeiro plano desfocado, iluminado pela mesma luz
@@ -1349,6 +1366,8 @@ def g_mesa(per: dict, fogo: Camada, luzes: list) -> tuple[Camada, Camada]:
     # ── em cima da mesa
     prato(c, 126, 108, 4, "pao")
     caneca(c, 136, 111)
+    castical(c, fogo, 143, 105, 3, per["velas"] >= 1, luzes, "estanho", 0.7)
+    castical(c, fogo, 283, 105, 4, per["velas"] >= 1, luzes, "estanho", 0.7)
     caneca(c, 118, 107, "bronze")
     prato(c, 152, 110, 4, "coxa")
     # rolo de pergaminho aberto (a escala de plantão)

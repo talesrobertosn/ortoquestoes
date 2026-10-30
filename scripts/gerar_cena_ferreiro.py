@@ -39,7 +39,7 @@ W, H, ESC = 480, 160, 3
 CHAO = 108                         # linha onde a parede encontra o chão
 PORTA = (198, 30, 64, 78)          # x, y, largura, altura do vão da porta (vista da rua)
 FOGO = (407, 79)                   # centro do fogo da forja
-BIGORNA_PONTA = (309, 104)         # ponta em brasa da placa na bigorna (de onde saem as faíscas)
+BIGORNA_PONTA = (310, 98)         # ponta em brasa da placa na bigorna (de onde saem as faíscas)
 LAMPARINA = (352, 41)
 
 
@@ -284,17 +284,8 @@ def exterior(periodo: str) -> np.ndarray:
                     cor = misturar(cor, "#ffffff" if periodo == "manha" else "#ffc8a0", min(0.7, (nv - 0.62) * 3))
             out[y, x] = cor
     # sol / lua
-    if periodo == "tarde":
-        sx, sy = 216, 70
-        for y in range(py, py + ph):
-            for x in range(px, px + pw):
-                d = math.hypot(x - sx, y - sy)
-                if d < 5:
-                    out[y, x] = hexa("#fff4c8")
-                elif d < 22:
-                    out[y, x] += hexa("#ff9a40") * (1 - d / 22) ** 2 * 0.7
     if periodo == "noite":
-        lx, ly = 248, 42
+        lx, ly = 243, 40
         for y in range(py, py + ph):
             for x in range(px, px + pw):
                 d = math.hypot(x - lx, y - ly)
@@ -310,16 +301,38 @@ def exterior(periodo: str) -> np.ndarray:
         topo = 80 - 6 * math.sin((x - px) / 22) - 3 * math.sin((x - px) / 7.5)
         for y in range(int(topo), hor):
             out[y, x] = misturar(coli, ceu_cores[2], 0.25) * (0.95 + 0.05 * ((x + y) % 2))
-    for (cx, alt) in ((246, 9), (250, 13), (254, 8)):
-        for y in range(71 - alt, 75):
+    # castelinho distante na colina (enevoado): três torres com telhado cônico e a muralha
+    cast = misturar(coli, ceu_cores[2], 0.35) * 0.82
+    teto = misturar({"manha": "#7a6a8a", "tarde": "#6a3a4a", "noite": "#121a30"}[periodo], ceu_cores[2], 0.35)
+    for x in range(234, 249):
+        for y in range(73, 77):
+            out[y, x] = cast
+        if x % 2 == 0:
+            out[72, x] = cast
+    for (cx, alt) in ((236, 5), (241, 8), (246, 4)):
+        for y in range(76 - alt, 76):
             for x in range(cx - 1, cx + 2):
-                out[y, x] = misturar(coli, "#000000", 0.18)
-        out[70 - alt, cx] = misturar(coli, "#000000", 0.18)
+                out[y, x] = cast
+        for j in range(3):
+            for x in range(cx - 1 + j // 2, cx + 2 - (j + 1) // 2):
+                out[75 - alt - j, x] = teto
+        if periodo != "manha":
+            out[73 - alt + 3, cx] = hexa("#ffd070") if periodo == "noite" else cast * 0.7
+    if periodo == "tarde":                                               # o sol se pondo atrás da colina
+        sx, sy = 241, 77
+        for y in range(py, py + ph):
+            for x in range(px, px + pw):
+                d = math.hypot(x - sx, y - sy)
+                topo = 80 - 6 * math.sin((x - px) / 22) - 3 * math.sin((x - px) / 7.5)
+                if d < 5.5 and y < topo:
+                    out[y, x] = hexa("#fff6d0") if d < 4 else hexa("#ffd890")
+                elif d < 26:
+                    out[y, x] += hexa("#ff9a40") * (1 - d / 26) ** 2 * (0.8 if y < topo else 0.35)
     # casa em frente (enxaimel): parede caiada, vigas, janela e telhado
     cas = {"manha": ("#e8dcc0", "#b8a888", "#6a4a30", "#9a4a34", "#5a2a20"),
            "tarde": ("#f0b880", "#b07a58", "#5a3420", "#a0402a", "#5a2018"),
            "noite": ("#3a4260", "#2a3048", "#161a2a", "#2a2440", "#14121e")}[periodo]
-    x0, x1, base, beiral = 200, 238, 96, 56
+    x0, x1, base, beiral = 199, 231, 96, 56
     for y in range(beiral - 14, base):
         for x in range(x0 - 2, x1 + 3):
             if not (px <= x < px + pw):
@@ -347,25 +360,25 @@ def exterior(periodo: str) -> np.ndarray:
             moldura = y in (62, 71) or x in (204, 211) or x == 208 or y == 67
             out[y, x] = hexa(cas[2]) if moldura else hexa(jcor)
     for y in range(80, 96):
-        for x in range(226, 234):
-            out[y, x] = hexa(cas[2]) if x in (226, 233) or y == 80 else misturar(cas[2], "#000000", 0.3)
-    out[88, 231] = hexa("#d0a038")
+        for x in range(218, 225):
+            out[y, x] = hexa(cas[2]) if x in (218, 224) or y == 80 else misturar(cas[2], "#000000", 0.3)
+    out[88, 223] = hexa("#d0a038")
     # árvore à direita (copa redonda por camadas) e poste de luz
     folha = {"manha": ("#2a5a2a", "#3e7a34", "#5e9a44", "#8abe5a"),
              "tarde": ("#3a3a1e", "#5a5a24", "#8a7a30", "#d0a040"),
              "noite": ("#0a1418", "#101e22", "#18282c", "#22343a")}[periodo]
     tronco = {"manha": "#4a3420", "tarde": "#3a2414", "noite": "#0c0c12"}[periodo]
     for y in range(66, 96):
-        for x in range(251, 254):
+        for x in range(257, 260):
             out[y, x] = hexa(tronco)
     fn = ruido(23, 3)
     for y in range(40, 76):
-        for x in range(240, px + pw):
-            d = math.hypot((x - 254) / 14, (y - 58) / 13) + (fn[y, x] - 0.5) * 0.45
+        for x in range(244, px + pw):
+            d = math.hypot((x - 260) / 12, (y - 58) / 13) + (fn[y, x] - 0.5) * 0.45
             if d < 1:
-                luz = ((254 - x) * 0.6 + (58 - y)) / 16
+                luz = ((260 - x) * 0.6 + (58 - y)) / 16
                 if periodo == "tarde":
-                    luz = (x - 254) * -0.9 / 14 + (58 - y) / 20
+                    luz = (x - 260) * -0.9 / 14 + (58 - y) / 20
                 k = 3 if luz > 0.55 else 2 if luz > 0.05 else 1 if d < 0.8 else 0
                 if fn[y, x] > 0.72 and k < 3:
                     k += 1
@@ -382,13 +395,13 @@ def exterior(periodo: str) -> np.ndarray:
             out[y, x] = hexa(rua[2]) if junta else hexa(rua[1]) if (x + y) % 5 == 0 else hexa(rua[0])
     # poste com lampião (aceso à noite)
     for y in range(64, 100):
-        out[y, 241] = hexa("#1a1a20")
+        out[y, 249] = hexa("#1a1a20")
     for y in range(60, 66):
-        for x in range(239, 244):
+        for x in range(247, 252):
             if periodo == "noite":
-                out[y, x] = hexa("#ffe2a0") if 60 < y < 65 and 239 < x < 243 else hexa("#3a2a1a")
+                out[y, x] = hexa("#ffe2a0") if 60 < y < 65 and 247 < x < 251 else hexa("#3a2a1a")
             else:
-                out[y, x] = hexa("#2a2a30") if y in (60, 65) or x in (239, 243) else hexa("#8a9aa8")
+                out[y, x] = hexa("#2a2a30") if y in (60, 65) or x in (247, 251) else hexa("#8a9aa8")
     return out
 
 
@@ -560,6 +573,24 @@ def prateleiras_esquerda(c: Camada) -> None:
     c.ret(158, 27, 24, 1, "#000000", 0.2)
 
 
+def tabua_ferraduras(c: Camada) -> None:
+    """Tábua vertical ao lado da porta com ferraduras prontas penduradas em pregos e um rolo de corrente."""
+    c.ret(270, 34, 12, 46, MADEIRA[2])
+    c.ret(270, 34, 1, 46, MADEIRA[4])
+    c.ret(281, 34, 1, 46, MADEIRA[1])
+    for yy in range(36, 80, 9):
+        c.p(273, yy, FERRO[5])
+        c.p(278, yy + 4, FERRO[5])
+        ferradura(c, 271, yy + 1)
+        ferradura(c, 276, yy + 5)
+    # corrente pendurada da viga
+    for y in range(15, 58):
+        x = 285 - (1 if 30 < y < 44 else 0)
+        c.p(x, y, FERRO[4] if y % 2 else FERRO[2])
+    c.linha(283, 58, 285, 61, FERRO[4])
+    c.p(285, 62, FERRO[3])
+
+
 def prateleira_clinica(c: Camada) -> None:
     """Perto da bigorna: as encomendas da clínica (placas, parafusos, haste) e o molde do fêmur preso na parede."""
     prateleira(c, 300, 60, 44)
@@ -593,23 +624,29 @@ def prateleira_clinica(c: Camada) -> None:
     c.p(x0 + 17, y0 + 21, "#5a4430")
     c.p(x0 + 16, y0 + 21, "#7a6040")
     tinta = "#4a3424"
-    osso = [
+    osso = [                                                          # fêmur: cabeça, colo, trocânter, diáfise, côndilos
         ".##.......",
-        "####......",
-        ".####.....",
-        "..#.##....",
-        ".....##...",
-        "......##..",
-        ".......##.",
-        "........##",
-        "........##",
-        ".......###",
-        ".......#.#",
+        "###..#....",
+        ".#####....",
+        "...###....",
+        "....##....",
+        "....##....",
+        "....##....",
+        "....##....",
+        "....##....",
+        "....##....",
+        "....##....",
+        "...####...",
+        "..##..##..",
+        "..#....#..",
     ]
     for j, linha in enumerate(osso):
         for i, ch in enumerate(linha):
             if ch == "#":
-                c.p(x0 + 4 + i, y0 + 4 + j * 1.4, tinta)
+                c.p(x0 + 4 + i, y0 + 3 + j, tinta)
+    for j in range(5, 11, 2):                                         # furos da placa desenhados ao lado
+        c.p(x0 + 11, y0 + 3 + j, "#8a3a2a")
+    c.ret(x0 + 10, y0 + 7, 1, 8, "#8a6a50", 0.6)
     for i in range(0, 14, 2):
         c.p(x0 + 2 + i, y0 + 19, "#8a6a50")                            # cota tracejada
     c.p(x0 + 8, y0 + 1, FERRO[3])                                       # prego
@@ -766,7 +803,8 @@ def forja() -> tuple[Camada, Camada, np.ndarray, np.ndarray]:
                 k = max(0, k - 2)
             if y == 93:
                 k = 1
-            c.p(x, y, TIJOLO[k])
+            sujo = 0.62 + 0.25 * n2[y, x] + 0.13 * ((y - 93) / 19)
+            c.p(x, y, hexa(TIJOLO[k]) * sujo + hexa("#1a0e0a") * (1 - sujo))
             frente_m[y, x] = 1
     for x in range(362, 452):
         c.p(x, 112, PEDRA[1])
@@ -827,6 +865,17 @@ def forja() -> tuple[Camada, Camada, np.ndarray, np.ndarray]:
     for y in range(44, 100):
         c.p(469 + (y - 44) // 30, y, "#9a7a54" if y % 3 else "#6a5438")
     c.ret(467, 99, 5, 3, MADEIRA[4])
+    # caixa de carvão ao pé do fole
+    for y in range(102, 116):
+        for x in range(452, 478):
+            k = 3 if y == 102 else 2 if x < 476 else 1
+            if (x - 452) % 9 == 0:
+                k = 1
+            c.p(x, y, MADEIRA[k])
+    for x in range(453, 477):
+        topo = 101 - int(2.5 * math.sin((x - 453) / 24 * math.pi))
+        for y in range(topo, 103):
+            c.p(x, y, "#16161a" if (x * 3 + y) % 4 else "#3a3a44")
     # ganchos na cinta com tenazes, atiçador e pá pendurados (desenhados por cima da boca)
     for (x, comp, tipo) in ((364, 22, "tenaz"), (369, 16, "aticador"), (446, 18, "pa")):
         c.p(x, 66, FERRO[5])
@@ -946,34 +995,46 @@ def bigorna(c: Camada, emis: Camada) -> None:
                 c.p(x, y, MADEIRA[k])
     c.linha(cx - 14, 119, cx - 6, 121, MADEIRA[1])                               # rachadura no topo
     c.linha(cx + 8, 118, cx + 15, 120, MADEIRA[1])
-    # ferro: pés, cintura, corpo, mesa, chifre e calcanhar
-    def tom(x, y, x0, x1):
-        t = (x - x0) / max(1, x1 - x0)
-        return 5 if t < 0.12 else 4 if t < 0.35 else 3 if t < 0.7 else 2 if t < 0.9 else 1
-    for y in range(114, 121):                                                # pés (alargam para baixo)
-        a = (y - 114) / 6
-        x0, x1 = int(286 - a * 6), int(308 + a * 6)
-        for x in range(x0, x1 + 1):
-            c.p(x, y, FERRO[tom(x, y, x0, x1) - (1 if y == 120 else 0)])
-    for y in range(110, 114):                                                # cintura
-        for x in range(289, 306):
-            c.p(x, y, FERRO[tom(x, y, 289, 305)])
-    for y in range(104, 110):                                                # corpo
-        for x in range(278, 318):
-            k = tom(x, y, 278, 317)
-            if y == 109:
-                k = max(1, k - 1)
+    # ferro escuro: pés, cintura côncava, corpo alto, mesa polida, chifre cônico e calcanhar com o furo
+    def tom(x, x0, x1):
+        t = (x + 0.5 - x0) / max(1, x1 - x0)
+        return 4 if t < 0.08 else 3 if t < 0.3 else 2 if t < 0.75 else 1
+    for y in range(113, 121):                                                # pés (alargam para baixo)
+        a = (y - 113) / 7
+        x0, x1 = 287 - a * 7, 307 + a * 7
+        for x in range(int(x0), int(x1) + 1):
+            k = tom(x, x0, x1)
+            if y == 120:
+                k = 0
+            if y == 113 + 3 and abs(x - 297) > 6:
+                k = max(0, k - 1)                                                # rebaixo entre os pés
             c.p(x, y, FERRO[k])
-    for x in range(277, 319):                                                # mesa (face de cima, polida)
-        c.p(x, 103, FERRO[6] if 285 < x < 300 else FERRO[5])
-    for i in range(14):                                                      # chifre
-        x = 277 - i
-        meia = 3 * (1 - i / 14) ** 0.8
-        for y in range(int(105.5 - meia), int(105.5 + meia) + 1):
-            c.p(x, y, FERRO[5] if y < 105 else FERRO[3] if y < 107 else FERRO[2])
-    c.ret(318, 104, 4, 3, FERRO[3])                                          # calcanhar com o furo
-    c.ret(318, 104, 4, 1, FERRO[5])
-    c.p(316, 103, FERRO[0])
+    for y in range(109, 113):                                                # cintura côncava
+        cv = 1.5 * math.sin((y - 109) / 4 * math.pi)
+        x0, x1 = 289 + cv, 305 - cv
+        for x in range(int(x0), int(x1) + 1):
+            c.p(x, y, FERRO[tom(x, x0, x1)])
+    for y in range(100, 109):                                                # corpo
+        for x in range(279, 318):
+            k = tom(x, 279, 318)
+            if y >= 107:
+                k = max(0, k - 1)
+            if y == 100:
+                k = 5 if 283 < x < 312 else 4                                 # quina da mesa pega luz
+            c.p(x, y, FERRO[k])
+    for i in range(17):                                                      # chifre: cone que afina para a esquerda
+        x = 278 - i
+        meia = 3.6 * (1 - i / 17) ** 0.75
+        cy = 102.5 + i * 0.05
+        for y in range(int(round(cy - meia)), int(round(cy + meia)) + 1):
+            v = (y + 0.5 - (cy - meia)) / max(0.6, 2 * meia)
+            c.p(x, y, FERRO[5] if v < 0.22 else FERRO[3] if v < 0.5 else FERRO[2] if v < 0.8 else FERRO[1])
+    for y in range(100, 105):                                                # calcanhar
+        for x in range(318, 324):
+            c.p(x, y, FERRO[4] if y == 100 else FERRO[2] if x < 322 else FERRO[1])
+    c.p(320, 100, FERRO[0])                                                  # furo quadrado (hardy)
+    c.p(321, 100, FERRO[0])
+    c.p(314, 100, FERRO[0])                                                  # furo redondo (pritchel)
     # a placa de fêmur na mesa: 9 furos; a ponta da direita ainda em brasa (emissiva)
     for i in range(30):
         x = 284 + i
@@ -983,16 +1044,16 @@ def bigorna(c: Camada, emis: Camada) -> None:
         if emis_k > 0:
             cor1 = misturar(base1, "#ffb040" if emis_k < 0.7 else "#fff0b0", min(1, emis_k * 1.5))
             cor2 = misturar(base2, "#ff6a10", min(1, emis_k * 1.5))
-            c.p(x, 101, cor1)
-            c.p(x, 102, cor2 if not furo else "#2a0c04")
-            emis.p(x, 101, cor1, min(1, emis_k * 1.6))
+            c.p(x, 98, cor1)
+            c.p(x, 99, cor2 if not furo else "#2a0c04")
+            emis.p(x, 98, cor1, min(1, emis_k * 1.6))
             if not furo:
-                emis.p(x, 102, cor2, min(1, emis_k * 1.4))
+                emis.p(x, 99, cor2, min(1, emis_k * 1.4))
         else:
-            c.p(x, 101, base1 if not furo else ACO[2])
-            c.p(x, 102, base2 if not furo else "#0a0c10")
-    c.p(284, 101, ACO[5])
-    c.p(285, 101, ACO[5])
+            c.p(x, 98, base1 if not furo else ACO[2])
+            c.p(x, 99, base2 if not furo else "#0a0c10")
+    c.p(284, 98, ACO[5])
+    c.p(285, 98, ACO[5])
     # martelo encostado no toco, à esquerda: cabeça no chão, cabo inclinado
     for i in range(20):
         x, y = 271 + i * 0.32, 141 - i
@@ -1003,9 +1064,11 @@ def bigorna(c: Camada, emis: Camada) -> None:
     c.ret(266, 139, 1, 4, FERRO[4])
     c.ret(275, 140, 1, 3, FERRO[1])
     # marreta pequena deitada na mesa, atrás da placa
-    c.ret(296, 99, 14, 1, MADEIRA[4])
-    c.ret(293, 98, 4, 3, FERRO[4])
-    c.ret(293, 98, 4, 1, FERRO[6])
+    c.ret(287, 96, 13, 1, MADEIRA[4])
+    c.ret(287, 97, 13, 1, MADEIRA[2])
+    c.ret(283, 95, 4, 3, FERRO[4])
+    c.ret(283, 95, 4, 1, FERRO[6])
+    c.p(286, 97, FERRO[1])
 
 
 def barril(c: Camada, emis: Camada) -> None:
@@ -1201,7 +1264,7 @@ PERIODOS = {
     "tarde": dict(amb="#c8987c", k_amb=0.5, forja=1.05, porta="#ffb478", k_porta=0.9,
                   sol="#ffa456", k_sol=1.25, sol_dx=0.95, sol_comp=64, ceu=1.12,
                   quente="#ffc890", fria="#2e1c3e", esquerda=0.32, fumaca="#d4aa8c", lamparina=0.45),
-    "noite": dict(amb="#4256a0", k_amb=0.32, forja=1.4, porta="#5a74b8", k_porta=0.42,
+    "noite": dict(amb="#4256a0", k_amb=0.3, forja=1.55, porta="#5a74b8", k_porta=0.42,
                   sol="#9ab4ec", k_sol=0.45, sol_dx=-0.3, sol_comp=30, ceu=1.0,
                   quente="#ffc890", fria="#121c40", esquerda=0.3, fumaca="#5a5e74", lamparina=1.0),
 }
@@ -1261,6 +1324,7 @@ def montar(periodo: str) -> Image.Image:
     fundo, vao = parede()
     prateleiras_esquerda(fundo)
     prateleira_clinica(fundo)
+    tabua_ferraduras(fundo)
     corpo_forja, emis, interior, frente_m = forja()
     lamparina(corpo_forja, emis, P["lamparina"])
     piso = chao()
@@ -1299,7 +1363,7 @@ def montar(periodo: str) -> Image.Image:
     luz += forja_luz_chao[:, :, None] * hexa("#ff9444") * 1.25 * kf
     luz += (luz_pontual(372, 128, 70, 0.4) * (1 - sombra_f * 0.85))[:, :, None] * hexa("#ff8a3a") * 0.55 * kf   # poça quente no chão
     luz += luz_pontual(FOGO[0], FOGO[1] + 6, 46, 0.8)[:, :, None] * hexa("#ffc070") * 0.45 * kf * tampa[:, :, None]
-    luz += luz_pontual(306, 102, 18, 0.8)[:, :, None] * hexa("#ff9040") * 0.8           # a placa em brasa
+    luz += luz_pontual(306, 99, 18, 0.8)[:, :, None] * hexa("#ff9040") * 0.8           # a placa em brasa
     if P["lamparina"] > 0:
         lx, ly = LAMPARINA
         luz += luz_pontual(lx, ly + 8, 80, 1.0)[:, :, None] * hexa("#ffb060") * 0.4 * P["lamparina"]
@@ -1324,7 +1388,7 @@ def montar(periodo: str) -> Image.Image:
     # corpo da forja e do fole, com a mesma luz; a frente de tijolo só vê a luz rebatida; a boca, o fogo direto
     fl = luz.copy()
     fm = desfocar(ampliar(frente_m[:, :, None]), 1)[:, :, 0]
-    fl = fl * (1 - fm[:, :, None] * 0.62)
+    fl = fl * (1 - fm[:, :, None] * 0.7)
     forja_rgb = forja_a[:, :, :3] * fl
     int_a = ampliar(interior[:, :, None])[:, :, 0]
     forja_rgb += forja_a[:, :, :3] * (luz_pontual(FOGO[0], FOGO[1] - 2, 40, 0.45) * int_a)[:, :, None] * hexa("#ff7a2a") * 7 * kf
@@ -1356,17 +1420,17 @@ def montar(periodo: str) -> Image.Image:
     img = img * (1 - emis_a[:, :, 3:4] * 0.9) + emis_rgb * 1.6 * (0.85 + 0.15 * kf)
 
     # ── ar: fumaça da forja subindo e acumulando sob o teto, acesa por baixo pelo fogo
-    fum = ruido_ret(71, 10, 5, W * ESC, H * ESC) * 0.55 + ruido(72, 18, W * ESC, H * ESC) * 0.45
+    fum = desfocar((ruido_ret(71, 30, 12, W * ESC, H * ESC) * 0.55 + ruido(72, 40, W * ESC, H * ESC) * 0.45)[:, :, None], 6)[:, :, 0]
     fum2 = ruido_ret(73, 6, 14, W * ESC, H * ESC)
     larg = np.maximum(6, 16 + (72 - ys) * 0.55)
     coluna = np.exp(-((xs - (FOGO[0] - (72 - ys) * 0.15 + (fum2 - 0.5) * 18)) / larg) ** 2) * suave(76, 46, ys)
     teto = (1 - suave(6, 46, ys)) * (0.35 + 0.65 * suave(160, 440, xs))
     dens = np.clip((coluna * 0.75 + teto * 0.55) * (fum * 1.6 - 0.35), 0, 1)
     dens *= 1 - vao_a * 0.6
-    cor_fum = (hexa(P["fumaca"]) * (P["k_amb"] * 0.8 + 0.08)
+    cor_fum = (hexa(P["fumaca"]) * (P["k_amb"] * 0.55 + 0.12)
                + forja_luz[:, :, None] * hexa("#ff8a40") * 0.6 * kf
                + vol_a[:, :, None] * hexa(P["sol"]) * 0.3)
-    img = img * (1 - dens[:, :, None] * 0.6) + cor_fum * dens[:, :, None] * 0.6
+    img = img * (1 - dens[:, :, None] * 0.45) + cor_fum * dens[:, :, None] * 0.45
     # ar quente brilhando na boca da forja
     img += luz_pontual(FOGO[0], FOGO[1] - 6, 34, 0.7)[:, :, None] * hexa("#ff7a30") * 0.3 * kf
 

@@ -247,8 +247,6 @@ def paredes() -> Camada:
                 c.c[y, x, :3] = cor_de(PINHO[k]) * (0.85 + 0.15 * rn[y, (x + ripa * 7) % W])
                 c.c[y, x, 3] = 1
     for x0 in (22, 66, 110):                 # caibros descendo a água (perpendiculares às ripas)
-        for j in range(-3, 0):
-            pass
         for y in range(0, 75):
             xc = x0 + y * 0.1 - 6
             for dx in range(5):
@@ -395,7 +393,7 @@ def ceu(per: str) -> np.ndarray:
         astro, r_astro, cor_astro, halo_astro = (244, 56), 5.0, "#fff0b0", "#ff9040"
     else:
         paradas = [(0, "#040820"), (0.55, "#0e1a44"), (1, "#24346a")]
-        astro, r_astro, cor_astro, halo_astro = (266, 24), 4.6, "#f4f6ff", "#8aa0e0"
+        astro, r_astro, cor_astro, halo_astro = (245, 43), 4.4, "#f4f6ff", "#8aa0e0"
     x0, x1 = JX - JR - 1, JX + JR + 1
     for y in range(0, JBASE + 1):
         t = y / JBASE
@@ -481,7 +479,7 @@ def ceu(per: str) -> np.ndarray:
                 e[yb - alt, x + 1] = hexa(muro[1]) * (1 - nev) + hexa(nevoa) * nev
             wx, wy = x + 1 + int(g.random() * max(1, larg - 2)), yb + 1
             if x0 <= wx < x1 and wy <= JBASE:
-                e[wy, wx] = hexa("#ffc860") * (1.5 - nev) if per == "noite" else hexa("#4a4a5a") * (1 - nev) + hexa(nevoa) * nev
+                e[wy, wx] = hexa("#ffc860") * (1.9 - nev) if per == "noite" else hexa("#4a4a5a") * (1 - nev) + hexa(nevoa) * nev
             x += larg + (1 if g.random() < 0.3 else 0)
     return e
 
@@ -570,30 +568,36 @@ def janela(c: Camada, per: str) -> tuple[np.ndarray, np.ndarray]:
     c.ret(JX - JR - 8, JBASE + 1, JR * 2 + 16, 2, PEDRA[0])
     c.ret(JX - JR - 8, JBASE + 3, JR * 2 + 16, 1, PEDRA[2])
     c.ret(JX - JR - 7, JBASE + 4, JR * 2 + 14, 1, PEDRA[3])
+    # Vaso e despertador ficam na frente do vidro: pintados à parte e tapando o céu.
+    o = Camada(0.02)
     vx = 232
-    c.ret(vx - 3, 91, 7, 6, "#a8583a")
-    c.ret(vx - 4, 90, 9, 2, "#c06a46")
-    c.ret(vx - 3, 91, 1, 6, "#c87a56")
-    c.ret(vx + 3, 92, 1, 5, "#7a3a26")
+    o.ret(vx - 3, 91, 7, 6, "#a8583a")
+    o.ret(vx - 4, 90, 9, 2, "#c06a46")
+    o.ret(vx - 3, 91, 1, 6, "#c87a56")
+    o.ret(vx + 3, 92, 1, 5, "#7a3a26")
     for (dx, dy, cor) in ((0, -2, "#3a7a3a"), (-2, -4, "#4a8a3a"), (2, -5, "#2e6a32"), (-1, -7, "#5a9a46"), (1, -9, "#3a7a3a"),
                           (-3, -6, "#2e6a32"), (3, -3, "#4a8a3a"), (0, -5, "#5aa04a"), (-2, -9, "#4a8a3a"), (2, -8, "#5a9a46")):
         c.ret(vx + dx, 90 + dy, 2, 2, cor)
-    c.p(vx - 1, 80, "#e86a8a")
-    c.p(vx + 2, 82, "#f4d060")
+    o.p(vx - 1, 80, "#e86a8a")
+    o.p(vx + 2, 82, "#f4d060")
     rlx, rly = 272, 92
-    c.elipse(rlx, rly, 3.2, 3.2, LATAO[2])
-    c.elipse(rlx, rly, 2.3, 2.3, "#f4ecd8")
-    c.p(rlx - 3, rly - 4, LATAO[1])
-    c.p(rlx + 2, rly - 4, LATAO[1])
-    c.ret(rlx - 3, rly - 4, 2, 1, LATAO[1])
-    c.ret(rlx + 2, rly - 4, 2, 1, LATAO[1])
-    c.p(rlx - 2, rly + 3, LATAO[3])
-    c.p(rlx + 2, rly + 3, LATAO[3])
+    o.elipse(rlx, rly, 3.2, 3.2, LATAO[2])
+    o.elipse(rlx, rly, 2.3, 2.3, "#f4ecd8")
+    o.p(rlx - 3, rly - 4, LATAO[1])
+    o.p(rlx + 2, rly - 4, LATAO[1])
+    o.ret(rlx - 3, rly - 4, 2, 1, LATAO[1])
+    o.ret(rlx + 2, rly - 4, 2, 1, LATAO[1])
+    o.p(rlx - 2, rly + 3, LATAO[3])
+    o.p(rlx + 2, rly + 3, LATAO[3])
     hora = {"manha": 7, "tarde": 6, "noite": 11}[per]
     ang = hora / 12 * math.tau
-    c.p(rlx, rly, "#1a1410")
-    c.p(round(rlx + math.sin(ang) * 1.3), round(rly - math.cos(ang) * 1.3), "#1a1410")
-    c.p(rlx, rly - 2, "#1a1410")
+    o.p(rlx, rly, "#1a1410")
+    o.p(round(rlx + math.sin(ang) * 1.3), round(rly - math.cos(ang) * 1.3), "#1a1410")
+    o.p(rlx, rly - 2, "#1a1410")
+    sel = o.c[:, :, 3] > 0.5
+    c.c[sel] = o.c[sel]
+    emis[sel] = 0
+    trans[sel] = 0
     return emis, trans
 
 
@@ -936,40 +940,47 @@ def cabideiro(c: Camada) -> None:
     c.p(px - 1, 78, "#6a6e7a")
     c.p(px - 6, 44, FERRO[0])
     c.p(px + 6, 44, FERRO[0])
-    # Mochila de lona encostada no pé do cabideiro: corpo arredondado, tampa com fivela, bolso da frente e alças.
+    # Mochila de lona azul encostada no pé do cabideiro: corpo em cúpula, saco de dormir enrolado em cima,
+    # tampa com fivela, bolso da frente e as alças caídas no chão.
     mx, my = 188, 118
-    lona = ("#a0703e", "#7e5430", "#5e3c20", "#3c2614")
+    lona = ("#6a8a9a", "#4a6676", "#344a56", "#202e36")
     for y in range(my, my + 24):
         for x in range(mx, mx + 18):
-            canto = (y - my < 3) and (min(x - mx, mx + 17 - x) < 3 - (y - my))
-            if canto:
+            dy = y - my
+            meia = 9 if dy >= 6 else math.sqrt(max(0.0, 81 - (6 - dy) ** 2 * 2.2))
+            if abs(x + 0.5 - (mx + 9)) > meia:
                 continue
-            k = 0 if x - mx < 2 else 1 if x - mx < 12 else 2 if x - mx < 16 else 3
+            u = (x + 0.5 - (mx + 9 - meia)) / max(1, 2 * meia)
+            k = 0 if u < 0.15 else 1 if u < 0.62 else 2 if u < 0.88 else 3
             c.p(x, y, lona[k])
-    for x in range(mx + 1, mx + 17):                      # tampa com borda curva
-        fundo = my + 9 + int(1.5 * math.sin((x - mx) / 17 * math.pi))
-        for y in range(my + 1, fundo):
-            c.p(x, y, lona[1] if x - mx > 2 else lona[0])
+    for x in range(mx + 2, mx + 16):                      # tampa com borda curva
+        fundo = my + 10 + int(1.5 * math.sin((x - mx) / 17 * math.pi))
         c.p(x, fundo, lona[3])
-        c.p(x, my + 1, lona[0])
-    c.ret(mx + 8, my + 7, 2, 5, "#4a2814")                # tira e fivela central
+        c.p(x, fundo - 1, lona[0] if x < mx + 9 else lona[1])
+    c.ret(mx + 8, my + 4, 2, 9, "#3a2414")                # tira e fivela central
     c.ret(mx + 7, my + 10, 4, 2, LATAO[2])
     c.p(mx + 8, my + 10, LATAO[0])
-    c.ret(mx + 3, my + 14, 12, 8, lona[2])                # bolso da frente com zíper
-    c.ret(mx + 3, my + 14, 12, 1, lona[0])
-    c.ret(mx + 4, my + 15, 10, 1, "#2a1a0c")
-    c.p(mx + 12, my + 16, FERRO[0])
+    c.ret(mx + 3, my + 15, 12, 7, lona[2])                # bolso da frente com zíper
+    c.ret(mx + 3, my + 15, 12, 1, lona[0])
+    c.ret(mx + 4, my + 16, 10, 1, "#141c22")
+    c.p(mx + 12, my + 17, FERRO[0])
     c.ret(mx + 3, my + 21, 12, 1, lona[3])
-    c.ret(mx + 16, my + 4, 2, 18, "#4a2814")              # alça lateral
-    c.ret(mx, my + 23, 18, 1, lona[3])
-    c.linha(mx + 6, my, mx + 9, my - 3, "#4a2814")        # alça de mão
-    c.linha(mx + 12, my, mx + 9, my - 3, "#4a2814")
-    # Rolo de atadura e um livro saindo da mochila.
-    c.ret(mx + 13, my - 1, 4, 4, "#f4f0e8")
-    c.p(mx + 14, my, "#c8c4bc")
-    c.ret(mx + 2, my - 2, 8, 3, "#8e2a2a")
-    c.ret(mx + 2, my - 2, 8, 1, "#b84a3a")
-    c.ret(mx + 9, my - 2, 1, 3, "#e8dcb8")
+    c.ret(mx + 1, my + 23, 16, 1, lona[3])
+    c.linha(mx + 16, my + 8, mx + 21, my + 24, "#3a2414")  # alça caída no chão
+    c.linha(mx + 17, my + 8, mx + 22, my + 24, "#5a3a20")
+    c.ret(mx + 20, my + 24, 5, 1, "#3a2414")
+    # Saco de dormir enrolado e amarrado em cima.
+    for x in range(mx + 1, mx + 17):
+        for y in range(my - 4, my + 1):
+            k = 0 if y == my - 4 else 1 if y < my - 1 else 2
+            c.p(x, y, ("#b8743a", "#9a5a2a", "#6e3c1c")[k])
+    c.elipse(mx + 1, my - 2, 1.6, 2.4, "#e0c090")
+    c.p(mx + 1, my - 2, "#9a5a2a")
+    for x in (mx + 5, mx + 13):
+        c.ret(x, my - 4, 1, 5, "#3a2414")
+    # Rolo de atadura no bolso lateral.
+    c.ret(mx + 15, my + 12, 4, 4, "#f4f0e8")
+    c.p(mx + 16, my + 13, "#c8c4bc")
 
 
 def estante(c: Camada) -> None:
@@ -1079,6 +1090,12 @@ def escrivaninha(c: Camada, e: np.ndarray, vela_acesa: float) -> None:
     for x in (410, 422):
         c.ret(x, 127, 2, 14, PINHO[2])
     c.ret(411, 135, 12, 1, PINHO[3])
+    # Bolinhas de papel amassado no chão (rascunhos que não deram certo).
+    for (bx, by) in ((386, 147), (392, 151), (452, 152)):
+        c.elipse(bx, by, 2, 1.6, "#e8e2d4")
+        c.p(bx - 1, by - 1, "#ffffff")
+        c.p(bx + 1, by, "#b8b0a0")
+        c.p(bx, by + 1, "#a8a090")
     # Caneca de café (residente!) no canto da mesa.
     c.ret(389, 96, 6, 7, "#d8d4cc")
     c.ret(389, 96, 1, 7, "#f4f0e8")

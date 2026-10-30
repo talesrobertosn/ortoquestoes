@@ -48,7 +48,7 @@ PAREDE_CHAO = 125          # junção da parede com o assoalho
 OCULAR = (323.0, 105.0)
 OBJETIVA = (266.0, 23.0)
 PILAR_X = 300
-LAMPARINA = (455.5, 101.5)  # chama da lamparina da mesa
+LAMPARINA = (455.5, 93.5)  # chama da lamparina da mesa
 VELA = (259.5, 81.5)        # chama da vela na arandela da parede
 VELA_ESQ = (40.5, 84.0)     # vela fraquinha na estante da esquerda
 
@@ -234,7 +234,7 @@ PEDRA = ("#9a8c84", "#7c706c", "#605654", "#443c3e", "#2e282c")
 # ─────────────────────────────── Horas do dia ───────────────────────────────
 PERIODOS = {
     "manha": dict(
-        ceu=("#4f8ed6", "#8cc0ea", "#e6f0f0"), amb="#9eaacc", amb_k=0.72, ceu_luz="#bcd4f4", ceu_k=0.7,
+        ceu=("#4f8ed6", "#8cc0ea", "#e6f0f0"), amb="#a4aecc", amb_k=0.8, ceu_luz="#bcd4f4", ceu_k=0.7,
         sol="#ffe6b0", sol_k=1.4, rumo=(-0.62, -1.0), feixe=0.20, lamp=0.0, vela=0.0,
         quente="#ffe8c4", fria="#22406a", montanha=("#7a9ccc", "#9ab6d8"), nuvem=("#ffffff", "#c6d8ee")),
     "tarde": dict(
@@ -449,7 +449,7 @@ def parede() -> Camada:
     n = ruido(61, 3)
     n2 = ruido(63, 9, 4)
     musgo = ruido(62, 6)
-    tons = ["#2c2426", "#463a38", "#5e4e48", "#766254", "#8c7660", "#a48c70", "#bca486"]
+    tons = ["#30262a", "#4a3c3a", "#62504a", "#7a6454", "#927a62", "#aa8e70", "#c2a686"]
     alts = [6, 5, 7, 5, 6, 6, 7, 5, 6, 6, 5]
     y = y0 + 2
     fi = 0
@@ -465,7 +465,7 @@ def parede() -> Camada:
                 for xx in range(max(0, x), min(W, x + larg)):
                     ex, ey = xx - x, yy - y
                     if ex == larg - 1 or ey == alt - 1:
-                        cor = "#2e2426"
+                        cor = "#3a2e2c"
                     else:
                         base = k0 + (n[yy, xx] - 0.5) * 0.3 + (n2[yy, xx] - 0.5) * 0.2
                         if ey == 0:
@@ -553,13 +553,13 @@ def chao() -> Camada:
             tb = math.floor(u / 15)
             fr = (u / 15) % 1
             k = hash01(tb, fiada, 9)
-            base = 0.5 + (k - 0.5) * 0.3 + (veio[y, x] - 0.5) * 0.3
+            base = 0.5 + (k - 0.5) * 0.22 + (veio[y, x] - 0.5) * 0.3
             if fr < 0.06 * (1 + prof):
                 base = 0.08
             elif fr < 0.16:
                 base += 0.12
             # emenda das tábuas, desencontrada
-            if (y - PAREDE_CHAO) > 0 and int((y - PAREDE_CHAO - 1) ** 1.15 / 4.2) != fiada and (tb + fiada) % 3 == 0:
+            if (y - PAREDE_CHAO) > 0 and int((y - PAREDE_CHAO - 1) ** 1.15 / 4.2) != fiada and (tb * 7 + fiada * 3) % 5 == 0:
                 base = 0.1
             base -= (1 - prof) * 0.12
             c.p(x, y, tons_idx(MADEIRA[1:], base))
@@ -963,108 +963,149 @@ def mesa() -> tuple[Camada, Camada, Camada, np.ndarray]:
     """A mesa de trabalho: papéis, caderno com gráfico, tinteiro e pena, o fêmur de peso de papel, livros e a lamparina.
     Devolve (mesa, objetos, vidro/chama emissivo, máscara de quem faz sombra na parede)."""
     c, o, e = Camada(), Camada(), Camada()
-    x0, x1, yt = 390, 478, 112
-    # Tampo e aventais.
-    c.ret(x0, yt, x1 - x0, 3, MADEIRA[5])
-    c.ret(x0, yt, x1 - x0, 1, MADEIRA[6])
-    c.ret(x0, yt + 3, x1 - x0, 1, MADEIRA[2])
-    c.ret(x0 + 2, yt + 4, x1 - x0 - 4, 6, MADEIRA[3])
-    for gx in (x0 + 18, x0 + 52):
-        c.ret(gx, yt + 6, 14, 3, MADEIRA[2])
-        c.ret(gx + 6, yt + 7, 3, 1, LATAO[4])
-    c.ret(x0 + 2, yt + 10, x1 - x0 - 4, 1, MADEIRA[1])
+    x0, x1, yt = 390, 478, 105
+    # Tampo visto um pouco de cima (veio da madeira), borda da frente, avental com gavetas e pernas torneadas.
+    veio = ruido(901, 13, 1)
+    for y in range(yt, yt + 7):
+        for x in range(x0 + 2, x1 - 1):
+            k = 0.62 + (veio[y, x] - 0.5) * 0.35 + (y - yt) * 0.02
+            if (x * 7 + y * 31) % 23 == 0:
+                k -= 0.15
+            c.p(x, y, tons_idx(MADEIRA, k))
+    c.ret(x0 + 2, yt, x1 - x0 - 3, 1, MADEIRA[3])
+    c.ret(x0, yt + 7, x1 - x0, 1, MADEIRA[6])
+    c.ret(x0, yt + 8, x1 - x0, 2, MADEIRA[5])
+    c.ret(x0, yt + 10, x1 - x0, 1, MADEIRA[2])
+    c.ret(x0 + 2, yt + 11, x1 - x0 - 4, 7, MADEIRA[3])
+    for gx in (x0 + 14, x0 + 48):
+        c.ret(gx, yt + 12, 20, 5, MADEIRA[2])
+        c.ret(gx, yt + 12, 20, 1, MADEIRA[1])
+        c.ret(gx, yt + 16, 20, 1, MADEIRA[4])
+        c.ret(gx + 9, yt + 14, 3, 1, LATAO[5])
+        c.p(gx + 10, yt + 15, LATAO[1])
+    c.ret(x0 + 2, yt + 18, x1 - x0 - 4, 1, MADEIRA[1])
     for lx in (x0 + 3, x1 - 7):
-        for y in range(yt + 10, 148):
-            t = (y - yt - 10) / 38
-            w = 4 if (0.15 < t < 0.22 or 0.7 < t < 0.78) else 3
-            for x in range(lx, lx + w):
-                c.p(x, y, MADEIRA[4] if x == lx else MADEIRA[2])
-    c.ret(x0 + 6, 138, x1 - x0 - 12, 2, MADEIRA[2])
-    # Cesto de rolos embaixo da mesa.
-    for y in range(132, 147):
-        for x in range(430, 448):
-            k = 0.5 + 0.3 * ((x + y) % 3 == 0) - 0.2 * ((x - 430) / 18)
-            o.p(x, y, tons_idx(["#3a2a14", "#5a4220", "#7a5c2e", "#98763c"], k))
-    for k, dx in enumerate((432, 436, 440, 444)):
-        o.ret(dx, 124 + k % 2 * 3, 3, 9, PERGAMINHO[2 + k % 2])
-        o.ret(dx, 124 + k % 2 * 3, 3, 1, PERGAMINHO[5])
-    # Papéis espalhados no tampo (em leve perspectiva), um caderno aberto com um gráfico.
-    for (px_, py_, w, cor) in ((396, 109, 15, PERGAMINHO[4]), (409, 110, 13, PERGAMINHO[3]), (440, 110, 12, "#f6eedc")):
-        o.ret(px_, py_, w, 3, cor)
-        o.ret(px_, py_ + 2, w, 1, mistura(cor, "#000000", 0.18))
-        for k in range(px_ + 2, px_ + w - 2, 3):
-            o.p(k, py_ + 1, TINTA, 0.4)
-    # caderno aberto
-    o.ret(418, 107, 20, 5, "#f8f0dc")
-    o.ret(427, 107, 1, 5, "#c8b898")
-    o.ret(418, 111, 20, 1, "#5a2a1a")
-    o.linha(420, 110, 425, 108, "#2a4a8a")
-    for k in range(430, 437, 2):
-        o.ret(k, 110 - (k - 430) // 2, 1, 1 + (k - 430) // 2, "#9a2a22")
-    # Tinteiro e pena.
-    o.ret(400, 105, 5, 4, "#1a1a2a")
-    o.ret(400, 105, 5, 1, "#3a3a5a")
-    o.p(401, 106, "#8a8ac8")
-    o.ret(401, 104, 3, 1, LATAO[3])
-    o.linha(402, 104, 407, 93, "#f2ece0")
-    o.linha(403, 103, 408, 94, "#d8d0c4")
-    o.linha(404, 101, 409, 96, "#c0b8ac", 0.8)
+        for y in range(yt + 18, 148):
+            t = (y - yt - 18) / (148 - yt - 18)
+            w = 5 if (0.12 < t < 0.2 or 0.72 < t < 0.8) else 3
+            dx0 = -1 if w == 5 else 0
+            for x in range(lx + dx0, lx + dx0 + w):
+                c.p(x, y, MADEIRA[5] if x == lx + dx0 else MADEIRA[3] if x == lx + dx0 + 1 else MADEIRA[2])
+    c.ret(x0 + 6, 139, x1 - x0 - 12, 2, MADEIRA[2])
+    c.ret(x0 + 6, 139, x1 - x0 - 12, 1, MADEIRA[4])
+    # Cesto de vime embaixo da mesa, com mapas enrolados deitados e de pé.
+    for y in range(133, 147):
+        for x in range(428, 450):
+            k = 0.55 + 0.3 * (((x + (y // 2) * 2) % 4) < 2) - 0.3 * ((x - 428) / 22) - (0.2 if y in (133, 146) else 0)
+            o.p(x, y, tons_idx(["#2e2010", "#4a3418", "#6a4e26", "#8a6c38", "#a88a4c"], k))
+    for k, (dx, h) in enumerate(((431, 12), (435, 15), (440, 10), (444, 13))):
+        o.ret(dx, 134 - h + 6, 3, h, PERGAMINHO[3 - k % 2])
+        o.ret(dx, 134 - h + 6, 1, h, PERGAMINHO[4])
+        o.ret(dx, 134 - h + 6, 3, 1, PERGAMINHO[5])
+        o.p(dx + 1, 134 - h + 6, PERGAMINHO[1])
+        o.ret(dx, 134 - h + 10, 3, 1, "#9a2a22")  # fitinha
+    # Papéis espalhados no tampo, com linhas de anotação.
+    for (px_, py_, w, cor, inc) in ((393, 106, 17, PERGAMINHO[4], 1), (404, 107, 16, "#f6eedc", -1)):
+        pts = [(px_ + inc, py_), (px_ + w + inc, py_), (px_ + w - inc, py_ + 5), (px_ - inc, py_ + 5)]
+        o.poligono(pts, cor)
+        o.linha(px_ - inc, py_ + 5, px_ + w - inc, py_ + 5, mistura(cor, "#000000", 0.25))
+        for j in range(3):
+            o.linha(px_ + 2, py_ + 1 + j * 1.4, px_ + w - 4 - j * 3, py_ + 1 + j * 1.4, TINTA, 0.35)
     # O fêmur de peso de papel, deitado em cima dos papéis.
-    femur(o, 408, 109)
-    # Pilha de livros e uma ampulheta no canto.
-    for k, (w, cor) in enumerate(((14, "#2e4a5e"), (12, "#6a2a26"), (13, "#4a3a2a"))):
-        o.ret(463 + k % 2, 111 - (k + 1) * 3, w, 3, cor)
-        o.ret(463 + k % 2, 111 - (k + 1) * 3, w, 1, mistura(cor, "#ffffff", 0.25))
-        o.p(463 + k % 2 + w - 1, 111 - (k + 1) * 3 + 1, PERGAMINHO[3])
-    # Lamparina: base de latão, reservatório de vidro com óleo, chaminé de vidro e a chama.
+    femur(o, 397, 108)
+    # Tinteiro e pena.
+    o.ret(421, 104, 5, 5, "#141422")
+    o.ret(421, 104, 5, 1, "#3a3a5a")
+    o.p(422, 105, "#8a8ac8")
+    o.ret(422, 103, 3, 1, LATAO[3])
+    o.linha(423, 103, 429, 91, "#f2ece0")
+    o.linha(424, 102, 430, 92, "#d8d0c4")
+    o.linha(425, 100, 430, 94, "#c0b8ac", 0.8)
+    o.p(429, 90, "#ffffff")
+    # Livro-caixa aberto: o gráfico de barras numa página e a curva na outra.
+    bx, by = 429, 104
+    o.poligono([(bx, by + 1), (bx + 10, by), (bx + 10, by + 7), (bx - 1, by + 8)], "#f8f0dc")
+    o.poligono([(bx + 10, by), (bx + 20, by + 1), (bx + 21, by + 8), (bx + 10, by + 7)], "#efe4c8")
+    o.linha(bx + 10, by, bx + 10, by + 7, "#b8a888")
+    o.linha(bx - 1, by + 8, bx + 21, by + 8, "#5a2a1a")
+    o.linha(bx - 1, by + 9, bx + 21, by + 9, "#3a1a10")
+    for k, hh in enumerate((3, 5, 2, 4)):
+        o.ret(bx + 2 + k * 2, by + 6 - hh, 1, hh, ("#b04a3a", "#3a6aa0", "#b08a2a", "#3a8a5a")[k])
+    o.linha(bx + 12, by + 5, bx + 15, by + 4, "#9a2a22")
+    o.linha(bx + 15, by + 4, bx + 19, by + 2, "#9a2a22")
+    # Pilha de livros no canto.
+    for k, (w, cor) in enumerate(((15, "#2e4a5e"), (13, "#6a2a26"), (14, "#4a3a2a"), (11, "#3a5a3a"))):
+        yb = 110 - (k + 1) * 3
+        xb = 462 + (k % 2) - (k == 2)
+        o.ret(xb, yb, w, 3, cor)
+        o.ret(xb, yb, w, 1, mistura(cor, "#ffffff", 0.3))
+        o.ret(xb + w - 1, yb + 1, 1, 2, PERGAMINHO[4])
+        o.p(xb + 3, yb + 1, LATAO[4])
+    # Lamparina: pé de latão, reservatório de vidro com óleo, colar, chaminé bojuda e a chama.
     lx, ly = LAMPARINA
     lx = int(lx)
-    o.ret(lx - 4, 110, 9, 2, LATAO[3])
-    o.ret(lx - 4, 111, 9, 1, LATAO[1])
-    o.ret(lx - 1, 107, 3, 3, LATAO[4])
-    for y in range(102, 108):
-        meia = 3 if 103 <= y <= 106 else 2
+    o.ret(lx - 4, 109, 9, 2, LATAO[3])
+    o.ret(lx - 4, 110, 9, 1, LATAO[1])
+    o.ret(lx - 3, 108, 7, 1, LATAO[5])
+    o.ret(lx - 1, 106, 3, 2, LATAO[4])
+    for y in range(100, 106):
+        meia = 3 if 101 <= y <= 104 else 2
         for x in range(lx - meia, lx + meia + 1):
-            o.p(x, y, "#c88a3a" if x > lx - meia else "#f0c070")
-    o.ret(lx - 2, 101, 5, 1, LATAO[4])
-    for y in range(91, 101):
-        meia = 1 if y < 94 else 2
+            oleo = y >= 102
+            cor = ("#d8902e" if x > lx - meia + 1 else "#ffd27a") if oleo else "#a8b8c8"
+            o.p(x, y, cor, 1 if oleo else 0.45)
+        o.p(lx - meia, y, "#ffffff", 0.6)
+    o.ret(lx - 2, 99, 5, 1, LATAO[4])
+    o.ret(lx - 2, 98, 5, 1, LATAO[2])
+    for y in range(86, 98):
+        meia = 1 if y < 91 else 2
         for x in range(lx - meia, lx + meia + 1):
-            o.p(x, y, "#c8d8e8", 0.38)
-        o.p(lx - meia, y, "#ffffff", 0.55)
-    o.ret(lx - 1, 90, 3, 1, LATAO[2])
-    o.ret(lx + 4, 106, 2, 1, LATAO[2])  # asa
+            o.p(x, y, "#c8d8e8", 0.3)
+        o.p(lx - meia, y, "#ffffff", 0.5)
+    o.ret(lx - 1, 85, 3, 1, LATAO[3])
+    o.ret(lx + 3, 104, 3, 1, LATAO[2])  # botão do pavio
+    o.p(lx + 5, 103, LATAO[4])
     # Chama (o emissivo).
     e.p(lx, ly, "#fff6d0")
     e.p(lx, ly - 1, "#ffe08a")
     e.p(lx, ly - 2, "#ffb04a", 0.9)
     e.p(lx, ly + 1, "#ffd070")
-    e.p(lx - 1, ly, "#ff9a3a", 0.6)
-    e.p(lx + 1, ly, "#ff9a3a", 0.6)
+    e.p(lx - 1, ly, "#ff9a3a", 0.5)
+    e.p(lx + 1, ly, "#ff9a3a", 0.5)
     sombra = o.c[:, :, 3] > 0.5
     return c, o, e, sombra
 
 
 def femur(c: Camada, x: int, y: int) -> None:
-    """Fêmur pequeno (16 px), cabeça à esquerda, côndilos à direita."""
-    osso = ["#8a7a5a", "#c8b890", "#ece0c0", "#fff8e4"]
-    for xx in range(x + 3, x + 14):
-        c.p(xx, y, osso[2])
-        c.p(xx, y + 1, osso[1])
-    c.p(x + 6, y, osso[3])
-    c.p(x + 9, y, osso[3])
-    # cabeça e colo
+    """Fêmur de 21 px (cabeça e colo à esquerda, trocânteres, diáfise e côndilos à direita), luz de cima."""
+    osso = ["#7a6a4a", "#b8a47e", "#e2d4b0", "#fff6e0"]
+    # diáfise
+    for xx in range(x + 5, x + 18):
+        c.p(xx, y, osso[3] if xx % 5 else osso[2])
+        c.p(xx, y + 1, osso[2])
+        c.p(xx, y + 2, osso[1])
+    # cabeça (bola) e colo, inclinados para cima
     c.ret(x, y - 2, 3, 3, osso[2])
     c.p(x, y - 2, osso[3])
-    c.p(x + 2, y, osso[1])
-    c.p(x + 3, y - 1, osso[2])
-    c.p(x + 4, y - 1, osso[2])  # trocânter
-    c.p(x + 4, y + 2, osso[1])
+    c.p(x + 1, y - 2, osso[3])
+    c.p(x + 1, y - 3, osso[2])
+    c.p(x, y + 1, osso[1])
+    c.p(x + 1, y + 1, osso[1])
+    c.ret(x + 3, y - 1, 2, 2, osso[2])
+    c.p(x + 3, y + 1, osso[1])
+    # trocânter maior (em cima) e menor (embaixo)
+    c.ret(x + 5, y - 2, 2, 2, osso[3])
+    c.p(x + 4, y - 2, osso[2])
+    c.p(x + 6, y + 3, osso[1])
     # côndilos
-    c.ret(x + 14, y - 1, 2, 2, osso[2])
-    c.ret(x + 14, y + 1, 2, 2, osso[1])
-    c.p(x + 15, y - 1, osso[3])
-    c.p(x + 16, y, osso[1])
+    c.ret(x + 18, y - 1, 3, 2, osso[3])
+    c.ret(x + 18, y + 1, 3, 2, osso[2])
+    c.p(x + 20, y + 3, osso[1])
+    c.p(x + 18, y + 3, osso[1])
+    c.p(x + 20, y + 1, osso[0])
+    # sombra no papel
+    for xx in range(x + 1, x + 21):
+        c.p(xx, y + 3 + (1 if xx in (x + 1, x + 2) else 0), "#000000", 0.25)
 
 
 def planetario() -> tuple[Camada, Camada]:
@@ -1272,8 +1313,8 @@ def montar(nome: str) -> Image.Image:
 
     # Sombras de contato: debaixo da mesa, do baú, do pé da luneta e da esfera.
     ao = Camada()
-    for (cx, cy, rx, ry, a) in ((434, 146, 46, 4, 0.75), (140, 147, 21, 2.5, 0.7), (300, 147, 13, 2.5, 0.8), (214, 147, 10, 2, 0.7),
-                                (70, 147, 10, 2, 0.6), (174, 146, 12, 2, 0.6), (434, 136, 42, 10, 0.35)):
+    for (cx, cy, rx, ry, a) in ((434, 146, 46, 4, 0.75), (434, 117, 44, 3, 0.45), (140, 147, 21, 2.5, 0.7), (300, 147, 13, 2.5, 0.8), (214, 147, 10, 2, 0.7),
+                                (70, 147, 10, 2, 0.6), (174, 146, 12, 2, 0.6), (434, 132, 42, 14, 0.4)):
         ao.elipse(cx, cy, rx, ry, "#000000", a)
     for x in range(W):  # o rodapé escurece a junção parede/chão
         ao.ret(x, PAREDE_CHAO, 1, 3, "#000000", 0.35)
@@ -1305,13 +1346,17 @@ def montar(nome: str) -> Image.Image:
         lx, ly = LAMPARINA
         sm = sombra_projetada(L["sombra_mesa"], (lx, ly), 0.45)
         sm = desfocar(ampliar(sm[:, :, None]), 3)[:, :, 0] * (1 - objeto) * (1 - chao_m)
-        poca = luz_de_chama(lx, ly, 125, 0.7, 3)[:, :, None] * hexa("#ff9a48") * 1.15
-        miolo = luz_pontual(lx, ly, 26, 0.9)[:, :, None] * hexa("#ffd890") * 0.9
+        poca = luz_de_chama(lx, ly + 8, 125, 0.7, 3)[:, :, None] * hexa("#ff9a48") * 0.95
+        miolo = luz_pontual(lx, ly + 6, 24, 0.8)[:, :, None] * hexa("#ffd890") * 0.45
         luz += (poca + miolo) * per["lamp"] * (1 - sm * 0.8)[:, :, None]
     if per["vela"] > 0:
         vx, vy = VELA
         luz += luz_de_chama(vx, vy, 62, 0.85, 5)[:, :, None] * hexa("#ff9a48") * 0.9 * per["vela"]
         luz += luz_de_chama(VELA_ESQ[0], VELA_ESQ[1], 30, 0.9, 7)[:, :, None] * hexa("#ff8a40") * 0.5 * per["vela"]
+    if per["lamp"] > 0:
+        perto = luz_pontual(LAMPARINA[0], LAMPARINA[1] + 6, 7, 1.6)[:, :, None]
+        luz = luz * (1 - 0.6 * perto) + amb * 0.6 * perto
+    luz = np.minimum(luz, 2.4)
     s = solido[:, :, None]
     img = img * (1 - s) + img * s * luz
 

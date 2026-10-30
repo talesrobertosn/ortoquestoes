@@ -369,7 +369,8 @@ def gradiente(paradas) -> np.ndarray:
     return np.repeat(linha[:, None, :], W, 1)
 
 
-def nuvem_cumulo(ceu: np.ndarray, cx: float, base: float, larg: float, alt: float, seed: int, cores, luz) -> None:
+def nuvem_cumulo(ceu: np.ndarray, cx: float, base: float, larg: float, alt: float, seed: int, cores, luz,
+                 de_baixo: bool = False) -> None:
     """Nuvem de algodão: união de bolas com fundo achatado, borda de luz e barriga na sombra (pixel art)."""
     g = np.random.default_rng(seed)
     m = np.zeros((H, W), bool)
@@ -393,11 +394,11 @@ def nuvem_cumulo(ceu: np.ndarray, cx: float, base: float, larg: float, alt: floa
     borda_luz = m & ~viz
     topo = np.where(m.any(0), m.argmax(0), base)
     t = np.clip((YA - (base - alt * 1.3)) / (alt * 1.3), 0, 1)
-    v = 1 - t + (ruido(seed, 4) - 0.5) * 0.35
+    v = (t if de_baixo else 1 - t) + (ruido(seed, 4) - 0.5) * 0.35
     idx = pontilhar(np.clip(v, 0, 1), 3, 0.8)
     cor = np.where((idx == 2)[:, :, None], lit, np.where((idx == 1)[:, :, None], meio, sombra))
     cor = np.where(borda_luz[:, :, None], lit * 1.04, cor)
-    cor = np.where(((YA >= base - 1) & m)[:, :, None], fundo, cor)
+    cor = np.where(((YA >= base - 1) & m)[:, :, None], lit if de_baixo else fundo, cor)
     ceu[m] = cor[m]
 
 
@@ -433,9 +434,9 @@ def pintar_ceu(nome: str) -> np.ndarray:
                         perto = math.exp(-abs(x - sx) / 120)
                         cor = mistura(mistura("#e87878", "#ffd090", t), "#fff0b0", perto * 0.6)
                     ceu[y, x] = ceu[y, x] * (1 - k) + cor * k
-        cores = ("#ffd4a0", "#e89a88", "#9a6088", "#6a4878")
-        for (cx, base, larg, alt, s) in ((110, 44, 64, 10, 21), (300, 30, 44, 8, 22)):
-            nuvem_cumulo(ceu, cx, base, larg, alt, s, cores, (0.9, 0.4))
+        cores = ("#ffc890", "#e08a84", "#8a5684", "#6a4878")
+        for (cx, base, larg, alt, s) in ((110, 44, 64, 10, 21), (296, 28, 44, 8, 22)):
+            nuvem_cumulo(ceu, cx, base, larg, alt, s, cores, (0.9, 0.5), de_baixo=True)
         # o disco do sol
         for y in range(sy - 9, sy + 10):
             for x in range(sx - 9, sx + 10):
@@ -608,6 +609,13 @@ def pintar_vila(nome: str, per: dict) -> tuple[Camada, Camada, list]:
         for x in range(int(cx - larg), int(cx + larg) + 1):
             k = hash01(x, y, 63)
             c.p(x, y, mistura("#c8ae84", "#9a8060", k * 0.6 + abs(x - cx) / larg * 0.4))
+    # o lampião da estradinha, do lado de lá do arco (acende à tarde e à noite)
+    c.ret(441, 80, 1, 12, "#2a2630")
+    c.ret(440, 91, 3, 1, "#2a2630")
+    c.ret(440, 77, 3, 1, "#2a2630")
+    c.ret(440, 78, 3, 2, "#4a4450")
+    jan.ret(440, 78, 3, 2, "#ffd080")
+    jan.p(441, 78, "#ffffff")
     # árvores redondas e ciprestes atrás das casas
     g = np.random.default_rng(64)
     for _ in range(26):
@@ -1237,28 +1245,35 @@ def lanterna(c: Camada, e: Camada, luzes: list, x: int, base: int, alt: int, for
 
 
 def regador(c: Camada, e: Camada, luz, x: int, base: int) -> None:
-    """Regador de cobre: corpo, alça, bico comprido com o crivo e um brilho na quina."""
-    for y in range(base - 8, base):
-        for xx in range(x, x + 9):
-            u = (xx - x) / 8
-            i = 4 if u < 0.2 else 3 if u < 0.55 else 2 if u < 0.85 else 1
-            if y == base - 8:
-                i = 4
-            c.p(xx, y, ("#4a2414", "#6a3420", "#9a5430", "#c87a48", "#f0b080")[i])
-    c.ret(x, base - 5, 9, 1, "#5a2c18")
-    c.ret(x + 1, base, 8, 1, "#2a140c")
-    for k in range(8):  # bico
-        c.p(x - 1 - k, base - 4 - k * 0.7, "#b06a3a")
-        c.p(x - 1 - k, base - 3 - k * 0.7, "#6a3420")
-    c.ret(x - 11, base - 12, 3, 3, "#c87a48")
-    c.p(x - 11, base - 12, "#f0b080")
-    for k in range(7):  # alça
-        ang = math.pi * k / 6
-        c.p(x + 4 + math.cos(ang) * 4, base - 9 - math.sin(ang) * 4, "#7a3a22")
-    e.p(x + 1, base - 7, "#ffe0b0", 0.6)
-    # gotinhas no crivo
-    c.p(x - 12, base - 8, "#bfe0ff")
-    c.p(x - 13, base - 6, "#bfe0ff")
+    """Regador de cobre: corpo bojudo com aros, boca em cima, alça arqueada, bico comprido saindo de baixo e o crivo."""
+    cobre = ("#4a2414", "#6a3420", "#9a5430", "#c87a48", "#f0b080")
+    cx, w2 = x + 5, 5
+    for y in range(base - 9, base):
+        t = (y - base + 9) / 9
+        meia = w2 - 2.2 * max(0.0, 1 - t / 0.36) ** 2 - (0.5 if t > 0.92 else 0)
+        for xx in range(int(cx - meia), int(cx + meia) + 1):
+            u = (xx + 0.5 - cx) / max(meia, 1)
+            k = -u * (1 if luz[0] < 0 else -1) * 0.8 + 0.6 - abs(u) ** 3 * 0.5 + (0.2 if t < 0.3 else 0)
+            c.p(xx, y, cobre[int(np.clip(k * 3.2, 0, 4))])
+    c.ret(cx - w2, base - 4, 2 * w2 + 1, 1, cobre[1])          # aro
+    c.ret(cx - w2 + 1, base - 7, 2 * w2 - 1, 1, cobre[1])
+    c.ret(cx - 3, base - 10, 6, 1, cobre[0])                   # boca
+    c.ret(cx - 3, base - 11, 6, 1, cobre[3])
+    c.ret(cx - w2, base, 2 * w2 + 1, 1, "#20100a")
+    for k in range(10):                                         # bico, de baixo até o crivo
+        bx, by = cx - w2 - k * 0.9, base - 3 - k * 0.85
+        c.p(bx, by, cobre[3])
+        c.p(bx, by + 1, cobre[1])
+    rx, ry = cx - w2 - 10, base - 12                            # o crivo (chuveirinho), virado para a frente
+    c.ret(rx - 1, ry - 1, 2, 4, cobre[3])
+    c.p(rx - 1, ry - 1, cobre[4])
+    c.ret(rx - 2, ry, 1, 2, cobre[1])
+    for k in range(9):                                          # alça arqueada por cima
+        ang = math.pi * k / 8
+        c.p(cx + 1 + math.cos(ang) * 4.5, base - 10 - math.sin(ang) * 4, cobre[1] if k > 4 else cobre[3])
+    e.p(cx - 2, base - 7, "#ffe0b0", 0.6)
+    c.p(rx - 3, ry + 3, "#bfe0ff")                             # gotinhas
+    c.p(rx - 4, ry + 5, "#bfe0ff")
 
 
 def bota_de_gesso(c: Camada, flores: list, luz, x: int, base: int) -> None:
@@ -1294,8 +1309,6 @@ def vaso(c: Camada, flores: list, luz, x: int, base: int, tam: float, seed: int)
     for y in range(base - h, base):
         t = (y - base + h) / h
         meia = w / 2 - t * 1.2
-        for x in range(int(x - meia), int(x + meia) + 1):
-            u = (x - (x - 0)) if False else 0
         for xx in range(int(x - meia), int(x + meia) + 1):
             u = (xx - x) / max(meia, 1)
             i = 0 if u < -0.4 else 1 if u < 0.3 else 2
@@ -1313,7 +1326,6 @@ def pintar_objetos(nome: str, per: dict, flores: list) -> Objetos:
     ob.add(CHAO + 1, faixa_pe_do_muro, flores, luz, 92, 404)
     ob.add(CHAO + 1, faixa_pe_do_muro, flores, luz, 457, 480)
     ob.add(CHAO + 1, lanterna, ob.emissivo, ob.luzes, 400, CHAO + 1, 16, 0.6)
-    ob.add(110, vaso, flores, luz, 392, 110, 0.6, 1601)
     ob.add(116, banco, luz, 150, 116)
     ob.add(121, vaso, flores, luz, 138, 121, 1.0, 1602)
     ob.add(120, touceira, flores, 214, 114, 7, luz, 1501, 7)
@@ -1325,7 +1337,7 @@ def pintar_objetos(nome: str, per: dict, flores: list) -> Objetos:
     ob.add(148, canteiro_pedra, flores, luz, 390, 478, 124, 148)
     ob.add(134, vaso, flores, luz, 186, 134, 1.2, 1603)
     ob.add(149, canteiro_madeira, flores, luz, 196, 304, 136, 149)
-    ob.add(150, regador, ob.emissivo, luz, 318, 150)
+    ob.add(150, regador, ob.emissivo, luz, 314, 150)
     return ob
 
 
@@ -1649,7 +1661,7 @@ def montar(nome: str) -> Image.Image:
         braco = 2 + int(k * 2.5 * min(1.6, kf))
         estrela(est, x, y, cor, k * (0.55 + 0.45 * kf), braco)
     img += est * (0.9 if nome != "manha" else 0.75)
-    img += desfocar(est, 4) * kf * 1.4 + desfocar(est, 12) * kf * 0.9
+    img += desfocar(est, 3) * kf * 1.0 + desfocar(est, 12) * kf * 0.7
 
     # ── vida: borboletas (manhã), pétalas no vento (tarde), vaga-lumes (noite)
     if nome == "manha":

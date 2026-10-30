@@ -41,7 +41,7 @@ CHAO = 112                       # onde a parede encontra o assoalho
 FUGA = (300, 30)                 # ponto de fuga do assoalho
 JAN = (206, 34, 246, 84)         # vidro da janela: x0, y0, x1, y1 (com a verga em arco abatido)
 FOGO = (433, 106)                # coração do fogo da lareira
-LUSTRE = (300, 0)
+LUSTRE = (284, 0)
 
 
 def hexa(c: str) -> np.ndarray:
@@ -156,13 +156,13 @@ VERSO = ("#9a2a2e", "#6e1a1e", "#e0b050")     # verso das cartas: vermelho com f
 
 PERIODOS = {
     "manha": dict(
-        ceu=("#6aa4e0", "#a8cff0", "#f6ead0"), astro=None, amb="#8a9ab8", amb_k=0.62,
+        ceu=("#6aa4e0", "#a8cff0", "#f6ead0"), astro=None, amb="#9aaccc", amb_k=0.72,
         sol="#fff0d0", sol_k=1.35, desce=0.62, lado=1.5, fogo_k=0.55, velas=False, lampiao=False,
         quente="#ffe6c0", fria="#2a3c66", feixe_k=0.9, poeira="#fff4d8", jan_k=1.0),
     "tarde": dict(
         ceu=("#7a5088", "#f0905a", "#ffd890"), astro=(230, 55), amb="#8a6a78", amb_k=0.48,
-        sol="#ffa456", sol_k=1.7, desce=0.95, lado=2.1, fogo_k=0.8, velas=True, lampiao=False,
-        quente="#ffd08a", fria="#3a2450", feixe_k=1.25, poeira="#ffd8a0", jan_k=1.05),
+        sol="#ffa456", sol_k=1.45, desce=0.95, lado=2.1, fogo_k=0.8, velas=True, lampiao=False,
+        quente="#ffd08a", fria="#3a2450", feixe_k=0.85, poeira="#ffd8a0", jan_k=1.05),
     "noite": dict(
         ceu=("#040a1e", "#0e1a3e", "#22306a"), astro=(238, 46), amb="#2a3870", amb_k=0.42,
         sol="#8eaaff", sol_k=0.5, desce=0.62, lado=1.7, fogo_k=1.25, velas=True, lampiao=True,
@@ -260,15 +260,20 @@ def parede(per: dict) -> tuple[Camada, np.ndarray]:
             x += g.random() * 2 - 0.6
             y += 1
     # Teto de tábuas com barrotes vindo em direção à câmera (as pontas aparecem como dentes).
-    c.ret(0, 0, W, 10, "#20140a")
+    for y in range(0, 10):
+        c.ret(0, y, W, 1, mistura("#3a2414", "#2a180c", y / 10))
+    for x in range(0, W, 7):
+        c.ret(x, 0, 1, 10, "#1e1208")
     for x in range(0, W, 2):
-        c.p(x, int(g.random() * 9), "#2c1c0e")
+        c.p(x, int(g.random() * 9), "#4a3020")
     for x in range(-4, W, 26):
-        c.ret(x, 0, 9, 10, VIGA[2])
-        c.ret(x, 0, 1, 10, VIGA[1])
-        c.ret(x + 8, 0, 1, 10, VIGA[4])
-        c.ret(x, 8, 9, 2, VIGA[3])
+        c.ret(x, 0, 9, 10, VIGA[1])
+        c.ret(x, 0, 1, 10, VIGA[0])
+        c.ret(x + 7, 0, 2, 10, VIGA[3])
+        c.ret(x, 8, 9, 2, VIGA[2])
+        c.ret(x, 9, 9, 1, VIGA[3])
         c.p(x + 4, 6, FERRO[1])
+        c.p(x + 3, 3, VIGA[2])
     # Viga-mestra e o frechal no alto da parede.
     viga_horizontal(c, 0, W, 10, 7, g)
     for x in range(0, W):
@@ -637,30 +642,36 @@ def balcao(per: dict) -> tuple[Camada, Camada, np.ndarray]:
 def desenho_osso(c: Camada, x: int, y: int, tipo: int) -> None:
     """Desenhos a tinta dos cartões pregados (tinta sépia sobre papel)."""
     t1, t2 = "#5a3a22", "#8a6a4a"
-    if tipo == 0:    # fêmur
-        c.p(x + 1, y, t1)
-        c.p(x + 2, y, t1)
-        c.p(x + 3, y + 1, t1)
-        c.p(x + 2, y + 1, t2)
-        for j in range(2, 8):
-            c.p(x + 3 if j < 5 else x + 3, y + j, t1)
-        c.p(x + 2, y + 8, t1)
-        c.p(x + 4, y + 8, t1)
-        c.p(x + 3, y + 8, t2)
-    elif tipo == 1:  # mão
-        c.ret(x + 1, y + 5, 4, 3, t2)
-        for i in range(4):
-            c.ret(x + 1 + i, y + 1 + (i % 3 == 0), 1, 4 - (i % 3 == 0), t1)
-        c.p(x, y + 4, t1)
-        c.p(x, y + 5, t1)
-    elif tipo == 2:  # crânio
-        c.ret(x + 1, y + 1, 4, 4, t2)
-        c.ret(x + 2, y, 2, 1, t1)
-        c.p(x + 1, y + 2, t1)
-        c.p(x + 4, y + 2, t1)
-        c.p(x + 2, y + 3, "#2a1a10")
-        c.p(x + 4, y + 3, "#2a1a10")
-        c.ret(x + 2, y + 5, 3, 1, t1)
+    if tipo == 0:    # fêmur: cabeça, colo, trocânter, diáfise e os dois côndilos
+        for (dx, dy) in ((0, 0), (1, 0), (0, 1), (1, 1)):
+            c.p(x + dx, y + dy, t1)
+        c.p(x + 2, y + 2, t1)
+        c.p(x + 4, y + 1, t1)
+        c.p(x + 4, y + 2, t2)
+        for j in range(3, 9):
+            c.p(x + 3, y + j, t1)
+        c.p(x + 2, y + 9, t1)
+        c.p(x + 4, y + 9, t1)
+        c.p(x + 3, y + 9, t2)
+        c.p(x + 2, y + 8, t2)
+        c.p(x + 4, y + 8, t2)
+    elif tipo == 1:  # mão: quatro dedos separados, palma e o polegar
+        for i, comp in enumerate((4, 5, 5, 4)):
+            c.ret(x + i * 2, y + 1 + (5 - comp), 1, comp, t1)
+        c.ret(x, y + 6, 7, 3, t2)
+        c.ret(x, y + 6, 7, 1, t1)
+        c.p(x - 1, y + 5, t1)
+        c.p(x - 1, y + 6, t1)
+    elif tipo == 2:  # crânio: calota, órbitas, nariz e dentes
+        c.ret(x + 1, y, 4, 1, t1)
+        c.ret(x, y + 1, 6, 3, t2)
+        c.p(x, y + 1, t1)
+        c.p(x + 5, y + 1, t1)
+        c.ret(x + 1, y + 2, 2, 2, "#2a1a10")
+        c.ret(x + 4, y + 2, 1, 2, "#2a1a10")
+        c.p(x + 3, y + 4, "#2a1a10")
+        c.ret(x + 1, y + 4, 4, 1, t2)
+        c.ret(x + 1, y + 5, 4, 1, t1)
         c.p(x + 2, y + 6, t2)
         c.p(x + 4, y + 6, t2)
     elif tipo == 3:  # coluna
@@ -677,7 +688,6 @@ def quadro_avisos(per: dict) -> Camada:
     c = Camada(0.03)
     g = np.random.default_rng(23)
     x0, y0, x1, y1 = 300, 24, 362, 74
-    sombra = Camada(0.0)
     c.ret(x0 + 2, y0 + 2, x1 - x0, y1 - y0, "#1a0e06", 0.4)
     c.ret(x0, y0, x1 - x0, y1 - y0, CARVALHO[2])
     c.ret(x0, y0, x1 - x0, 1, CARVALHO[0])
@@ -752,6 +762,7 @@ def lareira(per: dict, nome: str) -> tuple[Camada, np.ndarray, Camada, Camada]:
         while x < X1:
             larg = 7 + int(g.random() * 9)
             k0 = int(g.random() * 3)
+            tinta = mistura("#d8b898", "#98a4b4", g.random()) * 1.1
             for y in range(yy, min(yy + alt, CHAO + 10)):
                 for xx in range(x, min(x + larg, X1)):
                     if xx < X0 - (0 if y < 62 else 2):
@@ -763,8 +774,14 @@ def lareira(per: dict, nome: str) -> tuple[Camada, np.ndarray, Camada, Camada]:
                     else:
                         k = k0 + (1 if y > yy + alt - 3 else 0) + (1 if xx > x + larg - 3 else 0) - (1 if y == yy + 1 else 0)
                         cor = PEDRA[max(0, min(4, k + 1))]
+                    canto = (y in (yy + 1, yy + alt - 2)) and (xx in (x + 1, x + larg - 2))
+                    if canto:
+                        cor = PEDRA[4]
                     fu = max(0.0, 1 - abs(xx - 433) / 34) * max(0.0, 1 - abs(y - 70) / 30)
-                    c.p(xx, y, tom(cor, 1 - fu * 0.45))
+                    cor_f = cor_de(cor) * (tinta if not (borda or fundo_) else 1.0)
+                    if not (borda or fundo_ or canto) and g.random() < 0.08:
+                        cor_f = cor_f * 0.85                     # picado da pedra
+                    c.p(xx, y, np.clip(cor_f * (1 - fu * 0.45), 0, 1))
                     c.z[y, xx] = 0.06
             if g.random() < 0.35:                                     # musgo/liquens e lascas
                 c.p(x + 2 + int(g.random() * (larg - 3)), yy + 1, PEDRA[0])
@@ -935,6 +952,7 @@ def lareira(per: dict, nome: str) -> tuple[Camada, np.ndarray, Camada, Camada]:
         f.p(round(xa), round(ya), "#6a4422")
     # Brasas: rachaduras incandescentes nas toras e no leito de cinzas (emissivo).
     brasa = ruido(38, 2, W, H)
+    e[f.c[:, :, 3] > 0.5] = 0                                   # as toras e os cães de ferro tapam as chamas
     for y in range(108, 123):
         for x in range(408, 460):
             if f.c[y, x, 3] > 0.5 and f.c[y, x, 0] < 0.5 or y >= 120:
@@ -952,12 +970,19 @@ def lareira(per: dict, nome: str) -> tuple[Camada, np.ndarray, Camada, Camada]:
     c.linha(404, 82, 420, 82, FERRO[2])
     c.ret(404, 80, 2, 30, FERRO[2])
     c.ret(418, 82, 1, 6, FERRO[1])
+    ferro_esc = ("#5a5a64", "#3a3a42", "#26262c", "#16161a")
     for y in range(88, 100):
         meia = 7 - abs(y - 93) * 0.45 if y > 90 else 6.5
         for x in range(int(418.5 - meia), int(418.5 + meia) + 1):
-            k = 1 if x < 416 else 2 if x < 421 else 3
-            c.p(x, y, FERRO[k] if y > 89 else FERRO[0])
-    c.ret(410, 89, 17, 1, FERRO[0])
+            k = 1 if x < 415 else 2 if x < 421 else 3
+            if y >= 97:
+                k = min(3, k + 1)
+            c.p(x, y, ferro_esc[k])
+    c.ret(410, 89, 17, 1, ferro_esc[0])
+    c.p(411, 89, "#8a8a94")
+    c.ret(410, 90, 1, 3, ferro_esc[0])                      # brilho do fogo na borda de baixo à direita
+    for (x, y) in ((424, 96), (425, 95), (423, 97)):
+        c.p(x, y, "#7a4a2a")
     c.ret(412, 88, 13, 1, "#5a6a3a")                       # sopa
     c.p(414, 88, "#7a8a4a")
     # Lenha empilhada ao lado da lareira e o atiçador/fole.
@@ -975,10 +1000,15 @@ def lareira(per: dict, nome: str) -> tuple[Camada, np.ndarray, Camada, Camada]:
         xa = int(388 - t * 8)
         for x in range(xa, W):
             junta = (x - xa) % 13 == 0 or y in (118, 123)
-            k = 4 if junta else 2 if (x // 13 + y // 6) % 2 else 1
+            k = 4 if junta else 3 if (x // 13 + y // 6) % 2 else 2
+            if y in (CHAO, 119, 124) and not junta:
+                k -= 1                                              # quina de cima de cada laje
             if y == 127:
                 k = 5
-            c.p(x, y, PEDRA[k])
+            cor = cor_de(PEDRA[k]) * (0.92 + g.random() * 0.12)
+            if not junta and g.random() < 0.05:
+                cor = cor * 0.75                                    # cinza e fuligem
+            c.p(x, y, np.clip(cor, 0, 1))
     return c, e, chama, f
 
 
@@ -986,7 +1016,7 @@ def lareira(per: dict, nome: str) -> tuple[Camada, np.ndarray, Camada, Camada]:
 def lustre(c: Camada, e: np.ndarray, per: dict) -> list[tuple[int, int]]:
     """Lustre de roda de carroça com velas (acesas na tarde e à noite), pendurado na viga por correntes."""
     c.z_atual = 0.45
-    cx, cy = 300, 24
+    cx, cy = LUSTRE[0], 24
     for (ax, ay) in ((cx - 16, cy), (cx + 16, cy), (cx, cy - 2)):
         for j in range(16, cy + 1):
             t = (j - 16) / max(cy - 16, 1)
@@ -1553,7 +1583,7 @@ def montar(nome: str) -> Image.Image:
     alb3 = ampliar(alb)
     z3 = desfocar(ampliar(z[:, :, None]), 1.0)[:, :, 0]
     chao3 = ampliar(eh_chao[:, :, None])[:, :, 0]
-    emis3 = ampliar(emis1 + emis_jan * 0)
+    emis3 = ampliar(emis1)
     jan3 = ampliar(emis_jan)
     vidro3 = ampliar(vidro[:, :, None])[:, :, 0]
     s_sol3 = desfocar(ampliar(s_sol[:, :, None]), 1.2)[:, :, 0]
