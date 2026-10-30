@@ -389,9 +389,11 @@ def chama(c: Camada, x: int, y: int, tam: int = 1) -> None:
 
 
 def vela(c: Camada, fogo: Camada, x: int, ybase: int, alt: int, acesa: bool, luzes: list, k: float = 1.0,
-         raio: float = 26, cor_cera: str = "#efe4cc") -> None:
+         raio: float = 26, cor_cera: str = "#efe4cc", grossa: bool = False) -> None:
     """Vela de cera com escorrido; acesa, ganha a chama (camada de fogo) e entra na lista de luzes."""
     c.ret(x, ybase - alt, 1, alt, cor_cera)
+    if grossa:
+        c.ret(x + 1, ybase - alt + 1, 1, alt - 1, "#cfc2a6")
     c.p(x, ybase - alt, "#fffaf0")
     if alt > 3:
         c.p(x + 1, ybase - alt + 1, "#d8ccb0")
@@ -651,7 +653,8 @@ def acabamento(img: np.ndarray, per: dict, esquerda: float, seed: int, vinheta_y
 def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada, sombras: Camada,
            vidro: np.ndarray, vidro_cor: np.ndarray, luzes: list, chao_y: int, ocluir: Camada,
            extra_luz=None, desf_fundo: float = 0.8, desf_frente: float = 3.0, feixe_colorido: bool = False,
-           comp_feixe: float = 110) -> np.ndarray:
+           comp_feixe: float = 110, desf_patch: float = 1.6, patch_meio: np.ndarray | None = None,
+           k_feixe: float = 1.0) -> np.ndarray:
     """Montagem comum em 3x: albedo das camadas x luz (ambiente + janelas + luzes pontuais), mancha das janelas no
     chão com as sombras dos objetos, vidro e fogo emissivos, feixes com poeira. Devolve a imagem em float."""
     a_proj, b_proj = per["proj"]
@@ -683,8 +686,9 @@ def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada,
         sh = np.roll(np.roll(occ, sy, 0), sx, 1)
         somb = np.maximum(somb, sh * (1 - i / 30))
     patch_chao = patch * (1 - np.clip(somb, 0, 1)[:, :, None] * 0.85)
-    patch = np.where(meio.c[:, :, 3:4] > 0.5, patch * 0.9, patch_chao)
-    patch_a = desfocar(ampliar(patch), 1.6)
+    pm = meio.c[:, :, 3:4] > 0.5 if patch_meio is None else patch_meio[:, :, None] > 0.5
+    patch = np.where(pm, patch * 0.9, np.where(meio.c[:, :, 3:4] > 0.5, patch * 0.15, patch_chao))
+    patch_a = desfocar(ampliar(patch), desf_patch)
     luz += patch_a * hexa(per["sol"]) * per["sol_k"] * 1.4
     for (lx, ly, r, cor, k) in luzes:
         luz += luz_faixas(lx, ly, r, 0.85)[:, :, None] * hexa(cor) * k * 1.6
@@ -714,7 +718,7 @@ def compor(per: dict, fundo: Camada, meio: Camada, frente: Camada, fogo: Camada,
         # o vitral tinge os feixes: cada canal arrastado separadamente, normalizado pela máscara
         vc_n = vidro_cor / max(1e-3, float(vidro_cor.max()))
         vol_rgb = np.stack([feixes(vc_n[:, :, k], direcao, comp_feixe, chao_y) for k in range(3)], axis=2)
-        img += (vol_rgb * 0.75 + vol[:, :, None] * 0.25) * hexa(per["feixe"]) * per["feixe_k"] * 3.2
+        img += (vol_rgb * 0.8 + vol[:, :, None] * 0.2) * hexa(per["feixe"]) * per["feixe_k"] * 2.6 * k_feixe
     else:
         img += vol[:, :, None] * hexa(per["feixe"]) * per["feixe_k"] * 2.4
     poeira(int(chao_y * 7 + a_proj * 100), 900, (0, 0, W, chao_y + 30), per["feixe"], img, vol * 3.2, 0.7)
@@ -1566,7 +1570,7 @@ C_CHAO = 98
 C_VITRAL = (252, 12, 48, 70)      # x, y, largura, altura
 C_MESA = (250, 120, 64, 11)       # centro, meias-larguras da elipse do tampo
 C_COFRE = (398, 84, 48, 40)       # x, y do topo da frente, largura, altura
-PEDRA_C = ("#16141c", "#2e2a36", "#3a3644", "#464252", "#5a5668", "#787488")
+PEDRA_C = ("#1a1820", "#363240", "#433e4e", "#504a5c", "#666074", "#868096")
 
 
 def c_tampo_y(x: float) -> tuple[float, float] | None:
@@ -1584,7 +1588,7 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
     A cor que passa depende da hora (sol branco, poente laranja, luar azul e fraco)."""
     x0, y0, w, h = C_VITRAL
     cx, r = x0 + w / 2, w / 2
-    tinta = {"manha": (hexa("#fff6e8"), 1.25), "tarde": (hexa("#ffb878"), 1.15), "noite": (hexa("#7a9ae8"), 0.42)}[nome]
+    tinta = {"manha": (hexa("#fff6e8"), 1.0), "tarde": (hexa("#ffb878"), 0.95), "noite": (hexa("#7a9ae8"), 0.4)}[nome]
     pedra_t = ("#141218", "#2e2a36", "#4a4656", "#6a6678", "#8a86a0")
 
     def dentro(x, y, folga=0.0):
@@ -1670,7 +1674,7 @@ def c_vitral(c: Camada, vidro: np.ndarray, vidro_cor: np.ndarray, nome: str) -> 
             c.c[y, x, :3] = emis
             c.c[y, x, 3] = 1
             vidro[y, x] = 1.0
-            vidro_cor[y, x] = base * luz_t * (k / 1.25)
+            vidro_cor[y, x] = base * luz_t * k
     # peitoril
     c.ret(int(cx - r - 5), y0 + h, int(w + 11), 2, pedra_t[4])
     c.ret(int(cx - r - 5), y0 + h + 2, int(w + 11), 1, pedra_t[0])
@@ -1693,16 +1697,20 @@ def c_prateleira_rolos(c: Camada, x0: int, y0: int, x1: int, y1: int, seed: int)
             c.ret(cx, cy, 1, ch, CARVALHO[3])
             tipo = g.random()
             if tipo < 0.72:
-                # pontas de rolos empilhados
-                n = 3 + int(g.random() * 3)
-                for i in range(n):
-                    rx = cx + 3 + (i % 3) * 3 + (i // 3) * 1.5
-                    ry = cy + ch - 2.5 - (i // 3) * 3
+                # pontas de rolos empilhados (dois embaixo, um em cima), cada um com o miolo enrolado
+                pos = [(cx + 4, cy + ch - 3), (cx + 8, cy + ch - 3), (cx + 6, cy + ch - 6)]
+                if g.random() < 0.4:
+                    pos = pos[:2]
+                for (rx, ry) in pos:
                     tom = PERGAMINHO[3] if g.random() < 0.6 else PERGAMINHO[4]
-                    c.disco(rx, ry, 1.6, (tom, PERGAMINHO[2], PERGAMINHO[1]))
-                    c.p(int(rx), int(ry), PERGAMINHO[1])
-                    if g.random() < 0.25:
-                        c.p(int(rx) + 1, int(ry), ("#c8302a", "#2c5aa8", "#2c8a4a")[int(g.random() * 3)])
+                    c.bitmap(rx - 2, ry - 1, [".##.", "####", "####", ".##."], {"#": tom})
+                    c.p(rx - 1, ry - 1, PERGAMINHO[5])
+                    c.p(rx + 1, ry + 2, PERGAMINHO[2])
+                    c.p(rx + 1, ry + 1, PERGAMINHO[2])
+                    c.p(rx, ry + 1, PERGAMINHO[2])
+                    c.p(rx - 1 + (g.random() < 0.5), ry, PERGAMINHO[1])
+                    if g.random() < 0.3:
+                        c.p(rx - 2, ry, ("#c8302a", "#2c5aa8", "#2c8a4a")[int(g.random() * 3)])
                 if g.random() < 0.3:
                     # fita pendurada para fora
                     fx = cx + 4 + int(g.random() * 5)
@@ -1976,16 +1984,14 @@ def c_mapa(c: Camada, g: np.random.Generator) -> list:
         for x in range(int(round(xa)), int(round(xb))):
             u = (x - xa) / (xb - xa)
             vv = (y - far) / (near - far)
-            n = terra[int(vv * 60) + 40, int(u * 150) + 160]
-            cor = PERGAMINHO[4] if n > 0.48 else "#b8c4a8"
-            if 0.46 < n < 0.5:
+            n = terra[40 + int(vv * 26), 150 + int(u * 110)]
+            cor = PERGAMINHO[4] if n > 0.5 else "#9ab4b4" if n < 0.44 else "#b4c8c0"
+            if 0.48 < n < 0.52:
                 cor = "#6a5038"
-            if n > 0.66 and (x + y * 2) % 4 == 0:
-                cor = "#7a6a52"
-            if 0.56 < n < 0.6 and (x * 3 + y) % 5 == 0:
-                cor = "#4a7a3a"
-            if NV_GRAO[y, x] > 0.93:
-                cor = misturar(cor, PERGAMINHO[1], 0.3)
+            if 0.6 < n < 0.7 and (x + y) % 2 == 0:
+                cor = "#6a9a4a"
+            if n >= 0.7:
+                cor = PERGAMINHO[3]
             # borda do papel e cantos enrolados
             if x == int(round(xa)) or x == int(round(xb)) - 1 or y in (far, near - 1):
                 cor = PERGAMINHO[2]
@@ -2111,14 +2117,16 @@ def c_mesa(per: dict, fogo: Camada, luzes: list) -> tuple[Camada, Camada, list]:
     c.ret(240, 124, 2, 3, MADEIRA[3])
     c.disco(241, 127.2, 1.4, (METAIS["ouro"][5], METAIS["ouro"][3], METAIS["ouro"][1]))
     # castiçais altos de prata e as velas
-    for (xv, yb, alt) in ((227, 113, 7), (291, 116, 6)):
-        m = METAIS["prata"]
-        c.ret(xv - 2, yb - 1, 5, 1, m[3])
-        c.ret(xv - 2, yb - 1, 2, 1, m[5])
-        c.ret(xv, yb - 9, 1, 8, m[4])
-        c.p(xv, yb - 6, m[6])
-        c.ret(xv - 1, yb - 10, 3, 1, m[5])
-        vela(c, fogo, xv, yb - 10, alt, per["velas"] >= 1, luzes, 1.0, 34)
+    for (xv, yb, alt) in ((227, 113, 6), (293, 117, 5)):
+        m = METAIS["ouro"]
+        c.ret(xv - 3, yb - 1, 7, 1, m[2])
+        c.ret(xv - 2, yb - 2, 5, 1, m[4])
+        c.ret(xv, yb - 6, 2, 4, m[3])
+        c.p(xv, yb - 6, m[5])
+        c.p(xv, yb - 4, m[6])
+        c.ret(xv - 2, yb - 7, 6, 1, m[4])
+        c.ret(xv - 1, yb - 6, 4, 1, m[1])
+        vela(c, fogo, xv, yb - 7, alt, per["velas"] >= 1, luzes, 1.0, 36, grossa=True)
     # pilhas de moedas e uma bolsa
     for (mx, my, n) in ((300, 125, 5), (305, 123, 3), (296, 127, 2)):
         for k in range(n):
@@ -2127,8 +2135,6 @@ def c_mesa(per: dict, fogo: Camada, luzes: list) -> tuple[Camada, Camada, list]:
         brilhos.append((mx - 1, my - n))
     c.disco(306, 128, 2.6, ("#a87a4a", "#7a4a24", "#4a2a12"), achatar=0.7)
     c.ret(305, 125, 3, 1, "#c8a040")
-    # cadeira da esquerda, de lado, na frente da mesa
-    c_cadeira(c, 168, 12, 92, 126, 142, lado=True)
     ocl2 = Camada()
     ocl2.c[:] = c.c
     return c, ocl2, brilhos
@@ -2287,7 +2293,6 @@ def c_sombras() -> Camada:
                 c.p(x, y, "#000000", 0.55 * (1 - d) ** 0.6)
     x0, y0, w, h = C_COFRE
     c.ret(x0 - 2, y0 + h - 1, w + 12, 4, "#000000", 0.5)
-    c.elipse(176, 142, 12, 2, "#000000", 0.45)
     return c
 
 
@@ -2304,8 +2309,12 @@ def montar_conselho(nome: str) -> Image.Image:
     c_lustre(meio, fogo, C_MESA[0], 24, 34, per["velas"] >= 2, luzes)
     # o negatoscópio: luz fria e fraca (mais visível à noite)
     luzes.append((348, 41, 30, "#9ac0ff", {"manha": 0.1, "tarde": 0.12, "noite": 0.35}[nome]))
+    tampo = np.zeros((H, W), dtype=np.float32)
+    cx, cy, rx, ry = C_MESA
+    yy, xx = np.mgrid[0:H, 0:W]
+    tampo[((xx + 0.5 - cx) / rx) ** 2 + ((yy + 0.5 - cy) / ry) ** 2 <= 1] = 1
     img = compor(per, fundo, meio, c_frente(), fogo, c_sombras(), vidro, vidro_cor, luzes, C_CHAO, ocl,
-                 feixe_colorido=True, comp_feixe=90)
+                 feixe_colorido=True, comp_feixe=90, desf_patch=4.5, patch_meio=tampo, k_feixe=0.6)
     # brilho do negatoscópio (emissivo) e cintilância do metal
     rad = np.zeros((H, W), dtype=np.float32)
     rad[24:58, 334:362] = {"manha": 0.25, "tarde": 0.3, "noite": 0.7}[nome]

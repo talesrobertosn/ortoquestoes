@@ -1190,6 +1190,265 @@ def montar_arena() -> Image.Image:
     return acabamento(img, "#ffd49a", "#3a2a5e", esquerda=0.4, seed=91)
 
 
+# ── A arena nas três horas do dia (páginas internas: Ranking e Simulado Nacional). O pódio vem para x 262 e o chão de
+# x 330-380 fica livre para o mascote. A luz é repintada por hora: o céu, o sol (ou a lua), o lado da sombra, o facho, os
+# raios pelos arcos, as tochas e os braseiros (apagados de manhã), o velário contra a luz e o acabamento.
+def ceu_arena_hora() -> np.ndarray:
+    ceu = np.zeros((H, W, 3), dtype=np.float32)
+    xs_ = np.arange(W, dtype=np.float32)
+    if PERIODO == "manha":
+        topo, meio, horiz = hexa("#2e64be"), hexa("#78acea"), hexa("#f2ead6")
+        sol, cor_sol = (26, 2), "#fff2cc"
+    elif PERIODO == "tarde":
+        topo, meio, horiz = hexa("#4c4a92"), hexa("#e8866e"), hexa("#ffcf8a")
+        sol, cor_sol = (466, 8), "#ffd890"
+    else:
+        topo, meio, horiz = hexa("#03061a"), hexa("#101a44"), hexa("#2a3a72")
+        sol, cor_sol = None, None
+    for y in range(H):
+        t = min(1, y / 64)
+        ceu[y] = topo * (1 - t) ** 2 + meio * 2 * t * (1 - t) + horiz * t * t
+    g = np.random.default_rng(601)
+    if PERIODO == "noite":
+        for _ in range(260):
+            x, y = int(g.random() * W), int(g.random() ** 1.5 * 70)
+            b = (0.25 + g.random() * 0.75) * (1 - y / 80)
+            ceu[y, x] = np.minimum(1, ceu[y, x] + b * hexa("#e8ecff"))
+            if b > 0.8 and 0 < x < W - 1 and y > 0:
+                for (dx, dy) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    ceu[y + dy, x + dx] = np.minimum(1, ceu[y + dy, x + dx] + b * 0.3)
+        mx, my, r = 312, 12, 5.5  # lua cheia, alta, à direita do centro
+        for y in range(H):
+            for x in range(W):
+                d = math.hypot(x - mx, y - my)
+                ceu[y, x] += hexa("#9aaaf0") * (math.exp(-(d / 18) ** 2) * 0.35 + math.exp(-(d / 60) ** 2) * 0.1)
+                if d <= r:
+                    cor = misturar("#fffaf0", "#d0d4e4", d / r * 0.7)
+                    if (((x * 73856093) ^ (y * 19349663)) % 97) / 97 > 0.7 and d < r - 1:
+                        cor = cor * 0.86
+                    ceu[y, x] = cor
+    # nuvens: cúmulos brancos de manhã, cirros acesos por baixo à tarde, véus finos de luar à noite
+    n = ruido_ret(7, 40, 3) * 0.7 + ruido_ret(8, 12, 2) * 0.3
+    if PERIODO == "manha":
+        n = ruido_ret(609, 28, 7) * 0.65 + ruido_ret(610, 9, 4) * 0.35
+    for y in range(0, 40):
+        for x in range(W):
+            v = n[y, x] - (0.55 if PERIODO == "manha" else 0.52) - abs(y - 14) / 60
+            if v > 0:
+                k = min(1, v * 6) * (0.9 if PERIODO != "noite" else 0.55)
+                if PERIODO == "manha":
+                    acesa = n[max(0, y - 1), min(W - 1, x + 1)] < n[y, x] or n[y, max(0, x - 2)] < n[y, x] - 0.02
+                    cor = hexa("#ffffff") if acesa else hexa("#b4c4de")
+                elif PERIODO == "tarde":
+                    acesa = n[min(H - 1, y + 1), x] < n[y, x]
+                    cor = (hexa("#ffe2a8") if acesa else hexa("#c87a8a")) * (0.85 + 0.3 * min(1, x / W + 0.2))
+                else:
+                    acesa = n[max(0, y - 1), x] < n[y, x]
+                    cor = hexa("#8a9ad0") if acesa else hexa("#1e2850")
+                ceu[y, x] = ceu[y, x] * (1 - k) + cor * k
+    if PERIODO != "noite":
+        for (bx, by, abre) in ((300, 8, 1), (312, 5, 0), (322, 10, 1), (286, 13, 0), (420, 22, 1), (430, 18, 0)):
+            for (dx, dy) in ((-2, -abre), (-1, 0), (0, 1 - abre), (1, 0), (2, -abre)):
+                ceu[by + dy, bx + dx] = hexa("#3a2a3a" if PERIODO == "tarde" else "#3a4058")
+            ceu[by + 1, bx] = hexa("#ffd8a0" if PERIODO == "tarde" else "#f4f4ff")
+    if sol:
+        sx, sy = sol
+        alcance = 80 if PERIODO == "tarde" else 110
+        for y in range(H):
+            for x in range(W):
+                d = math.hypot(x - sx, (y - sy) * 1.1)
+                if d < alcance:
+                    ceu[y, x] = np.minimum(1.6, ceu[y, x] + hexa(cor_sol) * max(0, 1 - d / alcance) ** 2 *
+                                           (1.0 if PERIODO == "tarde" else 0.75))
+                if d < 9:
+                    ceu[y, x] = hexa("#fffbe8") * 1.6
+    return ceu
+
+
+def braseiros() -> tuple[Camada, Camada, list]:
+    """Dois braseiros de bronze em tripé ao lado do pódio. Acesos à tarde (chama baixa) e à noite (fogo alto, brasas
+    voando); de manhã frios, com cinza e um fio de fumaça."""
+    c, fogo = Camada(), Camada()
+    luzes = []
+    bronze = METAIS["bronze"]
+    for (x, yb) in ((186, 150), (446, 134)):
+        esc_ = 1.0 if yb > 140 else 0.82
+        alt = int(22 * esc_)
+        topo = yb - alt
+        for (dx0, dx1) in ((-5, -1), (5, 1), (0, 0)):  # pernas do tripé
+            c.linha(x + dx0 * esc_, yb, x + dx1 * esc_, topo + 4, bronze[1] if dx0 >= 0 else bronze[3])
+        c.ret(x - 1, topo + 3, 3, 2, bronze[2])
+        rx = 7 * esc_
+        for y in range(topo - 4, topo + 3):
+            for xx in range(int(x - rx) - 1, int(x + rx) + 2):
+                u = (xx - x) / rx
+                prof = (y - (topo - 4)) / 6
+                if abs(u) <= 1 - prof * prof * 0.45:
+                    c.p(xx, y, bronze[5] if u < -0.55 else bronze[4] if u < -0.1 else bronze[3] if u < 0.5 else bronze[2])
+        c.ret(x - rx, topo - 4, rx * 2 + 1, 1, bronze[6] if PERIODO != "noite" else bronze[4])
+        c.p(x - rx - 1, topo - 4, bronze[1])
+        c.p(x + rx + 1, topo - 4, bronze[1])
+        if PERIODO == "manha":
+            for i in range(int(rx * 2) - 1):
+                c.p(x - rx + 1 + i, topo - 5, "#5a5250" if i % 2 else "#8a8280")
+            for j in range(16):
+                fogo.p(x + math.sin(j * 0.6) * 1.6, topo - 7 - j * 1.6, "#d8dce8", max(0.0, 0.28 - j * 0.016))
+            continue
+        alto = 11 if PERIODO == "noite" else 6
+        for j in range(alto):
+            meia = (alto - j) / alto * rx * 0.85
+            for dx in range(int(-meia), int(meia) + 1):
+                q = abs(dx) / max(meia, 0.5)
+                cor = "#fff6c8" if q < 0.35 and j < alto * 0.5 else "#ffc040" if q < 0.7 and j < alto * 0.8 else "#ff7020"
+                fogo.p(x + dx + math.sin(j * 0.9) * 0.6, topo - 5 - j, cor)
+        if PERIODO == "noite":
+            g = np.random.default_rng(int(x))
+            for _ in range(9):
+                fogo.p(x + g.normal(0, 4), topo - 14 - g.random() * 22, "#ffb050", 0.5 + g.random() * 0.5)
+        forca = 0.9 if PERIODO == "noite" else 0.4
+        luzes.append((x, topo - 8, 42 * esc_, 0.75, "#ff9a40", forca))
+    return c, fogo, luzes
+
+
+def sombra_podio(comp: float, cis: float) -> np.ndarray:
+    """Sombra projetada do pódio na areia (em 3x): a silhueta espelhada para baixo, achatada e inclinada."""
+    pod, _ = podio()
+    a = pod.c[:, :, 3]
+    px, py = PODIO
+    out = np.zeros((H, W), dtype=np.float32)
+    ys, xs = np.nonzero(a > 0.5)
+    for y, x in zip(ys, xs):
+        alt = py - y
+        if alt < 0:
+            continue
+        yy, xx = int(round(py + alt * comp)), int(round(x + alt * cis))
+        if 0 <= yy < H and 0 <= xx < W:
+            out[yy, xx] = 1
+    out = desfocar(out[:, :, None], 1.0)[:, :, 0]
+    out = np.clip(out * 3, 0, 1) * (np.arange(H)[:, None] > py - 2)
+    return desfocar(ampliar(out[:, :, None]), 3)[:, :, 0]
+
+
+def montar_arena_hora() -> Image.Image:
+    P = PERIODO
+    ceu = ampliar(ceu_arena_hora())
+    parede, tochas, abertos = parede_arena()
+    parede_a = desfocar_rgba(ampliar(parede.c), 1.3)
+    bandeiras = desfocar_rgba(ampliar(estandartes_arena().c), 1.0)
+    chao = desfocar_rgba(ampliar(chao_arena().c), 0.4)
+    bras, fogo_b, luzes_b = braseiros()
+    bras_a = desfocar_rgba(ampliar(bras.c), 0.3)
+    pod, brilhos = podio()
+    pod_a = ampliar(pod.c)
+    frente = desfocar_rgba(ampliar(frente_arena().c), 10)
+
+    img = ceu.copy()
+    solido = np.zeros(img.shape[:2], dtype=np.float32)
+    for cam in (parede_a, bandeiras, chao, bras_a):
+        img = sobre(img, cam)
+        solido = np.maximum(solido, cam[:, :, 3])
+    img = sobre(img, pod_a)
+    solido = np.maximum(solido, pod_a[:, :, 3])
+
+    xs, ys = GRADE_X / ESC, GRADE_Y / ESC
+    px, py = PODIO
+    sol = {"manha": (26, 2), "tarde": AR_SOL, "noite": (312, 12)}[P]
+    # Lado da sombra: de manhã o sol nasce atrás da arquibancada da esquerda e a sombra dela cobre a areia da esquerda
+    # (o lado do texto); à tarde, como na página inicial; à noite não há sol: o luar banha tudo de leve.
+    if P == "manha":
+        borda_sombra = 112 + 0.55 * ys + 5 * np.sin(ys * 0.17)
+    else:
+        borda_sombra = 168 + 0.62 * ys + 5 * np.sin(ys * 0.17) - (40 if P == "tarde" else 0)
+    m = suave(borda_sombra - 12, borda_sombra + 12, xs)
+    piso = ys > 108
+    faixas = suave(0.55, 0.95, np.sin((xs - ys * 0.62) * math.tau / 26)) * suave(borda_sombra - 60, borda_sombra - 20, xs) * piso
+    faixas = desfocar(faixas[:, :, None], 6)[:, :, 0]
+    m = np.clip(m + faixas * (1 - m) * 0.3, 0, 1)
+    # sombra projetada do pódio: de manhã curta para a direita, à tarde comprida para a esquerda, à noite curtinha
+    comp, cis = {"manha": (0.32, 1.1), "tarde": (0.42, -2.2), "noite": (0.16, -0.5)}[P]
+    sp = sombra_podio(comp, cis) * (1 - pod_a[:, :, 3])
+    m = m * (1 - sp * {"manha": 0.75, "tarde": 0.8, "noite": 0.6}[P])
+    amb_sombra = hexa({"manha": "#7a8ac0", "tarde": "#6c66a6", "noite": "#2a3266"}[P]) * 0.85
+    amb_sol = hexa({"manha": "#fff4e2", "tarde": "#ffd0a0", "noite": "#7a8ac8"}[P]) * {"manha": 1.05, "tarde": 1.0, "noite": 0.62}[P]
+    if P == "noite":
+        m = m * 0.55 + 0.25 * suave(150, 330, xs)
+    luz = amb_sombra * (1 - m[:, :, None]) + amb_sol * m[:, :, None]
+    topo_facho = {"manha": (190, -6), "tarde": (392, -6), "noite": (306, -6)}[P]
+    cor_f = {"manha": "#fff2d0", "tarde": "#ffd8a0", "noite": "#a8b8ff"}[P]
+    f_luz = facho(topo_facho[0], topo_facho[1], px + 2, py - 30, 10, 40)
+    luz = luz + f_luz[:, :, None] * hexa(cor_f) * 0.16
+    luz = luz + luz_pontual(px, py - 2, 64, 0.22)[:, :, None] * hexa(cor_f) * {"manha": 0.2, "tarde": 0.22, "noite": 0.16}[P]
+    k_tocha = {"manha": 0.0, "tarde": 0.35, "noite": 1.0}[P]
+    for (tx, ty) in tochas:
+        k = (0.6 if tx > 200 else 0.4) * k_tocha
+        if k > 0:
+            luz = luz + luz_pontual(tx, ty + 2, 20 if P == "tarde" else 26, 0.8)[:, :, None] * hexa("#ff9a40") * k
+    for (bx_, by_, r_, ach, cor, k) in luzes_b:
+        luz = luz + luz_pontual(bx_, by_, r_, ach)[:, :, None] * hexa(cor) * k
+    sol_ = solido[:, :, None]
+    img = img * (1 - sol_) + img * sol_ * luz
+
+    # Feixes pelos arcos abertos do ático.
+    lado = (GRADE_X > 200 * ESC) if P != "manha" else (GRADE_X > 150 * ESC)
+    vis = ampliar(abertos[:, :, None])[:, :, 0] * lado
+    raios = raios_de_luz(vis, sol, passos=80, alcance=0.95)
+    raios = desfocar(raios[:, :, None], 6)[:, :, 0]
+    img += raios[:, :, None] * hexa({"manha": "#fff0d0", "tarde": "#ffd090", "noite": "#8a9ae0"}[P]) * \
+        {"manha": 0.9, "tarde": 1.3, "noite": 0.5}[P]
+
+    # O facho descendo sobre o pódio, com poeira (sol de manhã e de tarde, luar à noite).
+    poe = ampliar(ruido(81, 4)[:, :, None])[:, :, 0]
+    tx0 = topo_facho[0]
+    f = facho(tx0, -6, px + 2, py - 34, 9, 28, dureza=2.2) * np.clip(1.1 - ys / 170, 0, 1)
+    f2 = facho(tx0 + 16, -6, px + 16, py - 22, 2.5, 8, dureza=1.6) * 0.8
+    f3 = facho(tx0 - 16, -6, px - 14, py - 30, 2, 6, dureza=1.6) * 0.55
+    fachos = desfocar(((f + f2 + f3) * (0.55 + 0.75 * poe))[:, :, None], 3)[:, :, 0]
+    fachos *= np.clip((py - 36 - ys) / 26, 0, 1) * 0.85 + 0.15 * np.clip((py - ys) / 30, 0, 1)
+    fachos *= 1 - 0.65 * pod_a[:, :, 3]
+    k_f = {"manha": 0.42, "tarde": 0.5, "noite": 0.3}[P]
+    img += fachos[:, :, None] * hexa(cor_f) * k_f
+    poeira(82, 1100, (px - 120, 0, px + 120, 150), "#fff0c0" if P != "noite" else "#c8d4ff", img, fachos * 2.4, 1.0)
+    g = np.random.default_rng(84)
+    for _ in range(70):
+        x, y = px - 30 + g.random() * 70, 20 + g.random() * 100
+        X, Y = int(x * ESC), int(y * ESC)
+        k = fachos[Y, X] * 2 + 0.25
+        cor = hexa(["#ff5a6a", "#ff8a9a", "#e8304a", "#fff0e8"][int(g.random() * 4)])
+        img[Y:Y + 3, X:X + 3] = img[Y:Y + 3, X:X + 3] * 0.3 + cor * min(1.3, k + 0.5) * 0.7 * (0.6 if P == "noite" else 1)
+    if P != "noite":
+        poeira(83, 500, (200, 10, 480, 150), "#ffd8a0" if P == "tarde" else "#fff8e8", img,
+               desfocar(m[:, :, None], 1)[:, :, 0] * 0.3, 0.8)
+    else:  # brasas subindo dos braseiros e das tochas
+        poeira(85, 400, (150, 40, 480, 150), "#ffb050", img,
+               sum(luz_pontual(bx_, by_ - 10, 30, 1.6) for (bx_, by_, *_r) in luzes_b) * 0.8, 1.0)
+
+    # Faíscas do metal nas taças.
+    k_b = {"manha": 1.0, "tarde": 1.2, "noite": 0.8}[P]
+    for (bx, by) in brilhos:
+        X, Y = int(bx * ESC + 1), int(by * ESC + 1)
+        for d in range(-8, 9):
+            k = (1 - abs(d) / 9) ** 2 * k_b
+            if 0 <= Y + d < H * ESC and 0 <= X + d < W * ESC:
+                img[Y + d, X] += k
+                img[Y, X + d] += k
+
+    # O fogo dos braseiros por cima, com brilho próprio.
+    fogo_a = ampliar(fogo_b.c)
+    img = sobre(img, fogo_a)
+    if P != "manha":
+        pm = fogo_a[:, :, :3] * fogo_a[:, :, 3:4]
+        img += desfocar(pm, 8) * 0.8 + desfocar(pm, 24) * 0.6
+    img = sobre(img, frente * np.array([0.5, 0.45, 0.48, 1], dtype=np.float32) *
+                np.array({"manha": [1.1, 1.1, 1.15, 1], "tarde": [1, 1, 1, 1], "noite": [0.45, 0.5, 0.75, 1]}[P], dtype=np.float32))
+    vel = desfocar_rgba(ampliar(velario().c), 5)
+    img = sobre(img, vel * np.array({"manha": [0.92, 0.86, 0.8, 1], "tarde": [1.05, 0.8, 0.62, 1],
+                                     "noite": [0.28, 0.28, 0.4, 1]}[P], dtype=np.float32))
+    quente, fria = {"manha": ("#fff2d8", "#2a3a6e"), "tarde": ("#ffd49a", "#3a2a5e"), "noite": ("#ffd8a0", "#141c48")}[P]
+    return acabamento(img, quente, fria, esquerda=0.4, seed=91, bloom_lim=0.92 if P == "manha" else 0.88,
+                      bloom_k=0.25 if P == "manha" else 0.4)
+
+
+
 # ═════════════════════════════════════ 2. SALÃO DOS TROFÉUS ═════════════════════════════════════
 SA_CHAO = 108                 # linha onde a parede do fundo encontra o chão
 SA_FUGA = (340, 66)           # ponto de fuga
@@ -1721,11 +1980,37 @@ def montar_trofeus() -> Image.Image:
 
 # ─────────────────────────────── Saída ───────────────────────────────
 CENAS = {"arena": ("secao-arena", montar_arena), "trofeus": ("secao-trofeus", montar_trofeus)}
+CENAS_PAGINAS = {"arena": montar_arena_hora}
+
+
+def salvar_pagina(img: Image.Image, nome: str) -> None:
+    PASTA_PAGINAS.mkdir(parents=True, exist_ok=True)
+    destino = PASTA_PAGINAS / f"{nome}.webp"
+    img.save(destino, quality=84, method=6)
+    img.resize((960, 320), Image.LANCZOS).save(PASTA_PAGINAS / f"{nome}-960.webp", quality=84, method=6)
+    print(nome, destino.stat().st_size // 1024, "KB,", (PASTA_PAGINAS / f"{nome}-960.webp").stat().st_size // 1024, "KB (960)")
 
 
 def main() -> None:
+    """Sem argumentos: as seções da página inicial (public/pixel/inicio/secao-*), como sempre.
+    Com --paginas: as versões das páginas internas em public/pixel/paginas/<cena>-<manha|tarde|noite>(-960).webp;
+    dá para pedir só algumas cenas e/ou horas (ex.: --paginas arena noite)."""
+    global PERIODO, PODIO
+    args = sys.argv[1:]
+    if "--paginas" in args:
+        resto = [a for a in args if a != "--paginas"]
+        cenas = [a for a in resto if a in CENAS_PAGINAS] or list(CENAS_PAGINAS)
+        horas = [a for a in resto if a in PERIODOS] or list(PERIODOS)
+        podio_orig = PODIO
+        PODIO = (262, 150)  # nas páginas o chão de x 330-380 fica livre para o mascote
+        for chave in cenas:
+            for p in horas:
+                PERIODO = p
+                salvar_pagina(CENAS_PAGINAS[chave](), f"{chave}-{p}")
+        PERIODO, PODIO = None, podio_orig
+        return
     PASTA.mkdir(parents=True, exist_ok=True)
-    pedidas = sys.argv[1:] or list(CENAS)
+    pedidas = args or list(CENAS)
     for chave in pedidas:
         nome, montar = CENAS[chave]
         img = montar()
