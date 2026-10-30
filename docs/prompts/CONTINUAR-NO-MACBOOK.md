@@ -175,22 +175,26 @@ Sempre extremamente gentis e formais (ver CLAUDE.md).
    - 28 comentários oficiais;
    - 6 figuras do Tachdjian em 13 comentários.
 
-**Em execução:** ciclo 2, parte B, deficiências dos membros (Tachdjian 6ª ed., cap. 21, Limb Deficiencies). Estas são as questões oficiais do grupo:
+3. **Genuvaro, parte B (deficiências dos membros):**
+   - resumo `tachdjian6-deficiencias-membros`;
+   - simulados pediatria-1411 a 1418;
+   - 12 comentários oficiais;
+   - figuras de AITKEN e JONES.
+4. **Manguito rotador:**
+   - resumo `campbell14-manguito-rotador`;
+   - simulados ombro-cotovelo-0686 a 0695;
+   - 16 comentários oficiais;
+   - lacunas sem fonte local (TECOC, peitoral maior, YOCUM, PASTA) listadas no checkpoint local.
+5. **Anatomia do ombro:**
+   - resumo `netter-anatomia-ombro-braco`;
+   - simulados ombro-cotovelo-0696 a 0703;
+   - 12 comentários oficiais.
 
-| Grupo | Questões | O que cobram |
-| --- | --- | --- |
-| DFFP | 0153, 0165 | AITKEN: cabeça e acetábulo; pseudartrose do colo |
-| DFFP | 0076 | GILLESPIE A: alongamento |
-| DFFP | 0007, 0096 | contratura em flexão, abdução e rotação externa |
-| DFFP | 0045 | associação com hemimelia fibular |
-| DFFP | 0393 | PALEY 2a: pseudartrose móvel |
-| DFFP | 0429 | alterações cardíacas: **não encontrado no Tachdjian, confirmar em outra fonte** |
-| Hemimelia fibular | 0132 | intercalar com pé normal (FRANTZ e O'RAHILLY) |
-| Hemimelia fibular | 0154 | PALEY: tipo do equinovalgo fixo, **não está no Tachdjian** |
-| Hemimelia fibular | 0009 | côndilo lateral e instabilidade anteroposterior (LCA ausente) |
-| Hemimelia tibial | 0013 | tíbia ausente: sem patela e pé varo |
+**Próximo:** ciclo 5, Neuropatia ulnar e outras compressões, das provas gerais da área de mão. Fontes: o cap. 26 do Green (Neuropatias compressivas), em PDF próprio na pasta de livros, e o cap. 77 do Campbell 2021. Depois, Omartrose e artroplastia do ombro (Campbell, cap. 12).
 
-O que já foi lido: AITKEN A a D, GILLESPIE A a C, a característica clínica da DFFP, o fêmur curto congênito (LCA ausente, valgo, associação com hemimelia fibular), PALEY do fêmur (1, 2a e 2b), ACHTERMAN e KALAMCHI, BIRCH, JONES e WEBER (tíbia).
+**Atenção ao tamanho dos comentários:** os ciclos 3 e 4 ficaram com comentários curtos (mediana de 1,8 a 2,1 mil caracteres). Volte à miniaula completa, calibrada pela `mao-2164`, variando o estilo.
+
+**Publicação:** use sempre `bash scripts/publicar_pr.sh "Título" corpo.md`. Ele só mescla quando os checks passam.
 
 **Pendências isoladas:**
 - O tutorial da Biblioteca reapareceu numa conta que já o tinha visto; investigar `src/conta/avisosVistos.ts` e `GuiaTour`.
