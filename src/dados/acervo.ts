@@ -34,11 +34,15 @@ async function buscarJson<T>(caminho: string): Promise<T> {
   return (await resposta.json()) as T
 }
 
+let indiceEmMemoria: Indice | null = null
+/** O índice, se alguma tela já o carregou; o menu usa só assim, sem baixar os 2 MB por conta própria. */
+export const indiceCarregado = () => indiceEmMemoria
+
 /** Índice leve: metadados de todas as questões, sem enunciados. */
 export function carregarIndice(): Promise<Indice> {
   if (!promessaIndice) {
     promessaIndice = Promise.all([buscarJson<Indice>('acervo/indice.json'), carregarEdicoes()])
-      .then(([indice, edicoes]) => aplicarEdicoesNoIndice(indice, edicoes))
+      .then(([indice, edicoes]) => (indiceEmMemoria = aplicarEdicoesNoIndice(indice, edicoes)))
       .catch((erro) => {
         // Acervo ainda não publicado: a interface mostra estado vazio, não erro.
         if (import.meta.env.DEV) console.warn('Índice indisponível:', erro)
