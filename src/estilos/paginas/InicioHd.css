@@ -377,3 +377,102 @@
 .hd .er__placa { background: rgba(10, 8, 6, 0.75) !important; color: #f3ead6 !important; border-color: rgba(240, 196, 106, 0.55) !important; }
 .hd .er__placa b { color: #fffaf0 !important; }
 .hd .er__placa span { color: #cfc2a6 !important; }
+
+/* ── O diário aberto: estudo de hoje e onde rende mais (esquerda), a semana (direita) ── */
+.hd-diario { position: relative; padding: 0 2.6rem 0 0; }
+.hd-diario__folhas { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 26px minmax(0, 1fr); padding: 12px 12px 18px;
+  background: #6a3a1e; border: 4px solid #1b0f06; box-shadow: inset 0 4px 0 #8a5030, inset 0 -6px 0 #4a2410, 0 8px 0 #4a2410, 0 12px 0 #1b0f06, 0 30px 50px -20px rgba(0, 0, 0, 0.6); }
+.hd-diario__pagina { position: relative; display: grid; align-content: start; gap: 1.1rem; padding: 0.4rem 0.2rem 0.8rem; color: #3f2410;
+  background: radial-gradient(rgba(122, 86, 52, 0.07) 1px, transparent 1.2px) 0 0 / 7px 7px, linear-gradient(90deg, #f3e4c1, #eedcb4); border: 3px solid #1b0f06; }
+.hd-diario__pagina:first-child { box-shadow: inset -26px 0 22px -18px rgba(90, 60, 25, 0.35); }
+.hd-diario__pagina:last-child { box-shadow: inset 26px 0 22px -18px rgba(90, 60, 25, 0.35); }
+.hd-diario__lombada { display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; background: linear-gradient(90deg, #b89a6a, #7d6140 50%, #b89a6a); }
+.hd-diario__lombada i { display: block; width: 32px; height: 11px; border: 3px solid #1b0f06; background: #c9b593; box-shadow: inset 0 3px 0 #efe3c8; }
+.hd-diario__marcadores { position: absolute; top: 2.2rem; right: 0; display: grid; gap: 0.5rem; }
+.hd-diario__marcadores a { display: block; width: 2.9rem; padding: 0.45rem 0.4rem 0.45rem 0.9rem; background: var(--cor); color: #fff4dc; font-size: 0.66rem; font-weight: 800; line-height: 1.1; text-decoration: none;
+  writing-mode: vertical-rl; transform: rotate(180deg); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0); box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.35); transition: transform 0.15s; }
+.hd-diario__marcadores a:hover, .hd-diario__marcadores a:focus-visible { transform: rotate(180deg) translateX(-5px); outline: 0; }
+/* Dentro do diário, as janelas viram páginas de papel: tinta escura e destaques em vermelho e verde. */
+.hd-diario .hd-janela { gap: 0.65rem; padding: 0.7rem 1.1rem; background: none; box-shadow: none; }
+.hd-diario .hd-janela + .hd-janela { border-top: 2px dashed rgba(122, 86, 52, 0.35); box-shadow: none; padding-top: 1rem; }
+.hd-diario .hd-janela__titulo { color: #3f2410; font-family: var(--fonte-pixel-titulo); font-size: 1.55rem; font-weight: 400; letter-spacing: 0.02em; }
+.hd-diario .hd-janela__titulo::before { background: #b8452f; box-shadow: none; }
+.hd-diario .hd-janela__titulo a { color: #7a5634; }
+.hd-diario .hd-janela__intro { color: #6a4a2c; }
+.hd-diario .hd-janela__intro strong { color: #3f2410; }
+.hd-diario .hd-missao { color: #3f2410; background: rgba(255, 250, 235, 0.55); box-shadow: inset 0 0 0 2px rgba(122, 86, 52, 0.35); }
+.hd-diario .hd-missao small { color: #7a5634; }
+.hd-diario .hd-missao b { color: #b8452f; }
+.hd-diario .hd-missao--destaque { background: rgba(240, 196, 106, 0.32); box-shadow: inset 4px 0 0 #b8452f, inset 0 0 0 2px rgba(122, 86, 52, 0.45); }
+.hd-diario .hd-missao:hover, .hd-diario .hd-missao:focus-visible { background: #fffaf0; box-shadow: inset 4px 0 0 #b8452f, inset 0 0 0 2px #7a5634; }
+.hd-diario .hd-alvo__tema { color: #3f2410; text-shadow: none; }
+.hd-diario .hd-numeros > div { background: rgba(255, 250, 235, 0.55); box-shadow: inset 0 0 0 2px rgba(122, 86, 52, 0.3); }
+.hd-diario .hd-numeros dt { color: #7a5634; }
+.hd-diario .hd-numeros dd { color: #b8452f; }
+.hd-diario .hd-alvo__medida small, .hd-diario .hd-alvo__medida b { color: #6a4a2c; }
+.hd-diario .hd-botao { color: #3f2410; background: rgba(255, 250, 235, 0.6); box-shadow: inset 0 0 0 2px #7a5634; }
+.hd-diario .hd-botao:hover, .hd-diario .hd-botao:focus-visible { color: #fff4dc; background: #b8452f; box-shadow: inset 0 0 0 2px #1b0f06; }
+.hd-diario .hd-colunas__trilho { background: rgba(122, 86, 52, 0.08); box-shadow: inset 0 0 0 2px rgba(122, 86, 52, 0.25); }
+.hd-diario .hd-colunas small { color: #7a5634; }
+.hd-diario .hd-colunas li.hoje small { color: #b8452f; }
+.hd-diario .hd-colunas__trilho > b { color: #3f2410; text-shadow: 0 1px 0 #fff8e0; }
+.hd-diario .hd-sessoes { border-top-color: rgba(122, 86, 52, 0.35); }
+.hd-diario .hd-sessoes li { color: #3f2410; }
+.hd-diario .hd-sessoes__quando, .hd-diario .hd-sessoes__acerto { color: #7a5634; }
+.hd-diario .hd-sessoes__acerto--bom { color: #2f7a3a; } .hd-diario .hd-sessoes__acerto--medio { color: #a8701d; }
+.hd-diario__mascote { position: absolute; right: 0.6rem; bottom: 0.4rem; width: 4.4rem; pointer-events: auto; }
+.hd-diario .hd-janela:last-of-type { padding-bottom: 5.6rem; }
+
+/* ── Prancha de anatomia (Treinar por tema) ── */
+.hd-mapa__alternar { margin-top: 0.5rem; justify-self: center; font: inherit; font-size: 0.82rem; border: 0; cursor: pointer; }
+.hd-prancha { display: grid; grid-template-columns: minmax(0, 1fr) minmax(14rem, 22rem) minmax(0, 1fr); align-items: center; gap: 1rem; padding: 1.4rem 1.2rem;
+  background: radial-gradient(70% 60% at 50% 40%, #f3e4c1, #e2cc9c 70%, #cdb07c), #e8d6ac; border: 4px solid #1b0f06; color: #3f2410;
+  box-shadow: inset 0 0 0 3px #b8955a, inset 0 0 40px rgba(122, 86, 52, 0.35), 0 18px 34px -18px rgba(0, 0, 0, 0.6); }
+.hd-prancha__corpo { width: 100%; height: auto; max-height: 34rem; filter: drop-shadow(0 4px 0 rgba(90, 58, 32, 0.15)); }
+.hd-prancha__etiquetas { display: grid; gap: 0.8rem; margin: 0; padding: 0; list-style: none; }
+.hd-etiqueta { display: grid; gap: 0.25rem; padding: 0.65rem 0.8rem; color: #3f2410; text-decoration: none; background: rgba(255, 250, 235, 0.6); box-shadow: inset 0 0 0 2px rgba(122, 86, 52, 0.4), 3px 3px 0 rgba(90, 58, 32, 0.2);
+  transition: transform 0.15s, background-color 0.15s, box-shadow 0.15s; }
+.hd-prancha__etiquetas--e .hd-etiqueta { text-align: right; }
+.hd-etiqueta strong { font-size: 0.98rem; }
+.hd-etiqueta small { color: #7a5634; font-size: 0.74rem; }
+.hd-etiqueta__linha { display: flex; align-items: center; gap: 0.5rem; }
+.hd-prancha__etiquetas--e .hd-etiqueta__linha { flex-direction: row-reverse; }
+.hd-etiqueta__trilho { flex: 1; height: 7px; background: rgba(122, 86, 52, 0.2); box-shadow: inset 0 0 0 1px rgba(90, 58, 32, 0.4); }
+.hd-etiqueta__trilho > span { display: block; height: 100%; background: linear-gradient(90deg, #2f7a3a, #6cbf5a); }
+.hd-prancha__etiquetas--e .hd-etiqueta__trilho > span { margin-left: auto; }
+.hd-etiqueta b { color: #b8452f; font-size: 0.9rem; }
+.hd-etiqueta:hover, .hd-etiqueta:focus-visible, .hd-etiqueta--foco { background: #fffaf0; box-shadow: inset 0 0 0 2px #b8452f, 3px 3px 0 rgba(90, 58, 32, 0.3); outline: 0; }
+.hd-prancha__etiquetas--e .hd-etiqueta--foco { transform: translateX(-4px); } .hd-prancha__etiquetas--d .hd-etiqueta--foco { transform: translateX(4px); }
+.hd-marca { cursor: pointer; }
+.hd-marca__nevoa { fill: #b8c4cc; filter: blur(3px); }
+.hd-marca__anel { fill: rgba(184, 69, 47, 0.12); stroke: #b8452f; stroke-width: 3; stroke-dasharray: 5 4; animation: hd-marca 6s linear infinite; transform-box: fill-box; transform-origin: center; }
+.hd-marca__centro { fill: #b8452f; stroke: #1b0f06; stroke-width: 2; }
+@keyframes hd-marca { to { transform: rotate(360deg); } }
+.hd-marca:hover .hd-marca__anel, .hd-marca--foco .hd-marca__anel, .hd-marca:focus-visible .hd-marca__anel { fill: rgba(240, 196, 106, 0.45); stroke: #f0a020; stroke-dasharray: none; }
+.hd-marca:focus-visible { outline: 0; }
+.hd-bandeiras { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem 0.8rem; margin: 0.6rem 0 0; padding: 0; list-style: none; }
+.hd-bandeira { position: relative; display: grid; justify-items: center; gap: 0.15rem; min-width: 9rem; padding: 0.55rem 0.9rem 1.1rem; color: #fff4dc; text-decoration: none; text-align: center;
+  background: linear-gradient(180deg, #2c5a72, #1c3c52); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 9px), 0 100%); box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.2); transition: transform 0.2s; transform-origin: top center; }
+.hd-bandeira::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; width: var(--p); background: #8ee08a; }
+.hd-bandeira strong { font-size: 0.86rem; line-height: 1.2; }
+.hd-bandeira span { color: #f0c46a; font-size: 0.82rem; font-weight: 800; }
+.hd-bandeira:hover, .hd-bandeira:focus-visible { transform: rotate(-2deg) translateY(-2px); outline: 0; }
+
+/* ── O mascote no caminho do cronograma ── */
+.ip-trilha__mascote { width: 34px; }
+
+@media (max-width: 60rem) {
+  .hd-diario { padding: 0; }
+  .hd-diario__marcadores { position: static; display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.4rem; }
+  .hd-diario__marcadores a { width: auto; writing-mode: horizontal-tb; transform: none; padding: 0.35rem 0.7rem; }
+  .hd-diario__marcadores a:hover { transform: translateY(-2px); }
+  .hd-diario__folhas { grid-template-columns: minmax(0, 1fr); padding: 8px 8px 14px; }
+  .hd-diario__lombada { display: none; }
+  .hd-diario__pagina + .hd-diario__lombada + .hd-diario__pagina { border-top: 0; }
+  .hd-prancha { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "corpo corpo" "e d"; padding: 1rem 0.75rem; }
+  .hd-prancha__corpo { grid-area: corpo; max-height: 22rem; }
+  .hd-prancha__etiquetas--e { grid-area: e; } .hd-prancha__etiquetas--d { grid-area: d; }
+  .hd-prancha__etiquetas--e .hd-etiqueta { text-align: left; } .hd-prancha__etiquetas--e .hd-etiqueta__linha { flex-direction: row; }
+  .hd-prancha__etiquetas--e .hd-etiqueta__trilho > span { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .hd-marca__anel { animation: none; } }

@@ -4,10 +4,11 @@ import type { CalculoPlano, PlanoSalvo } from '../../dados/planoEstudo'
 import { diasAte, proximaProva } from '../../dados/ritmos'
 import { href } from '../../util/rotas'
 import { Icone } from '../Icone'
+import { Mascote } from '../mascote/Mascote'
 
 /**
  * O caminho até a prova, na base do topo do painel (16/10/2026): a linha do dia em
- * que o cronograma nasceu até a prova, as semanas como marcos, o mensageiro onde a
+ * que o cronograma nasceu até a prova, as semanas como marcos, o mascote onde a
  * pessoa está hoje e a bandeira de chegada (pixel art de scripts/gerar_pixel_inicio.py).
  * Embaixo, hoje, amanhã e a projeção do plano, para o caminho ter conteúdo, não só forma.
  */
@@ -44,7 +45,7 @@ export function CaminhoProva({ calculo, plano }: { calculo: CalculoPlano; plano:
         ))}
         <span className="ip-trilha__inicio" aria-hidden="true"><i /><small>Início · {curta(inicio)}</small></span>
         <span className="ip-trilha__voce" aria-hidden="true">
-          <img src={recurso('ranking/mensageiro.png')} width={32} height={40} alt="" />
+          <Mascote className="ip-trilha__mascote" comportamento="acenar" falar={false} interativo={false} />
           <small>Hoje</small>
         </span>
         <span className="ip-trilha__prova" aria-hidden="true">
@@ -96,7 +97,7 @@ export function CaminhoConvite({ premium }: { premium: boolean }) {
         <span className="ip-trilha__linha" aria-hidden="true" />
         <span className="ip-trilha__inicio" aria-hidden="true"><i /><small>Hoje</small></span>
         <span className="ip-trilha__voce" aria-hidden="true">
-          <img src={recurso('ranking/mensageiro.png')} width={32} height={40} alt="" />
+          <Mascote className="ip-trilha__mascote" comportamento="acenar" falar={false} interativo={false} />
           <small>Você</small>
         </span>
         <span className="ip-trilha__convite" aria-hidden="true">Diga a data e o seu tempo: o caminho de cada dia aparece aqui, passando primeiro pelo que mais cai.</span>

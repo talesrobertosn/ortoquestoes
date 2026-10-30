@@ -29,8 +29,10 @@ function sorteio(fantasia: Fantasia): IdComportamento[] {
   return [...comuns, ...festa, ...festa, ...festa]
 }
 
-export function Mascote({ comportamento, fantasia: fixa, falar = true, className = '', style }: {
-  comportamento?: IdComportamento; fantasia?: Fantasia; falar?: boolean; className?: string; style?: CSSProperties
+export function Mascote({ comportamento, fantasia: fixa, falar = true, interativo = true, className = '', style }: {
+  comportamento?: IdComportamento; fantasia?: Fantasia; falar?: boolean
+  /** false: só o desenho, sem botão (para usar dentro de um link). */
+  interativo?: boolean; className?: string; style?: CSSProperties
 }) {
   const fantasia = fixa ?? fantasiaDoMes()
   const opcoes = sorteio(fantasia)
@@ -79,9 +81,11 @@ export function Mascote({ comportamento, fantasia: fixa, falar = true, className
   const nome = COMPORTAMENTOS.find((c) => c.id === atual)?.nome ?? ''
   return (
     <span className={`mascote ${className}`} style={style}>
-      <button type="button" className="mascote__corpo" onClick={clicar} aria-label={`O esqueleto mascote está ${nome}. Toque para ele fazer outra coisa.`}>
-        <EsqueletoSvg comportamento={atual} fantasia={fantasia} />
-      </button>
+      {interativo
+        ? <button type="button" className="mascote__corpo" onClick={clicar} aria-label={`O esqueleto mascote está ${nome}. Toque para ele fazer outra coisa.`}>
+          <EsqueletoSvg comportamento={atual} fantasia={fantasia} />
+        </button>
+        : <span className="mascote__corpo" aria-hidden="true"><EsqueletoSvg comportamento={atual} fantasia={fantasia} /></span>}
       {atual === 'dormir' && <span className="mascote__zzz" aria-hidden="true"><i>z</i><i>z</i><i>Z</i></span>}
       {fala && <span className="mascote__balao" role="status">{fala}</span>}
     </span>

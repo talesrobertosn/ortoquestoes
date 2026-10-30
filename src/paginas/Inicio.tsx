@@ -24,6 +24,8 @@ import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
 import { TopoDia, TopoVisitante } from '../componentes/inicio/cena/TopoDia'
 import type { Atalho } from '../componentes/inicio/cena/TopoDia'
+import { MapaCorpo } from '../componentes/inicio/cena/MapaCorpo'
+import { Mascote } from '../componentes/mascote/Mascote'
 import '../estilos/paginas/InicioHd.css'
 import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
 import { usarConquistas } from '../estado/usarConquistas'
@@ -435,8 +437,17 @@ export function Inicio() {
         {!cronograma.premium && !cronograma.carregando && <div className="hd-moldura"><CartaoCronograma cronograma={cronograma} /></div>}
         {cronograma.premium && calculo && (calculo.naRetaFinal || calculo.provaPassou) && <div className="hd-moldura"><CartaoCronograma cronograma={cronograma} /></div>}
 
-        {/* O dia em três janelas de vidro sobre o cenário desfocado. */}
-        <section className={`hd-janelas`} aria-label="Seu estudo, onde render mais e a sua semana">
+        {/* O diário aberto (como os diários de jogo): à esquerda o estudo de hoje e onde rende mais, à direita a semana.
+            Os marcadores na borda levam às outras partes da página. */}
+        <section className="hd-diario" aria-label="Seu estudo, onde render mais e a sua semana">
+          <nav className="hd-diario__marcadores" aria-label="Ir para">
+            <a href="#hd-temas" style={{ '--cor': '#2f8a7e' } as CSSProperties}>Temas</a>
+            <a href="#hd-galeria" style={{ '--cor': '#2f6aa8' } as CSSProperties}>Atlas e Resumos</a>
+            <a href="#hd-assinante" style={{ '--cor': '#7a4a8c' } as CSSProperties}>O que mais cai</a>
+            <a href="#hd-trofeus" style={{ '--cor': '#b8452f' } as CSSProperties}>Ranking</a>
+          </nav>
+          <div className="hd-diario__folhas">
+          <div className="hd-diario__pagina">
           <section className="hd-janela" aria-labelledby="ip-hoje-titulo">
             <h2 id="ip-hoje-titulo" className="hd-janela__titulo">Seu estudo de hoje</h2>
             <p className="hd-janela__intro">{textoDoDia.explicacao}</p>
@@ -488,7 +499,9 @@ export function Inicio() {
               <a className="hd-botao" href={href('/treinar')}>Montar uma sessão <Icone nome="direita" tamanho={16} /></a>
             </>}
           </section>
-
+          </div>
+          <span className="hd-diario__lombada" aria-hidden="true">{Array.from({ length: 6 }, (_, k) => <i key={k} />)}</span>
+          <div className="hd-diario__pagina">
           <section className="hd-janela" aria-labelledby="ip-semana-titulo">
             <h2 id="ip-semana-titulo" className="hd-janela__titulo"><span>Sua semana</span><a href={href('/dados')}>Desempenho <Icone nome="direita" tamanho={13} /></a></h2>
             <dl className="hd-numeros">
@@ -529,40 +542,26 @@ export function Inicio() {
               </ol>
             )}
           </section>
+          <Mascote className="hd-diario__mascote" comportamento="ler" falar={false} />
+          </div>
+          </div>
         </section>
 
-        {/* Treinar por tema: um mapa de regiões; a névoa sai conforme você responde as questões do tema. */}
-        <section className="hd-mapa" aria-labelledby="ip-temas-titulo">
-          <header className="hd-faixa">
-            <h2 id="ip-temas-titulo">Treinar por tema</h2>
-            <p>Um toque monta a sessão do tema. A névoa sai conforme você passa por ele.</p>
-          </header>
-          <ul className="hd-regioes">
-            {temas.map((tema, i) => {
-              const quantidade = contagens!.porTema[tema.slug] ?? 0
-              const feitas = Math.min(quantidade, respondidasPorTema[tema.slug] ?? 0)
-              const porcento = quantidade ? Math.round((feitas / quantidade) * 100) : 0
-              return (
-                <li key={tema.slug}>
-                  <a className={'hd-regiao' + (feitas > 0 ? '' : ' hd-regiao--nova')} href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${tema.slug}`)}
-                    style={{ '--nevoa': `${100 - Math.max(feitas > 0 ? 2 : 0, porcento)}%`, '--i': i } as CSSProperties}>
-                    <span className="hd-regiao__nome">{tema.nome}</span>
-                    <span className="hd-regiao__pct numerico">{feitas > 0 ? `${Math.max(1, porcento)}%` : 'Novo'}</span>
-                    <span className="hd-regiao__trilho" aria-hidden="true"><span style={{ width: `${Math.max(feitas > 0 ? 2 : 0, porcento)}%` }} /></span>
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
-        </section>
+        {/* Treinar por tema: a prancha de anatomia, com a névoa saindo conforme o progresso (MapaCorpo.tsx). */}
+        <div id="hd-temas">
+          <MapaCorpo temas={temas.map((tema) => {
+            const quantidade = contagens!.porTema[tema.slug] ?? 0
+            return { slug: tema.slug, nome: tema.nome, quantidade, feitas: Math.min(quantidade, respondidasPorTema[tema.slug] ?? 0), destino: `/treinar?areas=${AREAS_TREINO.join(',')}&temas=${tema.slug}` }
+          })} />
+        </div>
 
         {/* Atlas 3D e Resumos lado a lado, cada um na sua moldura. */}
-        <div className="hd-galeria">
+        <div className="hd-galeria" id="hd-galeria">
           <div className="hd-moldura"><QuadroAtlas /></div>
           {bibliotecaVisivel() && <div className="hd-moldura"><EstanteResumos /></div>}
         </div>
 
-        <div className="hd-dupla">
+        <div className="hd-dupla" id="hd-assinante">
           <div className="hd-moldura"><CaixasAssinante /></div>
           <div className="hd-moldura"><VitrineAssinante /></div>
         </div>
@@ -571,7 +570,7 @@ export function Inicio() {
         {cronogramaNoPainel && <div className="hd-moldura"><NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} /></div>}
         {!calculo && !cronograma.carregando && respondidasTotal < 30 && <div className="hd-moldura"><AteAProva total={indice!.total} conta={Boolean(conta)} /></div>}
 
-        <div className="hd-dupla hd-dupla--rodape">
+        <div className="hd-dupla hd-dupla--rodape" id="hd-trofeus">
           <BlocoRanking conta={Boolean(conta)} conquistadas={conquistadas} totalConquistas={totalConquistas} sequencia={streak.atual} />
           <div className="hd-moldura"><CartaoPlanos /></div>
         </div>
