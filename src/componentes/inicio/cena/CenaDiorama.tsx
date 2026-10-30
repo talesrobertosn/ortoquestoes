@@ -1,7 +1,8 @@
-import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type ReactElement } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
-import { GATO_ACORDADO, GATO_DORMINDO, PALETA_GATO, type Grade, type Paleta } from '../../../biblioteca/salao/sprites'
+import { SPRITE_GATO, LINHAS_GATO, linhaGato } from '../../mascote/sprites'
+import { urlCss } from '../../../config'
 
 /**
  * O cenário "HD-2D" do topo da página inicial (30/10/2026, pedido do Tales com o Octopath Traveler II de referência).
@@ -19,22 +20,6 @@ export function periodoAgora(d = new Date()): Periodo {
   const h = Number(new Intl.DateTimeFormat('en-US', { hour: 'numeric', hourCycle: 'h23', timeZone: 'America/Sao_Paulo' }).format(d))
   return h >= 5 && h < 12 ? 'manha' : h >= 12 && h < 18 ? 'tarde' : 'noite'
 }
-
-/** Pixel art pequena em SVG (o gato do salão), no tamanho do elemento. */
-const PixelSvg = memo(function PixelSvg({ grade, paleta }: { grade: Grade; paleta: Paleta }) {
-  const r: ReactElement[] = []
-  grade.forEach((linha, y) => {
-    let x = 0
-    while (x < linha.length) {
-      const c = linha[x]
-      let f = x + 1
-      while (f < linha.length && linha[f] === c) f++
-      if (c !== '.' && paleta[c]) r.push(<rect key={`${x}-${y}`} x={x} y={y} width={f - x} height={1} fill={paleta[c]} />)
-      x = f
-    }
-  })
-  return <svg viewBox={`0 0 ${grade[0].length} ${grade.length}`} shapeRendering="crispEdges" width="100%" height="100%" aria-hidden="true">{r}</svg>
-})
 
 /** Posição e tamanho em porcentagem do palco, a partir de pixels da arte (480 x 200). */
 const lugar = (x: number, y: number, w: number, h: number): CSSProperties => ({ left: `${(x / 480) * 100}%`, top: `${(y / 200) * 100}%`, width: `${(w / 480) * 100}%`, height: `${(h / 200) * 100}%` })
@@ -63,7 +48,6 @@ export function CenaDiorama({ linhaFogo, periodo }: { linhaFogo: number; periodo
     return () => { cancelAnimationFrame(quadro); alvo.removeEventListener('pointermove', mover); alvo.removeEventListener('pointerleave', sair) }
   }, [])
 
-  const paletaGato = useMemo(() => (gato === 'tala' ? { ...PALETA_GATO, p: '#5aa0d8', g: '#8a8e9c' } : PALETA_GATO), [gato])
   const particulas = useMemo(() => Array.from({ length: 16 }, (_, i) => ({ x: (i * 37 + 11) % 100, y: (i * 53 + 7) % 70 + 5, t: 6 + (i % 5) * 1.6, d: -((i * 1.7) % 8) })), [])
   const brasas = useMemo(() => Array.from({ length: 9 }, (_, i) => ({ dx: ((i * 29) % 13) - 6, t: 1.8 + (i % 4) * 0.5, d: -((i * 0.7) % 3) })), [])
   const imagem = (larg: number) => recurso(`pixel/inicio/cena-${periodo}${larg === 960 ? '-960' : ''}.webp`)
@@ -78,11 +62,12 @@ export function CenaDiorama({ linhaFogo, periodo }: { linhaFogo: number; periodo
         {linhaFogo > 0 && <span className="hd-brasas" style={lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
         {/* O mascote, em pé ao lado da fogueira: um comportamento diferente a cada visita (componentes/mascote). */}
         <Mascote className="hd-mascote" style={lugar(262, 96, 46, 66.7)} />
-        <button type="button" tabIndex={-1} className="hd-gato" style={lugar(226, 155, 22, 10)}
+        {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
+        <button type="button" tabIndex={-1} className="hd-gato" style={lugar(219, 150, 36, 22.5)}
           onClick={() => definirGato((g) => (g === 'dormindo' ? 'acordado' : 'tala'))}>
-          <PixelSvg grade={gato === 'dormindo' ? GATO_DORMINDO : GATO_ACORDADO} paleta={paletaGato} />
+          <span className="hd-gato__sprite" style={{ '--sprite': urlCss(SPRITE_GATO.src.slice(1)), '--linha': linhaGato(gato), '--linhas': LINHAS_GATO.length } as CSSProperties} />
         </button>
-        {gato === 'tala' && <span className="hd-balao" style={{ left: `${(237 / 480) * 100}%`, top: `${(150 / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
+        {gato === 'tala' && <span className="hd-balao" style={{ left: `${(237 / 480) * 100}%`, top: `${(148 / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
         <span className="hd-particulas">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>
     </div>

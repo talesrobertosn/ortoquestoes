@@ -1,18 +1,19 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { ler, gravar } from '../../estado/armazenamento'
 import { COMPORTAMENTOS, fantasiaDoMes, type Fantasia, type IdComportamento } from './comportamentos'
-import { EsqueletoSvg } from './EsqueletoSvg'
+import { SPRITE_ESQUELETO, linhaEsqueleto, LINHAS_ESQUELETO } from './sprites'
+import { urlCss } from '../../config'
 import { FALAS, FALAS_GERAIS, FALAS_HALLOWEEN } from './falas'
 import './Mascote.css'
 
 /**
- * O mascote do Orto Questões (30/10/2026): o esqueleto chibi, montado por articulações em SVG (EsqueletoSvg.tsx).
- * A cada visita ele aparece fazendo uma coisa diferente da anterior e fala frases sorteadas daquela situação.
- * Clicar nele troca o que está fazendo; cinco cliques seguidos e ele cochila. Em outubro veste a fantasia de
- * Halloween (capuz e manto) e ganha a foice, o sorvete e o balde de abóbora.
+ * O mascote do Orto Questões (30/10/2026): o esqueletinho de armadura em pixel art HD-2D, pintado por
+ * scripts/gerar_mascote.py (uma linha da folha por comportamento, 8 quadros). A cada visita ele aparece fazendo uma
+ * coisa diferente da anterior e fala frases daquela situação. Clicar troca o que está fazendo; cinco cliques seguidos
+ * e ele cochila. Em outubro veste o manto de Halloween (foice, lanterna de abóbora, castiçal e morcegos).
  *
- * Reaproveitável em qualquer página: <Mascote /> ocupa o tamanho que o CSS der (proporção 200 x 290) e pode receber
- * um comportamento fixo, uma fantasia, ou ficar sem falas.
+ * Reaproveitável em qualquer página: <Mascote /> ocupa o tamanho que o CSS der (proporção 96 x 128) e pode receber
+ * um comportamento fixo, uma fantasia, ficar sem falas ou sem clique (interativo={false}, dentro de um link).
  */
 const CHAVE = 'mascote:ultimo'
 
@@ -21,12 +22,9 @@ function sortear<T>(lista: readonly T[], evitar?: T): T {
   return opcoes[Math.floor(Math.random() * opcoes.length)]
 }
 
-/** Os comportamentos do sorteio: no mês da fantasia, os dela aparecem com mais frequência. */
+/** Os comportamentos do sorteio: no mês da fantasia, só os dela (com o manto); fora dele, os do dia a dia. */
 function sorteio(fantasia: Fantasia): IdComportamento[] {
-  const comuns = COMPORTAMENTOS.filter((c) => !c.halloween).map((c) => c.id)
-  if (fantasia !== 'halloween') return comuns
-  const festa = COMPORTAMENTOS.filter((c) => c.halloween).map((c) => c.id)
-  return [...comuns, ...festa, ...festa, ...festa]
+  return COMPORTAMENTOS.filter((c) => c.halloween === (fantasia === 'halloween')).map((c) => c.id)
 }
 
 export function Mascote({ comportamento, fantasia: fixa, falar = true, interativo = true, className = '', style }: {
@@ -79,14 +77,17 @@ export function Mascote({ comportamento, fantasia: fixa, falar = true, interativ
   }
 
   const nome = COMPORTAMENTOS.find((c) => c.id === atual)?.nome ?? ''
+  const desenho = (
+    <span className="mascote__sprite" aria-hidden="true" style={{
+      '--sprite': urlCss(SPRITE_ESQUELETO.src.slice(1)), '--linha': linhaEsqueleto(atual), '--linhas': LINHAS_ESQUELETO.length,
+      '--quadros': SPRITE_ESQUELETO.quadrosPorLinha, '--dur': atual === 'dormir' ? '2.6s' : atual === 'malabares' || atual === 'acenar' ? '1.1s' : '1.5s',
+    } as CSSProperties} />
+  )
   return (
-    <span className={`mascote ${className}`} style={style}>
+    <span className={`mascote mascote--${atual} ${className}`} style={style}>
       {interativo
-        ? <button type="button" className="mascote__corpo" onClick={clicar} aria-label={`O esqueleto mascote está ${nome}. Toque para ele fazer outra coisa.`}>
-          <EsqueletoSvg comportamento={atual} fantasia={fantasia} />
-        </button>
-        : <span className="mascote__corpo" aria-hidden="true"><EsqueletoSvg comportamento={atual} fantasia={fantasia} /></span>}
-      {atual === 'dormir' && <span className="mascote__zzz" aria-hidden="true"><i>z</i><i>z</i><i>Z</i></span>}
+        ? <button type="button" className="mascote__corpo" onClick={clicar} aria-label={`O esqueleto mascote está ${nome}. Toque para ele fazer outra coisa.`}>{desenho}</button>
+        : <span className="mascote__corpo">{desenho}</span>}
       {fala && <span className="mascote__balao" role="status">{fala}</span>}
     </span>
   )

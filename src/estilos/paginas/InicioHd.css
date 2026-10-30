@@ -482,3 +482,16 @@
 .hd .pg-recurso :is(p, small) { color: #cfc2a6 !important; }
 .hd .pg-recurso::after { content: "Item raro"; position: absolute; top: 0.45rem; right: 0.5rem; padding: 0 0.35rem; color: #1b1208; background: #f0c46a; font-family: var(--fonte-pixel-titulo); font-size: 0.8rem; line-height: 1.2; box-shadow: 0 0 0 1px #0a0806; }
 @media (prefers-reduced-motion: reduce) { .hd .pg-recurso__icone { animation: none; } .hd .pg-recurso::before { display: none; } }
+
+/* O gato em pixel art (folha de 6 quadros por linha) e a luz da hora do dia no mascote e no gato. */
+.hd-gato__sprite { display: block; width: 100%; height: 100%; image-rendering: pixelated;
+  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / 600% calc(var(--linhas) * 100%) no-repeat; animation: hd-gato 1.8s steps(6) infinite; }
+@keyframes hd-gato { to { background-position-x: 120%; } }
+.hd-palco--manha :is(.hd-mascote .mascote__corpo, .hd-gato) { filter: brightness(1.04) sepia(0.08) drop-shadow(3px 2px 0 rgba(40, 24, 8, 0.25)); }
+.hd-palco--tarde :is(.hd-mascote .mascote__corpo, .hd-gato) { filter: sepia(0.28) saturate(1.15) brightness(0.98) drop-shadow(-4px 2px 0 rgba(60, 20, 0, 0.25)); }
+.hd-palco--noite :is(.hd-mascote .mascote__corpo, .hd-gato) { filter: brightness(0.82) sepia(0.4) saturate(1.3) hue-rotate(-8deg) drop-shadow(-3px 0 6px rgba(255, 150, 60, 0.45)); }
+@media (prefers-reduced-motion: reduce) { .hd-gato__sprite { animation: none; } }
+/* O mascote fica à direita da cena: o balão abre para a esquerda, para não entrar embaixo do painel nem sair da tela. */
+.hd-mascote .mascote__balao { left: 30%; transform: translateX(-70%); max-width: min(15rem, 60vw); }
+.hd-mascote .mascote__balao::after { left: 70%; }
+@media (max-width: 60rem) { .hd-mascote .mascote__balao { left: 10%; transform: translateX(-85%); max-width: 12.5rem; } .hd-mascote .mascote__balao::after { left: 85%; } }
