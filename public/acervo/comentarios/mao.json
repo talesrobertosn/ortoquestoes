@@ -287,14 +287,18 @@
   }
  },
  "mao-0019": {
+  "conceito": "A classificação de LEDDY e PACKER mede até onde o coto do profundo fugiu, e isso diz quantos vínculos ele arrancou no caminho.\n\n**Os tipos, no Green** (cap. 6, Fig. 6.7):\n- **Tipo I:** o profundo é avulsionado e **retrai até a palma**; a **irrigação vincular foi interrompida**, ou seja, os **dois vínculos se romperam**. **Reparo urgente**.\n- **Tipo II:** o coto **fica na bainha**, no nível da interfalângica proximal; o **vínculo longo continua íntegro**. Às vezes o reparo é possível até 6 semanas depois.\n- **Tipo III:** um **grande fragmento ósseo** preso ao coto o segura na **borda distal da polia A4**.\n- **Tipo IV:** fratura e avulsão do tendão do fragmento.\n\n**A lógica.** Para o coto chegar à palma, ele precisa romper o vínculo curto, junto à inserção, e o longo, que vem do superficial na interfalângica proximal. Sem os dois, o tendão fica sem sangue e encurta depressa.\n\n**O que a banca quis testar.** O tipo com ruptura dos dois vínculos. O resumo Lesões dos tendões flexores traz a classificação.",
+  "correta": "**A: I.** No tipo I o coto retrai até a palma e a irrigação vincular é interrompida, com ruptura dos dois vínculos (Green, cap. 6).",
   "incorretas": {
-   "B": "No tipo II o vínculo longo continua íntegro e segura o tendão na altura da interfalângica proximal.",
-   "C": "No tipo III, um fragmento ósseo grande fica retido na polia A4, e as vínculas estão íntegras.",
-   "D": "O tipo IV é a lesão dupla, com fratura e o tendão avulsionado também do fragmento ósseo, e não a ruptura das duas vínculas."
+   "B": "**O vínculo longo está íntegro.** No tipo II o coto para na interfalângica proximal, preso pelo vínculo longo.",
+   "C": "**O fragmento segura o coto.** No tipo III, o fragmento ósseo para na polia A4.",
+   "D": "**É fratura com avulsão.** O tipo IV junta fratura e avulsão do tendão do fragmento; não é definido pelos vínculos."
   },
-  "conceito": "O **flexor profundo dos dedos** (FPD) se insere na falange distal e é o único que dobra a ponta do dedo. Sua **avulsão fechada** acontece quando o dedo está fazendo força para fletir e é **estendido à força**, como ao agarrar a camisa de um adversário que puxa (daí o nome **dedo de jérsei**). O dedo mais acometido é o **anelar**.\n\n**As vínculas**: são pequenas faixas de tecido que ligam os tendões flexores ao osso e levam **vasos sanguíneos** até eles. Cada flexor tem um **vínculo curto**, perto da inserção, e um **vínculo longo**, mais proximal. Elas também **seguram** o tendão, impedindo que ele retraia demais se for cortado.\n\n**A classificação de Leddy e Packer**:\n\n**tipo I**: o tendão **retrai até a palma**, porque **as duas vínculas rompem**. Sem elas, o tendão perde a irrigação e encurta rapidamente. Precisa ser reinserido em **7 a 10 dias**;\n\n**tipo II**: o tendão retrai até a altura da interfalângica proximal, segurado pelo **vínculo longo**, que continua íntegro. Pode ser reparado mais tarde;\n\n**tipo III**: há um **fragmento ósseo grande** arrancado junto, que fica preso na polia A4 e impede a retração. As vínculas estão íntegras. Fixa-se o fragmento;\n\n**tipo IV**: fratura com fragmento ósseo e, além disso, o tendão também se solta do fragmento e retrai.\n\n**Na prova**: no tipo I de Leddy e Packer, as duas vínculas rompem, o tendão vai até a palma e o reparo deve ser feito em 7 a 10 dias.",
-  "correta": "No tipo I, as duas vínculas rompem, o tendão retrai até a palma e perde a irrigação, exigindo reparo em 7 a 10 dias.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), avulsão do flexor profundo (Fig. 6.7)",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0020": {
@@ -1200,14 +1204,18 @@
   "conferido": false
  },
  "mao-0079": {
+  "conceito": "O enxerto em um tempo é a reconstrução mais simples, mas só funciona num dedo preparado: móvel, com pele boa e com as polias que vão guiar o novo tendão.\n\n**O que o Green diz** (cap. 6). O dedo ideal tem **movimento passivo completo**, sem contratura, e se encaixa no **grau 1 de BOYES** (cicatrizes mínimas, articulações móveis, sem alterações tróficas). O livro manda **avaliar a integridade do sistema de polias**: **a presença das polias A2 e A4 é um requisito mínimo**.\n\n**Lendo a questão.** \"Permeabilidade das polias\" é a bainha com as polias preservadas, por onde o enxerto pode deslizar. É a condição que permite o enxerto primário.\n\n**Quando vai para dois estágios.** Com **rigidez articular**, **bainha destruída** ou polias perdidas, o enxerto direto grudaria; faz-se primeiro um espaçador e a reconstrução das polias, depois o enxerto. A **lesão nervosa** associada é um dos graus de BOYES e piora o prognóstico, sem ser a indicação do enxerto.\n\n**O que a banca quis testar.** A condição que indica o enxerto primário. O resumo Lesões dos tendões flexores traz a avaliação.",
+  "correta": "**B: permeabilidade das polias.** Com as polias, especialmente A2 e A4, preservadas e o dedo móvel, o enxerto em um tempo é possível (Green, cap. 6).",
   "incorretas": {
-   "A": "A rigidez articular contraindica o enxerto, que não consegue mover uma articulação rígida; antes é preciso recuperar a mobilidade passiva.",
-   "C": "A bainha lesada indica a reconstrução em dois tempos, com haste de silicone antes do enxerto.",
-   "D": "A lesão nervosa piora o prognóstico, mas não é o critério que decide entre um e dois tempos."
+   "A": "**Contraindica o enxerto direto.** A rigidez pede preparo do dedo ou reconstrução em estágios.",
+   "C": "**Pede dois estágios.** Com a bainha destruída, o enxerto direto grudaria.",
+   "D": "**Piora o prognóstico.** A lesão nervosa é um dos graus de BOYES, não a indicação do enxerto primário."
   },
-  "conceito": "Quando a lesão do **tendão flexor na zona II** (dentro da bainha dos dedos, onde os dois flexores passam juntos sob as polias) não é reparada a tempo, as pontas retraem e o tendão não pode mais ser suturado diretamente. É preciso um **enxerto de tendão**.\n\n**A escolha entre um tempo e dois tempos** depende das condições do dedo:\n\n**enxerto em um tempo (primário)**: indicado quando as **polias estão permeáveis** (especialmente A2 e A4, preservadas e com espaço livre por dentro), a bainha é utilizável, as articulações se **movem bem passivamente** e a pele está boa. O enxerto tem por onde deslizar;\n\n**reconstrução em dois tempos**: indicada quando a bainha está cicatrizada, as polias se perderam, há rigidez ou a pele é ruim. No primeiro tempo, coloca-se uma **haste de silicone** (técnica de Hunter) no lugar do tendão e reconstroem-se as polias. O corpo forma uma nova bainha lisa em volta da haste. Cerca de três meses depois, a haste é trocada pelo enxerto;\n\nquando a articulação está destruída ou o dedo é pouco útil, pensa-se em artrodese, tenodese ou até amputação.\n\n**A classificação de Boyes** ajuda a prever o resultado: grau 1 (cicatriz mínima, articulações móveis, o melhor), depois cicatriz, lesão articular, **lesão nervosa** e múltiplas lesões (o pior).\n\n**Doadores de enxerto**: palmar longo (ausente em cerca de 15% das pessoas), plantar ou extensores longos dos dedos do pé.\n\n**Na prova**: o enxerto primário (em um tempo) é indicado quando as polias estão permeáveis.",
-  "correta": "Com as polias A2 e A4 permeáveis, bainha utilizável, articulações móveis e boa pele, o enxerto em um tempo tem por onde deslizar.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), reconstrução: avaliação pré-operatória (Tabela 6.2) e polias",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0080": {
@@ -1380,25 +1388,33 @@
   "conferido": false
  },
  "mao-0091": {
+  "conceito": "A cicatrização do tendão tem duas vias: a intrínseca, pelo próprio tendão e pelo epitendão, e a extrínseca, por células que vêm de fora e trazem aderências junto. A reabilitação quer estimular a primeira e evitar a segunda.\n\n**O que o Green diz** (cap. 6). LUNDBORG validou a **cicatrização intrínseca** do reparo intrassinovial sem aderências. A **área até 1 cm do reparo** é a mais ativa, com proliferação celular e síntese de colágeno tipo I pelas células do reparo e do epitendão. A **manutenção da resistência** do reparo permite aplicar **carga precoce**. E as **aderências** entre o tendão e a bainha podem ser **evitadas** se houver **excursão suficiente do tendão** na reabilitação com movimento.\n\n**A divisão do trabalho.** A **tensão cíclica local**, a carga controlada sobre o reparo, é o estímulo mecânico para a resposta intrínseca e o ganho de força. A **mobilização do tendão**, o deslizamento dentro da bainha, é o que impede que ele se cole. Por isso a ordem certa é tensão para a cicatrização e mobilização para as aderências.\n\n**Por que as outras não.** A imobilidade e a ausência de tensão favorecem a cicatrização extrínseca, com aderências e menos força.\n\n**O que a banca quis testar.** O papel da carga e do deslizamento na cicatrização do flexor. O resumo Lesões dos tendões flexores traz a reabilitação.",
+  "correta": "**B: tensão cíclica local e mobilização do tendão.** A carga controlada estimula a cicatrização intrínseca, e a excursão do tendão evita as aderências (Green, cap. 6).",
   "incorretas": {
-   "A": "Os papéis estão invertidos: a mobilização é o que reduz as aderências, e a tensão cíclica é o que estimula a cicatrização intrínseca.",
-   "C": "A imobilidade sem tensão é o pior cenário: o tendão cicatriza fraco e adere à bainha.",
-   "D": "Sem tensão e sem movimento, o tendão cicatriza mal e forma aderências, o oposto do desejado."
+   "A": "**Inverte a ordem.** A mobilização previne as aderências; a tensão cíclica estimula a resposta intrínseca.",
+   "C": "**Favorece as aderências.** A imobilidade estimula a cicatrização extrínseca, com aderências.",
+   "D": "**Mesmo erro.** Sem tensão e sem movimento, o tendão cicatriza por aderências e com menos força."
   },
-  "conceito": "Depois de reparar um **tendão flexor**, a reabilitação tem dois objetivos que parecem contraditórios: o tendão precisa **cicatrizar forte** e, ao mesmo tempo, **não grudar** nos tecidos em volta (aderências). Cada objetivo é alcançado por um estímulo diferente.\n\n**Para estimular a cicatrização intrínseca** (pelas próprias células do tendão, os tenócitos): **tensão cíclica local**. Quando o tendão recebe carga leve, intermitente e repetida, as células \"sentem\" essa tensão (mecanotransdução) e produzem colágeno **organizado** na direção da força. A cicatriz fica mais forte.\n\n**Para reduzir as aderências**: **mobilização do tendão**, ou seja, fazer o tendão **deslizar** alguns milímetros dentro da bainha. Esse deslizamento (excursão de cerca de 3 a 5 mm) rompe as pontes de fibrina que começam a se formar entre o tendão e a bainha, antes que virem cicatriz firme.\n\n**O que acontece com a imobilização total**: o tendão cicatriza **mal** (cicatriz fraca e desorganizada) e **gruda** em tudo. Por isso ela só é usada em crianças pequenas ou pacientes que não colaboram.\n\n**Os protocolos**:\n\n**Duran**: flexão **passiva** controlada;\n\n**Kleinert**: extensão ativa e flexão passiva puxada por um elástico;\n\n**movimento ativo precoce**: dá a melhor excursão, mas exige um reparo forte, de 4 a 6 fios.\n\n**O risco**: a ruptura do reparo é mais comum entre a 1ª e a 3ª semanas, quando as pontas amolecem, e perto da 5ª e 6ª semanas, quando a órtese é retirada.\n\n**Na prova**: a tensão cíclica local estimula a cicatrização intrínseca, e a mobilização do tendão reduz as aderências.",
-  "correta": "A tensão cíclica local estimula os tenócitos a produzir colágeno organizado, e a mobilização faz o tendão deslizar e romper as pontes de fibrina, reduzindo aderências.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), cicatrização, aderências e reabilitação",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0092": {
-  "conceito": "### Sistema de polias flexoras\n| Nº na figura | Polia | Local | Importância |\n|---|---|---|---|\n| 1 | A1 | MF | liberada no dedo em gatilho |\n| ==2== | ==A2== | ==falange proximal (diáfise)== | ==essencial== |\n| 3 | C1 | cruciforme | permite dobrar a bainha |\n| 4 | A3 | IFP | fina |\n| 5 | C2 | cruciforme | |\n| ==6== | ==A4== | ==falange média (diáfise)== | ==essencial== |\n| (7) | C3, A5 | IFD | fina |\n\n- Polias **pares** (A2, A4) sobre ossos; **ímpares** (A1, A3, A5) sobre articulações.\n\n### Efeito corda de arco\n- Tendão se afasta do osso na flexão: aumenta o braço de alavanca na base, **perde excursão** na ponta e força de flexão da IFD.\n- Reconstrução: tira de tendão em torno da falange (sob o extensor na A2, por cima na A4), loop triplo.\n\n### Escaladores\n- Ruptura da A2 (e A3, A4) por pegada em crimp.\n\n> **Na prova:** polias essenciais = ==A2 e A4== (2 e 6 na figura).",
-  "correta": "**A2 e A4.**\n- São as polias longas sobre as diáfises da falange proximal e média.\n- Sua perda produz o efeito corda de arco.",
+  "conceito": "Na bainha digital, cinco polias anulares e três cruciformes seguram o tendão contra o osso. Duas delas fazem quase todo o trabalho contra a corda de arco: a A2 e a A4.\n\n**O que o Green diz** (cap. 6). As **polias anulares** são mais grossas e rígidas e mantêm o tendão contra o osso; as **cruciformes** são finas e flexíveis. O livro insiste em que é **imperativo preservar os elementos cruciais do sistema de polias, especialmente as polias A2 e A4**, e coloca a presença de **A2 e A4 como requisito mínimo** em qualquer reconstrução. Nos reparos, a bainha é aberta em \"janelas\" **entre A2 e A4**, sem sacrificá-las.\n\n**Onde elas ficam.** A **A2** está sobre a **falange proximal**; a **A4**, sobre a **falange média**. São as polias diafisárias, longas, que mais resistem à saída do tendão em flexão. As polias ímpares (A1, A3, A5) ficam sobre as articulações.\n\n**Na figura.** Na numeração da imagem, as polias assinaladas como 2 e 6 correspondem à A2 e à A4, contando as anulares e as cruciformes em sequência.\n\n**O que a banca quis testar.** As polias mais importantes contra a corda de arco. O resumo Lesões dos tendões flexores traz o sistema de polias.",
+  "correta": "**B: dois e seis.** Correspondem às polias A2 e A4, as mais importantes contra a corda de arco (Green, cap. 6).",
   "incorretas": {
-   "A": "**A1 e cruciforme.**\n- A A1 pode ser sacrificada, e a cruciforme não retém o tendão.",
-   "C": "**Metade certa.**\n- A A4 é essencial, mas o nº 3 é cruciforme.",
-   "D": "**Nº 4 é A3.**\n- A A3 é fina e sua perda isolada é tolerada."
+   "A": "**Inclui uma polia articular.** A polia sobre a metacarpofalângica (A1) não é a principal contra a corda de arco.",
+   "C": "**Inclui uma cruciforme.** As cruciformes são finas e flexíveis; as essenciais são a A2 e a A4.",
+   "D": "**Falta a A4.** A A4, sobre a falange média, é a outra polia indispensável."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), polias e reconstrução",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0093": {
@@ -2712,27 +2728,35 @@
   "conferido": false
  },
  "mao-0230": {
+  "conceito": "A técnica de PANEVA-HOLEVICH resolve a falta de enxerto usando um tendão que já está ali: o flexor superficial do próprio dedo.\n\n**A técnica, no Green** (cap. 6, Fig. 6.35). Publicada em **1969**, em **dois estágios**:\n1. Os tendões lesados são **retirados da bainha** e **seccionados na palma**; as pontas do **superficial e do profundo são suturadas entre si** na palma, criando a junção proximal.\n2. Cerca de **6 semanas** depois, o **superficial é seccionado na junção miotendínea**, no antebraço, e **passado distalmente pela bainha** até a falange distal ou o coto do profundo.\n\n**As vantagens.** O dedo fica com **um tendão**, mas o segundo estágio exige **um único reparo distal**, e o segmento transplantado é **intrassinovial**, do próprio superficial. Pode ser uma boa solução para dedos muito lesados.\n\n**Por que os outros não.** **Plantar** e **palmar longo** são os enxertos livres da reconstrução clássica; o **flexor radial do carpo** não é usado aqui; o **profundo** é o tendão que recebe o enxerto, não o doador.\n\n**O que a banca quis testar.** O tendão usado como enxerto no PANEVA-HOLEVICH. O resumo Lesões dos tendões flexores traz a técnica.",
+  "correta": "**E: flexor superficial dos dedos.** No segundo estágio, o superficial é seccionado no antebraço e passado pela bainha como enxerto (Green, cap. 6).",
   "incorretas": {
-   "A": "O plantar é usado como enxerto livre em outras técnicas, exigindo uma incisão na perna.",
-   "B": "O palmar longo é o enxerto livre mais usado em outras técnicas, e não caracteriza a de Paneva-Holevich.",
-   "C": "O flexor radial do carpo é usado em reconstruções ligamentares, como a de Eaton-Littler, e não como enxerto nesta técnica.",
-   "D": "O flexor profundo é o tendão que se quer reconstruir, o receptor, e não o enxerto."
+   "A": "**É enxerto livre clássico.** O plantar é usado na reconstrução antebraço-ponta, não no PANEVA-HOLEVICH.",
+   "B": "**Também é enxerto livre.** O palmar longo é o preferido na reconstrução palma-dedo em um tempo.",
+   "C": "**Não é usado.** O flexor radial do carpo não faz parte da técnica.",
+   "D": "**É o receptor.** O profundo é unido ao superficial na palma; o doador é o superficial."
   },
-  "conceito": "Quando um **tendão flexor** está lesado há muito tempo (lesão crônica) e a bainha cicatrizou, a reconstrução costuma ser feita em **dois tempos**. A **técnica de Paneva-Holevich** é uma forma engenhosa de fazer isso **sem retirar um enxerto de outro lugar** do corpo.\n\n**Como funciona**:\n\n**primeiro tempo**:\n\ncoloca-se uma **haste de silicone** (técnica de Hunter) no lugar do tendão, dentro do dedo. O corpo forma ao redor dela uma nova bainha lisa (pseudobainha);\n\nna **palma**, o **flexor superficial dos dedos** (FSD) e o **flexor profundo** (FPD) do mesmo dedo são **suturados um ao outro**, formando uma alça em U;\n\nreconstroem-se as polias, se necessário;\n\n**segundo tempo** (cerca de 3 meses depois):\n\no **FSD** é cortado lá em cima, no antebraço;\n\nele é então **virado** e passado pela nova bainha, no lugar da haste, até ser preso na falange distal.\n\n**As vantagens**:\n\no enxerto é o próprio **FSD**, que mantém seus **vasos** (é pediculado);\n\na sutura da palma, entre FSD e FPD, já está **cicatrizada** quando se faz o segundo tempo;\n\nnão é preciso retirar um tendão de outra região.\n\n**Os enxertos livres usados em outras técnicas**: palmar longo (o mais usado, ausente em cerca de 15% das pessoas), plantar e extensores longos dos dedos do pé.\n\n**Na prova**: a técnica de Paneva-Holevich usa o flexor superficial dos dedos como enxerto pediculado.",
-  "correta": "Na técnica de Paneva-Holevich, o flexor superficial, suturado ao profundo na palma, é virado e levado até a falange distal como enxerto pediculado.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), técnica em estágios de PANEVA-HOLEVICH (Fig. 6.35)",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0231": {
+  "conceito": "O enxerto é um tendão sem bainha própria, passado por um leito que já cicatrizou uma vez. A complicação mais esperada é que ele se cole ao caminho.\n\n**Os enxertos, no Green** (cap. 6). Os mais populares são o **palmar longo**, para a reconstrução **palma-dedo**, e o **plantar delgado**, para a **antebraço-ponta do dedo**. O autor prefere o palmar longo por estar **no mesmo campo cirúrgico** e ser acessível. A presença é avaliada antes: o teste de **SCHAEFFER** (oposição do polegar ao mínimo com o punho fletido contra resistência) é o mais preciso; o comprimento, porém, não é previsível pelo exame.\n\n**A junção proximal.** O **entrelaçamento de PULVERTAFT** é o método preferido para unir o enxerto nas zonas 3, 4 e 5: um tendão atravessa o outro várias vezes, o que permite juntar **tendões de diâmetros diferentes** com muita resistência.\n\n**As complicações.** As **aderências** limitam a excursão do enxerto e o movimento; um enxerto **avançado demais e inserido com força excessiva** causa **efeito quadriga**.\n\n**A comparação com o reparo primário.** O livro registra que, apesar de todos os avanços, as **aderências** entre o tendão e a bainha, com rigidez, continuam entre as complicações **mais comuns** também do reparo intrassinovial. No enxerto, com mais cicatriz e menos bainha, o problema é ainda maior.\n\n**Os distratores.** A **ruptura** e o **efeito quadriga** existem, mas são menos frequentes; a **necrose** do enxerto não é a complicação típica; a **síndrome de PARKES** é o dedo lumbrical-plus, em que o enxerto longo demais deixa o lumbrical puxando.\n\n**O que a banca quis testar.** A complicação mais comum do enxerto de flexor. O resumo Lesões dos tendões flexores traz a reconstrução.",
+  "correta": "**C: aderência.** As aderências limitam a excursão do enxerto e o movimento e são a complicação mais frequente (Green, cap. 6).",
   "incorretas": {
-   "A": "A ruptura ocorre nas junções das suturas, mas é menos frequente que a aderência.",
-   "B": "A necrose é rara: o enxerto sobrevive por embebição até ser revascularizado.",
-   "D": "O efeito quadriga resulta de um enxerto curto demais, um erro de tensão evitável, e não é a complicação mais comum.",
-   "E": "A síndrome de Parkes-Weber é uma malformação vascular congênita, sem relação com enxertos de tendão."
+   "A": "**Acontece, mas é menos comum.** A ruptura do enxerto não é a complicação mais frequente.",
+   "B": "**Não é típica.** O enxerto se integra por revascularização; a necrose não é a complicação esperada.",
+   "D": "**Acontece com enxerto tenso.** O quadriga é menos frequente que as aderências.",
+   "E": "**É o dedo lumbrical-plus.** A síndrome de PARKES vem de enxerto longo demais, e é rara."
   },
-  "conceito": "Quando um tendão flexor é reconstruído com um **enxerto de tendão**, o enxerto é inicialmente um tecido \"solto\", sem irrigação própria. Ele sobrevive porque o **leito** ao redor cria novos vasos que crescem em direção a ele (revascularização).\n\n**A complicação mais comum, a aderência**: os mesmos tecidos que levam sangue ao enxerto também **o prendem** ao leito. Formam-se pontes de cicatriz entre o enxerto e as estruturas vizinhas, e o tendão **perde o deslizamento**. O dedo fica com movimento limitado.\n\n**Outras complicações**:\n\n**ruptura**: nas junções das suturas, mas é menos frequente;\n\n**efeito quadriga**: quando o enxerto fica **curto demais**, impedindo os dedos vizinhos de dobrar;\n\n**dedo lumbrical plus**: quando o enxerto fica **longo e frouxo**, causando extensão paradoxal;\n\n**contratura em flexão** da interfalângica proximal;\n\n**corda de arco**: quando as polias são insuficientes.\n\n**Como prevenir as aderências**:\n\noperar só com as **articulações móveis**, **pele boa** e polias reconstruídas;\n\ntécnica delicada, com as suturas fora da bainha;\n\n**mobilização precoce**;\n\nse a aderência limitar muito, fazer uma **tenólise** (liberação cirúrgica do tendão) após 3 a 6 meses.\n\n**Sobre a síndrome de Parkes-Weber**: é uma **malformação vascular congênita**, com comunicações anormais entre artérias e veias. Não tem relação com enxertos de tendão.\n\n**Na prova**: a complicação mais comum da reconstrução flexora com enxerto é a aderência.",
-  "correta": "Os tecidos que revascularizam o enxerto também o prendem ao leito, e a aderência é a complicação mais comum.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), reconstrução com enxerto e complicações",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0232": {
@@ -3927,14 +3951,18 @@
   "conferido": false
  },
  "mao-0320": {
-  "conceito": "### Vínculas dos flexores\n| Vínculo | Tendão | Posição |\n|---|---|---|\n| ==curta do superficial== | FSD | ==duas, junto à inserção== na falange média (uma por banda) |\n| longa do superficial | FSD | proximal, falange proximal |\n| curta do profundo | FPD | junto à inserção, falange média distal |\n| longa do profundo | FPD | fina, passa entre as bandas do superficial ao nível da falange proximal |\n\n- Levam irrigação ==dorsal== ao tendão; a face volar é avascular (nutrição por difusão sinovial).\n\n### Leddy e Packer (avulsão do FPD)\n| Tipo | Nível de retração | Vínculas |\n|---|---|---|\n| I | palma | ambas rompidas; operar em até 7 a 10 dias |\n| II | IFP | ==vínculo longa íntegra== |\n| III | A4 (fragmento ósseo) | ambas íntegras |\n| IV | fragmento + avulsão do tendão | |\n\n> **Na prova:** par de vínculas junto à inserção do superficial = ==vínculas curtas do FSD==.",
-  "correta": "**Vínculas curtas do superficial.**\n- Duas, uma para cada banda, junto à inserção.\n- Irrigam o tendão pela face dorsal.\n- Determinam quanto o tendão retrai (Leddy e Packer).",
+  "conceito": "Os vínculos são pequenos mesentérios que levam sangue aos tendões flexores dentro da bainha. Os curtos ficam junto às inserções; os longos, mais acima.\n\n**Os vínculos, no Green** (cap. 6):\n- **Vínculo curto do superficial** e **vínculo curto do profundo**: pequenos **mesentérios triangulares** **perto da inserção** de cada tendão. O do superficial fica junto à inserção na **falange média**, perto da interfalângica proximal; o do profundo, junto à inserção na **falange distal**.\n- **Vínculo longo do superficial**: nasce do **assoalho da bainha** sobre a **falange proximal**.\n- **Vínculo longo do profundo**: nasce do **superficial**, no nível da **interfalângica proximal**.\n\n**Por que importam.** Levam sangue à face dorsal dos tendões; a face palmar, nas zonas 1 e 2, é relativamente avascular. Na avulsão do profundo, quanto mais vínculos se rompem, mais o coto retrai e mais grave é a lesão (LEDDY e PACKER).\n\n**Como reconhecer na imagem.** Um mesentério triangular curto, junto à inserção do superficial na falange média, é o vínculo curto do superficial.\n\n**O que a banca quis testar.** O reconhecimento do vínculo curto do superficial. O resumo Lesões dos tendões flexores traz a anatomia.",
+  "correta": "**C: curta do flexor superficial dos dedos.** É o mesentério triangular junto à inserção do superficial (Green, cap. 6).",
   "incorretas": {
-   "A": "**Única e mais distal.**\n- Na falange média, junto à inserção do FPD.",
-   "B": "**Fina e longa.**\n- Retém o FPD na IFP (Leddy II).",
-   "D": "**Única e proximal.**\n- Não forma o par indicado."
+   "A": "**Fica mais distal.** O vínculo curto do profundo está junto à inserção na falange distal.",
+   "B": "**Nasce do superficial.** O vínculo longo do profundo sai do superficial na interfalângica proximal.",
+   "D": "**Fica mais proximal.** O vínculo longo do superficial nasce do assoalho da bainha sobre a falange proximal."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), anatomia: vínculos",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0321": {
@@ -6181,14 +6209,18 @@
   }
  },
  "mao-0522": {
+  "conceito": "Os flexores profundos dos dedos médio, anelar e mínimo saem de um ventre muscular praticamente comum. Se um deles fica curto demais, ele chega ao fim da sua excursão antes dos outros e trava o conjunto.\n\n**O que o Green diz** (cap. 6). Um tendão **avançado demais e inserido com força excessiva leva à quadriga**. Por isso, na zona 1, quando há **mais de 1 cm de coto distal**, o livro prefere a tenorrafia ao avanço, para **evitar encurtar o tendão** e criar um **efeito quadriga** nos profundos intactos. A **síndrome de quadriga** se manifesta como **diminuição da flexão de um dedo normal** vizinho.\n\n**O nome.** Quadriga era a carruagem romana de quatro cavalos guiada por um só conjunto de rédeas: se uma rédea fica curta, os outros cavalos não avançam.\n\n**Por que as outras não.** A **amputação da falange distal** e a **avulsão do profundo** não encurtam o tendão funcionante; o **enxerto longo demais**, ao contrário, deixa o lumbrical puxar e causa o **dedo lumbrical-plus**, não a quadriga.\n\n**O que a banca quis testar.** A causa do efeito quadriga. O resumo Lesões dos tendões flexores traz a reconstrução.",
+  "correta": "**A: excessiva tensão do enxerto.** Um enxerto curto ou tenso demais encurta o profundo e limita a flexão dos dedos vizinhos (Green, cap. 6).",
   "incorretas": {
-   "B": "A amputação da falange distal sem continuidade do flexor profundo leva ao lumbrical plus; a quadriga só aparece se o coto do profundo for suturado sob tensão.",
-   "C": "A avulsão do flexor profundo deixa o tendão sem continuidade distal, o que favorece o lumbrical plus, e não a quadriga.",
-   "D": "O enxerto longo, que sobra comprimento, causa o lumbrical plus."
+   "B": "**Não encurta o tendão funcionante.** A amputação da falange distal não causa o efeito quadriga.",
+   "C": "**É a lesão, não a causa.** O quadriga aparece quando o reparo ou o enxerto deixam o tendão curto demais.",
+   "D": "**Causa o contrário.** O enxerto longo demais deixa o lumbrical puxando e produz o dedo lumbrical-plus."
   },
-  "conceito": "Os **flexores profundos** dos dedos longos (médio, anelar e mínimo, às vezes o indicador) saem de um **ventre muscular comum**. É como quatro rédeas presas na mesma mão: se uma ficar curta demais, as outras não conseguem ser puxadas até o fim.\n\n**O efeito quadriga**: quando o flexor profundo de um dedo é **encurtado** (avanço de mais de 1 cm, **enxerto curto ou com tensão excessiva**, coto suturado ao extensor numa amputação), esse dedo fecha primeiro e o ventre comum esgota a excursão. Os **dedos vizinhos não conseguem fechar** a mão por completo, e a força de preensão cai.\n\n**O lumbrical plus, o oposto**: quando o flexor profundo perde a continuidade distal (secção distal ao lumbrical, **amputação** da falange distal, **avulsão** do profundo ou **enxerto longo e frouxo**), o profundo puxa a origem do **lumbrical**. Ao tentar fechar a mão com força, as IF **estendem** de forma paradoxal. Trata-se com a secção do lumbrical.\n\n**A prevenção da quadriga**: ajustar a **tensão** do enxerto com cuidado (o dedo deve ficar um pouco mais fletido que o vizinho na cascata), avançar o profundo no máximo 1 cm na zona I e não suturar o profundo ao extensor no coto de amputação.\n\n**Na prova**: quadriga com enxerto = **tensão excessiva** (enxerto curto); enxerto longo = **lumbrical plus**.",
-  "correta": "Um enxerto curto, com tensão excessiva, esgota a excursão do ventre comum dos flexores profundos, e os dedos vizinhos não fecham.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), zona 1 e reconstrução",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
+  ],
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0523": {
@@ -6835,17 +6867,18 @@
   "conferido": false
  },
  "mao-0572": {
+  "conceito": "O melhor enxerto é o que está perto, é fino, é longo o bastante e não faz falta. Para a reconstrução palma-dedo, esse tendão é o palmar longo.\n\n**Os enxertos, no Green** (cap. 6). Os mais populares são o **palmar longo**, para a reconstrução **palma-dedo**, e o **plantar delgado**, para a **antebraço-ponta do dedo**. O autor prefere o palmar longo por estar **no mesmo campo cirúrgico** e ser acessível. A presença é avaliada antes: o teste de **SCHAEFFER** (oposição do polegar ao mínimo com o punho fletido contra resistência) é o mais preciso; o comprimento, porém, não é previsível pelo exame.\n\n**A junção proximal.** O **entrelaçamento de PULVERTAFT** é o método preferido para unir o enxerto nas zonas 3, 4 e 5: um tendão atravessa o outro várias vezes, o que permite juntar **tendões de diâmetros diferentes** com muita resistência.\n\n**As complicações.** As **aderências** limitam a excursão do enxerto e o movimento; um enxerto **avançado demais e inserido com força excessiva** causa **efeito quadriga**.\n\n**Quando o plantar.** O **plantar delgado** é mais longo e serve para a reconstrução **antebraço-ponta do dedo**, quando o palmar longo não basta. Os **extensores dos dedos do pé** também podem ser usados em reconstruções de vários dedos, mas não são a primeira escolha.\n\n**O que a banca quis testar.** O enxerto preferencial. O resumo Lesões dos tendões flexores traz a reconstrução.",
+  "correta": "**A: palmar longo.** É o enxerto preferido para a reconstrução palma-dedo, por estar no mesmo campo cirúrgico (Green, cap. 6).",
   "incorretas": {
-   "B": "O plantar delgado é a segunda opção: exige outro campo cirúrgico e também pode estar ausente.",
-   "C": "Os extensores longos dos dedos do pé servem como alternativa, sobretudo para vários enxertos, mas não são a primeira escolha.",
-   "D": "O extensor comum dos dedos da mão está em uso; retirá-lo troca um déficit por outro."
+   "B": "**Para reconstruções mais longas.** O plantar delgado é usado na reconstrução antebraço-ponta do dedo.",
+   "C": "**Não é a primeira escolha.** O extensor longo dos dedos do pé fica reservado a reconstruções múltiplas.",
+   "D": "**Faria falta.** Os extensores comuns da mão não são usados como enxerto de flexor."
   },
-  "conceito": "Na **reconstrução dos tendões flexores** em dois tempos, ou no enxerto primário, o enxerto ideal precisa ter o calibre e o comprimento certos, ser fácil de colher e poder ser dispensado sem prejuízo.\n\n**O palmar longo** é o **preferido**: fica no **mesmo campo cirúrgico** (o antebraço), tem calibre parecido com o do flexor do dedo, comprimento suficiente (cerca de 10 a 15 cm) e não faz falta. O problema é que está **ausente em cerca de 15%** das pessoas, de um ou dos dois lados, por isso se testa antes.\n\n**Os testes de presença**: o clássico é a **oposição do polegar ao mínimo** com o punho fletido contra resistência (Schaeffer); outros são os de Thompson e de Mishra.\n\n**As alternativas, quando falta o palmar longo ou é preciso enxerto mais longo**:\n\n**plantar delgado**: longo, mas exige outro campo (a perna) e também pode faltar;\n\n**extensores longos dos dedos do pé**: úteis para vários enxertos, em outro campo;\n\n**flexor superficial** ou extensores próprios da mão, em situações específicas.\n\n**O que não se usa**: tendões que estão funcionando, como o **extensor comum dos dedos** da mão; tirar um deles troca um déficit por outro.\n\n**Referência cirúrgica**: no punho, o **mediano** fica logo abaixo e **radial** ao palmar longo, e corre risco na coleta.\n\n**Na prova**: enxerto preferencial para tendão flexor = **palmar longo**.",
-  "correta": "O palmar longo está no mesmo campo, tem calibre e comprimento adequados e é dispensável, por isso é o enxerto preferido.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 71"
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), reconstrução: obtenção de enxertos",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0573": {
@@ -7174,17 +7207,18 @@
   }
  },
  "mao-0591": {
+  "conceito": "Quando um tendão fino precisa ser ligado a um grosso, as suturas de ponta a ponta perdem força. A solução é entrelaçar: passar um tendão através do outro.\n\n**Os enxertos, no Green** (cap. 6). Os mais populares são o **palmar longo**, para a reconstrução **palma-dedo**, e o **plantar delgado**, para a **antebraço-ponta do dedo**. O autor prefere o palmar longo por estar **no mesmo campo cirúrgico** e ser acessível. A presença é avaliada antes: o teste de **SCHAEFFER** (oposição do polegar ao mínimo com o punho fletido contra resistência) é o mais preciso; o comprimento, porém, não é previsível pelo exame.\n\n**A junção proximal.** O **entrelaçamento de PULVERTAFT** é o método preferido para unir o enxerto nas zonas 3, 4 e 5: um tendão atravessa o outro várias vezes, o que permite juntar **tendões de diâmetros diferentes** com muita resistência.\n\n**As complicações.** As **aderências** limitam a excursão do enxerto e o movimento; um enxerto **avançado demais e inserido com força excessiva** causa **efeito quadriga**.\n\n**Os distratores.** **KESSLER**, **TAJIMA** e a técnica de **INDIANA** são suturas centrais de **ponta a ponta**, feitas para tendões de calibre parecido na zona 2. Elas não lidam bem com diâmetros diferentes.\n\n**O que a banca quis testar.** A sutura para tendões de diâmetros diferentes. O resumo Lesões dos tendões flexores traz a reconstrução.",
+  "correta": "**D: PULVERTAFT.** O entrelaçamento de PULVERTAFT une tendões de diâmetros diferentes e é o preferido para a junção proximal do enxerto (Green, cap. 6).",
   "incorretas": {
-   "A": "A sutura de Tajima é usada no reparo término-terminal de tendões do mesmo calibre.",
-   "B": "A sutura Indiana é um reparo término-terminal de vários passes, para o mesmo tendão.",
-   "C": "A sutura de Kessler é o reparo término-terminal clássico, para cotos do mesmo calibre."
+   "A": "**É ponta a ponta.** A sutura de TAJIMA serve para tendões de calibre semelhante.",
+   "B": "**Também ponta a ponta.** A técnica de INDIANA é uma sutura central de vários fios para reparo primário.",
+   "C": "**Sutura central clássica.** O KESSLER une pontas de calibre parecido."
   },
-  "conceito": "A técnica de **sutura de tendão** depende de como os cotos se encontram.\n\n**Reparo término-terminal**, dois cotos do **mesmo tendão** e do mesmo calibre, como no corte de um flexor:\n\n**Kessler (e Kessler modificado)**: dois passes, o clássico;\n\n**Tajima**: variação com os nós dentro dos cotos;\n\n**Indiana, Strickland, Savage, Adelaide**: com mais passes (4 a 6), mais resistentes, permitindo movimento ativo precoce.\n\n**Tendões de calibres diferentes**, como numa **transferência** de tendão ou ao prender um **enxerto** ao coto:\n\n**Pulvertaft**: o tendão mais fino é **entrelaçado** várias vezes através do mais grosso, por fendas em direções alternadas, e fixado com pontos. É a união mais **resistente** nessas situações, e permite ajustar a tensão.\n\n**Na prova**: tendões de **diâmetros diferentes** = sutura de **Pulvertaft**.",
-  "correta": "O entrelaçamento de Pulvertaft une tendões de calibres diferentes, passando o mais fino através do mais grosso, e é o padrão em transferências e enxertos.",
   "referencias": [
-   "Canale: Campbell's Operative Orthopaedics, 11th Ed., p. 3863 (referência indicada na prova TARO 2013, questão 20)"
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), reconstrução: junção proximal",
+   "Biblioteca OrtoQuestões, resumo Lesões dos tendões flexores (green8-tendoes-flexores)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-30",
   "conferido": false
  },
  "mao-0592": {
@@ -41789,6 +41823,96 @@
   "referencias": [
    "Green's Operative Hand Surgery, 8ª ed., caps. 35 a 38 (Mão pediátrica)",
    "Green's Operative Hand Surgery, 8ª ed., cap. 38 (Malformações do punho e do antebraço), Deficiência transversal (procedimento de KRUKENBERG)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2592": {
+  "conceito": "Dentro da bainha digital, o tendão flexor vive de duas fontes e corre sob um sistema de roldanas. Entender essas duas coisas explica a cicatrização, as aderências e a corda de arco.\n\n**A nutrição, no Green** (cap. 6). Na zona 2, a nutrição é **dupla**: **perfusão vascular** e **difusão sinovial**. O corte transversal mostra a **avascularidade relativa da face palmar** dos tendões nas **zonas 1 e 2**, em contraste com a irrigação mais rica da **face dorsal**, que se liga aos vínculos.\n\n**Os vínculos.** O suprimento segmentar chega por **vínculos curtos e longos**:\n- **Vínculo curto do superficial** e **vínculo curto do profundo**: pequenos mesentérios triangulares **perto das inserções** dos dois tendões.\n- **Vínculo longo do superficial**: nasce do **assoalho da bainha** na **falange proximal**.\n- **Vínculo longo do profundo**: nasce do **superficial**, no nível da **interfalângica proximal**.\n\n**As polias.** As **anulares** são mais grossas e rígidas e mantêm o tendão contra o osso; as **cruciformes**, mais finas e flexíveis, permitem que a bainha dobre. O Green insiste em **preservar as polias A2 e A4**, requisito mínimo em qualquer reconstrução; o reparo é feito por \"janelas\" entre elas.\n\n**Por que isso importa.** Os vínculos explicam a classificação de LEDDY e PACKER (quanto o coto retrai, quanto sangue perdeu); a difusão sinovial explica por que a bainha íntegra e o deslizamento ajudam a cicatrização; as polias A2 e A4 explicam a corda de arco quando se perdem.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre vínculos, polias e nutrição dos flexores.\n\n> **Na prova:** nutrição = **perfusão + difusão sinovial**; face **palmar** pouco irrigada; vínculos **curtos** (perto das inserções) e **longos**; preservar **A2 e A4**.",
+  "correta": "**B: a nutrição na zona 2 é dupla, por perfusão vascular e difusão sinovial; a face palmar dos tendões nas zonas 1 e 2 é relativamente avascular, e o sangue chega pelos vínculos curtos, junto às inserções, e longos (o do superficial nasce do assoalho da bainha na falange proximal; o do profundo, do superficial na interfalângica proximal); as polias A2 e A4 são o mínimo a preservar.** É a descrição do Green (cap. 6).",
+  "incorretas": {
+   "A": "**São as anulares.** As polias anulares são mais rígidas e mantêm o tendão contra o osso; as cruciformes são finas e flexíveis.",
+   "C": "**Nasce do superficial.** O vínculo longo do profundo sai do tendão superficial, no nível da interfalângica proximal.",
+   "D": "**É a palmar.** A face palmar é relativamente avascular; a dorsal, ligada aos vínculos, é a mais irrigada."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), anatomia: polias, vínculos e nutrição"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2593": {
+  "conceito": "O \"dedo de camisa\" (jersey finger) acontece quando o dedo fletido é estendido à força, e o flexor profundo se solta da falange distal. Onde o coto vai parar decide a urgência.\n\n**A classificação de LEDDY e PACKER, no Green** (cap. 6, Fig. 6.7):\n- **Tipo I:** o tendão profundo é avulsionado e **retrai até a palma**; a **irrigação vincular foi interrompida**. **Reparo cirúrgico urgente**.\n- **Tipo II:** o coto **fica na bainha**, no nível da **interfalângica proximal**; **parte da irrigação vincular é preservada** (o vínculo longo está íntegro). Em alguns casos, o reparo primário pode ser feito até **6 semanas** depois.\n- **Tipo III:** um **grande fragmento ósseo** preso ao coto impede a retração além da **borda distal da polia A4**; trata-se a fratura com fio ou miniparafuso.\n- **Tipo IV** (descrito depois): fratura **e** avulsão do tendão do fragmento; o coto pode estar na bainha ou na palma. Fixa-se a fratura e depois se reinsere o tendão.\n\n**Aplicando ao caso.** Nódulo na **palma** = coto retraído até lá = **tipo I**. Sem os vínculos, o tendão perde irrigação e encurta rapidamente; por isso o reparo é urgente.\n\n**Por que o superficial não basta.** O superficial insere-se na falange média e não flete a interfalângica distal; sem o profundo, a ponta do dedo não dobra.\n\n**Por que esta questão foi criada.** É uma gêmea da questão do TARO sobre o tipo de LEDDY e PACKER com ruptura de ambos os vínculos.\n\n> **Na prova:** **tipo I** = coto na **palma**, **sem vínculos**, **urgente**; **tipo II** = coto na **IFP**, vínculo longo íntegro; **tipo III** = fragmento grande parado na **A4**; **tipo IV** = fratura + avulsão do tendão do fragmento.",
+  "correta": "**A: é a avulsão tipo I de LEDDY e PACKER: o coto retraiu até a palma, com perda da irrigação vincular, e o reparo deve ser urgente.** É a descrição do Green (cap. 6).",
+  "incorretas": {
+   "B": "**O coto ficaria na bainha.** No tipo II o coto para na interfalângica proximal, e o nódulo não estaria na palma.",
+   "C": "**O fragmento impediria a retração.** No tipo III o coto fica preso na borda da polia A4, longe da palma.",
+   "D": "**O superficial não flete a distal.** Ele se insere na falange média; sem o profundo, a ponta do dedo não dobra."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), avulsão do flexor profundo (Fig. 6.7)"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2594": {
+  "conceito": "O reparo do flexor tem duas metas que brigam entre si: ser forte o bastante para aguentar o movimento precoce e fino o bastante para deslizar na bainha. A técnica é o acordo entre as duas.\n\n**As suturas, no Green** (cap. 6):\n- **Sutura central (núcleo):** dá a resistência principal.\n- **Sutura epitendínea (circunferencial):** proposta para alisar o reparo, **aumenta a resistência** do local do reparo, mas **continua sendo complemento** da central. Às vezes, fazê-la primeiro na face dorsal ajuda a orientar o tendão e a tensionar a central.\n- **Volume:** sutura demais aumenta o volume, o trabalho de flexão e o atrito; nós externos longe do reparo podem prender na bainha.\n- **Gap:** a formação precoce de lacunas no reparo prejudica a cicatrização e o ganho de força.\n\n**As lacerações parciais.** Com **mais de 50%** da área transversal lacerada, o autor repara com **sutura central e circunferencial**. Com **menos de 50%**, o tendão é **reparado ou desbridado** para evitar aprisionamento e gatilho.\n\n**A zona 1.** Se o **coto distal** do profundo tem **menos de 1 cm**, indica-se **avanço do tendão e reinserção no osso**. Se há **mais de 1 cm**, faz-se a **tenorrafia primária**, para não encurtar o tendão à toa e criar um **efeito quadriga** nos outros profundos.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre a sutura epitendínea e a conduta na zona 1.\n\n> **Na prova:** epitendínea = **mais resistência**, mas **complemento**; > **50%** = central + circunferencial; zona 1: coto **< 1 cm** = **reinserção**; **> 1 cm** = **tenorrafia** (evita quadriga).",
+  "correta": "**C: a sutura epitendínea (circunferencial) aumenta a resistência do reparo, mas é complemento da sutura central; lacerações de mais de 50% se reparam com sutura central e circunferencial, e as de menos de 50% se reparam ou desbridam; na zona 1, com mais de 1 cm de coto distal, faz-se tenorrafia, e com menos, avanço e reinserção no osso.** É o que o Green descreve (cap. 6).",
+  "incorretas": {
+   "A": "**É complemento.** A epitendínea aumenta a resistência, mas não substitui a sutura central.",
+   "B": "**Inverte o limite.** A sutura central com circunferencial é para lacerações de mais de 50%; as menores se reparam ou desbridam.",
+   "D": "**Encurtaria à toa.** Com mais de 1 cm de coto distal, o Green prefere a tenorrafia, para evitar o efeito quadriga."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), técnica de reparo e reparo na zona 1"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2595": {
+  "conceito": "O tendão reparado precisa de duas coisas que parecem opostas: repouso suficiente para cicatrizar e movimento suficiente para não grudar. A reabilitação moderna é a arte de dar as duas ao mesmo tempo.\n\n**O que o Green diz** (cap. 6):\n- A **formação de aderências** entre o tendão e a bainha fibro-óssea, com **rigidez digital**, **continua sendo uma das complicações mais comuns** do reparo intrassinovial, apesar dos avanços.\n- **Estudos in vivo** sugerem que essas aderências, no reparo e em pontos distantes, **podem ser evitadas** se houver **excursão suficiente do tendão** durante a **reabilitação com movimento passivo**.\n- A **área até 1 cm do reparo** é a **mais ativa**: proliferação e migração celular precoces; há aumento da síntese de colágeno tipo I nas células do reparo e do epitendão.\n- A **manutenção da resistência** do reparo permite aplicar **carga aumentada precoce** e métodos de reabilitação que melhoram a **excursão**.\n- A **lacuna** precoce no reparo atrapalha a cicatrização.\n\n**A ideia por trás.** LUNDBORG validou a **cicatrização intrínseca**, pelo próprio tendão e pelo epitendão, sem precisar de aderências. O movimento controlado estimula essa via e, ao mesmo tempo, impede que o tendão se cole à bainha. A imobilização faz o contrário: favorece a cicatrização extrínseca, por aderências.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre o papel da tensão e da mobilização na cicatrização e nas aderências.\n\n> **Na prova:** aderência = complicação **mais comum**; **excursão** passiva previne; reparo **forte** permite movimento precoce; área mais ativa = **1 cm** do reparo; cicatrização **intrínseca** (LUNDBORG).",
+  "correta": "**D: as aderências entre o tendão e a bainha, com rigidez, continuam entre as complicações mais comuns; estudos in vivo sugerem que podem ser evitadas com excursão suficiente na reabilitação com movimento passivo, e a área até 1 cm do reparo é a mais ativa; manter a resistência do reparo permite carga e excursão precoces.** É o que o Green descreve (cap. 6).",
+  "incorretas": {
+   "A": "**Favorece as aderências.** O Green associa a prevenção das aderências à excursão do tendão na reabilitação.",
+   "B": "**São das mais comuns.** As aderências com rigidez continuam entre as complicações mais frequentes.",
+   "C": "**É até 1 cm.** A área mais ativa da cicatrização fica dentro de 1 cm do reparo."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), cicatrização, aderências e reabilitação"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2596": {
+  "conceito": "Quando o tendão flexor ficou meses sem reparo, os cotos retraem e a bainha cicatriza. A solução é trazer tendão de fora, e o Green descreve qual, como juntar e o que pode dar errado.\n\n**Os enxertos, no Green** (cap. 6). Os mais populares são o **palmar longo**, para a reconstrução **palma-dedo**, e o **plantar delgado**, para a **antebraço-ponta do dedo**. O autor prefere o palmar longo por estar **no mesmo campo cirúrgico** e ser acessível. A presença é avaliada antes da cirurgia: o teste mais preciso é o de **SCHAEFFER**, opor o polegar ao mínimo enquanto flexiona o punho contra resistência; o tendão deve aparecer superficial na linha média do punho. O exame não prevê o comprimento.\n\n**A junção proximal.** O **entrelaçamento de PULVERTAFT** é o método preferido para a junção proximal do enxerto nas zonas 3, 4 e 5; ele une tendões de **diâmetros diferentes** passando um através do outro.\n\n**As complicações.** As **aderências** limitam a excursão do enxerto e o movimento. Um tendão **avançado demais e inserido com força excessiva** leva ao **efeito quadriga**: como os profundos dividem o mesmo ventre muscular, o dedo encurtado chega ao fim da flexão antes e impede os vizinhos de fletir.\n\n**A técnica em estágios de PANEVA-HOLEVICH (1969).** No primeiro estágio, os tendões lesados são retirados da bainha e seccionados na palma, e as pontas do **superficial e do profundo são suturadas entre si** ali. Cerca de **6 semanas** depois, o **superficial** é cortado na junção miotendínea, no antebraço, e passado pela bainha até a falange distal: o próprio **superficial vira o enxerto**.\n\n**Por que esta questão foi criada.** É uma gêmea das questões sobre o enxerto preferido, PULVERTAFT, quadriga e PANEVA-HOLEVICH.\n\n> **Na prova:** enxerto = **palmar longo** (palma-dedo) e **plantar** (antebraço-ponta); teste de **SCHAEFFER**; junção = **PULVERTAFT**; enxerto tenso = **quadriga**; **PANEVA-HOLEVICH** = o **superficial** como enxerto.",
+  "correta": "**B: os enxertos mais usados são o palmar longo, para a reconstrução palma-dedo, e o plantar delgado, para antebraço-ponta do dedo; a junção proximal é feita preferencialmente pelo entrelaçamento de PULVERTAFT; um enxerto apertado demais causa efeito quadriga, e no PANEVA-HOLEVICH o próprio superficial é passado como enxerto no segundo estágio.** É o que o Green descreve (cap. 6).",
+  "incorretas": {
+   "A": "**É o palmar longo.** O Green prefere o palmar longo para a reconstrução palma-dedo.",
+   "C": "**Precisa de oposição.** O teste de SCHAEFFER pede oposição do polegar ao mínimo com flexão do punho contra resistência.",
+   "D": "**Usa o superficial.** Na técnica em estágios, o superficial é seccionado no antebraço e passado pela bainha como enxerto."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), reconstrução: enxerto, junção proximal e técnica em estágios"
+  ],
+  "geradoEm": "2026-10-30",
+  "conferido": false
+ },
+ "mao-2597": {
+  "conceito": "O enxerto de tendão só funciona num leito que deixe o tendão deslizar e num dedo que se mova. Se o dedo estiver rígido ou o leito destruído, o enxerto gruda e o resultado é pior que o de antes.\n\n**A avaliação, no Green** (cap. 6, Tabela 6.2). A classificação de **BOYES** gradua o dedo antes da reconstrução:\n- **Bom (grau 1):** cicatrizes mínimas, **articulações móveis**, sem alterações tróficas.\n- **Cicatriz:** cicatrizes pesadas na pele por lesão ou cirurgia anterior.\n- **Dano articular:** articulação lesada com amplitude restrita.\n- **Dano nervoso:** lesão dos nervos digitais.\n- Outros graus somam lesões.\n\nO dedo ideal para o enxerto em um tempo é o de **grau 1**, sem contratura e com **movimento passivo completo**; PULVERTAFT dizia que a mão deve estar em boas condições gerais.\n\n**As polias.** O Green manda avaliar a integridade do sistema de polias: **a presença das polias A2 e A4 é um requisito mínimo**; se possível, um sistema de três ou quatro polias.\n\n**Quando não é um tempo só.** Com cicatriz importante, rigidez ou polias destruídas, a reconstrução vai para **dois estágios**: primeiro um espaçador (de silicone) e a reconstrução das polias, para formar uma nova bainha; depois o enxerto. A técnica de PANEVA-HOLEVICH é outra opção em estágios.\n\n**Por que esta questão foi criada.** É uma gêmea da questão do TARO sobre a condição que indica o enxerto primário.\n\n> **Na prova:** enxerto em um tempo = **BOYES 1** (dedo móvel, pele boa) + **polias A2 e A4**; rigidez, cicatriz ou polias perdidas = **dois estágios**.",
+  "correta": "**A: o dedo ideal tem movimento passivo completo, pele com cicatriz mínima e articulações móveis (grau 1 de BOYES), e a presença das polias A2 e A4 é requisito mínimo.** É a avaliação descrita no Green (cap. 6).",
+  "incorretas": {
+   "B": "**É o contrário.** A rigidez articular piora o resultado e empurra para a reconstrução em estágios.",
+   "C": "**Falta o mínimo.** Sem as polias A2 e A4, o enxerto faz corda de arco; elas precisam ser reconstruídas antes.",
+   "D": "**Não contraindica.** A lesão nervosa é um dos graus de BOYES e piora o prognóstico, mas não impede a reconstrução."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), reconstrução: avaliação pré-operatória (Tabela 6.2) e polias"
   ],
   "geradoEm": "2026-10-30",
   "conferido": false
