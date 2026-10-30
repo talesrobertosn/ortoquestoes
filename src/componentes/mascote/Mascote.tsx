@@ -1,18 +1,17 @@
-import { useEffect, useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { ler, gravar } from '../../estado/armazenamento'
 import { COMPORTAMENTOS, fantasiaDoMes, type Fantasia, type IdComportamento } from './comportamentos'
-import { SPRITE_ESQUELETO, linhaEsqueleto, LINHAS_ESQUELETO } from './sprites'
-import { urlCss } from '../../config'
+import { svgMascote } from './desenho'
 import { FALAS, FALAS_GERAIS, FALAS_HALLOWEEN } from './falas'
 import './Mascote.css'
 
 /**
- * O mascote do Orto Questões (30/10/2026): o esqueletinho de armadura em pixel art HD-2D, pintado por
- * scripts/gerar_mascote.py (uma linha da folha por comportamento, 8 quadros). A cada visita ele aparece fazendo uma
+ * O mascote do Orto Questões (31/10/2026, "modelo E" escolhido pelo Tales): o esqueletinho chibi de armadura em
+ * traço limpo de desenho, em vetor (desenho.ts), nítido em qualquer tamanho e animado só com CSS. A cada visita ele aparece fazendo uma
  * coisa diferente da anterior e fala frases daquela situação. Clicar troca o que está fazendo; cinco cliques seguidos
  * e ele cochila. Em outubro veste o manto de Halloween (foice, lanterna de abóbora, castiçal e morcegos).
  *
- * Reaproveitável em qualquer página: <Mascote /> ocupa o tamanho que o CSS der (proporção 96 x 128) e pode receber
+ * Reaproveitável em qualquer página: <Mascote /> ocupa o tamanho que o CSS der (proporção 3 x 4, pés embaixo) e pode receber
  * um comportamento fixo, uma fantasia, ficar sem falas ou sem clique (interativo={false}, dentro de um link).
  */
 const CHAVE = 'mascote:ultimo'
@@ -77,12 +76,8 @@ export function Mascote({ comportamento, fantasia: fixa, falar = true, interativ
   }
 
   const nome = COMPORTAMENTOS.find((c) => c.id === atual)?.nome ?? ''
-  const desenho = (
-    <span className="mascote__sprite" aria-hidden="true" style={{
-      '--sprite': urlCss(SPRITE_ESQUELETO.src.slice(1)), '--linha': linhaEsqueleto(atual), '--linhas': LINHAS_ESQUELETO.length,
-      '--quadros': SPRITE_ESQUELETO.quadrosPorLinha, '--dur': atual === 'dormir' ? '2.6s' : atual === 'malabares' || atual === 'acenar' ? '1.1s' : '1.5s',
-    } as CSSProperties} />
-  )
+  const svg = useMemo(() => svgMascote(atual), [atual])
+  const desenho = <span className="mascote__desenho" aria-hidden="true" dangerouslySetInnerHTML={{ __html: svg }} />
   return (
     <span className={`mascote mascote--${atual} ${className}`} style={style}>
       {interativo

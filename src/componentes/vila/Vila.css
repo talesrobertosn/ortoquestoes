@@ -66,7 +66,7 @@
 @keyframes vl-brasa { 0% { opacity: 0; transform: translate(0, 20px); } 25% { opacity: 1; } 100% { opacity: 0; transform: translate(-8px, -30px); } }
 
 /* Fora da tela ou com "menos animação", tudo para. */
-.vl--parado :is(.vl-ceu i, .vl-segredo__brilho, .mascote__sprite) { animation-play-state: paused; }
+.vl--parado :is(.vl-ceu i, .vl-segredo__brilho, .mascote svg *) { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) {
   .vl-palco, .vl-ceu i, .vl-segredo__brilho, .vl-balao { animation: none; }
   .vl-chuva, .vl-nuvem, .vl-vagalume, .vl-poeira, .vl-brasa { display: none; }
