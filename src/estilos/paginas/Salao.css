@@ -247,32 +247,34 @@
   background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.025) 0 2px, transparent 2px 34px), var(--sl-fundo);
   box-shadow: inset 16px 0 0 var(--sl-madeira), inset -16px 0 0 var(--sl-madeira), inset 0 14px 0 var(--sl-madeira), inset 19px 0 0 var(--sl-k), inset -19px 0 0 var(--sl-k), inset 0 17px 0 var(--sl-k), inset 0 30px 30px rgba(0, 0, 0, 0.35), 6px 6px 0 rgba(0, 0, 0, 0.3); }
 .sl-prateleiras { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0 3px; margin: 0; padding: 0 10px; list-style: none;
-  background-image: repeating-linear-gradient(180deg, transparent 0 124px, var(--sl-k) 124px 126px, var(--sl-madeira-clara) 126px 130px, var(--sl-madeira) 130px 136px, var(--sl-k) 136px 138px); }
-.sl-prateleiras > li { display: flex; align-items: flex-end; height: 138px; padding-bottom: 14px; transition: opacity 0.3s; }
+  background-image: repeating-linear-gradient(180deg, transparent 0 190px, var(--sl-k) 190px 192px, var(--sl-madeira-clara) 192px 196px, var(--sl-madeira) 196px 202px, var(--sl-k) 202px 204px); }
+.sl-prateleiras > li { display: flex; align-items: flex-end; height: 204px; padding-bottom: 14px; transition: opacity 0.3s; }
 .sl-li--apagada { opacity: 0.2; pointer-events: none; }
 
 .sl-lombada { position: relative; display: block; width: var(--larg); height: var(--alt); border-radius: 2px 2px 0 0; text-decoration: none;
   background:
-    linear-gradient(180deg, transparent 10px, rgba(255, 220, 140, 0.85) 10px 13px, transparent 13px calc(100% - 22px), rgba(255, 220, 140, 0.85) calc(100% - 22px) calc(100% - 19px), transparent calc(100% - 19px)),
+    linear-gradient(180deg, transparent 6px, rgba(255, 220, 140, 0.85) 6px 8px, transparent 8px 26px, rgba(255, 220, 140, 0.85) 26px 28px, transparent 28px calc(100% - 24px), rgba(255, 220, 140, 0.85) calc(100% - 24px) calc(100% - 22px), transparent calc(100% - 22px)),
     linear-gradient(90deg, rgba(255, 255, 255, 0.26) 0 3px, transparent 3px calc(100% - 4px), rgba(0, 0, 0, 0.28) calc(100% - 4px)),
     var(--cor);
   box-shadow: 0 0 0 2px var(--sl-k); transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1); }
-.sl-lombada:hover, .sl-lombada:focus-visible { transform: translateY(-12px); }
+.sl-lombada:hover, .sl-lombada:focus-visible, .sl-lombada--ativa { animation: sl-puxa 0.42s cubic-bezier(0.3, 1.5, 0.5, 1) forwards; z-index: 3; }
+/* Puxar o livro da prateleira: sobe, inclina, balança e fica um pouco para fora. */
+@keyframes sl-puxa { 0% { transform: none; } 45% { transform: translateY(-22px) rotate(-5deg); } 70% { transform: translateY(-16px) rotate(2deg); } 100% { transform: translateY(-18px) rotate(-1.5deg); } }
 .sl-lombada:focus-visible { outline: 3px solid var(--sl-ouro); outline-offset: 2px; }
-.sl-lombada__num { position: absolute; inset: 15px 0 auto; text-align: center; font-family: var(--fonte-pixel); font-size: 0.66rem; line-height: 1; color: #fff8e6; text-shadow: 1px 1px 0 var(--sl-k); }
+.sl-lombada__num { position: absolute; inset: 11px 0 auto; text-align: center; font-family: var(--fonte-pixel); font-size: 0.66rem; line-height: 1; color: #fff8e6; text-shadow: 1px 1px 0 var(--sl-k); }
 .sl-gema { position: absolute; left: 50%; bottom: 6px; width: 8px; height: 8px; margin-left: -4px; transform: rotate(45deg); background: #b5b9c2; box-shadow: 0 0 0 1.5px var(--sl-k); }
 .sl-gema--raro { background: #4aa3df; } .sl-gema--epico { background: #b26bea; }
 .sl-gema--lendario { background: #ffc93c; }
 .sl-gema--lendario::after { content: ""; position: absolute; inset: -4px; background: radial-gradient(circle, rgba(255, 210, 90, 0.9), transparent 70%); animation: sl-brilha 1.8s ease-in-out infinite; }
 .sl-lombada__fita { position: absolute; top: -8px; right: 3px; width: 6px; height: 30px; background: #e74c3c; box-shadow: 0 0 0 1px var(--sl-k); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%); }
-.sl-lombada__selo { position: absolute; left: 50%; top: 42%; width: 13px; height: 13px; margin-left: -6.5px; background: #ffd75e; clip-path: polygon(50% 0, 62% 35%, 100% 38%, 70% 60%, 80% 100%, 50% 76%, 20% 100%, 30% 60%, 0 38%, 38% 35%); filter: drop-shadow(0 0 2px rgba(255, 215, 94, 0.9)); }
-.sl-lombada__cadeado { position: absolute; left: 50%; top: 30px; margin-left: -6px; color: #fff8e6; }
+.sl-lombada__selo { position: absolute; left: 50%; top: -9px; width: 13px; height: 13px; margin-left: -6.5px; background: #ffd75e; clip-path: polygon(50% 0, 62% 35%, 100% 38%, 70% 60%, 80% 100%, 50% 76%, 20% 100%, 30% 60%, 0 38%, 38% 35%); filter: drop-shadow(0 0 2px rgba(255, 215, 94, 0.9)); }
+.sl-lombada__cadeado { position: absolute; left: 50%; bottom: 26px; margin-left: -6px; color: #fff8e6; }
 .sl-lombada--alvo { animation: sl-achado 1s ease-in-out 2; }
 .sl-lombada--alvo::after { content: ""; position: absolute; inset: -5px; border: 2px solid #ffd75e; box-shadow: 0 0 12px 2px rgba(255, 215, 94, 0.6); pointer-events: none; }
 @keyframes sl-achado { 30% { transform: translateY(-14px) rotate(-3deg); } 60% { transform: translateY(-6px) rotate(2deg); } }
 
 /* O livro torto: a alavanca da passagem secreta. */
-.sl-torto button { display: block; width: 22px; height: 92px; padding: 0; margin: 0 8px 0 10px; border: 0; cursor: pointer; transform: rotate(-13deg); transform-origin: bottom left;
+.sl-torto button { display: block; width: 30px; height: 130px; padding: 0; margin: 0 8px 0 10px; border: 0; cursor: pointer; transform: rotate(-13deg); transform-origin: bottom left;
   background: linear-gradient(180deg, transparent 12px, #e3b860 12px 15px, transparent 15px 22px, #e3b860 22px 24px, transparent 24px), #4a1620; box-shadow: 0 0 0 2px var(--sl-k), inset 3px 0 0 rgba(255, 255, 255, 0.15); transition: transform 0.3s; }
 .sl-torto button:hover { transform: rotate(-20deg); }
 
@@ -290,7 +292,7 @@
 @keyframes sl-zz { 0% { transform: translate(0, 4px); opacity: 0; } 40% { opacity: 1; } 100% { transform: translate(-8px, -12px); opacity: 0; } }
 
 /* A escada corre pelo trilho até o livro achado pela busca. */
-.sl-escada { position: absolute; top: 18px; right: 6px; z-index: 2; width: 34px; height: 150px; padding: 0; cursor: pointer; border: 0;
+.sl-escada { position: absolute; top: 18px; right: 6px; z-index: 2; width: 34px; height: 210px; padding: 0; cursor: pointer; border: 0;
   border-left: 5px solid var(--sl-madeira-clara); border-right: 5px solid var(--sl-madeira-clara);
   background: repeating-linear-gradient(180deg, transparent 0 16px, var(--sl-madeira-clara) 16px 21px, transparent 21px 22px);
   box-shadow: -2px 0 0 var(--sl-k), 2px 0 0 var(--sl-k); transform: rotate(-6deg); transform-origin: bottom center;
@@ -435,3 +437,60 @@
 .sl-ampulheta::before { content: ""; position: absolute; inset: 0 3px; background: linear-gradient(180deg, transparent 0 30%, #f6d27a 30% 48%, transparent 48% 70%, #f6d27a 70%); clip-path: polygon(0 0, 100% 0, 55% 50%, 100% 100%, 0 100%, 45% 50%); opacity: 0.9; }
 .sl-ampulheta::after { content: ""; position: absolute; left: 50%; top: 45%; width: 2px; height: 10px; margin-left: -1px; background: #f6d27a; animation: sl-areia 1.4s steps(4) infinite; }
 @keyframes sl-areia { 50% { opacity: 0.2; } }
+
+/* Título na lombada, de baixo para cima, como nas estantes de verdade (30/10/2026: "qual livro é qual"). */
+.sl-lombada__titulo { position: absolute; top: 32px; bottom: 30px; left: 0; right: 0; display: block; overflow: hidden; padding: 0 3px;
+  writing-mode: vertical-rl; transform: rotate(180deg); text-align: left; overflow-wrap: normal; hyphens: manual;
+  font-size: 10px; font-weight: 750; line-height: 13px; letter-spacing: 0; color: #fff8e6; text-shadow: 1px 1px 0 rgba(27, 18, 8, 0.85); }
+
+/* Placa da estante com a capa do livro desenhada ao lado. */
+.sl-estante__placa { grid-template-columns: auto minmax(0, 1fr) auto !important; column-gap: 0.85rem !important; }
+.sl-estante__nome { display: grid; gap: 0.15rem; min-width: 0; }
+.sl-estante__conta { grid-column: 3 !important; grid-row: 1 !important; }
+.sl-capa { display: grid; align-content: space-between; justify-items: center; width: 58px; height: 62px; padding: 6px 3px 5px; background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0 5px, transparent 5px), var(--capa, #5b3519); border: 2px solid #1b1208; box-shadow: 3px 3px 0 #1b1208, inset 0 0 0 2px rgba(255, 220, 140, 0.5); color: #fff4d6; text-align: center; }
+.sl-capa b { font-family: var(--fonte-pixel); font-size: 0.52rem; font-weight: 400; line-height: 1.1; }
+.sl-capa small { font-family: var(--fonte-pixel); font-size: 0.55rem; opacity: 0.85; }
+.sl-capa--trofeu { --capa: #8a5f12; align-content: center; }
+.sl-capa--trofeu b { font-size: 1.4rem; color: #ffd75e; }
+.sl-estante--cobrados .sl-estante__corpo { background: radial-gradient(circle at 50% 100%, rgba(255, 200, 90, 0.18), transparent 70%), var(--sl-fundo); }
+
+/* O painel "Encontre o resumo" dentro do salão, antes das estantes. */
+.sl-encontre { display: grid; gap: 0.6rem; margin: 0 1.4rem; }
+
+/* Popup da lombada: os dados do livro ao passar o mouse (ou no primeiro toque). */
+.sl-pop { position: fixed; z-index: 75; display: grid; gap: 0.45rem; padding: 0.75rem 0.85rem 0.8rem; transform: translate(-50%, -100%); pointer-events: none;
+  background: #fbf5e6; color: #2a1a0e; border: 3px solid #1b1208; border-top: 8px solid var(--capa); box-shadow: 5px 5px 0 #1b1208; font-size: 0.86rem; line-height: 1.35;
+  animation: sl-pop 0.18s steps(3); }
+.sl-pop--embaixo { transform: translate(-50%, 0); }
+.sl-pop--preso { pointer-events: auto; }
+@keyframes sl-pop { from { opacity: 0; margin-top: 6px; } }
+.sl-pop__livro { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem; margin: 0; color: #6d5b45; font-size: 0.78rem; }
+.sl-pop__livro b { color: #2a1a0e; }
+.sl-pop__livro .sl-raridade { margin-left: auto; padding: 0 0.4rem 0 0.25rem; font-size: 0.7rem; }
+.sl-pop__titulo { font-family: var(--fonte-marca); font-size: 1.05rem; line-height: 1.2; }
+.sl-pop__dados { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.3rem; margin: 0; }
+.sl-pop__dados div { padding: 0.25rem 0.35rem; border: 2px solid #1b1208; background: #fff; }
+.sl-pop__dados dt { font-size: 0.6rem; font-weight: 750; letter-spacing: 0.03em; text-transform: uppercase; color: #8a5f12; }
+.sl-pop__dados dd { margin: 0; font-family: var(--fonte-pixel); font-size: 0.95rem; }
+.sl-pop__provas { margin: 0; font-size: 0.78rem; }
+.sl-pop__provas span { padding: 0 0.3rem; margin-right: 0.2rem; background: #1b1208; color: #f6d27a; font-weight: 700; }
+.sl-pop__partes { display: grid; gap: 0.1rem; margin: 0; padding-left: 1.1rem; font-size: 0.78rem; color: #4a3a28; }
+.sl-pop__mais { list-style: none; margin-left: -1.1rem; color: #8a7a62; }
+.sl-pop__xp { position: relative; height: 16px; border: 2px solid #1b1208; background: #e8dcc2; }
+.sl-pop__xp span { display: block; height: 100%; background: repeating-linear-gradient(90deg, #2f9e7a 0 8px, #24876a 8px 10px); }
+.sl-pop__xp b { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--fonte-pixel); font-size: 0.66rem; }
+.sl-pop__dica { margin: 0; text-align: center; font-family: var(--fonte-pixel); font-size: 0.72rem; color: #8a5f12; }
+.sl-pop__acoes { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.sl-pop__acoes .rs-botao-ouro { --rs-tinta: #1b1208; --rs-ouro: #f4cf7c; --rs-ouro-sombra: #6b4a0c; min-height: 40px; }
+
+@media (max-width: 40rem) {
+  .sl-encontre { margin: 0 0.8rem; }
+  .sl-estante__placa { grid-template-columns: auto minmax(0, 1fr) !important; }
+  .sl-estante__conta { grid-column: 2 !important; grid-row: 2 !important; justify-self: start; }
+  .sl-capa { grid-row: span 2; }
+}
+
+/* Celular: o popup preso vira um cartão fixo embaixo da tela, acima da barra de navegação. */
+@media (hover: none), (max-width: 40rem) {
+  .sl-pop--preso { left: 8px !important; right: 8px; top: auto !important; bottom: calc(76px + env(safe-area-inset-bottom)); width: auto !important; transform: none; border-top-width: 10px; }
+}

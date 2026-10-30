@@ -14,6 +14,14 @@ try {
   const { capitulos } = JSON.parse(await readFile('public/biblioteca/indice.json', 'utf8'))
   const cap = (id) => capitulos.find((c) => c.id === id)
 
+  // Título da lombada (salão, 30/10/2026): sem o começo repetido, sem mudar o sentido.
+  assert.equal(m.tituloLombada('Fratura do colo do fêmur'), 'Colo do fêmur')
+  assert.equal(m.tituloLombada('Fraturas e luxações da mão e do carpo na criança'), 'Mão e carpo')
+  assert.equal(m.tituloLombada('Lesões do anel pélvico'), 'Anel pélvico')
+  assert.equal(m.tituloLombada('Luxação do joelho e lesão multiligamentar'), 'Luxação do joelho e lesão multiligamentar')
+  assert.equal(m.tituloLombada('Fratura supracondiliana do úmero na criança'), 'Fratura supracondiliana do úmero')
+  assert.equal(m.tituloLombada('Tendões flexores'), 'Tendões flexores')
+
   // Livro: "(2025)" não separa edições; nomes curtos.
   assert.equal(m.chaveLivro({ livro: 'X', edicao: '9ª edição (2020)' }), m.chaveLivro({ livro: 'X', edicao: '9ª edição' }))
   assert.equal(m.rotuloLivro({ livro: "Rockwood and Wilkins' Fractures in Children", edicao: '10ª edição (2025)' }), 'Rockwood infantil · 10ª ed.')

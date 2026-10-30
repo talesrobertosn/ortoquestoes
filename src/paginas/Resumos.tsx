@@ -18,6 +18,7 @@ import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis } from '../conta/supabase'
 import { SECOES_ABERTAS } from '../biblioteca/porta'
 import { Salao, provasDoCapitulo } from '../biblioteca/salao/Salao'
+import { EncontreResumo } from '../biblioteca/EncontreResumo'
 import '../estilos/paginas/Resumos.css'
 
 /** Adendo da Biblioteca: as frases "Na prova" (o antigo Resumão), em #/resumos/frases. */
@@ -91,6 +92,10 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
   const [guia, definirGuia] = useState(false)
   const [modo, definirModo] = useState<Modo>(() => ler<Modo>(CHAVE_MODO, 'estante') === 'lista' ? 'lista' : 'estante')
   const trocarModo = (m: Modo) => { definirModo(m); gravar(CHAVE_MODO, m) }
+  // Painel "Encontre o resumo": o tema escolhido (caminho) e os pedidos de ir até a lombada ou a estante.
+  const [tema, definirTema] = useState<ResumoCapitulo | null>(null)
+  const [irPara, definirIrPara] = useState<{ id: string; n: number } | null>(null)
+  const [irLivro, definirIrLivro] = useState<{ chave: string; n: number } | null>(null)
   const mudar = (m: Partial<FiltrosEstante>) => definirFiltros((f) => ({ ...f, ...m }))
   // Um link novo para a estante (ex.: #/resumos?area=mao vindo do cronograma) troca os filtros.
   const consultaTexto = consulta.toString()
@@ -120,26 +125,35 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
     <button type="button" aria-pressed={modo === 'estante'} onClick={() => trocarModo('estante')}><Icone nome="livro" tamanho={15} /> Estante</button>
     <button type="button" aria-pressed={modo === 'lista'} onClick={() => trocarModo('lista')}><Icone nome="menu" tamanho={15} /> Lista</button>
   </span>
-  const fichario = (estante: boolean) => <section className="rs-busca" id="rs-estante" aria-label="Buscar e filtrar resumos">
+  const fichario = () => <section className="rs-busca" id="rs-estante" aria-label="Buscar e filtrar resumos">
     <label className="rs-busca__campo" data-guia="busca"><Icone nome="busca" tamanho={17} /><span className="so-leitor">Buscar resumo</span>
       <input type="search" value={filtros.q} onChange={(e) => mudar({ q: e.target.value })} placeholder="Buscar tema, classificação ou livro" />
     </label>
     <div className="rs-busca__filtros" data-guia="filtros">
       <label><span>Livro</span><select value={filtros.livro ?? ''} onChange={(e) => mudar({ livro: e.target.value || null })}><option value="">Todos os livros</option>{livros.map((l) => <option key={l.chave} value={l.chave}>{l.rotulo}</option>)}</select></label>
       <label><span>Área</span><select value={filtros.area ?? ''} onChange={(e) => mudar({ area: e.target.value || null })}><option value="">Todas as áreas</option>{ESPECIALIDADES.filter((e) => comCapitulos.has(e.slug)).map((e) => <option key={e.slug} value={e.slug}>{e.nome}</option>)}</select></label>
-      {!estante && <label><span>Ordenar</span><select value={filtros.ordem} onChange={(e) => mudar({ ordem: e.target.value as OrdemEstante })}>{ORDENS.map((o) => <option key={o.v} value={o.v}>{o.nome}</option>)}</select></label>}
+      <label><span>Ordenar</span><select value={filtros.ordem} onChange={(e) => mudar({ ordem: e.target.value as OrdemEstante })}>{ORDENS.map((o) => <option key={o.v} value={o.v}>{o.nome}</option>)}</select></label>
       <div className="rs-busca__progresso" role="group" aria-label="Progresso">{PROGRESSOS.map((p) => <button key={p.nome} type="button" aria-pressed={filtros.progresso === p.v} onClick={() => mudar({ progresso: p.v })}>{p.nome}</button>)}</div>
     </div>
-    {ativos && <p className="rs-busca__resultado" role="status"><span className="numerico">{filtrados.length}</span> {filtrados.length === 1 ? 'resumo encontrado' : 'resumos encontrados'}{estante && filtrados.length > 0 ? ': os livros acesos na estante' : ''}<button type="button" onClick={() => definirFiltros({ ...FILTROS_PADRAO, ordem: filtros.ordem })}><Icone nome="fechar" tamanho={14} /> Limpar filtros</button></p>}
+    {ativos && <p className="rs-busca__resultado" role="status"><span className="numerico">{filtrados.length}</span> {filtrados.length === 1 ? 'resumo encontrado' : 'resumos encontrados'}<button type="button" onClick={() => definirFiltros({ ...FILTROS_PADRAO, ordem: filtros.ordem })}><Icone nome="fechar" tamanho={14} /> Limpar filtros</button></p>}
   </section>
   const porta = visitante ? <p className="rs-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Leitura completa grátis com conta.</b> Sem conta, cada resumo abre as {SECOES_ABERTAS} primeiras partes. <a href={href('/conta?modo=criar&voltar=%2Fresumos')}>Criar conta grátis</a></span></p> : null
+
+  const encontre = <>
+        <EncontreResumo livros={livros} filtros={filtros} filtrados={filtrados} ativos={ativos} tema={tema}
+        areas={ESPECIALIDADES.filter((e) => comCapitulos.has(e.slug))} progressos={PROGRESSOS}
+        mudar={(m) => { if (m.livro !== undefined && tema && chaveLivro(tema) !== m.livro) definirTema(null); mudar(m) }}
+        limpar={() => { definirFiltros(FILTROS_PADRAO); definirTema(null) }}
+        aoIrPara={(c) => { definirTema(c); definirIrPara((x) => ({ id: c.id, n: (x?.n ?? 0) + 1 })) }}
+        aoIrLivro={(chave) => definirIrLivro((x) => ({ chave, n: (x?.n ?? 0) + 1 }))} />
+        {!filtrados.length && <p className="rs-busca__nada">Nenhum livro com esses filtros. {filtros.q.trim() ? `Nada para “${filtros.q.trim()}”. ` : ''}<button type="button" onClick={() => definirFiltros(FILTROS_PADRAO)}>Limpar filtros</button></p>}
+      </>
 
   if (modo === 'estante') return (
     <div className="rs rs--salao">
       <Salao capitulos={dados.capitulos} livros={livros} achados={new Set(filtrados.map((c) => c.id))} filtrosAtivos={ativos} busca={filtros.q}
         leituras={leituras} destaques={destaques} premium={premium} indice={indice} continuar={continuar} aviso={porta}
-        fichario={<>{fichario(true)}{!filtrados.length && <p className="rs-busca__nada">Nenhum livro com esses filtros. {filtros.q.trim() ? `Nada para “${filtros.q.trim()}”. ` : ''}<button type="button" onClick={() => definirFiltros(FILTROS_PADRAO)}>Limpar filtros</button></p>}</>}
-        botaoModo={botaoModo} aoAbrirGuia={() => definirGuia(true)} />
+        fichario={encontre} irPara={irPara} irLivro={irLivro} botaoModo={botaoModo} aoAbrirGuia={() => definirGuia(true)} />
       <p className="rs-nota">Os resumos são texto autoral a partir dos capítulos citados, com revisão técnica; as questões e os anos vêm do acervo do site. Figuras originais só aparecem quando há licença de reprodução.</p>
       {guia && <GuiaTour id="biblioteca" titulo="Como usar a Biblioteca" passos={PASSOS_SALAO} aoFechar={() => definirGuia(false)} />}
     </div>
@@ -183,7 +197,7 @@ function Estante({ consulta }: { consulta: URLSearchParams }) {
         })}</ul>
       </section>}
 
-      {fichario(false)}
+      {fichario()}
 
       {!filtrados.length && <div className="rs-vazio">
         <span className="rs-vazio__livro" aria-hidden="true"><i /><i /><i /></span>
