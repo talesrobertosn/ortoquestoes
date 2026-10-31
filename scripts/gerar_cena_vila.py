@@ -17,10 +17,6 @@ Gera em public/pixel/inicio/:
 - secao-correio: o canto do correio da vila ao anoitecer (o programa de indicação).
 Cada uma em .webp de 1440 x 480 e 960 x 320.
 Uso: python3 scripts/gerar_cena_vila.py [torre|bau|correio]
-Páginas internas (Revisão, Planos/Assinatura, Indique e ganhe/Contato), nas três horas do dia, com a luz repintada
-por hora (céu, sol ou lua, sombras projetadas, janelas e lampiões acesos ou apagados, a fenda do teto da caverna) e o
-chão de x 330-380 livre para o mascote: python3 scripts/gerar_cena_vila.py --paginas [cena] [manha|tarde|noite]
-  -> public/pixel/paginas/<cena>-<hora>(-960).webp
 """
 from __future__ import annotations
 
@@ -962,8 +958,8 @@ def montar_torre_hora(ceu, longe, meio_c, e_longe, campo, paralelos, objetos, pr
     rampas_meio = {"manha": [(0, "#304a5c"), (0.45, "#4a6a76"), (0.8, "#7e9aa2"), (1, "#bccabc")],
                    "tarde": [(0, "#1c1226"), (0.5, "#321e3a"), (0.85, "#6a3a54"), (1, "#c86a64")],
                    "noite": [(0, "#080c22"), (0.5, "#121a3a"), (1, "#4a5a92")]}
-    remapear(longe, rampas_longe[P], 0.12)
-    remapear(meio_c, rampas_meio[P], 0.3)
+    remapear(longe, rampas_longe[P], 0.12, faixa=(0.28, 0.72))
+    remapear(meio_c, rampas_meio[P], 0.3, faixa=(0.14, 0.62))
     # Sombras projetadas no chão: a torre, as casas e a ampulheta. De manhã o sol vem do alto à esquerda (sombra curta
     # para a direita); à tarde está baixo atrás da colina (sombra comprida vindo para a frente); à noite, a lua.
     a = predios.c[:, :, 3]
