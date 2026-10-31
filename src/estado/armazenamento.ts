@@ -4,7 +4,7 @@ let cacheDisponivel: boolean | null = null
 const memoria = new Map<string, string>()
 let usuario: string | null = null
 // 'flashcards:som-escolhido': a escolha de entrar com ou sem som vale para o aparelho (perguntada uma vez só)
-const GLOBAIS = new Set(['tema', 'cenario', 'etiquetas', 'instalar:dispensado', 'convite-compartilhar', 'convite-diario', 'dica:deslizar', 'flashcards:som-escolhido', 'resumos:guias'])
+const GLOBAIS = new Set(['tema', 'etiquetas', 'instalar:dispensado', 'convite-compartilhar', 'convite-diario', 'dica:deslizar', 'flashcards:som-escolhido', 'resumos:guias'])
 /**
  * Visitantes não persistem progresso entre dispositivos, mas uma sessão de
  * questões em andamento é frágil demais para viver só na memória do processo
