@@ -138,14 +138,14 @@ def enrolado(t, x0, p, ang=0.0, pata=None):
     gc = t.grupo(True)
     t.pinta(G.elipse(gira((-8.6, -5.6)), 5.8, 4.8, ang), "pelo", gc, luz=0.02)
     t.decal(G.capsula(gira((-12.0, -6.4)), gira((-9.8, -3.6)), 0.6))
-    if pata is not None:   # patinha esticada para a frente, saindo de baixo do queixo
-        G.perna(t, gira((6.0, -4.0)), gira(pata), 2.0, luz=0.04, pata_rx=2.4, pata_ry=1.5)
     hx_, hy_ = gira(p.cab)
     xh = G.Xf(hx_, hy_, s, p.cab_ang + ang)
     gp = t.grupo(True)
     t.pinta(G.elipse(gira((p.cab[0] - 1.0, -1.4)), 3.0, 1.6, ang, achata=0.7), "creme", gp, luz=0.04)
     G.cabeca(t, xh, p.olhos, p.olhar, p.boca, p.orelhas, p.vira, est=est, piscar_um=p.piscar_um)
     G.cauda(t, [gira(c) for c in p.cauda], 2.3, 1.9, s=s)
+    if pata is not None:   # patinha esticada para a frente, saindo de baixo da bochecha
+        G.perna(t, gira((15.0, -2.5)), gira(pata), 2.0, luz=0.04, pata_rx=2.4, pata_ry=1.5)
 
 
 # ═══════════════════════════════ enfeites ═══════════════════════════════
@@ -850,7 +850,7 @@ def segredo_desliza(t, k):
         return deitado(t)
     ang = [0, -5, -11, -17, -18, -10, -3, 0][k]
     dx = [0, -0.5, -1.5, -2.5, -3.0, -1.5, -0.5, 0][k]
-    pata = {3: (20.0, -4.5), 4: (23.0, -7.0), 5: (17.0, -3.0)}.get(k)
+    pata = {3: (23.0, -4.0), 4: (27.0, -6.5), 5: (20.0, -2.5)}.get(k)
     p = G.Pose(cab=(9.0, -8.2), cab_ang=12, olhos="fechado", boca="w" if k in (3, 4) else "nada",
                respira=[0.5, 0.6, 0.7, 0.9, 1.0, 0.5, 0.2, 0.5][k],
                cauda=((-14.5, -5.0), (-10.0, -3.0), (-2.0, -2.6), (4.5, -2.8), (8.5 + (k in (3, 4)) * 2, -4.6 - (k == 4) * 2)),
