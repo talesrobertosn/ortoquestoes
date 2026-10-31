@@ -682,7 +682,7 @@ def perna(t: Tela, r: Rig, p: Pose, lado: str):
 
 
 # Modelo do rosto (30/10/2026, o Tales escolhe entre modelos): ROSTO=<nome> python3 scripts/gerar_mascote.py
-ROSTO = os.environ.get("ROSTO", "frente_dentes")
+ROSTO = os.environ.get("ROSTO", "tres_quartos")   # o Tales escolheu o "modelo E" em 31/10/2026
 DESCE_CRANIO = {"tres_quartos": -21.0, "frente_liso": -22.0, "frente_redondo": -25.0}.get(ROSTO, -26.5)
 
 

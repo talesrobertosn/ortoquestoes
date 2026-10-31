@@ -19,6 +19,9 @@ Duas cenas, sempre com os ~45% da esquerda mais calmos e escuros (é onde o text
 Gera em public/pixel/inicio/: secao-arena(.webp, -960.webp) e secao-trofeus(.webp, -960.webp), 1440 x 480 e 960 x 320.
 Uso: python3 scripts/gerar_cena_arena.py            (as duas)
      python3 scripts/gerar_cena_arena.py arena      (só uma: arena ou trofeus)
+     python3 scripts/gerar_cena_arena.py --paginas [arena|trofeus] [manha|tarde|noite]
+        (páginas Ranking/Simulado Nacional e Conquistas: public/pixel/paginas/<cena>-<hora>(-960).webp, com a luz
+        repintada por hora e o pódio em x 262, deixando o chão de x 330-380 livre para o mascote)
 """
 from __future__ import annotations
 

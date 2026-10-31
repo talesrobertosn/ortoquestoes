@@ -15,6 +15,7 @@ O terço esquerdo fica mais calmo e escuro (o texto da seção vai por cima); os
 
 Saída: public/pixel/inicio/secao-biblioteca.webp (1440 x 480) e secao-biblioteca-960.webp (960 x 320).
 Uso: python3 scripts/gerar_cena_biblioteca.py
+     python3 scripts/gerar_cena_biblioteca.py --paginas [manha|tarde|noite]   (página Resumos, em public/pixel/paginas/)
 """
 from __future__ import annotations
 
