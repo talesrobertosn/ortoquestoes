@@ -432,15 +432,15 @@
   },
   {
    "id": "campbell14-hernia-disco",
-   "versao": 1,
-   "titulo": "Hérnia de disco lombar e cervical",
+   "versao": 2,
+   "titulo": "Hérnia de disco lombar, torácica e cervical",
    "especialidade": "coluna",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "14ª edição (2021)",
    "capitulo": "Capítulo 38 · Doenças degenerativas da coluna cervical e Capítulo 39 · Doenças degenerativas da coluna torácica e lombar",
-   "resumo": "Hérnia lombar na 3ª e 4ª décadas; dor na perna maior que a lombar; semi-FOWLER; LASÈGUE e LASÈGUE contralateral; cauda equina; raízes L4, L5 e S1 (a hérnia pega a raiz que cruza o disco); raízes C5, C6, C7 e C8 (o disco pega a raiz de número maior; bíceps C5 e C6); SPURLING (95% e 94%); abdução do ombro; mielopatia; complicações da discectomia.",
+   "resumo": "A hérnia é uma complicação da degeneração do disco; lombar na 3ª e 4ª décadas, com dor na perna igual ou maior que a lombar, piora sentado e ao tossir, alívio em semi-FOWLER, LASÈGUE e LASÈGUE contralateral patognomônico; mais de 95% em L4-L5 e L5-S1; a hérnia posterolateral pega a raiz que cruza o disco (L4-L5 pega L5); L4 patelar e perna medial, L5 hálux e dorso do pé sem reflexo, S1 borda lateral, tríceps sural e aquileu; cauda equina é a única cirurgia urgente; ressonância alterada em 100% acima dos 50; tratamento inicial não cirúrgico; microdiscectomia sem fusão; endoscopia interlaminar em L5-S1; lesão dural com acetazolamida; disco torácico com dor em T10 e acesso anterior ou costotransversectomia; disco cervical pega a raiz de número maior (C5-C6 pega C6), SPURLING 95% e 94%, mielopatia com clônus, hiper-reflexia e BABINSKI.",
    "acesso": "gratis",
-   "minutos": 3,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -448,31 +448,108 @@
      "radar": "fundamento"
     },
     {
-     "id": "a-hernia-lombar",
-     "titulo": "A hérnia lombar",
+     "id": "o-disco-que-degenera-e-a-raiz-que-sofre",
+     "titulo": "O disco que degenera e a raiz que sofre",
      "radar": "confirmado"
     },
     {
-     "id": "a-hernia-cervical",
-     "titulo": "A hérnia cervical",
+     "id": "historia-natural-a-maioria-melhora-e-a-imagem-en",
+     "titulo": "História natural: a maioria melhora, e a imagem engana",
      "radar": "confirmado"
     },
     {
-     "id": "a-cirurgia-e-as-complicacoes",
-     "titulo": "A cirurgia e as complicações",
+     "id": "o-quadro-clinico-da-hernia-lombar",
+     "titulo": "O quadro clínico da hérnia lombar",
      "radar": "confirmado"
+    },
+    {
+     "id": "as-raizes-lombares-uma-por-uma",
+     "titulo": "As raízes lombares, uma por uma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-sindrome-da-cauda-equina",
+     "titulo": "A síndrome da cauda equina",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-e-diagnostico-diferencial",
+     "titulo": "Imagem e diagnóstico diferencial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-tratamento-sem-cirurgia-e-as-infiltracoes",
+     "titulo": "O tratamento sem cirurgia e as infiltrações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-cirurgia-da-hernia-lombar",
+     "titulo": "A cirurgia da hérnia lombar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-complicacoes-da-discectomia",
+     "titulo": "As complicações da discectomia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-disco-toracico",
+     "titulo": "O disco torácico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-hernia-cervical-quadro-clinico-e-mielopatia",
+     "titulo": "A hérnia cervical: quadro clínico e mielopatia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-raizes-cervicais-uma-por-uma",
+     "titulo": "As raízes cervicais, uma por uma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-tratamento-da-hernia-cervical",
+     "titulo": "O tratamento da hérnia cervical",
+     "radar": "fundamento"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
+    "coluna-0321",
+    "coluna-0190",
     "coluna-0191",
     "coluna-0077",
     "coluna-0058",
-    "coluna-0190",
     "coluna-0258",
     "coluna-0005",
     "coluna-0028",
     "coluna-0083",
     "coluna-0096",
+    "coluna-0381",
+    "coluna-0475",
+    "coluna-0476",
+    "coluna-0478",
+    "coluna-0446",
+    "coluna-0480",
+    "coluna-0397",
+    "coluna-0149",
+    "coluna-0316",
+    "coluna-0477",
+    "coluna-0094",
+    "coluna-0348",
+    "coluna-0345",
+    "coluna-0488",
+    "coluna-0328",
+    "coluna-0016",
+    "coluna-0241",
+    "coluna-0089",
+    "coluna-0193",
+    "coluna-0347",
+    "coluna-0418",
     "coluna-0039",
     "coluna-0021",
     "coluna-0026",
@@ -484,20 +561,16 @@
     "coluna-0161",
     "coluna-0311",
     "coluna-0100",
-    "coluna-0193",
-    "coluna-0016",
-    "coluna-0089",
-    "coluna-0241",
-    "coluna-0488",
-    "coluna-0094"
+    "coluna-0331",
+    "coluna-0456"
    ],
    "treino": [
     "coluna-0572",
     "coluna-0573",
     "coluna-0577",
-    "coluna-0574",
+    "coluna-0576",
     "coluna-0575",
-    "coluna-0576"
+    "coluna-0574"
    ],
    "subtemas": [
     "Hérnia de disco lombar"
