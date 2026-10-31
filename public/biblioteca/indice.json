@@ -8038,15 +8038,15 @@
   },
   {
    "id": "rockwoodcriancas10-22-coluna-toracolombar",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas da coluna toracolombar na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-   "resumo": "Cinto abdominal, fratura de CHANCE e lesão abdominal em quase metade; faceta vazia no corte axial; compressão sem cirurgia com cifose menor que 30 graus; explosão estável com TLSO; TLICS; SCIWORA; escoliose paralítica abaixo de 10 anos; placa terminal e faceta, lesões do atleta jovem.",
+   "resumo": "Mecanismos (maus-tratos no lactente, cinto abdominal, queda com carga axial); lesão abdominal em quase metade das CHANCE; 32% de outra fratura vertebral; 85% sem déficit; SCIWORA; radiografia, tomografia e ressonância; DENIS, TLICS e AO Spine; compressão (cifose menor que 30 graus, perda de altura acima de 50%); explosão estável com TLSO; CHANCE e faceta vazia; fratura-luxação e escoliose paralítica abaixo de 10 anos; placa terminal e faceta no atleta jovem; corticoide.",
    "acesso": "gratis",
-   "minutos": 5,
+   "minutos": 26,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -8054,29 +8054,109 @@
      "radar": "fundamento"
     },
     {
-     "id": "mecanismos-lesoes-associadas-e-avaliacao",
-     "titulo": "Mecanismos, lesões associadas e avaliação",
+     "id": "mecanismos-idade-cinto-e-queda",
+     "titulo": "Mecanismos: idade, cinto e queda",
      "radar": "oportunidade"
     },
     {
-     "id": "sciwora-e-lesao-medular",
-     "titulo": "SCIWORA e lesão medular",
+     "id": "lesoes-associadas-e-o-exame",
+     "titulo": "Lesões associadas e o exame",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "sciwora-e-o-prognostico-da-lesao-medular",
+     "titulo": "SCIWORA e o prognóstico da lesão medular",
      "radar": "confirmado"
     },
     {
-     "id": "compressao-e-explosao",
-     "titulo": "Compressão e explosão",
+     "id": "imagem-radiografia-tomografia-e-ressonancia",
+     "titulo": "Imagem: radiografia, tomografia e ressonância",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "anatomia-aplicada",
+     "titulo": "Anatomia aplicada",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-classificacoes-denis-tlics-e-ao-spine",
+     "titulo": "As classificações: DENIS, TLICS e AO Spine",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fratura-por-compressao",
+     "titulo": "Fratura por compressão",
      "radar": "confirmado"
     },
     {
-     "id": "flexao-distracao-chance-e-fratura-luxacao",
-     "titulo": "Flexão-distração (CHANCE) e fratura-luxação",
+     "id": "fratura-por-explosao",
+     "titulo": "Fratura por explosão",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "flexao-distracao-a-lesao-de-chance",
+     "titulo": "Flexão-distração: a lesão de CHANCE",
      "radar": "confirmado"
+    },
+    {
+     "id": "fratura-luxacao-e-a-escoliose-paralitica",
+     "titulo": "Fratura-luxação e a escoliose paralítica",
+     "radar": "clinico"
     },
     {
      "id": "placa-terminal-e-faceta-o-atleta-jovem",
      "titulo": "Placa terminal e faceta: o atleta jovem",
      "radar": "confirmado"
+    },
+    {
+     "id": "corticoide-na-lesao-medular",
+     "titulo": "Corticoide na lesão medular",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-sinal-do-cinto-e-o-abdome",
+     "titulo": "O sinal do cinto e o abdome",
+     "radar": "clinico"
+    },
+    {
+     "id": "fratura-que-nao-combina-com-o-trauma",
+     "titulo": "Fratura que não combina com o trauma",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-algoritmo-dos-autores-padrao-a-padrao",
+     "titulo": "O algoritmo dos autores, padrão a padrão",
+     "radar": "fundamento"
+    },
+    {
+     "id": "como-diferenciar-os-quatro-padroes-de-denis",
+     "titulo": "Como diferenciar os quatro padrões de DENIS",
+     "radar": "fundamento"
+    },
+    {
+     "id": "orteses-e-imobilizacao",
+     "titulo": "Órteses e imobilização",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "perguntas-que-a-banca-faz",
+     "titulo": "Perguntas que a banca faz",
+     "radar": "fundamento"
+    },
+    {
+     "id": "armadilhas",
+     "titulo": "Armadilhas",
+     "radar": "clinico"
+    },
+    {
+     "id": "tres-casos-para-fixar",
+     "titulo": "Três casos para fixar",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -8094,20 +8174,23 @@
    ],
    "treino": [
     "pediatria-1255",
-    "pediatria-1257",
-    "pediatria-1260",
     "pediatria-1266",
-    "pediatria-1269",
     "pediatria-1259",
-    "pediatria-1262",
-    "pediatria-1268",
+    "pediatria-1269",
+    "pediatria-1260",
+    "pediatria-1457",
     "pediatria-1258",
+    "pediatria-1459",
     "pediatria-1261",
     "pediatria-1256",
     "pediatria-1264",
+    "pediatria-1458",
+    "pediatria-1257",
+    "pediatria-1262",
     "pediatria-1265",
     "pediatria-1263",
-    "pediatria-1267"
+    "pediatria-1267",
+    "pediatria-1268"
    ],
    "subtemas": [
     "Trauma da coluna na criança"
