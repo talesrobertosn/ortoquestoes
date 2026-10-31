@@ -2,8 +2,6 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { recurso } from '../../config'
 import { usarPeriodo, type Periodo } from '../../estado/aparencia'
 import { gravar, ler } from '../../estado/armazenamento'
-import { href } from '../../util/rotas'
-import { Icone } from '../Icone'
 import { Mascote } from '../mascote/Mascote'
 import { fantasiaDoMes, type IdComportamento } from '../mascote/comportamentos'
 import { LUGARES, imagemLugar, type Caixa, type IdLugar } from './lugares'
@@ -12,8 +10,8 @@ import './Vila.css'
 /**
  * O topo pintado das páginas (a Vila do Orto, 30/10/2026). O cenário do lugar com a luz da hora do dia (ou a
  * escolhida em Minha conta › Aparência); por cima, vivos: nuvens e sol ou estrelas e vaga-lumes (lá fora), poeira
- * na luz e brasas (lá dentro), às vezes chuva, o mascote fazendo algo daquele lugar e um segredo para achar. As
- * placas levam aos lugares vizinhos e ao mapa. Tudo é decorativo (aria-hidden), menos as placas e o segredo.
+ * na luz e brasas (lá dentro), às vezes chuva, o mascote fazendo algo daquele lugar e um segredo para achar. Tudo é
+ * decorativo, menos o segredo (os caminhos para outras páginas ficam nas portas do fim, em Saidas.tsx).
  * Animações param fora da tela e com "menos animação".
  */
 const CHAVE_VISITAS = 'vila:visitados'
@@ -78,7 +76,6 @@ export function CenaPagina({ id }: { id: IdLugar }) {
   const fantasia = fantasiaDoMes()
   const comportamento = fantasia === 'halloween' ? HALLOWEEN[id.length % HALLOWEEN.length] : lugar.mascote
   const img = (l: 960 | 1440) => recurso(imagemLugar(id, periodo, l))
-  const vizinhos = lugar.saidas.slice(0, 2).map((s) => LUGARES[s])
 
   return (
     <section ref={raiz} className={`vl vl--${periodo} vl--${lugar.exterior ? 'fora' : 'dentro'}${visivel ? '' : ' vl--parado'}`} aria-label={`Cenário de ${lugar.pagina}`}>
@@ -95,12 +92,6 @@ export function CenaPagina({ id }: { id: IdLugar }) {
           {fala && <span className="vl-balao" role="status" style={{ left: `${(355 / 480) * 100}%`, top: `${(92 / 160) * 100}%` }}>{fala}</span>}
         </div>
       </div>
-      <nav className="vl-placas" aria-label="Caminhos daqui">
-        {vizinhos.map((v) => (
-          <a key={v.id} className="vl-placa" href={href(v.destino)}><span>{v.pagina}</span><Icone nome="direita" tamanho={14} /></a>
-        ))}
-        <a className="vl-placa vl-placa--mapa" href={href('/mapa')}><Icone nome="mapa" tamanho={15} /><span>Mapa</span></a>
-      </nav>
     </section>
   )
 }

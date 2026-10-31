@@ -72,22 +72,6 @@
   .vl-chuva, .vl-nuvem, .vl-vagalume, .vl-poeira, .vl-brasa { display: none; }
 }
 
-/* As placas: nomes reais das páginas, em madeira com filete dourado. */
-.vl-placas { position: absolute; z-index: 3; left: 0.75rem; bottom: 0.65rem; display: flex; flex-wrap: wrap; gap: 0.4rem; max-width: calc(100% - 1.5rem); }
-.vl-placa { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 2rem; padding: 0.25rem 0.65rem; border-radius: 0.35rem; text-decoration: none;
-  color: #fdf1d6; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.01em;
-  background: linear-gradient(180deg, rgba(92, 58, 30, 0.92), rgba(58, 34, 16, 0.94)); box-shadow: 0 0 0 1px rgba(240, 196, 106, 0.55), 0 3px 0 rgba(0, 0, 0, 0.35);
-  transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.vl-placa:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px var(--vl-ouro), 0 5px 0 rgba(0, 0, 0, 0.3), 0 0 14px rgba(240, 196, 106, 0.35); color: #fff; }
-.vl-placa:focus-visible { outline: 3px solid var(--vl-ouro); outline-offset: 2px; }
-.vl-placa--mapa { background: linear-gradient(180deg, rgba(20, 40, 44, 0.92), rgba(10, 24, 26, 0.94)); }
-@media (max-width: 40rem) {
-  .vl { border-radius: 0.7rem; }
-  .vl-placa { font-size: 0.74rem; min-height: 1.85rem; padding-inline: 0.5rem; }
-  .vl-placa:nth-child(2) { display: none; }
-  .vl-balao { max-width: 13rem; font-size: 0.74rem; }
-}
-
 /* As portas do fim da página. */
 .vl-saidas { margin: 2.5rem 0 0.5rem; padding-top: 1.25rem; border-top: 1px solid var(--traco, #d8dedc); }
 .vl-saidas__titulo { margin: 0 0 0.75rem; font-size: 1.05rem; }
