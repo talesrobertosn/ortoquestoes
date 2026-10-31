@@ -185,7 +185,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 742 | Tornozelo da criança (Rockwood and Wilkins' Fractures in Children, cap. 30), refação TEOT/TARO | 17 para 45 KB, 2 figuras | 36 comentários e 3 simulados novos (pediatria-1463 a 1465) |
 | 743 | Mão e carpo da criança (Rockwood and Wilkins' Fractures in Children, cap. 8), refação TEOT/TARO | 11 para 45 KB, 2 figuras | 23 comentários e 3 simulados novos (pediatria-1466 a 1468) |
 | 749 | Joelho intra-articular da criança (Rockwood and Wilkins' Fractures in Children, cap. 28), refação TEOT/TARO pelo FLUXO-MESTRE | 10 para 73 KB, 3 figuras | 8 comentários oficiais, 15 simulados reescritos no estilo da prova e 3 novos (pediatria-1469 a 1471) |
-| (este PR) | Tíbia e fíbula da criança (Rockwood and Wilkins' Fractures in Children, cap. 29), refação TEOT/TARO pelo FLUXO-MESTRE | 22 para 62 KB, 2 figuras | 6 comentários (5 oficiais e conceitos-basicos-0362), 16 simulados reescritos no estilo da prova e 3 novos (pediatria-1472 a 1474) |
+| 751 | Tíbia e fíbula da criança (Rockwood and Wilkins' Fractures in Children, cap. 29), refação TEOT/TARO pelo FLUXO-MESTRE | 22 para 62 KB, 2 figuras | 6 comentários (5 oficiais e conceitos-basicos-0362), 16 simulados reescritos no estilo da prova e 3 novos (pediatria-1472 a 1474) |
+| (este PR) | Revisão: simulados pediatria-1451 a 1468 no estilo da prova e moldura dos resumos 08 e 30 | 2 resumos com Campbell 15 no lugar da moldura | 18 simulados e comentários refeitos |
 
 ## Próximo
 

@@ -233,12 +233,12 @@ Se caiu, a próxima PR é a de revisão daquilo, antes de seguir a fila. Se acho
 | Script `dumpq.py` sumiu de `/private/tmp` | Recrie (seção 4, etapa A) |
 | Ferramenta que falta para um passo repetido | Crie o script em `scripts/`, com docstring e uso, e documente aqui |
 
-## 13. Estado em 31/10/2026 (ponto de partida)
+## 13. Estado (atualize a cada PR)
 
-- Placar TEOT/TARO: 930 de 2.291 questões refeitas; resumos no total: 80.
-- Cobertura dos 284: 68 OK, 21 AMPLIAR, 195 CRIAR (antes do cap. 28).
-- Última PR: 749 (cap. 28 joelho intra-articular da criança: resumo 73 KB, simulados 1300 a 1314 reescritos, 1469 a 1471 novos).
-- Próximo: cap. 29 do Rockwood and Wilkins' Fractures in Children (diáfise da tíbia e fíbula), depois a revisão dos simulados 1451 a 1468 e da moldura dos resumos 08 e 30, depois os AMPLIAR e os CRIAR.
+O estado vivo fica no bloco ESTADO do topo de `~/OrtoQuestoes-Biblioteca/CHECKPOINT-GERAL.md`; esta seção guarda só o marco mais recente.
+
+- 31/10/2026, depois do PR de revisão (simulados 1451 a 1468 e moldura dos resumos 08 e 30): placar TEOT/TARO 936 de 2.291, 3 de 88 temas fechados; os caps. 28 e 29 do Rockwood and Wilkins' Fractures in Children estão completos (PRs 749 e 751).
+- Próximo: os AMPLIAR, começando por anatomia da mão e punho (`netter-anatomia-mao-punho-antebraco`, 21 KB) e genuvaro, genuvalgo e torções (`tachdjian6-alinhamento-torcoes-coxa-vara`, 26 KB, 44 questões pendentes).
 
 ## 14. Checklist de saída de cada PR
 

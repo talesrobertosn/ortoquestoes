@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-30-tornozelo
-versao: 2
+versao: 3
 titulo: Fraturas do tornozelo na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 30 · Ankle Fractures
 autores: Jaime R. Denning
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 30. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 30. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela. Complemento do Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38, pp. 1468 e 1469.
 subtemas: Fraturas do tornozelo na criança; Lesões fisárias
 resumo: Epidemiologia e obesidade; SALTER-HARRIS e DIAS-TACHDJIAN; fraturas de transição (TILLAUX, triplanar, pilão do adolescente, incisura, sindesmose); fechamento central, medial e lateral; Ottawa e exame de baixo risco; pinça, tomografia e ressonância; variantes normais; SH I e II (BARMADA), SH III e IV, SH V; fíbula e entorse; parada fisária (ponte medial = varo; fíbula = valgo; 7%, 25% a 40%, 50%); consolidação viciosa; artrose; retináculo extensor; sinostose; síndrome dolorosa complexa regional; expostas e cortador de grama.
 ---
@@ -316,27 +316,23 @@ Os tempos e as posições se espalham pelo capítulo; juntos, ajudam a responder
 
 Uma regra atravessa a tabela: o **gesso longo** controla a rotação e protege as fraturas que podem desviar (TILLAUX e triplanar); o **curto** basta para as estáveis, com menos rigidez do joelho. E a fixação interna, na criança pequena, costuma ser protegida com gesso em vez de movimento precoce, pela adesão.
 
-# Perguntas que a banca faz {radar=fundamento}
+# O que o Campbell 15 acrescenta {radar=fundamento}
 
-- **Em que ordem fecha a fise distal da tíbia?** Centro, medial e por último lateral, em cerca de 18 meses.
-- **Que tipo de SALTER-HARRIS é o TILLAUX e onde fica?** III, anterolateral.
-- **Que ligamento arranca o TILLAUX e com que movimento?** O tibiofibular anteroinferior, na rotação externa.
-- **Como o triplanar aparece nas radiografias?** SALTER-HARRIS III no AP e II no perfil.
-- **Por que via se aborda o triplanar lateral em duas partes?** Anterolateral.
-- **Qual mecanismo de DIAS-TACHDJIAN deixa a fíbula intacta?** Supinação-flexão plantar.
-- **Quanto de desvio articular manda reduzir?** Mais de 2 mm.
-- **Que deformidade dá a ponte medial depois de um SH III do maléolo medial?** Varo; a parada da fíbula dá valgo.
-- **A partir de quando a ponte deforma e quando se resseca?** Acima de 7%; ressecção com 25% a 40% e mais de 2 anos de crescimento.
-- **Quando os ossículos acessórios confundem?** Entre 6 e 12 anos; os subtibiale em 20%.
-- **O que lembra a dormência no primeiro espaço depois de um triplanar não reduzido?** Síndrome do retináculo extensor.
+O Campbell's Operative Orthopaedics, 15ª edição, trata o tornozelo da criança no capítulo 38 (pp. 1468 e 1469). Ele concorda com o Rockwood and Wilkins' Fractures in Children no essencial e acrescenta números e detalhes que ajudam na prova.
 
-# Três casos para fixar {radar=clinico}
+**Mecanismos e frequência.** As fraturas fisárias da tíbia distal seguem três mecanismos: **abdução, rotação externa e flexão plantar** produzem SALTER-HARRIS I e II (Fig. 38.170); **adução** (supinação-inversão) produz III e IV (Fig. 38.171); **compressão axial** produz o tipo V. A ordem de frequência é **II, depois III, depois I**, e o IV é relativamente raro. As fraturas fisárias da fíbula acompanham, em geral, as da tíbia; a fíbula em SALTER-HARRIS III costuma ser isolada.
 
-**Caso 1.** Menina de 13 anos torce o pé para fora no futebol; dor na linha articular anterolateral, pouco edema. O AP parece normal; a **pinça** mostra um SH III anterolateral com 3 mm de afastamento: **TILLAUX**. Tomografia, redução fechada em **rotação interna** com pressão anterolateral e parafuso epifisário de 4 mm (pode cruzar a fise, que está quase fechada).
+**SALTER-HARRIS I e II.**
+- A fíbula isolada vai para gesso curto por **3 a 6 semanas**.
+- Na tíbia, redução fechada e **gesso inguinopodálico com joelho fletido**.
+- Na criança pequena, aceita-se desvio moderado após a redução, sobretudo no plano anteroposterior; mas o **varo e o valgo da criança mais velha não corrigem** sozinhos, o pé tolera mal essas posições, e a redução aberta pode ser necessária (Fig. 38.172, com 17 graus residuais e um retalho de periósteo preso no foco).
+- Um **espaço residual na fise** após a redução pode ser **periósteo interposto**, que leva a fechamento prematuro; abrir e retirá-lo pode ajudar na criança mais nova.
 
-**Caso 2.** Menino de 14 anos com fratura que parece SH III no AP e SH II no perfil: **triplanar**. A tomografia mostra 4 mm de degrau. Redução em rotação interna; se não reduzir, via **anterolateral** e parafusos poupando a fise. Se a dor no dorso do pé, a hipoestesia no primeiro espaço e a fraqueza dos extensores aparecerem antes da redução, é **síndrome do retináculo extensor**: reduzir já e liberar o retináculo.
+**Fechamento prematuro da fise.** ROHMILLER relatou fechamento em **40%** das SALTER-HARRIS I e II da tíbia distal: **35%** no mecanismo de supinação-rotação externa e **54%** no de pronação-abdução. O preditor mais importante não foi o desvio inicial, mas o **desvio após a redução**; por isso o livro recomenda **redução anatômica** qualquer que seja o método, embora a taxa continue alta mesmo assim.
 
-**Caso 3.** Menino de 8 anos com SH III do maléolo medial por supinação-inversão, tratado com gesso. Um ano depois, a linha de PARK-HARRIS converge medialmente e o tornozelo vai para **varo**: **ponte medial**. Ressonância: ponte de 30% com mais de 2 anos de crescimento; **ressecção** com interposição e, se houver deformidade, osteotomia.
+**A linha de parada de crescimento.** A linha esclerótica de PARK ou HARRIS aparece **6 a 12 semanas** após a fratura e ajuda a prever a parada: se ela cruza toda a largura da metáfise nos dois planos e se afasta da fise paralela a ela, a parada é improvável; se falta ou se inclina, o crescimento anormal pode trazer varo ou valgo. O anel pericondral também pode ser arrancado nessa região numa lesão pequena e causar parada periférica com deformidade angular.
+
+**SALTER-HARRIS III e IV.** A maioria, inclusive o TILLAUX e o triplanar, exige **redução aberta e fixação**. Tradicionalmente se opera com **2 a 3 mm** ou mais de desvio, e ainda não há limites definidos pela tomografia, mas ela mostra o desvio, a cominuição e a direção certa dos parafusos (perpendiculares aos fragmentos). Fora do TILLAUX e do triplanar, essas fraturas são quase sempre **mediais**, no plafond. No tipo IV há muitas vezes um pequeno triângulo metafisário; retirá-lo expõe melhor a fise e pode evitar a ponte óssea periférica. Os implantes não devem cruzar a fise, salvo necessidade, para não criar ponte onde os fios passam. E um alerta de imagem: **centros de ossificação sintomáticos do maléolo medial** não devem ser confundidos com SALTER-HARRIS III.
 
 # Revisão rápida {radar=fundamento}
 
