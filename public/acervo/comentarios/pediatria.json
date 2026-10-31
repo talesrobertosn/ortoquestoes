@@ -1475,43 +1475,19 @@
   "conferido": false
  },
  "pediatria-0091": {
-  "conceito": "A luxação congênita da cabeça radial é em geral **posterior**, alternativa B, segundo o resumo do Rockwood and Wilkins, 10ª edição, capítulo 12.\n\nA fonte descreve **cabeça convexa, capítulo hipoplásico** e possível bilateralidade. Esses achados ajudam a distinguir a condição congênita do Monteggia crônico traumático, com **cabeça côncava, arco ulnar alterado e anular ossificado**.\n\nA história sem trauma lembrado não decide sozinha. O resumo afirma que toda luxação **anterior** é suspeita de trauma, e a morfologia das superfícies importa para o diagnóstico e a possibilidade de reconstrução. Uma cabeça fora do lugar deve ser estudada junto da ulna e do capítulo.\n\n**Na prova: ** posterior é a direção predominante, sem transformar a palavra em diagnóstico isolado. Não confundir a direção da forma congênita com os padrões de Bado da lesão traumática.",
-  "correta": "Alternativa B. É a direção usual explicitamente descrita para a forma congênita. A confirmação depende da morfologia e do conjunto clínico-radiográfico, não apenas da posição.",
+  "conceito": "Uma cabeça do rádio fora do lugar numa criança pode ter nascido assim ou ter saído num trauma esquecido. A direção da luxação é uma das pistas que separam as duas histórias.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) descreve a **luxação congênita** da cabeça do rádio com três marcas:\n- a luxação é **em geral posterior** (o livro ressalva: nem sempre);\n- a cabeça do rádio é **convexa e deformada**, e o capítulo é **hipoplásico**;\n- pode ser **bilateral** e se associar a síndromes como **EHLERS-DANLOS** e **unha-patela** (Fig. 12-19).\n\nA forma das superfícies explica tudo. A cabeça do rádio se molda contra o capítulo enquanto cresce: côncava sobre um capítulo convexo. Se ela nunca esteve no lugar, cresce **convexa** e deixa o capítulo pequeno. Já a cabeça que sai do lugar num MONTEGGIA, depois de formada, continua **côncava** por muito tempo.\n\nA direção completa o quadro. O MONTEGGIA mais comum, o BADO I, luxa a cabeça para a **frente**; por isso o capítulo manda tratar **toda luxação anterior como traumática** até prova em contrário, procurando a ulna curvada ou mal consolidada que denuncia o trauma. A luxação **posterior**, com cabeça convexa e capítulo hipoplásico, aponta para a origem congênita.",
+  "correta": "**B) posterior.** A luxação congênita da cabeça do rádio é em geral posterior, com cabeça convexa e capítulo hipoplásico (Rockwood and Wilkins' Fractures in Children, cap. 12).",
   "incorretas": {
-   "A": "Lateral é uma direção importante na classificação de Monteggia III, mas não a predominante congênita apresentada no resumo. São contextos diferentes.",
-   "C": "O componente anterior não corresponde ao padrão congênito predominante. A fonte manda suspeitar de trauma diante de luxação anterior, sem equipará-la automaticamente à variante congênita.",
-   "D": "Também propõe componente anterior, que não é a direção usual descrita. A diferenciação congênita/traumática exige analisar superfícies e ulna, em vez de escolher uma direção anterior por familiaridade."
+   "A": "**A luxação lateral** é a do MONTEGGIA tipo III, por varo, não a congênita.",
+   "C": "**Anterolateral** é uma direção do MONTEGGIA traumático (tipos I e III); a congênita costuma ser posterior.",
+   "D": "**Anteromedial** não é a direção descrita para a luxação congênita."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Classificação e mecanismos."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Radiographic Determination of Traumatic Versus Congenital Dislocation e Fig. 12-19",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Diagnóstico",
-      "Classificação e mecanismos"
-     ],
-     "blocos": [
-      "diagnostico-7ee8a436",
-      "classificacao-e-mecanismos-bf9aae38"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "6e8327258750b1e31aa10f32583c6e3f9fa86dee1c2d46f47acddaa41ef10722"
-    }
-   ],
-   "questaoSha256": "65240302d78ba5c4afc75f80282c2605efe57ab6c5a96680696d821e92ead6b0",
-   "comentarioSha256": "37283d74ef491290359e2811c52813d7e69e27f1883e9744e3f9f0a24569174b"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0092": {
   "conceito": "**A distrofia muscular facioescapuloumeral (FSH).** É uma das distrofias musculares mais comuns. Tem herança **autossômica dominante** (tipo 1, ligado à contração da região D4Z4 do cromossomo 4q35, que libera a expressão tóxica do gene **DUX4**). Começa geralmente na **adolescência** ou no adulto jovem, com evolução lenta e frequentemente **assimétrica**.\n\n**O padrão de fraqueza.**\n| Região | Achados |\n|---|---|\n| **Face** | Fraqueza do orbicular dos olhos e da boca: não fecha os olhos com força, não assobia, sorriso transverso |\n| **Cintura escapular** | **Estabilizadores da escápula**: **trapézio**, **serrátil anterior**, **romboides** e levantador da escápula; **escápula alada** |\n| **Braço** | Bíceps e tríceps (o \"braço de Popeye\", com antebraço preservado) |\n| Membros inferiores | Tibial anterior (pé caído), em fases mais avançadas |\n\n**O deltoide preservado.** O **deltoide** é classicamente **preservado** na FSH. O problema do ombro não é o motor do braço, e sim a **escápula**: sem trapézio e serrátil, ela não se estabiliza no tórax e roda quando o deltoide contrai, de modo que a força do deltoide se perde e a criança não consegue elevar o braço acima de 90°.\n\n**O tratamento ortopédico: a escapulotoracodese.** A **fixação da escápula** às costelas (artrodese escapulotorácica, com placas, fios ou parafusos e enxerto) cria uma base estável para o **deltoide** funcionar. É justamente porque o deltoide está preservado que a cirurgia melhora a elevação do braço (ganho de cerca de 30° a 40° de flexão e abdução). Antes de indicar, faz-se o **teste**: o examinador fixa manualmente a escápula contra o tórax e pede para o paciente elevar o braço; se a elevação melhora, a cirurgia é indicada.\n\n**As complicações** incluem pneumotórax, lesão do plexo braquial, perda de função respiratória e pseudartrose.",
@@ -7864,44 +7840,19 @@
   }
  },
  "pediatria-0539": {
-  "conceito": "Na lesão de Monteggia, a fratura da ulna vem com a luxação da cabeça do rádio. Bado classificou pela **direção da cabeça**, e a direção dita a posição de imobilização: o cotovelo fica na posição que mantém a cabeça encostada no capítulo.\n\n**O tipo II.** A cabeça vai para **trás** (posterior ou posterolateral), a ulna angula com ápice posterior. No Rockwood and Wilkins (10ª ed., cap. 12, de Waters e Noonan), é raro na criança, cerca de **6%**, e segue o padrão do adulto. O mecanismo é a **carga longitudinal com o cotovelo a 60 graus**.\n\n**Por que extensão.** Fletir o cotovelo empurra a cabeça do rádio para trás, justamente para onde ela luxou. A redução do capítulo é tração a 60 graus com pressão anterior sobre a cabeça, e a imobilização é **em extensão**, que mantém a cabeça reduzida contra o capítulo. É o oposto do tipo I, em que a cabeça vai para a frente e o gesso fica em **110 a 120 graus** de flexão.\n\n**O princípio geral.** O Monteggia se trata **pela ulna**: corrigida a ulna, a cabeça volta. Se não volta, o ligamento anular está interposto.\n\n**Na prova:** Bado I imobiliza em **flexão**; Bado II em **extensão**.\n\nO resumo de Monteggia da criança traz a manobra de cada tipo na seção de tratamento agudo.",
-  "correta": "**A: extensão.** No tipo II a cabeça luxa para trás; a extensão a mantém encostada no capítulo, ao contrário da flexão usada no tipo I.",
+  "conceito": "O MONTEGGIA tipo II tem a cabeça do rádio luxada para **trás**. A posição de imobilização sai daí.\n\nNo tipo I, a cabeça vai para a frente, puxada pelo bíceps; fletir o cotovelo a 110 a 120 graus relaxa o bíceps e trava a cabeça. No tipo II, a flexão faria o contrário: empurraria a cabeça posterior de volta para fora. O Rockwood and Wilkins' Fractures in Children (cap. 12) descreve a redução e a imobilização do tipo II (Fig. 12-33):\n1. **tração longitudinal** no eixo do antebraço com o cotovelo a **60 graus**, a posição do mecanismo de PENROSE;\n2. a cabeça reduz sozinha ou com uma **pressão anterior** suave na face posterior dela;\n3. o cotovelo é **estendido** e **imobilizado em extensão**, o que estabiliza a cabeça e permite um **molde posterior** para segurar a ulna.\n\nSe a ulna não se mantém alinhada, usa-se um fio intramedular; alguns cirurgiões preferem fixar a ulna a imobilizar em extensão. O tipo II é raro na criança (**6%**), aparece nas mais velhas e no trauma maior, e a fratura da ulna costuma ser **metafisária proximal**, às vezes com fratura da borda anterior da cabeça do rádio.",
+  "correta": "**A) extensão.** Depois da redução do tipo II, o cotovelo é imobilizado em extensão, com molde posterior para a ulna (Rockwood and Wilkins' Fractures in Children, cap. 12).",
   "incorretas": {
-   "B": "**Flexão de 45 graus já começa a empurrar a cabeça para trás**, a direção da luxação no tipo II.",
-   "C": "**90 graus de flexão é a posição que o capítulo nega para o tipo II.** Ela favorece a reluxação posterior.",
-   "D": "**110 graus é a imobilização do tipo I**, em que a cabeça luxa para a frente e a flexão a mantém reduzida."
+   "B": "**45 graus de flexão** não estão entre as posições descritas; a flexão tende a reluxar a cabeça posterior.",
+   "C": "**90 graus** é uma flexão que o capítulo usa para o tipo I e no pós-operatório geral, não para o tipo II reduzido.",
+   "D": "**110 graus** é a flexão do tipo I, que relaxa o bíceps e trava a cabeça anterior."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo; Classificação e mecanismos."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Nonoperative Treatment of Type II Monteggia Fracture-Dislocations e Fig. 12-33",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Tratamento agudo",
-      "Classificação e mecanismos"
-     ],
-     "blocos": [
-      "tratamento-agudo-35192e58",
-      "tratamento-agudo-c42b9a19",
-      "classificacao-e-mecanismos-414cee4f"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "08a46e01cd28ed45c030a571ceb3c72d8551d82aaa7c79325fe10263e51a0ed5"
-    }
-   ],
-   "questaoSha256": "1a51d81468ba68c196e862ef6d5eb807d4365f67e2632df19e952525b1cdf251",
-   "comentarioSha256": "18bc9fcfa2c79675d935591cedb6534084b3395893f4a91f1b2693aea755f3f9"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0540": {
   "conceito": "O colo do rádio pode quebrar quando o cotovelo luxa, e o Rockwood crianças (cap. 11) descreve dois momentos diferentes, com desvios opostos (Fig. 11-2):\n\n| Tipo (CHAMBERS) | Quando quebra | Para onde vai a cabeça |\n|---|---|---|\n| **D** | durante a **redução** espontânea: o capítulo pressiona a borda distal da cabeça | **posterior** |\n| **E** | durante a **luxação**: o capítulo pressiona a borda proximal da cabeça | **anterior**, e costuma ficar à frente mesmo depois da redução |\n\nO enunciado fala em fratura **associada à redução espontânea**. Pelo texto do capítulo, a fratura que acontece **na** redução empurra a cabeça para **trás** (tipo D). A banca marcou **anterior**, que é o padrão da fratura que acontece **na luxação** e que continua à frente mesmo depois que o cotovelo reduz: o capítulo diz que, mesmo com redução espontânea ou manipulada, o fragmento da cabeça \"costuma ficar anterior à diáfise\". O gabarito oficial foi mantido.\n\nOs dois padrões são raros, a cabeça costuma ficar totalmente separada do colo, e o tratamento segue as regras gerais: radiocapitelar congruente e rotação completa, com redução aberta se a fechada não conseguir.",
@@ -11148,43 +11099,19 @@
   }
  },
  "pediatria-0656": {
-  "conceito": "Na **luxação congênita da cabeça do rádio**, o desvio mais frequente é o **posterior**, alternativa B. A cabeça radial está fora de sua relação habitual com o capítulo do úmero; “posterior” informa a direção desse deslocamento, não o lado do corpo nem a posição do antebraço. O resumo do Rockwood and Wilkins, 10ª edição, capítulo 12, seção “Diagnóstico”, descreve a forma congênita como geralmente posterior, com cabeça convexa e capítulo hipoplásico.\n\n**A forma das superfícies ajuda a entender a origem.** A cabeça radial congênita é convexa, isto é, abaulada, e o capítulo é hipoplásico, com desenvolvimento reduzido. Esses achados indicam uma relação articular que se desenvolveu de maneira diferente. O resumo os contrapõe ao padrão da luxação traumática crônica, em que a cabeça pode permanecer côncava e a ulna apresentar alteração do seu arco. Assim, encontrar a cabeça fora do lugar não basta para chamar o quadro de congênito: é preciso observar também as superfícies e o alinhamento da ulna.\n\n**A direção não substitui o diagnóstico.** Uma cabeça posterior também pode aparecer em uma lesão traumática de MONTEGGIA tipo II. Na classificação de BADO, a direção da cabeça se associa à fratura ou deformidade da ulna: tipo I anterior, II posterior ou posterolateral, III lateral e IV anterior com fraturas dos dois ossos. Esses nomes descrevem uma lesão traumática, enquanto a pergunta já especifica a origem congênita. Não se deve transportar a frequência dos tipos de MONTEGGIA para responder à frequência dos desvios congênitos (Rockwood and Wilkins, 10ª edição, capítulo 12, “Classificação e mecanismos”).\n\nO desvio anterior merece atenção especial no diagnóstico diferencial: o resumo orienta suspeitar de trauma quando a luxação é anterior. Na investigação de uma possível lesão traumática, o eixo do rádio deve atravessar o centro do capítulo no **perfil verdadeiro**, e uma alteração do arco da ulna pode revelar deformidade plástica. O próprio texto admite que a forma congênita pode ser bilateral; isso é um dado complementar, sem permitir afirmar bilateralidade em todos os pacientes.\n\n**Na prova:** origem congênita, cabeça convexa e capítulo hipoplásico combinam com o padrão geralmente posterior. A questão pede o sentido mais frequente, não uma direção exclusiva nem uma decisão de tratamento.",
-  "correta": "Alternativa B. Posterior é a direção descrita como predominante na luxação congênita da cabeça radial. O dado deve ser associado à morfologia congênita, com cabeça convexa e capítulo hipoplásico: a posição posterior isolada também pode existir em trauma e não define a origem.",
+  "conceito": "Mesma pergunta do TEOT 2022, agora no TARO 2012, com as quatro direções puras. A resposta continua a mesma.\n\nPelo Rockwood and Wilkins' Fractures in Children (cap. 12), a luxação congênita da cabeça do rádio é **em geral posterior**, com **cabeça convexa** e deformada e **capítulo hipoplásico**, às vezes bilateral (Fig. 12-19). O contraste com o trauma é o que a banca quer: o MONTEGGIA tipo I, o mais comum na criança (70% a 75%), luxa a cabeça para a **frente**, e o tipo III, para o **lado**. Por isso o capítulo recomenda desconfiar de trauma em toda luxação **anterior**.\n\nUm jeito de não confundir: a congênita é um problema de **forma** (a cabeça nunca se moldou no capítulo), e a traumática, de **posição** (a cabeça bem formada saiu do lugar). A forma se vê na radiografia ou na ressonância; a direção é a pista mais rápida.",
+  "correta": "**B) posterior.** É a direção mais frequente da luxação congênita da cabeça do rádio no Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "Anterior não é o padrão predominante congênito descrito no resumo. Ao encontrar a cabeça radial à frente, o diagnóstico diferencial deve incluir trauma, especialmente a lesão de MONTEGGIA tipo I, que combina esse desvio com a deformidade da ulna. A suspeita é investigada pelo alinhamento radiocapitelar e pelo arco ulnar, em vez de presumir que toda luxação antiga seja congênita.",
-   "C": "Medial significa deslocamento para o lado interno, diferente de posterior, que é para trás. A descrição independente do quadro congênito aponta a predominância posterior, portanto o sentido medial não responde ao que foi perguntado. Isso não autoriza chamar qualquer desvio medial de impossível nem atribuir a ele uma frequência que a fonte não fornece.",
-   "D": "Lateral indica deslocamento para fora. Esse sentido aparece na classificação traumática de MONTEGGIA como tipo III, associado à ulna em varo, mas essa associação não o torna o desvio mais frequente da forma congênita. A distinção é entre direção e origem da lesão: para a origem congênita especificada, o resumo aponta posterior."
+   "A": "**Anterior** é a direção do MONTEGGIA tipo I; uma luxação anterior deve ser tratada como traumática até prova em contrário.",
+   "C": "**Medial** não é a direção descrita para a luxação congênita.",
+   "D": "**Lateral** é a direção do MONTEGGIA tipo III, por varo."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Classificação e mecanismos."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Radiographic Determination of Traumatic Versus Congenital Dislocation e Fig. 12-19",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Diagnóstico",
-      "Classificação e mecanismos"
-     ],
-     "blocos": [
-      "diagnostico-7ee8a436",
-      "classificacao-e-mecanismos-bf9aae38"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "6e8327258750b1e31aa10f32583c6e3f9fa86dee1c2d46f47acddaa41ef10722"
-    }
-   ],
-   "questaoSha256": "af4282bd4db0df603a7ff2fbfe1ab7def78381b126a1d303c1f98727cd7b82e0",
-   "comentarioSha256": "8adda899227f34474fbc6b3f9e5021a6d2793422bce700e76be4203d2d7971b0"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0657": {
   "conceito": "A questão cita um estudo brasileiro (GUARNIERO e colaboradores) que o Rockwood and Wilkins' Fractures in Children não traz. O capítulo 20 dá a faixa geral: a clavícula responde por **5% a 15%** de todas as fraturas pediátricas, uma das mais comuns da infância. O valor de cerca de **11%** marcado pela banca cai dentro dessa faixa.\n\nO resto da epidemiologia que costuma ser cobrado junto:\n- **terço médio** em até **80%** das fraturas da clavícula; terço lateral em 10% a 30%;\n- na idade escolar, a queda sobre a face lateral do ombro;\n- no recém-nascido, uma das complicações mais frequentes do parto vaginal (até 4,4%);\n- no adolescente, o esporte (66% numa série de 545).\n\nSe a prova pedir só \"a faixa do livro\", a resposta é 5% a 15%; se citar GUARNIERO, a banca espera cerca de 11%.",
@@ -12944,43 +12871,27 @@
   }
  },
  "pediatria-0712": {
-  "conceito": "Bado classifica a lesão de Monteggia pela direção da cabeça do rádio. Letts acrescentou o que acontece com a **ulna** da criança, que nem sempre quebra por completo.\n\n**A classificação de Letts no Rockwood and Wilkins (10ª ed., cap. 12).** Os três primeiros tipos têm a cabeça **anterior**, como no Bado I, e mudam pela ulna:\n- **A:** deformidade **plástica** da ulna;\n- **B:** fratura em **galho verde**;\n- **C:** fratura **completa**.\n\nDepois vêm o **D**, com a cabeça posterior, e o **E**, com a cabeça lateral.\n\n**Por que isso importa no tratamento.** O capítulo trata o Monteggia **pela ulna**: plástica e galho verde vão para **redução fechada**; transversa e oblíqua curta, para haste intramedular; oblíqua longa e cominuta, para placa. A deformidade plástica é traiçoeira: o **arco ulnar** com desvio maior que 1 mm denuncia a curvatura que a radiografia parece não mostrar.\n\n**Na prova:** Letts **B** = **galho verde** da ulna com cabeça **anterior**.\n\nO resumo de Monteggia da criança traz Bado e Letts na seção de classificação.",
-  "correta": "**D: fratura em galho verde da ulna com desvio anterior da cabeça do rádio.** É o tipo B de Letts, entre a deformidade plástica (A) e a fratura completa (C).",
+  "conceito": "A classificação de BADO diz para onde foi a cabeça do rádio; a de LETTS acrescenta **como quebrou a ulna**, e é isso que decide o tratamento na criança.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12, Fig. 12-6) descreve os cinco tipos de LETTS:\n- **A**: cabeça anterior com **deformidade plástica** da ulna;\n- **B**: cabeça anterior com fratura **em galho verde** (incompleta) da ulna;\n- **C**: cabeça anterior com fratura **completa** da ulna;\n- **D**: cabeça **posterior** com fratura metafisária da ulna (o BADO II);\n- **E**: cabeça **lateral** com galho verde metafisário (o BADO III).\n\nA, B e C são subdivisões do BADO I e formam uma escada de instabilidade: a ulna curvada e a em galho verde, seguras pelo periósteo, vão bem com redução fechada e gesso; a completa pode perder a redução e costuma pedir fixação intramedular ou placa. Por isso a pergunta pelo tipo B é, no fundo, uma pergunta de tratamento.",
+  "correta": "**D) fratura em galho verde da ulna com desvio anterior da cabeça do rádio.** É o tipo B de LETTS (Rockwood and Wilkins' Fractures in Children, cap. 12, Fig. 12-6).",
   "incorretas": {
-   "A": "**Fratura completa com cabeça anterior é o tipo C de Letts.**",
-   "B": "**Cabeça posterior é o tipo D de Letts**, independentemente do tipo de fratura da ulna.",
-   "C": "**Deformidade plástica com cabeça anterior é o tipo A de Letts.**"
+   "A": "**Fratura completa da ulna com cabeça anterior** é o tipo C.",
+   "B": "**Cabeça posterior** é o tipo D, que corresponde ao BADO II, com fratura metafisária.",
+   "C": "**Deformidade plástica com cabeça anterior** é o tipo A, o degrau anterior ao B."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Letts Classification e Fig. 12-6",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-bf9aae38",
-      "classificacao-e-mecanismos-414cee4f",
-      "classificacao-e-mecanismos-c4b7c40b"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "32cf52620be4a127500a5afabb627e7d043bd1062942aae828164c04a906e695"
-    }
-   ],
-   "questaoSha256": "c4d72f8abf842a23763da24f4e8e13e11c988da467253dff5d2a5e91e6e9b3e3",
-   "comentarioSha256": "31057059e890474eef2f2d15e09c8beeaf5a3af88f0f5d8d2aef01bafc6a80f8"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-12-6.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fig. 12-6. Classificação de LETTS: A, luxação anterior da cabeça com deformidade plástica da ulna; B, com fratura em galho verde; C, com fratura completa; D, luxação posterior com fratura metafisária da ulna; E, luxação lateral com fratura metafisária em galho verde.",
+    "largura": 1200,
+    "altura": 614
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0713": {
   "conceito": "Sem gabarito oficial publicado, e o capítulo não dá a frequência dos tipos de SALTER-HARRIS na tíbia proximal, então a resposta provável sai do que o livro descreve.\n\n**Os mecanismos.** O Rockwood (cap. 27) cita valgo, varo, **hiperextensão** e, raramente, flexão. A hiperextensão é a que leva a metáfise para trás e ameaça a poplítea; a maioria das fraturas puramente fisárias desvia para anterior. Pelo gráfico de MUBARAK, as fisárias extra-articulares (SALTER-HARRIS I e II) são mais frequentes que as intra-articulares (III e IV), e acontecem antes, entre 10 e 13 anos em média.\n\n**A resposta provável.** A combinação hiperextensão com tipos I e II reúne o mecanismo que o capítulo destaca para o descolamento da epífise e os tipos mais frequentes. Os tipos III e IV são os do adolescente com a fise fechando e associam lesão ligamentar em 40%.\n\nVale registrar o limite: o capítulo também descreve o valgo como mecanismo do descolamento, e não diz qual é o mais comum.",
@@ -13357,44 +13268,29 @@
   }
  },
  "pediatria-0724": {
-  "conceito": "Os quatro tipos de Bado têm, cada um, a sua ulna. O tipo II é o que mais lembra o adulto.\n\n| Tipo | Cabeça do rádio | Detalhe |\n|---|---|---|\n| I | anterior | ápice anterior da ulna, 70% a 75% |\n| II | posterior ou posterolateral | ápice posterior, 6%, padrão do adulto |\n| III | lateral | ulna em varo, segundo na criança |\n| IV | anterior | com fratura do rádio no mesmo nível ou distal, raro |\n\n**O tipo II no Rockwood and Wilkins (10ª ed., cap. 12).** A cabeça vai para trás, por **carga longitudinal com o cotovelo a 60 graus** (Penrose). A força sobe pelo antebraço e quebra a ulna **perto do cotovelo**, na **metáfise proximal**, com ápice posterior. Se a ulna resistir, a mesma força produz uma luxação posterior do cotovelo. O resumo do capítulo registra a ulna **metafisária proximal** como característica do tipo II.\n\n**Tratamento.** Tração a 60 graus, pressão anterior na cabeça e **imobilização em extensão**; a ressonância ajuda a ver a borda anterior da cabeça.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a fratura metafisária proximal, sustentada pelo capítulo.\n\n**Na prova:** Bado II = cabeça posterior, ulna **metafisária proximal**, imobilizar em extensão.\n\nO resumo de Monteggia da criança traz o mecanismo de cada tipo na seção de classificação.",
-  "correta": "**A: metafisária proximal.** É a ulna típica do tipo II no capítulo, quebrada perto do cotovelo pela carga longitudinal a 60 graus.",
+  "conceito": "No tipo II de BADO, a cabeça do rádio sai para **trás** e a ulna quebra com **ápice posterior**. A pergunta é onde a ulna quebra na criança.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) define o tipo II como luxação posterior ou posterolateral com fratura de ápice posterior **diafisária ou metafisária**, e a legenda da Fig. 12-1 é direta: na criança, a ulna em geral quebra **na metáfise**. O mecanismo ajuda a entender. PENROSE mostrou que o tipo II nasce de uma **carga longitudinal com o cotovelo a cerca de 60 graus**: a força sobe pelo antebraço e encontra a ulna proximal, que quebra perto do cotovelo; se a ulna resiste, o cotovelo luxa para trás. Como a ulna da criança, com seu periósteo grosso, resiste bem, o tipo II é raro (6%) e aparece nas crianças mais velhas.\n\nPode haver ainda fratura da **borda anterior da cabeça do rádio**, que precisa ser avaliada.",
+  "correta": "**A) metafisária proximal.** No tipo II da criança, a ulna em geral quebra na metáfise proximal (Rockwood and Wilkins' Fractures in Children, cap. 12, Fig. 12-1).",
   "incorretas": {
-   "B": "**Diafisária oblíqua é mais o padrão do tipo I**, com a ulna angulada de ápice anterior no meio do osso.",
-   "C": "**Diafisária transversa também não é a assinatura do tipo II**, que quebra a ulna na metáfise proximal.",
-   "D": "**Salter-Harris II da epífise não descreve a ulna do Monteggia.** O capítulo cita lesões epifisárias do rádio entre os equivalentes, não a ulna do tipo II."
+   "B": "**A diafisária oblíqua** lembra mais o tipo I, que tem fratura da diáfise de ápice anterior em qualquer nível.",
+   "C": "**A diafisária transversa** também é padrão do tipo I; no tipo II da criança a ulna quebra na metáfise.",
+   "D": "**Fratura epifisária SALTER-HARRIS II** da ulna não descreve o tipo II; os equivalentes do tipo II envolvem a epífise ou o colo do **rádio**."
   },
-  "conferido": false,
-  "provavel": "A",
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seções Bado Classification e Type II Mechanism of Injury, Fig. 12-1",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-bf9aae38",
-      "classificacao-e-mecanismos-414cee4f",
-      "classificacao-e-mecanismos-c4b7c40b"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "32cf52620be4a127500a5afabb627e7d043bd1062942aae828164c04a906e695"
-    }
-   ],
-   "questaoSha256": "08cfea374bdb7d8608ab6727d93f64ead95261bb8be507808592c29dcd63b220",
-   "comentarioSha256": "db5521a2736a5b957f795c9f8e7e22a2e210ccf2f6bc80d1492a42271b12f60b"
-  }
+  "provavel": "A",
+  "alerta": "Questão do TARO 2010 sem gabarito oficial publicado. A resposta provável (A) segue o Rockwood and Wilkins' Fractures in Children (cap. 12), que descreve a fratura da ulna do tipo II da criança como em geral metafisária.",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-12-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fig. 12-1. Classificação de BADO: tipo I, luxação anterior da cabeça do rádio com fratura da ulna de ápice anterior; tipo II, luxação posterior ou posterolateral com fratura metafisária da ulna; tipo III, luxação lateral com fratura metafisária em galho verde da ulna; tipo IV, como o tipo I, com fratura da diáfise do rádio distal à da ulna.",
+    "largura": 1200,
+    "altura": 848
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0725": {
   "conceito": "**Deformidade de Sprengel (escápula alta congênita).** É a anomalia congênita mais comum da cintura escapular. A escápula se forma na região cervical e **desce** entre a 9ª e a 12ª semana de gestação; na Sprengel, a descida é incompleta, e a escápula fica **elevada, pequena, rodada** (ângulo inferior apontando medialmente) e com mobilidade reduzida.\n\n**Características.**\n\n| Aspecto | O que se observa |\n|---|---|\n| Sexo | **Mais comum no feminino** (cerca de 3:1) |\n| Lateralidade | Geralmente **unilateral** (bilateral em 10% a 30%) |\n| Osso omovertebral | Barra óssea, cartilaginosa ou fibrosa entre o ângulo superomedial da escápula e as vértebras cervicais; presente em **cerca de um terço** dos casos |\n| Músculos | Hipoplasia ou ausência dos periescapulares; o **trapézio** é o mais frequentemente comprometido, seguido de romboides e levantador da escápula |\n| Anomalias associadas | Síndrome de Klippel-Feil, escoliose congênita, costelas fundidas, anomalias renais |\n\n**Clínica.** Assimetria do pescoço e do ombro, limitação da **abdução** (pela menor rotação escapular). A classificação de **Cavendish** gradua a deformidade estética (de I, quase imperceptível, a IV, muito grave).\n\n**Tratamento.** Casos leves: observação e fisioterapia. Casos com déficit funcional ou estético importante, idealmente entre 3 e 8 anos: cirurgia de **Woodward** (reinserção mais distal da origem do trapézio e romboides) ou **Green** (liberação e reposicionamento extraperiosteal), com ressecção do osso omovertebral e da porção superomedial da escápula. Risco principal: **lesão do plexo braquial** por tração ao abaixar a escápula (pode-se associar osteotomia da clavícula).\n\n> Sprengel: unilateral, mais em meninas, omovertebral em um terço, trapézio é o músculo mais comprometido.",
@@ -13828,43 +13724,29 @@
   "conferido": false
  },
  "pediatria-0742": {
-  "conceito": "Quando o Monteggia passa despercebido, a cabeça do rádio fica luxada. A história natural **não é benigna**: o Rockwood and Wilkins (10ª ed., cap. 12) descreve valgo, dor, perda de rotação e de flexão e neuropatia tardia.\n\n**Quando reconstruir.** A cabeça ainda precisa ter forma de encaixe: **côncava**, com o capítulo **convexo**, de preferência abaixo de 10 a 12 anos e o mais cedo possível. Com cabeça convexa ou aumentada, capítulo achatado ou artrose, a reconstrução está contraindicada.\n\n**Os dois tempos da reconstrução.** O primeiro e mais importante é a **osteotomia de abertura da ulna**, que devolve o comprimento e deixa a cabeça voltar. O segundo é refazer o **ligamento anular**, de preferência com o anular nativo. Quando ele não serve, há técnicas com tecido do tríceps:\n- **Bell Tawse:** usa a **porção central do tendão do tríceps**, passada por um furo na ulna, com estabilidade **posterior**;\n- Bucknill e Lloyd-Roberts: porção lateral, com pino transcapitelar;\n- Seel e Peterson: furos nas inserções, força posteromedial.\n\nO redeslocamento chega a 25%; os fatores-chave são a osteotomia da ulna e não deixar pino.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a porção central do tríceps.\n\n**Na prova:** **Bell Tawse** = tríceps **central**.\n\nNo resumo de Monteggia da criança, a seção do Monteggia crônico descreve as técnicas.",
-  "correta": "**C: a porção central do tendão do tríceps.** É a fita de tecido que a técnica de Bell Tawse passa em volta do colo do rádio e por um furo na ulna.",
+  "conceito": "O MONTEGGIA crônico é a cabeça do rádio que ficou fora do lugar semanas ou anos, e reduzi-la exige segurar a cabeça de volta com um novo ligamento anular. BELL TAWSE criou a técnica original.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) descreve: BELL TAWSE usou a **porção central do tendão do tríceps**, passada por um **furo na ulna** e em volta do **colo do rádio**, pela via de BOYD, e imobilizou em **extensão**. A força estabilizadora resultante é **posterior** (Figs. 12-44 e 12-45A).\n\nAs variações que a banca pode trocar com ela:\n- **BUCKNILL e LLOYD-ROBERTS**: porção **lateral** do tríceps, com pino transcapitelar, imobilizando em flexão;\n- **HURST e DUBROW**: porção central, mas levando a dissecção pela ulna até o colo e usando um túnel de periósteo;\n- **SEEL e PETERSON**: dois furos nas inserções originais do anular, com força **posteromedial**, mais fisiológica; eles notaram que o BELL TAWSE puxa o rádio para posterolateral e que um anular apertado demais estrangula o colo;\n- outros enxertos: lacerto fibroso, fáscia do antebraço, **palmar longo** livre e **fáscia lata** livre.\n\nHoje, o centro da reconstrução é a **osteotomia de abertura da ulna**; reconstruir só o anular, sem corrigir a ulna, raramente funciona, e os autores preferem **reparar o anular nativo**, que quase sempre ainda está lá.",
+  "correta": "**C) a porção central do tendão do tríceps.** É o enxerto da técnica de BELL TAWSE (Rockwood and Wilkins' Fractures in Children, cap. 12, Fig. 12-44).",
   "incorretas": {
-   "A": "**Palmar longo não é o enxerto de Bell Tawse.** As técnicas citadas no capítulo usam o próprio tríceps.",
-   "B": "**A porção medial não é a usada.** Bell Tawse usa a central; Bucknill e Lloyd-Roberts, a lateral.",
-   "D": "**Fáscia lata não aparece nas técnicas de reconstrução do anular do capítulo**, que usam o anular nativo ou o tríceps."
+   "A": "**O palmar longo livre** é um dos outros enxertos citados, não o de BELL TAWSE.",
+   "B": "**A porção medial do tríceps** não é descrita; a modificação de BUCKNILL e LLOYD-ROBERTS usa a porção **lateral**.",
+   "D": "**A fáscia lata livre** é outra alternativa de enxerto, não a técnica de BELL TAWSE."
   },
-  "conferido": false,
-  "provavel": "C",
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Complicações e MONTEGGIA crônico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Annular Ligament Repair or Reconstruction, Figs. 12-44 e 12-45",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Complicações e MONTEGGIA crônico"
-     ],
-     "blocos": [
-      "complicacoes-e-monteggia-cronico-c7cab5d6",
-      "complicacoes-e-monteggia-cronico-5b7c33b4"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "7d8def51d92ae181b912add025684e6c8806f3ad77d90a16953006f4c65b7b1f"
-    }
-   ],
-   "questaoSha256": "8bb5e15a7e45054cce3b3b7237137a6160326ec9d35fdefc606fd887ae9ad9a7",
-   "comentarioSha256": "ea32c78849bbd61c92daea09438e47e66b00c2586681365cf35901bf4092227a"
-  }
+  "provavel": "C",
+  "alerta": "Questão do TARO 2007 sem gabarito oficial publicado (o enunciado grafa TOWSE). A resposta provável (C) segue o Rockwood and Wilkins' Fractures in Children (cap. 12): porção central do tendão do tríceps.",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-12-45.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fig. 12-45. Reconstrução do ligamento anular: A, BELL TAWSE, com força estabilizadora posterior; B, SEEL e PETERSON, com furos cruzados nas bordas anterior e posterior da incisura radial da ulna e força posteromedial.",
+    "largura": 960,
+    "altura": 524
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0743": {
   "conceito": "Aos 5 anos, a fratura da diáfise do fêmur ainda pode ir para **gesso imediato**, desde que nada o impeça. O Rockwood and Wilkins' Fractures in Children (cap. 25) lista o que impede:\n- encurtamento de mais de **2 cm**;\n- **edema maciço** da coxa;\n- **lesão associada** que impeça o gesso.\n\nE dá a **telescopagem de THOMPSON**: sob fluoroscopia, se a compressão axial suave produzir **mais de 3 cm** de encurtamento, tração em vez de gesso imediato.\n\nCom isso, as alternativas se resolvem:\n- **edema importante** e **fratura no mesmo membro** são contraindicações;\n- **4 cm na telescopagem** indicam tração;\n- sobra o **encurtamento inicial de até 3 cm**, a alternativa mais próxima do livro.\n\nO capítulo usa 2 cm como corte para o gesso imediato, mas também diz que, como o hipercrescimento médio é de cerca de 1 cm, **2 a 3 cm** de encurtamento no gesso é o máximo aceitável.",
@@ -15809,43 +15691,19 @@
   }
  },
  "pediatria-0831": {
-  "conceito": "No Monteggia, a posição do gesso é a que mantém a cabeça do rádio reduzida, e isso depende de para onde ela luxou.\n\n**O tipo II de Bado.** A cabeça vai para **trás**, por carga longitudinal com o cotovelo a 60 graus. No Rockwood and Wilkins (10ª ed., cap. 12), a redução é por tração a **60 graus** com pressão anterior sobre a cabeça, e a imobilização é **em extensão**. Fletir o cotovelo, até 90 graus, empurra a cabeça para trás de novo.\n\n**O contraste com o tipo I.** No tipo I a cabeça é anterior, e a flexão de 110 a 120 graus é que a mantém. Usar no tipo II a posição do tipo I é o erro que a questão testa.\n\n**Sem gabarito oficial no acervo.** Pela bibliografia, a afirmação está errada: o tipo II não fica a 90 graus, fica em extensão.\n\n**Na prova:** Bado II = redução fechada e **extensão**; Bado I = flexão.\n\nO resumo de Monteggia da criança traz a manobra na seção de tratamento agudo.",
-  "correta": "**B: errado.** O capítulo trata o tipo II com redução fechada e imobilização em extensão; a 90 graus a cabeça tende a reluxar para trás.",
+  "conceito": "A afirmativa mistura o tratamento do tipo I com o do tipo II. Vale separar os dois pela direção da cabeça.\n\nNo tipo I, a cabeça sai para a **frente**, e a flexão do cotovelo relaxa o bíceps e a trava. No tipo II, a cabeça sai para **trás**, e o Rockwood and Wilkins' Fractures in Children (cap. 12) descreve outro caminho: tração com o cotovelo a **60 graus**, pressão anterior na cabeça e, reduzida a cabeça, **extensão do cotovelo**, imobilizando nessa posição com molde posterior para a ulna. Se a ulna não se mantém, fio intramedular.\n\nA primeira parte da frase (redução fechada e imobilização) até se aplica, já que as fraturas incompletas do tipo II costumam ir bem com redução fechada. O erro está nos **90 graus de flexão**: a posição de estabilidade do tipo II é a **extensão**.",
+  "correta": "**B) Errado.** O tipo II de BADO se imobiliza em extensão depois da redução, e não com o cotovelo a 90 graus (Rockwood and Wilkins' Fractures in Children, cap. 12).",
   "incorretas": {
-   "A": "**Aceitar os 90 graus seria aplicar ao tipo II a lógica do tipo I.** A flexão serve à cabeça anterior; a posterior precisa de extensão."
+   "A": "**Certo seria aceitar os 90 graus de flexão**, que não estabilizam a cabeça posterior."
   },
-  "conferido": false,
-  "provavel": "B",
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo; Classificação e mecanismos."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Nonoperative Treatment of Type II Monteggia Fracture-Dislocations e Fig. 12-33",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Tratamento agudo",
-      "Classificação e mecanismos"
-     ],
-     "blocos": [
-      "tratamento-agudo-35192e58",
-      "tratamento-agudo-c42b9a19",
-      "classificacao-e-mecanismos-414cee4f"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "08a46e01cd28ed45c030a571ceb3c72d8551d82aaa7c79325fe10263e51a0ed5"
-    }
-   ],
-   "questaoSha256": "dd288fee925dd21c9b1c3b04a1d96b37eb259297e4dfcaa92dc5aeda880302fd",
-   "comentarioSha256": "25171b0507eb2908a2911d78b96fbc804194b51d1641b613f238ec687a151193"
-  }
+  "provavel": "B",
+  "alerta": "Questão do TARO 2006 sem gabarito oficial publicado. A resposta provável (Errado) segue o Rockwood and Wilkins' Fractures in Children (cap. 12), que imobiliza o tipo II em extensão.",
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0832": {
   "conceito": "**O comportamento da pseudartrose condilar lateral é diferente do da fratura consolidada.** Quando o fragmento permanece móvel e migra para proximal e lateral, pode produzir **cúbito valgo progressivo**, com deslocamento lateral de rádio e ulna. O capítulo o descreve como a sequela mais comum da pseudartrose desviada. O valgo também pode contribuir para neuropatia ulnar tardia.\n\nNa fratura que consolidou, o padrão angular mais frequente é varo; misturar esse grupo com pseudartrose inverte a resposta. Pseudartroses com pouco desvio podem ser pouco sintomáticas e nem sempre apresentam angulação importante. Portanto, a frase da questão deve ser entendida como a tendência clássica da pseudartrose com migração, não como um desfecho obrigatório de todo fragmento que não uniu. Sem chave oficial registrada, a resposta é bibliográfica.",
@@ -17801,44 +17659,21 @@
   "provavel": "C"
  },
  "pediatria-0924": {
-  "conceito": "Cada tipo de Monteggia tem o seu mecanismo, e o mecanismo explica a direção para onde a cabeça do rádio vai.\n\n**Os mecanismos no Rockwood and Wilkins (10ª ed., cap. 12).**\n- **Tipo I:** queda com o cotovelo **estendido**, antebraço neutro a meia pronação; o **bíceps** luxa a cabeça para a frente e a ulna falha em tensão anterior.\n- **Tipo II:** **carga longitudinal com o cotovelo a 60 graus** (Penrose); a cabeça vai para trás e a ulna quebra na metáfise proximal. Se a ulna não quebra, o resultado é uma luxação posterior do cotovelo.\n- **Tipo III:** força em **varo** com a mão apoiada (Wright).\n- **Tipo IV:** como o tipo I, com o rádio também fraturado.\n\n**Sem gabarito oficial no acervo.** O mecanismo do enunciado é, pelo capítulo, o do tipo II.\n\n**Na prova:** cotovelo a **60 graus** + carga longitudinal = **Bado II**.\n\nO resumo de Monteggia da criança traz os mecanismos na seção de classificação.",
-  "correta": "**B: II.** A carga longitudinal com o cotovelo fletido a 60 graus é o mecanismo de Penrose para o tipo II, citado no capítulo.",
+  "conceito": "O enunciado entrega o mecanismo de PENROSE quase palavra por palavra.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) conta que PENROSE, estudando adultos, propôs e demonstrou em laboratório que o tipo II de BADO ocorre quando o antebraço recebe uma **carga longitudinal súbita com o cotovelo em cerca de 60 graus de flexão**. Se a ulna quebra, resulta o MONTEGGIA tipo II; se a ulna resiste, o que acontece é uma **luxação posterior do cotovelo** (Fig. 12-10). A rotação do antebraço não mudava o resultado.\n\nPara comparar com os outros tipos:\n- **tipo I**: a teoria mais aceita é a de hiperextensão (TOMPKINS), com o bíceps luxando a cabeça e a ulna falhando em tensão anterior; há também o golpe direto e a hiperpronação de EVANS;\n- **tipo III**: força em **varo** com a mão apoiada (WRIGHT);\n- **tipo IV**: mesmo mecanismo do tipo I, com o rádio também quebrando.\n\nO mecanismo do tipo II explica também por que ele é raro na criança: a ulna jovem, com periósteo grosso, resiste mais.",
+  "correta": "**B) II.** Carga longitudinal com o cotovelo a cerca de 60 graus é o mecanismo do tipo II descrito por PENROSE (Rockwood and Wilkins' Fractures in Children, cap. 12).",
   "incorretas": {
-   "A": "**O tipo I vem da queda com o cotovelo estendido**, com o bíceps luxando a cabeça para a frente.",
-   "C": "**O tipo III vem de uma força em varo** com a mão apoiada.",
-   "D": "**O tipo IV segue o mecanismo do tipo I**, com fratura também do rádio."
+   "A": "**O tipo I** nasce da hiperextensão (TOMPKINS), do golpe direto ou da hiperpronação, não da carga a 60 graus.",
+   "C": "**O tipo III** nasce de uma força em varo.",
+   "D": "**O tipo IV** tem o mesmo mecanismo do tipo I, com fratura do rádio."
   },
-  "conferido": false,
-  "provavel": "B",
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Type II Mechanism of Injury e Fig. 12-10",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-bf9aae38",
-      "classificacao-e-mecanismos-414cee4f",
-      "classificacao-e-mecanismos-c4b7c40b"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "32cf52620be4a127500a5afabb627e7d043bd1062942aae828164c04a906e695"
-    }
-   ],
-   "questaoSha256": "1c913d18301ca8dabf9647d074ba592693e8956c2347ab9e1ec04b7f2179f3b5",
-   "comentarioSha256": "879ed565c224b3ade6d4c892199df55e792ba7b89989876580e94d835ac91cc2"
-  }
+  "provavel": "B",
+  "alerta": "Questão da SBOT-SP sem gabarito oficial publicado. A resposta provável (B) segue o Rockwood and Wilkins' Fractures in Children (cap. 12): mecanismo de PENROSE do tipo II.",
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0925": {
   "conceito": "As classificações de Bado e Letts não são intercambiáveis. Bado prioriza a direção da cabeça radial luxada. Letts foi adaptada à criança e distingue a deformação plástica, a fratura em galho verde e a fratura completa da ulna, além da direção da luxação.\n\nA radiografia apresentada mostra o padrão anterior associado a lesão incompleta da ulna, compatível com Bado I e Letts B. Na leitura, deve-se seguir a linha longitudinal do rádio em direção ao capítulo, avaliar o alinhamento da ulna e reconhecer que uma cortical preservada caracteriza a fratura em galho verde. A correção da deformidade ulnar é fundamental para recuperar e manter a redução radial.",
@@ -17930,90 +17765,54 @@
   }
  },
  "pediatria-0929": {
-  "conceito": "O tipo IV de Bado é o Monteggia em que, além da ulna e da luxação anterior da cabeça, o **rádio** também quebra.\n\n| Tipo | Cabeça do rádio | Detalhe |\n|---|---|---|\n| I | anterior | ápice anterior da ulna, 70% a 75% |\n| II | posterior ou posterolateral | ápice posterior, 6%, padrão do adulto |\n| III | lateral | ulna em varo, segundo na criança |\n| IV | anterior | com fratura do rádio no mesmo nível ou distal, raro |\n\n**O que o Rockwood and Wilkins (10ª ed., cap. 12) diz do tipo IV.** É **raro**. A cabeça está **anterior**, como no tipo I, e o rádio fratura **no mesmo nível ou distal** à fratura da ulna. A posição importa: se o rádio quebrasse acima (proximal), a cabeça estaria presa a um fragmento curto e a lesão seria outra.\n\n**Tratamento.** Primeiro se **estabiliza o rádio**, com haste intramedular (placa acima de 12 anos). Com o rádio fixo, a lesão passa a se comportar como um tipo I e é tratada pela ulna.\n\n**Sem gabarito oficial no acervo.** O capítulo sustenta: raro, com rádio no mesmo nível ou distal.\n\n**Na prova:** Bado IV = raro, cabeça anterior, rádio **no mesmo nível ou distal**.\n\nO resumo de Monteggia da criança traz o tipo IV na seção de classificação e no tratamento agudo.",
-  "correta": "**A: relativamente raras, com fratura do rádio no mesmo nível ou distal à fratura da ulna.** É a descrição do tipo IV no capítulo.",
+  "conceito": "Duas informações decidem a questão: a frequência do tipo IV na criança e a posição da fratura do rádio.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) define o tipo IV como **luxação anterior** da cabeça com fratura da **ulna e do rádio**, e lembra que, na descrição original de BADO, o rádio quebra **no mesmo nível ou distal** à fratura da ulna (Fig. 12-1D). O capítulo é claro também na frequência: o tipo IV é **relativamente raro** na criança; o tipo I responde por 70% a 75%, e o tipo III é o segundo.\n\nA posição importa porque há um equivalente do tipo I com o rádio quebrado **mais proximal** que a ulna; não é o tipo IV verdadeiro. No tratamento, a ideia é **estabilizar o rádio** (fio intramedular na criança menor, placa pela via de HENRY acima de 12 anos): com o rádio inteiro de novo, a lesão vira um tipo I e a cabeça reduz com mais facilidade.",
+  "correta": "**A) relativamente raras em crianças, correspondendo a uma fratura do rádio no mesmo nível ou distal à fratura da ulna.** É a definição do tipo IV no Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "B": "**A raridade está certa, mas o rádio quebra no mesmo nível ou distal**, não proximal à ulna.",
-   "C": "**O nível está certo, mas o tipo IV não é comum.** O mais comum é o tipo I, com 70% a 75%.",
-   "D": "**Erra as duas partes:** o tipo IV é raro e o rádio quebra no mesmo nível ou distal."
+   "B": "**Rádio proximal à ulna** descreve um equivalente do tipo I, não o tipo IV.",
+   "C": "**O tipo IV não é comum na criança**; é relativamente raro.",
+   "D": "**Erra nas duas partes**: o tipo IV é raro e o rádio fica no mesmo nível ou distal."
   },
-  "conferido": false,
-  "provavel": "A",
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seções Bado Classification e Type I Equivalent Fractures, Fig. 12-1",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos",
-      "Tratamento agudo"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-bf9aae38",
-      "classificacao-e-mecanismos-414cee4f",
-      "classificacao-e-mecanismos-c4b7c40b",
-      "tratamento-agudo-35192e58",
-      "tratamento-agudo-c42b9a19"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "64b45dfe33a75894560184e78263540c0eb85f344b7c150f49f409ca20f841f2"
-    }
-   ],
-   "questaoSha256": "5b5d413b949fa587c2a00194a620f80eb18ee477c3b82fff8eba485eaaa94344",
-   "comentarioSha256": "2ba4a1f66e3e61700e6772ce4c97a0e4471f1d0f9428281e0ee6dcde80e0610a"
-  }
+  "provavel": "A",
+  "alerta": "Questão da SBOT-SP sem gabarito oficial publicado. A resposta provável (A) segue o Rockwood and Wilkins' Fractures in Children (cap. 12).",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-12-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fig. 12-1. Classificação de BADO: tipo I, luxação anterior da cabeça do rádio com fratura da ulna de ápice anterior; tipo II, luxação posterior ou posterolateral com fratura metafisária da ulna; tipo III, luxação lateral com fratura metafisária em galho verde da ulna; tipo IV, como o tipo I, com fratura da diáfise do rádio distal à da ulna.",
+    "largura": 1200,
+    "altura": 848
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0930": {
-  "conceito": "O tipo III de Bado é o Monteggia **lateral**: a cabeça do rádio vai para o lado, e a ulna fica em **varo**.\n\n**O mecanismo.** No Rockwood and Wilkins (10ª ed., cap. 12), a força é em **varo** com a mão apoiada (Wright). A ulna proximal cede em **galho verde**, angulando para fora, e a cabeça do rádio é empurrada lateralmente. É o **segundo tipo mais comum** na criança e o que mais se associa a lesão do nervo **interósseo posterior**.\n\n**No exame.** Edema lateral, cotovelo em varo e perda da supinação.\n\n**Tratamento.** A redução desfaz o mecanismo: **extensão com valgo** sobre a ulna, gesso moldado em valgo com 100 a 110 graus de flexão. A interposição de partes moles é mais frequente nesse tipo.\n\n**Sem gabarito oficial no acervo.** O capítulo sustenta: varo, galho verde proximal.\n\n**Na prova:** Bado III = **varo**, **galho verde** da ulna proximal, cabeça lateral, interósseo posterior.\n\nO resumo de Monteggia da criança descreve o tipo III na seção de classificação e no tratamento agudo.",
-  "correta": "**A: varo, e geralmente causa uma fratura em galho verde da ulna proximal.** É o mecanismo de Wright e o padrão de ulna que o capítulo descreve no tipo III.",
+  "conceito": "O tipo III de BADO tem a cabeça do rádio luxada para o **lado** e a ulna proximal dobrada com o **ápice lateral**. A força que faz isso é o **varo**.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) descreve o mecanismo de WRIGHT: queda com a mão apoiada e uma força em **varo** no cotovelo; a ulna proximal se dobra em **galho verde**, e a cabeça do rádio sai para fora. A legenda da classificação (Fig. 12-1C) confirma: luxação lateral da cabeça com **fratura metafisária em galho verde** da ulna.\n\nO mecanismo dita a redução, que é o mecanismo ao contrário: cotovelo em extensão, tração e **estresse em valgo** sobre a ulna; o gesso leva **molde em valgo**. E o tipo III tem duas particularidades clínicas: é o que mais lesa o **interósseo posterior** e o que mais tem **partes moles interpostas**, chegando à cirurgia em até 12% dos casos.",
+  "correta": "**A) varo e geralmente causa uma fratura em galho verde da ulna proximal.** É o mecanismo do tipo III no Rockwood and Wilkins' Fractures in Children (cap. 12, Fig. 12-1).",
   "incorretas": {
-   "B": "**O galho verde está certo, mas a força é em varo.** O valgo é a direção da manobra de redução.",
-   "C": "**O varo está certo, mas a ulna costuma fazer galho verde**, não fratura completa, no tipo III da criança.",
-   "D": "**Erra as duas:** a força é em varo e a ulna em galho verde."
+   "B": "**Valgo é a força da redução**, não a da lesão.",
+   "C": "**A ulna do tipo III costuma estar em galho verde**, não completa.",
+   "D": "**Erra nas duas partes**: a força é varo e a ulna, em geral, galho verde."
   },
-  "conferido": false,
-  "provavel": "A",
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seções Type III Mechanism of Injury e Bado Classification, Fig. 12-1",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos",
-      "Tratamento agudo"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-bf9aae38",
-      "classificacao-e-mecanismos-414cee4f",
-      "classificacao-e-mecanismos-c4b7c40b",
-      "tratamento-agudo-35192e58",
-      "tratamento-agudo-c42b9a19"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "64b45dfe33a75894560184e78263540c0eb85f344b7c150f49f409ca20f841f2"
-    }
-   ],
-   "questaoSha256": "57f36ea24febd1a1f624988e7d3009d96bed932f09f8e4dd13fd150bd4ed447d",
-   "comentarioSha256": "1800de57b34521152f136ec5aa1ca9b4384a2b7f182ebd079bf9281139ecf8bd"
-  }
+  "provavel": "A",
+  "alerta": "Questão da SBOT-SP sem gabarito oficial publicado. A resposta provável (A) segue o Rockwood and Wilkins' Fractures in Children (cap. 12).",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-12-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fig. 12-1. Classificação de BADO: tipo I, luxação anterior da cabeça do rádio com fratura da ulna de ápice anterior; tipo II, luxação posterior ou posterolateral com fratura metafisária da ulna; tipo III, luxação lateral com fratura metafisária em galho verde da ulna; tipo IV, como o tipo I, com fratura da diáfise do rádio distal à da ulna.",
+    "largura": 1200,
+    "altura": 848
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0931": {
   "conceito": "**A ruga anterior resulta do aprisionamento profundo da pele pelo fragmento proximal.** Na supracondiliana em extensão, o distal vai para trás e o proximal se projeta anteriormente. Quando essa ponta atravessa o braquial e a fáscia e prende a derme profunda, surge a depressão cutânea chamada **pucker**.\n\nA fotografia mostra a pele afundada indicada pelas setas; o esquema ao lado representa a ponta proximal alcançando as partes moles anteriores. É um sinal de lesão importante e possível dificuldade de redução, não apenas uma contusão superficial. O capítulo também orienta procurar um orifício puntiforme: sangramento por ele transforma a fratura em exposta. Não é possível afirmar exposição somente pela depressão da fotografia. Sem chave oficial, A é a identificação bibliográfica.",
@@ -29525,519 +29324,252 @@
   "conferido": false
  },
  "pediatria-1285": {
-  "conceito": "Na criança, o padrão **Bado I** combina cabeça radial **anterior** e ulna com **ápice anterior**, sendo o mais comum no resumo, com 70–75%; o **III é o segundo**. A alternativa B reúne direção, geometria e frequência da classificação pediátrica (Rockwood and Wilkins, 10ª edição, capítulo 12, classificação e mecanismos).\n\nBado usa a **direção da cabeça radial e o padrão ulnar**, não apenas o nível de uma fratura do rádio. O tipo II é posterior ou posterolateral com ápice posterior; o III é lateral, com varo ulnar; o IV acrescenta fratura do rádio à combinação com cabeça anterior. No IV, o rádio pode estar fraturado no mesmo nível ou distal à ulna.\n\nEssa leitura do conjunto evita dois erros: classificar pela ulna sem localizar a cabeça, e considerar a fratura dos dois ossos suficiente para dispensar exame do cotovelo. O resumo recomenda verificar a relação radiocapitelar e lembrar que a anatomia ulnar influencia o alinhamento da cabeça.\n\n**Na prova: ** os números 70–75% referem-se ao padrão pediátrico apresentado no capítulo. Não transferir para a criança a ênfase na Monteggia posterior de outras populações. Identificar direção e ulna primeiro, e usar frequência apenas como informação complementar.\n\n**Por que esta questão foi criada.** É uma questão de projeção, base para as oficiais sobre os tipos II, III e IV e sobre LETTS.",
-  "correta": "Alternativa B. Define corretamente o tipo I e sua predominância na criança, e coloca o III em segundo lugar. A resposta combina os critérios anatômicos da classificação com as proporções da população pediátrica descritas no resumo.",
+  "conceito": "BADO classificou o MONTEGGIA olhando duas coisas: **para onde foi a cabeça do rádio** e **para onde aponta o ápice da fratura da ulna**. As duas andam juntas: a cabeça vai para o lado do ápice.\n\nPelo Rockwood and Wilkins' Fractures in Children (cap. 12, Fig. 12-1):\n- **tipo I**: cabeça **anterior**, ulna com ápice anterior; o mais comum na criança, **70% a 75%**;\n- **tipo II**: cabeça **posterior ou posterolateral**, ulna com ápice posterior, na criança em geral metafisária; **6%**, comum no adulto;\n- **tipo III**: cabeça **lateral**, ulna proximal em **varo**; o **segundo** mais comum na criança;\n- **tipo IV**: cabeça **anterior** com fratura da **ulna e do rádio**, rádio no mesmo nível ou distal; raro.\n\nNote que o critério é a direção da cabeça, não o nível da fratura do rádio, que só aparece no tipo IV.\n\n**Por que esta questão foi criada.** TARO 2010 e SBOT-SP cobraram os tipos II e IV um a um; esta questão junta a classificação inteira com as frequências, que costumam vir como pegadinha.",
+  "correta": "**B) o tipo I, com luxação anterior da cabeça do rádio e fratura da ulna de ápice anterior, é o mais comum, com 70% a 75%, e o tipo III é o segundo.** São os números do Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "O tipo II é posterior, mas não é o mais comum na criança: o resumo lhe atribui cerca de 6%, enquanto o I concentra 70–75%. A alternativa conserva a direção e erra a distribuição por idade.",
-   "C": "O nível da fratura radial não define sozinho Bado. A classificação parte da direção da cabeça e do padrão ulnar; a fratura do rádio participa especificamente da definição do IV, sem substituir os demais critérios.",
-   "D": "Cabeça lateral com varo da ulna descreve o tipo III. O IV tem cabeça anterior e fraturas de ulna e rádio. A alternativa troca a direção e o padrão ulnar de uma categoria por outra."
+   "A": "**O tipo II é o mais comum no adulto**; na criança, fica em 6%.",
+   "C": "**BADO se baseia na direção da cabeça e no ápice da ulna**, não no nível do rádio.",
+   "D": "**Luxação lateral com ulna em varo é o tipo III**; o IV é anterior com fratura do rádio."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Diagnóstico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Bado Classification e Fig. 12-1",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos",
-      "Diagnóstico"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-bf9aae38",
-      "diagnostico-7ee8a436"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "d8126e6634e53ca9ca2336eeb0b7a5f379586c49f10b9f6d322cb8a147673404"
-    }
-   ],
-   "questaoSha256": "41da3e441b0a94f6b4481aa70dddc95de06a32816ede3974a564e04ca305ded5",
-   "comentarioSha256": "7110bace137a073cdff0e9321bae7db80fc4347488a83df0fb4d6de7408a6e82"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-12-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fig. 12-1. Classificação de BADO: tipo I, luxação anterior da cabeça do rádio com fratura da ulna de ápice anterior; tipo II, luxação posterior ou posterolateral com fratura metafisária da ulna; tipo III, luxação lateral com fratura metafisária em galho verde da ulna; tipo IV, como o tipo I, com fratura da diáfise do rádio distal à da ulna.",
+    "largura": 1200,
+    "altura": 848
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1286": {
-  "conceito": "O MONTEGGIA tipo II é o padrão do adulto. Na criança é raro, porque a ulna jovem, com seu periósteo, aguenta mais que os ligamentos. Quando a ulna cede antes, o que seria uma luxação posterior do cotovelo vira um MONTEGGIA posterior.\n\n**O mecanismo.** PENROSE demonstrou que, com o cotovelo em cerca de **60 graus de flexão**, uma **carga longitudinal** no antebraço produz o tipo II **se a ulna fraturar**; senão, produz **luxação posterior do cotovelo** (Fig. 12-10). A rotação do antebraço não pareceu influir. HADDAD descreveu tipos II de baixa energia em adultos com corticoide crônico: uma fratura por fragilidade, variante da luxação posterior. BADO atribuía a força direta com supinação súbita (Rockwood crianças, 10ª ed., cap. 12).\n\n**A frequência.** Cerca de **6%** dos MONTEGGIA da criança, em geral em **maiores**, com trauma importante.\n\n**A imagem.** Fratura **metafisária proximal da ulna**, às vezes estendendo ao olécrano; fraturas diafisárias oblíquas também podem dar tipo II. Cabeça luxada **posterior ou posterolateral**. **Fraturas da borda anterior da cabeça** acompanham; na criança, sutis (quase só cartilagem, como nas lesões TRASH), podem levar à subluxação progressiva. Ressonância ou ultrassonografia quando necessário.\n\n**O exame.** Edema, **angulação posterior** do antebraço proximal e **saliência posterolateral** onde deveria estar a cabeça. Nervo ulnar em risco pelo estiramento do varo. Examinar todo o membro.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2010 (`pediatria-0724`), que perguntou o padrão característico da fratura da ulna no tipo II (metafisária proximal), e do SBOT-SP (`pediatria-0924`), que perguntou qual tipo de MONTEGGIA resulta da queda com o cotovelo fletido 60 graus e carga longitudinal (tipo II). As duas estão sem gabarito oficial; o capítulo sustenta essas respostas. Depois, faça as oficiais.\n\n> **Na prova:** **BADO II** = luxação **posterior ou posterolateral**, ápice posterior, **6%** na criança (padrão do adulto); **cotovelo a 60 graus** + **carga longitudinal** (PENROSE); ulna **metafisária proximal**; atenção à **borda anterior da cabeça**.",
-  "correta": "**D: é o tipo II de BADO, raro na criança, com fratura da ulna tipicamente metafisária proximal e às vezes fratura da borda anterior da cabeça.** É o padrão descrito pelo capítulo para a carga longitudinal com o cotovelo a 60 graus (Rockwood crianças, 10ª ed., cap. 12).",
+  "conceito": "O caso traz três pistas do tipo II: adolescente (mais velho), carga longitudinal com o cotovelo a cerca de 60 graus e cabeça posterolateral.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) descreve o tipo II como luxação **posterior ou posterolateral** com fratura de **ápice posterior** da ulna, que na criança costuma ser **metafisária proximal**. O mecanismo de PENROSE é a carga longitudinal com o cotovelo a 60 graus; se a ulna não quebrasse, o cotovelo luxaria para trás. É **raro na criança** (6%), aparece nas mais velhas e no trauma maior, e pode trazer uma **fratura da borda anterior da cabeça do rádio**, que precisa ser avaliada.\n\n**Por que esta questão foi criada.** O TARO 2010 perguntou a fratura da ulna no tipo II e a SBOT-SP, o mecanismo; o caso clínico reúne as duas coisas.",
+  "correta": "**D) é o tipo II de BADO, raro na criança, com fratura da ulna tipicamente metafisária proximal e às vezes fratura da borda anterior da cabeça.** Corresponde à descrição do Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "**Outro mecanismo.** O tipo III vem de varo no cotovelo, com galho verde da ulna proximal e luxação lateral da cabeça.",
-   "B": "**Direção errada.** O tipo I tem luxação anterior; aqui a cabeça foi para trás.",
-   "C": "**Não é o padrão.** A fratura da ulna no tipo II da criança é metafisária proximal, às vezes até o olécrano."
+   "A": "**O tipo III** é lateral e nasce de varo; a cabeça aqui é posterolateral, com carga longitudinal.",
+   "B": "**O tipo I** é anterior; a luxação posterolateral não cabe nele.",
+   "C": "**A fratura da ulna não é epifisária**; os equivalentes do tipo II envolvem a epífise ou o colo do rádio."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seções Classification (Bado Type II), Mechanisms (Type II, Fig. 12-10) e Type II Radiographic Evaluation"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seções Bado Classification e Type II Mechanism of Injury",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-27",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1287": {
-  "conceito": "No tipo I, a cabeça do rádio sai para a frente, e a flexão do cotovelo a mantém no lugar. No tipo II, ela sai para trás: a lógica se inverte, e a posição de estabilidade é a extensão.\n\n**A redução.** Fraturas incompletas do tipo II costumam ir bem com redução fechada. A **fratura da ulna** é reduzida por **tração longitudinal** no eixo do antebraço com o **cotovelo a 60 graus de flexão**, endireitando a angulação. A cabeça do rádio pode reduzir sozinha ou precisar de **pressão suave para a frente** sobre sua face posterior (Rockwood crianças, 10ª ed., cap. 12, Fig. 12-33).\n\n**A imobilização.** Reduzida a cabeça, o **cotovelo é estendido** e **imobilizado em extensão**: isso estabiliza a cabeça e permite **moldar posteriormente** para manter a redução da ulna. Se a ulna não se mantiver, **fio intramedular**; alguns preferem fixar a ulna em vez de engessar em extensão. Na dúvida, os autores preferem a fixação intramedular percutânea. Cominutivas ou muito proximais podem precisar de placa ou banda de tensão.\n\n**O resto.** Cabeça que não reduz: via de BOYD, ligamento anular como no tipo I. **Fratura por compressão da borda anterior da cabeça**: detectar cedo (ressonância pré-operatória) e fixar se preciso para manter a estabilidade; osteonecrose e pseudartrose são complicações. Gesso até a consolidação, em geral **6 semanas**; radiografias a cada 7 a 14 dias.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2024 (`pediatria-0539`), que perguntou a posição de imobilização após a redução incruenta do tipo II (extensão), e do TARO 2006 (`pediatria-0831`), que afirmou ser o tratamento preferencial com o cotovelo a 90 graus (sem gabarito; o capítulo indica a extensão). Depois, faça as oficiais.\n\n> **Na prova:** **BADO II**: reduzir com **tração a 60 graus** e pressão anterior na cabeça; **imobilizar em extensão** com molde posterior; instável = **fio intramedular**; borda anterior da cabeça = **ressonância**.",
-  "correta": "**A: extensão, com molde posterior para manter a redução da ulna.** No tipo II, a extensão estabiliza a cabeça luxada para trás (Rockwood crianças, 10ª ed., cap. 12).",
+  "conceito": "Reduzida a cabeça posterior, a pergunta é em que posição ela fica estável. No tipo II, a resposta é a **extensão**.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) descreve: tração longitudinal com o cotovelo a 60 graus, pressão anterior sobre a cabeça e, uma vez reduzida, **extensão do cotovelo**, imobilizado nessa posição para estabilizar a cabeça e permitir um **molde posterior** que segura a ulna. Se a ulna não se mantém alinhada, fio intramedular de STEINMANN ou KIRSCHNER.\n\nA lógica é a da direção: a flexão, que no tipo I relaxa o bíceps e trava a cabeça anterior, empurraria a cabeça do tipo II de volta para trás.\n\n**Por que esta questão foi criada.** O TARO 2024 cobrou esta posição, e o TARO 2006 tentou a pegadinha dos 90 graus; vale fixar com um caso.",
+  "correta": "**A) extensão, com molde posterior para manter a redução da ulna.** É a imobilização do tipo II no Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "B": "**Não estabiliza o tipo II.** A flexão a 90 graus favorece a cabeça que saiu para trás; o capítulo indica a extensão.",
-   "C": "**É a posição do tipo I.** A flexão de 110 a 120 graus neutraliza o bíceps na luxação anterior; no tipo II, usa-se a extensão.",
-   "D": "**Posição sem respaldo.** Sessenta graus é a flexão usada durante a tração para reduzir; a imobilização é em extensão."
+   "B": "**90 graus de flexão** foi a pegadinha do TARO 2006; não estabiliza a cabeça posterior.",
+   "C": "**110 a 120 graus é a flexão do tipo I.**",
+   "D": "**45 graus com pronação completa** não é posição descrita para o tipo II."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Treatment Options for Type II Monteggia Fracture-Dislocations (Fig. 12-33)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Nonoperative Treatment of Type II Monteggia Fracture-Dislocations e Fig. 12-33",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-27",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1288": {
-  "conceito": "Luxação **lateral** da cabeça radial, ulna proximal em **galho verde** e mecanismo em **varo** caracterizam a **Monteggia Bado III**, alternativa C. O resumo associa esse padrão a maior preocupação com interposição e com o interósseo posterior (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nO mecanismo descrito é a mão apoiada recebendo varo, o que deforma a ulna proximal e desloca a cabeça para lateral. A redução apresentada combina **extensão e valgo na ulna**, corrigindo a deformidade; o gesso recebe molde em valgo. Não é o protocolo de flexão do tipo I nem a mesma direção da luxação posterior do II.\n\nO exame deve procurar função do **interósseo posterior**, incluindo extensão das metacarpofalângicas e retropulsão do polegar. A seção de complicações também destaca lesões radiais nos tipos I e III; associação ao III não significa exclusividade. Se a cabeça não reduz depois de corrigir a ulna, o capítulo lembra o **ligamento anular interposto** como obstáculo possível.\n\nA fixação depende do traço ulnar, em vez de uma placa obrigatória para todo tipo III. O resumo trata plástica e galho verde por redução fechada, usa intramedular em certos traços curtos e placa nos longos ou cominutivos. **Na prova: ** lateral + varo + galho verde proximal = III; conferir nervo e eventual interposição antes de insistir na redução.\n\n**Por que esta questão foi criada.** É gêmea do SBOT-SP (`pediatria-0930`), que perguntou a lesão que causa o tipo III de BADO (varo, galho verde da ulna proximal); a oficial está sem gabarito, e o capítulo sustenta essa resposta. Depois, faça a oficial.",
-  "correta": "Alternativa C. Identifica o III, as associações de partes moles e a manobra em extensão com valgo. O capítulo dá destaque ao interósseo posterior nesse padrão e à interposição mais frequente, sem excluir lesões nervosas em outros tipos.",
+  "conceito": "Varo, cabeça lateral e galho verde da ulna proximal: é o tipo III de BADO. O Rockwood and Wilkins' Fractures in Children (cap. 12) acrescenta o que cai junto com ele.\n\n- **Nervo**: o tipo III é o que mais lesa o **interósseo posterior**, ramo motor do radial colado à cabeça e ao colo.\n- **Partes moles**: a interposição é mais frequente no tipo III, e a cirurgia chega a **12%** dos casos.\n- **Redução**: o mecanismo ao contrário, com o cotovelo em **extensão**, tração e **estresse em valgo** sobre a ulna; a cabeça reduz sozinha ou com pressão lateral, às vezes com um clique.\n- **Imobilização**: molde em valgo; 100 a 110 graus de flexão na luxação lateral pura, 70 a 80 graus se houver componente posterolateral.\n\nA placa não é a regra: o galho verde metafisário costuma ir bem com redução fechada, desde que o alinhamento da ulna seja quase anatômico.\n\n**Por que esta questão foi criada.** A SBOT-SP cobrou o mecanismo do tipo III; a questão estende para o nervo e a redução.",
+  "correta": "**C) é o tipo III de BADO; a lesão do interósseo posterior e a interposição de partes moles são mais frequentes nele, e a redução é em extensão com valgo na ulna.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "A cabeça lateral e a ulna em varo definem o III, no resumo. O tipo I é anterior, com ápice anterior; citar seu protocolo não muda a categoria do caso apresentado.",
-   "B": "O III é o segundo padrão na criança, e não o mais raro. O resumo também destaca o risco para o interósseo posterior, contrariando a ideia de que quase nunca haveria lesão nervosa.",
-   "D": "O método de estabilização depende do traço. A fonte prevê redução fechada em deformidade plástica e galho verde, e não placa universal para toda lesão III. É preciso restaurar a ulna e testar a relação radiocapitelar, sem ignorar o padrão da fratura."
+   "A": "**O tipo I** é anterior; a redução do tipo III é em extensão com valgo.",
+   "B": "**O tipo III é o segundo mais comum** e o que mais lesa o interósseo posterior.",
+   "D": "**O galho verde costuma ir com redução fechada**; a placa é para fraturas oblíquas longas e cominutas."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo; Complicações e MONTEGGIA crônico; Diagnóstico; Como ler este capítulo."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seções Type III Clinical Findings e Nonoperative Treatment of Type III",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos",
-      "Tratamento agudo",
-      "Complicações e MONTEGGIA crônico",
-      "Diagnóstico",
-      "Como ler este capítulo"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-414cee4f",
-      "tratamento-agudo-35192e58",
-      "complicacoes-e-monteggia-cronico-15c4cbe6",
-      "diagnostico-7ee8a436",
-      "como-ler-este-capitulo-35fefbcf"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "1340dd1531d9f775c633624b4fa3f86e6bf79885200c076700382170971aadf1"
-    }
-   ],
-   "questaoSha256": "f43f41e117a10a6b69e4382ca8fef7b4e2a5267818e52508fdf7c21ae46658ca",
-   "comentarioSha256": "56766e87554efe99f497a6aa7c12337eb3081382ddb20662e8cfc5dbe766c8f8"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1289": {
-  "conceito": "Na **Monteggia Bado IV**, a luxação da cabeça radial é **anterior** e existem fraturas da **ulna e do rádio**. O resumo a descreve como rara na criança, com a fratura radial no mesmo nível ou distal à ulnar; estabilizar o rádio transforma o padrão num tipo I. Esse é o conteúdo da alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA fratura adicional do rádio é o que separa IV de I, pois ambos compartilham a direção anterior da cabeça. Por isso, o tratamento do rádio não encerra a avaliação: depois de estabilizá-lo, a relação entre ulna e cabeça radial ainda precisa ser reconstruída e conferida como na lesão anterior.\n\nO resumo orienta examinar a **linha radiocapitelar**, que deve passar pelo centro do capítulo no perfil verdadeiro, e a deformidade ulnar. Em fratura dos dois ossos, recomenda radiografar o cotovelo. Encontrar um traço no rádio não é prova de que a articulação proximal esteja alinhada.\n\n**Na prova: ** IV = cabeça anterior + dois ossos, com rádio no mesmo nível ou distal. A conversão para I depois de estabilizar o rádio é uma forma de organizar o raciocínio de tratamento, não uma autorização para esquecer a cabeça ou o alinhamento ulnar.\n\n**Por que esta questão foi criada.** É gêmea do SBOT-SP (`pediatria-0929`), que perguntou a frequência e a relação entre os níveis das fraturas no tipo IV (raro, rádio no mesmo nível ou distal); a oficial está sem gabarito, e o capítulo sustenta essa resposta. Depois, faça a oficial.",
-  "correta": "Alternativa B. Descreve a raridade, a relação entre os níveis das fraturas e o efeito da estabilização radial no padrão da lesão. O componente anterior persistente precisa continuar sendo avaliado após tratar o segundo osso.",
+  "conceito": "O tipo IV é o tipo I com o rádio também quebrado. O Rockwood and Wilkins' Fractures in Children (cap. 12) diz que ele é **relativamente raro** na criança e que, na descrição original, o rádio quebra **no mesmo nível ou distal** à ulna.\n\nO tratamento tem uma ideia central: **estabilizar o rádio converte o tipo IV num tipo I**. As fraturas costumam ser instáveis, e a cabeça reduz e fica no lugar com mais facilidade depois de fixar o rádio, com fio intramedular na criança menor ou **placa pela via de HENRY** acima de 12 anos. O gesso fica 4 a 6 semanas em 110 a 120 graus de flexão com rotação neutra.\n\nE a radiocapitelar continua sendo o alvo principal: o capítulo insiste que, em toda fratura do antebraço, o cotovelo precisa de radiografias próprias.\n\n**Por que esta questão foi criada.** A SBOT-SP cobrou a definição do tipo IV; a questão acrescenta o tratamento.",
+  "correta": "**B) é raro na criança; a fratura do rádio fica no mesmo nível ou distal à da ulna, e estabilizar o rádio converte a lesão num tipo I.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "O capítulo descreve o IV como raro, e situa a fratura radial no mesmo nível ou distal à da ulna. A alternativa inverte tanto a frequência quanto a relação anatômica apresentada na fonte.",
-   "C": "A luxação posterior pertence ao padrão II. No IV, a cabeça é anterior, com fratura de rádio e ulna; a presença dos dois traços não muda essa direção classificatória.",
-   "D": "O resumo exige avaliar a relação radiocapitelar e radiografar o cotovelo em fratura dos dois ossos. A fratura radial adicional pode distrair do deslocamento da cabeça, e não serve para excluí-lo."
+   "A": "**O tipo IV não é comum**, e o rádio fica no mesmo nível ou distal.",
+   "C": "**A luxação do tipo IV é anterior**, como no tipo I.",
+   "D": "**A radiocapitelar é exatamente o que mais importa**; o cotovelo precisa de radiografia própria."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo; Diagnóstico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seções Bado Classification e Operative Treatment of Type IV",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos",
-      "Tratamento agudo",
-      "Diagnóstico"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-bf9aae38",
-      "tratamento-agudo-35192e58",
-      "diagnostico-7ee8a436"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "752e6e3f0228cd8dcac6a11a435aa70a8bb6cfd894b344f565bb417b72c662dd"
-    }
-   ],
-   "questaoSha256": "a37071edfd706c836f96b11e17e0999db6117f425d4831f2fbb88c4d37b716da",
-   "comentarioSha256": "64ba6ad1b53ab7901f91c24f7c144c0608d2056a3982f9e51d78fc2763fff76a"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1290": {
-  "conceito": "O **tipo B de Letts** é luxação **anterior da cabeça radial com fratura em galho verde da ulna**, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nLetts distingue os padrões anteriores pelo aspecto da ulna: **A, deformidade plástica; B, galho verde; C, fratura completa**. Depois separa **D posterior** e **E lateral**. As letras da classificação devem ser mantidas: a alternativa A desta questão descreve o tipo B, sem contradição.\n\nEssa informação complementa Bado, que organiza direção da cabeça e ápice ulnar: I anterior, II posterior ou posterolateral, III lateral e IV anterior com rádio e ulna fraturados. Não basta reconhecer “anterior” para decidir entre os três primeiros subgrupos de Letts.\n\nO padrão ulnar também orienta o tratamento agudo: o protocolo do resumo admite redução fechada para deformidade plástica e galho verde, enquanto transversas/oblíquas curtas recebem fixação intramedular e oblíquas longas/cominutas, placa.\n\n**Na prova:** ler direção da cabeça e integridade da ulna em sequência; confundir a letra da resposta com o tipo da classificação produz um erro que a anatomia resolve.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2024 (`pediatria-0712`), que perguntou a que corresponde o tipo B de LETTS (galho verde da ulna com desvio anterior da cabeça). Depois, faça a oficial.",
-  "correta": "Alternativa A. Descreve exatamente o tipo B de Letts: galho verde ulnar e cabeça anterior. A letra A pertence à lista de respostas, não muda o nome do subtipo.",
+  "conceito": "LETTS subdividiu o BADO I pela ulna, e a ordem das letras segue a gravidade da lesão da ulna.\n\nPelo Rockwood and Wilkins' Fractures in Children (cap. 12, Fig. 12-6): **A** deformidade plástica, **B** galho verde, **C** fratura completa, todos com a cabeça anterior; **D** cabeça posterior com fratura metafisária; **E** cabeça lateral com galho verde metafisário.\n\nUm truque é lembrar que a ulna vai \"quebrando mais\" de A a C: curva, quebra pela metade, quebra inteira. E essa escada é também a do tratamento: A e B costumam ir com redução fechada; C pode pedir fixação.\n\n**Por que esta questão foi criada.** O TEOT 2024 cobrou exatamente o tipo B de LETTS.",
+  "correta": "**A) luxação anterior da cabeça do rádio com fratura em galho verde da ulna.** É o tipo B (Rockwood and Wilkins' Fractures in Children, cap. 12, Fig. 12-6).",
   "incorretas": {
-   "B": "Deformidade plástica com cabeça anterior é tipo A de Letts. O grupo é anterior como o tipo B, mas a ulna não apresenta a fratura em galho verde solicitada.",
-   "C": "Fratura completa com cabeça anterior pertence ao tipo C de Letts. A integridade do osso é o discriminador em relação ao tipo B.",
-   "D": "Cabeça posterior corresponde ao grupo D na classificação de Letts, não ao B. A direção posterior já afasta a definição pedida, independentemente de detalhes metafisários adicionais."
+   "B": "**Deformidade plástica é o tipo A.**",
+   "C": "**Fratura completa é o tipo C.**",
+   "D": "**Luxação posterior com fratura metafisária é o tipo D.**"
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Letts Classification e Fig. 12-6",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos",
-      "Tratamento agudo"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-bf9aae38",
-      "tratamento-agudo-35192e58"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "bc865fd3ec2d7a96ea1dfc3cc4aca0eb6af5c08c311a0f8052326d381b614ac2"
-    }
-   ],
-   "questaoSha256": "dd4a5e06f4438f0acf1231ab05536d6744ee337f316aa6fd93a15afdb27a9284",
-   "comentarioSha256": "c0faf379e18222a2a5761c17b9320c298c645945189da6d42835353d8d11962d"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-12-6.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fig. 12-6. Classificação de LETTS: A, luxação anterior da cabeça com deformidade plástica da ulna; B, com fratura em galho verde; C, com fratura completa; D, luxação posterior com fratura metafisária da ulna; E, luxação lateral com fratura metafisária em galho verde.",
+    "largura": 1200,
+    "altura": 614
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1291": {
-  "conceito": "O princípio de **Ring e Waters** escolhe o tratamento pelo padrão da **ulna**: plástica e galho verde por **redução fechada**; transversa e oblíqua curta por **fixação intramedular**; oblíqua longa e cominuta por **placa**. A alternativa C apresenta essa correspondência (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA cabeça radial e a ulna formam o mesmo problema de alinhamento. No tipo I, o resumo orienta corrigir a **ulna primeiro**, por tração e pressão no ápice, e depois fletir para reduzir a cabeça. Na deformidade plástica, a correção pede anestesia: ausência de um traço completo não significa ausência de deformidade relevante.\n\nA direção da luxação organiza a classificação, mas não substitui a análise do padrão ulnar para escolher a estabilização. Se a cabeça continua irredutível depois de corrigida a ulna, o resumo destaca **interposição do ligamento anular** e avaliação de deformidade plástica do rádio.\n\n**Na prova:** não universalizar gesso nem placa para toda Monteggia. Identificar se a ulna pode ser reduzida e mantida fechada ou necessita de fixação adequada ao traço, e verificar a congruência radiocapitelar após a correção.\n\n**Por que esta questão foi criada.** É uma questão de projeção para aplicar o protocolo de tratamento pela ulna, distinguindo deformidade plástica, galho verde e os padrões de fratura completa.",
-  "correta": "Alternativa C. É o algoritmo pelo padrão ulnar apresentado. Cada grupo recebe uma estratégia diferente, em vez de determinar tratamento apenas pela existência de luxação da cabeça.",
+  "conceito": "A ideia mais útil do capítulo inteiro é esta: no MONTEGGIA da criança, o tratamento se escolhe **pela fratura da ulna**. Se a ulna recupera e mantém comprimento e alinhamento, a cabeça do rádio volta e fica.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) adota o protocolo de RING e WATERS:\n- **deformidade plástica** e **galho verde**: **redução fechada** e gesso, porque o periósteo segura;\n- **transversa** ou **oblíqua curta**: **fixação intramedular** (fio ou haste flexível), porque reduz bem mas pode perder no gesso;\n- **oblíqua longa** ou **cominuta**: **placa e parafusos**, porque perde comprimento.\n\nResultados: 28 de 28 excelentes tratados em até 24 horas; RAMSKI, com 112 fraturas, viu falhas só quando o cirurgião tratou sem cirurgia uma fratura que o protocolo mandava fixar.\n\n**Por que esta questão foi criada.** As provas cobram a classificação e a posição do gesso; o princípio de tratar pela ulna explica as duas e é o que mais se usa na prática.",
+  "correta": "**C) deformidade plástica e galho verde: redução fechada; transversa ou oblíqua curta: fixação intramedular; oblíqua longa ou cominuta: placa e parafusos.** É o protocolo do Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "Inverte duas indicações: plástica pode ser tratada por redução fechada, e transversa recebe estabilização intramedular no protocolo. Não é a correspondência de Ring e Waters descrita.",
-   "B": "Fraturas completas não formam um grupo uniformemente tratado com gesso. O protocolo separa transversas/oblíquas curtas de oblíquas longas/cominutas para escolher a fixação.",
-   "D": "Galho verde pertence ao grupo fechado, enquanto cominuta é direcionada à placa. A opção troca os instrumentos entre padrões com exigências distintas."
+   "A": "**Está invertido**: a deformidade plástica vai com redução fechada, e a fratura completa não deve ir só com gesso.",
+   "B": "**Toda fratura completa só com gesso** foi justamente a causa das falhas na série de RAMSKI.",
+   "D": "**Também invertido**: galho verde não precisa de placa, e a cominuta pede placa, não fio."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção General Treatment Principles e Algoritmo 12-1",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Tratamento agudo"
-     ],
-     "blocos": [
-      "tratamento-agudo-35192e58"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "2d0da2abf4934a91931e94b17069e136af81984933911d7b06749a30389a2a8e"
-    }
-   ],
-   "questaoSha256": "dbf1f22db84d1638e62b00332763562154f25f9a5395e4ea092d3b183ead1635",
-   "comentarioSha256": "d74b3f42c6b8d9bc2f8faa62a814c0d543e25cf3277cbf9ff0b6e5b910fb9462"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1292": {
-  "conceito": "A **linha radiocapitelar** deve ser avaliada no **perfil verdadeiro**: o eixo do rádio passa pelo centro do capítulo em **qualquer flexão**. O **arco ulnar maior que 1 mm** revela deformidade plástica. Esses dois achados compõem a alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nO perfil importa porque o **AP pode enganar no tipo I**, cuja cabeça está anterior. Não basta ver um traço ulnar e encerrar a leitura: o resumo recomenda radiografar o cotovelo na fratura dos dois ossos, para não perder a incongruência radiocapitelar.\n\nA deformidade plástica pode alterar o alinhamento sem um traço completo. O arco ulnar procura esse desvio e não deve ser descartado como uma curvatura sempre fisiológica. Se a imagem não for conclusiva, o capítulo cita radioscopia, ressonância, tomografia ou ultrassonografia como recursos adicionais.\n\n**Na prova:** conferir a qualidade da incidência e a relação rádio–capítulo, além da ulna. Uma linha aparentemente correta em projeção inadequada não substitui o perfil verdadeiro, e o limiar do arco não dispensa interpretação do conjunto.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A linha radiocapitelar e o arco ulnar são as ferramentas que evitam o MONTEGGIA crônico.",
-  "correta": "Alternativa D. Mantém incidência, relação anatômica e limiar do arco como apresentados no resumo. A validade da linha não fica restrita ao cotovelo estendido.",
+  "conceito": "O MONTEGGIA que passa despercebido quase sempre passou por uma radiografia mal lida. O Rockwood and Wilkins' Fractures in Children (cap. 12) dá duas ferramentas para não errar.\n\n**A linha radiocapitelar.** O eixo do rádio deve passar pelo **centro do capítulo** em **qualquer grau de flexão** do cotovelo. No tipo I, a melhor incidência é o **perfil verdadeiro**; no AP, a relação pode parecer normal mesmo com a cabeça anterior.\n\n**O sinal do arco ulnar.** Uma linha da ulna distal ao olécrano; se a borda da ulna se afasta dela **mais de 1 mm**, há curvatura anormal, ou seja, **deformidade plástica** (Fig. 12-3). É o que separa o BADO I com deformidade plástica da luxação isolada da cabeça.\n\nE uma regra: a fratura dos dois ossos do antebraço pede radiografia própria do cotovelo, porque a do antebraço inteiro costuma não mostrar a radiocapitelar.\n\n**Por que esta questão foi criada.** Nenhuma questão do acervo cobrou o arco ulnar, mas o capítulo o põe no centro do diagnóstico.",
+  "correta": "**D) no perfil verdadeiro, o eixo do rádio passa pelo centro do capítulo em qualquer flexão; o sinal do arco ulnar (desvio maior que 1 mm) revela a deformidade plástica.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "A fonte descreve a relação em qualquer flexão no perfil verdadeiro. Exigir extensão como condição única é uma restrição que não pertence à regra apresentada.",
-   "B": "O AP pode enganar no tipo I. Para a relação radiocapitelar discutida, o resumo privilegia perfil verdadeiro, não o AP como melhor demonstração da luxação anterior.",
-   "C": "Desvio maior que 1 mm da borda ulnar é o sinal citado para deformidade plástica. Chamar toda curvatura de normal elimina justamente o achado que ajuda a reconhecer a lesão sem fratura completa."
+   "A": "**A linha radiocapitelar vale em qualquer grau de flexão.**",
+   "B": "**O AP engana no tipo I**; o perfil verdadeiro é a melhor incidência.",
+   "C": "**A curvatura com desvio maior que 1 mm é anormal**: é a deformidade plástica."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Imaging and Other Diagnostic Studies, Figs. 12-3 e 12-12",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Diagnóstico"
-     ],
-     "blocos": [
-      "diagnostico-7ee8a436"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "6848db48f0d4b277a5bae2644bd0b443930a089e41e7f04de45595459c2adf8d"
-    }
-   ],
-   "questaoSha256": "a5bdb6f5e5b965a3573c5ca4c4c54d891978f303c1617f7ce8001adc04628775",
-   "comentarioSha256": "f926fe08eef924194d33f909e3eb164d43a765c710739b5d0e206576bf89581f"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1293": {
-  "conceito": "O mecanismo mais comum do **Monteggia I** no resumo é queda com cotovelo em **extensão**, antebraço entre **neutro e meia pronação**: o **bíceps desloca a cabeça para a frente** e a ulna falha em **tensão anterior**. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nO capítulo também cita golpe direto e hiperpronação de Evans como possibilidades, mas as diferencia do mecanismo mais comum por hiperextensão de Tompkins. Uma hipótese possível não pode ser convertida em resposta predominante, nem ganhar sinais cutâneos obrigatórios que o resumo não demonstra.\n\nEsse padrão produz cabeça e ápice ulnar anteriores na classificação de Bado. O tipo II é diferente: carga longitudinal com cotovelo a **60°**, cabeça posterior; o III se relaciona a **varo com a mão apoiada** e galho verde ulnar proximal.\n\n**Na prova:** associar mecanismo, direção da cabeça e deformidade ulnar. O tratamento do tipo I começa pela correção da ulna e depois pela redução da cabeça, em vez de presumir que todas as fraturas-luxações tenham a mesma posição de redução.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O mecanismo explica as posições de redução e imobilização de cada tipo.",
-  "correta": "Alternativa C. Reúne posição, ação do bíceps e falha ulnar que o capítulo descreve para o mecanismo predominante do tipo I. A cadeia mecânica é coerente com a luxação anterior.",
+  "conceito": "Três teorias tentaram explicar o tipo I, e o Rockwood and Wilkins' Fractures in Children (cap. 12) mostra por que a da hiperextensão venceu.\n\n- **Golpe direto** (SPEED e BOYD, já sugerido por MONTEGGIA): pancada na face posterior do antebraço quebra a ulna e empurra a cabeça para a frente. Contra ela: raramente há sinal de golpe.\n- **Hiperpronação** (EVANS): a mão apoiada é forçada a pronar enquanto o corpo gira. Contra ela: em cadáver, a ulna quebrava em espiral, diferente do que se via nos pacientes, e os músculos não entravam na conta.\n- **Hiperextensão** (TOMPKINS): a queda com a mão estendida leva o cotovelo à hiperextensão; o **bíceps** contrai e **luxa a cabeça** para a frente; o impulso continua e a ulna quebra por **tensão na face anterior** (Fig. 12-9).\n\nO mecanismo mais comum é a queda com a mão estendida, o cotovelo em extensão completa e o antebraço entre neutro e meia pronação. O papel do bíceps explica o tratamento: imobilizar em flexão para relaxá-lo.\n\n**Por que esta questão foi criada.** As provas cobraram o mecanismo dos tipos II e III; esta completa o tipo I.",
+  "correta": "**C) queda com a mão estendida e o cotovelo em extensão completa, antebraço entre neutro e meia pronação; o bíceps luxa a cabeça para a frente e a ulna falha em tensão anterior.** É a teoria da hiperextensão no Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "Golpe direto é uma possibilidade, mas não o mecanismo apontado como mais comum. A contusão quase sempre visível acrescenta uma frequência que não substitui a descrição da queda por extensão.",
-   "B": "Hiperpronação é outra teoria citada, não o padrão mais comum descrito. O resumo não a transforma em predomínio de fratura espiral da ulna para responder esta questão.",
-   "D": "Carga longitudinal a 60° corresponde ao mecanismo de Penrose para o tipo II, com deslocamento posterior. Não é a descrição do tipo I por extensão com cabeça anterior."
+   "A": "**O golpe direto** existe, mas raramente há sinal dele; não é o mecanismo mais comum.",
+   "B": "**A hiperpronação de EVANS** produzia fratura espiral em cadáver, diferente da clínica.",
+   "D": "**Carga longitudinal a 60 graus** é o mecanismo do tipo II."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Classificação e mecanismos; Tratamento agudo."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Type I Mechanism of Injury, Figs. 12-7 a 12-9",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Classificação e mecanismos",
-      "Tratamento agudo"
-     ],
-     "blocos": [
-      "classificacao-e-mecanismos-414cee4f",
-      "classificacao-e-mecanismos-bf9aae38",
-      "tratamento-agudo-35192e58"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "bf27e5da1a431cc1dd0a8f15271eef8f5e255b0f3ac178fd69638b26e9bee894"
-    }
-   ],
-   "questaoSha256": "6312512aed3596b5e0b7abf000b8c96cf62744a8d1c7f5345415efc614104b1b",
-   "comentarioSha256": "e865e3e2cc01dc47b04b9122a7f67efa7b33995fa7b54207391a4f7b9f9626ce"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1294": {
-  "conceito": "No **Monteggia I por deformidade plástica**, a redução começa pela **ulna**, corrigindo seu alinhamento, e só depois se flete o cotovelo para reduzir a cabeça radial. O gesso fica em cerca de **110° a 120° de flexão**, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA deformidade plástica não tem o mesmo aspecto de uma fratura completa, mas altera o conjunto rádio–ulna e precisa de correção. O resumo recomenda anestesia para a manipulação, com tração e pressão no ápice ulnar. Reduzir apenas a cabeça sem corrigir a ulna deixa a causa do desalinhamento sem tratamento.\n\nO protocolo pelo padrão da ulna admite redução fechada para plástica e galho verde; não é a mesma escolha para uma fratura completa instável. Após o tratamento fechado do tipo I, o capítulo descreve radiografias a cada **1 a 2 semanas** e imobilização por **4 a 6 semanas**.\n\nA posição depende do tipo: o **II é imobilizado em extensão**, ao contrário do I. **Na prova:** verificar ordem de redução e direção da luxação antes de escolher a posição do gesso. A flexão também exige cuidado, pois o capítulo alerta para síndrome compartimental e para evitar hiperflexão no gesso.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A ordem da redução (ulna, depois cabeça) e a posição de flexão são o núcleo do tratamento fechado.",
-  "correta": "Alternativa A. Preserva a sequência ulna primeiro, cabeça depois e a posição de 110° a 120° para o tipo I. A correção do alinhamento ulnar é parte essencial da redução, não uma etapa dispensável.",
+  "conceito": "Na deformidade plástica, a ulna não quebrou: curvou e ficou curvada. Enquanto ela estiver curva, a cabeça do rádio não tem onde ficar.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) dá a sequência:\n1. sob anestesia, corrigir o **comprimento e a angulação da ulna**, com força lenta e sustentada sobre o ápice da curvatura;\n2. com a ulna reta, **fletir o cotovelo** a 90 graus ou mais; a cabeça em geral reduz sozinha, às vezes com uma pressão posterior;\n3. conferir a redução no perfil verdadeiro;\n4. imobilizar em cerca de **110 a 120 graus de flexão**, que neutraliza o bíceps, com o antebraço entre meia supinação e neutro; gesso por 4 a 6 semanas, radiografias a cada 1 a 2 semanas.\n\nAceitar a ulna curvada porque a cabeça entrou é o caminho para o MONTEGGIA crônico: a curvatura volta a empurrar a cabeça para fora.\n\n**Por que esta questão foi criada.** O TEOT 2024 cobrou a classificação de LETTS; esta mostra o que fazer com o tipo A.",
+  "correta": "**A) corrigir primeiro o comprimento e a angulação da ulna, depois fletir o cotovelo para reduzir a cabeça e imobilizar em cerca de 110 a 120 graus de flexão.** É a sequência do Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "B": "Inverte a ordem. O resumo orienta corrigir primeiro a ulna e depois fletir para reduzir a cabeça, em vez de tentar resolver a luxação deixando a deformidade ulnar para o fim.",
-   "C": "Extensão é a posição destacada para o tipo II. Neste tipo I, a orientação é flexão de 110° a 120°, após corrigir a ulna; não há indicação de aplicar a posição do II indistintamente.",
-   "D": "A cabeça aparentemente reduzida não autoriza aceitar a deformidade da ulna. O protocolo começa pela correção ulnar e exige acompanhar o alinhamento, pois a lesão é do conjunto e não apenas da cabeça."
+   "B": "**A ordem é a inversa**: ulna primeiro, cabeça depois, e em flexão.",
+   "C": "**Extensão completa** é a posição do tipo II, não do tipo I.",
+   "D": "**Aceitar a curvatura** deixa a cabeça instável e leva ao MONTEGGIA crônico."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo; Complicações e MONTEGGIA crônico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Nonoperative Treatment of Type I, Fig. 12-27",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Tratamento agudo",
-      "Complicações e MONTEGGIA crônico"
-     ],
-     "blocos": [
-      "tratamento-agudo-35192e58",
-      "complicacoes-e-monteggia-cronico-15c4cbe6"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "8f8ee92301ff8f915e6f11fd52e10fa69b64ad85cc45b7ae6be709ea0c55a435"
-    }
-   ],
-   "questaoSha256": "8d6b773d2e362f24e9c9a72adf6f8aa66f0add76d67155f8ef3c76999170aba2",
-   "comentarioSha256": "961b1febee233c135c216ea60b801656e54ef75a275f8ee77be821b38dae3709"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1295": {
-  "conceito": "Quando a cabeça continua irredutível **depois de corrigida a ulna**, o resumo destaca **interposição do ligamento anular**. Ele pode sair da ulna com uma **manga de periósteo em continuidade**, tornando-se obstáculo à redução. A alternativa B corresponde a essa explicação e à via de **Kocher com pronação** (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA ordem é decisiva: antes de atribuir toda resistência a partes moles, conferir a correção da ulna. O capítulo também manda verificar deformidade plástica do rádio. Uma cabeça que não encaixa completamente não deve ser considerada reduzida apenas porque o desvio diminuiu.\n\nA abordagem permite retirar o tecido do caminho e restabelecer a posição do anular. No caso crônico, o mesmo capítulo prefere utilizar o **anular nativo** quando possível e associa a reconstrução à correção da ulna. Isso não significa que todo caso agudo precise da técnica de enxerto do crônico.\n\n**Na prova:** ulna corrigida + cabeça ainda bloqueada sugere anular interposto. Identificar a causa do bloqueio orienta a exposição; não trocar um obstáculo ligamentar por tenotomia ou observação sem resolver a incongruência.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A redução imperfeita aceita é a porta de entrada do MONTEGGIA crônico.",
-  "correta": "Alternativa B. É a interposição e a continuidade periosteal descritas no capítulo, com acesso de Kocher em pronação. A redução deve recuperar a congruência e a posição do ligamento, após verificar o alinhamento ósseo.",
+  "conceito": "Ulna fixada, cabeça que não entra: alguma coisa está no caminho. O Rockwood and Wilkins' Fractures in Children (cap. 12) diz o que é e como tirar.\n\nNa maioria das vezes, é o **ligamento anular**. No MONTEGGIA, ele costuma sair da ulna **inteiro, com uma manga de periósteo** (não rompe no meio), escorrega sobre a cabeça e fica preso entre ela e o capítulo. A conduta é a **redução aberta**:\n- via **posterolateral de KOCHER**, entre o ancôneo e o extensor ulnar do carpo, com o antebraço em **pronação** para afastar o nervo radial;\n- capsulotomia, identificação do anular, redução dele sobre o colo com um descolador e **reinserção na ulna** com fio inabsorvível;\n- se necessário, osteotomia de abertura do olécrano; alternativa, a via de BOYD.\n\nTambém é a hora de procurar uma deformidade plástica do rádio que impeça a redução.\n\n**Por que esta questão foi criada.** O capítulo trata a cabeça irredutível como um passo do algoritmo; é detalhe técnico que costuma virar questão.",
+  "correta": "**B) interposição do ligamento anular, que em geral sai da ulna inteiro com uma manga de periósteo; redução aberta pela via posterolateral com o antebraço pronado e reposição do ligamento.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "O obstáculo descrito nessa situação é o anular, não uma ruptura no meio do colateral medial. Um reparo medial não corresponde à abordagem do tecido interposto citada no resumo.",
-   "C": "O capítulo orienta procurar a causa da irredutibilidade, sobretudo anular interposto e deformidade plástica do rádio. Observar uma redução incompleta sob a hipótese não demonstrada de fratura do capítulo não resolve o problema apresentado.",
-   "D": "A ação do bíceps participa do mecanismo do tipo I, mas isso não torna contratura a causa mais provável da cabeça bloqueada após correção ulnar. Tenotomia imediata não é a conduta descrita para esse cenário."
+   "A": "**O colateral medial** não bloqueia a radiocapitelar.",
+   "C": "**Observar uma redução incompleta** leva ao MONTEGGIA crônico; o capítulo manda nunca aceitá-la.",
+   "D": "**O bíceps encurta no MONTEGGIA crônico**, não no agudo; no agudo, o bloqueio é o anular."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Tratamento agudo; Complicações e MONTEGGIA crônico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Open Reduction of the Annular Ligament (Kocher approach)",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Tratamento agudo",
-      "Complicações e MONTEGGIA crônico"
-     ],
-     "blocos": [
-      "tratamento-agudo-35192e58",
-      "complicacoes-e-monteggia-cronico-c7cab5d6"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "ba0613eca0722cc812e334ecdc7dcf6be0dc090271b015cfe34ed5939912916d"
-    }
-   ],
-   "questaoSha256": "df8ed2e4c67d96eb422a4c136eeb1968729bc1bbc88c3955a30b7a5c46fa9a81",
-   "comentarioSha256": "124b7583280e780009c12d3d9fdc59ce8b734309744a181651d5ce033aa96f7f"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1296": {
-  "conceito": "A perda de extensão das **metacarpofalângicas** e da **retropulsão do polegar** corresponde ao exame do **nervo interósseo posterior** descrito no capítulo. No Monteggia III, esse nervo merece atenção especial. A alternativa C reúne identificação e evolução (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nO resumo informa lesão do **radial em 10% a 20%**, principalmente do interósseo posterior, como complicação mais comum, mais presente nos tipos I e III. O percentual se refere ao grupo radial citado, não deve ser automaticamente convertido numa incidência exclusiva de qualquer ramo ou subtipo.\n\nA orientação é **expectante**, com retorno da função em até **12 semanas** e possibilidade de esperar até seis meses no contexto apresentado pelo capítulo. Isso exige documentar o exame e acompanhar a recuperação; não equivale a dispensar avaliação de outros problemas do membro.\n\n**Na prova:** distinguir o padrão motor do interósseo posterior das lesões mediana e ulnar. O diagnóstico de uma paresia após redução não implica, por si, exploração imediata ou transferência tendinosa precoce.\n\n**Por que esta questão foi criada.** É uma questão de projeção para reconhecer a perda de extensão das metacarpofalângicas e da retropulsão do polegar,relacionando o interósseo posterior ao MonteggiaIII e à observação da recuperação.",
-  "correta": "Alternativa C. Os movimentos testados apontam para o interósseo posterior, e o capítulo recomenda observação da recuperação. A referência de 12 semanas descreve a evolução esperada, sem garantir o mesmo prazo para cada criança.",
+  "conceito": "Não estender as metacarpofalângicas nem fazer a retropulsão do polegar é o retrato da paralisia do **interósseo posterior**, ramo motor do nervo radial.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12) diz que a lesão do radial ocorre em **10% a 20%** dos MONTEGGIA, a **complicação mais comum**, sobretudo nos tipos **I e III**. O interósseo posterior é o mais atingido por estar colado à cabeça e ao colo do rádio e passar sob a arcada de FROHSE. Na criança, a arcada é mais fina e o periósteo mais grosso, o que talvez explique a boa recuperação.\n\nO tratamento é **expectante**: a função costuma voltar em até **12 semanas**; uma série recomenda esperar até 6 meses antes de intervir; a maioria relata 100% de recuperação. A exploração entra quando o nervo está preso atrás da cabeça impedindo a redução, ou na reconstrução de um crônico com lesão persistente.\n\n**Por que esta questão foi criada.** As provas não cobraram os nervos do MONTEGGIA, mas é a complicação mais comum e cai com facilidade.",
+  "correta": "**C) é paralisia do interósseo posterior, a complicação mais comum (radial em 10% a 20%), tratada de forma expectante; a função costuma voltar em até 12 semanas.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "Os testes citados são os usados para o interósseo posterior no resumo, não para o mediano. A fonte ainda classifica lesão mediana como rara e não impõe exploração imediata para o padrão apresentado.",
-   "B": "O resumo associa o ulnar ao tipo II; destaca o interósseo posterior nos tipos I e III. A opção erra tanto a identificação motora quanto a associação principal.",
-   "D": "A evolução habitualmente recuperável e a conduta expectante descritas não justificam transferência tendinosa precoce de rotina. É preciso acompanhar a recuperação neural, em vez de tratar o déficit inicial como definitivo."
+   "A": "**O mediano** é raramente lesado, e o quadro descrito é do radial.",
+   "B": "**O ulnar** se associa ao tipo II, e não explica a falta de extensão dos dedos.",
+   "D": "**Transferência precoce** não se indica; a recuperação espontânea é a regra."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Complicações e MONTEGGIA crônico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Nerve Injuries (Radial Nerve Injury)",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Diagnóstico",
-      "Complicações e MONTEGGIA crônico"
-     ],
-     "blocos": [
-      "diagnostico-7ee8a436",
-      "complicacoes-e-monteggia-cronico-15c4cbe6"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "152182ccde07c32d9e0bf4f11918205ee747e9dc0470031dc6b97e127779d091"
-    }
-   ],
-   "questaoSha256": "7c12981fe56a97ce011c967688b7d1fd8d13e130d4846fe625a7b179c9c77be2",
-   "comentarioSha256": "0cc67a944f179ea1265d29645f01be07018a1e23aa51d7c44414260353d4205b"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1297": {
-  "conceito": "**Cabeça radial convexa e capítulo hipoplásico**, com luxação em geral **posterior** e por vezes **bilateral**, favorecem luxação congênita. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nA ausência de uma história clara de trauma não decide sozinha. O resumo contrapõe à forma congênita a luxação traumática crônica com **cabeça côncava, arco ulnar alterado e anular ossificado**. Uma luxação anterior deve levantar suspeita de trauma.\n\nA morfologia também importa para reconstruir o Monteggia crônico: o capítulo favorece a reconstrução quando a cabeça permanece **côncava** e o capítulo **convexo**, de preferência cedo e abaixo de 10 a 12 anos; cabeça convexa/aumentada, capítulo achatado e artrose são desfavoráveis.\n\n**Na prova:** interpretar formato das superfícies, direção e ulna, sem usar “sem trauma lembrado” como diagnóstico. Os achados favorecem uma hipótese; a decisão reconstrutiva exige avaliar a articulação completa, não apenas a idade.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A diferença entre luxação congênita e MONTEGGIA crônico decide se a criança vai ou não para a reconstrução.",
-  "correta": "Alternativa A. Reúne o padrão morfológico e a direção mais típicos da forma congênita no resumo. Bilateralidade é possível, não uma condição obrigatória.",
+  "conceito": "A forma da cabeça do rádio conta há quanto tempo ela está fora do lugar.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12, Fig. 12-19) aponta o que sugere luxação **congênita**:\n- cabeça do rádio **convexa e deformada**;\n- capítulo **hipoplásico**;\n- luxação em geral **posterior**, às vezes **bilateral**, com associação a síndromes como EHLERS-DANLOS e unha-patela.\n\nNo MONTEGGIA crônico, a cabeça continua **côncava** por muito tempo, a ulna mostra curvatura ou consolidação viciosa, e o anular deslocado pode ossificar. E a regra do capítulo: toda luxação **anterior** deve ser tratada como traumática até prova em contrário.\n\n**Por que esta questão foi criada.** TEOT 2022 e TARO 2012 cobraram a direção da luxação congênita; esta acrescenta os outros sinais.",
+  "correta": "**A) cabeça do rádio convexa e deformada com capítulo hipoplásico, luxação em geral posterior e às vezes bilateral.** São os sinais de origem congênita no Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "B": "Cabeça côncava e capítulo preservado aproximam-se da morfologia traumática crônica potencialmente reconstruível, não da combinação convexa/hipoplásica destacada para a congênita.",
-   "C": "Luxação anterior com alteração do arco ulnar é suspeita de trauma segundo o capítulo. Não é o conjunto que favorece a forma congênita posterior com capítulo hipoplásico.",
-   "D": "Anular ossificado faz parte da descrição da luxação traumática crônica. Esse achado não substitui a morfologia convexa e hipoplasia capitular do padrão congênito."
+   "B": "**Cabeça côncava com capítulo normal** é a do MONTEGGIA crônico reconstruível.",
+   "C": "**Luxação anterior com ulna curvada** é a assinatura do MONTEGGIA tipo I.",
+   "D": "**O anular ossificado** aparece no MONTEGGIA crônico (Fig. 12-43)."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Diagnóstico; Complicações e MONTEGGIA crônico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Radiographic Determination of Traumatic Versus Congenital Dislocation e Fig. 12-19",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Diagnóstico",
-      "Complicações e MONTEGGIA crônico"
-     ],
-     "blocos": [
-      "diagnostico-7ee8a436",
-      "complicacoes-e-monteggia-cronico-c7cab5d6"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "d85f5861517e1fa4b8f0f6ec9e93babd0335441bb17eb4fddba40ec0d2cff2a5"
-    }
-   ],
-   "questaoSha256": "e420225e3efa0d8848409f854d051ca9c6c645b5440ba0ec9a6905e6a00d356d",
-   "comentarioSha256": "80c942ceb59f004284e6f24d84d8703480013a0dc84148e8198ae4adaf194d8d"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1298": {
-  "conceito": "A menina tem **8 anos**, cabeça ainda **côncava** e capítulo preservado: são condições favoráveis à reconstrução do Monteggia crônico no resumo. A técnica preferida combina **osteotomia de abertura da ulna, redução e reparo do anular nativo**, com **fasciotomias profiláticas**. Na deformidade plástica, a osteotomia fica **proximal ao ápice**, alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 12).\n\nO procedimento não tenta resolver apenas o ligamento: corrigir a geometria ulnar é um fator-chave para recuperar a relação radiocapitelar. O capítulo descreve proteção do radial, desbridamento, calibração com pino radiocapitelar provisório e placa sem enxerto na técnica dos autores; ressalta não deixar o pino.\n\nA história natural não é benigna: podem surgir valgo, dor, perda de rotação/flexão e neuropatia tardia. Ainda assim, indicação depende da morfologia. Cabeça convexa ou aumentada, capítulo achatado e artrose são contraindicações descritas; não basta operar todo caso antigo pela passagem do tempo.\n\n**Na prova:** ligar indicação, localização da osteotomia e preferência pelo tecido nativo. Reconstrução do anular com enxerto e correção da ulna são decisões diferentes; substituir a ulna deformada por uma reconstrução isolada deixa o problema mecânico sem correção.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A reconstrução do crônico reúne indicação, contraindicação e técnica.",
-  "correta": "Alternativa B. Reproduz o conjunto da técnica e a particularidade da deformidade plástica. Oito anos e superfícies ainda favoráveis sustentam considerar reconstrução, em vez de aguardar degeneração.",
+  "conceito": "Seis meses, cabeça côncava, capítulo normal, ulna curvada: é o MONTEGGIA crônico que ainda dá para consertar. O Rockwood and Wilkins' Fractures in Children (cap. 12) descreve a técnica preferida dos autores.\n\n- **Osteotomia de abertura da ulna**, no ápice da consolidação viciosa ou, na **deformidade plástica**, **proximal ao ápice**, mais perto do cotovelo, para corrigir melhor a radiocapitelar; a meta é uma hipercorreção parcial.\n- **Redução aberta** pela via de KOCHER, desbridando o pulvinar e a incisura radial da ulna.\n- **Reparo do anular nativo**, que quase sempre ainda está lá; reconstrução com fáscia do tríceps só se ele não servir.\n- Fio radiocapitelar provisório para calibrar a abertura; **placa sem enxerto**; fio retirado e arco de rotação testado.\n- **Fasciotomias profiláticas** limitadas, contra a síndrome compartimental.\n\nReconstruir só o anular, sem a osteotomia, raramente funciona: a ulna curvada continua empurrando a cabeça. Excisão da cabeça é para quem não pode ser reconstruído.\n\n**Por que esta questão foi criada.** O TARO 2007 cobrou a técnica de BELL TAWSE; esta mostra como o capítulo trata o crônico hoje.",
+  "correta": "**B) osteotomia de abertura da ulna (proximal ao ápice na deformidade plástica), redução aberta e reparo do ligamento anular nativo, com fasciotomias profiláticas do antebraço.** É a técnica dos autores no Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "A técnica preferida para esse quadro preservável é reconstrutiva, não excisão da cabeça. A cabeça côncava e o capítulo conservado são justamente os elementos que favorecem tentar recuperar a articulação.",
-   "C": "O resumo destaca a osteotomia da ulna como fator-chave e prefere o anular nativo quando utilizável. Reconstruir apenas o ligamento com tríceps sem corrigir a ulna não corresponde à técnica descrita.",
-   "D": "A história natural é descrita como não benigna, e a preferência é por reconstruir cedo em crianças com morfologia favorável. Esperar automaticamente até a maturidade ignora os elementos de indicação presentes."
+   "A": "**Excisão da cabeça** é para quem tem contraindicação à reconstrução e dor persistente.",
+   "C": "**Reconstruir só o anular** raramente é indicado; a osteotomia da ulna é o centro da cirurgia.",
+   "D": "**Observar até a maturidade** desperdiça a fase em que a cabeça ainda é côncava; a história natural não é benigna."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura-luxação de MONTEGGIA na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 12 · Monteggia Fracture-Dislocation in Children. Seções: Complicações e MONTEGGIA crônico."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Ulnar Osteotomy and Open Reduction (Authors' Technique), Figs. 12-47 a 12-49",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-12-monteggia",
-     "titulo": "Fratura-luxação de MONTEGGIA na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
-     "secoes": [
-      "Complicações e MONTEGGIA crônico"
-     ],
-     "blocos": [
-      "complicacoes-e-monteggia-cronico-c7cab5d6"
-     ],
-     "sha256": "a32f4768f4c932af6293179bbd8bad6f9d3406c6904bfcf4094c79412eb50134",
-     "trechosSha256": "440972a518252a167f7d44c0aafe5f464dae3d625e4d7fb8eecdf057f482b315"
-    }
-   ],
-   "questaoSha256": "1f0c6559dc477c6ba733b608af32757299d35c96a6baf6f4b59d763e7cbdc979",
-   "comentarioSha256": "aa5016d0079f28621a5bb66b0ff41b7d93930572c83979d011093f1621725383"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1299": {
-  "conceito": "Quando o ligamento anular nativo não serve, é preciso fazer outro. A técnica clássica é de BELL TAWSE, e as variações nasceram das suas limitações.\n\n**BELL TAWSE.** Atribui-se a ele a técnica original de redução aberta tardia da cabeça com **reconstrução do anular**, pela via de BOYD. Usou a **porção central do tendão do tríceps**, passada por um **furo na ulna** e **em volta do colo do rádio**, e imobilizou em **extensão**. A **direção da estabilidade** é **posterior** (Rockwood crianças, 10ª ed., cap. 12, Fig. 12-44).\n\n**As variações.** **BUCKNILL e LLOYD-ROBERTS**: porção **lateral** do tríceps, com **pino transcapitelar**, imobilização em flexão. **HURST e DUBROW**: porção central, mas levando a dissecção do periósteo até o colo do rádio e usando **túnel periosteal** em vez de furo. Outros tecidos: **lacerto fibroso**, tira de **fáscia do antebraço**, **palmar longo** livre, **fáscia lata** livre.\n\n**SEEL e PETERSON.** Notaram que BELL TAWSE **puxa o rádio posterolateralmente** e que uma reconstrução apertada pode **estrangular o colo** (\"entalhe\"), limitando o crescimento e a rotação. Usaram **furos nas inserções originais** do anular na ulna (bordas anterior e posterior da incisura radial), para reparar o anular ou passar o tríceps, com força **posteromedial**, mais fisiológica.\n\n**A preferência atual.** **Reparar o anular nativo** sempre que possível (quase sempre dá, até 2 anos ou mais da lesão); ZHENG viu melhores resultados com reparo do que com reconstrução. Reconstrução com fáscia do tríceps (8 a 10 cm) quando o nativo não serve. Reconstrução sem osteotomia da ulna raramente é indicada.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2007 (`pediatria-0742`), que perguntou o que a técnica de BELL TAWSE utiliza (porção central do tríceps); a oficial está sem gabarito, e o capítulo sustenta essa resposta. Depois, faça a oficial.\n\n> **Na prova:** **BELL TAWSE** = **porção central do tríceps**, furo na ulna, em volta do colo, estabilidade **posterior**; BUCKNILL e LLOYD-ROBERTS = porção **lateral** + **pino transcapitelar**; SEEL e PETERSON = furos nas inserções, força **posteromedial**; preferir o **anular nativo**.",
-  "correta": "**D: a porção central do tendão do tríceps, passada por um furo na ulna e em volta do colo do rádio, com força estabilizadora posterior.** É a técnica original de BELL TAWSE (Rockwood crianças, 10ª ed., cap. 12).",
+  "conceito": "BELL TAWSE é a técnica original de reconstrução do anular no MONTEGGIA crônico, e o detalhe que cai é **qual parte do tríceps** e **para onde a força puxa**.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 12, Figs. 12-44 e 12-45) descreve: **porção central do tendão do tríceps**, passada por um **furo na ulna** e em volta do **colo do rádio**, com imobilização em extensão; a força estabilizadora é **posterior**. A variação de BUCKNILL e LLOYD-ROBERTS usou a porção **lateral** do tríceps com **pino transcapitelar**; SEEL e PETERSON, dois furos nas inserções originais, com força posteromedial. Palmar longo e fáscia lata livres aparecem como alternativas de enxerto.\n\n**Por que esta questão foi criada.** É a questão do TARO 2007, refeita com as variações que a banca usa como distrator.",
+  "correta": "**D) a porção central do tendão do tríceps, passada por um furo na ulna e em volta do colo do rádio, com força estabilizadora posterior.** É a técnica de BELL TAWSE no Rockwood and Wilkins' Fractures in Children (cap. 12).",
   "incorretas": {
-   "A": "**Outro autor.** O palmar longo livre foi usado por outros como alternativa; não é a técnica de BELL TAWSE.",
-   "B": "**Também alternativa.** A fáscia lata livre aparece entre as opções de outros autores.",
-   "C": "**É a modificação.** BUCKNILL e LLOYD-ROBERTS usaram a porção lateral do tríceps com pino transcapitelar."
+   "A": "**O palmar longo livre** é outra opção de enxerto.",
+   "B": "**A fáscia lata livre** também é alternativa, não a técnica de BELL TAWSE.",
+   "C": "**Porção lateral com pino transcapitelar** é a modificação de BUCKNILL e LLOYD-ROBERTS."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Operative Treatment of Chronic Monteggia (Annular Ligament Repair or Reconstruction, Figs. 12-44 e 12-45)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan), seção Annular Ligament Repair or Reconstruction, Figs. 12-44 e 12-45",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
-  "geradoEm": "2026-10-27",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-12-45.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fig. 12-45. Reconstrução do ligamento anular: A, BELL TAWSE, com força estabilizadora posterior; B, SEEL e PETERSON, com furos cruzados nas bordas anterior e posterior da incisura radial da ulna e força posteromedial.",
+    "largura": 960,
+    "altura": 524
+   }
+  ],
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1300": {
@@ -33328,6 +32860,54 @@
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 20 (Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries; Benton E. Heyworth)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 20, seções Operative Treatment of Midshaft Clavicle Fractures e of Scapula Fractures",
    "Biblioteca OrtoQuestões, resumo Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança (rockwoodcriancas10-20-clavicula-escapula)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1451": {
+  "conceito": "O MONTEGGIA crônico é quase sempre um MONTEGGIA agudo que passou despercebido, em geral porque a lesão da ulna era sutil, uma deformidade plástica. O Rockwood and Wilkins' Fractures in Children (cap. 12) lembra que a história natural **não é benigna**: com o tempo vêm valgo progressivo do cotovelo, dor, perda da rotação do antebraço e da flexão, artrose e até neuropatia tardia do ulnar, do mediano ou do interósseo posterior.\n\nA reconstrução só funciona se as duas superfícies ainda se encaixam. Por isso o capítulo separa:\n- **indicações**: paciente com sintomas (indicação) e paciente sem sintomas, sobretudo se o diagnóstico é precoce (indicação relativa);\n- **contraindicações**: **cabeça do rádio aumentada e de forma convexa**, **capítulo achatado** e **artrose** da articulação.\n\nA cabeça normal é **côncava** e assenta no capítulo **convexo**. Quando a cabeça fica anos fora do lugar, sem o molde do capítulo, ela cresce deformada e convexa, e o capítulo, sem carga, achata. Reduzir essa cabeça seria encaixar duas peças que já não combinam. Nesses casos, se a dor não melhora com o tratamento conservador, sobram a ressecção da cabeça do rádio ou o alongamento da ulna, com o risco de dor no punho e, na ressecção, de valgo progressivo.\n\nO tempo e a idade pesam, mas não são regra rígida: FOWLES teve os melhores resultados com até 3 a 6 meses de luxação; FREEDMAN operou até 6 anos depois; a idade mais citada para reduzir é abaixo de **10 a 12 anos**; e SEEL e PETERSON acharam idade e duração pouco importantes, exigindo apenas cabeça côncava e deformidade corrigível por osteotomia. O que decide é a **forma** das superfícies.\n\n**Por que esta questão foi criada.** As provas cobraram o MONTEGGIA crônico pela técnica de BELL TAWSE (TARO 2007); a escolha de quem pode ser reconstruído, que vem antes da técnica, ficou como projeção.",
+  "correta": "**C: a cabeça do rádio aumentada e convexa, com o capítulo achatado.** É a contraindicação listada pelo Rockwood and Wilkins' Fractures in Children (cap. 12), junto com a artrose: as superfícies deformadas não permitem uma redução congruente.",
+  "incorretas": {
+   "A": "**A ausência de dor não contraindica**: o paciente sem sintomas, sobretudo com diagnóstico precoce, tem indicação relativa de reconstrução.",
+   "B": "**8 anos está dentro da faixa favorável**: a idade mais citada para reduzir é abaixo de 10 a 12 anos, e alguns autores acham a idade pouco importante.",
+   "D": "**A ossificação do anular deslocado é um achado comum do MONTEGGIA crônico** (Fig. 12-43), não uma contraindicação; o ligamento nativo costuma ser aproveitado na cirurgia."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Operative Treatment of Chronic Monteggia Fracture-Dislocations (Indications/Contraindications)",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1452": {
+  "conceito": "Quem pensa em síndrome compartimental na criança costuma lembrar da supracondiliana do úmero. O Rockwood and Wilkins' Fractures in Children (cap. 12) chama atenção para o MONTEGGIA: na série retrospectiva de **KOPRIVA**, com 59 pacientes, a síndrome compartimental ocorreu em **15%**, taxa **maior que a da supracondiliana tipo III**.\n\nDois grupos tiveram mais síndrome compartimental aguda:\n- pacientes com **déficit neurológico antes da cirurgia**, sinal de trauma mais grave;\n- pacientes com **haste intramedular no rádio** num **equivalente de MONTEGGIA**, em que rádio e ulna estão quebrados perto um do outro e a manipulação soma lesão às partes moles.\n\nO capítulo leva isso para a técnica: após a fixação aberta da ulna, se houver muito edema, liberar a fáscia do antebraço depois de fechar o periósteo; na reconstrução do MONTEGGIA crônico, os autores fazem **fasciotomias profiláticas limitadas** dos compartimentos volar e dorsal pela própria incisão. O gesso também conta: a flexão final varia de 90 a 110 graus conforme o edema, e não se força a hiperflexão num cotovelo inchado.\n\n**Por que esta questão foi criada.** As provas do acervo não cobraram as complicações vasculares do MONTEGGIA; o número de KOPRIVA e a comparação com a supracondiliana são o tipo de dado que uma banca gosta de usar.",
+  "correta": "**B: na série de KOPRIVA ocorreu em 15% dos casos, taxa maior que a da supracondiliana tipo III, e foi mais frequente com déficit neurológico antes da cirurgia e com haste intramedular no rádio do equivalente de MONTEGGIA.** São os dados do Rockwood and Wilkins' Fractures in Children (cap. 12).",
+  "incorretas": {
+   "A": "**Está longe de inexistente**: 15% na série de KOPRIVA.",
+   "C": "**A síndrome compartimental aparece no trauma agudo**; no crônico, os autores fazem fasciotomias profiláticas justamente para preveni-la.",
+   "D": "**Hiperflexão no cotovelo inchado piora a pressão**; o gesso pós-operatório fica em 90 a 110 graus, conforme o edema."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Compartment Syndrome",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1453": {
+  "conceito": "O tipo III de BADO nasce de uma força em **varo**: a ulna proximal dobra em galho verde com o ápice para fora e a cabeça do rádio sai para o lado. A redução, pelo Rockwood and Wilkins' Fractures in Children (cap. 12), **reverte o mecanismo**: cotovelo em **extensão**, tração longitudinal e **estresse em valgo** sobre a ulna no foco; a cabeça costuma voltar sozinha ou com uma leve pressão lateral, às vezes com um clique palpável.\n\nNa imobilização, o capítulo dá três detalhes:\n- **molde em valgo**, para impedir que a ulna volte ao varo que causou a lesão;\n- **flexão conforme a direção da luxação**: **100 a 110 graus** na luxação **lateral pura ou anterolateral**, e **70 a 80 graus** quando há componente **posterolateral**;\n- **até 10 graus** de angulação da ulna são aceitáveis na **criança menor**, desde que a cabeça esteja concêntrica e estável.\n\nO antebraço costuma ficar em **supinação**, que tensiona o ligamento anular e a membrana interóssea; há autores que preferem neutro para não perder rotação. Como no AP do gesso é difícil ver a radiocapitelar na deformidade plástica, o teste de estabilidade com radioscopia antes do gesso é obrigatório. No tipo III, a interposição de partes moles é mais frequente, e a cirurgia chega a até 12% dos casos.\n\n**Por que esta questão foi criada.** As provas cobraram o mecanismo do tipo III (SBOT-SP) e a imobilização do tipo II (TARO 2024); a imobilização do tipo III completa o quadro.",
+  "correta": "**A: gesso axilopalmar com molde em valgo e cotovelo a 100 a 110 graus de flexão; até 10 graus de angulação da ulna são aceitos na criança menor.** São as orientações do Rockwood and Wilkins' Fractures in Children (cap. 12) para a luxação lateral pura.",
+  "incorretas": {
+   "B": "**Extensão é a imobilização do tipo II**, cuja luxação é posterior.",
+   "C": "**O molde em varo recria a força que causou a lesão**; o molde é em valgo.",
+   "D": "**Tala curta não controla o cotovelo nem a rotação**; o tipo III pede imobilização axilopalmar."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Nonoperative Treatment of Type III Monteggia Fracture-Dislocations (Radiographic Evaluation and Immobilization)",
+   "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
