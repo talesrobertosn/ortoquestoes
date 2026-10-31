@@ -16,10 +16,10 @@ import { chromium } from 'playwright'
 const raiz = process.cwd()
 const termos = await readFile(join(raiz, 'src/conta/termos.ts'), 'utf8')
 const VERSAO = termos.match(/VERSAO_CONDICOES_ASSINATURA = '([^']+)'/)[1]
-assert.equal(VERSAO, '2026-10-16', 'A versão vigente das condições mudou: confira as funções antes')
+assert.equal(VERSAO, '2026-11-07', 'A versão vigente das condições mudou: confira as funções antes')
 for (const f of ['criar-pix', 'criar-checkout']) {
   const fonte = await readFile(join(raiz, `supabase/functions/${f}/index.ts`), 'utf8')
-  assert.ok(fonte.includes(`'${VERSAO}'`) && fonte.includes("'2026-10-01'"), `${f} precisa aceitar ${VERSAO} e 2026-10-01`)
+  assert.ok(fonte.includes(`'${VERSAO}'`) && fonte.includes("'2026-10-16'") && fonte.includes("'2026-10-01'"), `${f} precisa aceitar ${VERSAO}, 2026-10-16 e 2026-10-01`)
 }
 
 const pasta = await mkdtemp(join(tmpdir(), 'oq-compra-'))
@@ -44,7 +44,7 @@ const PIX = {
   qr_code_base64: 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==',
 }
 
-async function abrir(navegador, { logado = true, largura = 1400, altura = 860, pix = PIX, statusPix = 'pending', movimento = 'no-preference', rota = '#/assinatura' } = {}) {
+async function abrir(navegador, { logado = true, largura = 1400, altura = 860, pix = PIX, statusPix = 'pending', movimento = 'no-preference', rota = '#/assinatura', precoAntigo = false } = {}) {
   const agora = Math.floor(Date.now() / 1000)
   const user = { id: uid, aud: 'authenticated', role: 'authenticated', email: 'ana@exemplo.com', app_metadata: {}, user_metadata: { nome: 'Ana', termos_versao: VERSAO, provas_interesse: ['teot'], situacao: 'residente', ano_residencia: 'r3' } }
   const sessao = { access_token: `${b64({ alg: 'HS256' })}.${b64({ sub: uid, exp: agora + 36000 })}.x`, token_type: 'bearer', expires_in: 36000, expires_at: agora + 36000, refresh_token: 'r', user }
@@ -64,6 +64,7 @@ async function abrir(navegador, { logado = true, largura = 1400, altura = 860, p
       if (nome === 'criar-checkout') return r.fulfill({ json: { url: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_id=simulado' } })
       return r.fulfill({ json: {} })
     }
+    if (u.includes('meu_preco_antigo')) return r.fulfill({ json: precoAntigo })
     if (u.includes('obter_estado_conta')) return r.fulfill({ json: [{ respostas_total: 312, sequencia: 4, plano: null, status_assinatura: null, fim_periodo: null, ultima_cobranca_em: null, cancelar_ao_fim: false }] })
     if (u.includes('/auth/v1/user')) return r.fulfill({ json: user })
     return r.fulfill({ json: [] })
@@ -84,7 +85,7 @@ try {
   {
     const { contexto, pagina, erros } = await abrir(navegador, { logado: false })
     const topo = pagina.locator('.vd-heroi .vd-planos')
-    for (const [nome, preco] of [['Mensal', '39,90'], ['Semestral', '29,98'], ['Anual', '19,99']]) {
+    for (const [nome, preco] of [['Mensal', '39,90'], ['Semestral', '34,90'], ['Anual', '29,90']]) {
       const cartao = topo.locator('.vd-plano', { has: pagina.getByRole('heading', { name: nome, exact: true }) })
       assert.ok((await cartao.innerText()).includes(preco), `${nome} sem o preço por mês ${preco}`)
     }
@@ -113,7 +114,7 @@ try {
     const janela = pagina.locator('.ck')
     await janela.waitFor()
     assert.ok(await janela.getByRole('radio', { name: /Pix/ }).isChecked(), 'Pix não vem marcado primeiro')
-    const gerar = janela.getByRole('button', { name: /Gerar Pix de R\$\s?239,90/ })
+    const gerar = janela.getByRole('button', { name: /Gerar Pix de R\$\s?358,80/ })
     await janela.getByLabel('CPF de quem vai pagar').fill('529.982.247-25')
     assert.ok(await gerar.isDisabled(), 'Pix gerado sem o aceite')
     await janela.getByRole('checkbox').check()
@@ -136,7 +137,7 @@ try {
     const janela = pagina.locator('.ck')
     await janela.getByLabel('CPF de quem vai pagar').fill('52998224725')
     await janela.getByRole('checkbox').check()
-    await janela.getByRole('button', { name: /Gerar Pix de R\$\s?179,90/ }).click()
+    await janela.getByRole('button', { name: /Gerar Pix de R\$\s?209,40/ }).click()
     await pagina.getByText('Pagamento confirmado. Seu período de acesso está ativo.').waitFor()
     await contexto.close()
   }
@@ -179,7 +180,19 @@ try {
     await contexto.close()
   }
 
-  // 7. Celular sem rolagem lateral; movimento reduzido mostra tudo sem esconder nada.
+  // 7. Quem já assinava antes do reajuste vê o preço antigo, com o selo, e o Pix sai pelo valor dele.
+  {
+    const { contexto, pagina } = await abrir(navegador, { precoAntigo: true })
+    const anual = pagina.locator('.vd-heroi .vd-plano--anual')
+    await anual.locator('.vd-plano__abertura', { hasText: 'Seu preço de sempre' }).waitFor({ timeout: 8000 })
+    assert.ok((await anual.innerText()).includes('19,99'), 'Preço antigo do anual ausente')
+    assert.ok((await pagina.locator('.vd-heroi .vd-plano--semestral').innerText()).includes('29,98'), 'Preço antigo do semestral ausente')
+    await anual.getByRole('button', { name: 'Assinar o anual' }).click()
+    await pagina.locator('.ck').getByRole('button', { name: /Gerar Pix de R\$\s?239,90/ }).waitFor()
+    await contexto.close()
+  }
+
+  // 8. Celular sem rolagem lateral; movimento reduzido mostra tudo sem esconder nada.
   for (const [largura, altura] of [[390, 844], [844, 390]]) {
     const { contexto, pagina } = await abrir(navegador, { largura, altura, movimento: 'reduce', logado: largura === 390 })
     await pagina.waitForTimeout(500)
@@ -188,7 +201,7 @@ try {
     assert.equal(await pagina.locator('.vd-anima').count(), 0, 'Animação ligada com movimento reduzido')
     await contexto.close()
   }
-  console.log('Compra pela página de planos: ok (visitante, Pix com QR, Pix confirmado, Pix sem QR, cartão, volta com plano, celular)')
+  console.log('Compra pela página de planos: ok (visitante, Pix com QR, Pix confirmado, Pix sem QR, cartão, volta com plano, preço antigo, celular)')
 } finally {
   await navegador.close()
   servidor.close()

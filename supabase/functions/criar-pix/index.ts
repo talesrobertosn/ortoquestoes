@@ -1,10 +1,11 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { PLANOS_PIX, cpfValido, consultarPixDoUsuario, validarPagamentoPix, type PedidoPix } from '../_shared/pix.ts'
 import { consultarPagamento } from '../_shared/cobranca-mercado-pago.ts'
+import { centavosPara } from '../_shared/precos.ts'
 
 // A primeira é a vigente; a anterior continua aceita para quem abriu os planos antes da
 // atualização (o aceite registra a versão que a pessoa de fato viu).
-const VERSOES_CONDICOES_PIX = ['2026-10-16', '2026-10-01']
+const VERSOES_CONDICOES_PIX = ['2026-11-07', '2026-10-16', '2026-10-01']
 
 Deno.serve(async req => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
@@ -48,9 +49,11 @@ Deno.serve(async req => {
     let [pedido] = await abertos.json() as PedidoPix[]
     if (pedido && pedido.plano !== body.plano) return json({ erro: 'Já existe um Pix pendente para outro plano. Aguarde o vencimento ou conclua aquele pagamento.' }, 409, req)
     if (!pedido) {
-      const aceite = await banco('aceites_assinatura', { method: 'POST', body: JSON.stringify({ id_usuario: usuario.id, plano: body.plano, versao: body.aceite_termos_versao, valor_centavos: plano.centavos, periodicidade_meses: plano.meses, meio_pagamento: 'pix' }) })
+      // Quem já pagou antes do reajuste continua no preço antigo (precos.ts).
+      const centavos = await centavosPara(usuario.id, body.plano!)
+      const aceite = await banco('aceites_assinatura', { method: 'POST', body: JSON.stringify({ id_usuario: usuario.id, plano: body.plano, versao: body.aceite_termos_versao, valor_centavos: centavos, periodicidade_meses: plano.meses, meio_pagamento: 'pix' }) })
       if (!aceite.ok) throw new Error('aceite_pix_falhou')
-      const inserir = await banco('pedidos_pix', { method: 'POST', body: JSON.stringify({ id_usuario: usuario.id, plano: body.plano, valor_centavos: plano.centavos, meses: plano.meses }) })
+      const inserir = await banco('pedidos_pix', { method: 'POST', body: JSON.stringify({ id_usuario: usuario.id, plano: body.plano, valor_centavos: centavos, meses: plano.meses }) })
       if (!inserir.ok) return json({ erro: 'Já existe um pedido em andamento. Tente novamente para recuperar o Pix.' }, 409, req)
       ;[pedido] = await inserir.json() as PedidoPix[]
     }

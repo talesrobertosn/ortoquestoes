@@ -15,18 +15,22 @@ const TAMANHO: Record<string, string> = { mensal: '1 mês', semestral: '6 meses'
  * a lado, para comparar sem rolar de lado. No computador, as linhas dos três
  * cartões se alinham (subgrid): nome, preço, total, economia e botão na mesma altura.
  */
-export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoEscolher }: {
+export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoEscolher, planos = PLANOS_PIPOCA, precoAntigo = false }: {
   local: 'topo' | 'final'
   conta: boolean
   pagamentos: boolean
   semCompra: boolean
   rotulo: (p: Plano) => string
   aoEscolher: (p: Plano) => void
+  /** Os planos com o preço desta pessoa (planosDaPessoa): o antigo para quem já assinava. */
+  planos?: readonly Plano[]
+  precoAntigo?: boolean
 }) {
-  const degrau = degrauAnual()
+  const [, semestral, anual] = planos
+  const degrau = degrauAnual(semestral, anual)
   return (
     <div className={`vd-planos vd-planos--${local}`} role="list" aria-label="Planos de assinatura">
-      {PLANOS_PIPOCA.map((p) => {
+      {planos.map((p) => {
         const selo = seloPlano(p)
         const desconto = descontoPct(p)
         const classe = 'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-destaque' : ' vd-botao-contorno')
@@ -42,7 +46,7 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
             <p className="vd-plano__chamada">{p.chamada}</p>
             <p className="vd-plano__mes" aria-label={`${real(porMes(p))} por mês`}><small>R$</small><strong>{semMoeda(porMes(p))}</strong><small>/mês</small></p>
             {/* O selo vai dentro do total: os cartões alinham as linhas por subgrid e precisam do mesmo número de filhos. */}
-            <p className="vd-plano__total">{cobranca(p)}{PRECO_DE_ABERTURA && p.id !== 'mensal' && <span className="vd-plano__abertura">Preço de abertura</span>}</p>
+            <p className="vd-plano__total">{cobranca(p)}{p.id !== 'mensal' && (precoAntigo ? <span className="vd-plano__abertura">Seu preço de sempre</span> : PRECO_DE_ABERTURA && <span className="vd-plano__abertura">Preço de abertura</span>)}</p>
             <p className="vd-plano__ganho">
               {desconto > 0
                 ? <><span className="vd-plano__desconto">-{desconto}%</span> economia de {real(economia(p))}</>

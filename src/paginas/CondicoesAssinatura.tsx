@@ -1,6 +1,6 @@
 import { useRef, type ReactNode } from 'react'
 import { ROTULO_SIMULADOS, SITE, fraseGratis } from '../config'
-import { dataDaVersao, MUDANCAS_TERMOS, VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
+import { dataDaVersao, MUDANCAS_CONDICOES, VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
 import { IndicePagina, VoltarAoTopo } from '../componentes/IndicePagina'
 
@@ -44,7 +44,7 @@ export function CondicoesAssinatura() {
         completo</strong>: o que vale são as cláusulas numeradas abaixo.
       </p>
       <ul>
-        <li><strong>Planos:</strong> mensal R$ 39,90 por mês, semestral R$ 179,90 a cada 6 meses e anual R$ 239,90 por ano, cobrados de uma vez no início de cada período (não é parcelamento).</li>
+        <li><strong>Planos:</strong> mensal R$ 39,90 por mês, semestral R$ 209,40 a cada 6 meses e anual R$ 358,80 por ano, cobrados de uma vez no início de cada período (não é parcelamento). Quem já assinava antes de 7 de novembro de 2026 mantém o valor de antes (semestral R$ 179,90 e anual R$ 239,90).</li>
         <li><strong>Cartão renova sozinho; Pix não.</strong> No cartão, você desliga a renovação com um botão. No Pix, o acesso termina no fim do período, e nos 7 dias finais dá para renovar sem perder dias.</li>
         <li><strong>Garantia de 7 dias:</strong> até 7 dias depois de cada cobrança aprovada, inclusive renovações, você pede o reembolso integral por um botão, sem justificar.</li>
         <li><strong>Depois dos 7 dias:</strong> cancelar impede a próxima cobrança e mantém o acesso até o fim do período pago, sem devolução proporcional, salvo nos casos destas Condições e da lei.</li>
@@ -56,7 +56,7 @@ export function CondicoesAssinatura() {
 
     <details className="juridico-mudancas">
       <summary>O que mudou nesta versão</summary>
-      <ul>{MUDANCAS_TERMOS.map((m) => <li key={m}>{m}</li>)}</ul>
+      <ul>{MUDANCAS_CONDICOES.map((m) => <li key={m}>{m}</li>)}</ul>
     </details>
 
     <IndicePagina alvo={pagina} titulo="Sumário das cláusulas" />
@@ -73,8 +73,8 @@ export function CondicoesAssinatura() {
         <thead><tr><th scope="col">Plano</th><th scope="col">Valor por período</th><th scope="col">Período</th><th scope="col">Cartão de crédito</th><th scope="col">Pix</th></tr></thead>
         <tbody>
           <tr><td>Mensal</td><td>R$ 39,90</td><td>1 mês</td><td rowSpan={3}>Renovação automática na mesma periodicidade, até o cancelamento</td><td rowSpan={3}>Pagamento único do período, sem renovação automática</td></tr>
-          <tr><td>Semestral</td><td>R$ 179,90</td><td>6 meses</td></tr>
-          <tr><td>Anual</td><td>R$ 239,90</td><td>12 meses</td></tr>
+          <tr><td>Semestral</td><td>R$ 209,40</td><td>6 meses</td></tr>
+          <tr><td>Anual</td><td>R$ 358,80</td><td>12 meses</td></tr>
         </tbody>
       </table>
     </div>
@@ -101,6 +101,7 @@ export function CondicoesAssinatura() {
     <h2>6. Reajuste de preço</h2>
     <I n="6.1">O preço pode ser reajustado para novas contratações e renovações futuras. Para quem já assina no cartão, o novo valor será informado com antecedência mínima de 30 dias, pelo e-mail cadastrado e no site, e só valerá para renovações que ocorrerem depois desse prazo. Quem não concordar pode desligar a renovação antes da nova cobrança, sem qualquer custo.</I>
     <I n="6.2">O reajuste nunca altera o valor de um período já pago. No Pix, vale o preço exibido no momento da compra.</I>
+    <I n="6.3"><strong>Reajuste de 7 de novembro de 2026.</strong> Os valores da Cláusula 2 valem para novas contratações a partir dessa data. Quem tem pagamento aprovado antes dela, no cartão ou no Pix, mantém o valor de antes (semestral R$ 179,90 e anual R$ 239,90), inclusive nas renovações e em uma nova contratação depois de cancelar. Quem recebeu o reembolso de todos os pagamentos é tratado como nova contratação.</I>
 
     <h2>7. Arrependimento e garantia de 7 dias</h2>
     <I n="7.1"><strong>Direito de arrependimento.</strong> Como a contratação é feita pela internet, o assinante pode desistir em até 7 dias da contratação, nos termos do artigo 49 do Código de Defesa do Consumidor, com devolução integral do valor pago.</I>

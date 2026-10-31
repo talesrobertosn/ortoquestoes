@@ -18,7 +18,7 @@
 export const VERSAO_TERMOS = '2026-10-16'
 
 /** Versão das condições específicas exibidas antes de abrir o checkout. */
-export const VERSAO_CONDICOES_ASSINATURA = '2026-10-16'
+export const VERSAO_CONDICOES_ASSINATURA = '2026-11-07'
 
 /**
  * O que mudou na versão atual, em linguagem simples. Aparece no aviso de
@@ -30,6 +30,15 @@ export const MUDANCAS_TERMOS: readonly string[] = [
   'Ficou mais claro o que acontece no arrependimento de 7 dias, na garantia, no cancelamento, em cobranças recusadas e em contestações de pagamento.',
   'A parte de privacidade agora explica cada finalidade e base legal, inclusive o uso das páginas visitadas para entender o interesse nos planos e personalizar mensagens, e como deixar de receber cada tipo de e-mail.',
   'Regras de uso mais detalhadas: conta pessoal, proibição de cópia e extração do acervo, ranking e apelidos, funcionalidades em teste (como os Flashcards) e solução amigável de problemas pelo suporte.',
+]
+
+/**
+ * O que mudou nas Condições da Assinatura na versão atual (só nelas: os Termos de Uso
+ * continuam na versão de 16/10/2026). Aparece no topo das Condições.
+ */
+export const MUDANCAS_CONDICOES: readonly string[] = [
+  'Novos valores para quem ainda não assina: semestral R$ 209,40 (R$ 34,90 por mês) e anual R$ 358,80 (R$ 29,90 por mês). O mensal continua R$ 39,90.',
+  'Quem já tinha um pagamento aprovado antes desta versão mantém o valor de antes (semestral R$ 179,90 e anual R$ 239,90), no cartão e no Pix, inclusive nas renovações. Nada muda para quem já assina.',
 ]
 
 /** Dados a incluir no cadastro da conta, junto ao restante do perfil. */

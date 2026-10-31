@@ -47,16 +47,21 @@ async function buscarUltimaFaturaAprovada(token, preapprovalId) {
   return faturas[0] ?? null;
 }
 
-// supabase/functions/_shared/pix.ts
-var PLANOS_PIX = {
+// supabase/functions/_shared/precos.ts
+var PRECOS = {
   mensal: { meses: 1, centavos: 3990 },
-  semestral: { meses: 6, centavos: 17990 },
-  anual: { meses: 12, centavos: 23990 }
+  semestral: { meses: 6, centavos: 20940 },
+  anual: { meses: 12, centavos: 35880 }
 };
+var PRECOS_ANTIGOS = { mensal: 3990, semestral: 17990, anual: 23990 };
+var valoresAceitos = (plano) => [PRECOS[plano].centavos, PRECOS_ANTIGOS[plano]];
+
+// supabase/functions/_shared/pix.ts
+var PLANOS_PIX = PRECOS;
 function validarPagamentoPix(pedido, pagamento, ambiente) {
   if (pagamento.external_reference !== `pix:${pedido.id}` || pagamento.payment_method_id !== "pix" || pagamento.currency_id !== "BRL" || Math.round(Number(pagamento.transaction_amount) * 100) !== pedido.valor_centavos || pagamento.live_mode !== (ambiente === "producao") || pedido.pagamento_id && String(pagamento.id) !== pedido.pagamento_id) throw new Error("pagamento_pix_divergente");
   const plano = PLANOS_PIX[pedido.plano];
-  if (!plano || plano.centavos !== pedido.valor_centavos || plano.meses !== pedido.meses) throw new Error("pedido_pix_invalido");
+  if (!plano || !valoresAceitos(pedido.plano).includes(pedido.valor_centavos) || plano.meses !== pedido.meses) throw new Error("pedido_pix_invalido");
 }
 async function sincronizarPix(pagamento) {
   const referencia = String(pagamento.external_reference ?? "");
