@@ -33,21 +33,34 @@ function sincronizar(usuario, alteracoes) {
   return [200, saida]
 }
 // Ranking de exemplo: 62 pessoas, a conta de exemplo em #9 (geral) ou #4 (semana).
+// Cenários para os testes do Salão dos Cem (só aqui, nunca em produção): RK_CENARIO=lider | top3 | top10 | top50 |
+// top100 | fora100 | empate | sem-historico | vazio | erro | poucos. RK_LIDER troca o nome do líder (cerimônia).
 const NOMES_RANKING = ['Marina A.', 'Rafael T.', 'Camila S.', 'Pedro H.', 'Luísa M.', 'Gustavo R.', 'Beatriz F.', 'Thiago L.', 'Tales S.', 'Juliana C.', 'Henrique B.', 'Larissa P.', 'Vinícius O.', 'Natália G.', 'Eduardo V.', 'Fernanda K.', 'Rodrigo N.', 'Amanda D.', 'Felipe Q.', 'Isabela W.']
+const RK = process.env.RK_CENARIO || ''
+const VITRINES = [['questoes-1000', 'dias-30', 'questoes-50'], ['questoes-500'], null, ['dias-15', 'questoes-250'], null, null, ['questoes-2000', 'dias-7', 'dias-3']]
+const SERVICOS = ['Hospital das Clínicas', null, null, 'Santa Casa', null, null, null, 'Hospital do Trabalhador', null]
 function rankingExemplo(periodo, comNomes) {
   const semana = periodo === 'semana'
-  const voce = semana ? 4 : 9
-  return Array.from({ length: 62 }, (_, i) => {
+  if (RK === 'vazio') return []
+  const voce = { lider: 1, top3: 3, top10: 9, top50: 37, top100: 74, fora100: 137, poucos: 0 }[RK] ?? (semana ? 4 : 9)
+  const quantos = RK === 'top100' || RK === 'fora100' ? 100 : 62
+  const linhas = Array.from({ length: quantos }, (_, i) => {
     const posicao = i + 1
-    const nome = posicao === voce ? 'Tales S.' : NOMES_RANKING[(i + (semana ? 7 : 0)) % NOMES_RANKING.length].replace('Tales S.', 'Sérgio A.')
-    const total = Math.round((semana ? 612 : 4873) / (1 + i * 0.11) - i * (semana ? 1.3 : 7))
+    let nome = posicao === voce ? 'Tales S.' : NOMES_RANKING[(i + (semana ? 7 : 0)) % NOMES_RANKING.length].replace('Tales S.', 'Sérgio A.')
+    if (posicao === 1 && process.env.RK_LIDER) nome = process.env.RK_LIDER
+    let total = Math.round((semana ? 612 : 4873) / (1 + i * 0.11) - i * (semana ? 1.3 : 7))
+    if (RK === 'empate' && (posicao === 8 || posicao === 9)) total = 2611
     const apelido = comNomes ? nome : nome.split(/\s+/).map((p) => p[0]).join('. ') + '.'
+    const historico = RK !== 'sem-historico'
     return {
-      posicao, apelido, total, total_geral: semana ? total * 7 : total, eh_voce: comNomes && posicao === voce,
-      variacao: [2, 0, -1, 4, 0, 1, 0, -2, 3][i % 9], variacao_semana: [6, 1, 0, 2, 0, 5, 1, 0, 3][i % 9],
-      novo: posicao === 17, referencia_em: '2026-10-17', emblemas: null, sequencia: [12, 3, 0, 41, 7, 0, 21, 2, 9][i % 9], servico: null,
+      posicao, apelido, total: Math.max(5, total), total_geral: semana ? total * 7 : total, eh_voce: comNomes && posicao === voce,
+      variacao: historico ? [2, 0, -1, 4, 0, 1, 0, -2, 3][i % 9] : null, variacao_semana: historico ? [6, 1, 0, 2, 0, 5, 1, 0, 3][i % 9] : null,
+      novo: historico && posicao === 17, referencia_em: historico ? '2026-10-17' : null,
+      emblemas: VITRINES[i % VITRINES.length], sequencia: [12, 3, 0, 41, 7, 0, 21, 2, 9][i % 9], servico: SERVICOS[i % SERVICOS.length],
     }
   })
+  if (RK === 'fora100' && comNomes) linhas.push({ posicao: 137, apelido: 'Tales S.', total: 412, total_geral: 412, eh_voce: true, variacao: 2, variacao_semana: 4, novo: false, referencia_em: '2026-10-17', emblemas: null, sequencia: 4, servico: null })
+  return linhas
 }
 // ---------------- Simulado Nacional falso (--sn) ----------------
 const argsSn = process.argv.slice(2)
@@ -149,7 +162,7 @@ const rpcs = {
   obter_estado_conta: () => [200, [process.env.ESTADO_CONTA ? JSON.parse(process.env.ESTADO_CONTA) : { status_assinatura: SEM_ASSINATURA ? null : 'ativa', cancelar_ao_fim: false, fim_periodo: null }]],
   sinal_aparelho: () => [200, [{ ativo: true, outro_aparelho: null }]],
   autorizar_resposta: () => [200, [{ permitido: true, restantes: SEM_ASSINATURA ? 20 : 999, limite: SEM_ASSINATURA ? 20 : null, premium: !SEM_ASSINATURA }]],
-  obter_ranking_com_movimento: (_u, a) => [200, rankingExemplo(a.periodo, true)],
+  obter_ranking_com_movimento: (_u, a) => RK === 'erro' ? [500, { message: 'falha' }] : [200, rankingExemplo(a.periodo, true)],
   obter_ranking_publico: (_u, a) => [200, rankingExemplo(a.periodo, true)],
   obter_ranking_visitante: (_u, a) => [200, rankingExemplo(a.periodo, false)],
   minha_posicao_ranking: (_u, a) => { const eu = rankingExemplo(a.periodo, true).find((l) => l.eh_voce); return [200, eu ? [{ posicao: eu.posicao, total: eu.total, total_geral: eu.total_geral }] : []] },

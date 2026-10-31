@@ -1,4 +1,4 @@
-import { memo, useEffect, useRef, useState } from 'react'
+import { Fragment, memo, useEffect, useRef, useState } from 'react'
 import { href } from '../../util/rotas'
 import { recurso } from '../../config'
 import { Icone } from '../Icone'
@@ -6,6 +6,9 @@ import { EmblemasDoNome, Fogueira } from '../Inventario'
 import { SeloServico } from '../ServicoRanking'
 import { MovimentoSelo } from './Movimento'
 import { FOGO_NA_SEMANA, FOGO_NO_DIA, TOP_LISTA, TOP_MAXIMO, iniciais, type LinhaRanking, type Periodo } from './regras'
+
+/** Marcos entre as faixas da lista: onde começa cada degrau do salão. */
+const MARCOS: Record<number, string> = { 4: 'Top 10', 11: 'Até o Top 50', 51: 'Até o Top 100' }
 
 const rolar = (el: Element | null) => {
   if (!el) return
@@ -31,8 +34,7 @@ const Linha = memo(function Linha({ linha, lider, semana }: { linha: LinhaRankin
       </span>
     </span>
     <span className="cem-linha__placar">
-      <b className="numerico">{linha.total.toLocaleString('pt-BR')}</b>
-      <small>{semana ? 'na semana' : 'questões'}</small>
+      <b className="numerico">{linha.total.toLocaleString('pt-BR')}<span className="so-leitor"> {semana ? 'questões na semana' : 'questões'}</span></b>
       <span className="cem-linha__barra" aria-hidden="true"><span style={{ transform: `scaleX(${proporcao})` }} /></span>
     </span>
   </li>
@@ -100,7 +102,10 @@ export function Classificacao({ linhas, periodo, comMovimento, pedidoEncontrar }
     </details>}
 
     <ol className="cem-linhas" aria-label={`Classificação, ${semana ? 'últimos 7 dias' : 'geral'}`}>
-      {visiveis.map((linha) => <Linha key={linha.posicao} linha={linha} lider={lider} semana={semana} />)}
+      {visiveis.map((linha) => <Fragment key={linha.posicao}>
+        {MARCOS[linha.posicao] && <li className="cem-marco" aria-hidden="true"><span>{MARCOS[linha.posicao]}</span></li>}
+        <Linha linha={linha} lider={lider} semana={semana} />
+      </Fragment>)}
     </ol>
 
     {ate100Linhas.length > 0 && <button type="button" className="botao cem-mais" aria-expanded={ate100} onClick={() => definirAte100(!ate100)}>
