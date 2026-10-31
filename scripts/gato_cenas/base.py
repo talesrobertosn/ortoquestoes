@@ -18,6 +18,17 @@ X_PE = 46.5
 X_DEITA = 47.0
 G.CHAO = CHAO
 
+# O padrão de Tela.sombra (y) ficou preso no chão de 45 quando G foi carregado; aqui ele segue o chão novo, para os
+# corpos de G (enrolado, em pé) terem a sombra no chão das cenas e não escondida embaixo do corpo.
+_sombra_original = G.Tela.sombra
+
+
+def _sombra_no_chao(self, cx, larg, y=None, **kw):
+    return _sombra_original(self, cx, larg, y=G.CHAO + 0.2 if y is None or y == 45.2 else y, **kw)
+
+
+G.Tela.sombra = _sombra_no_chao
+
 
 def tela() -> "G.Tela":
     return G.Tela(QW, QH)

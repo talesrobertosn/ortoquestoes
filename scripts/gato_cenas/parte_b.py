@@ -355,13 +355,13 @@ def _pose_perg_toca(k):
         dict(olhar=olhar, cab_ang=4, orelhas=(-10, -10), inclina=1),
     ][k]
     rolo = [0, 0, 0, 1.0, 1.0, 2.0, 3.5, 5.5][k]
-    perg = dict(x_esq=ROLO_X, x_rolo=ROLO_X + rolo, r=3.4 - 0.9 * min(rolo / 21.6, 1), fita=k < 5)
+    perg = dict(x_esq=ROLO_X, x_rolo=ROLO_X + rolo, r=3.4 - 0.9 * min(rolo / 18.8, 1), fita=k < 5)
     return gato, perg
 
 
 def _pose_perg_abre(k):
-    xs = [5.5, 8.0, 11.5, 15.0, 18.0, 20.0, 21.2, 21.6][k]
-    r = 3.4 - 0.9 * min(xs / 21.6, 1)
+    xs = [5.5, 7.5, 10.5, 13.5, 16.0, 17.6, 18.4, 18.8][k]
+    r = 3.4 - 0.9 * min(xs / 18.8, 1)
     vira = [0, 0.2, 0.4, 0.5, 0.6, 0.6, 0.6, 0.6][k]
     gato = dict(olhar=(1, 1), cab_ang=4, orelhas=(-10, -10), inclina=1 + 0.5 * (k > 2), vira=vira)
     if k == 0:
@@ -372,7 +372,7 @@ def _pose_perg_abre(k):
 def _pose_perg_pula(k):
     alt = [0, 5.5, 7.0, 4.5, 0.0, 1.2, 0.0, 0.0][k]
     sobe = [0, 3.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0][k]
-    xr = ROLO_X + [21.6, 22.8, 22.4, 22.0, 22.0, 22.0, 22.0, 22.0][k]
+    xr = ROLO_X + [18.8, 20.0, 19.6, 19.2, 19.2, 19.2, 19.2, 19.2][k]
     perg = dict(x_esq=ROLO_X, x_rolo=xr, r=2.5, fita=False, sobe=sobe)
     if k == 0:
         return _pose_perg_abre(7)[0], perg
@@ -396,7 +396,7 @@ def _pose_perg_pula(k):
 def _pose_perg_senta(k):
     if k == 0:
         return _pose_perg_pula(7)
-    perg_aberto = dict(x_esq=ROLO_X, x_rolo=ROLO_X + 22.0, r=2.5, fita=False)
+    perg_aberto = dict(x_esq=ROLO_X, x_rolo=ROLO_X + 19.2, r=2.5, fita=False)
     gato = [
         None,
         dict(cab_ang=-7, olhos="feliz", respira=1.0, cauda_u=0.8, cauda_alta=0.9, cauda_w=0.8, orelhas=(-4, -4)),
@@ -408,8 +408,8 @@ def _pose_perg_senta(k):
         {},
     ][k]
     perg = [None, perg_aberto, perg_aberto, perg_aberto,
-            dict(x_esq=ROLO_X + 10, x_rolo=ROLO_X + 22.0, r=2.5, fita=False),
-            dict(x_esq=ROLO_X + 23.0, x_rolo=ROLO_X + 23.0, r=3.4, fita=False),
+            dict(x_esq=ROLO_X + 10, x_rolo=ROLO_X + 19.2, r=2.5, fita=False),
+            dict(x_esq=ROLO_X + 20.2, x_rolo=ROLO_X + 20.2, r=3.4, fita=False),
             dict(x_esq=ROLO_X + 31, x_rolo=ROLO_X + 31, r=3.4, fita=False),
             None][k]
     return gato, perg
@@ -543,7 +543,7 @@ def _borb_pata(k):
 def _borb_salta(k):
     if k == 0:
         return _borb_pata(7)
-    traj = [None, (74, 18), (78, 12), (82, 8), (86, 5), (91, 3), (97, 2), None]
+    traj = [None, (74, 18), (78, 13), (82, 9), (86, 7), (91, 6), (100, 5), None]
     alt = [0, 4.0, 7.0, 5.5, 0.0, 0.8, 0.0, 0.0][k]
     gato = [
         None,
@@ -597,7 +597,6 @@ def cochilo_olho(t, k):
 def cochilo_ajeita(t, k):
     if k in (0, 7):
         return deitado(t)
-    c0 = B.repouso_deitado.__defaults__  # noqa: F841 (só para lembrar: cauda padrão vem do repouso)
     cauda_base = ((-14.5, -5.0), (-10.0, -3.0), (-2.0, -2.6), (4.5, -2.8), (8.5, -4.6))
     cauda_solta = ((-14.5, -5.0), (-10.0, -3.0), (-2.0, -3.0), (5.0, -4.6), (7.0, -9.5))
     u = [0, 0.5, 1.0, 1.0, 0.6, 0.2, 0.0, 0][k]
@@ -648,11 +647,14 @@ def festa_pula(t, k):
     if k == 0:
         festa_percebe(t, 7)
         return
-    alt = [0, 3.5, 7.5, 9.0, 6.0, 0.0, 1.2, 0.0][k]
+    alt = [0, 0.0, 6.5, 9.0, 6.5, 0.0, 1.2, 0.0][k]
     p = dict(dy=-alt, olhos="feliz", boca="aberta", orelhas=(-6, -6), cab_ang=3 * math.sin(k * 1.4),
              cauda_u=1.0, cauda_alta=1.4 if alt > 3 else 1.0, cauda_w=math.sin(k * 1.3))
-    if 1 <= k <= 4:
-        p.update(pata_perto=(3.0, -8.0), pata_longe=(3.5, -9.0))
+    if k == 1:   # antecipação: encolhe antes do pulo
+        p.update(inclina=6, cab=(3.0, -22.8), respira=0.0, boca="w", orelhas=(8, 8), cauda_alta=0.6,
+                 pata_perto=(1.0, 0.0))
+    if 2 <= k <= 4:
+        p.update(pata_perto=(3.0, -8.0), pata_longe=(3.5, -9.0), inclina=-2)
     if k == 5:
         p.update(inclina=4, cab=(2.8, -23.0), respira=0.0, boca="feliz", orelhas=(6, 6))
     if k >= 6:
@@ -761,8 +763,12 @@ def segredo_cauda(t, k):
         em_pe(t, 47.0 if not esp else 47.0, p, espelho=esp)
         # riscos de giro (arco claro em cima e embaixo)
         lado = -1 if esp else 1
-        _risco(t, [(47 + lado * i, 23 - abs(i) // 4) for i in range(-12, 13, 2)])
-        _risco(t, [(47 - lado * i, 53) for i in range(-14, 15, 3)], "#c8a27a")
+        # arco de movimento do lado de onde a cabeça veio (meia volta, 1 px) e poeirinha nos pés
+        for i in range(14):
+            a = math.pi * (0.15 + 0.7 * i / 13)
+            t.px(47 - lado * 21 * math.cos(a) * 0.0 + lado * 21 * math.cos(a), 36 - 15 * math.sin(a),
+                 "#f2b56a" if i % 3 else "#ffe0a8")
+        poeira(t, 47 - lado * 15, 50, k % 2)
         return
     # 6: tonto (cabeça balançando, olhos fechados, estrelinhas rodando)
     sentado(t, olhos="fechado", boca="w", cab_ang=8, cab=(3.4, -24.0), inclina=-3, orelhas=(14, -6),
