@@ -138,6 +138,10 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
   const respondidasMao = useMemo(() => Object.fromEntries(Object.entries(respondidas).filter(([id]) => idsDoPlano.has(id))), [respondidas, idsDoPlano])
   const constancia = useMemo(() => calcularConstancia(respondidasMao, plano, calculo), [respondidasMao, plano, calculo])
   const subtemasHoje = useMemo(() => subtemasDasQuestoes(indice, mao.idsHoje), [indice, mao.idsHoje])
+  // O dia escolhido no calendário: os resumos ao lado acompanham o dia tocado (1/11/2026).
+  const [diaEscolhido, definirDiaEscolhido] = useState<{ data: Date; ehHoje: boolean; ids: string[] } | null>(null)
+  const subtemasEscolhido = useMemo(() => (diaEscolhido && !diaEscolhido.ehHoje && diaEscolhido.ids.length ? subtemasDasQuestoes(indice, diaEscolhido.ids) : subtemasHoje), [indice, diaEscolhido, subtemasHoje])
+  const rotuloEscolhido = diaEscolhido && !diaEscolhido.ehHoje && diaEscolhido.ids.length ? diaEscolhido.data.toLocaleDateString('pt-BR', { weekday: 'short', day: 'numeric', month: 'numeric' }).replace('.', '') : undefined
   const biblioteca = usarIndiceBiblioteca()
   const { leituras } = usarBiblioteca()
   const resumoHoje = resumosDosSubtemas(biblioteca, subtemasHoje)[0] ?? null
@@ -227,7 +231,7 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
     {mostrarTour && <TourCronograma aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} />}
     <OndeVoceEsta plano={plano} calculo={calculo} aoAjustar={aoEditar} acao={acaoTopo} nome={nome} recados={recados} rodape={premium && semana ? <ResumoSemana {...semana} /> : undefined} />
 
-    <CalendarioCronograma embutido nome={nome} plano={plano} calculo={calculo} indice={indice} respondidas={respondidasMao} minutos={minutos}
+    <CalendarioCronograma embutido aoSelecionar={definirDiaEscolhido} nome={nome} plano={plano} calculo={calculo} indice={indice} respondidas={respondidasMao} minutos={minutos}
       acoes={{ aoComecar: premium ? comecar : undefined, aoPuxar: premium ? (dia) => aoEstudar(idsDoDiaMao(mao, dia)) : undefined, proximo: calculo.amanha }} />
 
     <div className="cp-colunas">
@@ -236,7 +240,7 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
           aviso={folgaHoje ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar os dias?</span><button type="button" className="botao" onClick={aoEditar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoAviso} /></div>
       </div>
       <div className="cp-col cp-col--lado">
-        {!calculo.naRetaFinal && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasHoje} especialidade="mao" /></div>}
+        {!calculo.naRetaFinal && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasEscolhido} rotuloDia={rotuloEscolhido} especialidade="mao" /></div>}
         {!calculo.naRetaFinal && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
         <div className="cp-ordem-4"><ComoEstouIndo calculo={calculo} constancia={constancia} minutosQuestao={minutos} /></div>
         {!calculo.naRetaFinal && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={constancia} compacta={false} aoSemanaDificil={premium ? (ativar) => aoConfig(comSemanaDificil(config, ativar)) : undefined} /></div>}
