@@ -318,7 +318,7 @@ export function App() {
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           {lugar && <Suspense fallback={<div className="vl-espera" aria-hidden="true" />}><CenaPagina id={lugar} /></Suspense>}
-          {comCracha && <Suspense fallback={null}><CompletarPerfil /></Suspense>}
+          {comCracha && <Suspense fallback={null}>{lugar ? <div className="vl-corpo"><CompletarPerfil /></div> : <CompletarPerfil />}</Suspense>}
           <ErroDePagina caminho={rota.caminho}>
           <Suspense fallback={<EsperaPixel />}>
             {lugar ? <div className="vl-corpo">{pagina}</div> : pagina}

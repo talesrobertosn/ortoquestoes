@@ -1922,3 +1922,7 @@ section[class$="-heroi"]::before, section[class$="-heroi"]::after, .heroi-escuro
   --sombra-media: 0 0 0 1px rgba(232, 206, 150, 0.1), 0 12px 28px rgba(0, 0, 0, 0.4);
   --heroi-ceu: radial-gradient(70% 120% at 88% -10%, rgba(255, 186, 96, 0.18), transparent 60%), linear-gradient(180deg, #1c1712, #0d0a08);
 }
+.vl-corpo .tr-heroi__selo { background: rgba(14, 10, 7, 0.65); color: #f0c46a; box-shadow: 0 0 0 1px rgba(240, 196, 106, 0.6); }
+/* Painéis verdes fixos das páginas (placar do Desempenho, selos) no vidro escuro com filete dourado. */
+.vl-corpo :is(.ds-placar) { background: linear-gradient(180deg, rgba(20, 16, 12, 0.92), rgba(12, 10, 8, 0.95)); box-shadow: 0 0 0 1px rgba(240, 196, 106, 0.55), inset 0 0 0 3px rgba(0, 0, 0, 0.4), 5px 5px 0 rgba(0, 0, 0, 0.25); }
+.vl-corpo :is(.ds-capitulo__selo) { background: rgba(14, 10, 7, 0.65); color: #f0c46a; }
