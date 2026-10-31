@@ -7930,15 +7930,15 @@
   },
   {
    "id": "rockwoodcriancas10-23-pelve-acetabulo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas da pelve e do acetábulo na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 23 · Pelvic and Acetabular Fractures",
-   "resumo": "TORODE e ZIEG modificada (IIIA, IIIB, IV), avulsões das apófises (anteroinferior a mais comum, isquiática a mais problemática), lesões associadas como causa de morte, assimetria de 1,1 cm que não remodela, maturidade pela trirradiada (SILBER e FLYNN), BUCHOLZ e a displasia pós-traumática, ressonância no acetábulo.",
+   "resumo": "Fratura da pelve é menos de 1% das fraturas da criança, de alta energia quando é do anel, e mata pelas lesões associadas (cabeça, tórax, abdome), não pelo sangramento da pelve; TORODE e ZIEG modificada (I avulsão, II asa, IIIA anel anterior, IIIB anterior e posterior estável com mais morbidade, IV instável com straddle, anterior e posterior e segmento até o acetábulo); straddle com fragmento puxado para cima pelo reto do abdome e cinta contraindicada; avulsões entre 11 e 17 anos (anteroinferior a mais comum, isquiática a mais problemática); maturidade pela trirradiada (SILBER e FLYNN), que funde aos 12 a 14 anos; assimetria de 1,1 cm que não remodela; complicação principal = consolidação viciosa; acetábulo com ressonância e cirurgia se instável ou incongruente; BUCHOLZ (V = esmagamento, pior) e displasia pós-traumática com lateralização e retroversão.",
    "acesso": "gratis",
-   "minutos": 8,
+   "minutos": 25,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7946,79 +7946,109 @@
      "radar": "fundamento"
     },
     {
-     "id": "a-pelve-da-crianca",
-     "titulo": "A pelve da criança",
+     "id": "a-pelve-da-crianca-e-outra",
+     "titulo": "A pelve da criança é outra",
      "radar": "fundamento"
     },
     {
-     "id": "lesoes-associadas-e-avaliacao",
-     "titulo": "Lesões associadas e avaliação",
+     "id": "mecanismo-e-lesoes-associadas",
+     "titulo": "Mecanismo e lesões associadas",
      "radar": "confirmado"
     },
     {
-     "id": "classificacao",
-     "titulo": "Classificação",
-     "radar": "confirmado"
-    },
-    {
-     "id": "avulsoes-tipo-i",
-     "titulo": "Avulsões (tipo I)",
-     "radar": "confirmado"
-    },
-    {
-     "id": "asa-sacro-coccix-e-anel-estavel-tipos-ii-e-iii",
-     "titulo": "Asa, sacro, cóccix e anel estável (tipos II e III)",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "fraturas-instaveis-tipo-iv",
-     "titulo": "Fraturas instáveis (tipo IV)",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "acetabulo",
-     "titulo": "Acetábulo",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "complicacoes",
-     "titulo": "Complicações",
+     "id": "exame-e-imagem",
+     "titulo": "Exame e imagem",
      "radar": "clinico"
     },
     {
-     "id": "fechamento",
-     "titulo": "Fechamento",
+     "id": "a-classificacao-de-torode-e-zieg",
+     "titulo": "A classificação de TORODE e ZIEG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avulsoes-e-asa-do-iliaco-tipos-i-e-ii",
+     "titulo": "Avulsões e asa do ilíaco (tipos I e II)",
+     "radar": "clinico"
+    },
+    {
+     "id": "outras-fraturas-estaveis",
+     "titulo": "Outras fraturas estáveis",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-anel-estavel-tipo-iii",
+     "titulo": "O anel estável (tipo III)",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-anel-instavel-tipo-iv",
+     "titulo": "O anel instável (tipo IV)",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-acetabulo",
+     "titulo": "O acetábulo",
+     "radar": "clinico"
+    },
+    {
+     "id": "as-complicacoes",
+     "titulo": "As complicações",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-conduta-dos-autores-passo-a-passo",
+     "titulo": "A conduta dos autores, passo a passo",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-idade-muda-tudo",
+     "titulo": "A idade muda tudo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "armadilhas-e-tres-casos",
+     "titulo": "Armadilhas e três casos",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
      "radar": "fundamento"
     }
    ],
    "questoes": [
     "pediatria-0613",
     "pediatria-0947",
+    "pediatria-0845",
     "pediatria-0567",
     "pediatria-0620",
     "pediatria-0645",
     "pediatria-0660",
-    "pediatria-0845",
-    "pediatria-0694"
+    "pediatria-0694",
+    "pediatria-0593"
    ],
    "treino": [
-    "pediatria-1179",
-    "pediatria-1173",
-    "pediatria-1177",
-    "pediatria-1168",
     "pediatria-1180",
+    "pediatria-1446",
+    "pediatria-1173",
     "pediatria-1169",
+    "pediatria-1177",
+    "pediatria-1445",
+    "pediatria-1168",
     "pediatria-1170",
+    "pediatria-1179",
     "pediatria-1174",
     "pediatria-1175",
     "pediatria-1176",
-    "pediatria-1171",
-    "pediatria-1172",
+    "pediatria-1181",
     "pediatria-1178",
-    "pediatria-1181"
+    "pediatria-1447",
+    "pediatria-1171",
+    "pediatria-1172"
    ],
    "subtemas": [
-    "Fraturas da pelve e do quadril na criança"
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança"
    ]
   },
   {

@@ -174,7 +174,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 723 | Fise proximal e tuberosidade da tíbia (Rockwood crianças cap. 27, com o COZEN do cap. 29), refação TEOT/TARO | 21 para 45 KB, 4 figuras | 42 comentários e 5 simulados novos (pediatria-1427 a 1431) |
 | 728 | Fraturas do colo do fêmur e luxação traumática do quadril na criança (Rockwood crianças cap. 24), refação TEOT/TARO | reescrito para 45 KB, 4 figuras | 31 comentários reescritos e 4 simulados novos (pediatria-1432 a 1435) |
 | 729 | Ombro, úmero proximal e diáfise do úmero na criança (Rockwood crianças cap. 19), refação TEOT/TARO | 12 para 51 KB, 2 figuras | 30 comentários e 5 simulados novos (pediatria-1436 a 1440) |
-| (este PR) | Colo do rádio, olécrano e coronoide na criança (Rockwood crianças cap. 11), refação TEOT/TARO | 12 para 46 KB, 4 figuras | 28 comentários e 4 simulados novos (pediatria-1441 a 1444) |
+| 730 | Colo do rádio, olécrano e coronoide na criança (Rockwood crianças cap. 11), refação TEOT/TARO | 12 para 46 KB, 4 figuras | 28 comentários e 4 simulados novos (pediatria-1441 a 1444) |
+| (este PR) | Pelve e acetábulo da criança (Rockwood and Wilkins' Fractures in Children, cap. 23), refação TEOT/TARO | 14 para 45 KB, 2 figuras | 22 comentários e 3 simulados novos (pediatria-1445 a 1447) |
 
 ## Próximo
 
