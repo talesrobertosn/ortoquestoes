@@ -7335,15 +7335,15 @@
   },
   {
    "id": "rockwoodcriancas10-11-colo-radio-olecrano",
-   "versao": 1,
-   "titulo": "Fraturas do colo do rádio e do olécrano na criança",
+   "versao": 2,
+   "titulo": "Fraturas do colo do rádio, do olécrano e do coronoide na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 11 · Radial Neck and Olecranon Fractures",
-   "resumo": "Colo do rádio por queda em valgo com o cotovelo estendido, aceitável até 45 graus abaixo de 10 anos e 30 acima, PATTERSON e METAIZEAU, nervo interósseo posterior, fratura articular da cabeça que subluxa, perda da pronação; olécrano em flexão, extensão (equivalentes de MONTEGGIA) e cisalhamento, apófise acima de 4 mm, coronoide de REGAN e MORREY.",
+   "resumo": "Colo do rádio por queda com o cotovelo estendido e valgo, 5% a 10% das fraturas do cotovelo, 30% a 50% com outra lesão; colo quase todo extracapsular; CHAMBERS, JUDET e O'BRIEN; fraturas na luxação (D na redução, cabeça atrás; E na luxação, cabeça à frente); aceitável 45 graus abaixo de 10 anos e 30 acima, 2 mm e rotação completa; PATTERSON, israelense, METAIZEAU; pronar para proteger o interósseo posterior; fratura articular da cabeça que subluxa (TRASH); sequela = perda da pronação, crescimento da cabeça, osteonecrose de 25% após redução aberta. Olécrano em flexão, extensão (valgo = MONTEGGIA I equivalente, varo = III) e cisalhamento; apófise acima de 4 mm ou incongruente; coronoide de REGAN e MORREY.",
    "acesso": "gratis",
-   "minutos": 7,
+   "minutos": 25,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7351,66 +7351,125 @@
      "radar": "fundamento"
     },
     {
-     "id": "radio-proximal-mecanismo-imagem-e-classificacao",
-     "titulo": "Rádio proximal: mecanismo, imagem e classificação",
+     "id": "quem-quebra-e-como",
+     "titulo": "Quem quebra e como",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-mecanismo-da-fratura-do-colo",
+     "titulo": "O mecanismo da fratura do colo",
      "radar": "confirmado"
     },
     {
-     "id": "radio-proximal-tratamento",
-     "titulo": "Rádio proximal: tratamento",
+     "id": "exame-e-imagem",
+     "titulo": "Exame e imagem",
+     "radar": "clinico"
+    },
+    {
+     "id": "as-classificacoes",
+     "titulo": "As classificações",
      "radar": "confirmado"
     },
     {
-     "id": "radio-proximal-complicacoes",
-     "titulo": "Rádio proximal: complicações",
+     "id": "por-que-a-rotacao-se-perde",
+     "titulo": "Por que a rotação se perde",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tratamento-quanto-aceitar",
+     "titulo": "Tratamento: quanto aceitar",
      "radar": "confirmado"
     },
     {
-     "id": "olecrano-e-apofise",
-     "titulo": "Olécrano e apófise",
+     "id": "tratamento-as-manobras-fechadas",
+     "titulo": "Tratamento: as manobras fechadas",
      "radar": "confirmado"
     },
     {
-     "id": "coronoide",
-     "titulo": "Coronoide",
+     "id": "tratamento-as-tecnicas-cirurgicas",
+     "titulo": "Tratamento: as técnicas cirúrgicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-complicacoes-do-radio-proximal",
+     "titulo": "As complicações do rádio proximal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-olecrano-anatomia-e-ossificacao",
+     "titulo": "O olécrano: anatomia e ossificação",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-olecrano-os-mecanismos",
+     "titulo": "O olécrano: os mecanismos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-olecrano-tratamento-e-complicacoes",
+     "titulo": "O olécrano: tratamento e complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-coronoide",
+     "titulo": "O coronoide",
      "radar": "oportunidade"
     },
     {
-     "id": "fechamento",
-     "titulo": "Fechamento",
+     "id": "a-idade-muda-tudo",
+     "titulo": "A idade muda tudo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "armadilhas-e-tres-casos",
+     "titulo": "Armadilhas e três casos",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
      "radar": "fundamento"
     }
    ],
    "questoes": [
     "pediatria-0640",
-    "pediatria-0748",
+    "pediatria-0540",
+    "pediatria-0659",
+    "pediatria-0701",
     "pediatria-0926",
     "pediatria-0815",
+    "pediatria-0748",
+    "pediatria-0934",
+    "pediatria-0708",
     "pediatria-0564",
     "pediatria-0841",
     "pediatria-0611",
-    "pediatria-0659",
     "pediatria-0954"
    ],
    "treino": [
     "pediatria-1270",
     "pediatria-1271",
+    "pediatria-1443",
     "pediatria-1274",
+    "pediatria-1441",
     "pediatria-1272",
     "pediatria-1273",
     "pediatria-1275",
     "pediatria-1276",
-    "pediatria-1277",
     "pediatria-1278",
+    "pediatria-1277",
     "pediatria-1279",
+    "pediatria-1442",
     "pediatria-1280",
+    "pediatria-1283",
+    "pediatria-1444",
     "pediatria-1281",
     "pediatria-1282",
-    "pediatria-1283",
     "pediatria-1284"
    ],
    "subtemas": [
-    "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+    "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+    "Outras fraturas na criança"
    ]
   },
   {
