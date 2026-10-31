@@ -8976,19 +8976,24 @@
   },
   {
    "id": "rockwoodcriancas10-30-tornozelo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas do tornozelo na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 30 · Ankle Fractures",
-   "resumo": "Fechamento da fise distal da tíbia (central, medial, lateral) e as fraturas de transição, TILLAUX (SH III anterolateral, tibiofibular anteroinferior) e triplanar (SH III no AP, SH II no perfil), DIAS-TACHDJIAN, regra dos 2 mm, ponte medial e varo, parada da fíbula e valgo, exame de baixo risco e entorse.",
+   "resumo": "Epidemiologia e obesidade; SALTER-HARRIS e DIAS-TACHDJIAN; fraturas de transição (TILLAUX, triplanar, pilão do adolescente, incisura, sindesmose); fechamento central, medial e lateral; Ottawa e exame de baixo risco; pinça, tomografia e ressonância; variantes normais; SH I e II (BARMADA), SH III e IV, SH V; fíbula e entorse; parada fisária (ponte medial = varo; fíbula = valgo; 7%, 25% a 40%, 50%); consolidação viciosa; artrose; retináculo extensor; sinostose; síndrome dolorosa complexa regional; expostas e cortador de grama.",
    "acesso": "gratis",
-   "minutos": 10,
+   "minutos": 28,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
      "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "epidemiologia",
+     "titulo": "Epidemiologia",
      "radar": "fundamento"
     },
     {
@@ -9002,6 +9007,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "as-fraturas-de-transicao",
+     "titulo": "As fraturas de transição",
+     "radar": "fundamento"
+    },
+    {
      "id": "tillaux-juvenil",
      "titulo": "TILLAUX juvenil",
      "radar": "confirmado"
@@ -9012,24 +9022,74 @@
      "radar": "confirmado"
     },
     {
+     "id": "pilao-do-adolescente-incisura-e-sindesmose",
+     "titulo": "Pilão do adolescente, incisura e sindesmose",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fratura-de-estresse-e-o-exame-clinico",
+     "titulo": "Fratura de estresse e o exame clínico",
+     "radar": "fundamento"
+    },
+    {
+     "id": "ottawa-exame-de-baixo-risco-e-radiografias",
+     "titulo": "Ottawa, exame de baixo risco e radiografias",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "tomografia-ressonancia-e-as-armadilhas-da-imagem",
+     "titulo": "Tomografia, ressonância e as armadilhas da imagem",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "principios-do-tratamento",
+     "titulo": "Princípios do tratamento",
+     "radar": "fundamento"
+    },
+    {
      "id": "fraturas-fisarias-da-tibia-distal",
      "titulo": "Fraturas fisárias da tíbia distal",
      "radar": "oportunidade"
     },
     {
-     "id": "fibula-entorse-e-exame-de-baixo-risco",
-     "titulo": "Fíbula, entorse e exame de baixo risco",
+     "id": "fibula-e-entorse",
+     "titulo": "Fíbula e entorse",
      "radar": "oportunidade"
     },
     {
-     "id": "complicacoes",
-     "titulo": "Complicações",
+     "id": "parada-fisaria",
+     "titulo": "Parada fisária",
      "radar": "confirmado"
+    },
+    {
+     "id": "consolidacao-viciosa-e-outras-complicacoes",
+     "titulo": "Consolidação viciosa e outras complicações",
+     "radar": "clinico"
     },
     {
      "id": "fraturas-expostas-e-cortador-de-grama",
      "titulo": "Fraturas expostas e cortador de grama",
      "radar": "clinico"
+    },
+    {
+     "id": "imobilizacao-e-seguimento-lesao-a-lesao",
+     "titulo": "Imobilização e seguimento, lesão a lesão",
+     "radar": "fundamento"
+    },
+    {
+     "id": "perguntas-que-a-banca-faz",
+     "titulo": "Perguntas que a banca faz",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tres-casos-para-fixar",
+     "titulo": "Três casos para fixar",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -9067,10 +9127,13 @@
     "pediatria-1153",
     "pediatria-1164",
     "pediatria-1155",
-    "pediatria-1158",
-    "pediatria-1159",
+    "pediatria-1465",
+    "pediatria-1463",
+    "pediatria-1464",
     "pediatria-1161",
     "pediatria-1162",
+    "pediatria-1158",
+    "pediatria-1159",
     "pediatria-1165",
     "pediatria-1157",
     "pediatria-1163",
@@ -9079,7 +9142,8 @@
     "pediatria-1167"
    ],
    "subtemas": [
-    "Fraturas do tornozelo na criança"
+    "Fraturas do tornozelo na criança",
+    "Lesões fisárias"
    ]
   },
   {
