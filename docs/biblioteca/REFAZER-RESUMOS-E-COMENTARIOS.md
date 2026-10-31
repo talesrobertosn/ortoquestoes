@@ -44,7 +44,7 @@ Os rascunhos atuais de cada ciclo estão em `OrtoQuestoes-Biblioteca/lotes/<past
 
 | Ciclo | Resumo a reescrever | Livro e capítulo | Simulados (comentário) | Oficiais (comentário) |
 | --- | --- | --- | --- | --- |
-| 19 | `campbell14-biceps-distal` (4 KB) | Campbell cap. 48 (Distal biceps), cap. 46 (cabeça longa, peitoral) | ombro-cotovelo-0720 a 0723 | ombro-cotovelo-0027, 0033, 0238, 0302, 0391, 0450, 0566 |
+| 19 (**feito em 30/10/2026**: resumo 79 KB com 7 figuras dos livros; 38 comentários de 4,5 a 6,2 mil, todo o subtema) | `campbell14-biceps-distal` (era 4 KB) | Campbell cap. 48 (Distal biceps), cap. 46 (cabeça longa, peitoral) | ombro-cotovelo-0720 a 0723 | ombro-cotovelo-0027, 0033, 0238, 0302, 0391, 0450, 0566 |
 | 18 | `campbell14-lca` (7 KB) | Campbell cap. 45, seção do LCA (PDF 2531 a 2560) | joelho-0383 a 0387 | joelho-0021, 0032, 0080, 0188, 0209, 0227, 0249, 0253 |
 | 15 | `campbell14-metastases-osseas` (7 KB) | Campbell cap. 27 (Metastatic carcinoma) e cap. 42 (coluna) | tumores-0393 a 0398 | tumores-0021, 0051, 0064, 0072, 0086, 0088, 0092, 0109, 0129, 0130, 0135, 0187, 0190, 0202, 0270, 0282, 0293, 0325 |
 | 16 | `campbell14-hernia-disco` (8 KB) | Campbell caps. 38 e 39 | coluna-0572 a 0577 | coluna-0005, 0021, 0026, 0028, 0033, 0039, 0041, 0057, 0060, 0073, 0083, 0096, 0100, 0161, 0191, 0193, 0258, 0311 |
@@ -70,6 +70,13 @@ Os rascunhos atuais de cada ciclo estão em `OrtoQuestoes-Biblioteca/lotes/<past
 | 2 | `tachdjian6-deficiencias-membros` (15 KB) | Tachdjian cap. 21 | pediatria-1411 a 1418 | as 12 das PRs 657 e 658 |
 
 Os ciclos 1 e 2A (`netter-anatomia-mao-punho-antebraco`, 21 KB, e `tachdjian6-alinhamento-torcoes-coxa-vara`, 27 KB) também estão abaixo dos 45 KB. Confira-os com `medir_profundidade.py` e refaça no fim.
+
+## Ferramentas criadas no MacBook (30/10/2026)
+- `scripts/biblioteca/dossie_tema.py "Subtema" --livro X --paginas A-B`: engenharia reversa (todas as questões do subtema e páginas do livro).
+- `scripts/biblioteca/lote_comentarios.py LOTE.py SAIDA.json`: converte o lote escrito em Python, confere o gabarito e recusa comentário abaixo de 4,5 mil.
+- `scripts/biblioteca/trava_profundidade.py`: roda no `pos_aplicar.sh` e no `publicar_pr.sh`; não deixa publicar resumo < 45 KB nem comentário < 4,5 mil.
+- Figuras dos livros nos resumos: `!figura 48.47 imagem=ombro-cotovelo/arquivo.jpeg` (recorte com `scripts/figuras_livro.py`).
+- Refaça o subtema inteiro (todas as oficiais do dossiê), não só a lista desta tabela: no bíceps eram 7 na lista e 33 no subtema.
 
 ## Registro
 - Ao terminar cada tema, marque aqui com "feito", o número da PR e o tamanho final.
