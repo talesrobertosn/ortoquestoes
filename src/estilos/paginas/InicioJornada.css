@@ -369,13 +369,17 @@
   .hd.jn .qa__etiqueta { display: none; }
   .jn-regioes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-.hd-gato__sprite--uma-vez { animation-iteration-count: 1; animation-fill-mode: forwards; animation-duration: 1.3s; }
+.hd-gato__sprite--uma-vez { animation: jn-uma-vez 1.3s steps(5, jump-none) 1 forwards; }
+/* Animações de uma vez só: param no último quadro (100%), não no espaço vazio depois dele. */
+@keyframes jn-uma-vez { from { background-position-x: 0; } to { background-position-x: 100%; } }
 
 /* A comemoração da meta: a tocha de hoje acende uma vez (linha 7 da folha) com um clarão curto, e a frase aparece. */
-.jn-tocha--acendendo .jn-tocha__sprite { animation: jn-tocha 1.2s steps(6) 1 forwards; filter: drop-shadow(0 -6px 14px rgba(255, 190, 90, 0.8)); }
+.jn-tocha--acendendo .jn-tocha__sprite { animation: jn-uma-vez 1.2s steps(5, jump-none) 1 forwards; filter: drop-shadow(0 -6px 14px rgba(255, 190, 90, 0.8)); }
 .jn-trilha__festa { position: absolute; left: 50%; top: 0.5rem; z-index: 2; margin: 0; padding: 0.3rem 0.85rem; transform: translate(-50%, -6px); opacity: 0; pointer-events: none;
   color: var(--pixel-tinta); background: linear-gradient(180deg, #ffe7a3, #f0c46a); border-radius: 999px; font-size: var(--meta); font-weight: 800;
   box-shadow: 0 6px 18px -6px rgba(240, 196, 106, 0.8); transition: opacity 0.3s, transform 0.3s var(--curva); }
 .jn-trilha__festa--visivel { opacity: 1; transform: translate(-50%, -50%); }
 .jn-trilha__festa:empty { padding: 0; }
 @media (prefers-reduced-motion: reduce) { .jn-trilha__festa { transition: none; } }
+.jn-trilha__festa { white-space: nowrap; }
+@media (max-width: 60rem) { .jn-trilha__festa { top: 0.2rem; font-size: 0.75rem; padding: 0.25rem 0.7rem; } }

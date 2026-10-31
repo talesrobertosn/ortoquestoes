@@ -56,8 +56,8 @@ export function usarFestaDaMeta(cumprida: boolean): number {
     if (!cumprida) return
     const chave = `inicio:festa:${chaveDia()}`
     if (ler<boolean>(chave, false)) return
-    gravar(chave, true)
-    const t = window.setTimeout(() => definir(Date.now()), 1100)
+    // A marca só é gravada quando a comemoração acontece (um efeito cancelado não pode "gastar" a do dia).
+    const t = window.setTimeout(() => { gravar(chave, true); definir(Date.now()) }, 1100)
     return () => window.clearTimeout(t)
   }, [cumprida])
   return festa

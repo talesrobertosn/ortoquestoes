@@ -27,4 +27,5 @@ button.mascote__corpo:hover .mascote__sprite { filter: brightness(1.08) drop-sha
 @keyframes gato-pixel-quadros { to { background-position-x: 120%; } }
 @media (prefers-reduced-motion: reduce) { .gato-pixel { animation: none; } }
 /* Reação curta (Mascote reacao=...): a linha toca uma vez e para no último quadro. */
-.mascote--reagindo .mascote__sprite { animation-iteration-count: 1; animation-fill-mode: forwards; }
+.mascote--reagindo .mascote__sprite { animation: mascote-uma-vez var(--dur) steps(7, jump-none) 1 forwards; }
+@keyframes mascote-uma-vez { from { background-position-x: 0; } to { background-position-x: 100%; } }
