@@ -28,8 +28,11 @@ function sorteio(fantasia: Fantasia): IdComportamento[] {
   return COMPORTAMENTOS.filter((c) => entraNoSorteio(c) && c.halloween === (fantasia === 'halloween')).map((c) => c.id)
 }
 
-export function Mascote({ comportamento, fantasia: fixa, falar = true, interativo = true, className = '', style }: {
-  comportamento?: IdComportamento; fantasia?: Fantasia; falar?: boolean
+export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, interativo = true, className = '', style }: {
+  comportamento?: IdComportamento
+  /** Reação curta (31/10/2026): toca uma vez este comportamento e volta ao de antes (ex.: comemorar a meta do dia). */
+  reacao?: IdComportamento | null
+  fantasia?: Fantasia; falar?: boolean
   /** false: só o desenho, sem botão (para usar dentro de um link). */
   interativo?: boolean; className?: string; style?: CSSProperties
 }) {
@@ -77,16 +80,26 @@ export function Mascote({ comportamento, fantasia: fixa, falar = true, interativ
     if (falar) novaFala(proximo)
   }
 
-  const nome = COMPORTAMENTOS.find((c) => c.id === atual)?.nome ?? ''
-  const folha = folhaEsqueleto(atual)
+  // A reação toca uma vez e devolve o comportamento de antes; com "menos animação", não troca.
+  const [reagindo, definirReagindo] = useState<IdComportamento | null>(null)
+  useEffect(() => {
+    if (!reacao || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    definirReagindo(reacao)
+    const fim = window.setTimeout(() => definirReagindo(null), 1300)
+    return () => window.clearTimeout(fim)
+  }, [reacao])
+  const mostrado = reagindo ?? atual
+
+  const nome = COMPORTAMENTOS.find((c) => c.id === mostrado)?.nome ?? ''
+  const folha = folhaEsqueleto(mostrado)
   const desenho = (
     <span className="mascote__sprite" aria-hidden="true" style={{
       '--sprite': urlCss(folha.src.slice(1)), '--linha': folha.linha, '--linhas': folha.linhas,
-      '--quadros': SPRITE_ESQUELETO.quadrosPorLinha, '--dur': atual === 'dormir' ? '2.6s' : atual === 'malabares' || atual === 'acenar' ? '1.1s' : '1.5s',
+      '--quadros': SPRITE_ESQUELETO.quadrosPorLinha, '--dur': reagindo ? '1.2s' : atual === 'dormir' ? '2.6s' : atual === 'malabares' || atual === 'acenar' ? '1.1s' : '1.5s',
     } as CSSProperties} />
   )
   return (
-    <span className={`mascote mascote--${atual} ${className}`} style={style}>
+    <span className={`mascote mascote--${mostrado}${reagindo ? ' mascote--reagindo' : ''} ${className}`} style={style}>
       {interativo
         ? <button type="button" className="mascote__corpo" onClick={clicar} aria-label={`O esqueleto mascote está ${nome}. Toque para ele fazer outra coisa.`}>{desenho}</button>
         : <span className="mascote__corpo">{desenho}</span>}
