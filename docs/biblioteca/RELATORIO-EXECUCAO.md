@@ -164,6 +164,7 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 660 | `scripts/publicar_pr.sh` só mescla com os checks verdes. |
 | 668 | `scripts/pos_aplicar.sh`: regenera índices, Biblioteca e amostras e roda os testes que mais quebram. |
 | 700 | `trava_profundidade.py` (recusa resumo menor que 45 KB ou comentário menor que 4,5 mil), `dossie_tema.py` (todas as questões do subtema com páginas do livro) e `lote_comentarios.py` (lote em .py, medido antes de aplicar). |
+| (este PR) | ATQ parte 2: polietileno e cerâmica (resumo novo `callaghan-polietileno-ceramica`) | 66 KB, Callaghan caps. 12, 13, 14 e 19 | 37 simulados de Fellowship Quadril, todos ligados ao resumo como treino |
 
 ## Próximo
 
