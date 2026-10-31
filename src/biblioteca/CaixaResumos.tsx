@@ -24,7 +24,7 @@ function estadoLeitura(c: ResumoCapitulo, l: Leitura | undefined): string {
  * o tema de hoje vem em destaque, com o convite para ler antes das questões; abaixo, outros da estante
  * (os que a pessoa está lendo primeiro, depois uma ordem que muda a cada dia) e o caminho para a Biblioteca.
  */
-export function CaixaResumos({ subtemasHoje, especialidade }: { subtemasHoje: Set<string>; /** Só os resumos desta área (o cronograma da mão mostra só os da mão). */ especialidade?: string }) {
+export function CaixaResumos({ subtemasHoje, especialidade, rotuloDia }: { subtemasHoje: Set<string>; /** Dia escolhido no calendário, quando não é hoje ("sáb, 2/11"). */ rotuloDia?: string; /** Só os resumos desta área (o cronograma da mão mostra só os da mão). */ especialidade?: string }) {
   const biblioteca = usarIndiceBiblioteca()
   const { leituras } = usarBiblioteca()
   const { premium } = usarPremium()
@@ -47,7 +47,7 @@ export function CaixaResumos({ subtemasHoje, especialidade }: { subtemasHoje: Se
         {combina && <div className="bib-destaque-fogo"><ChamaPixel altura={30} lados={10} forca={0.9} raio={14} /><a className={'bib-destaque' + (fechado(combina) ? ' bib-destaque--fechado' : '')} href={href(`/resumos/${combina.id}`)} style={estiloArea(combina)}>
           <span className="bib-destaque__lombada" aria-hidden="true" />
           <span className="bib-destaque__corpo">
-            <span className="bib-destaque__selo"><Icone nome="alvo" tamanho={13} /> Combina com o tema de hoje</span>
+            <span className="bib-destaque__selo"><Icone nome="alvo" tamanho={13} /> {rotuloDia ? `Combina com o tema de ${rotuloDia}` : 'Combina com o tema de hoje'}</span>
             <strong>{combina.titulo}</strong>
             <small>{combina.capitulo.split('·')[0].trim()} · {combina.livro.replace(/ in Adults$/, '')}</small>
             {leituras[combina.id]?.progresso ? <span className="bib-barra" aria-hidden="true"><span style={{ width: `${leituras[combina.id]!.progresso}%` }} /></span> : null}

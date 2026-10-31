@@ -1,5 +1,5 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--com-plano] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
 // --sn: o Simulado Nacional de outubro no Supabase falso (e o relógio do navegador no momento do cenário):
 //   antes (não inscrito) | inscrito | aberto | andamento | entregue (resultado e ranking) | encerrado | ausente (sem a parte 32: 404)
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
@@ -153,6 +153,8 @@ const rpcs = {
   obter_ranking_publico: (_u, a) => [200, rankingExemplo(a.periodo, true)],
   obter_ranking_visitante: (_u, a) => [200, rankingExemplo(a.periodo, false)],
   minha_posicao_ranking: (_u, a) => { const eu = rankingExemplo(a.periodo, true).find((l) => l.eh_voce); return [200, eu ? [{ posicao: eu.posicao, total: eu.total, total_geral: eu.total_geral }] : []] },
+  // --com-plano: um cronograma de exemplo (TEOT, criado há 3 semanas), para as capturas do Cronograma.
+  obter_plano_estudo: () => [200, process.argv.includes('--com-plano') ? [{ data_prova: '2027-01-10', intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: new Date(Date.now() - 21 * 86400000).toISOString(), incluir_simulados: true, opcoes: {} }] : []],
   meus_feitos: () => [200, { conquistas: [], dias: {}, indicados_assinantes: 0, indicados_30_dias: 0, simulado_edicoes: [], simulado_participacoes: [], ranking_semana: [], relatos_resolvidos: 0, comentarios_avaliados: 0, contra_corrente: 0, plano: null }],
 }
 // --admin: a conta de exemplo é administradora; o painel do Simulado Nacional (sn_admin_*) responde com
