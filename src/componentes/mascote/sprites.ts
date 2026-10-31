@@ -52,11 +52,14 @@ export const LINHAS_ESQUELETO = [
 
 export type IdLinhaEsqueleto = (typeof LINHAS_ESQUELETO)[number]['id']
 
-/** Gato: public/pixel/mascote/gato.png */
+/**
+ * Gato: o gato fofo novo (31/10/2026, pedido do Tales: "o gato está muito feio, faz um baita gato fofo e usa em tudo"),
+ * de scripts/gerar_gato_fofo.py: public/pixel/mascote/gato-fofo.png, quadros de 64 x 48, as mesmas linhas de antes.
+ */
 export const SPRITE_GATO = {
-  src: '/pixel/mascote/gato.png',
+  src: '/pixel/mascote/gato-fofo.png?v=1',
   larguraQuadro: 64,
-  alturaQuadro: 40,
+  alturaQuadro: 48,
   quadrosPorLinha: 6,
 } as const
 
@@ -100,10 +103,7 @@ const FOLHAS_ESQUELETO: Leva[] = [
   { src: '/pixel/mascote/esqueleto-acesso.png', ate: LINHAS_ESQUELETO.length },
 ]
 const FOLHAS_GATO: Leva[] = [
-  { src: SPRITE_GATO.src, ate: 3 },
-  { src: '/pixel/mascote/gato-poses.png', ate: 9 },
-  { src: '/pixel/mascote/gato-poses2.png', ate: 13 },
-  { src: '/pixel/mascote/gato-poses3.png', ate: LINHAS_GATO.length },
+  { src: SPRITE_GATO.src, ate: LINHAS_GATO.length },
 ]
 
 function folha(indice: number, levas: Leva[]): Folha {

@@ -184,7 +184,7 @@
 @keyframes pt-fala { from { opacity: 0; transform: translateY(4px); } }
 .pt-gato { position: absolute; z-index: 4; bottom: 6px; right: 6%; }
 .pt-gato__botao { display: block; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; }
-.pt-gato .gato-pixel { width: 96px; height: 60px; }
+.pt-gato .gato-pixel { width: 96px; height: 72px; }
 .pt-gato--andando { animation: pt-gato-anda 5.2s linear both; }
 .pt-gato--andando .gato-pixel { transform: scaleX(-1); }
 @keyframes pt-gato-anda { from { transform: translateX(110px); opacity: 0; } 12% { opacity: 1; } }
@@ -229,7 +229,7 @@
   .pt-coruja .coruja-pixel { width: 48px; height: 56px; }
   .pt-coruja__fala { right: -48px; top: 118px; width: min(17rem, calc(100vw - 2rem)); }
   .pt-gato { bottom: calc(8px + env(safe-area-inset-bottom)); right: 4%; }
-  .pt-gato .gato-pixel { width: 64px; height: 40px; }
+  .pt-gato .gato-pixel { width: 64px; height: 48px; }
   .pt-resultados { max-height: 52dvh; }
 }
 @media (max-width: 22rem) {
