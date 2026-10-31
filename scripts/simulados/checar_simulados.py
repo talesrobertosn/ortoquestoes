@@ -17,7 +17,7 @@ FONTE_NO_ENUNCIADO = re.compile(
     r"|conforme (o|a) (cap[ií]tulo|livro|autor)"
     r"|de acordo com (o|a) (cap[ií]tulo|livro|autor)"
     r"|citad[oa]s? (pelo|no) "
-    r"|\b(Rockwood|Campbell|Tachdjian|Netter|Callaghan|Green's|Lovell|Sizínio|Sizinio)\b",
+    r"|(?<!DIAS-)\b(Rockwood|Campbell|Tachdjian|Netter|Callaghan|Green's|Lovell|Sizínio|Sizinio)\b",  # DIAS-TACHDJIAN é classificação
     re.I,
 )
 # Palavras que facilitam eliminar a alternativa (só aviso: às vezes a banca usa).

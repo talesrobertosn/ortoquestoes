@@ -66,7 +66,7 @@ Depois, não pergunte nada: comece a próxima entrada da fila.
 2. **Revisão do que saiu fraco:**
    - simulados pediatria-1451 a 1468 (correta longa, distratores fracos): reescrever no molde da banca com `id=` no `lote_proj.py`, mantendo a letra do gabarito;
    - resumos `rockwoodcriancas10-08-mao-carpo` e `rockwoodcriancas10-30-tornozelo`, com 12% de moldura: trocar as seções de moldura por conteúdo do capítulo até ficar abaixo de 10%, sem baixar de 45 KB (feito no PR 752);
-   - **simulados antigos reprovados no portão de estilo** (autoauditoria de 31/10/2026: 871 de 1.938). Primeiro os dos capítulos já refeitos da pediatria (275), um capítulo por PR, com `python3 scripts/simulados/auditar_estilo.py --subtema "<subtema>"` para listar e `lote_proj.py` com `id=` para reescrever; depois, cada tema novo reescreve os próprios reprovados na etapa F.
+   - **simulados antigos reprovados no portão de estilo** (autoauditoria de 31/10/2026: 871 de 1.938). Primeiro os dos capítulos já refeitos da pediatria (275), um ou dois capítulos por PR (o conceito já conferido pode ser mantido; enunciado, alternativas e análise são novos), com `python3 scripts/simulados/auditar_estilo.py --subtema "<subtema>"` para listar e `lote_proj.py` com `id=` para reescrever; depois, cada tema novo reescreve os próprios reprovados na etapa F.
 3. **Os 284 temas**, pela tabela de cobertura:
    - primeiro os **AMPLIAR** dos temas grandes, nesta ordem: anatomia da mão e punho; genuvaro, genuvalgo e torções; manguito rotador (Campbell 15); anatomia do ombro; neuropatia ulnar; anatomia do quadril; DDQ; anatomia do pé e tornozelo; tendões flexores; osteomielite aguda; depois os outros AMPLIAR;
    - depois os **CRIAR**, na ordem do ranking (mais questões primeiro);
