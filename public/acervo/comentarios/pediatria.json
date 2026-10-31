@@ -10088,18 +10088,20 @@
   }
  },
  "pediatria-0627": {
-  "conceito": "**A fratura da placa terminal (da apófise do anel vertebral).** Na criança e no adolescente, o corpo vertebral tem nas bordas superior e inferior um **anel apofisário** de cartilagem que ossifica no início da adolescência e se funde ao corpo por volta dos 18 a 25 anos. Antes da fusão, a ligação entre esse anel e o corpo vertebral é **mais fraca que o disco**. Num esforço com carga axial e flexão, o disco **arranca um fragmento** do anel (com osso e cartilagem), que se desloca para dentro do **canal vertebral**, na região posterior.\n\n**Quem tem e onde.**\n- **Adolescentes e adultos jovens**, sobretudo do **sexo masculino**.\n- **Esportes**: levantamento de peso, ginástica, lutas e qualquer esforço com flexão e carga.\n- Nível mais comum: **L4-L5**, seguido de **L5-S1**. Mais frequentemente a borda **posteroinferior de L4** ou a posterossuperior de L5 (ou S1).\n\n**O quadro clínico.** Parece uma **hérnia de disco**:\n- dor lombar e **dor ciática**;\n- contratura dos isquiotibiais e **Lasègue positivo**;\n- às vezes, sinais de compressão radicular ou de cauda equina.\n\n**O diagnóstico.**\n- A **radiografia** pode mostrar um pequeno fragmento ósseo atrás do corpo vertebral.\n- A **tomografia** é o melhor exame para ver o **fragmento ósseo** (o arco) dentro do canal.\n- A **ressonância** mostra o componente discal e a compressão neural, mas pode subestimar o osso.\n\n**A classificação de Takata** descreve o tamanho e a forma do fragmento (separação do arco, avulsão central, fragmento lateral, fratura que se estende ao corpo).\n\n**O tratamento.**\n- Sem déficit: **conservador** inicialmente (repouso, analgesia, fisioterapia).\n- Com dor persistente ou **déficit neurológico**: **excisão cirúrgica** do fragmento ósseo junto com o disco. A simples **discectomia** sem remover o fragmento ósseo deixa a compressão e é uma causa de falha.",
-  "correta": "**Correta: D (masculino e no segmento L4-L5).** A fratura da placa terminal (apófise do anel vertebral) na criança e no adolescente é mais comum no **sexo masculino**, sobretudo em atividades com carga e flexão, e no segmento **L4-L5**, seguido de L5-S1.",
+  "conceito": "A fratura da placa terminal é a lesão fisária da coluna: o **anel apofisário**, ainda não fundido ao corpo, se solta e vai para o canal. Por isso só existe na criança e no adolescente.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 22) descreve o quadro: evento claro (chutar uma bola, aterrissar na ginástica), estalo, dor muito intensa com sinais radiculares, ressonância lida como abaulamento discal e diagnóstico na **tomografia sagital**; o tratamento é **retirar o fragmento** por laminectomia. O exemplo do capítulo é uma menina de 14 anos com fratura da placa inferior de L4. O livro não diz sexo nem nível preferencial.\n\nO Tachdjian (6ª edição, cap. 7) dá a epidemiologia que a banca cobrou: a fratura do anel apofisário ocorre sobretudo em **adolescentes**, **mais em meninos** (especialmente levantadores de peso), por flexão súbita com carga axial ou microtrauma repetido, e o local mais comum é a **apófise posteroinferior de L4**, ou seja, o espaço **L4-L5** (Fig. 7.5).\n\nA lógica é a da hérnia de disco do adulto: o segmento L4-L5 é dos que mais trabalham em flexão sob carga, e é ali que o anel ainda frágil cede.",
+  "correta": "**D) masculino e no segmento L4-L5.** A fratura do anel apofisário é mais comum em meninos adolescentes, na apófise posteroinferior de L4 (Tachdjian, cap. 7; Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "O nível **L3-L4** é menos acometido, e o predomínio é **masculino**.",
-   "B": "O nível L4-L5 está certo, mas a lesão predomina no sexo **masculino**.",
-   "C": "O sexo masculino está certo, mas o nível mais comum é **L4-L5**, e não L3-L4."
+   "A": "**Feminino e L3-L4** erra o sexo e o nível.",
+   "B": "**Feminino** erra o sexo; o nível L4-L5 está certo.",
+   "C": "**L3-L4** erra o nível; o mais comum é a posteroinferior de L4."
   },
   "referencias": [
-   "Skeletal Trauma 5 Ed. 304 Pg (referência indicada na prova TARO 2018, questão 49)",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 7 (Back Pain), fratura do anel apofisário, Fig. 7.5",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção End Plate Fractures (Fig. 22-22)",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "O Rockwood and Wilkins' Fractures in Children (cap. 22) não traz sexo nem nível preferencial da fratura da placa terminal (o exemplo dele é uma menina, L4); o gabarito oficial é sustentado pelo Tachdjian (6ª ed., cap. 7).",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-0628": {
@@ -15659,17 +15661,19 @@
   }
  },
  "pediatria-0833": {
-  "conceito": "**O que significa SCIWORA.** É a sigla em inglês para *spinal cord injury without radiographic abnormality*, lesão medular sem anormalidade radiográfica. A criança apresenta déficit neurológico após trauma, mas as radiografias e a tomografia não mostram fratura nem desalinhamento. A ressonância pode revelar edema, hemorragia, lesão ligamentar ou discal, ou pode ser normal.\n\n**Por que ocorre na criança.** A coluna infantil é muito **mais elástica** que a medula:\n- **frouxidão ligamentar** maior;\n- **facetas mais horizontais**, que permitem deslizamento;\n- corpos vertebrais em cunha e cartilaginosos;\n- cabeça proporcionalmente grande e musculatura cervical fraca.\n\nEstudos clássicos em cadáveres de recém-nascidos mostram que a coluna pode se alongar cerca de **5 cm** sem romper, enquanto a medula só tolera alguns **milímetros**. No trauma, a coluna se deforma momentaneamente além do que a medula suporta e depois volta à posição normal. A medula é lesada por estiramento, compressão ou isquemia, mas o esqueleto não deixa marcas.\n\n**Características clínicas.**\n- Mais comum abaixo de **8 anos**, na coluna **cervical**, e com lesões mais graves nos menores.\n- Até cerca de metade dos pacientes tem **déficit tardio**: sintomas transitórios (parestesias, fraqueza) logo após o trauma, um intervalo livre e piora horas ou dias depois.\n\n**Conduta.**\n- **Ressonância** em toda criança com déficit neurológico após trauma, mesmo com radiografia e TC normais.\n- Imobilização (colar cervical ou órtese) por cerca de 12 semanas e restrição de atividades, para evitar nova lesão.\n- O prognóstico depende da gravidade inicial e do achado na ressonância: medula normal tem melhor evolução.",
-  "correta": "**Resposta provável: Certo.** A SCIWORA ocorre em crianças porque o conjunto disco-vértebra-ligamentos é muito **mais elástico** que a medula: a coluna se deforma e volta ao lugar sem lesão radiográfica, mas a medula, que tolera pouco estiramento, é lesada.",
+  "conceito": "A afirmativa resume a fisiopatologia da SCIWORA, e está certa.\n\nO Tachdjian (6ª edição, cap. 28) explica: a patogenia da SCIWORA está no fato de a **coluna ser mais elástica que a medula**; a coluna pode se esticar além do limite elástico dos elementos neurais, voltar ao estado normal quando a força cessa e deixar a medula lesada. A lesão é quase exclusiva da criança. O Rockwood and Wilkins' Fractures in Children (cap. 22) aponta o mesmo mecanismo pelo outro lado: o **estiramento** da medula (além da lesão vascular), com edema e hemorragia na ressonância, e lembra que a coluna jovem é protegida justamente pela sua **elasticidade e mobilidade**.\n\nO que torna a coluna da criança mais elástica, pelo Tachdjian: ligamentos mais elásticos, músculos menores, discos saudáveis e hidratados, mais cartilagem em relação ao osso e facetas mais horizontais.\n\nA banca falou em \"conjunto disco-vértebra\"; o livro fala em coluna vertebral. É a mesma ideia: o arcabouço que protege a medula estica mais que ela.",
+  "correta": "**A) Certo.** A SCIWORA ocorre porque a coluna é mais elástica que a medula (Tachdjian, cap. 28; Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "B": "**Errado** negaria o mecanismo aceito da síndrome. A diferença de elasticidade entre a coluna e a medula é exatamente o que explica o déficit sem fratura nem desalinhamento visível."
+   "B": "**Errado seria negar o mecanismo de estiramento**, que é a explicação aceita."
   },
   "referencias": [
-   "Pang D, Wilberger JE Jr. Spinal cord injury without radiographic abnormalities in children. J Neurosurg. 1982;57(1):114-129.",
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5th Edition, p. 822."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 28 (Spinal Injuries), SCIWORA, Fig. 28.26",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Introduction e Injuries Associated (SCIWORA)",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
   "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão do TARO 2006 sem gabarito oficial publicado. A resposta provável (Certo) segue o Tachdjian (6ª ed., cap. 28) e o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-0834": {
@@ -17250,43 +17254,27 @@
   "conferido": false
  },
  "pediatria-0913": {
-  "conceito": "O cinto abdominal, sem a faixa do ombro, é o cenário clássico. Na batida, o tronco da criança flete sobre o cinto, que vira o eixo de rotação **à frente da coluna**. A coluna inteira é tracionada por trás: é a lesão por **flexão-distração**, que atinge as três colunas e é instável.\n\n**Os nomes.** No Rockwood and Wilkins (10ª ed., cap. 22, de Illingworth e Skaggs), a lesão pelo osso é a de **Chance**; pelos ligamentos, a de Smith.\n\n**A faceta vazia.** Quando as facetas se separam pela distração, o corte **axial** da tomografia mostra a faceta superior **sem a inferior** encaixada: a faceta \"vazia\". O capítulo alerta que o axial pode perder a lesão, porque o plano do corte coincide com o plano da separação; o **sagital** revela o afastamento, e a ressonância mostra o complexo posterior. No perfil, o sinal é o **afastamento interespinhoso**, e o hematoma subcutâneo do cinto quase sempre está lá.\n\n**O abdome.** O cinto causa lesão abdominal em quase 50%. Lesão abdominal ou componente ligamentar levam à cirurgia; Chance óssea pura, sem abdome, pode ir com gesso ou órtese em extensão.\n\n**Na prova:** faceta vazia = **corte axial**, **flexão-distração**.\n\nO resumo de coluna toracolombar da criança descreve o sinal na seção de flexão-distração.",
-  "correta": "**C: axial e representa uma lesão por flexo-distração.** No corte axial, a faceta aparece sem a sua par porque a distração separou a articulação.",
+  "conceito": "O sinal da faceta vazia é uma imagem de **corte axial**: numa articulação facetária normal, o corte transversal mostra as duas facetas lado a lado, a superior da vértebra de baixo e a inferior da vértebra de cima. Se os elementos posteriores se separaram, sobra só uma, e a faceta parece **vazia**.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 22, Fig. 22-12) descreve o sinal como achado clássico da **lesão em flexão-distração ligamentar** (a CHANCE de partes moles): o processo articular inferior da vértebra de cima deixou de tocar o processo articular superior da de baixo.\n\nDois detalhes do capítulo ajudam a não errar:\n- o corte axial comum pode **perder** a CHANCE, porque o plano da lesão é o mesmo do corte; as **reconstruções sagitais** são as mais reveladoras, e o perfil mostra o alargamento interespinhoso;\n- a faceta vazia é o sinal **axial** que denuncia a separação posterior; a ressonância confirma o complexo ligamentar posterior.\n\nA compressão não separa os elementos posteriores, então não dá faceta vazia.",
+  "correta": "**C) Axial e representa uma lesão por flexo-distração.** É o sinal da CHANCE ligamentar na tomografia axial (Rockwood and Wilkins' Fractures in Children, cap. 22, Fig. 22-12).",
   "incorretas": {
-   "A": "**O plano está certo, mas o mecanismo não.** A compressão esmaga o corpo vertebral anterior; não separa as facetas.",
-   "B": "**Erra os dois.** O sinal é axial, e a compressão não produz faceta vazia.",
-   "D": "**O mecanismo está certo, mas o sinal da faceta vazia é do axial.** O sagital mostra o afastamento, mas o nome do sinal vem do corte axial."
+   "A": "**A compressão** não separa as facetas.",
+   "B": "**Sagital e compressão** erra o plano e o mecanismo.",
+   "D": "**O mecanismo está certo**, mas o sinal é do corte axial; o sagital mostra a distração de outro jeito."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Flexão-distração (CHANCE) e fratura-luxação."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Classification (Flexion-Distraction Injuries) e Fig. 22-12",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Flexão-distração (CHANCE) e fratura-luxação"
-     ],
-     "blocos": [
-      "flexao-distracao-chance-e-fratura-luxacao-b198d03d",
-      "flexao-distracao-chance-e-fratura-luxacao-4f7bbbec",
-      "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "637d34d58d9475f0faa594e2917856495b5a9c9454fefb46ef7017cd295fc009"
-    }
-   ],
-   "questaoSha256": "1501858ecdf98932f862b2396a5118b0bda28ea091a701046c90d4d4684b0a78",
-   "comentarioSha256": "288735d8479d4308cd803e55da61614344731fe18057ddef783a672cf1d616fd"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-22-12.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22, Fig. 22-12. Sinal da faceta vazia na tomografia axial: A, na CHANCE de partes moles só a faceta superior aparece, porque os elementos posteriores se separaram; B, facetas normais num nível sem lesão do mesmo paciente.",
+    "largura": 1200,
+    "altura": 625
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0914": {
   "conceito": "**A redução usa a dobradiça posterior e a medial remanescentes.** No desvio posteromedial da supracondiliana em extensão, o periósteo lateral rompe e o medial permanece. Depois de tracionar e corrigir translação e varo/valgo com o cotovelo próximo da extensão, o cirurgião **flete o cotovelo e prona o antebraço**.\n\nA flexão aproxima os fragmentos através da dobradiça posterior; a pronação tensiona a medial. Não se deve confundir a posição inicial de tração com o movimento final que reduz a deformidade. No posterolateral, a supinação é preferida por aproveitar a dobradiça lateral. A confirmação radiográfica e a fixação estável vêm depois, sem depender de manter hiperflexão apertada no gesso.",
@@ -28100,521 +28088,239 @@
   "conferido": false
  },
  "pediatria-1255": {
-  "conceito": "O **cinto apenas abdominal**, a colisão frontal e a marca horizontal com dor lombar apontam para **flexão–distração, padrão de Chance**, com necessidade de investigar o **abdome**, alternativa B. O resumo informa lesão abdominal em quase metade dos casos desse contexto (Rockwood and Wilkins, 10ª edição, capítulo 22, mecanismos e flexão–distração).\n\nO tronco flete sobre o cinto, com eixo à frente da coluna. O capítulo descreve comprometimento de três colunas e separa **Chance pelo osso** de **Smith pelos ligamentos**. Assim, um relato de cinto não se resume a uma cunha vertebral simples que possa ser avaliada independentemente das partes moles e do abdome.\n\nO resumo diferencia a faixa abdominal dos sistemas com **faixa de ombro ou cinco pontos**, que protegem. A presença de um dispositivo de retenção não demonstra, por si só, que todos os padrões de força foram evitados. A lesão abdominal pode mudar também o tratamento da coluna no protocolo apresentado.\n\n**Na prova:** marca do cinto e dor lombar pedem procurar a combinação de lesão vertebral e abdominal. A proporção quase de 50% pertence ao grupo resumido na fonte, não é uma certeza individual nem uma razão para examinar apenas a coluna.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O mecanismo do cinto e sua associação com lesão abdominal permitem comparar a fratura e os cuidados que não podem ser separados.",
-  "correta": "Alternativa B. Relaciona o mecanismo de flexão–distração ao cuidado abdominal obrigatório na avaliação do caso. A resposta precisa abranger as duas regiões, não apenas escolher o nome de uma fratura.",
+  "conceito": "Cinto só abdominal, banco de trás, colisão frontal e equimose horizontal no abdome: é o retrato da lesão do cinto. Na criança, a faixa que deveria segurar a pelve sobe para o abdome; o tronco se dobra sobre ela, o eixo de rotação fica na frente da coluna e os elementos posteriores se abrem.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 22) dá dois números para lembrar:\n- a lesão da coluna é a **flexão-distração (CHANCE)**, de três colunas, em geral instável;\n- **quase 50%** das crianças com CHANCE têm **lesão abdominal**: aorta, vísceras e parede, comprimidas entre o cinto e a coluna.\n\nA equimose horizontal (sinal do cinto) pede imagem avançada do abdome; o sinal pode ser sutil, e a lesão perdida pode ser fatal. O cinto de três pontos ou de cinco pontos limita a flexão e protege.\n\n**Por que esta questão foi criada.** O TEOT 2025 cobrou a faceta vazia da CHANCE; o cenário clínico e o abdome vêm antes dela.",
+  "correta": "**B) lesão em flexão-distração (CHANCE); investigar lesão intra-abdominal, presente em quase metade dos casos.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "A lesão por cinto abdominal é descrita como flexão–distração de três colunas, não compressão isolada. Tratar apenas com órtese sem investigar o abdome ignora a associação destacada e a possibilidade de componente ligamentar.",
-   "C": "Explosão por carga axial é outro padrão. O mecanismo do cinto envolve flexão sobre um eixo anterior, e limitar a tomografia à coluna deixa de abordar a lesão abdominal frequente nesse contexto.",
-   "D": "A dor lombar e a marca abdominal após retenção pela cintura não correspondem a uma simples luxação facetária cervical com alta. A fonte orienta investigação do padrão toracolombar e das lesões associadas."
+   "A": "**A compressão isolada** vem de queda com o tronco fletido, não do cinto.",
+   "C": "**A explosão** vem de carga axial, e a tomografia só da coluna deixaria o abdome sem avaliação.",
+   "D": "**O cinto abdominal lesa a toracolombar**, não a cervical."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Flexão-distração (CHANCE) e fratura-luxação; Mecanismos, lesões associadas e avaliação; Como ler este capítulo."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Mechanisms e Injuries Associated, Figs. 22-2 a 22-4",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Flexão-distração (CHANCE) e fratura-luxação",
-      "Mecanismos, lesões associadas e avaliação",
-      "Como ler este capítulo"
-     ],
-     "blocos": [
-      "flexao-distracao-chance-e-fratura-luxacao-b198d03d",
-      "mecanismos-lesoes-associadas-e-avaliacao-0ddd61bc",
-      "como-ler-este-capitulo-3906aa9a"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "a6168588d26119717ea3b2ef4796f3464334c88ec3b8cd1aa0495cfe3af5fd60"
-    }
-   ],
-   "questaoSha256": "7d0cc89fc1c776aea844185da9506732b7a3d5ea537442611d58858dc565d3cb",
-   "comentarioSha256": "6178fcc99e73366e914102e74b7791e6aaa6d8cb03b6cd53c03eb438b7a478ac"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1256": {
-  "conceito": "A lesão de flexão-distração puramente ligamentar é traiçoeira: pode não haver fratura nenhuma, e o corte axial da tomografia, que corre no mesmo plano da lesão, pode não mostrá-la. O sinal da faceta vazia é a pista.\n\n**O sinal.** Normalmente, num corte **axial** da tomografia, aparecem juntas a faceta superior e a inferior da articulação. Quando os elementos posteriores se separam (**flexão-distração ligamentar**), o **processo articular inferior da vértebra de cima** perde o contato com o **processo articular superior da de baixo**, e só a faceta superior aparece: a faceta parece **vazia** (Rockwood crianças, 10ª ed., cap. 22, Fig. 22-12).\n\n**Por que se perde a lesão.** A lesão é mais óbvia na radiografia em perfil; sem fratura, o **afastamento interespinhoso** pode ser o único achado (Fig. 22-11). O **corte axial padrão pode perder** a lesão porque o plano da lesão está no plano da imagem. As **reconstruções sagitais** são as mais reveladoras, e a **ressonância** mostra o complexo ligamentar posterior. Um **hematoma subcutâneo grande** quase sempre existe na lesão recente, no exame e na ressonância. Numa série, o diagnóstico atrasou ou errou com média de **3 meses**.\n\n**Óssea ou ligamentar.** A ruptura posterior pode passar toda pelo osso (**CHANCE**, menos comum) ou pelos ligamentos (**SMITH**), ou pelos dois. A distinção muda o tratamento: o osso consolida; o ligamento rompido raramente cicatriza com estabilidade sem cirurgia.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2025 (`pediatria-0913`), que perguntou em que plano tomográfico aparece o sinal da faceta vazia e o que ele representa (axial, flexão-distração). Depois, faça a oficial.\n\n> **Na prova:** **faceta vazia** = corte **axial**, **flexão-distração ligamentar**; sagital revela melhor; perfil: **afastamento interespinhoso**; **hematoma subcutâneo** quase sempre; CHANCE = osso, SMITH = ligamento.",
-  "correta": "**D: axial e indica lesão ligamentar por flexão-distração.** No corte axial, a faceta inferior da vértebra de cima desaparece porque os elementos posteriores se separaram (Rockwood crianças, 10ª ed., cap. 22).",
+  "conceito": "O sinal da faceta vazia é do **corte axial**. O Rockwood and Wilkins' Fractures in Children (cap. 22, Fig. 22-12) explica: num corte transversal normal aparecem as duas facetas da articulação; na flexão-distração **ligamentar**, a faceta inferior da vértebra de cima se afastou, e só a superior aparece.\n\nO capítulo acrescenta que o axial comum pode perder a CHANCE (o plano da lesão coincide com o corte), que as reconstruções **sagitais** são as mais reveladoras e que a ressonância confirma o complexo ligamentar posterior.\n\n**Por que esta questão foi criada.** É a pergunta do TEOT 2025, com o cenário do cinto e os distratores de compressão e explosão.",
+  "correta": "**D) axial e indica lesão ligamentar por flexão-distração.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22, Fig. 22-12).",
   "incorretas": {
-   "A": "**Plano e lesão errados.** O sinal é visto no corte axial e indica separação dos elementos posteriores; a compressão não separa as facetas.",
-   "B": "**Também não.** O sagital mostra melhor a distração, mas o sinal da faceta vazia é axial; e a explosão é lesão da coluna anterior e média por carga axial.",
-   "C": "**Lesão errada.** O plano está certo, mas a compressão atinge só a coluna anterior e mantém as facetas em contato."
+   "A": "**Sagital e compressão** erra o plano e o mecanismo.",
+   "B": "**A explosão** não separa as facetas.",
+   "C": "**O plano está certo**, mas a compressão não esvazia a faceta."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Classification of Thoracolumbar Spine Fractures (Figs. 22-11 e 22-12)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Classification (Flexion-Distraction) e Fig. 22-12",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "geradoEm": "2026-10-27",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-22-12.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22, Fig. 22-12. Sinal da faceta vazia na tomografia axial: A, na CHANCE de partes moles só a faceta superior aparece, porque os elementos posteriores se separaram; B, facetas normais num nível sem lesão do mesmo paciente.",
+    "largura": 1200,
+    "altura": 625
+   }
+  ],
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1257": {
-  "conceito": "A **fratura–luxação toracolombar em lactente que não anda** deve levantar suspeita de **maus-tratos**, alternativa A. O resumo cita esse padrão no trauma não acidental e orienta relacionar desenvolvimento, mecanismo relatado e gravidade da lesão (Rockwood and Wilkins, 10ª edição, capítulo 22, mecanismos; capítulo 7, reconhecimento).\n\nSuspeitar não é encerrar o diagnóstico nem determinar autoria. O capítulo de proteção recomenda investigar a história, quem presenciou, quando ocorreu e eventual demora no atendimento. O relato de queda do trocador precisa ser avaliado junto do achado grave, não aceito ou rejeitado por uma frase isolada.\n\nA fraqueza de ambas as pernas, **paraparesia**, também define uma prioridade clínica: o resumo toracolombar recomenda ressonância em todo déficit, e descreve fratura–luxação como lesão cirúrgica. Assim, investigar proteção infantil e tratar a lesão neurológica são cuidados simultâneos; nenhum substitui o outro.\n\n**Na prova:** num bebê de 8 meses sem marcha, a combinação exige investigação. A orientação de considerar maus-tratos não significa que toda fratura em não deambulador seja prova de abuso; contexto obstétrico, doenças e demais diferenciais precisam ser considerados quando pertinentes.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A ligação entre lesão da coluna do lactente e maus-tratos é um ponto de segurança útil na avaliação de um caso clínico.",
-  "correta": "Alternativa A. É a orientação de suspeita apresentada para o lactente não deambulador com lesão vertebral grave. O termo suspeita deve permanecer diferente de confirmação, com investigação do contexto e cuidado urgente da coluna.",
+  "conceito": "Um lactente de 8 meses que não anda não tem como cair com energia suficiente para luxar a coluna toracolombar. O Rockwood and Wilkins' Fractures in Children (cap. 22) é direto: como no esqueleto apendicular, o trauma da coluna em **lactentes e crianças pequenas**, sobretudo as que **ainda não andam**, deve levantar suspeita de **maus-tratos**. O capítulo mostra justamente um lactente de **8 meses** com fratura-luxação toracolombar e lesão medular incompleta por trauma não acidental, tratado com redução aberta e parafusos de um sistema cervical de 3,5 mm (Fig. 22-20).\n\nO capítulo de maus-tratos (cap. 7) orienta a investigar a história (quem presenciou, quando, demora no atendimento) e a compatibilidade entre o desenvolvimento da criança, o mecanismo relatado e a gravidade. Suspeitar não é acusar: é investigar e proteger. A fratura-luxação, por sua vez, é instável e cirúrgica.\n\n**Por que esta questão foi criada.** Maus-tratos é tema recorrente das provas, e a coluna é uma das apresentações menos lembradas.",
+  "correta": "**A) levantar a suspeita de maus-tratos, como em qualquer fratura do lactente que não anda.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22, Figs. 22-1 e 22-20).",
   "incorretas": {
-   "B": "A fonte não considera a fragilidade da coluna uma justificativa suficiente para atribuir automaticamente a fratura–luxação à queda relatada. Desenvolvimento e desproporção da lesão exigem investigação, em vez de aceitar uma causalidade sem avaliação.",
-   "C": "O capítulo trata a fratura–luxação como indicação cirúrgica e pede ressonância diante de déficit. Apenas gesso, sem investigar proteção infantil e lesões associadas, deixa de abordar as duas prioridades do caso.",
-   "D": "A lesão é apresentada aos 8 meses, depois de um evento relatado, sem história que a estabeleça como obstétrica. O capítulo cervical separa o contexto do parto das lesões do lactente fora dele; não se deve usar a explicação obstétrica por rotina para evitar investigação."
+   "B": "**A coluna do lactente é elástica**, e a queda do trocador não explica uma fratura-luxação.",
+   "C": "**A fratura-luxação é instável e cirúrgica**, e a suspeita pede investigação.",
+   "D": "**A lesão obstétrica** aparece ao nascer, não aos 8 meses."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Mecanismos, lesões associadas e avaliação; Flexão-distração (CHANCE) e fratura-luxação.",
-   "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento.",
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Mechanisms of Injury e Fracture-Dislocations, Figs. 22-1 e 22-20",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries)",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)",
+   "Biblioteca OrtoQuestões, resumo Fraturas patológicas e maus-tratos na criança (rockwoodcriancas10-07-patologicas-maus-tratos)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Mecanismos, lesões associadas e avaliação",
-      "Flexão-distração (CHANCE) e fratura-luxação"
-     ],
-     "blocos": [
-      "mecanismos-lesoes-associadas-e-avaliacao-0ddd61bc",
-      "mecanismos-lesoes-associadas-e-avaliacao-e3b6d948",
-      "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "1e67d0c682969011f5173c79b1336acdea44001fc5a76ff19ba1af86ea91beba"
-    },
-    {
-     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
-     "titulo": "Fraturas patológicas e maus-tratos na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
-     "secoes": [
-      "Reconhecimento"
-     ],
-     "blocos": [
-      "reconhecimento-a471746c"
-     ],
-     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
-     "trechosSha256": "3c23dc6bcb7e170220de35b14fa7fe65a3fab96279e08eb9b0787172c8034187"
-    }
-   ],
-   "questaoSha256": "f3d17af8155e7d45c76ed048e2fb8dbc3b2804fd30feade13328c3131a8f0992",
-   "comentarioSha256": "3096e6d3428907b620513aba0583751e1619d93fa016082c5200ae33332018c3"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1258": {
-  "conceito": "Na fratura por **compressão**, o tratamento sem cirurgia é indicado com **partes moles posteriores íntegras e cifose menor que 30°**. Perda de altura anterior acima de **50%** leva o autor a considerar cirurgia: alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 22, compressão).\n\nA compressão compromete a **altura anterior**, mantendo a coluna média íntegra no esquema descrito. A integridade posterior é o que impede usar “sem déficit” como única condição para aceitar qualquer deformidade. O capítulo também considera a magnitude da cifose e da perda de altura.\n\nO protocolo conservador inclui uma órtese de proteção do tronco, como TLSO ou Jewett, por 4–6 semanas e mais um período semelhante de restrição. O resumo diferencia a **explosão**, que atinge colunas anterior e média: ela também pode ter tratamento não operatório se estiver estável, sem déficit e com complexo posterior íntegro. Portanto, não se deve ensinar que toda parede posterior fraturada obrigue cirurgia, mas tampouco confundi-la com a compressão simples da pergunta.\n\n**Na prova:** conferir morfologia, ligamentos, ângulo e altura. A expressão “considerar cirurgia” acima de 50% deve ser preservada, sem inventar um automatismo desligado do restante do caso.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2022 (`coluna-0302`), que perguntou a partir de quanto se recomenda estabilizar a fratura por compressão toracolombar da criança (30 graus de angulação e 50% de acunhamento). Depois, faça a oficial.",
-  "correta": "Alternativa C. Reúne as condições de estabilidade posterior, cifose e perda de altura exatamente como o resumo organiza a decisão. Ausência de déficit é importante, mas não torna os demais critérios dispensáveis.",
+  "conceito": "A compressão é a fratura toracolombar mais comum e quase sempre vai com órtese. O Rockwood and Wilkins' Fractures in Children (cap. 22) define quando:\n- **sem cirurgia**: partes moles posteriores **íntegras** e **cifose menor que 30 graus**; TLSO em leve hiperextensão ou colete de JEWETT, consolidação em 4 a 6 semanas;\n- **considerar cirurgia**: perda da altura anterior **acima de 50%**, sobretudo com cifose aguda importante, ou cifose regional de 30 a 40 graus acima do esperado (várias compressões seguidas); compressão com déficit.\n\nMuro posterior fraturado não é compressão: é explosão. Lesão do complexo ligamentar posterior faz pensar em CHANCE.\n\n**Por que esta questão foi criada.** O TARO 2022 cobrou os limites de 30 graus e 50%.",
+  "correta": "**C) as partes moles posteriores estão íntegras e a cifose é menor que 30 graus; mais de 50% de perda de altura anterior leva a considerar cirurgia.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "A parede posterior comprometida muda a comparação para explosão no esquema de colunas, e ausência de déficit isolada não demonstra toda a estabilidade necessária. A opção não descreve o critério completo da compressão conservadora.",
-   "B": "Mais de 50% de perda anterior é motivo para o autor considerar cirurgia, sobretudo com cifose aguda. Invocar remodelação para aceitar automaticamente esse grau inverte a recomendação da fonte.",
-   "D": "A integridade das partes moles posteriores é condição do tratamento sem cirurgia apresentado. Dor leve não substitui a estabilidade ligamentar nem neutraliza uma lesão do complexo posterior."
+   "A": "**Muro posterior fraturado é explosão**, outra fratura.",
+   "B": "**Mais de 50% de perda** leva a considerar cirurgia; a remodelação é modesta.",
+   "D": "**A lesão do complexo ligamentar posterior** sugere CHANCE, mais provável de precisar de cirurgia."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Compressão e explosão."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Compression Fractures e Authors' Preferred Treatment",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Compressão e explosão"
-     ],
-     "blocos": [
-      "compressao-e-explosao-8c911be9",
-      "compressao-e-explosao-6aac1f3f"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "37216b34bc26f643957c66b9417d54fa4acbf0808797bf8c5056ded31cf9a0d1"
-    }
-   ],
-   "questaoSha256": "dc5a9dab8b8940213d3292d312ba36837db70f7cc1377d3a143bad04ec08289e",
-   "comentarioSha256": "92c981d90f0fe019282d2ceb32ebeae36b1dc1e0b55d6aad22a14fb24888d46e"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1259": {
-  "conceito": "**SCIWORA** é a lesão medular sem alteração na **radiografia e na tomografia convencional**, na definição de Pang e Wilberger citada pelo resumo. Isso não exige que a **ressonância** seja normal. O déficit pode surgir tardiamente e as lesões são mais graves abaixo de 8 anos: alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 22, lesão medular).\n\nO nome nasceu da relação entre **lesão neurológica e imagem convencional**. Com a ressonância, quase todos os casos descritos revelam lesão de partes moles, edema ou hemorragia. Por isso, a fonte diz que o termo perdeu relevância; não se deve usá-lo como sinônimo de “nenhuma lesão em qualquer exame”.\n\nO tempo é outra armadilha. Sintomas transitórios podem anteceder déficits persistentes, e a ausência de déficit imediato não garante que a evolução tenha terminado. O capítulo orienta ressonância em todo déficit neurológico.\n\n**Na prova:** o “sem alteração radiográfica” não inclui uma promessa de ressonância normal nem de déficit sempre breve. A idade menor está associada à maior gravidade no resumo, não à proteção.\n\n**Por que esta questão foi criada.** É gêmea do TEPOP 2024 (`coluna-0227`), que perguntou onde e em que idade a SCIWORA é mais comum (cervical, abaixo de 8 anos), e do TARO 2014 (`coluna-0312`), que perguntou o mecanismo (flexão e distração). O capítulo sustenta a gravidade abaixo de 8 anos e o estiramento medular como mecanismo proposto. Depois, faça as oficiais.",
-  "correta": "Alternativa A. Mantém a atribuição da definição, a possibilidade de instalação tardia, o grupo de maior gravidade e o papel da ressonância. As quatro partes correspondem à discussão da fonte.",
+  "conceito": "PANG e WILBERGER, em Pittsburgh, popularizaram o termo SCIWORA para crianças com lesão medular traumática sem alteração na radiografia nem na tomografia. O Rockwood and Wilkins' Fractures in Children (cap. 22) registra o que eles observaram:\n- alguns pacientes tiveram **déficit de início tardio**, e sintomas transitórios persistiam em muitos que depois ficaram com déficit definitivo;\n- as crianças **abaixo de 8 anos** tiveram lesões **mais graves**;\n- quase todos têm alguma lesão de partes moles na **ressonância**, que deve ser feita em todo paciente com déficit; por isso o termo perde relevância.\n\nOs mecanismos propostos são o estiramento da medula e a lesão vascular.\n\n**Por que esta questão foi criada.** TEPOP 2024, TARO 2014 e TARO 2006 cobraram a SCIWORA; esta reúne as características.",
+  "correta": "**A) foi popularizada por PANG e WILBERGER; o déficit pode aparecer tardiamente, as crianças abaixo de 8 anos têm lesões mais graves e a ressonância quase sempre mostra lesão de partes moles.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "B": "O resumo descreve déficit tardio e sintomas passageiros que podem anteceder lesões duradouras. “Sempre imediato e transitório” elimina justamente essas duas possibilidades clinicamente importantes.",
-   "C": "A ausência de achados é da radiografia e da tomografia convencional na definição histórica. A ressonância mostra alterações em quase todos os casos resumidos, de modo que não pode ser incluída automaticamente no nome.",
-   "D": "A fonte coloca maior gravidade abaixo de 8 anos. A alternativa inverte a relação etária, confundindo o grupo mais vulnerável com os pacientes maiores."
+   "B": "**O déficit pode ser tardio** e, em muitos, os sintomas transitórios precederam um déficit definitivo.",
+   "C": "**A ressonância quase sempre mostra lesão**; o nome vem da radiografia normal.",
+   "D": "**As formas mais graves são abaixo de 8 anos.**"
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: SCIWORA e lesão medular."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Injuries Associated (SCIWORA)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 28 (Spinal Injuries), SCIWORA, Fig. 28.26",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "SCIWORA e lesão medular"
-     ],
-     "blocos": [
-      "sciwora-e-lesao-medular-9ae5196f"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "a4a033eb1531fcfa8763c8041d080917bf093c8d968044426b3ad53a81e81d88"
-    }
-   ],
-   "questaoSha256": "4af18450ca1ccad5c8b69f4745e1cbc4fb90596712d22ba9bacc43cb0c406ae4",
-   "comentarioSha256": "6f00475d0be149aae87083b0d1c67402f8670d6b233fee1b15d59221c8b3e8a9"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1260": {
-  "conceito": "O **TLICS** combina **morfologia, estado neurológico e complexo ligamentar posterior**. No caso: **explosão 2 + medula incompleta 3 + complexo lesado 3 = 8 pontos**, com orientação cirúrgica no esquema da fonte. É a alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 22, tabela TLICS).\n\nA pergunta não pede apenas reconhecer uma indicação de operar: exige a **pontuação correspondente ao caso**. Uma opção pode acertar a palavra “cirurgia” e ainda errar a conta. A morfologia é explosão, e não distração; o déficit é incompleto, e o complexo está demonstrado como lesado, não apenas suspeito.\n\nA tabela orienta sem cirurgia com 3 ou menos, decisão entre as opções com 4 e cirurgia com 5 ou mais. Esses cortes são diferentes das parcelas usadas para somar. Não se deve atribuir ao caso “5” apenas porque esse é o primeiro valor da faixa operatória.\n\n**Na prova:** separar os três domínios e depois aplicar o corte. O número desta lesão é 8, sem duplicar categorias neurológicas nem trocar o escore pelo limiar de conduta.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A soma da TLICS permite comparar os domínios, incluindo o maior peso da lesão incompleta em relação à completa.",
-  "correta": "Alternativa D. As parcelas são 2, 3 e 3, totalizando 8. O resultado fica acima do corte de 5 da tabela, correspondendo à orientação cirúrgica apresentada.",
+  "conceito": "A TLICS soma três categorias, e o Rockwood and Wilkins' Fractures in Children (cap. 22) dá a orientação: **3 ou menos**, sem cirurgia; **4**, com ou sem; **5 ou mais**, cirurgia. Pela pontuação habitual da escala:\n- **morfologia**: compressão 1, explosão mais 1 (2), translação ou rotação 3, distração 4;\n- **neurológico**: íntegro 0, raiz 2, medula ou cone **incompleto 3**, completo 2, cauda equina 3;\n- **complexo ligamentar posterior**: íntegro 0, suspeito 2, **lesado 3**.\n\nNo caso: explosão **2** + lesão incompleta **3** + complexo lesado **3** = **8**, cirurgia. A lesão incompleta pontua mais que a completa porque é a que mais ganha com a descompressão.\n\n**Por que esta questão foi criada.** O capítulo diz que a TLICS foi validada na criança; é a escala de decisão mais usada.",
+  "correta": "**D) 8 pontos, cirurgia.** Explosão 2, lesão incompleta 3 e complexo ligamentar lesado 3 (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "4 é a faixa em que o sistema permite decisão contextual, mas não é a soma desta lesão. O complexo posterior já está lesado e a medula é incompleta; as duas categorias precisam ser pontuadas integralmente.",
-   "B": "3 pode corresponder isoladamente à lesão incompleta ou ao complexo lesado, não ao conjunto com explosão. A pontuação baixa e a conduta sem cirurgia resultam de omitir domínios do caso.",
-   "C": "5 é o limiar cirúrgico e também seria a soma de explosão com incompleta sem acrescentar o complexo lesado. A indicação está na direção correta, mas a pontuação do caso é 8, não 5."
+   "A": "**4 pontos** subestima o caso; só a lesão incompleta e o ligamento já somam 6.",
+   "B": "**3 pontos** seria um caso sem cirurgia, longe deste.",
+   "C": "**5 pontos** esquece parte da soma, embora a orientação (cirurgia) coincida."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Mecanismos, lesões associadas e avaliação."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Classification (TLICS)",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Mecanismos, lesões associadas e avaliação"
-     ],
-     "blocos": [
-      "mecanismos-lesoes-associadas-e-avaliacao-5748dabb"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "5c52f759bda5ff72283cdc9de6e80c5f8d05f5323b8682a7c821dc8fab28ef6b"
-    }
-   ],
-   "questaoSha256": "97e18a9a183a97e0c16a572660f42d9c99e943da632e9b376fd53cdff3553bef",
-   "comentarioSha256": "0fade9b00593a3e078077ab7b160786b0a06284cc327333773e233d409fc32d6"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1261": {
-  "conceito": "A fratura por explosão atinge a coluna anterior e a média. Pela teoria de DENIS, duas colunas seriam instáveis. Na prática, quem decide a estabilidade é a terceira coluna (o complexo ligamentar posterior) e a neurologia.\n\n**A lesão.** Forma mais grave da compressão, que alcança a **parede posterior (coluna média)**. Mecanismo: **carga axial**. Mais comum na **transição toracolombar**. Fragmentos podem ir ao canal; fraturas laminares podem prender a dura. Lesão medular na transição pode dar síndrome do **cone medular** ou da **cauda equina** (examinar o períneo) (Rockwood crianças, 10ª ed., cap. 22).\n\n**Estável ou instável.** Critérios: cominuição, perda de altura, cunha cifótica e **integridade do complexo ligamentar posterior**. Classificação de compartilhamento de carga (cominuição, aposição, cifose). **Translação do corpo acima de 3,5 mm** prediz lesão do complexo posterior. Muitos separam estável e instável só pelo complexo posterior.\n\n**O tratamento sem cirurgia.** WOOD, em estudo randomizado, com pacientes **neurologicamente intactos e complexo posterior normal**: resultados radiológicos e funcionais semelhantes com e sem cirurgia. Na conduta do autor, intacto e com partes moles posteriores íntegras: **TLSO por 8 a 12 semanas** (o texto geral fala em 2 a 4 meses), com seguimento radiográfico e neurológico frequente para pegar falhas cedo; órtese de JEWETT é alternativa.\n\n**Quando operar.** Três colunas, **déficit neurológico**, lesões associadas ou lesão torácica ou abdominal que impeça a órtese, perda de altura com cifose aguda importante. Posterior (parafusos pediculares, redução indireta, tamponamento por laminotomia na lombar) ou anterior (corpectomia, sobretudo com mais de 50% de retropulsão e déficit). Combinada pouco usada na criança.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A explosão estável sem cirurgia é a decisão que mais aparece nas provas de trauma da coluna.\n\n> **Na prova:** explosão = coluna **anterior e média**, **carga axial**, transição toracolombar; estável se **sem déficit** e **complexo posterior íntegro** = **TLSO 8 a 12 semanas** (WOOD); translação **acima de 3,5 mm** = complexo posterior lesado.",
-  "correta": "**B: TLSO por 8 a 12 semanas, com seguimento radiográfico e neurológico próximo.** É a conduta do autor na explosão sem déficit e com complexo ligamentar posterior íntegro (Rockwood crianças, 10ª ed., cap. 22).",
+  "conceito": "Explosão é duas colunas, e pela teoria de DENIS seria sempre instável. O Rockwood and Wilkins' Fractures in Children (cap. 22) mostra que, na prática, o que a torna instável é a **terceira coluna**: o complexo ligamentar posterior.\n\nPara o paciente **neurologicamente intacto** com o complexo ligamentar posterior **íntegro**, a preferência dos autores é **TLSO por 8 a 12 semanas**, com controle radiográfico e neurológico frequente, porque algumas colapsam (a Fig. 22-18 mostra a falta de adesão terminando em reconstrução anterior). WOOD, num estudo randomizado com pacientes assim, não encontrou diferença entre operar e não operar.\n\nA cirurgia fica para lesão de três colunas, déficit ou lesões que impedem a órtese; laminectomia isolada não estabiliza.\n\n**Por que esta questão foi criada.** É a decisão mais controversa do capítulo e cai como pegadinha da \"explosão sempre instável\".",
+  "correta": "**B) TLSO por 8 a 12 semanas, com seguimento radiográfico e neurológico próximo.** É a preferência dos autores do Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "**Agressivo demais.** Muitas explosões precisam de lesão da terceira coluna para serem instáveis; a combinada tem mais morbidade e é pouco usada na criança.",
-   "C": "**Não é o tratamento.** O objetivo da órtese é permitir ficar em pé e andar; o capítulo não indica repouso no leito sem órtese.",
-   "D": "**Sem indicação.** A descompressão entra com déficit neurológico ou compressão importante; não é rotina na explosão estável."
+   "A": "**Duas colunas não bastam para instabilidade**; a combinada é mais mórbida e não é rotina na criança.",
+   "C": "**Repouso sem órtese** não é o tratamento; a órtese permite ficar em pé e andar.",
+   "D": "**Laminectomia de rotina** não estabiliza e não se indica sem déficit."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Burst Fractures e Authors' Preferred Treatment (Burst Fractures)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Burst Fractures e Authors' Preferred Treatment, Fig. 22-18",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "geradoEm": "2026-10-27",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1262": {
-  "conceito": "Depois de lesão medular **completa abaixo de 10 anos**, o resumo descreve **escoliose paralítica em quase 100%**, motivo para planejar a deformidade futura e considerar artrodese mais longa. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 22, lesão medular).\n\nO problema tardio não se limita à consolidação da vértebra fraturada. A **paralisia durante o crescimento** pode acompanhar deformidade de toda uma região da coluna, o que torna insuficiente pensar apenas na posição do foco no dia do trauma.\n\nA fonte orienta pesar a extensão da fusão contra o **desenvolvimento pulmonar**. Portanto, reconhecer o risco elevado não equivale a escolher automaticamente o mesmo número de níveis para toda criança. O planejamento precisa considerar o crescimento e a repercussão funcional.\n\n**Na prova:** completa, criança pequena e deformidade paralítica são o conjunto. Não confundir uma complicação quase universal descrita para esse grupo com uma promessa de recuperação neurológica completa.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O número \"quase 100% abaixo de 10 anos\" é dado típico de prova.",
-  "correta": "Alternativa C. Reproduz o desfecho tardio, a faixa etária e a consequência para o planejamento. O menino de 6 anos se enquadra no grupo de risco destacado, sem que a proporção de grupo substitua a avaliação individual.",
+  "conceito": "Na criança abaixo de 10 anos com **lesão medular completa**, a coluna ainda vai crescer sem o controle muscular, e o Rockwood and Wilkins' Fractures in Children (cap. 22) dá o número: a incidência de **escoliose paralítica** é **quase 100%**, e uma artrodese longa será necessária em algum momento (Fig. 22-14: menino de 5 anos com escoliose progressiva e obliquidade pélvica em 2 anos).\n\nPor isso, pode-se considerar incluir boa parte da coluna torácica e lombar na **artrodese inicial**, mas pesando o **crescimento torácico e pulmonar**: a fusão torácica precoce inibe o desenvolvimento pulmonar. Depois do estirão, o risco de deformidade tardia é baixo se a fratura estiver bem alinhada.\n\n**Por que esta questão foi criada.** É a sequela mais previsível do trauma da coluna da criança.",
+  "correta": "**C) escoliose paralítica, com incidência próxima de 100% abaixo de 10 anos, levando a considerar artrodese mais longa.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "O capítulo chama atenção para a deformidade paralítica da coluna nesse cenário. Discrepância dos membros não é a principal consequência tardia que a fonte usa para justificar o planejamento de artrodese mais longa.",
-   "B": "A afirmação de pseudartrose em quase todos não é o dado apresentado. A proporção próxima de 100% se refere à escoliose paralítica após lesão completa na criança abaixo de 10 anos, outro desfecho.",
-   "D": "O resumo distingue a recuperação das completas das incompletas e mantém risco de sequela importante. A perspectiva de escoliose paralítica não permite afirmar que a maioria recuperará completamente e dispensará planejamento tardio."
+   "A": "**A discrepância dos membros** não é a consequência destacada.",
+   "B": "**A fratura consolida**; o problema é a deformidade.",
+   "D": "**A lesão completa** raramente recupera por completo; um terço não recupera nada."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: SCIWORA e lesão medular."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Outcome Measures e Fracture-Dislocations, Fig. 22-14",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "SCIWORA e lesão medular"
-     ],
-     "blocos": [
-      "sciwora-e-lesao-medular-fc1a88f7"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "b0843c386a6b69affe72b5e7d5376c9f09f1af4c183fc93a6cae05e48cc68b26"
-    }
-   ],
-   "questaoSha256": "4618d4449c14c13db16c617dc8eb80374fbec7bfbcb2ea2fdd2604b3ae264eb7",
-   "comentarioSha256": "0d06396c0530a934f7bc5c7024261af9edb7858b63bd97803d86d35604948f21"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1263": {
-  "conceito": "Estalo no esforço, **dor intensa e sinais radiculares**, com ressonância interpretada como simples abaulamento, deve fazer lembrar a **fratura da placa terminal, ou apófise do anel**. O capítulo indica **tomografia sagital** para confirmar e **laminectomia com retirada do fragmento** nesse padrão: alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 22, atleta jovem).\n\nA lesão envolve a **placa de crescimento**, descrita como Salter I ou II e própria da criança. O fragmento pode fazer a apresentação parecer uma hérnia, enquanto a ressonância é lida como abaulamento. O nome do laudo não deve substituir a correlação com o estalo, a intensidade da dor e a radiculopatia.\n\nO resumo não recomenda tratar esse padrão específico como uma hérnia comum: informa que infiltração não ajuda e que fisioterapia é contraindicada para a lesão apresentada. Isso não deve ser transformado em proibição geral de fisioterapia para toda lombalgia do adolescente; a distinção é diagnóstica.\n\n**Na prova:** a tomografia sagital procura o componente ósseo que a leitura da ressonância pode subestimar. Confirmar a lesão muda o tratamento; não liberar retorno ao esporte apenas por chamar a imagem de abaulamento.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2018 (`pediatria-0627`), que perguntou o sexo e o segmento mais comuns da fratura da placa terminal na lesão lombar da criança (masculino, L4-L5). O resumo não estabelece distribuição preferencial por sexo ou por segmento.",
-  "correta": "Alternativa B. Reúne a lesão do anel, o exame que a confirma e a retirada do fragmento indicada no resumo. O conjunto clínico evita reduzir o problema a uma descrição inespecífica de disco.",
+  "conceito": "Estalo ao chutar a bola, dor desproporcional, sinais radiculares e uma ressonância \"normal\" ou com abaulamento: é a história da **fratura da placa terminal** no Rockwood and Wilkins' Fractures in Children (cap. 22, Fig. 22-22).\n\n- É uma lesão **fisária** (como SALTER-HARRIS I ou II), exclusiva da criança e do adolescente.\n- A flexão arranca um pedaço do canto posterior do corpo (o anel apofisário), que vai para o canal e estica as raízes.\n- Quase não aparece na radiografia e é lida na ressonância como abaulamento; a **tomografia sagital** confirma.\n- Observação raramente é tolerada, infiltração não ajuda, **fisioterapia é contraindicada**; o tratamento é **retirar o fragmento por laminectomia**, com TLSO por 4 a 6 semanas.\n\n**Por que esta questão foi criada.** O TARO 2018 cobrou a epidemiologia dessa fratura; esta mostra o diagnóstico e o tratamento.",
+  "correta": "**B) fratura da placa terminal (apófise do anel); confirmar na tomografia sagital e retirar o fragmento por laminectomia.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "A fonte alerta que a lesão pode imitar hérnia e ser lida como abaulamento. Para esse padrão de placa terminal, não indica infiltração e contraindica fisioterapia, de modo que o tratamento proposto ignora a hipótese óssea.",
-   "C": "O capítulo relaciona espondilólise ao cenário de hiperextensão repetida e fratura de faceta em outra passagem. Aqui o estalo com dor radicular e a imagem discal enganosa correspondem à placa terminal descrita.",
-   "D": "Dor intensa com sinais radiculares e um mecanismo de esforço que pode lesar a apófise não se resolve, no roteiro da fonte, como contratura com retorno automático ao esporte. É necessário esclarecer o componente ósseo."
+   "A": "**Não é hérnia**: o que comprime é osso e cartilagem, e fisioterapia e infiltração não ajudam.",
+   "C": "**A espondilólise** não dá estalo agudo com fragmento no canal.",
+   "D": "**A dor desproporcional e radicular** não é contratura."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Placa terminal e faceta: o atleta jovem."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção End Plate Fractures e Fig. 22-22",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Placa terminal e faceta: o atleta jovem"
-     ],
-     "blocos": [
-      "placa-terminal-e-faceta-o-atleta-jovem-9eaa04f6",
-      "placa-terminal-e-faceta-o-atleta-jovem-102e70f9"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "79de7a58cfd3a534c4a2a1dc18359377563bc11bea1e67d8e6772e42df2fd988"
-    }
-   ],
-   "questaoSha256": "b4b282a7b232ae2de36d2de20376de296202b4fb340610ccc9a75c535331592d",
-   "comentarioSha256": "7bdfb39a61e0bb8191caf6042d84d822bf1a067a1f27f6b68932a676c666891b"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1264": {
-  "conceito": "Na **Chance inteiramente óssea**, sem lesão abdominal e com complexo posterior íntegro, o autor admite **gesso ou órtese em extensão**, alternativa A. Esse cenário deve ser separado da flexão–distração com componente ligamentar ou lesão abdominal, para a qual recomenda cirurgia (Rockwood and Wilkins, 10ª edição, capítulo 22, flexão–distração).\n\nO resumo distingue **Chance pelo osso** e **Smith pelos ligamentos**. Assim, o nome “lesão do cinto” não determina sozinho uma operação: é preciso saber por onde passou o traço e quais estruturas continuam íntegras. O caso fornece exatamente essas condições favoráveis ao tratamento externo.\n\nA idade de 8 anos também está dentro do grupo em que o capítulo considera essa proteção especialmente apropriada, abaixo de cerca de 10 anos. A ausência de lesão abdominal não deve ser presumida apenas por haver pouco desconforto; no enunciado ela já foi investigada e excluída.\n\n**Na prova:** óssea pura, sem abdome e sem falha ligamentar permite imobilização em extensão no protocolo descrito. Não generalizar esse tratamento para toda flexão–distração nem operar todas apenas pelo epônimo.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A decisão entre órtese e cirurgia na fratura de CHANCE é a aplicação prática da distinção entre osso e ligamento.",
-  "correta": "Alternativa A. Conserva as condições do caso e o posicionamento em extensão. O resumo oferece essa possibilidade para o padrão ósseo puro sem lesão abdominal, não para qualquer lesão instável do cinto.",
+  "conceito": "A regra dos autores do Rockwood and Wilkins' Fractures in Children (cap. 22) para a CHANCE cabe em duas perguntas: há **lesão abdominal**? há **componente ligamentar**? Se qualquer resposta for sim, cirurgia.\n\nNo caso, as duas respostas são não: o traço passa **todo pelo osso**, o complexo ligamentar posterior está íntegro e o abdome está bem. O osso consolida, e o tratamento é **gesso ou órtese bem moldados em extensão**, que reduzem a lesão por um momento de extensão. A órtese é ideal abaixo de cerca de 10 anos; uma extensão para a coxa no gesso controla melhor a lordose. O problema mais comum sem cirurgia é a cifose progressiva, que pede acompanhamento.\n\n**Por que esta questão foi criada.** Mostra a exceção da CHANCE: a óssea pura não precisa de cirurgia.",
+  "correta": "**A) gesso ou órtese bem moldados em extensão.** É a conduta dos autores para a CHANCE toda óssea, sem lesão abdominal nem ligamentar (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "B": "O capítulo diferencia subgrupos e admite tratamento externo no ósseo puro sem abdome. A expressão “toda Chance é cirúrgica” apaga as condições que a pergunta fornece para selecionar a opção não operatória.",
-   "C": "O tratamento conservador da fonte é uma imobilização moldada em extensão, não apenas repouso sem proteção. A opção retira o componente mecânico necessário à estratégia apresentada.",
-   "D": "Corpectomia anterior não é o procedimento indicado para essa Chance óssea pura no capítulo. A opção importa uma abordagem de outro padrão, em vez de seguir a seleção por integridade ligamentar e lesão abdominal."
+   "B": "**Nem toda CHANCE é cirúrgica**: a óssea pura sem abdome vai com órtese.",
+   "C": "**Sem imobilização**, a lesão não se mantém reduzida em extensão.",
+   "D": "**A corpectomia** é para explosão com retropulsão, não para a CHANCE."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Flexão-distração (CHANCE) e fratura-luxação."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Flexion-Distraction Injuries e Authors' Preferred Treatment, Fig. 22-10",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Flexão-distração (CHANCE) e fratura-luxação"
-     ],
-     "blocos": [
-      "flexao-distracao-chance-e-fratura-luxacao-b198d03d",
-      "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "9dbb3ca1a116c6509c541b221287046d8122e4bb7bc616cbdacec0a5c3506220"
-    }
-   ],
-   "questaoSha256": "cd0a92d1ceff2005a29851b8ee9e67b64b356fad1734de97744e9da1d26ef4d3",
-   "comentarioSha256": "283f1f66d26b71f22f8d6aad60bc0ea70ba20072aa9d4e881f4c0ab44b7a775f"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1265": {
-  "conceito": "A **fratura–luxação toracolombar com piora neurológica** é uma **emergência cirúrgica** no resumo, alternativa D. O capítulo recomenda estabilizar o mais cedo possível e descreve artrodese posterior **dois níveis acima e dois abaixo** (Rockwood and Wilkins, 10ª edição, capítulo 22, fratura–luxação).\n\nA mudança do exame nas primeiras horas é o dado decisivo. Não é o mesmo cenário de uma deformidade estável com exame preservado, em que se pode discutir órtese. A progressão do déficit impede transformar o acompanhamento em espera programada sem tratar a instabilidade.\n\nA alternativa fala em “pelo menos” dois níveis; a descrição efetivamente consultada fornece **dois acima e abaixo**. Essa formulação não deve ser ampliada para inventar quantos níveis adicionais cada paciente precisaria. A prioridade do caso é reconhecer emergência e estabilização, dentro da organização do atendimento ao trauma.\n\n**Na prova:** fratura–luxação já é cirúrgica no capítulo; piora do déficit acrescenta caráter emergencial. Não esperar o fim de um estado neurológico transitório nem impor 72 horas de atraso sem uma condição clínica que o enunciado não deu.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A fratura-luxação tem indicação cirúrgica no capítulo, e a piora neurológica define a urgência.",
-  "correta": "Alternativa D. É a única que reconhece a emergência e a estratégia posterior do resumo. O planejamento citado é de dois níveis acima e abaixo; a extensão concreta da montagem não deve ser inventada além dos dados da fonte.",
+  "conceito": "A fratura-luxação é **instável por definição**, e o Rockwood and Wilkins' Fractures in Children (cap. 22) diz que ela **sempre** pede estabilização cirúrgica, com ou sem déficit. Com a medula íntegra, a artrodese instrumentada a protege; com lesão completa, facilita a reabilitação.\n\n- A cirurgia típica é **artrodese posterior instrumentada pelo menos dois níveis acima e dois abaixo**.\n- O ideal é operar **o mais cedo possível**, conforme as lesões associadas.\n- Um **déficit que piora** torna a cirurgia uma **emergência**.\n\nEsperar o fim do choque medular faz sentido em outras discussões, não com déficit progressivo e coluna instável.\n\n**Por que esta questão foi criada.** É a conduta mais segura do capítulo e um bom distrator para quem pensa em observar.",
+  "correta": "**D) estabilização cirúrgica como emergência, em geral artrodese posterior instrumentada pelo menos dois níveis acima e abaixo.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "A fonte afirma que a piora neurológica torna o caso uma emergência. Esperar em órtese até terminar o choque medular não trata a instabilidade que pode estar participando da deterioração.",
-   "B": "Tração por 6 semanas não é a conduta indicada para a fratura–luxação com déficit em progressão. O capítulo orienta estabilização cirúrgica precoce, com urgência adicional quando o exame piora.",
-   "C": "O caso não informa instabilidade hemodinâmica que justifique um atraso programado, e o capítulo não fixa espera de 72 horas para esse padrão. A opção substitui a emergência neurológica por uma presunção não fornecida."
+   "A": "**Órtese e observação** não seguram uma lesão instável com déficit piorando.",
+   "B": "**Tração por 6 semanas** não é tratamento da fratura-luxação.",
+   "C": "**Esperar 72 horas** com déficit piorando contraria a regra da emergência."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Flexão-distração (CHANCE) e fratura-luxação."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Fracture-Dislocations e Authors' Preferred Treatment",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Flexão-distração (CHANCE) e fratura-luxação"
-     ],
-     "blocos": [
-      "flexao-distracao-chance-e-fratura-luxacao-a83048ae"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "886216cefd055a3bd1a4f105c325dac23a7e8888cb3fd2bb872606130d0c065a"
-    }
-   ],
-   "questaoSha256": "fa7ad6f04d10d151cafdb8d01389a93b80e33675ab2115a1e7a5441e8d7c8fe9",
-   "comentarioSha256": "d60c0ea09415c09efc17fadc1f97205895afcb9094baa314b27a76cbce8591f3"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1266": {
-  "conceito": "A maioria das crianças com lesão toracolombar chega **neurologicamente intacta, cerca de 85%**, mas outra fratura vertebral aparece em **cerca de 32%**, levando a estudar **toda a coluna**. A tomografia é mais sensível que a radiografia no conjunto descrito: alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 22, avaliação).\n\nEssas informações respondem a perguntas diferentes. Preservação neurológica não garante que exista um único nível lesado, e encontrar uma fratura não encerra a procura. O exame deve ser documentado e a avaliação da extensão não pode depender apenas da região inicialmente dolorosa.\n\nO resumo apresenta desempenho de imagem de **70% para radiografia e 100% para tomografia** nos dados que resume, além de indicar ressonância obrigatória diante de déficit. Esses números não transformam um exame em garantia universal em toda população: mostram a limitação de encerrar o estudo apenas numa radiografia inicial.\n\n**Na prova:** intacta é a apresentação mais comum, mas fraturas adicionais são suficientemente frequentes para mudar o alcance da investigação. Estado neurológico, número de lesões e método de imagem precisam ser considerados separadamente.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os números da avaliação permitem comparar estado neurológico, fraturas associadas e desempenho dos exames no atendimento inicial.",
-  "correta": "Alternativa C. Mantém as proporções e a consequência prática da fonte: estudo completo e maior sensibilidade tomográfica. Não confunde exame neurológico normal com ausência de outras fraturas.",
+  "conceito": "Três números do Rockwood and Wilkins' Fractures in Children (cap. 22) orientam a avaliação:\n- **85%** das crianças com fratura toracolombar são **neurologicamente intactas** (incompleta 5%, completa 10%);\n- **32%** têm **outra fratura vertebral**: estuda-se a coluna inteira, e toda fratura cervical pede imagem da coluna toda;\n- a radiografia tem **70%** de sensibilidade, contra **100%** da **tomografia** (ANTEVIL).\n\nO exame clínico sozinho tem 87% de sensibilidade e 75% de especificidade, insuficiente; por isso quem tem suspeita faz radiografia de rotina, e a tomografia esclarece.\n\n**Por que esta questão foi criada.** Junta os números de avaliação que as afirmativas costumam trocar.",
+  "correta": "**C) cerca de 85% são neurologicamente intactas; há outra fratura vertebral em cerca de 32%, por isso se estuda a coluna inteira; a tomografia é bem mais sensível que a radiografia.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "O resumo divide o grupo em 85% intactas, 5% incompletas e 10% completas. A alternativa inverte a distribuição ao colocar lesão completa na maioria.",
-   "B": "Outra fratura em 32% não corresponde a uma ocorrência que permita limitar a imagem por rotina ao ponto doloroso. O capítulo orienta estudar toda a coluna ao reconhecer esse risco.",
-   "D": "100% é o valor dado para a tomografia, enquanto a radiografia aparece com 70%. A opção troca os métodos e transforma uma radiografia em exclusão suficiente, contrariando os dados apresentados."
+   "A": "**A maioria (85%) chega sem déficit.**",
+   "B": "**Outra fratura vertebral aparece em 32%**; radiografar só a região dolorosa perde lesões.",
+   "D": "**A radiografia tem 70% de sensibilidade**; a tomografia é que chega a 100%."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Mecanismos, lesões associadas e avaliação."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Injuries Associated e Imaging",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Mecanismos, lesões associadas e avaliação"
-     ],
-     "blocos": [
-      "mecanismos-lesoes-associadas-e-avaliacao-e3b6d948"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "29f626cc32473465ed1373e3ce3b5c985e49c9395eae5baaa7735716bbeec303"
-    }
-   ],
-   "questaoSha256": "ff585abdfc3056a87e16e835d9d78ef292d48ffb6d678a45a84a22d3374399d1",
-   "comentarioSha256": "f12ce913fb58274d6db9fd7b0947492645f41b42a01d362d21cc1de65b7a6f50"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1267": {
-  "conceito": "Dor localizada do atleta, reproduzida pela **hiperextensão em pé**, com ressonância que não mostrou a lesão, deve levantar a hipótese de **fratura da faceta lombar ou sacral**. O resumo recomenda **tomografia** e descreve **retirada do fragmento**, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 22, atleta jovem).\n\nA fonte relaciona esse padrão à **hiperextensão repetida** e à espondilólise. Isso dá sentido ao contexto da ginasta: não é apenas uma lombalgia com dois exames normais, mas uma dor provocada por um movimento característico que pede investigação do osso.\n\nO capítulo informa que a ressonância pode perder a fratura e chama a tomografia de padrão-ouro para esse diagnóstico. Assim, a ausência de achado no primeiro método não autoriza concluir contratura nem prova, por outro lado, uma hérnia invisível.\n\n**Na prova:** faceta do atleta com hiperextensão pede tomografia. Placa terminal é outra lesão do resumo, ligada a estalo e quadro radicular e para a qual o tratamento descrito não é fisioterapia.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A fratura da faceta é abordada no capítulo e combina com o tema clássico da espondilólise do atleta.",
-  "correta": "Alternativa A. Liga o padrão de dor e esforço à lesão que pode escapar da ressonância, usando o método e a abordagem descritos. A normalidade dos exames iniciais não encerra a avaliação desse quadro específico.",
+  "conceito": "Ginasta, dor crônica reproduzida pela hiperextensão em pé, localizada, com radiografia e ressonância normais: o Rockwood and Wilkins' Fractures in Children (cap. 22) aponta a **fratura da faceta** lombar ou sacral, uma causa provavelmente subestimada de lombalgia no atleta jovem.\n\n- Mecanismo: **hiperextensão repetitiva**, com ou sem torção; muitas vezes junto com **espondilólise**.\n- A radiografia quase nunca mostra e a **ressonância frequentemente perde**; a **tomografia** com 3D é o **padrão-ouro** (Fig. 22-24).\n- Se a hiperextensão não reproduz a dor, desconfiar do diagnóstico.\n- Infiltração confirma o gerador da dor, mas não resolve; o tratamento é a **retirada do fragmento**, por incisão de cerca de 16 mm, com alívio imediato.\n\n**Por que esta questão foi criada.** Completa as lesões do atleta jovem ao lado da placa terminal (TARO 2018).",
+  "correta": "**A) fratura da faceta lombar, diagnosticada pela tomografia e tratada com retirada do fragmento.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "B": "A opção presume hérnia sem resolver o padrão de hiperextensão e a possibilidade de fratura de faceta que a fonte destaca. Uma ressonância sem achado não é prova positiva de outro diagnóstico.",
-   "C": "O resumo fornece um exemplo de lesão óssea que pode ser perdida pela ressonância. Logo, exames iniciais normais não sustentam, por si, encerrar o caso como contratura muscular.",
-   "D": "A placa terminal tem outro padrão clínico e é confirmada na tomografia sagital. Além disso, o capítulo contraindica fisioterapia para essa lesão descrita e indica retirar o fragmento, tornando inadequada a associação proposta."
+   "B": "**A hérnia** não se reproduz pela hiperextensão localizada, e a dor do caso é posterior.",
+   "C": "**Exames normais não afastam** a fratura da faceta, que a ressonância costuma perder.",
+   "D": "**A placa terminal** é aguda, por flexão, e não se trata com fisioterapia."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: Placa terminal e faceta: o atleta jovem."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Facet Fractures, Figs. 22-23 e 22-24",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "Placa terminal e faceta: o atleta jovem"
-     ],
-     "blocos": [
-      "placa-terminal-e-faceta-o-atleta-jovem-102e70f9",
-      "placa-terminal-e-faceta-o-atleta-jovem-9eaa04f6"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "a4061169e51e1ec535954ad52141a4591a91cb977d0cd9a79e1f5297b8383123"
-    }
-   ],
-   "questaoSha256": "07a7842d11b88704217f2f8572998726de7f87879d784edf838b523b08da3ff0",
-   "comentarioSha256": "b01a3bcfcd7abb82785aef0a673fd0c869fbb49db1167d5e4891739c8b7d3184"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1268": {
-  "conceito": "No capítulo toracolombar pediátrico, **não há evidência de neuroproteção por corticoide na criança**, e o Delphi citado restringe a recomendação ao contexto de **cirurgia intradural, não ao trauma**. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 22, lesão medular).\n\nA pergunta deve ser lida pelo contexto. Uma recomendação em cirurgia intradural não é automaticamente um protocolo para lesão medular traumática. O fato de o medicamento ser conhecido na discussão do trauma adulto também não demonstra benefício pediátrico nem obrigatoriedade numa janela de horário.\n\nO capítulo cervical pediátrico formula a metilprednisolona como **apenas uma opção**, com pouco ou nenhum benefício e mais complicações. Essa discussão não deve ser fundida com a de outro capítulo como se ambas provassem um padrão obrigatório; aqui a alternativa correta reproduz a restrição explicitamente descrita no capítulo 22.\n\n**Na prova:** diferenciar ausência de evidência no trauma infantil de uma indicação delimitada em outro contexto. Não criar uma regra exclusiva para lesão incompleta toracolombar nem usar “sempre nas primeiras 8 horas”.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Os limites do corticoide e a distinção entre trauma e cirurgia intradural motivam esta projeção, conforme a formulação pediátrica da fonte.",
-  "correta": "Alternativa C. Conserva a ausência de apoio à neuroproteção pediátrica traumática e o contexto intradural do Delphi citado. A afirmação é sobre a recomendação apresentada na fonte, não sobre garantia de benefício em todo procedimento intradural.",
+  "conceito": "O Rockwood and Wilkins' Fractures in Children (cap. 22) conta a história do corticoide na lesão medular: a **metilprednisolona** virou padrão no adulto apesar da falta de evidência de benefício; estudos recentes em adolescentes e crianças mostraram **mais complicações**; uma revisão sistemática com painel de especialistas concluiu que **não há evidência** para neuroproteção na lesão medular aguda da criança; e um **DELPHI** recente entre especialistas em coluna pediátrica recomendou o corticoide **só depois de cirurgia intradural**, não no trauma nem depois de procedimentos extradurais.\n\nO capítulo cervical (cap. 21) diz o mesmo de outro jeito: a dose alta é \"apenas uma opção\".\n\n**Por que esta questão foi criada.** A conduta mudou e as provas testam com \"padrão nas primeiras 8 horas\".",
+  "correta": "**C) não há evidência que apoie a neuroproteção na criança; um Delphi recente a recomenda só após cirurgia intradural, não no trauma.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "O resumo não apresenta benefício comprovado nem padrão de cuidado no trauma infantil. A alternativa dá à intervenção uma força de recomendação que a fonte não sustenta.",
-   "B": "A janela de horário não torna obrigatório um tratamento sem apoio de neuroproteção nesse grupo segundo o capítulo. A palavra “sempre” elimina a limitação de evidência que a pergunta pretende reconhecer.",
-   "D": "A fonte não cria indicação exclusiva por incompletude e localização toracolombar. Sua delimitação citada é de contexto intradural, diferente da lesão traumática descrita na pergunta."
+   "A": "**Não há benefício comprovado na criança**, e as complicações aumentam.",
+   "B": "**A janela de 8 horas** vem de estudos antigos em adultos, não confirmados.",
+   "D": "**O capítulo não indica para a lesão incompleta** da transição."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas da coluna toracolombar na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 22 · Thoracolumbar Spine Fractures. Seções: SCIWORA e lesão medular.",
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Órteses, halo, corticoide e cirurgia."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Steroid Treatment",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-22-coluna-toracolombar",
-     "titulo": "Fraturas da coluna toracolombar na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 22 · Thoracolumbar Spine Fractures",
-     "secoes": [
-      "SCIWORA e lesão medular"
-     ],
-     "blocos": [
-      "sciwora-e-lesao-medular-fc1a88f7"
-     ],
-     "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
-     "trechosSha256": "b0843c386a6b69affe72b5e7d5376c9f09f1af4c183fc93a6cae05e48cc68b26"
-    }
-   ],
-   "questaoSha256": "10070523e7c8f6e7bf2c30553fd105fb7f43f01e8a676239347fb1d7ac90e455",
-   "comentarioSha256": "bbcae50092c2ed9f301ad5ec9ae180c92bfa32ce5fe6c1a142822d5f53b54cbf"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1269": {
-  "conceito": "Saber onde a coluna é rígida, onde é móvel e onde termina a medula explica onde as fraturas acontecem e o que elas podem causar.\n\n**Rígida e móvel.** As 12 vértebras torácicas e as 5 lombares se unem por discos e ligamentos fortes. A coluna **torácica** é menos móvel, pela **caixa torácica** e pelos discos menores; cada cabeça de costela cruza um espaço discal. A **lombar** é móvel, com discos grossos. As **facetas torácicas** ficam no **plano coronal**; as **lombares**, no **sagital** (Fig. 22-15). A **transição toracolombar**, entre a torácica rígida e a lombar flexível, é **região de lesão frequente** (Rockwood crianças, 10ª ed., cap. 22).\n\n**Os ligamentos.** Ligamentos longitudinais anterior e posterior, cápsulas facetárias, ligamento amarelo, interespinhoso e supraespinhoso. O **longitudinal anterior raramente rompe na flexão**; falha na extensão ou na fratura-luxação grave. A **flexão** é o mecanismo principal de lesão do **complexo ligamentar posterior** (supraespinhoso, interespinhoso, cápsulas, amarelo). Sua capacidade de cicatrizar é **limitada**, embora bem melhor na criança que no adulto; as fraturas ósseas tendem a consolidar com estabilidade.\n\n**Os nervos.** O canal é mais largo na lombar. A medula atravessa toda a coluna torácica e termina no **cone medular em L1 ou L2**; abaixo, a **cauda equina**, e as lesões abaixo de L1 tendem menos a déficit permanente. Mesmo assim, examinar a sensibilidade perineal e o tônus anal para o cone e a cauda equina.\n\n**DENIS.** Três colunas: anterior, média e posterior; lesão das três é considerada instável.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A anatomia explica por que a transição toracolombar quebra e por que a lesão ligamentar exige cirurgia.\n\n> **Na prova:** facetas **torácicas coronais**, **lombares sagitais**; **transição toracolombar** = lesão frequente; **cone em L1 ou L2**; longitudinal **anterior** não rompe na flexão; complexo posterior cicatriza **mal** (melhor na criança).",
-  "correta": "**B: a transição toracolombar é sede frequente de lesão por unir a coluna torácica rígida à lombar móvel; o cone medular termina em L1 ou L2, e abaixo disso a lesão permanente é menos provável.** São os pontos de anatomia aplicada do capítulo (Rockwood crianças, 10ª ed., cap. 22).",
+  "conceito": "A anatomia explica onde a coluna toracolombar quebra. Pelo Rockwood and Wilkins' Fractures in Children (cap. 22):\n- as vértebras **torácicas** são imbricadas, presas às costelas, com discos pequenos e **facetas no plano coronal**; as **lombares** têm discos grossos e **facetas no plano sagital** (Fig. 22-15);\n- a **transição toracolombar**, entre o segmento rígido e o móvel, é sede **frequente de lesão**;\n- a medula termina no **cone medular em L1 ou L2**; abaixo, a cauda equina, e a lesão permanente é menos provável;\n- o **longitudinal anterior raramente rompe na flexão**; a flexão lesa o **complexo ligamentar posterior**, que **cicatriza pouco** (melhor na criança que no adulto, mas sem garantia).\n\n**Por que esta questão foi criada.** A anatomia aplicada é a base das perguntas sobre local e estabilidade.",
+  "correta": "**B) a transição toracolombar é sede frequente de lesão por unir a coluna torácica rígida à lombar móvel; o cone medular termina em L1 ou L2, e abaixo disso a lesão permanente é menos provável.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
   "incorretas": {
-   "A": "**Planos trocados.** As facetas torácicas ficam no plano coronal, e as lombares, no sagital.",
-   "C": "**Ao contrário.** O longitudinal anterior raramente rompe na flexão; ele falha na extensão ou na fratura-luxação grave. A flexão lesa o complexo posterior.",
-   "D": "**Exagera.** A cicatrização do complexo posterior rompido é limitada, embora melhor na criança; por isso a lesão ligamentar costuma ser operada."
+   "A": "**Está invertido**: torácicas no plano coronal, lombares no sagital.",
+   "C": "**O longitudinal anterior raramente rompe na flexão.**",
+   "D": "**O complexo ligamentar posterior cicatriza mal**; os autores avisam para não contar com isso."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Pathoanatomy and Applied Anatomy e Classification of Thoracolumbar Spine Fractures"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Pathoanatomy and Applied Anatomy, Fig. 22-15",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
-  "geradoEm": "2026-10-27",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1270": {
@@ -32491,6 +32197,54 @@
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Positioning and Approach (Posterior Approach: Pitfalls and Preventions) e C1–C2 Transarticular Instrumentation",
    "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1457": {
+  "conceito": "A classificação AO Spine toracolombar (2013) é organizada pelo mecanismo, como uma escada de gravidade. O Rockwood and Wilkins' Fractures in Children (cap. 22) a reproduz:\n- **A, compressão**: A0 lesões menores (processo transverso ou espinhoso), A1 cunha, A2 fratura em pinça ou \"split\", A3 explosão incompleta, A4 explosão completa;\n- **B, falha da banda de tensão**: **B1** banda de tensão posterior rompida só pelo **osso** (a CHANCE óssea, monossegmentar), **B2** ruptura da banda de tensão posterior com lesão **ligamentar**, **B3** lesão em **hiperextensão** (banda de tensão anterior);\n- **C, falha de todos os elementos**: translação ou deslocamento (fratura-luxação).\n\nA CHANCE de partes moles é a flexão-distração em que a separação posterior passa pelos ligamentos (a \"faceta vazia\" na tomografia axial), e cai em **B2**. A CHANCE puramente óssea seria **B1**; a diferença importa porque o osso consolida e o ligamento não costuma cicatrizar com estabilidade.\n\nO capítulo comenta que a AO tem boa correlação com a TLICS e com a avaliação do complexo ligamentar posterior na cirurgia, e que as duas são válidas na criança, sem consenso sobre qual é melhor.\n\n**Por que esta questão foi criada.** As provas cobraram DENIS (TARO 2022) e a faceta vazia (TEOT 2025); a AO é a classificação atual que liga as duas ideias.",
+  "correta": "**B: B2.** A ruptura ligamentar da banda de tensão posterior é o tipo B2 da AO Spine (Rockwood and Wilkins' Fractures in Children, cap. 22).",
+  "incorretas": {
+   "A": "**A3 é a explosão incompleta**, uma lesão por compressão sem falha da banda de tensão.",
+   "C": "**B3 é a hiperextensão**, que rompe a banda de tensão anterior.",
+   "D": "**C é a translação**, falha de todos os elementos (fratura-luxação)."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Classification of Thoracolumbar Spine Fractures (AO Spine)",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1458": {
+  "conceito": "A CHANCE é a lesão do cinto só abdominal: na criança, a faixa sobe da pelve para o abdome, e na colisão frontal o tronco se dobra sobre ela; o eixo de rotação fica na frente da coluna, e os elementos posteriores se abrem por distração. O Rockwood and Wilkins' Fractures in Children (cap. 22) dá a regra de tratamento dos autores com duas perguntas:\n1. há **lesão abdominal** associada (presente em quase 50% das CHANCE)?\n2. há **componente ligamentar** na lesão?\n\nSe qualquer das duas existir, o tratamento preferido é **cirúrgico**: via posterior com **parafusos pediculares segmentares** em modo compressivo, preservando o máximo de segmentos móveis na lombar. A **órtese ou gesso em extensão** fica para a CHANCE que atravessa **só osso**, sem lesão abdominal nem do complexo ligamentar posterior, sobretudo na criança abaixo de cerca de 10 anos.\n\nO motivo é biológico: o **osso consolida**, mas a ruptura ligamentar posterior **não cicatriza de forma confiável** (talvez na criança muito pequena). O problema mais frequente do tratamento sem cirurgia é a **progressão da cifose**. Na série citada, **84%** dos operados tiveram bom resultado clínico contra **45%** dos não operados.\n\n**Por que esta questão foi criada.** O TEOT 2025 cobrou o sinal da faceta vazia, que denuncia a CHANCE ligamentar; o passo seguinte é saber o que fazer com ela.",
+  "correta": "**D: o componente ligamentar já indica cirurgia (fixação posterior com parafusos pediculares), com bom resultado em 84% dos operados contra 45% dos não operados; o problema mais comum sem cirurgia é a cifose progressiva.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "incorretas": {
+   "A": "**A órtese é para a CHANCE puramente óssea**; o ligamento rompido não cicatriza de forma confiável.",
+   "B": "**A lesão abdominal é uma das indicações**, mas o componente ligamentar sozinho também indica cirurgia.",
+   "C": "**Os resultados são diferentes** (84% x 45%), e o problema da órtese é a cifose progressiva."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seção Flexion-Distraction Injuries (Chance Fractures) e Authors' Preferred Treatment",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1459": {
+  "conceito": "Uma fratura desproporcional ao trauma acende o alerta de **osso fraco**. O Rockwood and Wilkins' Fractures in Children (cap. 22) lembra que a fratura por insuficiência, comum no idoso, é rara na criança, mas algumas condições predispõem: o **corticoide crônico** de doenças reumatológicas e oncológicas leva à osteoporose; histiocitose de LANGERHANS, cistos, outros tumores e infecções também enfraquecem a vértebra.\n\nO que o capítulo recomenda nesse cenário:\n- as fraturas são em geral **por compressão**, muitas vezes **em vários níveis**, e a cifose pode ficar problemática;\n- separar fratura nova de antiga é difícil sem radiografias seriadas; a **ressonância** data a fratura pelo edema;\n- a órtese (TLSO ou de hiperextensão) pode ser necessária **por mais tempo** que na fratura simples, para evitar cifose progressiva;\n- tratar a **causa** da osteopenia: avaliação pelo **endocrinologista pediátrico** e **densitometria (DEXA)**.\n\nSobre o nível: a TLSO de prateleira serve para quase todas as compressões, mas, nas fraturas **acima de T6**, os autores usam uma **órtese cervicotorácica**, com extensão ao queixo e ao occipital. A **vertebroplastia**, discutida no adulto, **não é recomendada** pelos autores na criança, pela falta de estudos e pelo risco de extravasamento do cimento.\n\n**Por que esta questão foi criada.** O TARO 2022 cobrou a indicação cirúrgica da compressão; esta mostra a compressão que não é só trauma.",
+  "correta": "**A: pensar em fratura por insuficiência, pedir avaliação do endocrinologista e densitometria (DEXA), usar órtese por mais tempo que o habitual e, para a fratura acima de T6, órtese cervicotorácica.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "incorretas": {
+   "B": "**Os autores não recomendam vertebroplastia** na criança.",
+   "C": "**Compressões múltiplas com trauma banal** pedem investigar osteoporose, tumor e infecção.",
+   "D": "**Acima de T6, a TLSO não basta**; usa-se a órtese cervicotorácica."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Mechanisms of Injury, Nonoperative Treatment of Compression Fractures e Authors' Preferred Treatment",
+   "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
