@@ -5,12 +5,13 @@ Gera public/pixel/<nome>.png. Uso: python3 scripts/gerar_icones_pixel.py
 """
 from __future__ import annotations
 
+import math
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from gerar_emblemas_provisorios import (  # noqa: E402
-    MADEIRA, METAIS, PERGAMINHO, Tela, circulo, gravar_png, linha, poligono, retangulo, trofeu,
+    MADEIRA, METAIS, N, PERGAMINHO, Tela, circulo, gravar_png, linha, poligono, retangulo, trofeu,
 )
 
 PASTA = Path(__file__).resolve().parents[1] / "public" / "pixel"
@@ -95,9 +96,115 @@ def bau(t: Tela) -> None:
         t.brilho(x, y, "#fff4cf")
 
 
+# ---------- ícones novos (31/10/2026): Flashcards, Revisão, Caderno de erros, Atlas 3D ----------
+VIDRO = ["#1d3a44", "#6f9aa0", "#b9dcd8", "#e2f4f0", "#ffffff"]
+CAPA = ["#240505", "#5a0f0f", "#7f1a1a", "#a83a32", "#e07a6a"]
+MARFIM = ["#4a3a22", "#b39b70", "#e8d8b2", "#f7eed6", "#fffaf0"]
+SETA = ["#062a24", "#1f7a6d", "#2f9a86", "#5cc9ad", "#d2fbef"]
+
+
+def _vizinhos(m: set[tuple[int, int]]) -> set[tuple[int, int]]:
+    return {(x + dx, y + dy) for (x, y) in m for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1))
+            if 0 <= x + dx < N and 0 <= y + dy < N} - m
+
+
+def _por_cima(t: Tela, m: set[tuple[int, int]], rampa: list[str]) -> None:
+    """Forma na frente de outra: o contorno escuro também passa por cima do que está atrás."""
+    t.pintar(_vizinhos(m), rampa[0])
+    t.camada(m, rampa)
+
+
+def _cartao(cx: float, cy: float, w: float, h: float, graus: float) -> list[tuple[float, float]]:
+    a = math.radians(graus)
+    c, s = math.cos(a), math.sin(a)
+    return [(cx + x * c - y * s, cy + x * s + y * c) for (x, y) in ((-w / 2, -h / 2), (w / 2, -h / 2), (w / 2, h / 2), (-w / 2, h / 2))]
+
+
+def _arco(cx: float, cy: float, rx: float, ry: float, a0: float, a1: float, esp: float) -> set[tuple[int, int]]:
+    m: set[tuple[int, int]] = set()
+    passos = 24
+    pts = [(cx + rx * math.cos(math.radians(a0 + (a1 - a0) * i / passos)),
+            cy + ry * math.sin(math.radians(a0 + (a1 - a0) * i / passos))) for i in range(passos + 1)]
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+        m |= linha(x0, y0, x1, y1, esp)
+    return m
+
+
+def _ponta(cx: float, cy: float, rx: float, ry: float, ang: float, sentido: int, tam: float = 3.2) -> set[tuple[int, int]]:
+    """Ponta de seta no fim de um arco, apontando no sentido do giro."""
+    a = math.radians(ang)
+    px, py = cx + rx * math.cos(a), cy + ry * math.sin(a)
+    tx, ty = -rx * math.sin(a) * sentido, ry * math.cos(a) * sentido
+    n = math.hypot(tx, ty)
+    tx, ty = tx / n, ty / n
+    nx, ny = -ty, tx
+    return poligono([(px + tx * tam, py + ty * tam), (px + nx * tam, py + ny * tam), (px - nx * tam, py - ny * tam)])
+
+
+def _elipse(cx: float, cy: float, rx: float, ry: float) -> set[tuple[int, int]]:
+    return {(x, y) for y in range(N) for x in range(N) if ((x + 0.5 - cx) / rx) ** 2 + ((y + 0.5 - cy) / ry) ** 2 <= 1}
+
+
+def flashcards(t: Tela) -> None:
+    t.camada(poligono(_cartao(10, 15, 12, 17, -22)), AZUL)
+    t.pintar(poligono(_cartao(10, 15, 8, 13, -22)), "#d9bf86")
+    _por_cima(t, poligono(_cartao(22, 14, 12, 17, 20)), VERMELHO)
+    t.pintar(poligono(_cartao(22, 14, 8, 13, 20)), "#d9bf86")
+    _por_cima(t, retangulo(10, 10, 22, 28), PERGAMINHO)
+    t.camada(retangulo(11, 11, 21, 13), VERDE, contorno=False)
+    t.camada(linha(13.5, 18, 14, 16, 2) | linha(14, 16, 18, 16, 2) | linha(18, 16, 18.5, 18, 2)
+             | linha(18.5, 18, 16.5, 20.5, 2) | retangulo(15, 20, 16, 22), MADEIRA, contorno=False)
+    t.camada(retangulo(15, 24, 16, 25), MADEIRA, contorno=False)
+    for (x, y) in ((27, 4), (4, 5)):
+        t.brilho(x, y, "#fff4cf")
+
+
+def ampulheta(t: Tela) -> None:
+    for a0, a1 in ((-62, 30), (118, 210)):
+        t.camada(_arco(16, 16, 13.5, 13.5, a0, a1, 2), SETA)
+        t.camada(_ponta(16, 16, 13.5, 13.5, a1, 1, 4), SETA)
+    vidro = poligono([(11, 7), (21, 7), (20.5, 12), (17, 15.5), (17, 16.5), (20.5, 20), (21, 25), (11, 25), (11.5, 20), (15, 16.5), (15, 15.5), (11.5, 12)])
+    _por_cima(t, vidro, VIDRO)
+    t.camada(poligono([(13.5, 11), (18.5, 11), (16.6, 14.5), (15.4, 14.5)]), METAIS["ouro"], contorno=False)
+    t.camada(poligono([(11.5, 25), (13, 21.5), (16, 19.5), (19, 21.5), (20.5, 25)]), METAIS["ouro"], contorno=False)
+    t.pintar(retangulo(15, 15, 16, 19), "#f5cd6b")
+    for x in (9, 22):
+        _por_cima(t, retangulo(x, 6, x + 1, 26), METAIS["ouro"])
+    _por_cima(t, retangulo(7, 3, 24, 6), MADEIRA)
+    _por_cima(t, retangulo(7, 25, 24, 28), MADEIRA)
+    t.pintar(retangulo(13, 8, 13, 9), "#ffffff")
+    t.brilho(27, 3, "#fff4cf")
+
+
+def caderno_erros(t: Tela) -> None:
+    t.camada(retangulo(8, 5, 26, 28), PERGAMINHO)
+    _por_cima(t, retangulo(6, 4, 24, 27), CAPA)
+    for y in range(6, 27, 4):
+        _por_cima(t, retangulo(4, y, 8, y + 1), METAIS["prata"])
+    _por_cima(t, poligono([(19, 1), (23, 1), (23, 10), (21, 8.5), (19, 10)]), VERDE)
+    _por_cima(t, retangulo(11, 13, 21, 22), PERGAMINHO)
+    t.camada(linha(13.5, 15.5, 18.5, 20.5, 1.8) | linha(18.5, 15.5, 13.5, 20.5, 1.8), VERMELHO, contorno=False)
+    t.brilho(28, 4, "#fff4cf")
+
+
+def atlas_osso(t: Tela) -> None:
+    cx, cy, rx, ry = 16, 12.5, 13, 4
+    t.camada(_arco(cx, cy, rx, ry, 180, 360, 1.8), SETA)
+    t.camada(retangulo(5, 24, 26, 28), MADEIRA)
+    _por_cima(t, _elipse(16, 23.5, 10.5, 2.8), MADEIRA)
+    t.pintar(_elipse(16, 23.2, 7.5, 1.3), "#d9a877")
+    osso = (linha(14.5, 7, 17, 17.5, 3.6) | circulo(12.4, 5, 2.9) | circulo(17.4, 4.3, 2.7)
+            | circulo(14.6, 19.6, 2.8) | circulo(19.6, 19, 2.8))
+    _por_cima(t, osso, MARFIM)
+    t.camada(_arco(cx, cy, rx, ry, 0, 158, 1.8), SETA)
+    t.camada(_ponta(cx, cy, rx, ry, 158, 1, 4), SETA)
+    for (x, y) in ((27, 4), (5, 4)):
+        t.brilho(x, y, "#fff4cf")
+
 ICONES = {
     "treinar": livro, "revisao": calendario, "desempenho": grafico, "ranking": trofeu_ouro,
     "simulado": prancheta, "liga": escudo_liga, "turma": turma, "relatorio": envelope, "planos": bau,
+    "flashcards": flashcards, "ciclo": ampulheta, "erros": caderno_erros, "atlas": atlas_osso,
 }
 
 
