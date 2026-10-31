@@ -2055,15 +2055,15 @@
   },
   {
    "id": "green8-malformacoes-congenitas",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Malformações congênitas da mão e do antebraço",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
-   "edicao": "8ª edição",
-   "capitulo": "Capítulos 35 a 38 · Mão pediátrica",
-   "resumo": "Embriologia (crista ectodérmica apical, zona de atividade polarizadora e Wnt; janela de 4 a 8 semanas); sindactilia (apoptose, comissuras, momento da separação, APERT e UPTON, bandas de constrição); braquidactilia, clinodactilia e KIRNER; duplicação do polegar (WASSEL, BILHAUT-CLOQUET) e polegar em gatilho; deficiência radial (BAYNE e KLUG, nervo mediano, contraindicação da centralização); sinostose radioulnar proximal (CLEARY e OMER, osteotomia derrotatória); deformidade de MADELUNG e ligamento de VICKERS; deficiência transversal e KRUKENBERG.",
+   "edicao": "7ª edição (2017), com a 8ª traduzida",
+   "capitulo": "Capítulos 35 a 38 · Mão pediátrica, com o Tachdjian (caps. 12, 21 e 35)",
+   "resumo": "Embriologia (AER, ZPA e Wnt; janela de 4 a 8 semanas) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER, camptodactilia e macrodactilia; deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.",
    "acesso": "gratis",
-   "minutos": 8,
+   "minutos": 34,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2071,8 +2071,13 @@
      "radar": "fundamento"
     },
     {
-     "id": "a-embriologia",
-     "titulo": "A embriologia",
+     "id": "a-embriologia-e-o-broto-do-membro",
+     "titulo": "A embriologia e o broto do membro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-classificacoes-swanson-omt-e-frantz-e-o-rahil",
+     "titulo": "As classificações: SWANSON, OMT e FRANTZ e O'RAHILLY",
      "radar": "confirmado"
     },
     {
@@ -2081,23 +2086,48 @@
      "radar": "confirmado"
     },
     {
-     "id": "os-dedos-curtos-e-tortos",
-     "titulo": "Os dedos curtos e tortos",
+     "id": "a-banda-de-constricao",
+     "titulo": "A banda de constrição",
      "radar": "confirmado"
     },
     {
-     "id": "o-polegar",
-     "titulo": "O polegar",
+     "id": "a-mao-de-apert",
+     "titulo": "A mão de APERT",
      "radar": "confirmado"
     },
     {
-     "id": "a-deficiencia-radial",
-     "titulo": "A deficiência radial",
+     "id": "a-polidactilia-e-a-duplicacao-do-polegar",
+     "titulo": "A polidactilia e a duplicação do polegar",
      "radar": "confirmado"
     },
     {
-     "id": "a-sinostose-radioulnar-proximal",
-     "titulo": "A sinostose radioulnar proximal",
+     "id": "o-polegar-trifalangico-a-hipoplasia-e-o-gatilho",
+     "titulo": "O polegar trifalângico, a hipoplasia e o gatilho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-dedos-curtos-tortos-e-dobrados",
+     "titulo": "Os dedos curtos, tortos e dobrados",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-macrodactilia",
+     "titulo": "A macrodactilia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-deficiencia-radial-mao-torta-radial",
+     "titulo": "A deficiência radial (mão torta radial)",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-deficiencia-ulnar",
+     "titulo": "A deficiência ulnar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-sinostose-radioulnar-e-a-luxacao-congenita-da-",
+     "titulo": "A sinostose radioulnar e a luxação congênita da cabeça do rádio",
      "radar": "confirmado"
     },
     {
@@ -2106,57 +2136,74 @@
      "radar": "confirmado"
     },
     {
-     "id": "a-deficiencia-transversal",
-     "titulo": "A deficiência transversal",
+     "id": "a-deficiencia-transversal-e-o-krukenberg",
+     "titulo": "A deficiência transversal e o KRUKENBERG",
      "radar": "confirmado"
+    },
+    {
+     "id": "as-vizinhas-do-subtema-sprengel-distrofia-fascio",
+     "titulo": "As vizinhas do subtema: SPRENGEL, distrofia fascioescapuloumeral e wafer",
+     "radar": "fundamento"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
     "mao-0007",
     "mao-0020",
+    "mao-0493",
+    "mao-0509",
+    "mao-0491",
     "mao-0073",
+    "mao-0009",
+    "mao-0424",
+    "mao-0078",
     "mao-0038",
     "mao-0524",
-    "mao-0424",
-    "mao-0009",
-    "mao-0078",
+    "mao-0180",
+    "mao-0105",
+    "mao-0427",
+    "mao-0061",
+    "mao-0053",
     "mao-0516",
     "mao-0249",
     "mao-0146",
     "mao-0008",
     "mao-0542",
-    "mao-0180",
-    "mao-0061",
-    "mao-0105",
-    "mao-0427",
-    "mao-0053",
+    "mao-0636",
     "mao-0075",
     "mao-0157",
     "mao-0562",
+    "mao-0025",
+    "mao-0139",
     "mao-0063",
     "mao-0098",
     "mao-0517",
-    "mao-0139",
-    "mao-0025",
+    "mao-0250",
     "mao-0307",
     "mao-0024",
-    "mao-0352",
     "mao-0297",
+    "mao-0352",
     "mao-0339",
     "mao-0083",
     "mao-0047",
     "mao-0489",
+    "mao-0643",
     "mao-0439",
-    "mao-0509",
-    "mao-0491"
+    "mao-0490",
+    "mao-0548",
+    "mao-0647"
    ],
    "treino": [
     "mao-2582",
     "mao-2583",
     "mao-2584",
     "mao-2585",
-    "mao-2590",
     "mao-2589",
+    "mao-2590",
     "mao-2586",
     "mao-2587",
     "mao-2588",
