@@ -6,8 +6,9 @@ caem estiverem 100% feitos. Este script mede isso a partir do acervo, sem depend
 
   - tema que mais cai = subtema com pelo menos MIN_QUESTOES questões do TEOT ou do TARO;
   - questão refeita = comentário com geradoEm a partir de 2026-10-30 (início da refação, no jeito novo);
-  - resumo pronto = algum resumo da biblioteca com o subtema no cabeçalho e pelo menos 45 KB;
-  - subtema feito = resumo pronto e nenhuma questão TEOT/TARO pendente.
+  - questão pronta = comentário refeito E citada num bloco !questoes de um resumo com pelo menos 45 KB (subtemas
+    guarda-chuva, como "Outras fraturas na criança", se espalham por vários capítulos: cada questão precisa do seu);
+  - subtema feito = nenhuma questão TEOT/TARO pendente.
 
 Uso:
   python3 scripts/biblioteca/fila_teot_taro.py              # fila completa, na ordem de trabalho
@@ -53,6 +54,13 @@ def carregar():
         m = re.search(r"^subtemas: (.*)$", t, re.M)
         for s in (m.group(1).split(";") if m else []):
             resumos[s.strip()].append((Path(md).stem, len(t)))
+    citada = defaultdict(int)  # id -> tamanho do maior resumo que a cita
+    for md in glob.glob(str(RAIZ / "conteudo/biblioteca/*.md")):
+        t = Path(md).read_text(encoding="utf-8")
+        for linha in t.splitlines():
+            if linha.startswith("!questoes"):
+                for i in re.findall(r"[a-z-]+-\d{4}", linha):
+                    citada[i] = max(citada[i], len(t))
     subtemas = defaultdict(list)
     simulados = defaultdict(int)
     for p in glob.glob(str(RAIZ / "public/acervo/temas/*.json")):
@@ -62,7 +70,7 @@ def carregar():
                     subtemas[s].append(q)
                 elif q.get("simulado"):
                     simulados[s] += 1
-    return com, resumos, subtemas, simulados
+    return com, resumos, subtemas, simulados, citada
 
 
 def simulados_sugeridos(qs: list, ja_feitos: int) -> int:
@@ -75,14 +83,15 @@ def simulados_sugeridos(qs: list, ja_feitos: int) -> int:
 
 
 def fila():
-    com, resumos, subtemas, simulados = carregar()
+    com, resumos, subtemas, simulados, citada = carregar()
     linhas = []
     for s, qs in subtemas.items():
         if len(qs) < MIN_QUESTOES:
             continue
-        pend = [q["id"] for q in qs if (com.get(q["id"], {}).get("geradoEm") or "") < INICIO_REFACAO]
+        pend = [q["id"] for q in qs if (com.get(q["id"], {}).get("geradoEm") or "") < INICIO_REFACAO
+                or citada.get(q["id"], 0) < MIN_RESUMO]
         rs = resumos.get(s, [])
-        pronto = any(n >= MIN_RESUMO for _, n in rs)
+        pronto = not pend
         linhas.append({"subtema": s, "tema": qs[0]["id"].rsplit("-", 1)[0], "questoes": len(qs),
                        "pendentes": pend, "resumos": rs, "resumoPronto": pronto,
                        "simulados": simulados.get(s, 0), "simuladosSugeridos": simulados_sugeridos(qs, simulados.get(s, 0)),
