@@ -38,6 +38,8 @@ export function SeletorArvore({
   const lista = variante === 'lista'
   const [aberto, definirAberto] = useState(lista)
   const [busca, definirBusca] = useState('')
+  // "Ver só os marcados": confere e tira escolhas sem rolar a lista inteira.
+  const [soMarcados, definirSoMarcados] = useState(false)
   // Temas começam fechados: a grade mostra todos de uma vez, e os subtemas
   // abrem sob demanda logo abaixo do cartão.
   const [abertos, definirAbertos] = useState<string[]>([])
@@ -63,6 +65,11 @@ export function SeletorArvore({
   const ordenada = useMemo(() => arvore.map((no) => ({ ...no, subtemas: ordenar(no.subtemas) })), [arvore])
   const filtrada = useMemo(() => {
     const termo = normalizar(busca.trim())
+    if (soMarcados && !termo) {
+      return ordenada
+        .map((no) => (temas.includes(no.slug) ? no : { ...no, subtemas: no.subtemas.filter((s) => subtemas.includes(s)) }))
+        .filter((no) => temas.includes(no.slug) || no.subtemas.length > 0)
+    }
     if (!termo) return ordenada
     return ordenada
       .map((no) => {
@@ -73,7 +80,7 @@ export function SeletorArvore({
         return temaBate || filhos.length > 0 ? { ...no, subtemas: filhos } : null
       })
       .filter((no): no is NoAssunto => no !== null)
-  }, [ordenada, busca])
+  }, [ordenada, busca, soMarcados, temas, subtemas])
 
   const total = temas.length + subtemas.length
   const resumo =
@@ -110,7 +117,22 @@ export function SeletorArvore({
     )
   }
 
+  /** Marca todos os subtemas com questões deste assunto (equivale ao assunto inteiro) ou desmarca todos. */
+  function marcarTodosDoTema(no: NoAssunto, marcar: boolean) {
+    const fora = subtemas.filter((s) => !no.subtemas.includes(s))
+    if (marcar) aoMudar([...temas.filter((t) => t !== no.slug), no.slug], fora)
+    else aoMudar(temas.filter((t) => t !== no.slug), fora)
+  }
+
   const buscando = busca.trim().length > 0
+  const termoBusca = normalizar(busca.trim())
+  /** O nome com o trecho buscado em destaque (sem depender de acento nem de maiúscula). */
+  function comDestaque(nome: string) {
+    if (!termoBusca) return nome
+    const i = normalizar(nome).indexOf(termoBusca)
+    if (i < 0) return nome
+    return <>{nome.slice(0, i)}<mark className="seletor__achado">{nome.slice(i, i + termoBusca.length)}</mark>{nome.slice(i + termoBusca.length)}</>
+  }
 
   return (
     <div className={'seletor' + (lista ? ' seletor--lista' : '')} ref={caixa}>
@@ -152,23 +174,32 @@ export function SeletorArvore({
               ))}
             </ul>
           )}
-          <label className="so-leitor" htmlFor={idBusca}>
-            Buscar assunto
-          </label>
-          <input
-            id={idBusca}
-            className="entrada"
-            type="search"
-            placeholder="Buscar assunto"
-            value={busca}
-            onChange={(e) => definirBusca(e.target.value)}
-            autoFocus={!lista}
-          />
+          <div className="seletor__filtro">
+            <label className="seletor__filtro-rotulo" htmlFor={idBusca}>Achar um assunto ou subtema pelo nome</label>
+            <div className="seletor__filtro-campo">
+              <Icone nome="filtro" tamanho={16} />
+              <input
+                id={idBusca}
+                className="entrada"
+                type="search"
+                placeholder="Ex.: Kienböck, menisco, escoliose"
+                value={busca}
+                onChange={(e) => definirBusca(e.target.value)}
+                autoFocus={!lista}
+              />
+              {busca && <button type="button" className="seletor__limpar-busca" onClick={() => definirBusca('')} aria-label="Limpar a busca de assunto"><Icone nome="fechar" tamanho={16} /></button>}
+            </div>
+            {lista && total > 0 && !buscando && (
+              <button type="button" className="seletor__so-marcados" aria-pressed={soMarcados} onClick={() => definirSoMarcados((v) => !v)}>
+                {soMarcados ? 'Ver todos os assuntos' : `Ver só os ${total} marcados`}
+              </button>
+            )}
+          </div>
 
           <div className="seletor__lista seletor__grade">
             {filtrada.length === 0 && (
               <p className="meta" style={{ padding: '0.5rem' }}>
-                Nenhum assunto com esse nome. Apague a busca para ver a lista inteira.
+                {soMarcados && !buscando ? 'Nenhum assunto marcado.' : 'Nenhum assunto com esse nome. Apague a busca para ver a lista inteira.'}
               </p>
             )}
 
@@ -180,6 +211,7 @@ export function SeletorArvore({
               return (
                 <Fragment key={no.slug}>
                   <div className={'tema-cartao' + (marcado ? ' tema-cartao--marcado' : '') + (parcial ? ' tema-cartao--parcial' : '') + (expandido ? ' tema-cartao--aberto' : '')}>
+                    {/* Duas áreas separadas: a da esquerda marca o assunto inteiro; a da direita só abre os subtemas. */}
                     <label className="tema-cartao__principal">
                       <input
                         type="checkbox"
@@ -189,38 +221,53 @@ export function SeletorArvore({
                         }}
                         onChange={() => alternarTema(no.slug, no)}
                       />
-                      <span className="tema-cartao__nome">{no.nome}</span>
-                      <span className="tema-cartao__qtd">{porTema[no.slug] ?? 0}</span>
+                      <span className="tema-cartao__texto">
+                        <span className="tema-cartao__nome">{comDestaque(no.nome)}</span>
+                        <span className="tema-cartao__estado">
+                          {marcado ? 'Assunto inteiro' : parcial ? `${marcadosAqui} de ${no.subtemas.length} subtemas` : `${(porTema[no.slug] ?? 0).toLocaleString('pt-BR')} questões`}
+                        </span>
+                      </span>
                     </label>
                     {no.subtemas.length > 0 && (
                       <button
                         type="button"
                         className="tema-cartao__sub"
                         aria-expanded={expandido}
+                        aria-label={`${expandido ? 'Fechar' : 'Abrir'} os ${no.subtemas.length} subtemas de ${no.nome}`}
+                        disabled={buscando}
                         onClick={() =>
                           definirAbertos((a) =>
                             a.includes(no.slug) ? a.filter((s) => s !== no.slug) : [...a, no.slug],
                           )
                         }
                       >
-                        {parcial ? `${marcadosAqui} de ${no.subtemas.length} subtemas` : `${no.subtemas.length} subtemas`}
-                        <Icone nome={expandido ? 'cima' : 'baixo'} tamanho={14} />
+                        <span>{no.subtemas.length} subtemas</span>
+                        <Icone nome={expandido ? 'cima' : 'baixo'} tamanho={16} />
                       </button>
                     )}
                   </div>
                   {expandido && no.subtemas.length > 0 && (
                     <div className="subtemas-painel">
-                      <p className="subtemas-painel__titulo">{marcado ? `${no.nome} inteiro está marcado. Desmarque um subtema para tirar só ele.` : `Subtemas de ${no.nome}, em ordem alfabética`}</p>
+                      <div className="subtemas-painel__cabeca">
+                        <p className="subtemas-painel__titulo">{marcado ? `${no.nome} inteiro está marcado. Desmarque um subtema para tirar só ele.` : `Subtemas de ${no.nome}, em ordem alfabética`}</p>
+                        <span className="subtemas-painel__acoes">
+                          <button type="button" className="subtemas-painel__acao" onClick={() => marcarTodosDoTema(no, true)} disabled={marcado}>Marcar todos</button>
+                          <button type="button" className="subtemas-painel__acao" onClick={() => marcarTodosDoTema(no, false)} disabled={!marcado && marcadosAqui === 0}>Desmarcar todos</button>
+                        </span>
+                      </div>
                       <ul className="subtemas-lista">
                         {no.subtemas.map((sub) => {
                           const ativo = marcado || subtemas.includes(sub)
                           const n = porSubtema[sub] ?? 0
+                          // Sem questões neste recorte: não dá para marcar (marcar só traria uma sessão vazia). Se já
+                          // estava marcado, continua desmarcável.
+                          const vazio = n === 0 && !ativo
                           return (
                             <li key={sub} className={'subtemas-lista__item' + (ativo ? ' subtemas-lista__item--ativo' : '') + (n === 0 ? ' subtemas-lista__item--vazio' : '')}>
-                              <label>
-                                <input type="checkbox" checked={ativo} onChange={() => alternarSubtema(no, sub)} />
-                                <span className="subtemas-lista__nome">{sub}</span>
-                                <span className="subtemas-lista__qtd">{n.toLocaleString('pt-BR')}</span>
+                              <label title={vazio ? 'Sem questões com os filtros de agora' : undefined}>
+                                <input type="checkbox" checked={ativo} disabled={vazio} onChange={() => alternarSubtema(no, sub)} />
+                                <span className="subtemas-lista__nome">{comDestaque(sub)}</span>
+                                <span className="subtemas-lista__qtd">{vazio ? <><span className="so-leitor">sem questões agora</span><span aria-hidden="true">0</span></> : n.toLocaleString('pt-BR')}</span>
                               </label>
                             </li>
                           )

@@ -313,3 +313,75 @@
   .tn-barra__resumo strong svg { color: var(--verdete); }
   .tn-barra__resumo span { color: var(--verdete); font-size: var(--meta); font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
+
+/* ── Treinar, 1/11/2026: ergonomia da montagem (alvos grandes, marcar separado de abrir, buscas distintas) ── */
+
+/* Assunto: duas áreas de toque independentes, cada uma com pelo menos 48 px de altura. */
+.tema-cartao { grid-template-columns: minmax(0, 1fr) auto; align-items: stretch; gap: 0; padding: 0; overflow: hidden; }
+.tema-cartao__principal { grid-template-columns: auto minmax(0, 1fr); gap: 0.75rem; min-height: 3.25rem; padding: 0.55rem 0.5rem 0.55rem 0.85rem; border-radius: inherit; }
+.tema-cartao__principal:hover { background: color-mix(in srgb, var(--verdete-veu) 60%, transparent); }
+.tema-cartao__principal input { width: 1.25rem; height: 1.25rem; }
+.tema-cartao__texto { display: grid; gap: 0.1rem; min-width: 0; }
+.tema-cartao__estado { color: var(--texto-2); font-size: var(--meta); font-variant-numeric: tabular-nums; }
+.tema-cartao--marcado .tema-cartao__estado, .tema-cartao--parcial .tema-cartao__estado { color: var(--verdete); font-weight: 650; }
+.tema-cartao__sub { align-self: stretch; justify-self: end; gap: 0.35rem; min-width: 3rem; margin: 0; padding: 0 0.85rem; border-left: 1px solid var(--traco); border-radius: 0;
+  text-decoration: none !important; white-space: nowrap; transition: background-color 0.12s ease; }
+.tema-cartao__sub:hover:not(:disabled), .tema-cartao__sub[aria-expanded="true"] { background: var(--verdete-veu); }
+.tema-cartao__sub:disabled { color: var(--texto-2); cursor: default; }
+.tema-cartao__sub:focus-visible, .tema-cartao__principal:focus-within { outline: 2px solid var(--foco); outline-offset: -2px; }
+@media (max-width: 46rem) {
+  .tema-cartao { padding: 0; }
+  .tema-cartao__sub > span { font-size: var(--meta); }
+}
+
+/* Subtemas: cabeçalho com marcar e desmarcar todos; os sem questões não parecem marcáveis. */
+.subtemas-painel__cabeca { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.4rem 1rem; margin-bottom: 0.6rem; }
+.subtemas-painel__cabeca .subtemas-painel__titulo { margin: 0; }
+.subtemas-painel__acoes { display: inline-flex; gap: 0.35rem; }
+.subtemas-painel__acao { min-height: 36px; padding: 0 0.8rem; border: 1px solid var(--traco-forte); border-radius: 999px; background: var(--superficie);
+  color: var(--verdete); font: inherit; font-size: var(--meta); font-weight: 700; cursor: pointer; }
+.subtemas-painel__acao:hover:not(:disabled) { background: var(--verdete-veu); border-color: var(--verdete); }
+.subtemas-painel__acao:disabled { color: var(--texto-2); opacity: 0.6; cursor: default; }
+.subtemas-lista__item label { min-height: 2.75rem; }
+.subtemas-lista__item--vazio label { cursor: not-allowed; background: transparent; border-style: dashed; }
+.subtemas-lista__item--vazio { opacity: 0.6; }
+.subtemas-lista__item--vazio.subtemas-lista__item--ativo { opacity: 1; }
+.subtemas-lista__nome { overflow-wrap: anywhere; }
+.subtemas-lista__item input { width: 1.2rem; height: 1.2rem; }
+
+/* Busca de assunto: rótulo visível, ícone de filtro (não de lupa), limpar e "ver só os marcados". */
+.seletor__filtro { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 0.35rem 0.6rem; margin-bottom: 0.75rem; }
+.seletor__filtro-rotulo { grid-column: 1 / -1; color: var(--texto); font-size: var(--meta); font-weight: 700; }
+.seletor__filtro-campo { position: relative; display: flex; align-items: center; }
+.seletor__filtro-campo > svg { position: absolute; left: 0.75rem; color: var(--texto-2); pointer-events: none; }
+.seletor__filtro-campo .entrada { width: 100%; min-height: 44px; padding-left: 2.3rem; padding-right: 2.6rem; }
+.seletor__limpar-busca, .tn-busca__limpar { position: absolute; right: 0.25rem; display: grid; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 8px;
+  background: none; color: var(--texto-2); cursor: pointer; }
+.seletor__limpar-busca:hover, .tn-busca__limpar:hover { background: var(--superficie-2); color: var(--texto); }
+.seletor__so-marcados { min-height: 44px; padding: 0 0.9rem; border: 1px solid var(--verdete); border-radius: 10px; background: var(--superficie); color: var(--verdete);
+  font: inherit; font-size: var(--meta); font-weight: 700; cursor: pointer; white-space: nowrap; }
+.seletor__so-marcados[aria-pressed="true"] { background: var(--verdete); color: var(--sobre-destaque); }
+.seletor__achado { padding: 0 1px; border-radius: 2px; background: var(--ouro-veu); color: inherit; box-shadow: inset 0 -2px 0 var(--ouro); }
+.seletor__etiqueta { min-height: 40px; }
+@media (max-width: 30rem) { .seletor__filtro { grid-template-columns: minmax(0, 1fr); } .seletor__so-marcados { justify-self: start; } }
+
+/* Busca no texto das questões: rótulo próprio, para não ser confundida com a busca de assunto. */
+.tn-busca-texto { display: grid; gap: 0.35rem; margin-bottom: 1rem; }
+.tn-busca-texto__rotulo { color: var(--texto); font-size: var(--meta); font-weight: 700; }
+.tn-busca-texto__rotulo small { margin-left: 0.35rem; color: var(--texto-2); font-weight: 600; }
+.tn-busca { position: relative; }
+.tn-busca .entrada { min-height: 44px; padding-right: 2.6rem; }
+
+/* Alvos de toque confortáveis no celular. */
+@media (max-width: 46rem) {
+  .tn-vidro { min-height: 44px; }
+  .tr-pilula { min-height: 44px; }
+  .caixa { min-height: 44px; align-items: center; }
+}
+
+/* Desfazer depois de limpar. */
+.tn-desfazer { margin: 0.5rem 0 0; color: inherit; font-size: var(--meta); opacity: 0.9; }
+.tn-desfazer button { min-height: 36px; margin-left: 0.25rem; padding: 0 0.6rem; border: 0; border-radius: 8px; background: rgba(240, 196, 106, 0.18); color: inherit; font: inherit; font-weight: 800; text-decoration: underline; cursor: pointer; }
+.tn-gaveta__dados { margin-bottom: 0.75rem; }
+@media (prefers-reduced-motion: reduce) { .tema-cartao__sub, .tema-cartao, .subtemas-lista__item label { transition: none; } }
+@media (max-width: 46rem) { .subtemas-painel__acao, .seletor__rodape .botao { min-height: 44px; } }
