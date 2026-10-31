@@ -2,7 +2,7 @@ import { Icone } from '../Icone'
 import { recurso } from '../../config'
 import { href } from '../../util/rotas'
 import { linkConta } from '../../conta/passagem'
-import { real } from '../../dados/planos'
+import { PRECO_DE_ABERTURA, real } from '../../dados/planos'
 import { PLANOS_PIPOCA, centavos, cobranca, degrauAnual, descontoPct, economia, porDia, porMes, seloPlano, semMoeda, type Plano } from '../../dados/vendas'
 import { IconePix, IconeCartao } from './IconesPagamento'
 
@@ -41,7 +41,8 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
             </header>
             <p className="vd-plano__chamada">{p.chamada}</p>
             <p className="vd-plano__mes" aria-label={`${real(porMes(p))} por mês`}><small>R$</small><strong>{semMoeda(porMes(p))}</strong><small>/mês</small></p>
-            <p className="vd-plano__total">{cobranca(p)}</p>
+            {/* O selo vai dentro do total: os cartões alinham as linhas por subgrid e precisam do mesmo número de filhos. */}
+            <p className="vd-plano__total">{cobranca(p)}{PRECO_DE_ABERTURA && p.id !== 'mensal' && <span className="vd-plano__abertura">Preço de abertura</span>}</p>
             <p className="vd-plano__ganho">
               {desconto > 0
                 ? <><span className="vd-plano__desconto">-{desconto}%</span> economia de {real(economia(p))}</>

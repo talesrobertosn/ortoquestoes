@@ -11,7 +11,8 @@ import { href, navegar } from '../util/rotas'
 import { cpfValido } from '../util/cpf'
 import { linkConta } from '../conta/passagem'
 import { FLASHCARDS_NA_VENDA, recurso, ROTULO_SIMULADOS, LIMITES_HABILITADOS, fraseGratis } from '../config'
-import { MENSAL, real, ECONOMIA_ANUAL } from '../dados/planos'
+import { MENSAL, real, ECONOMIA_ANUAL, PRECO_DE_ABERTURA } from '../dados/planos'
+import { AvisoAbertura } from '../componentes/vendas/AvisoAbertura'
 import { diasAte } from '../dados/ritmos'
 import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia } from '../estado/limiteDiario'
@@ -252,6 +253,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         </aside>
 
         {mostrarPlanos && <div className="vd-heroi__planos" id="planos">
+          {PRECO_DE_ABERTURA && pagamentosHabilitados && <AvisoAbertura />}
           <CartoesPlanos local="topo" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} />
           <ul className="vd-confianca" aria-label="Pagamento e garantia">
             <li className="vd-confianca__pix"><IconePix tamanho={16} /> <span><strong>Pix</strong> à vista, liberado assim que cai</span></li>
