@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react'
 import { urlCss } from '../../config'
+import './CorujaPixel.css'
 
 /**
  * A coruja bibliotecária (31/10/2026): personagem da Biblioteca, em pixel art HD-2D feita por código
