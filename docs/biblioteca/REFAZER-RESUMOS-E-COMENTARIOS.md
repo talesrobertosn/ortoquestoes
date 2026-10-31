@@ -44,8 +44,8 @@ Os rascunhos atuais de cada ciclo estão em `OrtoQuestoes-Biblioteca/lotes/<past
 
 | Ciclo | Resumo a reescrever | Livro e capítulo | Simulados (comentário) | Oficiais (comentário) |
 | --- | --- | --- | --- | --- |
-| 19 (**feito em 30/10/2026**: resumo 79 KB com 7 figuras dos livros; 38 comentários de 4,5 a 6,2 mil, todo o subtema) | `campbell14-biceps-distal` (era 4 KB) | Campbell cap. 48 (Distal biceps), cap. 46 (cabeça longa, peitoral) | ombro-cotovelo-0720 a 0723 | ombro-cotovelo-0027, 0033, 0238, 0302, 0391, 0450, 0566 |
-| 18 | `campbell14-lca` (7 KB) | Campbell cap. 45, seção do LCA (PDF 2531 a 2560) | joelho-0383 a 0387 | joelho-0021, 0032, 0080, 0188, 0209, 0227, 0249, 0253 |
+| 19 (**feito em 30/10/2026, PR 700**: resumo 79 KB com 7 figuras dos livros; 38 comentários de 4,5 a 6,2 mil, todo o subtema) | `campbell14-biceps-distal` (era 4 KB) | Campbell cap. 48 (Distal biceps), cap. 46 (cabeça longa, peitoral) | ombro-cotovelo-0720 a 0723 | ombro-cotovelo-0027, 0033, 0238, 0302, 0391, 0450, 0566 |
+| 18 (**feito em 30/10/2026**: resumo 52 KB com 3 figuras; 40 comentários, todo o subtema, inclusive menisco, rampa, eminência e ENARE R4) | `campbell14-lca` (era 7 KB) | Campbell cap. 45, seção do LCA (PDF 2531 a 2560) | joelho-0383 a 0387 | joelho-0021, 0032, 0080, 0188, 0209, 0227, 0249, 0253 |
 | 15 | `campbell14-metastases-osseas` (7 KB) | Campbell cap. 27 (Metastatic carcinoma) e cap. 42 (coluna) | tumores-0393 a 0398 | tumores-0021, 0051, 0064, 0072, 0086, 0088, 0092, 0109, 0129, 0130, 0135, 0187, 0190, 0202, 0270, 0282, 0293, 0325 |
 | 16 | `campbell14-hernia-disco` (8 KB) | Campbell caps. 38 e 39 | coluna-0572 a 0577 | coluna-0005, 0021, 0026, 0028, 0033, 0039, 0041, 0057, 0060, 0073, 0083, 0096, 0100, 0161, 0191, 0193, 0258, 0311 |
 | 11 | `campbell14-anatomia-coluna` (8 KB) | Campbell cap. 37, Netter cap. 2 | coluna-0564 a 0571 | coluna-0023, 0027, 0054, 0167, 0208, 0262, 0265, 0281 |
