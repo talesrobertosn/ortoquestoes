@@ -85,7 +85,8 @@ referência [docs/exemplos/mao-0853.json](../exemplos/mao-0853.json)).
 3. **Formato:** o da prova real (TEOT/TARO): enunciado curto, quatro alternativas plausíveis, gabarito
    distribuído entre A, B, C e D, sem figura, caso clínico só quando a banca usa caso para aquele ponto.
 4. **Comentário:** aula independente (fundamento, mecanismo, por que cada alternativa está certa ou errada,
-   inclusive a correta), mediana de uns 4 a 4,5 mil caracteres. O `conceito` termina sempre com o parágrafo
+   inclusive a correta), com tamanho proporcional à questão e sem molde fixo (ver "Professor humano, não molde"
+   no padrão editorial). Como são simulados, o `conceito` termina com o parágrafo
    **"Por que esta questão foi criada."**: em que prova e ano o fato caiu e como foi cobrado, ou por que o
    ponto tem cara de prova.
 5. **Aplicar:** escreva os lotes (a partir de `exemplo_lote.py`) no scratchpad, rode

@@ -5,6 +5,30 @@ Diretriz de Tales Roberto, aprovada em 04/10/2026. Aplica-se a todo pedido de
 Esta é a referência editorial do projeto. Substitui limites antigos de caracteres,
 número de frases e proibições de tabelas ou listas dos prompts de enriquecimento.
 
+## Professor humano, não molde (Tales, 31/10/2026)
+
+Depois da refação do quadril pelo Callaghan, em que os comentários saíram todos com o mesmo esqueleto
+(abertura, explicação, três blocos do livro, "Por que esta questão foi criada", "Na prova", correta e
+erradas) e com blocos copiados entre questões para chegar a 4,5 mil caracteres, Tales pediu: "seja
+humano, seja flexível, não ser engessado em tudo". Valem estas regras, acima das anteriores:
+
+- **Sempre miniaula, nunca molde.** Um professor que comenta cada questão com o livro aberto escreve cada
+  uma de um jeito. Às vezes começa pelo caso, às vezes pelo mecanismo, pela figura, pela pegadinha, pela
+  história ou por uma tabela de contraste; a questão fácil pode ser telegráfica.
+- **Tamanho proporcional à importância.** Não há mínimo de 4,5 mil. Referência solta: fato seco (data,
+  nome, número) de 0,8 a 2 mil caracteres; conceito com uma pegadinha de 2 a 3 mil; mecanismo de 3 a 5
+  mil; conduta, caso clínico e questão-chave do tema de 4 a 8 mil, com figura quando ajudar. A trava só
+  barra o raso (menos de 800).
+- **Nada copiado.** Nenhum parágrafo se repete entre comentários do mesmo tema. Se duas questões
+  precisam do mesmo fato, cada uma o conta do seu ângulo, com palavras próprias; o resto fica no resumo,
+  com o convite "Leia o resumo". O `lote_comentarios.py` recusa parágrafo longo repetido no lote.
+- **"Na prova" só quando fizer sentido**, quando houver uma frase de memória que valha a pena.
+- **"Por que esta questão foi criada" é só para OrtoQuestões Simulados.** Questão de prova real não leva
+  esse fecho (o conversor recusa). "O que a banca quis testar" também é opcional: só quando a intenção da
+  banca ensinar algo.
+- **Alternativas com peso diferente.** A distratora perigosa ganha um parágrafo; a absurda, meia linha.
+- **Figuras do livro** quando o aluno precisa ver (liberadas nos comentários, uso interno, nunca SVG).
+
 ## Miniaula, 22/10/2026 (padrão do site para todas as questões)
 
 Depois do piloto da `mao-2164` (fratura de SEYMOUR), Tales definiu a **miniaula escrita** como padrão de

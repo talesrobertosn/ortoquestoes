@@ -3,7 +3,8 @@
 
 Padrão (docs/biblioteca/PILOTO-AUTOMATICO.md e Tales, 30/10/2026):
   - resumo: no mínimo o nível dos modelos rockwood10-53 e rockwood10-66 (45 KB); o roteiro sugere 60 a 90 KB;
-  - comentário: conceito + correta + incorretas com mínimo de 4,5 mil caracteres; as referências mao-2164 e mao-0853 têm cerca de 6 mil.
+  - comentário: miniaula de tamanho proporcional à questão (Tales, 31/10/2026). Piso de 800 caracteres só contra o
+    comentário raso; fato seco pede 0,8 a 2 mil, mecanismo 3 a 5 mil, caso clínico e questão-chave 4 a 8 mil.
 
 Uso:
   python3 scripts/biblioteca/medir_profundidade.py resumo <id> [<id> ...]
@@ -17,7 +18,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[2]
 MIN_RESUMO = 45_000  # o modelo rockwood10-53 tem ~48 KB; o roteiro sugere 60 a 90 KB
-MIN_COMENTARIO = 4_500  # as referências mao-2164 e mao-0853 têm 6 a 6,4 mil
+MIN_COMENTARIO = 800  # piso contra o raso; o tamanho certo depende da questão (docs/padrao-editorial-comentarios.md)
 
 
 def tamanho_comentario(c: dict) -> int:
@@ -38,7 +39,7 @@ def comentarios(ids: list[str]) -> None:
             tamanhos.append(n)
             print(f"{'OK  ' if n >= MIN_COMENTARIO else 'CURTO'} {n:6d}  {i}")
     if tamanhos:
-        print(f"mediana {statistics.median(tamanhos):.0f} (meta {MIN_COMENTARIO} ou mais)")
+        print(f"mediana {statistics.median(tamanhos):.0f} (piso {MIN_COMENTARIO}; tamanho proporcional à questão)")
 
 
 def main() -> int:
