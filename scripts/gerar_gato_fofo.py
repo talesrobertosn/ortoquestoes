@@ -14,7 +14,7 @@ Gera:
 - public/eventos/gato.png: retrato 128 x 128 (arte 32 x 32 ampliada 4x);
 - public/flashcards/vfx/gato-dorme.png, gato-acorda.png, gato-feliz.png: 240 x 30 (6 quadros de 40 x 30).
 
-Uso:  python3 scripts/gerar_gato_fofo.py [--previa PASTA] [--candidatos]
+Uso:  python3 scripts/gerar_gato_fofo.py [--previa PASTA]   (a prévia salva a folha 4x em fundo escuro e claro)
 
 API para reaproveitar (cenas da tela de carregamento etc.), todas em coordenadas de pixel do quadro:
     t = Tela(64, 48)                          # quadro vazio
@@ -29,9 +29,9 @@ Veja as funções gato_* (uma por linha da folha) como exemplos de uso de cada p
 from __future__ import annotations
 
 import math
-import os
+
 import sys
-from dataclasses import dataclass, field, replace
+from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
@@ -202,9 +202,8 @@ def poligono(pts, espessura=2.5) -> Forma:
         n = len(P)
         for i in range(n):
             a, b = P[i], P[(i + 1) % n]
-            if (a[1] > Y).any() or True:
-                cond = ((a[1] > Y) != (b[1] > Y)) & (X < (b[0] - a[0]) * (Y - a[1]) / (b[1] - a[1] + 1e-12) + a[0])
-                dentro ^= cond
+            cond = ((a[1] > Y) != (b[1] > Y)) & (X < (b[0] - a[0]) * (Y - a[1]) / (b[1] - a[1] + 1e-12) + a[0])
+            dentro ^= cond
             ab = b - a
             h = np.clip(((X - a[0]) * ab[0] + (Y - a[1]) * ab[1]) / max(float(ab @ ab), 1e-9), 0, 1)
             px, py = X - (a[0] + ab[0] * h), Y - (a[1] + ab[1] * h)
@@ -440,7 +439,6 @@ class Estilo:
     olho_dy: float = 0.6       # altura dos olhos (relativa ao centro da cabeça)
     rosto_dx: float = 1.2      # rosto deslocado para a frente (3/4 para a direita)
     nariz_dy: float = 3.6
-    corpo: float = 1.0         # escala do corpo em relação à cabeça
 
 
 ESTILO = Estilo()
@@ -459,7 +457,7 @@ OLHOS = {
     },
     "D": {  # 5x6: pupila grande, brilho, íris verde embaixo e do lado
         "aberto": [".KKK.", "KWPPK", "KPPgK", "KPPGK", "KgGLK", ".KKK."],
-        "meio": [".....", ".....", ".KKK.", "KPPGK", "KgGLK", ".KKK."],
+        "meio": [".....", ".....", ".KKK.", "KKPPK", "KgGLK", ".KKK."],   # sonolento: pálpebra cai para fora
         "baixo": [".KKK.", "KggGK", "KWPPK", "KPPGK", "KPPLK", ".KKK."],
     },
     "C": {  # menor, mais realista
@@ -469,7 +467,7 @@ OLHOS = {
     },
     "P": {  # pequeno, para os quadros de 40 x 30
         "aberto": [".K.", "KWK", "KPK", "KGK", ".K."],
-        "meio": ["...", "KKK", "KPK", ".K.", "..."],
+        "meio": ["...", "...", "KKK", "GLG", "..."],
         "baixo": [".K.", "KGK", "KWK", "KPK", ".K."],
     },
 }
@@ -487,8 +485,11 @@ BOCAS = {
 NARIZ = {"g": ["NN", ".n"], "p": ["N"]}
 
 
-def _molde_olho(est: Estilo, tipo: str, olhar=(0, 0), pequeno=False):
-    """Escolhe o molde do olho e aplica o olhar (dx, dy em -1..1) movendo pupila e brilho dentro da íris."""
+def _molde_olho(est: Estilo, tipo: str, olhar=(0, 0), pequeno=False, direito=False):
+    """Escolhe o molde do olho e aplica o olhar (dx, dy em -1..1) movendo pupila e brilho dentro da íris.
+    Os moldes são do olho da esquerda da imagem; `direito` espelha o 'meio' (a pálpebra cai para o lado de fora)."""
+    if tipo == "meio" and direito:
+        return [l[::-1] for l in _molde_olho(est, tipo, olhar, pequeno)]
     if tipo in ("fechado", "feliz"):
         return (OLHO_FECHADO if tipo == "fechado" else OLHO_FELIZ)["p" if pequeno else "g"]
     base = OLHOS["P" if pequeno else est.olho]
@@ -584,14 +585,14 @@ def cabeca(t: Tela, xf: Xf, olhos="aberto", olhar=(0.0, 0.0), boca="w", orelhas=
         if piscar_um is not None and lado == piscar_um:
             tipo = "fechado"
         ol = (olhar[0] * sx, olhar[1])
-        t.molde(_molde_olho(est, tipo, ol, pequeno), c[0], c[1])
+        t.molde(_molde_olho(est, tipo, ol, pequeno, direito=(lado > 0) != xf.espelho), c[0], c[1])
     cn = xf((fx, est.nariz_dy))
     t.molde(NARIZ["p" if pequeno else "g"], cn[0], cn[1] - 0.5)
     if boca != "nada":
         chave = boca + ("_p" if pequeno and boca + "_p" in BOCAS else "")
         mb = BOCAS[chave]
         cb = xf((fx, est.nariz_dy + (1.2 if pequeno else 1.4)))
-        t.molde(mb, cb[0], cb[1], centro=False) if False else t.molde(mb, cb[0], cb[1] + len(mb) / 2 - 0.5)
+        t.molde(mb, cb[0], cb[1] + len(mb) / 2 - 0.5)
     return g
 
 
@@ -881,7 +882,7 @@ def livro_aberto(t: Tela, c, folha=0.0, capa="capa", s=1.25):
 def zz(t: Tela, x, y, k=0, tam=1):
     """Um 'z' de sono (3x3 ou 4x4) claro com contorno."""
     m = ["zzzz", "..z.", ".z..", "zzzz"] if tam > 1 else ["zzz", "..z", ".z.", "zzz"]
-    t.molde(m, x, y, cores={"z": "#eaf3ff"}, contorno="#2c2440")
+    t.molde(m, x, y, cores={"z": "#dbe9ff"}, contorno="#34305a")
 
 
 def coracao(t: Tela, x, y, cor="#ff7d8c"):
@@ -928,9 +929,10 @@ def gato_dormindo(t, k):
     resp = 0.5 + 0.5 * _sn(k)
     p = Pose(cab=(9.0, -8.2), cab_ang=12, olhos="fechado", boca="nada", respira=resp,
              orelhas=(0.0, -14.0 if k == 3 else 0.0),
-             cauda=((-14.0, -4.0), (-9.0, -2.4), (0.0, -2.3), (6.0, -2.4), (10.0, -3.0)))
+             cauda=((-14.5, -5.0), (-10.0, -3.0), (-2.0, -2.6), (4.5, -2.8), (8.5, -4.6)))
     corpo_enrolado(t, X_DEITA, p)
-    zz(t, 52 + (k % 3), 18 - (k % 3) * 2) if k % 3 != 2 else None
+    if k % 3 != 2:
+        zz(t, 50 + (k % 3), 24 - (k % 3) * 3, tam=2)
 
 
 def gato_acordado(t, k):
@@ -954,8 +956,7 @@ def gato_sentado(t, k):
 def gato_andando(t, k):
     """Ciclo de 6 quadros (passo diagonal: frente-perto com trás-longe)."""
     f = k / NQ
-    bob = -0.6 * abs(math.cos(f * TAU))  # sobe no meio do passo
-    dy = round(-0.8 + 0.8 * abs(math.cos(f * TAU)) * 1.0)
+    dy = round(-0.8 + 0.8 * abs(math.cos(f * TAU)))   # o corpo sobe 1 px no meio do passo
 
     def pe(base_x, fase):
         a = (f + fase) * TAU
@@ -1037,14 +1038,14 @@ def gato_ronronando(t, k):
     if k % 2 == 1:
         # tremidinha do ronrono: dois risquinhos de cada lado
         for lado in (-1, 1):
-            t.molde(["c..", ".c.", "..c", ".c.", "c.."] if lado > 0 else ["..c", ".c.", "c..", ".c.", "..c"],
-                    36 + lado * 16, 22, cores={"c": "#ffd27a"}, contorno=None)
+            t.molde(["c.", ".c", ".c", "c."] if lado > 0 else [".c", "c.", "c.", ".c"],
+                    34 + lado * 15, 31 + (k % 4 == 1), cores={"c": "#ffd27a"})
 
 
 def gato_acordando(t, k):
     if k <= 1:
         p = Pose(cab=(9.0, -8.2 - 2.0 * k), cab_ang=12 - 8 * k, olhos="fechado" if k == 0 else "meio", boca="nada",
-                 respira=0.5, cauda=((-14.0, -4.0), (-9.0, -2.4), (0.0, -2.3), (6.0, -2.4), (10.0, -3.0)))
+                 respira=0.5, cauda=((-14.5, -5.0), (-10.0, -3.0), (-2.0, -2.6), (4.5, -2.8), (8.5, -4.6)))
         corpo_enrolado(t, X_DEITA, p)
     elif k == 2:
         p = Pose(cab=(10.4, -16.6), olhos="fechado", boca="bocejo", orelhas=(12, 12),
@@ -1116,11 +1117,6 @@ def _vfx(fn) -> Image.Image:
     return img
 
 
-def _xp(x):
-    """Posição horizontal nos quadros pequenos."""
-    return x
-
-
 def _pequeno(t, corpo, x, p, s=VS):
     # desloca o chão: os corpos usam CHAO; nos quadros pequenos o chão fica em VCHAO
     global CHAO
@@ -1135,10 +1131,10 @@ def _pequeno(t, corpo, x, p, s=VS):
 def vfx_dorme(t, k):
     resp = 0.5 + 0.5 * _sn(k)
     p = Pose(cab=(9.0, -8.2), cab_ang=12, olhos="fechado", boca="nada", respira=resp,
-             cauda=((-14.0, -4.0), (-9.0, -2.4), (0.0, -2.3), (6.0, -2.4), (10.0, -3.0)))
+             cauda=((-14.5, -5.0), (-10.0, -3.0), (-2.0, -2.6), (4.5, -2.8), (8.5, -4.6)))
     _pequeno(t, corpo_enrolado, 20.0, p)
     if k % 3 != 2:
-        zz(t, 33 + (k % 3), 7 - (k % 3) * 2)
+        zz(t, 33 + (k % 3), 8 - (k % 3) * 2)
 
 
 def vfx_acorda(t, k):
@@ -1195,6 +1191,13 @@ def main() -> None:
     salvar(_vfx(vfx_dorme), RAIZ / "public/flashcards/vfx/gato-dorme.png")
     salvar(_vfx(vfx_acorda), RAIZ / "public/flashcards/vfx/gato-acorda.png")
     salvar(_vfx(vfx_feliz), RAIZ / "public/flashcards/vfx/gato-feliz.png")
+    if "--previa" in sys.argv:
+        destino = Path(sys.argv[sys.argv.index("--previa") + 1])
+        destino.mkdir(parents=True, exist_ok=True)
+        for nome, cor in (("escuro", (42, 29, 20, 255)), ("claro", (251, 250, 246, 255))):
+            f = Image.new("RGBA", sheet.size, cor)
+            f.alpha_composite(sheet)
+            f.resize((sheet.width * 4, sheet.height * 4), Image.NEAREST).save(destino / f"gato-fofo-4x-{nome}.png")
 
 
 if __name__ == "__main__":

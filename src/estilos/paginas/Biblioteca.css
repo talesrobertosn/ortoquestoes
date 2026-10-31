@@ -78,7 +78,7 @@ button.bb-obj:disabled { cursor: default; }
 .bb-personagem { position: absolute; left: var(--x); top: var(--y); z-index: 2; }
 .bb-coruja, .bb-gato { display: block; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; }
 .bb-coruja { transform: translate(-50%, calc(-53 / 56 * 100%)); }
-.bb-gato { position: relative; transform: translate(-50%, calc(-37 / 40 * 100%)); }
+.bb-gato { position: relative; transform: translate(-50%, calc(-45 / 48 * 100%)); }
 .bb-coruja:focus-visible, .bb-gato:focus-visible { outline: 3px solid var(--bb-ouro); outline-offset: 3px; border-radius: 8px; }
 .bb-coruja:hover .coruja-pixel, .bb-gato:hover .gato-pixel { filter: brightness(1.12) drop-shadow(0 0 4px rgba(255, 214, 140, 0.45)); }
 .bb-gato__zz { position: absolute; right: 18%; top: -10%; font: 400 calc(var(--px) * 9) var(--fonte-pixel-titulo); color: var(--bb-pergaminho); animation: bb-zz 2.8s ease-in-out infinite; pointer-events: none; }

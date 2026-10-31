@@ -20,7 +20,7 @@ button.mascote__corpo:hover .mascote__sprite { filter: brightness(1.08) drop-sha
 @media (prefers-reduced-motion: reduce) { .mascote__sprite, .mascote__balao { animation: none; } }
 
 /* O gato avulso (GatoPixel.tsx): a folha de 6 quadros por linha, ampliada sem suavizar, proporção 64 x 40. */
-.gato-pixel { display: inline-block; aspect-ratio: 64 / 40; image-rendering: pixelated;
+.gato-pixel { display: inline-block; aspect-ratio: 64 / 48; image-rendering: pixelated;
   background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / 600% calc(var(--linhas) * 100%) no-repeat;
   animation: gato-pixel-quadros 1.2s steps(6) infinite; }
 .gato-pixel--lendo, .gato-pixel--sentado { animation-duration: 2.2s; }
