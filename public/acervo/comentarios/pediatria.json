@@ -25096,14 +25096,15 @@
   "conferido": false
  },
  "pediatria-1178": {
-  "conceito": "Na criança, a **parede posterior do acetábulo** é feita em grande parte de **cartilagem**. Os pequenos fragmentos ossificados que aparecem na tomografia podem ser só a ponta visível de um pedaço muito maior, que a radiografia e a tomografia não mostram.\n\nO Rockwood crianças (cap. 24) avisa que radiografia e tomografia **subestimam** a fratura da parede posterior na criança e recomenda a **ressonância** para medir a parede cartilaginosa. Importa porque o tamanho da parede decide a estabilidade: uma fratura da borda posterior que deixa o quadril **instável** depois da redução é o grau III de STEWART-MILFORD e vai para fixação pela via posterior, junto com a cápsula. O capítulo mostra o caso de um menino de 12 anos derrubado no futebol, com redução fácil e quadril instável (Fig. 24-31).\n\nA ressonância também procura o que pode impedir a redução concêntrica: lábio, cápsula e fragmentos osteocondrais.\n\nIgnorar os fragmentos pequenos é o erro que a questão quer pegar. E uma nova tomografia, mesmo com reconstrução 3D, continua sem mostrar cartilagem.\n\n**Por que esta questão foi criada.** O TARO 2024 (`pediatria-0537`) cobrou a direção da luxação; a armadilha de imagem própria da criança, a parede cartilaginosa, ficou como projeção, ligada ao caso do adolescente no resumo.",
-  "correta": "**C) ressonância magnética, que mostra o tamanho real da parede posterior cartilaginosa.** Radiografia e tomografia subestimam a fratura da parede posterior na criança (Rockwood crianças, cap. 24).",
+  "conceito": "Na criança, a **parede posterior do acetábulo** é feita em grande parte de **cartilagem**. Os pequenos fragmentos ossificados que aparecem na tomografia podem ser só a ponta visível de um pedaço muito maior, que a radiografia e a tomografia não mostram.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 24) avisa que radiografia e tomografia **subestimam** a fratura da parede posterior na criança e recomenda a **ressonância** para medir a parede cartilaginosa. Importa porque o tamanho da parede decide a estabilidade: uma fratura da borda posterior que deixa o quadril **instável** depois da redução é o grau III de STEWART-MILFORD e vai para fixação pela via posterior, junto com a cápsula. O capítulo mostra o caso de um menino de 12 anos derrubado no futebol, com redução fácil e quadril instável (Fig. 24-31).\n\nA ressonância também procura o que pode impedir a redução concêntrica: lábio, cápsula e fragmentos osteocondrais.\n\nIgnorar os fragmentos pequenos é o erro que a questão quer pegar. E uma nova tomografia, mesmo com reconstrução 3D, continua sem mostrar cartilagem.\n\n**Por que esta questão foi criada.** O TARO 2024 (`pediatria-0537`) cobrou a direção da luxação; a armadilha de imagem própria da criança, a parede cartilaginosa, ficou como projeção, ligada ao caso do adolescente no resumo.",
+  "correta": "**C: ressonância magnética.** A parede posterior é em grande parte cartilagem; radiografia e tomografia subestimam a fratura (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**Fragmentos ossificados pequenos podem esconder uma parede cartilaginosa grande**, que decide a estabilidade.",
-   "B": "**A cintilografia não mede a parede posterior**; serve para avaliar perfusão da cabeça semanas depois.",
-   "D": "**A tomografia, mesmo em 3D, não mostra a cartilagem**; é a ressonância que a mede."
+   "A": "**A cintilografia** não mede o tamanho da parede cartilaginosa.",
+   "B": "**A tomografia 3D** continua sem mostrar a cartilagem.",
+   "D": "**A artrografia** não é o exame indicado pelo capítulo."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Traumatic Hip Dislocation (Associated Injuries) e Fig. 24-31",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -25156,84 +25157,63 @@
   "conferido": false
  },
  "pediatria-1182": {
-  "conceito": "Fratura que passa **pela fise** (transepifisária) e cabeça **fora do acetábulo**: é o **DELBET IB**, a pior lesão do quadril da criança.\n\nO Rockwood crianças (cap. 24) é direto sobre ela: o resultado é ruim, com **osteonecrose e fechamento fisário prematuro em praticamente 100%** dos casos. A cabeça luxada perdeu, de uma vez, a fise que a ligava ao colo e os ramos retinaculares da circunflexa medial que entravam pela sua borda lateral, e o ligamento redondo, quase sem fluxo na criança, não compensa.\n\nO que fazer, mesmo assim: **uma** tentativa de redução fechada e, se ela falhar, **redução aberta imediata**, pela via que a posição da cabeça indica (em geral a posterior), com fixação por fios lisos na criança pequena ou parafusos canulados na maior, cruzando a fise. E, desde o primeiro contato, avisar a família do risco altíssimo de necrose.\n\nO contraste com o **IA**, a mesma fratura com a cabeça no lugar, é o ponto da questão: no IA, sobretudo na criança pequena, a necrose é improvável, e o problema principal passa a ser a coxa vara ou a discrepância.\n\n**Por que esta questão foi criada.** O ENARE 2024 (`pediatria-0515`) pediu só o nome da lesão (IB). Esta projeção pergunta o que vem depois, que é o motivo de a lesão ter um subtipo próprio.",
-  "correta": "**A) necrose avascular e fechamento fisário prematuro em praticamente todos os casos.** É a evolução do DELBET IB descrita no capítulo 24 do Rockwood crianças.",
+  "conceito": "Fratura que passa **pela fise** (transepifisária) e cabeça **fora do acetábulo**: é o **DELBET IB**, a pior lesão do quadril da criança.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 24) é direto sobre ela: o resultado é ruim, com **osteonecrose e fechamento fisário prematuro em praticamente 100%** dos casos. A cabeça luxada perdeu, de uma vez, a fise que a ligava ao colo e os ramos retinaculares da circunflexa medial que entravam pela sua borda lateral, e o ligamento redondo, quase sem fluxo na criança, não compensa.\n\nO que fazer, mesmo assim: **uma** tentativa de redução fechada e, se ela falhar, **redução aberta imediata**, pela via que a posição da cabeça indica (em geral a posterior), com fixação por fios lisos na criança pequena ou parafusos canulados na maior, cruzando a fise. E, desde o primeiro contato, avisar a família do risco altíssimo de necrose.\n\nO contraste com o **IA**, a mesma fratura com a cabeça no lugar, é o ponto da questão: no IA, sobretudo na criança pequena, a necrose é improvável, e o problema principal passa a ser a coxa vara ou a discrepância.\n\n**Por que esta questão foi criada.** O ENARE 2024 (`pediatria-0515`) pediu só o nome da lesão (IB). Esta projeção pergunta o que vem depois, que é o motivo de a lesão ter um subtipo próprio.",
+  "correta": "**A: quase 100%.** Osteonecrose e fechamento fisário prematuro em praticamente todos os casos (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "B": "**A idade pequena protege o IA, não o IB.** Com a cabeça luxada, a necrose acontece em quase todos.",
-   "C": "**Cerca de 5% é a necrose do tipo IV**, a fratura intertrocantérica.",
-   "D": "**A pseudartrose não é o problema do IB**; o risco vascular é o maior de toda a classificação."
+   "B": "**50%** subestima o pior tipo da classificação.",
+   "C": "**25%** também subestima.",
+   "D": "**5%** é número de fratura com menos risco vascular, não do IB."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seções Classification e Authors' Preferred Treatment (Type I)",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
-  ],
-  "imagens": [
-   {
-    "arquivo": "pediatria/rwc10-24-4.jpeg",
-    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24, Fig. 24-4. Classificação de DELBET das fraturas do quadril da criança: IA transepifisária sem luxação, IB com luxação da cabeça, II transcervical, III cervicotrocantérica, IV intertrocantérica.",
-    "largura": 1200,
-    "altura": 1688
-   }
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1183": {
-  "conceito": "Quase tudo o que se pergunta sobre a fratura do quadril da criança, como a necrose por tipo, a urgência e a capsulotomia anterior, depende de saber **de onde vem o sangue da cabeça femoral**. E a resposta muda com a idade.\n\nO Rockwood crianças (cap. 24) descreve a sequência:\n\n| Idade | Quem irriga a epífise |\n|---|---|\n| até 3 a 4 meses | vasos **metafisários** que atravessam o colo |\n| até cerca de 4 anos | a fise vira **barreira**; os metafisários somem |\n| a partir de 18 meses a 4 anos | **ramos retinaculares da circunflexa femoral medial**, posterossuperiores e posteroinferiores |\n| a vida toda | o **ligamento redondo** contribui quase nada até 8 anos, e cerca de 20% no adulto |\n\nOGDEN mostrou que esses retinaculares são dois ramos da circunflexa medial que nascem no sulco intertrocantérico, perfuram a cápsula e sobem pela face **posterior e superior** do colo, cobertos pelas pregas retinaculares, até entrar pela borda lateral da epífise (Fig. 24-8). O ramo posterossuperior irriga toda a porção anterolateral da cabeça; ocluí-lo necrosa essa parte.\n\nDaí vêm três regras práticas: a capsulotomia é **anterior**, longe dos vasos; o **piriforme** é mantido na luxação cirúrgica, porque protege o ramo retinacular; e um afastador fundo demais embaixo do colo pode rasgar a circunflexa medial.\n\n**Por que esta questão foi criada.** O TARO 2006 (`pediatria-0799`) perguntou sobre vasos que cruzam a fise, e toda a DELBET depende da irrigação, mas nenhuma prova perguntou diretamente qual é o vaso principal da cabeça na criança maior. É a base da seção \"A cabeça femoral da criança e seus vasos\" do resumo.",
-  "correta": "**B) os ramos retinaculares posterossuperiores da artéria circunflexa femoral medial.** Depois dos 4 anos, eles são a principal fonte de sangue da epífise femoral proximal (Rockwood crianças, cap. 24, Fig. 24-8).",
+  "conceito": "Quase tudo o que se pergunta sobre a fratura do quadril da criança, como a necrose por tipo, a urgência e a capsulotomia anterior, depende de saber **de onde vem o sangue da cabeça femoral**. E a resposta muda com a idade.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 24) descreve a sequência:\n\n| Idade | Quem irriga a epífise |\n|---|---|\n| até 3 a 4 meses | vasos **metafisários** que atravessam o colo |\n| até cerca de 4 anos | a fise vira **barreira**; os metafisários somem |\n| a partir de 18 meses a 4 anos | **ramos retinaculares da circunflexa femoral medial**, posterossuperiores e posteroinferiores |\n| a vida toda | o **ligamento redondo** contribui quase nada até 8 anos, e cerca de 20% no adulto |\n\nOGDEN mostrou que esses retinaculares são dois ramos da circunflexa medial que nascem no sulco intertrocantérico, perfuram a cápsula e sobem pela face **posterior e superior** do colo, cobertos pelas pregas retinaculares, até entrar pela borda lateral da epífise (Fig. 24-8). O ramo posterossuperior irriga toda a porção anterolateral da cabeça; ocluí-lo necrosa essa parte.\n\nDaí vêm três regras práticas: a capsulotomia é **anterior**, longe dos vasos; o **piriforme** é mantido na luxação cirúrgica, porque protege o ramo retinacular; e um afastador fundo demais embaixo do colo pode rasgar a circunflexa medial.\n\n**Por que esta questão foi criada.** O TARO 2006 (`pediatria-0799`) perguntou sobre vasos que cruzam a fise, e toda a DELBET depende da irrigação, mas nenhuma prova perguntou diretamente qual é o vaso principal da cabeça na criança maior. É a base da seção \"A cabeça femoral da criança e seus vasos\" do resumo.",
+  "correta": "**B: circunflexa femoral medial.** Pelos ramos retinaculares posterossuperiores; a fise já é barreira aos vasos metafisários (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**O ligamento redondo contribui quase nada até 8 anos**, e cerca de 20% no adulto.",
-   "C": "**Os vasos metafisários deixam de cruzar a fise** nos primeiros anos; aos 4 anos, a irrigação metafisária da cabeça é praticamente inexistente.",
-   "D": "**A circunflexa lateral contribui pouco para a cabeça** na criança maior; o papel principal é da medial, pela face posterior e superior do colo."
+   "A": "**O ligamento redondo** tem fluxo mínimo na criança.",
+   "C": "**A glútea superior** não é descrita como fonte da epífise.",
+   "D": "**A circunflexa lateral** não é a principal fonte descrita depois dos 4 anos."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Vascular Anatomy e Fig. 24-8",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
-  ],
-  "imagens": [
-   {
-    "arquivo": "pediatria/rwc10-24-8.jpeg",
-    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24, Fig. 24-8. Vascularização do fêmur proximal: a femoral profunda (PF) dá a circunflexa medial (MFC) e a lateral (LFC); da medial sai o ramo profundo com o ramo ascendente (AL), unido ao ramo do piriforme da glútea inferior (IGA), e terminam nos vasos retinaculares posterossuperiores (RV).",
-    "largura": 1200,
-    "altura": 1808
-   }
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1184": {
-  "conceito": "A classificação de **RATLIFF** localiza a necrose depois da fratura do quadril da criança, e a numeração desce da cabeça para o colo (Rockwood crianças, cap. 24, Fig. 24-19):\n\n| Tipo | Onde | Vaso lesado | Prognóstico |\n|---|---|---|---|\n| I | toda a cabeça | todos os retinaculares epifisários | o pior e o mais comum |\n| II | parte da cabeça | um ou mais vasos epifisários laterais | intermediário |\n| **III** | **o colo, da linha de fratura até a fise** | **vasos metafisários superiores** | **raro, bom se a fratura consolida** |\n\nO tipo III é o único que poupa a cabeça. Como a superfície articular continua viva e redonda, a articulação não se deforma; o problema fica restrito ao colo e se resolve se a fratura consolidar. Por isso é o de melhor prognóstico, apesar de ser o último número.\n\nVale saber também quando a necrose aparece: em geral no **primeiro ano** (média de pouco mais de 11 meses), mas pode demorar até **2 anos**, e o seguimento tem de durar esse tempo.\n\n**Por que esta questão foi criada.** O TEOT 2023 (`pediatria-0581`) perguntou a região do RATLIFF III e deu como gabarito \"epifisária parcial\", o que diverge do livro, e o TARO 2006 (`pediatria-0819`) perguntou se o III é o pior. Esta questão fixa a definição do capítulo, para o aluno conhecer as duas versões.",
-  "correta": "**C) necrose do colo, da linha de fratura até a fise, rara e de bom prognóstico se a fratura consolida.** É a definição do RATLIFF III no capítulo 24 do Rockwood crianças.",
+  "conceito": "A classificação de **RATLIFF** localiza a necrose depois da fratura do quadril da criança, e a numeração desce da cabeça para o colo (Rockwood and Wilkins' Fractures in Children, cap. 24, Fig. 24-19):\n\n| Tipo | Onde | Vaso lesado | Prognóstico |\n|---|---|---|---|\n| I | toda a cabeça | todos os retinaculares epifisários | o pior e o mais comum |\n| II | parte da cabeça | um ou mais vasos epifisários laterais | intermediário |\n| **III** | **o colo, da linha de fratura até a fise** | **vasos metafisários superiores** | **raro, bom se a fratura consolida** |\n\nO tipo III é o único que poupa a cabeça. Como a superfície articular continua viva e redonda, a articulação não se deforma; o problema fica restrito ao colo e se resolve se a fratura consolidar. Por isso é o de melhor prognóstico, apesar de ser o último número.\n\nVale saber também quando a necrose aparece: em geral no **primeiro ano** (média de pouco mais de 11 meses), mas pode demorar até **2 anos**, e o seguimento tem de durar esse tempo.\n\n**Por que esta questão foi criada.** O TEOT 2023 (`pediatria-0581`) perguntou a região do RATLIFF III e deu como gabarito \"epifisária parcial\", o que diverge do livro, e o TARO 2006 (`pediatria-0819`) perguntou se o III é o pior. Esta questão fixa a definição do capítulo, para o aluno conhecer as duas versões.",
+  "correta": "**C: o colo até a fise.** É raro e de bom prognóstico se a fratura consolida (Rockwood and Wilkins' Fractures in Children, cap. 24, Fig. 24-19).",
   "incorretas": {
-   "A": "**Necrose de toda a cabeça, a mais comum e a pior, é o tipo I.**",
-   "B": "**Necrose parcial da cabeça é o tipo II**, por lesão de um ou mais vasos epifisários laterais.",
-   "D": "**Não há tipo que pegue cabeça e colo juntos**, e o III não colapsa a cabeça."
+   "A": "**Toda a cabeça** é o tipo I, o mais comum e o pior.",
+   "B": "**Parte da cabeça** é o tipo II.",
+   "D": "**Cabeça e colo** não é um tipo da classificação."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Osteonecrosis e Fig. 24-19",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
-  ],
-  "alerta": "O TEOT 2023 (`pediatria-0581`) deu \"epifisária parcial\" como gabarito para o RATLIFF III. Esta questão segue o livro (Rockwood crianças, cap. 24, Fig. 24-19), em que o III é a necrose do colo.",
-  "imagens": [
-   {
-    "arquivo": "pediatria/rwc10-24-19.jpeg",
-    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24, Fig. 24-19. Os três tipos de osteonecrose de RATLIFF: I, toda a cabeça; II, parte da cabeça; III, o colo, da fratura até a fise.",
-    "largura": 1200,
-    "altura": 600
-   }
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1185": {
-  "conceito": "No adolescente com fratura transcervical desviada, o capítulo 24 do Rockwood crianças põe as prioridades numa ordem que surpreende quem pensa primeiro na fise: **redução anatômica e fixação estável vêm antes do crescimento**.\n\n**A redução.** O tipo II sempre exige redução **anatômica**. Tenta-se a fechada (tração, abdução e rotação interna) e, se sobrar **qualquer** desvio ou houver cominuição, abre-se: via de SMITH-PETERSEN de biquíni com incisão lateral para os implantes, ou luxação cirúrgica. Aceitar desvio é aceitar mais necrose e mais pseudartrose; a qualidade da redução é, talvez, o fator modificável mais importante para a necrose.\n\n**A fixação.** Parafusos canulados de 6,5 a 7,3 mm (acima de 8 anos), dois ou três, com perfuração prévia, entrando acima do trocânter menor; no adolescente, implantes de ângulo fixo como o FNS também servem. **Se a estabilidade exigir, os parafusos cruzam a fise.** O capítulo justifica: as sequelas do fechamento fisário e do sobrecrescimento do trocânter são muito menores que as da pseudartrose e da necrose. E no adolescente sobra pouco crescimento a perder, porque a fise proximal faz só 13% do crescimento do membro.\n\n**O gesso.** Acima de 12 anos, com a fixação cruzando a fise, dispensa-se.\n\n**Por que esta questão foi criada.** O TARO 2007 (`pediatria-0730`) perguntou o tratamento por tipo, e o TEOT 2022 (`pediatria-0707`), a manobra de redução. A regra de que a estabilidade vale mais que a fise, que decide a cirurgia de verdade, nunca caiu.",
-  "correta": "**D) redução anatômica, aberta se houver qualquer desvio residual, e fixação que pode cruzar a fise se necessário para a estabilidade.** É o tratamento do DELBET II desviado no adolescente (Rockwood crianças, cap. 24).",
+  "conceito": "No adolescente com fratura transcervical desviada, o capítulo 24 do Rockwood and Wilkins' Fractures in Children põe as prioridades numa ordem que surpreende quem pensa primeiro na fise: **redução anatômica e fixação estável vêm antes do crescimento**.\n\n**A redução.** O tipo II sempre exige redução **anatômica**. Tenta-se a fechada (tração, abdução e rotação interna) e, se sobrar **qualquer** desvio ou houver cominuição, abre-se: via de SMITH-PETERSEN de biquíni com incisão lateral para os implantes, ou luxação cirúrgica. Aceitar desvio é aceitar mais necrose e mais pseudartrose; a qualidade da redução é, talvez, o fator modificável mais importante para a necrose.\n\n**A fixação.** Parafusos canulados de 6,5 a 7,3 mm (acima de 8 anos), dois ou três, com perfuração prévia, entrando acima do trocânter menor; no adolescente, implantes de ângulo fixo como o FNS também servem. **Se a estabilidade exigir, os parafusos cruzam a fise.** O capítulo justifica: as sequelas do fechamento fisário e do sobrecrescimento do trocânter são muito menores que as da pseudartrose e da necrose. E no adolescente sobra pouco crescimento a perder, porque a fise proximal faz só 13% do crescimento do membro.\n\n**O gesso.** Acima de 12 anos, com a fixação cruzando a fise, dispensa-se.\n\n**Por que esta questão foi criada.** O TARO 2007 (`pediatria-0730`) perguntou o tratamento por tipo, e o TEOT 2022 (`pediatria-0707`), a manobra de redução. A regra de que a estabilidade vale mais que a fise, que decide a cirurgia de verdade, nunca caiu.",
+  "correta": "**D: redução aberta.** O tipo II exige redução anatômica; qualquer desvio residual leva à redução aberta (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**Gesso sem fixação não segura uma fratura transcervical desviada** no adolescente; o gesso isolado é para o tipo II sem desvio até 5 anos.",
-   "B": "**Desvio residual pede redução aberta.** O colo não remodela a ponto de compensar, e o desvio aumenta a necrose e a pseudartrose.",
-   "C": "**Inverte a prioridade.** A fixação estável vem antes da fise; cruzá-la custa pouco no adolescente."
+   "A": "**Aceitar o desvio** aumenta a pseudartrose e a coxa vara.",
+   "B": "**O gesso** não corrige o desvio.",
+   "C": "**A tração** não é o tratamento descrito."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Authors' Preferred Treatment (Type II)",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -25241,14 +25221,15 @@
   "conferido": false
  },
  "pediatria-1186": {
-  "conceito": "O DELBET I sem desvio na criança de até 2 anos é a situação em que o Rockwood crianças (cap. 24) **aceita tratar sem cirurgia**, desde que a fratura seja estável e pouco desviada.\n\nO gesso pelvipodálico vai em **abdução e rotação neutra**. O motivo é a tendência da fratura: ela desvia para **varo e rotação externa**, e a abdução trabalha contra isso. Como pode desviar dentro do gesso, a regra é **radiografia precoce** de controle.\n\nO que muda a conduta:\n- se foi preciso **reduzir** ou se a fratura **mexeu**, fios lisos de 2 mm cruzando a fise, dois ou três, cortados sob a pele, mais gesso por pelo menos 6 semanas;\n- **acima de 2 anos**, fixa-se sempre, mesmo sem desvio;\n- abaixo de 1 ano, o suspensório de PAVLIK ou uma órtese de abdução substituem o gesso.\n\nAos 18 meses, a criança já passou da idade do PAVLIK, e nenhuma fratura do quadril se trata sem controle radiográfico.\n\nAntes de tudo, numa criança dessa idade com fratura do quadril sem trauma convincente, o capítulo manda investigar **maus-tratos**.\n\n**Por que esta questão foi criada.** As provas só perguntam o tipo I pelo nome (ENARE 2024, `pediatria-0515`) e pela necrose (TEOT 2025, `pediatria-0920`). O tratamento por idade, que separa o gesso da fixação, é cobrado nos títulos e ficou como projeção.",
-  "correta": "**A) gesso pelvipodálico em abdução e rotação neutra, com controle radiográfico precoce.** É a conduta para o DELBET I estável e pouco desviado até 2 anos (Rockwood crianças, cap. 24).",
+  "conceito": "O DELBET I sem desvio na criança de até 2 anos é a situação em que o Rockwood and Wilkins' Fractures in Children (cap. 24) **aceita tratar sem cirurgia**, desde que a fratura seja estável e pouco desviada.\n\nO gesso pelvipodálico vai em **abdução e rotação neutra**. O motivo é a tendência da fratura: ela desvia para **varo e rotação externa**, e a abdução trabalha contra isso. Como pode desviar dentro do gesso, a regra é **radiografia precoce** de controle.\n\nO que muda a conduta:\n- se foi preciso **reduzir** ou se a fratura **mexeu**, fios lisos de 2 mm cruzando a fise, dois ou três, cortados sob a pele, mais gesso por pelo menos 6 semanas;\n- **acima de 2 anos**, fixa-se sempre, mesmo sem desvio;\n- abaixo de 1 ano, o suspensório de PAVLIK ou uma órtese de abdução substituem o gesso.\n\nAos 18 meses, a criança já passou da idade do PAVLIK, e nenhuma fratura do quadril se trata sem controle radiográfico.\n\nAntes de tudo, numa criança dessa idade com fratura do quadril sem trauma convincente, o capítulo manda investigar **maus-tratos**.\n\n**Por que esta questão foi criada.** As provas só perguntam o tipo I pelo nome (ENARE 2024, `pediatria-0515`) e pela necrose (TEOT 2025, `pediatria-0920`). O tratamento por idade, que separa o gesso da fixação, é cobrado nos títulos e ficou como projeção.",
+  "correta": "**A: gesso pelvipodálico.** Em abdução e rotação neutra, com radiografia de controle precoce (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "B": "**Parafusos de 7,3 mm são para depois dos 8 anos.** Aos 18 meses, se fosse preciso fixar, seriam fios lisos.",
-   "C": "**Não há indicação de redução aberta** numa fratura sem desvio e estável.",
-   "D": "**O PAVLIK é para abaixo de 1 ano**, e nenhuma fratura do quadril dispensa o controle radiográfico."
+   "B": "**Os parafusos** ficam para a fratura reduzida ou instável.",
+   "C": "**A redução aberta** não é necessária sem desvio.",
+   "D": "**O PAVLIK** não segura a tendência ao varo e à rotação externa."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seções Nonoperative Treatment e Authors' Preferred Treatment (Type I)",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -25271,14 +25252,15 @@
   "conferido": false
  },
  "pediatria-1188": {
-  "conceito": "A pseudartrose da fratura do quadril da criança é rara (cerca de 7%), mais nos tipos II e III, e tem uma causa principal: **não obter ou não manter a redução anatômica**. O Rockwood crianças (cap. 24) dá o prazo para desconfiar: a dor deve passar e o calo deve aparecer em **3 meses**; sem consolidação em **3 a 6 meses**, o diagnóstico está feito, e a tomografia ajuda a confirmar.\n\nO tratamento é **cedo e cirúrgico**, e depende da fixação que já está lá:\n- se a fixação inicial **não era rígida**, refaz-se com fixação rígida;\n- se ela **já era estável**, como no caso, faz-se uma **osteotomia valgizante subtrocantérica**.\n\nA lógica da osteotomia é mecânica. Na pseudartrose do colo, o traço fica quase vertical, e o peso do corpo faz os fragmentos **deslizarem** um sobre o outro (cisalhamento). Ao valgizar o fêmur abaixo do trocânter, o traço fica mais horizontal, perpendicular à carga, e o mesmo peso passa a **comprimir** o foco. O capítulo mostra uma menina de 15 anos que consolidou seis semanas depois da osteotomia (Fig. 24-24). Enxerto homólogo pode complementar, e o autólogo fica para as persistentes.\n\nEsperar mais (imobilizar até 1 ano) só prolonga o problema, e artroplastia não é tratamento de pseudartrose num adolescente.\n\n**Por que esta questão foi criada.** O TARO 2013 (`pediatria-0675`) perguntou a complicação mais frequente da fratura (osteonecrose). A pseudartrose, menos frequente, mas com um tratamento elegante e cobrado nos títulos, ficou como projeção.",
-  "correta": "**C) osteotomia valgizante subtrocantérica, para mudar a orientação do traço e comprimir o foco.** É o tratamento da pseudartrose do colo quando a fixação já era estável (Rockwood crianças, cap. 24, Fig. 24-24).",
+  "conceito": "A pseudartrose da fratura do quadril da criança é rara (cerca de 7%), mais nos tipos II e III, e tem uma causa principal: **não obter ou não manter a redução anatômica**. O Rockwood and Wilkins' Fractures in Children (cap. 24) dá o prazo para desconfiar: a dor deve passar e o calo deve aparecer em **3 meses**; sem consolidação em **3 a 6 meses**, o diagnóstico está feito, e a tomografia ajuda a confirmar.\n\nO tratamento é **cedo e cirúrgico**, e depende da fixação que já está lá:\n- se a fixação inicial **não era rígida**, refaz-se com fixação rígida;\n- se ela **já era estável**, como no caso, faz-se uma **osteotomia valgizante subtrocantérica**.\n\nA lógica da osteotomia é mecânica. Na pseudartrose do colo, o traço fica quase vertical, e o peso do corpo faz os fragmentos **deslizarem** um sobre o outro (cisalhamento). Ao valgizar o fêmur abaixo do trocânter, o traço fica mais horizontal, perpendicular à carga, e o mesmo peso passa a **comprimir** o foco. O capítulo mostra uma menina de 15 anos que consolidou seis semanas depois da osteotomia (Fig. 24-24). Enxerto homólogo pode complementar, e o autólogo fica para as persistentes.\n\nEsperar mais (imobilizar até 1 ano) só prolonga o problema, e artroplastia não é tratamento de pseudartrose num adolescente.\n\n**Por que esta questão foi criada.** O TARO 2013 (`pediatria-0675`) perguntou a complicação mais frequente da fratura (osteonecrose). A pseudartrose, menos frequente, mas com um tratamento elegante e cobrado nos títulos, ficou como projeção.",
+  "correta": "**C: osteotomia valgizante.** A osteotomia subtrocantérica valgizante horizontaliza o traço e comprime o foco (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**A pseudartrose se trata cedo e cirurgicamente**; prolongar a imobilização não muda o cisalhamento no foco.",
-   "B": "**Retirar o material sem tratar o foco** deixa a fratura sem consolidar e sem fixação.",
-   "D": "**Artroplastia não é tratamento de pseudartrose no adolescente**, que ainda tem a cabeça viva a salvar."
+   "A": "**Imobilizar mais** não muda a mecânica do traço.",
+   "B": "**Retirar o material** deixa o foco instável.",
+   "D": "**A artroplastia** não é tratamento do adolescente com pseudartrose."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Nonunion e Fig. 24-24",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -25309,14 +25291,15 @@
   "conferido": false
  },
  "pediatria-1190": {
-  "conceito": "Esta questão junta numa alternativa os três fatos da luxação traumática do quadril da criança que as provas mais exploram, e espalha as versões erradas nas outras.\n\n**A direção.** **Posterior** em **mais de 90%**: força pelo joelho com o quadril fletido e um pouco aduzido. A anterior é menos de 10% (Rockwood crianças, cap. 24).\n\n**A energia muda com a idade.** **Abaixo de 6 anos**, luxação isolada com pouca energia, muitas vezes com fatores predisponentes: **hiperfrouxidão, coxa valga ou cobertura acetabular menor**. **Acima de 6 anos**, alta energia e lesões associadas.\n\n**A necrose não é a regra.** Ela acontece em cerca de **10%**, e o fator mais forte é o **tempo até a redução**, com o maior risco acima de 6 horas. Reduzida cedo, a luxação da criança costuma ir bem. É a luxação negligenciada que necrosa em quase todos.\n\n| | Abaixo de 6 anos | Acima de 6 anos |\n|---|---|---|\n| energia | baixa | alta |\n| lesões associadas | raras | frequentes |\n| facilitadores | frouxidão, coxa valga, cobertura menor | |\n\n**Por que esta questão foi criada.** É a questão-gêmea do TARO 2024 (`pediatria-0537`), que perguntou a direção e a energia abaixo de 5 anos. Aqui se acrescenta o que facilita a luxação na criança pequena e a taxa de necrose, para o aluno não confundir a luxação com a fratura do colo.",
-  "correta": "**A) a posterior é a mais comum, e abaixo de 6 anos ocorre com trauma de baixa energia, muitas vezes com frouxidão ou cobertura acetabular menor.** São os três fatos do capítulo 24 do Rockwood crianças.",
+  "conceito": "A luxação traumática do quadril da criança tem três fatos que as provas exploram: a direção, a energia conforme a idade e o risco de necrose.\n\n**A direção.** **Posterior** em **mais de 90%**: força pelo joelho com o quadril fletido e um pouco aduzido. A anterior é menos de 10% (Rockwood and Wilkins' Fractures in Children, cap. 24).\n\n**A energia muda com a idade.** **Abaixo de 6 anos**, luxação isolada com pouca energia, muitas vezes com fatores predisponentes: **hiperfrouxidão, coxa valga ou cobertura acetabular menor**. **Acima de 6 anos**, alta energia e lesões associadas.\n\n**A necrose não é a regra.** Ela acontece em cerca de **10%**, e o fator mais forte é o **tempo até a redução**, com o maior risco acima de 6 horas. Reduzida cedo, a luxação da criança costuma ir bem. É a luxação negligenciada que necrosa em quase todos.\n\n| | Abaixo de 6 anos | Acima de 6 anos |\n|---|---|---|\n| energia | baixa | alta |\n| lesões associadas | raras | frequentes |\n| facilitadores | frouxidão, coxa valga, cobertura menor | |\n\n**Por que esta questão foi criada.** É a questão-gêmea do TARO 2024 (`pediatria-0537`), que perguntou a direção e a energia abaixo de 5 anos. Aqui se acrescenta o que facilita a luxação na criança pequena e a taxa de necrose, para o aluno não confundir a luxação com a fratura do colo.",
+  "correta": "**A: posterior.** Mais de 90% são posteriores; abaixo de 6 anos ocorrem com pouca energia (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "B": "**A anterior é menos de 10%**, e a criança pequena luxa com pouca força.",
-   "C": "**Abaixo de 6 anos, a luxação costuma ser isolada**; as lesões associadas são da criança maior, com trauma de alta energia.",
-   "D": "**A necrose fica em cerca de 10%** e depende do tempo até a redução; reduzida cedo, a evolução costuma ser boa."
+   "B": "**A anterior** responde por menos de 10%.",
+   "C": "**Central** é fratura do acetábulo, não luxação pura.",
+   "D": "**Inferior** não é a direção descrita como comum."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Traumatic Hip Dislocation",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -25324,14 +25307,15 @@
   "conferido": false
  },
  "pediatria-1191": {
-  "conceito": "A luxação do quadril é urgência, mas no adolescente a pressa tem limite: há uma complicação que a própria redução pode causar.\n\nO Rockwood crianças (cap. 24) avisa que a redução fechada costuma funcionar com sedação, mas carrega o risco de **separar a epífise femoral** do colo. Na criança de **12 a 16 anos** com a **fise ainda aberta**, a fise é o ponto fraco do fêmur proximal. Uma manobra com o músculo contraído e a cabeça presa atrás do acetábulo pode transformar uma luxação simples numa fratura transepifisária com a cabeça luxada, o pior cenário da DELBET. O capítulo mostra esse desastre (Fig. 24-6) e o atribui, provavelmente, a uma lesão fisária não vista que desviou na manobra.\n\nPor isso a recomendação é reduzir no **centro cirúrgico**, com:\n- **anestesia geral e relaxamento muscular**, para que a cabeça volte sem força;\n- **radioscopia**, para ver a fise antes e durante a manobra.\n\nManobras agressivas sem relaxante, nunca. Se a redução fechada falhar ou ficar não concêntrica, abre-se: via posterior para a luxação posterior, identificando o isquiático sobre os rotadores.\n\n**Por que esta questão foi criada.** O TEOT 2024 (`pediatria-0561`) perguntou o nome da manobra. O que o capítulo considera essencial, que é onde e como reduzir sem separar a epífise, nunca foi perguntado.",
-  "correta": "**B) anestesia geral com relaxamento muscular e radioscopia, para evitar o descolamento da epífise femoral.** É a recomendação do capítulo 24 para o adolescente com a fise aberta.",
+  "conceito": "A luxação do quadril é urgência, mas no adolescente a pressa tem limite: há uma complicação que a própria redução pode causar.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 24) avisa que a redução fechada costuma funcionar com sedação, mas carrega o risco de **separar a epífise femoral** do colo. Na criança de **12 a 16 anos** com a **fise ainda aberta**, a fise é o ponto fraco do fêmur proximal. Uma manobra com o músculo contraído e a cabeça presa atrás do acetábulo pode transformar uma luxação simples numa fratura transepifisária com a cabeça luxada, o pior cenário da DELBET. O capítulo mostra esse desastre (Fig. 24-6) e o atribui, provavelmente, a uma lesão fisária não vista que desviou na manobra.\n\nPor isso a recomendação é reduzir no **centro cirúrgico**, com:\n- **anestesia geral e relaxamento muscular**, para que a cabeça volte sem força;\n- **radioscopia**, para ver a fise antes e durante a manobra.\n\nManobras agressivas sem relaxante, nunca. Se a redução fechada falhar ou ficar não concêntrica, abre-se: via posterior para a luxação posterior, identificando o isquiático sobre os rotadores.\n\n**Por que esta questão foi criada.** O TEOT 2024 (`pediatria-0561`) perguntou o nome da manobra. O que o capítulo considera essencial, que é onde e como reduzir sem separar a epífise, nunca foi perguntado.",
+  "correta": "**B: anestesia geral e radioscopia.** Relaxamento completo e controle por imagem evitam separar a epífise na manobra (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**A redução sem relaxamento e sem radioscopia** é justamente a situação em que a epífise pode se separar no adolescente.",
-   "C": "**Tração por dias atrasa a redução**, e a necrose depende do tempo até reduzir.",
-   "D": "**A redução fechada é a primeira escolha**; a aberta fica para a que falha ou não fica concêntrica."
+   "A": "**A sedação leve** sem radioscopia arrisca o descolamento da epífise.",
+   "C": "**A tração** atrasa uma redução urgente.",
+   "D": "**A redução aberta** fica para a falha da fechada."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Traumatic Hip Dislocation (Treatment) e Fig. 24-6",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -25339,14 +25323,15 @@
   "conferido": false
  },
  "pediatria-1192": {
-  "conceito": "Depois de reduzir uma luxação do quadril, o trabalho não acabou: a radiografia de controle tem de mostrar uma redução **concêntrica**, com o espaço articular igual ao do outro lado.\n\nO Rockwood crianças (cap. 24) diz que o espaço **alargado** aparece em até **26%** das reduções. Há duas explicações possíveis:\n- a **hemartrose**, que afasta um pouco a cabeça e melhora em poucos dias;\n- algo **preso dentro da articulação**: o **lábio** acetabular, a **cápsula** ou um **fragmento osteocondral**.\n\nO tempo separa as duas. Quando o alargamento **persiste**, a conduta é **ressonância** (ou tomografia) para procurar o que está interposto, seguida da retirada aberta ou artroscópica. Na criança, a ressonância é o melhor exame, porque lábio, cápsula e boa parte da parede posterior são cartilagem e partes moles, que a radiografia e a tomografia não mostram bem.\n\nDeixar uma cabeça incongruente apoiar arrisca lesar a cartilagem, e tentar a redução de novo com mais força não tira o que está preso, além de pôr a epífise em risco.\n\n**Por que esta questão foi criada.** Nenhuma prova perguntou o controle depois da redução, mas o capítulo insiste nele, e a seção da luxação do resumo destaca a ressonância depois da redução. Projeção.",
-  "correta": "**C) ressonância magnética para pesquisar lábio, cápsula ou fragmento osteocondral interpostos.** O alargamento que persiste depois de alguns dias pede imagem (Rockwood crianças, cap. 24).",
+  "conceito": "Depois de reduzir uma luxação do quadril, o trabalho não acabou: a radiografia de controle tem de mostrar uma redução **concêntrica**, com o espaço articular igual ao do outro lado.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 24) diz que o espaço **alargado** aparece em até **26%** das reduções. Há duas explicações possíveis:\n- a **hemartrose**, que afasta um pouco a cabeça e melhora em poucos dias;\n- algo **preso dentro da articulação**: o **lábio** acetabular, a **cápsula** ou um **fragmento osteocondral**.\n\nO tempo separa as duas. Quando o alargamento **persiste**, a conduta é **ressonância** (ou tomografia) para procurar o que está interposto, seguida da retirada aberta ou artroscópica. Na criança, a ressonância é o melhor exame, porque lábio, cápsula e boa parte da parede posterior são cartilagem e partes moles, que a radiografia e a tomografia não mostram bem.\n\nDeixar uma cabeça incongruente apoiar arrisca lesar a cartilagem, e tentar a redução de novo com mais força não tira o que está preso, além de pôr a epífise em risco.\n\n**Por que esta questão foi criada.** Nenhuma prova perguntou o controle depois da redução, mas o capítulo insiste nele, e a seção da luxação do resumo destaca a ressonância depois da redução. Projeção.",
+  "correta": "**C: ressonância magnética.** Para procurar lábio, cápsula ou fragmento osteocondral interpostos (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**O alargamento por hemartrose melhora em poucos dias.** O que persiste sugere interposição.",
-   "B": "**Mais força não tira o que está preso** e arrisca separar a epífise.",
-   "D": "**Esperar 6 meses** deixa a cabeça incongruente apoiando sobre um lábio ou um fragmento preso."
+   "A": "**A cintilografia** não mostra a interposição.",
+   "B": "**Esperar 6 meses** deixa a cabeça fora do centro.",
+   "D": "**A ultrassonografia** não é o exame descrito."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Traumatic Hip Dislocation (Postreduction Care)",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -25369,14 +25354,15 @@
   "conferido": false
  },
  "pediatria-1194": {
-  "conceito": "O nervo **isquiático** é a lesão nervosa da luxação **posterior** do quadril: a cabeça sai para trás exatamente por onde o nervo passa, sobre os rotadores externos. O Rockwood crianças (cap. 24) dá lesão em cerca de **5%** das crianças (10% dos adultos), e compressão em 2 a 13% das luxações posteriores, com recuperação parcial em **60 a 70%**.\n\nA conduta depende de **quando** o nervo parou de funcionar, e por isso ele tem de ser testado **antes e depois** da redução:\n\n| Situação | Conduta |\n|---|---|\n| paralisado **antes** da redução, que ficou concêntrica | **observar**, sem explorar, salvo se a redução aberta for necessária por outro motivo |\n| bom antes e **piorou depois** da manobra | **explorar**: o nervo pode ter entrado na articulação |\n\nA lógica é simples. Se o nervo já estava paralisado quando a criança chegou, quem o lesou foi o trauma, por estiramento ou contusão, e a redução tirou a cabeça de cima dele. Explorar não acrescenta nada. Se ele estava bom e parou na manobra, algo novo aconteceu, e a hipótese de nervo preso na articulação tem de ser afastada na hora.\n\n**Por que esta questão foi criada.** Nenhuma prova perguntou o isquiático na luxação da criança, mas a regra de explorar ou observar conforme o momento da lesão é clássica e vale para o adulto. Projeção da seção da luxação do resumo.",
-  "correta": "**A) observar, sem explorar, salvo se a redução aberta for necessária por outro motivo.** Paralisia do isquiático presente antes da redução não se explora (Rockwood crianças, cap. 24).",
+  "conceito": "O nervo **isquiático** é a lesão nervosa da luxação **posterior** do quadril: a cabeça sai para trás exatamente por onde o nervo passa, sobre os rotadores externos. O Rockwood and Wilkins' Fractures in Children (cap. 24) dá lesão em cerca de **5%** das crianças (10% dos adultos), e compressão em 2 a 13% das luxações posteriores, com recuperação parcial em **60 a 70%**.\n\nA conduta depende de **quando** o nervo parou de funcionar, e por isso ele tem de ser testado **antes e depois** da redução:\n\n| Situação | Conduta |\n|---|---|\n| paralisado **antes** da redução, que ficou concêntrica | **observar**, sem explorar, salvo se a redução aberta for necessária por outro motivo |\n| bom antes e **piorou depois** da manobra | **explorar**: o nervo pode ter entrado na articulação |\n\nA lógica é simples. Se o nervo já estava paralisado quando a criança chegou, quem o lesou foi o trauma, por estiramento ou contusão, e a redução tirou a cabeça de cima dele. Explorar não acrescenta nada. Se ele estava bom e parou na manobra, algo novo aconteceu, e a hipótese de nervo preso na articulação tem de ser afastada na hora.\n\n**Por que esta questão foi criada.** Nenhuma prova perguntou o isquiático na luxação da criança, mas a regra de explorar ou observar conforme o momento da lesão é clássica e vale para o adulto. Projeção da seção da luxação do resumo.",
+  "correta": "**A: observado.** A exploração fica para a paralisia que surge depois da redução ou quando a via aberta é necessária por outro motivo (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "B": "**A exploração de rotina não está indicada** quando a paralisia já existia antes da redução.",
-   "C": "**O capítulo não usa exame para decidir a exploração** nesse caso: a decisão é clínica, pelo momento em que o nervo parou de funcionar.",
-   "D": "**Uma semana é pouco** para esperar recuperação de uma lesão por estiramento; a regra é observar."
+   "B": "**Explorar de imediato** não é a conduta para a paralisia presente antes da redução.",
+   "C": "**A artroscopia** não é a técnica descrita.",
+   "D": "**Uma semana** é cedo para esperar recuperação; a recuperação é parcial em 60% a 70%."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Traumatic Hip Dislocation (Complications)",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -25384,14 +25370,15 @@
   "conferido": false
  },
  "pediatria-1195": {
-  "conceito": "O fechamento prematuro da fise depois da fratura do quadril da criança é **frequente**, mas quase sempre **pouco importante**. As duas metades da frase estão no Rockwood crianças (cap. 24).\n\n**É frequente.** Acontece em cerca de **28%** das fraturas, mais quando a fixação atravessa a fise e quando há necrose (sobretudo RATLIFF II e III).\n\n**Pesa pouco.** A fise femoral proximal responde por só **13% do crescimento do membro inferior**, cerca de **3 mm por ano**, e fecha antes das outras fises. Uma parada aos 12 anos custa poucos milímetros. O encurtamento só importa na **criança muito pequena**, que ainda tem muitos anos de crescimento pela frente. Trata-se a discrepância só se a prevista for de **2,5 cm ou mais**.\n\nHá um detalhe a mais na criança pequena. Se a parada é esperada (implante cruzando a fise ou lesão fisária) **até 8 anos**, pode-se fazer junto a **epifisiodese do trocânter maior**, para que o trocânter não continue crescendo sozinho e fique alto em relação à cabeça (Fig. 24-23).\n\nÉ essa conta que permite cruzar a fise com parafusos quando a estabilidade exige: perde-se pouco crescimento e evita-se a pseudartrose e a necrose, que custam muito mais.\n\n**Por que esta questão foi criada.** Nenhuma prova perguntou o peso da fise proximal no crescimento, mas é ele que justifica a regra de que a estabilidade vem antes da fise, a base do tratamento cobrado no TARO 2007 (`pediatria-0730`).",
-  "correta": "**B) a fise femoral proximal contribui com cerca de 13% do crescimento do membro, e a discrepância só costuma importar na criança muito pequena.** O fechamento é frequente (cerca de 28%), mas quase sempre de pouca consequência (Rockwood crianças, cap. 24).",
+  "conceito": "O fechamento prematuro da fise depois da fratura do quadril da criança é **frequente**, mas quase sempre **pouco importante**. As duas metades da frase estão no Rockwood and Wilkins' Fractures in Children (cap. 24).\n\n**É frequente.** Acontece em cerca de **28%** das fraturas, mais quando a fixação atravessa a fise e quando há necrose (sobretudo RATLIFF II e III).\n\n**Pesa pouco.** A fise femoral proximal responde por só **13% do crescimento do membro inferior**, cerca de **3 mm por ano**, e fecha antes das outras fises. Uma parada aos 12 anos custa poucos milímetros. O encurtamento só importa na **criança muito pequena**, que ainda tem muitos anos de crescimento pela frente. Trata-se a discrepância só se a prevista for de **2,5 cm ou mais**.\n\nHá um detalhe a mais na criança pequena. Se a parada é esperada (implante cruzando a fise ou lesão fisária) **até 8 anos**, pode-se fazer junto a **epifisiodese do trocânter maior**, para que o trocânter não continue crescendo sozinho e fique alto em relação à cabeça (Fig. 24-23).\n\nÉ essa conta que permite cruzar a fise com parafusos quando a estabilidade exige: perde-se pouco crescimento e evita-se a pseudartrose e a necrose, que custam muito mais.\n\n**Por que esta questão foi criada.** Nenhuma prova perguntou o peso da fise proximal no crescimento, mas é ele que justifica a regra de que a estabilidade vem antes da fise, a base do tratamento cobrado no TARO 2007 (`pediatria-0730`).",
+  "correta": "**B: 13% do crescimento do membro.** Cerca de 3 mm por ano; por isso o fechamento prematuro, frequente, pesa pouco (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**A fise proximal faz só 13% do crescimento do membro**, cerca de 3 mm por ano; não metade.",
-   "C": "**Não é raro**: o capítulo dá cerca de 28%.",
-   "D": "**Ele se liga às duas coisas**: é mais comum quando a fixação cruza a fise e quando há necrose."
+   "A": "**30%** superestima a contribuição.",
+   "C": "**50%** é muito mais que o descrito.",
+   "D": "**70%** passa muito do descrito."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani), seção Premature Physeal Closure e Fig. 24-23",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do fêmur e luxação traumática do quadril na criança (rockwoodcriancas10-24-quadril)"
   ],
@@ -26798,14 +26785,15 @@
   "conferido": false
  },
  "pediatria-1271": {
-  "conceito": "Os números do rádio proximal da criança, segundo o Rockwood crianças (cap. 11):\n- as fraturas do **colo** respondem por **1% a 3%** de todas as fraturas da criança e por **5% a 10%** das fraturas do cotovelo;\n- a idade mediana é de **9 a 10 anos**, sem diferença entre os sexos, mas nas meninas a fratura acontece cerca de 2 anos antes;\n- **30% a 50%** dos pacientes têm outra fratura no cotovelo, sobretudo do epicôndilo medial, luxação do cotovelo ou olécrano;\n- a fratura verdadeira da **cabeça** é menos comum; quando acontece, em geral é uma **SALTER-HARRIS IV**.\n\nAs lesões associadas importam para o prognóstico: elas trazem mais rigidez e dor do que a fratura isolada do rádio proximal. E por isso o capítulo insiste em examinar o cotovelo inteiro, e até o punho, porque a criança pequena pode se queixar só da dor no punho.\n\n**Por que esta questão foi criada.** As provas cobram o colo do rádio pelo mecanismo e pelo tratamento; a epidemiologia, com o dado das lesões associadas, ficou como projeção.",
-  "correta": "**C) as do colo respondem por cerca de 5% a 10% das fraturas do cotovelo, a idade mediana é de 9 a 10 anos e 30% a 50% têm outra fratura no cotovelo.** São os números do capítulo 11 do Rockwood crianças.",
+  "conceito": "Os números do rádio proximal da criança, segundo o Rockwood and Wilkins' Fractures in Children (cap. 11):\n- as fraturas do **colo** respondem por **1% a 3%** de todas as fraturas da criança e por **5% a 10%** das fraturas do cotovelo;\n- a idade mediana é de **9 a 10 anos**, sem diferença entre os sexos, mas nas meninas a fratura acontece cerca de 2 anos antes;\n- **30% a 50%** dos pacientes têm outra fratura no cotovelo, sobretudo do epicôndilo medial, luxação do cotovelo ou olécrano;\n- a fratura verdadeira da **cabeça** é menos comum; quando acontece, em geral é uma **SALTER-HARRIS IV**.\n\nAs lesões associadas importam para o prognóstico: elas trazem mais rigidez e dor do que a fratura isolada do rádio proximal. E por isso o capítulo insiste em examinar o cotovelo inteiro, e até o punho, porque a criança pequena pode se queixar só da dor no punho.\n\n**Por que esta questão foi criada.** As provas cobram o colo do rádio pelo mecanismo e pelo tratamento; a epidemiologia, com o dado das lesões associadas, ficou como projeção.",
+  "correta": "**C: 5% a 10% das fraturas do cotovelo.** E 30% a 50% dos pacientes têm outra fratura no cotovelo (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**O colo do rádio responde por só 5% a 10% das fraturas do cotovelo**, e a mediana é de 9 a 10 anos.",
-   "B": "**A sede mais comum é o colo**, não a cabeça; a fratura da cabeça, quando ocorre, costuma ser SALTER-HARRIS IV.",
-   "D": "**30% a 50% têm outra lesão no cotovelo**; não é uma fratura isolada."
+   "A": "**1%** é a ordem de grandeza entre todas as fraturas da criança (1% a 3%), não entre as do cotovelo.",
+   "B": "**25%** superestima a parcela.",
+   "D": "**40%** é perto da proporção com outra fratura associada, não da parcela do cotovelo."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seção Introduction to Fractures of the Proximal Radius and Ulna",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -26813,14 +26801,15 @@
   "conferido": false
  },
  "pediatria-1272": {
-  "conceito": "Seis anos, fratura **isolada** do colo do rádio com **40 graus**, **sem translação**, a cabeça alinhada com o capítulo e a **rotação completa** depois da anestesia intra-articular. Todos os critérios do tratamento sem redução estão presentes.\n\nO Rockwood crianças (cap. 11) aceita, **abaixo de 10 anos**, angulação de até **45 graus**, porque séries retrospectivas mostram que essa angulação remodela quando a cabeça não está luxada. Acima de 10 anos, o limite cai para 30 graus. Em qualquer idade, o desvio deve ser menor que 2 mm e a rotação completa.\n\nA anestesia intra-articular do caso não é um detalhe: aspirar o hematoma e injetar anestésico permite testar a rotação sem dor. Rotação bloqueada é motivo para reduzir, mesmo dentro do limite de graus; rotação livre com a cabeça alinhada permite **imobilização curta** (1 a 3 semanas) e movimento.\n\nPlaca, haste e ressecção da cabeça não têm lugar aqui; a ressecção, aliás, não aparece no capítulo como tratamento da criança.\n\n**Por que esta questão foi criada.** É a gêmea da SBOT-SP (`pediatria-0926`), que tem o mesmo cenário sem gabarito oficial; esta questão firma a resposta pelo livro.",
-  "correta": "**B) tratamento não operatório com imobilização curta, porque abaixo de 10 anos até 45 graus remodelam.** Com a cabeça alinhada e a rotação completa, não é preciso reduzir (Rockwood crianças, cap. 11).",
+  "conceito": "Seis anos, fratura **isolada** do colo do rádio com **40 graus**, **sem translação**, a cabeça alinhada com o capítulo e a **rotação completa** depois da anestesia intra-articular. Todos os critérios do tratamento sem redução estão presentes.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 11) aceita, **abaixo de 10 anos**, angulação de até **45 graus**, porque séries retrospectivas mostram que essa angulação remodela quando a cabeça não está luxada. Acima de 10 anos, o limite cai para 30 graus. Em qualquer idade, o desvio deve ser menor que 2 mm e a rotação completa.\n\nA anestesia intra-articular do caso não é um detalhe: aspirar o hematoma e injetar anestésico permite testar a rotação sem dor. Rotação bloqueada é motivo para reduzir, mesmo dentro do limite de graus; rotação livre com a cabeça alinhada permite **imobilização curta** (1 a 3 semanas) e movimento.\n\nPlaca, haste e ressecção da cabeça não têm lugar aqui; a ressecção, aliás, não aparece no capítulo como tratamento da criança.\n\n**Por que esta questão foi criada.** É a gêmea da SBOT-SP (`pediatria-0926`), que tem o mesmo cenário sem gabarito oficial; esta questão firma a resposta pelo livro.",
+  "correta": "**B: 45 graus.** Abaixo de 10 anos até 45 graus remodelam quando a cabeça não está luxada (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**Placa é para o que as técnicas fechadas não resolvem**, e a fratura está dentro do aceitável.",
-   "C": "**30 graus é o limite acima de 10 anos**; aos 6, aceita-se até 45.",
-   "D": "**A ressecção da cabeça do rádio não é tratamento** da fratura do colo da criança."
+   "A": "**15 graus** é restritivo demais para essa idade.",
+   "C": "**30 graus** é o limite do mais velho, não abaixo de 10 anos.",
+   "D": "**60 graus** passa do que o capítulo aceita."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seção Nonoperative Treatment of Fractures of the Proximal Radius",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -26828,24 +26817,17 @@
   "conferido": false
  },
  "pediatria-1273": {
-  "conceito": "A manobra de **PATTERSON** tem cinco elementos, e a alternativa certa precisa trazer todos na direção certa (Rockwood crianças, cap. 11, Fig. 11-16):\n\n| Elemento | Na PATTERSON |\n|---|---|\n| fulcro | mão do auxiliar na face **medial** do úmero distal |\n| tração | **distal**, no antebraço |\n| rotação | **supinação**, para relaxar o supinador e o bíceps |\n| força no cotovelo | **varo** |\n| pressão direta | na cabeça do rádio, **de fora para dentro** |\n\nA fratura veio de um valgo, que fechou o lado lateral; o varo o abre e dá espaço para a cabeça voltar com a pressão do dedo. O ligamento anular íntegro segura a cabeça durante a manobra.\n\nAs alternativas erradas descrevem outras técnicas ou invertem a força: o cotovelo a 90 graus com o polegar na cabeça e pronação é a israelense; supinação com pressão na diáfise é a de MONSON.\n\n**Por que esta questão foi criada.** É a gêmea do TARO 2008 (`pediatria-0748`), que perguntou a PATTERSON e está sem gabarito oficial.",
-  "correta": "**D) tração distal com o antebraço supinado, varo no cotovelo e pressão direta lateral sobre a cabeça do rádio.** É a manobra de PATTERSON (Rockwood crianças, cap. 11, Fig. 11-16).",
+  "conceito": "A manobra de **PATTERSON** tem cinco elementos, e a alternativa certa precisa trazer todos na direção certa (Rockwood and Wilkins' Fractures in Children, cap. 11, Fig. 11-16):\n\n| Elemento | Na PATTERSON |\n|---|---|\n| fulcro | mão do auxiliar na face **medial** do úmero distal |\n| tração | **distal**, no antebraço |\n| rotação | **supinação**, para relaxar o supinador e o bíceps |\n| força no cotovelo | **varo** |\n| pressão direta | na cabeça do rádio, **de fora para dentro** |\n\nA fratura veio de um valgo, que fechou o lado lateral; o varo o abre e dá espaço para a cabeça voltar com a pressão do dedo. O ligamento anular íntegro segura a cabeça durante a manobra.\n\nAs alternativas erradas descrevem outras técnicas ou invertem a força: o cotovelo a 90 graus com o polegar na cabeça e pronação é a israelense; supinação com pressão na diáfise é a de MONSON.\n\n**Por que esta questão foi criada.** É a gêmea do TARO 2008 (`pediatria-0748`), que perguntou a PATTERSON e está sem gabarito oficial.",
+  "correta": "**D: varo.** Com tração distal, supinação e pressão direta de fora para dentro na cabeça (Rockwood and Wilkins' Fractures in Children, cap. 11, Fig. 11-16).",
   "incorretas": {
-   "A": "**O valgo repete o mecanismo da fratura**, e a pressão na cabeça é de fora para dentro.",
-   "B": "**Flexão de 90 graus com pronação e o polegar na cabeça** é a técnica israelense.",
-   "C": "**Pressão na diáfise com o antebraço supinado e o cotovelo fletido** é a técnica de MONSON."
+   "A": "**O valgo** é o mecanismo da fratura; a manobra faz o contrário.",
+   "B": "**A flexão** não é o componente descrito.",
+   "C": "**A extensão** também não."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seção Closed Reduction Techniques e Fig. 11-16",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
-  ],
-  "imagens": [
-   {
-    "arquivo": "pediatria/rwc10-11-16.jpeg",
-    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11, Fig. 11-16. Manobra de PATTERSON: o auxiliar faz fulcro medial no úmero distal; o cirurgião traciona com o antebraço supinado, leva o cotovelo para varo e empurra a cabeça do rádio com o dedo.",
-    "largura": 1200,
-    "altura": 1391
-   }
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
@@ -26866,14 +26848,15 @@
   "conferido": false
  },
  "pediatria-1275": {
-  "conceito": "A técnica de **METAIZEAU** reduz e fixa a fratura do colo do rádio por dentro do osso, sem abrir o cotovelo. O Rockwood crianças (cap. 11) descreve os detalhes que a banca pode perguntar:\n\n- **tamanho**: haste de Kirschner ou de titânio com cerca de **60% a 70% do istmo** (2 a 2,4 mm no adolescente); uma haste do tamanho total do istmo não passa;\n- **ponta**: os 3 a 4 mm distais dobrados a cerca de **30 a 40 graus**, para enganchar o fragmento;\n- **entrada**: no **rádio distal**, por incisão lateral logo acima da fise ou dorsal junto ao tubérculo de LISTER, cuidando do ramo superficial do radial e dos extensores;\n- **fixação**: a haste é **impactada até a epífise**, cruzando a fise;\n- **redução**: **girando a haste**, com um auxiliar segurando o antebraço;\n- **pós-operatório**: imobilização de 1 a 2 semanas, só para conforto, e movimento cedo.\n\nO erro clássico é não prender o fragmento proximal e perdê-lo ao girar (Fig. 11-36). A entrada pela cabeça, atravessando o capítulo, é justamente o que o capítulo desaconselha: os fios transarticulares migram e quebram.\n\n**Por que esta questão foi criada.** O TEOT 2023 (`pediatria-0708`) mostrou a figura e pediu só o nome; aqui, os passos.",
-  "correta": "**A) a haste, com cerca de 60% a 70% do istmo e ponta dobrada a 30 a 40 graus, entra no rádio distal, é impactada até a epífise e girada para reduzir a cabeça.** É a técnica de METAIZEAU (Rockwood crianças, cap. 11).",
+  "conceito": "A técnica de **METAIZEAU** reduz e fixa a fratura do colo do rádio por dentro do osso, sem abrir o cotovelo. O Rockwood and Wilkins' Fractures in Children (cap. 11) descreve os detalhes que a banca pode perguntar:\n\n- **tamanho**: haste de Kirschner ou de titânio com cerca de **60% a 70% do istmo** (2 a 2,4 mm no adolescente); uma haste do tamanho total do istmo não passa;\n- **ponta**: os 3 a 4 mm distais dobrados a cerca de **30 a 40 graus**, para enganchar o fragmento;\n- **entrada**: no **rádio distal**, por incisão lateral logo acima da fise ou dorsal junto ao tubérculo de LISTER, cuidando do ramo superficial do radial e dos extensores;\n- **fixação**: a haste é **impactada até a epífise**, cruzando a fise;\n- **redução**: **girando a haste**, com um auxiliar segurando o antebraço;\n- **pós-operatório**: imobilização de 1 a 2 semanas, só para conforto, e movimento cedo.\n\nO erro clássico é não prender o fragmento proximal e perdê-lo ao girar (Fig. 11-36). A entrada pela cabeça, atravessando o capítulo, é justamente o que o capítulo desaconselha: os fios transarticulares migram e quebram.\n\n**Por que esta questão foi criada.** O TEOT 2023 (`pediatria-0708`) mostrou a figura e pediu só o nome; aqui, os passos.",
+  "correta": "**A: 60% a 70% do istmo.** Com a ponta dobrada a 30 a 40 graus, entrando pelo rádio distal (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "B": "**A haste entra pelo rádio distal**; atravessar o capítulo é o que se evita.",
-   "C": "**A haste deve ter 60% a 70% do istmo**; do tamanho total, não passa nem gira.",
-   "D": "**A imobilização é curta**, de 1 a 2 semanas, só para conforto."
+   "B": "**O istmo inteiro** não deixa a haste passar.",
+   "C": "**30%** fica fina demais para reduzir e segurar a cabeça.",
+   "D": "**90%** também dificulta a passagem e a rotação."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seção Operative Treatment (Intramedullary Nail Reduction/Fixation) e Postoperative Care",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -26881,14 +26864,15 @@
   "conferido": false
  },
  "pediatria-1276": {
-  "conceito": "O **nervo interósseo posterior** dá a volta no rádio proximal, dentro do supinador. Ele raramente é lesado pela fratura; o risco maior é **iatrogênico**, nas manobras percutâneas e nas vias abertas.\n\nO Rockwood crianças (cap. 11) dá três medidas de proteção:\n- **pronar o antebraço**: a pronação afasta o nervo do campo lateral;\n- entrar com o fio ou o instrumento pela **face lateral direta** do rádio;\n- evitar **afastamento anterior vigoroso** nas vias abertas.\n\nQuando acontece, a lesão costuma ser **transitória**, e a exploração não é a regra: o capítulo indica eletroneuromiografia e exploração se não houver recuperação em **3 a 4 meses**. Por isso também não se explora o nervo de rotina antes de reduzir.\n\nA supinação e a entrada anterior fazem o oposto do que se quer: trazem o nervo para o caminho do fio.\n\n**Por que esta questão foi criada.** As provas cobram as manobras de redução, mas não a segurança da técnica percutânea, que é onde o nervo se lesa.",
-  "correta": "**B) pronar o antebraço e entrar pela face lateral direta do rádio, evitando afastamento anterior vigoroso.** São as medidas do capítulo 11 para proteger o interósseo posterior.",
+  "conceito": "O **nervo interósseo posterior** dá a volta no rádio proximal, dentro do supinador. Ele raramente é lesado pela fratura; o risco maior é **iatrogênico**, nas manobras percutâneas e nas vias abertas.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 11) dá três medidas de proteção:\n- **pronar o antebraço**: a pronação afasta o nervo do campo lateral;\n- entrar com o fio ou o instrumento pela **face lateral direta** do rádio;\n- evitar **afastamento anterior vigoroso** nas vias abertas.\n\nQuando acontece, a lesão costuma ser **transitória**, e a exploração não é a regra: o capítulo indica eletroneuromiografia e exploração se não houver recuperação em **3 a 4 meses**. Por isso também não se explora o nervo de rotina antes de reduzir.\n\nA supinação e a entrada anterior fazem o oposto do que se quer: trazem o nervo para o caminho do fio.\n\n**Por que esta questão foi criada.** As provas cobram as manobras de redução, mas não a segurança da técnica percutânea, que é onde o nervo se lesa.",
+  "correta": "**B: pronação.** A pronação afasta o nervo do campo lateral; o fio entra pela face lateral direta (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**Supinação e entrada anterior aproximam o nervo** do caminho do fio.",
-   "C": "**A exploração de rotina não é feita**; a lesão costuma ser transitória.",
-   "D": "**A face medial, junto à ulna, não é a entrada descrita**; o capítulo pede a face lateral direta."
+   "A": "**A supinação** aproxima o nervo do campo de trabalho.",
+   "C": "**O neutro** não é a posição recomendada.",
+   "D": "**A supinação forçada** aumenta o risco."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seções Instrument-Assisted Closed Reduction, Potential Pitfalls e Complications (Nerve Injuries)",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -26911,14 +26895,15 @@
   "conferido": false
  },
  "pediatria-1278": {
-  "conceito": "Antes de tratar uma fratura grave do colo do rádio, o Rockwood crianças (cap. 11) recomenda conversar com a família sobre os **fatores de mau prognóstico**:\n- **desvio ou angulação maiores**;\n- **idade acima de 10 anos**;\n- **trauma de alta energia**;\n- **lesões associadas**: luxação do cotovelo, fratura do olécrano, outras fraturas do cotovelo.\n\nO menino do caso tem quase todos. O capítulo dá os números: resultados ruins em 15% a 33% das grandes séries e em até 50% das fraturas muito desviadas; num modelo de Boston, o desvio inicial foi o único preditor, com 25% de insucesso com 35% de desvio e 50% com 76%.\n\nA família também precisa saber que, se for preciso abrir, a **osteonecrose chega a 25%** depois da redução aberta, e a **sinostose radioulnar** aparece sobretudo nesses casos. Por isso as técnicas fechadas e percutâneas devem ser esgotadas antes.\n\n**Por que esta questão foi criada.** O prognóstico não caiu nas questões do acervo, mas é o que se discute na prática antes de operar. Projeção da seção de tratamento do resumo.",
-  "correta": "**A) desvio ou angulação maiores, idade acima de 10 anos, trauma de alta energia e lesões associadas; a redução aberta aumenta osteonecrose e sinostose.** São os fatores de mau prognóstico do capítulo 11.",
+  "conceito": "Antes de tratar uma fratura grave do colo do rádio, o Rockwood and Wilkins' Fractures in Children (cap. 11) recomenda conversar com a família sobre os **fatores de mau prognóstico**:\n- **desvio ou angulação maiores**;\n- **idade acima de 10 anos**;\n- **trauma de alta energia**;\n- **lesões associadas**: luxação do cotovelo, fratura do olécrano, outras fraturas do cotovelo.\n\nO menino do caso tem quase todos. O capítulo dá os números: resultados ruins em 15% a 33% das grandes séries e em até 50% das fraturas muito desviadas; num modelo de Boston, o desvio inicial foi o único preditor, com 25% de insucesso com 35% de desvio e 50% com 76%.\n\nA família também precisa saber que, se for preciso abrir, a **osteonecrose chega a 25%** depois da redução aberta, e a **sinostose radioulnar** aparece sobretudo nesses casos. Por isso as técnicas fechadas e percutâneas devem ser esgotadas antes.\n\n**Por que esta questão foi criada.** O prognóstico não caiu nas questões do acervo, mas é o que se discute na prática antes de operar. Projeção da seção de tratamento do resumo.",
+  "correta": "**A: idade acima de 10 anos.** Junto com desvio maior, alta energia e lesões associadas (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "B": "**A criança pequena e a fratura metafisária vão melhor**, não pior.",
-   "C": "**A fratura isolada com menos de 30 graus é a de melhor prognóstico.**",
-   "D": "**O tratamento fechado bem-sucedido vai melhor** que o aberto."
+   "B": "**A criança pequena** remodela mais e tem melhor prognóstico.",
+   "C": "**A fratura isolada** é o cenário favorável.",
+   "D": "**Angulação pequena** é fator de bom prognóstico."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seção Outcomes of Proximal Radius Fractures e Complications",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -26926,14 +26911,15 @@
   "conferido": false
  },
  "pediatria-1279": {
-  "conceito": "Fratura **articular** da cabeça do rádio (SALTER-HARRIS IV, CHAMBERS IB), pouco desviada, e uma semana depois a cabeça **mais posterior** no perfil: é o cenário que o Rockwood crianças (cap. 11) mostra na Fig. 11-9.\n\nO capítulo chama atenção para essas fraturas que parecem inocentes e evoluem com **subluxação radiocapitelar posterior**, por lesão ligamentar não vista (em geral do complexo colateral ulnar lateral). WATERS e KASSER as incluíram no acrônimo **TRASH** (\"a aparência radiográfica parecia inofensiva\"). A subluxação é um fator de prognóstico **extremamente ruim**: a cartilagem se destrói.\n\nA conduta descrita: **ressonância urgente** (que no caso da figura mostrou derrame, desvio articular e subluxação) e **redução aberta com fixação** anatômica da cabeça e da articulação. Os autores ficaram mais agressivos com essas fraturas e usam implantes de baixo perfil (parafusos de minifragmento ou sem cabeça) para permitir movimento cedo.\n\nManter o gesso deixa a cabeça subluxada; retirar e mobilizar não reduz; e a ressecção da cabeça não é tratamento da criança.\n\n**Por que esta questão foi criada.** Nenhuma prova do acervo cobrou a fratura articular da cabeça, mas o capítulo a destaca como a armadilha mais perigosa do rádio proximal.",
-  "correta": "**D) ressonância urgente e redução aberta com fixação, pelo risco de subluxação radiocapitelar posterior e destruição da cartilagem.** É a conduta do capítulo 11 para a fratura articular da cabeça que subluxa.",
+  "conceito": "Fratura **articular** da cabeça do rádio (SALTER-HARRIS IV, CHAMBERS IB), pouco desviada, e uma semana depois a cabeça **mais posterior** no perfil: é o cenário que o Rockwood and Wilkins' Fractures in Children (cap. 11) mostra na Fig. 11-9.\n\nO capítulo chama atenção para essas fraturas que parecem inocentes e evoluem com **subluxação radiocapitelar posterior**, por lesão ligamentar não vista (em geral do complexo colateral ulnar lateral). WATERS e KASSER as incluíram no acrônimo **TRASH** (\"a aparência radiográfica parecia inofensiva\"). A subluxação é um fator de prognóstico **extremamente ruim**: a cartilagem se destrói.\n\nA conduta descrita: **ressonância urgente** (que no caso da figura mostrou derrame, desvio articular e subluxação) e **redução aberta com fixação** anatômica da cabeça e da articulação. Os autores ficaram mais agressivos com essas fraturas e usam implantes de baixo perfil (parafusos de minifragmento ou sem cabeça) para permitir movimento cedo.\n\nManter o gesso deixa a cabeça subluxada; retirar e mobilizar não reduz; e a ressecção da cabeça não é tratamento da criança.\n\n**Por que esta questão foi criada.** Nenhuma prova do acervo cobrou a fratura articular da cabeça, mas o capítulo a destaca como a armadilha mais perigosa do rádio proximal.",
+  "correta": "**D: redução aberta e fixação.** É a subluxação radiocapitelar posterior por lesão ligamentar não vista, que destrói a cartilagem se não for corrigida (Rockwood and Wilkins' Fractures in Children, cap. 11, Fig. 11-9).",
   "incorretas": {
-   "A": "**A subluxação não reduz sozinha** no gesso e destrói a cartilagem.",
-   "B": "**A ressecção da cabeça não é tratamento** da fratura da criança.",
-   "C": "**Mobilizar com a cabeça subluxada** mantém a incongruência."
+   "A": "**Manter o gesso** deixa a subluxação progredir.",
+   "B": "**Excisar a cabeça** na criança não é a conduta.",
+   "C": "**A fisioterapia** com a cabeça subluxada piora a lesão."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seções Imaging (TRASH), Classification (Chambers IB), Authors' Preferred Treatment e Fig. 11-9",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -26941,37 +26927,31 @@
   "conferido": false
  },
  "pediatria-1280": {
-  "conceito": "Cotovelo estendido, antebraço supinado, galho verde do olécrano e fratura do colo do rádio: é o **padrão em valgo** da fratura do olécrano em extensão.\n\nO Rockwood crianças (cap. 11) explica: com o antebraço em **supinação**, o ângulo de carregamento do cotovelo transforma a queda num **estresse em valgo**. O olécrano, travado na fossa, dobra em galho verde, e o mesmo valgo comprime o lado lateral (quebrando o **colo do rádio**) e traciona o medial (podendo arrancar o **epicôndilo medial**), como na Fig. 11-45. Com o colo do rádio, a lesão é um **equivalente de MONTEGGIA tipo I**.\n\nO padrão em **varo** produz o tipo III: a cabeça do rádio luxa para fora, ou o colo se desvia para fora com a cabeça no lugar.\n\n**Por que esta questão foi criada.** É a gêmea do TARO 2017 (`pediatria-0611`), que perguntou a posição do antebraço e do cotovelo; aqui se acrescenta a equivalência de MONTEGGIA.",
-  "correta": "**B) valgo; equivalente de MONTEGGIA I.** O galho verde do olécrano com fratura do colo do rádio, na queda em supinação, é o padrão em valgo (Rockwood crianças, cap. 11).",
+  "conceito": "Cotovelo estendido, antebraço supinado, galho verde do olécrano e fratura do colo do rádio: é o **padrão em valgo** da fratura do olécrano em extensão.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 11) explica: com o antebraço em **supinação**, o ângulo de carregamento do cotovelo transforma a queda num **estresse em valgo**. O olécrano, travado na fossa, dobra em galho verde, e o mesmo valgo comprime o lado lateral (quebrando o **colo do rádio**) e traciona o medial (podendo arrancar o **epicôndilo medial**), como na Fig. 11-45. Com o colo do rádio, a lesão é um **equivalente de MONTEGGIA tipo I**.\n\nO padrão em **varo** produz o tipo III: a cabeça do rádio luxa para fora, ou o colo se desvia para fora com a cabeça no lugar.\n\n**Por que esta questão foi criada.** É a gêmea do TARO 2017 (`pediatria-0611`), que perguntou a posição do antebraço e do cotovelo; aqui se acrescenta a equivalência de MONTEGGIA.",
+  "correta": "**B: valgo.** A supinação e o ângulo de carregamento transformam a queda em valgo, que comprime o lado lateral (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**O varo dá o equivalente de MONTEGGIA III**, com o colo desviado para fora.",
-   "C": "**A fratura em flexão é transversa e intra-articular**, sem o galho verde com o colo do rádio.",
-   "D": "**O tipo IV de MONTEGGIA não tem relação** com esse padrão."
+   "A": "**O varo** produz o outro padrão em extensão (B2), não o descrito no enunciado.",
+   "C": "**A flexão** é o mecanismo da fratura transversa do olécrano.",
+   "D": "**A hiperextensão pura** não explica a fratura do colo do rádio associada."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seção Mechanisms of Injury for Fractures of the Proximal Ulna e Fig. 11-45",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
-  ],
-  "imagens": [
-   {
-    "arquivo": "pediatria/rwc10-11-45.jpeg",
-    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11, Fig. 11-45. Padrão em valgo da fratura em extensão: queda com o cotovelo estendido e o antebraço em supinação; galho verde do olécrano com fratura do colo do rádio ou avulsão do epicôndilo medial.",
-    "largura": 1200,
-    "altura": 894
-   }
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1281": {
-  "conceito": "A fratura do olécrano por **flexão** é a mais comum: queda com o cotovelo fletido, o tríceps puxando a ponta e o braquial puxando embaixo, e a cortical **posterior** cede em tensão. O traço é **transverso** e **intra-articular** (Rockwood crianças, cap. 11).\n\nA pergunta prática é se ela é estável. Os autores testam assim: **palpam um defeito** entre os fragmentos e **fletem o cotovelo**. Se os fragmentos se afastam, o periósteo posterior rasgou e a fratura é **instável**. O caso do enunciado tem os dois sinais.\n\nFratura instável vai para **fixação**, para permitir movimento cedo. A técnica preferida é a **banda de tensão**: os autores trocaram o fio de aço por **sutura de PDS** em oito (com fios axiais ou parafuso esponjoso). PERKINS mostrou resultados iguais entre o fio e a sutura, **exceto acima de 50 kg**, em que a sutura falhou mais e deve ser evitada.\n\nA fratura estável vai para gesso com o cotovelo em **5 a 10 graus de flexão** por cerca de 3 semanas, com radiografia em 5 a 7 dias. Gesso em flexão de 90 graus abriria o foco da fratura instável.\n\n**Por que esta questão foi criada.** O olécrano caiu nas provas pelo padrão em extensão; a fratura em flexão, a mais comum, ficou como projeção.",
-  "correta": "**D) fixação com técnica de banda de tensão, de preferência com fio de PDS (paciente com menos de 50 kg), para movimento precoce.** É a conduta dos autores para a fratura em flexão instável (Rockwood crianças, cap. 11).",
+  "conceito": "A fratura do olécrano por **flexão** é a mais comum: queda com o cotovelo fletido, o tríceps puxando a ponta e o braquial puxando embaixo, e a cortical **posterior** cede em tensão. O traço é **transverso** e **intra-articular** (Rockwood and Wilkins' Fractures in Children, cap. 11).\n\nA pergunta prática é se ela é estável. Os autores testam assim: **palpam um defeito** entre os fragmentos e **fletem o cotovelo**. Se os fragmentos se afastam, o periósteo posterior rasgou e a fratura é **instável**. O caso do enunciado tem os dois sinais.\n\nFratura instável vai para **fixação**, para permitir movimento cedo. A técnica preferida é a **banda de tensão**: os autores trocaram o fio de aço por **sutura de PDS** em oito (com fios axiais ou parafuso esponjoso). PERKINS mostrou resultados iguais entre o fio e a sutura, **exceto acima de 50 kg**, em que a sutura falhou mais e deve ser evitada.\n\nA fratura estável vai para gesso com o cotovelo em **5 a 10 graus de flexão** por cerca de 3 semanas, com radiografia em 5 a 7 dias. Gesso em flexão de 90 graus abriria o foco da fratura instável.\n\n**Por que esta questão foi criada.** O olécrano caiu nas provas pelo padrão em extensão; a fratura em flexão, a mais comum, ficou como projeção.",
+  "correta": "**D: banda de tensão com PDS.** Fixação estável para movimento precoce; o fio de PDS evita a retirada de metal (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**A flexão de 90 graus abre o foco** de uma fratura cujo periósteo posterior rasgou.",
-   "B": "**O gesso em extensão serve à fratura estável**; esta separa ao fletir e tem defeito palpável.",
-   "C": "**Excisar o fragmento proximal não é tratamento** do olécrano da criança."
+   "A": "**O gesso em flexão** afasta os fragmentos da fratura instável.",
+   "B": "**O gesso em extensão** não garante a redução da fratura instável.",
+   "C": "**A excisão** não é tratamento da criança."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seções Mechanisms (Flexion Injuries) e Authors' Preferred Treatment for Fractures of the Proximal Ulna",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -26979,14 +26959,15 @@
   "conferido": false
  },
  "pediatria-1282": {
-  "conceito": "A fratura da **apófise do olécrano** é rara e tem três regras no Rockwood crianças (cap. 11):\n\n**O desvio decide.**\n\n| Desvio | Conduta |\n|---|---|\n| até 2 mm | sem cirurgia, com bons resultados |\n| 2 a 4 mm | redução fechada em extensão e gesso |\n| **mais de 4 mm** ou superfície articular **incongruente** | **cirurgia**: fios axiais e banda de tensão |\n\n**A osteogênese imperfeita muda o implante.** Essas crianças são predispostas à fratura da apófise, e a revisão citada no capítulo mostrou que o **parafuso de compressão** falhou muito mais nelas: a **banda de tensão com fio** é a escolha.\n\n**O peso muda o material da banda.** A banda com sutura vai tão bem quanto a com fio, exceto acima de 50 kg, em que a sutura falha mais.\n\n**Por que esta questão foi criada.** É a gêmea do TEPOP 2024 (`pediatria-0954`), que perguntou o limite de desvio para operar; aqui se acrescentam a osteogênese imperfeita e o peso.",
-  "correta": "**A) desvio maior que 4 mm ou superfície articular incongruente indica cirurgia; até 2 mm vai bem sem cirurgia; na osteogênese imperfeita, a banda de tensão supera o parafuso de compressão.** São as regras do capítulo 11.",
+  "conceito": "A fratura da **apófise do olécrano** é rara e tem três regras no Rockwood and Wilkins' Fractures in Children (cap. 11):\n\n**O desvio decide.**\n\n| Desvio | Conduta |\n|---|---|\n| até 2 mm | sem cirurgia, com bons resultados |\n| 2 a 4 mm | redução fechada em extensão e gesso |\n| **mais de 4 mm** ou superfície articular **incongruente** | **cirurgia**: fios axiais e banda de tensão |\n\n**A osteogênese imperfeita muda o implante.** Essas crianças são predispostas à fratura da apófise, e a revisão citada no capítulo mostrou que o **parafuso de compressão** falhou muito mais nelas: a **banda de tensão com fio** é a escolha.\n\n**O peso muda o material da banda.** A banda com sutura vai tão bem quanto a com fio, exceto acima de 50 kg, em que a sutura falha mais.\n\n**Por que esta questão foi criada.** É a gêmea do TEPOP 2024 (`pediatria-0954`), que perguntou o limite de desvio para operar; aqui se acrescentam a osteogênese imperfeita e o peso.",
+  "correta": "**A: 4 mm.** Ou com superfície articular incongruente; até 2 mm vai sem cirurgia (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "B": "**A fratura da apófise é rara**, e até 2 mm vai sem cirurgia.",
-   "C": "**A banda com sutura falha mais acima de 50 kg.**",
-   "D": "**Na osteogênese imperfeita, o parafuso de compressão falhou mais** que a banda de tensão."
+   "B": "**1 mm** operaria fraturas que vão bem sem cirurgia.",
+   "C": "**2 mm** é o limite do tratamento sem redução.",
+   "D": "**10 mm** deixaria de operar desvios que pedem cirurgia."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seções Treatment of Fractures Involving the Proximal Apophysis e Authors' Preferred Treatment",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -26994,14 +26975,15 @@
   "conferido": false
  },
  "pediatria-1283": {
-  "conceito": "O olécrano tem variantes de ossificação que enganam a radiografia, e o Rockwood crianças (cap. 11) as lista:\n\n| Ponto | O que o capítulo diz |\n|---|---|\n| centro secundário do olécrano | aparece por volta de **9 anos**, na inserção do tríceps |\n| fusão com a metáfise | por volta de **14 anos**, de anterior para posterior |\n| centro bipartido | um maior, de **tração**, e um menor, **articular**; é normal |\n| margem esclerótica | aparece na borda da metáfise antes do centro surgir; pode ser lida como fratura |\n| coronoide | tem centro secundário, que termina de ossificar quando aparece o do olécrano |\n| **patela cubital** | ossículo separado no tendão do tríceps, em geral unilateral, que articula com a tróclea; **não é pseudartrose** |\n\nA fise pode persistir até a vida adulta, sobretudo em arremessadores, pela tensão repetida.\n\nSaber essas idades evita dois erros: chamar de fratura uma linha normal e deixar passar uma fratura antes da ossificação, quando a única pista é um pequeno fragmento metafisário deslocado.\n\n**Por que esta questão foi criada.** A ossificação do olécrano, com suas variantes, não caiu nas questões do acervo e ficou como projeção.",
-  "correta": "**C) o centro secundário do olécrano aparece por volta dos 9 anos, pode ser bipartido e funde-se por volta dos 14; a patela cubital não é pseudartrose.** É a ossificação descrita no capítulo 11.",
+  "conceito": "O olécrano tem variantes de ossificação que enganam a radiografia, e o Rockwood and Wilkins' Fractures in Children (cap. 11) as lista:\n\n| Ponto | O que o capítulo diz |\n|---|---|\n| centro secundário do olécrano | aparece por volta de **9 anos**, na inserção do tríceps |\n| fusão com a metáfise | por volta de **14 anos**, de anterior para posterior |\n| centro bipartido | um maior, de **tração**, e um menor, **articular**; é normal |\n| margem esclerótica | aparece na borda da metáfise antes do centro surgir; pode ser lida como fratura |\n| coronoide | tem centro secundário, que termina de ossificar quando aparece o do olécrano |\n| **patela cubital** | ossículo separado no tendão do tríceps, em geral unilateral, que articula com a tróclea; **não é pseudartrose** |\n\nA fise pode persistir até a vida adulta, sobretudo em arremessadores, pela tensão repetida.\n\nSaber essas idades evita dois erros: chamar de fratura uma linha normal e deixar passar uma fratura antes da ossificação, quando a única pista é um pequeno fragmento metafisário deslocado.\n\n**Por que esta questão foi criada.** A ossificação do olécrano, com suas variantes, não caiu nas questões do acervo e ficou como projeção.",
+  "correta": "**C: 9 anos.** Pode ser bipartido, o que é normal, e funde-se por volta dos 14 anos (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**O centro aparece por volta de 9 anos**, não aos 3, e funde-se aos 14.",
-   "B": "**O coronoide termina de ossificar quando o centro do olécrano aparece**, por volta de 9 anos.",
-   "D": "**A margem esclerótica é normal** antes da fusão; não indica fratura."
+   "A": "**3 anos** é cedo demais.",
+   "B": "**5 anos** também.",
+   "D": "**14 anos** é a idade da fusão, não do aparecimento."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seção Pathoanatomy and Applied Anatomy Relating to Fractures of the Proximal Ulna",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -27009,14 +26991,15 @@
   "conferido": false
  },
  "pediatria-1284": {
-  "conceito": "A fratura do coronoide quase sempre acompanha uma **luxação do cotovelo**. O Rockwood crianças (cap. 11) usa a classificação de **REGAN e MORREY**:\n\n| Tipo | O que pega | Conduta |\n|---|---|---|\n| I | só a ponta | movimento precoce |\n| II | menos de 50% do processo | movimento precoce, se o cotovelo for estável |\n| **III** | **mais de 50%** | cotovelo muitas vezes **instável**; **fixação** |\n\nO número que justifica a cirurgia no tipo III: na série de REGAN e MORREY, só **20%** dos tipo III tratados sem cirurgia tiveram resultado satisfatório.\n\nNa criança, a cirurgia é rara e reservada ao fragmento grande e desviado: parafuso de minifragmento ou sutura passada por dois furos na face posterior da ulna, com 10 a 14 dias de imobilização. Para ver o fragmento, a oblíqua ou a radiocapitelar, porque no perfil a cabeça do rádio fica sobre ele.\n\n**Por que esta questão foi criada.** Nenhuma prova do acervo cobrou o coronoide da criança; a classificação e o limite de 50% são os pontos cobráveis.",
-  "correta": "**B) tipo III; fixação interna, porque só 20% tiveram resultado satisfatório sem cirurgia.** Fragmento com mais de 50% do coronoide e instabilidade pedem fixação (Rockwood crianças, cap. 11).",
+  "conceito": "A fratura do coronoide quase sempre acompanha uma **luxação do cotovelo**. O Rockwood and Wilkins' Fractures in Children (cap. 11) usa a classificação de **REGAN e MORREY**:\n\n| Tipo | O que pega | Conduta |\n|---|---|---|\n| I | só a ponta | movimento precoce |\n| II | menos de 50% do processo | movimento precoce, se o cotovelo for estável |\n| **III** | **mais de 50%** | cotovelo muitas vezes **instável**; **fixação** |\n\nO número que justifica a cirurgia no tipo III: na série de REGAN e MORREY, só **20%** dos tipo III tratados sem cirurgia tiveram resultado satisfatório.\n\nNa criança, a cirurgia é rara e reservada ao fragmento grande e desviado: parafuso de minifragmento ou sutura passada por dois furos na face posterior da ulna, com 10 a 14 dias de imobilização. Para ver o fragmento, a oblíqua ou a radiocapitelar, porque no perfil a cabeça do rádio fica sobre ele.\n\n**Por que esta questão foi criada.** Nenhuma prova do acervo cobrou o coronoide da criança; a classificação e o limite de 50% são os pontos cobráveis.",
+  "correta": "**B: III e fixação interna.** Só 20% tiveram resultado satisfatório sem cirurgia no tipo III (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**O tipo I é só a ponta**; aqui o fragmento passa de 50%.",
-   "C": "**O tipo II tem menos de 50%**, e o tratamento é movimento precoce, não gesso por 6 semanas.",
-   "D": "**O tipo III deixa o cotovelo instável**; tratar como luxação simples falha em 80%."
+   "A": "**O tipo I** é só a ponta.",
+   "C": "**O tipo II** pega menos de 50%.",
+   "D": "**Movimento precoce** é a conduta do I e do II estável, não do III instável."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel), seções Classification e Treatment of Fractures of the Coronoid Process",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
   ],
@@ -29683,14 +29666,15 @@
   "conferido": false
  },
  "pediatria-1433": {
-  "conceito": "No recém-nascido a cabeça do fêmur ainda é cartilagem e não aparece na radiografia. Quando a fise proximal se separa num parto difícil, o que se vê é a metáfise subida, e a imagem imita uma **luxação do quadril** do desenvolvimento.\n\nO Rockwood (cap. 24) chama essa lesão de excepcionalmente rara e manda desconfiar no recém-nascido de parto difícil que **não mexe a perna**. O diagnóstico diferencial inclui a **artrite séptica** e a **displasia do desenvolvimento**. O exame que resolve é a **ultrassonografia**: na separação fisária, a **cabeça cartilaginosa continua dentro do acetábulo**, mas desligada da diáfise; na luxação, a cabeça está fora. O ultrassom também mostra derrame, que pode ser aspirado: sangue sugere fratura; líquido seroso ou purulento, sinovite ou infecção. Sem história de trauma importante, a criança pequena com fratura do quadril pede investigação de maus-tratos.\n\nO diagnóstico é perdido com facilidade quando não há história de trauma ou quando existe uma fratura da diáfise do fêmur no mesmo lado.\n\n**Por que esta questão foi criada.** As provas cobram muito a DELBET da criança maior; a variante do recém-nascido, com o seu diferencial com a displasia, nunca caiu. Projeção da seção \"A classificação de DELBET\" do resumo.",
-  "correta": "**D: a ultrassonografia, que mostra a cabeça cartilaginosa dentro do acetábulo separada da diáfise.** É o exame que o capítulo 24 indica para a separação fisária neonatal.",
+  "conceito": "No recém-nascido a cabeça do fêmur ainda é cartilagem e não aparece na radiografia. Quando a fise proximal se separa num parto difícil, o que se vê é a metáfise subida, e a imagem imita uma **luxação do quadril** do desenvolvimento.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 24) chama essa lesão de excepcionalmente rara e manda desconfiar no recém-nascido de parto difícil que **não mexe a perna**. O diagnóstico diferencial inclui a **artrite séptica** e a **displasia do desenvolvimento**. O exame que resolve é a **ultrassonografia**: na separação fisária, a **cabeça cartilaginosa continua dentro do acetábulo**, mas desligada da diáfise; na luxação, a cabeça está fora. O ultrassom também mostra derrame, que pode ser aspirado: sangue sugere fratura; líquido seroso ou purulento, sinovite ou infecção. Sem história de trauma importante, a criança pequena com fratura do quadril pede investigação de maus-tratos.\n\nO diagnóstico é perdido com facilidade quando não há história de trauma ou quando existe uma fratura da diáfise do fêmur no mesmo lado.\n\n**Por que esta questão foi criada.** As provas cobram muito a DELBET da criança maior; a variante do recém-nascido, com o seu diferencial com a displasia, nunca caiu. Projeção da seção \"A classificação de DELBET\" do resumo.",
+  "correta": "**D: ultrassonografia.** Mostra a cabeça cartilaginosa dentro do acetábulo, separada da diáfise (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**A cintilografia não é o exame descrito** para separar a fratura neonatal da luxação.",
-   "B": "**No recém-nascido a cabeça não está ossificada**; a tomografia não a mostra, e irradia sem necessidade.",
-   "C": "**A artrografia é feita no centro cirúrgico**, quando se decide reduzir e imobilizar; não é o exame de triagem."
+   "A": "**A cintilografia** não mostra a relação da cabeça com o acetábulo.",
+   "B": "**A tomografia** não vê a cabeça ainda cartilaginosa.",
+   "C": "**A artrografia** não é o exame descrito para o berçário."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seção Unusual Fracture Patterns",
    "Biblioteca OrtoQuestões, resumo Fraturas e luxações traumáticas do quadril na criança (rockwoodcriancas10-24-quadril)"
@@ -29699,14 +29683,15 @@
   "conferido": false
  },
  "pediatria-1434": {
-  "conceito": "A coxa vara é uma das complicações clássicas da fratura do quadril da criança. O Rockwood (cap. 24) dá a prevalência de **20 a 30%**, bem menor nas séries com fixação interna depois da redução, e as causas: consolidação viciosa, necrose do colo, fechamento prematuro da fise ou a soma delas.\n\n**Por que ela atrapalha.** Na coxa vara grave, o **trocânter maior fica mais alto que o centro da cabeça**: os abdutores perdem o braço de alavanca e ficam fracos, e o membro encurta. O resultado é uma claudicação importante.\n\n**Quando esperar.** A consolidação viciosa pode **remodelar** se a criança tem **menos de 8 anos** ou se o ângulo cervicodiafisário é **maior que 110 graus**.\n\n**Quando operar.** Na criança mais velha com deformidade progressiva, que não vai remodelar, considera-se a **osteotomia valgizante subtrocantérica**, para refazer a relação entre o trocânter e a cabeça, melhorar a discrepância e devolver o momento dos abdutores (Fig. 24-22 do livro).\n\n**Por que esta questão foi criada.** O TARO 2020 (`pediatria-0721`) perguntou a coxa vara como complicação do DELBET IV, mas o tratamento e o limite de remodelação nunca foram cobrados.",
-  "correta": "**A: osteotomia valgizante subtrocantérica.** Aos 11 anos, com 100 graus e progressão, não há remodelação a esperar (Rockwood crianças, cap. 24).",
+  "conceito": "A coxa vara é uma das complicações clássicas da fratura do quadril da criança. O Rockwood and Wilkins' Fractures in Children (cap. 24) dá a prevalência de **20 a 30%**, bem menor nas séries com fixação interna depois da redução, e as causas: consolidação viciosa, necrose do colo, fechamento prematuro da fise ou a soma delas.\n\n**Por que ela atrapalha.** Na coxa vara grave, o **trocânter maior fica mais alto que o centro da cabeça**: os abdutores perdem o braço de alavanca e ficam fracos, e o membro encurta. O resultado é uma claudicação importante.\n\n**Quando esperar.** A consolidação viciosa pode **remodelar** se a criança tem **menos de 8 anos** ou se o ângulo cervicodiafisário é **maior que 110 graus**.\n\n**Quando operar.** Na criança mais velha com deformidade progressiva, que não vai remodelar, considera-se a **osteotomia valgizante subtrocantérica**, para refazer a relação entre o trocânter e a cabeça, melhorar a discrepância e devolver o momento dos abdutores (Fig. 24-22 do livro).\n\n**Por que esta questão foi criada.** O TARO 2020 (`pediatria-0721`) perguntou a coxa vara como complicação do DELBET IV, mas o tratamento e o limite de remodelação nunca foram cobrados.",
+  "correta": "**A: osteotomia valgizante.** Devolve o braço de alavanca dos abdutores e o comprimento (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "B": "**Só remodela abaixo de 8 anos ou com ângulo acima de 110 graus.** Aos 11 anos, com 100 graus e piorando, esperar não resolve.",
-   "C": "**A epifisiodese contralateral trata a discrepância**, não a deformidade nem a fraqueza dos abdutores.",
-   "D": "**Artroplastia não é tratamento de coxa vara numa criança de 11 anos.**"
+   "B": "**Observar** não corrige a coxa vara grave e sintomática.",
+   "C": "**A epifisiodese** trata só a discrepância, não o varo.",
+   "D": "**A artroplastia** não é tratamento dessa idade."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seção Coxa Vara",
    "Biblioteca OrtoQuestões, resumo Fraturas e luxações traumáticas do quadril na criança (rockwoodcriancas10-24-quadril)"
@@ -29715,14 +29700,15 @@
   "conferido": false
  },
  "pediatria-1435": {
-  "conceito": "Na fratura do colo do fêmur da criança, duas metas brigam: proteger a fise e garantir uma fixação estável. O Rockwood (cap. 24) resolve a briga com uma regra simples: **a estabilidade e a consolidação vêm primeiro**, e a idade decide o resto.\n\n**O tamanho dos parafusos.** Para o DELBET II, parafusos canulados de **4 a 4,5 mm** até 8 anos; depois dos 8, de **6,5 ou 7,3 mm**. Dois ou três, conforme o colo deixar, sempre com fio-guia e perfuração prévia.\n\n**Cruzar ou não a fise.** No tipo II, se possível, não cruzar; mas na maioria das fraturas instáveis é preciso cruzar para ter estabilidade, porque as sequelas do fechamento fisário e do sobrecrescimento do trocânter são muito menores que as da pseudartrose e da necrose. No tipo III, em geral não é preciso cruzar.\n\n**O gesso, pela idade:**\n- **abaixo de 10 anos**: tenta-se não cruzar a fise, e por isso usa-se **gesso pelvipodálico por pelo menos 6 semanas**, que essas crianças toleram bem;\n- **acima de 12 anos**: a fixação **cruza a fise** e é estável o bastante para **dispensar o gesso** (que, aliás, essa idade tolera mal);\n- **10 a 12 anos**: depende da estabilidade da fixação e da adesão; na dúvida, gesso de um lado só.\n\n**Por que esta questão foi criada.** As provas perguntaram a manobra de redução e o tratamento por tipo (TEOT 2022, TARO 2007), mas nunca a lógica da idade, que decide a cirurgia na prática.",
-  "correta": "**C:** abaixo de 10 anos, evitar cruzar a fise e usar gesso por 6 semanas ou mais; acima de 12, cruzar e dispensar o gesso; de 10 a 12, decidir pela estabilidade e pela adesão (Rockwood crianças, cap. 24).",
+  "conceito": "Na fratura do colo do fêmur da criança, duas metas brigam: proteger a fise e garantir uma fixação estável. O Rockwood and Wilkins' Fractures in Children (cap. 24) resolve a briga com uma regra simples: **a estabilidade e a consolidação vêm primeiro**, e a idade decide o resto.\n\n**O tamanho dos parafusos.** Para o DELBET II, parafusos canulados de **4 a 4,5 mm** até 8 anos; depois dos 8, de **6,5 ou 7,3 mm**. Dois ou três, conforme o colo deixar, sempre com fio-guia e perfuração prévia.\n\n**Cruzar ou não a fise.** No tipo II, se possível, não cruzar; mas na maioria das fraturas instáveis é preciso cruzar para ter estabilidade, porque as sequelas do fechamento fisário e do sobrecrescimento do trocânter são muito menores que as da pseudartrose e da necrose. No tipo III, em geral não é preciso cruzar.\n\n**O gesso, pela idade:**\n- **abaixo de 10 anos**: tenta-se não cruzar a fise, e por isso usa-se **gesso pelvipodálico por pelo menos 6 semanas**, que essas crianças toleram bem;\n- **acima de 12 anos**: a fixação **cruza a fise** e é estável o bastante para **dispensar o gesso** (que, aliás, essa idade tolera mal);\n- **10 a 12 anos**: depende da estabilidade da fixação e da adesão; na dúvida, gesso de um lado só.\n\n**Por que esta questão foi criada.** As provas perguntaram a manobra de redução e o tratamento por tipo (TEOT 2022, TARO 2007), mas nunca a lógica da idade, que decide a cirurgia na prática.",
+  "correta": "**C: 6 semanas.** Abaixo de 10 anos tenta-se não cruzar a fise e completa-se com gesso; acima de 12, a fixação pode cruzar a fise (Rockwood and Wilkins' Fractures in Children, cap. 24).",
   "incorretas": {
-   "A": "**A fise pode e às vezes deve ser cruzada**: a estabilidade vem antes do crescimento; e sem cruzar a fise o gesso é necessário.",
-   "B": "**Inverte a lógica.** Na criança menor se evita cruzar a fise e se usa gesso; no adolescente se cruza e se dispensa o gesso.",
-   "D": "**O parafuso de 7,3 mm é para depois dos 8 anos**, e a idade muda tudo na decisão."
+   "A": "**2 semanas** é curto para proteger uma fixação que poupa a fise.",
+   "B": "**4 semanas** também fica abaixo do mínimo.",
+   "D": "**12 semanas** passa do necessário."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Paranjape e Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24 (Fractures and Traumatic Dislocations of the Hip in Children; Chinmay Paranjape e Vidyadhar Upasani)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, seções Authors' Preferred Treatment e Postoperative Care",
    "Biblioteca OrtoQuestões, resumo Fraturas e luxações traumáticas do quadril na criança (rockwoodcriancas10-24-quadril)"
@@ -29827,14 +29813,15 @@
   "conferido": false
  },
  "pediatria-1442": {
-  "conceito": "Depois da perda de movimento, o Rockwood crianças (cap. 11) aponta o **crescimento excessivo da cabeça do rádio** como provavelmente a sequela **mais comum** da fratura do rádio proximal, em **20% a 40%** dos casos. A explicação aceita é o aumento da vascularização depois da lesão, que estimula a epífise, mas o mecanismo é pouco entendido.\n\nA boa notícia: **em geral não compromete a função**. Pode dar crepitação ou estalido na rotação do antebraço, como na menina do caso.\n\nAs outras sequelas que o capítulo lista, para comparar:\n\n| Sequela | O que saber |\n|---|---|\n| perda de movimento | a mais comum; mais **pronação** que supinação; quase não melhora depois de 6 meses |\n| crescimento da cabeça | 20 a 40%; em geral sem prejuízo |\n| fechamento fisário | frequente; encurtamento do rádio nunca maior que 5 mm (NEWMAN) |\n| ângulo de carregamento | cerca de **10 graus a mais** de valgo, sem prejuízo |\n| osteonecrose | 10 a 20%; **25% depois de redução aberta** |\n| sinostose radioulnar | sobretudo depois de redução aberta de fraturas muito desviadas |\n| miosite ossificante | comum (32% numa série), no supinador; ruim só se extensa ou com sinostose |\n\n**Por que esta questão foi criada.** As provas cobraram a perda de pronação (TEOT 2024 e TARO 2010); as outras sequelas, que aparecem no seguimento, ficaram como projeção.",
-  "correta": "**B: é a sequela mais comum depois da perda de movimento (20% a 40%) e em geral não compromete a função.** É o crescimento excessivo da cabeça do rádio descrito no capítulo 11.",
+  "conceito": "Depois da perda de movimento, o Rockwood and Wilkins' Fractures in Children (cap. 11) aponta o **crescimento excessivo da cabeça do rádio** como provavelmente a sequela **mais comum** da fratura do rádio proximal, em **20% a 40%** dos casos. A explicação aceita é o aumento da vascularização depois da lesão, que estimula a epífise, mas o mecanismo é pouco entendido.\n\nA boa notícia: **em geral não compromete a função**. Pode dar crepitação ou estalido na rotação do antebraço, como na menina do caso.\n\nAs outras sequelas que o capítulo lista, para comparar:\n\n| Sequela | O que saber |\n|---|---|\n| perda de movimento | a mais comum; mais **pronação** que supinação; quase não melhora depois de 6 meses |\n| crescimento da cabeça | 20 a 40%; em geral sem prejuízo |\n| fechamento fisário | frequente; encurtamento do rádio nunca maior que 5 mm (NEWMAN) |\n| ângulo de carregamento | cerca de **10 graus a mais** de valgo, sem prejuízo |\n| osteonecrose | 10 a 20%; **25% depois de redução aberta** |\n| sinostose radioulnar | sobretudo depois de redução aberta de fraturas muito desviadas |\n| miosite ossificante | comum (32% numa série), no supinador; ruim só se extensa ou com sinostose |\n\n**Por que esta questão foi criada.** As provas cobraram a perda de pronação (TEOT 2024 e TARO 2010); as outras sequelas, que aparecem no seguimento, ficaram como projeção.",
+  "correta": "**B: crescimento da cabeça.** Em 20% a 40%, em geral sem prejuízo funcional (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**Não é rara nem cirúrgica**: em geral não compromete a função.",
-   "C": "**A osteonecrose não aumenta a cabeça**; ela colapsa e, quando sintomática, limita o movimento.",
-   "D": "**A sinostose bloqueia a rotação**, e a menina tem movimento quase completo."
+   "A": "**A sinostose** é complicação grave, mas menos comum.",
+   "C": "**A osteonecrose** é menos frequente e ligada à redução aberta.",
+   "D": "**A pseudartrose** do colo é rara."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Fractures of the Proximal Radius and Ulna)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seção Complications (Radial Head Overgrowth, Cubitus Valgus)",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
@@ -29843,14 +29830,15 @@
   "conferido": false
  },
  "pediatria-1443": {
-  "conceito": "O sinal do coxim gorduroso aparece quando um **derrame dentro da articulação** empurra a gordura para fora da fossa. Ele depende, portanto, de a fratura sangrar **dentro da cápsula**.\n\nNo rádio proximal, o Rockwood crianças (cap. 11) mostra por que isso pode falhar. Nenhum ligamento se prende diretamente à cabeça ou ao colo; a cápsula se insere no **terço proximal do colo** e forma uma bolsa (recesso saciforme) sob o ligamento anular. Assim, **só uma pequena parte do colo fica dentro da cápsula**. Uma fratura só do colo pode **não produzir derrame**, e o coxim gorduroso pode ser **negativo**. O deslocamento do coxim do supinador pode ajudar, mas também nem sempre aparece.\n\nO que fazer diante da suspeita:\n- examinar: dor na palpação da cabeça e do colo, que piora mais com a rotação do antebraço que com a flexão e a extensão;\n- radiografias de boa qualidade, com comparação do outro lado; a **incidência radiocapitelar** de GREENSPAN separa a cabeça do coronoide;\n- na criança com a cabeça ainda não ossificada (o núcleo aparece por volta de **5 anos**), a única pista pode ser uma irregularidade da borda metafisária; ultrassom, artrografia ou ressonância ajudam.\n\nA pronação dolorosa é a subluxação da cabeça na criança pequena, com o antebraço em pronação e resistência à supinação, sem dor localizada na cabeça depois de um trauma desse tipo.\n\n**Por que esta questão foi criada.** A anatomia da cápsula explica uma armadilha diagnóstica que não caiu nas provas do acervo. Projeção da seção de imagem do resumo.",
-  "correta": "**D: não afasta fratura do colo, porque a maior parte do colo é extracapsular e pode não haver derrame articular.** O capítulo 11 avisa que o sinal do coxim gorduroso pode ser negativo na fratura do colo do rádio.",
+  "conceito": "O sinal do coxim gorduroso aparece quando um **derrame dentro da articulação** empurra a gordura para fora da fossa. Ele depende, portanto, de a fratura sangrar **dentro da cápsula**.\n\nNo rádio proximal, o Rockwood and Wilkins' Fractures in Children (cap. 11) mostra por que isso pode falhar. Nenhum ligamento se prende diretamente à cabeça ou ao colo; a cápsula se insere no **terço proximal do colo** e forma uma bolsa (recesso saciforme) sob o ligamento anular. Assim, **só uma pequena parte do colo fica dentro da cápsula**. Uma fratura só do colo pode **não produzir derrame**, e o coxim gorduroso pode ser **negativo**. O deslocamento do coxim do supinador pode ajudar, mas também nem sempre aparece.\n\nO que fazer diante da suspeita:\n- examinar: dor na palpação da cabeça e do colo, que piora mais com a rotação do antebraço que com a flexão e a extensão;\n- radiografias de boa qualidade, com comparação do outro lado; a **incidência radiocapitelar** de GREENSPAN separa a cabeça do coronoide;\n- na criança com a cabeça ainda não ossificada (o núcleo aparece por volta de **5 anos**), a única pista pode ser uma irregularidade da borda metafisária; ultrassom, artrografia ou ressonância ajudam.\n\nA pronação dolorosa é a subluxação da cabeça na criança pequena, com o antebraço em pronação e resistência à supinação, sem dor localizada na cabeça depois de um trauma desse tipo.\n\n**Por que esta questão foi criada.** A anatomia da cápsula explica uma armadilha diagnóstica que não caiu nas provas do acervo. Projeção da seção de imagem do resumo.",
+  "correta": "**D: não afasta a fratura.** Grande parte do colo é extracapsular, e pode não haver derrame (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "A": "**O coxim negativo não afasta a fratura**: o colo é quase todo extracapsular.",
-   "B": "**A pronação dolorosa é outra lesão**, da criança pequena, com o antebraço em pronação e resistência à supinação.",
-   "C": "**A tomografia de urgência não é o passo**; incidências oblíquas, comparação e, na criança pequena, ultrassom ou ressonância resolvem."
+   "A": "**Afastar a fratura** é o erro que o capítulo aponta.",
+   "B": "**A pronação dolorosa** não se diagnostica pela ausência do sinal.",
+   "C": "**A tomografia** não é exigida por esse achado."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Fractures of the Proximal Radius and Ulna)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Pathoanatomy e Imaging of Fractures of the Proximal Radius",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
@@ -29859,14 +29847,15 @@
   "conferido": false
  },
  "pediatria-1444": {
-  "conceito": "O Rockwood crianças (cap. 11) divide as fraturas metafisárias do olécrano pelo mecanismo:\n\n| Grupo | Como acontece | Onde falha |\n|---|---|---|\n| A, **flexão** (a mais comum) | queda com o cotovelo fletido; tríceps e braquial tensionam a face posterior | cortical **posterior**, traço transverso intra-articular |\n| B, **extensão** | cotovelo estendido com força em valgo (B1) ou varo (B2) | galho verde longitudinal, com lesões associadas (colo do rádio, epicôndilo medial, côndilo lateral) |\n| C, **cisalhamento** | golpe direto na face posterior | cortical **anterior** em tensão; fragmento distal vai para a frente |\n\nNo **cisalhamento**, a diferença decisiva para a fratura em flexão é que o **periósteo posterior, grosso, continua inteiro**. O fragmento distal é puxado para a frente pelo braquial e pelo bíceps, levando junto a articulação radioulnar proximal intacta.\n\nA chave do tratamento é reconhecer isso: o periósteo posterior intacto funciona como uma **banda de tensão interna**. Algumas dessas fraturas reduzem melhor em **flexão**, e o periósteo comprime os fragmentos; já se usou até uma tipoia alta para empurrar o fragmento distal para trás. Se o periósteo estiver rasgado ou se quiser movimento precoce, fixa-se com um parafuso oblíquo perpendicular ao traço.\n\n**Por que esta questão foi criada.** As provas cobraram o olécrano pelo padrão em valgo com o colo do rádio (TARO 2017) e pela apófise (TEPOP 2024); o cisalhamento, com a lógica do periósteo, ficou como projeção.",
-  "correta": "**A: o periósteo posterior intacto, que funciona como banda de tensão interna.** É a chave da redução da fratura do olécrano por cisalhamento (Rockwood crianças, cap. 11).",
+  "conceito": "O Rockwood and Wilkins' Fractures in Children (cap. 11) divide as fraturas metafisárias do olécrano pelo mecanismo:\n\n| Grupo | Como acontece | Onde falha |\n|---|---|---|\n| A, **flexão** (a mais comum) | queda com o cotovelo fletido; tríceps e braquial tensionam a face posterior | cortical **posterior**, traço transverso intra-articular |\n| B, **extensão** | cotovelo estendido com força em valgo (B1) ou varo (B2) | galho verde longitudinal, com lesões associadas (colo do rádio, epicôndilo medial, côndilo lateral) |\n| C, **cisalhamento** | golpe direto na face posterior | cortical **anterior** em tensão; fragmento distal vai para a frente |\n\nNo **cisalhamento**, a diferença decisiva para a fratura em flexão é que o **periósteo posterior, grosso, continua inteiro**. O fragmento distal é puxado para a frente pelo braquial e pelo bíceps, levando junto a articulação radioulnar proximal intacta.\n\nA chave do tratamento é reconhecer isso: o periósteo posterior intacto funciona como uma **banda de tensão interna**. Algumas dessas fraturas reduzem melhor em **flexão**, e o periósteo comprime os fragmentos; já se usou até uma tipoia alta para empurrar o fragmento distal para trás. Se o periósteo estiver rasgado ou se quiser movimento precoce, fixa-se com um parafuso oblíquo perpendicular ao traço.\n\n**Por que esta questão foi criada.** As provas cobraram o olécrano pelo padrão em valgo com o colo do rádio (TARO 2017) e pela apófise (TEPOP 2024); o cisalhamento, com a lógica do periósteo, ficou como projeção.",
+  "correta": "**A: periósteo posterior intacto.** Funciona como banda de tensão interna (Rockwood and Wilkins' Fractures in Children, cap. 11).",
   "incorretas": {
-   "B": "**O fragmento distal é puxado para a frente** pelo braquial e pelo bíceps; o tríceps está preso ao proximal.",
-   "C": "**Algumas dessas fraturas reduzem melhor em flexão**, com o periósteo posterior comprimindo o foco; não é a flexão que afasta.",
-   "D": "**Ressecar o fragmento não tem lugar** numa fratura que se reduz com o periósteo íntegro."
+   "B": "**O tríceps** puxa o fragmento proximal, não ajuda a reduzir o distal.",
+   "C": "**A flexão máxima** afasta os fragmentos.",
+   "D": "**O fragmento proximal** não é o que segura a redução."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Radial Neck and Olecranon Fractures; Garg, Erickson e Sibbel)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 11 (Fractures of the Proximal Radius and Ulna)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 11, seções Mechanisms e Treatment of Metaphyseal Fractures of the Olecranon (Shear Injuries)",
    "Biblioteca OrtoQuestões, resumo Fraturas do colo do rádio, do olécrano e do coronoide na criança (rockwoodcriancas10-11-colo-radio-olecrano)"
