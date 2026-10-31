@@ -49,7 +49,7 @@ O capítulo inteiro gira em torno de uma ideia: **o tratamento de um sarcoma com
 
 **Ler a agressividade.** Mesmo sem diagnóstico específico, a radiografia diz se a lesão parece benigna ou maligna. **As lesões de baixa atividade biológica são bem delimitadas, muitas vezes com um halo de osso reativo**; as agressivas têm uma **zona de transição mal definida**, porque a resposta do hospedeiro é mais lenta que o crescimento do tumor. A **expansão da cortical** pode aparecer nas benignas agressivas, mas **a destruição franca da cortical costuma indicar malignidade**. A **reação periosteal** (triângulo de CODMAN, "casca de cebola", "raios de sol") aparece quando o tumor destrói a cortical, e em geral indica malignidade, mas pode aparecer na infecção e na histiocitose. A **matriz** ajuda: calcificação pontilhada sugere cartilagem (encondroma, condrossarcoma); ossificação com destruição óssea é típica do osteossarcoma; o "vidro fosco" é da displasia fibrosa. Nas partes moles, a radiografia ainda mostra a miosite ossificante, os flebólitos do hemangioma, a calcificação do sarcoma sinovial e a gordura do lipoma (p. 891).
 
-!questoes central=tumores-0123 relacionadas=tumores-0203,tumores-0277
+!questoes central=tumores-0123 relacionadas=tumores-0318,tumores-0319
 conceito: Tumor ósseo maligno dá dor progressiva, em repouso e noturna; tumor de partes moles raramente dói, exceto os da bainha nervosa; a idade e a radiografia muitas vezes bastam; epífise madura = TCG, imatura = condroblastoma; corpo vertebral no jovem = histiocitose.
 como: O TEOT 2023 perguntou a linhagem de partes moles que mais dói; o TARO 2024, a lesão epifisária do úmero aos 15 anos; o TARO 2011, a vértebra plana.
 !fim
@@ -104,7 +104,7 @@ como: O ENARE 2023 perguntou o que a PET não faz; uma prova de Ortopedia, o tum
 
 **A metástase no capítulo 27.** A aparência radiográfica varia: **mama e próstata dão lesões blásticas; rim e tireoide, líticas puras; pulmão, mistas**. **Se a lesão é distal ao cotovelo ou ao joelho, o pulmão é o primário mais provável**, e a metástase de pulmão pode ter o aspecto de uma "mordida" na cortical (cap. 27, p. 1028). Entre os parâmetros sugeridos para a fixação profilática de uma fratura iminente estão a dor que não melhora com radioterapia, a lesão maior que 2,5 cm, a destruição de mais de 50% da cortical e **a fratura por avulsão do trocânter menor** (p. 1029). Por isso, uma fratura isolada do trocânter menor no adulto deve levantar a suspeita de tumor e levar à investigação da extensão da lesão.
 
-!questoes central=tumores-0282 relacionadas=tumores-0307,tumores-0303,tumores-0038,tumores-0109,tumores-0190,tumores-0367 treino=tumores-0376,tumores-0406
+!questoes central=tumores-0282 relacionadas=tumores-0130,tumores-0136,tumores-0038,tumores-0109,tumores-0190,tumores-0367 treino=tumores-0376,tumores-0406
 conceito: Acima de 40 anos, lesão nova = mieloma ou metástase; primário desconhecido = pulmão e rim; ROUGRAFF acha 85% sem biopsiar antes (seis razões); distal ao cotovelo ou ao joelho = pulmão; avulsão do trocânter menor = suspeita de metástase e indicação de fixação.
 como: O TARO 2011 perguntou os primários da metástase desconhecida; uma prova de Ortopedia, o primário distal ao cotovelo e ao joelho; o TARO 2023 e o TARO 2021, a avulsão do trocânter menor; outras provas, o escore de MIRELS.
 !fim
@@ -152,7 +152,7 @@ como: O TEOT 2023 perguntou o estágio e o diagnóstico de um COA da fíbula; o 
 
 **TOMITA, na coluna.** Para os tumores da coluna, o Campbell traz a classificação cirúrgica de TOMITA (Fig. 42.14): **intracompartimentais**, tipo 1 corpo vertebral, tipo 2 extensão ao pedículo, tipo 3 extensão corpo-lâmina; **extracompartimentais**, **tipo 4 extensão epidural**, tipo 5 paravertebral, tipo 6 duas ou três vértebras; e tipo 7 múltiplas. TOMITA também criou um escore prognóstico que soma o crescimento do primário e as metástases viscerais e ósseas para escolher a meta e a estratégia cirúrgica (cap. 42, p. 1946 e 1947).
 
-!questoes central=tumores-0108 relacionadas=tumores-0093,tumores-0247,tumores-0265,tumores-0266,tumores-0322,tumores-0081,tumores-0139,tumores-0387,tumores-0137 treino=tumores-0399
+!questoes central=tumores-0108 relacionadas=tumores-0093,tumores-0247,tumores-0265,tumores-0322,tumores-0081,tumores-0139,tumores-0387,tumores-0137 treino=tumores-0399
 conceito: ENNEKING maligno: I baixo grau, II alto grau, III metástase (qualquer grau e local); A intracompartimental, B extracompartimental; o III não tem subdivisão; TOMITA tipo 4 = extensão epidural.
 como: As provas cobram os estágios em todas as combinações: alto grau extracompartimental (IIB), baixo grau extracompartimental (IB), alto grau intracompartimental (IIA), metástase (III), quais estágios podem ser extracompartimentais, e o tipo 4 de TOMITA.
 alerta: A questão do SBOT-SP sobre o estágio IIB (`tumores-0387`) não tem gabarito oficial no acervo; a resposta segue a Tabela 24.1 do Campbell.

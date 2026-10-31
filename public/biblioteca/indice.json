@@ -419,15 +419,15 @@
   },
   {
    "id": "campbell14-estadiamento-biopsia",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Estadiamento, biópsia e margens",
    "especialidade": "tumores",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "14ª edição (2021)",
    "capitulo": "Capítulo 24 · Princípios gerais dos tumores",
-   "resumo": "Avaliação completa antes da biópsia; estadiamento de ENNEKING para lesões benignas (1, 2, 3) e malignas (IA a III); AJCC para sarcomas ósseos e de partes moles; técnica da biópsia (incisão longitudinal, um compartimento, garrote sem compressão, furo oval com metilmetacrilato, dreno em linha); tipos de biópsia e ressecção primária; quimioterapia neoadjuvante e radioterapia; as quatro margens cirúrgicas.",
+   "resumo": "Avaliação completa antes da biópsia (radiografia em dois planos, RM da lesão, cintilografia, TC de tórax); tumor ósseo dói, partes moles raramente (exceto bainha nervosa); epífise madura = TCG, imatura = condroblastoma; massa profunda à fáscia ou maior que 5 cm = provável sarcoma; acima de 40 anos = mieloma ou metástase; primário desconhecido = pulmão e rim (ROUGRAFF acha 85%); ENNEKING benigno 1 latente (FNO), 2 ativo (COA), 3 agressivo (TCG); maligno I baixo, II alto, III metástase, A intra e B extracompartimental; AJCC partes moles (grau, 5 cm, profundidade) e ósseo (8 cm, III skip, IV-A pulmão, IV-B fora); MANKIN; biópsia longitudinal, um compartimento, elevar sem comprimir, furo redondo com pouco metilmetacrilato, dreno em linha; agulha x aberta; ressecção primária em lesão pequena, osteoma osteoide, osteocondroma e osso dispensável; radioterapia e quimioterapia neoadjuvante; margens intralesional, marginal (pseudocápsula), ampla e radical; curetagem com janela grande e broca; TIKHOFF-LINBERG; biópsia do úmero pelo terço anterior do deltoide.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 37,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -435,8 +435,18 @@
      "radar": "fundamento"
     },
     {
-     "id": "antes-da-biopsia",
-     "titulo": "Antes da biópsia",
+     "id": "antes-da-biopsia-a-historia-o-exame-e-a-radiogra",
+     "titulo": "Antes da biópsia: a história, o exame e a radiografia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-outros-exames-e-o-laboratorio",
+     "titulo": "Os outros exames e o laboratório",
+     "radar": "confirmado"
+    },
+    {
+     "id": "metastase-de-origem-desconhecida",
+     "titulo": "Metástase de origem desconhecida",
      "radar": "confirmado"
     },
     {
@@ -450,8 +460,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "ajcc",
-     "titulo": "AJCC",
+     "id": "ajcc-para-sarcomas-de-partes-moles-e-osseos",
+     "titulo": "AJCC para sarcomas de partes moles e ósseos",
      "radar": "confirmado"
     },
     {
@@ -460,27 +470,57 @@
      "radar": "confirmado"
     },
     {
-     "id": "tipos-de-biopsia-e-resseccao-primaria",
-     "titulo": "Tipos de biópsia e ressecção primária",
+     "id": "os-tipos-de-biopsia-e-a-resseccao-primaria",
+     "titulo": "Os tipos de biópsia e a ressecção primária",
      "radar": "confirmado"
     },
     {
-     "id": "quimioterapia-e-radioterapia",
-     "titulo": "Quimioterapia e radioterapia",
+     "id": "radioterapia-e-quimioterapia",
+     "titulo": "Radioterapia e quimioterapia",
      "radar": "confirmado"
+    },
+    {
+     "id": "amputacao-ou-preservacao-do-membro",
+     "titulo": "Amputação ou preservação do membro",
+     "radar": "fundamento"
     },
     {
      "id": "as-margens-cirurgicas",
      "titulo": "As margens cirúrgicas",
      "radar": "confirmado"
+    },
+    {
+     "id": "resseccao-reconstrucao-e-a-cintura-escapular",
+     "titulo": "Ressecção, reconstrução e a cintura escapular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-vizinhos-de-partes-moles",
+     "titulo": "Os vizinhos de partes moles",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
     "tumores-0123",
+    "tumores-0318",
+    "tumores-0319",
+    "tumores-0173",
     "tumores-0118",
-    "tumores-0138",
+    "tumores-0282",
+    "tumores-0130",
+    "tumores-0136",
+    "tumores-0038",
+    "tumores-0109",
+    "tumores-0190",
+    "tumores-0367",
     "tumores-0125",
     "tumores-0067",
+    "tumores-0018",
     "tumores-0108",
     "tumores-0093",
     "tumores-0247",
@@ -502,14 +542,18 @@
     "tumores-0250",
     "tumores-0112",
     "tumores-0024",
-    "tumores-0296"
+    "tumores-0296",
+    "tumores-0037",
+    "tumores-0138"
    ],
    "treino": [
+    "tumores-0376",
     "tumores-0406",
     "tumores-0400",
     "tumores-0399",
     "tumores-0401",
     "tumores-0402",
+    "tumores-0377",
     "tumores-0403",
     "tumores-0405",
     "tumores-0404"
