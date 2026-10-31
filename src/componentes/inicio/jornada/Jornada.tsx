@@ -6,6 +6,7 @@ import { href } from '../../../util/rotas'
 import { SITE, recurso, urlCss } from '../../../config'
 import { Icone } from '../../Icone'
 import { Mascote } from '../../mascote/Mascote'
+import { GatoPixel } from '../../mascote/GatoPixel'
 import { estagioDaSequencia, textoProximoEstagio, ESTAGIOS_FOGUEIRA } from '../estagiosFogueira'
 import type { DiaSequencia } from '../PainelSequencia'
 import { CenaDiorama } from '../cena/CenaDiorama'
@@ -178,14 +179,51 @@ export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
 export function ConviteInstagram() {
   return (
     <a className="jn-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me" style={{ '--cena-insta': urlCss('pixel/inicio/cena-manha-960.webp') } as CSSProperties}
-      aria-label={`Siga @${SITE.instagramUsuario} no Instagram: uma questão comentada toda manhã (abre em nova aba)`}>
+      aria-label={`Siga @${SITE.instagramUsuario} no Instagram: questões comentadas, macetes de prova e o acervo novo (abre em nova aba)`}>
       <span className="jn-insta__texto">
         <span className="jn-insta__selo"><Icone nome="instagram" tamanho={14} /> No Instagram</span>
-        <strong>Uma questão comentada toda manhã</strong>
+        <strong>Questões comentadas no Instagram</strong>
         <span>No feed, a questão, a resposta e o porquê de cada alternativa. Nos stories, macetes de prova e o acervo novo.</span>
         <span className="jn-insta__botao"><Icone nome="instagram" tamanho={18} /> Siga @{SITE.instagramUsuario}</span>
       </span>
-      <Mascote className="jn-insta__mascote" comportamento="acenar" fantasia="nenhuma" falar={false} interativo={false} />
+      <span className="jn-insta__turma" aria-hidden="true">
+        <Mascote className="jn-insta__mascote" comportamento="escrevendo" fantasia="nenhuma" falar={false} interativo={false} />
+        <GatoPixel estado="observando" className="jn-insta__gato" />
+      </span>
     </a>
+  )
+}
+
+/**
+ * O herói da vitrine de quem ainda não tem conta (1/11/2026, "master redesign" da página pública): o mesmo
+ * acampamento do painel. À esquerda, o que é o site, para quem e o convite (uma ação principal, a de entrar com peso
+ * menor); à direita, a questão de amostra numa prévia compacta, longe do esqueleto. Embaixo, no chão, as provas.
+ */
+export function HeroiVitrine({ titulo, proposta, lide, cta, entrar, nota, amostra, provas }: {
+  titulo: string; proposta: ReactNode; lide: ReactNode; cta: ReactNode; entrar: ReactNode; nota: ReactNode; amostra: ReactNode
+  provas: Array<{ nome: string; cor: string }>
+}) {
+  const periodo = usarPeriodo()
+  return (
+    <>
+      <section className={`jn-heroi jn-heroi--vitrine jn-heroi--${periodo} hd-topo--${periodo}`} aria-labelledby="jn-vitrine-titulo" style={SPRITES}>
+        <CenaDiorama linhaFogo={3} periodo={periodo} />
+        <header className="jn-saudacao jn-vitrine__texto">
+          <p className="jn-data">Provas oficiais comentadas</p>
+          <h1 id="jn-vitrine-titulo">{titulo}</h1>
+          <p className="jn-vitrine__proposta">{proposta}</p>
+          <p className="jn-lide">{lide}</p>
+          <div className="jn-vitrine__convite">{cta}{entrar}</div>
+          <p className="jn-vitrine__nota">{nota}</p>
+        </header>
+        <div className="jn-vitrine__amostra">{amostra}</div>
+      </section>
+      <section className="jn-provas" aria-label="Provas no acervo">
+        <p className="jn-rotulo">No acervo</p>
+        <ul>
+          {provas.map(({ nome, cor }) => <li key={nome} style={{ '--cor': cor } as CSSProperties}>{nome}</li>)}
+        </ul>
+      </section>
+    </>
   )
 }

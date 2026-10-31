@@ -346,7 +346,7 @@
 .hd.jn .qa__arte::after { content: ""; position: absolute; left: 50%; bottom: 0.9rem; width: 80%; height: 1.2rem; transform: translateX(-50%); border-radius: 50%; pointer-events: none;
   background: radial-gradient(closest-side, rgba(110, 220, 200, 0.45), rgba(110, 220, 200, 0.08) 70%, transparent); }
 .hd.jn .qa__arte img { position: relative; z-index: 1; width: auto; height: min(27rem, 92%); filter: drop-shadow(0 0 18px rgba(130, 230, 210, 0.35)) drop-shadow(0 12px 10px rgba(0, 0, 0, 0.5)); }
-.hd.jn .qa__etiqueta { top: auto; bottom: 30%; left: -1.2rem; z-index: 2; border-radius: var(--raio-pequeno); }
+.hd.jn .qa__etiqueta { top: auto; bottom: 30%; left: 0.25rem; z-index: 2; max-width: 7.6rem; border-radius: var(--raio-pequeno); }
 .hd.jn .qa__eixo { z-index: 2; }
 @keyframes jn-foco { 50% { opacity: 0.7; } }
 
@@ -383,3 +383,222 @@
 @media (prefers-reduced-motion: reduce) { .jn-trilha__festa { transition: none; } }
 .jn-trilha__festa { white-space: nowrap; }
 @media (max-width: 60rem) { .jn-trilha__festa { top: 0.2rem; font-size: 0.75rem; padding: 0.25rem 0.7rem; } }
+
+/* O passeio do gato (CenaDiorama): anda devagar entre os cantos do chão e vira para o lado em que caminha. */
+.hd-gato--andando { transition: left var(--passo, 3.6s) linear, top var(--passo, 3.6s) linear; }
+.hd-gato--esquerda .hd-gato__sprite { transform: scaleX(-1); }
+.hd-gato--andando .hd-gato__sprite { animation-duration: 0.7s; }
+/* O balão do gato abre para o lado livre da cena (nunca por baixo da caixa da missão). */
+.hd-balao--direita, .hd-balao--esquerda { animation: hd-balao-surge 0.25s steps(3); }
+.hd-balao--direita { transform: translate(-8%, -100%); }
+.hd-balao--direita::after { left: 8%; }
+.hd-balao--esquerda { transform: translate(-92%, -100%); }
+.hd-balao--esquerda::after { left: 92%; }
+@keyframes hd-balao-surge { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hd-gato--andando { transition: none; } }
+
+/* ══ Vitrine de quem ainda não tem conta (1/11/2026, "master redesign da página pública") ══
+   O mesmo idioma do painel: o acampamento abre a página, as provas ficam no chão, a explicação do produto vem numa
+   jornada em linha, a arte fica nos quadros pintados (sem moldura de madeira) e a leitura, na página calma. */
+
+/* Herói: texto à esquerda, o acampamento livre no meio (fogueira, esqueleto e gato) e a questão à direita. */
+.jn-heroi--vitrine { grid-template-columns: minmax(0, 31rem) minmax(4rem, 1fr) minmax(0, 23rem); grid-template-rows: minmax(0, 1fr);
+  align-items: center; gap: 1.5rem; min-height: clamp(36rem, 44vw, 42rem); }
+.jn-heroi--vitrine::before { background: linear-gradient(90deg, rgba(5, 8, 10, 0.78) 0%, rgba(5, 8, 10, 0.5) 30%, rgba(5, 8, 10, 0.08) 52%, transparent 62%),
+  linear-gradient(0deg, rgba(11, 16, 14, 0.85) 0%, transparent 18%); }
+.jn-vitrine__texto { grid-column: 1; grid-row: 1; gap: 0.8rem; max-width: 31rem; }
+.jn-vitrine__proposta { margin: 0; color: var(--jn-tinta); font-size: clamp(1.15rem, 1rem + 0.5vw, 1.35rem); font-weight: 750; line-height: 1.3; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+.jn-vitrine__proposta em { font-style: normal; color: var(--jn-ouro); }
+.jn-vitrine__convite { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; margin-top: 0.4rem; }
+.jn-vitrine__entrar { min-height: 44px; padding: 0 0.25rem; color: var(--jn-tinta); background: none; border: 0; font: inherit; font-weight: 700; cursor: pointer;
+  text-decoration: underline; text-decoration-color: rgba(255, 236, 200, 0.45); text-underline-offset: 4px; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+.jn-vitrine__entrar:hover, .jn-vitrine__entrar:focus-visible { color: #fff; text-decoration-color: var(--jn-ouro); outline: 0; }
+.jn-vitrine__entrar:focus-visible { box-shadow: 0 0 0 2px var(--jn-ouro); border-radius: 6px; }
+.jn-vitrine__nota { display: flex; align-items: flex-start; gap: 0.4rem; margin: 0; color: var(--jn-tinta-2); font-size: var(--meta); line-height: 1.45; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+.jn-vitrine__nota svg { flex: none; margin-top: 0.15rem; color: #7ee0c8; }
+
+/* A questão de amostra: uma prévia de estudo compacta, papel claro com cantos redondos e sombra suave. */
+.jn-vitrine__amostra { grid-column: 3; grid-row: 1; align-self: center; }
+.jn-vitrine__amostra .ip-amostra { gap: 0.7rem; padding: 1rem 1.1rem 1.1rem; border: 0; border-radius: 16px; background: #fbf8f1; color: #1d2422;
+  box-shadow: 0 0 0 1px rgba(27, 18, 8, 0.12), 0 24px 48px -20px rgba(0, 0, 0, 0.75); }
+.jn-vitrine__amostra .ip-amostra__selo { padding: 0.15rem 0.55rem; border-radius: 999px; box-shadow: none; font-family: var(--fonte-texto); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; }
+.jn-vitrine__amostra .ip-amostra__prova { color: #5b686c; }
+.jn-vitrine__amostra .ip-amostra__enunciado { font-size: var(--corpo-menor); line-height: 1.45; }
+.jn-vitrine__amostra .ip-amostra__imagem { max-height: 8.5rem; width: auto; margin-inline: auto; border-radius: 8px; }
+.jn-vitrine__amostra .ip-amostra__alternativas { gap: 0.4rem; }
+.jn-vitrine__amostra .ip-alt { min-height: 44px; padding: 0.4rem 0.6rem; border: 1px solid #dcd5c4; border-radius: 10px; background: #fff; color: #1d2422; font-size: var(--corpo-menor); }
+.jn-vitrine__amostra .ip-alt b { width: 1.75rem; height: 1.75rem; border-radius: 7px; background: #f1ece0; box-shadow: none; font-size: 1.1rem; }
+.jn-vitrine__amostra .ip-alt:hover:not(:disabled) { border-color: var(--verdete); transform: translateY(-1px); box-shadow: 0 4px 10px -6px rgba(20, 101, 94, 0.6); }
+.jn-vitrine__amostra .ip-alt--certa { border-color: #1f7a4d; background: #e8f3ec; }
+.jn-vitrine__amostra .ip-alt--errada { border-color: #b3423a; background: #f8ebea; }
+.jn-vitrine__amostra .ip-amostra__dica { color: #5b686c; }
+.jn-vitrine__amostra .ip-amostra__comentario { border-top: 1px solid #e6dfcf; color: #1d2422; }
+.jn-vitrine__amostra .ip-amostra__acoes .botao { border-radius: 10px; box-shadow: none; }
+.jn-vitrine__amostra .ip-amostra__link { color: #14655e; }
+
+/* As provas no chão do acampamento: uma linha só, nomes inteiros, a cor da linha de cada prova num ponto. */
+.jn-heroi + .jn-provas { margin-top: -1.5rem; }
+.jn-provas { display: flex; align-items: center; gap: 0.8rem 1.25rem; padding: 0.95rem clamp(1.25rem, 2.4vw, 2.25rem) 1.05rem; color: var(--jn-tinta);
+  background: linear-gradient(180deg, var(--jn-chao), #0d1311); border-radius: 0 0 var(--jn-raio) var(--jn-raio); }
+.jn-provas .jn-rotulo { flex: none; }
+.jn-provas ul { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
+.jn-provas li { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.3rem 0.7rem; color: var(--jn-tinta); font-size: var(--meta); font-weight: 700; white-space: nowrap;
+  border-radius: 999px; background: rgba(255, 255, 255, 0.05); box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.1); }
+.jn-provas li::before { content: ""; width: 0.5rem; height: 0.5rem; border-radius: 2px; background: var(--cor); box-shadow: 0 0 6px var(--cor); }
+
+/* Como o estudo funciona: quatro marcos numa trilha (sem caixas iguais), com a chamada de planos discreta embaixo. */
+.jn-cabeca--centro { flex-direction: column; align-items: center; gap: 0.35rem; text-align: center; }
+.jn-cabeca--centro p { margin: 0; color: var(--ardosia); font-size: var(--corpo); }
+.jn-jornada { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; margin: 0.5rem 0 0; padding: 0; list-style: none; }
+.jn-jornada::before { content: ""; position: absolute; left: 12.5%; right: 12.5%; top: 2.1rem; height: 2px;
+  background: repeating-linear-gradient(90deg, var(--traco-forte) 0 8px, transparent 8px 16px); }
+.jn-jornada__passo { position: relative; display: grid; justify-items: center; gap: 0.4rem; text-align: center; }
+.jn-jornada__marco { position: relative; display: grid; place-items: center; width: 4.25rem; height: 4.25rem; border-radius: 50%; background: var(--superficie);
+  box-shadow: 0 0 0 1px var(--traco), 0 10px 22px -12px rgba(18, 24, 26, 0.35); transition: transform 0.2s var(--curva); }
+.jn-jornada__marco img { width: 44px; height: 44px; image-rendering: pixelated; }
+.jn-jornada__num { position: absolute; top: -0.2rem; margin-left: 3.4rem; display: grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  color: var(--sobre-destaque); background: var(--verdete); font-size: 0.75rem; font-weight: 800; }
+.jn-jornada__passo h3 { margin: 0.35rem 0 0; color: var(--texto); font-size: var(--corpo); font-weight: 750; }
+.jn-jornada__passo p { margin: 0; max-width: 26ch; color: var(--ardosia); font-size: var(--corpo-menor); line-height: 1.5; }
+.jn-jornada__passo:hover .jn-jornada__marco { transform: translateY(-3px); }
+.jn-metodo .faixa-planos { margin-top: 0.75rem; border-radius: 16px !important; }
+
+/* A gamificação ao lado dos planos, do mesmo tamanho. */
+.jn-dupla--fim { margin-top: 0.75rem; }
+.ip--vitrine .hd-estandarte { border-radius: var(--jn-raio); box-shadow: 0 18px 36px -24px rgba(0, 0, 0, 0.6); }
+
+/* O convite final: o esqueleto mostrando o caminho, uma frase e um botão. */
+.jn-convite { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1.25rem 1.75rem; margin-top: 0.75rem; padding: 1.4rem 1.75rem;
+  background: var(--superficie); border: 1px solid var(--traco); border-radius: var(--jn-raio); box-shadow: var(--sombra-media); }
+.jn-convite h2 { margin: 0; color: var(--texto); font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.6rem); font-weight: 800; }
+.jn-convite p { margin: 0.3rem 0 0; max-width: 56ch; color: var(--ardosia); }
+.jn-convite__mascote { width: 4.5rem; }
+
+/* O texto institucional: legível, com os guias numa lista de links. */
+.jn-sobre { display: grid; gap: 0.75rem; margin-top: 0.75rem; padding: 1.5rem 1.75rem; color: var(--texto); background: var(--superficie-2, var(--porcelana));
+  border-radius: var(--jn-raio); }
+.jn-sobre h2 { margin: 0; font-size: var(--corpo); font-weight: 750; }
+.jn-sobre p { margin: 0; max-width: 80ch; color: var(--ardosia); font-size: var(--corpo-menor); line-height: 1.6; }
+.jn-sobre h3 { margin: 0.25rem 0 0.4rem; color: var(--texto); font-size: var(--meta); font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; }
+.jn-sobre ul { display: flex; flex-wrap: wrap; gap: 0.35rem 1.25rem; margin: 0; padding: 0; list-style: none; }
+.jn-sobre a { color: var(--verdete); font-size: var(--corpo-menor); font-weight: 650; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--verdete) 35%, transparent); }
+.jn-sobre a:hover { text-decoration-color: currentColor; }
+
+@media (max-width: 60rem) {
+  /* No celular: título, texto e convite; depois o acampamento com os mascotes; e a questão, pousada no chão. */
+  .jn-heroi--vitrine { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto clamp(16rem, 70vw, 22rem) auto; gap: 0; min-height: 0; padding: 0 0 1rem; }
+  .jn-heroi--vitrine::before { inset: 0; height: auto; background: linear-gradient(180deg, var(--jn-chao) 0%, var(--jn-chao) 30%, transparent 46%, transparent 80%, var(--jn-chao) 100%); }
+  .jn-heroi--vitrine .hd-cena { position: relative; grid-row: 2; grid-column: 1; height: 100%; inset: auto; }
+  .jn-heroi--vitrine .hd-palco { width: 235cqw; top: calc(60cqh - 62.7cqw); }
+  .jn-vitrine__texto { grid-row: 1; padding: 1.2rem 1.1rem 0.4rem; }
+  .jn-vitrine__convite { display: grid; }
+  .jn-vitrine__convite .jn-cristal { width: 100%; }
+  .jn-vitrine__entrar { justify-self: center; }
+  .jn-vitrine__amostra { grid-row: 3; grid-column: 1; margin: -2.5rem 0.75rem 0; position: relative; z-index: 1; }
+  .jn-provas { flex-direction: column; align-items: flex-start; padding: 0.4rem 1rem 1.1rem; border-radius: 0 0 18px 18px; }
+  .jn-jornada { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; }
+  .jn-jornada::before { left: 2.1rem; right: auto; top: 2rem; bottom: 2rem; width: 2px; height: auto; background: repeating-linear-gradient(180deg, var(--traco-forte) 0 8px, transparent 8px 16px); }
+  .jn-jornada__passo { grid-template-columns: auto minmax(0, 1fr); justify-items: start; column-gap: 1rem; text-align: left; }
+  .jn-jornada__marco { grid-row: 1 / span 2; }
+  .jn-jornada__num { left: 2.6rem; margin: 0; }
+  .jn-jornada__passo h3 { margin: 0.3rem 0 0; }
+  .jn-jornada__passo p { max-width: none; }
+  .jn-convite { grid-template-columns: auto minmax(0, 1fr); padding: 1.2rem 1.1rem; }
+  .jn-convite .jn-cristal { grid-column: 1 / -1; width: 100%; }
+  .jn-convite__mascote { width: 3.4rem; }
+  .jn-sobre { padding: 1.2rem 1.1rem; }
+}
+@media (prefers-reduced-motion: reduce) { .jn-jornada__marco { transition: none; } }
+
+/* Vitrine, segunda rodada: o acampamento um pouco à esquerda (a questão não cobre o esqueleto), o cronograma legível
+   sobre a torre, a prévia dos temas sem borrão e o ranking com mais contraste. */
+@media (min-width: 75.01rem) {
+  .jn-heroi--vitrine { min-height: 36rem; }
+  .jn-heroi--vitrine .hd-palco { left: 41%; }
+}
+.hd .cr-destaque__passos li { background: rgba(9, 11, 18, 0.84); border-color: rgba(255, 236, 200, 0.14); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.ip--vitrine .dg__conteudo { filter: none; opacity: 0.32; }
+.ip--vitrine .dg__cortina { background: linear-gradient(180deg, transparent, rgba(8, 10, 16, 0.55) 60%); }
+.ip--vitrine .dg__cartao { border-radius: 14px; }
+.ip--vitrine .hd-estandarte { --cena-veu: radial-gradient(75% 95% at 50% 40%, rgba(6, 8, 14, 0.62), rgba(6, 8, 14, 0.92)); }
+.ip--vitrine .hd-estandarte > p { color: #e4d8bd; }
+.ip--vitrine .hd-estandarte .hd-cristal { min-height: 2.9rem; padding: 0.6rem 1.4rem; clip-path: none; border-radius: 12px; }
+.ip--vitrine .hd-estandarte .hd-cristal::before { clip-path: none; border-radius: 10px; }
+.ip--vitrine .hd-estandarte .hd-botao { min-height: 2.9rem; border-radius: 12px; }
+@media (min-width: 75.01rem) {
+  .jn-heroi--vitrine { grid-template-columns: minmax(0, 28rem) minmax(4rem, 1fr) minmax(0, 21.5rem); }
+  .jn-heroi--vitrine .hd-palco { left: 47%; }
+  .jn-heroi--vitrine .hd-mascote .mascote__balao { left: 50%; transform: translateX(-50%); max-width: 10.5rem; }
+  .jn-heroi--vitrine .hd-mascote .mascote__balao::after { left: 50%; }
+  .jn-vitrine__amostra .ip-amostra__imagem { max-height: 7rem; }
+}
+
+/* Herói da vitrine em telas médias (tablet deitado, notebook pequeno): o arranjo empilhado do celular, com a questão
+   centrada e mais estreita, para ela nunca cobrir o esqueleto. */
+@media (min-width: 60.01rem) and (max-width: 75rem) {
+  .jn-heroi--vitrine { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto clamp(18rem, 34vw, 24rem) auto; gap: 0; min-height: 0; padding: 0 0 1.4rem; }
+  .jn-heroi--vitrine::before { background: linear-gradient(180deg, var(--jn-chao) 0%, var(--jn-chao) 28%, transparent 44%, transparent 80%, var(--jn-chao) 100%); }
+  .jn-heroi--vitrine .hd-cena { position: relative; grid-row: 2; grid-column: 1; height: 100%; inset: auto; }
+  .jn-heroi--vitrine .hd-palco { width: 140cqw; top: calc(62cqh - 37.3cqw); transform: translate(calc(-50% + var(--mx) * -16px), 0); }
+  .jn-vitrine__texto { grid-row: 1; padding: 1.75rem 2rem 0.5rem; max-width: 44rem; }
+  .jn-vitrine__amostra { grid-row: 3; grid-column: 1; justify-self: center; width: min(34rem, calc(100% - 3rem)); margin-top: -3rem; position: relative; z-index: 1; }
+}
+/* Depois de responder, a questão cresce com o comentário: o acampamento desliza para a esquerda e o esqueleto continua
+   à vista, reagindo à resposta. */
+@media (min-width: 75.01rem) {
+  .jn-heroi--vitrine .hd-palco { transition: left 0.6s var(--curva), transform 0.5s ease-out; }
+  .jn-heroi--vitrine:has(.ip-amostra--respondida) .hd-palco { left: 38%; }
+}
+@media (prefers-reduced-motion: reduce) { .jn-heroi--vitrine .hd-palco { transition: none; } }
+/* O que a prova mais cobra: a amostra real fica legível sobre a arena (vidro escuro em cada item), e a parte dos
+   assinantes aparece esmaecida, sem borrão. */
+.hd .cx--temas .cx-top > li { background: rgba(9, 11, 18, 0.82) !important; border-color: rgba(255, 236, 200, 0.14) !important; border-radius: 12px !important;
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.hd .cx--temas .cx-top strong { color: #fffaf0; }
+.hd .cx--temas .cx-top small { color: #cfc2a6; }
+.hd .cx--temas .dg__cartao { background: #fbf8f1; color: #1d2422; border: 0; box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.7); }
+.hd .cx--temas .dg__titulo { color: #1d2422; }
+.hd .cr-destaque__nota { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95); }
+.ip--vitrine .podio-previa__lugar { border-radius: 999px; }
+/* A conta até a prova: o painel da conta em vidro escuro firme, para o número não disputar com o relógio da torre. */
+.hd .ap__conta { background: rgba(8, 10, 16, 0.9) !important; border-radius: 16px !important; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.hd .ap__ritmo { border-radius: 10px !important; }
+.hd .ap__data input { border-radius: 8px; }
+.jn-insta__turma { display: flex; align-items: flex-end; gap: 0.25rem; margin-right: clamp(0rem, 6vw, 5rem); }
+.jn-insta .jn-insta__mascote { margin: 0; }
+.jn-insta__gato { width: 5rem; margin-bottom: 0.2rem; }
+@media (max-width: 60rem) { .jn-insta__turma { position: absolute; right: 0.6rem; bottom: 0.5rem; margin: 0; } .jn-insta__gato { width: 3.4rem; } }
+
+/* Celular: a galeria e as duplas em uma coluna (as regras de largura acima valem só no computador), a cena do herói
+   um pouco mais alta e a questão pousando sem cobrir o esqueleto. */
+@media (max-width: 60rem) {
+  .jn-galeria, .jn-dupla, .jn-dupla--fim { grid-template-columns: minmax(0, 1fr); }
+  .jn-heroi--vitrine { grid-template-rows: auto clamp(17rem, 78vw, 22rem) auto; }
+  .jn-heroi--vitrine .hd-palco { top: calc(66cqh - 62.7cqw); }
+  .jn-vitrine__amostra { margin-top: -1rem; }
+}
+@media (max-width: 26rem) {
+  .jn-cristal { font-size: var(--corpo); padding-inline: 1rem; }
+  .jn-heroi h1 { font-size: 1.75rem; }
+}
+@media (max-width: 60rem) { .jn-quadro__gato { display: none; } }
+
+/* A fala do esqueleto no lado livre (CenaDiorama mede e escolhe). */
+.hd-mascote[data-lado] .mascote__balao { max-width: 11.5rem; }
+.hd-mascote[data-lado="cima"] .mascote__balao { left: 50%; right: auto; top: auto; bottom: 100%; transform: translateX(-50%); }
+.hd-mascote[data-lado="cima"] .mascote__balao::after { left: 50%; }
+.hd-mascote[data-lado="esquerda"] .mascote__balao { left: auto; right: 92%; top: 4%; bottom: auto; margin: 0; transform: none; }
+.hd-mascote[data-lado="direita"] .mascote__balao { left: 92%; right: auto; top: 4%; bottom: auto; margin: 0; transform: none; }
+.hd-mascote[data-lado="baixo"] .mascote__balao { left: 50%; right: auto; top: 100%; bottom: auto; margin: 0.35rem 0 0; transform: translateX(-50%); }
+.hd-mascote:is([data-lado="esquerda"], [data-lado="direita"], [data-lado="baixo"]) .mascote__balao::after { display: none; }
+
+/* Quando a página empilha (celular e tablet), a missão e a questão não sobem mais sobre a cena: os pés do esqueleto e o
+   gato ficam à vista. */
+@media (max-width: 60rem) {
+  .jn-missao { margin-top: 0.4rem; }
+  .jn-vitrine__amostra { margin-top: 0.4rem; }
+}
+@media (min-width: 60.01rem) and (max-width: 75rem) { .jn-vitrine__amostra { margin-top: 0.4rem; } }
+@media (min-width: 75.01rem) { .jn-heroi--vitrine .hd-palco { left: 43%; } .jn-heroi--vitrine:has(.ip-amostra--respondida) .hd-palco { left: 36%; } }
+.hd-mascote[data-lado="oculto"] .mascote__balao { visibility: hidden; }
+.hd-gato--fora { visibility: hidden; pointer-events: none; }
