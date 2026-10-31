@@ -8,7 +8,6 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { AteAProva } from '../componentes/AteAProva'
 import { PodioPrevia } from '../componentes/PodioPrevia'
 import { Icone } from '../componentes/Icone'
-import { IconePixel } from '../componentes/IconePixel'
 import { bibliotecaVisivel } from '../biblioteca/recomendar'
 import { QuadroAtlas } from '../componentes/QuadroAtlas'
 import { EstanteResumos } from '../componentes/inicio/EstanteResumos'
@@ -22,8 +21,7 @@ import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
-import { TopoVisitante } from '../componentes/inicio/cena/TopoDia'
-import { BarraAtalhos, ConviteInstagram, HeroiJornada, TrilhaSequencia, usarFestaDaMeta, type Atalho } from '../componentes/inicio/jornada/Jornada'
+import { BarraAtalhos, ConviteInstagram, HeroiJornada, HeroiVitrine, TrilhaSequencia, usarFestaDaMeta, type Atalho } from '../componentes/inicio/jornada/Jornada'
 import { GatoPixel } from '../componentes/mascote/GatoPixel'
 import { Medalha } from '../componentes/Medalha'
 import { estagioDaSequencia } from '../componentes/inicio/estagiosFogueira'
@@ -306,17 +304,19 @@ export function Inicio() {
   const temAcervo = Boolean(indice && contagens && indice.total > 0)
 
   // ---------------------------------------------------------------- Visitante
-  // Refeita do zero em 30/10/2026: a vitrine no mesmo mundo do painel (cenário com luz, pergaminho com a questão,
-  // estandartes das provas, molduras e o portão final). Os textos, convites e links são os de sempre.
+  // Redesenhada em 1/11/2026 ("master redesign da página pública", pedido do Tales), no mesmo idioma do painel: o
+  // acampamento com o convite e a questão de amostra, as provas no chão, como o estudo funciona, a galeria (Biblioteca
+  // e Atlas), o que mais cai, o planejamento (cronograma e a conta até a prova), a gamificação, os planos e o convite
+  // final. As molduras de madeira saíram; a arte fica nos quadros pintados e a leitura, na página calma.
   if (pedeConta) {
     return (
-      <div className="ip ip--vitrine hd" style={CENAS_SECOES}>
-        <TopoVisitante
+      <div className="ip ip--vitrine hd jn" style={CENAS_SECOES}>
+        <HeroiVitrine
           titulo={cabecalhoDoDia.semNome}
           proposta={<>As provas de ortopedia, <em>comentadas como uma aula</em>.</>}
-          lide="Treine pelas questões oficiais do TEOT, do TARO e das provas de subespecialidade. Cada alternativa explicada, a revisão no dia certo e um cronograma até a prova."
-          cta={<a className="hd-cristal" href={href('/conta?modo=criar&voltar=%2Ftreinar')}><Icone nome="raio" tamanho={18} /> Criar conta grátis e treinar</a>}
-          entrar={<button type="button" className="hd-botao" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>}
+          lide="Questões oficiais do TEOT, do TARO e das provas de subespecialidade, com cada alternativa explicada, a revisão no dia certo e um cronograma até a prova."
+          cta={<a className="jn-cristal" href={href('/conta?modo=criar&voltar=%2Ftreinar')}><Icone nome="raio" tamanho={18} /> Criar conta grátis e treinar</a>}
+          entrar={<button type="button" className="jn-vitrine__entrar" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>}
           nota={<><Icone nome="certo" tamanho={14} /> Conta grátis, {fraseGratis('curto')}. No celular ou no computador, continua de onde parou.</>}
           provas={PROVAS_DO_ACERVO}
           amostra={<AmostraRespondivel />}
@@ -324,68 +324,83 @@ export function Inicio() {
         <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
         {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
         {vazio}
-        <div className="hd-avisos">
+        <div className="hd-avisos jn-avisos">
           <ConviteLimiteDoDia />
-          <FaixaPlanos />
           <ChamadaSimuladoNacional />
         </div>
 
-        {/* O que o site faz, em quatro pedras de runa com o mesmo texto de antes. */}
-        <section className="hd-pilares" aria-labelledby="ip-pilares-titulo">
-          <header className="hd-faixa"><h2 id="ip-pilares-titulo">O que o Orto Questões faz por você</h2></header>
-          <div className="hd-pilares__grade">
+        {/* Como o estudo funciona: uma jornada em quatro passos ligados, com os textos de sempre. */}
+        <section className="jn-nivel jn-metodo" aria-labelledby="ip-pilares-titulo">
+          <header className="jn-cabeca jn-cabeca--centro">
+            <h2 id="ip-pilares-titulo">O que o Orto Questões faz por você</h2>
+            <p>Do primeiro enunciado ao dia da prova, o estudo segue um caminho só.</p>
+          </header>
+          <ol className="jn-jornada">
             {[
-              { arte: 'simulado' as const, titulo: 'Questões oficiais comentadas', texto: 'Cada alternativa explicada, a certa e as erradas, com o conceito por trás.' },
-              { arte: 'revisao' as const, titulo: 'Revisão no dia certo', texto: 'Errou, a questão volta logo. Acertou com certeza, só daqui a semanas.' },
-              { arte: 'treinar' as const, titulo: 'Cronograma até a prova', texto: 'A lista de cada dia, passando primeiro pelo que mais cai.' },
-              { arte: 'desempenho' as const, titulo: 'Seu desempenho por tema', texto: 'Onde você acerta, onde erra e o que treinar a seguir.' },
-            ].map((p) => (
-              <article key={p.titulo} className="hd-pilar">
-                <span className="hd-losango__pedra" aria-hidden="true"><span className="hd-losango__icone"><IconePixel nome={p.arte} tamanho={44} /></span></span>
+              { arte: 'simulado', titulo: 'Questões oficiais comentadas', texto: 'Cada alternativa explicada, a certa e as erradas, com o conceito por trás.' },
+              { arte: 'ciclo', titulo: 'Revisão no dia certo', texto: 'Errou, a questão volta logo. Acertou com certeza, só daqui a semanas.' },
+              { arte: 'revisao', titulo: 'Cronograma até a prova', texto: 'A lista de cada dia, passando primeiro pelo que mais cai.' },
+              { arte: 'desempenho', titulo: 'Seu desempenho por tema', texto: 'Onde você acerta, onde erra e o que treinar a seguir.' },
+            ].map((p, i) => (
+              <li key={p.titulo} className="jn-jornada__passo" style={{ '--i': i } as CSSProperties}>
+                <span className="jn-jornada__marco" aria-hidden="true"><img src={recurso(`pixel/${p.arte}.png`)} width={44} height={44} alt="" loading="lazy" decoding="async" /></span>
+                <span className="jn-jornada__num numerico" aria-hidden="true">{i + 1}</span>
                 <h3>{p.titulo}</h3>
                 <p>{p.texto}</p>
-              </article>
+              </li>
             ))}
-          </div>
+          </ol>
+          <FaixaPlanos />
         </section>
 
-        <div className="hd-galeria">
-          <div className="hd-moldura"><QuadroAtlas /></div>
-          {bibliotecaVisivel() && <div className="hd-moldura"><EstanteResumos /></div>}
-        </div>
+        <section className="jn-nivel jn-explorar" aria-labelledby="jn-vitrine-explorar">
+          <header className="jn-cabeca"><h2 id="jn-vitrine-explorar">Por dentro do site</h2></header>
+          <div className="jn-galeria">
+            {bibliotecaVisivel() && <div className="jn-quadro jn-quadro--largo"><EstanteResumos /><GatoPixel estado="lendo" className="jn-quadro__gato" /></div>}
+            <div className="jn-quadro"><QuadroAtlas /></div>
+          </div>
+          {temAcervo && <div className="jn-quadro"><CaixasAssinante /></div>}
+        </section>
 
         {temAcervo && <>
-          <div className="hd-moldura"><CaixasAssinante /></div>
-          <div className="hd-moldura"><CartaoCronograma cronograma={cronograma} /></div>
-          {FLASHCARDS_NA_CAPA && <div className="hd-moldura"><QuadroFlashcards classe="inicio-flash--faixa" /></div>}
-          <div className="hd-moldura"><AteAProva total={indice!.total} conta={false} /></div>
-          <div className="hd-dupla hd-dupla--rodape">
+          <section className="jn-nivel" aria-labelledby="jn-vitrine-plano">
+            <header className="jn-cabeca"><h2 id="jn-vitrine-plano">Um plano até a prova</h2></header>
+            <div className="jn-quadro"><CartaoCronograma cronograma={cronograma} /></div>
+            {FLASHCARDS_NA_CAPA && <div className="jn-quadro"><QuadroFlashcards classe="inicio-flash--faixa" /></div>}
+            <div className="jn-quadro"><AteAProva total={indice!.total} conta={false} /></div>
+          </section>
+
+          <div className="jn-dupla jn-dupla--fim">
             <BlocoRanking conta={false} conquistadas={conquistadas} totalConquistas={totalConquistas} sequencia={streak.atual} />
-            <div className="hd-moldura"><CartaoPlanos /></div>
+            <div className="jn-quadro"><CartaoPlanos /></div>
           </div>
-          {/* O portão final: o mesmo convite de antes, com o mensageiro em pixel e o botão de cristal. */}
-          <section className="hd-portao" aria-labelledby="ip-chamada-titulo">
-            <img src={recurso('ranking/mensageiro.png')} width={64} height={80} alt="" loading="lazy" decoding="async" />
+
+          {/* O convite final: acolhedor e direto, sem prometer tempo. */}
+          <section className="jn-convite" aria-labelledby="ip-chamada-titulo">
+            <Mascote className="jn-convite__mascote" comportamento="orientando" fantasia="nenhuma" falar={false} interativo={false} />
             <div>
-              <h2 id="ip-chamada-titulo">A primeira sessão leva um minuto.</h2>
-              <p>Crie a conta, escolha um tema e responda. O resto o site organiza para você.</p>
+              <h2 id="ip-chamada-titulo">Comece pela primeira questão.</h2>
+              <p>Crie a conta, escolha um tema e responda. A revisão e o cronograma se organizam a partir das suas respostas.</p>
             </div>
-            <a className="hd-cristal hd-cristal--ouro" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>Criar conta grátis</a>
+            <a className="jn-cristal" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>Criar conta grátis</a>
           </section>
         </>}
 
         <ConviteInstagram />
 
-        <section className="hd-sobre" aria-labelledby="inicio-apresentacao">
+        <section className="jn-sobre" aria-labelledby="inicio-apresentacao">
           <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
           <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para o título de especialista em cirurgia da mão, da SBCM, há OrtoQuestões Simulados no padrão da prova de título e do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. Estude por assunto, entenda as alternativas e revise seus erros.</p>
-          <nav className="hd-sobre__guias" aria-label="Conheça o banco e organize sua preparação">
-            <a href={recurso('questoes/')}>Questões por assunto</a>
-            <a href={recurso('guias/preparacao-teot-taro.html')}>Preparação para TEOT e TARO</a>
-            <a href={recurso('guias/curso-de-ortopedia.html')}>Curso de ortopedia: como escolher</a>
-            <a href={recurso('guias/como-estudar-para-o-taro.html')}>Como estudar para o TARO</a>
-            <a href={recurso('guias/questoes-cirurgia-da-mao.html')}>Cirurgia da mão</a>
-            <a href={recurso('guias/questoes-r4-quadril-coluna.html')}>R4 de quadril e coluna</a>
+          <nav aria-label="Conheça o banco e organize sua preparação">
+            <h3>Guias e páginas por assunto</h3>
+            <ul>
+              <li><a href={recurso('questoes/')}>Questões por assunto</a></li>
+              <li><a href={recurso('guias/preparacao-teot-taro.html')}>Preparação para TEOT e TARO</a></li>
+              <li><a href={recurso('guias/curso-de-ortopedia.html')}>Curso de ortopedia: como escolher</a></li>
+              <li><a href={recurso('guias/como-estudar-para-o-taro.html')}>Como estudar para o TARO</a></li>
+              <li><a href={recurso('guias/questoes-cirurgia-da-mao.html')}>Cirurgia da mão</a></li>
+              <li><a href={recurso('guias/questoes-r4-quadril-coluna.html')}>R4 de quadril e coluna</a></li>
+            </ul>
           </nav>
         </section>
       </div>

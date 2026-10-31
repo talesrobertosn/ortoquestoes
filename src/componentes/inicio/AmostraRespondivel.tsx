@@ -19,6 +19,9 @@ function carregar(id: string): Promise<AmostraInicio> {
   return ler ? ler() : Promise.reject(new Error(`Amostra ${id} não encontrada`))
 }
 
+/** Avisa a página que a amostra foi respondida (o mascote do acampamento reage; nada depende disso). */
+export const EVENTO_AMOSTRA = 'ortoquestoes:amostra-respondida'
+
 export function AmostraRespondivel() {
   const [resumo] = useState(amostraDaVez)
   const [amostra, definirAmostra] = useState<AmostraInicio | null>(null)
@@ -48,6 +51,10 @@ export function AmostraRespondivel() {
   }
 
   const { gabarito, alternativas } = amostra
+  const responder = (letra: string) => {
+    definirMarcada(letra)
+    window.dispatchEvent(new CustomEvent(EVENTO_AMOSTRA, { detail: { acertou: letra === gabarito } }))
+  }
   const respondida = marcada !== null
   const acertou = marcada === gabarito
   const escolhida = alternativas.find((a) => a.letra === marcada)
@@ -73,7 +80,7 @@ export function AmostraRespondivel() {
           const estado = !respondida ? '' : letra === gabarito ? ' ip-alt--certa' : letra === marcada ? ' ip-alt--errada' : ' ip-alt--apagada'
           return (
             <li key={letra}>
-              <button type="button" className={`ip-alt${estado}`} disabled={respondida} aria-pressed={marcada === letra} onClick={() => definirMarcada(letra)}>
+              <button type="button" className={`ip-alt${estado}`} disabled={respondida} aria-pressed={marcada === letra} onClick={() => responder(letra)}>
                 <b>{letra}</b><span>{texto}</span>
                 {respondida && letra === gabarito && <Icone nome="certo" tamanho={16} />}
                 {respondida && letra === marcada && letra !== gabarito && <Icone nome="errado" tamanho={16} />}
