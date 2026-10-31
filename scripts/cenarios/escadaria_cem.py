@@ -161,6 +161,16 @@ def quantizar(s: np.ndarray, d: dict) -> np.ndarray:
     faixa = np.digitize(luz, [0.05, 0.13, 0.24])
     # faixas de luz sem pontinhos soltos: filtro de moda 3 x 3 (a textura fica no tom, não na luz)
     faixa = np.asarray(Image.fromarray(faixa.astype(np.uint8)).filter(ImageFilter.ModeFilter(3))).astype(int)
+    # degraus legíveis: a janela fica atrás e acima, então o piso de cada degrau recebe a luz e o espelho (a face
+    # virada para nós) fica na sombra; a quina de cada piso ganha um filete claro
+    escada = poli([(152, 46), (248, 46), (282, 130), (118, 130)])
+    linha = np.array([tom[y, 150:250].mean() for y in range(H)])
+    espelho = (linha < 0.16)[:, None] & escada
+    quina = ((linha >= 0.16) & (np.roll(linha, 1) < 0.16))[:, None] & escada
+    faixa = np.where(espelho, np.minimum(faixa, 1), faixa)
+    idx = np.where(espelho, np.maximum(idx - 1, 0), idx)
+    idx = np.where(quina, np.minimum(idx + 1, 9), idx)
+    faixa = np.where(quina & (faixa >= 1), np.minimum(faixa + 1, 3), faixa)
     # a luz direta também clareia o material um degrau
     idx = np.clip(idx + (faixa >= 2) + (faixa >= 3), 0, 9)
     for f in range(4):
@@ -521,7 +531,7 @@ def montar(arte: np.ndarray, d: dict) -> Image.Image:
     # a luz assada (as manchas da rosácea na escada) ganha um brilho quente a mais
     img += (luz_assada * (1 - jan))[:, :, None] * img * 0.12 * (1 - suave(140, 200, GYa))[:, :, None]
     # a poça de luz no chão da frente desce um pouco (os cartões ficam por cima)
-    img *= (1 - luz_assada * suave(132, 165, GYa) * 0.22)[:, :, None]
+    img *= (1 - luz_assada * suave(125, 165, GYa) * 0.32)[:, :, None]
     # poeira dourada no facho
     g = np.random.default_rng(83)
     pp = f * 2.2 + raios * 1.2
@@ -589,11 +599,14 @@ def main() -> None:
     img.resize((960, 540), Image.LANCZOS).save(PASTA / "escadaria-960.webp", quality=82, method=6)
     meta = {
         "base": [W, H], "escala": ESC,
-        "recorte_desktop": {"y0": 0.14, "y1": 0.86},
-        "foco": {"x": 0.5, "y": 0.34},
+        "recorte_desktop": {"y0": 0.08, "y1": 0.78},
+        "foco": {"x": 0.5, "y": 0.3},
         "notas": "Escadaria da Ascensão (Salão dos Cem). Base do Tales (PixelLab) refeita em pixel art 400x225 e luz "
-                 "HD-2D em 3x por scripts/cenarios/escadaria_cem.py. Cartões claros sobre o chão da frente "
-                 "(faixa de baixo calma e mais escura); escada e rosácea no centro.",
+                 "HD-2D em 3x por scripts/cenarios/escadaria_cem.py. Recorte sugerido (0,08 a 0,78, cerca de 2,5:1) "
+                 "mostra as lancetas e a base da rosácea no alto, a escada no centro e a poça de luz do chão atrás "
+                 "dos cartões; 0,20 a 0,90 também funciona (corta a janela e põe os cartões sobre o tapete, a parte "
+                 "mais calma). Celular: os 60% do meio (x 0,2 a 0,8) mantêm a escada e os dois cavaleiros na borda. "
+                 "Cavaleiros de pedra nos nichos em x 0,22 e 0,78; estandartes em x 0,15 e 0,85.",
     }
     (PASTA / "escadaria.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
     for n in ("escadaria.webp", "escadaria-960.webp"):

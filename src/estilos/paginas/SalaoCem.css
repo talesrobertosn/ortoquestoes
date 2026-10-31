@@ -209,26 +209,21 @@
 .cem-escada__cabeca { display: grid; gap: 2px; }
 .cem-escada__cabeca h2, .cem-lista__cabeca h2, .cem-regras h2 { margin: 0; font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.02em; font-size: clamp(1.375rem, 2.6vw, 1.75rem); color: var(--texto); }
 .cem-escada__sub { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.cem-escada__palco { position: relative; border-radius: 20px; overflow: hidden; background: #191a1f; min-height: 22rem; aspect-ratio: 1200 / 472; }
+/* A arte mostra a faixa de 8% a 78% da altura: o vitral, a escada e o tapete onde ficam os cartões. */
+.cem-escada__arte { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; image-rendering: pixelated; }
 .cem-escada__degraus {
-  list-style: none; margin: 0; padding: var(--e-6) var(--e-5) 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4); align-items: end;
-  border-radius: 16px; position: relative; overflow: hidden;
-  background: linear-gradient(180deg, #efe7d6, #e4d8bf);
+  list-style: none; margin: 0; position: absolute; inset: auto 0 0; padding: 0 var(--e-5) var(--e-5);
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4); align-items: end;
 }
-/* Os degraus de pedra embaixo de cada cartão: cada um mais alto que o anterior (a escada sobe para a direita). */
+/* Cada patamar um pouco mais alto que o anterior: a escada sobe para a direita. */
 .cem-degrau {
-  --alto: 0px; position: relative; display: grid; gap: var(--e-2); min-width: 0; margin-bottom: calc(18px + var(--alto));
-  padding: var(--e-4); border-radius: 12px; background: #fffdf8; box-shadow: 0 1px 2px rgba(60, 44, 20, 0.12), 0 8px 18px rgba(60, 44, 20, 0.12);
+  --alto: 0px; position: relative; display: grid; gap: var(--e-2); min-width: 0; margin-bottom: var(--alto);
+  padding: var(--e-4); border-radius: 12px; background: rgba(255, 253, 248, 0.96);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 12px 28px rgba(0, 0, 0, 0.35);
 }
-.cem-degrau::after {
-  content: ""; position: absolute; left: -10px; right: -10px; top: 100%; height: calc(18px + var(--alto) + var(--e-6)); margin-top: 8px;
-  background:
-    linear-gradient(180deg, #b7a586 0 4px, #9d8a6a 4px 6px, transparent 6px) top / 100% 100% no-repeat,
-    repeating-linear-gradient(90deg, transparent 0 46px, rgba(70, 52, 30, 0.22) 46px 48px),
-    linear-gradient(180deg, #cdbd9c, #b9a681);
-  border-radius: 3px 3px 0 0;
-}
-.cem-degrau--2 { --alto: 28px; }
-.cem-degrau--3 { --alto: 56px; }
+.cem-degrau--2 { --alto: 14px; }
+.cem-degrau--3 { --alto: 28px; }
 .cem-degrau--voce { box-shadow: inset 0 0 0 2px var(--verdete), 0 8px 18px rgba(60, 44, 20, 0.12); }
 .cem-degrau__salto { display: flex; align-items: baseline; gap: var(--e-2); }
 .cem-degrau__salto b { font-family: var(--fonte-pixel); font-weight: 400; font-size: 2.25rem; line-height: 0.9; color: var(--acerto-texto, #1f7a4d); }
@@ -352,9 +347,10 @@
   .cem-podio__total { grid-column: 3; grid-row: 1 / span 2; text-align: right; display: grid; }
   .cem-podio__total b, .cem-podio--1 .cem-podio__total b { font-size: 1.375rem; }
   .cem-podio__selos { grid-column: 2; min-height: 0; }
-  .cem-escada__degraus { grid-template-columns: minmax(0, 1fr); padding: var(--e-3); gap: var(--e-2); background: #efe7d6; }
+  .cem-escada__palco { aspect-ratio: auto; min-height: 0; display: grid; }
+  .cem-escada__arte { position: relative; height: 11rem; object-position: 50% 30%; }
+  .cem-escada__degraus { position: relative; grid-template-columns: minmax(0, 1fr); padding: var(--e-3); gap: var(--e-2); margin-top: -2.5rem; }
   .cem-degrau, .cem-degrau--2, .cem-degrau--3 { --alto: 0px; margin: 0; }
-  .cem-degrau::after { display: none; }
   .cem-degrau { grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: var(--e-3); padding: var(--e-3); }
   .cem-degrau__salto { display: grid; justify-items: center; gap: 0; min-width: 3.25rem; }
   .cem-degrau__salto b { font-size: 1.9rem; }
@@ -387,10 +383,8 @@
 /* ---------- Escuro ---------- */
 :root[data-tema="escuro"] .cem { --cem-veu-eu: rgba(79, 179, 165, 0.16); }
 :root[data-tema="escuro"] .cem-jornada { background-color: #0a2e28; box-shadow: inset 0 0 0 1px rgba(228, 184, 92, 0.2); }
-:root[data-tema="escuro"] .cem-escada__degraus { background: linear-gradient(180deg, #2a2620, #221e19); }
-:root[data-tema="escuro"] .cem-degrau { background: #1c2124; box-shadow: inset 0 0 0 1px #2f383b; }
+:root[data-tema="escuro"] .cem-degrau { background: rgba(28, 33, 36, 0.95); box-shadow: inset 0 0 0 1px #2f383b, 0 12px 28px rgba(0, 0, 0, 0.4); }
 :root[data-tema="escuro"] .cem-degrau__nome, :root[data-tema="escuro"] .cem-degrau__rota b { color: #f1f3f2; }
 :root[data-tema="escuro"] .cem-degrau__rota { color: #a9b6b9; }
-:root[data-tema="escuro"] .cem-degrau::after { filter: brightness(0.45) saturate(0.7); }
 :root[data-tema="escuro"] .cem-mov--fogo { background: #3a2a14; color: #ffc46b; }
 :root[data-tema="escuro"] .cem-linha--voce { box-shadow: inset 4px 0 0 var(--cem-ouro); }

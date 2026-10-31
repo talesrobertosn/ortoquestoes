@@ -1,3 +1,4 @@
+import { recurso } from '../../config'
 import { iniciais, type Ascensao } from './regras'
 import { Chama } from './Movimento'
 
@@ -14,6 +15,10 @@ export function Escadaria({ subidas }: { subidas: Ascensao[] }) {
       <h2 id="cem-escada-t">Quem mais subiu</h2>
       <p className="cem-escada__sub">Posições ganhas desde o último dia registrado ou na semana.</p>
     </header>
+    <div className="cem-escada__palco">
+    {/* A escadaria do castelo (desenho do Tales no PixelLab, com a luz HD-2D de scripts/cenarios/escadaria_cem.py). */}
+    <img className="cem-escada__arte" src={recurso('ranking/cem/escadaria-960.webp')} srcSet={`${recurso('ranking/cem/escadaria-960.webp')} 960w, ${recurso('ranking/cem/escadaria.webp')} 1200w`}
+      sizes="min(72rem, 100vw)" alt="" width={1200} height={675} loading="lazy" decoding="async" draggable={false} aria-hidden="true" />
     <ol className="cem-escada__degraus">
       {subidas.map((s, i) => <li key={s.linha.posicao} className={`cem-degrau cem-degrau--${i + 1}${s.linha.eh_voce ? ' cem-degrau--voce' : ''}`}>
         <span className="cem-degrau__salto">
@@ -30,5 +35,6 @@ export function Escadaria({ subidas }: { subidas: Ascensao[] }) {
         {s.fogo && <span className="cem-degrau__fogo" title="Em chamas"><Chama tamanho={24} /><span className="so-leitor">Em chamas</span></span>}
       </li>)}
     </ol>
+    </div>
   </section>
 }
