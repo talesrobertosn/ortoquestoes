@@ -16,4 +16,6 @@ for t in testar_amostras_inicio testar_cronograma_adiantar testar_adiantar_ponta
 done
 # Trava de profundidade (30/10/2026): resumo novo < 45 KB ou comentário novo < 4,5 mil não passa.
 (python3 scripts/biblioteca/trava_profundidade.py || python scripts/biblioteca/trava_profundidade.py) || exit 1
+# Moldura nos resumos (31/10/2026, FLUXO-MESTRE.md): só aviso, não trava.
+(python3 scripts/biblioteca/checar_resumo.py | grep AVISO) || true
 echo "pos_aplicar: tudo certo"
