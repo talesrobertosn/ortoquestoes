@@ -14,6 +14,8 @@ Referência aprovada: [docs/exemplos/mao-0853.json](docs/exemplos/mao-0853.json)
 (na mão, Green com página, só no computador com os livros). Prompt: [docs/prompts/comentarios-miniaula.md](docs/prompts/comentarios-miniaula.md);
 referência: [docs/exemplos/mao-2164.json](docs/exemplos/mao-2164.json).
 
+**Prompt mestre dos 284 temas (Tales, 31/10/2026: nunca parar, nunca perguntar, resolver sozinho):** [docs/prompts/PROMPT-MESTRE-284-TEMAS.md](docs/prompts/PROMPT-MESTRE-284-TEMAS.md).
+
 **Fluxo mestre (Tales, 31/10/2026):** antes de qualquer tema, leia [docs/biblioteca/FLUXO-MESTRE.md](docs/biblioteca/FLUXO-MESTRE.md): a meta dos 284 temas, o ciclo de dez etapas por tema, o padrão dos simulados no estilo da prova, os portões automáticos e as regras contra o decaimento.
 
 **Capítulo enviado pelo Tales ("faça resumo disso", "questões e resumo", PDF sem comentário):** siga sozinho, sem pedir
