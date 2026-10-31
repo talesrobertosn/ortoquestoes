@@ -9,6 +9,8 @@ import { ler, gravar } from '../../estado/armazenamento'
 export type IdSegredo =
   | 'passagem' | 'gato' | 'garden' | 'codman' | 'cafe' | 'gesso' | 'lowell' | 'coruja' | 'lanterna'
   | 'madrugada' | 'orto' | 'relogio' | 'escada' | 'cap404' | 'sazonal'
+  // Biblioteca 3.0 (31/10/2026): a janela, o volume raro, o crânio da estante e a amizade da coruja com o gato.
+  | 'janela' | 'raro' | 'cranio' | 'amigos'
 
 export interface Segredo { id: IdSegredo; nome: string; pista: string }
 
@@ -28,6 +30,24 @@ export const SEGREDOS: Segredo[] = [
   { id: 'escada', nome: 'O livro mais alto', pista: 'Suba a escada da biblioteca.' },
   { id: 'cap404', nome: 'O capítulo 404', pista: 'Procure um capítulo que ainda não foi escrito.' },
   { id: 'sazonal', nome: 'Visita de época', pista: 'Volte no fim de outubro ou em dezembro.' },
+  { id: 'janela', nome: 'O sol anda depressa', pista: 'A janela muda com a hora. Ou com a sua insistência.' },
+  { id: 'raro', nome: 'O volume que brilha', pista: 'Um livro na mesa não é um livro comum.' },
+  { id: 'cranio', nome: 'Osso de estimação', pista: 'O crânio da estante sabe umas coisas.' },
+  { id: 'amigos', nome: 'Coruja e gato', pista: 'Chame a bibliotecária e o gato, um logo depois do outro.' },
+]
+
+/**
+ * Curiosidades do crânio da estante (31/10/2026): anatomia curta e correta, uma por toque, em ordem.
+ * Nada de número duvidoso; cada frase é de livro-texto de anatomia.
+ */
+export const CURIOSIDADES_CRANIO = [
+  'O crânio do adulto tem 22 ossos: 8 do neurocrânio e 14 da face. Só a mandíbula se mexe.',
+  'A clavícula é o primeiro osso a começar a ossificar, ainda na quinta semana de gestação.',
+  'O fêmur é o osso mais longo e mais forte do corpo.',
+  'O escafoide recebe o sangue de distal para proximal: por isso o polo proximal é o que mais sofre necrose.',
+  'O estribo, na orelha média, é o menor osso do corpo.',
+  'O recém-nascido tem cerca de 300 peças ósseas; muitas se fundem e o adulto fica com 206 ossos.',
+  'A patela é o maior sesamoide do corpo, dentro do tendão do quadríceps.',
 ]
 
 const CHAVE = 'resumos:segredos'

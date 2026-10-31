@@ -3142,18 +3142,37 @@ def gato_acordando(t, k):
         palpebra(t, q, s_ * 3.4, 0.5)
 
 
+# ─────────── terceira leva do gato (01/11/2026, sempre no fim) ───────────
+def gato_olhando_cima(t, k):
+    """Sentado, olhando para cima e para a direita (algo na prateleira de cima): orelhas para a frente, a cabeça sobe
+    devagar e a ponta da cauda enrola e desenrola; uma piscada lenta no quadro 4."""
+    f = k / GQ * TAU
+    enrola = 0.5 + 0.5 * math.sin(f)
+    ponta = (44.6 + 1.4 * enrola, 33.4 - 3.0 * enrola)
+    pts = bezier((21.0, 34.5), (24.0, 39.6), (34.0, 38.6), 6)[:-1] + bezier((34.0, 38.6), (43.0, 38.2), ponta, 5)
+    q = gato_sentado_v(t, k, pts, cauda_z=3.4, cabeca_inc=-15.0 - 2.5 * math.sin(f + 0.6), olhar=(0.45, -0.75),
+                       orelha_tw=1.0 + 0.4 * math.sin(f))
+    if k == 4:
+        for s_ in (-1, 1):
+            palpebra(t, q, s_ * 3.4, 0.5)
+
+
 LINHAS_GATO = [("dormindo", "dormindo"), ("acordado", "acordado"), ("tala", "com a tala no braço"),
                # linhas novas (31/10/2026)
                ("sentado", "sentado"), ("andando", "andando"), ("espreguicando", "se espreguiçando"),
                ("brincando", "brincando com a bolinha de lã"), ("lendo", "lendo"), ("comemorando", "comemorando"),
                # segunda leva (01/11/2026)
                ("observando", "observando"), ("fogueira", "deitado perto da fogueira"), ("ronronando", "ronronando"),
-               ("acordando", "acordando")]
+               ("acordando", "acordando"),
+               # terceira leva (01/11/2026)
+               ("olhando_cima", "olhando para cima")]
 LINHAS_GATO_ANTIGAS = 3
 LINHAS_GATO_POSES_31 = 6
+LINHAS_GATO_POSES_2 = 4          # segunda leva (gato-poses2.png); a terceira vai para gato-poses3.png
 NOVAS_GATO = {"sentado": gato_sentado_ereto, "andando": gato_andando, "espreguicando": gato_espreguicando,
               "brincando": gato_brincando, "lendo": gato_lendo, "comemorando": gato_comemorando,
-              "observando": gato_observando, "fogueira": gato_fogueira, "ronronando": gato_ronronando, "acordando": gato_acordando}
+              "observando": gato_observando, "fogueira": gato_fogueira, "ronronando": gato_ronronando, "acordando": gato_acordando,
+              "olhando_cima": gato_olhando_cima}
 
 
 def q_gato(linha: str, k: int) -> Tela:
@@ -3249,7 +3268,9 @@ def main() -> None:
     salvar(gato.crop((0, 0, gato.width, GH * LINHAS_GATO_ANTIGAS)), PASTA / "gato.png")
     g1, g2 = GH * LINHAS_GATO_ANTIGAS, GH * (LINHAS_GATO_ANTIGAS + LINHAS_GATO_POSES_31)
     salvar(gato.crop((0, g1, gato.width, g2)), PASTA / "gato-poses.png")
-    salvar(gato.crop((0, g2, gato.width, gato.height)), PASTA / "gato-poses2.png")
+    g3 = GH * (LINHAS_GATO_ANTIGAS + LINHAS_GATO_POSES_31 + LINHAS_GATO_POSES_2)
+    salvar(gato.crop((0, g2, gato.width, g3)), PASTA / "gato-poses2.png")
+    salvar(gato.crop((0, g3, gato.width, gato.height)), PASTA / "gato-poses3.png")
     if "--previa" in sys.argv:
         destino = Path(sys.argv[sys.argv.index("--previa") + 1])
         destino.mkdir(parents=True, exist_ok=True)
