@@ -1,0 +1,16 @@
+{
+  "base": [
+    400,
+    225
+  ],
+  "escala": 3,
+  "recorte_desktop": {
+    "y0": 0.14,
+    "y1": 0.86
+  },
+  "foco": {
+    "x": 0.5,
+    "y": 0.34
+  },
+  "notas": "Escadaria da Ascensão (Salão dos Cem). Base do Tales (PixelLab) refeita em pixel art 400x225 e luz HD-2D em 3x por scripts/cenarios/escadaria_cem.py. Cartões claros sobre o chão da frente (faixa de baixo calma e mais escura); escada e rosácea no centro."
+}
