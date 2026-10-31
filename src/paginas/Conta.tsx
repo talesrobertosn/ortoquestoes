@@ -489,9 +489,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const nomeVolta = modo === 'entrar' && !recuperacao && !perfilDepois ? nomeLembrado(email) : ''
     const tituloVitrine = nomeVolta ? `Que bom te ver de novo, ${nomeVolta}.` : v.titulo
     const seloVitrine = perfilDepois ? 'Conta criada' : recuperacao || modo === 'recuperar' ? 'Recuperar acesso' : modo === 'criar' ? 'Conta gratuita' : 'Continuar'
-    return <div className={`ac ac--hd ac--${periodo}`} style={{ '--ac-cena': urlCss(`pixel/inicio/cena-${periodo}.webp`), '--ac-cena-p': urlCss(`pixel/inicio/cena-${periodo}-960.webp`) } as CSSProperties}>
-      {/* O acampamento pintado (o mesmo do topo da página inicial, na luz da hora) por trás da frase e do formulário (31/10/2026). */}
-      <div className="ac-cena" aria-hidden="true"><Mascote className="ac-mascote" comportamento="acenar" falar={false} interativo={false} /></div>
+    return <div className={`ac ac--cena ac--${periodo}`} style={{ '--ac-cena': urlCss(`pixel/inicio/cena-${periodo}.webp`), '--ac-cena-p': urlCss(`pixel/inicio/cena-${periodo}-960.webp`) } as CSSProperties}>
+      {/* Topo: o acampamento pintado da página inicial (na luz da hora), a frase sorteada e o mascote acenando (31/10/2026). */}
       <section className="ac-vitrine" aria-labelledby="ac-titulo">
         <div className="ac-vitrine__texto">
           <p className="tr-heroi__selo">{seloVitrine}</p>
@@ -500,10 +499,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <ul className="ac-provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
           <p className="ac-vitrine__gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar de onde parou.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
         </div>
+        <div className="ac-vitrine__mascote"><Mascote className="ac-mascote" comportamento="acenar" falar={false} /></div>
       </section>
       <section className="ac-cartao" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
-        {/* No celular, o mascote fica em pé na borda do formulário (no computador, no chão do acampamento). */}
-        <Mascote className="ac-mascote ac-mascote--cartao" comportamento="acenar" falar={false} interativo={false} />
         {perfilDepois ? <>
           <header className="ac-cabeca">
             <p className="ac-passo"><span className="px-numero" aria-hidden="true">2</span><span>Passo 2 de 2 · opcional</span></p>
