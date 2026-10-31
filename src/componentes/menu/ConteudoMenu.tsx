@@ -104,7 +104,6 @@ const SINONIMOS: Record<string, string> = {
 }
 /** Páginas que não estão no menu, mas que a busca deve achar. */
 const EXTRAS_BUSCA: PaginaBusca[] = [
-  { destino: '/conta?secao=aparencia', rotulo: 'Aparência', texto: 'Cenário do horário e interface clara ou escura', icone: 'sol', chaves: 'tema claro escuro noite dia cenario modo aparencia cor' },
   { destino: '/resumos/frases', rotulo: 'Frases que caem', texto: 'Uma frase por assunto, dos comentários das questões de prova', icone: 'livro', chaves: 'resumao frases na prova vespera' },
   { destino: '/resumos/caderno', rotulo: 'Meu caderno de estudo', texto: 'Seus destaques e notas dos resumos', icone: 'lapis', chaves: 'marcacoes notas grifos destaques' },
   { destino: '/conquistas', rotulo: 'Conquistas e emblemas', texto: 'Inventário de emblemas e vitrine', icone: 'medalha', chaves: 'emblemas medalhas trofeus' },
@@ -174,7 +173,6 @@ export default function ConteudoMenu({ caminho, aoFechar }: { caminho: string; a
     ...(premium ? [{ destino: '/conta/assinatura', rotulo: 'Minha assinatura', texto: 'Plano, renovação e pagamentos', icone: 'medalha' as const }] : []),
     { destino: '/indicar', rotulo: 'Indique e ganhe', texto: '7 dias do plano completo para você e o colega', icone: 'grupo' },
     { destino: '/contato', rotulo: 'Suporte e contato', texto: 'Dúvida, sugestão ou problema', icone: 'interrogacao' },
-    { destino: '/mapa', rotulo: 'Mapa do site', texto: 'Todas as páginas, num lugar só', icone: 'mapa' },
     { destino: '/sobre', rotulo: 'O projeto', texto: 'Quem faz e como os comentários são feitos', icone: 'bandeira' },
     ...(administrador ? [{ destino: '/admin', rotulo: 'Painel do administrador', texto: 'Usuários, avaliações e pagamentos', icone: 'cadeado' as const }] : []),
   ]
