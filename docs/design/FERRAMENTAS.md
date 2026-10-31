@@ -10,7 +10,7 @@ componentes, páginas, posts, banners), use as skills abaixo junto com o brainst
 | Decidir e fundamentar | `ui-ux-pro-max` | Biblioteca de estilos, paletas por produto, pares de fontes, regras de UX, acessibilidade e gráficos |
 | Construir | `ui-styling`, `design-system` | Componentes no estilo shadcn, tema escuro, tokens de cor, espaço e tipografia |
 | Revisar e polir | `impeccable` | Auditoria, crítica, polimento, animação, "mais ousado" ou "mais discreto", DESIGN.md |
-| Posts e peças | `banner-design`, `brand` | Banners e consistência de marca (os posts seguem docs/marketing/orientacoes.md) |
+| Posts e peças | `banner-design`, `brand`, `canvas-design` | Banners, pôsteres e peças estáticas com direção de arte; consistência de marca (os posts seguem docs/marketing/orientacoes.md) |
 | Arte pixel e mascote | `arte-hd2d` | Cenários HD-2D e o esqueleto (modelo E); sempre arte própria feita por código |
 
 ## O que não muda
