@@ -104,7 +104,7 @@
 .pt-contador { min-width: 1.8rem; padding: 0.15rem 0.5rem; border-radius: 999px; background: var(--pt-ouro-claro); color: #4a3510; font-size: 0.875rem; text-align: center; }
 
 /* Os seis atalhos. */
-.pt-atalhos { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.1rem 1.15rem; }
+.pt-atalhos { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.15rem; }
 .pt-atalho { position: relative; isolation: isolate; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0.95rem; min-height: 104px; padding: 0.9rem 1.1rem; border-radius: 18px;
   text-decoration: none; color: var(--pt-tinta); background: #fff; border: 1px solid var(--pt-linha); box-shadow: 0 1px 0 #fff inset, 0 4px 14px rgba(60, 48, 24, 0.06);
   transition: transform 0.16s cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 0.16s, border-color 0.16s; }
@@ -121,32 +121,15 @@
 .pt-cadeado { position: absolute; top: 0.6rem; right: 0.6rem; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--pt-papel-2); color: var(--pt-tinta-2); }
 .pt-item .pt-cadeado { position: static; }
 
-/* O fogo mágico: um anel em volta do atalho (máscara), com a textura subindo em quadros; luz quente embaixo.
-   Três fogos, três personalidades: Tempo (ouro, calmo), Conhecimento (laranja, faíscas e letrinhas), Anatômico (azul). */
-.pt-fogo { position: absolute; inset: -13px; z-index: -1; border-radius: 30px; pointer-events: none; }
-.pt-fogo i { position: absolute; inset: 0; border-radius: inherit; padding: 13px; opacity: 0.32; image-rendering: pixelated;
-  background: var(--pt-textura) 0 0 / 64px 512px repeat; animation: pt-fogo var(--pt-ritmo, 1.6s) steps(8) infinite;
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
-  transition: opacity 0.25s; }
-.pt-fogo b { position: absolute; inset: 6px; border-radius: 24px; opacity: 0.55; box-shadow: 0 0 18px 2px var(--pt-luz); transition: opacity 0.25s; }
-@keyframes pt-fogo { to { background-position-y: -512px; } }
-/* As chamas soltas em pé na borda de cima (sprite 12 x 20, 8 quadros, em 2x): a base fica atrás da borda do cartão. */
-.pt-chama { position: absolute; top: calc(13px - 32px); width: 24px; height: 40px; margin-left: -12px; image-rendering: pixelated; font-style: normal;
-  background: var(--pt-chama) 0 0 / 192px 40px no-repeat; animation: pt-chama var(--pt-ritmo-chama, 1.1s) steps(8) infinite; opacity: 0.85; transition: opacity 0.25s, transform 0.25s; transform-origin: 50% 100%; }
-.pt-chama--canto { width: 12px; height: 20px; margin-left: -6px; top: calc(13px - 14px); background-size: 96px 20px; animation-name: pt-chama-p; }
-@keyframes pt-chama { to { background-position-x: -192px; } }
-@keyframes pt-chama-p { to { background-position-x: -96px; } }
-.pt-atalho--fogo:hover .pt-chama, .pt-atalho--fogo:focus-visible .pt-chama { opacity: 1; transform: scaleY(1.12); }
-.pt-atalho--tempo { --pt-luz: rgba(240, 180, 70, 0.45); --pt-ritmo: 1.7s; --pt-ritmo-chama: 1.1s; }
-.pt-atalho--saber { --pt-luz: rgba(245, 140, 60, 0.42); --pt-ritmo: 1.3s; --pt-ritmo-chama: 1s; }
-.pt-atalho--atlas { --pt-luz: rgba(90, 150, 255, 0.42); --pt-ritmo: 0.95s; --pt-ritmo-chama: 0.7s; }
-.pt-atalho--atlas .pt-fogo i { opacity: 0.26; }
-.pt-atalho--fogo:hover .pt-fogo i, .pt-atalho--fogo:focus-visible .pt-fogo i { opacity: 0.75; }
-.pt-atalho--fogo:hover .pt-fogo b, .pt-atalho--fogo:focus-visible .pt-fogo b { opacity: 1; }
-.pt-atalho--fogo:active .pt-fogo b { opacity: 0.8; }
-.pt-atalho--tempo { border-color: #ead9b0; }
-.pt-atalho--saber { border-color: #f0d2b6; }
-.pt-atalho--atlas { border-color: #c9d8f3; }
+/* O fogo vivo (FogoVivo.tsx): simulação em pixel num canvas em volta do cartão; o miolo do cartão fica sem fogo.
+   Os três atalhos com fogo vêm primeiro: as chamas sobem no espaço acima deles, sem cobrir outro cartão. */
+.pt-fogo-vivo { position: absolute; z-index: 0; pointer-events: none; image-rendering: pixelated; }
+.pt-atalho--fogo > :not(.pt-fogo-vivo) { position: relative; z-index: 1; }
+.pt-atalhos { padding-top: 4.4rem; }
+.pt-atalho--tempo { border-color: #efcf8a; box-shadow: 0 0 0 1px rgba(240, 180, 60, 0.35), 0 8px 26px rgba(240, 150, 30, 0.28); }
+.pt-atalho--saber { border-color: #f3c19a; box-shadow: 0 0 0 1px rgba(245, 130, 40, 0.35), 0 8px 26px rgba(245, 110, 30, 0.28); }
+.pt-atalho--atlas { border-color: #b9cdf6; box-shadow: 0 0 0 1px rgba(70, 130, 255, 0.35), 0 8px 26px rgba(60, 120, 255, 0.28); }
+.pt-atalho--fogo:hover, .pt-atalho--fogo:focus-visible { transform: translateY(-2px); }
 
 /* O vaga-lume mensageiro: de vez em quando corre entre os três fogos (só enfeite). */
 .pt-vagalume { position: absolute; left: 0; top: 0; width: 12px; height: 12px; pointer-events: none; z-index: 2; opacity: 0;
@@ -231,15 +214,14 @@
   .pt-sessao__acao { min-height: 44px; padding: 0 0.7rem; font-size: 0.875rem; }
   .pt-sessao--nova .pt-sessao__conta { display: none; }
   .pt-pendencia { min-height: 54px; }
-  .pt-atalhos { gap: 1.9rem 0.75rem; }
-  .pt-chama--canto { display: none; }
+  .pt-atalhos { gap: 0.85rem 0.75rem; padding-top: 2.9rem; }
+  .pt-atalho--atlas { margin-top: 2.2rem; }
+  .pt-atalho--atlas + .pt-atalho { margin-top: 2.2rem; }
   .pt-atalho { grid-template-columns: 1fr; align-content: start; justify-items: start; gap: 0.35rem; min-height: 0; padding: 0.7rem 0.75rem 0.8rem; border-radius: 16px; }
   .pt-atalho__icone { width: 48px; height: 48px; border-radius: 12px; }
   .pt-atalho__icone .pt-icone { width: 48px; height: 48px; }
   .pt-atalho strong { font-size: 1rem; }
   .pt-atalho small { font-size: 0.78rem; }
-  .pt-fogo { inset: -9px; }
-  .pt-fogo i { padding: 9px; }
   .pt-grupos { grid-template-columns: 1fr; }
   .pt-planos { grid-template-columns: auto 1fr; }
   .pt-planos__acao { grid-column: 1 / -1; justify-content: center; }
