@@ -61,11 +61,13 @@ alerta: O Campbell associa o encurtamento do braço abdutor à deformidade em ro
 
 **DORR.** A qualidade do osso antes da cirurgia ajuda a escolher o implante e a fixação. DORR propôs uma classificação radiográfica do fêmur proximal pela forma, correlacionada com a espessura das corticais e o diâmetro do canal (Fig. 3.3, p. 180 e 181):
 
+!tabela DORR
 | Tipo | Forma | Corticais e canal | Quem | Fixação |
 |---|---|---|---|---|
 | **A** | **"taça de champanhe"** (funil) | corticais grossas no AP, cortical posterior grande no perfil, canal distal estreito | homens e jovens | boa com haste cimentada ou não cimentada |
 | **B** | intermediária | **perda óssea das corticais medial e posterior**, canal mais largo | | a forma do fêmur não fica comprometida; fixação sem problema |
 | **C** | **"chaminé" (stovepipe)** | **perdeu grande parte da cortical medial e posterior**; canal muito largo, **sobretudo no perfil** | **mulheres idosas, pós-menopausa** | **ambiente menos favorável à fixação não cimentada** |
+!fim
 
 **O que é stress shielding.** O material, a geometria, o comprimento, o tamanho e a forma de fixação da haste mudam muito o modo como a carga passa ao fêmur. **A remodelação adaptativa por "blindagem" (stress shielding) compromete o suporte do implante e predispõe à fratura do fêmur ou do próprio implante.** A transferência de carga ao fêmur é desejável, porque é o estímulo fisiológico que mantém a massa óssea e evita a osteoporose por desuso (p. 181).
 
@@ -123,6 +125,7 @@ como: O TARO 2016 pediu o offset numa figura; uma prova de Ortopedia, o jump dis
 
 **Não cimentadas** (p. 188 a 192). Os dois pré-requisitos da fixação biológica são a **estabilidade mecânica imediata** e o **contato íntimo com osso viável**. Os materiais: **titânio** (biocompatível, alta resistência à fadiga, **módulo menor**, mas sensível a entalhes, e por isso com revestimento só proximal) e cobalto-cromo com microesferas sinterizadas. As superfícies de **crescimento para dentro** (microesferas, malha de fibra, tântalo) e **sobre a superfície** (jateamento, plasma de titânio, hidroxiapatita de 50 a 155 µm, sem prova de benefício nem de dano). **O resultado depende mais da geometria que do material.** A classificação de KHANUJA, pelo formato:
 
+!tabela Não cimentadas
 | Tipo | Geometria | Fixação | Observação |
 |---|---|---|---|
 | 1 | **cunha simples**: plana no AP, cônica no ML | córtex no plano ML, três pontos | só raspa; no DORR A, o engate distal arrisca fratura; vai bem em B e C |
@@ -131,6 +134,7 @@ como: O TARO 2016 pediu o offset numa figura; uma prova de Ortopedia, o jump dis
 | 4 | **revestimento extenso** | todo o comprimento | ótimos resultados longos; **stress shielding e dor na coxa**; difícil no DORR C |
 | 5 | **modulares** (manga e diáfise) | proximal e distal | displasia, osteotomia; custo e junções |
 | 6 | **anatômicas** | arco posterior | direita e esquerda; a ponta na cortical anterior dá dor na coxa |
+!fim
 
 # O acetábulo e os parafusos de WASIELEWSKI {radar=confirmado}
 
@@ -144,12 +148,14 @@ como: O TARO 2016 pediu o offset numa figura; uma prova de Ortopedia, o jump dis
 
 **WASIELEWSKI.** Para a colocação segura dos parafusos, duas linhas dividem o acetábulo em quatro quadrantes: **a primeira vai da espinha ilíaca anterossuperior pelo centro do acetábulo até a borda posterior da fóvea; a segunda é perpendicular a ela no meio do acetábulo** (Fig. 3.46, p. 210):
 
+!tabela WASIELEWSKI
 | Quadrante | O que está em risco |
 |---|---|
 | **Anterossuperior** | **artéria e veia ilíacas externas** (a veia fica junto ao osso) |
 | **Anteroinferior** | **nervo e vasos obturatórios** |
 | **Posterossuperior** | não emerge na pelve; pode chegar à incisura isquiática (**ciático e vasos glúteos superiores**), mas a broca e o parafuso podem ser palpados |
 | **Posteroinferior** | idem |
+!fim
 
 O **posterossuperior** é o quadrante mais seguro, porque o osso é espesso e o parafuso não sai dentro da pelve; os anteriores são os perigosos. Na revisão com centro de rotação alto, só as metades periféricas dos quadrantes posteriores são seguras (p. 210 e 256).
 
@@ -162,12 +168,14 @@ como: Três provas de Ortopedia perguntaram o quadrante mais seguro.
 
 **O polietileno.** Historicamente, o polietileno era esterilizado com **2,5 Mrad** de radiação gama ou de feixe de elétrons, que deixa **radicais livres**: o material fica sujeito à **oxidação** e desgasta mais. Doses maiores produzem um polietileno **altamente reticulado (crosslinked)**, de resistência ao desgaste notável. **A reticulação é feita com 5 a 10 Mrad**, e também deixa radicais livres, que precisam ser reduzidos por aquecimento (p. 197):
 
+!tabela O polietileno
 | Processo | Como | Efeito |
 |---|---|---|
 | **Refusão (remelting)** | aquecer **acima do ponto de fusão** (cerca de 135 °C) | **elimina quase todos os radicais**, mas **reduz a cristalinidade**, a tenacidade à fratura e a resistência à tração |
 | **Recozimento (annealing)** | aquecer **logo abaixo do ponto de fusão** | **preserva as propriedades mecânicas**, mas **extingue menos radicais** |
 | Vitamina E | embeber o material | captura radicais sem refusão |
 | Três doses menores | recozimento depois de cada uma | |
+!fim
 
 **Os resultados.** Com 10 anos de seguimento, **o polietileno reticulado supera o convencional**: desgaste de 0,05 mm por ano (SNIR), 0,003 (GLYN-JONES) e 0,0185 em pacientes abaixo dos 50 anos, com 97,8% de sobrevida em 15 anos (RAMES), **bem abaixo do limiar de osteólise de 0,1 mm por ano**; no registro australiano, revisão de 6,2% contra 11,7% em 16 anos. **O tamanho da cabeça pesa menos no reticulado**: sem diferença entre 32 mm e menores (ALLEPUZ); com 36 a 40 mm, sem diferença no desgaste linear, mas **o desgaste volumétrico foi maior com as cabeças maiores** (LACHIEWICZ). Liners finos na borda podem fraturar (TOWER) (p. 197 e 198). O reticulado substituiu quase totalmente o convencional (p. 179).
 
@@ -225,6 +233,7 @@ como: O TARO 2011 pediu o fator do hematoma; uma prova de Ortopedia, a via da os
 
 **A escolha do acesso** (p. 206). O Campbell lembra que praticamente todos os componentes podem ser implantados por vários acessos, desde que a exposição seja adequada, e que cada um tem vantagens e desvantagens:
 
+!tabela A escolha do acesso
 | Acesso | Como | Vantagens | Problemas |
 |---|---|---|---|
 | **CHARNLEY original** | anterolateral, supino, **osteotomia do trocânter**, luxação anterior | exposição | problemas da reinserção do trocânter; pouco usado hoje |
@@ -233,6 +242,7 @@ como: O TARO 2011 pediu o fator do hematoma; uma prova de Ortopedia, a via da os
 | HEAD | lateral, com o vasto lateral rebatido junto com os abdutores anteriores | expõe muito mais o fêmur; boa para revisão | |
 | **Anterior direto** (KEGGI) | supino, pela borda medial do tensor da fáscia lata | defendido pelo **menor risco de luxação posterior** | exposição femoral mais difícil; **lesão do nervo cutâneo femoral lateral** |
 | **Posterolateral** | decúbito lateral, luxação posterior | satisfatório na primária e na revisão | exposição anterior do acetábulo difícil; **luxação historicamente maior** que nas vias anterolateral e lateral direta |
+!fim
 
 **A osteotomia do trocânter** (p. 228) facilita a luxação, a exposição do acetábulo, o preparo do canal e a cimentação, mas aumenta o sangramento, o **hematoma**, o tempo cirúrgico, e traz a dificuldade de fixar o trocânter, a não união, a quebra do fio, a bursite, mais dor e reabilitação mais lenta; na maioria dos pacientes, a exposição é adequada sem ela.
 
@@ -262,6 +272,7 @@ como: O SBOT-SP perguntou o sinal de soltura da haste cimentada.
 
 # Revisão rápida {radar=fundamento}
 
+!tabela Revisão rápida
 | Tema | O que lembrar |
 |---|---|
 | Alavancas | peso para abdutores 2,5 para 1; artrose 4 para 1; 1 para 1 reduz 30% |
@@ -303,3 +314,4 @@ como: O SBOT-SP perguntou o sinal de soltura da haste cimentada.
 | Discrepância | 30% percebem, só 36% confirmados; contratura em adução encurta, em abdução alonga |
 | VANCOUVER intraoperatória | A metáfise; B diáfise (haste longa); C além da haste mais longa |
 | Osteólise | reoperar mesmo sem sintomas; limiar de desgaste 0,1 mm por ano |
+!fim

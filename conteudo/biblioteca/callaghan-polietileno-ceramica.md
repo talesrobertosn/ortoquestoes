@@ -46,12 +46,14 @@ Uma advertência de leitura vale para o capítulo inteiro. Os capítulos 13 e 19
 
 **O que é UHMWPE.** O capítulo 14 é preciso nos números, e a prova também:
 
+!tabela O que é UHMWPE
 | Material | Definição |
 |---|---|
 | Polietileno de alta densidade (HDPE) | densidade acima de 0,940 g/cm³ e massa molecular abaixo de 200 mil g/mol |
 | Polietileno de ultra-alto peso molecular (UHMWPE), ASTM D 4020 | massa molecular média acima de **3,1 milhões g/mol** |
 | UHMWPE pela ISO 11542 | acima de 1 milhão g/mol |
 | Resinas atuais | GUR 1020 (cerca de 3,5 milhões) e GUR 1050 (cerca de 6 milhões); as 1900 e 1900H (2 a 4 milhões) saíram de linha em 2002 |
+!fim
 
 CHARNLEY chamava o seu material de HDPE, e o capítulo diz que o nome era historicamente correto: o que hoje se chama UHMWPE é uma classificação posterior. Quem diz que o material de 1958 "já era classificado como ultra-alto peso molecular" erra a história.
 
@@ -83,6 +85,14 @@ como: Os simulados de fellowship pedem a diferença entre polimerização e reti
 
 **A descoberta incômoda: oxidação sem radicais.** O capítulo 14 traz dois achados que derrubaram a ideia de que bastava eliminar os radicais. Os **lipídios do líquido sinovial** são absorvidos pelo polietileno e podem iniciar a oxidação. E a **carga cíclica** aumenta a oxidação: no gráfico de perfis de oxidação do polietileno irradiado com 100 kGy e refundido, envelhecido a 80 °C, as amostras submetidas a carga cíclica oxidaram mais do que as sem carga, **mesmo sem radicais residuais detectáveis**, e a oxidação se concentra junto às superfícies, não no centro. É um dos argumentos para adicionar antioxidantes (vitamina E) mesmo ao material refundido.
 
+!figura 14.2 imagem=quadril/quadril-0458-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 14.2. Insertos de polietileno convencional esterilizado por gama, retirados com 8, 13, 17 e 24 anos: desgaste, delaminação e destruição progressivos.
+!fim
+
+!figura 14.5 imagem=quadril/quadril-0459-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 14.5. Perfis de oxidação do polietileno de 100 kGy refundido, envelhecido com e sem carga cíclica.
+!fim
+
 !questoes treino=quadril-0444,quadril-0458,quadril-0461,quadril-0459
 conceito: Radiação cria radicais; na fase amorfa eles se recombinam e reticulam, na cristalina ficam presos por anos. Oxigênio mais radical gera radical peroxila, cascata, cisão de cadeia; a oxidação se mede por carbonila. Gama ao ar: banda branca cerca de 1 mm abaixo da superfície, trincas, delaminação. Gás inerte (1995) protege na prateleira, não no corpo. Óxido de etileno e plasma não deixam radicais e não reticulam. Carga cíclica aumenta a oxidação mesmo no refundido sem radicais detectáveis.
 como: Os simulados mostram a figura dos insertos de 8 a 24 anos, o gráfico de oxidação com e sem carga cíclica e perguntam sobre cada método de esterilização e o destino dos radicais em cada fase.
@@ -100,6 +110,10 @@ Essa é a leitura do gráfico de dose contra tenacidade ao impacto e taxa de des
 
 **Gama ou feixe de elétrons.** As duas fontes reticulam. A **gama** (cobalto-60) penetra sem limite prático, e a taxa de dose depende da atividade da fonte. O **feixe de elétrons** usa partículas aceleradas: com 10 MeV penetra cerca de 4 a 4,5 cm, a taxa de dose é cerca de cem vezes maior, e o aquecimento adiabático aquece o material durante a irradiação (irradiar a quente aumenta as ligações em H).
 
+!figura 12.6 imagem=quadril/quadril-0440-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 12.6. Dose de radiação contra tenacidade ao impacto e taxa de desgaste do UHMWPE.
+!fim
+
 !questoes treino=quadril-0440
 conceito: A reticulação reduz o desgaste porque limita a deformação plástica e a orientação das cadeias que o movimento multidirecional rompe. A densidade de ligações satura perto de 100 kGy: o desgaste cai muito no início, o ganho é pequeno depois, e a tenacidade, a ductilidade, a tração e a fadiga caem com a dose (McKELLOP e HUOT). Por isso o refundido comercial raramente passa de 100 kGy.
 como: O simulado mostra o gráfico de dose contra tenacidade ao impacto e desgaste e pede a leitura correta da curva.
@@ -109,6 +123,7 @@ como: O simulado mostra o gráfico de dose contra tenacidade ao impacto e desgas
 
 Reticular resolve o desgaste, mas deixa radicais livres, e radicais significam oxidação. Por isso todo polietileno altamente reticulado passa por um **tratamento térmico** depois da irradiação, e a prova adora a diferença entre as duas maneiras de fazê-lo (cap. 12, p. 177; cap. 14, p. 205 a 207).
 
+!tabela tratamento térmico
 | | **Refusão (remelting)** | **Recozimento (annealing)** |
 |---|---|---|
 | Temperatura | **acima** do ponto de fusão (cerca de 140 °C de pico) | **abaixo** do ponto de fusão |
@@ -117,6 +132,7 @@ Reticular resolve o desgaste, mas deixa radicais livres, e radicais significam o
 | Oxidação | mínima | pode oxidar **in vivo** a longo prazo |
 | Cristalinidade | **cai**: as ligações cruzadas atrapalham a recristalização no resfriamento | **preservada** |
 | Mecânica | **perde** resistência e fadiga (o capítulo fala em cerca de 30% a menos na resistência à fadiga) | **preserva** as propriedades mecânicas |
+!fim
 
 A frase de memorização: **refundir troca mecânica por estabilidade química; recozer troca estabilidade química por mecânica**. O capítulo 12 acrescenta que, até a data do livro, não havia relatos publicados de delaminação da superfície articular de materiais recozidos no quadril, embora haja a preocupação com oxidação em situações de impacto do colo ou subluxação.
 
@@ -135,12 +151,14 @@ como: O simulado oferece as quatro combinações de refusão e recozimento com r
 
 **Dois caminhos, com consequências opostas para a reticulação.**
 
+!tabela Dois caminhos, com consequências opostas para a reticulação
 | | **Difundida depois da irradiação** | **Misturada à resina antes da irradiação** |
 |---|---|---|
 | Sequência | irradia (85 a 100 kGy), depois difunde a vitamina E em duas etapas: **dopagem** a até 120 °C e **homogeneização** abaixo da fusão; usina; esteriliza por gama | mistura a vitamina E ao pó, consolida e irradia |
 | Reticulação | **não é prejudicada**: a vitamina E entra depois que as ligações já se formaram | **reduzida**: a vitamina E captura radicais durante a irradiação, que deixariam de formar ligações |
 | Consequência | cristalinidade mantida, sem refusão | limite de cerca de 0,3% em peso; acima disso nem 200 kGy iguala o 100 kGy refundido; exige dose maior |
 | Exemplo | **E-Poly** (Biomet), no quadril em **2007** | resinas com vitamina E (por exemplo, 0,1% com 91 kGy no acetábulo) |
+!fim
 
 O material difundido teve desgaste cerca de 90% menor que o convencional em simulador, **independente do tamanho da cabeça**, e resistência à fadiga maior que a do refundido (0,70 a 0,77 contra 0,55 a 0,69 MPa·m½). A vitamina E é lipofílica, e não hidrofílica: é justamente isso que permite difundi-la pela espessura do polímero.
 
@@ -178,11 +196,13 @@ como: Os simulados pedem o local e a causa da fratura por fadiga, o efeito da ca
 
 **A classificação pela resposta tecidual.** O capítulo 19 classifica as cerâmicas ortopédicas pelo que acontece quando elas são implantadas no osso:
 
+!tabela A classificação pela resposta tecidual
 | | **Inertes** | **Bioativas** |
 |---|---|---|
 | Resposta do osso | reação fibrosa mínima | **ligação biológica** com o osso |
 | Uso | **superfícies de deslizamento** (cabeças e insertos), pela resistência ao desgaste e pela tribologia | **revestimento** para fixação (hidroxiapatita) ou **substituto de enxerto** |
 | Exemplos | alumina, zircônia, compósito de matriz de alumina | hidroxiapatita, fosfato tricálcico, vidros bioativos |
+!fim
 
 As bioativas são **osteocondutoras**: funcionam como arcabouço e só formam osso **dentro de um ambiente ósseo**. Material **osteoindutor** é outra coisa: induz osso até fora do osso. A hidroxiapatita é osteocondutora, não osteoindutora. O capítulo 19 cita ainda os números da hidroxiapatita (Ca10(PO4)6(OH)2, relação cálcio e fósforo de 1,67, aplicada por plasma spray; revisão femoral de 0,3% em 8,1 anos numa série multicêntrica) e do fosfato tricálcico β (relação 1,5, reabsorvível por dissolução e osteoclastos).
 
@@ -231,12 +251,14 @@ O ponto fraco é a **degradação a baixa temperatura**: no ambiente úmido do c
 
 **O compósito de matriz de alumina (BIOLOX delta).** Introduzido em **2002** pela CeramTec, combina a dureza da alumina com a tenacidade da zircônia. A composição, em volume:
 
+!tabela O compósito de matriz de alumina (BIOLOX delta)
 | Componente | Proporção | Papel |
 |---|---|---|
 | Alumina | **cerca de 80 a 82%** (o capítulo 13 fala em 82% e mostra cerca de 80%; o capítulo 19, 82%) | matriz: dureza, rigidez, estabilidade |
 | Zircônia tetragonal | **cerca de 17%**, grãos de cerca de 0,27 µm | tenacidade por transformação |
 | Aluminato de estrôncio (o capítulo 19 diz "óxido de estrôncio") | **cerca de 3%**, plaquetas alongadas | desviam e param a trinca |
 | Óxido de cromo | traço, em solução sólida | compensa a perda de dureza e dá a **cor rosa** |
+!fim
 
 **Os três mecanismos de reforço** (cap. 13, p. 189; cap. 19, p. 280):
 
@@ -249,6 +271,10 @@ Ao contrário da zircônia pura, o compósito é **hidrotermicamente estável**:
 **A ZTA.** O capítulo 12 chama de ZTA (zirconia-toughened alumina) a mesma ideia: alumina reforçada por partículas de zircônia, com a matriz de alumina dando a dureza e a zircônia dando a resistência à trinca, e, ao contrário da zircônia pura, **microestruturalmente estável**. Com 10% de zircônia, o KIc sobe para 5,9 com dureza igual à da alumina; uma ZTA comercial com cerca de 75% de alumina e 25% de zircônia declara 1.150 MPa e KIc de 8,5.
 
 **O que mais reduziu a fratura.** Os dois capítulos concordam que o grande ganho de confiabilidade das cerâmicas veio da **melhora dos processos industriais** (pureza, densidade, grão pequeno, sala limpa, prensagem isostática a quente, marcação a laser, proof test) e do cone bem desenhado, e não de trocar a alumina por zircônia pura. O compósito acrescentou tenacidade, mas sobre uma alumina já muito melhor fabricada.
+
+!figura 13.4 imagem=quadril/quadril-0449-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 13.4. Reforço por transformação no compósito: alumina em cinza, zircônia tetragonal em amarelo, transformada em vermelho.
+!fim
 
 !questoes treino=quadril-0453,quadril-0449,quadril-0446,quadril-0571,quadril-0312
 conceito: Zircônia pura é instável (três fases) e precisa de óxidos (ítrio). Tetragonal para monoclínica no corpo: menos resistência, mais fratura, mais rugosidade; recall de 2001 por falha no processamento térmico de lotes. BIOLOX delta (2002): cerca de 80 a 82% de alumina, 17% de zircônia tetragonal, 3% de aluminato de estrôncio e traço de cromo (rosa). A zircônia vira monoclínica na ponta da trinca com expansão de cerca de 4% e comprime a trinca; as plaquetas alongadas desviam a trinca; o cromo devolve a dureza. Compósito e ZTA são microestrutural e hidrotermicamente estáveis. A redução da fratura veio sobretudo da fabricação.
@@ -277,6 +303,10 @@ Qualquer material interposto (sangue, gordura, osso, partículas, até água) ou
 
 **O que 12/14 não diz.** A designação "12/14" indica só **dois diâmetros** do cone em dois pontos. **Não define o ângulo** e sua tolerância, a **rugosidade**, o **comprimento** e outros detalhes críticos do desenho. Cones 12/14 de fabricantes diferentes **não são automaticamente compatíveis**. O ângulo importa: **ângulos menores aumentam as tensões na cabeça cerâmica** e podem levar à fratura; o capítulo 13 mostra a queda da capacidade de carga quando o ângulo diminui a partir do valor ótimo de 5,73 graus (figura 13.10). Para a revisão sobre um cone já usado, existe a cabeça de compósito com **manga de titânio** (BIOLOX Option).
 
+!figura 13.5 imagem=quadril/quadril-0450-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 13.5. Flexão em quatro pontos (material) e ruptura da cabeça (componente).
+!fim
+
 !questoes treino=quadril-0454,quadril-0450,quadril-0570
 conceito: Flexão em quatro pontos avalia o material; ruptura da cabeça avalia o componente, mínimo de 46 kN, várias vezes a carga in vivo. Proof test em cada componente desde 1995. Cone: compatível, sem dano, limpo e seco, impactado de forma suave e axial; contaminação ou dano reduzem a carga de ruptura. 12/14 não define ângulo, tolerância, rugosidade nem comprimento; ângulo menor aumenta a tensão na cabeça. Na revisão sobre cone usado, cabeça com manga de titânio.
 como: Os simulados pedem a leitura da figura dos dois ensaios, a conduta na montagem da cabeça e o que a designação 12/14 garante ou não.
@@ -286,6 +316,7 @@ como: Os simulados pedem a leitura da figura dos dois ensaios, a conduta na mont
 
 **O ganho.** A cabeça de alumina contra polietileno convencional produz **de duas a cinco vezes menos detritos** que o par metal contra polietileno, e cabeças de alumina retiradas depois de mais de 20 anos não mudaram de diâmetro, esfericidade ou rugosidade. O afrouxamento caiu mais de duas vezes (cap. 13, p. 193). As séries citadas pelo capítulo 13:
 
+!tabela O ganho
 | Estudo | Achado |
 |---|---|
 | ZICHNER | pacientes pareados, cabeça de alumina contra cabeça metálica sobre polietileno: em 10 anos, a revisão com cerâmica foi **um quinto** da revisão com metal (o capítulo 19 diz 30% menor; nos dois a cerâmica revisa **menos**) |
@@ -293,6 +324,7 @@ como: Os simulados pedem a leitura da figura dos dois ensaios, a conduta na mont
 | DESCAMP | metal 0,102 mm/ano; cerâmica reduziu mais de 44% |
 | IHLE | 46,2% menos desgaste com alumina em 20 anos |
 | URBAN | cabeça de alumina de 32 mm e polietileno cimentado: 0,034 mm/ano; sobrevida de 95% em 10 anos, 89% em 15 e 79% em 20 |
+!fim
 
 O capítulo 19 é mais cauteloso: depois de 3 a 5 milhões de ciclos o atrito sobe, e com concentração fisiológica de proteína no lubrificante a redução real do desgaste do polietileno é da ordem de **duas vezes**. Os ensaios de zircônia contra polietileno são enganosos: o aquecimento por atrito precipita proteínas e forma uma camada protetora que não existe in vivo.
 
@@ -307,6 +339,7 @@ como: O simulado pede a direção e a magnitude do ganho da cabeça cerâmica e 
 
 **Por que o par funciona.** A alumina contra alumina é um par de atrito excelente porque junta **baixa rugosidade** (Ra de 0,02 µm, pelo grão pequeno), **alta dureza** (resistência ao risco), **alta molhabilidade** e **lubrificação por película de fluido** (cap. 19, p. 281). Os números in vitro que a prova usa:
 
+!tabela Por que o par funciona
 | Medida | Valor |
 |---|---|
 | Coeficiente de atrito | **0,09** na alumina contra alumina, contra **0,21** no metal contra polietileno |
@@ -316,6 +349,7 @@ como: O simulado pede a direção e a magnitude do ganho da cabeça cerâmica e 
 | Desvio de esfericidade ótimo | ±1 µm |
 | **Folga ótima** entre cabeça e cúpula | **20 a 50 µm** |
 | Tamanho da cabeça | **ao contrário do metal contra polietileno, o par não favorece cabeças pequenas**; cabeças de 32 a 36 mm também geram pouco detrito |
+!fim
 
 **A faixa de desgaste e a microsseparação.** Os primeiros simuladores não reproduziam o desgaste das peças retiradas. O grupo de FISHER, em Leeds, introduziu a **microsseparação**: uma mola lateral, com carga baixa na fase de balanço, separa a cabeça da cúpula; no retorno, a cabeça bate na **borda** do inserto. Assim apareceram as **faixas de desgaste (stripe wear)** na cabeça, com desgaste correspondente na borda da cúpula, e um desgaste de 1,24 mm³ por milhão de ciclos, muito maior que sem microsseparação. As partículas tiveram distribuição bimodal: nanométricas (1 a 35 nm), do polimento normal, e micrométricas (0,05 a 10 µm), da **fratura transgranular** na faixa (cap. 19, p. 281). O capítulo 12 resume a hipótese: **microsseparação dos centros na fase de balanço e carga na borda no contato do calcanhar**. A figura do capítulo 12 mostra a faixa marcada em azul (lápis azul usado na análise) e, ao microscópio eletrônico, a superfície da faixa com **grãos inteiros arrancados**. Não é oxidação subsuperficial (isso é do polietileno), não é transformação de fase da alumina (a alumina não tem a transformação da zircônia) e não é corrosão do cone. Uma ressalva honesta do capítulo 19: KOMISTEK não viu microsseparação in vivo na fluoroscopia de pacientes com alumina contra alumina, talvez por baixa sensibilidade do método. O compósito, mesmo com microsseparação e abdução excessiva, teve desgaste muito pequeno.
 
@@ -329,6 +363,10 @@ como: O simulado pede a direção e a magnitude do ganho da cabeça cerâmica e 
 - **SEDEL**: a **prostaglandina E2** nos tecidos foi **menor** no alumina contra alumina (69 contra 202 fmol/mg no metal contra polietileno).
 - CATELAS e **PETIT**: a liberação de **TNF-α** foi **8 a 10 vezes maior com o polietileno** do que com a alumina; a alumina induz **apoptose** dos macrófagos mais cedo e mais intensamente, o que talvez explique a menor liberação de citocinas e a raridade da osteólise (cap. 19, p. 283).
 - A osteólise com alumina contra alumina é rara e se concentrou no MITTELMEIER (alumina de grão grande, baixa densidade e porosa, com soquete ruim e falha de 27% em 26 meses).
+
+!figura 12.8 imagem=quadril/quadril-0441-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 12.8. Faixa de desgaste marcada em azul na cabeça cerâmica e a microscopia com grãos arrancados.
+!fim
 
 !questoes treino=quadril-0441,quadril-0573,quadril-0574
 conceito: Alumina contra alumina: atrito 0,09 (contra 0,21 do metal e polietileno); desgaste cai do amaciamento ao regime estável; folga ótima 20 a 50 µm; não favorece cabeça pequena. Faixa de desgaste: carga na borda por microsseparação no balanço e retorno no contato do calcanhar (FISHER); grãos arrancados. Desgaste mínimo ou catastrófico (PRUDHOMMEAUX). Detritos 2 a 22 vezes menos, sem células gigantes; LEROUGE: 76% dos detritos eram zircônia do cimento, 12% articulares; PGE2 menor; TNF-α 8 a 10 vezes maior com polietileno.
@@ -360,11 +398,13 @@ como: O simulado pede o número de fraturas e oferece alternativas com 3% e com 
 
 **É multifatorial.** Os fatores reunidos pelos capítulos 13 e 19:
 
+!tabela É multifatorial
 | Grupo | Fatores |
 |---|---|
 | Paciente | **altos, pesados, jovens e muito ativos**; frouxidão muscular (altos e pesados são mais sensíveis ao posicionamento) |
 | Cirurgia | **alta abdução, anteversão excessiva, centro de rotação lateralizado**; impacto ósseo ou de partes moles |
 | Implante | geometria da haste e do colo, liga da haste (RESTREPO), arco de movimento sem impacto, número de interfaces, deformação da concha, mecanismo de travamento |
+!fim
 
 O capítulo 12 registra que STANAT e RESTREPO concluíram que o mau posicionamento não é **a** causa, o que é coerente com a ideia de que nenhum fator isolado explica o ruído.
 
@@ -388,6 +428,10 @@ como: Os simulados pedem a afirmativa falsa (exclusivo do CoC) e o caso do homem
 **O ponto fraco: a luxação.** A camada dura tem só alguns micrômetros. Quando a cabeça luxa e entra em contato com a borda metálica da concha, ou quando a redução é feita contra o metal, a camada pode ser destruída e expor o zircônio metálico, mole. O capítulo 19 cita EVANGELISTA (dano após **redução aberta** de luxação anterior irredutível), KOP (três cabeças danificadas contra a concha metálica após **redução fechada**) e McCALDEN (dano após artroplastia de rotina por via lateral); a figura 19.5 mostra uma cabeça riscada depois de múltiplas luxações. O capítulo 12 conta um caso em que um liner trincado deixou a cabeça tocar a concha de titânio, a camada se destruiu, e os detritos de zircônio e nióbio causaram inflamação, sem necrose.
 
 **Para revisar os números da cerâmica nesta comparação.** A dureza da cerâmica é cerca de cinco vezes a do cobalto-cromo; a cerâmica **não** tem deformação plástica importante antes de fraturar (é elástica linear); o compósito de alumina reforçado por zircônia é microestruturalmente estável; o rangido ajudou a reduzir o uso da cerâmica contra cerâmica; o zircônio oxidado perde a camada dura com luxação e contato metálico.
+
+!figura 19.5 imagem=quadril/quadril-0572-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 19.5. Cabeça de zircônio oxidado riscada após luxações múltiplas.
+!fim
 
 !questoes treino=quadril-0572,quadril-0448
 conceito: Oxinium: liga de 97,5% de zircônio e 2,5% de nióbio, oxidada ao ar; camada de cerca de 5 µm de zircônia monoclínica em continuum com o metal, sem interface; resistente ao risco; núcleo metálico deforma e não quebra. Contra reticulado com cabeças lisas, sem diferença em relação ao cobalto-cromo. A luxação e o contato com a concha metálica (redução fechada ou aberta) destroem a camada. A cerâmica é elástica linear, sem deformação plástica antes de fraturar.

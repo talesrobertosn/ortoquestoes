@@ -53,12 +53,14 @@ O roteiro:
 
 **Os nomes e as datas** (cap. 1 do Callaghan):
 
+!tabela Os nomes e as datas
 | Cirurgião | O que fez |
 |---|---|
 | **CHARLES WHITE** | em 1769, na Royal Society, descreveu um menino de **14 anos** com abscesso no **ombro**, tratado com drenagem e ressecção da parte necrótica do **úmero proximal**, com bom resultado. **Nunca** fez ressecção do quadril em paciente vivo; só a testou em **cadáver** e se convenceu de que era factível |
 | **JAMES SYME** | **defensor ardoroso** da ressecção articular, mas achava que ela **não era factível no quadril** |
 | **ANTHONY WHITE** | fez a **primeira ressecção do quadril em 1822**, no Westminster Hospital, em Londres, num menino de **9 anos** com abscesso crônico e luxação da cabeça; também é creditado como o **primeiro a descrever a flegmasia alba dolens**, a trombose venosa profunda de um membro |
 | **LEWIS SAYRE** | nos Estados Unidos, o grande divulgador da ressecção nas infecções crônicas; a **primeira** foi em **1854**, numa **menina de 9 anos** com "morbus coxarius" (provável tuberculose); relatou 59 ressecções com 39 sobreviventes; em **1876**, no Congresso Médico Internacional de Filadélfia, **demonstrou** a operação diante de cirurgiões, entre eles LISTER |
+!fim
 
 A ressecção (que hoje lembra a operação de GIRDLESTONE) deixa um membro curto e instável, mas sem dor de infecção. Hoje é reservada à infecção ou como último recurso numa artroplastia falha.
 
@@ -108,6 +110,7 @@ como: O simulado pede a condição que não está entre as de BARTON (a rigidez 
 
 **A interposição.** Antes das próteses confiáveis, os cirurgiões interpunham materiais entre as superfícies ressecadas para manter o movimento e impedir que o osso se refizesse. A **tabela 1.1** do Callaghan dá a cronologia:
 
+!tabela A interposição
 | Cirurgião | Ano | Material |
 |---|---|---|
 | **J. M. CARNOCHAN** | **1840** | **bloco de madeira** (na mandíbula: o primeiro registro de interposição) |
@@ -123,6 +126,7 @@ como: O simulado pede a condição que não está entre as de BARTON (a rigidez 
 | **LOEWE** | **1913** | **pele** |
 | BAER | 1919 (o texto cita a série de 1917) | submucosa cromada de bexiga de porco (a "membrana de BAER") |
 | PUTTI | 1920 | fáscia lata |
+!fim
 
 As armadilhas misturam os pares: a folha de ouro é de R. JONES, a platina é de PÉAN, a bexiga de porco é de FOEDRE e de BAER, e não de HELFERICH (músculo).
 
@@ -193,6 +197,7 @@ como: O simulado pergunta a evolução da fixação, com alternativas sobre o ci
 
 **As forças por atividade** (tabela 10.1, BERGMANN e outros):
 
+!tabela As forças por atividade
 | Atividade | Pico de força (% do peso) | Momento torsional no implante |
 |---|---|---|
 | Marcha lenta, livre, rápida | 200 a 480 (maior com a velocidade) | comparável entre elas |
@@ -203,12 +208,17 @@ como: O simulado pergunta a evolução da fixação, com alternativas sobre o ci
 | **Subir escada** | **251 a 552** | **o maior (cerca de 23% acima da marcha)** |
 | Descer escada | 260 a 509 | |
 | **Tropeço** | **720 a 870** (o texto fala em até cerca de 900) | |
+!fim
 
 **Os detalhes da marcha.** A força de contato é sobretudo superior e tem **dois picos**: o primeiro no desprendimento do dedo contralateral (cerca de 240% do peso), o segundo pouco antes do contato do calcanhar contralateral (cerca de 237%). O glúteo médio é o maior contribuinte; glúteos e isquiotibiais pesam mais no primeiro pico, e o glúteo médio no segundo.
 
 **A escada e a fixação.** No plano frontal, a direção da força muda pouco entre as atividades. No **plano transverso**, ela varia muito: na **escada**, a força fica **10 a 16 graus mais anterior** que na marcha, e isso coincide com um **momento torsional 23% maior** em torno do eixo longo do implante. A escada pode, portanto, comprometer a fixação, sobretudo da haste não cimentada no início. E as forças na escada foram **maiores aos 8 meses** do que **1 a 3 anos** depois da cirurgia, o que reflete a melhora muscular com o tempo (e não o contrário).
 
 **O tropeço.** Nenhuma atividade diária chega perto do **tropeço inesperado**, que pode passar de 700% a 900% do peso. Orientar o paciente a evitar situações de risco no início ajuda a fixação.
+
+!figura 10.1 imagem=quadril/quadril-0421-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 10.1. Força de contato no quadril durante a marcha e os seus componentes.
+!fim
 
 !questoes treino=quadril-0424
 conceito: Escada: força 10 a 16 graus mais anterior no plano transverso e momento torsional 23% maior que na marcha; pode comprometer a fixação. As forças na escada diminuem de 8 meses para 1 a 3 anos. Marcha com dois picos (cerca de 240% do peso); escada acima de 500%; tropeço de 720% a 870% ou mais.
@@ -219,6 +229,7 @@ como: O simulado pergunta o que a escada faz com a força e a torção no implan
 
 **As pressões no acetábulo** (cap. 10 do Callaghan, p. 146 e 147, tabela 10.2). Na **marcha**, as pressões máximas vão de **3,6 a 6,8 MPa**, nas faces **superior e posterior** do acetábulo, com pico entre o contato do calcanhar e o médio apoio, ligadas à força vertical do solo e à contração muscular (a ativação dos abdutores sobe junto com a pressão).
 
+!tabela As pressões no acetábulo
 | Atividade | Pressão (MPa) |
 |---|---|
 | Marcha | 3,6 a 6,8 |
@@ -230,6 +241,7 @@ como: O simulado pergunta o que a escada faz com a força e a torção no implan
 | Isotônico de flexão | 4,8 |
 | **Elevação da perna estendida** | **1,9** (a menor) |
 | Isocinéticos | 3,5 a 3,9 |
+!fim
 
 **As lições para a reabilitação.**
 
@@ -301,6 +313,10 @@ como: O simulado pergunta a evolução da marcha e da força depois da artroplas
 
 **A razão de aspecto do trajeto** (figura 11.12). A razão de aspecto é o comprimento dividido pela largura do trajeto que a cabeça descreve sobre o polietileno durante a marcha. Um trajeto **longo e estreito** (razão de aspecto **grande**) é quase linear; um trajeto **largo e circular** (razão de aspecto **pequena**) cruza mais as direções. TURELL e DAVEY, em peças retiradas, viram **mais desgaste linear** nos pacientes com trajetos de **menor razão de aspecto** (mais circulares); trajetos mais uniformes e lineares deixam o polietileno mais resistente, e trajetos largos se associaram a mais cristalinidade e a mais falhas em testes de tensão. Isso reforça a importância de componentes bem posicionados e partes moles equilibradas.
 
+!figura 11.12 imagem=quadril/quadril-0433-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 11.12. Trajetos da cabeça sobre o polietileno e a relação com o desgaste linear.
+!fim
+
 !questoes treino=quadril-0433
 conceito: O movimento unidirecional gera de 2 a 100 vezes menos partículas que o multidirecional. Trajetos mais circulares, de menor razão de aspecto, se associam a maior desgaste linear (TURELL, DAVEY); trajetos lineares e uniformes desgastam menos.
 como: O simulado mostra os trajetos de razão de aspecto grande e pequena e o gráfico de desgaste.
@@ -317,6 +333,14 @@ como: O simulado mostra os trajetos de razão de aspecto grande e pequena e o gr
 **KUNG e RIES** (figura 11.13). Em 230 artroplastias, compararam cabeças de **28 mm** e de **36 mm** e **abdutores íntegros** ou **ausentes**. A cabeça maior teve menos luxação, e a **combinação de cabeça de 36 mm com abdutores íntegros não teve nenhuma luxação**. O estudo é retrospectivo e teve taxas maiores que as dos registros, mas mostra que o tamanho da cabeça e as partes moles **atuam juntos**: nem a cabeça grande dispensa os abdutores, nem os abdutores são irrelevantes com a cabeça pequena.
 
 **A orientação da cúpula.** D'LIMA mostrou que, com **45 graus** de inclinação, a flexão aumenta muito e a faixa aceitável de anteversão fica larga; com **55 graus**, a cúpula fica mais estável, mas à custa do arco, com faixa estreita de anteversão. A recomendação geral é de **45 a 55 graus** de abdução. A **anteversão** está diretamente ligada ao arco estável em flexão e extensão: a cúpula **mais antevertida** abre espaço para a **flexão** antes do impacto, mas o colo bate mais cedo na borda em **extensão**, onde fica o risco anterior; a cúpula **retrovertida** faz o contrário, com o colo batendo cedo na flexão e risco de luxação posterior (figura do arco de movimento). HIGA mostrou que, a partir de 0 grau, o arco aumenta com a anteversão, o ganho diminui além de 10 a 20 graus, e acima de 20 graus o risco de luxação em flexão aumenta. A versão importa, mas o capítulo lembra que a estabilidade depende muito das partes moles.
+
+!figura 11.13 imagem=quadril/quadril-0431-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 11.13. Luxação conforme o diâmetro da cabeça e os abdutores (KUNG e RIES).
+!fim
+
+!figura 11.11 imagem=quadril/quadril-0432-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 11.11. Arco de movimento com a cúpula retrovertida e antevertida.
+!fim
 
 !questoes treino=quadril-0438,quadril-0431,quadril-0432
 conceito: Luxação: segunda complicação mais comum, depois da soltura asséptica, com 0,7% a 8% nos registros. Posições de risco: flexão com rotação interna e extensão com rotação externa. TANINO: os instáveis encostam o colo na borda mais cedo em extensão com rotação externa. KUNG e RIES: cabeça de 36 mm com abdutores íntegros não luxou; cabeça e partes moles atuam juntas. Mais anteversão amplia a flexão à custa da extensão; inclinação de 45 a 55 graus.

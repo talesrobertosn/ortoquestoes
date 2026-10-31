@@ -40,11 +40,13 @@ O roteiro:
 
 **Três palavras que a prova separa** (cap. 18, p. 268 e 269):
 
+!tabela Três palavras que a prova separa
 | Termo | Definição |
 |---|---|
 | **Precisão** | concordância entre medidas repetidas, feitas em condições semelhantes (o quanto as medidas se agrupam) |
 | **Viés** | diferença **consistente e sistemática** entre as medidas e o valor de referência aceito (o quanto o grupo está deslocado) |
 | **Acurácia** | resulta das duas: um instrumento acurado é preciso e sem viés |
+!fim
 
 **A figura dos quatro instrumentos** (figura 18.1). O capítulo compara quatro instrumentos com o valor verdadeiro:
 
@@ -62,6 +64,10 @@ A lógica é intuitiva: um termômetro que marca sempre 2 graus a mais é muito 
 - A **repetibilidade** pode ser dada como precisão intra e interobservador ou como o **coeficiente de repetibilidade de BLAND e ALTMAN**, definido como **duas vezes o desvio padrão da diferença** entre duas medidas feitas nas mesmas condições (não a metade).
 - A **análise de componentes de variância** separa quanto da variação vem do instrumento, do observador e do paciente. **Num bom sistema, a variação do instrumento e do observador é menor que a variação clínica** do desgaste entre os pacientes; é trabalhosa, porque exige várias medidas e vários observadores.
 
+!figura 18.1 imagem=quadril/quadril-0559-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 18.1. Precisão e acurácia de quatro instrumentos de medição.
+!fim
+
 !questoes treino=quadril-0559,quadril-0560
 conceito: Precisão = agrupamento das medidas; viés = erro sistemático em relação ao valor verdadeiro; acurácia depende dos dois. Instrumento preciso com viés (C) pode ser útil depois de calibrado; impreciso sem viés (B) serve com amostra e seguimento grandes; impreciso e enviesado (A) é inútil. A ASTM recomenda relatar viés e precisão separados, porque a acurácia não tem método padronizado. Coeficiente de repetibilidade de BLAND e ALTMAN = duas vezes o desvio padrão da diferença. Num bom sistema, a variação do instrumento e do observador é menor que a clínica.
 como: Os simulados mostram a figura dos quatro instrumentos e perguntam como relatar o desempenho de um método de medição.
@@ -73,6 +79,7 @@ como: Os simulados mostram a figura dos quatro instrumentos e perguntam como rel
 
 **Os métodos de cálculo** (cap. 18, p. 270 a 273):
 
+!tabela Os métodos de cálculo
 | Método | Como funciona | Limite |
 |---|---|---|
 | **Unirradiográfico** (uma radiografia) | mede da cabeça à borda superior e à inferior da cúpula e subtrai | **só detecta bem o desgaste dirigido à borda superior** do acetábulo |
@@ -81,6 +88,7 @@ como: Os simulados mostram a figura dos quatro instrumentos e perguntam como rel
 | **Gabarito (templating)** | sobrepõe o molde ampliado do fabricante, que mostra a espessura da concha metálica, e mede o polietileno restante | é a **mais fácil**; ajuda a decidir o **momento de trocar o inserto** |
 | **RSA** (radiostereometria) | duas radiografias a 40 graus com o paciente sobre uma **gaiola de calibração**, seguindo **marcadores de tântalo** fixados na prótese e implantados no osso **na cirurgia**; calcula o desgaste em 3D pelo centro da cabeça | **alta precisão e acurácia**; exige preparar o estudo desde a cirurgia |
 | **TC de alta resolução** | 3D sem perder tanto a precisão | desvio padrão de 0,101 mm, inferior à RSA; mais radiação |
+!fim
 
 **2D e 3D.** A medida 2D usa só a radiografia anteroposterior e não vê o desgaste fora desse plano. A 3D precisa de AP e perfil (ou TC); detecta 5% a 10% mais desgaste, mas o perfil é difícil de analisar e a precisão cai. A **anteversão acetabular maior** foi a única variável ligada a mais desgaste fora do plano, mas com correlação fraca demais para prever quem precisa de 3D.
 
@@ -141,6 +149,18 @@ As fórmulas antigas, que **supunham beta de 90 graus** para todos, são menos a
 - Prospectivamente, a acomodação terminou quando as taxas por intervalo se estabilizam; na tabela 18.2, não houve diferença significativa depois do terceiro ano.
 - É provável que cada concha e cada mecanismo de trava tenham a sua acomodação. O capítulo prefere relatar só as taxas verdadeiras.
 
+!figura 18.6 imagem=quadril/quadril-0563-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 18.6. Mesmo desgaste linear em duas direções: volumes diferentes.
+!fim
+
+!figura 18.12 imagem=quadril/quadril-0564-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 18.12. Distribuição das taxas de desgaste em 85 pacientes.
+!fim
+
+!figura 18.13 imagem=quadril/quadril-0565-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 18.13. Penetração da cabeça ao longo do tempo: acomodação e taxa verdadeira.
+!fim
+
 !questoes treino=quadril-0563,quadril-0564,quadril-0565
 conceito: Mesmo desgaste linear: trajeto perpendicular à face (beta 90) dá volume de cilindro, o dobro do trajeto para a borda (beta 0); vários trajetos fazem o cálculo subestimar. Taxas de desgaste não são gaussianas: mediana menor que a média, testes não paramétricos (Mann-Whitney). Acomodação (amaciamento, assentamento e fluência) nos primeiros cerca de 18 meses; magnitude = intercepto da reta de regime estável; taxa verdadeira = inclinação depois; incluir a acomodação superestima a taxa.
 como: Os simulados mostram a figura dos dois vetores, o histograma dos 85 pacientes e o gráfico de penetração de oito anos.
@@ -161,11 +181,13 @@ como: Os simulados mostram a figura dos dois vetores, o histograma dos 85 pacien
 
 **As partículas** (cap. 21, p. 303):
 
+!tabela As partículas
 | Material | Tamanho e número |
 |---|---|
 | **Polietileno convencional** | esferoides de 0,1 a 2,0 µm, **média de 0,5 µm**; algumas placas de até 250 µm; **90% menores que 1 µm** (difíceis de ver ao microscópio óptico); há partículas nanométricas |
 | **Polietileno altamente reticulado** (simulador) | esferoides ou oblongas, **média de 0,2 µm**, **menores** que as do convencional |
 | **Metal contra metal** | **uma ordem de grandeza menores** que as de polietileno: 30 a 100 nm, **média abaixo de 50 nm**; muito mais numerosas: 6,7 × 10^12 a 2,5 × 10^14 por ano, cerca de **13.500 vezes** mais que um metal contra polietileno; área de superfície enorme |
+!fim
 
 O metal contra metal tem **desgaste muito baixo** (1,9 a 6,2 µm por ano); o problema não é o volume, e sim o tamanho minúsculo das partículas, a liberação de íons e os produtos de corrosão. As partículas metálicas aparecem como detritos, complexos metal e proteína, íons livres, sais ou óxidos e hemossiderina.
 
@@ -192,14 +214,20 @@ como: Os simulados pedem os números do desgaste ligados à osteólise e as cara
 
 **Os osteoclastos.** Vêm da linhagem monócito e macrófago e se formam pela fusão de precursores. O sinal **essencial** é a ligação do **RANKL** ao **RANK**:
 
+!tabela Os osteoclastos
 | Molécula | O que é |
 |---|---|
 | **RANK** | **receptor de membrana** nos precursores e nos osteoclastos maduros; ativa o **NF-κB** |
 | **RANKL** | ligante da superfamília do TNF, na superfície dos osteoblastos, das células do estroma e de linfócitos T ativados; existe também solúvel |
 | **M-CSF** | fator estimulador de colônias de macrófagos; **junto com o RANKL**, é **essencial** para a diferenciação, maturação e sobrevida dos osteoclastos que reabsorvem; **sozinho, não basta** |
 | **Osteoprotegerina (OPG)** | **receptor chamariz solúvel** que se liga ao RANKL e o **impede** de ativar o RANK; produzida por estroma, células dendríticas e monócitos |
+!fim
 
 A razão RANK, RANKL e OPG resume o equilíbrio da remodelação. A OPG e o bloqueio do RANK (RANK:Fc) impediram a osteólise por partículas em modelos animais.
+
+!figura 21.3 imagem=quadril/quadril-0588-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 21.3. Reações biológicas às partículas de desgaste.
+!fim
 
 !questoes treino=quadril-0588,quadril-0589
 conceito: Partículas fagocitáveis, sobretudo abaixo de 1 µm, são as mais ativas; macrófagos com submicrométricas, células gigantes com as maiores que 10 µm. GREEN: 0,24 µm as mais ativas, maiores que 5 µm inativas. Polietileno flutua (densidade menor que a da água). PETIT: polietileno libera mais TNF-α que alumina. RANKL mais M-CSF são essenciais para o osteoclasto; M-CSF sozinho não basta; RANK é o receptor de membrana; OPG é o chamariz solúvel. TNF-α alto e prolongado inibe os osteoblastos.
@@ -240,6 +268,10 @@ como: O simulado pergunta a resposta biológica ao reticulado, com alternativas 
 - Um estudo caso-controle com **ressonância** achou pseudotumores em proporção semelhante, **até 60%**, tanto em quadris metal contra metal **que funcionavam bem** quanto nos **dolorosos**.
 - Os danos mais extensos e os agregados linfocitários mais densos apareceram nos pacientes com suspeita de hipersensibilidade, **sem desgaste alto**.
 
+!figura 21.4 imagem=quadril/quadril-0591-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 21.4. ALVAL: manguitos perivasculares de linfócitos e plasmócitos com poucos detritos metálicos.
+!fim
+
 !questoes treino=quadril-0591,quadril-0592
 conceito: Metal: resposta inespecífica e hipersensibilidade tardia tipo IV (linfócitos T), com ALVAL (manguitos perivasculares de linfócitos e plasmócitos, poucos detritos), não vista nas falhas de metal contra polietileno nem de cerâmica contra cerâmica. A intensidade não acompanha a quantidade de detritos; ocorre até em implantes bem fixos. A maioria não reage; mulheres mais; descrita em recapeamentos sem desgaste alto e em outros pares; pseudotumor em até 60% de assintomáticos e dolorosos na RM.
 como: Os simulados mostram o corte histológico de ALVAL e pedem a afirmativa correta sobre as reações teciduais adversas ao metal.
@@ -278,12 +310,14 @@ Boa parte do que se sabe sobre a biologia dos detritos vem de culturas de célul
 
 **Os modelos animais** (tabela 21.1). Cada um tem vantagens e desvantagens:
 
+!tabela Os modelos animais
 | Modelo | Vantagem | Limite |
 |---|---|---|
 | **Calvária de camundongo** | acessível, barato, rápido, com animais geneticamente modificados | osso plano, sem carga, inflamação aguda em vez de crônica, osso murino sem sistema haversiano |
 | Modelo de **partes moles**, com osso transplantado | acessível, barato, rápido, osso plano ou longo ou só partes moles | sem carga; para estudar osso, precisa de transplante |
 | **Infusão contínua no fêmur** por bomba | osso longo, infusão contínua, permite estudar o tráfego de células | cirurgia extensa; a bomba e o implante interferem |
 | Modelos com **implante sob carga**, inclusive de prótese total | carga, simulação de implante solto ou micromovimento, condições próximas da clínica | mais complexos e demorados |
+!fim
 
 O problema central é o **tempo**: os estudos em animais duram semanas ou meses, e a osteólise clínica leva **anos**. Além disso, cada estudo usa partículas diferentes, em dose, forma, área de superfície e química de superfície diferentes. Mesmo assim, alguns conceitos se generalizam: as vias da reação de corpo estranho e da inflamação crônica são **complexas, redundantes e difíceis de bloquear por completo**, e o material, o número, o tamanho, a forma, a área e a química das partículas mudam o perfil celular.
 
@@ -302,6 +336,7 @@ O problema central é o **tempo**: os estudos em animais duram semanas ou meses,
 
 **Na ressonância: como reduzir o artefato** (cap. 25, p. 385 e 386).
 
+!tabela Na ressonância: como reduzir o artefato
 | Medida | Por quê |
 |---|---|
 | **Alargar** a largura de banda do receptor | reduz a distorção pela perturbação do campo |
@@ -310,6 +345,7 @@ O problema central é o **tempo**: os estudos em animais duram semanas ou meses,
 | Fazer o exame a **1,5 T**, **evitar 3 T** | o artefato é proporcional à força do campo |
 | Usar **inversão-recuperação (STIR)** e evitar a supressão de gordura espectral | a supressão espectral depende de frequência e falha perto do metal |
 | Sequências avançadas (MAVRIC, SEMAC) | quase eliminam o artefato |
+!fim
 
 Os pares **cerâmicos** geram **menos** artefato; os **metal contra metal** (como os recapeamentos), **mais**.
 
@@ -319,13 +355,23 @@ Os pares **cerâmicos** geram **menos** artefato; os **metal contra metal** (com
 - **Osteólise**: áreas focais de reabsorção, **tipicamente isointensas** (ao músculo), com **margens escleróticas bem definidas**; com muito detrito metálico, focos muito hipointensos.
 - **Reação tecidual adversa ao metal**: pode ocorrer em qualquer par, desde que haja um componente modular (cone). Dois subtipos:
 
+!tabela Reação tecidual adversa ao metal
 | | **Hipersensibilidade (ALVAL)** | **Metalose** |
 |---|---|---|
 | Mecanismo | **linfócitos T**, tipo IV; os detritos funcionam como haptenos | reação de corpo estranho histiocitária a **grande volume** de detritos |
 | Depende de | **reatividade do hospedeiro**, pouco do volume de detritos | **dose**: só com grande carga de detritos, em geral por **malalinhamento e carga na borda** |
 | Imagem | **expansão sinovial acentuada**, sinovite mista de fluido e sólido, **descompressão para partes moles** (pseudotumor), **sinóvia muito espessa**, edema, linfonodos; **depósitos de baixo sinal não são necessários** | **menos** inflamação e espessamento; **depósitos de baixo sinal esperados** |
+!fim
 
 - **Infecção**: sinovite hiperintensa e lamelada, edema de partes moles, linfonodos e coleções; o **gadolínio intravenoso geralmente é desnecessário** para o diagnóstico (ajuda a separar flegmão de abscesso e a ver fístulas).
+
+!figura 23.26 imagem=quadril/quadril-0610-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 23.26. Stress shielding: reabsorção do córtex medial do calcar sem soltura nem desgaste.
+!fim
+
+!figura 25.12 imagem=quadril/quadril-0626-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 25.12. Reação de hipersensibilidade ao metal na ressonância.
+!fim
 
 !questoes treino=quadril-0610,quadril-0625,quadril-0626,quadril-0628
 conceito: Stress shielding: reabsorção progressiva do córtex medial do calcar pela transferência da carga para a haste e o córtex subtrocantérico, sem soltura nem desgaste; soltura radiográfica exige lucência acima de 2 mm. RM com metal: 1,5 T, STIR, banda larga, frequência ao longo do eixo do implante; cerâmica menos artefato, metal contra metal mais. Membrana fibrosa: linha fina hiperintensa com esclerose; osteólise isointensa com margens escleróticas. Hipersensibilidade: linfócitos T, sinovite exuberante, depósitos de baixo sinal desnecessários; metalose: dose-dependente, menos inflamação. Infecção: gadolínio geralmente desnecessário.

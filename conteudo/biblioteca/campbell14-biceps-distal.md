@@ -115,6 +115,7 @@ Mais da metade de todas as rupturas do bíceps acontecem no tendão da **cabeça
 
 **Tenotomia ou tenodese.** A **tenotomia** pode ser apropriada em pacientes mais velhos e menos ativos que não se importam com a fraqueza de supinação e com a deformidade estética: é tecnicamente mais simples, a reabilitação é curta e não exige imobilização. A **tenodese** é preferida em ativos, pela estética e para evitar as **cãibras** do bíceps (cap. 48, p. 2521; cap. 52, p. 2678). Na liberação artroscópica, o Campbell corta o tendão na glenoide deixando uma ponta espessa, que deve ficar presa na alça bicipital e evitar um "Popeye" acentuado; o paciente usa tipoia por 3 a 5 dias e não faz flexão resistida do cotovelo por um mês (cap. 52, p. 2678).
 
+!tabela Tenotomia ou tenodese
 | Ruptura da cabeça longa (Campbell, cap. 48, p. 2520 e 2521) | |
 |---|---|
 | Frequência | Mais da metade das rupturas do bíceps |
@@ -124,6 +125,7 @@ Mais da metade de todas as rupturas do bíceps acontecem no tendão da **cabeça
 | Tratamento usual | Não operatório |
 | Tenodese | Jovem ativo, trabalhador que precisa de supinação; < 40 anos com ruptura < 1 ano junto com o manguito |
 | Tenotomia | Idoso, pouco ativo, que aceita a deformidade |
+!fim
 
 # Tenodese: onde fixar e quem proteger {radar=confirmado}
 

@@ -44,11 +44,13 @@ O roteiro:
 
 **Metais são cristais.** Os átomos de um metal ficam arrumados num arranjo periódico tridimensional, o cristal. Um implante é **policristalino**: muitos cristais (grãos) unidos por **contornos de grão**. Há 14 arranjos possíveis (as redes de Bravais), mas as ligas ortopédicas usam três (cap. 15, p. 225, figura 15.2):
 
+!tabela Metais são cristais
 | Estrutura | Exemplos |
 |---|---|
 | **Cúbica de face centrada (CFC)** | aço inoxidável **316L** (austenítico); a matriz do cobalto-cromo acima de cerca de 400 °C |
 | **Cúbica de corpo centrado (CCC)** | **titânio beta** |
 | **Hexagonal compacta (HC)** | **titânio alfa**; o cobalto-cromo abaixo de cerca de 400 °C |
+!fim
 
 **Os defeitos mandam nas propriedades.** Nenhum cristal é perfeito. Os defeitos se classificam pela dimensão: **lacunas** (pontos sem átomo, que permitem a difusão), **discordâncias** (linhas: o fim de um semiplano extra de átomos), **contornos de grão** (áreas de desordem entre cristais) e **vazios e trincas** (volumes). As **discordâncias** são o defeito mais importante para a mecânica: quando a tensão é suficiente, elas se movem pela rede, e o metal muda de forma de maneira permanente. **Deformação plástica é criação e movimento de discordâncias.** Um risco pequeno na superfície já pode baixar a resistência à fadiga.
 
@@ -59,6 +61,10 @@ O roteiro:
 - **Trabalho a quente** (forjamento, peças conformadas): dá a forma e muda a microestrutura. O Ti-6Al-4V das normas ASTM F-136 e F-1481 pede uma microestrutura **bimodal alfa mais beta**, obtida deformando a liga no alto do campo alfa mais beta, **abaixo da temperatura beta transus, de cerca de 930 °C**.
 - **Tamanho de grão.** Os contornos barram as discordâncias; grãos **menores** significam mais contornos por volume, e a liga fica **mais resistente**. As ligas novas de cobalto usam metalurgia do pó para manter os grãos pequenos.
 - **Precipitação.** Partículas de uma segunda fase (os **carbonetos** do cobalto-cromo, por exemplo) espalhadas pela estrutura prendem as discordâncias; o tratamento térmico que as faz crescer chama-se envelhecimento.
+
+!figura 15.2 imagem=quadril/quadril-0468-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 15.2. Estruturas cristalinas: cúbica de face centrada, cúbica de corpo centrado e hexagonal compacta.
+!fim
 
 !questoes treino=quadril-0468,quadril-0470
 conceito: CFC: aço 316L. CCC: titânio beta. HC: titânio alfa e cobalto-cromo (abaixo de cerca de 400 °C). Deformação plástica é movimento de discordâncias, e todo endurecimento as bloqueia: solutos intersticiais (mais efetivos que os substitucionais), trabalho a frio (mais resistência, menos ductilidade; usado no 316L), grão menor (mais contornos, mais resistência), precipitação (carbonetos). Ti-6Al-4V bimodal: deformação abaixo da beta transus, cerca de 930 °C.
@@ -73,6 +79,7 @@ como: Os simulados mostram a figura das três estruturas cristalinas e pedem a a
 
 **A fadiga.** É a falha sob carga cíclica: depois de muitos ciclos (até 10 milhões ou mais), uma trinca nasce e se propaga até a fratura. A **resistência à fadiga** é a tensão cíclica que causa a falha num número de ciclos; a **vida em fadiga** é o número de ciclos até a falha numa tensão fixa. As duas se leem na **curva de WÖHLER** (curva S-N): tensão cíclica contra o **logaritmo** do número de ciclos (cap. 15, figura 15.4).
 
+!tabela A fadiga
 | Ponto | O que o capítulo 15 diz |
 |---|---|
 | Ciclos no quadril | a maioria das pessoas carrega o quadril **2 a 5 milhões de vezes por ano**: fadiga de **alto ciclo** |
@@ -80,10 +87,15 @@ como: Os simulados mostram a figura das três estruturas cristalinas e pedem a a
 | Resistência à fadiga a 10^7 ciclos | cerca de **0,3 a 0,5 da resistência máxima à tração** |
 | Onde se gasta a vida | no alto ciclo, **quase toda a vida é gasta iniciando a trinca**, e pouco propagando-a |
 | Como prolongar | superfícies lisas (a trinca começa na superfície), tensões residuais de compressão (implantação iônica), encruamento superficial (shot peening) |
+!fim
 
 O capítulo 17 dá outro número de atividade: 6.048 passos por dia, cerca de 1,1 milhão de ciclos de marcha por ano. As duas fontes concordam no que importa: é alto ciclo, muito acima de 10 mil.
 
 **Quem resiste mais.** Na tabela 15.8, o **Ti-6Al-4V bimodal** tem a **maior resistência à fadiga** entre as ligas relatadas; as microestruturas beta, com grãos alfa aciculares, têm menos. O aço 316L fica na parte de baixo da tabela; o capítulo 12 dá cerca de 310 MPa para o cobalto fundido e 500 a 700 MPa para o titânio. Mas esses números são de corpos de prova lisos e polidos: o **titânio é sensível ao entalhe**, e um risco ou uma mudança brusca de geometria (como a junção do revestimento poroso numa região de alta tensão) acelera muito a falha.
+
+!figura 15.4 imagem=quadril/quadril-0467-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 15.4. Curva de WÖHLER: tensão cíclica contra o logaritmo dos ciclos até a falha.
+!fim
 
 !questoes treino=quadril-0467,quadril-0475
 conceito: Módulo = rigidez, pouco sensível às discordâncias; escoamento a 0,2% de deformação permanente; ductilidade = alongamento. Rigidez da haste = rigidez flexural (EI); fenda distal reduz a rigidez e o stress shielding. Fadiga de alto ciclo a partir de cerca de 10^4 ciclos; o quadril sofre 2 a 5 milhões por ano; resistência a 10^7 ciclos de 0,3 a 0,5 da resistência máxima; quase toda a vida é iniciação da trinca. Ti-6Al-4V bimodal tem a maior resistência à fadiga, mas é sensível ao entalhe.
@@ -168,6 +180,7 @@ O capítulo 20 conta a metalurgia do cobalto-cromo do ponto de vista de quem fab
 
 **Os tratamentos que vieram para a fadiga.**
 
+!tabela Os tratamentos que vieram para a fadiga
 | Tratamento | Como | Efeito |
 |---|---|---|
 | **Homogeneização** | recozimento a cerca de **1.170 °C, abaixo da temperatura eutética**, para os carbonetos **não fundirem** | equaliza a segregação; mais tenacidade sem perder tração |
@@ -175,6 +188,7 @@ O capítulo 20 conta a metalurgia do cobalto-cromo do ponto de vista de quem fab
 | Os dois | | menos segregação, endurecimento intersticial (carbono e nitrogênio na rede CFC), **refino dos carbonetos em até 50%**, crescimento de grão |
 | **Prensagem isostática a quente (HIP)**, início dos anos 1980 | 1.180 a 1.220 °C, 1.000 bar, 4 horas, a vácuo | **elimina a microporosidade** e reduz o tamanho e o volume dos carbonetos |
 | **Forjamento** | barra pré-aquecida a cerca de 1.000 °C, prensas de 300 a 1.000 toneladas, acabamento abaixo de 900 °C | **maior resistência à fadiga**, ideal para hastes longas; **carbono abaixo de 0,05%** (acima disso fragilizava); grãos pequenos com maclas |
+!fim
 
 A armadilha clássica é trocar as temperaturas: a **homogeneização fica abaixo** da eutética justamente para não fundir os carbonetos. E o preço dos tratamentos pós-fundição é que eles **pioram a resistência ao desgaste** do par metal contra metal, porque desfazem os carbonetos em bloco. Por isso o BHR voltou ao como fundido.
 
@@ -189,10 +203,12 @@ como: Os simulados pedem o carboneto predominante, o teor de carbono e a tempera
 
 **As duas partes** (cap. 12, p. 174; cap. 16, p. 240):
 
+!tabela As duas partes
 | Parte | Conteúdo |
 |---|---|
 | **Pó** | **PMMA já polimerizado**, **peróxido de benzoíla** (iniciador) e um **radiopacificador** (sulfato de bário ou zircônia) |
 | **Líquido** | **monômero metilmetacrilato (MMA)**, com hidroquinona (estabilizador) e N,N-dimetil-p-toluidina (acelerador) |
+!fim
 
 Ao misturar, o **líquido** polimeriza e o pó quase não muda quimicamente. Por que parte do MMA já vem polimerizado no pó? O capítulo 16 responde: para **limitar a retração** que acontece quando monômeros polimerizam e **reduzir a energia exotérmica** liberada. Não é para acelerar a presa, aumentar a porosidade nem permitir a eluição de antibiótico.
 
@@ -239,6 +255,7 @@ como: Os simulados pedem o detalhe técnico correto de cada etapa e oferecem as 
 
 **Dois modos de fixação** (cap. 16, p. 244 e 245):
 
+!tabela Dois modos de fixação
 | | **Force-closed (fechada por força)** | **Shape-closed (fechada por forma)** |
 |---|---|---|
 | Superfície | **polida** | fosca, jateada, com contas, pré-revestida, texturizada |
@@ -246,6 +263,7 @@ como: Os simulados pedem o detalhe técnico correto de cada etapa e oferecem as 
 | O que acontece | a haste **subside alguns milímetros** no manto nos primeiros anos, até o **equilíbrio de forças** | a haste fica presa ao cimento |
 | Carga no cimento | **compressão radial**, transmitida ao osso cortical; o cimento resiste melhor à compressão; não aparecem trincas | tração e cisalhamento no cimento |
 | Exemplos | Charnley original, **Exeter** | pré-revestidas, rugosas |
+!fim
 
 A subsidência da haste polida **não é falha**: é o mecanismo previsto, com relaxamento das tensões do cimento (viscoelástico) e carga equilibrada entre cimento e osso.
 
@@ -266,6 +284,10 @@ como: Os simulados pedem o mecanismo da haste polida e os resultados de longo pr
 - Os **microporos podem iniciar trincas por fadiga**, mas também podem **pará-las**: quando a ponta da trinca entra num poro redondo, fica romba.
 - LESAKA mostrou que **mais porosidade na interface reduz a resistência ao cisalhamento** entre cimento e haste: mecanicamente, convém reduzir os poros ali.
 - O **pré-aquecimento da haste** perto da temperatura corporal diminui a porosidade na interface cimento e haste e o tempo de presa, **mas aumenta a temperatura transitória na interface osso e cimento**, com maior risco de **necrose térmica** pela exposição mais longa ao calor. Quem diz que o pré-aquecimento protege o osso do calor inverte o achado.
+
+!figura 16.12 imagem=quadril/quadril-0545-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 16.12. Retração do cimento a vácuo, afastando-se da cortical e abrindo espaço para a revascularização.
+!fim
 
 !questoes treino=quadril-0545,quadril-0546
 conceito: O cimento a vácuo retrai até cerca de 10%, nos primeiros 4 a 10 minutos, afastando-se da cortical em direção à haste, o que permite revascularizar a interface; retrai mais que o manual. Manual: poros pequenos e uniformes; vácuo: sem microporos, mas com poros grandes. Microporos iniciam e também param trincas. Porosidade na interface reduz o cisalhamento. Pré-aquecer a haste reduz poros, mas aumenta a temperatura no osso e o risco de necrose.
@@ -317,12 +339,14 @@ como: Os simulados pedem a definição de tribossistema, o destino da energia do
 
 **A espessura específica do filme (λ).** A eficácia de um lubrificante é medida pela razão entre a espessura do filme e a rugosidade das superfícies, λ, que depende da **viscosidade**, da **velocidade relativa**, da **pressão** e da **rugosidade**. O gráfico clássico (figura 17.3) mostra que, **quanto maior λ, menores o atrito e o desgaste** (cap. 17, p. 254):
 
+!tabela A espessura específica do filme (λ)
 | Regime | O que acontece |
 |---|---|
 | **Limítrofe (boundary)** | o lubrificante adere quimicamente a uma superfície, mas **os sólidos se tocam** em todo o contato; atrito e desgaste altos |
 | **Misto** | parte da carga no filme, parte nas asperezas |
 | **Elastoidrodinâmico (EHD)** | a pressão no filme é tão alta que **deforma as asperezas**; mesmo com filme mais fino que os picos, pode haver separação |
 | **Hidrodinâmico (filme completo)** | **separação total** dos corpos |
+!fim
 
 **Onde ficam os pares do quadril.** Sob cargas realistas e com líquido sinovial, o **metal contra polietileno** trabalha em regime **misto ou limítrofe**. Os **pares duro contra duro** trabalham sobretudo em regime **elastoidrodinâmico e misto**, e com **cabeças acima de 28 mm** pode haver uma passagem para o **filme completo**. Para o polietileno, recomenda-se cabeça com Ra abaixo de 0,05 µm.
 
@@ -332,14 +356,24 @@ como: Os simulados pedem a definição de tribossistema, o destino da energia do
 
 **Os quatro mecanismos.**
 
+!tabela Os quatro mecanismos
 | Mecanismo | Natureza | Aparência |
 |---|---|---|
 | **Abrasão** | mecânica | sulcos e riscos (microssulco, microcorte, microtrinca, microfadiga); por partículas externas (cimento) ou do próprio sistema (carbonetos, detritos) |
 | **Fadiga superficial** | mecânica | carga repetida no mesmo trilho, microtrincas, **pites e delaminação** |
 | **Adesão** | mecânica e química | microssoldas que se rasgam, transferência de material, flocos; **muito provável em metais dúcteis contra o mesmo material** |
 | **Reações triboquímicas** | mecânica e química | camadas de produtos de reação que se formam e se desprendem (como os aditivos de extrema pressão dos óleos de motor) |
+!fim
 
 O capítulo 17 separa também **modo** de desgaste (as condições mecânicas: deslizamento, rolamento, fretting, abrasão de dois ou três corpos), **aparência** (o que se vê) e **mecanismo** (a interação física e química). O modo pode mudar: os detritos de uma abrasão de dois corpos podem virar terceiro corpo.
+
+!figura 17.3 imagem=quadril/quadril-0552-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 17.3. Atrito e desgaste conforme a espessura específica do filme lubrificante.
+!fim
+
+!figura 20.15 imagem=quadril/quadril-0581-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 20.15. Curva de STRIBECK: lubrificação limítrofe, mista e por película completa.
+!fim
 
 !questoes treino=quadril-0552,quadril-0553,quadril-0581
 conceito: Quanto maior a espessura específica do filme, menores o atrito e o desgaste. Limítrofe: contato dos sólidos; misto; elastoidrodinâmico; hidrodinâmico: separação total. Metal contra polietileno em regime misto ou limítrofe; duro contra duro em EHD e misto, e acima de 28 mm pode chegar ao filme completo. A lubrificação mista é provavelmente a mais frequente in vivo. Fluência e corrosão não são desgaste. Quatro mecanismos: abrasão e fadiga (mecânicos), adesão e triboquímica (mecânico e químico); adesão em metais dúcteis contra si mesmos.
@@ -352,6 +386,7 @@ como: Os simulados mostram o gráfico de λ e a curva de STRIBECK e pedem o regi
 
 **As forças medidas.** BERGMANN mediu diretamente, com próteses instrumentadas e telemetria (cap. 17, p. 258):
 
+!tabela As forças medidas
 | Atividade | Pico de força no quadril |
 |---|---|
 | Caminhar a 1,1 m/s | cerca de **2,4 vezes o peso corporal** |
@@ -359,12 +394,17 @@ como: Os simulados mostram o gráfico de λ e a curva de STRIBECK e pedem o regi
 | Descer escadas | 2,6 vezes |
 | Corrida leve (jogging) | cerca de 5,5 vezes |
 | **Tropeço inesperado** | **até 8 vezes**, a maior de todas |
+!fim
 
 **A equação de ARCHARD.** O volume desgastado é proporcional à **carga** vezes a **distância de deslizamento**. Num estudo de 13 pacientes (seis homens e sete mulheres, 54 anos na cirurgia) com a **mesma prótese** e o **mesmo diâmetro de cabeça**, o desgaste linear variou de 0,009 a **0,395 mm/ano**, uma diferença enorme. O produto dos momentos externos do quadril (marcador da carga) pelo arco de flexão e extensão (marcador da distância) **explicou 43% da variância** do desgaste, e 65% sem os pontos fora da curva (figura 17.5). Ou seja: o modo como cada um anda pesa muito.
 
 **A equação de desgaste do metal contra metal** (cap. 20, p. 295, figura 20.16). O capítulo 20 escreve: **volume de desgaste = k × L × x ÷ 3p**, em que **k** é a probabilidade de produzir uma partícula, **L** é a carga, **x** é a distância de deslizamento e **p** é a **dureza do material mais macio** do par. O volume é proporcional à carga e à distância e inversamente proporcional à dureza. No metal contra metal, há um detalhe: aumentar o raio da cabeça aumenta a distância, mas também **melhora a lubrificação**, o que **reduz k**; por isso a cabeça maior pode desgastar menos nesse par, se a geometria for correta.
 
 **O caminho do desgaste.** Os trajetos de cada ponto da cabeça sobre a cúpula se **cruzam** durante a marcha: o polietileno sofre **cisalhamento multidirecional**, que desorganiza as cadeias e acelera os detritos. A folga diametral de mais de 150 µm faz a área de contato menor que o curso: o modo é de **deslizamento**, misto de alternado e multidirecional.
+
+!figura 17.5 imagem=quadril/quadril-0556-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 17.5. Desgaste do polietileno contra o produto dos momentos do quadril pelo arco de flexão e extensão.
+!fim
 
 !questoes treino=quadril-0556,quadril-0557,quadril-0582
 conceito: Pacientes ficam sentados 44,3% do tempo e caminham 10,2%; cerca de 6.000 passos por dia, 1,1 milhão de ciclos por ano. Forças: andar 2,4, escada 2,5 e 2,6, corrida 5,5 e tropeço até 8 vezes o peso. ARCHARD: volume proporcional à carga vezes a distância; momentos vezes arco explicaram 43% da variância em 13 pacientes com a mesma prótese. No metal contra metal, V = k × L × x ÷ 3p, com p = dureza do material mais macio.
@@ -414,13 +454,19 @@ O capítulo 1 lembra que essas primeiras próteses falharam cedo por **materiais
 
 **A geometria: polar, congruente ou equatorial.** As primeiras próteses tinham medidas imperiais e técnicas de medição primitivas; com a decimalização, produtos marcados ao mesmo tempo como 19/16 polegadas e 40 mm (32 µm de diferença) misturaram geometrias (cap. 20, p. 294):
 
+!tabela A geometria: polar, congruente ou equatorial
 | Geometria | Raios | Consequência |
 |---|---|---|
 | **Polar** | **raio da cabeça menor** que o da cúpula | o contato fica no polo; a folga em volta forma um ângulo de entrada que **arrasta fluido** para dentro da articulação durante o movimento |
 | Congruente | raios iguais | sem folga, sem entrada de fluido |
 | **Equatorial** | **raio da cabeça maior** que o da cúpula | contato na periferia, **atrito e desgaste altos**, e a cúpula pode soltar |
+!fim
 
 O capítulo conclui: o metal contra metal **exige geometria polar**. A **folga radial** é a diferença entre os **raios** da cabeça e da cúpula (a diferença entre os diâmetros é a folga diametral, o dobro). McMINN observou que os rolamentos que CHARNLEY testou no seu comparador de atrito eram anulares, sem entrada de lubrificante, o que ajudou a condenar injustamente o par; o atrito alto passava à interface com o cimento e soltava a cúpula. BROWN e JACOBSSON viram sobrevida comparável entre McKEE-FARRAR e Charnley em 20 anos.
+
+!figura 20.14 imagem=quadril/quadril-0580-1.jpeg
+Fonte: The Adult Hip (Callaghan), 2017, Figura 20.14. Folga radial e ângulo de entrada de fluido na articulação polar.
+!fim
 
 !questoes treino=quadril-0577,quadril-0580,quadril-0348
 conceito: WILES 1938 (aço contra aço); SMITH-PETERSEN 1939 (molde de cobalto-cromo, recapeamento sem ressecção); McKEE, primeiro uso de cobalto-cromo em total metal contra metal, cimentado, cúpula "sputnik"; RING não cimentado, haste rosqueada no ílio. Metal contra metal: desgaste de cerca de 0,004 mm/ano, cabeça grande, mais arco, íons sistêmicos, reações de partes moles; não surgiu nos anos 1990. Geometria polar (cabeça com raio menor) arrasta fluido; equatorial aumenta atrito; folga radial é a diferença entre os raios.
@@ -438,11 +484,13 @@ como: Os simulados pedem quem fez o quê, a geometria ideal na figura de repouso
 
 **O que os registros mostraram.** No registro australiano de 2013 (AOANJRR):
 
+!tabela O que os registros mostraram
 | Grupo | Revisão cumulativa |
 |---|---|
 | Artroplastia total metal contra metal na artrose | **18,6% em 12 anos** |
 | Recapeamento na artrose | **11,2% em 12 anos** |
 | BHR (todas as patologias) | **7,1% em 10 anos**, o menor e o de seguimento mais longo |
+!fim
 
 **Seis dos dez** recapeamentos listados **não atingiam** o limite do NICE de 1% de revisão por ano até 10 anos, e vários produtos foram recolhidos. O capítulo atribui o mau desempenho ao **desenho e ao material**, não só à técnica: ligas modificadas em relação ao como fundido (menos resistência ao desgaste, partículas menores), folgas alteradas que reduziram o ângulo de entrada do fluido (sobretudo depois da deformação da cúpula no osso duro) e, no **ASR**, uma redução importante do **ângulo subtendido** da cúpula, que antecipa a carga na borda com qualquer erro de inclinação ou versão. No **ASR, os três fatores ocorreram juntos**: microestrutura mista, folga diametral baixa (cerca de 100 µm) e ângulo subtendido muito reduzido para caber o sistema de introdução.
 
