@@ -55,6 +55,12 @@
       "skillPath": "skills/taste-skill-v2-experimental/SKILL.md",
       "computedHash": "e0d90342a08c0bfb9160574f82f6f43b3e0e4b77168d0efaf2b9b24a6228eb4c"
     },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "89496d5dd00f4810205f351759594fc2742bf8eea85a2f2b2d1de59f4bd91576"
+    },
     "full-output-enforcement": {
       "source": "Leonxlnx/taste-skill",
       "sourceType": "github",
@@ -126,6 +132,12 @@
       "sourceType": "github",
       "skillPath": "skills/stitch-skill/SKILL.md",
       "computedHash": "1ec8480d5b00fd2c5235fa1b960fda78fbac851afb95e1d104fe17ec1c5be6b1"
+    },
+    "theme-factory": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/theme-factory/SKILL.md",
+      "computedHash": "598ddfa9784ae2a8c55be5dbb047b98564d875dea6f4669168a87ae1ea1a4ed3"
     },
     "ui-styling": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",

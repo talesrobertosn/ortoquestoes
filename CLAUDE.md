@@ -50,7 +50,7 @@ Em 19/10/2026, Tales aprovou a **Caderneta de topografia** (feed) e o **Bingo da
 Em 22/10/2026, Tales aprovou a **Busca** (feed e stories: o sintoma digitado num buscador com a marca Orto Questões, a questão como resultado e a resposta no trecho em destaque). Veja [o guia](marketing/instagram/estilos/BUSCA.md).
 
 ## Telas do site
-Ferramentas de design (Tales, 31/10/2026: "usar sempre que possível, a ideia é você ficar especialista em design"): em todo pedido de design, use as skills de [docs/design/FERRAMENTAS.md](docs/design/FERRAMENTAS.md) (Refero para pesquisar, UI UX Pro Max para decidir, ui-styling e design-system para construir, Impeccable para revisar e polir, arte-hd2d para a arte pixel).
+**Antes de qualquer tarefa visual, leia [DESIGN.md](DESIGN.md) e [PRODUCT.md](PRODUCT.md)** e siga [docs/design/WORKFLOW.md](docs/design/WORKFLOW.md). Ferramentas de design (Tales, 31/10/2026: "usar sempre que possível, a ideia é você ficar especialista em design"): em todo pedido de design, use as skills de [docs/design/FERRAMENTAS.md](docs/design/FERRAMENTAS.md) (Refero para pesquisar, UI UX Pro Max para decidir, ui-styling e design-system para construir, Impeccable para revisar e polir, arte-hd2d para a arte pixel).
 
 Regra do Tales (30/10/2026): **todo pedido, mesmo simples, passa antes por um brainstorm interno** para entregar a melhor experiência possível (design, interação, celular, claro/escuro, textos). Decida e faça; não devolva a lista de opções para ele escolher, a não ser que a escolha mude o pedido.
 

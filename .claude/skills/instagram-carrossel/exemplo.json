@@ -1,0 +1,28 @@
+{
+  "formato": "vertical",
+  "tema": "noite",
+  "saida": "marketing/instagram/exemplos/carrossel-exemplo",
+  "questao": "trauma-0764",
+  "slides": [
+    { "tipo": "capa", "rotulo": "TEOT 2025 · questão real", "titulo": "Colo ou corpo? <em>Conte as articulações.</em>",
+      "texto": "Uma radiografia de perfil e quatro combinações de local e tipo.",
+      "imagem": "public/imagens/trauma/trauma-0764-1.jpeg", "legenda": "Radiografia da prova" },
+    { "tipo": "questao", "rotulo": "A questão como caiu",
+      "enunciado": "Na imagem radiográfica a seguir, a localização da fratura e sua respectiva classificação são:",
+      "imagem": "public/imagens/trauma/trauma-0764-1.jpeg",
+      "alternativas": [
+        { "letra": "A", "texto": "Colo do tálus; HAWKINS II." },
+        { "letra": "B", "texto": "Colo do tálus HAWKINS III." },
+        { "letra": "C", "texto": "Corpo do tálus; HAWKINS II." },
+        { "letra": "D", "texto": "Corpo do tálus; HAWKINS III." } ] },
+    { "tipo": "passos", "rotulo": "O raciocínio", "titulo": "Duas perguntas, <em>nesta ordem</em>.",
+      "passos": [
+        { "titulo": "Onde está o traço?", "texto": "O traço que separa o **colo** é fratura do colo; no **corpo**, o traço alcança a faceta posterior." },
+        { "titulo": "Quantas articulações perderam a relação?", "texto": "Hawkins II perde a **subtalar**; Hawkins III perde a **subtalar e a tibiotalar**." } ] },
+    { "tipo": "resposta", "rotulo": "Gabarito", "letra": "B", "titulo": "Colo do tálus, Hawkins III",
+      "texto": "O traço separa o colo, e o corpo perdeu as relações com a subtalar e com a pinça tibiotalar.",
+      "prova": "Localize colo ou corpo e conte as articulações: subtalar mais tornozelo é Hawkins III." },
+    { "tipo": "fecho", "rotulo": "Orto Questões", "titulo": "Questões do TEOT e do TARO, <em>comentadas como uma aula</em>.",
+      "texto": "Cada alternativa explicada, inclusive a certa.", "mascote": "marketing/instagram/posts/2026-10-31-casa-assombrada-talus/mascote-velas.png" }
+  ]
+}

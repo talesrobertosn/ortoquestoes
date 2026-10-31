@@ -8,6 +8,8 @@ description: Fluxo de arte do Orto Questões aprovado pelo Tales (30/10/2026) �
 O Tales disse (30/10/2026): "agora está do jeito que eu sempre quis". A arte é o ponto forte do site e o que vende.
 **Não economize processamento nem tokens na arte.** Detalhe extremo, mesmo em coisas simples.
 
+Antes de pintar, leia `DESIGN.md` (raiz): a arte é a camada colorida; a interface em volta segue os tokens dele.
+
 ## Regras que não mudam
 
 1. **Arte original, feita por código.** Cada pixel sai de um script Python (numpy + PIL) do repositório. Nada baixado,
