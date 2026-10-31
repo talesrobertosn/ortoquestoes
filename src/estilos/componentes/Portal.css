@@ -174,7 +174,7 @@
 .pt-coruja { position: absolute; z-index: 5; top: calc(1.1rem + 44px); right: 72px; transform: translateY(-94%); }
 .pt-coruja__botao { display: block; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; }
 .pt-coruja__botao:focus-visible, .pt-gato__botao:focus-visible { outline: 3px solid var(--pt-verde); outline-offset: 2px; border-radius: 8px; }
-.pt-coruja .coruja-pixel { width: 72px; height: 84px; }
+.pt-coruja .coruja-pixel { --coruja-escala: 2; }
 .pt-coruja--chegando { animation: pt-coruja-chega 0.9s cubic-bezier(0.25, 0.7, 0.35, 1) both; }
 .pt-coruja--saindo { animation: pt-coruja-sai 1.1s ease-in both; }
 @keyframes pt-coruja-chega { from { opacity: 0; transform: translate(140px, -150%); } }
@@ -226,7 +226,7 @@
   .pt-planos { grid-template-columns: auto 1fr; }
   .pt-planos__acao { grid-column: 1 / -1; justify-content: center; }
   .pt-coruja { right: 60px; top: calc(0.8rem + 44px); }
-  .pt-coruja .coruja-pixel { width: 48px; height: 56px; }
+  .pt-coruja .coruja-pixel { --coruja-escala: 1.5; }
   .pt-coruja__fala { right: -48px; top: 118px; width: min(17rem, calc(100vw - 2rem)); }
   .pt-gato { bottom: calc(8px + env(safe-area-inset-bottom)); right: 4%; }
   .pt-gato .gato-pixel { width: 64px; height: 48px; }

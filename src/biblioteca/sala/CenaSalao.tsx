@@ -138,7 +138,7 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
             </span>
           </p>}
           <button type="button" className="bb-coruja" onClick={s.acoes.tocarCoruja} aria-label="Coruja bibliotecária: uma dica" data-guia="ajuda">
-            <CorujaPixel estado={s.coruja.estado} style={{ width: 48 * px, height: 56 * px }} />
+            <CorujaPixel estado={s.coruja.estado} style={{ ['--coruja-escala' as string]: px * 1.75 }} />
           </button>
         </div>
         <div className="bb-personagem bb-personagem--gato" style={pos(PONTOS.gato.x, PONTOS.gato.y)}>
