@@ -9026,15 +9026,15 @@
   },
   {
    "id": "rockwoodcriancas10-29-diafise-tibia",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas da tíbia e da fíbula na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
-   "resumo": "Metáfise proximal da criança de 3 a 6 anos e o valgo de COZEN (história natural, molde em varo, observar), diáfise com fíbula íntegra em varo e com fíbula fraturada em valgo, Tabela 29-5 de alinhamento aceitável, cunha de abertura, hastes flexíveis, síndrome compartimental, fratura do lactente e fratura por estresse.",
+   "resumo": "Epidemiologia, ossificação e compartimentos; metáfise proximal de 3 a 6 anos (força lateral com joelho estendido, cortical medial em tensão, inclinação anterior da fise, MUBARAK, molde em varo, via anteromedial); valgo de COZEN (Tabela 29-3, história natural de 6 a 24 meses, correção espontânea, sem órtese nem osteotomia precoce, hemiepifisiodese medial após 18 meses); diáfise (torção no terço distal abaixo de 11 anos, fíbula íntegra em varo em 60% nas 2 primeiras semanas, fíbula fraturada em valgo); gesso, Tabela 29-5 e cunha de abertura (25% intacto, 1 cm por 10 graus); haste flexível (60% a 80% do istmo), fixador externo e quando operar; fratura exposta; síndrome compartimental (analgésico crescente, sem fibulectomia), lesão vascular, infecção, remodelação limitada (ápice posterior e valgo), rotação, sobrecrescimento de 4,5 mm, fechamento anterior da fise e recurvato, pseudartrose; metáfise distal em flexão plantar; fratura do lactente; joelho flutuante; fratura por estresse.",
    "acesso": "gratis",
-   "minutos": 14,
+   "minutos": 41,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -9042,19 +9042,54 @@
      "radar": "fundamento"
     },
     {
-     "id": "epidemiologia-e-anatomia",
-     "titulo": "Epidemiologia e anatomia",
+     "id": "epidemiologia",
+     "titulo": "Epidemiologia",
      "radar": "fundamento"
     },
     {
-     "id": "metafise-proximal-a-fratura-de-cozen",
-     "titulo": "Metáfise proximal: a fratura de COZEN",
+     "id": "anatomia-que-a-fratura-usa",
+     "titulo": "Anatomia que a fratura usa",
+     "radar": "fundamento"
+    },
+    {
+     "id": "metafise-proximal-mecanismo-e-diagnostico",
+     "titulo": "Metáfise proximal: mecanismo e diagnóstico",
      "radar": "confirmado"
     },
     {
-     "id": "diafise-o-desvio-depende-da-fibula",
-     "titulo": "Diáfise: o desvio depende da fíbula",
+     "id": "metafise-proximal-tratamento",
+     "titulo": "Metáfise proximal: tratamento",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-valgo-de-cozen",
+     "titulo": "O valgo de COZEN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diafise-mecanismo-e-o-papel-da-fibula",
+     "titulo": "Diáfise: mecanismo e o papel da fíbula",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diafise-exame-imagem-e-resultado",
+     "titulo": "Diáfise: exame, imagem e resultado",
+     "radar": "fundamento"
+    },
+    {
+     "id": "gesso-e-alinhamento-aceitavel",
+     "titulo": "Gesso e alinhamento aceitável",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-cunha-no-gesso",
+     "titulo": "A cunha no gesso",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "quando-operar-e-como",
+     "titulo": "Quando operar e como",
+     "radar": "oportunidade"
     },
     {
      "id": "fratura-exposta",
@@ -9062,9 +9097,19 @@
      "radar": "clinico"
     },
     {
-     "id": "complicacoes",
-     "titulo": "Complicações",
+     "id": "sindrome-compartimental-e-lesao-vascular",
+     "titulo": "Síndrome compartimental e lesão vascular",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "remodelacao-rotacao-e-crescimento",
+     "titulo": "Remodelação, rotação e crescimento",
      "radar": "confirmado"
+    },
+    {
+     "id": "infeccao-e-pseudartrose",
+     "titulo": "Infecção e pseudartrose",
+     "radar": "clinico"
     },
     {
      "id": "metafise-distal",
@@ -9072,13 +9117,23 @@
      "radar": "oportunidade"
     },
     {
-     "id": "fraturas-especiais",
-     "titulo": "Fraturas especiais",
+     "id": "fratura-do-lactente",
+     "titulo": "Fratura do lactente",
      "radar": "oportunidade"
     },
     {
-     "id": "fechamento",
-     "titulo": "Fechamento",
+     "id": "joelho-flutuante",
+     "titulo": "Joelho flutuante",
+     "radar": "clinico"
+    },
+    {
+     "id": "fratura-por-estresse",
+     "titulo": "Fratura por estresse",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-que-o-campbell-15-acrescenta",
+     "titulo": "O que o Campbell 15 acrescenta",
      "radar": "fundamento"
     }
    ],
@@ -9108,10 +9163,14 @@
     "pediatria-1143",
     "pediatria-1144",
     "pediatria-1145",
+    "conceitos-basicos-0362",
     "pediatria-1146",
     "pediatria-1150",
     "pediatria-1148",
+    "pediatria-1472",
     "pediatria-1151",
+    "pediatria-1473",
+    "pediatria-1474",
     "pediatria-1147",
     "pediatria-1149",
     "pediatria-1152"
