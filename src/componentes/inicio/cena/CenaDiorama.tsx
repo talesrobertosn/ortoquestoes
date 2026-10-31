@@ -240,7 +240,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
             : <Mascote key="dia" className="hd-mascote" reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={lugar(262, 96, 46, 66.7)} />}
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" tabIndex={-1} className={`hd-gato${andando ? ` hd-gato--andando hd-gato--${andando}` : ''}${semLugar ? ' hd-gato--fora' : ''}`}
-          style={{ ...lugar(PONTOS_GATO[ponto].x, PONTOS_GATO[ponto].y, 36, 22.5), '--passo': `${DURACAO_PASSO}ms` } as CSSProperties}
+          style={{ ...lugar(PONTOS_GATO[ponto].x, PONTOS_GATO[ponto].y - 4.5, 36, 27), '--passo': `${DURACAO_PASSO}ms` } as CSSProperties}
           onClick={() => definirGato((g) => (g === 'tala' ? 'tala' : g === 'dormindo' || g === 'ronronando' ? 'acordado' : 'tala'))}>
           <span className={`hd-gato__sprite${gato === 'acordando' ? ' hd-gato__sprite--uma-vez' : ''}`} style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas } as CSSProperties} />
         </button>

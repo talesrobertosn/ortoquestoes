@@ -35,7 +35,7 @@ function imagemVfx(nome: string) {
   if (!im) {
     im = new Image()
     im.decoding = 'async'
-    im.src = recurso(`flashcards/vfx/${nome}.png`)
+    im.src = recurso(`flashcards/vfx/${nome}.png${nome.startsWith('gato-') ? '?v=2' : ''}`)
     imagensVfx.set(nome, im)
   }
   return im

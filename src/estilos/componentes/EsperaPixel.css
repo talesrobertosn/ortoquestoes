@@ -1,4 +1,8 @@
-/* Espera em pixel art: o guerreiro (tira de 2 quadros, 136x148 cada) balança o fêmur. */
+/* Espera em pixel art: o Gato Aventureiro (31/10/2026; cenas de 96x56 em 2x) e, às vezes, o guerreiro de antes. */
+.espera-pixel--escondida { visibility: hidden; }
+.espera-pixel__palco { position: relative; display: grid; justify-items: center; min-height: 112px; }
+.gato-espera { display: block; image-rendering: pixelated; background-repeat: no-repeat; }
+.espera-pixel__palco .espera-pixel__chao { margin-top: -14px; width: 150px; }
 .espera-pixel { display: grid; justify-items: center; gap: .2rem; padding: clamp(2.5rem, 12vh, 6rem) 1rem 2rem; text-align: center; animation: espera-aparece .15s ease both; }
 .espera-pixel__guerreiro {
   display: block; width: 136px; height: 148px; image-rendering: pixelated;
@@ -6,7 +10,7 @@
   animation: espera-golpe .7s steps(1, end) infinite;
 }
 .espera-pixel__chao { display: block; width: 120px; height: 10px; margin-top: -6px; border-radius: 50%; background: color-mix(in srgb, var(--texto) 18%, transparent); }
-.espera-pixel__frase { margin: .9rem 0 0; font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.35rem; color: var(--texto); letter-spacing: .02em; }
+.espera-pixel__frase { max-width: 22rem; margin: .9rem 0 0; font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.2rem; line-height: 1.3; color: var(--texto); letter-spacing: .02em; text-wrap: balance; }
 .espera-pixel__frase::after { content: ''; display: inline-block; width: .5em; height: .1em; margin-left: .15em; background: currentColor; animation: espera-cursor 1s steps(1) infinite; }
 .espera-pixel__acao { margin-top: 1rem; animation: espera-aparece .3s ease both; }
 @keyframes espera-golpe { 0% { background-position: 0 0; } 50% { background-position: -136px 0; } }

@@ -143,7 +143,7 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
         </div>
         <div className="bb-personagem bb-personagem--gato" style={pos(PONTOS.gato.x, PONTOS.gato.y)}>
           <button type="button" className={`bb-gato bb-gato--${s.gato.estado}`} onClick={s.acoes.tocarGato} aria-label="O gato da biblioteca">
-            <GatoPixel estado={estadoGato(s.gato.estado)} style={{ width: 64 * px, height: 40 * px }} />
+            <GatoPixel estado={estadoGato(s.gato.estado)} style={{ width: 64 * px, height: 48 * px }} />
             {s.gato.estado === 'dormindo' && <span className="bb-gato__zz" aria-hidden="true">z<small>z</small></span>}
           </button>
         </div>

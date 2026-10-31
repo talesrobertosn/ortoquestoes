@@ -56,6 +56,7 @@ const SimuladoNacional = lazy(() => carregadores.SimuladoNacional().then(({ Simu
 const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
 const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
 const CronogramaMao = lazy(() => carregadores.CronogramaMao().then(({ CronogramaMao }) => ({ default: CronogramaMao })))
+const PreviaGato = import.meta.env.DEV ? lazy(() => import('./paginas/dev/PreviaGato')) : null
 const Resumos = lazy(() => carregadores.Resumos().then(({ Resumos }) => ({ default: Resumos })))
 const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
 const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
@@ -203,6 +204,10 @@ function paginaDaRota(rota: Rota): ReactNode {
     // Biblioteca de resumos (16/10/2026), com as frases que caem (antigo Resumão) em #/resumos/frases.
     case 'resumos':
       pagina = <Resumos segmentos={rota.segmentos} consulta={rota.consulta} />
+      break
+    // Painel de prévia do gato da espera: só em desenvolvimento (fora do pacote publicado).
+    case 'dev':
+      if (PreviaGato) pagina = <Suspense fallback={null}><PreviaGato /></Suspense>
       break
     case 'indicar':
       pagina = <Indicar />
