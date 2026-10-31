@@ -72,19 +72,23 @@ def cauda_deitado(dx=0.0, dy=0.0):
     return tuple(c)
 
 
-def sentado(t, x=XS, pata_na_frente=False, **mudar):
+def sentado(t, x=XS, braco=None, **mudar):
     """Gato sentado com a pose de descanso de base.py e as mudanças pedidas (em x = XS e sem mudanças, é o
-    B.repouso_sentado pixel a pixel)."""
+    B.repouso_sentado pixel a pixel).
+    braco = (cotovelo, pata) no quadro: pata da frente de perto dobrada e erguida, desenhada POR CIMA da cabeça
+    (para lamber a pata e passar no rosto e na orelha)."""
     p = G.Pose(cauda=CAUDA_FRENTE, cauda_frente=True)
     for a, v in mudar.items():
         setattr(p, a, v)
+    if braco is not None:
+        e, q = braco
+        # a perna de baixo vai só até o cotovelo (fica escondida pela de cima)
+        p.pata_perto = (e[0] - (x + 4.2), e[1] - (B.CHAO - 0.5 - 1.4 + p.dy))
     G.corpo_sentado(t, x, p)
-    if pata_na_frente:
-        # a pata erguida passa na frente do rosto: desenha de novo a perna de perto por cima da cabeça
+    if braco is not None:
         xf = G.Xf(x, B.CHAO - 0.5 + p.dy)
         xc = xf.filho((0, 0), p.inclina)
-        G.perna(t, xc((2.4, -10.0)), xf((4.2 + p.pata_perto[0], -1.4 + p.pata_perto[1])), 2.25, luz=0.06,
-                pata_rx=2.5, pata_ry=1.5)
+        G.perna(t, xc((2.4, -10.0)), q, 2.25, luz=0.08, joelho=e, pata_rx=2.4, pata_ry=1.6)
     return p
 
 
@@ -165,40 +169,38 @@ def livro(t, folha=0.0, x=LIVRO_X):
 
 
 def luzinha(t, x, y, forca=1.0, chao=False, k=0):
-    """A luzinha quente (reflexo/vagalume): miolo claro, anel dourado e halo laranja suave; no chão fica achatada.
-    Fica atrás do gato (o gato passa na frente quando a alcança)."""
+    """A luzinha quente (reflexo/vagalume): miolo claro, anel dourado, borda laranja e halo suave; no chão fica
+    achatada e mais larga. Fica atrás do gato (o gato passa na frente quando a alcança)."""
     if not _objetos() or forca <= 0:
         return
-    sy = 0.55 if chao else 1.0
-    pontos = []
-    for dy in range(-4, 5):
-        for dx in range(-4, 5):
-            d = math.hypot(dx, dy / sy)
-            pontos.append((d, dx, dy))
-    # halo (de fora para dentro: o de dentro pinta por cima)
-    for d, dx, dy in sorted(pontos, reverse=True):
-        if d <= 0.5:
+    sx, sy = (1.3, 0.6) if chao else (1.0, 1.0)
+    pontos = sorted(((math.hypot(dx / sx, dy / sy), dx, dy) for dy in range(-4, 5) for dx in range(-6, 7)), reverse=True)
+    for d, dx, dy in pontos:   # de fora para dentro: o de dentro pinta por cima
+        if d <= 0.7:
             cor, a = "#fffdf2", 1.0
-        elif d <= 1.5:
-            cor, a = "#ffe27a", 0.95
-        elif d <= 2.3:
-            cor, a = "#ffb447", 0.7
-        elif d <= 3.2:
-            cor, a = "#f08a2c", 0.32
+        elif d <= 1.6:
+            cor, a = "#ffe27a", 1.0
+        elif d <= 2.4:
+            cor, a = "#ffb447", 0.9
+        elif d <= 3.0:
+            cor, a = "#e07a24", 0.55
+        elif d <= 3.8:
+            cor, a = "#f08a2c", 0.2
         else:
             continue
         t.px(x + dx, y + dy, cor, a * min(1.0, forca), atras=True)
     if forca >= 0.9 and k % 2 == 0:
-        # cintilar: quatro pontinhas em cruz
-        for dx, dy in ((0, -4), (0, 4), (-4, 0), (4, 0)) if not chao else ((-5, 0), (5, 0)):
-            t.px(x + dx, y + dy * sy, "#ffe27a", 0.8, atras=True)
+        # cintilar: pontinhas em cruz (no chão, só para os lados)
+        for dx, dy in (((0, -5), (0, 5), (-5, 0), (5, 0)) if not chao else ((-6, 0), (6, 0))):
+            t.px(x + dx, y + dy, "#f5a623", 0.9, atras=True)
 
 
 def interrogacao(t, x, y):
+    """Ponto de interrogação dourado de traço grosso, com sombra marrom à direita e embaixo."""
     if not _objetos():
         return
-    t.molde([".qqq.", "q...q", "...q.", "..q..", ".....", "..q.."], x, y,
-            cores={"q": "#fff3d6"}, contorno="#3b1c10")
+    t.molde([".qqq..", "qq.qqs", ".s.qqs", "..qqs.", "..qs..", "......", "..qq..", "...s.."], x, y,
+            cores={"q": "#f5a623", "s": "#8e3b17"})
 
 
 def estrela(t, x, y, grande=True):
@@ -489,16 +491,31 @@ def estudo_olha(t, k):
         _lendo(t, olhar, nod=1.0 if k >= 5 else 0.0)
 
 
+def folha_virando(t, f, x=None):
+    """Uma folha do livro no ar: f = 1 deitada à esquerda .. 0 deitada à direita (a ponta sobe no meio)."""
+    if not _objetos() or not 0 < f < 1:
+        return
+    x = LIVRO_X if x is None else x
+    xf = G.Xf(x, B.CHAO - 0.5, 1.5)
+    a = math.pi * f
+    tx, ty = math.cos(a) * 7.2, -7.6 - math.sin(a) * 5.0
+    g = t.grupo(True)
+    t.pinta(G.poligono([xf(p) for p in ((0, -1.8), (0, -7.4), (tx, ty), (tx, ty + 5.4))], 1.0), "papel", g, luz=0.2)
+
+
 def estudo_vira(t, k):
     """Vira a página com a pata, gosta do que leu e se deita ao lado do livro."""
-    folha = [0, 0, 0, 0.82, 0.5, 0.18, 0, 0][k]
-    livro(t, 1.0 - folha if 0 < folha < 1 else 0.0)
+    livro(t)
+    folha_virando(t, [0, 0, 0, 0.85, 0.62, 0.3, 0, 0][k])
     if k == 0:
         _lendo(t, (1, 1), nod=1.0)
-    elif k <= 5:
-        pata = [None, (3.0, -7.0), (8.0, -4.4), (9.0, -7.6), (11.0, -10.0), (5.0, -6.0)][k]
-        olhar = [None, (0, 1), (0, 1), (0, 1), (1, 1), (1, 1)][k]
-        _lendo(t, olhar, pata_perto=pata, inclina=[0, 0, 3, 3, 4, 1][k], boca="w")
+    elif k == 1:
+        _lendo(t, (0, 1), pata_perto=(3.0, -6.0))
+    elif k <= 4:
+        braco = [None, None, ((56.0, 45.5), (61.5, 42.5)), ((56.5, 43.0), (61.5, 37.5)), ((57.0, 42.0), (63.0, 36.5))][k]
+        _lendo(t, [None, None, (0, 1), (0, 1), (1, 1)][k], braco=braco, inclina=[0, 0, 2, 3, 2][k])
+    elif k == 5:
+        _lendo(t, (1, 1), pata_perto=(1.0, -2.0), olhos="feliz", cab_ang=5.0)
     elif k == 6:
         deitado_pao(t, cab=(10.6, -14.0), cab_ang=8, olhos="meio", olhar=(1, 1),
                     cauda=((-14.0, -3.2), (-17.0, -1.8), (-17.5, -2.0), (-15.0, -2.0)))
@@ -519,24 +536,25 @@ def estudo_deita(t, k):
 def _rosto(k):
     """Pose da pata limpando o rosto (laço de 8): a pata dá uma volta sobre a bochecha e o olho."""
     a = k / 8 * TAU
-    pata = (2.6 + 2.2 * math.cos(a), -15.5 - 3.2 * (0.5 - 0.5 * math.cos(a)) - 1.2 * math.sin(a))
-    return dict(pata_perto=pata, cab_ang=9.0 + 4.0 * math.sin(a), cab=(2.8, -24.0), olhos="fechado",
-                boca="w", orelhas=(0.0, 8.0 * max(0.0, -math.sin(a))), cauda=CAUDA_FRENTE)
+    pata = (55.6 + 2.2 * math.cos(a), 31.2 - 3.4 * math.sin(a))
+    cotovelo = (56.4 + 0.6 * math.cos(a), 41.0 - 0.8 * math.sin(a))
+    return dict(braco=(cotovelo, pata), cab_ang=10.0 + 4.0 * math.sin(a), cab=(2.8, -24.0), olhos="fechado",
+                boca="w", orelhas=(0.0, 10.0 * max(0.0, math.sin(a))))
 
 
 def banho_lambe(t, k):
     """Ergue a patinha e lambe (língua para fora nos quadros ímpares)."""
     if k == 0:
         B.repouso_sentado(t)
+    elif k == 1:
+        sentado(t, pata_perto=(1.5, -6.5), cab_ang=4, olhar=(1, 1), orelhas=(-4, -4))
     elif k == 7:
         sentado(t, **_rosto(0))
     else:
-        pata = [None, (1.0, -7.0), (3.4, -15.0), (3.4, -14.2), (3.4, -15.0), (3.4, -14.2), (4.0, -15.0)][k]
-        ang = [0, 4, 12, 14, 12, 14, 10][k]
-        boca = [None, "w", "aberta", "w", "aberta", "w", "w"][k]
-        olhos = [None, "aberto", "fechado", "fechado", "fechado", "fechado", "fechado"][k]
-        sentado(t, pata_perto=pata, cab_ang=ang, cab=(2.8, -24.0), olhos=olhos, boca=boca,
-                olhar=(1, 1) if k == 1 else (0, 0))
+        lambe = k % 2 == 0
+        pata = (56.0, 35.5 - (0.0 if lambe else 1.0))
+        sentado(t, braco=((55.6, 42.0), pata), cab_ang=12 if lambe else 9, cab=(2.8, -24.0 + (0.4 if lambe else 0)),
+                olhos="fechado", boca="aberta" if lambe else "w")
 
 
 def banho_rosto(t, k):
@@ -545,18 +563,24 @@ def banho_rosto(t, k):
 
 
 def banho_orelha(t, k):
-    """Leva a pata por cima da orelha, abaixa e volta à pose de descanso."""
+    """Abaixa a cabeça, passa a pata por cima da orelha e volta à pose de descanso."""
     if k == 0:
         sentado(t, **_rosto(0))
     elif k == 7:
         B.repouso_sentado(t)
+    elif k <= 4:
+        cot = [None, (56.5, 39.0), (56.0, 37.0), (54.5, 37.0), (56.0, 41.0)][k]
+        pata = [None, (58.5, 26.0), (57.0, 21.5), (53.5, 21.5), (56.5, 32.0)][k]
+        ang = [0, 18, 24, 22, 10][k]
+        orelhas = [None, (0, 20), (6, 32), (4, 26), (0, 8)][k]
+        sentado(t, braco=(cot, pata), cab_ang=ang, cab=(3.2, -23.4), olhos="fechado", orelhas=orelhas,
+                inclina=2.0)
     else:
-        pata = [None, (3.0, -21.0), (1.5, -25.0), (-0.5, -23.5), (2.5, -14.0), (0.5, -3.0), (0.0, 0.0)][k]
-        ang = [0, 16, 20, 18, 8, 0, 0][k]
-        orelhas = [None, (0, 20), (6, 30), (4, 24), (0, 10), (0, 0), (0, -6)][k]
-        olhos = [None, "fechado", "fechado", "fechado", "fechado", "meio", "aberto"][k]
-        vira = [0, 0, 0, 0, 0, 0.2, 0][k]
-        sentado(t, pata_perto=pata, cab_ang=ang, cab=(2.8, -24.0), olhos=olhos, orelhas=orelhas, vira=vira)
+        pata = [(1.0, -3.0), (0.0, 0.0)][k - 5]
+        olhos = ["meio", "aberto"][k - 5]
+        orelhas = [(0, 0), (0, -6)][k - 5]
+        sentado(t, pata_perto=pata, olhos=olhos, orelhas=orelhas, vira=0.2 if k == 5 else 0.0,
+                cab_ang=3 if k == 5 else 0)
 
 
 # ═══════════════════════════════ luzinha ═══════════════════════════════
@@ -607,14 +631,14 @@ def luz_salta(t, k):
               cab=(11.0, -26.5), cab_ang=-14, olhar=(1, -1), orelhas=(-10, -10),
               cauda=((-12.0, -11.0), (-17.0, -9.0), (-22.0, -8.0), (-26.0, -9.0)))
     elif k == 2:
-        de_pe(t, 52.0, dy=-10, quadril=(-6.5, -10.0), ombro=(5.5, -18.5), larg=9,
-              pes=((-9.0, -10.0), (-11.0, -9.0), (12.0, -34.0), (10.0, -33.0)),
-              cab=(9.5, -28.0), cab_ang=-22, olhar=(1, -1), boca="aberta", orelhas=(-10, -10),
+        de_pe(t, 52.0, dy=-7, quadril=(-6.5, -10.0), ombro=(5.5, -18.5), larg=9,
+              pes=((-9.0, -7.0), (-11.0, -6.0), (16.0, -26.0), (14.0, -25.0)),
+              cab=(9.5, -25.5), cab_ang=-22, olhar=(1, -1), boca="aberta", orelhas=(-10, -10),
               cauda=((-11.0, -9.0), (-16.0, -6.0), (-21.0, -6.0), (-25.0, -8.0)))
     elif k == 3:
-        de_pe(t, 54.0, dy=-11, quadril=(-6.5, -10.5), ombro=(5.5, -18.0), larg=8,
-              pes=((-8.0, -13.0), (-10.0, -12.0), (11.0, -35.0), (9.0, -34.0)),
-              cab=(9.5, -28.0), cab_ang=-24, olhar=(1, -1), boca="aberta", orelhas=(-10, -10),
+        de_pe(t, 54.0, dy=-9, quadril=(-6.5, -10.5), ombro=(5.5, -18.0), larg=8,
+              pes=((-8.0, -11.0), (-10.0, -10.0), (15.0, -29.0), (13.0, -28.0)),
+              cab=(9.5, -25.5), cab_ang=-24, olhar=(1, -1), boca="aberta", orelhas=(-10, -10),
               cauda=((-11.0, -9.0), (-15.0, -5.0), (-20.0, -3.0), (-24.0, -4.0)))
     elif k == 4:
         de_pe(t, 55.0, dy=-5, quadril=(-7.5, -12.0), ombro=(6.5, -12.5), larg=11,
@@ -627,7 +651,7 @@ def luz_salta(t, k):
               cauda=((-12.0, -11.0), (-17.0, -15.0), (-17.0, -21.0), (-13.0, -23.0)))
     else:
         de_pe(t, 54.0 if k == 6 else 53.0, **(SALTA_FIM if k == 7 else dict(cab=(11.0, -22.0), cab_ang=-8, olhar=(1, -1))))
-    pos = [(72, 50, True), (71, 40, False), (69, 24, False), (68, 12, False), (70, 6, False), (72, 5, False),
+    pos = [(72, 50, True), (71, 38, False), (71, 17, False), (69, 8, False), (71, 5, False), (72, 5, False),
            (73, 6, False), (74, 7, False)][k]
     luzinha(t, pos[0], pos[1], 1.0, chao=pos[2], k=k)
 
