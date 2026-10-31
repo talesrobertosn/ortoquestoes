@@ -84,31 +84,37 @@ olhe as páginas com a prévia de figura). Comandos:
    Critical Points, as tabelas e as classificações. Salve as notas com página em
    ~/OrtoQuestoes-Biblioteca/lotes/<pasta-do-tema>/NOTAS-FONTES.md à medida que lê (sobrevive ao resumo de contexto).
    Aproveite os lotes antigos do tema (oficiais.py, lote_a.py), que trazem fatos já conferidos.
-5. Comentários: escreva em lotes .py de 10 a 15 questões (formato abaixo) e converta cada lote.
-6. Confira as afirmações sem fonte: releia cada lote procurando números, epônimos e frases que você não leu no
+5. Simulados novos (antes dos comentários, quando o tema pedir): o --proximo mostra quantos já existem e um ponto
+   de partida para novos (1 a cada 4 questões TEOT/TARO, +3 se a banca cobra muito desde 2021, menos os que já
+   existem). Não é cota: depois de ler o capítulo, faça mais quando houver lacunas cobráveis (classificações,
+   números e condutas que nenhuma questão treina) e menos, ou nenhum, quando o tema é estreito ou já está coberto.
+   Escreva no relatório quantos fez e por quê. Formato e aplicação em docs/biblioteca/PILOTO-AUTOMATICO.md, seção 5
+   (scripts/simulados/aplicar_lote.py, primeiro com --conferir). Simulado novo entra em treino= no resumo.
+6. Comentários: escreva em lotes .py de 10 a 15 questões (formato abaixo) e converta cada lote.
+7. Confira as afirmações sem fonte: releia cada lote procurando números, epônimos e frases que você não leu no
    livro; corte ou mande para o alerta.
-7. Converta todos juntos (para pegar parágrafo repetido entre lotes) e aplique:
+8. Converta todos juntos (para pegar parágrafo repetido entre lotes) e aplique:
        python3 scripts/biblioteca/lote_comentarios.py TODOS.py saida.json --registro reg.json
        python3 scripts/aplicar_comentarios.py saida.json && bash scripts/pos_aplicar.sh
-8. Resumo: reescreva (ou crie) com 45 KB ou mais, no jeito de escrever dos anteriores (formato abaixo).
+9. Resumo: reescreva (ou crie) com 45 KB ou mais, no jeito de escrever dos anteriores (formato abaixo).
    Antes de mudar um resumo existente, veja se algum comentário revisado depende dele (campo baseResumo):
        python3 -c "import json,glob;[print(i) for p in glob.glob('public/acervo/comentarios/*.json') for i,c in json.load(open(p)).get('comentarios',json.load(open(p))).items() if c.get('baseResumo') and any(f.get('resumo')=='<ID>' for f in c['baseResumo'].get('fontes',[]))]"
    Se houver, ou reescreva esses comentários no mesmo PR, ou deixe o resumo como na base (foi o que quebrou a PR 716
    com o Rockwood de tornozelo e o de fise distal do úmero).
-9. Figuras: 2 a 5 por resumo, das que ensinam (classificação, via de acesso, radiografia típica):
+10. Figuras: 2 a 5 por resumo, das que ensinam (classificação, via de acesso, radiografia típica):
        python3 scripts/figuras_livro.py localizar "<PDF>" "FIGURE 38.1"
        python3 scripts/figuras_livro.py previa "<PDF>" 1635 --saida /private/tmp/claude-501/prev
        python3 scripts/figuras_livro.py recortar "<PDF>" 1635 x0,y0,x1,y1 --tema mao --nome green7-38-1 --legenda "Fonte: ..., cap. 38, Fig. 38.1, p. 1330. ..." --registro reg.json
    Abra a prévia, escolha a caixa olhando a imagem, abra o recorte para conferir. Anexe a figura a 2 a 4 comentários
    pelo campo figuras do lote.
-10. Valide e meça: node scripts/biblioteca/gerar.mjs; python3 scripts/biblioteca/medir_profundidade.py resumo <ID>;
+11. Valide e meça: node scripts/biblioteca/gerar.mjs; python3 scripts/biblioteca/medir_profundidade.py resumo <ID>;
     grep -c "—\|–" no resumo deve dar 0.
-11. Conferência visual (obrigatória): print de uma questão respondida com figura e do resumo na altura de uma
+12. Conferência visual (obrigatória): print de uma questão respondida com figura e do resumo na altura de uma
     tabela e de uma figura, no computador e no celular:
        CHROMIUM="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" node scripts/capturar_telas.mjs /questao/<id> pref --roteiro scripts/comentarios-resumos/roteiro-print.mjs --pasta <dir>
     Para o resumo, um roteiro que rola até o texto da tabela e da figura (exemplo em
     docs/prompts/MEGA-PROMPT-TEOT-TARO.md, seção 7). Abra os prints e corrija o que estiver quebrado.
-12. Documentação e publicação: linha no RELATORIO-TEOT-TARO.md (seção 6 abaixo), linha em
+13. Documentação e publicação: linha no RELATORIO-TEOT-TARO.md (seção 6 abaixo), linha em
     docs/biblioteca/RELATORIO-EXECUCAO.md, marca de feito na tabela do REFAZER quando o tema estiver lá, bloco no
     CHECKPOINT-GERAL.md (fora do git). Commit e bash scripts/publicar_pr.sh "Título" corpo.md, que espera os checks e
     imprime MESCLADO. Se falhar, leia o log, corrija e publique de novo. Depois volte ao passo 1.
@@ -164,7 +170,7 @@ Resumo (conteudo/biblioteca/<id>.md, versao +1 ao reescrever):
 ## 6. Relatório
 
 Depois de cada PR, acrescente uma linha na tabela de docs/biblioteca/RELATORIO-TEOT-TARO.md: data, PR, subtema(s),
-resumo (antes e depois em KB, figuras e tabelas), comentários (quantos, de quais provas, faixa de tamanho), alertas
+resumo (antes e depois em KB, figuras e tabelas), simulados novos (quantos e por que esse número), comentários (quantos, de quais provas, faixa de tamanho), alertas
 abertos, e o placar do --resumo. Registre também as lacunas (fato sem fonte local, questão sem gabarito, imagem
 ilegível) na seção de pendências do mesmo arquivo.
 

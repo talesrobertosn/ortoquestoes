@@ -12,9 +12,9 @@ Fila e placar: `python3 scripts/biblioteca/fila_teot_taro.py` (`--resumo`, `--pr
 
 ## Entregas
 
-| Data | PR | Subtema | Resumo | Comentários | Alertas e observações |
-| --- | --- | --- | --- | --- | --- |
-| 31/10/2026 | 719 | Outras malformações congênitas (mão) | `green8-malformacoes-congenitas`, 15 para 61 KB, 4 figuras do Green 7 e 12 tabelas | 54 (44 de TARO, TEOT, TEPOP, SBOT-SP, CET-PR e Ortopedia; 10 simulados), de 0,9 a 2,8 mil caracteres | gabarito contra o livro em mao-0020, mao-0025 e mao-0250; faltam 6 questões TARO do subtema que o dossiê não listou (mao-0145, 0161, 0332, 0333, 0510, 0511) |
+| Data | PR | Subtema | Resumo | Simulados novos (e por quê) | Comentários | Alertas e observações |
+| --- | --- | --- | --- | --- | --- | --- |
+| 31/10/2026 | 719 | Outras malformações congênitas (mão) | `green8-malformacoes-congenitas`, 15 para 61 KB, 4 figuras do Green 7 e 12 tabelas | nenhum: o subtema já tinha 10 simulados do ciclo 9 | 54 (44 de TARO, TEOT, TEPOP, SBOT-SP, CET-PR e Ortopedia; 10 simulados), de 0,9 a 2,8 mil caracteres | gabarito contra o livro em mao-0020, mao-0025 e mao-0250; faltam 6 questões TARO do subtema que o dossiê não listou (mao-0145, 0161, 0332, 0333, 0510, 0511) |
 
 ## Pendências e lacunas
 

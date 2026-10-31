@@ -13,6 +13,16 @@ Uso:
   python3 scripts/biblioteca/fila_teot_taro.py              # fila completa, na ordem de trabalho
   python3 scripts/biblioteca/fila_teot_taro.py --proximo    # só o próximo subtema e as questões pendentes
   python3 scripts/biblioteca/fila_teot_taro.py --resumo     # números para o relatório
+
+Quantos OrtoQuestões Simulados criar (Tales, 31/10/2026: "mais de 10 ou menos de 10, regra principal é ser
+flexível; tema ruim faça menos, tema bom faça mais"). O script dá um ponto de partida, nunca uma cota:
+  - frequência: 1 simulado para cada 4 questões TEOT/TARO do subtema;
+  - recência: +3 se 40% ou mais delas são de 2021 em diante (a banca está cobrando agora);
+  - já feitos: desconta os simulados que o subtema já tem;
+  - faixa de 0 a 25.
+Depois de ler o capítulo, ajuste: some quando o livro tem assuntos cobráveis que nenhuma questão cobre (lacunas),
+classificações e números que caem e não foram treinados; tire quando o tema é estreito, o capítulo repete o que as
+questões já cobrem ou o assunto é raro na prática e na prova. Registre a decisão e o motivo no relatório.
 """
 from __future__ import annotations
 
@@ -42,16 +52,28 @@ def carregar():
         for s in (m.group(1).split(";") if m else []):
             resumos[s.strip()].append((Path(md).stem, len(t)))
     subtemas = defaultdict(list)
+    simulados = defaultdict(int)
     for p in glob.glob(str(RAIZ / "public/acervo/temas/*.json")):
         for q in json.loads(Path(p).read_text(encoding="utf-8"))["questoes"]:
-            if q.get("prova") in PROVAS:
-                for s in q.get("subtemas") or ["(sem subtema)"]:
+            for s in q.get("subtemas") or ["(sem subtema)"]:
+                if q.get("prova") in PROVAS:
                     subtemas[s].append(q)
-    return com, resumos, subtemas
+                elif q.get("simulado"):
+                    simulados[s] += 1
+    return com, resumos, subtemas, simulados
+
+
+def simulados_sugeridos(qs: list, ja_feitos: int) -> int:
+    """Ponto de partida para o número de simulados novos do subtema (ver o cabeçalho)."""
+    base = round(len(qs) / 4)
+    recentes = sum(1 for q in qs if (q.get("ano") or 0) >= 2021)
+    if qs and recentes / len(qs) >= 0.4:
+        base += 3
+    return max(0, min(25, base - ja_feitos))
 
 
 def fila():
-    com, resumos, subtemas = carregar()
+    com, resumos, subtemas, simulados = carregar()
     linhas = []
     for s, qs in subtemas.items():
         if len(qs) < MIN_QUESTOES:
@@ -61,6 +83,7 @@ def fila():
         pronto = any(n >= MIN_RESUMO for _, n in rs)
         linhas.append({"subtema": s, "tema": qs[0]["id"].rsplit("-", 1)[0], "questoes": len(qs),
                        "pendentes": pend, "resumos": rs, "resumoPronto": pronto,
+                       "simulados": simulados.get(s, 0), "simuladosSugeridos": simulados_sugeridos(qs, simulados.get(s, 0)),
                        "feito": pronto and not pend})
     # Ordem de trabalho: mais questões pendentes primeiro; empate pelo total.
     linhas.sort(key=lambda x: (x["feito"], -len(x["pendentes"]), -x["questoes"]))
@@ -87,12 +110,13 @@ def main() -> int:
             return 0
         rs = ", ".join(f"{r} ({n // 1000} KB)" for r, n in x["resumos"]) or "sem resumo: criar um"
         print(f"{x['subtema']} [{x['tema']}] {x['questoes']} questões, {len(x['pendentes'])} pendentes; resumo: {rs}")
+        print(f"simulados: {x['simulados']} já existem; ponto de partida para novos: {x['simuladosSugeridos']} (ajuste pelo capítulo)")
         print(" ".join(x["pendentes"]))
         return 0
     for x in linhas:
         rs = ", ".join(f"{r}({n // 1000}k)" for r, n in x["resumos"]) or "SEM RESUMO"
         st = "FEITO" if x["feito"] else f"{len(x['pendentes']):3d} pend."
-        print(f"{st:10s} {x['questoes']:3d}  {x['tema']:18s} {x['subtema'][:48]:48s} {rs[:80]}")
+        print(f"{st:10s} {x['questoes']:3d}  sim {x['simulados']:2d}+{x['simuladosSugeridos']:2d}  {x['tema']:18s} {x['subtema'][:44]:44s} {rs[:70]}")
     return 0
 
 
