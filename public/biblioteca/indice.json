@@ -3,15 +3,15 @@
  "capitulos": [
   {
    "id": "campbell14-anatomia-coluna",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia da coluna e vias de acesso",
    "especialidade": "coluna",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "14ª edição (2021)",
-   "capitulo": "Capítulo 37 · Vias de acesso anatômicas à coluna",
-   "resumo": "Saída das raízes (C2 a C7 acima do pedículo, C8 entre C7 e T1, abaixo de C8 abaixo do pedículo); pedículos cervicais e artéria vertebral (C3 a C6); pedículos torácicos (T5 o mais estreito) e pontos de entrada; irrigação da medula (ADAMKIEWICZ à esquerda, T9 a T11, zona crítica T4 a T9); via anterior cervical (lado esquerdo, longus colli); transição cervicotorácica (transesternal C4 a T4, critério de CHO); via posterior de C1 (1,5 cm); via paraespinhal de WILTSE (multífido e longuíssimo); facetas e movimento.",
+   "capitulo": "Capítulo 37 · Vias de acesso anatômicas à coluna, com os capítulos 39, 41, 42, 43 e 44 e o Netter, cap. 2",
+   "resumo": "33 vértebras e 24 segmentos móveis; a orientação das facetas define o movimento (semicoronal na cervical, sagital na lombar); referências do pescoço (hioide C3, tireoide C4-C5, cricoide C6, proeminente C7); disco com núcleo de água e proteoglicano e anel de 12 lamelas (colágeno I fora, II dentro), nutrido por difusão das placas; membrana tectória continua o LLP, alares do dente aos côndilos; cone em L1-L2; raízes C2 a C7 acima do pedículo, C8 entre C7 e T1, o resto abaixo; ramo dorsal medial inerva as facetas, sinuvertebral o disco; pedículo cervical com cortical lateral fina (artéria vertebral de C3 a C6), torácico mais estreito em T5; ADAMKIEWICZ à esquerda entre T9 e T11 (80%), zona crítica T4 a T9, espinal anterior irriga 2/3 anteriores; via anterior cervical pela esquerda, medial à bainha carótica, longus colli afastado; transesternal de C4 a T4; via posterior de C1 até 1,5 cm; WILTSE entre multífido e longuíssimo; zona de entrada de LEE.",
    "acesso": "gratis",
-   "minutos": 4,
+   "minutos": 34,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -19,8 +19,23 @@
      "radar": "fundamento"
     },
     {
-     "id": "raizes-pediculos-e-facetas",
-     "titulo": "Raízes, pedículos e facetas",
+     "id": "a-vertebra-as-curvas-e-os-pontos-de-referencia",
+     "titulo": "A vértebra, as curvas e os pontos de referência",
+     "radar": "confirmado"
+    },
+    {
+     "id": "articulacoes-disco-e-ligamentos",
+     "titulo": "Articulações, disco e ligamentos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "medula-raizes-e-tratos",
+     "titulo": "Medula, raízes e tratos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pediculos-e-parafusos",
+     "titulo": "Pedículos e parafusos",
      "radar": "confirmado"
     },
     {
@@ -29,50 +44,123 @@
      "radar": "confirmado"
     },
     {
-     "id": "as-vias-cervicais",
-     "titulo": "As vias cervicais",
+     "id": "a-via-anterior-da-coluna-cervical",
+     "titulo": "A via anterior da coluna cervical",
      "radar": "confirmado"
     },
     {
-     "id": "a-via-paraespinhal-lombar",
-     "titulo": "A via paraespinhal lombar",
+     "id": "a-transicao-cervicotoracica-e-a-coluna-toracica-",
+     "titulo": "A transição cervicotorácica e a coluna torácica alta",
      "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-posteriores-e-os-musculos-do-dorso",
+     "titulo": "As vias posteriores e os músculos do dorso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-canal-lombar-e-a-estenose",
+     "titulo": "O canal lombar e a estenose",
+     "radar": "confirmado"
+    },
+    {
+     "id": "vizinhos-trauma-infeccao-e-deformidade",
+     "titulo": "Vizinhos: trauma, infecção e deformidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
+    "coluna-0085",
+    "coluna-0067",
+    "coluna-0163",
+    "coluna-0010",
+    "coluna-0099",
+    "coluna-0169",
+    "coluna-0206",
+    "coluna-0209",
     "coluna-0208",
+    "coluna-0192",
+    "coluna-0216",
+    "coluna-0222",
+    "coluna-0286",
     "coluna-0098",
     "coluna-0097",
     "coluna-0272",
-    "coluna-0169",
-    "coluna-0099",
-    "coluna-0206",
+    "coluna-0233",
     "coluna-0264",
     "coluna-0075",
     "coluna-0262",
     "coluna-0027",
     "coluna-0101",
-    "coluna-0023",
     "coluna-0281",
     "coluna-0167",
-    "coluna-0085",
-    "coluna-0216",
-    "coluna-0233",
+    "coluna-0023",
     "coluna-0054",
     "coluna-0265",
-    "coluna-0192",
-    "coluna-0222",
-    "coluna-0286"
+    "coluna-0068",
+    "coluna-0327",
+    "coluna-0346",
+    "coluna-0344",
+    "coluna-0304",
+    "coluna-0354",
+    "coluna-0296",
+    "coluna-0349",
+    "coluna-0337"
    ],
    "treino": [
+    "coluna-0401",
+    "coluna-0492",
+    "coluna-0496",
+    "coluna-0497",
+    "coluna-0498",
+    "coluna-0499",
+    "coluna-0502",
+    "coluna-0503",
+    "coluna-0504",
     "coluna-0567",
     "coluna-0568",
     "coluna-0571",
+    "coluna-0505",
+    "coluna-0506",
     "coluna-0564",
-    "coluna-0565",
-    "coluna-0569",
+    "coluna-0400",
+    "coluna-0482",
+    "coluna-0500",
+    "coluna-0501",
+    "coluna-0507",
     "coluna-0570",
-    "coluna-0566"
+    "coluna-0369",
+    "coluna-0569",
+    "coluna-0493",
+    "coluna-0494",
+    "coluna-0495",
+    "coluna-0565",
+    "coluna-0566",
+    "coluna-0362",
+    "coluna-0377",
+    "coluna-0394",
+    "coluna-0408",
+    "coluna-0415",
+    "coluna-0417",
+    "coluna-0436",
+    "coluna-0454",
+    "coluna-0469",
+    "coluna-0470",
+    "coluna-0471",
+    "coluna-0472",
+    "coluna-0473",
+    "coluna-0474",
+    "coluna-0481",
+    "coluna-0483",
+    "coluna-0484",
+    "coluna-0485",
+    "coluna-0486",
+    "coluna-0487"
    ],
    "subtemas": [
     "Anatomia da coluna"

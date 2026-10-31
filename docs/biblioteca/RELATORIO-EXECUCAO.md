@@ -144,7 +144,9 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 700 | Bíceps distal e cabeça longa | 79 KB, 7 figuras (Campbell e Green 7ª) | 38 |
 | 701 | LCA | 52 KB, 3 figuras | 40 |
 | 702 | Metástases ósseas e fratura patológica | 47 KB, Tabela 27.1 (MIRELS) | 61, com os simulados antigos 0370 a 0383 |
-| (este) | Hérnia de disco lombar, torácica e cervical | 54 KB | 50 (coluna-0422 pendente: hematoma subdural sem fonte nos livros) |
+| 703 | Hérnia de disco lombar, torácica e cervical | 54 KB | 50 (coluna-0422 pendente: hematoma subdural sem fonte nos livros) |
+| 704 | Estante da Biblioteca: o Campbell volta a ser um livro só | (sistema) | |
+| (este) | Anatomia da coluna e vias de acesso | 45 KB, com o Netter cap. 2 | 84, todo o subtema |
 
 ## Melhorias de sistema feitas no caminho
 
