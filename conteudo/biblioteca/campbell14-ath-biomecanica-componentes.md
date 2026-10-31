@@ -54,6 +54,7 @@ O roteiro deste resumo:
 !questoes central=quadril-0054 relacionadas=quadril-0129,quadril-0330,quadril-0032 treino=quadril-0723
 conceito: Braço do peso para o dos abdutores 2,5 para 1 (4 para 1 na artrose); carga na cabeça 3 vezes o peso; CHARNLEY medializa o acetábulo (encurta o braço do peso) e lateraliza o trocânter (alonga o dos abdutores); offset maior alonga o braço abdutor e reduz a força exigida; colo curto e rotação externa encurtam o braço abdutor; o centro superior e lateral aumenta as forças em torno do implante.
 como: As provas pedem o efeito da medialização e do offset (Ortopedia), o conceito de CHARNLEY (TEOT 2024), o que encurta o braço abdutor (TARO 2013) e o efeito do centro de rotação superior e lateral (TARO 2014).
+alerta: O Campbell associa o encurtamento do braço abdutor à deformidade em rotação externa (p. 180), mas o gabarito oficial do TARO 2013 (`quadril-0330`) é colo curto com rotação medial; o gabarito foi preservado.
 !fim
 
 # A transferência de estresse para o osso: DORR e o stress shielding {radar=confirmado}
