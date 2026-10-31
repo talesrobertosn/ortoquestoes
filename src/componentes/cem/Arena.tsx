@@ -50,21 +50,25 @@ export function RelogioArena({ aoAtualizar }: { aoAtualizar: () => void }) {
   </p>
 }
 
-/** O cabeçalho da arena: nome, critério, relógio e o placar do período (participantes, questões, líder). */
-export function Arena({ top, periodo, totalLista, aoAtualizar }: { top: LinhaRanking[] | null; periodo: Periodo; totalLista: number; aoAtualizar: () => void }) {
+/** O título da arena, sobre a cena (como a saudação da página inicial), com o relógio da próxima rodada. */
+export function TituloArena({ aoAtualizar, rotulo = 'Ranking · Salão dos Cem', titulo = 'Arena dos Residentes', sub = 'Cada questão diferente respondida vale um ponto.' }: {
+  aoAtualizar?: () => void; rotulo?: string; titulo?: string; sub?: string
+}) {
+  return <>
+    <p className="cem-heroi__rotulo">{rotulo}</p>
+    <h1 id="cem-titulo">{titulo}</h1>
+    <p className="cem-heroi__sub">{sub}</p>
+    {aoAtualizar && <RelogioArena aoAtualizar={aoAtualizar} />}
+  </>
+}
+
+/** O placar do período: quantos estão na arena, as questões do Top 50, o líder e o período. */
+export function PlacarArena({ top, periodo, totalLista }: { top: LinhaRanking[] | null; periodo: Periodo; totalLista: number }) {
+  if (!top || !top.length) return null
   const semana = periodo === 'semana'
-  return <header className="cem-arena">
-    <div className="cem-arena__titulo">
-      <p className="cem-rotulo">Ranking · Salão dos Cem</p>
-      <h1 id="cem-titulo">Arena dos Residentes</h1>
-      <p className="cem-arena__sub">Cada questão diferente respondida vale um ponto.</p>
-    </div>
-    <RelogioArena aoAtualizar={aoAtualizar} />
-    {top && top.length > 0 && <dl className="cem-placar">
-      <div><dt>Na arena</dt><dd className="numerico">{totalLista >= 100 ? '100+' : totalLista >= 50 ? `${totalLista}` : totalLista}</dd></div>
-      <div><dt>Questões do top 50</dt><dd className="numerico">{top.slice(0, 50).reduce((s, l) => s + l.total, 0).toLocaleString('pt-BR')}</dd></div>
-      <div><dt>{semana ? 'Líder da semana' : 'Líder geral'}</dt><dd className="cem-placar__nome">{top[0].apelido}</dd></div>
-      <div><dt>Período</dt><dd>{semana ? 'Últimos 7 dias' : 'Geral'}</dd></div>
-    </dl>}
-  </header>
+  return <dl className="cem-placar">
+    <div><dt>Na arena</dt><dd className="numerico">{totalLista >= 100 ? '100+' : totalLista}</dd></div>
+    <div><dt>Questões do Top 50</dt><dd className="numerico">{top.slice(0, 50).reduce((s, l) => s + l.total, 0).toLocaleString('pt-BR')}</dd></div>
+    <div><dt>{semana ? 'Líder da semana' : 'Líder geral'}</dt><dd className="cem-placar__nome">{top[0].apelido}</dd></div>
+  </dl>
 }

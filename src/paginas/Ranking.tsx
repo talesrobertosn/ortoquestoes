@@ -5,7 +5,7 @@ import { href } from '../util/rotas'
 import { recurso } from '../config'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
-import { Inventario } from '../componentes/Inventario'
+import { EmblemasDoNome, Fogueira, Inventario } from '../componentes/Inventario'
 import { SeloAssinante } from '../componentes/Premium'
 import { emblemaPorId, VITRINE_MAXIMO } from '../estado/conquistas'
 import { usarConquistas } from '../estado/usarConquistas'
@@ -14,23 +14,17 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
-import { Arena } from '../componentes/cem/Arena'
+import { PlacarArena, TituloArena } from '../componentes/cem/Arena'
 import { Jornada } from '../componentes/cem/Jornada'
 import { SalaoCem } from '../componentes/cem/SalaoCem'
+import { AbasRanking } from '../componentes/cem/Abas'
+import { MovimentoSelo } from '../componentes/cem/Movimento'
+import { SeloServico } from '../componentes/ServicoRanking'
 import { Escadaria } from '../componentes/cem/Escadaria'
 import { Classificacao } from '../componentes/cem/Classificacao'
 import { ascensao, novoCampeao, type LinhaRanking, type MinhaPosicao, type Periodo } from '../componentes/cem/regras'
 import '../estilos/paginas/Ranking.css'
 import '../estilos/paginas/SalaoCem.css'
-
-/** Abas: ranking de questões, ranking do Torneio de Flashcards (beta) e inventário de conquistas. */
-function AbasRanking({ atual, conquistadas, total }: { atual: 'ranking' | 'conquistas'; conquistadas: number; total: number }) {
-  return <nav className="rk-secoes" aria-label="Ranking e conquistas">
-    <a className="rk-secoes__aba" href={href('/ranking')} aria-current={atual === 'ranking' ? 'page' : undefined}><Icone nome="trofeu" tamanho={18} /> Questões</a>
-    <a className="rk-secoes__aba" href={href('/ranking?aba=flashcards')}><Icone nome="raio" tamanho={18} /> Flashcards <span className="selo-beta">Beta</span></a>
-    <a className="rk-secoes__aba" href={href('/conquistas')} aria-current={atual === 'conquistas' ? 'page' : undefined}><Icone nome="medalha" tamanho={18} /> Conquistas <span className="rk-secoes__contador numerico">{conquistadas}/{total}</span></a>
-  </nav>
-}
 
 const ROTULOS_PERIODO: Record<Periodo, string> = { geral: 'Geral', semana: 'Últimos 7 dias' }
 
@@ -155,30 +149,36 @@ export function Ranking() {
   const lista = atuais?.filter(linha => linha.posicao <= 100) ?? null
   const totalLista = lista?.length ?? 0
 
-  return <div className="cem" aria-labelledby="cem-titulo">
-    <div className="cem-topo">
-      <Arena top={lista} periodo={periodo} totalLista={totalLista} aoAtualizar={recarregarRanking} />
-      <Jornada sessao={!!sessao} participa={perfilRanking.participa} perfilCarregado={perfilCarregado} nome={nome} nomeExibido={nomeExibido}
-        minhaPosicao={minhaPosicao} eu={eu} linhas={atuais} periodo={periodo} meuTotal={meuTotal} aoEncontrar={() => definirPedidoEncontrar((n) => n + 1)} />
-    </div>
+  const jornada = <Jornada sessao={!!sessao} participa={perfilRanking.participa} perfilCarregado={perfilCarregado} nome={nome} nomeExibido={nomeExibido}
+    minhaPosicao={minhaPosicao} eu={eu} linhas={atuais} periodo={periodo} meuTotal={meuTotal} aoEncontrar={() => definirPedidoEncontrar((n) => n + 1)} />
+  const lugares = (lista ?? []).filter((l) => l.posicao <= 3).map((l) => ({
+    posicao: l.posicao, nome: l.apelido, ehVoce: l.eh_voce, valor: l.total.toLocaleString('pt-BR'), rotulo: periodo === 'semana' ? 'questões na semana' : 'questões',
+    selos: <><EmblemasDoNome ids={l.emblemas} totalGeral={l.total_geral} tamanho={24} /><Fogueira dias={l.sequencia ?? 0} tamanho={18} /><SeloServico servico={l.servico} /><MovimentoSelo linha={l} /></>,
+  }))
 
-    <AbasRanking atual="ranking" conquistadas={conquistadas} total={totalConquistas} />
+  return <div className="cem">
+    <SalaoCem cerimonia={cerimonia} lugares={lugares} lateral={jornada}
+      rotuloPodio={`Três primeiros colocados, ${periodo === 'semana' ? 'últimos 7 dias' : 'geral'}`}
+      cabecalho={<TituloArena aoAtualizar={recarregarRanking} />} />
+
+    <div className="cem-barra">
+      <AbasRanking atual="questoes" conquistadas={conquistadas} total={totalConquistas} />
+      {(sessao || visitanteDisponivel) && <div className="cem-barra__linha">
+        <div className="cem-periodo" role="radiogroup" aria-label="Período do ranking">
+          {(['geral', 'semana'] as const).map((p) => (
+            <button key={p} type="button" role="radio" aria-checked={periodo === p} className="cem-periodo__opcao" onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
+          ))}
+        </div>
+        <PlacarArena top={lista} periodo={periodo} totalLista={totalLista} />
+        <a className="cem-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> Liga da residência <SeloAssinante /></a>
+      </div>}
+    </div>
 
     {!sessao && !visitanteDisponivel ? (
       <Estado titulo="Entre na sua conta para ver o ranking" acoes={<a className="botao botao--principal" href={href('/conta?modo=entrar')}>Entrar ou criar conta</a>}>
         <p>O ranking reúne quem mais respondeu questões entre todas as contas com pelo menos {MINIMO_RANKING} questões respondidas.</p>
       </Estado>
     ) : <>
-      <div className="cem-barra">
-        <div className="cem-periodo" role="radiogroup" aria-label="Período do ranking">
-          {(['geral', 'semana'] as const).map((p) => (
-            <button key={p} type="button" role="radio" aria-checked={periodo === p} className="cem-periodo__opcao" onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
-          ))}
-        </div>
-        <p className="cem-criterio"><Icone nome="grafico" tamanho={15} /> <span>Conta cada questão diferente respondida{periodo === 'semana' ? ' nos últimos 7 dias' : ''}. Refazer a mesma não soma de novo.</span></p>
-        <a className="cem-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> Liga da residência <SeloAssinante /></a>
-      </div>
-
       {!sessao && <p className="cem-aviso"><Icone nome="cadeado" tamanho={15} /> <span>Sem conta, você vê as iniciais. <a href={href('/conta?modo=criar&voltar=%2Franking')}>Crie a sua grátis</a> para ver os nomes e disputar uma vaga no Top 50.</span></p>}
 
       {carregando && <div className="cem-carregando"><Carregando linhas={6} rotulo="Carregando ranking" /></div>}
@@ -192,7 +192,6 @@ export function Ranking() {
       </Estado>}
 
       {lista && lista.length > 0 && <>
-        <SalaoCem linhas={lista} periodo={periodo} cerimonia={cerimonia} />
         <Escadaria subidas={ascensao(lista)} />
         <Classificacao linhas={atuais!} periodo={periodo} comMovimento={comMovimento} pedidoEncontrar={pedidoEncontrar} />
       </>}

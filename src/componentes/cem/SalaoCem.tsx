@@ -1,29 +1,30 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { recurso } from '../../config'
-import { EmblemasDoNome, Fogueira } from '../Inventario'
-import { SeloServico } from '../ServicoRanking'
-import { MovimentoSelo } from './Movimento'
-import type { LinhaRanking, Periodo } from './regras'
 
 /**
- * O Salão dos Campeões (Top 3) do Salão dos Cem, 31/10/2026. A cena é pintada em HD-2D por
- * scripts/cenarios/salao_cem.py (base 480 x 270, ampliada 3x com a luz calculada) e, por cima, em camadas:
- * os três cavaleiros animados do Tales (scripts/sprites/cem_cavaleiros.py), a luz do vitral (que também banha os
- * cavaleiros), a frente da cena, as chamas das tochas e a poeira no feixe. Nomes, totais e selos são HTML, nos
- * cartões embaixo da cena (nada de texto rasterizado). Ordem visual 2 · 1 · 3; no celular a cena mostra o centro.
+ * O topo do ranking (O Salão dos Cem, 31/10/2026), no mesmo jeito da página inicial: a cena HD-2D grande, sem
+ * moldura, com o título claro no alto à esquerda, a missão num vidro escuro à esquerda (o lado calmo da pintura) e o
+ * Salão dos Campeões do centro para a direita.
+ *
+ * A cena é pintada por scripts/cenarios/salao_cem.py (base 480 x 270, ampliada 3x com a luz calculada). Por cima, em
+ * camadas: os estandartes (scripts/sprites/cem_estandartes.py) e os três cavaleiros animados
+ * (scripts/sprites/cem_cavaleiros.py), ambos desenhos do Tales; a luz do vitral (que também banha os cavaleiros), a
+ * frente da cena, as chamas das tochas e a poeira no feixe. Nomes e totais são HTML nas placas do pódio, no chão do
+ * salão (nada de texto rasterizado). No celular a cena mostra o recorte do pódio e o resto vem embaixo.
  * Com a cena fora da tela ou "menos movimento", tudo para.
  */
 const BASE = { w: 480, h: 270 }
 // Onde os cavaleiros pisam (px da arte base), os mesmos de public/ranking/cem/salao.json.
-const PEDESTAL: Record<number, { cx: number; topo: number }> = { 1: { cx: 240, topo: 170 }, 2: { cx: 166, topo: 186 }, 3: { cx: 314, topo: 192 } }
-const TOCHAS = [{ x: 58, y: 118 }, { x: 422, y: 118 }]
-// Quadro do cavaleiro (cavaleiros.json): 75 x 88, pés em (37, 84); linhas 0-2 espera, 3-5 saudação.
+const PEDESTAL: Record<number, { cx: number; topo: number }> = { 1: { cx: 318, topo: 170 }, 2: { cx: 246, topo: 186 }, 3: { cx: 390, topo: 192 } }
+const TOCHAS = [{ x: 206, y: 112 }, { x: 466, y: 112 }]
+// Quadros: cavaleiro 75 x 88 (pés em 37, 84; linhas 0-2 espera, 3-5 saudação); estandarte 66 x 94 (haste em 33, 3).
 const CAV = { w: 75, h: 88, pes: [37, 84], linhas: 6 }
+const EST = { w: 66, h: 94, escala: 0.6, topo: 44 }
 const LUGAR = ['', '1º lugar', '2º lugar', '3º lugar']
 const TITULO = ['', 'Campeão', 'Guardião de prata', 'Guardião de bronze']
 
 const pct = (v: number, total: number) => `${(v / total) * 100}%`
-const POEIRA = Array.from({ length: 14 }, (_, i) => ({ x: 212 + ((i * 37) % 70), y: 40 + ((i * 53) % 120), d: 6 + (i % 5) * 1.3, a: -((i * 1.7) % 8) }))
+const POEIRA = Array.from({ length: 14 }, (_, i) => ({ x: 292 + ((i * 37) % 60), y: 30 + ((i * 53) % 130), d: 6 + (i % 5) * 1.3, a: -((i * 1.7) % 8) }))
 
 function Cavaleiro({ lugar, saudando }: { lugar: number; saudando: boolean }) {
   const p = PEDESTAL[lugar]
@@ -35,9 +36,29 @@ function Cavaleiro({ lugar, saudando }: { lugar: number; saudando: boolean }) {
   return <span className={`cem-cavaleiro cem-cavaleiro--${lugar}${saudando ? ' cem-cavaleiro--saudando' : ''}`} style={estilo} aria-hidden="true" />
 }
 
-export interface CartaoTop3 { linha: LinhaRanking; extra?: ReactNode }
+function Estandarte({ lugar }: { lugar: number }) {
+  const w = EST.w * EST.escala, h = EST.h * EST.escala
+  const estilo: CSSProperties = {
+    left: pct(PEDESTAL[lugar].cx - w / 2, BASE.w), top: pct(EST.topo + (lugar === 1 ? -10 : 0), BASE.h), width: pct(w, BASE.w), height: pct(h, BASE.h),
+    backgroundImage: `url(${recurso('ranking/cem/estandartes.png')})`, backgroundPositionY: `${((lugar - 1) / 2) * 100}%`,
+    animationDelay: `${-lugar * 0.31}s`,
+  }
+  return <span className={`cem-estandarte cem-estandarte--${lugar}`} style={estilo} aria-hidden="true" />
+}
 
-export function SalaoCem({ linhas, periodo, cerimonia }: { linhas: LinhaRanking[]; periodo: Periodo; cerimonia: string | null }) {
+/** Um lugar do Top 3, já pronto para mostrar (o ranking de questões e o do Torneio usam o mesmo salão). */
+export interface LugarSalao { posicao: number; nome: string; ehVoce: boolean; valor: string; rotulo: string; selos?: ReactNode }
+
+export function SalaoCem({ cabecalho, lateral, lugares, rotuloPodio, cerimonia }: {
+  /** O título da página e o relógio (no alto à esquerda, sobre a cena). */
+  cabecalho: ReactNode
+  /** O vidro escuro à esquerda (a jornada, no ranking; o convite, no Torneio). */
+  lateral?: ReactNode
+  lugares: LugarSalao[]
+  /** Nome do pódio para o leitor de tela. */
+  rotuloPodio: string
+  cerimonia: string | null
+}) {
   const palco = useRef<HTMLDivElement>(null)
   const [visivel, definirVisivel] = useState(true)
   useEffect(() => {
@@ -47,38 +68,33 @@ export function SalaoCem({ linhas, periodo, cerimonia }: { linhas: LinhaRanking[
     io.observe(el)
     return () => io.disconnect()
   }, [])
-  const top3 = linhas.filter((l) => l.posicao <= 3).sort((a, b) => a.posicao - b.posicao)
+  const top3 = lugares.filter((l) => l.posicao <= 3).sort((a, b) => a.posicao - b.posicao)
   const img = (nome: string) => recurso(`ranking/cem/${nome}`)
-  const semana = periodo === 'semana'
-  return <section id="cem-salao" className={'cem-salao' + (cerimonia ? ' cem-salao--cerimonia' : '')} aria-labelledby="cem-salao-t" tabIndex={-1}>
-    <header className="cem-salao__cabeca">
-      <p className="cem-rotulo cem-rotulo--claro">Salão dos Campeões</p>
-      <h2 id="cem-salao-t">Top 3</h2>
-      <p className="cem-salao__sub">{semana ? 'Quem mais respondeu questões nos últimos 7 dias' : 'Quem mais respondeu questões no ranking geral'}</p>
-    </header>
-    <div ref={palco} className={'cem-salao__palco' + (visivel ? '' : ' cem-pausado')} aria-hidden="true">
-      <div className="cem-salao__mundo">
-        <img className="cem-salao__camada" src={img('salao-fundo.webp')} srcSet={`${img('salao-fundo-960.webp')} 960w, ${img('salao-fundo.webp')} 1440w`}
-          sizes="(max-width: 40rem) 160vw, min(72rem, 100vw)" alt="" width={1440} height={810} decoding="async" fetchPriority="high" draggable={false} />
-        {TOCHAS.map((t, i) => <span key={i} className="cem-salao__tocha" style={{ left: pct(t.x - 6, BASE.w), top: pct(t.y - 14, BASE.h), width: pct(12, BASE.w), height: pct(16, BASE.h), backgroundImage: `url(${img('chama-16.png')})`, animationDelay: `${-i * 0.17}s` }} />)}
+  return <section id="cem-salao" className={'cem-heroi' + (cerimonia ? ' cem-heroi--cerimonia' : '') + (visivel ? '' : ' cem-pausado')} aria-labelledby="cem-titulo" tabIndex={-1}>
+    <div className="cem-heroi__cena">
+    <div ref={palco} className="cem-heroi__palco" aria-hidden="true">
+      <div className="cem-heroi__mundo">
+        <img className="cem-heroi__camada" src={img('salao-fundo.webp')} srcSet={`${img('salao-fundo-960.webp')} 960w, ${img('salao-fundo.webp')} 1440w`}
+          sizes="(max-width: 40rem) 175vw, min(76rem, 100vw)" alt="" width={1440} height={810} decoding="async" fetchPriority="high" draggable={false} />
+        {top3.map((l) => <Estandarte key={l.posicao} lugar={l.posicao} />)}
+        {TOCHAS.map((t, i) => <span key={i} className="cem-heroi__tocha" style={{ left: pct(t.x - 5, BASE.w), top: pct(t.y - 16, BASE.h), width: pct(10, BASE.w), height: pct(16, BASE.h), backgroundImage: `url(${img('tocha.png')})`, animationDelay: `${-i * 0.17}s` }} />)}
         {top3.map((l) => <Cavaleiro key={l.posicao} lugar={l.posicao} saudando={!!cerimonia && l.posicao === 1} />)}
-        <img className="cem-salao__camada cem-salao__luz" src={img('salao-luz.webp')} alt="" width={1440} height={810} decoding="async" draggable={false} />
-        <span className="cem-salao__poeira">{POEIRA.map((p, i) => <i key={i} style={{ left: pct(p.x, BASE.w), top: pct(p.y, BASE.h), animationDuration: `${p.d}s`, animationDelay: `${p.a}s` }} />)}</span>
-        <img className="cem-salao__camada" src={img('salao-frente.webp')} alt="" width={1440} height={810} decoding="async" draggable={false} />
-        {cerimonia && <span className="cem-salao__festa">{Array.from({ length: 18 }, (_, i) => <i key={i} style={{ left: `${40 + ((i * 23) % 21)}%`, animationDelay: `${(i % 6) * 0.12}s`, ['--dx' as string]: `${((i * 13) % 9) - 4}vw` }} />)}</span>}
+        <img className="cem-heroi__camada cem-heroi__luz" src={img('salao-luz.webp')} alt="" width={1440} height={810} decoding="async" draggable={false} />
+        <span className="cem-heroi__poeira">{POEIRA.map((p, i) => <i key={i} style={{ left: pct(p.x, BASE.w), top: pct(p.y, BASE.h), animationDuration: `${p.d}s`, animationDelay: `${p.a}s` }} />)}</span>
+        <img className="cem-heroi__camada" src={img('salao-frente.webp')} alt="" width={1440} height={810} decoding="async" draggable={false} />
+        {cerimonia && <span className="cem-heroi__festa">{Array.from({ length: 18 }, (_, i) => <i key={i} style={{ left: `${58 + ((i * 23) % 16)}%`, animationDelay: `${(i % 6) * 0.12}s`, ['--dx' as string]: `${((i * 13) % 9) - 4}vw` }} />)}</span>}
       </div>
     </div>
-    <ol className="cem-salao__cartoes" aria-label="Três primeiros colocados">
-      {top3.map((l) => <li key={l.posicao} className={`cem-podio cem-podio--${l.posicao}${l.eh_voce ? ' cem-podio--voce' : ''}`}>
-        <span className="cem-podio__lugar"><span className="cem-podio__numero numerico" aria-hidden="true">{l.posicao}</span><span><b>{LUGAR[l.posicao]}</b><small>{TITULO[l.posicao]}</small></span></span>
-        <strong className="cem-podio__nome">{l.apelido}{l.eh_voce && <span className="cem-voce">você</span>}</strong>
-        <span className="cem-podio__total"><b className="numerico">{l.total.toLocaleString('pt-BR')}</b> <small>{semana ? 'questões na semana' : 'questões'}</small></span>
-        <span className="cem-podio__selos">
-          <EmblemasDoNome ids={l.emblemas} totalGeral={l.total_geral} tamanho={28} />
-          <Fogueira dias={l.sequencia ?? 0} tamanho={20} />
-          <SeloServico servico={l.servico} />
-          <MovimentoSelo linha={l} />
-        </span>
+    <div className="cem-heroi__cabeca">{cabecalho}</div>
+    {lateral && <div className="cem-heroi__lateral">{lateral}</div>}
+    </div>
+    {/* O chão do salão: as placas do pódio, cada uma embaixo do seu pedestal (como o chão da sequência na página inicial). */}
+    <ol className="cem-heroi__podio" aria-label={rotuloPodio}>
+      {top3.map((l) => <li key={l.posicao} className={`cem-placa cem-placa--${l.posicao}${l.ehVoce ? ' cem-placa--voce' : ''}`}>
+        <span className="cem-placa__lugar"><span className="cem-placa__medalha" aria-hidden="true" style={{ backgroundImage: `url(${img('medalhas.png')})`, backgroundPositionX: `${((l.posicao - 1) / 2) * 100}%` }} /><span><b>{LUGAR[l.posicao]}</b> <small>{TITULO[l.posicao]}</small></span></span>
+        <strong className="cem-placa__nome">{l.nome}{l.ehVoce && <span className="cem-voce">você</span>}</strong>
+        <span className="cem-placa__total"><b className="numerico">{l.valor}</b> <small>{l.rotulo}</small></span>
+        {l.selos && <span className="cem-placa__selos">{l.selos}</span>}
       </li>)}
     </ol>
     {cerimonia && <p className="so-leitor" role="status">Novo líder: {cerimonia}</p>}
