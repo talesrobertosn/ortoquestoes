@@ -10,13 +10,15 @@ Fila e placar: `python3 scripts/biblioteca/fila_teot_taro.py` (`--resumo`, `--pr
 | --- | --- | --- |
 | 31/10/2026 (início) | 4 de 88 | 313 de 2.291 |
 | 31/10/2026 (critério novo: questão ligada a resumo de 45 KB) | 2 de 88 | 311 de 2.291 |
+| 31/10/2026 (conta também os comentários do FLUXO e o cap. 24) | 2 de 88 | 816 de 2.291 |
 
 ## Entregas
 
 | Data | PR | Subtema | Resumo | Simulados novos (e por quê) | Comentários | Alertas e observações |
 | --- | --- | --- | --- | --- | --- | --- |
 | 31/10/2026 | 719 | Outras malformações congênitas (mão) | `green8-malformacoes-congenitas`, 15 para 61 KB, 4 figuras do Green 7 e 12 tabelas | nenhum: o subtema já tinha 10 simulados do ciclo 9 | 54 (44 de TARO, TEOT, TEPOP, SBOT-SP, CET-PR e Ortopedia; 10 simulados), de 0,9 a 2,8 mil caracteres | gabarito contra o livro em mao-0020, mao-0025 e mao-0250; faltam 6 questões TARO do subtema que o dossiê não listou (mao-0145, 0161, 0332, 0333, 0510, 0511) |
-| 31/10/2026 | (este PR) | Fratura da fise proximal e da tuberosidade da tíbia (parte do guarda-chuva "Outras fraturas na criança", com "Fraturas do fêmur e da perna na criança" e "Lesões fisárias") | `rockwoodcriancas10-27-fise-proximal-tibia`, 21 para 45 KB, 4 figuras (caps. 27 e 29) e 12 tabelas, com o COZEN do cap. 29 | 5 projeções (pediatria-1427 a 1431): o script dava 0, mas o mapa achou lacunas cobráveis (tratamento do COZEN, idades de MUBARAK, estágios de EHRENBORG, fratura oculta, lesão ligamentar nas III e IV) num capítulo cobrado 26 vezes | 42 (28 oficiais de TEOT, TARO, TEPOP, ENARE R4, SBOT-SP e 14 simulados), de 0,9 a 2,4 mil caracteres, 6 com figura | gabarito contra o livro em pediatria-0918 (TEOT 2025) e 0646; 6 sem gabarito com resposta provável |
+| 31/10/2026 | 723 | Fratura da fise proximal e da tuberosidade da tíbia (parte do guarda-chuva "Outras fraturas na criança", com "Fraturas do fêmur e da perna na criança" e "Lesões fisárias") | `rockwoodcriancas10-27-fise-proximal-tibia`, 21 para 45 KB, 4 figuras (caps. 27 e 29) e 12 tabelas, com o COZEN do cap. 29 | 5 projeções (pediatria-1427 a 1431): o script dava 0, mas o mapa achou lacunas cobráveis (tratamento do COZEN, idades de MUBARAK, estágios de EHRENBORG, fratura oculta, lesão ligamentar nas III e IV) num capítulo cobrado 26 vezes | 42 (28 oficiais de TEOT, TARO, TEPOP, ENARE R4, SBOT-SP e 14 simulados), de 0,9 a 2,4 mil caracteres, 6 com figura | gabarito contra o livro em pediatria-0918 (TEOT 2025) e 0646; 6 sem gabarito com resposta provável |
+| 31/10/2026 | (este PR) | Fraturas do colo do fêmur e luxação traumática do quadril na criança (Rockwood crianças cap. 24, parte do guarda-chuva "Outras fraturas na criança") | `rockwoodcriancas10-24-quadril`, reescrito para 45 KB, 4 figuras (DELBET, vasos, RATLIFF, estresse) e 11 tabelas | 4 projeções (pediatria-1432 a 1435): STEWART-MILFORD, separação fisária neonatal, coxa vara e gesso por idade | 31 reescritos (16 oficiais de TEOT, TARO e ENARE R4; 15 simulados), de 1,2 a 2,2 mil caracteres, 9 com figura | gabarito contra o livro em pediatria-0581 (RATLIFF III, TEOT 2023); 0561 com os epônimos pelo Campbell cap. 55; 0814 com a taxa do adulto pelo Rockwood adulto; 0799 pelo Tachdjian cap. 23; 5 sem gabarito com resposta provável |
 
 ## Pendências e lacunas
 

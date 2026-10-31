@@ -6,7 +6,7 @@ caem estiverem 100% feitos. Este script mede isso a partir do acervo, sem depend
 
   - tema que mais cai = subtema com pelo menos MIN_QUESTOES questões do TEOT ou do TARO;
   - questão refeita = comentário com geradoEm a partir de 2026-10-30 (início da refação, no jeito novo);
-  - questão pronta = comentário refeito E citada num bloco !questoes de um resumo com pelo menos 45 KB (subtemas
+  - questão pronta = comentário refeito (geradoEm desde a refação ou revisado contra um resumo, campo baseResumo) E citada num bloco !questoes de um resumo com pelo menos 45 KB (subtemas
     guarda-chuva, como "Outras fraturas na criança", se espalham por vários capítulos: cada questão precisa do seu);
   - subtema feito = nenhuma questão TEOT/TARO pendente.
 
@@ -73,6 +73,12 @@ def carregar():
     return com, resumos, subtemas, simulados, citada
 
 
+def refeito(c: dict) -> bool:
+    """Comentário no padrão novo: escrito na refação (geradoEm desde INICIO_REFACAO) ou revisado contra um resumo
+    pelo fluxo de docs/comentarios-resumos (campo baseResumo, cuja validade o teste de proveniência garante)."""
+    return (c.get("geradoEm") or "") >= INICIO_REFACAO or bool(c.get("baseResumo"))
+
+
 def simulados_sugeridos(qs: list, ja_feitos: int) -> int:
     """Ponto de partida para o número de simulados novos do subtema (ver o cabeçalho)."""
     base = round(len(qs) / 4)
@@ -88,7 +94,7 @@ def fila():
     for s, qs in subtemas.items():
         if len(qs) < MIN_QUESTOES:
             continue
-        pend = [q["id"] for q in qs if (com.get(q["id"], {}).get("geradoEm") or "") < INICIO_REFACAO
+        pend = [q["id"] for q in qs if not refeito(com.get(q["id"], {}))
                 or citada.get(q["id"], 0) < MIN_RESUMO]
         rs = resumos.get(s, [])
         pronto = not pend
