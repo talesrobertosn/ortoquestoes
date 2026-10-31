@@ -27,13 +27,11 @@ O capítulo apresenta quatro sistemas. **POTT** (na verdade talvez descrito ante
 
 ## DANIS-WEBER: a altura do traço da fíbula
 
-!tabela DANIS-WEBER: a altura do traço da fíbula
 | Tipo | Traço da fíbula | Frequência típica |
 | --- | --- | --- |
 | **A** | **abaixo** da sindesmose | cerca de 38% |
 | **B** | **no nível** da sindesmose | cerca de 52% |
 | **C** | **acima** da sindesmose | cerca de 10% |
-!fim
 
 É reprodutível ("até um médico exausto às quatro da manhã consegue aplicar", na frase citada por LINDSJÖ), mas tem três limites que a banca explora: **não prevê com precisão a lesão da sindesmose** (nem se ela existe, nem a altura), **não olha o lado medial** e **não dá prognóstico confiável**. Na AO/OTA o tornozelo é o segmento **44**, com os mesmos A, B e C de WEBER.
 
