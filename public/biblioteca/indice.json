@@ -9084,15 +9084,15 @@
   },
   {
    "id": "rockwoodcriancas10-31-pe",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas, luxações e outras lesões do pé na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-   "resumo": "Tálus (artéria do canal do tarso, HAWKINS e necrose, sinal de HAWKINS, processo lateral, osteocondral medial); calcâneo extra-articular e oculto, BOHLER, conservador abaixo dos 10 anos; luxação subtalar medial; cuboide e quebra-nozes; LISFRANC (equimose plantar, carga, segundo metatarsal e cuboide, HARDCASTLE B); metatarsais (primeiro até 5 anos, quinto depois); base do quinto (apófise longitudinal, JONES); estresse; falanges, sesamoides, cortador de grama, compartimental e prego.",
+   "resumo": "Pé em crescimento e ossificação; tálus (artéria do canal do tarso, HAWKINS e necrose, sinal de HAWKINS, processo lateral por dorsiflexão com inversão, osteocondral medial na criança); calcâneo extra-articular e oculto, BOHLER, SEVER, conservador abaixo dos 10 anos; síndrome dolorosa complexa regional; luxação subtalar medial; cuboide e quebra-nozes; LISFRANC (equimose plantar, carga, segundo metatarsal e cuboide, HARDCASTLE B); metatarsais (primeiro até 5 anos, quinto depois); base do quinto (apófise longitudinal, zonas, JONES, ISELIN); estresse do colo do segundo metatarsal; falanges, sesamoides, cortador de grama, esmagamento, compartimental e prego.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 28,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -9100,29 +9100,94 @@
      "radar": "fundamento"
     },
     {
-     "id": "talus",
-     "titulo": "Tálus",
-     "radar": "confirmado"
+     "id": "o-pe-em-crescimento",
+     "titulo": "O pé em crescimento",
+     "radar": "fundamento"
     },
     {
-     "id": "calcaneo-e-luxacao-subtalar",
-     "titulo": "Calcâneo e luxação subtalar",
+     "id": "talus-anatomia-e-vascularizacao",
+     "titulo": "Tálus: anatomia e vascularização",
+     "radar": "fundamento"
+    },
+    {
+     "id": "talus-colo-hawkins-e-necrose",
+     "titulo": "Tálus: colo, HAWKINS e necrose",
      "radar": "oportunidade"
     },
     {
-     "id": "mediope-e-lisfranc",
-     "titulo": "Mediopé e LISFRANC",
+     "id": "talus-corpo-processo-lateral-e-lesao-osteocondra",
+     "titulo": "Tálus: corpo, processo lateral e lesão osteocondral",
      "radar": "confirmado"
     },
     {
-     "id": "metatarsais-e-quinto-metatarsal",
-     "titulo": "Metatarsais e quinto metatarsal",
+     "id": "calcaneo",
+     "titulo": "Calcâneo",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "as-apofises-sever-e-iselin",
+     "titulo": "As apófises: SEVER e ISELIN",
      "radar": "confirmado"
     },
     {
-     "id": "estresse-falanges-e-outras-lesoes",
-     "titulo": "Estresse, falanges e outras lesões",
+     "id": "luxacao-subtalar-mediope-e-cuboide",
+     "titulo": "Luxação subtalar, mediopé e cuboide",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "lisfranc",
+     "titulo": "LISFRANC",
      "radar": "confirmado"
+    },
+    {
+     "id": "metatarsos-e-a-base-do-quinto",
+     "titulo": "Metatarsos e a base do quinto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas-de-estresse",
+     "titulo": "Fraturas de estresse",
+     "radar": "confirmado"
+    },
+    {
+     "id": "falanges-e-sesamoides",
+     "titulo": "Falanges e sesamoides",
+     "radar": "fundamento"
+    },
+    {
+     "id": "cortador-de-grama-esmagamento-compartimento-e-pr",
+     "titulo": "Cortador de grama, esmagamento, compartimento e prego",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "as-fraturas-que-a-radiografia-esconde",
+     "titulo": "As fraturas que a radiografia esconde",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quanto-desvio-aceitar",
+     "titulo": "Quanto desvio aceitar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tempos-de-imobilizacao",
+     "titulo": "Tempos de imobilização",
+     "radar": "fundamento"
+    },
+    {
+     "id": "perguntas-que-a-banca-faz",
+     "titulo": "Perguntas que a banca faz",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tres-casos-para-fixar",
+     "titulo": "Três casos para fixar",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -9134,10 +9199,10 @@
     "pediatria-0626",
     "pediatria-0596",
     "pediatria-0518",
+    "pediatria-0512",
     "pediatria-0718",
     "pediatria-0704",
     "pediatria-0582",
-    "pediatria-0512",
     "pediatria-0597"
    ],
    "treino": [
@@ -9148,6 +9213,7 @@
     "pediatria-1334",
     "pediatria-1335",
     "pediatria-1336",
+    "pediatria-1462",
     "pediatria-1337",
     "pediatria-1338",
     "pediatria-1339",
@@ -9155,7 +9221,9 @@
     "pediatria-1341",
     "pediatria-1342",
     "pediatria-1343",
-    "pediatria-1344"
+    "pediatria-1344",
+    "pediatria-1460",
+    "pediatria-1461"
    ],
    "subtemas": [
     "Fraturas do pé na criança"

@@ -7051,19 +7051,29 @@
   "conferido": false
  },
  "pediatria-0512": {
-  "conceito": "**As osteocondroses.** São distúrbios dos **núcleos de ossificação** (epífises e apófises) de crianças e adolescentes. Algumas são verdadeiras necroses avasculares (Kienböck, Freiberg, Perthes); outras, como a doença de Sever, são **apofisites de tração**, em que a inserção de um tendão forte sobrecarrega a cartilagem de crescimento.\n\n**Os principais epônimos.**\n| Epônimo | Local |\n|---|---|\n| **Sever** | **Apófise do calcâneo** (inserção do tendão calcâneo) |\n| Osgood-Schlatter / Sinding-Larsen-Johansson | Tuberosidade da tíbia / polo inferior da patela |\n| **Köhler** | Navicular do pé |\n| **Freiberg** | **Cabeça do 2º metatarso** |\n| Iselin | Base do 5º metatarso |\n| **Panner** | **Capítulo do úmero** |\n| **Kienböck** | **Semilunar** |\n| Preiser | Escafoide do carpo |\n| **Thiemann** | Epífises das **falanges** da mão |\n| Scheuermann | Placas terminais vertebrais |\n\n**A doença de Iselin.** É a **apofisite de tração** da base do **5º metatarso**, na inserção do **fibular curto**. Acomete pré-adolescentes e adolescentes ativos (**10 a 14 anos**), sobretudo em esportes com corrida, saltos e mudanças de direção (futebol, basquete, ginástica). Há dor, **proeminência** e sensibilidade na borda lateral do pé, piores com a eversão contra resistência e com o calçado apertado. A radiografia mostra a **apófise** (que aparece entre 9 e 14 anos, com orientação **paralela** ao eixo do osso) alargada ou fragmentada. Não confundir com a **fratura por avulsão** (traço transverso) nem com a fratura de Jones. O tratamento é conservador: repouso relativo, gelo, calçado adequado, alongamento dos fibulares e, nos casos rebeldes, bota por algumas semanas.",
-  "correta": "**Correta: A (doença de Iselin).** A apofisite de tração da base do 5º metatarso, na inserção do fibular curto, é a doença de Iselin, típica de adolescentes esportistas.",
+  "conceito": "Dor na borda lateral do pé de uma menina de 12 anos, com a base do quinto metatarso proeminente e dolorosa: é a apófise dessa base inflamada pela tração.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 31) descreve a apófise: o centro de crescimento proximal do quinto metatarso, o **os vesalianum**, aparece por volta dos **9 anos**, une-se à metáfise entre **12 e 15 anos** e tem orientação **longitudinal**, paralela à diáfise (o que o separa de uma fratura, transversal). O fibular curto se insere ali, e a fáscia plantar também puxa a base.\n\nO nome vem do Campbell (15ª edição, cap. 34): **ISELIN** descreveu em 1912 a **epifisite de tração da base do quinto metatarso** em adolescentes jovens, na época do aparecimento da apófise. É, para o quinto metatarso, o que a doença de SEVER é para o calcâneo.\n\nOs outros epônimos da questão têm outro endereço: KÖHLER no navicular, FREIBERG na cabeça do metatarso.",
+  "correta": "**A) doença de Iselin.** É a epifisite de tração da base do quinto metatarso (Campbell, 15ª ed., cap. 34; apófise descrita no Rockwood and Wilkins' Fractures in Children, cap. 31).",
   "incorretas": {
-   "B": "A **doença de Köhler** é a osteonecrose do **navicular** do pé, em crianças de 4 a 7 anos.",
-   "C": "\"Doença de Wojtys\" não é um epônimo de osteocondrose do pé.",
-   "D": "A **doença de Freiberg** é a osteonecrose da **cabeça do 2º metatarso**.",
-   "E": "\"Doença de Takahara\" não é um epônimo de osteocondrose da base do 5º metatarso."
+   "B": "**KÖHLER** é a necrose do navicular entre 2 e 5 anos.",
+   "C": "**WOJTYS** não é epônimo de osteocondrose da base do quinto metatarso.",
+   "D": "**FREIBERG** é a osteocondrose da cabeça do metatarso.",
+   "E": "**TAKAHARA** não é o epônimo dessa apófise."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do pé.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do pé."
+   "Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34, seção Traction Epiphysitis of the Fifth Metatarsal Base (Iselin Disease), Figs. 34.17 e 34.18",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Fractures of the Base of the Fifth Metatarsal (Figs. 31-35 e 31-36)",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "O Rockwood and Wilkins' Fractures in Children (cap. 31) descreve a apófise da base do quinto metatarso (os vesalianum) sem o epônimo; o nome ISELIN vem do Campbell (15ª ed., cap. 34).",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-31-35.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31, Fig. 31-35. A, apófise normal da base do quinto metatarso na inserção do fibular curto (seta), aos 10 anos; B, a seta grossa mostra a apófise, paralela à diáfise; a fina, uma fratura, quase perpendicular ao metatarso.",
+    "largura": 1160,
+    "altura": 854
+   }
+  ],
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-0513": {
@@ -7188,43 +7198,20 @@
   }
  },
  "pediatria-0518": {
-  "conceito": "Dor no calcanhar posterior de um menino que joga futebol é uma situação clássica, e o diagnóstico mais comum não é fratura.\n\n**O que é.** A apófise do calcâneo é o centro de ossificação onde se insere o tendão calcâneo. Na criança ativa, a tração repetida do tendão sobre essa apófise ainda não fundida gera dor e inflamação: a **doença de SEVER** (ou apofisite do calcâneo).\n\n**Onde o capítulo entra.** O Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 31) cita a **SEVER** como o **diferencial** da fratura do calcâneo na criança, na apófise, por volta dos **6 a 10 anos**. O paciente da questão tem 13 anos, um pouco acima dessa faixa; o nome da doença não muda.\n\n**O contraste com a fratura.** A fratura do calcâneo da criança é rara (1 em 100.000), vem de **queda de altura**, é **extra-articular** em 78% abaixo dos 14 anos e é perdida em 44% a 55%, o que pede radiografia de controle em 2 semanas. A dor ao calçar a chuteira, sem trauma, é o retrato da apofisite.\n\n**Na prova:** apofisite do calcâneo = **SEVER**.\n\nO resumo de fraturas do pé na criança cita a SEVER na seção do calcâneo, como diagnóstico diferencial.",
-  "correta": "**A: doença de Sever.** É a osteocondrose (apofisite) da apófise do calcâneo, citada no capítulo como diferencial da fratura do calcâneo.",
+  "conceito": "Dor no calcanhar de um menino de 13 anos que joga futebol, piorando com a chuteira, é a apófise do calcâneo inflamada.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 31) explica: o centro secundário de ossificação do calcâneo, a apófise posterior em crescente onde se insere o tendão calcâneo, aparece entre **6 e 10 anos** e funde aos 14 a 16. A **inflamação dessa apófise** nessa fase causa **dor no calcanhar** e é a **doença de SEVER**. O capítulo a coloca no diagnóstico diferencial da fratura do calcâneo da criança, ao lado da osteomielite, do cisto ósseo simples e da fratura de estresse.\n\nA lógica é a das apófises de tração: o tendão calcâneo e a fáscia plantar puxam uma placa de crescimento ainda aberta, e a corrida e o salto repetidos a irritam. Por isso aparece no atleta jovem e piora com a atividade e o calçado de trava.",
+  "correta": "**A) doença de Sever.** É a inflamação da apófise do calcâneo da criança (Rockwood and Wilkins' Fractures in Children, cap. 31).",
   "incorretas": {
-   "B": "**Panner é a osteocondrose do capítulo do úmero**, no cotovelo.",
-   "C": "**Freiberg acomete a cabeça do metatarsal**, em geral o segundo.",
-   "D": "**Kienböck é a necrose do semilunar**, no punho.",
-   "E": "**Thiemann acomete as epífises das falanges** da mão."
+   "B": "**PANNER** é a osteocondrose do capítulo do úmero.",
+   "C": "**FREIBERG** é a da cabeça do metatarso.",
+   "D": "**KIENBÖCK** é a necrose do semilunar.",
+   "E": "**THIEMANN** acomete as epífises das falanges da mão."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Calcâneo e luxação subtalar."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Pathoanatomy and Applied Anatomy Relating to Calcaneal Fractures e Signs and Symptoms",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Calcâneo e luxação subtalar"
-     ],
-     "blocos": [
-      "calcaneo-e-luxacao-subtalar-da0d400e",
-      "calcaneo-e-luxacao-subtalar-728efd1c"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "63f6b0441f083159741d753d36a179ac032962709b08857770f6ba85ae2f064f"
-    }
-   ],
-   "questaoSha256": "6aae826004130861edf642bebad391deea3f5c29e139323149a2ee39814dd0a3",
-   "comentarioSha256": "10a13e56ab8923046a986d2b67e68fc4a0359bfadc98ef4e420ad030070a3f27"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0519": {
   "conceito": "**O caso.** Recém-nascida, menina, primogênita e de parto pélvico: três dos principais fatores de risco da displasia do desenvolvimento do quadril. O Ortolani positivo significa que o quadril está **luxado e é redutível**: a manobra de abdução com o quadril fletido faz a cabeça entrar no acetábulo com um ressalto.\n\n**Por que o Pavlik funciona.** O quadril luxado reduz em **flexão e abdução**, e reluxa em **extensão e adução**. O suspensório de Pavlik é uma órtese dinâmica que:\n- **impede a extensão**, com as tiras anteriores;\n- **impede a adução**, com as tiras posteriores;\n- **deixa livres a flexão e a abdução**, de modo que o bebê se movimenta dentro de um arco seguro e o peso das próprias pernas leva os quadris à abdução.\n\nCom a cabeça mantida dentro do acetábulo, o estímulo mecânico faz o acetábulo crescer e aprofundar. É o tratamento de escolha do nascimento até cerca de **6 meses**.\n\n**A regulagem e o que acontece quando ela erra.**\n\n| Ajuste | Correto | Erro e consequência |\n|---|---|---|\n| Tiras anteriores | Flexão de 90 a 110°, na linha axilar anterior | Flexão excessiva: neuropraxia do **femoral** e luxação **inferior** (obturatória) |\n| Tiras posteriores | Frouxas, só limitando a adução | Abdução forçada: **necrose avascular** da cabeça |\n| Flexão insuficiente | Evitar | Cabeça não se mantém reduzida |\n\n**Quando parar.** O quadril deve ser reavaliado (clinicamente e com ultrassom) em 1 a 3 semanas. Se não estiver reduzido em **3 a 4 semanas**, o Pavlik é suspenso: mantê-lo com a cabeça apoiada na borda posterior do acetábulo produz erosão dessa parede, a chamada **doença do Pavlik**, e piora o prognóstico do tratamento seguinte (redução fechada e gesso).\n\n**Contraindicações.** Frouxidão ligamentar extrema (Ehlers-Danlos), rigidez (artrogripose), desequilíbrio muscular (mielomeningocele), luxação teratológica e idade acima de 6 a 9 meses, quando a criança já é forte e pesada demais.\n\n**Resultados.** Nos quadris luxados redutíveis, o sucesso fica em torno de 85 a 95% quando a redução é obtida nas primeiras semanas. A necrose avascular, a complicação mais temida, é rara com o ajuste correto.\n\n**Na prova:** o Pavlik **impede extensão e adução** e **permite flexão e abdução**; sem redução em 3 a 4 semanas, suspender.",
@@ -8754,42 +8741,27 @@
   "conferido": false
  },
  "pediatria-0582": {
-  "conceito": "Na base do quinto metatarsal da criança, a radiografia mostra uma linha que pode ser apófise normal ou fratura. Saber distinguir evita gesso desnecessário e evita perder uma fratura de JONES.\n\n**O pé da criança.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 31, de Amy L. McIntosh), o pé da criança é quase todo **cartilagem**: absorve energia, por isso as fraturas são menos graves; esconde traços na radiografia; e remodela. Na dúvida, radiografar o outro pé.\n\n**A apófise.** Segundo o capítulo, a apófise da base do quinto (o **os vesalianum**) aparece por volta dos **9 anos** e se une entre **12 e 15**. Ela corre **longitudinal**, paralela à diáfise, como uma casca na lateral da tuberosidade. Já o traço de fratura costuma ser **transversal** ou oblíquo, perpendicular ao eixo do osso. Numa série, **47%** das supostas fraturas eram só a apófise.\n\n**As zonas da base.**\n- **Zona 1**, tuberosidade: gesso de marcha por 3 a 6 semanas; parafuso só se intra-articular desviada mais de 3 a 4 mm no atleta.\n- **Zona 2**, JONES: fica na área de **divisor de águas** vascular. Sem carga por 6 semanas; acima de 13 anos, há mais retardo e refratura, e a fixação primária é indicada.\n- **Zona 3**, estresse. A complicação mais comum é a **pseudartrose**.\n\n**Na prova:** apófise do quinto = **longitudinal**, paralela à diáfise; fratura = transversa.\n\nO resumo de fraturas do pé na criança traz a apófise na seção do quinto metatarsal.",
-  "correta": "**D: longitudinal.** A apófise corre paralela ao eixo da diáfise, ao contrário do traço de fratura.",
+  "conceito": "Na base do quinto metatarso da criança, uma linha pode ser fratura ou a apófise normal, e o erro é comum: numa série de \"fraturas\" da base do quinto entre 7 e 16 anos, **47%** eram a apófise mal interpretada.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 31) dá a chave: o centro de crescimento apofisário, o **os vesalianum**, tem orientação **longitudinal**, quase **paralela à diáfise**; a **fratura** é **transversal**, quase perpendicular ao metatarso (Figs. 31-35 e 31-36). A apófise aparece por volta dos 9 anos e se une entre 12 e 15.\n\nPor que a fratura é transversal? Na zona 1 (tuberosidade), a fratura é uma **avulsão por tração** do fibular curto e da fáscia plantar, que puxam a ponta da base e a quebram de través. A apófise, ao contrário, é uma lasca de osso em crescimento que acompanha o comprimento do metatarso.\n\nNa dúvida, compara-se com o outro pé.",
+  "correta": "**D) longitudinal.** A apófise da base do quinto metatarso corre paralela à diáfise, enquanto a fratura é transversal (Rockwood and Wilkins' Fractures in Children, cap. 31, Fig. 31-35).",
   "incorretas": {
-   "A": "**O traço oblíquo é mais típico de fratura** do que de apófise.",
-   "B": "**Coronal não descreve a apófise na radiografia**; ela é longitudinal, paralela à diáfise.",
-   "C": "**Transversal é o traço típico da fratura**, justamente o que se quer diferenciar da apófise."
+   "A": "**Oblíqua** descreve melhor a fratura de JONES da zona 2 que a apófise.",
+   "B": "**Coronal** não é a orientação descrita para a apófise.",
+   "C": "**Transversal é a fratura**, não a apófise."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Metatarsais e quinto metatarsal."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Fractures of the Base of the Fifth Metatarsal, Figs. 31-35 e 31-36",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Metatarsais e quinto metatarsal"
-     ],
-     "blocos": [
-      "metatarsais-e-quinto-metatarsal-ba9abafa",
-      "metatarsais-e-quinto-metatarsal-0432a36e"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "70d59f6909b4094bd87b3a557117b99c59803194c8aa732902bfb36353495d48"
-    }
-   ],
-   "questaoSha256": "2cd581a8d280ef01c9f2a753906424ac7f495a8d3fad358dc3d3a83996f23ec1",
-   "comentarioSha256": "254562f871917dac39287a3642209d9e7fcfa693c7701d76706c4ee26bd0f17b"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-31-35.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31, Fig. 31-35. A, apófise normal da base do quinto metatarso na inserção do fibular curto (seta), aos 10 anos; B, a seta grossa mostra a apófise, paralela à diáfise; a fina, uma fratura, quase perpendicular ao metatarso.",
+    "largura": 1160,
+    "altura": 854
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0583": {
   "conceito": "**A lesão do ligamento colateral ulnar do polegar na criança.** No adulto, a força em **abdução** (valgo) sobre a metacarpofalângica do polegar rompe o **ligamento colateral ulnar** (o \"polegar do esquiador\" ou do guarda-caça). Na criança, o ligamento é **mais resistente** que a fise e o osso: em vez de romper, ele **arranca** um fragmento da **base da falange proximal**, onde se insere na epífise.\n\n**A lesão resultante.** Uma fratura **Salter-Harris III** da base da falange proximal do polegar, com um fragmento **epifisário ulnar** (às vezes Salter-Harris IV, se o traço chega à metáfise). É o **equivalente pediátrico** do polegar do esquiador.\n\n**Por que importa.** O fragmento leva o ligamento junto: se ele estiver **desviado** ou rodado, a articulação fica **instável** (pinça fraca), e a superfície articular fica incongruente. Pode haver também a **lesão de Stener** equivalente: o fragmento com o ligamento fica preso fora da aponeurose do adutor e não volta ao lugar sozinho.\n\n**A comparação das estruturas.**\n| Estrutura | Lesão típica |\n|---|---|\n| **Colateral ulnar** | Avulsão epifisária ulnar da base da falange proximal (Salter-Harris III), pela abdução forçada |\n| Placa volar | Avulsão da base volar na hiperextensão |\n| Adutor do polegar | Insere-se no sesamoide ulnar e na base da falange; a sua aponeurose é a que se interpõe na lesão de Stener |\n| Flexor curto do polegar | Insere-se no sesamoide radial; raramente avulsiona |\n\n**O tratamento.** Fragmento **sem desvio** (menos de 1,5 a 2 mm) e articulação estável: **gesso** antebraquiopalmar com o polegar incluído por cerca de 4 semanas. Fragmento **desviado** ou rodado (mais de 2 mm, ou mais de 10% a 25% da superfície articular) ou instabilidade: **redução aberta** e fixação com fios ou parafuso, com reinserção do ligamento.\n\n**Nos outros dedos.** O mesmo padrão aparece nas articulações **metacarpofalângicas** dos dedos longos: os **ligamentos colaterais** se inserem na **epífise** da base da falange proximal, e a força em desvio lateral faz o ligamento arrancar um fragmento epifisário, quase sempre uma **Salter-Harris III** (a fratura extra-oitava é diferente: uma Salter-Harris II da base da falange proximal do dedo mínimo). Fragmentos desviados ou rodados exigem redução aberta e fixação.",
@@ -9196,83 +9168,34 @@
   "conferido": false
  },
  "pediatria-0596": {
-  "conceito": "As lesões osteocondrais do tálus têm dois lados com histórias diferentes, e na criança um deles predomina com folga.\n\n**O pé da criança.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 31, de Amy L. McIntosh), o pé da criança é quase todo **cartilagem**: absorve energia, por isso as fraturas são menos graves; esconde traços na radiografia; e remodela. Na dúvida, radiografar o outro pé.\n\n**O que o capítulo descreve.** Na criança, **79%** das lesões osteocondrais da cúpula do tálus são **mediais**. As duas formas se comportam de modo diferente:\n- **medial:** lesão **profunda**, em forma de taça, ligada a **microtrauma** repetido; muitas vezes sem história clara de entorse;\n- **lateral:** lesão **fina**, em lasca, claramente **traumática** (o tálus bate na fíbula na inversão) e mais sintomática.\n\n**Classificação e conduta.** BERNDT e HARTY, de I a IV; o tipo **IIa, com cisto**, é cirúrgico. Os tipos I a III vão para tratamento conservador por **6 meses**; o IV, para artroscopia.\n\n**Na prova:** osteocondral do tálus na criança = **medial (79%)**, profunda, de microtrauma; a lateral é fina e traumática.\n\nO resumo de fraturas do pé na criança traz as lesões osteocondrais na seção do tálus.",
-  "correta": "**A: medial.** O capítulo encontra 79% das lesões osteocondrais do tálus da criança no lado medial.",
+  "conceito": "A lesão osteocondral da cúpula do tálus tem dois endereços, e na criança predomina um deles.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 31, Fig. 31-10) traz os números: no adulto, BERNDT e HARTY acharam **56% mediais** e 44% laterais; na criança, LETTS encontrou **79% mediais**, 21% laterais e 1% centrais.\n\nAs duas não são iguais:\n- as **mediais** são **mais profundas, em taça**, talvez por microtrauma repetido; BERNDT e HARTY as reproduziram com **flexão plantar e inversão** (lesão posteromedial);\n- as **laterais** são **finas, em bolacha**, mais ligadas ao trauma agudo e mais sintomáticas; vêm da **dorsiflexão com inversão**, quando a borda anterolateral bate na fíbula.\n\nO capítulo usa \"fratura osteocondral\" e \"osteocondrite dissecante\" lado a lado: muitas lesões são antigas e o trauma só as torna sintomáticas. Os estágios I e II começam sem cirurgia.",
+  "correta": "**A) medial.** Na criança, 79% das lesões osteocondrais do tálus são mediais (LETTS, Rockwood and Wilkins' Fractures in Children, cap. 31).",
   "incorretas": {
-   "B": "**A lateral existe e é a mais traumática e sintomática**, mas é a minoria.",
-   "C": "**A região central não é a sede típica**; o capítulo divide as lesões entre medial e lateral.",
-   "D": "**Anterior também não.** As lesões ficam nas bordas medial e lateral da cúpula."
+   "B": "**As laterais** são 21% na criança; são as mais ligadas ao trauma, mas não as mais comuns.",
+   "C": "**As centrais** foram só 1% na série de LETTS.",
+   "D": "**Anterior** não é a divisão usada; as lesões se dividem em mediais (posteromediais) e laterais (anterolaterais)."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Tálus."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Fractures of the Osteochondral Surface of the Talus, Fig. 31-10",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Tálus"
-     ],
-     "blocos": [
-      "talus-4f7d5dd3",
-      "talus-85f1cdd2",
-      "talus-cf87a357"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "3bac5ef8e1f17db0e89b09d41cd66672994c1c37fed3b44ff809fc2c07c6260d"
-    }
-   ],
-   "questaoSha256": "a57eaea4ccfaab49ad9d9a8f158b0314e3b973806421018aee9af8e27a735885",
-   "comentarioSha256": "46ce4ff6c78079a979f52e89fe55b79ea4632ac5a9be6fa28d5c236b5f427ae5"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0597": {
-  "conceito": "A fratura de estresse é a fadiga do osso: microlesões repetidas que se somam até virar traço. No pé da criança e do adolescente, ela tem endereço preferido.\n\n**O pé da criança.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 31, de Amy L. McIntosh), o pé da criança é quase todo **cartilagem**: absorve energia, por isso as fraturas são menos graves; esconde traços na radiografia; e remodela. Na dúvida, radiografar o outro pé.\n\n**O que o capítulo descreve.** A sede mais comum é o **colo do segundo metatarsal**. O tratamento é com **bota por 4 a 6 semanas, sem gesso**. A fratura de estresse difícil é a do **navicular**: traço **sagital** no terço médio, em atletas de basquete ou barreiras; pede ressonância e tomografia e o retorno leva em média **5,6 meses**. Em meninas atletas, investigar **amenorreia e transtorno alimentar**.\n\n**Na prova:** estresse no pé da criança = **colo do segundo metatarsal**; bota, não gesso.\n\nO resumo de fraturas do pé na criança traz a fratura de estresse em seção própria.",
-  "correta": "**A: no colo do segundo metatarsal.** É a sede mais comum segundo o capítulo.",
+  "conceito": "A fratura de estresse nasce do treino: o osso remodela mais devagar do que se desgasta, e uma microfratura vira fratura. No pé da criança, ela tem um lugar preferido.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 31) diz que o **segundo metatarso** é o osso do pé mais acometido, em geral no **colo**, na junção da **diáfise móvel** com a **metáfise rígida**.\n\nO resto do quadro:\n- dor ao apoiar no início de um período de treino intenso, sem trauma claro, dor localizada e pouco edema;\n- radiografia inicial normal; cintilografia nas primeiras semanas; **ressonância** mostra o edema antes da radiografia;\n- procurar doença metabólica, amenorreia, transtorno alimentar, mudança de calçado ou piso;\n- tratamento com **bota e carga parcial por 4 a 6 semanas**, sem gesso, mantendo o condicionamento com natação ou bicicleta; volta em 8 a 12 semanas.",
+  "correta": "**A) no colo do segundo metatarsal.** É o local mais comum da fratura de estresse do pé (Rockwood and Wilkins' Fractures in Children, cap. 31).",
   "incorretas": {
-   "B": "**O terceiro metatarsal não é a sede mais comum**; o capítulo aponta o segundo.",
-   "C": "**O osso está certo, a região não.** A fratura de estresse se concentra no colo.",
-   "D": "**Erra o osso e a região.**"
+   "B": "**O terceiro metatarso** não é o mais acometido.",
+   "C": "**A diáfise do segundo** erra o local: a fratura fica no colo, na junção com a metáfise.",
+   "D": "**A diáfise do terceiro** erra o osso e o local."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Estresse, falanges e outras lesões; Metatarsais e quinto metatarsal."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Stress Fractures",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Estresse, falanges e outras lesões",
-      "Metatarsais e quinto metatarsal"
-     ],
-     "blocos": [
-      "estresse-falanges-e-outras-lesoes-f09f4114",
-      "estresse-falanges-e-outras-lesoes-cb34e2dd",
-      "metatarsais-e-quinto-metatarsal-f8cd18a0"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "550dfda9336223601393911baf2489396fb261a0025214ea5cd8a7673321a464"
-    }
-   ],
-   "questaoSha256": "310ca59f8e5cc9bd32fc9bd4de3900e9d05b78de71a712bf4d3a4e35a2d97f6c",
-   "comentarioSha256": "b88806041d168d6f1d59e20d759fb4d420442610b03b406b2b7e8c7a49c057a6"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0598": {
   "conceito": "**No mecanismo indireto, a transição médio-distal do rádio e boa parte da diáfise da ulna são os segmentos mais vulneráveis descritos.** A queda com a mão estendida transmite força ao longo dos ossos, muitas vezes com componente rotacional importante.\n\nA rotação ajuda a entender por que os dois traços podem estar em níveis diferentes. Quando estão no mesmo nível, há sugestão de menor torção; cominuição aponta para maior energia. Isso é diferente do golpe direto que quebra principalmente um osso, frequentemente a ulna, no padrão do cassetete.\n\nO antebraço funciona como um conjunto: rádio gira em torno da ulna e sua forma, distância interóssea e alinhamento influenciam a pronossupinação. O nível do traço também modifica remodelação e dificuldade de tratamento, por isso não deve ser reduzido a uma localização sem consequência funcional.\n\n**Leia “Mecanismo e epidemiologia”, na Biblioteca.** Relacione força indireta, rotação e nível dos dois ossos, e depois compare com a fratura isolada por golpe direto.",
@@ -10049,43 +9972,19 @@
   "conferido": false
  },
  "pediatria-0626": {
-  "conceito": "A fratura do processo lateral do tálus é chamada de \"fratura do snowboarder\" e é famosa por passar como entorse.\n\n**O pé da criança.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 31, de Amy L. McIntosh), o pé da criança é quase todo **cartilagem**: absorve energia, por isso as fraturas são menos graves; esconde traços na radiografia; e remodela. Na dúvida, radiografar o outro pé.\n\n**O mecanismo.** Segundo o capítulo, o processo lateral quebra em **dorsiflexão com inversão** do pé: é o mesmo movimento da **entorse em inversão** do tornozelo, só que com o pé para cima. O snowboard responde por 13,5% dos casos.\n\n**Por que importa.** Como a história e a dor lateral imitam uma entorse, **42%** dessas fraturas são perdidas na primeira consulta. A **incidência do encaixe** ajuda, e a **tomografia** confirma. Degrau **acima de 2 a 3 mm** pede fixação com parafuso.\n\n**Na prova:** processo lateral do tálus = **dorsiflexão + inversão**; dor lateral persistente após \"entorse\" = encaixe e tomografia.\n\nO resumo de fraturas do pé na criança traz o processo lateral na seção do tálus.",
-  "correta": "**C: entorse em inversão do tornozelo.** O capítulo dá dorsiflexão com inversão como mecanismo; por isso a lesão se confunde com a entorse comum e é perdida em 42% das vezes.",
+  "conceito": "O processo lateral do tálus é a saliência em cunha que forma quase toda a parede lateral do osso, articulando com a fíbula e com a subtalar. O Rockwood and Wilkins' Fractures in Children (cap. 31) descreve o mecanismo da fratura como **dorsiflexão forçada com inversão** do pé; o ligamento talocalcâneo lateral pode avulsioná-lo.\n\nEsse é justamente o movimento de uma **entorse em inversão**, e é por isso que a fratura engana: a criança chega com \"entorse\", a radiografia parece normal (**42%** não foram vistas inicialmente numa série) e a dor lateral persiste. O capítulo manda desconfiar da fratura do processo lateral, ou de uma lesão osteocondral, quando a dor lateral persiste depois de uma entorse em inversão, e pedir a incidência do **encaixe** e a **tomografia**.\n\nÉ a fratura típica do **snowboard** (13,5% das lesões de pé e tornozelo do esporte numa série). Sem desvio, gesso sem carga 6 a 8 semanas; degrau articular acima de 2 a 3 mm, redução aberta e parafuso.",
+  "correta": "**C) entorse em inversão do tornozelo.** O processo lateral do tálus quebra por dorsiflexão com inversão (Rockwood and Wilkins' Fractures in Children, cap. 31).",
   "incorretas": {
-   "A": "**O cuboide da criança quebra por compressão em abdução do antepé**, o mecanismo de \"quebra-nozes\" com o calcanhar fixo.",
-   "B": "**O calcâneo quebra em queda de altura**, por carga axial, não por torção do tornozelo.",
-   "D": "**A eversão é o movimento oposto** ao descrito no capítulo para o processo lateral."
+   "A": "**A fratura do cuboide** vem de esmagamento ou abdução do antepé (quebra-nozes).",
+   "B": "**A fratura do calcâneo** vem de carga axial na queda de altura.",
+   "D": "**A eversão** é o movimento oposto; produz a luxação subtalar lateral, não esta fratura."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Tálus."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Mechanisms of Injury for Talar Fractures e Fractures of the Lateral Process",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Tálus"
-     ],
-     "blocos": [
-      "talus-4f7d5dd3",
-      "talus-85f1cdd2",
-      "talus-cf87a357"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "3bac5ef8e1f17db0e89b09d41cd66672994c1c37fed3b44ff809fc2c07c6260d"
-    }
-   ],
-   "questaoSha256": "e1741bdedc82377fba5e55d94a55796a4aaf1fecafa434ad54cf12340999f1b1",
-   "comentarioSha256": "ff736121a0acff4d7012329352583304a91c5518ba9af9ba5e649617e92ca43d"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0627": {
   "conceito": "A fratura da placa terminal é a lesão fisária da coluna: o **anel apofisário**, ainda não fundido ao corpo, se solta e vai para o canal. Por isso só existe na criança e no adolescente.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 22) descreve o quadro: evento claro (chutar uma bola, aterrissar na ginástica), estalo, dor muito intensa com sinais radiculares, ressonância lida como abaulamento discal e diagnóstico na **tomografia sagital**; o tratamento é **retirar o fragmento** por laminectomia. O exemplo do capítulo é uma menina de 14 anos com fratura da placa inferior de L4. O livro não diz sexo nem nível preferencial.\n\nO Tachdjian (6ª edição, cap. 7) dá a epidemiologia que a banca cobrou: a fratura do anel apofisário ocorre sobretudo em **adolescentes**, **mais em meninos** (especialmente levantadores de peso), por flexão súbita com carga axial ou microtrauma repetido, e o local mais comum é a **apófise posteroinferior de L4**, ou seja, o espaço **L4-L5** (Fig. 7.5).\n\nA lógica é a da hérnia de disco do adulto: o segmento L4-L5 é dos que mais trabalham em flexão sob carga, e é ali que o anel ainda frágil cede.",
@@ -12548,43 +12447,19 @@
   "conferido": false
  },
  "pediatria-0704": {
-  "conceito": "As fraturas dos metatarsais são as mais comuns do pé da criança, e o metatarsal mais atingido muda com a idade.\n\n**O pé da criança.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 31, de Amy L. McIntosh), o pé da criança é quase todo **cartilagem**: absorve energia, por isso as fraturas são menos graves; esconde traços na radiografia; e remodela. Na dúvida, radiografar o outro pé.\n\n**Os números do capítulo.** Os metatarsais respondem por até **60%** das fraturas do pé. A distribuição depende da idade:\n- **até 5 anos:** o **primeiro** metatarsal (51%), muitas vezes por queda de objeto ou de pequena altura;\n- **acima de 5 anos:** o **quinto** (55%), sobretudo por torção no esporte.\n\n**A base do quinto.** Ela traz uma armadilha: a apófise (os vesalianum) é **longitudinal**, aparece aos 9 anos e se une entre 12 e 15; numa série, **47%** das \"fraturas\" eram apófise. A **zona 2 (JONES)** fica na área de divisor de águas e consolida mal; acima de 13 anos, a fixação primária é considerada.\n\n**Quando reduzir.** Desvio dorsal **acima de 20 graus** ou encurtamento **acima de 5 mm**; no primeiro metatarsal, 10 graus ou qualquer encurtamento.\n\n**Na prova:** criança pequena = **primeiro** metatarsal; acima de 5 anos (e de 10) = **quinto**.\n\nO resumo de fraturas do pé na criança traz a distribuição na seção dos metatarsais.",
-  "correta": "**D: quinto metatarso.** Acima de 5 anos, o capítulo aponta o quinto como o mais fraturado (55%); a criança de mais de 10 anos está nessa faixa.",
+  "conceito": "Os metatarsos são as fraturas mais comuns do pé da criança (até **60%**), e a idade decide qual deles quebra.\n\nPelo Rockwood and Wilkins' Fractures in Children (cap. 31), numa grande série:\n- **até 5 anos**, o **primeiro metatarso** isolado em **51%**, em geral por queda de altura em casa;\n- **acima de 5 anos**, o **quinto metatarso** isolado em **55%**, em geral no esporte.\n\nO quinto é o metatarso mais fraturado da criança, quase **50%** em algumas séries. Na base, há a apófise (que não deve ser confundida com fratura) e três zonas: a tuberosidade (avulsão do fibular curto, consolida bem), a zona 2 de JONES (divisor de águas, consolida mal acima de 13 anos) e a zona 3 (estresse do atleta).\n\nA pergunta fala em criança maior que 10 anos, bem dentro do grupo acima de 5.",
+  "correta": "**D) quinto metatarso.** Acima de 5 anos, o quinto é o metatarso mais fraturado (Rockwood and Wilkins' Fractures in Children, cap. 31).",
   "incorretas": {
-   "A": "**O primeiro é o mais fraturado só até os 5 anos** (51%).",
-   "B": "**O segundo é a sede típica da fratura de estresse** (no colo), não da fratura aguda mais comum.",
-   "C": "**O terceiro não aparece como o mais comum** em nenhuma faixa etária do capítulo."
+   "A": "**O primeiro** predomina até 5 anos.",
+   "B": "**O segundo** é o da fratura de estresse e do LISFRANC, não o mais fraturado.",
+   "C": "**O terceiro** quebra junto com o segundo e o quarto nas fraturas múltiplas, não isolado."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Metatarsais e quinto metatarsal."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Introduction to Metatarsal Fractures e Fractures of the Base of the Fifth Metatarsal",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Metatarsais e quinto metatarsal"
-     ],
-     "blocos": [
-      "metatarsais-e-quinto-metatarsal-f8cd18a0",
-      "metatarsais-e-quinto-metatarsal-0432a36e",
-      "metatarsais-e-quinto-metatarsal-ba9abafa"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "9dbd301d150443caf2d7fa4ab827fc04f705218c13b7254eae0983d04a0284db"
-    }
-   ],
-   "questaoSha256": "6a5452f299ab3e18f1f7012d45f5ba037d9fb31a8dcbf0ca610ad3b2acc6e273",
-   "comentarioSha256": "0de3663a2d386d9e701a90b8c2a5e144b1dbdf27f38764db03238b9991c29d7a"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0705": {
   "conceito": "Mesma doença da `pediatria-0579` (TEOT 2023), perguntada pelo TEOT um ano antes com outras distrações: encurtamento, hiperextensão, valgo progressivo e sobrecrescimento.\n\nO detalhe que separa as alternativas é a palavra **progressivo**. O valgo de COZEN não é um desvio que fica do jeito que consolidou: ele **aparece e cresce** depois da consolidação. O capítulo 29 do Rockwood crianças descreve a história natural: ficando aparente por volta de 6 meses, progredindo por 18 a 24 meses, e depois corrigindo aos poucos em 18 a 36 meses.\n\nE o **sobrecrescimento**, que parece uma alternativa vizinha, entra de outra forma: o livro diz que o valgo vem muitas vezes com algum sobrecrescimento do membro, e por isso um salto no sapato do outro lado ajuda a disfarçar a deformidade. Mas a sequela que define a fratura, a que leva a família ao consultório e que a banca quer, é o valgo progressivo.",
@@ -12935,44 +12810,21 @@
   "conferido": false
  },
  "pediatria-0718": {
-  "conceito": "A lesão de LISFRANC da criança costuma ser sutil, com desvio mínimo, e o que denuncia a lesão é um conjunto de pistas.\n\n**O pé da criança.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 31, de Amy L. McIntosh), o pé da criança é quase todo **cartilagem**: absorve energia, por isso as fraturas são menos graves; esconde traços na radiografia; e remodela. Na dúvida, radiografar o outro pé.\n\n**A anatomia que estabiliza o mediopé.** O **segundo metatarsal** fica **encaixado** entre os cuneiformes, como uma chave numa fechadura. O **ligamento de LISFRANC** vai do **cuneiforme medial ao segundo metatarsal**. Quando essa articulação cede, a base do segundo se desloca para lateral e o antepé pode comprimir o **cuboide**.\n\n**As pistas, segundo o capítulo.** Mecanismo de **ponta do pé** (56%); **equimose plantar** no mediopé; radiografias **com carga** e do **outro pé**. Acima de 6 anos, a distância entre primeiro e segundo metatarsais deve ser **menor que 3 mm**, e entre cuneiforme medial e segundo, **menor que 2 mm**. A fratura da **base do segundo metatarsal com a do cuboide** é **altamente sugestiva**.\n\n**Tratamento.** A criança tem em geral HARDCASTLE B com desvio mínimo. Menos de 1 a 2 mm: gesso sem carga por 6 semanas; mais: redução e fios, sendo a chave o fio do segundo metatarsal ao cuneiforme medial. A complicação mais comum é a **artrose**, pior quando o diagnóstico passa de 6 semanas.\n\n**Na prova:** LISFRANC na criança = **base do segundo metatarsal + cuboide**, equimose plantar, radiografia com carga.\n\nO resumo de fraturas do pé na criança traz o LISFRANC em seção própria.",
-  "correta": "**C: segundo metatarso e do cuboide (resposta provável, sem gabarito oficial no acervo).** É a combinação que o capítulo aponta como altamente sugestiva de LISFRANC na criança.",
+  "conceito": "O LISFRANC da criança pode ser sutil e até reduzir sozinho, e por isso o capítulo dá sinais indiretos para não perdê-lo.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 31) explica a anatomia: o **segundo metatarso** fica **encaixado** como uma pedra angular no degrau formado pelos cuneiformes, e não há ligamento intermetatarsal entre o primeiro e o segundo; quem segura o segundo é o ligamento de LISFRANC, que vai ao cuneiforme medial. Quando a tarsometatarsal luxa, o segundo metatarso **quebra na base**.\n\nDaí os sinais:\n- **fratura da base do segundo metatarso** deve alertar para luxação tarsometatarsal, que pode ter reduzido espontaneamente;\n- **fratura do cuboide com fratura da base do segundo metatarso** é **altamente sugestiva** de LISFRANC, e não duas fraturas isoladas (Fig. 31-31).\n\nClinicamente, equimose plantar; na imagem, radiografias com carga comparando com o outro pé e tomografia.",
+  "correta": "**C) segundo metatarso e do cuboide.** A fratura da base do segundo metatarso com a do cuboide é altamente sugestiva de LISFRANC (Rockwood and Wilkins' Fractures in Children, cap. 31, Fig. 31-31).",
   "incorretas": {
-   "A": "**O cuboide está certo, mas o metatarsal-chave é o segundo**, o que fica encaixado e recebe o ligamento de LISFRANC.",
-   "B": "**Nenhum dos dois ossos é a combinação descrita** pelo capítulo.",
-   "D": "**Cuneiforme medial e segundo metatarsal são as pontas do ligamento de LISFRANC**, e o alargamento entre eles é sinal da lesão; mas a combinação de fraturas que o capítulo cita como altamente sugestiva é base do segundo com cuboide."
+   "A": "**O primeiro metatarso** não é a pedra angular; o segundo é que quebra.",
+   "B": "**Primeiro metatarso e cuneiforme medial** descrevem a coluna medial, mas não o sinal clássico.",
+   "D": "**O cuneiforme medial** é a outra ponta do ligamento de LISFRANC, mas o sinal descrito é com o cuboide."
   },
-  "conferido": false,
-  "provavel": "C",
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Mediopé e LISFRANC."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Imaging e Pathoanatomy of Tarsometatarsal Injuries, Fig. 31-31",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Mediopé e LISFRANC"
-     ],
-     "blocos": [
-      "mediope-e-lisfranc-1ab697b9",
-      "mediope-e-lisfranc-c789bfa3",
-      "mediope-e-lisfranc-617fb34b"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "7c5b9802261905c2580ce1b7c06a05b88fbfc205c480062590c5b022843e6628"
-    }
-   ],
-   "questaoSha256": "fcd21a3553683ced2edea566cf7e2931b5394799cb32bf36fd3f3633983b37cd",
-   "comentarioSha256": "114cfc7f97bce1814f78214d60297436991c596e1978cedfe921a514643464c8"
-  }
+  "provavel": "C",
+  "alerta": "Questão da SBOT-SP sem gabarito oficial publicado. A resposta provável (C) segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0719": {
   "conceito": "**A consequência direta de lesar as partes moles posteriores é vascular.** Os vasos que nutrem a epífise do côndilo lateral entram por uma pequena área posterior não articular. A dissecção posterolateral extensa pode interrompê-los e levar a **osteonecrose**. O risco existe na fratura recente e aumenta quando mobilizar um fragmento tardio exige dissecção maior.\n\nÉ preciso separar complicações de mecanismos diferentes. Varo pode acompanhar a fratura consolidada; valgo progressivo é típico da pseudartrose com migração do fragmento; ausência de união é pseudartrose. A necrose metafisária pode também prejudicar a consolidação, mas o efeito específico da agressão posterior destacado pelo capítulo é a perda da vitalidade óssea. Sem gabarito oficial registrado, a resposta é bibliográfica.",
@@ -29783,297 +29635,244 @@
   "conferido": false
  },
  "pediatria-1330": {
-  "conceito": "A principal fonte arterial citada é a **artéria do canal do tarso**, ramo da **tibial posterior**. A necrose aumenta com a gravidade de Hawkins no adulto, e o prognóstico tende a ser mais favorável abaixo de 12 anos no resumo infantil. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 31).\n\nO tálus tem cerca de **dois terços de cartilagem** e **nenhuma inserção tendínea**. Recebe também ramo deltoide para a porção medial e contribuições pediosa/fibular na região do seio do tarso. Não confundir canal do tarso com seio do tarso nem atribuir suprimento a tendões inexistentes.\n\nHawkins organiza as articulações deslocadas: I sem desvio; II subtalar; III também tibiotalar; IV acrescenta talonavicular. O resumo informa necrose adulta de 0–10%, 20–50%, 80–100% e 100%, respectivamente; na criança, cita 0–20% e uma série sem casos abaixo de 12 anos. Esta última observação não garante risco zero para toda criança pequena.\n\n**Na prova: ** anatomia vascular explica a atenção ao desvio e às articulações luxadas. Interpretar idade como dado prognóstico, sem dispensar seguimento ou aplicar percentuais adultos como previsão individual infantil.\n\n**Por que esta questão foi criada.** É uma questão de projeção para relacionar a artéria do canal do tarso, a classificação de Hawkins e os limites dos dados prognósticos por idade.",
-  "correta": "Alternativa C. Identifica corretamente vaso e origem, e mantém a diferença prognóstica por idade descrita. A classificação adulta informa a relação com desvio, mas não substitui os dados pediátricos.",
+  "conceito": "O tálus não tem tendões e é quase todo cartilagem: o sangue entra por uma pequena área de osso nu no colo. O Rockwood and Wilkins' Fractures in Children (cap. 31, Fig. 31-6) descreve as fontes:\n- **artéria do canal do tarso**, ramo da **tibial posterior**, a **principal**; dá o ramo deltóideo para o terço medial do corpo;\n- **tibial anterior** e dorsal do pé, pelo dorso do colo;\n- **fibular**, pela artéria do seio do tarso, na face lateral.\n\nA fratura do colo rompe a anastomose e necrosa o corpo. No **adulto**, a necrose cresce com o tipo de HAWKINS (I 0% a 10%, II 20% a 50%, III 80% a 100%, IV todos). Na criança, as séries vão de 0% a 20%, e numa de 25 fraturas nenhuma abaixo de **12 anos** necrosou: o prognóstico costuma ser favorável.\n\n**Por que esta questão foi criada.** A vascularização do tálus é base das questões de necrose e de via de acesso.",
+  "correta": "**C) a principal é a artéria do canal do tarso, ramo da tibial posterior; no adulto a necrose cresce com o tipo de HAWKINS, e abaixo dos 12 anos o prognóstico costuma ser favorável.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "O tálus não tem inserções tendíneas no resumo. Portanto, não há garantia de nutrição por vários tendões; os vasos chegam por portas anatômicas que exigem preservação.",
-   "B": "A principal artéria é a do canal, ramo da tibial posterior. Seio do tarso e pediosa/fibular são contribuições distintas; trocar canal por seio muda a origem pedida.",
-   "D": "A fonte descreve prognóstico mais favorável no grupo abaixo de 12 anos, com ausência de necrose numa série. A opção inverte essa comparação, sem que isso permita declarar risco inexistente nos pequenos."
+   "A": "**Nenhum tendão se insere no tálus.**",
+   "B": "**A do seio do tarso** vem da fibular e é secundária.",
+   "D": "**Abaixo de 12 anos o prognóstico é favorável**; o adolescente se comporta como o adulto."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Tálus."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Pathoanatomy (Blood Supply) e Complications of Talar Fractures, Fig. 31-6",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Tálus"
-     ],
-     "blocos": [
-      "talus-cf87a357",
-      "talus-fc63dd2f"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "f5af65935e46d297b4d3a805fb3e97b49312d4d6452c14512cf1e762c295a22c"
-    }
-   ],
-   "questaoSha256": "c3eeeeed255d0a8a1ebfabfe416a473a0022ccc67dd3356269e19e133cf810e4",
-   "comentarioSha256": "7e49eb718d498a430ab140b21a12bb2735744fabead64c59a55cd0a608dd8175"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1331": {
-  "conceito": "Para perder cálcio, o osso precisa de sangue. É essa a lógica do sinal de HAWKINS: a cúpula que fica mais clara está viva.\n\n**O sinal.** **Linha radiolucente subcondral** na cúpula do tálus, por **osteoporose de desuso**, vista na radiografia de **6 a 8 semanas**: indica **vascularização adequada** do corpo e **bom prognóstico**. Sem sangue, a cúpula não perde cálcio e fica **mais densa** que os ossos vizinhos (Rockwood crianças, 10ª ed., cap. 31, Fig. 31-8).\n\n**A leitura.** No adulto, o sinal **negativo** é **muito sensível, mas pouco específico** para a necrose futura. Na criança, OGDEN sugere que o sinal pode ser **menos confiável**, pela cúpula cartilaginosa.\n\n**A conduta.** Sinal presente e fratura consolidada: **carga progressiva**. Ausente: manter sem carga até aparecer; se ainda ausente aos **3 meses**, **ressonância** para avaliar a vascularização. Por isso, na fixação, preferem-se **parafusos de titânio**, compatíveis com a ressonância.\n\n**O dilema.** A necrose pode surgir **6 meses** após a lesão e levar **18 meses a 2 anos** para revascularizar. Manter a criança sem carga por esse tempo é impraticável. O capítulo sugere, com necrose confirmada, **evitar atividades de impacto** em vez de longos períodos sem carga.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O sinal de HAWKINS, seu significado e a conduta quando ausente são perguntas recorrentes.\n\n> **Na prova:** HAWKINS = **radiolucência subcondral** em **6 a 8 semanas** = **vascularizado**; ausente = suspeitar necrose, **ressonância aos 3 meses**; **titânio**; necrose: **evitar impacto**, não 2 anos sem carga.",
-  "correta": "**A: a radiolucência subcondral na cúpula indica vascularização adequada; se ausente, pede-se ressonância por volta de 3 meses (os parafusos de titânio a permitem).** É a conduta do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "O sinal de HAWKINS usa a osteoporose por desuso a favor do cirurgião. Com 6 a 8 semanas sem carga, os ossos do pé perdem cálcio; só perde cálcio o osso que tem **sangue**. O Rockwood and Wilkins' Fractures in Children (cap. 31, Fig. 31-8) descreve:\n- **lucência subcondral** na cúpula (um halo) = vascularização preservada, necrose improvável;\n- cúpula **mais densa** que os vizinhos = sem sangue, necrose possível;\n- sem o sinal com **3 meses**, **ressonância**, possível porque os parafusos são de **titânio**.\n\nNo adulto, a ausência do sinal é muito sensível e pouco específica; na criança, OGDEN alertou que é menos confiável, pela cúpula cartilaginosa. Manter sem carga por 2 anos é impraticável; o conselho é evitar impacto.\n\n**Por que esta questão foi criada.** O sinal de HAWKINS é clássico de prova, com a pegadinha da cúpula densa.",
+  "correta": "**A) a radiolucência subcondral na cúpula indica vascularização adequada; se ausente, pede-se ressonância por volta de 3 meses (os parafusos de titânio a permitem).** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "B": "**Ao contrário.** A cúpula mais densa é a sem sangue: não houve fluxo para perder cálcio.",
-   "C": "**Impraticável.** O capítulo sugere evitar impacto, não manter a criança sem carga até a revascularização.",
-   "D": "**Ao contrário.** O sinal foi descrito no adulto e pode ser menos confiável na cúpula cartilaginosa da criança."
+   "B": "**A cúpula densa** indica falta de sangue.",
+   "C": "**Dois anos sem carga é impraticável**; orienta-se evitar impacto.",
+   "D": "**É menos confiável na criança**, pela cartilagem."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Treatment Options for Fractures of the Talar Neck (Fig. 31-8) e Management of Expected Adverse Outcomes"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Operative Treatment of Talar Fractures e Complications, Fig. 31-8",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1332": {
-  "conceito": "Na fratura do colo do tálus, cada abertura ameaça o pouco sangue que resta. O tratamento equilibra a redução com a preservação dos vasos.\n\n**A idade.** Abaixo dos **8 anos**, aceita-se redução imperfeita pela remodelação; abaixo dos **12**, o resultado é favorável na maioria. O **adolescente** se trata como **adulto** (Rockwood crianças, 10ª ed., cap. 31).\n\n**HAWKINS I.** **Gesso suropodálico sem carga** por **6 a 8 semanas**; carga total se consolidada. CANALE e KELLY aceitaram **5 mm** e **5 graus**.\n\n**HAWKINS II.** Muito edema e dor; o fragmento distal costuma desviar **dorsal e medialmente**. Redução sob anestesia geral, com **flexão plantar e pronação suaves**; gesso **em flexão plantar**, trocado para posição mais neutra em **4 semanas**, retirado em **8**. Radiografias ou tomografia seriadas (perde-se posição quando o edema cede). Instável: **dois fios de KIRSCHNER** por pequena incisão **dorsomedial**, **medial ao extensor longo do hálux**. Aceitar **alguns milímetros** e **até 10 graus** pode ser melhor que abrir.\n\n**HAWKINS III e IV.** Lesão grave: **redução aberta e fixação de urgência**. O momento é controverso (no adulto, operar antes de 6 horas ou depois não mudou o resultado).\n\n**As vias.** **Posterolateral** (lateral ao calcâneo, cuidado com o **sural**): **menos agressiva à vascularização**, sem ver o colo; parafusos posteriores **mais estáveis**. **Anteromedial**: vê o colo (a parede medial costuma ser cominuta), poupa o ramo deltoide. **Anterolateral**: boa exposição lateral, mas pode **agredir mais** os vasos. A autora prefere a posterolateral, com dois parafusos de titânio de 4,5 mm, associando a anteromedial para reduzir se preciso.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A conduta por tipo de HAWKINS e a escolha da via são cobráveis.\n\n> **Na prova:** I = **gesso sem carga 6 a 8 semanas**; II = redução em **flexão plantar e pronação**, gesso em **flexão plantar**, fios se instável; III e IV = **cirurgia urgente**; via que mais poupa = **posterolateral**.",
-  "correta": "**B: o tipo II é reduzido sob anestesia com flexão plantar e pronação suaves e imobilizado em flexão plantar; se instável, fios percutâneos; aceitar poucos milímetros e até 10 graus é melhor que abrir e desvascularizar.** É o tratamento do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "O tratamento da fratura do colo do tálus segue o tipo de HAWKINS e a idade. O Rockwood and Wilkins' Fractures in Children (cap. 31) descreve:\n- **tipo I**: gesso abaixo do joelho sem carga 6 a 8 semanas (CANALE e KELLY aceitaram 5 mm e 5 graus);\n- **tipo II**: redução sob anestesia geral com **flexão plantar e pronação suaves**, gesso moldado **em flexão plantar** (neutro em 4 semanas, retirada em 8); se instável, **dois fios percutâneos** dorsomediais; é melhor aceitar alguns milímetros e **até 10 graus** que abrir e desvascularizar;\n- **tipos III e IV**: cirurgia urgente.\n\nDas vias, a **anterolateral** é a que mais pode agredir a vascularização; a posterolateral, a que menos.\n\n**Por que esta questão foi criada.** A conduta por tipo é cobrada junto com a classificação.",
+  "correta": "**B) o tipo II é reduzido sob anestesia com flexão plantar e pronação suaves e imobilizado em flexão plantar; se instável, fios percutâneos; aceitar poucos milímetros e até 10 graus é melhor que abrir e desvascularizar.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "**Excesso.** O tipo I, sem desvio, vai com gesso suropodálico sem carga por 6 a 8 semanas.",
-   "C": "**Erro grave.** Os tipos III e IV são lesões graves que exigem redução aberta e fixação de urgência.",
-   "D": "**Ao contrário.** A anterolateral pode agredir mais a vascularização; a posterolateral é a que menos agride."
+   "A": "**O tipo I vai com gesso** sem carga.",
+   "C": "**Os tipos III e IV são cirurgia urgente.**",
+   "D": "**A anterolateral é a que mais agride** o sangue; a posterolateral, a que menos."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Treatment Options for Fractures of the Talar Neck (Fig. 31-7) e Author's Preferred Technique"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Treatment Options for Fractures of the Talar Neck, Fig. 31-3",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-31-3.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31, Fig. 31-3. Classificação de HAWKINS das fraturas do colo do tálus: A, tipo I sem desvio; B, tipo II com subluxação ou luxação subtalar; C, tipo III com luxação do corpo da subtalar e da tibiotalar; D, tipo IV (CANALE e KELLY), também com luxação talonavicular.",
+    "largura": 1200,
+    "altura": 1048
+   }
+  ],
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1333": {
-  "conceito": "O processo lateral do tálus é a fratura que se esconde atrás de uma entorse comum. O snowboard a tornou famosa.\n\n**A anatomia.** Processo em cunha, coberto de cartilagem, que forma quase toda a parede lateral do tálus: articula com a **fíbula** acima e com a **subtalar** abaixo; nele se prende o ligamento talocalcâneo lateral (Rockwood crianças, 10ª ed., cap. 31).\n\n**O mecanismo.** **Dorsiflexão forçada com inversão** do pé; o ligamento talocalcâneo pode avulsionar o processo. Com o snowboard, a incidência subiu: numa revisão de **3.213** lesões, foram **13,5%** das lesões do pé e tornozelo.\n\n**O diagnóstico.** Muitas vezes **não visto** na radiografia inicial: **42%** perdidos numa série. Melhor visto na incidência do **encaixe** (sem a fíbula por cima); no perfil, logo acima do **ângulo de GISSANE**. **Dor lateral persistente após entorse em inversão** = suspeitar de processo lateral ou lesão osteocondral; não visto, **tomografia**.\n\n**O tratamento.** Sem desvio: **gesso sem carga 6 a 8 semanas**. Desviada: **redução aberta e fixação**; o desvio aceitável na criança não é definido, e importa mais a **congruência**: degrau ou afastamento **acima de 2 a 3 mm**. Um parafuso esponjoso de **3,5 mm** de lateral para medial, perpendicular ao traço; gesso por **6 semanas**.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2018 (`pediatria-0626`), que perguntou a que se assemelha o mecanismo da fratura do processo lateral do tálus na criança (entorse em inversão do tornozelo). Depois, faça a oficial.\n\n> **Na prova:** processo lateral = **dorsiflexão + inversão** (snowboard, **13,5%**); **42%** perdidos; incidência do **encaixe**, **tomografia**; desviada com degrau **acima de 2 a 3 mm** = fixar com um parafuso.",
-  "correta": "**D: o mecanismo é a dorsiflexão forçada com inversão; 42% passam despercebidos, a incidência do encaixe e a tomografia ajudam, e degrau ou afastamento articular acima de 2 a 3 mm indica redução aberta.** São os dados do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "Snowboard, \"entorse\" e dor lateral que não passa: é o roteiro da fratura do processo lateral do tálus no Rockwood and Wilkins' Fractures in Children (cap. 31).\n- **Mecanismo**: **dorsiflexão forçada com inversão**; o ligamento talocalcâneo pode avulsionar o processo.\n- **Diagnóstico**: **42%** não foram vistas inicialmente; a incidência do **encaixe** tira a fíbula de cima, e no perfil o processo fica acima do ângulo de GISSANE; na dúvida, **tomografia**.\n- **Tratamento**: sem desvio, gesso sem carga 6 a 8 semanas; **degrau ou afastamento articular acima de 2 a 3 mm**, redução aberta e parafuso de 3,5 mm de lateral para medial.\n\n**Por que esta questão foi criada.** O TARO 2018 cobrou o mecanismo; esta junta o diagnóstico e o tratamento.",
+  "correta": "**D) o mecanismo é a dorsiflexão forçada com inversão; 42% passam despercebidos, a incidência do encaixe e a tomografia ajudam, e degrau ou afastamento articular acima de 2 a 3 mm indica redução aberta.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "**Mecanismo errado.** É dorsiflexão forçada com inversão, como na entorse em inversão.",
-   "B": "**Ao contrário.** É frequentemente perdida: 42% numa série.",
-   "C": "**Falso.** Desviada, com degrau articular acima de 2 a 3 mm, vai para redução aberta e fixação."
+   "A": "**É dorsiflexão com inversão**, não flexão plantar com eversão.",
+   "B": "**Passa despercebida em 42%.**",
+   "C": "**A congruência articular decide**: degrau acima de 2 a 3 mm vai para cirurgia."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Fractures of the Lateral Process of the Talar Body (Fig. 31-9)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Fractures of the Lateral Process of the Talar Body",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1334": {
-  "conceito": "A lesão osteocondral do tálus pode ser fratura aguda ou osteocondrite antiga que a entorse só revelou. Lado e estágio decidem a conduta.\n\n**Trauma prévio.** A maioria dos autores relata trauma anterior (de **47%** a **80%** nas séries) (Rockwood crianças, 10ª ed., cap. 31).\n\n**Medial e lateral.** **Mediais**: mais **profundas**, em **taça**; talvez por **microtrauma repetitivo**. **Laterais**: **finas**, em **lâmina**, mais **ligadas ao trauma** e mais **sintomáticas**. BERNDT e HARTY: **dorsiflexão com inversão** leva o tálus **anterolateral** contra a fíbula; **flexão plantar com inversão** gera lesão **posteromedial**. No adulto, 56% mediais e 44% laterais; em **24 crianças (LETTS)**, **79% mediais**, 21% laterais (Fig. 31-10).\n\n**Diagnóstico.** Dor e edema por **mais de 2 meses** após \"entorse\": investigar; a **ressonância** é mais útil (algumas são puramente cartilaginosas). Travamento é menos comum do que se pensa.\n\n**Classificação.** BERNDT e HARTY: **I** compressão subcondral (só na ressonância, ANDERSON); **II** separação incompleta; **IIa** (ANDERSON) com **cisto subcondral**: **cirurgia**; **III** destacado sem desvio; **IV** desviado. PRITSCH, artroscópica: cartilagem íntegra e firme, íntegra e mole, esgarçada.\n\n**Tratamento.** **I e II**: **sem cirurgia** (gesso ou bota 6 semanas, depois modificação de atividade). A autora trata I a III sem cirurgia por **6 meses**; piora: artroscopia com microfratura ou estabilização; **IV**: retirada artroscópica e microfratura, ou reparo. Seguir por **2 anos** (a cura radiográfica demora). Fratura aguda com osso: **reparar**, com pinos absorvíveis.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2015 (`pediatria-0596`), que perguntou a região mais comum da fratura osteocondral do tálus na criança (medial). Depois, faça a oficial.\n\n> **Na prova:** criança = **medial** (**79%**); medial **profunda**, microtrauma; lateral **fina**, trauma, mais sintomática; I e II = **conservador**; **IIa (cisto)** = cirurgia; IV = **artroscopia**.",
-  "correta": "**A: na criança predominam as mediais (79% numa série); as mediais são mais profundas, em taça, e as laterais, finas, mais ligadas ao trauma; os estágios I e II começam sem cirurgia, e o IIa (com cisto) tende à cirurgia.** É o que o capítulo descreve (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "A lesão osteocondral do tálus da criança é sobretudo **medial**: LETTS achou **79%** mediais (no adulto, 56%). O Rockwood and Wilkins' Fractures in Children (cap. 31) distingue:\n- **mediais**: profundas, **em taça**, talvez por microtrauma; reproduzidas com flexão plantar e inversão;\n- **laterais**: finas, **em bolacha**, mais traumáticas e sintomáticas; vêm da **dorsiflexão** com inversão.\n\nPelos estágios (BERNDT e HARTY modificado por ANDERSON): I e II começam **sem cirurgia**; o **IIa**, com cisto subcondral, tende à **cirurgia** (curetagem e microfratura); o IV, desviado, vai para retirada artroscópica e microfratura ou fixação.\n\n**Por que esta questão foi criada.** O TARO 2015 cobrou a localização; esta acrescenta a forma e os estágios.",
+  "correta": "**A) na criança predominam as mediais (79% numa série); as mediais são mais profundas, em taça, e as laterais, finas, mais ligadas ao trauma; os estágios I e II começam sem cirurgia, e o IIa (com cisto) tende à cirurgia.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "B": "**Ao contrário.** Em 24 crianças, 79% foram mediais.",
-   "C": "**Mecanismo trocado.** Dorsiflexão com inversão gera a lateral (anterolateral); flexão plantar com inversão, a posteromedial.",
-   "D": "**Falso.** O fragmento desviado vai para retirada artroscópica e microfratura, ou reparo."
+   "B": "**Na criança, as laterais são 21%.**",
+   "C": "**A lateral vem da dorsiflexão** com inversão; a flexão plantar com inversão faz a posteromedial.",
+   "D": "**O estágio IV** (desviado) vai para cirurgia."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Fractures of the Osteochondral Surface of the Talus (Figs. 31-10 a 31-12)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Fractures of the Osteochondral Surface of the Talus, Figs. 31-10 e 31-11",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1335": {
-  "conceito": "A fratura do calcâneo infantil é **rara** e, abaixo dos 14 anos, predomina o padrão **extra-articular**, 78% no resumo. **44% a 55%** podem passar despercebidas; a radiografia de **2 semanas** é um recurso diagnóstico. A alternativa C reúne esses dados (Rockwood and Wilkins, 10ª edição, capítulo 31).\n\nA radiografia inicial sem traço não elimina a lesão numa criança com dor após queda. O pé imaturo tem grande componente cartilaginoso, e o capítulo orienta comparação com o outro lado quando há dúvida. Tomografia é destacada como o melhor exame para caracterizar a fratura calcânea.\n\nO ângulo de **Böhler é menor na criança** que no adulto, cuja referência citada é 20°a 40°. Por isso, a comparação contralateral é mais informativa que transportar um intervalo adulto como normalidade obrigatória aos 6 anos.\n\n**Na prova: ** combinar baixa frequência, possibilidade de imagem inicial negativa e particularidade angular. Não concluir que a dor é apenas contusão porque falta um traço evidente no primeiro RX.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O calcâneo da criança é extra-articular, oculto e tem BOHLER próprio.",
-  "correta": "Alternativa C. Mantém a predominância extra-articular, o risco de lesão oculta e a avaliação contralateral. A radiografia tardia faz parte da investigação citada, sem dispensar imagem adicional se o quadro exigir.",
+  "conceito": "O calcâneo da criança pequena engana. O Rockwood and Wilkins' Fractures in Children (cap. 31) mostra:\n- é **raro** (1 em 100.000 fraturas);\n- abaixo de **14 anos**, a maioria é **extra-articular** (SCHMIDT e WEINER; 78% numa série), porque o calcâneo absorve a carga em vez de transmiti-la à articulação;\n- **44% a 55%** passam despercebidos de início; a radiografia de **2 semanas** costuma mostrar o traço;\n- o **ângulo de BOHLER** da criança é um pouco **menor** que o do adulto (20 a 40 graus): compara-se com o **lado oposto**.\n\nO diagnóstico diferencial da dor no calcanhar inclui SEVER, osteomielite, cisto e fratura de estresse.\n\n**Por que esta questão foi criada.** O calcâneo oculto da criança pequena é uma armadilha clássica.",
+  "correta": "**C) é rara, a maioria abaixo dos 14 anos é extra-articular, muitas passam despercebidas (44% a 55%) e a radiografia de 2 semanas costuma mostrar o traço; o ângulo de BOHLER deve ser comparado com o lado oposto.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "A lesão é rara e, pelo resumo, a maioria nos menores de 14 anos é extra-articular. A opção inverte frequência e padrão.",
-   "B": "A proporção de 44% a 55% de perdas contradiz a afirmação de que o traço quase sempre aparece inicialmente. O contexto clínico deve sustentar a investigação.",
-   "D": "O ângulo infantil é menor, não maior que o adulto. Usar a comparação contralateral evita confundir desenvolvimento com deformidade ou deixar uma fratura passar."
+   "A": "**É rara e, na criança, extra-articular.**",
+   "B": "**Muitas não aparecem na radiografia inicial.**",
+   "D": "**O BOHLER da criança é um pouco menor**, não maior."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Calcâneo e luxação subtalar; Como ler este capítulo."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Calcaneal Fractures (Mechanisms, Signs, Imaging), Fig. 31-9",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Calcâneo e luxação subtalar",
-      "Como ler este capítulo"
-     ],
-     "blocos": [
-      "calcaneo-e-luxacao-subtalar-da0d400e",
-      "como-ler-este-capitulo-134e020b"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "713187cab68f3b763d4cbc66567ca39ce184574782a9e43b680c315da8f29a8c"
-    }
-   ],
-   "questaoSha256": "859c8c1e6e39fb7d810ab6587bca5b7b81250ff2625930cbd28f3d85e0aa1747",
-   "comentarioSha256": "52db6e26ad1961287dfcb832fbe13aedc45a4d02bd316770fb16d720970a6404"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1336": {
-  "conceito": "O calcâneo da criança remodela; o do adolescente, não. O tratamento acompanha essa linha divisória.\n\n**A criança.** Abaixo dos **10 anos**, **quase todas as fechadas** vão **sem cirurgia**, **inclusive as intra-articulares desviadas**, pela remodelação. **Extra-articular**: gesso suropodálico por **6 semanas**, carga quando confortável (após 2 a 3 semanas). **Intra-articular sem desvio**: gesso **sem carga** por 6 semanas (Rockwood crianças, 10ª ed., cap. 31).\n\n**Língua.** Pode ir sem cirurgia se o afastamento posterior for **menor que 1 cm** e o tendão calcâneo não estiver encurtado; às vezes, redução percutânea de ESSEX-LOPRESTI (pino como alavanca).\n\n**O adolescente.** **Intra-articular desviada** = **redução aberta e fixação**, como no adulto: restaurar a faceta posterior, a altura e a largura. **Adiar** até o edema ceder e as **flictenas** resolverem; retalhos espessos; placa específica; enxerto se preciso. Via em **L lateral** (cuidado com o **sural**). Bons resultados em séries de 11,5 a 13 anos. Cirurgia exigente: se não tem experiência, encaminhar.\n\n**As complicações.** **Deiscência da ferida** é a mais comum após redução aberta no adulto (até **25%**), menos na criança (menos fatores de risco: tabagismo, obesidade, diabetes); fechamento em **duas camadas**, terapia de pressão negativa na incisão. **Síndrome dolorosa complexa regional**: mais em **meninas** perto da puberdade, sobretudo no membro inferior; fisioterapia intensiva, equipe multidisciplinar. **Tendões fibulares**: implante saliente (retirar ajuda), parede lateral desviada nos não operados.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A linha dos 10 anos e a indicação do adolescente são o centro do tema.\n\n> **Na prova:** abaixo de **10 anos** = **conservador** (até intra-articular desviada); extra-articular = gesso **6 semanas**; adolescente intra-articular desviada = **redução aberta** após o **edema ceder**; complicação mais comum da cirurgia = **deiscência**.",
-  "correta": "**B: abaixo dos 10 anos quase todas as fechadas, até intra-articulares desviadas, vão sem cirurgia; o adolescente com intra-articular desviada vai para redução aberta, adiada até o edema e as flictenas cederem.** É o tratamento preferido do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "No calcâneo, a idade decide a cirurgia. A preferência da autora do Rockwood and Wilkins' Fractures in Children (cap. 31, Algoritmo 31-2):\n- abaixo de **10 anos**, quase todas as fechadas vão **sem cirurgia**, **inclusive as intra-articulares desviadas**, pela remodelação;\n- extra-articular: gesso abaixo do joelho por **6 semanas**, carga a partir de 2 a 3;\n- intra-articular sem desvio: gesso sem carga 6 semanas;\n- **adolescente** com intra-articular desviada: **redução aberta**, adiada até o **edema e as flictenas** cederem, com retalhos grossos e placas próprias.\n\nA complicação mais comum da cirurgia é a **deiscência da ferida** (até 25% no adulto, menos na criança).\n\n**Por que esta questão foi criada.** Mostra a virada de conduta entre a criança e o adolescente.",
+  "correta": "**B) abaixo dos 10 anos quase todas as fechadas, até intra-articulares desviadas, vão sem cirurgia; o adolescente com intra-articular desviada vai para redução aberta, adiada até o edema e as flictenas cederem.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "**Ignora a idade.** Abaixo dos 10 anos, até as intra-articulares desviadas vão sem cirurgia pela remodelação.",
-   "C": "**Exagero.** A extra-articular vai com gesso por 6 semanas, com carga quando confortável.",
-   "D": "**Complicação errada.** A mais comum após a redução aberta é a deiscência da ferida."
+   "A": "**Abaixo de 10 anos**, nem a intra-articular desviada costuma ser operada.",
+   "C": "**A extra-articular** vai com 6 semanas de gesso, com carga a partir de 2 a 3.",
+   "D": "**A mais comum é a deiscência da ferida.**"
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Treatment Options for Calcaneal Fractures, Author's Preferred Treatment (Tabela 31-2) e Management of Expected Adverse Outcomes"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Treatment Options e Author's Preferred Treatment for Calcaneal Fractures",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1337": {
-  "conceito": "Na luxação subtalar, o pé inteiro sai de baixo do tálus, que fica no lugar. Na criança, é rara a ponto de não haver séries publicadas.\n\n**A frequência.** **Rara**, sobretudo na criança; mais em **homens adultos jovens**. Há relato até numa menina de 19 meses após queda pequena (Rockwood crianças, 10ª ed., cap. 31).\n\n**Os tipos.** **Medial**: a **mais comum (85%)**, por **inversão forçada**. Rompem-se os ligamentos **talonavicular** e **talocalcâneo**; o **calcaneonavicular fica íntegro**. Os ossos do pé vão para medial e o **tálus fica no encaixe**; o pé fica muito deformado e a **cabeça do tálus** é palpável **lateralmente**. **Lateral**: por **eversão forçada**, \"pé plano\" desviado lateralmente.\n\n**A imagem.** Radiografias difíceis: procurar o **navicular vazio**, sem a cabeça do tálus. A **tomografia** procura fraturas associadas e lesão osteocondral; mais útil **após a redução**, para confirmar.\n\n**A redução.** Sob **anestesia geral**, com o **joelho fletido** (relaxa o tendão calcâneo), **acentuando a deformidade** antes de reduzir. Em geral estável; imobilizar até o conforto permitir mobilizar. Instável: **fios de KIRSCHNER** e **6 semanas** de imobilização. **Irredutível**: abrir por via **anteromedial** e retirar o que está interposto, osso ou partes moles, muitas vezes o **tendão tibial posterior**.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O tipo mais comum, o sinal radiográfico e o obstáculo à redução são cobráveis.\n\n> **Na prova:** subtalar: **medial (85%)**, **inversão**; calcaneonavicular **íntegro**; tálus **no encaixe**; **navicular vazio**; reduzir com **joelho fletido**; irredutível = **tibial posterior** interposto, via anteromedial.",
-  "correta": "**D: a medial é a mais comum (85%), por inversão forçada; o tálus fica no encaixe, a cabeça é palpada lateralmente, o sinal é o navicular vazio, e a irredutível costuma ter o tendão tibial posterior interposto.** É o que o capítulo descreve (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "A luxação subtalar (peritalar) é rara na criança. O Rockwood and Wilkins' Fractures in Children (cap. 31) descreve:\n- a **medial** é a mais comum (**85%**), por **inversão forçada**: rompem o talonavicular e o talocalcâneo, o calcaneonavicular fica íntegro; o pé vai para medial e o **tálus fica no encaixe**; a cabeça do tálus é palpada **lateralmente**;\n- na radiografia, o sinal é o **navicular vazio**;\n- redução sob anestesia com o **joelho fletido** (relaxa o tendão calcâneo), acentuando a deformidade antes;\n- a irredutível costuma ter o **tendão tibial posterior** interposto, retirado pela via anteromedial.\n\n**Por que esta questão foi criada.** É a luxação do retropé que mais cai, com números e sinais próprios.",
+  "correta": "**D) a medial é a mais comum (85%), por inversão forçada; o tálus fica no encaixe, a cabeça é palpada lateralmente, o sinal é o navicular vazio, e a irredutível costuma ter o tendão tibial posterior interposto.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "**Duplo erro.** É rara na criança, e a medial é a mais comum.",
-   "B": "**Ao contrário.** O calcaneonavicular fica íntegro, e o tálus permanece no encaixe.",
-   "C": "**Posição errada.** O joelho é fletido justamente para relaxar o tendão calcâneo."
+   "A": "**É rara na criança e quase sempre medial.**",
+   "B": "**O calcaneonavicular fica íntegro**, e o tálus permanece no encaixe.",
+   "C": "**O joelho fica fletido**, para relaxar o tendão calcâneo."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Subtalar Dislocation (Figs. 31-21 a 31-24)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Subtalar Dislocation, Figs. 31-21 a 31-24",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1338": {
-  "conceito": "O cuboide da criança pequena quebra mais do que se pensava, e quase sempre sem aparecer na primeira radiografia. O exame físico guia o diagnóstico.\n\n**O cuboide no pré-escolar.** SENARAN relatou **28** fraturas consecutivas em pré-escolares. A maioria tinha **marcha de evitação**, andando sobre a **borda externa** do pé. O **teste do quebra-nozes**: estabilizar o **calcanhar** e **abduzir o antepé**; dor **lateral** = fratura do cuboide. A radiografia **inicial não mostrou** a fratura em **71%**; confirmou-se na inicial ou nas seguintes. **Gesso ou bota por 2 a 3 semanas**; todas consolidaram sem complicações. Seis tinham fraturas da tíbia ou do pé do mesmo lado (Rockwood crianças, 10ª ed., cap. 31).\n\n**O adolescente.** Equitação (pé esmagado com o cavalo caindo, antepé abduzido no estribo): sempre com outras fraturas do mediopé; **tomografia**; dois operados com **enxerto** para restaurar o comprimento da **coluna lateral**. As **extra-articulares** são as mais comuns (**69%**); intra-articular ou lesões do mediopé associadas pioram o resultado. Classificação de WEBER e LOCHER: impactação distal (1) e explosão (2).\n\n**O mediopé.** O mediotársico é rígido, com ligamentos plantares fortes: lesá-lo exige grande força, e lesões isoladas são raras. Na luxação mediotársica (4 casos, 9,5 anos), a chave foi a subluxação **calcaneocubóidea** no **perfil**. O navicular tem imitadores: **KOHLER** (necrose avascular entre **2 e 5 anos**) e o **navicular acessório** (bordas lisas, simétrico).\n\n**Por que esta questão foi criada.** É uma questão de projeção. O quebra-nozes e a radiografia normal são o clássico do cuboide na criança pequena.\n\n> **Na prova:** cuboide no pré-escolar: anda na **borda externa**, **quebra-nozes** (calcanhar fixo, **abduzir o antepé**), radiografia inicial normal em **71%**, gesso **2 a 3 semanas**; KOHLER = navicular, **2 a 5 anos**.",
-  "correta": "**B: fratura do cuboide (teste do quebra-nozes), confirmada na radiografia inicial ou seguinte; gesso ou bota por 2 a 3 semanas.** É a série citada no capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "Pré-escolar que passa a andar pela borda externa do pé, com dor lateral ao abduzir o antepé, e radiografia normal: o Rockwood and Wilkins' Fractures in Children (cap. 31) aponta a **fratura do cuboide**.\n\nSENARAN relatou 28 fraturas do cuboide em pré-escolares:\n- marcha de evitação, apoiando a borda lateral;\n- **teste do quebra-nozes**: estabilizar o calcanhar e abduzir o antepé provoca dor lateral;\n- a radiografia inicial **não mostrou** a fratura em **71%**; a confirmação veio na inicial ou na seguinte;\n- gesso abaixo do joelho ou bota por **2 a 3 semanas**, todas consolidaram.\n\nKÖHLER (navicular, 2 a 5 anos) imita fratura, mas é medial e radiográfica.\n\n**Por que esta questão foi criada.** O cuboide oculto é causa esquecida de mancar no pré-escolar.",
+  "correta": "**B) fratura do cuboide (teste do quebra-nozes), confirmada na radiografia inicial ou seguinte; gesso ou bota por 2 a 3 semanas.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "**Osso errado.** KOHLER é a necrose do navicular, medial; o quebra-nozes com dor lateral aponta o cuboide.",
-   "C": "**Desproporcional.** A luxação mediotársica exige grande força e se reduz em geral fechada; o quadro é de fratura do cuboide.",
-   "D": "**Teste não corresponde.** O quebra-nozes comprime o cuboide entre o calcâneo e a base dos metatarsais laterais."
+   "A": "**KÖHLER** é do navicular e se vê na radiografia.",
+   "C": "**A luxação mediotársica** é rara e grave, com deformidade evidente.",
+   "D": "**O quinto metatarso** não dá dor no teste do quebra-nozes nem marcha pela borda."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Midtarsal Injuries e Cuboid Fractures (Fig. 31-25)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Cuboid Fractures",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1339": {
-  "conceito": "**Equimose plantar no mediopé** após trauma é uma pista importante de **Lisfranc**. O resumo recomenda radiografias **com carga e comparação com o outro pé**; a combinação de **base do segundo metatarsal com cuboide** fraturados é altamente sugestiva. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 31).\n\nO segundo metatarsal fica encaixado no mediopé, e o ligamento de Lisfranc une **cuneiforme medial ao segundo metatarsal**. A anatomia explica por que avaliar só a distância entre metatarsais, sem reconhecer o cuneiforme e a congruência, é incompleto.\n\nO mecanismo em ponta do pé aparece em 56% no resumo. Acima de 6 anos, ele cita intervalos normais menores que 3 mm entre primeiro e segundo metatarsais e menores que 2 mm entre cuneiforme medial e segundo. São referências do capítulo, que devem acompanhar a qualidade da incidência e a comparação.\n\n**Na prova: ** uma radiografia sem carga normal não encerra a investigação quando equimose e mecanismo mantêm a suspeita. O diagnóstico tardio, após 6 semanas, tem prognóstico pior na fonte.\n\n**Por que esta questão foi criada.** É gêmea da SBOT-SP (`pediatria-0718`), que perguntou qual combinação de fraturas é altamente sugestiva de LISFRANC; a oficial está sem gabarito, e o capítulo aponta a base do segundo metatarsal com o cuboide. Depois, faça a oficial.",
-  "correta": "Alternativa C. Combina o sinal clínico, o método radiográfico e a associação óssea descrita. Esses dados aumentam a suspeita, não dependem de um grande desvio aparente para merecer atenção.",
+  "conceito": "Queda da bicicleta apoiando a ponta do pé é um dos mecanismos do LISFRANC (o pé em flexão plantar recebe a carga). O Rockwood and Wilkins' Fractures in Children (cap. 31) dá os sinais:\n- **equimose plantar** do mediopé: sinal importante da lesão sutil (Fig. 31-27);\n- radiografias **com carga**, comparadas com o **outro pé** (Fig. 31-30);\n- fratura da base do **segundo metatarso** alerta; com a do **cuboide**, é **altamente sugestiva** (Fig. 31-31).\n\nO mecanismo mais comum é a carga **na ponta do pé** (56% na série de WILEY), não a queda com o antepé preso (22%). O ligamento de LISFRANC liga o **segundo metatarso ao cuneiforme medial**; entre o primeiro e o segundo metatarsos não há ligamento.\n\n**Por que esta questão foi criada.** A SBOT-SP cobrou o sinal radiográfico; esta junta o exame.",
+  "correta": "**C) a equimose plantar é sinal importante; radiografias com carga, comparadas com o outro pé, e fratura da base do segundo metatarsal com fratura do cuboide são altamente sugestivas.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "O mecanismo destacado é apoio em ponta do pé, não a queda para trás descrita como predominante. O enunciado já oferece mecanismo e equimose coerentes com a lesão.",
-   "B": "O ligamento não une primeiro e segundo metatarsais: ele vai do cuneiforme medial ao segundo metatarsal. Confundir sua inserção altera a relação anatômica que estabiliza o conjunto.",
-   "D": "A fonte recomenda carga e comparação quando se avalia o padrão sutil. Radiografia sem carga isolada não basta para excluir a lesão diante do contexto clínico."
+   "A": "**O mais comum é a carga na ponta do pé** (56%).",
+   "B": "**O ligamento de LISFRANC** une o segundo metatarso ao cuneiforme medial.",
+   "D": "**A radiografia sem carga** pode parecer normal; pede-se com carga."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas, luxações e outras lesões do pé na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot. Seções: Mediopé e LISFRANC."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Tarsometatarsal Injuries, Figs. 31-26, 31-27, 31-30 e 31-31",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-31-pe",
-     "titulo": "Fraturas, luxações e outras lesões do pé na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot",
-     "secoes": [
-      "Mediopé e LISFRANC"
-     ],
-     "blocos": [
-      "mediope-e-lisfranc-1ab697b9"
-     ],
-     "sha256": "6b880dda94345f5a07a7d1055764be0f5523b4804f9df3bb7ab0000a28b18bc9",
-     "trechosSha256": "25631303f832572a20f649ca2d4d425936ef8cb25249778bc835c88d6b5dd501"
-    }
-   ],
-   "questaoSha256": "3d8f937b56286591f7af20fe0b52d489fc22e39c8553f1c2cd5dfc1ac938e574",
-   "comentarioSha256": "55a2d8f98132362745c0550c8e6b8e8d408835e4f87c7f22f9a98dad26c4cd81"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1340": {
-  "conceito": "Na criança, a lesão de LISFRANC costuma ser parcial e pouco desviada. A meta é a mesma do adulto: articulação congruente e estável, confirmada com carga.\n\n**A classificação de HARDCASTLE.** **A**: incongruência **total**. **B**: **parcial** (primeiro metatarsal para medial ou os quatro laterais para lateral). **C**: **divergente**. Não contempla a lesão **sem desvio**, a mais facilmente perdida. **Na criança, a maioria é B com desvio mínimo**; A e C são raras (Rockwood crianças, 10ª ed., cap. 31).\n\n**Sem desvio ou \"entorse\".** Gesso suropodálico por **6 semanas** (WILEY usou 3 a 4 semanas com bons resultados).\n\n**Desviada.** Redução **anatômica**. MYERSON: após redução fechada, desvio **maior que 2 mm** ou ângulo talometatarsal **acima de 15 graus** = mau resultado. A autora: desvio **menor que 1 a 2 mm** = gesso **sem carga 6 semanas**, radiografia com carga depois; **acima de 1 a 2 mm** = **redução fechada** e **fios percutâneos**. O fio **mais importante** fixa o **segundo metatarsal ao cuneiforme medial**; retirar em 4 a 6 semanas.\n\n**Aberta.** Rara na criança pequena; numa série com média de 14,2 anos, **34%** (mais com fises fechadas). Obstáculos: **tendão tibial anterior**, fragmentos entre o segundo metatarsal e o cuneiforme médio, incongruência do primeiro. Duas incisões longitudinais; parafusos de 3,5 mm **evitando a fise proximal do primeiro metatarsal**; laterais com fios (preservar mobilidade); retirar os parafusos cedo.\n\n**Complicações.** A mais comum é a **artrose pós-traumática** (lesão perdida, perda de redução, lesão da cartilagem). Diagnóstico após **6 semanas** = resultados **ruins**. Artrodese rara na criança; não fundir as laterais.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O limite de 1 a 2 mm e o fio-chave são cobráveis.\n\n> **Na prova:** criança = **HARDCASTLE B**, desvio mínimo; **menor que 1 a 2 mm** = gesso **sem carga 6 semanas**; maior = **redução + fios** (chave: **segundo metatarsal-cuneiforme medial**); evitar a **fise do primeiro metatarsal**; complicação = **artrose**; diagnóstico após **6 semanas** = pior.",
-  "correta": "**A: a maioria é do tipo B de HARDCASTLE com desvio mínimo; desvio menor que 1 a 2 mm vai com gesso sem carga por 6 semanas; acima disso, redução fechada com fios, sendo o principal o do segundo metatarsal ao cuneiforme medial.** É o tratamento preferido do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "O LISFRANC da criança costuma ser leve, e o tratamento segue o desvio. Pelo Rockwood and Wilkins' Fractures in Children (cap. 31, Algoritmo 31-3):\n- a maioria é **HARDCASTLE B** (incongruência parcial) com **desvio mínimo**;\n- desvio **menor que 1 a 2 mm**: gesso abaixo do joelho **sem carga por 6 semanas**, depois radiografias com carga;\n- desvio maior: **redução fechada** e **fios percutâneos**, sendo o mais importante o do **segundo metatarso ao cuneiforme medial**;\n- redução aberta rara, com parafusos que **poupam a fise proximal do primeiro metatarso**.\n\nO diagnóstico depois de **6 semanas** piora o resultado (HARDCASTLE), e a complicação mais comum é a artrose pós-traumática.\n\n**Por que esta questão foi criada.** Completa o diagnóstico com a conduta.",
+  "correta": "**A) a maioria é do tipo B de HARDCASTLE com desvio mínimo; desvio menor que 1 a 2 mm vai com gesso sem carga por 6 semanas; acima disso, redução fechada com fios, sendo o principal o do segundo metatarsal ao cuneiforme medial.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "B": "**Tipo errado.** Na criança, a maioria é B com desvio mínimo; A e C são raras.",
-   "C": "**Contraindicado.** Os parafusos devem evitar a fise proximal do primeiro metatarsal.",
-   "D": "**Falso.** Diagnóstico após 6 semanas teve resultados ruins."
+   "B": "**O tipo C (divergente) é raro** na criança.",
+   "C": "**A fise proximal do primeiro metatarso** deve ser poupada.",
+   "D": "**O diagnóstico após 6 semanas piora o resultado.**"
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Classification, Treatment Options e Author's Preferred Treatment for Tarsometatarsal Injuries (Fig. 31-33)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Classification e Treatment of Tarsometatarsal Injuries",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1341": {
-  "conceito": "Metatarsal é a fratura do pé que a criança mais tem. A idade muda o osso, e a remodelação muda o quanto se aceita.\n\n**A frequência.** **As fraturas mais comuns do pé infantil**, até **60%**. Até **5 anos**: **primeiro metatarsal isolado** em **51%**; **acima de 5 anos**: **quinto metatarsal isolado** em **55%**. O quinto é o metatarsal **mais fraturado**, quase **50%** em algumas séries. **7%** das fraturas metatarsais e **20%** das do primeiro não foram diagnosticadas na primeira consulta (Rockwood crianças, 10ª ed., cap. 31).\n\n**O mecanismo.** Até 5 anos: **queda de altura em casa**; acima: **esporte** em superfície plana. Direto (peso, esmagamento): diafisárias, muito edema, vigiar síndrome compartimental. Indireto (carga axial, torção): espirais proximais ou do colo. Primeiro e quinto costumam ser **isolados**; múltiplas são **contíguas** (segundo, terceiro, quarto).\n\n**A imagem.** O anteroposterior subestima; o **perfil** mostra o desvio. Fratura suspeita e invisível na criança pequena: repetir em **10 a 14 dias**.\n\n**O tratamento.** A maioria **sem cirurgia**: elevação, imobilização acolchoada e depois gesso; retirar em **3 a 4 semanas**. Os critérios do adulto (10 graus, 4 mm) são **rígidos demais** para o imaturo. Reduzir se **angulação dorsal acima de 20 graus** ou pele em tenda e **encurtamento acima de 5 mm**, sob anestesia; fios se instável. **Primeiro metatarsal**: mais cuidado (arco longitudinal); reduzir com **mais de 10 graus** dorsais ou **qualquer encurtamento**.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2022 (`pediatria-0704`), que perguntou qual metatarsal mais fratura na criança acima de 10 anos (o quinto). Depois, faça a oficial.\n\n> **Na prova:** metatarsal = fratura **mais comum** do pé (até **60%**); até **5 anos** = **primeiro**; acima = **quinto**; reduzir: dorsal **acima de 20 graus**, encurtamento **acima de 5 mm**; primeiro metatarsal: **10 graus** ou **qualquer encurtamento**.",
-  "correta": "**D: são as fraturas mais comuns do pé infantil (até 60%); até 5 anos predomina o primeiro metatarsal isolado e, acima de 5 anos, o quinto; reduz-se a angulação dorsal acima de 20 graus ou o encurtamento acima de 5 mm.** São os dados do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "Os metatarsos são as fraturas **mais comuns** do pé da criança (até **60%**). O Rockwood and Wilkins' Fractures in Children (cap. 31) dá a divisão por idade: **até 5 anos**, o **primeiro** metatarso isolado (51%); **acima de 5**, o **quinto** (55%).\n\nQuanto aceitar: os critérios do adulto (10 graus de angulação dorsal, 4 mm de translação) são rígidos demais para a criança; reduz-se a **angulação dorsal acima de 20 graus** ou o **encurtamento acima de 5 mm**. O primeiro metatarso é exceção: reduzir com angulação dorsal acima de 10 graus ou qualquer encurtamento, porque segura o arco.\n\n**Por que esta questão foi criada.** O TEOT 2022 cobrou o metatarso da criança maior; esta junta os limites.",
+  "correta": "**D) são as fraturas mais comuns do pé infantil (até 60%); até 5 anos predomina o primeiro metatarsal isolado e, acima de 5 anos, o quinto; reduz-se a angulação dorsal acima de 20 graus ou o encurtamento acima de 5 mm.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "**Ao contrário.** São as fraturas mais comuns do pé infantil, até 60%.",
-   "B": "**Inverteu as idades.** Até 5 anos predomina o primeiro; acima de 5, o quinto.",
-   "C": "**Rígido demais.** A criança remodela; reduz-se acima de 20 graus dorsais ou 5 mm de encurtamento."
+   "A": "**São as mais comuns** do pé infantil.",
+   "B": "**Está invertido**: primeiro até 5 anos, quinto acima.",
+   "C": "**Aceita-se até 20 graus** nos centrais."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Metatarsal Fractures e Treatment Options for Metatarsal Fractures"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seções Metatarsal Fractures e Treatment Options",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1342": {
-  "conceito": "A base do quinto metatarsal tem uma apófise que engana metade dos diagnósticos. E tem uma faixa de vascularização pobre que explica por que a fratura de JONES não consolida.\n\n**A apófise.** Numa série de 7 a 16 anos, **47%** das \"fraturas\" diagnosticadas eram o **centro de crescimento** mal lido. A apófise (**os vesalianum**) é **longitudinal**, **paralela à diáfise**; a fratura é **transversal**, perpendicular. Aparece por volta dos **9 anos** e une-se entre **12 e 15** (Rockwood crianças, 10ª ed., cap. 31, Figs. 31-35 e 31-36).\n\n**A vascularização.** A artéria nutrícia entra **medialmente** na junção dos terços proximal e médio da diáfise; onde seus ramos encontram os vasos metafisários fica a **área de divisor de águas**, que corresponde à **zona 2**: mais retardo e pseudartrose perto da maturidade.\n\n**As zonas.** **1**: tuberosidade esponjosa (fibular curto, abdutor do quinto, fáscia plantar). **2**: junção metáfise-diáfise (**JONES**). **3**: até o meio da diáfise, geralmente **fratura de estresse**. HERRERA-SOTO: I \"lasca\", II tubérculo intra-articular, III diáfise proximal (JONES).\n\n**O tratamento.** **Zona 1**: avulsão; **gesso de marcha** ou bota por **3 a 6 semanas**; consolida mesmo desviada; desvio intra-articular **acima de 3 a 4 mm** no atleta: parafuso. **Zona 2 aguda**: **gesso sem carga 6 semanas**, depois carga protegida; acima de **13 anos** houve mais **retardo e refratura**: considerar **fixação primária**. **Crônica (mais de 3 meses)**: tentar 6 semanas; falhando, **parafuso intramedular** com curetagem e enxerto da tíbia distal. **Zona 3**: estresse; gesso, e se não consolidar, como a zona 2. Complicação mais comum: **pseudartrose** nas zonas 2 e 3.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2023 (`pediatria-0582`), que perguntou como distinguir a apófise do traço de fratura (orientação longitudinal). Depois, faça a oficial.\n\n> **Na prova:** apófise = **longitudinal** (paralela), fratura = **transversal**; aparece aos **9**, une **12 a 15**; **47%** mal lidas; zona 1 = **gesso de marcha**; zona 2 (**JONES**) = divisor de águas, **sem carga 6 semanas**, acima de **13 anos** considerar **fixação**; crônica = **parafuso intramedular**.",
-  "correta": "**A: a apófise (os vesalianum) corre paralela à diáfise, enquanto a fratura é transversal; a zona 2 (JONES) fica na área de divisor de águas e consolida mal, sobretudo acima de 13 anos.** É o que o capítulo descreve (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "Uma linha na base do quinto metatarso de uma menina de 11 anos pode ser a apófise. O Rockwood and Wilkins' Fractures in Children (cap. 31) ensina:\n- a **apófise** (os vesalianum) é **longitudinal**, paralela à diáfise; a **fratura** é **transversal** (Figs. 31-35 e 31-36); numa série, 47% das \"fraturas\" eram a apófise;\n- a **zona 1** (tuberosidade) é avulsão do fibular curto e da fáscia plantar e consolida bem com bota ou gesso com carga 3 a 6 semanas;\n- a **zona 2** (JONES) fica no **divisor de águas** da vascularização e consolida mal: gesso **sem carga** 6 semanas e carga protegida; **acima de 13 anos**, mais retardo e refratura, e a fixação primária pode ser melhor.\n\n**Por que esta questão foi criada.** O TEOT 2023 cobrou a orientação da apófise; esta junta as zonas.",
+  "correta": "**A) a apófise (os vesalianum) corre paralela à diáfise, enquanto a fratura é transversal; a zona 2 (JONES) fica na área de divisor de águas e consolida mal, sobretudo acima de 13 anos.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "B": "**É a diferença.** A apófise é longitudinal; a fratura é transversal.",
-   "C": "**Exagero.** A zona 1 vai com gesso de marcha ou bota por 3 a 6 semanas.",
-   "D": "**Ao contrário.** A zona 2 aguda vai sem carga; num estudo de adultos, sem carga consolidaram 14 de 15, com carga só 4 de 10."
+   "B": "**A apófise é longitudinal.**",
+   "C": "**A zona 1** vai com carga por 3 a 6 semanas.",
+   "D": "**A fratura de JONES consolida melhor sem carga.**"
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Fractures of the Base of the Fifth Metatarsal (Figs. 31-34 a 31-37)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Fractures of the Base of the Fifth Metatarsal, Figs. 31-35 a 31-37",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-31-35.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31, Fig. 31-35. A, apófise normal da base do quinto metatarso na inserção do fibular curto (seta), aos 10 anos; B, a seta grossa mostra a apófise, paralela à diáfise; a fina, uma fratura, quase perpendicular ao metatarso.",
+    "largura": 1160,
+    "altura": 854
+   }
+  ],
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1343": {
-  "conceito": "Treino o ano inteiro e especialização precoce trouxeram para a criança a fratura de estresse do adulto. No pé, dois ossos mandam: o segundo metatarsal e o navicular.\n\n**O mecanismo.** Carga repetitiva acelera a reabsorção além do reparo: microfratura. O sintoma é **dor ao apoiar**, no começo de um treino intenso, em geral **sem trauma**. Exame: dor pontual, pouco edema. Investigar alteração de treino, piso, calçado; **doenças metabólicas**, **amenorreia**, **transtornos alimentares** (Rockwood crianças, 10ª ed., cap. 31).\n\n**A imagem.** Radiografia **inicial costuma ser normal**; depois, reação periosteal e osteólise. **Cintilografia em três fases** nas primeiras 2 a 3 semanas; a **ressonância** mostra o edema antes da radiografia.\n\n**O segundo metatarsal.** **O mais acometido do pé**, em geral no **colo**, entre a diáfise móvel e a metáfise rígida. **Repouso e carga parcial em bota por 4 a 6 semanas**; **evitar gesso**, para manter o condicionamento (natação, corrida em água funda, bicicleta). Retorno gradual em **8 a 12 semanas**.\n\n**O navicular.** Incapacitante e difícil: **basquete**, **barreiras**, **corrida** (até 28,6% no atletismo). Vascularização menor no **terço central**. **Ressonância** para achar, **tomografia** para distinguir de lesão aguda; traço **vertical (sagital)** no **terço médio**. A maioria consolida com repouso e carga protegida; pseudartrose dolorosa = **redução aberta e enxerto**. Retorno médio em **5,6 meses**.\n\n**Outros.** Base do quinto (zonas 2 e 3), cuboide, calcâneo e sesamoides.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2015 (`pediatria-0597`), que perguntou onde a fratura de estresse do pé da criança costuma ocorrer (colo do segundo metatarsal). Depois, faça a oficial.\n\n> **Na prova:** estresse do pé = **colo do segundo metatarsal**; bota **4 a 6 semanas**, **sem gesso**; navicular = **sagital no terço médio**, ressonância e tomografia, retorno **5,6 meses**; radiografia inicial **normal**.",
-  "correta": "**C: o segundo metatarsal é o mais acometido, em geral no colo; trata-se com bota e carga parcial por 4 a 6 semanas, sem gesso; a do navicular é sagital, no terço médio, e o retorno leva em média 5,6 meses.** São os dados do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "Pelo Rockwood and Wilkins' Fractures in Children (cap. 31), a fratura de estresse do pé:\n- é mais comum no **segundo metatarso**, em geral no **colo**, na junção da diáfise móvel com a metáfise rígida;\n- tem radiografia inicial **normal**; a cintilografia e a **ressonância** mostram antes;\n- trata-se com **bota e carga parcial por 4 a 6 semanas**, **sem gesso**, mantendo o condicionamento; retorno em 8 a 12 semanas.\n\nA do **navicular** é a mais difícil: atletas de basquete, barreiras e corrida, terço central pouco vascularizado, traço **vertical** no terço médio, diagnóstico por ressonância e tomografia; a maioria consolida com repouso e carga protegida (pseudartrose dolorosa: fixação com enxerto), e a volta ao esporte leva em média **5,6 meses**.\n\n**Por que esta questão foi criada.** O TARO 2015 cobrou o local; esta acrescenta o tratamento.",
+  "correta": "**C) o segundo metatarso é o mais acometido, em geral no colo; trata-se com bota e carga parcial por 4 a 6 semanas, sem gesso; a do navicular é sagital, no terço médio, e o retorno leva em média 5,6 meses.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "**Osso errado.** O mais comum é o segundo metatarsal; o quinto entra nas zonas 2 e 3 da base.",
-   "B": "**Contraindicado.** O capítulo recomenda bota com carga parcial e evitar o gesso, para manter o condicionamento.",
-   "D": "**Ao contrário.** A radiografia inicial costuma ser normal; cintilografia ou ressonância antecipam o diagnóstico."
+   "A": "**O segundo metatarso** é o mais acometido.",
+   "B": "**Evita-se o gesso** para manter o condicionamento.",
+   "D": "**A radiografia inicial costuma ser normal.**"
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Stress Fractures"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Stress Fractures",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1344": {
-  "conceito": "Ferimento por prego no pé é banal até deixar de ser. Quem não melhora rápido tem corpo estranho retido ou infecção profunda.\n\n**O ferimento simples.** Retirar o corpo estranho (conferir se saiu inteiro), irrigar, **profilaxia do tétano** se preciso e antibiótico oral por pouco tempo. Profundidade e contaminação orientam desbridamento e duração do antibiótico. **Radiografia** na maioria (corpo estranho, ar na articulação); **ultrassonografia** se suspeito e invisível; **ressonância** ainda melhor, mostrando também artrite séptica ou osteomielite (Rockwood crianças, 10ª ed., cap. 31).\n\n**Quando piora.** Sem melhora rápida: afastar **corpo estranho retido**, infecção profunda, **artrite séptica** ou **osteomielite**. Infecção estabelecida **24 a 36 horas** após o ferimento: **internar** para antibiótico venoso. Em 80 crianças, atraso no diagnóstico se associou a infecção profunda; os germes mais comuns foram **Staphylococcus aureus** e **estreptococo do grupo A**. Hemograma, VHS, PCR; **ressonância** é o exame mais preciso; desbridamento aberto.\n\n**O tênis.** Prego **através do tênis**: suspeitar de **osteocondrite por Pseudomonas** (a cartilagem é lesada no trauma; o germe talvez venha do calçado). **Internar**, **desbridar partes moles, cartilagem e osso**, antibiótico venoso por 5 a 7 dias ou até resolver. Sequelas: dor, **parada de crescimento**, osteomielite crônica.\n\n**Cortador de grama.** Lesões mutilantes e sujas; a maioria das crianças graves é **espectadora**, **78%** meninos. Antibiótico precoce (**cefalosporina, aminoglicosídeo e penicilina**), tétano, desbridamentos a cada **24 a 48 horas** (pelo menos três idas ao centro cirúrgico), deixar o tecido duvidoso, curativo a vácuo, fixação externa. O enxerto de pele parcial funciona bem até em **áreas de apoio** na criança.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O prego através do tênis e a Pseudomonas são um clássico de prova.\n\n> **Na prova:** prego **através do tênis** = **Pseudomonas** (osteocondrite); infecção profunda em geral = **S. aureus** e **estreptococo A**; infecção em **24 a 36 horas** = internar; **ressonância**; desbridar **osso e cartilagem**.",
-  "correta": "**B: deve-se suspeitar de artrite séptica ou osteomielite (osteocondrite por Pseudomonas no ferimento através do tênis); internar, ressonância, desbridamento de partes moles, cartilagem e osso e antibiótico venoso.** É a conduta do capítulo (Rockwood crianças, 10ª ed., cap. 31).",
+  "conceito": "A maioria dos ferimentos por prego no pé se resolve com limpeza, tétano e antibiótico oral. O Rockwood and Wilkins' Fractures in Children (cap. 31) aponta o que muda o rumo:\n- quem não melhora rápido precisa investigar **corpo estranho retido**, infecção profunda, **artrite séptica** ou **osteomielite**;\n- infecção estabelecida 24 a 36 horas depois: **internar** e antibiótico **venoso**; exames de sangue e **ressonância**, o exame mais preciso;\n- os germes mais comuns das infecções profundas (EIDELMAN) são Staphylococcus aureus e estreptococo do grupo A;\n- o prego que atravessa o **tênis** com dor e edema faz pensar na **osteocondrite por Pseudomonas**: desbridamento de partes moles, cartilagem e osso e antibiótico venoso.\n\n**Por que esta questão foi criada.** É uma situação comum de pronto-socorro com uma resposta clássica de prova.",
+  "correta": "**B) deve-se suspeitar de artrite séptica ou osteomielite (osteocondrite por Pseudomonas no ferimento através do tênis); internar, ressonância, desbridamento de partes moles, cartilagem e osso e antibiótico venoso.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
   "incorretas": {
-   "A": "**Atrasa o diagnóstico.** Sem melhora rápida, investiga-se corpo estranho e infecção profunda, com internação.",
-   "C": "**Exame errado.** A ressonância é o exame mais preciso; a ultrassonografia ajuda só a achar o corpo estranho.",
-   "D": "**Germe trocado.** Nas infecções profundas em geral, predominaram S. aureus e estreptococo do grupo A; a Pseudomonas é a do prego através do tênis."
+   "A": "**Infecção que não melhora** pede internação e investigação.",
+   "C": "**A ressonância** é o exame mais preciso.",
+   "D": "**Em geral, S. aureus e estreptococo do grupo A**; o Pseudomonas é o do tênis."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seções Puncture Wounds (Fig. 31-47) e Lawnmower and Other Mutilating Injuries"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh), seção Puncture Wounds, Fig. 31-47",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
-  "geradoEm": "2026-10-28",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1345": {
@@ -32245,6 +32044,54 @@
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22, seções Mechanisms of Injury, Nonoperative Treatment of Compression Fractures e Authors' Preferred Treatment",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1460": {
+  "conceito": "A síndrome compartimental do pé é traiçoeira porque os sinais clássicos se misturam com a dor do próprio trauma. O Rockwood and Wilkins' Fractures in Children (cap. 31) dá os pontos-chave:\n\n**Quando pensar.** Esmagamentos graves do antepé com várias fraturas e luxações, mas também **sem fratura**, como no pé atropelado por um carro (esmagamento e cisalhamento das partes moles). A dor à extensão passiva dos dedos **nem sempre** está presente; palidez, parestesia e pulso pedioso difícil de palpar aparecem em muitas lesões do pé. Na dúvida, medir as pressões ou levar à sala para descomprimir.\n\n**A medida.** Difícil na criança acordada; muitas vezes é feita sob anestesia, e a família deve saber que a descompressão pode vir em seguida. São **nove compartimentos**; o **do calcâneo** parece o **mais sensível**. Pressão **acima de 30 mmHg** em qualquer compartimento indica fasciotomia (no adulto, há quem use a diferença para a pressão diastólica).\n\n**A fasciotomia.** Liberam-se **todos os compartimentos**, qualquer que seja a medida, pela técnica de **três incisões**: duas **dorsais**, sobre o segundo e o quarto metatarsos (interósseos, profundos e lateral), e uma **medial**, ao longo do arco até o maléolo medial (medial, profundos e túnel do tarso), cuidando do nervo e dos vasos plantares laterais sobre o quadrado plantar. As incisões servem também para reduzir e fixar as fraturas; ficam abertas e fecham em 5 a 7 dias, às vezes com enxerto.\n\n**Sequelas da síndrome perdida:** dedos em garra, parestesia, cavo, rigidez e dor. A conduta de observar e liberar tendões depois, às vezes usada no adulto, não tem experiência relatada na criança.\n\n**Por que esta questão foi criada.** As provas cobraram as fraturas do pé, mas não o esmagamento; a síndrome compartimental do pé tem números próprios (nove compartimentos, 30 mmHg, três incisões).",
+  "correta": "**C: pode ocorrer sem fratura; o compartimento do calcâneo parece o mais sensível para a medida, pressão acima de 30 mmHg indica fasciotomia, e liberam-se os nove compartimentos por três incisões (duas dorsais e uma medial).** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31, Fig. 31-46).",
+  "incorretas": {
+   "A": "**Pode ocorrer sem fratura**, como no pé atropelado.",
+   "B": "**A dor à extensão passiva nem sempre está presente** no pé; na dúvida, mede-se a pressão.",
+   "D": "**A observação com liberação tardia** não tem experiência relatada na criança."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Compartment Syndrome (Fig. 31-46)",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1461": {
+  "conceito": "O cortador de grama faz um dos traumas mais graves do pé da criança. O Rockwood and Wilkins' Fractures in Children (cap. 31) traz os números e a conduta:\n\n**Epidemiologia.** Cerca de 9.400 lesões por ano nos Estados Unidos até 20 anos, idade média de 10,7 anos; as mais graves com o **cortador de montar**; a maioria das vítimas é **espectadora**; **78%** meninos; mais na primavera e no verão; abaixo de 6 anos, maior risco de morte. A mão é a mais atingida (34,6%), depois a perna (18,9%) e o pé (17,7%).\n\n**Conduta.**\n- Ressuscitação (a perda de sangue pode ser grande), curativo compressivo.\n- **Antibióticos o quanto antes**: **cefalosporina, aminoglicosídeo e penicilina**; profilaxia do **tétano**.\n- **Desbridamento** urgente e meticuloso, retirando todo corpo estranho (cuidado com o jato de água, que empurra a sujeira); tecido claramente morto sai, mas o **duvidoso fica**, porque haverá retornos e o tecido da criança recupera muito.\n- Em geral **três ou mais** idas à sala, a cada **24 a 48 horas**, sem pressa de fechar; curativo a vácuo é seguro e eficaz.\n- **Fixador externo** inicial nas fraturas.\n- Enxerto ou retalho em cerca de **50%**; na criança, o **enxerto de pele parcial funciona até nas áreas de apoio**; retalhos livres (inclusive fáscia temporoparietal) para osso e tendão expostos.\n\n**Amputação.** Preservar o máximo de comprimento e **evitar a amputação transdiafisária**, pelo hipercrescimento do coto. O resultado funcional é razoável: 88% do normal nas lesões só do antepé contra 72% nas posteriores e plantares.\n\n**Por que esta questão foi criada.** É a lesão mutilante típica da criança, com condutas próprias que as provas de trauma pediátrico costumam explorar.",
+  "correta": "**A: antibióticos o quanto antes (cefalosporina, aminoglicosídeo e penicilina), profilaxia do tétano, desbridamentos repetidos a cada 24 a 48 horas (em geral três ou mais), fixador externo e, na criança, o enxerto de pele parcial funciona até na área de apoio.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
+  "incorretas": {
+   "B": "**Não há pressa de fechar**: são necessários vários desbridamentos.",
+   "C": "**O tecido duvidoso fica** para reavaliação; o da criança recupera muito.",
+   "D": "**A amputação transdiafisária deve ser evitada**, pelo hipercrescimento do coto."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Lawnmower and Other Mutilating Injuries",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1462": {
+  "conceito": "A síndrome dolorosa complexa regional (antiga distrofia simpático-reflexa) aparece depois de tratamento cirúrgico ou não de fraturas do pé, e o Rockwood and Wilkins' Fractures in Children (cap. 31) a descreve na criança:\n\n**O quadro.** Dor **desproporcional** à lesão depois da fase aguda, difícil de controlar mesmo com opioide; a criança não apoia nem deixa examinar o pé, e até o toque leve da água dói. Sinais de disfunção autonômica: pele **acinzentada**, fria e úmida, menos pelos; atrofia da panturrilha pelo desuso; osteopenia em manchas na radiografia.\n\n**Quem.** Há franco predomínio do **membro inferior** na criança: 73% com lesão do pé ou tornozelo numa série; 87% no membro inferior em outra (idade média 12,5 anos), **84% meninas**, com 12 meses em média até o diagnóstico e 54% ainda com sintomas 3 anos depois. É mais comum em **meninas**, com pico **na puberdade ou pouco antes**.\n\n**Tratamento.** Equipe **multidisciplinar** de dor (médico, psiquiatra ou psicólogo, fisioterapeuta, às vezes terapeuta ocupacional), com avaliação da escola e do contexto social. O foco é a **função**, com **fisioterapia** extensa no início; analgésicos (anti-inflamatórios, amitriptilina, gabapentina) para permitir a fisioterapia; bloqueios regionais nos graves. A criança **responde melhor à fisioterapia** que o adulto e precisa de menos remédio e procedimento; a **recidiva é mais frequente**, mas responde bem ao reinício.\n\n**Por que esta questão foi criada.** É complicação das fraturas do pé e do calcâneo com perfil diferente na criança, bom para afirmativas trocadas.",
+  "correta": "**D: é síndrome dolorosa complexa regional, mais comum em meninas perto da puberdade e no membro inferior; trata-se com equipe multidisciplinar centrada na fisioterapia, e a recidiva é mais frequente, mas responde bem ao reinício do tratamento.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 31).",
+  "incorretas": {
+   "A": "**Na criança predomina o membro inferior** (73% a 87% nas séries).",
+   "B": "**O foco é a função com fisioterapia**; bloqueios só nos casos graves, e repouso piora.",
+   "C": "**É o contrário**: a criança responde melhor à fisioterapia e recidiva mais."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 31 (Fractures, Dislocations, and Other Injuries of the Foot; Amy L. McIntosh)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 31, seção Complex Regional Pain Syndrome",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações do pé na criança (rockwoodcriancas10-31-pe)"
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
