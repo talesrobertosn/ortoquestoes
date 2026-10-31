@@ -5,7 +5,8 @@ Criada em 30/10/2026, depois de uma noite em que 20 resumos (3 a 13 minutos de l
 comentários de 1 a 2 mil caracteres foram publicados apesar da regra. Compara o branch atual com a base e
 olha só o que mudou:
   - resumo novo ou alterado em conteudo/biblioteca: no mínimo 45 KB;
-  - comentário novo ou alterado em public/acervo/comentarios: conceito + correta + incorretas >= 4,5 mil.
+  - comentário novo ou alterado em public/acervo/comentarios: conceito + correta + incorretas >= 800 (piso contra o
+    raso; acima disso o tamanho é proporcional à questão, Tales, 31/10/2026).
 
 Exceção justificada (capítulo curto de verdade, questão anulada etc.): acrescente o id e o motivo em
 docs/biblioteca/excecoes-profundidade.json. Sem motivo escrito, não há exceção.

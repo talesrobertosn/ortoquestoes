@@ -9,7 +9,7 @@ Os resumos e os comentários feitos nos ciclos 3 a 20 da fila editorial ficaram 
 | Item | Ficou com | Padrão |
 | --- | --- | --- |
 | **Resumo** | 4 a 18 KB | **no mínimo 45 KB**, o nível de `rockwood10-53-colo-femur` e `rockwood10-66-talus`; o roteiro `PILOTO-AUTOMATICO.md` sugere 60 a 90 KB, de 35 a 60 minutos de leitura |
-| **Comentário** (conceito, correta e incorretas somados) | mediana de 1,7 a 2,6 mil caracteres | **no mínimo 4,5 mil**; as referências `mao-2164` e `mao-0853` têm cerca de 6 mil |
+| **Comentário** (conceito, correta e incorretas somados) | mediana de 1,7 a 2,6 mil caracteres | **miniaula proporcional à questão** (Tales, 31/10/2026): fato seco 0,8 a 2 mil, mecanismo 3 a 5 mil, caso e questão-chave 4 a 8 mil; sem molde fixo e sem parágrafos copiados; piso de 800 só contra o raso. Ver "Professor humano, não molde" em `docs/padrao-editorial-comentarios.md` |
 
 **Para medir:**
 ```bash
@@ -73,8 +73,8 @@ Os ciclos 1 e 2A (`netter-anatomia-mao-punho-antebraco`, 21 KB, e `tachdjian6-al
 
 ## Ferramentas criadas no MacBook (30/10/2026)
 - `scripts/biblioteca/dossie_tema.py "Subtema" --livro X --paginas A-B`: engenharia reversa (todas as questões do subtema e páginas do livro).
-- `scripts/biblioteca/lote_comentarios.py LOTE.py SAIDA.json`: converte o lote escrito em Python, confere o gabarito e recusa comentário abaixo de 4,5 mil.
-- `scripts/biblioteca/trava_profundidade.py`: roda no `pos_aplicar.sh` e no `publicar_pr.sh`; não deixa publicar resumo < 45 KB nem comentário < 4,5 mil.
+- `scripts/biblioteca/lote_comentarios.py LOTE.py SAIDA.json`: converte o lote escrito em Python, confere o gabarito, recusa comentário abaixo de 800, parágrafo copiado entre comentários do lote e o fecho de simulado em questão de prova real; avisa quando o lote inteiro tem o mesmo esqueleto.
+- `scripts/biblioteca/trava_profundidade.py`: roda no `pos_aplicar.sh` e no `publicar_pr.sh`; não deixa publicar resumo < 45 KB nem comentário raso (< 800).
 - Figuras dos livros nos resumos: `!figura 48.47 imagem=ombro-cotovelo/arquivo.jpeg` (recorte com `scripts/figuras_livro.py`).
 - Refaça o subtema inteiro (todas as oficiais do dossiê), não só a lista desta tabela: no bíceps eram 7 na lista e 33 no subtema.
 

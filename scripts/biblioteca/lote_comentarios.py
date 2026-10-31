@@ -9,8 +9,12 @@ quando houver, alerta, provavel e figuras (nomes do registro de figuras, viram o
 O conversor recusa o lote quando:
   - a letra da correta não é o gabarito do acervo (ou o provavel, sem gabarito);
   - as incorretas não são exatamente as outras letras;
-  - algum comentário tem menos de 4,5 mil caracteres (conceito + correta + incorretas);
-  - há travessão no texto.
+  - algum comentário fica abaixo do piso de 800 caracteres (o tamanho certo é proporcional à questão);
+  - há travessão no texto;
+  - um parágrafo longo (mais de 200 caracteres) se repete em dois comentários do lote: cada comentário conta
+    com as próprias palavras, sem blocos copiados (Tales, 31/10/2026);
+  - questão de prova real traz o fecho "Por que esta questão foi criada", que é só dos OrtoQuestões Simulados.
+Avisa, sem recusar, quando todos os comentários do lote têm o mesmo esqueleto ou o mesmo fecho "Na prova".
 
 Uso:
   python3 scripts/biblioteca/lote_comentarios.py LOTE.py SAIDA.json [--registro REG.json]
@@ -57,6 +61,8 @@ def main() -> int:
     reg = json.loads(Path(a.registro).read_text(encoding="utf-8"))
     qs = questoes()
     saida, erros = {}, []
+    vistos: dict[str, list[str]] = {}
+    esqueletos: list[tuple] = []
     for qid, c in mod.COMENTARIOS.items():
         q = qs.get(qid)
         if not q:
@@ -74,6 +80,13 @@ def main() -> int:
         print(f"{'OK   ' if n >= MIN_COMENTARIO else 'CURTO'} {n:6d}  {qid}")
         if n < MIN_COMENTARIO:
             erros.append(f"{qid}: {n} caracteres")
+        if "Por que esta questão foi criada" in texto and not q.get("simulado"):
+            erros.append(f"{qid}: 'Por que esta questão foi criada' é só para OrtoQuestões Simulados")
+        for par in re.split(r"\n\s*\n", "\n\n".join([c.get("conceito", ""), c.get("correta", ""), *c.get("incorretas", {}).values()])):
+            par = par.strip()
+            if len(par) > 200:
+                vistos.setdefault(par, []).append(qid)
+        esqueletos.append(("Na prova" in texto, "foi criada" in texto or "banca quis testar" in texto, c.get("conceito", "").count("\n\n")))
         novo = {k: v for k, v in c.items() if k != "figuras"}
         if c.get("figuras"):
             faltam = [f for f in c["figuras"] if f not in reg]
@@ -81,6 +94,14 @@ def main() -> int:
                 erros.append(f"{qid}: figura fora do registro {faltam}")
             novo["imagens"] = [reg[f] for f in c["figuras"] if f in reg]
         saida[qid] = novo
+    for par, ids in vistos.items():
+        if len(set(ids)) > 1:
+            erros.append(f"parágrafo repetido em {sorted(set(ids))}: {par[:70]}...")
+    if len(esqueletos) >= 6:
+        if all(e[0] for e in esqueletos):
+            print("AVISO: todos os comentários do lote têm 'Na prova'; use só onde houver uma frase de memória que valha.")
+        if len({e[2] for e in esqueletos}) == 1:
+            print("AVISO: todos os conceitos têm o mesmo número de parágrafos; varie a forma conforme a questão.")
     if erros:
         print("RECUSADO:\n  " + "\n  ".join(erros))
         return 1
