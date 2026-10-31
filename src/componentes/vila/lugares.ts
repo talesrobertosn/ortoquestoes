@@ -21,6 +21,8 @@ export interface Lugar {
   destino: string
   /** Uma linha para a porta e o mapa. */
   texto: string
+  /** O que o mascote diz ao chegar vindo de outro lugar. */
+  chegada: string
   /** Céu aberto: nuvens, sol, estrelas e chuva; os de dentro ganham poeira na luz e brasas. */
   exterior: boolean
   mascote: IdComportamento
@@ -31,33 +33,33 @@ export interface Lugar {
 }
 
 export const LUGARES: Record<IdLugar, Lugar> = {
-  arena: { id: 'arena', pagina: 'Ranking', destino: '/ranking', texto: 'Quem mais respondeu questões no mês.', exterior: true, mascote: 'malabares',
+  arena: { id: 'arena', pagina: 'Ranking', destino: '/ranking', texto: 'Quem mais respondeu questões no mês.', chegada: 'Bora subir no ranking?', exterior: true, mascote: 'malabares',
     segredo: { x: 247, y: 72, w: 36, h: 32, fala: 'Campeão em escafoide: ninguém tira o gesso antes de 6 semanas!' }, saidas: ['trofeus', 'guilda', 'observatorio'] },
-  trofeus: { id: 'trofeus', pagina: 'Conquistas', destino: '/conquistas', texto: 'Seus emblemas e os que estão quase lá.', exterior: false, mascote: 'reflexo',
+  trofeus: { id: 'trofeus', pagina: 'Conquistas', destino: '/conquistas', texto: 'Seus emblemas e os que estão quase lá.', chegada: 'Vamos ver os emblemas?', exterior: false, mascote: 'reflexo',
     segredo: { x: 320, y: 33, w: 43, h: 47, fala: 'Troféu de ouro em Ortopedia: banhado a cálcio.' }, saidas: ['arena', 'observatorio', 'torre'] },
-  torre: { id: 'torre', pagina: 'Revisão', destino: '/revisao', texto: 'As questões que vencem hoje para revisar.', exterior: true, mascote: 'parado',
+  torre: { id: 'torre', pagina: 'Revisão', destino: '/revisao', texto: 'As questões que vencem hoje para revisar.', chegada: 'Bora revisar o que volta hoje?', exterior: true, mascote: 'parado',
     segredo: { x: 377, y: 52, w: 42, h: 42, fala: '10h10 para sempre: hora de revisar a consolidação óssea.' }, saidas: ['estrada', 'ferreiro', 'taverna'] },
-  estrada: { id: 'estrada', pagina: 'Cronograma', destino: '/cronograma', texto: 'O plano da semana até o dia da prova.', exterior: true, mascote: 'alongar',
+  estrada: { id: 'estrada', pagina: 'Cronograma', destino: '/cronograma', texto: 'O plano da semana até o dia da prova.', chegada: 'Vamos ver o plano da semana?', exterior: true, mascote: 'alongar',
     segredo: { x: 209, y: 104, w: 17, h: 34, fala: 'Achou a muleta! Quem pula as semanas do Cronograma chega na prova assim.' }, saidas: ['torre', 'biblioteca', 'observatorio'] },
-  ferreiro: { id: 'ferreiro', pagina: 'Caderno de erros', destino: '/erros', texto: 'As questões que você errou, para acertar de novo.', exterior: false, mascote: 'raiox',
+  ferreiro: { id: 'ferreiro', pagina: 'Caderno de erros', destino: '/erros', texto: 'As questões que você errou, para acertar de novo.', chegada: 'Bora reforjar os erros?', exterior: false, mascote: 'raiox',
     segredo: { x: 302, y: 24, w: 22, h: 26, fala: 'Molde aprovado: este fêmur já foi reforjado nove vezes. Seus erros também têm conserto.' }, saidas: ['torre', 'biblioteca', 'jardim'] },
-  jardim: { id: 'jardim', pagina: 'Favoritas', destino: '/favoritas', texto: 'As questões que você guardou.', exterior: true, mascote: 'cafe',
+  jardim: { id: 'jardim', pagina: 'Favoritas', destino: '/favoritas', texto: 'As questões que você guardou.', chegada: 'Vamos regar as favoritas?', exterior: true, mascote: 'cafe',
     segredo: { x: 287, y: 103, w: 21, h: 28, fala: 'Essa fratura consolidou tão bem que até floresceu. Retirada do gesso só em 6 semanas!' }, saidas: ['ferreiro', 'taverna', 'torre'] },
-  taverna: { id: 'taverna', pagina: 'Flashcards', destino: '/flashcards', texto: 'Cartões rápidos para fixar o que cai.', exterior: false, mascote: 'malabares',
+  taverna: { id: 'taverna', pagina: 'Flashcards', destino: '/flashcards', texto: 'Cartões rápidos para fixar o que cai.', chegada: 'Uma rodada de flashcards?', exterior: false, mascote: 'malabares',
     segredo: { x: 403, y: 36, w: 57, h: 17, fala: 'Troféu da casa: o único fêmur daqui que nunca precisou de haste intramedular.' }, saidas: ['biblioteca', 'torre', 'arena'] },
-  biblioteca: { id: 'biblioteca', pagina: 'Resumos', destino: '/resumos', texto: 'Os capítulos resumidos, do jeito que cai.', exterior: false, mascote: 'ler',
+  biblioteca: { id: 'biblioteca', pagina: 'Resumos', destino: '/resumos', texto: 'Os capítulos resumidos, do jeito que cai.', chegada: 'Hora de um resumo.', exterior: false, mascote: 'ler',
     segredo: { x: 386, y: 52, w: 17, h: 17, fala: 'Este já leu o Rockwood inteiro.' }, saidas: ['ferreiro', 'taverna', 'estrada'] },
-  observatorio: { id: 'observatorio', pagina: 'Desempenho', destino: '/dados', texto: 'Seu acerto por área e o que treinar a seguir.', exterior: false, mascote: 'raiox',
+  observatorio: { id: 'observatorio', pagina: 'Desempenho', destino: '/dados', texto: 'Seu acerto por área e o que treinar a seguir.', chegada: 'Vamos ver os números?', exterior: false, mascote: 'raiox',
     segredo: { x: 194, y: 74, w: 40, h: 74, fala: 'Até os astros concordam: fêmur proximal cai em toda prova.' }, saidas: ['ferreiro', 'estrada', 'arena'] },
-  quarto: { id: 'quarto', pagina: 'Minha conta', destino: '/conta', texto: 'Perfil, aparência, assinatura e preferências.', exterior: false, mascote: 'dormir',
+  quarto: { id: 'quarto', pagina: 'Minha conta', destino: '/conta', texto: 'Perfil, aparência, assinatura e preferências.', chegada: 'Bem-vindo ao seu quarto.', exterior: false, mascote: 'dormir',
     segredo: { x: 414, y: 86, w: 20, h: 24, fala: 'Ser ou não ser… cirúrgico? Eis a questão.' }, saidas: ['bau', 'correio', 'estrada'] },
-  bau: { id: 'bau', pagina: 'Planos', destino: '/assinatura', texto: 'Tudo o que o plano completo libera.', exterior: true, mascote: 'acenar',
+  bau: { id: 'bau', pagina: 'Planos', destino: '/assinatura', texto: 'Tudo o que o plano completo libera.', chegada: 'Quer espiar o baú?', exterior: true, mascote: 'acenar',
     segredo: { x: 231, y: 76, w: 62, h: 64, fala: 'Tesouro encontrado: 206 ossos, todos na garantia.' }, saidas: ['correio', 'quarto', 'biblioteca'] },
-  correio: { id: 'correio', pagina: 'Indique e ganhe', destino: '/indicar', texto: 'Chame um colega e os dois ganham dias.', exterior: true, mascote: 'acenar',
+  correio: { id: 'correio', pagina: 'Indique e ganhe', destino: '/indicar', texto: 'Chame um colega e os dois ganham dias.', chegada: 'Chama um colega pra estudar junto?', exterior: true, mascote: 'acenar',
     segredo: { x: 326, y: 101, w: 25, h: 17, fala: 'Carta para você: o pedido de RX em duas incidências chegou.' }, saidas: ['guilda', 'bau', 'quarto'] },
-  guilda: { id: 'guilda', pagina: 'Liga da residência', destino: '/ligas', texto: 'O ranking privado do seu serviço.', exterior: false, mascote: 'acenar',
+  guilda: { id: 'guilda', pagina: 'Liga da residência', destino: '/ligas', texto: 'O ranking privado do seu serviço.', chegada: 'Bora defender o serviço?', exterior: false, mascote: 'acenar',
     segredo: { x: 151, y: 33, w: 18, h: 64, fala: 'Tô aqui desde o R1. Ninguém me deu alta.' }, saidas: ['arena', 'correio', 'trofeus'] },
-  conselho: { id: 'conselho', pagina: 'Painel do administrador', destino: '/admin', texto: 'Assinaturas, números e cartas do site.', exterior: false, mascote: 'ler',
+  conselho: { id: 'conselho', pagina: 'Painel do administrador', destino: '/admin', texto: 'Assinaturas, números e cartas do site.', chegada: 'O conselho está reunido.', exterior: false, mascote: 'ler',
     segredo: { x: 396, y: 72, w: 56, h: 56, fala: 'Senha do cofre: o ângulo de Böhler. Entre 20 e 40, boa sorte.' }, saidas: ['quarto', 'correio', 'arena'] },
 }
 

@@ -18,6 +18,11 @@ import './Vila.css'
  */
 const CHAVE_VISITAS = 'vila:visitados'
 const CHAVE_SEGREDOS = 'vila:segredos'
+const CHAVE_ULTIMO = 'vila:ultimo'
+/** Neve de 15 de dezembro a 6 de janeiro. */
+const natal = (d = new Date()) => (d.getMonth() === 11 && d.getDate() >= 15) || (d.getMonth() === 0 && d.getDate() <= 6)
+/** Neblina de madrugada (da meia-noite às 5h, hora de Brasília). */
+const madrugada = (d = new Date()) => Number(new Intl.DateTimeFormat('en-US', { hour: 'numeric', hourCycle: 'h23', timeZone: 'America/Sao_Paulo' }).format(d)) < 5
 const HALLOWEEN: IdComportamento[] = ['foice', 'abobora', 'velas', 'morcegos']
 
 export const lugaresVisitados = (): IdLugar[] => ler<IdLugar[]>(CHAVE_VISITAS, [])
@@ -34,13 +39,19 @@ export function CenaPagina({ id }: { id: IdLugar }) {
   const [fala, definirFala] = useState<string | null>(null)
   const [achou, definirAchou] = useState(() => segredosDaVila().includes(id))
   // Chuva de vez em quando, só lá fora e nunca no mesmo lugar duas visitas seguidas.
-  const chuva = useMemo(() => lugar.exterior && periodo !== 'noite' && Math.random() < 0.14, [lugar.exterior, periodo])
+  const chuva = useMemo(() => lugar.exterior && periodo !== 'noite' && !natal() && Math.random() < 0.14, [lugar.exterior, periodo])
 
   useEffect(() => {
     const vistos = lugaresVisitados()
     if (!vistos.includes(id)) gravar(CHAVE_VISITAS, [...vistos, id])
     definirAchou(segredosDaVila().includes(id))
     definirFala(null)
+    // O mascote lembra de onde a pessoa veio ("Revisão ficou para trás. Bora subir no ranking?"), uma vez por chegada.
+    const antes = ler<IdLugar | null>(CHAVE_ULTIMO, null)
+    gravar(CHAVE_ULTIMO, id)
+    if (!antes || antes === id || !LUGARES[antes]) return
+    const t = window.setTimeout(() => definirFala(`${LUGARES[antes].pagina} ficou para trás. ${LUGARES[id].chegada}`), 1300)
+    return () => window.clearTimeout(t)
   }, [id])
 
   // Fora da tela, nada se mexe (leve no celular).
@@ -111,6 +122,8 @@ function Ceu({ periodo, exterior, chuva }: { periodo: Periodo; exterior: boolean
           {pontos.slice(4).map((p, i) => <i key={`v${i}`} className="vl-vagalume" style={{ left: `${p.x}%`, top: `${40 + p.y * 0.8}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}
         </>}
         {chuva && <i className="vl-chuva" />}
+        {natal() && pontos.map((p, i) => <i key={`n${i}`} className="vl-neve" style={{ left: `${p.x}%`, '--t': `${p.t + 3}s`, '--d': `${p.d}s` } as CSSProperties} />)}
+        {periodo === 'noite' && madrugada() && <i className="vl-neblina" />}
       </span>
     )
   }

@@ -138,3 +138,11 @@
 @media (prefers-reduced-motion: reduce) { .vl-quadro__nevoa i { animation: none; } .vl-quadro, .vl-porta, .vl-porta__vista img { transition: none; } }
 
 [data-tema="escuro"] .vl-porta, [data-tema="escuro"] .vl-quadro { background: var(--superficie); }
+
+/* Neve (15/12 a 6/1) e neblina de madrugada. */
+.vl-neve { top: -4%; width: 3px; height: 3px; border-radius: 50%; background: #fff; box-shadow: 0 0 3px rgba(255, 255, 255, 0.9);
+  animation: vl-neve var(--t) linear infinite var(--d); }
+@keyframes vl-neve { 0% { transform: translate(0, 0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(18px, 1100%); opacity: 0.6; } }
+.vl-neblina { inset: 30% -10% 0; background: linear-gradient(0deg, rgba(190, 205, 225, 0.32), transparent); filter: blur(6px);
+  animation: vl-respira 12s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .vl-neve { display: none; } }
