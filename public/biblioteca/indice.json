@@ -7682,15 +7682,15 @@
   },
   {
    "id": "rockwoodcriancas10-20-clavicula-escapula",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries",
-   "resumo": "Clavícula com terço médio em até 80%, queda sobre o ombro na idade escolar, fratura de parto à direita, tipoia mesmo nas desviadas do adolescente; terço lateral com o osso saindo pelo periósteo superior e desvio posterior no trapézio; escápula e maus-tratos; acromioclavicular tipo IV; esternoclavicular posterior no centro cirúrgico.",
+   "resumo": "Clavícula = 5% a 15% das fraturas da criança, terço médio em até 80% e lateral em 10% a 30%; ossificação intramembranosa a partir de 5,5 semanas, 80% do comprimento aos 9 (meninas) e 12 anos (meninos), mas ossificação até 25 anos; fratura de parto no ombro anterior (direito, OEA) e pseudoparalisia reavaliada com 3 a 4 semanas; queda sobre a face lateral do ombro na idade escolar; tipoia mesmo nas desviadas do adolescente (pseudartrose 0,4%), cirurgia na exposta e na lesão neurovascular; terço lateral com o osso saindo pelo periósteo superior e os coracoclaviculares presos ao inferior, cirurgia sobretudo pelo desvio posterior no trapézio; escápula de alta energia ou maus-tratos; acromioclavicular quase sempre pseudoluxação, tipo IV o mais perdido e mais operado; esternoclavicular posterior operada, redução fechada no centro cirúrgico com coxim entre as escápulas e tração em abdução.",
    "acesso": "gratis",
-   "minutos": 9,
+   "minutos": 24,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7698,42 +7698,73 @@
      "radar": "fundamento"
     },
     {
-     "id": "clavicula-epidemiologia-mecanismos-e-recem-nasci",
-     "titulo": "Clavícula: epidemiologia, mecanismos e recém-nascido",
+     "id": "a-clavicula-crescimento-e-anatomia",
+     "titulo": "A clavícula: crescimento e anatomia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-fratura-do-terco-medio-quem-e-como",
+     "titulo": "A fratura do terço médio: quem e como",
      "radar": "confirmado"
     },
     {
-     "id": "clavicula-tratamento-do-terco-medio",
-     "titulo": "Clavícula: tratamento do terço médio",
+     "id": "o-terco-medio-exame-e-imagem",
+     "titulo": "O terço médio: exame e imagem",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-terco-medio-tratamento",
+     "titulo": "O terço médio: tratamento",
      "radar": "oportunidade"
     },
     {
-     "id": "clavicula-terco-lateral",
-     "titulo": "Clavícula: terço lateral",
+     "id": "o-preco-da-cirurgia-no-adolescente",
+     "titulo": "O preço da cirurgia no adolescente",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-terco-lateral",
+     "titulo": "O terço lateral",
      "radar": "confirmado"
     },
     {
-     "id": "escapula",
-     "titulo": "Escápula",
+     "id": "a-escapula",
+     "titulo": "A escápula",
      "radar": "oportunidade"
     },
     {
-     "id": "acromioclavicular",
-     "titulo": "Acromioclavicular",
+     "id": "a-acromioclavicular",
+     "titulo": "A acromioclavicular",
      "radar": "oportunidade"
     },
     {
-     "id": "esternoclavicular",
-     "titulo": "Esternoclavicular",
+     "id": "a-esternoclavicular",
+     "titulo": "A esternoclavicular",
      "radar": "confirmado"
     },
     {
-     "id": "fechamento",
-     "titulo": "Fechamento",
+     "id": "as-complicacoes-das-pontas",
+     "titulo": "As complicações das pontas",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-idade-muda-tudo",
+     "titulo": "A idade muda tudo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "armadilhas-e-tres-casos",
+     "titulo": "Armadilhas e três casos",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
      "radar": "fundamento"
     }
    ],
    "questoes": [
+    "conceitos-basicos-0196",
     "pediatria-0643",
     "pediatria-0685",
     "pediatria-0706",
@@ -7746,6 +7777,7 @@
     "pediatria-0558"
    ],
    "treino": [
+    "pediatria-1232",
     "pediatria-1225",
     "pediatria-1226",
     "pediatria-1227",
@@ -7753,17 +7785,20 @@
     "pediatria-1229",
     "pediatria-1230",
     "pediatria-1231",
-    "pediatria-1232",
+    "pediatria-1450",
     "pediatria-1233",
     "pediatria-1234",
     "pediatria-1235",
     "pediatria-1236",
     "pediatria-1237",
     "pediatria-1239",
-    "pediatria-1238"
+    "pediatria-1238",
+    "pediatria-1448",
+    "pediatria-1449"
    ],
    "subtemas": [
-    "Fraturas da clavícula e do úmero proximal na criança"
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Outras fraturas na criança"
    ]
   },
   {
