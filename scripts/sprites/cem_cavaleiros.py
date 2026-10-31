@@ -1,13 +1,14 @@
 """Os três cavaleiros do Salão dos Cem (ranking), animados por código a partir do desenho escolhido pelo Tales.
 
-O desenho base (scripts/sprites/cem/cavaleiro-base.png, 68 x 85) foi feito pelo Tales numa ferramenta de imagem,
-livre de direitos, e ele pediu para usar "100% igual" (31/10/2026): a grade de pixels foi extraída da imagem
-original e limpa. Este script não muda o traço; só:
+O desenho é do Tales (PixelLab, livre de direitos; ele pediu para usar "100% igual", 31/10/2026): a saudação de 8
+quadros (scripts/sprites/cem/saudacao-base.png, grade extraída do GIF dele e limpa) e, como cavaleiro parado, o
+1º quadro dela. Este script não muda o traço; só:
 - pinta as três versões (1º original de penacho vermelho e ouro; 2º penacho azul e prata; 3º penacho vinho e bronze);
 - anima a espera em 8 quadros: respiração de 1 px (o tronco desce, as pernas ficam), o penacho que balança com um
   quadro de atraso e um brilho que passa na armadura.
 
-Gera public/ranking/cem/cavaleiros.png (uma linha por cavaleiro, 8 quadros de 72 x 88) e cavaleiros.json.
+Gera public/ranking/cem/cavaleiros.png (linhas 0 a 2: espera do 1º, 2º e 3º; linhas 3 a 5: a saudação de cada um;
+8 quadros de 75 x 88) e cavaleiros.json.
 Uso: python3 scripts/sprites/cem_cavaleiros.py [--previa PASTA]
 """
 from __future__ import annotations
@@ -20,12 +21,17 @@ import numpy as np
 from PIL import Image
 
 RAIZ = Path(__file__).resolve().parents[2]
-BASE = RAIZ / "scripts/sprites/cem/cavaleiro-base.png"
+# A saudação (8 quadros) também é do Tales (PixelLab, 31/10/2026): a grade foi extraída do GIF dele e a franja
+# clara do fundo branco foi limpa. SAUDA_DESLOC é onde a base fica dentro de cada quadro da saudação.
+SAUDA = RAIZ / "scripts/sprites/cem/saudacao-base.png"
+# Recorte comum a todos os quadros da saudação (x0, y0, x1, y1): o 1º quadro dela é também o cavaleiro parado,
+# para a espera e a saudação serem o mesmo desenho, com os pés no mesmo lugar.
+RECORTE = (16, 8, 87, 92)
 SAIDA = RAIZ / "public/ranking/cem"
 MARGEM = 2                    # folga em volta (penacho e brilho não encostam na borda)
 NQ = 8
 MS = 170
-CINTURA = 66                  # da cintura para cima o corpo respira; pernas e sombra ficam paradas
+CINTURA = 68                  # da cintura para cima o corpo respira; pernas e sombra ficam paradas
 RESPIRA = [0, 0, 1, 1, 1, 1, 0, 0]
 PENACHO = [0, 0, 1, 1, 2, 1, 0, -1]   # balanço da ponta do penacho (px), um quadro atrás da respiração
 BRILHO = [None, None, 0.0, 0.33, 0.66, 1.0, None, None]   # posição da faixa de brilho (0 = esquerda, 1 = direita)
@@ -102,23 +108,55 @@ def quadro(v: np.ndarray, verm: np.ndarray, metal: np.ndarray, k: int) -> np.nda
     return q
 
 
+def quadros_saudacao() -> list[np.ndarray]:
+    """Os 8 quadros da saudação, recortados e sem o bege do fundo preso entre as pernas."""
+    tira = np.asarray(Image.open(SAUDA).convert("RGBA")).copy()
+    sw = tira.shape[1] // NQ
+    x0, y0, x1, y1 = RECORTE
+    saida = []
+    for k in range(NQ):
+        f = tira[y0:y1, k * sw + x0:k * sw + x1].copy()
+        r, g, b = (f[..., i].astype(int) for i in range(3))
+        ys = np.arange(f.shape[0])[:, None]
+        preso = (f[..., 3] > 0) & (r > 195) & (g > 175) & (b > 150) & (r - b > 12) & (ys >= 70) & (ys <= 80)
+        f[preso] = 0
+        saida.append(f)
+    return saida
+
+
+def saudacao(w: int, h: int):
+    """Os 8 quadros da saudação nas três cores, no mesmo quadro (pés no mesmo lugar) da espera."""
+    linhas = [[], [], []]
+    for f in quadros_saudacao():
+        q = np.zeros((h, w, 4), np.uint8)
+        q[MARGEM:MARGEM + f.shape[0], MARGEM:MARGEM + f.shape[1]] = f
+        for li, v in enumerate(versoes(q)):
+            linhas[li].append(v)
+    return linhas
+
+
 def main() -> None:
-    b = np.asarray(Image.open(BASE).convert("RGBA"))
+    b = quadros_saudacao()[0]
     _, verm, _, metal = mascaras(b)
     vs = versoes(b)
     h, w = b.shape[0] + 2 * MARGEM, b.shape[1] + 2 * MARGEM
-    folha = Image.new("RGBA", (w * NQ, h * len(vs)), (0, 0, 0, 0))
+    folha = Image.new("RGBA", (w * NQ, h * len(vs) * 2), (0, 0, 0, 0))
     quadros = []
     for li, v in enumerate(vs):
         linha = [quadro(v, verm, metal, k) for k in range(NQ)]
         quadros.append(linha)
         for k, q in enumerate(linha):
             folha.paste(Image.fromarray(q, "RGBA"), (k * w, li * h))
+    sauda = saudacao(w, h)
+    for li, linha in enumerate(sauda):
+        for k, q in enumerate(linha):
+            folha.paste(Image.fromarray(q, "RGBA"), (k * w, (3 + li) * h))
     SAIDA.mkdir(parents=True, exist_ok=True)
-    folha.save(SAIDA / "cavaleiros.png", optimize=True)
+    # Paleta de até 256 cores, sem pontilhado (os pixels ficam os mesmos e o arquivo cai para um terço).
+    folha.quantize(256, method=Image.FASTOCTREE, dither=Image.NONE).save(SAIDA / "cavaleiros.png", optimize=True)
     (SAIDA / "cavaleiros.json").write_text(json.dumps({
-        "largura": w, "altura": h, "quadros": NQ, "ms": MS, "linhas": {"1": 0, "2": 1, "3": 2},
-        "pes": [MARGEM + 34, MARGEM + 81], "nota": "pés (centro) e linha do chão em px do quadro",
+        "largura": w, "altura": h, "quadros": NQ, "ms": MS, "linhas": {"1": 0, "2": 1, "3": 2}, "saudacao": {"1": 3, "2": 4, "3": 5}, "ms_saudacao": 120,
+        "pes": [MARGEM + 35, MARGEM + 82], "nota": "pés (centro) e linha do chão em px do quadro",
     }, ensure_ascii=False, indent=1))
     print("cavaleiros.png", folha.size, (SAIDA / "cavaleiros.png").stat().st_size, "bytes")
     if "--previa" in sys.argv:
@@ -134,6 +172,13 @@ def main() -> None:
         for k in range(NQ):
             tira.alpha_composite(Image.fromarray(quadros[0][k], "RGBA").resize((w * 3, h * 3), Image.NEAREST), (k * w * 3, 0))
         tira.save(destino / "quadros-1.png")
+        fr = []
+        for k in range(NQ):
+            f = Image.new("RGBA", (w * 3 + 40, h + 20), (23, 28, 48, 255))
+            for li in range(3):
+                f.alpha_composite(Image.fromarray(sauda[li][k], "RGBA"), (10 + li * (w + 10), 10))
+            fr.append(f.convert("RGB").resize((f.width * 4, f.height * 4), Image.NEAREST))
+        fr[0].save(destino / "saudacao.gif", save_all=True, append_images=fr[1:] + [fr[0]] * 4, duration=120, loop=0)
 
 
 if __name__ == "__main__":

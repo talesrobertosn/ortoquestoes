@@ -146,7 +146,7 @@
 @keyframes cem-luz { 50% { opacity: 0.82; } }
 .cem-cavaleiro {
   position: absolute; display: block; image-rendering: pixelated;
-  background-size: 800% 300%; background-repeat: no-repeat; background-position-x: 0%;
+  background-size: 800% 600%; background-repeat: no-repeat; background-position-x: 0%;
   animation: cem-cavaleiro 1.36s steps(8, jump-none) infinite;
   filter: drop-shadow(0 0.4vw 0.3vw rgba(10, 8, 20, 0.35));
 }
@@ -154,6 +154,8 @@
 .cem-cavaleiro--1 { filter: drop-shadow(0 0.4vw 0.3vw rgba(10, 8, 20, 0.35)) brightness(1.08) saturate(1.05); }
 .cem-cavaleiro--2, .cem-cavaleiro--3 { filter: drop-shadow(0 0.4vw 0.3vw rgba(10, 8, 20, 0.35)) sepia(0.12) brightness(0.97); }
 @keyframes cem-cavaleiro { to { background-position-x: 100%; } }
+/* A saudação do novo campeão: a espada sobe uma vez (8 quadros) e ele volta à espera. */
+.cem-cavaleiro--saudando { animation: cem-cavaleiro 0.96s steps(8, jump-none) 1 both; }
 .cem-salao__tocha { position: absolute; background-size: 600% 100%; image-rendering: pixelated; animation: cem-chama 0.72s steps(6, jump-none) infinite; }
 .cem-salao__poeira i {
   position: absolute; width: 0.35%; aspect-ratio: 1; background: #fff3c4; border-radius: 1px; opacity: 0;

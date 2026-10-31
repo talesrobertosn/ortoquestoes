@@ -17,22 +17,22 @@ const BASE = { w: 480, h: 270 }
 // Onde os cavaleiros pisam (px da arte base), os mesmos de public/ranking/cem/salao.json.
 const PEDESTAL: Record<number, { cx: number; topo: number }> = { 1: { cx: 240, topo: 170 }, 2: { cx: 166, topo: 186 }, 3: { cx: 314, topo: 192 } }
 const TOCHAS = [{ x: 58, y: 118 }, { x: 422, y: 118 }]
-// Quadro do cavaleiro (cavaleiros.json): 72 x 88, pés em (36, 83).
-const CAV = { w: 72, h: 88, pes: [36, 83] }
+// Quadro do cavaleiro (cavaleiros.json): 75 x 88, pés em (37, 84); linhas 0-2 espera, 3-5 saudação.
+const CAV = { w: 75, h: 88, pes: [37, 84], linhas: 6 }
 const LUGAR = ['', '1º lugar', '2º lugar', '3º lugar']
 const TITULO = ['', 'Campeão', 'Guardião de prata', 'Guardião de bronze']
 
 const pct = (v: number, total: number) => `${(v / total) * 100}%`
 const POEIRA = Array.from({ length: 14 }, (_, i) => ({ x: 212 + ((i * 37) % 70), y: 40 + ((i * 53) % 120), d: 6 + (i % 5) * 1.3, a: -((i * 1.7) % 8) }))
 
-function Cavaleiro({ lugar }: { lugar: number }) {
+function Cavaleiro({ lugar, saudando }: { lugar: number; saudando: boolean }) {
   const p = PEDESTAL[lugar]
   const estilo: CSSProperties = {
     left: pct(p.cx - CAV.pes[0], BASE.w), top: pct(p.topo - CAV.pes[1], BASE.h), width: pct(CAV.w, BASE.w), height: pct(CAV.h, BASE.h),
-    backgroundImage: `url(${recurso('ranking/cem/cavaleiros.png')})`, backgroundPositionY: `${(lugar - 1) * 50}%`,
+    backgroundImage: `url(${recurso('ranking/cem/cavaleiros.png')})`, backgroundPositionY: `${((lugar - 1 + (saudando ? 3 : 0)) / (CAV.linhas - 1)) * 100}%`,
     animationDelay: `${-(lugar - 1) * 0.43}s`,
   }
-  return <span className={`cem-cavaleiro cem-cavaleiro--${lugar}`} style={estilo} aria-hidden="true" />
+  return <span className={`cem-cavaleiro cem-cavaleiro--${lugar}${saudando ? ' cem-cavaleiro--saudando' : ''}`} style={estilo} aria-hidden="true" />
 }
 
 export interface CartaoTop3 { linha: LinhaRanking; extra?: ReactNode }
@@ -61,7 +61,7 @@ export function SalaoCem({ linhas, periodo, cerimonia }: { linhas: LinhaRanking[
         <img className="cem-salao__camada" src={img('salao-fundo.webp')} srcSet={`${img('salao-fundo-960.webp')} 960w, ${img('salao-fundo.webp')} 1440w`}
           sizes="(max-width: 40rem) 160vw, min(72rem, 100vw)" alt="" width={1440} height={810} decoding="async" fetchPriority="high" draggable={false} />
         {TOCHAS.map((t, i) => <span key={i} className="cem-salao__tocha" style={{ left: pct(t.x - 6, BASE.w), top: pct(t.y - 14, BASE.h), width: pct(12, BASE.w), height: pct(16, BASE.h), backgroundImage: `url(${img('chama-16.png')})`, animationDelay: `${-i * 0.17}s` }} />)}
-        {top3.map((l) => <Cavaleiro key={l.posicao} lugar={l.posicao} />)}
+        {top3.map((l) => <Cavaleiro key={l.posicao} lugar={l.posicao} saudando={!!cerimonia && l.posicao === 1} />)}
         <img className="cem-salao__camada cem-salao__luz" src={img('salao-luz.webp')} alt="" width={1440} height={810} decoding="async" draggable={false} />
         <span className="cem-salao__poeira">{POEIRA.map((p, i) => <i key={i} style={{ left: pct(p.x, BASE.w), top: pct(p.y, BASE.h), animationDuration: `${p.d}s`, animationDelay: `${p.a}s` }} />)}</span>
         <img className="cem-salao__camada" src={img('salao-frente.webp')} alt="" width={1440} height={810} decoding="async" draggable={false} />
