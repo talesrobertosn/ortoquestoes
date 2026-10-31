@@ -2,7 +2,7 @@
 // A lógica está em src/componentes/espera/cenas.ts; a arte, em scripts/gerar_gato_cenas.py.
 import assert from 'node:assert/strict'
 import { build } from 'esbuild'
-import { mkdtemp, rm, access } from 'node:fs/promises'
+import { mkdtemp, rm, access, readFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -35,6 +35,13 @@ try {
     assert.equal(p.length === 0, de === para, `${de} → ${para}`)
   }
   await access('public/pixel/mascote/gato-cenas.png').catch(() => { throw new Error('falta a folha das cenas (scripts/gerar_gato_cenas.py)') })
+  // A folha tem uma linha por trecho, na mesma ordem do gerador, e o tamanho que o componente espera.
+  const py = await readFile('scripts/gerar_gato_cenas.py', 'utf8')
+  const ordem = [...py.slice(py.indexOf('LINHAS = ['), py.indexOf(']', py.indexOf('LINHAS = ['))).matchAll(/'([a-z-]+)'/g)].map((x) => x[1])
+  assert.deepEqual(ordem, [...m.LINHAS_CENAS], 'a ordem das linhas do gerador e de cenas.ts deve ser a mesma')
+  const png = await readFile('public/pixel/mascote/gato-cenas.png')
+  assert.equal(png.readUInt32BE(16), m.QUADRO.w * m.QUADROS_POR_LINHA, 'largura da folha')
+  assert.equal(png.readUInt32BE(20), m.QUADRO.h * m.LINHAS_CENAS.length, 'altura da folha')
   console.log(`gato da espera: ${m.CENAS.length} cenas, ${m.LINHAS_CENAS.length} linhas, ${raras} segredos em 4000 sorteios`)
 } finally {
   await rm(pasta, { recursive: true, force: true })
