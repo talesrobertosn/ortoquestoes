@@ -181,7 +181,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 737 | MONTEGGIA da criança (Rockwood and Wilkins' Fractures in Children, cap. 12), refação TEOT/TARO | 10 para 50 KB, 3 figuras | 25 comentários e 3 simulados novos (pediatria-1451 a 1453); meta do cronograma estável ao puxar um mini-simulado |
 | 738 | Coluna cervical da criança (Rockwood and Wilkins' Fractures in Children, cap. 21), refação TEOT/TARO | 13 para 49 KB, 3 figuras | 23 comentários e 3 simulados novos (pediatria-1454 a 1456) |
 | 739 | Coluna toracolombar da criança (Rockwood and Wilkins' Fractures in Children, cap. 22), refação TEOT/TARO | 10 para 45 KB, 2 figuras | 21 comentários e 3 simulados novos (pediatria-1457 a 1459) |
-| (este PR) | Pé da criança (Rockwood and Wilkins' Fractures in Children, cap. 31), refação TEOT/TARO | 11 para 45 KB, 2 figuras | 23 comentários e 3 simulados novos (pediatria-1460 a 1462) |
+| 740 | Pé da criança (Rockwood and Wilkins' Fractures in Children, cap. 31), refação TEOT/TARO | 11 para 45 KB, 2 figuras | 23 comentários e 3 simulados novos (pediatria-1460 a 1462) |
+| (este PR) | Tornozelo da criança (Rockwood and Wilkins' Fractures in Children, cap. 30), refação TEOT/TARO | 17 para 45 KB, 2 figuras | 36 comentários e 3 simulados novos (pediatria-1463 a 1465) |
 
 ## Próximo
 
