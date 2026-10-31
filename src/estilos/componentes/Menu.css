@@ -20,7 +20,7 @@
 .jc__caixa.mn-livro-janela > .jc__fechar { display: none; }
 .jc__caixa.mn-livro-janela .mn-carregando { min-height: 40rem; }
 
-.mn-livro { position: relative; padding: 2.5rem 2.4rem 2.2rem 0.4rem; color: var(--mn-tinta); animation: mn-abre 0.3s steps(5) backwards; }
+.mn-livro { position: relative; padding: 2.5rem 2.4rem 2.2rem 0.4rem; color: var(--mn-tinta); animation: mn-abre 0.22s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; will-change: transform, opacity; }
 @keyframes mn-abre { from { opacity: 0; transform: scale(0.94, 0.86); } }
 
 /* Abas de papel no alto (Menu · Minha conta · Fechar), metidas atrás da capa. */
@@ -168,36 +168,36 @@ a.mn-aba:hover, button.mn-aba:hover, .mn-aba:focus-visible { transform: translat
 /* ── Luz de cena "HD-2D" (Octopath Traveler II de referência) ──
    O site atrás fica desfocado como profundidade de campo, com vinheta; feixes de luz quente descem da esquerda, poeira e
    bokeh flutuam, o livro recebe luz por cima (brilho no couro e no latão, sombra no pé). */
-.jc:has(.mn-livro-janela) { backdrop-filter: blur(2px) saturate(0.9) brightness(0.62) sepia(0.25); -webkit-backdrop-filter: blur(2px) saturate(0.9) brightness(0.62) sepia(0.25);
-  background: radial-gradient(60% 55% at 18% 0%, rgba(255, 190, 110, 0.35), transparent 65%), radial-gradient(130% 110% at 50% 45%, rgba(20, 12, 4, 0.12) 40%, rgba(6, 3, 1, 0.7) 100%); }
-:root[data-tema="escuro"] .jc:has(.mn-livro-janela) { background: radial-gradient(70% 60% at 22% 8%, rgba(150, 180, 255, 0.2), transparent 60%), radial-gradient(130% 110% at 50% 45%, rgba(4, 8, 20, 0.2) 40%, rgba(2, 4, 12, 0.75) 100%); }
+.jc:has(.mn-livro-janela) { backdrop-filter: brightness(0.86) saturate(0.95); -webkit-backdrop-filter: brightness(0.86) saturate(0.95);
+  background: radial-gradient(60% 55% at 18% 0%, rgba(255, 190, 110, 0.35), transparent 65%), radial-gradient(130% 110% at 50% 45%, rgba(20, 12, 4, 0.06) 45%, rgba(6, 3, 1, 0.4) 100%); }
+:root[data-tema="escuro"] .jc:has(.mn-livro-janela) { background: radial-gradient(70% 60% at 22% 8%, rgba(150, 180, 255, 0.2), transparent 60%), radial-gradient(130% 110% at 50% 45%, rgba(4, 8, 20, 0.12) 45%, rgba(2, 4, 12, 0.5) 100%); }
 .mn-luz { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
 .mn-luz--frente { z-index: 4; }
-.mn-luz__feixes { position: absolute; inset: -20% -10%; mix-blend-mode: screen; opacity: 1; filter: blur(16px);
+.mn-luz__feixes { position: absolute; inset: -20% -10%; mix-blend-mode: screen; opacity: 0.8;
   background: linear-gradient(118deg, transparent 8%, rgba(255, 214, 150, 0.85) 13%, transparent 20%, transparent 26%, rgba(255, 224, 170, 0.6) 30%, transparent 36%, transparent 47%, rgba(255, 210, 140, 0.45) 51%, transparent 57%, transparent 68%, rgba(255, 228, 180, 0.3) 71%, transparent 77%);
     transparent 52%, rgba(255, 210, 140, 0.28) 55%, transparent 61%, transparent 70%, rgba(255, 228, 180, 0.2) 73%, transparent 79%);
   -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.7) 60%, transparent 95%); mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.7) 60%, transparent 95%);
-  animation: mn-feixes 9s ease-in-out infinite alternate; }
+  }
 @keyframes mn-feixes { from { opacity: 0.7; transform: translateX(-1.5%); } to { opacity: 0.85; transform: translateX(1.5%); } }
 .mn-luz i { position: absolute; width: var(--s); height: var(--s); border-radius: 50%; background: #ffe6b0; box-shadow: 0 0 6px 2px rgba(255, 210, 130, 0.7);
   animation: mn-poeira var(--t) linear var(--d) infinite; opacity: 0; }
-.mn-luz i.bokeh { background: radial-gradient(circle, rgba(255, 236, 200, 0.55), rgba(255, 210, 140, 0.15) 60%, transparent 72%); box-shadow: none; filter: blur(1.5px); mix-blend-mode: screen; }
+.mn-luz i.bokeh { background: radial-gradient(circle, rgba(255, 236, 200, 0.55), rgba(255, 210, 140, 0.15) 60%, transparent 72%); box-shadow: none; mix-blend-mode: screen; }
 @keyframes mn-poeira { 0% { opacity: 0; transform: translate(0, 0); } 15% { opacity: 0.9; } 50% { transform: translate(22px, -40px); } 85% { opacity: 0.7; } 100% { opacity: 0; transform: translate(-10px, -90px); } }
-:root[data-tema="escuro"] .mn-luz__feixes { filter: blur(14px) hue-rotate(185deg) saturate(0.6); opacity: 0.5; }
+:root[data-tema="escuro"] .mn-luz__feixes { filter: hue-rotate(185deg) saturate(0.6); opacity: 0.45; }
 :root[data-tema="escuro"] .mn-luz i { background: #e6eeff; box-shadow: 0 0 6px 2px rgba(170, 200, 255, 0.6); }
 
 /* O livro sob a luz: brilho quente no canto de cima, sombra no pé, contato com o "chão". */
 .mn-livro__capa::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: soft-light;
-  background: radial-gradient(80% 90% at 18% 0%, rgba(255, 236, 190, 0.9), transparent 55%), linear-gradient(160deg, transparent 45%, rgba(20, 8, 0, 0.7)); }
+  background: radial-gradient(80% 90% at 18% 0%, rgba(255, 236, 190, 0.9), transparent 55%), linear-gradient(160deg, transparent 55%, rgba(20, 8, 0, 0.35)); }
 .mn-livro__miolo::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: multiply;
-  background: radial-gradient(110% 95% at 25% 5%, transparent 40%, rgba(80, 45, 10, 0.62) 100%); }
+  background: radial-gradient(110% 95% at 25% 5%, transparent 40%, rgba(80, 45, 10, 0.3) 100%); }
 .mn-livro__miolo::before { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: screen;
-  background: radial-gradient(50% 45% at 20% 4%, rgba(255, 226, 160, 0.55), transparent 70%); animation: mn-respira 6s ease-in-out infinite alternate; }
+  background: radial-gradient(50% 45% at 20% 4%, rgba(255, 226, 160, 0.55), transparent 70%); }
 @keyframes mn-respira { to { opacity: 0.55; } }
 .mn-livro__canto { filter: var(--mn-contorno-px) drop-shadow(0 0 7px rgba(255, 205, 110, 0.75)); }
-.mn-livro__canto--1 { animation: mn-reflexo 3.5s ease-in-out infinite alternate; }
+
 @keyframes mn-reflexo { to { filter: var(--mn-contorno-px) drop-shadow(0 0 13px rgba(255, 225, 150, 0.95)); } }
-.mn-livro::after { content: ""; position: absolute; left: 4%; right: 8%; bottom: -1.4rem; height: 3rem; z-index: -1; border-radius: 50%; background: rgba(0, 0, 0, 0.55); filter: blur(18px); }
+.mn-livro::after { content: ""; position: absolute; left: 4%; right: 8%; bottom: -1.4rem; height: 3rem; z-index: -1; border-radius: 50%; background: radial-gradient(closest-side, rgba(0, 0, 0, 0.5), transparent); }
 .mn-aba--titulo, .mn-planos { text-shadow: 0 0 8px rgba(255, 240, 200, 0.5); }
 .mn-faixa-titulo > span { text-shadow: 0 0 10px rgba(255, 230, 180, 0.45); }
 

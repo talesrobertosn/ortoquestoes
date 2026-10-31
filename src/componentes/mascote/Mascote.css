@@ -1,0 +1,20 @@
+/* O mascote (Mascote.tsx): a folha de sprites em pixel art (scripts/gerar_mascote.py), uma linha por comportamento,
+   8 quadros por linha, ampliada sem suavizar. Só troca de quadro (steps): leve no celular e no computador. */
+.mascote { position: relative; display: inline-block; aspect-ratio: 96 / 128; }
+.mascote__corpo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: pointer; }
+span.mascote__corpo { cursor: inherit; }
+.mascote__corpo:focus-visible { outline: 3px solid #f0c46a; outline-offset: 2px; }
+.mascote__sprite { display: block; width: 100%; height: 100%; image-rendering: pixelated;
+  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / calc(var(--quadros) * 100%) calc(var(--linhas) * 100%) no-repeat;
+  animation: mascote-quadros var(--dur) steps(8) infinite; }
+@keyframes mascote-quadros { to { background-position-x: calc(8 / 7 * 100%); } }
+button.mascote__corpo:hover .mascote__sprite { filter: brightness(1.08) drop-shadow(0 0 6px rgba(255, 236, 190, 0.5)); }
+
+/* Balão de fala. */
+.mascote__balao { position: absolute; left: 50%; bottom: 100%; z-index: 3; width: max-content; max-width: min(17rem, 70vw); margin-bottom: 0.35rem; padding: 0.45rem 0.65rem 0.5rem;
+  transform: translateX(-50%); background: #fbf3df; color: #1b1208; font-size: 0.82rem; font-weight: 650; line-height: 1.3; text-align: center;
+  box-shadow: 0 0 0 2px #1b1208, 3px 4px 0 2px rgba(0, 0, 0, 0.3); animation: mascote-balao 0.28s steps(3); }
+.mascote__balao::after { content: ""; position: absolute; left: 50%; bottom: -8px; width: 10px; height: 9px; margin-left: -5px; background: #fbf3df; clip-path: polygon(0 0, 100% 0, 50% 100%); }
+@keyframes mascote-balao { from { opacity: 0; transform: translate(-50%, 6px); } }
+@media (max-width: 40rem) { .mascote__balao { font-size: 0.76rem; max-width: 13rem; } }
+@media (prefers-reduced-motion: reduce) { .mascote__sprite, .mascote__balao { animation: none; } }
