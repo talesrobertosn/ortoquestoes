@@ -76,6 +76,8 @@ export const LINHAS_GATO = [
   { id: 'fogueira', nome: 'deitado perto da fogueira' },
   { id: 'ronronando', nome: 'ronronando' },
   { id: 'acordando', nome: 'acordando' },
+  // Terceira leva (31/10/2026, Biblioteca 3.0): olhando para cima (para a coruja bibliotecária).
+  { id: 'olhando_cima', nome: 'olhando para cima' },
 ] as const
 
 export type IdLinhaGato = (typeof LINHAS_GATO)[number]['id']
@@ -100,7 +102,8 @@ const FOLHAS_ESQUELETO: Leva[] = [
 const FOLHAS_GATO: Leva[] = [
   { src: SPRITE_GATO.src, ate: 3 },
   { src: '/pixel/mascote/gato-poses.png', ate: 9 },
-  { src: '/pixel/mascote/gato-poses2.png', ate: LINHAS_GATO.length },
+  { src: '/pixel/mascote/gato-poses2.png', ate: 13 },
+  { src: '/pixel/mascote/gato-poses3.png', ate: LINHAS_GATO.length },
 ]
 
 function folha(indice: number, levas: Leva[]): Folha {
