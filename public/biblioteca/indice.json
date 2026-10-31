@@ -8216,15 +8216,15 @@
   },
   {
    "id": "rockwoodcriancas10-27-fise-proximal-tibia",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
-   "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
-   "resumo": "Fise estável pelos contrafortes (colateral medial na metáfise, fíbula), menino adolescente que salta e arranca a tuberosidade, OGDEN modificada em cinco tipos, poplítea na hiperextensão e recorrente tibial anterior na tuberosidade, internar sempre, desvio residual acima de 2 a 3 mm, recurvato e o valgo de COZEN da metáfise.",
+   "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures (com a fratura metafisária do capítulo 29)",
+   "resumo": "Fise estável pelos contrafortes (colateral medial na metáfise, fíbula); tíbia proximal cresce 6 mm por ano e fecha de posterior para anterior; tuberosidade = menino adolescente que salta, acima de 30 graus leva a epífise; OGDEN modificada em cinco tipos (III intra-articular, IV fise inteira, V só tendão); MUBARAK: metafisária aos 4 anos, intra-articular aos 15; hiperextensão e poplítea, tuberosidade e recorrente tibial anterior; internar sempre; cirurgia com desvio acima de 2 a 3 mm; complicação mais comum = material; deformidade fisária = recurvato; metafisária de 3 a 6 anos = valgo de COZEN, que aparece em 6 meses, piora até 18 a 24 e corrige sozinho.",
    "acesso": "gratis",
-   "minutos": 13,
+   "minutos": 27,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -8247,8 +8247,13 @@
      "radar": "confirmado"
     },
     {
-     "id": "a-fise-proximal-mecanismos-e-direcao",
-     "titulo": "A fise proximal: mecanismos e direção",
+     "id": "a-fratura-metafisaria-e-o-valgo-de-cozen",
+     "titulo": "A fratura metafisária e o valgo de COZEN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-fise-proximal-mecanismos-idade-e-lesoes-associ",
+     "titulo": "A fise proximal: mecanismos, idade e lesões associadas",
      "radar": "confirmado"
     },
     {
@@ -8272,13 +8277,24 @@
      "radar": "confirmado"
     },
     {
-     "id": "fechamento",
-     "titulo": "Fechamento",
+     "id": "as-armadilhas-segundo-os-autores",
+     "titulo": "As armadilhas, segundo os autores",
+     "radar": "clinico"
+    },
+    {
+     "id": "do-pronto-socorro-a-conduta-tres-casos",
+     "titulo": "Do pronto-socorro à conduta: três casos",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
      "radar": "fundamento"
     }
    ],
    "questoes": [
     "pediatria-0174",
+    "pediatria-0111",
     "pediatria-0542",
     "pediatria-0948",
     "pediatria-0544",
@@ -8289,32 +8305,38 @@
     "pediatria-0779",
     "pediatria-0840",
     "pediatria-0580",
-    "pediatria-0946",
-    "pediatria-0713",
-    "pediatria-0752",
-    "pediatria-0516",
-    "pediatria-0616",
-    "pediatria-0560",
-    "pediatria-0918",
-    "pediatria-0836",
     "pediatria-0579",
     "pediatria-0705",
     "pediatria-0601",
     "pediatria-0545",
     "pediatria-0646",
     "pediatria-0621",
-    "pediatria-0716"
+    "pediatria-0716",
+    "pediatria-0752",
+    "pediatria-0946",
+    "pediatria-0713",
+    "pediatria-0516",
+    "pediatria-0616",
+    "pediatria-0560",
+    "pediatria-0918",
+    "pediatria-0836",
+    "pediatria-0589"
    ],
    "treino": [
     "pediatria-1113",
     "pediatria-1114",
+    "pediatria-1429",
     "pediatria-1110",
     "pediatria-1111",
     "pediatria-1108",
     "pediatria-1109",
+    "pediatria-1427",
+    "pediatria-1428",
+    "pediatria-1431",
     "pediatria-1112",
     "pediatria-1120",
     "pediatria-1121",
+    "pediatria-1430",
     "pediatria-1117",
     "pediatria-1118",
     "pediatria-1119",
@@ -8322,7 +8344,10 @@
     "pediatria-1115"
    ],
    "subtemas": [
-    "Fraturas do fêmur e da perna na criança"
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança",
+    "Lesões fisárias",
+    "Joelho da criança"
    ]
   },
   {
