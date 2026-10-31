@@ -149,7 +149,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 705 | Anatomia da coluna e vias de acesso | 45 KB, com o Netter cap. 2 | 84, todo o subtema |
 | 706 | Instabilidade do ombro | 46 KB, Campbell cap. 47 e Rockwood cap. 35 | 65 (os 7 que já estavam no padrão ficaram); 0448 saiu da vitrine da página inicial por ter alerta |
 | 707 | Estadiamento, biópsia e margens | 52 KB, Campbell cap. 24 e vizinhos | 45 + 3 originais de duplicatas (0318, 0319, 0136); 0266 desligada do resumo (original é a mao-0459, protegida) |
-| (este) | ATQ: biomecânica e componentes (parte 1) | 45 KB, Campbell cap. 3 | 35 (quadril-0330 com alerta: o livro fala em rotação externa, o gabarito em medial) |
+| 708 | ATQ: biomecânica e componentes (parte 1) | 45 KB, Campbell cap. 3 | 35 (quadril-0330 com alerta: o livro fala em rotação externa, o gabarito em medial) |
+| (este) | Omartrose, artroplastia e artrodese do ombro | 45 KB, Campbell caps. 12 e 13 | 61 + 2 originais de trauma (0346 com alerta: o livro indica a anatômica, o gabarito a reversa) |
 
 ## Melhorias de sistema feitas no caminho
 
