@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
-import { SPRITE_GATO, LINHAS_GATO, linhaGato } from '../../mascote/sprites'
+import { folhaGato } from '../../mascote/sprites'
 import { urlCss } from '../../../config'
 import type { Periodo } from '../../../estado/aparencia'
 
@@ -61,7 +61,7 @@ export function CenaDiorama({ linhaFogo, periodo }: { linhaFogo: number; periodo
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" tabIndex={-1} className="hd-gato" style={lugar(219, 150, 36, 22.5)}
           onClick={() => definirGato((g) => (g === 'dormindo' ? 'acordado' : 'tala'))}>
-          <span className="hd-gato__sprite" style={{ '--sprite': urlCss(SPRITE_GATO.src.slice(1)), '--linha': linhaGato(gato), '--linhas': LINHAS_GATO.length } as CSSProperties} />
+          <span className="hd-gato__sprite" style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas } as CSSProperties} />
         </button>
         {gato === 'tala' && <span className="hd-balao" style={{ left: `${(237 / 480) * 100}%`, top: `${(148 / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
         <span className="hd-particulas">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>

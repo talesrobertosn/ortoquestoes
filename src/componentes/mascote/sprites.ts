@@ -27,6 +27,16 @@ export const LINHAS_ESQUELETO = [
   { id: 'abobora', nome: 'com a lanterna de abóbora', halloween: true },
   { id: 'velas', nome: 'com o castiçal de velas', halloween: true },
   { id: 'morcegos', nome: 'com os morcegos', halloween: true },
+  // Linhas novas (31/10/2026): usadas por id em lugares específicos; sorteio: false = fora do sorteio do topo.
+  { id: 'estudioso', nome: 'estudando de óculos', halloween: false, sorteio: false },
+  { id: 'mago', nome: 'de mago com o cajado', halloween: false, sorteio: false },
+  { id: 'inverno', nome: 'de gorro e cachecol com café', halloween: false, sorteio: false },
+  { id: 'pergaminho', nome: 'lendo as missões do dia', halloween: false, sorteio: false },
+  { id: 'comemorando', nome: 'comemorando', halloween: false, sorteio: false },
+  { id: 'trofeu', nome: 'erguendo um troféu', halloween: false, sorteio: false },
+  { id: 'descansando', nome: 'cochilando sentado com um livro', halloween: false, sorteio: false },
+  { id: 'orientando', nome: 'mostrando o caminho', halloween: false, sorteio: false },
+  { id: 'ortopedia', nome: 'de jaleco com martelo de reflexo', halloween: false, sorteio: false },
 ] as const
 
 export type IdLinhaEsqueleto = (typeof LINHAS_ESQUELETO)[number]['id']
@@ -43,16 +53,40 @@ export const LINHAS_GATO = [
   { id: 'dormindo', nome: 'dormindo' },
   { id: 'acordado', nome: 'acordado' },
   { id: 'tala', nome: 'com a tala no braço' },
+  // Linhas novas (31/10/2026)
+  { id: 'sentado', nome: 'sentado' },
+  { id: 'andando', nome: 'andando' },
+  { id: 'espreguicando', nome: 'se espreguiçando' },
+  { id: 'brincando', nome: 'brincando com a bolinha de lã' },
+  { id: 'lendo', nome: 'lendo' },
+  { id: 'comemorando', nome: 'comemorando' },
 ] as const
 
 export type IdLinhaGato = (typeof LINHAS_GATO)[number]['id']
 
-/** Linha (0, 1, 2...) de um comportamento na folha do esqueleto. */
-export function linhaEsqueleto(id: IdLinhaEsqueleto): number {
-  return LINHAS_ESQUELETO.findIndex((l) => l.id === id)
+/**
+ * As poses de 31/10/2026 em diante ficam numa segunda folha (esqueleto-poses.png, gato-poses.png): a folha de sempre
+ * continua leve no topo da página inicial, e a das poses só carrega onde uma pose fixa aparece.
+ */
+export const LINHAS_ESQUELETO_ANTIGAS = 14
+export const LINHAS_GATO_ANTIGAS = 3
+
+export interface Folha { src: string; linha: number; linhas: number }
+
+function folha(indice: number, antigas: number, total: number, src: string, srcPoses: string): Folha {
+  return indice < antigas
+    ? { src, linha: indice, linhas: antigas }
+    : { src: srcPoses, linha: indice - antigas, linhas: total - antigas }
 }
 
-/** Linha de um estado na folha do gato. */
-export function linhaGato(id: IdLinhaGato): number {
-  return LINHAS_GATO.findIndex((l) => l.id === id)
+/** Folha, linha e número de linhas de um comportamento do esqueleto. */
+export function folhaEsqueleto(id: IdLinhaEsqueleto): Folha {
+  return folha(LINHAS_ESQUELETO.findIndex((l) => l.id === id), LINHAS_ESQUELETO_ANTIGAS, LINHAS_ESQUELETO.length,
+    SPRITE_ESQUELETO.src, '/pixel/mascote/esqueleto-poses.png')
+}
+
+/** Folha, linha e número de linhas de um estado do gato. */
+export function folhaGato(id: IdLinhaGato): Folha {
+  return folha(LINHAS_GATO.findIndex((l) => l.id === id), LINHAS_GATO_ANTIGAS, LINHAS_GATO.length,
+    SPRITE_GATO.src, '/pixel/mascote/gato-poses.png')
 }

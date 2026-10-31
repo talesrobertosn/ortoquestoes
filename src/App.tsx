@@ -304,6 +304,8 @@ export function App() {
   if (sessao && contasDisponiveis && proximoPasso(sessao.user.user_metadata) !== null) crachaNestaVisita.current = sessao.user.id
   const comCracha = !!sessao && crachaNestaVisita.current === sessao.user.id
     && !['sessao', 'questao', 'admin', 'conta', 'entrar', 'termos', 'condicoes-assinatura', 'assinatura', 'simulado-nacional', 'emails'].includes(primeiroFundo ?? '')
+    // Na página inicial, o crachá fica no nível do progresso (Inicio.tsx), para o cenário abrir a página.
+    && (primeiroFundo ?? '') !== ''
 
   return (
     <div className={`pagina pagina--${densidade}${lugar ? ' pagina--vila' : ''}`} style={{ fontSize: `${fonte}%` }}>

@@ -184,12 +184,14 @@ Ideia em estudo (não aplicada): interface monocromática estilo shadcn com a ar
 - Base: plana. Profundidade por tom (porcelana → branco) e borda de 1px `#dce2e0`; sombra média só em cartões que
   flutuam (`0 1px 2px` + `0 10px 28px` a 4–7%). No escuro, sombra vira contorno.
 - Temporada pixel: sombra dura deslocada `5px 5px 0` (estrutural, "de jogo"), borda de 2px.
-- HD-2D: vidro escuro com filete dourado interno e dois losangos nos cantos; brilho só na arte.
+- HD-2D: vidro escuro com filete dourado interno e dois losangos nos cantos; brilho só na arte. Na página inicial
+  (desde 31/10/2026) a arte não leva moldura: cantos de 20px, vidro escuro só onde há texto sobre a cena.
 
 ## Shapes
 
-- Raios: 4px (pequeno), 10px (controle: botão, campo), 16px (cartão), 6px (cartão pixel), cápsula 999px (chips).
-  Não inventar raios intermediários.
+- Raios: 4px (pequeno), 10px (controle: botão, campo), 16px (cartão), 6px (cartão pixel), cápsula 999px (chips) e
+  20px só para as superfícies de arte grandes da página inicial (cena, chão da sequência, painel do progresso e quadros
+  da galeria). Não inventar raios intermediários.
 - Pixel art sempre com `image-rendering: pixelated` e escala inteira quando possível.
 - Losango dourado é a marca do mundo HD-2D; não usar fora dele.
 
@@ -205,7 +207,16 @@ Ideia em estudo (não aplicada): interface monocromática estilo shadcn com a ar
 - **Selo de número (temporada):** quadrado dourado com Jersey 10 e sombra em degrau.
 - **Balão do mascote:** pergaminho `#fbf3df`, tinta `#1b1208`, contorno de 2px e ponta.
 - **Questão:** enunciado em corpo 17px, alternativas como linhas clicáveis com letra; resultado com cor semântica.
-- **Mascote:** `<Mascote />` (pixel, modelo E); só onde tem papel (guia, dica, reação), nunca enfeite.
+- **Mascote:** `<Mascote />` (pixel, modelo E); só onde tem papel (guia, dica, reação), nunca enfeite. Poses fixas
+  por id (`estudioso`, `orientando`, `trofeu`...) e o gato avulso `<GatoPixel estado="lendo" />`.
+- **Página inicial em níveis** (`componentes/inicio/jornada/`, `InicioJornada.css`): 1) o acampamento com a saudação
+  no céu e a missão do dia no chão à esquerda (nunca sobre a fogueira, o esqueleto ou o gato); 2) o chão da sequência
+  (número de dias grande em Jersey 10, sete tochas com silhueta própria por estado, meta e recorde pequenos) e a barra
+  de acesso rápido (ícones pixel de 128px do mesmo traço, `scripts/gerar_icones_pixel.py`); 3) o progresso numa
+  superfície só, dividida por linhas finas; 4) a galeria para explorar, com os quadros pintados de cantos redondos.
+  No celular a ordem é saudação → missão → sequência → atalhos → progresso → exploração.
+- **Tochas da semana** (`pixel/inicio/tocha-semana.png`, 24×40, 6 quadros, 7 linhas): feito, hoje feito, hoje em
+  andamento, parcial, perdido, futuro e especial (recorde ou chama nova). A cor nunca é a única diferença.
 
 ## Do's and Don'ts
 
