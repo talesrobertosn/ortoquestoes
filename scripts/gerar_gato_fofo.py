@@ -285,6 +285,7 @@ class Tela:
         self.sombra_a = np.zeros((h, w))
         self.rim = None              # (dx, rgb, força) luz de borda vinda do lado dx
         self.atras = []              # (x, y, rgb, a) pixels pintados ANTES do gato (sem contorno)
+        self.chao = None             # linha do chão: nada do gato passa dela (o contorno de baixo cai nela)
 
     # ── grupos e pintura ──
     def grupo(self, linha=True, cor=None) -> int:
@@ -315,11 +316,17 @@ class Tela:
             rgb = COR_RGB[cor] if isinstance(cor, str) and cor in COR_RGB else (hx(cor) if isinstance(cor, str) else np.array(cor, float))
             (self.atras if atras else self.sobre).append((x, y, rgb, a))
 
-    def molde(self, linhas, x, y, centro=True, cores=None):
-        """Desenha um molde de pixel (lista de strings; '.' é vazio) com o centro (ou canto) em (x, y)."""
+    def molde(self, linhas, x, y, centro=True, cores=None, contorno=None):
+        """Desenha um molde de pixel (lista de strings; '.' é vazio) com o centro (ou canto) em (x, y).
+        contorno: cor de um contorno de 1 px em volta (para enfeites soltos como 'z', corações e brilhos)."""
         h, w = len(linhas), len(linhas[0])
         x0 = int(math.floor(x - (w / 2 if centro else 0) + 0.5))
         y0 = int(math.floor(y - (h / 2 if centro else 0) + 0.5))
+        if contorno is not None:
+            cheio = {(i, j) for j, l in enumerate(linhas) for i, ch in enumerate(l) if ch != "."}
+            borda = {(i + di, j + dj) for i, j in cheio for di, dj in ((1, 0), (-1, 0), (0, 1), (0, -1))} - cheio
+            for i, j in borda:
+                self.px(x0 + i, y0 + j, contorno)
         for j, l in enumerate(linhas):
             for i, ch in enumerate(l):
                 if ch == ".":
@@ -336,6 +343,8 @@ class Tela:
     # ── saída ──
     def render(self) -> np.ndarray:
         h, w = self.h, self.w
+        if self.chao is not None:
+            self.mat[int(self.chao):, :] = -1
         op = self.mat >= 0
         out = np.zeros((h, w, 4), np.float64)
         # sombra e "atrás" (sem contorno)
@@ -421,13 +430,13 @@ class Tela:
 @dataclass
 class Estilo:
     """Medidas do gato. ESTILO é o escolhido; os candidatos da prancha só variam estes números."""
-    cab_rx: float = 10.2       # meia largura da cabeça
-    cab_ry: float = 8.6        # meia altura da cabeça
+    cab_rx: float = 11.0       # meia largura da cabeça
+    cab_ry: float = 9.4        # meia altura da cabeça
     bochecha: float = 1.0      # tamanho das bochechas fofas
-    tufo: float = 1.0          # tufos nas laterais das bochechas
-    orelha: float = 1.0        # tamanho das orelhas
-    olho: str = "A"            # molde dos olhos
-    olho_dx: float = 4.6       # distância dos olhos ao centro do rosto
+    tufo: float = 0.4          # tufos nas laterais das bochechas
+    orelha: float = 0.8        # tamanho das orelhas
+    olho: str = "D"            # molde dos olhos (o escolhido na prancha de candidatos)
+    olho_dx: float = 5.0       # distância dos olhos ao centro do rosto
     olho_dy: float = 0.6       # altura dos olhos (relativa ao centro da cabeça)
     rosto_dx: float = 1.2      # rosto deslocado para a frente (3/4 para a direita)
     nariz_dy: float = 3.6
@@ -450,7 +459,7 @@ OLHOS = {
     },
     "D": {  # 5x6: pupila grande, brilho, íris verde embaixo e do lado
         "aberto": [".KKK.", "KWPPK", "KPPgK", "KPPGK", "KgGLK", ".KKK."],
-        "meio": [".....", ".....", "KKKKK", "KPPGK", "KgGLK", ".KKK."],
+        "meio": [".....", ".....", ".KKK.", "KPPGK", "KgGLK", ".KKK."],
         "baixo": [".KKK.", "KggGK", "KWPPK", "KPPGK", "KPPLK", ".KKK."],
     },
     "C": {  # menor, mais realista
@@ -700,6 +709,7 @@ class Pose:
 def corpo_sentado(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo | None = None):
     """Gato sentado de lado olhando para a direita (3/4): ancas, peito creme, patas da frente, cauda."""
     est = est or ESTILO
+    t.chao = CHAO
     xf = Xf(x0, CHAO - 0.5 + p.dy * s, s)  # y local 0 = parte de baixo das patas
     xc = xf.filho((0, 0), p.inclina)
     if sombra:
@@ -723,21 +733,22 @@ def corpo_sentado(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo |
     t.pinta(elipse(xc((-4.6, -5.4)), xf.r(6.0), xf.r(5.2), 0), "pelo", gc, luz=0.02)
     t.decal(capsula(xc((-8.8, -6.0)), xc((-6.4, -3.8)), xf.r(0.6)))
     t.pinta(elipse(xf((-2.0, -1.3)), xf.r(3.5), xf.r(1.55), achata=0.7), "creme", gc, luz=0.05)
-    if p.cauda_frente:
-        cauda(t, [xf(q) for q in p.cauda], xf.r(2.3), xf.r(1.8), s=s)
     # pata da frente de perto
     perna(t, xc((2.4, -10.0)), xf((4.2 + p.pata_perto[0], -1.4 + p.pata_perto[1])), xf.r(2.25), luz=0.02, linha=True,
           pata_rx=xf.r(2.5), pata_ry=xf.r(1.5), tala=p.tala)
+    if p.cauda_frente:
+        cauda(t, [xf(q) for q in p.cauda], xf.r(2.0), xf.r(1.7), s=s, listras=(0.25, 0.5))
     # cabeça
     xh = xc.filho(p.cab, p.cab_ang)
     cabeca(t, xh, p.olhos, p.olhar, p.boca, p.orelhas, p.vira, est=est, piscar_um=p.piscar_um, luz=p.luz)
     if p.rim:
-        t.rim = (1, hx("#ffcf7a"), 0.55)
+        t.rim = (1, hx("#ffe28c"), 0.75)
 
 
 def corpo_em_pe(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo | None = None):
     """Gato de pé de lado (andar, espreguiçar, agachar). Quadril e ombro definem o tronco; pes = alvos das 4 patas."""
     est = est or ESTILO
+    t.chao = CHAO
     xf = Xf(x0, CHAO - 0.5 + p.dy * s, s)
     xa = Xf(x0, CHAO - 0.5, s)   # pés presos ao chão
     if sombra:
@@ -745,8 +756,9 @@ def corpo_em_pe(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo | N
     q, o = p.quadril, p.ombro
     cauda(t, [xf(c) for c in p.cauda], xf.r(2.4), xf.r(1.8), s=s)
     # patas de trás (longe) mais escuras
-    perna(t, xf((q[0] - 1.0, q[1] + 2.0)), xa(p.pes[1]), xf.r(2.2), luz=-0.24, joelho=None if p.joelhos[1] is None else xa(p.joelhos[1]))
-    perna(t, xf((o[0] - 0.4, o[1] + 2.5)), xa(p.pes[3]), xf.r(2.1), luz=-0.24, joelho=None if p.joelhos[3] is None else xa(p.joelhos[3]))
+    pe = lambda i: xa((p.pes[i][0], p.pes[i][1] - 1.4))
+    perna(t, xf((q[0] - 1.0, q[1] + 2.0)), pe(1), xf.r(2.2), luz=-0.24, joelho=None if p.joelhos[1] is None else xa(p.joelhos[1]))
+    perna(t, xf((o[0] - 0.4, o[1] + 2.5)), pe(3), xf.r(2.1), luz=-0.24, joelho=None if p.joelhos[3] is None else xa(p.joelhos[3]))
     g = t.grupo(True)
     t.pinta(tubo([xf(q), xf(o)], (xf.r(6.3), xf.r(5.9))), "pelo", g)
     # barriga creme
@@ -763,8 +775,8 @@ def corpo_em_pe(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo | N
         b = (c[0] + nx_ * 2.2 - ux * 0.8, c[1] + ny_ * 2.2 - uy * 0.8)
         t.decal(capsula(xf(a), xf(b), xf.r(0.62), xf.r(0.45)))
     # patas de perto
-    perna(t, xf((q[0] + 0.5, q[1] + 2.0)), xa(p.pes[0]), xf.r(2.4), luz=0.02, joelho=None if p.joelhos[0] is None else xa(p.joelhos[0]))
-    perna(t, xf((o[0] + 0.6, o[1] + 2.5)), xa(p.pes[2]), xf.r(2.3), luz=0.02, joelho=None if p.joelhos[2] is None else xa(p.joelhos[2]))
+    perna(t, xf((q[0] + 0.5, q[1] + 2.0)), pe(0), xf.r(2.4), luz=0.02, joelho=None if p.joelhos[0] is None else xa(p.joelhos[0]))
+    perna(t, xf((o[0] + 0.6, o[1] + 2.5)), pe(2), xf.r(2.3), luz=0.02, joelho=None if p.joelhos[2] is None else xa(p.joelhos[2]))
     xh = xf.filho(p.cab, p.cab_ang)
     cabeca(t, xh, p.olhos, p.olhar, p.boca, p.orelhas, p.vira, est=est, piscar_um=p.piscar_um)
 
@@ -772,6 +784,7 @@ def corpo_em_pe(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo | N
 def corpo_deitado(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo | None = None):
     """Deitado em 'pão' (loaf): corpo baixo e comprido, patinhas creme na frente, cabeça erguida à direita."""
     est = est or ESTILO
+    t.chao = CHAO
     xf = Xf(x0, CHAO - 0.5 + p.dy * s, s)
     if sombra:
         t.sombra(x0, 17 * s)
@@ -796,12 +809,13 @@ def corpo_deitado(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo |
     xh = xf.filho(p.cab, p.cab_ang)
     cabeca(t, xh, p.olhos, p.olhar, p.boca, p.orelhas, p.vira, est=est, piscar_um=p.piscar_um, luz=p.luz)
     if p.rim:
-        t.rim = (1, hx("#ffd27e"), 0.6)
+        t.rim = (1, hx("#ffe28c"), 0.75)
 
 
 def corpo_enrolado(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo | None = None, cab_fora=False):
     """Dormindo enroladinho: bolo redondo, cabeça apoiada na frente, cauda dando a volta por baixo do queixo."""
     est = est or ESTILO
+    t.chao = CHAO
     xf = Xf(x0, CHAO - 0.5 + p.dy * s, s)
     if sombra:
         t.sombra(x0, 16 * s)
@@ -841,43 +855,41 @@ def bola_la(t: Tela, c, r=3.6, giro=0.0, fio=True):
             t.px(x + i, CHAO - 0.0 + (1 if i in (1, 2) else 0) - 1, "#a3303f")
 
 
-def livro_aberto(t: Tela, c, folha=0.0):
-    """Livrinho aberto no chão visto de lado/cima; folha 0..1 vira uma página (da direita para a esquerda)."""
-    x, y = c
+def livro_aberto(t: Tela, c, folha=0.0, capa="capa", s=1.25):
+    """Livrinho aberto apoiado no chão (visto de frente e um pouco de cima), c = meio da base no quadro.
+    folha 0..1 vira uma página da direita para a esquerda; s = escala."""
+    xf = Xf(c[0], c[1], s)
     g = t.grupo(True)
-    t.pinta(poligono([(x - 7.5, y - 1.5), (x + 7.5, y - 1.5), (x + 8.0, y + 1.0), (x - 8.0, y + 1.0)], 1.0), "capa", g)
-    gp = t.grupo(True)
-    t.pinta(poligono([(x - 7.0, y - 3.5), (x - 0.4, y - 2.4), (x - 0.4, y - 0.4), (x - 7.0, y - 1.2)], 1.6), "papel", gp, luz=0.1)
-    gq = t.grupo(True)
-    t.pinta(poligono([(x + 0.4, y - 2.4), (x + 7.0, y - 3.5), (x + 7.0, y - 1.2), (x + 0.4, y - 0.4)], 1.6), "papel", gq, luz=-0.05)
-    # linhas de texto
-    for k in range(2):
-        for lado in (-1, 1):
-            for i in range(4):
-                xx = x + lado * (2.0 + i * 1.2)
-                if (i + k) % 4 != 3:
-                    t.px(xx, y - 2.6 + k * 1.0 + (0.1 * i if lado < 0 else -0.1 * i), "#b6a88f")
+    t.pinta(poligono([xf(p) for p in ((-8.0, -2.2), (0, -1.2), (8.0, -2.2), (8.0, 0), (-8.0, 0))], 1.0), capa, g)
+    for lado, gl in ((-1, 0.12), (1, -0.06)):
+        gp = t.grupo(True)
+        pts = [(0, -1.6), (0, -7.2), (lado * 3.6, -8.2), (lado * 7.2, -7.6), (lado * 7.2, -2.4)]
+        t.pinta(poligono([xf(p) for p in pts], 1.4), "papel", gp, luz=gl)
+        for k in range(3):   # linhas de texto
+            for i in range(5):
+                if (i + k * 2) % 6 == 5:
+                    continue
+                xx = lado * (1.8 + i * 1.05)
+                t.px(*xf((xx, -6.0 + k * 1.4 + abs(xx - lado * 3.6) * 0.05)), "#b4a58c")
     if 0 < folha < 1:
-        # página no ar: um triângulo que sobe da direita, passa pelo meio e cai na esquerda
         a = math.pi * folha
-        tip = (x + math.cos(a) * 6.5, y - 1.4 - math.sin(a) * 5.0)
+        tx, ty = math.cos(a) * 6.8, -7.6 - math.sin(a) * 2.6
         gf = t.grupo(True)
-        t.pinta(poligono([(x - 0.2, y - 2.4), tip, (tip[0], tip[1] + 1.6), (x + 0.2, y - 0.6)], 1.0), "papel", gf, luz=0.2)
+        t.pinta(poligono([xf(p) for p in ((0, -1.8), (0, -7.4), (tx, ty), (tx, ty + 5.2))], 1.0), "papel", gf, luz=0.25)
 
 
 def zz(t: Tela, x, y, k=0, tam=1):
     """Um 'z' de sono (3x3 ou 4x4) claro com contorno."""
-    m = ["zzz", "..z.", ".z..", "zzzz"] if tam > 1 else ["zzz", ".z.", "zzz"]
-    m = ["zzzz", "..z.", ".z..", "zzzz"] if tam > 1 else ["zzz", ".z.", "zzz"]
-    t.molde(m, x, y, cores={"z": "#e8f2ff"})
+    m = ["zzzz", "..z.", ".z..", "zzzz"] if tam > 1 else ["zzz", "..z", ".z.", "zzz"]
+    t.molde(m, x, y, cores={"z": "#eaf3ff"}, contorno="#2c2440")
 
 
 def coracao(t: Tela, x, y, cor="#ff7d8c"):
-    t.molde([".r.r.", "rrrrr", "rrrrr", ".rrr.", "..r.."], x, y, cores={"r": cor})
+    t.molde([".r.r.", "rwrrr", "rrrrr", ".rrr.", "..r.."], x, y, cores={"r": cor, "w": "#ffd6dc"}, contorno="#5a1f2a")
 
 
 def brilho(t: Tela, x, y, cor="#fff3b0"):
-    t.molde([".c.", "ccc", ".c."], x, y, cores={"c": cor})
+    t.molde([".c.", "cwc", ".c."], x, y, cores={"c": cor, "w": "#ffffff"})
 
 
 def nota(t: Tela, x, y, cor="#ffe9a8"):
@@ -885,7 +897,11 @@ def nota(t: Tela, x, y, cor="#ffe9a8"):
 
 
 # ═══════════════════════════════ linhas da folha ═══════════════════════════════
-X0 = 34.0    # posição do corpo sentado no quadro (o conjunto fica centrado em x = 32)
+# Posição do corpo no quadro: o eixo do corpo (peito/cabeça) fica em x = 32 em todas as linhas, para o gato não
+# "pular" de lado quando o site troca de linha; cauda e objetos saem para os lados.
+X0 = 31.0        # gato sentado (âncora = pé de trás/peito)
+X_PE = 30.5      # de pé (andar, espreguiçar)
+X_DEITA = 31.0   # deitado e enrolado
 
 
 def _sn(k, n=NQ, d=0.0):
@@ -905,15 +921,15 @@ def cauda_sentado(k, amp=1.0, fase=0.0):
 def cauda_enrolada_frente(k=0, amp=0.0):
     """Cauda dando a volta pela frente das patas (gato sentado elegante)."""
     w = _sn(k) * amp
-    return ((-8.4, -2.4), (-6.0, -0.9), (0.0, -0.7), (6.5, -0.9), (10.0 + w, -2.0 - abs(w) * 0.6))
+    return ((-9.6, -3.0), (-6.0, -1.6), (0.0, -1.5), (6.0, -1.8), (9.6 + w, -3.4 - abs(w) * 0.8))
 
 
 def gato_dormindo(t, k):
     resp = 0.5 + 0.5 * _sn(k)
     p = Pose(cab=(9.0, -8.2), cab_ang=12, olhos="fechado", boca="nada", respira=resp,
              orelhas=(0.0, -14.0 if k == 3 else 0.0),
-             cauda=((-14.0, -3.6), (-9.0, -0.6), (0.0, -0.2), (6.0, -0.4), (10.0, -1.2)))
-    corpo_enrolado(t, X0 - 1.5, p)
+             cauda=((-14.0, -4.0), (-9.0, -2.4), (0.0, -2.3), (6.0, -2.4), (10.0, -3.0)))
+    corpo_enrolado(t, X_DEITA, p)
     zz(t, 52 + (k % 3), 18 - (k % 3) * 2) if k % 3 != 2 else None
 
 
@@ -949,7 +965,7 @@ def gato_andando(t, k):
     pes = (pe(-6.5, 0.0), pe(-8.5, 0.5), pe(7.0, 0.5), pe(5.0, 0.0))
     p = Pose(dy=dy, pes=pes, cab=(10.5, -22.5 - 0.0), cab_ang=0.8 * _sn(k, d=0.25),
              cauda=((-12.0, -14.0), (-17.0, -17.0 + 0.6 * _sn(k)), (-18.5 + 1.0 * _sn(k, d=0.2), -24.0), (-15.5 + 1.6 * _sn(k, d=0.35), -28.0)))
-    corpo_em_pe(t, X0 - 1.0, p)
+    corpo_em_pe(t, X_PE, p)
 
 
 def gato_espreguicando(t, k):
@@ -957,15 +973,15 @@ def gato_espreguicando(t, k):
     seq = [0.0, 0.55, 1.0, 1.0, 0.5, 0.0][k]
     u = seq
     q = (-7.5, -12.5 - 1.0 * u)
-    o = (6.5 + 1.0 * u, -12.5 + 6.5 * u)
-    pes = ((-6.0, 0.0), (-8.6, 0.0), (7.5 + 6.0 * u, 0.0), (5.0 + 5.5 * u, 0.0))
+    o = (6.0 + 1.0 * u, -12.5 + 6.0 * u)
+    pes = ((-6.0, 0.0), (-8.6, 0.0), (7.5 + 9.0 * u, 0.0), (5.0 + 8.5 * u, 0.0))
     p = Pose(quadril=q, ombro=o, pes=pes,
-             cab=(10.5 + 3.0 * u, -22.5 + 10.5 * u), cab_ang=-6 * u,
+             cab=(10.0 + 2.0 * u, -22.5 + 9.0 * u), cab_ang=-8 * u,
              olhos="fechado" if k in (2, 3) else ("meio" if k in (1, 4) else "aberto"),
              boca="bocejo" if k == 3 else ("aberta" if k == 2 else "w"),
              orelhas=(14 * u, 14 * u),
              cauda=((-12.0, -14.0 - u), (-17.0, -18.0 - 2 * u), (-17.0 + 2 * u, -25.0 - 2 * u), (-13.0 + 3 * u, -28.5 - 2 * u)))
-    corpo_em_pe(t, X0 - 2.0, p)
+    corpo_em_pe(t, X_PE, p)
 
 
 def gato_brincando(t, k):
@@ -975,19 +991,19 @@ def gato_brincando(t, k):
              pata_perto=(4.0 + 4.0 * seq, -5.0 * seq - 0.5 * (seq > 0)), boca="aberta" if k == 2 else "w",
              orelhas=(-6, -6), inclina=3 * seq)
     corpo_sentado(t, X0 - 3.0, p)
-    bola_la(t, (bx, CHAO - 3.7 - [0, 0, 0.8, 1.6, 0.6, 0][k]), 3.6, giro=k * 0.9)
+    bola_la(t, (bx - 1.0, CHAO - 3.7 - [0, 0, 0.8, 1.6, 0.6, 0][k]), 3.6, giro=k * 0.9)
 
 
 def gato_lendo(t, k):
     fol = [0, 0, 0, 0.3, 0.7, 0][k]
-    p = Pose(cauda=cauda_sentado(k, 0.5), cab_ang=-10.0, cab=(3.4, -24.0), olhar=(0.6 if k < 3 else -0.6, 1.0),
+    p = Pose(cauda=cauda_sentado(k, 0.5), cab_ang=-12.0, cab=(3.8, -23.6), olhar=(0.6 if k < 3 else -0.6, 1.0),
              olhos="meio" if k == 0 else "aberto", pata_perto=(0.0, 0.0))
-    corpo_sentado(t, X0 - 4.0, p)
-    livro_aberto(t, (48.0, CHAO - 0.7), fol)
+    corpo_sentado(t, X0 - 3.0, p)
+    livro_aberto(t, (51.0, CHAO - 0.5), fol)
 
 
 def gato_comemorando(t, k):
-    alt = [0, 2.0, 4.6, 5.4, 3.0, 0.4][k]
+    alt = [0, 1.6, 3.4, 4.0, 2.2, 0.4][k]
     p = Pose(dy=-alt, cauda=((-8.0, -2.6), (-12.0, -6.0), (-13.4, -14.0 - alt * 0.3), (-11.0 + _sn(k) * 1.5, -20.0 - alt * 0.3)),
              olhos="feliz", boca="aberta", pata_perto=(3.0, -7.0 if k in (1, 2, 3, 4) else -1.0),
              pata_longe=(3.5, -8.0 if k in (2, 3) else -1.0), cab_ang=3 * _sn(k), orelhas=(-4, -4))
@@ -1010,7 +1026,7 @@ def gato_fogueira(t, k):
     resp = 0.5 + 0.5 * _sn(k)
     p = Pose(cab=(10.4, -16.6), cab_ang=-2, olhos="meio" if k != 3 else "fechado", respira=resp, rim=True,
              cauda=((-14.0, -3.2), (-18.0, -1.8), (-21.5 + 0.6 * _sn(k), -2.0), (-23.4 + _sn(k), -3.6)))
-    corpo_deitado(t, X0 - 2.0, p)
+    corpo_deitado(t, X_DEITA, p)
 
 
 def gato_ronronando(t, k):
@@ -1021,22 +1037,23 @@ def gato_ronronando(t, k):
     if k % 2 == 1:
         # tremidinha do ronrono: dois risquinhos de cada lado
         for lado in (-1, 1):
-            t.molde(["c.", ".c"] if lado < 0 else [".c", "c."], 34 + lado * 15 + (1 if lado > 0 else 0), 21, cores={"c": "#ffe0a0"})
+            t.molde(["c..", ".c.", "..c", ".c.", "c.."] if lado > 0 else ["..c", ".c.", "c..", ".c.", "..c"],
+                    36 + lado * 16, 22, cores={"c": "#ffd27a"}, contorno=None)
 
 
 def gato_acordando(t, k):
     if k <= 1:
         p = Pose(cab=(9.0, -8.2 - 2.0 * k), cab_ang=12 - 8 * k, olhos="fechado" if k == 0 else "meio", boca="nada",
-                 respira=0.5, cauda=((-14.0, -3.6), (-9.0, -0.6), (0.0, -0.2), (6.0, -0.4), (10.0, -1.2)))
-        corpo_enrolado(t, X0 - 1.5, p)
+                 respira=0.5, cauda=((-14.0, -4.0), (-9.0, -2.4), (0.0, -2.3), (6.0, -2.4), (10.0, -3.0)))
+        corpo_enrolado(t, X_DEITA, p)
     elif k == 2:
         p = Pose(cab=(10.4, -16.6), olhos="fechado", boca="bocejo", orelhas=(12, 12),
                  cauda=((-14.0, -3.2), (-18.0, -1.8), (-21.0, -2.0), (-23.0, -3.6)))
-        corpo_deitado(t, X0 - 2.0, p)
+        corpo_deitado(t, X_DEITA, p)
     elif k == 3:
         p = Pose(cab=(10.4, -17.4), olhos="meio",
                  cauda=((-14.0, -3.2), (-18.0, -1.8), (-21.0, -2.6), (-22.0, -5.0)))
-        corpo_deitado(t, X0 - 2.0, p)
+        corpo_deitado(t, X_DEITA, p)
     else:
         p = Pose(cauda=cauda_sentado(0, 0.3), olhos="aberto" if k == 5 else "meio", orelhas=(0, 0))
         corpo_sentado(t, X0, p)
@@ -1118,7 +1135,7 @@ def _pequeno(t, corpo, x, p, s=VS):
 def vfx_dorme(t, k):
     resp = 0.5 + 0.5 * _sn(k)
     p = Pose(cab=(9.0, -8.2), cab_ang=12, olhos="fechado", boca="nada", respira=resp,
-             cauda=((-14.0, -3.6), (-9.0, -0.6), (0.0, -0.2), (6.0, -0.4), (10.0, -1.2)))
+             cauda=((-14.0, -4.0), (-9.0, -2.4), (0.0, -2.3), (6.0, -2.4), (10.0, -3.0)))
     _pequeno(t, corpo_enrolado, 20.0, p)
     if k % 3 != 2:
         zz(t, 33 + (k % 3), 7 - (k % 3) * 2)
@@ -1178,8 +1195,6 @@ def main() -> None:
     salvar(_vfx(vfx_dorme), RAIZ / "public/flashcards/vfx/gato-dorme.png")
     salvar(_vfx(vfx_acorda), RAIZ / "public/flashcards/vfx/gato-acorda.png")
     salvar(_vfx(vfx_feliz), RAIZ / "public/flashcards/vfx/gato-feliz.png")
-    if "--previa" in sys.argv:
-        import previa_gato  # noqa  (ferramenta local de prévia, fora do repositório)
 
 
 if __name__ == "__main__":
