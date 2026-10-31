@@ -593,15 +593,15 @@
   },
   {
    "id": "campbell14-lca",
-   "versao": 1,
-   "titulo": "Lesão do ligamento cruzado anterior",
+   "versao": 2,
+   "titulo": "Lesão do ligamento cruzado anterior e o que vem junto",
    "especialidade": "joelho",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "14ª edição (2021)",
-   "capitulo": "Capítulo 45 · Lesões do joelho (ligamento cruzado anterior)",
-   "resumo": "Bandas anteromedial (tensa em flexão) e posterolateral (tensa em extensão); irrigação pela genicular média; 85% da resistência à gaveta a 90 graus; história típica com estalo e hemartrose (mais de 70%); LACHMAN (95%), pivot shift e artrômetro; SEGOND, sinal do sulco femoral lateral e contusões laterais; risco 2 a 8 vezes maior em mulheres e fossa estreita; isquiotibiais, tendão patelar e aloenxerto; movimento precoce contra a artrofibrose.",
+   "capitulo": "Capítulo 45 · Lesões do joelho (ligamento cruzado anterior, meniscos e exame ligamentar)",
+   "resumo": "Bandas anteromedial (tensa em flexão) e posterolateral (tensa em extensão, freia a hiperextensão); genicular média; 85% da gaveta a 90 graus; estalo e hemartrose (mais de 70%); LACHMAN (95%), pivot shift e artrômetro (3 mm); SEGOND patognomônica, contusões laterais (80%); menisco lateral na lesão aguda, medial na tardia; rampa (edema posteromedial da tíbia); reparo ideal: longitudinal, periférico, agudo, com o LCA; mulheres 2 a 8 vezes, fossa estreita; enxertos comparáveis, patelar mais dor ao ajoelhar e menos tensão; LCA normal não é isométrico; túnel às 12 horas deixa o pivot; dor anterior e déficit de extensão.",
    "acesso": "gratis",
-   "minutos": 3,
+   "minutos": 35,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -609,50 +609,118 @@
      "radar": "fundamento"
     },
     {
-     "id": "anatomia-e-biomecanica",
-     "titulo": "Anatomia e biomecânica",
+     "id": "anatomia-e-funcao-duas-bandas-que-trabalham-em-t",
+     "titulo": "Anatomia e função: duas bandas que trabalham em turnos",
      "radar": "confirmado"
     },
     {
-     "id": "o-diagnostico",
-     "titulo": "O diagnóstico",
+     "id": "o-mecanismo-a-historia-e-o-exame",
+     "titulo": "O mecanismo, a história e o exame",
      "radar": "confirmado"
     },
     {
-     "id": "mulheres-e-fossa-intercondilar",
-     "titulo": "Mulheres e fossa intercondilar",
+     "id": "a-imagem-o-que-a-radiografia-e-a-ressonancia-con",
+     "titulo": "A imagem: o que a radiografia e a ressonância contam",
      "radar": "confirmado"
     },
     {
-     "id": "enxertos-e-reabilitacao",
-     "titulo": "Enxertos e reabilitação",
+     "id": "quem-rompe-mulheres-fossa-estreita-e-tibia-incli",
+     "titulo": "Quem rompe: mulheres, fossa estreita e tíbia inclinada",
      "radar": "confirmado"
+    },
+    {
+     "id": "os-meniscos-o-lca-quase-nunca-rompe-sozinho",
+     "titulo": "Os meniscos: o LCA quase nunca rompe sozinho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-lesao-em-rampa",
+     "titulo": "A lesão em rampa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quando-suturar-o-menisco",
+     "titulo": "Quando suturar o menisco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-historia-natural-e-a-decisao-de-operar",
+     "titulo": "A história natural e a decisão de operar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-escolha-do-enxerto",
+     "titulo": "A escolha do enxerto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "onde-colocar-os-tuneis-e-a-ilusao-da-isometria",
+     "titulo": "Onde colocar os túneis, e a ilusão da isometria",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-tensao-e-a-fixacao",
+     "titulo": "A tensão e a fixação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "reabilitacao",
+     "titulo": "Reabilitação",
+     "radar": "fundamento"
+    },
+    {
+     "id": "complicacoes-e-revisao",
+     "titulo": "Complicações e revisão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revisao-em-uma-pagina",
+     "titulo": "Revisão em uma página",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
-    "joelho-0253",
     "joelho-0209",
-    "joelho-0227",
-    "joelho-0231",
-    "joelho-0021",
-    "joelho-0188",
+    "joelho-0253",
+    "joelho-0298",
     "joelho-0249",
-    "joelho-0180",
-    "joelho-0050",
-    "joelho-0220",
-    "joelho-0032",
     "joelho-0193",
+    "joelho-0250",
+    "joelho-0172",
+    "joelho-0188",
+    "joelho-0021",
+    "joelho-0282",
+    "joelho-0032",
+    "joelho-0220",
+    "joelho-0311",
+    "joelho-0026",
+    "joelho-0223",
+    "joelho-0038",
+    "joelho-0221",
+    "joelho-0050",
+    "joelho-0180",
+    "joelho-0170",
+    "joelho-0071",
+    "joelho-0051",
+    "joelho-0304",
+    "joelho-0277",
+    "joelho-0301",
     "joelho-0080",
     "joelho-0003",
+    "joelho-0231",
+    "joelho-0227",
+    "joelho-0307",
     "joelho-0056",
-    "joelho-0171",
-    "joelho-0276"
+    "joelho-0276",
+    "joelho-0171"
    ],
    "treino": [
     "joelho-0383",
     "joelho-0384",
+    "joelho-0317",
     "joelho-0385",
     "joelho-0386",
+    "joelho-0318",
     "joelho-0387"
    ],
    "subtemas": [

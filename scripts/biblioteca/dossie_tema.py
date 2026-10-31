@@ -78,7 +78,10 @@ def main() -> int:
         from livros import paginas as ler_paginas  # noqa: E402
         todas = ler_paginas(a.livro)
         ini, fim = (int(x) for x in (a.paginas or f"1-{len(todas)}").split("-"))
-        paginas = [(n, sem_acento(todas[n - 1])) for n in range(ini, min(fim, len(todas)) + 1)]
+        # Páginas que são só lista de referências (muitas citações de revista) não servem como sugestão de leitura.
+        citacoes = re.compile(r"J Bone Joint Surg|Am J Sports Med|Arthroscopy \d|Clin Orthop|Knee Surg|J Shoulder Elbow")
+        paginas = [(n, sem_acento(todas[n - 1])) for n in range(ini, min(fim, len(todas)) + 1)
+                   if len(citacoes.findall(todas[n - 1])) < 6]
 
     resumo = Counter()
     print(f"# Dossiê: {', '.join(a.subtema)}\n")
