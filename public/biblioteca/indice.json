@@ -8207,7 +8207,7 @@
   },
   {
    "id": "rockwoodcriancas10-25-diafise-femur",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura da diáfise do fêmur na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -8215,7 +8215,7 @@
    "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
    "resumo": "Tratamento pela idade e pelo padrão (PAVLIK, gesso imediato, hastes elásticas, haste trocantérica lateral, placa submuscular), a Tabela 25-2 de angulação aceitável, telescopagem de THOMPSON, síndrome compartimental no gesso 90 e 90, maus-tratos abaixo de 18 meses, artéria cervical ascendente e necrose, hipercrescimento e remodelação.",
    "acesso": "gratis",
-   "minutos": 20,
+   "minutos": 29,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -8258,9 +8258,29 @@
      "radar": "confirmado"
     },
     {
+     "id": "consolidacao-e-as-outras-complicacoes",
+     "titulo": "Consolidação e as outras complicações",
+     "radar": "clinico"
+    },
+    {
      "id": "situacoes-especiais",
      "titulo": "Situações especiais",
      "radar": "oportunidade"
+    },
+    {
+     "id": "a-idade-muda-tudo",
+     "titulo": "A idade muda tudo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "armadilhas-e-tres-casos",
+     "titulo": "Armadilhas e três casos",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -8306,7 +8326,8 @@
     "pediatria-1134"
    ],
    "subtemas": [
-    "Fraturas do fêmur e da perna na criança"
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
    ]
   },
   {

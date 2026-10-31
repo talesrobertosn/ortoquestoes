@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-25-diafise-femur
-versao: 1
+versao: 2
 titulo: Fratura da diáfise do fêmur na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,8 +8,8 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 25 · Femoral Shaft Fractures
 autores: Keith D. Baldwin e John M. Flynn
-fonte: Livro conferido localmente em 26/10/2026, capítulo 25. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
-subtemas: Fraturas do fêmur e da perna na criança
+fonte: Livro conferido localmente em 26/10/2026 e relido em 31/10/2026, capítulo 25. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+subtemas: Fraturas do fêmur e da perna na criança; Outras fraturas na criança
 resumo: Tratamento pela idade e pelo padrão (PAVLIK, gesso imediato, hastes elásticas, haste trocantérica lateral, placa submuscular), a Tabela 25-2 de angulação aceitável, telescopagem de THOMPSON, síndrome compartimental no gesso 90 e 90, maus-tratos abaixo de 18 meses, artéria cervical ascendente e necrose, hipercrescimento e remodelação.
 ---
 
@@ -23,7 +23,7 @@ A fratura da diáfise do fêmur é a fratura pediátrica em que o tratamento mud
 
 # Epidemiologia e diagnóstico {radar=fundamento}
 
-Incluindo as subtrocantéricas e as supracondilianas, as fraturas da diáfise do fêmur são cerca de **1,6%** das lesões ósseas da criança, **2,6 meninos para cada menina**, com distribuição **bimodal**: um pico no lactente que começa a andar, por quedas simples, e outro no início da adolescência, por trauma de maior energia. A explicação é o osso: o fêmur da criança pequena é relativamente fraco e quebra com cargas de brincadeira; com a troca de osso imaturo por lamelar e o aumento do diâmetro, o adolescente só quebra com alta energia (seções Introduction e Pathoanatomy). A fratura mais comum (mais de 50%) é **transversa, fechada e sem cominuição**.
+Incluindo as subtrocantéricas e as supracondilianas, as fraturas da diáfise do fêmur são cerca de **1,6%** das lesões ósseas da criança, **2,6 meninos para cada menina**, com distribuição **bimodal**: um pico no lactente que começa a andar, por quedas simples, e outro no início da adolescência, por trauma de maior energia. A explicação é o osso: o fêmur da criança pequena é relativamente fraco e quebra com cargas de brincadeira; com a troca de osso imaturo por lamelar e o aumento do diâmetro, o adolescente só quebra com alta energia (seções Introduction e Pathoanatomy). A fratura mais comum (mais de 50%) é **transversa, fechada e sem cominuição**. Das fraturas do fêmur da criança, **64%** são da diáfise, 27% distais e 9% proximais, com picos na primavera e no outono. Nos últimos 20 anos, houve uma tendência forte e sustentada de operar as fraturas da diáfise na idade escolar e em crianças cada vez mais novas, o que diminuiu a incapacidade inicial e o peso sobre a família, mas nem sempre seguiu as diretrizes publicadas. O diagnóstico costuma ser óbvio (mecanismo claro, deformidade, inchaço e dor na coxa); fica difícil no politraumatizado, no traumatizado craniano e na criança que não anda nem sente, como na mielomeningocele, em que o inchaço e a vermelhidão podem imitar infecção e o atraso pode até ser confundido com maus-tratos.
 
 A hipotensão raramente vem de uma fratura isolada do fêmur, e hematócrito abaixo de 30% quase sempre indica outra lesão; um hematócrito em queda não deve ser atribuído ao fêmur antes de afastar outras fontes. No atropelamento de alta energia, lembrar a tríade de WADDELL: fratura do fêmur, lesão abdominal ou torácica e traumatismo craniano. A radiografia deve incluir o fêmur inteiro com quadril e joelho, e a **bacia em AP** ajuda a não perder fratura do colo ou lesão fisária proximal associada.
 
@@ -75,6 +75,18 @@ O tratamento depende de duas coisas principais, **idade** (Tabela 25-1) e **padr
 | 12 anos à maturidade | Haste de entrada trocantérica, hastes flexíveis, placa submuscular, fixador externo (raro) |
 !fim
 
+**Pelo padrão da fratura.** Além da idade, o padrão decide o implante. As hastes elásticas são ideais para a grande maioria das fraturas **estáveis no comprimento** da diáfise média entre 5 e 11 anos; nas **instáveis no comprimento**, o risco de encurtamento e consolidação viciosa com elas sobe muito (SINK viu muito mais complicações). As instáveis vão melhor com **haste trocantérica bloqueada** na criança maior, **fixador externo** na menor ou **placa submuscular** nas duas idades.
+
+!tabela Quando não operar a diáfise do fêmur (cap. 25)
+| Idade | Indicação de tratamento sem cirurgia | Contraindicação |
+| --- | --- | --- |
+| nascimento a 4 anos | a maioria das fraturas | a raríssima fratura exposta, de alta energia e desviada, sobretudo no politrauma ou com lesão vascular |
+| 5 a 10 anos | fraturas sem desvio; a raríssima fratura sem desvio cuja família prefere não operar | fraturas desviadas (quase todas fixadas); criança que não anda, com comorbidade grave |
+| 11 anos à maturidade | fraturas sem desvio | fraturas desviadas e a maioria das sem desvio (quase todas fixadas) |
+!fim
+
+**O PAVLIK no recém-nascido.** STANNARD popularizou o suspensório para a fratura de parto do terço proximal ou médio. No berçário ou na UTI, basta acolchoar ou usar uma tala mole, o que deixa os pés livres para acesso venoso. O suspensório vai com o quadril em flexão e abdução moderadas, e enrolar algodão em volta da coxa reduz a dor. Com a flexão grande, o varo e o valgo ficam difíceis de avaliar. STANNARD teve alinhamento aceitável em todos, com menos de 1 cm de encurtamento; MORRIS viu bons resultados com tração, gesso e PAVLIK, qualquer que fosse o método. A Fig. 25-6 mostra o recém-nascido com a fratura proximal clássica em flexão e abdução: calo com 2 semanas, consolidação com 4 e remodelação dramática com 7.
+
 **Lactente.** O periósteo espesso torna a fratura estável. No recém-nascido, a fratura de parto típica é espiral do fêmur proximal, com o fragmento proximal fletido, associada a gemelaridade, apresentação pélvica e prematuridade. Afastados os maus-tratos e as doenças metabólicas, a fratura proximal ou média se trata com tala simples ou **suspensório de PAVLIK** em flexão e abdução moderadas, que alinha o fragmento distal ao proximal (Fig. 25-6). Comparado ao gesso imediato, o PAVLIK teve mais dor, mas nenhum problema de pele, contra um terço no gesso. Reduzir e gessar fica para encurtamento de 1 a 2 cm ou angulação acima de 30 graus.
 
 **Pré-escolar.** De 6 meses a 4 anos, o **gesso imediato** é o tratamento de escolha para fraturas isoladas com **menos de 2 cm de encurtamento**. Abaixo de 5 anos, o gesso só fica de lado diante de encurtamento acima de 2 cm, **edema maciço da coxa** ou lesão associada que o impeça. Fixação interna ou externa deve ser exceção abaixo de 4 anos: com resultados equivalentes, custa quase três vezes mais.
@@ -95,7 +107,11 @@ Vantagens: baixo custo, segurança e taxa muito alta de bons resultados. O peso 
 
 **Telescopagem de THOMPSON.** Sob fluoroscopia, na redução, uma compressão axial suave que produz **mais de 3 cm** de encurtamento indica tração em vez de gesso imediato; isso reduziu os resultados inaceitáveis de 18% para 5%. O encurtamento final aceito não deve passar de **2 cm**, medido no perfil através do gesso. No controle, varo acima de 10 graus ou angulação anterior acima de 30 graus justificam cunha; o gesso pode ser cunhado para menos de 15 graus de angulação.
 
-**Gesso sentado e gesso de marcha.** O gesso clássico é o 90 e 90, com as pernas abduzidas cerca de 30 graus de cada lado e 15 graus de rotação externa, para alinhar o fragmento distal com o proximal, rodado para fora. O **gesso de marcha** unilateral, cada vez mais o ideal para fraturas de baixa energia no lactente que começa a andar, usa cerca de **45 graus de flexão do quadril e do joelho**, 15 graus de rotação externa, reforço anterior do quadril, faixa pélvica larga, **molde em valgo** e o pé fora. Ensaios randomizados mostraram consolidação aceitável com menos trabalho para a família. As fraturas derivam em média **5 graus para varo e 10 graus para procurvato** até a consolidação; por isso o molde em valgo e a revisão em 7 a 10 dias, prevendo cunha.
+**O gesso imediato na prática.** Vários centros colocam o gesso no próprio pronto-socorro; MANSOUR comparou com o centro cirúrgico e viu resultados e complicações iguais, mas internação mais longa e custo maior no centro cirúrgico. Antes da alta, é preciso avaliar como a criança vai no assento do carro; se o pronto-socorro não conseguir, internar. Pior alinhamento final se associou a alta energia, fratura proximal e **angulação coronal inicial acima de 8 graus**, sem grandes consequências nessa idade. CASSINELLI colocou gesso imediato em 145 crianças abaixo de 7 anos: todas as menores de 2 anos e **86,5%** das de 2 a 5 anos terminaram dentro dos limites; 11 precisaram de nova redução, e o **encurtamento inicial** foi o único fator independente de perda da redução. ILLGEN teve 86% de sucesso sem troca nem cunha em 114 crianças abaixo de 6 anos, aceitando menos de 1,5 cm de encurtamento e menos de 10 graus de angulação. Entre 2 e 6 anos, as crianças mais velhas, mais pesadas e com mais de 2 cm de encurtamento inicial tiveram discrepância mensurável, mas nenhuma precisou de nova cirurgia.
+
+**Cunhar o gesso.** Cunhar o gesso 90 e 90 pode causar paralisia do fibular, sobretudo ao corrigir valgo (WEISS). Se a posição for inaceitável, manipular e trocar o gesso, ou tirá-lo e tracionar; com encurtamento acima de 2 cm, tração ou fixador externo (Fig. 25-7).
+
+**Gesso sentado e gesso de marcha.** O gesso clássico é o 90 e 90, com as pernas abduzidas cerca de 30 graus de cada lado e 15 graus de rotação externa, para alinhar o fragmento distal com o proximal, rodado para fora. O material sintético dá resistência suficiente para dispensar a barra entre as pernas: a criança pode ser carregada no quadril dos pais, a higiene fica mais fácil e, sentada, ela pode ir à escola de cadeira de rodas. Foi justamente com os relatos de síndrome compartimental da perna no 90 e 90 que o gesso com menos flexão e o gesso de marcha ganharam espaço. O **gesso de marcha** unilateral, cada vez mais o ideal para fraturas de baixa energia no lactente que começa a andar, usa cerca de **45 graus de flexão do quadril e do joelho**, 15 graus de rotação externa, reforço anterior do quadril, faixa pélvica larga, **molde em valgo** e o pé fora. Ensaios randomizados mostraram consolidação aceitável com menos trabalho para a família. As fraturas derivam em média **5 graus para varo e 10 graus para procurvato** até a consolidação; por isso o molde em valgo e a revisão em 7 a 10 dias, prevendo cunha.
 
 !questoes relacionadas=pediatria-0743,pediatria-0935 treino=pediatria-1123,pediatria-1129
 conceito: Gesso imediato abaixo de 5 anos, salvo encurtamento acima de 2 cm, edema maciço ou lesão associada; telescopagem acima de 3 cm indica tração; gesso de marcha com 45 graus de quadril e joelho e molde em valgo.
@@ -135,7 +151,7 @@ armadilha: Responder o desvio angular ou a lesão por pressão no maléolo, que 
 
 ## Tração
 
-A tração de BRYANT, vertical com o joelho estendido, causava insuficiência vascular e quase não se usa; a BRYANT modificada, com o joelho fletido 45 graus, é mais segura. A tração cutânea tem limite de cerca de **5 libras**, acima das quais aparecem bolhas e descolamento de pele. O pino de tração vai no **fêmur distal**, pela face medial (controle junto à artéria femoral no canal de HUNTER), um ou dois dedos acima do polo superior da patela, longe da fise distal. O pino na **tíbia proximal** pode lesar a fise e gerar **recurvato** (Fig. 25-10). Acima de 12 anos, tração e gesso não são usados, pelo risco de encurtamento e consolidação viciosa.
+A tração de BRYANT, vertical com o joelho estendido, causava insuficiência vascular e quase não se usa; a BRYANT modificada, com o joelho fletido 45 graus, é mais segura. A tração cutânea tem limite de cerca de **5 libras**, acima das quais aparecem bolhas e descolamento de pele. O pino de tração vai no **fêmur distal**, pela face medial (controle junto à artéria femoral no canal de HUNTER), um ou dois dedos acima do polo superior da patela, longe da fise distal. O pino na **tíbia proximal** pode lesar a fise e gerar **recurvato** (Fig. 25-10). Acima de 12 anos, tração e gesso não são usados, pelo risco de encurtamento e consolidação viciosa. No capítulo, a tração aparece sobretudo como recurso para a fratura que encurta demais no gesso (telescopagem acima de 3 cm) e para a subtrocantérica da criança pequena, por cerca de 3 semanas antes do gesso com molde em valgo.
 
 # As hastes elásticas {radar=confirmado}
 
@@ -190,6 +206,13 @@ armadilha: Retirar por tempo, sem calo em ponte e sem proteção.
 
 **Deformidade rotacional.** Até 25 graus parecem bem tolerados, e até 30 graus não deveriam causar prejuízo sem malrotação prévia; no adolescente mais velho não há remodelação rotacional significativa. O objetivo na redução é deixar até 10 graus.
 
+**Os números da rotação.** VERBEEK viu deformidades rotacionais de 10 a mais de 30 graus em **um terço** das crianças tratadas sem cirurgia; SALEM e KEPPLER, torção de 15 graus ou mais em **47%** das tratadas com hastes elásticas num centro alemão. A torção costuma aparecer como **anteversão maior** do lado fraturado, e uma diferença de mais de 10 graus foi o critério clássico de deformidade, mas BROUWER encontrou diferenças de 0 a 15 graus em 100 voluntários normais, e a radiografia mede mal (NORBECK sugeriu tomografia). DAVIDS e BRATEN viram até **25 graus** bem tolerados; acima disso, queixas. A correção espontânea é discutida: DAVIDS não a viu, BROUWER e outros viram correção lenta, e BUCHHOLZ viu três de cinco crianças de 3 a 6 anos corrigirem por completo, menos a mais velha. No adolescente mais velho, não há remodelação rotacional significativa. Na redução, alinhar o fragmento distal com o proximal na posição que os músculos impõem a ele (Fig. 25-2), com a meta de até 10 graus.
+
+**Outras faixas de angulação no capítulo.** Além da Tabela 25-2, a seção de complicações cita outras faixas: angulação anterior e posterior de **30 a 40 graus até 2 anos**, caindo para 10 graus na criança maior e no adolescente; varo limitado a **10 a 15 graus** no lactente e na criança; valgo de **20 a 30 graus** no lactente, **15 a 20** até 5 anos e **10** na criança maior. A Fig. 25-29 mostra um lactente de parto pélvico que consolidou com cerca de 45 graus de angulação sagital e 1,5 cm de cavalgamento e, um ano depois, já não tinha deformidade visível e o encurtamento era menor que 1 cm. O recurvato tardio da tíbia proximal aparece com pinos de tração na frente da fise tibial, tração excessiva, infecção do pino ou gesso prolongado.
+
+**A osteotomia.** Só depois de pelo menos 1 ano de observação, salvo deformidade que atrapalhe muito a função. O ideal é corrigir no foco; na criança, às vezes é preciso uma osteotomia metafisária proximal ou distal; no adolescente com deformidade da diáfise média, osteotomia diafisária com haste bloqueada. A consolidação viciosa distal depois de placa submuscular é cada vez mais reconhecida: moldar bem a placa e vigiar.
+
+
 !questoes central=pediatria-0591 relacionadas=pediatria-0813 treino=pediatria-1133,pediatria-1134
 conceito: Discrepância é a sequela mais comum, com hipercrescimento médio de 0,9 cm entre 2 e 10 anos; 74% da remodelação angular é fisária e ela é melhor no plano de movimento.
 como: TARO 2021 perguntou a origem do maior percentual de remodelação (reorientação fisária e crescimento longitudinal).
@@ -199,17 +222,104 @@ alerta: TARO 2006 (`pediatria-0813`, placa causa mais hipercrescimento que a fix
 
 **Outras.** A consolidação é rápida e depende da idade: lactente 2 a 3 semanas, abaixo de 5 anos 4 a 6 semanas, 5 a 10 anos 8 a 10 semanas, cerca de 13 semanas aos 15 anos (Fig. 25-30). A pseudartrose é rara (o fêmur responde por só 15% das pseudartroses pediátricas; a tíbia é a fonte mais comum). Lesão vascular em cerca de 1,3%, sobretudo nas fraturas fisárias e metafisárias distais; havendo reparo, fixar a fratura primeiro. Paralisia do fibular com o gesso 90 e 90 (4 de 110), prevenida estendendo a parte da perna acima do joelho; no lactente, órtese até recuperar, pela contratura rápida do tendão de AQUILES. Déficit nervoso presente na chegada de fratura fechada não se explora; o que surge na redução, sim. Exposta tipo III: 50% de osteomielite numa série.
 
+
+# Consolidação e as outras complicações {radar=clinico}
+
+!tabela Tempo de consolidação da diáfise do fêmur pela idade (cap. 25, Fig. 25-30)
+| Idade | Consolidação |
+| --- | --- |
+| lactente | 2 a 3 semanas |
+| abaixo de 5 anos | 4 a 6 semanas |
+| 5 a 10 anos | 8 a 10 semanas |
+| 15 anos | cerca de 13 semanas (10 a 15) |
+!fim
+
+O fixador externo atrasa o calo; as hastes flexíveis, que deixam algum movimento no foco, fazem calo abundante.
+
+**Retardo e pseudartrose.** O retardo é incomum. Na criança de 1 a 6 anos no gesso, mantém-se o gesso até o calo em ponte (raramente enxerto); na criança maior e no adolescente, enxerto e placa de compressão ou haste bloqueada. A pseudartrose é rara: adolescente, infecção, perda óssea segmentar ou de partes moles. O fêmur responde por só **15%** das pseudartroses pediátricas; a **tíbia** é a fonte mais comum. Mesmo com perda óssea, a criança pequena pode preencher o defeito (Fig. 25-31). Tratamento: enxerto e placa entre 5 e 10 anos, haste bloqueada e enxerto acima de 10 a 12; AKSOY consolidou casos com hastes elásticas em 6 a 9 meses. ROBERTSON usou fixador em 11 fraturas expostas, com consolidação lenta mas sem novas cirurgias.
+
+!tabela Outras complicações da fratura da diáfise do fêmur (cap. 25)
+| Complicação | O que o capítulo diz |
+| --- | --- |
+| fraqueza muscular | HENNRIKUS: força do quadríceps menor em **30%**, teste do salto alterado em 18%, atrofia de 1 cm na coxa em 42%, ligadas ao desvio inicial; aparece com e sem cirurgia; abdutores fracos com hastes longas e ossificação heterotópica; raramente quadricepsplastia |
+| infecção | rara na fechada; febre é comum na primeira semana, mas febre persistente ou muito alta pede atenção; exposta tipo III: **50%** de osteomielite numa série de 44 (nenhuma nos tipos I e II); infecção do pino de tração quase sempre superficial |
+| lesão vascular | cerca de **1,3%**, sobretudo nas fraturas fisárias e metafisárias distais; fixar a fratura antes do reparo; isquemia já relatada com tração cutânea e esquelética |
+| nervos | fibular no gesso 90 e 90 (WEISS: 4 de 110; estender a parte da perna acima do joelho); RIEW: 8 paralisias em 35 hastes bloqueadas, ligadas a atraso, encurtamento e tração por bota, 6 resolvidas em menos de 1 semana; lactente: órtese até recuperar, pela contratura rápida do tendão de AQUILES |
+| explorar o nervo? | déficit na chegada da fratura fechada: não; déficit que surge na redução ou no tratamento: sim; sem recuperação em 4 a 6 meses: sim |
+| síndrome compartimental da coxa | rara; inchaço maciço e dor desproporcional: medir pressões e fasciotomia; também na perna sadia na posição de litotomia na mesa de tração e com tração cutânea; no gesso, ligada à técnica de tração |
+!fim
+
+A tração circunferencial num membro traumatizado precisa ser vigiada e é contraindicada na criança politraumatizada ou com traumatismo craniano.
+
 # Situações especiais {radar=oportunidade}
 
-**Subtrocantérica.** Consolida devagar, vai para varo e cresce mais. Na criança pequena, tração por cerca de três semanas e gesso com molde em valgo, avisando a família de que a cunha é rotina. Hastes flexíveis funcionam, com entrada proximal e distal; placa também. Hastes anterógradas que furam o colo devem ser evitadas.
+**Subtrocantérica.** Consolida devagar, vai para varo e cresce mais. Na criança pequena, tração por cerca de três semanas e gesso com molde em valgo, avisando a família de que a cunha é rotina. Hastes flexíveis funcionam, com entrada proximal e distal; placa também. Hastes anterógradas que furam o colo devem ser evitadas. Na criança pequena, a tração precisa de cerca de **3 semanas**, com bom molde em valgo e controle de perto nas 2 primeiras semanas depois do gesso; se o fragmento escorregar para varo, cunhar o gesso no consultório ou mudar de método. O fixador externo funciona se houver espaço para os pinos proximais: retirado com calo (cerca de 6 semanas), segue-se gesso de marcha com faixa pélvica e molde em valgo. POMBO e SHILT trataram 13 crianças de cerca de 8 anos com hastes flexíveis, todas com resultado excelente ou satisfatório. No adolescente, não há experiência para dizer quando usar haste de reconstrução com parafuso no colo; ao contrário do adulto, a pseudartrose subtrocantérica é rara na criança com qualquer método.
 
 **Supracondiliana.** O gastrocnêmio estende o fragmento distal; gesso com o joelho fletido na criança pequena; fixador por 4 a 6 semanas na fratura sobre lesão benigna; placa submuscular, fios cruzados ou hastes, que retrógradas são biomecanicamente superiores se houver osso distal. Procurar sempre uma lesão de base.
 
 **Joelho flutuante.** Fêmur e tíbia ipsilaterais, alta energia, quase sempre politrauma. Exceto na criança muito pequena, fixar as duas; fixando pelo menos o fêmur, os resultados foram bons ou excelentes em 93%. Complicações tardias: discrepância, valgo pela fratura metafisária proximal da tíbia, frouxidão ligamentar.
 
-**Politraumatizado.** O momento da fixação do fêmur não alterou as complicações pulmonares; a fixação precoce reduziu a internação. A SIRS é comum, a SDRA é rara, e a mortalidade veio do traumatismo craniano.
+**Fratura exposta.** Incomum, pelo grande envelope muscular da coxa. HUTCHINS: 70% com outras lesões, 90% por automóvel, consolidação média em **17 semanas** e osteomielite em **50%** das GUSTILO tipo III. O fixador externo facilita o curativo e a mobilização (monolateral com pinos na maioria; circular se houver perda óssea extensa). A placa permite mobilização e redução anatômica, mas é invasiva; nas emergências, placa ou haste nos tipos I e II; no tipo III do adolescente mais velho, fixador ou haste. A placa pode quebrar se a cominuição medial grave não receber enxerto. A haste fechada depois da limpeza permite mobilizar cedo nos tipos I a IIIB, lembrando o risco de necrose da cabeça femoral com a entrada errada.
 
-**Doenças de base.** Osteogênese imperfeita com potencial de marcha: hastes (RUSH, BAILEY-DUBOW, FASSIER) para fraturas repetidas ou deformidade. Mielomeningocele e paralisia cerebral: imobilizar o mínimo, pela osteoporose e refratura.
+**Joelho flutuante em detalhe.** Atropelamento de pedestre ou ciclista, quase sempre com politrauma, lesões de partes moles, fraturas expostas e lesões de cabeça, tórax e abdome. Fixar as duas fraturas, exceto na criança muito pequena; se as duas forem expostas, fixador nas duas. Num estudo multicêntrico, a haste intramedular foi usada no fêmur em cerca de **70%** das crianças em idade escolar ou maiores, e quase um terço das tíbias foi tratado com gesso. LETTS descreveu cinco padrões com recomendações para cada um. ARSLAN, em 29 casos, viu internação mais curta, carga mais cedo e menos complicações com a cirurgia; a fratura articular do joelho, mais que a lesão ligamentar, foi fator de mau resultado. BOHN e DURBIN acompanharam 19: 11 com discrepância (por hipercrescimento ou fechamento fisário), 3 com valgo pela fratura metafisária proximal da tíbia, 1 parada fisária e 4 com frouxidão ligamentar operada tarde.
+
+**Politraumatizado.** O momento da fixação do fêmur não alterou as complicações pulmonares; a fixação precoce reduziu a internação. A SIRS é comum, a SDRA é rara, e a mortalidade veio do traumatismo craniano. Num estudo de 387 crianças, o risco pulmonar foi maior com traumatismo craniano grave ou lesão da coluna cervical, não com o momento da fixação.
+
+**Doenças de base.** Osteogênese imperfeita com potencial de marcha: hastes (RUSH, BAILEY-DUBOW, FASSIER ou as novas hastes rígidas e maciças) para fraturas repetidas ou deformidade. Mielomeningocele e paralisia cerebral: imobilizar o mínimo, pela osteoporose e refratura; se possível, adaptar a órtese que a criança já usa; na criança que não anda, uma tala de travesseiro basta.
+
+# A idade muda tudo {radar=fundamento}
+
+!tabela A diáfise do fêmur por faixa etária (cap. 25)
+| Faixa | Mecanismo e alertas | Tratamento | Aceitável (Tabela 25-2) |
+| --- | --- | --- | --- |
+| recém-nascido a 6 meses | parto (espiral proximal); maus-tratos antes da marcha (até 80%) | PAVLIK ou tala | 30 graus, 30 graus, 15 mm |
+| 6 meses a 5 anos | quedas simples; maus-tratos abaixo de 18 meses | gesso imediato (menos de 2 cm); tração se a telescopagem passar de 3 cm; gesso de marcha no lactente que anda | 15, 20, 20 mm (2 a 5 anos) |
+| 5 a 11 anos | hipercrescimento de 2 a 10 anos (0,9 cm) | hastes elásticas (estável, menos de 50 kg); placa submuscular na instável | 10, 15, 15 mm |
+| acima de 11 anos | alta energia; tríade de WADDELL | haste trocantérica lateral; nunca piriforme | 5, 10, 10 mm |
+!fim
+
+# Armadilhas e três casos {radar=clinico}
+
+!tabela Armadilhas na diáfise do fêmur da criança (cap. 25)
+| Armadilha | Prevenção |
+| --- | --- |
+| tracionar a perna por uma bota gessada no gesso 90 e 90 | sem tração na bota, pé fora, menos flexão (MUBARAK) |
+| entrada piriforme com fise aberta | entrada trocantérica lateral, dissecção só na face lateral, haste fina |
+| hastes elásticas no adolescente pesado ou na fratura instável | acima de 49 kg, acima de 11 anos ou instável: placa ou haste trocantérica |
+| fixador retirado cedo | só com três ou quatro corticais em ponte |
+| placa a 20 mm ou menos da fise distal | vigiar valgo e retirar a placa |
+| culpar o fêmur pela hipotensão | procurar outra fonte se o hematócrito cair abaixo de 30% |
+| pino de tração na tíbia proximal | pino no fêmur distal, um ou dois dedos acima da patela |
+!fim
+
+**Caso 1. O lactente de 9 meses.** Fratura espiral do fêmur numa criança que ainda não anda, com história de queda do berço que não convence. Antes de tratar, investigar maus-tratos: abaixo de 18 meses, com história suspeita e lesão anterior, a chance chega a 92%. A fratura em si vai para gesso imediato, porque o encurtamento é menor que 2 cm.
+
+**Caso 2. A menina de 8 anos.** Fratura transversa do terço médio, 28 kg, canal de 9 mm no istmo. Hastes elásticas de titânio de 3,5 mm (0,4 × 9 = 3,6), entrando 2,5 cm acima da fise distal, curvas com o ápice no foco. Se a fratura fosse oblíqua longa ou cominuta, ou se ela pesasse 60 kg, a escolha passaria a placa submuscular.
+
+**Caso 3. O adolescente de 14 anos.** Fratura da diáfise após acidente de moto, com a fise proximal aberta. Haste bloqueada de entrada trocantérica lateral, a menor que toque as corticais; nunca pela fossa piriforme, pelo risco de lesar a artéria cervical ascendente lateral e necrosar a cabeça.
+
+# Revisão rápida {radar=fundamento}
+
+!tabela Os fatos que mais caem na diáfise do fêmur da criança
+| Tema | O fato | Fonte |
+| --- | --- | --- |
+| epidemiologia | 1,6% das lesões ósseas; 2,6 meninos por menina; bimodal | cap. 25 |
+| maus-tratos | abaixo de 18 meses; BALDWIN: história, lesão anterior, idade (92% com os três); transversa prediz mais que espiral | cap. 25 |
+| desvio | proximal em flexão, abdução e rotação lateral; supracondiliana com o distal em extensão (gastrocnêmio) | cap. 25, Fig. 25-2 |
+| idade | PAVLIK até 6 meses; gesso até 5 anos; hastes 5 a 11; trocantérica acima de 11 | Tabela 25-1 |
+| aceitável | 30/30/15; 15/20/20; 10/15/15; 5/10/10 | Tabela 25-2 |
+| telescopagem | mais de 3 cm = tração | cap. 25 |
+| síndrome compartimental | bota com tração no 90 e 90 (MUBARAK) | cap. 25 |
+| hastes elásticas | 0,4 do canal cada; ápice no foco; 2,5 cm acima da fise; ruim acima de 49 kg e 11 anos | cap. 25 |
+| haste rígida | trocantérica lateral; piriforme proibida (cervical ascendente lateral) | cap. 25, Fig. 25-24 |
+| placa submuscular | instável; 10 a 16 furos; valgo distal se a 20 mm ou menos da fise | cap. 25 |
+| fixador | retirar com 3 ou 4 corticais (refratura 4% contra 33%); infecção do pino até 72% | cap. 25 |
+| discrepância | sequela mais comum; 0,9 cm entre 2 e 10 anos | cap. 25 |
+| remodelação | 74% fisária; melhor no plano sagital | cap. 25 |
+| rotação | até 25 graus tolerados; meta de 10 | cap. 25 |
+| consolidação | 2 a 3 semanas no lactente; 13 semanas aos 15 anos | cap. 25, Fig. 25-30 |
+| pseudartrose | rara; o fêmur é 15% das pediátricas, a tíbia é a mais comum | cap. 25 |
+!fim
 
 # Fechamento {radar=fundamento}
 
