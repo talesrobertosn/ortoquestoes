@@ -301,6 +301,12 @@ MATS: dict[str, Mat] = {
     "cristal": Mat(rampa("#08302e", "#0e5a56", "#16867e", "#2cb4a6", "#62e2d0", "#b4fff0", "#f0fffb"), hx("#031614"), emite=True, bloom=0.75),
     "la": Mat(rampa("#2a080c", "#4a1016", "#6e1a20", "#94262a", "#b63a36", "#d05446", "#e67a62"), hx("#160406"), rim=0.4, tex=0.1),
     "la_creme": Mat(rampa("#4a3c36", "#7c6a5c", "#ad987e", "#d4c2a2", "#ebdfc2", "#faf3e2"), hx("#241a16"), rim=0.35, tex=0.08),
+    # linhas novas (01/11/2026, sempre no fim): manto do mago 2, capa de viajante, gema verdete, lousa e giz
+    "manto": Mat(rampa("#05061a", "#0a0e2a", "#10173c", "#172150", "#1f2c66", "#2a3a7c", "#384c94"), hx("#03040e"), rim=0.55, tex=0.05, luz_pontual=0.6),
+    "viagem": Mat(rampa("#170d08", "#24150c", "#352012", "#482d18", "#5e3c20", "#774f2a", "#906436", "#a87c48"), hx("#0e0805"), rim=0.45, tex=0.09),
+    "gema": Mat(rampa("#062820", "#0e4a3a", "#187058", "#2a9476", "#52ba98", "#9ae2c4", "#e2fff2"), hx("#03140f"), emite=True, bloom=0.45),
+    "lousa": Mat(rampa("#0a1210", "#101c18", "#16261f", "#1d3028", "#253c32", "#2f4a3e"), hx("#060a08"), rim=0.25, tex=0.1),
+    "giz": Mat(rampa("#8a9690", "#b4c0b8", "#dce4da", "#f6f8f0"), hx("#3a4440"), rim=0.0, amb=0.75, kd=0.3, tex=0.15),
 }
 NOMES_MAT = list(MATS)
 IDX_MAT = {n: i for i, n in enumerate(NOMES_MAT)}
@@ -1955,6 +1961,406 @@ def q_ortopedia(k):
     return t
 
 
+# ═══════════════════════════════ linhas novas (01/11/2026): segunda leva de poses ═══════════════════════════════
+# Também só acrescentam: nenhuma linha anterior passa por estas funções (materiais novos ficam no fim de MATS).
+# ─────────── mão que aponta (novo tipo; mao() original não muda) ───────────
+def mao_apontando(t, r, lado, z):
+    s = -1 if lado == "e" else 1
+    q = mao_quadro(r, lado)
+    pid = f"mao_{lado}"
+    t.pinta(q.forma(elipse((0, -0.3), 2.1, 2.0)), "osso", z, R=2.0, pid=pid, uv=q.uv(), semente=31)
+    for kk, dx in enumerate((-0.55, 0.6, 1.75)):
+        t.pinta(q.forma(elipse((dx * -s, 1.9), 0.75, 1.15)), "osso", z + 0.6, R=0.9, pid=pid + "_dedos", semente=41 + kk)
+    # indicador esticado
+    t.pinta(q.forma(traco([(s * 0.6, 0.8), (s * 0.7, 4.2), (s * 0.8, 7.4)], [0.75, 0.66, 0.62])), "osso", z + 0.7, R=0.8, pid=pid + "_ind", semente=45)
+    t.pinta(q.forma(capsula((-s * 1.6, 0.0), (-s * 0.4, 2.2), 0.7)), "osso", z + 0.65, R=0.8, pid=pid + "_dedos")
+
+
+# ─────────── sentado: canelas e pés por cima da barra do saiote ───────────
+def canelas_frente(t, joelhos, pes, z=5.8):
+    """Joelhos dobrados para cima (de frente): patela, tíbia descendo até o pé e os dedos."""
+    for i, ((jx, jy), (fx, fy)) in enumerate(zip(joelhos, pes)):
+        s_ = -1 if jx < 48 else 1
+        osso_longo(t, (jx, jy), (fx, fy), 1.35, z + 0.1 * i, f"canela{i}", nos=(1.35, 1.2), sem=23 + i)
+        t.pinta(circulo((jx + s_ * 0.2, jy - 0.4), 1.5), "osso", z + 0.15 + 0.1 * i, R=1.5, pid=f"joelho{i}")
+        c = (fx + s_ * 1.3, fy + 2.0)
+        t.pinta(elipse(c, 3.3, 1.9), "osso", z + 0.2 + 0.1 * i, R=1.8, pid=f"pe{i}", semente=25)
+        for kk in range(4):
+            x = c[0] + s_ * (-1.6 + kk * 1.3)
+            t.pinta(capsula((x, c[1] + 0.2), (x + s_ * 0.25, c[1] + 1.9), 0.55), "osso", z + 0.25 + 0.1 * i, R=0.7, pid=f"dedo_pe{i}", semente=26 + kk)
+
+
+def coxas_frente(t, quadris, joelhos, z=5.6):
+    for i, (a, b) in enumerate(zip(quadris, joelhos)):
+        osso_longo(t, a, b, 1.55, z + 0.05 * i, f"coxa{i}", nos=(1.3, 1.35), sem=21 + i)
+
+
+def tronco_cortado(t, cx, y, larg, z=0.8, k=0):
+    """Tronco deitado com casca, um corte à mostra com anéis (à direita) e um tufo de musgo."""
+    corpo = caixa((cx, y + 3.4), larg, 3.8, r=3.2)
+    t.pinta(corpo, "madeira", z, R=3.4, pid="tronco", semente=510, tom=-0.08,
+            relevo=lambda X, Y: (0.0 * X, 0.3 * np.sin(X * 1.7 + np.sin(Y * 0.8))))
+    for i in range(5):
+        x = cx - larg + 4 + i * (2 * larg - 8) / 4
+        t.pinta(capsula((x, y + 0.8), (x + 1.2, y + 6.4), 0.35), "madeira", 0, sobre="tronco", tom=-0.22, normal=False)
+    corte = elipse((cx + larg - 0.6, y + 3.4), 2.6, 3.8)
+    t.pinta(corte, "madeira", z + 0.2, R=1.2, pid="tronco_corte", tom=0.18, plano=(0.5, 0, 0.86))
+    for rr in (2.6, 1.4):
+        t.pinta(elipse((cx + larg - 0.6, y + 3.4), rr * 0.68, rr) - elipse((cx + larg - 0.6, y + 3.4), rr * 0.68 - 0.4, rr - 0.4), "madeira", 0, sobre="tronco_corte", tom=-0.15, normal=False)
+    t.pinta(elipse((cx - larg + 5, y + 0.4), 3.6, 1.2).borda(0.4, 1.6, 5), "talo", z + 0.1, R=1.0, pid="musgo")
+
+
+# ─────────── caderno de capa de couro ───────────
+def caderno(t, q, z, linhas_feitas: float, abre=1.0):
+    """Caderno aberto inclinado para quem olha. Origem no meio da lombada; +y para baixo."""
+    uv = q.uv()
+    capa_ = poligono([(-13.4, -6.0), (0, -4.8), (13.4, -6.0), (13.8, 6.0), (0, 7.0), (-13.8, 6.0)])
+    t.pinta(q.forma(capa_), "capa_livro", z, R=1.0, pid="cad_capa", plano=(0, 0.35, 0.93), semente=520)
+    for s_ in (-1, 1):
+        pag = poligono([(0, -4.2), (s_ * 5.4, -5.6), (s_ * 11.2, -4.6), (s_ * 11.5, 3.8), (s_ * 5.6, 3.6), (0, 4.8)])
+        t.pinta(q.forma(pag), "papel", z + 0.1, R=1.6, pid=f"cad_pag{s_}", plano=(s_ * -0.2, 0.35, 0.9), uv=uv, semente=521, tom=0.1)
+    # pauta e o que já foi escrito na página direita (cresce com linhas_feitas)
+    for i in range(4):
+        y = -2.4 + i * 1.8
+        for s_ in (-1, 1):
+            t.pinta(q.forma(capsula((s_ * 1.6, y), (s_ * 10.0, y - 0.3), 0.18)), "papel", 0, sobre=f"cad_pag{s_}", tom=-0.12, normal=False)
+        # página esquerda: já escrita
+        fim = 9.6 - (i % 2) * 2.4
+        t.pinta(q.forma(capsula((-1.8, y - 0.35), (-fim, y - 0.65), 0.5)), "tinta", 0, sobre="cad_pag-1", R=0.4)
+        feito = np.clip(linhas_feitas - i, 0, 1)
+        if feito > 0:
+            fx = 1.8 + (8.2 - (i % 2) * 2.2) * feito
+            t.pinta(q.forma(capsula((1.8, y - 0.35), (fx, y - 0.6), 0.5)), "tinta", 0, sobre="cad_pag1", R=0.4)
+    t.pinta(q.forma(capsula((0, -4.0), (0, 5.0), 0.42)), "papel", z + 0.15, R=0.5, pid="cad_meio", tom=-0.35)
+    t.pinta(q.forma(traco([(-0.6, -4.2), (-1.0, 2.0), (-0.4, 8.6)], 0.42)), "pano", z + 0.16, R=0.5, pid="cad_fita")
+
+
+def ponto_pena(linhas_feitas):
+    """Onde a ponta da pena está escrevendo (coord. do caderno)."""
+    i = min(3, int(linhas_feitas))
+    f = linhas_feitas - i
+    y = -2.4 + i * 1.8
+    return (1.8 + (8.2 - (i % 2) * 2.2) * f, y - 0.5)
+
+
+def tinteiro(t, base, z, k):
+    """Tinteiro de vidro escuro com rolha, em cima do tronco."""
+    x, y = base
+    t.pinta(caixa((x, y - 2.4), 2.4, 2.6, r=1.0), "filme", z, R=2.0, pid="tinteiro", tom=0.05)
+    t.pinta(caixa((x, y - 5.4), 1.2, 0.8, r=0.3), "filme", z + 0.05, R=0.8, pid="tinteiro_gargalo")
+    t.pinta(caixa((x, y - 6.6), 1.0, 0.8, r=0.3), "madeira", z + 0.1, R=0.8, pid="rolha", tom=0.1)
+    t.pinta(capsula((x - 1.2, y - 3.8), (x - 1.2, y - 1.4), 0.32), "aco", z + 0.12, pid="tinteiro_brilho", sem_contorno=True, tom=0.5)
+
+
+def q_escrevendo(k):
+    """Sentado num tronco deitado, perna direita cruzada por cima e o caderno apoiado nela."""
+    s = _sn(k)
+    feitas = 0.6 + k * 0.42
+    p = replace(BASE, y=10.0, resp=0.5 + 0.5 * s, cab=6.0 + 0.6 * s, cab_dy=1.2, vira=0.15, inclina=1.0,
+                pe=(2.0, 178.0), pd=(2.0, 178.0), be=(4.0, -4.0, -14.0, "punho"), bd=(34.0, -40.0, -64.0, "pinca"),
+                ze=6.0, zd=6.0, sombra=False, pano=0.25 * s)
+    t = Tela()
+    sombra_em(t, 48.0, 124.6, 26.0, 2.4)
+    tronco_cortado(t, 46.0, 114.0, 24.0, k=k)
+
+    def ex(t, r):
+        P = r.P
+        canelas_frente(t, [(P[0] - 10.6, P[1] - 4.2), (P[0] + 10.6, P[1] - 4.6)], [(P[0] - 11.6, 120.2), (P[0] + 12.0, 120.6)])
+        tinteiro(t, (72.0, 111.4), 1.2, k)
+        cq = _escala(Quadro2D((P[0] + 1.0, P[1] - 10.0), -6.0), 1.1)
+        caderno(t, cq, 6.3, feitas)
+        pp = cq.p(*ponto_pena(feitas))
+        pena(t, (pp[0] + 0.3 * math.sin(k * 2.7), pp[1]), 28.0 + 4 * math.sin(k * 2.2), 8.4)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ═════════ aventureiro ═════════
+def mochila(t, r, p, z_tras=0.5, grande=False, k=0):
+    """Mochila de couro atrás do corpo, aparecendo pelo lado direito e por cima do ombro; alça no ombro direito."""
+    q = r.tronco
+    uv = q.uv()
+    w = 9.0 if not grande else 10.5
+    corpo = caixa((9.0, -15.0), w, 11.0, r=3.4)
+    t.pinta(q.forma(corpo), "couro", z_tras, R=3.0, pid="mochila", uv=uv, semente=530, tom=-0.04)
+    aba = caixa((9.0, -23.4), w + 0.4, 3.6, r=2.4)
+    t.pinta(q.forma(aba), "couro", z_tras + 0.1, R=2.0, pid="mochila_aba", uv=uv, semente=531)
+    t.pinta(q.forma(capsula((9.0 - w + 1.5, -20.4), (9.0 + w - 1.5, -20.4), 0.35)), "couro", 0, sobre="mochila_aba", tom=0.2, normal=False)
+    t.pinta(q.forma(caixa((16.4, -17.0), 1.6, 1.4, r=0.3) - caixa((16.4, -17.0), 0.6, 0.5)), "latao", z_tras + 0.15, R=0.7, pid="mochila_fiv")
+    if grande:
+        # saco de dormir enrolado embaixo da mochila, aparecendo dos dois lados do quadril
+        rolo = capsula((-14.6, -4.2), (19.6, -4.2), 3.0)
+        t.pinta(q.forma(rolo), "talo", z_tras - 0.1, R=2.6, pid="rolo", uv=uv, semente=532, tom=0.1)
+        for x in (-11.0, 15.6):
+            t.pinta(q.forma(caixa((x, -4.2), 0.8, 3.2)), "couro", z_tras - 0.05, R=0.6, pid="rolo_tira")
+        t.pinta(q.forma(elipse((19.6, -4.2), 1.4, 2.8)), "talo", z_tras - 0.04, R=1.0, pid="rolo_ponta", tom=0.25)
+    # alça no ombro direito (da tela), por cima da clavícula, descendo até a axila
+    alca = traco([(5.0, -27.6), (10.4, -26.4), (12.6, -22.0), (12.0, -15.0)], 1.25)
+    t.pinta(q.forma(alca), "couro", 7.6, R=1.1, pid="alca", uv=uv, semente=533)
+    for i in range(3):
+        t.pinta(q.forma(circulo((6.4 + i * 2.2, -27.3 + i * 0.4), 0.35)), "couro", 0, sobre="alca", tom=0.3, normal=False)
+
+
+def capa_curta(t, r, p, longa=False):
+    """Capa de viajante marrom: gola dobrada nos ombros e o pano caindo atrás; balança de leve."""
+    q = r.tronco
+    uv = q.uv()
+    f = p.pano
+    fim = 2.0 if not longa else 14.0
+    larg = 15.0 if not longa else 18.0
+    tras = poligono([(-11.0, -27.0), (11.0, -27.0), (larg - 1.5, -10.0), (larg, fim)] + _barra_rasgada(-larg, larg, fim + 1.0, 9, f, 13, 1.2) + [(-larg + 1.5, -10.0)])
+    t.pinta(q.forma(tras), "viagem", 0.3, R=3.0, pid="capa_tras", uv=uv, relevo=_dobras(r.P[0], 0.9, 0.35, f), tom=-0.12, semente=540)
+    # gola/capelete por cima dos ombros
+    for s_ in (-1, 1):
+        man = poligono([(s_ * 2.4, -28.8), (s_ * 12.8, -26.6), (s_ * 15.6, -19.0), (s_ * 15.0, -14.6), (s_ * 12.4, -16.2), (s_ * 10.4, -13.8), (s_ * 7.6, -17.2), (s_ * 4.6, -21.4)])
+        t.pinta(q.forma(man), "viagem", 7.4 + 0.02 * s_, R=2.6, pid=f"gola_{s_}", uv=uv, relevo=_dobras(r.P[0], 1.3, 0.3, f), semente=541 + s_)
+    # fecho: alfinete de latão
+    t.pinta(q.forma(circulo((0, -24.8), 1.4)), "latao", 7.6, R=1.3, pid="broche_v")
+
+
+def bastao(t, q, z, k, topo="no", chao=24.0):
+    """Cajado de caminhada de madeira simples: a mão perto do alto, a ponta no chão. Origem na mão; +y desce."""
+    uv = q.uv()
+    t.pinta(q.forma(traco([(0.2, chao), (0.0, 12.0), (-0.3, 0.0), (0.2, -9.0)], [0.85, 0.95, 1.0, 1.1])), "madeira", z - 0.2, R=1.1, pid="bastao", uv=uv, semente=550)
+    t.pinta(q.forma(circulo((0.8, 11.0), 0.75)), "madeira", z - 0.18, R=0.8, pid="bastao_no", tom=-0.12)
+    t.pinta(q.forma(capsula((0.0, -1.6), (0.0, 3.6), 1.35)), "couro", z - 0.15, R=1.0, pid="bastao_tira", semente=552)
+    if topo == "gancho":
+        t.pinta(q.forma(traco(bezier((0.2, -9.0), (1.2, -15.0), (-4.0, -14.6), 7), [1.1, 1.08, 1.05, 1.0, 0.95, 0.9, 0.85])), "madeira", z - 0.2, R=1.1, pid="bastao_g", semente=551)
+    else:
+        t.pinta(q.forma(circulo((0.1, -9.6), 1.6).borda(0.3, 1.5, 4)), "madeira", z - 0.19, R=1.4, pid="bastao_g", semente=553, tom=0.05)
+
+
+def q_aventureiro(k):
+    s = _sn(k)
+    p = replace(BASE, resp=0.5 + 0.5 * s, cab=-1.5 + 0.5 * s, cab_dy=0.4 * s, vira=-0.25, olhar=(-0.6, 0),
+                bd=(30.0, 4.0, 0.0, "punho"), be=(14.0, 4.0, 2.0, "aberta"), zd=8.0, pano=k / NQ * TAU)
+    t = Tela()
+
+    def ex(t, r):
+        mochila(t, r, p, grande=True, k=k)
+        capa_curta(t, r, p, longa=True)
+        pd = r.j["palma_d"]
+        bastao(t, Quadro2D(pd, -6.0), 9.0, k, topo="gancho", chao=123.5 - pd[1])
+    esqueleto(t, p, ex)
+    return t
+
+
+# ═════════ mago2 ═════════
+def manto_mago(t, r, p):
+    """Manto azul-escuro de borda vermelha por cima da armadura: aberto na frente, gola alta e fecho de latão."""
+    q = r.tronco
+    uv = q.uv()
+    f = p.pano
+    tras = poligono([(-11.5, -26.5), (11.5, -26.5), (16.5, -6.0), (18.5, 20.0)] + _barra_rasgada(-18.5, 18.5, 20.6, 10, f, 21, 0.8) + [(-16.5, -6.0)])
+    t.pinta(q.forma(tras), "manto", 0.4, R=3.0, pid="manto_tras", uv=uv, relevo=_dobras(r.P[0], 0.9, 0.35, f), tom=-0.12, semente=560)
+    t.pinta(q.forma(tras & semiplano((0, 17.6), (0, -1))), "pano", 0, sobre="manto_tras", R=1.0, tom=-0.05)
+    for s_ in (-1, 1):
+        ext = [(s_ * 3.0, -27.6), (s_ * 12.8, -25.0), (s_ * 15.4, -14.0), (s_ * 17.8, 6.0), (s_ * 18.6, 19.6)]
+        bx = [(s_ * (18.6 - i * 2.0), 19.8 + (0.6 if i % 2 else -0.2) + 0.5 * math.sin(f + i)) for i in range(6)]
+        intr = [(s_ * 8.6, 19.6), (s_ * 9.0, 6.0), (s_ * 7.6, -6.0), (s_ * 5.6, -16.0), (s_ * 3.6, -23.0)]
+        pai = poligono(ext + bx + intr)
+        t.pinta(q.forma(pai), "manto", 5.9, R=2.6, pid=f"manto_{s_}", uv=uv, relevo=_dobras(r.P[0] + s_ * 3, 1.05, 0.4, f * 0.6 + s_), semente=561 + s_,
+                tom=lambda X, Y: -0.08 * np.clip((Y - r.P[1]) / 20, 0, 1))
+        borda = poligono([(s_ * 3.6, -23.0), (s_ * 5.6, -16.0), (s_ * 7.6, -6.0), (s_ * 9.0, 6.0), (s_ * 8.6, 19.6), (s_ * 10.6, 19.8),
+                          (s_ * 11.0, 6.0), (s_ * 9.6, -6.0), (s_ * 7.6, -16.0), (s_ * 5.8, -23.6)])
+        t.pinta(q.forma(borda), "pano", 5.95, R=1.0, pid=f"manto_{s_}", sobre=f"manto_{s_}")
+        barra = pai & semiplano((0, 17.4), (0, -1))
+        t.pinta(q.forma(barra), "pano", 5.95, R=1.0, pid=f"manto_{s_}", sobre=f"manto_{s_}")
+        gola = poligono([(s_ * 2.0, -28.6), (s_ * 9.6, -30.4), (s_ * 13.4, -26.0), (s_ * 12.0, -22.6), (s_ * 4.0, -23.4)])
+        t.pinta(q.forma(gola), "manto", 7.1, R=2.4, pid=f"gola_m{s_}", uv=uv, semente=565 + s_)
+        t.pinta(q.forma(gola - gola.engrossa(-1.0)), "pano", 0, sobre=f"gola_m{s_}", R=0.8)
+    t.pinta(q.forma(circulo((0, -24.6), 1.7)), "latao", 7.3, R=1.6, pid="fecho")
+    t.pinta(q.forma(circulo((0, -24.6), 0.7)), "gema", 7.35, pid="fecho", tom=0.6, sem_contorno=True)
+    for lado, s_ in (("e", -1), ("d", 1)):
+        om, co, pu = r.j[f"ombro_{lado}"], r.j[f"cotovelo_{lado}"], r.j[f"punho_{lado}"]
+        z = (p.ze if lado == "e" else p.zd) + 0.35
+        ang = math.atan2(pu[1] - co[1], pu[0] - co[0])
+        fim = (pu[0] - math.cos(ang) * 0.8, pu[1] - math.sin(ang) * 0.8)
+        manga = capsula(om, co, 3.0, 2.9) | capsula(co, fim, 2.9, 3.5)
+        t.pinta(manga, "manto", z, R=2.8, pid=f"mmanga_{lado}", relevo=_dobras(om[0], 1.3, 0.25, f), semente=567)
+        t.pinta(capsula((fim[0] - math.cos(ang) * 1.2, fim[1] - math.sin(ang) * 1.2), fim, 3.6), "pano", z + 0.02, R=1.2, pid=f"mpunho_{lado}")
+
+
+def chapeu_torto(t, r, k, z=9.0):
+    """Chapéu pontudo azul com a ponta dobrada para a esquerda e remendo; faixa vermelha."""
+    q = r.cab
+    uv = q.uv()
+    bal = 0.7 * _sn(k)
+    cone = poligono([(-15.0, -21.4), (-11.0, -31.0), (-5.0, -39.0), (1.4, -44.6), (-2.0 + bal, -48.2), (-9.6 + bal * 1.4, -49.4),
+                     (-14.4 + bal * 1.6, -46.4), (-10.6 + bal, -46.0), (-4.6 + bal * 0.5, -43.6), (6.0, -35.0), (12.0, -28.0), (15.4, -21.4)])
+    t.pinta(q.forma(cone.suave(circulo((-13.4 + bal * 1.5, -47.4), 1.6), 0.8)), "chapeu", z, R=4.0, pid="chapeu", uv=uv, semente=570,
+            relevo=lambda X, Y: (0.22 * np.sin((X - q.o[0]) * 0.7), 0.0 * X))
+    t.pinta(q.forma(elipse((-3.2 + bal, -44.6), 3.4, 1.6, ang=20)), "chapeu", 0, sobre="chapeu", tom=-0.22, normal=False)
+    t.pinta(q.forma(traco([(-11.6, -24.0), (-7.8, -33.0), (-2.4, -40.0)], 0.9)), "chapeu", 0, sobre="chapeu", tom=0.12, normal=False)
+    # remendo costurado
+    t.pinta(q.forma(caixa((5.4, -31.0), 2.6, 2.2, r=0.4, ang=12)), "viagem", z + 0.05, R=0.8, pid="remendo")
+    for (x, y) in ((3.2, -32.6), (7.6, -29.6), (3.6, -29.2), (7.2, -33.0)):
+        t.pinta(q.forma(circulo((x, y), 0.3)), "papel", 0, sobre="remendo", tom=-0.1, normal=False)
+    aba = elipse((0.4, -20.6), 25.2, 4.4, ang=-4)
+    t.pinta(q.forma(aba), "chapeu", z + 0.2, R=2.2, pid="chapeu_aba", uv=uv, semente=571)
+    t.pinta(q.forma(elipse((0.4, -21.8), 16.5, 2.2, ang=-3)), "chapeu", 0, sobre="chapeu_aba", tom=-0.2, normal=False)
+    t.pinta(q.forma(cone & (semiplano((0, -22.8), (0, 1)) - semiplano((0, -26.2), (0, 1)))), "pano", z + 0.1, R=1.0, pid="chapeu_faixa")
+
+
+def cajado_gema(t, q, z, k):
+    """Cajado de madeira nodosa com a ponta enrolada em volta de uma pequena gema verdete. Origem na mão."""
+    uv = q.uv()
+    pulso = 0.5 + 0.5 * _sn(k)
+    t.pinta(q.forma(traco([(0.2, 31.0), (0.0, 10.0), (-0.4, -12.0), (0.3, -30.0), (0.0, -37.0)], [0.95, 1.0, 1.05, 1.1, 1.15])), "madeira", z - 0.2, R=1.1,
+            pid="cajado", uv=uv, semente=580)
+    for y in (-6.0, -3.6, -1.2):
+        t.pinta(q.forma(capsula((-1.4, y - 0.6), (1.4, y + 0.6), 0.5)), "couro", z - 0.15, R=0.6, pid="cajado_tira")
+    t.pinta(q.forma(circulo((-0.9, -18.0), 0.8) | circulo((0.9, 6.0), 0.7)), "madeira", z - 0.18, R=0.8, pid="cajado_no", tom=-0.1)
+    # gancho de madeira em espiral em volta da gema
+    esp = bezier((0.0, -37.0), (5.6, -42.0), (2.6, -47.4), 7) + bezier((2.6, -47.4), (-2.6, -50.4), (-4.2, -45.0), 6)[1:] + bezier((-4.2, -45.0), (-4.6, -41.0), (-1.4, -41.6), 5)[1:]
+    t.pinta(q.forma(traco(esp, [1.15 - 0.04 * i for i in range(len(esp))])), "madeira", z + 0.1, R=0.9, pid="cajado_esp", semente=581)
+    gem = poligono([(0.0, -47.0), (1.8, -44.6), (0.0, -42.2), (-1.8, -44.6)]).suave(circulo((0, -44.6), 1.5), 0.5)
+    cx, cy = q.p(0, -44.6)
+    t.pinta(q.forma(gem), "gema", z, pid="gema", tom=lambda X, Y: np.clip(0.5 + 0.3 * pulso - 0.1 * (X - cx) - 0.08 * (Y - cy), 0.1, 1.0))
+    t.pinta(q.forma(circulo((-0.6, -45.4), 0.45)), "gema", z + 0.05, pid="gema", tom=1.0, sem_contorno=True)
+    t.luz(cx, cy, 8.0, "#62e0b0", 22.0, 0.25 + 0.2 * pulso)
+
+
+def q_mago2(k):
+    s = _sn(k)
+    p = replace(BASE, resp=0.5 + 0.5 * s, cab=-1.0 + 0.7 * s, vira=0.0, inclina=-0.8,
+                bd=(44.0, 24.0, 10.0, "punho"), be=(30.0 + 3 * s, -24.0 + 5 * s, -40.0, "aberta"), zd=8.2, pano=k / NQ * TAU)
+    t = Tela()
+
+    def ex(t, r):
+        manto_mago(t, r, p)
+        cajado_gema(t, Quadro2D(r.j["palma_d"], 3.0 + 0.6 * s), 9.6, k)
+        chapeu_torto(t, r, k)
+        pe_ = r.j["palma_e"]
+        if k in (2, 3, 6):
+            cintila(t, pe_[0] - 2, pe_[1] - 4 - (k % 2), 1, "#a8f0cc", 0.8)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ═════════ quadro ═════════
+def lousa(t, q, z, k):
+    """Lousinha de giz com moldura de madeira e 3 linhas (uma dica), virada para quem olha. Origem no centro."""
+    uv = q.uv()
+    t.pinta(q.forma(caixa((0, 0), 11.0, 8.4, r=1.0)), "madeira", z, R=1.2, pid="lousa_moldura", uv=uv, semente=590)
+    t.pinta(q.forma(caixa((0, 0.2), 9.0, 6.6, r=0.4)), "lousa", z + 0.05, R=-0.8, pid="lousa", uv=uv, semente=591)
+    linhas = [(-6.6, -3.4, 5.0), (-6.6, -0.2, 6.4), (-6.6, 3.0, 2.0)]
+    for i, (xa, y, xb) in enumerate(linhas):
+        t.pinta(q.forma(traco([(xa, y), ((xa + xb) / 2, y - 0.3), (xb, y + 0.1)], 0.5)), "giz", z + 0.08, pid="giz", sem_contorno=True, tom=0.6 - 0.1 * i)
+    # marquinhas de tópico e um visto vermelho
+    for (x, y) in ((-7.6, -3.4), (-7.6, -0.2), (-7.6, 3.0)):
+        t.pinta(q.forma(circulo((x, y), 0.55)), "giz", z + 0.08, pid="giz", sem_contorno=True, tom=0.75)
+    t.pinta(q.forma(traco([(3.4, 3.4), (4.4, 4.4), (6.6, 1.6)], 0.5)), "pano", z + 0.09, pid="giz_v", sem_contorno=True, tom=0.4)
+    # poeira de giz na borda
+    t.pinta(q.forma(elipse((4, 6.0), 4.0, 0.6)), "lousa", 0, sobre="lousa", tom=0.18, normal=False)
+    for (x, y) in ((-10.0, -7.4), (10.0, -7.4), (-10.0, 7.4), (10.0, 7.4)):
+        t.pinta(q.forma(circulo((x, y), 0.5)), "latao", z + 0.06, R=0.5, pid="lousa_preg", sem_contorno=True)
+
+
+def q_quadro(k):
+    """Lousa de giz verde-escura na mão esquerda, na altura do peito; a direita aponta com o indicador."""
+    s = _sn(k)
+    toque = [0.0, 0.4, 1.0, 0.4, 0.0, 0.4, 1.0, 0.4][k]
+    p = replace(BASE, resp=0.5 + 0.5 * s, vira=0.25, cab=-1.0 + 0.5 * s, inclina=-1.0,
+                be=(30.0, -40.0, -70.0, "punho"), bd=(50.0 - 3 * toque, -60.0 + 6 * toque, -92.0 + 4 * toque, "punho"), ze=7.0, zd=9.6, pano=k / NQ * TAU)
+    t = Tela()
+
+    def ex(t, r):
+        pe_ = r.j["palma_e"]
+        lousa(t, Quadro2D((pe_[0] + 6.0, pe_[1] - 3.0), -4.0 + 0.6 * s), 7.6, k)
+        mao_apontando(t, r, "d", p.zd + 0.6)
+        if toque > 0.9:
+            pt = mao_quadro(r, "d").p(0.8, 8.0)
+            cintila(t, pt[0] - 2, pt[1] - 1, 1, "#fff1a8", 0.8)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ═════════ fogueira (esqueleto) ═════════
+def luz_fogo(t, k, forca=1.5, y=104.0):
+    t.luz(-14.0, y, 30.0, "#ff8a2a", 120.0, forca + 0.22 * math.sin(k * 2.3) + 0.1 * math.sin(k * 5.1))
+
+
+def brasas(t, k, x0=4.0, y0=118.0):
+    for j in range(4):
+        fy = (k * 3 + j * 7) % 26
+        x = x0 + math.sin(fy * 0.45 + j) * 2.5 + j * 2.0
+        y = y0 - fy * 2.2
+        if fy < 22:
+            t.ponto_fx(x, y, "#ffd27a" if fy < 9 else "#ff8a3a", 0.85 - fy / 30)
+
+
+def q_fogueira(k):
+    """Sentado de pernas cruzadas, as duas mãos estendidas para a esquerda (o fogo)."""
+    s = _sn(k)
+    p = replace(BASE, y=12.0, x=6.0, resp=0.5 + 0.5 * s, inclina=-4.0, vira=-0.6, cab=-1.0 + 0.6 * s, olhar=(-1.4, 1.0),
+                pe=(100.0, -80.0), pd=(100.0, -80.0),
+                be=(50.0 + 2 * s, 74.0, 150.0, "aberta"), bd=(-24.0, -96.0, -170.0, "aberta"), ze=8.6, zd=10.5, sombra=False, pano=0.3 * s)
+    t = Tela()
+    sombra_em(t, 54.0, 122.6, 22.0, 2.8)
+    luz_fogo(t, k)
+
+    def ex(t, r):
+        for lado, s_ in (("e", -1), ("d", 1)):
+            jo = r.j[f"joelho_{lado}"]
+            fim = (r.P[0] - s_ * 4.0, jo[1] + (2.6 if lado == "e" else 1.2))
+            osso_longo(t, jo, fim, 1.35, 5.7 + (0.1 if lado == "e" else 0), f"canela_{lado}", nos=(1.35, 1.2), sem=23 if s_ < 0 else 24)
+            t.pinta(circulo((jo[0] + s_ * 0.2, jo[1] - 0.2), 1.35), "osso", 5.85, R=1.4, pid=f"joelho_x{lado}")
+            t.pinta(elipse((fim[0] - s_ * 2.4, fim[1] + 0.2), 3.0, 1.8), "osso", 5.75 + (0.1 if lado == "e" else 0), R=1.6, pid=f"pe_x{lado}", semente=25)
+        brasas(t, k)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ═════════ carinho ═════════
+def q_carinho(k):
+    """Agachado, a mão direita estendida para baixo à direita fazendo carinho (o gato fica fora do quadro)."""
+    s = _sn(k)
+    afaga = math.sin(k / NQ * TAU * 2)
+    p = replace(BASE, y=16.0, x=-10.0, resp=0.5 + 0.5 * s, inclina=16.0, vira=0.5, cab=2.0 + 0.6 * s, cab_dx=0.6, olhar=(1.2, 1.4),
+                pe=(2.0, 178.0), pd=(2.0, 178.0),
+                bd=(38.0 + 3 * afaga, 40.0 + 8 * afaga, 62.0 + 12 * afaga, "aberta"), be=(10.0, -40.0, -50.0, "aberta"), ze=7.6, zd=8.0, sombra=False, pano=0.4 * s)
+    t = Tela()
+    sombra_em(t, 44.0, 123.6, 24.0, 2.6)
+
+    def ex(t, r):
+        P = r.P
+        joelhos = [(P[0] - 13.4, P[1] - 7.0), (P[0] + 12.0, P[1] - 5.4)]
+        coxas_frente(t, [(P[0] - 4.6, P[1] + 1.0), (P[0] + 4.6, P[1] + 1.4)], joelhos)
+        canelas_frente(t, joelhos, [(P[0] - 14.6, 120.8), (P[0] + 14.0, 121.2)])
+    esqueleto(t, p, ex)
+    return t
+
+
+# ═════════ comemora2 (toca uma vez) ═════════
+def q_comemora2(k):
+    """Reação curta: parado → agacha → pula erguendo o punho → aterrissa → parado. Quadros 0 e 7 = parado (quadro 0)."""
+    if k in (0, 7):
+        return q_parado(0)
+    alt = {1: -1.6, 2: 5.0, 3: 8.0, 4: 6.0, 5: -1.2, 6: -0.3}[k]
+    dobra = max(0.0, -alt) / 1.6
+    no_ar = max(0.0, alt) / 8.0
+    punho = {1: 0.1, 2: 0.7, 3: 1.0, 4: 1.0, 5: 0.45, 6: 0.15}[k]
+    p = replace(BASE, y=-max(0.0, alt) + dobra * 1.2, resp=0.5 + 0.5 * no_ar, cab=-2.5 * no_ar + 1.0 * dobra, cab_dy=-0.6 * no_ar + 0.5 * dobra,
+                vira=0.0, olhar=(0.0, -0.6 * no_ar),
+                be=(14.0 + 112 * punho, 4.0 + 134 * punho, 2.0 + 156 * punho, "punho" if punho > 0.3 else "aberta"),
+                bd=(12.0 + 16 * no_ar, 2.0 + 20 * no_ar, 0.0, "punho"),
+                pe=(9.0 + 16 * dobra + 10 * no_ar, -4.0 - 20 * dobra - 22 * no_ar), pd=(9.0 + 16 * dobra + 10 * no_ar, -4.0 - 20 * dobra - 22 * no_ar),
+                sombra=False, pano=k * 0.9, ze=6.0 if punho < 0.5 else 8.0)
+    t = Tela()
+    sombra_em(t, 48.0, 123.2, 15.0 - 5.0 * no_ar, 2.6, 1.0 - 0.45 * no_ar)
+
+    def ex(t, r):
+        espada(t, mao_quadro(r, "d", -4 - 10 * no_ar), p.zd + 0.3)
+        if k in (3, 4):
+            pe_ = r.j["palma_e"]
+            for j, (dx, dy) in enumerate(((-6, -3), (5, -5), (-2, -8))):
+                if (j + k) % 2 == 0 or k == 3:
+                    cintila(t, pe_[0] + dx, pe_[1] + dy, 1, "#fff1a8", 0.85)
+    esqueleto(t, p, ex)
+    return t
+
+
 LINHAS = [
     ("acenar", "acenando", False, q_acenar),
     ("ler", "lendo", False, q_ler),
@@ -1980,10 +2386,19 @@ LINHAS = [
     ("descansando", "cochilando sentado com um livro", False, q_descansando),
     ("orientando", "mostrando o caminho", False, q_orientando),
     ("ortopedia", "de jaleco com martelo de reflexo", False, q_ortopedia),
+    # segunda leva (01/11/2026), também fora do sorteio
+    ("escrevendo", "escrevendo no caderno", False, q_escrevendo),
+    ("aventureiro", "de mochila e cajado, pronto para explorar", False, q_aventureiro),
+    ("mago2", "de manto e chapéu de mago", False, q_mago2),
+    ("quadro", "mostrando uma dica na lousa", False, q_quadro),
+    ("fogueira", "se aquecendo na fogueira", False, q_fogueira),
+    ("carinho", "fazendo carinho no gato", False, q_carinho),
+    ("comemora2", "comemorando a meta do dia", False, q_comemora2),
 ]
 
 
 LINHAS_ANTIGAS = 14          # linhas que existiam antes de 31/10/2026 (não mudam nunca)
+LINHAS_POSES_31 = 9          # poses de 31/10/2026 (as primeiras de esqueleto-poses.png; também não mudam)
 
 
 def folha_esqueleto(so=None) -> Image.Image:
@@ -2382,13 +2797,132 @@ def gato_comemorando(t: Tela, k: int):
             cintila(t, 38.5 + dx, 13.0 - alt + dy, 1, "#fff1a8", 0.8)
 
 
+# ─────────── linhas novas do gato (01/11/2026) ───────────
+def palpebra(t, q, cx, fecha, z=4.4):
+    """Pálpebra de pelo cobrindo a metade de cima do olho (piscada lenta)."""
+    if fecha <= 0:
+        return
+    alto = -0.6 - 1.9 + 3.8 * fecha * 0.55
+    t.pinta(q.forma(elipse((cx, -0.6), 1.9, 2.0) & semiplano((0, alto), (0, 1))), "pelo", z, R=0.8, pid="palpebra", sem_contorno=True, tom=0.05)
+    t.pinta(q.forma(capsula((cx - 1.7, alto), (cx + 1.7, alto), 0.3)), "pupila", z + 0.01, pid="palpebra", sem_contorno=True)
+
+
+def gato_observando(t, k):
+    f = k / GQ * TAU
+    pisca = [0.0, 0.0, 0.5, 1.0, 0.5, 0.0][k]
+    a = math.radians(26 * math.sin(f))
+    pts = bezier((21.0, 34.5), (11.5 + 1.5 * math.sin(a), 32.0), (9.0 + 6.0 * math.sin(a), 23.0), 6)[:-1] + bezier(
+        (9.0 + 6.0 * math.sin(a), 23.0), (8.0 + 2 * math.sin(a), 18.0), (12.5 + 9.0 * math.sin(a), 17.5), 5)
+    q = gato_sentado_v(t, k, pts, cauda_z=1.0, pisca=pisca >= 1.0, cabeca_inc=-12.0 + 1.0 * math.sin(f), olhar=(-0.45, -0.6), dy=0.0)
+    if 0 < pisca < 1:
+        for s_ in (-1, 1):
+            palpebra(t, q, s_ * 3.4, pisca)
+
+
+def gato_fogueira(t, k):
+    """Deitado em pão-de-forma, de costas para a direita, olhando o fogo à esquerda."""
+    t.origem = (0.0, 0.0)
+    f = k / GQ * TAU
+    resp = math.sin(f)
+    gato_sombra(t, 34, 19)
+    t.luz(-12.0, 26.0, 16.0, "#ff8a2a", 64.0, 1.5 + 0.25 * math.sin(k * 2.3) + 0.1 * math.sin(k * 4.1))
+    # cauda enrolada na frente, ponta mexendo
+    tw = math.sin(f)
+    pts = bezier((48.0, 32.0), (52.0, 38.4), (38.0, 37.6), 6)[:-1] + bezier((38.0, 37.6), (30.0, 37.4), (25.0 + tw * 1.2, 35.6 - abs(tw) * 0.8), 5)
+    corpo = elipse((36.0, 30.0 - resp * 0.3), 14.0, 7.6 + resp * 0.35).suave(elipse((44.0, 29.0), 8.0, 7.4), 2.0).borda(0.4, 1.0, 21)
+    t.pinta(corpo, "pelo", 2.0, R=7.0, pid="corpo", semente=340)
+    t.pinta(listras(38, 29, 90, 0.85, 0.42, 7, (20, 18, 56, 39)), "pelo_listra", 0, sobre="corpo", R=3.0)
+    t.pinta(elipse((26.0, 33.0), 5.0, 3.4).borda(0.4, 1.3, 23), "pelo_branco", 0, sobre="corpo", R=2.0)
+    # patinhas dobradas por baixo do peito (só a pontinha)
+    t.pinta(elipse((22.4, 37.0), 3.0, 1.3), "pelo_branco", 2.6, R=1.0, pid="patinhas", semente=342)
+    gato_cauda(t, pts, 3.2)
+    tw_or = [0.0, 0.0, 1.0, 0.0, 0.0, 0.6][k]
+    gato_cabeca(t, (21.0, 22.0 - resp * 0.2), -4.0 + 1.0 * math.sin(f), pisca=(k == 4), olhar=(-0.5, 0.2), orelha_tw=tw_or, z=4.0)
+
+
+def gato_ronronando(t, k):
+    """Deitado de lado, olhos fechados, barriga subindo e descendo, cauda enrolada, patas esticadas."""
+    t.origem = (0.0, 0.0)
+    f = k / GQ * TAU
+    resp = math.sin(f)
+    gato_sombra(t, 32, 23)
+    # patas esticadas para a frente (quem olha), de longe e de perto
+    for i, (x0, x1, z) in enumerate(((37.0, 43.0, 2.5), (41.0, 47.6, 2.6), (19.0, 24.6, 2.5), (23.0, 28.0, 2.6))):
+        t.pinta(capsula((x0, 32.0), (x1, 35.8), 1.8, 1.5).borda(0.2, 1.4, 60 + i), "pelo", z, R=1.6, pid=f"pata{i}", semente=600 + i, tom=-0.1 if i % 2 == 0 else 0.0)
+        t.pinta(elipse((x1 + 0.8, 36.4), 2.3, 1.2), "pelo_branco", z + 0.05, R=1.0, pid=f"pata{i}", tom=-0.1 if i % 2 == 0 else 0.0)
+    corpo = elipse((30.0, 27.6 - resp * 0.2), 17.0, 8.0 + resp * 0.55).borda(0.4, 1.0, 61)
+    t.pinta(corpo, "pelo", 2.0, R=7.0, pid="corpo", semente=610)
+    t.pinta(listras(30, 26, 90, 0.85, 0.42, 11, (12, 16, 48, 36)), "pelo_listra", 0, sobre="corpo", R=3.0)
+    barriga = elipse((32.0, 32.6 - resp * 0.1), 10.0, 1.9 + resp * 0.45).borda(0.4, 1.3, 62)
+    t.pinta(barriga, "pelo_branco", 0, sobre="corpo", R=2.0)
+    # cauda enrolada por cima das patas de trás
+    pts = bezier((13.5, 27.0), (8.0, 36.0), (18.0, 38.0), 6)[:-1] + bezier((18.0, 38.0), (24.0, 38.6), (27.0 + 0.4 * resp, 36.2), 4)
+    gato_cauda(t, pts, 2.8)
+    # cabeça deitada no chão (de lado), olhos fechados
+    q = gato_cabeca(t, (49.0, 28.6 - resp * 0.15), 22.0, pisca=True, z=4.0)
+
+
+def gato_acordando(t, k):
+    """Toca uma vez: dormindo → abre os olhos → boceja → senta. Quadro 0 = dormindo (0); quadro 5 = acordado (0)."""
+    if k == 0:
+        gato_dormindo(t, 0)
+        return
+    if k == 5:
+        gato_sentado(t, 0, cauda=0.0, pisca=False, tala=False)
+        return
+    t.origem = (0.0, 0.0)
+    if k in (1, 2):
+        # ainda deitado de barriga, a cabeça se ergue
+        gato_sombra(t, 32, 22)
+        pts = bezier((13.5, 30.5), (16.0, 37.6), (33.0, 36.2), 10)
+        corpo = elipse((29.0, 30.0), 16.5, 8.0).borda(0.4, 1.0, 21)
+        t.pinta(corpo, "pelo", 2.0, R=7.0, pid="corpo", semente=340)
+        t.pinta(listras(29, 30, 90, 0.85, 0.42, 7, (12, 20, 46, 39)), "pelo_listra", 0, sobre="corpo", R=3.0)
+        t.pinta(elipse((36.0, 34.4), 7.0, 2.6).borda(0.4, 1.3, 22), "pelo_branco", 0, sobre="corpo", R=2.0)
+        gato_cauda(t, pts, 3.0, seed=341)
+        t.pinta(elipse((44.5, 35.2), 3.2, 1.6), "pelo_branco", 3.2, R=1.2, pid="patas", semente=342)
+        if k == 1:
+            q = gato_cabeca(t, (42.6, 25.0), 8.0, pisca=False, olhar=(0.0, 0.4), z=4.0)
+            for s_ in (-1, 1):
+                palpebra(t, q, s_ * 3.4, 0.5)
+        else:
+            gato_cabeca(t, (42.0, 21.6), -8.0, pisca=True, boca_aberta=1.2, z=4.0)
+        return
+    if k == 3:
+        # levantando a frente: patas da frente esticadas, traseiro ainda no chão, boceja no fim
+        gato_sombra(t, 32, 20)
+        pts = bezier((14.0, 33.0), (10.0, 38.0), (24.0, 38.2), 6)
+        quad = elipse((26.0, 31.0), 11.0, 7.0).borda(0.4, 1.0, 5)
+        t.pinta(quad, "pelo", 2.0, R=6.0, pid="corpo", semente=302)
+        peito = elipse((36.0, 27.0), 7.4, 9.0, -30).borda(0.4, 1.0, 6)
+        t.pinta(peito, "pelo", 2.2, R=5.0, pid="peito", semente=303)
+        t.pinta(listras(28, 30, 80, 0.9, 0.45, 2, (14, 20, 40, 39)), "pelo_listra", 0, sobre="corpo", R=3.0)
+        t.pinta(elipse((39.0, 28.0), 3.6, 6.0, -26).borda(0.5, 1.2, 9), "pelo_branco", 0, sobre="peito", R=4.0)
+        gato_cauda(t, pts, 3.0)
+        for i, x in enumerate((37.0, 41.4)):
+            t.pinta(capsula((x - 1.0, 29.0), (x + 1.6, 36.2), 1.9, 1.8).borda(0.25, 1.4, 11 + i), "pelo", 3.0 + i * 0.1, R=1.8, pid=f"pata{i}", semente=305 + i)
+            t.pinta(elipse((x + 2.0, 37.0), 2.5, 1.4), "pelo_branco", 3.05 + i * 0.1, R=1.2, pid=f"pata{i}")
+        gato_cabeca(t, (40.8, 16.4), -6.0, pisca=True, boca_aberta=0.5, z=4.0)
+        return
+    # k == 4: quase sentado, piscando
+    pts = bezier((21.0, 34.5), (11.5, 32.0), (9.0, 23.0), 6)[:-1] + bezier((9.0, 23.0), (8.0, 18.0), (12.5, 17.5), 5)
+    q = gato_sentado_v(t, 4, pts, cauda_z=1.0, cabeca_inc=-3.0, dy=1.2)
+    for s_ in (-1, 1):
+        palpebra(t, q, s_ * 3.4, 0.5)
+
+
 LINHAS_GATO = [("dormindo", "dormindo"), ("acordado", "acordado"), ("tala", "com a tala no braço"),
                # linhas novas (31/10/2026)
                ("sentado", "sentado"), ("andando", "andando"), ("espreguicando", "se espreguiçando"),
-               ("brincando", "brincando com a bolinha de lã"), ("lendo", "lendo"), ("comemorando", "comemorando")]
+               ("brincando", "brincando com a bolinha de lã"), ("lendo", "lendo"), ("comemorando", "comemorando"),
+               # segunda leva (01/11/2026)
+               ("observando", "observando"), ("fogueira", "deitado perto da fogueira"), ("ronronando", "ronronando"),
+               ("acordando", "acordando")]
 LINHAS_GATO_ANTIGAS = 3
+LINHAS_GATO_POSES_31 = 6
 NOVAS_GATO = {"sentado": gato_sentado_ereto, "andando": gato_andando, "espreguicando": gato_espreguicando,
-              "brincando": gato_brincando, "lendo": gato_lendo, "comemorando": gato_comemorando}
+              "brincando": gato_brincando, "lendo": gato_lendo, "comemorando": gato_comemorando,
+              "observando": gato_observando, "fogueira": gato_fogueira, "ronronando": gato_ronronando, "acordando": gato_acordando}
 
 
 def q_gato(linha: str, k: int) -> Tela:
@@ -2426,13 +2960,29 @@ def _quantizar_por_blocos(img: Image.Image, corte: int) -> Image.Image:
     return out
 
 
+def _paleta_exata(img: Image.Image) -> Image.Image:
+    """Se a imagem cabe em 256 cores RGBA, devolve a mesma imagem em modo P sem perder nenhum pixel (arquivo menor);
+    senão devolve como está."""
+    cores = img.getcolors(256)
+    if cores is None:
+        return img
+    arr = np.asarray(img.convert("RGBA"))
+    pal = np.array([c for _, c in cores], np.uint8)
+    chave = lambda a: (a[..., 0].astype(np.uint32) << 24) | (a[..., 1].astype(np.uint32) << 16) | (a[..., 2].astype(np.uint32) << 8) | a[..., 3]
+    ordem = np.argsort(chave(pal))
+    idx = ordem[np.searchsorted(chave(pal)[ordem], chave(arr))].astype(np.uint8)
+    out = Image.fromarray(idx, "P")
+    out.putpalette(pal.tobytes(), rawmode="RGBA")
+    return out
+
+
 def salvar(img: Image.Image, caminho: Path, corte: int | None = None) -> None:
     """Grava em PNG; usa paleta de 256 cores (pixel art cabe nela) quando fica menor.
     Com `corte` (altura em pixels das linhas antigas), as antigas e as novas ganham paletas separadas (31/10/2026)."""
     caminho.parent.mkdir(parents=True, exist_ok=True)
     if corte is not None and img.height > corte:
         img = _quantizar_por_blocos(img, corte)   # até 512 cores: grava em RGBA (sem perder nenhuma)
-        img.save(caminho, optimize=True)
+        _paleta_exata(img).save(caminho, optimize=True)
         print(caminho.relative_to(PASTA.parents[2]) if caminho.is_relative_to(PASTA.parents[2]) else caminho, img.size, caminho.stat().st_size, "bytes")
         return
     img.save(caminho, optimize=True)
@@ -2456,9 +3006,16 @@ def main() -> None:
     # onde uma pose fixa aparece. Cada folha com a sua paleta: as antigas saem iguais, pixel a pixel e em bytes.
     esq, gato = folha_esqueleto(), folha_gato()
     salvar(esq.crop((0, 0, esq.width, FH * LINHAS_ANTIGAS)), PASTA / "esqueleto.png")
-    salvar(esq.crop((0, FH * LINHAS_ANTIGAS, esq.width, esq.height)), PASTA / "esqueleto-poses.png")
+    # Cada leva de poses tem a sua folha (31/10/2026): esqueleto-poses.png e gato-poses.png (primeira leva) e
+    # esqueleto-poses2.png e gato-poses2.png (segunda). Acrescentar poses nunca muda um byte das folhas que já existem,
+    # cada folha cabe numa paleta de 256 cores (leve) e só carrega onde uma pose dela aparece.
+    a1, a2 = FH * LINHAS_ANTIGAS, FH * (LINHAS_ANTIGAS + LINHAS_POSES_31)
+    salvar(esq.crop((0, a1, esq.width, a2)), PASTA / "esqueleto-poses.png")
+    salvar(esq.crop((0, a2, esq.width, esq.height)), PASTA / "esqueleto-poses2.png")
     salvar(gato.crop((0, 0, gato.width, GH * LINHAS_GATO_ANTIGAS)), PASTA / "gato.png")
-    salvar(gato.crop((0, GH * LINHAS_GATO_ANTIGAS, gato.width, gato.height)), PASTA / "gato-poses.png")
+    g1, g2 = GH * LINHAS_GATO_ANTIGAS, GH * (LINHAS_GATO_ANTIGAS + LINHAS_GATO_POSES_31)
+    salvar(gato.crop((0, g1, gato.width, g2)), PASTA / "gato-poses.png")
+    salvar(gato.crop((0, g2, gato.width, gato.height)), PASTA / "gato-poses2.png")
     if "--previa" in sys.argv:
         destino = Path(sys.argv[sys.argv.index("--previa") + 1])
         destino.mkdir(parents=True, exist_ok=True)

@@ -1,4 +1,6 @@
-import { type CSSProperties, type ReactNode } from 'react'
+import { type CSSProperties, type ReactNode, useEffect, useState } from 'react'
+import { gravar, ler } from '../../../estado/armazenamento'
+import { chaveDia } from '../../../estado/limiteDiario'
 import { META_STREAK_DIARIA, type Streak } from '../../../estado/streak'
 import { href } from '../../../util/rotas'
 import { SITE, recurso, urlCss } from '../../../config'
@@ -21,7 +23,7 @@ import { usarPeriodo } from '../../../estado/aparencia'
 
 export interface Atalho { destino: string; rotulo: string; texto: string; icone: string; contador?: number; novo?: boolean }
 
-/** Linha da folha tocha-semana.png (scripts/gerar_sprites_inicio.py). */
+/** Linha da folha tocha-semana-v2.png (scripts/gerar_sprites_inicio.py); a linha 7 é "acendendo", tocada uma vez. */
 const LINHA_TOCHA = { feito: 0, 'hoje-feito': 1, hoje: 2, parcial: 3, perdido: 4, futuro: 5, especial: 6 } as const
 type EstadoTocha = keyof typeof LINHA_TOCHA
 
@@ -31,7 +33,7 @@ const LEGENDA: Record<EstadoTocha, string> = {
 }
 
 const SPRITES = {
-  '--sprite-fogo': urlCss('pixel/inicio/fogo.png'), '--sprite-tocha': urlCss('pixel/inicio/tocha-semana.png'),
+  '--sprite-fogo': urlCss('pixel/inicio/fogo.png'), '--sprite-tocha': urlCss('pixel/inicio/tocha-semana-v2.png'),
 } as CSSProperties
 
 /** Hoje vira "especial" quando bate o recorde ou quando a chama sobe de estágio. */
@@ -43,13 +45,32 @@ function estadoDaTocha(d: DiaSequencia, streak: Streak): EstadoTocha {
   return d.estado
 }
 
-export function HeroiJornada({ data, titulo, lide, missao, botao, depois, linhaFogo }: {
+/**
+ * A comemoração da meta do dia (31/10/2026): na primeira vez que a página abre com a meta cumprida, devolve um número
+ * novo (uma vez por dia e por conta) para a tocha de hoje acender, o esqueleto pular e o gato comemorar. Nada bloqueia
+ * a navegação e, com "menos animação", fica só a frase.
+ */
+export function usarFestaDaMeta(cumprida: boolean): number {
+  const [festa, definir] = useState(0)
+  useEffect(() => {
+    if (!cumprida) return
+    const chave = `inicio:festa:${chaveDia()}`
+    if (ler<boolean>(chave, false)) return
+    // A marca só é gravada quando a comemoração acontece (um efeito cancelado não pode "gastar" a do dia).
+    const t = window.setTimeout(() => { gravar(chave, true); definir(Date.now()) }, 1100)
+    return () => window.clearTimeout(t)
+  }, [cumprida])
+  return festa
+}
+
+export function HeroiJornada({ data, titulo, lide, missao, botao, depois, linhaFogo, descanso, festa }: {
   data: string; titulo: string; lide: ReactNode; missao: ReactNode; botao: ReactNode; depois?: ReactNode; linhaFogo: number
+  descanso?: boolean; festa?: number
 }) {
   const periodo = usarPeriodo()
   return (
     <section className={`jn-heroi jn-heroi--${periodo} hd-topo--${periodo}`} aria-labelledby="jn-titulo" style={SPRITES}>
-      <CenaDiorama linhaFogo={linhaFogo} periodo={periodo} />
+      <CenaDiorama linhaFogo={linhaFogo} periodo={periodo} descanso={descanso} festa={festa} />
       <header className="jn-saudacao">
         <p className="jn-data">{data}</p>
         <h1 id="jn-titulo">{titulo}</h1>
@@ -63,7 +84,17 @@ export function HeroiJornada({ data, titulo, lide, missao, botao, depois, linhaF
   )
 }
 
-export function TrilhaSequencia({ streak, dias }: { streak: Streak; dias: DiaSequencia[] }) {
+export function TrilhaSequencia({ streak, dias, festa = 0 }: { streak: Streak; dias: DiaSequencia[]; festa?: number }) {
+  // Na comemoração, a tocha de hoje toca a linha "acendendo" uma vez e a frase fica alguns segundos.
+  const [acendendo, definirAcendendo] = useState(false)
+  const [frase, definirFrase] = useState(false)
+  useEffect(() => {
+    if (!festa) return
+    definirAcendendo(true); definirFrase(true)
+    const a = window.setTimeout(() => definirAcendendo(false), 1300)
+    const b = window.setTimeout(() => definirFrase(false), 7000)
+    return () => { window.clearTimeout(a); window.clearTimeout(b) }
+  }, [festa])
   const fogo = estagioDaSequencia(streak.atual)
   const proximo = textoProximoEstagio(streak.atual)
   const hoje = Math.min(META_STREAK_DIARIA, streak.hojeContagem)
@@ -86,10 +117,11 @@ export function TrilhaSequencia({ streak, dias }: { streak: Streak; dias: DiaSeq
         {dias.map((d) => {
           const estado = estadoDaTocha(d, streak)
           const ehHoje = d.estado.startsWith('hoje')
+          const linha = ehHoje && acendendo ? 7 : LINHA_TOCHA[estado]
           return (
-            <li key={d.chave} className={`jn-tocha jn-tocha--${estado}${ehHoje ? ' jn-tocha--hoje-marca' : ''}`}
+            <li key={d.chave} className={`jn-tocha jn-tocha--${estado}${ehHoje ? ' jn-tocha--hoje-marca' : ''}${ehHoje && acendendo ? ' jn-tocha--acendendo' : ''}`}
               title={`${d.nome}: ${d.total} ${d.total === 1 ? 'questão' : 'questões'} (${LEGENDA[estado]})`}>
-              <span className="jn-tocha__sprite" style={{ '--linha': LINHA_TOCHA[estado] } as CSSProperties} aria-hidden="true" />
+              <span className="jn-tocha__sprite" style={{ '--linha': linha } as CSSProperties} aria-hidden="true" />
               <small aria-hidden="true">{ehHoje ? 'Hoje' : d.inicial}</small>
               <span className="ip-invisivel">{d.nome}: {LEGENDA[estado]}</span>
             </li>
@@ -97,6 +129,9 @@ export function TrilhaSequencia({ streak, dias }: { streak: Streak; dias: DiaSeq
         })}
       </ol>
 
+      <p className={`jn-trilha__festa${frase ? ' jn-trilha__festa--visivel' : ''}`} role="status" aria-live="polite">
+        {frase ? 'Meta de hoje cumprida. A tocha de hoje está acesa.' : ''}
+      </p>
       <dl className="jn-trilha__meta">
         <div>
           <dt>Hoje</dt>

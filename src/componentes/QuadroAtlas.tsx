@@ -23,7 +23,7 @@ export function QuadroAtlas() {
         <span className="qa__nota">Grátis: ossos e músculos. No computador e no celular.</span>
       </div>
       <a className="qa__arte" href={href('/atlas?e=femur_r&f=proximal')} tabIndex={-1} aria-hidden="true">
-        <img src={recurso('atlas3d/capa-esqueleto.png')} width={316} height={740} alt="" loading="lazy" decoding="async" />
+        <img src={recurso('atlas3d/capa-esqueleto.webp')} width={316} height={740} alt="" loading="lazy" decoding="async" />
         <span className="qa__etiqueta"><b>Fêmur proximal</b> classificações e questões</span>
         <span className="qa__eixo">3D</span>
       </a>

@@ -9,6 +9,9 @@ Gera em public/pixel/inicio/:
   pano meio queimado), parcial (só brasas e fio de fumaça), perdido (apagada, fria, torta, pano caído), futuro (nova,
   pano amarrado, esmaecida) e especial (chama azul, flâmula vermelha e estrelinhas). Cabo, anel e placa ficam no mesmo
   lugar em todas as linhas; cada estado tem silhueta própria (reconhecível em cinza). Fundo transparente.
+- tocha-semana-v2.png (31/10/2026): a mesma sequência como estaca de madeira fincada no chão, chama em camadas com
+  línguas assimétricas e brasas; 8 linhas x 6 quadros de 24 x 40: as 7 da v1 na mesma ordem e "acendendo" (índice 7,
+  tocada uma vez: brasa, chama pegando, clarão nos quadros 3 e 4, chama cheia de hoje-feito no 5).
 O CSS amplia com image-rendering: pixelated.
 Uso: python3 scripts/gerar_sprites_inicio.py
 """
@@ -621,9 +624,460 @@ def tocha_semana() -> Image.Image:
     return folha
 
 
+# ─────────────────────── Tocha da semana v2 (31/10/2026) ───────────────────────
+# Estaca de madeira fincada num montinho de terra (com pedras e tufos), copo e cinta de ferro, amarração de couro,
+# pano com piche. Chama em camadas (núcleo claro, amarelo, laranja, borda vermelha e contorno escuro só nas pontas)
+# feita de 3 línguas assimétricas que mudam a cada quadro, com variações de cor, pedacinho solto e brasas ocasionais.
+# Mesmo formato da v1 (24 x 40, 6 quadros, mesma ordem) e uma 8ª linha, "acendendo" (tocada uma vez).
+V2_ESTADOS = ("feito", "hoje-feito", "hoje", "parcial", "perdido", "futuro", "especial", "acendendo")
+V2_BASE = 13          # linha onde a chama nasce (topo do pano)
+V2_COPO = 20          # linha de cima do copo de ferro
+V2_CHAO = 36          # linha do chão (B) / ponta do cabo (A)
+
+# Chamas: núcleo, amarelo-claro, amarelo, laranja, vermelho, borda escura.
+V2_FOGO = _pal("#fffbe8", "#fff0a0", "#ffc63c", "#ff8a24", "#e04818", "#8e2410")
+V2_FOGO_FRACO = _pal("#fff0c8", "#ffd070", "#ffa438", "#f07024", "#b83c18", "#6e1e0e")
+V2_FOGO_AZUL = _pal("#ffffff", "#e6f8ff", "#b4e6ff", "#74c0ff", "#4a90f0", "#2a58c0")
+P_TERRA = _pal("#120c08", "#1e150e", "#2c2016", "#3c2c1e", "#4e3a28", "#634a32")
+P_PEDRA = _pal("#1c1c22", "#2a2a32", "#3c3c46", "#52525e", "#6c6c7a", "#8c8c9a")
+P_MUSGO = _pal("#16261a", "#1f3a24", "#2c5030", "#3e6a3c")
+
+
+# ─────────────────────────────── chama ───────────────────────────────
+def _linguas(estado_viva: float, q: int, alt: float, larg: float, seed: int):
+    """Línguas da chama: (x da base, altura, meia-largura, inclinação, fase). Ciclo fechado em TS_N quadros."""
+    f = q / TS_N * math.tau
+    v = estado_viva
+    rnd = random.Random(seed)
+    j = [rnd.uniform(0, math.tau) for _ in range(6)]
+    return [
+        # principal, puxada um pouco para a direita e balançando
+        (0.2 * math.sin(f + j[0]), alt * (1 + 0.09 * v * math.sin(f + j[1])), larg, 0.9 * math.sin(f + j[2]) + 0.3, f + j[0]),
+        # língua da esquerda: mais baixa, abre para fora
+        (-larg * 0.45, alt * (0.66 + 0.15 * v * math.sin(2 * f + j[3])), larg * 0.5, -2.2 - 0.8 * math.sin(f + j[4]), 2 * f + j[3]),
+        # língua da direita: média, sobe e desce fora de fase
+        (larg * 0.42, alt * (0.8 + 0.13 * v * math.sin(2 * f + j[5] + 2.1)), larg * 0.46, 1.9 + 0.8 * math.sin(f + j[5]), 2 * f + j[5]),
+    ]
+
+
+def _chama2(frente: dict, fundo: dict, pal, alt: float, larg: float, q: int, viva: float, seed: int,
+            brilho=None, raio: float = 0.0, brilho_a: int = 0, base: float = V2_BASE + 0.5, solta: bool = True) -> int:
+    """Chama em camadas com 3 línguas assimétricas; devolve a linha da ponta."""
+    f = q / TS_N * math.tau
+    ling = _linguas(viva, q, alt, larg, seed)
+    campo: dict[tuple[int, int], float] = {}
+    for bx, h, w, inc, fl in ling:
+        for y in range(TS_H):
+            t = (base - y) / max(h, 0.5)
+            if t < -0.16 or t > 1.0:
+                continue
+            tt = max(0.0, t)
+            perfil = math.sqrt(min(1.0, (t + 0.16) / 0.3)) * (1 - tt) ** 1.25
+            cx = TS_CX + bx + inc * tt ** 1.6 + 0.6 * viva * math.sin(fl - tt * 3.2) * tt
+            hw = w * perfil
+            for x in range(TS_W):
+                d = abs(x - cx) / (hw + 0.45)
+                if d < 1:
+                    k = (x, y)
+                    campo[k] = max(campo.get(k, 0.0), 1 - d)
+    if not campo:
+        return int(base)
+    topo = min(y for _, y in campo)
+    # Brilho discreto: elipse em 2 degraus, bem transparente.
+    if brilho is not None:
+        cy = base - alt * 0.5
+        for y in range(TS_H):
+            for x in range(TS_W):
+                d = math.hypot((x - TS_CX) / (raio * 0.9), (y - cy) / raio)
+                if d < 1:
+                    fundo[(x, y)] = (brilho, int(brilho_a * (0.45 if d > 0.62 else 1.0)))
+    # Contorno escuro só nas pontas (metade de cima).
+    for (x, y), val in list(campo.items()):
+        t = (base - y) / alt
+        for dx, dy in ((0, -1),):
+            p = (x + dx, y + dy)
+            if p not in campo and t > 0.55 and 0 <= p[0] < TS_W and 0 <= p[1] < TS_H:
+                frente[p] = (pal[5], 230)
+    for (x, y), val in campo.items():
+        t = (base - y) / alt
+        borda = any((x + dx, y + dy) not in campo for dx, dy in ((1, 0), (-1, 0), (0, -1), (0, 1)))
+        calor = val * 1.0 + (1 - min(1.1, max(0.0, t))) * 0.7 - 0.14
+        # o pé da chama (onde encosta no pano) fica mais laranja, não branco
+        if t < 0.08:
+            calor -= 0.22
+        i = 0 if calor > 1.08 else 1 if calor > 0.9 else 2 if calor > 0.68 else 3 if calor > 0.44 else 4
+        if borda:
+            i = max(i, 4 if t > 0.3 else 3)
+        c = pal[i]
+        # pequenas variações de cor (estáveis no quadro): âmbar entre amarelo e laranja, rosa-coral no vermelho
+        r = _ruido(x, y, 40 + q)
+        if i in (2, 3) and r < 0.14:
+            c = _mix(pal[i], pal[i + 1], 0.45)
+        elif i == 1 and r < 0.12:
+            c = _mix(pal[1], pal[2], 0.5)
+        frente[(x, y)] = (c, 255)
+    # Pedacinho de chama solto que sobe e some (2 de cada 6 quadros).
+    if solta:
+        fase = (q + seed) % TS_N
+        if fase in (1, 2):
+            x = TS_CX + (1 if seed % 2 else -1) + (fase - 1)
+            y = topo - 1 - fase
+            _por(frente, x, y, pal[3 if fase == 1 else 4])
+            if fase == 1:
+                _por(frente, x, y - 1, pal[4])
+    return topo
+
+
+def _brasas(frente: dict, q: int, cores, y0: int, n: int, seed: int, sobe: int = 3, espalha: float = 3.0) -> None:
+    """Brasas ocasionais: cada uma vive 3 quadros, sobe em zigue-zague e esfria (amarelo → laranja → vermelho)."""
+    rnd = random.Random(seed)
+    for k in range(n):
+        nasce = rnd.randrange(TS_N)
+        x0 = TS_CX + rnd.uniform(-espalha, espalha)
+        lado = rnd.choice((-1, 1))
+        idade = (q - nasce) % TS_N
+        if idade > 2:
+            continue
+        y = y0 - rnd.randrange(3) - idade * sobe
+        x = round(x0 + lado * (0, 1, 1)[idade] + (lado if idade == 2 and k % 2 else 0))
+        _por(frente, x, y, cores[min(idade, len(cores) - 1)], (255, 255, 200)[idade])
+
+
+# ─────────────────────────────── corpo ───────────────────────────────
+def _cabeca2(estado: str) -> dict[int, int]:
+    if estado == "futuro":
+        return {11: 2, 12: 3, 13: 4, 14: 4, 15: 4, 16: 4, 17: 4, 18: 4, 19: 3}
+    if estado == "perdido":
+        return {15: 3, 16: 4, 17: 4, 18: 4, 19: 3}
+    return {13: 3, 14: 4, 15: 4, 16: 4, 17: 4, 18: 4, 19: 3}
+
+
+def _madeira(cam: dict, cena: _Cena, y0: int, y1: int, semente: int, no_y: int | None) -> None:
+    """Cabo de 3 px: veios verticais longos, um nó com aro claro e uma lasca."""
+    for y in range(y0, y1 + 1):
+        for x in range(TS_CX - 1, TS_CX + 2):
+            u = (x - TS_CX) / 1.6
+            n = _norm(u, 0.0, math.sqrt(max(0.0, 1 - u * u)))
+            veio = -0.1 if _ruido(x, (y + x * 3) // 4, semente) < 0.3 else 0.03 if _ruido(x, y // 5, semente + 1) < 0.2 else 0.0
+            _por(cam, x, y, cena.acender(P_MADEIRA, x, y, n, base=veio + 0.05, rim=x == TS_CX + 1))
+    if no_y is not None:
+        # nó do lado da sombra: miolo escuro, aro claro em volta e o veio desviando em cima e embaixo
+        nx = TS_CX - 1
+        _por(cam, nx, no_y, _tom(P_MADEIRA, 0.12))
+        _por(cam, nx, no_y - 1, cena.acender(P_MADEIRA, nx, no_y - 1, _norm(-0.3, -0.7, 0.6), base=0.2))
+        _por(cam, TS_CX, no_y, cena.acender(P_MADEIRA, TS_CX, no_y, _norm(-0.5, 0, 0.8), base=0.1))
+        _por(cam, nx, no_y + 1, cena.acender(P_MADEIRA, nx, no_y + 1, _norm(-0.8, 0.3, 0.5), base=-0.06))
+    # lasca clara na madeira do lado da luz
+    _por(cam, TS_CX + 1, y0 + 9, cena.acender(P_MADEIRA, TS_CX + 1, y0 + 9, _norm(0.2, -0.8, 0.6), base=0.22, rim=True))
+
+
+def _cinta(cam: dict, cena: _Cena, y: int, hw: int, ouro: float = 0.0, alto: int = 2) -> None:
+    """Cinta/copo de ferro com brilho de aresta e um rebite; ouro > 0 puxa o ferro para dourado (hoje-feito)."""
+    pal = P_FERRO
+    for yy in range(y, y + alto):
+        for x in range(TS_CX - hw, TS_CX + hw + 1):
+            u = (x - TS_CX) / (hw + 0.5)
+            n = _norm(u, -0.8 if yy == y else 0.25, math.sqrt(max(0.0, 1 - u * u)))
+            c = cena.acender(pal, x, yy, n, base=0.08 if yy == y else -0.05, rim=x == TS_CX + hw)
+            if ouro:
+                c = _mix(c, _tom(P_OURO, 0.35 + 0.5 * max(0.0, -u + 0.3) + (0.15 if yy == y else 0)), ouro)
+            _por(cam, x, yy, c)
+    rx = TS_CX - hw + 1
+    _por(cam, rx, y + alto - 1, _tom(P_OURO if ouro else P_FERRO, 0.85))
+
+
+def _pano(cam: dict, cena: _Cena, estado: str, q: int) -> None:
+    linhas = _cabeca2(estado)
+    topo = min(linhas)
+    pal = P_LINHO if estado == "futuro" else P_PANO
+    for y, hw in linhas.items():
+        for x in range(TS_CX - hw, TS_CX + hw + 1):
+            u = (x - TS_CX) / (hw + 0.6)
+            ny = -0.85 if y == topo else -0.45 if y == topo + 1 else 0.35 if y == 19 else 0.0
+            n = _norm(u, ny, math.sqrt(max(0.0, 1 - u * u)))
+            faixa = (x - TS_CX + 2 * (y - topo)) % 4
+            base = -0.14 if faixa == 0 else 0.06 if faixa == 1 else 0.0
+            # piche escorrido: manchas escuras no pano usado
+            if estado != "futuro" and _ruido(x, y, 31) < 0.12:
+                base -= 0.12
+            _por(cam, x, y, cena.acender(pal, x, y, n, base=base, rim=x == TS_CX + hw))
+    # beirada que sobra embaixo do pano (ponta de tecido pendurada à esquerda)
+    if estado not in ("perdido",):
+        _por(cam, TS_CX - 4, 20, cena.acender(pal, TS_CX - 4, 20, _norm(-0.7, 0.3, 0.6), base=-0.05))
+    if estado in ("feito", "hoje-feito", "especial", "acendendo"):
+        for x in range(TS_CX - 3, TS_CX + 4):
+            _por(cam, x, 13, _tom(P_CARVAO, 0.55 + 0.3 * _ruido(x, 13, 7)))
+        brasa = P_BRASA if estado != "especial" else _pal("#10204a", "#1c3c8a", "#2f63c8", "#4aa0ff", "#9ad4ff", "#e6f6ff")
+        for x in range(TS_CX - 4, TS_CX + 5):
+            if _ruido(x, 14, 5 + q) < 0.4:
+                _por(cam, x, 14, brasa[3 + (x + q) % 3 if (x + q) % 3 < 3 else 3])
+    elif estado == "hoje":
+        for x in range(TS_CX - 3, TS_CX + 4):
+            _por(cam, x, 13, _tom(P_CARVAO, 0.5 + 0.3 * _ruido(x, 13, 9)))
+        for x in range(TS_CX - 4, TS_CX + 1):
+            _por(cam, x, 14, _tom(P_CARVAO, 0.7))
+        for x in range(TS_CX - 4, TS_CX - 1):
+            _por(cam, x, 15, _tom(P_CARVAO, 0.85))
+        for i, (x, y) in enumerate(((TS_CX + 1, 14), (TS_CX + 3, 14), (TS_CX - 1, 15), (TS_CX - 3, 16))):
+            _por(cam, x, y, P_BRASA[3 + (i + q) % 3] if (i + q) % 3 else P_BRASA[2])
+    elif estado == "parcial":
+        for y in (13, 14):
+            for x in range(TS_CX - (3 if y == 13 else 4), TS_CX + (4 if y == 13 else 5)):
+                _por(cam, x, y, _tom(P_CARVAO, 0.35 + 0.5 * _ruido(x, y, 11)))
+        for x, y in ((TS_CX - 1, 12), (TS_CX + 1, 12)):
+            _por(cam, x, y, _tom(P_CARVAO, 0.6))
+        for i, (x, y) in enumerate(((TS_CX - 2, 13), (TS_CX + 1, 13), (TS_CX + 2, 14), (TS_CX - 1, 14),
+                                    (TS_CX, 12), (TS_CX - 3, 14), (TS_CX + 3, 13))):
+            k = 0.5 + 0.5 * math.sin(q / TS_N * math.tau * (1 + i % 2) + i * 1.7)
+            _por(cam, x, y, P_BRASA[1 + int(k * 4.99)])
+    elif estado == "perdido":
+        for y in (15, 16, 17, 18):
+            hw = linhas[y]
+            for x in range(TS_CX - hw, TS_CX + hw + 1):
+                if y < 17 or _ruido(x, y, 13) < (0.7 if y == 17 else 0.3):
+                    _por(cam, x, y, _tom(P_CARVAO, 0.3 + 0.65 * _ruido(x, y, 12)))
+        for x, y in ((TS_CX - 3, 15), (TS_CX, 15), (TS_CX + 3, 15)):
+            cam.pop((x, y), None)
+        # toco carbonizado do pavio espetado
+        _por(cam, TS_CX - 1, 14, _tom(P_CARVAO, 0.5)); _por(cam, TS_CX + 1, 14, _tom(P_CARVAO, 0.4))
+        _por(cam, TS_CX - 1, 13, _tom(P_CARVAO, 0.3))
+    elif estado == "futuro":
+        for y in range(13, 20):
+            for x in (TS_CX - 3 + (y - 13), TS_CX + 3 - (y - 13)):
+                if abs(x - TS_CX) <= linhas[y]:
+                    _por(cam, x, y, cena.acender(P_CORDAO, x, y, _norm((x - TS_CX) / 4, 0, 1), base=0.15))
+        for y in (13, 19):
+            for x in range(TS_CX - linhas[y], TS_CX + linhas[y] + 1):
+                _por(cam, x, y, cena.acender(P_CORDAO, x, y, _norm((x - TS_CX) / 4, -0.3, 1), base=0.12))
+        _por(cam, TS_CX + 4, 21, _tom(P_CORDAO, 0.6)); _por(cam, TS_CX + 5, 22, _tom(P_CORDAO, 0.4))
+        _por(cam, TS_CX + 5, 23, _tom(P_CORDAO, 0.5))
+
+
+def _monte(cena: _Cena, estado: str) -> dict:
+    """B: montinho de terra batida com pedras e tufos onde a estaca está fincada."""
+    cam = _camada()
+    linhas = {35: 3, 36: 5, 37: 6, 38: 7}
+    for y, hw in linhas.items():
+        for x in range(TS_CX - hw, TS_CX + hw + 1):
+            u = (x - TS_CX) / (hw + 0.5)
+            n = _norm(u * 0.8, -0.85 if y == min(linhas) or abs(x - TS_CX) == hw else -0.2, 0.6)
+            c = cena.acender(P_TERRA, x, y, n, base=0.05 * (_ruido(x, y, 51) - 0.5) - 0.02 * (y - 35))
+            _por(cam, x, y, c)
+    for px, py in ((TS_CX - 4, 37), (TS_CX + 3, 37), (TS_CX + 5, 38)):
+        _por(cam, px, py, cena.acender(P_PEDRA, px, py, _norm(-0.4, -0.7, 0.6), base=0.1))
+        _por(cam, px + 1, py, cena.acender(P_PEDRA, px + 1, py, _norm(0.4, -0.4, 0.7), base=-0.05))
+    if estado != "perdido":
+        for tx, ty in ((TS_CX - 6, 37), (TS_CX + 6, 37), (TS_CX - 2, 35)):
+            _por(cam, tx, ty, _tom(P_MUSGO, 0.6)); _por(cam, tx, ty - 1, _tom(P_MUSGO, 0.85))
+    return _contorno(cam)
+
+
+def _anel_chao(atras: dict, frente: dict, q: int, cy: float, rx: float = 8.4, ry: float = 2.2) -> None:
+    """Anel de luz dourada girando no pé da estaca (metade de trás atrás, metade da frente na frente)."""
+    fase = q / TS_N * math.tau
+    pontos: dict[tuple[int, int], float] = {}
+    for gr in range(360):
+        a = math.radians(gr)
+        pontos.setdefault((round(TS_CX + rx * math.cos(a)), round(cy + ry * math.sin(a))), a)
+    for (x, y), a in pontos.items():
+        luz = 0.5 + 0.5 * math.cos(a - fase)
+        (frente if math.sin(a) > 0 else atras)[(x, y)] = (P_OURO[1 + int(luz * 4.99)], 255)
+    for (x, y), a in pontos.items():
+        luz = 0.5 + 0.5 * math.cos(a - fase)
+        v = (x, y - 1)
+        if v not in pontos:
+            (frente if math.sin(a) > 0 else atras).setdefault(v, (P_OURO[4], int(25 + 90 * luz ** 2)))
+    for k, dx in enumerate((-6, -2, 3, 7)):
+        if (q + k * 2) % 3 == 0:
+            y = round(cy - ry * math.sqrt(max(0.0, 1 - (dx / rx) ** 2)))
+            _por(atras, TS_CX + dx, y - 2, P_OURO[5]); _por(atras, TS_CX + dx, y - 3, P_OURO[4], 150)
+
+
+def _flamula2(cena: _Cena, q: int, y0: int) -> dict:
+    cam = _camada()
+    fase = q / TS_N * math.tau
+    comp = 9
+    for k in range(comp):
+        x = TS_CX + 2 + k
+        onda = math.sin(fase - k * 0.75) * min(1.0, k / 3) * 1.2
+        topo, fim = y0 + k * 0.28 + onda, y0 + 6 - k * 0.28 + onda
+        inc = math.cos(fase - k * 0.75)
+        for y in range(round(topo), round(fim) + 1):
+            if k >= comp - 3 and abs(y - (topo + fim) / 2) < (k - (comp - 4)) * 0.75:
+                continue
+            borda = y == round(topo)
+            c = cena.acender(P_FLAMULA, x, y, _norm(-inc * 0.6, -0.5 if borda else 0.1, 0.8), base=0.06 + (0.08 if borda else 0))
+            if k == 4 and not borda and (y - round(topo)) == 2:
+                c = _tom(P_OURO, 0.7)  # costura dourada
+            _por(cam, x, y, c)
+    _por(cam, TS_CX + 1, y0 + 1, _tom(P_CORDAO, 0.9)); _por(cam, TS_CX + 1, y0 + 5, _tom(P_CORDAO, 0.7))
+    return _contorno(cam)
+
+
+def _farrapo(cena: _Cena, q: int, giro: float, pivo: int) -> dict:
+    """Pano solto caído do lado direito da tocha apagada, pendendo até perto do chão."""
+    cam = _camada()
+    balanco = (0, 0, 1, 1, 1, 0)[q % 6]
+    x0 = TS_CX + 4 + round(giro * (pivo - 17))
+    for y in range(17, 31):
+        k = (y - 17) / 13
+        larg = 3 if k < 0.3 else 2 if k < 0.75 else 1
+        x = x0 + (1 if k > 0.15 else 0) + (balanco if k > 0.5 else 0)
+        for dx in range(larg):
+            dobra = -0.12 if (y + dx) % 4 == 0 else 0.0
+            _por(cam, x + dx, y, cena.acender(P_CINZA_PANO, x + dx, y, _norm(-0.5 + dx * 0.55, -0.2, 0.85), base=0.1 - 0.12 * k + dobra))
+    xb = x0 + 1 + balanco
+    _por(cam, xb - 1, 31, _tom(P_CINZA_PANO, 0.3)); _por(cam, xb + 1, 32, _tom(P_CINZA_PANO, 0.25))
+    return _contorno(cam)
+
+
+# Estaca fincada no chão (direção B, escolhida).
+def _corpo_v2(estado: str, cena: _Cena, q: int, ouro: float) -> dict:
+    cam = _camada()
+    _madeira(cam, cena, 22, V2_CHAO, 67, 30)
+    # amarração de couro abaixo do copo e cinta de ferro mais embaixo
+    for y in (23, 24):
+        for x in range(TS_CX - 1, TS_CX + 2):
+            _por(cam, x, y, cena.acender(P_CORDAO, x, y, _norm((x - TS_CX) * 0.6, -0.2 if y == 23 else 0.2, 0.8), base=0.0 if (x + y) % 2 else -0.1))
+    _cinta(cam, cena, V2_COPO, 3, ouro)
+    _cinta(cam, cena, 27, 2, ouro * 0.6, alto=1)
+    _pano(cam, cena, estado, q)
+    return cam
+
+
+# ─────────────────────────────── quadro ───────────────────────────────
+V2_LUZES = {
+    "feito": (7.0, 1.0, "#ffb45a"),
+    "hoje-feito": (6.0, 1.3, "#ffc46a"),
+    "hoje": (10.0, 0.55, "#ff9a48"),
+    "parcial": (13.0, 0.22, "#ff4a20"),
+    "especial": (7.0, 1.05, "#7cc4ff"),
+    "perdido": (3.0, 0.55, "#9fb8d6"),   # luar frio: apagada mas legível
+}
+
+
+def _quadro_tocha_v2(estado: str, q: int) -> Image.Image:
+    if estado == "acendendo" and q == TS_N - 1:
+        return _quadro_tocha_v2("hoje-feito", 0)  # emenda exata com o laço de hoje-feito
+    fase = q / TS_N * math.tau
+    img = Image.new("RGBA", (TS_W, TS_H), (0, 0, 0, 0))
+    fundo, atras, frente = _camada(), _camada(), _camada()
+    ouro = 0.0
+    efetivo = estado
+    if estado == "acendendo":
+        # 0: brasa pegando  1: chama pequena  2: média  3: clarão  4: alta  5: hoje-feito cheio
+        alt = (2.5, 5.0, 8.5, 13.5, 14.5, 13.2)[q]
+        larg = (1.6, 2.6, 3.4, 5.2, 4.8, 4.5)[q]
+        forca = (0.35, 0.6, 0.9, 1.7, 1.45, 1.3)[q]
+        luz = (TS_CX, 13.0 - alt * 0.5, forca, _hx("#ffc46a"))
+        ouro = (0, 0, 0, 0.5, 0.8, 1.0)[q]
+    elif estado in V2_LUZES:
+        ly, fo, c = V2_LUZES[estado]
+        luz = (TS_CX, ly, fo + 0.06 * math.sin(fase * 2), _hx(c))
+    else:
+        luz = None
+    if estado == "hoje-feito":
+        ouro = 1.0
+    cena = _Cena(luz, frio=0.3 if estado == "perdido" else 0.0)
+
+    if estado == "feito":
+        _chama2(frente, fundo, V2_FOGO, 11.5, 3.6, q, 0.6, 3, _hx("#ff9a3a"), 9.0, 34)
+        _brasas(frente, q, [V2_FOGO[1], V2_FOGO[3], V2_FOGO[4]], 3, 1, 9)
+    elif estado == "hoje-feito":
+        _chama2(frente, fundo, V2_FOGO, 13.2, 4.4, q, 1.0, 5, _hx("#ffb040"), 11.0, 48)
+        _brasas(frente, q, [V2_FOGO[0], V2_FOGO[2], V2_FOGO[4]], 3, 5, 21, sobe=3, espalha=5.0)
+    elif estado == "hoje":
+        _chama2(frente, fundo, V2_FOGO_FRACO, 5.6 + 0.9 * math.sin(fase * 2), 2.3, q, 1.0, 2, _hx("#ff8a3a"), 6.0, 26, solta=False)
+        _fumaca(frente, q, 6, 0, fio=False)
+    elif estado == "parcial":
+        for (x, y) in ((TS_CX - 1, 11), (TS_CX + 1, 11), (TS_CX, 11), (TS_CX, 10)):
+            fundo[(x, y)] = (_hx("#ff4020"), 50 + int(25 * math.sin(fase)))
+        _fumaca(frente, q, 11, 0, fio=True)
+    elif estado == "especial":
+        _chama2(frente, fundo, V2_FOGO_AZUL, 12.2, 4.0, q, 0.75, 7, _hx("#4aa0ff"), 10.0, 40)
+        for x, y, f in ((3, 4, 0), (20, 7, 2), (4, 15, 4), (19, 1, 1), (2, 23, 3), (21, 17, 5)):
+            k = (q + f) % TS_N
+            if k < 3:
+                c = (_hx("#ffffff"), _hx("#bfe8ff"), _hx("#4aa0ff"))[k]
+                _por(frente, x, y, c, 255 if k < 2 else 190)
+                if k == 0:
+                    for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                        _por(frente, x + dx, y + dy, _hx("#7cc4ff"), 150)
+    elif estado == "acendendo":
+        if q == 0:
+            for x, y in ((TS_CX, 12), (TS_CX - 1, 12), (TS_CX + 1, 11)):
+                _por(frente, x, y, V2_FOGO[(x + y) % 2 + 2])
+            _fumaca(frente, 2, 6, 0, fio=False)
+        else:
+            pal = V2_FOGO_FRACO if q < 3 else V2_FOGO
+            br_a = (0, 20, 30, 78, 60, 48)[q]
+            br_r = (0, 6, 8, 13.5, 12, 11)[q]
+            _chama2(frente, fundo, pal, alt, larg, q, 1.0, 5, _hx("#ffd070") if q in (3, 4) else _hx("#ffb040"), br_r, br_a,
+                    solta=q >= 4)
+            if q == 3:
+                # clarão: estrela de 4 pontas no núcleo + faíscas espalhadas
+                cx, cy = TS_CX, 6
+                for d in (1, 2, 3, 4):
+                    a = (255, 255, 170, 90)[d - 1]
+                    for dx, dy in ((d, 0), (-d, 0), (0, d), (0, -d)):
+                        _por(frente, cx + dx, cy + dy, _hx("#fffbe8") if d < 3 else _hx("#ffe9a8"), a)
+                for dx, dy in ((1, 1), (-1, 1), (1, -1), (-1, -1)):
+                    _por(frente, cx + dx, cy + dy, _hx("#fff0a0"), 200)
+                _por(frente, cx, cy, _hx("#ffffff"))
+                _brasas(frente, 0, [V2_FOGO[0], V2_FOGO[1], V2_FOGO[2]], 6, 8, 33, sobe=0, espalha=8.0)
+            if q == 4:
+                _brasas(frente, 1, [V2_FOGO[1], V2_FOGO[2], V2_FOGO[3]], 2, 8, 33, sobe=2, espalha=8.0)
+            if q == 5:
+                _brasas(frente, 0, [V2_FOGO[0], V2_FOGO[2], V2_FOGO[4]], 3, 5, 21, sobe=3, espalha=5.0)
+        efetivo = "acendendo"
+
+    if estado == "hoje-feito" or (estado == "acendendo" and q >= 4):
+        _anel_chao(atras, frente, q if estado == "hoje-feito" else (0 if q == 5 else 4), 36.6)
+
+    _sobrepor(img, fundo)
+    _sobrepor(img, atras)
+    if estado == "futuro":
+        # a tocha nova esmaece; o chão continua igual aos outros dias
+        chao = Image.new("RGBA", (TS_W, TS_H), (0, 0, 0, 0))
+        _sobrepor(chao, _monte(cena, estado))
+    if estado != "futuro":
+        _sobrepor(img, _monte(cena, estado))
+    corpo = _corpo_v2(efetivo, cena, q, ouro)
+    pivo = V2_CHAO
+    giro = 0.2
+    if estado == "perdido":
+        corpo = _cisalhar(corpo, giro, pivo)
+    _sobrepor(img, _contorno(corpo))
+    if estado == "perdido":
+        _sobrepor(img, _farrapo(cena, q, giro, pivo))
+    if estado == "especial":
+        _sobrepor(img, _flamula2(cena, q, 24))
+    _sobrepor(img, frente)
+    if estado == "futuro":
+        img = _esmaecer(img, contraste=0.5)
+        px = img.load()
+        for y in range(TS_H):
+            for x in range(TS_W):
+                r, g_, b, a = px[x, y]
+                if a:
+                    px[x, y] = (int(r * 0.84), int(g_ * 0.84), int(b * 0.86), a)
+        chao.alpha_composite(img)
+        img = chao
+    return img
+
+
+def tocha_semana_v2() -> Image.Image:
+    folha = Image.new("RGBA", (TS_W * TS_N, TS_H * len(V2_ESTADOS)), (0, 0, 0, 0))
+    for e, estado in enumerate(V2_ESTADOS):
+        for q in range(TS_N):
+            folha.alpha_composite(_quadro_tocha_v2(estado, q), (q * TS_W, e * TS_H))
+    return folha
+
+
 def main() -> None:
     PASTA.mkdir(parents=True, exist_ok=True)
-    for nome, img in (("fogo", fogo()), ("tocha", tocha()), ("tocha-semana", tocha_semana())):
+    for nome, img in (("fogo", fogo()), ("tocha", tocha()), ("tocha-semana", tocha_semana()),
+                      ("tocha-semana-v2", tocha_semana_v2())):
         img.save(PASTA / f"{nome}.png", optimize=True)
         print(nome, img.size, (PASTA / f"{nome}.png").stat().st_size, "bytes")
 
