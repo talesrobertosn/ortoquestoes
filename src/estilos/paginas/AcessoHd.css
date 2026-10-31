@@ -1,0 +1,88 @@
+/* Entrar e criar conta no estilo HD-2D (31/10/2026): o acampamento pintado da página inicial, na luz da hora,
+   por trás da frase e do formulário. A frase fica sobre o lado calmo da pintura; o formulário vira um painel de vidro
+   escuro com filete dourado e losangos nos cantos (como o topo da página inicial), com os campos claros para ler bem.
+   O mascote acena ao lado da frase. A questão de amostra e "o que a conta guarda" seguem embaixo, no fundo do site. */
+
+.ac--hd {
+  grid-template-areas: "vitrine cartao" "mostra mostra";
+  grid-template-rows: auto auto;
+  row-gap: calc(var(--e-6) + var(--ac-gutter) + 0.5rem);
+  position: relative; margin-top: var(--ac-gutter);
+}
+
+/* O cenário cobre a primeira linha inteira (frase + formulário), com sobra em volta. */
+.ac-cena {
+  grid-area: 1 / 1 / 2 / 3;
+  align-self: stretch;
+  margin: calc(var(--ac-gutter) * -1) calc(var(--ac-gutter) * -1);
+  border-radius: 14px; overflow: hidden; position: relative; z-index: 0;
+  background: #120e0a var(--ac-cena) 62% 70% / cover no-repeat; image-rendering: pixelated;
+  box-shadow: 0 0 0 1px rgba(240, 196, 106, 0.45), inset 0 0 0 1px rgba(0, 0, 0, 0.5), 0 18px 40px -22px rgba(0, 0, 0, 0.7);
+  animation: ac-camera 1s cubic-bezier(.2, .7, .2, 1) both;
+}
+.ac-cena::before { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(10, 8, 6, 0.74) 0%, rgba(10, 8, 6, 0.5) 38%, rgba(10, 8, 6, 0.08) 62%, rgba(10, 8, 6, 0.35) 100%),
+    linear-gradient(0deg, rgba(10, 8, 6, 0.45), transparent 40%); }
+.ac-cena::after { content: ""; position: absolute; top: 8px; left: 8px; width: 10px; height: 10px; rotate: 45deg; background: #f0c46a;
+  box-shadow: 0 0 6px rgba(240, 196, 106, 0.7), calc(100cqw) 0 0 #f0c46a; }
+@keyframes ac-camera { from { opacity: 0.4; background-position: 66% 70%; } }
+
+/* A frase em cima da pintura, sem a caixa antiga. */
+.ac--hd .ac-vitrine { position: relative; z-index: 1; background: none; border: 0; box-shadow: none; padding: var(--e-2) 0 0; overflow: visible;
+  grid-template-columns: minmax(0, 1fr) auto; color: #f6eedb; --ac-pe: 0px; }
+.ac--hd .ac-vitrine::before, .ac--hd .ac-vitrine::after { display: none; }
+.ac--hd .ac-vitrine h1 { color: #fff7e6; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.55), 0 0 22px rgba(0, 0, 0, 0.5); }
+.ac--hd .ac-vitrine__lide, .ac--hd .ac-vitrine__gratis { color: #ede1c6; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
+.ac--hd .ac-vitrine__texto .tr-heroi__selo { background: rgba(14, 10, 7, 0.6); color: #f0c46a; border: 1px solid rgba(240, 196, 106, 0.6); box-shadow: none; }
+.ac--hd .ac-provas li { background: rgba(14, 10, 7, 0.55); color: #f6eedb; border: 1px solid rgba(240, 196, 106, 0.4); box-shadow: none; }
+/* O mascote em pé no chão do acampamento, entre a frase e o formulário. */
+.ac-mascote { position: absolute; z-index: 1; left: 47%; bottom: 9%; width: clamp(4.6rem, 7.5vw, 6.6rem); }
+.ac--manha .ac-mascote .mascote__corpo { filter: brightness(1.04) sepia(0.08) drop-shadow(3px 2px 0 rgba(40, 24, 8, 0.3)); }
+.ac--tarde .ac-mascote .mascote__corpo { filter: sepia(0.28) saturate(1.15) brightness(0.98) drop-shadow(-4px 2px 0 rgba(60, 20, 0, 0.3)); }
+.ac--noite .ac-mascote .mascote__corpo { filter: brightness(0.86) sepia(0.35) saturate(1.2) drop-shadow(-3px 0 6px rgba(255, 160, 70, 0.4)); }
+
+/* A cópia do mascote em pé na borda do formulário só aparece em tela estreita. */
+.ac-mascote--cartao { display: none; }
+@media (max-width: 63.99rem) {
+  .ac-mascote--cartao { display: block; left: auto; right: 1.25rem; bottom: calc(100% - 4px); width: 4.6rem; }
+}
+
+/* O formulário: vidro escuro com filete dourado; campos claros. As cores do site viram as do vidro só aqui dentro. */
+.ac--hd .ac-cartao {
+  --superficie: #141a24; --superficie-2: rgba(255, 255, 255, 0.06); --texto: #f3ead6; --texto-2: #cdbf9f;
+  --verdete: #5fd8c0; --verdete-veu: rgba(95, 216, 192, 0.12); --sobre-destaque: #0e131c; --borda: 1px solid rgba(232, 206, 150, 0.28);
+  --px-borda: rgba(232, 206, 150, 0.4); --px-sombra: rgba(0, 0, 0, 0.45); --acerto: #8ee08a;
+  position: relative; z-index: 1; align-self: center; color: var(--texto);
+  background: linear-gradient(180deg, rgba(20, 16, 12, 0.86), rgba(12, 10, 8, 0.9));
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  border: 1px solid rgba(240, 196, 106, 0.55); border-radius: 10px;
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.45), inset 0 0 0 4px rgba(240, 196, 106, 0.18), 0 20px 40px -18px rgba(0, 0, 0, 0.8);
+}
+.ac--hd .ac-cartao::before, .ac--hd .ac-cartao::after { content: ""; position: absolute; width: 10px; height: 10px; rotate: 45deg; background: #f0c46a; box-shadow: 0 0 6px rgba(240, 196, 106, 0.7); }
+.ac--hd .ac-cartao::before { top: -5px; left: -5px; } .ac--hd .ac-cartao::after { bottom: -5px; right: -5px; }
+.ac--hd .ac-cartao .entrada { background: #fbf6ea; color: #17130d; border-color: rgba(240, 196, 106, 0.55); }
+.ac--hd .ac-cartao .entrada::placeholder { color: #8a7d66; }
+.ac--hd .ac-cartao .ac-entrada > svg { color: #8a6a32; }
+.ac--hd .ac-cartao .ac-olho { color: #6b5a3c; }
+.ac--hd .ac-cartao .entrada:focus-visible { outline: 3px solid #f0c46a; outline-offset: 1px; }
+.ac--hd .ac-aba[aria-selected="true"] { background: linear-gradient(180deg, #ffe7a3, #f0b840 55%, #c48218); color: #1b1208; box-shadow: 0 0 0 1px #0a0806, 0 0 12px rgba(255, 200, 90, 0.3); }
+.ac--hd .ac-enviar { background: linear-gradient(180deg, #7ff0d8, #2fb197 55%, #1d7c69); color: #06120f; border-color: #0a0806;
+  box-shadow: 0 0 0 1px #0a0806, 0 0 16px rgba(95, 216, 192, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.5); }
+.ac--hd .ac-enviar:hover { filter: brightness(1.06); }
+.ac--hd .ac-link, .ac--hd .ac-voltar { color: #f0c46a; }
+.ac--hd .ac-cartao a { color: #f0c46a; }
+.ac--hd .ac-seguranca { border-top-color: rgba(240, 196, 106, 0.3); }
+
+/* Tablet e celular: uma coluna; o cenário fica atrás da frase e do formulário juntos. */
+@media (max-width: 63.99rem) {
+  .ac--hd { grid-template-areas: "vitrine" "cartao" "mostra"; grid-template-rows: none; row-gap: var(--e-5); }
+  .ac-cena { grid-area: 1 / 1 / 3 / 2; background-image: var(--ac-cena-p); background-position: 58% 40%; }
+  .ac--hd .ac-cartao { margin: 0 0 var(--e-2); }
+  .ac-cena .ac-mascote { display: none; }
+}
+@media (max-width: 40rem) {
+  .ac-cena { margin: calc(var(--ac-gutter) * -0.9) calc(var(--ac-gutter) * -0.6); border-radius: 12px; }
+  .ac-mascote--cartao { width: 3.6rem; }
+  .ac--hd .ac-cartao { padding: var(--e-4); }
+}
+@media (prefers-reduced-motion: reduce) { .ac-cena { animation: none; } }

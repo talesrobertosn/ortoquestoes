@@ -17,6 +17,10 @@ Gera em public/pixel/inicio/:
 - secao-correio: o canto do correio da vila ao anoitecer (o programa de indicação).
 Cada uma em .webp de 1440 x 480 e 960 x 320.
 Uso: python3 scripts/gerar_cena_vila.py [torre|bau|correio]
+Páginas internas (Revisão, Planos/Assinatura, Indique e ganhe/Contato), nas três horas do dia, com a luz repintada
+por hora (céu, sol ou lua, sombras projetadas, janelas e lampiões acesos ou apagados, a fenda do teto da caverna) e o
+chão de x 330-380 livre para o mascote: python3 scripts/gerar_cena_vila.py --paginas [cena] [manha|tarde|noite]
+  -> public/pixel/paginas/<cena>-<hora>(-960).webp
 """
 from __future__ import annotations
 

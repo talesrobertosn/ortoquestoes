@@ -1,5 +1,5 @@
 import { PreferenciaEncontros } from '../eventos/PreferenciaEncontros'
-import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
+import { useCallback, useEffect, useRef, useState, type CSSProperties, type FormEvent } from 'react'
 import { haQuanto } from '../componentes/IndicadorSincronia'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
@@ -42,10 +42,11 @@ import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, ty
 import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
 import '../estilos/paginas/Acesso.css'
-import { usarMedia } from '../util/usarMedia'
-import { fraseGratis, recurso } from '../config'
+import { fraseGratis, recurso, urlCss } from '../config'
 import { guardarVitrine, lembrarNome, nomeLembrado, sortearVitrine } from '../conta/vitrineAcesso'
-import { MascoteAcesso } from '../componentes/MascoteAcesso'
+import { Mascote } from '../componentes/mascote/Mascote'
+import { usarPeriodo } from '../estado/aparencia'
+import '../estilos/paginas/AcessoHd.css'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -113,7 +114,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [vitrine] = useState(() => ({ entrar: sortearVitrine('entrar'), criar: sortearVitrine('criar') }))
   useEffect(() => { guardarVitrine(vitrine[modoVitrine]) }, [vitrine, modoVitrine])
   // No celular o cavaleiro fica menor, na sua própria coluna ao lado da frase.
-  const mascotePequeno = usarMedia('(max-width: 40rem)')
+  const periodo = usarPeriodo()
   // Destino de quem chegou por um convite (planos, treinar, questão avulsa): vale
   // para entrar, para o cadastro e para a volta do Google. Ver conta/passagem.ts.
   const voltar = rotaVoltar(consulta?.get('voltar'))
@@ -488,8 +489,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const nomeVolta = modo === 'entrar' && !recuperacao && !perfilDepois ? nomeLembrado(email) : ''
     const tituloVitrine = nomeVolta ? `Que bom te ver de novo, ${nomeVolta}.` : v.titulo
     const seloVitrine = perfilDepois ? 'Conta criada' : recuperacao || modo === 'recuperar' ? 'Recuperar acesso' : modo === 'criar' ? 'Conta gratuita' : 'Continuar'
-    return <div className="ac">
-      {/* Topo: céu e cidade da temporada pixel, frase sorteada a cada visita e o cavaleiro em pé na cidade (com coluna própria, nunca sobre o texto). */}
+    return <div className={`ac ac--hd ac--${periodo}`} style={{ '--ac-cena': urlCss(`pixel/inicio/cena-${periodo}.webp`), '--ac-cena-p': urlCss(`pixel/inicio/cena-${periodo}-960.webp`) } as CSSProperties}>
+      {/* O acampamento pintado (o mesmo do topo da página inicial, na luz da hora) por trás da frase e do formulário (31/10/2026). */}
+      <div className="ac-cena" aria-hidden="true"><Mascote className="ac-mascote" comportamento="acenar" falar={false} interativo={false} /></div>
       <section className="ac-vitrine" aria-labelledby="ac-titulo">
         <div className="ac-vitrine__texto">
           <p className="tr-heroi__selo">{seloVitrine}</p>
@@ -498,9 +500,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <ul className="ac-provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
           <p className="ac-vitrine__gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar de onde parou.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
         </div>
-        <div className="ac-vitrine__mascote"><MascoteAcesso escala={mascotePequeno ? 0.75 : 1.5} /></div>
       </section>
       <section className="ac-cartao" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
+        {/* No celular, o mascote fica em pé na borda do formulário (no computador, no chão do acampamento). */}
+        <Mascote className="ac-mascote ac-mascote--cartao" comportamento="acenar" falar={false} interativo={false} />
         {perfilDepois ? <>
           <header className="ac-cabeca">
             <p className="ac-passo"><span className="px-numero" aria-hidden="true">2</span><span>Passo 2 de 2 · opcional</span></p>

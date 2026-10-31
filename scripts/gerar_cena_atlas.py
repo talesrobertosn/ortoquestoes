@@ -14,6 +14,7 @@ Composição: os 45% da esquerda ficam calmos e mais escuros (o texto da seção
 com as velas (centro) e a vitrine com o esqueleto (terço direito).
 Gera em public/pixel/inicio/: secao-atlas.webp (1440 x 480) e secao-atlas-960.webp (960 x 320).
 Uso: python3 scripts/gerar_cena_atlas.py
+     python3 scripts/gerar_cena_atlas.py --paginas [manha|tarde|noite]   (página Atlas, em public/pixel/paginas/)
 """
 from __future__ import annotations
 

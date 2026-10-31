@@ -295,7 +295,8 @@ export function App() {
   const [primeiroFundo] = fundo.segmentos
 
   const estreita = ['sessao', 'questao'].includes(primeiroFundo ?? '')
-  const lugar = lugarDaRota(fundo)
+  // Sem conta, Minha conta é a tela de entrar, que já tem o próprio cenário: sem o topo nem as portas.
+  const lugar = ((l) => (l === 'quarto' && !sessao ? null : l))(lugarDaRota(fundo))
   // Crachá do perfil no topo, para quem tem conta e ainda tem algo a responder; fora de
   // onde a pessoa está respondendo, pagando ou já editando a conta.
   // Depois de montado, fica até o fim da visita: a última resposta completa o perfil e ele ainda agradece.
