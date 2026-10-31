@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Manual de instruções (stories) · coluna-0295</title>
+<!-- Estilo novo (31/10/2026): "Manual de instruções". A questão vira um manual de montagem: lista de peças (as
+     alternativas), passos numerados (como traçar cada linha e quando é anormal), avisos de "atenção" e a peça certa
+     no fim. Questão real: coluna-0295 (TARO 2026). Explicação do comentário da questão.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-31-manual-chamberlain/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: #16181c;
+  background: #f4f1ea; }
+/* papel do manual: grade fina e borda de impressão */
+section::before { content: ''; position: absolute; inset: 0; opacity: .5;
+  background: linear-gradient(#e6e1d6 1px, transparent 1px) 0 0 / 100% 36px, linear-gradient(90deg, #e6e1d6 1px, transparent 1px) 0 0 / 36px 100%; }
+.folha { position: absolute; left: 60px; right: 60px; top: 230px; bottom: 300px; z-index: 1; display: flex; flex-direction: column; }
+.topo { display: flex; justify-content: space-between; align-items: center; padding-bottom: 18px; border-bottom: 5px solid #16181c; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.pag { display: flex; align-items: center; gap: 10px; font: 800 24px Inter; letter-spacing: .14em; text-transform: uppercase; }
+.pag i { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; font-style: normal; color: #f4f1ea; background: #16181c; letter-spacing: 0; }
+.rotulo { margin-top: 26px; font: 800 24px Inter; letter-spacing: .2em; text-transform: uppercase; color: #c2410c; }
+h1 { margin-top: 8px; font: 800 74px/1.02 Jakarta; letter-spacing: -.035em; }
+h1 em { font-style: normal; color: #c2410c; }
+.lide { margin-top: 14px; font: 500 30px/1.4 Inter; color: #3d4148; }
+
+.quadro { margin-top: 26px; border: 4px solid #16181c; border-radius: 18px; background: #fff; overflow: hidden; }
+.quadro__cab { display: flex; justify-content: space-between; padding: 10px 18px; font: 800 20px Inter; letter-spacing: .14em; text-transform: uppercase; color: #f4f1ea; background: #16181c; }
+.quadro__img { position: relative; height: 430px; overflow: hidden; }
+.quadro__img img { position: absolute; left: 50%; top: 50%; width: 760px; transform: translate(-50%, -50%); clip-path: inset(0 0 9% 0); }
+.oculto { position: absolute; display: grid; place-items: center; border-radius: 8px; font: 800 28px Jakarta; color: #fff; background: #c2410c; box-shadow: 0 0 0 3px #fff, 0 0 0 5px #16181c; }
+
+.enunciado { margin-top: 24px; font: 700 36px/1.3 Jakarta; letter-spacing: -.015em; }
+.pecas { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 22px; }
+.peca { display: grid; grid-template-columns: 70px 1fr; align-items: center; gap: 16px; padding: 14px 18px; border: 3px solid #16181c; border-radius: 14px; background: #fff; }
+.peca b { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 12px; font: 800 38px Jakarta; color: #f4f1ea; background: #16181c; }
+.peca span { font: 800 32px Jakarta; letter-spacing: -.01em; }
+.peca small { display: block; font: 600 20px Inter; letter-spacing: .1em; text-transform: uppercase; color: #6a6e76; }
+.acao { margin-top: 30px; display: flex; align-items: center; gap: 18px; padding: 22px 26px; border-radius: 18px; color: #f4f1ea; background: #16181c; font: 800 34px/1.25 Jakarta; }
+.acao i { flex: none; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; font-style: normal; font-size: 38px; background: #c2410c; }
+.acao small { display: block; margin-top: 4px; font: 500 24px Inter; color: #c9ccd2; }
+
+/* passos */
+.passos { display: grid; gap: 18px; margin-top: 26px; }
+.passo { display: grid; grid-template-columns: 86px 1fr; gap: 20px; padding: 20px 22px; border: 3px solid #16181c; border-radius: 18px; background: #fff; }
+.passo > b { display: grid; place-items: center; width: 80px; height: 80px; border-radius: 50%; font: 800 44px Jakarta; color: #f4f1ea; background: #16181c; }
+.passo h3 { font: 800 38px Jakarta; letter-spacing: -.02em; }
+.trajeto { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.ponto { padding: 6px 14px; border-radius: 999px; font: 700 25px Inter; background: #efe9dc; box-shadow: inset 0 0 0 2px #16181c; }
+.seta { font: 800 30px Jakarta; color: #c2410c; }
+.passo p { margin-top: 10px; font: 500 26px/1.38 Inter; color: #34383f; }
+.passo p b { color: #16181c; }
+.passo--certo { border-color: #c2410c; box-shadow: 0 0 0 4px rgba(194, 65, 12, .25); }
+.passo--certo > b { background: #c2410c; }
+.atencao { display: grid; grid-template-columns: 70px 1fr; gap: 18px; align-items: start; margin-top: 18px; padding: 18px 22px; border-radius: 18px; background: #ffe9a8; border: 3px dashed #16181c; }
+.atencao i { display: grid; place-items: center; width: 62px; height: 56px; font: 800 36px Jakarta; font-style: normal; color: #16181c; clip-path: polygon(50% 0, 100% 100%, 0 100%); background: #16181c; position: relative; }
+.atencao i::after { content: '!'; position: absolute; inset: 10px 0 0; display: grid; place-items: center; color: #ffe9a8; font-size: 30px; }
+.atencao p { font: 500 26px/1.4 Inter; }
+.atencao p b { font-weight: 800; }
+
+/* resposta */
+.resposta { margin-top: 26px; display: grid; grid-template-columns: 170px 1fr; align-items: center; gap: 26px; padding: 26px 28px; border: 5px solid #c2410c; border-radius: 22px; background: #fff; }
+.resposta b { display: grid; place-items: center; width: 160px; height: 160px; border-radius: 24px; font: 800 110px Jakarta; color: #fff; background: #c2410c; }
+.resposta h2 { font: 800 58px/1 Jakarta; letter-spacing: -.03em; }
+.resposta p { margin-top: 10px; font: 600 28px/1.35 Inter; color: #34383f; }
+.tabela { margin-top: 22px; border: 3px solid #16181c; border-radius: 16px; overflow: hidden; background: #fff; }
+.linha { display: grid; grid-template-columns: 250px 1fr; border-top: 2px solid #16181c; }
+.linha:first-child { border-top: 0; }
+.linha span { padding: 14px 18px; font: 600 25px/1.3 Inter; }
+.linha span:first-child { font: 800 26px Jakarta; background: #efe9dc; border-right: 2px solid #16181c; }
+.linha--certa span:first-child { color: #fff; background: #c2410c; }
+.prova { margin-top: 22px; padding: 22px 26px; border-radius: 18px; color: #f4f1ea; background: #16181c; font: 800 34px/1.28 Jakarta; }
+.prova small { display: block; margin-bottom: 6px; font: 800 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: #ffb27a; }
+.site { margin-top: 60px; text-align: center; font: 600 26px/1.4 Inter; color: #3d4148; }
+.site b { display: block; font: 800 36px Jakarta; color: #16181c; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg>
+
+<section id="s1-pecas" data-question="coluna-0295">
+  <div class="folha">
+    <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="pag">Manual · <i>1</i>/3</span></header>
+    <p class="rotulo">Manual de instruções · TARO 2026</p>
+    <h1>Como montar a linha <em>certa</em>.</h1>
+    <p class="lide">Quatro peças parecidas, uma só encaixa. Questão real da prova.</p>
+    <div class="quadro"><div class="quadro__cab"><span>Figura da prova</span><span>rótulos ocultos</span></div>
+      <div class="quadro__img"><img src="../../../../public/imagens/coluna/coluna-0295-1.jpeg" alt="">
+        <span class="oculto" style="left:292px;top:103px;width:165px;height:79px">?</span><span class="oculto" style="left:139px;top:205px;width:186px;height:69px">?</span><span class="oculto" style="left:539px;top:155px;width:217px;height:53px">?</span></div></div>
+    <p class="enunciado">A linha traçada da base do palato duro até a borda posterior do forame magno foi descrita por</p>
+    <div class="pecas">
+      <div class="peca"><b>A</b><span>McRAE<small>peça A</small></span></div>
+      <div class="peca"><b>B</b><span>RANAWAT<small>peça B</small></span></div>
+      <div class="peca"><b>C</b><span>McGREGOR<small>peça C</small></span></div>
+      <div class="peca"><b>D</b><span>CHAMBERLAIN<small>peça D</small></span></div>
+    </div>
+    <p class="acao"><i>?</i><span>Qual peça encaixa?<small>Guarde a sua letra. O passo a passo vem no próximo story.</small></span></p>
+  </div>
+</section>
+
+<section id="s2-passos" data-question="coluna-0295">
+  <div class="folha">
+    <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="pag">Manual · <i>2</i>/3</span></header>
+    <p class="rotulo">Passo a passo · linhas craniocervicais</p>
+    <h1>Onde começa e onde <em>termina</em>.</h1>
+    <p class="lide">As três linhas medem a mesma coisa: se o odontoide subiu demais (invaginação basilar). O que muda são os pontos.</p>
+    <div class="passos">
+      <div class="passo"><b>1</b><div><h3>McGregor</h3><div class="trajeto"><span class="ponto">palato duro</span><span class="seta">→</span><span class="ponto">ponto mais caudal do occipital</span></div>
+        <p>Anormal se o odontoide passa <b>mais de ~4,5 mm</b> acima. A mais <b>fácil</b> de traçar.</p></div></div>
+      <div class="passo"><b>2</b><div><h3>McRae</h3><div class="trajeto"><span class="ponto">básio</span><span class="seta">→</span><span class="ponto">opístio</span></div>
+        <p>É a <b>abertura do forame magno</b>. Não parte do palato. Odontoide acima dela é anormal.</p></div></div>
+      <div class="passo passo--certo"><b>3</b><div><h3>A da questão</h3><div class="trajeto"><span class="ponto">palato duro</span><span class="seta">→</span><span class="ponto">borda posterior do forame magno (opístio)</span></div>
+        <p>Anormal se o odontoide passa <b>mais de ~3 mm</b> acima (conforme a referência). Qual é o nome dela?</p></div></div>
+    </div>
+    <div class="atencao"><i></i><p><b>Atenção:</b> Ranawat <b>não é linha</b>. Mede a distância do <b>pedículo de C2</b> ao <b>eixo do arco de C1</b>, na artrite reumatoide; menos de ~13 mm indica migração do odontoide.</p></div>
+  </div>
+</section>
+
+<section id="s3-resposta" data-question="coluna-0295">
+  <div class="folha">
+    <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="pag">Manual · <i>3</i>/3</span></header>
+    <p class="rotulo">Peça certa · gabarito</p>
+    <div class="resposta"><b>D</b><div><h2>Chamberlain</h2><p>Palato duro até a borda posterior do forame magno (opístio).</p></div></div>
+    <div class="tabela">
+      <div class="linha linha--certa"><span>Chamberlain</span><span>palato duro → opístio</span></div>
+      <div class="linha"><span>McGregor</span><span>palato duro → ponto mais caudal do occipital</span></div>
+      <div class="linha"><span>McRae</span><span>básio → opístio (abertura do forame magno)</span></div>
+      <div class="linha"><span>Ranawat</span><span>pedículo de C2 → eixo de C1 (não é linha)</span></div>
+    </div>
+    <div class="atencao"><i></i><p><b>Erro comum:</b> trocar Chamberlain por McGregor. As duas saem do palato duro; a de Chamberlain termina no <b>forame magno</b>, a de McGregor no <b>occipital</b>.</p></div>
+    <p class="prova"><small>Para a prova</small>Palato duro até a borda posterior do forame magno = Chamberlain.</p>
+    <p class="site">Questões do TARO e do TEOT, comentadas assim.<b>ortoquestoes.com.br</b>o caminho está no nosso perfil</p>
+  </div>
+</section>
+</body></html>
