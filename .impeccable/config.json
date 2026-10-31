@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "border-accent-on-rounded",
+        "value": "*",
+        "files": [
+          "src/estilos/paginas/Biblioteca.css"
+        ],
+        "createdAt": "2026-10-31T20:33:15.337Z",
+        "reason": "Claude: emenda de madeira da placa da estante (arte pixel), não acento de cartão"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "src/estilos/paginas/Biblioteca.css"
+        ],
+        "createdAt": "2026-10-31T20:33:15.352Z",
+        "reason": "Claude: colunas de madeira laterais da estante pintada (border-image da textura), não acento"
+      }
+    ]
+  }
+}
