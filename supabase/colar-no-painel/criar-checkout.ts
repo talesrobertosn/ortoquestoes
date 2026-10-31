@@ -26,13 +26,29 @@ async function banco(caminho, init = {}) {
   return fetch(`${base}/rest/v1/${caminho}`, { ...init, headers: { apikey: service, Authorization: `Bearer ${service}`, "Content-Type": "application/json", Prefer: "return=representation", ...init.headers ?? {} } });
 }
 
+// supabase/functions/_shared/precos.ts
+var PRECOS = {
+  mensal: { meses: 1, centavos: 3990 },
+  semestral: { meses: 6, centavos: 20940 },
+  anual: { meses: 12, centavos: 35880 }
+};
+var PRECOS_ANTIGOS = { mensal: 3990, semestral: 17990, anual: 23990 };
+async function temPrecoAntigo(idUsuario) {
+  const resposta = await banco("rpc/tem_preco_antigo", { method: "POST", body: JSON.stringify({ p_usuario: idUsuario }) });
+  if (!resposta.ok) throw new Error("consulta_preco_antigo_falhou");
+  return await resposta.json() === true;
+}
+async function centavosPara(idUsuario, plano) {
+  return await temPrecoAntigo(idUsuario) ? PRECOS_ANTIGOS[plano] : PRECOS[plano].centavos;
+}
+
 // supabase/functions/criar-checkout/index.ts
 var planos = {
-  mensal: { reason: "OrtoQuestoes Mensal", frequency: 1, transaction_amount: 39.9 },
-  semestral: { reason: "OrtoQuestoes Semestral", frequency: 6, transaction_amount: 179.9 },
-  anual: { reason: "OrtoQuestoes Anual", frequency: 12, transaction_amount: 239.9 }
+  mensal: { reason: "OrtoQuestoes Mensal", frequency: PRECOS.mensal.meses },
+  semestral: { reason: "OrtoQuestoes Semestral", frequency: PRECOS.semestral.meses },
+  anual: { reason: "OrtoQuestoes Anual", frequency: PRECOS.anual.meses }
 };
-var versoesCondicoesAceitas = ["2026-10-16", "2026-10-01", "2026-09-30", "2026-09-28", "2026-09-27"];
+var versoesCondicoesAceitas = ["2026-11-07", "2026-10-16", "2026-10-01", "2026-09-30", "2026-09-28", "2026-09-27"];
 async function contaTesteAtiva(idUsuario) {
   const resposta = await banco(`contas_teste?id_usuario=eq.${encodeURIComponent(idUsuario)}&ativa=eq.true&select=id_usuario`);
   if (!resposta.ok) throw new Error("consulta_conta_teste_falhou");
@@ -69,13 +85,14 @@ Deno.serve(async (req) => {
       if (fimPix - Date.now() > 7 * 864e5) return json({ erro: "A renova\xE7\xE3o abre nos 7 dias antes do fim do seu Pix, e os dias que faltam continuam valendo." }, 409, req);
       inicioCobranca = new Date(fimPix).toISOString();
     }
+    const centavos = await centavosPara(usuario.id, plano);
     const aceite = await banco("aceites_assinatura", {
       method: "POST",
       body: JSON.stringify({
         id_usuario: usuario.id,
         versao: aceite_termos_versao,
         plano,
-        valor_centavos: Math.round(planos[plano].transaction_amount * 100),
+        valor_centavos: centavos,
         periodicidade_meses: planos[plano].frequency
       })
     });
@@ -96,7 +113,7 @@ Deno.serve(async (req) => {
         auto_recurring: {
           frequency: planos[plano].frequency,
           frequency_type: "months",
-          transaction_amount: planos[plano].transaction_amount,
+          transaction_amount: centavos / 100,
           currency_id: "BRL",
           ...inicioCobranca ? { start_date: inicioCobranca } : {}
         }

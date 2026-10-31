@@ -2,12 +2,7 @@ import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
 import { alertarAdministradores, pedirAutomaticoServidor } from '../_shared/email.ts'
 import { sincronizarPix, type PedidoPix } from '../_shared/pix.ts'
-
-const planos = {
-  mensal: { frequency: 1, transaction_amount: 39.90 },
-  semestral: { frequency: 6, transaction_amount: 179.90 },
-  anual: { frequency: 12, transaction_amount: 239.90 },
-} as const
+import { PRECOS, valoresAceitos, type IdPlano } from '../_shared/precos.ts'
 
 async function hmacHex(segredo: string, texto: string) {
   const chave = await crypto.subtle.importKey('raw', new TextEncoder().encode(segredo), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign'])
@@ -19,9 +14,11 @@ function planoDaRecorrencia(autoRecurring: unknown) {
   const recorrencia = autoRecurring as Record<string, unknown>
   if (recorrencia.frequency_type !== 'months' || recorrencia.currency_id !== 'BRL') throw new Error('recorrencia_invalida')
   const frequency = Number(recorrencia.frequency)
-  const transactionAmount = Number(recorrencia.transaction_amount)
-  for (const [plano, configuracao] of Object.entries(planos)) {
-    if (configuracao.frequency === frequency && configuracao.transaction_amount === transactionAmount) return plano
+  const centavos = Math.round(Number(recorrencia.transaction_amount) * 100)
+  // Aceita o preço novo e o antigo: o cartão de quem assinou antes do reajuste continua sendo
+  // cobrado pelo valor da própria assinatura, e cada renovação passa por aqui.
+  for (const [plano, configuracao] of Object.entries(PRECOS) as Array<[IdPlano, (typeof PRECOS)[IdPlano]]>) {
+    if (configuracao.meses === frequency && valoresAceitos(plano).includes(centavos)) return plano
   }
   throw new Error('recorrencia_desconhecida')
 }

@@ -36,12 +36,25 @@ async function consultarMercadoPago(token, caminho) {
 }
 var consultarPagamento = (token, id) => consultarMercadoPago(token, `v1/payments/${encodeURIComponent(id)}`);
 
-// supabase/functions/_shared/pix.ts
-var PLANOS_PIX = {
+// supabase/functions/_shared/precos.ts
+var PRECOS = {
   mensal: { meses: 1, centavos: 3990 },
-  semestral: { meses: 6, centavos: 17990 },
-  anual: { meses: 12, centavos: 23990 }
+  semestral: { meses: 6, centavos: 20940 },
+  anual: { meses: 12, centavos: 35880 }
 };
+var PRECOS_ANTIGOS = { mensal: 3990, semestral: 17990, anual: 23990 };
+var valoresAceitos = (plano) => [PRECOS[plano].centavos, PRECOS_ANTIGOS[plano]];
+async function temPrecoAntigo(idUsuario) {
+  const resposta = await banco("rpc/tem_preco_antigo", { method: "POST", body: JSON.stringify({ p_usuario: idUsuario }) });
+  if (!resposta.ok) throw new Error("consulta_preco_antigo_falhou");
+  return await resposta.json() === true;
+}
+async function centavosPara(idUsuario, plano) {
+  return await temPrecoAntigo(idUsuario) ? PRECOS_ANTIGOS[plano] : PRECOS[plano].centavos;
+}
+
+// supabase/functions/_shared/pix.ts
+var PLANOS_PIX = PRECOS;
 function cpfValido(valor) {
   const cpf = valor.replace(/\D/g, "");
   if (!/^\d{11}$/.test(cpf) || /^(\d)\1{10}$/.test(cpf)) return false;
@@ -55,7 +68,7 @@ function cpfValido(valor) {
 function validarPagamentoPix(pedido, pagamento, ambiente) {
   if (pagamento.external_reference !== `pix:${pedido.id}` || pagamento.payment_method_id !== "pix" || pagamento.currency_id !== "BRL" || Math.round(Number(pagamento.transaction_amount) * 100) !== pedido.valor_centavos || pagamento.live_mode !== (ambiente === "producao") || pedido.pagamento_id && String(pagamento.id) !== pedido.pagamento_id) throw new Error("pagamento_pix_divergente");
   const plano = PLANOS_PIX[pedido.plano];
-  if (!plano || plano.centavos !== pedido.valor_centavos || plano.meses !== pedido.meses) throw new Error("pedido_pix_invalido");
+  if (!plano || !valoresAceitos(pedido.plano).includes(pedido.valor_centavos) || plano.meses !== pedido.meses) throw new Error("pedido_pix_invalido");
 }
 async function sincronizarPix(pagamento) {
   const referencia = String(pagamento.external_reference ?? "");
@@ -88,7 +101,7 @@ async function consultarPixDoUsuario(idUsuario, idPedido) {
 }
 
 // supabase/functions/criar-pix/index.ts
-var VERSOES_CONDICOES_PIX = ["2026-10-16", "2026-10-01"];
+var VERSOES_CONDICOES_PIX = ["2026-11-07", "2026-10-16", "2026-10-01"];
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: cors(req) });
   if (req.method !== "POST") return json({ erro: "metodo_invalido" }, 405, req);
@@ -127,9 +140,10 @@ Deno.serve(async (req) => {
     let [pedido] = await abertos.json();
     if (pedido && pedido.plano !== body.plano) return json({ erro: "J\xE1 existe um Pix pendente para outro plano. Aguarde o vencimento ou conclua aquele pagamento." }, 409, req);
     if (!pedido) {
-      const aceite = await banco("aceites_assinatura", { method: "POST", body: JSON.stringify({ id_usuario: usuario.id, plano: body.plano, versao: body.aceite_termos_versao, valor_centavos: plano.centavos, periodicidade_meses: plano.meses, meio_pagamento: "pix" }) });
+      const centavos = await centavosPara(usuario.id, body.plano);
+      const aceite = await banco("aceites_assinatura", { method: "POST", body: JSON.stringify({ id_usuario: usuario.id, plano: body.plano, versao: body.aceite_termos_versao, valor_centavos: centavos, periodicidade_meses: plano.meses, meio_pagamento: "pix" }) });
       if (!aceite.ok) throw new Error("aceite_pix_falhou");
-      const inserir = await banco("pedidos_pix", { method: "POST", body: JSON.stringify({ id_usuario: usuario.id, plano: body.plano, valor_centavos: plano.centavos, meses: plano.meses }) });
+      const inserir = await banco("pedidos_pix", { method: "POST", body: JSON.stringify({ id_usuario: usuario.id, plano: body.plano, valor_centavos: centavos, meses: plano.meses }) });
       if (!inserir.ok) return json({ erro: "J\xE1 existe um pedido em andamento. Tente novamente para recuperar o Pix." }, 409, req);
       [pedido] = await inserir.json();
     }

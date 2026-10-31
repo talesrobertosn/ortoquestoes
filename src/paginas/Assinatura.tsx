@@ -11,14 +11,15 @@ import { href, navegar } from '../util/rotas'
 import { cpfValido } from '../util/cpf'
 import { linkConta } from '../conta/passagem'
 import { FLASHCARDS_NA_VENDA, recurso, ROTULO_SIMULADOS, LIMITES_HABILITADOS, fraseGratis } from '../config'
-import { MENSAL, real, ECONOMIA_ANUAL, PRECO_DE_ABERTURA } from '../dados/planos'
+import { MENSAL, real, economiaAnual, PRECO_DE_ABERTURA } from '../dados/planos'
+import { usarPrecoAntigo } from '../conta/precoAntigo'
 import { AvisoAbertura } from '../componentes/vendas/AvisoAbertura'
 import { diasAte } from '../dados/ritmos'
 import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia } from '../estado/limiteDiario'
 import { usarAssinante } from '../conta/plano'
 import {
-  AREAS_QUE_CAEM, ASSUNTOS_QUE_MAIS_CAEM, PLANOS_PIPOCA, PLANO_ANUAL, PLANO_MENSAL, PLANO_SEMESTRAL, centavos, dadosDaPessoa, degrauAnual,
+  AREAS_QUE_CAEM, ASSUNTOS_QUE_MAIS_CAEM, planosDaPessoa, centavos, dadosDaPessoa, degrauAnual,
   elogioHeroi, fatiaDasDuasPrimeiras, numero, pct, porDia, porMes, saudacaoAssinante, tituloHeroi, type Plano,
 } from '../dados/vendas'
 import { CartoesPlanos } from '../componentes/vendas/CartoesPlanos'
@@ -59,6 +60,10 @@ function proximoTeot(): { dias: number; data: string } | null {
 
 export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao } = usarConta()
+  // Quem já assinava antes do reajuste vê (e paga) o preço antigo.
+  const { precoAntigo, carregado: precoCarregado } = usarPrecoAntigo(sessao)
+  const { mensal: PLANO_MENSAL, semestral: PLANO_SEMESTRAL, anual: PLANO_ANUAL, pipoca: PLANOS_PIPOCA } = planosDaPessoa(precoAntigo)
+  const ECONOMIA_ANUAL = economiaAnual(PLANO_ANUAL.total)
   const [metricas, definirMetricas] = useState<MetricasConta | null>(null)
   // Até a consulta da conta voltar, vale o que ficou guardado (conta/plano.ts):
   // quem assina não vê a página de vendas piscar antes de "Minha assinatura".
@@ -210,11 +215,11 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
 
   // Quem criou a conta a partir de um plano volta direto para o pagamento dele (uma vez só).
   useEffect(() => {
-    if (reabriu.current || !planoDaUrl || !sessao || !consultou || comAcessoPago || !pagamentosHabilitados) return
+    if (reabriu.current || !planoDaUrl || !sessao || !consultou || !precoCarregado || comAcessoPago || !pagamentosHabilitados) return
     reabriu.current = true
     escolher(planoDaUrl)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [planoDaUrl, sessao, consultou, comAcessoPago])
+  }, [planoDaUrl, sessao, consultou, precoCarregado, comAcessoPago])
 
   const pessoa = useMemo(() => sessao ? dadosDaPessoa(sessao.user.user_metadata, metricas?.respostas_total, metricas?.sequencia, locais) : null, [sessao, metricas, locais])
   const titulo = tituloHeroi(pessoa)
@@ -253,8 +258,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         </aside>
 
         {mostrarPlanos && <div className="vd-heroi__planos" id="planos">
-          {PRECO_DE_ABERTURA && pagamentosHabilitados && <AvisoAbertura />}
-          <CartoesPlanos local="topo" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} />
+          {PRECO_DE_ABERTURA && pagamentosHabilitados && !precoAntigo && <AvisoAbertura />}
+          <CartoesPlanos local="topo" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} precoAntigo={precoAntigo} />
           <ul className="vd-confianca" aria-label="Pagamento e garantia">
             <li className="vd-confianca__pix"><IconePix tamanho={16} /> <span><strong>Pix</strong> à vista, liberado assim que cai</span></li>
             <li><IconeCartao tamanho={16} /> <span><strong>Cartão</strong> com renovação que você desliga</span></li>
@@ -297,7 +302,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             {metricas && ativa && ehPix && pixHabilitado && Number.isFinite(fimAtual) && <RenovacaoPix fim={fimAtual} aoRenovar={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth', block: 'start' })} />}
           </div>
           {metricas && (renovarPix || !ativa) && <div className="vd-ativo__planos" id="planos">
-            <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} />
+            <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} precoAntigo={precoAntigo} />
           </div>}
         </section>
       )}
@@ -372,7 +377,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
       <section className="vd-secao vd-faq" aria-labelledby="vd-titulo-faq">
         <header className="vd-cabeca" data-revelar><p className="vd-sobre">Dúvidas</p><h2 id="vd-titulo-faq">Perguntas frequentes</h2><p>As respostas que decidem a compra, sem letra miúda. O texto completo está nas <a href={href('/condicoes-assinatura')}>Condições da Assinatura</a>.</p></header>
         <div className="vd-faq__lista" data-revelar>
-          <details><summary>Qual plano vale mais a pena?</summary><p>Os três liberam exatamente os mesmos recursos; muda só quanto tempo você paga de uma vez. O mensal sai {real(PLANO_MENSAL.total)} por mês. O semestral, {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). O anual, {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês e {centavos(porDia(PLANO_ANUAL))} por dia: {ECONOMIA_ANUAL === 'metade do preço' ? 'metade do preço do mensal' : `${ECONOMIA_ANUAL} que o mensal`}. {degrauAnual().texto} Se a prova está a mais de seis meses ou você quer o ano todo de estudo, o anual é o que mais rende. Para uma reta final curta, o mensal resolve sem compromisso longo.</p></details>
+          <details><summary>Qual plano vale mais a pena?</summary><p>Os três liberam exatamente os mesmos recursos; muda só quanto tempo você paga de uma vez. O mensal sai {real(PLANO_MENSAL.total)} por mês. O semestral, {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). O anual, {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês e {centavos(porDia(PLANO_ANUAL))} por dia: {ECONOMIA_ANUAL === 'metade do preço' ? 'metade do preço do mensal' : `${ECONOMIA_ANUAL} que o mensal`}. {degrauAnual(PLANO_SEMESTRAL, PLANO_ANUAL).texto} Se a prova está a mais de seis meses ou você quer o ano todo de estudo, o anual é o que mais rende. Para uma reta final curta, o mensal resolve sem compromisso longo.</p></details>
           <details><summary>Posso pagar com Pix?</summary><p>Pode, em qualquer plano. Você escolhe o plano, informa o CPF de quem vai pagar (só para o Mercado Pago gerar o Pix; não fica salvo no seu perfil) e recebe o QR Code e o Pix Copia e Cola. É um pagamento único pelo período inteiro, sem renovação automática. O código vale por 24 horas; se não for pago, expira sem cobrança.</p></details>
           <details><summary>O acesso é liberado na hora?</summary><p>Sim, assim que o Mercado Pago confirma o pagamento. No Pix, a página fica conferindo sozinha e libera o acesso quando o pagamento cai, sem você precisar avisar ninguém. No cartão, o acesso começa com a aprovação da cobrança.</p></details>
           <details><summary>E no cartão? Renova sozinho?</summary><p>Renova na periodicidade escolhida (todo mês, a cada 6 meses ou todo ano), para você não ficar sem acesso na reta final. Desligar a renovação é um botão em Minha conta, a qualquer momento. Os dados do cartão são digitados no Mercado Pago; o Orto Questões não recebe nem guarda o número do cartão.</p></details>
@@ -399,7 +404,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             <p>Mensal, semestral ou anual: os três liberam tudo. Pix ou cartão, e 7 dias para desistir com um botão.</p>
           </div>
         </div>
-        <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} />
+        <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} precoAntigo={precoAntigo} />
         <p className="vd-final__gratis">Ainda não é a hora? Tudo bem. <a href={href(sessao ? '/treinar' : '/conta?modo=criar')}>{sessao ? 'Continue no gratuito' : 'Comece pelo gratuito'}</a>, as questões e os comentários continuam abertos.</p>
       </section>}
 

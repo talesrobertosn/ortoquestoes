@@ -147,7 +147,7 @@ try {
   assert.deepEqual(q.numeros.novasAssinaturas, { hoje: 1, ontem: 0 })
   assert.deepEqual(q.numeros.cancelamentos, { hoje: 1, ontem: 0 })
   assert.deepEqual(q.numeros.pixPendentes, { hoje: 1, ontem: null })
-  assert.deepEqual(q.pixPendentes.map(x => [x.id_usuario, x.plano, x.valor]), [['b', 'semestral', 179.9]], 'Pix pendente sem valor gravado: o preço do plano')
+  assert.deepEqual(q.pixPendentes.map(x => [x.id_usuario, x.plano, x.valor]), [['b', 'semestral', 209.4]], 'Pix pendente sem valor gravado: o preço do plano')
   // Sem a lista de pessoas nem cobranças, nada é inventado: fica "ainda não medido" (null).
   const vazio = m.quadroDoDia({ usuarios: null, sinais: null, serie: null, resumo: null, funil: null, assinaturas: null, cobrancas: null, agora: agora.getTime() })
   assert.deepEqual(vazio.numeros.estudaram, { hoje: null, ontem: null })

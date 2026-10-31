@@ -1,4 +1,4 @@
-import { MENSAL, PLANOS, real } from './planos'
+import { MENSAL, PLANOS, PLANOS_PRECO_ANTIGO, real, type Plano } from './planos'
 import contagem from './incidencia.json'
 import { rotuloEtapa, rotuloProva, lerProvas } from '../conta/perfilEstudo'
 
@@ -12,8 +12,14 @@ import { rotuloEtapa, rotuloProva, lerProvas } from '../conta/perfilEstudo'
  *  - abaixo de 50% de acerto, nenhuma porcentagem (docs/emails/TOM.md).
  */
 
-export type Plano = (typeof PLANOS)[number]
+export type { Plano }
 export const [PLANO_MENSAL, PLANO_SEMESTRAL, PLANO_ANUAL] = PLANOS
+
+/** Os três planos com o preço desta pessoa: o antigo para quem já assinava antes do reajuste. */
+export function planosDaPessoa(precoAntigo: boolean) {
+  const [mensal, semestral, anual] = precoAntigo ? PLANOS_PRECO_ANTIGO : PLANOS
+  return { mensal, semestral, anual, pipoca: [mensal, semestral, anual] as readonly Plano[] }
+}
 
 /** Da pipoca pequena para a grande: a grande é a que salta aos olhos. */
 export const PLANOS_PIPOCA: readonly Plano[] = [PLANO_MENSAL, PLANO_SEMESTRAL, PLANO_ANUAL]
@@ -34,11 +40,11 @@ export const cobranca = (p: Plano) => p.meses === 1 ? 'cobrado todo mês' : `${r
 
 /**
  * O "decoy": do semestral para o anual, quanto a mais se paga e quanto tempo a
- * mais se leva. Com os preços de hoje, R$ 60,00 a mais por 6 meses a mais.
+ * mais se leva. Com os preços de hoje, R$ 149,40 a mais por 6 meses a mais.
  */
-export function degrauAnual() {
-  const diferenca = PLANO_ANUAL.total - PLANO_SEMESTRAL.total
-  const mesesAMais = PLANO_ANUAL.meses - PLANO_SEMESTRAL.meses
+export function degrauAnual(semestral: Plano = PLANO_SEMESTRAL, anual: Plano = PLANO_ANUAL) {
+  const diferenca = anual.total - semestral.total
+  const mesesAMais = anual.meses - semestral.meses
   return { diferenca, mesesAMais, porMesAMais: diferenca / mesesAMais, texto: `Por ${real(diferenca)} a mais que o semestral, ${mesesAMais} meses a mais de estudo.` }
 }
 

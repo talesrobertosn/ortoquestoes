@@ -1,14 +1,16 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
+import { PRECOS, centavosPara } from '../_shared/precos.ts'
 
+// O valor vem de precos.ts: o novo, ou o antigo para quem já pagou antes do reajuste.
 const planos = {
-  mensal: { reason: 'OrtoQuestoes Mensal', frequency: 1, transaction_amount: 39.90 },
-  semestral: { reason: 'OrtoQuestoes Semestral', frequency: 6, transaction_amount: 179.90 },
-  anual: { reason: 'OrtoQuestoes Anual', frequency: 12, transaction_amount: 239.90 },
+  mensal: { reason: 'OrtoQuestoes Mensal', frequency: PRECOS.mensal.meses },
+  semestral: { reason: 'OrtoQuestoes Semestral', frequency: PRECOS.semestral.meses },
+  anual: { reason: 'OrtoQuestoes Anual', frequency: PRECOS.anual.meses },
 } as const
 // A primeira é a vigente; as seguintes continuam aceitas por algum tempo para
 // quem abriu a página de planos antes da atualização. O aceite registra a versão
 // que a pessoa de fato viu.
-const versoesCondicoesAceitas = ['2026-10-16', '2026-10-01', '2026-09-30', '2026-09-28', '2026-09-27']
+const versoesCondicoesAceitas = ['2026-11-07', '2026-10-16', '2026-10-01', '2026-09-30', '2026-09-28', '2026-09-27']
 
 async function contaTesteAtiva(idUsuario: string) {
   const resposta = await banco(`contas_teste?id_usuario=eq.${encodeURIComponent(idUsuario)}&ativa=eq.true&select=id_usuario`)
@@ -57,13 +59,14 @@ Deno.serve(async (req) => {
       inicioCobranca = new Date(fimPix).toISOString()
     }
 
+    const centavos = await centavosPara(usuario.id, plano)
     const aceite = await banco('aceites_assinatura', {
       method: 'POST',
       body: JSON.stringify({
         id_usuario: usuario.id,
         versao: aceite_termos_versao,
         plano,
-        valor_centavos: Math.round(planos[plano].transaction_amount * 100),
+        valor_centavos: centavos,
         periodicidade_meses: planos[plano].frequency,
       }),
     })
@@ -85,7 +88,7 @@ Deno.serve(async (req) => {
         auto_recurring: {
           frequency: planos[plano].frequency,
           frequency_type: 'months',
-          transaction_amount: planos[plano].transaction_amount,
+          transaction_amount: centavos / 100,
           currency_id: 'BRL',
           ...(inicioCobranca ? { start_date: inicioCobranca } : {}),
         },

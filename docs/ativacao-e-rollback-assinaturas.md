@@ -16,7 +16,8 @@ O paywall permanece desligado até autorização específica posterior.
    dos eventos funcionam; verificar o canal de atendimento manual da garantia.
    O reembolso sandbox segue pendente de resposta oficial no chamado `WCS-52311`.
 4. Confirmar preços e periodicidades mensal R$ 39,90/1 mês, semestral
-   R$ 179,90/6 meses e anual R$ 239,90/12 meses, em BRL.
+   R$ 209,40/6 meses e anual R$ 358,80/12 meses, em BRL. Quem já assinava
+   antes do reajuste de 7/11/2026 mantém R$ 179,90 e R$ 239,90.
 5. Fazer revisão de autorização administrativa: RPCs disponíveis somente a
    `authenticated`, com verificação de UUID em `administradores`; usuário comum
    recebe acesso negado. A listagem não expõe payloads de webhook.

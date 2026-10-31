@@ -83,7 +83,10 @@ for trecho in (
     "reason: planos[plano].reason",
     "frequency: planos[plano].frequency",
     "frequency_type: 'months'",
-    "transaction_amount: planos[plano].transaction_amount",
+    "transaction_amount: centavos / 100",
+    # Preço novo ou o antigo de quem já assinava (supabase/functions/_shared/precos.ts).
+    "const centavos = await centavosPara(usuario.id, plano)",
+    "valor_centavos: centavos,",
     "currency_id: 'BRL'",
     "external_reference: usuario.id",
     "ambiente === 'teste' ? Deno.env.get('MERCADO_PAGO_PAYER_EMAIL_TESTE') : usuario.email",
@@ -129,6 +132,8 @@ assert "&& origem && origensSandbox.has(origem)" in HTTP_COMPARTILHADO
 
 for trecho in (
     "planoDaRecorrencia(preapproval.auto_recurring)",
+    # O cartão de quem assinou antes do reajuste segue cobrado pelo valor antigo.
+    "valoresAceitos(plano).includes(centavos)",
     "recorrencia_desconhecida",
     "subscription_authorized_payment",
     "subscription_preapproval",
@@ -199,9 +204,9 @@ for trecho in ("paywall_ativo=false", "VITE_LIMITES_HABILITADOS=false", "WCS-523
 for trecho in ("VITE_LIMITES_HABILITADOS", "acesso gratuito está sem limite diário nesta fase", "atendimento manual"):
     assert trecho in PAGINA_ASSINATURA, f"Informação pré-compra ausente: {trecho}"
 assert "reembolso é integral e automático" not in PAGINA_ASSINATURA
-for trecho in ("A assinatura é opcional", "R$ 39,90", "R$ 179,90", "R$ 239,90", "garantia de 7 dias", "Condições da Assinatura", "valor proporcional ao período não usufruído", "Resumo em linguagem simples", "não tem valor jurídico próprio"):
+for trecho in ("A assinatura é opcional", "R$ 39,90", "R$ 209,40", "R$ 358,80", "antes de 7 de novembro de 2026", "garantia de 7 dias", "Condições da Assinatura", "valor proporcional ao período não usufruído", "Resumo em linguagem simples", "não tem valor jurídico próprio"):
     assert trecho in TERMOS, f"Termos de assinatura incompletos: {trecho}"
-for trecho in ("R$ 39,90", "R$ 179,90", "R$ 239,90", "Mercado Pago", "não recebe nem guarda", "não há devolução proporcional dos meses restantes", "artigo 49", "Descontinuidade do serviço ou da oferta paga", "restituição proporcional", "pro rata", "em até 30 dias"):
+for trecho in ("R$ 39,90", "R$ 209,40", "R$ 358,80", "R$ 179,90", "R$ 239,90", "Reajuste de 7 de novembro de 2026", "Mercado Pago", "não recebe nem guarda", "não há devolução proporcional dos meses restantes", "artigo 49", "Descontinuidade do serviço ou da oferta paga", "restituição proporcional", "pro rata", "em até 30 dias"):
     assert trecho in CONDICOES_ASSINATURA, f"Condições específicas incompletas: {trecho}"
 for trecho in ("pedir(VERSAO_CONDICOES_ASSINATURA)", "aceite_termos_versao: versao", "aceite_confirmado: true", "Continuar para Mercado Pago"):
     assert trecho in PAGINA_ASSINATURA, f"Aceite pré-checkout ausente: {trecho}"
