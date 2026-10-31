@@ -171,7 +171,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 716 | Tabelas soltas viram !tabela (68 em 15 resumos) e 26 figuras do Callaghan nos resumos | leitor com negrito nas células | os resumos do Rockwood de tornozelo e fise distal ficaram como estavam (proveniência revisada) |
 | 717 | ATQ parte 6: anatomia e acessos (resumo novo `callaghan-anatomia-acessos`) | 45 KB, Callaghan caps. 2, 3, 6, 7 e 8, com 3 figuras novas recortadas | 21 simulados, 4 deles com figura do livro |
 | 719 | Malformações congênitas da mão refeitas (prioridade TEOT/TARO) | 61 KB, Green 7 caps. 35 a 38 e Tachdjian cap. 12, 4 figuras do Green | 54 comentários no jeito novo (44 de TARO, TEOT e outras provas, 10 simulados) |
-| (este PR) | Fise proximal e tuberosidade da tíbia (Rockwood crianças cap. 27, com o COZEN do cap. 29), refação TEOT/TARO | 21 para 45 KB, 4 figuras | 42 comentários e 5 simulados novos (pediatria-1427 a 1431) |
+| 723 | Fise proximal e tuberosidade da tíbia (Rockwood crianças cap. 27, com o COZEN do cap. 29), refação TEOT/TARO | 21 para 45 KB, 4 figuras | 42 comentários e 5 simulados novos (pediatria-1427 a 1431) |
+| (este PR) | Fraturas do colo do fêmur e luxação traumática do quadril na criança (Rockwood crianças cap. 24), refação TEOT/TARO | reescrito para 45 KB, 4 figuras | 31 comentários reescritos e 4 simulados novos (pediatria-1432 a 1435) |
 
 ## Próximo
 
