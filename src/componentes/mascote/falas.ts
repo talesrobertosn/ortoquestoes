@@ -411,4 +411,25 @@ export const FALAS: Record<IdComportamento, string[]> = {
     'Missão de hoje concluída com sucesso.',
     'Que dia bom de estudo. Parabéns.',
   ],
+  // Tela de entrar (31/10/2026): boas-vindas acolhedoras.
+  acesso_jaleco: [
+    'Que bom ter você aqui. Vamos estudar juntos?',
+    'Seja bem-vindo. O plantão de estudo começa agora.',
+    'Pode entrar. Separei um lugar para você.',
+    'Bem-vindo de volta. Senti falta das suas revisões.',
+    'Jaleco vestido, livro na mão. Só falta você.',
+    'Um passo de cada vez, e cada passo conta.',
+    'Entre com calma. Aqui a gente aprende sem pressa.',
+    'Que alegria te ver. Hoje vai ser um bom dia de estudo.',
+  ],
+  acesso_social: [
+    'Seja muito bem-vindo. É uma honra estudar com você.',
+    'Entre, por favor. Hoje o estudo é de gala.',
+    'Bem-vindo de volta. Sua cadeira continua reservada.',
+    'Me arrumei para te receber. Vamos começar?',
+    'Que bom te ver por aqui. O livro já está aberto.',
+    'Pode entrar com calma. Cada questão é um degrau.',
+    'Obrigado por voltar. A sua constância me inspira.',
+    'Boas-vindas! O título de especialista começa assim.',
+  ],
 }
