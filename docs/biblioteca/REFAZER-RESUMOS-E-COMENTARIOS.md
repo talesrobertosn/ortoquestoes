@@ -38,7 +38,7 @@ Não publique enquanto aparecer "CURTO".
 
 ## Ordem de prioridade (Tales, 31/10/2026)
 
-**Foco principal nas questões do TEOT e do TARO, depois o resto**, até acabar todos os capítulos. Escolha o próximo tema pelo número de questões TEOT/TARO ligadas ao resumo com comentário fraco; os simulados do Fellowship do quadril (bloco 5 do Callaghan) ficam para depois.
+**Foco principal nas questões do TEOT e do TARO, depois o resto**, até acabar todos os capítulos. Escolha o próximo tema pelo número de questões TEOT/TARO ligadas ao resumo com comentário fraco; os simulados do Fellowship do quadril (bloco 5 do Callaghan) ficam para depois. A fila e o placar saem de `python3 scripts/biblioteca/fila_teot_taro.py`; o roteiro completo está em [MEGA-PROMPT-TEOT-TARO.md](../prompts/MEGA-PROMPT-TEOT-TARO.md) e o andamento em [RELATORIO-TEOT-TARO.md](RELATORIO-TEOT-TARO.md).
 
 ## O que refazer, tema por tema
 
