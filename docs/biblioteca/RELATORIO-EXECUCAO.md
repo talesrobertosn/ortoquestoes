@@ -135,6 +135,16 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 
 **No ciclo 20.** Os comentários voltaram ao tamanho pedido (mediana de cerca de 2,7 mil caracteres). Um conversor por lote confere o gabarito contra o acervo e recusa travessão e o fecho de simulado nas oficiais. Ficaram pendentes a classificação de TOMITA (o Campbell só traz a figura) e uma questão sem gabarito. No Windows, `aplicar_lote.py` precisa de `PYTHONUTF8=1`.
 
+## Refação no MacBook (30 e 31/10/2026)
+
+Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do subtema reescritos em miniaula (4,5 mil caracteres ou mais), na ordem de `REFAZER-RESUMOS-E-COMENTARIOS.md`.
+
+| PR | Tema | Resumo | Comentários |
+| --- | --- | --- | --- |
+| 700 | Bíceps distal e cabeça longa | 79 KB, 7 figuras (Campbell e Green 7ª) | 38 |
+| 701 | LCA | 52 KB, 3 figuras | 40 |
+| (este) | Metástases ósseas e fratura patológica | 47 KB, Tabela 27.1 (MIRELS) | 61, com os simulados antigos 0370 a 0383 |
+
 ## Melhorias de sistema feitas no caminho
 
 | PR | Melhoria |
@@ -146,6 +156,7 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 | 656 | `fila_editorial.py` preserva os comentários que já citam um resumo da Biblioteca. |
 | 660 | `scripts/publicar_pr.sh` só mescla com os checks verdes. |
 | 668 | `scripts/pos_aplicar.sh`: regenera índices, Biblioteca e amostras e roda os testes que mais quebram. |
+| 700 | `trava_profundidade.py` (recusa resumo menor que 45 KB ou comentário menor que 4,5 mil), `dossie_tema.py` (todas as questões do subtema com páginas do livro) e `lote_comentarios.py` (lote em .py, medido antes de aplicar). |
 
 ## Próximo
 

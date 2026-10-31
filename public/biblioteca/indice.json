@@ -842,15 +842,15 @@
   },
   {
    "id": "campbell14-metastases-osseas",
-   "versao": 1,
-   "titulo": "Metástases ósseas",
+   "versao": 2,
+   "titulo": "Metástases ósseas e fratura patológica",
    "especialidade": "tumores",
    "livro": "Campbell's Operative Orthopaedics",
-   "edicao": "14ª edição (2021)",
-   "capitulo": "Capítulo 27 · Tumores malignos do osso (carcinoma metastático)",
-   "resumo": "Carcinoma metastático como a malignidade mais comum do ortopedista; primários em geral (mama, próstata) e na origem desconhecida (pulmão, rim); propedêutica antes da biópsia; padrões blástico, lítico e misto; metástase distal ao cotovelo ou joelho (pulmão); tratamento multimodal, rim radiorresistente e ressecção ampla da lesão isolada; fratura iminente e escala de MIRELS.",
+   "edicao": "14ª edição (2021), com o Rockwood and Green's Fractures in Adults, 10ª edição (2025)",
+   "capitulo": "Capítulo 27 · Tumores malignos do osso (carcinoma metastático), com os capítulos 24, 26, 37 e 42 e o capítulo 25 do Rockwood (fraturas patológicas)",
+   "resumo": "Carcinoma metastático é a malignidade mais tratada pelo ortopedista; acima de 40 anos, lesão agressiva nova é metástase ou mieloma; primários mais comuns mama e próstata, mas na origem desconhecida pulmão e rim; blásticas (mama, próstata), líticas (rim, tireoide), mistas (pulmão); distal ao cotovelo ou joelho, pulmão; investigar antes de biopsiar (85% acham o primário); rim radiorresistente e ressecção ampla da lesão renal isolada; fratura iminente (2,5 cm, 50% da cortical, trocânter menor, HARRINGTON) e MIRELS (8 ou mais); coluna torácica (70%) e corpo vertebral.",
    "acesso": "gratis",
-   "minutos": 3,
+   "minutos": 30,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -858,44 +858,93 @@
      "radar": "fundamento"
     },
     {
-     "id": "origem-e-diagnostico",
-     "titulo": "Origem e diagnóstico",
+     "id": "o-tamanho-do-problema-e-a-regra-dos-40-anos",
+     "titulo": "O tamanho do problema e a regra dos 40 anos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "de-onde-vem-as-metastases",
+     "titulo": "De onde vêm as metástases",
      "radar": "confirmado"
     },
     {
-     "id": "o-aspecto-radiografico-e-o-local",
-     "titulo": "O aspecto radiográfico e o local",
+     "id": "como-a-metastase-chega-ao-osso",
+     "titulo": "Como a metástase chega ao osso",
      "radar": "confirmado"
     },
     {
-     "id": "o-tratamento",
-     "titulo": "O tratamento",
+     "id": "o-aspecto-na-imagem",
+     "titulo": "O aspecto na imagem",
      "radar": "confirmado"
     },
     {
-     "id": "a-fratura-iminente-e-mirels",
-     "titulo": "A fratura iminente e MIRELS",
+     "id": "a-investigacao-antes-da-biopsia",
+     "titulo": "A investigação antes da biópsia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-tratamento-e-de-equipe",
+     "titulo": "O tratamento é de equipe",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-fratura-iminente-e-a-escala-de-mirels",
+     "titulo": "A fratura iminente e a escala de MIRELS",
+     "radar": "confirmado"
+    },
+    {
+     "id": "como-fixar-estavel-no-dia-seguinte-duravel-por-a",
+     "titulo": "Como fixar: estável no dia seguinte, durável por anos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "membro-superior-e-pelve",
+     "titulo": "Membro superior e pelve",
+     "radar": "fundamento"
+    },
+    {
+     "id": "procedimentos-menos-invasivos",
+     "titulo": "Procedimentos menos invasivos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "prognostico-e-a-metastase-renal-isolada",
+     "titulo": "Prognóstico e a metástase renal isolada",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-coluna",
+     "titulo": "A coluna",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-vizinhos-metastases-de-tumores-primarios",
+     "titulo": "Os vizinhos: metástases de tumores primários",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revisao-em-uma-pagina",
+     "titulo": "Revisão em uma página",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
-    "tumores-0092",
     "tumores-0086",
+    "tumores-0092",
     "tumores-0187",
     "tumores-0282",
-    "tumores-0078",
-    "tumores-0270",
-    "tumores-0021",
+    "tumores-0354",
+    "tumores-0358",
     "tumores-0051",
     "tumores-0130",
+    "tumores-0270",
+    "tumores-0355",
     "tumores-0072",
-    "tumores-0192",
-    "tumores-0095",
-    "tumores-0101",
-    "tumores-0243",
     "tumores-0201",
-    "tumores-0129",
-    "tumores-0064",
+    "tumores-0021",
+    "tumores-0192",
+    "tumores-0078",
+    "tumores-0341",
     "tumores-0135",
     "tumores-0088",
     "tumores-0109",
@@ -903,15 +952,47 @@
     "tumores-0202",
     "tumores-0325",
     "tumores-0293",
-    "tumores-0264"
+    "tumores-0264",
+    "tumores-0338",
+    "tumores-0064",
+    "tumores-0129",
+    "tumores-0357",
+    "tumores-0243",
+    "tumores-0095",
+    "tumores-0101",
+    "tumores-0063",
+    "tumores-0352",
+    "tumores-0186",
+    "tumores-0169"
    ],
    "treino": [
     "tumores-0393",
-    "tumores-0395",
+    "tumores-0373",
     "tumores-0394",
-    "tumores-0396",
+    "tumores-0374",
+    "tumores-0375",
+    "tumores-0395",
+    "tumores-0378",
     "tumores-0397",
-    "tumores-0398"
+    "tumores-0398",
+    "tumores-0362",
+    "tumores-0364",
+    "tumores-0365",
+    "tumores-0366",
+    "tumores-0367",
+    "tumores-0368",
+    "tumores-0369",
+    "tumores-0370",
+    "tumores-0371",
+    "tumores-0372",
+    "tumores-0376",
+    "tumores-0379",
+    "tumores-0380",
+    "tumores-0382",
+    "tumores-0383",
+    "tumores-0396",
+    "tumores-0381",
+    "tumores-0384"
    ],
    "subtemas": [
     "Metástases ósseas"
