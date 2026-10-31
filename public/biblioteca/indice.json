@@ -2,6 +2,163 @@
  "geradoEm": "2026-10-31",
  "capitulos": [
   {
+   "id": "callaghan-metais-cimento-tribologia",
+   "versao": 1,
+   "titulo": "Metais, cimento ósseo, tribologia e metal contra metal na artroplastia do quadril",
+   "especialidade": "quadril",
+   "livro": "The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)",
+   "edicao": "Edição de 2017",
+   "capitulo": "Capítulos 15 (Basic Science of Metals), 16 (Basic Science of Bone Cement), 17 (Tribology) e 20 (Metal-on-Metal Articulations), com trechos dos capítulos 1 e 12",
+   "resumo": "Estruturas cristalinas (CFC no 316L, CCC no titânio beta, HC no titânio alfa e no cobalto) e endurecimento por bloqueio das discordâncias (intersticial, trabalho a frio do 316L, grão fino, precipitação); escoamento a 0,2%; módulo pouco sensível a defeitos; fadiga de alto ciclo gasta na iniciação, 2 a 5 milhões de ciclos por ano; Ti-6Al-4V bimodal abaixo de cerca de 930 °C, módulo metade do cobalto, sensível ao entalhe; titânio puro (graus pelo oxigênio, alfa-case, só revestimento); cobalto encrua e é difícil de usinar; filme passivo de 2 a 10 nm; corrosão por fretting no cone com pH abaixo de 1; Co-Cr como fundido (M23C6, carbono até 0,35%), homogeneização abaixo e solubilização acima da eutética, HIP e forjado; PMMA é rejunte, pó pré-polimerizado contra retração e calor; 2 a 3 mm de esponjoso, pistola retrógrada, pressão acima de 5 kPa no acetábulo; haste polida (force-closed) contra pré-revestida (24% de soltura em 8 anos); retração do cimento a vácuo para a haste; antibiótico hidrofílico pela lei de Fick; registros a favor do cimento acima de 60 a 65 anos; tribossistema, 90% do atrito vira calor, regimes de lubrificação, quatro mecanismos de desgaste, fluência não é desgaste; tropeço de 8 vezes o peso; Archard e 43% da variância; faixa no modo 2 de McKELLOP; camada nanocristalina e tribofilme no metal contra metal; McKEE, RING e a geometria polar; BHR, ASR e pseudotumor por carga na borda; cobaltismo acima de 60 µg/L.",
+   "acesso": "gratis",
+   "minutos": 50,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-estrutura-dos-metais-e-o-endurecimento",
+     "titulo": "A estrutura dos metais e o endurecimento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-propriedades-mecanicas-e-a-fadiga",
+     "titulo": "As propriedades mecânicas e a fadiga",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-ligas-historia-aco-inoxidavel-e-cobalto",
+     "titulo": "As ligas: história, aço inoxidável e cobalto",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-titanio",
+     "titulo": "O titânio",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-filme-passivo-e-a-corrosao-mecanicamente-assis",
+     "titulo": "O filme passivo e a corrosão mecanicamente assistida",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-cobalto-cromo-fundido-e-os-seus-tratamentos",
+     "titulo": "O cobalto-cromo fundido e os seus tratamentos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-cimento-osseo-o-material",
+     "titulo": "O cimento ósseo: o material",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-tecnica-de-cimentacao-no-femur-e-no-acetabulo",
+     "titulo": "A técnica de cimentação no fêmur e no acetábulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "haste-polida-contra-haste-rugosa",
+     "titulo": "Haste polida contra haste rugosa",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-interface-retracao-e-porosidade",
+     "titulo": "A interface: retração e porosidade",
+     "radar": "fundamento"
+    },
+    {
+     "id": "antibiotico-no-cimento-e-o-que-dizem-os-registro",
+     "titulo": "Antibiótico no cimento e o que dizem os registros",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-tribossistema-e-o-atrito",
+     "titulo": "O tribossistema e o atrito",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-lubrificacao-e-os-mecanismos-de-desgaste",
+     "titulo": "A lubrificação e os mecanismos de desgaste",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-entradas-do-sistema-atividade-forcas-e-archar",
+     "titulo": "As entradas do sistema: atividade, forças e ARCHARD",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-mecanismos-em-cada-par",
+     "titulo": "Os mecanismos em cada par",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-metal-contra-metal-historia-e-geometria",
+     "titulo": "O metal contra metal: história e geometria",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-recapeamento-os-registros-e-as-reacoes-ao-meta",
+     "titulo": "O recapeamento, os registros e as reações ao metal",
+     "radar": "fundamento"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [],
+   "treino": [
+    "quadril-0468",
+    "quadril-0470",
+    "quadril-0467",
+    "quadril-0475",
+    "quadril-0469",
+    "quadril-0473",
+    "quadril-0442",
+    "quadril-0471",
+    "quadril-0472",
+    "quadril-0474",
+    "quadril-0558",
+    "quadril-0578",
+    "quadril-0579",
+    "quadril-0443",
+    "quadril-0541",
+    "quadril-0542",
+    "quadril-0549",
+    "quadril-0543",
+    "quadril-0544",
+    "quadril-0545",
+    "quadril-0546",
+    "quadril-0547",
+    "quadril-0548",
+    "quadril-0550",
+    "quadril-0551",
+    "quadril-0322",
+    "quadril-0552",
+    "quadril-0553",
+    "quadril-0581",
+    "quadril-0556",
+    "quadril-0557",
+    "quadril-0582",
+    "quadril-0554",
+    "quadril-0555",
+    "quadril-0577",
+    "quadril-0580",
+    "quadril-0348",
+    "quadril-0583",
+    "quadril-0584",
+    "quadril-0585",
+    "quadril-0447"
+   ],
+   "subtemas": [
+    "Artroplastia total: componentes e fixação",
+    "Soltura, osteólise e revisão"
+   ]
+  },
+  {
    "id": "callaghan-polietileno-ceramica",
    "versao": 1,
    "titulo": "Superfícies de apoio da artroplastia do quadril: polietileno e cerâmica",
