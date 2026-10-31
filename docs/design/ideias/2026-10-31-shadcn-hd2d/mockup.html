@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orto Questões · Início (mockup)</title>
+<style>
+@font-face { font-family: Inter; src: url(../../../../marketing/instagram/fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Pixel; src: url(../../../../marketing/instagram/fontes/jersey-10-latin-400-normal.woff2) format('woff2'); }
+:root {
+  --canvas: #f5f5f5; --paper: #fff; --alt: #fafafa; --ink: #0a0a0a; --ink2: #171717; --mid: #737373; --hair: #e5e5e5; --ember: #e7000b;
+  --sh: 0 0 0 1px rgba(23,23,23,.05), 0 1px 3px rgba(0,0,0,.1), 0 1px 2px -1px rgba(0,0,0,.1);
+  --r-card: 24px; --r-pill: 18px; --r-nest: 10px;
+}
+:root[data-tema="escuro"] { --canvas: #0a0a0a; --paper: #141414; --alt: #111; --ink: #fafafa; --ink2: #f5f5f5; --mid: #a3a3a3; --hair: #262626;
+  --sh: 0 0 0 1px rgba(255,255,255,.04), 0 1px 3px rgba(0,0,0,.6); }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--canvas); color: var(--ink); font: 400 14px/1.43 Inter, system-ui, sans-serif; font-feature-settings: "ss01", "cv11"; -webkit-font-smoothing: antialiased; }
+img.px { image-rendering: pixelated; }
+
+/* cabeçalho */
+.top { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: 24px; height: 60px; padding: 0 32px; background: color-mix(in srgb, var(--canvas) 85%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--hair); }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: -.02em; font-size: 15px; }
+.logo i { width: 26px; height: 26px; border-radius: 8px; background: var(--ink); position: relative; }
+.logo i::after { content: ''; position: absolute; left: 6px; right: 6px; top: 11px; height: 4px; border-radius: 2px; background: #f4cf7c; }
+.nav { display: flex; gap: 4px; }
+.nav a { padding: 6px 12px; border-radius: var(--r-pill); color: var(--mid); text-decoration: none; font-weight: 500; }
+.nav a.on { background: var(--paper); color: var(--ink); box-shadow: var(--sh); }
+.busca { margin-left: auto; display: flex; align-items: center; gap: 8px; width: 300px; white-space: nowrap; height: 36px; padding: 0 12px; border-radius: var(--r-pill); background: var(--paper); box-shadow: inset 0 0 0 1px var(--hair); color: var(--mid); }
+.busca kbd { margin-left: auto; padding: 1px 6px; border-radius: 6px; font: 500 12px Inter; background: var(--canvas); color: var(--mid); }
+.av { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--paper); font-weight: 600; font-size: 13px; }
+
+.pagina { max-width: 1280px; margin: 0 auto; padding: 28px 32px 64px; }
+.cab { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 20px; }
+.cab small { display: block; font-size: 12px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; color: var(--mid); }
+.cab h1 { margin-top: 6px; font-size: 48px; line-height: 1.1; font-weight: 600; letter-spacing: -.05em; text-wrap: balance; }
+.acoes { display: flex; gap: 8px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px; border-radius: var(--r-pill); border: 0; font: 500 14px Inter; text-decoration: none; cursor: pointer; white-space: nowrap; }
+.btn--p { background: var(--ink); color: var(--paper); }
+.btn--s { background: var(--paper); color: var(--ink); box-shadow: inset 0 0 0 1px var(--hair); }
+.btn--g { background: var(--canvas); color: var(--ink); }
+.btn--blk { width: 100%; justify-content: center; }
+
+/* grade bento */
+.grade { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.card { position: relative; background: var(--paper); border-radius: var(--r-card); box-shadow: var(--sh); padding: 20px; overflow: hidden; }
+.card h2 { font-size: 18px; line-height: 1.33; font-weight: 600; letter-spacing: -.02em; }
+.card .sub { margin-top: 2px; color: var(--mid); }
+.rot { font-size: 12px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; color: var(--mid); }
+.num { font-size: 36px; line-height: 1.11; font-weight: 600; letter-spacing: -.035em; font-variant-numeric: tabular-nums; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; background: var(--canvas); color: var(--ink2); }
+.pill--solid { background: var(--ink2); color: var(--paper); }
+.pill i { width: 6px; height: 6px; border-radius: 50%; background: #f59e0b; }
+
+/* 1. a cena: a única coisa colorida grande da página */
+.cena { grid-column: span 8; padding: 0; min-height: 360px; display: grid; }
+.cena img.fundo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 60%; }
+.cena .mascote { position: absolute; right: 22%; bottom: 14%; width: 92px; filter: sepia(.28) saturate(1.15) brightness(.98) drop-shadow(-4px 2px 0 rgba(60,20,0,.25)); }
+.cena .balao { position: absolute; right: 8%; bottom: calc(14% + 150px); max-width: 220px; padding: 8px 12px; border-radius: 14px 14px 4px 14px; background: var(--paper); color: var(--ink); font-weight: 500; box-shadow: var(--sh); }
+.cena .vidro { position: relative; align-self: end; margin: 16px; max-width: 360px; padding: 16px 18px; border-radius: 18px; background: rgba(255,255,255,.82); backdrop-filter: blur(10px); color: #0a0a0a; box-shadow: 0 0 0 1px rgba(255,255,255,.6), 0 8px 24px rgba(0,0,0,.15); }
+:root[data-tema="escuro"] .cena .vidro { background: rgba(20,20,20,.78); color: #fafafa; box-shadow: 0 0 0 1px rgba(255,255,255,.08); }
+.cena .vidro .rot { color: inherit; opacity: .6; }
+.cena .vidro p.t { margin-top: 4px; font-size: 18px; font-weight: 600; letter-spacing: -.02em; }
+.cena .vidro .barra { margin: 12px 0 14px; height: 6px; border-radius: 99px; background: rgba(127,127,127,.25); overflow: hidden; }
+.cena .vidro .barra span { display: block; height: 100%; width: 64%; border-radius: inherit; background: currentColor; }
+.cena .vidro .lin { display: flex; justify-content: space-between; color: inherit; opacity: .7; font-size: 13px; margin-top: -6px; margin-bottom: 12px; }
+.cena .hora { position: absolute; top: 16px; left: 16px; }
+.cena .hora .pill { background: rgba(255,255,255,.85); }
+
+/* 2. sequência: o fogo pixel é a cor do cartão */
+.seq { grid-column: span 4; display: flex; flex-direction: column; }
+.seq .linha { display: flex; align-items: flex-end; gap: 14px; margin-top: 14px; }
+.seq img.fogo { width: 60px; }
+.seq .dias { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-top: 18px; }
+.seq .dia { display: grid; justify-items: center; gap: 6px; font-size: 12px; color: var(--mid); }
+.seq .dia b { width: 100%; aspect-ratio: 1; border-radius: var(--r-nest); background: var(--canvas); }
+.seq .dia.ok b { background: var(--ink2); }
+.seq .dia.hoje b { background: transparent; box-shadow: inset 0 0 0 1.5px var(--ink2); }
+.seq .meta { margin-top: auto; padding-top: 16px; }
+.seq .meta .barra { height: 6px; border-radius: 99px; background: var(--canvas); margin-top: 8px; overflow: hidden; }
+.seq .meta .barra span { display: block; height: 100%; width: 40%; background: var(--ink2); border-radius: inherit; }
+
+/* 3. atalhos (como a navegação do exemplo) */
+.atalhos { grid-column: span 4; padding: 12px; align-self: start; }
+.atalhos .rot { padding: 8px 10px 6px; }
+.atalhos a { display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 12px; color: var(--ink); text-decoration: none; font-weight: 500; }
+.atalhos a:hover, .atalhos a.on { background: var(--canvas); }
+.atalhos svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.atalhos a small { margin-left: auto; color: var(--mid); font-weight: 400; }
+.atalhos a .pill { margin-left: auto; }
+
+/* 4. desempenho por área: barras monocromáticas */
+.areas { grid-column: span 5; }
+.barras { display: flex; align-items: flex-end; gap: 12px; height: 180px; margin-top: 18px; }
+.barras div { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 8px; height: 100%; font-size: 12px; color: var(--mid); }
+.barras div i { display: block; width: 100%; flex: 1; display: flex; align-items: flex-end; }
+.barras div i b { width: 100%; }
+.barras div b { display: block; width: 100%; border-radius: 14px; background: var(--ink2); }
+.barras > div:nth-child(1) b { opacity: .18; } .barras > div:nth-child(2) b { opacity: .5; } .barras > div:nth-child(3) b { opacity: .7; } .barras > div:nth-child(4) b { opacity: .85; } .barras > div:nth-child(5) b { opacity: .4; } .barras > div:nth-child(6) b { opacity: .95; }
+.dupla { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 18px 0 14px; }
+.dupla div { padding: 12px 14px; border-radius: 14px; background: var(--alt); box-shadow: inset 0 0 0 1px var(--hair); }
+.dupla b { display: block; margin-top: 2px; font-size: 16px; font-weight: 600; letter-spacing: -.01em; }
+.dupla span { color: var(--mid); font-size: 13px; }
+
+/* 5. caminho até a prova */
+.prova { grid-column: span 3; display: flex; flex-direction: column; }
+.prova .num { font-size: 48px; letter-spacing: -.05em; margin-top: 10px; }
+.prova .linha { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--hair); color: var(--mid); }
+.prova .linha b { color: var(--ink); font-weight: 500; }
+.prova .lst { margin: 14px 0 16px; }
+.prova .btn { margin-top: auto; }
+
+/* 6. lugares (as cenas pintadas viram miniaturas, como as imagens de produto do exemplo) */
+.lugares { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 0; background: none; box-shadow: none; overflow: visible; }
+.lugar { display: grid; gap: 0; padding: 8px; border-radius: var(--r-card); background: var(--paper); box-shadow: var(--sh); text-decoration: none; color: var(--ink); }
+.lugar .img { position: relative; aspect-ratio: 16/9; border-radius: 16px; overflow: hidden; background: #111; }
+.lugar .img img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
+.lugar .txt { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 8px 6px; }
+.lugar b { font-weight: 600; letter-spacing: -.01em; }
+.lugar small { display: block; color: var(--mid); }
+.lugar .seta { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--canvas); flex: none; }
+
+/* 7. ranking e conta */
+.rank { grid-column: span 4; }
+.rank .eu { display: flex; align-items: center; justify-content: space-between; margin: 14px 0; padding: 14px; border-radius: 16px; background: var(--alt); box-shadow: inset 0 0 0 1px var(--hair); }
+.rank ol { list-style: none; }
+.rank li { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--hair); }
+.rank li:last-child { border: 0; }
+.rank li .p { width: 22px; color: var(--mid); font-variant-numeric: tabular-nums; }
+.rank li .ini { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--canvas); font-size: 11px; font-weight: 600; }
+.rank li .q { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 500; }
+.continuar { grid-column: span 4; }
+.continuar .item { display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--hair); }
+.continuar .item:last-child { border: 0; padding-bottom: 0; }
+.continuar .ic { width: 44px; height: 44px; border-radius: 12px; background: var(--canvas); display: grid; place-items: center; }
+.continuar .ic svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.75; }
+.continuar .item small { display: block; color: var(--mid); }
+.continuar .prog { width: 64px; height: 6px; border-radius: 99px; background: var(--canvas); overflow: hidden; }
+.continuar .prog span { display: block; height: 100%; background: var(--ink2); }
+.mascote-card { grid-column: span 4; display: grid; grid-template-columns: 1fr 120px; gap: 8px; align-items: center; background: var(--alt); }
+.mascote-card img { width: 120px; }
+.mascote-card p { color: var(--mid); margin: 6px 0 14px; }
+
+@media (max-width: 760px) {
+  .top { padding: 0 16px; gap: 12px; } .nav, .busca { display: none; } .av { margin-left: auto; }
+  .pagina { padding: 18px 16px 48px; }
+  .cab { flex-direction: column; align-items: flex-start; } .cab h1 { font-size: 34px; letter-spacing: -.04em; }
+  .acoes { width: 100%; } .acoes .btn { flex: 1; justify-content: center; }
+  .grade { grid-template-columns: 1fr; gap: 12px; }
+  .cena, .seq, .atalhos, .areas, .prova, .rank, .continuar, .mascote-card { grid-column: auto; }
+  .cena { min-height: 420px; } .cena img.fundo { object-position: 58% 60%; } .cena .mascote { right: 8%; bottom: 56%; width: 64px; } .cena .balao { display: none; }
+  .lugares { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .lugar .txt small { display: none; }
+}
+</style></head>
+<body>
+<header class="top">
+  <span class="logo"><i></i>Orto Questões</span>
+  <nav class="nav"><a class="on">Início</a><a>Treinar</a><a>Revisão</a><a>Flashcards</a><a>Cronograma</a><a>Ranking</a></nav>
+  <span class="busca"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Buscar tema ou questão<kbd>⌘K</kbd></span>
+  <span class="av">T</span>
+</header>
+
+<main class="pagina">
+  <div class="cab">
+    <div><small>Sexta-feira, 31 de outubro</small><h1>Boa tarde, Tales.</h1></div>
+    <div class="acoes"><a class="btn btn--s">Revisão de hoje · 30</a><a class="btn btn--p">Treinar agora</a></div>
+  </div>
+
+  <div class="grade">
+    <!-- a cena pintada: a única área grande com cor -->
+    <section class="card cena">
+      <img class="fundo px" src="../../../../public/pixel/inicio/cena-tarde.webp" alt="">
+      <span class="hora"><span class="pill"><i></i>Pôr do sol · segue o horário</span></span>
+      <span class="balao">Mais 6 questões e a fogueira sobe de nível.</span>
+      <img class="mascote px" src="mq-acenar.png" alt="">
+      <div class="vidro">
+        <span class="rot">Continuar</span>
+        <p class="t">Sessão de Joelho · questão 13 de 20</p>
+        <div class="barra"><span></span></div>
+        <div class="lin"><span>12 respondidas</span><span>~8 min</span></div>
+        <a class="btn btn--p btn--blk">Continuar a sessão</a>
+      </div>
+    </section>
+
+    <!-- sequência -->
+    <section class="card seq">
+      <h2>Sequência</h2><p class="sub">Dias seguidos com pelo menos 10 questões.</p>
+      <div class="linha"><img class="fogo px" src="fogo.png" alt=""><div><div class="num">40 dias</div><span class="pill">Recorde: 52</span></div></div>
+      <div class="dias">
+        <div class="dia ok"><b></b>S</div><div class="dia ok"><b></b>T</div><div class="dia ok"><b></b>Q</div><div class="dia ok"><b></b>Q</div><div class="dia hoje"><b></b>S</div><div class="dia"><b></b>S</div><div class="dia"><b></b>D</div>
+      </div>
+      <div class="meta"><div style="display:flex;justify-content:space-between"><span class="rot">Hoje</span><span style="color:var(--mid)">4 de 10</span></div><div class="barra"><span></span></div></div>
+    </section>
+
+    <!-- atalhos -->
+    <section class="card atalhos">
+      <p class="rot">Estudar</p>
+      <a class="on"><svg viewBox="0 0 24 24"><path d="M4 5h7v14H4zM13 5h7v14h-7z"/></svg>Treinar por tema<small>14 áreas</small></a>
+      <a><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>Revisão<span class="pill pill--solid">30</span></a>
+      <a><svg viewBox="0 0 24 24"><path d="m13 2-9 12h8l-1 8 9-12h-8z"/></svg>Flashcards<small>8 vencem</small></a>
+      <a><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Cronograma<small>72 dias</small></a>
+      <p class="rot" style="margin-top:6px">Ler</p>
+      <a><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z"/></svg>Resumos<small>64% lido</small></a>
+      <a><svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg>Atlas 3D<span class="pill">Novo</span></a>
+      <a><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Caderno de erros<small>138</small></a>
+    </section>
+
+    <!-- desempenho -->
+    <section class="card areas">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><h2>Acerto por área</h2><p class="sub">Últimos 30 dias</p></div><span class="pill">66% geral</span></div>
+      <div class="barras">
+        <div><i><b style="height:38%"></b></i>Coluna</div><div><i><b style="height:58%"></b></i>Quadril</div><div><i><b style="height:66%"></b></i>Joelho</div><div><i><b style="height:74%"></b></i>Ombro</div><div><i><b style="height:52%"></b></i>Mão</div><div><i><b style="height:82%"></b></i>Pé</div>
+      </div>
+      <div class="dupla"><div><span class="rot">Mais fraca</span><b>Coluna</b><span>38% · treine primeiro</span></div><div><span class="rot">Mais forte</span><b>Pé e tornozelo</b><span>82% · mantenha</span></div></div>
+      <a class="btn btn--g btn--blk">Ver desempenho completo</a>
+    </section>
+
+    <!-- até a prova -->
+    <section class="card prova">
+      <span class="rot">Até o TEOT</span>
+      <div class="num">72 dias</div>
+      <div class="lst">
+        <div class="linha"><span>Plano feito</span><b>48%</b></div>
+        <div class="linha"><span>Hoje</span><b>4 de 30 questões</b></div>
+        <div class="linha"><span>Ritmo</span><b>em dia</b></div>
+      </div>
+      <a class="btn btn--p btn--blk">Abrir o dia no cronograma</a>
+    </section>
+
+    <!-- continuar lendo/revisando -->
+    <section class="card continuar">
+      <h2>Continue de onde parou</h2>
+      <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z"/></svg></span><div><b>Fraturas do quadril</b><small>Resumo · 64% lido</small></div><div class="prog"><span style="width:64%"></span></div></div>
+      <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span><div><b>Revisão de Mão e punho</b><small>11 questões · ~8 min</small></div><div class="prog"><span style="width:20%"></span></div></div>
+      <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><path d="m13 2-9 12h8l-1 8 9-12h-8z"/></svg></span><div><b>Flashcards de hoje</b><small>8 cartões</small></div><div class="prog"><span style="width:0%"></span></div></div>
+    </section>
+
+    <!-- ranking -->
+    <section class="card rank">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><h2>Ranking</h2><p class="sub">Geral · atualiza a cada 10 min</p></div><span class="pill">↑ 3 hoje</span></div>
+      <div class="eu"><div><span class="rot">Sua posição</span><div class="num" style="font-size:30px">#9</div></div><span style="color:var(--mid);text-align:right">Mais 169 questões<br>e você passa o 8º</span></div>
+      <ol><li><span class="p">1</span><span class="ini">MA</span>Marina A.<span class="q">4.873</span></li><li><span class="p">2</span><span class="ini">RT</span>Rafael T.<span class="q">4.383</span></li><li><span class="p">3</span><span class="ini">CS</span>Camila S.<span class="q">3.980</span></li></ol>
+    </section>
+
+    <!-- mascote: um cartão só, com papel claro -->
+    <section class="card mascote-card">
+      <div><span class="rot">Dica do esqueleto</span><h2 style="margin-top:6px">Coluna é a sua área mais fraca.</h2><p>Dez questões de coluna hoje e o seu acerto geral sobe mais rápido do que em qualquer outra área.</p><a class="btn btn--s">Treinar coluna</a></div>
+      <img class="px" src="mq-ler.png" alt="">
+    </section>
+
+    <!-- os lugares pintados como miniaturas -->
+    <section class="card lugares">
+      <a class="lugar"><span class="img"><img class="px" src="../../../../public/pixel/paginas/biblioteca-tarde-960.webp" alt=""></span><span class="txt"><span><b>Resumos</b><small>Os capítulos do jeito que cai</small></span><span class="seta">→</span></span></a>
+      <a class="lugar"><span class="img"><img class="px" src="../../../../public/pixel/paginas/atlas-tarde-960.webp" alt=""></span><span class="txt"><span><b>Atlas 3D</b><small>Clique no osso e veja as fraturas</small></span><span class="seta">→</span></span></a>
+      <a class="lugar"><span class="img"><img class="px" src="../../../../public/pixel/paginas/ferreiro-tarde-960.webp" alt=""></span><span class="txt"><span><b>Caderno de erros</b><small>138 esperando revanche</small></span><span class="seta">→</span></span></a>
+      <a class="lugar"><span class="img"><img class="px" src="../../../../public/pixel/paginas/arena-tarde-960.webp" alt=""></span><span class="txt"><span><b>Simulado Nacional</b><small>A próxima edição</small></span><span class="seta">→</span></span></a>
+    </section>
+  </div>
+</main>
+</body></html>
