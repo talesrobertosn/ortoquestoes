@@ -23,7 +23,7 @@ import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
 import { TopoVisitante } from '../componentes/inicio/cena/TopoDia'
-import { BarraAtalhos, HeroiJornada, TrilhaSequencia, type Atalho } from '../componentes/inicio/jornada/Jornada'
+import { BarraAtalhos, ConviteInstagram, HeroiJornada, TrilhaSequencia, type Atalho } from '../componentes/inicio/jornada/Jornada'
 import { GatoPixel } from '../componentes/mascote/GatoPixel'
 import { Medalha } from '../componentes/Medalha'
 import { estagioDaSequencia } from '../componentes/inicio/estagiosFogueira'
@@ -373,6 +373,8 @@ export function Inicio() {
           </section>
         </>}
 
+        <ConviteInstagram />
+
         <section className="hd-sobre" aria-labelledby="inicio-apresentacao">
           <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
           <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para o título de especialista em cirurgia da mão, da SBCM, há OrtoQuestões Simulados no padrão da prova de título e do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. Estude por assunto, entenda as alternativas e revise seus erros.</p>
@@ -641,6 +643,7 @@ export function Inicio() {
             <div className="jn-quadro"><CartaoPlanos /></div>
             <div className="jn-quadro"><SecaoIndique /></div>
           </div>
+          <ConviteInstagram />
         </section>
       </>}
     </div>

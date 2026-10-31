@@ -1,7 +1,9 @@
 import { type CSSProperties, type ReactNode } from 'react'
 import { META_STREAK_DIARIA, type Streak } from '../../../estado/streak'
 import { href } from '../../../util/rotas'
-import { recurso, urlCss } from '../../../config'
+import { SITE, recurso, urlCss } from '../../../config'
+import { Icone } from '../../Icone'
+import { Mascote } from '../../mascote/Mascote'
 import { estagioDaSequencia, textoProximoEstagio, ESTAGIOS_FOGUEIRA } from '../estagiosFogueira'
 import type { DiaSequencia } from '../PainelSequencia'
 import { CenaDiorama } from '../cena/CenaDiorama'
@@ -131,5 +133,24 @@ export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
         ))}
       </ul>
     </nav>
+  )
+}
+
+/**
+ * O convite do Instagram no fim da página inicial (31/10/2026): o acampamento de manhã, o esqueleto acenando e o
+ * botão dourado. Saiu do rodapé da página inicial para fechar a galeria no mesmo visual.
+ */
+export function ConviteInstagram() {
+  return (
+    <a className="jn-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me" style={{ '--cena-insta': urlCss('pixel/inicio/cena-manha-960.webp') } as CSSProperties}
+      aria-label={`Siga @${SITE.instagramUsuario} no Instagram: uma questão comentada toda manhã (abre em nova aba)`}>
+      <span className="jn-insta__texto">
+        <span className="jn-insta__selo"><Icone nome="instagram" tamanho={14} /> No Instagram</span>
+        <strong>Uma questão comentada toda manhã</strong>
+        <span>No feed, a questão, a resposta e o porquê de cada alternativa. Nos stories, macetes de prova e o acervo novo.</span>
+        <span className="jn-insta__botao"><Icone nome="instagram" tamanho={18} /> Siga @{SITE.instagramUsuario}</span>
+      </span>
+      <Mascote className="jn-insta__mascote" comportamento="acenar" fantasia="nenhuma" falar={false} interativo={false} />
+    </a>
   )
 }

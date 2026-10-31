@@ -25,9 +25,7 @@ import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import { SeloServico } from '../componentes/ServicoRanking'
-import { Corrida, type Corredor } from '../componentes/ranking/Corrida'
-import '../estilos/paginas/RankingCorrida.css'
-import { usarPeriodo } from '../estado/aparencia'
+import { SalaoCampeoes } from '../componentes/SalaoCampeoes'
 import '../estilos/paginas/Ranking.css'
 import '../estilos/paginas/RankingQuestoes.css'
 
@@ -75,6 +73,75 @@ function Movimento({ linha }: { linha: LinhaRanking }) {
   </span>
 }
 
+/** Chama animada do Salão dos Campeões (três quadros de pixel art). */
+function ChamaSalao({ classe }: { classe: string }) {
+  return <span className={classe} aria-hidden="true">
+    {[0, 1, 2].map((k) => <img key={k} src={recurso(`ranking/salao/fogo-${k}.png`)} alt="" draggable={false} />)}
+  </span>
+}
+
+/** Brasas que sobem pelo fundo, com posições fixas para não mudar a cada render. */
+const BRASAS_ALTA = Array.from({ length: 16 }, (_, i) => ({ l: 4 + ((i * 41.3) % 92), d: 3.2 + (i % 5) * 0.7, a: -((i * 0.83) % 5), dx: ((i * 7) % 11) - 5, s: 2 + (i % 3) }))
+
+/** Quem mais subiu desde o último registro, no mesmo salão noturno do Top 3: a escadaria de quem está jogando. */
+function EmAlta({ linhas }: { linhas: LinhaRanking[] }) {
+  const subindo = linhas
+    .filter(linha => (linha.variacao ?? 0) > 0 || (linha.variacao_semana ?? 0) >= FOGO_NA_SEMANA)
+    .sort((a, b) => (b.variacao ?? 0) - (a.variacao ?? 0) || (b.variacao_semana ?? 0) - (a.variacao_semana ?? 0) || a.posicao - b.posicao)
+    .slice(0, 3)
+  if (!subindo.length) return null
+  return <section className="sb" aria-labelledby="sb-titulo">
+    <img className="sb__fundo" src={recurso('ranking/salao/fundo.png')} alt="" draggable={false} aria-hidden="true" loading="lazy" decoding="async" />
+    <span className="sb__brasas" aria-hidden="true">
+      {BRASAS_ALTA.map((b, i) => <i key={i} style={{ left: `${b.l}%`, width: b.s, height: b.s, animationDuration: `${b.d}s`, animationDelay: `${b.a}s`, ['--dx' as string]: `${b.dx}px` }} />)}
+    </span>
+    <header className="sb__cabeca">
+      <p className="sb__selo">Escadaria do Salão</p>
+      <h2 id="sb-titulo" className="sb__titulo"><ChamaSalao classe="sb__tocha" /><span>Subindo rápido</span><ChamaSalao classe="sb__tocha" /></h2>
+      <p className="sb__sub">Quem mais ganhou posições hoje e na semana</p>
+    </header>
+    <ol className="sb__lista">
+      {subindo.map((linha, i) => {
+        const hoje = linha.variacao ?? 0, semana = linha.variacao_semana ?? 0
+        const salto = hoje > 0 ? hoje : semana
+        return (
+          <li key={linha.posicao} className={'sb__degrau' + (linha.eh_voce ? ' sb__degrau--voce' : '') + (i === 0 ? ' sb__degrau--lider' : '')} style={{ animationDelay: `${i * 0.12}s` }}>
+            <span className="sb__salto"><span className="sb__seta" aria-hidden="true">▲</span><b className="numerico">+{salto}</b><small>{hoje > 0 ? 'hoje' : 'na semana'}</small></span>
+            <span className="sb__brasao">{iniciais(linha.apelido)}</span>
+            <span className="sb__quem">
+              <strong className="sb__nome">{linha.apelido}{linha.eh_voce && <span className="sb__voce">você</span>}</strong>
+              <small>{salto > 0 ? <>#{linha.posicao + salto} <span aria-hidden="true">→</span> <b>#{linha.posicao}</b></> : <>agora em <b>#{linha.posicao}</b></>}</small>
+            </span>
+            {emChamas(linha) && <span className="sb__fogo" role="img" aria-label="em chamas"><ChamaSalao classe="sb__chama" /></span>}
+          </li>
+        )
+      })}
+    </ol>
+  </section>
+}
+
+function iniciais(apelido: string): string {
+  const partes = apelido.trim().split(/\s+/).filter(Boolean)
+  return ((partes[0]?.[0] ?? '') + (partes.length > 1 ? partes[partes.length - 1][0] : '')).toUpperCase() || '?'
+}
+
+function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Periodo; eu: { posicao: number; total: number } | null }) {
+  const terceiro = linhas[2]
+  const faltam = eu && eu.posicao > 3 && terceiro ? Math.max(1, terceiro.total - eu.total + 1) : 0
+  const chamada = eu && eu.posicao <= 3
+    ? <>Você está no Salão dos Campeões. Continue respondendo para não perder o lugar.</>
+    : faltam > 0 ? <>Você está em <b>#{eu!.posicao}</b>. Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para entrar no top 3.</>
+      : undefined
+  return <SalaoCampeoes
+    titulo="Top 3"
+    subtitulo={periodo === 'semana' ? 'Quem mais respondeu questões nos últimos 7 dias' : 'Quem mais respondeu questões no ranking geral'}
+    chamada={chamada}
+    lugares={linhas.slice(0, 3).map((linha) => ({
+      posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
+      total: linha.total.toLocaleString('pt-BR'), rotuloTotal: periodo === 'semana' ? 'na semana' : 'questões',
+      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={40} /><Fogueira dias={linha.sequencia ?? 0} tamanho={22} /><Movimento linha={linha} /></span>,
+    }))} />
+}
 
 /** A próxima meta, em questões, como uma missão de jogo: o texto diz quanto falta e a barra mostra o caminho já feito. */
 /** Primeiro nome do cadastro, como nas cartas (supabase/functions/_shared/cartas.ts): vazio se não parecer um nome. */
@@ -240,85 +307,64 @@ export function Ranking() {
   const ate100Linhas = linhas?.filter(linha => linha.posicao > 50 && linha.posicao <= 100) ?? []
   const visiveis = top ? (ate100 ? [...top, ...ate100Linhas] : top) : null
   const acima = eu && linhas ? linhas.find(linha => linha.posicao === eu.posicao - 1) ?? null : null
-  const semana = periodo === 'semana'
-  const periodoCor = usarPeriodo()
-  const subiu = (l: LinhaRanking) => (l.variacao ?? 0) > 0 ? (l.variacao ?? 0) : (l.variacao_semana ?? 0) >= FOGO_NA_SEMANA ? (l.variacao_semana ?? 0) : 0
-  const escalador = (l: LinhaRanking) => ({ posicao: l.posicao, apelido: l.apelido, total: l.total, eh_voce: l.eh_voce, subiu: subiu(l) })
-  const porPosicao = new Map((linhas ?? []).map((l) => [l.posicao, l]))
-  const cume = (visiveis ?? []).slice(0, 3).map(escalador)
-  const trilha = (visiveis ?? []).slice(3).map(escalador)
-  const euNaLista = !!(eu && visiveis?.some((l) => l.posicao === eu.posicao))
-  const subindoRapido = (top ?? []).filter((l) => subiu(l) > 0).sort((x, y) => subiu(y) - subiu(x) || x.posicao - y.posicao).slice(0, 3)
+  const lider = top?.[0]?.total ?? 1
+  const restantes = visiveis && visiveis.length >= 3 ? visiveis.slice(3) : visiveis ?? []
 
-  // A missão na sua pista: quanto falta para passar quem está logo à frente.
-  const faltaAcima = eu && acima ? Math.max(1, acima.total - eu.total + 1) : 0
-  const ultimoTop50 = top?.[top.length - 1] ?? null
-  const missao = eu?.posicao === 1 ? <>Você lidera. Cada questão de hoje segura o lugar.</>
-    : eu && acima ? <>Mais <b className="numerico">{nQuestoes(faltaAcima)}</b> e você passa {acima.apelido.replace(/\.$/, '')}.</> : null
+  const ultimaVisivel = restantes.length ? restantes[restantes.length - 1].posicao : 0
 
-  const nomeDe = (c: Corredor) => <span className="cor-nome"><span className="cor-nome__texto">{c.apelido}</span>{c.eh_voce && <span className="cor-voce-selo">você</span>}</span>
-  const selosDe = (c: Corredor) => {
-    const linha = porPosicao.get(c.posicao)
-    if (!linha) return null
-    return <><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={22} /><Fogueira dias={linha.sequencia ?? 0} tamanho={15} />
-      {linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={12} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</>
-  }
-  const movimentoDe = (c: Corredor) => { const linha = porPosicao.get(c.posicao); return linha ? <Movimento linha={linha} /> : null }
-
-  // A sua ficha, nos mesmos casos de antes: visitante, fora do ranking, com posição, quase lá ou ainda sincronizando.
-  const ficha = !sessao ? <>
-    <span className="esc-voce-painel__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
-    <strong className="esc-voce-painel__altura esc-voce-painel__altura--texto">Sua vez</strong>
-    <a className="botao botao--principal" href={href('/conta?modo=criar&voltar=%2Franking')}>Criar conta grátis</a>
-    <span className="esc-voce-painel__nota">Com a conta, você vê os nomes e a sua altura na montanha.</span>
-  </> : perfilCarregado && !perfilRanking.participa ? <>
-    <span className="esc-voce-painel__rotulo">{nome ? `${nome}, você saiu do ranking` : 'Você saiu do ranking'}</span>
-    <strong className="esc-voce-painel__altura esc-voce-painel__altura--texto">Fora</strong>
-    <a className="esc-link" href={href('/conta?secao=ranking')}>Voltar ao ranking em Minha conta</a>
-  </> : minhaPosicao ? <>
-    <span className="esc-voce-painel__rotulo">{nome ? `${nome}, sua posição` : 'Sua posição'} {semana ? 'na semana' : 'geral'}</span>
-    <span className="esc-voce-painel__linha">
-      <strong className="esc-voce-painel__altura"><span aria-hidden="true">#</span><span className="rk-movimento__sr">posição </span>{minhaPosicao.posicao}</strong>
-      {eu && <Movimento linha={eu} />}
-    </span>
-    <span className="esc-voce-painel__frase">{fraseDaPosicao(minhaPosicao.posicao, semana)}</span>
-    <span className="esc-voce-painel__nota">{minhaPosicao.total >= 10 ? <><b className="numerico">{minhaPosicao.total.toLocaleString('pt-BR')}</b> questões {semana ? 'nos últimos 7 dias' : 'respondidas'}</> : 'Os primeiros passos já contam pontos'}</span>
-    {eu && <Missao eu={eu} acima={acima} ultimoTop50={ultimoTop50} />}
-    {!eu && top && top.length > 0 && minhaPosicao.posicao > top.length && (() => {
-      const faltam = Math.max(1, top[top.length - 1].total - minhaPosicao.total + 1)
-      return <TextoMissao icone="alvo" faltam={faltam} alvo={minhaPosicao.total + faltam} meu={minhaPosicao.total}>entra no top {top.length >= 50 ? 50 : top.length}</TextoMissao>
-    })()}
-  </> : meuTotal < MINIMO_RANKING ? <>
-    <span className="esc-voce-painel__rotulo">{nome ? `${nome}, você entra` : 'Você entra'} no ranking com {MINIMO_RANKING} questões</span>
-    <strong className="esc-voce-painel__altura esc-voce-painel__altura--texto">Quase lá</strong>
-    <span className="esc-voce-painel__nota">Mais {nQuestoes(MINIMO_RANKING - meuTotal)} e o seu nome aparece como {nomeExibido}.</span>
-  </> : <>
-    <span className="esc-voce-painel__rotulo">{nome ? `${nome}, seu emblema` : 'Seu emblema'}</span>
-    <strong className="esc-voce-painel__altura esc-voce-painel__altura--texto">{meuEmblema?.rotulo ?? '...'}</strong>
-    <span className="esc-voce-painel__nota">Sua posição aparece assim que o progresso sincronizar</span>
-  </>
-
-  const ir = (onde: 'eu' | 'topo') => {
-    const alvo = onde === 'eu' ? document.getElementById('cor-minha-pista') : document.querySelector('.cor-foto')
-    alvo?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })
-  }
-
-  return <div className="esc">
-    <header className="esc-cabeca">
-      <div className="esc-cabeca__titulo">
-        <p className="esc-cabeca__selo"><Icone nome="trofeu" tamanho={14} /> O torneio do reino</p>
-        <h1>Ranking</h1>
-        <p className="esc-cabeca__lide">Cada questão diferente respondida leva você para a frente no torneio. A chegada é o líder, e cada raia mostra quanto falta.</p>
-      </div>
-      <div className="esc-cabeca__controles">
-        <div className="esc-periodo" role="tablist" aria-label="Período do ranking">
-          {(['geral', 'semana'] as const).map((p) => (
-            <button key={p} type="button" role="tab" aria-selected={periodo === p} className="esc-periodo__aba" onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
-          ))}
-        </div>
+  return <div className="rk rq">
+    <section className="rq-heroi" aria-labelledby="rq-titulo">
+      <img className="rq-heroi__tocha rq-heroi__tocha--esq" src={recurso('ranking/tocha.png')} alt="" width={20} height={40} draggable={false} />
+      <img className="rq-heroi__tocha rq-heroi__tocha--dir" src={recurso('ranking/tocha.png')} alt="" width={20} height={40} draggable={false} />
+      <div className="rq-heroi__texto">
+        <p className="tr-heroi__selo">Arena dos residentes · Top 50</p>
+        <h1 id="rq-titulo">Ranking</h1>
         <RelogioRanking aoAtualizar={recarregarRanking} />
+        <p className="rq-heroi__lead">Cada questão diferente respondida vale um ponto. Estude todo dia para acender a fogueira e ver o seu nome subir.</p>
+        {top && top.length > 0 && <dl className="rq-placar">
+          <div><dt>Na arena</dt><dd className="numerico">{top.length >= 50 ? '50+' : top.length}</dd></div>
+          <div><dt>Questões do top 50</dt><dd className="numerico">{top.reduce((s, l) => s + l.total, 0).toLocaleString('pt-BR')}</dd></div>
+          <div><dt>{periodo === 'semana' ? 'Líder da semana' : 'Líder'}</dt><dd className="rq-placar__nome">{top[0].apelido}</dd></div>
+        </dl>}
       </div>
-    </header>
+
+      <div className="rq-ficha">
+        {!sessao ? <>
+          <span className="rq-ficha__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
+          <strong className="rq-ficha__posicao rq-ficha__posicao--texto">Sua vez</strong>
+          <a className="botao rq-ficha__botao" href={href('/conta?modo=criar&voltar=%2Franking')}>Criar conta grátis</a>
+          <span className="rq-ficha__nota">Com a conta, você vê os nomes e a sua posição</span>
+        </> : perfilCarregado && !perfilRanking.participa ? <>
+          <span className="rq-ficha__rotulo">{nome ? `${nome}, você saiu do ranking` : 'Você saiu do ranking'}</span>
+          <strong className="rq-ficha__posicao rq-ficha__posicao--texto">Fora</strong>
+          <a className="tr-heroi__link" href={href('/conta?secao=ranking')}>Voltar ao ranking em Minha conta</a>
+        </> : minhaPosicao ? <>
+          <span className="rq-ficha__rotulo">{nome ? `${nome}, sua posição` : 'Sua posição'} {periodo === 'semana' ? 'na semana' : 'geral'}</span>
+          <span className="rq-ficha__linha">
+            <strong className="rq-ficha__posicao"><span aria-hidden="true">#</span><span className="rk-movimento__sr">posição </span>{minhaPosicao.posicao}</strong>
+            {eu && <Movimento linha={eu} />}
+          </span>
+          <span className="rq-ficha__frase">{fraseDaPosicao(minhaPosicao.posicao, periodo === 'semana')}</span>
+          <span className="rq-ficha__total">{minhaPosicao.total >= 10
+            ? <><b className="numerico">{minhaPosicao.total.toLocaleString('pt-BR')}</b> questões {periodo === 'semana' ? 'nos últimos 7 dias' : 'respondidas'}</>
+            : 'Os primeiros passos já contam pontos'}</span>
+          {eu && <Missao eu={eu} acima={acima} ultimoTop50={top?.[top.length - 1] ?? null} />}
+          {/* Ranking antigo (sem a sua linha na lista): a meta sai da posição avulsa. */}
+          {!eu && top && top.length > 0 && minhaPosicao.posicao > top.length && (() => {
+            const faltam = Math.max(1, top[top.length - 1].total - minhaPosicao.total + 1)
+            return <TextoMissao icone="alvo" faltam={faltam} alvo={minhaPosicao.total + faltam} meu={minhaPosicao.total}>entra no top {top.length >= 50 ? 50 : top.length}</TextoMissao>
+          })()}
+        </> : meuTotal < MINIMO_RANKING ? <>
+          <span className="rq-ficha__rotulo">{nome ? `${nome}, você entra` : 'Você entra'} no ranking com {MINIMO_RANKING} questões</span>
+          <strong className="rq-ficha__posicao rq-ficha__posicao--texto">Quase lá</strong>
+          <span className="rq-ficha__nota">Mais {nQuestoes(MINIMO_RANKING - meuTotal)} e o seu nome aparece aqui como {nomeExibido}.</span>
+        </> : <>
+          <span className="rq-ficha__rotulo">{nome ? `${nome}, seu emblema` : 'Seu emblema'}</span>
+          <strong className="rq-ficha__posicao rq-ficha__posicao--texto">{meuEmblema?.rotulo ?? '...'}</strong>
+          <span className="rq-ficha__nota">Sua posição aparece assim que o progresso sincronizar</span>
+        </>}
+      </div>
+    </section>
 
     <AbasRanking atual="ranking" conquistadas={conquistadas} total={totalConquistas} />
 
@@ -326,42 +372,80 @@ export function Ranking() {
       <Estado titulo="Entre na sua conta para ver o ranking" acoes={<a className="botao botao--principal" href={href('/conta?modo=entrar')}>Entrar ou criar conta</a>}>
         <p>O ranking reúne quem mais respondeu questões entre todas as contas com pelo menos 5 questões respondidas.</p>
       </Estado>
-    ) : <div className="esc-corpo">
-      <aside className="esc-painel" aria-label="Você no torneio">
-        <div className="esc-voce-painel">{ficha}</div>
-        <div className="esc-painel__botoes">
-          {euNaLista && <button type="button" className="botao" onClick={() => ir('eu')}><Icone nome="alvo" tamanho={15} /> Ir até a minha raia</button>}
-          <button type="button" className="botao" onClick={() => ir('topo')}><Icone nome="cima" tamanho={15} /> Ver a chegada</button>
+    ) : <>
+      <div className="rq-barra">
+        <div className="rq-periodo" role="tablist" aria-label="Período do ranking">
+          {(['geral', 'semana'] as const).map((p) => (
+            <button key={p} type="button" role="tab" aria-selected={periodo === p} className="rq-periodo__aba" onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
+          ))}
         </div>
-        {subindoRapido.length > 0 && <section className="esc-vento" aria-labelledby="esc-vento-titulo">
-          <h2 id="esc-vento-titulo"><span aria-hidden="true">⤴</span> Subindo rápido</h2>
-          <ol>{subindoRapido.map((l) => <li key={l.posicao}><b className="numerico">+{subiu(l)}</b> <span>{l.apelido}{l.eh_voce && <span className="esc-voce">você</span>}</span> <small>agora #{l.posicao}</small>{emChamas(l) && <img className="rk-chama" src={recurso('ranking/chama.png')} width={14} height={14} alt="em chamas" draggable={false} />}</li>)}</ol>
-        </section>}
-        <p className="esc-criterio"><Icone nome="grafico" tamanho={14} /> <span>Conta cada questão diferente respondida{semana ? ' nos últimos 7 dias' : ''}. Refazer a mesma não soma de novo.</span></p>
-        {comMovimento && (top ?? []).some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia esc-legenda">
-          <span><b className="rk-legenda rk-legenda--subiu"><Icone nome="cima" tamanho={12} /></b> subiu</span>
-          <span><b className="rk-legenda rk-legenda--desceu"><Icone nome="baixo" tamanho={12} /></b> desceu</span>
-          <span><b className="rk-legenda rk-legenda--fogo"><img className="rk-chama" src={recurso('ranking/chama.png')} width={12} height={12} alt="" draggable={false} /></b> {FOGO_NO_DIA}+ no dia ou {FOGO_NA_SEMANA}+ na semana</span>
-          <span><b className="rk-legenda rk-legenda--novo">novo</b> acabou de entrar</span>
-        </p>}
-        {comMovimento && !(top ?? []).some(linha => linha.referencia_em || linha.novo) && <p className="esc-criterio"><Icone nome="relogio" tamanho={14} /> <span>As setas e o foguinho aparecem a partir de amanhã: hoje o ranking registra as posições de referência.</span></p>}
-        <a className="esc-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> <span><strong>Liga da residência</strong><small>O torneio só do seu serviço</small></span> <SeloAssinante /></a>
-      </aside>
-
-      <div className="esc-palco">
-        {!sessao && <p className="esc-aviso"><Icone nome="cadeado" tamanho={14} /> <span>Sem conta, você vê as iniciais. <a href={href('/conta?modo=criar&voltar=%2Franking')}>Crie a sua grátis</a> para ver os nomes e subir também.</span></p>}
-        {linhas === null && !erro && <Carregando linhas={6} rotulo="Carregando ranking" />}
-        {erro && <Estado titulo="Não foi possível carregar o ranking agora"><p>Confira sua conexão e tente novamente em instantes.</p></Estado>}
-        {linhas && linhas.length === 0 && <Estado titulo={semana ? 'Ninguém respondeu questões nos últimos 7 dias' : 'Ainda não há ninguém no ranking'}><p>Seja a primeira pessoa a aparecer aqui.</p></Estado>}
-        {visiveis && visiveis.length > 0 && <Corrida periodo={periodoCor} chegada={cume} pistas={trilha} lider={top?.[0]?.total ?? 1} nome={nomeDe} selos={selosDe} movimento={movimentoDe}
-          missao={euNaLista ? missao : null} unidade={semana ? 'na semana' : 'questões'}
-          rodape={ate100Linhas.length > 0 && <button type="button" className="botao cor-mais" aria-expanded={ate100} onClick={() => definirAte100(!ate100)}>
-            <Icone nome={ate100 ? 'cima' : 'baixo'} tamanho={16} /> {ate100 ? 'Mostrar só o top 50' : 'Mostrar até o top 100'}
-          </button>} />}
+        <a className="rk-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> Liga da residência <SeloAssinante /></a>
+        {/* O critério na dobra, não só no fim da página. */}
+        <p className="rk-criterio"><Icone nome="grafico" tamanho={15} /> <span>Conta cada questão diferente respondida{periodo === 'semana' ? ' nos últimos 7 dias' : ''}. Refazer a mesma não soma de novo.</span></p>
       </div>
-    </div>}
 
-    <a className="rk-bau esc-bau" href={href(perfilRanking.emblemas.length ? '/conquistas' : '/conquistas?escolher=1')}>
+      {!sessao && <p className="rk-visitante"><Icone nome="cadeado" tamanho={15} /> <span>Sem conta, você vê as iniciais. <a href={href('/conta?modo=criar&voltar=%2Franking')}>Crie a sua grátis</a> para ver os nomes e disputar uma vaga no top 50.</span></p>}
+
+      {linhas === null && !erro && <Carregando linhas={6} rotulo="Carregando ranking" />}
+
+      {erro && <Estado titulo="Não foi possível carregar o ranking agora">
+        <p>Confira sua conexão e tente novamente em instantes.</p>
+      </Estado>}
+
+      {linhas && linhas.length === 0 && <Estado titulo={periodo === 'semana' ? 'Ninguém respondeu questões nos últimos 7 dias' : 'Ainda não há ninguém no ranking'}>
+        <p>Seja a primeira pessoa a aparecer aqui.</p>
+      </Estado>}
+
+      {/* Sem "você está em #N" aqui: a posição aparece uma vez só, no cartão do topo. */}
+      {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} eu={null} />}
+
+      {top && top.length > 0 && <EmAlta linhas={top} />}
+
+      {restantes.length > 0 && <section className="rq-tabela" aria-labelledby="rq-tabela-titulo">
+        <header className="rq-tabela__cabeca">
+          <h2 id="rq-tabela-titulo">Classificação</h2>
+          <span className="rq-tabela__faixa numerico">#{restantes[0].posicao} a #{ultimaVisivel} · {periodo === 'semana' ? 'questões na semana' : 'questões respondidas'}</span>
+        </header>
+
+        {comMovimento && !(top ?? []).some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia rk-referencia--inicio">
+          <Icone nome="relogio" tamanho={15} /> As setas de subida e descida e o foguinho aparecem a partir de amanhã: hoje o ranking registra as posições de referência.
+        </p>}
+
+        {comMovimento && (top ?? []).some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia">
+          <span><b className="rk-legenda rk-legenda--subiu"><Icone nome="cima" tamanho={13} /></b> subiu</span>
+          <span><b className="rk-legenda rk-legenda--desceu"><Icone nome="baixo" tamanho={13} /></b> desceu</span>
+          <span><b className="rk-legenda rk-legenda--fogo"><img className="rk-chama" src={recurso('ranking/chama.png')} width={13} height={13} alt="" draggable={false} /></b> {FOGO_NO_DIA}+ posições no dia ou {FOGO_NA_SEMANA}+ na semana</span>
+          <span><b className="rk-legenda rk-legenda--novo">novo</b> acabou de entrar</span>
+          <small>Comparação com o último dia registrado, igual em todos os aparelhos.</small>
+        </p>}
+
+        <ol className="rq-lista">
+          {restantes.map((linha) => (
+            <li key={linha.posicao} className={'rq-linha' + (linha.eh_voce ? ' rq-linha--voce' : '') + (linha.posicao <= 10 ? ' rq-linha--top10' : '')}>
+              <span className="rq-linha__pos numerico">{linha.posicao}</span>
+              <span className="rq-linha__mov"><Movimento linha={linha} /></span>
+              <span className="rq-linha__avatar" aria-hidden="true">{iniciais(linha.apelido)}</span>
+              <span className="rq-linha__quem">
+                <span className="rq-linha__nome"><span className="rq-linha__apelido">{linha.apelido}</span>{linha.eh_voce && <span className="rq-voce">você</span>}<SeloServico servico={linha.servico} /></span>
+                <span className="rq-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={30} /><Fogueira dias={linha.sequencia ?? 0} tamanho={18} />{linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={13} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</span>
+              </span>
+              <span className="rq-linha__placar">
+                <b className="numerico">{linha.total.toLocaleString('pt-BR')}</b>
+                <span className="rq-linha__barra" aria-hidden="true"><span style={{ width: `${Math.max(3, (linha.total / lider) * 100)}%` }} /></span>
+              </span>
+            </li>
+          ))}
+        </ol>
+
+        {ate100Linhas.length > 0 && (
+          <button type="button" className="botao rk-mais" aria-expanded={ate100} onClick={() => definirAte100(!ate100)}>
+            <Icone nome={ate100 ? 'cima' : 'baixo'} tamanho={16} /> {ate100 ? 'Mostrar só o top 50' : 'Mostrar até o top 100'}
+          </button>
+        )}
+      </section>}
+    </>}
+
+    <a className="rk-bau" href={href(perfilRanking.emblemas.length ? '/conquistas' : '/conquistas?escolher=1')}>
       <img className="rk-bau__arte" src={recurso('emblemas/podio-1.png')} alt="" width={56} height={56} />
       <span className="rk-bau__texto">
         <strong>Suas conquistas</strong>
@@ -384,7 +468,6 @@ export function Ranking() {
         <li><span className="px-numero" aria-hidden="true">2</span><div><strong>Geral ou últimos 7 dias.</strong> O geral mostra o acumulado; a semana dá chance a quem começou agora.</div></li>
         <li><span className="px-numero" aria-hidden="true">3</span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta?secao=ranking')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem. O serviço onde você faz residência só aparece se você ligar a opção em <a href={href('/conta?secao=perfil')}>Meu perfil</a>.</div></li>
         <li><span className="px-numero" aria-hidden="true">4</span><div><strong>Conquistas e vitrine.</strong> As conquistas ficam no seu inventário para sempre, e você escolhe até três para aparecer ao lado do nome. A fogueira mostra a sua sequência de dias seguidos com pelo menos {META_STREAK_DIARIA} questões: se a sequência acabar, ela some e recomeça do zero.</div></li>
-        <li><span className="px-numero" aria-hidden="true">5</span><div><strong>O torneio.</strong> Cada raia mostra o quanto a pessoa já andou em relação ao líder, que é a linha de chegada, e quantas questões faltam para alcançar quem está logo à frente. O ranking atualiza a cada 10 minutos.</div></li>
       </ol>
     </details>
   </div>

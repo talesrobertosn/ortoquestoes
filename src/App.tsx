@@ -319,8 +319,7 @@ export function App() {
       <AvisoArmazenamento />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
-          {/* O Ranking (a Escalada) tem a própria montanha pintada: sem o topo da vila. */}
-          {lugar && !(primeiroFundo === 'ranking' && !fundo.consulta.get('aba')) && <Suspense fallback={<div className="vl-espera" aria-hidden="true" />}><CenaPagina id={lugar} /></Suspense>}
+          {lugar && <Suspense fallback={<div className="vl-espera" aria-hidden="true" />}><CenaPagina id={lugar} /></Suspense>}
           {comCracha && <Suspense fallback={null}>{lugar ? <div className="vl-corpo"><CompletarPerfil /></div> : <CompletarPerfil />}</Suspense>}
           <ErroDePagina caminho={rota.caminho}>
           <Suspense fallback={<EsperaPixel />}>
@@ -333,7 +332,8 @@ export function App() {
       {sobreposto && <ErroDePagina caminho={rota.caminho}><Suspense fallback={<div className="espera-jogo"><EsperaPixel rotulo="Abrindo o jogo" /></div>}>{sobreposto}</Suspense></ErroDePagina>}
       {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
-      {!['sessao', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={!primeiroFundo || primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
+      {/* Na página inicial, o convite do Instagram fecha a galeria (ConviteInstagram em inicio/jornada). */}
+      {!['sessao', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
       <HospedeConfirmacao />
