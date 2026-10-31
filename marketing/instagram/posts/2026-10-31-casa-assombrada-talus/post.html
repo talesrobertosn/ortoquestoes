@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>A casa assombrada do tálus (stories) · trauma-0764</title>
+<!-- Estilo novo, temático de Halloween (31/10/2026): "A casa assombrada do tálus". A classificação de Hawkins vira uma
+     casa assombrada: cada articulação que perdeu a relação acende uma abóbora; contar as abóboras dá o tipo. O guia é
+     o mascote do site (esqueleto de capuz, pixel art de scripts/gerar_mascote.py). Questão real: trauma-0764
+     (TEOT 2025). Texto médico do comentário da questão.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-31-casa-assombrada-talus/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Placa; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: #f7ecdc;
+  background: radial-gradient(40% 22% at 82% 9%, rgba(255, 236, 190, .28), transparent 70%), radial-gradient(70% 40% at 50% 100%, rgba(255, 120, 30, .18), transparent 70%),
+    linear-gradient(180deg, #1b1035 0%, #170d2b 50%, #0f0a1c 100%); }
+section::before { content: ''; position: absolute; inset: 0; opacity: .8; background-image:
+  radial-gradient(2px 2px at 10% 8%, #fff, transparent), radial-gradient(1.5px 1.5px at 25% 16%, #fff, transparent), radial-gradient(2px 2px at 60% 6%, #fff, transparent),
+  radial-gradient(1.5px 1.5px at 40% 11%, #fff, transparent), radial-gradient(2px 2px at 92% 22%, #fff, transparent), radial-gradient(1.5px 1.5px at 6% 30%, #fff, transparent),
+  radial-gradient(1.5px 1.5px at 70% 14%, #fff, transparent), radial-gradient(2px 2px at 15% 92%, #fff, transparent), radial-gradient(1.5px 1.5px at 88% 95%, #fff, transparent); }
+.lua { position: absolute; right: 120px; top: 90px; width: 150px; height: 150px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, #fff7df, #f1dca8 60%, #d7bd7f);
+  box-shadow: 0 0 80px rgba(255, 236, 190, .5); }
+.lua::after { content: ''; position: absolute; left: 30px; top: 40px; width: 28px; height: 22px; border-radius: 50%; background: rgba(180, 150, 90, .35); box-shadow: 50px 40px 0 -4px rgba(180, 150, 90, .3); }
+.morcego { position: absolute; width: 70px; height: 26px; background: #0b0614; clip-path: polygon(0 30%, 18% 0, 30% 40%, 42% 20%, 50% 45%, 58% 20%, 70% 40%, 82% 0, 100% 30%, 78% 100%, 62% 70%, 50% 100%, 38% 70%, 22% 100%); }
+.conteudo { position: absolute; left: 70px; right: 70px; top: 250px; bottom: 300px; z-index: 1; display: flex; flex-direction: column; }
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.cont { font: 800 26px Jakarta; letter-spacing: .08em; color: #ffb35a; }
+.selo { margin-top: 24px; font: 800 22px Inter; letter-spacing: .2em; text-transform: uppercase; color: #ffb35a; }
+h1 { margin-top: 10px; font: 800 80px/1 Jakarta; letter-spacing: -.035em; }
+h1 em { font-style: normal; color: #ff9d3c; text-shadow: 0 0 30px rgba(255, 140, 40, .55); }
+.lide { margin-top: 14px; font: 500 30px/1.4 Inter; color: #d9cbe9; }
+.lide b { color: #fff3dc; }
+
+/* a janela da casa com a radiografia */
+.casa { position: relative; display: grid; grid-template-columns: 1fr 300px; gap: 10px; align-items: end; margin-top: 26px; }
+.janela { position: relative; padding: 16px; border-radius: 26px 26px 14px 14px; background: linear-gradient(180deg, #4a2f1c, #2b1a0f);
+  box-shadow: 0 0 0 4px #120b06, 0 0 60px rgba(255, 150, 50, .25), 0 24px 50px rgba(0, 0, 0, .55); }
+.janela::before { content: 'Radiografia da prova'; position: absolute; left: 50%; top: -18px; translate: -50% 0; padding: 4px 16px; border-radius: 8px; white-space: nowrap;
+  font: 800 19px Inter; letter-spacing: .12em; text-transform: uppercase; color: #1b1035; background: #ffb35a; }
+.janela div { position: relative; height: 640px; border-radius: 12px; overflow: hidden; background: #000; }
+.janela img { position: absolute; left: 50%; top: 50%; height: 100%; transform: translate(-50%, -50%); }
+.guia { position: relative; }
+.guia img { display: block; width: 300px; image-rendering: pixelated; filter: drop-shadow(0 0 20px rgba(255, 150, 50, .35)); }
+.fala { position: absolute; left: -20px; right: 6px; bottom: 100%; margin-bottom: 6px; padding: 14px 16px; border-radius: 16px; font: 700 24px/1.3 Inter; color: #1b1035; background: #fbf3df;
+  box-shadow: 0 0 0 3px #1b1035; }
+.fala::after { content: ''; position: absolute; left: 50%; bottom: -14px; width: 20px; height: 15px; background: #fbf3df; clip-path: polygon(0 0, 100% 0, 50% 100%); }
+.pergunta { margin-top: 26px; font: 700 36px/1.3 Jakarta; letter-spacing: -.015em; }
+.portas { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
+.porta { display: flex; align-items: center; gap: 16px; padding: 16px 18px; border-radius: 18px; background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 2px rgba(255, 179, 90, .4); font: 700 30px/1.15 Jakarta; }
+.porta b { display: grid; place-items: center; flex: none; width: 58px; height: 58px; border-radius: 14px; font: 800 32px Jakarta; color: #1b1035; background: #ffb35a; }
+.porta small { display: block; font: 600 24px Inter; color: #d9cbe9; }
+.guarde { margin-top: 24px; text-align: center; font: 600 28px Inter; color: #ffcf96; }
+
+/* abóboras (objeto simples, não anatomia) */
+.abobora { display: inline-block; width: 92px; height: 86px; flex: none; }
+.abobora svg { width: 100%; height: 100%; overflow: visible; }
+.abobora--acesa svg { filter: drop-shadow(0 0 16px rgba(255, 140, 30, .75)); }
+/* a regra da casa */
+.regra { margin-top: 28px; padding: 24px 26px; border-radius: 24px; background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 2px rgba(255, 179, 90, .45); }
+.regra h2 { font: 800 38px Jakarta; letter-spacing: -.02em; color: #ffcf96; }
+.regra h2 span { display: inline-grid; place-items: center; width: 46px; height: 46px; margin-right: 12px; border-radius: 50%; font: 800 26px Jakarta; color: #1b1035; background: #ffb35a; vertical-align: 4px; }
+.regra p { margin-top: 10px; font: 500 28px/1.42 Inter; color: #ece2f5; }
+.regra p b { color: #fff3dc; }
+.salas { display: grid; gap: 14px; margin-top: 18px; }
+.sala { display: grid; grid-template-columns: 210px 1fr; align-items: center; gap: 20px; padding: 16px 18px; border-radius: 18px; background: rgba(0, 0, 0, .25); }
+.sala .luzes { display: flex; gap: 12px; }
+.sala strong { display: block; font: 800 34px Jakarta; letter-spacing: -.02em; }
+.sala strong em { font-style: normal; color: #ff9d3c; }
+.sala small { display: block; margin-top: 4px; font: 500 25px/1.35 Inter; color: #d9cbe9; }
+
+/* resposta */
+.resposta { margin-top: 26px; display: grid; grid-template-columns: 330px 1fr; gap: 24px; align-items: stretch; }
+.mini { position: relative; border-radius: 22px; overflow: hidden; background: #000; box-shadow: 0 0 0 4px #ffb35a, 0 0 50px rgba(255, 150, 50, .35); min-height: 420px; }
+.mini img { position: absolute; left: 50%; top: 50%; height: 100%; transform: translate(-50%, -50%); }
+.cartao { display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 26px 26px; border-radius: 22px; background: rgba(255, 255, 255, .07); box-shadow: inset 0 0 0 2px rgba(255, 179, 90, .45); }
+.cartao .letra { display: flex; align-items: center; gap: 16px; }
+.cartao .letra b { display: grid; place-items: center; width: 96px; height: 96px; border-radius: 22px; font: 800 62px Jakarta; color: #1b1035; background: #ffb35a; box-shadow: 0 0 30px rgba(255, 150, 50, .6); }
+.cartao .letra span { font: 800 46px/1.05 Jakarta; letter-spacing: -.02em; }
+.cartao .luzes { display: flex; gap: 14px; }
+.cartao p { font: 500 27px/1.4 Inter; color: #ece2f5; }
+.cartao p b { color: #fff3dc; }
+.porques { display: grid; gap: 12px; margin-top: 22px; }
+.porque { display: grid; grid-template-columns: 58px 1fr; gap: 16px; align-items: start; padding: 14px 18px; border-radius: 16px; background: rgba(0, 0, 0, .28); }
+.porque b { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 12px; font: 800 28px Jakarta; color: #f7ecdc; background: #4a3a63; }
+.porque p { font: 500 25px/1.38 Inter; color: #ddd0ea; }
+.porque p strong { color: #fff3dc; }
+.rodape-guia { margin-top: 30px; display: grid; grid-template-columns: 230px 1fr; gap: 26px; align-items: center; }
+.rodape-guia img { width: 230px; image-rendering: pixelated; filter: drop-shadow(0 0 20px rgba(255, 150, 50, .35)); }
+.fala2 { position: relative; padding: 22px 24px; border-radius: 20px; font: 700 30px/1.32 Inter; color: #1b1035; background: #fbf3df; }
+.fala2::before { content: ''; position: absolute; left: -16px; top: 46%; width: 18px; height: 22px; background: #fbf3df; clip-path: polygon(100% 0, 0 50%, 100% 100%); }
+.fala2 small { display: block; margin-top: 8px; font: 600 24px Inter; color: #6a4a2a; }
+.prova { margin-top: 22px; padding: 22px 26px; border-radius: 20px; font: 800 33px/1.28 Jakarta; letter-spacing: -.01em; color: #1b1035; background: linear-gradient(180deg, #ffd08a, #ff9d3c); }
+.prova small { display: block; margin-bottom: 6px; font: 800 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: #6a2c00; }
+.site { margin-top: 26px; text-align: center; font: 600 26px/1.4 Inter; color: #d9cbe9; }
+.site b { display: block; font: 800 36px Jakarta; color: #fff3dc; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg>
+
+<section id="s1-casa" data-question="trauma-0764">
+  <span class="lua"></span><span class="morcego" style="left:640px;top:150px"></span><span class="morcego" style="left:720px;top:205px;transform:scale(.7)"></span>
+  <div class="conteudo">
+    <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="cont">1/3</span></div>
+    <p class="selo">Especial de Halloween · TEOT 2025</p>
+    <h1>A casa assombrada do <em>tálus</em>.</h1>
+    <p class="lide">Na radiografia, uma fratura do tálus. Qual o local e o tipo?</p>
+    <div class="casa">
+      <div class="janela"><div><img src="../../../../public/imagens/trauma/trauma-0764-1.jpeg" alt=""></div></div>
+      <div class="guia"><p class="fala">Hoje à noite a gente conta abóboras.</p><img src="mascote-abobora.png" alt=""></div>
+    </div>
+    <p class="pergunta">A localização da fratura e sua respectiva classificação são:</p>
+    <div class="portas">
+      <div class="porta"><b>A</b><span>Colo do tálus<small>Hawkins II</small></span></div>
+      <div class="porta"><b>B</b><span>Colo do tálus<small>Hawkins III</small></span></div>
+      <div class="porta"><b>C</b><span>Corpo do tálus<small>Hawkins II</small></span></div>
+      <div class="porta"><b>D</b><span>Corpo do tálus<small>Hawkins III</small></span></div>
+    </div>
+    <p class="guarde">Guarde a sua letra. A regra da casa sai no próximo story.</p>
+  </div>
+</section>
+
+<section id="s2-regra" data-question="trauma-0764">
+  <span class="lua"></span><span class="morcego" style="left:620px;top:170px"></span>
+  <div class="conteudo">
+    <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="cont">2/3</span></div>
+    <p class="selo">A regra da casa</p>
+    <h1>Duas perguntas, <em>nesta ordem</em>.</h1>
+    <div class="regra"><h2><span>1</span>Onde está o traço?</h2>
+      <p>O traço que separa o <b>colo</b> é fratura do colo. No <b>corpo</b>, o traço alcança a <b>faceta posterior</b>. A classificação de Hawkins é das fraturas do <b>colo</b>.</p></div>
+    <div class="regra"><h2><span>2</span>Conte as abóboras acesas</h2>
+      <p>Cada articulação em que o corpo do tálus <b>perdeu a relação</b> acende uma abóbora.</p>
+      <div class="salas">
+        <div class="sala"><div class="luzes"><span class="abobora abobora--acesa"><svg viewBox="0 0 92 86"><path d="M46 14 C44 6 48 2 54 2" fill="none" stroke="#3f6b22" stroke-width="6" stroke-linecap="round"/><ellipse cx="30" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="62" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="46" cy="50" rx="24" ry="34" fill="#ff9a2e"/><path d="M27 38 L37 38 L32 28 Z M55 38 L65 38 L60 28 Z" fill="#fff3b0"/><path d="M24 56 Q46 74 68 56 L62 60 L57 55 L52 61 L46 56 L40 61 L35 55 L30 60 Z" fill="#fff3b0"/></svg></span><span class="abobora abobora--apagada"><svg viewBox="0 0 92 86"><path d="M46 14 C44 6 48 2 54 2" fill="none" stroke="#3f6b22" stroke-width="6" stroke-linecap="round"/><ellipse cx="30" cy="50" rx="26" ry="32" fill="#4a3c31"/><ellipse cx="62" cy="50" rx="26" ry="32" fill="#4a3c31"/><ellipse cx="46" cy="50" rx="24" ry="34" fill="#5d4c3f"/><path d="M27 38 L37 38 L32 28 Z M55 38 L65 38 L60 28 Z" fill="#1c1410"/><path d="M24 56 Q46 74 68 56 L62 60 L57 55 L52 61 L46 56 L40 61 L35 55 L30 60 Z" fill="#1c1410"/></svg></span></div>
+          <div><strong>Hawkins <em>II</em></strong><small>Perde a <b>subtalar</b>. A relação tibiotalar (tornozelo) fica preservada.</small></div></div>
+        <div class="sala"><div class="luzes"><span class="abobora abobora--acesa"><svg viewBox="0 0 92 86"><path d="M46 14 C44 6 48 2 54 2" fill="none" stroke="#3f6b22" stroke-width="6" stroke-linecap="round"/><ellipse cx="30" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="62" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="46" cy="50" rx="24" ry="34" fill="#ff9a2e"/><path d="M27 38 L37 38 L32 28 Z M55 38 L65 38 L60 28 Z" fill="#fff3b0"/><path d="M24 56 Q46 74 68 56 L62 60 L57 55 L52 61 L46 56 L40 61 L35 55 L30 60 Z" fill="#fff3b0"/></svg></span><span class="abobora abobora--acesa"><svg viewBox="0 0 92 86"><path d="M46 14 C44 6 48 2 54 2" fill="none" stroke="#3f6b22" stroke-width="6" stroke-linecap="round"/><ellipse cx="30" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="62" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="46" cy="50" rx="24" ry="34" fill="#ff9a2e"/><path d="M27 38 L37 38 L32 28 Z M55 38 L65 38 L60 28 Z" fill="#fff3b0"/><path d="M24 56 Q46 74 68 56 L62 60 L57 55 L52 61 L46 56 L40 61 L35 55 L30 60 Z" fill="#fff3b0"/></svg></span></div>
+          <div><strong>Hawkins <em>III</em></strong><small>Perde a <b>subtalar</b> e a <b>tibiotalar</b>: o corpo sai da pinça.</small></div></div>
+      </div>
+    </div>
+    <div class="rodape-guia"><img src="mascote-velas.png" alt=""><p class="fala2">Volte à radiografia do primeiro story e conte quantas abóboras acendem.<small>A resposta sai às 18h.</small></p></div>
+  </div>
+</section>
+
+<section id="s3-resposta" data-question="trauma-0764">
+  <span class="lua"></span><span class="morcego" style="left:650px;top:160px"></span><span class="morcego" style="left:560px;top:215px;transform:scale(.6)"></span>
+  <div class="conteudo">
+    <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="cont">3/3</span></div>
+    <p class="selo">Resposta · gabarito B</p>
+    <h1>Duas abóboras <em>acesas</em>.</h1>
+    <div class="resposta">
+      <div class="mini"><img src="../../../../public/imagens/trauma/trauma-0764-1.jpeg" alt=""></div>
+      <div class="cartao"><div class="letra"><b>B</b><span>Colo do tálus, Hawkins III</span></div>
+        <div class="luzes"><span class="abobora abobora--acesa"><svg viewBox="0 0 92 86"><path d="M46 14 C44 6 48 2 54 2" fill="none" stroke="#3f6b22" stroke-width="6" stroke-linecap="round"/><ellipse cx="30" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="62" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="46" cy="50" rx="24" ry="34" fill="#ff9a2e"/><path d="M27 38 L37 38 L32 28 Z M55 38 L65 38 L60 28 Z" fill="#fff3b0"/><path d="M24 56 Q46 74 68 56 L62 60 L57 55 L52 61 L46 56 L40 61 L35 55 L30 60 Z" fill="#fff3b0"/></svg></span><span class="abobora abobora--acesa"><svg viewBox="0 0 92 86"><path d="M46 14 C44 6 48 2 54 2" fill="none" stroke="#3f6b22" stroke-width="6" stroke-linecap="round"/><ellipse cx="30" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="62" cy="50" rx="26" ry="32" fill="#e8730f"/><ellipse cx="46" cy="50" rx="24" ry="34" fill="#ff9a2e"/><path d="M27 38 L37 38 L32 28 Z M55 38 L65 38 L60 28 Z" fill="#fff3b0"/><path d="M24 56 Q46 74 68 56 L62 60 L57 55 L52 61 L46 56 L40 61 L35 55 L30 60 Z" fill="#fff3b0"/></svg></span></div>
+        <p>O traço separa o <b>colo</b>, e o corpo perdeu as relações com a <b>subtalar</b> e com a <b>pinça tibiotalar</b>.</p></div>
+    </div>
+    <div class="porques">
+      <div class="porque"><b>A</b><p><strong>Local certo, tipo incompleto.</strong> Hawkins II preserva o tornozelo; aqui o corpo saiu da pinça.</p></div>
+      <div class="porque"><b>C</b><p><strong>Local errado.</strong> O traço é do colo, e a perda tibiotalar também não é tipo II.</p></div>
+      <div class="porque"><b>D</b><p><strong>Gravidade certa, local trocado.</strong> O tipo III é da fratura do colo com luxações, não do corpo.</p></div>
+    </div>
+    <p class="prova"><small>Para a prova</small>Localize colo ou corpo e conte as articulações: subtalar mais tornozelo é Hawkins III.</p>
+    <p class="site">Questões do TEOT e do TARO, comentadas assim.<b>ortoquestoes.com.br</b>o caminho está no nosso perfil</p>
+  </div>
+</section>
+</body></html>
