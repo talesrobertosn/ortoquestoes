@@ -392,7 +392,10 @@ class Tela:
                 linha |= novo
                 for yy, xx in zip(*np.nonzero(novo)):
                     cl = self.cor_linha[q[yy, xx]]
-                    cor_l[yy, xx] = cl if cl is not None else _RAMPAS[self.mat[yy, xx]][0]
+                    if cl is None:
+                        mi = self.mat[yy, xx]
+                        cl = _RAMPAS[mi][max(0, min(MATS[NOMES_MAT[mi]].lo - 1, nivel[yy, xx] - 2))]
+                    cor_l[yy, xx] = cl
         cor = np.where(linha[..., None], cor_l, cor)
         # contorno externo 4-vizinho
         viz = np.zeros_like(op)
@@ -445,6 +448,11 @@ OLHOS = {
         "meio": [".....", "KKKKK", "KPPGK", ".KKK.", "....."],
         "baixo": [".KKK.", "KggGK", "KWPGK", "KPPLK", ".KKK."],
     },
+    "D": {  # 5x6: pupila grande, brilho, íris verde embaixo e do lado
+        "aberto": [".KKK.", "KWPPK", "KPPgK", "KPPGK", "KgGLK", ".KKK."],
+        "meio": [".....", ".....", "KKKKK", "KPPGK", "KgGLK", ".KKK."],
+        "baixo": [".KKK.", "KggGK", "KWPPK", "KPPGK", "KPPLK", ".KKK."],
+    },
     "C": {  # menor, mais realista
         "aberto": [".KK.", "KWPK", "KGLK", ".KK."],
         "meio": ["....", "KKKK", "KGLK", ".KK."],
@@ -459,7 +467,7 @@ OLHOS = {
 OLHO_FECHADO = {"g": ["K...K", ".KKK."], "p": ["K.K", ".K."]}   # dormindo (arco para baixo)
 OLHO_FELIZ = {"g": [".KKK.", "K...K"], "p": [".K.", "K.K"]}     # feliz (arco para cima)
 BOCAS = {
-    "w": [".M.M.", "M.M.M"],          # boquinha em w (sob o nariz)
+    "w": ["M..M", ".MM."],            # boquinha (sob o nariz)
     "w_p": ["M.M"],
     "aberta": [".MMM.", "MRRRM", "MRTRM", ".MMM."],
     "aberta_p": [".M.", "MRM", ".M."],
@@ -545,8 +553,9 @@ def cabeca(t: Tela, xf: Xf, olhos="aberto", olhar=(0.0, 0.0), boca="w", orelhas=
                  xf((lado * (rx - 3.0) + fx * 0.3, ry * 0.85))]
             t.pinta(poligono(P, espessura=xf.r(1.5)), "pelo", g, luz=luz - 0.05)
     # focinho e queixo creme
-    t.pinta(elipse(xf((fx, est.nariz_dy + 1.0)), xf.r(4.9), xf.r(3.1), achata=0.6), "creme", g, luz=luz + 0.05)
-    t.pinta(elipse(xf((fx, est.nariz_dy - 0.6)), xf.r(2.0), xf.r(2.2), achata=0.5), "creme", g, luz=luz + 0.1)
+    t.pinta(elipse(xf((fx - 1.6, est.nariz_dy + 1.4)), xf.r(2.9), xf.r(2.4), achata=0.6), "creme", g, luz=luz + 0.05)
+    t.pinta(elipse(xf((fx + 1.6, est.nariz_dy + 1.4)), xf.r(2.9), xf.r(2.4), achata=0.6), "creme", g, luz=luz + 0.05)
+    t.pinta(elipse(xf((fx, est.nariz_dy + 2.8)), xf.r(2.2), xf.r(1.6), achata=0.5), "creme", g, luz=luz)
     # listras: três na testa (simétricas) e duas em cada bochecha
     for i, dx in enumerate((-2.7, 0.0, 2.7)):
         top = -ry * 0.95 + (0.3 if i != 1 else 0)
@@ -1132,9 +1141,9 @@ def vfx_feliz(t, k):
 
 # ═══════════════════════════════ candidatos (prancha de design) ═══════════════════════════════
 CANDIDATOS = {
-    "A": Estilo(),                                                                   # olhos altos escuros, bochechas fofas
-    "B": Estilo(olho="B", cab_rx=10.0, cab_ry=8.4, olho_dx=4.8, bochecha=0.9),       # olhos redondos com íris verde
-    "C": Estilo(olho="C", cab_rx=9.2, cab_ry=7.8, tufo=0.4, orelha=1.15, olho_dx=4.2, olho_dy=0.0, bochecha=0.8),  # mais realista
+    "A": Estilo(olho="A", cab_rx=11.0, cab_ry=9.4, orelha=0.8, tufo=0.6, olho_dx=4.8),       # olhos altos escuros
+    "B": Estilo(olho="B", cab_rx=11.0, cab_ry=9.4, orelha=0.8, tufo=0.6, olho_dx=5.0),       # redondos, íris verde
+    "D": Estilo(olho="D", cab_rx=11.0, cab_ry=9.4, orelha=0.8, tufo=0.6, olho_dx=5.0),       # grandes 5x6
 }
 
 
