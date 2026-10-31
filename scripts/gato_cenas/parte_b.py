@@ -26,7 +26,7 @@ _NOVOS = {
     "b_verde": G.Mat(["#1d4628", "#2c6a3a", "#3f9150", "#64b468", "#9bd68a"], 1, 4),
     "b_vinho": G.Mat(["#4e1622", "#7a2434", "#a8384a", "#cf5a64", "#ef8c8c"], 1, 4),
     "b_ouro": G.Mat(["#6e3f0c", "#a86f16", "#dca42a", "#ffd25a", "#fff1a6"], 1, 4),
-    "b_coruja": G.Mat(["#3e220f", "#6a3e1d", "#93602d", "#bb8445", "#dcac6c"], 1, 4),
+    "b_coruja": G.Mat(["#3a1f0e", "#6b3a1a", "#9a5a26", "#c4823c", "#e6b06a"], 1, 4),
 }
 for _n, _m in _NOVOS.items():
     if _n not in G.MATS:
@@ -123,10 +123,6 @@ def enrolado(t, x0, p, ang=0.0, pata=None):
     piv = base((cx, cy))
     ca, sa = math.cos(math.radians(ang)), math.sin(math.radians(ang))
 
-    class _X(G.Xf):
-        pass
-    xf = _X(base.x, base.y, s)
-
     def gira(q):
         x, y = base(q)
         dx, dy = x - piv[0], y - piv[1]
@@ -142,8 +138,8 @@ def enrolado(t, x0, p, ang=0.0, pata=None):
     gc = t.grupo(True)
     t.pinta(G.elipse(gira((-8.6, -5.6)), 5.8, 4.8, ang), "pelo", gc, luz=0.02)
     t.decal(G.capsula(gira((-12.0, -6.4)), gira((-9.8, -3.6)), 0.6))
-    if pata is not None:
-        G.perna(t, gira((6.5, -5.5)), gira(pata), 2.1, luz=0.02, pata_rx=2.4, pata_ry=1.5)
+    if pata is not None:   # patinha esticada para a frente, saindo de baixo do queixo
+        G.perna(t, gira((6.0, -4.0)), gira(pata), 2.0, luz=0.04, pata_rx=2.4, pata_ry=1.5)
     hx_, hy_ = gira(p.cab)
     xh = G.Xf(hx_, hy_, s, p.cab_ang + ang)
     gp = t.grupo(True)
@@ -186,7 +182,7 @@ def puf(t, x, y, k):
 
 
 # ═══════════════════════════════ pergaminho ═══════════════════════════════
-PROF = (3.6, -7.0)     # direção da profundidade (o chão visto de cima, em 3/4): para cima e para a direita
+PROF = (6.0, -4.6)     # direção da profundidade (o chão visto de cima, em 3/4): para cima e para a direita
 
 
 def pergaminho(t, x_esq, x_rolo, r=3.4, fita=True, sobe=0.0):
@@ -260,7 +256,7 @@ def livro_lado(t, x0, y1, larg, alt, capa, ang=0.0, piv=None, luz=0.0):
     t.decal(G.capsula(R((x0 + 0.8, y1 - 0.8)), R((x0 + 0.8, y1 - alt + 0.8)), 0.45), mat="b_ouro", so=(capa,))
 
 
-PILHA_X = 67.0
+PILHA_X = 70.0
 
 
 def pilha(t, ang=0.0, desliza=0.0, brilha=False):
@@ -269,7 +265,7 @@ def pilha(t, ang=0.0, desliza=0.0, brilha=False):
     livro_lado(t, PILHA_X, CHAO - 0.5, 21, 6.0, "capa", luz=-0.05)
     livro_lado(t, PILHA_X + 2.0, CHAO - 6.5, 17, 5.0, "b_vinho")
     livro_lado(t, PILHA_X + 0.5, CHAO - 11.5, 18, 4.5, "b_ouro", luz=-0.05)
-    x = PILHA_X - 5.0 - desliza
+    x = PILHA_X - 3.5 - desliza
     y = CHAO - 16.0
     livro_lado(t, x, y, 15, 5.0, "b_verde", ang=ang, piv=(PILHA_X + 1.0, y), luz=0.05)
 
@@ -284,6 +280,7 @@ _BORB_COR = {"A": "#3d2f8f", "B": "#8fb6ff", "C": "#ffffff", "b": "#c3a3ff", "d"
 
 
 def borboleta(t, x, y, k, rastro=True):
+    # k já vem somado ao deslocamento da linha (fase contínua entre os trechos)
     """Borboleta mágica pequena (azul e violeta, corpo dourado), com um halo leve e um rastro de brilhos."""
     fase = ["aberta", "meia", "fechada", "meia"][k % 4]
     for dx, dy in ((-5, 0), (5, 0), (0, -4), (0, 4), (-4, -3), (4, -3), (-4, 3), (4, 3)):
@@ -295,33 +292,47 @@ def borboleta(t, x, y, k, rastro=True):
 
 
 # ═══════════════════════════════ coruja ═══════════════════════════════
-def coruja(t, x, y, k):
-    """Corujinha bibliotecária (original, pequena, de lado voando para a direita): marrom, peito creme, óculos
-    redondos dourados e cachecol verde. k = fase da batida de asa (0..3)."""
-    asa = [-1.0, 0.0, 1.0, 0.0][k % 4]      # -1 em cima, 1 embaixo
-    # asa de trás (mais escura) atrás do corpo
+def coruja(t, x, y, k, esc=1.35):
+    """Corujinha bibliotecária (original, pequena, de lado voando para a direita): marrom, disco do rosto creme,
+    óculos redondos dourados e cachecol verde com a ponta esvoaçando. k = fase da batida de asa (0 em cima,
+    2 embaixo)."""
+    X = G.Xf(x, y, esc)
+    R = X.r
+    asa = [(-3.5, -9.0), (-9.0, -3.5), (-4.5, 5.0), (-9.0, -3.5)][k % 4]   # ponta da asa
+    # asa de trás, mais escura
     ga = t.grupo(True)
-    ponta = (x - 4.0, y - 5.5 + asa * 7.5)
-    t.pinta(G.poligono([(x - 1.0, y - 1.5), ponta, (x - 6.5, y - 2.0 + asa * 3.5), (x - 3.5, y + 0.5)], 1.2), "b_coruja", ga, luz=-0.25)
+    t.pinta(G.poligono([X((-0.5, -1.8)), X((asa[0] - 1.0, asa[1] + (1.5 if asa[1] < 0 else -1.0))), X((-4.0, 0.0))], R(1.0)),
+            "b_coruja", ga, luz=-0.35)
+    # ponta do cachecol esvoaçando para trás
+    gc = t.grupo(True)
+    onda = [0.0, 1.0, 0.0, -1.0][k % 4]
+    t.pinta(G.tubo([X((0.5, -0.4)), X((-3.0, -1.0 + onda * 0.5)), X((-6.0, -0.2 - onda))], (R(0.9), R(0.7))), "b_verde", gc, luz=0.05)
+    # rabo e corpo, barriga creme com pintinhas
     g = t.grupo(True)
-    t.pinta(G.elipse((x - 1.0, y + 0.5), 5.2, 4.2, -12), "b_coruja", g)
-    t.pinta(G.poligono([(x - 5.5, y + 1.0), (x - 9.5, y + 0.5), (x - 9.0, y + 3.0), (x - 5.0, y + 3.2)], 1.0), "b_coruja", g, luz=-0.05)
-    t.decal(G.elipse((x + 1.0, y + 2.0), 3.0, 2.4), mat="creme")
+    t.pinta(G.poligono([X((-4.0, 0.8)), X((-8.0, 1.6)), X((-7.2, 3.6)), X((-3.0, 3.2))], R(1.0)), "b_coruja", g, luz=-0.1)
+    t.pinta(G.elipse(X((-0.6, 1.0)), R(4.6), R(3.6), -10), "b_coruja", g)
+    t.decal(G.elipse(X((1.8, 2.4)), R(2.6), R(2.0)), mat="creme")
+    t.decal(G.circulo(X((1.2, 2.6)), 0.6), desl=-1, so=("creme",))
+    t.decal(G.circulo(X((2.6, 3.2)), 0.6), desl=-1, so=("creme",))
+    # cabeça com disco facial creme e tufos
     gh = t.grupo(True)
-    hx_, hy_ = x + 3.0, y - 3.5
-    t.pinta(G.circulo((hx_, hy_), 4.0), "b_coruja", gh, luz=0.05)
-    for lado in (-1, 1):   # tufos das orelhas
-        t.pinta(G.poligono([(hx_ + lado * 1.6 - 1.0, hy_ - 3.0), (hx_ + lado * 2.6 + 0.4, hy_ - 6.0),
-                            (hx_ + lado * 2.8 + 1.0, hy_ - 2.6)], 0.8), "b_coruja", gh, luz=0.1)
-    t.decal(G.elipse((hx_ + 1.0, hy_ + 0.6), 3.0, 2.3), mat="b_perg")
-    t.decal(G.capsula((hx_ - 3.0, hy_ + 3.5), (hx_ + 2.5, hy_ + 3.8), 0.9), mat="b_verde")   # cachecol
-    # asa da frente
+    hc = (2.8, -3.8)
+    t.pinta(G.circulo(X(hc), R(3.8)), "b_coruja", gh, luz=0.05)
+    for lado in (-1, 1):
+        t.pinta(G.poligono([X((hc[0] + lado * 1.4 - 0.9, hc[1] - 2.9)), X((hc[0] + lado * 2.6 + 0.2, hc[1] - 5.4)),
+                            X((hc[0] + lado * 2.8 + 0.9, hc[1] - 2.4))], R(0.8)), "b_coruja", gh, luz=0.12)
+    t.decal(G.elipse(X((hc[0] + 1.1, hc[1] + 0.9)), R(3.0), R(2.6)), mat="creme")
+    # cachecol na frente do pescoço
+    gn = t.grupo(True)
+    t.pinta(G.capsula(X((hc[0] - 2.4, hc[1] + 3.6)), X((hc[0] + 2.2, hc[1] + 3.9)), R(0.85)), "b_verde", gn, luz=0.1)
+    # asa da frente, mais clara
     gf = t.grupo(True)
-    ponta = (x - 3.0, y - 6.5 + asa * 9.0)
-    t.pinta(G.poligono([(x + 0.5, y - 1.0), ponta, (x - 6.0, y - 1.5 + asa * 4.0), (x - 2.5, y + 1.6)], 1.2), "b_coruja", gf, luz=0.08)
-    # óculos e bico (moldes)
-    t.molde(["ggg.ggg", "gPgggPg", "ggg.ggg"], hx_ + 1.0, hy_ + 0.2, cores={"g": "#e8b23a", "P": "#24140c"})
-    t.molde(["b", "b"], hx_ + 1.0, hy_ + 2.4, cores={"b": "#f0a040"})
+    t.pinta(G.poligono([X((0.0, -1.0)), X(asa), X((-5.5, 0.6)), X((-2.0, 1.6))], R(1.1)), "b_coruja", gf, luz=0.15)
+    # óculos (dois aros dourados com a ponte) e bico
+    c = X((hc[0] + 1.0, hc[1] + 0.2))
+    t.molde(["ggg.ggg", "gPgggPg", "ggg.ggg"], c[0], c[1], cores={"g": "#f2c040", "P": "#24140c"}, contorno="#4a2a10")
+    b = X((hc[0] + 1.0, hc[1] + 2.4))
+    t.molde(["b"], b[0], b[1], cores={"b": "#e58a2e"})
 
 
 # ═══════════════════════════════ PERGAMINHO ═══════════════════════════════
@@ -344,13 +355,13 @@ def _pose_perg_toca(k):
         dict(olhar=olhar, cab_ang=4, orelhas=(-10, -10), inclina=1),
     ][k]
     rolo = [0, 0, 0, 1.0, 1.0, 2.0, 3.5, 5.5][k]
-    perg = dict(x_esq=ROLO_X, x_rolo=ROLO_X + rolo, r=3.4 - 0.9 * min(rolo / 26.0, 1), fita=k < 5)
+    perg = dict(x_esq=ROLO_X, x_rolo=ROLO_X + rolo, r=3.4 - 0.9 * min(rolo / 21.6, 1), fita=k < 5)
     return gato, perg
 
 
 def _pose_perg_abre(k):
-    xs = [5.5, 9.0, 13.5, 18.0, 21.5, 24.0, 25.6, 26.2][k]
-    r = 3.4 - 0.9 * min(xs / 26.0, 1)
+    xs = [5.5, 8.0, 11.5, 15.0, 18.0, 20.0, 21.2, 21.6][k]
+    r = 3.4 - 0.9 * min(xs / 21.6, 1)
     vira = [0, 0.2, 0.4, 0.5, 0.6, 0.6, 0.6, 0.6][k]
     gato = dict(olhar=(1, 1), cab_ang=4, orelhas=(-10, -10), inclina=1 + 0.5 * (k > 2), vira=vira)
     if k == 0:
@@ -361,7 +372,7 @@ def _pose_perg_abre(k):
 def _pose_perg_pula(k):
     alt = [0, 5.5, 7.0, 4.5, 0.0, 1.2, 0.0, 0.0][k]
     sobe = [0, 3.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0][k]
-    xr = ROLO_X + [26.2, 27.4, 27.0, 26.6, 26.6, 26.6, 26.6, 26.6][k]
+    xr = ROLO_X + [21.6, 22.8, 22.4, 22.0, 22.0, 22.0, 22.0, 22.0][k]
     perg = dict(x_esq=ROLO_X, x_rolo=xr, r=2.5, fita=False, sobe=sobe)
     if k == 0:
         return _pose_perg_abre(7)[0], perg
@@ -385,7 +396,7 @@ def _pose_perg_pula(k):
 def _pose_perg_senta(k):
     if k == 0:
         return _pose_perg_pula(7)
-    perg_aberto = dict(x_esq=ROLO_X, x_rolo=ROLO_X + 26.6, r=2.5, fita=False)
+    perg_aberto = dict(x_esq=ROLO_X, x_rolo=ROLO_X + 22.0, r=2.5, fita=False)
     gato = [
         None,
         dict(cab_ang=-7, olhos="feliz", respira=1.0, cauda_u=0.8, cauda_alta=0.9, cauda_w=0.8, orelhas=(-4, -4)),
@@ -397,9 +408,9 @@ def _pose_perg_senta(k):
         {},
     ][k]
     perg = [None, perg_aberto, perg_aberto, perg_aberto,
-            dict(x_esq=ROLO_X + 12, x_rolo=ROLO_X + 26.6, r=2.5, fita=False),
-            dict(x_esq=ROLO_X + 27.5, x_rolo=ROLO_X + 27.5, r=3.4, fita=False),
-            dict(x_esq=ROLO_X + 37, x_rolo=ROLO_X + 37, r=3.4, fita=False),
+            dict(x_esq=ROLO_X + 10, x_rolo=ROLO_X + 22.0, r=2.5, fita=False),
+            dict(x_esq=ROLO_X + 23.0, x_rolo=ROLO_X + 23.0, r=3.4, fita=False),
+            dict(x_esq=ROLO_X + 31, x_rolo=ROLO_X + 31, r=3.4, fita=False),
             None][k]
     return gato, perg
 
@@ -437,15 +448,15 @@ def _pose_livro_segura(k):
     gato = [
         None,
         dict(orelhas=(-14, -14), olhar=(1, -1), vira=0.5, cab_ang=-8, inclina=9, dy=-1.5, boca="aberta",
-             pata_perto=(9.0, -13.0), cauda_u=0.6, cauda_alta=0.4),
+             pata_perto=(12.0, -13.0), cauda_u=0.6, cauda_alta=0.4),
         dict(orelhas=(-12, -12), olhos="fechado", vira=0.5, cab_ang=-6, inclina=10, dy=-2.0, boca="aberta",
-             pata_perto=(9.5, -13.5), pata_longe=(1.0, 0.0), cauda_u=0.8, cauda_alta=0.8, cauda_w=0.5),
+             pata_perto=(13.0, -13.5), pata_longe=(1.0, 0.0), cauda_u=0.8, cauda_alta=0.8, cauda_w=0.5),
         dict(orelhas=(-12, -12), olhos="fechado", vira=0.5, cab_ang=-6, inclina=11, dy=-2.0, boca="aberta",
-             pata_perto=(10.5, -14.0), cauda_u=0.9, cauda_alta=1.0, cauda_w=-0.6),
+             pata_perto=(14.0, -14.0), cauda_u=0.9, cauda_alta=1.0, cauda_w=-0.6),
         dict(orelhas=(-8, -8), olhar=(1, -1), vira=0.4, cab_ang=-4, inclina=8, dy=-1.0,
-             pata_perto=(10.0, -14.0), cauda_u=0.9, cauda_alta=0.9, cauda_w=0.6),
+             pata_perto=(13.5, -14.0), cauda_u=0.9, cauda_alta=0.9, cauda_w=0.6),
         dict(orelhas=(-6, -6), olhar=(1, -1), vira=0.4, cab_ang=-4, inclina=6, dy=-0.5,
-             pata_perto=(8.5, -12.0), cauda_u=0.8, cauda_alta=0.7, cauda_w=-0.3),
+             pata_perto=(11.0, -12.0), cauda_u=0.8, cauda_alta=0.7, cauda_w=-0.3),
         dict(orelhas=(-2, -2), olhar=(1, 0), vira=0.3, cab_ang=-2, inclina=3,
              pata_perto=(4.0, -3.5), cauda_u=0.7, cauda_alta=0.6),
         dict(orelhas=(0, 0), olhar=(1, 0), vira=0.3, cab_ang=-1, inclina=1, cauda_u=0.6, cauda_alta=0.5),
@@ -551,12 +562,12 @@ def _borb_salta(k):
     return gato, traj[k]
 
 
-def _linha_borb(pose):
+def _linha_borb(pose, desloc):
     def f(t, k):
         gato, pos = pose(k)
         sentado(t, **gato)
         if pos:
-            borboleta(t, pos[0], pos[1], k)
+            borboleta(t, pos[0], pos[1], k + desloc)
     return f
 
 
@@ -766,8 +777,8 @@ def segredo_coruja(t, k):
         deitado(t, orelhas=orelha)
     else:
         deitado(t)
-    x = -10 + k * 16.5
-    y = 14 + 2.5 * math.sin(k * 1.3)
+    x = -12 + k * 17.0
+    y = 20 + 2.0 * math.sin(k * 1.4)
     coruja(t, x, y, k)
 
 
@@ -776,27 +787,27 @@ def _livrinho(t, x, abre, brilha):
     y = CHAO - 0.5
     g = t.grupo(True)
     if abre <= 0:
-        t.pinta(G.poligono([(x - 4.5, y), (x + 4.5, y), (x + 4.5, y - 3.2), (x - 4.5, y - 3.2)], 1.2), "b_ouro", g, luz=0.05)
-        t.decal(G.capsula((x - 3.5, y - 1.6), (x + 4.4, y - 1.6), 0.45), mat="papel", so=("b_ouro",))
-        t.decal(G.circulo((x - 0.5, y - 2.8), 0.8), mat="b_vinho", so=("b_ouro",))
+        t.pinta(G.poligono([(x - 6, y), (x + 6, y), (x + 6, y - 4.2), (x - 6, y - 4.2)], 1.2), "b_ouro", g, luz=0.05)
+        t.decal(G.capsula((x - 4.5, y - 2.0), (x + 5.9, y - 2.0), 0.5), mat="papel", so=("b_ouro",))
+        t.decal(G.circulo((x - 0.5, y - 3.6), 1.0), mat="b_vinho", so=("b_ouro",))
     else:
-        h = 2.0 + 4.5 * abre
+        h = 2.0 + 6.0 * abre
         for lado in (-1, 1):
             gp = t.grupo(True)
-            t.pinta(G.poligono([(x, y), (x + lado * 6.0, y - h * 0.5), (x + lado * 6.0, y - h * 0.5 - 1.4),
-                                (x, y - 1.4)], 0.8), "b_ouro", gp, luz=0.0)
-            t.pinta(G.poligono([(x, y - 1.2), (x + lado * 5.2, y - h * 0.5 - 1.0), (x + lado * 5.0, y - h - 1.0),
-                                (x, y - h * 0.4 - 1.6)], 1.0), "papel", gp, luz=0.2 if lado < 0 else 0.05)
+            t.pinta(G.poligono([(x, y), (x + lado * 7.5, y - h * 0.5), (x + lado * 7.5, y - h * 0.5 - 1.6),
+                                (x, y - 1.6)], 0.8), "b_ouro", gp, luz=0.0)
+            t.pinta(G.poligono([(x, y - 1.4), (x + lado * 6.6, y - h * 0.5 - 1.2), (x + lado * 6.4, y - h - 1.2),
+                                (x, y - h * 0.4 - 1.8)], 1.0), "papel", gp, luz=0.2 if lado < 0 else 0.05)
     if brilha:
         for dx, dy in ((-6, -2), (6, -3), (0, -6), (-3, -5), (3, -5)):
             t.px(x + dx, y + dy, "#ffe9a0", a=0.35, atras=True)
 
 
 def segredo_livro(t, k):
-    LX = 70
+    LX = 71
     if k == 0:
         sentado(t)
-        faisca(t, LX, 47)
+        faisca(t, LX, 47, "#ffe27a", contorno="#a86f16")
         return
     if k == 7:
         return sentado(t)
@@ -814,21 +825,21 @@ def segredo_livro(t, k):
         _livrinho(t, LX, 0, True)
     elif k == 2:
         _livrinho(t, LX, 0.5, True)
-        faisca(t, LX, 42)
+        faisca(t, LX, 42, "#ffe27a", contorno="#a86f16")
     elif k == 3:
         _livrinho(t, LX, 1.0, True)
         # a luzinha sai do livro: bolinha clara com halo
-        t.molde([".ww.", "wWWw", "wWWw", ".ww."], LX, 38, cores={"w": "#fff1a6", "W": "#ffffff"}, contorno="#dca42a")
+        t.molde([".ww.", "wWWw", "wWWw", ".ww."], LX, 38, cores={"w": "#fff1a6", "W": "#ffffff"}, contorno="#a86f16")
         for a in range(6):
-            faisca(t, LX + 6 * math.cos(a), 38 + 5 * math.sin(a), "#fff1a6")
+            faisca(t, LX + 6 * math.cos(a), 38 + 5 * math.sin(a), "#ffe27a", contorno="#a86f16" if a % 2 else None)
     elif k == 4:
         _livrinho(t, LX, 1.0, True)
-        t.molde([".w.", "wWw", ".w."], LX + 2, 30, cores={"w": "#fff1a6", "W": "#ffffff"}, contorno="#dca42a")
+        t.molde([".w.", "wWw", ".w."], LX + 2, 30, cores={"w": "#fff1a6", "W": "#ffffff"}, contorno="#a86f16")
         for a in (0.5, 2.0, 3.6, 5.0):
-            faisca(t, LX + 2 + 8 * math.cos(a), 31 + 6 * math.sin(a), "#fff1a6")
+            faisca(t, LX + 2 + 8 * math.cos(a), 31 + 6 * math.sin(a), "#ffe27a", contorno="#a86f16")
     elif k == 5:
         _livrinho(t, LX, 0.4, False)
-        faisca(t, LX + 4, 22, "#fff1a6")
+        faisca(t, LX + 4, 22, "#ffe27a", contorno="#a86f16")
     elif k == 6:
         puf(t, LX, 47, 1)
 
@@ -837,9 +848,9 @@ def segredo_desliza(t, k):
     """O gato dormindo rola devagar para a frente, estica uma patinha e volta a se enroscar."""
     if k in (0, 7):
         return deitado(t)
-    ang = [0, 5, 11, 17, 18, 9, 2, 0][k]
-    dx = [0, 0.5, 1.5, 2.5, 3.0, 1.5, 0.5, 0][k]
-    pata = {3: (12.0, -4.0), 4: (15.0, -6.0), 5: (10.0, -3.0)}.get(k)
+    ang = [0, -5, -11, -17, -18, -10, -3, 0][k]
+    dx = [0, -0.5, -1.5, -2.5, -3.0, -1.5, -0.5, 0][k]
+    pata = {3: (20.0, -4.5), 4: (23.0, -7.0), 5: (17.0, -3.0)}.get(k)
     p = G.Pose(cab=(9.0, -8.2), cab_ang=12, olhos="fechado", boca="w" if k in (3, 4) else "nada",
                respira=[0.5, 0.6, 0.7, 0.9, 1.0, 0.5, 0.2, 0.5][k],
                cauda=((-14.5, -5.0), (-10.0, -3.0), (-2.0, -2.6), (4.5, -2.8), (8.5 + (k in (3, 4)) * 2, -4.6 - (k == 4) * 2)),
@@ -855,9 +866,9 @@ LINHAS = {
     'livro-ve': _linha_livro(_pose_livro_ve),
     'livro-segura': _linha_livro(_pose_livro_segura),
     'livro-descansa': _linha_livro(_pose_livro_descansa),
-    'borboleta-ve': _linha_borb(_borb_ve),
-    'borboleta-pata': _linha_borb(_borb_pata),
-    'borboleta-salta': _linha_borb(_borb_salta),
+    'borboleta-ve': _linha_borb(_borb_ve, 0),
+    'borboleta-pata': _linha_borb(_borb_pata, 7),
+    'borboleta-salta': _linha_borb(_borb_salta, 14),
     'cochilo-orelha': cochilo_orelha,
     'cochilo-olho': cochilo_olho,
     'cochilo-ajeita': cochilo_ajeita,

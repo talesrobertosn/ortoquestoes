@@ -163,9 +163,34 @@ LIVRO_X = 71.0
 
 
 def livro(t, folha=0.0, x=LIVRO_X):
+    """Livro aberto no chão. As linhas de texto de G.livro_aberto são pixels soltos que ficariam por cima do gato
+    quando ele deita a cabeça no livro: aqui elas são guardadas e só entram (em fim_livro) onde o livro aparece."""
     if not _objetos():
         return
-    G.livro_aberto(t, (x, B.CHAO - 0.5), folha, s=1.5)
+    g0, guardados, px = len(t.linha), [], t.px
+    t.px = lambda x_, y_, cor, a=1.0, atras=False: guardados.append((x_, y_, cor, a))
+    try:
+        G.livro_aberto(t, (x, B.CHAO - 0.5), folha, s=1.5)
+    finally:
+        del t.px
+    t.texto_livro = (guardados, g0, len(t.linha))
+
+
+def fim_livro(t):
+    guardados, g0, g1 = getattr(t, "texto_livro", ((), 0, 0))
+    for x, y, cor, a in guardados:
+        xi, yi = int(round(x)), int(round(y))
+        if 0 <= xi < t.w and 0 <= yi < t.h and g0 <= t.grp[yi, xi] < g1:
+            t.px(x, y, cor, a)
+
+
+def com_livro(fn):
+    """Linha do estudo: desenha e, no fim, devolve as letras do livro só onde o livro ficou à mostra."""
+    def f(t, k):
+        fn(t, k)
+        fim_livro(t)
+    f.__doc__ = fn.__doc__
+    return f
 
 
 def luzinha(t, x, y, forca=1.0, chao=False, k=0):
@@ -332,7 +357,7 @@ def espreguicar_acorda(t, k):
 
 def _alonga(t, u, **mudar):
     """Espreguiçada de pé (u = 0 em pé .. 1 patas da frente esticadas e traseiro para cima)."""
-    q = (-7.5, -12.5 - 1.5 * u)
+    q = (-7.5, -12.5 - 3.0 * u)
     o = (6.0 + 1.0 * u, -12.5 + 6.0 * u)
     pes = ((-6.0, 0.0), (-8.6 - 0.5 * u, 0.0), (7.5 + 9.0 * u, 0.0), (5.0 + 8.5 * u, 0.0))
     kw = dict(quadril=q, ombro=o, pes=pes, cab=(10.5 + 1.5 * u, -22.5 + 9.0 * u), cab_ang=-8 * u,
@@ -474,7 +499,7 @@ LER = [(-1, 1), (0, 1), (1, 1)]
 
 
 def _lendo(t, olhar=(0, 1), nod=0.0, **mudar):
-    kw = dict(cab_ang=9.0 + nod, cab=(3.2, -24.0), olhar=olhar)
+    kw = dict(cab_ang=16.0 + nod, cab=(3.8, -23.4), olhar=olhar, orelhas=(-4.0, -4.0))
     kw.update(mudar)
     sentado(t, **kw)
 
@@ -485,7 +510,7 @@ def estudo_olha(t, k):
     if k == 0:
         B.repouso_sentado(t)
     elif k == 1:
-        sentado(t, cab_ang=4.0, cab=(2.9, -24.3), olhar=(1, 1), orelhas=(-4, -4))
+        sentado(t, cab_ang=8.0, cab=(3.2, -24.0), olhar=(1, 1), orelhas=(-2, -2))
     else:
         olhar = [None, None, (-1, 1), (0, 1), (1, 1), (-1, 1), (0, 1), (1, 1)][k]
         _lendo(t, olhar, nod=1.0 if k >= 5 else 0.0)
@@ -600,20 +625,24 @@ def luz_ve(t, k):
         luzinha(t, pos[0], pos[1], pos[2], chao=True, k=k)
 
 
+def _agachado(t, k):
+    w = [0, 0, 1, -1, 1, -1, 0.5, 0][k]
+    alto = [0, 0, 0.5, 0.5, 1.0, 1.0, 1.5, 3.0][k]
+    de_pe(t, XP, quadril=(-7.5 + 0.8 * w, -9.5 - alto), ombro=(6.0, -8.0),
+          pes=((-5.0, 0), (-8.0, 0), (8.0, 0), (5.5, 0)), cab=(11.0, -15.5), olhar=(1, 1),
+          orelhas=(-10, -10), boca="nada" if k < 7 else "w",
+          cauda=((-12.0, -10.0 - alto), (-17.0, -8.0 - alto * 0.5 + w), (-21.0, -7.0 - w),
+                 (-24.0, -8.0 + 1.5 * w)))
+
+
 def luz_agacha(t, k):
     """Agacha, mira, e rebola o traseiro antes do pulo."""
     if k == 0:
         sentado(t, olhar=(1, 1), orelhas=(-10, -10), cab_ang=5, vira=0.3, cauda=cauda_frente(0.4, -0.8, 0.8))
     else:
-        w = [0, 0, 1, -1, 1, -1, 0.5, 0][k]
-        alto = [0, 0, 0.5, 0.5, 1.0, 1.0, 1.5, 3.0][k]
-        de_pe(t, XP, quadril=(-7.5 + 0.8 * w, -9.5 - alto), ombro=(6.0, -8.0),
-              pes=((-5.0, 0), (-8.0, 0), (8.0, 0), (5.5, 0)), cab=(11.0, -15.5), olhar=(1, 1),
-              orelhas=(-10, -10), boca="nada" if k < 7 else "w",
-              cauda=((-12.0, -10.0 - alto), (-17.0, -8.0 - alto * 0.5 + w), (-21.0, -7.0 - w),
-                     (-24.0, -8.0 + 1.5 * w)))
+        _agachado(t, k)
     x = [73, 72, 71, 72, 72, 71, 72, 72][k]
-    luzinha(t, x, 50, 1.0, chao=True, k=k)
+    luzinha(t, x, 50, 1.0, chao=True, k=k + 1)
 
 
 SALTA_FIM = dict(cab=(11.0, -23.5), cab_ang=-12, olhar=(1, -1), orelhas=(-4, -4))
@@ -622,9 +651,7 @@ SALTA_FIM = dict(cab=(11.0, -23.5), cab_ang=-12, olhar=(1, -1), orelhas=(-4, -4)
 def luz_salta(t, k):
     """Pulo atrás da luzinha: ela escapa para cima e o gato cai de pé, olhando para o alto."""
     if k == 0:
-        de_pe(t, XP, quadril=(-7.5, -12.5), ombro=(6.0, -8.0), pes=((-5.0, 0), (-8.0, 0), (8.0, 0), (5.5, 0)),
-              cab=(11.0, -15.5), olhar=(1, 1), orelhas=(-10, -10),
-              cauda=((-12.0, -13.0), (-17.0, -11.5), (-21.0, -10.0), (-24.0, -11.0)))
+        _agachado(t, 7)
     elif k == 1:
         de_pe(t, 49.0, dy=-3, quadril=(-7.0, -11.0), ombro=(6.5, -17.0), larg=13,
               pes=((-9.5, 0), (-12.0, 0), (10.0, -13.0), (8.0, -12.0)),
@@ -651,7 +678,7 @@ def luz_salta(t, k):
               cauda=((-12.0, -11.0), (-17.0, -15.0), (-17.0, -21.0), (-13.0, -23.0)))
     else:
         de_pe(t, 54.0 if k == 6 else 53.0, **(SALTA_FIM if k == 7 else dict(cab=(11.0, -22.0), cab_ang=-8, olhar=(1, -1))))
-    pos = [(72, 50, True), (71, 38, False), (71, 17, False), (69, 8, False), (71, 5, False), (72, 5, False),
+    pos = [(72, 50, True), (71, 38, False), (75, 13, False), (78, 5, False), (76, 5, False), (75, 5, False),
            (73, 6, False), (74, 7, False)][k]
     luzinha(t, pos[0], pos[1], 1.0, chao=pos[2], k=k)
 
@@ -678,7 +705,7 @@ def luz_olha(t, k):
             interrogacao(t, 66 + (k == 3), 12 - (k == 3))
     pos = [(74, 7, 1.0), (75, 6, 0.8), (77, 6, 0.55), (79, 5, 0.3), None, None, None, None][k]
     if pos:
-        luzinha(t, pos[0], pos[1], pos[2], k=k)
+        luzinha(t, pos[0], pos[1], pos[2], k=k + 1)
 
 
 LINHAS = {
@@ -694,9 +721,9 @@ LINHAS = {
     'novelo-toca': novelo_toca,
     'novelo-salta': novelo_salta,
     'novelo-senta': novelo_senta,
-    'estudo-olha': estudo_olha,
-    'estudo-vira': estudo_vira,
-    'estudo-deita': estudo_deita,
+    'estudo-olha': com_livro(estudo_olha),
+    'estudo-vira': com_livro(estudo_vira),
+    'estudo-deita': com_livro(estudo_deita),
     'banho-lambe': banho_lambe,
     'banho-rosto': banho_rosto,
     'banho-orelha': banho_orelha,
