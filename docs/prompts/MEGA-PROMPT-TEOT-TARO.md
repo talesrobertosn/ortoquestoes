@@ -26,8 +26,9 @@ A fila e o placar saem do acervo, nunca da memória:
     python3 scripts/biblioteca/fila_teot_taro.py              # fila inteira
 
 Tema que mais cai = subtema com 15 ou mais questões TEOT/TARO (88 subtemas em 31/10/2026, 2.291 questões).
-Questão refeita = comentário com geradoEm a partir de 2026-10-30. Tema feito = resumo com 45 KB ou mais e nenhuma
-questão TEOT/TARO pendente. Só pare quando o --resumo disser 88 de 88 (ou "FILA CONCLUÍDA" no --proximo). Não
+Questão pronta = comentário com geradoEm a partir de 2026-10-30 E citada num bloco !questoes de um resumo com 45 KB
+ou mais (subtemas guarda-chuva se espalham por vários capítulos). Tema feito = nenhuma questão TEOT/TARO pendente.
+Nos subtemas guarda-chuva, trabalhe capítulo a capítulo, começando pelo resumo que destrava mais pendentes. Só pare quando o --resumo disser 88 de 88 (ou "FILA CONCLUÍDA" no --proximo). Não
 pare para perguntar, não pare ao fim de um tema, não pare porque o contexto encheu: o contexto é resumido
 automaticamente; depois de cada resumo de contexto, releia o CHECKPOINT-GERAL.md e rode --proximo.
 
