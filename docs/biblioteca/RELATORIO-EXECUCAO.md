@@ -169,7 +169,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 712 | ATQ parte 4: medição do desgaste, biologia dos detritos e imagem (resumo novo `callaghan-desgaste-osteolise`) | 45 KB, Callaghan caps. 18 e 21 (com trechos dos caps. 23, 25 e 26) | 23 simulados de Fellowship Quadril, ligados ao resumo como treino |
 | 714 | ATQ parte 5: história, biomecânica e cinemática (resumo novo `callaghan-historia-biomecanica`) | 45 KB, Callaghan caps. 1, 10 e 11 | 17 simulados de Fellowship Quadril, ligados ao resumo como treino |
 | 716 | Tabelas soltas viram !tabela (68 em 15 resumos) e 26 figuras do Callaghan nos resumos | leitor com negrito nas células | os resumos do Rockwood de tornozelo e fise distal ficaram como estavam (proveniência revisada) |
-| (este PR) | ATQ parte 6: anatomia e acessos (resumo novo `callaghan-anatomia-acessos`) | 45 KB, Callaghan caps. 2, 3, 6, 7 e 8, com 3 figuras novas recortadas | 21 simulados, 4 deles com figura do livro |
+| 717 | ATQ parte 6: anatomia e acessos (resumo novo `callaghan-anatomia-acessos`) | 45 KB, Callaghan caps. 2, 3, 6, 7 e 8, com 3 figuras novas recortadas | 21 simulados, 4 deles com figura do livro |
+| (este PR) | Malformações congênitas da mão refeitas (prioridade TEOT/TARO) | 61 KB, Green 7 caps. 35 a 38 e Tachdjian cap. 12, 4 figuras do Green | 54 comentários no jeito novo (44 de TARO, TEOT e outras provas, 10 simulados) |
 
 ## Próximo
 

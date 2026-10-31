@@ -36,6 +36,10 @@ Não publique enquanto aparecer "CURTO".
 4. **Preserve** os gabaritos, os `alerta` e os ids das questões. Reescreva o texto por cima, com `scripts/aplicar_comentarios.py`, que substitui o comentário.
 5. **Confira de novo a letra da correta contra o gabarito do acervo** antes de aplicar, como no método do guia.
 
+## Ordem de prioridade (Tales, 31/10/2026)
+
+**Foco principal nas questões do TEOT e do TARO, depois o resto**, até acabar todos os capítulos. Escolha o próximo tema pelo número de questões TEOT/TARO ligadas ao resumo com comentário fraco; os simulados do Fellowship do quadril (bloco 5 do Callaghan) ficam para depois.
+
 ## O que refazer, tema por tema
 
 Os rascunhos atuais de cada ciclo estão em `OrtoQuestoes-Biblioteca/lotes/<pasta>/`, nos arquivos `lote_a.py` e `oficiais*.py`. Use-os só como ponto de partida e reescreva.
@@ -63,7 +67,7 @@ Os rascunhos atuais de cada ciclo estão em `OrtoQuestoes-Biblioteca/lotes/<past
 | 13 | `tachdjian6-ddq` (9 KB) | Tachdjian cap. 13 (PDF 499 a 611) | pediatria-1419 a 1426 | pediatria-0005, 0012, 0024, 0028, 0037, 0072, 0075, 0080, 0093, 0114, 0133, 0134, 0176, 0195, 0272, 0293, 0297, 0351, 0352, 0417, 0425, 0450, 0456, 0483 |
 | 14 | `green8-tendoes-flexores` (7 KB) | Green cap. 6 | mao-2592 a 2597 | mao-0019, 0079, 0091, 0092, 0230, 0231, 0320, 0522, 0572, 0591 |
 | 12 | `netter-anatomia-pe-tornozelo` (9 KB) | Netter caps. 9 e 10, Hoppenfeld | pe-tornozelo-0425 a 0430 | pe-tornozelo-0006, 0023, 0062, 0068, 0116, 0120, 0122, 0124, 0183, 0184, 0187, 0188, 0233, 0283 |
-| 9 | `green8-malformacoes-congenitas` (15 KB) | Green caps. 35 a 38 | mao-2582 a 2591 | mao-0007, 0020, 0024, 0038, 0047, 0061, 0073, 0075, 0083, 0157, 0180, 0249, 0307, 0339, 0424, 0439, 0489, 0516, 0524, 0562 |
+| 9 (**feito em 31/10/2026**: resumo 61 KB com Green 7 e Tachdjian, 4 figuras e 12 tabelas; 54 comentários no jeito novo, todo o subtema fora as provas protegidas da mão) | `green8-malformacoes-congenitas` (era 15 KB) | Green caps. 35 a 38 | mao-2582 a 2591 | mao-0007, 0020, 0024, 0038, 0047, 0061, 0073, 0075, 0083, 0157, 0180, 0249, 0307, 0339, 0424, 0439, 0489, 0516, 0524, 0562 |
 | 7 | `netter-anatomia-quadril-coxa` (16 KB) | Netter caps. 7 e 8 | quadril-0715 a 0722 | quadril-0007, 0014, 0017, 0030, 0047, 0067, 0070, 0071, 0083, 0087, 0131, 0132, 0133, 0135, 0138, 0141, 0161, 0189, 0190, 0193 |
 | 5 | `green8-neuropatias-compressao` (15 KB) | Green cap. 26 | mao-2574 a 2581 | as 17 das PRs 666 a 668 (`lotes/mao-gerais/05-neuropatia-ulnar/`) |
 | 4 | `netter-anatomia-ombro-braco` (12 KB) | Netter caps. 3 e 4 | ombro-cotovelo-0696 a 0703 | as 12 da PR 663 (`lotes/netter/02-anatomia-ombro/`) |
