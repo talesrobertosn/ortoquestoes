@@ -11,6 +11,12 @@ export const PLANOS = [
   { id: 'anual', nome: 'Anual', total: ANUAL, meses: 12, destaque: true, chamada: ECONOMIA_ANUAL === 'metade do preço' ? 'O ano todo de estudo pela metade do preço.' : `O ano todo de estudo, ${ECONOMIA_ANUAL} que o mensal.` },
 ] as const
 
+/**
+ * Preço de abertura (Tales, 31/10/2026): o semestral e o anual vão subir para quem ainda não assina,
+ * e quem assinar antes mantém o valor nas renovações. Desligar no dia do reajuste.
+ */
+export const PRECO_DE_ABERTURA = true
+
 export const real = (valor: number) => valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
 /** O plano de menor custo por dia, para comparação: a cobrança é por período. */
