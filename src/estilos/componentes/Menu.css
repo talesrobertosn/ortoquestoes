@@ -1,5 +1,5 @@
 /* Menu (31/10/2026): a organização de antes (busca, dia a dia em cartões, planos e grupos em lista) com o acabamento
-   pixel do site. Todo ícone é a mesma capinha de livro em pixel, com a cor do cartão ou do grupo. Usa as cores do
+   pixel do site. Todo ícone é um objeto em pixel (a mesma técnica do salão da Biblioteca), um por página. Usa as cores do
    tema, então funciona no claro e no escuro. Carregado só quando o menu abre (MenuGeral.tsx). */
 
 .mn { --mn-contorno: #1b1208; --mn-sombra: color-mix(in srgb, var(--mn-contorno) 22%, transparent); display: grid; gap: 1rem; }
@@ -13,11 +13,11 @@
 .painel:has(.mn) .painel__corpo { padding: 0.25rem 1rem calc(1rem + env(safe-area-inset-bottom)); }
 .mn .mn-busca { margin: 0; }
 
-/* A capinha: um livrinho em pixel (lombada escura à esquerda, brilho em cima, contorno em degrau). */
-.mn-capa { flex: none; display: grid; place-items: center; width: 26px; height: 28px; background: var(--capa); color: #fff7e2;
-  box-shadow: inset 4px 0 0 rgba(0, 0, 0, 0.24), inset 0 3px 0 rgba(255, 255, 255, 0.22), 0 0 0 2px var(--mn-contorno), 2px 2px 0 2px var(--mn-sombra); }
-.mn-capa--grande { width: 40px; height: 44px; box-shadow: inset 6px 0 0 rgba(0, 0, 0, 0.24), inset 0 4px 0 rgba(255, 255, 255, 0.22), 0 0 0 3px var(--mn-contorno), 3px 3px 0 3px var(--mn-sombra); }
-.mn-capa svg { margin-left: 2px; }
+/* O objeto em pixel de cada página, numa caixa fixa (as linhas ficam alinhadas mesmo com desenhos de alturas diferentes).
+   No escuro, um pires claro atrás do desenho mantém o contorno preto visível. */
+.mn-obj { flex: none; display: grid; place-items: center; width: 34px; height: 32px; }
+.mn-obj--grande { width: 54px; height: 48px; }
+:root[data-tema="escuro"] .mn-obj { border-radius: 4px; background: color-mix(in srgb, #f3e4c1 82%, transparent); }
 @keyframes mn-pula { 50% { transform: translateY(-3px) rotate(-5deg); } }
 
 .mn-cadeado { flex: none; display: grid; place-items: center; width: 20px; height: 20px; background: #e9b54a; color: var(--mn-contorno); box-shadow: inset 0 0 0 2px var(--mn-contorno), inset 0 3px 0 #ffe39a; }
@@ -39,9 +39,9 @@
 .mn-principais { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.6rem; }
 .mn-principal { position: relative; display: grid; justify-items: center; align-content: start; gap: 0.15rem; min-width: 0; padding: 0.95rem 0.4rem 0.75rem; text-align: center;
   border: 2px solid var(--traco); background: var(--superficie); color: var(--texto); text-decoration: none; transition: transform 0.1s steps(2), border-color 0.1s, box-shadow 0.1s; }
-.mn-principal .mn-capa { margin-bottom: 0.55rem; }
+.mn-principal .mn-obj { margin-bottom: 0.45rem; }
 .mn-principal:hover, .mn-principal:focus-visible { transform: translate(-2px, -2px); border-color: var(--mn-contorno); box-shadow: 4px 4px 0 var(--mn-sombra); color: var(--texto); outline: 0; }
-.mn-principal:hover .mn-capa { animation: mn-pula 0.4s steps(3); }
+.mn-principal:hover .mn-obj { animation: mn-pula 0.4s steps(3); }
 .mn-principal[aria-current="page"] { border-color: var(--verdete); background: var(--verdete-veu); }
 .mn-principal strong { font-size: 0.95rem; font-weight: 750; line-height: 1.2; }
 .mn-principal small { color: var(--texto-2); font-size: 0.74rem; line-height: 1.3; }
@@ -68,7 +68,7 @@
 .mn-item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 0.5rem 0.55rem 0.5rem 0.6rem;
   border: 2px solid transparent; color: var(--texto); text-decoration: none; transition: background-color 0.08s; }
 .mn-item:hover { background: var(--superficie-2); color: var(--texto); }
-.mn-item:hover .mn-capa { animation: mn-pula 0.4s steps(3); }
+.mn-item:hover .mn-obj { animation: mn-pula 0.4s steps(3); }
 .mn-item:focus-visible { outline: 2px solid var(--verdete); outline-offset: 1px; }
 .mn-item[aria-current="page"] { border-color: color-mix(in srgb, var(--verdete) 45%, transparent); background: var(--verdete-veu); }
 .mn-item__texto { min-width: 0; }
@@ -84,7 +84,7 @@
 @media (max-width: 52rem) {
   .mn-principais { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
   .mn-principal { padding: 0.8rem 0.25rem 0.6rem; }
-  .mn-principal .mn-capa { margin-bottom: 0.45rem; }
+  .mn-principal .mn-obj { margin-bottom: 0.35rem; }
   .mn-principal small { display: none; }
   .mn__grupos { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
 }
@@ -94,7 +94,7 @@
   .mn-planos small { white-space: normal; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .mn-principal:hover .mn-capa, .mn-item:hover .mn-capa { animation: none; }
+  .mn-principal:hover .mn-obj, .mn-item:hover .mn-obj { animation: none; }
   .mn-hoje__linha, .mn-principal, .mn-planos { transition: none; }
 }
 
