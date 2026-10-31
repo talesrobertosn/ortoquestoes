@@ -188,7 +188,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 751 | Tíbia e fíbula da criança (Rockwood and Wilkins' Fractures in Children, cap. 29), refação TEOT/TARO pelo FLUXO-MESTRE | 22 para 62 KB, 2 figuras | 6 comentários (5 oficiais e conceitos-basicos-0362), 16 simulados reescritos no estilo da prova e 3 novos (pediatria-1472 a 1474) |
 | 752 | Revisão: simulados pediatria-1451 a 1468 no estilo da prova e moldura dos resumos 08 e 30 | 2 resumos com Campbell 15 no lugar da moldura | 18 simulados e comentários refeitos |
 | 754 | Estilo dos simulados antigos: pé (cap. 31) e tornozelo (cap. 30) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 22 simulados reescritos no molde da banca (pediatria-1330 a 1344 e 1153 a 1167), conceito mantido; portão corrigido para não confundir DIAS-TACHDJIAN com citação de livro |
-| (este PR) | Estilo dos simulados antigos: clavícula e escápula (cap. 20) e fise proximal da tíbia (cap. 27) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 31 simulados reescritos no molde da banca, conceito mantido com o nome completo do livro |
+| 755 | Estilo dos simulados antigos: clavícula e escápula (cap. 20) e fise proximal da tíbia (cap. 27) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 31 simulados reescritos no molde da banca, conceito mantido com o nome completo do livro |
+| (este PR) | Estilo dos simulados antigos: quadril (cap. 24) e colo do rádio e olécrano (cap. 11) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 30 simulados reescritos no molde da banca, conceito mantido |
 
 ## Próximo
 
