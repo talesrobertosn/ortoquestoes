@@ -153,7 +153,7 @@ export function Ranking() {
     minhaPosicao={minhaPosicao} eu={eu} linhas={atuais} periodo={periodo} meuTotal={meuTotal} aoEncontrar={() => definirPedidoEncontrar((n) => n + 1)} />
   const lugares = (lista ?? []).filter((l) => l.posicao <= 3).map((l) => ({
     posicao: l.posicao, nome: l.apelido, ehVoce: l.eh_voce, valor: l.total.toLocaleString('pt-BR'), rotulo: periodo === 'semana' ? 'questões na semana' : 'questões',
-    selos: <><EmblemasDoNome ids={l.emblemas} totalGeral={l.total_geral} tamanho={24} /><Fogueira dias={l.sequencia ?? 0} tamanho={18} /><SeloServico servico={l.servico} /><MovimentoSelo linha={l} /></>,
+    selos: <><EmblemasDoNome ids={l.emblemas} totalGeral={l.total_geral} tamanho={36} /><Fogueira dias={l.sequencia ?? 0} tamanho={26} /><SeloServico servico={l.servico} /><MovimentoSelo linha={l} /></>,
   }))
 
   return <div className="cem">

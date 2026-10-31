@@ -172,6 +172,9 @@
 .cem-heroi__poeira i { position: absolute; width: 0.3%; aspect-ratio: 1; background: #fff3c4; border-radius: 1px; opacity: 0; animation: cem-poeira 8s linear infinite; }
 @keyframes cem-poeira { 0% { opacity: 0; transform: translate(0, 0); } 20% { opacity: 0.7; } 80% { opacity: 0.5; } 100% { opacity: 0; transform: translate(1.2vw, 2.4vw); } }
 .cem-pausado *, .cem-pausado { animation-play-state: paused !important; }
+.cem-heroi__visita { position: absolute; display: block; }
+.cem-heroi__visita .gato-pixel, .cem-heroi__visita .coruja-pixel { width: 100%; height: 100%; }
+.cem-heroi__visita .coruja-pixel { --coruja-escala: 1; }
 
 /* Cerimônia do novo campeão: a luz cresce, a placa brilha, o nome entra e sobem fagulhas douradas (uma vez). */
 .cem-heroi--cerimonia .cem-heroi__luz { animation: cem-luz-festa 1.4s ease-out 2; }

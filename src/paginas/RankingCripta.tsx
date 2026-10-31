@@ -56,7 +56,7 @@ export function RankingCripta() {
       cabecalho={<TituloArena rotulo="Torneio de Flashcards · Beta" titulo="Os que desceram mais fundo" sub="Conta o maior andar alcançado no jogo, conferido pelo servidor." />}
       lugares={(linhas ?? []).slice(0, 3).map((l) => ({
         posicao: l.posicao, nome: l.apelido, ehVoce: l.ehVoce, valor: `andar ${l.valor}`, rotulo: 'o maior',
-        selos: <EmblemasFlashcards vitrine={l.emblemas} flashcards={l.emblemasFlashcards} tamanho={24} />,
+        selos: <EmblemasFlashcards vitrine={l.emblemas} flashcards={l.emblemasFlashcards} tamanho={36} />,
       }))} />
 
     <div className="cem-barra"><AbasRanking atual="flashcards" /></div>
@@ -78,7 +78,7 @@ export function RankingCripta() {
           <span className="cem-linha__avatar" aria-hidden="true">{iniciais(l.apelido)}</span>
           <span className="cem-linha__quem">
             <span className="cem-linha__nome">{l.apelido}{l.ehVoce && <span className="cem-voce">você</span>}</span>
-            <span className="cem-linha__selos"><EmblemasFlashcards vitrine={l.emblemas} flashcards={l.emblemasFlashcards} tamanho={22} /></span>
+            <span className="cem-linha__selos"><EmblemasFlashcards vitrine={l.emblemas} flashcards={l.emblemasFlashcards} tamanho={30} /></span>
           </span>
           <span className="cem-linha__placar">
             <b className="numerico"><small className="cem-linha__andar">andar</small> {l.valor}</b>

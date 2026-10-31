@@ -27,8 +27,8 @@ const Linha = memo(function Linha({ linha, lider, semana }: { linha: LinhaRankin
     <span className="cem-linha__quem">
       <span className="cem-linha__nome">{linha.apelido}{linha.eh_voce && <span className="cem-voce">você</span>}</span>
       <span className="cem-linha__selos">
-        <EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} />
-        <Fogueira dias={linha.sequencia ?? 0} tamanho={18} />
+        <EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={32} />
+        <Fogueira dias={linha.sequencia ?? 0} tamanho={24} />
         <SeloServico servico={linha.servico} />
         {linha.eh_voce && <a className="cem-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={12} /> {linha.emblemas?.length ? 'Trocar emblemas' : 'Escolher emblemas'}</a>}
       </span>
