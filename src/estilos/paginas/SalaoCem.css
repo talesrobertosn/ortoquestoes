@@ -259,6 +259,9 @@
   scroll-margin: 40vh 0;
 }
 .cem-linhas > .cem-linha:first-child { border-top: 0; }
+/* No Torneio não há movimento: quatro colunas (posição, iniciais, nome, andar). */
+.cem-linha--torneio { grid-template-columns: 2.75rem 2rem minmax(0, 1fr) minmax(6rem, 11rem); }
+.cem-linha__andar { font-size: 0.75rem; font-weight: 700; color: var(--texto-2); }
 .cem-linha:hover { background: var(--superficie-2); }
 .cem-linha__pos { font-family: var(--fonte-pixel); font-size: 1.5rem; line-height: 1; text-align: right; color: var(--texto); }
 .cem-linha--dez .cem-linha__pos { color: var(--ouro-texto, #7a5710); }
@@ -327,6 +330,24 @@
 .cem-regras p { margin: 0 0 var(--e-3); max-width: 76ch; color: var(--texto-2); line-height: 1.6; }
 .cem-regras p strong { color: var(--texto); }
 
+/* ---------- Conquistas: a galeria de troféus ---------- */
+.cem-galeria {
+  position: relative; isolation: isolate; overflow: hidden; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--e-5);
+  min-height: 17rem; padding: clamp(1.25rem, 2.4vw, 2.25rem); border-radius: 20px; color: var(--cem-tinta);
+  background-color: #12141c; background-size: cover; background-position: 50% 40%; image-rendering: pixelated;
+}
+.cem-galeria::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(8, 10, 14, 0.78) 0%, rgba(8, 10, 14, 0.45) 55%, rgba(8, 10, 14, 0.3) 100%); }
+.cem-galeria h1 { margin: 0.2rem 0; font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.03em; font-size: clamp(2rem, 1.2rem + 2.6vw, 3rem); color: var(--cem-tinta); text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55); }
+.cem-galeria__texto { max-width: 36rem; }
+.cem-galeria__placar {
+  display: grid; justify-items: center; gap: 2px; padding: var(--e-4) var(--e-5); border-radius: var(--raio-cartao, 16px); background: var(--cem-vidro);
+  box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.14); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); text-align: center;
+}
+.cem-galeria__placar img { image-rendering: pixelated; }
+.cem-galeria__placar strong { font-family: var(--fonte-pixel); font-weight: 400; font-size: 3rem; line-height: 0.9; color: var(--cem-ouro-claro); }
+.cem-galeria__placar small { font-size: 1.5rem; color: var(--cem-tinta-2); }
+.cem-galeria__placar span { font-size: var(--corpo-menor); color: var(--cem-tinta-2); }
+
 /* ---------- Telas médias e celular ---------- */
 @media (max-width: 64rem) {
   .cem-heroi__cena { grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); min-height: 30rem; }
@@ -383,6 +404,7 @@
   .cem-linha__mov:empty { display: none; }
   .cem-linha__placar { grid-area: placar; min-width: 4.5rem; }
   .cem-linha__barra { width: 4.5rem; justify-self: end; }
+  .cem-linha--torneio { grid-template-columns: 2.25rem minmax(0, 1fr) auto; grid-template-areas: "pos quem placar"; }
   .cem-bau { grid-template-columns: auto minmax(0, 1fr) auto; padding: var(--e-4); }
   .cem-bau__vitrine { grid-column: 1 / -1; grid-row: 2; }
   .cem-bau__seta { grid-row: 1; grid-column: 3; }

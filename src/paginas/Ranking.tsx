@@ -236,20 +236,21 @@ export function Conquistas({ escolher = false }: { escolher?: boolean } = {}) {
   const { perfil, carregado, nomeExibido, salvarVitrine, comVitrine } = usarPerfilRanking(sessao)
   const { metricas, streak, conquistadas, total } = usarConquistas({ comLendarios: true })
   usarPublicarSequencia(sessao, streak.atual, streak.ateDia)
-  return <div className="empilha-2 rk">
-    <section className="rk-heroi rk-heroi--conquistas">
-      <div className="rk-heroi__texto">
-        <p className="rk-heroi__selo"><Icone nome="medalha" tamanho={16} /> Inventário</p>
-        <h1>Conquistas</h1>
-        <p>Cada questão, cada dia de estudo e cada acerto destravam emblemas. Escolha três para aparecer ao lado do seu nome no ranking.</p>
+  return <div className="cem cem--conquistas">
+    {/* A galeria de troféus do castelo: a mesma escadaria do Salão dos Cem, com o contador num vidro escuro. */}
+    <section className="cem-galeria" aria-labelledby="cem-galeria-t" style={{ backgroundImage: `url(${recurso('ranking/cem/escadaria-960.webp')})` }}>
+      <div className="cem-galeria__texto">
+        <p className="cem-heroi__rotulo">Galeria de troféus</p>
+        <h1 id="cem-galeria-t">Conquistas</h1>
+        <p className="cem-heroi__sub">Cada questão, cada dia de estudo e cada acerto destravam emblemas. Escolha três para aparecer ao lado do seu nome no ranking.</p>
       </div>
-      <div className="rk-heroi__cartao">
-        <img src={recurso('emblemas/podio-1.png')} alt="" width={64} height={64} className="medalha--arte" />
-        <strong className="rk-heroi__posicao">{conquistadas}<small>/{total}</small></strong>
-        <span className="rk-heroi__rotulo">conquistas desbloqueadas</span>
+      <div className="cem-galeria__placar">
+        <img src={recurso('emblemas/podio-1.png')} alt="" width={56} height={56} />
+        <strong className="numerico">{conquistadas}<small>/{total}</small></strong>
+        <span>conquistas desbloqueadas</span>
       </div>
     </section>
-    <AbasRanking atual="conquistas" conquistadas={conquistadas} total={total} />
+    <div className="cem-barra"><AbasRanking atual="conquistas" conquistadas={conquistadas} total={total} /></div>
     <Inventario metricas={metricas} nome={sessao ? nomeExibido : 'Você'} vitrine={perfil.emblemas} salvarVitrine={salvarVitrine} podeEscolher={!!sessao && carregado && comVitrine} abrirEscolha={escolher} />
   </div>
 }
