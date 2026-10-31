@@ -146,7 +146,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 702 | Metástases ósseas e fratura patológica | 47 KB, Tabela 27.1 (MIRELS) | 61, com os simulados antigos 0370 a 0383 |
 | 703 | Hérnia de disco lombar, torácica e cervical | 54 KB | 50 (coluna-0422 pendente: hematoma subdural sem fonte nos livros) |
 | 704 | Estante da Biblioteca: o Campbell volta a ser um livro só | (sistema) | |
-| (este) | Anatomia da coluna e vias de acesso | 45 KB, com o Netter cap. 2 | 84, todo o subtema |
+| 705 | Anatomia da coluna e vias de acesso | 45 KB, com o Netter cap. 2 | 84, todo o subtema |
+| (este) | Instabilidade do ombro | 46 KB, Campbell cap. 47 e Rockwood cap. 35 | 65 (os 7 que já estavam no padrão ficaram); 0448 saiu da vitrine da página inicial por ter alerta |
 
 ## Melhorias de sistema feitas no caminho
 

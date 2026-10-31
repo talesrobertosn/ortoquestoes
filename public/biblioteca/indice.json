@@ -666,15 +666,15 @@
   },
   {
    "id": "campbell14-instabilidade-ombro",
-   "versao": 1,
-   "titulo": "Instabilidade anterior do ombro",
+   "versao": 2,
+   "titulo": "Instabilidade do ombro",
    "especialidade": "ombro-cotovelo",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "14ª edição (2021)",
-   "capitulo": "Capítulo 47 · Luxações recidivantes (ombro)",
-   "resumo": "Fatores de recidiva (idade: 90% abaixo de 20 anos, 10% acima de 40; esporte de contato; hiperfrouxidão; defeito ósseo) e imobilização; manguito e tuberosidade acima de 40 anos; ligamentos glenoumerais superior, médio e inferior; teste do sulco, GAGEY e BEIGHTON; incidências (rotação interna, West Point, STRYKER), ressonância, artrorressonância e tomografia; glenoid track (on-track e off-track); BANKART, remplissage, LATARJET e os limites de perda óssea; ISIS; nervos em risco.",
+   "capitulo": "Capítulo 47 · Luxações recidivantes (ombro), com o capítulo 35 do Rockwood and Green's Fractures in Adults",
+   "resumo": "O ombro responde por quase 50% das luxações; a idade é o maior fator de recidiva (90% abaixo de 20 anos, 60% de 20 a 40, 10% acima de 40), com esporte de contato, hiperfrouxidão e defeito ósseo; acima de 40, manguito roto em 30% (mais de 80% acima de 60) e tuberosidade; glenoumeral superior = restritor inferior em 0 grau, médio = rotação externa em abduções baixas, inferior = principal a partir de 45 graus; BANKART é a lesão mais vista, mas não a essencial; HILL-SACHS posterolateral; HAGL; sulco em 0 grau = intervalo, em 45 graus = complexo inferior; GAGEY; BEIGHTON; rotação interna e STRYKER para HILL-SACHS, West Point para a glenoide; tomografia 3D para osso; glenoid track (83% da glenoide menos o defeito; Campbell usa 84%); perda subcrítica de 13,5%; ISIS (acima de 6 = 70% de recidiva); remplissage com o infraespinal; LATARJET de 17,3% a 30%, enxerto acima de 30%; nervo axilar na luxação (13,5%) e musculocutâneo no LATARJET; posterior: McLAUGHLIN.",
    "acesso": "gratis",
-   "minutos": 5,
+   "minutos": 33,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -682,29 +682,49 @@
      "radar": "fundamento"
     },
     {
-     "id": "quem-luxa-de-novo",
-     "titulo": "Quem luxa de novo",
+     "id": "quem-luxa-e-quem-volta-a-luxar",
+     "titulo": "Quem luxa, e quem volta a luxar",
      "radar": "confirmado"
     },
     {
-     "id": "os-ligamentos-e-o-exame",
-     "titulo": "Os ligamentos e o exame",
+     "id": "a-anatomia-que-segura-o-ombro",
+     "titulo": "A anatomia que segura o ombro",
      "radar": "confirmado"
     },
     {
-     "id": "a-imagem-e-o-glenoid-track",
-     "titulo": "A imagem e o glenoid track",
+     "id": "as-lesoes-da-instabilidade",
+     "titulo": "As lesões da instabilidade",
      "radar": "confirmado"
     },
     {
-     "id": "o-tratamento-cirurgico",
-     "titulo": "O tratamento cirúrgico",
+     "id": "a-historia-e-o-exame",
+     "titulo": "A história e o exame",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-imagem-e-o-osso",
+     "titulo": "A imagem e o osso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-tratamento-da-instabilidade-anterior",
+     "titulo": "O tratamento da instabilidade anterior",
      "radar": "confirmado"
     },
     {
      "id": "o-latarjet",
      "titulo": "O LATARJET",
      "radar": "confirmado"
+    },
+    {
+     "id": "instabilidade-posterior-e-multidirecional",
+     "titulo": "Instabilidade posterior e multidirecional",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -713,18 +733,25 @@
     "ombro-cotovelo-0331",
     "ombro-cotovelo-0347",
     "ombro-cotovelo-0572",
+    "ombro-cotovelo-0448",
+    "ombro-cotovelo-0552",
     "ombro-cotovelo-0026",
     "ombro-cotovelo-0350",
-    "ombro-cotovelo-0330",
     "ombro-cotovelo-0041",
     "ombro-cotovelo-0457",
+    "ombro-cotovelo-0199",
+    "ombro-cotovelo-0499",
+    "ombro-cotovelo-0089",
+    "ombro-cotovelo-0002",
+    "ombro-cotovelo-0063",
+    "ombro-cotovelo-0330",
+    "ombro-cotovelo-0404",
     "ombro-cotovelo-0069",
     "ombro-cotovelo-0392",
     "ombro-cotovelo-0560",
-    "ombro-cotovelo-0063",
-    "ombro-cotovelo-0089",
     "ombro-cotovelo-0313",
     "ombro-cotovelo-0369",
+    "ombro-cotovelo-0309",
     "ombro-cotovelo-0076",
     "ombro-cotovelo-0360",
     "ombro-cotovelo-0020",
@@ -736,17 +763,45 @@
     "ombro-cotovelo-0204",
     "ombro-cotovelo-0398",
     "ombro-cotovelo-0416",
-    "ombro-cotovelo-0377"
+    "ombro-cotovelo-0377",
+    "ombro-cotovelo-0385",
+    "ombro-cotovelo-0141",
+    "ombro-cotovelo-0017",
+    "ombro-cotovelo-0187",
+    "ombro-cotovelo-0430",
+    "ombro-cotovelo-0400"
    ],
    "treino": [
     "ombro-cotovelo-0712",
     "ombro-cotovelo-0713",
+    "ombro-cotovelo-0584",
+    "ombro-cotovelo-0586",
     "ombro-cotovelo-0714",
+    "ombro-cotovelo-0588",
+    "ombro-cotovelo-0545",
+    "ombro-cotovelo-0547",
+    "ombro-cotovelo-0587",
+    "ombro-cotovelo-0581",
     "ombro-cotovelo-0717",
+    "ombro-cotovelo-0576",
+    "ombro-cotovelo-0577",
+    "ombro-cotovelo-0544",
+    "ombro-cotovelo-0548",
     "ombro-cotovelo-0715",
     "ombro-cotovelo-0716",
+    "ombro-cotovelo-0582",
+    "ombro-cotovelo-0583",
+    "ombro-cotovelo-0589",
+    "ombro-cotovelo-0590",
     "ombro-cotovelo-0719",
-    "ombro-cotovelo-0718"
+    "ombro-cotovelo-0546",
+    "ombro-cotovelo-0585",
+    "ombro-cotovelo-0591",
+    "ombro-cotovelo-0592",
+    "ombro-cotovelo-0593",
+    "ombro-cotovelo-0594",
+    "ombro-cotovelo-0718",
+    "ombro-cotovelo-0595"
    ],
    "subtemas": [
     "Instabilidade anterior do ombro"
