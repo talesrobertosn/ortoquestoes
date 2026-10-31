@@ -64,7 +64,7 @@ armadilha: Responder mama ou próstata na origem desconhecida: são incomuns nes
 
 **Distal ao cotovelo ou ao joelho.** **Se a lesão é distal ao cotovelo ou ao joelho, o pulmão é o primário mais provável**. A metástase pulmonar também pode ter o aspecto característico de uma **"mordida" na cortical** (Campbell, cap. 27, p. 1028 e 1029). O Rockwood lembra que metástases distais ao cotovelo são raras e, quando acontecem, vêm mais do pulmão, da mama ou do rim; e que uma **lesão de base cortical num adulto abaixo do cotovelo ou do joelho** é um achado radiográfico altamente sugestivo de doença metastática (cap. 25). As lesões do rádio e da ulna podem ser tratadas com hastes flexíveis ou placas com cimento.
 
-!questoes central=tumores-0051 relacionadas=tumores-0130,tumores-0270,tumores-0355,tumores-0072,tumores-0201
+!questoes central=tumores-0051 relacionadas=tumores-0130,tumores-0270,tumores-0355,tumores-0072,tumores-0201 treino=tumores-0373
 conceito: Lesão metastática distal ao cotovelo ou ao joelho é, mais provavelmente, de pulmão, que pode dar uma "mordida" na cortical; a coluna recebe metástases pelo plexo venoso vertebral de BATSON, que se comunica diretamente com as cavas e a ázigo.
 como: O TARO 2015, o TARO 2012, o TARO 2006 e outra banca perguntaram o primário da lesão distal; o TEOT 2022 perguntou o primário que mais acomete o rádio; o TARO 2024 perguntou qual primário chega ao esqueleto sem passar pelo sistema cava ou porta.
 armadilha: Escolher mama ou próstata para a lesão distal: elas são as mais comuns no geral, mas não nas extremidades.
@@ -96,7 +96,7 @@ alerta: O Campbell descreve o plexo de BATSON e a lesão distal do pulmão, mas 
 
 **No osteossarcoma, o mesmo raciocínio.** No estadiamento do osteossarcoma, pede-se cintilografia para procurar metástases ósseas e radiografia e **tomografia do tórax para as metástases pulmonares**, porque **os pulmões são o local mais comum de metástase**; cerca de 15% têm metástases pulmonares detectáveis ao diagnóstico (Campbell, cap. 27, p. 1009 e 1012). A extensão local do tumor é avaliada pela ressonância.
 
-!questoes central=tumores-0021 relacionadas=tumores-0192,tumores-0078,tumores-0341 treino=tumores-0394
+!questoes central=tumores-0021 relacionadas=tumores-0192,tumores-0078,tumores-0341 treino=tumores-0394,tumores-0374,tumores-0375
 conceito: Mama e próstata dão lesões blásticas, rim e tireoide líticas puras, pulmão mista; a metástase destrói a cortical com pouca reação periosteal; a tomografia é o melhor exame para o nicho do osteoma osteoide e para as metástases pulmonares; a cintilografia falha no mieloma e em alguns rins.
 como: O TARO 2018 pediu o padrão de rim, tireoide e próstata; o TEOT 2024, as bordas e a reação periosteal; o TEOT 2021, o exame para o osteoma osteoide e a metástase pulmonar; o TARO 2009, a avaliação do osteossarcoma.
 armadilha: Chamar a metástase de mama de lítica pura ou a de rim de blástica.
@@ -135,7 +135,7 @@ O Campbell resume: **o tratamento do carcinoma metastático para o osso é multi
 
 O Rockwood lembra outros recursos: o estrôncio-89, captado nos locais de remodelação ativa, aliviou melhor a dor que o placebo ou a radioterapia local em poucos focos; e a decisão deve envolver uma equipe com oncologista clínico, radioterapeuta, patologista, radiologista, fisioterapeuta e ortopedista oncológico (cap. 25). Pacientes com expectativa de vida curta, comorbidades graves, lesões pequenas ou tumores radiossensíveis são candidatos ao tratamento não cirúrgico; a órtese funciona bem no membro superior.
 
-!questoes central=tumores-0135
+!questoes central=tumores-0135 treino=tumores-0378
 conceito: A maioria das metástases sintomáticas responde à radioterapia, mas o carcinoma renal é tipicamente radiorresistente e pode ser tratado com ablação por radiofrequência ou crioablação; os bisfosfonatos inibem os osteoclastos.
 como: O TARO 2023 perguntou o primário com lesões tipicamente radiorresistentes.
 armadilha: Escolher a mama ou a próstata, que respondem bem à radioterapia e à hormonioterapia.
@@ -184,7 +184,7 @@ O Rockwood confirma: a fixação profilática dá internação mais curta, mais 
 
 **A fratura em "banana".** Entre os fatores que sugerem fratura patológica, o Rockwood lista a fratura espontânea ou por trauma mínimo, dor no local antes da fratura, várias fraturas recentes, idade acima de 45 anos, história de câncer e um **padrão incomum de fratura**: a **fratura em "banana"**, **uma fratura transversa depois de trauma mínimo através de uma área de osso anormal** (cap. 25).
 
-!questoes central=tumores-0088 relacionadas=tumores-0109,tumores-0190,tumores-0202,tumores-0325,tumores-0293,tumores-0264 treino=tumores-0397,tumores-0398,tumores-0362,tumores-0364,tumores-0365,tumores-0366,tumores-0367,tumores-0368,tumores-0369
+!questoes central=tumores-0088 relacionadas=tumores-0109,tumores-0190,tumores-0202,tumores-0325,tumores-0293,tumores-0264 treino=tumores-0397,tumores-0398,tumores-0362,tumores-0364,tumores-0365,tumores-0366,tumores-0367,tumores-0368,tumores-0369,tumores-0370,tumores-0371,tumores-0372
 conceito: MIRELS soma local (superior 1, inferior 2, peritrocantérico 3), dor (leve 1, moderada 2, funcional 3), tamanho (menos de 1/3, 1/3 a 2/3, mais de 2/3) e lesão (blástica 1, mista 2, lítica 3); 8 ou mais, considerar a fixação profilática; os critérios clássicos são dor apesar da radioterapia, mais de 2,5 cm, mais de 50% da cortical e avulsão do trocânter menor.
 como: O TARO 2022 pediu a soma de uma lesão lítica de metade do fêmur com dor moderada; outras bancas pediram o item de 3 pontos, o fêmur distal, a lesão blástica, a região peritrocantérica e a conduta com 11 pontos; o TARO 2025 perguntou a fratura em banana; o ENARE R4 2025 e a prova de R4 do SES-DF repetiram o cálculo.
 armadilha: Dar 3 pontos ao fêmur distal: só a região peritrocantérica vale 3; o resto do membro inferior vale 2.
@@ -212,7 +212,7 @@ armadilha: Dar 3 pontos à lesão blástica: blástica vale 1, mista 2 e lítica
 - **Membro superior**: órtese funcional funciona bem; rádio e ulna com hastes flexíveis ou placas com cimento.
 - **Consolidação**: o fator mais importante para a fratura consolidar é a sobrevida do paciente, e as fraturas do mieloma são as que mais consolidam.
 
-!questoes relacionadas=tumores-0338
+!questoes relacionadas=tumores-0338 treino=tumores-0376,tumores-0379,tumores-0380,tumores-0382,tumores-0383
 conceito: A fixação deve permitir carga total imediata e durar anos; ressecar o tumor, preencher com cimento e proteger o osso inteiro com haste; no colo, prótese cimentada; na região subtrocantérica, placa falha (4 a 6 vezes o peso corporal) e o padrão é haste ou prótese.
 como: O TARO 2009 perguntou a causa mais comum de fratura patológica subtrocantérica no adulto.
 !fim
@@ -251,7 +251,7 @@ como: O TARO 2009 perguntou a causa mais comum de fratura patológica subtrocant
 
 Por que o rim? Ele é radiorresistente, então a radioterapia não controla bem a lesão; responde pior aos bisfosfonatos; e, quando produz uma metástase solitária, ela pode ser a única doença do paciente. Tirar essa lesão com margem é tratar o câncer, e não só a fratura.
 
-!questoes central=tumores-0064 relacionadas=tumores-0129,tumores-0357 treino=tumores-0396
+!questoes central=tumores-0064 relacionadas=tumores-0129,tumores-0357 treino=tumores-0396,tumores-0381
 conceito: A metástase óssea isolada de carcinoma renal pode ser tratada com intenção curativa por ressecção ampla; mama, próstata e rim vivem anos depois das metástases, e mesmo no pulmão a sobrevida depois da fratura patológica nem sempre é curta.
 como: O TARO 2014 e o TEOT 2023 perguntaram qual primário justifica a ressecção ampla da lesão isolada; o TARO 2006 afirmou que as fraturas patológicas do pulmão acontecem na fase terminal.
 armadilha: Indicar ressecção ampla para a metástase isolada de mama ou próstata: o benefício foi mostrado no rim.
@@ -286,7 +286,7 @@ Algumas questões classificadas neste subtema perguntam para onde metastatizam o
 
 **Mieloma e linfoma, os diagnósticos diferenciais.** O mieloma dá lesões líticas "em saca-bocado", com eletroforese mostrando gamopatia monoclonal, e a cintilografia pode ser negativa. O linfoma deve ser lembrado quando a ressonância mostra uma lesão grande com massa de partes moles e a radiografia parece quase normal, ou quando os sintomas são leves para o tamanho da lesão (cap. 27, Tabela 27.2 e Figs. 27.20 e 27.21).
 
-**Carcinoma espinocelular.** Uma questão do subtema pergunta a lesão precursora do carcinoma espinocelular da pele; esse assunto de dermatologia não está nos capítulos lidos.
+**Carcinoma espinocelular.** Uma questão do subtema pergunta a lesão precursora do carcinoma espinocelular da pele. O Green responde: **a condição cutânea pré-maligna mais frequente é a ceratose actínica**, ou ceratose solar, lesão áspera e descamativa de borda eritematosa nas áreas expostas ao sol, como as mãos e os antebraços; o carcinoma espinocelular invasivo se desenvolve em menos de 10% desses pacientes. A doença de BOWEN é o carcinoma espinocelular in situ, e o carcinoma que nasce dela é mais agressivo que o que nasce da ceratose actínica (Green, 7ª ed., cap. 58, p. 1972).
 
 !questoes central=tumores-0063 relacionadas=tumores-0352,tumores-0186,tumores-0169
 conceito: O tumor de células gigantes, embora benigno, dá metástase pulmonar em cerca de 3%; no osteossarcoma e no Ewing, o pulmão é o local mais comum de metástase, e no Ewing o osso é o segundo.
