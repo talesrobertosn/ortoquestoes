@@ -52,7 +52,18 @@ export function Cabecalho({ caminho }: { caminho: string }) {
   const inicial = String(sessao?.user.user_metadata?.nome ?? '').trim().charAt(0).toUpperCase()
   // O menu com tudo: fecha sozinho ao trocar de página.
   const [menuAberto, definirMenuAberto] = useState(false)
+  const [buscaNoMenu, definirBuscaNoMenu] = useState(false)
   useEffect(() => { definirMenuAberto(false) }, [caminho])
+  // Ctrl+K / Cmd+K abre o menu já na busca, de qualquer página (na Biblioteca, o atalho é da busca dela).
+  useEffect(() => {
+    const tecla = (e: KeyboardEvent) => {
+      if ((e.key === 'k' || e.key === 'K') && (e.ctrlKey || e.metaKey) && !e.altKey && caminho !== '/resumos') {
+        e.preventDefault(); definirBuscaNoMenu(true); definirMenuAberto(true)
+      }
+    }
+    window.addEventListener('keydown', tecla)
+    return () => window.removeEventListener('keydown', tecla)
+  }, [caminho])
   const atual = (destino: string) => (estaEm(caminho, destino) ? 'page' as const : undefined)
 
   return (
@@ -75,7 +86,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
               {link.beta && <span className="selo-beta">Beta</span>}
             </a>
           ))}
-          <button type="button" className="nav-link nav-link--menu" onClick={() => definirMenuAberto(true)} aria-haspopup="dialog" aria-expanded={menuAberto}>
+          <button type="button" className="nav-link nav-link--menu" onClick={() => { definirBuscaNoMenu(false); definirMenuAberto(true) }} aria-haspopup="dialog" aria-expanded={menuAberto} aria-keyshortcuts="Control+K">
             <Icone nome="menu" tamanho={18} /><span>Menu</span>
           </button>
         </nav>
@@ -118,12 +129,12 @@ export function Cabecalho({ caminho }: { caminho: string }) {
           {link.beta && <span className="so-leitor">, Beta</span>}
         </a>
       ))}
-      <button type="button" className="navegacao-mobile__menu" onClick={() => definirMenuAberto(true)} aria-haspopup="dialog" aria-expanded={menuAberto}>
+      <button type="button" className="navegacao-mobile__menu" onClick={() => { definirBuscaNoMenu(false); definirMenuAberto(true) }} aria-haspopup="dialog" aria-expanded={menuAberto}>
         <span className="navegacao-mobile__icone" aria-hidden="true"><Icone nome="menu" tamanho={21} /></span>
         <span className="navegacao-mobile__rotulo">Menu</span>
       </button>
     </nav>
-    <MenuGeral aberto={menuAberto} aoFechar={() => definirMenuAberto(false)} caminho={caminho} />
+    <MenuGeral aberto={menuAberto} aoFechar={() => definirMenuAberto(false)} caminho={caminho} focarBusca={buscaNoMenu} />
     </>
   )
 }

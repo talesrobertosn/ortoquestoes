@@ -87,17 +87,6 @@ button.bb-obj:disabled { cursor: default; }
 .bb-salao--tarde .coruja-pixel, .bb-salao--tarde .gato-pixel { filter: sepia(0.18) saturate(1.08); }
 .bb-salao--noite .coruja-pixel, .bb-salao--noite .gato-pixel { filter: brightness(0.9) sepia(0.32) saturate(1.2); }
 
-.coruja-pixel { display: block; image-rendering: pixelated;
-  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / 600% calc(var(--linhas) * 100%) no-repeat;
-  animation: coruja-quadros 1.6s steps(6) infinite; }
-.coruja-pixel--repouso { animation-duration: 2.8s; }
-.coruja-pixel--lendo { animation-duration: 3.2s; }
-.coruja-pixel--olhando { animation-duration: 2.4s; }
-.coruja-pixel--voando { animation-duration: 0.6s; }
-.coruja-pixel--uma-vez { animation: coruja-uma-vez 0.9s steps(6, jump-none) 1 forwards; }
-.coruja-pixel--girando { animation-duration: 1.4s; }
-@keyframes coruja-quadros { to { background-position-x: 120%; } }
-@keyframes coruja-uma-vez { from { background-position-x: 0; } to { background-position-x: 100%; } }
 
 .bb-balao { position: absolute; right: calc(100% + 8px); bottom: 10%; z-index: 4; width: min(17rem, 60vw); margin: 0; padding: 0.7rem 0.8rem; border-radius: 10px;
   background: var(--bb-pergaminho); color: var(--bb-tinta); font: 500 0.875rem/1.45 var(--fonte-texto); box-shadow: 0 0 0 2px var(--bb-tinta), 4px 4px 0 2px rgba(0, 0, 0, 0.3); animation: bb-entra 0.2s ease-out; }
