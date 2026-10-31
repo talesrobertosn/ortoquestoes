@@ -175,7 +175,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 728 | Fraturas do colo do fêmur e luxação traumática do quadril na criança (Rockwood crianças cap. 24), refação TEOT/TARO | reescrito para 45 KB, 4 figuras | 31 comentários reescritos e 4 simulados novos (pediatria-1432 a 1435) |
 | 729 | Ombro, úmero proximal e diáfise do úmero na criança (Rockwood crianças cap. 19), refação TEOT/TARO | 12 para 51 KB, 2 figuras | 30 comentários e 5 simulados novos (pediatria-1436 a 1440) |
 | 730 | Colo do rádio, olécrano e coronoide na criança (Rockwood crianças cap. 11), refação TEOT/TARO | 12 para 46 KB, 4 figuras | 28 comentários e 4 simulados novos (pediatria-1441 a 1444) |
-| (este PR) | Pelve e acetábulo da criança (Rockwood and Wilkins' Fractures in Children, cap. 23), refação TEOT/TARO | 14 para 45 KB, 2 figuras | 22 comentários e 3 simulados novos (pediatria-1445 a 1447) |
+| 732 | Pelve e acetábulo da criança (Rockwood and Wilkins' Fractures in Children, cap. 23), refação TEOT/TARO | 14 para 45 KB, 2 figuras | 22 comentários e 3 simulados novos (pediatria-1445 a 1447) |
+| (este PR) | Clavícula, escápula, AC e EC da criança (Rockwood and Wilkins' Fractures in Children, cap. 20), refação TEOT/TARO | 16 para 45 KB, 1 figura | 26 comentários e 3 simulados novos (pediatria-1448 a 1450) |
 
 ## Próximo
 
