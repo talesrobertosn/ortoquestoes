@@ -589,6 +589,10 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   const biblioteca = usarIndiceBiblioteca()
   const { leituras } = usarBiblioteca()
   const subtemasHoje = useMemo(() => subtemasDasQuestoes(indice, (calculo.hoje?.itens ?? []).flatMap((i) => i.ids)), [indice, calculo.hoje])
+  // O dia escolhido no calendário (1/11/2026): os resumos ao lado acompanham o dia tocado; hoje, como antes.
+  const [diaEscolhido, definirDiaEscolhido] = useState<{ data: Date; ehHoje: boolean; ids: string[] } | null>(null)
+  const subtemasEscolhido = useMemo(() => (diaEscolhido && !diaEscolhido.ehHoje && diaEscolhido.ids.length ? subtemasDasQuestoes(indice, diaEscolhido.ids) : subtemasHoje), [indice, diaEscolhido, subtemasHoje])
+  const rotuloEscolhido = diaEscolhido && !diaEscolhido.ehHoje && diaEscolhido.ids.length ? diaEscolhido.data.toLocaleDateString('pt-BR', { weekday: 'short', day: 'numeric', month: 'numeric' }).replace('.', '') : undefined
   const resumoHoje = resumosDosSubtemas(biblioteca, subtemasHoje)[0] ?? null
   const lista: ItemChecklist[] = []
   if (!calculo.provaPassou && !calculo.naRetaFinal) {
@@ -688,7 +692,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
     {/* Prioridade da página (Tales, 17/10/2026): o calendário grande vem logo abaixo de "Onde você está";
         o detalhe de hoje, a coluna lateral e os recolhidos ficam depois. */}
     {temCalendario && <CalendarioCronograma embutido ficticio={!!ficticio} nome={nome} plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
-      acoes={{ aoComecar, pendente, aoPuxar: podeAdiantar ? aoPuxar : undefined, proximo: proximoPuxar, salvando: hub?.salvandoOpcoes }} />}
+      acoes={{ aoComecar, pendente, aoPuxar: podeAdiantar ? aoPuxar : undefined, proximo: proximoPuxar, salvando: hub?.salvandoOpcoes }} aoSelecionar={definirDiaEscolhido} />}
 
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">
@@ -703,7 +707,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
         {aberto && !temCalendario && <div className="cp-ordem-6"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
       </div>
       <div className="cp-col cp-col--lado">
-        {!calculo.provaPassou && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasHoje} /></div>}
+        {!calculo.provaPassou && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasEscolhido} rotuloDia={rotuloEscolhido} /></div>}
         {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
         {temCalendario && <div className="cp-ordem-4"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
         {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} compacta={temCalendario} /></div>}

@@ -470,3 +470,31 @@
 /* Dia puxado e começado no calendário da semana (19/10/2026). */
 .cc--cronograma .ccs-selo--puxado { white-space: normal; text-align: left; background: color-mix(in srgb, var(--cp-feito) 14%, var(--superficie)); color: var(--cp-feito); font-variant-numeric: tabular-nums; }
 .cc--cronograma .ccs-dia--puxado .ccs-dia__numero b { color: var(--cp-feito); }
+
+/* ── 1/11/2026: celular ── */
+@media (max-width: 40rem) {
+  /* A semana vira uma faixa de cartões compactos que rola para o lado (os sete dias continuam, com área, estado e
+     número), e o detalhe do dia escolhido aparece logo abaixo, sem rolar sete cartões altos. */
+  .cc--cronograma .ccs-semana { display: flex; gap: 8px; margin: 0 calc(var(--e-3) * -1); padding: 4px var(--e-3) 10px; overflow-x: auto; scroll-snap-type: x mandatory;
+    scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+  .cc--cronograma .ccs-dia { flex: 0 0 8.75rem; scroll-snap-align: center; }
+  .cc--cronograma .ccs-dia > button { display: flex; flex-direction: column; gap: 0.45rem; min-height: 11.5rem; padding: 0.7rem 0.7rem 1rem; }
+  .cc--cronograma .ccs-dia__data { flex-direction: row; align-items: baseline; gap: 0.35rem; align-self: auto; padding: 0 0 0.4rem; border-right: 0; border-bottom: 2px dashed color-mix(in srgb, var(--px-borda) 85%, transparent); }
+  .cc--cronograma .ccs-dia__data b { font-size: 1.4rem; }
+  .cc--cronograma .ccs-dia__tipo { display: none; }
+  .cc--cronograma .ccs-dia__areas li { font-size: 0.82rem; }
+  .cc--cronograma .ccs-dia__numero { justify-items: start; margin-top: auto; text-align: left; }
+  .cc--cronograma .ccs-dia__numero b { font-size: 1.35rem; }
+  .cc--cronograma .ccs-dia--fora > button, .cc--cronograma .ccs-dia--folga > button { min-height: 11.5rem; }
+
+  /* O topo: o botão de continuar ocupa a largura toda e o Ajustar fica embaixo, sem espremer o texto. */
+  .cr .cp-onde__acoes { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: stretch; gap: var(--e-2); width: 100%; }
+  .cr .cp-onde__acoes > * { width: 100%; }
+  .cr .cp-onde__acoes > .cp-onde__ajustar { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { .cc--cronograma .ccs-semana { scroll-behavior: auto; } }
+/* Mês no computador: todas as células da mesma linha com a mesma altura (a grade alinha e lê como calendário). */
+@media (min-width: 40.01rem) {
+  .cc--cronograma .cc-mes-grade { grid-auto-rows: 1fr; }
+  .cc--cronograma .cc-mes-grade > .cc-dia > button { height: 100%; }
+}

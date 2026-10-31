@@ -81,7 +81,9 @@ function faixaDaSemana(seg: Date): string {
   return `${FORMATO_DIA_MES.format(seg)} a ${FORMATO_DIA_MES.format(dom)}`
 }
 
-export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar, embutido = false, nome = '', ficticio = false }: {
+export function CalendarioCronograma({ plano, calculo, indice, respondidas, minutos, revisoesHoje = 0, acoes, aoFechar, embutido = false, nome = '', ficticio = false, aoSelecionar }: {
+  /** Avisa a página do dia escolhido (os resumos ao lado acompanham o dia, não só hoje). */
+  aoSelecionar?: (dia: { data: Date; ehHoje: boolean; ids: string[] }) => void
   plano: PlanoSalvo
   calculo: CalculoPlano
   indice: Indice
@@ -204,6 +206,21 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     const [a, m, d] = selecionado.split('-').map(Number)
     return montarDia(new Date(a, m - 1, d))
   }, [selecionado, calculo, feitoPorDia, plano, chaveHoje]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Celular: a semana é uma faixa que rola para o lado; o dia escolhido vem para o meio dela (só na horizontal, sem
+  // mexer na rolagem da página).
+  useEffect(() => {
+    const faixa = janela.current?.querySelector<HTMLElement>('.ccs-semana')
+    const dia = faixa?.querySelector<HTMLElement>('.ccs-dia--selecionado')
+    if (!faixa || !dia || faixa.scrollWidth <= faixa.clientWidth + 2) return
+    const suave = window.matchMedia('(prefers-reduced-motion: no-preference)').matches
+    faixa.scrollTo({ left: dia.offsetLeft - (faixa.clientWidth - dia.offsetWidth) / 2, behavior: suave ? 'smooth' : 'auto' })
+  }, [selecionado, semana])
+
+  useEffect(() => {
+    aoSelecionar?.({ data: diaSelecionado.data, ehHoje: diaSelecionado.ehHoje, ids: diaSelecionado.plano?.itens.flatMap((i) => i.ids) ?? [] })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [diaSelecionado])
 
   // Resumo do trecho visível (mês ou semana): dias de estudo, questões planejadas e feitas.
   const resumo = useMemo(() => {
