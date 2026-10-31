@@ -108,6 +108,13 @@ for m, q in QS:
     if q.get("img") and not (PASTA / "img" / f"{q['img'][0]}.png").exists():
         erros.append(f"{rot}: figura {q['img'][0]}.png não encontrada")
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from checar_simulados import checar  # noqa: E402  portão de estilo (FLUXO-MESTRE.md, seção 6)
+
+_e, _a = checar([(f"[{m.__name__} p{q.get('pag')}] {q['enun'][:50]}", q) for m, q in QS])
+erros += _e
+avisos += _a
+
 repetidos = [i for i, n in Counter(q["id"] for _, q in QS if q.get("id")).items() if n > 1]
 if repetidos:
     erros.append(f"ids de revisão repetidos no lote: {', '.join(repetidos)}")
