@@ -25,9 +25,9 @@ import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import { SeloServico } from '../componentes/ServicoRanking'
-import { Escalada } from '../componentes/ranking/Escalada'
+import { Corrida, type Corredor } from '../componentes/ranking/Corrida'
+import '../estilos/paginas/RankingCorrida.css'
 import { usarPeriodo } from '../estado/aparencia'
-import '../estilos/paginas/RankingEscalada.css'
 import '../estilos/paginas/Ranking.css'
 import '../estilos/paginas/RankingQuestoes.css'
 
@@ -75,10 +75,6 @@ function Movimento({ linha }: { linha: LinhaRanking }) {
   </span>
 }
 
-function iniciais(apelido: string): string {
-  const partes = apelido.trim().split(/\s+/).filter(Boolean)
-  return ((partes[0]?.[0] ?? '') + (partes.length > 1 ? partes[partes.length - 1][0] : '')).toUpperCase() || '?'
-}
 
 /** A próxima meta, em questões, como uma missão de jogo: o texto diz quanto falta e a barra mostra o caminho já feito. */
 /** Primeiro nome do cadastro, como nas cartas (supabase/functions/_shared/cartas.ts): vazio se não parecer um nome. */
@@ -244,42 +240,30 @@ export function Ranking() {
   const ate100Linhas = linhas?.filter(linha => linha.posicao > 50 && linha.posicao <= 100) ?? []
   const visiveis = top ? (ate100 ? [...top, ...ate100Linhas] : top) : null
   const acima = eu && linhas ? linhas.find(linha => linha.posicao === eu.posicao - 1) ?? null : null
-  const periodoCor = usarPeriodo()
   const semana = periodo === 'semana'
+  const periodoCor = usarPeriodo()
   const subiu = (l: LinhaRanking) => (l.variacao ?? 0) > 0 ? (l.variacao ?? 0) : (l.variacao_semana ?? 0) >= FOGO_NA_SEMANA ? (l.variacao_semana ?? 0) : 0
   const escalador = (l: LinhaRanking) => ({ posicao: l.posicao, apelido: l.apelido, total: l.total, eh_voce: l.eh_voce, subiu: subiu(l) })
   const porPosicao = new Map((linhas ?? []).map((l) => [l.posicao, l]))
   const cume = (visiveis ?? []).slice(0, 3).map(escalador)
   const trilha = (visiveis ?? []).slice(3).map(escalador)
-  const euNaMontanha = eu && visiveis?.some((l) => l.posicao === eu.posicao) ? escalador(eu) : null
+  const euNaLista = !!(eu && visiveis?.some((l) => l.posicao === eu.posicao))
   const subindoRapido = (top ?? []).filter((l) => subiu(l) > 0).sort((x, y) => subiu(y) - subiu(x) || x.posicao - y.posicao).slice(0, 3)
 
-  // A frase do guia: quanto falta até a próxima saliência (passar quem está logo acima, ou entrar no top 50).
+  // A missão na sua pista: quanto falta para passar quem está logo à frente.
   const faltaAcima = eu && acima ? Math.max(1, acima.total - eu.total + 1) : 0
   const ultimoTop50 = top?.[top.length - 1] ?? null
-  const missao = !sessao ? <>Crie a conta e o seu nome começa a subir a montanha.</>
-    : eu?.posicao === 1 ? <>Você está no cume. Cada questão de hoje segura o lugar.</>
-      : eu && acima ? <>Mais <b className="numerico">{nQuestoes(faltaAcima)}</b> e você passa {acima.apelido}.</>
-        : minhaPosicao && ultimoTop50 && minhaPosicao.posicao > 50 ? <>Mais <b className="numerico">{nQuestoes(Math.max(1, ultimoTop50.total - minhaPosicao.total + 1))}</b> e você entra no top 50.</>
-          : meuTotal < MINIMO_RANKING ? <>Mais {nQuestoes(MINIMO_RANKING - meuTotal)} e o seu nome entra na montanha.</>
-            : <>Cada questão de hoje é um passo para cima.</>
+  const missao = eu?.posicao === 1 ? <>Você lidera. Cada questão de hoje segura o lugar.</>
+    : eu && acima ? <>Mais <b className="numerico">{nQuestoes(faltaAcima)}</b> e você passa {acima.apelido.replace(/\.$/, '')}.</> : null
 
-  const cartao = (e: { posicao: number; apelido: string; total: number; eh_voce: boolean }) => {
-    const linha = porPosicao.get(e.posicao)
+  const nomeDe = (c: Corredor) => <span className="cor-nome"><span className="cor-nome__texto">{c.apelido}</span>{c.eh_voce && <span className="cor-voce-selo">você</span>}</span>
+  const selosDe = (c: Corredor) => {
+    const linha = porPosicao.get(c.posicao)
     if (!linha) return null
-    return <span className="esc-ficha">
-      <span className="esc-ficha__linha1">
-        <span className="esc-ficha__avatar" aria-hidden="true">{iniciais(linha.apelido)}</span>
-        <span className="esc-ficha__nome">{linha.apelido}{linha.eh_voce && <span className="esc-voce">você</span>}</span>
-        <Movimento linha={linha} />
-      </span>
-      <span className="esc-ficha__linha2">
-        <b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> <small>{semana ? 'na semana' : 'questões'}</small>
-        <SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} />
-        {linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={12} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}
-      </span>
-    </span>
+    return <><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={22} /><Fogueira dias={linha.sequencia ?? 0} tamanho={15} />
+      {linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={12} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</>
   }
+  const movimentoDe = (c: Corredor) => { const linha = porPosicao.get(c.posicao); return linha ? <Movimento linha={linha} /> : null }
 
   // A sua ficha, nos mesmos casos de antes: visitante, fora do ranking, com posição, quase lá ou ainda sincronizando.
   const ficha = !sessao ? <>
@@ -314,14 +298,17 @@ export function Ranking() {
     <span className="esc-voce-painel__nota">Sua posição aparece assim que o progresso sincronizar</span>
   </>
 
-  const ir = (onde: 'eu' | 'cume') => window.dispatchEvent(new CustomEvent('escalada:ir', { detail: onde }))
+  const ir = (onde: 'eu' | 'topo') => {
+    const alvo = onde === 'eu' ? document.getElementById('cor-minha-pista') : document.querySelector('.cor-foto')
+    alvo?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })
+  }
 
-  return <div className={`esc esc--${periodoCor}`}>
+  return <div className="esc">
     <header className="esc-cabeca">
       <div className="esc-cabeca__titulo">
-        <p className="esc-cabeca__selo"><Icone nome="trofeu" tamanho={14} /> Ranking</p>
-        <h1>A escalada</h1>
-        <p className="esc-cabeca__lide">Cada questão diferente respondida é um passo para cima. O espaço entre duas pessoas na montanha é a diferença de questões entre elas.</p>
+        <p className="esc-cabeca__selo"><Icone nome="trofeu" tamanho={14} /> O torneio do reino</p>
+        <h1>Ranking</h1>
+        <p className="esc-cabeca__lide">Cada questão diferente respondida leva você para a frente no torneio. A chegada é o líder, e cada raia mostra quanto falta.</p>
       </div>
       <div className="esc-cabeca__controles">
         <div className="esc-periodo" role="tablist" aria-label="Período do ranking">
@@ -340,11 +327,11 @@ export function Ranking() {
         <p>O ranking reúne quem mais respondeu questões entre todas as contas com pelo menos 5 questões respondidas.</p>
       </Estado>
     ) : <div className="esc-corpo">
-      <aside className="esc-painel" aria-label="Você na montanha">
+      <aside className="esc-painel" aria-label="Você no torneio">
         <div className="esc-voce-painel">{ficha}</div>
         <div className="esc-painel__botoes">
-          <button type="button" className="botao" onClick={() => ir('eu')}><Icone nome="alvo" tamanho={15} /> {euNaMontanha ? 'Ir até mim' : 'Ir ao acampamento base'}</button>
-          <button type="button" className="botao" onClick={() => ir('cume')}><Icone nome="cima" tamanho={15} /> Ver o cume</button>
+          {euNaLista && <button type="button" className="botao" onClick={() => ir('eu')}><Icone nome="alvo" tamanho={15} /> Ir até a minha raia</button>}
+          <button type="button" className="botao" onClick={() => ir('topo')}><Icone nome="cima" tamanho={15} /> Ver a chegada</button>
         </div>
         {subindoRapido.length > 0 && <section className="esc-vento" aria-labelledby="esc-vento-titulo">
           <h2 id="esc-vento-titulo"><span aria-hidden="true">⤴</span> Subindo rápido</h2>
@@ -358,7 +345,7 @@ export function Ranking() {
           <span><b className="rk-legenda rk-legenda--novo">novo</b> acabou de entrar</span>
         </p>}
         {comMovimento && !(top ?? []).some(linha => linha.referencia_em || linha.novo) && <p className="esc-criterio"><Icone nome="relogio" tamanho={14} /> <span>As setas e o foguinho aparecem a partir de amanhã: hoje o ranking registra as posições de referência.</span></p>}
-        <a className="esc-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> <span><strong>Liga da residência</strong><small>A montanha só do seu serviço</small></span> <SeloAssinante /></a>
+        <a className="esc-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> <span><strong>Liga da residência</strong><small>O torneio só do seu serviço</small></span> <SeloAssinante /></a>
       </aside>
 
       <div className="esc-palco">
@@ -366,10 +353,10 @@ export function Ranking() {
         {linhas === null && !erro && <Carregando linhas={6} rotulo="Carregando ranking" />}
         {erro && <Estado titulo="Não foi possível carregar o ranking agora"><p>Confira sua conexão e tente novamente em instantes.</p></Estado>}
         {linhas && linhas.length === 0 && <Estado titulo={semana ? 'Ninguém respondeu questões nos últimos 7 dias' : 'Ainda não há ninguém no ranking'}><p>Seja a primeira pessoa a aparecer aqui.</p></Estado>}
-        {visiveis && visiveis.length > 0 && <Escalada periodo={periodoCor} cume={cume} trilha={trilha} eu={euNaMontanha} missao={missao} conteudo={cartao} visitante={!sessao}
-          chamadaBase={!euNaMontanha ? missao : undefined}
-          rodape={ate100Linhas.length > 0 && <button type="button" className="botao esc-mais" aria-expanded={ate100} onClick={() => definirAte100(!ate100)}>
-            <Icone nome={ate100 ? 'cima' : 'baixo'} tamanho={16} /> {ate100 ? 'Mostrar só o top 50' : 'Descer a montanha até o top 100'}
+        {visiveis && visiveis.length > 0 && <Corrida periodo={periodoCor} chegada={cume} pistas={trilha} lider={top?.[0]?.total ?? 1} nome={nomeDe} selos={selosDe} movimento={movimentoDe}
+          missao={euNaLista ? missao : null} unidade={semana ? 'na semana' : 'questões'}
+          rodape={ate100Linhas.length > 0 && <button type="button" className="botao cor-mais" aria-expanded={ate100} onClick={() => definirAte100(!ate100)}>
+            <Icone nome={ate100 ? 'cima' : 'baixo'} tamanho={16} /> {ate100 ? 'Mostrar só o top 50' : 'Mostrar até o top 100'}
           </button>} />}
       </div>
     </div>}
@@ -397,7 +384,7 @@ export function Ranking() {
         <li><span className="px-numero" aria-hidden="true">2</span><div><strong>Geral ou últimos 7 dias.</strong> O geral mostra o acumulado; a semana dá chance a quem começou agora.</div></li>
         <li><span className="px-numero" aria-hidden="true">3</span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta?secao=ranking')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem. O serviço onde você faz residência só aparece se você ligar a opção em <a href={href('/conta?secao=perfil')}>Meu perfil</a>.</div></li>
         <li><span className="px-numero" aria-hidden="true">4</span><div><strong>Conquistas e vitrine.</strong> As conquistas ficam no seu inventário para sempre, e você escolhe até três para aparecer ao lado do nome. A fogueira mostra a sua sequência de dias seguidos com pelo menos {META_STREAK_DIARIA} questões: se a sequência acabar, ela some e recomeça do zero.</div></li>
-        <li><span className="px-numero" aria-hidden="true">5</span><div><strong>A montanha.</strong> Quem mais respondeu está no cume. O espaço entre duas bandeiras é a diferença de questões entre as duas pessoas: quem está colado aparece colado, e um paredão é uma diferença grande. O ranking atualiza a cada 10 minutos.</div></li>
+        <li><span className="px-numero" aria-hidden="true">5</span><div><strong>O torneio.</strong> Cada raia mostra o quanto a pessoa já andou em relação ao líder, que é a linha de chegada, e quantas questões faltam para alcançar quem está logo à frente. O ranking atualiza a cada 10 minutos.</div></li>
       </ol>
     </details>
   </div>
