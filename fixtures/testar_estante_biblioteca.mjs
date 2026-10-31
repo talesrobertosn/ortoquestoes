@@ -24,6 +24,8 @@ try {
 
   // Livro: "(2025)" não separa edições; nomes curtos.
   assert.equal(m.chaveLivro({ livro: 'X', edicao: '9ª edição (2020)' }), m.chaveLivro({ livro: 'X', edicao: '9ª edição' }))
+  assert.equal(m.chaveLivro({ livro: 'X', edicao: '14ª edição (2021), com o Green\'s Operative Hand Surgery, 7ª edição (2017)' }), m.chaveLivro({ livro: 'X', edicao: '14ª edição (2021)' }), 'o segundo livro citado não cria outra estante')
+  assert.equal(m.rotuloLivro({ livro: "Campbell's Operative Orthopaedics", edicao: '14ª edição (2021), com o Rockwood' }), "Campbell's Operative Orthopaedics · 14ª ed.")
   assert.equal(m.rotuloLivro({ livro: "Rockwood and Wilkins' Fractures in Children", edicao: '10ª edição (2025)' }), 'Rockwood infantil · 10ª ed.')
   assert.equal(m.rotuloLivro({ livro: "Rockwood and Green's Fractures in Adults", edicao: '10ª edição (2025)' }), 'Rockwood adulto · 10ª ed.')
   assert.equal(m.numeroCapitulo({ capitulo: 'Capítulo 19 · Shoulder' }), 19)

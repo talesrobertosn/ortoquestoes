@@ -4,7 +4,7 @@ Documento único com todas as orientações que o Tales deu ao Claude até 30/10
 
 > **PRIORIDADE MÁXIMA (Tales, 30/10/2026):** os resumos e os comentários dos ciclos 3 a 20 ficaram curtos demais. Antes de seguir a fila, refaça tudo o que está em [docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md](../biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md).
 > - **Resumo:** no mínimo 45 KB (o roteiro sugere 60 a 90 KB).
-> - **Comentário:** no mínimo 4,5 mil caracteres.
+> - **Comentário:** miniaula com tamanho proporcional à questão, sem molde fixo e sem parágrafos copiados (Tales, 31/10/2026).
 >
 > Meça com `scripts/biblioteca/medir_profundidade.py`.
 
@@ -267,7 +267,7 @@ Adiados por serem mistos, sem capítulo-fonte único: "Outros temas de trauma" e
 - **No Windows:**
   - `aplicar_comentarios.py` às vezes dá `OSError Errno 22` ao gravar `comentarios/ombro-cotovelo.json`; repetir resolve, e depois confira o JSON;
   - caminhos longos de scratchpad quebram o Python, então use uma pasta temporária curta.
-- **Comentários e resumos curtos:** este foi o maior erro. Comentário com menos de 4,5 mil caracteres e resumo com menos de 45 KB não podem ser publicados; meça antes com `medir_profundidade.py`.
+- **Comentários e resumos curtos:** este foi o maior erro. Resumo com menos de 45 KB não pode ser publicado, e comentário raso (menos de 800) também não; acima disso, o tamanho do comentário acompanha a importância da questão; meça antes com `medir_profundidade.py`.
 
 ### Tarefa agendada no Windows
 A "OrtoQuestões: retomar a fila editorial" roda no app do Windows até 10h07 de 30/10/2026. Se for continuar em outro computador, desative-a no Windows (app, seção Agendadas), para as duas máquinas não trabalharem ao mesmo tempo.

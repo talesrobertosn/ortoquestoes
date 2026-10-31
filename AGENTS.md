@@ -45,7 +45,7 @@ Roteiro completo e autônomo (pedido do Tales, 17/10/2026: basta ele dizer "faç
 Pedido do dono (16/10/2026) sobre capítulos novos: ele pode pedir **só o resumo**, **só as questões** ou
 **os dois**. Nos dois, faça **primeiro os OrtoQuestões Simulados e depois o resumo** (que cita os simulados novos em
 `treino=`). Antes de escrever qualquer um, leia as questões que já caíram e os simulados que já existem (engenharia
-reversa). Faça em média **10 simulados** por capítulo (12 se precisar; até 30 só em tema muito importante), todos
+reversa). Faça **quantos simulados** o tema merecer, sem cota (Tales, 31/10/2026: tema bom, mais; tema ruim, menos; o ponto de partida sai de `scripts/biblioteca/fila_teot_taro.py` e se ajusta pelas lacunas do capítulo), todos
 úteis: gêmeas do que já caiu ou questões novas com chance real de cair. No fim do comentário de cada simulado,
 escreva **"Por que esta questão foi criada"**: em que prova e ano o fato caiu e como foi cobrado, ou por que o ponto
 tem cara de prova. Toda questão precisa de um motivo. Resumos seguem [docs/biblioteca/README.md](docs/biblioteca/README.md).

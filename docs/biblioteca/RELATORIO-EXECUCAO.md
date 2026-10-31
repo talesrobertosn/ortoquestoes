@@ -135,6 +135,23 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 
 **No ciclo 20.** Os comentários voltaram ao tamanho pedido (mediana de cerca de 2,7 mil caracteres). Um conversor por lote confere o gabarito contra o acervo e recusa travessão e o fecho de simulado nas oficiais. Ficaram pendentes a classificação de TOMITA (o Campbell só traz a figura) e uma questão sem gabarito. No Windows, `aplicar_lote.py` precisa de `PYTHONUTF8=1`.
 
+## Refação no MacBook (30 e 31/10/2026)
+
+Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do subtema reescritos em miniaula (4,5 mil caracteres ou mais), na ordem de `REFAZER-RESUMOS-E-COMENTARIOS.md`.
+
+| PR | Tema | Resumo | Comentários |
+| --- | --- | --- | --- |
+| 700 | Bíceps distal e cabeça longa | 79 KB, 7 figuras (Campbell e Green 7ª) | 38 |
+| 701 | LCA | 52 KB, 3 figuras | 40 |
+| 702 | Metástases ósseas e fratura patológica | 47 KB, Tabela 27.1 (MIRELS) | 61, com os simulados antigos 0370 a 0383 |
+| 703 | Hérnia de disco lombar, torácica e cervical | 54 KB | 50 (coluna-0422 pendente: hematoma subdural sem fonte nos livros) |
+| 704 | Estante da Biblioteca: o Campbell volta a ser um livro só | (sistema) | |
+| 705 | Anatomia da coluna e vias de acesso | 45 KB, com o Netter cap. 2 | 84, todo o subtema |
+| 706 | Instabilidade do ombro | 46 KB, Campbell cap. 47 e Rockwood cap. 35 | 65 (os 7 que já estavam no padrão ficaram); 0448 saiu da vitrine da página inicial por ter alerta |
+| 707 | Estadiamento, biópsia e margens | 52 KB, Campbell cap. 24 e vizinhos | 45 + 3 originais de duplicatas (0318, 0319, 0136); 0266 desligada do resumo (original é a mao-0459, protegida) |
+| 708 | ATQ: biomecânica e componentes (parte 1) | 45 KB, Campbell cap. 3 | 35 (quadril-0330 com alerta: o livro fala em rotação externa, o gabarito em medial) |
+| (este) | Omartrose, artroplastia e artrodese do ombro | 45 KB, Campbell caps. 12 e 13 | 61 + 2 originais de trauma (0346 com alerta: o livro indica a anatômica, o gabarito a reversa) |
+
 ## Melhorias de sistema feitas no caminho
 
 | PR | Melhoria |
@@ -146,6 +163,14 @@ Estados usados: em execução, concluído, publicado, pendente de correção, bl
 | 656 | `fila_editorial.py` preserva os comentários que já citam um resumo da Biblioteca. |
 | 660 | `scripts/publicar_pr.sh` só mescla com os checks verdes. |
 | 668 | `scripts/pos_aplicar.sh`: regenera índices, Biblioteca e amostras e roda os testes que mais quebram. |
+| 700 | `trava_profundidade.py` (recusa resumo menor que 45 KB ou comentário menor que 4,5 mil), `dossie_tema.py` (todas as questões do subtema com páginas do livro) e `lote_comentarios.py` (lote em .py, medido antes de aplicar). |
+| 710 | ATQ parte 2: polietileno e cerâmica (resumo novo `callaghan-polietileno-ceramica`) | 66 KB, Callaghan caps. 12, 13, 14 e 19 | 37 simulados de Fellowship Quadril, todos ligados ao resumo como treino |
+| 711 | ATQ parte 3: metais, cimento, tribologia e metal contra metal (resumo novo `callaghan-metais-cimento-tribologia`) | 67 KB, Callaghan caps. 15, 16, 17 e 20 (com trechos dos caps. 1 e 12) | 41 simulados de Fellowship Quadril, todos ligados ao resumo como treino |
+| 712 | ATQ parte 4: medição do desgaste, biologia dos detritos e imagem (resumo novo `callaghan-desgaste-osteolise`) | 45 KB, Callaghan caps. 18 e 21 (com trechos dos caps. 23, 25 e 26) | 23 simulados de Fellowship Quadril, ligados ao resumo como treino |
+| 714 | ATQ parte 5: história, biomecânica e cinemática (resumo novo `callaghan-historia-biomecanica`) | 45 KB, Callaghan caps. 1, 10 e 11 | 17 simulados de Fellowship Quadril, ligados ao resumo como treino |
+| 716 | Tabelas soltas viram !tabela (68 em 15 resumos) e 26 figuras do Callaghan nos resumos | leitor com negrito nas células | os resumos do Rockwood de tornozelo e fise distal ficaram como estavam (proveniência revisada) |
+| 717 | ATQ parte 6: anatomia e acessos (resumo novo `callaghan-anatomia-acessos`) | 45 KB, Callaghan caps. 2, 3, 6, 7 e 8, com 3 figuras novas recortadas | 21 simulados, 4 deles com figura do livro |
+| (este PR) | Malformações congênitas da mão refeitas (prioridade TEOT/TARO) | 61 KB, Green 7 caps. 35 a 38 e Tachdjian cap. 12, 4 figuras do Green | 54 comentários no jeito novo (44 de TARO, TEOT e outras provas, 10 simulados) |
 
 ## Próximo
 

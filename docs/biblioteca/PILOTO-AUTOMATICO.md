@@ -85,7 +85,8 @@ referência [docs/exemplos/mao-0853.json](../exemplos/mao-0853.json)).
 3. **Formato:** o da prova real (TEOT/TARO): enunciado curto, quatro alternativas plausíveis, gabarito
    distribuído entre A, B, C e D, sem figura, caso clínico só quando a banca usa caso para aquele ponto.
 4. **Comentário:** aula independente (fundamento, mecanismo, por que cada alternativa está certa ou errada,
-   inclusive a correta), mediana de uns 4 a 4,5 mil caracteres. O `conceito` termina sempre com o parágrafo
+   inclusive a correta), com tamanho proporcional à questão e sem molde fixo (ver "Professor humano, não molde"
+   no padrão editorial). Como são simulados, o `conceito` termina com o parágrafo
    **"Por que esta questão foi criada."**: em que prova e ano o fato caiu e como foi cobrado, ou por que o
    ponto tem cara de prova.
 5. **Aplicar:** escreva os lotes (a partir de `exemplo_lote.py`) no scratchpad, rode
@@ -158,7 +159,7 @@ conserte a suposição do teste ou o código; **nunca** pule ou desligue teste. 
 > Você trabalha em /home/user/ortoquestoes. Leia AGENTS.md, CLAUDE.md, docs/biblioteca/PILOTO-AUTOMATICO.md e os
 > guias que ele cita. TAREFA: capítulo N do <livro, edição> — "<título>" (<autores>). Texto em <scratchpad>/capN/cap.txt
 > (PDF: <caminho>, páginas A–B). Pedido do Tales: "<frase dele>" ⇒ <só resumo | só simulados | os dois>.
-> <Se os dois:> primeiro ~10 simulados (seção 5), aplicados dentro do lock; depois o resumo
+> <Se os dois:> primeiro os simulados que o tema merecer (seção 5; sem cota), aplicados dentro do lock; depois o resumo
 > `conteudo/biblioteca/<id>.md` (seção 6) citando-os em `treino=`. <Se o resumo já existe: atualize-o.>
 > <Fronteira com o capítulo vizinho, se houver.> Atualize CHECKLIST e mapas com Edit pontual. Não faça commit nem push.
 > No fim, responda: ids criados, id do resumo, alertas, dúvidas e problemas.

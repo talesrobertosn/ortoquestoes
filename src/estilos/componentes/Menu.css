@@ -1,251 +1,101 @@
-/* Menu (30/10/2026): um livro aberto em pixel, como os diários de jogo que o Tales mandou de referência. Capa de couro
-   com cantoneiras douradas, duas páginas de pergaminho com argolas no meio, abas de papel no alto, marcadores
-   coloridos na borda e uma fita embaixo. Contornos "pixel" com drop-shadow em degrau (sem cantos arredondados).
-   No celular (painel), as páginas viram uma coluna só. Carregado só quando o menu abre (MenuGeral.tsx). */
+/* Menu (31/10/2026): a organização de antes (busca, dia a dia em cartões, planos e grupos em lista) com o acabamento
+   pixel do site. Todo ícone é um objeto em pixel (a mesma técnica do salão da Biblioteca), um por página. Usa as cores do
+   tema, então funciona no claro e no escuro. Carregado só quando o menu abre (MenuGeral.tsx). */
 
-.mn-livro, .painel:has(.mn-livro) {
-  --mn-couro: #8a4a26; --mn-couro-2: #6a3418; --mn-couro-3: #a65e32; --mn-contorno: #2a1608;
-  --mn-papel: #f3e4c1; --mn-papel-2: #e8d4a8; --mn-papel-3: #d4bb86; --mn-faixa: #ecdab2; --mn-faixa-borda: #9a7748;
-  --mn-tinta: #3f2410; --mn-tinta-2: #7a5634; --mn-ouro: #e9b54a; --mn-ouro-2: #a8701d;
-  --mn-contorno-px: drop-shadow(3px 0 0 var(--mn-contorno)) drop-shadow(-3px 0 0 var(--mn-contorno)) drop-shadow(0 3px 0 var(--mn-contorno)) drop-shadow(0 -3px 0 var(--mn-contorno));
-}
-:root[data-tema="escuro"] .mn-livro, :root[data-tema="escuro"] .painel:has(.mn-livro) {
-  --mn-couro: #24325e; --mn-couro-2: #151f40; --mn-couro-3: #34477f; --mn-contorno: #0a0f22;
-  --mn-papel: #dccaa2; --mn-papel-2: #cfba8e; --mn-papel-3: #b9a074; --mn-faixa: #d6c296; --mn-faixa-borda: #806240;
-  --mn-tinta: #2e1a0a; --mn-tinta-2: #5e4228; --mn-ouro: #e0a640; --mn-ouro-2: #94601a;
-}
+.mn { --mn-contorno: #1b1208; --mn-sombra: color-mix(in srgb, var(--mn-contorno) 22%, transparent); display: grid; gap: 1rem; }
+:root[data-tema="escuro"] .mn { --mn-contorno: #05080f; --mn-sombra: rgba(0, 0, 0, 0.45); }
+.jc__caixa.mn-janela { width: min(56rem, 100%); }
+.mn-janela .mn { padding: 1.5rem 2rem 1.4rem; }
+.mn__cabeca { padding-right: 3.5rem; }
+.mn__titulo { margin: 0; color: var(--texto); font-family: var(--fonte-pixel-titulo); font-size: 2.1rem; font-weight: 400; line-height: 1; letter-spacing: 0.02em; }
+.painel .mn__cabeca { display: none; }
+.painel:has(.mn) .painel__titulo { font-family: var(--fonte-pixel-titulo); font-size: 1.75rem; font-weight: 400; line-height: 1; }
+.painel:has(.mn) .painel__corpo { padding: 0.25rem 1rem calc(1rem + env(safe-area-inset-bottom)); }
+.mn .mn-busca { margin: 0; }
 
-/* ── A janela do computador: sem caixa, só o livro ── */
-.jc__caixa.mn-livro-janela { width: min(74rem, 100%); max-height: none; overflow: visible; border-radius: 0; background: transparent; box-shadow: none; }
-.jc__caixa.mn-livro-janela > .jc__fechar { display: none; }
-.jc__caixa.mn-livro-janela .mn-carregando { min-height: 40rem; }
+/* O objeto em pixel de cada página, numa caixa fixa (as linhas ficam alinhadas mesmo com desenhos de alturas diferentes).
+   No escuro, um pires claro atrás do desenho mantém o contorno preto visível. */
+.mn-obj { flex: none; display: grid; place-items: center; width: 34px; height: 32px; }
+.mn-obj--grande { width: 54px; height: 48px; }
+:root[data-tema="escuro"] .mn-obj { border-radius: 4px; background: color-mix(in srgb, #f3e4c1 82%, transparent); }
+@keyframes mn-pula { 50% { transform: translateY(-3px) rotate(-5deg); } }
 
-.mn-livro { position: relative; padding: 2.5rem 2.4rem 2.2rem 0.4rem; color: var(--mn-tinta); animation: mn-abre 0.22s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; will-change: transform, opacity; }
-@keyframes mn-abre { from { opacity: 0; transform: scale(0.94, 0.86); } }
+.mn-cadeado { flex: none; display: grid; place-items: center; width: 20px; height: 20px; background: #e9b54a; color: var(--mn-contorno); box-shadow: inset 0 0 0 2px var(--mn-contorno), inset 0 3px 0 #ffe39a; }
 
-/* Abas de papel no alto (Menu · Minha conta · Fechar), metidas atrás da capa. */
-.mn-livro__abas { position: absolute; top: -0.4rem; left: 2.4rem; right: 4.6rem; z-index: 0; display: flex; align-items: flex-end; gap: 0.45rem; }
-.mn-livro__vao { flex: 1; }
-.mn-aba { display: inline-flex; align-items: center; gap: 0.35rem; margin: 0; padding: 0.45rem 1.1rem 1.25rem; border: 3px solid var(--mn-contorno); border-bottom: 0; background: var(--mn-papel-2);
-  color: var(--mn-tinta); font-family: var(--fonte-pixel-titulo); font-size: 1.45rem; line-height: 1; text-decoration: none; cursor: pointer; transform: translateY(1.05rem);
-  box-shadow: inset 0 3px 0 rgba(255, 250, 230, 0.55), inset -3px 0 0 var(--mn-papel-3); transition: transform 0.12s steps(2); }
-a.mn-aba:hover, button.mn-aba:hover, .mn-aba:focus-visible { transform: translateY(0.6rem); color: var(--mn-tinta); }
-.mn-aba--titulo { background: var(--mn-ouro); cursor: default; transform: translateY(0.8rem); box-shadow: inset 0 3px 0 #ffe7a6, inset -3px 0 0 var(--mn-ouro-2); }
-.mn-aba--fechar { background: #d2604a; color: #fff4dc; box-shadow: inset 0 3px 0 #f08a70, inset -3px 0 0 #9a3426; }
-.mn-aba--fechar:hover, .mn-aba--fechar:focus-visible { color: #fff; }
-.mn-aba:focus-visible { outline: 3px solid var(--mn-ouro); outline-offset: 2px; }
+/* Hoje: só quando há algo para retomar. */
+.mn-hoje { display: grid; gap: 0.45rem; }
+.mn-hoje__linha { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 0.8rem; padding: 0.6rem 0.8rem 0.6rem 0.9rem;
+  border: 2px solid var(--mn-contorno); background: var(--superficie-2); color: var(--texto); text-decoration: none; box-shadow: 3px 3px 0 var(--mn-sombra); transition: transform 0.1s steps(2); }
+.mn-hoje__linha:hover, .mn-hoje__linha:focus-visible { transform: translate(-2px, -2px); color: var(--texto); }
+.mn-hoje__texto { display: grid; min-width: 0; }
+.mn-hoje__texto strong { overflow: hidden; font-size: 0.95rem; font-weight: 750; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
+.mn-hoje__texto small { overflow: hidden; color: var(--texto-2); font-size: 0.8rem; line-height: 1.3; text-overflow: ellipsis; white-space: nowrap; }
+.mn-blocos { display: flex; gap: 2px; }
+.mn-blocos i { width: 8px; height: 10px; background: var(--traco); }
+.mn-blocos i.cheio { background: #4fae48; box-shadow: inset 0 -3px 0 #2f7d2a; }
+@media (max-width: 30rem) { .mn-blocos { display: none; } }
 
-/* A capa: couro com espessura de livro, cantoneiras de latão. */
-.mn-livro__capa { position: relative; z-index: 1; padding: 14px 14px 20px; background: var(--mn-couro); border: 4px solid var(--mn-contorno);
-  box-shadow: inset 0 4px 0 var(--mn-couro-3), inset 0 -6px 0 var(--mn-couro-2), 0 8px 0 var(--mn-couro-2), 0 12px 0 var(--mn-contorno), 0 34px 60px rgba(0, 0, 0, 0.5);
-  background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0 2px, transparent 2px 6px); }
-.mn-livro__canto { position: absolute; z-index: 3; width: 30px; height: 30px; background: var(--mn-ouro); filter: var(--mn-contorno-px); pointer-events: none;
-  clip-path: polygon(0 0, 100% 0, 100% 36%, 36% 36%, 36% 100%, 0 100%); box-shadow: inset 4px 4px 0 #ffe39a, inset -3px -3px 0 var(--mn-ouro-2); }
-.mn-livro__canto--1 { top: -4px; left: -4px; }
-.mn-livro__canto--2 { top: -4px; right: -4px; transform: scaleX(-1); }
-.mn-livro__canto--3 { bottom: -4px; left: -4px; transform: scaleY(-1); }
-.mn-livro__canto--4 { bottom: -4px; right: -4px; transform: scale(-1, -1); }
+/* O dia a dia: seis cartões, todos com a mesma arte. */
+.mn-principais { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.6rem; }
+.mn-principal { position: relative; display: grid; justify-items: center; align-content: start; gap: 0.15rem; min-width: 0; padding: 0.95rem 0.4rem 0.75rem; text-align: center;
+  border: 2px solid var(--traco); background: var(--superficie); color: var(--texto); text-decoration: none; transition: transform 0.1s steps(2), border-color 0.1s, box-shadow 0.1s; }
+.mn-principal .mn-obj { margin-bottom: 0.45rem; }
+.mn-principal:hover, .mn-principal:focus-visible { transform: translate(-2px, -2px); border-color: var(--mn-contorno); box-shadow: 4px 4px 0 var(--mn-sombra); color: var(--texto); outline: 0; }
+.mn-principal:hover .mn-obj { animation: mn-pula 0.4s steps(3); }
+.mn-principal[aria-current="page"] { border-color: var(--verdete); background: var(--verdete-veu); }
+.mn-principal strong { font-size: 0.95rem; font-weight: 750; line-height: 1.2; }
+.mn-principal small { color: var(--texto-2); font-size: 0.74rem; line-height: 1.3; }
+.mn-principal__selo { position: absolute; top: 6px; right: 6px; }
+.mn-principal__novo { position: absolute; top: -9px; left: 50%; padding: 0 0.4rem 0.05rem; background: #d2604a; color: #fff4dc; font-family: var(--fonte-pixel-titulo); font-size: 0.95rem; line-height: 1.1;
+  transform: translateX(-50%) rotate(-4deg); box-shadow: 0 0 0 2px var(--mn-contorno); }
 
-/* O miolo: duas páginas e a lombada com argolas. Embaixo, a pilha de folhas. */
-.mn-livro__miolo { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1.08fr); height: min(41rem, calc(100vh - 9.5rem));
-  border: 3px solid var(--mn-contorno); background: var(--mn-papel); box-shadow: 0 4px 0 var(--mn-papel-2), 0 7px 0 var(--mn-contorno), 0 10px 0 var(--mn-papel-3), 0 13px 0 var(--mn-contorno); }
-.mn-pagina { position: relative; display: flex; flex-direction: column; gap: 0.85rem; min-width: 0; padding: 1.15rem 1.35rem 1.2rem; overflow-y: auto; overscroll-behavior: contain;
-  scrollbar-width: thin; scrollbar-color: var(--mn-papel-3) transparent;
-  background-image: radial-gradient(rgba(122, 86, 52, 0.07) 1px, transparent 1.2px); background-size: 7px 7px; }
-.mn-pagina--esq { background-color: var(--mn-papel); box-shadow: inset -26px 0 22px -18px rgba(90, 60, 25, 0.35); }
-.mn-pagina--dir { background-color: var(--mn-papel); box-shadow: inset 26px 0 22px -18px rgba(90, 60, 25, 0.35); }
-.mn-livro__lombada { display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;
-  background: linear-gradient(90deg, var(--mn-papel-3), #a98a5c 42%, #7d6140 50%, #a98a5c 58%, var(--mn-papel-3)); }
-.mn-livro__lombada i { display: block; width: 34px; height: 12px; border: 3px solid var(--mn-contorno); background: #c9b593; box-shadow: inset 0 3px 0 #efe3c8, inset 0 -2px 0 #8f7a58; }
-
-/* Título de seção em faixa de pano com pontas recortadas, entre filetes. */
-.mn-faixa-titulo { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.9rem; margin: 0.15rem 0 0; font-size: 1rem; }
-.mn-faixa-titulo::before, .mn-faixa-titulo::after { content: ""; height: 3px; background: var(--mn-tinta-2); opacity: 0.45; box-shadow: 0 5px 0 rgba(122, 86, 52, 0.25); }
-.mn-faixa-titulo > span { --fx: #b8452f; --fx-2: #84301f; position: relative; display: block; padding: 0.1rem 1.5rem 0.2rem; background: var(--fx); color: #fff4dc;
-  font-family: var(--fonte-pixel-titulo); font-size: 1.7rem; font-weight: 400; line-height: 1.05; letter-spacing: 0.04em; text-transform: uppercase;
-  filter: var(--mn-contorno-px); box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.22), inset 0 -3px 0 rgba(0, 0, 0, 0.18); }
-.mn-faixa-titulo > span::before, .mn-faixa-titulo > span::after { content: ""; position: absolute; z-index: -1; top: 7px; width: 22px; height: 100%; background: var(--fx-2); }
-.mn-faixa-titulo > span::before { left: -16px; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 38% 50%); }
-.mn-faixa-titulo > span::after { right: -16px; clip-path: polygon(0 0, 100% 0, 62% 50%, 100% 100%, 0 100%); }
-.mn-faixa-titulo--verde > span { --fx: #3f8a3a; --fx-2: #2a6127; }
-.mn-faixa-titulo--azul > span { --fx: #23807d; --fx-2: #165a58; }
-
-/* Hoje: linhas como a ficha de status dos jogos, com barra em blocos. */
-.mn-hoje { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
-.mn-hoje__linha, .mn-hoje__vazio { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.8rem; padding: 0.5rem 0.75rem 0.5rem 0.5rem;
-  border: 3px solid var(--mn-contorno); background: var(--mn-faixa); color: var(--mn-tinta); text-decoration: none;
-  box-shadow: inset 0 3px 0 rgba(255, 250, 230, 0.6), inset 0 -3px 0 var(--mn-papel-3), 3px 3px 0 rgba(42, 22, 8, 0.25); transition: transform 0.1s steps(2), background-color 0.1s; }
-.mn-hoje__linha:hover, .mn-hoje__vazio:hover, .mn-hoje__linha:focus-visible, .mn-hoje__vazio:focus-visible { transform: translate(-2px, -2px); background: #fbefd2; color: var(--mn-tinta); outline: 0; }
-.mn-hoje__arte { display: grid; place-items: center; width: 46px; height: 46px; border: 3px solid var(--mn-tinta-2); background: #fbf3df; box-shadow: inset 0 -3px 0 var(--mn-papel-2); }
-.mn-hoje__texto { display: grid; gap: 0.1rem; min-width: 0; }
-.mn-hoje__texto strong { overflow: hidden; font-size: 0.98rem; font-weight: 800; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
-.mn-hoje__texto small { color: var(--mn-tinta-2); font-size: 0.8rem; line-height: 1.3; }
-.mn-hoje__ir { display: grid; place-items: center; width: 2rem; height: 2rem; background: #3f8a3a; color: #fff4dc; font-size: 1rem; filter: drop-shadow(2px 0 0 var(--mn-contorno)) drop-shadow(-2px 0 0 var(--mn-contorno)) drop-shadow(0 2px 0 var(--mn-contorno)) drop-shadow(0 -2px 0 var(--mn-contorno)); }
-.mn-blocos { display: flex; gap: 3px; margin-top: 0.3rem; }
-.mn-blocos i { width: 13px; height: 9px; background: var(--mn-papel-3); box-shadow: inset 0 0 0 2px rgba(63, 36, 16, 0.35); }
-.mn-blocos i.cheio { background: #4fae48; box-shadow: inset 0 0 0 2px #1f4a1c, inset 0 -4px 0 #2f7d2a; }
-
-/* Dia a dia: azulejos como o quadro de tarefas dos jogos. */
-.mn-atalhos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.55rem; }
-.mn-atalho { position: relative; display: grid; justify-items: center; align-content: start; gap: 0.4rem; min-width: 0; padding: 0.75rem 0.3rem 0.6rem; text-align: center;
-  background: var(--mn-papel-2); color: var(--mn-tinta); text-decoration: none;
-  box-shadow: inset 0 0 0 3px var(--mn-papel-3), inset 0 -6px 0 rgba(122, 86, 52, 0.12); transition: transform 0.1s steps(2), box-shadow 0.1s; }
-.mn-atalho:hover, .mn-atalho:focus-visible { transform: translateY(-3px); color: var(--mn-tinta); outline: 0; box-shadow: inset 0 0 0 3px var(--capa), 0 4px 0 rgba(42, 22, 8, 0.25); background: #f6e9c9; }
-.mn-atalho[aria-current="page"] { box-shadow: inset 0 0 0 3px var(--capa); background: #fbf1d6; }
-.mn-atalho__arte { display: grid; place-items: center; width: 48px; height: 48px; }
-.mn-atalho__arte img { width: 46px; height: 46px; image-rendering: pixelated; filter: drop-shadow(0 3px 0 rgba(42, 22, 8, 0.25)); }
-.mn-atalho__capa { display: grid; place-items: center; width: 40px; height: 44px; background: var(--capa); color: #fff6dc; filter: var(--mn-contorno-px);
-  box-shadow: inset 6px 0 0 rgba(0, 0, 0, 0.22), inset 0 4px 0 rgba(255, 255, 255, 0.2); }
-.mn-atalho:hover .mn-atalho__capa { animation: mn-pula 0.4s steps(3); }
-@keyframes mn-pula { 50% { transform: translateY(-4px) rotate(-5deg); } }
-.mn-atalho strong { font-family: var(--fonte-pixel-titulo); font-size: 1.22rem; font-weight: 400; line-height: 0.95; overflow-wrap: anywhere; }
-.mn-atalho__texto { display: none; }
-.mn-atalho__cadeado { position: absolute; top: 5px; right: 5px; display: grid; place-items: center; width: 20px; height: 20px; background: var(--mn-ouro); color: var(--mn-contorno);
+/* Planos: uma placa de latão, fácil de achar e sem gritar. */
+.mn-planos { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.9rem; padding: 0.7rem 0.9rem 0.7rem 1rem;
+  border: 2px solid #b4862e; background: color-mix(in srgb, #f2c14e 16%, var(--superficie)); color: var(--texto); text-decoration: none; transition: transform 0.1s steps(2), box-shadow 0.1s; }
+.mn-planos:hover, .mn-planos:focus-visible { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--mn-sombra); color: var(--texto); outline: 0; }
+.mn-planos__texto { min-width: 0; }
+.mn-planos strong { display: block; font-size: 0.98rem; font-weight: 750; }
+.mn-planos small { display: block; color: var(--texto-2); font-size: 0.8rem; line-height: 1.35; }
+.mn-planos__acao { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.4rem 0.75rem; background: #e9b54a; color: #3b2604; font-weight: 800; font-size: 0.82rem; white-space: nowrap;
   box-shadow: inset 0 0 0 2px var(--mn-contorno), inset 0 3px 0 #ffe39a; }
-.mn-atalho__novo { position: absolute; top: -7px; left: -5px; padding: 0 0.35rem 0.05rem; background: #d2604a; color: #fff4dc; font-family: var(--fonte-pixel-titulo); font-size: 0.95rem; line-height: 1.1;
-  filter: drop-shadow(2px 0 0 var(--mn-contorno)) drop-shadow(-2px 0 0 var(--mn-contorno)) drop-shadow(0 2px 0 var(--mn-contorno)) drop-shadow(0 -2px 0 var(--mn-contorno)); transform: rotate(-6deg); }
-.mn-atalho .ip-px { transform: scale(1.1); }
 
-/* Sumário: capítulos com plaquinha colorida e faixas de pergaminho, como o "Journal". */
-.mn-sumario { columns: 2; column-gap: 1.2rem; }
-.mn-capitulo { break-inside: avoid; margin: 0 0 0.85rem; }
-.mn-placa { display: inline-block; margin: 0 0 0.4rem; padding: 0.05rem 0.6rem 0.12rem; background: var(--cor); color: #fff4dc; font-family: var(--fonte-pixel-titulo); font-size: 1.15rem; line-height: 1.1;
-  filter: drop-shadow(2px 0 0 var(--mn-contorno)) drop-shadow(-2px 0 0 var(--mn-contorno)) drop-shadow(0 2px 0 var(--mn-contorno)) drop-shadow(0 -2px 0 var(--mn-contorno)); }
-.mn-capitulo ul { display: grid; gap: 0.32rem; margin: 0; padding: 0; list-style: none; }
-.mn-faixa { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; min-height: 2.15rem; padding: 0.2rem 0.55rem 0.25rem 0.7rem;
-  border: 2px solid var(--mn-faixa-borda); background: var(--mn-faixa); color: var(--mn-tinta); text-decoration: none;
-  box-shadow: inset 0 2px 0 rgba(255, 250, 230, 0.6), inset 0 -3px 0 rgba(154, 119, 72, 0.25); transition: background-color 0.08s, color 0.08s; }
-.mn-faixa__texto { min-width: 0; }
-.mn-faixa__texto strong { display: block; overflow: hidden; font-size: 0.9rem; font-weight: 750; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
-.mn-faixa__texto small { display: none; }
-.mn-faixa__seta { flex: none; color: var(--mn-tinta-2); opacity: 0; transform: translateX(-4px); transition: opacity 0.1s, transform 0.1s steps(2); }
-.mn-faixa__cadeado { flex: none; display: grid; place-items: center; width: 20px; height: 20px; background: var(--mn-ouro); color: var(--mn-contorno); box-shadow: inset 0 0 0 2px var(--mn-contorno), inset 0 3px 0 #ffe39a; }
-.mn-faixa:hover, .mn-faixa:focus-visible { border-color: var(--mn-contorno); background: var(--cor); color: #fff8e6; outline: 0; box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25), inset 0 -3px 0 rgba(0, 0, 0, 0.2); }
-.mn-faixa:hover .mn-faixa__seta, .mn-faixa:focus-visible .mn-faixa__seta { opacity: 1; transform: none; color: #fff8e6; }
-.mn-faixa[aria-current="page"]:not(:hover):not(:focus-visible) { border-color: var(--mn-contorno); background: #fbf1d6; }
-.mn-faixa[aria-current="page"]::before { content: ""; position: absolute; left: -13px; top: 50%; width: 8px; height: 12px; margin-top: -6px; background: var(--mn-tinta); clip-path: polygon(0 0, 100% 50%, 0 100%); }
+/* Grupos: título com filete na cor do grupo e lista com a capinha. */
+.mn__grupos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem 2rem; }
+.mn-grupo__titulo { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 0.3rem; color: var(--cor); font-family: var(--fonte-pixel-titulo); font-size: 1.3rem; line-height: 1.1; }
+.mn-grupo__titulo::after { content: ""; flex: 1; height: 2px; background: currentColor; opacity: 0.3; }
+:root[data-tema="escuro"] .mn-grupo__titulo { color: color-mix(in srgb, var(--cor) 55%, #fff); }
+.mn-grupo ul { display: grid; gap: 0.1rem; margin: 0; padding: 0; list-style: none; }
+.mn-item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 0.5rem 0.55rem 0.5rem 0.6rem;
+  border: 2px solid transparent; color: var(--texto); text-decoration: none; transition: background-color 0.08s; }
+.mn-item:hover { background: var(--superficie-2); color: var(--texto); }
+.mn-item:hover .mn-obj { animation: mn-pula 0.4s steps(3); }
+.mn-item:focus-visible { outline: 2px solid var(--verdete); outline-offset: 1px; }
+.mn-item[aria-current="page"] { border-color: color-mix(in srgb, var(--verdete) 45%, transparent); background: var(--verdete-veu); }
+.mn-item__texto { min-width: 0; }
+.mn-item__texto strong { display: block; font-size: 0.93rem; font-weight: 650; line-height: 1.25; }
+.mn-item__texto small { display: block; overflow: hidden; color: var(--texto-2); font-size: 0.78rem; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
+.mn-item__seta { color: var(--texto-2); opacity: 0.45; }
+.mn-item:hover .mn-item__seta { opacity: 1; color: var(--verdete); }
 
-/* A busca vira uma etiqueta de papel. */
-.mn-livro .mn-busca { margin: 0; }
-.mn-livro .mn-busca__campo { min-height: 2.75rem; border: 3px solid var(--mn-contorno); border-radius: 0; background: #fbf3df; color: var(--mn-tinta-2); box-shadow: inset 0 3px 0 var(--mn-papel-2); }
-.mn-livro .mn-busca__campo:hover { border-color: var(--mn-contorno); }
-.mn-livro .mn-busca__campo:focus-within { border-color: var(--mn-contorno); background: #fffaf0; box-shadow: inset 0 3px 0 var(--mn-papel-2), 0 0 0 3px var(--mn-ouro); }
-.mn-livro .mn-busca__campo input { color: var(--mn-tinta); font-size: 0.95rem; }
-.mn-livro .mn-busca__campo input::placeholder { color: var(--mn-tinta-2); opacity: 0.8; }
-.mn-livro .mn-busca__lista { border: 3px solid var(--mn-contorno); border-radius: 0; background: #fbf3df; box-shadow: 4px 4px 0 rgba(42, 22, 8, 0.3); }
-.mn-livro .mn-busca__item { border-radius: 0; color: var(--mn-tinta); }
-.mn-livro [aria-selected="true"] > .mn-busca__item { background: var(--mn-faixa); }
-.mn-livro .mn-busca__icone { border-radius: 0; background: var(--mn-papel-2); color: var(--mn-tinta); }
-.mn-livro .mn-busca__texto > small, .mn-livro .mn-busca__tipo { color: var(--mn-tinta-2); }
-.mn-livro .mn-busca__limpar { border-radius: 0; background: var(--mn-papel-2); color: var(--mn-tinta); }
+.mn__rodape { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0; padding-top: 0.9rem; border-top: var(--borda); font-size: 0.78rem; }
+.mn__rodape a { color: var(--texto-2); }
 
-/* Bilhete preso na página: o que tem no item sob o mouse. */
-.mn-nota { position: relative; margin: auto 0.4rem 0 0.2rem; padding: 0.6rem 0.85rem 0.65rem; min-height: 3.4rem; background: #f4cb6a; color: #4a2c0c; font-size: 0.86rem; line-height: 1.4;
-  transform: rotate(-0.8deg); box-shadow: inset 0 0 0 2px #b4862e, 3px 4px 0 rgba(42, 22, 8, 0.22); }
-.mn-nota::before { content: ""; position: absolute; top: -8px; left: 50%; width: 46px; height: 14px; margin-left: -23px; background: rgba(240, 232, 210, 0.75); box-shadow: inset 0 0 0 1px rgba(122, 86, 52, 0.25); transform: rotate(2deg); }
-.mn-nota b { display: block; font-family: var(--fonte-pixel-titulo); font-size: 1.2rem; font-weight: 400; line-height: 1; }
-
-.mn-planos { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 0.6rem; padding: 0.45rem 0.85rem; background: var(--mn-ouro); color: var(--mn-contorno); text-decoration: none;
-  filter: var(--mn-contorno-px); box-shadow: inset 0 3px 0 #ffe39a, inset 0 -3px 0 var(--mn-ouro-2); margin: 3px; transition: transform 0.1s steps(2); }
-.mn-planos:hover, .mn-planos:focus-visible { transform: translateY(-2px); color: var(--mn-contorno); outline: 0; }
-.mn-planos strong { font-family: var(--fonte-pixel-titulo); font-size: 1.35rem; font-weight: 400; line-height: 1; }
-.mn-planos small { font-size: 0.8rem; font-weight: 700; }
-.mn-rodape { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin: 0; font-size: 0.75rem; }
-.mn-rodape a { color: var(--mn-tinta-2); }
-
-/* Marcadores coloridos saindo da borda direita, como no diário de tarefas. */
-.mn-livro__marcadores { position: absolute; top: 5.6rem; right: 0.2rem; z-index: 0; display: grid; gap: 0.55rem; filter: var(--mn-contorno-px); }
-.mn-marcador { display: block; width: 3.1rem; height: 2.3rem; padding: 0; border: 0; background: var(--cor); cursor: pointer; clip-path: polygon(0 0, 100% 0, 78% 50%, 100% 100%, 0 100%);
-  box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.25), inset 0 -4px 0 rgba(0, 0, 0, 0.2); transition: transform 0.1s steps(2); }
-.mn-marcador:hover, .mn-marcador:focus-visible { transform: translateX(5px); outline: 0; }
-
-/* A fita vermelha pendurada no pé do livro. */
-.mn-livro__fita { position: absolute; bottom: 0; left: 31%; z-index: 2; width: 24px; height: 3.4rem; filter: var(--mn-contorno-px); pointer-events: none; }
-.mn-livro__fita::before { content: ""; position: absolute; inset: 0; background: #c8372d; box-shadow: inset 6px 0 0 #e8574a, inset -4px 0 0 #8e2119; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 74%, 0 100%); }
-.mn-livro:hover .mn-livro__fita { animation: mn-balanca 1.4s steps(4) infinite; transform-origin: top center; }
-@keyframes mn-balanca { 25% { transform: rotate(4deg); } 75% { transform: rotate(-4deg); } }
-
-/* ── Luz de cena "HD-2D" (Octopath Traveler II de referência) ──
-   O site atrás fica desfocado como profundidade de campo, com vinheta; feixes de luz quente descem da esquerda, poeira e
-   bokeh flutuam, o livro recebe luz por cima (brilho no couro e no latão, sombra no pé). */
-.jc:has(.mn-livro-janela) { backdrop-filter: brightness(0.86) saturate(0.95); -webkit-backdrop-filter: brightness(0.86) saturate(0.95);
-  background: radial-gradient(60% 55% at 18% 0%, rgba(255, 190, 110, 0.35), transparent 65%), radial-gradient(130% 110% at 50% 45%, rgba(20, 12, 4, 0.06) 45%, rgba(6, 3, 1, 0.4) 100%); }
-:root[data-tema="escuro"] .jc:has(.mn-livro-janela) { background: radial-gradient(70% 60% at 22% 8%, rgba(150, 180, 255, 0.2), transparent 60%), radial-gradient(130% 110% at 50% 45%, rgba(4, 8, 20, 0.12) 45%, rgba(2, 4, 12, 0.5) 100%); }
-.mn-luz { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
-.mn-luz--frente { z-index: 4; }
-.mn-luz__feixes { position: absolute; inset: -20% -10%; mix-blend-mode: screen; opacity: 0.8;
-  background: linear-gradient(118deg, transparent 8%, rgba(255, 214, 150, 0.85) 13%, transparent 20%, transparent 26%, rgba(255, 224, 170, 0.6) 30%, transparent 36%, transparent 47%, rgba(255, 210, 140, 0.45) 51%, transparent 57%, transparent 68%, rgba(255, 228, 180, 0.3) 71%, transparent 77%);
-    transparent 52%, rgba(255, 210, 140, 0.28) 55%, transparent 61%, transparent 70%, rgba(255, 228, 180, 0.2) 73%, transparent 79%);
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.7) 60%, transparent 95%); mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.7) 60%, transparent 95%);
-  }
-@keyframes mn-feixes { from { opacity: 0.7; transform: translateX(-1.5%); } to { opacity: 0.85; transform: translateX(1.5%); } }
-.mn-luz i { position: absolute; width: var(--s); height: var(--s); border-radius: 50%; background: #ffe6b0; box-shadow: 0 0 6px 2px rgba(255, 210, 130, 0.7);
-  animation: mn-poeira var(--t) linear var(--d) infinite; opacity: 0; }
-.mn-luz i.bokeh { background: radial-gradient(circle, rgba(255, 236, 200, 0.55), rgba(255, 210, 140, 0.15) 60%, transparent 72%); box-shadow: none; mix-blend-mode: screen; }
-@keyframes mn-poeira { 0% { opacity: 0; transform: translate(0, 0); } 15% { opacity: 0.9; } 50% { transform: translate(22px, -40px); } 85% { opacity: 0.7; } 100% { opacity: 0; transform: translate(-10px, -90px); } }
-:root[data-tema="escuro"] .mn-luz__feixes { filter: hue-rotate(185deg) saturate(0.6); opacity: 0.45; }
-:root[data-tema="escuro"] .mn-luz i { background: #e6eeff; box-shadow: 0 0 6px 2px rgba(170, 200, 255, 0.6); }
-
-/* O livro sob a luz: brilho quente no canto de cima, sombra no pé, contato com o "chão". */
-.mn-livro__capa::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: soft-light;
-  background: radial-gradient(80% 90% at 18% 0%, rgba(255, 236, 190, 0.9), transparent 55%), linear-gradient(160deg, transparent 55%, rgba(20, 8, 0, 0.35)); }
-.mn-livro__miolo::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: multiply;
-  background: radial-gradient(110% 95% at 25% 5%, transparent 40%, rgba(80, 45, 10, 0.3) 100%); }
-.mn-livro__miolo::before { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: screen;
-  background: radial-gradient(50% 45% at 20% 4%, rgba(255, 226, 160, 0.55), transparent 70%); }
-@keyframes mn-respira { to { opacity: 0.55; } }
-.mn-livro__canto { filter: var(--mn-contorno-px) drop-shadow(0 0 7px rgba(255, 205, 110, 0.75)); }
-
-@keyframes mn-reflexo { to { filter: var(--mn-contorno-px) drop-shadow(0 0 13px rgba(255, 225, 150, 0.95)); } }
-.mn-livro::after { content: ""; position: absolute; left: 4%; right: 8%; bottom: -1.4rem; height: 3rem; z-index: -1; border-radius: 50%; background: radial-gradient(closest-side, rgba(0, 0, 0, 0.5), transparent); }
-.mn-aba--titulo, .mn-planos { text-shadow: 0 0 8px rgba(255, 240, 200, 0.5); }
-.mn-faixa-titulo > span { text-shadow: 0 0 10px rgba(255, 230, 180, 0.45); }
-
-/* A mesinha no pé da página esquerda: a vela é a fonte de luz da cena (chama tremendo, halo quente na página). */
-.mn-mesa { position: relative; display: flex; align-items: flex-end; justify-content: center; gap: 1.1rem; margin-top: auto; padding: 0.6rem 0 0.4rem; border-bottom: 4px solid #8a5530;
-  box-shadow: 0 3px 0 #5b3519; flex-wrap: wrap; }
-.mn-mesa p { flex-basis: 100%; order: 9; margin: 0.35rem 0 0.2rem; text-align: center; color: var(--mn-tinta-2); font-family: var(--fonte-pixel-titulo); font-size: 1.15rem; }
-.mn-vela { position: relative; width: 14px; height: 30px; background: #f6efe0; box-shadow: inset -4px 0 0 #d9ccb0, 0 0 0 3px var(--mn-contorno); margin-bottom: 3px; }
-.mn-vela::after { content: ""; position: absolute; left: -8px; right: -8px; bottom: -6px; height: 6px; background: #c9952f; box-shadow: 0 0 0 3px var(--mn-contorno); }
-.mn-vela__chama { position: absolute; left: 50%; top: -17px; width: 10px; height: 15px; margin-left: -5px; background: #ffd65a; box-shadow: inset 0 -5px 0 #ff9a2a, 0 0 10px 3px rgba(255, 190, 80, 0.9);
-  clip-path: polygon(50% 0, 100% 55%, 80% 100%, 20% 100%, 0 55%); animation: mn-chama 0.5s steps(2) infinite alternate; }
-@keyframes mn-chama { to { transform: scaleY(0.82) translateX(1px); } }
-.mn-vela__halo { position: absolute; left: 50%; top: 14px; width: 220px; height: 200px; margin: -100px 0 0 -110px; border-radius: 50%; pointer-events: none; mix-blend-mode: multiply;
-  background: radial-gradient(circle, rgba(255, 170, 60, 0.55), rgba(255, 190, 90, 0.22) 38%, transparent 70%); animation: mn-halo 2.6s ease-in-out infinite alternate; }
-@keyframes mn-halo { 0% { opacity: 0.75; transform: scale(0.96); } 40% { opacity: 1; } 70% { opacity: 0.85; transform: scale(1.03); } 100% { opacity: 1; } }
-
-/* ── Celular e telas médias (painel): uma página só, em coluna ── */
-.painel:has(.mn-livro) { background: var(--mn-couro); border: 0; border-top: 4px solid var(--mn-contorno); box-shadow: inset 0 4px 0 var(--mn-couro-3); }
-.painel:has(.mn-livro) .painel__topo { border-bottom: 0; padding: 0.7rem 0.9rem 0.5rem; }
-.painel:has(.mn-livro) .painel__titulo { color: #fff0cf; font-family: var(--fonte-pixel-titulo); font-size: 1.7rem; font-weight: 400; line-height: 1; letter-spacing: 0.04em; }
-.painel:has(.mn-livro) .painel__fechar { width: 2.75rem; height: 2.75rem; border-radius: 0; background: #d2604a; color: #fff4dc; box-shadow: inset 0 0 0 3px var(--mn-contorno), inset 0 5px 0 #f08a70; }
-.painel:has(.mn-livro) .painel__corpo { padding: 0 0.6rem calc(0.8rem + env(safe-area-inset-bottom)); }
-.painel .mn-livro { padding: 0; animation: none; }
-.painel .mn-mesa, .painel .mn-luz__feixes, .painel .mn-livro__abas, .painel .mn-livro__marcadores, .painel .mn-livro__fita, .painel .mn-livro__lombada, .painel .mn-livro__canto, .painel .mn-nota { display: none; }
-.painel .mn-livro__capa { padding: 0; border: 0; background: none; box-shadow: none; }
-.painel .mn-livro__miolo { display: block; height: auto; box-shadow: 0 4px 0 var(--mn-papel-2), 0 7px 0 var(--mn-contorno); }
-.painel .mn-pagina { overflow: visible; padding: 1rem 0.85rem; box-shadow: none; }
-.painel .mn-pagina--dir { border-top: 3px dashed var(--mn-papel-3); }
-.painel .mn-sumario { columns: 1; }
-.painel .mn-faixa { min-height: 3rem; padding-block: 0.4rem; }
-.painel .mn-faixa__texto strong { white-space: normal; font-size: 0.95rem; }
-.painel .mn-faixa__texto small { display: block; margin-top: 0.05rem; font-size: 0.78rem; line-height: 1.3; opacity: 0.8; }
-.painel .mn-faixa__seta { opacity: 0.7; transform: none; }
-.painel .mn-atalhos { gap: 0.4rem; }
-.painel .mn-atalho { padding: 0.6rem 0.15rem 0.5rem; }
-.painel .mn-atalho strong { font-size: 1.05rem; }
-.painel .mn-faixa-titulo > span { font-size: 1.5rem; }
-@media (max-width: 22rem) { .mn-atalhos { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-
-.painel .mn-luz { position: absolute; z-index: 4; }
-.painel .mn-livro::after, .painel .mn-livro__miolo::after, .painel .mn-livro__capa::after, .painel .mn-luz i.bokeh, .painel .mn-luz:not(.mn-luz--frente) { display: none; }
-.painel .mn-livro__miolo::before { background: radial-gradient(90% 260px at 15% 0%, rgba(255, 226, 160, 0.5), transparent 75%); }
-.painel:has(.mn-livro)::after { content: ""; position: absolute; inset: 0; pointer-events: none; mix-blend-mode: soft-light;
-  background: radial-gradient(90% 40% at 15% 0%, rgba(255, 230, 180, 0.7), transparent 60%); }
+/* Celular e telas médias: três cartões por linha, só o nome; grupos em uma coluna. */
+@media (max-width: 52rem) {
+  .mn-principais { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+  .mn-principal { padding: 0.8rem 0.25rem 0.6rem; }
+  .mn-principal .mn-obj { margin-bottom: 0.35rem; }
+  .mn-principal small { display: none; }
+  .mn__grupos { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+}
+@media (max-width: 30rem) {
+  .mn-planos { grid-template-columns: auto minmax(0, 1fr); }
+  .mn-planos__acao { display: none; }
+  .mn-planos small { white-space: normal; }
+}
 @media (prefers-reduced-motion: reduce) {
-  .mn-luz i, .mn-luz__feixes, .mn-vela__chama, .mn-vela__halo, .mn-livro__miolo::before, .mn-livro__canto--1,
-  .mn-livro, .mn-livro:hover .mn-livro__fita, .mn-atalho:hover .mn-atalho__capa { animation: none; }
-  .mn-aba, .mn-hoje__linha, .mn-atalho, .mn-marcador, .mn-planos, .mn-faixa__seta { transition: none; }
+  .mn-principal:hover .mn-obj, .mn-item:hover .mn-obj { animation: none; }
+  .mn-hoje__linha, .mn-principal, .mn-planos { transition: none; }
 }
 
 /* Busca do menu: páginas, trechos dos resumos, assuntos, flashcards e questões. */

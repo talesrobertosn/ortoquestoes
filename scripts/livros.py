@@ -41,6 +41,8 @@ LIVROS = {
     "netter-concise": "Netter's Concise",
     "netter-clin": "Netters Clinical Anatomy",
     "hoppenfeld": "Hoppenfeld  Surgical",
+    "hoppenfeld-pt": "Hoppenfeld Vias de Acesso",
+    "green7": "OPERATIVE HAND SURGERY, 7th",
     "adulthip": "The Adult Hip",
     "greenspan": "RADIOLOGIA ORTOPEDICA",
     "tarcisio": "EXAME FISICO EM ORTOPEDIA",

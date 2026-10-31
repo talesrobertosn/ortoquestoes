@@ -60,10 +60,14 @@ cinto e pano vermelho), em pixel art HD-2D: `scripts/gerar_mascote.py` gera `pub
 `src/componentes/mascote/sprites.ts`. Use `<Mascote />` em qualquer tela: `comportamento` fixo, `fantasia`
 (`halloween` em outubro, automático: manto de capuz, foice, lanterna de abóbora, castiçal e morcegos), `falar={false}`,
 `interativo={false}` (dentro de link). Falas em `falas.ts`. O Tales recusou: touca, sorriso/expressão feliz, bochecha
-rosada, esqueleto realista grande, versão vetorial "chapada" (também a de traço limpo, em 31/10/2026) e sorvete.
-Rosto escolhido em 31/10/2026 ("modelo E"): três-quartos para a esquerda, sem dentes, órbita grande com aro de osso
-claro e a outra estreita na borda, fundo cinza-escuro sem brilho, nariz pequeno embaixo à esquerda (`ROSTO=tres_quartos`,
-o padrão do script; os outros modelos ficam no script só para comparação). Antes de mudar o rosto, mande modelos lado a lado. Comportamento novo = nova linha no script +
+rosada, esqueleto realista grande, versão vetorial "chapada" (também a de traço limpo, em 31/10/2026), sorvete e
+rosto de frente com dentes. Rosto escolhido em 31/10/2026 ("modelo E, sem boca"): três-quartos para a esquerda, sem boca
+nem dentes, órbita grande com aro de osso claro e a outra estreita na borda, fundo cinza-escuro sem brilho, nariz
+pequeno embaixo à esquerda (`ROSTO=tres_quartos`, o padrão do script; os outros modelos ficam no script só para
+comparação). Ao trocar a folha, mude o `?v=` em `sprites.ts` (o service worker guarda a arte antiga). Antes de mudar o
+rosto, mande modelos lado a lado. Poses fixas novas (31/10/2026: estudioso, mago, inverno, pergaminho, comemorando, trofeu,
+descansando, orientando, ortopedia; gato sentado, andando, espreguicando, brincando, lendo, comemorando) ficam em
+`esqueleto-poses.png` e `gato-poses.png`, fora do sorteio do topo. Comportamento novo = nova linha no script +
 `sprites.ts` + 8 a 10 falas. No cenário, o mascote e o gato recebem a luz da hora do dia (filtros em `InicioHd.css`).
 
 ## Montar na tela

@@ -6,7 +6,7 @@
 
 /** Esqueleto: public/pixel/mascote/esqueleto.png */
 export const SPRITE_ESQUELETO = {
-  src: '/pixel/mascote/esqueleto.png',
+  src: '/pixel/mascote/esqueleto.png?v=e',
   larguraQuadro: 96,
   alturaQuadro: 128,
   quadrosPorLinha: 8,

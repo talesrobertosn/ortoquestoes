@@ -34,7 +34,7 @@ ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
 # Ordem sem importância: o rodízio embaralha.
 SELECIONADAS = [
     'mao-0102',             # TEOT 2021 · túnel cubital x canal de Guyon
-    'ombro-cotovelo-0448',  # TARO 2026 · luxação anterior inveterada do ombro
+    'ombro-cotovelo-0244',  # TEOT 2024 · nervos em risco no LATARJET
     'joelho-0186',          # TEOT 2025 · LCP e hiperextensão
     'coluna-0090',          # TEOT 2023 · espondilolistese degenerativa
     'pediatria-0502',       # TARO 2026 · DDQ, osteotomia de Steel (imagem)
