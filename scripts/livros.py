@@ -49,6 +49,7 @@ LIVROS = {
     "pardini": "PARDINI - VOL 01",
     "ao": "Manual_AO",
     "pedhand": "Pediatric Hand and Upper Limb",
+    "sizinio5": "Sizinio_Hebert_5",
 }
 
 

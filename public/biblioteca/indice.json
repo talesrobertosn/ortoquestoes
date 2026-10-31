@@ -7912,15 +7912,15 @@
   },
   {
    "id": "rockwoodcriancas10-24-quadril",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas do colo do fêmur e luxação traumática do quadril na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children",
-   "resumo": "DELBET (I transepifisária, II transcervical a mais comum, III cervicotrocantérica, IV intertrocantérica) com necrose de 38, 28, 18 e 5%, irrigação pela circunflexa medial, redução anatômica e fixação que pode cruzar a fise, RATLIFF, coxa vara e pseudartrose, fratura por estresse, luxação traumática posterior e o tempo até reduzir.",
+   "resumo": "Fratura do quadril da criança é rara (menos de 1%), de alta energia e cheia de complicações; a fise é barreira e a cabeça depende dos retinaculares posterossuperiores da circunflexa medial; DELBET I transepifisária (8%, IB com luxação = necrose em quase todos), II transcervical (45 a 50%, a mais comum), III cervicotrocantérica (34%), IV intertrocantérica (12%), com necrose de 38, 28, 18 e 5%; redução anatômica, aberta se sobrar desvio, fixação estável que cruza a fise se preciso; RATLIFF I toda a cabeça (pior), II parcial, III colo (bom); coxa vara, fechamento fisário (fise proximal faz 13% do membro) e pseudartrose (osteotomia valgizante); estresse de tensão = fixar; luxação posterior em mais de 90%, baixa energia abaixo de 6 anos, reduzir com anestesia e radioscopia no adolescente, necrose ligada ao tempo até a redução.",
    "acesso": "gratis",
-   "minutos": 7,
+   "minutos": 26,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7928,54 +7928,70 @@
      "radar": "fundamento"
     },
     {
-     "id": "anatomia-e-irrigacao",
-     "titulo": "Anatomia e irrigação",
-     "radar": "oportunidade"
+     "id": "a-cabeca-femoral-da-crianca-e-seus-vasos",
+     "titulo": "A cabeça femoral da criança e seus vasos",
+     "radar": "fundamento"
     },
     {
-     "id": "classificacao-de-delbet",
-     "titulo": "Classificação de DELBET",
+     "id": "a-fratura-do-quadril-quem-como-e-como-se-ve",
+     "titulo": "A fratura do quadril: quem, como e como se vê",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-classificacao-de-delbet",
+     "titulo": "A classificação de DELBET",
      "radar": "confirmado"
     },
     {
-     "id": "tratamento",
-     "titulo": "Tratamento",
+     "id": "tratamento-da-fratura-do-quadril",
+     "titulo": "Tratamento da fratura do quadril",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-osteonecrose",
+     "titulo": "A osteonecrose",
      "radar": "confirmado"
     },
     {
-     "id": "necrose",
-     "titulo": "Necrose",
+     "id": "coxa-vara-fechamento-fisario-e-pseudartrose",
+     "titulo": "Coxa vara, fechamento fisário e pseudartrose",
      "radar": "confirmado"
     },
     {
-     "id": "coxa-vara-fise-e-pseudartrose",
-     "titulo": "Coxa vara, fise e pseudartrose",
-     "radar": "oportunidade"
+     "id": "a-fratura-de-estresse-do-colo",
+     "titulo": "A fratura de estresse do colo",
+     "radar": "clinico"
     },
     {
-     "id": "fratura-por-estresse-do-colo",
-     "titulo": "Fratura por estresse do colo",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "luxacao-traumatica-do-quadril",
-     "titulo": "Luxação traumática do quadril",
+     "id": "a-luxacao-traumatica-do-quadril",
+     "titulo": "A luxação traumática do quadril",
      "radar": "confirmado"
     },
     {
-     "id": "fechamento",
-     "titulo": "Fechamento",
+     "id": "a-idade-muda-tudo",
+     "titulo": "A idade muda tudo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "armadilhas-e-tres-casos",
+     "titulo": "Armadilhas e três casos",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
      "radar": "fundamento"
     }
    ],
    "questoes": [
     "pediatria-0799",
-    "pediatria-0515",
     "pediatria-0530",
     "pediatria-0599",
+    "pediatria-0920",
+    "pediatria-0515",
     "pediatria-0651",
     "pediatria-0858",
-    "pediatria-0920",
+    "pediatria-0675",
     "pediatria-0721",
     "pediatria-0707",
     "pediatria-0730",
@@ -7987,22 +8003,29 @@
    ],
    "treino": [
     "pediatria-1183",
+    "pediatria-1433",
     "pediatria-1182",
     "pediatria-1185",
     "pediatria-1186",
+    "pediatria-1435",
     "pediatria-1184",
     "pediatria-1187",
     "pediatria-1188",
     "pediatria-1195",
+    "pediatria-1434",
     "pediatria-1189",
     "pediatria-1190",
     "pediatria-1191",
     "pediatria-1192",
     "pediatria-1193",
-    "pediatria-1194"
+    "pediatria-1194",
+    "pediatria-1178",
+    "pediatria-1432"
    ],
    "subtemas": [
-    "Fraturas da pelve e do quadril na criança"
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança",
+    "Fraturas do fêmur e da perna na criança"
    ]
   },
   {
