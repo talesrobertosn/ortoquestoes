@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Quem mora aqui? (stories) · tumores-0318</title>
+<!-- Estilo novo (31/10/2026): "Quem mora aqui?". Visual de aplicativo de imóveis: a lesão é o imóvel (endereço e
+     idade do morador), as alternativas são os candidatos a morador, cada um com o endereço onde costuma morar, e a
+     resposta fecha o contrato com a regra das três chaves (endereço, idade, aparência). Questão real: tumores-0318
+     (TARO 2024). Explicação do comentário da questão.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-31-quem-mora-aqui/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: #10201d;
+  background: radial-gradient(90% 40% at 100% 0%, #d9efe9, transparent 70%), radial-gradient(80% 40% at 0% 100%, #f6ead0, transparent 70%), #f5f7f6; }
+.app { position: absolute; left: 64px; right: 64px; top: 236px; bottom: 300px; display: flex; flex-direction: column; }
+.barra { display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.passo { display: flex; gap: 8px; } .passo i { width: 46px; height: 8px; border-radius: 99px; background: #cfdcd8; } .passo i.on { background: #14655e; }
+.busca { margin-top: 26px; display: flex; align-items: center; gap: 16px; padding: 20px 26px; border-radius: 999px; background: #fff; box-shadow: 0 10px 30px rgba(16, 32, 29, .08), inset 0 0 0 2px #e3ebe8; font: 600 28px Inter; color: #5b6b67; }
+.busca b { color: #10201d; }
+.lupa { width: 30px; height: 30px; border: 4px solid #14655e; border-radius: 50%; position: relative; flex: none; }
+.lupa::after { content: ''; position: absolute; width: 4px; height: 13px; right: -8px; bottom: -11px; background: #14655e; border-radius: 2px; transform: rotate(-45deg); }
+h1 { margin-top: 26px; font: 800 78px/1 Jakarta; letter-spacing: -.04em; }
+h1 em { font-style: normal; color: #14655e; }
+.sub { margin-top: 14px; font: 500 30px/1.4 Inter; color: #4a5b57; }
+
+/* anúncio do imóvel */
+.anuncio { margin-top: 28px; border-radius: 34px; overflow: hidden; background: #fff; box-shadow: 0 24px 60px rgba(16, 32, 29, .16); }
+.foto { position: relative; height: 500px; background: #000; overflow: hidden; }
+.foto img { position: absolute; left: 50%; top: 50%; width: 1120px; transform: translate(-50%, -46%); }
+.selo { position: absolute; left: 22px; top: 22px; padding: 10px 18px; border-radius: 999px; font: 800 22px Inter; letter-spacing: .08em; text-transform: uppercase; color: #10201d; background: #f4cf7c; }
+.foto small { position: absolute; right: 18px; bottom: 14px; font: 500 16px Inter; color: rgba(255, 255, 255, .75); }
+.dados { display: grid; grid-template-columns: repeat(3, 1fr); }
+.dado { padding: 22px 24px; border-right: 2px solid #eef2f1; }
+.dado:last-child { border-right: 0; }
+.dado small { display: block; font: 700 19px Inter; letter-spacing: .14em; text-transform: uppercase; color: #7b8b87; }
+.dado b { display: block; margin-top: 6px; font: 800 33px/1.15 Jakarta; letter-spacing: -.02em; }
+.pergunta { margin-top: 22px; font: 700 38px/1.3 Jakarta; letter-spacing: -.02em; }
+.candidatos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
+.cand { display: flex; align-items: center; gap: 16px; padding: 16px 18px; border-radius: 22px; background: #fff; box-shadow: inset 0 0 0 2px #e3ebe8; font: 700 29px/1.15 Jakarta; }
+.cand b { display: grid; place-items: center; flex: none; width: 58px; height: 58px; border-radius: 50%; font: 800 30px Jakarta; color: #fff; background: #14655e; }
+
+/* fichas dos candidatos */
+.fichas { display: grid; gap: 18px; margin-top: 28px; }
+.ficha { display: grid; grid-template-columns: 76px 1fr; gap: 20px; padding: 22px 24px; border-radius: 26px; background: #fff; box-shadow: 0 10px 28px rgba(16, 32, 29, .08), inset 0 0 0 2px #e3ebe8; }
+.ficha > b { display: grid; place-items: center; width: 72px; height: 72px; border-radius: 50%; font: 800 36px Jakarta; color: #fff; background: #93a5a1; }
+.ficha h3 { font: 800 36px Jakarta; letter-spacing: -.02em; }
+.tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.tag { padding: 7px 14px; border-radius: 999px; font: 700 23px Inter; background: #eef3f1; color: #23413c; }
+.tag--pino::before { content: ''; display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #14655e; vertical-align: 1px; }
+.ficha p { margin-top: 10px; font: 500 26px/1.38 Inter; color: #3e4f4b; }
+.ficha .nao { color: #b3423a; font-weight: 800; }
+.ficha--sim { box-shadow: 0 0 0 4px #14655e, 0 16px 34px rgba(20, 101, 94, .25); }
+.ficha--sim > b { background: #14655e; }
+.ficha--sim .sim { color: #14655e; font-weight: 800; }
+
+/* resposta */
+.contrato { margin-top: 30px; border-radius: 34px; overflow: hidden; background: #fff; box-shadow: 0 24px 60px rgba(16, 32, 29, .16); }
+.contrato__topo { display: flex; align-items: center; gap: 22px; padding: 30px 32px; color: #fff; background: linear-gradient(135deg, #14655e, #0d4a45); }
+.contrato__topo b { display: grid; place-items: center; flex: none; width: 116px; height: 116px; border-radius: 28px; font: 800 74px Jakarta; color: #10201d; background: #f4cf7c; }
+.contrato__topo small { display: block; font: 700 21px Inter; letter-spacing: .16em; text-transform: uppercase; color: #bfe5dc; }
+.contrato__topo strong { display: block; margin-top: 4px; font: 800 60px/1 Jakarta; letter-spacing: -.03em; }
+.chaves { display: grid; gap: 16px; padding: 28px 32px 30px; }
+.chave { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 18px; }
+.chave i { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 18px; font: 800 30px Jakarta; font-style: normal; color: #14655e; background: #e3f2ee; }
+.chave p { font: 500 29px/1.35 Inter; color: #2d3f3b; }
+.chave p b { color: #10201d; }
+.igual { margin: 0 32px; padding: 20px 0 0; border-top: 2px dashed #dbe5e2; font: 800 34px/1.25 Jakarta; letter-spacing: -.01em; color: #14655e; }
+.igual + .chaves { padding-top: 12px; }
+.lembrete { margin-top: 24px; display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: center; padding: 16px; border-radius: 28px; background: #fff; box-shadow: 0 12px 30px rgba(16, 32, 29, .1); }
+.lembrete div { position: relative; height: 230px; border-radius: 18px; overflow: hidden; background: #000; }
+.lembrete img { position: absolute; left: 50%; top: 50%; width: 560px; transform: translate(-54%, -50%); }
+.lembrete p { font: 600 28px/1.35 Inter; color: #2d3f3b; padding-right: 10px; }
+.lembrete p b { color: #14655e; }
+.prova { margin-top: 24px; padding: 24px 30px; border-radius: 26px; font: 800 34px/1.28 Jakarta; letter-spacing: -.01em; color: #10201d; background: #f4cf7c; }
+.prova small { display: block; margin-bottom: 6px; font: 800 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: #6b4a0c; }
+.site { margin-top: 34px; text-align: center; font: 600 27px/1.4 Inter; color: #4a5b57; }
+.site b { display: block; font: 800 36px Jakarta; color: #10201d; letter-spacing: -.01em; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg>
+
+<section id="s1-imovel" data-question="tumores-0318">
+  <div class="app">
+    <div class="barra"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><div class="passo"><i class="on"></i><i></i><i></i></div></div>
+    <div class="busca"><span class="lupa"></span><span>TARO 2024 · <b>questão real</b></span></div>
+    <h1>Quem mora <em>aqui</em>?</h1>
+    <p class="sub">Adolescente de 15 anos com dor no ombro. Olhe o endereço da lesão.</p>
+    <div class="anuncio">
+      <div class="foto"><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt=""><span class="selo">Radiografia da prova</span></div>
+      <div class="dados">
+        <div class="dado"><small>Endereço</small><b>Epífise do úmero</b></div>
+        <div class="dado"><small>Morador</small><b>15 anos</b></div>
+        <div class="dado"><small>Aspecto</small><b>Lítica, bem delimitada</b></div>
+      </div>
+    </div>
+    <p class="pergunta">A principal hipótese diagnóstica é</p>
+    <div class="candidatos">
+      <div class="cand"><b>A</b>osteossarcoma</div><div class="cand"><b>B</b>condroblastoma</div>
+      <div class="cand"><b>C</b>osteoma osteoide</div><div class="cand"><b>D</b>tumor de células gigantes</div>
+    </div>
+  </div>
+</section>
+
+<section id="s2-candidatos" data-question="tumores-0318">
+  <div class="app">
+    <div class="barra"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><div class="passo"><i class="on"></i><i class="on"></i><i></i></div></div>
+    <h1>Onde cada um <em>costuma morar</em></h1>
+    <p class="sub">Três candidatos não batem com o endereço ou com a idade.</p>
+    <div class="fichas">
+      <div class="ficha"><b>A</b><div><h3>Osteossarcoma</h3><div class="tags"><span class="tag tag--pino">metáfise</span><span class="tag">agressivo</span></div>
+        <p>Teria destruição cortical, reação periosteal e matriz osteoide. <span class="nao">Não é o caso.</span></p></div></div>
+      <div class="ficha"><b>C</b><div><h3>Osteoma osteoide</h3><div class="tags"><span class="tag tag--pino">cortical</span><span class="tag">nicho pequeno</span></div>
+        <p>Nicho pequeno com esclerose densa, na diáfise ou na metáfise. <span class="nao">Endereço errado.</span></p></div></div>
+      <div class="ficha"><b>D</b><div><h3>Tumor de células gigantes</h3><div class="tags"><span class="tag tag--pino">epífise</span><span class="tag">fise fechada</span></div>
+        <p>Mora na epífise, mas do <b>adulto jovem</b>, depois que a fise fecha. <span class="nao">Idade errada.</span></p></div></div>
+      <div class="ficha ficha--sim"><b>?</b><div><h3>Quem sobrou</h3><div class="tags"><span class="tag tag--pino">epífise</span><span class="tag">fise aberta</span><span class="tag">halo esclerótico</span></div>
+        <p>Endereço e idade batem. <span class="sim">A resposta sai no próximo story.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="s3-contrato" data-question="tumores-0318">
+  <div class="app">
+    <div class="barra"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><div class="passo"><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+    <h1>Contrato <em>fechado</em>.</h1>
+    <div class="contrato">
+      <div class="contrato__topo"><b>B</b><span><small>Morador da epífise · gabarito</small><strong>Condroblastoma</strong></span></div>
+      <div class="chaves">
+        <div class="chave"><i>1</i><p><b>Endereço:</b> epífise (aqui, a cabeça do úmero).</p></div>
+        <div class="chave"><i>2</i><p><b>Idade:</b> adolescente, com a <b>fise aberta</b>.</p></div>
+        <div class="chave"><i>3</i><p><b>Aspecto:</b> lítica, bem delimitada, com fino <b>halo esclerótico</b>.</p></div>
+      </div>
+    </div>
+    <div class="lembrete"><div><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt=""></div><p>A seta da prova aponta a lesão na <b>epífise</b> da cabeça do úmero, num ombro de <b>15 anos</b>.</p></div>
+    <p class="prova"><small>Para a prova</small>Lesão lítica epifisária em adolescente com fise aberta = condroblastoma.</p>
+    <p class="site">Questões do TARO e do TEOT, comentadas assim.<b>ortoquestoes.com.br</b>o caminho está no nosso perfil</p>
+  </div>
+</section>
+</body></html>
