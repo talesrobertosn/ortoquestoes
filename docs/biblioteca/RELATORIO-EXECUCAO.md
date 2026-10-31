@@ -183,7 +183,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 739 | Coluna toracolombar da criança (Rockwood and Wilkins' Fractures in Children, cap. 22), refação TEOT/TARO | 10 para 45 KB, 2 figuras | 21 comentários e 3 simulados novos (pediatria-1457 a 1459) |
 | 740 | Pé da criança (Rockwood and Wilkins' Fractures in Children, cap. 31), refação TEOT/TARO | 11 para 45 KB, 2 figuras | 23 comentários e 3 simulados novos (pediatria-1460 a 1462) |
 | 742 | Tornozelo da criança (Rockwood and Wilkins' Fractures in Children, cap. 30), refação TEOT/TARO | 17 para 45 KB, 2 figuras | 36 comentários e 3 simulados novos (pediatria-1463 a 1465) |
-| (este PR) | Mão e carpo da criança (Rockwood and Wilkins' Fractures in Children, cap. 8), refação TEOT/TARO | 11 para 45 KB, 2 figuras | 23 comentários e 3 simulados novos (pediatria-1466 a 1468) |
+| 743 | Mão e carpo da criança (Rockwood and Wilkins' Fractures in Children, cap. 8), refação TEOT/TARO | 11 para 45 KB, 2 figuras | 23 comentários e 3 simulados novos (pediatria-1466 a 1468) |
+| (este PR) | Joelho intra-articular da criança (Rockwood and Wilkins' Fractures in Children, cap. 28), refação TEOT/TARO pelo FLUXO-MESTRE | 10 para 73 KB, 3 figuras | 8 comentários oficiais, 15 simulados reescritos no estilo da prova e 3 novos (pediatria-1469 a 1471) |
 
 ## Próximo
 
