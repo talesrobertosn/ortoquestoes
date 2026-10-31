@@ -1900,3 +1900,25 @@ section[class$="-heroi"]::before, section[class$="-heroi"]::after, .heroi-escuro
 
 /* Lugar reservado do topo pintado das páginas (componentes/vila), enquanto o código dele chega: nada pula. */
 .vl-espera { height: clamp(10rem, 21vw, 17rem); margin: 0 0 1.25rem; border-radius: 0.9rem; background: #120e0a; }
+
+/* A pele da Vila do Orto (31/10/2026): dentro das páginas com cenário pintado (componentes/vila), as cores do site
+   viram as da arte HD-2D sem mexer no CSS de cada página. Os topos verdes antigos (--heroi) ficam de vidro escuro
+   quente com brilho dourado; cartões e bordas, cor de pergaminho no tema claro e vidro escuro no tema escuro. */
+.pagina--vila { --fundo: #f3ede2; background: radial-gradient(120% 60% at 50% 0%, #faf5ec, transparent 70%), var(--fundo); }
+.vl-corpo {
+  --superficie: #fffbf3; --superficie-2: #f7efe0; --traco: #e6d8bb; --traco-forte: #cfb98f; --borda: 1px solid var(--traco);
+  --px-borda: #dcc89f; --px-sombra: rgba(110, 70, 20, 0.16);
+  --sombra-media: 0 1px 2px rgba(60, 40, 15, 0.06), 0 10px 26px rgba(60, 40, 15, 0.09);
+  --heroi-ceu: radial-gradient(70% 120% at 88% -10%, rgba(255, 186, 96, 0.26), transparent 60%), radial-gradient(60% 90% at 0% 110%, rgba(95, 216, 192, 0.1), transparent 60%), linear-gradient(180deg, #2c2016, #150f0a);
+  --heroi-horizonte: linear-gradient(transparent, transparent);
+  --heroi: var(--heroi-ceu);
+  --sobre-heroi: #f8efdc; --sobre-heroi-2: rgba(248, 239, 220, 0.82);
+  --heroi-vidro: rgba(255, 226, 170, 0.08); --heroi-traco: rgba(240, 196, 106, 0.34);
+}
+[data-tema="escuro"] .pagina--vila { --fundo: #0f1218; background: radial-gradient(120% 60% at 50% 0%, #171b23, transparent 70%), var(--fundo); }
+[data-tema="escuro"] .vl-corpo {
+  --superficie: #161a21; --superficie-2: #1c2129; --traco: rgba(232, 206, 150, 0.16); --traco-forte: rgba(232, 206, 150, 0.3);
+  --px-borda: rgba(232, 206, 150, 0.28); --px-sombra: rgba(0, 0, 0, 0.5);
+  --sombra-media: 0 0 0 1px rgba(232, 206, 150, 0.1), 0 12px 28px rgba(0, 0, 0, 0.4);
+  --heroi-ceu: radial-gradient(70% 120% at 88% -10%, rgba(255, 186, 96, 0.18), transparent 60%), linear-gradient(180deg, #1c1712, #0d0a08);
+}

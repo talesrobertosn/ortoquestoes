@@ -306,7 +306,7 @@ export function App() {
     && !['sessao', 'questao', 'admin', 'conta', 'entrar', 'termos', 'condicoes-assinatura', 'assinatura', 'simulado-nacional', 'emails'].includes(primeiroFundo ?? '')
 
   return (
-    <div className={`pagina pagina--${densidade}`} style={{ fontSize: `${fonte}%` }}>
+    <div className={`pagina pagina--${densidade}${lugar ? ' pagina--vila' : ''}`} style={{ fontSize: `${fonte}%` }}>
       <a className="pular-para-conteudo" href="#conteudo-principal">
         Pular para o conteúdo
       </a>
@@ -321,7 +321,7 @@ export function App() {
           {comCracha && <Suspense fallback={null}><CompletarPerfil /></Suspense>}
           <ErroDePagina caminho={rota.caminho}>
           <Suspense fallback={<EsperaPixel />}>
-            {pagina}
+            {lugar ? <div className="vl-corpo">{pagina}</div> : pagina}
           </Suspense>
           </ErroDePagina>
           {lugar && <Suspense fallback={null}><Saidas id={lugar} /></Suspense>}
