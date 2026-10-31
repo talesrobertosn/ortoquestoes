@@ -23,7 +23,7 @@ import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
 import { TopoVisitante } from '../componentes/inicio/cena/TopoDia'
-import { BarraAtalhos, ConviteInstagram, HeroiJornada, TrilhaSequencia, type Atalho } from '../componentes/inicio/jornada/Jornada'
+import { BarraAtalhos, ConviteInstagram, HeroiJornada, TrilhaSequencia, usarFestaDaMeta, type Atalho } from '../componentes/inicio/jornada/Jornada'
 import { GatoPixel } from '../componentes/mascote/GatoPixel'
 import { Medalha } from '../componentes/Medalha'
 import { estagioDaSequencia } from '../componentes/inicio/estagiosFogueira'
@@ -241,6 +241,7 @@ export function Inicio() {
   const nome = primeiroNome(String(conta?.user.user_metadata?.nome ?? ''))
   const revisarHoje = contagens?.porSituacao.revisarHoje ?? 0
   const streak = useMemo(() => calcularStreak(contexto.respondidas), [contexto.respondidas])
+  const festa = usarFestaDaMeta(!pedeConta && streak.metaHojeAtingida)
   const respondidasTotal = Object.keys(contexto.respondidas).length
   const respondidasPorTema = useMemo(() => {
     const mapa: Record<string, number> = {}
@@ -418,6 +419,7 @@ export function Inicio() {
         titulo={titulo}
         lide={calculo && !calculo.provaPassou ? <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a prova. {cabecalhoDoDia.incentivo}</> : cabecalhoDoDia.incentivo}
         linhaFogo={estagioDaSequencia(streak.atual).indice}
+        descanso={streak.metaHojeAtingida} festa={festa}
         missao={acao ? <>
           <p className="jn-missao__selo">{acao.selo}</p>
           <h2 className="jn-missao__titulo">{acao.titulo}</h2>
@@ -438,7 +440,7 @@ export function Inicio() {
       />
 
       {/* ── Nível 2: a sequência (o chão do acampamento) e o acesso rápido ── */}
-      <TrilhaSequencia streak={streak} dias={diasSequencia} />
+      <TrilhaSequencia streak={streak} dias={diasSequencia} festa={festa} />
       <BarraAtalhos atalhos={atalhos} />
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
@@ -557,7 +559,7 @@ export function Inicio() {
                 <p className="jn-texto">Responda pelo menos duas questões de um tema e este quadro mostra onde uma sessão curta rende mais.</p>
                 <a className="jn-botao" href={href('/treinar')}>Montar uma sessão <Icone nome="direita" tamanho={16} /></a>
               </>}
-              <Mascote className="jn-celula__mascote" comportamento={semDados ? 'orientando' : 'estudioso'} fantasia="nenhuma" falar={false} interativo={false} />
+              <Mascote className="jn-celula__mascote" comportamento={semDados ? 'orientando' : temaFragil ? 'quadro' : 'estudioso'} fantasia="nenhuma" falar={false} interativo={false} />
             </section>
 
             <section className="jn-celula jn-celula--conquistas" id="hd-trofeus" aria-labelledby="ip-conquistas-titulo">
@@ -566,10 +568,10 @@ export function Inicio() {
                 <ul className="jn-quase" aria-label="Quase lá">
                   {quaseLa.map((q) => (
                     <li key={q.emblema.id}>
-                      <Medalha conquista={q.emblema} tamanho={30} />
-                      <span><strong>{q.emblema.rotulo}</strong><small>Faltam {q.texto}</small>
-                        <span className="jn-barra jn-barra--azul" aria-hidden="true"><span style={{ width: `${Math.max(6, Math.round(q.fracao * 100))}%` }} /></span>
-                      </span>
+                      {/* O anel enche com o progresso e o número fica ao lado: não depende só da cor. */}
+                      <span className="jn-anel" style={{ '--p': Math.max(4, Math.round(q.fracao * 100)) } as CSSProperties} aria-hidden="true"><Medalha conquista={q.emblema} tamanho={26} /></span>
+                      <span><strong>{q.emblema.rotulo}</strong><small>Faltam {q.texto}</small></span>
+                      <b className="jn-quase__pct numerico">{Math.round(q.fracao * 100)}%</b>
                     </li>
                   ))}
                 </ul>
@@ -639,11 +641,14 @@ export function Inicio() {
           </div>
           {!calculo && !cronograma.carregando && respondidasTotal < 30 && <div className="jn-quadro"><AteAProva total={indice!.total} conta={Boolean(conta)} /></div>}
 
-          <div className="jn-dupla jn-dupla--rodape">
-            <div className="jn-quadro"><CartaoPlanos /></div>
-            <div className="jn-quadro"><SecaoIndique /></div>
+          {/* O fim da página: a assinatura numa faixa curta e, embaixo, indicação e Instagram lado a lado. */}
+          <div className="jn-fim">
+            <div className="jn-quadro jn-quadro--faixa"><CartaoPlanos /></div>
+            <div className="jn-fim__par">
+              <div className="jn-quadro"><SecaoIndique /></div>
+              <ConviteInstagram />
+            </div>
           </div>
-          <ConviteInstagram />
         </section>
       </>}
     </div>

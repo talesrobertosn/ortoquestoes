@@ -80,10 +80,10 @@
 .jn-trilha__estagio { margin-top: 0.3rem !important; color: var(--jn-tinta-2); font-size: var(--meta); }
 .jn-trilha__estagio b { color: var(--jn-ouro); }
 
-/* As sete tochas: cada estado tem a sua silhueta (scripts/gerar_sprites_inicio.py, tocha-semana.png). */
+/* As sete tochas: cada estado tem a sua silhueta (scripts/gerar_sprites_inicio.py, tocha-semana-v2.png: estaca de madeira, 8 linhas). */
 .jn-tochas { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); justify-items: center; gap: 0.25rem; max-width: 30rem; margin: 0 auto; padding: 0; list-style: none; }
 .jn-tocha { position: relative; display: grid; justify-items: center; gap: 0.3rem; }
-.jn-tocha__sprite { width: 48px; height: 80px; background: var(--sprite-tocha) 0 calc(var(--linha) / 6 * 100%) / 600% 700% no-repeat; image-rendering: pixelated; animation: jn-tocha 0.9s steps(6) infinite; }
+.jn-tocha__sprite { width: 48px; height: 80px; background: var(--sprite-tocha) 0 calc(var(--linha) / 7 * 100%) / 600% 800% no-repeat; image-rendering: pixelated; animation: jn-tocha 0.9s steps(6) infinite; }
 @keyframes jn-tocha { to { background-position-x: 120%; } }
 .jn-tocha--feito .jn-tocha__sprite, .jn-tocha--hoje-feito .jn-tocha__sprite { filter: drop-shadow(0 -4px 6px rgba(255, 170, 70, 0.3)); }
 .jn-tocha--especial .jn-tocha__sprite { filter: drop-shadow(0 -4px 8px rgba(110, 180, 255, 0.4)); }
@@ -305,3 +305,81 @@
   .jn-missao, .jn-cristal::after, .jn-tocha__sprite, .jn-trilha__chama, .jn-colunas__trilho > span { animation: none; }
   .jn-atalho, .jn-atalho__icone, .jn-item, .jn-regiao, .jn-torneio, .jn-cristal { transition: none; }
 }
+
+/* ══ V2 (31/10/2026): refinamentos da página aprovada, sem mudar a estrutura ══ */
+
+/* Progresso: os números sem caixa (linhas finas entre eles), mais peso no número e menos no rótulo. */
+.jn-numeros { gap: 0; }
+.jn-numeros > div { padding: 0.15rem 1rem 0.2rem; background: none; border-radius: 0; }
+.jn-numeros > div:first-child { padding-left: 0; }
+.jn-numeros > div + div { box-shadow: inset 1px 0 0 var(--traco); }
+.jn-numeros dd { font-size: 2.6rem; }
+.jn-celula { gap: 1rem; padding: 1.6rem 1.75rem 1.75rem; }
+.jn-celula__titulo { font-size: var(--corpo); letter-spacing: -0.005em; }
+.jn-colunas__trilho { height: 76px; }
+
+/* Conquistas: o emblema dentro de um anel que enche conforme o progresso (o número também aparece, não só a cor). */
+.jn-quase li { grid-template-columns: auto minmax(0, 1fr) auto; }
+.jn-anel { --p: 0; position: relative; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  background: conic-gradient(var(--verdete) calc(var(--p) * 1%), var(--superficie-2, var(--porcelana)) 0); transition: --p 0.8s; }
+.jn-anel::before { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: var(--superficie); }
+.jn-anel > * { position: relative; }
+.jn-quase__pct { color: var(--ardosia); font-family: var(--fonte-pixel-titulo); font-size: 1.35rem; line-height: 1; }
+.jn-quase .jn-barra { display: none; }
+.jn-quase li:hover .jn-anel { transform: rotate(-8deg); transition: transform 0.2s var(--curva); }
+
+/* Treinar por tema: nome sem quebrar no meio da palavra. */
+.jn-regiao__nome { overflow-wrap: normal; word-break: normal; hyphens: manual; }
+.jn-regioes { grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr)); }
+
+/* Atlas 3D: o render de verdade do esqueleto do atlas sob um foco de luz, no gabinete pintado. */
+.jn-galeria { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+.hd.jn .qa { grid-template-columns: minmax(0, 1fr) minmax(9rem, 12rem); margin: 0; }
+.hd.jn .qa::after { background-position: center, 30% 50%; }
+.hd.jn .qa__texto { align-content: center; gap: 0.7rem; padding: 1.75rem 0 1.75rem 1.75rem; }
+.hd.jn .qa strong { font-size: clamp(1.6rem, 1.2rem + 1vw, 2rem); }
+.hd.jn .qa__desc { font-size: var(--corpo-menor); }
+.hd.jn .qa__arte { display: grid; place-items: center; min-height: 0; padding: 1.25rem 0 1.5rem; border-radius: 0; background: none; }
+.hd.jn .qa__arte::before { content: ""; position: absolute; left: 50%; top: -10%; width: 160%; height: 115%; transform: translateX(-50%); pointer-events: none;
+  background: conic-gradient(from 180deg at 50% 0%, transparent 160deg, rgba(160, 230, 220, 0.16) 172deg, rgba(200, 245, 235, 0.22) 180deg, rgba(160, 230, 220, 0.16) 188deg, transparent 200deg);
+  filter: blur(4px); animation: jn-foco 6s ease-in-out infinite; }
+.hd.jn .qa__arte::after { content: ""; position: absolute; left: 50%; bottom: 0.9rem; width: 80%; height: 1.2rem; transform: translateX(-50%); border-radius: 50%; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(110, 220, 200, 0.45), rgba(110, 220, 200, 0.08) 70%, transparent); }
+.hd.jn .qa__arte img { position: relative; z-index: 1; width: auto; height: min(27rem, 92%); filter: drop-shadow(0 0 18px rgba(130, 230, 210, 0.35)) drop-shadow(0 12px 10px rgba(0, 0, 0, 0.5)); }
+.hd.jn .qa__etiqueta { top: auto; bottom: 30%; left: -1.2rem; z-index: 2; border-radius: var(--raio-pequeno); }
+.hd.jn .qa__eixo { z-index: 2; }
+@keyframes jn-foco { 50% { opacity: 0.7; } }
+
+/* Fim da página: a assinatura vira uma faixa curta; indicação e Instagram lado a lado, do mesmo tamanho. */
+.jn-fim { display: grid; gap: 1rem; }
+.jn-fim__par { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1rem; align-items: stretch; }
+.jn-fim__par > * { min-height: 100%; }
+.jn-fim .jn-insta { align-items: end; min-height: 100%; }
+.jn-quadro--faixa > * { min-height: 0 !important; }
+
+@media (prefers-reduced-motion: reduce) { .hd.jn .qa__arte::before { animation: none; } .jn-anel { transition: none; } }
+@media (max-width: 60rem) {
+  .jn-numeros > div { padding-inline: 0.7rem; }
+  .jn-numeros dd { font-size: 2rem; }
+  .jn-celula { padding: 1.2rem 1.1rem 1.3rem; }
+  .jn-fim__par { grid-template-columns: minmax(0, 1fr); }
+  .hd.jn .qa { grid-template-columns: minmax(0, 1fr) 7.5rem; }
+  .hd.jn .qa__texto { padding: 1.3rem 0 1.3rem 1.2rem; }
+  .hd.jn .qa__arte img { height: auto; width: 100%; max-height: 17rem; }
+  .hd.jn .qa__etiqueta { display: none; }
+  .jn-regioes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.hd-gato__sprite--uma-vez { animation: jn-uma-vez 1.3s steps(5, jump-none) 1 forwards; }
+/* Animações de uma vez só: param no último quadro (100%), não no espaço vazio depois dele. */
+@keyframes jn-uma-vez { from { background-position-x: 0; } to { background-position-x: 100%; } }
+
+/* A comemoração da meta: a tocha de hoje acende uma vez (linha 7 da folha) com um clarão curto, e a frase aparece. */
+.jn-tocha--acendendo .jn-tocha__sprite { animation: jn-uma-vez 1.2s steps(5, jump-none) 1 forwards; filter: drop-shadow(0 -6px 14px rgba(255, 190, 90, 0.8)); }
+.jn-trilha__festa { position: absolute; left: 50%; top: 0.5rem; z-index: 2; margin: 0; padding: 0.3rem 0.85rem; transform: translate(-50%, -6px); opacity: 0; pointer-events: none;
+  color: var(--pixel-tinta); background: linear-gradient(180deg, #ffe7a3, #f0c46a); border-radius: 999px; font-size: var(--meta); font-weight: 800;
+  box-shadow: 0 6px 18px -6px rgba(240, 196, 106, 0.8); transition: opacity 0.3s, transform 0.3s var(--curva); }
+.jn-trilha__festa--visivel { opacity: 1; transform: translate(-50%, -50%); }
+.jn-trilha__festa:empty { padding: 0; }
+@media (prefers-reduced-motion: reduce) { .jn-trilha__festa { transition: none; } }
+.jn-trilha__festa { white-space: nowrap; }
+@media (max-width: 60rem) { .jn-trilha__festa { top: 0.2rem; font-size: 0.75rem; padding: 0.25rem 0.7rem; } }

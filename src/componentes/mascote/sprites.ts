@@ -37,6 +37,14 @@ export const LINHAS_ESQUELETO = [
   { id: 'descansando', nome: 'cochilando sentado com um livro', halloween: false, sorteio: false },
   { id: 'orientando', nome: 'mostrando o caminho', halloween: false, sorteio: false },
   { id: 'ortopedia', nome: 'de jaleco com martelo de reflexo', halloween: false, sorteio: false },
+  // Segunda leva (01/11/2026), também fora do sorteio. comemora2 toca uma vez (começa e termina na pose de 'parado').
+  { id: 'escrevendo', nome: 'escrevendo no caderno', halloween: false, sorteio: false },
+  { id: 'aventureiro', nome: 'de mochila e cajado, pronto para explorar', halloween: false, sorteio: false },
+  { id: 'mago2', nome: 'de manto e chapéu de mago', halloween: false, sorteio: false },
+  { id: 'quadro', nome: 'mostrando uma dica na lousa', halloween: false, sorteio: false },
+  { id: 'fogueira', nome: 'se aquecendo na fogueira', halloween: false, sorteio: false },
+  { id: 'carinho', nome: 'fazendo carinho no gato', halloween: false, sorteio: false },
+  { id: 'comemora2', nome: 'comemorando a meta do dia', halloween: false, sorteio: false },
 ] as const
 
 export type IdLinhaEsqueleto = (typeof LINHAS_ESQUELETO)[number]['id']
@@ -60,6 +68,11 @@ export const LINHAS_GATO = [
   { id: 'brincando', nome: 'brincando com a bolinha de lã' },
   { id: 'lendo', nome: 'lendo' },
   { id: 'comemorando', nome: 'comemorando' },
+  // Segunda leva (01/11/2026). acordando toca uma vez (começa em 'dormindo' e termina em 'acordado').
+  { id: 'observando', nome: 'observando' },
+  { id: 'fogueira', nome: 'deitado perto da fogueira' },
+  { id: 'ronronando', nome: 'ronronando' },
+  { id: 'acordando', nome: 'acordando' },
 ] as const
 
 export type IdLinhaGato = (typeof LINHAS_GATO)[number]['id']
@@ -68,25 +81,39 @@ export type IdLinhaGato = (typeof LINHAS_GATO)[number]['id']
  * As poses de 31/10/2026 em diante ficam numa segunda folha (esqueleto-poses.png, gato-poses.png): a folha de sempre
  * continua leve no topo da página inicial, e a das poses só carrega onde uma pose fixa aparece.
  */
-export const LINHAS_ESQUELETO_ANTIGAS = 14
-export const LINHAS_GATO_ANTIGAS = 3
-
+/**
+ * Cada leva de poses fica na sua folha: a de sempre (o topo da página inicial, leve), a de 31/10/2026 e a segunda
+ * leva. Só carrega a folha da pose que aparece. `ate` é o índice (exclusivo) da última linha de cada folha.
+ */
 export interface Folha { src: string; linha: number; linhas: number }
+interface Leva { src: string; ate: number }
 
-function folha(indice: number, antigas: number, total: number, src: string, srcPoses: string): Folha {
-  return indice < antigas
-    ? { src, linha: indice, linhas: antigas }
-    : { src: srcPoses, linha: indice - antigas, linhas: total - antigas }
+const FOLHAS_ESQUELETO: Leva[] = [
+  { src: SPRITE_ESQUELETO.src, ate: 14 },
+  { src: '/pixel/mascote/esqueleto-poses.png', ate: 23 },
+  { src: '/pixel/mascote/esqueleto-poses2.png', ate: LINHAS_ESQUELETO.length },
+]
+const FOLHAS_GATO: Leva[] = [
+  { src: SPRITE_GATO.src, ate: 3 },
+  { src: '/pixel/mascote/gato-poses.png', ate: 9 },
+  { src: '/pixel/mascote/gato-poses2.png', ate: LINHAS_GATO.length },
+]
+
+function folha(indice: number, levas: Leva[]): Folha {
+  let inicio = 0
+  for (const leva of levas) {
+    if (indice < leva.ate) return { src: leva.src, linha: indice - inicio, linhas: leva.ate - inicio }
+    inicio = leva.ate
+  }
+  return { src: levas[0].src, linha: 0, linhas: levas[0].ate }
 }
 
 /** Folha, linha e número de linhas de um comportamento do esqueleto. */
 export function folhaEsqueleto(id: IdLinhaEsqueleto): Folha {
-  return folha(LINHAS_ESQUELETO.findIndex((l) => l.id === id), LINHAS_ESQUELETO_ANTIGAS, LINHAS_ESQUELETO.length,
-    SPRITE_ESQUELETO.src, '/pixel/mascote/esqueleto-poses.png')
+  return folha(LINHAS_ESQUELETO.findIndex((l) => l.id === id), FOLHAS_ESQUELETO)
 }
 
 /** Folha, linha e número de linhas de um estado do gato. */
 export function folhaGato(id: IdLinhaGato): Folha {
-  return folha(LINHAS_GATO.findIndex((l) => l.id === id), LINHAS_GATO_ANTIGAS, LINHAS_GATO.length,
-    SPRITE_GATO.src, '/pixel/mascote/gato-poses.png')
+  return folha(LINHAS_GATO.findIndex((l) => l.id === id), FOLHAS_GATO)
 }
