@@ -2,6 +2,120 @@
  "geradoEm": "2026-10-31",
  "capitulos": [
   {
+   "id": "callaghan-desgaste-osteolise",
+   "versao": 1,
+   "titulo": "Medição do desgaste, resposta biológica aos detritos e imagem da artroplastia do quadril",
+   "especialidade": "quadril",
+   "livro": "The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)",
+   "edicao": "Edição de 2017",
+   "capitulo": "Capítulos 18 (Clinical Wear Assessment) e 21 (Biologic Response to Wear Debris), com trechos dos capítulos 23 (Radiographic Evaluation), 25 (Magnetic Resonance Imaging) e 26 (Preoperative Medical Evaluation)",
+   "resumo": "Precisão (concordância), viés (erro sistemático) e acurácia; instrumento preciso com viés serve se calibrado; a ASTM pede viés e precisão separados; coeficiente de repetibilidade = duas vezes o desvio padrão; carga na radiografia sem consenso (MOORE sem diferença); técnica uni (só desgaste para a borda), duo (falha nos liners excêntricos), dois círculos, gabarito (troca do inserto), RSA com tântalo para o reticulado; volume do trajeto perpendicular é o dobro do dirigido à borda; 300 DPI, sem JPEG, DICOM, perfil com cabeça redonda; dados não gaussianos (Mann-Whitney); acomodação até cerca de 18 meses pelo intercepto; penetração média de 0,2 mm/ano e osteólise em todos acima de 0,3; partículas de polietileno de 0,5 µm e as metálicas dez vezes menores e 13.500 vezes mais numerosas; macrófagos, TNF, RANKL mais M-CSF, osteoprotegerina como chamariz; partículas de 0,24 µm as mais ativas; reticulado mais inflamatório por dose, mas com menos osteólise (RR 0,40); ALVAL tipo IV sem relação com a quantidade de detrito; pseudotumor em até 60% dos assintomáticos; jovem, homem e Charnley A soltam mais; obesidade e ovariectomia não pioram; nenhum fármaco aprovado; stress shielding no calcar; RM a 1,5 T com STIR, banda larga e frequência no eixo; hipersensibilidade contra metalose; renal crônico não recebe metal contra metal.",
+   "acesso": "gratis",
+   "minutos": 32,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-que-medir-o-desgaste-precisao-vies-e-acuraci",
+     "titulo": "Por que medir o desgaste: precisão, viés e acurácia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-tecnicas-radiograficas-e-a-rsa",
+     "titulo": "As técnicas radiográficas e a RSA",
+     "radar": "fundamento"
+    },
+    {
+     "id": "carga-qualidade-das-imagens-e-formatos-digitais",
+     "titulo": "Carga, qualidade das imagens e formatos digitais",
+     "radar": "fundamento"
+    },
+    {
+     "id": "do-desgaste-linear-ao-volume-a-estatistica-e-a-a",
+     "titulo": "Do desgaste linear ao volume, a estatística e a acomodação",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-desgaste-e-a-osteolise-as-particulas",
+     "titulo": "O desgaste e a osteólise; as partículas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-biologia-macrofagos-citocinas-e-osteoclastos",
+     "titulo": "A biologia: macrófagos, citocinas e osteoclastos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-polietileno-reticulado",
+     "titulo": "O polietileno reticulado",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-metal-alval-hipersensibilidade-e-pseudotumor",
+     "titulo": "O metal: ALVAL, hipersensibilidade e pseudotumor",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-fatores-do-paciente-os-fatores-externos-e-o-t",
+     "titulo": "Os fatores do paciente, os fatores externos e o tratamento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-modelos-experimentais-e-os-seus-limites",
+     "titulo": "Os modelos experimentais e os seus limites",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-imagem-da-protese-dolorosa-radiografia-e-resso",
+     "titulo": "A imagem da prótese dolorosa: radiografia e ressonância",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-rim-e-o-metal",
+     "titulo": "O rim e o metal",
+     "radar": "fundamento"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [],
+   "treino": [
+    "quadril-0559",
+    "quadril-0560",
+    "quadril-0562",
+    "quadril-0567",
+    "quadril-0561",
+    "quadril-0566",
+    "quadril-0563",
+    "quadril-0564",
+    "quadril-0565",
+    "quadril-0586",
+    "quadril-0587",
+    "quadril-0588",
+    "quadril-0589",
+    "quadril-0590",
+    "quadril-0591",
+    "quadril-0592",
+    "quadril-0593",
+    "quadril-0594",
+    "quadril-0610",
+    "quadril-0625",
+    "quadril-0626",
+    "quadril-0628",
+    "quadril-0636"
+   ],
+   "subtemas": [
+    "Soltura, osteólise e revisão",
+    "Artroplastia total: componentes e fixação"
+   ]
+  },
+  {
    "id": "callaghan-metais-cimento-tribologia",
    "versao": 1,
    "titulo": "Metais, cimento ósseo, tribologia e metal contra metal na artroplastia do quadril",
