@@ -20,6 +20,15 @@ export { periodoAgora, type Periodo } from '../../../estado/aparencia'
 /** Posição e tamanho em porcentagem do palco, a partir de pixels da arte (480 x 200). */
 const lugar = (x: number, y: number, w: number, h: number): CSSProperties => ({ left: `${(x / 480) * 100}%`, top: `${(y / 200) * 100}%`, width: `${(w / 480) * 100}%`, height: `${(h / 200) * 100}%` })
 
+/** Os cantos do chão por onde o gato passeia (pixels da arte) e a pose em cada um; "repouso" dorme ou ronrona. */
+const PONTOS_GATO = [
+  { x: 219, y: 150, pose: 'repouso' },
+  { x: 176, y: 166, pose: 'sentado' },
+  { x: 256, y: 170, pose: 'observando' },
+  { x: 300, y: 165, pose: 'fogueira' },
+] as const
+const DURACAO_PASSO = 3600
+
 export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }: {
   linhaFogo: number; periodo: Periodo
   /** Meta do dia cumprida (31/10/2026): o esqueleto senta para se aquecer na fogueira e o gato ronrona. */
@@ -28,19 +37,56 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   festa?: number
 }) {
   const repouso: IdLinhaGato = descanso ? 'ronronando' : 'dormindo'
+  const poseDoPonto = (i: number): IdLinhaGato => (PONTOS_GATO[i].pose === 'repouso' ? repouso : PONTOS_GATO[i].pose)
   const [gato, definirGato] = useState<IdLinhaGato>(repouso)
+  const [ponto, definirPonto] = useState(0)
+  const [andando, definirAndando] = useState<'direita' | 'esquerda' | null>(null)
   const palco = useRef<HTMLDivElement>(null)
   const espera = useRef(0)
+  const agora = useRef({ gato, ponto })
+  agora.current = { gato, ponto }
 
   // O gato acompanha a cena: com a meta cumprida ele ronrona; numa comemoração, pula junto por um instante.
-  useEffect(() => { definirGato(repouso) }, [repouso])
+  useEffect(() => { definirGato(poseDoPonto(agora.current.ponto)) }, [repouso]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!festa || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     definirGato('comemorando')
-    const fim = window.setTimeout(() => definirGato(repouso), 2600)
+    const fim = window.setTimeout(() => definirGato(poseDoPonto(agora.current.ponto)), 2600)
     return () => window.clearTimeout(fim)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [festa])
+
+  // A tala é uma piada curta: depois de alguns segundos o balão some e o gato volta ao que estava fazendo.
+  useEffect(() => {
+    if (gato !== 'tala') return
+    const fim = window.setTimeout(() => definirGato(poseDoPonto(agora.current.ponto)), 6000)
+    return () => window.clearTimeout(fim)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gato])
+
+  // O passeio (1/11/2026): de tempos em tempos o gato atravessa o chão do acampamento até outro canto e se acomoda
+  // numa pose que combina com o lugar. Não sai do lugar com "menos animação", com a tala ou comemorando.
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    let proximo = 0, chegada = 0
+    const passear = () => {
+      proximo = window.setTimeout(() => {
+        const { gato: g, ponto: atual } = agora.current
+        if (g !== 'tala' && g !== 'comemorando' && g !== 'acordando') {
+          const opcoes = PONTOS_GATO.map((_, i) => i).filter((i) => i !== atual)
+          const destino = opcoes[Math.floor(Math.random() * opcoes.length)]
+          definirAndando(PONTOS_GATO[destino].x < PONTOS_GATO[atual].x ? 'esquerda' : 'direita')
+          definirGato('andando')
+          definirPonto(destino)
+          chegada = window.setTimeout(() => { definirAndando(null); definirGato(poseDoPonto(destino)) }, DURACAO_PASSO)
+        }
+        passear()
+      }, 16000 + Math.random() * 14000)
+    }
+    passear()
+    return () => { window.clearTimeout(proximo); window.clearTimeout(chegada) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [repouso])
 
   // Passar o mouse pelo acampamento acorda o gato devagar (acorda, boceja e fica olhando); ao sair, ele volta a dormir.
   useEffect(() => {
@@ -55,11 +101,12 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
     }
     const sair = () => {
       window.clearTimeout(espera.current)
-      espera.current = window.setTimeout(() => definirGato((g) => (g === 'acordando' || g === 'observando' ? repouso : g)), 3500)
+      espera.current = window.setTimeout(() => definirGato((g) => (g === 'acordando' || g === 'observando' ? poseDoPonto(agora.current.ponto) : g)), 3500)
     }
     alvo.addEventListener('pointerenter', entrar)
     alvo.addEventListener('pointerleave', sair)
     return () => { window.clearTimeout(espera.current); alvo.removeEventListener('pointerenter', entrar); alvo.removeEventListener('pointerleave', sair) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [repouso])
 
   // Parallax leve com o mouse (computador, sem "menos animação").
@@ -99,11 +146,14 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
           ? <Mascote key="descanso" className="hd-mascote" comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={lugar(262, 96, 46, 66.7)} />
           : <Mascote key="dia" className="hd-mascote" style={lugar(262, 96, 46, 66.7)} />}
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
-        <button type="button" tabIndex={-1} className="hd-gato" style={lugar(219, 150, 36, 22.5)}
+        <button type="button" tabIndex={-1} className={`hd-gato${andando ? ` hd-gato--andando hd-gato--${andando}` : ''}`}
+          style={{ ...lugar(PONTOS_GATO[ponto].x, PONTOS_GATO[ponto].y, 36, 22.5), '--passo': `${DURACAO_PASSO}ms` } as CSSProperties}
           onClick={() => definirGato((g) => (g === 'tala' ? 'tala' : g === 'dormindo' || g === 'ronronando' ? 'acordado' : 'tala'))}>
           <span className={`hd-gato__sprite${gato === 'acordando' ? ' hd-gato__sprite--uma-vez' : ''}`} style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas } as CSSProperties} />
         </button>
-        {gato === 'tala' && <span className="hd-balao" style={{ left: `${(237 / 480) * 100}%`, top: `${(148 / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
+        {/* O balão abre para o lado livre da cena: nunca por baixo da caixa da missão. */}
+        {gato === 'tala' && <span className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
+          style={{ left: `${((PONTOS_GATO[ponto].x + (PONTOS_GATO[ponto].x > 250 ? 4 : 30)) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
         <span className="hd-particulas">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>
     </div>

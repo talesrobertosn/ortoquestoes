@@ -346,7 +346,7 @@
 .hd.jn .qa__arte::after { content: ""; position: absolute; left: 50%; bottom: 0.9rem; width: 80%; height: 1.2rem; transform: translateX(-50%); border-radius: 50%; pointer-events: none;
   background: radial-gradient(closest-side, rgba(110, 220, 200, 0.45), rgba(110, 220, 200, 0.08) 70%, transparent); }
 .hd.jn .qa__arte img { position: relative; z-index: 1; width: auto; height: min(27rem, 92%); filter: drop-shadow(0 0 18px rgba(130, 230, 210, 0.35)) drop-shadow(0 12px 10px rgba(0, 0, 0, 0.5)); }
-.hd.jn .qa__etiqueta { top: auto; bottom: 30%; left: -1.2rem; z-index: 2; border-radius: var(--raio-pequeno); }
+.hd.jn .qa__etiqueta { top: auto; bottom: 30%; left: 0.25rem; z-index: 2; max-width: 7.6rem; border-radius: var(--raio-pequeno); }
 .hd.jn .qa__eixo { z-index: 2; }
 @keyframes jn-foco { 50% { opacity: 0.7; } }
 
@@ -383,3 +383,16 @@
 @media (prefers-reduced-motion: reduce) { .jn-trilha__festa { transition: none; } }
 .jn-trilha__festa { white-space: nowrap; }
 @media (max-width: 60rem) { .jn-trilha__festa { top: 0.2rem; font-size: 0.75rem; padding: 0.25rem 0.7rem; } }
+
+/* O passeio do gato (CenaDiorama): anda devagar entre os cantos do chão e vira para o lado em que caminha. */
+.hd-gato { transition: left var(--passo, 3.6s) linear, top var(--passo, 3.6s) linear; }
+.hd-gato--esquerda .hd-gato__sprite { transform: scaleX(-1); }
+.hd-gato--andando .hd-gato__sprite { animation-duration: 0.7s; }
+/* O balão do gato abre para o lado livre da cena (nunca por baixo da caixa da missão). */
+.hd-balao--direita, .hd-balao--esquerda { animation: hd-balao-surge 0.25s steps(3); }
+.hd-balao--direita { transform: translate(-8%, -100%); }
+.hd-balao--direita::after { left: 8%; }
+.hd-balao--esquerda { transform: translate(-92%, -100%); }
+.hd-balao--esquerda::after { left: 92%; }
+@keyframes hd-balao-surge { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hd-gato { transition: none; } }
