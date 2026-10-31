@@ -1,58 +1,20 @@
-/* O mascote (Mascote.tsx): o desenho em vetor de desenho.ts, animado só com transform e opacity (leve no celular).
-   A caixa tem proporção 3 x 4 e o desenho encosta os pés embaixo. */
-.mascote { position: relative; display: inline-block; aspect-ratio: 3 / 4; }
+/* O mascote (Mascote.tsx): a folha de sprites em pixel art (scripts/gerar_mascote.py), uma linha por comportamento,
+   8 quadros por linha, ampliada sem suavizar. Só troca de quadro (steps): leve no celular e no computador. */
+.mascote { position: relative; display: inline-block; aspect-ratio: 96 / 128; }
 .mascote__corpo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: pointer; }
 span.mascote__corpo { cursor: inherit; }
 .mascote__corpo:focus-visible { outline: 3px solid #f0c46a; outline-offset: 2px; }
-.mascote__desenho, .mascote__desenho svg { display: block; width: 100%; height: 100%; overflow: visible; }
-button.mascote__corpo:hover .mascote__desenho { filter: brightness(1.05) drop-shadow(0 0 6px rgba(255, 236, 190, 0.5)); }
-
-/* As partes que se mexem giram em volta do próprio ponto (ombro, pescoço), medido no desenho. */
-.mascote svg :is(.mq-corpo, .mq-cabeca, .mq-acena, .mq-alonga, .mq-martelo, .mq-chama, .mq-vapor, .mq-z, .mq-malabar, .mq-morcego, .mq-asa) { transform-box: view-box; }
-.mq-corpo { animation: mq-respira 2.6s ease-in-out infinite; transform-origin: 150px 455px; }
-@keyframes mq-respira { 50% { transform: translateY(3px) scaleY(0.99); } }
-.mq-cabeca { animation: mq-cabeca 5.2s ease-in-out infinite; }
-@keyframes mq-cabeca { 0%, 100% { transform: rotate(0); } 30% { transform: rotate(-2.5deg); } 70% { transform: rotate(2deg); } }
-.mascote--dormir .mq-cabeca { animation: none; transform: rotate(9deg); }
-.mascote--dormir .mq-corpo { animation-duration: 3.6s; }
-
-.mq-acena { animation: mq-acena 1.1s ease-in-out infinite; }
-@keyframes mq-acena { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-22deg); } }
-.mq-alonga { animation: mq-alonga 2.4s ease-in-out infinite; }
-@keyframes mq-alonga { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-.mq-martelo { animation: mq-martelo 0.9s ease-in-out infinite; }
-@keyframes mq-martelo { 0%, 100% { transform: rotate(0); } 40% { transform: rotate(24deg); } 55% { transform: rotate(20deg); } }
-
-.mq-vapor { animation: mq-vapor 2.4s ease-in-out infinite; transform-origin: 150px 280px; }
-@keyframes mq-vapor { 0% { opacity: 0; transform: translateY(8px); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(-12px); } }
-.mq-z { animation: mq-z 2.8s ease-in-out infinite; transform-origin: 240px 60px; }
-@keyframes mq-z { 0% { opacity: 0; transform: translate(-10px, 12px) scale(0.7); } 30% { opacity: 1; } 100% { opacity: 0; transform: translate(10px, -16px) scale(1.1); } }
-.mq-chama { animation: mq-chama 0.5s steps(2) infinite alternate; transform-origin: center; }
-@keyframes mq-chama { to { transform: scaleY(0.86); opacity: 0.85; } }
-
-/* Malabares: três ossinhos num arco, cada um com um atraso. */
-.mq-malabar { animation: mq-malabar 1.5s linear infinite; }
-.mq-malabar--2 { animation-delay: -0.5s; } .mq-malabar--3 { animation-delay: -1s; }
-@keyframes mq-malabar {
-  0% { transform: translate(-34px, 10px) rotate(0); } 25% { transform: translate(-22px, -70px) rotate(120deg); }
-  50% { transform: translate(34px, 10px) rotate(240deg); } 75% { transform: translate(0, -20px) rotate(300deg); } 100% { transform: translate(-34px, 10px) rotate(360deg); }
-}
-
-/* Morcegos em volta do capuz. */
-.mq-morcego { animation: mq-morcego 4s ease-in-out infinite; }
-.mq-morcego--2 { animation-delay: -1.3s; animation-duration: 4.6s; } .mq-morcego--3 { animation-delay: -2.6s; animation-duration: 5.2s; }
-@keyframes mq-morcego {
-  0% { transform: translate(40px, 60px) scale(0.9); } 25% { transform: translate(250px, 30px) scale(1); }
-  50% { transform: translate(270px, 170px) scale(0.85); } 75% { transform: translate(20px, 200px) scale(1); } 100% { transform: translate(40px, 60px) scale(0.9); }
-}
-.mq-asa { animation: mq-asa 0.28s ease-in-out infinite alternate; transform-origin: 0 0; }
-@keyframes mq-asa { to { transform: scaleY(0.45); } }
+.mascote__sprite { display: block; width: 100%; height: 100%; image-rendering: pixelated;
+  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / calc(var(--quadros) * 100%) calc(var(--linhas) * 100%) no-repeat;
+  animation: mascote-quadros var(--dur) steps(8) infinite; }
+@keyframes mascote-quadros { to { background-position-x: calc(8 / 7 * 100%); } }
+button.mascote__corpo:hover .mascote__sprite { filter: brightness(1.08) drop-shadow(0 0 6px rgba(255, 236, 190, 0.5)); }
 
 /* Balão de fala. */
 .mascote__balao { position: absolute; left: 50%; bottom: 100%; z-index: 3; width: max-content; max-width: min(17rem, 70vw); margin-bottom: 0.35rem; padding: 0.45rem 0.65rem 0.5rem;
   transform: translateX(-50%); background: #fbf3df; color: #1b1208; font-size: 0.82rem; font-weight: 650; line-height: 1.3; text-align: center;
-  border-radius: 0.6rem; box-shadow: 0 0 0 2px #2b1d16, 3px 4px 0 2px rgba(0, 0, 0, 0.22); animation: mascote-balao 0.25s ease-out; }
+  box-shadow: 0 0 0 2px #1b1208, 3px 4px 0 2px rgba(0, 0, 0, 0.3); animation: mascote-balao 0.28s steps(3); }
 .mascote__balao::after { content: ""; position: absolute; left: 50%; bottom: -8px; width: 10px; height: 9px; margin-left: -5px; background: #fbf3df; clip-path: polygon(0 0, 100% 0, 50% 100%); }
 @keyframes mascote-balao { from { opacity: 0; transform: translate(-50%, 6px); } }
 @media (max-width: 40rem) { .mascote__balao { font-size: 0.76rem; max-width: 13rem; } }
-@media (prefers-reduced-motion: reduce) { .mascote svg *, .mascote__balao { animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { .mascote__sprite, .mascote__balao { animation: none; } }

@@ -1,6 +1,6 @@
 ---
 name: arte-hd2d
-description: Fluxo de arte do Orto Questões aprovado pelo Tales (30/10/2026) — cenários pixel art "HD-2D" (estilo Octopath Traveler) pintados por código com luz calculada, o mascote esqueleto chibi em vetor (traço limpo) e a montagem nas telas. Use SEMPRE que o Tales pedir arte, ilustração, cenário, fundo, pixel art, "estilo HD-2D/ray tracing/Octopath", mascote, ou "deixar mais bonito" alguma tela, banner ou post do site.
+description: Fluxo de arte do Orto Questões aprovado pelo Tales (30/10/2026) — cenários pixel art "HD-2D" (estilo Octopath Traveler) pintados por código com luz calculada, o mascote esqueleto chibi em SVG e a montagem nas telas. Use SEMPRE que o Tales pedir arte, ilustração, cenário, fundo, pixel art, "estilo HD-2D/ray tracing/Octopath", mascote, ou "deixar mais bonito" alguma tela, banner ou post do site.
 ---
 
 # Arte HD-2D do Orto Questões
@@ -52,17 +52,14 @@ e confira cada resultado antes de usar.
 
 ## O mascote
 
-Desde 31/10/2026 o mascote é o "modelo E" que o Tales escolheu: esqueletinho chibi de armadura em **traço limpo de
-desenho** (contorno grosso escuro, sombra em duas cores, nada de ruído nem textura de pixel): crânio grande com
-rachadura, órbitas ovais escuras sem brilho, nariz de coração, uma fileira só de dentes retos, ombreira de aço com
-rebites, correia, cinto com fivela e saiote vermelho esfarrapado. É vetor (`src/componentes/mascote/desenho.ts`),
-animado só com CSS (`Mascote.css`), e cada comportamento muda os braços e o objeto. Use `<Mascote />` em qualquer tela:
-`comportamento` fixo, `fantasia` (`halloween` em outubro, automático: capuz e capa escuros, foice, abóbora, velas,
-morcegos), `falar={false}`, `interativo={false}` (dentro de link). Falas em `falas.ts`. O Tales recusou: touca,
-esqueleto realista grande, as versões em pixel art com sombra e ruído (rosto "sujo"), muitos dentes miúdos e sorvete.
-Comportamento novo = novo `case` em `desenho.ts` + a linha em `sprites.ts` + 8 a 10 falas. Antes de mudar o rosto,
-mande modelos lado a lado para ele escolher. O gato continua em pixel art (`scripts/gerar_mascote.py`, `gato.png`).
-No cenário, o mascote recebe a luz da hora do dia (filtros em `InicioHd.css` e `Vila.css`).
+Esqueletinho original de armadura (crânio grande com rachadura, órbitas pretas grandes, expressão séria, ombreira,
+cinto e pano vermelho), em pixel art HD-2D: `scripts/gerar_mascote.py` gera `public/pixel/mascote/esqueleto.png`
+(uma linha por comportamento, 8 quadros de 96 x 128) e `gato.png`; a lista das linhas fica em
+`src/componentes/mascote/sprites.ts`. Use `<Mascote />` em qualquer tela: `comportamento` fixo, `fantasia`
+(`halloween` em outubro, automático: manto de capuz, foice, lanterna de abóbora, castiçal e morcegos), `falar={false}`,
+`interativo={false}` (dentro de link). Falas em `falas.ts`. O Tales recusou: touca, sorriso/expressão feliz, bochecha
+rosada, esqueleto realista grande, versão vetorial "chapada" e sorvete. Comportamento novo = nova linha no script +
+`sprites.ts` + 8 a 10 falas. No cenário, o mascote e o gato recebem a luz da hora do dia (filtros em `InicioHd.css`).
 
 ## Montar na tela
 
