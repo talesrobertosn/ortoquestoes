@@ -45,6 +45,9 @@ export const LINHAS_ESQUELETO = [
   { id: 'fogueira', nome: 'se aquecendo na fogueira', halloween: false, sorteio: false },
   { id: 'carinho', nome: 'fazendo carinho no gato', halloween: false, sorteio: false },
   { id: 'comemora2', nome: 'comemorando a meta do dia', halloween: false, sorteio: false },
+  // Tela de entrar (31/10/2026): roupas novas do mesmo mascote, na folha esqueleto-acesso.png (fora do sorteio).
+  { id: 'acesso_jaleco', nome: 'de jaleco longo dando boas-vindas', halloween: false, sorteio: false },
+  { id: 'acesso_social', nome: 'de blazer e gravata-borboleta dando boas-vindas', halloween: false, sorteio: false },
 ] as const
 
 export type IdLinhaEsqueleto = (typeof LINHAS_ESQUELETO)[number]['id']
@@ -82,8 +85,8 @@ export type IdLinhaGato = (typeof LINHAS_GATO)[number]['id']
  * continua leve no topo da página inicial, e a das poses só carrega onde uma pose fixa aparece.
  */
 /**
- * Cada leva de poses fica na sua folha: a de sempre (o topo da página inicial, leve), a de 31/10/2026 e a segunda
- * leva. Só carrega a folha da pose que aparece. `ate` é o índice (exclusivo) da última linha de cada folha.
+ * Cada leva de poses fica na sua folha: a de sempre (o topo da página inicial, leve), a de 31/10/2026, a segunda
+ * leva e as roupas da tela de entrar (esqueleto-acesso.png). Só carrega a folha da pose que aparece. `ate` é o índice (exclusivo) da última linha de cada folha.
  */
 export interface Folha { src: string; linha: number; linhas: number }
 interface Leva { src: string; ate: number }
@@ -91,7 +94,8 @@ interface Leva { src: string; ate: number }
 const FOLHAS_ESQUELETO: Leva[] = [
   { src: SPRITE_ESQUELETO.src, ate: 14 },
   { src: '/pixel/mascote/esqueleto-poses.png', ate: 23 },
-  { src: '/pixel/mascote/esqueleto-poses2.png', ate: LINHAS_ESQUELETO.length },
+  { src: '/pixel/mascote/esqueleto-poses2.png', ate: 30 },
+  { src: '/pixel/mascote/esqueleto-acesso.png', ate: LINHAS_ESQUELETO.length },
 ]
 const FOLHAS_GATO: Leva[] = [
   { src: SPRITE_GATO.src, ate: 3 },

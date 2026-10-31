@@ -42,10 +42,9 @@ import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, ty
 import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
 import '../estilos/paginas/Acesso.css'
-import { usarMedia } from '../util/usarMedia'
 import { fraseGratis, recurso } from '../config'
 import { guardarVitrine, lembrarNome, nomeLembrado, sortearVitrine } from '../conta/vitrineAcesso'
-import { MascoteAcesso } from '../componentes/MascoteAcesso'
+import { Mascote } from '../componentes/mascote/Mascote'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -111,8 +110,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const modoVitrine = modo === 'criar' ? 'criar' : 'entrar'
   const [vitrine] = useState(() => ({ entrar: sortearVitrine('entrar'), criar: sortearVitrine('criar') }))
   useEffect(() => { guardarVitrine(vitrine[modoVitrine]) }, [vitrine, modoVitrine])
-  // No celular o cavaleiro fica menor, na sua própria coluna ao lado da frase.
-  const mascotePequeno = usarMedia('(max-width: 40rem)')
   // Destino de quem chegou por um convite (planos, treinar, questão avulsa): vale
   // para entrar, para o cadastro e para a volta do Google. Ver conta/passagem.ts.
   const voltar = rotaVoltar(consulta?.get('voltar'))
@@ -339,6 +336,13 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         return
       }
     }
+    // Entrar e recuperar: o aviso vem no próprio formulário, junto do botão (o balão do navegador some rápido e
+    // não diz qual campo falta).
+    if (modo !== 'criar' && !recuperacao) {
+      if (!email.trim()) { falhar('Digite o seu e-mail.', 'incompleto', 'email'); return }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { falhar('Confira o e-mail: falta o @ ou o domínio (ex.: voce@email.com).', 'incompleto', 'email'); return }
+      if (modo === 'entrar' && !senha) { falhar('Digite a sua senha.', 'incompleto', 'senha'); return }
+    }
     if (pedeConfirmacao && senha !== confirmacao) { falhar('As senhas não coincidem. Digite a mesma senha nos dois campos.'); return }
     definirOcupado(true); definirMensagem(''); definirAvisoConta('')
     try {
@@ -489,7 +493,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const tituloVitrine = nomeVolta ? `Que bom te ver de novo, ${nomeVolta}.` : v.titulo
     const seloVitrine = perfilDepois ? 'Conta criada' : recuperacao || modo === 'recuperar' ? 'Recuperar acesso' : modo === 'criar' ? 'Conta gratuita' : 'Continuar'
     return <div className="ac">
-      {/* Topo: céu e cidade da temporada pixel, frase sorteada a cada visita e o cavaleiro em pé na cidade (com coluna própria, nunca sobre o texto). */}
+      {/* Topo: céu e cidade da temporada pixel, frase sorteada a cada visita e o mascote de jaleco em pé na cidade (com coluna própria, nunca sobre o texto). */}
       <section className="ac-vitrine" aria-labelledby="ac-titulo">
         <div className="ac-vitrine__texto">
           <p className="tr-heroi__selo">{seloVitrine}</p>
@@ -498,7 +502,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <ul className="ac-provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
           <p className="ac-vitrine__gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar de onde parou.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
         </div>
-        <div className="ac-vitrine__mascote"><MascoteAcesso escala={mascotePequeno ? 0.75 : 1.5} /></div>
+        {/* O mascote de jaleco recebe o estudante (31/10/2026): acena de vez em quando e fala ao toque. */}
+        <div className="ac-vitrine__mascote"><Mascote className="ac-mascote" comportamento="acesso_jaleco" fantasia="nenhuma" falar={false} /></div>
       </section>
       <section className="ac-cartao" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
         {perfilDepois ? <>
@@ -531,7 +536,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         </header>
         {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
         {!recuperacao && modo !== 'recuperar' && <BotaoGoogle />}
-        <form className="empilha ac-form" onSubmit={enviar} noValidate={criando}>
+        <form className="empilha ac-form" onSubmit={enviar} noValidate>
           {!recuperacao && <label className="campo" data-campo="email"><span className="campo__rotulo">E-mail {obrig}</span><span className="ac-entrada"><Icone nome="correio" tamanho={17} /><input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : inv('email'))} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></span>{erroDe('email')}</label>}
           {(recuperacao || modo !== 'recuperar') && <div className="campo" data-campo="senha">
             <span className="ac-rotulo-senha"><label className="campo__rotulo" htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'} {obrig}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="ac-link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>

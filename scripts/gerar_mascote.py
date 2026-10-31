@@ -307,6 +307,18 @@ MATS: dict[str, Mat] = {
     "gema": Mat(rampa("#062820", "#0e4a3a", "#187058", "#2a9476", "#52ba98", "#9ae2c4", "#e2fff2"), hx("#03140f"), emite=True, bloom=0.45),
     "lousa": Mat(rampa("#0a1210", "#101c18", "#16261f", "#1d3028", "#253c32", "#2f4a3e"), hx("#060a08"), rim=0.25, tex=0.1),
     "giz": Mat(rampa("#8a9690", "#b4c0b8", "#dce4da", "#f6f8f0"), hx("#3a4440"), rim=0.0, amb=0.75, kd=0.3, tex=0.15),
+    # roupas da tela de entrar (31/10/2026, sempre no fim): jaleco longo, uniforme verde, terno social, sapatos e livros
+    "jaleco": Mat(rampa("#2a3238", "#47525a", "#6c787e", "#96a2a4", "#bcc6c6", "#d8dfde", "#eef0ee", "#fbfcfa"), hx("#141a1e"), rim=0.45, tex=0.03),
+    "uniforme": Mat(rampa("#041a18", "#072824", "#0b3732", "#0f4842", "#14655e", "#1d7b72", "#2b9285"), hx("#03100e"), rim=0.5, tex=0.05),
+    "blazer": Mat(rampa("#03191a", "#062724", "#09352f", "#0d433c", "#0f4f49", "#176259", "#22786c", "#348f80"), hx("#020c0b"), rim=0.7, tex=0.04),
+    "camisa": Mat(rampa("#4c5258", "#7a8288", "#a8b0b2", "#d0d6d4", "#e8ece8", "#f8faf6"), hx("#1c2226"), rim=0.3, tex=0.02, amb=0.55, kd=0.6),
+    "calca": Mat(rampa("#0c0e12", "#15181e", "#1e222a", "#2a2f38", "#383e48", "#4a515c", "#5e6672"), hx("#07080b"), rim=0.65, tex=0.03),
+    "sapato": Mat(rampa("#0e0605", "#1c0d09", "#2e160e", "#432114", "#5c2e1b", "#7a4126", "#9c5a36"), hx("#080303"), rim=0.5, brilho=0.7),
+    "tamanco": Mat(rampa("#3a4248", "#5e686e", "#8a9496", "#b4bcbc", "#d6dcda", "#eef2f0"), hx("#161c20"), rim=0.35, brilho=0.4),
+    "livro_verde": Mat(rampa("#06200e", "#0c3418", "#134c24", "#1c6632", "#278242", "#38a054", "#58bc6c"), hx("#031008"), rim=0.5, tex=0.06),
+    "livro_vinho": Mat(rampa("#1c0508", "#30090e", "#480f16", "#62161e", "#7e2028", "#9a2e32", "#b44440"), hx("#120305"), rim=0.5, tex=0.06),
+    "tubo": Mat(rampa("#0c0f12", "#161b20", "#222930", "#323b44", "#46525c", "#5e6c76"), hx("#06080a"), rim=0.6, brilho=0.5),
+    "gravata": Mat(rampa("#1a0406", "#2e070b", "#4a0c12", "#661219", "#841c22", "#a02a2c"), hx("#100203"), rim=0.45, tex=0.04),
 }
 NOMES_MAT = list(MATS)
 IDX_MAT = {n: i for i, n in enumerate(NOMES_MAT)}
@@ -2361,6 +2373,221 @@ def q_comemora2(k):
     return t
 
 
+# ═══════════════════════════════ tela de entrar (31/10/2026): jaleco longo e traje social ═══════════════════════════════
+# Só acrescentam: o esqueleto é o mesmo (mesmo rig, mesmo crânio), mas sem a armadura por fora.
+def esqueleto_vestido(t: Tela, p: Pose, roupa, extras=None) -> Rig:
+    """O mesmo esqueleto de esqueleto(), com uma roupa no lugar da armadura (pernas, tronco e braços de osso por baixo)."""
+    r = montar(p)
+    t.origem = r.raiz
+    if p.sombra:
+        sombra_chao(t, r)
+    for lado in ("e", "d"):
+        perna(t, r, p, lado)
+    tronco(t, r, p)
+    for lado in ("e", "d"):
+        braco(t, r, p, lado)
+    roupa(t, r, p)
+    cranio(t, r, p)
+    if extras:
+        extras(t, r)
+    return r
+
+
+def _calcas(t, r, mat, z=2.9, larg=(2.7, 2.35), barra=None, semente=600, tom=0.0):
+    """Calças por cima dos ossos das pernas, do quadril ao tornozelo; o vinco da frente em decalque."""
+    q = r.tronco
+    t.pinta(q.forma(caixa((0, 1.6), 7.4, 3.0, r=2.0)), mat, z, R=2.4, pid="calca_cos", uv=q.uv(), semente=semente)
+    for lado, s in (("e", -1), ("d", 1)):
+        qd, jo, to = r.j[f"quadril_{lado}"], r.j[f"joelho_{lado}"], r.j[f"tornozelo_{lado}"]
+        fim = (to[0], to[1] + 0.6)
+        f = capsula(qd, jo, larg[0] + 0.3, larg[0]) | capsula(jo, fim, larg[0], larg[1])
+        t.pinta(f, mat, z + 0.05, R=2.2, pid=f"calca_{lado}", semente=semente + 1 + (s > 0), tom=tom,
+                relevo=lambda X, Y, cx=jo[0]: (0.12 * np.sin((X - cx) * 1.6), 0.0 * X))
+        # vinco e sombra de dentro da perna
+        t.pinta(capsula((jo[0] + s * 0.4, jo[1] - 5.0), (fim[0] + s * 0.3, fim[1] - 1.0), 0.32), mat, 0, sobre=f"calca_{lado}", tom=0.12, normal=False)
+        t.pinta(capsula((jo[0] - s * 2.2, jo[1] - 6.0), (fim[0] - s * 1.8, fim[1] - 1.0), 0.5), mat, 0, sobre=f"calca_{lado}", tom=-0.14, normal=False)
+        if barra:
+            t.pinta(capsula((fim[0] - 2.5, fim[1] - 0.6), (fim[0] + 2.5, fim[1] - 0.6), 0.7), barra, 0, sobre=f"calca_{lado}", tom=-0.05, normal=False)
+
+
+def _sapatos(t, r, mat, z=3.2, social=False):
+    """Um sapato em cada pé (cobre os ossinhos do pé). social=True: bico fino e salto; senão, tamanco clínico."""
+    for lado, s in (("e", -1), ("d", 1)):
+        to = r.j[f"tornozelo_{lado}"]
+        c = (to[0] + s * 1.6, to[1] + 2.6)
+        if social:
+            f = elipse((c[0] + s * 0.4, c[1] + 0.2), 4.0, 1.9).suave(elipse((c[0] - s * 1.0, c[1] - 0.8), 2.4, 1.8), 1.0)
+        else:
+            f = caixa((c[0] + s * 0.3, c[1]), 3.9, 2.1, r=1.8)
+        t.pinta(f, mat, z, R=1.8, pid=f"sapato_{lado}", plano=(0.0, -0.25, 0.97), semente=610)
+        # sola escura e um reflexo no bico
+        t.pinta(caixa((c[0] + s * 0.3, c[1] + 1.7), 4.2, 0.5), mat, 0, sobre=f"sapato_{lado}", tom=-0.35, normal=False)
+        if social:
+            t.pinta(capsula((c[0] + s * 1.6, c[1] - 0.6), (c[0] + s * 3.0, c[1] - 0.3), 0.36), mat, 0, sobre=f"sapato_{lado}", tom=0.35, normal=False)
+
+
+def _manga(t, r, p, lado, mat, larg=2.75, punho_mat=None, semente=620):
+    """Manga longa até perto do punho (a mão de osso fica de fora), com o punho dobrado ou da camisa."""
+    om, co, pu = r.j[f"ombro_{lado}"], r.j[f"cotovelo_{lado}"], r.j[f"punho_{lado}"]
+    z = (p.ze if lado == "e" else p.zd) + 0.35
+    ang = math.atan2(pu[1] - co[1], pu[0] - co[0])
+    dx, dy = math.cos(ang), math.sin(ang)
+    fim = (pu[0] - dx * 1.4, pu[1] - dy * 1.4)
+    manga = capsula(om, co, larg + 0.35, larg) | capsula(co, fim, larg, larg + 0.1)
+    t.pinta(manga, mat, z, R=2.4, pid=f"rmanga_{lado}", semente=semente)
+    # dobra do cotovelo
+    t.pinta(capsula((co[0] - dx * 1.2, co[1] - dy * 1.2), (co[0] + dx * 0.6, co[1] + dy * 0.6), 0.45), mat, 0, sobre=f"rmanga_{lado}", tom=-0.16, normal=False)
+    if punho_mat:
+        a = (fim[0] - dx * 0.2, fim[1] - dy * 0.2)
+        b = (fim[0] + dx * 0.9, fim[1] + dy * 0.9)
+        t.pinta(capsula(a, b, larg - 0.5), punho_mat, z + 0.02, R=1.2, pid=f"rpunho_{lado}", tom=0.02)
+    else:
+        t.pinta(capsula((fim[0] - dx * 1.0, fim[1] - dy * 1.0), fim, larg + 0.2), mat, z + 0.02, R=1.2, pid=f"rpunho_{lado}", tom=-0.04)
+
+
+def livro_fechado(t: Tela, q: Quadro2D, z: float, mat: str, emblema="osso"):
+    """Livro fechado de pé, segurado pela lombada no alto. Origem na mão; +y desce. Sem texto: só o emblema."""
+    uv = q.uv()
+    # bloco de folhas aparecendo na borda da frente e embaixo
+    t.pinta(q.forma(caixa((0.9, 6.8), 4.4, 6.6, r=0.6)), "papel", z - 0.05, R=0.8, pid="livrof_folhas", tom=-0.08)
+    capa_f = caixa((0.0, 6.4), 4.6, 6.8, r=0.9)
+    t.pinta(q.forma(capa_f), mat, z, R=1.6, pid="livrof", uv=uv, plano=(-0.15, -0.05, 0.98), semente=630)
+    # lombada (lado da mão) mais escura, com dois nervos dourados
+    t.pinta(q.forma(caixa((-3.7, 6.4), 0.9, 6.8)), mat, 0, sobre="livrof", tom=-0.22, normal=False)
+    for y in (1.6, 11.2):
+        t.pinta(q.forma(caixa((-3.4, y), 1.2, 0.35)), "latao", z + 0.02, R=0.4, pid="livrof_nervo", sem_contorno=True, tom=0.05)
+    # filete dourado no alto e embaixo da capa e o emblema
+    for y in (1.0, 11.8):
+        t.pinta(q.forma(caixa((0.9, y), 3.0, 0.3)), "latao", 0, sobre="livrof", tom=-0.12, normal=False)
+    if emblema == "osso":
+        # um ossinho cor de osso em diagonal no meio da capa (ortopedia, sem texto)
+        qe = Quadro2D(q.p(0.9, 6.6), q.ang - 55)
+        f = capsula((-2.1, 0), (2.1, 0), 0.6)
+        for x in (-2.4, 2.4):
+            f = f | circulo((x, -0.8), 0.85) | circulo((x, 0.8), 0.85)
+        t.pinta(qe.forma(f), "osso", z + 0.05, R=0.9, pid="livrof_emb", tom=0.12)
+    else:
+        t.pinta(q.forma(circulo((0.6, 6.4), 1.3) - circulo((0.6, 6.4), 0.6)), "latao", z + 0.05, R=0.6, pid="livrof_emb", sem_contorno=True)
+
+
+def _aceno(k):
+    """Laço calmo de boas-vindas: braço erguido só nos quadros 2 a 5, com um aceno curto; quadro 7 já de volta à pose."""
+    ergue = [0.0, 0.4, 1.0, 1.0, 1.0, 1.0, 0.45, 0.0][k]
+    onda = [0.0, 0.0, -1.0, 0.7, -1.0, 0.5, 0.0, 0.0][k]
+    a1 = 14.0 + (104.0 - 14.0) * ergue
+    a2 = 6.0 + (150.0 - 6.0) * ergue ** 0.6 + 12.0 * onda
+    a3 = 4.0 + (158.0 - 4.0) * ergue ** 0.6 + 16.0 * onda
+    return ergue, (a1, a2, a3, "aberta")
+
+
+def roupa_jaleco(t: Tela, r: Rig, p: Pose):
+    """Jaleco branco longo (até o joelho), aberto sobre o uniforme verde; gola, bolso com caneta e crachá dourado.
+    (O estetoscópio foi testado e saiu: a 1x virava risco escuro no peito; o livro de ortopedia na mão lê melhor.)"""
+    q = r.tronco
+    uv = q.uv()
+    _calcas(t, r, "uniforme", larg=(2.7, 2.4), tom=-0.12)
+    _sapatos(t, r, "tamanco")
+    # blusa do uniforme com decote em V (aparecem as clavículas e a ponta do esterno)
+    blusa = caixa((0, -11.8), 10.4, 16.0, r=3.0) - poligono([(-3.2, -28.6), (3.2, -28.6), (0.0, -20.2)])
+    t.pinta(q.forma(blusa), "uniforme", 5.4, R=3.0, pid="blusa", uv=uv, semente=640)
+    t.pinta(q.forma(traco([(-3.4, -27.8), (0.0, -20.0), (3.4, -27.8)], 0.55)), "uniforme", 0, sobre="blusa", tom=0.16, normal=False)
+    # abas do jaleco: dos ombros até o joelho, abertas no meio
+    for s_ in (-1, 1):
+        aba = poligono([(s_ * 2.8, -27.8), (s_ * 11.0, -26.0), (s_ * 12.6, -19.0), (s_ * 12.4, -8.0), (s_ * 13.4, 2.0),
+                        (s_ * 14.4, 10.6), (s_ * 9.0, 11.4), (s_ * 5.0, 11.0), (s_ * 4.2, 0.0), (s_ * 4.0, -10.0), (s_ * 3.4, -19.0)])
+        t.pinta(q.forma(aba), "jaleco", 5.9 + 0.01 * s_, R=2.6, pid=f"jal_{s_}", uv=uv, semente=650 + s_,
+                relevo=lambda X, Y, s_=s_: (0.16 * np.sin((X - r.P[0]) * 1.0 + s_ * 1.3 + Y * 0.08), 0.0 * X),
+                tom=lambda X, Y: -0.05 * np.clip((Y - r.P[1] + 6) / 16, 0, 1))
+        # beira de dentro da aba com uma linha de sombra (espessura do tecido)
+        t.pinta(q.forma(traco([(s_ * 3.6, -19.0), (s_ * 4.2, -10.0), (s_ * 4.4, 0.0), (s_ * 5.2, 11.0)], 0.45)), "jaleco", 0, sobre=f"jal_{s_}", tom=-0.2, normal=False)
+        # costura lateral e bolso de baixo
+        t.pinta(q.forma(caixa((s_ * 9.2, 2.6), 2.8, 0.38)), "jaleco", 0, sobre=f"jal_{s_}", tom=-0.22, normal=False)
+        t.pinta(q.forma(capsula((s_ * 6.6, 2.4), (s_ * 6.8, 7.4), 0.3)), "jaleco", 0, sobre=f"jal_{s_}", tom=-0.12, normal=False)
+        t.pinta(q.forma(capsula((s_ * 11.8, 2.4), (s_ * 12.4, 7.0), 0.3)), "jaleco", 0, sobre=f"jal_{s_}", tom=-0.12, normal=False)
+        # lapela larga dobrada (gola com o entalhe)
+        lap = poligono([(s_ * 2.4, -28.2), (s_ * 7.8, -27.0), (s_ * 7.2, -23.6), (s_ * 8.8, -22.4), (s_ * 4.8, -14.6), (s_ * 3.4, -19.4)])
+        t.pinta(q.forma(lap), "jaleco", 6.05, R=1.2, pid=f"jlap_{s_}", plano=(s_ * 0.35, -0.15, 0.92), tom=0.03)
+        t.pinta(q.forma(traco([(s_ * 7.2, -23.6), (s_ * 8.8, -22.4), (s_ * 4.8, -14.6)], 0.4)), "jaleco", 0, sobre=f"jal_{s_}", tom=-0.3, normal=False)
+    # bolso do peito (lado direito da tela) com caneta azul de clip dourado
+    t.pinta(q.forma(caixa((8.4, -12.6), 2.6, 2.4, r=0.4)), "jaleco", 0, sobre="jal_1", tom=-0.08, normal=False)
+    t.pinta(q.forma(caixa((8.4, -14.6), 2.7, 0.4)), "jaleco", 0, sobre="jal_1", tom=-0.24, normal=False)
+    t.pinta(q.forma(caixa((7.6, -15.8), 0.6, 1.8, r=0.3)), "tala", 6.1, R=0.6, pid="caneta")
+    t.pinta(q.forma(caixa((7.6, -17.4), 0.65, 0.5, r=0.2)), "latao", 6.15, R=0.4, pid="caneta_ponta", sem_contorno=True)
+    # crachá dourado sem texto, preso no peito do outro lado
+    t.pinta(q.forma(caixa((8.6, -9.4), 1.9, 1.5, r=0.4)), "latao", 6.12, R=0.9, pid="cracha", plano=(0.1, -0.1, 0.98))
+    t.pinta(q.forma(caixa((8.6, -11.4), 0.45, 0.8)), "latao", 6.1, R=0.4, pid="cracha_clip", sem_contorno=True, tom=-0.15)
+    for lado in ("e", "d"):
+        _manga(t, r, p, lado, "jaleco", semente=660)
+
+
+def roupa_social(t: Tela, r: Rig, p: Pose):
+    """Blazer verde com botões dourados, camisa clara, gravata-borboleta vinho, calça social e sapatos."""
+    q = r.tronco
+    uv = q.uv()
+    _calcas(t, r, "calca", larg=(2.6, 2.3))
+    _sapatos(t, r, "sapato", social=True)
+    # camisa clara (aparece no V das lapelas)
+    t.pinta(q.forma(caixa((0, -14.0), 9.6, 13.6, r=3.0)), "camisa", 5.4, R=3.0, pid="camisa", uv=uv, semente=670, tom=0.14)
+    t.pinta(q.forma(capsula((0.0, -24.0), (0.0, -8.0), 0.3)), "camisa", 0, sobre="camisa", tom=-0.18, normal=False)
+    for y in (-19.6, -15.4):
+        t.pinta(q.forma(circulo((0.9, y), 0.38)), "camisa", 0, sobre="camisa", tom=-0.3, normal=False)
+    # colarinho
+    for s_ in (-1, 1):
+        t.pinta(q.forma(poligono([(s_ * 0.6, -28.0), (s_ * 4.8, -28.6), (s_ * 3.6, -24.6), (s_ * 0.8, -25.6)])), "camisa", 6.3, R=0.9, pid=f"colar_{s_}", tom=0.04)
+    # blazer: duas abas que se fecham num botão na cintura, lapelas pontudas
+    for s_ in (-1, 1):
+        aba = poligono([(s_ * 2.8, -27.8), (s_ * 11.4, -26.2), (s_ * 12.8, -19.0), (s_ * 12.2, -8.0), (s_ * 12.4, 2.0),
+                        (s_ * 11.2, 5.6), (s_ * 4.0, 6.2), (s_ * -0.6, 2.6), (s_ * -0.4, -8.4), (s_ * 1.4, -12.0), (s_ * 2.6, -20.0)])
+        t.pinta(q.forma(aba), "blazer", 5.9 + 0.02 * s_, R=2.6, pid=f"blz_{s_}", uv=uv, semente=680 + s_,
+                relevo=lambda X, Y, s_=s_: (0.14 * np.sin((X - r.P[0]) * 1.1 + s_ + Y * 0.07), 0.0 * X),
+                tom=lambda X, Y: -0.04 * np.clip((Y - r.P[1] + 8) / 14, 0, 1))
+        # pences e bolso com lapela embaixo
+        t.pinta(q.forma(caixa((s_ * 8.2, 0.8), 2.6, 0.4)), "blazer", 0, sobre=f"blz_{s_}", tom=-0.22, normal=False)
+        lap = poligono([(s_ * 2.6, -28.4), (s_ * 7.0, -27.0), (s_ * 7.8, -24.2), (s_ * 10.4, -23.8), (s_ * 1.2, -11.4), (s_ * 2.4, -20.0)])
+        t.pinta(q.forma(lap), "blazer", 6.1, R=1.2, pid=f"blap_{s_}", plano=(s_ * 0.4, -0.2, 0.9), tom=0.06)
+        t.pinta(q.forma(traco([(s_ * 7.8, -24.2), (s_ * 10.4, -23.8), (s_ * 1.6, -11.8)], 0.32)), "blazer", 0, sobre=f"blap_{s_}", tom=0.18, normal=False)
+    # botões dourados: um que fecha na cintura e o de baixo; lenço dourado no bolso do peito
+    for y in (-8.4, -2.6):
+        t.pinta(q.forma(circulo((0.6, y), 0.95)), "latao", 6.3, R=0.9, pid="blz_botao")
+    t.pinta(q.forma(caixa((8.2, -14.4), 2.6, 0.35)), "blazer", 0, sobre="blz_1", tom=-0.24, normal=False)
+    t.pinta(q.forma(poligono([(6.4, -14.8), (7.6, -17.0), (8.4, -15.6), (9.4, -17.4), (10.2, -14.8)])), "latao", 6.15, R=0.8, pid="lenco", tom=-0.04)
+    # gravata-borboleta vinho com o nó no meio
+    gb = poligono([(-4.8, -29.0), (-0.6, -27.0), (-4.8, -24.6)]).suave(circulo((-4.2, -26.8), 1.4), 0.6) | \
+        poligono([(4.8, -29.0), (0.6, -27.0), (4.8, -24.6)]).suave(circulo((4.2, -26.8), 1.4), 0.6)
+    t.pinta(q.forma(gb), "gravata", 6.6, R=1.2, pid="gravata", semente=690)
+    t.pinta(q.forma(caixa((0, -26.8), 1.0, 1.0, r=0.3)), "gravata", 6.7, R=0.8, pid="gravata_no", tom=0.05)
+    for lado in ("e", "d"):
+        _manga(t, r, p, lado, "blazer", larg=2.7, punho_mat="camisa", semente=695)
+    for lado in ("e", "d"):
+        om, co = r.j[f"ombro_{lado}"], r.j[f"cotovelo_{lado}"]
+        # ombro estruturado: um friso mais claro no alto da manga
+        t.pinta(capsula(om, (om[0] + (co[0] - om[0]) * 0.25, om[1] + (co[1] - om[1]) * 0.25), 2.2), "blazer", 0, sobre=f"rmanga_{lado}", tom=0.06, normal=False)
+
+
+def _q_acesso(k, roupa, mat_livro, emblema):
+    s = _sn(k)
+    ergue, bd = _aceno(k)
+    p = replace(BASE, resp=0.5 + 0.5 * s, cab=-1.0 * ergue + 0.6 * s, cab_dy=0.4 * _sn(k, desloc=0.5), vira=0.15 + 0.1 * ergue,
+                olhar=(0.3 * ergue, 0.0), bd=bd, be=(12.0, 2.0, 0.0, "punho"), zd=6.0 if ergue < 0.5 else 7.2, pano=k / NQ * TAU)
+    t = Tela()
+
+    def ex(t, r):
+        pe_ = r.j["palma_e"]
+        livro_fechado(t, Quadro2D((pe_[0] - 0.4, pe_[1] - 1.2), 4.0 + 1.0 * s), p.ze + 0.3, mat_livro, emblema)
+    # a mão que segura o livro por cima da capa
+    r = esqueleto_vestido(t, p, roupa, ex)
+    mao(t, r, "e", "punho", p.ze + 0.9)
+    return t
+
+
+def q_acesso_jaleco(k):
+    return _q_acesso(k, roupa_jaleco, "livro_verde", "osso")
+
+
+def q_acesso_social(k):
+    return _q_acesso(k, roupa_social, "livro_vinho", "osso")
+
+
 LINHAS = [
     ("acenar", "acenando", False, q_acenar),
     ("ler", "lendo", False, q_ler),
@@ -2394,11 +2621,15 @@ LINHAS = [
     ("fogueira", "se aquecendo na fogueira", False, q_fogueira),
     ("carinho", "fazendo carinho no gato", False, q_carinho),
     ("comemora2", "comemorando a meta do dia", False, q_comemora2),
+    # tela de entrar (31/10/2026): roupas novas do mesmo mascote, na folha esqueleto-acesso.png
+    ("acesso_jaleco", "de jaleco longo dando boas-vindas", False, q_acesso_jaleco),
+    ("acesso_social", "de blazer e gravata-borboleta dando boas-vindas", False, q_acesso_social),
 ]
 
 
 LINHAS_ANTIGAS = 14          # linhas que existiam antes de 31/10/2026 (não mudam nunca)
 LINHAS_POSES_31 = 9          # poses de 31/10/2026 (as primeiras de esqueleto-poses.png; também não mudam)
+LINHAS_POSES_2 = 7           # segunda leva (esqueleto-poses2.png; também não muda)
 
 
 def folha_esqueleto(so=None) -> Image.Image:
@@ -3010,8 +3241,11 @@ def main() -> None:
     # esqueleto-poses2.png e gato-poses2.png (segunda). Acrescentar poses nunca muda um byte das folhas que já existem,
     # cada folha cabe numa paleta de 256 cores (leve) e só carrega onde uma pose dela aparece.
     a1, a2 = FH * LINHAS_ANTIGAS, FH * (LINHAS_ANTIGAS + LINHAS_POSES_31)
+    a3 = FH * (LINHAS_ANTIGAS + LINHAS_POSES_31 + LINHAS_POSES_2)
     salvar(esq.crop((0, a1, esq.width, a2)), PASTA / "esqueleto-poses.png")
-    salvar(esq.crop((0, a2, esq.width, esq.height)), PASTA / "esqueleto-poses2.png")
+    salvar(esq.crop((0, a2, esq.width, a3)), PASTA / "esqueleto-poses2.png")
+    # tela de entrar (31/10/2026): jaleco longo e traje social, na sua própria folha
+    salvar(esq.crop((0, a3, esq.width, esq.height)), PASTA / "esqueleto-acesso.png")
     salvar(gato.crop((0, 0, gato.width, GH * LINHAS_GATO_ANTIGAS)), PASTA / "gato.png")
     g1, g2 = GH * LINHAS_GATO_ANTIGAS, GH * (LINHAS_GATO_ANTIGAS + LINHAS_GATO_POSES_31)
     salvar(gato.crop((0, g1, gato.width, g2)), PASTA / "gato-poses.png")

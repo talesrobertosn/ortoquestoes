@@ -105,7 +105,7 @@
 .ac-entrada--senha .entrada { padding-right: 3rem; }
 .ac-olho {
   position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
-  display: inline-grid; place-items: center; width: 42px; height: 42px;
+  display: inline-grid; place-items: center; width: 44px; height: 44px;
   border: 0; border-radius: 3px; background: none; color: var(--texto-2); cursor: pointer;
 }
 .ac-olho:hover { background: var(--superficie-2); color: var(--texto); }
@@ -213,4 +213,17 @@
   .ac-cabeca h2 { font-size: 1.4rem; }
   .ac-mostra { grid-template-columns: minmax(0, 1fr); }
   .ac-folha { rotate: none; }
+}
+
+/* O mascote de jaleco (31/10/2026) no lugar do cavaleiro: pisa na linha da cidade, a 1,5x no computador e menor no
+   celular, sempre na coluna dele. O balão de fala (ao tocar) abre para a esquerda, sobre o painel, sem sair dele. */
+.ac-mascote { display: block; width: 144px; filter: drop-shadow(0 4px 0 rgba(7, 35, 32, 0.45)); }
+.ac-vitrine__mascote { margin-bottom: calc(var(--ac-pe) * -1 + 2px); }
+.ac-mascote .mascote__balao { left: auto; right: 60%; transform: none; max-width: 14rem; }
+.ac-mascote .mascote__balao::after { left: auto; right: 0.75rem; }
+@media (max-width: 40rem) {
+  .ac-mascote { width: 84px; }
+  .ac-mascote .mascote__balao { max-width: 11rem; font-size: 0.75rem; }
+  /* No celular o formulário vem logo: o selo some e o topo fica mais baixo. */
+  .ac-vitrine__texto .tr-heroi__selo { display: none; }
 }
