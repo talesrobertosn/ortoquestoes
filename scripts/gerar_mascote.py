@@ -1,8 +1,8 @@
 """O mascote em pixel art HD-2D (30/10/2026): o esqueleto guerreiro chibi e o gato, feitos do zero por este script.
 
 Nada é baixado nem gerado por IA: cada pixel sai das formas (campos de distância), da luz calculada e das paletas
-abaixo. O personagem é original: crânio grande e redondo com rachadura, órbitas ovais enormes e baixas, dentes
-retos, expressão séria; corpo pequeno com costelas e coluna; armadura leve (ombreira de aço amassada com correia,
+abaixo. O personagem é original: crânio grande e redondo com rachadura, órbitas ovais enormes e baixas, sem dentes à mostra (crânio de peça
+só), expressão séria; corpo pequeno com costelas e coluna; armadura leve (ombreira de aço amassada com correia,
 cinto com fivela, saiote de pano vermelho esfarrapado, braçadeira de couro). Nos comportamentos de Halloween ele
 veste por cima uma capa roxa com capuz.
 
@@ -20,6 +20,8 @@ import math
 import sys
 from dataclasses import dataclass, field, replace
 from pathlib import Path
+
+import os
 
 import numpy as np
 from PIL import Image
@@ -254,7 +256,7 @@ MATS: dict[str, Mat] = {
     "osso": Mat(rampa("#2a2030", "#45343f", "#67524b", "#8b725a", "#ae9472", "#cbb68e", "#e3d3ac", "#f6edd2"), hx("#1a1118"), rim=0.5, tex=0.07),
     "dente": Mat(rampa("#4a3a42", "#8d7a66", "#c9b896", "#e9dcbb", "#fbf4e0"), hx("#1a1118"), rim=0.2, tex=0.03),
     "interior": Mat(rampa("#0e0910", "#170f19", "#211723", "#2e2129", "#3c2c30"), hx("#0c070c"), rim=0.0, amb=0.45, kd=0.5),
-    "orbita": Mat(rampa("#040206", "#08050b", "#0e0912", "#16101a", "#211823", "#30232c"), hx("#0c070c"), rim=0.0, amb=0.2, kd=0.8, luz_pontual=0.2),
+    "orbita": Mat(rampa("#0a0709", "#151012", "#221b1d", "#312829", "#403637", "#4f4446"), hx("#0c070c"), rim=0.0, amb=0.2, kd=0.8, luz_pontual=0.2),
     "brilho": Mat(rampa("#26343e", "#4d6a78", "#86a8b4", "#c8dde0"), TINTA, emite=True, bloom=0.0),
     # armadura
     "aco": Mat(rampa("#16161e", "#262833", "#3a3e4a", "#535a66", "#717a84", "#939ca3", "#b8c0c2", "#e2e6e2"), hx("#0e0d14"), rim=0.55, tex=0.02, brilho=0.9),
@@ -262,7 +264,9 @@ MATS: dict[str, Mat] = {
     "couro": Mat(rampa("#1a0f0c", "#2c1a13", "#43281b", "#5c3824", "#784a2e", "#93603a", "#ad7a4c"), hx("#120a08"), rim=0.35, tex=0.08),
     "latao": Mat(rampa("#2a1a08", "#4f3410", "#7a5418", "#a87a26", "#d2a83c", "#f0d670", "#fff4b8"), hx("#170e05"), rim=0.3, brilho=1.0),
     "pano": Mat(rampa("#1a080c", "#2e0d14", "#47121c", "#621a24", "#7e252c", "#9a3536", "#b44c44"), hx("#12060a"), rim=0.4, tex=0.06),
-    "capa": Mat(rampa("#0d0716", "#170d24", "#221333", "#2f1a45", "#3e2358", "#4f2e6c", "#653e82", "#7f5798"), hx("#08040e"), rim=0.55, tex=0.05, luz_pontual=0.55),
+    "capa": (Mat(rampa("#08080b", "#0f0f14", "#17171e", "#202029", "#2a2a35", "#363642", "#454552", "#585866"), hx("#050507"), rim=0.55, tex=0.05, luz_pontual=0.55)
+             if os.environ.get("CAPA") == "escura" else
+             Mat(rampa("#0d0716", "#170d24", "#221333", "#2f1a45", "#3e2358", "#4f2e6c", "#653e82", "#7f5798"), hx("#08040e"), rim=0.55, tex=0.05, luz_pontual=0.55)),
     "forro": Mat(rampa("#07040b", "#0d0812", "#150d1c", "#1e1428"), hx("#05030a"), rim=0.0, amb=0.5, kd=0.4, luz_pontual=0.4),
     # objetos
     "madeira": Mat(rampa("#1c100a", "#311c10", "#4c2e18", "#6a4322", "#8a5c30", "#a87642", "#c49358"), hx("#120a06"), rim=0.3, tex=0.1),
@@ -583,7 +587,7 @@ def montar(p: Pose) -> Rig:
     pesc = tr.p(0, -28.4 - p.resp * 0.5)
     piv = (pesc[0] + p.cab_dx, pesc[1] + p.cab_dy)
     ang_c = p.inclina + p.cab
-    cab = Quadro2D(Quadro2D(piv, ang_c).p(0, -24), ang_c)
+    cab = Quadro2D(Quadro2D(piv, ang_c).p(0, DESCE_CRANIO), ang_c)
     r = Rig(raiz, P, tr, cab)
     for lado, s, (a1, a2, a3, _) in (("e", -1, p.be), ("d", 1, p.bd)):
         om = tr.p(s * 10.2, -22.8 - p.resp * 0.7)
@@ -677,69 +681,106 @@ def perna(t: Tela, r: Rig, p: Pose, lado: str):
         t.pinta(capsula((x, c[1] + 0.2), (x + s * 0.25, c[1] + 1.9), 0.55), "osso", 2.7, R=0.7, pid=f"dedo_pe_{lado}", semente=26 + k)
 
 
+# Modelo do rosto (30/10/2026, o Tales escolhe entre modelos): ROSTO=<nome> python3 scripts/gerar_mascote.py
+ROSTO = os.environ.get("ROSTO", "tres_quartos")   # o Tales escolheu o "modelo E" em 31/10/2026
+DESCE_CRANIO = {"tres_quartos": -21.0, "frente_liso": -22.0, "frente_redondo": -25.0}.get(ROSTO, -26.5)
+
+
 def cranio(t: Tela, r: Rig, p: Pose, sob_capuz=False):
     q = r.cab
     uv = q.uv()
     v = p.vira
-    # calota: larga em cima, maçãs do rosto e maxila mais estreitas
+    # calota comum a todos os modelos, com a rachadura no alto à direita
     calota = elipse((0, -6.5), 25.0, 20.5)
-    rosto = elipse((0 + v * 0.8, 9.5), 17.0, 9.0)
-    macas = circulo((-14.5 + v * 1.2, 7.5), 4.0) | circulo((14.5 + v * 1.2, 7.5), 4.0)
-    f = calota.suave(rosto, 5.0).suave(macas, 2.5)
+    frente = ROSTO != "tres_quartos"
+    if ROSTO == "tres_quartos":
+        rosto = elipse((-5.5 + v * 0.8, 8.5), 19.5, 10.0)
+        f = calota.suave(rosto, 6.0)
+    elif ROSTO == "frente_liso":
+        rosto = elipse((v * 0.8, 7.5), 22.0, 11.5)
+        macas = circulo((-22.0 + v * 1.2, 11.0), 3.2) | circulo((22.0 + v * 1.2, 11.0), 3.2)
+        f = calota.suave(rosto, 5.0).suave(macas, 2.0)
+    else:
+        rosto = elipse((v * 0.8, 7.0), 23.0, 11.0)
+        rm = 1.8 if ROSTO == "frente_redondo" else 3.4
+        macas = circulo((-22.6 + v * 1.2, 12.0), rm) | circulo((22.6 + v * 1.2, 12.0), rm)
+        maxila = (caixa((0.4 + v * 1.4, 20.6), 9.0, 4.8, r=3.0) if ROSTO == "frente_redondo"
+                  else caixa((0.4 + v * 1.4, 21.4), 13.6 if ROSTO != "frente_pequeno" else 11.0, 5.6, r=3.2))
+        f = calota.suave(rosto, 5.0).suave(macas, 2.0).suave(maxila, 2.6)
     t.pinta(q.forma(f), "osso", 8.0, R=13.0, pid="cranio", uv=uv, semente=51)
-    # mandíbula pequena (peça da frente: ganha o traço da junta)
-    mand = caixa((v * 1.2, 20.6), 8.6, 3.3, r=2.6).suave(elipse((v * 1.2, 22.4), 6.0, 2.0), 1.2)
-    t.pinta(q.forma(mand), "osso", 8.3, R=3.0, pid="mandibula", uv=uv, semente=52)
-    # sombras de modelado: têmporas, abaixo das maçãs, testa mais clara
     for sx in (-1, 1):
-        t.pinta(q.forma(elipse((sx * 20.5 + v * 0.6, 3.0), 3.6, 7.5)), "osso", 0, sobre="cranio", tom=-0.13, uv=uv, semente=51, normal=False)
-        t.pinta(q.forma(elipse((sx * 11.0 + v * 1.3, 15.2), 3.4, 1.8)), "osso", 0, sobre="cranio", tom=-0.12, uv=uv, semente=51, normal=False)
+        t.pinta(q.forma(elipse((sx * 21.0 + v * 0.6, 1.0), 3.4, 7.0)), "osso", 0, sobre="cranio", tom=-0.12, uv=uv, semente=51, normal=False)
+        if ROSTO in ("frente_dentes", "frente_pequeno", "frente_brilho", "frente_redondo"):
+            t.pinta(q.forma(elipse((sx * 16.8 + v * 1.3, 17.6), 3.0, 2.6)), "osso", 0, sobre="cranio", tom=-0.16, uv=uv, semente=51, normal=False)
     t.pinta(q.forma(elipse((-7 + v, -16.0), 8.0, 5.5)), "osso", 0, sobre="cranio", tom=0.05, uv=uv, semente=51, normal=False)
-    # rachadura irregular no alto à direita, com a beira de baixo clara
     rach = [(9.5, -25.6), (10.6, -22.8), (9.4, -20.6), (12.2, -18.0), (11.6, -15.6), (13.8, -13.4)]
     t.pinta(q.forma(traco([(x + 0.7, y + 0.7) for x, y in rach], 0.5)), "osso", 0, sobre="cranio", tom=0.16, uv=uv, semente=51, normal=False)
     t.pinta(q.forma(traco(rach, 0.55)), "orbita", 0, sobre="cranio", R=-1, tom=0.25)
     t.pinta(q.forma(capsula((12.2, -18.0), (14.8, -19.4), 0.45)), "orbita", 0, sobre="cranio", R=-1, tom=0.25)
-    # órbitas: ovais enormes, afastadas e baixas, com a borda de cima reta e levemente caída para dentro (sério)
-    for sx in (-1, 1):
-        cx = sx * 10.6 + v * 2.2 + (sx * v * -0.6)
-        rx = 7.6 * (1 - 0.12 * v * sx)
-        orb = elipse((cx, 5.2), rx, 8.6, ang=sx * -6) & semiplano((0, -2.2), (-sx * 0.10, -1))
-        dente_orb = lambda X, Y, cx=cx: -0.32 * np.clip(1 - (Y - (q.o[1] - 4)) / 10.0, 0, 1)
-        t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=0.0, uv=uv)
-        # sobrancelha óssea: arco claro logo acima da borda
-        arco = q.forma(elipse((cx, 5.0), rx + 1.6, 9.8, ang=sx * -6) - elipse((cx, 5.6), rx + 0.2, 8.8, ang=sx * -6)) & q.forma(semiplano((0, -1.2), (0, 1)))
-        t.pinta(arco, "osso", 0, sobre="cranio", tom=0.1, uv=uv, semente=51, normal=False)
-        # brilho fraco e frio, quase apagado, no fundo
-        if p.brilho > 0:
-            gx = cx + sx * -1.3 + v * 1.2 + p.olhar[0]
-            gy = 6.4 + p.olhar[1]
-            t.pinta(q.forma(circulo((gx, gy), 1.05)), "brilho", 8.02, pid="cranio", tom=0.3 * p.brilho, sem_contorno=True)
-            t.pinta(q.forma(circulo((gx - 0.4, gy - 0.5), 0.55)), "brilho", 8.03, pid="cranio", tom=0.75 * p.brilho, sem_contorno=True)
-            gp = q.p(gx, gy)
-            t.luz(gp[0], gp[1], 2.0, "#5d7f90", 6.5, 0.6 * p.brilho)
-    # cavidade nasal pequena
-    nz = (v * 2.4, 13.4)
-    nariz = (circulo((nz[0] - 1.0, nz[1] - 0.6), 1.15) | circulo((nz[0] + 1.0, nz[1] - 0.6), 1.15)) | poligono([(nz[0] - 2.0, nz[1] - 0.4), (nz[0] + 2.0, nz[1] - 0.4), (nz[0], nz[1] + 2.0)])
-    t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.2, pid="cranio", tom=0.1)
-    # boca: fileira curta e reta de dentes, fechada. Cada dente é encaixado na grade de pixels (sem serrilhado)
-    bx = v * 2.0
-    t.pinta(q.forma(caixa((bx, 19.0), 8.6, 2.9, r=1.0)), "orbita", 8.35, R=-1.0, pid="dentes_fundo", sem_contorno=True)
-    rad = math.radians(q.ang)
-    for i in range(5):
-        lx = bx - 6.0 + i * 3.0
-        cx_, cy_ = q.p(lx, 17.4)
-        cx_, cy_ = round(cx_), round(cy_)
-        dx3, dy3 = round(-math.sin(rad) * 3.0), 3
-        t.pinta(caixa((cx_, cy_), 1.0, 1.0), "dente", 8.4, R=0.9, pid="dentes", sem_contorno=True, tom=0.04 if i != 0 else -0.04)
-        t.pinta(caixa((cx_ + dx3, cy_ + dy3), 1.0, 1.0), "dente", 8.4, R=0.9, pid="dentes", sem_contorno=True, tom=-0.06 if i != 4 else -0.14)
+
+    if not frente:
+        # três-quartos para a esquerda: órbita grande com aro claro e a estreita na borda; nariz embaixo à esquerda
+        ox = v * 2.0
+        grande = elipse((0.6 + ox, 3.0), 8.0, 7.6, ang=-8)
+        t.pinta(q.forma(elipse((0.6 + ox, 3.0), 9.9, 9.4, ang=-8) - grande), "osso", 0, sobre="cranio", tom=0.12, uv=uv, semente=51, normal=False)
+        lateral = elipse((-19.6 + ox, 3.6), 4.2, 5.9, ang=6) & f
+        for orb in (grande, lateral):
+            t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=0.0, uv=uv)
+        t.pinta(q.forma(elipse((1.4 + ox, 4.6), 5.6, 4.8, ang=-8)), "orbita", 0, sobre="cranio", tom=0.18, normal=False)
+        t.pinta(q.forma(elipse((-19.0 + ox, 5.0), 2.4, 3.6)), "orbita", 0, sobre="cranio", tom=0.14, normal=False)
+        nz = (-11.0 + v * 2.4, 11.6)
+        nariz = poligono([(nz[0] - 2.2, nz[1] - 1.4), (nz[0] + 2.2, nz[1] - 1.4), (nz[0], nz[1] + 2.0)]).suave(circulo((nz[0], nz[1] - 0.8), 1.5), 0.6)
+        t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.2, pid="cranio", tom=0.05)
+        t.pinta(q.forma(elipse((v * 1.0, 19.0), 14.0, 2.4)), "osso", 0, sobre="cranio", tom=-0.1, uv=uv, semente=51, normal=False)
+    else:
+        # de frente: órbitas ovais em pé (menores no modelo "pequeno"), nariz de duas fendas
+        rx, ry = {"frente_pequeno": (6.2, 8.0), "frente_redondo": (7.6, 7.8)}.get(ROSTO, (7.4, 9.6))
+        for sx in (-1, 1):
+            cx = sx * {"frente_pequeno": 11.4, "frente_redondo": 10.6}.get(ROSTO, 12.0) + v * 2.2
+            orb = elipse((cx, 4.6 if ROSTO == "frente_redondo" else 4.2), rx * (1 - 0.1 * v * sx), ry, ang=sx * 8)
+            if ROSTO == "frente_redondo":
+                # órbitas redondas e bem pretas, como nas referências do ceifador e do esqueleto da picareta
+                t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=-0.35, uv=uv)
+                continue
+            t.pinta(q.forma(orb), "orbita", 8.01, R=-3.5, pid="cranio", tom=0.0, uv=uv)
+            t.pinta(q.forma(elipse((cx + sx * 0.4, 5.6), rx * 0.68, ry * 0.69, ang=sx * 8)), "orbita", 0, sobre="cranio", tom=0.12, normal=False)
+            if ROSTO == "frente_brilho":
+                # um pontinho de luz no alto de cada órbita
+                gx, gy = cx - 2.2, 0.6
+                t.pinta(q.forma(circulo((gx, gy), 1.25)), "brilho", 8.03, pid="cranio", tom=0.9, sem_contorno=True)
+        if ROSTO == "frente_redondo":
+            # nariz pequeno em coração invertido
+            nz = (v * 2.4, 12.4)
+            nariz = (circulo((nz[0] - 1.1, nz[1] - 0.6), 1.25) | circulo((nz[0] + 1.1, nz[1] - 0.6), 1.25)) | poligono([(nz[0] - 2.3, nz[1] - 0.3), (nz[0] + 2.3, nz[1] - 0.3), (nz[0], nz[1] + 2.0)])
+            t.pinta(q.forma(nariz), "orbita", 8.01, R=-1.0, pid="cranio", tom=-0.2)
+        else:
+            for sx in (-1, 1):
+                t.pinta(q.forma(elipse((sx * 1.5 + v * 2.4, 11.4), 0.95, 2.4, ang=sx * -10)), "orbita", 8.01, R=-1.0, pid="cranio", tom=0.05)
+        if ROSTO == "frente_liso":
+            # sem dentes: só a sombra da curva de baixo do rosto
+            t.pinta(q.forma(elipse((v * 1.0, 17.8), 13.0, 2.4)), "osso", 0, sobre="cranio", tom=-0.1, uv=uv, semente=51, normal=False)
+        else:
+            # uma fileira só de dentes grandes e claros, separados por traços encaixados na grade de pixels
+            bx = 0.4 + v * 1.4
+            meia = {"frente_pequeno": 8.0, "frente_redondo": 6.6}.get(ROSTO, 10.6)
+            n = {"frente_pequeno": 5, "frente_redondo": 5}.get(ROSTO, 7)
+            passo = 2 * meia / n
+            t.pinta(q.forma(traco(bezier((bx - meia - 0.4, 18.8), (bx, 18.0), (bx + meia + 0.4, 18.8), 9), 0.55)), "orbita", 0, sobre="cranio", tom=0.2)
+            t.pinta(q.forma(traco(bezier((bx - meia + 0.2, 22.6), (bx, 24.2), (bx + meia - 0.2, 22.6), 9), 0.55)), "orbita", 0, sobre="cranio", tom=0.2)
+            t.pinta(q.forma(elipse((bx, 20.0), meia + 3.4, 5.4)), "osso", 0, sobre="cranio", tom=0.1, uv=uv, semente=51, normal=False)
+            t.pinta(q.forma(caixa((bx, 20.9), meia, 1.8, r=0.6)), "osso", 0, sobre="cranio", tom=0.26, uv=uv, semente=51, normal=False)
+            for i in range(1, n):
+                # cada traço é uma coluna de 1 pixel encaixada na grade (não some quando a cabeça inclina)
+                x = bx - meia + i * passo
+                (x0, y0), (_, y1) = q.p(x, 19.6), q.p(x, 22.4 + 0.6 * (1 - abs(i - n / 2) / (n / 2)))
+                cx_, ya, yb = round(x0) + 0.5, round(y0), round(y1)
+                t.pinta(caixa((cx_, (ya + yb) / 2 + 0.5), 0.5, max(1.0, (yb - ya) / 2)), "orbita", 8.4, R=0.3, pid="dentes", sem_contorno=True, tom=0.28)
     if sob_capuz:
         # sombra do capuz no alto do crânio
         def sombra_capuz(X, Y):
             _, vv = uv(X, Y)
             return -0.62 * np.clip((4.0 - vv) / 20.0, 0, 1) ** 0.8
         t.pinta(q.forma(semiplano((0, 6), (0, 1))), "osso", 0, sobre="cranio", tom=sombra_capuz, normal=False)
-        t.pinta(q.forma(semiplano((0, 6), (0, 1))), "osso", 0, sobre="mandibula", tom=sombra_capuz, normal=False)
 
 
 def tronco(t: Tela, r: Rig, p: Pose):
@@ -768,8 +809,8 @@ def tronco(t: Tela, r: Rig, p: Pose):
     t.pinta(q.forma(capsula((0, -23.6), (0, -12.0), 1.35, 1.0) | elipse((0, -23.0), 2.4, 1.8) | circulo((0, -11.0), 0.8)), "osso", 4.7, R=1.5, pid="esterno", uv=uv, semente=77)
     for s in (-1, 1):
         t.pinta(q.forma(traco(bezier((s * 1.8, -24.6), (s * 6.0, -26.6), (s * 10.0, -23.6), 7), 0.85)), "osso", 4.8, R=1.0, pid=f"clavicula{s}", uv=uv, semente=78)
-    # vértebras do pescoço
-    for k, y in enumerate((-27.4, -25.6)):
+    # vértebras do pescoço (aparecem entre o crânio redondo e as clavículas)
+    for k, y in enumerate((-31.0, -29.2, -27.4, -25.6)):
         t.pinta(q.forma(caixa((0, y), 1.9, 0.75, r=0.5)), "osso", 7.0, R=1.0, pid=f"cervical{k}", uv=uv, semente=79)
     # pelve (quase toda sob o cinto e o saiote)
     pel = elipse((-4.6, 0.8), 4.8, 3.6, 20).suave(elipse((4.6, 0.8), 4.8, 3.6, -20), 1.5).suave(caixa((0, 2.0), 2.4, 3.0, r=1.2), 1.0)
@@ -1599,10 +1640,13 @@ def salvar(img: Image.Image, caminho: Path) -> None:
         tmp.replace(caminho)
     else:
         tmp.unlink()
-    print(caminho.relative_to(PASTA.parents[2]), img.size, caminho.stat().st_size, "bytes")
+    print(caminho.relative_to(PASTA.parents[2]) if caminho.is_relative_to(PASTA.parents[2]) else caminho, img.size, caminho.stat().st_size, "bytes")
 
 
 def main() -> None:
+    if os.environ.get("SAIDA"):
+        salvar(folha_esqueleto(), Path(os.environ["SAIDA"]))
+        return
     salvar(folha_esqueleto(), PASTA / "esqueleto.png")
     salvar(folha_gato(), PASTA / "gato.png")
     if "--previa" in sys.argv:
