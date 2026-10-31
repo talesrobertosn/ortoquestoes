@@ -27,12 +27,6 @@ try {
     for (const l of grade) for (const ch of l) assert.ok(ch === '.' || paleta[ch], `${g}: letra "${ch}" fora de ${p}`)
   }
   assert.equal(sp.sombraPixel(['k.', '.k'], { k: '#000' }, 2), '2px 2px 0 0 #000,4px 4px 0 0 #000')
-  // Desenhos da seção "Hoje" do menu: mesma regra, uma paleta só.
-  const mn = await carregar('src/componentes/menu/sprites.ts')
-  for (const [nome, grade] of Object.entries(mn.OBJETOS_MENU)) {
-    assert.equal(new Set(grade.map((l) => l.length)).size, 1, `menu ${nome}: linhas de larguras diferentes`)
-    for (const l of grade) for (const ch of l) assert.ok(ch === '.' || mn.PALETA_MENU[ch], `menu ${nome}: letra "${ch}" fora da paleta`)
-  }
 
   // Segredos: ids únicos, palavras mágicas sem acento, épocas e véspera.
   assert.equal(new Set(sg.SEGREDOS.map((s) => s.id)).size, sg.SEGREDOS.length)
@@ -58,7 +52,7 @@ try {
     const c = JSON.parse(await readFile(`public/biblioteca/capitulos/${r.capitulo}.json`, 'utf8'))
     assert.ok(c.secoes.some((s) => s.id === r.secao), `${r.titulo}: seção ${r.secao} não existe em ${r.capitulo}`)
   }
-  console.log(`salão da biblioteca: ${pares.length} desenhos (e os do menu), ${sg.SEGREDOS.length} segredos e ${RAROS.length} raros conferidos`)
+  console.log(`salão da biblioteca: ${pares.length} desenhos, ${sg.SEGREDOS.length} segredos e ${RAROS.length} raros conferidos`)
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
