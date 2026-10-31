@@ -1,4 +1,5 @@
 import type { Leitura, ResumoCapitulo } from './tipos'
+import { pontuar } from './busca'
 
 /**
  * Regras puras da vitrine da Biblioteca (redesenho de 27/10/2026): livro de cada resumo, ordem dos
@@ -78,10 +79,18 @@ export function livrosDaEstante(capitulos: ResumoCapitulo[]): Array<{ chave: str
 const compararNoLivro = (a: ResumoCapitulo, b: ResumoCapitulo) => numeroCapitulo(a) - numeroCapitulo(b) || a.titulo.localeCompare(b.titulo, 'pt-BR')
 
 export function filtrarEstante(capitulos: ResumoCapitulo[], f: FiltrosEstante, leituras: Record<string, Leitura | undefined>): ResumoCapitulo[] {
-  const q = normalizar(f.q.trim())
-  const lista = capitulos.filter((c) => (!f.livro || chaveLivro(c) === f.livro) && (!f.area || c.especialidade === f.area)
-    && (!f.progresso || estadoLeitura(leituras[c.id]) === f.progresso)
-    && (!q || normalizar(`${c.titulo} ${c.livro} ${c.capitulo} ${c.resumo} ${c.secoes.map((s) => s.titulo).join(' ')}`).includes(q)))
+  // A busca (busca.ts) é sem acento, palavra por palavra, com siglas e uma letra de folga; a mesma da estante e da lista.
+  const q = f.q.trim()
+  const pontos = new Map<string, number>()
+  const lista = capitulos.filter((c) => {
+    if ((f.livro && chaveLivro(c) !== f.livro) || (f.area && c.especialidade !== f.area) || (f.progresso && estadoLeitura(leituras[c.id]) !== f.progresso)) return false
+    if (!q) return true
+    const a = pontuar(c, q)
+    if (a) pontos.set(c.id, a.pontos)
+    return !!a
+  })
+  // Com busca e a ordem padrão, os mais relevantes vêm primeiro (a lista avisa: "Mais relevantes primeiro").
+  if (q && f.ordem === 'livro') return lista.sort((a, b) => (pontos.get(b.id) ?? 0) - (pontos.get(a.id) ?? 0) || compararNoLivro(a, b))
   if (f.ordem === 'recentes') return lista.sort((a, b) => (leituras[b.id]?.em ?? 0) - (leituras[a.id]?.em ?? 0) || compararNoLivro(a, b))
   if (f.ordem === 'cobrados') return lista.sort((a, b) => b.questoes.length - a.questoes.length || compararNoLivro(a, b))
   if (f.ordem === 'titulo') return lista.sort((a, b) => a.titulo.localeCompare(b.titulo, 'pt-BR'))
