@@ -8675,43 +8675,19 @@
   }
  },
  "pediatria-0576": {
-  "conceito": "Na cervical baixa (C3 a C7), os padrões de fratura do adulto são raros na criança e aparecem sobretudo no adolescente. O que define cada padrão é a **força** que chega à vértebra.\n\n**Os padrões no Rockwood and Wilkins (10ª ed., cap. 21).**\n- **Compressão:** a mais comum, por flexão com carga axial; estável, colar por 3 a 6 semanas.\n- **Explosão:** a **carga axial de alta energia** esmaga o corpo vertebral e pode empurrar fragmentos para o canal; tomografia para ver a retropulsão. Sem déficit e alinhada, órtese; senão, **corpectomia anterior**.\n- **Luxação facetária:** do adolescente, por flexão e distração; ressonância antes de reduzir.\n\nO ligamento pesa tanto quanto o osso na criança, e a lesão isolada de uma coluna costuma ser estável.\n\n**A escala SLIC** soma morfologia (compressão 1, explosão 2, distração 3, rotação ou translação 4), complexo discoligamentar e estado neurológico.\n\n**Na prova:** carga axial na cervical baixa = **explosão**.\n\nO resumo de coluna cervical da criança traz os padrões e a SLIC na seção de cervical baixa.",
-  "correta": "**C: fratura por explosão.** O capítulo atribui a explosão à carga axial de alta energia, que esmaga o corpo vertebral e pode levar fragmentos ao canal.",
+  "conceito": "Cada mecanismo produz, na cervical baixa, um tipo de lesão, e a carga axial é o mais fácil de imaginar: a força desce pelo eixo da coluna e esmaga o corpo vertebral de cima para baixo.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 21) descreve o que acontece de C3 a C7 na criança:\n- **compressão**: a fratura **mais comum** da coluna subaxial da criança, por **flexão com carga axial**; perda de altura mais na frente, em cunha, lesão da coluna anterior, estável, tratada com colar por 3 a 6 semanas;\n- **explosão**: rara, causada por **carga axial após trauma de alta energia**; o muro posterior do corpo pode recuar para o canal e lesar a medula;\n- **lesão do complexo ligamentar posterior**: por **flexão ou distração**;\n- **luxação facetária**: por hiperflexão, hiperextensão ou rotação, sobretudo no adolescente.\n\nA banca escreveu \"geralmente\", e o livro responde da mesma forma: carga axial de alta energia é o mecanismo da **explosão**. A compressão também envolve carga axial, mas somada à flexão. A tomografia mostra a retropulsão; sem déficit e com alinhamento razoável, órtese; com déficit ou canal comprometido, corpectomia anterior.",
+  "correta": "**C) fratura por explosão.** Na cervical baixa da criança, a carga axial após trauma de alta energia produz a fratura por explosão (Rockwood and Wilkins' Fractures in Children, cap. 21).",
   "incorretas": {
-   "A": "**Fratura-luxação pede translação ou rotação**, o grau mais alto da morfologia na SLIC. Não é o produto típico da carga axial.",
-   "B": "**A lesão facetária bilateral vem de flexão e distração**, no adolescente. A carga axial comprime o corpo vertebral, não as facetas.",
-   "D": "**A lesão do complexo ligamentar posterior é efeito de distração.** A carga axial esmaga; a distração rompe os ligamentos de trás."
+   "A": "**A fratura-luxação** pede rotação ou translação, não a carga axial pura.",
+   "B": "**A fratura ou luxação bifacetária** vem de hiperflexão, hiperextensão ou rotação.",
+   "D": "**O complexo ligamentar posterior** se lesa por flexão ou distração."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Cervical baixa (C3 a C7)."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seções Burst Fracture e Compression Fracture",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Cervical baixa (C3 a C7)"
-     ],
-     "blocos": [
-      "cervical-baixa-c3-a-c7-d1365fab",
-      "cervical-baixa-c3-a-c7-4e71d4fa",
-      "cervical-baixa-c3-a-c7-cb68fbf2"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "ed740d408d409960d33f942ddf757c9e0b2ae9b8e35fb72dce2f2bdb3f0e43ef"
-    }
-   ],
-   "questaoSha256": "34ddb8159c37aa7767b20ef2afb94d8105cabbb259874883cc75b28dad73e2b7",
-   "comentarioSha256": "d34e86532f46c78c07466f0e6e2b02fb5b830b265b956a75f96b4e17c8dd0cda"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0579": {
   "conceito": "Esta é a questão que resume o assunto mais cobrado da tíbia proximal da criança: o **valgo de COZEN**.\n\n**A fratura.** O capítulo 29 do Rockwood crianças descreve a fratura da metáfise proximal da tíbia na criança de **3 a 6 anos**, de baixa energia: uma força aplicada na **face lateral do joelho em extensão**, direta ou por carga axial (o trampolim), faz a **cortical medial falhar em tração**. O resultado típico é um **galho verde**, com o lado medial aberto já na radiografia inicial.\n\n**A surpresa.** Em 1953, COZEN relatou quatro crianças que ficaram em **valgo** depois dessa fratura. Em duas, o valgo já estava presente na retirada do gesso (perda da redução); nas outras duas, ele **apareceu com o crescimento**, numa fratura que tinha consolidado reta. Outros autores confirmaram: NENOPOULOS viu valgo progressivo em 90% das fraturas pouco desviadas, e ROBERT o encontrou nas fraturas em galho verde e completas, mas em nenhuma fratura em torus.\n\n**Por que acontece.** Ninguém sabe ao certo, e a Tabela 29-3 do livro lista as teorias: hiperestímulo da fise medial (mais fluxo, captação maior na cintilografia), interposição de partes moles no foco (**pata de ganso**, periósteo, colateral medial), perda do freio da pata de ganso sobre a fise medial, efeito de amarra da fíbula, redução ruim e apoio precoce.\n\n**O que acontece depois.** O valgo aparece por volta de 6 meses, progride até 18 a 24 meses e **corrige devagar**, em 18 a 36 meses; na série de ZIONTS e MacEWEN, seis de sete crianças corrigiram sozinhas. E a série recente de 181 fraturas encontrou valgo acima de 5 graus em só 2%, sem nenhuma cirurgia.\n\n**Por que não as outras.** Depois da lesão da **fise** e da **tuberosidade**, a deformidade típica é o **recurvato** (cap. 27); depois da fratura **metafisária**, é o **valgo**. A banca troca as duas o tempo todo.\n\nA seção \"A fratura metafisária e o valgo de COZEN\" do resumo tem a tabela das teorias e a figura da correção espontânea.",
@@ -8970,43 +8946,19 @@
   }
  },
  "pediatria-0587": {
-  "conceito": "A coluna cervical da criança pequena não é uma coluna de adulto em miniatura. Até por volta dos **8 anos**, três características jogam as lesões para o **alto**, entre o occipital, C1 e C2.\n\n**As três razões do Rockwood and Wilkins (10ª ed., cap. 21, de Iyer e Brockmeyer).**\n- **Frouxidão ligamentar:** a coluna é hipermóvel; ligamentos frouxos deixam o segmento alto se deslocar antes de quebrar.\n- **Facetas horizontais:** as articulações deslizam com facilidade para a frente e para trás, em vez de travar como as facetas mais inclinadas do adulto.\n- **Cabeça grande:** proporcionalmente pesada, ela leva o fulcro do movimento para cima, perto de C2-C3.\n\nDepois dos 8 anos, o padrão passa a ser o do adulto, com as lesões mais baixas.\n\n**A consequência prática.** Abaixo de 8 anos, a cabeça grande flete o pescoço quando a criança deita numa prancha comum. O capítulo indica prancha com **recesso occipital** ou um colchão sob o tronco, além do colar.\n\n**Na prova:** criança abaixo de 8 anos = lesão cervical **alta**, por **frouxidão ligamentar**, facetas horizontais e cabeça grande.\n\nO resumo de coluna cervical da criança explica isso na seção de anatomia e mecanismos.",
-  "correta": "**D: maior mobilidade por causa da frouxidão ligamentar.** É a primeira das três razões do capítulo para a lesão alta abaixo de 8 anos, ao lado das facetas horizontais e da cabeça grande.",
+  "conceito": "A pergunta é por que a coluna da criança abaixo de 8 anos quebra em cima e a do adolescente, embaixo. A resposta está em três diferenças anatômicas, que o Rockwood and Wilkins' Fractures in Children (cap. 21) junta numa frase: a coluna imatura é **hipermóvel** por causa da\n\n- **frouxidão ligamentar** relativa;\n- **facetas articulares horizontais**, que deixam as vértebras escorregarem para a frente;\n- **cabeça grande** em relação ao corpo.\n\nJuntas, essas características levam o **fulcro do movimento para o alto** (C1 a C3), e é ali que a força se concentra. Com o crescimento, as facetas verticalizam, os ligamentos endurecem e o fulcro desce; a partir daí as lesões ficam na cervical média e baixa, como no adulto. A mesma hipermobilidade explica a pseudossubluxação fisiológica de C2 sobre C3.\n\nDas alternativas, só a maior mobilidade por frouxidão ligamentar está no livro como causa. As outras invertem a anatomia.",
+  "correta": "**D) maior mobilidade por causa da frouxidão ligamentar.** A frouxidão, junto com as facetas horizontais e a cabeça grande, torna a coluna hipermóvel e sobe o fulcro (Rockwood and Wilkins' Fractures in Children, cap. 21).",
   "incorretas": {
-   "A": "**A cabeça é proporcionalmente maior, não menor.** É justamente o peso da cabeça que leva o fulcro para a cervical alta.",
-   "B": "**As facetas da criança são horizontais, não verticais.** A orientação horizontal facilita o deslizamento entre as vértebras.",
-   "C": "**Translação posterior não é o mecanismo descrito.** O capítulo explica a lesão alta pela hipermobilidade, pelas facetas horizontais e pela cabeça grande."
+   "A": "**A cabeça da criança é maior** em relação ao corpo, não menor; é ela que sobe o fulcro.",
+   "B": "**As facetas da criança são horizontais**; verticais são as do adulto.",
+   "C": "**O deslizamento típico é para a frente** (pseudossubluxação anterior de C2 sobre C3), não a translação posterior."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Introduction to Cervical Spine Injury",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Anatomia, mecanismos e atendimento inicial"
-     ],
-     "blocos": [
-      "anatomia-mecanismos-e-atendimento-inicial-c53da7ac",
-      "anatomia-mecanismos-e-atendimento-inicial-9ed4f490",
-      "anatomia-mecanismos-e-atendimento-inicial-0012f77d"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "7d4c61925a785a254102e87de52196fe060b699e3d0daa52d7c13cafc381a0c3"
-    }
-   ],
-   "questaoSha256": "e62ebde84dc3ed8e7409be5bccaf7a035e1d2aa1f3a104a6bb27dee90805d266",
-   "comentarioSha256": "c39b9b09c3145af5a4a75530a9e58371e5aba5bed3b9c1c2953f922779885811"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0588": {
   "conceito": "A triplanar engana porque cada radiografia mostra só uma parte da fratura.\n\n**Por que existem as fraturas de transição.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), a fise distal da tíbia fecha por volta dos **15 anos nas meninas e 17 nos meninos**, num processo que dura cerca de **18 meses** e segue uma ordem fixa: começa no **centro**, avança para o **medial** e termina no **lateral**. Durante esse ano e meio, uma parte da fise já virou osso e outra ainda é cartilagem. A cartilagem é o ponto fraco: a força passa pelo trecho fechado como por osso maduro e foge pelo trecho aberto, que é o **canto anterolateral**, o último a fechar.\n\n**O desenho da triplanar.** A triplanar é a irmã maior do TILLAUX: o mesmo momento de fise parcialmente fechada, a mesma **rotação externa**, mas com um traço a mais. Ela tem traços nos **três planos**: **sagital** na epífise, **axial** pela fise e **coronal** na metáfise. Cada radiografia mostra dois deles:\n- no **AP**, aparece o traço vertical da epífise mais a fise aberta: parece um **SALTER-HARRIS III** (por isso o triplanar lateral \"parece um TILLAUX no AP\");\n- no **perfil**, aparece a fise mais o espículo metafisário posterior: parece um **SALTER-HARRIS II**.\n\nSegundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), LYNN deu o nome e COOPERMAN mostrou que a maioria tem **duas partes**; há também de três e quatro partes. Acontece entre os **10 e 16,7 anos** (idade média de 14,8 nos meninos e 12,8 nas meninas, na série de KÄRRHOLM).\n\n**Na prova:** triplanar = **SH III no AP** e **SH II no perfil**; a regra para não inverter é que o espículo metafisário (o \"II\") é posterior e só aparece de lado.\n\nO resumo de fraturas do tornozelo na criança traz a triplanar em seção própria.",
@@ -9516,44 +9468,27 @@
   }
  },
  "pediatria-0605": {
-  "conceito": "O odontoide da criança pequena não quebra como o do adulto. Ele tem, na base, uma **cartilagem de crescimento**: a **sincondrose dentocentral**, que une o dente ao corpo de C2 e fecha só entre **7 e 9 anos**.\n\n**Por onde passa o traço.** No Rockwood and Wilkins (10ª ed., cap. 21), a fratura do odontoide na criança passa **pela sincondrose**, exatamente como um descolamento fisário: é uma lesão **Salter-Harris I**. A idade média é de **4 anos**, muitas vezes em cadeirinha voltada para a frente, e ela responde por cerca de 10% das lesões cervicais da criança.\n\n**A classificação própria.** Hosalkar separou o tipo I, pela sincondrose (IA com menos de 10% de desvio, IB de 10% a 100%, IC com mais de 100%), do tipo II, acima dela. Por isso não se aplica a classificação do adulto à criança pequena.\n\n**Tratamento.** Consolida melhor que no adulto: redução em **extensão**, imobilização e controle em 8 semanas; instável, artrodese C1-C2 posterior.\n\n**Na prova:** odontoide da criança = **sincondrose** = **Salter-Harris I**.\n\nO resumo de coluna cervical da criança descreve a sincondrose e a classificação na seção de C1 e C2.",
-  "correta": "**A: I.** O traço passa pela sincondrose dentocentral, uma placa de crescimento, sem levar fragmento metafisário ou epifisário: é o padrão Salter-Harris I.",
+  "conceito": "O odontoide da criança pequena tem uma particularidade: entre o dente e o corpo de C2 existe uma placa de cartilagem, a **sincondrose dentocentral**, que só ossifica por volta dos **7 a 9 anos**.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 21) diz que, antes disso, a fratura do odontoide costuma passar **pela própria sincondrose**, e que a lesão é **análoga a uma lesão fisária SALTER-HARRIS tipo I**: o plano de fratura atravessa a cartilagem, sem levar osso da metáfise nem da epífise. É a mesma lógica das fraturas fisárias de ossos longos na criança pequena, em que a cartilagem é o elo mais fraco.\n\nAlguns dados que acompanham: o odontoide é relativamente comum na coluna cervical da criança, com idade média de **4 anos**, muitas vezes na **cadeirinha voltada para a frente**. A sincondrose fica bem abaixo das facetas, o que ajuda a separá-la de uma fratura. Na criança com a sincondrose aberta, HOSALKAR classifica a fratura pela sincondrose (IA, IB, IC) ou acima dela (II). E a consolidação costuma ser boa, com imobilização.",
+  "correta": "**A) I.** A fratura do odontoide da criança passa pela sincondrose dentocentral e equivale a uma SALTER-HARRIS I (Rockwood and Wilkins' Fractures in Children, cap. 21).",
   "incorretas": {
-   "B": "**Salter-Harris II levaria um fragmento metafisário com o descolamento.** O capítulo descreve a fratura do odontoide da criança passando pela sincondrose, tipo I.",
-   "C": "**Salter-Harris III atravessaria a epífise até a articulação.** Não é o padrão da sincondrose dentocentral.",
-   "D": "**Salter-Harris IV cruzaria metáfise, fise e epífise.** Também não é o desenho descrito para o odontoide da criança."
+   "B": "**SALTER-HARRIS II** levaria um fragmento metafisário; o traço do odontoide segue só a cartilagem.",
+   "C": "**SALTER-HARRIS III** atravessaria a epífise até a articulação, o que não descreve a sincondrose da base do dente.",
+   "D": "**SALTER-HARRIS IV** cruzaria metáfise, fise e epífise; não é o padrão descrito."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: C1 e C2: atlas, odontoide e enforcado; Imagem e variantes normais."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Introduction to Odontoid Fracture e Tabela 21-1",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "C1 e C2: atlas, odontoide e enforcado",
-      "Imagem e variantes normais"
-     ],
-     "blocos": [
-      "c1-e-c2-atlas-odontoide-e-enforcado-cc93063a",
-      "c1-e-c2-atlas-odontoide-e-enforcado-ff6c1839",
-      "imagem-e-variantes-normais-6d2318e9"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "f43135f95ef0aa935994bbce46536381ccff313feabd605ee1e25f3ba88ad729"
-    }
-   ],
-   "questaoSha256": "ef95cf9a5a44fc939dcd3dc9902e9d9af3929c3c3d2a91d9f4897a5c82270aa1",
-   "comentarioSha256": "7ec51f6480ed61cae6d7c2524ad43f790f89087930aecaee5808a5840ea6f624"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-21-t1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21, Tabela 21-1 (HOSALKAR). Fratura do odontoide na criança com a sincondrose aberta: tipo I, pela sincondrose (IA desvio menor que 10%, IB de 10% a 100%, IC maior que 100%); tipo II, acima da sincondrose.",
+    "largura": 1200,
+    "altura": 763
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0606": {
   "conceito": "**Deformidade plástica do antebraço com limitação funcional pode precisar de redução fechada e gesso.** A cortical pode parecer contínua, mas o osso foi deformado além da capacidade de retornar elasticamente. Imobilizar o arco sem corrigi-lo mantém a alteração que está limitando a rotação.\n\nA redução difere de uma manobra rápida sobre um traço de fratura. O resumo descreve anestesia geral ou sedação profunda, força gradual sustentada sobre um fulcro e, depois, gesso com molde de três pontos. Deve-se evitar pressão direta nas epífises vizinhas para não criar uma lesão fisária.\n\nNão se deve confiar automaticamente na remodelação: a deformidade plástica tem menor potencial corretivo e pode impedir a redução do outro osso. A indicação considera a deformidade clinicamente inaceitável; o capítulo reproduz ainda critérios por idade e ângulo, sem transformar a decisão em uma regra única para qualquer criança.\n\n**Leia “Quando e como corrigir”, na Biblioteca.** O contraste importante é corrigir a deformidade por uma manobra fechada adequada, e não escolher uma posição extrema de gesso como substituto da redução.",
@@ -10509,18 +10444,20 @@
   }
  },
  "pediatria-0638": {
-  "conceito": "**A coluna cervical da criança.** Até cerca de **8 a 10 anos**, a coluna cervical tem características próprias: a **cabeça é proporcionalmente grande**, os **ligamentos são frouxos**, as **facetas são horizontais** e os corpos vertebrais estão **incompletamente ossificados** e em forma de cunha. Por isso, o fulcro do movimento fica mais **alto** (C2-C3), e as lesões da criança pequena se concentram na cervical alta (occipital a C3). Depois dos 10 anos, o padrão se aproxima do adulto, com lesões em C5-C6.\n\n**As variantes normais que imitam lesões.**\n| Variante | Como imita uma lesão |\n|---|---|\n| **Pseudossubluxação** de C2-C3 (e C3-C4) | Deslizamento anterior de até cerca de 4 mm, normal até os 8 anos; a **linha de Swischuk** ajuda a distinguir |\n| **Acunhamento** do corpo de **C3** | O corpo de C3 parece mais baixo na frente, por **ossificação incompleta**: simula **fratura por compressão** |\n| **Sincondroses** abertas (dentocentral, no odontoide) | Parecem traços de fratura; a dentocentral fecha entre 3 e 6 anos |\n| **Espaço pré-dental** maior | Até 4 a 5 mm na criança (3 mm no adulto) |\n| Ausência da **lordose** cervical | Pode parecer espasmo por lesão |\n| Partes moles pré-vertebrais amplas | Variam com o choro e a expiração |\n\n**O acunhamento de C3.** O corpo vertebral cervical da criança ossifica a partir de um centro que, nos primeiros anos, é **mais estreito na frente**. Em **C3**, isso é especialmente comum, e o corpo aparece em cunha anterior. A diferença com a fratura: a variante não tem dor localizada correspondente, não tem edema de partes moles pré-vertebrais e não muda na radiografia dinâmica; a ressonância mostra o osso normal.\n\n**A conduta na dúvida.** Diante de trauma, a criança deve ser avaliada com cuidado antes de liberar a imobilização. Lembrar também da **SCIWORA** (lesão medular sem anormalidade radiográfica), mais comum na criança pela elasticidade da coluna, que exige ressonância.",
-  "correta": "**Correta: A (C3).** O corpo de C3 é o local clássico do acunhamento anterior por ossificação incompleta, uma variante normal que simula fratura por compressão na criança.",
+  "conceito": "Na radiografia da criança, o corpo vertebral cervical ainda não terminou de ossificar e tem uma forma levemente em **cunha anterior**. Essa cunha fisiológica é uma das variantes normais que mais se confundem com fratura por compressão.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 21, Tabela 21-2) lista a **cunha anterior normal do corpo vertebral da criança pequena** entre os achados que parecem fratura, ao lado da sincondrose da base do odontoide e da angulação posterior normal do dente. Na seção da fratura por compressão, explica o motivo: as placas terminais da criança são naturalmente convexas no meio, e a cunha fisiológica é difícil de separar da fratura; a história e o exame decidem.\n\nO livro, porém, não diz **em qual vértebra** a cunha é mais frequente. A banca do TARO 2019 indicou como fonte o Skeletal Trauma (BROWNER, 5ª edição) e marcou **C3**, nível compatível com a cervical alta e média da criança, onde a ossificação incompleta e a hipermobilidade se concentram (lembre que a pseudossubluxação também é de C2 sobre C3). O gabarito oficial foi mantido.",
+  "correta": "**A) C3 (gabarito oficial).** A banca indicou o Skeletal Trauma (5ª edição) e marcou C3; o Rockwood and Wilkins' Fractures in Children (cap. 21) confirma a cunha anterior fisiológica como variante normal, sem dar o nível.",
   "incorretas": {
-   "B": "C4 pode mostrar leve acunhamento, mas C3 é o nível clássico dessa variante.",
-   "C": "C5 não é o nível clássico dessa variante.",
-   "D": "C6 não é o nível clássico dessa variante."
+   "B": "**C4** não foi o nível indicado pela fonte da banca.",
+   "C": "**C5** é nível de lesão do adolescente e do adulto, não da variante de ossificação da criança.",
+   "D": "**C6** também pertence à cervical baixa, longe do padrão da criança pequena."
   },
   "referencias": [
-   "Browner BD, Jupiter JB, Levine AM, Trafton PG. Skeletal trauma: basic science, management and reconstruction. 5aedição. Philadelphia: Saunders, 2015. 5 Ed. 296 Pg (referência indicada na prova TARO 2019, questão 49)",
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de lesões da coluna cervical."
+   "Browner BD, Jupiter JB, Levine AM, Trafton PG. Skeletal Trauma, 5ª ed. (2015), referência indicada pela banca do TARO 2019 (questão 49)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), Tabela 21-2 e seção Compression Fracture",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "O Rockwood and Wilkins' Fractures in Children (10ª ed., cap. 21) lista a cunha anterior normal do corpo vertebral entre as variantes que imitam fratura, mas não aponta o nível. O gabarito C3 vem da fonte indicada pela banca (Skeletal Trauma, 5ª ed.), que não está no acervo local; foi preservado.",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-0639": {
@@ -12971,44 +12908,29 @@
   "conferido": false
  },
  "pediatria-0717": {
-  "conceito": "A pseudossubluxação de C2 sobre C3 é a variante normal que mais confunde no perfil da coluna cervical da criança. O Rockwood and Wilkins (10ª ed., cap. 21) a descreve com até **3 mm** de deslizamento, até cerca de **11 anos**, em até 20% das crianças, por causa da frouxidão ligamentar.\n\n**A linha de Swischuk e Rowe.** Une a cortical anterior dos processos espinhosos de **C1 e C3**. A cortical anterior do espinhoso de **C2** precisa ficar a até 3 mm dela. Dentro disso, é pseudossubluxação; além disso, é subluxação verdadeira e pede investigação.\n\n**Por que importa.** A criança tem várias variantes que imitam lesão: a sincondrose na base do odontoide parece fratura, o ADI chega a 4,5 mm sem instabilidade, o os odontoideum aparece entre os achados que confundem. Reconhecer o normal evita imobilizações e cirurgias desnecessárias.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é a pseudoluxação C2-C3, sustentada pelo capítulo.\n\n**Na prova:** Swischuk = **C2-C3**, até 3 mm.\n\nO resumo de coluna cervical da criança traz a linha na seção de imagem e variantes normais.",
-  "correta": "**C: a pseudoluxação C2-C3.** É o que a linha espinolaminar de C1 a C3 separa da subluxação verdadeira, com o limite de 3 mm para o espinhoso de C2.",
+  "conceito": "A linha de SWISCHUK foi criada para responder a uma dúvida frequente na radiografia da criança: C2 está deslizada sobre C3 por lesão ou é só a mobilidade normal?\n\nO Rockwood and Wilkins' Fractures in Children (cap. 21) explica: um deslocamento anterior de **C2 sobre C3** (ou de C3 sobre C4) de **até 3 mm** é comum na criança, até cerca de **11 anos**, e é a **pseudossubluxação**. Para separar do patológico, usa-se a **linha posterior de SWISCHUK e ROWE**, traçada da **cortical anterior do espinhoso de C1** à do **espinhoso de C3**. A cortical anterior do espinhoso de **C2** deve ficar **a até 3 mm** dessa linha; mais longe, suspeita-se de subluxação verdadeira (Fig. 21-1). A lógica é que, na pseudossubluxação, o corpo de C2 escorrega, mas o arco posterior continua alinhado com os vizinhos.\n\nAs outras alternativas pertencem a outras linhas e medidas: o ligamento transverso se avalia pelo **ADI**; a invaginação basilar, pelas linhas de **McRAE** e **McGREGOR**.",
+  "correta": "**C) a pseudoluxação C2-C3.** A linha de SWISCHUK e ROWE separa a pseudossubluxação fisiológica de C2 sobre C3 da subluxação verdadeira (Rockwood and Wilkins' Fractures in Children, cap. 21, Fig. 21-1).",
   "incorretas": {
-   "A": "**O os odontoideum aparece na tabela de variantes que confundem, mas não é avaliado pela linha de Swischuk.** A linha olha o deslizamento de C2 sobre C3.",
-   "B": "**Invaginação basilar é um problema da junção craniocervical**, acima de C1. A linha de Swischuk é traçada entre C1 e C3.",
-   "D": "**A lesão do ligamento transverso aparece pelo intervalo atlanto-dental (ADI)**, normal até 4,5 mm na criança, e pela ressonância. Não é o que a linha de Swischuk mede."
+   "A": "**O os odontoideum** é uma anomalia congênita da Tabela 21-2; não se avalia pela linha de SWISCHUK.",
+   "B": "**A invaginação basilar** se mede pelas linhas de McRAE e McGREGOR (Fig. 21-3).",
+   "D": "**O ligamento transverso** se avalia pelo intervalo atlantodental (ADI) e pela ressonância."
   },
-  "conferido": false,
-  "provavel": "C",
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Imagem e variantes normais."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Upper Cervical Spine e Figs. 21-1 e 21-3",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Imagem e variantes normais"
-     ],
-     "blocos": [
-      "imagem-e-variantes-normais-c95c9882",
-      "imagem-e-variantes-normais-6d2318e9",
-      "imagem-e-variantes-normais-cac0827f"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "2ec4484476e66d374bda9b7a1984fd5898e49eb5a9f174a5ab0ebd8c0010cf99"
-    }
-   ],
-   "questaoSha256": "78fa01c78ffc148dbd9d823cff10e32f35becbf49d0e868c8e85e073911c6267",
-   "comentarioSha256": "e49d22e0c24d5c9a797aa309b34fe6889779c50e585bdddc476ed3e6d5401b72"
-  }
+  "provavel": "C",
+  "alerta": "Questão do TARO 2020 sem gabarito oficial publicado. A resposta provável (C) segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-21-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21, Fig. 21-1. Pseudossubluxação de C2 sobre C3 em flexão: o corpo de C2 parece deslocado sobre C3, mas o arco posterior de C2 fica alinhado na linha que une os arcos posteriores de C1 e C3 (linha de SWISCHUK e ROWE).",
+    "largura": 1160,
+    "altura": 1160
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0718": {
   "conceito": "A lesão de LISFRANC da criança costuma ser sutil, com desvio mínimo, e o que denuncia a lesão é um conjunto de pistas.\n\n**O pé da criança.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 31, de Amy L. McIntosh), o pé da criança é quase todo **cartilagem**: absorve energia, por isso as fraturas são menos graves; esconde traços na radiografia; e remodela. Na dúvida, radiografar o outro pé.\n\n**A anatomia que estabiliza o mediopé.** O **segundo metatarsal** fica **encaixado** entre os cuneiformes, como uma chave numa fechadura. O **ligamento de LISFRANC** vai do **cuneiforme medial ao segundo metatarsal**. Quando essa articulação cede, a base do segundo se desloca para lateral e o antepé pode comprimir o **cuboide**.\n\n**As pistas, segundo o capítulo.** Mecanismo de **ponta do pé** (56%); **equimose plantar** no mediopé; radiografias **com carga** e do **outro pé**. Acima de 6 anos, a distância entre primeiro e segundo metatarsais deve ser **menor que 3 mm**, e entre cuneiforme medial e segundo, **menor que 2 mm**. A fratura da **base do segundo metatarsal com a do cuboide** é **altamente sugestiva**.\n\n**Tratamento.** A criança tem em geral HARDCASTLE B com desvio mínimo. Menos de 1 a 2 mm: gesso sem carga por 6 semanas; mais: redução e fios, sendo a chave o fio do segundo metatarsal ao cuneiforme medial. A complicação mais comum é a **artrose**, pior quando o diagnóstico passa de 6 semanas.\n\n**Na prova:** LISFRANC na criança = **base do segundo metatarsal + cuboide**, equimose plantar, radiografia com carga.\n\nO resumo de fraturas do pé na criança traz o LISFRANC em seção própria.",
@@ -14382,45 +14304,21 @@
   "conferido": false
  },
  "pediatria-0770": {
-  "conceito": "A fratura de Jefferson é a explosão do anel de C1 por **carga axial**. É rara na criança, menos de 5% das lesões cervicais, e o anel imaturo pode se comportar de modo diferente: um traço pode passar por uma **sincondrose** ou o anel pode só se deformar.\n\n**O que decide a estabilidade.** No Rockwood and Wilkins (10ª ed., cap. 21), o ponto central é o **ligamento transverso**, que segura o dente contra o arco anterior de C1. A tomografia mostra o osso; a **ressonância** mostra o transverso. A regra de Spence, de 6,9 mm de afastamento das massas laterais, é citada como questionada.\n\n**A classificação de Dickman** separa as lesões do transverso:\n- **tipo I**, ruptura intrínseca do ligamento: **artrodese C1-C2**;\n- **tipo II**, avulsão óssea da inserção: **halo**, com sucesso em cerca de 75%.\n\nA maioria das fraturas de C1 da criança é estável e vai com órtese por cerca de 8 semanas.\n\n**Sem gabarito oficial no acervo.** A resposta pela bibliografia é o ligamento transverso.\n\n**Na prova:** Jefferson instável = **transverso** roto.\n\nNo resumo de coluna cervical da criança, a seção de C1 e C2 traz Dickman e o papel do transverso.",
-  "correta": "**B: transverso.** É o ligamento que mantém o dente junto do arco anterior de C1; sua lesão (Dickman I ou II) é o que torna a fratura de Jefferson instável.",
+  "conceito": "Na fratura de JEFFERSON, o anel de C1 se abre: a carga axial desce pelos côndilos occipitais e empurra as **massas laterais** para fora. O que segura C1 sobre o dente nesse momento é o **ligamento transverso**.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 21) explica que, quando as massas laterais se afastam, o transverso pode **romper** ou **avulsionar** a inserção em C1, e é isso que gera **instabilidade C1-C2**. Os algoritmos de tratamento se baseiam justamente na integridade dele, pela classificação de DICKMAN:\n- **tipo I**, ruptura **intrínseca** do ligamento: **artrodese C1-C2**;\n- **tipo II**, **avulsão óssea** do tubérculo na massa lateral de C1: **halo**, com sucesso em **75%**.\n\nNa criança, o anel tem sincondroses, e a fratura pode passar por uma delas ou ser só deformação plástica; a **ressonância** avalia o transverso e mostra edema na sincondrose. A maioria das fraturas do atlas é estável e vai com órtese por cerca de 8 semanas.\n\nO transverso é também o estabilizador primário do dente contra o deslizamento anterior; os alares e o apical são secundários.",
+  "correta": "**B) transverso.** Na fratura de JEFFERSON, a instabilidade C1-C2 depende da ruptura ou avulsão do ligamento transverso (Rockwood and Wilkins' Fractures in Children, cap. 21).",
   "incorretas": {
-   "A": "**O ligamento amarelo une as lâminas.** Não segura a relação entre o dente de C2 e o atlas.",
-   "C": "**O interespinhoso faz parte do complexo ligamentar posterior.** Na cervical alta, quem dá a estabilidade C1-C2 contra a translação é o transverso.",
-   "D": "**O longitudinal posterior corre atrás dos corpos vertebrais.** Na junção craniocervical, ele continua como membrana tectória, mas não é o ligamento que o capítulo usa para julgar a fratura de C1."
+   "A": "**O ligamento amarelo** une as lâminas e faz parte do complexo ligamentar posterior; não segura C1 sobre o dente.",
+   "C": "**O interespinhoso** também é do complexo posterior, sem papel na estabilidade atlantoaxial da fratura de JEFFERSON.",
+   "D": "**O longitudinal posterior** corre atrás dos corpos vertebrais; não é o que decide a instabilidade C1-C2."
   },
-  "conferido": false,
-  "provavel": "B",
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: C1 e C2: atlas, odontoide e enforcado; Imagem e variantes normais."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seções Assessment e Classification of Fractures of the Atlas (DICKMAN)",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "C1 e C2: atlas, odontoide e enforcado",
-      "Imagem e variantes normais"
-     ],
-     "blocos": [
-      "c1-e-c2-atlas-odontoide-e-enforcado-9ffea837",
-      "c1-e-c2-atlas-odontoide-e-enforcado-ff6c1839",
-      "imagem-e-variantes-normais-c95c9882"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "23ec4a2f519e8cb2a4e3956c82f2afcdd519158bc1e9fd6a527c21a526a6f13d"
-    }
-   ],
-   "questaoSha256": "db91b8bb8669cf560e6b24c3fd90d3d01db134753189f84a934ff907571fc806",
-   "comentarioSha256": "cb39dc57f8cbaf324f3f63834d3e9d7d99bb52d7d01c3b62fcbfe21ea019d901"
-  }
+  "provavel": "B",
+  "alerta": "Questão do TARO 2009 sem gabarito oficial publicado. A resposta provável (B) segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0771": {
   "conceito": "**Torcicolo muscular congênito.** É a causa mais comum de torcicolo no lactente. Resulta da **fibrose e encurtamento do músculo esternocleidomastoideo (ECM)**, possivelmente por compressão intrauterina ou síndrome compartimental do músculo durante o parto. Associa-se a outras deformidades posturais (displasia do quadril em cerca de 10% a 20%, metatarso aduto).\n\n**Quadro.** Cabeça inclinada para o lado do ECM acometido e rodada para o lado oposto; nódulo (\"tumor\" do ECM) palpável nas primeiras semanas; plagiocefalia e assimetria facial se não tratado.\n\n**Tratamento conservador.** **Alongamento** passivo orientado e posicionamento, com sucesso em mais de 90% quando iniciado no primeiro ano.\n\n**Cirurgia.** Indicada quando a limitação persiste após cerca de 1 ano, com déficit de rotação acima de 15 a 30 graus ou assimetria facial progressiva.\n- **Liberação distal (unipolar)**: secção das cabeças esternal e clavicular perto da inserção inferior. Estruturas em risco: veia jugular externa, artéria e veia carótidas, ramos nervosos.\n- **Liberação bipolar**: acrescenta a desinserção **proximal**, na inserção no **processo mastoide**, em casos mais graves ou crianças maiores.\n\n**Risco na liberação proximal.** No lactente e na criança pequena, o **processo mastoide é pouco desenvolvido**, e o **nervo facial** sai do forame estilomastóideo em posição **superficial**, logo abaixo da inserção mastóidea do ECM. A dissecção proximal deve ficar junto ao osso para não lesá-lo. O **nervo acessório**, que entra no ECM no seu terço superior, também deve ser lembrado.\n\n**Diferencial.** Torcicolo ósseo (Klippel-Feil, hemivértebras), ocular, por subluxação rotatória atlantoaxial (Grisel), tumores da fossa posterior.\n\n> Liberação proximal do ECM no torcicolo congênito: risco ao nervo facial, superficial junto ao mastoide da criança.",
@@ -16253,43 +16151,27 @@
   }
  },
  "pediatria-0851": {
-  "conceito": "Na radiografia em perfil da criança, C2 parece deslizada para a frente sobre C3 com frequência. Na maioria das vezes, não é lesão: é a **pseudossubluxação**, uma variante normal causada pela frouxidão ligamentar.\n\n**O tamanho do problema.** O Rockwood and Wilkins (10ª ed., cap. 21) descreve a pseudossubluxação de C2 sobre C3 (às vezes C3 sobre C4) de **até 3 mm**, presente até cerca de **11 anos**, em até 20% das crianças.\n\n**Como Swischuk e Rowe separam o normal do patológico.** Traça-se uma linha unindo a **cortical anterior dos processos espinhosos de C1 e C3** (a linha espinolaminar posterior). A cortical anterior do espinhoso de **C2** deve ficar a **até 3 mm** dessa linha. Mais que isso sugere **subluxação verdadeira**.\n\n**Outras variantes que enganam.** A tabela de variantes normais do capítulo inclui a sincondrose na base do odontoide (parece fratura), a cunha anterior normal dos corpos vertebrais e o ADI de até 4,5 mm.\n\n**Na prova:** linha de Swischuk = **pseudossubluxação C2-C3**.\n\nO resumo de coluna cervical da criança traz a linha e a tabela de variantes normais.",
-  "correta": "**A: pseudo-luxação C2-C3.** A linha espinolaminar de C1 a C3 mostra se o espinhoso de C2 está a até 3 mm dela (pseudossubluxação) ou além (subluxação verdadeira).",
+  "conceito": "É a mesma pergunta do TARO 2020, com a linha chamada de espinolaminar. O nome descreve bem o traçado: ela passa pelos espinhosos e lâminas.\n\nPelo Rockwood and Wilkins' Fractures in Children (cap. 21), a linha de SWISCHUK e ROWE vai da **cortical anterior do espinhoso de C1** à do **espinhoso de C3**; a de **C2** deve ficar **a até 3 mm**. Ela serve para distinguir a **pseudossubluxação** fisiológica de C2 sobre C3, comum na criança até cerca de 11 anos (prevalência de até 20% em C2-C3), da subluxação verdadeira (Fig. 21-1).\n\nPor que a pseudossubluxação existe? Pela mesma hipermobilidade que leva as lesões da criança para o alto: facetas horizontais e ligamentos frouxos deixam o corpo de C2 deslizar na flexão, sem lesão. Os arcos posteriores, porém, ficam alinhados, e é isso que a linha confere.\n\nAs outras alternativas têm outras ferramentas no capítulo: o deslocamento do odontoide se mede pelo ADI; a luxação atlanto-occipital, o intervalo côndilo-C1 na tomografia.",
+  "correta": "**A) pseudo-luxação C2C3.** A linha espinolaminar de SWISCHUK avalia a pseudossubluxação de C2 sobre C3 (Rockwood and Wilkins' Fractures in Children, cap. 21, Fig. 21-1).",
   "incorretas": {
-   "B": "**A instabilidade rotatória atlantoaxial envolve C1 sobre C2, num plano rotacional.** A linha de Swischuk é traçada no perfil para avaliar o deslizamento de C2 sobre C3.",
-   "C": "**O deslocamento do odontoide é avaliado pelo intervalo atlanto-dental (ADI)**, normal até 4,5 mm na criança. A linha de Swischuk olha os espinhosos de C1 a C3.",
-   "D": "**O deslocamento atlanto-occipital é avaliado pelo intervalo côndilo-C1 (CCI) na tomografia.** Fica acima de C1, fora da linha de Swischuk."
+   "B": "**A instabilidade rotatória atlantoaxial** não se mede pela linha de SWISCHUK.",
+   "C": "**O deslocamento anterior do odontoide** se avalia pelo ADI (até 4,5 a 5 mm na criança).",
+   "D": "**O deslocamento atlanto-occipital** se diagnostica pelo intervalo côndilo-C1 na tomografia."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Imagem e variantes normais."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seções Upper Cervical Spine e Spondylolysis and Spondylolisthesis, Fig. 21-1",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Imagem e variantes normais"
-     ],
-     "blocos": [
-      "imagem-e-variantes-normais-c95c9882",
-      "imagem-e-variantes-normais-6d2318e9",
-      "imagem-e-variantes-normais-cac0827f"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "2ec4484476e66d374bda9b7a1984fd5898e49eb5a9f174a5ab0ebd8c0010cf99"
-    }
-   ],
-   "questaoSha256": "39f22474616f718c36eff3d2461313d7fd5b1878efa67501d8dac8a5d0bc8068",
-   "comentarioSha256": "c13dd9c838c08f4ab716b2d3d9c4492b09ad54528fd62dc118a460dabb12615c"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-21-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21, Fig. 21-1. Pseudossubluxação de C2 sobre C3 em flexão: o corpo de C2 parece deslocado sobre C3, mas o arco posterior de C2 fica alinhado na linha que une os arcos posteriores de C1 e C3 (linha de SWISCHUK e ROWE).",
+    "largura": 1160,
+    "altura": 1160
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0852": {
   "conceito": "**Luxação cirúrgica do quadril de Ganz.** É uma técnica que permite deslocar a cabeça femoral do acetábulo, com visão de 360 graus da cabeça e do acetábulo, **sem comprometer a irrigação** da cabeça femoral.\n\n**Fundamento anatômico.** A cabeça femoral é irrigada principalmente pelo **ramo profundo da artéria circunflexa femoral medial**, que passa posteriormente, sobre o obturador externo, e dá origem aos **vasos retinaculares posterossuperiores**, que sobem pelo colo dentro do retináculo posterior até a cabeça.\n\n**Pontos-chave da técnica.**\n1. Via lateral com **osteotomia digástrica (trocantérica)** do trocânter maior, mantendo presos o glúteo médio e o vasto lateral; o fragmento é deslocado anteriormente.\n2. Preservação do **obturador externo** e dos rotadores externos curtos, que protegem o ramo profundo da circunflexa medial.\n3. Capsulotomia em Z anterior.\n4. Luxação anterior com flexão e rotação externa.\n\n**Uso na epifisiólise grave (modificação de Dunn).** Permite desenvolver um **retalho retinacular** que protege os vasos posteriores, ressecar o calo posterior do colo e reposicionar a epífise sobre o colo (realinhamento subcapital), corrigindo a deformidade com baixo risco de necrose quando bem executada.\n\n**Outras indicações.** Impacto femoroacetabular complexo, tumores, fraturas da cabeça femoral, sequelas de Perthes.\n\n> Ganz: osteotomia trocantérica e preservação do obturador externo para proteger os vasos retinaculares posteriores.",
@@ -23971,31 +23853,7 @@
   "referencias": [
    "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Junção occipitocervical."
   ],
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Junção occipitocervical"
-     ],
-     "blocos": [
-      "juncao-occipitocervical-c8308246",
-      "juncao-occipitocervical-cac0f2e4"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "18aba2c2d965e5954e7ee548d4729a2747fef5c9bfdb6c56499dd91196cb84e0"
-    }
-   ],
-   "questaoSha256": "cbf3821324f55aaad61447d1186e157baed12b6f707b316226780641e5d1f612",
-   "comentarioSha256": "eb332c49370b051b1b42d37b889bfc98ec736004f458db0bf0cf061806f8653a"
-  }
+  "geradoEm": "2026-10-28"
  },
  "pediatria-1081": {
   "conceito": "Na criança, nem todo pedacinho de osso ao lado do maléolo é fratura: os ossículos acessórios são a grande armadilha da radiografia do tornozelo.\n\n**O que o capítulo descreve.** Segundo o Rockwood and Wilkins' Fractures in Children (10ª ed., 2025, cap. 30, de Jaime R. Denning), os ossículos acessórios aparecem entre os **6 e 12 anos**: o **os subtibiale**, do lado medial, em **20%** das crianças, e o **os subfibulare**, lateral, em 1%. Eles podem ser confundidos com fratura e, quando lesados, os laterais dão mais sintomas persistentes.\n\n**O contexto clínico.** O mesmo trecho lembra que as **regras de Ottawa** valem acima de 5 anos e que o **exame de baixo risco** de BOUTIS (dor só na fíbula distal abaixo da articulação ou nos ligamentos laterais) dispensa radiografia: nenhuma fratura de alto risco em 381 crianças. A ressonância mostrou que muitos \"SH I da fíbula\" eram **entorses**, e os dois são tratados igual, com órtese ou bota removível por 3 a 4 semanas.\n\n**Na prova:** ossículos acessórios = **6 a 12 anos**; os subtibiale em 20%.\n\nO resumo de fraturas do tornozelo na criança traz os ossículos na seção de fíbula, entorse e exame de baixo risco.",
@@ -27993,546 +27851,253 @@
   "conferido": false
  },
  "pediatria-1240": {
-  "conceito": "Abaixo de **8 anos**, **frouxidão ligamentar, facetas horizontais e cabeça proporcionalmente grande** elevam o fulcro do movimento cervical. Isso explica a concentração das lesões na **cervical alta**, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 21, anatomia e mecanismos).\n\nA coluna infantil é **hipermóvel** nesse contexto. A força aplicada à cabeça e a geometria das articulações não produzem o mesmo padrão que no adolescente ou no adulto. Reconhecer essa diferença ajuda a escolher a região que exige atenção na avaliação do pequeno, sem presumir que a ausência de uma fratura baixa encerre o exame.\n\nO capítulo também relaciona a cabeça grande ao transporte: a prancha comum pode fletir o pescoço, e recomenda recesso occipital ou elevação do tronco para manter neutralidade. Assim, a mesma anatomia que explica o fulcro alto tem consequência prática no posicionamento.\n\n**Na prova:** criança pequena, faceta horizontal e frouxidão levam o raciocínio para cima. Depois dessa faixa, o resumo descreve aproximação ao padrão adulto, não uma regra igual para toda idade.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2021 (`pediatria-0587`), que perguntou por que a lesão cervical abaixo de 8 anos é mais comum no segmento atlantoaxial (maior mobilidade por frouxidão ligamentar). Depois, faça a oficial.",
-  "correta": "Alternativa C. Reúne os três fatores anatômicos e o efeito sobre o fulcro que o resumo apresenta. A resposta é mecânica e relacionada ao desenvolvimento, não apenas uma preferência estatística sem explicação.",
+  "conceito": "Uma criança pequena é, do ponto de vista da coluna, uma cabeça grande apoiada numa haste frouxa. O Rockwood and Wilkins' Fractures in Children (cap. 21) explica com três características por que a lesão abaixo de 8 anos fica no alto:\n- **frouxidão ligamentar**;\n- **facetas horizontais**;\n- **cabeça grande** em relação ao corpo.\n\nA coluna fica **hipermóvel** e o **fulcro do movimento sobe** para C1 a C3. Com o crescimento, as facetas verticalizam e o fulcro desce, e as lesões passam à cervical média e baixa, como no adulto.\n\n**Por que esta questão foi criada.** O TARO 2021 cobrou exatamente essa explicação; a questão traz as três características juntas e os distratores mais comuns (facetas verticais, músculos fortes).",
+  "correta": "**C) a frouxidão ligamentar, as facetas horizontais e a cabeça grande em relação ao corpo levam o fulcro do movimento para o alto.** É a explicação do Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "A": "A fonte descreve facetas horizontais, e não verticais, como parte da hipermobilidade do pequeno. A alternativa troca a geometria que explica o fulcro alto por uma característica diferente.",
-   "B": "O capítulo não atribui o padrão a musculatura proporcionalmente mais forte. A explicação dada é frouxidão, orientação facetária e cabeça grande; usar força muscular como causa substitui o mecanismo apresentado.",
-   "D": "A explicação do resumo não é uma medula curta protegendo o segmento baixo, mas a distribuição mecânica do movimento. O enunciado pede por que o fulcro e as lesões se concentram acima, o que os fatores da alternativa correta esclarecem."
+   "A": "**As facetas da criança são horizontais**, e o corpo vertebral ainda está incompletamente ossificado.",
+   "B": "**A musculatura cervical da criança é pouco desenvolvida**, o que também explica a fratura do enforcado no pequeno.",
+   "D": "**A explicação é biomecânica**, não o comprimento da medula."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Introduction to Cervical Spine Injury",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Anatomia, mecanismos e atendimento inicial"
-     ],
-     "blocos": [
-      "anatomia-mecanismos-e-atendimento-inicial-c53da7ac",
-      "anatomia-mecanismos-e-atendimento-inicial-0012f77d"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "3deb3b24507229289f2f0d3c3e1f07b481aec2d305a81e78fd1778a0974f4650"
-    }
-   ],
-   "questaoSha256": "160a41118e395b0808b03257fd19cedf851b0e0f25c58d767436ba359cc55488",
-   "comentarioSha256": "5c3f3c379b0296ae7e96a7eec15f2e675823298ee2b52b4ca4c0638cac5947f3"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1241": {
-  "conceito": "A linha de **Swischuk e Rowe** une a **cortical anterior dos processos espinhosos de C1 e C3**; a cortical correspondente de **C2** deve ficar a até **3 mm** no esquema do resumo. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 21, imagem e variantes normais).\n\nO objetivo é distinguir a **pseudossubluxação fisiológica de C2–C3** de uma lesão verdadeira. O capítulo descreve a variante até cerca de 11 anos e com translação de até 3 mm. O simples degrau no perfil, isoladamente, não substitui a leitura da linha e do contexto traumático.\n\nOutras medidas da junção craniovertebral usam pontos diferentes. O resumo aborda intervalo côndilo–C1 na tomografia para lesão atlanto-occipital e considera medidas como básio–dente ultrapassadas ou enganosas na criança. Esses métodos não se tornam a linha de Swischuk apenas por pertencerem à avaliação cervical.\n\n**Na prova:** conservar três níveis, C1 e C3 definindo a linha, C2 sendo comparada. Não trocar uma referência entre espinhosos por pontos da base do crânio ou do odontoide.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0851`), que perguntou o que a linha espinolaminar de SWISCHUK avalia (pseudoluxação C2-C3), e do TARO 2020 (`pediatria-0717`), que perguntou o mesmo e está sem gabarito oficial. Depois, faça as oficiais.",
-  "correta": "Alternativa A. Define os marcos vertebrais e a relação de C2 com a linha conforme o resumo. A técnica se dirige à pseudossubluxação C2–C3, em vez de medir primariamente a articulação occipital.",
+  "conceito": "Três milímetros de C2 sobre C3 numa criança de 6 anos podem ser normais. A linha de SWISCHUK e ROWE decide.\n\nPelo Rockwood and Wilkins' Fractures in Children (cap. 21): traça-se a linha da **cortical anterior do espinhoso de C1** à do **espinhoso de C3**; a cortical anterior do espinhoso de **C2** deve ficar **a até 3 mm**. Mais longe, subluxação verdadeira. Na pseudossubluxação, o corpo de C2 desliza, mas o arco posterior continua alinhado com os de C1 e C3 (Fig. 21-1). Ela é comum até cerca de 11 anos.\n\nAs outras medidas das alternativas servem para outras coisas: o intervalo côndilo-C1 (normal abaixo de 3 mm) na tomografia, para a luxação atlanto-occipital; o básio-dente e a razão de POWERS são considerados ultrapassados na criança.\n\n**Por que esta questão foi criada.** TEOT 2021 e TARO 2020 perguntaram o que a linha avalia; esta pergunta como traçá-la.",
+  "correta": "**A) a cortical anterior do processo espinhoso de C1 à de C3; a de C2 deve ficar a até 3 mm dessa linha.** É a linha de SWISCHUK e ROWE no Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "B": "Ponta do odontoide e básio são marcos da junção craniovertebral, não as corticais dos espinhosos C1/C3 da linha pedida. O valor de 12 mm não é um limite de Swischuk apresentado no resumo.",
-   "C": "Básio e opístio pertencem à base craniana. A alternativa não reproduz a linha vertebral C1–C3 e a posição de C2 que definem o método solicitado, independentemente de outras medidas da junção.",
-   "D": "O intervalo côndilo–C1 é estudado no resumo para a luxação atlanto-occipital, com limites próprios na tomografia. Ele não é a linha de Swischuk usada para comparar o espinhoso de C2 com C1 e C3."
+   "B": "**Dente ao básio** é o intervalo básio-dente, que o capítulo considera enganoso na criança.",
+   "C": "**Básio ao opístio** é a referência da razão de POWERS, também ultrapassada na criança.",
+   "D": "**Côndilo a C1** é o CCI, medido na tomografia para a luxação atlanto-occipital."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Imagem e variantes normais; Junção occipitocervical."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Upper Cervical Spine e Fig. 21-1",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Imagem e variantes normais",
-      "Junção occipitocervical"
-     ],
-     "blocos": [
-      "imagem-e-variantes-normais-c95c9882",
-      "juncao-occipitocervical-c8308246"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "1e016823f687cc31849cccc5f0e96c0e1e650971886bdc04895c012c534960d3"
-    }
-   ],
-   "questaoSha256": "bf6ffca8c63caee0318260164add436d2b0a38e670f7b03b6b2923cdcccc91ef",
-   "comentarioSha256": "e9e4a1ce0bdfa9ea11ccba7267e36cbf0716c337a12b289e577fd8fabad5cb3d"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-21-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21, Fig. 21-1. Pseudossubluxação de C2 sobre C3 em flexão: o corpo de C2 parece deslocado sobre C3, mas o arco posterior de C2 fica alinhado na linha que une os arcos posteriores de C1 e C3 (linha de SWISCHUK e ROWE).",
+    "largura": 1160,
+    "altura": 1160
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1242": {
-  "conceito": "Na criança pequena, a **cabeça grande** pode fazer a prancha comum colocar o pescoço em **flexão**. O resumo recomenda **recesso para o occipital ou colchão duplo sob o tronco, com colar**, para manter a posição neutra: alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 21, atendimento inicial).\n\nO apoio deve compensar a proporção entre cabeça e tórax, não acrescentar ainda mais altura sob a cabeça. Isso explica por que o local do acolchoamento importa tanto quanto a presença de uma prancha. A meta é proteger sem impor uma posição inadequada ao segmento suspeito de lesão.\n\nO capítulo descreve maior concentração de lesões altas abaixo dos 8 anos e relaciona cadeirinha voltada para a frente à distração alta em acidentes. O fato de o paciente ter sido retirado do carro não torna uma posição sentada uma estratégia equivalente de transporte para o cenário apresentado.\n\n**Na prova:** adaptar a prancha à anatomia infantil e conservar o colar. Retirar a proteção ou colocar coxim sob a cabeça para “acomodar” o occipital não corresponde à neutralidade que o protocolo procura.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A prancha da criança é uma regra prática, fácil de cobrar e que muda a conduta no atendimento inicial.",
-  "correta": "Alternativa D. Oferece as duas adaptações descritas para manter neutralidade e inclui o colar. A elevação é do tronco, ou há recesso para o occipital, em vez de aumentar o apoio sob a cabeça.",
+  "conceito": "Deitar uma criança de 4 anos numa prancha comum parece seguro, mas a cabeça grande empurra o pescoço para a **flexão**. HERZENBERG mostrou 10 crianças abaixo de 7 anos com angulação ou translação anterior na radiografia só pela prancha comum.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 21, Fig. 21-4) dá duas soluções:\n- prancha com **recesso para o occipital**, onde a cabeça desce;\n- **colchão duplo** sob o tronco e um só sob a cabeça, que sobe o corpo.\n\nAbaixo de **8 anos**, a imobilização deve usar uma delas, com **colar** como complemento. Toda manipulação, inclusive para intubar, supõe coluna instável até prova em contrário.\n\n**Por que esta questão foi criada.** O transporte não caiu nas provas do acervo, mas é a primeira decisão no atendimento e cai em provas de trauma.",
+  "correta": "**D) prancha com recesso para o occipital ou com colchão duplo sob o tronco, para manter o pescoço neutro, com colar cervical.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21, Fig. 21-4).",
   "incorretas": {
-   "A": "O coxim sob a cabeça pode acentuar a flexão que o protocolo procura evitar. A fonte coloca o suporte sob o tronco ou cria um recesso occipital na prancha.",
-   "B": "Eliminar o colar não é a solução apresentada. O resumo recomenda adaptação da prancha à proporção da cabeça e manutenção do colar para proteção.",
-   "C": "A posição sentada voltada para a frente não é o transporte protegido recomendado para a suspeita apresentada. O capítulo relaciona essa configuração veicular à distração alta e oferece prancha adaptada com colar como conduta."
+   "A": "**O coxim sob a cabeça** aumenta a flexão que a prancha comum já provoca.",
+   "B": "**Tirar o colar** não corrige a flexão; o colar complementa a prancha adequada.",
+   "C": "**A cadeirinha voltada para a frente** é o cenário da lesão por distração, não um meio de imobilizar."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Initial Management and Transport e Fig. 21-4",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Anatomia, mecanismos e atendimento inicial"
-     ],
-     "blocos": [
-      "anatomia-mecanismos-e-atendimento-inicial-0012f77d",
-      "anatomia-mecanismos-e-atendimento-inicial-c53da7ac",
-      "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "47517029371da7bde07215ffaf2e0d5dc3e784196a54ca258ab9ae9659d5371c"
-    }
-   ],
-   "questaoSha256": "f8fc7bd1dd7c7104f5934a85fe0da0b84f2c71a1d1a073e4a335af696abf53be",
-   "comentarioSha256": "995f93e1de32b92ea1b22294cfb300d93ff48879fc27758db0a4616cbe430dbf"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-21-4.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21, Fig. 21-4. Transporte: A, adulto na prancha comum; B, criança pequena na prancha comum, com a cabeça grande fletindo o pescoço; C, prancha com recesso para o occipital; D, colchão duplo sob o tronco, deixando o pescoço neutro (HERZENBERG).",
+    "largura": 1200,
+    "altura": 1307
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1243": {
-  "conceito": "O adolescente apresenta **todos os critérios negativos de NEXUS** descritos no algoritmo: sem dor na linha média, déficit focal, alteração de consciência, intoxicação ou lesão que distraia. Assim, a coluna pode ser **liberada clinicamente sem radiografia**, alternativa B, segundo o resumo do capítulo (Rockwood and Wilkins, 10ª edição, capítulo 21, imagem).\n\nA decisão depende de conseguir obter um **exame clínico interpretável**. O caso informa que está acordado e colaborativo e detalha os critérios, em vez de pedir que uma regra seja aplicada a qualquer paciente traumatizado sem avaliação. Retirar um desses dados mudaria a comparação com o algoritmo.\n\nO capítulo diferencia esse grupo do gravemente traumatizado, para o qual destaca tomografia, e da ressonância de apoio, que pode ter falsos positivos. Pedir o exame mais sofisticado por rotina não é o objetivo da regra: ela organiza quem pode ser dispensado de imagem no cenário apresentado.\n\n**Na prova:** confirmar cada critério antes de escolher a liberação clínica. A sensibilidade de 99% é a informada para o algoritmo citado, não uma promessa de risco zero para todo paciente ou uma autorização para dispensar exame em quem não atende às condições.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O NEXUS e o papel da tomografia no grave são a base da liberação cervical, e a criança acordada sem nenhum critério é o caso típico de liberação clínica.",
-  "correta": "Alternativa B. Os dados do enunciado correspondem aos cinco critérios negativos do algoritmo. O resumo permite liberar clinicamente esse grupo, sem impor radiografia, tomografia ou ressonância por rotina.",
+  "conceito": "Um adolescente acordado, sem dor na linha média, sem déficit, sem intoxicação e sem outra lesão dolorosa preenche os critérios para liberar a coluna **sem radiografia**.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 21) descreve o algoritmo de consenso (DELPHI) em que os critérios **NEXUS** são centrais: dor na **linha média**, **déficit focal**, **consciência alterada**, **intoxicação** e **lesão que distrai**. Sem nenhum deles, a coluna pode ser liberada com **99%** de sensibilidade num estudo de validação. A tomografia entra no **gravemente traumatizado**; a ressonância, como apoio; as dinâmicas, quando a radiografia neutra é normal e há dúvida ligamentar.\n\n**Por que esta questão foi criada.** O algoritmo de liberação é a base do atendimento e mostra que nem toda criança com trauma precisa de exame.",
+  "correta": "**B) pode ser liberada clinicamente pelos critérios NEXUS, sem radiografia.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "A": "Tomografia é destacada no gravemente traumatizado, não como exigência universal quando o adolescente preenche os critérios clínicos negativos. A alternativa ignora a seleção que NEXUS pretende realizar.",
-   "C": "O algoritmo permite liberação sem imagem nesse cenário e não exige dinâmicas imediatas em todos. O resumo ainda orienta colar e retorno quando a dor impede avaliação dinâmica, em vez de forçar flexão/extensão no pronto-socorro.",
-   "D": "A ressonância é de apoio e pode ter falsos positivos no resumo. Não é uma etapa obrigatória para substituir uma avaliação clínica negativa e interpretável nos critérios da questão."
+   "A": "**A tomografia de rotina** é para o gravemente traumatizado, não para quem preenche o NEXUS.",
+   "C": "**As dinâmicas** não são rotina; entram quando a radiografia é normal e há dúvida ligamentar.",
+   "D": "**A ressonância** é de apoio e tem falsos positivos; não se pede sem indicação."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Imagem e variantes normais."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seções Radiographic Clearance e Plain Radiographs",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Imagem e variantes normais"
-     ],
-     "blocos": [
-      "imagem-e-variantes-normais-08eebd81"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "90065d65753297564042052239f31e9c7ab9b81c2b55439f149c65b1c5c7db26"
-    }
-   ],
-   "questaoSha256": "93311326c9d71a24e84f4a57e0fdd3b939a5ca874098e86d201ab7e0d31d9c51",
-   "comentarioSha256": "347547cc40f4d490358d1fa66b545d98db1abb3cd367cf32c551a7578909c03f"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1244": {
-  "conceito": "Sangue subaracnoide **ao redor do tronco** e **dificuldade de desmame ventilatório** são pistas de luxação atlanto-occipital no resumo. O parâmetro recomendado é o **intervalo côndilo–C1, CCI de Pang, na tomografia**: acima de **3,5 mm** pede ressonância e acima de **4 mm** é forte evidência. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 21, junção occipitocervical).\n\nA medida avalia diretamente a relação occipital com C1. O capítulo descreve valor normal menor que 3 mm e lembra que, entre 0 e 3 anos, a cartilagem aumenta o intervalo. O menino tem 6 anos, e a interpretação continua vinculada ao exame e à imagem, sem transformar um número isolado em toda a avaliação.\n\nA fonte considera **Powers e básio–dente ultrapassados ou enganosos na criança** e prefere CCI. Já o **ADI** é outra medida, da relação atlanto-odontoide: o resumo admite até 4,5–5 mm na criança, diferente dos 3 mm do adulto.\n\n**Na prova:** ligar o método ao nível anatômico. Suspeita occipital–C1 pede CCI na tomografia, não um limiar adulto de ADI ou uma razão radiográfica escolhida por familiaridade.\n\n**Por que esta questão foi criada.** É gêmea do ENARE 2023 (`pediatria-1080`), que perguntou um método auxiliar no diagnóstico radiográfico da luxação occipitocervical na criança e deu como gabarito a razão de POWERS. O capítulo considera a razão de POWERS ultrapassada na criança e usa o CCI. Resolva a oficial sabendo dessa divergência.",
-  "correta": "Alternativa A. Reúne o exame e os limiares do CCI apresentados. A ressonância complementa a avaliação ligamentar quando indicada pelo intervalo e pelo contexto clínico.",
+  "conceito": "O caso tem as duas pistas que o Rockwood and Wilkins' Fractures in Children (cap. 21) dá para a luxação atlanto-occipital: **sangue subaracnoide em volta do tronco encefálico** na tomografia e **dificuldade de desmame** do ventilador depois de um traumatismo craniano.\n\nO diagnóstico se faz na **tomografia**, pelo **intervalo côndilo-C1 (CCI)** de PANG: normal abaixo de **3 mm**; **acima de 3,5 mm**, suspeito, pede **ressonância**; **acima de 4 mm**, **forte evidência**. Mede-se em quatro pontos nas reconstruções sagital e coronal (Fig. 21-2). Entre 0 e 3 anos, a cartilagem invisível pode aumentar o CCI artificialmente.\n\nA **razão de POWERS** e o **intervalo básio-dente** são considerados **ultrapassados ou enganosos** na criança, pelos falsos positivos e negativos. O ADI avalia outra articulação, a atlantoaxial.\n\n**Por que esta questão foi criada.** O ENARE 2023 cobrou um método diagnóstico da luxação occipitocervical e marcou a razão de POWERS; esta questão mostra o que o capítulo atual recomenda.",
+  "correta": "**A) o intervalo côndilo-C1 na tomografia: acima de 3,5 mm pede ressonância e acima de 4 mm é forte evidência.** É o parâmetro do Rockwood and Wilkins' Fractures in Children (cap. 21, Fig. 21-2).",
   "incorretas": {
-   "B": "O resumo reconhece a razão de Powers, mas a considera ultrapassada ou enganosa na criança. Para a suspeita apresentada, privilegia a medida côndilo–C1 na tomografia.",
-   "C": "Básio–dente recebe a mesma ressalva pediátrica no capítulo. Não substitui o CCI recomendado para esclarecer a relação atlanto-occipital do caso.",
-   "D": "ADI avalia outra relação e o limite de 3 mm é o valor adulto citado, enquanto a criança pode ter até 4,5–5 mm no resumo. A opção troca nível, contexto e referência numérica."
+   "B": "**A razão de POWERS** é considerada ultrapassada na criança.",
+   "C": "**O intervalo básio-dente** é enganoso na criança.",
+   "D": "**O ADI** mede a articulação atlantoaxial, não a atlanto-occipital."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Junção occipitocervical; Imagem e variantes normais."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seções Atlanto-Occipital Joint e Atlanto-Occipital Instability, Fig. 21-2",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Junção occipitocervical",
-      "Imagem e variantes normais"
-     ],
-     "blocos": [
-      "juncao-occipitocervical-c8308246",
-      "imagem-e-variantes-normais-c95c9882"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "2b953f0d9d2a57c3681d1fa013ba4cd339821bea17095191f2ee7e893d16e33a"
-    }
-   ],
-   "questaoSha256": "277578a416a82c8c91b68da0870925f9f8f2ff72efad1930d83e65a7fb0a43aa",
-   "comentarioSha256": "991aafece841fb9e8e11d11fe7d3b2997a2275468026b585f1c4a3f5a683247d"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1245": {
-  "conceito": "Na **luxação atlanto-occipital confirmada**, o capítulo recomenda **artrodese posterior rígida do occipital a C2**, alternativa C. A lesão é predominantemente **ligamentar**, e o resumo informa falha do tratamento isolado com halo (Rockwood and Wilkins, 10ª edição, capítulo 21, junção occipitocervical).\n\nAs **cápsulas** são apresentadas como estabilizadores primários; alares e membrana tectória são secundários. A ruptura capsular na ressonância, já dada no enunciado, torna inadequado presumir uma lesão óssea que vá consolidar apenas por estar imobilizada.\n\nO resumo diferencia a construção occipital–C2 de uma fusão **occipital–C1 isolada**, que não recomenda. Também esclarece que C1 não precisa necessariamente ser instrumentado. Assim, extensão da fusão e pontos de instrumentação não são expressões automaticamente equivalentes.\n\n**Na prova:** o diagnóstico já confirmado pede estabilização definitiva segundo o protocolo do capítulo. Colar até a fusão, descrito por 3–4 meses, é proteção complementar após a estabilização, não o mesmo que tratar essa lesão apenas com observação.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O tratamento cirúrgico da luxação atlanto-occipital, e o que não fazer (O-C1 isolada, halo sozinho), completam a pergunta de diagnóstico.",
-  "correta": "Alternativa C. Corresponde à construção posterior rígida occipital–C2 indicada. A prioridade é controlar uma instabilidade ligamentar grave, sem confiar em uma consolidação óssea que o caso não descreve.",
+  "conceito": "A luxação atlanto-occipital é uma lesão **ligamentar**: os estabilizadores primários são as **cápsulas** occipitoatlantais, e os secundários, os alares e a membrana tectória. Ligamento rompido não \"consolida\" como osso.\n\nPor isso, o Rockwood and Wilkins' Fractures in Children (cap. 21) diz que o tratamento sem cirurgia costuma **falhar** (há instabilidade persistente depois do halo) e recomenda a **instrumentação occipitocervical posterior rígida do occipital a C2**. Detalhes:\n- a fusão **occipito-C1 isolada** é tecnicamente difícil e sobrecarrega C1-C2;\n- **instrumentar C1** no construto é **desnecessário**;\n- em C2, parafusos de pars; se não servirem, translaminares;\n- colar até a fusão na tomografia, em geral **3 a 4 meses**; halo de reforço no pequeno.\n\n**Por que esta questão foi criada.** Complementa o diagnóstico pelo CCI com o tratamento, que é o que se faz depois.",
+  "correta": "**C) artrodese occipitocervical posterior com instrumentação rígida do occipital a C2.** É o tratamento recomendado pelo Rockwood and Wilkins' Fractures in Children (cap. 21, Fig. 21-7).",
   "incorretas": {
-   "A": "A alternativa chama a lesão de óssea, enquanto o resumo a define como ligamentar e informa falha do halo isolado. A idade pequena não converte ruptura capsular em uma fratura de bom potencial de consolidação.",
-   "B": "O capítulo afasta a artrodese occipital–C1 isolada e indica extensão a C2. A intenção de preservar movimento não substitui a estabilidade exigida para esse padrão.",
-   "D": "O colar isolado não é o tratamento definitivo descrito para a luxação confirmada. Sobreviver ao trauma inicial não demonstra estabilidade; o resumo mantém a indicação de fusão rígida."
+   "A": "**A lesão é ligamentar**, e o halo deixa instabilidade persistente.",
+   "B": "**A fusão occipito-C1 isolada** é difícil e sobrecarrega a articulação atlantoaxial.",
+   "D": "**Muitas crianças sobrevivem**, mas com estabilização cirúrgica; colar e observação não bastam."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Junção occipitocervical."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Treatment Options for Atlanto-Occipital Instability e Fig. 21-7",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Junção occipitocervical"
-     ],
-     "blocos": [
-      "juncao-occipitocervical-c8308246"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "71b2db0479507897b07a352af8f6bd67b25db426a9c2a2d6ed2bf6e33404d6da"
-    }
-   ],
-   "questaoSha256": "a8755dc6057d6d494c0c335ef0a35d36b40c3c7a16addf91a7452f7d1cf291d0",
-   "comentarioSha256": "3173771ab1a0dad4075f1dfdcef3f47b05916ab10e84a6c8cf1d018c3787abc8"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1246": {
-  "conceito": "A **avulsão óssea** do ponto de fixação do ligamento transverso corresponde ao **Dickman II**, para o qual o resumo apresenta tratamento com **halo** e sucesso de cerca de **75%**. É a alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 21, atlas e ligamento transverso).\n\nA distinção central é entre o **ligamento rompido em sua substância** e o **fragmento ósseo avulsionado**. No tipo I, ruptura intrínseca, o capítulo indica artrodese C1–C2. No II, o componente ósseo muda a estratégia para imobilização com halo. Não basta dizer que toda lesão do transverso deve ter o mesmo tratamento.\n\nNa fratura de Jefferson, o resumo destaca tomografia para a configuração óssea e ressonância para o ligamento. A carga axial do mergulho explica o contexto, mas a imagem fornecida no enunciado já define qual categoria de lesão do transverso será usada.\n\n**Na prova:** ruptura intrínseca é I; avulsão óssea é II. Os 75% são o valor do tratamento com halo apresentado pelo resumo, sem transformar essa proporção em garantia para o indivíduo.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2009 (`pediatria-0770`), que perguntou qual lesão de ligamento produz instabilidade C1-C2 na fratura de JEFFERSON da criança (o transverso; a oficial está sem gabarito, e o capítulo sustenta essa resposta). Depois, faça a oficial.",
-  "correta": "Alternativa D. Mantém juntos o tipo II, o caráter ósseo da avulsão e a estratégia com halo. O número de sucesso pertence a esse tratamento no resumo, não à fusão do tipo I.",
+  "conceito": "Na fratura de JEFFERSON, o tratamento depende do **ligamento transverso**, e DICKMAN separou dois jeitos de ele falhar:\n- **tipo I**: ruptura **intrínseca**, no meio do ligamento, que não cicatriza bem: **artrodese C1-C2**;\n- **tipo II**: **avulsão óssea** do tubérculo na massa lateral de C1, que consolida como fratura: **halo**, com sucesso em **75%**.\n\nO caso descreve avulsão óssea, logo tipo II. O Rockwood and Wilkins' Fractures in Children (cap. 21) lembra que a maioria das fraturas do atlas é estável e vai com órtese por cerca de 8 semanas; a cirurgia só entra com rotura documentada do transverso e subluxação C1-C2 importante. A regra de SPENCE é questionada; a ressonância avalia o ligamento.\n\n**Por que esta questão foi criada.** O TARO 2009 cobrou o ligamento transverso; DICKMAN é o passo seguinte.",
+  "correta": "**D) tipo II, halo-colete, com sucesso em cerca de 75%.** É a classificação de DICKMAN no Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "A": "Artrodese C1–C2 é a estratégia descrita para ruptura intrínseca tipo I. O caso informa avulsão óssea, o critério que o coloca no II e muda a comparação de tratamento.",
-   "B": "Além de classificar a avulsão como I, oferece colar macio por 2 semanas, que não é o protocolo apresentado para nenhuma dessas lesões do transverso. O tipo I é discutido como indicação de artrodese.",
-   "C": "Reconhece o tipo II, mas troca o halo pela fusão occipital–C2, empregada em outro nível de instabilidade no capítulo. O contexto é uma avulsão do transverso de C1, não uma luxação atlanto-occipital confirmada."
+   "A": "**O tipo I é a ruptura intrínseca**, não a avulsão óssea.",
+   "B": "**O tipo I** é a ruptura intrínseca e vai para artrodese, não colar macio.",
+   "C": "**Occipito-C2** é o tratamento da luxação atlanto-occipital, não do JEFFERSON."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: C1 e C2: atlas, odontoide e enforcado; Junção occipitocervical."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Classification of Fractures of the Atlas (DICKMAN)",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "C1 e C2: atlas, odontoide e enforcado",
-      "Junção occipitocervical"
-     ],
-     "blocos": [
-      "c1-e-c2-atlas-odontoide-e-enforcado-9ffea837",
-      "juncao-occipitocervical-c8308246"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "d1d53e447c055030a3d3f63fa892dc264da4ebe84a2c696c096b8c9c3185a603"
-    }
-   ],
-   "questaoSha256": "0a7d442533a8d3d4446d7374236cd0951352dd83a4ab0695db74f04bd473bb25",
-   "comentarioSha256": "9d8133fe3e1d4136d5cbcb516216583fd86cacbe52a6642e079c3347ee691f17"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1247": {
-  "conceito": "Um bebê com dor no pescoço e uma lucência nos pedículos de C2. Pode ser a fratura do enforcado, pode ser uma sincondrose persistente, e pode ser sinal de maus-tratos. O capítulo ensina a separar e a tratar.\n\n**A lesão.** Fratura bilateral da **pars interarticular de C2**, ou **espondilolistese traumática de C2**. Provavelmente é **mais frequente na criança pequena**, pela **cabeça desproporcionalmente grande** e pela **musculatura pouco desenvolvida**. **Maus-tratos devem ser afastados**. Mecanismo: **hiperextensão forçada com carga axial**. A criança tem dor e resiste a mexer a cabeça; deve haver história de trauma (Rockwood crianças, 10ª ed., cap. 21, Fig. 21-12).\n\n**Fratura ou sincondrose?** A radiografia mostra **lucência anterior aos pedículos** do áxis, em geral com leve deslizamento de C2 sobre C3. É preciso ter certeza de que não é uma **sincondrose persistente**. A **espondilólise congênita** tem falha **simétrica**, de **bordas corticais lisas e bem definidas**, **sem edema pré-vertebral** e **sem instabilidade**, às vezes com pequenos focos de ossificação na falha; na tomografia, fica no nível da **sincondrose neurocentral**; a ressonância **não mostra edema**.\n\n**A classificação.** EFFENDI, modificada por LEVINE e EDWARDS: I (pars bilateral, deslizamento menor que 3 mm, disco e ligamentos C2-C3 íntegros, estável); II (lesão discoligamentar C2-C3, instável); IIa (pouco desvio, angulação grave, flexão-distração); III (com luxação facetária C2-C3, muito instável). É do adulto e pode não se aplicar bem à criança.\n\n**O tratamento.** Fratura **estável**: **Minerva, halo ou órtese cervical por 8 a 12 semanas** (PIZZUTILLO: quatro de cinco consolidaram). Sem consolidação ou com instabilidade: artrodese anterior (discectomia e fusão C2-C3) ou posterior (C1 a C3).\n\n**Por que esta questão foi criada.** É uma questão de projeção. A fratura do enforcado da criança pequena reúne mecanismo, diagnóstico diferencial com a sincondrose e a ligação com maus-tratos.\n\n> **Na prova:** enforcado na criança = **hiperextensão e carga axial**, mais comum no **pequeno** (cabeça grande, músculo fraco), **afastar maus-tratos**; congênita = falha **simétrica, lisa, sem edema**; estável = imobilizar **8 a 12 semanas**.",
-  "correta": "**B: o mecanismo é hiperextensão com carga axial, é preciso afastar maus-tratos e a fratura estável trata-se com imobilização por 8 a 12 semanas.** São os três pontos do capítulo para a fratura do enforcado na criança (Rockwood crianças, 10ª ed., cap. 21).",
+  "conceito": "A fratura do enforcado é a fratura bilateral da **pars** de C2. Na criança pequena, o Rockwood and Wilkins' Fractures in Children (cap. 21) diz que ela é provavelmente **mais frequente** que no maior, pela cabeça grande e pela musculatura fraca, e que é obrigatório **afastar maus-tratos**.\n\n- **Mecanismo**: hiperextensão forçada com **carga axial**.\n- **Imagem**: lucência anterior aos pedículos de C2, em geral com deslizamento de C2 sobre C3.\n- **Diagnóstico diferencial**: a **sincondrose persistente** (espondilólise congênita), com falha **simétrica**, bordas **lisas**, sem edema pré-vertebral e sem instabilidade.\n- **Tratamento**: a estável vai com MINERVA, halo ou órtese por **8 a 12 semanas**; pseudartrose ou instabilidade, artrodese.\n\nLEVINE e EDWARDS é do adulto e pode não se aplicar bem à criança.\n\n**Por que esta questão foi criada.** É a lesão cervical da criança mais ligada a maus-tratos.",
+  "correta": "**B) o mecanismo é hiperextensão com carga axial, é preciso afastar maus-tratos e a fratura estável trata-se com imobilização por 8 a 12 semanas.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "A": "**Ao contrário.** A fratura provavelmente é mais frequente na criança pequena justamente pela cabeça grande e pela musculatura pouco desenvolvida.",
-   "C": "**Mistura os sinais.** Falha simétrica de bordas lisas sugere espondilólise congênita, que não tem edema pré-vertebral; o edema fala a favor de fratura.",
-   "D": "**Não é sempre cirúrgica.** A fratura estável se trata com imobilização; a cirurgia fica para pseudartrose ou instabilidade documentada, e a classificação do adulto pode não se aplicar bem à criança."
+   "A": "**É mais frequente no pequeno**, justamente pela musculatura fraca.",
+   "C": "**Falha simétrica, lisa e sem edema** sugere espondilólise congênita, não fratura.",
+   "D": "**A estável não se fixa**, e LEVINE e EDWARDS é uma classificação do adulto."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Hangman's Fracture (Fig. 21-12)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Hangman's Fracture e Fig. 21-12",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-27",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1248": {
-  "conceito": "Na criança pequena, a fratura do odontoide passa pela **sincondrose dentocentral**, equivalendo a **Salter-Harris I**; essa sincondrose fecha por volta de **7–9 anos**. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 21, odontoide).\n\nO capítulo situa a idade média em cerca de **4 anos** e associa a lesão à cadeirinha voltada para a frente. A área de união ainda presente nessa idade muda o local do traço em relação às classificações familiares do adulto. Por isso, começar pela idade e pelo desenvolvimento é mais útil que aplicar imediatamente o tipo I adulto da ponta do dente.\n\nO resumo usa a classificação de Hosalkar para a passagem pela sincondrose e os graus de desvio. Também descreve consolidação melhor que no adulto, redução em extensão e imobilização com controle em 8 semanas; padrões instáveis exigem estabilização posterior C1–C2. Não há uma indicação universal de parafuso anterior para toda fratura desse grupo.\n\n**Na prova:** 4 anos, sincondrose ainda aberta e lesão tipo I fisária. Separar o nível do traço, o grau de instabilidade e o tratamento evita atribuir pseudartrose alta por analogia automática com o adulto.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2016 (`pediatria-0605`), que perguntou o tipo de SALTER-HARRIS da fratura do odontoide na criança (tipo I). Depois, faça a oficial.",
-  "correta": "Alternativa C. Identifica a união dentocentral, o intervalo de fechamento e a equivalência fisária descritos. Esses elementos correspondem ao desenvolvimento da criança de 4 anos do caso.",
+  "conceito": "Aos 4 anos, a **sincondrose dentocentral** ainda está aberta (ela ossifica por volta dos **7 a 9 anos**), e o odontoide quebra por ela. O Rockwood and Wilkins' Fractures in Children (cap. 21) compara a lesão a uma **SALTER-HARRIS I**.\n\nO cenário também é típico: o odontoide tem idade média de 4 anos, e ODENT relatou 8 de 15 fraturas em acidentes de carro com a criança na **cadeirinha voltada para a frente**, pela flexão súbita da cabeça grande. A consolidação na criança é melhor que no adulto, e a maioria vai com redução em extensão quando necessária e imobilização. HOSALKAR classifica pelo desvio na sincondrose (IA, IB, IC) ou acima dela (II).\n\n**Por que esta questão foi criada.** O TARO 2016 cobrou a SALTER-HARRIS I; o caso mostra o cenário clínico.",
+  "correta": "**C) ocorre pela sincondrose dentocentral, que fecha por volta dos 7 a 9 anos, e equivale a uma lesão fisária SALTER-HARRIS I.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "A": "A pergunta trata da lesão pela sincondrose da criança pequena, não da ponta do odontoide como o tipo I adulto. A alternativa importa outra localização antes de considerar a união ainda aberta.",
-   "B": "O resumo coloca a lesão na sincondrose e não exige parafuso anterior para toda apresentação. A estratégia depende da estabilidade, com imobilização em alguns casos e estabilização posterior nos instáveis.",
-   "D": "A idade média apresentada é de cerca de 4 anos, e a consolidação é descrita como melhor que no adulto. A alternativa inverte a distribuição etária e o comportamento evolutivo do capítulo."
+   "A": "**A fratura da ponta na inserção do alar** é o tipo 1 do adulto, rara.",
+   "B": "**O parafuso anterior não é a regra** na criança; a maioria consolida com imobilização.",
+   "D": "**É relativamente comum na criança pequena** (idade média de 4 anos) e consolida bem."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: C1 e C2: atlas, odontoide e enforcado."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seções Introduction e Mechanism of Odontoid Fracture, Tabela 21-1",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "C1 e C2: atlas, odontoide e enforcado"
-     ],
-     "blocos": [
-      "c1-e-c2-atlas-odontoide-e-enforcado-cc93063a"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "7c792aa680f2444beaa3922964c914273034d87d0385186362f42b67ec225f67"
-    }
-   ],
-   "questaoSha256": "6fcb7ad7589e5028377e2c6c222418ebd7d6749f5837934c50d5e6b07d1b5bd3",
-   "comentarioSha256": "e4da3bd727bc2753ef054b031f7442b8e9112eeb6c594735f9a881c565951842"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-21-t1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21, Tabela 21-1 (HOSALKAR). Fratura do odontoide na criança com a sincondrose aberta: tipo I, pela sincondrose (IA desvio menor que 10%, IB de 10% a 100%, IC maior que 100%); tipo II, acima da sincondrose.",
+    "largura": 1200,
+    "altura": 763
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1249": {
-  "conceito": "Na **cervical baixa, C3–C7**, a fratura mais comum descrita é a **compressão**; com carga axial de alta energia, o padrão destacado é a **explosão**. É a alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 21, cervical baixa).\n\nA pergunta combina **frequência** e **mecanismo**, não dois nomes intercambiáveis. O resumo associa compressão a flexão com carga axial e descreve a explosão como lesão de alta energia para a qual a tomografia avalia retropulsão. Diferenciar a forma do corpo e a relação com o canal integra o raciocínio, além de reconhecer o trauma.\n\nO capítulo separa ainda a luxação facetária, mais própria do adolescente, e a importância do complexo discoligamentar. Já a fratura do **enforcado fica em C2**, fora do segmento C3–C7 solicitado. É possível errar a questão escolhendo uma lesão cervical verdadeira, mas do nível errado.\n\n**Na prova:** confirmar o segmento e depois responder às duas metades: mais comum, compressão; carga axial de alta energia, explosão. Lesão ligamentar e luxação não devem substituir o nome da fratura que o capítulo pede.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2023 (`pediatria-0576`), que perguntou o que a carga axial produz na lesão cervical baixa da criança (fratura por explosão). Depois, faça a oficial.",
-  "correta": "Alternativa D. Mantém o padrão mais frequente e a associação mecânica descritos na seção pediátrica. A segunda resposta é explosão, não simplesmente qualquer lesão causada por força axial.",
+  "conceito": "Na cervical baixa, o Rockwood and Wilkins' Fractures in Children (cap. 21) descreve duas fraturas do corpo vertebral pela carga axial, separadas pela energia e pela flexão:\n- **compressão**: a **mais comum** da coluna subaxial da criança, por **flexão com carga axial**; cunha anterior, coluna anterior, estável, colar por 3 a 6 semanas;\n- **explosão**: rara, por **carga axial de alta energia**; o muro posterior pode recuar para o canal.\n\nA luxação facetária vem de hiperflexão, hiperextensão ou rotação, e a lesão ligamentar posterior, de flexão ou distração. O enforcado é de C2, não da cervical baixa.\n\n**Por que esta questão foi criada.** O TEOT 2023 cobrou a explosão pela carga axial; esta junta a fratura mais comum.",
+  "correta": "**D) fratura por compressão e fratura por explosão.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "A": "A luxação facetária não é a fratura mais comum nomeada nessa seção, e a carga axial de alta energia é ligada à explosão. A opção troca as duas partes da associação solicitada.",
-   "B": "O complexo ligamentar importa para a estabilidade, mas a pergunta pede o padrão de fratura predominante e a lesão da carga axial. A fonte responde compressão e explosão, não lesão ligamentar e luxação facetária.",
-   "C": "O enforcado é lesão da pars de C2, acima da cervical baixa C3–C7. A opção erra a localização da primeira metade e troca a explosão da alta energia por compressão na segunda."
+   "A": "**A luxação facetária não é a mais comum**, e a carga axial de alta energia produz explosão.",
+   "B": "**Nenhuma das duas** é a mais comum nem a da carga axial.",
+   "C": "**O enforcado é de C2**, fora da cervical baixa."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Cervical baixa (C3 a C7); C1 e C2: atlas, odontoide e enforcado."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seções Compression Fracture e Burst Fracture",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Cervical baixa (C3 a C7)",
-      "C1 e C2: atlas, odontoide e enforcado"
-     ],
-     "blocos": [
-      "cervical-baixa-c3-a-c7-d1365fab",
-      "c1-e-c2-atlas-odontoide-e-enforcado-0f44c502"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "346fe7fdebceae9e8c0fbac487933ad77c3aff0b6f5d39452a9c0e30bfe6a3e5"
-    }
-   ],
-   "questaoSha256": "d3bc61ce0aa52e0054f2f7fb6f446aa7ac290eb4c17131906ce4db52b6d38082",
-   "comentarioSha256": "6a39210359be4db8b38141e6652171f76c93def0eb35b8b7fe2670323cc8b1d6"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1250": {
-  "conceito": "A **cunha anterior normal**, o **ADI de até 4,5 mm** e o **alargamento de partes moles pelo choro** aparecem na lista de variantes que podem imitar lesão na criança, alternativa A. Reconhecê-las evita aplicar automaticamente referências adultas ao perfil de um paciente de 5 anos (Rockwood and Wilkins, 10ª edição, capítulo 21, imagem).\n\nO resumo diferencia uma variante de um sinal de instabilidade por **local, medida e contexto**. Não é adequado declarar normal todo degrau ou todo espaço aumentado apenas porque o paciente é criança. O método de Swischuk, o afastamento interespinhoso e o CCI respondem a perguntas anatômicas distintas.\n\nA fonte descreve pseudossubluxação de até 3 mm e põe C2 em relação à linha C1–C3; afastamento de C1–C2 acima de 10 mm indica lesão ligamentar. Na junção occipital, CCI acima de 4 mm fornece forte evidência de lesão, não uma variante de um menino de 5 anos.\n\n**Na prova:** a alternativa correta contém três variantes da tabela, mas o exame continua precisando ser interpretado no trauma real. Normalidade possível de um item não libera automaticamente todo o estudo cervical.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2019 (`pediatria-0638`), que perguntou em que nível a ossificação incompleta mais simula uma fratura por compressão na cervical baixa (C3). O capítulo cita a cunha anterior normal do corpo vertebral da criança, sem apontar o nível.",
-  "correta": "Alternativa A. Reúne achados expressamente listados como imitadores de lesão. O ADI deve ser interpretado por referência pediátrica, e o resumo admite a influência do choro sobre partes moles.",
+  "conceito": "A Tabela 21-2 do Rockwood and Wilkins' Fractures in Children (cap. 21) é uma lista de pegadinhas: achados normais da criança que parecem lesão. Três deles estão na alternativa A:\n- **cunha anterior** normal do corpo vertebral da criança pequena, que parece fratura por compressão;\n- **ADI até 4,5 mm**, que parece instabilidade;\n- **partes moles pré-vertebrais alargadas pelo choro**, que parecem edema ou hematoma.\n\nAs outras alternativas trazem números acima do normal: espinhosos de C1 e C2 afastados mais de 10 mm indicam lesão ligamentar; CCI acima de 4 mm é forte evidência de luxação atlanto-occipital; e 6 mm de C2 sobre C3 com SWISCHUK alterada é subluxação verdadeira.\n\n**Por que esta questão foi criada.** O TARO 2019 cobrou a ossificação incompleta que simula compressão; esta amplia para a lista inteira.",
+  "correta": "**A) cunha anterior do corpo vertebral, ADI de até 4,5 mm e alargamento das partes moles pré-vertebrais pelo choro.** São variantes normais da Tabela 21-2 do Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "B": "Mais de 10 mm entre os espinhosos de C1 e C2 é o sinal de lesão ligamentar apresentado no capítulo. Não pertence à mesma categoria das variantes da tabela.",
-   "C": "CCI de 4,5 mm ultrapassa o limiar de 4 mm de forte evidência para lesão atlanto-occipital. A ressalva cartilaginosa dos muito pequenos não torna essa medida uma variante normal automática na criança de 5 anos.",
-   "D": "6 mm e linha de Swischuk alterada ultrapassam a relação fisiológica de até 3 mm descrita. A opção usa o nome de uma variante conhecida, mas acrescenta medidas que já não correspondem a ela no resumo."
+   "B": "**Mais de 10 mm entre os espinhosos de C1 e C2** indica lesão ligamentar.",
+   "C": "**CCI de 4,5 mm** é forte evidência de luxação atlanto-occipital.",
+   "D": "**6 mm com a linha de SWISCHUK alterada** é subluxação verdadeira."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Imagem e variantes normais; Junção occipitocervical."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), Tabela 21-2 e seção Upper Cervical Spine",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Imagem e variantes normais",
-      "Junção occipitocervical"
-     ],
-     "blocos": [
-      "imagem-e-variantes-normais-6d2318e9",
-      "imagem-e-variantes-normais-c95c9882",
-      "juncao-occipitocervical-c8308246"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "6d0c348e504872a21dad93b9dcea4af24d9db0f4a99e286e56c2921ecf9748d2"
-    }
-   ],
-   "questaoSha256": "db756812eb65321472ccc87805b887b49454425766a81e63e10acdac74053403",
-   "comentarioSha256": "7c0a0546efd6981713f7257bb296dceb85f76b09a1e986a95cc0dbb3852a5e93"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1251": {
-  "conceito": "A soma do **SLIC (Subaxial Cervical Injury Classification)**, classificação da lesão cervical subaxial, é **4 + 2 + 3 = 9**, alternativa B: **luxação facetária com rotação/translação**, complexo discoligamentar rompido e lesão medular incompleta. Como não há compressão persistente, não se acrescenta o ponto adicional (Rockwood crianças, 10ª edição, capítulo 21; tabela da classificação original reproduzida no resumo Rockwood adultos, 10ª edição, capítulo 48).\n\nO SLIC organiza a lesão em **três domínios**, e não em número de facetas luxadas. A tabela do resumo pediátrico fornece os pontos de morfologia, complexo e exame neurológico. A tabela original do resumo adulto explicita a correspondência da **luxação facetária** com a categoria morfológica de 4 pontos, completando a classificação sem importar um tratamento adulto para a criança.\n\nA incompleta vale **3**, e a completa vale **2** no domínio neurológico; o acréscimo por compressão contínua é separado. Uma lesão não pode ser contada ao mesmo tempo como completa e incompleta, nem a presença de duas facetas permite duplicar a morfologia.\n\n**Na prova:** escrever as três parcelas antes de olhar as opções. O total pedido é 9; a ausência expressa de compressão persistente é o dado que impede chegar a 10.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A soma da SLIC permite comparar os domínios e praticar a classificação.",
-  "correta": "Alternativa B. A morfologia soma 4, o complexo roto soma 2 e a lesão incompleta soma 3. Não há o ponto extra de compressão persistente. A classificação é a mesma nos dois resumos consultados; a complementação é de definição morfológica, sem transferência de protocolo cirúrgico.",
+  "conceito": "A escala SLIC soma três notas (Tabela 21-4 do Rockwood and Wilkins' Fractures in Children, cap. 21). Vamos ao caso:\n- **morfologia**: luxação facetária bilateral é **rotação ou translação**: **4**;\n- **complexo discoligamentar**: rompido: **2**;\n- **neurológico**: lesão medular **incompleta**: **3**; sem compressão persistente, nada a somar.\n\nTotal: **9**. A escala foi validada no adulto e orienta a criança, sobretudo o adolescente. Repare que a lesão incompleta vale mais que a completa (2): é a que mais pode ganhar com a descompressão. Na prática, essa luxação vai para redução e artrodese, com ressonância antes para ver hérnia de disco ou fragmento do anel apofisário.\n\n**Por que esta questão foi criada.** A SLIC é a classificação da cervical baixa citada no capítulo e se presta a questões de cálculo.",
+  "correta": "**B) 9.** Rotação ou translação 4, discoligamentar rompido 2 e lesão incompleta 3 (Rockwood and Wilkins' Fractures in Children, cap. 21, Tabela 21-4).",
   "incorretas": {
-   "A": "6 corresponde a 4 + 2, deixando de contar os 3 pontos da lesão medular incompleta. O exame neurológico é um domínio próprio e não pode ser omitido porque os dados ósseos e ligamentares já foram reconhecidos.",
-   "C": "4 contabiliza apenas a categoria morfológica. O caso acrescenta complexo rompido e lesão incompleta, que precisam entrar separadamente na soma.",
-   "D": "12 não resulta das categorias do caso e excede até o teto de 10 do esquema completo apresentado. Não se devem duplicar facetas, somar estados neurológicos incompatíveis ou acrescentar compressão que o enunciado excluiu."
+   "A": "**6** esquece algum componente, provavelmente a lesão incompleta valendo 3.",
+   "C": "**4** é só a morfologia.",
+   "D": "**12** somaria pontos que o caso não tem, como compressão persistente."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Cervical baixa (C3 a C7).",
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Classification of Posterior Ligamentous Disruption e Tabela 21-4",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Cervical baixa (C3 a C7)"
-     ],
-     "blocos": [
-      "cervical-baixa-c3-a-c7-cb68fbf2"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "bb5cd382057fec508c70e7e6b09fad9bb756b8c1b9531b897b36d46c6a17cc5f"
-    },
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Coluna subaxial: classificações e estabilidade"
-     ],
-     "blocos": [
-      "coluna-subaxial-classificacoes-e-estabilidade-c01dd9e0",
-      "coluna-subaxial-classificacoes-e-estabilidade-e22b0f15"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "deb51129432df6c049c1417d2754bed4352e7e2ae45a902078807b21e534ce75"
-    }
-   ],
-   "questaoSha256": "b15a79ad394d28720953072b999f515c28e1f732fbe0071a1d7358453aa94eee",
-   "comentarioSha256": "bd6b9e28eb45796514a8a68d22acfb019960e06f5f47c54fbc90ac0228d5b188"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1252": {
-  "conceito": "O halo segura o pescoço da criança como nenhuma órtese, mas o crânio da criança é fino. O capítulo traz como adaptar e o que esperar.\n\n**A indicação.** Lesões selecionadas, sobretudo da **região craniocervical**. O anel pode ser usado sozinho para **tração** e redução, ou com colete para imobilização definitiva de lesão instável (Rockwood crianças, 10ª ed., cap. 21, Fig. 21-5).\n\n**A idade e a técnica.** O halo pode ser usado na criança **a partir de cerca de 1 ano**, com cuidado pelo crânio imaturo. O osso fino exige **mais pinos, às vezes até oito** (quatro na frente e quatro atrás, evitando a parte mais fina do temporal), e **menor torque** em cada pino. Coletes pré-fabricados existem em vários tamanhos, escolhidos pela circunferência do tórax no processo xifoide.\n\n**As complicações.** Frequentes: numa série pediátrica, **68%**, mas todos usaram o halo até a consolidação ou a artrodese. As mais comuns: **infecção superficial no trajeto do pino** e **afrouxamento do pino**. Menos frequentes: penetração da dura, lesão do nervo supraorbital, cicatrizes feias e infecção profunda.\n\n**As outras órteses.** O colar rígido trata entorses e lesões leves que não se liberam no pronto-socorro (a adesão ao retorno é baixa); órteses moldadas sob medida, de termoplástico leve, podem se estender ao tórax nas lesões baixas.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O halo da criança junta números práticos (idade, número de pinos, torque, taxa de complicações) fáceis de cobrar.\n\n> **Na prova:** halo na criança: a partir de **1 ano**; **mais pinos (até 8)** e **menor torque**; complicações em **68%**, mais comuns **infecção superficial do pino** e **afrouxamento**.",
-  "correta": "**C: pode ser usado a partir de cerca de 1 ano, com mais pinos (até oito) e menor torque, e a complicação mais comum é a infecção superficial no trajeto do pino.** São as adaptações e os riscos descritos no capítulo (Rockwood crianças, 10ª ed., cap. 21).",
+  "conceito": "O halo funciona na criança, mas o crânio fino muda a técnica. O Rockwood and Wilkins' Fractures in Children (cap. 21, Fig. 21-5) diz:\n- pode ser usado a partir de cerca de **1 ano**;\n- com **mais pinos**, até **oito** (quatro na frente e quatro atrás, evitando a parte mais fina do temporal);\n- com **menor torque** em cada pino.\n\nAs complicações são frequentes: **68%** numa série pediátrica, sobretudo **infecção superficial no trajeto do pino** e **afrouxamento**; menos comuns, penetração da dura, lesão do nervo supraorbital, cicatrizes e infecção profunda. Mesmo assim, todos os pacientes da série chegaram à consolidação ou à fusão.\n\n**Por que esta questão foi criada.** O halo da criança tem números próprios, bons de cobrar.",
+  "correta": "**C) pode ser usado a partir de cerca de 1 ano, com mais pinos (até oito) e menor torque, e a complicação mais comum é a infecção superficial no trajeto do pino.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "A": "**Idade e técnica erradas.** O halo pode ser usado a partir de cerca de 1 ano, com mais pinos e menos torque, justamente pelo crânio fino.",
-   "B": "**É complicação rara.** A penetração da dura aparece entre as complicações menos frequentes; as mais comuns são infecção superficial e afrouxamento do pino.",
-   "D": "**São frequentes.** Numa série pediátrica, a taxa de complicações foi de 68%, embora todos tenham terminado o tratamento."
+   "A": "**A partir de 1 ano**, e com mais pinos e menos torque, não o padrão do adulto.",
+   "B": "**A penetração da dura existe, mas é rara**; a mais comum é a infecção superficial.",
+   "D": "**As complicações chegam a 68%**, longe de raras."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seção Nonoperative Treatment of Cervical Spine Injury (Halo Orthoses, Fig. 21-5)"
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Halo Orthoses e Fig. 21-5",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "geradoEm": "2026-10-27",
+  "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1253": {
-  "conceito": "A **metilprednisolona em dose alta é apenas uma opção**, e não tratamento obrigatório, no resumo do capítulo cervical pediátrico. A fonte relata **pouco ou nenhum benefício e mais complicações**, inclusive em crianças: alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 21, corticoide).\n\nO caso coloca o adolescente dentro de uma janela precoce, mas o horário não transforma uma opção em obrigação. A pergunta é sobre o posicionamento do capítulo, e ele não afirma benefício pediátrico comprovado que imponha o medicamento a todos os que chegam nas primeiras horas.\n\nO resumo cita a análise de Caruso com 354 crianças dentro dessa discussão. Esse dado não deve ser ampliado para uma proibição absoluta em toda pessoa menor de 18 anos ou para uso exclusivo nas lesões completas. São regras mais fortes que a orientação “opção” fornecida.\n\n**Na prova:** evitar os dois extremos: obrigatoriedade universal e contraindicação por idade universal. A lesão incompleta continua exigindo o cuidado do trauma e da medula; a controvérsia farmacológica não substitui essa avaliação.\n\n**Por que esta questão foi criada.** É uma questão de projeção. Comparar opção e obrigação no uso do corticoide é o motivo da projeção, com os dados pediátricos do capítulo.",
-  "correta": "Alternativa D. Mantém o grau de recomendação e a limitação de benefício descritos. A apresentação em 3 horas não elimina a incerteza nem autoriza apresentar o corticoide como padrão obrigatório pediátrico.",
+  "conceito": "A metilprednisolona na lesão medular aguda é uma história de recuo. O Rockwood and Wilkins' Fractures in Children (cap. 21) conta:\n- estudos antigos em **adultos** mostraram melhora com dose alta nas primeiras **8 horas**;\n- estudos recentes mostram **pouco ou nenhum benefício** e **mais complicações**, como pneumonia;\n- na criança, poucos estudos; CARUSO, com **354** crianças, viu o corticoide dado de forma irregular e **mais complicações** em quem recebeu.\n\nConclusão: a dose alta é **apenas uma opção**, posição apoiada por consenso multidisciplinar recente. Não é obrigatória nem proibida.\n\n**Por que esta questão foi criada.** É uma mudança de conduta que as provas costumam testar com \"obrigatória nas primeiras 8 horas\".",
+  "correta": "**D) é apenas uma opção de tratamento; estudos recentes mostram pouco ou nenhum benefício e mais complicações, inclusive na criança.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "A": "O capítulo não o torna obrigatório nas primeiras 8 horas nem apresenta benefício pediátrico comprovado como regra geral. A opção converte uma possibilidade controvertida em exigência universal.",
-   "B": "“Apenas opção” também não significa proibição absoluta abaixo de 18 anos. A alternativa impõe um corte etário e uma contraindicação universal que não correspondem à formulação da fonte.",
-   "C": "A fonte não restringe a opção somente à lesão completa. A questão informa uma incompleta, mas o grau de completude não é apresentado como esse gatilho exclusivo de indicação."
+   "A": "**O benefício das 8 horas veio de estudos antigos em adultos**, não confirmados.",
+   "B": "**Não é contraindicada**; é uma opção.",
+   "C": "**O capítulo não restringe à lesão completa.**"
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Órteses, halo, corticoide e cirurgia."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Methylprednisolone",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Órteses, halo, corticoide e cirurgia"
-     ],
-     "blocos": [
-      "orteses-halo-corticoide-e-cirurgia-5b91dc28"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "d44644c953dedb46748713f46dd4490a408f1efceb1d01bd52b097441bdef8e3"
-    }
-   ],
-   "questaoSha256": "f7f9bcbad8d3c9550a91c21ad4b33a7de58ee9b6f021846598be49dc106ce3a9",
-   "comentarioSha256": "88681efd7d6f89c34101dd9157127f2477076da36f61065de1c4badbd5f78479"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1254": {
-  "conceito": "O resumo relaciona **parto pélvico** a lesão **cervical baixa ou torácica alta por tração** e **parto cefálico** a lesão **cervical alta por rotação**. No lactente fora do contexto do parto, destaca maus-tratos como causa importante e majoritária nesse grupo descrito. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 21, mecanismos).\n\nA idade e o contexto mudam a leitura da força. Um bebê hipotônico após parto difícil exige pensar em lesão medular, e não atribuir toda falta de movimento a um problema periférico sem avaliação. Já uma lesão nova meses depois não recebe automaticamente a explicação obstétrica.\n\nNo pequeno, o capítulo cita quedas, acidentes de carro e atropelamentos; no adolescente, esporte e depois carro. Esses padrões não permitem escolher uma causa por hábito sem conferir o estágio de desenvolvimento e a cronologia do caso.\n\n**Na prova:** conservar o par posição de parto–força–nível. A suspeita de maus-tratos no lactente fora do parto exige avaliação, não equivale a comprovação de causa em todo indivíduo.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A sequência de mecanismos por idade, com o detalhe do parto pélvico e cefálico, é o tipo de dado que a prova transforma em alternativa.",
-  "correta": "Alternativa A. Mantém as duas associações obstétricas e a orientação do capítulo para o lactente fora do parto. O contexto temporal é indispensável para não trocar mecanismos de grupos diferentes.",
+  "conceito": "O mecanismo da lesão cervical muda com a idade, e o Rockwood and Wilkins' Fractures in Children (cap. 21) descreve as etapas:\n- **parto pélvico**: **tração**, lesão cervical **baixa** ou torácica alta;\n- **parto cefálico**: **rotação**, lesão cervical **alta**;\n- **lactente fora do parto**: a maioria por **maus-tratos**;\n- criança pequena: quedas, carro, atropelamento, e a **cadeirinha voltada para a frente** com distração alta;\n- adolescente: **esporte**, e depois da idade de dirigir, **acidente de carro**, como no adulto.\n\nNo recém-nascido hipotônico depois de parto difícil, pensar em lesão medular; a lesão óssea é subestimada porque a coluna é quase toda cartilagem.\n\n**Por que esta questão foi criada.** Os mecanismos por idade costumam aparecer trocados em afirmativas.",
+  "correta": "**A) no parto pélvico, a lesão tende a ser cervical baixa ou torácica alta, por tração; no cefálico, cervical alta, por rotação; no lactente fora do parto, a maioria vem de maus-tratos.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
   "incorretas": {
-   "B": "A opção inverte os pares: o resumo associa o pélvico à tração e nível mais baixo, e o cefálico à rotação e cervical alta. Acertar apenas as palavras tração e rotação sem ligá-las ao parto correto não resolve a questão.",
-   "C": "O capítulo não coloca quedas do berço como a maioria das causas nesse grupo fora do parto. Ele destaca maus-tratos no lactente e exige que mecanismo e desenvolvimento sejam compatíveis.",
-   "D": "No adolescente, a fonte dá destaque a esporte e carro, e não a predomínio de maus-tratos com acidentes automobilísticos raros. A opção transfere para outra idade o perfil que o capítulo discute no lactente."
+   "B": "**Está invertido**: pélvico é baixo por tração, cefálico é alto por rotação.",
+   "C": "**No lactente fora do parto**, a maioria das lesões vem de maus-tratos.",
+   "D": "**No adolescente**, esporte e acidentes de carro predominam."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: Anatomia, mecanismos e atendimento inicial."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Mechanism of Injury for Cervical Spine Injury",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Anatomia, mecanismos e atendimento inicial"
-     ],
-     "blocos": [
-      "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "b6bf50b71d5e6302ce6dcb4dcd2152a75bec6f52c7188c88aa11db781069b1fd"
-    }
-   ],
-   "questaoSha256": "ac2a2ba90d826dbbf3372e1a9426d45a7648f1207312122b0e966a80e072a1c9",
-   "comentarioSha256": "12cbd1b63bf473123958a5437342c1cae7c1e8831e0b9d1787d5dee1e1b4dcea"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1255": {
   "conceito": "O **cinto apenas abdominal**, a colisão frontal e a marca horizontal com dor lombar apontam para **flexão–distração, padrão de Chance**, com necessidade de investigar o **abdome**, alternativa B. O resumo informa lesão abdominal em quase metade dos casos desse contexto (Rockwood and Wilkins, 10ª edição, capítulo 22, mecanismos e flexão–distração).\n\nO tronco flete sobre o cinto, com eixo à frente da coluna. O capítulo descreve comprometimento de três colunas e separa **Chance pelo osso** de **Smith pelos ligamentos**. Assim, um relato de cinto não se resume a uma cunha vertebral simples que possa ser avaliada independentemente das partes moles e do abdome.\n\nO resumo diferencia a faixa abdominal dos sistemas com **faixa de ombro ou cinco pontos**, que protegem. A presença de um dispositivo de retenção não demonstra, por si só, que todos os padrões de força foram evitados. A lesão abdominal pode mudar também o tratamento da coluna no protocolo apresentado.\n\n**Na prova:** marca do cinto e dor lombar pedem procurar a combinação de lesão vertebral e abdominal. A proporção quase de 50% pertence ao grupo resumido na fonte, não é uma certeza individual nem uma razão para examinar apenas a coluna.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O mecanismo do cinto e sua associação com lesão abdominal permitem comparar a fratura e os cuidados que não podem ser separados.",
@@ -28641,21 +28206,6 @@
      ],
      "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
      "trechosSha256": "3c23dc6bcb7e170220de35b14fa7fe65a3fab96279e08eb9b0787172c8034187"
-    },
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Anatomia, mecanismos e atendimento inicial"
-     ],
-     "blocos": [
-      "anatomia-mecanismos-e-atendimento-inicial-84a3d4a1"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "b6bf50b71d5e6302ce6dcb4dcd2152a75bec6f52c7188c88aa11db781069b1fd"
     }
    ],
    "questaoSha256": "f3d17af8155e7d45c76ed048e2fb8dbc3b2804fd30feade13328c3131a8f0992",
@@ -29046,21 +28596,6 @@
      ],
      "sha256": "7c9bacedd10aef8f8b2959adc8375e4f78a3ada3a27f09c28fcc48d31ed8ed63",
      "trechosSha256": "b0843c386a6b69affe72b5e7d5376c9f09f1af4c183fc93a6cae05e48cc68b26"
-    },
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "Órteses, halo, corticoide e cirurgia"
-     ],
-     "blocos": [
-      "orteses-halo-corticoide-e-cirurgia-5b91dc28"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "d44644c953dedb46748713f46dd4490a408f1efceb1d01bd52b097441bdef8e3"
     }
    ],
    "questaoSha256": "10070523e7c8f6e7bf2c30553fd105fb7f43f01e8a676239347fb1d7ac90e455",
@@ -32908,6 +32443,54 @@
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation in Children; Peter M. Waters e Kenneth J. Noonan)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Nonoperative Treatment of Type III Monteggia Fracture-Dislocations (Radiographic Evaluation and Immobilization)",
    "Biblioteca OrtoQuestões, resumo Fratura-luxação de MONTEGGIA na criança (rockwoodcriancas10-12-monteggia)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1454": {
+  "conceito": "A fratura do côndilo occipital é rara na criança e quase sempre aparece na tomografia de trauma; quem não faz tomografia pode passar sem diagnóstico. O Rockwood and Wilkins' Fractures in Children (cap. 21) dá os detalhes.\n\n**Quando pedir tomografia** (TULI): déficit isolado de nervo craniano baixo, trauma craniano ou fratura da base do crânio associados, ou dor cervical persistente com radiografias normais. A radiografia simples raramente mostra o côndilo.\n\n**O nervo.** O **hipoglosso** (XII) passa pelo **canal do hipoglosso**, acima do **terço médio do côndilo**, e é o nervo craniano que o capítulo aponta em risco. Os déficits de nervo craniano existem, mas são relativamente raros.\n\n**As classificações**, que se usam juntas:\n- **ANDERSON e MONTESANO**: I impacção (carga axial), II extensão da fratura da base do crânio, III **avulsão** pelo ligamento alar, que pode ser instável se a membrana tectória e o alar do outro lado também romperem;\n- **TULI**: **1** sem desvio, estável; **2A** desviada (2 mm ou mais de separação óssea) mas **estável**, sem sinal de instabilidade; **2B** desviada e **instável**, com instabilidade occipitoatlantoaxial ou lesão ligamentar na radiografia, tomografia ou ressonância.\n\n**Tratamento.** Estáveis (ANDERSON e MONTESANO I e II, TULI 1 e 2A): **colar rígido**. Instáveis (ANDERSON e MONTESANO III, TULI 2B): em geral **halo**. A artrodese occipitocervical é rara e só entra com luxação atlanto-occipital associada.\n\n**Por que esta questão foi criada.** As provas cobraram a luxação occipitocervical, mas não o côndilo; é a lesão vizinha que a banca pode usar com o mesmo cenário de trauma grave.",
+  "correta": "**C: é TULI 2B, instável, em geral tratada com halo; o hipoglosso, cujo canal fica acima do terço médio do côndilo, é o nervo craniano em risco.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21).",
+  "incorretas": {
+   "A": "**Com instabilidade ou lesão ligamentar, é 2B**; o 2A é desviado mas estável.",
+   "B": "**O nervo que o capítulo aponta é o hipoglosso**, pelo canal acima do terço médio do côndilo.",
+   "D": "**A artrodese é rara**, só com luxação atlanto-occipital associada; as estáveis vão com colar e as instáveis com halo."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Occipital Condylar Fractures (ANDERSON e MONTESANO; TULI)",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1455": {
+  "conceito": "O odontoide da criança muda de comportamento quando a **sincondrose dentocentral** fecha, por volta dos **7 a 9 anos**. Antes, a fratura passa pela sincondrose (lesão fisária, SALTER-HARRIS I, classificada por HOSALKAR). Depois, ela segue a classificação do adulto pela localização (Rockwood and Wilkins' Fractures in Children, cap. 21):\n- **tipo 1** (menos de 5%): ponta do dente, na inserção do **alar**;\n- **tipo 2** (mais de 60%): **base** do dente, junto ao corpo de C2;\n- **tipo 3** (30%): **corpo** de C2.\n\n**O tipo 2 é o controverso.** No adulto, a região tem sangue mais pobre e a pseudartrose sem cirurgia é maior, sobretudo no idoso; na criança, a consolidação provavelmente é melhor, embora a literatura seja fraca. Tipo 1 (afastada a luxação atlanto-occipital) e tipo 3 estável costumam ir sem cirurgia; a redução, quando necessária, é em extensão ou leve hiperextensão, e a imobilização (halo, órtese rígida, MINERVA, SOMI) é reavaliada com cerca de 8 semanas.\n\n**Cirurgia.** O **parafuso anterior** do odontoide exige morfologia adequada, **ligamento transverso íntegro** e anatomia que permita o ângulo (sem tórax em barril). Na criança, a **artrodese C1-C2 posterior** é **mais usada** que o parafuso anterior: massas laterais de C1 e pars, pedículo ou translaminar de C2 (HARMS e MELCHER), ou parafusos transarticulares. É o caso da Fig. 21-8: tipo 2 aos 15 anos, transverso íntegro, órtese tentada e, por instabilidade persistente, C1-C2 transarticular.\n\n**Por que esta questão foi criada.** O TARO 2016 cobrou o odontoide da criança pequena (SALTER-HARRIS I) e o TARO 2026, a classificação de HOSALKAR; o adolescente com sincondrose fechada fecha a sequência.",
+  "correta": "**B: classifica-se como no adulto (tipo 2); pode-se tentar órtese rígida, e, se houver instabilidade, a artrodese C1-C2 posterior é mais usada na criança que o parafuso anterior.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 21, Fig. 21-8).",
+  "incorretas": {
+   "A": "**Aos 15 anos a sincondrose já fechou**; a fratura segue a classificação do adulto.",
+   "C": "**O parafuso anterior exige o transverso íntegro**, e na criança a via posterior é mais usada.",
+   "D": "**É o contrário**: a consolidação do tipo 2 é provavelmente melhor na criança; a pseudartrose pesa no adulto mais velho."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Classification e Treatment Options for Odontoid Fracture (Fig. 21-8)",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
+ },
+ "pediatria-1456": {
+  "conceito": "A via posterior mediana é a mais usada para estabilizar a junção craniocervical da criança, e o Rockwood and Wilkins' Fractures in Children (cap. 21) resume as armadilhas dela numa tabela curta:\n- **fusão espontânea** de toda vértebra exposta: na criança, o osso exposto tende a fundir; **não expor** vértebras fora do plano de artrodese;\n- **lesão da artéria vertebral** na dissecção lateral de C1: limitar a dissecção lateral a **8 mm abaixo de 2 anos**, **10 mm de 2 a 8 anos** e **12 mm nas crianças maiores**;\n- correção insuficiente da lordose só por trás: considerar a artrodese anterior primeiro.\n\nA artéria vertebral volta em outros pontos do capítulo. Os **parafusos transarticulares C1-C2** (MAGERL) são biomecanicamente os mais fortes, mas uma **artéria vertebral alta** impede o parafuso em cerca de **11%** dos casos, e o trajeto dela precisa ser estudado dos dois lados antes. A técnica de HARMS e MELCHER (massa lateral de C1 e pars ou pedículo de C2 com hastes) reduz esse risco e dispensa o arco posterior de C1 íntegro. E toda fratura ou subluxação de C1-C2, ou que atinja os forames transversos, pede **angiotomografia**.\n\n**Por que esta questão foi criada.** É um detalhe técnico com números redondos por idade, do tipo que a banca transforma em questão.",
+  "correta": "**D: limitar a dissecção lateral do arco de C1 a 10 mm (8 mm abaixo de 2 anos, 12 mm nos maiores) e não expor vértebras fora da fusão.** São as prevenções do Rockwood and Wilkins' Fractures in Children (cap. 21).",
+  "incorretas": {
+   "A": "**Dissecar até o forame transverso expõe a artéria vertebral** ao risco que se quer evitar.",
+   "B": "**Na criança, a vértebra exposta tende a fundir sozinha**; expõe-se só o que vai ser fundido.",
+   "C": "**O transarticular exige estudar a artéria**: uma vertebral alta o impede em cerca de 11%."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 21, seções Positioning and Approach (Posterior Approach: Pitfalls and Preventions) e C1–C2 Transarticular Instrumentation",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
   "geradoEm": "2026-10-31",
   "conferido": false

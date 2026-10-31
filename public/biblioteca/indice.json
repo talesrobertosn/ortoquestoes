@@ -7883,15 +7883,15 @@
   },
   {
    "id": "rockwoodcriancas10-21-coluna-cervical",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Lesões da coluna cervical na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-   "resumo": "Abaixo de 8 anos a lesão é alta (frouxidão, facetas horizontais, cabeça grande); prancha com recesso occipital; NEXUS; pseudossubluxação C2-C3 e linha de SWISCHUK; luxação atlanto-occipital pelo CCI e artrodese occipital-C2; JEFFERSON e DICKMAN; odontoide pela sincondrose (SALTER-HARRIS I); enforcado e maus-tratos; compressão, explosão e SLIC.",
+   "resumo": "Abaixo de 8 anos a lesão é alta (frouxidão, facetas horizontais, cabeça grande); prancha com recesso occipital; NEXUS e tomografia no trauma grave; pseudossubluxação C2-C3 e linha de SWISCHUK; variantes normais; côndilo occipital (TULI); luxação atlanto-occipital pelo CCI e artrodese occipital-C2; JEFFERSON e DICKMAN; odontoide pela sincondrose (SALTER-HARRIS I) e HOSALKAR; enforcado e maus-tratos; SLIC, compressão, explosão e luxação facetária; halo, metilprednisolona e técnicas de fixação.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 28,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7899,34 +7899,99 @@
      "radar": "fundamento"
     },
     {
-     "id": "anatomia-mecanismos-e-atendimento-inicial",
-     "titulo": "Anatomia, mecanismos e atendimento inicial",
+     "id": "por-que-a-crianca-se-machuca-no-alto",
+     "titulo": "Por que a criança se machuca no alto",
      "radar": "confirmado"
     },
     {
-     "id": "imagem-e-variantes-normais",
-     "titulo": "Imagem e variantes normais",
-     "radar": "confirmado"
-    },
-    {
-     "id": "juncao-occipitocervical",
-     "titulo": "Junção occipitocervical",
-     "radar": "confirmado"
-    },
-    {
-     "id": "c1-e-c2-atlas-odontoide-e-enforcado",
-     "titulo": "C1 e C2: atlas, odontoide e enforcado",
-     "radar": "confirmado"
-    },
-    {
-     "id": "cervical-baixa-c3-a-c7",
-     "titulo": "Cervical baixa (C3 a C7)",
-     "radar": "confirmado"
-    },
-    {
-     "id": "orteses-halo-corticoide-e-cirurgia",
-     "titulo": "Órteses, halo, corticoide e cirurgia",
+     "id": "mecanismos-pela-idade",
+     "titulo": "Mecanismos pela idade",
      "radar": "oportunidade"
+    },
+    {
+     "id": "atendimento-inicial-e-transporte",
+     "titulo": "Atendimento inicial e transporte",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "liberar-a-coluna-nexus-tomografia-e-ressonancia",
+     "titulo": "Liberar a coluna: NEXUS, tomografia e ressonância",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "variantes-normais-e-a-pseudossubluxacao",
+     "titulo": "Variantes normais e a pseudossubluxação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-leitura-por-nivel-cci-adi-e-arteria-vertebral",
+     "titulo": "A leitura por nível: CCI, ADI e artéria vertebral",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fratura-do-condilo-occipital",
+     "titulo": "Fratura do côndilo occipital",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "luxacao-atlanto-occipital",
+     "titulo": "Luxação atlanto-occipital",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fratura-do-atlas-jefferson",
+     "titulo": "Fratura do atlas (JEFFERSON)",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fratura-do-odontoide",
+     "titulo": "Fratura do odontoide",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fixacao-c1-c2-e-occipitocervical",
+     "titulo": "Fixação C1-C2 e occipitocervical",
+     "radar": "clinico"
+    },
+    {
+     "id": "fratura-do-enforcado",
+     "titulo": "Fratura do enforcado",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "cervical-baixa-slic-e-complexo-discoligamentar",
+     "titulo": "Cervical baixa: SLIC e complexo discoligamentar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "compressao-e-explosao",
+     "titulo": "Compressão e explosão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "luxacao-facetaria-e-espondilolistese-subaxial",
+     "titulo": "Luxação facetária e espondilolistese subaxial",
+     "radar": "clinico"
+    },
+    {
+     "id": "orteses-halo-e-metilprednisolona",
+     "titulo": "Órteses, halo e metilprednisolona",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "cirurgia-intubacao-posicao-e-vias",
+     "titulo": "Cirurgia: intubação, posição e vias",
+     "radar": "clinico"
+    },
+    {
+     "id": "tres-casos-para-fixar",
+     "titulo": "Três casos para fixar",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -7940,26 +8005,31 @@
     "pediatria-0717",
     "pediatria-0638",
     "pediatria-1080",
-    "pediatria-0605",
     "pediatria-0770",
+    "pediatria-0605",
+    "trauma-0989",
     "pediatria-0576"
    ],
    "treino": [
     "pediatria-1240",
-    "pediatria-1242",
     "pediatria-1254",
-    "pediatria-1241",
+    "pediatria-1242",
     "pediatria-1243",
+    "pediatria-1241",
     "pediatria-1250",
+    "pediatria-1454",
     "pediatria-1244",
     "pediatria-1245",
     "pediatria-1246",
-    "pediatria-1247",
     "pediatria-1248",
-    "pediatria-1249",
+    "pediatria-1455",
+    "pediatria-1456",
+    "pediatria-1247",
     "pediatria-1251",
+    "pediatria-1249",
     "pediatria-1252",
-    "pediatria-1253"
+    "pediatria-1253",
+    "pediatria-1268"
    ],
    "subtemas": [
     "Trauma da coluna na criança",

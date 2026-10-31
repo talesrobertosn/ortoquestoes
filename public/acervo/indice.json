@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-10-31T16:38:32-03:00",
-  "total": 8324,
+  "geradoEm": "2026-10-31T16:58:43-03:00",
+  "total": 8327,
   "temas": [
     {
       "slug": "mao",
@@ -49,7 +49,7 @@
       "slug": "pediatria",
       "nome": "Ortopedia pediátrica",
       "arquivo": "temas/pediatria.json",
-      "total": 1315
+      "total": 1318
     },
     {
       "slug": "tumores",
@@ -125990,6 +125990,55 @@
       "s": [
         228,
         242
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1454",
+      "t": 7,
+      "s": [
+        237,
+        218
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1455",
+      "t": 7,
+      "s": [
+        237
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1456",
+      "t": 7,
+      "s": [
+        237
       ],
       "p": null,
       "a": null,

@@ -20753,41 +20753,27 @@
   "conferido": false
  },
  "trauma-0989": {
-  "conceito": "Na classificação de **Hosalkar**, a fratura do odontoide **acima da sincondrose** é **tipo II**, alternativa D. O grupo **tipo I** passa pela própria sincondrose e se divide em IA, IB e IC; esses sufixos não mudam o nível do traço para acima dela (Rockwood and Wilkins, 10ª edição, capítulo 21).\n\nA **sincondrose dentocentral** é a ligação entre o dente e o corpo de C2 no esqueleto imaturo. O resumo situa seu fechamento em **7 a 9 anos** e descreve a fratura que passa por ela como **Salter–Harris I**. Esse último nome descreve o trajeto fisário; Hosalkar organiza o nível e as subdivisões da lesão do odontoide.\n\nNos subtipos de Hosalkar I, o resumo apresenta faixas de desvio: IA menor que 10%, IB entre 10% e 100% e IC acima de 100%. A questão não informa um percentual nem pede calculá-lo: o dado decisivo é o traço **acima** da ligação, que já o coloca no grupo II.\n\n**Na prova:** localizar primeiro o traço em relação à sincondrose, depois considerar um subtipo se ele a atravessar. Não escolher IA, IB ou IC só porque a lesão ocorreu na criança; o nível anatômico continua definindo o grupo.",
-  "correta": "Alternativa D. Tipo II é o traço acima da sincondrose. A informação de localização é suficiente e dispensa atribuir um grau de desvio que o enunciado não fornece.",
+  "conceito": "Na criança pequena, o odontoide ainda está separado do corpo de C2 por uma placa de cartilagem, a **sincondrose dentocentral** (que a questão chama de basilar). Ela só ossifica por volta dos **7 a 9 anos**, e até lá a fratura costuma passar por ela, como numa fise.\n\nHOSALKAR propôs uma classificação para essa criança com a sincondrose aberta, que o Rockwood and Wilkins' Fractures in Children (cap. 21) reproduz na Tabela 21-1:\n- **tipo I**: fratura **no nível da sincondrose**, subdividida pelo desvio: **IA** menos de 10%, **IB** de 10% a 100%, **IC** mais de 100%;\n- **tipo II**: fratura **acima** do nível da sincondrose.\n\nO raciocínio é simples: as letras A, B e C graduam o desvio de uma mesma lesão fisária; a fratura que sobe para o dente, acima da cartilagem, é outro tipo. Depois que a sincondrose fecha, volta a classificação do adulto pela localização (ponta, base e corpo de C2).\n\nPara o tratamento, a criança consolida melhor que o adulto: a maioria vai com redução em extensão quando preciso e imobilização, controlada com cerca de 8 semanas.",
+  "correta": "**D) II.** Na classificação de HOSALKAR, a fratura acima do nível da sincondrose é o tipo II (Rockwood and Wilkins' Fractures in Children, cap. 21, Tabela 21-1).",
   "incorretas": {
-   "A": "IA pertence às fraturas que passam pela sincondrose e representa a menor faixa de desvio descrita no grupo I. Não é a categoria de traço acima da ligação dentocentral.",
-   "B": "IB continua no grupo que atravessa a sincondrose; a faixa intermediária de desvio não muda o nível para acima dela. O enunciado descreve tipo II, não um subtipo I.",
-   "C": "IC é o maior desvio do grupo pela sincondrose. Maior deslocamento e traço acima são critérios diferentes: a letra C não transforma a fratura do grupo I em uma do grupo II."
+   "A": "**IA é a fratura na sincondrose** com desvio menor que 10%.",
+   "B": "**IB é a fratura na sincondrose** com desvio de 10% a 100%.",
+   "C": "**IC é a fratura na sincondrose** com desvio maior que 100%; continua sendo na sincondrose, não acima."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Lesões da coluna cervical na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 21 · Cervical Spine Injuries in Children. Seções: C1 e C2: atlas, odontoide e enforcado."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21 (Cervical Spine Injuries in Children; Rajiv Iyer e Douglas Brockmeyer), seção Classification of Odontoid Fracture e Tabela 21-1",
+   "Biblioteca OrtoQuestões, resumo Lesões da coluna cervical na criança (rockwoodcriancas10-21-coluna-cervical)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-21-coluna-cervical",
-     "titulo": "Lesões da coluna cervical na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 21 · Cervical Spine Injuries in Children",
-     "secoes": [
-      "C1 e C2: atlas, odontoide e enforcado"
-     ],
-     "blocos": [
-      "c1-e-c2-atlas-odontoide-e-enforcado-cc93063a"
-     ],
-     "sha256": "a8270eedfdf225d399002405ce49646e46f1c468464d494f5034f55e5211e822",
-     "trechosSha256": "7c792aa680f2444beaa3922964c914273034d87d0385186362f42b67ec225f67"
-    }
-   ],
-   "questaoSha256": "1ee1b2e733048f2999ce07f151cc41bae35070f27682ce4edcddd20eebd9fed0",
-   "comentarioSha256": "1fc0b5fc96494f0eb5adf358f10112eb072573a9c57c6eed8403dccd5cef4f3a"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-21-t1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21, Tabela 21-1 (HOSALKAR). Fratura do odontoide na criança com a sincondrose aberta: tipo I, pela sincondrose (IA desvio menor que 10%, IB de 10% a 100%, IC maior que 100%); tipo II, acima da sincondrose.",
+    "largura": 1200,
+    "altura": 763
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "trauma-0990": {
   "incorretas": {
