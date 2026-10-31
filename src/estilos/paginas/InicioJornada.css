@@ -1,0 +1,307 @@
+/* Página inicial em níveis (31/10/2026, "redesign premium" pedido pelo Tales). Duas camadas, como no DESIGN.md:
+   a arte HD-2D (o acampamento, o chão da sequência e os quadros pintados da galeria) é a única cor intensa; o resto
+   (acesso rápido, progresso, temas) é a página calma do site, com os tokens de tema claro e escuro.
+   Componentes: componentes/inicio/jornada/Jornada.tsx; página: paginas/Inicio.tsx (painel). */
+
+.hd.jn {
+  --jn-raio: 20px; --jn-tinta: #fffaf0; --jn-tinta-2: #e4d8bd; --jn-ouro: #f0c46a; --jn-chao: #0b100e; --jn-vidro: rgba(9, 13, 14, 0.74);
+  display: grid; gap: 1.5rem; padding: 0; color: var(--texto); background: none; border: 0; box-shadow: none;
+}
+.hd.jn > * { margin-inline: 0; }
+.jn :is(h1, h2, h3, p) { text-wrap: balance; }
+
+/* ── Nível 1: o acampamento ── */
+.jn-heroi { position: relative; isolation: isolate; overflow: hidden; display: grid; grid-template-columns: minmax(0, 27.5rem) minmax(0, 1fr); grid-template-rows: auto minmax(2rem, 1fr) auto;
+  min-height: clamp(31rem, 41vw, 37rem); padding: clamp(1.25rem, 2.4vw, 2.25rem); color: var(--jn-tinta); background: var(--jn-chao); border-radius: var(--jn-raio) var(--jn-raio) 0 0; }
+/* O véu só onde há texto: o céu (saudação) e o canto de baixo à esquerda (missão). A fogueira e os mascotes ficam limpos. */
+.jn-heroi::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(5, 8, 10, 0.62) 0%, rgba(5, 8, 10, 0.18) 34%, transparent 52%),
+    radial-gradient(60% 55% at 0% 100%, rgba(5, 8, 10, 0.55), transparent 70%),
+    linear-gradient(0deg, rgba(11, 16, 14, 0.9) 0%, transparent 16%); }
+.jn-heroi .hd-cena { z-index: -2; }
+.jn-saudacao { grid-column: 1 / -1; display: grid; gap: 0.45rem; align-content: start; max-width: 40rem; }
+.jn-data { margin: 0; color: var(--jn-ouro); font-size: var(--meta); font-weight: 750; letter-spacing: 0.06em; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
+.jn-heroi h1 { margin: 0; color: var(--jn-tinta); font-family: var(--fonte-marca); font-size: clamp(2rem, 1.2rem + 2.6vw, 3.15rem); font-weight: 800; line-height: 1.04; letter-spacing: -0.03em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.45), 0 0 30px rgba(0, 0, 0, 0.55); }
+.jn-lide { margin: 0; max-width: 46ch; color: var(--jn-tinta-2); font-size: var(--corpo); line-height: 1.5; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+.jn-lide strong { color: var(--jn-ouro); }
+
+/* A missão do dia: uma placa de vidro escuro pousada no chão, sem molduras nem losangos. */
+.jn-missao { grid-row: 3; grid-column: 1; display: grid; gap: 1rem; padding: 1.15rem 1.25rem 1.25rem; background: var(--jn-vidro); border-radius: var(--raio-cartao);
+  box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.14), 0 18px 40px -12px rgba(0, 0, 0, 0.6); -webkit-backdrop-filter: blur(10px) saturate(1.2); backdrop-filter: blur(10px) saturate(1.2);
+  animation: jn-pousa 0.5s var(--curva) both; }
+@keyframes jn-pousa { from { opacity: 0; transform: translateY(10px); } }
+.jn-missao__texto { display: grid; gap: 0.35rem; }
+.jn-missao__texto :is(p, h2) { margin: 0; }
+.jn-missao__selo { color: var(--jn-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.jn-missao__titulo { color: var(--jn-tinta); font-family: var(--fonte-marca); font-size: 1.5rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.015em; }
+.jn-missao__detalhe { color: var(--jn-tinta-2); font-size: var(--corpo-menor); line-height: 1.45; }
+.jn-missao__detalhe strong { color: var(--jn-tinta); }
+.jn-missao__progresso { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; margin-top: 0.25rem; color: var(--jn-tinta-2); font-size: var(--meta); }
+.jn-missao__progresso strong { color: var(--jn-tinta); font-size: var(--corpo); }
+.jn-missao__acoes { display: grid; gap: 0.6rem; }
+
+/* O botão de cristal, agora arredondado: o único azul-cristal da página é a ação principal. */
+.jn-cristal { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; min-height: 3.25rem; padding: 0.7rem 1.6rem;
+  border: 0; border-radius: var(--raio-controle); color: #fff; font: inherit; font-size: var(--corpo); font-weight: 800; text-decoration: none; cursor: pointer; text-shadow: 0 1px 0 rgba(0, 40, 60, 0.6);
+  background: linear-gradient(180deg, #8de6f2 0%, #3fb6d2 42%, #1a86a8 64%, #0f5f80 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 8px 22px -8px rgba(40, 170, 220, 0.75);
+  transition: transform 0.15s var(--curva), filter 0.15s, box-shadow 0.15s; }
+.jn-cristal::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.55) 48%, transparent 60%);
+  transform: translateX(-120%); animation: hd-reflexo 5s ease-in-out 1.2s infinite; }
+.jn-cristal:hover, .jn-cristal:focus-visible { color: #fff; filter: brightness(1.08); transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 12px 28px -8px rgba(60, 200, 240, 0.85); }
+.jn-cristal:focus-visible { outline: 3px solid var(--jn-ouro); outline-offset: 3px; }
+.jn-cristal:active { transform: translateY(1px) scale(0.99); }
+.jn-cristal:disabled { filter: grayscale(0.7) brightness(0.8); cursor: not-allowed; transform: none; }
+.jn-depois { justify-self: center; display: inline-flex; align-items: center; gap: 0.35rem; color: var(--jn-tinta-2); font-size: var(--meta); font-weight: 650; text-decoration: none; }
+.jn-depois:hover, .jn-depois:focus-visible { color: #fff; text-decoration: underline; }
+
+/* Barras finas e arredondadas, as mesmas em toda a página. */
+.jn-barra { position: relative; display: block; height: 8px; overflow: hidden; border-radius: 999px; background: rgba(255, 255, 255, 0.12); }
+.jn-barra > span { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: linear-gradient(90deg, #c48218, #ffd060); transition: width 0.9s var(--curva); }
+.jn-barra--verde > span { background: linear-gradient(90deg, var(--verdete), #3fb39a); }
+.jn-barra--azul > span { background: linear-gradient(90deg, #2563b0, #5aaaf0); }
+
+/* ── Nível 2: o chão do acampamento com a sequência ── */
+.jn-heroi + .jn-trilha { margin-top: -1.5rem; }
+.jn-trilha { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem clamp(1rem, 3vw, 2.5rem); padding: 1rem clamp(1.25rem, 2.4vw, 2.25rem) 1.2rem;
+  color: var(--jn-tinta); border-radius: 0 0 var(--jn-raio) var(--jn-raio);
+  background: radial-gradient(40% 120% at 50% 0%, rgba(255, 170, 70, 0.1), transparent 70%), linear-gradient(180deg, var(--jn-chao), #0d1311);
+  box-shadow: inset 0 1px 0 rgba(255, 236, 200, 0.06); }
+.jn-trilha p { margin: 0; }
+.jn-rotulo { margin: 0; color: var(--jn-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.jn-trilha__numero { display: grid; grid-template-columns: auto auto; align-items: center; gap: 0.75rem; }
+.jn-trilha__chama { width: 50px; height: 60px; background: var(--sprite-fogo) 0 calc(var(--linha) / 7 * 100%) / 600% 800% no-repeat; image-rendering: pixelated;
+  animation: hd-fogo 0.75s steps(6) infinite; filter: drop-shadow(0 0 10px rgba(255, 170, 70, 0.5)); }
+.jn-trilha__dias { display: flex; align-items: baseline; gap: 0.45rem; white-space: nowrap; }
+.jn-trilha__dias strong { color: var(--jn-ouro); font-family: var(--fonte-pixel-titulo); font-size: 4.2rem; font-weight: 400; line-height: 0.8; text-shadow: 0 3px 0 #000, 0 0 22px rgba(240, 196, 106, 0.45); }
+.jn-trilha__dias span { color: var(--jn-tinta); font-size: var(--corpo); font-weight: 750; }
+.jn-trilha__dias--zero span { font-family: var(--fonte-marca); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.015em; }
+.jn-trilha__estagio { margin-top: 0.3rem !important; color: var(--jn-tinta-2); font-size: var(--meta); }
+.jn-trilha__estagio b { color: var(--jn-ouro); }
+
+/* As sete tochas: cada estado tem a sua silhueta (scripts/gerar_sprites_inicio.py, tocha-semana.png). */
+.jn-tochas { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); justify-items: center; gap: 0.25rem; max-width: 30rem; margin: 0 auto; padding: 0; list-style: none; }
+.jn-tocha { position: relative; display: grid; justify-items: center; gap: 0.3rem; }
+.jn-tocha__sprite { width: 48px; height: 80px; background: var(--sprite-tocha) 0 calc(var(--linha) / 6 * 100%) / 600% 700% no-repeat; image-rendering: pixelated; animation: jn-tocha 0.9s steps(6) infinite; }
+@keyframes jn-tocha { to { background-position-x: 120%; } }
+.jn-tocha--feito .jn-tocha__sprite, .jn-tocha--hoje-feito .jn-tocha__sprite { filter: drop-shadow(0 -4px 6px rgba(255, 170, 70, 0.3)); }
+.jn-tocha--especial .jn-tocha__sprite { filter: drop-shadow(0 -4px 8px rgba(110, 180, 255, 0.4)); }
+.jn-tocha--perdido .jn-tocha__sprite, .jn-tocha--futuro .jn-tocha__sprite { animation-duration: 2.4s; }
+.jn-tocha small { min-width: 1.6rem; padding: 0.05rem 0.35rem; color: var(--jn-tinta-2); font-size: 0.75rem; font-weight: 750; text-align: center; border-radius: 999px; }
+.jn-tocha--futuro small { opacity: 0.6; }
+/* Hoje: o rótulo vira uma pílula com contorno (não depende de cor). */
+.jn-tocha--hoje-marca small { color: var(--jn-tinta); box-shadow: inset 0 0 0 1.5px var(--jn-ouro); }
+
+.jn-trilha__meta { display: grid; gap: 0.7rem; margin: 0; min-width: 9.5rem; }
+.jn-trilha__meta > div { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 0.15rem 0.6rem; }
+.jn-trilha__meta dt { color: var(--jn-tinta-2); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.jn-trilha__meta dd { margin: 0; color: var(--jn-tinta-2); font-size: var(--meta); text-align: right; }
+.jn-trilha__meta dd b { color: var(--jn-tinta); font-size: var(--corpo); }
+/* Cinco marcas da meta do dia: cheia é um quadrado sólido, vazia só o contorno. */
+.jn-medidor { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+.jn-medidor i { height: 8px; border-radius: 2px; box-shadow: inset 0 0 0 1.5px rgba(240, 196, 106, 0.55); }
+.jn-medidor i.cheio { background: var(--jn-ouro); box-shadow: 0 0 8px rgba(240, 196, 106, 0.5); }
+
+/* ── Nível 2: o acesso rápido (sete espaços de inventário, sem losangos) ── */
+.jn-atalhos ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr)); gap: 0.4rem; margin: 0; padding: 0.5rem; list-style: none;
+  background: var(--superficie); border: 1px solid var(--traco); border-radius: var(--raio-cartao); box-shadow: var(--sombra-media); }
+.jn-atalho { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; align-content: start; row-gap: 0.15rem; height: 100%;
+  padding: 0.65rem 0.4rem 0.6rem; text-align: center; color: var(--texto); text-decoration: none; border-radius: var(--raio-controle); transition: background-color 0.15s, transform 0.15s var(--curva); }
+.jn-atalho__icone { display: grid; margin-bottom: 0.3rem; place-items: center; width: 48px; height: 48px; border-radius: var(--raio-controle); background: var(--superficie-2, var(--porcelana));
+  box-shadow: inset 0 0 0 1px var(--traco); transition: transform 0.18s var(--curva); }
+.jn-atalho__icone img { width: 40px; height: 40px; image-rendering: pixelated; }
+.jn-atalho__nome { font-size: var(--corpo-menor); font-weight: 750; line-height: 1.2; }
+.jn-atalho__texto { max-width: 100%; overflow: hidden; color: var(--ardosia); font-size: 0.75rem; line-height: 1.3; text-overflow: ellipsis; white-space: nowrap; }
+.jn-atalho__contador { position: absolute; top: 0.25rem; left: calc(50% + 0.9rem); min-width: 1.35rem; padding: 0 0.3rem; color: #fff; background: var(--erro); font-size: 0.75rem; line-height: 1.35rem; text-align: center; border-radius: 999px;
+  box-shadow: 0 0 0 2px var(--superficie); }
+.jn-atalho__novo { position: absolute; top: 0.25rem; right: 0.35rem; padding: 0 0.4rem; color: var(--ouro-texto); background: var(--ouro-veu); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.04em; line-height: 1.3rem; border-radius: 999px; }
+.jn-atalho:hover, .jn-atalho:focus-visible { background: var(--verdete-veu); outline: 0; }
+.jn-atalho:hover .jn-atalho__icone, .jn-atalho:focus-visible .jn-atalho__icone { transform: translateY(-2px) rotate(-3deg); }
+.jn-atalho:focus-visible { box-shadow: 0 0 0 2px var(--foco); }
+.jn-atalho:active { transform: scale(0.98); }
+
+/* Avisos (limite do dia, planos, Simulado Nacional): pedaços da arte, com os mesmos cantos. */
+.jn-avisos > * { border-radius: var(--raio-cartao) !important; overflow: hidden; }
+
+/* ── Níveis 3 e 4: cabeçalhos ── */
+.jn-nivel { display: grid; gap: 1rem; margin-top: 0.75rem !important; }
+.jn-cabeca { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.jn-cabeca h2 { margin: 0; color: var(--texto); font-family: var(--fonte-marca); font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem); font-weight: 800; letter-spacing: -0.02em; }
+.jn-cabeca a { display: inline-flex; align-items: center; gap: 0.2rem; color: var(--verdete); font-size: var(--corpo-menor); font-weight: 700; text-decoration: none; }
+.jn-cabeca a:hover { text-decoration: underline; }
+.jn-texto { margin: 0; color: var(--ardosia); font-size: var(--corpo-menor); line-height: 1.5; }
+.jn-texto strong { color: var(--texto); }
+
+/* ── Nível 3: o progresso numa superfície só (as divisões são linhas finas, não cartões soltos) ── */
+.jn-painel { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 1px; overflow: hidden; background: var(--traco); border: 1px solid var(--traco); border-radius: var(--jn-raio); box-shadow: var(--sombra-media); }
+.jn-celula { position: relative; display: grid; align-content: start; gap: 0.85rem; padding: 1.35rem 1.5rem 1.5rem; background: var(--superficie); }
+.jn-celula__titulo { display: flex; align-items: baseline; gap: 0.5rem; margin: 0; color: var(--texto); font-size: var(--corpo); font-weight: 750; }
+.jn-celula__titulo span { flex: 1; }
+.jn-celula__titulo a { display: inline-flex; align-items: center; gap: 0.2rem; color: var(--ardosia); font-size: var(--meta); font-weight: 650; text-decoration: none; }
+.jn-celula__titulo a:hover { color: var(--verdete); }
+.jn-celula__titulo a b { color: var(--texto); }
+
+.jn-numeros { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; margin: 0; }
+.jn-numeros--par { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.jn-numeros > div { padding: 0.55rem 0.7rem 0.6rem; background: var(--superficie-2, var(--porcelana)); border-radius: var(--raio-controle); }
+.jn-numeros dt { color: var(--ardosia); font-size: 0.75rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
+.jn-numeros dd { margin: 0.15rem 0 0; white-space: nowrap; color: var(--verdete); font-family: var(--fonte-pixel-titulo); font-size: 2.1rem; line-height: 1; }
+.jn-numeros dd small { color: var(--ardosia); font-family: var(--fonte-texto); font-size: var(--meta); }
+.jn-numeros__palavra { font-family: var(--fonte-texto) !important; font-size: var(--corpo-menor) !important; font-weight: 750; padding-top: 0.45rem; }
+
+.jn-colunas { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
+.jn-colunas li { display: grid; justify-items: center; gap: 0.3rem; }
+.jn-colunas__trilho { position: relative; display: block; width: 100%; height: 84px; border-radius: var(--raio-pequeno); background: var(--superficie-2, var(--porcelana)); }
+.jn-colunas__trilho > span { position: absolute; left: 0; right: 0; bottom: 0; height: var(--h); border-radius: var(--raio-pequeno); background: linear-gradient(180deg, #3fb39a, var(--verdete));
+  animation: hd-sobe 0.8s var(--curva) both; animation-delay: calc(var(--i) * 60ms); transform-origin: bottom; }
+.jn-colunas__trilho > b { position: absolute; left: 0; right: 0; top: 4px; color: var(--texto); font-size: 0.75rem; text-align: center; }
+.jn-colunas small { color: var(--ardosia); font-size: 0.75rem; font-weight: 700; text-transform: capitalize; }
+.jn-colunas li.hoje small { color: var(--texto); text-decoration: underline; text-underline-offset: 3px; }
+.jn-colunas li.hoje .jn-colunas__trilho > span { background: linear-gradient(180deg, #ffd060, #c48218); }
+.jn-sessoes { display: grid; gap: 0.35rem; margin: 0; padding: 0.7rem 0 0; list-style: none; border-top: 1px solid var(--traco); }
+.jn-sessoes li { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr) auto; gap: 0.6rem; align-items: baseline; font-size: var(--meta); }
+.jn-sessoes__quando { color: var(--ardosia); }
+.jn-sessoes__nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jn-sessoes__acerto { color: var(--ardosia); font-weight: 800; }
+.jn-sessoes__acerto--bom { color: var(--acerto-texto); } .jn-sessoes__acerto--medio { color: var(--aviso-texto); }
+
+.jn-missoes { display: grid; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
+.jn-item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; padding: 0.6rem 0.75rem; color: var(--texto); text-decoration: none;
+  border-radius: var(--raio-controle); background: var(--superficie-2, var(--porcelana)); transition: background-color 0.15s, transform 0.15s var(--curva); }
+.jn-item img { image-rendering: pixelated; }
+.jn-item strong { display: block; font-size: var(--corpo-menor); }
+.jn-item small { display: block; color: var(--ardosia); font-size: var(--meta); line-height: 1.3; }
+.jn-item b { color: var(--verdete); font-family: var(--fonte-pixel-titulo); font-size: 1.8rem; font-weight: 400; line-height: 1; }
+.jn-item > svg { color: var(--ardosia); }
+.jn-item--destaque { background: var(--verdete-veu); box-shadow: inset 3px 0 0 var(--verdete); }
+.jn-item:hover, .jn-item:focus-visible { background: var(--verdete-veu); transform: translateX(3px); outline: 0; }
+.jn-item:focus-visible { box-shadow: 0 0 0 2px var(--foco); }
+
+.jn-alvo__tema { margin: 0; color: var(--texto); font-family: var(--fonte-marca); font-size: 1.5rem; font-weight: 800; line-height: 1.15; }
+.jn-alvo__medida { display: grid; gap: 0.35rem; }
+.jn-alvo__medida .jn-barra, .jn-quase .jn-barra { background: var(--superficie-2, var(--porcelana)); box-shadow: inset 0 0 0 1px var(--traco); }
+.jn-alvo__medida small { color: var(--ardosia); font-size: var(--meta); }
+.jn-alvo__medida b { color: var(--texto); }
+.jn-botao { justify-self: start; display: inline-flex; align-items: center; gap: 0.35rem; min-height: 2.6rem; padding: 0.5rem 1.05rem; color: var(--verdete); font-weight: 750; text-decoration: none;
+  border-radius: var(--raio-controle); box-shadow: inset 0 0 0 1.5px var(--verdete); transition: background-color 0.15s, color 0.15s; }
+.jn-botao:hover, .jn-botao:focus-visible { color: var(--sobre-destaque); background: var(--verdete); outline: 0; }
+.jn-botao--cheio { color: var(--sobre-destaque); background: var(--verdete); }
+.jn-botao--cheio:hover, .jn-botao--cheio:focus-visible { background: var(--verdete-tinta); }
+.jn-celula--alvo { padding-right: 7rem; }
+.jn-celula__mascote { position: absolute; right: 1rem; bottom: 0.8rem; width: 5rem; }
+
+.jn-quase { display: grid; gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
+.jn-quase li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.75rem; align-items: center; }
+.jn-quase li > span { display: grid; gap: 0.15rem; min-width: 0; }
+.jn-quase strong { overflow: hidden; font-size: var(--corpo-menor); text-overflow: ellipsis; white-space: nowrap; }
+.jn-quase small { color: var(--ardosia); font-size: var(--meta); }
+.jn-quase .jn-barra { height: 6px; margin-top: 0.15rem; }
+.jn-ranking { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.9rem; margin-top: 0.2rem; padding: 0.7rem 0.9rem; border-radius: var(--raio-controle); background: var(--ouro-veu); }
+.jn-ranking p { margin: 0; color: var(--texto); font-size: var(--corpo-menor); line-height: 1.4; }
+.jn-ranking__mascote { width: 3.4rem; margin-top: -1.2rem; }
+
+.jn-caminho > .ip-caminho { --sobre-heroi: #fffaf0; --sobre-heroi-2: #d9ccb0; border-radius: var(--jn-raio); box-shadow: 0 18px 36px -24px rgba(0, 0, 0, 0.6);
+  background: radial-gradient(60% 140% at 100% 0%, rgba(240, 196, 106, 0.16), transparent 60%), radial-gradient(40% 120% at 0% 100%, rgba(63, 179, 154, 0.18), transparent 70%), linear-gradient(180deg, #11221f, #0a1513); }
+.jn-progresso > .cp, .jn-progresso > section:last-child:not(.jn-painel) { border-radius: var(--jn-raio); }
+
+/* ── Nível 4: explorar ── */
+/* Os quadros pintados (Biblioteca, Atlas, o que mais cai, planos...) com cantos redondos e sem moldura de madeira. */
+.jn-quadro { position: relative; overflow: hidden; color: var(--texto); border-radius: var(--jn-raio); box-shadow: 0 18px 36px -24px rgba(0, 0, 0, 0.6); }
+.jn-quadro > * { margin: 0 !important; border-radius: 0 !important; height: 100%; }
+.hd .jn-quadro > :is(section, div, aside) { background-color: #121823; }
+.jn-galeria { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 1rem; align-items: stretch; }
+.jn-quadro__gato { position: absolute; right: 1.2rem; bottom: 0.6rem; z-index: 2; width: 96px; height: 60px; pointer-events: none; }
+.jn-dupla { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
+
+.jn-temas { display: grid; gap: 0.8rem; padding: 1.35rem 1.5rem 1.5rem; background: var(--superficie); border: 1px solid var(--traco); border-radius: var(--jn-raio); }
+.jn-subcabeca { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.3rem 1rem; }
+.jn-subcabeca h3 { margin: 0; color: var(--texto); font-size: 1.25rem; font-weight: 750; }
+.jn-subcabeca p { margin: 0; color: var(--ardosia); font-size: var(--meta); }
+.jn-regioes { display: grid; grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.jn-regiao { position: relative; isolation: isolate; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0.5rem 0.6rem; min-height: 4.2rem; padding: 0.7rem 0.85rem;
+  color: var(--texto); text-decoration: none; border-radius: var(--raio-controle); background: var(--superficie-2, var(--porcelana)); transition: transform 0.15s var(--curva), background-color 0.15s; }
+/* A névoa: cobre a parte do tema ainda não explorada (da direita para a esquerda). */
+.jn-regiao::after { content: ""; position: absolute; inset: 0 0 0 auto; z-index: -1; width: var(--nevoa); pointer-events: none;
+  background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ardosia) 10%, transparent) 0 2px, transparent 2px 7px); transition: width 0.6s; }
+.jn-regiao__nome { font-size: var(--corpo-menor); font-weight: 700; line-height: 1.25; }
+.jn-regiao__pct { padding: 0.05rem 0.5rem; color: var(--sobre-destaque); background: var(--verdete); font-size: var(--meta); font-weight: 800; border-radius: 999px; }
+.jn-regiao--nova .jn-regiao__pct { color: var(--ardosia); background: transparent; box-shadow: inset 0 0 0 1px var(--traco-forte); }
+.jn-regiao__trilho { grid-column: 1 / -1; display: block; height: 4px; overflow: hidden; border-radius: 999px; background: var(--traco); }
+.jn-regiao__trilho > span { display: block; height: 100%; background: var(--verdete); }
+.jn-regiao:hover, .jn-regiao:focus-visible { background: var(--verdete-veu); transform: translateY(-2px); outline: 0; }
+.jn-regiao:focus-visible { box-shadow: 0 0 0 2px var(--foco); }
+.jn-regiao:hover::after { width: calc(var(--nevoa) * 0.6); }
+
+.jn-torneio { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem; padding: 0.9rem 1.2rem; color: var(--texto); text-decoration: none;
+  background: var(--superficie); border: 1px solid var(--traco); border-radius: var(--jn-raio); transition: background-color 0.15s, transform 0.15s var(--curva); }
+.jn-torneio img { image-rendering: pixelated; }
+.jn-torneio strong { display: block; font-size: var(--corpo); }
+.jn-torneio small { display: block; color: var(--ardosia); font-size: var(--meta); }
+.jn-torneio:hover, .jn-torneio:focus-visible { background: var(--verdete-veu); transform: translateY(-2px); outline: 0; }
+
+/* O convite do Instagram: o acampamento de manhã, véu à esquerda para o texto e o esqueleto acenando à direita. */
+.jn-insta { position: relative; isolation: isolate; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 1rem; min-height: 15rem;
+  padding: clamp(1.25rem, 2.4vw, 2rem); color: var(--jn-tinta); text-decoration: none; border-radius: var(--jn-raio); box-shadow: 0 18px 36px -24px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(90deg, rgba(6, 10, 12, 0.88) 0%, rgba(6, 10, 12, 0.7) 40%, rgba(6, 10, 12, 0.1) 75%), var(--cena-insta) 60% 70% / cover no-repeat, var(--jn-chao); }
+.jn-insta__texto { display: grid; justify-items: start; gap: 0.5rem; max-width: 34rem; }
+.jn-insta__selo { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--jn-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.jn-insta__texto strong { font-family: var(--fonte-marca); font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; text-wrap: balance; }
+.jn-insta__texto > span:nth-child(3) { color: var(--jn-tinta-2); font-size: var(--corpo-menor); line-height: 1.5; }
+.jn-insta__botao { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.9rem; margin-top: 0.35rem; padding: 0 1.25rem; color: var(--pixel-tinta); font-weight: 800; white-space: nowrap;
+  border-radius: var(--raio-controle); background: linear-gradient(180deg, #ffe7a3, #f0c46a); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 8px 20px -8px rgba(240, 196, 106, 0.7); transition: transform 0.15s var(--curva), filter 0.15s; }
+.jn-insta__mascote { width: 6.5rem; margin-right: clamp(0rem, 6vw, 5rem); }
+.jn-insta:hover .jn-insta__botao, .jn-insta:focus-visible .jn-insta__botao { transform: translateY(-1px); filter: brightness(1.06); }
+.jn-insta:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; }
+.ip--vitrine .jn-insta { --jn-tinta: #fffaf0; --jn-tinta-2: #e4d8bd; --jn-ouro: #f0c46a; --jn-chao: #0b100e; --jn-raio: 20px; }
+
+/* ── Celular e tablet: saudação → missão → sequência → atalhos → progresso → exploração ── */
+@media (max-width: 60rem) {
+  .hd.jn { gap: 1.1rem; }
+  .jn-heroi { grid-template-columns: minmax(0, 1fr); grid-template-rows: clamp(25rem, 108vw, 30rem) auto; min-height: 0; padding: 0 0 0.9rem; border-radius: var(--raio-cartao) var(--raio-cartao) 0 0; }
+  .jn-heroi::before { inset: 0 0 auto; height: clamp(25rem, 108vw, 30rem);
+    background: linear-gradient(180deg, rgba(5, 8, 10, 0.7) 0%, rgba(5, 8, 10, 0.3) 30%, transparent 46%), linear-gradient(0deg, var(--jn-chao) 0%, transparent 14%); }
+  .jn-heroi .hd-cena { position: absolute; inset: 0 0 auto; height: clamp(25rem, 108vw, 30rem); }
+  /* Zoom no acampamento: a fogueira a 72% da altura da cena, o esqueleto e o gato logo ao lado. */
+  .jn-heroi .hd-palco { width: 235cqw; top: calc(72cqh - 62.7cqw); transform: translate(calc(-50% + var(--mx) * -16px), 0); }
+  .jn-saudacao { grid-row: 1; padding: 1.1rem 1.1rem 0; }
+  .jn-heroi h1 { font-size: clamp(1.6rem, 7.2vw, 2.15rem); }
+  .jn-lide { font-size: var(--corpo-menor); max-width: 34ch; }
+  .jn-missao { grid-row: 2; margin: -2.4rem 0.75rem 0; padding: 1rem 1rem 1.05rem; background: rgba(12, 17, 18, 0.92); }
+  .jn-missao__titulo { font-size: 1.25rem; }
+  .jn-cristal { width: 100%; }
+  .jn-heroi + .jn-trilha { margin-top: -1.1rem; }
+  .jn-trilha { grid-template-columns: minmax(0, 1fr); grid-template-areas: "numero" "tochas" "meta"; gap: 0.9rem; padding: 0.6rem 1rem 1.1rem; border-radius: 0 0 var(--raio-cartao) var(--raio-cartao); }
+  .jn-trilha__numero { grid-area: numero; }
+  .jn-tochas { grid-area: tochas; width: 100%; max-width: none; }
+  .jn-trilha__meta { grid-area: meta; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; min-width: 0; padding-top: 0.8rem; border-top: 1px solid rgba(255, 236, 200, 0.08); }
+  .jn-trilha__meta > div:last-child { align-content: start; }
+  .jn-tocha__sprite { width: 42px; height: 70px; }
+  .jn-trilha__dias strong { font-size: 3.6rem; }
+  .jn-trilha__chama { width: 40px; height: 48px; }
+  .jn-atalhos ul { grid-template-columns: repeat(var(--colunas, 4), minmax(0, 1fr)); gap: 0.2rem; padding: 0.4rem; }
+  .jn-numeros { gap: 0.4rem; }
+  .jn-numeros > div { padding: 0.5rem 0.55rem; }
+  .jn-numeros dd { font-size: 1.75rem; }
+  .jn-numeros dt { font-size: 0.75rem; letter-spacing: 0.05em; }
+  .jn-atalho { padding: 0.5rem 0.2rem; }
+  .jn-atalho__nome { font-size: var(--meta); }
+  .jn-atalho__texto { display: none; }
+  .jn-atalho__novo { top: 0; right: 0; }
+  .jn-painel, .jn-galeria, .jn-dupla { grid-template-columns: minmax(0, 1fr); }
+  .jn-celula { padding: 1.15rem 1.1rem 1.25rem; }
+  .jn-celula--alvo { padding-right: 1.1rem; padding-bottom: 5.8rem; }
+  .jn-ranking { grid-template-columns: auto minmax(0, 1fr); }
+  .jn-ranking .jn-botao { grid-column: 1 / -1; justify-self: stretch; justify-content: center; }
+  .jn-temas { padding: 1.1rem; }
+  .jn-regioes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .jn-insta { grid-template-columns: minmax(0, 1fr); padding-bottom: 1.4rem;
+    background: linear-gradient(180deg, rgba(6, 10, 12, 0.88) 0%, rgba(6, 10, 12, 0.72) 55%, rgba(6, 10, 12, 0.35) 100%), var(--cena-insta) 55% 75% / cover no-repeat, var(--jn-chao); }
+  .jn-insta__mascote { position: absolute; right: 0.6rem; bottom: 0.5rem; width: 3.6rem; margin: 0; }
+}
+@media (max-width: 23rem) { .jn-atalhos ul { grid-template-columns: repeat(3, minmax(0, 1fr)); } .jn-trilha__meta { min-width: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .jn-missao, .jn-cristal::after, .jn-tocha__sprite, .jn-trilha__chama, .jn-colunas__trilho > span { animation: none; }
+  .jn-atalho, .jn-atalho__icone, .jn-item, .jn-regiao, .jn-torneio, .jn-cristal { transition: none; }
+}

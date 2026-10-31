@@ -1,5 +1,5 @@
 import { PreferenciaEncontros } from '../eventos/PreferenciaEncontros'
-import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
+import { useCallback, useEffect, useRef, useState, type CSSProperties, type FormEvent } from 'react'
 import { haQuanto } from '../componentes/IndicadorSincronia'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
@@ -16,7 +16,7 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarLeitura, usarEtiquetas, usarRitmoRevisao } from '../estado/preferencias'
-import { usarTema } from '../estado/tema'
+import { PainelAparencia } from '../componentes/aparencia/PainelAparencia'
 import { dadosAceiteTermos, dataDaVersao, VERSAO_TERMOS } from '../conta/termos'
 import { AvisoTermos } from '../componentes/AvisoTermos'
 import { dadosOrigem } from '../conta/origem'
@@ -42,10 +42,11 @@ import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, ty
 import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
 import '../estilos/paginas/Acesso.css'
-import { usarMedia } from '../util/usarMedia'
-import { fraseGratis, recurso } from '../config'
+import { fraseGratis, recurso, urlCss } from '../config'
 import { guardarVitrine, lembrarNome, nomeLembrado, sortearVitrine } from '../conta/vitrineAcesso'
-import { MascoteAcesso } from '../componentes/MascoteAcesso'
+import { Mascote } from '../componentes/mascote/Mascote'
+import { usarPeriodo } from '../estado/aparencia'
+import '../estilos/paginas/AcessoHd.css'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -57,7 +58,8 @@ const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 
 const SECOES_CONTA = [
   ['perfil', 'usuario', 'Perfil', 'Nome, etapa, serviço e contato'],
   ['assinatura', 'medalha', 'Assinatura e pagamentos', 'Plano, cobranças e garantia'],
-  ['preferencias', 'filtro', 'Preferências', 'Estudo, aparência e e-mails'],
+  ['aparencia', 'sol', 'Aparência', 'Cenário do horário, claro ou escuro'],
+  ['preferencias', 'filtro', 'Preferências', 'Estudo, leitura e e-mails'],
   ['ranking', 'trofeu', 'Ranking e privacidade', 'Apelido, emblemas e o que aparece'],
   ['aparelhos', 'celular', 'Aparelhos e sincronização', 'Seu progresso em todo aparelho'],
   ['seguranca', 'cadeado', 'Login e segurança', 'Senha e e-mail de acesso'],
@@ -66,7 +68,7 @@ const SECOES_CONTA = [
 ] as const
 type SecaoConta = (typeof SECOES_CONTA)[number][0]
 /** Endereços antigos que continuam valendo (ex.: "?secao=estudo" no menu e na página de planos). */
-const SECOES_ANTIGAS: Record<string, SecaoConta> = { estudo: 'preferencias' }
+const SECOES_ANTIGAS: Record<string, SecaoConta> = { estudo: 'preferencias', tema: 'aparencia' }
 function secaoDaConsulta(consulta?: URLSearchParams): SecaoConta | null {
   const pedida = consulta?.get('secao') ?? ''
   const id = SECOES_ANTIGAS[pedida] ?? pedida
@@ -112,7 +114,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [vitrine] = useState(() => ({ entrar: sortearVitrine('entrar'), criar: sortearVitrine('criar') }))
   useEffect(() => { guardarVitrine(vitrine[modoVitrine]) }, [vitrine, modoVitrine])
   // No celular o cavaleiro fica menor, na sua própria coluna ao lado da frase.
-  const mascotePequeno = usarMedia('(max-width: 40rem)')
+  const periodo = usarPeriodo()
   // Destino de quem chegou por um convite (planos, treinar, questão avulsa): vale
   // para entrar, para o cadastro e para a volta do Google. Ver conta/passagem.ts.
   const voltar = rotaVoltar(consulta?.get('voltar'))
@@ -211,7 +213,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const { ritmo, definirRitmo } = usarRitmoRevisao()
   const { densidade, definirDensidade, fonte, definirFonte } = usarLeitura()
   const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()
-  const { tema, trocar: trocarTema } = usarTema()
   const perfil = sessao?.user.user_metadata ?? {}
   const [nome, definirNome] = useState(String(perfil.nome ?? ''))
   // Guarda o primeiro nome neste aparelho para a tela de entrar cumprimentar pelo nome na próxima visita.
@@ -488,8 +489,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const nomeVolta = modo === 'entrar' && !recuperacao && !perfilDepois ? nomeLembrado(email) : ''
     const tituloVitrine = nomeVolta ? `Que bom te ver de novo, ${nomeVolta}.` : v.titulo
     const seloVitrine = perfilDepois ? 'Conta criada' : recuperacao || modo === 'recuperar' ? 'Recuperar acesso' : modo === 'criar' ? 'Conta gratuita' : 'Continuar'
-    return <div className="ac">
-      {/* Topo: céu e cidade da temporada pixel, frase sorteada a cada visita e o cavaleiro em pé na cidade (com coluna própria, nunca sobre o texto). */}
+    return <div className={`ac ac--cena ac--${periodo}`} style={{ '--ac-cena': urlCss(`pixel/inicio/cena-${periodo}.webp`), '--ac-cena-p': urlCss(`pixel/inicio/cena-${periodo}-960.webp`) } as CSSProperties}>
+      {/* Topo: o acampamento pintado da página inicial (na luz da hora), a frase sorteada e o mascote acenando (31/10/2026). */}
       <section className="ac-vitrine" aria-labelledby="ac-titulo">
         <div className="ac-vitrine__texto">
           <p className="tr-heroi__selo">{seloVitrine}</p>
@@ -498,7 +499,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <ul className="ac-provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
           <p className="ac-vitrine__gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar de onde parou.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
         </div>
-        <div className="ac-vitrine__mascote"><MascoteAcesso escala={mascotePequeno ? 0.75 : 1.5} /></div>
+        <div className="ac-vitrine__mascote"><Mascote className="ac-mascote" comportamento="acenar" fantasia="nenhuma" falar={false} /></div>
       </section>
       <section className="ac-cartao" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
         {perfilDepois ? <>
@@ -751,6 +752,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           </section>
         </div>}
 
+        {secao === 'aparencia' && <section id="ct-aparencia" className="ct-cartao">
+          {cabecalhoSecao('sol', 'Aparência', 'O cenário pintado segue a hora do dia, e a cor da interface é uma escolha à parte. Vale na hora.', 'ct-icone--ouro')}
+          <PainelAparencia />
+        </section>}
+
         {secao === 'preferencias' && <div className="ct-pilha">
           <section id="ct-estudo" className="ct-cartao">
             {cabecalhoSecao('livro', 'Estudo', 'Meta de revisão e como as questões aparecem. Vale na hora.')}
@@ -758,8 +764,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             <InterruptorLocal ligado={mostrarEtiquetas} aoMudar={definirEtiquetas}>Mostrar a etiqueta do assunto antes de responder</InterruptorLocal>
           </section>
           <section className="ct-cartao">
-            {cabecalhoSecao('sol', 'Leitura e aparência', 'Tema, densidade e tamanho da fonte neste aparelho.')}
-            <div className="ct-opcao"><span className="ct-opcao__rotulo">Tema</span><div className="ct-seg ct-seg--tema">{([['claro', 'Claro', 'sol'], ['escuro', 'Escuro', 'lua']] as const).map(([valor, rotulo, icone]) => <button key={valor} type="button" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}><Icone nome={icone} tamanho={15} /> {rotulo}</button>)}</div></div>
+            {cabecalhoSecao('livro', 'Leitura', 'Densidade e tamanho da fonte neste aparelho.')}
+            <ul className="ct-links"><li><a href={linkSecao('aparencia')}><Icone nome="sol" tamanho={17} /><span><strong>Claro, escuro e cenário do horário</strong><small>Agora ficam em Aparência.</small></span><Icone nome="direita" tamanho={16} /></a></li></ul>
             <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
             <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
             <PreferenciaEncontros />

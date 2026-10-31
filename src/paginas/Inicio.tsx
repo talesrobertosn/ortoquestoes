@@ -1,5 +1,5 @@
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { type CSSProperties, type ReactNode, useMemo, useState } from 'react'
+import { type CSSProperties, type ReactNode, Suspense, lazy, useMemo, useRef, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
@@ -22,8 +22,12 @@ import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
-import { TopoDia, TopoVisitante } from '../componentes/inicio/cena/TopoDia'
-import type { Atalho } from '../componentes/inicio/cena/TopoDia'
+import { TopoVisitante } from '../componentes/inicio/cena/TopoDia'
+import { BarraAtalhos, ConviteInstagram, HeroiJornada, TrilhaSequencia, type Atalho } from '../componentes/inicio/jornada/Jornada'
+import { GatoPixel } from '../componentes/mascote/GatoPixel'
+import { Medalha } from '../componentes/Medalha'
+import { estagioDaSequencia } from '../componentes/inicio/estagiosFogueira'
+import '../estilos/paginas/InicioJornada.css'
 import { Mascote } from '../componentes/mascote/Mascote'
 import '../estilos/paginas/InicioHd.css'
 import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
@@ -35,6 +39,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
+import { proximoPasso } from '../conta/passosPerfil'
 import { contasDisponiveis } from '../conta/supabase'
 import { EXIGIR_CONTA_PARA_QUESTOES } from '../config'
 import { planoRevisao } from '../estado/planoRevisao'
@@ -44,6 +49,9 @@ import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
 import { proximaFraseInicio } from '../dados/frasesInicio'
 import '../estilos/paginas/Inicio.css'
 import '../estilos/paginas/InicioPainel.css'
+
+// O crachá do perfil, na página inicial, fica no nível do progresso (e não no topo, onde empurrava o cenário).
+const CompletarPerfil = lazy(() => import('../componentes/CompletarPerfil'))
 
 /*
  * Página inicial (proposta de 16/10/2026, docs/propostas/INICIO-16-10.md).
@@ -134,6 +142,10 @@ export function Inicio() {
   const [textoDoDia] = useState(() => VARIACOES_INICIO[Math.floor(Math.random() * VARIACOES_INICIO.length)])
   const [cabecalhoDoDia] = useState(proximaFraseInicio)
   const [modalEntrarAberto, definirModalEntrarAberto] = useState(false)
+  // Como no App: depois de montado, o crachá fica até o fim da visita (a última resposta ainda agradece).
+  const crachaNaCapa = useRef(false)
+  if (conta && contasDisponiveis && proximoPasso(conta.user.user_metadata) !== null) crachaNaCapa.current = true
+  const comCrachaNaCapa = Boolean(conta) && crachaNaCapa.current
 
   const { ritmo } = usarRitmoRevisao()
   const revisoesPlanejadas = useMemo(
@@ -361,6 +373,8 @@ export function Inicio() {
           </section>
         </>}
 
+        <ConviteInstagram />
+
         <section className="hd-sobre" aria-labelledby="inicio-apresentacao">
           <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
           <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para o título de especialista em cirurgia da mão, da SBCM, há OrtoQuestões Simulados no padrão da prova de título e do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. Estude por assunto, entenda as alternativas e revise seus erros.</p>
@@ -378,57 +392,57 @@ export function Inicio() {
   }
 
   // ---------------------------------------------------------------- Painel do dia
-  // Refeito do zero em 30/10/2026 (pedido do Tales, Octopath Traveler II de referência): o cenário com a luz da hora do
-  // dia no topo, a barra de comando com os atalhos e a próxima ação, e embaixo as mesmas seções de antes, numa
-  // apresentação nova (painéis de vidro escuro, molduras e mapa dos temas). Lógica, textos e destinos são os de sempre.
+  // Redesenhado em 31/10/2026 ("redesign premium", pedido do Tales), em quatro níveis que vão do estudo à vitrine:
+  // 1. o acampamento pintado com a saudação e a missão do dia; 2. a trilha da sequência e o acesso rápido;
+  // 3. o progresso (semana, para hoje, onde rende mais, cronograma, conquistas e ranking) numa superfície só;
+  // 4. a galeria para explorar (Biblioteca, Atlas, temas, simulados, o que mais cai, planos e indicação).
+  // Lógica, textos, números e destinos são os de sempre; a ordem no celular é a mesma da leitura.
   const pctAcao = acao?.progresso && acao.progresso.total ? Math.min(100, Math.round((acao.progresso.feitas / acao.progresso.total) * 100)) : null
   const atalhos: Atalho[] = [
-    { destino: '/treinar', rotulo: 'Treinar', texto: 'Monte a sua sessão', icone: <IconePixel nome="simulado" tamanho={44} /> },
-    { destino: '/revisao', rotulo: 'Revisão', texto: revisarHoje ? `${revisarHoje.toLocaleString('pt-BR')} para hoje` : 'Em dia por hoje', icone: <IconePixel nome="revisao" tamanho={44} />, contador: revisarHoje },
-    ...(FLASHCARDS_NA_CAPA ? [
-      { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', texto: 'Revisão espaçada', icone: <span className="ip-px ip-px--cartas" aria-hidden="true"><i /><i /><i /></span> },
-      { destino: '/flashcards/cripta', rotulo: 'Jogar o Torneio', texto: 'Flashcards no modo jogo', icone: <IconePixel nome="ranking" tamanho={44} /> },
-    ] : []),
-    ...(bibliotecaVisivel() ? [{ destino: '/resumos', rotulo: 'Resumos', texto: 'Leia antes das questões', icone: <IconePixel nome="treinar" tamanho={44} /> }] : []),
-    { destino: '/atlas', rotulo: 'Atlas 3D', texto: 'Clique no osso', icone: <img src={recurso('atlas3d/icone-mao.png')} width={48} height={48} alt="" loading="lazy" decoding="async" />, novo: true },
+    { destino: '/treinar', rotulo: 'Treinar', texto: 'Monte a sessão', icone: 'simulado' },
+    { destino: '/revisao', rotulo: 'Revisão', texto: revisarHoje ? `${revisarHoje.toLocaleString('pt-BR')} para hoje` : 'Em dia', icone: 'ciclo', contador: revisarHoje },
+    ...(FLASHCARDS_NA_CAPA ? [{ destino: '/flashcards/biblioteca', rotulo: 'Flashcards', texto: 'Revisão espaçada', icone: 'flashcards' }] : []),
+    { destino: '/cronograma', rotulo: 'Cronograma', texto: calculo && !calculo.provaPassou ? `${calculo.diasAteProva} dias para a prova` : 'Até a prova', icone: 'revisao' },
+    ...(bibliotecaVisivel() ? [{ destino: '/resumos', rotulo: 'Resumos', texto: 'Antes das questões', icone: 'treinar' }] : []),
+    { destino: '/atlas', rotulo: 'Atlas 3D', texto: 'Clique no osso', icone: 'atlas', novo: true },
+    { destino: '/erros', rotulo: 'Caderno de erros', texto: 'O que errou', icone: 'erros' },
   ]
   const temas = temAcervo ? indice!.temas.filter((tema) => (contagens!.porTema[tema.slug] ?? 0) > 0) : []
+  const dataHoje = new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', timeZone: FUSO_DIA })
+  const semDados = respondidasTotal === 0
   return (
-    <div className="ip ip--painel hd" style={CENAS_SECOES}>
-      <TopoDia
-        selo="Seu dia de estudo"
+    <div className="ip ip--painel hd jn" style={CENAS_SECOES}>
+      {/* ── Nível 1: o acampamento e a missão do dia ── */}
+      <HeroiJornada
+        data={dataHoje.charAt(0).toLocaleUpperCase('pt-BR') + dataHoje.slice(1)}
         titulo={titulo}
         lide={calculo && !calculo.provaPassou ? <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a prova. {cabecalhoDoDia.incentivo}</> : cabecalhoDoDia.incentivo}
-        streak={streak} dias={diasSequencia} quaseLa={quaseLa} conquistadas={conquistadas} totalConquistas={totalConquistas}
-        atalhos={atalhos}
-        acao={acao ? <>
-          <p className="hd-acao__selo">{acao.selo}</p>
-          <h2 className="hd-acao__titulo">{acao.titulo}</h2>
-          <p className="hd-acao__detalhe">{acao.detalhe}</p>
+        linhaFogo={estagioDaSequencia(streak.atual).indice}
+        missao={acao ? <>
+          <p className="jn-missao__selo">{acao.selo}</p>
+          <h2 className="jn-missao__titulo">{acao.titulo}</h2>
+          <p className="jn-missao__detalhe">{acao.detalhe}</p>
           {acao.progresso && (
-            <div className="hd-acao__progresso">
-              <span className="hd-barra hd-barra--ouro" role="img" aria-label={`${acao.progresso.feitas} de ${acao.progresso.total}`}><span style={{ width: `${pctAcao ?? 0}%` }} /></span>
+            <div className="jn-missao__progresso">
+              <span className="jn-barra" role="img" aria-label={`${acao.progresso.feitas} de ${acao.progresso.total}`}><span style={{ width: `${pctAcao ?? 0}%` }} /></span>
               <span className="numerico"><strong>{acao.progresso.feitas}</strong> de {acao.progresso.total}</span>
             </div>
           )}
-        </> : <p className="hd-acao__detalhe" aria-busy="true">Preparando o seu dia…</p>}
+        </> : <p className="jn-missao__detalhe" aria-busy="true">Preparando o seu dia…</p>}
         botao={acao ? (acao.destino
-          ? <a className="hd-cristal" href={href(acao.destino)}><Icone nome={acao.icone} tamanho={20} /> {acao.botao}</a>
-          : <button type="button" className="hd-cristal" onClick={acao.aoClicar} disabled={acao.desabilitada}><Icone nome={acao.icone} tamanho={20} /> {acao.botao}</button>) : null}
+          ? <a className="jn-cristal" href={href(acao.destino)}><Icone nome={acao.icone} tamanho={20} /> {acao.botao}</a>
+          : <button type="button" className="jn-cristal" onClick={acao.aoClicar} disabled={acao.desabilitada}><Icone nome={acao.icone} tamanho={20} /> {acao.botao}</button>) : null}
         depois={acao && (metaHoje || sessaoEmAndamento) && revisarHoje > 0 ? (
-          <a className="hd-depois" href={href('/revisao')}><Icone nome="calendario" tamanho={14} /> Depois: {revisarHoje} {revisarHoje === 1 ? 'questão' : 'questões'} para rever hoje <Icone nome="direita" tamanho={13} /></a>
+          <a className="jn-depois" href={href('/revisao')}><Icone nome="calendario" tamanho={14} /> Depois: {revisarHoje} {revisarHoje === 1 ? 'questão' : 'questões'} para rever hoje <Icone nome="direita" tamanho={13} /></a>
         ) : undefined}
       />
 
-      {(cronogramaNoPainel && calculo && cronograma.plano) || (!cronograma.carregando && !calculo) ? (
-        <div className="hd-caminho">
-          {cronogramaNoPainel && calculo && cronograma.plano && <CaminhoProva calculo={calculo} plano={cronograma.plano} />}
-          {!cronograma.carregando && !calculo && <CaminhoConvite premium={cronograma.premium} />}
-        </div>
-      ) : null}
+      {/* ── Nível 2: a sequência (o chão do acampamento) e o acesso rápido ── */}
+      <TrilhaSequencia streak={streak} dias={diasSequencia} />
+      <BarraAtalhos atalhos={atalhos} />
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
-      <div className="hd-avisos">
+      <div className="hd-avisos jn-avisos">
         <ConviteLimiteDoDia />
         <FaixaPlanos />
         <ChamadaSimuladoNacional />
@@ -437,166 +451,200 @@ export function Inicio() {
       {vazio}
 
       {temAcervo && <>
-        {/* O cronograma vale muito: quem ainda não tem um vê o convite logo depois do topo. */}
-        {!cronograma.premium && !cronograma.carregando && <div className="hd-moldura"><CartaoCronograma cronograma={cronograma} /></div>}
-        {cronograma.premium && calculo && (calculo.naRetaFinal || calculo.provaPassou) && <div className="hd-moldura"><CartaoCronograma cronograma={cronograma} /></div>}
-
-        {/* O diário aberto (como os diários de jogo): à esquerda o estudo de hoje e onde rende mais, à direita a semana.
-            Os marcadores na borda levam às outras partes da página. */}
-        <section className="hd-diario" aria-label="Seu estudo, onde render mais e a sua semana">
-          <nav className="hd-diario__marcadores" aria-label="Ir para">
-            {/* Botões, não links com #: o # do endereço é a rota do site (util/rotas.ts). */}
-            {([['hd-temas', '#2f8a7e', 'Temas'], ['hd-galeria', '#2f6aa8', 'Atlas e Resumos'], ['hd-assinante', '#7a4a8c', 'O que mais cai'], ['hd-trofeus', '#b8452f', 'Ranking']] as const).map(([id, cor, nomeSecao]) => (
-              <button key={id} type="button" style={{ '--cor': cor } as CSSProperties}
-                onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })}>{nomeSecao}</button>
-            ))}
-          </nav>
-          <div className="hd-diario__folhas">
-          <div className="hd-diario__pagina">
-          <section className="hd-janela" aria-labelledby="ip-hoje-titulo">
-            <h2 id="ip-hoje-titulo" className="hd-janela__titulo">Seu estudo de hoje</h2>
-            <p className="hd-janela__intro">{textoDoDia.explicacao}</p>
-            <div className="hd-missoes">
-              <a className="hd-missao hd-missao--destaque" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=revisarHoje&limite=20`)}>
-                <IconePixel nome="revisao" tamanho={34} />
-                <span><strong>Revisar hoje</strong><small>{textoDoDia.revisar}</small></span>
-                <b className="numerico">{revisarHoje.toLocaleString('pt-BR')}</b>
-              </a>
-              <a className="hd-missao" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=naoRespondidas&limite=10`)}>
-                <IconePixel nome="simulado" tamanho={34} />
-                <span><strong>Questões novas</strong><small>{textoDoDia.novas}</small></span>
-                <b className="hd-missao__seta"><Icone nome="direita" tamanho={16} /></b>
-              </a>
-              <a className="hd-missao" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=dominadas`)}>
-                <IconePixel nome="ranking" tamanho={34} />
-                <span><strong>Dominadas</strong><small>Ciclo de revisão completo</small></span>
-                {(contagens!.porSituacao.dominadas ?? 0) >= MINIMO_PARA_NUMERO
-                  ? <b className="numerico">{(contagens!.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
-                  : <b className="hd-missao__seta"><Icone nome="direita" tamanho={16} /></b>}
-              </a>
-            </div>
-          </section>
-
-          <section className="hd-janela hd-janela--alvo" aria-labelledby="ip-foco-titulo">
-            <h2 id="ip-foco-titulo" className="hd-janela__titulo">Onde uma sessão rende mais</h2>
-            {temaFragil ? (() => {
-              const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
-              return <>
-                <p className="hd-alvo__tema">{temaFragil[0]}</p>
-                {/* Tato dos e-mails: o tema mais frágil é oportunidade; acerto só a partir de 50%, contagens só a partir de 10, sem "erros". */}
-                {acerto >= 50 && (
-                  <div className="hd-alvo__medida">
-                    <span className="hd-barra hd-barra--verde" role="img" aria-label={`${acerto}% de acerto`}><span style={{ width: `${acerto}%` }} /></span>
-                    <small><b className="numerico">{acerto}%</b> de acerto, com espaço para subir</small>
-                  </div>
-                )}
-                {(temaFragil[1].tentativas >= MINIMO_PARA_NUMERO || temaFragil[1].pendentes >= MINIMO_PARA_NUMERO) && (
-                  <dl className="hd-numeros">
-                    {temaFragil[1].tentativas >= MINIMO_PARA_NUMERO && <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>}
-                    {temaFragil[1].pendentes >= MINIMO_PARA_NUMERO && <div><dt>Para rever</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>}
-                  </dl>
-                )}
-                <p className="hd-janela__intro">De todos os temas que você já treinou, este é a melhor oportunidade: uma sessão curta aqui rende mais pontos na prova.</p>
-                <a className="hd-botao" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
-              </>
-            })() : <>
-              <p className="hd-janela__intro">Responda pelo menos duas questões de um tema e este quadro mostra onde uma sessão curta rende mais.</p>
-              <a className="hd-botao" href={href('/treinar')}>Montar uma sessão <Icone nome="direita" tamanho={16} /></a>
-            </>}
-          </section>
-          </div>
-          <span className="hd-diario__lombada" aria-hidden="true">{Array.from({ length: 6 }, (_, k) => <i key={k} />)}</span>
-          <div className="hd-diario__pagina">
-          <section className="hd-janela" aria-labelledby="ip-semana-titulo">
-            <h2 id="ip-semana-titulo" className="hd-janela__titulo"><span>Sua semana</span><a href={href('/dados')}>Desempenho <Icone nome="direita" tamanho={13} /></a></h2>
-            <dl className="hd-numeros">
-              <div><dt>Questões</dt><dd className={`numerico${semana.total > 0 && semana.total < MINIMO_PARA_NUMERO ? ' hd-numeros__palavra' : ''}`}>{semana.total >= MINIMO_PARA_NUMERO ? semana.total.toLocaleString('pt-BR') : semana.total > 0 ? 'Primeiros passos' : '—'}</dd></div>
-              <div><dt>Acerto</dt><dd className="numerico">{semana.acerto !== null && semana.acerto >= 50 && semana.total >= MINIMO_PARA_NUMERO ? `${semana.acerto}%` : '—'}</dd></div>
-              <div><dt>Dias ativos</dt><dd className="numerico">{semana.diasAtivos} de 7</dd></div>
-            </dl>
-            {semana.total > 0 && (
-              <p className="hd-janela__intro">{semana.diasAtivos >= 3
-                ? <>{nome ? `${nome}, você` : 'Você'} estudou em <strong>{semana.diasAtivos} dos últimos 7 dias</strong>. É essa constância que fixa.</>
-                : <>{nome ? `${nome}, os` : 'Os'} primeiros passos da semana já estão aqui. Um pouco por dia leva longe.</>}</p>
-            )}
-            {/* Sete colunas de luz: a altura é o número de questões do dia. */}
-            <ol className="hd-colunas" aria-label="Questões respondidas por dia">
-              {semana.dias.map((dia, i) => (
-                <li key={dia.chave} className={dia.hoje ? 'hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}`}>
-                  <span className="hd-colunas__trilho"><span style={{ '--h': `${dia.total ? Math.max(8, (dia.total / semana.maximo) * 100) : 0}%`, '--i': i } as CSSProperties} />
-                    {dia.total >= MINIMO_PARA_NUMERO && (dia.hoje || dia.total === semana.maximo) && <b className="numerico" aria-hidden="true">{dia.total}</b>}
-                  </span>
-                  <small aria-hidden="true">{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>
-                  <span className="ip-invisivel">{dia.nomeCompleto}: {dia.total} {dia.total === 1 ? 'questão' : 'questões'}</span>
-                </li>
-              ))}
-            </ol>
-            {historico.length > 0 && (
-              <ol className="hd-sessoes">
-                {historico.slice(0, 3).map((h) => {
-                  const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
-                  return (
-                    <li key={h.id}>
-                      <span className="hd-sessoes__quando">{quandoFoi(h.concluidaEm)}</span>
-                      <span className="hd-sessoes__nome">{h.descricao}</span>
-                      {/* Abaixo de 50% não se mostra a porcentagem (tato dos e-mails). */}
-                      <span className={`hd-sessoes__acerto hd-sessoes__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'vazio'}`}>{acerto === null ? '—' : acerto >= 50 ? `${acerto}%` : 'Feita'}</span>
-                    </li>
-                  )
-                })}
-              </ol>
-            )}
-          </section>
-          <Mascote className="hd-diario__mascote" comportamento="ler" falar={false} />
-          </div>
-          </div>
-        </section>
-
-        {/* Treinar por tema: as regiões em quadros; a névoa sai conforme você responde as questões do tema. */}
-        <section className="hd-mapa" id="hd-temas" aria-labelledby="ip-temas-titulo">
-          <header className="hd-faixa">
-            <h2 id="ip-temas-titulo">Treinar por tema</h2>
-            <p>Um toque monta a sessão do tema. A névoa sai conforme você passa por ele.</p>
+        {/* ── Nível 3: o progresso, numa superfície só ── */}
+        <section className="jn-nivel jn-progresso" aria-labelledby="jn-progresso-titulo">
+          <header className="jn-cabeca">
+            <h2 id="jn-progresso-titulo">Seu progresso</h2>
+            <a href={href('/dados')}>Ver desempenho <Icone nome="direita" tamanho={14} /></a>
           </header>
-          <ul className="hd-regioes">
-            {temas.map((tema, i) => {
-              const quantidade = contagens!.porTema[tema.slug] ?? 0
-              const feitas = Math.min(quantidade, respondidasPorTema[tema.slug] ?? 0)
-              const porcento = quantidade ? Math.round((feitas / quantidade) * 100) : 0
-              return (
-                <li key={tema.slug}>
-                  <a className={'hd-regiao' + (feitas > 0 ? '' : ' hd-regiao--nova')} href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${tema.slug}`)}
-                    style={{ '--nevoa': `${100 - Math.max(feitas > 0 ? 2 : 0, porcento)}%`, '--i': i } as CSSProperties}>
-                    <span className="hd-regiao__nome">{tema.nome}</span>
-                    <span className="hd-regiao__pct numerico">{feitas > 0 ? `${Math.max(1, porcento)}%` : 'Novo'}</span>
-                    <span className="hd-regiao__trilho" aria-hidden="true"><span style={{ width: `${Math.max(feitas > 0 ? 2 : 0, porcento)}%` }} /></span>
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
+
+          {((cronogramaNoPainel && calculo && cronograma.plano) || (!cronograma.carregando && !calculo)) && (
+            <div className="jn-caminho">
+              {cronogramaNoPainel && calculo && cronograma.plano && <CaminhoProva calculo={calculo} plano={cronograma.plano} />}
+              {!cronograma.carregando && !calculo && <CaminhoConvite premium={cronograma.premium} />}
+            </div>
+          )}
+
+          <div className="jn-painel">
+            <section className="jn-celula jn-celula--semana" aria-labelledby="ip-semana-titulo">
+              <h3 id="ip-semana-titulo" className="jn-celula__titulo">Sua semana</h3>
+              <dl className="jn-numeros">
+                <div><dt>Questões</dt><dd className={`numerico${semana.total > 0 && semana.total < MINIMO_PARA_NUMERO ? ' jn-numeros__palavra' : ''}`}>{semana.total >= MINIMO_PARA_NUMERO ? semana.total.toLocaleString('pt-BR') : semana.total > 0 ? 'Primeiros passos' : '—'}</dd></div>
+                <div><dt>Acerto</dt><dd className="numerico">{semana.acerto !== null && semana.acerto >= 50 && semana.total >= MINIMO_PARA_NUMERO ? `${semana.acerto}%` : '—'}</dd></div>
+                <div><dt>Dias ativos</dt><dd className="numerico">{semana.diasAtivos}<small> de 7</small></dd></div>
+              </dl>
+              {semana.total > 0 ? (
+                <p className="jn-texto">{semana.diasAtivos >= 3
+                  ? <>{nome ? `${nome}, você` : 'Você'} estudou em <strong>{semana.diasAtivos} dos últimos 7 dias</strong>. É essa constância que fixa.</>
+                  : <>{nome ? `${nome}, os` : 'Os'} primeiros passos da semana já estão aqui. Um pouco por dia leva longe.</>}</p>
+              ) : <p className="jn-texto">A semana começa na primeira questão. As colunas sobem conforme você responde.</p>}
+              {/* Sete colunas: a altura é o número de questões do dia. */}
+              <ol className="jn-colunas" aria-label="Questões respondidas por dia">
+                {semana.dias.map((dia, i) => (
+                  <li key={dia.chave} className={dia.hoje ? 'hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}`}>
+                    <span className="jn-colunas__trilho"><span style={{ '--h': `${dia.total ? Math.max(8, (dia.total / semana.maximo) * 100) : 0}%`, '--i': i } as CSSProperties} />
+                      {dia.total >= MINIMO_PARA_NUMERO && (dia.hoje || dia.total === semana.maximo) && <b className="numerico" aria-hidden="true">{dia.total}</b>}
+                    </span>
+                    <small aria-hidden="true">{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>
+                    <span className="ip-invisivel">{dia.nomeCompleto}: {dia.total} {dia.total === 1 ? 'questão' : 'questões'}</span>
+                  </li>
+                ))}
+              </ol>
+              {historico.length > 0 && (
+                <ol className="jn-sessoes" aria-label="Últimas sessões">
+                  {historico.slice(0, 3).map((h) => {
+                    const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
+                    return (
+                      <li key={h.id}>
+                        <span className="jn-sessoes__quando">{quandoFoi(h.concluidaEm)}</span>
+                        <span className="jn-sessoes__nome">{h.descricao}</span>
+                        {/* Abaixo de 50% não se mostra a porcentagem (tato dos e-mails). */}
+                        <span className={`jn-sessoes__acerto jn-sessoes__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'vazio'}`}>{acerto === null ? '—' : acerto >= 50 ? `${acerto}%` : 'Feita'}</span>
+                      </li>
+                    )
+                  })}
+                </ol>
+              )}
+            </section>
+
+            <section className="jn-celula jn-celula--hoje" aria-labelledby="ip-hoje-titulo">
+              <h3 id="ip-hoje-titulo" className="jn-celula__titulo">Para hoje</h3>
+              <p className="jn-texto">{textoDoDia.explicacao}</p>
+              <ul className="jn-missoes">
+                <li><a className="jn-item jn-item--destaque" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=revisarHoje&limite=20`)}>
+                  <img src={recurso('pixel/ciclo.png')} width={32} height={32} alt="" loading="lazy" decoding="async" />
+                  <span><strong>Revisar hoje</strong><small>{textoDoDia.revisar}</small></span>
+                  <b className="numerico">{revisarHoje.toLocaleString('pt-BR')}</b>
+                </a></li>
+                <li><a className="jn-item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=naoRespondidas&limite=10`)}>
+                  <img src={recurso('pixel/simulado.png')} width={32} height={32} alt="" loading="lazy" decoding="async" />
+                  <span><strong>Questões novas</strong><small>{textoDoDia.novas}</small></span>
+                  <Icone nome="direita" tamanho={16} />
+                </a></li>
+                <li><a className="jn-item" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&situacao=dominadas`)}>
+                  <img src={recurso('pixel/ranking.png')} width={32} height={32} alt="" loading="lazy" decoding="async" />
+                  <span><strong>Dominadas</strong><small>Ciclo de revisão completo</small></span>
+                  {(contagens!.porSituacao.dominadas ?? 0) >= MINIMO_PARA_NUMERO
+                    ? <b className="numerico">{(contagens!.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
+                    : <Icone nome="direita" tamanho={16} />}
+                </a></li>
+              </ul>
+            </section>
+
+            <section className="jn-celula jn-celula--alvo" aria-labelledby="ip-foco-titulo">
+              <h3 id="ip-foco-titulo" className="jn-celula__titulo">Onde uma sessão rende mais</h3>
+              {temaFragil ? (() => {
+                const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
+                return <>
+                  <p className="jn-alvo__tema">{temaFragil[0]}</p>
+                  {/* Tato dos e-mails: o tema mais frágil é oportunidade; acerto só a partir de 50%, contagens só a partir de 10, sem "erros". */}
+                  {acerto >= 50 && (
+                    <div className="jn-alvo__medida">
+                      <span className="jn-barra jn-barra--verde" role="img" aria-label={`${acerto}% de acerto`}><span style={{ width: `${acerto}%` }} /></span>
+                      <small><b className="numerico">{acerto}%</b> de acerto, com espaço para subir</small>
+                    </div>
+                  )}
+                  {(temaFragil[1].tentativas >= MINIMO_PARA_NUMERO || temaFragil[1].pendentes >= MINIMO_PARA_NUMERO) && (
+                    <dl className="jn-numeros jn-numeros--par">
+                      {temaFragil[1].tentativas >= MINIMO_PARA_NUMERO && <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>}
+                      {temaFragil[1].pendentes >= MINIMO_PARA_NUMERO && <div><dt>Para rever</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>}
+                    </dl>
+                  )}
+                  <p className="jn-texto">De todos os temas que você já treinou, este é a melhor oportunidade: uma sessão curta aqui rende mais pontos na prova.</p>
+                  <a className="jn-botao" href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
+                </>
+              })() : <>
+                <p className="jn-texto">Responda pelo menos duas questões de um tema e este quadro mostra onde uma sessão curta rende mais.</p>
+                <a className="jn-botao" href={href('/treinar')}>Montar uma sessão <Icone nome="direita" tamanho={16} /></a>
+              </>}
+              <Mascote className="jn-celula__mascote" comportamento={semDados ? 'orientando' : 'estudioso'} fantasia="nenhuma" falar={false} interativo={false} />
+            </section>
+
+            <section className="jn-celula jn-celula--conquistas" id="hd-trofeus" aria-labelledby="ip-conquistas-titulo">
+              <h3 id="ip-conquistas-titulo" className="jn-celula__titulo"><span>Conquistas e ranking</span><a href={href('/conquistas')}><b className="numerico">{conquistadas}</b> de {totalConquistas} <Icone nome="direita" tamanho={13} /></a></h3>
+              {quaseLa.length > 0 ? (
+                <ul className="jn-quase" aria-label="Quase lá">
+                  {quaseLa.map((q) => (
+                    <li key={q.emblema.id}>
+                      <Medalha conquista={q.emblema} tamanho={30} />
+                      <span><strong>{q.emblema.rotulo}</strong><small>Faltam {q.texto}</small>
+                        <span className="jn-barra jn-barra--azul" aria-hidden="true"><span style={{ width: `${Math.max(6, Math.round(q.fracao * 100))}%` }} /></span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              ) : <p className="jn-texto">Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.</p>}
+              <div className="jn-ranking">
+                <Mascote className="jn-ranking__mascote" comportamento="trofeu" fantasia="nenhuma" falar={false} interativo={false} />
+                <p>Suba no <strong>ranking</strong> de quem mais estuda e exiba três emblemas no seu nome.</p>
+                <a className="jn-botao jn-botao--cheio" href={href('/ranking')}>Ver ranking</a>
+              </div>
+            </section>
+          </div>
+          {comCrachaNaCapa && <Suspense fallback={null}><CompletarPerfil /></Suspense>}
         </section>
 
-        {/* Atlas 3D e Resumos lado a lado, cada um na sua moldura. */}
-        <div className="hd-galeria" id="hd-galeria">
-          <div className="hd-moldura"><QuadroAtlas /></div>
-          {bibliotecaVisivel() && <div className="hd-moldura"><EstanteResumos /></div>}
-        </div>
+        {/* ── Nível 4: explorar ── */}
+        <section className="jn-nivel jn-explorar" aria-labelledby="jn-explorar-titulo">
+          <header className="jn-cabeca">
+            <h2 id="jn-explorar-titulo">Explorar</h2>
+          </header>
 
-        <div className="hd-dupla" id="hd-assinante">
-          <div className="hd-moldura"><CaixasAssinante /></div>
-          <div className="hd-moldura"><VitrineAssinante /></div>
-        </div>
+          {/* O cronograma vale muito: quem ainda não tem um vê o convite antes da galeria. */}
+          {!cronograma.premium && !cronograma.carregando && <div className="jn-quadro"><CartaoCronograma cronograma={cronograma} /></div>}
+          {cronograma.premium && calculo && (calculo.naRetaFinal || calculo.provaPassou) && <div className="jn-quadro"><CartaoCronograma cronograma={cronograma} /></div>}
 
-        {/* Depois do estudo do dia, não antes: a novidade não pode empurrar a ação principal para baixo. */}
-        {cronogramaNoPainel && <div className="hd-moldura"><NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} /></div>}
-        {!calculo && !cronograma.carregando && respondidasTotal < 30 && <div className="hd-moldura"><AteAProva total={indice!.total} conta={Boolean(conta)} /></div>}
+          <div className="jn-galeria" id="hd-galeria">
+            {bibliotecaVisivel() && <div className="jn-quadro jn-quadro--largo"><EstanteResumos /><GatoPixel estado="lendo" className="jn-quadro__gato" /></div>}
+            <div className="jn-quadro"><QuadroAtlas /></div>
+          </div>
 
-        <div className="hd-dupla hd-dupla--rodape" id="hd-trofeus">
-          <BlocoRanking conta={Boolean(conta)} conquistadas={conquistadas} totalConquistas={totalConquistas} sequencia={streak.atual} />
-          <div className="hd-moldura"><CartaoPlanos /></div>
-        </div>
-        <div className="hd-moldura"><SecaoIndique /></div>
+          <section className="jn-temas" id="hd-temas" aria-labelledby="ip-temas-titulo">
+            <header className="jn-subcabeca">
+              <h3 id="ip-temas-titulo">Treinar por tema</h3>
+              <p>Um toque monta a sessão do tema. A névoa sai conforme você passa por ele.</p>
+            </header>
+            <ul className="jn-regioes">
+              {temas.map((tema, i) => {
+                const quantidade = contagens!.porTema[tema.slug] ?? 0
+                const feitas = Math.min(quantidade, respondidasPorTema[tema.slug] ?? 0)
+                const porcento = quantidade ? Math.round((feitas / quantidade) * 100) : 0
+                return (
+                  <li key={tema.slug}>
+                    <a className={'jn-regiao' + (feitas > 0 ? '' : ' jn-regiao--nova')} href={href(`/treinar?areas=${AREAS_TREINO.join(',')}&temas=${tema.slug}`)}
+                      style={{ '--nevoa': `${100 - Math.max(feitas > 0 ? 2 : 0, porcento)}%`, '--i': i } as CSSProperties}>
+                      <span className="jn-regiao__nome">{tema.nome}</span>
+                      <span className="jn-regiao__pct numerico">{feitas > 0 ? `${Math.max(1, porcento)}%` : 'Novo'}</span>
+                      <span className="jn-regiao__trilho" aria-hidden="true"><span style={{ width: `${Math.max(feitas > 0 ? 2 : 0, porcento)}%` }} /></span>
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+          </section>
+
+          {/* Depois do estudo do dia, não antes: a novidade não pode empurrar a ação principal para baixo. */}
+          {cronogramaNoPainel && <div className="jn-quadro"><NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} /></div>}
+          {FLASHCARDS_NA_CAPA && (
+            <a className="jn-torneio" href={href('/flashcards/cripta')}>
+              <img src={recurso('pixel/inicio/atalho-cripta.png')} width={64} height={64} alt="" loading="lazy" decoding="async" />
+              <span><strong>Torneio de Flashcards</strong><small>Os flashcards no modo jogo: chaves, rodadas e o seu nome no topo.</small></span>
+              <Icone nome="direita" tamanho={18} />
+            </a>
+          )}
+
+          <div className="jn-dupla" id="hd-assinante">
+            <div className="jn-quadro"><CaixasAssinante /></div>
+            <div className="jn-quadro"><VitrineAssinante /></div>
+          </div>
+          {!calculo && !cronograma.carregando && respondidasTotal < 30 && <div className="jn-quadro"><AteAProva total={indice!.total} conta={Boolean(conta)} /></div>}
+
+          <div className="jn-dupla jn-dupla--rodape">
+            <div className="jn-quadro"><CartaoPlanos /></div>
+            <div className="jn-quadro"><SecaoIndique /></div>
+          </div>
+          <ConviteInstagram />
+        </section>
       </>}
     </div>
   )

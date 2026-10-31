@@ -98,7 +98,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
             className="botao-icone cabecalho__tema"
             onClick={alternar}
             aria-label="Alternar entre tema claro e escuro"
-            title="Alternar tema"
+            title="Alternar tema (mais opções em Minha conta › Aparência)"
           >
             <span className="so-impressao" />
             <TemaIcone />

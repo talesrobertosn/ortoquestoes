@@ -82,6 +82,12 @@
         try {
           // O app grava o tema em JSON ("escuro", com aspas); aceita os dois formatos.
           var t = (localStorage.getItem('ortoquestoes:tema') || '').replace(/"/g, '')
+          if (t === 'horario') {
+            // Interface que segue o horário: escura das 18h às 5h (hora de Brasília), como o cenário.
+            var h = Number(new Intl.DateTimeFormat('en-US', { hour: 'numeric', hourCycle: 'h23', timeZone: 'America/Sao_Paulo' }).format(new Date()))
+            t = h >= 5 && h < 18 ? 'claro' : 'escuro'
+          }
+          if (t === 'sistema') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro'
           if (t !== 'claro' && t !== 'escuro') t = 'claro'
           var claro = t === 'claro'
           document.documentElement.dataset.tema = claro ? 'claro' : 'escuro'

@@ -8,6 +8,8 @@ description: Fluxo de arte do Orto Questões aprovado pelo Tales (30/10/2026) �
 O Tales disse (30/10/2026): "agora está do jeito que eu sempre quis". A arte é o ponto forte do site e o que vende.
 **Não economize processamento nem tokens na arte.** Detalhe extremo, mesmo em coisas simples.
 
+Antes de pintar, leia `DESIGN.md` (raiz): a arte é a camada colorida; a interface em volta segue os tokens dele.
+
 ## Regras que não mudam
 
 1. **Arte original, feita por código.** Cada pixel sai de um script Python (numpy + PIL) do repositório. Nada baixado,
@@ -63,7 +65,9 @@ rosto de frente com dentes. Rosto escolhido em 31/10/2026 ("modelo E, sem boca")
 nem dentes, órbita grande com aro de osso claro e a outra estreita na borda, fundo cinza-escuro sem brilho, nariz
 pequeno embaixo à esquerda (`ROSTO=tres_quartos`, o padrão do script; os outros modelos ficam no script só para
 comparação). Ao trocar a folha, mude o `?v=` em `sprites.ts` (o service worker guarda a arte antiga). Antes de mudar o
-rosto, mande modelos lado a lado. Comportamento novo = nova linha no script +
+rosto, mande modelos lado a lado. Poses fixas novas (31/10/2026: estudioso, mago, inverno, pergaminho, comemorando, trofeu,
+descansando, orientando, ortopedia; gato sentado, andando, espreguicando, brincando, lendo, comemorando) ficam em
+`esqueleto-poses.png` e `gato-poses.png`, fora do sorteio do topo. Comportamento novo = nova linha no script +
 `sprites.ts` + 8 a 10 falas. No cenário, o mascote e o gato recebem a luz da hora do dia (filtros em `InicioHd.css`).
 
 ## Montar na tela

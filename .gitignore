@@ -52,3 +52,10 @@ tsconfig.tsbuildinfo
 /public/llms.txt
 /public/llms-full.txt
 .capturas/
+
+# Saídas geradas pelas ferramentas de design
+scripts/design/.saida-teste/
+marketing/instagram/exemplos/*/png/
+
+# Saída do exemplo da skill instagram-carrossel (gerada por .claude/skills/instagram-carrossel/exemplo.json)
+marketing/instagram/exemplos/

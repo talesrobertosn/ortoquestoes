@@ -14,10 +14,12 @@ Composição: os 45% da esquerda ficam calmos e mais escuros (o texto da seção
 com as velas (centro) e a vitrine com o esqueleto (terço direito).
 Gera em public/pixel/inicio/: secao-atlas.webp (1440 x 480) e secao-atlas-960.webp (960 x 320).
 Uso: python3 scripts/gerar_cena_atlas.py
+     python3 scripts/gerar_cena_atlas.py --paginas [manha|tarde|noite]   (página Atlas, em public/pixel/paginas/)
 """
 from __future__ import annotations
 
 import math
+import sys
 from functools import lru_cache
 from pathlib import Path
 
@@ -25,7 +27,14 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 PASTA = Path(__file__).resolve().parents[1] / "public" / "pixel" / "inicio"
+PASTA_PAGINAS = Path(__file__).resolve().parents[1] / "public" / "pixel" / "paginas"
 W, H, ESC = 480, 160, 3
+PERIODOS = ("manha", "tarde", "noite")
+# Hora do dia da versão da página Atlas. None = a versão da página inicial (secao-atlas), intacta.
+PERIODO: str | None = None
+# Nas páginas, a mesa vai 30 px para a esquerda e a vitrine 26 px para a direita: o assoalho de x 330-380 fica livre
+# para o mascote (o globo do canto sai, porque a vitrine passa a ocupar o lugar dele).
+DX_MESA, DX_VITRINE = -30, 26
 
 # Pontos de referência da cena (em pixels da arte).
 CHAMAS = [(215.5, 81.0, 0.85), (327.5, 77.0, 1.05), (336.5, 88.0, 0.85)]  # x, y, força de cada vela
@@ -311,13 +320,28 @@ def janela() -> tuple[Camada, Camada]:
         for x in range(x0, x1 + 1):
             if dentro(x, y, 2):
                 t = (y - y0) / (y1 - y0)
-                e.p(x, y, misturar("#0c1838", "#2a3e70", t))
-    for _ in range(26):
+                ceu_ = {"manha": ("#4a86d4", "#cfe4f2"), "tarde": ("#6a4a8a", "#ffb870")}.get(PERIODO, ("#0c1838", "#2a3e70"))
+                e.p(x, y, misturar(*ceu_, t))
+    if PERIODO in ("manha", "tarde"):
+        nv = ruido(9, 6)
+        for y in range(y0, y1 + 1):
+            for x in range(x0, x1 + 1):
+                if dentro(x, y, 2) and nv[y, x] - 0.55 - abs(y - y0 - 36) / 70 > 0:
+                    e.p(x, y, "#ffffff" if PERIODO == "manha" else "#ffd0a0", 0.75)
+        sx_, sy_, r_ = (x0 + 14, y0 + 12, 3.2) if PERIODO == "manha" else (x0 + 30, y1 - 18, 4.2)
+        for y in range(y0, y1 + 1):
+            for x in range(x0, x1 + 1):
+                d = math.hypot(x - sx_, y - sy_)
+                if dentro(x, y, 2) and d < r_ * 4:
+                    e.p(x, y, "#fff4d0" if PERIODO == "manha" else "#ffd070", (1 - d / (r_ * 4)) ** 2 * 0.8)
+                if dentro(x, y, 2) and d < r_:
+                    e.p(x, y, "#fffbe8")
+    for _ in range(26 if PERIODO not in ("manha", "tarde") else 0):
         x, y = x0 + 3 + int(g.random() * (x1 - x0 - 6)), y0 + 3 + int(g.random() * 40)
         if dentro(x, y, 3):
             e.p(x, y, "#c8d4ff", 0.4 + g.random() * 0.5)
     lx, ly = x0 + 13, y0 + 16
-    for y in range(ly - 5, ly + 6):
+    for y in range(ly - 5, ly + 6) if PERIODO not in ("manha", "tarde") else ():
         for x in range(lx - 5, lx + 6):
             d = math.hypot(x - lx, y - ly)
             if d <= 4.3:
@@ -328,10 +352,11 @@ def janela() -> tuple[Camada, Camada]:
         alt = y1 - 12 + int(3 * math.sin(x * 0.5)) + (-5 if 28 < x < 33 else 0) + (-3 if 44 < x < 50 else 0)
         for y in range(alt, y1 + 1):
             if dentro(x, y, 2):
-                e.p(x, y, "#0a1022")
-    e.p(30, y1 - 13, "#ffcf7a")
-    e.p(46, y1 - 9, "#ffcf7a", 0.8)
-    e.p(20, y1 - 6, "#ffcf7a", 0.6)
+                e.p(x, y, {"manha": "#7a8aa8", "tarde": "#3a2232"}.get(PERIODO, "#0a1022"))
+    if PERIODO != "manha":
+        e.p(30, y1 - 13, "#ffcf7a")
+        e.p(46, y1 - 9, "#ffcf7a", 0.8)
+        e.p(20, y1 - 6, "#ffcf7a", 0.6)
     # Moldura, caixilhos e peitoril (albedo).
     for y in range(y0 - 2, y1 + 3):
         for x in range(x0 - 2, x1 + 3):
@@ -1300,6 +1325,8 @@ def vitrine(sk: Camada) -> tuple[Camada, Camada, Camada, Camada]:
 def globo() -> Camada:
     """Globo terrestre num tripé, no canto direito, recortado pela borda da imagem."""
     c = Camada()
+    if PERIODO is not None:
+        return c
     gx, gy, r = 467, 98, 11
     g = ruido(71, 4)
     for y in range(int(gy - r), int(gy + r) + 1):
@@ -1636,7 +1663,215 @@ def montar() -> Image.Image:
     return Image.fromarray(np.clip(img * 255, 0, 255).astype(np.uint8))
 
 
+def montar_hora() -> Image.Image:
+    """O gabinete de anatomia numa hora do dia (página Atlas): a hora entra pela janela da esquerda (sol da manhã,
+    poente comprido, luar) e pelas velas (apagadas de manhã, acesas à tarde e à noite). A luminária da vitrine fica acesa
+    sempre, mais forte à noite."""
+    P = PERIODO
+    k_vela = {"manha": 0.0, "tarde": 0.6, "noite": 1.0}[P]
+    k_vit = {"manha": 0.55, "tarde": 0.75, "noite": 1.0}[P]
+    cor_j = {"manha": "#fff0d4", "tarde": "#ffa860", "noite": "#8aa8f0"}[P]
+    # Camadas desenhadas em pixel art.
+    c_parede = parede()
+    c_janela, e_janela = janela()
+    c_estante = estante()
+    c_mapa = mapa_anatomico()
+    c_prat = prateleiras_direita()
+    c_chao = chao()
+    c_mesa = mesa()
+    c_obj, c_velas, e_chamas = objetos_mesa()
+    for cam in (c_mesa, c_obj, c_velas, e_chamas):  # a mesa e tudo o que está nela vão para a esquerda
+        cam.c = np.roll(cam.c, DX_MESA, 1)
+    if P == "manha":
+        e_chamas = Camada()
+    c_esq = esqueleto(*ESQ)
+    c_esq.contornar("#061212", 0.6)
+    v_fundo, v_mold, e_vidro, v_sup = vitrine(c_esq)
+    c_globo = globo()
+    c_frente = primeiro_plano()
+    c_chao_obj = objetos_chao()
+
+    # Sombras projetadas na parede pelas velas (só as coisas acima da chama fazem sombra para cima).
+    obj_parede = c_prat.c[:, :, 3] > 0.5
+    obj_mesa = c_obj.c[:, :, 3] > 0.5
+    sombra_vela = []
+    for (lx, ly, _) in CHAMAS:
+        s = np.maximum(sombra_projetada(obj_parede, (lx, ly), 0.16), sombra_projetada(obj_mesa, (lx, ly), 0.55) * 0.8)
+        sombra_vela.append(desfocar(ampliar(s[:, :, None]), 4)[:, :, 0])
+
+    # Composição do albedo, de trás para a frente, com a profundidade de campo de cada plano.
+    img = np.zeros((H * ESC, W * ESC, 3), dtype=np.float32)
+    planos = [(c_parede, 0.6), (c_janela, 1.0), (c_estante, 1.1), (c_mapa, 0.3), (c_prat, 0.2)]
+    for cam, r in planos:
+        img = sobre(img, desfocar_rgba(ampliar(cam.c), r))
+    frente_alfa = np.zeros(img.shape[:2], dtype=np.float32)
+    for cam, r in ((c_chao, 0.3), (c_chao_obj, 0.4), (c_globo, 0.9), (v_fundo, 1.0), (v_sup, 0), (c_esq, 0), (v_mold, 0), (c_mesa, 0),
+                   (c_obj, 0), (c_velas, 0)):
+        a = desfocar_rgba(ampliar(cam.c), r)
+        img = sobre(img, a)
+        frente_alfa = np.maximum(frente_alfa, a[:, :, 3])
+    eh_parede = 1 - np.clip(frente_alfa, 0, 1)
+
+    # Sombra embaixo da mesa e da vitrine, e contato no assoalho.
+    ao = Camada()
+    for y in range(124, 150):
+        for x in range(192 + DX_MESA, 356 + DX_MESA):
+            t = (y - 124) / 26
+            ao.p(x, y, "#000000", 0.8 * min(1, 1.6 * (1 - abs(x - 274 - DX_MESA) / 90)) * (1 - t * 0.55))
+    for x in range(350 + DX_VITRINE, 452 + DX_VITRINE):
+        ao.ret(x, 144, 1, 4, "#000000", 0.35 * (1 - abs(x - 401 - DX_VITRINE) / 60))
+    sombra_ao = desfocar_rgba(ampliar(ao.c), 6)
+    img = img * (1 - sombra_ao[:, :, 3:4])
+
+    # Luz: ambiente frio (multiplica) + velas, vitrine e luar (somam).
+    amb = hexa({"manha": "#a0a6c4", "tarde": "#8a6a7a", "noite": "#3a4a7e"}[P]) * {"manha": 0.68, "tarde": 0.5, "noite": 0.4}[P]
+    luz = np.zeros_like(img) + amb
+    for i, (lx, ly, k) in enumerate(CHAMAS):
+        poca = luz_de_vela(lx, ly, 105, 0.78, i + 1)[:, :, None] * hexa("#ff9440") * 1.25 * k * k_vela
+        miolo = luz_pontual(lx, ly, 30, 0.9)[:, :, None] * hexa("#ffd890") * 0.9 * k * k_vela
+        bloqueio = (1 - sombra_vela[i] * eh_parede * 0.85)[:, :, None]
+        luz += (poca + miolo) * bloqueio
+    gx0, gy0, gx1, gy1 = VIDRO
+    interior = ((XS >= gx0 * ESC) & (XS < (gx1 + 1) * ESC) & (YS >= gy0 * ESC) & (YS < (gy1 + 1) * ESC)).astype(np.float32)
+    interior = desfocar(interior[:, :, None], 2)[:, :, 0]
+    ciano = hexa("#62e6f0")
+    luz += interior[:, :, None] * (luz_pontual(ESQ[0], gy0, 75, 1.4)[:, :, None] * ciano * 1.15 + ciano * 0.2) * k_vit
+    luz += luz_pontual(ESQ[0], 140, 70, 0.35)[:, :, None] * hexa("#3ab8d0") * 0.55 * (1 - interior[:, :, None]) * k_vit
+    luz += luz_pontual(ESQ[0] + 10, 80, 105, 0.9)[:, :, None] * hexa("#3ab8d0") * 0.38 * (1 - interior[:, :, None]) * k_vit
+    # Luar: em volta da janela e a mancha dos caixilhos no assoalho.
+    jx0, jy0, jx1, jy1 = JANELA
+    k_jan = {"manha": 1.6, "tarde": 1.4, "noite": 1.0}[P]
+    luz += luz_pontual((jx0 + jx1) / 2, 50, 45, 1.2)[:, :, None] * hexa(cor_j) * 0.35 * k_jan
+    luz += luz_pontual(90, 70, 150, 0.7)[:, :, None] * hexa(cor_j) * 0.22 * k_jan  # claridade difusa na estante
+    if P != "noite":  # a luz do dia que entra rebate pela sala inteira
+        luz += luz_pontual(200, 110, 260, 0.6)[:, :, None] * hexa(cor_j) * (0.3 if P == "manha" else 0.16)
+    mancha = Camada()
+    # de manhã a mancha cai mais perto da janela; à tarde, sol baixo, ela se estica pelo assoalho até a mesa
+    estica = {"manha": 0.8, "tarde": 2.1, "noite": 1.0}[P]
+    for y in range(PAREDE_CHAO + 4, H):
+        t = (y - PAREDE_CHAO - 4) / 34
+        a = 40 + t * 46 * estica
+        for x in range(int(a), int(a + 42 + t * 14)):
+            u = (x - a) / (42 + t * 14)
+            caixilho = abs(u - 0.5) < 0.04 or abs(t - 0.45) < 0.05
+            if not caixilho:
+                mancha.p(x, y, "#ffffff", 0.9)
+    mancha_l = desfocar_rgba(ampliar(mancha.c), 2.5)[:, :, 3]
+    luz += mancha_l[:, :, None] * hexa(cor_j) * {"manha": 0.75, "tarde": 0.7, "noite": 0.55}[P]
+    chao_m = (YS > PAREDE_CHAO * ESC).astype(np.float32)[:, :, None]
+    luz += luz_pontual(272 + DX_MESA, 152, 120, 0.3)[:, :, None] * hexa("#ff9a50") * 0.75 * chao_m * k_vela
+    # A vela não recebe toda a luz da própria chama (senão vira um bloco branco).
+    velas_a = ampliar(c_velas.c)[:, :, 3:4]
+    luz = luz * (1 - 0.5 * velas_a) + amb * 0.5 * velas_a
+    img = img * luz
+
+    # Emissivos: céu da janela, reflexos do vidro, luminária da vitrine e as chamas com halo.
+    jan = desfocar_rgba(ampliar(e_janela.c), 1.0)
+    img = sobre(img, jan * np.array({"manha": [0.95, 0.95, 0.98, 1], "tarde": [1, 0.92, 0.85, 1],
+                                     "noite": [0.85, 0.85, 0.95, 1]}[P], dtype=np.float32))
+    vid = ampliar(e_vidro.c)
+    img = img + vid[:, :, :3] * vid[:, :, 3:4] * 1.1 * (0.6 + 0.4 * k_vit)
+    cham = ampliar(e_chamas.c)
+    img = sobre(img, cham)
+    halo = desfocar(cham[:, :, :3] * cham[:, :, 3:4], 5) * 1.6 + desfocar(cham[:, :, :3] * cham[:, :, 3:4], 18) * 1.4
+    img += halo * hexa("#ffb060")
+    for (lx, ly, k) in CHAMAS:  # brilho alongado para cima, como chama que dança
+        img += luz_pontual(lx, ly - 5, 5, 2.6)[:, :, None] * hexa("#ffc880") * 0.22 * k * k_vela
+
+    # Cone de luz da luminária da vitrine, com poeira fria flutuando dentro.
+    tv = np.clip((YS / ESC - gy0) / (gy1 - gy0), 0, 1)
+    cone = np.exp(-((XS - ESQ[0] * ESC) / ((14 + tv * 30) * ESC)) ** 2 * 2) * (1 - tv * 0.7) * interior
+    img += desfocar(cone[:, :, None], 4) * hexa("#5ad8e8") * 0.16 * k_vit
+    gc = np.random.default_rng(78)
+    for _ in range(70):
+        x = int((gx0 + 3 + gc.random() * (gx1 - gx0 - 6)) * ESC)
+        y = int((gy0 + 4 + gc.random() * (gy1 - gy0 - 12)) * ESC)
+        img[y:y + 2, x:x + 2] += hexa("#b8f4ff") * (0.15 + gc.random() * 0.35) * (0.4 + cone[y, x])
+
+    # Reflexos no verniz: as chamas no tampo da mesa e a vitrine no assoalho.
+    refl = np.zeros(img.shape[:2], dtype=np.float32)
+    for (lx, ly, k) in CHAMAS:
+        refl += luz_pontual(lx, 110.5, 4, 2.2) * k
+    tampo = ((YS >= 97 * ESC) & (YS < 112 * ESC)).astype(np.float32)
+    img += desfocar((refl * tampo)[:, :, None], 2) * hexa("#ffb870") * 0.35 * k_vela
+    piso = (YS > 145 * ESC).astype(np.float32)
+    rv = np.exp(-((XS - ESQ[0] * ESC) / (34 * ESC)) ** 2 * 2) * np.clip(1 - (YS / ESC - 145) / 16, 0, 1) * piso
+    img += rv[:, :, None] * hexa("#4ac0d8") * 0.10
+
+    # Feixe de luar volumétrico, da janela até o chão, e poeira suspensa (mais visível perto das velas).
+    t = np.clip((YS / ESC - 40) / 100, 0, 1)
+    centro = (34 + t * 60 * estica) * ESC
+    feixe = np.exp(-((XS - centro) / ((16 + t * 12) * ESC)) ** 2 * 2) * (YS > 40 * ESC) * (1 - t * 0.5)
+    img += desfocar(feixe[:, :, None], 6) * hexa(cor_j) * {"manha": 0.3, "tarde": 0.3, "noite": 0.13}[P]
+    g = np.random.default_rng(77)
+    poeira = np.zeros(img.shape[:2], dtype=np.float32)
+    calor = sum(luz_pontual(lx, ly, 60, 0.9) for (lx, ly, _) in CHAMAS) * k_vela + feixe * (0.6 if P == "noite" else 1.0)
+    for _ in range(1600):
+        x, y = int(g.random() * W * ESC), int(g.random() * H * ESC)
+        k = calor[y, x]
+        if k > 0.08 and g.random() < k:
+            tam = 1 if g.random() < 0.7 else 2
+            poeira[y:y + tam, x:x + tam] += 0.5 + g.random() * 0.5
+    poeira = desfocar(np.clip(poeira, 0, 1)[:, :, None], 0.7)
+    img += poeira * hexa("#ffdca0" if P != "manha" else "#fff4e0") * 0.7
+
+    # Primeiro plano desfocado e escurecido.
+    frente = desfocar_rgba(ampliar(c_frente.c), 8)
+    img = sobre(img, frente * np.array([0.22, 0.2, 0.22, 1], dtype=np.float32))
+
+    # Brilho (bloom) das luzes fortes.
+    lum = img.mean(2, keepdims=True)
+    claro = np.clip(img * (lum > 0.75), 0, 2)
+    img += desfocar_f(claro, 14) * 0.45
+
+    # Curva de tom suave (as velas e as páginas não estouram no branco).
+    joelho = 0.7
+    img = np.where(img < joelho, img, joelho + (1 - joelho) * (1 - np.exp(-(img - joelho) / (1 - joelho))))
+
+    # Correção de cor: altas luzes quentes, sombras frias; contraste.
+    quente, fria = (hexa(c_) for c_ in {"manha": ("#fff0d4", "#22345e"), "tarde": ("#ffcf90", "#2a1a3a"),
+                                         "noite": ("#ffd08a", "#0c1a34")}[P])
+    lum = np.clip(img.mean(2, keepdims=True), 0, 1)
+    img = img * (0.78 + 0.22 * (lum * quente + (1 - lum) * (fria * 0.5 + 0.5)))
+    img = np.clip((img - 0.5) * 1.06 + 0.5, 0, 1.3)
+
+    # A esquerda (onde fica o texto) mais calma: menos contraste e um pouco mais escura.
+    xn = XS / (W * ESC)
+    calma = np.clip((0.52 - xn) / 0.14, 0, 1)[:, :, None]
+    media = desfocar_f(np.clip(img, 0, 1.3), 18)
+    img = media + (img - media) * (1 - 0.4 * calma)
+    img *= 1 - 0.08 * calma
+
+    # Vinheta e grão.
+    v = ((xn - 0.58) ** 2 * 1.2 + (YS / (H * ESC) - 0.45) ** 2 * 1.3)
+    img *= (1 - np.clip(v - 0.05, 0, 1) * 1.0)[:, :, None]
+    img += (g.random(img.shape[:2]).astype(np.float32)[:, :, None] - 0.5) * 0.02
+    return Image.fromarray(np.clip(img * 255, 0, 255).astype(np.uint8))
+
+
 def main() -> None:
+    """Sem argumentos: a seção da página inicial (public/pixel/inicio/secao-atlas).
+    Com --paginas [manha|tarde|noite]: a página Atlas em public/pixel/paginas/atlas-<hora>(-960).webp."""
+    global PERIODO, CHAMAS, VITRINE, VIDRO, ESQ
+    args = sys.argv[1:]
+    if "--paginas" in args:
+        PASTA_PAGINAS.mkdir(parents=True, exist_ok=True)
+        orig = (CHAMAS, VITRINE, VIDRO, ESQ)
+        CHAMAS = [(x + DX_MESA, y, k) for (x, y, k) in orig[0]]
+        VITRINE = (orig[1][0] + DX_VITRINE, orig[1][1], orig[1][2] + DX_VITRINE, orig[1][3])
+        VIDRO = (orig[2][0] + DX_VITRINE, orig[2][1], orig[2][2] + DX_VITRINE, orig[2][3])
+        ESQ = (orig[3][0] + DX_VITRINE, orig[3][1])
+        for p in [a for a in args if a in PERIODOS] or list(PERIODOS):
+            PERIODO = p
+            img = montar_hora()
+            nome = f"atlas-{p}"
+            img.save(PASTA_PAGINAS / f"{nome}.webp", quality=84, method=6)
+            img.resize((960, 320), Image.LANCZOS).save(PASTA_PAGINAS / f"{nome}-960.webp", quality=84, method=6)
+            print(nome, (PASTA_PAGINAS / f"{nome}.webp").stat().st_size // 1024, "KB,",
+                  (PASTA_PAGINAS / f"{nome}-960.webp").stat().st_size // 1024, "KB (960)")
+        PERIODO = None
+        CHAMAS, VITRINE, VIDRO, ESQ = orig
+        return
     PASTA.mkdir(parents=True, exist_ok=True)
     img = montar()
     img.save(PASTA / "secao-atlas.webp", quality=85, method=6)

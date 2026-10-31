@@ -1,5 +1,5 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
 // --sn: o Simulado Nacional de outubro no Supabase falso (e o relógio do navegador no momento do cenário):
 //   antes (não inscrito) | inscrito | aberto | andamento | entregue (resultado e ranking) | encerrado | ausente (sem a parte 32: 404)
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
@@ -238,8 +238,21 @@ function usuarioFalso(id) {
 const marcasNoServidor = () => linhas.filter((l) => l.tipo === 'biblioteca' && l.item.startsWith('m.') && l.valor && !l.valor.apagadaEm)
 
 // ---------------- Site e navegador ----------------
-const site = await createServer({ server: { port: 5300 + Math.floor(Math.random() * 500), strictPort: false }, logLevel: 'error' })
-await site.listen()
+// --producao: mede o build de produção (vite build + preview) em vez do servidor de desenvolvimento, que injeta o CSS
+// por JavaScript e distorce o LCP e o CLS. O build vai para uma pasta temporária e é apagado no fim.
+const PRODUCAO = process.argv.includes('--producao')
+let site, pastaBuild = null
+if (PRODUCAO) {
+  const { build, preview } = await import('vite')
+  const { mkdtempSync } = await import('node:fs')
+  const { tmpdir } = await import('node:os')
+  pastaBuild = mkdtempSync(`${tmpdir()}/oq-build-`)
+  await build({ logLevel: 'error', build: { outDir: pastaBuild, emptyOutDir: true } })
+  site = await preview({ build: { outDir: pastaBuild }, preview: { port: 5300 + Math.floor(Math.random() * 500), strictPort: false }, logLevel: 'error' })
+} else {
+  site = await createServer({ server: { port: 5300 + Math.floor(Math.random() * 500), strictPort: false }, logLevel: 'error' })
+  await site.listen()
+}
 const BASE = site.resolvedUrls.local[0]
 const navegador = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
 const erros = []
@@ -309,4 +322,5 @@ for (const [nome, vp, esc] of [['cel', { width: 390, height: 844 }, 2], ['pc', {
   await contexto.close()
 }
 console.log(erros.length ? erros : 'sem erros', '→', TELAS + PREF + '-{cel,pc}[-dobra].png')
-await navegador.close(); await site.close()
+await navegador.close(); await (site.close ? site.close() : new Promise((ok) => site.httpServer.close(ok)))
+if (pastaBuild) (await import('node:fs')).rmSync(pastaBuild, { recursive: true, force: true })

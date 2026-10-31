@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { ler, gravar } from '../../estado/armazenamento'
-import { COMPORTAMENTOS, fantasiaDoMes, type Fantasia, type IdComportamento } from './comportamentos'
-import { SPRITE_ESQUELETO, linhaEsqueleto, LINHAS_ESQUELETO } from './sprites'
+import { COMPORTAMENTOS, entraNoSorteio, fantasiaDoMes, type Fantasia, type IdComportamento } from './comportamentos'
+import { SPRITE_ESQUELETO, folhaEsqueleto } from './sprites'
 import { urlCss } from '../../config'
 import { FALAS, FALAS_GERAIS, FALAS_HALLOWEEN } from './falas'
 import './Mascote.css'
@@ -22,9 +22,10 @@ function sortear<T>(lista: readonly T[], evitar?: T): T {
   return opcoes[Math.floor(Math.random() * opcoes.length)]
 }
 
-/** Os comportamentos do sorteio: no mês da fantasia, só os dela (com o manto); fora dele, os do dia a dia. */
+/** Os comportamentos do sorteio: no mês da fantasia, só os dela (com o manto); fora dele, os do dia a dia.
+ * As linhas com sorteio: false ficam de fora (só aparecem por id). */
 function sorteio(fantasia: Fantasia): IdComportamento[] {
-  return COMPORTAMENTOS.filter((c) => c.halloween === (fantasia === 'halloween')).map((c) => c.id)
+  return COMPORTAMENTOS.filter((c) => entraNoSorteio(c) && c.halloween === (fantasia === 'halloween')).map((c) => c.id)
 }
 
 export function Mascote({ comportamento, fantasia: fixa, falar = true, interativo = true, className = '', style }: {
@@ -77,9 +78,10 @@ export function Mascote({ comportamento, fantasia: fixa, falar = true, interativ
   }
 
   const nome = COMPORTAMENTOS.find((c) => c.id === atual)?.nome ?? ''
+  const folha = folhaEsqueleto(atual)
   const desenho = (
     <span className="mascote__sprite" aria-hidden="true" style={{
-      '--sprite': urlCss(SPRITE_ESQUELETO.src.slice(1)), '--linha': linhaEsqueleto(atual), '--linhas': LINHAS_ESQUELETO.length,
+      '--sprite': urlCss(folha.src.slice(1)), '--linha': folha.linha, '--linhas': folha.linhas,
       '--quadros': SPRITE_ESQUELETO.quadrosPorLinha, '--dur': atual === 'dormir' ? '2.6s' : atual === 'malabares' || atual === 'acenar' ? '1.1s' : '1.5s',
     } as CSSProperties} />
   )

@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
-import { SPRITE_GATO, LINHAS_GATO, linhaGato } from '../../mascote/sprites'
+import { folhaGato } from '../../mascote/sprites'
 import { urlCss } from '../../../config'
+import type { Periodo } from '../../../estado/aparencia'
 
 /**
  * O cenário "HD-2D" do topo da página inicial (30/10/2026, pedido do Tales com o Octopath Traveler II de referência).
@@ -14,12 +15,7 @@ import { urlCss } from '../../../config'
  * O esqueleto é o mascote (componentes/mascote): faz uma coisa diferente a cada visita e fala; dois cliques no gato
  * e ele aparece com uma tala.
  */
-export type Periodo = 'manha' | 'tarde' | 'noite'
-
-export function periodoAgora(d = new Date()): Periodo {
-  const h = Number(new Intl.DateTimeFormat('en-US', { hour: 'numeric', hourCycle: 'h23', timeZone: 'America/Sao_Paulo' }).format(d))
-  return h >= 5 && h < 12 ? 'manha' : h >= 12 && h < 18 ? 'tarde' : 'noite'
-}
+export { periodoAgora, type Periodo } from '../../../estado/aparencia'
 
 /** Posição e tamanho em porcentagem do palco, a partir de pixels da arte (480 x 200). */
 const lugar = (x: number, y: number, w: number, h: number): CSSProperties => ({ left: `${(x / 480) * 100}%`, top: `${(y / 200) * 100}%`, width: `${(w / 480) * 100}%`, height: `${(h / 200) * 100}%` })
@@ -65,7 +61,7 @@ export function CenaDiorama({ linhaFogo, periodo }: { linhaFogo: number; periodo
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" tabIndex={-1} className="hd-gato" style={lugar(219, 150, 36, 22.5)}
           onClick={() => definirGato((g) => (g === 'dormindo' ? 'acordado' : 'tala'))}>
-          <span className="hd-gato__sprite" style={{ '--sprite': urlCss(SPRITE_GATO.src.slice(1)), '--linha': linhaGato(gato), '--linhas': LINHAS_GATO.length } as CSSProperties} />
+          <span className="hd-gato__sprite" style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas } as CSSProperties} />
         </button>
         {gato === 'tala' && <span className="hd-balao" style={{ left: `${(237 / 480) * 100}%`, top: `${(148 / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
         <span className="hd-particulas">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
