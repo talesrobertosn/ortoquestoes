@@ -235,6 +235,7 @@ Se caiu, a próxima PR é a de revisão daquilo, antes de seguir a fila. Se acho
 | Contexto da sessão cheio ou trabalho caindo de qualidade | Checkpoint e recomeço pela seção 2 |
 | Script `dumpq.py` sumiu de `/private/tmp` | Recrie (seção 4, etapa A) |
 | Simulado antigo reprovado no `auditar_estilo.py` | Reescrever no `lote_proj.py` com `id=`, mesma letra de gabarito, comentário refeito para a nova pergunta |
+| Conceito mantido que fala das alternativas antigas ("a alternativa certa...", "as erradas...") | O `estilo_base.py` dos lotes recusa; use `troca=[(velho, novo)]` no `Q()` para reescrever a frase |
 | Ferramenta que falta para um passo repetido | Crie o script em `scripts/`, com docstring e uso, e documente aqui |
 
 ## 13. Estado (atualize a cada PR)
