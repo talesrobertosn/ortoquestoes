@@ -3145,42 +3145,28 @@
   "conferido": false
  },
  "mao-0251": {
-  "conceito": "Os primeiros centros carpais a aparecer são os do **hamato e do capitato**, alternativa A. O resumo pediátrico os coloca antes de piramidal, semilunar e escafoide na cronologia de ossificação (Rockwood and Wilkins, 10ª edição, capítulo 8, anatomia, exame e remodelação).\n\nA radiografia mostra a parte **ossificada** dos ossos em desenvolvimento. Assim, não ver todos os ossos de um punho adulto numa criança pequena não significa que as estruturas estejam anatomicamente ausentes. É preciso combinar idade, dor, trauma e sequência de aparecimento dos núcleos para interpretar a imagem.\n\nA fonte situa o capitato até o primeiro ano e o hamato aos 4 meses; depois aparecem o piramidal no segundo ano, o semilunar no quarto e o escafoide no quinto. O pisiforme vem bem mais tarde, por volta de 9–10 anos. Esses marcos servem à comparação da pergunta: os dois centros iniciais pertencem ao par capitato/hamato, e não a uma combinação de um osso inicial com outro tardio.\n\n**Na prova: ** os nomes importam mais que decorar uma idade rígida para cada radiografia individual: capitato e hamato são o par precoce. A seção de ossificação do resumo permite comparar todas as alternativas, sem confundir desenvolvimento normal com fratura ou ausência de osso.",
-  "correta": "A. Hamato e capitato são os dois centros precoces descritos no resumo, antes do piramidal, semilunar e escafoide. A ordem inversa dos nomes dentro do par não altera a resposta à pergunta sobre quais aparecem primeiro.",
+  "conceito": "O carpo da criança aparece na radiografia aos poucos, e a ordem é tão regular que serve para estimar a idade óssea. O Rockwood and Wilkins' Fractures in Children (cap. 8, Fig. 8-1) descreve:\n- **capitato**: o **primeiro**, nos primeiros meses de vida e sempre até 1 ano;\n- **hamato**: logo depois, por volta de **4 meses**;\n- **piramidal**: no segundo ano;\n- **semilunar**: por volta do quarto ano;\n- **escafoide**: no quinto ano, do polo distal para o proximal;\n- **trapézio e trapezoide**: no quinto ano;\n- **pisiforme**: o último, no nono ou décimo ano.\n\nVista pelo dorso da mão esquerda, a sequência anda da fileira distal para a proximal em sentido anti-horário, começando pelos dois ossos grandes do centro da fileira distal. Por isso os dois primeiros são **capitato e hamato**: ossos grandes, centrais, que recebem os metacarpos.\n\nSaber a ordem tem uso prático: o escafoide ainda incompleto alarga o espaço escafossemilunar e simula o sinal de TERRY THOMAS, sem lesão.",
+  "correta": "**A) hamato e capitato.** São os primeiros centros de ossificação do carpo (Rockwood and Wilkins' Fractures in Children, cap. 8, Fig. 8-1).",
   "incorretas": {
-   "B": "O capitato está no grupo inicial, mas o escafoide surge mais tarde, por volta do quinto ano na fonte. Misturar um centro precoce com o escafoide não identifica o par dos primeiros núcleos.",
-   "C": "Escafoide e semilunar aparecem depois dos dois centros iniciais. O resumo situa o semilunar no quarto ano e o escafoide no quinto, distantes do aparecimento precoce de capitato e hamato.",
-   "D": "O piramidal é anterior ao semilunar na sequência descrita, mas ambos vêm depois de capitato e hamato. A pergunta não pede dois ossos consecutivos em qualquer ponto da cronologia, e sim o primeiro par.",
-   "E": "O hamato é precoce, porém o piramidal surge no segundo ano na descrição da fonte. A alternativa substitui o capitato por um centro posterior e, por isso, não reúne os dois primeiros."
+   "B": "**O escafoide** só ossifica no quinto ano.",
+   "C": "**Escafoide e semilunar** ossificam no quinto e no quarto ano.",
+   "D": "**Semilunar e piramidal** vêm no quarto e no segundo ano.",
+   "E": "**O piramidal** vem no segundo ano; o hamato está certo, mas o par não."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 8 (Fractures and Dislocations of the Hand and Carpal Bones in Children; Lindley Wall e Andrea S. Bauer), seção Osseous Anatomy (Secondary Ossification Centers), Fig. 8-1",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações da mão e do carpo na criança (rockwoodcriancas10-08-mao-carpo)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-08-mao-carpo",
-     "titulo": "Fraturas e luxações da mão e do carpo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
-     "secoes": [
-      "Anatomia, exame e remodelação"
-     ],
-     "blocos": [
-      "anatomia-exame-e-remodelacao-06a7a2e4"
-     ],
-     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
-     "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
-    }
-   ],
-   "questaoSha256": "def5ed7dd9ce4c21c72997ba7c4899de58c56c357d2aee8fe0269e8cbc78da0f",
-   "comentarioSha256": "c1753414a22a2a2f9849e32b0f02c2b13154ca978e2312f3f9f098d3848d5a0c"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-08-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 8, Fig. 8-1. Idade de aparecimento dos núcleos de ossificação do carpo e do rádio e ulna distais: capitato e hamato nos primeiros meses (6 a 8 meses na figura), piramidal 2 a 3 anos, semilunar 4 anos, escafoide 4 a 5 anos, trapézio 5 anos, trapezoide 6 anos; o pisiforme (não mostrado) aparece por volta de 6 a 8 anos.",
+    "largura": 1130,
+    "altura": 1530
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "mao-0252": {
   "incorretas": {
@@ -3687,41 +3673,27 @@
   }
  },
  "mao-0300": {
-  "conceito": "O resumo situa o início da ossificação do **escafoide no quinto ano**, compatível com a faixa **4–5 anos da alternativa C**. Esse aparecimento é mais tardio que o dos primeiros centros carpais, e acontece de **distal para proximal** (Rockwood and Wilkins, 10ª edição, capítulo 8, anatomia e ossificação).\n\nO núcleo radiográfico representa a ossificação em curso, não o tamanho final de um osso adulto. Por isso, a avaliação do punho infantil precisa levar em conta a idade e a porção já ossificada. A progressão distal–proximal pode fazer a relação entre os núcleos parecer diferente daquela do carpo maduro; o resumo alerta para uma aparência de falso Terry Thomas nesse contexto.\n\nA cronologia permite comparar as faixas: capitato e hamato aparecem no começo da vida; o piramidal vem depois; o semilunar é situado no quarto ano; e o escafoide, no quinto. O pisiforme é ainda mais tardio. Não se deve trocar a idade do escafoide pela de um centro que aparece antes, nem supor que o começo da ossificação signifique maturação completa imediata.\n\n**Na prova: ** para o escafoide infantil, marcar 4–5 anos entre as opções. A fonte consultada fornece o marco do quinto ano, e a alternativa C é a que o abrange. A seção de ossificação descreve também a direção distal–proximal.",
-  "correta": "C. A faixa 4–5 anos contém o quinto ano, no qual o resumo situa o aparecimento do núcleo do escafoide. O dado se refere ao início de sua visualização pela ossificação, e não à conclusão de todo seu desenvolvimento.",
+  "conceito": "O escafoide é um dos últimos ossos do carpo a ossificar. O Rockwood and Wilkins' Fractures in Children (cap. 8) diz que ele começa a ossificar no **quinto ano**, um pouco antes do trapézio, e a Fig. 8-1 marca **4 a 5 anos**. A ossificação começa no **polo distal** e avança para o **proximal**.\n\nDuas consequências que caem em prova:\n- o polo **proximal** é o último a ossificar, o que dificulta ver as fraturas proximais na criança;\n- enquanto o escafoide não completa a ossificação, o espaço entre ele e o semilunar parece largo: é o **falso sinal de TERRY THOMAS**, que não indica lesão escafossemilunar; a radiografia do outro lado esclarece.\n\nO escafoide também pode ter **vários centros** de ossificação, o que entra na discussão do escafoide bipartido.",
+  "correta": "**C) 4-5 anos.** O escafoide começa a ossificar no quinto ano (Rockwood and Wilkins' Fractures in Children, cap. 8, Fig. 8-1).",
   "incorretas": {
-   "A": "1–2 anos é cedo demais para o marco do escafoide apresentado na fonte. Essa parte da cronologia envolve centros que aparecem antes, como os primeiros ossos carpais e o piramidal, sem corresponder ao escafoide no quinto ano.",
-   "B": "3–4 anos termina antes do marco do quinto ano indicado para o escafoide. O semilunar é situado no quarto ano no resumo; transferir essa idade para o escafoide troca dois centros distintos.",
-   "D": "6–7 anos desloca o aparecimento para depois do marco descrito. A fonte situa o escafoide no quinto ano; ossos que aparecem mais tarde, como o pisiforme, não devem definir sua idade de início."
+   "A": "**1 a 2 anos** é a idade do capitato, do hamato e do piramidal.",
+   "B": "**3 a 4 anos** se aproxima do semilunar, não do escafoide.",
+   "D": "**6 a 7 anos** já passa do escafoide; o pisiforme é que vem tarde."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 8 (Fractures and Dislocations of the Hand and Carpal Bones in Children; Lindley Wall e Andrea S. Bauer), seção Osseous Anatomy, Fig. 8-1",
+   "Biblioteca OrtoQuestões, resumo Fraturas e luxações da mão e do carpo na criança (rockwoodcriancas10-08-mao-carpo)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-08-mao-carpo",
-     "titulo": "Fraturas e luxações da mão e do carpo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
-     "secoes": [
-      "Anatomia, exame e remodelação"
-     ],
-     "blocos": [
-      "anatomia-exame-e-remodelacao-06a7a2e4"
-     ],
-     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
-     "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
-    }
-   ],
-   "questaoSha256": "7109839cd9a38ae8c1d856b5b416ae4fc3350abc4a205dd783a1248058ec0b31",
-   "comentarioSha256": "cfa842445a33c484cf653abd907a41419267676ff7547e99a12cdcd2833829b3"
-  }
+  "imagens": [
+   {
+    "arquivo": "pediatria/rwc10-08-1.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 8, Fig. 8-1. Idade de aparecimento dos núcleos de ossificação do carpo e do rádio e ulna distais: capitato e hamato nos primeiros meses (6 a 8 meses na figura), piramidal 2 a 3 anos, semilunar 4 anos, escafoide 4 a 5 anos, trapézio 5 anos, trapezoide 6 anos; o pisiforme (não mostrado) aparece por volta de 6 a 8 anos.",
+    "largura": 1130,
+    "altura": 1530
+   }
+  ],
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "mao-0301": {
   "incorretas": {
@@ -17735,30 +17707,7 @@
   ],
   "conferido": false,
   "alerta": "A banca marcou alternativa C (pisiforme, 6–8 anos). O resumo sustenta pisiforme por último, mas informa 9–10 anos. Idade divergente mantida explícita; gabarito oficial preservado.",
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-08-mao-carpo",
-     "titulo": "Fraturas e luxações da mão e do carpo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
-     "secoes": [
-      "Anatomia, exame e remodelação"
-     ],
-     "blocos": [
-      "anatomia-exame-e-remodelacao-06a7a2e4"
-     ],
-     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
-     "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
-    }
-   ],
-   "questaoSha256": "280b70b400a685e977dd13de7210835e62dc2cda745f1463d31d713ac7fecd13",
-   "comentarioSha256": "dfd67d98074a61c3dcf5990905bf6ddf6148bc7a3a3329f71ec6ddc9ae1ab2d0"
-  }
+  "geradoEm": "2026-10-29"
  },
  "mao-1126": {
   "conceito": "**Os Guias da AMA (American Medical Association) para avaliação de incapacidade atribuem um peso a cada dedo na função da mão.** É a base das perícias e de muitas tabelas de indenização.\n\n### Valores da AMA\n\n| Dedo | Contribuição para a função da mão |\n|---|---|\n| Polegar | **40%** |\n| **Indicador** | **20%** |\n| Médio | 20% |\n| Anular | 10% |\n| Mínimo | 10% |\n\nA mão, por sua vez, representa **90% do membro superior**, e o membro superior representa 60% da pessoa inteira.\n\n### Como a amputação é convertida\n\n- dentro de cada dedo, a perda é proporcional ao nível: amputação na IFD vale cerca de 45% (no dedo longo) a 50% (no polegar, na IF) da função do dedo; na IFP (ou MF do polegar) cerca de 80% (dedo longo); na MF, 100% do dedo;\n- perdas de sensibilidade também são graduadas (perda total de sensibilidade de um dedo vale cerca de metade da amputação).\n\n### Na prática clínica\n\nOs números mostram por que o **polegar** é a prioridade absoluta na mão mutilada (40%) e por que, em amputações múltiplas, preservar ou reconstruir um polegar e um dedo que se oponha a ele é o objetivo central (transferência do segundo dedo do pé, policização, alongamento).",
@@ -20757,34 +20706,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Falanges; Anatomia, exame e remodelação; Como ler este capítulo."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-08-mao-carpo",
-     "titulo": "Fraturas e luxações da mão e do carpo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
-     "secoes": [
-      "Falanges",
-      "Anatomia, exame e remodelação",
-      "Como ler este capítulo"
-     ],
-     "blocos": [
-      "falanges-2573c6e7",
-      "anatomia-exame-e-remodelacao-06a7a2e4",
-      "como-ler-este-capitulo-d65b64a6"
-     ],
-     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
-     "trechosSha256": "b7d5e37358d27dc9ec799ce6d08bcf81c16b5afc77b280c233a29bd0ef7143ef"
-    }
-   ],
-   "questaoSha256": "ec1abcb6ce31ef04968d1e8e53c449d35f940d2e3b6ce99f0f4c1a46cb594cc5",
-   "comentarioSha256": "48ea92596fa00339962e642d6d2434919a8cd6e6a8ce60f71b0025c4e320f871"
-  }
+  "geradoEm": "2026-10-29"
  },
  "mao-1301": {
   "conceito": "**Uma ferida crônica pode ficar presa numa fase inflamatória e não avançar para fechamento.** Perfusão deficiente, pressão, edema, infecção, biofilme e doenças sistêmicas precisam ser corrigidos. Escolher uma cobertura sem tratar esses fatores limita o resultado.\n\nA terapia de pressão negativa remove exsudato e produz deformação do leito. A macrodeformação aproxima bordas; a microdeformação transmite estímulos mecânicos às células e pode favorecer granulação e vias associadas à angiogênese, incluindo VEGF. Isso não significa que o aparelho esterilize uma ferida ou substitua desbridamento e controle da causa.\n\n| Recurso | Aplicação e limite |\n| :--- | :--- |\n| Alginato e hidrofibra | Absorção de exsudato; escolha depende da umidade do leito |\n| Prata | Ação antimicrobiana em situações selecionadas; uso deve ser reavaliado |\n| Pressão negativa | Manejo do exsudato e preparo do leito, com indicação e proteção adequadas |\n\nEm feridas crônicas, bactérias podem se organizar em biofilme, uma comunidade protegida por matriz, além da forma livre. Essa organização ajuda a explicar persistência e necessidade de manejo repetido do leito. “Mais antimicrobiano” não é sempre melhor: toxicidade para células reparadoras e uso sem indicação também prejudicam a cicatrização.",
@@ -36398,21 +36320,6 @@
    "versao": 1,
    "fontes": [
     {
-     "resumo": "rockwoodcriancas10-08-mao-carpo",
-     "titulo": "Fraturas e luxações da mão e do carpo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
-     "secoes": [
-      "Falanges"
-     ],
-     "blocos": [
-      "falanges-709a9b01"
-     ],
-     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
-     "trechosSha256": "725d217b9e24b618cecffaed4d2f19789a7dbdfadd40245ee21711759a70fd2f"
-    },
-    {
      "resumo": "rockwood10-45-fraturas-mao",
      "titulo": "Fraturas e luxações da mão",
      "livro": "Rockwood and Green's Fractures in Adults",
@@ -38643,30 +38550,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Carpo."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-08-mao-carpo",
-     "titulo": "Fraturas e luxações da mão e do carpo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
-     "secoes": [
-      "Carpo"
-     ],
-     "blocos": [
-      "carpo-771401f1"
-     ],
-     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
-     "trechosSha256": "f199b305fd7fb202dd748c50e598bd5dcb030e9f975049e4acb7f320549c1a73"
-    }
-   ],
-   "questaoSha256": "33788ba17a838ad8e14e61e90b1315467c4136c746dd54b8b8408484449e59f1",
-   "comentarioSha256": "ba2164a1d7116619aafb1106655eed0a8d296a9b98535432abacced34d187304"
-  }
+  "geradoEm": "2026-10-28"
  },
  "mao-2390": {
   "conceito": "Os colaterais da metacarpofalângica do polegar fazem mais do que segurar o lado: eles também impedem a falange de escorregar para palmar. Quando um deles rompe, a falange gira em torno do que ficou inteiro, como uma porta em volta da dobradiça.\n\n**O mecanismo.** SMITH observou que os colaterais da metacarpofalângica do polegar dão estabilidade lateral e também resistem à subluxação volar. Se um ligamento rompe, a falange proximal tende a girar volarmente do lado da ruptura, com o ligamento oposto intacto como eixo (Green, cap. 8, p. 349).\n\n**Os dois lados.** Na ruptura isolada do colateral ulnar, a falange proximal gira em **supinação** em volta do colateral radial intacto. Já quando o **colateral radial** está rompido, **a falange proximal prona** em relação ao metacarpo (Green, cap. 8, p. 349).\n\n**Por que esta questão foi criada.** Inspirada na questão 18 do SIMÃO 2022, que perguntou o que acontece com a falange proximal na lesão completa do colateral radial da metacarpofalângica do polegar.\n\n> **Na prova:** polegar: rompeu o colateral RADIAL, a falange PRONA; rompeu o ULNAR, a falange SUPINA (gira em volta do ligamento que ficou).",
@@ -38740,30 +38624,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações da mão e do carpo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children. Seções: Anatomia, exame e remodelação."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-08-mao-carpo",
-     "titulo": "Fraturas e luxações da mão e do carpo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
-     "secoes": [
-      "Anatomia, exame e remodelação"
-     ],
-     "blocos": [
-      "anatomia-exame-e-remodelacao-06a7a2e4"
-     ],
-     "sha256": "4ca07c7d7fa75846962cfece92b7321518c2f3d829f91fe94ee841e163454ffa",
-     "trechosSha256": "6865e0c1f888a246e5ccd3fc21933f45d9d73b9fc5813ba9662eccad7725c444"
-    }
-   ],
-   "questaoSha256": "54eb04c98851d3306a08539ecac983e1a4640ed48ba062d5d4f4c98d1102935c",
-   "comentarioSha256": "92d80adee298a6bd534be00fcf801131038d687b053407faba830f37a6bffa4b"
-  }
+  "geradoEm": "2026-10-28"
  },
  "mao-2395": {
   "conceito": "Uma pré-adolescente nota que a ponta do dedo mínimo está \"entortando\" para a palma, sem dor e sem trauma. A unha fica em garra. É o desenho da deformidade de KIRNER.\n\n**O que é.** A deformidade de KIRNER é caracterizada pela **curvatura palmar-radial progressiva da falange distal** e geralmente afeta o dedo mínimo. Foi descrita por KIRNER em 1927 e depois por THOMAS em 1936. A literatura é feita de relatos e pequenas séries, mas a aparência é característica e comum o bastante para a maioria dos cirurgiões de mão pediátricos encontrar (Green, cap. 36, p. 1436, Fig. 36.91).\n\n**De onde vem a curva.** Há distorção e alargamento da placa de crescimento com curvatura da diáfise da falange distal; FAIRBANK descreveu uma fise basal em forma de L que restringe o crescimento palmar, e a tração do flexor forte contribui para a angulação (Green, cap. 36, p. 1436 e 1437, Fig. 36.92).\n\n**Por que esta questão foi criada.** Inspirada na questão 23 do SIMÃO 2022, que perguntou o desvio característico da deformidade de KIRNER.\n\n> **Na prova:** KIRNER = falange DISTAL do MÍNIMO curvada para PALMAR e RADIAL, progressiva; flexor profundo forte sobre a fise.",

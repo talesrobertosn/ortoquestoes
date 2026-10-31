@@ -7251,15 +7251,15 @@
   },
   {
    "id": "rockwoodcriancas10-08-mao-carpo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas e luxações da mão e do carpo na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children",
-   "resumo": "Fise mais fraca que o ligamento; ossificação do carpo (capitato primeiro, pisiforme por último); rotação não remodela (tenodese); SEYMOUR exposta; martelo ósseo com órtese; colo da falange e bloqueio da flexão; extra-oitava; polegar do esquiador SALTER-HARRIS III e STENER; colo do metacarpal; base do polegar A a D; escafoide distal, gesso e pseudartrose por atraso; capitato em dorsiflexão; luxação complexa da metacarpofalângica; interfalângica proximal; fibrocartilagem triangular.",
+   "resumo": "Epidemiologia bifásica; ossificação do carpo (capitato primeiro, escafoide no quinto ano, pisiforme por último) e das epífises; zonas da fise; tendões, colaterais e placa volar (fise mais fraca que o ligamento); remodelação (rotação não remodela); exame (tenodese, teste do enrugamento) e imagem (perfil verdadeiro, escafoide e ressonância); falange distal (SEYMOUR, martelo ósseo, jérsei); colo e côndilos das falanges; extra-oitava; polegar do esquiador e STENER; metacarpos (colo, diáfise, base); base do metacarpo do polegar A a D; escafoide, bipartido, capitato, piramidal e hamato; fibrocartilagem triangular; luxações da metacarpofalângica e da interfalângica proximal.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 27,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7267,29 +7267,99 @@
      "radar": "fundamento"
     },
     {
-     "id": "anatomia-exame-e-remodelacao",
-     "titulo": "Anatomia, exame e remodelação",
+     "id": "epidemiologia",
+     "titulo": "Epidemiologia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "politrauma-partes-moles-e-resultados",
+     "titulo": "Politrauma, partes moles e resultados",
+     "radar": "fundamento"
+    },
+    {
+     "id": "ossificacao-do-carpo-e-das-epifises",
+     "titulo": "Ossificação do carpo e das epífises",
      "radar": "confirmado"
     },
     {
-     "id": "falanges",
-     "titulo": "Falanges",
+     "id": "fise-tendoes-colaterais-e-placa-volar",
+     "titulo": "Fise, tendões, colaterais e placa volar",
      "radar": "confirmado"
     },
     {
-     "id": "polegar-e-metacarpais",
-     "titulo": "Polegar e metacarpais",
+     "id": "remodelacao-exame-e-imagem",
+     "titulo": "Remodelação, exame e imagem",
+     "radar": "fundamento"
+    },
+    {
+     "id": "falange-distal",
+     "titulo": "Falange distal",
      "radar": "confirmado"
     },
     {
-     "id": "carpo",
-     "titulo": "Carpo",
+     "id": "falanges-proximal-e-media",
+     "titulo": "Falanges proximal e média",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "polegar-do-esquiador",
+     "titulo": "Polegar do esquiador",
      "radar": "confirmado"
+    },
+    {
+     "id": "metacarpos",
+     "titulo": "Metacarpos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "base-do-metacarpo-do-polegar",
+     "titulo": "Base do metacarpo do polegar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "escafoide",
+     "titulo": "Escafoide",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "capitato-e-os-outros-ossos-do-carpo",
+     "titulo": "Capitato e os outros ossos do carpo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-do-escafoide",
+     "titulo": "Complicações do escafoide",
+     "radar": "clinico"
+    },
+    {
+     "id": "fibrocartilagem-triangular",
+     "titulo": "Fibrocartilagem triangular",
+     "radar": "oportunidade"
     },
     {
      "id": "luxacoes",
      "titulo": "Luxações",
      "radar": "oportunidade"
+    },
+    {
+     "id": "limites-e-tempos-lado-a-lado",
+     "titulo": "Limites e tempos, lado a lado",
+     "radar": "fundamento"
+    },
+    {
+     "id": "perguntas-que-a-banca-faz",
+     "titulo": "Perguntas que a banca faz",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tres-casos-para-fixar",
+     "titulo": "Três casos para fixar",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -7298,23 +7368,22 @@
     }
    ],
    "questoes": [
-    "pediatria-0583",
     "mao-0251",
     "mao-0300",
+    "pediatria-0583",
     "pediatria-0823",
-    "mao-1300",
-    "mao-1534",
     "pediatria-0609",
     "pediatria-0644",
     "pediatria-0522",
-    "pediatria-0562",
-    "mao-1092"
+    "pediatria-0562"
    ],
    "treino": [
-    "pediatria-1345",
     "pediatria-1346",
+    "pediatria-1345",
+    "pediatria-1466",
     "pediatria-1347",
-    "mao-2252",
+    "pediatria-1355",
+    "pediatria-1468",
     "pediatria-1348",
     "pediatria-1349",
     "pediatria-1350",
@@ -7322,9 +7391,8 @@
     "pediatria-1352",
     "pediatria-1353",
     "pediatria-1354",
-    "mao-2389",
-    "pediatria-1355",
     "pediatria-1356",
+    "pediatria-1467",
     "pediatria-1357",
     "pediatria-1358",
     "pediatria-1359"
