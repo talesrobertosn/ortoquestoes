@@ -159,7 +159,7 @@ conserte a suposição do teste ou o código; **nunca** pule ou desligue teste. 
 > Você trabalha em /home/user/ortoquestoes. Leia AGENTS.md, CLAUDE.md, docs/biblioteca/PILOTO-AUTOMATICO.md e os
 > guias que ele cita. TAREFA: capítulo N do <livro, edição> — "<título>" (<autores>). Texto em <scratchpad>/capN/cap.txt
 > (PDF: <caminho>, páginas A–B). Pedido do Tales: "<frase dele>" ⇒ <só resumo | só simulados | os dois>.
-> <Se os dois:> primeiro ~10 simulados (seção 5), aplicados dentro do lock; depois o resumo
+> <Se os dois:> primeiro os simulados que o tema merecer (seção 5; sem cota), aplicados dentro do lock; depois o resumo
 > `conteudo/biblioteca/<id>.md` (seção 6) citando-os em `treino=`. <Se o resumo já existe: atualize-o.>
 > <Fronteira com o capítulo vizinho, se houver.> Atualize CHECKLIST e mapas com Edit pontual. Não faça commit nem push.
 > No fim, responda: ids criados, id do resumo, alertas, dúvidas e problemas.

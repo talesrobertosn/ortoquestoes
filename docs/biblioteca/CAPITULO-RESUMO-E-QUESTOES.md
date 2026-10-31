@@ -20,7 +20,7 @@ Leia também `AGENTS.md` e `CLAUDE.md` na raiz antes de começar.
 
 | Ele manda | Você entrega, sem pedir confirmação |
 | --- | --- |
-| PDF de capítulo com "faça resumo disso", "questões e resumo" ou sem dizer nada | Os **OrtoQuestões Simulados** do capítulo (cerca de 10), o **resumo** na Biblioteca e o **convite para o resumo** em todas as questões do tema |
+| PDF de capítulo com "faça resumo disso", "questões e resumo" ou sem dizer nada | Os **OrtoQuestões Simulados** do capítulo (quantos o tema merecer), o **resumo** na Biblioteca e o **convite para o resumo** em todas as questões do tema |
 | "só o resumo" ou "já temos as questões" | O resumo citando os simulados que já existem, e o convite |
 | "só as questões" | Só os simulados. Eles passam a aparecer no resumo do tema na próxima vez que o resumo for gerado, se for citado em `treino=` |
 
@@ -39,7 +39,7 @@ O resultado que ele quer ver no site:
 2. **Engenharia reversa da banca.**
    - Rode `python3 -I scripts/simulados/registro.py` para ver o que já existe.
    - Rode `mapear_banca.py` para ver as questões oficiais do assunto: prova, ano, gabarito, como foi perguntado e qual foi a armadilha.
-3. **Simulados (cerca de 10 por capítulo).**
+3. **Simulados (quantos o tema merecer, sem cota (Tales, 31/10/2026: tema bom, mais; tema ruim, menos; o ponto de partida sai de `scripts/biblioteca/fila_teot_taro.py` e se ajusta pelas lacunas do capítulo)).**
    - Cada simulado é uma "gêmea" do que já caiu (outro ângulo do mesmo fato) ou uma lacuna com chance real de cair.
    - Formato TEOT/TARO, gabarito distribuído entre as letras e comentário completo.
    - O `conceito` do comentário termina com "Por que esta questão foi criada.".
@@ -124,7 +124,7 @@ As mesmas do PILOTO-AUTOMATICO, resumidas:
 > Você trabalha em /home/user/ortoquestoes. Leia AGENTS.md, CLAUDE.md, docs/biblioteca/CAPITULO-RESUMO-E-QUESTOES.md e
 > docs/biblioteca/PILOTO-AUTOMATICO.md, e os guias que eles citam. TAREFA: capítulo N do <livro, edição>, "<título>" (<autores>).
 > Texto em <scratchpad>/capN/cap.txt (PDF: <caminho>, páginas A–B). Pedido do Tales: "<frase>" ⇒ <só resumo | só simulados | os dois>.
-> Faça cerca de 10 simulados, aplicados dentro do lock. Depois escreva o resumo `conteudo/biblioteca/<id>.md`, citando-os em `treino=` e citando todas as
+> Faça quantos simulados o tema merecer (ponto de partida em `scripts/biblioteca/fila_teot_taro.py`), aplicados dentro do lock. Depois escreva o resumo `conteudo/biblioteca/<id>.md`, citando-os em `treino=` e citando todas as
 > questões reais do tema. Complete a linha `subtemas:` com todos os nomes de subtema do acervo que são esse tema e rode
 > `scripts/biblioteca/cobertura.py`. Atualize o CHECKLIST e os mapas da banca. Não faça commit nem push. No fim responda: os ids criados, o id do
 > resumo, quantas questões ganharam o convite, os alertas e as dúvidas.
