@@ -169,12 +169,14 @@ alerta: O capítulo lido não diz qual é o sinal esfincteriano mais precoce (`c
 
 **Os tipos de hérnia.** O Campbell ilustra quatro situações (Fig. 39.23): o **abaulamento** (bulge) normal; a **protrusão**, em que o material do disco se projeta com base larga, contido; a **extrusão**, em que o material passa do anel e a projeção é maior que a base; e o **sequestro**, em que um fragmento se solta e migra, como no caso de um paciente de 61 anos com radiculopatia de L5 por fragmento sequestrado do disco L4 (Fig. 39.24).
 
+!tabela Os tipos de hérnia
 | Tipo (Campbell, Fig. 39.23) | O que se vê |
 |---|---|
 | Abaulamento | o disco ultrapassa a borda das vértebras de forma difusa, sem foco |
 | PROTRUSÃO | projeção focal de base larga, ainda contida |
 | EXTRUSÃO | o material passa do anel; a "cabeça" é mais larga que o "colo" |
 | SEQUESTRO | fragmento livre, separado do disco, que pode migrar |
+!fim
 
 !questoes central=coluna-0149
 conceito: A ressonância é o exame mais útil para a hérnia lombar; as radiografias afastam tumor e infecção; a hérnia pode ser protrusão, extrusão ou sequestro (Fig. 39.23).
@@ -250,6 +252,7 @@ alerta: O capítulo lido não discute a desvantagem técnica da PLIF citada pelo
 
 **A tabela do Campbell.** A Tabela 39.2 (modificada de SPANGFORT, 2.504 cirurgias) dá as incidências (cap. 39, p. 1753):
 
+!tabela A tabela do Campbell
 | Complicação (Campbell, Tabela 39.2) | Incidência |
 |---|---|
 | Síndrome da cauda equina | 0,2% |
@@ -261,6 +264,7 @@ alerta: O capítulo lido não discute a desvantagem técnica da PLIF citada pelo
 | LESÃO DURAL | 1,6% |
 | Lesão de raiz | 0,5% |
 | Fístula liquórica, lesão de vasos e vísceras abdominais | raras |
+!fim
 
 **A lesão dural.** Lesões durais com fístula liquórica, pseudomeningocele e meningite são possíveis, **mais prováveis depois de reoperação**. As complicações da microdiscectomia parecem menores que as da laminectomia aberta. Numa revisão de 1.326 cirurgias de coluna, houve **51 lesões durais (4%)**, **48 delas pela via posterior toracolombar** (p. 1753). EISMONT, WIESEL e ROTHMAN propuseram cinco princípios para o reparo: campo seco e bem exposto, sutura dural com fio 4-0 a 6-0, enxerto de fáscia ou dura artificial nos defeitos grandes, manobra de VALSALVA para testar e drenagem subfascial se necessário (p. 1753 e 1754, Fig. 39.34).
 
@@ -360,14 +364,17 @@ armadilha: Achar que o disco C6-C7 pega C6, ou que o bíceps é só C5.
 
 **A via.** Depende do local e do tipo da lesão: **as hérnias moles laterais saem bem pela via posterior** (foraminotomia), enquanto **as hérnias moles centrais e as duras, centrais ou laterais, provavelmente são mais bem tratadas pela via anterior**. A **discectomia anterior com artrodese (ACDF)** continua sendo o procedimento mais feito quando o disco é retirado pela frente, para evitar o colapso do espaço discal e manter o tamanho do forame; a artroplastia discal tem desafiado esse padrão-ouro; e a foraminotomia é o procedimento clássico para o fragmento lateral, com a técnica endoscópica prometendo menos morbidade (p. 1690 e 1694). Os osteófitos não retirados costumam ser reabsorvidos no nível fundido (p. 1695).
 
+!tabela A via
 | Lesão cervical | Via preferida (Campbell, cap. 38) |
 |---|---|
 | Hérnia MOLE LATERAL (radiculopatia) | POSTERIOR: foraminotomia |
 | Hérnia mole CENTRAL ou disco DURO | ANTERIOR: discectomia com artrodese (ACDF) ou artroplastia |
 | MIELOPATIA progressiva | cirurgia indicada pela história natural |
+!fim
 
 # Revisão rápida {radar=fundamento}
 
+!tabela Revisão rápida
 | Tema | O que lembrar |
 |---|---|
 | Degeneração | disfunção (15 a 45), instabilidade (35 a 70), estabilização (acima de 60); hérnia nas duas primeiras |
@@ -390,3 +397,4 @@ armadilha: Achar que o disco C6-C7 pega C6, ou que o bíceps é só C5.
 | SPURLING | extensão, rotação para o lado e compressão; 95% sensível, 94% específico |
 | Mielopatia | marcha alterada cedo; clônus, hiper-reflexia, BABINSKI; HOFFMAN em C5-C6 ou acima |
 | Via cervical | mole lateral por trás (foraminotomia); central ou dura pela frente (ACDF) |
+!fim

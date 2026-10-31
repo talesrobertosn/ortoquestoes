@@ -67,12 +67,14 @@ Classificação de DELEE. A: grupo A, lactente com cotovelo edemaciado após par
 
 ## O diagnóstico diferencial
 
+!tabela O diagnóstico diferencial
 | Lesão | Desvio de rádio e ulna | Rádio e capítulo | O que decide |
 |---|---|---|---|
 | Descolamento epifisário total | quase sempre **posteromedial** | relação **mantida** | o capítulo vai junto com o antebraço |
 | Luxação do cotovelo | quase sempre **posterolateral** | relação **rompida** | é rara na idade de pico do descolamento |
 | Fratura do côndilo lateral | pode desviar levemente para lateral; posterolateral se a crista lateral da tróclea for atingida | pode se romper (ou continuar normal) | figura 17-2: o côndilo lateral perde a relação com o rádio |
 | Supracondiliana baixa | posterior | mantida | contorno distal irregular do fragmento; no descolamento grupo C, o contorno da metáfise é liso |
+!fim
 
 Depois que o núcleo do côndilo lateral ossifica, o desvio da epífise inteira fica evidente. Antes disso, oblíquas ou imagem avançada podem ser necessárias. DE JAGER e HOFFMAN, em 12 descolamentos, tinham diagnosticado de início três como fraturas do côndilo lateral e um como luxação do cotovelo.
 
@@ -95,11 +97,13 @@ Ultrassonografia sagital mostrando o desvio posterior da epífise distal do úme
 
 DELEE e colaboradores dividiram os descolamentos pelo grau de ossificação do núcleo do côndilo lateral, que acompanha a idade.
 
+!tabela DELEE e colaboradores dividiram os descolamentos pelo grau de ossificação do núc
 | Grupo | Idade | Núcleo do capítulo | Fratura | Armadilha |
 |---|---|---|---|---|
 | A | até **12 meses** | ainda não apareceu | geralmente **SALTER-HARRIS I** | passa despercebida pela falta do núcleo |
 | B | **12 meses a 3 anos** | ossificação definida | pode ter uma lasca metafisária (II), mas se comporta como I | confusão com luxação |
 | C | **3 a 7 anos** | ossificado | **SALTER-HARRIS II** com **grande fragmento metafisário**, mais comum **lateral** (pode ser medial ou posterior) | confusão com supracondiliana baixa ou côndilo lateral |
+!fim
 
 Quase todos são do tipo em **extensão**, com a epífise posterior à metáfise. O tipo em flexão, com a epífise anterior, é raro. STRICKER descreveu uma fratura transcondiliana no plano coronal (SALTER-HARRIS IV) numa criança de 3 anos, diagnosticada de início como côndilo lateral, sem distúrbio de crescimento 3 anos depois da redução aberta e fixação.
 
@@ -138,10 +142,12 @@ O tratamento começa pelo **reconhecimento rápido**. O objetivo é manter um al
 
 ## Quando imobilizar
 
+!tabela Quando imobilizar
 | Imobilização: indicações | Contraindicações relativas |
 |---|---|
 | desvio mínimo | fratura muito desviada com diagnóstico precoce |
 | neonato ou lactente pequeno em que a anestesia ou o fio são difíceis | |
+!fim
 
 No neonato e no lactente muito pequeno, a imobilização em tala ou gesso funciona, mas carrega risco de **consolidação viciosa extra-articular**. A técnica: tala ou gesso com até **90 graus de flexão**, **antebraço pronado**, e o membro preso ao tronco por faixa ou bandagem em oito. Os resultados costumam ser bons, mas há **cúbito varo** depois do tratamento não cirúrgico em várias séries (3 de 12, 15 de 21 e 5 de 7); na série de GILBERT, 3 de 4 imobilizados ficaram com deformidade. Por isso DE JAGER e HOFFMAN recomendaram **redução fechada e fixação percutânea abaixo dos 2 anos**: com o fragmento fixo, o ângulo de carregamento pode ser avaliado logo após a redução e corrigido. Numa revisão de 33 casos, 88% recuperaram o ângulo de carregamento e 80% o arco de movimento, sem diferença de resultado entre os tratamentos.
 
@@ -221,10 +227,12 @@ TONIOLO e WILKINS reuniram 30 casos em 20 anos e sugeriram que a osteonecrose da
 
 ## Os dois tipos
 
+!tabela Os dois tipos
 | Tipo | O que necrosa | Fraturas de origem | Evolução |
 |---|---|---|---|
 | **A, rabo de peixe** | só a **porção lateral da crista medial** (ápice da tróclea): defeito central | **supracondiliana muito distal** e **côndilo lateral** | é o padrão mais comum; em geral **sem deformidade angular**; sintomas proporcionais ao tamanho do defeito |
 | **B, varo maligno** | **toda a tróclea**, às vezes parte da metáfise (perda dos vasos medial e lateral) | **descolamento fisário total** e **côndilo medial** | **cúbito varo progressivo** com o crescimento, perda importante de movimento, artrose precoce |
+!fim
 
 !figura 17-24
 Deformidade em rabo de peixe. A e B: tipo A, necrose só do centro lateral, com defeito no ápice do sulco troclear. C: rabo de peixe típico num menino de 14 anos com fratura supracondiliana distal sem desvio 5 anos antes.
@@ -281,6 +289,7 @@ armadilha: O capítulo 17 sustenta o componente em valgo dessa fratura do olécr
 
 Clinicamente e na radiografia, a fratura do côndilo medial é confundida, acima de tudo, com a **fratura do epicôndilo medial**. Nas duas, o edema se concentra no lado medial, pode haver instabilidade em **valgo** e parestesia **ulnar**. Separam as duas:
 
+!tabela fratura do epicôndilo medial
 | Achado | Côndilo medial | Epicôndilo medial |
 |---|---|---|
 | Natureza | intra-articular | extra-articular |
@@ -288,6 +297,7 @@ Clinicamente e na radiografia, a fratura do côndilo medial é confundida, acima
 | Coxim gorduroso | **positivo** (a lesão entrou na articulação) | em geral negativo |
 | Luxação associada | o cotovelo tende a **subluxar para posteromedial** | frequente, em geral **posterolateral** |
 | Radiografia | **qualquer ossificação metafisária** junto do epicôndilo é sinal de fratura do côndilo | só o epicôndilo; côndilo e epicôndilo muitas vezes desviam juntos no côndilo |
+!fim
 
 Na criança maior, com grande fragmento metafisário, o diagnóstico é evidente (figura 17-12A). Na menor, em que só o epicôndilo está ossificado, a fratura do côndilo medial passa por fratura isolada do epicôndilo (figura 17-12: diagnóstico de epicôndilo aos 6 anos, dor persistente e ossificação metafisária visível 3 meses depois). As luxações do cotovelo são raras antes da ossificação do côndilo medial. Abaixo de **8 a 10 anos**, com equimose medial importante e dúvida sobre o traço, faça **artrografia ou ressonância** (figura 17-9: menina de 7 anos com suspeita de epicôndilo; a artrografia mostrou o componente intra-articular).
 
@@ -303,11 +313,13 @@ armadilha: Tomar o fragmento ósseo medial de uma criança pequena por epicôndi
 
 **Pelo desvio (KILFOYLE):**
 
+!tabela Pelo desvio (KILFOYLE)
 | Tipo | Descrição | Conduta habitual |
 |---|---|---|
 | I | traço metafisário até a fise; incompleto, não viola a articulação, pode abrir em dobradiça; alguns seriam supracondilianas incompletas | gesso ou tala, observação |
 | II | entra na articulação (na fise do côndilo medial) com **menos de 2 mm**; a parte intra-articular, de cartilagem, muitas vezes não é vista | gesso com controle semanal; fixação se instável ou se desviar |
 | III | entra na articulação com **rotação e desvio** do fragmento | redução aberta e fixação |
+!fim
 
 Alguns autores modificam KILFOYLE em sem desvio (menos de 2 mm), desvio mínimo (2 a 4 mm) e desviada (mais de 4 mm). O tipo III (só 25%) é mais comum no adolescente; o tipo I, na criança menor.
 

@@ -72,6 +72,7 @@ alerta: O Campbell descreve o overstuffing pelo aumento do offset e a cabeça gr
 
 **A classificação da glenoide de WALCH** (Tabela 12.3, Fig. 12.17, com a modificação de BERCIK, p. 619 e 620):
 
+!tabela A classificação da glenoide de WALCH
 | Tipo | Desgaste |
 |---|---|
 | **A1** | central, leve |
@@ -81,6 +82,7 @@ alerta: O Campbell descreve o overstuffing pelo aumento do offset e a cabeça gr
 | **B3** | monocôncavo posterior, retroversão de 15 graus ou mais, subluxação de 70% |
 | **C** | **retroversão maior que 25 graus** (displásica) |
 | **D** | anteversão ou subluxação anterior |
+!fim
 
 **Por que a glenoide B importa.** Como a glenoumeral tende a subluxar para trás na artrose, **o desgaste posterior é comum e pode progredir para perdas graves (B2 e B3)**; **os desgastes excêntricos dobram a soltura da glenoide em relação aos concêntricos (A1 e A2)**. Compensar a retroversão da glenoide antevertendo o componente umeral (soma de 30 a 40 graus) não deu estabilidade em cadáveres. A **fresagem excêntrica** rebaixa a borda anterior, mas **não corrige retroversões acima de 17 a 18 graus**, e defeitos acima de 20 graus em geral não aceitam a glenoide: entram o enxerto ou o componente aumentado; no idoso com perda posterior grave, a **reversa** (p. 619). **A perda central é a mais comum na artrite reumatoide**; uma profundidade abaixo de 1 cm impede a glenoide sem enxerto (p. 619).
 
@@ -245,6 +247,7 @@ alerta: Os capítulos lidos não dizem onde a artrose primária do cotovelo come
 
 # Revisão rápida {radar=fundamento}
 
+!tabela Revisão rápida
 | Tema | O que lembrar |
 |---|---|
 | Cabeça | esférica, 160 graus de cartilagem, raio de cerca de 25 mm |
@@ -278,3 +281,4 @@ alerta: Os capítulos lidos não dizem onde a artrose primária do cotovelo come
 | Retorno ao esporte | maior depois da anatômica que da reversa |
 | Fratura intraoperatória instável | haste longa passando pelo menos dois diâmetros corticais além da fratura; acima da ponta, cerclagem |
 | Rigidez | componentes grandes, subescapular curto; 1 cm de alongamento dá cerca de 20 graus de rotação externa |
+!fim

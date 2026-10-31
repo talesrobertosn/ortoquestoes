@@ -38,6 +38,7 @@ O subtema "Anatomia da coluna" é o maior da coluna no acervo, com quase noventa
 
 **Os pontos de referência do pescoço e do tronco.** O Netter traz uma tabela que cai muito em prova:
 
+!tabela Os pontos de referência do pescoço e do tronco
 | Nível | Estrutura correspondente (Netter, cap. 2) |
 |---|---|
 | C2-C3 | mandíbula |
@@ -51,6 +52,7 @@ O subtema "Anatomia da coluna" é o maior da coluna no acervo, com quase noventa
 | L1 | cone medular |
 | L3 | bifurcação da aorta |
 | L4 | crista ilíaca |
+!fim
 
 As provas também usam o **tubérculo carotídeo**, ou de CHASSAIGNAC, o tubérculo anterior do processo transverso de C6, como referência desse nível, ao lado da cricoide; os livros lidos não o descrevem, mas ele fica na mesma altura que o Netter atribui à cricoide.
 
@@ -72,6 +74,7 @@ alerta: Os livros lidos não trazem a porcentagem da lordose feita por L4-L5 e L
 
 **Os ligamentos da coluna subaxial** (Netter, cap. 2):
 
+!tabela Os ligamentos da coluna subaxial
 | Ligamento | Fixação | Comentário |
 |---|---|---|
 | Longitudinal anterior (LLA) | face anterior dos corpos e discos | forte e espesso; resiste à hiperextensão |
@@ -82,6 +85,7 @@ alerta: Os livros lidos não trazem a porcentagem da lordose feita por L4-L5 e L
 | Interespinais | entre os processos espinhosos | fracos; rompem nas lesões em flexão-distração |
 | Intertransversários | entre os processos transversos | fracos |
 | Iliolombar | processo transverso de L5 ao ílio | pode avulsionar nas fraturas da pelve por cisalhamento vertical |
+!fim
 
 **A junção craniovertebral** (Netter, cap. 2). A **membrana tectória** vai da face posterior do áxis à margem anterior do forame magno: é o **estabilizador primário** e a **continuação do LLP**; limita a extensão. A membrana atlanto-occipital anterior continua o LLA, e a posterior é o homólogo do ligamento amarelo. Na articulação atlantoaxial, o **ligamento transverso do atlas** é o mais forte, mantém o dente junto ao arco anterior do atlas (intervalo atlanto-odontoide menor que 3 mm), e a sua lesão dá instabilidade C1-C2. Os **ligamentos alares** vão do **dente do áxis aos côndilos occipitais** e limitam a rotação e a inclinação lateral. O ligamento do ápice do dente é delgado e dá pouca estabilidade. As articulações atlantoaxiais respondem por **50% da rotação cervical**.
 
@@ -100,6 +104,7 @@ como: O SBOT-SP perguntou a nutrição do disco e a causa da mobilidade lombar; 
 
 **A organização dos tratos.** Dentro da medula, as fibras se organizam com as **cervicais no centro** e as torácicas, lombares e sacrais progressivamente na periferia, o que explica a síndrome centromedular e a siringomielia (Campbell, p. 1643). A Tabela 37.1 do Campbell lista os tratos:
 
+!tabela A organização dos tratos
 | Trato (Campbell, Tabela 37.1) | Função | Lado do corpo |
 |---|---|---|
 | Corticoespinal anterior | movimento fino | oposto |
@@ -110,6 +115,7 @@ como: O SBOT-SP perguntou a nutrição do disco e a causa da mobilidade lombar; 
 | Fascículo grácil e cuneiforme | posição e tato fino | mesmo |
 | ESPINOTALÂMICO LATERAL | DOR E TEMPERATURA | oposto |
 | Espinotalâmico anterior | tato leve | oposto |
+!fim
 
 O Netter liga os tratos às síndromes: o corticoespinal lateral é a via motora principal, lesada na BROWN-SÉQUARD; o espinotalâmico anterior é lesado na síndrome medular anterior; o espinotalâmico lateral, dor e temperatura, também na BROWN-SÉQUARD; as colunas dorsais, propriocepção e vibração, costumam ser preservadas e são lesadas na síndrome medular posterior (Netter, cap. 2).
 
@@ -271,6 +277,7 @@ como: O TARO 2012 perguntou o estágio de ALLEN da luxação unifacetária; o TA
 
 # Revisão rápida {radar=fundamento}
 
+!tabela Revisão rápida
 | Tema | O que lembrar |
 |---|---|
 | Vértebras | 33 (7, 12, 5, 5, 4); 24 segmentos móveis |
@@ -291,3 +298,4 @@ como: O TARO 2012 perguntou o estágio de ALLEN da luxação unifacetária; o TA
 | Via posterior de C1 | até 1,5 cm da linha média |
 | WILTSE | fáscia 2 cm lateral; entre multífido e longuíssimo |
 | Estenose | zona de entrada de LEE; congênita central; claudicação neurogênica piora na esteira |
+!fim

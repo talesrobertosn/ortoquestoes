@@ -52,11 +52,13 @@ como: O TARO de 2010, 2012 e 2024 perguntou o principal fator de recidiva; o TAR
 
 **Os três ligamentos** (p. 2439 e 2440):
 
+!tabela Os três ligamentos
 | Ligamento | Inserções | Função |
 |---|---|---|
 | **Glenoumeral SUPERIOR** | perto do ápice do lábio, junto ao bíceps; colo anatômico anterior | **restritor primário da subluxação INFERIOR com o braço em 0 grau de abdução**; principal estabilizador às forças anterior e posterior em 0 grau |
 | **Glenoumeral MÉDIO** | ampla, do superior até a junção dos terços médio e inferior da glenoide; colo anatômico anterior | **limita a ROTAÇÃO EXTERNA nas abduções baixas e médias**; pouco efeito a 90 graus |
 | **Glenoumeral INFERIOR** (complexo) | da glenoide das 2-3 horas às 8-9 horas; abaixo da fise, no colo anatômico e cirúrgico | **principal estabilizador às forças anterior e posterior com o ombro abduzido 45 graus ou mais**; "rede" com bandas anterior e posterior e uma bolsa axilar |
+!fim
 
 O complexo glenoumeral inferior funciona como uma **rede**: na rotação externa, a rede desliza para a frente e para cima, a banda anterior se tensiona e a posterior se abre; na rotação interna, o contrário. Ele restringe os extremos do movimento e ajuda o rolamento da cabeça (p. 2440). Fechar o intervalo dos rotadores, que inclui o glenoumeral superior, diminui a translação posterior e inferior (p. 2439).
 
@@ -141,6 +143,7 @@ alerta: O Campbell associa o sulco em 0 grau ao intervalo dos rotadores, mas o g
 
 **A perda subcrítica.** O limite clássico de perda glenoidal para um procedimento ósseo era de cerca de 20% a 25%. SHAHA introduziu a **perda "subcrítica"**: em 75 militares com reparo artroscópico de BANKART, a perda óssea foi maior nos que falharam (25% contra 13%), e **perdas acima de 13,5% já deram escores WOSI clinicamente piores, mesmo sem nova luxação** (Rockwood, cap. 35). O Campbell diz que a perda de apenas 13,5% da glenoide pode dar sensação de instabilidade (p. 2453).
 
+!tabela A perda subcrítica
 | Exame | Para quê (Campbell, p. 2444 e 2445) |
 |---|---|
 | AP em ROTAÇÃO INTERNA | HILL-SACHS não visto na rotina |
@@ -149,6 +152,7 @@ alerta: O Campbell associa o sulco em 0 grau ao intervalo dos rotadores, mas o g
 | Ressonância precoce | o sangue faz papel de contraste |
 | Artrorressonância (ABER) | lesões anteroinferiores, HAGL |
 | TOMOGRAFIA 3D | o exame mais sensível para a perda óssea |
+!fim
 
 !questoes central=ombro-cotovelo-0069 relacionadas=ombro-cotovelo-0392,ombro-cotovelo-0560,ombro-cotovelo-0313,ombro-cotovelo-0369,ombro-cotovelo-0309 treino=ombro-cotovelo-0715,ombro-cotovelo-0716,ombro-cotovelo-0582,ombro-cotovelo-0583,ombro-cotovelo-0589,ombro-cotovelo-0590
 conceito: A rotação interna e a STRYKER mostram o HILL-SACHS; o West Point, a borda anteroinferior da glenoide; a tomografia 3D mede a perda óssea; o glenoid track é 83% (Rockwood) ou 84% (Campbell) da glenoide menos o defeito, e o HILL-SACHS é off-track quando o intervalo é maior que o track; perda acima de 13,5% já piora os escores.
@@ -185,10 +189,12 @@ alerta: Os livros lidos não discutem a comparação de BAILE entre decúbito la
 
 **As complicações.** O Campbell relata **taxas de complicação de até 25%** e retorno ao esporte prévio em cerca de 50% dos pacientes com deformidade glenoidal; numa metanálise, as cirurgias artroscópicas de partes moles tiveram as menores complicações (1%), contra 13,6% do LATARJET artroscópico (p. 2453). O Rockwood lista recidiva, rigidez, falha do enxerto (fratura, lise, pseudartrose), **lesão neurológica (musculocutâneo e axilar)** e artrose; as cirurgias abertas têm mais complicações que o BANKART artroscópico (BANKART aberto 4,3%, LATARJET aberto 10,6% a 15%, bloqueio ósseo 17,6%). A pseudartrose fibrosa foi de 1,5% numa série de 20 anos. A **osteólise do enxerto** foi de 3,2% numa revisão de 45 estudos, mas chegou a 59,5% na tomografia de outro estudo, **sobretudo na parte superficial do coracoide proximal (superior)**, enquanto a parte profunda do segmento distal foi preservada, sem grande impacto na recidiva (cap. 35).
 
+!tabela As complicações
 | Nervo | Risco |
 |---|---|
 | MUSCULOCUTÂNEO | entra no tendão conjunto pela face medial; risco na dissecção e no afastamento do coracoide |
 | AXILAR | passa embaixo do subescapular; risco na divisão e no afastamento inferior |
+!fim
 
 **A indicação no Campbell.** Nos pacientes com **glenoide em "pera invertida"** e HILL-SACHS que engancha, o Campbell diz que o LATARJET sozinho costuma bastar para tratar a deficiência óssea combinada: o enxerto corrige a deficiência da glenoide, que volta a resistir às forças axiais num diâmetro maior, e **alonga o arco articular glenoidal, impedindo que o HILL-SACHS enganche**; por isso é usado também quando há uma lesão grande da cabeça, de **35% a 45%** (cap. 47, p. 2450, Fig. 47.28).
 
@@ -207,12 +213,14 @@ alerta: Os livros lidos não discutem a comparação de BAILE entre decúbito la
 
 **A reabilitação depois da reconstrução capsulolabral** (Quadro 47.2 do Campbell, p. 2450, a partir de MONTGOMERY e JOBE):
 
+!tabela A reabilitação depois da reconstrução capsulolabral
 | Fase | O que se faz |
 |---|---|
 | 0 a 3 semanas | almofada de abdução; movimento até 90 graus de abdução, 90 de flexão e 45 de rotação externa, sem extensão; isométricos |
 | 3 a 6 semanas | tira a órtese; movimento progressivo protegendo a cápsula anterior; rotação interna completa e externa até o neutro com elástico |
 | 6 semanas a 3 meses | aumenta a rotação externa (meta: amplitude completa em 2 meses); manguito e periescapulares |
 | 3 a 6 meses | alongamento capsular, isocinéticos, flexões de braço (começando na parede), barra fixa aos 4 a 5 meses, programa de arremesso |
+!fim
 
 **As falhas.** Na falha de qualquer estabilização, investigar com tomografia 3D; a deficiência umeral costuma ser corrigida com remplissage, e a glenoidal acima de 25% com LATARJET aberto; a rotação externa abaixo de 15 graus pode pedir alongamento coronal do subescapular (Campbell, p. 2453).
 
@@ -242,6 +250,7 @@ alerta: Os livros lidos não trazem a classificação numerada de KIM (`ombro-co
 
 # Revisão rápida {radar=fundamento}
 
+!tabela Revisão rápida
 | Tema | O que lembrar |
 |---|---|
 | Epidemiologia | quase 50% das luxações; 2% da população; anterior 90% a 95% |
@@ -265,3 +274,4 @@ alerta: Os livros lidos não trazem a classificação numerada de KIM (`ombro-co
 | LATARJET | 17,3% a 30%; recidiva menor que no BANKART; dois parafusos; musculocutâneo e axilar; osteólise superficial e superior |
 | Enxerto glenoidal | acima de 30% (ilíaco ou tíbia distal) |
 | Posterior | 5% a 10%; McLAUGHLIN para HILL-SACHS reverso |
+!fim

@@ -647,9 +647,14 @@ function Blocos({ blocos, porBloco, marcadores, capitulo, indice, aoAbrirQuestao
     if (b.tipo === 'prova') return <p key={b.id} data-bloco={b.id} className={'lr-naprova' + (marcadores.has(b.id) ? ' lr-marcado' : '')}><span className="lr-naprova__rotulo" aria-hidden="true">Na prova</span><Texto bloco={b} marcas={porBloco.get(b.id)} /></p>
     if (b.tipo === 'questoes') return <CartaoQuestoes key={b.id} bloco={b} indice={indice} aoAbrir={aoAbrirQuestao} />
     if (b.tipo === 'figura') return <Figura key={b.id} bloco={b} capitulo={capitulo} />
-    if (b.tipo === 'tabela') return <div key={b.id} className="lr-tabela" data-bloco={b.id}><table><caption>{b.titulo}</caption><thead><tr>{b.cab.map((c) => <th key={c}>{c}</th>)}</tr></thead><tbody>{b.linhas.map((l, i) => <tr key={i}>{l.map((c, j) => <td key={j}>{c}</td>)}</tr>)}</tbody></table></div>
+    if (b.tipo === 'tabela') return <div key={b.id} className="lr-tabela" data-bloco={b.id}><table><caption>{b.titulo}</caption><thead><tr>{b.cab.map((c) => <th key={c}><Celula t={c} /></th>)}</tr></thead><tbody>{b.linhas.map((l, i) => <tr key={i}>{l.map((c, j) => <td key={j}><Celula t={c} /></td>)}</tr>)}</tbody></table></div>
     return null
   })}</>
+}
+
+/** Célula de tabela com o negrito (**...**) do texto do resumo. */
+function Celula({ t }: { t: string }) {
+  return <>{pedacos(t).map((r, i) => r.negrito ? <strong key={i}>{r.texto}</strong> : <Fragment key={i}>{r.texto}</Fragment>)}</>
 }
 
 /** O texto de um bloco com as marcações desenhadas. Só texto dentro de [data-texto]: os deslocamentos contam sobre ele. */

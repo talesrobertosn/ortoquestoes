@@ -37,6 +37,7 @@ O capítulo inteiro gira em torno de uma ideia: **o tratamento de um sarcoma com
 
 **A radiografia simples vem primeiro.** Toda suspeita de neoplasia musculoesquelética começa com **radiografias em dois planos**, que dão, para as lesões ósseas, mais informação que qualquer outro exame. **Muitas vezes a idade e a radiografia bastam para um diagnóstico específico.** A avaliação começa pelo local, porque muitos tumores têm predileção por sítio (p. 890 e 891):
 
+!tabela A radiografia simples vem primeiro
 | Local | Diagnóstico diferencial (Quadros 24.1 a 24.4, p. 891) |
 |---|---|
 | Epífise | **condroblastoma** (10 a 25 anos), **tumor de células gigantes** (20 a 40 anos), condrossarcoma de células claras (raro) |
@@ -44,6 +45,7 @@ O capítulo inteiro gira em torno de uma ideia: **o tratamento de um sarcoma com
 | Coluna acima de 40 anos | metástase, mieloma, hemangioma, cordoma (sacro) |
 | Coluna abaixo de 30 anos | corpo: **histiocitose**, hemangioma; elementos posteriores: osteoma osteoide, osteoblastoma, cisto ósseo aneurismático |
 | Lesões múltiplas | histiocitose, encondroma, osteocondroma, displasia fibrosa, mieloma, metástase, hemangioma, infecção, hiperparatireoidismo |
+!fim
 
 **Epífise e maturidade.** **Uma lesão epifisária no esqueleto maduro provavelmente é tumor de células gigantes; no imaturo, condroblastoma** (p. 890). No sacro, o cordoma e o tumor de células gigantes lideram a lista; na maioria das lesões vertebrais do adulto, metástase, mieloma ou hemangioma; **no jovem com lesão do corpo vertebral, o diagnóstico mais provável é a histiocitose** (p. 891).
 
@@ -68,6 +70,7 @@ como: O TEOT 2023 perguntou a linhagem de partes moles que mais dói; o TARO 202
 
 **O laboratório** raramente dá o diagnóstico, mas ajuda (p. 892):
 
+!tabela O laboratório
 | Exame | Para quê |
 |---|---|
 | Albumina abaixo de 3,5 g/dL ou linfócitos abaixo de 1.500/mL | risco maior de problemas de ferida e infecção |
@@ -79,6 +82,7 @@ como: O TEOT 2023 perguntou a linhagem de partes moles que mais dói; o TARO 202
 | Fosfatase alcalina | doença metabólica, metástase, osteossarcoma, EWING, linfoma; PAGET |
 | Ureia, creatinina, urina | tumor renal (hematúria) |
 | Cálcio e PTH | **o tumor marrom do hiperparatireoidismo pode parecer um tumor de células gigantes** |
+!fim
 
 **A avaliação completa antes da biópsia.** O Campbell insiste: as neoplasias musculoesqueléticas devem ser **avaliadas por completo antes da biópsia**. O diagnóstico diferencial, a extensão e a ressecabilidade mudam o tipo de biópsia, o local da incisão e o manejo do tecido; a avaliação completa estreita o diferencial e melhora o diagnóstico; e **a RM e a cintilografia ficam prejudicadas pelas alterações pós-operatórias**. O mínimo para uma suspeita de malignidade: **radiografias do membro e do tórax, RM da lesão, cintilografia óssea e TC do tórax** (p. 892).
 
@@ -113,11 +117,13 @@ como: O TARO 2011 perguntou os primários da metástase desconhecida; uma prova 
 
 **Por que estadiar.** ENNEKING e outros mostraram que estadiar os tumores benignos e malignos ajuda a decidir o tratamento, dá uma ideia do prognóstico e permite comparar tratamentos. **Os estágios benignos são designados por números arábicos, e os malignos por romanos** (p. 892 e 893).
 
+!tabela Por que estadiar
 | Estágio | Comportamento | Radiografia | Tratamento | Exemplo |
 |---|---|---|---|---|
 | **1 latente** | intracapsular, em geral assintomático, achado incidental | margem bem definida, **halo espesso de osso reativo**, sem destruição nem expansão da cortical | **não precisa tratar**: não enfraquece o osso e costuma regredir sozinho | **fibroma não ossificante** pequeno (Fig. 24.2) |
 | **2 ativo** | intracapsular, **cresce**, pode dar sintomas ou **fratura patológica** | margem bem definida, mas pode **expandir e afinar a cortical**; halo de osso reativo fino | **curetagem estendida** | **cisto ósseo aneurismático** da fíbula proximal (Fig. 24.3) |
 | **3 agressivo** | **extracapsular**, agressivo na clínica e na imagem | **não respeita barreiras**; rompe o osso reativo e às vezes a cortical; massa de partes moles na RM | curetagem estendida, ressecção marginal ou ampla; **recidiva local comum** | **tumor de células gigantes** do fêmur distal (Fig. 24.4) |
+!fim
 
 **O estágio 3 pode metastatizar.** O Campbell lembra que **metástases podem estar presentes em 1% a 5% dos pacientes com lesões do estágio 3, como o tumor de células gigantes** (p. 893). A reconstrução às vezes é difícil, e pode haver discordância entre observadores ao classificar uma lesão (p. 894).
 
@@ -140,6 +146,7 @@ como: O TEOT 2023 perguntou o estágio e o diagnóstico de um COA da fíbula; o 
 - **B = extracompartimental**: passou do compartimento de origem (Fig. 24.6: osteossarcoma IIB do úmero proximal).
 - **Estágio III = qualquer lesão com metástase, independentemente do tamanho ou do grau do primário.** Não se distingue metástase linfonodal de metástase à distância, porque as duas têm mau prognóstico (p. 894).
 
+!tabela Estágio III = qualquer lesão com metástase, independentemente do tamanho ou do g
 | Estágio | Grau | Local | Metástase (Tabela 24.1, p. 894) |
 |---|---|---|---|
 | IA | baixo | intracompartimental | não |
@@ -147,6 +154,7 @@ como: O TEOT 2023 perguntou o estágio e o diagnóstico de um COA da fíbula; o 
 | IIA | alto | intracompartimental | não |
 | IIB | alto | extracompartimental | não |
 | III | qualquer | qualquer | **regional ou à distância** |
+!fim
 
 **As armadilhas de prova.** O estágio III **não tem A nem B** e **não tem grau**: qualquer metástase leva ao III, mesmo num tumor de baixo grau. Não existe estágio IV no ENNEKING. A extensão extracompartimental pode estar nos estágios IB, IIB e, como o III aceita qualquer local, também no III. O osteossarcoma convencional que rompe a cortical e invade o músculo, sem metástase, é **IIB**; a maioria dos osteossarcomas chega assim.
 
@@ -164,6 +172,7 @@ alerta: A questão do SBOT-SP sobre o estágio IIB (`tumores-0387`) não tem gab
 
 **Ósseos.** Para os sarcomas ósseos (Tabela 24.3), as variáveis são o **grau, o tamanho (até 8 cm ou mais de 8 cm) e a presença e o local das metástases** (p. 896):
 
+!tabela Ósseos
 | Estágio | Grau | Tamanho | Metástases |
 |---|---|---|---|
 | I-A | baixo | até 8 cm | não |
@@ -173,6 +182,7 @@ alerta: A questão do SBOT-SP sobre o estágio IIB (`tumores-0387`) não tem gab
 | **III** | qualquer | qualquer | **"skip metastases": lesões descontínuas no mesmo osso** |
 | **IV-A** | qualquer | qualquer | **pulmonares** |
 | **IV-B** | qualquer | qualquer | **não pulmonares** |
+!fim
 
 **Por que separar o IV.** **Os pacientes com osteossarcoma e EWING com metástases fora do pulmão têm prognóstico pior que os que têm só metástases pulmonares**; por isso o IV foi dividido (p. 896).
 
@@ -215,12 +225,14 @@ como: As provas cobram a direção da incisão e a exsanguinação (TEOT 2021, T
 
 **Os quatro tipos** (Tabela 24.4, p. 898):
 
+!tabela Os quatro tipos
 | Tipo | Tecido | Vantagens | Desvantagens |
 |---|---|---|---|
 | Punção aspirativa por agulha fina | células | barata, menos complicações, boa no obeso ou perto de feixes | amostra pequena; precisa de patologista experiente |
 | Agulha grossa (core) | cilindro de tecido | barata, mais tecido que a fina | mais complicações que a fina |
 | Incisional | amostra adequada | **padrão-ouro** | mais complicações; pode comprometer a ressecção definitiva |
 | Excisional | a lesão inteira | remove tudo | indicada para lesão pequena ou osso dispensável; mais complicações |
+!fim
 
 **Os números.** **A punção aspirativa pode ter 90% de acurácia para dizer se é maligno**, mas bem menos para o tipo específico, porque só avalia células, sem arquitetura; serve melhor quando o diagnóstico é quase conhecido (metástase, infecção, linfonodo). A **agulha grossa** preserva a arquitetura, mas pode não dar tecido para graduar ou para estudos adicionais; as séries de biópsias ambulatoriais com agulha grossa mostram acurácia de **84% a 98%**; numa série de 252, a acurácia para maligno ou não foi de **97%**, e para o diagnóstico e o grau, de **81%**. **A biópsia aberta é o padrão-ouro**: tem mais complicações (sangramento, infecção, contaminação), mas é a que menos erra na amostragem e a que dá mais tecido para citogenética e citometria (p. 898).
 
@@ -281,12 +293,14 @@ alerta: O Campbell associa o osteossarcoma secundário à radioterapia prévia e
 
 **Dar nome à margem.** O Campbell diz que é imperativo definir a margem: **"amputação" e "ressecção" significam pouco sem o modificador da margem**. Em oncologia ortopédica, a margem é **intralesional, marginal, ampla ou radical**, e tanto amputações quanto ressecções podem ter qualquer uma delas (Figs. 24.11 e 24.12, classificação de ENNEKING) (p. 903).
 
+!tabela Dar nome à margem
 | Margem | Onde passa o plano | Uso (p. 904) |
 |---|---|---|
 | **Intralesional** | **dentro do tumor**; deixa tumor macroscópico ("**citorredução**", "debulking") | benigno sintomático quando a alternativa sacrificaria estruturas importantes; **paliação** na metástase |
 | **Marginal** | **pela pseudocápsula (a zona reativa)** | adequada para a maioria dos benignos e alguns malignos de baixo grau; no alto grau, deixa **lesões satélites** microscópicas na pseudocápsula |
 | **Ampla** | **em tecido normal**, com o tumor inteiro envolto por um manguito de tecido normal; **sem distância definida** | a meta para os malignos de alto grau |
 | **Radical** | **todos os compartimentos que contêm o tumor, em bloco** | hoje rara, porque a margem ampla dá resultados oncológicos equivalentes |
+!fim
 
 **Os detalhes que derrubam candidatos.**
 
@@ -335,6 +349,7 @@ como: O TARO 2021 perguntou a histologia da SVNP; o TARO 2023, o sarcoma que exi
 
 # Revisão rápida {radar=fundamento}
 
+!tabela Revisão rápida
 | Tema | O que lembrar |
 |---|---|
 | Dor | osso maligno dói em repouso e à noite; partes moles raramente dói, exceto bainha nervosa |
@@ -365,3 +380,4 @@ como: O TARO 2021 perguntou a histologia da SVNP; o TARO 2023, o sarcoma que exi
 | TOMITA | tipo 4 = extensão epidural |
 | SVNP | histiócitos, células gigantes e hemossiderina |
 | Lipossarcoma mixoide | retroperitônio; TC de abdome |
+!fim
