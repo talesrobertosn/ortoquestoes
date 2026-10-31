@@ -25,12 +25,6 @@
   border-radius: var(--raio-cartao, 16px); background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda);
   overflow: hidden;
 }
-/* Ameias do castelo em pixels no alto da arena: a única arte do bloco. */
-.cem-arena::before {
-  content: ""; position: absolute; inset: 0 0 auto; height: 6px; background:
-    linear-gradient(90deg, var(--cem-floresta) 0 50%, transparent 50%) 0 0 / 24px 6px repeat-x;
-  opacity: 0.9;
-}
 .cem-arena__titulo { display: grid; gap: var(--e-1); }
 .cem-arena h1 {
   margin: 0; font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05;
@@ -178,7 +172,6 @@
   display: grid; gap: var(--e-2); min-width: 0; padding: var(--e-4) var(--e-4) var(--e-4);
   border-radius: 14px; background: var(--cem-marfim); color: var(--grafite, #12181a);
   box-shadow: 0 10px 24px rgba(5, 8, 18, 0.35), inset 0 0 0 1px rgba(23, 28, 48, 0.08);
-  border-top: 4px solid var(--metal, var(--cem-ouro));
 }
 .cem-podio--1 { order: 2; --metal: var(--cem-ouro); padding-block: var(--e-5); transform: translateY(calc(-1 * var(--e-4))); }
 .cem-podio--2 { order: 1; --metal: var(--cem-prata); }
@@ -350,7 +343,7 @@
   .cem-salao__mundo { inset: auto; left: -30%; width: 160%; top: 0; aspect-ratio: 16 / 9; }
   .cem-salao__cabeca { padding-bottom: var(--e-5); }
   .cem-salao__cartoes { grid-template-columns: minmax(0, 1fr); margin-top: 0; padding: var(--e-3); gap: var(--e-2); }
-  .cem-podio, .cem-podio--1 { order: 0; transform: none; padding: var(--e-3) var(--e-4); grid-template-columns: auto minmax(0, 1fr) auto; column-gap: var(--e-3); row-gap: 2px; border-top: 0; border-left: 4px solid var(--metal); }
+  .cem-podio, .cem-podio--1 { order: 0; transform: none; padding: var(--e-3) var(--e-4); grid-template-columns: auto minmax(0, 1fr) auto; column-gap: var(--e-3); row-gap: 2px; }
   .cem-podio__lugar { grid-row: span 2; }
   .cem-podio__lugar > span:last-child { display: none; }
   .cem-podio__nome, .cem-podio--1 .cem-podio__nome { font-size: 1.0625rem; grid-column: 2; }
