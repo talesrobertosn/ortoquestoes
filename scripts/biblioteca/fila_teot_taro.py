@@ -13,6 +13,7 @@ Uso:
   python3 scripts/biblioteca/fila_teot_taro.py              # fila completa, na ordem de trabalho
   python3 scripts/biblioteca/fila_teot_taro.py --proximo    # só o próximo subtema e as questões pendentes
   python3 scripts/biblioteca/fila_teot_taro.py --resumo     # números para o relatório
+  python3 scripts/biblioteca/fila_teot_taro.py --ligacao "Subtema"   # questões do subtema fora de qualquer resumo
 
 Quantos OrtoQuestões Simulados criar (Tales, 31/10/2026: "mais de 10 ou menos de 10, regra principal é ser
 flexível; tema ruim faça menos, tema bom faça mais"). O script dá um ponto de partida, nunca uma cota:
@@ -30,6 +31,7 @@ import argparse
 import glob
 import json
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -90,11 +92,32 @@ def fila():
     return linhas
 
 
+def ligacao(subtema: str) -> int:
+    """Lista as questões do subtema (todas as provas e simulados, menos as protegidas da mão) que nenhum resumo cita."""
+    sys.path.insert(0, str(RAIZ / "scripts"))
+    from fila_editorial import PROVAS_MAO  # noqa: E402
+    citadas = set()
+    for md in glob.glob(str(RAIZ / "conteudo/biblioteca/*.md")):
+        for linha in Path(md).read_text(encoding="utf-8").splitlines():
+            if linha.startswith("!questoes"):
+                citadas |= set(re.findall(r"[a-z-]+-\d{4}", linha))
+    fora = []
+    for p in glob.glob(str(RAIZ / "public/acervo/temas/*.json")):
+        for q in json.loads(Path(p).read_text(encoding="utf-8"))["questoes"]:
+            if subtema in (q.get("subtemas") or []) and q.get("prova") not in PROVAS_MAO and q["id"] not in citadas:
+                fora.append(q["id"])
+    print(" ".join(sorted(fora)) if fora else "todas as questões do subtema estão ligadas a um resumo")
+    return 1 if fora else 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--proximo", action="store_true")
     ap.add_argument("--resumo", action="store_true")
+    ap.add_argument("--ligacao", metavar="SUBTEMA")
     a = ap.parse_args()
+    if a.ligacao:
+        return ligacao(a.ligacao)
     linhas = fila()
     if a.resumo:
         feitos = [x for x in linhas if x["feito"]]

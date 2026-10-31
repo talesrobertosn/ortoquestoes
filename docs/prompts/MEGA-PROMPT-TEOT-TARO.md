@@ -74,48 +74,70 @@ olhe as páginas com a prévia de figura). Comandos:
 
 ## 4. O ciclo de um tema (repita até a fila acabar)
 
-1. Rode --proximo. Anote o subtema, os ids pendentes e o resumo ligado.
-2. Dossiê: python3 scripts/biblioteca/dossie_tema.py "<subtema>" > dossie.md. Atenção: o dossiê pode não listar
-   questões que têm o subtema em segundo lugar; a lista de pendentes do fila_teot_taro.py é a que vale. Junte as
-   duas, tire as protegidas da mão e despeje enunciado, alternativas e gabarito num arquivo para ler.
-3. Questões com imagem: abra todas antes de comentar (public/imagens/<tema>/<id>-1.*). Monte pranchas de 10 com
-   PIL e leia com a ferramenta Read. Anote o que a seta aponta.
-4. Leitura do livro: leia o capítulo inteiro que sustenta o subtema (não só os trechos das questões). Extraia os
-   Critical Points, as tabelas e as classificações. Salve as notas com página em
-   ~/OrtoQuestoes-Biblioteca/lotes/<pasta-do-tema>/NOTAS-FONTES.md à medida que lê (sobrevive ao resumo de contexto).
-   Aproveite os lotes antigos do tema (oficiais.py, lote_a.py), que trazem fatos já conferidos.
-5. Simulados novos (antes dos comentários, quando o tema pedir): o --proximo mostra quantos já existem e um ponto
-   de partida para novos (1 a cada 4 questões TEOT/TARO, +3 se a banca cobra muito desde 2021, menos os que já
-   existem). Não é cota: depois de ler o capítulo, faça mais quando houver lacunas cobráveis (classificações,
-   números e condutas que nenhuma questão treina) e menos, ou nenhum, quando o tema é estreito ou já está coberto.
-   Escreva no relatório quantos fez e por quê. Formato e aplicação em docs/biblioteca/PILOTO-AUTOMATICO.md, seção 5
-   (scripts/simulados/aplicar_lote.py, primeiro com --conferir). Simulado novo entra em treino= no resumo.
-6. Comentários: escreva em lotes .py de 10 a 15 questões (formato abaixo) e converta cada lote.
-7. Confira as afirmações sem fonte: releia cada lote procurando números, epônimos e frases que você não leu no
-   livro; corte ou mande para o alerta.
-8. Converta todos juntos (para pegar parágrafo repetido entre lotes) e aplique:
-       python3 scripts/biblioteca/lote_comentarios.py TODOS.py saida.json --registro reg.json
-       python3 scripts/aplicar_comentarios.py saida.json && bash scripts/pos_aplicar.sh
-9. Resumo: reescreva (ou crie) com 45 KB ou mais, no jeito de escrever dos anteriores (formato abaixo).
-   Antes de mudar um resumo existente, veja se algum comentário revisado depende dele (campo baseResumo):
+A ordem é a do Tales (31/10/2026): entender o que a banca cobrou, criar os simulados, montar o resumo citando os
+simulados e só então comentar todas as questões do tema (as oficiais e os simulados), citando o livro e o resumo.
+
+1. **Escolha.** Rode --proximo: subtema, ids pendentes, resumo ligado, simulados que já existem e o ponto de partida
+   para novos. Se outro subtema divide o mesmo resumo, faça os dois juntos.
+2. **Levantamento.** Junte TODAS as questões do subtema (oficiais de todas as bancas e simulados), menos as provas
+   protegidas da mão: a lista do fila_teot_taro.py (vale mais), o dossiê
+   (python3 scripts/biblioteca/dossie_tema.py "<subtema>") e o mapear_banca
+   (python3 scripts/simulados/mapear_banca.py --subtema "<subtema>" --regex '<palavras>' --todas-as-provas).
+   Despeje enunciado, alternativas e gabarito num arquivo e leia tudo.
+3. **Engenharia reversa: o mapa de cobrança.** Antes de abrir o livro, escreva em
+   ~/OrtoQuestoes-Biblioteca/lotes/<pasta-do-tema>/MAPA-COBRANCA.md uma tabela: fato cobrado, provas e anos, formato
+   (definição, classificação, número, conduta, caso, imagem), a armadilha das erradas e, depois da leitura, a página
+   do livro. Agrupe os fatos que caem repetidos. O mapa decide a ordem das seções do resumo, as linhas "como" dos
+   blocos de questões, os simulados e o que cada comentário precisa ensinar.
+4. **Imagens das questões.** Abra todas (public/imagens/<tema>/<id>-1.*), em pranchas de 10 montadas com PIL, e anote
+   no mapa o que cada seta aponta.
+5. **Leitura do livro.** Leia o capítulo inteiro (não só os trechos das questões): Critical Points, tabelas,
+   classificações, números, condutas, complicações. Salve as notas com página em NOTAS-FONTES.md à medida que lê (elas
+   sobrevivem ao resumo de contexto) e aproveite os lotes antigos do tema. Marque no mapa as **lacunas**: o que é
+   cobrável pelo livro e nenhuma questão treinou.
+6. **OrtoQuestões Simulados.** Quantos o tema merecer, sem cota: o ponto de partida do --proximo, mais as lacunas que
+   valem uma questão, menos o que já está bem treinado (tema estreito ou já coberto pode ficar com zero novos). Dois
+   tipos, misturados de propósito:
+   - **gêmeas**: o mesmo fato que já caiu, por outro ângulo (outro formato, a alternativa errada virando a certa,
+     o caso clínico em vez da definição);
+   - **projeções**: lacunas do mapa com chance real de cair (classificação que nunca caiu inteira, número do livro,
+     conduta nova da edição).
+   Formato TEOT/TARO, gabarito distribuído entre as letras. Formato do lote e aplicação em
+   docs/biblioteca/PILOTO-AUTOMATICO.md, seção 5 (scripts/simulados/aplicar_lote.py, primeiro com --conferir).
+   Anote no relatório quantos fez e por quê.
+7. **Resumo.** Reescreva (ou crie) com 45 KB ou mais, no jeito dos anteriores (formato na seção 5), com as seções na
+   ordem do mapa de cobrança e todos os simulados, os novos e os antigos, em treino=. Antes de mudar um resumo
+   existente, veja se algum comentário revisado depende dele (campo baseResumo):
        python3 -c "import json,glob;[print(i) for p in glob.glob('public/acervo/comentarios/*.json') for i,c in json.load(open(p)).get('comentarios',json.load(open(p))).items() if c.get('baseResumo') and any(f.get('resumo')=='<ID>' for f in c['baseResumo'].get('fontes',[]))]"
-   Se houver, ou reescreva esses comentários no mesmo PR, ou deixe o resumo como na base (foi o que quebrou a PR 716
-   com o Rockwood de tornozelo e o de fise distal do úmero).
-10. Figuras: 2 a 5 por resumo, das que ensinam (classificação, via de acesso, radiografia típica):
+   Se houver, reescreva esses comentários no mesmo PR ou deixe o resumo como na base (foi o que quebrou a PR 716).
+8. **Figuras.** No resumo, só as muito necessárias (2 a 5: classificação, via de acesso, radiografia típica, o que o
+   texto não consegue mostrar). Nos comentários, com mais liberdade: sempre que a figura agregar à questão (reuse os
+   recortes do resumo e recorte outros; nas questões de anatomia com seta, a prancha do livro com a mesma estrutura).
        python3 scripts/figuras_livro.py localizar "<PDF>" "FIGURE 38.1"
        python3 scripts/figuras_livro.py previa "<PDF>" 1635 --saida /private/tmp/claude-501/prev
        python3 scripts/figuras_livro.py recortar "<PDF>" 1635 x0,y0,x1,y1 --tema mao --nome green7-38-1 --legenda "Fonte: ..., cap. 38, Fig. 38.1, p. 1330. ..." --registro reg.json
-   Abra a prévia, escolha a caixa olhando a imagem, abra o recorte para conferir. Anexe a figura a 2 a 4 comentários
-   pelo campo figuras do lote.
-11. Valide e meça: node scripts/biblioteca/gerar.mjs; python3 scripts/biblioteca/medir_profundidade.py resumo <ID>;
-    grep -c "—\|–" no resumo deve dar 0.
-12. Conferência visual (obrigatória): print de uma questão respondida com figura e do resumo na altura de uma
-    tabela e de uma figura, no computador e no celular:
-       CHROMIUM="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" node scripts/capturar_telas.mjs /questao/<id> pref --roteiro scripts/comentarios-resumos/roteiro-print.mjs --pasta <dir>
-    Para o resumo, um roteiro que rola até o texto da tabela e da figura (exemplo em
-    docs/prompts/MEGA-PROMPT-TEOT-TARO.md, seção 7). Abra os prints e corrija o que estiver quebrado.
-13. Documentação e publicação: linha no RELATORIO-TEOT-TARO.md (seção 6 abaixo), linha em
-    docs/biblioteca/RELATORIO-EXECUCAO.md, marca de feito na tabela do REFAZER quando o tema estiver lá, bloco no
+   Abra a prévia, escolha a caixa olhando a imagem e abra o recorte para conferir.
+9. **Comentários de todas as questões do tema**, oficiais e simulados, em lotes .py de 10 a 15 (formato na seção 5),
+   citando o livro (capítulo e página) e o resumo (nas referências e, quando ajudar, no texto: "a tabela de BAYNE do
+   resumo", "a seção das contraindicações"). Os simulados explicam no fim "Por que esta questão foi criada": que
+   prova e ano a gêmea espelha, ou que lacuna do livro a projeção cobre.
+10. **Travas.** Releia cada lote caçando números, epônimos e frases que você não leu no livro (corte ou mande para o
+    alerta). Depois converta todos juntos e aplique:
+        python3 scripts/biblioteca/lote_comentarios.py TODOS.py saida.json --registro reg.json
+        python3 scripts/aplicar_comentarios.py saida.json && bash scripts/pos_aplicar.sh
+        node scripts/biblioteca/gerar.mjs; python3 scripts/biblioteca/medir_profundidade.py resumo <ID>
+        python3 scripts/biblioteca/fila_teot_taro.py --ligacao "<subtema>"    # questões do subtema fora do resumo
+    O conversor recusa: letra errada, travessão, comentário raso, parágrafo copiado, fecho de simulado em prova real e
+    simulado sem "Por que esta questão foi criada". O --ligacao precisa sair vazio.
+11. **SEO.** A página pública do resumo (/resumos/<id>/) sai sozinha no deploy, sem as figuras do livro. Confira se o
+    título e o campo resumo do cabeçalho servem para quem chega pelo Google. Guia editorial extra
+    (scripts/gerar_guias_seo.py) só em tema muito procurado e quando ele ajudar de verdade; registre no relatório.
+12. **Conferência visual** (obrigatória): print de uma questão respondida com figura, de um simulado novo e do resumo
+    na altura de uma tabela e de uma figura, no computador e no celular:
+        CHROMIUM="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" node scripts/capturar_telas.mjs /questao/<id> pref --roteiro scripts/comentarios-resumos/roteiro-print.mjs --pasta <dir>
+    Para o resumo, o roteiro da seção 7. Abra os prints e corrija o que estiver quebrado.
+13. **Publicação e relatório.** Linha no RELATORIO-TEOT-TARO.md (seção 6), linha em
+    docs/biblioteca/RELATORIO-EXECUCAO.md, marca de feito no REFAZER quando o tema estiver lá, bloco no
     CHECKPOINT-GERAL.md (fora do git). Commit e bash scripts/publicar_pr.sh "Título" corpo.md, que espera os checks e
     imprime MESCLADO. Se falhar, leia o log, corrija e publique de novo. Depois volte ao passo 1.
 
@@ -200,7 +222,7 @@ Uso: node scripts/capturar_telas.mjs /resumos/<id> pref --roteiro roteiro.mjs --
 - Feitos na refação: bíceps, LCA, metástases, hérnia de disco, anatomia da coluna, instabilidade do ombro,
   estadiamento, omartrose, artroplastia do quadril (Callaghan, partes 1 a 6) e malformações congênitas da mão
   (PR 719). O script ainda acusa algumas questões TARO/TEOT desses temas que o dossiê não pegou (por exemplo
-  mao-0145, mao-0161, joelho-0067): comece por elas quando o --proximo apontar.
+  mao-0145, mao-0161, joelho-0067; o --ligacao "Outras malformações congênitas" lista 7 fora do resumo): comece por elas quando o --proximo apontar.
 - Em andamento: anatomia do quadril e coxa (netter-anatomia-quadril-coxa, 15 KB), branch claude/refazer-netter-quadril.
   Plano, escopo e as imagens já conferidas em ~/OrtoQuestoes-Biblioteca/lotes/netter/03b-quadril-v2/PLANO.md.
 - Pendências conhecidas: tabelas cruas no rockwood10-65-tornozelo e no rockwoodcriancas9-17-fise-distal-umero

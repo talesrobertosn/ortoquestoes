@@ -13,7 +13,8 @@ O conversor recusa o lote quando:
   - há travessão no texto;
   - um parágrafo longo (mais de 200 caracteres) se repete em dois comentários do lote: cada comentário conta
     com as próprias palavras, sem blocos copiados (Tales, 31/10/2026);
-  - questão de prova real traz o fecho "Por que esta questão foi criada", que é só dos OrtoQuestões Simulados.
+  - questão de prova real traz o fecho "Por que esta questão foi criada", que é só dos OrtoQuestões Simulados;
+  - simulado sem esse fecho (todo simulado explica por que foi criado).
 Avisa, sem recusar, quando todos os comentários do lote têm o mesmo esqueleto ou o mesmo fecho "Na prova".
 
 Uso:
@@ -82,6 +83,8 @@ def main() -> int:
             erros.append(f"{qid}: {n} caracteres")
         if "Por que esta questão foi criada" in texto and not q.get("simulado"):
             erros.append(f"{qid}: 'Por que esta questão foi criada' é só para OrtoQuestões Simulados")
+        if q.get("simulado") and "Por que esta questão foi criada" not in texto:
+            erros.append(f"{qid}: simulado sem 'Por que esta questão foi criada' (Tales, 31/10/2026)")
         for par in re.split(r"\n\s*\n", "\n\n".join([c.get("conceito", ""), c.get("correta", ""), *c.get("incorretas", {}).values()])):
             par = par.strip()
             if len(par) > 200:
