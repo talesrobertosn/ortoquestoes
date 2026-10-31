@@ -342,11 +342,15 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const respondidaAntes = (id: string) => { const r = respondidas[id]; if (!r) return false; const p = r.historico?.[0]?.em ?? r.q; return p === undefined || p < inicioHoje }
   const contaPuxado = new Map<number, { total: number; feitas: number; antes: number; livres: string[] }>()
   for (const [t, { ids }] of puxados) contaPuxado.set(t, { total: ids.length, feitas: ids.filter((id) => respondidas[id]).length, antes: ids.filter(respondidaAntes).length, livres: ids.filter((id) => !respondidas[id]) })
-  let cargaPuxada = 0
-  for (const [t, c] of contaPuxado) cargaPuxada += t === hoje.getTime() ? c.total - c.antes : c.livres.length
+  // Na meta normal, o dia puxado continua contando com o peso dele, e as questões dele já feitas voltam
+  // para a conta: tirar a carga (39 num mini) e só meio dia de peso baixava a meta de hoje ao puxar.
+  let cargaPuxada = 0, feitasPuxadas = 0
+  for (const [t, c] of contaPuxado) {
+    cargaPuxada += t === hoje.getTime() ? c.total - c.antes : c.livres.length
+    feitasPuxadas += t === hoje.getTime() ? c.antes : c.total - c.livres.length
+  }
   let fixos = 0, pesoNormal = 0
   for (const c of calendario) {
-    if (puxados.has(c.data.getTime())) continue
     if (c.tipo === 'leve') fixos += opcoes.qtdLeve
     else if (c.tipo === 'dificil') fixos += DIA_MINIMO
     else if (c.tipo === 'estudo') pesoNormal += c.mini ? 0.5 : 1
@@ -366,7 +370,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     : Math.max(1, Math.ceil(alvo / Math.max(1, diasDeEstudoCriacao.length)))
   // A meta normal; `devolver` são questões que dias de hoje em diante já não pedem (foram adiantadas antes de hoje).
   const normalCom = (devolver: number) => {
-    const precisa = pesoNormal > 0 ? Math.ceil(Math.max(0, restante + feitasHoje - fixos - cargaPuxada + devolver) / pesoNormal) : Math.max(0, restante + feitasHoje - cargaPuxada)
+    const precisa = pesoNormal > 0 ? Math.ceil(Math.max(0, restante + feitasHoje + feitasPuxadas - fixos + devolver) / pesoNormal) : Math.max(0, restante + feitasHoje - cargaPuxada)
     const teto = precisa > Math.ceil(metaPlanejada * TETO_ATRASO)
     return { normal: teto ? Math.ceil(metaPlanejada * TETO_ATRASO) : precisa, teto }
   }
