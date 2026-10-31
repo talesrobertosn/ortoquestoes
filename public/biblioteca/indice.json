@@ -7491,15 +7491,15 @@
   },
   {
    "id": "rockwoodcriancas10-19-ombro-umero",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Luxação do ombro e fraturas do úmero proximal e da diáfise na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft",
-   "resumo": "Luxação anterior traumática com recidiva de cerca de 70% no adolescente, instabilidade multidirecional tratada com fisioterapia, LATARJET na perda óssea; úmero proximal com fise de 80% do crescimento, Tabela 19-1, desvios pelos músculos, fios e hastes; diáfise do úmero, desvios aceitáveis, nervo radial e fratura de parto.",
+   "resumo": "Luxação anterior em 90%, recidiva de cerca de 70% no adolescente, multidirecional tratada com fisioterapia, LATARJET na perda óssea; úmero proximal com fise extracapsular que faz 80% do crescimento, tuberosidade maior aos 1 a 3 anos, SALTER-HARRIS I abaixo de 5 anos, Tabela 19-1 (70 graus e 100% abaixo de 5 anos, 40 a 70 graus e 50 a 100% de 5 a 11, menos de 40 graus e 50% acima de 12), cabeça em abdução, flexão e rotação externa, plexo nas fraturas em valgo, fios e hastes no adolescente; diáfise bimodal, 20 a 30 graus de varo e 15 de rotação interna aceitos, radial em 5% com recuperação espontânea, fratura de parto sem redução.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 28,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7507,28 +7507,73 @@
      "radar": "fundamento"
     },
     {
-     "id": "instabilidade-do-ombro",
-     "titulo": "Instabilidade do ombro",
+     "id": "luxacao-do-ombro-quem-e-como",
+     "titulo": "Luxação do ombro: quem e como",
      "radar": "oportunidade"
     },
     {
-     "id": "umero-proximal-anatomia",
-     "titulo": "Úmero proximal: anatomia",
+     "id": "luxacao-do-ombro-exame-imagem-e-anatomia",
+     "titulo": "Luxação do ombro: exame, imagem e anatomia",
+     "radar": "clinico"
+    },
+    {
+     "id": "luxacao-do-ombro-tratamento-e-recidiva",
+     "titulo": "Luxação do ombro: tratamento e recidiva",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "umero-proximal-crescimento-e-anatomia",
+     "titulo": "Úmero proximal: crescimento e anatomia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "umero-proximal-por-que-o-fragmento-desvia",
+     "titulo": "Úmero proximal: por que o fragmento desvia",
      "radar": "confirmado"
     },
     {
-     "id": "umero-proximal-classificacao-e-tratamento",
-     "titulo": "Úmero proximal: classificação e tratamento",
+     "id": "umero-proximal-mecanismo-lesoes-associadas-e-ima",
+     "titulo": "Úmero proximal: mecanismo, lesões associadas e imagem",
+     "radar": "clinico"
+    },
+    {
+     "id": "umero-proximal-classificacao",
+     "titulo": "Úmero proximal: classificação",
      "radar": "confirmado"
     },
     {
-     "id": "diafise-do-umero",
-     "titulo": "Diáfise do úmero",
+     "id": "umero-proximal-tratamento",
+     "titulo": "Úmero proximal: tratamento",
      "radar": "confirmado"
     },
     {
-     "id": "fechamento",
-     "titulo": "Fechamento",
+     "id": "umero-proximal-complicacoes",
+     "titulo": "Úmero proximal: complicações",
+     "radar": "clinico"
+    },
+    {
+     "id": "diafise-do-umero-quem-e-como",
+     "titulo": "Diáfise do úmero: quem e como",
+     "radar": "clinico"
+    },
+    {
+     "id": "diafise-do-umero-tratamento-e-complicacoes",
+     "titulo": "Diáfise do úmero: tratamento e complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-idade-muda-tudo",
+     "titulo": "A idade muda tudo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "armadilhas-e-tres-casos",
+     "titulo": "Armadilhas e três casos",
+     "radar": "clinico"
+    },
+    {
+     "id": "revisao-rapida",
+     "titulo": "Revisão rápida",
      "radar": "fundamento"
     }
    ],
@@ -7538,13 +7583,13 @@
     "pediatria-0524",
     "pediatria-0617",
     "pediatria-0695",
+    "pediatria-0848",
+    "pediatria-0714",
+    "pediatria-0753",
     "pediatria-0945",
     "pediatria-0667",
     "pediatria-0595",
     "pediatria-0642",
-    "pediatria-0848",
-    "pediatria-0714",
-    "pediatria-0753",
     "pediatria-0631",
     "pediatria-0953",
     "pediatria-0618"
@@ -7556,17 +7601,24 @@
     "pediatria-1214",
     "pediatria-1215",
     "pediatria-1217",
+    "pediatria-1437",
+    "pediatria-1438",
+    "pediatria-1224",
+    "pediatria-1436",
     "pediatria-1216",
     "pediatria-1218",
     "pediatria-1219",
     "pediatria-1220",
-    "pediatria-1224",
     "pediatria-1221",
     "pediatria-1222",
-    "pediatria-1223"
+    "pediatria-1223",
+    "pediatria-1439",
+    "pediatria-1440"
    ],
    "subtemas": [
-    "Fraturas da clavícula e do úmero proximal na criança"
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Outras fraturas na criança",
+    "Lesões fisárias"
    ]
   },
   {
@@ -7998,6 +8050,7 @@
     "pediatria-0581",
     "pediatria-0819",
     "pediatria-0814",
+    "pediatria-0634",
     "pediatria-0537",
     "pediatria-0561"
    ],

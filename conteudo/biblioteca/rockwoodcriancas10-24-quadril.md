@@ -177,7 +177,7 @@ Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24, Fi
 
 **Depois de instalada.** O resultado é ruim em mais de **60%**; não há tratamento claramente eficaz; crianças acima de 10 anos vão pior. Osteotomias de redirecionamento, artrodiastase com fixador, descompressão, enxerto vascularizado de fíbula, concentrado de medula: tudo em estudo.
 
-!questoes central=pediatria-0581 relacionadas=pediatria-0819,pediatria-0814 treino=pediatria-1184,pediatria-1187
+!questoes central=pediatria-0581 relacionadas=pediatria-0819,pediatria-0814,pediatria-0634 treino=pediatria-1184,pediatria-1187
 conceito: A necrose é a complicação mais grave e frequente (cerca de 30%); depende do tipo, do desvio e da idade; a qualidade da redução é o fator modificável mais importante. RATLIFF I toda a cabeça (pior e mais comum), II parcial, III colo (raro, bom se consolida).
 como: O TEOT 2023 perguntou a região do RATLIFF III (o colo, metáfise); o TARO 2006, se o III tem o pior prognóstico e se a necrose é maior na criança que no adulto.
 armadilha: Achar que o III é o pior, porque é o último número.

@@ -33,7 +33,7 @@ CACHE = Path(tempfile.gettempdir()) / "oqlivros"
 # Apelido → trecho do nome do arquivo. Livro novo: acrescente aqui.
 LIVROS = {
     "tach": "Tachdjian",
-    "lw": "Lovell and Winters",
+    "lw": "Lovell_and_Winter",
     "rwa": "Rockwood and Green",
     "rwc": "Rockwood and Wilkins",
     "campbell21": "campbell 2021",
@@ -47,9 +47,12 @@ LIVROS = {
     "greenspan": "RADIOLOGIA ORTOPEDICA",
     "tarcisio": "EXAME FISICO EM ORTOPEDIA",
     "pardini": "PARDINI - VOL 01",
-    "ao": "Manual_AO",
+    "ao": "AO_Principles_of_Fracture",
     "pedhand": "Pediatric Hand and Upper Limb",
     "sizinio5": "Sizinio_Hebert_5",
+    "skeletal": "Skeletal_Trauma",
+    "campbell15": "Operative_Orthopaedics_15th",
+    "campbell13": "OPERATIVE ORTHOPAEDICS  13",
 }
 
 
