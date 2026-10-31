@@ -6,6 +6,9 @@
 set -uo pipefail
 TITULO="$1"; CORPO="$2"; BASE="claude/pdfs-questoes-tp64dr"
 RAMO=$(git rev-parse --abbrev-ref HEAD)
+# Trava de profundidade (30/10/2026): não publica resumo ou comentário abaixo do padrão.
+git fetch -q origin "$BASE"
+(python3 scripts/biblioteca/trava_profundidade.py || python scripts/biblioteca/trava_profundidade.py) || exit 3
 git push -q -u origin "$RAMO" || exit 1
 gh pr view "$RAMO" --json url -q .url >/dev/null 2>&1 || gh pr create --base "$BASE" --title "$TITULO" --body-file "$CORPO" >/dev/null || exit 1
 echo "PR: $(gh pr view "$RAMO" --json url -q .url)"
