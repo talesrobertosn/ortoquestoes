@@ -16,8 +16,12 @@ const ESTADOS: EstadoLeitura[] = ['novo', 'andamento', 'concluido']
 
 export const normalizar = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
-/** "10ª edição (2025)" e "10ª edição" são o mesmo livro: a chave ignora o ano entre parênteses. */
-const edicaoSemAno = (edicao: string) => edicao.replace(/\s*\(.*?\)\s*/g, '').trim()
+/**
+ * "10ª edição (2025)" e "10ª edição" são o mesmo livro: a chave ignora o ano entre parênteses. E um resumo que usa um
+ * segundo livro ("14ª edição (2021), com o Green's Operative Hand Surgery, 7ª edição") continua na estante do livro
+ * principal (pedido do Tales, 31/10/2026: o Campbell aparecia como três livros); o segundo livro fica na citação.
+ */
+const edicaoSemAno = (edicao: string) => edicao.split(/,\s*com\s/i)[0].replace(/\s*\(.*?\)\s*/g, '').trim()
 export const chaveLivro = (c: Pick<ResumoCapitulo, 'livro' | 'edicao'>) => `${c.livro}|${edicaoSemAno(c.edicao)}`
 
 /** "Rockwood adulto", "Rockwood infantil" ou o nome do livro sem o subtítulo. */
