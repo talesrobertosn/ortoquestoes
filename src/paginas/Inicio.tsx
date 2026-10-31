@@ -547,7 +547,7 @@ export function Inicio() {
               </ol>
             )}
           </section>
-          <Mascote className="hd-diario__mascote" comportamento="ler" falar={false} />
+          <Mascote className="hd-diario__mascote" comportamento="ler" fantasia="nenhuma" falar={false} />
           </div>
           </div>
         </section>

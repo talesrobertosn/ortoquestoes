@@ -499,7 +499,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <ul className="ac-provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
           <p className="ac-vitrine__gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar de onde parou.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
         </div>
-        <div className="ac-vitrine__mascote"><Mascote className="ac-mascote" comportamento="acenar" falar={false} /></div>
+        <div className="ac-vitrine__mascote"><Mascote className="ac-mascote" comportamento="acenar" fantasia="nenhuma" falar={false} /></div>
       </section>
       <section className="ac-cartao" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
         {perfilDepois ? <>

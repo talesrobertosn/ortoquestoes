@@ -30,7 +30,7 @@ export function MapaVila() {
             <span><strong className="numerico">{segredos.length}</strong> de {total} segredos</span>
           </p>
         </div>
-        <Mascote className="vl-mapa__mascote" comportamento="ler" falar={false} />
+        <Mascote className="vl-mapa__mascote" comportamento="ler" fantasia="nenhuma" falar={false} />
       </header>
       <ul className="vl-mapa__grade">
         {ORDEM_MAPA.map((id) => {

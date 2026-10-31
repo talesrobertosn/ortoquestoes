@@ -3,7 +3,6 @@ import { recurso } from '../../config'
 import { usarPeriodo, type Periodo } from '../../estado/aparencia'
 import { gravar, ler } from '../../estado/armazenamento'
 import { Mascote } from '../mascote/Mascote'
-import { fantasiaDoMes, type IdComportamento } from '../mascote/comportamentos'
 import { LUGARES, imagemLugar, type Caixa, type IdLugar } from './lugares'
 import './Vila.css'
 
@@ -21,7 +20,6 @@ const CHAVE_ULTIMO = 'vila:ultimo'
 const natal = (d = new Date()) => (d.getMonth() === 11 && d.getDate() >= 15) || (d.getMonth() === 0 && d.getDate() <= 6)
 /** Neblina de madrugada (da meia-noite às 5h, hora de Brasília). */
 const madrugada = (d = new Date()) => Number(new Intl.DateTimeFormat('en-US', { hour: 'numeric', hourCycle: 'h23', timeZone: 'America/Sao_Paulo' }).format(d)) < 5
-const HALLOWEEN: IdComportamento[] = ['foice', 'abobora', 'velas', 'morcegos']
 
 export const lugaresVisitados = (): IdLugar[] => ler<IdLugar[]>(CHAVE_VISITAS, [])
 export const segredosDaVila = (): IdLugar[] => ler<IdLugar[]>(CHAVE_SEGREDOS, [])
@@ -73,8 +71,8 @@ export function CenaPagina({ id }: { id: IdLugar }) {
     if (!lista.includes(id)) { gravar(CHAVE_SEGREDOS, [...lista, id]); definirAchou(true) }
   }
 
-  const fantasia = fantasiaDoMes()
-  const comportamento = fantasia === 'halloween' ? HALLOWEEN[id.length % HALLOWEEN.length] : lugar.mascote
+  // A fantasia do mês (o capuz de Halloween) fica só no topo da página inicial; aqui, a roupa de sempre.
+  const comportamento = lugar.mascote
   const img = (l: 960 | 1440) => recurso(imagemLugar(id, periodo, l))
 
   return (
@@ -88,7 +86,7 @@ export function CenaPagina({ id }: { id: IdLugar }) {
             aria-label={achou ? `Segredo de ${lugar.pagina} já encontrado. Tocar de novo` : `Um segredo escondido no cenário de ${lugar.pagina}`}>
             <span className="vl-segredo__brilho" aria-hidden="true" />
           </button>
-          <Mascote key={comportamento} className="vl-mascote" comportamento={comportamento} falar={false} style={naArte({ x: 334, y: 94, w: 42, h: 56 })} />
+          <Mascote key={comportamento} className="vl-mascote" comportamento={comportamento} fantasia="nenhuma" falar={false} style={naArte({ x: 334, y: 94, w: 42, h: 56 })} />
           {fala && <span className="vl-balao" role="status" style={{ left: `${(355 / 480) * 100}%`, top: `${(92 / 160) * 100}%` }}>{fala}</span>}
         </div>
       </div>
