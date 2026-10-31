@@ -21,8 +21,8 @@ export default function PreviaGato() {
   const simular = (ms: number) => { definirEspera(ms); window.setTimeout(() => definirEspera(null), ms) }
   const c = CENAS.find((x) => x.id === cena)!
   return (
-    <div style={{ display: 'grid', gap: 16, padding: 16 }}>
-      <h1>Prévia do Gato Aventureiro (desenvolvimento)</h1>
+    <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr)', gap: 16, padding: 16, maxWidth: 1100, margin: '0 auto', overflowWrap: 'anywhere' }}>
+      <h1 style={{ fontSize: 'clamp(1.25rem, 4vw, 2rem)', textWrap: 'balance' }}>Prévia do Gato Aventureiro <small>(desenvolvimento)</small></h1>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
         <select value={cena} onChange={(e) => { definirCena(e.target.value); definirReiniciar((n) => n + 1) }}>{CENAS.map((x) => <option key={x.id} value={x.id}>{x.nome}{x.rara ? ' (rara)' : ''}</option>)}</select>
         <button onClick={() => definirPausado(!pausado)}>{pausado ? 'Tocar' : 'Pausar'}</button>
@@ -35,7 +35,7 @@ export default function PreviaGato() {
         <button onClick={() => simular(15000)}>Espera longa (15 s)</button>
       </div>
       <p>{c.nome} · {(duracaoCena(c) / 1000).toFixed(1)} s · trechos: {c.trechos.map((t) => t.linha).join(' → ')}</p>
-      <div style={{ display: 'flex', gap: 32, alignItems: 'end', padding: 24, background: escuro ? '#171e1d' : '#f1f3f2', color: escuro ? '#eee' : '#111' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'end', padding: 24, borderRadius: 12, overflowX: 'auto', background: escuro ? '#171e1d' : '#f1f3f2', color: escuro ? '#eee' : '#111' }}>
         <GatoEspera key={reiniciar} escala={1} controle={{ cena, pausado, quadroFixo: quadro, velocidade, reiniciar }} aoMudarFrase={definirFrase} />
         <GatoEspera key={reiniciar + 'g'} escala={2} controle={{ cena, pausado, quadroFixo: quadro, velocidade, reiniciar }} />
         <GatoEspera key={reiniciar + 'G'} escala={4} controle={{ cena, pausado, quadroFixo: quadro, velocidade, reiniciar }} />

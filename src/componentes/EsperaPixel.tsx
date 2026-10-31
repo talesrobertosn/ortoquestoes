@@ -37,7 +37,7 @@ const semMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(pre
  */
 export function EsperaPixel({ rotulo = 'Carregando', acao }: { rotulo?: string; acao?: ReactNode }) {
   const [visivel, definirVisivel] = useState(false)
-  const [guerreiro] = useState(() => Math.random() < 0.12)
+  const [guerreiro, definirGuerreiro] = useState(() => Math.random() < 0.12)
   const [frase, definirFrase] = useState(() => FRASES_GUERREIRO[Math.floor(Math.random() * FRASES_GUERREIRO.length)])
   const [demorou, definirDemorou] = useState(false)
   useEffect(() => { const t = window.setTimeout(() => definirVisivel(true), ATRASO_MS); return () => window.clearTimeout(t) }, [])
@@ -52,7 +52,7 @@ export function EsperaPixel({ rotulo = 'Carregando', acao }: { rotulo?: string; 
       {visivel && (guerreiro
         ? <><span className="espera-pixel__guerreiro" aria-hidden="true" style={{ backgroundImage: `url(${recurso('ranking/guerreiro.png')})` }} /><span className="espera-pixel__chao" aria-hidden="true" /></>
         : <span className="espera-pixel__palco" aria-hidden="true">
-            <Suspense fallback={null}><GatoEspera escala={2} aoMudarFrase={(f) => definirFrase(f)} /></Suspense>
+            <Suspense fallback={null}><GatoEspera escala={2} aoMudarFrase={(f) => definirFrase(f)} aoFalhar={() => { definirGuerreiro(true); definirFrase(FRASES_GUERREIRO[Math.floor(Math.random() * FRASES_GUERREIRO.length)]) }} /></Suspense>
             <span className="espera-pixel__chao" />
           </span>)}
       {visivel && <p className={'espera-pixel__frase' + (semMovimento() ? ' espera-pixel__frase--parada' : '')} aria-hidden="true">{frase}</p>}

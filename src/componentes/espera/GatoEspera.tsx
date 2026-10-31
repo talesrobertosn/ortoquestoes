@@ -20,15 +20,17 @@ export interface ControleCena { cena?: string; velocidade?: number; pausado?: bo
  * cena, encadeia a próxima com uma ponte de pose se a espera continuar, para com a aba escondida e, com "menos
  * movimento", mostra uma pose parada. Nunca segura a pessoa: quando o conteúdo chega, o componente simplesmente sai.
  */
-export function GatoEspera({ escala = 2, contexto, controle, aoMudarFrase }: {
+export function GatoEspera({ escala = 2, contexto, controle, aoMudarFrase, aoFalhar }: {
   escala?: number; contexto?: 'conclusao'; controle?: ControleCena; aoMudarFrase?: (frase: string, cena: Cena) => void
+  /** A folha não baixou (rede ruim): quem chama mostra outra coisa no lugar. */
+  aoFalhar?: () => void
 }) {
   const parado = semMovimento()
   const primeira = useMemo(() => (controle?.cena ? CENAS.find((c) => c.id === controle.cena) ?? CENAS[0] : escolherCena(ultimas(), Math.random, contexto)), [controle?.cena, controle?.reiniciar]) // eslint-disable-line react-hooks/exhaustive-deps
   const [pronta, definirPronta] = useState(false)
   const [estado, definirEstado] = useState<{ fila: Trecho[]; i: number; vez: number; quadro: number; cena: Cena }>(() => ({ fila: primeira.trechos, i: 0, vez: 0, quadro: 0, cena: primeira }))
   const relogio = useRef<number | undefined>(undefined)
-  useEffect(() => { let vivo = true; carregarFolhaCenas().then((ok) => vivo && definirPronta(ok)); return () => { vivo = false } }, [])
+  useEffect(() => { let vivo = true; carregarFolhaCenas().then((ok) => { if (!vivo) return; definirPronta(ok); if (!ok) aoFalhar?.() }); return () => { vivo = false } }, [])
   useEffect(() => {
     lembrar(primeira.id)
     definirEstado({ fila: primeira.trechos, i: 0, vez: 0, quadro: 0, cena: primeira })
