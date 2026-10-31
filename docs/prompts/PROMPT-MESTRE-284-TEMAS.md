@@ -65,7 +65,8 @@ Depois, não pergunte nada: comece a próxima entrada da fila.
 1. **Terminar a fila TEOT/TARO** (`python3 scripts/biblioteca/fila_teot_taro.py --proximo` e `--resumo` para o placar). Em 31/10/2026 o próximo é o **cap. 29 do Rockwood and Wilkins' Fractures in Children (diáfise da tíbia e da fíbula)**. Dezenove comentários dependem desse resumo, entre eles conceitos-basicos-0362.
 2. **Revisão do que saiu fraco:**
    - simulados pediatria-1451 a 1468 (correta longa, distratores fracos): reescrever no molde da banca com `id=` no `lote_proj.py`, mantendo a letra do gabarito;
-   - resumos `rockwoodcriancas10-08-mao-carpo` e `rockwoodcriancas10-30-tornozelo`, com 12% de moldura: trocar as seções de moldura por conteúdo do capítulo até ficar abaixo de 10%, sem baixar de 45 KB.
+   - resumos `rockwoodcriancas10-08-mao-carpo` e `rockwoodcriancas10-30-tornozelo`, com 12% de moldura: trocar as seções de moldura por conteúdo do capítulo até ficar abaixo de 10%, sem baixar de 45 KB (feito no PR 752);
+   - **simulados antigos reprovados no portão de estilo** (autoauditoria de 31/10/2026: 871 de 1.938). Primeiro os dos capítulos já refeitos da pediatria (275), um capítulo por PR, com `python3 scripts/simulados/auditar_estilo.py --subtema "<subtema>"` para listar e `lote_proj.py` com `id=` para reescrever; depois, cada tema novo reescreve os próprios reprovados na etapa F.
 3. **Os 284 temas**, pela tabela de cobertura:
    - primeiro os **AMPLIAR** dos temas grandes, nesta ordem: anatomia da mão e punho; genuvaro, genuvalgo e torções; manguito rotador (Campbell 15); anatomia do ombro; neuropatia ulnar; anatomia do quadril; DDQ; anatomia do pé e tornozelo; tendões flexores; osteomielite aguda; depois os outros AMPLIAR;
    - depois os **CRIAR**, na ordem do ranking (mais questões primeiro);
@@ -80,6 +81,7 @@ Nenhuma etapa é pulada. Se não couber, a PR fica menor (menos questões), nunc
 **A. Dossiê.**
 - `python3 scripts/biblioteca/fila_teot_taro.py --ligacao` ou o dossiê do tema; liste todas as questões: prova, ano, gabarito, protegida ou não, simulado ou oficial.
 - Liste os comentários com `baseResumo` que citam o resumo que você vai mexer. Mudar o resumo invalida a proveniência deles: todos precisam ser refeitos na mesma PR (ou, se protegidos, só perder o `baseResumo`).
+- Rode `python3 scripts/simulados/auditar_estilo.py --subtema "<subtema>"` e inclua no escopo os simulados do tema que reprovam no portão de estilo: eles são reescritos na etapa F.
 - Ajudante: `python3 /private/tmp/claude-501/dumpq.py id1,id2` (se sumiu, recrie: lê `public/acervo/temas/*.json` e `public/acervo/comentarios/*.json` e imprime enunciado, alternativas, gabarito, `provavel`, imagens e `baseResumo`).
 
 **B. Livro.**
@@ -202,6 +204,7 @@ Se caiu, a próxima PR é a de revisão daquilo, antes de seguir a fila. Se acho
 - `gerar.mjs`: radar confirmado sem questão real, blocos malformados.
 - `trava_profundidade.py` (dentro do `pos_aplicar.sh` e do `publicar_pr.sh`): resumo alterado abaixo de 45 KB, comentário alterado abaixo de 800.
 - `checar_resumo.py`: moldura acima de 10% (aviso).
+- `auditar_estilo.py`: o mesmo portão sobre os simulados já publicados (placar por tema, lista por subtema).
 - `npm test`: proveniência (`baseResumo`), letras embaralhadas, índices, cronograma, amostras.
 - `publicar_pr.sh`: só mescla com os checks verdes.
 
@@ -231,6 +234,7 @@ Se caiu, a próxima PR é a de revisão daquilo, antes de seguir a fila. Se acho
 | Print não sai ou sai em branco | Confira o `CHROMIUM`, rode de novo, troque de questão; se persistir, mande o print do celular (`-resp-cel.png`) |
 | Contexto da sessão cheio ou trabalho caindo de qualidade | Checkpoint e recomeço pela seção 2 |
 | Script `dumpq.py` sumiu de `/private/tmp` | Recrie (seção 4, etapa A) |
+| Simulado antigo reprovado no `auditar_estilo.py` | Reescrever no `lote_proj.py` com `id=`, mesma letra de gabarito, comentário refeito para a nova pergunta |
 | Ferramenta que falta para um passo repetido | Crie o script em `scripts/`, com docstring e uso, e documente aqui |
 
 ## 13. Estado (atualize a cada PR)
