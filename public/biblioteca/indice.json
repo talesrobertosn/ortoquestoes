@@ -8874,15 +8874,15 @@
   },
   {
    "id": "rockwoodcriancas10-28-joelho-intra-articular",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Lesões intra-articulares do joelho na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
-   "resumo": "Espinha tibial (MEYERS e MCKEEVER, valgo e rotação externa, menisco medial encarcerado, extensão completa no tipo I, parafuso ou sutura, artrofibrose, perda da extensão); luva patelar; fratura osteocondral na luxação da patela; primeira luxação sem cirurgia e LPFM epifisário; LCA no imaturo por idade; colaterais, LCP e luxação do joelho.",
+   "resumo": "Espinha tibial (avulsão condroepifisária, valgo com rotação externa, osso mais fraco que o LCA, MEYERS e MCKEEVER e ZARICZNYJ, menisco medial encarcerado em 26% e 65%, menisco lateral roto, extensão completa por 6 semanas no tipo I, redução fechada em 50% do II e 0% do III, parafuso epifisário ou sutura, LACHMAN positivo sem instabilidade, artrofibrose, perda da extensão, ruptura tardia do LCA); luva patelar; fratura osteocondral (faceta medial e côndilo lateral, radiografia perde 36%, 5 mm); luxação da patela (PARIKH, LPFM 60%, ângulo Q e TT-TG, conservador 60% a 70%, LPFM epifisário, osteotomia só com apófise fechada); hemartrose e LCA; colaterais; LCA no imaturo por grupo de crescimento; LCP; luxação do joelho e índice tornozelo-braquial.",
    "acesso": "gratis",
-   "minutos": 5,
+   "minutos": 49,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -8890,38 +8890,113 @@
      "radar": "fundamento"
     },
     {
-     "id": "fratura-da-espinha-tibial",
-     "titulo": "Fratura da espinha tibial",
+     "id": "a-espinha-tibial-e-o-elo-mais-fraco",
+     "titulo": "A espinha tibial e o elo mais fraco",
      "radar": "confirmado"
     },
     {
-     "id": "luva-patelar-e-fratura-osteocondral",
-     "titulo": "Luva patelar e fratura osteocondral",
-     "radar": "oportunidade"
+     "id": "exame-e-imagem-da-espinha-tibial",
+     "titulo": "Exame e imagem da espinha tibial",
+     "radar": "fundamento"
     },
     {
-     "id": "luxacao-da-patela",
-     "titulo": "Luxação da patela",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "ligamentos-e-luxacao-do-joelho",
-     "titulo": "Ligamentos e luxação do joelho",
+     "id": "classificacao-de-meyers-e-mckeever",
+     "titulo": "Classificação de MEYERS e MCKEEVER",
      "radar": "confirmado"
     },
     {
-     "id": "fechamento",
-     "titulo": "Fechamento",
+     "id": "o-menisco-que-bloqueia-a-reducao",
+     "titulo": "O menisco que bloqueia a redução",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "lesoes-associadas-a-espinha-tibial",
+     "titulo": "Lesões associadas à espinha tibial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-fechado",
+     "titulo": "Tratamento fechado",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "tratamento-cirurgico",
+     "titulo": "Tratamento cirúrgico",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "resultados-frouxidao-sem-instabilidade",
+     "titulo": "Resultados: frouxidão sem instabilidade",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "complicacoes-da-espinha-tibial",
+     "titulo": "Complicações da espinha tibial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fratura-em-luva-da-patela",
+     "titulo": "Fratura em luva da patela",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fraturas-osteocondrais-mecanismo-e-diagnostico",
+     "titulo": "Fraturas osteocondrais: mecanismo e diagnóstico",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fraturas-osteocondrais-retirar-ou-fixar",
+     "titulo": "Fraturas osteocondrais: retirar ou fixar",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "luxacao-da-patela-quem-como-e-o-que-mais-se-lesa",
+     "titulo": "Luxação da patela: quem, como e o que mais se lesa",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-anatomia-que-segura-a-patela",
+     "titulo": "A anatomia que segura a patela",
+     "radar": "fundamento"
+    },
+    {
+     "id": "luxacao-da-patela-tratamento",
+     "titulo": "Luxação da patela: tratamento",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "hemartrose-e-lesoes-ligamentares",
+     "titulo": "Hemartrose e lesões ligamentares",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "colaterais-e-lcp",
+     "titulo": "Colaterais e LCP",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "lca-no-esqueleto-imaturo",
+     "titulo": "LCA no esqueleto imaturo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "luxacao-do-joelho",
+     "titulo": "Luxação do joelho",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-que-o-campbell-15-acrescenta",
+     "titulo": "O que o Campbell 15 acrescenta",
      "radar": "fundamento"
     }
    ],
    "questoes": [
-    "pediatria-0711",
-    "pediatria-0700",
-    "pediatria-0949",
-    "pediatria-0535",
     "pediatria-0624",
     "pediatria-0693",
+    "pediatria-0535",
+    "pediatria-0949",
+    "pediatria-0711",
+    "pediatria-0700",
     "pediatria-0735",
     "pediatria-0824"
    ],
@@ -8929,17 +9004,20 @@
     "pediatria-1300",
     "pediatria-1301",
     "pediatria-1302",
+    "pediatria-1307",
     "pediatria-1303",
     "pediatria-1304",
-    "pediatria-1305",
     "pediatria-1306",
-    "pediatria-1307",
+    "pediatria-1305",
     "pediatria-1308",
     "pediatria-1309",
+    "pediatria-1469",
     "pediatria-1310",
     "pediatria-1311",
-    "pediatria-1312",
+    "pediatria-1470",
+    "pediatria-1471",
     "pediatria-1313",
+    "pediatria-1312",
     "pediatria-1314"
    ],
    "subtemas": [
