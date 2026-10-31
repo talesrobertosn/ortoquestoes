@@ -17051,44 +17051,19 @@
   }
  },
  "trauma-0828": {
-  "conceito": "A haste elástica não segura o fêmur da criança como uma haste rígida, que enche o canal e trava nas duas pontas. Ela funciona como um par de molas: duas hastes finas, curvadas em sentidos opostos, que se apoiam na parede interna do canal em três pontos e se empurram uma contra a outra. Para isso dar certo, o tamanho de cada haste precisa ser calculado a partir do canal.\n\n**A regra do 0,4.** No Rockwood and Green para crianças (10ª ed., cap. 25), o diâmetro de cada haste é o **menor diâmetro do canal multiplicado por 0,4**: cada haste ocupa cerca de **40% do istmo**, e as duas juntas, cerca de **80%**. O exemplo do capítulo é direto: canal de 1 cm, hastes de 4 mm. Usa-se o **menor** diâmetro porque é ali que as duas hastes precisam passar lado a lado; medir pelo maior faria as hastes travarem no istmo.\n\n**Aplicando ao caso.** O canal mede 8 mm no AP e **7 mm no perfil**. O menor é 7 mm: 7 × 0,4 = **2,8 mm**, e o tamanho que se aproxima é **3 mm** por haste. As duas juntas somam 6 mm num canal de 7 mm, dentro da ideia de encher cerca de 80% do istmo. O capítulo acrescenta que as hastes devem ser **iguais e as maiores possíveis**, e que abaixo de 3,5 mm, reservado às crianças pequenas, prefere-se o **aço**, mais rígido (aço de 3,5 mm equivale a titânio de 4 mm).\n\n**Por que o tamanho importa.** Hastes finas demais não geram a tensão necessária e deixam a fratura cair em varo ou angular; grossas demais não cabem lado a lado e travam no istmo. As curvas opostas, com o ápice no foco, criam a fixação pré-tensionada contra varo, valgo e torção. O paciente ideal tem **5 a 11 anos**, menos de **50 kg** e fratura **estável no comprimento**: acima de cerca de 49 kg, o mau resultado foi cinco vezes mais provável.\n\n> **Na prova:** cada haste elástica tem 40% do menor diâmetro do canal (0,4 × istmo); as duas enchem cerca de 80%.\n\nNo resumo de diáfise do fêmur na criança, a seção das hastes elásticas mostra a técnica e as curvas opostas.",
-  "correta": "**B: 3 mm.** O menor diâmetro do canal é 7 mm (perfil); 7 × 0,4 = 2,8 mm, o que leva a hastes de 3 mm. As duas somam 6 mm, perto dos 80% do istmo que a técnica busca, e geram a tensão das curvas opostas sem travar no canal.",
+  "conceito": "Mesma regra das outras questões de hastes elásticas, com uma pegadinha: o canal tem dois diâmetros. O Rockwood and Wilkins' Fractures in Children (cap. 25) diz para medir o **menor diâmetro** da diáfise e multiplicar por **0,4**.\n\nAqui, o canal mede 8 mm no AP e **7 mm** no perfil. O menor é 7 mm: 7 × 0,4 = **2,8 mm**. A haste comercial mais próxima é a de **3 mm**.\n\nUsar o diâmetro maior (8 × 0,4 = 3,2 mm) é o erro que a questão quer pegar: duas hastes calculadas pelo canal mais largo podem não passar juntas pelo istmo, que é mais estreito no perfil.\n\nA lógica do 0,4: cada haste ocupa 40% do istmo, e as duas juntas, cerca de 80%, com curvas opostas e o ápice no foco, para a pré-tensão contra varo, valgo e torção.",
+  "correta": "**B) 3 mm.** Pelo menor diâmetro do canal (7 mm × 0,4 = 2,8 mm), a haste é de 3 mm (Rockwood and Wilkins' Fractures in Children, cap. 25).",
   "incorretas": {
-   "A": "**Finas demais.** Duas hastes de 2 mm somam 4 mm num canal de 7 mm, pouco mais da metade do istmo. Sem encher o canal, as hastes não geram a tensão das curvas opostas, e a fratura tende a angular. O capítulo pede as maiores hastes possíveis dentro da regra do 0,4.",
-   "C": "**Mediu pelo diâmetro errado.** Hastes de 4 mm sairiam de um canal de 10 mm (é o exemplo do capítulo). Aqui, duas de 4 mm somariam 8 mm num canal de 7 mm no perfil: não passam lado a lado no istmo. Quem calcula pelo maior diâmetro (8 mm × 0,4 = 3,2) ainda chegaria perto de 3 mm, nunca de 4.",
-   "D": "**Não cabem.** Duas hastes de 5 mm somam 10 mm, mais que o canal inteiro. A alternativa tenta quem pensa que a haste deve encher o canal sozinha, como uma haste rígida; a elástica trabalha em par."
+   "A": "**2 mm é fino demais** para um canal de 7 mm.",
+   "C": "**4 mm passa de 40% do menor diâmetro** (7 mm); é o tamanho para um canal de 1 cm.",
+   "D": "**5 mm passa da metade do canal**; as duas hastes não caberiam."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: As hastes elásticas."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 25 (Femoral Shaft Fractures; Keith D. Baldwin e John M. Flynn), seção Flexible Intramedullary Nailing (Technique)",
+   "Biblioteca OrtoQuestões, resumo Fratura da diáfise do fêmur na criança (rockwoodcriancas10-25-diafise-femur)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-25-diafise-femur",
-     "titulo": "Fratura da diáfise do fêmur na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
-     "secoes": [
-      "As hastes elásticas"
-     ],
-     "blocos": [
-      "as-hastes-elasticas-8c6022b4",
-      "as-hastes-elasticas-67872f88",
-      "as-hastes-elasticas-4cd941c9",
-      "as-hastes-elasticas-1c94db09"
-     ],
-     "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
-     "trechosSha256": "b93b7f5e66757f6b1ba324290ac5c2f2571c7339e08c31058f5edfd3abbaa6f3"
-    }
-   ],
-   "questaoSha256": "ee55cff41f6b776b1c45a6ef5363550b68bdb1f0de3e133dd582cb4e2bb9468d",
-   "comentarioSha256": "c23a8964efec7e66aa7a99a0f8331bbe4d630cb997dc7b9c58dd1b4a62449852"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "trauma-0850": {
   "incorretas": {
