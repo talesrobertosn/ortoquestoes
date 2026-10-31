@@ -332,6 +332,19 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     )
   }
 
+  // Limpar volta ao padrão e oferece desfazer por alguns segundos (sem confirmação: é fácil de reverter).
+  const [desfazer, definirDesfazer] = useState<Filtros | null>(null)
+  useEffect(() => {
+    if (!desfazer) return
+    const t = window.setTimeout(() => definirDesfazer(null), 8000)
+    return () => window.clearTimeout(t)
+  }, [desfazer])
+  function limpar() {
+    const padrao = filtrosPadrao()
+    if (filtrosParaConsulta(padrao) !== filtrosParaConsulta(filtros)) definirDesfazer(filtros)
+    definirFiltros(padrao)
+  }
+
   // a gaveta do celular com quantas questões e o modo
   const [gaveta, definirGaveta] = useState(false)
   if (carregando) return <Carregando linhas={6} rotulo="Carregando os filtros" />
@@ -360,6 +373,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     filtros.dificuldades.length ? filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', ') : '',
   ].filter(Boolean).join(' · ')
   const opcoesAtivas = [filtros.comImagem, filtros.comComentario, filtros.incluirAnuladas, !filtros.embaralhar, !mostrarEtiquetas].filter(Boolean).length
+    + filtros.provas.length + filtros.anos.length + filtros.dificuldades.length
   // Sempre as mesmas pílulas, no mesmo lugar: esconder as vazias fazia as outras mudarem de
   // posição a cada filtro. A vazia fica visível e desabilitada (com 0).
   const situacoesVisiveis = SITUACOES.filter((s) => !SITUACOES_TURMA.includes(s))
@@ -544,10 +558,15 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                 <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'escolhido' : 'escolhidos'}. Toque de novo para desmarcar.` : 'Sem marcar nenhum, entram todos. Abra um tema para escolher subtemas.'}</p>
               </div>
             </header>
-            <div className="tr-busca tn-busca">
-              <Icone nome="busca" tamanho={18} />
-              <label className="so-leitor" htmlFor="busca-acervo">Buscar no texto das questões</label>
-              <input id="busca-acervo" className="entrada" type="search" name="busca" autoComplete="off" placeholder="Palavra no enunciado: Salter-Harris, Weber, manguito…" value={buscaDigitada} onChange={(e) => definirBuscaDigitada(e.target.value)} />
+            {/* Duas buscas diferentes, com nomes diferentes: esta procura no texto das questões; a do seletor, abaixo,
+                só acha assuntos pelo nome. */}
+            <div className="tn-busca-texto">
+              <label className="tn-busca-texto__rotulo" htmlFor="busca-acervo">Palavras no texto das questões <small>filtra a sessão</small></label>
+              <div className="tr-busca tn-busca">
+                <Icone nome="busca" tamanho={18} />
+                <input id="busca-acervo" className="entrada" type="search" name="busca" autoComplete="off" placeholder="Salter-Harris, Weber, manguito…" value={buscaDigitada} onChange={(e) => definirBuscaDigitada(e.target.value)} />
+                {buscaDigitada && <button type="button" className="tn-busca__limpar" onClick={() => definirBuscaDigitada('')} aria-label="Limpar as palavras do texto"><Icone nome="fechar" tamanho={16} /></button>}
+              </div>
             </div>
             {carregandoTextos && <span className="campo__auxilio">Carregando o texto das questões…</span>}
             <SeletorArvore
@@ -615,7 +634,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <summary className="tn-bloco__cabeca tn-mais__cabeca">
               <span className="px-numero" aria-hidden="true">4</span>
               <span className="tn-mais__texto">
-                <h2>Mais filtros <small className="tn-opcional">opcional</small>{opcoesAtivas > 0 && <span className="tn-mais__ativas">{opcoesAtivas} {opcoesAtivas === 1 ? 'opção' : 'opções'}</span>}</h2>
+                <h2>Mais filtros <small className="tn-opcional">opcional</small>{opcoesAtivas > 0 && <span className="tn-mais__ativas">{opcoesAtivas} {opcoesAtivas === 1 ? 'ativo' : 'ativos'}</span>}</h2>
                 <p>{resumoProva}</p>
               </span>
               <Icone nome="baixo" tamanho={18} />
@@ -726,10 +745,13 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
             <div className="tn-bilhete__acoes">
               {botaoSalvar('tn-bilhete__acao')}
-              <button type="button" className="botao botao--fantasma tn-bilhete__acao" title="Voltar ao padrão: Ortopedia, não respondidas, 20" onClick={() => definirFiltros(filtrosPadrao())}>
-                <Icone nome="reiniciar" tamanho={16} /> Limpar
+              <button type="button" className="botao botao--fantasma tn-bilhete__acao" title="Voltar ao padrão: Ortopedia, não respondidas, 20" onClick={limpar}>
+                <Icone nome="reiniciar" tamanho={16} /> Limpar tudo
               </button>
             </div>
+            {desfazer && (
+              <p className="tn-desfazer" role="status">Filtros de volta ao padrão. <button type="button" onClick={() => { definirFiltros(desfazer); definirDesfazer(null) }}>Desfazer</button></p>
+            )}
           </div>
 
           {simuladosAcervo > 0 && (
@@ -756,8 +778,20 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       </div>
       <Painel titulo="Sua sessão" aberto={gaveta} aoFechar={() => definirGaveta(false)} rodape={comecarBotao('tn-gaveta__comecar')}>
         <div className="tn-bilhete tn-gaveta">
-          <p className="tn-gaveta__resumo">{nomeArea} · {selecionados ? rotuloOQue(filtros) : 'todos os assuntos'} · {ROTULO_SITUACAO[filtros.situacao].toLowerCase()}</p>
+          <dl className="tn-bilhete__dados tn-gaveta__dados">
+            <div><dt>Prova</dt><dd>{nomeArea}</dd></div>
+            <div><dt>Origem</dt><dd>{origem === 'tudo' ? 'Provas + Simulados' : origem === 'oficiais' ? 'Só provas oficiais' : 'Só Simulados'}</dd></div>
+            <div><dt>Assunto</dt><dd>{selecionados ? rotuloOQue(filtros) : 'Todos'}</dd></div>
+            <div><dt>Quais</dt><dd>{ROTULO_SITUACAO[filtros.situacao]}</dd></div>
+            {total > 0 && <div><dt>Tempo</dt><dd>cerca de {estimativaMinutos} min</dd></div>}
+          </dl>
+          {tambemValem.length > 0 && <ul className="tn-valem" aria-label="Filtros que também valem">{tambemValem.map((t) => <li key={t}>{t}</li>)}</ul>}
           {escolhas('-gaveta')}
+          <div className="tn-bilhete__acoes">
+            {botaoSalvar('tn-bilhete__acao')}
+            <button type="button" className="botao botao--fantasma tn-bilhete__acao" onClick={limpar}><Icone nome="reiniciar" tamanho={16} /> Limpar tudo</button>
+          </div>
+          {desfazer && <p className="tn-desfazer" role="status">Filtros de volta ao padrão. <button type="button" onClick={() => { definirFiltros(desfazer); definirDesfazer(null) }}>Desfazer</button></p>}
         </div>
       </Painel>
     </div>
