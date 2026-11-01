@@ -1,0 +1,228 @@
+/* A Torre do Tempo no topo do cronograma de ortopedia (31/10/2026).
+   O cenário pintado (CenaTorre) ocupa a moldura; o texto fica num vidro escuro com filete dourado do lado calmo da
+   arte (no computador) ou embaixo da janela da arte (no celular), sem cobrir o relógio. Vale só com .cp-onde--torre,
+   que só o cronograma de ortopedia passa: o cronograma da Mão e o calendário da Revisão não mudam. */
+
+.cr .cp-onde.cp-onde--torre {
+  --ct-tinta: #0b1315; --ct-ouro: #f0c46a; --ct-borda: rgba(232, 206, 150, 0.42);
+  display: block; position: relative; isolation: isolate; overflow: hidden; padding: 0; border-radius: 10px;
+  background: var(--ct-tinta); color: #fff; box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.55);
+}
+.cp-onde--torre .cp-onde__palco { position: relative; }
+.cp-onde--torre .cp-onde__janela { position: relative; overflow: hidden; }
+.cp-onde--torre .cp-onde__janela .ct-cena { --ct-foco: 1; }
+/* Véu só onde a leitura pede: a borda de baixo funde a arte com o vidro. */
+.cp-onde--torre .cp-onde__janela::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 70%, color-mix(in srgb, var(--ct-tinta) 65%, transparent) 90%, var(--ct-tinta)); }
+
+.cp-onde--torre .cp-onde__vidro { position: relative; z-index: 1; display: grid; gap: var(--e-4); min-width: 0; }
+.cr .cp-onde--torre .cp-onde__cabeca { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--e-4); }
+.cr .cp-onde--torre .cp-onde__texto, .cr .cp-onde--torre .cp-onde__acoes, .cr .cp-onde--torre .cp-onde__pe, .cr .cp-onde--torre .cp-trilho { grid-area: auto; }
+.cr .cp-onde--torre .cp-onde__selo { margin: 0 0 var(--e-2); padding: 0.18rem 0.6rem; background: rgba(10, 12, 20, 0.6); color: var(--ct-ouro); box-shadow: inset 0 0 0 1px var(--ct-borda); font-size: 0.7rem; letter-spacing: 0.12em; }
+.cr .cp-onde--torre h1 { text-shadow: 0 3px 0 rgba(0, 0, 0, 0.55); }
+.cr .cp-onde--torre h1 em { color: var(--ct-ouro); }
+.cr .cp-onde--torre .cp-onde__acoes { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: var(--e-3); }
+.cr .cp-onde--torre .cp-onde__rapida { max-width: 100%; }
+.cr .cp-onde--torre .cp-onde__ajustar { flex: none; width: auto; border: 1px solid var(--ct-borda); background: rgba(10, 12, 20, 0.45); color: #fff; }
+@media (max-width: 35.99rem) { .cr .cp-onde--torre .cp-onde__rapida { flex: 1 1 100%; } }
+
+/* O chão: o trilho até a prova e a frase da fase, numa faixa escura logo abaixo da cena. */
+.cp-onde--torre .cp-onde__chao { position: relative; display: grid; gap: var(--e-4); padding: var(--e-4) clamp(1rem, 4vw, 1.5rem) clamp(1.1rem, 4vw, 1.5rem);
+  border-top: 1px solid rgba(232, 206, 150, 0.16); background: linear-gradient(180deg, #101a1d, var(--ct-tinta)); }
+.cr .cp-onde--torre .cp-onde__pe { grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); }
+.cr .cp-onde--torre .cp-onde__frase, .cr .cp-onde--torre .cp-resumo { background: rgba(255, 255, 255, 0.05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
+.cr .cp-onde--torre .cp-trilho { margin-top: var(--e-1); }
+
+/* ── Celular: a janela da arte em cima (a torre inteira, do telhado à porta) e o texto embaixo, na mesma moldura. */
+.cp-onde--torre .cp-onde__janela { height: clamp(12rem, 56vw, 15rem); }
+.cp-onde--torre .cp-onde__vidro { margin-top: -1.6rem; padding: 0 clamp(1rem, 4vw, 1.5rem) var(--e-4); }
+@media (min-width: 36rem) and (max-width: 63.99rem) {
+  .cp-onde--torre .cp-onde__janela { height: auto; aspect-ratio: 12 / 5; }
+  .cr .cp-onde--torre .cp-onde__cabeca { grid-template-columns: minmax(0, 1fr) auto; align-items: end; }
+  .cr .cp-onde--torre .cp-onde__acoes { flex-direction: column; align-items: stretch; }
+}
+
+/* ── Computador: a arte inteira no palco, o vidro à esquerda (x 0-205 da arte: o céu e o bosque calmos) e a torre
+   livre à direita; no chão, o trilho e a fase lado a lado. */
+@media (min-width: 64rem) {
+  .cp-onde--torre .cp-onde__palco { display: flex; align-items: center; min-height: clamp(25rem, 36vw, 30rem); }
+  .cp-onde--torre .cp-onde__janela { position: absolute; inset: 0; height: auto; }
+  .cp-onde--torre .cp-onde__janela::after { background:
+    linear-gradient(90deg, rgba(8, 12, 16, 0.5), rgba(8, 12, 16, 0.2) 40%, transparent 56%),
+    linear-gradient(180deg, transparent 78%, rgba(11, 19, 21, 0.75)); }
+  .cp-onde--torre .cp-onde__vidro {
+    width: min(34rem, 46%); margin: clamp(1.25rem, 2.4vw, 2rem); padding: clamp(1.25rem, 2vw, 1.6rem);
+    border-radius: 6px; background: linear-gradient(180deg, rgba(14, 18, 26, 0.76), rgba(8, 10, 16, 0.84));
+    box-shadow: inset 0 0 0 1px var(--ct-borda), inset 0 0 0 4px rgba(0, 0, 0, 0.3), inset 0 0 0 5px rgba(232, 206, 150, 0.12), 0 14px 34px rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  }
+  .cp-onde--torre .cp-onde__vidro::before, .cp-onde--torre .cp-onde__vidro::after {
+    content: ""; position: absolute; width: 9px; height: 9px; background: var(--ct-ouro); transform: rotate(45deg); box-shadow: 0 0 8px rgba(240, 196, 106, 0.6); pointer-events: none; }
+  .cp-onde--torre .cp-onde__vidro::before { top: -4px; left: -4px; }
+  .cp-onde--torre .cp-onde__vidro::after { bottom: -4px; right: -4px; }
+  .cp-onde--torre .cp-onde__chao { grid-template-columns: minmax(0, 1.5fr) minmax(18rem, 1fr); align-items: center; gap: var(--e-6); padding: var(--e-4) clamp(1.25rem, 2.4vw, 2rem) var(--e-5); }
+  .cr .cp-onde--torre .cp-onde__pe { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ── O tour da primeira visita, curto e dentro do topo: uma linha, as 3 partes num toque e o "Entendi". */
+.cr .cp-onde--torre .cp-tour--compacto, .cr .cp-tour--compacto {
+  display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--e-2) var(--e-3); padding: var(--e-2) var(--e-2) var(--e-2) var(--e-3);
+  border: 0; border-radius: 4px; background: rgba(240, 196, 106, 0.1); box-shadow: inset 0 0 0 1px rgba(240, 196, 106, 0.3);
+}
+.cp-tour--compacto details { flex: 1 1 10rem; min-width: 0; }
+.cp-tour--compacto summary { display: flex; align-items: center; gap: var(--e-2); min-height: 40px; cursor: pointer; list-style: none; font-size: var(--corpo-menor); font-weight: 700; color: #fff; }
+.cp-tour--compacto summary::-webkit-details-marker { display: none; }
+.cp-tour--compacto summary svg { flex: none; transition: transform 0.2s ease; }
+.cp-tour--compacto details[open] summary svg { transform: rotate(180deg); }
+.cp-tour--compacto summary:focus-visible { outline: 2px solid var(--ct-ouro, #f0c46a); outline-offset: 2px; }
+.cr .cp-tour--compacto ol { grid-template-columns: minmax(0, 1fr); gap: var(--e-2); margin: var(--e-1) 0 var(--e-2); }
+.cr .cp-tour--compacto li > span:first-child { width: 1.6rem; height: 1.6rem; font-size: 1.1rem; }
+.cr .cp-tour--compacto strong { color: #fff; font-size: var(--corpo-menor); }
+.cr .cp-tour--compacto small { color: rgba(255, 255, 255, 0.78); }
+.cp-tour__entendi { flex: none; min-height: 40px; padding: 0 var(--e-4); border: 0; border-radius: 4px; background: var(--ct-ouro, #f0c46a); color: #1b1208; font: inherit; font-size: var(--corpo-menor); font-weight: 800; cursor: pointer; }
+.cp-tour__entendi:hover { background: #ffd98a; }
+.cp-tour__entendi:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+/* ── Abaixo do topo a interface respira: bordas finas e sombras macias; a cor forte fica na arte. */
+.cr--torre { --cr-cartao-borda: 1px solid var(--traco); --cr-cartao-sombra: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 24px -16px rgba(0, 0, 0, 0.28); }
+/* O calendário é o mapa de trabalho: superfície calma, borda fina; o ouro fica só no botão do dia, lá em cima.
+   "Ver o mês inteiro" vira um botão de contorno, para não disputar com "Continuar". */
+.cr--torre .cc--cronograma.cc--embutido .cc-janela { border: 1px solid var(--traco); border-radius: 10px; box-shadow: var(--cr-cartao-sombra); }
+.cr--torre .cc--cronograma.cc--embutido .cc-topo { border-bottom: 1px solid var(--traco); }
+.cr--torre .cc--cronograma .cc-nav__botao, .cr--torre .cc--cronograma .cc-nav__hoje { border: 1px solid var(--traco); box-shadow: none; }
+.cr--torre .cc--cronograma .cc-nav__botao:hover:not(:disabled), .cr--torre .cc--cronograma .cc-nav__hoje:hover { box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.25); }
+.cr--torre .cc--cronograma .ccs-alternar { margin: 0; border-radius: 6px; background: var(--superficie); color: var(--texto); box-shadow: inset 0 0 0 1.5px var(--verdete); font-size: var(--corpo-menor); }
+.cr--torre .cc--cronograma .ccs-alternar svg { color: var(--verdete); }
+.cr--torre .cc--cronograma .ccs-alternar:hover { background: var(--verdete-veu); transform: none; box-shadow: inset 0 0 0 1.5px var(--verdete); }
+.cr--torre .cc--cronograma .ccs-alternar:active { transform: translateY(1px); box-shadow: inset 0 0 0 1.5px var(--verdete); }
+@media (max-width: 29.99rem) { .cp-tour--compacto .cp-tour__pre { display: none; } }
+
+/* ── Montar ou ajustar: a mesma torre numa faixa curta atrás do título, com o relógio à vista. */
+.cr-form .pe-heroi--torre { position: relative; isolation: isolate; overflow: hidden; background: #0b1315; }
+.cr-form .pe-heroi--torre > div:not(.ct-cena) { position: relative; z-index: 1; }
+.pe-heroi--torre .ct-cena { z-index: 0; --ct-foco: 1; }
+.pe-heroi--torre .ct-cena__mundo { bottom: auto; top: 50%; transform: translateY(-50%); }
+.pe-heroi--torre .ct-cena::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(8, 12, 16, 0.86), rgba(8, 12, 16, 0.6) 45%, rgba(8, 12, 16, 0.05) 75%); }
+@media (max-width: 40rem) { .pe-heroi--torre .ct-cena::after { background: linear-gradient(90deg, rgba(8, 12, 16, 0.88), rgba(8, 12, 16, 0.55)); } }
+
+/* ── O resto da página no formato da página inicial (Tales, 31/10/2026: "deixar de ser quadrado"): cartões de
+   raio 20, controles de raio 12, selos e chips em pílula, bordas finas e sombras macias no lugar das sombras de bloco.
+   As marcas de cor das áreas continuam pequenas e retas (são legenda, não caixa). */
+.cr--torre { --ct-raio: 20px; --ct-raio-ctl: 12px; --ct-sombra-ctl: 0 1px 2px rgba(0, 0, 0, 0.06), 0 4px 12px -6px rgba(0, 0, 0, 0.22); }
+.cr.cr--torre .cp-onde.cp-onde--torre { border-radius: var(--ct-raio); }
+@media (min-width: 64rem) { .cr--torre .cp-onde--torre .cp-onde__vidro { border-radius: 16px; } }
+.cr--torre .cp-onde--torre .cp-onde__rapida { border-radius: var(--ct-raio-ctl); box-shadow: 0 0 0 1px rgba(27, 18, 8, 0.35), 0 8px 22px -8px rgba(240, 196, 106, 0.7); }
+.cr--torre .cp-onde--torre .cp-onde__rapida:hover { transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(27, 18, 8, 0.35), 0 12px 26px -8px rgba(240, 196, 106, 0.8); }
+.cr--torre .cp-onde--torre .cp-onde__rapida:active { transform: translateY(1px); box-shadow: 0 0 0 1px rgba(27, 18, 8, 0.35); }
+.cr--torre .cp-onde--torre .cp-onde__rapida > svg { border-radius: 9px; }
+.cr--torre .cp-onde--torre .cp-onde__ajustar, .cr--torre .cp-tour__entendi { border-radius: var(--ct-raio-ctl); }
+.cr--torre .cp-onde--torre .cp-onde__selo { border-radius: 999px; }
+.cr.cr--torre .cp-onde__frase, .cr.cr--torre .cp-resumo, .cr.cr--torre .cp-tour--compacto { border-radius: 14px; }
+.cr.cr--torre .cp-trilho__faixa { border-radius: 999px; }
+.cr.cr--torre .cp-trilho__voce { border-radius: 50%; box-shadow: 0 0 0 3px #0b1315, 0 0 0 5px rgba(240, 196, 106, 0.45); }
+.cr.cr--torre .cp-resumo__selo { border-radius: 999px; }
+
+/* Calendário */
+.cr--torre .cc--cronograma.cc--embutido .cc-janela { border-radius: var(--ct-raio); overflow: hidden; }
+.cr--torre .cc--cronograma.cc--embutido .cc-topo__selo { border-radius: 999px; box-shadow: none; }
+.cr--torre .cc--cronograma .cc-nav__botao, .cr--torre .cc--cronograma .cc-nav__hoje { border-radius: var(--ct-raio-ctl); }
+.cr--torre .cc--cronograma .ccs-alternar { border-radius: var(--ct-raio-ctl); }
+.cr--torre .cc--cronograma .cc-dia > button, .cr--torre .cc--cronograma .cc-dia--vazio, .cr--torre .cc--cronograma .ccs-dia > button { border-radius: 14px; }
+.cr--torre .cc--cronograma .ccs-dia > button { border-width: 1px; box-shadow: var(--ct-sombra-ctl); }
+.cr--torre .cc--cronograma .cc-dia > button:hover:not(:disabled), .cr--torre .cc--cronograma .ccs-dia > button:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 10px 22px -12px rgba(0, 0, 0, 0.35); }
+.cr--torre .cc--cronograma .cc-dia > button:active:not(:disabled), .cr--torre .cc--cronograma .ccs-dia > button:active:not(:disabled) { transform: translateY(0); box-shadow: none; }
+.cr--torre .cc--cronograma .cc-dia__hoje, .cr--torre .cc--cronograma .cc-detalhe__agora, .cr--torre .cc--cronograma .ccs-selo, .cr--torre .cc--cronograma .cc-dia__selo { border-radius: 999px; box-shadow: none; }
+.cr--torre .cc--cronograma .cc-detalhe { border-radius: 18px; border-width: 1px; border-top-width: 4px; box-shadow: var(--cr-cartao-sombra); }
+.cr--torre .cc--cronograma .cc-detalhe__progresso, .cr--torre .cc--cronograma .cc-detalhe__progresso span { border-radius: 999px; }
+.cr--torre .cc--cronograma .cc-detalhe__chips span { border-radius: 999px; }
+.cr--torre .cc--cronograma .cc-detalhe__ok, .cr--torre .cc--cronograma .cc-detalhe__nota { border-radius: var(--ct-raio-ctl); }
+@media (max-width: 46rem) { .cr--torre .cc--cronograma.cc--embutido .cc-janela { border-radius: 18px; } }
+
+/* Hoje, Amanhã, semana, como você está indo, avisos e blocos recolhidos */
+.cr.cr--torre .cp-hoje, .cr.cr--torre .cp-amanha, .cr.cr--torre .cp-semana, .cr.cr--torre .bib-caixa, .cr.cr--torre .pe-aviso,
+.cr.cr--torre .cp-recolhido { border-radius: var(--ct-raio); border: var(--cr-cartao-borda); box-shadow: var(--cr-cartao-sombra); }
+.cr.cr--torre .cp-hoje { overflow: hidden; }
+.cr.cr--torre .cp-indo > div { border-radius: 16px; border: var(--cr-cartao-borda); box-shadow: var(--cr-cartao-sombra); }
+.cr.cr--torre .cp-hoje__cor, .cr.cr--torre .cp-amanha__cor, .cr.cr--torre .cp-dia__cor { border-radius: 999px; }
+.cr.cr--torre .cp-chips li { border-radius: 999px; }
+.cr.cr--torre .cp-lista__marca { border-radius: 8px; }
+.cr.cr--torre .cp-lista__barra, .cr.cr--torre .cp-lista__barra span { border-radius: 999px; }
+.cr.cr--torre .cp-lista__acao { border-radius: 10px; border-width: 1px; box-shadow: none; }
+.cr.cr--torre .cp-hoje__ajustar, .cr.cr--torre .cp-hoje__teto, .cr.cr--torre .cp-hoje__resumo { border-radius: 14px; }
+.cr.cr--torre .cp-botao { border-radius: var(--ct-raio-ctl); box-shadow: 0 8px 20px -10px color-mix(in srgb, var(--verdete) 80%, transparent); }
+.cr.cr--torre .cp-botao:hover { transform: translateY(-1px); box-shadow: 0 12px 24px -10px color-mix(in srgb, var(--verdete) 85%, transparent); }
+.cr.cr--torre .cp-botao:active { transform: translateY(1px); box-shadow: none; }
+.cr.cr--torre .cp-botao--ouro { box-shadow: 0 8px 22px -8px rgba(240, 196, 106, 0.75); }
+.cr.cr--torre .cp-adiantar { border-radius: 16px; border-width: 1px; }
+.cr.cr--torre .cp-adiantar__icone, .cr.cr--torre .cp-extra__icone, .cr.cr--torre .cp-recolhido__icone, .cr.cr--torre .pe-aviso__icone, .cr.cr--torre .pe-entenda__icone { border-radius: 10px; }
+.cr.cr--torre .cp-adiantar__opcao, .cr.cr--torre .cp-adiantar__estado, .cr.cr--torre .cp-adiantar__cancelar { border-radius: var(--ct-raio-ctl); border-width: 1px; box-shadow: none; }
+.cr.cr--torre .cp-extra { border-radius: 14px; border-width: 1px; }
+.cr.cr--torre .cp-dia { border-radius: 12px; }
+.cr.cr--torre .cp-recolhido { overflow: hidden; }
+.cr.cr--torre .cp-recolhido > summary, .cr.cr--torre .cp-recolhido[open] > summary { border-radius: 0; }
+.cr.cr--torre .pe-entenda__lista li { border-radius: 12px; }
+.cr.cr--torre .pe-aviso-previa { border-radius: 14px; border-width: 1px; }
+.cr.cr--torre .cp-depois__faixa { border-radius: 999px; }
+.cr--torre .cf-faixa { border-radius: 16px; border-width: 1px; }
+.cr--torre .cf-selo { border-radius: 999px; }
+.cr--torre .pe-semana, .cr--torre .pe-chip { border-radius: 12px; }
+
+/* Montar ou ajustar */
+.cr-form.cr--torre .pe-heroi--torre { border-radius: var(--ct-raio); }
+.cr-form.cr--torre .pe-form, .cr-form.cr--torre .cartao { border-radius: var(--ct-raio); }
+.cr-form.cr--torre .pe-passos__item span { border-radius: 10px; }
+.cr-form.cr--torre .pe-form__mais, .cr-form.cr--torre .pe-data-atalho { border-radius: var(--ct-raio-ctl); }
+.cr.cr--torre .cp-conta__linha { border-radius: 12px; }
+
+/* ══ A calçada da praça embaixo do topo (Tales, 31/10/2026) ══
+   A página inteira fica sobre o chão de pedra pintado (scripts/gerar_cena_cronograma.py chao), iluminado como na
+   cena: poças de luz quente da torre e das lanternas, um feixe de sol lento atravessando e as caixas projetando
+   sombra macia nas pedras. As caixas de texto continuam brancas (tema claro) e com as cores de sempre, como na
+   página inicial: a luz e a cor forte ficam no chão e na arte. */
+.cr--torre {
+  position: relative; isolation: isolate; padding: clamp(0.6rem, 1.8vw, 1.25rem); border-radius: 26px; overflow: hidden;
+  background:
+    radial-gradient(60rem 30rem at 80% 0%, rgba(255, 178, 88, 0.42), transparent 70%),
+    radial-gradient(36rem 28rem at 0% 34%, rgba(255, 160, 70, 0.32), transparent 70%),
+    radial-gradient(38rem 30rem at 100% 62%, rgba(255, 170, 80, 0.3), transparent 70%),
+    radial-gradient(34rem 28rem at 8% 92%, rgba(255, 150, 66, 0.28), transparent 72%),
+    radial-gradient(70rem 40rem at 50% 50%, rgba(255, 196, 120, 0.12), transparent 75%),
+    linear-gradient(180deg, rgba(40, 22, 10, 0.05), rgba(10, 8, 6, 0.42)),
+    var(--ct-chao, none) 0 0 / 360px repeat, #1a1410;
+  background-blend-mode: screen, screen, screen, screen, screen, normal, normal, normal;
+  box-shadow: inset 0 0 0 1px rgba(255, 210, 150, 0.16), inset 0 0 110px rgba(14, 8, 4, 0.6), 0 24px 50px -30px rgba(0, 0, 0, 0.6);
+}
+/* O feixe de sol: uma faixa morna em diagonal, com a beira mais acesa, que atravessa a calçada devagar. */
+.cr--torre::before { content: ""; position: absolute; z-index: -1; inset: -20% -40%; pointer-events: none; mix-blend-mode: screen;
+  background: linear-gradient(105deg, transparent 38%, rgba(255, 214, 150, 0.1) 45%, rgba(255, 220, 160, 0.22) 50%, rgba(255, 214, 150, 0.1) 55%, transparent 62%);
+  animation: ct-feixe 30s ease-in-out infinite alternate; }
+@keyframes ct-feixe { from { transform: translateX(-16%); } to { transform: translateX(16%); } }
+/* As lanternas tremulam: as poças de luz das bordas respiram de leve. */
+.cr--torre::after { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none; mix-blend-mode: screen;
+  background: radial-gradient(16rem 16rem at 1% 58%, rgba(255, 150, 60, 0.32), transparent 70%), radial-gradient(16rem 16rem at 99% 28%, rgba(255, 150, 60, 0.28), transparent 70%),
+    radial-gradient(14rem 14rem at 97% 88%, rgba(255, 150, 60, 0.24), transparent 70%);
+  animation: ct-brasa 4.6s ease-in-out infinite; }
+@keyframes ct-brasa { 0%, 100% { opacity: 0.85; } 35% { opacity: 1; } 60% { opacity: 0.68; } 80% { opacity: 0.95; } }
+@media (prefers-reduced-motion: reduce) { .cr--torre::before, .cr--torre::after { animation: none; } }
+
+/* As caixas de sempre, pousadas na calçada: a sombra cai nas pedras (contato escuro e sombra larga e quente). */
+.cr--torre .cc--cronograma.cc--embutido .cc-janela, .cr.cr--torre .cp-hoje, .cr.cr--torre .cp-amanha, .cr.cr--torre .cp-semana,
+.cr.cr--torre .bib-caixa, .cr.cr--torre .cp-recolhido, .cr.cr--torre .cp-indo > div, .cr.cr--torre .pe-aviso, .cr.cr--torre .cp-conta__linha,
+.cr-form.cr--torre .pe-form, .cr-form.cr--torre .pe-montar > .cartao, .cr-form.cr--torre .pe-montar > section {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 3px rgba(20, 10, 4, 0.35), 0 22px 40px -18px rgba(20, 10, 4, 0.75);
+}
+
+/* O que fica escrito direto na calçada (os títulos das seções, notas e links): tinta clara com sombra. */
+.cr.cr--torre .cp-col > div > .cp-bloco > .cp-rotulo, .cr.cr--torre .cp-col .cp-rotulo, .cr.cr--torre > .cp-rotulo { color: #fff6e6; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.6); }
+.cr.cr--torre .cp-col .cp-rotulo b, .cr.cr--torre .bib-caixa__todos { color: #ffd98e; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
+.cr.cr--torre .cp-indo__nota, .cr.cr--torre .cp-col > div > .cp-bloco > p:not(.cp-rotulo) { color: rgba(255, 246, 230, 0.82); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
+.cr.cr--torre .cr-rodape__link { color: #ffd98e; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
+.cr.cr--torre > :is(p, div):not([class*="cp-"]):not([class*="cc"]) { color: rgba(255, 246, 230, 0.85); }
+
+/* No computador o título cabe no vidro sem quebrar número e palavra em linhas soltas (1024 px: "Faltam / 71 / dias"). */
+@media (min-width: 64rem) {
+  .cr .cp-onde--torre h1 { font-size: clamp(2.2rem, 3.3vw, 3.6rem); }
+  .cr .cp-onde--torre h1 em { white-space: nowrap; }
+}
+@media (min-width: 64rem) and (max-width: 79.99rem) { .cp-onde--torre .cp-onde__vidro { width: min(34rem, 50%); } }

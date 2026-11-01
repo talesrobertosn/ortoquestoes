@@ -172,3 +172,29 @@ Isso substitui a prévia preenchida pela pessoa (itens 38 e 39).
 53. [x] Exportação .ics com datas civis, marcos, linhas válidas com acentos e testes em quatro fusos. [Relatório e capturas](REVISAO-CALENDARIOS-16-10.md).
 
 Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoquestoes/pull/327).
+
+### Torre do Tempo (31/10/2026)
+
+54. [x] Topo do cronograma de ortopedia com a cena HD-2D original da torre do relógio da vila, na estrada até o castelo
+    da prova (`src/componentes/cronograma/CenaTorre.tsx`, `src/estilos/paginas/CronogramaTorre.css`). Manhã, tarde e
+    noite com a mesma geometria (segue `estado/aparencia.ts`); só a imagem da hora em uso é carregada. Sino que balança
+    raramente, lanternas que tremulam e poeira/vaga-lumes, pausados fora da tela e desligados com "menos animação".
+    Título, meta e o botão do dia num vidro escuro do lado calmo da arte (no celular, embaixo da janela da arte); trilho
+    e fase no "chão" logo abaixo da cena. O calendário continua logo depois. Tour de 3 partes curto, dentro do topo, com
+    o mesmo "Entendi" e o mesmo registro. Troca de cronograma numa linha só (rola de lado no celular). O resto da página
+    no formato redondo da página inicial (cartões de raio 20, controles de raio 12, selos em pílula, sombras macias),
+    só no cronograma de ortopedia (`.cr--torre`); o da Mão continua como estava. O formulário ganhou a torre numa faixa curta.
+    Arte: `<python com numpy e pillow> scripts/gerar_cena_cronograma.py [manha|tarde|noite]` gera
+    `public/pixel/cronograma/torre-tempo-<hora>(-960).webp` e `torre-tempo-sino-<hora>.png`. O relógio não tem letras nem
+    algarismos e não marca a prova: os dias que faltam são o número do HTML.
+55. [x] A calçada da praça embaixo do topo (Tales, 31/10/2026): a página inteira do cronograma de ortopedia (e o
+    formulário) fica sobre o chão de pedra pintado (`scripts/gerar_cena_cronograma.py chao` → `torre-tempo-chao.webp`,
+    ladrilho sem emenda, pedra morna com o chanfro aceso), com poças de luz quente da torre e das lanternas, um feixe de
+    sol lento e as caixas projetando sombra nas pedras (animações desligadas com "menos animação"). As caixas de texto
+    continuam brancas no tema claro (e escuras no escuro), como na página inicial; só os títulos que ficam direto na
+    calçada ganharam tinta clara com sombra. Tudo dentro de `.cr--torre`.
+56. [x] Easter egg (Tales, 31/10/2026): de vez em quando (4 em 10 visitas) a coruja ou o gato aparecem e sentam na
+    borda de cima de um botão ("Ver o mês inteiro", "Semana difícil", "Continuar", um bloco recolhido ou o link do
+    rodapé), só onde não cobrem texto nem controle; um toque e falam (as mesmas falas do Salão dos Cem). Código:
+    `src/componentes/cronograma/VisitaCronograma.tsx`. Para conferir: `#/cronograma?visita=gato` (ou `coruja`,
+    `nenhuma`).
