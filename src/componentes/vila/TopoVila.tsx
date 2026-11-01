@@ -66,7 +66,27 @@ function Bichos({ cena, dicas, periodo }: { cena: CenaVila; dicas: readonly stri
     const texto = dicas.length && toquesCoruja.current % 4 === 0 ? dicas[(toquesCoruja.current / 4 - 1) % dicas.length] : proximaFala('coruja', CONCEITOS_CORUJA)
     definirFala({ quem: 'coruja', texto })
   }
-  const tocarGato = () => { definirGatoAcordado(true); definirFala({ quem: 'gato', texto: proximaFala('gato', FALAS_GATO) }) }
+  const tocarGato = () => { definirGatoAcordado(true); definirPoseGato(null); definirFala({ quem: 'gato', texto: proximaFala('gato', FALAS_GATO) }) }
+  // Vida nas cenas da vila: de tempos em tempos o gato muda de atividade sozinho (lambe a pata, caça, se derrete no
+  // sol) e volta ao que fazia. Só com a aba à vista; no celular, bem mais espaçado; com "menos movimento", parado.
+  const [poseGato, definirPoseGato] = useState<IdLinhaGato | null>(null)
+  useEffect(() => {
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    const celular = window.matchMedia?.('(max-width: 60rem)').matches
+    const opcoes: IdLinhaGato[] = periodo === 'noite' ? ['lambendo', 'cacando', 'ronronando'] : ['lambendo', 'derretido', 'cacando', 'espreguicando']
+    let t = 0, volta = 0
+    const proxima = () => {
+      t = window.setTimeout(() => {
+        if (!document.hidden) {
+          definirPoseGato(opcoes[Math.floor(Math.random() * opcoes.length)])
+          volta = window.setTimeout(() => definirPoseGato(null), 7000)
+        }
+        proxima()
+      }, (celular ? 120 : 35) * 1000 + Math.random() * (celular ? 120 : 40) * 1000)
+    }
+    proxima()
+    return () => { window.clearTimeout(t); window.clearTimeout(volta) }
+  }, [periodo])
   const { coruja, gato } = cena
   // A luz da cena nos bichos (componentes/mascote/luz.ts): as chamas acesas nesta hora e o sol ou a lua da janela.
   const ceu = cena.ceu ?? { x: 470, y: 0 }
@@ -89,7 +109,7 @@ function Bichos({ cena, dicas, periodo }: { cena: CenaVila; dicas: readonly stri
     <button type="button" className={`vl-bicho vl-gato ${luzGato.className}`} aria-label="O gato: tocar para ouvir o que ele acha" onClick={tocarGato}
       style={{ ...lugar(gato.x, gato.y, 34, 25.5), ...luzGato.style }}>
       <span className="bicho-sombra__chao" aria-hidden="true" />
-      <GatoPixel estado={gatoAcordado ? gato.acordado : gato.estado} />
+      <GatoPixel key={poseGato ?? 'base'} estado={poseGato ?? (gatoAcordado ? gato.acordado : gato.estado)} />
     </button>
     {fala && <span className={`vl-balao vl-balao--${fala.quem}${embaixo ? ' vl-balao--embaixo' : ''}`} role="status" onClick={() => definirFala(null)} style={lugar(ponta.x, ponta.y, 0, 0)}>{fala.texto}</span>}
   </>

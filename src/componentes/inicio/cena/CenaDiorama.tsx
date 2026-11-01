@@ -197,6 +197,28 @@ function CorujaDoAcampamento({ poleiros: POLEIROS, luzes, periodo }: { poleiros:
 }
 
 
+/** Os bichos lembram de você: o dia da última visita fica no aparelho (sem servidor). Devolve quantos dias se passaram. */
+const CHAVE_VISITA = 'bichos:ultima-visita'
+let diasDaVisita: number | null = null
+function diasDesdeUltimaVisita(): number {
+  if (diasDaVisita !== null) return diasDaVisita
+  try {
+    const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+    const antes = Number(localStorage.getItem(CHAVE_VISITA) ?? 0)
+    localStorage.setItem(CHAVE_VISITA, String(hoje.getTime()))
+    return (diasDaVisita = antes ? Math.round((hoje.getTime() - antes) / 86400000) : 0)
+  } catch { return (diasDaVisita = 0) }
+}
+const POR_EXTENSO = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+/** A cena de quem volta depois de alguns dias: o gato contou, a coruja acolhe, o esqueleto acena. */
+function roteiroDaVolta(dias: number): Roteiro {
+  const n = dias <= 10 ? POR_EXTENSO[dias] : String(dias)
+  return { id: 'volta', peso: 0, passos: [
+    { quem: 'gato', fala: `${n.charAt(0).toUpperCase()}${n.slice(1)} dias fora. Eu contei. Dormindo, mas contei.`, acao: { tipo: 'gato-pose', id: 'sentado' } },
+    { quem: 'coruja', fala: 'Que bom que voltou. Uma revisão curta já reacende tudo.' },
+    { quem: 'esqueleto', fala: 'A fogueira guardou brasa para você.', acao: { tipo: 'pose', id: 'acenar' } }] }
+}
+
 /** As raridades já vistas (o álbum dos bichos): ficam no aparelho, sem servidor. */
 const CHAVE_ALBUM = 'bichos:album'
 function guardarNoAlbum(id: string) {
@@ -270,8 +292,9 @@ function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObjec
       for (const passo of r.passos) {
         if (passo.acao) agir(passo.acao)
         if (passo.fala && passo.quem) {
+          // Quem não está à vista nesta largura de tela só não fala; a cena segue com os outros.
           const alvo = el.querySelector(SELETOR_BICHO[passo.quem])
-          if (!alvo) break
+          if (!alvo) continue
           const P = el.getBoundingClientRect(), b = alvo.getBoundingClientRect()
           avisarFala('diretor')
           definirFala({ quem: passo.quem, texto: passo.fala, x: ((b.left + b.width / 2 - P.left) / P.width) * 100, y: ((b.top - P.top) / P.height) * 100, n: ++falas })
@@ -287,9 +310,12 @@ function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObjec
     // Para testar um roteiro: ?roteiro=monteggia na URL (ou sessionStorage['inicio:roteiro']) e ele entra em 2 s.
     let pedido: string | null = null
     try { pedido = new URLSearchParams(location.hash.split('?')[1] ?? location.search).get('roteiro') ?? sessionStorage.getItem('inicio:roteiro') } catch { /* sem armazenamento */ }
+    // Quem volta depois de dois dias ou mais é recebido logo na primeira cena.
+    const dias = diasDesdeUltimaVisita()
     const agendar = (primeira: boolean) => {
-      const forcado = primeira && pedido ? ROTEIROS.find((r) => r.id === pedido) ?? null : null
-      const [min, max] = forcado ? [2, 2] : primeira ? [25, 45] : celular() ? [150, 300] : [60, 120]
+      const forcado = primeira && pedido ? (pedido === 'volta' ? roteiroDaVolta(4) : ROTEIROS.find((r) => r.id === pedido) ?? null)
+        : primeira && dias >= 2 ? roteiroDaVolta(dias) : null
+      const [min, max] = forcado ? (pedido ? [2, 2] : [6, 9]) : primeira ? [25, 45] : celular() ? [150, 300] : [60, 120]
       timer = window.setTimeout(() => {
         const ocupado = el.querySelector('.hd-balao, .mascote__balao')
         const r = forcado ?? (!document.hidden && visivel && !ocupado ? sortear() : null)
