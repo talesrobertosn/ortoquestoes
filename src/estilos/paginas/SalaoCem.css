@@ -1,0 +1,432 @@
+/* O Salão dos Cem (ranking das questões, 31/10/2026). Duas camadas, como pede o DESIGN.md:
+   a ARTE concentrada no Salão dos Campeões (cena HD-2D com os cavaleiros) e uma faixa de pedra na Escadaria;
+   a INTERFACE calma em volta (porcelana, branco, verdete para agir, ouro só para celebrar), com a lista dos cem
+   leve, alinhada e fácil de consultar. Prefixo .cem; Conquistas, Flashcards e Ligas seguem no Ranking.css. */
+.cem {
+  --cem-noite: #171c30; --cem-floresta: #0c3c34; --cem-esmeralda: #17675b; --cem-ouro: #e4b85c; --cem-marfim: #f6f7f3;
+  --cem-prata: #8fa3b5; --cem-bronze: #ae7854;
+  --cem-veu-eu: #e3f1ec;
+  display: grid; gap: var(--e-6); min-width: 0;
+}
+.cem .numerico { font-variant-numeric: tabular-nums lining-nums; }
+.cem-rotulo { margin: 0; font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--verdete); }
+.cem-rotulo--claro { color: var(--cem-ouro); }
+.cem-voce {
+  display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.45rem; border-radius: 999px; vertical-align: 0.12em;
+  font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.5;
+  background: var(--verdete); color: #fff;
+}
+
+/* ---------- Topo: o Salão dos Campeões como herói (no jeito da página inicial) ---------- */
+.cem { --cem-tinta: #fffaf0; --cem-tinta-2: #e4d8bd; --cem-ouro-claro: #f0c46a; --cem-vidro: rgba(9, 13, 14, 0.74); }
+.cem-heroi {
+  position: relative; isolation: isolate; overflow: hidden; display: grid;
+  border-radius: 20px; background: #0c0f12; color: var(--cem-tinta); scroll-margin-top: calc(var(--altura-cabecalho, 64px) + 16px);
+}
+/* A cena (16:9) com o título e a jornada por cima, do lado calmo da pintura. */
+.cem-heroi__cena {
+  position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 24rem) minmax(0, 1fr); grid-template-rows: auto minmax(1rem, 1fr) auto;
+  gap: var(--e-4) var(--e-5); aspect-ratio: 16 / 9; min-height: 0; padding: clamp(1.25rem, 2.4vw, 2.25rem);
+}
+.cem-heroi:focus { outline: none; }
+/* Véu escuro só do lado do texto (como na página inicial): a arte continua viva à direita. */
+.cem-heroi__cena::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(8, 10, 14, 0.62) 0%, rgba(8, 10, 14, 0.32) 32%, transparent 52%),
+    linear-gradient(180deg, rgba(8, 10, 14, 0.45) 0%, transparent 22%, transparent 84%, #0c0f12 100%);
+}
+.cem-heroi__palco { position: absolute; inset: 0; z-index: -2; overflow: hidden; container-type: size; }
+/* O mundo guarda a proporção da arte (16:9) e cobre o herói, puxado para a direita (onde está o pódio): os cavaleiros
+   e os estandartes, em % do mundo, ficam sempre em cima dos pedestais pintados. */
+.cem-heroi__mundo { position: absolute; width: max(100cqw, 177.78cqh); aspect-ratio: 16 / 9; left: calc((100cqw - max(100cqw, 177.78cqh)) * 0.7); top: calc((100cqh - max(56.25cqw, 100cqh)) * 0.5); }
+.cem-heroi__camada { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; user-select: none; }
+.cem-heroi__luz { mix-blend-mode: screen; pointer-events: none; animation: cem-luz 7s ease-in-out infinite; }
+@keyframes cem-luz { 50% { opacity: 0.82; } }
+.cem-heroi__cabeca { grid-column: 1 / -1; display: grid; gap: 0.6rem; align-content: start; justify-items: start; max-width: 38rem; }
+.cem-heroi__titulo { display: grid; gap: 0.45rem; }
+.cem-heroi__rotulo { margin: 0; color: var(--cem-ouro-claro); font-size: 0.8125rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
+.cem-heroi h1 {
+  margin: 0; color: var(--cem-tinta); font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.03em; line-height: 1.04;
+  font-size: clamp(2rem, 1.2rem + 2.6vw, 3.15rem); text-wrap: balance; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+.cem-heroi__sub { margin: 0; max-width: 40ch; color: var(--cem-tinta-2); line-height: 1.5; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+.cem-heroi__lateral { grid-row: 3; grid-column: 1; align-self: end; }
+/* O chão: as placas embaixo dos pedestais (2 · 1 · 3), na faixa escura que continua a cena. */
+.cem-heroi__podio {
+  list-style: none; margin: 0; padding: 0 clamp(1.25rem, 2.4vw, 2.25rem) clamp(1.25rem, 2.4vw, 2rem) calc(clamp(1.25rem, 2.4vw, 2.25rem) + 24rem + var(--e-5));
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-3); align-items: start;
+  background: linear-gradient(180deg, #0c0f12, #10141a);
+}
+
+.cem-relogio { display: inline-grid; grid-template-columns: auto 1fr; column-gap: var(--e-3); align-items: center; margin: var(--e-1) 0 0; width: fit-content;
+  padding: 0.5rem 0.85rem 0.5rem 0.7rem; border-radius: 12px; background: var(--cem-vidro); box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.14);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.cem-relogio__texto { display: flex; align-items: baseline; gap: var(--e-2); flex-wrap: wrap; }
+.cem-relogio__rotulo { font-size: 0.8125rem; font-weight: 700; color: var(--cem-tinta-2); }
+.cem-relogio__tempo { font-family: var(--fonte-pixel); font-weight: 400; font-size: 1.6rem; line-height: 1; color: var(--cem-ouro-claro); }
+.cem-relogio__nota { grid-column: 2; font-size: 0.75rem; color: var(--cem-tinta-2); opacity: 0.85; }
+/* Ampulheta em pixels: a areia de cima esvazia conforme a rodada de 10 minutos passa. */
+.cem-relogio__ampulheta {
+  --areia: 1; grid-row: span 2; position: relative; width: 22px; height: 30px; image-rendering: pixelated;
+  background:
+    linear-gradient(var(--cem-bronze), var(--cem-bronze)) 0 0 / 100% 3px no-repeat,
+    linear-gradient(var(--cem-bronze), var(--cem-bronze)) 0 100% / 100% 3px no-repeat;
+}
+.cem-relogio__ampulheta::before, .cem-relogio__ampulheta::after {
+  content: ""; position: absolute; left: 3px; right: 3px; height: 11px; border: 2px solid var(--cem-tinta-2); border-radius: 1px;
+}
+.cem-relogio__ampulheta::before { top: 3px; clip-path: polygon(0 0, 100% 0, 60% 100%, 40% 100%); }
+.cem-relogio__ampulheta::after { bottom: 3px; clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%); }
+.cem-relogio__ampulheta i { position: absolute; left: 5px; right: 5px; background: var(--cem-ouro-claro); }
+.cem-relogio__ampulheta i:first-child { top: 6px; height: calc(7px * var(--areia)); clip-path: polygon(0 0, 100% 0, 55% 100%, 45% 100%); }
+.cem-relogio__ampulheta i:last-child { bottom: 6px; height: calc(7px * (1 - var(--areia))); clip-path: polygon(45% 0, 55% 0, 100% 100%, 0 100%); }
+
+/* Sua jornada: a missão num vidro escuro pousado no chão, sem moldura (como a missão do dia da página inicial). */
+.cem-jornada {
+  display: grid; align-content: start; gap: var(--e-3); min-width: 0; padding: 1.15rem 1.25rem 1.25rem;
+  border-radius: var(--raio-cartao, 16px); background: var(--cem-vidro); color: var(--cem-tinta);
+  box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.14), 0 18px 40px -12px rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px) saturate(1.2); backdrop-filter: blur(10px) saturate(1.2);
+  animation: cem-pousa 0.5s var(--curva, ease) both;
+}
+@keyframes cem-pousa { from { opacity: 0; transform: translateY(10px); } }
+.cem-jornada .cem-rotulo { color: var(--cem-ouro-claro); }
+.cem-jornada__linha { display: flex; align-items: center; flex-wrap: wrap; gap: var(--e-2) var(--e-4); }
+.cem-jornada__grande { font-family: var(--fonte-pixel); font-weight: 400; font-size: clamp(2.75rem, 5vw, 3.5rem); line-height: 0.85; color: var(--cem-ouro-claro); }
+.cem-jornada__grande--texto { font-family: var(--fonte-marca); font-weight: 800; font-size: 1.5rem; letter-spacing: -0.015em; line-height: 1.15; color: var(--cem-tinta); }
+.cem-jornada__total { color: var(--cem-tinta-2); font-size: var(--corpo-menor); }
+.cem-jornada__total b { color: var(--cem-tinta); font-size: 1.0625rem; }
+.cem-jornada__frase { margin: 0; color: var(--cem-tinta-2); font-size: var(--corpo-menor); line-height: 1.45; text-wrap: pretty; }
+.cem-jornada__frase b { color: var(--cem-tinta); }
+.cem-jornada__acoes { display: flex; flex-wrap: wrap; gap: var(--e-2); }
+.cem-jornada__botao { min-height: 44px; }
+.cem-jornada .botao:not(.botao--principal) { background: transparent; color: var(--cem-tinta); border-color: rgba(255, 236, 200, 0.3); }
+.cem-jornada .botao:not(.botao--principal):hover { border-color: var(--cem-ouro-claro); color: var(--cem-ouro-claro); }
+.cem-jornada .botao--principal { background: var(--cem-ouro-claro); color: #1b1208; border-color: transparent; }
+.cem-jornada .botao--principal:hover { background: #f6d488; }
+.cem-jornada .cem-mov { background: rgba(255, 255, 255, 0.12); color: var(--cem-tinta); }
+.cem-jornada .cem-mov--subiu { color: #9fe3b9; }
+.cem-jornada .cem-mov--desceu { color: #f3b1a9; }
+.cem-jornada .cem-mov--fogo { color: #ffd38a; }
+
+.cem-missao { display: grid; gap: var(--e-2); }
+.cem-missao__texto { margin: 0; line-height: 1.45; font-size: var(--corpo-menor); color: var(--cem-tinta-2); text-wrap: pretty; }
+.cem-missao__texto b { color: var(--cem-tinta); }
+.cem-missao__selo {
+  display: inline-block; margin-right: 0.35rem; padding: 0.05rem 0.5rem; border-radius: 4px; vertical-align: 0.1em;
+  font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(255, 255, 255, 0.12); color: var(--cem-tinta);
+}
+.cem-missao__selo--ouro { background: var(--cem-ouro-claro); color: #1b1208; }
+
+/* A trilha: o marco de partida, o caminho de pedras com o trecho feito em ouro e a bandeira da meta. */
+.cem-trilha { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-2); }
+.cem-trilha__marco { font-family: var(--fonte-pixel); font-size: 1.25rem; line-height: 1; color: var(--cem-tinta-2); white-space: nowrap; }
+.cem-trilha__marco--meta { display: inline-flex; align-items: flex-end; gap: 4px; color: var(--cem-ouro-claro); }
+.cem-trilha__bandeira { width: 10px; height: 16px; background:
+  linear-gradient(var(--cem-ouro-claro), var(--cem-ouro-claro)) 0 0 / 2px 100% no-repeat,
+  linear-gradient(var(--cem-ouro-claro), var(--cem-ouro-claro)) 2px 1px / 8px 7px no-repeat; image-rendering: pixelated; }
+.cem-trilha__caminho { position: relative; height: 8px; border-radius: 2px; background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.16) 0 6px, rgba(255, 255, 255, 0.06) 6px 8px); }
+.cem-trilha__feito { position: absolute; inset: 0 auto 0 0; border-radius: 2px; min-width: 6px; background: repeating-linear-gradient(90deg, var(--cem-ouro-claro) 0 6px, #c99a3d 6px 8px); transition: width 0.6s var(--curva, ease); }
+.cem-trilha__passo { position: absolute; right: -3px; top: -3px; width: 6px; height: 14px; background: #fff; border-radius: 1px; box-shadow: 0 0 0 2px rgba(9, 13, 14, 0.8); }
+
+/* As placas do pódio no chão do salão: vidro escuro, a medalha de cada lugar e o total grande. */
+.cem-placa {
+  display: grid; gap: 2px; min-width: 0; padding: var(--e-3) var(--e-3) var(--e-3);
+  border-radius: 14px; background: var(--cem-vidro); color: var(--cem-tinta);
+  box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.14), 0 14px 30px -12px rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.cem-placa--1 { order: 2; padding-block: var(--e-4); box-shadow: inset 0 0 0 1px rgba(240, 196, 106, 0.5), 0 14px 30px -12px rgba(0, 0, 0, 0.6); }
+.cem-placa--2 { order: 1; }
+.cem-placa--3 { order: 3; }
+.cem-placa--voce { box-shadow: inset 0 0 0 2px #7fd3c3, 0 14px 30px -12px rgba(0, 0, 0, 0.6); }
+.cem-placa__lugar { display: flex; align-items: center; gap: var(--e-2); }
+.cem-placa__lugar b { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--cem-ouro-claro); }
+.cem-placa__lugar small { display: block; font-size: 0.75rem; color: var(--cem-tinta-2); }
+.cem-placa__medalha { flex: none; width: 24px; height: 30px; background-size: 300% 200%; background-position-y: 0; image-rendering: pixelated; }
+.cem-placa--1 .cem-placa__medalha { width: 32px; height: 40px; }
+.cem-placa__nome { font-size: 1.0625rem; font-weight: 800; line-height: 1.25; overflow-wrap: anywhere; color: var(--cem-tinta); }
+.cem-placa--1 .cem-placa__nome { font-size: 1.1875rem; }
+.cem-placa__total b { font-size: 1.375rem; font-weight: 800; color: var(--cem-tinta); }
+.cem-placa--1 .cem-placa__total b { font-size: 1.75rem; color: var(--cem-ouro-claro); }
+.cem-placa__total small { color: var(--cem-tinta-2); font-size: 0.75rem; }
+.cem-placa__selos { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-1) var(--e-2); }
+.cem-placa .cem-mov { background: rgba(255, 255, 255, 0.12); color: var(--cem-tinta); }
+.cem-placa .cem-mov--subiu { color: #9fe3b9; } .cem-placa .cem-mov--desceu { color: #f3b1a9; } .cem-placa .cem-mov--fogo { color: #ffd38a; }
+
+/* Os personagens e os objetos vivos da cena. */
+.cem-cavaleiro {
+  position: absolute; display: block; image-rendering: pixelated;
+  background-size: 800% 600%; background-repeat: no-repeat; background-position-x: 0%;
+  animation: cem-cavaleiro 1.36s steps(8, jump-none) infinite;
+  filter: drop-shadow(0 0.35vw 0.25vw rgba(10, 8, 20, 0.4));
+}
+.cem-cavaleiro--1 { filter: drop-shadow(0 0.35vw 0.25vw rgba(10, 8, 20, 0.4)) brightness(1.08) saturate(1.05); }
+.cem-cavaleiro--2, .cem-cavaleiro--3 { filter: drop-shadow(0 0.35vw 0.25vw rgba(10, 8, 20, 0.4)) sepia(0.1) brightness(0.96); }
+@keyframes cem-cavaleiro { to { background-position-x: 100%; } }
+/* A saudação do novo campeão: a espada sobe uma vez (8 quadros) e ele volta à espera. */
+.cem-cavaleiro--saudando { animation: cem-cavaleiro 0.96s steps(8, jump-none) 1 both; }
+.cem-estandarte { position: absolute; image-rendering: pixelated; background-size: 600% 300%; background-repeat: no-repeat; animation: cem-estandarte 1.08s steps(6, jump-none) infinite alternate; filter: brightness(0.92); }
+@keyframes cem-estandarte { to { background-position-x: 100%; } }
+.cem-heroi__tocha { position: absolute; background-size: 800% 100%; image-rendering: pixelated; animation: cem-tocha 0.8s steps(8, jump-none) infinite; filter: drop-shadow(0 0 0.6vw rgba(255, 180, 70, 0.55)); }
+@keyframes cem-tocha { to { background-position-x: 100%; } }
+.cem-heroi__poeira i { position: absolute; width: 0.3%; aspect-ratio: 1; background: #fff3c4; border-radius: 1px; opacity: 0; animation: cem-poeira 8s linear infinite; }
+@keyframes cem-poeira { 0% { opacity: 0; transform: translate(0, 0); } 20% { opacity: 0.7; } 80% { opacity: 0.5; } 100% { opacity: 0; transform: translate(1.2vw, 2.4vw); } }
+.cem-pausado *, .cem-pausado { animation-play-state: paused !important; }
+.cem-heroi__visita { position: absolute; display: block; }
+.cem-heroi__visita .gato-pixel, .cem-heroi__visita .coruja-pixel { width: 100%; height: 100%; }
+.cem-heroi__visita .coruja-pixel { --coruja-escala: 1; }
+
+/* Cerimônia do novo campeão: a luz cresce, a placa brilha, o nome entra e sobem fagulhas douradas (uma vez). */
+.cem-heroi--cerimonia .cem-heroi__luz { animation: cem-luz-festa 1.4s ease-out 2; }
+@keyframes cem-luz-festa { 40% { opacity: 1; filter: brightness(1.6); } }
+.cem-heroi--cerimonia .cem-placa--1 { animation: cem-campeao 1.2s var(--curva, ease) both; }
+@keyframes cem-campeao { 0% { box-shadow: 0 0 0 0 rgba(240, 196, 106, 0.9), 0 14px 30px -12px rgba(0, 0, 0, 0.6); } 100% { box-shadow: 0 0 0 16px rgba(240, 196, 106, 0), 0 14px 30px -12px rgba(0, 0, 0, 0.6); } }
+.cem-heroi--cerimonia .cem-placa--1 .cem-placa__nome { animation: cem-nome 0.9s var(--curva, ease) both; }
+@keyframes cem-nome { from { opacity: 0; transform: translateY(6px); letter-spacing: 0.06em; } }
+.cem-heroi__festa i { position: absolute; bottom: 30%; width: 0.5%; aspect-ratio: 1; background: var(--cem-ouro); box-shadow: 0 0 6px #ffe7a6; animation: cem-fagulha 1.6s ease-out both; }
+@keyframes cem-fagulha { from { opacity: 1; transform: translate(0, 0); } to { opacity: 0; transform: translate(var(--dx), -22vw); } }
+
+/* ---------- Barra branca: abas, período, placar e liga (como a barra de atalhos da página inicial) ---------- */
+.cem-barra { display: grid; gap: var(--e-3); padding: var(--e-3); border-radius: 20px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda); }
+.cem-barra .rk-secoes { margin: 0; }
+.cem-barra__linha { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3) var(--e-6); padding: 0 var(--e-2) var(--e-1); }
+.cem-placar { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-6); margin: 0; flex: 1 1 auto; }
+.cem-placar div { display: grid; gap: 0; min-width: 0; }
+.cem-placar dt { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--texto-2); white-space: nowrap; }
+.cem-placar dd { margin: 0; font-weight: 800; font-size: 1.125rem; line-height: 1.25; color: var(--texto); white-space: nowrap; }
+.cem-placar__nome { overflow: hidden; text-overflow: ellipsis; max-width: 12rem; }
+.cem-periodo { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--borda); }
+.cem-periodo__opcao { min-height: 40px; padding: 0 var(--e-4); border: 0; border-radius: 999px; background: transparent; cursor: pointer; font: inherit; font-weight: 700; color: var(--texto-2); }
+.cem-periodo__opcao[aria-checked="true"] { background: var(--verdete); color: #fff; }
+.cem-periodo__opcao:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+.cem-liga { display: inline-flex; align-items: center; gap: var(--e-2); min-height: 44px; font-weight: 700; color: var(--verdete); text-decoration: none; }
+.cem-liga:hover { text-decoration: underline; }
+.cem-aviso { display: flex; gap: var(--e-2); align-items: center; margin: 0; padding: var(--e-3) var(--e-4); border-radius: 12px; background: var(--ouro-veu); color: var(--texto); }
+.cem-carregando { min-height: 24rem; }
+
+/* ---------- Escadaria da Ascensão ---------- */
+.cem-escada { display: grid; gap: var(--e-4); }
+.cem-escada__cabeca { display: grid; gap: 2px; }
+.cem-escada__cabeca h2, .cem-lista__cabeca h2, .cem-regras h2 { margin: 0; font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.02em; font-size: clamp(1.375rem, 2.6vw, 1.75rem); color: var(--texto); }
+.cem-escada__sub { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.cem-escada__palco { position: relative; border-radius: 20px; overflow: hidden; background: #191a1f; aspect-ratio: 1200 / 472; }
+/* A arte mostra a faixa de 8% a 78% da altura: o vitral, a escada e o tapete onde ficam os cartões. */
+.cem-escada__arte { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; image-rendering: pixelated; }
+.cem-escada__degraus {
+  list-style: none; margin: 0; position: absolute; inset: auto 0 0; padding: 0 var(--e-5) var(--e-5);
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4); align-items: end;
+}
+/* Cada patamar um pouco mais alto que o anterior: a escada sobe para a direita. */
+.cem-degrau {
+  --alto: 0px; position: relative; display: grid; gap: var(--e-2); min-width: 0; margin-bottom: var(--alto);
+  padding: var(--e-4); border-radius: 12px; background: rgba(255, 253, 248, 0.96);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+.cem-degrau--2 { --alto: 14px; }
+.cem-degrau--3 { --alto: 28px; }
+.cem-degrau--voce { box-shadow: inset 0 0 0 2px var(--verdete), 0 8px 18px rgba(60, 44, 20, 0.12); }
+.cem-degrau__salto { display: flex; align-items: baseline; gap: var(--e-2); }
+.cem-degrau__salto b { font-family: var(--fonte-pixel); font-weight: 400; font-size: 2.25rem; line-height: 0.9; color: var(--acerto-texto, #1f7a4d); }
+.cem-degrau__salto small { font-size: 0.8125rem; font-weight: 700; color: var(--texto-2); }
+.cem-degrau__quem { display: flex; align-items: center; gap: var(--e-3); min-width: 0; }
+.cem-degrau__quem > span:last-child { display: grid; min-width: 0; }
+.cem-degrau__avatar, .cem-linha__avatar {
+  display: grid; place-items: center; flex: none; width: 32px; height: 32px; border-radius: 8px;
+  font-size: 0.75rem; font-weight: 800; letter-spacing: 0.02em; background: var(--verdete-veu); color: var(--verdete);
+}
+.cem-degrau__nome { font-weight: 800; overflow-wrap: anywhere; line-height: 1.25; color: #12181a; }
+.cem-degrau__rota { font-size: var(--corpo-menor); color: #5b686c; }
+.cem-degrau__rota b { color: #12181a; }
+.cem-degrau__fogo { position: absolute; top: var(--e-3); right: var(--e-3); }
+
+/* ---------- Classificação dos Cem ---------- */
+.cem-lista {
+  display: grid; gap: var(--e-3); padding: var(--e-5) var(--e-5) var(--e-4); border-radius: var(--raio-cartao, 16px);
+  background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda); scroll-margin-top: calc(var(--altura-cabecalho, 64px) + 16px);
+}
+.cem-lista__cabeca { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--e-3); }
+.cem-lista__faixa { margin: 2px 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.cem-lista__acoes { display: flex; flex-wrap: wrap; gap: var(--e-2); }
+.cem-lista__botao { min-height: 44px; }
+.cem-legenda { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.cem-legenda--inicio { display: flex; gap: var(--e-2); align-items: center; }
+.cem-legenda summary { display: inline-flex; align-items: center; gap: var(--e-2); min-height: 32px; cursor: pointer; font-weight: 700; color: var(--verdete); }
+.cem-legenda ul { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-5); margin: var(--e-2) 0; padding: 0; list-style: none; }
+.cem-legenda li { display: inline-flex; align-items: center; gap: var(--e-2); }
+.cem-legenda__chama { image-rendering: pixelated; object-fit: cover; object-position: 0 0; width: 16px; height: 16px; }
+
+.cem-linhas { list-style: none; margin: 0; padding: 0; }
+.cem-linha {
+  display: grid; grid-template-columns: 2.75rem 3.25rem 2rem minmax(0, 1fr) minmax(6rem, 11rem); align-items: center; gap: var(--e-3);
+  min-height: 48px; padding: 6px var(--e-3); border-top: 1px solid var(--borda);
+  scroll-margin: 40vh 0;
+}
+.cem-linhas > .cem-linha:first-child { border-top: 0; }
+/* No Torneio não há movimento: quatro colunas (posição, iniciais, nome, andar). */
+.cem-linha--torneio { grid-template-columns: 2.75rem 2rem minmax(0, 1fr) minmax(6rem, 11rem); }
+.cem-linha__andar { font-size: 0.75rem; font-weight: 700; color: var(--texto-2); }
+.cem-linha:hover { background: var(--superficie-2); }
+.cem-linha__pos { font-family: var(--fonte-pixel); font-size: 1.5rem; line-height: 1; text-align: right; color: var(--texto); }
+.cem-linha--dez .cem-linha__pos { color: var(--ouro-texto, #7a5710); }
+.cem-linha__quem { display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--e-3); min-width: 0; }
+.cem-linha__nome { font-weight: 700; line-height: 1.3; overflow-wrap: anywhere; color: var(--texto); }
+.cem-linha__selos { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-1) var(--e-2); min-height: 0; }
+.cem-linha__selos:empty { display: none; }
+.cem .emblemas-nome, .cem .fogueira { margin: 0; }
+.cem-linha__quem { justify-content: flex-start; }
+.cem-linha__placar { display: grid; grid-template-columns: auto 1fr; align-items: baseline; column-gap: var(--e-2); text-align: right; }
+.cem-linha__placar b { grid-column: 1 / -1; font-size: 1.125rem; font-weight: 800; color: var(--texto); }
+.cem-linha__barra { grid-column: 1 / -1; height: 4px; margin-top: 4px; border-radius: 2px; background: var(--superficie-2); overflow: hidden; }
+.cem-linha__barra span { display: block; height: 100%; background: var(--verdete); opacity: 0.55; transform-origin: right; border-radius: 2px; }
+/* A sua linha: véu verde, filete dourado e o número em destaque. */
+.cem-linha--voce { background: var(--cem-veu-eu); box-shadow: inset 4px 0 0 var(--cem-ouro); border-radius: 10px; border-top-color: transparent; }
+.cem-linha--voce + .cem-linha { border-top-color: transparent; }
+.cem-linha--voce:hover { background: var(--cem-veu-eu); }
+.cem-linha--voce .cem-linha__pos { color: var(--verdete); }
+.cem-linha--voce .cem-linha__barra span { opacity: 1; }
+.cem-linha:focus { outline: 3px solid var(--foco); outline-offset: 2px; }
+.cem-escolher { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8125rem; font-weight: 700; color: var(--verdete); }
+.cem-mais { justify-self: center; min-height: 44px; }
+/* Marcos entre as faixas: uma régua fina com o nome do degrau, sem caixa. */
+.cem-marco { display: flex; align-items: center; gap: var(--e-3); padding: var(--e-4) var(--e-3) var(--e-1); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ouro-texto, #7a5710); }
+.cem-marco::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--cem-ouro), transparent); opacity: 0.6; }
+.cem-marco + .cem-linha { border-top-color: transparent; }
+.cem-linhas > .cem-marco:first-child { padding-top: var(--e-1); }
+.cem-lista__intervalo { margin: 0; text-align: center; color: var(--texto-2); letter-spacing: 0.3em; }
+
+/* Movimento: seta e número, "=", "novo" e a chama. A cor nunca é a única pista. */
+.cem-mov {
+  display: inline-flex; align-items: center; gap: 2px; min-height: 22px; padding: 0 6px; border-radius: 6px;
+  font-size: 0.8125rem; font-weight: 800; white-space: nowrap; background: var(--superficie-2); color: var(--texto-2);
+}
+.cem-mov__valor { display: inline-flex; align-items: center; gap: 2px; }
+.cem-mov--subiu { background: var(--acerto-veu, #e3f2ea); color: var(--acerto-texto, #1f6b45); }
+.cem-mov--desceu { background: var(--erro-veu, #f7e6e4); color: var(--erro-texto, #9c3730); }
+.cem-mov--novo { background: var(--ouro-veu); color: var(--ouro-texto, #7a5710); text-transform: uppercase; font-size: 0.6875rem; letter-spacing: 0.06em; }
+.cem-mov--fogo { background: #fff0d6; color: #8a4b0c; }
+.cem-chama { display: inline-block; flex: none; background-size: 600% 100%; background-repeat: no-repeat; image-rendering: pixelated; animation: cem-chama 0.72s steps(6, jump-none) infinite; }
+.cem-chama--16 { width: 16px; height: 16px; }
+.cem-chama--24 { width: 24px; height: 24px; }
+@keyframes cem-chama { to { background-position-x: 100%; } }
+
+/* ---------- Baú pessoal e regras ---------- */
+.cem-bau {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: var(--e-4);
+  padding: var(--e-4) var(--e-5); border-radius: var(--raio-cartao, 16px); text-decoration: none; color: inherit;
+  background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda);
+}
+.cem-bau:hover { box-shadow: inset 0 0 0 1px var(--verdete); }
+.cem-bau__arte { image-rendering: pixelated; }
+.cem-bau__texto { display: grid; gap: 2px; min-width: 0; color: var(--texto-2); }
+.cem-bau__texto strong { color: var(--texto); font-size: 1.0625rem; }
+.cem-bau__cta { font-style: normal; font-weight: 700; color: var(--verdete); }
+.cem-bau__vitrine { display: flex; gap: var(--e-2); }
+.cem-bau__seta { color: var(--texto-2); }
+
+.cem-regras { display: grid; gap: var(--e-2); }
+.cem-regras h2 { margin-bottom: var(--e-2); }
+.cem-regras details { border-top: 1px solid var(--borda); padding: var(--e-1) 0; }
+.cem-regras details:last-child { border-bottom: 1px solid var(--borda); }
+.cem-regras summary { display: flex; align-items: center; min-height: 48px; cursor: pointer; font-weight: 700; color: var(--texto); }
+.cem-regras summary::after { content: "+"; margin-left: auto; font-size: 1.25rem; color: var(--texto-2); }
+.cem-regras details[open] summary::after { content: "−"; }
+.cem-regras p { margin: 0 0 var(--e-3); max-width: 76ch; color: var(--texto-2); line-height: 1.6; }
+.cem-regras p strong { color: var(--texto); }
+
+/* ---------- Conquistas: a galeria de troféus ---------- */
+.cem-galeria {
+  position: relative; isolation: isolate; overflow: hidden; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--e-5);
+  min-height: 17rem; padding: clamp(1.25rem, 2.4vw, 2.25rem); border-radius: 20px; color: var(--cem-tinta);
+  background-color: #12141c; background-size: cover; background-position: 50% 40%; image-rendering: pixelated;
+}
+.cem-galeria::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(8, 10, 14, 0.78) 0%, rgba(8, 10, 14, 0.45) 55%, rgba(8, 10, 14, 0.3) 100%); }
+.cem-galeria h1 { margin: 0.2rem 0; font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.03em; font-size: clamp(2rem, 1.2rem + 2.6vw, 3rem); color: var(--cem-tinta); text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55); }
+.cem-galeria__texto { max-width: 36rem; }
+.cem-galeria__placar {
+  display: grid; justify-items: center; gap: 2px; padding: var(--e-4) var(--e-5); border-radius: var(--raio-cartao, 16px); background: var(--cem-vidro);
+  box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.14); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); text-align: center;
+}
+.cem-galeria__placar img { image-rendering: pixelated; }
+.cem-galeria__placar strong { font-family: var(--fonte-pixel); font-weight: 400; font-size: 3rem; line-height: 0.9; color: var(--cem-ouro-claro); }
+.cem-galeria__placar small { font-size: 1.5rem; color: var(--cem-tinta-2); }
+.cem-galeria__placar span { font-size: var(--corpo-menor); color: var(--cem-tinta-2); }
+
+/* ---------- Telas médias e celular ---------- */
+@media (max-width: 64rem) {
+  .cem-heroi__cena { grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); aspect-ratio: auto; min-height: 34rem; }
+  .cem-heroi__podio { padding-left: clamp(1.25rem, 2.4vw, 2.25rem); }
+  .cem-escada__palco { aspect-ratio: auto; min-height: 24rem; }
+}
+@media (max-width: 40rem) {
+  .cem { gap: var(--e-5); }
+  /* No celular: a cena mostra o recorte do pódio (x 196..476 da arte) e as placas e a jornada vêm embaixo, no chão escuro. */
+  .cem-heroi { margin-inline: calc(-1 * var(--e-2)); border-radius: 16px; grid-template-rows: auto auto auto auto; }
+  .cem-heroi__cena { display: contents; }
+  .cem-heroi__cena::before { display: none; }
+  .cem-heroi__palco { position: relative; inset: auto; z-index: 0; grid-row: 1; grid-column: 1; aspect-ratio: 280 / 270; container-type: inline-size; }
+  .cem-heroi__mundo { width: 171.43cqw; left: -70cqw; top: 0; }
+  .cem-heroi__palco::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8, 10, 14, 0.75) 0%, rgba(8, 10, 14, 0.2) 34%, transparent 50%, transparent 80%, #0c0f12 100%); }
+  .cem-heroi__cabeca { display: contents; }
+  .cem-heroi__titulo { grid-row: 1; grid-column: 1; z-index: 1; align-self: start; padding: var(--e-4) var(--e-4) 0; gap: 0.2rem; }
+  .cem-heroi h1 { font-size: 1.75rem; }
+  .cem-heroi__sub { display: none; }
+  /* O relógio desce para o chão escuro, embaixo da cena, longe dos cavaleiros e dos pedestais. */
+  .cem-relogio { grid-row: 2; grid-column: 1; justify-self: center; position: relative; z-index: 1; margin: -1.25rem 0 var(--e-3); padding: 0.35rem 0.65rem 0.35rem 0.5rem; }
+  .cem-relogio__nota { display: none; }
+  .cem-relogio__tempo { font-size: 1.4rem; }
+  .cem-heroi__podio { grid-row: 3; grid-template-columns: minmax(0, 1fr); gap: var(--e-2); padding: 0 var(--e-3); position: relative; z-index: 1; background: none; }
+  .cem-placa, .cem-placa--1 { order: 0; grid-template-columns: auto minmax(0, 1fr) auto; column-gap: var(--e-3); row-gap: 2px; padding: var(--e-3); }
+  .cem-placa__lugar { grid-row: span 2; }
+  .cem-placa__lugar > span:last-child { display: none; }
+  .cem-placa__medalha, .cem-placa--1 .cem-placa__medalha { width: 32px; height: 40px; }
+  .cem-placa__nome, .cem-placa--1 .cem-placa__nome { font-size: 1.0625rem; grid-column: 2; }
+  .cem-placa__total { grid-column: 3; grid-row: 1 / span 2; text-align: right; display: grid; }
+  .cem-placa__total b, .cem-placa--1 .cem-placa__total b { font-size: 1.375rem; }
+  .cem-placa__selos { grid-column: 2; }
+  .cem-heroi__lateral { grid-row: 4; grid-column: 1; padding: var(--e-3); max-width: none; }
+  .cem-jornada { animation: none; }
+  .cem-barra { padding: var(--e-2); }
+  .cem-barra__linha { gap: var(--e-3); padding: 0 var(--e-1) var(--e-1); }
+  .cem-escada__palco { aspect-ratio: auto; min-height: 0; display: grid; }
+  .cem-escada__arte { position: relative; height: 11rem; object-position: 50% 30%; }
+  .cem-escada__degraus { position: relative; grid-template-columns: minmax(0, 1fr); padding: var(--e-3); gap: var(--e-2); margin-top: -2.5rem; }
+  .cem-degrau, .cem-degrau--2, .cem-degrau--3 { --alto: 0px; margin: 0; }
+  .cem-degrau { grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: var(--e-3); padding: var(--e-3); }
+  .cem-degrau__salto { display: grid; justify-items: center; gap: 0; min-width: 3.25rem; }
+  .cem-degrau__salto b { font-size: 1.9rem; }
+  .cem-degrau__salto small { font-size: 0.6875rem; text-align: center; }
+  .cem-lista { padding: var(--e-4) var(--e-2) var(--e-3); margin-inline: calc(-1 * var(--e-2)); }
+  .cem-lista__cabeca { padding-inline: var(--e-2); }
+  .cem-lista__acoes { width: 100%; }
+  .cem-lista__acoes .botao { flex: 1 1 10rem; justify-content: center; }
+  .cem-legenda { padding-inline: var(--e-2); }
+  .cem-linha { grid-template-columns: 2.25rem minmax(0, 1fr) auto; grid-template-areas: "pos quem placar" "pos mov placar"; column-gap: var(--e-3); row-gap: 2px; padding: 6px var(--e-2); min-height: 52px; }
+  .cem-linha__pos { grid-area: pos; font-size: 1.375rem; }
+  .cem-linha__avatar { display: none; }
+  .cem-linha__quem { grid-area: quem; }
+  .cem-linha__selos { flex-basis: 100%; }
+  .cem-linha__mov { grid-area: mov; display: flex; gap: var(--e-2); }
+  .cem-linha__mov:empty { display: none; }
+  .cem-linha__placar { grid-area: placar; min-width: 4.5rem; }
+  .cem-linha__barra { width: 4.5rem; justify-self: end; }
+  .cem-linha--torneio { grid-template-columns: 2.25rem minmax(0, 1fr) auto; grid-template-areas: "pos quem placar"; }
+  .cem-bau { grid-template-columns: auto minmax(0, 1fr) auto; padding: var(--e-4); }
+  .cem-bau__vitrine { grid-column: 1 / -1; grid-row: 2; }
+  .cem-bau__seta { grid-row: 1; grid-column: 3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cem-cavaleiro, .cem-estandarte, .cem-heroi__tocha, .cem-chama, .cem-heroi__luz, .cem-heroi__poeira i, .cem-jornada { animation: none !important; }
+  .cem-heroi__poeira, .cem-heroi__festa { display: none; }
+  .cem-heroi--cerimonia .cem-placa--1, .cem-heroi--cerimonia .cem-placa--1 .cem-placa__nome { animation: none; }
+  .cem-trilha__feito { transition: none; }
+}
+
+/* ---------- Escuro ---------- */
+:root[data-tema="escuro"] .cem { --cem-veu-eu: rgba(79, 179, 165, 0.16); }
+:root[data-tema="escuro"] .cem-degrau { background: rgba(28, 33, 36, 0.95); box-shadow: inset 0 0 0 1px #2f383b, 0 12px 28px rgba(0, 0, 0, 0.4); }
+:root[data-tema="escuro"] .cem-degrau__nome, :root[data-tema="escuro"] .cem-degrau__rota b { color: #f1f3f2; }
+:root[data-tema="escuro"] .cem-degrau__rota { color: #a9b6b9; }
+:root[data-tema="escuro"] .cem-mov--fogo { background: #3a2a14; color: #ffc46b; }
+:root[data-tema="escuro"] .cem-linha--voce { box-shadow: inset 4px 0 0 var(--cem-ouro); }
