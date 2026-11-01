@@ -179,6 +179,9 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   const [pausa, definirPausa] = useState(0)
   useEffect(() => { if (!pausa) return; const t = window.setTimeout(() => definirPausa(0), PAUSA_MS); return () => window.clearTimeout(t) }, [pausa])
   const fogoAceso = linhaFogo > 0
+  const comEspada = cenario.espada !== false
+  // A luz que a chama joga no aço tem a cor dela: laranja até o Fogaréu, azul na Chama azul, violeta na arcana.
+  const luzEspada = linhaFogo === 5 ? '120, 185, 255' : linhaFogo === 6 ? '195, 130, 255' : '255, 165, 75'
   const PONTOS_GATO = cenario.gato
   const repouso: IdLinhaGato = descanso || (pausa && fogoAceso) ? 'ronronando' : 'dormindo'
   const poseDoPonto = (i: number): IdLinhaGato => (PONTOS_GATO[i].pose === 'repouso' ? repouso : PONTOS_GATO[i].pose)
@@ -407,12 +410,17 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
         <span className="hd-vinheta" aria-hidden="true" />
         <span className="hd-calor" aria-hidden="true" style={lugar(130, 50, 220, 150)} />
         <span className={`hd-fogo hd-fogo--${linhaFogo}`} aria-hidden="true" style={{ ...lugar(220, 104, 40, 48), '--linha': linhaFogo } as CSSProperties} />
+        {/* Ray tracing na espada (Tales, 01/11/2026): os raios de luz que sobem do fogo e a aura em volta da lâmina, atrás
+            dela, na cor da chama do momento; o cintilar na guarda vem depois, por cima (InicioHd.css, .hd-espada__*). */}
+        {comEspada && fogoAceso && <span className="hd-espada__raios" aria-hidden="true" style={{ ...lugar(206, 58, 68, 92), '--luz-espada': luzEspada } as CSSProperties} />}
+        {comEspada && fogoAceso && <span className="hd-espada__aura" aria-hidden="true" style={{ ...lugar(226, 100, 28, 54), '--luz-espada': luzEspada } as CSSProperties} />}
         {/* A marca do site: a espada fincada na fogueira (scripts/sprites/espada_fogueira.py), em todos os cenários. */}
-        {(cenario.espada !== false) && <span className={`hd-espada${linhaFogo === 0 ? ' hd-espada--apagada' : ''}`} aria-hidden="true" style={{ ...lugar(234, 109, 12, 40), '--sprite-espada': urlCss('pixel/inicio/espada.png') } as CSSProperties} />}
+        {comEspada && <span className={`hd-espada${linhaFogo === 0 ? ' hd-espada--apagada' : ''}`} aria-hidden="true" style={{ ...lugar(234, 109, 12, 40), '--sprite-espada': urlCss('pixel/inicio/espada.png'), '--luz-espada': luzEspada } as CSSProperties} />}
+        {comEspada && fogoAceso && <span className="hd-espada__brilho" aria-hidden="true" style={{ ...lugar(235, 111, 10, 10), '--luz-espada': luzEspada } as CSSProperties} />}
         {/* Fogo e espada juntos (01/11/2026, "tipo Dark Souls"): uma segunda chama, só a parte de baixo, passa na frente
             da lâmina; a luz da fogueira e a brasa ficam recortadas no desenho da espada (InicioHd.css, .hd-espada). */}
-        {(cenario.espada !== false) && linhaFogo > 0 && <span className={`hd-fogo hd-fogo--${linhaFogo} hd-fogo--frente`} aria-hidden="true" style={{ ...lugar(222, 106, 36, 44), '--linha': linhaFogo } as CSSProperties} />}
-        {linhaFogo > 0 && <span className="hd-brasas" aria-hidden="true" style={(cenario.espada !== false) ? lugar(233, 90, 14, 36) : lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
+        {comEspada && linhaFogo > 0 && <span className={`hd-fogo hd-fogo--${linhaFogo} hd-fogo--frente`} aria-hidden="true" style={{ ...lugar(222, 106, 36, 44), '--linha': linhaFogo } as CSSProperties} />}
+        {linhaFogo > 0 && <span className="hd-brasas" aria-hidden="true" style={comEspada ? lugar(233, 90, 14, 36) : lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
         {pausa > 0 && fogoAceso && <span className="hd-brasas hd-brasas--pausa" aria-hidden="true" style={lugar(222, 60, 36, 70)}>{fagulhas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
         {/* A fogueira se toca: pausa de jornada opcional (clique, toque ou teclado). Sem botão desenhado: é o próprio fogo. */}
         <button type="button" className="hd-fogueira" style={lugar(218, 100, 44, 54)} aria-pressed={pausa > 0}
