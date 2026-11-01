@@ -192,7 +192,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 756 | Estilo dos simulados antigos: quadril (cap. 24) e colo do rádio e olécrano (cap. 11) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 30 simulados reescritos no molde da banca, conceito mantido |
 | 758 | Estilo dos simulados antigos: mão e carpo (cap. 8) e MONTEGGIA (cap. 12) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 29 simulados reescritos no molde da banca, conceito mantido |
 | 759 | Estilo dos simulados antigos: gesso e tala (cap. 4) e consolidação e fise (cap. 2) do Rockwood and Wilkins' Fractures in Children; análises sem "também" solto | sem mudança em resumo | 28 simulados reescritos; 54 análises de alternativa corrigidas no acervo (as protegidas de Cirurgia da Mão ficaram intactas); portão novo no checar_comentarios.py |
-| (este PR) | Estilo dos simulados antigos: ombro e úmero (cap. 19) e coluna cervical (cap. 21) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 26 simulados reescritos no molde da banca, conceito mantido |
+| 760 | Estilo dos simulados antigos: ombro e úmero (cap. 19) e coluna cervical (cap. 21) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 26 simulados reescritos no molde da banca, conceito mantido |
+| (este PR) | Estilo dos simulados antigos: coluna toracolombar (cap. 22) e pelve e acetábulo (cap. 23) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 25 simulados reescritos no molde da banca, conceito mantido |
 
 ## Próximo
 
