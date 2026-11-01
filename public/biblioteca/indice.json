@@ -11102,15 +11102,15 @@
   },
   {
    "id": "tachdjian6-osteomielite",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Osteomielite e artrite séptica na criança",
    "especialidade": "conceitos-basicos",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 23 · Infecções do sistema musculoesquelético",
    "resumo": "Metáfise (alças arteriolares e sinusoides lentos); vasos transfisários até 18 meses; metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais); localizações; agentes por idade (S. aureus, Kingella, pneumococo, Hib); osteomielite subaguda e classificação de ROBERTS; discite e osteomielite vertebral; calcâneo hematogênico e Pseudomonas no ferimento puntiforme; sífilis congênita.",
    "acesso": "gratis",
-   "minutos": 3,
+   "minutos": 28,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11136,6 +11136,76 @@
      "id": "a-coluna-e-as-especificas",
      "titulo": "A coluna e as específicas",
      "radar": "confirmado"
+    },
+    {
+     "id": "vias-de-entrada-idade-dos-vasos-e-a-artrite-sept",
+     "titulo": "Vias de entrada, idade dos vasos e a artrite séptica vizinha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "epidemiologia-clinica-e-diagnostico-diferencial",
+     "titulo": "Epidemiologia, clínica e diagnóstico diferencial",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "laboratorio-hemograma-vhs-pcr-e-culturas",
+     "titulo": "Laboratório: hemograma, VHS, PCR e culturas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-da-radiografia-a-rm",
+     "titulo": "Imagem: da radiografia à RM",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-antibiotico-na-oha",
+     "titulo": "O antibiótico na OHA",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-cirurgia-na-oha-e-as-complicacoes",
+     "titulo": "A cirurgia na OHA e as complicações",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "subaguda-e-abscesso-de-brodie-alem-da-classifica",
+     "titulo": "Subaguda e abscesso de BRODIE, além da classificação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-cronica-na-crianca-sequestro-involucro-e-jones",
+     "titulo": "A crônica na criança: sequestro, invólucro e JONES",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-cronica-do-adulto-e-o-estadiamento-de-cierny-e",
+     "titulo": "A crônica do adulto e o estadiamento de CIERNY e MADER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "espaco-morto-antibiotico-local-e-a-infeccao-com-",
+     "titulo": "Espaço morto, antibiótico local e a infecção com implante",
+     "radar": "confirmado"
+    },
+    {
+     "id": "formas-especiais-crmo-garre-falciforme-pe-e-pelv",
+     "titulo": "Formas especiais: CRMO, GARRÉ, falciforme, pé e pelve",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-coluna-da-discite-infantil-a-espondilodiscite-",
+     "titulo": "A coluna: da discite infantil à espondilodiscite do adulto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tuberculose-e-sifilis-as-especificas",
+     "titulo": "Tuberculose e sífilis: as específicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -11161,7 +11231,23 @@
     "conceitos-basicos-0054",
     "conceitos-basicos-0072",
     "conceitos-basicos-0225",
-    "conceitos-basicos-0078"
+    "conceitos-basicos-0078",
+    "conceitos-basicos-0271",
+    "conceitos-basicos-0292",
+    "conceitos-basicos-0284",
+    "conceitos-basicos-0285",
+    "conceitos-basicos-0171",
+    "tumores-0211",
+    "conceitos-basicos-0208",
+    "conceitos-basicos-0013",
+    "conceitos-basicos-0227",
+    "conceitos-basicos-0045",
+    "conceitos-basicos-0064",
+    "conceitos-basicos-0058",
+    "conceitos-basicos-0093",
+    "conceitos-basicos-0194",
+    "coluna-0157",
+    "osteometabolicas-0070"
    ],
    "treino": [
     "conceitos-basicos-0416",
