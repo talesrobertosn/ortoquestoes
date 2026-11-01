@@ -346,10 +346,11 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
 @media (hover: hover) { .hd-gato:hover .hd-gato__sprite, .hd-coruja:hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }
 
 /* A espada fincada na fogueira (easter egg): por cima da chama, com o brilho da brasa na lâmina; apagada sem fogo. */
-.hd-espada { position: absolute; background: var(--sprite-espada) center / 100% 100% no-repeat; image-rendering: pixelated; pointer-events: none;
-  filter: drop-shadow(0 0 3px rgba(255, 150, 60, 0.55)); }
+.hd-espada { --luz-espada: 255, 165, 75; position: absolute; background: var(--sprite-espada) center / 100% 100% no-repeat; image-rendering: pixelated; pointer-events: none;
+  /* Borda acesa: um fio de luz colado ao contorno do aço e um halo curto (o "bloom"), na cor da chama. */
+  filter: drop-shadow(0 0 1px rgba(var(--luz-espada), 0.95)) drop-shadow(0 0 5px rgba(var(--luz-espada), 0.55)); }
 .hd-espada--apagada { filter: brightness(0.6) saturate(0.4); }
-.hd-palco--noite .hd-espada:not(.hd-espada--apagada) { filter: drop-shadow(0 0 4px rgba(255, 140, 50, 0.7)) brightness(0.95); }
+.hd-palco--noite .hd-espada:not(.hd-espada--apagada) { filter: drop-shadow(0 0 1px rgba(var(--luz-espada), 1)) drop-shadow(0 0 7px rgba(var(--luz-espada), 0.75)) brightness(0.95); }
 /* A luz da fogueira na lâmina (01/11/2026): duas camadas recortadas pelo próprio desenho da espada (mask), então a luz
    só pinta o aço. ::before é a luz que vem de baixo, mais quente perto do carvão, tremulando no ritmo da chama, com um
    reflexo que sobe pela aresta; ::after é a brasa do terço de baixo, respirando. A chama da frente passa por cima. */
@@ -357,9 +358,9 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
   -webkit-mask: var(--sprite-espada) center / 100% 100% no-repeat; mask: var(--sprite-espada) center / 100% 100% no-repeat; }
 .hd-espada::before { mix-blend-mode: screen;
   background: linear-gradient(180deg, transparent 6%, rgba(255, 236, 200, 0.85) 9%, transparent 12%) 0 140% / 100% 260% no-repeat,
-    linear-gradient(0deg, rgba(255, 150, 50, 0.95) 0%, rgba(255, 170, 70, 0.6) 30%, rgba(255, 190, 110, 0.25) 62%, rgba(255, 200, 140, 0.08) 100%);
+    linear-gradient(0deg, rgba(var(--luz-espada), 0.95) 0%, rgba(var(--luz-espada), 0.7) 30%, rgba(var(--luz-espada), 0.42) 62%, rgba(var(--luz-espada), 0.28) 100%);
   animation: hd-espada-luz 2.4s ease-in-out infinite, hd-espada-reflexo 5.5s ease-in-out infinite; }
-.hd-espada::after { mix-blend-mode: screen; background: linear-gradient(0deg, rgba(255, 90, 30, 0.95) 0%, rgba(255, 140, 40, 0.7) 22%, transparent 42%);
+.hd-espada::after { mix-blend-mode: screen; background: linear-gradient(0deg, rgba(var(--luz-espada), 1) 0%, rgba(var(--luz-espada), 0.7) 22%, transparent 42%);
   animation: hd-espada-brasa 3.2s ease-in-out infinite; }
 @keyframes hd-espada-luz { 0%, 100% { opacity: 0.75; } 18% { opacity: 1; } 40% { opacity: 0.68; } 63% { opacity: 0.95; } 82% { opacity: 0.8; } }
 @keyframes hd-espada-reflexo { 0%, 55% { background-position: 0 140%, 0 0; } 100% { background-position: 0 -40%, 0 0; } }
@@ -367,6 +368,40 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
 .hd-palco--manha .hd-espada::before { opacity: 0.55; }
 .hd-palco--noite .hd-espada::before { animation-duration: 2.4s, 4.5s; }
 .hd-espada--apagada::before, .hd-espada--apagada::after { display: none; }
+/* Ray tracing na espada (Tales, 01/11/2026: "fazer ray tracing e iluminação em cima da espada"). Tudo na cor da chama
+   (--luz-espada: laranja, azul na Chama azul, violeta na arcana) e só com transform e opacity:
+   - raios: um leque de feixes finos que sobe do carvão por trás da lâmina, com a luz caindo com a distância, e balança
+     devagar como o ar quente;
+   - aura: o halo alongado em volta do aço, que respira no compasso da chama;
+   - brilho: uma estrela de quatro pontas que acende na guarda quando o reflexo chega ao topo da lâmina (5,5 s). */
+.hd-espada__raios, .hd-espada__aura, .hd-espada__brilho { position: absolute; pointer-events: none; mix-blend-mode: screen; }
+.hd-espada__raios {
+  background: repeating-conic-gradient(from -42deg at 50% 92%, rgba(var(--luz-espada), 0.34) 0deg 2.2deg, transparent 2.2deg 7deg);
+  -webkit-mask: radial-gradient(ellipse 48% 92% at 50% 92%, #000 0%, rgba(0, 0, 0, 0.55) 38%, transparent 72%);
+  mask: radial-gradient(ellipse 48% 92% at 50% 92%, #000 0%, rgba(0, 0, 0, 0.55) 38%, transparent 72%);
+  filter: blur(1px); transform-origin: 50% 92%; opacity: 0.7;
+  animation: hd-raios 6s ease-in-out infinite, hd-espada-luz 2.4s ease-in-out infinite; }
+@keyframes hd-raios { 0%, 100% { transform: rotate(-3deg) scaleY(0.96); } 50% { transform: rotate(3deg) scaleY(1.04); } }
+.hd-espada__aura {
+  border-radius: 50%; background: radial-gradient(ellipse 40% 50% at 50% 55%, rgba(var(--luz-espada), 0.55), rgba(var(--luz-espada), 0.18) 55%, transparent 75%);
+  filter: blur(2px); animation: hd-espada-luz 2.4s ease-in-out infinite; }
+.hd-espada__brilho {
+  background:
+    radial-gradient(circle, rgba(255, 252, 240, 1) 0 9%, rgba(var(--luz-espada), 0.8) 16%, transparent 34%),
+    linear-gradient(90deg, transparent 46%, rgba(255, 250, 235, 0.95) 50%, transparent 54%) center / 100% 30% no-repeat,
+    linear-gradient(0deg, transparent 46%, rgba(255, 250, 235, 0.95) 50%, transparent 54%) center / 30% 100% no-repeat;
+  opacity: 0; transform: scale(0.2) rotate(0deg); animation: hd-espada-brilho 5.5s ease-in-out infinite; }
+@keyframes hd-espada-brilho { 0%, 84% { opacity: 0; transform: scale(0.2) rotate(0deg); } 92% { opacity: 1; transform: scale(1.5) rotate(45deg); } 100% { opacity: 0; transform: scale(0.3) rotate(90deg); } }
+.hd-palco--manha :is(.hd-espada__raios, .hd-espada__aura) { opacity: 0.45; }
+.hd-palco--noite .hd-espada__raios { opacity: 0.95; }
+.hd-palco--noite .hd-espada__aura { filter: blur(3px) brightness(1.2); }
+.hd-palco--pausa .hd-espada__raios { opacity: 1; }
+/* Menos movimento: a luz fica acesa e parada; sem o cintilar. */
+@media (prefers-reduced-motion: reduce) {
+  .hd-espada__raios, .hd-espada__aura { animation: none; }
+  .hd-espada__brilho { display: none; }
+}
+
 /* A chama da frente: só a metade de baixo do fogo, um pouco menor e fora de compasso, lambendo a base da lâmina. */
 .hd-fogo--frente { clip-path: inset(48% 0 0 0); opacity: 0.88; animation-delay: -0.37s; filter: drop-shadow(0 0 6px rgba(255, 170, 70, 0.6)); }
 
