@@ -2375,15 +2375,15 @@
   },
   {
    "id": "netter-anatomia-mao-punho-antebraco",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia da mão, do punho e do antebraço",
    "especialidade": "mao",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
-   "edicao": "2ª edição",
+   "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Green's Operative Hand Surgery, 7ª edição (2017)",
    "capitulo": "Capítulo 5 · Antebraço e Capítulo 6 · Mão",
-   "resumo": "Mediano e interósseo anterior (FPD 2 e 3, FLP, pronador quadrado), radial, interósseo posterior e FROHSE, ulnar e GUYON; compartimentos extensores I a VI e compartimento móvel; lumbricais (1 e 2 mediano e unipenados, 3 e 4 ulnar e bipenados), DAB e PAD; túnel do carpo (nove tendões, ramo recorrente 50/30/20), ligamentos do punho e espaço de POIRIER; arcos palmares (superficial ulnar, profundo radial, principal do polegar), escafoide 75% dorsal; aparelho extensor, polias A2 e A4, vínculos, efeito came; espaços tenar, mediopalmar e de PARONA.",
+   "resumo": "Ossificação do carpo e colunas de NAVARRO, gota de lágrima e bossa; MARTIN-GRUBER (quatro tipos), RICHE-CANNIEU e os sinais do ulnar; vias de THOMPSON, HENRY, BOYD e do punho; nutrição e cicatrização do tendão flexor, efeito quadriga; camadas do nervo; rotação do membro na sétima semana; mediano e interósseo anterior (FPD 2 e 3, FLP, pronador quadrado), radial, interósseo posterior e FROHSE, ulnar e GUYON; compartimentos extensores I a VI e compartimento móvel; lumbricais (1 e 2 mediano e unipenados, 3 e 4 ulnar e bipenados), DAB e PAD; túnel do carpo (nove tendões, ramo recorrente 50/30/20), ligamentos do punho e espaço de POIRIER; arcos palmares (superficial ulnar, profundo radial, principal do polegar), escafoide 75% dorsal; aparelho extensor, polias A2 e A4, vínculos, efeito came; espaços tenar, mediopalmar e de PARONA.",
    "acesso": "gratis",
-   "minutos": 12,
+   "minutos": 30,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2391,13 +2391,28 @@
      "radar": "fundamento"
     },
     {
+     "id": "os-ossos-carpo-colunas-e-o-radio-distal",
+     "titulo": "Os ossos: carpo, colunas e o rádio distal",
+     "radar": "confirmado"
+    },
+    {
      "id": "os-nervos-do-antebraco-e-da-mao",
      "titulo": "Os nervos do antebraço e da mão",
      "radar": "confirmado"
     },
     {
+     "id": "anomalias-de-inervacao-e-o-exame-do-ulnar",
+     "titulo": "Anomalias de inervação e o exame do ulnar",
+     "radar": "confirmado"
+    },
+    {
      "id": "compartimentos-extensores-e-os-compartimentos-do",
      "titulo": "Compartimentos extensores e os compartimentos do antebraço",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-de-acesso-ao-antebraco-e-ao-punho",
+     "titulo": "As vias de acesso ao antebraço e ao punho",
      "radar": "confirmado"
     },
     {
@@ -2421,8 +2436,23 @@
      "radar": "confirmado"
     },
     {
+     "id": "o-tendao-flexor-por-dentro-nutricao-e-cicatrizac",
+     "titulo": "O tendão flexor por dentro: nutrição e cicatrização",
+     "radar": "oportunidade"
+    },
+    {
      "id": "os-espacos-da-mao-e-a-ponta-do-dedo",
      "titulo": "Os espaços da mão e a ponta do dedo",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-nervo-periferico-por-dentro",
+     "titulo": "O nervo periférico por dentro",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "embriologia-do-membro-superior",
+     "titulo": "Embriologia do membro superior",
      "radar": "oportunidade"
     },
     {
@@ -2432,6 +2462,12 @@
     }
    ],
    "questoes": [
+    "mao-0588",
+    "mao-0492",
+    "mao-0251",
+    "mao-0300",
+    "mao-0242",
+    "mao-0617",
     "mao-0497",
     "mao-0344",
     "mao-0170",
@@ -2441,6 +2477,11 @@
     "mao-0533",
     "mao-0535",
     "mao-0627",
+    "mao-0097",
+    "ombro-cotovelo-0116",
+    "mao-0173",
+    "mao-0415",
+    "mao-0550",
     "mao-0394",
     "mao-0104",
     "mao-0027",
@@ -2449,6 +2490,16 @@
     "mao-0094",
     "mao-0171",
     "mao-0570",
+    "mao-0029",
+    "mao-0167",
+    "ombro-cotovelo-0320",
+    "mao-0408",
+    "mao-0317",
+    "ombro-cotovelo-0129",
+    "ombro-cotovelo-0120",
+    "mao-0172",
+    "mao-0316",
+    "ombro-cotovelo-0384",
     "mao-0084",
     "mao-0549",
     "mao-0630",
@@ -2477,24 +2528,73 @@
     "mao-0652",
     "mao-0318",
     "mao-0127",
-    "mao-0225"
+    "mao-0569",
+    "mao-0225",
+    "mao-0633",
+    "mao-0411"
    ],
    "treino": [
+    "mao-1270",
+    "mao-1271",
     "mao-2561",
     "mao-2562",
     "mao-2566",
     "mao-2571",
+    "mao-1264",
+    "mao-1272",
+    "mao-1274",
+    "mao-1275",
+    "mao-1278",
+    "mao-1279",
+    "mao-1718",
     "mao-2559",
     "mao-2563",
+    "mao-1265",
+    "mao-1266",
+    "mao-1267",
+    "mao-1268",
+    "mao-1269",
+    "mao-1273",
+    "mao-1277",
+    "mao-1280",
+    "mao-1281",
     "mao-2560",
+    "mao-1643",
+    "mao-1644",
+    "mao-1645",
+    "mao-1646",
+    "mao-1647",
+    "mao-1648",
+    "mao-1649",
+    "mao-1650",
+    "mao-1651",
+    "mao-1652",
+    "mao-1653",
+    "mao-1654",
+    "mao-1655",
+    "mao-1656",
+    "mao-1657",
+    "mao-1658",
+    "mao-1659",
+    "mao-1660",
     "mao-2565",
     "mao-2567",
     "mao-2564",
     "mao-2572",
+    "mao-1276",
+    "mao-1665",
+    "mao-1666",
+    "mao-1667",
     "mao-2568",
     "mao-2569",
     "mao-2573",
-    "mao-2570"
+    "mao-1663",
+    "mao-1664",
+    "mao-1709",
+    "mao-1661",
+    "mao-1662",
+    "mao-2570",
+    "mao-1668"
    ],
    "subtemas": [
     "Anatomia da mão e punho"

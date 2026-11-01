@@ -8,6 +8,7 @@ import type { CenaVila } from './TopoVila'
 /** Revisão: a estufa da vila (scripts/gerar_cena_estufa.py). Regar no dia certo o que você plantou. */
 export const CENA_ESTUFA: CenaVila = {
   arquivo: 'estufa',
+  ceu: { x: 400, y: 0 },
   // A coruja no topo da viga treliçada (só vidro acima dela); o gato dorme nas lajotas entre as bancadas.
   coruja: { x: 418, y: 46 },
   gato: { x: 338, y: 125, estado: 'dormindo', acordado: 'acordado' },
@@ -19,6 +20,7 @@ export const CENA_ESTUFA: CenaVila = {
 /** Caderno de erros: o campo de treino ao pé da muralha (scripts/gerar_cena_treino.py). O lugar da revanche. */
 export const CENA_TREINO: CenaVila = {
   arquivo: 'treino',
+  ceu: { x: 480, y: 50 },
   // A coruja na trave do suporte do alvo (céu e mata acima); o gato na terra batida entre o boneco e o alvo.
   coruja: { x: 406, y: 76 },
   gato: { x: 338, y: 125, estado: 'sentado', acordado: 'brincando' },
@@ -42,6 +44,8 @@ export const DICAS_ERROS = [
 /** Favoritas: o gabinete das relíquias do castelo (scripts/gerar_cena_gabinete.py). O que vale guardar para rever. */
 export const CENA_GABINETE: CenaVila = {
   arquivo: 'gabinete',
+  // O óculo, a única janela da sala.
+  ceu: { x: 290, y: 40 },
   // A coruja na cornija do armário-vitrine; o gato lê no tapete, na mancha de sol da manhã.
   coruja: { x: 431, y: 41 },
   gato: { x: 338, y: 125, estado: 'lendo', acordado: 'sentado' },

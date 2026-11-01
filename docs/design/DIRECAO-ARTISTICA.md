@@ -5,7 +5,8 @@ o Tales (dono do projeto) aprovou, recusou e pediu até 01/11/2026.
 
 - **Prioridade:** em caso de dúvida, vale o pedido mais recente do Tales.
 - **Leitura junto:** [DESIGN.md](../../DESIGN.md) (tokens de cor, tipografia e componentes),
-  [PRODUCT.md](../../PRODUCT.md), [WORKFLOW.md](WORKFLOW.md), [OBJETOS-ANIMADOS.md](OBJETOS-ANIMADOS.md) e a skill de
+  [PRODUCT.md](../../PRODUCT.md), [WORKFLOW.md](WORKFLOW.md), [OBJETOS-ANIMADOS.md](OBJETOS-ANIMADOS.md), [MASCOTES.md](MASCOTES.md) (o plano-mestre dos três bichos: luz, movimento, roupas,
+  diretor de cena e frases) e a skill de
   arte [.claude/skills/arte-hd2d/SKILL.md](../../.claude/skills/arte-hd2d/SKILL.md).
 
 ---

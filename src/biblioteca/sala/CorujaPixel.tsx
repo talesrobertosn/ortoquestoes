@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react'
 import { urlCss } from '../../config'
+import { mapasDeLuz } from '../../componentes/mascote/luz'
 import './CorujaPixel.css'
 
 /**
@@ -23,6 +24,6 @@ export function CorujaPixel({ estado, className = '', style }: { estado: EstadoC
   return (
     <span key={estado}
       className={`coruja-pixel coruja-pixel--${nome}${UMA_VEZ.includes(estado) ? ' coruja-pixel--uma-vez' : ''} ${className}`} aria-hidden="true"
-      style={{ ...style, '--sprite': urlCss(SPRITE_CORUJA), '--linha': linha, '--linhas': LINHAS_CORUJA.length } as CSSProperties} />
+      style={{ ...style, '--sprite': urlCss(SPRITE_CORUJA), '--linha': linha, '--linhas': LINHAS_CORUJA.length, ...mapasDeLuz(SPRITE_CORUJA) } as CSSProperties} />
   )
 }

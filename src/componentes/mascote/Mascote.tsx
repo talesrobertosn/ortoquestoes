@@ -3,6 +3,7 @@ import { ler, gravar } from '../../estado/armazenamento'
 import { COMPORTAMENTOS, entraNoSorteio, fantasiaDoMes, type Fantasia, type IdComportamento } from './comportamentos'
 import { SPRITE_ESQUELETO, folhaEsqueleto } from './sprites'
 import { urlCss } from '../../config'
+import { mapasDeLuz } from './luz'
 import { FALAS, FALAS_GERAIS, FALAS_HALLOWEEN } from './falas'
 import './Mascote.css'
 
@@ -98,7 +99,7 @@ export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, f
   const folha = folhaEsqueleto(mostrado)
   const desenho = (
     <span className="mascote__sprite" aria-hidden="true" style={{
-      '--sprite': urlCss(folha.src.slice(1)), '--linha': folha.linha, '--linhas': folha.linhas,
+      '--sprite': urlCss(folha.src.slice(1)), '--linha': folha.linha, '--linhas': folha.linhas, ...mapasDeLuz(folha.src),
       '--quadros': SPRITE_ESQUELETO.quadrosPorLinha, '--dur': reagindo ? '1.2s' : atual === 'dormir' ? '2.6s' : atual === 'malabares' || atual === 'acenar' ? '1.1s' : '1.5s',
     } as CSSProperties} />
   )
