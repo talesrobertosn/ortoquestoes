@@ -299,3 +299,16 @@
 .a3-funil-sn b { font-size: 28px; font-weight: 600; letter-spacing: -.03em; }
 .a3-funil-sn i { display: block; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--a3-tinta) var(--p), var(--a3-recuo) var(--p)); }
 @media (max-width: 860px) { .a3-funil-sn { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-funil-sn > div { border-left: 0; border-top: 1px solid var(--a3-linha); } }
+
+/* Opiniões dos flashcards */
+.a3-mural { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--a3-linha); }
+.a3-mural li { display: grid; gap: 10px; padding: 16px 20px; border-bottom: 1px solid var(--a3-linha); }
+.a3-mural li:last-child { border-bottom: 0; }
+.a3-mural__topo { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.a3-mural__notas { display: flex; gap: 8px 24px; flex-wrap: wrap; }
+.a3-mural__texto { display: grid; gap: 4px; }
+.a3-mural__texto p { font-size: 14.5px; line-height: 1.55; overflow-wrap: anywhere; }
+.a3-nota { display: inline-flex; align-items: center; gap: 8px; }
+.a3-nota__tracos { display: inline-flex; gap: 3px; }
+.a3-nota__tracos i { width: 14px; height: 5px; border-radius: 3px; background: var(--a3-recuo); }
+.a3-nota__tracos i.cheio { background: var(--a3-tinta); }
