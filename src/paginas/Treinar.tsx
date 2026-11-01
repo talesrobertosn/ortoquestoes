@@ -241,9 +241,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const primeiroNome = String(conta?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
   // Os quatro atalhos de 10, com a contagem da prova escolhida e o que cada um pega.
   const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; dica: string; preset: Partial<Filtros> }[] = [
-    { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, dica: 'separadas para hoje', preset: { situacao: 'revisarHoje' } },
+    { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, dica: 'para hoje', preset: { situacao: 'revisarHoje' } },
     { titulo: 'Novas', icone: 'alvo', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, dica: 'nunca vistas', preset: { situacao: 'naoRespondidas' } },
-    { titulo: 'Que errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, dica: 'erradas por último', preset: { situacao: 'erradas' } },
+    { titulo: 'Que errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, dica: 'erradas antes', preset: { situacao: 'erradas' } },
     { titulo: 'Favoritas', icone: 'estrela', quantidade: gerais?.porSituacao.favoritas ?? 0, dica: 'com estrela', preset: { situacao: 'favoritas' } },
   ]
   // "Mais filtros" começa fechado, mas abre sozinho quando chega um filtro avançado (link, filtro salvo, desfazer).
