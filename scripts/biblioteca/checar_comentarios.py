@@ -1,6 +1,7 @@
 """Portão extra dos lotes de comentários (Tales, 31/10/2026; docs/biblioteca/FLUXO-MESTRE.md, seção 6).
 
-Chamado por lote_comentarios.py. Complementa o que ele já recusa (piso de tamanho, travessão, parágrafo
+Chamado por lote_comentarios.py. Recusa também análise de alternativa que começa com "também" (a ordem
+muda na tela). Complementa o que ele já recusa (piso de tamanho, travessão, parágrafo
 idêntico, fecho de simulado no lugar errado) com:
   - parágrafo quase igual (90% de semelhança) em dois comentários do lote: recusa;
   - comentário cujas referências não citam nenhum livro (só o resumo da Biblioteca): recusa;
@@ -30,6 +31,11 @@ def checar(comentarios: dict) -> tuple[list[str], list[str]]:
                 continue  # o idêntico já é recusado por lote_comentarios.py
             if abs(len(pa) - len(pb)) < 0.2 * max(len(pa), len(pb)) and SequenceMatcher(None, pa, pb).ratio() > 0.9:
                 erros.append(f"parágrafo quase igual em {a} e {b}: {pa[:60]}...")
+    for qid, c in comentarios.items():
+        for letra, t in (c.get("incorretas") or {}).items():
+            # As letras são embaralhadas na tela: "**X** também..." pode aparecer em primeiro e perde o sentido.
+            if re.match(r"\*\*[^*]+\*\* também\b", t):
+                erros.append(f"{qid}: análise da {letra} começa com 'também'; na tela a ordem das alternativas muda")
     for qid, c in comentarios.items():
         refs = c.get("referencias") or []
         if not any(LIVRO.search(r) and "Biblioteca OrtoQuestões" not in r for r in refs):
