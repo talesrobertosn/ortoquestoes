@@ -32,7 +32,7 @@ export function ExigeConta({ caminho, children, sobre = 'questoes' }: { caminho:
         Criar a conta não pede cartão e leva menos de um minuto.
       </p>
       <p className="exige-conta__gratis">
-        <strong>A conta é grátis</strong> {fraseGratis('exige')}
+        <strong>A conta é grátis</strong> {fraseGratis('exige')}{' '}
         Entre, pratique e aproveite. {fraseGratis('exigePlanos')} <a href={href('/assinatura')}>conheça os planos</a>.
       </p>
       <ul className="exige-conta__lista">

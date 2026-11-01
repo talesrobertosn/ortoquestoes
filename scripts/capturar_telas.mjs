@@ -1,5 +1,5 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--com-plano] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--com-plano] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO] [--estreito]
 // --sn: o Simulado Nacional de outubro no Supabase falso (e o relógio do navegador no momento do cenário):
 //   antes (não inscrito) | inscrito | aberto | andamento | entregue (resultado e ranking) | encerrado | ausente (sem a parte 32: 404)
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
@@ -311,7 +311,9 @@ if (COM_DADOS) {
   favoritosExemplo = [...feitas.filter((_, i) => i % 9 === 0).slice(0, 30), ...ids.filter((id) => !respondidasExemplo[id]).filter((_, i) => i % 97 === 0).slice(0, 7)]
 }
 const ESCONDER = '.aviso-termos, .aviso-cookies, [class*="AvisoTermos"], [class*="aviso-termos"], vite-error-overlay { display: none !important; }'
-for (const [nome, vp, esc] of [['cel', { width: 390, height: 844 }, 2], ['pc', { width: 1440, height: 900 }, 1]]) {
+// --estreito: grava também o celular pequeno (320 px), para conferir o que aperta.
+const TAMANHOS = [['cel', { width: 390, height: 844 }, 2], ...(args.includes('--estreito') ? [['cel320', { width: 320, height: 640 }, 2]] : []), ['pc', { width: 1440, height: 900 }, 1]]
+for (const [nome, vp, esc] of TAMANHOS) {
   const contexto = await navegador.newContext({ viewport: vp, colorScheme: args.includes('--sistema-escuro') ? 'dark' : 'light', deviceScaleFactor: esc, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', hasTouch: vp.width < 600 })
   await contexto.route(`${SUPABASE}/**`, atender)
   const sessaoAuth = { access_token: `tok-${CONTA}`, refresh_token: 'r', token_type: 'bearer', expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 30 * 24 * 3600, user: { ...usuarioFalso(CONTA), user_metadata: { nome: 'Tales', termos_versao: 999 } } }

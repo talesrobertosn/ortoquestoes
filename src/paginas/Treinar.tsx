@@ -1,5 +1,5 @@
-import { type CSSProperties, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
-import { FLASHCARDS_NO_MENU, fraseGratis, recurso } from '../config'
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { FLASHCARDS_NO_MENU, fraseGratis } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
@@ -29,11 +29,6 @@ import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { confirmar, pedirTexto } from '../componentes/Confirmar'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { Painel } from '../componentes/Painel'
-import { HeroiJornada } from '../componentes/inicio/jornada/Jornada'
-import { GatoPixel } from '../componentes/mascote/GatoPixel'
-import { EVENTO_AMOSTRA } from '../componentes/inicio/AmostraRespondivel'
-import '../estilos/paginas/InicioJornada.css'
-import '../estilos/paginas/InicioHd.css'
 import '../estilos/paginas/Treinar.css'
 
 // TEOT e TARO vêm primeiro, cada um na sua pílula. "Ortopedia" (antes "TEOT/TARO", troca pedida
@@ -96,9 +91,8 @@ const DURACOES: Array<[number, string]> = [
 ]
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
-  usarSegredoOsso()
   const cronograma = usarCronogramaHoje()
-  const { indice, carregando } = usarIndice()
+  const { indice, carregando, erro: erroIndice } = usarIndice()
   const { iniciarComAviso } = usarSessao()
   const { sessao: conta } = usarConta()
   const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : PADRAO)
@@ -108,7 +102,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     const mudou = () => {
       const rota = rotaDe(window.location.hash)
       if (rota.caminho === '/treinar') {
-        const proximos = consultaParaFiltros(rota.consulta)
+        // Endereço sem filtro (tocar em Treinar estando no Treinar) volta ao padrão, não a "todas, sem limite".
+        const proximos = rota.consulta.size ? consultaParaFiltros(rota.consulta) : PADRAO
         definirFiltros(atuais => filtrosParaConsulta(atuais) === filtrosParaConsulta(proximos) ? atuais : proximos)
       }
     }
@@ -244,16 +239,21 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }, [contexto.respondidas])
 
   const primeiroNome = String(conta?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
-  // pixel: o ícone de inventário (public/pixel, scripts/gerar_icones_pixel.py), o mesmo traço da barra da página inicial.
-  const rapidas: { titulo: string; icone: NomeIcone; pixel: string; quantidade: number; preset: Partial<Filtros> }[] = [
-    { titulo: 'Revisar hoje', icone: 'calendario', pixel: 'revisao', quantidade: gerais?.porSituacao.revisarHoje ?? 0, preset: { situacao: 'revisarHoje' } },
-    { titulo: 'Novas', icone: 'alvo', pixel: 'planos', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
-    { titulo: 'Que errei', icone: 'reiniciar', pixel: 'erros', quantidade: gerais?.porSituacao.erradas ?? 0, preset: { situacao: 'erradas' } },
-    { titulo: 'Favoritas', icone: 'estrela', pixel: 'treinar', quantidade: gerais?.porSituacao.favoritas ?? 0, preset: { situacao: 'favoritas' } },
+  // Os quatro atalhos de 10, com a contagem da prova escolhida e o que cada um pega.
+  const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; dica: string; preset: Partial<Filtros> }[] = [
+    { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, dica: 'para hoje', preset: { situacao: 'revisarHoje' } },
+    { titulo: 'Novas', icone: 'alvo', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, dica: 'nunca vistas', preset: { situacao: 'naoRespondidas' } },
+    { titulo: 'Que errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, dica: 'erradas antes', preset: { situacao: 'erradas' } },
+    { titulo: 'Favoritas', icone: 'estrela', quantidade: gerais?.porSituacao.favoritas ?? 0, dica: 'com estrela', preset: { situacao: 'favoritas' } },
   ]
-  const [filtrosProvaAbertos, definirFiltrosProvaAbertos] = useState(
-    () => filtros.provas.length + filtros.anos.length + filtros.dificuldades.length > 0 || filtros.soSimulados,
-  )
+  // "Mais filtros" começa fechado, mas abre sozinho quando chega um filtro avançado (link, filtro salvo, desfazer).
+  const avancados = contarAvancados(filtros, mostrarEtiquetas)
+  const [filtrosProvaAbertos, definirFiltrosProvaAbertos] = useState(() => avancados > 0)
+  const avancadosAntes = useRef(avancados)
+  useEffect(() => {
+    if (avancados > avancadosAntes.current && avancadosAntes.current === 0) definirFiltrosProvaAbertos(true)
+    avancadosAntes.current = avancados
+  }, [avancados])
 
   // Quantidade digitada: só limita ao total ao sair do campo (digitar "75" passava por "7").
   const [rascunhoQtd, definirRascunhoQtd] = useState<string | null>(null)
@@ -356,7 +356,18 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const [gaveta, definirGaveta] = useState(false)
   if (carregando) return <Carregando linhas={6} rotulo="Carregando os filtros" />
 
-  if (indice && indice.total === 0) {
+  if (erroIndice || !indice) {
+    return (
+      <Estado
+        titulo="Não deu para carregar as questões agora."
+        acoes={<button type="button" className="botao" onClick={() => window.location.reload()}><Icone nome="reiniciar" tamanho={16} /> Tentar de novo</button>}
+      >
+        <p>Pode ter sido a conexão. Suas respostas continuam guardadas; é só tentar de novo em instantes.</p>
+      </Estado>
+    )
+  }
+
+  if (indice.total === 0) {
     return (
       <Estado
         titulo="Ainda não há questões para filtrar."
@@ -373,14 +384,18 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   const selecionados = filtros.temas.length + filtros.subtemas.length
   const nomesProva = gruposProva.filter((g) => g.provas.some((p) => filtros.provas.includes(p))).map((g) => g.rotulo)
-  const resumoProva = [
-    nomesProva.length ? nomesProva.join(', ') : 'Todas as provas',
-    filtros.soSimulados ? 'só simulados' : filtros.semSimulados ? 'só provas oficiais' : '',
-    filtros.anos.length ? [...filtros.anos].sort((a, b) => b - a).join(', ') : 'todos os anos',
+  const anosOrdenados = [...filtros.anos].sort((a, b) => b - a)
+  // O rótulo de "Mais filtros" resume o que está valendo lá dentro, para não precisar abrir para conferir.
+  const resumoMais = [
+    nomesProva.length ? nomesProva.join(', ') : 'Todas as provas de origem',
+    anosOrdenados.length ? anosOrdenados.join(', ') : 'todos os anos',
     filtros.dificuldades.length ? filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', ') : '',
+    filtros.comImagem ? 'com imagem' : '',
+    filtros.comComentario ? 'com comentário' : '',
+    filtros.incluirAnuladas ? 'com anuladas' : '',
+    filtros.embaralhar ? '' : 'na ordem da prova',
+    mostrarEtiquetas ? '' : 'etiquetas escondidas',
   ].filter(Boolean).join(' · ')
-  const opcoesAtivas = [filtros.comImagem, filtros.comComentario, filtros.incluirAnuladas, !filtros.embaralhar, !mostrarEtiquetas].filter(Boolean).length
-    + filtros.provas.length + filtros.anos.length + filtros.dificuldades.length
   // Sempre as mesmas pílulas, no mesmo lugar: esconder as vazias fazia as outras mudarem de
   // posição a cada filtro. A vazia fica visível e desabilitada (com 0).
   const situacoesVisiveis = SITUACOES.filter((s) => !SITUACOES_TURMA.includes(s))
@@ -397,41 +412,55 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     </>
   )
 
-  const tambemValem = [
-    nomesProva.join(', '),
-    [...filtros.anos].sort((a, b) => b - a).join(', '),
-    filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', '),
-    filtros.busca.trim() ? `busca "${filtros.busca.trim()}"` : '',
-    filtros.comImagem ? 'só com imagem' : '',
-    filtros.comComentario ? 'só com comentário' : '',
-    filtros.incluirAnuladas ? 'com anuladas' : '',
-    filtros.embaralhar ? '' : 'na ordem da prova',
-    simulado ? `modo prova, ${DURACOES.find(([v]) => v === minutos)?.[1] ?? `${minutos} min`}` : '',
-  ].filter(Boolean)
+  // Filtros fora do caminho principal que estão valendo, cada um com o seu "tirar" (os assuntos já têm as
+  // etiquetas próprias no seletor; prova, origem e situação aparecem nas linhas do resumo).
+  const tambemValem: { rotulo: string; tirar: Partial<Filtros> | null }[] = [
+    ...gruposProva.filter((g) => g.provas.some((p) => filtros.provas.includes(p))).map((g) => ({ rotulo: g.rotulo, tirar: { provas: filtros.provas.filter((p) => !g.provas.includes(p)) } })),
+    ...anosOrdenados.map((ano) => ({ rotulo: String(ano), tirar: { anos: filtros.anos.filter((x) => x !== ano) } })),
+    ...filtros.dificuldades.map((d) => ({ rotulo: ROTULO_DIFICULDADE[d], tirar: { dificuldades: filtros.dificuldades.filter((x) => x !== d) } })),
+    ...(filtros.busca.trim() ? [{ rotulo: `texto "${filtros.busca.trim()}"`, tirar: { busca: '' } }] : []),
+    ...(filtros.comImagem ? [{ rotulo: 'só com imagem', tirar: { comImagem: false } }] : []),
+    ...(filtros.comComentario ? [{ rotulo: 'só com comentário', tirar: { comComentario: false } }] : []),
+    ...(filtros.incluirAnuladas ? [{ rotulo: 'com anuladas', tirar: { incluirAnuladas: false } }] : []),
+    ...(filtros.embaralhar ? [] : [{ rotulo: 'na ordem da prova', tirar: { embaralhar: true } }]),
+  ]
+  const listaValem = (
+    tambemValem.length > 0 && (
+      <ul className="tn-valem" aria-label="Outros filtros que valem">
+        {tambemValem.map((t) => (
+          <li key={t.rotulo}>
+            <button type="button" className="tn-valem__tirar" onClick={() => t.tirar && atualizar(t.tirar)} aria-label={`Tirar o filtro ${t.rotulo}`}>
+              {t.rotulo} <Icone nome="fechar" tamanho={12} />
+            </button>
+          </li>
+        ))}
+      </ul>
+    )
+  )
   const comecarBotao = (classe: string) => (
     <button type="button" className={'botao botao--grande tr-comecar ' + classe} disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
       {conteudoComecar}
     </button>
   )
-  // Quantas questões e como responder: no bilhete (computador) e na gaveta que sobe da barra (celular).
+  // Quantas questões e como responder: no resumo (computador) e na gaveta que sobe da barra (celular).
   const escolhas = (sufixo: string) => (
     <>
-    <div className="tn-bilhete__grupo">
-      <span className="tn-bilhete__rotulo" id={`tn-quantas${sufixo}`}>Quantas</span>
+    <div className="tn-resumo__grupo">
+      <span className="tn-resumo__rotulo" id={`tn-quantas${sufixo}`}>Quantas questões</span>
       <div className="tn-quantas" role="group" aria-labelledby={`tn-quantas${sufixo}`} id={`filtro-limite${sufixo}`}>
         {LIMITES.map((n) => (
-          <button key={n} type="button" className="tn-vidro tn-vidro--quadrado" aria-pressed={filtros.limite === n} disabled={total < n && filtros.limite !== n} onClick={() => atualizar({ limite: n })}>{n}</button>
+          <button key={n} type="button" className="tn-escolha" aria-pressed={filtros.limite === n} disabled={total < n && filtros.limite !== n} onClick={() => atualizar({ limite: n })}>{n}</button>
         ))}
-        <button type="button" className="tn-vidro tn-vidro--quadrado" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
+        <button type="button" className="tn-escolha" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
         <label className="tn-outra">
           <span className="so-leitor">Quantidade personalizada</span>
-          <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={rascunhoQtd ?? (filtros.limite !== null && !LIMITES.includes(filtros.limite) ? filtros.limite : '')} placeholder="Outra" onChange={(e) => definirRascunhoQtd(e.target.value)} onBlur={() => { if (rascunhoQtd === null) return; const n = Math.floor(Number(rascunhoQtd)); atualizar({ limite: rascunhoQtd && n > 0 ? Math.max(1, Math.min(total || 1, n)) : null }); definirRascunhoQtd(null) }} onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }} />
+          <input className="entrada" type="number" inputMode="numeric" min="1" step="1" max={Math.max(total, 1)} value={rascunhoQtd ?? (filtros.limite !== null && !LIMITES.includes(filtros.limite) ? filtros.limite : '')} placeholder="Outra" onChange={(e) => definirRascunhoQtd(e.target.value)} onBlur={() => { if (rascunhoQtd === null) return; const n = Math.floor(Number(rascunhoQtd)); atualizar({ limite: rascunhoQtd && n > 0 ? Math.max(1, Math.min(total || 1, n)) : null }); definirRascunhoQtd(null) }} onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }} />
         </label>
       </div>
     </div>
 
-    <div className="tn-bilhete__grupo">
-      <span className="tn-bilhete__rotulo" id={`tn-modo${sufixo}`}>Como</span>
+    <div className="tn-resumo__grupo">
+      <span className="tn-resumo__rotulo" id={`tn-modo${sufixo}`}>Como responder</span>
       <div className="tn-modos" role="radiogroup" aria-labelledby={`tn-modo${sufixo}`}>
         <button type="button" role="radio" aria-checked={!simulado} className="tn-modo" onClick={() => definirSimulado(false)}>
           <Icone nome="livro" tamanho={18} />
@@ -445,7 +474,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       {simulado && (
         <div className="tn-quantas" id={`filtro-duracao${sufixo}`} role="group" aria-label="Tempo de prova">
           {DURACOES.map(([valor, rotulo]) => (
-            <button key={valor} type="button" className="tn-vidro" aria-pressed={minutos === valor} onClick={() => definirMinutos(valor)}>{rotulo}</button>
+            <button key={valor} type="button" className="tn-escolha" aria-pressed={minutos === valor} onClick={() => definirMinutos(valor)}>{rotulo}</button>
           ))}
         </div>
       )}
@@ -458,50 +487,99 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const origem: 'tudo' | 'oficiais' | 'simulados' = filtros.soSimulados ? 'simulados' : filtros.semSimulados ? 'oficiais' : 'tudo'
   const nOrigem = { tudo: origemContagem?.total ?? 0, simulados: origemContagem?.simulados ?? 0, oficiais: (origemContagem?.total ?? 0) - (origemContagem?.simulados ?? 0) }
   const nomeArea = todasMarcadas ? 'Todas as provas' : filtros.areas.length === 1 ? ROTULO_AREA[filtros.areas[0]] : `${filtros.areas.length} provas`
+  const nomeAreaCurto = todasMarcadas ? 'todas as provas' : filtros.areas.map((a) => AREA_CURTA[a]).join(' + ')
+  const rotuloOrigem = origem === 'tudo' ? 'Provas + Simulados' : origem === 'oficiais' ? 'Só provas oficiais' : 'Só Simulados'
+
+  // Zero questões: as menores mudanças que trazem questões de volta, com quantas cada uma traz (nunca uma promessa vazia).
+  const recuperar: { rotulo: string; parcial: Partial<Filtros> }[] = []
+  if (total === 0) {
+    const candidatos: { rotulo: string; parcial: Partial<Filtros> }[] = [
+      ...(filtros.busca.trim() ? [{ rotulo: 'Limpar a busca no texto', parcial: { busca: '' } }] : []),
+      ...(filtros.situacao !== 'todas' ? [{ rotulo: `Trocar "${ROTULO_SITUACAO[filtros.situacao]}" por Todas`, parcial: { situacao: 'todas' as Situacao } }] : []),
+      ...(selecionados ? [{ rotulo: 'Tirar os assuntos marcados', parcial: { temas: [], subtemas: [] } }] : []),
+      ...(filtros.provas.length + filtros.anos.length + filtros.dificuldades.length ? [{ rotulo: 'Tirar prova de origem, ano e dificuldade', parcial: { provas: [], anos: [], dificuldades: [] } }] : []),
+      ...(filtros.comImagem || filtros.comComentario ? [{ rotulo: 'Tirar "só com imagem/comentário"', parcial: { comImagem: false, comComentario: false } }] : []),
+      ...(origem !== 'tudo' ? [{ rotulo: 'Voltar a origem para Provas + Simulados', parcial: { soSimulados: false, semSimulados: false } }] : []),
+    ]
+    for (const c of candidatos) {
+      const n = contar(indice, { ...filtros, ...c.parcial }, contexto).total
+      if (n > 0) recuperar.push({ rotulo: `${c.rotulo} (${n.toLocaleString('pt-BR')})`, parcial: c.parcial })
+      if (recuperar.length === 2) break
+    }
+  }
+
+  // As linhas do resumo: o mesmo texto no computador e na gaveta do celular.
+  const linhasResumo = (
+    <dl className="tn-resumo__dados">
+      <div><dt>Prova</dt><dd>{nomeArea}</dd></div>
+      <div><dt>Origem</dt><dd>{rotuloOrigem}</dd></div>
+      <div><dt>Assunto</dt><dd>{selecionados ? rotuloOQue(filtros) : 'Todos'}</dd></div>
+      <div><dt>Situação</dt><dd>{ROTULO_SITUACAO[filtros.situacao]}</dd></div>
+      {total > 0 && <div><dt>Duração</dt><dd>{simulado ? DURACOES.find(([v]) => v === minutos)?.[1] ?? `${minutos} min` : `cerca de ${estimativaMinutos} min`}</dd></div>}
+      {desempenhoAnterior !== null && <div><dt>Seu acerto</dt><dd className="tn-num">{desempenhoAnterior}%</dd></div>}
+    </dl>
+  )
+  const acoesResumo = (
+    <>
+      <div className="tn-resumo__acoes">
+        {botaoSalvar('tn-resumo__acao')}
+        <button type="button" className="botao botao--fantasma tn-resumo__acao" title="Voltar ao padrão: Ortopedia, não respondidas, 20" onClick={limpar}>
+          <Icone nome="reiniciar" tamanho={16} /> Limpar tudo
+        </button>
+      </div>
+      {desfazer && (
+        <p className="tn-desfazer" role="status">Filtros de volta ao padrão. <button type="button" onClick={() => { definirFiltros(desfazer); definirDesfazer(null) }}>Desfazer</button></p>
+      )}
+    </>
+  )
 
   return (
     <div className="tn treinar-pagina">
-      {/* O topo é o mesmo acampamento da página inicial (pedido do Tales, 01/11/2026: "usa o herói nesse treinar"):
-          a sessão rápida pousa no chão como a missão do dia, e os quatro atalhos de 10 viram os espaços de inventário. */}
-      <div className="hd jn tn-topo">
-        <HeroiJornada
-          data="Montar sessão"
-          titulo="Treinar"
-          lide={fraseTreinar(primeiroNome, Object.keys(contexto.respondidas).length, desempenhoAnterior, gerais?.porSituacao.revisarHoje ?? 0)}
-          linhaFogo={3}
-          missao={<>
-            <p className="jn-missao__selo">Comece agora</p>
-            <h2 className="jn-missao__titulo">Sessão rápida</h2>
-            <p className="jn-missao__detalhe">10 questões de todo o acervo, revisões e novas intercaladas. Ou monte a sua logo abaixo.</p>
-          </>}
-          botao={<button type="button" className="jn-cristal" onClick={() => sessaoRapida()} disabled={!indice}><Icone nome="raio" tamanho={20} /> Começar 10</button>}
-          depois={<span className="tn-topo__links">
-            <a className="jn-depois" href={href('/cronograma')}>
-              <Icone nome="rota" tamanho={14} />
-              {cronograma.calculo?.hoje ? <>Hoje no cronograma: {cronograma.calculo.hoje.nome} · {cronograma.calculo.feitasHoje} de {cronograma.calculo.metaDiaria}</> : 'Prefere um plano pronto? Use o cronograma'}
-              <Icone nome="direita" tamanho={13} />
-            </a>
-            {FLASHCARDS_NO_MENU && <a className="jn-depois tn-heroi__link2" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={14} /> Estudar flashcards <Icone nome="direita" tamanho={13} /></a>}
-          </span>}
-        />
-        <nav className="jn-atalhos tn-atalhos" aria-label="Começar com 10" style={{ '--colunas': 4 } as CSSProperties}>
+      {/* Mesa de estudo leve (Tales, 01/11/2026): sem cena no topo; o parentesco com a página inicial vem da
+          paleta, da tipografia e do tom. O primeiro conteúdo útil (começar agora) aparece logo na primeira dobra. */}
+      <header className="tn-cabeca">
+        <p className="tn-cabeca__trilha"><span>Estudar</span><span aria-hidden="true">/</span><span>Montar sessão</span></p>
+        <h1>Treinar</h1>
+        <p className="tn-cabeca__frase">{fraseTreinar(primeiroNome, Object.keys(contexto.respondidas).length, desempenhoAnterior, gerais?.porSituacao.revisarHoje ?? 0)}</p>
+        <p className="tn-cabeca__links">
+          <a href={href('/cronograma')}>
+            <Icone nome="rota" tamanho={15} />
+            {cronograma.calculo?.hoje ? <>Hoje no cronograma: {cronograma.calculo.hoje.nome} · {cronograma.calculo.feitasHoje} de {cronograma.calculo.metaDiaria}</> : 'Prefere um plano pronto? Use o cronograma'}
+          </a>
+          {FLASHCARDS_NO_MENU && <a href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={15} /> Estudar flashcards</a>}
+        </p>
+      </header>
+
+      {/* Começar agora: uma ação principal e quatro atalhos, todos de 10 questões, sem passar pelos filtros. */}
+      <section className="tn-rapido" aria-labelledby="tn-rapido-titulo">
+        <div className="tn-rapido__principal">
+          <h2 className="tn-rotulo" id="tn-rapido-titulo">Começar agora</h2>
+          <button type="button" className="botao tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">
+            <Icone nome="raio" tamanho={20} />
+            <span><strong>Sessão rápida de 10</strong><small>{nomeAreaCurto}, revisões e novas intercaladas</small></span>
+          </button>
+          <p className="tn-nota" id="tn-rapido-nota">Usa só a prova escolhida abaixo; assunto, situação e os outros filtros ficam de fora.</p>
+        </div>
+        <div className="tn-rapido__atalhos" role="group" aria-labelledby="tn-atalhos-titulo">
+          <p className="tn-rapido__atalhos-titulo" id="tn-atalhos-titulo">Ou 10 de um recorte</p>
           <ul>
             {rapidas.map((r) => (
               <li key={r.titulo}>
-                <button type="button" className="jn-atalho" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}>
-                  <span className="jn-atalho__icone" aria-hidden="true"><img src={recurso(`pixel/${r.pixel}.png`)} width={40} height={40} alt="" decoding="async" /></span>
-                  <span className="jn-atalho__nome">{r.titulo}</span>
-                  <small className="jn-atalho__texto"><b className="tn-num">{r.quantidade.toLocaleString('pt-BR')}</b> {r.quantidade === 1 ? 'questão' : 'questões'} · começar 10</small>
+                <button type="button" className="tn-atalho" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}
+                  aria-label={`${r.titulo}: ${r.quantidade === 0 ? 'nenhuma questão agora' : `começar 10 de ${r.quantidade.toLocaleString('pt-BR')} ${r.dica}`}`}>
+                  <Icone nome={r.icone} tamanho={18} />
+                  <span className="tn-atalho__nome">{r.titulo}<small>{r.quantidade === 0 ? 'nenhuma agora' : r.dica}</small></span>
+                  <b className="tn-num tn-atalho__n">{r.quantidade.toLocaleString('pt-BR')}</b>
                 </button>
               </li>
             ))}
           </ul>
-        </nav>
-      </div>
+        </div>
+      </section>
 
       {salvos.length > 0 && (
         <section className="tn-salvos" aria-labelledby="tn-salvos-titulo">
-          <h2 id="tn-salvos-titulo" className="tn-rotulo"><Icone nome="filtro" tamanho={15} /> Seus filtros</h2>
+          <h2 id="tn-salvos-titulo" className="tn-rotulo"><Icone nome="filtro" tamanho={15} /> Seus filtros salvos</h2>
           <ul className="tn-salvos__lista">
             {salvos.map((salvo) => (
               <li key={salvo.id} className="tn-salvo">
@@ -519,33 +597,39 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </section>
       )}
 
-      {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. {fraseGratis('treinar')} <a href={href('/conta')}>Criar minha conta</a></p>}
+      {!conta && <p className="aviso-ia tn-visitante">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. {fraseGratis('treinar')} <a href={href('/conta')}>Criar minha conta</a></p>}
 
       <div className="tn-grade">
-        <div className="tn-montagem">
+        <div className="tn-montagem" aria-labelledby="tn-montagem-titulo" role="region">
+          <header className="tn-montagem__cabeca">
+            <h2 id="tn-montagem-titulo">Montar do seu jeito</h2>
+            <p>Quatro passos, de cima para baixo. A contagem ao lado de cada opção já considera o que você escolheu antes.</p>
+          </header>
+
           {porArea && (
             <section className="tn-bloco" id="etapa-1" aria-labelledby="tn-prova-titulo">
               <header className="tn-bloco__cabeca">
-                <span className="px-numero" aria-hidden="true">1</span>
+                <span className="tn-passo" aria-hidden="true">1</span>
                 <div>
-                  <h2 id="tn-prova-titulo">Para qual prova</h2>
-                  <p>Os OrtoQuestões Simulados da prova escolhida já entram misturados com as questões oficiais.</p>
+                  <h3 id="tn-prova-titulo">Prova</h3>
+                  <p>Define de onde saem as questões. Trocar de prova tira as provas de origem que não pertencem a ela.</p>
                 </div>
-                <img className="tn-bloco__pixel" src={recurso('pixel/simulado.png')} width={48} height={48} alt="" aria-hidden="true" loading="lazy" decoding="async" />
               </header>
               <div className="tn-provas" role="radiogroup" aria-labelledby="tn-prova-titulo">
                 {porArea.map(({ area, n }) => (
-                  <button key={area} type="button" role="radio" className={`tn-prova tn-prova--${area}`} aria-checked={!todasMarcadas && filtros.areas.length === 1 && filtros.areas[0] === area} onClick={() => escolherArea(area)}>
+                  <button key={area} type="button" role="radio" className="tn-prova" aria-checked={!todasMarcadas && filtros.areas.length === 1 && filtros.areas[0] === area} onClick={() => escolherArea(area)}>
                     <strong>{ROTULO_AREA[area]}</strong>
                     <small>{DESCRICAO_AREA[area]}</small>
                     <span className="tn-prova__n tn-num">{n.toLocaleString('pt-BR')} questões</span>
+                    <Icone nome="certo" tamanho={16} />
                   </button>
                 ))}
                 {porArea.length > 1 && (
-                  <button type="button" role="radio" className="tn-prova tn-prova--todas" aria-checked={todasMarcadas} onClick={() => escolherArea('todas')}>
+                  <button type="button" role="radio" className="tn-prova" aria-checked={todasMarcadas} onClick={() => escolherArea('todas')}>
                     <strong>Todas as provas</strong>
                     <small>Ortopedia, R4, quadril e cirurgia da mão juntos</small>
                     <span className="tn-prova__n tn-num">{porArea.reduce((s, p) => s + p.n, 0).toLocaleString('pt-BR')} questões</span>
+                    <Icone nome="certo" tamanho={16} />
                   </button>
                 )}
               </div>
@@ -554,8 +638,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   <span className="tn-origem__rotulo" id="tn-origem-titulo">De onde vêm as questões</span>
                   <div className="tn-segmentos" role="radiogroup" aria-labelledby="tn-origem-titulo">
                     {([
-                      ['tudo', 'Provas + OrtoQuestões Simulados'],
-                      ['oficiais', 'Só das provas oficiais'],
+                      ['tudo', 'Provas + Simulados'],
+                      ['oficiais', 'Só provas oficiais'],
                       ['simulados', 'Só OrtoQuestões Simulados'],
                     ] as const).map(([valor, rotulo]) => (
                       <button key={valor} type="button" role="radio" className="tn-segmento" aria-checked={origem === valor} disabled={nOrigem[valor] === 0 && origem !== valor} onClick={() => escolherOrigem(valor)}>
@@ -572,24 +656,23 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
           <section className="tn-bloco" id="etapa-assunto" aria-labelledby="tn-assunto-titulo">
             <header className="tn-bloco__cabeca">
-              <span className="px-numero" aria-hidden="true">2</span>
+              <span className="tn-passo" aria-hidden="true">{porArea ? 2 : 1}</span>
               <div>
-                <h2 id="tn-assunto-titulo">Assunto</h2>
-                <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'escolhido' : 'escolhidos'}. Toque de novo para desmarcar.` : 'Sem marcar nenhum, entram todos. Abra um tema para escolher subtemas.'}</p>
+                <h3 id="tn-assunto-titulo">Assunto</h3>
+                <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'escolhido' : 'escolhidos'}: a sessão sai só daí. Toque de novo para desmarcar.` : 'Sem marcar nenhum, entram todos os temas da prova. Abra um tema para escolher subtemas.'}</p>
               </div>
-              <img className="tn-bloco__pixel" src={recurso('pixel/atlas.png')} width={48} height={48} alt="" aria-hidden="true" loading="lazy" decoding="async" />
             </header>
-            {/* Duas buscas diferentes, com nomes diferentes: esta procura no texto das questões; a do seletor, abaixo,
-                só acha assuntos pelo nome. */}
+            {/* Duas buscas diferentes, com nomes diferentes: esta procura no texto das questões e filtra a sessão;
+                a do seletor, abaixo, só acha assuntos pelo nome para marcar. */}
             <div className="tn-busca-texto">
-              <label className="tn-busca-texto__rotulo" htmlFor="busca-acervo">Palavras no texto das questões <small>filtra a sessão</small></label>
+              <label className="tn-busca-texto__rotulo" htmlFor="busca-acervo">Buscar no texto das questões <small>filtra a sessão pelas palavras</small></label>
               <div className="tr-busca tn-busca">
                 <Icone nome="busca" tamanho={18} />
                 <input id="busca-acervo" className="entrada" type="search" name="busca" autoComplete="off" placeholder="Salter-Harris, Weber, manguito…" value={buscaDigitada} onChange={(e) => definirBuscaDigitada(e.target.value)} />
                 {buscaDigitada && <button type="button" className="tn-busca__limpar" onClick={() => definirBuscaDigitada('')} aria-label="Limpar as palavras do texto"><Icone nome="fechar" tamanho={16} /></button>}
               </div>
+              {carregandoTextos && <span className="campo__auxilio" role="status">Carregando o texto das questões…</span>}
             </div>
-            {carregandoTextos && <span className="campo__auxilio">Carregando o texto das questões…</span>}
             <SeletorArvore
               variante="lista"
               arvore={arvore}
@@ -608,14 +691,13 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
           <section className="tn-bloco" id="etapa-2" aria-labelledby="tn-quais-titulo">
             <header className="tn-bloco__cabeca">
-              <span className="px-numero" aria-hidden="true">3</span>
+              <span className="tn-passo" aria-hidden="true">{porArea ? 3 : 2}</span>
               <div>
-                <h2 id="tn-quais-titulo">Quais questões</h2>
+                <h3 id="tn-quais-titulo">Situação das questões</h3>
                 <p>{DESCRICAO_SITUACAO[filtros.situacao]}</p>
               </div>
-              <img className="tn-bloco__pixel" src={recurso('pixel/ciclo.png')} width={48} height={48} alt="" aria-hidden="true" loading="lazy" decoding="async" />
             </header>
-            <div className="tr-pilulas" id="filtro-situacao">
+            <div className="tr-pilulas" id="filtro-situacao" role="group" aria-labelledby="tn-quais-titulo">
               {situacoesVisiveis.map((situacao) => (
                 <button key={situacao} type="button" className="tr-pilula" aria-pressed={filtros.situacao === situacao}
                   disabled={situacao !== 'todas' && situacao !== filtros.situacao && (contagens?.porSituacao[situacao] ?? 0) === 0}
@@ -637,6 +719,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   </button>
                 ))}
               </div>
+              {semTurma && !conviteTurma && <p className="tn-nota">Recorte de assinante: usa como a turma inteira respondeu cada questão. Toque para saber mais.</p>}
               {!semTurma && turmaFalhou && <p className="tn-nota">Não foi possível carregar agora como a turma respondeu. Tente de novo mais tarde.</p>}
               {conviteTurma && semTurma && (
                 <ConvitePremium variante="faixa" icone="grupo" titulo="Estude pelo que a turma erra"
@@ -654,10 +737,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
           <details className="tn-bloco tn-mais" id="etapa-3" open={filtrosProvaAbertos} onToggle={(e) => definirFiltrosProvaAbertos((e.currentTarget as HTMLDetailsElement).open)}>
             <summary className="tn-bloco__cabeca tn-mais__cabeca">
-              <span className="px-numero" aria-hidden="true">4</span>
+              <span className="tn-passo" aria-hidden="true">{porArea ? 4 : 3}</span>
               <span className="tn-mais__texto">
-                <h2>Mais filtros <small className="tn-opcional">opcional</small>{opcoesAtivas > 0 && <span className="tn-mais__ativas">{opcoesAtivas} {opcoesAtivas === 1 ? 'ativo' : 'ativos'}</span>}</h2>
-                <p>{resumoProva}</p>
+                <h3>Mais filtros {avancados > 0 ? <span className="tn-mais__ativas">{avancados} {avancados === 1 ? 'ativo' : 'ativos'}</span> : <small className="tn-opcional">opcional</small>}</h3>
+                <p>{resumoMais}</p>
               </span>
               <Icone nome="baixo" tamanho={18} />
             </summary>
@@ -730,52 +813,33 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </details>
 
           {total === 0 && (
-            <Estado titulo="Nenhuma questão atende a esse recorte.">
+            <Estado
+              titulo="Nenhuma questão atende a esse recorte."
+              acoes={<>
+                {recuperar.map((r) => <button key={r.rotulo} type="button" className="botao tn-recuperar" onClick={() => atualizar(r.parcial)}>{r.rotulo}</button>)}
+                <button type="button" className="botao botao--fantasma" onClick={limpar}><Icone nome="reiniciar" tamanho={16} /> Voltar ao padrão</button>
+              </>}
+            >
               <p>
                 {filtros.busca.trim()
                   ? `Nenhuma questão contém "${filtros.busca.trim()}". A busca procura no enunciado, nas alternativas e nas etiquetas, e exige todas as palavras.`
-                  : 'Tire um filtro por vez. O botão volta a habilitar assim que houver questões.'}
+                  : recuperar.length ? 'O jeito mais curto de voltar a ter questões:' : 'Tire um filtro por vez. O botão volta a habilitar assim que houver questões.'}
               </p>
             </Estado>
           )}
         </div>
 
         <aside className="tn-resumo" id="tn-resumo" aria-labelledby="tn-resumo-titulo">
-          <div className="tn-bilhete">
-            {/* O gato da vila sentado na beira do bilhete (só desenho). */}
-            <GatoPixel estado="sentado" className="tn-bilhete__gato" />
-            <header className="tn-bilhete__cabeca">
-              <p className="tr-heroi__selo" id="tn-resumo-titulo">Sua sessão</p>
-              <p className="tn-bilhete__total"><strong className="tn-num">{total === 0 ? 0 : quantidadeSessao}</strong> {quantidadeSessao === 1 ? 'questão' : 'questões'}</p>
-              <dl className="tn-bilhete__dados">
-                <div><dt>Prova</dt><dd>{nomeArea}</dd></div>
-                <div><dt>Origem</dt><dd>{origem === 'tudo' ? 'Provas + Simulados' : origem === 'oficiais' ? 'Só provas oficiais' : 'Só Simulados'}</dd></div>
-                <div><dt>Assunto</dt><dd>{selecionados ? rotuloOQue(filtros) : 'Todos'}</dd></div>
-                <div><dt>Quais</dt><dd>{ROTULO_SITUACAO[filtros.situacao]}</dd></div>
-                {total > 0 && <div><dt>Tempo</dt><dd>cerca de {estimativaMinutos} min</dd></div>}
-                {desempenhoAnterior !== null && <div><dt>Seu acerto</dt><dd className="tn-num">{desempenhoAnterior}%</dd></div>}
-              </dl>
+          <div className="tn-resumo__cartao">
+            <header className="tn-resumo__cabeca">
+              <h2 className="tn-rotulo" id="tn-resumo-titulo">Sua sessão</h2>
+              <p className="tn-resumo__total"><strong className="tn-num">{total === 0 ? 0 : quantidadeSessao}</strong> {quantidadeSessao === 1 ? 'questão' : 'questões'} <small>de {total.toLocaleString('pt-BR')} {total === 1 ? 'disponível' : 'disponíveis'}</small></p>
             </header>
-
+            {linhasResumo}
+            {listaValem}
             {escolhas('')}
-
-            {tambemValem.length > 0 && (
-              <ul className="tn-valem" aria-label="Filtros que também valem">
-                {tambemValem.map((t) => <li key={t}>{t}</li>)}
-              </ul>
-            )}
-
-            {comecarBotao('tn-bilhete__comecar')}
-
-            <div className="tn-bilhete__acoes">
-              {botaoSalvar('tn-bilhete__acao')}
-              <button type="button" className="botao botao--fantasma tn-bilhete__acao" title="Voltar ao padrão: Ortopedia, não respondidas, 20" onClick={limpar}>
-                <Icone nome="reiniciar" tamanho={16} /> Limpar tudo
-              </button>
-            </div>
-            {desfazer && (
-              <p className="tn-desfazer" role="status">Filtros de volta ao padrão. <button type="button" onClick={() => { definirFiltros(desfazer); definirDesfazer(null) }}>Desfazer</button></p>
-            )}
+            {comecarBotao('tn-resumo__comecar')}
+            {acoesResumo}
           </div>
 
           {simuladosAcervo > 0 && (
@@ -794,57 +858,37 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       {/* Celular (pedido do Tales, 25/10/2026: "quantas questões fica muito difícil de encontrar"): a barra de baixo
           mostra a escolha atual e, num toque, abre a gaveta com quantas questões e o modo. */}
       <div className="tn-barra" role="region" aria-label="Começar a sessão">
-        <button type="button" className="tn-barra__resumo" onClick={() => definirGaveta(true)} aria-haspopup="dialog" aria-label="Ajustar quantas questões e o modo">
+        <button type="button" className="tn-barra__resumo" onClick={() => definirGaveta(true)} aria-haspopup="dialog" aria-label={`${total === 0 ? 'Nenhuma questão' : `${quantidadeSessao} questões`}, modo ${simulado ? 'Prova' : 'Estudo'}. Ajustar quantas questões e o modo`}>
           <strong>{total === 0 ? 'Nenhuma questão' : <><span className="tn-num">{quantidadeSessao}</span> {quantidadeSessao === 1 ? 'questão' : 'questões'}</>} <Icone nome="ajustes" tamanho={14} /></strong>
           <span>{simulado ? 'Prova' : 'Estudo'} · ajustar</span>
         </button>
         {comecarBotao('tn-barra__comecar')}
       </div>
       <Painel titulo="Sua sessão" aberto={gaveta} aoFechar={() => definirGaveta(false)} rodape={comecarBotao('tn-gaveta__comecar')}>
-        <div className="tn-bilhete tn-gaveta">
-          <dl className="tn-bilhete__dados tn-gaveta__dados">
-            <div><dt>Prova</dt><dd>{nomeArea}</dd></div>
-            <div><dt>Origem</dt><dd>{origem === 'tudo' ? 'Provas + Simulados' : origem === 'oficiais' ? 'Só provas oficiais' : 'Só Simulados'}</dd></div>
-            <div><dt>Assunto</dt><dd>{selecionados ? rotuloOQue(filtros) : 'Todos'}</dd></div>
-            <div><dt>Quais</dt><dd>{ROTULO_SITUACAO[filtros.situacao]}</dd></div>
-            {total > 0 && <div><dt>Tempo</dt><dd>cerca de {estimativaMinutos} min</dd></div>}
-          </dl>
-          {tambemValem.length > 0 && <ul className="tn-valem" aria-label="Filtros que também valem">{tambemValem.map((t) => <li key={t}>{t}</li>)}</ul>}
+        <div className="tn-gaveta">
+          <p className="tn-resumo__total"><strong className="tn-num">{total === 0 ? 0 : quantidadeSessao}</strong> {quantidadeSessao === 1 ? 'questão' : 'questões'} <small>de {total.toLocaleString('pt-BR')} {total === 1 ? 'disponível' : 'disponíveis'}</small></p>
           {escolhas('-gaveta')}
-          <div className="tn-bilhete__acoes">
-            {botaoSalvar('tn-bilhete__acao')}
-            <button type="button" className="botao botao--fantasma tn-bilhete__acao" onClick={limpar}><Icone nome="reiniciar" tamanho={16} /> Limpar tudo</button>
-          </div>
-          {desfazer && <p className="tn-desfazer" role="status">Filtros de volta ao padrão. <button type="button" onClick={() => { definirFiltros(desfazer); definirDesfazer(null) }}>Desfazer</button></p>}
+          {linhasResumo}
+          {listaValem}
+          {acoesResumo}
         </div>
       </Painel>
     </div>
   )
 }
 
-/** Frase do topo: o primeiro nome e o que os dados da pessoa dizem, no tom dos e-mails. */
-function fraseTreinar(nome: string, respondidas: number, acerto: number | null, revisarHoje: number): string {
-  const abertura = nome ? `${nome}, ` : ''
-  if (revisarHoje >= 10) return `${abertura}${revisarHoje.toLocaleString('pt-BR')} questões estão no ponto de revisão hoje. Comece por elas ou monte a sua sessão.`
-  if (respondidas >= 10 && acerto !== null && acerto >= 50) return `${abertura}você já respondeu ${respondidas.toLocaleString('pt-BR')} questões e acerta ${acerto}%. Bora para a próxima sessão?`
-  if (respondidas >= 10) return `${abertura}você já respondeu ${respondidas.toLocaleString('pt-BR')} questões. Cada uma deixa a próxima mais fácil.`
-  return nome ? `${nome}, escolha a prova, o assunto e quais questões. Ou comece agora com 10.` : 'Escolha a prova, o assunto e quais questões. Ou comece agora com 10.'
+/** Quantos filtros de "Mais filtros" estão fora do padrão (o número do rótulo e o gatilho para abrir a seção). */
+function contarAvancados(f: Filtros, mostrarEtiquetas: boolean): number {
+  return [f.comImagem, f.comComentario, f.incluirAnuladas, !f.embaralhar, !mostrarEtiquetas].filter(Boolean).length
+    + f.provas.length + f.anos.length + f.dificuldades.length
 }
 
-/**
- * O segredo do Treinar (01/11/2026): digitar "osso" fora de qualquer campo faz o acampamento comemorar, o esqueleto
- * pula e o gato festeja. Usa o mesmo aviso da questão de amostra acertada (a cena já sabe reagir a ele).
- */
-function usarSegredoOsso() {
-  useEffect(() => {
-    let buffer = ''
-    const tecla = (e: KeyboardEvent) => {
-      const alvo = e.target as HTMLElement | null
-      if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1 || alvo?.closest('input, textarea, select, [contenteditable="true"]')) return
-      buffer = (buffer + e.key.toLowerCase()).slice(-4)
-      if (buffer === 'osso') { buffer = ''; window.dispatchEvent(new CustomEvent(EVENTO_AMOSTRA, { detail: { acertou: true } })) }
-    }
-    window.addEventListener('keydown', tecla)
-    return () => window.removeEventListener('keydown', tecla)
-  }, [])
+/** Frase do topo: curta, com o primeiro nome e o que os dados da pessoa dizem, no tom dos e-mails. */
+function fraseTreinar(nome: string, respondidas: number, acerto: number | null, revisarHoje: number): string {
+  const abertura = nome ? `${nome}, ` : ''
+  const n = (x: number) => x.toLocaleString('pt-BR')
+  if (revisarHoje >= 10) return `${abertura}${n(revisarHoje)} questões estão no ponto de revisão hoje.`
+  if (respondidas >= 10 && acerto !== null && acerto >= 50) return `${abertura}${n(respondidas)} respondidas e ${acerto}% de acerto. Bora para a próxima?`
+  if (respondidas >= 10) return `${abertura}${n(respondidas)} questões respondidas. Cada uma deixa a próxima mais fácil.`
+  return nome ? `${nome}, comece com 10 ou monte a sessão do seu jeito.` : 'Comece com 10 ou monte a sessão do seu jeito.'
 }

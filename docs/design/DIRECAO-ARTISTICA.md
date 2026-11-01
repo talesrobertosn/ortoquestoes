@@ -211,6 +211,9 @@ O Tales **recusou**:
 - **Menu (Portal do Aventureiro):** pop-up branco, busca universal, "Continue sua jornada", fogo vivo em canvas nos
   três atalhos principais (Cronograma, Resumos, Atlas) e os visitantes.
 - **Biblioteca:** estante e lista, busca com sugestões, salão de leitura com a coruja e o gato.
+- **Treinar (01/11/2026, "mesa de estudo leve"):** sem cena no topo; cabeçalho compacto, "Começar agora", os quatro
+  passos numa superfície clara e o resumo com o único botão dourado. Nem toda página tem cena: a matriz de onde a arte
+  é protagonista, apoio ou fica de fora está em [TREINAR-MESA-LEVE.md](TREINAR-MESA-LEVE.md).
 
 ## 9. Arte enviada pelo Tales
 

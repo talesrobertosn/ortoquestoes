@@ -130,7 +130,7 @@
 .pt-atalho strong { display: flex; align-items: center; gap: 0.45rem; font: 800 1.0625rem/1.15 var(--fonte-marca); letter-spacing: -0.015em; }
 .pt-atalho small { font-size: 0.8125rem; line-height: 1.35; color: var(--pt-tinta-2); }
 .pt-atalho__icone .pt-icone { width: 48px; height: 48px; }
-.pt-novo { padding: 0.1rem 0.45rem; border-radius: 999px; background: #e7f0fb; color: #1d4f8f; font: 700 0.6875rem var(--fonte-texto); letter-spacing: 0.04em; text-transform: uppercase; }
+.pt-novo { padding: 0.1rem 0.45rem; border-radius: 999px; background: var(--pt-verde-veu); color: var(--pt-verde); font: 700 0.6875rem var(--fonte-texto); letter-spacing: 0.04em; text-transform: uppercase; }
 .pt-cadeado { position: absolute; top: 0.6rem; right: 0.6rem; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--pt-papel-2); color: var(--pt-tinta-2); }
 .pt-item .pt-cadeado { position: static; }
 
@@ -139,9 +139,13 @@
 .pt-fogo-vivo { position: absolute; z-index: 0; pointer-events: none; image-rendering: pixelated; }
 .pt-atalho--fogo > :not(.pt-fogo-vivo) { position: relative; z-index: 1; }
 .pt-atalhos { padding-top: 4.4rem; }
-.pt-atalho--tempo { border-color: #efcf8a; box-shadow: 0 0 0 1px rgba(240, 180, 60, 0.35), 0 8px 26px rgba(240, 150, 30, 0.28); }
-.pt-atalho--saber { border-color: #f3c19a; box-shadow: 0 0 0 1px rgba(245, 130, 40, 0.35), 0 8px 26px rgba(245, 110, 30, 0.28); }
-.pt-atalho--atlas { border-color: #b9cdf6; box-shadow: 0 0 0 1px rgba(70, 130, 255, 0.35), 0 8px 26px rgba(60, 120, 255, 0.28); }
+/* Em repouso, só o filete da cor de cada fogo; o brilho aparece com o mouse ou o foco (01/11/2026). */
+.pt-atalho--tempo { border-color: #efcf8a; }
+.pt-atalho--saber { border-color: #f3c19a; }
+.pt-atalho--atlas { border-color: #a9d3c8; }
+.pt-atalho--tempo:is(:hover, :focus-visible) { box-shadow: 0 0 0 1px rgba(240, 180, 60, 0.35), 0 8px 26px rgba(240, 150, 30, 0.24); }
+.pt-atalho--saber:is(:hover, :focus-visible) { box-shadow: 0 0 0 1px rgba(245, 130, 40, 0.35), 0 8px 26px rgba(245, 110, 30, 0.24); }
+.pt-atalho--atlas:is(:hover, :focus-visible) { box-shadow: 0 0 0 1px rgba(20, 101, 94, 0.35), 0 8px 26px rgba(20, 101, 94, 0.22); }
 .pt-atalho--fogo:hover, .pt-atalho--fogo:focus-visible { transform: translateY(-2px); }
 
 /* O vaga-lume mensageiro: de vez em quando corre entre os três fogos (só enfeite). */
@@ -265,12 +269,11 @@
 :root[data-tema="escuro"] .pt-atalho__icone { background: radial-gradient(circle at 50% 60%, #222b2e, var(--pt-cartao) 70%); }
 :root[data-tema="escuro"] .pt-atalho--tempo { border-color: #6b5320; }
 :root[data-tema="escuro"] .pt-atalho--saber { border-color: #6e3f1f; }
-:root[data-tema="escuro"] .pt-atalho--atlas { border-color: #2c4a7e; }
+:root[data-tema="escuro"] .pt-atalho--atlas { border-color: #24504a; }
 /* A página atual continua marcada no escuro (inclusive nos três atalhos com fogo). */
 :root[data-tema="escuro"] .pt-atalho[aria-current="page"] { border-color: var(--pt-verde); box-shadow: 0 0 0 1px var(--pt-verde), 0 6px 18px rgba(0, 0, 0, 0.28); }
 /* Os trechos achados na busca: ouro escuro com tinta clara, legível no papel escuro. */
 :root[data-tema="escuro"] .pt mark { background: rgba(240, 196, 106, 0.28); color: #fff4d6; }
-:root[data-tema="escuro"] .pt-novo { background: #1d3150; color: #a9c8ff; }
 :root[data-tema="escuro"] .pt-contador { background: #3d3216; color: #f0c46a; }
 :root[data-tema="escuro"] .pt-planos { background: linear-gradient(90deg, #221d12, #1d1910); border-color: #4a3e1f; }
 :root[data-tema="escuro"] .pt-planos__acao { background: var(--pt-ouro-claro); color: #1b1208; }
