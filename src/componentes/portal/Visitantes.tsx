@@ -7,10 +7,10 @@ import type { IdLinhaGato } from '../mascote/sprites'
 /**
  * Os visitantes do Portal (31/10/2026, pedido do Tales: "o menu parece um lugar que os personagens visitam, e não uma
  * interface permanentemente decorada"). Regras leves e testáveis:
- * - a coruja bibliotecária (a mesma da Biblioteca) pousa no alto do menu logo ao abrir (desde 01/11/2026, pedido do
- *   Tales: "faz os pets do menu aparecer antes"): em metade das aberturas, no máximo uma vez por minuto, já na
- *   primeira abertura; pisca, lê um pouco e vai embora sozinha;
- * - o gato (o mesmo da página inicial) aparece depois de 1,5 segundo sem mexer no menu, em 6 de cada 10 aberturas:
+ * - a coruja bibliotecária (a mesma da Biblioteca) pousa no alto do menu logo ao abrir, em toda abertura (desde
+ *   01/11/2026, pedidos do Tales: "faz os pets do menu aparecer antes" e "aparecer mais"); pisca, lê um pouco e vai
+ *   embora sozinha;
+ * - o gato (o mesmo da página inicial) aparece depois de 1 segundo sem mexer no menu, em toda abertura:
  *   entra andando pelo rodapé, senta, se espreguiça e dorme;
  * - os dois somem quando a pessoa começa a digitar na busca; com "menos movimento", ninguém voa nem anda;
  * - nunca os dois ao mesmo tempo de entrada: se o gato já está e a coruja pousa, ele olha para cima (o segredo raro);
@@ -46,12 +46,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
 
   // A coruja: decide na abertura.
   useEffect(() => {
-    const f = forcado()
-    const aberturas = ler<number>(CHAVE_ABERTURAS, 0) + 1
-    gravar(CHAVE_ABERTURAS, aberturas)
-    const ultima = ler<number>(CHAVE_CORUJA, 0)
-    const pode = f === 'coruja' || f === 'todos' || (Date.now() - ultima > 60_000 && Math.random() < 0.5)
-    if (!pode) return
+    gravar(CHAVE_ABERTURAS, ler<number>(CHAVE_ABERTURAS, 0) + 1)
     gravar(CHAVE_CORUJA, Date.now())
     if (semMovimento()) { definirCoruja('pousada'); definirEstadoCoruja('repouso'); return }
     depois(() => { definirCoruja('chegando'); definirEstadoCoruja('voando') }, 250)
@@ -63,11 +58,10 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     depois(() => definirCoruja((c) => (c === 'saindo' ? 'longe' : c)), 18200)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // O gato: depois de 1,5 s sem mexer no menu.
+  // O gato: depois de 1 s sem mexer no menu.
   useEffect(() => {
     const f = forcado()
-    const pode = f === 'gato' || f === 'todos' || Math.random() < 0.6
-    if (!pode || semMovimento()) return
+    if (semMovimento()) return
     let parado: number | undefined
     const armar = () => {
       window.clearTimeout(parado)
@@ -76,7 +70,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
         depois(() => definirGato((g) => (g === 'andando' ? 'sentado' : g)), 5200)
         depois(() => definirGato((g) => (g === 'sentado' ? 'espreguicando' : g)), 11000)
         depois(() => definirGato((g) => (g === 'espreguicando' ? 'dormindo' : g)), 13500)
-      }, f ? 400 : 1500)
+      }, f ? 400 : 1000)
     }
     armar()
     const mexeu = () => { if (gatoRef.current === 'longe') armar() }

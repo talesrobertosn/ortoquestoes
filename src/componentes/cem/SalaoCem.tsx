@@ -26,11 +26,11 @@ const LUGAR = ['', '1º lugar', '2º lugar', '3º lugar']
 const TITULO = ['', 'Campeão', 'Guardião de prata', 'Guardião de bronze']
 
 const pct = (v: number, total: number) => `${(v / total) * 100}%`
-// Visitas ocasionais (no máximo uma por visita à página, nunca as duas): o gato dorme no chão perto da mata e a coruja
+// Visitas (desde 01/11/2026 em toda visita à página, pedido do Tales: "aparecer mais"; uma de cada vez, nunca as duas): o gato dorme no chão perto da mata e a coruja
 // pousa no capitel do pilar da direita, olhando o campeão. Só enfeite (aria-hidden), longe de nomes e botões.
 const VISITA = { gato: { x: 432, y: 236, w: 48, h: 36 }, coruja: { x: 415, y: 18, w: 44, h: 32 } }
 type Visita = 'gato' | 'coruja' | null
-const sortearVisita = (): Visita => { const r = Math.random(); return r < 0.3 ? 'gato' : r < 0.55 ? 'coruja' : null }
+const sortearVisita = (): Visita => (Math.random() < 0.5 ? 'gato' : 'coruja')
 const POEIRA = Array.from({ length: 14 }, (_, i) => ({ x: 292 + ((i * 37) % 60), y: 30 + ((i * 53) % 130), d: 6 + (i % 5) * 1.3, a: -((i * 1.7) % 8) }))
 
 function Cavaleiro({ lugar, saudando }: { lugar: number; saudando: boolean }) {
