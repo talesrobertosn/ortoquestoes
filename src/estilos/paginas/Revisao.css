@@ -159,7 +159,6 @@
   background: var(--sobre-heroi); color: #0b3a35; border-color: transparent; text-align: left; text-decoration: none;
   box-shadow: 0 6px 0 rgba(0, 0, 0, 0.22), 0 12px 28px rgba(0, 0, 0, 0.22); transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
-:root[data-tema="escuro"] .rvx-heroi .botao.rvx-comecar { color: #0d2623; }
 .rvx-heroi .botao.rvx-comecar:hover { transform: translateY(-2px); box-shadow: 0 8px 0 rgba(0, 0, 0, 0.22), 0 16px 32px rgba(0, 0, 0, 0.26); }
 .rvx-heroi .botao.rvx-comecar:active { transform: translateY(3px); box-shadow: 0 3px 0 rgba(0, 0, 0, 0.22); }
 .rvx-comecar > span { display: grid; line-height: 1.2; }
@@ -174,6 +173,9 @@
 .rvx-anel__trilha { fill: none; stroke: rgba(255, 255, 255, 0.16); stroke-width: 9; }
 .rvx-anel__feito { fill: none; stroke: #8ee6bd; stroke-width: 9; stroke-linecap: round; transition: stroke-dasharray 0.6s ease; }
 .rvx-heroi--zerado .rvx-anel__feito { stroke: #ffd666; }
+/* No painel da página inicial: anel e chama em ouro, como a sequência de lá. */
+.painel-mundo .rvx-anel__feito { stroke: var(--mundo-ouro); }
+.painel-mundo .rvx-anel__trilha { stroke: rgba(255, 236, 200, 0.12); }
 .rvx-anel__numero { fill: var(--sobre-heroi); font: 800 26px var(--fonte-texto); font-variant-numeric: tabular-nums; }
 .rvx-anel__rotulo { fill: var(--sobre-heroi-2); font: 600 11px var(--fonte-texto); }
 .rvx-chama { display: flex; align-items: center; gap: 0.55rem; padding: 0.55rem 0.85rem; border-radius: 14px; background: var(--heroi-vidro);

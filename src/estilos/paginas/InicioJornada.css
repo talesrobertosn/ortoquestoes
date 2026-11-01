@@ -4,7 +4,7 @@
    Componentes: componentes/inicio/jornada/Jornada.tsx; página: paginas/Inicio.tsx (painel). */
 
 .hd.jn {
-  --jn-raio: 20px; --jn-tinta: #fffaf0; --jn-tinta-2: #e4d8bd; --jn-ouro: #f0c46a; --jn-chao: #0b100e; --jn-vidro: rgba(9, 13, 14, 0.74);
+  --jn-raio: var(--mundo-raio); --jn-tinta: var(--mundo-tinta); --jn-tinta-2: var(--mundo-tinta-2); --jn-ouro: var(--mundo-ouro); --jn-chao: var(--mundo-chao); --jn-vidro: var(--mundo-vidro);
   display: grid; gap: 1.5rem; padding: 0; color: var(--texto); background: none; border: 0; box-shadow: none;
 }
 .hd.jn > * { margin-inline: 0; }
@@ -44,8 +44,8 @@
 /* O botão de cristal, agora arredondado: o único azul-cristal da página é a ação principal. */
 .jn-cristal { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; min-height: 3.25rem; padding: 0.7rem 1.6rem;
   border: 0; border-radius: var(--raio-controle); color: #fff; font: inherit; font-size: var(--corpo); font-weight: 800; text-decoration: none; cursor: pointer; text-shadow: 0 1px 0 rgba(0, 40, 60, 0.6);
-  background: linear-gradient(180deg, #8de6f2 0%, #3fb6d2 42%, #1a86a8 64%, #0f5f80 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 8px 22px -8px rgba(40, 170, 220, 0.75);
+  background: var(--cristal);
+  box-shadow: var(--cristal-sombra);
   transition: transform 0.15s var(--curva), filter 0.15s, box-shadow 0.15s; }
 .jn-cristal::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.55) 48%, transparent 60%);
   transform: translateX(-120%); animation: hd-reflexo 5s ease-in-out 1.2s infinite; }
@@ -416,10 +416,19 @@
 
 /* A questão de amostra: uma prévia de estudo compacta, papel claro com cantos redondos e sombra suave. */
 .jn-vitrine__amostra { grid-column: 3; grid-row: 1; align-self: center; position: relative; }
-/* A coruja na borda de cima do cartão da amostra, só no computador (no celular ela fica na cena). */
-.jn-vitrine__coruja { position: absolute; right: 1.25rem; bottom: calc(100% - 6px); z-index: 2; display: none; pointer-events: none; }
-.jn-vitrine__coruja .coruja-pixel { --coruja-escala: 2; }
-@media (min-width: 60.0625rem) { .jn-vitrine__coruja { display: block; } }
+/* A coruja no cartão da amostra, só no computador (no celular ela fica na cena). Dentro e fora ao mesmo tempo (Tales,
+   01/11/2026): o corpo entra na frente do cartão, ao lado do selo, e a cabeça sai por cima da borda, como quem acabou de
+   pousar. O respiro em cima do cartão é dela: a moldura da cena nunca corta a cabeça, mesmo com questão longa. */
+.jn-vitrine__coruja { position: absolute; top: 0; right: 1rem; z-index: 2; display: none; pointer-events: none;
+  filter: drop-shadow(0 3px 0 rgba(27, 18, 8, 0.22)); }
+/* Escala 3, o mesmo pixel da cena (480 px pintados em 1440). */
+.jn-vitrine__coruja .coruja-pixel { --coruja-escala: 3; }
+@media (min-width: 60.0625rem) {
+  .jn-vitrine__amostra { padding-top: 3.6rem; }
+  /* O lugar dela na linha do selo: a prova desce para a linha de baixo e nunca passa por baixo da coruja. */
+  .jn-vitrine__amostra .ip-amostra__topo { padding-right: 7.25rem; }
+  .jn-vitrine__coruja { display: block; }
+}
 .jn-vitrine__amostra .ip-amostra { gap: 0.7rem; padding: 1rem 1.1rem 1.1rem; border: 0; border-radius: 16px; background: #fbf8f1; color: #1d2422;
   box-shadow: 0 0 0 1px rgba(27, 18, 8, 0.12), 0 24px 48px -20px rgba(0, 0, 0, 0.75); }
 .jn-vitrine__amostra .ip-amostra__selo { padding: 0.15rem 0.55rem; border-radius: 999px; box-shadow: none; font-family: var(--fonte-texto); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; }

@@ -6,21 +6,19 @@ import { contasDisponiveis } from '../../conta/supabase'
 import { usarNacionalAbertoATodos } from '../../dados/nacionalEmDestaque'
 import { A_PARTIR_DE } from '../../dados/planos'
 import { href } from '../../util/rotas'
-import { urlCss } from '../../config'
 import { Icone } from '../Icone'
 import { BuscaPortal } from './BuscaPortal'
 import { ContinuarJornada } from './ContinuarJornada'
 import { IconePixel } from './IconePixel'
 import { GRUPOS, PRINCIPAIS, SO_NA_BUSCA, grupoConta, type Pagina } from './rotas'
 import { Visitantes } from './Visitantes'
-import { FogoVivo } from './FogoVivo'
 import { FogueiraDoMenu } from './FogueiraDoMenu'
 import '../../estilos/componentes/Portal.css'
 
 /**
  * O Portal do Aventureiro (31/10/2026): o menu do site, num pop-up claro. De cima para baixo: a busca, a jornada (a
- * sessão para retomar e o que está pendente hoje), os seis atalhos (Cronograma, Resumos e Atlas 3D com o fogo
- * mágico de cada um) e as outras ferramentas em quatro grupos curtos. A coruja e o gato visitam de vez em quando
+ * sessão para retomar e o que está pendente hoje), os seis atalhos (sem fogo desde 01/11/2026: as chamas competiam
+ * com os destinos e transbordavam no celular) e as outras ferramentas em quatro grupos curtos. A coruja e o gato visitam de vez em quando
  * (Visitantes.tsx). Rotas, nomes e regras de acesso vêm de rotas.ts.
  */
 
@@ -30,7 +28,6 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
   const nacionalAberto = usarNacionalAbertoATodos()
   const administrador = usarAdministrador(sessao?.user.id)
   const [digitando, definirDigitando] = useState(false)
-  const [quente, definirQuente] = useState<string | null>(null)
   const conta = grupoConta({ contas: contasDisponiveis, logado: !!sessao, premium, administrador })
   const grupos = [...GRUPOS, conta]
   const bloqueado = (p: Pagina) => !!p.assinante && !premium && !(nacionalAberto && p.destino === '/simulado-nacional')
@@ -57,11 +54,8 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
       <section aria-labelledby="pt-atalhos-titulo">
         <h3 id="pt-atalhos-titulo" className="pt-rotulo">Ferramentas de estudo</h3>
         <nav className="pt-atalhos" aria-label="Ferramentas de estudo">
-          {[...PRINCIPAIS.filter((p) => p.fogo), ...PRINCIPAIS.filter((p) => !p.fogo)].map((p) => (
-            <a key={p.destino} className={`pt-atalho${p.fogo ? ` pt-atalho--fogo pt-atalho--${p.fogo}` : ''}`} href={href(p.destino)} onClick={aoFechar}
-              onPointerEnter={() => definirQuente(p.destino)} onPointerLeave={() => definirQuente(null)} onFocus={() => definirQuente(p.destino)} onBlur={() => definirQuente(null)}
-              aria-current={atual === p.destino ? 'page' : undefined}>
-              {p.fogo && <FogoVivo tipo={p.fogo} ativo={quente === p.destino} />}
+          {PRINCIPAIS.map((p) => (
+            <a key={p.destino} className="pt-atalho" href={href(p.destino)} onClick={aoFechar} aria-current={atual === p.destino ? 'page' : undefined}>
               <span className="pt-atalho__icone"><IconePixel nome={p.icone} tamanho={64} /></span>
               <span className="pt-atalho__texto">
                 <strong>{p.rotulo}{p.novo && <span className="pt-novo">{p.novo}</span>}</strong>
@@ -70,7 +64,6 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
               {bloqueado(p) && <span className="pt-cadeado" title="Recurso do assinante"><Icone nome="cadeado" tamanho={12} /><span className="so-leitor">, recurso do assinante</span></span>}
             </a>
           ))}
-          <span className="pt-vagalume" aria-hidden="true" style={{ '--pt-vagalume': urlCss('pixel/menu/vagalume.png?v=1') } as CSSProperties} />
         </nav>
       </section>
 

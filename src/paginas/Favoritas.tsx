@@ -10,6 +10,8 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { usarEtiquetas } from '../estado/preferencias'
 import { href, navegar } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
+import '../estilos/componentes/Cristal.css'
+import '../estilos/componentes/Mundo.css'
 import '../estilos/paginas/Favoritas.css'
 
 type Situacao = 'nova' | 'acertou' | 'errou'
@@ -156,13 +158,13 @@ export function Favoritas() {
   if (favoritos.length === 0) {
     return (
       <div className="fv">
-        <section className="fv-heroi" aria-labelledby="fv-titulo">
+        <section className="fv-heroi painel-mundo" aria-labelledby="fv-titulo">
           <div className="fv-heroi__texto">
             <p className="tr-heroi__selo">Favoritas</p>
             <h1 id="fv-titulo">{primeiroNome ? `${primeiroNome}, suas favoritas moram aqui` : 'Suas favoritas moram aqui'}</h1>
             <p>Você ainda não favoritou nenhuma questão. Guarde as que quer rever e treine só com elas quando quiser.</p>
           </div>
-          <a className="botao fv-heroi__acao" href={href('/treinar')}>
+          <a className="botao cristal fv-heroi__acao" href={href('/treinar')}>
             <Icone nome="raio" tamanho={20} />
             <span><strong>Montar uma sessão</strong><small>e guardar as que valem rever</small></span>
           </a>
@@ -256,13 +258,13 @@ export function Favoritas() {
 
   return (
     <div className="fv">
-      <section className="fv-heroi" aria-labelledby="fv-titulo">
+      <section className="fv-heroi painel-mundo" aria-labelledby="fv-titulo">
         <div className="fv-heroi__texto">
           <p className="tr-heroi__selo">Favoritas</p>
           <h1 id="fv-titulo">{tituloFavoritas(primeiroNome, favoritos.length)}</h1>
           <p>{fraseFavoritas(contagem, favoritos.length)}</p>
         </div>
-        <button type="button" className="botao fv-heroi__acao" onClick={() => treinar(ordenadas)}>
+        <button type="button" className="botao cristal fv-heroi__acao" onClick={() => treinar(ordenadas)}>
           <Icone nome="raio" tamanho={20} />
           <span><strong>Treinar as favoritas</strong><small>{porId.size === 1 ? 'uma sessão com a sua favorita' : 'uma sessão só com elas'}</small></span>
         </button>

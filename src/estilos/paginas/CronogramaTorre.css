@@ -1,7 +1,8 @@
 /* A Torre do Tempo no topo do cronograma de ortopedia (31/10/2026).
    O cenário pintado (CenaTorre) ocupa a moldura; o texto fica num vidro escuro com filete dourado do lado calmo da
    arte (no computador) ou embaixo da janela da arte (no celular), sem cobrir o relógio. Vale só com .cp-onde--torre,
-   que só o cronograma de ortopedia passa: o cronograma da Mão e o calendário da Revisão não mudam. */
+   que os cronogramas passam (Ortopedia com a Torre do Tempo; Mão ingresso e título com a Oficina da Mão, na mesma
+   praça e na mesma composição); o calendário da Revisão não muda. */
 
 .cr .cp-onde.cp-onde--torre {
   --ct-tinta: #0b1315; --ct-ouro: #f0c46a; --ct-borda: rgba(232, 206, 150, 0.42);
@@ -33,8 +34,14 @@
 .cr .cp-onde--torre .cp-onde__frase, .cr .cp-onde--torre .cp-resumo { background: rgba(255, 255, 255, 0.05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
 .cr .cp-onde--torre .cp-trilho { margin-top: var(--e-1); }
 
-/* ── Celular: a janela da arte em cima (a torre inteira, do telhado à porta) e o texto embaixo, na mesma moldura. */
-.cp-onde--torre .cp-onde__janela { height: clamp(12rem, 56vw, 15rem); }
+/* ── Celular: a janela da arte em cima e o texto embaixo, na mesma moldura. A janela é baixa (01/11/2026: antes
+   56vw, cerca de 218 px) para a meta e o botão do dia caberem na primeira tela; a arte entra 25% mais perto, presa
+   pelo alto, e mostra do telhado ao pé da torre (ou da oficina), sem o chão da praça. */
+.cp-onde--torre .cp-onde__janela { height: clamp(9.5rem, 40vw, 11rem); }
+@media (max-width: 35.99rem) {
+  .cp-onde--torre .cp-onde__janela .ct-cena__mundo { bottom: auto; top: 0;
+    width: max(125cqw, 100cqh * 2.4); height: max(100cqh, 125cqw / 2.4); left: calc((100cqw - max(125cqw, 100cqh * 2.4)) * var(--ct-foco)); }
+}
 .cp-onde--torre .cp-onde__vidro { margin-top: -1.6rem; padding: 0 clamp(1rem, 4vw, 1.5rem) var(--e-4); }
 @media (min-width: 36rem) and (max-width: 63.99rem) {
   .cp-onde--torre .cp-onde__janela { height: auto; aspect-ratio: 12 / 5; }
