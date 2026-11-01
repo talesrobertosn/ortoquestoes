@@ -1,25 +1,55 @@
 ---
 id: netter-anatomia-ombro-braco
-versao: 1
+versao: 2
 titulo: Anatomia do ombro e do braço
 especialidade: ombro-cotovelo
 acesso: gratis
 livro: Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)
-edicao: 2ª edição
+edicao: 2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Green's Operative Hand Surgery, 7ª edição
 capitulo: Capítulo 3 · Ombro e Capítulo 4 · Braço
 autores: Jon C. Thompson (ilustrações de Frank H. Netter)
-fonte: Livro conferido localmente em 30/10/2026 (original em inglês, 2009), capítulos 3 e 4, sobretudo as tabelas de músculos, nervos, espaços e articulações. Sem página impressa no texto extraído; as referências citam capítulo e seção.
+fonte: Livro conferido localmente em 30/10/2026 (original em inglês, 2009), capítulos 3 e 4, sobretudo as tabelas de músculos, nervos, espaços e articulações. Sem página impressa no texto extraído; as referências citam capítulo e seção. Ampliado em 01/11/2026 com o Netter relido por inteiro (caps. 3 e 4, inclusive as tabelas em imagem), o Campbell's Operative Orthopaedics, 15ª ed., caps. 1 (vias) e 62 (anatomia nas fraturas), e o Green's Operative Hand Surgery, 7ª ed., cap. 35 (eixos do membro).
 subtemas: Anatomia do ombro
-resumo: Quatro articulações e o ritmo 2:1; estabilizadores estáticos e dinâmicos; ligamentos glenoumerais (inferior, o mais importante), intervalo rotador e polia do bíceps; músculos do manguito, deltoide e redondo maior com os comentários clínicos; espaços triangular, quadrangular e intervalo triangular; plexo braquial (dorsal da escápula, torácico longo, supraescapular, peitorais, subescapulares, toracodorsal, axilar); compartimento anterior do braço e musculocutâneo.
+resumo: Ossificação e geometria (clavícula, glenoide 5 a 7 graus, úmero 35 e 130 graus, 80% do crescimento); esternoclavicular (costoclavicular, braquiocefálica), conoide e trapezoide, ROCKWOOD, NEER do terço lateral, BUFORD; artéria axilar em três partes, circunflexas, arqueada, HERTEL; distâncias do axilar, musculocutâneo e radial (12%, 91%, HASAN); vias deltopeitoral, divisão do deltoide, JUDET, úmero; portais; cortes do braço; AER, ZPA e Wnt. Quatro articulações e o ritmo 2:1; estabilizadores estáticos e dinâmicos; ligamentos glenoumerais (inferior, o mais importante), intervalo rotador e polia do bíceps; músculos do manguito, deltoide e redondo maior com os comentários clínicos; espaços triangular, quadrangular e intervalo triangular; plexo braquial (dorsal da escápula, torácico longo, supraescapular, peitorais, subescapulares, toracodorsal, axilar); compartimento anterior do braço e musculocutâneo.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
 Este resumo é inspirado nos capítulos 3 (Ombro) e 4 (Braço) do Netter's Concise Orthopaedic Anatomy (2ª edição), de Jon C. THOMPSON, com as ilustrações de Frank H. NETTER, publicado no Brasil como Netter Atlas de Anatomia Ortopédica. O livro organiza a anatomia em tabelas com uma coluna de comentários clínicos, e é por ela que este resumo segue.
 
+Nesta segunda versão, o Netter foi relido por inteiro, inclusive as tabelas que só existem como figura, e a anatomia ganhou o que as provas de título pedem além do atlas: as distâncias que protegem o axilar, o musculocutâneo e o radial, as vias de acesso e os portais, a irrigação da cabeça do úmero e os critérios de HERTEL, os ligamentos da clavícula com a classificação das fraturas do terço lateral e os eixos do desenvolvimento do membro. As fontes extras são o Campbell's Operative Orthopaedics, 15ª edição (caps. 1, 62 e 67), e o Green's Operative Hand Surgery, 7ª edição (cap. 35).
+
 A anatomia do ombro nas provas vem quase sempre como **imagem**: uma seta num músculo, num nervo ou num espaço. Por isso, mais do que listas, vale guardar **três mapas**: o dos espaços posteriores, o do plexo braquial e o dos músculos com os seus nervos.
 
 > **Na prova:** **quadrangular** = **axilar + circunflexa posterior**; axilar = **fascículo posterior**, **deltoide + redondo menor**; **musculocutâneo perfura o coracobraquial**; **glenoumeral inferior** = o mais importante; **torácico longo** = serrátil; **subescapular inferior** = **redondo maior**.
+
+# Ossos e ossificação {radar=confirmado}
+
+**A clavícula** (Netter Atlas de Anatomia Ortopédica, cap. 3). Osso em S, sem cavidade medular verdadeira, mais estreito no **terço médio**, que não tem inserções musculares e é onde ocorrem **80%** das fraturas. É a única ligação óssea do membro superior com o esqueleto axial. É o **primeiro osso a ossificar** (ossificação intramembranosa, dois centros primários na 7ª semana fetal) e o **último a se fundir**: o centro esternal aparece aos 18 a 20 anos e funde dos 19 aos 25. Na face inferior, de lateral para medial: a **linha trapezoidea** e o **tubérculo conoide**, o sulco do subclávio e a **impressão do ligamento costoclavicular**. Como a fise medial só fecha na terceira década, a "luxação" esternoclavicular do jovem pode ser uma lesão fisária.
+
+**A escápula.** Triangular e plana, com a espinha separando as fossas supra e infraespinal, duas incisuras (a **escapular**, no bordo superior, e a **espinoglenoidal**, que liga as duas fossas) e o **coracoide**, o "farol" do ombro. A **glenoide** tem forma de pera, **5 a 7 graus de retroversão** e **5 graus de inclinação superior**. Dezessete músculos nascem ou se inserem nela. O corpo ossifica na 8ª semana fetal; o coracoide com 1 ano; a glenoide, o acrômio e o ângulo inferior entre 15 e 18 anos; tudo funde entre 15 e 20. O acrômio que não funde é o **os acromiale**.
+
+**O úmero proximal.** A cabeça tem **35 graus de retroversão** e **130 graus** de ângulo entre cabeça e diáfise. O tubérculo maior recebe supraespinal, infraespinal e redondo menor; o menor, o subescapular; o sulco entre eles leva o bíceps. Na crista lateral do sulco insere-se o peitoral maior; no fundo, o grande dorsal; na crista medial, o redondo maior. A cabeça ossifica ao nascimento, o tubérculo maior com 1 a 2 anos e o menor com 3 a 4. A fise proximal responde por **80% do crescimento do úmero**, e por isso as fraturas proximais da criança remodelam tanto. O **colo anatômico** é o da osteonecrose; o **colo cirúrgico**, o das fraturas do idoso.
+
+!tabela Ossificação da cintura escapular e do úmero (Netter, caps. 3 e 4)
+| Centro | Aparece | Funde |
+| --- | --- | --- |
+| clavícula (primários) | 7ª semana fetal | 9ª semana fetal |
+| clavícula, esternal | 18 a 20 anos | 19 a 25 anos |
+| coracoide | 1 ano | 15 a 20 anos |
+| glenoide, acrômio, ângulo inferior | 15 a 18 anos | 15 a 20 anos |
+| cabeça do úmero | nascimento | 14 a 18 anos (com as tuberosidades) |
+| tubérculo maior / menor | 1 a 2 / 3 a 4 anos | idem |
+!fim
+
+**O úmero distal**, no mesmo capítulo do braço: o **sulco do nervo radial** em espiral, o **processo supracondilar** (em cerca de 5%), de onde o **ligamento de STRUTHERS** pode comprimir o mediano, e os centros do cotovelo (capítulo com 1 ano, epicôndilo medial com 5, tróclea com 7, epicôndilo lateral com 11).
+
+!questoes relacionadas=ombro-cotovelo-0442,ombro-cotovelo-0567
+conceito: Clavícula: primeira a ossificar e última a fundir, fraturada no terço médio; glenoide com 5 a 7 graus de retroversão; úmero proximal com 35 graus de retroversão, 130 graus de ângulo cabeça-diáfise e 80% do crescimento do osso.
+como: O ENARE R4 2024 cobrou a geometria do úmero proximal usada nos implantes; a SBOT-SP, a anatomia do úmero proximal.
+armadilha: Achar que a fise distal do úmero cresce mais, ou que a clavícula funde cedo.
+alerta: A altura da cabeça em relação ao tubérculo maior (8 a 10 mm, `ombro-cotovelo-0442`) não aparece no Netter nem no Campbell 15; o gabarito oficial foi mantido. A `ombro-cotovelo-0567` está sem gabarito oficial.
+!fim
 
 # A articulação e a estabilidade {radar=confirmado}
 
@@ -42,6 +72,35 @@ O **intervalo rotador** é o triângulo entre a borda anterior do supraespinal e
 conceito: O glenoumeral inferior é a rede principal: a banda anterior segura a translação anterior em abdução e rotação externa, a posterior segura a posterior em rotação interna; não há ligamentos posteriores ou superiores verdadeiros.
 como: O TARO 2015 perguntou o estabilizador primário da translação anteroposterior.
 armadilha: Escolher a cápsula ou o lábio, que ajudam, mas não são o estabilizador ligamentar primário.
+!fim
+
+# Esternoclavicular, acromioclavicular e os ligamentos da cintura {radar=confirmado}
+
+**A esternoclavicular** (Netter, cap. 3). Articulação selar, com disco, e a única fixação verdadeira do membro ao tronco; a clavícula roda até 50 graus sobre o esterno. Os **ligamentos esternoclaviculares anterior e posterior** são os estabilizadores primários; o **posterior é mais forte**, e por isso a luxação **anterior** é a mais comum. O **costoclavicular**, da face inferior da clavícula à primeira cartilagem costal, é o **ligamento mais forte** da articulação. O **interclavicular** liga as extremidades esternais das duas clavículas e, com a cápsula, é estabilizador secundário. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 92), lembra que a **veia braquiocefálica** é a estrutura mais em risco atrás da articulação: na redução de uma luxação posterior, deve haver cirurgião cardiotorácico disponível.
+
+**A acromioclavicular.** Articulação plana, com disco, de pouco movimento (cerca de 5 graus de rotação). O **ligamento acromioclavicular**, espessamento da cápsula superior, dá a estabilidade **anteroposterior** e axial e se lesa em todas as separações. Os **coracoclaviculares** dão a estabilidade **vertical**:
+
+!tabela Os ligamentos coracoclaviculares (Netter, cap. 3)
+| | Conoide | Trapezoide |
+| --- | --- | --- |
+| Inserção na clavícula | **posteromedial**, no tubérculo conoide | **anterolateral**, na linha trapezoidea |
+| Fibras | verticais, em cone | mais oblíquas, em quadrilátero |
+| Resiste a | carga **vertical** (o mais forte nisso) | carga **axial** sobre o ombro |
+!fim
+
+**A classificação de ROCKWOOD** (Netter): I, distensão da acromioclavicular; II, rotura da acromioclavicular com coracoclaviculares íntegros; III, rotura das duas, desvio superior de até 100%; IV, desvio posterior; V, superior de até 300%; VI, inferior. I e II, tipoia; III, controverso (reconstrução no atleta de alto nível e no trabalhador braçal); IV a VI, reconstrução.
+
+**O terço lateral da clavícula e os ligamentos** (Campbell 15, cap. 62, Tabela 62.5; Netter). Pela classificação de NEER: **tipo I**, coracoclaviculares íntegros presos ao fragmento medial, estável; **tipo II**, os ligamentos se separam do fragmento medial, que sobe puxado pelo trapézio. No **IIa**, conoide e trapezoide ficam no fragmento distal, e o traço é **medial ao conoide**; no **IIb**, o conoide rompe e o trapezoide fica no fragmento distal. O **tipo III** entra na acromioclavicular. Os do tipo II são os instáveis.
+
+**Outros ligamentos que caem em imagem.** O **coracoacromial**, do coracoide ao acrômio, é a peça-chave do arco que impede a subida do úmero no manguito deficiente. O **transverso superior da escápula** cruza a incisura escapular: o **nervo supraescapular passa abaixo** dele e a **artéria passa acima**. O **transverso do úmero** cruza o sulco e segura o bíceps. O **coracoumeral**, com o glenoumeral superior, resiste à translação inferior em adução e forma a polia do bíceps.
+
+**Mais detalhes da glenoumeral.** O **glenoumeral médio** resiste à translação anteroposterior em 45 graus de abdução. O **complexo de BUFORD** é um glenoumeral médio em cordão com ausência do lábio anterossuperior, uma variação que não se deve reinserir como se fosse lesão. A banda anterior do glenoumeral inferior nasce na glenoide às **3 horas**; a posterior, às **9 horas**.
+
+!questoes central=ombro-cotovelo-0262 relacionadas=ombro-cotovelo-0135,ombro-cotovelo-0255,ombro-cotovelo-0250,ombro-cotovelo-0537,ombro-cotovelo-0401
+conceito: Conoide é posteromedial (tubérculo conoide) e resiste à carga vertical; trapezoide é anterolateral (linha trapezoidea) e resiste à carga axial; costoclavicular é o mais forte da esternoclavicular, e o posterior é mais forte que o anterior; supraescapular passa sob o ligamento transverso e a artéria por cima; NEER IIa é medial ao conoide.
+como: A Ortopedia e o TEOT 2024 pediram em imagens o conoide, o trapezoide, o interclavicular e a inserção do conoide na clavícula; o ENARE R4 2025, a localização da fratura do tipo IIa; o TECOC, o complexo suspensor superior do ombro.
+armadilha: Trocar o conoide (medial, posterior) pelo trapezoide (lateral, anterior), ou pôr o nervo supraescapular acima do ligamento transverso.
+alerta: O complexo suspensor superior do ombro (`ombro-cotovelo-0401`) não está descrito no Netter nem no Campbell 15 lidos; o gabarito oficial foi mantido.
 !fim
 
 # Os músculos {radar=confirmado}
@@ -76,6 +135,34 @@ como: O TARO 2014 perguntou o músculo que divide o nervo com a cabeça curta do
 armadilha: Trocar o redondo maior pelo grande dorsal nas imagens, ou pôr a cabeça curta no tubérculo supraglenoidal.
 !fim
 
+# Os músculos da cintura escapular e o que a paralisia mostra {radar=confirmado}
+
+!tabela Músculos que movem a escápula (Netter, cap. 3)
+| Músculo | Origem | Inserção | Nervo | Sinal clínico |
+| --- | --- | --- | --- | --- |
+| trapézio | processos espinhosos de C7 a T12 | clavícula, acrômio e espinha | acessório (XI) | escápula alada **lateral** |
+| serrátil anterior | costelas 1 a 8 | borda medial da escápula, face anterior | torácico longo (C5 a C7) | escápula alada **medial** |
+| levantador da escápula | processos transversos de C1 a C4 | ângulo superior | dorsal da escápula, C3 e C4 | |
+| romboides menor e maior | C7 a T1 e T2 a T5 | borda medial | dorsal da escápula | |
+| peitoral menor | costelas 3 a 5 | coracoide | peitoral medial | divide a axilar em três partes |
+| subclávio | primeira costela | terço médio da clavícula, face inferior | nervo para o subclávio | protege os vasos subclávios |
+| grande dorsal | T7 a T12, crista ilíaca | fundo do sulco intertubercular | toracodorsal | retalho livre |
+!fim
+
+**O peitoral maior** nasce da clavícula e do esterno e se insere na **crista lateral do sulco intertubercular**; a parte **clavicular** é do **peitoral lateral**, e a **esternal**, do **peitoral medial**. Um detalhe que confunde: o peitoral **lateral** corre **medialmente** ao medial, porque os nomes vêm dos fascículos, e não da posição. Na crista medial do sulco insere-se o redondo maior; no fundo, o grande dorsal: de lateral para medial, **peitoral maior, grande dorsal e redondo maior**.
+
+**O deltoide** tem três partes: anterior e posterior com fibras longas e paralelas, e média **multipenada**, com fibras curtas em bandas tendíneas; dois intervalos quase avasculares as separam. No coracoide nascem a **cabeça curta do bíceps** e o **coracobraquial**, e se insere o **peitoral menor**.
+
+**O que a paralisia mostra** (Netter). Escápula alada **lateral** pelo trapézio (acessório); alada **medial** pelo serrátil (torácico longo). Espinha da escápula saliente, com atrofia das duas fossas, na paralisia do **supraescapular** na incisura escapular; atrofia só da fossa infraespinal na compressão na **espinoglenoidal**. Deltoide atrófico na lesão do axilar. Rotação externa passiva aumentada pode indicar rotura do subescapular.
+
+**O plexo, em números** (Netter). Cinco raízes (C5 a T1), três troncos, seis divisões e três fascículos. As raízes saem entre os escalenos anterior e médio; raízes e troncos são **supraclaviculares**; as divisões ficam atrás da clavícula (as anteriores para os flexores, as posteriores para os extensores); fascículos e ramos são **infraclaviculares** e levam o nome da posição em relação à artéria axilar. No plexo **pré-fixado** há grande contribuição de C4 e nenhuma de T1; no **pós-fixado**, nenhuma de C5 e contribuição de T2. A paralisia de ERB é C5 e C6. O exame das raízes no ombro: supraclavicular C4, axilar C5, axila T2.
+
+!questoes relacionadas=ombro-cotovelo-0315
+conceito: Trapézio (acessório) dá escápula alada lateral e serrátil (torácico longo) a medial; peitoral maior tem parte clavicular do peitoral lateral e esternal do medial; de lateral para medial no sulco: peitoral maior, grande dorsal e redondo maior; cabeça longa do bíceps no tubérculo supraglenoidal.
+como: O TARO 2025 perguntou onde o peitoral maior costuma romper.
+armadilha: Achar que o peitoral lateral fica lateral ao medial, ou trocar as escápulas aladas.
+!fim
+
 # Os espaços posteriores {radar=confirmado}
 
 !tabela Espaços da face posterior do ombro (Netter's Concise, cap. 3)
@@ -86,10 +173,40 @@ armadilha: Trocar o redondo maior pelo grande dorsal nas imagens, ou pôr a cabe
 | intervalo triangular | redondo maior, cabeças longa e lateral do tríceps | nervo radial e artéria profunda do braço |
 !fim
 
+**A síndrome do espaço quadrangular.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 3003), descreve a compressão do axilar e da circunflexa posterior no espaço: em geral **sem perda sensitiva nem de força**, e a eletromiografia pode ser normal. A arteriografia da subclávia é considerada positiva quando a **circunflexa posterior oclui com menos de 60 graus de abdução**. Na lesão fechada do axilar, os sinais de retorno podem demorar **3 a 12 meses**, mas cerca de **90%** se recuperam por completo. Para expor o nervo por trás, a incisão começa cerca de 5 cm acima da prega axilar posterior e segue a borda posterior do deltoide, que é separado do infraespinal, do redondo menor e maior e do tríceps até o nervo aparecer saindo do espaço.
+
+**Como ler os espaços numa figura.** A cabeça longa do tríceps é a coluna que separa tudo: medial a ela fica o **espaço triangular** (só a circunflexa da escápula); lateral a ela, entre os dois redondos e o úmero, o **quadrangular** (axilar e circunflexa posterior); abaixo do redondo maior, entre as cabeças longa e lateral do tríceps, o **intervalo triangular** (radial e braquial profunda).
+
 !questoes central=ombro-cotovelo-0462 relacionadas=ombro-cotovelo-0429,ombro-cotovelo-0485,ombro-cotovelo-0113,ombro-cotovelo-0061 treino=ombro-cotovelo-0696
 conceito: Quatro lados (o úmero é o quarto) = quadrangular, com o axilar e a circunflexa posterior; o triangular leva a circunflexa da escápula, e o intervalo triangular, o radial com a profunda do braço.
 como: O TARO 2013 e o TARO 2008 perguntaram o que passa pelo espaço quadrangular; o TECOC, as estruturas da síndrome do espaço quadrangular; as provas mostram os espaços em imagens.
 armadilha: Pôr o radial ou a artéria profunda do braço no espaço quadrangular.
+!fim
+
+# Artérias e veias {radar=confirmado}
+
+**A artéria axilar** (Netter, cap. 3) começa depois da primeira costela e vira braquial na borda inferior do redondo maior. O **peitoral menor** a divide em três partes, com **um, dois e três ramos**:
+
+!tabela Os ramos da artéria axilar (Netter, cap. 3)
+| Parte | Posição | Ramos |
+| --- | --- | --- |
+| 1ª | proximal ao peitoral menor | torácica superior |
+| 2ª | posterior ao peitoral menor | toracoacromial e torácica lateral |
+| 3ª | distal ao peitoral menor | subescapular, circunflexa anterior do úmero e circunflexa posterior do úmero |
+!fim
+
+A **toracoacromial** dá quatro ramos com riscos próprios: o **acromial** acompanha o ligamento coracoacromial (sangra na descompressão subacromial); o **deltóideo** corre com a **veia cefálica** (risco na via deltopeitoral); o **peitoral** acompanha o nervo peitoral lateral; e o clavicular. A **subescapular** dá a **circunflexa da escápula**, vista no **espaço triangular**, e a **toracodorsal**, que acompanha o nervo toracodorsal e serve de pedículo aos retalhos.
+
+**A cabeça do úmero.** A **circunflexa anterior do úmero** é, pelo Netter, o suprimento principal da cabeça pelo **ramo ascendente**, que continua como **artéria arqueada**; a lesão dela (fratura do colo anatômico) leva à osteonecrose. A **circunflexa posterior** passa pelo **espaço quadrangular** com o nervo axilar e irriga o deltoide. O Campbell 15 (cap. 62) mostra a irrigação com as duas circunflexas, a arqueada e os vasos do manguito, e usa os **critérios de HERTEL** para prever isquemia da cabeça: extensão metafisária presa à cabeça **menor que 8 mm** e dobradiça medial desviada **mais de 2 mm**. As fraturas desviadas em 3 e 4 partes são as que mais rompem o suprimento, e a placa colocada perto do bíceps pode lesar a circunflexa anterior; por isso ela vai no "ponto nu" lateral, atrás do sulco.
+
+**A artéria braquial** dá a **braquial profunda**, que corre com o radial no sulco espiral (e dá a colateral radial e a média), a nutrícia do úmero, as **colaterais ulnares superior** (com o nervo ulnar no meio do braço) e **inferior**, e termina na radial e na ulnar. No braço, o mediano começa **lateral** à artéria e cruza por cima dela para ficar **medial** no cotovelo.
+
+**A veia cefálica** corre no **sulco deltopeitoral**, com os ramos deltóideos da toracoacromial; na via deltopeitoral, é afastada medialmente ou ligada.
+
+!questoes central=ombro-cotovelo-0128
+conceito: Peitoral menor divide a axilar em três partes com 1, 2 e 3 ramos; a terceira dá a subescapular e as duas circunflexas; a circunflexa posterior passa com o axilar pelo espaço quadrangular; a anterior, pela arqueada, é o suprimento principal da cabeça pelo Netter.
+como: O TEOT 2023 apontou numa imagem a circunflexa posterior; a Ortopedia, as estruturas do espaço quadrangular.
+armadilha: Pôr a circunflexa da escápula no espaço quadrangular, ou a cefálica no sulco bicipital.
 !fim
 
 # O plexo braquial no ombro {radar=confirmado}
@@ -110,8 +227,120 @@ armadilha: Pôr o redondo maior no toracodorsal ou no axilar, ou o serrátil no 
 alerta: Na questão da luxação anterior (`ombro-cotovelo-0002`), o Netter confirma a lesão do nervo axilar nas luxações glenoumerais, mas o capítulo lido não diz qual artéria é a mais acometida; o gabarito oficial foi preservado.
 !fim
 
+# Os nervos no braço e as distâncias que protegem {radar=confirmado}
+
+**O axilar e o deltoide** (Campbell 15, cap. 1; Netter, cap. 3). O axilar passa logo abaixo da cápsula, sai pelo espaço quadrangular e cruza a face profunda do deltoide de trás para a frente, cerca de **5 cm abaixo do acrômio**. No acesso anterolateral estendido, ele fica cerca de **3,5 cm abaixo da proeminência do tubérculo maior**. O ramo **anterior** inerva o deltoide anterior e médio; o **posterior**, o deltoide posterior e o redondo menor, e dá o **cutâneo lateral superior do braço** (sensibilidade da face lateral do ombro, onde se testa o nervo). As regras: na divisão limitada do deltoide, **não passar de 3,8 cm** abaixo da origem; separar os terços anterior e médio **mais de 4 a 5 cm** ameaça o tronco do nervo (ABBOTT e LUCAS); na haste anterógrada, **não dividir o deltoide mais de 5 cm** abaixo do acrômio; e a divisão entre os terços **posterior e médio** não lesa o nervo, porque ele já se dividiu ali.
+
+**O musculocutâneo** (Netter, cap. 4) sai do fascículo lateral, perfura o **coracobraquial 6 a 8 cm abaixo do coracoide** (o risco da retração forte do tendão conjunto na via deltopeitoral), corre entre o **bíceps e o braquial** e inerva os três. Não tem território sensitivo no braço; o ramo terminal emerge entre o bíceps e o braquial, no cotovelo, como **cutâneo lateral do antebraço**, que dá a sensibilidade da **face lateral do antebraço**.
+
+**O radial no braço.** Começa medial ao úmero, vai para trás com a braquial profunda pelo **sulco espiral** e perfura o **septo intermuscular lateral** na junção dos terços **médio e distal**, onde fica fixo. O Campbell 15 (cap. 62) dá os números: é o nervo mais lesado nas fraturas da diáfise, em cerca de **12%**; na fratura espiral do terço distal (HOLSTEIN-LEWIS), o fragmento distal sobe e o nervo, preso ao proximal pelo septo, fica entre os fragmentos. A **recuperação espontânea** acontece em **91%**, em mediana de 7 a 9 semanas; os primeiros sinais (braquiorradial e extensor radial longo) aparecem em 3 a 4 meses, e a exploração tardia é feita entre 4 e 5 meses. HASAN descreveu a **zona de vulnerabilidade** na linha média posterior: o início do tendão do tríceps fica cerca de **2,3 cm abaixo** do nervo, e cerca de **2,1 cm** de nervo correm colados à cortical lateral antes do septo. Os parafusos distais da haste anterógrada vão de anterior para posterior para evitá-lo.
+
+**O mediano e o ulnar no braço** não dão ramos. O **mediano** corre medial ao bíceps e ao braquial e entra no antebraço sob a **aponeurose bicipital** (lacertus fibrosus), com a artéria. O **ulnar** passa do compartimento anterior ao posterior pelo septo intermuscular medial, sob a **arcada de STRUTHERS** (fáscia espessa a cerca de **8 cm** do epicôndilo medial, presente em 70%), e entra no túnel cubital, cujo teto é o ligamento arqueado de OSBORNE.
+
+!tabela Distâncias que protegem os nervos do ombro e do braço (Campbell 15, caps. 1 e 62; Netter)
+| Nervo | Medida |
+| --- | --- |
+| axilar | cerca de 5 cm abaixo do acrômio; 3,5 cm abaixo do tubérculo maior; divisão limitada até 3,8 cm |
+| supraescapular | 1,8 cm da borda posterossuperior da glenoide |
+| musculocutâneo | entra no coracobraquial 6 a 8 cm abaixo do coracoide |
+| radial | perfura o septo lateral na junção dos terços médio e distal; 2,3 cm acima do tendão do tríceps |
+| ulnar | arcada de STRUTHERS a cerca de 8 cm do epicôndilo medial |
+| supraclaviculares | ramo medial a 2,7 cm da esternoclavicular; lateral a 1,9 cm da acromioclavicular |
+!fim
+
+!questoes central=ombro-cotovelo-0542 relacionadas=ombro-cotovelo-0072,ombro-cotovelo-0456,ombro-cotovelo-0323
+conceito: O axilar cruza o deltoide cerca de 5 cm abaixo do acrômio e 3,5 cm abaixo do tubérculo maior; o musculocutâneo perfura o coracobraquial e termina como cutâneo lateral do antebraço; o radial perfura o septo lateral na junção do terço médio com o distal, é lesado em 12% das fraturas da diáfise e se recupera sozinho em 91%.
+como: O ENARE R4 2025 perguntou o trajeto do axilar nas vias do úmero proximal; o TARO 2022, o dermátomo do ramo sensitivo do musculocutâneo; o TARO 2024, o mediano numa imagem; o TARO 2025, o lacertus fibrosus.
+armadilha: Dividir o deltoide além de 5 cm, ou achar que o musculocutâneo dá sensibilidade ao braço.
+!fim
+
+# Vias de acesso e portais {radar=confirmado}
+
+**Deltopeitoral.** Intervalo entre o **deltoide** (axilar) e o **peitoral maior** (peitorais), com a **veia cefálica** no sulco. Riscos: **musculocutâneo** (retração vigorosa do tendão conjunto), cefálica e axilar. O subescapular é aberto e depois reparado; os três vasos circunflexos anteriores na sua borda inferior podem precisar de ligadura; adução com rotação externa protege o axilar (Netter, cap. 3). O Campbell 15 (cap. 1) divide o subescapular na junção musculotendínea, cerca de **2,5 cm** medial ao tubérculo menor, e, para exposição maior, faz a **osteotomia da ponta do coracoide**, rebatendo o tendão conjunto e o peitoral menor.
+
+**Lateral, com divisão do deltoide.** Incisão a partir da ponta anterolateral do acrômio; a rafe avascular de 4 a 5 cm entre os terços anterior e médio é aberta **até no máximo 3,8 cm** (divisão limitada). O acesso **anterolateral extensível** (lateral direto) identifica o axilar e a circunflexa posterior e os protege com um laço, para colocar placas e próteses. O **transacromial** desinsere o deltoide e osteotomiza o acrômio.
+
+**Posteriores.** O **JUDET modificado** usa o intervalo entre o **infraespinal** (supraescapular) e o **redondo menor** (axilar) e é o acesso de escolha para as fraturas da glenoide; não se afasta o deltoide abaixo do redondo menor (o axilar sai do espaço quadrangular) nem se entra no infraespinal. A via simplificada de KING aproveita a abdução de 90 graus, que sobe a borda do deltoide posterior até a articulação.
+
+**No úmero** (Campbell 15, caps. 1 e 62). Quase toda via ao úmero pode lesar o radial. A **anterolateral** (THOMPSON e HENRY) prolonga a deltopeitoral até a fossa coronóidea e, abaixo do deltoide, **divide o braquial** no terço lateral: a metade lateral do músculo (inervada pelo radial) protege o nervo. A **posterior** (HENRY) divide o tríceps e expõe os dois terços médios; a **paratricipital** (GERWIN) separa o tríceps do septo lateral, segue o cutâneo lateral inferior do braço até o radial e rebate o tríceps sem dividi-lo. A via posterior proximal de BERGER e BUCKWALTER usa o intervalo entre a **cabeça lateral do tríceps** (radial) e o **deltoide** (axilar). Escolha na fratura da diáfise: proximal e média pela anterolateral; média com extensão distal pela posterior.
+
+**Os portais artroscópicos** (Netter, cap. 3):
+
+!tabela Portais do ombro (Netter, cap. 3)
+| Portal | Onde | Risco |
+| --- | --- | --- |
+| posterior | 2 cm abaixo e 1 cm medial ao canto posterolateral do acrômio | cápsula e lábio posteriores |
+| anterior superior | entre a acromioclavicular e o coracoide | ligamento e artéria coracoacromiais |
+| anterior inferior | no intervalo rotador, acima do subescapular | musculocutâneo |
+| lateral | 2 cm abaixo da borda do acrômio | axilar (a 5 cm) |
+| WILMINGTON | 1 cm anterior e 1 cm distal ao canto posterolateral | seguro |
+| NEVIASER | posterior à acromioclavicular, no sulco supraespinal | manguito; vê a glenoide anterior |
+!fim
+
+!questoes central=ombro-cotovelo-0131 relacionadas=ombro-cotovelo-0133,ombro-cotovelo-0554
+conceito: Deltopeitoral entre deltoide e peitoral maior, com a cefálica e o musculocutâneo em risco; divisão do deltoide até 3,8 a 5 cm; JUDET entre infraespinal e redondo menor; no úmero, dividir o braquial protege o radial pela metade lateral, e as vias posteriores giram em torno das cabeças do tríceps e do radial.
+como: A Ortopedia mostrou a via posterior do braço e o peitoral maior numa imagem; o CET-PR perguntou para que foi descrito o portal de NEVIASER.
+armadilha: Afastar o deltoide abaixo do redondo menor no JUDET, ou retrair com força o tendão conjunto.
+alerta: O Netter descreve a posição e os riscos do portal de NEVIASER, mas não para que ele foi descrito (`ombro-cotovelo-0554`); o gabarito oficial foi mantido. Na tradução do Netter, a cabeça lateral do tríceps aparece nas figuras como "cabeça curta", o termo usado em `ombro-cotovelo-0131`.
+!fim
+
+# Cortes do braço, radiologia e embriologia {radar=oportunidade}
+
+**Os cortes transversais do braço** (Netter, cap. 4) organizam tudo em dois compartimentos separados pelos septos intermusculares. **Anterior**: bíceps, coracobraquial e braquial, com o **musculocutâneo** entre o bíceps e o braquial, e o feixe medial com **mediano, artéria braquial**, cutâneos mediais e, no terço médio, o **ulnar** com a colateral ulnar superior. **Posterior**: o tríceps, com o **radial** e a colateral radial junto à face posterolateral do úmero. No terço proximal, o **deltoide** envolve por fora, e a **veia cefálica** corre no subcutâneo anterolateral, no sulco entre deltoide e **peitoral maior**; no distal, o radial aparece entre o braquiorradial e o braquial, e a **basílica**, medial.
+
+**As incidências** (Netter, cap. 3). **ZANCA**: AP da acromioclavicular com 10 graus cefálicos. **Serendipity**: 40 graus cefálicos sobre o manúbrio, para a esternoclavicular. **AP verdadeiro** (GRASHEY): espaço glenoumeral. **Perfil da escápula** (outlet, Y) com 10 graus caudais: forma do acrômio. **STRYKER** (mão na cabeça, 10 graus cefálicos): HILL-SACHS. **West Point** (decúbito ventral, feixe na axila): BANKART ósseo. Na fratura do úmero proximal, o Campbell 15 pede AP no plano da escápula, perfil em Y e axilar em todos.
+
+**Os três eixos do membro** (Green's Operative Hand Surgery, 7ª ed., cap. 35, pp. 1208 a 1212). O broto aparece aos 26 dias, e três centros de sinalização, interdependentes, constroem o membro:
+
+!tabela Eixos de desenvolvimento do membro (Green 7, cap. 35)
+| Eixo | Centro | Molécula | Erro típico |
+| --- | --- | --- | --- |
+| proximodistal | crista ectodérmica apical (AER) | FGF | retirada: truncamento (deficiência transversa) |
+| anteroposterior (radioulnar) | zona de atividade polarizante (ZPA), na margem posterior | sonic hedgehog | ZPA anterior: duplicação em espelho (mão em espelho), polegar trifalângico |
+| dorsoventral | ectoderma dorsal | Wnt, que induz Lmx-1 (bloqueado no ventral pelo Engrailed-1) | perda de Lmx-1: síndrome unha-patela; sem Wnt, membro biventral |
+!fim
+
+O **BMP** comanda a apoptose entre os dedos; quando ela falha, surge a sindactilia, e na síndrome de APERT o FGF alterado bloqueia essa apoptose.
+
+!questoes relacionadas=ombro-cotovelo-0561,ombro-cotovelo-0303,conceitos-basicos-0123,ombro-cotovelo-0213
+conceito: No corte do braço proximal, a cefálica fica no sulco entre deltoide e peitoral maior; o musculocutâneo corre entre bíceps e braquial e o radial atrás, junto ao úmero; AER faz o eixo proximodistal, ZPA (sonic hedgehog) o anteroposterior e o Wnt dorsal o dorsoventral.
+como: O TEOT 2025 pediu estruturas num corte transversal do braço; o TARO 2024, o eixo controlado pela ZPA; a Ortopedia, o ponto do bloqueio infraclavicular; o TECOC, a camada do cabo rotador.
+armadilha: Trocar a ZPA (anteroposterior) pela AER (proximodistal), ou confundir a cefálica com a basílica no corte.
+alerta: O bloqueio infraclavicular (`conceitos-basicos-0123`) não aparece nos capítulos do Netter lidos, que citam só o interescalênico. A camada do cabo rotador (`ombro-cotovelo-0213`) está no resumo do manguito: CLARK e HARRYMAN põem na camada 4 as bandas que se fundem ao coracoumeral. Os gabaritos oficiais foram mantidos.
+!fim
+
+# A anatomia nas fraturas e luxações {radar=oportunidade}
+
+**Clavícula** (Netter, cap. 3). **80%** no terço médio (grupo 1), 15% no distal (grupo 2) e 5% no proximal (grupo 3). No terço lateral, o que decide é a relação com os coracoclaviculares, vista na seção da acromioclavicular.
+
+**Escápula** (Campbell 15, cap. 62). São 3% a 5% das fraturas do ombro, quase sempre de alta energia, com lesões associadas em mais de 85% a 90%. O **ângulo glenopolar** normal vai de **30 a 45 graus**. As indicações relativas de cirurgia incluem degrau articular de 4 a 5 mm, 20% ou mais da glenoide, ângulo glenopolar de 20 graus ou menos, desvio lateral da borda de 15 a 20 mm e angulação de 40 a 45 graus. O "ombro flutuante" (clavícula com colo da escápula) pode ir bem sem cirurgia quando pouco desviado.
+
+**Úmero proximal** (Netter; Campbell 15, cap. 62). NEER divide o úmero em **quatro partes** (cabeça, tubérculo maior, tubérculo menor e diáfise); uma parte conta quando desvia **mais de 1 cm** ou angula **45 graus**. Os músculos inseridos determinam o desvio: o tubérculo maior vai para cima e para trás com o manguito posterior; o menor, para a frente com o subescapular; a diáfise, para dentro com o peitoral maior. Complicações: osteonecrose (colo anatômico, 4 partes), lesão do axilar e do plexo. As incidências: AP no plano da escápula, perfil em Y e axilar; tomografia para o desvio e a superfície articular.
+
+**Diáfise do úmero** (Netter, cap. 4; Campbell 15, cap. 62). Peitoral e deltoide são forças deformantes: acima da inserção do peitoral, o proximal abduz e roda; entre o peitoral e o deltoide, o proximal aduz; abaixo do deltoide, ele abduz. Aceita-se no tratamento não operatório **menos de 3 cm** de encurtamento, **menos de 20 graus** de angulação anterior e **menos de 30 graus** de varo ou valgo (ou de rotação, no Campbell). A haste anterógrada em rotação neutra deixa a cabeça com cerca de 30 graus de retroversão.
+
+**Luxação glenoumeral** (Netter). Mais de **90% anteriores**. Reduções: **STIMSON** (decúbito ventral com 4,5 a 7 kg no punho por 20 a 25 minutos), **MILCH** e a hipocrática. O axilar, logo abaixo da cápsula, é o nervo mais lesado.
+
+!questoes relacionadas=ombro-cotovelo-0365
+conceito: Clavícula fratura no terço médio em 80%; escápula tem ângulo glenopolar normal de 30 a 45 graus; NEER conta parte com 1 cm ou 45 graus; na diáfise do úmero, aceita-se menos de 3 cm, 20 graus e 30 graus; luxação anterior em mais de 90%, com o axilar em risco.
+como: A Ortopedia pediu numa imagem do úmero a inserção do braquial.
+armadilha: Contar como parte um fragmento desviado só 5 mm, ou esquecer o axilar na luxação anterior.
+!fim
+
+# Infiltrações, bloqueio e a escápula da criança {radar=oportunidade}
+
+**As infiltrações** (Netter, cap. 3, Pequenos procedimentos). Na **acromioclavicular**, agulha 25 no sulco, vertical ou levemente de lateral para medial; a articulação aceita **menos de 2 mL**, e uma bolha subcutânea indica que a ponta está sobre a cápsula, fora dela. No **espaço subacromial**, a agulha entra sob o acrômio, por lateral ou por trás, com leve inclinação cefálica, e recebe cerca de 5 mL. Na **glenoumeral** por trás, o ponto mole fica **2 cm abaixo e 1 cm medial ao canto posterolateral do acrômio**, com a agulha dirigida ao coracoide: se tocar osso medial, é a glenoide (corrigir para lateral); se tocar osso lateral, é o úmero (corrigir para medial). É o mesmo ponto do portal artroscópico posterior.
+
+**O bloqueio.** O Netter cita o bloqueio **interescalênico**, entre os escalenos anterior e médio, por onde passam as raízes do plexo com a artéria subclávia, como o bloqueio usado para a cirurgia do membro superior; o Campbell 15 o associa à anestesia geral no reparo da fratura distal da clavícula. Os outros bloqueios (supraclavicular, infraclavicular e axilar) não são descritos nos capítulos lidos.
+
+**A escápula da criança.** A **deformidade de SPRENGEL** é a escápula pequena e alta, às vezes presa à coluna por um **osso omovertebral**; associa-se a KLIPPEL-FEIL, escoliose e doença renal. Na cirurgia que abaixa a escápula, faz-se a osteotomia da clavícula para proteger o plexo. Na criança, a clavícula ainda sem fusão permite fraturas por avulsão da bainha periosteal no terço distal, e a fise proximal do úmero, que dá 80% do crescimento do osso, explica a grande capacidade de remodelação das fraturas proximais.
+
+**A capsulite e o bíceps.** Na artrografia da capsulite adesiva, perdem-se a prega axilar e a bainha do bíceps; o intervalo rotador está contraído. A rotura proximal do bíceps, no idoso, dá o braço de Popeye com pouca fraqueza da supinação.
+
 # Fechamento {radar=fundamento}
 
 Quase toda imagem de anatomia do ombro se resolve com três perguntas: **de que lado da escápula** está a estrutura (anterior, com o subescapular e o tendão conjunto, ou posterior, com os espaços); **que nervo a inerva** (e de que fascículo ele vem); e **o que o livro comenta** sobre ela, porque é o comentário clínico que a banca transforma em alternativa.
 
 > **Na prova:** **anterior** = subescapular, tendão conjunto, musculocutâneo; **posterior** = espaços (axilar no quadrangular, radial no intervalo); **fascículo posterior** = axilar, radial, toracodorsal e subescapulares.
+
+> **Na prova, o que a versão 2 acrescenta:** **conoide** posteromedial, **trapezoide** anterolateral; **costoclavicular** o mais forte; supraescapular **sob** o ligamento transverso; axilar a **5 cm** do acrômio, divisão limitada até **3,8 cm**; musculocutâneo entra no coracobraquial a **6 a 8 cm** e vira **cutâneo lateral do antebraço**; radial lesado em **12%** das fraturas da diáfise, recupera em **91%**; circunflexa anterior e **arqueada** irrigam a cabeça; HERTEL **8 mm e 2 mm**; ZPA = eixo **anteroposterior**.

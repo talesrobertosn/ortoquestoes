@@ -2682,15 +2682,15 @@
   },
   {
    "id": "netter-anatomia-ombro-braco",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia do ombro e do braço",
    "especialidade": "ombro-cotovelo",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
-   "edicao": "2ª edição",
+   "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Green's Operative Hand Surgery, 7ª edição",
    "capitulo": "Capítulo 3 · Ombro e Capítulo 4 · Braço",
-   "resumo": "Quatro articulações e o ritmo 2:1; estabilizadores estáticos e dinâmicos; ligamentos glenoumerais (inferior, o mais importante), intervalo rotador e polia do bíceps; músculos do manguito, deltoide e redondo maior com os comentários clínicos; espaços triangular, quadrangular e intervalo triangular; plexo braquial (dorsal da escápula, torácico longo, supraescapular, peitorais, subescapulares, toracodorsal, axilar); compartimento anterior do braço e musculocutâneo.",
+   "resumo": "Ossificação e geometria (clavícula, glenoide 5 a 7 graus, úmero 35 e 130 graus, 80% do crescimento); esternoclavicular (costoclavicular, braquiocefálica), conoide e trapezoide, ROCKWOOD, NEER do terço lateral, BUFORD; artéria axilar em três partes, circunflexas, arqueada, HERTEL; distâncias do axilar, musculocutâneo e radial (12%, 91%, HASAN); vias deltopeitoral, divisão do deltoide, JUDET, úmero; portais; cortes do braço; AER, ZPA e Wnt. Quatro articulações e o ritmo 2:1; estabilizadores estáticos e dinâmicos; ligamentos glenoumerais (inferior, o mais importante), intervalo rotador e polia do bíceps; músculos do manguito, deltoide e redondo maior com os comentários clínicos; espaços triangular, quadrangular e intervalo triangular; plexo braquial (dorsal da escápula, torácico longo, supraescapular, peitorais, subescapulares, toracodorsal, axilar); compartimento anterior do braço e musculocutâneo.",
    "acesso": "gratis",
-   "minutos": 5,
+   "minutos": 26,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2698,8 +2698,18 @@
      "radar": "fundamento"
     },
     {
+     "id": "ossos-e-ossificacao",
+     "titulo": "Ossos e ossificação",
+     "radar": "confirmado"
+    },
+    {
      "id": "a-articulacao-e-a-estabilidade",
      "titulo": "A articulação e a estabilidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "esternoclavicular-acromioclavicular-e-os-ligamen",
+     "titulo": "Esternoclavicular, acromioclavicular e os ligamentos da cintura",
      "radar": "confirmado"
     },
     {
@@ -2708,8 +2718,18 @@
      "radar": "confirmado"
     },
     {
+     "id": "os-musculos-da-cintura-escapular-e-o-que-a-paral",
+     "titulo": "Os músculos da cintura escapular e o que a paralisia mostra",
+     "radar": "confirmado"
+    },
+    {
      "id": "os-espacos-posteriores",
      "titulo": "Os espaços posteriores",
+     "radar": "confirmado"
+    },
+    {
+     "id": "arterias-e-veias",
+     "titulo": "Artérias e veias",
      "radar": "confirmado"
     },
     {
@@ -2718,13 +2738,46 @@
      "radar": "confirmado"
     },
     {
+     "id": "os-nervos-no-braco-e-as-distancias-que-protegem",
+     "titulo": "Os nervos no braço e as distâncias que protegem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "vias-de-acesso-e-portais",
+     "titulo": "Vias de acesso e portais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cortes-do-braco-radiologia-e-embriologia",
+     "titulo": "Cortes do braço, radiologia e embriologia",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-anatomia-nas-fraturas-e-luxacoes",
+     "titulo": "A anatomia nas fraturas e luxações",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "infiltracoes-bloqueio-e-a-escapula-da-crianca",
+     "titulo": "Infiltrações, bloqueio e a escápula da criança",
+     "radar": "oportunidade"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
     }
    ],
    "questoes": [
+    "ombro-cotovelo-0442",
+    "ombro-cotovelo-0567",
     "ombro-cotovelo-0044",
+    "ombro-cotovelo-0262",
+    "ombro-cotovelo-0135",
+    "ombro-cotovelo-0255",
+    "ombro-cotovelo-0250",
+    "ombro-cotovelo-0537",
+    "ombro-cotovelo-0401",
     "ombro-cotovelo-0047",
     "ombro-cotovelo-0559",
     "ombro-cotovelo-0124",
@@ -2734,11 +2787,13 @@
     "ombro-cotovelo-0318",
     "ombro-cotovelo-0379",
     "ombro-cotovelo-0455",
+    "ombro-cotovelo-0315",
     "ombro-cotovelo-0462",
     "ombro-cotovelo-0429",
     "ombro-cotovelo-0485",
     "ombro-cotovelo-0113",
     "ombro-cotovelo-0061",
+    "ombro-cotovelo-0128",
     "ombro-cotovelo-0085",
     "ombro-cotovelo-0002",
     "ombro-cotovelo-0068",
@@ -2748,7 +2803,19 @@
     "ombro-cotovelo-0564",
     "ombro-cotovelo-0437",
     "ombro-cotovelo-0359",
-    "ombro-cotovelo-0388"
+    "ombro-cotovelo-0388",
+    "ombro-cotovelo-0542",
+    "ombro-cotovelo-0072",
+    "ombro-cotovelo-0456",
+    "ombro-cotovelo-0323",
+    "ombro-cotovelo-0131",
+    "ombro-cotovelo-0133",
+    "ombro-cotovelo-0554",
+    "ombro-cotovelo-0561",
+    "ombro-cotovelo-0303",
+    "conceitos-basicos-0123",
+    "ombro-cotovelo-0213",
+    "ombro-cotovelo-0365"
    ],
    "treino": [
     "ombro-cotovelo-0699",
