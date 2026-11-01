@@ -92,6 +92,21 @@ const rpcs = {
   ],
   funil_admin: () => [{ cadastrados: 14, confirmaram: 12, responderam: 11, passaram_50: 8, passaram_500: 3, assinaram: 5 }],
   retencao_admin: () => [],
+  estatisticas_questoes_admin: () => [
+    { id_questao: 'mao-0853', pessoas: 40, acertos_primeira: 9, erros_primeira: 31, acertos_atual: 30 },
+    { id_questao: 'mao-2164', pessoas: 22, acertos_primeira: 5, erros_primeira: 17, acertos_atual: 15 },
+    { id_questao: 'mao-0001', pessoas: 30, acertos_primeira: 29, erros_primeira: 1, acertos_atual: 30 },
+  ],
+  listar_relatos_admin: () => [
+    { id: 1, id_questao: 'mao-0853', tipo: 'gabarito', texto: 'O gabarito diz C, mas o Green (8ª ed.) traz a D como resposta para esta classificação.', status: 'aberto', nota_admin: null, criado_em: iso(agora - 3 * HORA), resolvido_em: null, usuario: 'carla@exemplo.com' },
+    { id: 2, id_questao: 'mao-2164', tipo: 'imagem', texto: 'A radiografia não carrega no celular.', status: 'aberto', nota_admin: null, criado_em: iso(agora - DIA), resolvido_em: null, usuario: 'bruno@exemplo.com' },
+    { id: 3, id_questao: 'mao-0001', tipo: 'enunciado', texto: 'Erro de digitação no enunciado.', status: 'resolvido', nota_admin: 'Corrigido.', criado_em: iso(agora - 5 * DIA), resolvido_em: iso(agora - 4 * DIA), usuario: 'ana@exemplo.com', avisado_em: iso(agora - 4 * DIA) },
+  ],
+  listar_avaliacoes_comentario_admin: () => [
+    { id_questao: 'mao-0853', util: false, motivo: 'confuso', observacao: 'Não entendi por que a alternativa B está errada; o comentário pula essa parte.', atualizado_em: iso(agora - 2 * HORA), usuario: 'diego@exemplo.com' },
+    { id_questao: 'mao-2164', util: true, motivo: null, observacao: null, atualizado_em: iso(agora - 5 * HORA), usuario: 'elisa@exemplo.com' },
+    { id_questao: 'mao-0001', util: true, motivo: null, observacao: null, atualizado_em: iso(agora - 9 * HORA), usuario: 'fabio@exemplo.com' },
+  ],
   resumo_lembretes_admin: () => [],
   resumo_quinzenal_admin: () => [{ pendentes: 0, enviados: 0, falharam: 0 }],
   obter_config_emails_admin: () => [{ marcos_automaticos: true, alertas_admin: true }],

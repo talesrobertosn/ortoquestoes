@@ -58,7 +58,7 @@ export function Gaveta({ aberta, aoFechar, titulo, subtitulo, topo, children, la
 
 /* ───────────── Confirmação (promessa) ───────────── */
 
-interface PedidoConfirmar { titulo: string; texto?: ReactNode; sim: string; nao?: string; perigo?: boolean; resolver: (ok: boolean) => void }
+interface PedidoConfirmar { titulo: string; texto?: ReactNode; sim: string; nao?: string; perigo?: boolean; campo?: { rotulo: string; valorInicial?: string }; resolver: (ok: boolean, valor?: string) => void }
 let pedido: PedidoConfirmar | null = null
 const ouvintes = new Set<() => void>()
 const avisar = () => ouvintes.forEach(o => o())
@@ -71,9 +71,17 @@ export function confirmar(p: Omit<PedidoConfirmar, 'resolver'>): Promise<boolean
   return new Promise(resolver => { pedido?.resolver(false); pedido = { ...p, resolver }; avisar() })
 }
 
+/** Como `confirmar`, com um campo de texto (anotação opcional). Resolve o texto (pode ser vazio) ou null se cancelar. */
+export function pedirTexto(p: Omit<PedidoConfirmar, 'resolver' | 'campo'> & { rotulo: string; valorInicial?: string }): Promise<string | null> {
+  const { rotulo, valorInicial, ...resto } = p
+  return new Promise(resolver => { pedido?.resolver(false); pedido = { ...resto, campo: { rotulo, valorInicial }, resolver: (ok, valor) => resolver(ok ? (valor ?? '') : null) }; avisar() })
+}
+
 export function HospedeConfirmar() {
   const atual = useSyncExternalStore(cb => { ouvintes.add(cb); return () => { ouvintes.delete(cb) } }, () => pedido)
-  const fechar = (ok: boolean) => { atual?.resolver(ok); pedido = null; avisar() }
+  const [valor, definirValor] = useState('')
+  useEffect(() => { definirValor(atual?.campo?.valorInicial ?? '') }, [atual])
+  const fechar = (ok: boolean) => { atual?.resolver(ok, valor); pedido = null; avisar() }
   const caixa = usarPrisao(!!atual, () => fechar(false))
   const id = useId()
   if (!atual) return null
@@ -82,8 +90,9 @@ export function HospedeConfirmar() {
     <div ref={caixa} className="a3-dialogo" role="alertdialog" aria-modal="true" aria-labelledby={id}>
       <h2 id={id}>{atual.titulo}</h2>
       {atual.texto && <div className="a3-mudo" style={{ display: 'grid', gap: 8 }}>{atual.texto}</div>}
+      {atual.campo && <label className="a3-campo"><span>{atual.campo.rotulo}</span><textarea className="a3-entrada" value={valor} onChange={e => definirValor(e.target.value)} data-foco-inicial /></label>}
       <div className="a3-dialogo__acoes">
-        <button type="button" className="a3-botao a3-botao--contorno" onClick={() => fechar(false)} data-foco-inicial>{atual.nao ?? 'Cancelar'}</button>
+        <button type="button" className="a3-botao a3-botao--contorno" onClick={() => fechar(false)} {...(atual.campo ? {} : { 'data-foco-inicial': true })}>{atual.nao ?? 'Cancelar'}</button>
         <button type="button" className={'a3-botao' + (atual.perigo ? ' a3-botao--perigo' : '')} onClick={() => fechar(true)}>{atual.sim}</button>
       </div>
     </div>

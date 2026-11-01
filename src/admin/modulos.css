@@ -172,3 +172,20 @@
   .a3-fila-avisos { max-height: 320px; }
   .a3-caixa-entrada__detalhe { padding: 18px; }
 }
+
+/* Triagem */
+.a3-mesa-passo { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: -8px 0 12px; }
+.a3-questao-ref { display: grid; gap: 6px; }
+.a3-questao-ref a { color: var(--a3-tinta); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.a3-questao-ref a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.a3-questao-ref p { font-size: 14px; line-height: 1.55; }
+.a3-citacao { margin: 0; padding: 14px 16px; border-left: 2px solid var(--a3-tinta); border-radius: 0 12px 12px 0; background: var(--a3-alt); font-size: 15px; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
+.a3-placar-mini { display: flex; gap: 6px 18px; flex-wrap: wrap; padding: 14px 20px 0; color: var(--a3-cinza); font-size: 13px; }
+.a3-placar-mini b { color: var(--a3-tinta); font-size: 18px; font-weight: 600; margin-right: 4px; font-variant-numeric: tabular-nums; }
+.a3-duas-barras { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.a3-duas-barras > div { display: grid; grid-template-columns: 1fr auto; gap: 6px 10px; align-items: baseline; }
+.a3-duas-barras b { font-size: 24px; font-weight: 600; letter-spacing: -.02em; }
+.a3-duas-barras i { grid-column: 1 / -1; display: block; height: 6px; border-radius: 6px; background: linear-gradient(90deg, var(--a3-tinta) var(--p), var(--a3-recuo) var(--p)); }
+.a3-duas-barras i.ruim { background: linear-gradient(90deg, var(--a3-erro) var(--p), var(--a3-recuo) var(--p)); }
+@media (max-width: 560px) { .a3-duas-barras { grid-template-columns: minmax(0, 1fr); } }
+.a3-abas-grandes--5 .a3-aba-grande__numero { min-height: 32px; display: flex; align-items: center; }
