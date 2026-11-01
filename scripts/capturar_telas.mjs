@@ -239,6 +239,8 @@ async function atender(rota) {
     const [st, corpo] = snRpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}'))
     return responder(st, corpo)
   }
+  // AVISO_SITE='{"id":7,"texto":"...","link":null,"rotulo_link":null,"tom":"destaque"}': o aviso do topo do site (com ou sem conta).
+  if (rpc === 'obter_aviso_site') return responder(200, process.env.AVISO_SITE ? [JSON.parse(process.env.AVISO_SITE)] : [])
   if (!usuario) return responder(401, { code: '42501', message: 'permission denied' })
   if (ADMIN && rpc && rpcsAdmin[rpc]) { const [s, c] = rpcsAdmin[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc && rpcs[rpc]) { const [s, c] = rpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
