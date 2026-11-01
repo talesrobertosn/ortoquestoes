@@ -371,3 +371,12 @@
 .a3-envio-progresso progress { width: 100%; height: 6px; accent-color: var(--a3-tinta); }
 @media (max-width: 1100px) { .a3-caixa-saida { grid-template-columns: minmax(0, 1fr); } .a3-caixa-saida__carta { position: static; max-height: none; } }
 @media (max-width: 720px) { .a3-abas-grandes--4 { display: flex; } }
+
+/* Catálogo de cartas */
+.a3-catalogo { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 20px; align-items: start; }
+.a3-catalogo__lista .a3-fila-avisos { max-height: 720px; }
+.a3-catalogo__detalhe { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; }
+.a3-carta-papel { display: grid; gap: 12px; padding: 22px 24px; border: 1px solid var(--a3-linha); border-radius: 16px; background: var(--a3-papel); box-shadow: 0 1px 0 var(--a3-linha), 0 10px 30px -18px rgba(0,0,0,.18); }
+.a3-carta-papel__assunto { font-size: 16px; font-weight: 600; }
+.a3-carta-papel__corpo { display: grid; gap: 10px; font-size: 14.5px; line-height: 1.65; color: var(--a3-tinta-2); white-space: pre-wrap; }
+@media (max-width: 1000px) { .a3-catalogo { grid-template-columns: minmax(0, 1fr); } .a3-catalogo__detalhe { position: static; max-height: none; } .a3-catalogo__lista .a3-fila-avisos { max-height: 360px; } }

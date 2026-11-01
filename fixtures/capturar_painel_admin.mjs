@@ -92,6 +92,12 @@ const rpcs = {
   ],
   funil_admin: () => [{ cadastrados: 14, confirmaram: 12, responderam: 11, passaram_50: 8, passaram_500: 3, assinaram: 5 }],
   retencao_admin: () => [],
+  listar_emails_admin: () => [
+    { id: 1, tipo: 'lembrete', marco: null, assunto: 'Sua primeira missão', status: 'enviado', erro: null, enviado_em: iso(agora - 3 * HORA), usuario: 'ana@exemplo.com' },
+    { id: 2, tipo: 'carta', marco: null, assunto: 'Diego, um convite pessoal', status: 'falhou', erro: 'envio_recusado_429', enviado_em: iso(agora - DIA), usuario: 'diego@exemplo.com' },
+    { id: 3, tipo: 'marco', marco: 500, assunto: '500 questões!', status: 'enviado', erro: null, enviado_em: iso(agora - 2 * DIA), usuario: 'fabio@exemplo.com' },
+  ],
+  resumo_relatorio_admin: () => [{ pendentes: 4, enviados: 1, falharam: 0 }],
   listar_cartas_admin: () => [3, 10, 12].map(i => ({ id_usuario: u(i).id_usuario, bloqueio: i === 12 ? 'assinante' : null, dados: { nome: u(i).nome, email: u(i).email, respondidas: u(i).respondidas, acertos: u(i).acertos, erros: u(i).erros, ultima_atividade: u(i).ultima_atividade, criado_em: u(i).criado_em, situacao: 'r2', emails: { lista: [] } } })),
   listar_opinioes_flashcards_admin: () => [
     { id: 1, categoria: 'som', facil_estudar: 4, experiencia_visual: 5, som_celular: 'nao', problema: 'No iPhone o som do acerto não toca com o modo silencioso desligado.', melhorar: null, origem: 'fim_sessao', aparelho: 'iPhone 13', status: 'aberta', criada_em: iso(agora - 3 * HORA), usuario: 'karina@exemplo.com' },
