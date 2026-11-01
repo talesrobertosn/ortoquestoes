@@ -64,7 +64,7 @@ const LEGADO: Record<string, Aba> = {
  * F5 e links abrem no mesmo lugar; Voltar passa pelas partes visitadas.
  */
 export interface EstadoUrl { aba: Aba; filtro: FiltroUsuarios; vista: VistaConteudo; id: string | null }
-const FILTROS_URL: FiltroUsuarios[] = ['todos', 'online', 'hoje', 'ativos', 'novos', 'novos_parados', 'assinantes', 'parados', 'planos']
+const FILTROS_URL: FiltroUsuarios[] = ['todos', 'online', 'hoje', 'ativos', 'novos', 'novos_parados', 'assinantes', 'cortesia', 'parados', 'planos']
 const VISTAS_URL: VistaConteudo[] = ['suspeitas', 'faceis', 'temas', 'relatos', 'avaliacoes']
 
 export function lerUrl(consulta: URLSearchParams): EstadoUrl {

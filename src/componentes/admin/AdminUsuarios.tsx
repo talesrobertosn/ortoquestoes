@@ -49,11 +49,11 @@ export interface LinhaUsuario {
   visto_em?: string | null
 }
 
-export type FiltroUsuarios = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'parados' | 'planos'
+export type FiltroUsuarios = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'cortesia' | 'parados' | 'planos'
 type Filtro = FiltroUsuarios
 type Ordem = 'respondidas' | 'hoje' | 'acerto' | 'semana' | 'atividade' | 'cadastro' | 'planos' | 'flashcards'
 
-const FILTROS: Array<[Filtro, string]> = [['todos', 'Todos'], ['online', 'Últimos 5 min'], ['hoje', 'Ativos hoje'], ['ativos', 'Ativos na semana'], ['novos', 'Recém-cadastrados'], ['novos_parados', 'Novos que pararam'], ['planos', 'Viu os planos'], ['assinantes', 'Assinantes'], ['parados', 'Sem respostas']]
+const FILTROS: Array<[Filtro, string]> = [['todos', 'Todos'], ['online', 'Últimos 5 min'], ['hoje', 'Ativos hoje'], ['ativos', 'Ativos na semana'], ['novos', 'Recém-cadastrados'], ['novos_parados', 'Novos que pararam'], ['planos', 'Viu os planos'], ['assinantes', 'Assinantes'], ['cortesia', 'Cortesia'], ['parados', 'Sem respostas']]
 const ORDENS: Array<[Ordem, string]> = [
   ['respondidas', 'Mais questões'], ['hoje', 'Mais questões hoje'], ['acerto', 'Maior acerto'], ['semana', 'Mais na semana'],
   ['atividade', 'Atividade mais recente'], ['cadastro', 'Cadastro mais recente'],
@@ -102,7 +102,14 @@ export const novoParado = (u: LinhaUsuario) => {
 }
 /** Sinais da parte 25 (planos, flashcards, locais); sem a parte, o mapa fica vazio. */
 type Sinais = Map<string, SinalUsuario>
-const passaFiltro = (u: LinhaUsuario, f: Filtro, sinais: Sinais) => f === 'todos' || (f === 'planos' && viuPlanos(sinais.get(u.id_usuario))) || (f === 'online' && !!u.online) || (f === 'hoje' && ativoHoje(u)) || (f === 'ativos' && ativo7d(u))
+/** Uma linha de acessos_cortesia (parte 36); ate null = sem prazo. */
+export interface CortesiaUsuario { id_usuario: string; ate: string | null; motivo: string | null; criado_em?: string | null }
+/** Só as cortesias que valem agora (sem prazo ou com prazo no futuro), por conta. */
+export function indexarCortesiasAtivas(linhas: CortesiaUsuario[], agora = Date.now()): Map<string, CortesiaUsuario> {
+  return new Map(linhas.filter(c => !c.ate || new Date(c.ate).getTime() > agora).map(c => [c.id_usuario, c]))
+}
+export const textoCortesia = (c: CortesiaUsuario) => c.ate ? `Cortesia até ${data(c.ate)}` : 'Cortesia sem prazo'
+const passaFiltro = (u: LinhaUsuario, f: Filtro, sinais: Sinais, cortesias: Map<string, CortesiaUsuario>) => f === 'todos' || (f === 'cortesia' && cortesias.has(u.id_usuario)) || (f === 'planos' && viuPlanos(sinais.get(u.id_usuario))) || (f === 'online' && !!u.online) || (f === 'hoje' && ativoHoje(u)) || (f === 'ativos' && ativo7d(u))
   || (f === 'novos' && novo(u)) || (f === 'novos_parados' && novoParado(u)) || (f === 'assinantes' && !!u.plano_vigente) || (f === 'parados' && u.respondidas === 0)
 /** O acerto que ordena e colore: o real (1ª tentativa) quando existe; senão, o após revisão. */
 const acertoDe = (u: LinhaUsuario) => acertoReal(u) ?? acertoAposRevisao(u)
@@ -165,6 +172,10 @@ export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFi
   const sinaisQ = usarRpc<SinalUsuario[]>(sessao?.user.id, 'sinais_usuarios_admin', {}, { atualizarCada: CINCO_MIN })
   const sinais = useMemo(() => indexarSinais(Array.isArray(sinaisQ.dados) ? sinaisQ.dados : []), [sinaisQ.dados])
   const comSinais = Array.isArray(sinaisQ.dados)
+  // Cortesias (parte 36): sem a parte colada, o selo e o filtro ficam vazios e a dica explica.
+  const cortesiasQ = usarRpc<CortesiaUsuario[]>(sessao?.user.id, 'cortesias_admin', {}, { atualizarCada: CINCO_MIN })
+  const cortesias = useMemo(() => indexarCortesiasAtivas(Array.isArray(cortesiasQ.dados) ? cortesiasQ.dados : []), [cortesiasQ.dados])
+  const comCortesias = Array.isArray(cortesiasQ.dados)
   const [busca, definirBusca] = useState('')
   const buscaAdiada = usarAdiado(busca, ESPERA_BUSCA_MS)
   // O filtro vem do endereço (F5 e Voltar mantêm); a ordem inicial acompanha quem chegou por um atalho de Agora.
@@ -174,7 +185,7 @@ export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFi
   const [ordem, definirOrdem] = useState<Ordem>(filtroUrl === 'novos' || filtroUrl === 'novos_parados' ? 'cadastro' : filtroUrl === 'hoje' ? 'atividade' : filtroUrl === 'planos' ? 'planos' : 'respondidas')
   const [aberto, definirAberto] = useState<LinhaUsuario | null>(null)
 
-  const contagem = useMemo(() => Object.fromEntries(FILTROS.map(([f]) => [f, usuarios.filter(u => passaFiltro(u, f, sinais)).length])) as Record<Filtro, number>, [usuarios, sinais])
+  const contagem = useMemo(() => Object.fromEntries(FILTROS.map(([f]) => [f, usuarios.filter(u => passaFiltro(u, f, sinais, cortesias)).length])) as Record<Filtro, number>, [usuarios, sinais, cortesias])
 
   // Os números de hoje (online, estudaram, questões, contas novas) ficam só em Agora; aqui, o somatório da lista.
   const totais = useMemo(() => {
@@ -184,7 +195,7 @@ export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFi
 
   const visiveis = useMemo(() => {
     const termo = normalizar(buscaAdiada.trim())
-    const lista = usuarios.filter(u => passaFiltro(u, filtro, sinais) && corresponde([u.nome, u.email, u.servico, servicoConhecido(u.servico, u.uf), u.cidade, sinais.get(u.id_usuario)?.locais_trabalho], termo))
+    const lista = usuarios.filter(u => passaFiltro(u, filtro, sinais, cortesias) && corresponde([u.nome, u.email, u.servico, servicoConhecido(u.servico, u.uf), u.cidade, sinais.get(u.id_usuario)?.locais_trabalho], termo))
     const tempo = (v: string | null) => v ? new Date(v).getTime() : 0
     const chave: Record<Ordem, (u: LinhaUsuario) => number> = {
       respondidas: u => u.respondidas,
@@ -197,7 +208,7 @@ export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFi
       flashcards: u => sinais.get(u.id_usuario)?.flashcards_unicos ?? 0,
     }
     return [...lista].sort((a, b) => chave[ordem](b) - chave[ordem](a) || b.respondidas - a.respondidas)
-  }, [usuarios, buscaAdiada, filtro, ordem, sinais])
+  }, [usuarios, buscaAdiada, filtro, ordem, sinais, cortesias])
 
   // Desenha 50 de cada vez: com centenas de cartões o celular travava. Volta a 50 quando a lista muda de critério.
   const [limite, definirLimite] = useState(POR_PAGINA)
@@ -228,12 +239,13 @@ export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFi
     </div>
     {filtro === 'novos_parados' && <p className="adm-nota adm-dica">Chegaram nas últimas semanas, fizeram menos de 10 questões e não voltaram nos últimos 2 dias. Abra a ficha e use um modelo de e-mail de retorno: um recado pessoal costuma trazer de volta.</p>}
     {filtro === 'planos' && <p className="adm-nota adm-dica">{comSinais ? `Abriram a página de planos e preços nos últimos 30 dias (o histórico de páginas guarda 30 dias). Em dourado, quem abriu nos últimos ${PLANOS_RECENTE_DIAS}. Bom momento para um recado pessoal.` : 'Para ver quem abriu a página de planos, cole no Supabase a parte 25 (supabase/colar-no-painel/sql-202610152000-parte25.sql).'}</p>}
+    {filtro === 'cortesia' && <p className="adm-nota adm-dica">{comCortesias ? 'Contas com acesso cortesia valendo agora (sem prazo ou com prazo no futuro): respondem sem o limite diário, sem assinar. Para conceder ou remover, abra a ficha.' : 'Para ver quem está com cortesia ativa, cole no Supabase a parte 36 (supabase/colar-no-painel/sql-202610290100-parte36-cortesias.sql).'}</p>}
     {ordem === 'acerto' && <p className="adm-nota">Ordenado pelo acerto real (1ª tentativa). Quem respondeu menos de {MINIMO_PARA_ACERTO} questões vai para o fim da lista: com poucas respostas o acerto ainda não diz muito.</p>}
     <div className="adm-linha-nota">
       <p className="adm-nota" role="status">{visiveis.length === usuarios.length ? `${usuarios.length} conta(s)` : `${visiveis.length} de ${usuarios.length} conta(s) neste filtro`}{desenhados.length < visiveis.length ? `, mostrando as primeiras ${desenhados.length}` : ''}. Toque numa pessoa para abrir a ficha.</p>
       <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-usuarios-${new Date().toISOString().slice(0, 10)}.csv`,
-        ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'Outros locais de trabalho', 'Viu os planos (30 dias)', 'Flashcards únicos', 'UF', 'Conta criada', 'Questões', 'Hoje', 'Acerto real, 1ª tentativa (%)', 'Acerto após revisão (%)', 'Na semana', 'Última atividade', 'Plano'],
-        visiveis.map(u => [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, sinais.get(u.id_usuario)?.locais_trabalho ?? '', sinais.get(u.id_usuario)?.planos_vezes || '', sinais.get(u.id_usuario)?.flashcards_unicos || '', u.uf, data(u.criado_em), u.respondidas, u.respondidas_hoje ?? '', acertoReal(u), acertoAposRevisao(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
+        ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'Outros locais de trabalho', 'Viu os planos (30 dias)', 'Flashcards únicos', 'UF', 'Conta criada', 'Questões', 'Hoje', 'Acerto real, 1ª tentativa (%)', 'Acerto após revisão (%)', 'Na semana', 'Última atividade', 'Plano', 'Cortesia'],
+        visiveis.map(u => [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, sinais.get(u.id_usuario)?.locais_trabalho ?? '', sinais.get(u.id_usuario)?.planos_vezes || '', sinais.get(u.id_usuario)?.flashcards_unicos || '', u.uf, data(u.criado_em), u.respondidas, u.respondidas_hoje ?? '', acertoReal(u), acertoAposRevisao(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '', cortesias.has(u.id_usuario) ? textoCortesia(cortesias.get(u.id_usuario)!) : '']))}>
         <Icone nome="baixar" tamanho={15} /> Exportar planilha
       </button>
     </div>
@@ -243,6 +255,7 @@ export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFi
         const acerto = acertoDe(u)
         const hoje = hojeDe(u)
         const sinal = sinais.get(u.id_usuario)
+        const cortesia = cortesias.get(u.id_usuario)
         const planosRecente = viuPlanos(sinal, PLANOS_RECENTE_DIAS)
         const categoria = categoriaPessoa(u, sinal)
         const perfil = [u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : null, u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ')
@@ -263,6 +276,7 @@ export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFi
             <span className="adm-usuario__selos">
               {u.administrador && <span className="adm-selo adm-selo--admin">Administrador</span>}
               {u.plano_vigente && <span className="adm-selo adm-selo--ok">Assinante {PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}</span>}
+              {cortesia && <span className="adm-selo adm-selo--ok" title={cortesia.motivo ? `Motivo: ${cortesia.motivo}` : 'Acesso cortesia ativo'}>{textoCortesia(cortesia)}</span>}
               {sinal && viuPlanos(sinal) && <span className={'adm-selo adm-selo--planos' + (planosRecente && !u.plano_vigente ? '' : ' adm-selo--planos-antigo')} title={`Abriu a página de planos ${sinal.planos_vezes}× nos últimos 30 dias${sinal.condicoes_ultima ? '; também abriu as Condições da Assinatura' : ''}`}><Icone nome="estrela" tamanho={12} />{textoPlanos(sinal)}</span>}
               {sinal && sinal.flashcards_unicos > 0 && <span className="adm-selo adm-selo--neutro" title={`${sinal.flashcards_7d} flashcards na semana${sinal.cripta_andar ? ` · andar ${sinal.cripta_andar} no Torneio` : ''}`}>{sinal.flashcards_unicos.toLocaleString('pt-BR')} flashcards</span>}
               <span className="adm-selo adm-selo--neutro" title={`Cadastro em ${data(u.criado_em)}`}>Conta criada {haQuanto(u.criado_em)}</span>
