@@ -92,6 +92,7 @@ const rpcs = {
   ],
   funil_admin: () => [{ cadastrados: 14, confirmaram: 12, responderam: 11, passaram_50: 8, passaram_500: 3, assinaram: 5 }],
   retencao_admin: () => [],
+  listar_cartas_admin: () => [3, 10, 12].map(i => ({ id_usuario: u(i).id_usuario, bloqueio: i === 12 ? 'assinante' : null, dados: { nome: u(i).nome, email: u(i).email, respondidas: u(i).respondidas, acertos: u(i).acertos, erros: u(i).erros, ultima_atividade: u(i).ultima_atividade, criado_em: u(i).criado_em, situacao: 'r2', emails: { lista: [] } } })),
   listar_opinioes_flashcards_admin: () => [
     { id: 1, categoria: 'som', facil_estudar: 4, experiencia_visual: 5, som_celular: 'nao', problema: 'No iPhone o som do acerto não toca com o modo silencioso desligado.', melhorar: null, origem: 'fim_sessao', aparelho: 'iPhone 13', status: 'aberta', criada_em: iso(agora - 3 * HORA), usuario: 'karina@exemplo.com' },
     { id: 2, categoria: 'conteudo', facil_estudar: 5, experiencia_visual: 4, som_celular: 'sim', problema: null, melhorar: 'Mais cartas de coluna pediátrica.', origem: 'central', aparelho: 'Windows', status: 'aberta', criada_em: iso(agora - 2 * DIA), usuario: 'lucas@exemplo.com' },
