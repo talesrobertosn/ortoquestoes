@@ -312,3 +312,38 @@
 .a3-nota__tracos { display: inline-flex; gap: 3px; }
 .a3-nota__tracos i { width: 14px; height: 5px; border-radius: 3px; background: var(--a3-recuo); }
 .a3-nota__tracos i.cheio { background: var(--a3-tinta); }
+
+/* Campanhas */
+.a3-campanhas { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 20px; align-items: start; }
+.a3-campanhas__lista { position: sticky; top: 16px; display: grid; gap: 14px; padding: 14px 10px; }
+.a3-campanhas__lista > div { display: grid; gap: 2px; }
+.a3-campanhas__lista .a3-rotulo { padding: 0 10px 4px; }
+.a3-campanhas__lista button { display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 9px 10px; border: 0; border-radius: 12px; background: none; color: var(--a3-tinta-2); font: inherit; font-size: 13.5px; text-align: left; cursor: pointer; }
+.a3-campanhas__lista button:hover { background: var(--a3-alt); }
+.a3-campanhas__lista button[aria-current="true"] { background: var(--a3-tinta); color: var(--a3-papel); }
+.a3-campanhas__lista button:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: 2px; }
+.a3-campanhas__lista b { font-weight: 600; }
+.a3-campanha__cabeca { padding: 20px 20px 4px; }
+.a3-passos { list-style: none; margin: 0; padding: 14px 20px; display: flex; gap: 6px; flex-wrap: wrap; }
+.a3-passos li { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px 5px 6px; border-radius: 999px; background: var(--a3-alt); color: var(--a3-cinza); font-size: 12.5px; font-weight: 500; }
+.a3-passos li span { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--a3-recuo); font-size: 11px; }
+.a3-passos li.atual { background: var(--a3-tinta); color: var(--a3-papel); }
+.a3-passos li.atual span { background: var(--a3-papel); color: var(--a3-tinta); }
+.a3-passos li.feito { color: var(--a3-tinta); }
+.a3-passos li.feito span { background: var(--a3-ok); color: #fff; }
+.a3-campanha__numeros { display: flex; flex-wrap: wrap; gap: 0; margin: 0; border-top: 1px solid var(--a3-linha); border-bottom: 1px solid var(--a3-linha); }
+.a3-campanha__numeros > div { display: grid; gap: 2px; padding: 14px 20px; border-right: 1px solid var(--a3-linha); }
+.a3-campanha__numeros dt { color: var(--a3-cinza); font-size: 12px; }
+.a3-campanha__numeros dd { font-size: 24px; font-weight: 600; letter-spacing: -.02em; }
+.a3-campanha__acoes { display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; padding: 16px 20px; }
+.a3-previa-email { display: block; width: 100%; height: 560px; border: 1px solid var(--a3-linha); border-radius: 14px; background: #fff; }
+.a3-lista-nomes { margin: 0; padding: 10px 14px; max-height: 220px; overflow-y: auto; border-radius: 12px; background: var(--a3-alt); list-style: none; display: grid; gap: 2px; font-size: 13px; color: var(--a3-tinta-2); }
+@media (max-width: 960px) {
+  .a3-campanhas { grid-template-columns: minmax(0, 1fr); }
+  .a3-campanhas__lista { position: static; display: flex; overflow-x: auto; padding: 8px; gap: 4px; scrollbar-width: none; }
+  .a3-campanhas__lista > div { display: contents; }
+  .a3-campanhas__lista .a3-rotulo { display: none; }
+  .a3-campanhas__lista button { flex: none; }
+  .a3-campanha__numeros > div { flex: 1 1 45%; }
+  .a3-previa-email { height: 460px; }
+}

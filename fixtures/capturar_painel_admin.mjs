@@ -115,7 +115,11 @@ const rpcs = {
     { id_questao: 'mao-2164', util: true, motivo: null, observacao: null, atualizado_em: iso(agora - 5 * HORA), usuario: 'elisa@exemplo.com' },
     { id_questao: 'mao-0001', util: true, motivo: null, observacao: null, atualizado_em: iso(agora - 9 * HORA), usuario: 'fabio@exemplo.com' },
   ],
-  resumo_lembretes_admin: () => [],
+  resumo_lembretes_admin: () => [{ campanha: 'nunca', pessoas: 2, enviados_7d: 5, enviados_total: 40, falharam_7d: 0 }, { campanha: 'tres_dias', pessoas: 1, enviados_7d: 3, enviados_total: 22, falharam_7d: 0 }],
+  listar_destinatarios_lembrete_admin: (a) => a.p_campanha === 'nunca' ? [
+    { id_usuario: u(0).id_usuario, nome: u(0).nome, email: u(0).email, respondidas: 0, acertos: 0, dias_fora: null, dias_restantes: null, plano: null, fim_periodo: null, ultimo_lembrete_em: null, ultimo_lembrete_assunto: null, lembretes_30d: 0, liberado: true },
+    { id_usuario: u(8).id_usuario, nome: u(8).nome, email: u(8).email, respondidas: 0, acertos: 0, dias_fora: null, dias_restantes: null, plano: null, fim_periodo: null, ultimo_lembrete_em: iso(agora - DIA), ultimo_lembrete_assunto: 'Sua primeira missão', lembretes_30d: 1, liberado: false },
+  ] : [],
   resumo_quinzenal_admin: () => [{ pendentes: 0, enviados: 0, falharam: 0 }],
   obter_config_emails_admin: () => [{ marcos_automaticos: true, alertas_admin: true }],
   obter_config_comercial_admin: () => [{ paywall_ativo: true, limite_diario_gratis: 20, pagamentos_ativos: true, atualizado_em: iso(agora) }],
