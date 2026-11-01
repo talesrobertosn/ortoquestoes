@@ -567,7 +567,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
               <button type="button" onClick={() => trocarModo('recuperar')}>Criar uma senha nova</button>
             </span>}
           </div>}
-          <button className="botao botao--principal ac-enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}{!ocupado && <span className="ac-enviar__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>}</button>
+          <button className="botao botao--principal ac-enviar acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}{!ocupado && <span className="ac-enviar__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>}</button>
         </form>
         {modo === 'entrar' && !recuperacao && <p className="ac-alternativa">Não recebeu a confirmação? <button type="button" className="ac-link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
         {!recuperacao && modo === 'criar' && <p className="ac-nota">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome). Você pode sair do ranking quando quiser.</p>}
