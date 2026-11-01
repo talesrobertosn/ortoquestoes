@@ -17,6 +17,9 @@ type Bicho = 'gato' | 'coruja'
 const CHANCE = 0.4
 /** Onde eles podem sentar, em ordem de preferência (a primeira com espaço livre ganha). */
 const POLEIROS = ['.ccs-alternar', '.cp-dificil .botao', '.cp-hoje .cp-botao', '.cp-recolhido > summary', '.cr-rodape__link']
+/** As caixas da página: o bicho senta na borda de uma delas, nunca por cima de outra (os cartões vizinhos). */
+const CAIXAS = '.cc-janela, .cc-detalhe, .cp-hoje, .cp-amanha, .cp-semana, .cp-recolhido, .cp-indo > div, .bib-caixa, .pe-aviso, .cp-conta__linha, ' +
+  '.cf-hoje, .cf-crono, .cf-modo, .cf-links a, .cf-aviso, .cf-convite, .cf-passos li, .cf-numero, .cf-bloco, .cp-onde, .cfh-heroi'
 const TAMANHO: Record<Bicho, { w: number; h: number }> = { gato: { w: 72, h: 54 }, coruja: { w: 66, h: 48 } }
 
 function sortear(): Bicho | null {
@@ -48,7 +51,7 @@ function ocupados(raiz: HTMLElement, fora: HTMLElement): Ret[] {
   return lista
 }
 
-export function VisitaCronograma() {
+export function VisitaCronograma({ poleiros = POLEIROS }: { /** Onde podem sentar (os botões da página), em ordem de preferência. */ poleiros?: string[] } = {}) {
   const [bicho] = useState<Bicho | null>(sortear)
   const camada = useRef<HTMLDivElement>(null)
   const [lugar, definirLugar] = useState<{ x: number; y: number } | null>(null)
@@ -78,13 +81,16 @@ export function VisitaCronograma() {
     const medir = () => {
       const base = pagina.getBoundingClientRect()
       const livres = ocupados(pagina, el)
-      for (const seletor of POLEIROS) {
+      const caixas = [...pagina.querySelectorAll<HTMLElement>(CAIXAS)].map((c) => ({ c, r: c.getBoundingClientRect() }))
+      for (const seletor of poleiros) {
         for (const alvo of pagina.querySelectorAll<HTMLElement>(seletor)) {
           const r = alvo.getBoundingClientRect()
           if (!r.width || r.width < w * 0.8) continue
           const { x, y } = lugarDe(r, base)
           if (x < base.left + 4 || y < base.top + 4) continue
           if (livres.some((o) => cruza({ x, y, w, h: h - 6 }, o))) continue
+          // Por cima de outra caixa, não (a do próprio poleiro, ou uma que o contém, pode).
+          if (caixas.some(({ c, r: rc }) => !c.contains(alvo) && rc.width && cruza({ x, y, w, h: h - 6 }, { x: rc.left, y: rc.top, w: rc.width, h: rc.height }))) continue
           poleiro = alvo
           definirLugar({ x: x - base.left, y: y - base.top })
           return
@@ -102,7 +108,7 @@ export function VisitaCronograma() {
     window.addEventListener('scroll', acompanhar, { passive: true })
     pagina.addEventListener('click', acompanhar)
     return () => { tempos.forEach(window.clearTimeout); window.clearTimeout(espera); cancelAnimationFrame(quadro); ro?.disconnect(); window.removeEventListener('scroll', acompanhar); pagina.removeEventListener('click', acompanhar) }
-  }, [bicho])
+  }, [bicho, poleiros])
 
   useEffect(() => {
     if (!fala) return

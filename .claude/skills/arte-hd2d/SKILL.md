@@ -34,6 +34,7 @@ Leia os scripts antes de pintar qualquer coisa nova e copie a técnica (cada scr
 | Arena e salão dos troféus | `scripts/gerar_cena_arena.py` | `secao-arena`, `secao-trofeus` |
 | Torre do relógio, baú, correio | `scripts/gerar_cena_vila.py` | `secao-torre`, `secao-bau`, `secao-correio` |
 | Torre do Tempo (topo do cronograma, 3 horas) | `scripts/gerar_cena_cronograma.py` | `public/pixel/cronograma/torre-tempo-{manha,tarde,noite}[-960].webp`, `torre-tempo-sino-*.png` |
+| Arquivo da Vila (topo dos Flashcards, 3 horas) e o assoalho | `scripts/gerar_cena_flashcards.py [piso]` | `public/pixel/flashcards/arquivo-{manha,tarde,noite}[-960].webp`, `arquivo-piso.webp` |
 | Fogo da sequência e tochas | `scripts/gerar_sprites_inicio.py` | `fogo.png`, `tocha.png` |
 
 A técnica, em ordem:

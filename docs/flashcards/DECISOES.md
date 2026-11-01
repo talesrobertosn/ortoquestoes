@@ -103,3 +103,16 @@ Opinião com melhor acabamento; som baixo a cada abertura e controle vertical no
 ## 14/10/2026, início mais familiar
 
 Tales pediu que o começo priorize questões que a pessoa já acertou, para diminuir a frustração. Essa orientação substitui a ordem de 13/10: acertadas pelo usuário, maior acerto da turma, erradas pelo usuário, novas e mistura. O sorteio continua dentro de cada grupo, com até oito flashcards na abertura de cada grupo e salto dos grupos vazios. As respostas consultadas são das questões de origem; as partidas salvas permanecem intactas. Sem SQL.
+
+## 01/11/2026 — O Arquivo da Vila (central, desempenho e cronograma)
+
+Pedido do Tales ("deixar bonita"), no jeito aprovado no cronograma (Torre do Tempo): a central abre com a cena HD-2D do
+Arquivo da Vila (o fichário de fichas ao lado da praça da torre, com a escada da Cripta no fundo), manhã, tarde e noite
+(`scripts/gerar_cena_flashcards.py`); o título e o botão do dia num vidro escuro; a descrição numa faixa logo abaixo da
+cena. As três páginas ficam sobre o assoalho do Arquivo iluminado, com as caixas brancas e redondas como na página
+inicial (`src/estilos/paginas/CentralFlashcardsArquivo.css`, só com `.cf--arquivo`; o jogo não muda). Desempenho e
+Cronograma ganharam a mesma cena numa faixa curta. A coruja ou o gato aparecem de vez em quando sentados num botão.
+Correções: os botões Hesitei/Sabia mostram o prazo do degrau de verdade (`prazoDaAvaliacao`, testado); falha de rede ao
+carregar o acervo aparece com "Tentar de novo"; o visitante vê "Crie sua conta para treinar flashcards". A opinião fica
+num bloco só (o convite, quando aparece, toma o lugar do aviso). Nomes (Torneio/Cripta/Batalha) e a definição de
+"dominado" ficam como estão até o Tales decidir (ver `docs/prompts/flashcards-hd2d.md`).

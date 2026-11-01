@@ -10,7 +10,9 @@ import { ehRotaDoJogo } from '../flashcards/fundo'
 import { calcularEstatisticas, chaveDoDia, type DiaResumido } from '../flashcards/aprendizagem'
 import { corDaArea } from '../dados/coresAreas'
 import { CartaoCronograma, PaginaCronogramaFlashcards, linkSessaoCronograma, usarCronograma } from './CronogramaFlashcards'
-import { carregarAcervo, indiceDoAcervo } from '../flashcards/dados/acervo'
+import { acervoFalhou, carregarAcervo, indiceDoAcervo } from '../flashcards/dados/acervo'
+import { CenaArquivo, PISO_DO_ARQUIVO } from '../componentes/flashcards/CenaArquivo'
+import { VisitaCronograma } from '../componentes/cronograma/VisitaCronograma'
 import {
   CATEGORIAS_OPINIAO, deveConvidar, dispensarConvite, enviarOpiniao, mensagemDeErro,
   type CategoriaOpiniao, type OrigemOpiniao,
@@ -18,6 +20,7 @@ import {
 import { CHAVE_RECORDES, RECORDES_VAZIOS, type Recordes } from '../flashcards/progresso'
 import type { Flashcard } from '../flashcards/tipos'
 import '../estilos/paginas/CentralFlashcards.css'
+import '../estilos/paginas/CentralFlashcardsArquivo.css'
 
 export const AVISO_BETA = 'O Torneio de Flashcards está em beta. Estamos aprimorando o visual, o áudio e as mecânicas. Teste e conte o que funcionou — ou o que precisa melhorar.'
 
@@ -107,13 +110,16 @@ export function CentralFlashcards() {
   const pessoal = mensagemPessoal(nome, contagem.hoje, contagem.estudados, rec.andarMaximo)
 
   return (
-    <article className="cf cfh">
+    <article className="cf cfh cf--arquivo" style={PISO_DO_ARQUIVO}>
       <Abas atual="central" />
-      <section className="cfh-heroi" aria-labelledby="cfh-titulo">
-        <div className="cfh-heroi__texto">
-          <p className="tr-heroi__selo">Flashcards</p>
+      {/* O Arquivo da Vila (01/11/2026): o fichário de fichas ao lado da praça da torre; a escada do fundo desce para
+          a Cripta (o Torneio). O texto fica num vidro escuro do lado calmo da pintura, sem cobrir o fichário. */}
+      <section className="cfh-heroi cfh-heroi--arquivo" aria-labelledby="cfh-titulo">
+        <div className="cfh-palco">
+        <div className="cfh-janela">{artes && <CenaArquivo />}</div>
+        <div className="cfh-heroi__texto cfh-vidro-arquivo">
+          <p className="cfh-selo">Flashcards</p>
           <h1 id="cfh-titulo">Treine flashcards de Ortopedia.</h1>
-          <p>Por área, tirados das questões comentadas das provas reais e dos OrtoQuestões Simulados. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
           <p className="cfh-heroi__pessoal"><strong>{pessoal.abertura}</strong> {pessoal.dados}</p>
           <a className="botao cfh-heroi__estudar" href={href('/flashcards/biblioteca')}>
             <Icone nome="livro" tamanho={20} />
@@ -124,10 +130,18 @@ export function CentralFlashcards() {
             <a className="tr-heroi__link" href={href(linkSessaoCronograma())}><Icone nome="rota" tamanho={15} /> Seguir cronograma</a>
           </div>
         </div>
-        <picture className="cfh-heroi__arte" aria-hidden="true">
-          {artes && <img src={recurso('flashcards/promo/capa-larga.png')} alt="" width={520} height={330} decoding="async" />}
-        </picture>
+        </div>
+        {/* O chão do Arquivo, logo abaixo da cena: o que são os flashcards (a pintura fica inteira no topo). */}
+        <p className="cfh-chao">Por área, tirados das questões comentadas das provas reais e dos OrtoQuestões Simulados. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
       </section>
+
+      {cartas && acervoFalhou() && (
+        <aside className="cf-rede" role="alert">
+          <Icone nome="alerta" tamanho={20} />
+          <p><strong>Não conseguimos carregar todos os flashcards agora.</strong> A conexão falhou no meio do caminho; os números abaixo podem estar incompletos. Pedimos desculpas pelo transtorno.</p>
+          <button type="button" className="botao botao--principal" onClick={() => window.location.reload()}>Tentar de novo</button>
+        </aside>
+      )}
 
       {convite && (
         <aside className="cf-convite" role="note">
@@ -185,16 +199,21 @@ export function CentralFlashcards() {
         </ul>
       </section>
 
-      <aside className="cf-aviso" role="note">
+      {!convite && <aside className="cf-aviso" role="note">
         <Icone nome="correio" tamanho={22} />
         <p><strong>Estamos construindo os próximos flashcards com você.</strong><br />Conte o que gostou e o que podemos melhorar: a sua opinião chega direto ao painel da equipe.</p>
         <button type="button" className="botao botao--principal" onClick={() => definirOpiniao('central')}>Enviar opinião</button>
-      </aside>
+      </aside>}
 
       {opiniao && <JanelaOpiniao origem={opiniao} aoFechar={() => definirOpiniao(null)} />}
+      {/* A coruja do Arquivo ou o gato, de vez em quando, sentados num botão (easter egg). */}
+      <VisitaCronograma poleiros={POLEIROS_FLASHCARDS} />
     </article>
   )
 }
+
+/** Onde a coruja ou o gato podem sentar nos Flashcards, em ordem de preferência. */
+const POLEIROS_FLASHCARDS = ['.cf-crono__botoes .botao', '.cf-assunto button', '.cf-links a', '.cf-aviso .botao', '.cf-modo']
 
 /**
  * A frase pessoal do topo (adendo do dono, 18/10/2026): o primeiro nome e até duas observações com
@@ -272,16 +291,17 @@ export function DesempenhoFlashcards() {
   const { cartas, nomes } = usarAcervo()
   const [dias, definirDias] = useState(30)
   const est = useMemo(() => (cartas ? calcularEstatisticas(cartas, nomes, dias) : null), [cartas, nomes, dias])
-  if (!est) return <article className="cf empilha-2"><Abas atual="desempenho" /><p role="status">Carregando o acervo…</p></article>
+  if (!est) return <article className="cf empilha-2 cf--arquivo" style={PISO_DO_ARQUIVO}><Abas atual="desempenho" /><p role="status" className="cf-sobre-piso">Carregando o acervo…</p></article>
   const p = est.periodo
   const avaliacoes = p.errei + p.hesitei + p.sabia
   const fracos = est.porAssunto.filter((a) => a.acertos < a.tentativas).slice(0, 6)
   const estudadas = est.porArea.filter((a) => a.estudados > 0)
   const naoEstudadas = est.porArea.filter((a) => !a.estudados)
   return (
-    <article className="cf empilha-2">
+    <article className="cf empilha-2 cf--arquivo" style={PISO_DO_ARQUIVO}>
       <Abas atual="desempenho" />
-      <header className="cf-cabeca">
+      <header className="cf-cabeca cf-cabeca--arquivo">
+        <CenaArquivo />
         <p className="cf-selo">Flashcards</p>
         <h1>Meu desempenho nos flashcards</h1>
         <p>O aprendizado conta junto o que você responde na Biblioteca e no Torneio. Andares, ouro e chefes do jogo ficam de fora destes números.</p>

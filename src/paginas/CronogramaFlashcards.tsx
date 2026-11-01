@@ -1,3 +1,4 @@
+import { CenaArquivo, PISO_DO_ARQUIVO } from '../componentes/flashcards/CenaArquivo'
 import { usarDiaAtual } from '../util/usarDiaAtual'
 import { usarConta } from '../conta/ContextoConta'
 import { DATA_TEOT } from '../dados/calendarioProvas'
@@ -147,9 +148,10 @@ export function PaginaCronogramaFlashcards({ abas }: { abas: React.ReactNode }) 
   const { crono, salvo, nomes, cartas, registros, salvar } = usarCronograma()
   const [ajustando, definirAjustando] = useState(false)
   return (
-    <article className="cf cfc empilha-2">
+    <article className="cf cfc empilha-2 cf--arquivo" style={PISO_DO_ARQUIVO}>
       {abas}
-      <header className="cf-cabeca">
+      <header className="cf-cabeca cf-cabeca--arquivo">
+        <CenaArquivo />
         <p className="cf-selo"><span className="cf-beta">Beta</span> Flashcards</p>
         <h1>Meu cronograma de flashcards</h1>
         <p>Uma fila concreta: os assuntos na ordem em que mais caem na prova, do flashcard mais fácil ao mais difícil. As revisões que venceram vêm primeiro. A meta do dia é uma sugestão: fez mais, o plano adianta; fez menos, amanhã continua de onde parou.</p>
