@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, useState, type CSSProperties } from 'react'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { JanelaCentral } from '../componentes/JanelaCentral'
-import { recurso } from '../config'
+import { urlCss } from '../config'
 import { ler } from '../estado/armazenamento'
 import { usarConta } from '../conta/ContextoConta'
 import { revisarHoje } from '../estado/revisao'
@@ -9,8 +9,10 @@ import { href, navegar, usarRota } from '../util/rotas'
 import { ehRotaDoJogo } from '../flashcards/fundo'
 import { calcularEstatisticas, chaveDoDia, type DiaResumido } from '../flashcards/aprendizagem'
 import { corDaArea } from '../dados/coresAreas'
-import { CartaoCronograma, PaginaCronogramaFlashcards, linkSessaoCronograma, usarCronograma } from './CronogramaFlashcards'
-import { carregarAcervo, indiceDoAcervo } from '../flashcards/dados/acervo'
+import { CartaoCronograma, PaginaCronogramaFlashcards, linkSessaoCronograma, resumoDeHoje, usarCronograma } from './CronogramaFlashcards'
+import { acervoFalhou, carregarAcervo, indiceDoAcervo } from '../flashcards/dados/acervo'
+import { CenaArquivo } from '../componentes/flashcards/CenaArquivo'
+import { VisitaCronograma } from '../componentes/cronograma/VisitaCronograma'
 import {
   CATEGORIAS_OPINIAO, deveConvidar, dispensarConvite, enviarOpiniao, mensagemDeErro,
   type CategoriaOpiniao, type OrigemOpiniao,
@@ -18,6 +20,7 @@ import {
 import { CHAVE_RECORDES, RECORDES_VAZIOS, type Recordes } from '../flashcards/progresso'
 import type { Flashcard } from '../flashcards/tipos'
 import '../estilos/paginas/CentralFlashcards.css'
+import '../estilos/paginas/CentralFlashcardsArquivo.css'
 
 export const AVISO_BETA = 'O Torneio de Flashcards está em beta. Estamos aprimorando o visual, o áudio e as mecânicas. Teste e conte o que funcionou — ou o que precisa melhorar.'
 
@@ -75,9 +78,15 @@ function Abas({ atual }: { atual: 'central' | 'desempenho' | 'cronograma' }) {
 /* ------------------------------------------------------------------ Central */
 
 /**
- * Central dos flashcards (refeita em 18/10/2026 na temporada pixel, como o Treinar): topo com o céu
- * e a cidade da marca e a capa do jogo emoldurada; revisões de hoje em placas com o número em pixel,
- * o cronograma como a missão do dia, os passos em selos dourados e os modos num mosaico com as artes.
+ * Central dos flashcards no Arquivo da Vila (01/11/2026, refeita por inteiro a pedido do Tales: "é pra mudar tudo").
+ * Antes eram uns 15 botões para poucos destinos; agora a página responde, nesta ordem:
+ * 1. o topo com a cena e UMA ação, a certa para hoje (revisar o que venceu, seguir o cronograma, começar pelo que
+ *    mais cai ou abrir a Biblioteca), com a Biblioteca e o Torneio como caminhos discretos;
+ * 2. "Hoje": um painel só, dividido por linhas finas como o progresso da página inicial, com as filas para revisar
+ *    (Revisões de hoje, Errei, Hesitei, Nunca estudados), o cronograma do dia e o estudo por assunto;
+ * 3. "Por onde seguir": a Biblioteca, o Torneio e o desempenho, cada um com o seu objeto pixel animado;
+ * 4. "Como funciona" recolhido (aberto na primeira visita) e um bloco de opinião só.
+ * Todos os destinos de antes continuam aqui ou a um toque (a Cripta direto pela Entrada do Torneio).
  */
 export function CentralFlashcards() {
   const { cartas, nomes, crono, salvo, registros } = usarCronograma()
@@ -105,29 +114,42 @@ export function CentralFlashcards() {
   const { sessao } = usarConta()
   const nome = String(sessao?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
   const pessoal = mensagemPessoal(nome, contagem.hoje, contagem.estudados, rec.andarMaximo)
+  const plano = crono && !crono.concluido ? resumoDeHoje(crono) : null
+  const acao = acaoDeHoje(contagem.hoje, contagem.estudados, plano?.total ?? 0, plano?.texto ?? '')
 
   return (
-    <article className="cf cfh">
+    <article className="cf cfh cf--arquivo">
       <Abas atual="central" />
-      <section className="cfh-heroi" aria-labelledby="cfh-titulo">
-        <div className="cfh-heroi__texto">
-          <p className="tr-heroi__selo">Flashcards</p>
+      {/* O Arquivo da Vila: o fichário de fichas ao lado da praça da torre; a escada do fundo desce para a Cripta
+          (o Torneio). O texto fica num vidro escuro do lado calmo da pintura, sem cobrir o fichário. */}
+      <section className="cfh-heroi cfh-heroi--arquivo" aria-labelledby="cfh-titulo">
+        <div className="cfh-palco">
+        <div className="cfh-janela">{artes && <CenaArquivo />}</div>
+        <div className="cfh-heroi__texto cfh-vidro-arquivo">
+          <p className="cfh-selo">Flashcards</p>
           <h1 id="cfh-titulo">Treine flashcards de Ortopedia.</h1>
-          <p>Por área, tirados das questões comentadas das provas reais e dos OrtoQuestões Simulados. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
           <p className="cfh-heroi__pessoal"><strong>{pessoal.abertura}</strong> {pessoal.dados}</p>
-          <a className="botao cfh-heroi__estudar" href={href('/flashcards/biblioteca')}>
-            <Icone nome="livro" tamanho={20} />
-            <span><strong>Estudar flashcards</strong><small>{contagem.hoje >= 10 ? `${contagem.hoje.toLocaleString('pt-BR')} revisões vencem hoje` : contagem.hoje ? 'Suas revisões de hoje' : 'Biblioteca · estudo calmo'}</small></span>
+          <a className="botao cfh-heroi__estudar" href={href(acao.destino)}>
+            <Icone nome={acao.icone} tamanho={20} />
+            <span><strong>{acao.rotulo}</strong><small>{acao.detalhe}</small></span>
           </a>
           <div className="cfh-heroi__atalhos">
-            <a className="cfh-vidro" href={href('/flashcards/cripta')}><Icone nome="raio" tamanho={16} /> Jogar o Torneio</a>
-            <a className="tr-heroi__link" href={href(linkSessaoCronograma())}><Icone nome="rota" tamanho={15} /> Seguir cronograma</a>
+            {acao.destino !== '/flashcards/biblioteca' && <a className="cfh-vidro" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={16} /> Abrir a Biblioteca</a>}
+            <a className="tr-heroi__link" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={15} /> Torneio de Flashcards</a>
           </div>
         </div>
-        <picture className="cfh-heroi__arte" aria-hidden="true">
-          {artes && <img src={recurso('flashcards/promo/capa-larga.png')} alt="" width={520} height={330} decoding="async" />}
-        </picture>
+        </div>
+        {/* O chão do Arquivo, logo abaixo da cena: o que são os flashcards (a pintura fica inteira no topo). */}
+        <p className="cfh-chao">Por área, tirados das questões comentadas das provas reais e dos OrtoQuestões Simulados. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
       </section>
+
+      {cartas && acervoFalhou() && (
+        <aside className="cf-rede" role="alert">
+          <Icone nome="alerta" tamanho={20} />
+          <p><strong>Não conseguimos carregar todos os flashcards agora.</strong> A conexão falhou no meio do caminho; os números abaixo podem estar incompletos. Pedimos desculpas pelo transtorno.</p>
+          <button type="button" className="botao botao--principal" onClick={() => window.location.reload()}>Tentar de novo</button>
+        </aside>
+      )}
 
       {convite && (
         <aside className="cf-convite" role="note">
@@ -139,62 +161,71 @@ export function CentralFlashcards() {
         </aside>
       )}
 
-      <div className="cf-painel">
-        <section className="cf-hoje" aria-labelledby="cf-hoje-titulo">
-          <div className="cf-hoje__cabeca">
-            <h2 id="cf-hoje-titulo">Revisões de hoje</h2>
-            <p>{contagem.hoje
-              ? contagem.hoje >= 10 ? `${contagem.hoje.toLocaleString('pt-BR')} flashcards venceram hoje pela repetição espaçada.` : 'Alguns flashcards venceram hoje pela repetição espaçada. Poucos minutos dão conta.'
-              : contagem.estudados ? 'Nada vence hoje. Bom momento para flashcards novos.' : 'Responda os primeiros flashcards e as revisões se montam sozinhas.'}</p>
-          </div>
-          <div className="cf-hoje__grade">
-            <AtalhoEstudo destino={estudar('pendentes', Math.min(contagem.hoje || 20, 50))} rotulo="Revisões de hoje" numero={contagem.hoje} icone="calendario" desligado={!contagem.hoje} />
-            <AtalhoEstudo destino={estudar('errados', 20)} rotulo="Errei" numero={contagem.errei} icone="alerta" desligado={!contagem.errei} />
-            <AtalhoEstudo destino={estudar('hesitei', 20)} rotulo="Hesitei" numero={contagem.hesitei} icone="olho" desligado={!contagem.hesitei} />
-            <AtalhoEstudo destino={estudar('novos', 20)} rotulo="Nunca estudados" numero={novos} icone="estrela" desligado={novos === 0} />
-          </div>
-          {areas.length > 0 && <PorAssunto areas={areas} />}
-        </section>
-        <CartaoCronograma c={crono} sugerido={!salvo} />
-      </div>
+      <section className="cfa-painel" aria-labelledby="cfa-hoje">
+        <header className="cfa-painel__cabeca">
+          <h2 id="cfa-hoje">Hoje</h2>
+          <p>{contagem.hoje
+            ? contagem.hoje >= 10 ? `${contagem.hoje.toLocaleString('pt-BR')} flashcards venceram hoje pela repetição espaçada.` : 'Alguns flashcards venceram hoje pela repetição espaçada. Poucos minutos dão conta.'
+            : contagem.estudados ? 'Nada vence hoje. Bom momento para flashcards novos.' : 'Responda os primeiros flashcards e as revisões se montam sozinhas.'}</p>
+        </header>
+        <div className="cfa-celula">
+          <h3 className="cfa-titulo">Para revisar</h3>
+          <ul className="cfa-filas">
+            <Fila destino={estudar('pendentes', Math.min(contagem.hoje || 20, 50))} rotulo="Revisões de hoje" texto="Venceram pela repetição espaçada" numero={contagem.hoje} icone="calendario" destaque />
+            <Fila destino={estudar('errados', 20)} rotulo="Errei" texto="Voltam até você acertar" numero={contagem.errei} icone="alerta" />
+            <Fila destino={estudar('hesitei', 20)} rotulo="Hesitei" texto="Firmar o que ficou na dúvida" numero={contagem.hesitei} icone="olho" />
+            <Fila destino={estudar('novos', 20)} rotulo="Nunca estudados" texto="Os que você ainda não viu" numero={novos} icone="estrela" />
+          </ul>
+        </div>
+        <div className="cfa-celula cfa-celula--crono">
+          <CartaoCronograma c={crono} sugerido={!salvo} />
+        </div>
+        {areas.length > 0 && <div className="cfa-celula cfa-celula--assunto"><PorAssunto areas={areas} /></div>}
+      </section>
 
-      <section className="cfh-secao" aria-labelledby="cf-passos-titulo">
-        <h2 id="cf-passos-titulo" className="cf-titulo">Como funciona</h2>
+      <section className="cfa-secao" aria-labelledby="cfa-caminhos">
+        <h2 id="cfa-caminhos">Por onde seguir</h2>
+        <div className="cfa-caminhos">
+          <Caminho objeto="fichario" titulo="Biblioteca" texto="Estudo calmo, sem combate: por assunto, pelas revisões do dia ou pelos que você errou." destino="/flashcards/biblioteca" acao="Abrir a Biblioteca" />
+          <Caminho objeto="cripta" titulo="Torneio de Flashcards" texto={`Os mesmos flashcards em forma de jogo: cada acerto é um golpe, a cada três andares um chefe.${rec.andarMaximo ? ` Seu recorde: andar ${rec.andarMaximo}.` : ''}`} destino="/flashcards/entrada" acao="Entrar no Torneio" />
+          <Caminho objeto="medidor" titulo="Meu desempenho" texto={contagem.estudados >= 10 ? `${contagem.estudados.toLocaleString('pt-BR')} flashcards únicos estudados, por área e por assunto.` : 'O que você estudar aparece aqui, por área e por assunto, neste aparelho e na sua conta.'} destino="/flashcards/desempenho" acao="Ver desempenho"
+            medidor={total > 0 ? { feitos: Math.min(contagem.estudados, total), total } : undefined} />
+        </div>
+        <a className="cfa-ranking" href={href('/ranking?aba=flashcards')}><Icone nome="trofeu" tamanho={18} /><span><strong>Ranking dos flashcards</strong><small>Quem desceu mais fundo no Torneio</small></span><Icone nome="direita" tamanho={16} /></a>
+      </section>
+
+      <details className="cfa-como" open={!contagem.estudados}>
+        <summary><span>Como funciona</span><Icone nome="baixo" tamanho={16} /></summary>
         <ol className="cf-passos">
           <li><span className="px-numero" aria-hidden="true">1</span><div><strong>Escolha um assunto</strong><span>Por área, pelas revisões de hoje, pelos que você errou ou pelos que nunca viu.</span></div></li>
           <li><span className="px-numero" aria-hidden="true">2</span><div><strong>Responda e revise o flashcard</strong><span>Escolha a alternativa, veja o verso e diga se errou, hesitou ou sabia. A data da próxima revisão sai disso.</span></div></li>
           <li><span className="px-numero" aria-hidden="true">3</span><div><strong>Acompanhe seu aprendizado e sua progressão</strong><span>Desempenho por assunto, cronograma até a data da prova e o seu recorde no Torneio.</span></div></li>
         </ol>
-      </section>
+      </details>
 
-      <section className="cfh-secao" aria-labelledby="cf-modos-titulo">
-        <h2 id="cf-modos-titulo" className="cf-titulo">Por onde seguir</h2>
-        <div className="cf-modos">
-          <CartaoModo artes={artes} arte="biblioteca" selo="Estudo" titulo="Revisar flashcards" texto="Estudo calmo, sem combate, por assunto ou pelas revisões do dia." destino="/flashcards/biblioteca" acao="Abrir a Biblioteca" />
-          <CartaoModo artes={artes} arte="cripta" selo="Jogo" titulo="Torneio de Flashcards" texto={`Os mesmos flashcards em forma de jogo: cada acerto é um golpe. Uma jornada que começa pelo que é mais familiar e avança para seus desafios.${rec.andarMaximo ? ` Seu recorde: andar ${rec.andarMaximo}.` : ''}`} destino="/flashcards/entrada" acao="Entrar no Torneio" />
-          <CartaoModo artes={artes} arte="progresso" selo="Progresso" titulo="Meu desempenho" texto={contagem.estudados >= 10 ? `${contagem.estudados.toLocaleString('pt-BR')} flashcards únicos estudados neste aparelho e na sua conta.` : contagem.estudados ? 'Os primeiros passos já estão aqui, somando neste aparelho e na sua conta.' : 'O que você estudar aparece aqui, por área e por assunto, neste aparelho e na sua conta.'} destino="/flashcards/desempenho" acao="Ver desempenho"
-            extra={total > 0 && (
-              <span className="cf-modo__meta" role="meter" aria-label="Flashcards do acervo já estudados" aria-valuemin={0} aria-valuemax={total} aria-valuenow={Math.min(contagem.estudados, total)}>
-                <i><em style={{ width: `${Math.min(100, Math.max(contagem.estudados ? 2 : 0, (100 * contagem.estudados) / total))}%` }} /></i>
-                <small>{contagem.estudados >= 10 ? `${contagem.estudados.toLocaleString('pt-BR')} de ${total.toLocaleString('pt-BR')} do acervo` : 'A barra começa no primeiro flashcard'}</small>
-              </span>
-            )} />
-        </div>
-        <ul className="cf-links">
-          <li><a href={href('/ranking?aba=flashcards')}><Icone nome="trofeu" tamanho={18} /><span><strong>Ranking dos flashcards</strong><small>Uma jornada · um ranking</small></span><Icone nome="direita" tamanho={16} /></a></li>
-        </ul>
-      </section>
-
-      <aside className="cf-aviso" role="note">
+      {!convite && <aside className="cf-aviso" role="note">
         <Icone nome="correio" tamanho={22} />
         <p><strong>Estamos construindo os próximos flashcards com você.</strong><br />Conte o que gostou e o que podemos melhorar: a sua opinião chega direto ao painel da equipe.</p>
         <button type="button" className="botao botao--principal" onClick={() => definirOpiniao('central')}>Enviar opinião</button>
-      </aside>
+      </aside>}
 
       {opiniao && <JanelaOpiniao origem={opiniao} aoFechar={() => definirOpiniao(null)} />}
+      {/* A coruja do Arquivo ou o gato, de vez em quando, sentados num botão (easter egg). */}
+      <VisitaCronograma poleiros={POLEIROS_FLASHCARDS} />
     </article>
   )
 }
+
+/** A única ação do topo, a certa para hoje: o que venceu primeiro, depois o cronograma, depois começar ou estudar. */
+function acaoDeHoje(hoje: number, estudados: number, plano: number, textoPlano: string): { destino: string; rotulo: string; detalhe: string; icone: NomeIcone } {
+  const min = (n: number) => `~${Math.max(5, Math.round((n * 0.5) / 5) * 5)} min`
+  if (hoje > 0) return { destino: estudar('pendentes', Math.min(hoje, 50)), rotulo: 'Revisar agora', detalhe: hoje >= 10 ? `${hoje.toLocaleString('pt-BR')} revisões vencem hoje · ${min(Math.min(hoje, 50))}` : `Suas revisões de hoje · ${min(hoje)}`, icone: 'calendario' }
+  if (plano > 0) return { destino: linkSessaoCronograma(), rotulo: estudados ? `Seguir cronograma · faltam ${plano.toLocaleString('pt-BR')}` : 'Começar pelos que mais caem', detalhe: `${textoPlano} · ${min(plano)}`, icone: 'rota' }
+  return { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', detalhe: 'Biblioteca · estudo calmo', icone: 'livro' }
+}
+
+/** Onde a coruja ou o gato podem sentar nos Flashcards, em ordem de preferência. */
+const POLEIROS_FLASHCARDS = ['.cf-crono__botoes .botao', '.cf-assunto button', '.cfa-ranking', '.cf-aviso .botao', '.cfa-caminho']
 
 /**
  * A frase pessoal do topo (adendo do dono, 18/10/2026): o primeiro nome e até duas observações com
@@ -213,17 +244,18 @@ function mensagemPessoal(nome: string, hoje: number, estudados: number, andar: n
   return { abertura, dados: obs.slice(0, 2).join(' ') }
 }
 
-function AtalhoEstudo({ destino, rotulo, numero, icone, desligado }: { destino: string; rotulo: string; numero: number | null; icone: NomeIcone; desligado: boolean }) {
-  const conteudo = (
-    <>
-      <span className="cf-atalho__rotulo"><Icone nome={icone} tamanho={16} />{rotulo}</span>
-      <b className="numerico">{numero === null ? '…' : numero.toLocaleString('pt-BR')}</b>
-      <small>{desligado ? (numero === null ? 'Carregando' : 'Nada por aqui') : <>Estudar <Icone nome="direita" tamanho={13} /></>}</small>
-    </>
-  )
-  return desligado
-    ? <span className="cf-atalho cf-atalho--vazio" aria-disabled="true">{conteudo}</span>
-    : <a className="cf-atalho" href={href(destino)}>{conteudo}</a>
+/** Uma fila do painel Hoje: ícone, nome, para que serve, o número em fonte pixel e a seta. Vazia, fica apagada. */
+function Fila({ destino, rotulo, texto, numero, icone, destaque }: { destino: string; rotulo: string; texto: string; numero: number | null; icone: NomeIcone; destaque?: boolean }) {
+  const vazia = !numero
+  const corpo = <>
+    <span className="cfa-fila__icone" aria-hidden="true"><Icone nome={icone} tamanho={18} /></span>
+    <span className="cfa-fila__texto"><strong>{rotulo}</strong><small>{numero === null ? 'Carregando…' : vazia ? 'Nada por aqui' : texto}</small></span>
+    <b className="cfa-fila__numero numerico">{numero === null ? '…' : numero.toLocaleString('pt-BR')}</b>
+    {!vazia && <Icone nome="direita" tamanho={16} />}
+  </>
+  return <li>{vazia
+    ? <span className="cfa-fila cfa-fila--vazia" aria-disabled="true">{corpo}</span>
+    : <a className={'cfa-fila' + (destaque ? ' cfa-fila--destaque' : '')} href={href(destino)} aria-label={`${rotulo}: ${numero!.toLocaleString('pt-BR')}. Estudar`}>{corpo}</a>}</li>
 }
 
 function PorAssunto({ areas }: { areas: Array<[string, string]> }) {
@@ -242,22 +274,25 @@ function PorAssunto({ areas }: { areas: Array<[string, string]> }) {
   )
 }
 
-function CartaoModo({ artes, arte, selo, titulo, texto, destino, acao, extra }: { artes: boolean; arte: string; selo: string; titulo: string; texto: string; destino: string; acao: string; extra?: ReactNode }) {
+/** Um caminho com o seu objeto pixel animado (o fichário abre a gaveta; a escada da Cripta acende; o medidor enche). */
+function Caminho({ objeto, titulo, texto, destino, acao, medidor }: { objeto: 'fichario' | 'cripta' | 'medidor'; titulo: string; texto: string; destino: string; acao: string; medidor?: { feitos: number; total: number } }) {
+  const pctFeito = medidor ? Math.min(100, Math.max(medidor.feitos ? 2 : 0, (100 * medidor.feitos) / medidor.total)) : 0
   return (
-    <a className={`cf-modo cf-modo--${arte}`} href={href(destino)}>
-      <span className="cf-modo__arte">
-        {artes ? <img src={recurso(`flashcards/promo/cartao-${arte}.png`)} alt="" width={260} height={150} loading="lazy" decoding="async" /> : <i className="cf-modo__vaga" aria-hidden="true" />}
-        <span className="cf-modo__selo">{selo}</span>
-      </span>
-      <span className="cf-modo__corpo">
+    <a className={`cfa-caminho cfa-caminho--${objeto}`} href={href(destino)}>
+      {objeto === 'medidor'
+        ? <span className="cfa-objeto cfa-objeto--medidor" aria-hidden="true"><i style={{ ['--feito-n' as string]: pctFeito / 100 }} /></span>
+        : <span className={`cfa-objeto cfa-objeto--${objeto}`} aria-hidden="true" style={OBJETOS} />}
+      <span className="cfa-caminho__corpo">
         <strong>{titulo}</strong>
         <span>{texto}</span>
-        {extra}
-        <em>{acao} <i aria-hidden="true"><Icone nome="direita" tamanho={14} /></i></em>
+        {medidor && <span className="cfa-caminho__meta" role="meter" aria-label="Flashcards do acervo já estudados" aria-valuemin={0} aria-valuemax={medidor.total} aria-valuenow={medidor.feitos}>
+          {medidor.feitos >= 10 ? `${medidor.feitos.toLocaleString('pt-BR')} de ${medidor.total.toLocaleString('pt-BR')} do acervo` : 'A barra começa no primeiro flashcard'}</span>}
+        <em>{acao} <Icone nome="direita" tamanho={14} /></em>
       </span>
     </a>
   )
 }
+const OBJETOS = { '--ca-objetos': urlCss('pixel/flashcards/objetos.png') } as CSSProperties
 
 /* -------------------------------------------------------------- Desempenho */
 
@@ -272,16 +307,17 @@ export function DesempenhoFlashcards() {
   const { cartas, nomes } = usarAcervo()
   const [dias, definirDias] = useState(30)
   const est = useMemo(() => (cartas ? calcularEstatisticas(cartas, nomes, dias) : null), [cartas, nomes, dias])
-  if (!est) return <article className="cf empilha-2"><Abas atual="desempenho" /><p role="status">Carregando o acervo…</p></article>
+  if (!est) return <article className="cf empilha-2 cf--arquivo"><Abas atual="desempenho" /><p role="status" className="cf-sobre-piso">Carregando o acervo…</p></article>
   const p = est.periodo
   const avaliacoes = p.errei + p.hesitei + p.sabia
   const fracos = est.porAssunto.filter((a) => a.acertos < a.tentativas).slice(0, 6)
   const estudadas = est.porArea.filter((a) => a.estudados > 0)
   const naoEstudadas = est.porArea.filter((a) => !a.estudados)
   return (
-    <article className="cf empilha-2">
+    <article className="cf empilha-2 cf--arquivo">
       <Abas atual="desempenho" />
-      <header className="cf-cabeca">
+      <header className="cf-cabeca cf-cabeca--arquivo">
+        <CenaArquivo />
         <p className="cf-selo">Flashcards</p>
         <h1>Meu desempenho nos flashcards</h1>
         <p>O aprendizado conta junto o que você responde na Biblioteca e no Torneio. Andares, ouro e chefes do jogo ficam de fora destes números.</p>

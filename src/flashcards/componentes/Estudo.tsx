@@ -1,6 +1,6 @@
 import { GatoBiblioteca } from '../../eventos/GatoBiblioteca'
 import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
-import { registrarEstudo } from '../aprendizagem'
+import { prazoDaAvaliacao, registrarEstudo } from '../aprendizagem'
 import { gravar, ler } from '../../estado/armazenamento'
 import { revisarHoje } from '../../estado/revisao'
 import { indiceDoAcervo, todasAsCartas } from '../dados/acervo'
@@ -310,6 +310,8 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
   const nome = String(meta?.nome ?? '').trim().split(/\s+/)[0] || 'Você'
   const nomeMostrado = nome !== 'Você' && meta?.situacao === 'ortopedista' ? `Dr. ${nome}` : nome
   const carta = porId.get(fila[Math.min(pos, fila.length - 1)])!
+  // O registro deste flashcard antes da resposta: dá o prazo verdadeiro de cada botão de autoavaliação.
+  const anterior = virada && carta ? ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})[carta.id] : undefined
   // pré-carrega a imagem dos dois próximos flashcards: a figura chega pronta, sem pulo
   useEffect(() => {
     for (const id of fila.slice(pos + 1, pos + 3)) {
@@ -435,7 +437,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
           <p className="fc-estudo__hora-fim">A luz chegou a: <b>{hora.hora.nome}</b> · {acertos} {acertos === 1 ? 'acerto' : 'acertos'}</p>
           <DiarioBiblioteca diario={diario} />
           {cronograma && <FimCronograma aoAdiantar={aoAdiantar} />}
-          <p className="fc-janela__nota">Os que você errou voltam hoje; os que hesitou, em 3 dias; os que sabia, em 10.</p>
+          <p className="fc-janela__nota">Os que você errou voltam hoje. Os outros voltam no prazo do próprio degrau: quanto mais vezes você acerta, mais longe vai a próxima revisão (Hesitei: 3, 7, 21 e 45 dias; Sabia: 10, 30, 90 e 180).</p>
           <div className="fc-janela__botoes">
             <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_sessao')}>Enviar opinião</a>
             <button ref={voltarRef} type="button" className="fc-botao" onClick={aoTerminar}>Voltar à biblioteca</button>
@@ -526,9 +528,9 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar, aoHumor, aoTranq
         {virada ? (
           <>
             {escolha !== null && <p className={`fc-estudo__veredito fc-estudo__veredito--${errouNaAlternativa ? 'errou' : 'acertou'}`} role="status">{errouNaAlternativa ? 'Você errou na alternativa. Como foi de verdade?' : 'Acertou! Foi com segurança?'}<small className="fc-estudo__dica-tecla"> Enter aceita o sugerido</small></p>}
-            <button type="button" className={`fc-botao-aval fc-botao-aval--errei${errouNaAlternativa ? ' fc-botao-aval--sugerido' : ''}`} onClick={() => avaliar('errei')}><i aria-hidden="true">1</i><strong>Errei</strong><small>volta hoje</small></button>
-            <button type="button" className="fc-botao-aval fc-botao-aval--hesitei" onClick={() => avaliar('hesitei')}><i aria-hidden="true">2</i><strong>Hesitei</strong><small>volta em 3 dias</small></button>
-            <button type="button" className={`fc-botao-aval fc-botao-aval--sabia${escolha !== null && !errouNaAlternativa ? ' fc-botao-aval--sugerido' : ''}`} onClick={() => avaliar('sabia')}><i aria-hidden="true">3</i><strong>Sabia</strong><small>volta em 10 dias</small></button>
+            <button type="button" className={`fc-botao-aval fc-botao-aval--errei${errouNaAlternativa ? ' fc-botao-aval--sugerido' : ''}`} onClick={() => avaliar('errei')}><i aria-hidden="true">1</i><strong>Errei</strong><small>{prazoDaAvaliacao(anterior, 'errei')}</small></button>
+            <button type="button" className="fc-botao-aval fc-botao-aval--hesitei" onClick={() => avaliar('hesitei')}><i aria-hidden="true">2</i><strong>Hesitei</strong><small>{prazoDaAvaliacao(anterior, 'hesitei')}</small></button>
+            <button type="button" className={`fc-botao-aval fc-botao-aval--sabia${escolha !== null && !errouNaAlternativa ? ' fc-botao-aval--sugerido' : ''}`} onClick={() => avaliar('sabia')}><i aria-hidden="true">3</i><strong>Sabia</strong><small>{prazoDaAvaliacao(anterior, 'sabia')}</small></button>
           </>
         ) : mostrarAlternativas ? (
           <>

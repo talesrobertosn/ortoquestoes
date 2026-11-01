@@ -11,9 +11,12 @@ import { BARALHO_DEMO } from './baralhoDemo'
 let cartas: Flashcard[] = BARALHO_DEMO
 let indice: IndiceAcervo | null = null
 let carregando: Promise<Flashcard[]> | null = null
+let falhou = false
 
 export function todasAsCartas() { return cartas }
 export function indiceDoAcervo() { return indice }
+/** A rede falhou e só o baralho de demonstração está carregado (a central avisa e oferece tentar de novo). */
+export function acervoFalhou() { return falhou }
 
 export function carregarAcervo(): Promise<Flashcard[]> {
   if (carregando) return carregando
@@ -31,8 +34,10 @@ export function carregarAcervo(): Promise<Flashcard[]> {
       const demo = new Set(BARALHO_DEMO.map((c) => c.questao))
       cartas = [...BARALHO_DEMO, ...listas.flat().filter((c) => !demo.has(c.questao))]
       indice = ind
+      falhou = false
     } catch {
       cartas = BARALHO_DEMO
+      falhou = true
     }
     return cartas
   })()
