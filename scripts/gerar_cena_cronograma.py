@@ -19,6 +19,7 @@ Saída em public/pixel/cronograma/:
 - torre-tempo-<manha|tarde|noite>.webp (1440 x 600) e -960.webp (960 x 400): o fundo, sem o sino;
 - torre-tempo-sino-<hora>.png: o sino recortado já com a luz da hora, para balançar por cima (raramente).
 Uso: <python com numpy e pillow> scripts/gerar_cena_cronograma.py [manha|tarde|noite]
+     ... scripts/gerar_cena_cronograma.py chao   (torre-tempo-chao.webp: o chão de pedra da praça, fundo da página)
 """
 from __future__ import annotations
 
@@ -892,6 +893,55 @@ def gerar(periodo: str) -> None:
     print(f"{nome}: {tam[0]} KB, 960: {tam[1]} KB; sino em x {x0}-{x1}, y {y0}-{y1} (de 1440 x 600)")
 
 
+def chao_da_praca() -> None:
+    """O chão da praça que continua a cena embaixo do topo (o fundo da página do cronograma): paralelepípedos
+    irregulares de pedra escura, cada um com o seu tom, chanfro claro no alto à esquerda, sombra embaixo à direita,
+    rejunte com musgo e algumas lascas. Ladrilho de 160 x 160 que se repete sem emenda (as sementes dão a volta)."""
+    T = 160
+    g = np.random.default_rng(907)
+    # Centros das pedras numa grade com tremor (fiadas desencontradas), repetida em volta para o ladrilho fechar.
+    cent = []
+    for j in range(0, T, 11):
+        for i in range(0, T, 14):
+            off = 7 if (j // 11) % 2 else 0
+            cent.append(((i + off + g.uniform(-3, 3)) % T, (j + g.uniform(-2, 2)) % T))
+    cent = np.array(cent, dtype=np.float32)
+    ys, xs = np.mgrid[0:T, 0:T].astype(np.float32)
+    d1 = np.full((T, T), 1e9, np.float32); d2 = d1.copy(); idx = np.zeros((T, T), np.int32)
+    for k, (cx, cy) in enumerate(cent):
+        dx = np.abs(xs - cx); dx = np.minimum(dx, T - dx)
+        dy = np.abs(ys - cy); dy = np.minimum(dy, T - dy)
+        d = np.hypot(dx * 0.82, dy * 1.05)
+        menor = d < d1
+        d2 = np.where(menor, d1, np.minimum(d2, d))
+        idx = np.where(menor, k, idx)
+        d1 = np.where(menor, d, d1)
+    borda = d2 - d1
+    tom = np.array([hash01(k, 3, 907) for k in range(len(cent))], np.float32)[idx]
+    # chanfro: a luz vem de cima à esquerda (como no topo); o lado de baixo à direita da pedra escurece
+    cxp, cyp = cent[idx, 0], cent[idx, 1]
+    rx = xs - cxp; rx = (rx + T / 2) % T - T / 2
+    ry = ys - cyp; ry = (ry + T / 2) % T - T / 2
+    luz = np.clip(-(rx * 0.6 + ry * 0.8) / 7, -1, 1)
+    n = v.ruido(911, 2, 2, T, T)
+    base = 0.17 + tom * 0.09 + luz * 0.05 * np.clip(borda / 3, 0, 1) + (n - 0.5) * 0.04
+    pedra = np.stack([base * 0.92, base * 0.98, base * 1.06], 2)
+    pedra = pedra + (np.clip(1.4 - borda, 0, 1) * (luz > 0.25))[:, :, None] * 0.07  # aresta clara
+    rejunte = borda < 1.25
+    musgo = (v.ruido(913, 5, 5, T, T) > 0.58) & rejunte
+    cor = np.where(rejunte[:, :, None], np.array([0.07, 0.08, 0.085], np.float32), pedra)
+    cor = np.where(musgo[:, :, None], np.array([0.12, 0.17, 0.1], np.float32), cor)
+    lasca = (n > 0.82) & (borda > 2.5) & (tom > 0.6)
+    cor = np.where(lasca[:, :, None], cor * 1.35, cor)
+    img = Image.fromarray((np.clip(cor, 0, 1) * 255).astype(np.uint8)).resize((T * ESC, T * ESC), Image.NEAREST)
+    PASTA.mkdir(parents=True, exist_ok=True)
+    img.save(PASTA / "torre-tempo-chao.webp", quality=80, method=6)
+    print("torre-tempo-chao:", (PASTA / "torre-tempo-chao.webp").stat().st_size // 1024, "KB")
+
+
 if __name__ == "__main__":
+    if "chao" in sys.argv[1:]:
+        chao_da_praca()
+        sys.exit()
     for p in [a for a in sys.argv[1:] if a in PERIODOS] or list(PERIODOS):
         gerar(p)
