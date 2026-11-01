@@ -1,0 +1,34 @@
+{
+  "id": "mao-0691",
+  "origem": "FMRP-USP 2026",
+  "prova": "FMRP-USP",
+  "simulado": false,
+  "tema": "Mão e punho",
+  "temaSlug": "mao",
+  "subtema": "Queimaduras",
+  "enunciado": "De acordo com a 11ª edição do ATLS, de 2025, como deve ser iniciada a reposição volêmica endovenosa do paciente queimado adulto, vítima de queimadura térmica?",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "Início imediato de reposição de Ringer lactato 1.000ml por hora.",
+      "porque": "1.000 mL por hora é o dobro da taxa inicial recomendada para o adulto e favorece o excesso de volume (fluid creep)."
+    },
+    {
+      "letra": "B",
+      "texto": "Início imediato de reposição de Ringer lactato 250ml por hora.",
+      "porque": "250 mL por hora é a taxa inicial para a criança de 6 a 13 anos, e não para o adulto."
+    },
+    {
+      "letra": "C",
+      "texto": "Início imediato de reposição de Ringer lactato 750ml por hora.",
+      "porque": "750 mL por hora não é a taxa inicial do ATLS. Para o adulto, são 500 mL por hora."
+    },
+    {
+      "letra": "D",
+      "texto": "Início imediato de reposição de Ringer lactato 500ml por hora.",
+      "porque": "Pelo ATLS (11ª edição), o adulto queimado (14 anos ou mais) inicia imediatamente a reposição com Ringer lactato a 500 mL por hora, até que a fórmula baseada no peso e na superfície queimada seja calculada."
+    }
+  ],
+  "gabarito": "D"
+}

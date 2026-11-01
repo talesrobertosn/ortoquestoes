@@ -1,0 +1,34 @@
+{
+  "id": "joelho-0191",
+  "origem": "TEOT 2025",
+  "prova": "TEOT",
+  "simulado": false,
+  "tema": "Joelho",
+  "temaSlug": "joelho",
+  "subtema": "Artroplastia total do joelho",
+  "enunciado": "Para o diagnóstico de infecção após artroplastia do joelho, segundo os critérios da Sociedade de Infecção Musculoesquelética (MSIS), é considerado critério maior:",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "Presença de fístula.",
+      "porque": "Uma fístula comunicando com a prótese é critério maior da MSIS e, sozinha, estabelece o diagnóstico de infecção periprotética."
+    },
+    {
+      "letra": "B",
+      "texto": "Alfa-defensina positiva.",
+      "porque": "A alfa-defensina não fazia parte dos critérios da MSIS de 2011. Ela entrou depois, em 2018, como critério menor."
+    },
+    {
+      "letra": "C",
+      "texto": "Purulência intra-operatória.",
+      "porque": "A purulência intraoperatória era um critério menor em 2011 e foi retirada nas revisões seguintes, por poder ocorrer em reações a partículas de metal."
+    },
+    {
+      "letra": "D",
+      "texto": "Uma amostra de cultura positiva.",
+      "porque": "Uma única cultura positiva é critério menor, porque pode ser contaminação. O critério maior exige duas culturas com o mesmo microrganismo."
+    }
+  ],
+  "gabarito": "A"
+}

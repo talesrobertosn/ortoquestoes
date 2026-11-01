@@ -227,6 +227,13 @@ O Tales **recusou**:
 - **Menu (Portal do Aventureiro):** pop-up branco, busca universal, "Continue sua jornada", os seis atalhos sem fogo
   (01/11/2026) e os visitantes.
 - **Biblioteca:** estante e lista, busca com sugestões, salão de leitura com a coruja e o gato.
+- **Entrar e criar conta (01/11/2026, "Portal do Conhecimento"):** o salão de leitura do castelo
+  (`scripts/gerar_cena_portal.py`, dia no tema claro e noite no escuro) é o fundo do primeiro bloco: título à esquerda,
+  o esqueleto de jaleco em tamanho de gente junto ao atril (comemora o acerto da ficha) e o painel de entrar inteiro à
+  direita, com a coruja na borda (vira para olhar quando um campo recebe o foco). Embaixo, a ficha com uma questão real
+  (outra a cada F5 ou no botão; `scripts/gerar_amostras_acesso.py`), o gato na beira da ficha, as provas do acervo e
+  a jornada com a vitrine de emblemas. O e-mail de quem entrou por último não vem preenchido: vira "Continuar como…",
+  mascarado, com "Não sou eu".
 - **Revisão, Caderno de erros e Favoritas (01/11/2026):** o mesmo topo pintado, `componentes/vila/TopoVila.tsx`
   (pontos de cada cena em `componentes/vila/cenas.ts`). A cena da hora do dia sai de `scripts/gerar_cena_estufa.py`,
   `scripts/gerar_cena_treino.py` e `scripts/gerar_cena_gabinete.py` (480 x 160, recorte do celular a partir de x 184).

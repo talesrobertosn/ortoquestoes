@@ -1,0 +1,39 @@
+{
+  "id": "coluna-0561",
+  "origem": "ENARE Cirurgia da Mão 2023",
+  "prova": "ENARE Cirurgia da Mão",
+  "simulado": false,
+  "tema": "Coluna",
+  "temaSlug": "coluna",
+  "subtema": "Anatomia da coluna",
+  "enunciado": "Em relação à medula espinal, os tratos possuem grande importância clínica. Assinale a alternativa que apresenta o responsável pela sensibilidade dolorosa e da temperatura.",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "Fascículo grácil e cuneiforme.",
+      "porque": "Grácil e cuneiforme pertencem às colunas posteriores. Transportam vibração, posição articular e tato discriminativo; não são a via principal da dor e da temperatura pedidas."
+    },
+    {
+      "letra": "B",
+      "texto": "Tratos corticospinal lateral e ventral.",
+      "porque": "Corticospinal é motor e descendente. Seus feixes conduzem comandos para movimentos voluntários, em vez de levar ao encéfalo a sensação provocada por um estímulo doloroso ou térmico."
+    },
+    {
+      "letra": "C",
+      "texto": "Tratos espinocerebelares ventral e dorsal.",
+      "porque": "Espinocerebelar leva propriocepção ao cerebelo. Informa posição e movimento para coordenação, sem ser a via principal da percepção consciente de dor ou temperatura."
+    },
+    {
+      "letra": "D",
+      "texto": "Trato espinotalâmico lateral.",
+      "porque": "É a via ascendente classicamente associada a dor e temperatura. Após entrar na medula, as fibras fazem conexão e cruzam para o lado oposto antes de subir no sistema anterolateral."
+    },
+    {
+      "letra": "E",
+      "texto": "Trato espinotalâmico ventral.",
+      "porque": "O espinotalâmico ventral é a alternativa vizinha que confunde. Na divisão didática clássica, sua porção anterior carrega tato grosseiro e pressão, enquanto a lateral é destacada para dor e temperatura."
+    }
+  ],
+  "gabarito": "D"
+}
