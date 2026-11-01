@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { gravar, ler } from '../../estado/armazenamento'
+import { Icone } from '../Icone'
 import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixel'
 import { GatoPixel } from '../mascote/GatoPixel'
 import type { IdLinhaGato } from '../mascote/sprites'
@@ -117,6 +118,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     const n = falas.current++
     const texto = n > 0 && n % 6 === 5 ? FALAS[(n / 6 | 0) % FALAS.length] : proximaFala('coruja', CONCEITOS_CORUJA)
     definirFala(texto)
+    definirMiau(null)
     if (gato !== 'longe') definirGato('reagindo')
     depois(() => definirEstadoCoruja('repouso'), 900)
     depois(() => definirFala((f) => (f === texto ? null : f)), 11000)
@@ -126,6 +128,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     definirGato('reagindo')
     const texto = proximaFala('gato', FALAS_GATO)
     definirMiau(texto)
+    definirFala(null)
     depois(() => definirMiau((m) => (m === texto ? null : m)), 5500)
     // Depois de falar, fica sentado acordado um tempo e só então volta a dormir (sem deitar e levantar em seguida).
     depois(() => definirGato((g) => (g === 'reagindo' ? 'sentado' : g)), 1600)
@@ -141,7 +144,9 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     <>
       {coruja !== 'longe' && (
         <div className={`pt-coruja pt-coruja--${coruja}`}>
-          {fala && naFaixa(<p className="pt-coruja__fala" role="status" onClick={() => definirFala(null)}>{celular && <b>Coruja: </b>}{fala}</p>)}
+          {fala && (celular
+            ? naFaixa(<Dialogo quem="Coruja" retrato={<CorujaPixel estado="parada" />} texto={fala} aoFechar={() => definirFala(null)} />)
+            : <p className="pt-coruja__fala" role="status" onClick={() => definirFala(null)}>{fala}</p>)}
           <button type="button" className="pt-coruja__botao" onClick={tocarCoruja} aria-label="A coruja bibliotecária: um conceito que cai na prova">
             <CorujaPixel estado={estadoCoruja} />
           </button>
@@ -149,12 +154,28 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
       )}
       {gato !== 'longe' && (
         <div className={`pt-gato pt-gato--${gato}`}>
-          {miau && naFaixa(<span className="pt-gato__miau" role="status" onClick={() => definirMiau(null)}>{celular && <b>Gato: </b>}{miau}</span>)}
+          {miau && (celular
+            ? naFaixa(<Dialogo quem="Gato" retrato={<GatoPixel estado="sentado" />} texto={miau} aoFechar={() => definirMiau(null)} />)
+            : <span className="pt-gato__miau" role="status" onClick={() => definirMiau(null)}>{miau}</span>)}
           <button type="button" className="pt-gato__botao" onClick={tocarGato} aria-label="O gato do OrtoQuestões: tocar">
             <GatoPixel estado={linhaGato} />
           </button>
         </div>
       )}
     </>
+  )
+}
+
+/**
+ * A fala no celular (01/11/2026, Tales: "o balão tá bugado, tá feio, organiza isso"): uma caixa de diálogo só, como nos
+ * jogos de RPG, com o retrato de quem fala, o nome, a frase e o X para fechar. Um bicho fala de cada vez.
+ */
+function Dialogo({ quem, retrato, texto, aoFechar }: { quem: string; retrato: ReactNode; texto: string; aoFechar: () => void }) {
+  return (
+    <div className="pt-dialogo" role="status">
+      <span className="pt-dialogo__retrato" aria-hidden="true">{retrato}</span>
+      <p className="pt-dialogo__texto"><b>{quem}</b>{texto}</p>
+      <button type="button" className="pt-dialogo__fechar" onClick={aoFechar} aria-label="Fechar a fala"><Icone nome="fechar" tamanho={16} /></button>
+    </div>
   )
 }

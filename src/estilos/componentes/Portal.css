@@ -292,9 +292,18 @@
 }
 /* A faixa das falas no celular: fica vazia (sem altura) até alguém falar; a fala entra como um balão de diálogo. */
 .pt-fala-faixa:empty { display: none; }
-.pt-fala-faixa { display: grid; gap: 0.4rem; padding: 0.55rem 1rem 0; }
-.pt-fala-faixa :is(.pt-coruja__fala, .pt-gato__miau) { position: static; width: auto; max-width: none; margin: 0; font-size: 0.8125rem; font-weight: 500; line-height: 1.4; cursor: pointer; }
-.pt-fala-faixa b { font-weight: 800; }
+.pt-fala-faixa { position: relative; z-index: 3; padding: 0.6rem 1rem 0.2rem; }
+/* A caixa de diálogo: retrato numa moldura, nome em dourado e a frase; o mesmo papel do menu (claro ou escuro). */
+.pt-dialogo { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; padding: 0.55rem 0.4rem 0.55rem 0.55rem;
+  border: 1px solid var(--pt-linha); border-radius: 14px; background: var(--pt-cartao); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12), inset 0 0 0 1px var(--pt-brilho, transparent);
+  animation: pt-fala 0.18s ease-out; }
+.pt-dialogo__retrato { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 12px; background: var(--pt-papel-2); overflow: hidden; }
+.pt-dialogo__retrato .coruja-pixel { --coruja-escala: 1.4; }
+.pt-dialogo__retrato .gato-pixel { width: 64px; height: 48px; }
+.pt-dialogo__texto { display: grid; gap: 0.1rem; margin: 0; font-size: 0.875rem; line-height: 1.4; color: var(--pt-tinta); text-wrap: pretty; }
+.pt-dialogo__texto b { font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pt-ouro); }
+.pt-dialogo__fechar { display: grid; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 10px; background: transparent; color: var(--pt-tinta-2); cursor: pointer; }
+.pt-dialogo__fechar:focus-visible { outline: 3px solid var(--pt-verde); outline-offset: 1px; }
 /* Point and click: passar o mouse num bicho acende um contorno dourado (dá para clicar e ele fala). */
 @media (hover: hover) { :is(.pt-coruja__botao, .pt-gato__botao):hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }
 /* O texto da fogueira para antes da coruja, que pousa entre ele e o X; no celular a linha de baixo quebra em duas. */
