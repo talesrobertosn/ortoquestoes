@@ -195,11 +195,14 @@
   .tn-segmentos { grid-template-columns: 1fr; }
   .tn-bilhete__comecar { display: none !important; }
   .tn-barra {
-    position: fixed; z-index: 30; left: 0; right: 0; bottom: calc(var(--altura-nav-mobile, 64px) + env(safe-area-inset-bottom));
-    display: flex; align-items: center; gap: var(--e-3); padding: var(--e-2) var(--e-4);
-    background: color-mix(in srgb, var(--superficie) 92%, transparent); backdrop-filter: blur(10px);
-    border-top: 2px solid var(--px-borda);
+    position: fixed; z-index: 30; left: 0; right: 0; bottom: calc(var(--altura-nav-mobile, 3.3rem) + env(safe-area-inset-bottom));
+    display: flex; align-items: center; gap: var(--e-3);
+    padding: 0.5rem max(1rem, env(safe-area-inset-right)) 0.35rem max(1rem, env(safe-area-inset-left));
+    background: var(--nav-material, var(--superficie));
+    box-shadow: 0 -0.5px 0 var(--nav-filete, var(--traco));
   }
+  /* A barra de começar e o menu viram uma base só: o menu perde o filete de cima. */
+  body:has(.tn-barra) .navegacao-mobile { box-shadow: none; }
   .tn-barra__resumo { display: grid; flex: 0 1 auto; margin: 0; min-width: 0; line-height: 1.2; }
   .tn-barra__resumo strong { font-size: var(--corpo-menor); }
   .tn-barra__resumo span { color: var(--texto-2); font-size: var(--meta); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -403,8 +406,13 @@
 }
 .botao.tn-bilhete__comecar:hover:not(:disabled) { color: #2a1a06; background: linear-gradient(180deg, #ffe3a3, #f5bf5a); transform: translateY(-2px); }
 @media (max-width: 40rem) {
-  .botao.tn-barra__comecar { border-radius: 999px; background: linear-gradient(180deg, #ffd98a, #f0b54a); color: #2a1a06; box-shadow: inset 0 0 0 1px rgba(255, 240, 200, 0.7), 0 8px 20px -8px rgba(255, 170, 60, 0.6); }
-  .tn-barra { border-top: 1px solid var(--traco); border-radius: 18px 18px 0 0; }
+  .botao.tn-barra__comecar {
+    min-height: 2.75rem; padding: 0.35rem 1.1rem; border-radius: 999px; font-size: 0.95rem;
+    background: linear-gradient(180deg, #ffd98a, #f0b54a); color: #2a1a06;
+    box-shadow: inset 0 0 0 1px rgba(255, 240, 200, 0.7), 0 4px 12px -6px rgba(255, 170, 60, 0.55);
+    transition: transform 0.3s var(--mola, ease);
+  }
+  .botao.tn-barra__comecar:active:not(:disabled) { transform: scale(0.96); transition-duration: 0.08s; }
 }
 .tn-bilhete .tr-heroi__selo { padding: 0.25rem 0.75rem; border-radius: 999px; background: rgba(240, 196, 106, 0.14); color: #f3d48e; box-shadow: inset 0 0 0 1px rgba(240, 196, 106, 0.35);
   font-family: var(--fonte-texto); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; }
