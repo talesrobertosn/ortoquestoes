@@ -1,13 +1,15 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { AtalhoFlashcards } from '../componentes/AtalhoFlashcards'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { DetalhesDiaSemana, DetalhesNumeros, DetalhesProvas, DetalhesSemanas, usarDetalhes } from '../componentes/DesempenhoDetalhado'
 import { GraficoColunas, Medidor } from '../componentes/GraficosDesempenho'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
-import { fraseGratis } from '../config'
+import { GatoPixel } from '../componentes/mascote/GatoPixel'
+import { fraseGratis, recurso } from '../config'
 import { usarConta } from '../conta/ContextoConta'
 import { usarIndice } from '../dados/usarIndice'
+import { type Periodo, usarPeriodo } from '../estado/aparencia'
 import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
 import { conquistaAtual, proximaConquista } from '../estado/conquistas'
 import { chaveDia } from '../estado/planoRevisao'
@@ -19,11 +21,51 @@ import { href } from '../util/rotas'
 import '../estilos/paginas/Desempenho.css'
 
 /*
- * Seu desempenho (rota /dados), refeita em 18/10/2026 na identidade do Treinar.
- * Três capítulos, de cima para baixo: o placar (acerto, respondidas, sequência),
- * onde você está forte e fraco (temas, provas, confiança) e como evoluiu, com o
- * que fazer agora levando ao Treinar. Os cálculos são os mesmos de antes.
+ * Seu desempenho (rota /dados). Refeita em 18/10/2026 na identidade do Treinar e, em 31/10/2026, no observatório da
+ * vila (cena HD-2D de scripts/gerar_cena_observatorio.py): o título sobre a parte calma da pintura, o placar numa
+ * bancada logo abaixo da arte (a luneta nunca fica coberta) e três capítulos, onde você está, como evoluiu e o que
+ * fazer agora. Os cálculos são os mesmos de antes; a arte é só ambiente (aria-hidden) e todo número é texto.
  */
+
+/* A cena: 480 x 160 pixels de arte; no celular, o recorte de x 184 até a borda (observatorio-*-movel.webp). */
+const ARTE = { w: 480, h: 160, movelX: 184 }
+const lugar = (x: number, y: number, w: number, h: number) => ({
+  '--l': `${(x / ARTE.w) * 100}%`, '--lm': `${((x - ARTE.movelX) / (ARTE.w - ARTE.movelX)) * 100}%`,
+  '--t': `${(y / ARTE.h) * 100}%`, '--w': `${(w / ARTE.w) * 100}%`, '--wm': `${(w / (ARTE.w - ARTE.movelX)) * 100}%`, '--h': `${(h / ARTE.h) * 100}%`,
+}) as CSSProperties
+/** Poeira no feixe da fenda: poucos pontos, cada um no seu ritmo. */
+const POEIRA = [[300, 74, 7, 0], [318, 92, 9, -3], [334, 70, 8, -5], [346, 104, 10, -2], [312, 116, 9, -6], [358, 84, 11, -4], [326, 128, 8, -1], [292, 96, 10, -7]]
+
+function CenaObservatorio({ periodo }: { periodo: Periodo }) {
+  const palco = useRef<HTMLDivElement>(null)
+  const [visivel, definirVisivel] = useState(true)
+  // Fora da tela, a chama e a poeira param (nada de animação gastando bateria lá embaixo na página).
+  useEffect(() => {
+    const el = palco.current
+    if (!el || typeof IntersectionObserver === 'undefined') return
+    const io = new IntersectionObserver(([e]) => definirVisivel(e.isIntersecting))
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+  const arte = (sufixo: string) => recurso(`pixel/paginas/observatorio-${periodo}${sufixo}.webp`)
+  return (
+    <div ref={palco} className={`ds-palco ds-palco--${periodo}${visivel ? '' : ' ds-palco--parado'}`} aria-hidden="true">
+      {/* Só a variante da hora e do tamanho certos é baixada: o <source> do celular é o recorte próprio da sala. */}
+      <picture>
+        <source media="(max-width: 40rem)" srcSet={arte('-movel')} width={888} height={480} />
+        <img className="ds-palco__arte" src={arte('')} srcSet={`${arte('-960')} 960w, ${arte('')} 1440w`} sizes="(max-width: 76rem) 100vw, 76rem"
+          width={1440} height={480} alt="" decoding="async" fetchPriority="high" draggable={false} />
+      </picture>
+      {periodo !== 'manha' && <span className="ds-palco__peca ds-palco__chama" style={lugar(425, 64, 62, 62)} />}
+      <span className="ds-palco__peca ds-palco__chama ds-palco__chama--vela" style={lugar(244, 66, 31, 31)} />
+      <span className="ds-palco__peca ds-palco__poeira" style={lugar(280, 60, 100, 80)}>
+        {POEIRA.map(([x, y, t, d], i) => <i key={i} style={{ left: `${((x - 280) / 100) * 100}%`, top: `${((y - 60) / 80) * 100}%`, '--t': `${t}s`, '--d': `${d}s` } as CSSProperties} />)}
+      </span>
+      {/* O gato da vila, no chão livre entre o pilar e a mesa, olhando a luneta. */}
+      <span className="ds-palco__peca ds-palco__gato" style={lugar(333, 125, 34, 25.5)}><GatoPixel estado="olhando_cima" /></span>
+    </div>
+  )
+}
 
 type PeriodoDesempenho = { tipo: 'tudo' | '7' | '30' | '90' | 'desde'; desde?: string }
 const PERIODOS: { tipo: PeriodoDesempenho['tipo']; rotulo: string }[] = [
@@ -67,6 +109,7 @@ export function DadosLocais() {
   const respondidas = Object.keys(marcadas).length
   const [reinicioPendente] = usarArmazenado<string | null>('reinicio:pendente', null)
   const bytes = tamanhoArmazenado()
+  const periodoArte = usarPeriodo()
 
   // Período escolhido: fica salvo e vale sempre que a pessoa volta. Em vez de
   // apagar o histórico, ela acompanha só a fase atual do estudo.
@@ -179,68 +222,87 @@ export function DadosLocais() {
   const pct = exemplo ? 72 : percentualGeral === null ? null : Math.round(percentualGeral * 100)
   const streak = detalhes.d.streak
   // Temas do mais forte para o mais fraco: a lista vira um mapa de onde estudar.
+  const [ordemTemas, definirOrdemTemas] = useState<'maior' | 'menor'>('maior')
+  const [todosTemas, definirTodosTemas] = useState(false)
   const temasOrdenados = [...porTema].sort((a, b) => b.certas / b.total - a.certas / a.total || b.total - a.total)
+  if (ordemTemas === 'menor') temasOrdenados.reverse()
+  const TEMAS_VISIVEIS = 12
+  const temasMostrados = todosTemas ? temasOrdenados : temasOrdenados.slice(0, TEMAS_VISIVEIS)
   const confiancas = ([['seguro', 'Certeza', 'certo'], ['duvida', 'Dúvida', 'olho'], ['chute', 'Chute', 'interrogacao']] as const)
   const temConfianca = porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0
   const mostrarSync = conta && (statusSync.estado === 'erro' || statusSync.estado === 'offline' || statusSync.estado === 'conflito' || statusSync.pendentes > 0 || statusSync.rejeitados.length > 0)
 
   return (
     <article className="ds">
-      {/* ---------- Placar ---------- */}
-      <section className="ds-heroi" aria-labelledby="ds-titulo">
-        <div className="ds-heroi__texto">
-          <p className="tr-heroi__selo"><Icone nome="grafico" tamanho={13} /> Seu desempenho</p>
-          <h1 id="ds-titulo">{nome ? `${nome}, seu desempenho` : 'Seu desempenho'}</h1>
-          {exemplo ? <>
-            <p className="ds-heroi__exemplo">Exemplo com números fictícios</p>
-            <p>É assim que fica o seu desempenho: acerto por tema, ritmo da semana e onde você mais erra. Cada resposta entra aqui, do celular ou do computador.</p>
-            <a className="botao ds-heroi__criar" href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis e ver o meu</a>
-          </> : <p>{mensagemDesempenho}</p>}
-          {/* No topo só quando há algo a fazer (erro, offline, itens parados): "Sincronizando…"
-              piscando no herói a cada 5 segundos competia com o desempenho. */}
-          {mostrarSync && (
-            <p className="ds-heroi__sync" role="status">
-              <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
-              {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} ${statusSync.pendentes === 1 ? 'alteração aguardando' : 'alterações aguardando'} envio` : 'Progresso salvo neste dispositivo'}
-              {statusSync.estado !== 'sincronizando' && <button type="button" className="botao--vinculo" onClick={sincronizar}>sincronizar agora</button>}
-              {statusSync.estado === 'erro' && statusSync.detalhe && <small className="status-sincronia__detalhe">Motivo: {statusSync.detalhe}</small>}
-              {statusSync.rejeitados.length > 0 && <a className="status-sincronia__detalhe ds-heroi__rejeitados" href={href('/conta')}>{statusSync.rejeitados.length} {statusSync.rejeitados.length === 1 ? 'item não enviado' : 'itens não enviados'} · ver em Minha conta</a>}
-            </p>
-          )}
-          <dl className="ds-heroi__extras">
-            <div><dt>Sessões</dt><dd className="ds-num">{exemplo ? 58 : periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo}</dd></div>
-            <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd className="ds-num"><a href={href('/erros')} title="Abrir o caderno de erros">{exemplo ? 347 : errosTotais}</a></dd></div>
-            <div><dt>Favoritas</dt><dd className="ds-num"><a href={href('/favoritas')}>{exemplo ? 23 : favoritos.length}</a></dd></div>
-          </dl>
-          {proximaConquistaAlvo && !exemplo && <a className="tr-heroi__link" href={href('/ranking')}><Icone nome="medalha" tamanho={15} /> Faltam {numero(proximaConquistaAlvo.minimo - respondidas)} {proximaConquistaAlvo.minimo - respondidas === 1 ? 'questão' : 'questões'} para {proximaConquistaAlvo.rotulo}</a>}
+      {/* ---------- O observatório: título e mensagem sobre a pintura, o placar na bancada logo abaixo ---------- */}
+      <section className={`ds-obs ds-obs--${periodoArte}`} aria-labelledby="ds-titulo">
+        <div className="ds-obs__cena">
+          <CenaObservatorio periodo={periodoArte} />
+          <div className="ds-obs__cabeca">
+            <p className="ds-obs__selo"><Icone nome="grafico" tamanho={13} /> Observatório da vila</p>
+            <h1 id="ds-titulo">{nome ? `${nome}, seu desempenho` : 'Seu desempenho'}</h1>
+            {exemplo && <p className="ds-obs__exemplo">Exemplo com números fictícios</p>}
+          </div>
+          <div className="ds-obs__texto">
+            {exemplo ? <>
+              <p>É assim que fica o seu desempenho: acerto por tema, ritmo da semana e onde você mais erra. Cada resposta entra aqui, do celular ou do computador.</p>
+              <a className="ds-obs__criar" href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis e ver o meu <Icone nome="direita" tamanho={16} /></a>
+            </> : <p>{mensagemDesempenho}</p>}
+            {/* No topo só quando há algo a fazer (erro, offline, itens parados): "Sincronizando…"
+                piscando no herói a cada 5 segundos competia com o desempenho. */}
+            {mostrarSync && (
+              <p className="ds-obs__sync" role="status">
+                <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
+                {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} ${statusSync.pendentes === 1 ? 'alteração aguardando' : 'alterações aguardando'} envio` : 'Progresso salvo neste dispositivo'}
+                {statusSync.estado !== 'sincronizando' && <button type="button" className="botao--vinculo" onClick={sincronizar}>sincronizar agora</button>}
+                {statusSync.estado === 'erro' && statusSync.detalhe && <small className="status-sincronia__detalhe">Motivo: {statusSync.detalhe}</small>}
+                {statusSync.rejeitados.length > 0 && <a className="status-sincronia__detalhe ds-obs__rejeitados" href={href('/conta')}>{statusSync.rejeitados.length} {statusSync.rejeitados.length === 1 ? 'item não enviado' : 'itens não enviados'} · ver em Minha conta</a>}
+              </p>
+            )}
+          </div>
         </div>
 
-        <div className="ds-placar">
-          <div className="ds-placar__acerto">
-            <p className="ds-placar__rotulo">{periodo.tipo === 'tudo' ? 'Acerto geral' : 'Acerto no período'}</p>
-            <p className="ds-placar__valor"><strong>{pct === null ? '0' : pct}</strong><span>%</span></p>
-            <Medidor valor={pct ?? 0} rotulo={pct === null ? 'Sem respostas ainda' : `${pct}% de acerto ${periodo.tipo === 'tudo' ? 'no total' : 'no período'}`} />
-            <p className="ds-placar__apoio ds-num">{exemplo ? 'em 1.240 questões de exemplo' : totalContadas ? `${n(totalCertas)} certas em ${n(totalContadas)} respostas` : 'sem respostas ainda'}</p>
-          </div>
-          <dl className="ds-placar__dados">
-            <div>
-              <dt>{periodo.tipo === 'tudo' ? 'Respondidas' : 'Questões no período'}</dt>
-              <dd>{exemplo ? '1.240' : n(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo)}{minhaConquista && <span className="ds-placar__medalha"><Medalha conquista={minhaConquista} tamanho={22} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</dd>
+        <div className="ds-obs__bancada">
+          <dl className="ds-placar">
+            <div className="ds-placar__item ds-placar__item--acerto">
+              <dt>{periodo.tipo === 'tudo' ? 'Acerto geral' : 'Acerto no período'}</dt>
+              <dd>
+                <span className="ds-placar__valor">{pct === null ? <span className="ds-placar__vazio">–</span> : <>{pct}<small>%</small></>}</span>
+                {pct !== null && <Medidor valor={pct} rotulo={`${pct}% de acerto ${periodo.tipo === 'tudo' ? 'no total' : 'no período'}`} />}
+                <span className="ds-placar__apoio ds-num">{exemplo ? '893 certas em 1.240 respostas de exemplo' : totalContadas ? `${n(totalCertas)} certas em ${n(totalContadas)} ${totalContadas === 1 ? 'resposta' : 'respostas'}` : 'Sem respostas ainda. O acerto conta cada resposta de questão com gabarito.'}</span>
+              </dd>
             </div>
-            <div>
+            <div className="ds-placar__item">
+              <dt>{periodo.tipo === 'tudo' ? 'Questões respondidas' : 'Questões no período'}</dt>
+              <dd>
+                <span className="ds-placar__valor">{exemplo ? '1.240' : n(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo)}{minhaConquista && !exemplo && <span className="ds-placar__medalha"><Medalha conquista={minhaConquista} tamanho={24} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</span>
+                <span className="ds-placar__apoio">questões diferentes; revisar soma respostas, não questões</span>
+              </dd>
+            </div>
+            <div className="ds-placar__item">
               <dt>Sequência</dt>
-              <dd>{exemplo ? 12 : streak.atual}<small>{(exemplo ? 12 : streak.atual) === 1 ? 'dia' : 'dias'}</small></dd>
-              <span className="ds-placar__nota">recorde de {exemplo ? 21 : streak.recorde} {(exemplo ? 21 : streak.recorde) === 1 ? 'dia' : 'dias'}</span>
+              <dd>
+                <span className="ds-placar__valor">{exemplo ? 12 : streak.atual}<small>{(exemplo ? 12 : streak.atual) === 1 ? ' dia' : ' dias'}</small></span>
+                <span className="ds-placar__apoio">recorde de {exemplo ? 21 : streak.recorde} {(exemplo ? 21 : streak.recorde) === 1 ? 'dia' : 'dias'}{periodo.tipo !== 'tudo' ? ' · conta sempre o total' : ''}</span>
+              </dd>
             </div>
           </dl>
+          <div className="ds-obs__apoio">
+            <dl className="ds-obs__extras">
+              <div><dt>{periodo.tipo === 'tudo' ? 'Sessões' : 'Sessões no período'}</dt><dd className="ds-num">{exemplo ? 58 : n(periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo)}</dd></div>
+              <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd className="ds-num"><a href={href('/erros')} aria-label={`${exemplo ? 347 : errosTotais} erros: abrir o caderno de erros`}>{exemplo ? 347 : n(errosTotais)}</a></dd></div>
+              <div><dt>Favoritas</dt><dd className="ds-num"><a href={href('/favoritas')} aria-label={`${exemplo ? 23 : favoritos.length} favoritas: abrir`}>{exemplo ? 23 : n(favoritos.length)}</a></dd></div>
+            </dl>
+            {proximaConquistaAlvo && !exemplo && <a className="ds-obs__conquista" href={href('/ranking')}><Icone nome="medalha" tamanho={15} /> Faltam {numero(proximaConquistaAlvo.minimo - respondidas)} {proximaConquistaAlvo.minimo - respondidas === 1 ? 'questão' : 'questões'} para {proximaConquistaAlvo.rotulo}</a>}
+          </div>
         </div>
       </section>
 
       {/* Filtro único, acima de tudo o que ele recorta. */}
-      <section className="px-cartao ds-periodo" aria-label="Período do desempenho">
+      <section className="ds-periodo" aria-label="Período do desempenho">
         <div className="ds-periodo__texto">
           <strong><Icone nome="calendario" tamanho={16} /> Período</strong>
-          <span>Mostrando {descreverPeriodo(periodo)}. Ranking e emblemas continuam contando o total.</span>
+          <span>Mostrando {descreverPeriodo(periodo)}. Sequência, favoritas, Ranking e emblemas contam sempre o total.</span>
         </div>
         <div className="ds-periodo__controles">
           <div className="ds-seg" role="group" aria-label="Escolher período">
@@ -254,7 +316,7 @@ export function DadosLocais() {
           {periodo.tipo === 'desde' && (
             <label className="ds-periodo__data">
               <span className="so-leitor">Data inicial</span>
-              <input className="entrada" type="date" value={periodo.desde ?? ''} max={hojeBR()} onChange={(e) => definirPeriodo({ tipo: 'desde', desde: e.target.value })} />
+              <input className="entrada" type="date" value={periodo.desde ?? ''} max={hojeBR()} onChange={(e) => definirPeriodo({ tipo: 'desde', desde: e.target.value && e.target.value > hojeBR() ? hojeBR() : e.target.value })} />
             </label>
           )}
         </div>
@@ -271,26 +333,32 @@ export function DadosLocais() {
       {/* ---------- Onde você está ---------- */}
       <section className="ds-capitulo" aria-labelledby="ds-cap-onde">
         <header className="ds-capitulo__cabeca">
-          <p className="ds-capitulo__selo">1 · Onde você está</p>
+          <p className="ds-capitulo__selo"><b aria-hidden="true">1</b> Onde você está</p>
           <h2 id="ds-cap-onde">Forte e fraco, tema por tema</h2>
         </header>
 
         <div className="ds-grade ds-grade--onde">
-          <section className="px-cartao ds-cartao ds-temas-cartao" aria-labelledby="ds-temas-titulo">
-            <div className="ds-cartao__cabeca">
-              <h3 id="ds-temas-titulo">Por tema</h3>
-              <p>Do maior acerto para o menor. Toque em um tema para treinar só ele.</p>
+          <section className="ds-cartao ds-temas-cartao" aria-labelledby="ds-temas-titulo">
+            <div className="ds-cartao__cabeca ds-cartao__cabeca--linha">
+              <div>
+                <h3 id="ds-temas-titulo">Por tema</h3>
+                <p>{ordemTemas === 'maior' ? 'Do maior acerto para o menor.' : 'Do menor acerto para o maior.'} Toque em um tema para treinar só ele. Com menos de 5 respostas, o número ainda é uma pista, não um diagnóstico.</p>
+              </div>
+              {porTema.length > 1 && <div className="ds-seg ds-seg--mini" role="group" aria-label="Ordem dos temas">
+                <button type="button" aria-pressed={ordemTemas === 'maior'} onClick={() => definirOrdemTemas('maior')}>Maior acerto</button>
+                <button type="button" aria-pressed={ordemTemas === 'menor'} onClick={() => definirOrdemTemas('menor')}>Menor acerto</button>
+              </div>}
             </div>
             {porTema.length === 0 ? (
               <p className="ds-vazio">Ainda não há questões respondidas nesta conta. Responda uma sessão e o desempenho por tema aparece aqui.</p>
             ) : (
               <ul className="ds-temas">
-                {temasOrdenados.map((tema) => {
+                {temasMostrados.map((tema) => {
                   const percentual = Math.round((tema.certas / tema.total) * 100)
                   const avaliado = tema.total >= 5
                   return (
                     <li key={tema.nome}>
-                      <a className="ds-tema" href={href(`/treinar?temas=${tema.slug}&limite=10`)}>
+                      <a className={avaliado ? 'ds-tema' : 'ds-tema ds-tema--pouco'} href={href(`/treinar?temas=${tema.slug}&limite=10`)} aria-label={`${tema.nome}: ${percentual}% de acerto, ${tema.certas} de ${tema.total} certas. Treinar 10 questões deste tema`}>
                         <span className="ds-tema__nome">{tema.nome}</span>
                         <span className="ds-tema__pct ds-num">{percentual}%</span>
                         <Medidor valor={percentual} />
@@ -298,6 +366,7 @@ export function DadosLocais() {
                           {tema.certas} de {tema.total} certas
                           {avaliado && percentual >= 70 && <span className="ds-status ds-status--bom"><Icone nome="certo" tamanho={12} /> forte</span>}
                           {avaliado && percentual < 50 && <span className="ds-status ds-status--baixo"><Icone nome="alvo" tamanho={12} /> dá para crescer</span>}
+                          {!avaliado && <span className="ds-status ds-status--pouco">amostra pequena</span>}
                         </span>
                       </a>
                     </li>
@@ -305,25 +374,38 @@ export function DadosLocais() {
                 })}
               </ul>
             )}
+            {temasOrdenados.length > TEMAS_VISIVEIS && (
+              <button type="button" className="ds-mais" aria-expanded={todosTemas} onClick={() => definirTodosTemas((v) => !v)}>
+                {todosTemas ? 'Mostrar só os 12 primeiros' : `Mostrar todos os ${temasOrdenados.length} temas (${temasOrdenados.length - TEMAS_VISIVEIS} ocultos)`}
+                <Icone nome={todosTemas ? 'cima' : 'baixo'} tamanho={16} />
+              </button>
+            )}
           </section>
 
           <div className="ds-coluna">
-            <section className="px-cartao ds-cartao" aria-labelledby="ds-atencao-titulo">
+            <section className="ds-cartao" aria-labelledby="ds-atencao-titulo">
               <div className="ds-cartao__cabeca">
                 <h3 id="ds-atencao-titulo">Pontos de atenção</h3>
                 <p>Temas com pelo menos 5 respostas.</p>
               </div>
               {temDestaques && temaForte && temaFragil ? (
                 <div className="ds-destaques">
+                  {/* Duas lentes de latão: o número dentro do aro, o tema e a ação ao lado. */}
                   <a className="ds-destaque ds-destaque--bom" href={href(`/treinar?temas=${temaForte.slug}&limite=10`)}>
-                    <small><Icone nome="certo" tamanho={13} /> Ponto forte</small>
-                    <strong>{temaForte.nome}</strong>
-                    <span className="ds-num">{Math.round((temaForte.certas / temaForte.total) * 100)}% de acerto</span>
+                    <span className="ds-lente ds-num">{Math.round((temaForte.certas / temaForte.total) * 100)}<small>%</small></span>
+                    <span className="ds-destaque__texto">
+                      <small><Icone nome="certo" tamanho={13} /> Ponto forte</small>
+                      <strong>{temaForte.nome}</strong>
+                      <span className="ds-num">{temaForte.certas} de {temaForte.total} certas · treinar 10</span>
+                    </span>
                   </a>
                   <a className="ds-destaque ds-destaque--baixo" href={href(`/treinar?temas=${temaFragil.slug}&situacao=erradas&limite=10`)}>
-                    <small><Icone nome="alvo" tamanho={13} /> Onde mais dá para crescer</small>
-                    <strong>{temaFragil.nome}</strong>
-                    <span className="ds-num">{Math.round((temaFragil.certas / temaFragil.total) * 100)}% de acerto · refazer erros</span>
+                    <span className="ds-lente ds-num">{Math.round((temaFragil.certas / temaFragil.total) * 100)}<small>%</small></span>
+                    <span className="ds-destaque__texto">
+                      <small><Icone nome="alvo" tamanho={13} /> Onde mais dá para crescer</small>
+                      <strong>{temaFragil.nome}</strong>
+                      <span className="ds-num">{temaFragil.certas} de {temaFragil.total} certas · refazer erros</span>
+                    </span>
                   </a>
                 </div>
               ) : <p className="ds-vazio">Responda mais algumas questões em temas diferentes para ver seu ponto forte e onde mais dá para crescer.</p>}
@@ -332,7 +414,7 @@ export function DadosLocais() {
           </div>
         </div>
 
-        {temConfianca && <section className="px-cartao ds-cartao" aria-labelledby="ds-confianca-titulo">
+        {temConfianca && <section className="ds-cartao" aria-labelledby="ds-confianca-titulo">
           <div className="ds-cartao__cabeca">
             <h3 id="ds-confianca-titulo">Sua sensação combina com o resultado?</h3>
             <p>Acerto separado pelo que você marcou ao responder. Chute volta em 1 dia, dúvida em 3, certeza em 10. <a href={href('/revisao')}>Ver a escada completa</a></p>
@@ -354,14 +436,14 @@ export function DadosLocais() {
       {/* ---------- Como você evoluiu ---------- */}
       <section className="ds-capitulo" aria-labelledby="ds-cap-evolucao">
         <header className="ds-capitulo__cabeca">
-          <p className="ds-capitulo__selo">2 · Como você evoluiu</p>
+          <p className="ds-capitulo__selo"><b aria-hidden="true">2</b> Como você evoluiu</p>
           <h2 id="ds-cap-evolucao">Ritmo e acerto ao longo do tempo</h2>
         </header>
 
         <DetalhesNumeros detalhes={detalhes} />
 
         <div className="ds-grade">
-          <section className="px-cartao ds-cartao" aria-labelledby="ds-atividade-titulo">
+          <section className="ds-cartao" aria-labelledby="ds-atividade-titulo">
             <div className="ds-cartao__cabeca">
               <h3 id="ds-atividade-titulo">Últimas 4 semanas</h3>
               <p className="ds-num">{questoesMes} {questoesMes === 1 ? 'resposta' : 'respostas'} em {diasAtivos} {diasAtivos === 1 ? 'dia ativo' : 'dias ativos'}. Hoje em ouro.</p>
@@ -398,13 +480,13 @@ export function DadosLocais() {
       {/* ---------- O que fazer agora ---------- */}
       <section className="ds-capitulo" aria-labelledby="ds-cap-agora">
         <header className="ds-capitulo__cabeca">
-          <p className="ds-capitulo__selo">3 · O que fazer agora</p>
+          <p className="ds-capitulo__selo"><b aria-hidden="true">3</b> O que fazer agora</p>
           <h2 id="ds-cap-agora">{nome ? `${nome}, sua próxima sessão` : 'Sua próxima sessão'}</h2>
         </header>
-        <div className="px-cartao ds-agora">
+        <div className="ds-agora">
           <ol className="ds-passos">
             {temaFragil && temDestaques && <li className="ds-passo">
-              <span className="px-numero" aria-hidden="true">1</span>
+              <span className="ds-moeda" aria-hidden="true">1</span>
               <div>
                 <strong>Refazer os erros de {temaFragil.nome}</strong>
                 <span>É onde mais dá para crescer agora. Que tal dez questões, com calma?</span>
@@ -412,21 +494,29 @@ export function DadosLocais() {
               <a className="ds-passo__acao" href={href(`/treinar?temas=${temaFragil.slug}&situacao=erradas&limite=10`)}>Treinar 10 <Icone nome="direita" tamanho={16} /></a>
             </li>}
             {incertas > 0 && <li className="ds-passo">
-              <span className="px-numero" aria-hidden="true">{temaFragil && temDestaques ? 2 : 1}</span>
+              <span className="ds-moeda" aria-hidden="true">{temaFragil && temDestaques ? 2 : 1}</span>
               <div>
                 <strong>Refazer {numero(incertas)} {incertas === 1 ? 'questão com dúvida ou chute' : 'questões com dúvida ou chute'}</strong>
                 <span>Uma passada rápida transforma o que ficou incerto em certeza.</span>
               </div>
               <a className="ds-passo__acao" href={href('/treinar?situacao=incertas&limite=20')}>Treinar 20 <Icone nome="direita" tamanho={16} /></a>
             </li>}
-            <li className="ds-passo">
-              <span className="px-numero" aria-hidden="true">{(temaFragil && temDestaques ? 1 : 0) + (incertas > 0 ? 1 : 0) + 1}</span>
+            {(exemplo || errosTotais > 0) && <li className="ds-passo">
+              <span className="ds-moeda" aria-hidden="true">{(temaFragil && temDestaques ? 1 : 0) + (incertas > 0 ? 1 : 0) + 1}</span>
               <div>
                 <strong>Abrir o caderno de erros</strong>
                 <span className="ds-num">{numero(exemplo ? 347 : errosTotais)} {(exemplo ? 347 : errosTotais) === 1 ? 'erro' : 'erros'} {periodo.tipo === 'tudo' ? 'guardados' : 'no período'}, cada um com o comentário que explica.</span>
               </div>
               <a className="ds-passo__acao" href={href('/erros')}>Abrir <Icone nome="direita" tamanho={16} /></a>
-            </li>
+            </li>}
+            {!exemplo && !errosTotais && !incertas && !(temaFragil && temDestaques) && <li className="ds-passo">
+              <span className="ds-moeda" aria-hidden="true">1</span>
+              <div>
+                <strong>{totalContadas ? 'Seguir com uma sessão nova' : 'Fazer a primeira sessão'}</strong>
+                <span>{totalContadas ? 'Sem erros nem dúvidas guardados neste período. Dez questões novas mantêm o ritmo.' : 'Dez questões bastam para o observatório começar a mostrar seus temas.'}</span>
+              </div>
+              <a className="ds-passo__acao" href={href('/treinar?limite=10')}>Treinar 10 <Icone nome="direita" tamanho={16} /></a>
+            </li>}
           </ol>
           <a className="botao ds-agora__treinar" href={href('/treinar')}>
             <Icone nome="filtro" tamanho={22} />
