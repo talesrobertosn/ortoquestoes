@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, type CSSProperties } from 'react'
-import { recurso, urlCss } from '../../config'
+import { useEffect, useRef, useState } from 'react'
+import { recurso } from '../../config'
 import { usarPeriodo } from '../../estado/aparencia'
 import '../../estilos/componentes/CenaTorre.css'
 
@@ -20,9 +20,6 @@ const POEIRA = [
   { x: 700, y: 470, d: 11, a: -7 }, { x: 560, y: 250, d: 12, a: -4 },
 ]
 const FAGULHAS = [{ x: 1316, y: 520, d: 7, a: 0 }, { x: 1352, y: 500, d: 8, a: -2 }, { x: 1384, y: 530, d: 6, a: -4 }, { x: 1334, y: 470, d: 9, a: -5 }]
-
-/** O assoalho do Arquivo, fundo das páginas dos Flashcards embaixo do topo (CentralFlashcardsArquivo.css). */
-export const PISO_DO_ARQUIVO = { '--ca-piso': urlCss('pixel/flashcards/arquivo-piso.webp') } as CSSProperties
 
 export function CenaArquivo() {
   const periodo = usarPeriodo()

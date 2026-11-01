@@ -104,15 +104,25 @@ Opinião com melhor acabamento; som baixo a cada abertura e controle vertical no
 
 Tales pediu que o começo priorize questões que a pessoa já acertou, para diminuir a frustração. Essa orientação substitui a ordem de 13/10: acertadas pelo usuário, maior acerto da turma, erradas pelo usuário, novas e mistura. O sorteio continua dentro de cada grupo, com até oito flashcards na abertura de cada grupo e salto dos grupos vazios. As respostas consultadas são das questões de origem; as partidas salvas permanecem intactas. Sem SQL.
 
-## 01/11/2026 — O Arquivo da Vila (central, desempenho e cronograma)
+## 01/11/2026 — O Arquivo da Vila (central refeita, desempenho e cronograma)
 
-Pedido do Tales ("deixar bonita"), no jeito aprovado no cronograma (Torre do Tempo): a central abre com a cena HD-2D do
-Arquivo da Vila (o fichário de fichas ao lado da praça da torre, com a escada da Cripta no fundo), manhã, tarde e noite
-(`scripts/gerar_cena_flashcards.py`); o título e o botão do dia num vidro escuro; a descrição numa faixa logo abaixo da
-cena. As três páginas ficam sobre o assoalho do Arquivo iluminado, com as caixas brancas e redondas como na página
-inicial (`src/estilos/paginas/CentralFlashcardsArquivo.css`, só com `.cf--arquivo`; o jogo não muda). Desempenho e
-Cronograma ganharam a mesma cena numa faixa curta. A coruja ou o gato aparecem de vez em quando sentados num botão.
-Correções: os botões Hesitei/Sabia mostram o prazo do degrau de verdade (`prazoDaAvaliacao`, testado); falha de rede ao
-carregar o acervo aparece com "Tentar de novo"; o visitante vê "Crie sua conta para treinar flashcards". A opinião fica
-num bloco só (o convite, quando aparece, toma o lugar do aviso). Nomes (Torneio/Cripta/Batalha) e a definição de
-"dominado" ficam como estão até o Tales decidir (ver `docs/prompts/flashcards-hd2d.md`).
+Pedido do Tales ("deixar bonita"; depois "é pra mudar tudo, não só fingir que tá mudando"). A central foi refeita, não
+só repintada:
+- Topo com a cena HD-2D do Arquivo da Vila (o fichário de fichas ao lado da praça da torre, com a escada da Cripta no
+  fundo), manhã, tarde e noite (`scripts/gerar_cena_flashcards.py`), e **uma ação só**, a certa para hoje: "Revisar
+  agora" se algo venceu; senão "Seguir cronograma · faltam N" (ou "Começar pelos que mais caem" na primeira vez);
+  senão "Estudar flashcards". A Biblioteca e o Torneio (pela Entrada) ficam como caminhos discretos. A descrição vai
+  numa faixa logo abaixo da cena.
+- **Hoje**: um painel só, dividido por linhas finas como o progresso da página inicial, com as filas para revisar
+  (Revisões de hoje, Errei, Hesitei, Nunca estudados: número em fonte pixel), o cronograma do dia e o estudo por assunto.
+- **Por onde seguir**: Biblioteca, Torneio e Meu desempenho, cada um com o seu objeto pixel animado (o fichário abre a
+  gaveta e as fichas pulam; a escada da Cripta acende; o medidor de latão enche), mais o ranking.
+- "Como funciona" recolhido (aberto na primeira visita); um bloco de opinião só.
+- Desempenho e Cronograma: a mesma cena numa faixa curta e as caixas redondas.
+- Tudo no fundo normal do site, com as caixas brancas e redondas da página inicial (`.cf--arquivo`); o assoalho de
+  madeira foi testado e retirado, como a calçada do cronograma. O jogo não muda.
+- A coruja ou o gato aparecem de vez em quando sentados num botão, nunca por cima de uma caixa vizinha.
+- Correções: os botões Hesitei/Sabia mostram o prazo do degrau de verdade (`prazoDaAvaliacao`, testado); falha de rede
+  ao carregar o acervo aparece com "Tentar de novo"; o visitante vê "Crie sua conta para treinar flashcards".
+- Ficam para o Tales decidir: os nomes (Torneio/Cripta/Batalha) e uma definição só de "dominado"
+  (`docs/prompts/flashcards-hd2d.md`).

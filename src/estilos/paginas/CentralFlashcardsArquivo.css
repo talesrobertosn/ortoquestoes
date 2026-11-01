@@ -1,39 +1,18 @@
 /* O Arquivo da Vila nos Flashcards (01/11/2026), no mesmo jeito aprovado no cronograma:
    - topo: a cena pintada (CenaArquivo) com o texto num vidro escuro do lado calmo da arte, sem cobrir o fichário;
-   - embaixo: o assoalho do Arquivo (scripts/gerar_cena_flashcards.py piso) com a luz quente da lamparina e das
-     janelas, um feixe lento e as caixas projetando sombra nas tábuas;
-   - as caixas de texto continuam brancas (escuras no tema escuro), redondas como as da página inicial: cartões de
-     raio 20, controles de raio 12, selos em pílula, bordas finas e sombras macias (nada de sombra "de bloco").
-   Vale só com .cf--arquivo: o jogo (Entrada, Cripta, Biblioteca) não muda. */
+   - o resto no vocabulário da página inicial: um painel só para "Hoje", dividido por linhas finas; caminhos com objetos
+     pixel animados; caixas brancas (escuras no tema escuro) de raio 20, controles de raio 12, selos em pílula, bordas
+     finas e sombras macias (nada de sombra "de bloco"). */
 
-/* ── O assoalho iluminado ── */
+/* Vale só com .cf--arquivo (as três páginas do site); o jogo não muda. O fundo é o normal do site, como na página
+   inicial (o assoalho foi testado e retirado em 01/11/2026, junto com a calçada do cronograma). */
 .cf--arquivo {
   --ca-raio: 20px; --ca-raio-ctl: 12px; --ca-ouro: #f0c46a; --ca-borda: rgba(232, 206, 150, 0.42);
-  --ca-sombra: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 3px rgba(20, 10, 4, 0.35), 0 22px 40px -18px rgba(20, 10, 4, 0.75);
-  position: relative; isolation: isolate; overflow: hidden; padding: clamp(0.6rem, 1.8vw, 1.25rem); border-radius: 26px;
-  background:
-    radial-gradient(56rem 28rem at 62% 0%, rgba(255, 176, 88, 0.42), transparent 70%),
-    radial-gradient(34rem 28rem at 0% 40%, rgba(255, 160, 70, 0.3), transparent 70%),
-    radial-gradient(36rem 30rem at 100% 66%, rgba(255, 170, 80, 0.28), transparent 70%),
-    radial-gradient(32rem 26rem at 10% 94%, rgba(255, 150, 66, 0.26), transparent 72%),
-    linear-gradient(180deg, rgba(40, 22, 10, 0.05), rgba(10, 8, 6, 0.45)),
-    var(--ca-piso, none) 0 0 / 360px repeat, #2a1a10;
-  background-blend-mode: screen, screen, screen, screen, normal, normal, normal;
-  image-rendering: pixelated;
-  box-shadow: inset 0 0 0 1px rgba(255, 210, 150, 0.16), inset 0 0 110px rgba(14, 8, 4, 0.6), 0 24px 50px -30px rgba(0, 0, 0, 0.6);
+  --ca-sombra: 0 1px 2px rgba(0, 0, 0, 0.05), 0 10px 28px -18px rgba(0, 0, 0, 0.35);
+  position: relative;
 }
-.cf--arquivo > * { image-rendering: auto; }
-.cf--arquivo::before { content: ""; position: absolute; z-index: -1; inset: -20% -40%; pointer-events: none; mix-blend-mode: screen;
-  background: linear-gradient(105deg, transparent 38%, rgba(255, 214, 150, 0.1) 45%, rgba(255, 220, 160, 0.2) 50%, rgba(255, 214, 150, 0.1) 55%, transparent 62%);
-  animation: ca-feixe 30s ease-in-out infinite alternate; }
-@keyframes ca-feixe { from { transform: translateX(-16%); } to { transform: translateX(16%); } }
-.cf--arquivo::after { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none; mix-blend-mode: screen;
-  background: radial-gradient(16rem 16rem at 1% 56%, rgba(255, 150, 60, 0.3), transparent 70%), radial-gradient(16rem 16rem at 99% 30%, rgba(255, 150, 60, 0.26), transparent 70%);
-  animation: ca-brasa 4.6s ease-in-out infinite; }
-@keyframes ca-brasa { 0%, 100% { opacity: 0.85; } 35% { opacity: 1; } 60% { opacity: 0.68; } 80% { opacity: 0.95; } }
-@media (prefers-reduced-motion: reduce) { .cf--arquivo::before, .cf--arquivo::after { animation: none; } }
 
-/* ── Abas: pílula clara sobre o assoalho ── */
+/* ── Abas: pílula ── */
 .cf--arquivo .cf-abas { border: 1px solid var(--traco); border-radius: 14px; box-shadow: var(--ca-sombra); }
 .cf--arquivo .cf-abas a { border-radius: 10px; }
 .cf--arquivo .cf-abas a[aria-current="page"] { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
@@ -94,7 +73,7 @@
 .cf-cabeca--arquivo .cf-selo { color: var(--ca-ouro); }
 @media (max-width: 40rem) { .cf-cabeca--arquivo .ct-cena::after { background: linear-gradient(90deg, rgba(8, 12, 16, 0.9), rgba(8, 12, 16, 0.6)); } }
 
-/* ── As caixas de sempre, brancas e redondas, pousadas no assoalho ── */
+/* ── As caixas de sempre, brancas e redondas ── */
 .cf--arquivo :is(.cf-hoje, .cf-crono, .cf-passos li, .cf-modo, .cf-links a, .cf-convite, .cf-aviso, .cf-rede, .cf-numero, .cf-bloco, .cfc-sugerido) {
   border: 1px solid var(--traco); border-radius: var(--ca-raio); box-shadow: var(--ca-sombra);
 }
@@ -115,12 +94,104 @@
 .cf--arquivo .cf-passos li:not(:last-child)::after { border-radius: 999px; background: rgba(255, 214, 150, 0.5); }
 .cf--arquivo .cf-chips button { border-radius: 999px; }
 
-/* O que fica escrito direto no assoalho (títulos de seção e notas): tinta clara com sombra. */
-.cf--arquivo > .cfh-secao > .cf-titulo, .cf--arquivo > p, .cf--arquivo > p a, .cf--arquivo .cf-sobre-piso { color: #fff6e6; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.6); }
-.cf--arquivo .cfh-secao > .cf-titulo { color: #fff6e6; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.6); }
-
 /* O aviso de rede (o acervo não carregou inteiro). */
 .cf-rede { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3) var(--e-5); padding: var(--e-4) var(--e-5); background: var(--superficie); color: var(--texto); }
 .cf-rede > svg { color: var(--aviso, #9a6b12); }
 .cf-rede p { flex: 1 1 20rem; margin: 0; line-height: 1.55; }
 .cf--arquivo .cf-bloco .cf-numero { border-radius: 14px; box-shadow: none; }
+
+/* ── Hoje: um painel só, com as divisões em linhas finas (como o progresso da página inicial) ── */
+.cfa-painel { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1px; overflow: hidden; background: var(--traco);
+  border: 1px solid var(--traco); border-radius: var(--ca-raio); box-shadow: var(--ca-sombra); }
+.cfa-painel > * { background: var(--superficie); }
+.cfa-painel__cabeca { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--e-1) var(--e-4); padding: 1.35rem 1.6rem 1rem; }
+.cfa-painel__cabeca h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.35rem; letter-spacing: -0.02em; }
+.cfa-painel__cabeca p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.cfa-celula { display: grid; align-content: start; gap: var(--e-3); min-width: 0; padding: 1.25rem 1.6rem 1.5rem; }
+.cfa-titulo { margin: 0; color: var(--texto-2); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.cfa-filas { display: grid; gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
+.cfa-fila { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 0.8rem; min-height: 56px; padding: 0.6rem 0.8rem;
+  border-radius: var(--ca-raio-ctl); background: var(--superficie-2, var(--porcelana)); color: var(--texto); text-decoration: none;
+  transition: background-color 0.15s ease, transform 0.15s ease; }
+.cfa-fila__icone { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 10px; background: var(--superficie); color: var(--verdete); box-shadow: inset 0 0 0 1px var(--traco); }
+.cfa-fila__texto { display: grid; min-width: 0; }
+.cfa-fila__texto strong { font-size: var(--corpo-menor); }
+.cfa-fila__texto small { color: var(--texto-2); font-size: var(--meta); line-height: 1.3; }
+.cfa-fila__numero { color: var(--verdete); font-family: var(--fonte-pixel-titulo); font-size: 1.9rem; font-weight: 400; line-height: 1; }
+.cfa-fila > svg { color: var(--texto-2); }
+a.cfa-fila:hover { background: var(--verdete-veu); transform: translateX(3px); }
+a.cfa-fila:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
+.cfa-fila--destaque { background: var(--verdete-veu); box-shadow: inset 3px 0 0 var(--verdete); }
+.cfa-fila--vazia { opacity: 0.62; }
+.cfa-fila--vazia .cfa-fila__numero { color: var(--texto-2); }
+/* O cronograma do dia, dentro do painel: sem caixa própria. */
+.cf--arquivo .cfa-celula--crono .cf-crono { padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+.cfa-celula--assunto { grid-column: 1 / -1; padding-top: 1rem; padding-bottom: 1.1rem; }
+.cfa-celula--assunto .cf-assunto { margin: 0; padding: 0; border: 0; }
+@media (max-width: 56rem) { .cfa-painel { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 40rem) { .cfa-painel__cabeca, .cfa-celula { padding-inline: 1.1rem; } }
+
+/* ── Por onde seguir: objetos pixel animados em vez de caixas de texto ── */
+.cfa-secao > h2 { margin: 0 0 var(--e-4); font-family: var(--fonte-marca); font-size: 1.35rem; letter-spacing: -0.02em; }
+.cfa-caminhos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4); }
+.cfa-caminho { display: grid; grid-template-rows: auto 1fr; overflow: hidden; color: var(--texto); text-decoration: none; background: var(--superficie);
+  border: 1px solid var(--traco); border-radius: var(--ca-raio); box-shadow: var(--ca-sombra); transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.cfa-caminho:hover { color: var(--texto); transform: translateY(-3px); box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.45); }
+.cfa-caminho:focus-visible { outline: 3px solid var(--verdete); outline-offset: 3px; }
+.cfa-caminho__corpo { display: grid; align-content: start; gap: var(--e-2); padding: var(--e-4) var(--e-5) var(--e-5); }
+.cfa-caminho__corpo strong { font-family: var(--fonte-marca); font-size: 1.2rem; letter-spacing: -0.02em; }
+.cfa-caminho__corpo > span { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; text-wrap: pretty; }
+.cfa-caminho__corpo > .cfa-caminho__meta { color: var(--texto-2); font-size: var(--meta); font-weight: 650; }
+.cfa-caminho__corpo em { display: inline-flex; align-items: center; gap: var(--e-1); margin-top: var(--e-1); color: var(--verdete); font-style: normal; font-weight: 750; }
+.cfa-caminho:hover em svg { transform: translateX(3px); transition: transform 0.15s ease; }
+/* O palco de cada objeto: um nicho escuro e quente, com a luz vindo de cima. */
+.cfa-objeto { display: block; height: 9.5rem; background-color: #1a1210;
+  background-image: radial-gradient(60% 80% at 50% 0%, rgba(255, 196, 120, 0.28), transparent 70%), linear-gradient(180deg, #2a1c14, #120c0a); }
+.cfa-objeto--fichario, .cfa-objeto--cripta { position: relative; }
+.cfa-objeto--fichario::after, .cfa-objeto--cripta::after { content: ""; position: absolute; left: 50%; bottom: 0.4rem; width: 9rem; aspect-ratio: 96 / 72; transform: translateX(-50%);
+  background: var(--ca-objetos) 0 0 / 200% 200% no-repeat; image-rendering: pixelated; }
+.cfa-objeto--cripta { background-image: radial-gradient(60% 80% at 50% 100%, rgba(90, 150, 255, 0.28), transparent 70%), linear-gradient(180deg, #161c2a, #0a0c14); }
+.cfa-objeto--cripta::after { background-position-y: 100%; }
+/* O fichário abre a gaveta de vez em quando, e sempre que o mouse (ou o foco) chega. */
+.cfa-objeto--fichario::after { animation: cfa-gaveta 7s steps(1) infinite; }
+@keyframes cfa-gaveta { 0%, 78% { background-position-x: 0; } 80%, 96% { background-position-x: 100%; } 100% { background-position-x: 0; } }
+.cfa-caminho:is(:hover, :focus-visible) .cfa-objeto--fichario::after { animation: none; background-position-x: 100%; }
+/* A escada da Cripta respira em azul e acende de vez com o mouse. */
+.cfa-objeto--cripta::after { animation: cfa-cripta 3.2s steps(1) infinite; }
+@keyframes cfa-cripta { 0%, 55% { background-position-x: 0; } 56%, 100% { background-position-x: 100%; } }
+.cfa-caminho:is(:hover, :focus-visible) .cfa-objeto--cripta::after { animation: none; background-position-x: 100%; }
+/* O medidor do desempenho: um tubo de latão que enche com o que já foi estudado. */
+.cfa-objeto--medidor { display: grid; place-items: center; background-image: radial-gradient(60% 80% at 50% 0%, rgba(120, 220, 190, 0.22), transparent 70%), linear-gradient(180deg, #14221e, #0a120f); }
+.cfa-objeto--medidor i { position: relative; display: block; width: 70%; height: 22px; border-radius: 999px; background: #0a0f0d;
+  box-shadow: inset 0 0 0 2px #b8862e, inset 0 0 0 4px #4a2e10, 0 0 0 2px #2a1a0a; overflow: hidden; }
+.cfa-objeto--medidor i::before { content: ""; position: absolute; inset: 4px auto 4px 4px; width: max(6px, calc((100% - 8px) * var(--feito-n, 0))); transform-origin: left;
+  border-radius: 999px; background: repeating-linear-gradient(90deg, #4fb3a5 0 6px, #7fd6c8 6px 8px); box-shadow: 0 0 12px rgba(127, 214, 200, 0.7); animation: cfa-enche 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes cfa-enche { from { transform: scaleX(0); } }
+.cfa-ranking { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-3); margin-top: var(--e-4); padding: var(--e-3) var(--e-4);
+  border: 1px solid var(--traco); border-radius: 16px; background: var(--superficie); color: var(--texto); text-decoration: none; box-shadow: var(--ca-sombra); }
+.cfa-ranking span { display: grid; }
+.cfa-ranking small { color: var(--texto-2); font-size: var(--meta); }
+.cfa-ranking > svg:first-child { color: var(--ouro-texto, #8a6416); }
+.cfa-ranking:hover { background: var(--verdete-veu); color: var(--texto); }
+@media (max-width: 56rem) {
+  .cfa-caminhos { grid-template-columns: minmax(0, 1fr); }
+  .cfa-caminho { grid-template-columns: 10rem minmax(0, 1fr); grid-template-rows: none; }
+  .cfa-objeto { height: 100%; min-height: 8rem; }
+  .cfa-objeto--fichario::after, .cfa-objeto--cripta::after { bottom: auto; top: 50%; transform: translate(-50%, -50%); }
+}
+@media (max-width: 30rem) { .cfa-caminho { grid-template-columns: 7.5rem minmax(0, 1fr); } .cfa-objeto--fichario::after, .cfa-objeto--cripta::after { width: 6.6rem; } }
+
+/* ── Como funciona: recolhido (aberto na primeira visita) ── */
+.cfa-como { border: 1px solid var(--traco); border-radius: var(--ca-raio); background: var(--superficie); box-shadow: var(--ca-sombra); }
+.cfa-como > summary { display: flex; align-items: center; justify-content: space-between; gap: var(--e-3); min-height: 56px; padding: 0 var(--e-5); cursor: pointer; list-style: none;
+  font-family: var(--fonte-marca); font-size: 1.1rem; font-weight: 800; letter-spacing: -0.015em; }
+.cfa-como > summary::-webkit-details-marker { display: none; }
+.cfa-como[open] > summary svg { transform: rotate(180deg); }
+.cfa-como > summary:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; border-radius: var(--ca-raio); }
+.cfa-como .cf-passos { padding: 0 var(--e-5) var(--e-5); }
+.cf--arquivo .cfa-como .cf-passos li { box-shadow: none; background: var(--superficie-2, var(--porcelana)); border-color: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cfa-objeto--fichario::after, .cfa-objeto--cripta::after, .cfa-objeto--medidor i::before { animation: none; }
+  .cfa-caminho, .cfa-fila { transition: none; }
+}

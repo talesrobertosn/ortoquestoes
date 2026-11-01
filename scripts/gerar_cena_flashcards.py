@@ -16,8 +16,10 @@ Nenhum texto ou número é pintado: tudo o que se lê fica no HTML. A geometria 
 
 Saída em public/pixel/flashcards/:
 - arquivo-<manha|tarde|noite>.webp (1440 x 600) e -960.webp (960 x 400);
-- arquivo-piso.webp: o assoalho de tábuas que continua a cena embaixo do topo (ladrilho sem emenda).
-Uso: <python com numpy e pillow> scripts/gerar_cena_flashcards.py [manha|tarde|noite|piso]
+- arquivo-piso.webp: o assoalho de tábuas (ladrilho sem emenda; testado embaixo do topo e retirado em 01/11/2026);
+- objetos.png: o fichário e o arco da Cripta animados dos caminhos da central.
+Uso: <python com numpy e pillow> scripts/gerar_cena_flashcards.py [manha|tarde|noite|piso|objetos]
+(objetos.png: o fichário e o arco da Cripta animados dos caminhos da central)
 """
 from __future__ import annotations
 
@@ -453,6 +455,82 @@ def piso() -> None:
     print("arquivo-piso:", (PASTA / "arquivo-piso.webp").stat().st_size // 1024, "KB")
 
 
+def objetos() -> None:
+    """Os objetos animados dos caminhos da central (folha de 2 x 2 quadros de 96 x 72):
+    linha 0, o fichário (fechado; a gaveta do meio aberta, com as fichas pulando e as abas coloridas);
+    linha 1, o arco da Cripta (a luz fria baixa; acesa, com fagulhas azuis subindo). Pixel art pura, sombreada à mão."""
+    QW, QH = 96, 72
+
+    def mini_fichario(c: Camada, ox: int, oy: int, aberta: bool) -> None:
+        x0, x1, topo, base = ox + 10, ox + 86, oy + 18, oy + 68
+        c.ret(x0, topo, x1 - x0, base - topo, "#3a2214")
+        c.ret(x0, topo, 3, base - topo, "#6a4428"); c.ret(x1 - 4, topo, 4, base - topo, "#24140c")
+        c.ret(x0 - 3, topo - 5, x1 - x0 + 6, 5, "#5a3820"); c.ret(x0 - 3, topo - 5, x1 - x0 + 6, 1, "#a8743e")
+        c.ret(x0 - 1, base - 4, x1 - x0 + 2, 4, "#24140c"); c.ret(x0 - 1, base - 4, x1 - x0 + 2, 1, "#7a4e2c")
+        for li in range(3):
+            for co in range(3):
+                gx, gy = x0 + 4 + co * 23, topo + 3 + li * 14
+                if aberta and (li, co) == (1, 1):
+                    continue
+                c.ret(gx, gy, 22, 13, mistura("#5a3620", "#7a4a2a", hash01(li, co, 9)))
+                c.ret(gx, gy, 22, 1, "#a8743e"); c.ret(gx, gy, 1, 13, "#8a5a32"); c.ret(gx, gy + 12, 22, 1, "#24140c")
+                c.ret(gx + 7, gy + 3, 8, 4, "#b8862e"); c.ret(gx + 8, gy + 4, 6, 2, "#ece0c4")
+                c.ret(gx + 8, gy + 9, 6, 2, "#d8a040"); c.ret(gx + 8, gy + 9, 6, 1, "#ffe08a")
+        if aberta:  # a gaveta do meio puxada, as fichas em pé e duas pulando para fora
+            gx, gy = x0 + 27, topo + 17
+            c.ret(gx - 1, gy, 24, 13, "#140a06")
+            c.ret(gx - 3, gy + 2, 2, 9, "#6a4024"); c.ret(gx + 23, gy + 2, 2, 9, "#3a2214")
+            for k, xx in enumerate(range(gx - 1, gx + 23)):
+                c.ret(xx, gy + 4 - (k % 2), 1, 7, "#f4ead4" if k % 2 else "#d8ccb0")
+                if k % 3 == 1:
+                    c.ret(xx, gy + 2 - (k % 2), 2, 2, ficha_aba(k // 3))
+            c.ret(gx - 3, gy + 11, 28, 9, "#7a4a2a"); c.ret(gx - 3, gy + 11, 28, 1, "#b8844a")
+            c.ret(gx + 8, gy + 13, 9, 4, "#b8862e"); c.ret(gx + 9, gy + 14, 7, 2, "#ece0c4")
+            for (fx, fy, k, inc) in ((gx + 2, gy - 14, 0, -1), (gx + 13, gy - 20, 4, 1)):
+                c.ret(fx, fy, 11, 8, "#000000", 0.18)
+                c.ret(fx - 1, fy - 1, 11, 8, "#f8f0dc"); c.ret(fx - 1, fy - 1, 11, 2, ficha_aba(k))
+                c.ret(fx + 1, fy + 3, 7, 1, "#c8bca4"); c.ret(fx + 1, fy + 5, 5, 1, "#c8bca4")
+        # a lamparina em cima
+        lx = x0 + 12
+        c.ret(lx - 4, topo - 8, 9, 3, "#8a5a1e"); c.ret(lx - 4, topo - 8, 9, 1, "#f0c060")
+        c.ret(lx - 2, topo - 15, 5, 7, "#ffe6a0", 0.5); c.ret(lx - 1, topo - 14, 3, 5, "#ffb040"); c.ret(lx, topo - 14, 1, 4, "#fff4c8")
+        c.ret(lx - 3, topo - 16, 7, 1, "#8a5a1e")
+        brilho = Camada()
+        brilho.mascara(elipse_m(lx, topo - 11, 9, 8) * 0.25, "#ffc070")
+        c.mascara(brilho.c[:, :, 3], brilho.c[:, :, :3])
+
+    def mini_arco(c: Camada, ox: int, oy: int, aceso: bool) -> None:
+        x0, x1, topo, base = ox + 20, ox + 76, oy + 8, oy + 68
+        cx, r = (x0 + x1) / 2, (x1 - x0) / 2
+        cantaria(c, ox + 8, ox + 88, oy + 4, base, 409, ("#4a4440", "#5e5650", "#766a60", "#8e8072"), alt=5, larg=10, musgo_de=0.6)
+        m = poligono_m([(x0, base), (x0, topo + r), (x1, topo + r), (x1, base)])
+        m = np.maximum(m, elipse_m(cx - 0.5, topo + r, r, r * 0.8) * (_YS <= topo + r))
+        fundo = np.zeros((H, W, 3), np.float32) + hexa("#06070e")
+        luz = np.clip((_YS - (topo + 18)) / 44, 0, 1)
+        fundo += luz[:, :, None] * hexa("#2a4a8a" if aceso else "#16244a")
+        c.mascara(m, fundo)
+        for (i, yy) in enumerate(range(base - 3, topo + 22, -7)):
+            larg = (x1 - x0 - 6) - i * 7
+            if larg < 6:
+                break
+            c.ret(cx - larg / 2, yy, larg, 2, mistura("#7aa8ff" if aceso else "#4a5a7a", "#1a2236", min(1, i / 5)))
+        borda = (desfocar(m[:, :, None], 1.4)[:, :, 0] > 0.02) & (m == 0) & (_YS < base) & (_YS >= oy)
+        c.mascara(borda.astype(np.float32) * ((_XS >= ox) & (_XS < ox + QW)), "#a89a8a")
+        if aceso:
+            for (fx, fy) in ((cx - 9, base - 30), (cx + 6, base - 40), (cx - 2, base - 52), (cx + 12, base - 24)):
+                c.ret(fx, fy, 2, 2, "#9ac8ff"); c.p(fx, fy, "#ffffff")
+
+    folha = Camada()
+    mini_fichario(folha, 0, 0, False)
+    mini_fichario(folha, QW, 0, True)
+    mini_arco(folha, 0, QH, False)
+    mini_arco(folha, QW, QH, True)
+    arr = (np.clip(folha.c[:QH * 2, :QW * 2], 0, 1) * 255).astype(np.uint8)
+    PASTA.mkdir(parents=True, exist_ok=True)
+    Image.fromarray(arr, "RGBA").save(PASTA / "objetos.png", optimize=True)
+    print("objetos:", (PASTA / "objetos.png").stat().st_size // 1024, "KB")
+
+
 def gerar(periodo: str) -> None:
     global P
     P = periodo
@@ -468,5 +546,7 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     if "piso" in args:
         piso()
-    for p in [a for a in args if a in PERIODOS] or ([] if "piso" in args else list(PERIODOS)):
+    if "objetos" in args:
+        objetos()
+    for p in [a for a in args if a in PERIODOS] or ([] if ("piso" in args or "objetos" in args) else list(PERIODOS)):
         gerar(p)

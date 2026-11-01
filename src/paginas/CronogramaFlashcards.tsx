@@ -1,4 +1,4 @@
-import { CenaArquivo, PISO_DO_ARQUIVO } from '../componentes/flashcards/CenaArquivo'
+import { CenaArquivo } from '../componentes/flashcards/CenaArquivo'
 import { usarDiaAtual } from '../util/usarDiaAtual'
 import { usarConta } from '../conta/ContextoConta'
 import { DATA_TEOT } from '../dados/calendarioProvas'
@@ -148,7 +148,7 @@ export function PaginaCronogramaFlashcards({ abas }: { abas: React.ReactNode }) 
   const { crono, salvo, nomes, cartas, registros, salvar } = usarCronograma()
   const [ajustando, definirAjustando] = useState(false)
   return (
-    <article className="cf cfc empilha-2 cf--arquivo" style={PISO_DO_ARQUIVO}>
+    <article className="cf cfc empilha-2 cf--arquivo">
       {abas}
       <header className="cf-cabeca cf-cabeca--arquivo">
         <CenaArquivo />
