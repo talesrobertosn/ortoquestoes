@@ -95,6 +95,10 @@ for m, q in QS:
             erros.append(f"{rot}: itálico com asterisco simples em '{t[:40]}'")
         if "==" in t:
             erros.append(f"{rot}: marca-texto em '{t[:40]}'")
+    for letra, t in q["inc"].items():
+        # As letras são embaralhadas na tela: "**X** também..." pode aparecer em primeiro e perde o sentido.
+        if re.match(r"\*\*[^*]+\*\* também\b", t):
+            erros.append(f"{rot}: análise da {letra} começa com 'também'; escreva o motivo próprio")
     if re.search(r"\b(EXCETO|INCORRETA|assinale)\b", q["enun"], re.I):
         erros.append(f"{rot}: enunciado negativo ou com 'assinale' (a banca não usa)")
     if re.search(r"_{3,}|\.\.\.|…", q["enun"]):
