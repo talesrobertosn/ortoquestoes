@@ -1,0 +1,16 @@
+{
+  "base": [
+    400,
+    225
+  ],
+  "escala": 3,
+  "recorte_desktop": {
+    "y0": 0.08,
+    "y1": 0.78
+  },
+  "foco": {
+    "x": 0.5,
+    "y": 0.3
+  },
+  "notas": "Escadaria da Ascensão (Salão dos Cem). Base do Tales (PixelLab) refeita em pixel art 400x225 e luz HD-2D em 3x por scripts/cenarios/escadaria_cem.py. Recorte sugerido (0,08 a 0,78, cerca de 2,5:1) mostra as lancetas e a base da rosácea no alto, a escada no centro e a poça de luz do chão atrás dos cartões; 0,20 a 0,90 também funciona (corta a janela e põe os cartões sobre o tapete, a parte mais calma). Celular: os 60% do meio (x 0,2 a 0,8) mantêm a escada e os dois cavaleiros na borda. Cavaleiros de pedra nos nichos em x 0,22 e 0,78; estandartes em x 0,15 e 0,85."
+}

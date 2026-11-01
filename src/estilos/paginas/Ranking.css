@@ -36,50 +36,7 @@
 .rk-heroi__link:hover { color: var(--sobre-heroi); }
 @media (max-width: 46rem) { .rk-heroi { grid-template-columns: 1fr; } }
 @media (max-width: 46rem) { .rk-heroi__cartao { min-width: 0; } }
-.rk-referencia { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: .35rem 1rem; color: var(--texto-2); font-size: var(--corpo-menor); }
-.rk-referencia > span { display: inline-flex; align-items: center; gap: .35rem; }
-.rk-referencia small { flex-basis: 100%; font-size: .75rem; opacity: .85; }
-.rk-legenda { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: 999px; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
-.rk-legenda--subiu { color: var(--acerto); background: var(--acerto-veu); }
-.rk-legenda--desceu { color: var(--erro); background: var(--erro-veu); }
-.rk-legenda--fogo, .rk-movimento.rk-movimento--fogo { color: #fff; background: linear-gradient(135deg, #ffb13b, #f2542d); }
-.rk-legenda--novo, .rk-movimento.rk-movimento--novo { color: #5c3f06; background: linear-gradient(135deg, #ffe3a3, var(--ouro)); }
-.rk-movimento--novo { text-transform: uppercase; letter-spacing: .05em; font-size: .66rem; }
-.rk-movimento--parado { color: var(--texto-2); background: var(--superficie-2); min-width: 1.5rem; }
-.rk-movimento--fogo { box-shadow: 0 0 0 0 rgba(242, 84, 45, .45); animation: rk-brasa 2.4s ease-in-out infinite; }
-.rk-movimento--fogo .rk-chama { animation: rk-chama 1.2s ease-in-out infinite alternate; transform-origin: 50% 90%; }
-.rk-chama { image-rendering: pixelated; display: block; }
-@media (prefers-reduced-motion: reduce) { .rk-movimento--fogo, .rk-movimento--fogo .rk-chama { animation: none; } }
-.rk-missao { display: flex; align-items: flex-start; text-align: left; gap: .4rem; margin-top: .35rem; padding: .55rem .7rem; border-radius: var(--raio-controle); background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .16); color: var(--sobre-heroi); font-size: var(--corpo-menor); line-height: 1.35; }
-.rk-missao svg { flex: none; margin-top: .1rem; color: #ffe3a3; }
-.rk-missao b { color: #ffe3a3; }
-.rk-movimento { display: inline-flex; align-items: center; justify-content: center; gap: .12rem; width: fit-content; border-radius: 999px; padding: .18rem .45rem; font-size: .76rem; font-weight: 800; line-height: 1; white-space: nowrap; }
-.rk-movimento--subiu { color: var(--acerto); background: var(--acerto-veu); }
-.rk-movimento--desceu { color: var(--erro); background: var(--erro-veu); }
-.rk-movimento > span[aria-hidden="true"] { display: inline-flex; align-items: center; gap: .12rem; }
 .rk-movimento__sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.rk-linha > .rk-movimento { grid-column: 2; }
-.rk-mais { align-self: center; justify-self: center; margin-inline: auto; display: flex; }
-.rk-regras { border-radius: var(--raio-grande); }
-.rk-regras h2 { margin: 0; font-size: 1.15rem; }
-.rk-regras > summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; list-style: none; cursor: pointer; }
-.rk-regras > summary::-webkit-details-marker { display: none; }
-.rk-regras > summary > svg { color: var(--texto-2); transition: transform 0.15s ease; }
-.rk-regras[open] > summary > svg { transform: rotate(180deg); }
-.rk-regras[open] > ul { margin-top: 1rem; }
-.rk-regras ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.5rem; }
-@media (max-width: 46rem) { .rk-regras ul { grid-template-columns: 1fr; } }
-.rk-regras li { display: flex; gap: 0.75rem; align-items: flex-start; font-size: var(--corpo-menor); color: var(--texto-2); }
-.rk-regras li strong { color: var(--texto); }
-.rk-regras li > span {
-  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto;
-  width: 2.2rem; height: 2.2rem; border-radius: var(--raio-controle); background: var(--verdete-veu); color: var(--verdete);
-}
-.rk-referencia--inicio { flex-wrap: nowrap; align-items: flex-start; gap: .45rem; padding: .7rem .9rem; border-radius: var(--raio-controle); background: var(--superficie-2); }
-.rk-referencia--inicio svg { margin-top: .12rem; color: var(--verdete); }
-.rk-topo-abas { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.75rem; }
-.rk-liga { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; padding: 0 1rem; border-radius: 999px; background: var(--superficie); border: 1px solid color-mix(in srgb, var(--ouro) 35%, var(--traco)); box-shadow: var(--sombra-media); color: var(--texto); font-weight: 700; text-decoration: none; }
-.rk-liga:hover { border-color: var(--ouro); }
 
 /* ---------- Conquistas: emblemas ao lado do nome e fogueira ---------- */
 .emblemas-nome { display: inline-flex; align-items: center; gap: 0.15rem; vertical-align: middle; margin-left: 0.35rem; }
@@ -186,18 +143,6 @@
   .inv-item strong { font-size: 0.8rem; }
   .inv-item--tem .inv-item__descricao { display: none; }
 }
-
-/* ---------- Pódio em arena ---------- */
-.rk-arena {
-  position: relative; isolation: isolate; overflow: hidden;
-  margin-top: 0.5rem; padding: 0.9rem clamp(2rem, 6vw, 4rem) 0;
-  background-color: #0b1630; background-position: center bottom; background-size: cover; background-repeat: no-repeat;
-  image-rendering: pixelated;
-  border: 4px solid #c99a3b; border-radius: 0;
-  box-shadow: 0 0 0 4px #1b1208, inset 0 0 0 4px #1b1208, var(--sombra-media);
-  margin-inline: 4px;
-}
-.rk-arena::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(5, 10, 25, 0.05), rgba(5, 10, 25, 0.25) 70%, rgba(5, 10, 25, 0.55)); }
 .rk-arena__titulo {
   margin: 0 0 0.4rem; text-align: center; font-family: var(--fonte-pixel); font-weight: 700;
   font-size: clamp(0.85rem, 2.6vw, 1.15rem); letter-spacing: 0.08em; text-transform: uppercase;
@@ -208,7 +153,6 @@
 .rk-arena__tocha--dir { right: clamp(0.3rem, 1.5vw, 1rem); transform: scaleX(-1); animation-delay: 0.45s; }
 @keyframes rk-tocha { 50% { filter: drop-shadow(0 0 16px rgba(255, 190, 80, 1)) brightness(1.15); } }
 @media (prefers-reduced-motion: reduce) { .rk-arena__tocha { animation: none; } }
-.rk-podio { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(0.4rem, 2vw, 1rem); align-items: end; }
 .rk-podio__lugar {
   --metal: #b9c4c8; --metal-escuro: #6f7d82; --metal-claro: #f4f7f8;
   position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.3rem; text-align: center;
@@ -234,7 +178,6 @@
 .rk-podio__emblemas .fogueira { margin: 0; }
 .rk-podio__total { display: flex; flex-direction: column; line-height: 1.1; color: rgba(255, 255, 255, 0.85); font-size: var(--meta); text-shadow: 1px 1px 0 #1b1208; }
 .rk-podio__total b { font-family: var(--fonte-pixel); color: var(--metal-claro); font-size: 1.25rem; }
-.rk-podio__lugar .rk-movimento { margin-top: 0.1rem; }
 .rk-podio__base {
   align-self: stretch; display: grid; place-items: center; margin-top: 0.5rem; height: 3rem;
   font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.5rem; color: #1b1208;
@@ -322,15 +265,6 @@
   .rk-secoes__aba { flex-wrap: wrap; align-content: center; min-width: 0; gap: 0.1rem 0.3rem; padding: 0.4rem 0.2rem; font-size: 0.85rem; line-height: 1.15; text-align: center; }
   .rk-secoes__aba .selo-beta { margin-left: 0; }
 }
-
-/* ---------- Atalho para as conquistas ---------- */
-.rk-bau {
-  display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 0.75rem 1rem;
-  padding: 0.85rem 1rem; border-radius: var(--raio-cartao); color: #fff; text-decoration: none;
-  background: var(--heroi);
-  box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.5), var(--sombra-media);
-}
-.rk-bau:hover { box-shadow: inset 0 0 0 2px #f4cf7c, var(--sombra-media); }
 .rk-bau__arte { image-rendering: pixelated; }
 .rk-bau__texto { display: grid; gap: 0.1rem; min-width: 0; }
 .rk-bau__texto strong { font-family: var(--fonte-pixel, var(--fonte-marca)); font-size: 1.05rem; color: #f4cf7c; }
@@ -338,7 +272,6 @@
 .rk-bau__vitrine { display: inline-flex; gap: 0.3rem; }
 .rk-bau__seta { color: #f4cf7c; }
 @media (max-width: 34rem) {
-  .rk-bau { grid-template-columns: auto minmax(0, 1fr) auto; }
   .rk-bau__vitrine { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; }
 }
 .rk-heroi--conquistas .rk-heroi__cartao img { image-rendering: pixelated; }
@@ -354,8 +287,6 @@
 .inv-slot__vazio { animation: inv-chama 1.6s ease-in-out infinite; }
 @keyframes inv-chama { 50% { opacity: 0.45; transform: scale(0.9); } }
 .rk-bau__cta { display: inline-block; margin-top: 0.3rem; padding: 0.2rem 0.6rem; border-radius: 999px; background: rgba(244, 207, 124, 0.18); color: #ffe08a; font-style: normal; font-weight: 800; font-size: var(--meta); }
-.rk-escolher { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px dashed color-mix(in srgb, var(--ouro) 70%, transparent); background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.72rem; font-weight: 800; text-decoration: none; white-space: nowrap; }
-.rk-escolher:hover { border-style: solid; }
 @media (prefers-reduced-motion: reduce) { .inv-slot__vazio { animation: none; } }
 
 /* Serviço (local da residência) ao lado do nome: pino que abre o nome do hospital no hover ou no toque. */
@@ -367,10 +298,6 @@
   .rk-servico:hover .rk-servico__texto { max-width: 16rem; }
 }
 .rk-servico:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }
-
-/* ---------- Pódio, versão 2 (09/10/2026): os números dentro do degrau, holofote no 1º ---------- */
-.rk-arena { padding: 0.8rem clamp(1.6rem, 5vw, 3.5rem) 0; }
-.rk-arena::after { background: radial-gradient(ellipse 70% 55% at 50% 35%, rgba(5, 10, 25, 0.15), rgba(5, 10, 25, 0.62) 75%), linear-gradient(180deg, rgba(5, 10, 25, 0.35), rgba(5, 10, 25, 0.55)); }
 .rk-arena__titulo { position: relative; z-index: 1; margin: 0 0 0.6rem; }
 .rk-arena__titulo span {
   display: inline-block; padding: 0.35rem 1.1rem; background: #6b1d16; color: #ffe08a;
@@ -378,7 +305,6 @@
   clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%);
   padding-inline: 1.6rem;
 }
-.rk-podio { align-items: end; gap: clamp(0.3rem, 1.6vw, 0.8rem); }
 .rk-podio__lugar { padding: 0; gap: 0.25rem; }
 .rk-podio__nome { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 100%; }
 .rk-podio__emblemas { min-height: 2.1rem; }
@@ -413,294 +339,28 @@
 .rk-podio__degrau .rk-podio__total { color: rgba(27, 18, 8, 0.75); text-shadow: none; font-size: 0.72rem; font-weight: 700; }
 .rk-podio__degrau .rk-podio__total b { color: #1b1208; font-size: clamp(1.05rem, 4vw, 1.35rem); text-shadow: 1px 1px 0 var(--metal-claro); }
 .rk-podio__lugar--1 .rk-podio__degrau .rk-podio__total b { font-size: clamp(1.25rem, 5vw, 1.6rem); }
-/* Mesma posição ("="): no pódio só ocupa espaço; subir, descer e as chamas continuam. */
-.rk-podio .rk-movimento--parado { display: none; }
 @media (prefers-reduced-motion: reduce) { .rk-podio__lugar--1::before, .rk-podio__lugar--1::after { animation: none; opacity: 0.8; } }
 /* Nomes, iniciais e títulos em maiúsculas saem da fonte de pixel: nela, o "C" e o "B" em negrito
    viram "O" e "G" ("Oaio O." no lugar de "Caio C."). Fonte da marca, em negrito, com sombra de pixel. */
 .rk-podio__nome, .rk-arena__titulo { font-family: var(--fonte-marca); font-weight: 800; letter-spacing: 0.01em; }
 .rk-arena__titulo { letter-spacing: 0.08em; }
-.rk-visitante { display: flex; gap: 0.5rem; align-items: flex-start; margin: 0; padding: 0.7rem 0.9rem; border-radius: var(--raio-cartao); background: var(--superficie-2); border: 1px dashed var(--traco-forte); font-size: 0.9rem; line-height: 1.45; }
-.rk-visitante svg { flex: none; margin-top: 0.15rem; color: var(--ouro, #c9962c); }
-
-/* ============================================================ Pódio em pixel art (14/10/2026)
-   Cena pintada (scripts/cenarios/podio.py) + placas alinhadas com os degraus. */
-.pdx { position: relative; display: grid; gap: 0; margin-top: 0.5rem; border-radius: 14px; overflow: hidden;
-  box-shadow: 0 0 0 3px #1b1208, 0 0 0 5px #c99a3b, 0 10px 26px rgba(0, 0, 0, 0.28); background: #1b1208; }
-.pdx__cena { position: relative; line-height: 0; }
-.pdx__cena img { display: block; width: 100%; height: auto; aspect-ratio: 480 / 220; image-rendering: pixelated; }
-.pdx__titulo { position: absolute; left: 0; right: 0; top: 3%; margin: 0; text-align: center; line-height: 1; z-index: 2; }
-.pdx__titulo span { display: inline-block; padding: 0.35rem 1rem; font-family: var(--fonte-pixel); font-weight: 700; font-size: clamp(0.72rem, 2.2vw, 1.05rem);
-  letter-spacing: 0.08em; text-transform: uppercase; color: #ffe08a; background: #6b1d16; text-shadow: 2px 2px 0 #1b1208;
-  box-shadow: 0 0 0 3px #1b1208, 0 0 0 5px #c99a3b, 4px 4px 0 5px rgba(0, 0, 0, 0.35); }
-.pdx--cripta .pdx__titulo span { background: #3a1a5a; }
-.pdx__brilho { position: absolute; left: 41.5%; width: 17%; top: 0; height: 62%; pointer-events: none;
-  background: linear-gradient(rgba(255, 241, 176, 0.35), rgba(255, 241, 176, 0)); clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%); mix-blend-mode: screen; animation: pdx-brilho 3.2s ease-in-out infinite; }
 @keyframes pdx-brilho { 50% { opacity: 0.45; } }
-.pdx__confete { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-.pdx__confete i { position: absolute; top: -4%; width: 0.6%; aspect-ratio: 1 / 1.6; background: var(--c); image-rendering: pixelated; animation: pdx-confete 4s linear infinite; }
 @keyframes pdx-confete { to { transform: translateY(560%) rotate(540deg); top: 70%; opacity: 0.2; } }
-.pdx--cripta .pdx__confete i { background: #b98aff; width: 0.4%; aspect-ratio: 1; animation-name: pdx-faisca; animation-duration: 5s; box-shadow: 0 0 6px #b98aff; }
 @keyframes pdx-faisca { from { top: 80%; opacity: 0; } 20% { opacity: 1; } to { top: 10%; opacity: 0; } }
-.pdx__placas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; margin: 0; padding: 0.7rem; list-style: none;
-  background: linear-gradient(#2a1d12, #1b1208); }
-.pdx--cripta .pdx__placas { background: linear-gradient(#1c1828, #110e1a); }
-.pdx__placa { --m1: #c28a2a; --m2: #fff1b0; display: grid; justify-items: center; align-content: start; gap: 0.15rem; min-width: 0; padding: 0.55rem 0.4rem 0.6rem; text-align: center;
-  border-radius: 8px; background: linear-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)); box-shadow: inset 0 0 0 2px var(--m1), inset 0 3px 0 rgba(255, 255, 255, 0.12); color: #f4ead6; }
-.pdx__placa--1 { order: 2; --m1: #f2c45a; transform: translateY(-0.3rem); box-shadow: inset 0 0 0 2px var(--m1), 0 0 18px rgba(242, 196, 90, 0.35); }
-.pdx__placa--2 { order: 1; --m1: #c8d2e0; }
-.pdx__placa--3 { order: 3; --m1: #d08a4a; }
-.pdx__placa--voce { box-shadow: inset 0 0 0 2px var(--m1), 0 0 0 2px #7fe08f; }
-.pdx__lugar { font-family: var(--fonte-texto); font-weight: 800; font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--m1); font-variant-numeric: tabular-nums lining-nums; }
-.pdx__nome { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(0.85rem, 2.4vw, 1.05rem); }
-.pdx__voce { margin-left: 0.3rem; padding: 0 0.3rem; border-radius: 4px; font-size: 0.7rem; background: #2e7a3a; color: #fff; vertical-align: middle; }
-/* Números legíveis (pedido do Tales, 15/10/2026): a fonte pixel deixava o 6 parecido com o 2 e o 2 com o 8.
-   O clima do jogo fica nos títulos; andar, pontos e posição usam a fonte de texto com algarismos tabulares. */
-.pdx__valor { font-family: var(--fonte-texto); font-weight: 800; font-size: clamp(0.95rem, 2.8vw, 1.25rem); color: #ffe08a; font-variant-numeric: tabular-nums lining-nums; letter-spacing: 0.01em; }
-.pdx__detalhe { color: #cbbfa6; }
-.pdx__extra { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.25rem; }
-@media (max-width: 560px) {
-  .pdx__placas { gap: 0.3rem; padding: 0.45rem; }
-  .pdx__placa { padding: 0.4rem 0.2rem; }
-  .pdx__lugar { font-size: 0.66rem; }
-  .pdx__extra { display: none; }
-}
-@media (prefers-reduced-motion: reduce) { .pdx__brilho, .pdx__confete i { animation: none; } .pdx__confete { display: none; } }
-
-/* Ranking dos Flashcards com cara de cripta (só o visual; o nome no site continua "Flashcards") */
-.rk--cripta .cf-cabeca { position: relative; padding: 1.4rem clamp(1rem, 4vw, 2.2rem); border-radius: 14px; color: #f4ead6; overflow: hidden;
-  background: radial-gradient(60% 120% at 0% 50%, rgba(255, 150, 60, 0.22), transparent 60%), radial-gradient(60% 120% at 100% 50%, rgba(255, 150, 60, 0.22), transparent 60%), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.28) 0 2px, transparent 2px 18px), repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.18) 0 2px, transparent 2px 36px), linear-gradient(#2a2538, #17131f);
-  box-shadow: 0 0 0 3px #1b1208, 0 0 0 5px #6a4aa0, 0 10px 26px rgba(0, 0, 0, 0.28); }
-.rk--cripta .cf-cabeca h1 { font-family: var(--fonte-pixel); color: #ffe08a; text-shadow: 3px 3px 0 #1b1208; }
-.rk--cripta .cf-cabeca p { color: #e2d8f0 !important; }
-.rk--cripta .cf-selo { color: #c8b0ff; }
-.rk--cripta .rkc-lista li { background: linear-gradient(90deg, #242033, #1b1828); color: #ece4f6; box-shadow: inset 0 0 0 1px #3a3450; }
-.rk--cripta .rkc-lista li b { font-family: var(--fonte-texto); font-weight: 800; font-size: 1.05rem; color: #c8b0ff; font-variant-numeric: tabular-nums lining-nums; text-align: center; }
-.rk--cripta .rkc-lista li:nth-child(-n+3) b { color: #ffe08a; }
-.rk--cripta .rkc-lista em { font-family: var(--fonte-texto); color: #ffe08a; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
-.rk--cripta .rkc-lista em small { margin-right: 0.3rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #bfb2d6; }
-.rk--cripta .rkc-lista em strong { font-size: 1.15rem; font-weight: 800; }
-.rkc-nome { display: flex; align-items: center; gap: 0.4rem; min-width: 0; }
-.rkc-nome > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.rkc-nome .emblemas-nome { margin: 0; flex: none; }
-.rkc-emblemas { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; padding: 0.8rem 1rem; border-radius: 12px; color: #ece4f6; text-decoration: none;
-  background: linear-gradient(90deg, #2a2240, #1b1828); box-shadow: inset 0 0 0 1px #4a3f6a; }
-.rkc-emblemas:hover { box-shadow: inset 0 0 0 2px #8f6fd0; }
-.rkc-emblemas__artes { display: flex; gap: 0.2rem; }
-.rkc-emblemas__artes img { image-rendering: pixelated; }
-.rkc-emblemas strong { display: block; color: #ffe08a; }
-.rkc-emblemas small { color: #cfc3e6; }
-.rkc-emblemas__texto { flex: 1 1 14rem; min-width: 0; }
-.rk--cripta .rkc-voce { outline: 2px solid #7fe08f; }
-.rkc-tocha { position: absolute; top: 50%; translate: 0 -50%; image-rendering: pixelated; }
-.rkc-tocha--esq { left: 0.6rem; } .rkc-tocha--dir { right: 0.6rem; }
-.rk--cripta .cf-cabeca > :not(.rkc-tocha) { position: relative; padding-inline: 1.4rem; }
-
-
-
-/* ============================================================ Top 3 em HD-2D: Salão dos Campeões (14/10/2026)
-   Camadas em pixel art (scripts/cenarios/salao_campeoes.py) + luz, desfoque e micromovimentos.
-   Coordenadas em % da arte de 320×240. O cartão é sempre noturno, nos dois temas. */
-.sc { position: relative; overflow: hidden; margin: 1.25rem 0 1rem; width: 100%; border-radius: 16px; color: #f4ecdc; background: #070814;
-  box-shadow: 0 0 0 1px #3a2c10, 0 0 0 3px #0b0a12, 0 0 0 4px #b8892c, 0 16px 40px rgba(5, 6, 16, 0.5); }
-.sc__cabeca { position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; column-gap: 0.7rem; padding: 0.8rem 1rem 0.7rem; text-align: center;
-  background: radial-gradient(80% 140% at 50% 0%, rgba(120, 90, 200, 0.35), transparent 70%), linear-gradient(#0d0c1e, #070814); border-bottom: 1px solid rgba(232, 180, 64, 0.35); }
-.sc__selo { display: inline-flex; align-items: center; gap: 0.6rem; margin: 0; font-family: 'Cinzel', serif; font-weight: 700; font-size: clamp(0.72rem, 2.4vw, 0.9rem); letter-spacing: 0.3em; text-transform: uppercase; color: #e8b440; }
-.sc__selo::before, .sc__selo::after { content: '◆'; font-size: 0.6em; color: #b8892c; }
-.sc__titulo { margin: 0.05rem 0 0; font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(1.7rem, 6vw, 2.4rem); line-height: 1; letter-spacing: 0.08em;
-  background: linear-gradient(180deg, #fffbe8 0%, #ffe48e 40%, #e8b440 58%, #9a6614 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
-  filter: drop-shadow(0 2px 0 #3a2404) drop-shadow(0 0 14px rgba(240, 190, 70, 0.5)); animation: sc-titulo 4s ease-in-out infinite; }
 @keyframes sc-titulo { 50% { filter: drop-shadow(0 2px 0 #3a2404) drop-shadow(0 0 22px rgba(255, 210, 100, 0.75)); } }
-.sc__sub { flex-basis: 100%; margin: 0.2rem 0 0; font-size: 0.9rem; color: #c8c4e0; }
-
-/* A janela recorta o mundo: no celular mostra o miolo da cena, maior. */
-/* Recorte vertical da arte (y 36 a 208): some o friso do teto e o primeiro plano do tapete. */
-.sc__janela { position: relative; overflow: hidden; aspect-ratio: 320 / 172; }
-.sc__mundo { position: absolute; top: 0; left: 0; margin-top: -11.25%; container-type: inline-size; width: 100%; aspect-ratio: 320 / 240; }
-@media (max-width: 640px) { .sc__janela { aspect-ratio: 1 / 0.656; } .sc__mundo { width: 122%; left: -11%; margin-top: -13.725%; } }
-.sc__camada, .sc__estandarte, .sc__trofeu img, .sc__fogo img { position: absolute; image-rendering: pixelated; user-select: none; pointer-events: none; }
-.sc__camada { inset: 0; width: 100%; height: 100%; }
-/* Profundidade de campo: fundo levemente desfocado, palco nítido, frente bem desfocada. */
-.sc__fundo { filter: blur(0.6px) saturate(1.1) brightness(0.95); }
-.sc__vitral { filter: blur(5px) brightness(1.5) saturate(1.4); mix-blend-mode: screen; opacity: 0.75; animation: sc-vitral 6s ease-in-out infinite; }
 @keyframes sc-vitral { 50% { opacity: 1; } }
-.sc__frente { filter: blur(2.5px) brightness(0.8); z-index: 6; }
-
-/* Feixes de luz saindo da rosácea. */
-.sc__raios { position: absolute; left: 50%; top: 21%; width: 0; height: 0; z-index: 1; mix-blend-mode: screen; pointer-events: none; }
-.sc__raios i { position: absolute; left: -9cqw; top: 0; width: 18cqw; height: 95cqw; transform-origin: 50% 0;
-  background: linear-gradient(rgba(255, 236, 170, 0.6), rgba(255, 220, 150, 0.18) 55%, transparent 85%); clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%); filter: blur(3px);
-  animation: sc-raio 9s ease-in-out infinite alternate; }
-.sc__raios i:nth-child(1) { rotate: 0deg; opacity: 0.85; }
-.sc__raios i:nth-child(2) { rotate: 22deg; opacity: 0.5; animation-delay: -3s; background: linear-gradient(rgba(140, 170, 255, 0.4), transparent 80%); }
-.sc__raios i:nth-child(3) { rotate: -22deg; opacity: 0.5; animation-delay: -5s; background: linear-gradient(rgba(255, 140, 170, 0.35), transparent 80%); }
-.sc__raios i:nth-child(4) { rotate: 40deg; opacity: 0.3; animation-delay: -1s; }
-.sc__raios i:nth-child(5) { rotate: -40deg; opacity: 0.3; animation-delay: -7s; }
 @keyframes sc-raio { from { transform: rotate(-2deg) scaleX(0.9); filter: blur(3px) brightness(0.8); } to { transform: rotate(2deg) scaleX(1.1); filter: blur(4px) brightness(1.2); } }
-
-.sc__estandarte { transform-origin: 50% 2%; z-index: 2; animation: sc-estandarte 5s ease-in-out infinite; filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.5)); }
-.sc__estandarte--dir { animation-delay: -2.5s; }
 @keyframes sc-estandarte { 0%, 100% { transform: rotate(-1.2deg) skewX(0.6deg); } 50% { transform: rotate(1.2deg) skewX(-0.6deg); } }
-.sc__palco { z-index: 3; }
-/* Holofote sobre o campeão. */
-.sc__foco { position: absolute; z-index: 3; left: 30%; top: 0; width: 40%; height: 82%; pointer-events: none; mix-blend-mode: screen;
-  background: radial-gradient(40% 60% at 50% 72%, rgba(255, 220, 140, 0.35), transparent 70%); animation: sc-foco 4s ease-in-out infinite; }
 @keyframes sc-foco { 50% { opacity: 0.7; } }
-
-.sc__fogo { position: absolute; z-index: 4; }
-.sc__fogo img { inset: 0; width: 100%; height: 100%; opacity: 0; animation: sc-fogo 0.36s steps(1) infinite; filter: drop-shadow(0 0 4px rgba(255, 150, 40, 0.9)); }
-.sc__fogo img:nth-child(2) { animation-delay: -0.12s; }
-.sc__fogo img:nth-child(3) { animation-delay: -0.24s; }
 @keyframes sc-fogo { 0% { opacity: 1; } 33.3% { opacity: 0; } }
-.sc__calor { position: absolute; z-index: 2; top: 44%; width: 40%; height: 50%; pointer-events: none; mix-blend-mode: screen;
-  background: radial-gradient(closest-side, rgba(255, 140, 40, 0.45), transparent); animation: sc-calor 0.9s ease-in-out infinite alternate; }
-.sc__calor--esq { left: -9%; } .sc__calor--dir { right: -9%; animation-delay: -0.45s; }
 @keyframes sc-calor { from { opacity: 0.65; transform: scale(0.96); } to { opacity: 1; transform: scale(1.04); } }
-
-.sc__trofeu { position: absolute; z-index: 4; animation: sc-trofeu 3.6s ease-in-out infinite; }
-.sc__trofeu--2 { animation-delay: -1.2s; } .sc__trofeu--3 { animation-delay: -2.4s; }
-.sc__trofeu img { inset: 0; width: 100%; height: 100%; }
-.sc__trofeu--1 img { filter: drop-shadow(0 0 3px rgba(255, 220, 110, 0.95)) drop-shadow(0 0 12px rgba(255, 190, 60, 0.6)); }
-.sc__trofeu--2 img { filter: drop-shadow(0 0 3px rgba(220, 235, 255, 0.85)) drop-shadow(0 0 9px rgba(180, 200, 255, 0.4)); }
-.sc__trofeu--3 img { filter: drop-shadow(0 0 3px rgba(255, 180, 120, 0.85)) drop-shadow(0 0 9px rgba(240, 140, 80, 0.4)); }
 @keyframes sc-trofeu { 50% { transform: translateY(-1.6%); } }
-.sc__cintila { position: absolute; left: 30%; top: 22%; width: 2.6cqw; aspect-ratio: 1; background: #fff; clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%);
-  filter: drop-shadow(0 0 3px #fff); animation: sc-cintila 2.8s ease-in-out infinite; opacity: 0; }
-.sc__cintila--b { left: 68%; top: 8%; width: 1.8cqw; animation-delay: -1.4s; }
 @keyframes sc-cintila { 0%, 70%, 100% { opacity: 0; transform: scale(0.2) rotate(0deg); } 80% { opacity: 1; transform: scale(1) rotate(45deg); } }
-
-.sc__particulas { position: absolute; inset: 0; z-index: 5; pointer-events: none; overflow: hidden; }
-.sc__poeira { position: absolute; border-radius: 50%; background: radial-gradient(circle, #fff8d8, rgba(255, 220, 140, 0.4) 50%, transparent 70%); animation: sc-poeira linear infinite; }
 @keyframes sc-poeira { 0% { transform: translate(0, 0); opacity: 0; } 15% { opacity: 0.9; } 50% { transform: translate(6px, -10px); } 85% { opacity: 0.6; } 100% { transform: translate(-4px, -22px); opacity: 0; } }
-.sc__brasa { position: absolute; top: 62%; width: 3px; height: 3px; background: #ffb040; box-shadow: 0 0 4px #ff8020; animation: sc-brasa ease-out infinite; }
 @keyframes sc-brasa { 0% { transform: translate(0, 0); opacity: 1; } 100% { transform: translate(var(--dx), -18cqw); opacity: 0; } }
-
-/* Gradação de cor e vinheta, como lente de cinema. */
-.sc__grade { position: absolute; inset: 0; z-index: 7; pointer-events: none;
-  background: radial-gradient(85% 75% at 50% 45%, transparent 55%, rgba(3, 3, 12, 0.75) 100%), linear-gradient(180deg, rgba(40, 20, 80, 0.25), transparent 40%, rgba(255, 150, 60, 0.08) 80%, rgba(5, 5, 15, 0.4)); }
-
-/* Placas com os nomes, encaixadas na frente de cada pedestal. */
-.sc__placas { position: absolute; inset: 0; z-index: 8; margin: 0; padding: 0; list-style: none; pointer-events: none; }
-.sc__placa { position: absolute; display: grid; align-content: center; justify-items: center; gap: 0.3cqw; padding: 0.6cqw; text-align: center; overflow: hidden; }
-.sc__lugar { font-family: 'Cinzel', serif; font-weight: 900; font-size: 1.9cqw; letter-spacing: 0.1em; text-transform: uppercase; color: #f8da70; text-shadow: 0 0 6px rgba(255, 200, 80, 0.6); }
-.sc__placa--2 .sc__lugar { color: #dfe7f4; text-shadow: 0 0 6px rgba(200, 220, 255, 0.5); }
-.sc__placa--3 .sc__lugar { color: #f0b080; text-shadow: 0 0 6px rgba(240, 150, 90, 0.5); }
-.sc__nome { max-width: 100%; font-family: 'Cinzel', serif; font-weight: 900; font-size: 2.7cqw; line-height: 1.05; letter-spacing: -0.01em; color: #fffaf0; overflow-wrap: anywhere; text-shadow: 0 1px 0 #000, 0 0 8px rgba(255, 230, 180, 0.35); }
-.sc__placa--1 .sc__nome { font-size: 3.3cqw; }
-.sc__total { font-size: 1.9cqw; line-height: 1.1; color: #cfc8b4; }
-.sc__total b { display: block; font-family: var(--fonte-marca); font-weight: 800; font-size: 2.8cqw; color: #fff; }
-.sc__placa--3 .sc__total b, .sc__placa--2 .sc__total b { font-size: 2.6cqw; }
-.sc__placa--3 { gap: 0; }
-.sc__voce { position: absolute; top: 0.4cqw; right: 0.4cqw; padding: 0 0.8cqw; border-radius: 99px; font-size: 1.8cqw; font-weight: 800; text-transform: uppercase; background: #2fbf6a; color: #04210f; }
-.sc__placa--voce { box-shadow: inset 0 0 0 0.5cqw #2fbf6a; }
-
-.sc .rk-movimento--parado { display: none; }
-/* No celular as setas saem da faixa para caber numa linha, mas a descrição continua para leitores de tela. */
-.sc__chamada { margin: 0; padding: 0.7rem 1rem; text-align: center; font-size: 0.95rem; line-height: 1.35; background: linear-gradient(90deg, #0b0a18, #1c1436, #0b0a18); border-top: 1px solid rgba(232, 180, 64, 0.45); }
-.sc__chamada b { color: #f8da70; }
-@media (prefers-reduced-motion: reduce) { .sc *, .sc__titulo { animation: none !important; } .sc__fogo img:first-child { opacity: 1; } }
-
-/* ---------- Top 3 refeito (14/10/2026): cena + cartões legíveis, largura cheia ----------
-   Computador: a cena à esquerda e os três cartões à direita. Celular: a cena em cima e os cartões embaixo.
-   Nos pedestais fica só o número do lugar; nomes e totais em rem, nunca miúdos. */
-.sc__corpo { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: stretch; background: #070814; }
-.sc__lista { position: relative; z-index: 1; }
-@media (max-width: 860px) { .sc__corpo { grid-template-columns: minmax(0, 1fr); } }
-.sc__janela { min-width: 0; width: 100%; align-self: center; }
-.sc__placa { gap: 0; }
-.sc__numero { font-family: 'Cinzel', serif; font-weight: 900; font-size: 7cqw; line-height: 1; color: #f8da70; text-shadow: 0 0.4cqw 0 #3a2404, 0 0 2.4cqw rgba(255, 200, 80, 0.7); }
-.sc__placa--2 .sc__numero { font-size: 5.6cqw; color: #e6edf8; text-shadow: 0 0.4cqw 0 #1a2030, 0 0 2cqw rgba(200, 220, 255, 0.6); }
-.sc__placa--3 .sc__numero { font-size: 5cqw; color: #f2b483; text-shadow: 0 0.4cqw 0 #3a1a08, 0 0 2cqw rgba(240, 150, 90, 0.6); }
-.sc__placa .sc__lugar { font-size: 1.7cqw; margin-top: 0.6cqw; }
-.sc__lista { display: grid; align-content: center; gap: 0.6rem; margin: 0; padding: 1rem; list-style: none;
-  background: radial-gradient(120% 80% at 50% 0%, rgba(90, 70, 170, 0.25), transparent 70%), #0b0a18; border-left: 1px solid rgba(232, 180, 64, 0.25); }
-@media (max-width: 860px) { .sc__lista { border-left: 0; border-top: 1px solid rgba(232, 180, 64, 0.25); padding: 0.8rem; } }
-.sc__cartao { --m: #e8b440; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; padding: 0.7rem 0.9rem; border-radius: 12px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--m) 70%, transparent); }
-.sc__cartao--1 { --m: #f2c45a; padding-block: 0.95rem; background: linear-gradient(90deg, rgba(242, 196, 90, 0.2), rgba(242, 196, 90, 0.04)); box-shadow: inset 0 0 0 2px var(--m), 0 0 22px rgba(242, 196, 90, 0.25); }
-.sc__cartao--2 { --m: #c8d2e0; }
-.sc__cartao--3 { --m: #d08a4a; }
-.sc__cartao--voce { box-shadow: inset 0 0 0 2px #2fbf6a, 0 0 16px rgba(47, 191, 106, 0.3); }
-.sc__medalha { display: grid; place-items: center; width: 2.6rem; aspect-ratio: 1; }
-.sc__cartao--1 .sc__medalha { width: 3.2rem; }
-.sc__medalha img { width: 100%; height: auto; image-rendering: pixelated; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--m) 70%, transparent)); }
-.sc__quem { display: grid; gap: 0.15rem; min-width: 0; }
-.sc__pos { font-family: 'Cinzel', serif; font-weight: 900; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--m); }
-.sc__cartao .sc__nome { font-family: 'Cinzel', serif; font-weight: 900; font-size: 1.1rem; line-height: 1.15; color: #fffaf0; overflow-wrap: anywhere; text-shadow: none; }
-.sc__cartao--1 .sc__nome { font-size: 1.3rem; }
-.sc__cartao .sc__voce { position: static; display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.45rem; vertical-align: 0.15em; font-size: 0.65rem; border-radius: 99px; }
-.sc__selos { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; margin-top: 0.15rem; }
-.sc__selos .sc__extra { display: contents; }
-.sc__cartao .sc__total { display: grid; justify-items: end; font-size: 0.75rem; color: #cfc8b4; text-align: right; }
-.sc__cartao .sc__total b { display: block; font-family: var(--fonte-marca); font-weight: 800; font-size: 1.35rem; line-height: 1.05; color: #fff; }
-.sc__cartao--1 .sc__total b { font-size: 1.6rem; color: #ffe48e; }
-@media (max-width: 420px) {
-  .sc__cartao { gap: 0.55rem; padding: 0.6rem 0.7rem; }
-  .sc__medalha { width: 2.2rem; } .sc__cartao--1 .sc__medalha { width: 2.7rem; }
-  .sc__cartao .sc__nome { font-size: 1rem; } .sc__cartao--1 .sc__nome { font-size: 1.15rem; }
-  .sc__cartao .sc__total b { font-size: 1.2rem; } .sc__cartao--1 .sc__total b { font-size: 1.4rem; }
-}
-
-/* ---------- "Subindo rápido" no Salão (14/10/2026) ----------
-   Mesma noite, moldura dourada e Cinzel do Top 3. O fundo é a arte do salão, desfocada; brasas sobem,
-   as tochas animadas ladeiam o título e cada degrau sobe um pouco, como quem ganha posições. */
-.sb { position: relative; isolation: isolate; overflow: hidden; display: grid; gap: 0.9rem; margin: 1.25rem 0 0; padding: 0 0 1rem; border-radius: 16px; color: #f4ecdc; background: #070814;
-  box-shadow: 0 0 0 1px #3a2c10, 0 0 0 3px #0b0a12, 0 0 0 4px #b8892c, 0 16px 40px rgba(5, 6, 16, 0.5); }
-.sb__fundo { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; filter: blur(2.5px) brightness(0.6) saturate(1.25); transform: scale(1.08); pointer-events: none; user-select: none; }
-.sb::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background: radial-gradient(70% 60% at 50% 100%, rgba(255, 140, 40, 0.22), transparent 70%), linear-gradient(180deg, rgba(7, 8, 20, 0.55), rgba(11, 10, 24, 0.75) 45%, rgba(7, 8, 20, 0.9)); }
-.sb__brasas { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
-.sb__brasas i { position: absolute; bottom: -6px; background: #ffb040; box-shadow: 0 0 5px #ff8020; animation: sb-brasa ease-out infinite; }
 @keyframes sb-brasa { 0% { transform: translate(0, 0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(var(--dx), -26rem); opacity: 0; } }
-
-.sb__cabeca { display: flex; flex-wrap: wrap; justify-content: center; padding: 0.8rem 1rem 0.7rem; text-align: center;
-  background: radial-gradient(80% 140% at 50% 0%, rgba(120, 90, 200, 0.35), transparent 70%), linear-gradient(rgba(13, 12, 30, 0.92), rgba(7, 8, 20, 0.7)); border-bottom: 1px solid rgba(232, 180, 64, 0.35); }
-.sb__selo { flex-basis: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; margin: 0; font-family: 'Cinzel', serif; font-weight: 700; font-size: clamp(0.72rem, 2.4vw, 0.9rem); letter-spacing: 0.3em; text-transform: uppercase; color: #e8b440; }
-.sb__selo::before, .sb__selo::after { content: '◆'; font-size: 0.6em; color: #b8892c; }
-.sb__titulo { display: inline-flex; align-items: center; gap: 0.6rem; margin: 0.1rem 0 0; font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(1.6rem, 6vw, 2.3rem); line-height: 1; letter-spacing: 0.06em; }
-.sb__titulo > span { background: linear-gradient(180deg, #fffbe8 0%, #ffe48e 40%, #e8b440 58%, #9a6614 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
-  filter: drop-shadow(0 2px 0 #3a2404) drop-shadow(0 0 14px rgba(240, 190, 70, 0.5)); animation: sc-titulo 4s ease-in-out infinite; }
-.sb__sub { flex-basis: 100%; margin: 0.25rem 0 0; font-size: 0.9rem; color: #c8c4e0; }
-
-/* Chamas de três quadros, as mesmas das tochas do Top 3. */
-.sb__tocha, .sb__chama { position: relative; display: inline-block; flex: none; }
-.sb__tocha { width: 1.4rem; height: 1.9rem; }
-.sb__chama { width: 1.5rem; height: 2rem; }
-.sb__tocha img, .sb__chama img { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; opacity: 0; animation: sc-fogo 0.36s steps(1) infinite; filter: drop-shadow(0 0 4px rgba(255, 150, 40, 0.9)); }
-.sb__tocha img:nth-child(2), .sb__chama img:nth-child(2) { animation-delay: -0.12s; }
-.sb__tocha img:nth-child(3), .sb__chama img:nth-child(3) { animation-delay: -0.24s; }
-
-.sb__lista { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.6rem; margin: 0; padding: 0 1rem; list-style: none; }
-.sb__degrau { --m: #c8d2e0; display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; min-width: 0; padding: 0.7rem 0.8rem; border-radius: 12px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)); backdrop-filter: blur(2px);
-  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--m) 55%, transparent); animation: sb-degrau 3.6s ease-in-out infinite; }
-.sb__degrau--lider { --m: #f2c45a; background: linear-gradient(90deg, rgba(242, 196, 90, 0.22), rgba(242, 196, 90, 0.04)); box-shadow: inset 0 0 0 2px var(--m), 0 0 22px rgba(242, 196, 90, 0.25); }
-.sb__degrau--voce { --m: #2fbf6a; box-shadow: inset 0 0 0 2px #2fbf6a, 0 0 16px rgba(47, 191, 106, 0.3); }
 @keyframes sb-degrau { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
-
-.sb__salto { position: relative; display: grid; justify-items: center; min-width: 3.4rem; padding: 0.3rem 0.4rem 0.25rem; border-radius: 10px;
-  background: linear-gradient(180deg, #2a8f5c, #155c3a); box-shadow: inset 0 0 0 1.5px rgba(190, 255, 215, 0.45), 0 0 14px rgba(47, 191, 106, 0.3); }
-.sb__salto b { font-family: 'Cinzel', serif; font-weight: 900; font-size: 1.45rem; line-height: 1; color: #f0fff6; text-shadow: 0 2px 0 #0b3a24; }
-.sb__salto small { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #bff0d5; }
-.sb__seta { position: absolute; top: -0.55rem; font-size: 0.7rem; color: #8ff0b8; text-shadow: 0 0 6px rgba(120, 255, 170, 0.9); animation: sb-seta 1.6s ease-in-out infinite; }
 @keyframes sb-seta { 0% { transform: translateY(4px); opacity: 0; } 40% { opacity: 1; } 100% { transform: translateY(-4px); opacity: 0; } }
-
-.sb__brasao { display: grid; place-items: center; width: 2.5rem; aspect-ratio: 1; border-radius: 50%; font-family: 'Cinzel', serif; font-weight: 900; font-size: 0.95rem; color: #3a2404;
-  background: radial-gradient(circle at 35% 30%, #fff3c4, #f2c45a 45%, #b8892c 80%); box-shadow: inset 0 0 0 2px #7a5410, 0 0 10px color-mix(in srgb, var(--m) 45%, transparent); }
-.sb__quem { display: grid; gap: 0.1rem; min-width: 0; }
-.sb__nome { font-family: 'Cinzel', serif; font-weight: 900; font-size: 1.05rem; line-height: 1.15; color: #fffaf0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.sb__degrau--lider .sb__nome { color: #ffe48e; }
-.sb__quem small { font-size: 0.8rem; font-weight: 600; color: #cfc8b4; }
-.sb__quem small b { color: #f8da70; }
-.sb__voce { display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.45rem; vertical-align: 0.15em; border-radius: 99px; font-family: var(--fonte-texto, inherit); font-size: 0.62rem; font-weight: 800; text-transform: uppercase; background: #2fbf6a; color: #04210f; }
-.sb__fogo { display: grid; place-items: center; width: 2.4rem; height: 2.6rem; border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 140, 40, 0.45), transparent); animation: sc-calor 0.9s ease-in-out infinite alternate; }
-@media (max-width: 420px) {
-  .sb__lista { padding: 0 0.7rem; }
-  .sb__degrau { gap: 0.55rem; padding: 0.6rem 0.65rem; }
-  .sb__brasao { width: 2.2rem; font-size: 0.85rem; }
-  .sb__nome { font-size: 0.98rem; }
-}
-@media (prefers-reduced-motion: reduce) { .sb *, .sb__titulo > span { animation: none !important; } .sb__tocha img:first-child, .sb__chama img:first-child { opacity: 1; } .sb__brasas { display: none; } }
 
 /* Filtros do inventário: Próximas / Conquistadas / Todas e a família. */
 .inv-filtros { display: flex; flex-wrap: wrap; align-items: end; gap: 0.75rem 1rem; margin: 1rem 0 0.25rem; }
@@ -717,8 +377,6 @@
 @media (max-width: 40rem) { .inv-segmentado { width: 100%; } .inv-segmentado button { flex: 1; padding: 0 0.5rem; } .inv-familia-escolha, .inv-familia-escolha select { width: 100%; max-width: none; } }
 .inv-grade--proximas { margin-top: 0.75rem; }
 .inv-item__familia { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--texto-2); }
-
-.rk-criterio { display: flex; align-items: center; gap: 0.45rem; margin: 0; font-size: var(--meta); color: var(--texto-2); }
 /* Lista de até 100 nomes: os emblemas ficam parados (a flutuação global de img[src*="emblemas/"]
    virava centenas de animações ao mesmo tempo no celular). */
 .rk-lista img { animation: none; }
