@@ -29,5 +29,7 @@ button.mascote__corpo:hover .mascote__sprite { filter: brightness(1.08) drop-sha
 /* Reação curta (Mascote reacao=...): a linha toca uma vez e para no último quadro. */
 .mascote--reagindo .mascote__sprite { animation: mascote-uma-vez var(--dur) steps(7, jump-none) 1 forwards; }
 @keyframes mascote-uma-vez { from { background-position-x: 0; } to { background-position-x: 100%; } }
-/* Poses de transição tocam uma vez e param no último quadro (antes repetiam: o gato deitava e levantava sem parar). */
-.gato-pixel--acordando, .gato-pixel--espreguicando { animation-iteration-count: 1; animation-fill-mode: forwards; animation-duration: 1.6s; }
+/* Poses de transição (acordar, espreguiçar) tocam uma vez, sem deitar e levantar sem parar. Tocando uma vez, a animação para no ÚLTIMO quadro (100%), e não no 120%
+   do laço, que fica fora da folha (vazio). */
+.gato-pixel--acordando, .gato-pixel--espreguicando { animation: gato-pixel-uma-vez 1.6s steps(5, jump-none) 1 forwards; }
+@keyframes gato-pixel-uma-vez { to { background-position-x: 100%; } }

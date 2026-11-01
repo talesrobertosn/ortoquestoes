@@ -48,7 +48,8 @@ function planejarBalao(balao: HTMLElement, alturaBicho: number, deslocs: { x: nu
   const passos: number[] = [0]
   for (let d = 12; d <= v.w; d += 12) passos.push(d, -d)
   // Evita também o esqueleto e a fala dele; prefere ficar perto do bicho (em cima ou embaixo) a ir longe.
-  const bichos = [...heroi.querySelectorAll('.hd-mascote .mascote__corpo, .mascote__balao')].map(caixa)
+  // Também os outros bichos e as outras falas (a coruja e o gato falando ao mesmo tempo não se cobrem).
+  const bichos = [...heroi.querySelectorAll('.hd-mascote .mascote__corpo, .mascote__balao, .hd-balao, .hd-gato, .hd-coruja:not(.hd-coruja--fora)')].filter((e) => e !== balao).map(caixa)
   const embaixo = b0.h + alturaBicho + 14
   const perto = b0.w * 0.6
   const tentativas: [number, number, boolean][] = [[0, perto, true], [-28, perto, true], [-56, perto, true], [embaixo, perto, true], [0, Infinity, true], [embaixo, Infinity, true], [0, Infinity, false], [embaixo, Infinity, false]]
@@ -81,6 +82,15 @@ function encaixarBalao(balao: HTMLElement | null, alturaBicho: number) {
   if (balao) aplicarEncaixe(balao, planejarBalao(balao, alturaBicho, [{ x: 0, y: 0 }])[0])
 }
 
+/** Um bicho fala de cada vez na cena: quem começa a falar avisa, e o outro fecha o balão. */
+const EVENTO_FALA = 'hd-bicho-fala'
+const avisarFala = (quem: 'gato' | 'coruja') => window.dispatchEvent(new CustomEvent(EVENTO_FALA, { detail: quem }))
+const ouvirFala = (f: (quem: string) => void) => {
+  const ouvir = (e: Event) => f(String((e as CustomEvent).detail))
+  window.addEventListener(EVENTO_FALA, ouvir)
+  return () => window.removeEventListener(EVENTO_FALA, ouvir)
+}
+
 const reduzMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
 
 const DURACAO_PASSO = 3600
@@ -97,7 +107,8 @@ const OUTROS = '.hd-mascote, .mascote__balao, .hd-balao:not(.hd-balao--coruja), 
 function CorujaDoAcampamento({ poleiros: POLEIROS }: { poleiros: Cenario['coruja'] }) {
   const [passo, definirPasso] = useState(0)
   const [acenou, definirAcenou] = useState(0)
-  const [poleiro, definirPoleiro] = useState<number | null>(0)
+  // Começa escondida e escolhe o poleiro logo ao montar (antes aparecia 1 s no primeiro poleiro, às vezes em dobro).
+  const [poleiro, definirPoleiro] = useState<number | null>(null)
   const [fala, definirFala] = useState<string | null>(null)
   const ref = useRef<HTMLButtonElement>(null)
   const balao = useRef<HTMLSpanElement>(null)
@@ -123,6 +134,7 @@ function CorujaDoAcampamento({ poleiros: POLEIROS }: { poleiros: Cenario['coruja
       }
       definirPoleiro((atual) => (atual !== null && livreAqui(atual) ? atual : POLEIROS.findIndex((_, i) => livreAqui(i)) >= 0 ? POLEIROS.findIndex((_, i) => livreAqui(i)) : null))
     }
+    escolher()
     const primeira = window.setTimeout(escolher, 600)
     const vez = window.setInterval(() => { if (!document.hidden) escolher() }, 2500)
     window.addEventListener('resize', escolher)
@@ -133,7 +145,9 @@ function CorujaDoAcampamento({ poleiros: POLEIROS }: { poleiros: Cenario['coruja
   useEffect(() => { if (!fala) return; const t = window.setTimeout(() => definirFala(null), 11000); return () => window.clearTimeout(t) }, [fala])
   const pt = POLEIROS[poleiro ?? 0]
   // A coruja é a sábia: cada toque explica um conceito que cai na prova.
-  const tocar = () => { definirAcenou((n) => n + 1); definirFala(proximaFala('coruja', CONCEITOS_CORUJA)) }
+  const tocar = () => { definirAcenou((n) => n + 1); definirFala(proximaFala('coruja', CONCEITOS_CORUJA)); avisarFala('coruja') }
+  // Um fala de cada vez: se o gato começa a falar, a coruja fecha o balão dela.
+  useEffect(() => ouvirFala((quem) => { if (quem !== 'coruja') definirFala(null) }), [])
   return <>
     <button ref={ref} type="button" tabIndex={-1} className={'hd-coruja' + (poleiro === null ? ' hd-coruja--fora' : '')} onClick={tocar}
       style={lugar(pt.x - CORUJA.w / 2, pt.y - CORUJA.h * 31 / 32, CORUJA.w, CORUJA.h)}>
@@ -153,6 +167,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
 }) {
   // O cenário desta hora (cenarios.ts): decide uma vez ao abrir a página, para nada trocar de lugar no meio da visita.
   const [cenario] = useState(() => cenarioDaHora())
+  const [reacaoAmostra, definirReacaoAmostra] = useState<{ id: 'comemora2' | 'quadro'; n: number } | null>(null)
   const PONTOS_GATO = cenario.gato
   const repouso: IdLinhaGato = descanso ? 'ronronando' : 'dormindo'
   const poseDoPonto = (i: number): IdLinhaGato => (PONTOS_GATO[i].pose === 'repouso' ? repouso : PONTOS_GATO[i].pose)
@@ -163,9 +178,12 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   // O gato é o preguiçoso: cada toque, uma frase; no 6º toque seguido, a tala (o segredo antigo).
   const [falaGato, definirFalaGato] = useState<string | null>(null)
   const toquesGato = useRef(0)
+  useEffect(() => ouvirFala((quem) => { if (quem !== 'gato') definirFalaGato(null) }), [])
   const balaoGato = useRef<HTMLSpanElement>(null)
   // Se a fala não cabe perto do gato neste canto, ele anda até o canto livre mais próximo onde caiba (e fala de lá).
   const jaAndou = useRef(false)
+  const passoFala = useRef<number | undefined>(undefined)
+  useEffect(() => () => window.clearTimeout(passoFala.current), [])
   useLayoutEffect(() => {
     const balao = balaoGato.current, el = palco.current
     if (andando || !balao || !el || !(falaGato || gato === 'tala')) return
@@ -184,14 +202,15 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
     definirAndando(PONTOS_GATO[destino].x < PONTOS_GATO[ponto].x ? 'esquerda' : 'direita')
     if (pose !== 'tala') definirGato('andando')
     definirPonto(destino)
-    window.setTimeout(() => { definirAndando(null); if (pose !== 'tala') definirGato('acordado') }, DURACAO_PASSO)
+    window.clearTimeout(passoFala.current)
+    passoFala.current = window.setTimeout(() => { definirAndando(null); definirGato((g) => (g === 'andando' ? 'acordado' : g)) }, DURACAO_PASSO)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [falaGato, gato, ponto, andando])
   useEffect(() => { if (!falaGato || andando) return; const t = window.setTimeout(() => definirFalaGato(null), 5500); return () => window.clearTimeout(t) }, [falaGato, andando])
   const palco = useRef<HTMLDivElement>(null)
   const espera = useRef(0)
-  const agora = useRef({ gato, ponto })
-  agora.current = { gato, ponto }
+  const agora = useRef({ gato, ponto, falando: false })
+  agora.current = { gato, ponto, falando: !!falaGato }
 
   /** Os cantos em que o gato fica inteiro à vista, sem nada por cima (medidos agora, nesta largura de tela). */
   const pontosLivres = (): number[] => {
@@ -236,10 +255,15 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
     const posicionar = () => {
       const balao = mascote.querySelector('.mascote__balao')
       if (!balao) { delete mascote.dataset.lado; return }
-      for (const lado of ['cima', 'esquerda', 'direita', 'baixo']) {
-        mascote.dataset.lado = lado
-        if (livre(caixa(balao), heroi, cena)) return
-      }
+      // Mede com a animação de entrada parada (senão a caixa vem deslocada e o balão troca de lado).
+      const b = balao as HTMLElement
+      b.style.animation = 'none'
+      try {
+        for (const lado of ['cima', 'esquerda', 'direita', 'baixo']) {
+          mascote.dataset.lado = lado
+          if (livre(caixa(balao), heroi, cena)) return
+        }
+      } finally { b.style.animation = '' }
       // Sem lugar livre (tela muito estreita), a fala não aparece: melhor do que cortada ou por baixo de um texto.
       mascote.dataset.lado = 'oculto'
     }
@@ -248,7 +272,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
     const medidor = new ResizeObserver(posicionar)
     medidor.observe(heroi); heroi.querySelectorAll(TAMPAS).forEach((e) => medidor.observe(e))
     return () => { observador.disconnect(); medidor.disconnect() }
-  })
+  }, [descanso, reacaoAmostra?.id, reacaoAmostra?.n])
 
   // O gato acompanha a cena: com a meta cumprida ele ronrona; numa comemoração, pula junto por um instante.
   useEffect(() => { definirGato(poseDoPonto(agora.current.ponto)) }, [repouso]) // eslint-disable-line react-hooks/exhaustive-deps
@@ -262,7 +286,6 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
 
   // Na vitrine, quem responde a questão de amostra ganha uma reação do esqueleto: comemora no acerto, aponta o caminho
   // (a dica) no erro. É só um enfeite: a resposta e o comentário não dependem dele.
-  const [reacaoAmostra, definirReacaoAmostra] = useState<{ id: 'comemora2' | 'quadro'; n: number } | null>(null)
   useEffect(() => {
     const ouvir = (e: Event) => {
       const acertou = Boolean((e as CustomEvent<{ acertou: boolean }>).detail?.acertou)
@@ -293,14 +316,15 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
     const passear = () => {
       proximo = window.setTimeout(() => {
         const { gato: g, ponto: atual } = agora.current
-        if (g !== 'tala' && g !== 'comemorando' && g !== 'acordando') {
+        // Não sai passeando no meio de outra caminhada, com uma fala aberta ou com a tala.
+        if (g !== 'tala' && g !== 'comemorando' && g !== 'acordando' && g !== 'andando' && !agora.current.falando) {
           const opcoes = pontosLivres().filter((i) => i !== atual)
           if (!opcoes.length) { passear(); return }
           const destino = opcoes[Math.floor(Math.random() * opcoes.length)]
           definirAndando(PONTOS_GATO[destino].x < PONTOS_GATO[atual].x ? 'esquerda' : 'direita')
           definirGato('andando')
           definirPonto(destino)
-          chegada = window.setTimeout(() => { definirAndando(null); definirGato(poseDoPonto(destino)) }, DURACAO_PASSO)
+          chegada = window.setTimeout(() => { definirAndando(null); definirGato((g) => (g === 'andando' ? poseDoPonto(destino) : g)) }, DURACAO_PASSO)
         }
         passear()
       }, 16000 + Math.random() * 14000)
@@ -380,11 +404,12 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
             if (toquesGato.current % 6 === 0) { definirFalaGato(null); definirGato('tala'); return }
             definirGato((g) => (g === 'dormindo' || g === 'ronronando' ? 'acordado' : g))
             definirFalaGato(proximaFala('gato', FALAS_GATO))
+            avisarFala('gato')
           }}>
           <span className={`hd-gato__sprite${gato === 'acordando' ? ' hd-gato__sprite--uma-vez' : ''}`} style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas } as CSSProperties} />
         </button>
         {/* O balão abre para o lado livre da cena: nunca por baixo da caixa da missão. */}
-        {falaGato && gato !== 'tala' && !andando && <span ref={balaoGato} className={`hd-balao hd-balao--longo hd-balao--gato ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
+        {falaGato && gato !== 'tala' && !andando && <span ref={balaoGato} className={`hd-balao hd-balao--longo hd-balao--gato ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status" onClick={() => definirFalaGato(null)}
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>{falaGato}</span>}
         {gato === 'tala' && !andando && <span ref={balaoGato} className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}

@@ -32,6 +32,26 @@ export const CENARIOS: readonly Cenario[] = [
     // Sempre em algo firme (no alto ela parecia flutuar): a pilha de livros, o caixote ao lado do lampião e a grama.
     coruja: [{ x: 318, y: 137 }, { x: 212, y: 156 }, { x: 346, y: 170 }, { x: 166, y: 176 }, { x: 282, y: 184 }],
   },
+  {
+    id: 'forja', arquivo: 'cena-forja', particulas: 'faiscas',
+    gato: [{ x: 204, y: 154, pose: 'fogueira' }, { x: 166, y: 166, pose: 'repouso' }, { x: 232, y: 172, pose: 'sentado' }, { x: 274, y: 166, pose: 'observando' }, { x: 316, y: 172, pose: 'repouso' }, { x: 190, y: 178, pose: 'sentado' }],
+    coruja: [{ x: 172, y: 140 }, { x: 326, y: 139 }, { x: 360, y: 132 }, { x: 208, y: 184 }, { x: 300, y: 192 }],
+  },
+  {
+    id: 'observatorio', arquivo: 'cena-observatorio', particulas: 'estrelas',
+    gato: [{ x: 222, y: 162, pose: 'fogueira' }, { x: 154, y: 170, pose: 'repouso' }, { x: 264, y: 168, pose: 'sentado' }, { x: 310, y: 152, pose: 'observando' }, { x: 190, y: 176, pose: 'sentado' }, { x: 296, y: 176, pose: 'repouso' }],
+    coruja: [{ x: 176, y: 104 }, { x: 200, y: 104 }, { x: 201, y: 155 }, { x: 346, y: 176 }, { x: 322, y: 198 }],
+  },
+  {
+    id: 'cais', arquivo: 'cena-cais', particulas: 'vagalumes',
+    gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 176, y: 148, pose: 'repouso' }, { x: 318, y: 122, pose: 'sentado' }, { x: 330, y: 92, pose: 'observando' }, { x: 262, y: 168, pose: 'repouso' }, { x: 290, y: 172, pose: 'sentado' }],
+    coruja: [{ x: 320, y: 95 }, { x: 358, y: 96 }, { x: 342, y: 160 }, { x: 186, y: 135 }, { x: 177, y: 111 }],
+  },
+  {
+    id: 'neve', arquivo: 'cena-neve', particulas: 'neve',
+    gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 168, y: 170, pose: 'repouso' }, { x: 263, y: 167, pose: 'sentado' }, { x: 301, y: 176, pose: 'observando' }, { x: 226, y: 177, pose: 'repouso' }],
+    coruja: [{ x: 201, y: 134 }, { x: 164, y: 154 }, { x: 356, y: 165 }, { x: 147, y: 104 }, { x: 191, y: 104 }],
+  },
 ]
 
 /** Dias corridos desde 1/1/1970 no fuso de quem vê (para o rodízio andar um cenário por dia). */
@@ -44,7 +64,7 @@ const diaLocal = (d: Date) => Math.floor((Date.UTC(d.getFullYear(), d.getMonth()
  */
 export function cenarioDaHora(agora: Date = new Date(), lista: readonly Cenario[] = CENARIOS): Cenario {
   let forcado = ''
-  try { forcado = new URLSearchParams(location.search).get('cenario') ?? sessionStorage.getItem('inicio:cenario') ?? '' } catch { /* sem janela */ }
+  try { forcado = new URLSearchParams(location.search || location.hash.split('?')[1] || '').get('cenario') ?? sessionStorage.getItem('inicio:cenario') ?? '' } catch { /* sem janela */ }
   const pedido = lista.find((c) => c.id === forcado)
   if (pedido) return pedido
   const n = lista.length

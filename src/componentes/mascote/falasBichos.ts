@@ -180,8 +180,8 @@ export function proximaFala(chave: 'coruja' | 'gato', lista: readonly string[]):
   const nome = `bichos:fala:${chave}`
   let estado: { ordem: number[]; i: number } | null = null
   try { estado = JSON.parse(sessionStorage.getItem(nome) ?? 'null') } catch { /* sem sessionStorage */ }
-  if (!estado || estado.ordem.length !== lista.length || estado.i >= lista.length) {
-    const ultima = estado?.ordem?.[estado.ordem.length - 1]
+  if (!estado || !Array.isArray(estado.ordem) || typeof estado.i !== 'number' || estado.ordem.length !== lista.length || estado.i >= lista.length) {
+    const ultima = estado && Array.isArray(estado.ordem) ? estado.ordem[estado.ordem.length - 1] : undefined
     let ordem = embaralhar(lista.length)
     if (ordem[0] === ultima && ordem.length > 1) ordem = [...ordem.slice(1), ordem[0]]
     estado = { ordem, i: 0 }

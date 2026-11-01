@@ -84,6 +84,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     const armar = () => {
       window.clearTimeout(parado)
       parado = window.setTimeout(() => {
+        if (digitandoRef.current) return
         definirGato((g) => (g === 'longe' ? 'andando' : g))
         depois(() => definirGato((g) => (g === 'andando' ? 'sentado' : g)), 5200)
         depois(() => definirGato((g) => (g === 'sentado' ? 'espreguicando' : g)), 11000)
@@ -91,12 +92,15 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
       }, f ? 300 : 600)
     }
     armar()
-    const mexeu = () => { if (gatoRef.current === 'longe') armar() }
+    // Enquanto a pessoa digita na busca, o gato não volta (ele só reaparece quando a busca esvazia).
+    const mexeu = () => { if (gatoRef.current === 'longe' && !digitandoRef.current) armar() }
     window.addEventListener('pointermove', mexeu, { passive: true })
     window.addEventListener('keydown', mexeu)
     return () => { window.clearTimeout(parado); window.removeEventListener('pointermove', mexeu); window.removeEventListener('keydown', mexeu) }
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
   const gatoRef = useRef(gato)
+  const digitandoRef = useRef(digitando)
+  digitandoRef.current = digitando
   gatoRef.current = gato
 
   // Digitar na busca: os visitantes saem de cena (não atrapalham quem procura).

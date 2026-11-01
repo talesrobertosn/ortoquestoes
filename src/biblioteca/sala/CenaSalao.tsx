@@ -17,7 +17,7 @@ import type { Periodo, Salao } from './usarSalao'
  */
 const ARTE = { w: 480, h: 180 }
 export const PONTOS = {
-  coruja: { x: 426, y: 32 },
+  coruja: { x: 426, y: 37 },
   gato: { x: 315, y: 150 },
   relogio: { x: 360, y: 40, r: 10 },
   arandelas: [{ x: 240, y: 66 }, { x: 335, y: 66 }, { x: 214, y: 66 }, { x: 357, y: 70 }],

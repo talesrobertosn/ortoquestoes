@@ -7,6 +7,7 @@ import {
 } from '../salao/segredos'
 import { ligarSom, somLigado, tocar } from './sons'
 import { semMovimento } from './comum'
+import { lerCenario } from '../../estado/aparencia'
 
 /** Hora do dia da cena: a pintura da janela muda (manhã, tarde, noite). */
 export type Periodo = 'manha' | 'tarde' | 'noite'
@@ -92,7 +93,9 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
     olhar.observe(raiz, { attributes: true, attributeFilter: ['data-tema'] })
     return () => olhar.disconnect()
   }, [])
-  const periodo = periodoEscolhido ?? (temaEscuro ? 'noite' : periodoDaHora(agora.getHours()))
+  // A escolha de cenário da Conta (manhã, tarde ou noite fixas) vale aqui também; só no "pela hora" o tema escuro pede a noite.
+  const cenarioDaConta = lerCenario()
+  const periodo = periodoEscolhido ?? (cenarioDaConta !== 'horario' ? cenarioDaConta : temaEscuro ? 'noite' : periodoDaHora(agora.getHours()))
   useEffect(() => { if (ehMadrugada) achar('madrugada', 'Plantão? Os resumos mais curtos estão na mesa.') }, [ehMadrugada]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (estacao) achar('sazonal', estacao === 'halloween' ? 'Abóboras no salão até o fim de outubro.' : 'Pisca-pisca no salão em dezembro.') }, [estacao]) // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -196,7 +199,8 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
       definirRelogioGira(true)
       depois(() => definirRelogioGira(false), 1200)
       const curto = curtos[0]
-      achar('relogio', `São ${agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}. Dá tempo de ler "${curto?.titulo}" em ~${curto?.minutos} min.`)
+      const hora = agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+      achar('relogio', curto ? `São ${hora}. Dá tempo de ler "${curto.titulo}" em ~${curto.minutos} min.` : `São ${hora}. Bom momento para um resumo curto.`)
     },
     tocarJanela: () => {
       toquesJanela.current++

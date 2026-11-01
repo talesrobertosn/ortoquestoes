@@ -30,7 +30,7 @@ const pct = (v: number, total: number) => `${(v / total) * 100}%`
 // Visitas (desde 01/11/2026 os dois em toda visita à página, pedido do Tales: "que também apareça no ranking", como um
 // point and click): o gato dorme no chão perto da mata e a coruja
 // fica no chão ao lado dele (Tales, 01/11/2026: pousada em algo firme, nunca no ar nem cortada no alto). Só enfeite (aria-hidden), longe de nomes e botões.
-const VISITA = { gato: { x: 428, y: 236, w: 48, h: 36 }, coruja: { x: 458, y: 238, w: 36, h: 26 } }
+const VISITA = { gato: { x: 418, y: 236, w: 48, h: 36 }, coruja: { x: 459, y: 238, w: 34, h: 25 } }
 type Visita = 'gato' | 'coruja' | null
 const POEIRA = Array.from({ length: 14 }, (_, i) => ({ x: 292 + ((i * 37) % 60), y: 30 + ((i * 53) % 130), d: 6 + (i % 5) * 1.3, a: -((i * 1.7) % 8) }))
 
