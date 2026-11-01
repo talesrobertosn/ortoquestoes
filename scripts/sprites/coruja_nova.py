@@ -23,6 +23,19 @@ X0, PASSO = 24, 43.75          # onde começa a 1ª coluna de quadros (depois do
 LINHAS = ["parada", "andando", "voando", "pousando", "lendo", "dormindo", "acenando", "olhando"]
 
 
+def fundo_de_fora(vazio: np.ndarray) -> np.ndarray:
+    """Os pixels vazios ligados à borda do quadro (vizinhança de 4), por preenchimento a partir das bordas."""
+    h, w = vazio.shape
+    fora = np.zeros_like(vazio)
+    pilha = [(y, x) for y in range(h) for x in (0, w - 1)] + [(y, x) for x in range(w) for y in (0, h - 1)]
+    while pilha:
+        y, x = pilha.pop()
+        if 0 <= y < h and 0 <= x < w and vazio[y, x] and not fora[y, x]:
+            fora[y, x] = True
+            pilha += [(y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)]
+    return fora
+
+
 def main() -> None:
     g = np.asarray(Image.open(FONTE).convert("RGB")).astype(int)
     fundo = g[0, 0]
@@ -62,6 +75,9 @@ def main() -> None:
                 vazias = np.where(~a[:, :8].any(0))[0]
                 if a[:, 0].any() and vazias.size:
                     a[:, :vazias[0]] = False
+            # Fundo é só o que se liga à borda do quadro (01/11/2026, Tales: "a coruja tá cheia de buraco branco"): um
+            # pixel de dentro da coruja com a cor exata do fundo continua pintado, em vez de virar um buraco.
+            a = ~fundo_de_fora(~a)
             folha[li * QH:(li + 1) * QH, k * QW:(k + 1) * QW, :3] = q
             folha[li * QH:(li + 1) * QH, k * QW:(k + 1) * QW, 3] = a * 255
     img = Image.fromarray(folha, "RGBA")
