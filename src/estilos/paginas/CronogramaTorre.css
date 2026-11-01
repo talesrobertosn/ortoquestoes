@@ -193,15 +193,15 @@
    (começar, continuar, puxar o próximo dia, no topo, no cartão Hoje e no calendário); Ajustar em verdete cheio; os
    secundários em contorno verdete. O ouro fica para assinar (conquista), não para estudar. */
 .cr.cr--torre .cp-onde__rapida.cristal, .cr.cr--torre .cp-botao.cristal {
-  background: var(--cristal); color: #fff; text-shadow: 0 1px 0 rgba(0, 40, 60, 0.6); box-shadow: var(--cristal-sombra); }
+  background: var(--cristal); color: var(--cristal-tinta); text-shadow: none; box-shadow: var(--cristal-sombra); }
 .cr.cr--torre .cp-onde__rapida.cristal:hover:not(:disabled), .cr.cr--torre .cp-botao.cristal:hover:not(:disabled) {
   background: var(--cristal); filter: brightness(1.08); transform: translateY(-1px);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 12px 28px -8px rgba(60, 200, 240, 0.85); }
+  box-shadow: var(--cristal-sombra-forte); }
 .cr.cr--torre .cp-onde__rapida.cristal:active:not(:disabled), .cr.cr--torre .cp-botao.cristal:active:not(:disabled) { transform: translateY(1px); box-shadow: var(--cristal-sombra); }
 .cr.cr--torre .cp-onde__rapida.cristal:focus-visible, .cr.cr--torre .cp-botao.cristal:focus-visible { outline: 3px solid var(--mundo-ouro); outline-offset: 3px; }
 .cr.cr--torre .cp-onde__rapida.cristal { justify-content: flex-start; padding: var(--e-2) var(--e-5) var(--e-2) var(--e-2); }
-.cr.cr--torre .cp-onde__rapida.cristal > svg { background: rgba(0, 40, 60, 0.38); color: #fff; }
-.cr.cr--torre .cp-onde__rapida.cristal small, .cr.cr--torre .cp-botao.cristal small { color: rgba(255, 255, 255, 0.9); opacity: 1; }
+.cr.cr--torre .cp-onde__rapida.cristal > svg { background: var(--cristal-icone); color: var(--cristal-tinta); }
+.cr.cr--torre .cp-onde__rapida.cristal small, .cr.cr--torre .cp-botao.cristal small { color: var(--cristal-tinta); opacity: 0.85; }
 .cr.cr--torre .cp-botao.cristal { display: grid; padding: 0.85rem 1rem; }
 .cr.cr--torre .cp-onde__ajustar { border: 0; background: var(--verdete); color: var(--sobre-destaque); }
 .cr.cr--torre .cp-onde__ajustar:hover { background: var(--verdete-tinta); }

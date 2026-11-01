@@ -60,6 +60,12 @@ sessões; regra valendo para todas):
 - **Secundários** com o contorno verdete (como o `.jn-botao` da inicial).
 - Menu e Treinar ficam como estão.
 
+**Atualização (Tales, 01/11/2026, à tarde):** "o botão amarelo como está na página do ranking faz mais sentido". O botão
+de começar (classe `.cristal`, tokens `--cristal`, `--cristal-tinta`, `--cristal-icone`, `--cristal-sombra(-forte)`) passou
+a ser o **dourado do Ranking** (`#f0c46a` com tinta `#1b1208`) em todo o site: página inicial, Treinar, Flashcards,
+Cronograma, Menu, Minha conta, Revisão, Caderno de erros e Favoritas. Não existe mais botão azul. O Menu trocou o quase
+preto pelo verde-noite suave (`--mundo-painel-suave`).
+
 Prancha comparando as duas opções: `docs/design/ideias/2026-11-01-atlas-unificado/botao-principal.png`.
 
 ## Como conferir

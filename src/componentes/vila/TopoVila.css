@@ -95,7 +95,7 @@
    pastilha escura; os outros em vidro escuro. */
 .vl-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2) var(--e-3); }
 .vl-acao.cristal { justify-content: flex-start; gap: 0.7rem; min-height: 52px; padding: 0.45rem 1.25rem 0.45rem 0.55rem; text-align: left; }
-.vl-acao.cristal > svg { flex: none; width: 2.3rem; height: 2.3rem; padding: 0.45rem; border-radius: 8px; background: rgba(0, 40, 60, 0.42); color: #fff; }
+.vl-acao.cristal > svg { flex: none; width: 2.3rem; height: 2.3rem; padding: 0.45rem; border-radius: 8px; background: var(--cristal-icone); color: var(--cristal-tinta); }
 .vl-acao span { display: grid; line-height: 1.2; }
 .vl-acao strong { font-size: 1.05rem; }
 .vl-acao small { font-size: var(--meta); font-weight: 650; opacity: 0.9; }
