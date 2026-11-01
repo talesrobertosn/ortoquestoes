@@ -6238,15 +6238,15 @@
   },
   {
    "id": "rockwood10-58-femur-distal",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura do fêmur distal",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
-   "edicao": "10ª edição (2025)",
+   "edicao": "10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), caps. 59 e 8",
    "capitulo": "Capítulo 58 · Distal Femur Fractures",
    "resumo": "Forças deformantes, lesões associadas, AO 33 e HOFFA, a anatomia do trapézio, placa bloqueada e haste retrógrada, periprotética acima da prótese do joelho e a rigidez.",
    "acesso": "gratis",
-   "minutos": 28,
+   "minutos": 36,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6312,6 +6312,31 @@
      "id": "pos-operatorio-e-complicacoes",
      "titulo": "Pós-operatório e complicações",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-olhar-do-campbell-indicacao-e-implantes",
+     "titulo": "O olhar do Campbell: indicação e implantes",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "haste-anterograda-retrograda-e-a-serie-do-campbe",
+     "titulo": "Haste: anterógrada, retrógrada e a série do Campbell",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "tecnica-da-placa-bloqueada-e-as-falhas-pelo-camp",
+     "titulo": "Técnica da placa bloqueada e as falhas, pelo Campbell",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-condilo-isolado-e-a-hoffa-medial-pelo-campbell",
+     "titulo": "O côndilo isolado e a HOFFA medial, pelo Campbell",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "periprotetica-entalhe-rorabeck-e-as-limitacoes-d",
+     "titulo": "Periprotética: entalhe, RORABECK e as limitações da haste",
+     "radar": "oportunidade"
     },
     {
      "id": "resumo-final",
