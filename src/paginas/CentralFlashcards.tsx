@@ -21,6 +21,7 @@ import { CHAVE_RECORDES, RECORDES_VAZIOS, type Recordes } from '../flashcards/pr
 import type { Flashcard } from '../flashcards/tipos'
 import '../estilos/paginas/CentralFlashcards.css'
 import '../estilos/paginas/CentralFlashcardsArquivo.css'
+import '../estilos/componentes/Cristal.css'
 
 export const AVISO_BETA = 'O Torneio de Flashcards está em beta. Estamos aprimorando o visual, o áudio e as mecânicas. Teste e conte o que funcionou — ou o que precisa melhorar.'
 
@@ -129,7 +130,7 @@ export function CentralFlashcards() {
           <p className="cfh-selo">Flashcards</p>
           <h1 id="cfh-titulo">Treine flashcards de Ortopedia.</h1>
           <p className="cfh-heroi__pessoal"><strong>{pessoal.abertura}</strong> {pessoal.dados}</p>
-          <a className="botao cfh-heroi__estudar" href={href(acao.destino)}>
+          <a className="cristal cfh-heroi__estudar" href={href(acao.destino)}>
             <Icone nome={acao.icone} tamanho={20} />
             <span><strong>{acao.rotulo}</strong><small>{acao.detalhe}</small></span>
           </a>
@@ -197,9 +198,9 @@ export function CentralFlashcards() {
       <details className="cfa-como" open={!contagem.estudados}>
         <summary><span>Como funciona</span><Icone nome="baixo" tamanho={16} /></summary>
         <ol className="cf-passos">
-          <li><span className="px-numero" aria-hidden="true">1</span><div><strong>Escolha um assunto</strong><span>Por área, pelas revisões de hoje, pelos que você errou ou pelos que nunca viu.</span></div></li>
-          <li><span className="px-numero" aria-hidden="true">2</span><div><strong>Responda e revise o flashcard</strong><span>Escolha a alternativa, veja o verso e diga se errou, hesitou ou sabia. A data da próxima revisão sai disso.</span></div></li>
-          <li><span className="px-numero" aria-hidden="true">3</span><div><strong>Acompanhe seu aprendizado e sua progressão</strong><span>Desempenho por assunto, cronograma até a data da prova e o seu recorde no Torneio.</span></div></li>
+          <li><span className="numero-passo" aria-hidden="true">1</span><div><strong>Escolha um assunto</strong><span>Por área, pelas revisões de hoje, pelos que você errou ou pelos que nunca viu.</span></div></li>
+          <li><span className="numero-passo" aria-hidden="true">2</span><div><strong>Responda e revise o flashcard</strong><span>Escolha a alternativa, veja o verso e diga se errou, hesitou ou sabia. A data da próxima revisão sai disso.</span></div></li>
+          <li><span className="numero-passo" aria-hidden="true">3</span><div><strong>Acompanhe seu aprendizado e sua progressão</strong><span>Desempenho por assunto, cronograma até a data da prova e o seu recorde no Torneio.</span></div></li>
         </ol>
       </details>
 

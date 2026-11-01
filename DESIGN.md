@@ -141,6 +141,8 @@ Hoje o site tem três dialetos que este documento organiza: a **base** (porcelan
 base em 01/11/2026, ver `docs/design/TREINAR-MESA-LEVE.md`) e o
 **mundo HD-2D** (vidro escuro com filete dourado e losangos, na página inicial e nos topos pintados). Trabalho novo
 usa a base; a temporada pixel e o HD-2D entram só onde já moram ou onde a arte é o assunto.
+Desde 01/11/2026, fora das cenas, as páginas usam as peças comuns do **atlas unificado** (`.pagina-cabeca`, `.folha`,
+`.lista-atlas`, `.seletor`, `.busca-atlas`, `.numero-passo`, em `base.css`): ver `docs/design/ATLAS-UNIFICADO.md`.
 
 Ideia em estudo (não aplicada): interface monocromática estilo shadcn com a arte como única cor —
 `docs/design/ideias/2026-10-31-shadcn-hd2d/`.

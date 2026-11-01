@@ -568,19 +568,19 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
   // Ações: hoje começa ou continua; os próximos dias de estudo podem ser adiantados (na ordem, como no painel).
   if (d.fase === 'hoje') {
     const falta = calculo.faltaHoje + calculo.adiantarFalta
-    if (acoes.pendente) acao = <a className="cp-botao" href="#/sessao" onClick={aoFechar}>Continuar: faltam {acoes.pendente.total - acoes.pendente.feitas} questões</a>
-    else if (calculo.hoje && falta > 0 && acoes.aoComecar) acao = <button type="button" className="cp-botao" onClick={() => { aoFechar(); acoes.aoComecar!() }}>{calculo.feitasHoje > 0 ? `Continuar: faltam ${falta} questões` : `Começar: ${falta} questões`}<small>~{formatarTempo(falta * minutos)}</small></button>
+    if (acoes.pendente) acao = <a className="cp-botao cristal" href="#/sessao" onClick={aoFechar}>Continuar: faltam {acoes.pendente.total - acoes.pendente.feitas} questões</a>
+    else if (calculo.hoje && falta > 0 && acoes.aoComecar) acao = <button type="button" className="cp-botao cristal" onClick={() => { aoFechar(); acoes.aoComecar!() }}>{calculo.feitasHoje > 0 ? `Continuar: faltam ${falta} questões` : `Começar: ${falta} questões`}<small>~{formatarTempo(falta * minutos)}</small></button>
     else {
       const ok = calculo.metaDiaria > 0 && calculo.faltaHoje === 0 ? <p className="cc-detalhe__ok"><Icone nome="certo" tamanho={16} /> Meta de hoje feita: {calculo.metaDiaria} questões.</p> : null
       // Hoje terminado (ou folga): o mesmo botão do cartão Hoje, para puxar o próximo dia de estudo.
       const prox = acoes.proximo
-      const puxar = prox && acoes.aoPuxar ? (() => { const t = textoPuxar(prox); return <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoPuxar!(chaveCivil(prox.data)) }}>{t.rotulo}<small>{t.detalhe} · ~{formatarTempo(prox.total * minutos)}</small></button> })() : null
+      const puxar = prox && acoes.aoPuxar ? (() => { const t = textoPuxar(prox); return <button type="button" className="cp-botao cristal" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoPuxar!(chaveCivil(prox.data)) }}>{t.rotulo}<small>{t.detalhe} · ~{formatarTempo(prox.total * minutos)}</small></button> })() : null
       if (ok || puxar) acao = <>{ok}{puxar}</>
     }
   } else if (d.fase === 'conteudo' && p && p.tipo !== 'folga' && p.total > 0 && acoes.aoPuxar) {
     // Um dia futuro: puxa as questões dele (pedido do Tales, 19/10/2026). Contam para ele, não para hoje.
     const comecado = !!textoAdiantadoDia(p)
-    acao = <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoPuxar!(d.chave) }}>
+    acao = <button type="button" className="cp-botao cristal" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoPuxar!(d.chave) }}>
       {comecado ? <>Continuar <span className="cc-junto">{diaCurto(d.data)}</span></> : <>Fazer as questões de <span className="cc-junto">{diaCurto(d.data)}</span></>}
       <small>{comecado ? `faltam ${p.total}` : `${p.total} ${p.total === 1 ? 'questão' : 'questões'}`} · ~{formatarTempo(p.total * minutos)} · contam para este dia, não para hoje</small>
     </button>

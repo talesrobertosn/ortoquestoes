@@ -39,9 +39,9 @@ import { CampoServico, SERVICO_VARIOS } from '../componentes/CampoServico'
 import { CamposEtapa } from '../componentes/CamposEtapa'
 import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, type TipoAviso } from '../componentes/conta/PecasConta'
-import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
 import '../estilos/paginas/Acesso.css'
+import '../estilos/componentes/Cristal.css'
 import { fraseGratis, recurso } from '../config'
 import { guardarVitrine, lembrarNome, nomeLembrado, sortearVitrine } from '../conta/vitrineAcesso'
 import { Mascote } from '../componentes/mascote/Mascote'
@@ -493,19 +493,20 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const tituloVitrine = nomeVolta ? `Que bom te ver de novo, ${nomeVolta}.` : v.titulo
     const seloVitrine = perfilDepois ? 'Conta criada' : recuperacao || modo === 'recuperar' ? 'Recuperar acesso' : modo === 'criar' ? 'Conta gratuita' : 'Continuar'
     return <div className="ac">
-      {/* Topo: céu e cidade da temporada pixel, frase sorteada a cada visita e o mascote de jaleco em pé na cidade (com coluna própria, nunca sobre o texto). */}
+      {/* Topo claro do atlas (01/11/2026): o cabeçalho de Treinar com a frase sorteada a cada visita; o mascote de jaleco
+          fica num quadrinho verde-noite ao lado, com coluna própria, nunca sobre o texto nem sobre os campos. */}
       <section className="ac-vitrine" aria-labelledby="ac-titulo">
-        <div className="ac-vitrine__texto">
-          <p className="tr-heroi__selo">{seloVitrine}</p>
+        <div className="ac-vitrine__texto pagina-cabeca">
+          <p className="pagina-cabeca__trilha"><span>Minha conta</span><span aria-hidden="true">/</span><span>{seloVitrine}</span></p>
           <h1 id="ac-titulo" key={tituloVitrine}>{tituloVitrine}</h1>
-          <p className="ac-vitrine__lide">{v.lide}</p>
+          <p className="ac-vitrine__lide pagina-cabeca__frase">{v.lide}</p>
           <ul className="ac-provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
           <p className="ac-vitrine__gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar de onde parou.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
         </div>
         {/* O mascote de jaleco recebe o estudante (31/10/2026): acena de vez em quando e fala ao toque. */}
         <div className="ac-vitrine__mascote"><Mascote className="ac-mascote" comportamento="acesso_jaleco" fantasia="nenhuma" falar={false} /></div>
       </section>
-      <section className="ac-cartao" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
+      <section className="ac-cartao folha" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
         {perfilDepois ? <>
           <header className="ac-cabeca">
             <p className="ac-passo"><span className="px-numero" aria-hidden="true">2</span><span>Passo 2 de 2 · opcional</span></p>
@@ -528,7 +529,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             </div>
           </form>
         </> : <>
-        {!recuperacao && modo !== 'recuperar' && <div className="ac-abas" role="tablist" aria-label="Entrar ou criar conta">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="ac-aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}
+        {!recuperacao && modo !== 'recuperar' && <div className="ac-abas seletor" role="tablist" aria-label="Entrar ou criar conta">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="ac-aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}
         <header className="ac-cabeca">
           {modo === 'recuperar' && !recuperacao && <button type="button" className="ac-voltar" onClick={() => trocarModo('entrar')}><Icone nome="esquerda" tamanho={16} /> Voltar para entrar</button>}
           <h2>{titulo}</h2>
@@ -576,7 +577,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       </section>
       {/* Uma questão real sorteada (gabarito oficial), como ela aparece no site, e o que a conta guarda. No celular vem depois do formulário. */}
       <section className="ac-mostra" aria-label="Como é estudar no Orto Questões">
-        <figure className="ac-folha" key={v.amostra.enunciado} aria-label="Exemplo de questão comentada">
+        <figure className="ac-folha folha" key={v.amostra.enunciado} aria-label="Exemplo de questão comentada">
           <p className="ac-folha__prova"><span>{v.amostra.prova}</span><span className="ac-folha__caiu"><Icone nome="alvo" tamanho={13} /> Já caiu</span></p>
           <p className="ac-folha__enunciado">{v.amostra.enunciado}</p>
           <ol className="ac-folha__alternativas">{v.ordem.map((i, n) => i === 0
@@ -628,6 +629,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     } catch { avisar('Não foi possível sair. Confira sua conexão e tente novamente.', 'erro') } finally { definirOcupado(false) }
   }
   const linkSecao = (id: SecaoConta) => href(`/conta?secao=${id}`)
+  /** A próxima ação do topo: o que pede atenção primeiro (sincronização, termos, perfil), senão o caminho de estudo. */
+  const proxima = status.estado === 'erro' || status.estado === 'conflito' || status.rejeitados.length > 0 ? { rotulo: 'Ver sincronização', destino: linkSecao('aparelhos') }
+    : !termosEmDia ? { rotulo: 'Ler os termos novos', destino: linkSecao('termos') }
+    : !etapa ? { rotulo: 'Completar o perfil', destino: linkSecao('perfil') }
+    : { rotulo: 'Continuar estudando', destino: href('/treinar'), comecar: true }
   /** Selo pequeno ao lado de cada seção na lista (o que pede atenção ou o estado atual). */
   const seloSecao = (id: SecaoConta) => {
     if (id === 'assinatura') return <span className={'ct-nav__selo' + (assinante ? ' ct-nav__selo--ouro' : '')}>{assinante ? 'Assinante' : 'Gratuito'}</span>
@@ -654,28 +660,39 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <p className="ct-heroi__rotulo">Minha conta</p>
           <h1 id="ct-nome">{nomeCompleto || 'Sua conta'}</h1>
           <p className="ct-heroi__email">{sessao.user.email}</p>
-          <ul className="ct-selos" aria-label="Resumo da conta">
-            <li><a className={'ct-selo' + (assinante ? ' ct-selo--ouro' : '')} href={linkSecao('assinatura')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={13} />{selo}</a></li>
-            {etapa && <li><a className="ct-selo" href={linkSecao('perfil')}><Icone nome="usuario" tamanho={13} />{etapa}</a></li>}
-            <li><a className="ct-selo ct-selo--sync" href={linkSecao('aparelhos')}><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /><span aria-live="polite">{textoSync}</span></a></li>
-          </ul>
         </div>
       </div>
+      {/* A próxima ação (atlas unificado, 01/11/2026): uma só, a mais útil agora, no lugar do botão de sincronizar. */}
       <div className="ct-heroi__acoes">
-        <button className={'botao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar'}</button>
+        {/* Cristal só para começar a estudar; o que pede atenção é verdete (decisão de 01/11/2026). */}
+        <a className={'comecar' in proxima ? 'cristal' : 'botao botao--principal'} href={proxima.destino}>{proxima.rotulo} <Icone nome="direita" tamanho={16} /></a>
         {administrador && <a className="botao" href={href('/admin')}><Icone nome="grafico" tamanho={16} /> Painel do admin</a>}
       </div>
-      {metricas && <dl className="ct-numeros">
-        <a href={href('/dados')}><dt>Questões respondidas</dt><dd>{metricas.respondidas.toLocaleString('pt-BR')}{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={22} titulo={`Emblema ${emblema.rotulo}`} /></span>}</dd></a>
-        <a href={href('/revisao')}><dt>Revisões programadas</dt><dd>{metricas.pendentes.toLocaleString('pt-BR')}</dd></a>
-        <a href={href('/dados')}><dt>Acerto acumulado</dt><dd>{metricas.acerto === null ? '0%' : `${metricas.acerto}%`}</dd></a>
-      </dl>}
-      <nav className="ct-atalhos" aria-label="Atalhos">
-        <a href={href('/treinar')}><IconePixel nome="treinar" tamanho={32} /><span>Treinar</span></a>
-        <a href={href('/dados')}><IconePixel nome="desempenho" tamanho={32} /><span>Desempenho</span></a>
-        <a href={href('/ranking')}><IconePixel nome="ranking" tamanho={32} /><span>Ranking</span></a>
-        <a href={href(assinante ? '/conta/assinatura' : '/assinatura')}><IconePixel nome="planos" tamanho={32} /><span>{assinante ? 'Assinatura' : 'Planos'}</span></a>
-      </nav>
+      {/* Status da conta em três linhas: plano, sincronização e perfil, cada uma com o que dá para fazer. As métricas
+          e os atalhos repetidos do Menu saíram; fica uma linha com o essencial e o caminho para o desempenho. */}
+      <ul className="ct-status-lista lista-atlas" aria-label="Situação da conta">
+        <li>
+          <span className={'ct-status-lista__icone' + (assinante ? ' ct-status-lista__icone--ouro' : '')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={16} /></span>
+          <span className="ct-status-lista__texto"><small>Plano</small><strong>{selo}</strong></span>
+          <a className="ct-status-lista__acao" href={href(assinante ? '/conta/assinatura' : '/assinatura')}>{assinante ? 'Ver assinatura' : 'Conhecer os planos'}</a>
+        </li>
+        <li>
+          <span className="ct-status-lista__icone"><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /></span>
+          <span className="ct-status-lista__texto"><small>Sincronização</small><strong aria-live="polite">{textoSync}</strong></span>
+          <button className={'ct-status-lista__acao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={15} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar'}</button>
+        </li>
+        <li>
+          <span className="ct-status-lista__icone"><Icone nome="usuario" tamanho={16} /></span>
+          <span className="ct-status-lista__texto"><small>Perfil</small><strong>{etapa ?? 'Falta dizer em que fase você está'}</strong></span>
+          <a className="ct-status-lista__acao" href={linkSecao('perfil')}>{etapa ? 'Editar' : 'Completar'}</a>
+        </li>
+      </ul>
+      {metricas && <p className="ct-resumo">
+        <span><b className="numerico">{metricas.respondidas.toLocaleString('pt-BR')}</b> respondidas{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={20} titulo={`Emblema ${emblema.rotulo}`} /></span>}</span>
+        <span><b className="numerico">{metricas.acerto === null ? '0%' : `${metricas.acerto}%`}</b> de acerto</span>
+        <a href={href('/revisao')}><b className="numerico">{metricas.pendentes.toLocaleString('pt-BR')}</b> revisões programadas</a>
+        <a className="ct-resumo__ver" href={href('/dados')}>Ver desempenho <Icone nome="direita" tamanho={14} /></a>
+      </p>}
     </section>
 
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
