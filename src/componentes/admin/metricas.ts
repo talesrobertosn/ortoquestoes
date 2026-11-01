@@ -288,7 +288,7 @@ export function filaDeAtencao(e: EntradaAtencao): ItemAtencao[] {
 /* ───────────────────────── Frase do estado ───────────────────────── */
 
 /**
- * "Estado do OrtoQuestões" em uma frase, só com fatos medidos (nada de correlação virando conclusão).
+ * "Estado do Orto Questões" em uma frase, só com fatos medidos (nada de correlação virando conclusão).
  * Cada pedaço some quando a fonte dele não veio.
  */
 export function fraseDoEstado(f: { online: number | null; estudaramHoje: number | null; questoes: Variacao | null; dias: number; criticos: number; pendentes: number }): string {

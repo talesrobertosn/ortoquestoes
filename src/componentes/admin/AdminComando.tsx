@@ -73,7 +73,7 @@ export function AdminComando({ conta, periodo, aoMudarPeriodo, usuarios, usuario
   return <div className="adm-comando">
     <header className="adm-comando__topo">
       <div className="adm-comando__texto">
-        <h1>Estado do OrtoQuestões</h1>
+        <h1>Estado do Orto Questões</h1>
         <p className="adm-comando__frase" aria-live="off">{frase}</p>
         <div className="adm-comando__controles">
           <ControlePeriodo periodo={periodo} aoMudar={aoMudarPeriodo} />

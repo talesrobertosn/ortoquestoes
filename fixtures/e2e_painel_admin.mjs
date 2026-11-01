@@ -165,7 +165,7 @@ try {
   // Comando › Visão geral: estado, cinco indicadores, gráfico com a linha do período anterior, fila e áreas.
   await pc.p.waitForSelector('.adm-comando .adm-serie svg', { timeout: 15_000 })
   assert.match(await pc.p.locator('.adm-migalhas').innerText(), /Painel\s*›\s*Comando\s*›\s*Visão geral/)
-  assert.equal(await pc.p.locator('h1').innerText(), 'Estado do OrtoQuestões')
+  assert.equal(await pc.p.locator('h1').innerText(), 'Estado do Orto Questões')
   assert.equal(await pc.p.locator('.adm-comando__kpis .adm-ind').count(), 5)
   assert.equal(await pc.p.locator('.adm-comando .adm-serie__linha--b').count(), 1, 'linha do período anterior')
   const comando = await pc.p.locator('.adm-comando').innerText()
