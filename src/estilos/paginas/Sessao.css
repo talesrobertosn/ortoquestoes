@@ -748,3 +748,13 @@ html.oq-sessao .sx-barra { top: var(--oq-cabecalho, 56px); }
 @keyframes sx-dica-dedo { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-14px); } 65% { transform: translateX(14px); } }
 @keyframes sx-dica-tecla { 0%, 100% { transform: none; } 40% { transform: translateY(2px); border-bottom-width: 1px; } }
 @media (prefers-reduced-motion: reduce) { .sx-dica-popup { animation: none; } }
+
+/* "Próxima" e a seta de avançar nas cores do atlas (01/11/2026, "as paletas precisam seguir a página inicial"):
+   verdete cheio, a cor de agir do site; o ouro fica para marcar onde você está (mapa e trilha) e para celebrar. */
+.barra-sessao .sx-botao--ouro, .seta-lateral.sx-seta--pronta, .sx-nav .nav-sessao__proxima.sx-nav__proxima--pronta {
+  background: var(--verdete); color: var(--sobre-destaque); box-shadow: 0 6px 16px -8px color-mix(in srgb, var(--verdete) 80%, transparent);
+}
+.barra-sessao .sx-botao--ouro:hover, .seta-lateral.sx-seta--pronta:hover:not(:disabled), .sx-nav .nav-sessao__proxima.sx-nav__proxima--pronta:hover {
+  background: var(--verdete-tinta); color: var(--sobre-destaque);
+}
+.barra-sessao .sx-botao--ouro:active { box-shadow: none; }
