@@ -211,7 +211,9 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 .a3-busca__limpar { position: absolute; right: 6px; display: grid; place-items: center; width: 24px; height: 24px; border: 0; border-radius: 50%; background: var(--a3-recuo); color: var(--a3-cinza); cursor: pointer; }
 
 /* Segmentado (período, vistas curtas) */
-.a3-segmento { display: inline-flex; gap: 2px; padding: 3px; border-radius: var(--a3-r-controle); background: var(--a3-recuo); }
+.a3-segmento { display: inline-flex; gap: 2px; max-width: 100%; padding: 3px; border-radius: var(--a3-r-controle); background: var(--a3-recuo); overflow-x: auto; scrollbar-width: none; }
+.a3-segmento::-webkit-scrollbar { display: none; }
+.a3-segmento button { flex: none; }
 .a3-segmento button { height: 30px; padding: 0 12px; border: 0; border-radius: 15px; background: none; color: var(--a3-cinza); font-size: 13px; font-weight: 500; white-space: nowrap; cursor: pointer; }
 .a3-segmento button:hover { color: var(--a3-tinta); }
 .a3-segmento button[aria-pressed="true"] { background: var(--a3-papel); color: var(--a3-tinta); box-shadow: var(--a3-sombra); }
@@ -246,7 +248,8 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
    Superfícies
    ========================================================================== */
 .a3-painel { min-width: 0; border: 1px solid var(--a3-linha); border-radius: var(--a3-r-cartao); background: var(--a3-papel); box-shadow: var(--a3-sombra); }
-.a3-painel__cabeca { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 18px 20px 0; }
+.a3-painel__cabeca { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 10px 12px; padding: 18px 20px 0; }
+.a3-painel__cabeca > div:first-child { flex: 1 1 220px; }
 .a3-painel__cabeca > div { display: grid; gap: 3px; min-width: 0; }
 .a3-painel__cabeca p { color: var(--a3-cinza); font-size: 13px; }
 .a3-painel__corpo { min-width: 0; padding: 16px 20px 20px; }
@@ -363,7 +366,8 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 /* Funil em degraus */
 .a3-funil { display: grid; gap: 2px; }
 .a3-funil__etapa { display: grid; grid-template-columns: minmax(130px, 200px) minmax(0, 1fr) 64px 72px; align-items: center; gap: 14px; min-height: 44px; }
-.a3-funil__nome { font-size: 13.5px; }
+.a3-funil__nome { display: grid; font-size: 13.5px; }
+.a3-funil__base { color: var(--a3-cinza); font-size: 11.5px; }
 .a3-funil__trilho { position: relative; height: 28px; border-radius: 8px; background: var(--a3-recuo); overflow: hidden; }
 .a3-funil__trilho span { position: absolute; inset: 0 auto 0 0; border-radius: 8px; background: var(--a3-tinta); }
 .a3-funil__trilho span.perda { background: none; }

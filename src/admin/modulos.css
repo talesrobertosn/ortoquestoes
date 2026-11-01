@@ -45,3 +45,37 @@
 .a3-cartao-grupo:hover { border-color: var(--a3-linha-2); }
 .a3-cartao-grupo[aria-pressed="true"] { border-color: var(--a3-tinta); box-shadow: 0 0 0 1px var(--a3-tinta); }
 .a3-cartao-grupo__n { font-family: var(--a3-titulo); font-size: 32px; font-weight: 650; letter-spacing: -.03em; line-height: 1; }
+
+/* ---------- Atividade agora ---------- */
+.a3-monitor { display: grid; max-height: 520px; overflow-y: auto; border-top: 1px solid var(--a3-linha); }
+.a3-monitor li + li { border-top: 1px solid var(--a3-linha); }
+.a3-monitor button { display: flex; align-items: flex-start; gap: 12px; width: 100%; padding: 12px 20px; border: 0; background: none; text-align: left; cursor: pointer; }
+.a3-monitor button:hover { background: var(--a3-alt); }
+.a3-monitor__texto { display: grid; gap: 2px; min-width: 0; }
+.a3-monitor__nome { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-weight: 600; }
+.a3-monitor__faz { font-size: 13px; overflow-wrap: anywhere; }
+.a3-dinheiro-bloco { display: grid; align-content: start; gap: 8px; padding: 14px; border: 1px solid var(--a3-linha); border-radius: 16px; }
+.a3-movimentos { display: grid; }
+.a3-movimentos li { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 0; border-top: 1px solid var(--a3-linha); }
+.a3-movimentos li:first-child { border-top: 0; }
+.a3-movimentos button { display: grid; min-width: 0; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; }
+.a3-movimentos button b { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-movimentos button span { color: var(--a3-cinza); font-size: 12px; }
+.a3-movimentos .num { font-weight: 600; white-space: nowrap; }
+
+/* ---------- Ficha e cartas ---------- */
+.a3-ficha-bloco { display: grid; gap: 10px; }
+.a3-ficha-bloco > header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.a3-acao-cartao { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 18px; border: 1px solid var(--a3-linha); border-radius: 18px; }
+.a3-acao-cartao > div:first-child { display: grid; gap: 4px; max-width: 56ch; }
+.a3-acao-cartao--coluna { flex-direction: column; align-items: stretch; }
+@media (max-width: 560px) { .a3-acao-cartao { flex-direction: column; align-items: stretch; } }
+.a3-acoes-linha { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.a3-carta { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; align-items: start; }
+.a3-carta__lado { position: sticky; top: 56px; display: grid; gap: 14px; padding: 16px; border-radius: 18px; background: var(--a3-alt); border: 1px solid var(--a3-linha); }
+@media (max-width: 860px) { .a3-carta { grid-template-columns: minmax(0, 1fr); } .a3-carta__lado { position: static; } }
+.a3-historico-cabeca { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.a3-previa { margin: 0; border: 1px solid var(--a3-linha); border-radius: 18px; overflow: hidden; background: var(--a3-papel); }
+.a3-previa__topo { display: grid; gap: 2px; padding: 12px 16px; border-bottom: 1px solid var(--a3-linha); background: var(--a3-alt); font-size: 13px; }
+.a3-previa__topo b { display: inline-block; min-width: 64px; color: var(--a3-cinza); font-weight: 500; }
+.a3-previa iframe { display: block; width: 100%; height: 420px; border: 0; background: #fff; }

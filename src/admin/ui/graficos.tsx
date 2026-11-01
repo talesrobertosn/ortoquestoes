@@ -160,16 +160,17 @@ export function SerieTempo({ rotulos, series, formato = inteiro, altura = 220, d
  * Funil em degraus: cada etapa com a contagem, a largura relativa ao topo e a taxa sobre a etapa
  * anterior. A etapa com a maior queda fica marcada (onde agir). O denominador é sempre explícito.
  */
-export function Funil({ etapas }: { etapas: Array<{ nome: string; valor: number; base?: string }> }) {
+export function Funil({ etapas }: { etapas: Array<{ nome: string; valor: number; base?: string; sobre?: number }> }) {
   const topo = Math.max(1, etapas[0]?.valor ?? 1)
-  const taxas = etapas.map((e, i) => i && etapas[i - 1].valor > 0 ? e.valor / etapas[i - 1].valor : null)
-  const pior = taxas.reduce<number | null>((m, t, i) => t !== null && (m === null || t < (taxas[m] ?? 1)) ? i : m, null)
+  // A taxa é sobre a etapa anterior, ou sobre a etapa `sobre` quando a anterior não é pré-requisito.
+  const taxas = etapas.map((e, i) => { const d = i ? etapas[e.sobre ?? i - 1].valor : 0; return i && d > 0 ? e.valor / d : null })
+  const pior = taxas.reduce<number | null>((m, t, i) => t !== null && t <= 1 && (m === null || t < (taxas[m] ?? 1)) ? i : m, null)
   return <ol className="a3-funil">
     {etapas.map((e, i) => <li key={e.nome} className="a3-funil__etapa">
-      <span className="a3-funil__nome">{e.nome}</span>
+      <span className="a3-funil__nome">{e.nome}{e.base && <span className="a3-funil__base">sobre {e.base}</span>}</span>
       <span className="a3-funil__trilho" aria-hidden="true"><span style={{ width: `${Math.max(0.6, (e.valor / topo) * 100)}%` }} /></span>
       <span className="a3-funil__valor">{inteiro(e.valor)}</span>
-      <span className={'a3-funil__taxa' + (i === pior ? ' a3-funil__taxa--pior' : '')} title={e.base ? `sobre ${e.base}` : undefined}>
+      <span className={'a3-funil__taxa' + (i === pior ? ' a3-funil__taxa--pior' : '')}>
         {taxas[i] === null ? '100%' : `${Math.round((taxas[i] as number) * 100)}%`}{i === pior && <span className="a3-so-leitor"> (maior queda)</span>}
       </span>
     </li>)}

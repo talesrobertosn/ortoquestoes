@@ -144,7 +144,7 @@ function VisaoGeral() {
         acoes={<a className="a3-botao a3-botao--fantasma a3-botao--pequeno" href={nav.link('crescimento')} onClick={e => { e.preventDefault(); nav.ir('crescimento') }}>Funil <Icone nome="seta" tamanho={14} /></a>}>
         {carregandoFunil && !funil ? <Carregando linhas={5} /> : !funil ? <Estado compacto tipo="erro" titulo="Funil indisponível" /> :
           <Funil etapas={[{ nome: 'Cadastraram', valor: funil.cadastrados }, { nome: 'Confirmaram o e-mail', valor: funil.confirmaram }, { nome: '1ª questão', valor: funil.responderam },
-            { nome: '50 questões', valor: funil.passaram_50 }, { nome: 'Assinaram', valor: funil.assinaram, base: 'quem passou de 50' }]} />}
+            { nome: '50 questões', valor: funil.passaram_50 }, { nome: 'Assinaram', valor: funil.assinaram, base: 'quem fez a 1ª questão', sobre: 2 }]} />}
       </Painel>
     </div>
 

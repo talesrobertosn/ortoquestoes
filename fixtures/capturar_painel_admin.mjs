@@ -72,7 +72,8 @@ const eventos = [
   { id: 1, id_evento: 'ev-1', tipo: 'payment', id_recurso: '123', status_processamento: 'erro', erro: 'pagamento_nao_encontrado', recebido_em: iso(agora - 2 * HORA), processado_em: iso(agora - 2 * HORA), id_usuario: u(5).id_usuario, nome: u(5).nome, usuario: u(5).email },
   { id: 2, id_evento: 'ev-2', tipo: 'subscription_preapproval', id_recurso: '456', status_processamento: 'processado', erro: null, recebido_em: iso(agora - 5 * HORA), processado_em: iso(agora - 5 * HORA) },
 ]
-const serie = Array.from({ length: 30 }, (_, k) => ({ dia: new Date(agora - (29 - k) * DIA - 3 * HORA).toISOString().slice(0, 10), cadastros: k % 3, ativos: 3 + (k % 5), respostas: 80 + k * 4 }))
+// 120 dias: o Comando pede o dobro do período (30 + 30 anteriores); os últimos 30 são os de sempre.
+const serie = Array.from({ length: 120 }, (_, k) => ({ dia: new Date(agora - (119 - k) * DIA - 3 * HORA).toISOString().slice(0, 10), cadastros: k % 3, ativos: 3 + (k % 5), respostas: k < 90 ? 60 + (k % 7) * 5 + Math.round(18 * Math.sin(k / 4)) : 80 + (k - 90) * 4 + Math.round(14 * Math.sin(k / 3)) }))
 const rpcs = {
   eh_administrador: () => true,
   obter_acesso_premium: () => [{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }],
@@ -167,7 +168,10 @@ try {
       }
       await x.p.evaluate(() => { document.documentElement.dataset.tema = 'claro' })
       const larguraDoc = await x.p.evaluate(() => document.documentElement.scrollWidth)
-      if (larguraDoc > largura) console.log(`ROLAGEM DE LADO: ${nome} ${largura} -> ${larguraDoc}`)
+      if (larguraDoc > largura) {
+        const culpados = await x.p.evaluate((w) => [...document.querySelectorAll('.a3 *')].filter(el => { const r = el.getBoundingClientRect(); return r.right > w + 1 && r.width > 0 && ![...el.children].some(c => c.getBoundingClientRect().right > w + 1) }).slice(0, 6).map(el => `${el.tagName.toLowerCase()}.${[...el.classList].join('.')} (${Math.round(el.getBoundingClientRect().right)})`), largura)
+        console.log(`ROLAGEM DE LADO: ${nome} ${largura} -> ${larguraDoc}: ${culpados.join(' | ')}`)
+      }
     }
     await x.c.close()
   }
