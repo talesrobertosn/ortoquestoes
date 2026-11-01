@@ -223,6 +223,10 @@ martelo de reflexo, coroa de louros, medalha da sequência, flor e guarda-chuva 
   espiando.
 
 ### 5.3 Momentos de cinema (gatilhos do estudo)
+
+> **Nunca na sessão de questões (Tales, 01/11/2026):** treinar questões é a única área séria do site, sem bichos,
+> efeitos ou artifícios. Estes momentos só valem fora dela (página inicial, cenas da vila, Sala dos bichos).
+
 | Gatilho | Cena |
 |---|---|
 | Acertou 10 seguidas | Os três comemoram juntos; a coruja solta confete de penas |
@@ -457,4 +461,4 @@ recorta e alinha.
   quem volta depois de dois dias ou mais ganha a cena de boas-vindas (o gato contou os dias). Nas cenas da vila
   (Revisão, Caderno, Favoritas), o gato muda de atividade sozinho de tempos em tempos. Prompts para o ChatGPT na
   seção 10.
-
+- 01/11/2026: os momentos de cinema **não** entram na sessão de questões (pedido do Tales: é a área séria do site).
