@@ -1,0 +1,47 @@
+/* Painel 3.0 — peças próprias de cada módulo (o sistema comum está em admin.css). */
+
+/* ---------- Comando ---------- */
+.a3-comando-topo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 400px); align-items: stretch; gap: 24px; padding-top: 18px; }
+.a3-comando-topo__texto { display: grid; align-content: end; gap: 10px; }
+.a3-comando-frase { max-width: 62ch; font-size: 16px; line-height: 1.5; color: var(--a3-tinta-2); }
+.a3-comando-frase .a3-ponto { margin-top: 2px; align-self: flex-start; transform: translateY(6px); }
+.a3-comando-topo__controles { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 6px; }
+.a3-comando-cena { height: 150px; margin: 0; box-shadow: var(--a3-sombra); }
+@media (max-width: 1100px) { .a3-comando-topo { grid-template-columns: minmax(0, 1fr); } .a3-comando-cena { height: 120px; order: -1; } }
+@media (max-width: 899px) { .a3-comando-cena { height: 110px; } .a3-comando-frase { font-size: 15px; } }
+.a3-altura-cheia { height: 100%; }
+
+.a3-fila { display: grid; }
+.a3-fila__item { position: relative; display: grid; grid-template-columns: 4px minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 14px 20px; border-top: 1px solid var(--a3-linha); }
+.a3-fila__marca { align-self: stretch; border-radius: 4px; background: var(--a3-linha-2); }
+.a3-fila__item--critica .a3-fila__marca { background: var(--a3-erro); }
+.a3-fila__item--alta .a3-fila__marca { background: var(--a3-aviso); }
+.a3-fila__item--media .a3-fila__marca { background: var(--a3-tinta); }
+.a3-fila__texto { display: grid; gap: 3px; min-width: 0; }
+.a3-fila__titulo { font-weight: 500; }
+.a3-fila__titulo b { font-weight: 650; }
+.a3-fila__titulo::first-letter { text-transform: uppercase; }
+.a3-fila__causa { color: var(--a3-cinza); font-size: 13px; }
+.a3-fila__meta { display: flex; flex-wrap: wrap; gap: 6px; color: var(--a3-cinza); font-size: 12px; }
+.a3-fila--larga .a3-fila__item { padding: 16px 20px; }
+@media (max-width: 560px) { .a3-fila__item { grid-template-columns: 4px minmax(0, 1fr); } .a3-fila__item .a3-botao { grid-column: 2; justify-self: start; } }
+
+.a3-agora-numero { display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; }
+.a3-agora-numero .num { font-family: var(--a3-titulo); font-size: 40px; font-weight: 650; letter-spacing: -.04em; line-height: 1; }
+.a3-vivos { display: grid; gap: 2px; margin: 0 -10px; }
+.a3-vivos button { display: flex; align-items: center; gap: 10px; width: 100%; padding: 7px 10px; border: 0; border-radius: 12px; background: none; text-align: left; cursor: pointer; }
+.a3-vivos button:hover { background: var(--a3-alt); }
+.a3-vivos button > span:last-child { display: grid; min-width: 0; }
+.a3-vivos b { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-vivos small { color: var(--a3-cinza); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-atalhos-lista { display: grid; margin: 0 -10px; }
+.a3-atalhos-lista a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 10px; border-radius: 12px; text-decoration: none; }
+.a3-atalhos-lista a:hover { background: var(--a3-alt); }
+.a3-atalhos-lista a span { display: grid; }
+.a3-atalhos-lista small { color: var(--a3-cinza); font-size: 12px; }
+.a3-atalhos-lista .a3-icone { color: var(--a3-cinza-2); }
+
+.a3-cartao-grupo { display: grid; justify-items: start; gap: 6px; padding: 18px 20px; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+.a3-cartao-grupo:hover { border-color: var(--a3-linha-2); }
+.a3-cartao-grupo[aria-pressed="true"] { border-color: var(--a3-tinta); box-shadow: 0 0 0 1px var(--a3-tinta); }
+.a3-cartao-grupo__n { font-family: var(--a3-titulo); font-size: 32px; font-weight: 650; letter-spacing: -.03em; line-height: 1; }
