@@ -151,6 +151,21 @@
   --marca-osso-opacidade: 0.55;
   --marca-certa: #f4cf7c;
 
+  /* A paleta-mãe do site: o mundo da página inicial (InicioJornada.css), igual nos dois temas (Tales, 01/11/2026:
+     "as paletas precisam seguir a página inicial"). Painel escuro quente com tinta marfim e selo dourado; o botão de
+     cristal é a ação principal de começar; o resto é a página clara com verdete. Use estes nomes, não hex soltos. */
+  --mundo-raio: 20px;
+  --mundo-chao: #0b100e;
+  --mundo-chao-2: #0d1311;
+  --mundo-tinta: #fffaf0;
+  --mundo-tinta-2: #e4d8bd;
+  --mundo-ouro: #f0c46a;
+  --mundo-vidro: rgba(9, 13, 14, 0.74);
+  --mundo-filete: rgba(255, 236, 200, 0.14);
+  --mundo-painel: radial-gradient(40% 120% at 50% 0%, rgba(255, 170, 70, 0.1), transparent 70%), linear-gradient(180deg, var(--mundo-chao), var(--mundo-chao-2));
+  --cristal: linear-gradient(180deg, #8de6f2 0%, #3fb6d2 42%, #1a86a8 64%, #0f5f80 100%);
+  --cristal-sombra: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 8px 22px -8px rgba(40, 170, 220, 0.75);
+
   color-scheme: light;
 }
 

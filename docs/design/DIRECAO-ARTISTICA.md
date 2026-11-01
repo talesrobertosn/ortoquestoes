@@ -208,11 +208,11 @@ O Tales **recusou**:
   - **Classificação dos Cem:** cada pessoa num cartão branco suave, com 6 px de respiro, sobre fundo porcelana. No
     celular, a linha tem duas camadas: número e movimento à esquerda, nome e emblemas ao lado.
   - Os emblemas ficam grandes o bastante para ver o desenho: 30 a 36 px.
-- **Menu (Portal do Aventureiro):** pop-up branco, busca universal, "Continue sua jornada", fogo vivo em canvas nos
-  três atalhos principais (Cronograma, Resumos, Atlas) e os visitantes.
+- **Menu (Portal do Aventureiro):** pop-up branco, busca universal, "Continue sua jornada", os seis atalhos sem fogo
+  (01/11/2026) e os visitantes.
 - **Biblioteca:** estante e lista, busca com sugestões, salão de leitura com a coruja e o gato.
 - **Treinar (01/11/2026, "mesa de estudo leve"):** sem cena no topo; cabeçalho compacto, "Começar agora", os quatro
-  passos numa superfície clara e o resumo com o único botão dourado. Nem toda página tem cena: a matriz de onde a arte
+  passos numa superfície clara e o resumo; as cores são as da página inicial (tokens `--mundo-*` e o botão `.cristal`). Nem toda página tem cena: a matriz de onde a arte
   é protagonista, apoio ou fica de fora está em [TREINAR-MESA-LEVE.md](TREINAR-MESA-LEVE.md).
 
 ## 9. Arte enviada pelo Tales
