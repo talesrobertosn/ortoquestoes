@@ -1,5 +1,16 @@
 # Reconstrução do painel administrativo — "Mesa de Comando do Atlas" (01/11/2026)
 
+> **01/11/2026, fim do dia: DESFEITO.** O Tales achou o resultado pior que o painel anterior: só a moldura e a
+> Visão geral mudaram, as partes de dentro ficaram iguais (o mesmo visual repetido em todas) e a Análise vazava para
+> a direita. O painel de produção voltou ao estado de antes da PR #801 (arquivos de `src/paginas/AdminAssinaturas.tsx`,
+> `src/componentes/admin/`, `src/estilos/paginas/AdminAssinaturas.css` e os testes do painel). O código da tentativa
+> fica no histórico do git (commit 8b89876) só como referência de dados (métricas, fila de atenção, gráfico de série):
+> **não reaproveitar o visual.** Pedido do Tales para a próxima tentativa: recomeçar do zero, mudar 100% da
+> apresentação de todas as partes, cada uma com forma própria, sem nada igual ao antigo; só mostrar pronta e
+> conferida. Ele vai reenviar o prompt completo (seções 0–21). A faixa `public/pixel/admin/` e
+> `scripts/gerar_cena_admin.py` ficaram no repositório, sem uso.
+
+
 > Documento vivo. **Estado: shell, CSS, faixa HD-2D, testes e documentação de métricas feitos (01/11/2026, segunda
 > sessão); falta a revisão do Tales nas telas e a PR.** Branch da primeira sessão: `claude/ortoquestoes-admin-rebuild-n8f9hl`;
 > a segunda sessão continuou em `claude/gallant-cannon-5hynui` (com o commit da primeira mesclado). Prompt completo do pedido: colado pelo Tales na sessão

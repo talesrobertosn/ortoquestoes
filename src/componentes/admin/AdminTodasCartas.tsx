@@ -38,7 +38,7 @@ export function AdminTodasCartas() {
   return <section className="empilha adm-secao tc" aria-labelledby="tc-titulo">
     <div className="adm-secao__cabeca">
       <div>
-        <h2 id="tc-titulo">Catálogo de cartas</h2>
+        <h2 id="tc-titulo">Todas as cartas</h2>
         <p>Cada tipo de e-mail que o site manda, com uma amostra viva escrita agora pelo mesmo motor da função <code>enviar-email</code>, para uma pessoa fictícia. Nada sai desta página: é para ler, conferir o tom e sortear outras versões.</p>
       </div>
     </div>

@@ -138,7 +138,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0, reais = nul
 
       {avisoReais && <p className="adm-alerta" role="status">{avisoReais}</p>}
       {semCobranca.length > 0 && <div className="adm-alerta" role="status">
-        <p><strong>{plural(semCobranca.length, 'assinatura paga sem a cobrança gravada', 'assinaturas pagas sem a cobrança gravada')}.</strong> Elas já entram nos totais pelo preço do plano, mas vale conferir no Mercado Pago e reprocessar o aviso em Receita › Avisos do processador:</p>
+        <p><strong>{plural(semCobranca.length, 'assinatura paga sem a cobrança gravada', 'assinaturas pagas sem a cobrança gravada')}.</strong> Elas já entram nos totais pelo preço do plano, mas vale conferir no Mercado Pago e reprocessar o aviso em Financeiro › Avisos de pagamento:</p>
         <ul>{semCobranca.map(a => <li key={`${a.id_usuario}-${a.criada_em ?? a.ultima_atualizacao}`}>{a.nome || a.usuario || a.id_usuario} · {rotuloPlano(a.plano)} · {real(precoDe(a.plano)?.total ?? 0)} · desde {new Date(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao).toLocaleDateString('pt-BR')}</li>)}</ul>
       </div>}
 
@@ -358,7 +358,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0, reais = nul
         </li>
         <li className="adm-acao">
           <span className="adm-acao__icone" aria-hidden="true"><Icone nome="estrela" tamanho={18} /></span>
-          <div><strong>Conceder ou remover cortesia</strong><p>Acesso sem pagar, para preceptores, parceiros e sorteios. Fica na ficha da pessoa (Pessoas › Explorador › ficha › Carta e ações), com confirmação.</p></div>
+          <div><strong>Conceder ou remover cortesia</strong><p>Acesso sem pagar, para preceptores, parceiros e sorteios. Fica na ficha da pessoa (Pessoas › Usuários › ficha › Carta e ações), com confirmação.</p></div>
           {irPara && <button type="button" className="botao botao--fantasma" onClick={() => irPara('usuarios')}>Abrir pessoas</button>}
         </li>
         <li className="adm-acao">

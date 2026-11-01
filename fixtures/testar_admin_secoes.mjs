@@ -1,4 +1,4 @@
-// Painel do administrador, Mesa de Comando (01/11/2026; antes, painel de observação de 17/10): seis áreas, cada parte numa área
+// Painel do administrador como painel de observação (17/10/2026): seis seções, cada parte numa seção
 // só, os endereços antigos (?aba=geral, hoje, configuracoes, avaliacoes, relatos, receita, operacoes…)
 // continuam abrindo no lugar certo, e o endereço novo guarda só o que vale para a parte aberta.
 // Também confere as contas de Financeiro › Ganhos (ganhos.ts).
@@ -20,72 +20,52 @@ try {
   const ler = (texto) => m.lerUrl(new URLSearchParams(texto))
   const ida = (texto) => m.urlDe(ler(texto))
 
-  // Mesa de Comando (01/11/2026): seis áreas, na ordem do painel, e cada parte numa área só.
-  assert.deepEqual(m.SECOES.map(s => s.id), ['comando', 'pessoas', 'estudo', 'receita', 'comunicacao', 'configuracoes'])
+  // Seis seções, na ordem do painel, e cada parte numa seção só.
+  assert.deepEqual(m.SECOES.map(s => s.id), ['agora', 'pessoas', 'financeiro', 'conteudo', 'emails', 'ajustes'])
   const partes = m.SECOES.flatMap(s => s.abas.map(a => a.id))
-  assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas áreas')
-  // Nenhuma parte some na reorganização; Visão geral e Exportação são novas.
-  for (const parte of ['comando', 'agora', 'usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'todas', 'ajustes', 'exportar'])
+  assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas seções')
+  // Nenhuma parte some na reorganização.
+  for (const parte of ['agora', 'usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'todas', 'ajustes'])
     assert.ok(partes.includes(parte), parte)
-  // Toda parte declara modo e pergunta; toda área tem nome curto para a barra do celular (sem reticências).
-  for (const s of m.SECOES) {
-    assert.ok(s.curto && s.curto.length <= 8, `nome curto de ${s.id}`)
-    for (const a of s.abas) { assert.ok(['ver', 'investigar', 'agir'].includes(a.modo), a.id); assert.ok(a.pergunta.length > 10, a.id) }
-  }
-  assert.equal(m.secaoDe('comando'), 'comando')
-  assert.equal(m.secaoDe('agora'), 'comando')
   assert.equal(m.secaoDe('crescimento'), 'pessoas')
-  assert.equal(m.secaoDe('simulados'), 'estudo')
-  assert.equal(m.secaoDe('questoes'), 'estudo')
-  assert.equal(m.secaoDe('lembretes'), 'comunicacao')
-  assert.equal(m.secaoDe('todas'), 'comunicacao')
-  assert.equal(m.secaoDe('exportar'), 'configuracoes')
-  assert.deepEqual(m.definicaoDe('comunicacao').abas.map(a => a.rotulo), ['Campanhas e envios', 'Catálogo de cartas'])
-  assert.deepEqual(m.definicaoDe('receita').abas.map(a => a.id), ['financeiro', 'assinaturas', 'cobrancas', 'pagamentos'])
-  // "Avisos do processador" mantém o endereço ?aba=pagamentos dos e-mails de alerta.
-  assert.equal(m.definicaoDe('receita').abas.find(a => a.id === 'pagamentos').rotulo, 'Avisos do processador')
-  assert.equal(m.parteDe('agora').rotulo, 'Hoje em detalhe')
-  assert.equal(m.ROTULO_MODO[m.parteDe('pagamentos').modo], 'Agir')
+  assert.equal(m.secaoDe('simulados'), 'conteudo')
+  assert.equal(m.secaoDe('lembretes'), 'emails')
+  assert.equal(m.secaoDe('todas'), 'emails', 'Todas as cartas fica em E-mails')
+  assert.deepEqual(m.definicaoDe('emails').abas.map(a => a.rotulo), ['Enviar e-mails', 'Todas as cartas'])
+  assert.equal(m.secaoDe('pagamentos'), 'financeiro')
+  // "Pagamentos" (aba cobrancas) é o dinheiro recebido; "Avisos de pagamento" mantém o endereço ?aba=pagamentos dos e-mails.
+  assert.equal(m.secaoDe('cobrancas'), 'financeiro')
+  assert.deepEqual(m.definicaoDe('financeiro').abas.map(a => a.id), ['financeiro', 'assinaturas', 'cobrancas', 'pagamentos'])
+  assert.equal(m.definicaoDe('financeiro').abas.find(a => a.id === 'pagamentos').rotulo, 'Avisos de pagamento')
+  assert.equal(m.definicaoDe('financeiro').abas.find(a => a.id === 'cobrancas').rotulo, 'Pagamentos')
+  assert.equal(m.secaoDe('questoes'), 'conteudo')
 
   // Endereços antigos → parte nova.
   const mapa = {
-    '': 'comando', 'aba=geral': 'comando', 'aba=hoje': 'agora', 'aba=agora': 'agora', 'aba=usuarios': 'usuarios', 'aba=conteudo': 'conteudo', 'aba=questoes': 'questoes',
+    '': 'agora', 'aba=geral': 'agora', 'aba=hoje': 'agora', 'aba=usuarios': 'usuarios', 'aba=conteudo': 'conteudo', 'aba=questoes': 'questoes',
     'aba=opinioes': 'opinioes', 'aba=crescimento': 'crescimento', 'aba=financeiro': 'financeiro', 'aba=assinaturas': 'assinaturas',
     'aba=pagamentos': 'pagamentos', 'aba=cobrancas': 'cobrancas', 'aba=avisos': 'pagamentos', 'aba=configuracoes': 'ajustes', 'aba=avaliacoes': 'conteudo', 'aba=relatos': 'conteudo',
     'aba=receita': 'financeiro', 'aba=pessoas': 'usuarios', 'aba=operacoes': 'lembretes', 'aba=emails': 'lembretes', 'aba=cartas': 'lembretes',
-    'aba=estudo': 'conteudo', 'aba=comunicacao': 'lembretes', 'aba=exportar': 'exportar',
-    'aba=simulados': 'simulados', 'aba=lembretes': 'lembretes', 'aba=todas': 'todas', 'aba=ajustes': 'ajustes', 'aba=qualquer-coisa': 'comando',
+    'aba=simulados': 'simulados', 'aba=lembretes': 'lembretes', 'aba=todas': 'todas', 'aba=ajustes': 'ajustes', 'aba=qualquer-coisa': 'agora',
   }
   for (const [consulta, aba] of Object.entries(mapa)) assert.equal(ler(consulta).aba, aba, consulta)
-  // Os e-mails de alerta levam à vista certa da Triagem.
+  // Os e-mails de alerta levam à vista certa de Conteúdo.
   assert.equal(ler('aba=avaliacoes').vista, 'avaliacoes')
   assert.equal(ida('aba=relatos'), '/admin?aba=conteudo&vista=relatos')
   assert.equal(ida('aba=pagamentos'), '/admin?aba=pagamentos')
-  // Filtro, vista, questão e período sobrevivem ida e volta, e só aparecem na parte a que pertencem.
+  // Filtro, vista e questão sobrevivem ida e volta, e só aparecem na parte a que pertencem.
   assert.equal(ida('aba=usuarios&filtro=novos'), '/admin?aba=usuarios&filtro=novos')
   assert.equal(ida('aba=conteudo&vista=temas'), '/admin?aba=conteudo&vista=temas')
   assert.equal(ida('aba=questoes&id=mao-0853'), '/admin?aba=questoes&id=mao-0853')
   assert.equal(ida('aba=assinaturas&filtro=novos&id=x'), '/admin?aba=assinaturas')
   assert.equal(ida('aba=usuarios&filtro=invalido'), '/admin?aba=usuarios')
   assert.equal(ida('aba=geral'), '/admin')
-  assert.equal(ida('aba=hoje'), '/admin?aba=agora')
-  // Período: 7/30/90, padrão 30 (fora do endereço), só no Comando e em Receita › Resultados.
-  assert.equal(ler('').periodo, 30)
-  assert.equal(ler('periodo=7').periodo, 7)
-  assert.equal(ler('periodo=45').periodo, 30)
-  assert.equal(ida('periodo=90'), '/admin?periodo=90')
-  assert.equal(ida('aba=financeiro&periodo=7'), '/admin?aba=financeiro&periodo=7')
-  assert.equal(ida('periodo=30'), '/admin')
-  assert.equal(ida('aba=usuarios&periodo=7'), '/admin?aba=usuarios')
-  // Id só de questão: nada de e-mail, espaço ou texto longo no endereço.
-  assert.equal(ler('aba=questoes&id=tales@exemplo.com').id, null)
-  assert.equal(ler('aba=questoes&id=mao 0853').id, null)
-  assert.equal(ler('aba=questoes&id=' + 'a'.repeat(81)).id, null)
+  assert.equal(ida('aba=hoje'), '/admin')
   // Só endereço antigo é reescrito (sem criar histórico); o atual fica como está.
-  for (const antigo of ['aba=geral', 'aba=hoje', 'aba=configuracoes', 'aba=avaliacoes', 'aba=receita', 'aba=operacoes', 'aba=emails', 'aba=cartas', 'aba=estudo', 'aba=comunicacao', 'aba=xyz']) assert.ok(m.urlAntiga(new URLSearchParams(antigo)), antigo)
-  for (const atual of ['', 'aba=agora', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=todas', 'aba=ajustes', 'aba=exportar', 'aba=simulados', 'aba=conteudo&vista=relatos', 'periodo=7']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
-  // A primeira parte de cada área é a que abre por padrão.
-  assert.deepEqual(m.SECOES.map(s => m.abaPadrao(s.id)), ['comando', 'crescimento', 'conteudo', 'financeiro', 'lembretes', 'ajustes'])
+  for (const antigo of ['aba=geral', 'aba=hoje', 'aba=configuracoes', 'aba=avaliacoes', 'aba=receita', 'aba=operacoes', 'aba=emails', 'aba=cartas', 'aba=xyz']) assert.ok(m.urlAntiga(new URLSearchParams(antigo)), antigo)
+  for (const atual of ['', 'aba=agora', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=todas', 'aba=ajustes', 'aba=simulados', 'aba=conteudo&vista=relatos']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
+  // A primeira parte de cada seção é a que abre por padrão.
+  assert.deepEqual(m.SECOES.map(s => m.abaPadrao(s.id)), ['agora', 'usuarios', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
 
   // ---------- Financeiro › Ganhos ----------
   // 17/10/2026 15h em Brasília (18h UTC).

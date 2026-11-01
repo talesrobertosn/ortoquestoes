@@ -92,7 +92,7 @@ export function AdminCobrancas({ assinaturas, reais, avisoReais, usuarios, teste
     <div className="adm-secao__cabeca">
       <div>
         <h2 id="adm-titulo-cobrancas">Pagamentos recebidos</h2>
-        <p>O dinheiro que entrou, da cobrança mais nova para a mais antiga. Valores brutos; as mesmas contas de Receita › Resultados.{testes > 0 && ` Contas de teste do dono ficam de fora.`}</p>
+        <p>O dinheiro que entrou, da cobrança mais nova para a mais antiga. Valores brutos; as mesmas contas do Financeiro.{testes > 0 && ` Contas de teste do dono ficam de fora.`}</p>
       </div>
       <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-cobrancas-lista-${new Date().toISOString().slice(0, 10)}.csv`,
         ['Data', 'Hora', 'Pessoa', 'E-mail', 'Plano', 'Meio', 'Tipo', 'Valor bruto', 'Situação', 'Reembolsada em', 'Pagamento no Mercado Pago'],
