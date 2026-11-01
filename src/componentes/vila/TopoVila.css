@@ -10,6 +10,8 @@
 /* A estufa: chão de terra úmida e luz que vem do vidro. O campo de treino: terra batida, quente do braseiro. */
 .vl--estufa { --vl-chao: #08100d; --vl-chao-2: #12241c; --vl-luz: rgba(190, 240, 200, 0.14); --vl-veu: 6, 14, 11; }
 .vl--treino { --vl-chao: #0e0a07; --vl-chao-2: #1f150c; --vl-luz: rgba(255, 170, 70, 0.2); --vl-veu: 10, 7, 4; }
+/* O gabinete: assoalho de madeira escura e a luz âmbar do óculo. */
+.vl--gabinete { --vl-chao: #0c0806; --vl-chao-2: #1d130c; --vl-luz: rgba(255, 190, 110, 0.16); --vl-veu: 9, 6, 4; }
 
 .vl__cena { position: relative; display: grid; grid-template-columns: minmax(0, 30rem) minmax(0, 1fr); grid-template-rows: 1fr auto;
   align-content: end; gap: var(--e-3); min-height: clamp(18rem, 33.3vw, 25.3rem); padding: clamp(1.25rem, 2.6vw, 2.25rem); }
@@ -17,8 +19,9 @@
 .vl__cena::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background: linear-gradient(90deg, rgba(var(--vl-veu), 0.82) 0%, rgba(var(--vl-veu), 0.58) 26%, rgba(var(--vl-veu), 0.14) 40%, transparent 47%),
     linear-gradient(0deg, rgba(var(--vl-veu), 0.85) 0%, transparent 20%); }
-/* O campo de treino tem a muralha clara à esquerda: o véu vai um pouco mais longe e é mais firme. */
-.vl--treino .vl__cena::before { background: linear-gradient(90deg, rgba(var(--vl-veu), 0.86) 0%, rgba(var(--vl-veu), 0.68) 30%, rgba(var(--vl-veu), 0.22) 46%, transparent 54%),
+/* O campo de treino (a muralha) e o gabinete (o móvel de gavetas) têm coisas claras à esquerda: o véu vai um pouco
+   mais longe e é mais firme. */
+.vl--treino .vl__cena::before, .vl--gabinete .vl__cena::before { background: linear-gradient(90deg, rgba(var(--vl-veu), 0.86) 0%, rgba(var(--vl-veu), 0.68) 30%, rgba(var(--vl-veu), 0.22) 46%, transparent 54%),
     linear-gradient(0deg, rgba(var(--vl-veu), 0.85) 0%, transparent 20%); }
 /* A caixa da cena fica por cima da pintura: os cliques atravessam até os bichos, menos onde há texto e botão. */
 .vl__cena { pointer-events: none; }

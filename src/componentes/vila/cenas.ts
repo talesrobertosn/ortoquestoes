@@ -38,3 +38,20 @@ export const DICAS_ERROS = [
   'Refez e acertou? A questão passa para "Já recuperei" e fica guardada como prova da revanche.',
   'O caderno imprime bonito: dá para levar os erros para o plantão no papel.',
 ]
+
+/** Favoritas: o gabinete das relíquias do castelo (scripts/gerar_cena_gabinete.py). O que vale guardar para rever. */
+export const CENA_GABINETE: CenaVila = {
+  arquivo: 'gabinete',
+  // A coruja na cornija do armário-vitrine; o gato lê no tapete, na mancha de sol da manhã.
+  coruja: { x: 431, y: 41 },
+  gato: { x: 338, y: 125, estado: 'lendo', acordado: 'sentado' },
+  // O castiçal da prateleira e a luminária-estrela, acesos à noite. A lamparina das gavetas fica só pintada: no
+  // computador ela encosta no texto.
+  chamas: [{ x: 362.5, y: 64.5, r: 8, horas: ['noite'] }, { x: 350.5, y: 31.5, r: 13, horas: ['noite'] }],
+  particulas: [270, 40, 150, 100],
+}
+export const DICAS_FAVORITAS = [
+  'No computador, a tecla F favorita a questão que está aberta. Na sessão, a estrela fica no alto.',
+  'Favoritou e errou? Ela aparece em "Errou na última": é por ali que a revisão rende mais.',
+  'Treinar as favoritas monta uma sessão só com elas. Logo abaixo dá para filtrar por situação, prova e tema.',
+]

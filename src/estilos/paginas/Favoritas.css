@@ -1,38 +1,11 @@
-/* Favoritas (refeita em 19/10/2026; nas cores da página inicial desde 01/11/2026): o topo é o painel escuro da
-   inicial (Mundo.css) com o botão de cristal e o placar dourado; abaixo, a página clara do atlas, com cartões de 16 px,
-   controles de 10 px, sombra suave e o escolhido em verdete-véu. Só classes da página; o comum vem de Mundo.css. */
+/* Favoritas (refeita em 19/10/2026; nas cores da página inicial desde 01/11/2026): o topo é o gabinete das relíquias
+   da vila (TopoVila) com o botão de cristal; abaixo, a página clara do atlas, com cartões de 16 px, controles de 10 px,
+   sombra suave e o escolhido em verdete-véu. Só classes da página. */
 .fv { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--e-5); }
 .fv kbd { display: inline-block; min-width: 1.4em; padding: 0 0.35em; border-radius: 3px; border: 1px solid var(--traco); background: var(--superficie-2); color: var(--texto); font: 700 0.85em var(--fonte-texto); text-align: center; box-shadow: 0 2px 0 var(--traco); }
 .fv-rotulo { margin: 0; font-family: var(--fonte-marca); font-size: 1.25rem; letter-spacing: -0.02em; }
 
-/* ---------- Topo ---------- */
-.fv-heroi {
-  position: relative; overflow: hidden; isolation: isolate;
-  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--e-4) var(--e-6); align-items: center;
-  padding: clamp(1.4rem, 3.6vw, 2.25rem) clamp(1.2rem, 3.6vw, 2.25rem) clamp(1.4rem, 3.6vw, 2.25rem);
-  border-radius: var(--raio-cartao); background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media);
-}
-.fv-heroi > * { min-width: 0; }
-.fv-heroi h1 { margin: 0; max-width: 22ch; font-family: var(--fonte-marca); color: var(--sobre-heroi); font-size: clamp(1.75rem, 3.8vw, 2.6rem); letter-spacing: -0.035em; line-height: 1.05; text-wrap: balance; font-variant-numeric: tabular-nums; }
-.fv-heroi__texto p:not(.tr-heroi__selo) { margin: var(--e-2) 0 0; max-width: 52ch; color: var(--sobre-heroi-2); text-wrap: pretty; }
-.botao.fv-heroi__acao {
-  display: inline-flex; align-items: center; gap: var(--e-3); text-align: left; min-height: 66px; padding: var(--e-3) var(--e-5) var(--e-3) var(--e-3);
-  border: 0; border-radius: var(--raio-controle); background: var(--px-ouro); color: var(--px-tinta); text-decoration: none;
-  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra);
-  transition: transform 0.15s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.15s ease;
-}
-.botao.fv-heroi__acao:hover { background: #ffdf95; color: var(--px-tinta); transform: translate(-1px, -1px); }
-.botao.fv-heroi__acao:active { transform: translate(1px, 1px); }
-.botao.fv-heroi__acao:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
-.fv-heroi__acao svg { flex: none; padding: 0.45rem; width: 2.4rem; height: 2.4rem; background: var(--px-tinta); color: var(--px-ouro); }
-.fv-heroi__acao span { display: grid; line-height: 1.2; }
-.fv-heroi__acao strong { font-size: 1.1rem; }
-.fv-heroi__acao small { font-size: var(--meta); font-weight: 600; opacity: 0.8; }
-
-.fv-placar { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--e-2); margin: 0; }
-.fv-placar div { display: grid; gap: 2px; min-width: 9.5rem; padding: var(--e-2) var(--e-3); border-radius: var(--raio-controle); background: rgba(255, 255, 255, 0.06); box-shadow: inset 0 0 0 1px var(--mundo-filete); }
-.fv-placar dt { display: flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 750; letter-spacing: 0.05em; text-transform: uppercase; color: var(--mundo-tinta-2); }
-.fv-placar dd { margin: 0; font-family: var(--fonte-pixel-titulo); font-size: 1.9rem; line-height: 1; color: var(--px-ouro); font-variant-numeric: tabular-nums; text-shadow: 0 3px 0 #072320; }
+/* ---------- Topo: o gabinete das relíquias (componentes/vila/TopoVila.tsx) ---------- */
 
 /* ---------- Passos da tela vazia ---------- */
 .fv-passos { display: grid; gap: var(--e-3); }
@@ -127,13 +100,6 @@
 }
 @media (max-width: 40rem) {
   .fv { gap: var(--e-4); }
-  .fv-heroi { grid-template-columns: 1fr; gap: var(--e-3); padding-bottom: var(--e-5); }
-  .fv-heroi__texto p:not(.tr-heroi__selo) { font-size: var(--corpo-menor); }
-  .botao.fv-heroi__acao { width: 100%; box-sizing: border-box; min-height: 58px; }
-  .fv-placar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .fv-placar div { min-width: 0; padding: var(--e-2); }
-  .fv-placar dt { font-size: 0.62rem; letter-spacing: 0.02em; }
-  .fv-placar dt svg { display: none; }
   .fv-segmentos { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); width: 100%; }
   .fv-segmentos button { justify-content: center; gap: 0.25rem; padding: 0 var(--e-1); font-size: var(--meta); white-space: nowrap; }
   .fv-prova { margin-left: 0; width: 100%; }
@@ -146,5 +112,5 @@
   .fv-dica { align-items: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .botao.fv-heroi__acao, .fv-item, .fv-item__estrela, .fv-segmentos button, .fv-temas button { transition: none; }
+  .fv-item, .fv-item__estrela, .fv-segmentos button, .fv-temas button { transition: none; }
 }
