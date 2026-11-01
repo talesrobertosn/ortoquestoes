@@ -6,7 +6,7 @@
 export function GuiaEmails() {
   return <section className="adm-secao empilha adm-guia-emails" aria-labelledby="adm-guia-emails">
     <div>
-      <h2 id="adm-guia-emails">Enviar e-mails</h2>
+      <h2 id="adm-guia-emails">Campanhas e envios</h2>
       <p>Tudo o que sai por e-mail num lugar só. Há dois jeitos de mandar para um grupo:</p>
     </div>
     <ul className="adm-guia-emails__lista">

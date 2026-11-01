@@ -71,7 +71,7 @@ export function situacaoAssinatura(a: AssinaturaBase, agora = Date.now()): Situa
   switch (a.status) {
     case 'reembolsada': return { chave: 'reembolsada', rotulo: 'Reembolsada', tom: 'ruim', detalhe: 'Pagamento devolvido; o acesso pago foi encerrado.' }
     case 'pendente': return { chave: 'pendente', rotulo: 'Pendente', tom: 'aviso', detalhe: 'Aguardando o primeiro pagamento.' }
-    case 'falha_pagamento': return { chave: 'falha_pagamento', rotulo: 'Falha no pagamento', tom: 'ruim', detalhe: 'A cobrança não foi confirmada. Veja Financeiro › Avisos de pagamento.' }
+    case 'falha_pagamento': return { chave: 'falha_pagamento', rotulo: 'Falha no pagamento', tom: 'ruim', detalhe: 'A cobrança não foi confirmada. Veja Receita › Avisos do processador.' }
     case 'pausada': return { chave: 'pausada', rotulo: 'Pausada', tom: 'neutro', detalhe: 'Pausada no Mercado Pago: não cobra nem libera acesso.' }
     case 'vencida': return { chave: 'expirada', rotulo: 'Expirada', tom: 'neutro', detalhe: acabou ? `O acesso terminou em ${ate}.` : 'O acesso terminou.' }
     case 'cancelada':
