@@ -10308,15 +10308,15 @@
   },
   {
    "id": "tachdjian6-alinhamento-torcoes-coxa-vara",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Alinhamento, torções e coxa vara na criança",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª edição (2026)",
    "capitulo": "Capítulo 16 · Congenital Coxa Vara, Capítulo 17 · Disorders of the Femur e Capítulo 18 · Disorders of the Leg",
-   "resumo": "Curva do alinhamento (varo máximo 6 a 12 meses, neutro 18 a 24, valgo máximo 2 a 4 anos, adulto aos 8); valgo patológico (osteodistrofia renal, COZEN, displasias, exostoses); BLOUNT (obeso, impulso lateral, torção interna e procurvato, LANGENSKIÖLD, órtese antes dos 3 anos, osteotomia com hipercorreção antes dos 4, epifisiólise nos estágios IV e V); displasia fibrocartilaginosa focal; perfil de STAHELI, anteversão de 40 a 16 graus, torção tibial e indicações de osteotomia; encurvamentos anterolateral, posteromedial e anteromedial; coxa vara do desenvolvimento (V invertido, HILGENREINER-epifisário 45 e 60, osteotomia valgizante, BORDEN, recidiva).",
+   "resumo": "BLOUNT por dentro (histologia, Box 18.1, LEVINE-DRENNAN acima de 11 graus, impulso lateral, diferenciais), LANGENSKIÖLD estágio a estágio (IV e V já são parada, VI com fusão a 90 graus, 4 anos, meninas negras, 100% de recidiva no IV e V negligenciado), osteotomias de RAB, LAURENCIN, GREENE e ZAYER e as complicações, BLOUNT do adolescente (fêmur distal em varo, sem hipercorreção), coxa vara pelo Campbell 15 (110 graus, PAUWELS, HILGENREINER-epifisário); curva do alinhamento (varo máximo 6 a 12 meses, neutro 18 a 24, valgo máximo 2 a 4 anos, adulto aos 8); valgo patológico (osteodistrofia renal, COZEN, displasias, exostoses); BLOUNT (obeso, impulso lateral, torção interna e procurvato, LANGENSKIÖLD, órtese antes dos 3 anos, osteotomia com hipercorreção antes dos 4, epifisiólise nos estágios IV e V); displasia fibrocartilaginosa focal; perfil de STAHELI, anteversão de 40 a 16 graus, torção tibial e indicações de osteotomia; encurvamentos anterolateral, posteromedial e anteromedial; coxa vara do desenvolvimento (V invertido, HILGENREINER-epifisário 45 e 60, osteotomia valgizante, BORDEN, recidiva).",
    "acesso": "gratis",
-   "minutos": 16,
+   "minutos": 32,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10339,6 +10339,26 @@
      "radar": "confirmado"
     },
     {
+     "id": "blount-por-dentro-histologia-radiografia-e-os-an",
+     "titulo": "BLOUNT por dentro: histologia, radiografia e os ângulos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-estagios-de-langenskiold-um-por-um-e-o-tratam",
+     "titulo": "Os estágios de LANGENSKIÖLD, um por um, e o tratamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-osteotomias-da-tibia-vara-e-as-complicacoes",
+     "titulo": "As osteotomias da tíbia vara e as complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tibia-vara-do-adolescente",
+     "titulo": "Tíbia vara do adolescente",
+     "radar": "oportunidade"
+    },
+    {
      "id": "perfil-rotacional-anteversao-femoral-e-torcao-ti",
      "titulo": "Perfil rotacional: anteversão femoral e torção tibial",
      "radar": "confirmado"
@@ -10354,6 +10374,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "coxa-vara-o-que-o-campbell-15-acrescenta",
+     "titulo": "Coxa vara: o que o Campbell 15 acrescenta",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -10362,11 +10387,39 @@
    "questoes": [
     "pediatria-0112",
     "pediatria-0264",
+    "pediatria-0498",
     "pediatria-0486",
     "pediatria-0818",
+    "pediatria-0810",
     "pediatria-0726",
     "pediatria-0806",
     "pediatria-0805",
+    "pediatria-0376",
+    "pediatria-0074",
+    "pediatria-0902",
+    "pediatria-0101",
+    "pediatria-0679",
+    "pediatria-0432",
+    "pediatria-0348",
+    "pediatria-0140",
+    "pediatria-0416",
+    "pediatria-0124",
+    "pediatria-0016",
+    "pediatria-0196",
+    "pediatria-0078",
+    "pediatria-0246",
+    "pediatria-0497",
+    "pediatria-0488",
+    "pediatria-0307",
+    "pediatria-0044",
+    "pediatria-0276",
+    "pediatria-0534",
+    "pediatria-0862",
+    "pediatria-0762",
+    "pediatria-0238",
+    "pediatria-0436",
+    "pediatria-0677",
+    "pediatria-0861",
     "pediatria-0440",
     "pediatria-0776",
     "pediatria-0778",
@@ -10379,6 +10432,8 @@
     "pediatria-0423",
     "pediatria-0338",
     "pediatria-0669",
+    "pediatria-0175",
+    "pediatria-0387",
     "pediatria-0085",
     "pediatria-0443",
     "pediatria-0490",
@@ -10387,7 +10442,11 @@
     "pediatria-0049",
     "pediatria-0407",
     "pediatria-0247",
-    "pediatria-0094"
+    "pediatria-0094",
+    "pediatria-0343",
+    "pediatria-0210",
+    "pediatria-0459",
+    "pediatria-0310"
    ],
    "treino": [
     "pediatria-1399",
