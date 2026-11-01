@@ -400,4 +400,11 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
 .hd-palco--noite:has(.hd-fogueira:is(:hover, :focus-visible)) .hd-luz-fogo { --luz: 1.1; }
 .hd-palco--pausa .hd-luz-fogo { --luz: 1.15; }
 .hd-palco--pausa .hd-fogo:not(.hd-fogo--5, .hd-fogo--6) { filter: drop-shadow(0 0 16px rgba(255, 180, 80, 0.8)); }
-@media (prefers-reduced-motion: reduce) { .hd-calor { transition: none; } }
+/* O quadro de cinema da pausa: vinheta quente nas bordas (some devagar), calor que respira e fagulhas mais altas. */
+.hd-vinheta { inset: 0; pointer-events: none; opacity: 0; transition: opacity 1.6s ease;
+  background: radial-gradient(ellipse 30% 46% at 50% 70%, transparent 35%, rgba(24, 10, 2, 0.45) 100%); }
+.hd-palco--pausa .hd-vinheta { opacity: 1; }
+.hd-palco--pausa .hd-calor { animation: hd-respira 4.8s ease-in-out 1.4s infinite; }
+@keyframes hd-respira { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.78; transform: scale(1.05); } }
+.hd-brasas--pausa i { width: 2px; height: 2px; background: #ffe2a0; box-shadow: 0 0 5px #ffb050, 0 0 1px #fff3d0; }
+@media (prefers-reduced-motion: reduce) { .hd-calor, .hd-vinheta { transition: none; } .hd-palco--pausa .hd-calor { animation: none; } }

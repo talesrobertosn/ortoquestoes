@@ -392,6 +392,8 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
 
   const particulas = useMemo(() => Array.from({ length: 16 }, (_, i) => ({ x: (i * 37 + 11) % 100, y: (i * 53 + 7) % 70 + 5, t: 6 + (i % 5) * 1.6, d: -((i * 1.7) % 8) })), [])
   const brasas = useMemo(() => Array.from({ length: 9 }, (_, i) => ({ dx: ((i * 29) % 13) - 6, t: 1.8 + (i % 4) * 0.5, d: -((i * 0.7) % 3) })), [])
+  // Na pausa, a fogueira respira mais alto: uma revoada de fagulhas sobe mais longe e mais devagar.
+  const fagulhas = useMemo(() => Array.from({ length: 14 }, (_, i) => ({ dx: ((i * 37) % 23) - 11, t: 2.6 + (i % 5) * 0.55, d: -((i * 0.43) % 3.4) })), [])
   const imagem = (larg: number) => recurso(`pixel/inicio/${cenario.arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
 
   return (
@@ -401,6 +403,8 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
         <img className="hd-palco__fundo" src={imagem(1440)} srcSet={`${imagem(960)} 960w, ${imagem(1440)} 1440w`} sizes="(max-width: 60rem) 170vw, 100vw"
           width={1440} height={600} alt="" decoding="async" fetchPriority="high" />
         <span className="hd-luz-fogo" aria-hidden="true" style={{ left: `${(240 / 480) * 100}%`, top: `${(140 / 200) * 100}%`, '--forca': linhaFogo === 0 ? 0.2 : 1 } as CSSProperties} />
+        {/* A pausa vira um quadro de cinema: a borda do acampamento escurece e um calor âmbar respira em volta do fogo. */}
+        <span className="hd-vinheta" aria-hidden="true" />
         <span className="hd-calor" aria-hidden="true" style={lugar(130, 50, 220, 150)} />
         <span className={`hd-fogo hd-fogo--${linhaFogo}`} aria-hidden="true" style={{ ...lugar(220, 104, 40, 48), '--linha': linhaFogo } as CSSProperties} />
         {/* O easter egg: a espada fincada na fogueira (scripts/sprites/espada_fogueira.py), com a chama dos dois lados. */}
@@ -409,6 +413,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
             da lâmina; a luz da fogueira e a brasa ficam recortadas no desenho da espada (InicioHd.css, .hd-espada). */}
         {cenario.espada && linhaFogo > 0 && <span className={`hd-fogo hd-fogo--${linhaFogo} hd-fogo--frente`} aria-hidden="true" style={{ ...lugar(222, 106, 36, 44), '--linha': linhaFogo } as CSSProperties} />}
         {linhaFogo > 0 && <span className="hd-brasas" aria-hidden="true" style={cenario.espada ? lugar(233, 90, 14, 36) : lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
+        {pausa > 0 && fogoAceso && <span className="hd-brasas hd-brasas--pausa" aria-hidden="true" style={lugar(222, 60, 36, 70)}>{fagulhas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
         {/* A fogueira se toca: pausa de jornada opcional (clique, toque ou teclado). Sem botão desenhado: é o próprio fogo. */}
         <button type="button" className="hd-fogueira" style={lugar(218, 100, 44, 54)} aria-pressed={pausa > 0}
           aria-label={fogoAceso ? 'Descansar na fogueira' : 'Sentar na fogueira apagada'} onClick={() => { if (!pausa) avisarFala('esqueleto'); definirPausa((p) => (p ? 0 : Date.now())) }} />
