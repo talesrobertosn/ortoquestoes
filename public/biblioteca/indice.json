@@ -10785,15 +10785,15 @@
   },
   {
    "id": "tachdjian6-ddq",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Displasia do desenvolvimento do quadril",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 32)",
    "capitulo": "Capítulo 13 · Displasia do desenvolvimento do quadril",
    "resumo": "Fatores de risco (quadril esquerdo, primeiro filho, pélvica franca, oligodrâmnio, metatarso aduto); embriologia (fenda na 7ª semana, cabeça e acetábulo do mesmo mesênquima, núcleo entre 4 e 7 meses); obstáculos à redução (cápsula em ampulheta, limbo, pulvinar, ligamento redondo, iliopsoas); exame por idade (limitação da abdução, GALEAZZI, KLISIC); radiografia (HILGENREINER, PERKIN, SHENTON, índice acetabular); ultrassonografia (GRAF e HARCKE); PAVLIK; redução fechada e zona de segurança; necrose e epifisiodese trocantérica.",
    "acesso": "gratis",
-   "minutos": 5,
+   "minutos": 26,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10824,6 +10824,66 @@
      "id": "a-reducao-fechada-e-as-sequelas",
      "titulo": "A redução fechada e as sequelas",
      "radar": "confirmado"
+    },
+    {
+     "id": "definicoes-numeros-e-fatores-de-risco",
+     "titulo": "Definições, números e fatores de risco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "patoanatomia-e-historia-natural",
+     "titulo": "Patoanatomia e história natural",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-em-cada-idade",
+     "titulo": "O exame em cada idade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ultrassonografia-graf-harcke-cobertura-e-rastrea",
+     "titulo": "Ultrassonografia: GRAF, HARCKE, cobertura e rastreamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radiografia-valores-por-idade-ihdi-e-severin",
+     "titulo": "Radiografia: valores por idade, IHDI e SEVERIN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-pavlik-em-detalhe",
+     "titulo": "O PAVLIK em detalhe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "reducao-fechada-tracao-artrografia-e-gesso",
+     "titulo": "Redução fechada: tração, artrografia e gesso",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "reducao-aberta-encurtamento-e-a-crianca-que-cheg",
+     "titulo": "Redução aberta, encurtamento e a criança que chega tarde",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "osteotomias-pelvicas",
+     "titulo": "Osteotomias pélvicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "necrose-avascular-criterios-classificacoes-e-seq",
+     "titulo": "Necrose avascular: critérios, classificações e sequelas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "displasia-residual-adolescente-e-luxacao-teratol",
+     "titulo": "Displasia residual, adolescente e luxação teratológica",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -10855,7 +10915,21 @@
     "pediatria-0093",
     "pediatria-0072",
     "pediatria-0351",
-    "pediatria-0248"
+    "pediatria-0248",
+    "pediatria-0789",
+    "pediatria-0860",
+    "pediatria-0767",
+    "pediatria-0877",
+    "pediatria-0795",
+    "pediatria-0878",
+    "pediatria-0763",
+    "pediatria-0519",
+    "pediatria-0489",
+    "pediatria-0444",
+    "pediatria-0502",
+    "pediatria-0172",
+    "quadril-0164",
+    "quadril-0029"
    ],
    "treino": [
     "pediatria-1419",

@@ -1,14 +1,14 @@
 ---
 id: tachdjian6-ddq
-versao: 1
+versao: 2
 titulo: Displasia do desenvolvimento do quadril
 especialidade: pediatria
 acesso: gratis
 livro: Tachdjian's Pediatric Orthopaedics
-edicao: 6ª edição (2021)
+edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 32)
 capitulo: Capítulo 13 · Displasia do desenvolvimento do quadril
 autores: John A. Herring (editor)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulo 13, sobretudo etiologia, desenvolvimento, fisiopatologia, exame, radiografia, ultrassonografia, suspensório de PAVLIK, redução fechada e necrose avascular. As páginas citadas são as impressas.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulo 13, sobretudo etiologia, desenvolvimento, fisiopatologia, exame, radiografia, ultrassonografia, suspensório de PAVLIK, redução fechada e necrose avascular. As páginas citadas são as impressas. Ampliado em 01/11/2026 com o capítulo 13 relido por inteiro (tabelas extraídas do PDF) e o Campbell's Operative Orthopaedics, 15ª ed., cap. 32.
 subtemas: Displasia do desenvolvimento do quadril
 resumo: Fatores de risco (quadril esquerdo, primeiro filho, pélvica franca, oligodrâmnio, metatarso aduto); embriologia (fenda na 7ª semana, cabeça e acetábulo do mesmo mesênquima, núcleo entre 4 e 7 meses); obstáculos à redução (cápsula em ampulheta, limbo, pulvinar, ligamento redondo, iliopsoas); exame por idade (limitação da abdução, GALEAZZI, KLISIC); radiografia (HILGENREINER, PERKIN, SHENTON, índice acetabular); ultrassonografia (GRAF e HARCKE); PAVLIK; redução fechada e zona de segurança; necrose e epifisiodese trocantérica.
 ---
@@ -86,3 +86,303 @@ conceito: Redução instável = só em abdução ampla ou com rotação interna 
 como: O TARO 2024 e o TEPOP 2024 perguntaram a definição de redução instável; o TEOT 2022, a posição humana; o TARO 2015, o obstáculo principal; o TEPOP 2024, a idade da epifisiodese do trocânter; o TEOT 2024, a tomografia pós-redução.
 armadilha: Gessar em abdução máxima ou esperar o núcleo de ossificação para reduzir.
 !fim
+
+# Definições, números e fatores de risco {radar=confirmado}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 422 e 423), define a DDQ como um **espectro** cuja causa comum é a **frouxidão da cápsula**: no recém-nascido é instabilidade; com o tempo, luxação **irredutível**. **Luxação** é perda completa do contato articular; **subluxação**, contato parcial; **displasia**, acetábulo deficiente. O nome "luxação congênita" caiu nos anos 1980 para incluir quem luxa depois de um exame neonatal normal, o que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1131), credita a WESTIN. Da história caem LORENZ, o **"pai da necrose avascular"** pelas reduções vigorosas, ORTOLANI (**1937**) e PAVLIK, que criou o suspensório em **1946** e relatou **1424 quadris sem necrose** em 1959.
+
+**Incidência.** O Box 13.1 separa luxação **1,4 por 1000**, achado clínico **2,3 por 100** e alteração ultrassonográfica **8 por 100**; a luxação verdadeira fica em **1,0 a 1,5 por 1000**. Os extremos são **188,5 por 1000** em indígenas canadenses de Island Lake e **zero** em bantos africanos (p. 423). O Campbell (p. 1130) estima **1 em 1000** e mostra o efeito do método: em 18.060 quadris rastreados, 1001 alterados, mas só 90 persistiram com 2 e 6 semanas (**5 por 1000**).
+
+**Sexo, lado e genética.** Meninas, cerca de **5 vezes** mais (Campbell), pela **relaxina** materna, que atravessa a placenta. O esquerdo predomina, e o Campbell lembra que o **bilateral é mais comum que o direito isolado**. Gêmeos idênticos concordam em **34%** e fraternos em **3%**; COLEMAN viu risco **5 vezes** maior com familiar acometido, e o Campbell fala em probabilidade de cerca de **10%**. A frouxidão herdada (WYNNE-DAVIES) é autossômica dominante com penetrância incompleta, com mais **colágeno III que I**.
+
+**Pélvica e enfaixamento.** A pélvica é 2% a 3% dos partos e **16%** dos casos; a Fig. 13.2 dá **2% na podálica** e **20% na franca com joelhos estendidos**, porque o agente é a **tração dos isquiotibiais** sobre o quadril fletido (coelhos com isquiotibiais seccionados não luxam). A **cesárea não muda** o risco (p. 424). O Box 13.2 diz "especialmente podálica", contradizendo o próprio texto; o Campbell fala só em pélvica após **30 semanas**. Enfaixar em extensão (berço-prancha) multiplica a incidência porque estende quadris com contratura fisiológica em flexão; no Malawi, mais de 40.000 crianças carregadas nas costas em posição de PAVLIK não tiveram nenhum caso em 10 anos, e fraldas largas derrubaram a incidência em **65%** (p. 425). O Campbell pede evitar o enfaixamento restritivo durante o PAVLIK.
+
+!tabela Fatores de risco e associações (Tachdjian, cap. 13, p. 423 a 426; Campbell 15, cap. 32, p. 1130 e 1137)
+| Fator | Tachdjian | Campbell |
+| --- | --- | --- |
+| pélvica | 16% dos casos; franca com joelhos estendidos 20% | após 30 semanas; menina pélvica 2,8% |
+| família | risco 5 vezes; gêmeos 34% contra 3% | cerca de 10% |
+| torcicolo | 15% a 20% (box); instabilidade em até 15% | coexistência de 8%; meninos quase 5 vezes mais |
+| metatarso aduto | 1,5% a 10% | associação forte |
+| calcaneovalgo | não citado | associação forte |
+| pé torto | sem relação significativa | pouca associação, mas examina sempre |
+| outros | hipertireoidismo materno no 1º trimestre | gestação múltipla; prematuridade provavelmente não |
+!fim
+
+!questoes relacionadas=pediatria-0789
+conceito: A frouxidão é herdada (autossômica dominante com penetrância incompleta) e hormonal: a relaxina materna atravessa a placenta e age mais nas meninas.
+como: O TARO 2006 pôs em certo ou errado que a frouxidão pode ser influenciada pelo estrogênio.
+armadilha: Trocar a relaxina, o hormônio que os livros citam, pelo estrogênio.
+alerta: A `pediatria-0789` está sem gabarito oficial; o Tachdjian e o Campbell 15 atribuem a frouxidão hormonal à relaxina e não citam o estrogênio.
+!fim
+
+# Patoanatomia e história natural {radar=confirmado}
+
+No Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 427 a 429), a borda posterossuperior do quadril instável achata onde a cabeça desliza e forma o **neolimbus de ORTOLANI**, a crista que dá o "clunk". O luxável tem cápsula muito frouxa, ligamento redondo alongado e **lábio evertido**. No quadril que fica fora, o obstáculo **mais importante** é a **cápsula inferior em ampulheta**, estreitada pelo **iliopsoas**, que cruza a face anteromedial até o trocânter menor e fica esticado sobre o istmo. Não é o acetábulo que barra a cabeça: a cápsula a empurra contra a borda e dobra a borda para dentro. O "lábio que bloqueia" é lábio mais acetábulo cartilaginoso, anlage de crescimento: **não se excisa**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1136 e 1149), acrescenta **coxa valga e anteversão excessiva** entre 6 e 18 meses e, na criança maior, cápsula com quase **o dobro** do tamanho, aderida aos abdutores.
+
+!tabela Obstáculos à redução (Tachdjian, cap. 13, p. 427 a 429; Campbell 15, cap. 32, Fig. 32.16, p. 1142)
+| Obstáculo | Papel |
+| --- | --- |
+| **cápsula inferior em ampulheta** | o mais importante; liberar ou distender |
+| tendão do iliopsoas | extra-articular, estreita o istmo |
+| ligamento redondo | alongado e espesso; guia até o fundo na via anterior |
+| pulvinar fibrogorduroso | ocupa o fundo |
+| ligamento transverso | hipertrófico, puxado para cima com o redondo |
+| limbo invertido | interposto; não excisar |
+!fim
+
+**Depois da redução**, a cabeça "assenta" em semanas (**docking the head**, SEVERIN, 1941) e o acetábulo aprofunda. Sem redução, o teto fica oblíquo, a **parede medial espessa** (lágrima larga) e o acetábulo antevertido, mas o adolescente displásico tem **retroversão**. HARRIS viu bom desenvolvimento com redução **até os 4 anos** e crescimento acetabular importante até os **8** (p. 429 e 430).
+
+**História natural** (p. 430 e 431). BARLOW achou instabilidade em 1 de 60 quadris: **60% normalizaram em 1 semana e 88% em 2 meses**. A **subluxação sempre leva a doença degenerativa sintomática**: a grave na 2ª década, a moderada na 3ª e 4ª, a leve na 5ª e 6ª. A **luxação completa** dói muito mais tarde ou nunca, exceto com **falso acetábulo bem formado**, a forma que mais dói (o Campbell, p. 1165, concorda). Inclinação acetabular **acima de 15°** torna a subluxação inevitável. Metade dos não tratados tem dor; **20% a 50%** das artroses do quadril vêm de displasia residual; a unilateral dá **valgo do joelho ipsilateral** e a bilateral, lombalgia por **hiperlordose**.
+
+!questoes central=pediatria-0860
+conceito: O obstáculo mais importante à redução do quadril luxado é a cápsula inferior em ampulheta, estreitada pelo iliopsoas; pulvinar, ligamento redondo, transverso e limbo são secundários.
+como: O ENARE R4 2025 descreveu uma criança de 12 meses com GALEAZZI positivo e redução incruenta frustrada e pediu a principal estrutura interposta na artrotomia.
+armadilha: Escolher o psoas ou o ligamento redondo, que contribuem, mas não são o bloqueio principal.
+!fim
+
+# O exame em cada idade {radar=confirmado}
+
+!tabela Exame físico por idade (Tachdjian, cap. 13, Box 13.4, p. 432)
+| Idade | Achados |
+| --- | --- |
+| recém-nascido | luxável (BARLOW), redutível (ORTOLANI), KLISIC |
+| lactente | luxável e redutível às vezes; KLISIC; **abdução diminuída**; GALEAZZI |
+| criança que anda | permanece luxado; KLISIC; abdução diminuída; GALEAZZI; claudicação; perna curta; lordose no bilateral |
+!fim
+
+No Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 431 e 432), examina-se **um quadril de cada vez**, com a criança relaxada. O **BARLOW** é provocativo: quadril **aduzido**, pressão **posterior**; positivo quando a cabeça sai e volta. O **ORTOLANI** reduz: 4º e 5º dedos levantam o trocânter enquanto se abduz; o "clunk" é **palpável, não audível**. Repete-se 4 ou 5 vezes, porque a instabilidade pode surgir só na 16ª manobra. O **click** agudo no fim da abdução (ligamento redondo, fáscia lata, psoas) geralmente **não é doença**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1131), descreve o ORTOLANI com força **anteromedial** no trocânter e o BARLOW com pressão no eixo do fêmur em adução.
+
+A luxação pode ficar irredutível em semanas ou continuar redutível até **5 ou 6 meses** (p. 433). Daí em diante, a **limitação da abdução**, com os dois quadris examinados juntos, é o sinal mais confiável; para o Campbell, o primeiro e mais confiável, por contratura dos adutores, e com as pregas assimétricas a dupla mais comum. Pregas extras são variante normal frequente. No **bilateral** não há assimetria nem GALEAZZI, e o teste útil é o **KLISIC**: dedo médio no trocânter maior e indicador na espinha ilíaca anterossuperior; no normal, a linha aponta para o umbigo; no luxado, para o meio do caminho entre o umbigo e o púbis (p. 433 e 434). A marcha **não atrasa** (os dois livros). Na unilateral, a criança anda na **ponta do pé** do lado curto e se inclina sobre ele (**marcha de TRENDELENBURG**); na bilateral, marcha **gingada** e **hiperlordose** por contratura em flexão, muitas vezes a queixa principal. A família nota a **dificuldade de abduzir para trocar a fralda**. Com fator de risco, ultrassom no lactente e radiografia **acima de 6 meses** (p. 432).
+
+!questoes relacionadas=pediatria-0767,pediatria-0877
+conceito: BARLOW testa o quadril luxável (adução e pressão posterior) e ORTOLANI reduz o luxado (abdução levantando o trocânter); depois do neonato, a limitação da abdução é o sinal mais confiável.
+como: O TARO 2011 perguntou duas vezes o principal sinal aos 2 anos; o TARO 2009, o achado mais confiável aos 6 meses; o R4 Coluna SES-DF 2024, as manobras do quadril luxável e do luxado numa menina de 6 meses com dificuldade de trocar a fralda.
+armadilha: Escolher pregas ou ORTOLANI na criança maior, com o quadril já fixo, ou inverter BARLOW e ORTOLANI.
+alerta: A `pediatria-0767` está sem gabarito oficial; pelo Tachdjian e pelo Campbell 15, a resposta é a limitação da abdução.
+!fim
+
+# Ultrassonografia: GRAF, HARCKE, cobertura e rastreamento {radar=confirmado}
+
+No Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 434 a 437), **GRAF** é estático: transdutor lateral sobre o trocânter, corte no centro do acetábulo, **alfa** no teto ósseo e **beta** no cartilaginoso. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1132 e 1133), lembra que no normal a **linha de base bissecta a cabeça** e que o exame é muito **operador-dependente**. **HARCKE** é dinâmico, com **quatro incidências** (frontal e transversa, neutra e em flexão), e aceita **4 a 6 mm** de movimento nos primeiros dias. **TERJESEN** mede a cobertura: **50%** é o mínimo normal após 1 mês.
+
+!tabela Classificação de GRAF (Tachdjian, cap. 13, Tabela 13.2, p. 437)
+| Tipo | Alfa | Beta | Descrição | Conduta |
+| --- | --- | --- | --- | --- |
+| I | > 60° | < 55° | normal | nenhuma |
+| IIa | 50° a 60° | 55° a 77° | imaturo, < 3 meses | observar |
+| IIb | 50° a 60° | 55° a 77° | > 3 meses | PAVLIK |
+| IIc | 43° a 49° | > 77° | deficiência acetabular | PAVLIK |
+| IId | 43° a 49° | > 77° | lábio evertido | PAVLIK |
+| III | < 43° | > 77° | lábio evertido | PAVLIK |
+| IV | não mensurável | não mensurável | luxado | PAVLIK, redução fechada ou aberta |
+!fim
+
+O **IIc é o mais importante de identificar**, porque é pré-luxante; o II inteiro é a zona cinzenta, e GRAF já trata o IIa, outros só a partir do IIb. Com exame normal, o Tachdjian indica PAVLIK para **IIb** ou cobertura **< 30%** (p. 443). As decisões se baseiam em exame com **6 semanas ou mais**. BIALIK viu **90%** dos anormais normalizarem sozinhos, persistindo **3% dos IIa, 17% dos III e 25% dos IV**; o ultrassom de rotina **dobrou** a taxa de tratamento; e IMRE achou **29%** de radiografias anormais aos 5 meses em pélvicos com ultrassom normal (p. 437). O Campbell é categórico: **antes de 6 semanas decide o exame físico**. Na RM, KASHIWAGI mostrou que a borda acetabular **invertida** nunca reduz com PAVLIK (p. 442).
+
+!tabela Rastreamento (Tachdjian, cap. 13, p. 442; Campbell 15, cap. 32, Box 32.2, p. 1132)
+| Entidade | Recomendação |
+| --- | --- |
+| AAP | exame em todos; ultrassom para meninas pélvicas ou com história familiar |
+| US Preventive Services Task Force | benefício líquido indeterminado |
+| AAOS 2014 | **contra** ultrassom universal; imagem **antes de 6 meses** com pélvica, família ou instabilidade; **AP da pelve a partir de 4 meses** |
+| Campbell | encaminhar com exame positivo ao nascer ou com 2 semanas; ultrassom com 6 semanas se houver risco e exame normal |
+!fim
+
+!questoes relacionadas=pediatria-0795
+conceito: No GRAF, III é alfa < 43° com beta > 77° e lábio evertido; IV é o quadril luxado, com ângulos não mensuráveis; IIc é o pré-luxante.
+como: O TARO 2006 pôs em certo ou errado que luxação, teto deficiente e lábio evertido correspondem ao tipo IV.
+armadilha: Chamar de IV todo lábio evertido; IId e III também o têm.
+alerta: A `pediatria-0795` está sem gabarito oficial. A Tabela 13.2 do Tachdjian põe o lábio evertido nos tipos IId e III e define o IV só como luxado não mensurável, sem citar "luxação inferior".
+!fim
+
+# Radiografia: valores por idade, IHDI e SEVERIN {radar=confirmado}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 437 a 440), mostra a luxação evidente **entre 3 e 6 meses**; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1132), confia na radiografia a partir de **6 meses**, quando o núcleo ossifica, e a AAOS a aceita a partir de **4 meses**. No normal, o bico medial da metáfise fica no **quadrante inferior interno** e a SHENTON é contínua; no luxado, a metáfise fica **lateral à PERKIN**. Antes do núcleo, as distâncias **H** e **D** medem a subida e a lateralização.
+
+!tabela Valores normais (Tachdjian, cap. 13, p. 438 a 440 e 460; Campbell 15, cap. 32, p. 1132 e 1133)
+| Medida | Normal |
+| --- | --- |
+| índice acetabular, RN | média 27,5° (Tachdjian); ≤ 30° (Campbell) |
+| índice acetabular, 6 meses | 23,5° (Tachdjian); < 25° (Campbell) |
+| índice acetabular, 2 anos | cerca de 20° |
+| índice do supercílio | < 15° |
+| centro-borda de WIBERG | > 19° (6 a 13 anos); > 25° (14 ou mais); pouco confiável abaixo de 5 anos (Campbell) |
+| centro-borda ventral (falso perfil) | > 25° |
+| profundidade/largura acetabular | > 38% |
+!fim
+
+O **falso perfil de LEQUESNE** (paciente a **65°** do feixe) mostra a displasia anterior; a **incidência de VON ROSEN** (abdução, rotação interna, extensão) mostra o eixo do fêmur passando acima do acetábulo no luxado. A **lágrima** aparece entre **6 e 24 meses**; a que surge **até 6 meses após a redução** é bom sinal, e a forma **em V** indica mau prognóstico (p. 439). O risco carcinogênico das radiografias de um caso médio é **< 1%**.
+
+**IHDI** (Campbell, p. 1132 a 1134 e 1146): HILGENREINER e PERKIN fazem quatro quadrantes e o inferolateral é cortado por uma linha a **45°**; a referência é o **centro da metáfise**, o que permite classificar **antes do núcleo**. **Grau I** é normal; **II a IV**, deslocamento progressivo; **III e IV são fator de risco de necrose**.
+
+!tabela Classificação de SEVERIN do resultado (Tachdjian, cap. 13, Tabela 13.3, p. 441)
+| Classe | Aspecto | CE 6 a 13 anos | CE 14 ou mais |
+| --- | --- | --- | --- |
+| Ia | normal | > 19° | > 25° |
+| Ib | normal | 15° a 19° | 20° a 25° |
+| II | deformidade moderada | como na I | como na I |
+| III | displasia sem subluxação | < 15° | < 20° |
+| IVa | subluxação moderada | não citado | não citado |
+| IVb | subluxação grave | < 0° | < 0° |
+| V | cabeça em pseudoacetábulo superior | | |
+| VI | reluxação | | |
+!fim
+
+WARD mostrou baixa confiabilidade do SEVERIN. Na **artrografia** normal, o lábio é um **espinho** (thorn sign) sobre a cabeça; o Tachdjian punciona por via **subadutora**, cerca de 2 cm distal à origem do adutor longo, apontando para a esternoclavicular contralateral (p. 441 e 442). No gesso, o Campbell confirma a redução com TC (especificidade **96%**) ou RM (**100%**), ambas com sensibilidade de 100% (p. 1140).
+
+!questoes central=pediatria-0878 relacionadas=pediatria-0763
+conceito: A partir de 4 a 6 meses, com o núcleo ossificando, o exame é a radiografia AP da bacia; o índice acetabular cai de 27,5° no RN para cerca de 20° aos 2 anos, e o centro-borda normal passa de 19° dos 6 aos 13 anos.
+como: O R4 Coluna SES-DF 2024 pediu o exame de confirmação numa menina de 6 meses nascida em pélvica; o TARO 2008, o centro-borda esperado com índice acetabular de 40°.
+armadilha: Pedir ultrassom ou RM aos 6 meses, ou usar o centro-borda abaixo dos 5 anos.
+alerta: A `pediatria-0763` está sem gabarito oficial, e nenhum dos dois livros liga um índice acetabular a um centro-borda esperado; o Campbell 15 acha o centro-borda pouco confiável abaixo de 5 anos.
+!fim
+
+# O PAVLIK em detalhe {radar=confirmado}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 442 a 445), trata desde o diagnóstico o quadril **ORTOLANI positivo** e trata ou reexamina o **BARLOW positivo**; **entre 2 e 6 meses**, o PAVLIK é a primeira escolha **mesmo com o quadril luxado**, que não precisa ser redutível ao exame. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1134 a 1136), o define como órtese **dinâmica**, ruim na criança que **engatinha** (6 a 10 meses), com contratura fixa e na **teratológica**. Para reduzir, a flexão tem de passar de **90°**, com o colo apontando para a **trirradiada**. Os livros divergem: o Tachdjian põe a tira **logo abaixo dos mamilos** e **120°** de flexão; o Campbell, **na linha dos mamilos** com folga de três dedos, **90° a 100°**, e tira posterolateral frouxa, com os joelhos **3 a 5 cm** afastados em adução.
+
+!tabela PAVLIK nos dois livros (Tachdjian, cap. 13, p. 443 a 445; Campbell 15, cap. 32, p. 1134 a 1137)
+| Tema | Tachdjian | Campbell |
+| --- | --- | --- |
+| sucesso | 95% dos displásicos; GRAF III 97%, GRAF IV 50% | 85% a 95% |
+| necrose | 0% a 15%; luxação alta até 27%; internados 28% contra 7,2% em casa | femoral e necrose < 1% |
+| falha | > 7 semanas, bilateral, ORTOLANI ausente | e ainda paralisia femoral, IA ≥ 36°, cobertura < 20% |
+| quando parar | sem redução em 3 a 4 semanas | 3 a 6 semanas no texto; 4 no algoritmo |
+| duração | 6 semanas após a estabilidade | mais 6 semanas após estabilizar |
+| seguimento | radiografia aos 6 meses, 1 ano, até a maturidade | AP da pelve aos 6 meses e com 1 ano |
+!fim
+
+Com ultrassom ainda anormal em **3 semanas**, pode-se trocar por **órtese de abdução** (SWAROOP: **93%** sem necrose). A **hiperflexão** comprime o **femoral** e pode dar **luxação inferior**; o Campbell pede checar o quadríceps em toda consulta e **suspender até recuperar**. A **abdução forçada** causa necrose, e contratura em abdução antes do tratamento aumenta o risco (KITOH). A **doença do PAVLIK** (JONES) é o **achatamento do acetábulo posterolateral** por manter um quadril luxado em flexão e abdução por tempo demais. Mesmo com sucesso, **20%** tiveram displasia em 8 a 15 anos, e o fechamento assimétrico tardio da fise justifica seguir até a maturidade. Depois do PAVLIK eficaz, um **entalhe na margem lateral do acetábulo** precede o bom desenvolvimento (Fig. 13.38). O desmame varia de parada abrupta a redução de **2 horas por semana** ou órtese noturna (Campbell, p. 1135). A órtese de **Tübingen** (90° a 110° e 40° a 50°) falha mais no **GRAF IV**; a **almofada de FREJKA** abduz à força (necrose de 12% contra 7% com PAVLIK, CZUBAK); **fraldas triplas** devem ser abandonadas (p. 446).
+
+!questoes central=pediatria-0519
+conceito: Bem colocado, o PAVLIK impede a extensão e a adução e deixa flexão e abdução livres; a hiperflexão lesa o nervo femoral e pode luxar para baixo, e a abdução forçada causa necrose.
+como: O ENARE R4 2024 trouxe uma menina primogênita, pélvica, ORTOLANI positiva à esquerda, e perguntou o que é correto sobre o PAVLIK; o TARO 2013, a principal complicação da hiperflexão.
+armadilha: Achar que o suspensório força a abdução ou que a hiperflexão causa necrose ou luxação anterior.
+!fim
+
+# Redução fechada: tração, artrografia e gesso {radar=oportunidade}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 446 a 449), reduz sob anestesia geral e **não espera o núcleo** (esperar **mais que dobrou** as cirurgias futuras, como o Campbell confirma com LUHMANN). A tração perdeu valor: SUCATO, em 342 casos, achou necrose de **18% com tração e 8% sem**. O que protege é manobra suave, **posição humana** e não manter a redução "a qualquer custo". O livro ainda descreve a tração de **BRYANT** (quadris a 90° e joelhos estendidos), a domiciliar em armação de PVC e o método de MOREL, com descida progressiva da cabeça abaixo do acetábulo em internação de 6 semanas ou mais. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1137 e 1149), afirma que **tração esquelética não é indicada** (isolada, dos 3 aos 8 anos, deu **54%** de necrose e **31%** de reluxação) e que o **encurtamento femoral** a substituiu na criança maior.
+
+Flete-se além de 90°, abduz-se levantando o trocânter e monta-se a **zona de segurança de RAMSEY**; a **tenotomia do adutor longo** a alarga (percutânea na contratura leve, aberta na grave). LEVEUF separou o lábio empurrado para cima, que vai bem fechado, do lábio **invertido** entre cabeça e acetábulo, que pede redução aberta. A **artrografia muda o plano** com frequência (BENSON). Para o Campbell, o que mais pesa é a **qualidade da redução inicial**.
+
+!tabela Critérios da redução fechada (Tachdjian, cap. 13, p. 447 a 449 e 472; Campbell 15, cap. 32, p. 1137 a 1140)
+| Parâmetro | Tachdjian | Campbell |
+| --- | --- | --- |
+| poça medial | estreita = boa; 5 a 6 mm = razoável; > 6 mm = ruim | aceitável ≤ 5 mm |
+| zona de segurança | aduzir 20° a 30° da abdução máxima sem reluxar | mínimo 20°, ideal 45° |
+| flexão no gesso | > 90° | 95° |
+| abdução no gesso | 30° a 40°, ao menos 15° abaixo da máxima | 40° a 45° |
+| rotação interna | no máximo 10° a 15° | não especifica |
+| gesso | troca com 6 semanas; 12 semanas no total | 3 meses, troca com 6 semanas |
+| necrose | 18% com tração, 8% sem | até 25%; PFGA 10% a 35% |
+!fim
+
+O Campbell chama de **posição humana de SALTER** os 95° com 40° a 45°, moldados sobre o trocânter. O Tachdjian confirma a redução com **TC de corte único** ou RM; na Fig. 13.48, a RM de perfusão mostrou cabeça sem fluxo, recuperado ao refazer o gesso com menos abdução e menos rotação interna (p. 448 a 450).
+
+# Redução aberta, encurtamento e a criança que chega tarde {radar=oportunidade}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 443 e 449), abre quando a fechada **não dá quadril estável**; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1142), lembra que a indicação é pela **patologia, não pela idade**.
+
+!tabela Tratamento por idade (Tachdjian, cap. 13, Box 13.5, p. 443)
+| Idade | Conduta |
+| --- | --- |
+| recém-nascido | PAVLIK por 6 semanas |
+| 1 a 6 meses | PAVLIK até 6 semanas depois de reduzir |
+| 6 a 18 meses | redução fechada e gesso por 3 meses; se falhar, aberta medial (< 12 meses) ou anterolateral (> 12 meses) |
+| 18 a 24 meses | fechada ou aberta anterolateral, com ou sem SALTER ou PEMBERTON |
+| 24 meses a 6 anos | aberta anterolateral **com encurtamento femoral**, com ou sem SALTER ou PEMBERTON |
+!fim
+
+!tabela Via medial e via anterior (Tachdjian, cap. 13, p. 449 a 451 e 474 a 484; Campbell 15, cap. 32, p. 1142 a 1144)
+| | Medial (LUDLOFF) | Anterior (bikini) |
+| --- | --- | --- |
+| idade | Tachdjian ≤ 1 ano; Campbell 6 a 18 meses | acima de 12 meses |
+| intervalo | junto ao pectíneo | tensor-sartório |
+| em risco | **artéria circunflexa femoral medial** | **nervo cutâneo femoral lateral** |
+| capsulorrafia | **não permite** | permite |
+| necrose | 3,6% a 24%; NOVAIS 18,7%; Campbell 10% a 20% | NOVAIS 19,6% |
+| gesso | 100° de flexão, 30° de abdução, rotação neutra | 45° de abdução, 60° a 70° de flexão, 20° a 30° de RI |
+!fim
+
+O LUDLOFF diverge entre os livros: a Plate 13.2 do Tachdjian o descreve **anterior ao pectíneo** (entre ele e a bainha femoral), com alternativa posterior; o Campbell fala no intervalo **iliopsoas-pectíneo**, mas descreve a passagem pela margem posterior do pectíneo, seguindo o nervo obturatório. O Tachdjian teve bom resultado com média de 9 meses e ruim com 17. Na via anterior, o risco é confundir o **falso acetábulo** com o verdadeiro: segue-se o **ligamento redondo** até o fundo. Lábio que dobra para dentro indica liberação medial insuficiente, e excisá-lo **quase nunca** é necessário (p. 484).
+
+**O encurtamento femoral** entra quando a cabeça fica sob pressão e, em regra, **acima de 2 anos**; testa-se distraindo a cabeça **3 a 4 mm**. Encurta-se **1 a 2 cm** (Tachdjian) ou **1 a 3 cm** (Campbell). O Tachdjian não deroda de rotina, porque **tirar a anteversão junto com a osteotomia inominada pode luxar para trás**; o Campbell admite 15° a 45° e mostra o mesmo risco (Fig. 32.22). O encurtamento primário **diminui a necrose**. A osteotomia pélvica no mesmo tempo se considera a partir de **18 meses**, se mais de **um terço da cabeça** fica descoberto, e quase sempre **acima de 3 anos** (p. 453); o Campbell viu melhores resultados abaixo de **30 meses** com aberta e SALTER juntas.
+
+**Limite de idade.** O Tachdjian reduz a **unilateral até 9 ou 10 anos** e acha a **bilateral** insatisfatória **acima de 8**, porque a bilateral não tratada evolui melhor que duas reduções; o Campbell reduz a unilateral **até 8 anos**, deixa as bilaterais dessa idade sem redução e lembra que a **artrodese é contraindicada na bilateral** (p. 1165). A complicação mais comum hoje é **não obter ou não manter a redução**; a aberta que falha deixa resultado aceitável em só **um terço a metade**, com necrose de até **44%** (Tachdjian, p. 458).
+
+# Osteotomias pélvicas {radar=confirmado}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 460 e 461), decide por duas perguntas: o quadril **reduz concentricamente** e a **trirradiada está aberta**? Se reduz, procedimento **redirecional**; se não, **de salvação**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, Tabela 32.1, p. 1152), segue a mesma lógica.
+
+!tabela Osteotomias pélvicas (Tachdjian, cap. 13, Tabela 13.5, p. 461 a 470; Campbell 15, cap. 32, p. 1152 a 1165)
+| Osteotomia | Idade | Dobradiça ou cortes | Corrige e detalhe |
+| --- | --- | --- | --- |
+| **SALTER** | Tachdjian 2 a 9 anos; Campbell 18 meses a 6 anos | **sínfise púbica**; incisura isquiática à EIAI | anterolateral; IA < 10° a 15°; ganho médio de 10°; exige redução concêntrica |
+| **PEMBERTON** | Tachdjian < 8 anos; Campbell 18 meses a 10 anos | **trirradiada**; da EIAI à trirradiada posterior | anterior e lateral; IA > 10° a 15°; **reduz o volume**; sem fixação |
+| **DEGA** | trirradiada em geral aberta | posterior, cortical interna incompleta | lateral e posterior; neuromuscular |
+| **tripla de STEEL** | 8 a 15 anos (Tachdjian); trirradiada aberta (Campbell) | ílio, ísquio e ramo púbico superior | maior redirecionamento; rotação externa excessiva; distorce a pelve |
+| **tripla de TÖNNIS** | 8 a 15 anos | ísquio em decúbito ventral | mobilidade comparável à de GANZ |
+| **GANZ** | trirradiada fechada, esqueleto maduro | quatro cortes, **coluna posterior intacta** | todos os planos e medialização; **parto normal** |
+| **CHIARI** | Campbell: não abaixo de 10 anos | ílio acima do acetábulo, 20° para cima | salvação; cápsula vira fibrocartilagem |
+| **shelf (STAHELI)** | qualquer idade | fenda de 1 cm na margem | salvação; quadril incongruente |
+!fim
+
+**SALTER** gira o acetábulo inteiro sobre a **sínfise púbica**, com corte reto pela serra de GIGLI da **incisura isquiática à EIAI** e enxerto triangular da crista; o pré-requisito é a **redução concêntrica**. Abaixo de 18 meses a asa é fina; acima de 9 ou 10 anos o fragmento não roda. Deve ficar **fechada atrás** (aberta só alonga o membro). Os riscos são o **ciático** (ao passar a GIGLI), o femoral e o cutâneo femoral lateral, e gesso em rotação medial acentuada pode **subluxar para trás**; o Campbell diz que ela **não causa retroversão**. **PEMBERTON** dobra na **trirradiada**, corrige mais com menos rotação, dispensa fixação e **diminui o volume**: serve ao acetábulo **capacioso** e é contraindicada no pequeno; o Campbell a usa de 1 ano até a trirradiada endurecer (**12 anos nas meninas, 14 nos meninos**), e o risco é o **fechamento precoce da trirradiada**. Os livros divergem na idade de ambas.
+
+**STEEL** é pouco usada hoje: técnica difícil, não muda o tamanho do acetábulo e **distorce a pelve, podendo impedir o parto normal** (Campbell, p. 1158). O Tachdjian indica a tripla com a trirradiada aberta e GANZ no adolescente e adulto jovem; o Campbell põe ambas na "adolescência tardia até a maturidade", STEEL com trirradiada aberta e GANZ com fechada. **GANZ** (p. 465 a 468) faz cortes isquiático, do ramo superior, ilíaco e da coluna posterior, preservando a **coluna posterior** e a irrigação do acetábulo, com **pelve verdadeira inalterada**, carga com muletas precoce e possibilidade de osteotomia trocantérica associada. Leva o centro-borda lateral de **-4° para 23°**; lesa o **cutâneo femoral lateral em até 50%** e tem curva de aprendizado "longa e íngreme". **CHIARI** desloca o acetábulo **medialmente** sob o ílio, quase toda a largura dele (o Campbell a chama de **artroplastia de interposição capsular**), e dá bom resultado em **dois terços**; prótese é mais provável acima de **25 anos** (MACNICOL). O Campbell a prefere ao shelf na subluxação sintomática grave acima de 10 anos e avisa que inclinar mais de 20° põe o corte na sacroilíaca. O **shelf de STAHELI** coloca enxerto sob a cabeça refletida do reto femoral e é contraindicado no quadril congruente, candidato a redirecionamento (Campbell, p. 1163).
+
+!questoes central=pediatria-0489 relacionadas=pediatria-0444,pediatria-0502
+conceito: GANZ é a periacetabular do esqueleto maduro, com coluna posterior intacta, que não altera o canal de parto e aceita osteotomia trocantérica; STEEL é a tripla de ílio, ísquio e ramo púbico, que distorce a pelve.
+como: Uma prova de Ortopedia perguntou o que é correto sobre GANZ; outra prova de Ortopedia e o TARO 2026 mostraram a imagem da técnica e pediram o nome (GANZ e STEEL).
+armadilha: Achar que GANZ exige fise aberta ou só a via de SMITH-PETERSEN, ou confundir a tripla com o CHIARI, que é de salvação.
+!fim
+
+# Necrose avascular: critérios, classificações e sequelas {radar=oportunidade}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 453 e 454), é direto: a necrose é **do tratamento**, causada sobretudo por **abdução extrema ou rotação interna** (que também torce os vasos capsulares) e por músculos que apertam a cabeça reduzida; previne-se evitando extremos e **encurtando o fêmur**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1145 e 1146), a chama de complicação **mais grave** (também PFGA), de **menos de 5% a quase 50%**, com fatores de risco na redução aberta com osteotomias, na reluxação, no segundo procedimento e em **IHDI III e IV**.
+
+**Critérios de SALTER**: cabeça que não ossifica ou não cresce **em 1 ano**; **alargamento do colo** nesse ano; densidade alterada; deformidade residual. Como o **trocânter maior é poupado**, ele cresce enquanto a cabeça para; no normal, fica a **2 raios** do centro da cabeça, com a ponta no nível ou pouco abaixo desse centro e distância articulotrocantérica de **10 a 25 mm**, negativa quando o trocânter passa o topo da cabeça. Pela curva de BLIX, a fibra encurtada abaixo de **60%** do comprimento de repouso perde força: trocânter no nível da cabeça dá claudicação abdutora, e colo curto encurta o braço de alavanca (p. 454 a 456).
+
+!tabela Classificações da necrose e equivalências (Tachdjian, cap. 13, Tabela 13.4, p. 454 a 457)
+| BUCHOLZ e OGDEN | KALAMCHI e MACEWEN | Lesão | Resultado |
+| --- | --- | --- | --- |
+| I | 1 | só o núcleo | cresce sem distúrbio |
+| II | 2 | fise **lateral** | **valgo** (caput valgus) |
+| III | 4 | toda a fise | colo curto, trocânter alto |
+| IV | sem equivalente | fise **medial** | **varo** |
+| sem equivalente | 3 | fise central | cabeça e metáfise centrais |
+!fim
+
+O Campbell avisa que o tipo só fica claro aos **4 a 6 anos** e que a confiabilidade é questionada. Na adolescência pode haver **fechamento lateral tardio** da fise, sem insulto prévio evidente, tratado com varização femoral e redirecionamento acetabular (p. 455).
+
+!tabela Tratamento das sequelas (Tachdjian, cap. 13, p. 457 e 458; Campbell 15, cap. 32, p. 1146 e 1147)
+| Situação | Procedimento |
+| --- | --- |
+| necrose reconhecida, núcleo do trocânter presente | **epifisiodese do trocânter**, melhor por volta dos 5 anos, ineficaz muito acima dos 8 |
+| trocânter no topo da cabeça, TRENDELENBURG, > 8 anos, redução concêntrica | **avanço trocantérico** até o centro da cabeça |
+| colo curto, trocânter abaixo do topo | transferência **lateral** (WAGNER) |
+| trocânter muito alto e colo muito curto | **osteotomia dupla intertrocantérica** (WAGNER) |
+| tipo II | crescimento guiado inferomedial (Campbell) |
+| displasia após o insulto | inominada **precoce (1 a 3 anos)**, melhor que a tardia |
+!fim
+
+# Displasia residual, adolescente e luxação teratológica {radar=oportunidade}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 431 e 459 a 462), faz do **supercílio** o indicador confiável da cobertura. ALBIÑANA viu mau resultado em **80%** com índice acetabular **≥ 35° dois anos após a redução**; reduzido antes dos **4 anos**, o acetábulo segue melhorando por até **8 anos**; obliquidade persistente aos **5 anos** indica **osteotomia pélvica**. COOPERMAN viu artrose em todos os displásicos com **centro-borda < 20°** em 22 anos. O adolescente tem dor inguinal ou lateral, TRENDELENBURG e **teste de impacto** positivo; pedem-se AP em pé, **abdução com rotação interna** e falso perfil (centro-borda ventral **> 25°**). **Reduz concentricamente, redirecional; não reduz, salvação**, e o redirecional se faz **mesmo sem sintomas** quando devolve alinhamento quase normal. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1151 e 1165), mira derrotação de **15° a 30°** e ângulo cervicodiafisário de **120° a 135°** na varização, e acima de 8 anos sem redução restam os paliativos.
+
+!questoes central=pediatria-0172 relacionadas=quadril-0164,quadril-0029
+conceito: Displasia do adulto jovem é centro-borda lateral baixo (COOPERMAN: abaixo de 20° levou à artrose) com teto de carga inclinado; o índice do supercílio normal é menor que 15°.
+como: O TEOT 2023 combinou centro-borda menor que 20° com ângulo de TÖNNIS acima de 10°; uma prova de Ortopedia pediu o ângulo que sugere displasia acima de 10°; o TARO 2015, o nervo mais lesado na artroplastia do quadril displásico CROWE 3 e 4.
+armadilha: Inverter os sentidos: na displasia o centro-borda cai e o ângulo do teto sobe.
+alerta: Os dois livros não nomeiam o ângulo de TÖNNIS nem o corte de 10° (`pediatria-0172`, `quadril-0164`); o Tachdjian dá o índice do supercílio normal abaixo de 15°. CROWE e a lesão do isquiático na artroplastia (`quadril-0029`) não aparecem nos capítulos lidos. Gabaritos oficiais mantidos.
+!fim
+
+**A luxação teratológica** (antenatal) é fixa ao nascer e ligada a **artrogripose, mielomeningocele, cromossomopatias, nanismo diastrófico e agenesia lombossacra** (Tachdjian, p. 471); o Campbell (p. 1145) acrescenta a **síndrome de LARSEN**. A **redução fechada geralmente falha** e o PAVLIK provavelmente não funciona. O Tachdjian faz **redução aberta anteromedial aos 6 meses**; o Campbell, a medial entre **3 e 6 meses**, trata a **unilateral com mais agressividade que a bilateral** e cita GRUEL: **44%** de maus resultados e **48%** de osteonecrose, com **70%** de complicações, **19%** de reluxação e **22%** de subluxação, melhor desfecho na via anterior com encurtamento e pior na redução fechada. SZOKE teve **80%** de bons resultados na artrogripose com via medial por volta dos 9 meses. A anatomia é muito mais alterada: acetábulo pequeno e oblíquo, ligamento redondo espesso, cabeça achatada medialmente, quadril rígido e deslocado em superolateral.
+
+# Fechamento {radar=fundamento}
+
+Na DDQ, a idade decide quase tudo: até 6 meses, PAVLIK; depois, redução fechada com artrografia e gesso; mais tarde, redução aberta com encurtamento e osteotomia. O que muda o prognóstico é a necrose avascular, evitada com a zona de segurança e sem abdução forçada.
+
+> **Na prova, o que a versão 2 acrescenta:** Luxação **1 a 1,5 por 1000**, meninas **5 vezes** (relaxina), franca com joelhos estendidos **20%**, cesárea não protege; obstáculo principal = **cápsula em ampulheta** com o iliopsoas; BARLOW normaliza **60% em 1 semana e 88% em 2 meses**; subluxação sempre dá artrose; GRAF **I > 60°, IIa e IIb 50° a 60°, IIc e IId 43° a 49°, III < 43°, IV não mensurável**, IIc pré-luxante, decidir com **6 semanas**; IHDI pela **metáfise**; CE **> 19° (6 a 13) e > 25° (14 ou mais)**; PAVLIK parar em **3 a 4 semanas**, falha com **> 7 semanas, bilateral e ORTOLANI ausente**, hiperflexão = **femoral**; tração **18% contra 8%** de necrose; poça medial **≤ 5 mm**; medial **sem capsulorrafia** (circunflexa medial), anterior **com** (cutâneo femoral lateral); encurtamento **acima de 2 anos**; bilateral não se reduz **acima de 8 anos**; SALTER na **sínfise**, PEMBERTON na **trirradiada** e reduz volume, GANZ com **coluna posterior intacta** e parto normal; necrose por **abdução extrema e rotação interna**, critério de SALTER em **1 ano**, BUCHOLZ-OGDEN **II valgo, III colo curto, IV varo**; epifisiodese do trocânter **por volta de 5 anos**.
