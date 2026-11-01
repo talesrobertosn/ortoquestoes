@@ -1,48 +1,10 @@
-/* Caderno de erros (refeita em 19/10/2026; nas cores da página inicial desde 01/11/2026): o topo é o painel escuro da
-   inicial (Mundo.css) com o botão de cristal e o placar dourado; abaixo, a página clara do atlas, com cartões de 16 px,
-   controles de 10 px, sombra suave e o escolhido em verdete-véu. Só classes da página; o comum vem de Mundo.css. */
+/* Caderno de erros (refeita em 19/10/2026; nas cores da página inicial desde 01/11/2026): o topo é o campo de treino da
+   vila (TopoVila) com o botão de cristal; abaixo, a página clara do atlas, com cartões de 16 px, controles de 10 px,
+   sombra suave e o escolhido em verdete-véu. Só classes da página. */
 .ce { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--e-5); }
 
-/* ---------- Topo ---------- */
-.ce-heroi {
-  position: relative; overflow: hidden; isolation: isolate;
-  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--e-4) var(--e-6); align-items: center;
-  padding: clamp(1.4rem, 3.6vw, 2.25rem) clamp(1.2rem, 3.6vw, 2.25rem) clamp(1.4rem, 3.6vw, 2.25rem);
-  border-radius: var(--raio-cartao); background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media);
-}
-.ce-heroi > * { min-width: 0; }
-.ce-heroi h1 { margin: 0; max-width: 22ch; font-family: var(--fonte-marca); color: var(--sobre-heroi); font-size: clamp(1.75rem, 3.8vw, 2.6rem); letter-spacing: -0.035em; line-height: 1.05; text-wrap: balance; font-variant-numeric: tabular-nums; }
-.ce-heroi__texto p:not(.tr-heroi__selo) { margin: var(--e-2) 0 0; max-width: 56ch; color: var(--sobre-heroi-2); text-wrap: pretty; }
-.botao.ce-heroi__acao {
-  display: inline-flex; align-items: center; gap: var(--e-3); text-align: left; min-height: 66px; padding: var(--e-3) var(--e-5) var(--e-3) var(--e-3);
-  border: 0; border-radius: var(--raio-controle); background: var(--px-ouro); color: var(--px-tinta); text-decoration: none;
-  box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px var(--px-ouro-sombra);
-  transition: transform 0.15s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.15s ease;
-}
-.botao.ce-heroi__acao:hover { background: #ffdf95; color: var(--px-tinta); transform: translate(-1px, -1px); }
-.botao.ce-heroi__acao:active { transform: translate(1px, 1px); }
-.botao.ce-heroi__acao:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
-.ce-heroi__acao svg { flex: none; padding: 0.45rem; width: 2.4rem; height: 2.4rem; background: var(--px-tinta); color: var(--px-ouro); }
-.ce-heroi__acao span { display: grid; line-height: 1.2; }
-.ce-heroi__acao strong { font-size: 1.1rem; }
-.ce-heroi__acao small { font-size: var(--meta); font-weight: 600; opacity: 0.8; }
-.ce-heroi__atalhos { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--e-2); }
-.ce-vidro {
-  display: inline-flex; align-items: center; justify-content: center; gap: var(--e-2);
-  min-height: 40px; padding: 0 var(--e-4); border-radius: var(--raio-controle);
-  background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); color: var(--sobre-heroi);
-  font: inherit; font-size: var(--corpo-menor); font-weight: 650; cursor: pointer;
-  transition: background-color 0.15s ease, transform 0.15s ease;
-}
-.ce-vidro b { padding: 1px 7px; border-radius: 3px; background: rgba(255, 255, 255, 0.14); font-size: 0.78rem; font-variant-numeric: tabular-nums; }
-.ce-vidro:hover { background: rgba(255, 255, 255, 0.18); }
-.ce-vidro:active { transform: translateY(1px); }
-.ce-vidro:focus-visible { outline: 2px solid var(--px-ouro); outline-offset: 2px; }
-
-.ce-placar { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--e-2); margin: 0; }
-.ce-placar div { display: grid; gap: 2px; min-width: 9.5rem; padding: var(--e-2) var(--e-3); border-radius: var(--raio-controle); background: rgba(255, 255, 255, 0.06); box-shadow: inset 0 0 0 1px var(--mundo-filete); }
-.ce-placar dt { display: flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 750; letter-spacing: 0.05em; text-transform: uppercase; color: var(--mundo-tinta-2); }
-.ce-placar dd { margin: 0; font-family: var(--fonte-pixel-titulo); font-size: 1.9rem; line-height: 1; color: var(--px-ouro); font-variant-numeric: tabular-nums; text-shadow: 0 3px 0 #072320; }
+/* ---------- Topo ----------
+   O campo de treino da vila (componentes/vila/TopoVila.tsx): a cena, o título e a bancada vêm de lá. */
 
 /* ---------- Onde há mais para ganhar ---------- */
 .ce-focos {
@@ -151,16 +113,7 @@
 }
 @media (max-width: 40rem) {
   .ce { gap: var(--e-4); }
-  .ce-heroi { grid-template-columns: 1fr; gap: var(--e-3); padding-bottom: var(--e-5); }
-  .ce-heroi__texto p:not(.tr-heroi__selo) { font-size: var(--corpo-menor); }
-  .botao.ce-heroi__acao { width: 100%; box-sizing: border-box; min-height: 58px; }
-  .ce-heroi__atalhos { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); }
-  .ce-vidro { min-width: 0; padding: 0 var(--e-3); font-size: var(--meta); white-space: nowrap; }
-  .ce-vidro--imprimir { display: none; }
-  .ce-placar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .ce-placar div { min-width: 0; padding: var(--e-2); }
-  .ce-placar dt { font-size: 0.62rem; letter-spacing: 0.02em; }
-  .ce-placar dt svg { display: none; }
+  .vl-vidro--imprimir { display: none; }
   .ce-focos { padding: var(--e-4); }
   .ce-focos ul { flex-wrap: nowrap; overflow-x: auto; margin-inline: calc(-1 * var(--e-4)); padding: 0 var(--e-4) 6px; scrollbar-width: none; }
   .ce-focos ul::-webkit-scrollbar { display: none; }
@@ -180,12 +133,10 @@
   .ce-item__acoes .botao { flex: 1 1 auto; justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .botao.ce-heroi__acao, .ce-vidro, .ce-focos a, .ce-segmentos button, .ce-temas button { transition: none; }
+  .ce-focos a, .ce-segmentos button, .ce-temas button { transition: none; }
 }
 @media print {
-  .ce-heroi { background: none; color: inherit; box-shadow: none; padding: 0; }
-  .ce-heroi h1, .ce-heroi__texto p:not(.tr-heroi__selo) { color: inherit; }
-  .ce-heroi__acao, .ce-placar, .ce-filtros, .ce-focos { display: none !important; }
+  .ce-filtros, .ce-focos { display: none !important; }
   .ce-lista { border: 0; box-shadow: none; }
   .ce-item { break-inside: avoid; }
   .ce-item__enunciado--curto, .ce-item:not(.ce-item--expandido) .ce-resp > span:last-child { -webkit-line-clamp: unset; display: block; }

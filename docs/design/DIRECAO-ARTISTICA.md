@@ -27,6 +27,8 @@ As páginas formam uma jornada:
 | Ranking | **Salão dos Cem**, dentro do castelo |
 | Biblioteca de resumos | Salão de leitura do castelo |
 | Menu | **Portal do Aventureiro** |
+| Revisão | **Estufa da vila**: regar no dia certo o que você plantou |
+| Caderno de erros | **Campo de treino** ao pé da muralha: o lugar da revanche |
 | Telas de espera | O **Gato Aventureiro** vivendo cenas curtas |
 
 ## 2. Regras que nunca mudam
@@ -223,6 +225,12 @@ O Tales **recusou**:
 - **Menu (Portal do Aventureiro):** pop-up branco, busca universal, "Continue sua jornada", os seis atalhos sem fogo
   (01/11/2026) e os visitantes.
 - **Biblioteca:** estante e lista, busca com sugestões, salão de leitura com a coruja e o gato.
+- **Revisão e Caderno de erros (01/11/2026):** o mesmo topo pintado, `componentes/vila/TopoVila.tsx` (pontos de cada
+  cena em `componentes/vila/cenas.ts`): a cena da hora do dia (`scripts/gerar_cena_estufa.py` e
+  `scripts/gerar_cena_treino.py`, 480 x 160, recorte do celular a partir de x 184), título e ação principal em ouro
+  sobre a parte calma, os números em placas de latão na bancada logo abaixo. A coruja pousa num ponto firme (toque:
+  conceito; a cada 4 toques, uma dica da página; pousada alto, o balão abre para baixo) e o gato fica no chão livre.
+  Para uma página nova da vila, pinte a cena com o mesmo contrato e acrescente uma `CenaVila`.
 - **Treinar (01/11/2026, "mesa de estudo leve"):** sem cena no topo; cabeçalho compacto, "Começar agora", os quatro
   passos numa superfície clara e o resumo; as cores são as da página inicial (tokens `--mundo-*` e o botão `.cristal`). Nem toda página tem cena: a matriz de onde a arte
   é protagonista, apoio ou fica de fora está em [TREINAR-MESA-LEVE.md](TREINAR-MESA-LEVE.md).

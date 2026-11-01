@@ -11,8 +11,8 @@ import { usarSessao } from '../estado/sessao'
 import { revisarHoje, type RegistroQuestao } from '../estado/revisao'
 import { filtrosParaConsulta, href, navegar } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
-import '../estilos/componentes/Cristal.css'
-import '../estilos/componentes/Mundo.css'
+import { TopoVila } from '../componentes/vila/TopoVila'
+import { CENA_TREINO, DICAS_ERROS } from '../componentes/vila/cenas'
 import '../estilos/paginas/CadernoErros.css'
 
 type Situacao = 'abertos' | 'corrigidos' | 'todos'
@@ -162,17 +162,20 @@ export function CadernoErros() {
   if (todos.length === 0) {
     return (
       <div className="ce">
-        <section className="ce-heroi painel-mundo" aria-labelledby="ce-titulo">
-          <div className="ce-heroi__texto">
-            <p className="tr-heroi__selo">Caderno de erros</p>
+        <TopoVila cena={CENA_TREINO} rotulo="ce-titulo" dicas={DICAS_ERROS}
+          cabeca={<>
+            <p className="vl__selo"><Icone nome="alvo" tamanho={13} /> Caderno de erros</p>
             <h1 id="ce-titulo">{primeiroNome ? `${primeiroNome}, nenhum erro por aqui, ainda` : 'Nenhum erro por aqui, ainda'}</h1>
+          </>}
+          texto={<>
             <p>Cada questão que você errar vem para este caderno, com o que você marcou, o gabarito e o porquê. É o material de revisão feito sob medida pelas suas próprias dúvidas.</p>
-          </div>
-          <a className="botao cristal ce-heroi__acao" href={href('/treinar')}>
-            <Icone nome="raio" tamanho={20} />
-            <span><strong>Treinar agora</strong><small>os erros chegam sozinhos</small></span>
-          </a>
-        </section>
+            <div className="vl-acoes">
+              <a className="vl-acao cristal" href={href('/treinar')}>
+                <Icone nome="raio" tamanho={20} />
+                <span><strong>Treinar agora</strong><small>os erros chegam sozinhos</small></span>
+              </a>
+            </div>
+          </>} />
         <PassosCaderno />
         <MensageiroDormindo titulo="O mensageiro está de folga" texto="Ainda não há erro esperando revanche. Quando você errar uma questão, ele traz a carta com o gabarito e o porquê." />
       </div>
@@ -187,49 +190,52 @@ export function CadernoErros() {
 
   return (
     <div className="ce">
-      <section className="ce-heroi painel-mundo" aria-labelledby="ce-titulo">
-        <div className="ce-heroi__texto">
-          <p className="tr-heroi__selo">Caderno de erros</p>
+      <TopoVila cena={CENA_TREINO} rotulo="ce-titulo" dicas={DICAS_ERROS}
+        cabeca={<>
+          <p className="vl__selo"><Icone nome="alvo" tamanho={13} /> Caderno de erros</p>
           <h1 id="ce-titulo">{tituloCaderno(primeiroNome, abertos.length)}</h1>
+        </>}
+        texto={<>
           <p>
             {abertos.length
               ? 'Toda questão que você erra vem para cá, com o que marcou, o gabarito e o porquê. Refez e acertou, ela passa para “Já recuperei”.'
               : 'Continue treinando: o caderno se preenche sozinho a cada erro, e cada um que você recupera fica guardado aqui.'}
             {recuperadosFrase && <> {recuperadosFrase}</>}
           </p>
-        </div>
-        {abertos.length > 0 ? (
-          <button type="button" className="botao cristal ce-heroi__acao" onClick={() => refazer([...abertos].sort((a, b) => b.registro.q - a.registro.q).slice(0, 10).map((e) => e.id))}>
-            <Icone nome="reiniciar" tamanho={20} />
-            <span><strong>Refazer os erros</strong><small>{abertos.length > 10 ? 'os 10 mais recentes' : abertos.length === 1 ? 'o que está em aberto' : 'todos os que estão em aberto'}</small></span>
-          </button>
-        ) : (
-          <a className="botao cristal ce-heroi__acao" href={href('/treinar')}>
-            <Icone nome="raio" tamanho={20} />
-            <span><strong>Começar uma sessão</strong><small>questões novas para o caderno</small></span>
-          </a>
-        )}
-        <div className="ce-heroi__atalhos nao-imprime">
-          {deHoje.length > 0 && (
-            <button type="button" className="ce-vidro" onClick={() => refazer(deHoje.map((e) => e.id))}>
-              <Icone nome="calendario" tamanho={16} /> <span>Revisar hoje</span> <b>{deHoje.length}</b>
+          <div className="vl-acoes">
+            {abertos.length > 0 ? (
+              <button type="button" className="vl-acao cristal" onClick={() => refazer([...abertos].sort((a, b) => b.registro.q - a.registro.q).slice(0, 10).map((e) => e.id))}>
+                <Icone nome="reiniciar" tamanho={20} />
+                <span><strong>Refazer os erros</strong><small>{abertos.length > 10 ? 'os 10 mais recentes' : abertos.length === 1 ? 'o que está em aberto' : 'todos os que estão em aberto'}</small></span>
+              </button>
+            ) : (
+              <a className="vl-acao cristal" href={href('/treinar')}>
+                <Icone nome="raio" tamanho={20} />
+                <span><strong>Começar uma sessão</strong><small>questões novas para o caderno</small></span>
+              </a>
+            )}
+            {deHoje.length > 0 && (
+              <button type="button" className="vl-vidro nao-imprime" onClick={() => refazer(deHoje.map((e) => e.id))}>
+                <Icone nome="calendario" tamanho={16} /> <span>Revisar hoje</span> <b>{deHoje.length}</b>
+              </button>
+            )}
+            {abertos.length > 10 && deHoje.length !== abertos.length && (
+              <button type="button" className="vl-vidro nao-imprime" onClick={() => refazer(abertos.map((e) => e.id))}>
+                <Icone nome="reiniciar" tamanho={16} /> <span>Todos os erros</span> <b>{abertos.length}</b>
+              </button>
+            )}
+            <button type="button" className="vl-vidro vl-vidro--imprimir nao-imprime" onClick={() => window.print()}>
+              <Icone nome="impressora" tamanho={16} /> <span>Imprimir</span>
             </button>
-          )}
-          {abertos.length > 10 && deHoje.length !== abertos.length && (
-            <button type="button" className="ce-vidro" onClick={() => refazer(abertos.map((e) => e.id))}>
-              <Icone nome="reiniciar" tamanho={16} /> <span>Todos os erros</span> <b>{abertos.length}</b>
-            </button>
-          )}
-          <button type="button" className="ce-vidro ce-vidro--imprimir" onClick={() => window.print()}>
-            <Icone nome="impressora" tamanho={16} /> <span>Imprimir</span>
-          </button>
-        </div>
-        <dl className="ce-placar">
-          <div><dt><Icone nome="errado" tamanho={13} /> Ainda erro</dt><dd>{abertos.length}</dd></div>
-          <div><dt><Icone nome="certo" tamanho={13} /> Já recuperei</dt><dd>{corrigidos}</dd></div>
-          <div title="Errou marcando 'tenho certeza'"><dt><Icone nome="alerta" tamanho={13} /> Errou com certeza</dt><dd>{comCerteza}</dd></div>
-        </dl>
-      </section>
+          </div>
+        </>}
+        bancada={
+          <dl className="vl-placas">
+            <div className="vl-placa"><dt><Icone nome="errado" tamanho={13} /> Ainda erro</dt><dd><span className="vl-placa__valor">{abertos.length.toLocaleString('pt-BR')}</span><span className="vl-placa__apoio">esperando revanche</span></dd></div>
+            <div className="vl-placa"><dt><Icone nome="certo" tamanho={13} /> Já recuperei</dt><dd><span className="vl-placa__valor">{corrigidos.toLocaleString('pt-BR')}</span><span className="vl-placa__apoio">errou, refez e acertou</span></dd></div>
+            <div className="vl-placa" title="Errou marcando 'tenho certeza'"><dt><Icone nome="alerta" tamanho={13} /> Errou com certeza</dt><dd><span className="vl-placa__valor">{comCerteza.toLocaleString('pt-BR')}</span><span className="vl-placa__apoio">o conceito, não o esquecimento</span></dd></div>
+          </dl>
+        } />
 
       {focos.length > 0 && (
         <section className="ce-focos" aria-labelledby="ce-focos-titulo">
