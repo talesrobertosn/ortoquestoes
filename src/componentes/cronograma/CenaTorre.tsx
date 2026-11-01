@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, type CSSProperties } from 'react'
-import { recurso, urlCss } from '../../config'
+import { useEffect, useRef, useState } from 'react'
+import { recurso } from '../../config'
 import { usarPeriodo } from '../../estado/aparencia'
 import '../../estilos/componentes/CenaTorre.css'
 
@@ -27,9 +27,6 @@ const GRAOS = [
   { x: 990, y: 440, d: 12, a: -2 }, { x: 1250, y: 500, d: 10, a: -7 }, { x: 900, y: 420, d: 13, a: -4 },
   { x: 1300, y: 400, d: 9, a: -8 }, { x: 760, y: 410, d: 12, a: -5 },
 ]
-
-/** O chão de pedra da praça, fundo da página inteira do cronograma (CronogramaTorre.css). */
-export const CHAO_DA_PRACA = { '--ct-chao': urlCss('pixel/cronograma/torre-tempo-chao.webp') } as CSSProperties
 
 export function CenaTorre() {
   const periodo = usarPeriodo()

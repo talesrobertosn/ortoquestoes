@@ -187,12 +187,8 @@ Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoque
     Arte: `<python com numpy e pillow> scripts/gerar_cena_cronograma.py [manha|tarde|noite]` gera
     `public/pixel/cronograma/torre-tempo-<hora>(-960).webp` e `torre-tempo-sino-<hora>.png`. O relógio não tem letras nem
     algarismos e não marca a prova: os dias que faltam são o número do HTML.
-55. [x] A calçada da praça embaixo do topo (Tales, 31/10/2026): a página inteira do cronograma de ortopedia (e o
-    formulário) fica sobre o chão de pedra pintado (`scripts/gerar_cena_cronograma.py chao` → `torre-tempo-chao.webp`,
-    ladrilho sem emenda, pedra morna com o chanfro aceso), com poças de luz quente da torre e das lanternas, um feixe de
-    sol lento e as caixas projetando sombra nas pedras (animações desligadas com "menos animação"). As caixas de texto
-    continuam brancas no tema claro (e escuras no escuro), como na página inicial; só os títulos que ficam direto na
-    calçada ganharam tinta clara com sombra. Tudo dentro de `.cr--torre`.
+55. [x] A calçada de pedra embaixo do topo foi testada em 01/11/2026 e retirada no mesmo dia (Tales: "ficou ruim").
+    A página volta ao fundo normal do site, com a torre no topo e as caixas brancas e redondas como na página inicial.
 56. [x] Easter egg (Tales, 31/10/2026): de vez em quando (4 em 10 visitas) a coruja ou o gato aparecem e sentam na
     borda de cima de um botão ("Ver o mês inteiro", "Semana difícil", "Continuar", um bloco recolhido ou o link do
     rodapé), só onde não cobrem texto nem controle; um toque e falam (as mesmas falas do Salão dos Cem). Código:
