@@ -258,7 +258,7 @@ function Perfis() {
       <Painel titulo="Por etapa de formação" descricao="Cada linha com o seu denominador (as contas da etapa)" justo
         acoes={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => baixarCsv(`ortoquestoes-etapas-${new Date().toISOString().slice(0, 10)}.csv`, ['Etapa', 'Contas', '% das contas', 'Novos em 30 dias', 'Ativos 7 dias (%)', 'Começaram (%)', 'Questões por conta', 'Acerto real (%)', 'Acerto após revisão (%)', 'Assinantes (%)'], d.etapas.map(e => [e.rotulo, e.contas, porcentagem(e.contas, total), e.novos30, porcentagem(e.ativos7d, e.contas), porcentagem(e.comRespostas, e.contas), Math.round(e.respondidas / (e.contas || 1)), acertoReal(e), acertoAposRevisao(e), porcentagem(e.assinantes, e.contas)]))}><Icone nome="baixar" tamanho={14} />CSV</button>}>
         <Tabela rotulo="Contas por etapa" linhas={d.etapas} chave={e => e.rotulo} compacta colunas={[
-          { id: 'e', titulo: 'Etapa', celula: e => <span className="principal">{e.rotulo}</span> },
+          { id: 'e', titulo: 'Etapa', celula: e => <span className="a3-nome">{e.rotulo}</span> },
           { id: 'c', titulo: 'Contas', numero: true, celula: e => <>{inteiro(e.contas)} <span className="fraco">{pct(porcentagem(e.contas, total))}</span></>, ordem: e => e.contas, rotuloCelular: 'Contas' },
           { id: 'n', titulo: 'Novas 30 d', numero: true, celula: e => inteiro(e.novos30), ordem: e => e.novos30, soLargo: true },
           { id: 'a', titulo: 'Ativas 7 d', numero: true, celula: e => pct(porcentagem(e.ativos7d, e.contas)), ordem: e => porcentagem(e.ativos7d, e.contas), rotuloCelular: 'Ativas' },
@@ -281,7 +281,7 @@ function Perfis() {
       </Quadro>}
       {d.servicos.length > 0 && <Painel titulo="Serviços" descricao={`Variações do mesmo lugar ficam juntas. "${SERVICO_GERAL}" junta quem escreveu só "ortopedia" ou atua em vários lugares. Acerto só com 50 respostas ou mais.`} justo>
         <Tabela rotulo="Serviços" linhas={d.servicos} chave={s => s.rotulo} compacta porPagina={15} ordemInicial={{ coluna: 'c', sentido: 'desc' }} colunas={[
-          { id: 's', titulo: 'Serviço', celula: s => <span className="principal">{d.nomeServico.get(s.rotulo)}</span>, ordem: s => d.nomeServico.get(s.rotulo) ?? s.rotulo },
+          { id: 's', titulo: 'Serviço', celula: s => <span className="a3-nome">{d.nomeServico.get(s.rotulo)}</span>, ordem: s => d.nomeServico.get(s.rotulo) ?? s.rotulo },
           { id: 'c', titulo: 'Contas', numero: true, celula: s => inteiro(s.contas), ordem: s => s.contas, rotuloCelular: 'Contas' },
           { id: 'a', titulo: 'Ativas 7 d', numero: true, celula: s => inteiro(s.ativos7d), ordem: s => s.ativos7d, rotuloCelular: 'Ativas' },
           { id: 'q', titulo: 'Questões/conta', numero: true, celula: s => inteiro(Math.round(s.respondidas / (s.contas || 1))), ordem: s => s.respondidas / (s.contas || 1), soLargo: true },
@@ -338,7 +338,7 @@ function Indicacoes() {
           <div style={{ gridColumn: 'span 8' }} className="a3-pilha">
             <Segmento rotulo="Situação dos convites" valor={filtro} aoMudar={definirFiltro} opcoes={[['todas', 'Todas'], ['confirmadas', 'Confirmadas'], ['pendentes', 'Pendentes']]} />
             <Tabela rotulo="Convites" linhas={vis} chave={l => l.id_convidado} compacta porPagina={10} colunas={[
-              { id: 'c', titulo: 'Quem chegou', celula: l => <span style={{ display: 'grid' }}><span className="principal">{l.convidado ?? l.email_convidado}</span><span className="secundario">{dataHoraAntiga(l.criado_em)}</span></span> },
+              { id: 'c', titulo: 'Quem chegou', celula: l => <span style={{ display: 'grid' }}><span className="a3-nome">{l.convidado ?? l.email_convidado}</span><span className="a3-sub">{dataHoraAntiga(l.criado_em)}</span></span> },
               { id: 'p', titulo: 'Indicado por', celula: l => l.padrinho ?? l.email_padrinho, rotuloCelular: 'Por' },
               { id: 'q', titulo: 'Questões', numero: true, celula: l => `${Number(l.respondidas)}/${META}`, ordem: l => Number(l.respondidas), rotuloCelular: 'Questões' },
               { id: 's', titulo: 'Situação', celula: l => l.confirmada_em ? <span style={{ color: 'var(--a3-ok)' }}>Confirmada · +{l.dias_padrinho}/+{l.dias_convidado} dias</span> : <span className="fraco">Pendente</span>, rotuloCelular: 'Situação' },

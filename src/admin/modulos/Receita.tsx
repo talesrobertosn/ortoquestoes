@@ -129,7 +129,7 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
           <div><dt>Conversão</dt><dd>{usuarios ? `${pct(porcentagem(d.pagantes, usuarios))} · ${d.pagantes} de ${inteiro(usuarios)} já pagaram` : '—'}</dd></div>
         </dl>
         <div style={{ marginTop: 16 }}><Tabela rotulo="Base por plano" compacta linhas={d.porPlano} chave={x => x.id} colunas={[
-          { id: 'p', titulo: 'Plano', celula: x => <span className="principal">{x.nome}</span> },
+          { id: 'p', titulo: 'Plano', celula: x => <span className="a3-nome">{x.nome}</span> },
           { id: 'v', titulo: 'Com acesso', numero: true, celula: x => inteiro(x.vigentes), rotuloCelular: 'Com acesso' },
           { id: 'r', titulo: 'Renovam', numero: true, celula: x => inteiro(x.renovam), rotuloCelular: 'Renovam' },
           { id: 'x', titulo: 'Pix', numero: true, celula: x => inteiro(x.pix), rotuloCelular: 'Pix' },
@@ -155,8 +155,8 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
     <div className="a3-grade a3-grade--2">
       <Painel titulo="Últimas cobranças" justo acoes={<a className="a3-botao a3-botao--fantasma a3-botao--pequeno" href={nav.link('cobrancas')} onClick={e => { e.preventDefault(); nav.ir('cobrancas') }}>Todas <Icone nome="seta" tamanho={14} /></a>}>
         <Tabela rotulo="Últimas cobranças" compacta porPagina={6} linhas={[...todas].reverse().slice(0, 6)} chave={c => `${c.id_usuario}-${c.em.getTime()}`} aoAbrir={c => nav.abrirPessoa(c.id_usuario, 'assinatura')} colunas={[
-          { id: 'q', titulo: 'Quem', celula: c => <span style={{ display: 'grid' }}><span className="principal">{nomeDe(c.id_usuario)}</span><span className="secundario">{data(c.em)} · {rotuloPlano(c.plano)} · {rotuloMeio(c.meio)}</span></span> },
-          { id: 'v', titulo: 'Valor', numero: true, celula: c => <>{reais(c.valor)}{c.estimada && <span className="secundario">reconstruída</span>}</>, rotuloCelular: 'Valor' },
+          { id: 'q', titulo: 'Quem', celula: c => <span style={{ display: 'grid' }}><span className="a3-nome">{nomeDe(c.id_usuario)}</span><span className="a3-sub">{data(c.em)} · {rotuloPlano(c.plano)} · {rotuloMeio(c.meio)}</span></span> },
+          { id: 'v', titulo: 'Valor', numero: true, celula: c => <>{reais(c.valor)}{c.estimada && <span className="a3-sub">reconstruída</span>}</>, rotuloCelular: 'Valor' },
         ]} vazio={<div style={{ padding: 20 }}><Estado compacto titulo="Nenhuma cobrança ainda" /></div>} />
       </Painel>
       <Painel titulo="Ações sensíveis" descricao="Tudo o que mexe em dinheiro ou acesso pede confirmação onde acontece; nada aqui muda preço, plano ou regra de pagamento.">
@@ -187,9 +187,9 @@ function MesAMes({ meses }: { meses: Mes[] }) {
       ['Mês', 'Receita', 'Novas no cartão', 'Novas no Pix', 'Receita de novas', 'Renovações automáticas', 'Receita de renovações', 'Cancelamentos', 'Reembolsos', 'Valor reembolsado', 'Pix encerrados', 'Cartões renovando no fim do mês', 'Churn (%)'],
       linhas.map((m, i) => [NOME_MES(m.chave), m.receita.toFixed(2).replace('.', ','), m.novasCartao, m.novasPix, m.receitaNovas.toFixed(2).replace('.', ','), m.renovacoes, m.receitaRenovacoes.toFixed(2).replace('.', ','), m.cancelamentos, m.reembolsos, m.valorReembolsado.toFixed(2).replace('.', ','), m.pixEncerrados, m.baseCartao, churn(m, i)]))}><Icone nome="baixar" tamanho={14} />CSV</button>}>
     <Tabela rotulo="Mês a mês" compacta porPagina={12} linhas={linhas.map((m, i) => ({ m, c: churn(m, i) }))} chave={x => x.m.chave} colunas={[
-      { id: 'm', titulo: 'Mês', celula: x => <span className="principal">{NOME_MES(x.m.chave)}</span> },
+      { id: 'm', titulo: 'Mês', celula: x => <span className="a3-nome">{NOME_MES(x.m.chave)}</span> },
       { id: 'r', titulo: 'Receita', numero: true, celula: x => <b>{reais(x.m.receita)}</b>, rotuloCelular: 'Receita' },
-      { id: 'n', titulo: 'Novas', numero: true, celula: x => <>{x.m.novasCartao + x.m.novasPix}<span className="secundario">{x.m.novasCartao} cartão · {x.m.novasPix} Pix</span></>, rotuloCelular: 'Novas' },
+      { id: 'n', titulo: 'Novas', numero: true, celula: x => <>{x.m.novasCartao + x.m.novasPix}<span className="a3-sub">{x.m.novasCartao} cartão · {x.m.novasPix} Pix</span></>, rotuloCelular: 'Novas' },
       { id: 'v', titulo: 'Renovações', numero: true, celula: x => inteiro(x.m.renovacoes), rotuloCelular: 'Renovações' },
       { id: 'c', titulo: 'Cancelamentos', numero: true, celula: x => inteiro(x.m.cancelamentos), rotuloCelular: 'Cancelamentos' },
       { id: 'e', titulo: 'Reembolsos', numero: true, soLargo: true, celula: x => x.m.reembolsos ? `${x.m.reembolsos} · ${reais(x.m.valorReembolsado)}` : '0' },
@@ -275,7 +275,7 @@ function Previsao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
       <Painel titulo="Cartões que renovam sozinhos" justo>
         <Tabela rotulo="Cartões que renovam sozinhos" compacta porPagina={8} linhas={d.recorrentes} chave={x => `${x.assinatura.id_usuario}-${x.proxima ?? ''}`}
           vazio={<div style={{ padding: 20 }}><Estado compacto titulo="Nenhum cartão renovando sozinho agora" /></div>} colunas={[
-            { id: 'a', titulo: 'Assinante', celula: x => <span className="principal">{x.assinatura.nome || x.assinatura.usuario || x.assinatura.id_usuario.slice(0, 8)}</span> },
+            { id: 'a', titulo: 'Assinante', celula: x => <span className="a3-nome">{x.assinatura.nome || x.assinatura.usuario || x.assinatura.id_usuario.slice(0, 8)}</span> },
             { id: 'p', titulo: 'Plano', celula: x => x.plano, rotuloCelular: 'Plano' },
             { id: 'm', titulo: 'Por mês', numero: true, celula: x => reais(x.mensal), ordem: x => x.mensal, rotuloCelular: 'Por mês' },
             { id: 'r', titulo: 'Próxima', numero: true, celula: x => x.proxima ? data(x.proxima) : 'sem data', ordem: x => x.proxima ?? '', rotuloCelular: 'Próxima' },

@@ -148,7 +148,7 @@
 .a3-cabeca { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px 24px; flex-wrap: wrap; padding: 18px 0 22px; }
 .a3-cabeca__texto { display: grid; gap: 8px; min-width: 0; max-width: 760px; }
 .a3-cabeca__texto p { color: var(--a3-cinza); font-size: 15px; }
-.a3-cabeca__acoes { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.a3-cabeca__acoes { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; max-width: 100%; }
 
 /* Celular */
 .a3-movel-topo, .a3-movel-barra, .a3-movel-partes, .a3-folha { display: none; }
@@ -256,7 +256,7 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 .a3-painel__corpo--justo { padding: 12px 0 0; }
 .a3-painel__pe { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 20px; border-top: 1px solid var(--a3-linha); color: var(--a3-cinza); font-size: 12.5px; }
 .a3-painel--plano { box-shadow: none; background: var(--a3-alt); }
-.a3-pilha { display: grid; gap: 16px; align-content: start; }
+.a3-pilha { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-content: start; }
 .a3-pilha--larga { gap: 24px; }
 .a3-grade { display: grid; gap: 16px; }
 .a3-grade--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -315,8 +315,8 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 
 /* Minigráfico */
 .a3-mini { display: block; width: 100%; height: 34px; overflow: visible; }
-.a3-mini path.linha { fill: none; stroke: var(--a3-tinta); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
-.a3-mini path.area { fill: color-mix(in srgb, var(--a3-tinta) 6%, transparent); }
+.a3-mini path.a3-mini__linha { fill: none; stroke: var(--a3-tinta); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.a3-mini path.a3-mini__area { fill: color-mix(in srgb, var(--a3-tinta) 6%, transparent); }
 
 /* ==========================================================================
    Gráficos
@@ -417,8 +417,8 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 .a3-tabela tbody tr:hover { background: var(--a3-alt); }
 .a3-tabela tbody tr[aria-selected="true"] { background: var(--a3-recuo); }
 .a3-tabela tr.clicavel { cursor: pointer; }
-.a3-tabela .principal { font-weight: 500; color: var(--a3-tinta); }
-.a3-tabela .secundario { display: block; color: var(--a3-cinza); font-size: 12px; }
+.a3-tabela .a3-nome { font-weight: 500; color: var(--a3-tinta); }
+.a3-tabela .a3-sub { display: block; color: var(--a3-cinza); font-size: 12px; }
 .a3-tabela .fraco { color: var(--a3-cinza); }
 .a3-tabela--compacta td { height: 40px; }
 .a3-tabela .riscada { text-decoration: line-through; color: var(--a3-cinza); }
@@ -473,7 +473,9 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 .a3-faixa--aviso { background: var(--a3-aviso-veu); color: color-mix(in srgb, var(--a3-aviso) 80%, var(--a3-tinta)); }
 .a3-faixa--aviso .a3-icone { color: var(--a3-aviso); }
 .a3-faixa--ok { background: var(--a3-ok-veu); color: var(--a3-ok); }
-.a3-faixa > div { flex: 1; display: grid; gap: 2px; }
+.a3-faixa { flex-wrap: wrap; }
+.a3-faixa > div { flex: 1 1 240px; min-width: 0; display: grid; gap: 2px; }
+@media (max-width: 560px) { .a3-faixa > :last-child:not(div):not(.a3-icone) { margin-left: 26px; } }
 @media (prefers-reduced-motion: reduce) { .a3-esqueleto, .a3-ponto--vivo { animation: none; } .a3 * { transition: none !important; } }
 
 /* ==========================================================================
@@ -546,5 +548,5 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 /* Celular: nos blocos da tabela, os números rotulados ficam lado a lado, não um por linha. */
 @media (max-width: 720px) {
   .a3-tabela--adapta td[data-rotulo] { display: inline-block; width: auto; margin: 2px 14px 0 0; }
-  .a3-tabela--adapta td[data-rotulo] .secundario { display: inline; margin-left: 4px; }
+  .a3-tabela--adapta td[data-rotulo] .a3-sub { display: inline; margin-left: 4px; }
 }

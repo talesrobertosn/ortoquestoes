@@ -41,8 +41,8 @@ export default function Explorador() {
       return <span className="a3-pessoa-cel">
         <span className="a3-avatar">{iniciais(u.nome ?? u.email)}{u.online && <i className="a3-ponto a3-ponto--vivo" />}</span>
         <span style={{ minWidth: 0, display: 'grid', gap: 3 }}>
-          <span className="principal">{nomeDe(u)}</span>
-          <span className="secundario">{u.email ?? 'conta sem e-mail'}</span>
+          <span className="a3-nome">{nomeDe(u)}</span>
+          <span className="a3-sub">{u.email ?? 'conta sem e-mail'}</span>
           <span style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
             {u.administrador && <Selo solido>Admin</Selo>}
             {u.plano_vigente && <Selo tom="ok">{PLANOS[u.plano_vigente] ?? u.plano_vigente}</Selo>}
@@ -53,9 +53,9 @@ export default function Explorador() {
     } },
     { id: 'perfil', titulo: 'Perfil', soLargo: true, celula: u => <span style={{ display: 'grid' }}>
       <span>{u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : <span className="fraco">etapa não informada</span>}</span>
-      <span className="secundario">{[u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ') || (u.provas ? u.provas.split(',').map(rotuloProva).join(', ') : '')}</span>
+      <span className="a3-sub">{[u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ') || (u.provas ? u.provas.split(',').map(rotuloProva).join(', ') : '')}</span>
     </span> },
-    { id: 'agora', titulo: 'Onde está', soLargo: true, celula: u => u.pagina ? <span style={{ display: 'grid' }}><span>{rotuloPagina(u.pagina)}</span><span className="secundario">{u.online ? 'agora' : haQuanto(u.pagina_em)}</span></span> : <span className="fraco">sem registro</span> },
+    { id: 'agora', titulo: 'Onde está', soLargo: true, celula: u => u.pagina ? <span style={{ display: 'grid' }}><span>{rotuloPagina(u.pagina)}</span><span className="a3-sub">{u.online ? 'agora' : haQuanto(u.pagina_em)}</span></span> : <span className="fraco">sem registro</span> },
     { id: 'hoje', titulo: 'Hoje', numero: true, rotuloCelular: 'Hoje', celula: u => u.respondidas_hoje ? <b>{inteiro(u.respondidas_hoje)}</b> : <span className="fraco">0</span>, ordem: u => u.respondidas_hoje ?? 0 },
     { id: 'semana', titulo: 'Semana', numero: true, rotuloCelular: 'Semana', celula: u => inteiro(u.respondidas_7d), ordem: u => u.respondidas_7d },
     { id: 'total', titulo: 'Total', numero: true, rotuloCelular: 'Total', celula: u => inteiro(u.respondidas), ordem: u => u.respondidas },

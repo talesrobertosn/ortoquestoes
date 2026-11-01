@@ -45,7 +45,7 @@ export function Mini({ valores }: { valores: number[] }) {
   const pts = valores.map((v, i) => [(i / (valores.length - 1)) * 100, 32 - (v / max) * 28] as const)
   const d = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(2)} ${y.toFixed(2)}`).join(' ')
   return <svg className="a3-mini" viewBox="0 0 100 34" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-    <path className="area" d={`${d} L100 34 L0 34 Z`} /><path className="linha" d={d} />
+    <path className="a3-mini__area" d={`${d} L100 34 L0 34 Z`} /><path className="a3-mini__linha" d={d} />
   </svg>
 }
 

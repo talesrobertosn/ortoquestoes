@@ -28,7 +28,7 @@ function Faz({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao'> }) {
 function Pessoa({ u, detalhe }: { u: LinhaUsuario; detalhe?: ReactNode }) {
   return <span className="a3-pessoa-cel">
     <span className="a3-avatar">{iniciais(u.nome ?? u.email)}{u.online && <i className="a3-ponto a3-ponto--vivo" />}</span>
-    <span style={{ minWidth: 0 }}><span className="principal">{nomeDe(u)}</span>{detalhe !== undefined ? <span className="secundario">{detalhe}</span> : u.email && <span className="secundario">{u.email}</span>}</span>
+    <span style={{ minWidth: 0 }}><span className="a3-nome">{nomeDe(u)}</span>{detalhe !== undefined ? <span className="a3-sub">{detalhe}</span> : u.email && <span className="a3-sub">{u.email}</span>}</span>
   </span>
 }
 
@@ -180,7 +180,7 @@ function Listas({ quadro }: { quadro: ReturnType<typeof quadroDoDia<LinhaUsuario
 
   const colEstudo: Array<Coluna<FeitoHoje<LinhaUsuario>>> = [
     { id: 'p', titulo: 'Pessoa', celula: f => <Pessoa u={f.pessoa} />, ordem: f => nomeDe(f.pessoa) },
-    { id: 'q', titulo: 'Questões hoje', numero: true, celula: f => <>{inteiro(f.questoes)}{f.tentativas > f.questoes && <span className="secundario">{f.tentativas} tentativas</span>}</>, ordem: f => f.questoes, rotuloCelular: 'Questões hoje' },
+    { id: 'q', titulo: 'Questões hoje', numero: true, celula: f => <>{inteiro(f.questoes)}{f.tentativas > f.questoes && <span className="a3-sub">{f.tentativas} tentativas</span>}</>, ordem: f => f.questoes, rotuloCelular: 'Questões hoje' },
     { id: 'o', titulo: 'Também', celula: f => [f.flashcards ? `flashcards${p.sinais.get(f.pessoa.id_usuario)?.cripta_andar ? ` (andar ${p.sinais.get(f.pessoa.id_usuario)!.cripta_andar})` : ''}` : null, f.resumo ? `resumo “${tituloResumo(f.resumo.capitulo)}”${f.resumo.extra ? ` ${f.resumo.extra}` : ''}` : null].filter(Boolean).join(' · ') || <span className="fraco">só questões</span>, rotuloCelular: 'Também' },
     { id: 'a', titulo: 'Acerto geral', numero: true, soLargo: true, celula: f => { const a = acertoReal(f.pessoa) ?? acertoAposRevisao(f.pessoa); return a === null ? '—' : `${a}%` }, ordem: f => acertoReal(f.pessoa) ?? acertoAposRevisao(f.pessoa) },
     { id: 'e', titulo: 'Última atividade', numero: true, celula: f => f.em ? horario(f.em) : '—', ordem: f => f.em, rotuloCelular: 'Última' },
@@ -199,7 +199,7 @@ function Listas({ quadro }: { quadro: ReturnType<typeof quadroDoDia<LinhaUsuario
         colunas={[{ id: 'p', titulo: 'Pessoa', celula: x => <Pessoa u={x.pessoa} />, ordem: x => nomeDe(x.pessoa) }, { id: 'f', titulo: 'Página', celula: x => <Faz u={x.pessoa} />, rotuloCelular: 'Página' },
           { id: 't', titulo: 'No total', numero: true, celula: x => inteiro(x.pessoa.respondidas), ordem: x => x.pessoa.respondidas, soLargo: true }, { id: 'e', titulo: 'Visto às', numero: true, celula: x => x.em ? horario(x.em) : '—', ordem: x => x.em, rotuloCelular: 'Visto às' }, { id: 'x', titulo: '', celula: x => acoes(x.pessoa), soLargo: true }]} />}
       {lista === 'novos' && <Tabela rotulo="Recém-cadastrados" linhas={quadro.recemCadastrados.filter(u => combina([u.nome, u.email], t))} chave={u => u.id_usuario} aoAbrir={abrir} vazio={vazio('Ninguém se cadastrou nas últimas duas semanas.')}
-        colunas={colPessoa([{ id: 'c', titulo: 'Chegou', celula: u => <>{diaSP(u.criado_em) === quadro.hoje ? `hoje, ${horario(u.criado_em)}` : haQuanto(u.criado_em)}{u.origem && <span className="secundario">de {rotuloOrigem(u.origem)}</span>}</>, ordem: u => u.criado_em, rotuloCelular: 'Chegou' },
+        colunas={colPessoa([{ id: 'c', titulo: 'Chegou', celula: u => <>{diaSP(u.criado_em) === quadro.hoje ? `hoje, ${horario(u.criado_em)}` : haQuanto(u.criado_em)}{u.origem && <span className="a3-sub">de {rotuloOrigem(u.origem)}</span>}</>, ordem: u => u.criado_em, rotuloCelular: 'Chegou' },
           { id: 's', titulo: 'Situação', celula: u => u.respondidas > 0 ? <Situacao tom="ok">já fez {inteiro(u.respondidas)} {u.respondidas === 1 ? 'questão' : 'questões'}</Situacao> : novoParado(u) ? <Situacao tom="erro">não começou e parou</Situacao> : <Situacao tom="neutro">ainda não começou</Situacao>, ordem: u => u.respondidas, rotuloCelular: 'Situação' }])} />}
       {lista === 'semana' && <Tabela rotulo="Mais ativos na semana" linhas={quadro.maisAtivosSemana.filter(u => combina([u.nome, u.email], t))} chave={u => u.id_usuario} aoAbrir={abrir} vazio={vazio('Ninguém respondeu questões nos últimos 7 dias.')}
         colunas={colPessoa([{ id: 's', titulo: 'Na semana', numero: true, celula: u => inteiro(u.respondidas_7d), ordem: u => u.respondidas_7d, rotuloCelular: 'Na semana' },
