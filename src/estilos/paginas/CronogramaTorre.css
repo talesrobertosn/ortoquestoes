@@ -175,100 +175,47 @@
 .cr-form.cr--torre .pe-form__mais, .cr-form.cr--torre .pe-data-atalho { border-radius: var(--ct-raio-ctl); }
 .cr.cr--torre .cp-conta__linha { border-radius: 12px; }
 
-/* ══ O mundo continua embaixo (Tales, 31/10/2026: "o design de baixo não tem nada a ver com o de cima") ══
-   A página inteira fica na praça da torre: o chão de pedra pintado (scripts/gerar_cena_cronograma.py chao),
-   a luz quente que desce da torre e das lanternas, o luar frio do outro lado e um feixe lento atravessando.
-   Os blocos viram vidro escuro com filete dourado, como o vidro do topo. As cores do site são redefinidas aqui
-   dentro (o mundo é noturno nos dois temas, como a cena), então todo componente herda o mesmo vidro. */
+/* ══ A calçada da praça embaixo do topo (Tales, 31/10/2026) ══
+   A página inteira fica sobre o chão de pedra pintado (scripts/gerar_cena_cronograma.py chao), iluminado como na
+   cena: poças de luz quente da torre e das lanternas, um feixe de sol lento atravessando e as caixas projetando
+   sombra macia nas pedras. As caixas de texto continuam brancas (tema claro) e com as cores de sempre, como na
+   página inicial: a luz e a cor forte ficam no chão e na arte. */
 .cr--torre {
-  --porcelana: rgba(9, 14, 16, 0.55); --fundo: var(--porcelana);
-  --superficie: rgba(15, 21, 26, 0.84); --superficie-2: rgba(255, 244, 220, 0.05);
-  --traco: rgba(232, 206, 150, 0.16); --traco-forte: rgba(232, 206, 150, 0.32);
-  --grafite: #f4ecda; --texto: #f4ecda; --ardosia: #b8b09c; --texto-2: #b8b09c;
-  --verdete: #5cc4b4; --verdete-tinta: #7fd6c8; --verdete-veu: rgba(92, 196, 180, 0.14); --sobre-destaque: #0b1315;
-  --acerto: #4fbe85; --acerto-veu: rgba(79, 190, 133, 0.14); --acerto-texto: #6fd3a0; --sobre-acerto: #0b1315;
-  --erro: #e8776c; --erro-veu: rgba(232, 119, 108, 0.14); --erro-texto: #f0958c; --sobre-erro: #0b1315;
-  --aviso: #e0b15c; --aviso-veu: rgba(224, 177, 92, 0.14); --aviso-texto: #ecc47a;
-  --ouro: #f0c46a; --ouro-veu: rgba(240, 196, 106, 0.12); --ouro-texto: #f0c46a; --foco: #ffe3a3;
-  --px-borda: rgba(232, 206, 150, 0.24); --px-sombra: rgba(0, 0, 0, 0.5);
-  --sombra: none; --sombra-media: 0 22px 44px -24px rgba(0, 0, 0, 0.9);
-  --cr-cartao-borda: 1px solid rgba(232, 206, 150, 0.2);
-  --cr-cartao-sombra: inset 0 1px 0 rgba(255, 240, 210, 0.07), 0 20px 40px -24px rgba(0, 0, 0, 0.95);
-  --ct-vidro: linear-gradient(180deg, rgba(255, 236, 200, 0.055), transparent 38%), rgba(13, 18, 24, 0.82);
-  color-scheme: dark; color: var(--texto);
-  position: relative; isolation: isolate; padding: clamp(0.6rem, 1.8vw, 1.25rem); border-radius: 26px;
+  position: relative; isolation: isolate; padding: clamp(0.6rem, 1.8vw, 1.25rem); border-radius: 26px; overflow: hidden;
   background:
-    radial-gradient(55rem 26rem at 78% 0%, rgba(255, 176, 92, 0.2), transparent 70%),
-    radial-gradient(34rem 30rem at 0% 38%, rgba(255, 168, 80, 0.1), transparent 72%),
-    radial-gradient(40rem 34rem at 100% 70%, rgba(120, 146, 255, 0.09), transparent 72%),
-    radial-gradient(30rem 26rem at 12% 96%, rgba(255, 168, 80, 0.08), transparent 72%),
-    linear-gradient(180deg, rgba(8, 12, 14, 0.15), rgba(8, 12, 14, 0.6)),
-    var(--ct-chao, none) 0 0 / 360px repeat, #0b1315;
-  image-rendering: pixelated;
-  box-shadow: inset 0 0 0 1px rgba(232, 206, 150, 0.14), inset 0 0 90px rgba(0, 0, 0, 0.55), 0 24px 50px -30px rgba(0, 0, 0, 0.7);
-  overflow: hidden;
+    radial-gradient(60rem 30rem at 80% 0%, rgba(255, 178, 88, 0.42), transparent 70%),
+    radial-gradient(36rem 28rem at 0% 34%, rgba(255, 160, 70, 0.32), transparent 70%),
+    radial-gradient(38rem 30rem at 100% 62%, rgba(255, 170, 80, 0.3), transparent 70%),
+    radial-gradient(34rem 28rem at 8% 92%, rgba(255, 150, 66, 0.28), transparent 72%),
+    radial-gradient(70rem 40rem at 50% 50%, rgba(255, 196, 120, 0.12), transparent 75%),
+    linear-gradient(180deg, rgba(40, 22, 10, 0.05), rgba(10, 8, 6, 0.42)),
+    var(--ct-chao, none) 0 0 / 360px repeat, #1a1410;
+  background-blend-mode: screen, screen, screen, screen, screen, normal, normal, normal;
+  box-shadow: inset 0 0 0 1px rgba(255, 210, 150, 0.16), inset 0 0 110px rgba(14, 8, 4, 0.6), 0 24px 50px -30px rgba(0, 0, 0, 0.6);
 }
-.cr--torre > * { image-rendering: auto; }
-/* O feixe de luz: uma faixa morna em diagonal que atravessa a praça devagar (como o sol entre as casas). */
-.cr--torre::before { content: ""; position: absolute; z-index: -1; inset: -20% -40%; pointer-events: none;
-  background: linear-gradient(105deg, transparent 42%, rgba(255, 226, 170, 0.07) 48%, rgba(255, 226, 170, 0.11) 50%, rgba(255, 226, 170, 0.07) 52%, transparent 58%);
-  animation: ct-feixe 28s ease-in-out infinite alternate; }
-@keyframes ct-feixe { from { transform: translateX(-18%); } to { transform: translateX(18%); } }
-/* Brasa de lanterna nas bordas da praça, tremulando de leve. */
-.cr--torre::after { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none;
-  background: radial-gradient(14rem 14rem at 2% 62%, rgba(255, 170, 80, 0.16), transparent 70%), radial-gradient(14rem 14rem at 98% 30%, rgba(255, 170, 80, 0.14), transparent 70%);
+/* O feixe de sol: uma faixa morna em diagonal, com a beira mais acesa, que atravessa a calçada devagar. */
+.cr--torre::before { content: ""; position: absolute; z-index: -1; inset: -20% -40%; pointer-events: none; mix-blend-mode: screen;
+  background: linear-gradient(105deg, transparent 38%, rgba(255, 214, 150, 0.1) 45%, rgba(255, 220, 160, 0.22) 50%, rgba(255, 214, 150, 0.1) 55%, transparent 62%);
+  animation: ct-feixe 30s ease-in-out infinite alternate; }
+@keyframes ct-feixe { from { transform: translateX(-16%); } to { transform: translateX(16%); } }
+/* As lanternas tremulam: as poças de luz das bordas respiram de leve. */
+.cr--torre::after { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none; mix-blend-mode: screen;
+  background: radial-gradient(16rem 16rem at 1% 58%, rgba(255, 150, 60, 0.32), transparent 70%), radial-gradient(16rem 16rem at 99% 28%, rgba(255, 150, 60, 0.28), transparent 70%),
+    radial-gradient(14rem 14rem at 97% 88%, rgba(255, 150, 60, 0.24), transparent 70%);
   animation: ct-brasa 4.6s ease-in-out infinite; }
-@keyframes ct-brasa { 0%, 100% { opacity: 0.85; } 35% { opacity: 1; } 60% { opacity: 0.7; } }
+@keyframes ct-brasa { 0%, 100% { opacity: 0.85; } 35% { opacity: 1; } 60% { opacity: 0.68; } 80% { opacity: 0.95; } }
 @media (prefers-reduced-motion: reduce) { .cr--torre::before, .cr--torre::after { animation: none; } }
 
-/* Vidro em todos os blocos: fundo escuro translúcido, luz de cima, filete dourado e desfoque do chão. */
+/* As caixas de sempre, pousadas na calçada: a sombra cai nas pedras (contato escuro e sombra larga e quente). */
 .cr--torre .cc--cronograma.cc--embutido .cc-janela, .cr.cr--torre .cp-hoje, .cr.cr--torre .cp-amanha, .cr.cr--torre .cp-semana,
-.cr.cr--torre .bib-caixa, .cr.cr--torre .cp-recolhido, .cr.cr--torre .cp-indo > div, .cr.cr--torre .pe-aviso, .cr--torre .cc--cronograma .cc-detalhe,
-.cr-form.cr--torre .pe-form, .cr-form.cr--torre .cartao {
-  background: var(--ct-vidro); border: 1px solid rgba(232, 206, 150, 0.22);
-  box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.22), inset 0 0 0 5px rgba(232, 206, 150, 0.07), 0 22px 44px -26px rgba(0, 0, 0, 0.95);
-  -webkit-backdrop-filter: blur(8px) saturate(1.15); backdrop-filter: blur(8px) saturate(1.15);
+.cr.cr--torre .bib-caixa, .cr.cr--torre .cp-recolhido, .cr.cr--torre .cp-indo > div, .cr.cr--torre .pe-aviso, .cr.cr--torre .cp-conta__linha,
+.cr-form.cr--torre .pe-form, .cr-form.cr--torre .pe-montar > .cartao, .cr-form.cr--torre .pe-montar > section {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 3px rgba(20, 10, 4, 0.35), 0 22px 40px -18px rgba(20, 10, 4, 0.75);
 }
-.cr--torre .cc--cronograma.cc--embutido .cc-topo { background: transparent; }
-.cr--torre .cc--cronograma .cc-detalhe { border-top: 3px solid var(--cor-area, var(--ouro)); }
-/* Losangos dourados nos cantos dos dois blocos principais (calendário e Hoje), como no vidro do topo. */
-.cr--torre .cc--cronograma.cc--embutido, .cr.cr--torre .cp-hoje { position: relative; }
-.cr--torre .cc--cronograma.cc--embutido::before, .cr--torre .cc--cronograma.cc--embutido::after,
-.cr.cr--torre .cp-hoje::before, .cr.cr--torre .cp-hoje::after {
-  content: ""; position: absolute; z-index: 2; width: 8px; height: 8px; background: var(--ouro); transform: rotate(45deg); box-shadow: 0 0 10px rgba(240, 196, 106, 0.7); pointer-events: none; }
-.cr--torre .cc--cronograma.cc--embutido::before, .cr.cr--torre .cp-hoje::before { top: 10px; left: 10px; }
-.cr--torre .cc--cronograma.cc--embutido::after, .cr.cr--torre .cp-hoje::after { bottom: 10px; right: 10px; }
 
-/* Rótulos de seção como no topo: caixa alta dourada, sem caixa de cor; títulos em tinta clara. */
-.cr--torre .cc--cronograma.cc--embutido .cc-topo__selo { padding: 0; background: none; color: var(--ouro); font-family: var(--fonte-texto); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
-.cr.cr--torre .cp-rotulo { color: var(--texto); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
-.cr.cr--torre .cp-rotulo b { color: var(--texto-2); }
-.cr--torre .cc--cronograma.cc--embutido .cc-topo h2 { color: var(--texto); text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5); }
-
-/* Os dias da semana: pedras de vidro; hoje aceso em ouro, como uma janela. */
-.cr--torre .cc--cronograma .ccs-dia > button, .cr--torre .cc--cronograma .cc-dia > button { background: rgba(255, 244, 220, 0.045); border-color: rgba(232, 206, 150, 0.18); color: var(--texto); }
-.cr--torre .cc--cronograma .ccs-dia--hoje > button, .cr--torre .cc--cronograma .cc-dia--hoje > button {
-  background: linear-gradient(180deg, rgba(255, 210, 130, 0.2), rgba(255, 190, 100, 0.07)); border-color: var(--ouro);
-  box-shadow: 0 0 0 1px var(--ouro), 0 0 26px -6px rgba(255, 196, 106, 0.75); }
-.cr--torre .cc--cronograma .cc-nav__botao, .cr--torre .cc--cronograma .cc-nav__hoje { background: rgba(255, 244, 220, 0.05); color: var(--texto); }
-
-/* Botões: o principal em ouro aceso (como no topo), os outros em contorno. */
-.cr.cr--torre .cp-botao { background: linear-gradient(180deg, #ffe2a0, #f0c46a 55%, #d9a446); color: #1b1208; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 10px 26px -10px rgba(255, 196, 106, 0.8); }
-.cr.cr--torre .cp-botao small { color: rgba(27, 18, 8, 0.8); }
-.cr.cr--torre .cp-botao:hover { filter: brightness(1.06); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 14px 30px -10px rgba(255, 196, 106, 0.9); }
-.cr--torre .cc--cronograma .cc-detalhe .botao--principal, .cr--torre .cc--cronograma .cc-detalhe .cp-botao { color: #1b1208; }
-
-/* Barras de progresso finas e acesas. */
-.cr.cr--torre .cp-lista__barra, .cr.cr--torre .cp-indo__medidor { background: rgba(255, 255, 255, 0.1); box-shadow: none; border-radius: 999px; overflow: hidden; }
-.cr.cr--torre .cp-indo__medidor > span, .cr.cr--torre .cp-lista__barra span { border-radius: 999px; box-shadow: 0 0 10px rgba(92, 196, 180, 0.6); }
-
-/* Números de "Como você está indo" como os da página inicial: fonte pixel grande, luz suave. */
-.cr.cr--torre .cp-indo b { font-family: var(--fonte-pixel-titulo); font-size: 2.3rem; font-weight: 400; letter-spacing: 0; color: var(--verdete); text-shadow: 0 0 18px rgba(92, 196, 180, 0.35); }
-.cr.cr--torre .cp-indo small { color: var(--ouro); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }
-.cr.cr--torre .cp-indo__ritmo--atras b { color: #ff9a62; text-shadow: 0 0 18px rgba(255, 140, 80, 0.35); }
-
-/* A troca de cronograma e o aviso de sincronia, que ficam acima, já em tinta clara sobre o chão. */
-.cr--torre .indicador-sincronia, .cr--torre .pe-sincronia { color: var(--texto-2); }
-
-/* Campos do formulário no vidro. */
-.cr-form.cr--torre .entrada, .cr-form.cr--torre select, .cr-form.cr--torre input { background: rgba(255, 244, 220, 0.06); color: var(--texto); border-color: rgba(232, 206, 150, 0.25); }
+/* O que fica escrito direto na calçada (os títulos das seções, notas e links): tinta clara com sombra. */
+.cr.cr--torre .cp-col > div > .cp-bloco > .cp-rotulo, .cr.cr--torre .cp-col .cp-rotulo, .cr.cr--torre > .cp-rotulo { color: #fff6e6; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.6); }
+.cr.cr--torre .cp-col .cp-rotulo b, .cr.cr--torre .bib-caixa__todos { color: #ffd98e; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
+.cr.cr--torre .cp-indo__nota, .cr.cr--torre .cp-col > div > .cp-bloco > p:not(.cp-rotulo) { color: rgba(255, 246, 230, 0.82); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
+.cr.cr--torre .cr-rodape__link { color: #ffd98e; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
+.cr.cr--torre > :is(p, div):not([class*="cp-"]):not([class*="cc"]) { color: rgba(255, 246, 230, 0.85); }

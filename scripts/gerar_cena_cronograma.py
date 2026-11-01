@@ -924,13 +924,13 @@ def chao_da_praca() -> None:
     ry = ys - cyp; ry = (ry + T / 2) % T - T / 2
     luz = np.clip(-(rx * 0.6 + ry * 0.8) / 7, -1, 1)
     n = v.ruido(911, 2, 2, T, T)
-    base = 0.17 + tom * 0.09 + luz * 0.05 * np.clip(borda / 3, 0, 1) + (n - 0.5) * 0.04
-    pedra = np.stack([base * 0.92, base * 0.98, base * 1.06], 2)
-    pedra = pedra + (np.clip(1.4 - borda, 0, 1) * (luz > 0.25))[:, :, None] * 0.07  # aresta clara
+    base = 0.2 + tom * 0.1 + luz * 0.06 * np.clip(borda / 3, 0, 1) + (n - 0.5) * 0.04
+    pedra = np.stack([base * 1.1, base * 0.97, base * 0.84], 2)  # pedra morna, de arenito gasto
+    pedra = pedra + (np.clip(1.4 - borda, 0, 1) * (luz > 0.25))[:, :, None] * np.array([0.12, 0.085, 0.04], np.float32)  # aresta acesa, âmbar
     rejunte = borda < 1.25
     musgo = (v.ruido(913, 5, 5, T, T) > 0.58) & rejunte
-    cor = np.where(rejunte[:, :, None], np.array([0.07, 0.08, 0.085], np.float32), pedra)
-    cor = np.where(musgo[:, :, None], np.array([0.12, 0.17, 0.1], np.float32), cor)
+    cor = np.where(rejunte[:, :, None], np.array([0.075, 0.06, 0.045], np.float32), pedra)
+    cor = np.where(musgo[:, :, None], np.array([0.13, 0.16, 0.08], np.float32), cor)
     lasca = (n > 0.82) & (borda > 2.5) & (tom > 0.6)
     cor = np.where(lasca[:, :, None], cor * 1.35, cor)
     img = Image.fromarray((np.clip(cor, 0, 1) * 255).astype(np.uint8)).resize((T * ESC, T * ESC), Image.NEAREST)

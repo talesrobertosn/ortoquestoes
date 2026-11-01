@@ -187,9 +187,9 @@ Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoque
     Arte: `<python com numpy e pillow> scripts/gerar_cena_cronograma.py [manha|tarde|noite]` gera
     `public/pixel/cronograma/torre-tempo-<hora>(-960).webp` e `torre-tempo-sino-<hora>.png`. O relógio não tem letras nem
     algarismos e não marca a prova: os dias que faltam são o número do HTML.
-55. [x] O mundo continua embaixo (Tales, 31/10/2026: "o design de baixo não tem nada a ver com o de cima"): a página
-    inteira do cronograma de ortopedia (e o formulário) fica sobre o chão de pedra da praça
-    (`scripts/gerar_cena_cronograma.py chao` → `torre-tempo-chao.webp`, ladrilho sem emenda), com a luz quente da torre e
-    das lanternas, o luar do outro lado e um feixe lento atravessando (desligado com "menos animação"). Os blocos são
-    vidro escuro com filete dourado; o calendário e o Hoje ganharam os losangos do vidro do topo; o botão do dia é ouro
-    aceso. As cores do site são redefinidas só dentro de `.cr--torre` (mundo noturno nos dois temas, como a cena).
+55. [x] A calçada da praça embaixo do topo (Tales, 31/10/2026): a página inteira do cronograma de ortopedia (e o
+    formulário) fica sobre o chão de pedra pintado (`scripts/gerar_cena_cronograma.py chao` → `torre-tempo-chao.webp`,
+    ladrilho sem emenda, pedra morna com o chanfro aceso), com poças de luz quente da torre e das lanternas, um feixe de
+    sol lento e as caixas projetando sombra nas pedras (animações desligadas com "menos animação"). As caixas de texto
+    continuam brancas no tema claro (e escuras no escuro), como na página inicial; só os títulos que ficam direto na
+    calçada ganharam tinta clara com sombra. Tudo dentro de `.cr--torre`.
