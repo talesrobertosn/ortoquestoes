@@ -120,14 +120,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0009": {
+  "conceito": "A pergunta junta três dados epidemiológicos numa só alternativa: o tendão, o sexo e o lado. Basta um errado para derrubar a opção.\n\n**O que o Campbell 15 diz** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2174). A tendinite calcária começa depois dos **30 anos**, atinge cerca de **10%** da população, sobretudo **mulheres de 30 a 60 anos**, e é **bilateral em só 10%**; a maioria é assintomática. O local mais comum é **dentro do supraespinal**, a **1,5 a 2 cm** da inserção na tuberosidade maior.\n\n**Montando a resposta.** Supraespinal (o tendão), mulheres (o sexo) e unilateral (90% dos casos). As outras combinações erram pelo menos um item: o infraespinal não é o mais acometido, os homens não predominam, e a bilateralidade é a exceção.\n\n**Por que o supraespinal.** A teoria clássica falava de hipovascularização na zona crítica de CODMAN, perto da inserção, mas estudos com boa anastomose vascular a contestaram; o livro diz que a causa é desconhecida. O depósito fica um pouco medial à inserção, não colado ao osso.\n\nA epidemiologia está na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**D) supraespinal, em mulheres e unilateralmente.** Supraespinal é o tendão mais acometido, as mulheres de 30 a 60 anos predominam, e só 10% são bilaterais.",
   "incorretas": {
-   "A": "**Tendão certo, perfil errado.** O supraespinal é mesmo o mais acometido, mas a doença predomina em mulheres e costuma ser unilateral; o acometimento bilateral existe, porém é minoria.",
-   "B": "**O infraespinal é o segundo.** Ele é a segunda sede em frequência, bem atrás do supraespinal. E o predomínio é feminino, não masculino.",
-   "C": "**Só o sexo está certo.** A doença predomina em mulheres, mas o tendão típico é o supraespinal e a apresentação habitual é unilateral."
+   "A": "**Supraespinal, em homens e bilateralmente** acerta o tendão, mas erra o sexo e o lado.",
+   "B": "**Infraespinal, em homens e unilateralmente** erra o tendão e o sexo.",
+   "C": "**Infraespinal, em mulheres e bilateralmente** acerta só o sexo."
   },
-  "conceito": "**O depósito e quem ele acomete.** A tendinite calcária é o depósito de cristais de **hidroxiapatita** dentro do tendão do manguito rotador, sem relação com degeneração ou com idade avançada. O tendão mais acometido é o **supraespinal**, em cerca de 80% dos casos, tipicamente a 1,5 a 2 cm da sua inserção, seguido de longe pelo infraespinal e pelo subescapular. Predomina em **mulheres** de 30 a 50 anos, é **unilateral** na maioria (o acometimento bilateral aparece em uma parcela menor, cerca de 10 a 20%) e tem associação com diabetes e com doenças da tireoide.\n\n**As fases de Uhthoff.** A doença é um ciclo que, na maioria, se resolve sozinho. Na **fase formativa**, o depósito é denso, bem delimitado e homogêneo na radiografia, com dor crônica moderada. Pode seguir-se uma **fase de repouso**, sem sintomas. Na **fase reabsortiva**, o depósito vira uma pasta com aspecto de creme dental, fica mal delimitado e nebuloso na radiografia, e a reação inflamatória com aumento da pressão dentro do tendão produz a **dor mais intensa** da patologia do ombro, aguda e incapacitante, que imita artrite séptica. Depois o tendão se remodela.\n\n**O paradoxo que cai na prova.** A fase mais dolorosa é a de **resolução**: o corpo está absorvendo o cálcio. Por isso o tratamento é sintomático, e os procedimentos funcionam melhor justamente aí, quando o depósito está mole: a **barbotagem** (punção e lavagem guiada por ultrassom) aspira o material, e as ondas de choque ajudam a fragmentar depósitos formativos.\n\n**Quando operar.** A cirurgia artroscópica fica para a dor persistente após seis meses a um ano de tratamento conservador bem feito. Remove-se o depósito com uma incisão longitudinal no tendão; não é preciso retirar todo o cálcio para aliviar a dor, e a acromioplastia associada não mostrou benefício consistente.\n\n**Na prova:** tendinite calcária é **supraespinal, mulher de 30 a 50 anos, unilateral**; a fase reabsortiva é a mais dolorosa e a de melhor resposta à barbotagem.",
-  "correta": "**Supraespinal, em mulheres e unilateralmente.** É o perfil típico: o supraespinal responde por cerca de 80% dos depósitos, o predomínio é feminino entre 30 e 50 anos e a maioria dos casos acomete um ombro só.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2174",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0010": {
@@ -701,14 +705,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0038": {
+  "conceito": "SARKAR e UHTHOFF numeraram as fases da tendinite calcária, e a banca pergunta o que acontece na fase II. A resposta é o próprio nome da fase.\n\n**A sequência** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2175). A fase **I**, de **pré-calcificação**, é a **metaplasia fibrocartilaginosa**: o tendão, num ponto, troca o tecido tendíneo por fibrocartilagem, sem dor. A fase **II**, de **calcificação**, é quando o **cálcio se deposita** nesse tecido metaplásico; ela tem o momento formativo (depósito seco como giz), o de repouso e o de reabsorção, este muito doloroso. A fase **III**, de **pós-calcificação**, é a reparação: o **tecido de granulação** amadurece em colágeno alinhado.\n\n**Como ler as alternativas.** Cada uma descreve uma fase diferente: a metaplasia é da I; a deposição de cálcio é da II; o tecido de granulação maduro é da III; a migração de células inflamatórias aparece na reabsorção, mas não define a fase. A alternativa certa é a que descreve o depósito do cálcio dentro das células e vesículas da matriz, o começo da fase de calcificação.\n\n**Onde e em quem.** Supraespinal, a 1,5 a 2 cm da inserção; mulheres de 30 a 60 anos; 10% bilaterais.\n\nAs fases estão na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**D) deposição de cálcio nas vesículas celulares.** É o que define a fase II, de calcificação, que vem depois da metaplasia fibrocartilaginosa.",
   "incorretas": {
-   "A": "**É a fase I.** A metaplasia fibrocartilaginosa, em que tenócitos viram condrócitos, é a fase pré-calcífica, que prepara o terreno para o depósito.",
-   "B": "**É a fase III.** O tecido de granulação que remodela o tendão depois que o cálcio foi removido caracteriza a fase pós-calcífica.",
-   "C": "**É o fim da fase II, não a sua definição.** Macrófagos e células gigantes chegam no momento reabsortivo, quando o depósito está sendo removido. A fase II, porém, é definida pela deposição do cálcio."
+   "A": "**Metaplasia fibrocartilaginosa** é a fase I, de pré-calcificação.",
+   "B": "**Tecido de granulação maduro** é a fase III, de pós-calcificação, quando o tendão se reconstitui.",
+   "C": "**Migração de células inflamatórias** acontece na reabsorção, mas não define a fase II, que é a do depósito."
   },
-  "conceito": "**Um ciclo, não uma degeneração.** Sarkar e Uhthoff mostraram que a tendinite calcária não é desgaste do tendão, mas um processo ativo mediado por células, que em geral se resolve sozinho. Eles o dividiram em **três fases**, e entender a sequência explica por que a dor não acompanha o tamanho do depósito.\n\n**Fase I, pré-calcífica.** Uma área do tendão, geralmente 1,5 a 2 cm da inserção do supraespinal, sofre **metaplasia fibrocartilaginosa**: os tenócitos passam a se comportar como condrócitos. A hipóxia local é a explicação mais aceita. É uma fase silenciosa, sem dor.\n\n**Fase II, calcífica, em três momentos.** No **formativo**, as células metaplásicas liberam **vesículas da matriz** onde se **deposita o cálcio**, na forma de cristais de hidroxiapatita, e o depósito fica duro, com aspecto de giz, denso e bem delimitado na radiografia. No **de repouso**, a atividade celular cessa e o depósito pode ficar anos sem sintomas, descoberto por acaso. No **reabsortivo**, chegam vasos, **macrófagos** e células gigantes multinucleadas que fagocitam o cálcio; o depósito amolece, fica com aspecto de pasta de dente e bordas borradas na radiografia, e a hiperemia com aumento de pressão dentro do tendão causa a **dor mais intensa** da patologia do ombro, que pode imitar artrite séptica e às vezes extravasa para a bursa.\n\n**Fase III, pós-calcífica.** Tecido de **granulação** e fibroblastos preenchem o espaço deixado pelo cálcio, e o colágeno se reorganiza, devolvendo ao tendão uma arquitetura próxima do normal.\n\n**O que isso muda no tratamento.** A fase mais dolorosa é a de **resolução**, então o tratamento é sintomático e o prognóstico é bom. É também quando o depósito, mole, pode ser **aspirado** por barbotagem guiada por ultrassom. Depósitos formativos, duros, respondem melhor às ondas de choque; a cirurgia artroscópica fica para a dor que persiste por muitos meses.\n\n**Na prova:** fase I de Uhthoff é **metaplasia fibrocartilaginosa**; fase II é a **deposição de cálcio em vesículas da matriz** (formativa, repouso, reabsortiva); fase III é **granulação e remodelação**.",
-  "correta": "**Deposição de cálcio nas vesículas celulares.** É o que define a fase II, calcífica, em seu momento formativo: células metaplásicas produzem vesículas da matriz onde se depositam cristais de hidroxiapatita, formando o depósito denso e bem delimitado.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2175",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0039": {
@@ -1008,14 +1016,19 @@
   "geradoEm": "2026-10-29"
  },
  "ombro-cotovelo-0057": {
+  "conceito": "A ressonância mostra o subescapular em corte axial e sagital oblíquo, e a banca pede o grau de gordura. A leitura começa por onde o subescapular fica e termina na proporção entre músculo e gordura.\n\n**A imagem.** No alto, corte axial do ombro; embaixo, sagital oblíquo da escápula, em T1, com a fossa do subescapular na face anterior da escápula. O ventre do subescapular aparece com sinal de gordura (claro em T1) ocupando mais área que o músculo (escuro): **mais gordura que músculo**.\n\n**Como graduar.** GOUTALLIER (Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)): **0** normal; **1** algumas estrias; **2** mais músculo que gordura; **3** iguais; **4** mais gordura que músculo. O sagital oblíquo é o melhor corte para a qualidade de todos os músculos; o axial mostra bíceps, subescapular e infraespinal (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries)).\n\n**O que o grau 4 significa no subescapular.** Os autores não reparam o grau 4. Na classificação de LAFOSSE, a rotura do tendão inteiro com subluxação anterior e gordura grau 3 ou mais é o **tipo V**, em geral **irreparável**: o caminho é a **transferência** (o grande dorsal para a tuberosidade menor vem substituindo o peitoral maior) ou a **prótese reversa**. A ressonância tem sensibilidade baixa para o subescapular (40% num estudo), mas a gordura avançada é fácil de ver.\n\nA gordura e o subescapular estão nas seções \"Imagem: HAMADA, acrômio, ângulo crítico e o músculo\" e \"Subescapular: LAFOSSE e o reparo\" do resumo.",
+  "correta": "**D) IV.** O ventre do subescapular tem mais gordura que músculo, a definição do grau 4, em geral sem possibilidade de reparo.",
   "incorretas": {
-   "A": "**Só algumas estrias.** O grau I tem apenas filetes de gordura no meio do músculo, comprometimento muito menor que o da imagem.",
-   "B": "**Menos gordura que músculo.** No grau II ainda predomina o músculo, estágio intermediário e ainda compatível com reparo.",
-   "C": "**Gordura e músculo iguais.** O grau III é a divisão meio a meio; a imagem mostra a gordura já predominando, o que é grau IV."
+   "A": "**I** são só algumas estrias de gordura num músculo preservado.",
+   "B": "**II** ainda tem mais músculo que gordura.",
+   "C": "**III** é a proporção igual; na imagem, a gordura predomina."
   },
-  "conceito": "**Por que o músculo importa tanto quanto o tendão.** Depois de uma rotura do manguito, o músculo desinserido **atrofia** e é progressivamente **infiltrado por gordura**. Essa degeneração gordurosa é em grande parte **irreversível**: mesmo que o tendão seja reinserido, o músculo substituído por gordura não volta a contrair bem. Por isso o grau de infiltração é um dos principais fatores para decidir se uma lesão ainda é reparável e qual resultado esperar.\n\n**A classificação de Goutallier.** Criada na tomografia e adaptada para a ressonância (por Fuchs), gradua a gordura no ventre muscular, avaliada no corte sagital oblíquo mais lateral em que a espinha da escápula ainda toca o corpo (a \"vista em Y\"). **Grau 0**: músculo normal. **Grau 1**: algumas estrias de gordura. **Grau 2**: gordura presente, mas **menos** gordura que músculo. **Grau 3**: gordura e músculo em **quantidades iguais**. **Grau 4**: **mais gordura que músculo**. Na imagem da questão, o ventre do subescapular está quase todo substituído por gordura, o que corresponde ao **grau IV**.\n\n**Como usar na decisão.** Graus 0 a 2 têm bom prognóstico após reparo. A partir do **grau 3**, e principalmente no **4**, o reparo tem alta taxa de falha e resultado funcional pobre, e entram as alternativas: reparo parcial, transferências musculares ou, no idoso com artrose ou pseudoparalisia, a prótese reversa. Para o subescapular irreparável, a transferência indicada é a do **peitoral maior**.\n\n**O que mais se avalia.** Junto com Goutallier, a **atrofia** é medida pelo sinal da tangente (o supraespinal não cruza a linha entre o coracoide e a espinha) e pela classificação de Thomazeau; a **retração** do tendão, pela classificação de Patte. Tempo de lesão, idade e tabagismo completam a previsão.\n\n**Na prova:** Goutallier: **1** estrias, **2** menos gordura que músculo, **3** iguais, **4** **mais gordura que músculo**; do 3 em diante, o reparo tende a falhar.",
-  "correta": "**Grau IV.** A imagem mostra o ventre do subescapular com mais gordura que músculo, o grau mais avançado de Goutallier, que indica degeneração praticamente irreversível e mau prognóstico para o reparo direto.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2156",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0058": {
@@ -1280,17 +1293,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0074": {
+  "conceito": "A tendinite calcária tem um paradoxo: a fase que mais dói é a fase em que a doença está indo embora. A questão cobra exatamente esse ponto.\n\n**As fases de SARKAR e UHTHOFF** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2175):\n- **pré-calcificação**: metaplasia fibrocartilaginosa do tendão, sem sintomas;\n- **calcificação**, com três momentos: **formativo** (depósito seco, como giz), **repouso** (depósito bem delimitado, pouca dor) e **reabsorção** (canais vasculares invadem o depósito, os cristais de apatita migram para a bursa com leucócitos e mediadores inflamatórios; é **muito dolorosa**, e o cálcio fica como pasta de dente);\n- **pós-calcificação**: o tecido de granulação vira colágeno alinhado e a dor cede.\n\n**Por que a reabsorção dói tanto.** O corpo começa a remover o cálcio: vasos, células e inflamação entram num tendão que estava quieto, e a pressão sobe. É a dor súbita, noturna, que impede o movimento. O livro lembra que o **corticoide** pode abortar a reabsorção e devolver a lesão à fase quieta, e que o **agulhamento guiado por ultrassom** com corticoide subacromial resolve cerca de 70%.\n\n**O nome da banca.** A dor aguda ocorre na reabsorção, que pertence ao estágio de **calcificação** (chamado de \"calcificante\" pela banca), e não a um estágio separado.\n\nAs fases estão na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**B) calcificante.** A dor aguda é da reabsorção, o último momento do estágio de calcificação, quando os vasos e as células invadem o depósito.",
   "incorretas": {
-   "A": "**Silencioso.** O momento de repouso não tem atividade celular, e o depósito costuma ser um achado incidental, sem dor.",
-   "C": "**Ainda sem cálcio.** A pré-calcificação é a metaplasia fibrocartilaginosa do tendão, uma fase assintomática.",
-   "D": "**Dor em regressão.** O estágio pós-calcificação é o da remodelação por tecido de granulação, quando a dor já está melhorando."
+   "A": "**Repouso** é o momento quieto do mesmo estágio, com depósito bem delimitado e pouca dor.",
+   "C": "**Pré-calcificação** é a metaplasia fibrocartilaginosa, sem cálcio e sem sintomas.",
+   "D": "**Pós-calcificação** é a reconstituição do tendão, quando a dor já está cedendo."
   },
-  "conceito": "**Onde está a dor.** Na classificação de **Sarkar e Uhthoff**, a dor aguda e intensa pertence ao **estágio calcificante**, no seu momento **reabsortivo**. É quando o corpo começa a remover o cálcio que o paciente sofre mais.\n\n**A sequência completa.** No estágio **pré-calcificação**, uma área do tendão sofre metaplasia fibrocartilaginosa, sem sintomas. No estágio **calcificante**, há três momentos: o **formativo**, em que o cálcio se deposita em vesículas da matriz e forma um depósito duro, com aspecto de giz, bem delimitado, com dor crônica moderada ou nenhuma; o de **repouso**, em que a atividade celular para e o depósito pode ficar anos sem incomodar; e o **reabsortivo**, em que vasos invadem o depósito, macrófagos e células gigantes fagocitam o cálcio, o material fica pastoso como creme dental e mal delimitado na radiografia, e a inflamação com aumento da **pressão dentro do tendão** produz a dor mais intensa da patologia do ombro. No estágio **pós-calcificação**, tecido de granulação e fibroblastos remodelam o tendão, e a dor regride.\n\n**Como reconhecer o quadro agudo.** Dor súbita e intensa, noturna, que impede qualquer movimento, às vezes com febre baixa, lembrando artrite séptica ou gota. A radiografia mostra o depósito nebuloso, às vezes já vazando para a bursa subacromial, o que alivia a pressão e costuma preceder a melhora.\n\n**O que fazer.** O paradoxo é que essa fase, a mais dolorosa, é a de **resolução espontânea**. O tratamento é analgesia, anti-inflamatório e, se necessário, infiltração na bursa. É também o melhor momento para a **barbotagem** guiada por ultrassom, porque o cálcio mole pode ser aspirado. Cirurgia só em quem continua com dor por muitos meses.\n\n**Na prova:** a dor aguda e intensa da tendinite calcária está no estágio **calcificante**, momento **reabsortivo**, que é a fase de resolução.",
-  "correta": "**Calcificante.** No momento reabsortivo desse estágio, a invasão vascular e a fagocitose do cálcio, com aumento da pressão dentro do tendão, produzem a dor aguda e intensa típica da tendinite calcária.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 46"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2175",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0075": {
@@ -1437,14 +1451,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0088": {
+  "conceito": "O reparo do manguito falha por motivos do paciente e da rotura. A questão escolheu um do paciente e o colocou entre três distratores da rotura com números trocados.\n\n**O diabetes.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries) (Box 51.5) lista o **diabetes** entre os fatores de pior resultado, ao lado de idade acima de 65 anos, obesidade, rotura grande ou maciça, atrofia moderada a grave, infiltração gordurosa acima de 50% e retração acima de 2,5 cm. O cap. 57 repete o diabetes com o tabagismo, a osteoporose e a hipercolesterolemia. O diabetes também muda a reabilitação: como esses pacientes enrijecem com facilidade, a fisioterapia começa cedo, ao contrário da regra de esperar 6 semanas.\n\n**Os distratores.**\n- **Lesão maior de 3 mm** não tem sentido para uma rotura completa: o limite de tamanho que piora o resultado é **3 cm** (grande ou maciça).\n- **Atrofia leve** não piora; o livro fala em atrofia **moderada a grave**.\n- **Idade acima de 50 anos** é baixa demais: o limite é **65 anos**, e os autores são mais agressivos abaixo dos 63.\n\n**O resultado geral.** Bom a excelente em 80%, alívio da dor em 87%, rerruptura de 20% a 65%, a maioria nos 2 primeiros anos.\n\nOs fatores estão na seção \"História natural, indicações e o que piora o resultado\" do resumo.",
+  "correta": "**A) diabetes.** É um dos fatores de mau resultado do reparo no Campbell 15, junto da idade acima de 65, da obesidade e da rotura grande.",
   "incorretas": {
-   "B": "O tamanho da rotura importa muito, mas ele é medido em centímetros. Uma lesão de 3 mm é pequena demais para servir de critério de falha.",
-   "C": "A atrofia leve não prediz falha. O que pesa é a atrofia avançada com infiltração gordurosa intensa (graus altos de Goutallier).",
-   "D": "A idade influencia, mas os piores resultados de cicatrização são descritos em idades mais avançadas. Apenas ter mais de 50 anos não é o fator de falha cobrado aqui."
+   "B": "**Lesão maior de 3 mm** usa a unidade errada; o limite que piora é 3 cm.",
+   "C": "**Atrofia leve** não é fator de falha; o livro cita a atrofia moderada a grave.",
+   "D": "**Idade acima de 50 anos** é baixa demais; o limite de pior resultado é 65 anos."
   },
-  "conceito": "Depois de uma sutura do manguito rotador, uma parte dos tendões não cicatriza no osso ou volta a romper. Saber o que aumenta esse risco ajuda a escolher bem o paciente e a combinar expectativas antes da cirurgia. Os fatores conhecidos podem ser organizados em três grupos.\n\n**Do paciente.** O **diabetes** é um dos mais consistentes: o excesso de glicose altera o colágeno do tendão, prejudica os pequenos vasos e a resposta de cicatrização, além de aumentar o risco de rigidez e infecção. O **tabagismo** também pesa muito, porque a nicotina contrai os vasos e atrapalha as células que reparam o tendão. Idade avançada, osteoporose (as âncoras seguram mal no osso fraco) e uso crônico de corticoide completam a lista.\n\n**Da lesão.** O **tamanho** da rotura e o quanto o tendão está **retraído** contam muito, e eles são medidos em **centímetros**. O número de tendões rompidos também. E, principalmente, o estado do **músculo**: com a rotura crônica, o músculo atrofia e é invadido por **gordura**. Essa infiltração gordurosa é graduada pela classificação de **Goutallier**, na tomografia ou ressonância, e os graus avançados são forte preditor de falha. A gordura não volta atrás, mesmo que o tendão cicatrize.\n\n**Da técnica e do pós-operatório.** Sutura sob muita tensão, preparo ruim do osso onde o tendão vai ser fixado e reabilitação agressiva cedo demais.",
-  "correta": "Diabetes. A doença prejudica a cicatrização do tendão no osso e está entre os fatores de falha mais consistentes do reparo do manguito.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), Box 51.5",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0089": {
@@ -1464,14 +1483,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0090": {
+  "conceito": "A tendinite calcária é uma doença definida pela dor, e não pelo tamanho do cálcio. A questão testa se você sabe que a maioria dos depósitos não dói e que, quando dói, é a fase que manda.\n\n**A dor é o sintoma** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), pp. 2174 e 2175). A maioria dos depósitos é assintomática; o paciente procura o médico pela dor, que pode ser crônica e moderada nas fases de formação e repouso ou súbita e intensa na **reabsorção**, quando o cálcio vira pasta e a inflamação sobe a pressão no tendão. A dor é muitas vezes noturna e limita o movimento.\n\n**O que as outras afirmações erram.**\n- O tendão mais acometido é o **supraespinal**, a 1,5 a 2 cm da inserção, e não o subescapular.\n- Predominam as **mulheres de 30 a 60 anos**, mas o livro não fala em predomínio do lado esquerdo.\n- O **tamanho** do depósito não acompanha os sintomas: um depósito grande em repouso pode ser achado incidental, e um em reabsorção pode doer muito. O tamanho pesa na decisão cirúrgica: depósitos **maiores que 1 cm** têm mais chance de acabar operados.\n\n**O tratamento.** Agulhamento guiado por ultrassom com corticoide (cerca de 70% de sucesso) antes da cirurgia; artroscopia com bons resultados em cerca de 90%.\n\nA clínica está na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**A) o sintoma mais importante é a dor.** É a dor, e não o tamanho do depósito, que leva ao diagnóstico e ao tratamento; na reabsorção, ela é intensa.",
   "incorretas": {
-   "B": "**Sede rara.** O tendão mais acometido é o supraespinal, em cerca de 80% dos casos; o subescapular é o menos frequente.",
-   "C": "**Metade certa.** O predomínio feminino é real, mas não há preferência estabelecida pelo ombro esquerdo.",
-   "D": "**É o contrário.** A ausência de correlação entre o tamanho do cálcio e os sintomas é justamente uma característica da doença: depósitos grandes podem não doer, e pequenos podem doer muito."
+   "B": "**Subescapular mais comum** é falso: o tendão mais acometido é o supraespinal.",
+   "C": "**Mulheres e ombro esquerdo** acerta o sexo, mas o livro não descreve predomínio de lado.",
+   "D": "**Correlação com o tamanho** é falsa: a dor depende da fase, e depósitos grandes podem ser assintomáticos."
   },
-  "conceito": "**A dor manda.** Na tendinite calcária, o sintoma mais importante é a **dor**. Pode ser crônica e moderada, piorando ao elevar o braço e à noite, ou aguda e violenta, a pior dor da patologia do ombro, que impede qualquer movimento e lembra artrite séptica. Fraqueza e perda de movimento, quando aparecem, são consequência da dor.\n\n**Tamanho não é gravidade.** Não há relação entre o **tamanho** do depósito e a intensidade dos sintomas. Um depósito grande e denso pode ser achado incidental, sem dor nenhuma, na fase de repouso; um depósito pequeno, mole e mal delimitado pode causar dor lancinante, na fase **reabsortiva** de Uhthoff, quando macrófagos invadem o cálcio, a pressão dentro do tendão sobe e a inflamação é intensa. Essa é a inversão que confunde: a fase mais dolorosa é a de **resolução**.\n\n**O perfil do paciente.** O tendão mais acometido é o **supraespinal**, em cerca de 80% dos casos, a 1,5 a 2 cm da inserção; o infraespinal vem em segundo e o subescapular é sede rara. Predomina em **mulheres** de 30 a 50 anos. É unilateral na maioria, sem preferência estabelecida por um dos lados, embora o acometimento bilateral apareça em uma minoria. Há associação com diabetes e doenças da tireoide.\n\n**Diagnóstico e tratamento.** A radiografia mostra o depósito, e o aspecto dele indica a fase: denso e bem delimitado na formativa, nebuloso na reabsortiva. O ultrassom localiza e guia procedimentos. O tratamento começa com analgesia, anti-inflamatório e infiltração subacromial. A **barbotagem** guiada por ultrassom e as ondas de choque tratam os casos persistentes, e a artroscopia fica para a falha após meses de tratamento.\n\n**Na prova:** na tendinite calcária, a **dor** é o sintoma principal e **não se correlaciona com o tamanho** do depósito; supraespinal, mulheres de 30 a 50 anos.",
-  "correta": "**O sintoma mais importante é a dor.** Crônica ou aguda, é a dor que leva o paciente ao médico, e na fase reabsortiva ela é a mais intensa de toda a patologia do ombro.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), pp. 2174 a 2176",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0091": {
@@ -2487,25 +2510,37 @@
   "conferido": false
  },
  "ombro-cotovelo-0181": {
+  "conceito": "Prever qual rotura vai crescer ajuda a decidir entre observar e operar. A questão pede o perfil de **alto risco** de progressão, e a pegadinha é confundir \"progredir\" com \"estar avançada\".\n\n**O que o Campbell 15 diz da progressão** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2163; Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)). KEENER mostrou que **60%** das roturas completas aumentam em 5 anos, e só 35% das parciais viram completas. As roturas **médias** têm alto risco de progressão; as parciais e as pequenas completas têm pouco risco de dano irreparável precoce. As roturas que envolvem o cabo anterior eram maiores no diagnóstico, mas não cresceram mais rápido. O tratamento não operatório da rotura completa tem sucesso em cerca de 60%, com risco de progressão de cerca de 50% em 2 anos.\n\n**Avançada não é o mesmo que de risco.** As roturas grandes com gordura avançada e a ascensão da cabeça são sinais de que o dano **já aconteceu**: são preditores de irreparabilidade e de mau resultado, não de progressão. A rotura completa com supraespinal sem gordura é justamente a que tem bom prognóstico se reparada.\n\n**A resposta da banca.** O gabarito aponta a **lesão traumática do infraespinal** como alto risco. O Campbell 15 não usa esse critério; ele traz a rotura média, a completa e a do cabo. O gabarito foi mantido.\n\nA história natural está na seção \"História natural, indicações e o que piora o resultado\" do resumo.",
+  "correta": "**B) a lesão traumática do infraespinal.** É o gabarito oficial; o Campbell 15 descreve a progressão sobretudo nas roturas completas e médias, sem destacar o infraespinal traumático.",
   "incorretas": {
-   "A": "A subida da cabeça do úmero não é preditor de progressão. É sinal de que a lesão já progrediu até o manguito não conseguir mais segurar a cabeça.",
-   "C": "Lesão grande com degeneração gordurosa avançada é o ponto de chegada, não de partida. Nesse estágio, a questão é se o reparo ainda vai cicatrizar.",
-   "D": "A ausência de degeneração gordurosa indica músculo bom e lesão que tende a ficar estável. Descreve o baixo risco, apesar da redação confusa."
+   "A": "**A ascensão da cabeça** já é sinal de rotura maciça e crônica, de dano estabelecido, e não um preditor de progressão.",
+   "C": "**Lesões grandes com gordura avançada** predizem irreparabilidade e falha do reparo, não o crescimento da rotura.",
+   "D": "**Completas com supraespinal sem gordura** são as de bom prognóstico se reparadas."
   },
-  "conceito": "Nem toda rotura do manguito rotador precisa ser operada logo. Muitas, sobretudo em pessoas mais velhas, ficam estáveis por anos. A decisão entre operar ou acompanhar depende de estimar se a lesão vai **progredir**, ou seja, aumentar de tamanho, retrair e deixar o músculo atrofiar.\n\nOs estudos que acompanharam essas lesões com exames de imagem ao longo do tempo mostraram quem tem **baixo risco**: roturas parciais pequenas e roturas completas pequenas em idosos com pouca demanda e músculo ainda sem gordura.\n\nO **alto risco** fica com as roturas completas, as maiores, as que se estendem para trás e atingem o **infraespinhal** (o tendão que fica atrás do supraespinhal e roda o braço para fora) e as de origem **traumática** em pessoas jovens e ativas. Na lesão traumática, o tendão era saudável até o acidente e o músculo ainda está bom. Cada mês de espera é tempo de o tendão retrair e de o músculo ser invadido por gordura, e essa gordura não volta. Por isso, a rotura traumática que envolve o infraespinhal é o cenário clássico para indicar reparo precoce.\n\nO ponto sutil da questão é diferenciar quem **vai progredir** de quem **já progrediu**. A subida da cabeça do úmero e a degeneração gordurosa avançada do músculo não preveem progressão: elas são o resultado de uma progressão que já aconteceu. Nesses ombros, a pergunta passa a ser se a lesão ainda pode ser reparada.",
-  "correta": "A lesão traumática do infraespinal. Reúne o mecanismo agudo em tendão antes saudável e a extensão posterior da rotura, os dois marcadores de alto risco que justificam o reparo cedo.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2163",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "alerta": "O Campbell 15 descreve a progressão em 60% das roturas completas em 5 anos (KEENER) e o alto risco das roturas médias, sem citar a lesão traumática do infraespinal; o gabarito oficial (B) foi mantido.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0182": {
+  "conceito": "O ângulo crítico do ombro é uma das medidas que mais apareceram nos últimos anos, porque junta duas peças da anatomia que o cirurgião pode mudar: a inclinação da glenoide e o quanto o acrômio se estende para fora.\n\n**Como se mede** (Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity), pp. 2456 e 2457). No AP verdadeiro, traça-se a linha que une as bordas superior e inferior da glenoide e outra que vai da borda inferior da glenoide até o ponto inferolateral do acrômio. O ângulo entre elas é o **ângulo crítico** de MOOR.\n\n**O que ele significa.** Um ângulo grande soma uma glenoide inclinada para cima com um acrômio que avança lateralmente. **Acima de 35 graus**, aumentam as forças de cisalhamento e a tensão sobre o manguito, e o ângulo se correlaciona com **rotura degenerativa**. É por isso que GERBER descreveu a **acromioplastia lateral**, para reduzir o ângulo e **prevenir a rerruptura** depois do reparo. BALKE, comparando roturas degenerativas e traumáticas, viu nas degenerativas um espaço subacromial mais estreito e um acrômio mais lateral e mais inclinado.\n\n**A leitura da banca.** Com 40 graus, a banca ligou o ângulo à **maior taxa de rerruptura**, que é exatamente o problema que a acromioplastia lateral de GERBER tenta prevenir. O tamanho da rotura, a progressão e a artrose não são o que o livro liga ao ângulo.\n\nO ângulo está na seção \"Imagem: HAMADA, acrômio, ângulo crítico e o músculo\" do resumo.",
+  "correta": "**C) a maior taxa de rerruptura do manguito rotador.** O ângulo crítico grande aumenta a tensão no manguito; GERBER descreveu a acromioplastia lateral para corrigi-lo e prevenir a rerruptura.",
   "incorretas": {
-   "A": "**Lado oposto da escala.** A artrose glenoumeral se associa a ângulos críticos pequenos, abaixo de cerca de 30 graus.",
-   "B": "**Relação pouco estabelecida.** O ângulo crítico se associa à presença de doença do manguito, mas não mede de forma consistente o tamanho da lesão.",
-   "D": "**Evidência fraca.** A associação com progressão de uma lesão não operada é menos demonstrada do que a relação com rerruptura após o reparo."
+   "A": "**Artrose glenoumeral** não é a associação que o livro descreve para o ângulo crítico grande, ligado à doença do manguito.",
+   "B": "**Tamanho da lesão** não é o que o ângulo prevê; ele se correlaciona com a ocorrência da rotura degenerativa e com a rerruptura.",
+   "D": "**Risco de progressão** da rotura não tratada não é o dado que o livro associa ao ângulo crítico."
   },
-  "conceito": "**Como se mede o ângulo crítico.** Descrito por **Moor**, é medido no **AP verdadeiro** da glenoide, entre duas linhas: a que une as bordas superior e inferior da glenoide e a que vai da borda **inferior** da glenoide até o ponto mais **lateral do acrômio**. Ele junta num único número a **inclinação** da glenoide e a **extensão lateral** do acrômio (o índice acromial). O valor normal fica em torno de **30 a 35 graus**.\n\n**Os dois extremos.** Ângulos **grandes**, acima de **35 graus**, deixam o vetor do deltoide mais vertical e cisalhante, obrigando o manguito a trabalhar mais para manter a cabeça centrada; associam-se à **doença degenerativa do manguito**. Ângulos **pequenos**, abaixo de **30 graus**, aumentam a compressão sobre a glenoide e associam-se à **artrose glenoumeral primária**. É uma forma elegante de explicar por que alguns ombros gastam o tendão e outros gastam a cartilagem.\n\n**O que o valor alto prediz.** Um ângulo de 40 graus está bem na faixa alta. A associação mais consistente, no contexto cirúrgico, é com maior taxa de **rerruptura** depois do reparo do manguito: a mesma biomecânica que rompeu o tendão continua agindo sobre o reparo. Por isso se propôs a **acromioplastia lateral** para reduzir o ângulo nos casos extremos, proposta que ainda está em discussão.\n\n**O que o ângulo não mede bem.** A relação com o **tamanho** da lesão e com a velocidade de **progressão** de uma lesão não operada é menos estabelecida. A **artrose** fica do lado oposto da escala, dos ângulos pequenos.\n\n**Na prova:** ângulo crítico **acima de 35 graus** se associa a lesão do manguito e a **maior rerruptura** após reparo; **abaixo de 30**, a artrose.",
-  "correta": "**Maior taxa de rerruptura do manguito.** Com 40 graus, bem acima do limiar de 35, o vetor cisalhante do deltoide que sobrecarregou o tendão original continua sobrecarregando o tendão reparado.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity), pp. 2456 e 2457",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2158",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "alerta": "O Campbell 15 usa 35 graus como o limite a partir do qual o ângulo crítico se associa à rotura degenerativa e cita a acromioplastia lateral para prevenir a rerruptura; o valor de 40 graus é o da banca, e o gabarito oficial (C) foi mantido.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0183": {
@@ -2542,20 +2577,20 @@
   "conferido": false
  },
  "ombro-cotovelo-0186": {
+  "conceito": "A questão pede dois fatores de mau prognóstico para a cicatrização de uma rotura extensa: um ligado ao sexo e outro à atividade. O Campbell 15 trata os fatores de forma diferente, e vale ver o que ele confirma.\n\n**O que o livro lista** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), Box 51.5; Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)): idade acima de 65 anos, diabetes, obesidade, rotura grande ou maciça, atrofia moderada a grave, gordura acima de 50%, retração acima de 2,5 cm, tendinose grave, anti-inflamatório antes da cirurgia, sintomas longos, início não agudo; e, no cap. 57, tabagismo, osteoporose, hipercolesterolemia e reabilitação precoce agressiva. Sexo e nível de atividade não aparecem como fatores próprios.\n\n**Onde a banca se apoia.** O gabarito marca **sexo feminino e baixo nível de atividade**. O cap. 57 lista a **osteoporose** entre os fatores de falha, e descreve o melhor potencial de cicatrização em pacientes com boa adesão à reabilitação de 6 a 9 meses; o livro, porém, não formula sexo e atividade como fatores próprios.\n\n**O resultado das roturas extensas.** Na classificação de DERWIN, as grandes ou maciças reparáveis têm rerruptura de 30% ou mais; as que não fecham sem tensão, de 50% ou mais. Nelas, a dupla fileira ou o equivalente transósseo cicatrizam melhor.\n\nOs fatores estão na seção \"História natural, indicações e o que piora o resultado\" do resumo.",
+  "correta": "**C) o sexo feminino e o baixo nível de atividade esportiva.** É o gabarito oficial; o Campbell 15 não lista sexo nem atividade entre os fatores de falha.",
   "incorretas": {
-   "A": "**Atividade alta ajuda.** O alto nível de atividade esportiva se associou a melhor recuperação, e não a mau prognóstico.",
-   "B": "**Os dois fatores invertidos.** Sexo masculino e alta atividade foram descritos como associados a resultados melhores.",
-   "D": "**Sexo invertido.** Baixa atividade piora, mas o sexo associado a pior resultado, nas séries clássicas, foi o feminino."
+   "A": "**Feminino e alta atividade** acerta o sexo do gabarito, mas a atividade alta não é fator de mau prognóstico.",
+   "B": "**Masculino e alta atividade** não corresponde ao gabarito nem aos fatores do livro.",
+   "D": "**Masculino e baixa atividade** troca o sexo marcado pela banca."
   },
-  "alerta": "A associação entre sexo feminino e falha de cicatrização não é consistente na literatura mais recente. O comentário preserva o gabarito da prova, mas esclarece que sexo isoladamente não deve ser usado como preditor clínico forte.",
-  "conceito": "**O que decide se o tendão cicatriza.** Depois do reparo de uma lesão extensa do manguito, a cicatrização depende de quatro grupos de fatores. **Do paciente**: idade (o mais forte, com piora nítida acima de 65 anos), tabagismo, diabetes, obesidade, hipercolesterolemia e osteoporose. **Da lesão**: tamanho, número de tendões, **retração** e, sobretudo, **atrofia e infiltração gordurosa** (Goutallier). **Do ombro**: distância acromioumeral reduzida e rigidez. **Do tratamento**: qualidade do tecido, tensão do reparo, construção da fixação e reabilitação.\n\n**A infiltração gordurosa, o fator mais citado.** Goutallier classifica na tomografia (e Fuchs adaptou para a ressonância): **0** normal, **1** algumas estrias de gordura, **2** menos gordura que músculo, **3** gordura igual a músculo, **4** mais gordura que músculo. Graus **3 e 4** são irreversíveis e se associam a falha do reparo. A atrofia é vista pelo **sinal da tangente** e pela classificação de **Thomazeau**; a retração, pela de **Patte** (1 junto ao tubérculo, 2 no nível da cabeça, 3 na glenoide).\n\n**O que a questão cobra.** Estudos clássicos apontaram **sexo feminino** e **baixo nível de atividade** como associados a pior resultado. O baixo nível de atividade pode refletir menos condicionamento e reserva funcional; as mulheres tiveram, em séries antigas, resultados médios menos favoráveis, talvez por densidade óssea menor. Metanálises mais recentes, porém, não mostram diferença consistente de rerruptura entre os sexos. Para a prova, vale o conjunto da banca; na clínica, pesam muito mais idade, retração e infiltração gordurosa.\n\n**Três desfechos diferentes.** Integridade do tendão na imagem, função e retorno ao esporte nem sempre andam juntos. Muitos pacientes com rerruptura têm boa função e pouca dor, porque o reparo parcial ou a descompressão já reequilibram os pares de força.\n\n**Na prova:** para esta banca, sexo **feminino** e **baixa atividade** pioram o prognóstico; na prática, idade, retração e **infiltração gordurosa** são os preditores mais fortes.",
-  "correta": "**Sexo feminino e baixo nível de atividade.** É a combinação prognóstica clássica cobrada: baixa atividade reflete menor reserva funcional, e séries antigas mostraram resultado médio pior em mulheres, embora hoje o sexo isolado seja preditor fraco.",
   "referencias": [
-   "Prognostic factors for successful recovery after arthroscopic rotator cuff repair: systematic review. https://pubmed.ncbi.nlm.nih.gov/24450368/",
-   "A systematic summary of systematic reviews on the rotator cuff. https://pmc.ncbi.nlm.nih.gov/articles/PMC6154263/",
-   "Comparing sex-specific outcomes after rotator cuff repair: meta-analysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC9128058/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), Box 51.5",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
   ],
-  "geradoEm": "2026-09-30",
+  "alerta": "O Campbell 15 não lista sexo nem nível de atividade entre os fatores de mau resultado; o gabarito oficial (C) foi mantido.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0187": {
@@ -2598,14 +2633,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0190": {
+  "conceito": "Canais vasculares, fagocitose e eliminação do cálcio: são os sinais de que o corpo está desmontando o depósito. Em qual estágio isso acontece?\n\n**O estágio de calcificação tem três momentos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2175). No **formativo**, o cálcio se deposita e forma um depósito seco, como giz. No **repouso**, o depósito fica bem delimitado e quieto. Na **reabsorção**, surgem **canais vasculares** na periferia do depósito, macrófagos e células gigantes **fagocitam** o cálcio, e os cristais de apatita migram para a bursa com leucócitos e mediadores inflamatórios. O depósito fica pastoso, como pasta de dente, e a dor é intensa.\n\n**Por que não é a pós-calcificação.** Ela vem depois: o tecido de granulação que ocupou o espaço do cálcio amadurece em colágeno alinhado, e a dor cede. Remodelação é o que acontece nela, mas a eliminação do cálcio já terminou.\n\n**A consequência prática.** Como a reabsorção é a fase de resolução, a dor forte é, paradoxalmente, um bom sinal. O corticoide pode abortar a reabsorção, e o agulhamento guiado por ultrassom com corticoide subacromial resolve cerca de 70%.\n\nAs fases estão na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**B) calcificação.** Os canais vasculares, a fagocitose e a eliminação do cálcio são o momento de reabsorção, o último da fase de calcificação.",
   "incorretas": {
-   "A": "No estágio pré-calcificante ainda não há depósito: as células do tendão se transformam em células de cartilagem, preparando o local.",
-   "C": "No estágio pós-calcificante o cálcio já foi removido, e o que acontece é a reorganização das fibras do tendão.",
-   "D": "Remodelação não é um estágio próprio na descrição de Uhthoff e Löer. Ela faz parte do estágio pós-calcificante, depois da reabsorção."
+   "A": "**Pré-calcificação** é a metaplasia fibrocartilaginosa, antes de qualquer cálcio.",
+   "C": "**Pós-calcificação** é a reparação com colágeno alinhado, depois que o cálcio já foi removido.",
+   "D": "**Remodelação** acontece na pós-calcificação e não é um estágio próprio na sequência de SARKAR e UHTHOFF."
   },
-  "conceito": "A **tendinite calcária** é a formação de um depósito de cálcio (cristais de hidroxiapatita) dentro de um tendão do manguito rotador, quase sempre o supraespinhal. Diferente de outras calcificações, ela não vem de degeneração: o próprio tecido do tendão muda, o cálcio se deposita e, com o tempo, o corpo costuma reabsorvê-lo sozinho.\n\n**Uhthoff e Löer** descreveram essa evolução em três estágios:\n\n**Pré-calcificação.** As células do tendão se transformam em células de cartilagem, preparando o terreno onde o cálcio vai se depositar. Não há dor.\n\n**Calcificação.** É o estágio do depósito, e ele tem três fases. Na **formativa**, o cálcio se deposita como um material seco, parecido com giz, bem delimitado na radiografia, com pouca dor. Na **de repouso**, o depósito fica parado, às vezes por anos. Na **reabsortiva**, aparecem **canais vasculares** ao redor do depósito, chegam **macrófagos** e outras células que **fagocitam** o cálcio e o eliminam. O depósito amolece como pasta de dente, fica sob pressão e pode romper para a bursa, causando uma dor muito forte e súbita. Na radiografia, o depósito fica nebuloso, de contornos borrados.\n\n**Pós-calcificação.** Com o cálcio já removido, as células reorganizam as fibras e o tendão se reconstitui.\n\nCuriosamente, a fase mais dolorosa é aquela em que o corpo está curando a doença, e é nela que a punção com lavagem do depósito (barbotagem) funciona melhor.",
-  "correta": "Calcificação. Os canais vasculares e a fagocitose do cálcio pelos macrófagos acontecem na fase reabsortiva, que faz parte do estágio de calcificação.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2175",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0191": {
@@ -2959,17 +2998,21 @@
   "conferido": false
  },
  "ombro-cotovelo-0217": {
+  "conceito": "A dor do manguito tem características que ajudam a separá-la de outras dores do ombro. A questão pede duas: o tipo e o horário.\n\n**A descrição do Campbell 15** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2146; Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)). A dor é **pior com o movimento ativo** que com o passivo, piora **acima da cabeça** e **acorda o paciente à noite**; pode irradiar para a inserção do deltoide. Na rotura completa sintomática, o cap. 57 fala em dor anterolateral irradiada para a região subdeltoidea, dor ao elevar e ao levantar objetos com o braço estendido, e **dor noturna**. A maioria tem início insidioso, com dor e fraqueza, e não lembra de trauma.\n\n**O que procurar a mais.** Dor que passa do cotovelo sugere radiculopatia cervical, e cerca de 5% das queixas de dor no ombro vêm só da coluna; a palpação vale pouco, e estalos e crepitação não são específicos. A banca descreveu a dor crônica como surda, contínua ou não, e pior à noite, que é o horário que o livro destaca.\n\nA clínica está na seção \"O exame em números\" do resumo.",
+  "correta": "**D) surda, contínua ou não, com exacerbação noturna.** É a dor da doença crônica do manguito, pior com o movimento ativo e à noite.",
   "incorretas": {
-   "A": "**Qualidade e horário errados.** Dor latejante ou em agulhada sugere processo agudo ou neuropático, e a piora típica do manguito é noturna, não matutina.",
-   "B": "**Qualidade errada.** A piora noturna está certa, mas a dor do manguito crônico é surda, e não latejante ou em agulhada.",
-   "C": "**Horário errado.** A dor é surda, mas piora à noite; a rigidez matutina lembra doença inflamatória.",
-   "E": "**Contraditória.** Descreve a dor como surda e em agulhada ao mesmo tempo, qualidades opostas; a correta é apenas surda."
+   "A": "**Latejante, em agulhada, matutina** erra o tipo e o horário.",
+   "B": "**Latejante, em agulhada, noturna** acerta o horário, mas o tipo da dor crônica do manguito é surdo.",
+   "C": "**Surda, matutina** acerta o tipo e erra o horário; a piora é noturna.",
+   "E": "**Surda, em agulhada, noturna** mistura dois tipos de dor contraditórios."
   },
-  "conceito": "**Como dói o manguito.** A dor da lesão **crônica** do manguito é **surda**, mal localizada, sentida na face **lateral** do braço, perto da **inserção do deltoide**, e raramente passa do cotovelo. Pode ser contínua ou intermitente, piora com os movimentos acima da cabeça, ao pegar peso ou ao levar a mão às costas, e tem uma marca registrada: a **piora noturna**, que tira o sono e impede deitar sobre o lado afetado.\n\n**Por que dói mais à noite.** Várias explicações se somam. Deitado, perde-se a tração da gravidade que, de dia, alivia levemente o espaço subacromial. Deitar sobre o ombro comprime diretamente a bursa e o tendão. À noite, a circulação e a pressão venosa intraóssea mudam, e há o **nadir do cortisol** endógeno. E, sem distrações, a percepção da dor aumenta.\n\n**O que foge do padrão.** Dor **latejante** ou em **agulhada** sugere outros diagnósticos: inflamação aguda (como a **tendinite calcária** na fase de reabsorção, que dói intensamente), infecção, dor neuropática (radiculopatia cervical, neuropatia do supraescapular, **Parsonage-Turner**) ou tumor. Dor que desce abaixo do cotovelo com parestesia aponta para o **pescoço**. A dor **matutina** com rigidez que melhora com o movimento lembra doença inflamatória, como a **polimialgia reumática**.\n\n**O restante da história.** Idade acima de 50 anos, atividades acima da cabeça, fraqueza e, nas lesões grandes, perda de elevação ativa com passivo preservado. A **capsulite adesiva** também dói à noite, mas limita o movimento **passivo**, sobretudo a rotação externa, o que a separa do manguito.\n\n**Na prova:** lesão crônica do manguito dói de forma **surda**, contínua ou não, com piora **noturna**, na face lateral do braço.",
-  "correta": "**Surda, contínua ou não, com exacerbação noturna.** É o padrão típico: dor profunda e mal localizada na face lateral do braço, que piora ao deitar pela perda da tração gravitacional, pela compressão direta e pelo ritmo do cortisol.",
-  "geradoEm": "2026-09-30",
-  "conferido": false,
-  "alerta": "Divergência de fontes: a questão 7 do arquivo ENARE R4 2023 fornecido indica B; o acervo e o comentário preexistentes indicam D. O gabarito D foi preservado até conferência de gabarito oficial da banca. A qualidade da dor, isoladamente, não deve ser usada como critério diagnóstico absoluto."
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2146",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
+  "conferido": false
  },
  "ombro-cotovelo-0218": {
   "incorretas": {
@@ -3010,14 +3053,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0232": {
+  "conceito": "Uma transferência tendínea troca a função de um músculo pela de outro. Para funcionar, ela precisa de um parceiro do outro lado da articulação que ainda puxe. É esse requisito que a questão pede.\n\n**As regras** (Campbell's Operative Orthopaedics, 15ª ed., cap. 14 (transferências tendíneas)). Excursão e tensão parecidas, músculo doador dispensável, mesma linha de tração, uma só função, e esperar perder um grau de força. O **candidato ideal** é **jovem**, com **função acima da cabeça preservada**, **pouca artrose**, **sem pseudoparalisia** e com a **musculatura oposta íntegra**: o **subescapular** íntegro para as transferências posterossuperiores (grande dorsal, trapézio inferior), e o redondo menor e parte do infraespinal para as transferências do subescapular.\n\n**Por que o oponente.** O manguito funciona em pares de forças: o subescapular, na frente, e o manguito posterior, atrás, comprimem e centralizam a cabeça. Uma transferência posterior sem subescapular funcionante não tem contra quem trabalhar, e a cabeça não fica centrada.\n\n**Por que não as outras.** Artrose moderada favorece a **prótese reversa**. A **pseudoparalisia** é fator de mau resultado do grande dorsal, assim como cirurgia prévia, atrofia do redondo menor e índice acromioumeral abaixo de 6 mm. O idoso costuma ir para a reversa; as transferências são para os mais jovens.\n\nAs transferências estão na seção \"Irreparáveis: o que mais existe além do grande dorsal\" do resumo.",
+  "correta": "**A) Grupo muscular oponente funcional.** Sem o parceiro do outro lado (o subescapular nas transferências posteriores), o par de forças não se refaz e a transferência falha.",
   "incorretas": {
-   "B": "A artrose é contraindicação à transferência. A dor da artrose vem da articulação, e a transferência não resolve isso; o caminho passa a ser a prótese reversa.",
-   "C": "A pseudoparalisia (não conseguir elevar o braço ativamente, embora o movimento passivo esteja preservado) é sinal de mau prognóstico para a transferência e favorece a indicação da prótese reversa.",
-   "D": "A transferência exige reabilitação longa e reeducação do músculo transferido. É indicada para pacientes jovens e ativos; no idoso, prefere-se a prótese reversa ou o tratamento sem cirurgia."
+   "B": "**Artrose moderada** afasta a transferência e favorece a prótese reversa.",
+   "C": "**Pseudoparalisia** é fator de mau resultado da transferência do grande dorsal.",
+   "D": "**Idoso** tende à prótese reversa; as transferências são indicadas nos mais jovens."
   },
-  "conceito": "Quando o manguito rotador tem uma rotura grande que não pode ser costurada, uma opção em pacientes mais jovens é a **transferência de tendão**: um músculo vizinho, como o grande dorsal ou o trapézio inferior, é desviado para fazer o trabalho do tendão perdido, geralmente a rotação externa.\n\nToda transferência segue princípios gerais: o músculo doador precisa ser forte o bastante, ter amplitude de movimento parecida com a do músculo que vai substituir, puxar em linha reta e não fazer falta onde estava. A articulação precisa estar com bom movimento passivo e sem artrose.\n\nNo ombro existe um requisito específico, e é o que a questão cobra: o **equilíbrio entre a frente e a trás**. A cabeça do úmero fica centrada porque o **subescapular**, na frente, puxa contra o **infraespinhal** e o redondo menor, atrás. É um par de forças, como duas pessoas puxando uma corda de lados opostos. Se o cirurgião transfere um músculo para a parte de trás, ele só funciona se houver, na frente, um **subescapular funcionando** para fazer o contrapeso. Sem esse grupo **oponente**, a transferência só puxa a cabeça para trás, sem gerar rotação nem centralizar a articulação.\n\nPor isso, antes de indicar a transferência, é obrigatório examinar o subescapular, com testes como o *lift-off* e o *belly-press*, e conferir na imagem.\n\nAs outras alternativas descrevem situações que desfavorecem a transferência e geralmente levam à prótese reversa.",
-  "correta": "Grupo muscular oponente funcional. Sem um subescapular íntegro na frente para equilibrar, a transferência posterior apenas puxa a cabeça para trás, sem gerar rotação útil.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 14 (transferências tendíneas)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0233": {
@@ -3047,14 +3095,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0235": {
+  "conceito": "Quatro fatores parecem plausíveis, mas três trazem números ou dados que não batem com a lista do Campbell 15. Sabendo os limites do livro, a resposta é direta.\n\n**Os fatores de mau resultado do reparo** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), Box 51.5): idade **acima de 65 anos**, diabetes, obesidade, roturas grandes e maciças (mais de 3 cm), atrofia moderada a grave, infiltração gordurosa **acima de 50%**, retração **acima de 2,5 cm**, tendinose grave, anti-inflamatório antes da cirurgia, sintomas longos, início não agudo e a amplitude de movimento pré-operatória. O cap. 57 acrescenta tabagismo, osteoporose, hipercolesterolemia e reabilitação precoce agressiva.\n\n**Comparando com as alternativas.** A idade acima de 65 está na lista. A retração de 1,5 cm e a gordura de 30% ficam **abaixo** dos limites do livro (2,5 cm e 50%). O sexo masculino não aparece como fator de mau resultado.\n\n**Por que a idade pesa.** A capacidade de cicatrizar cai depois dos 62 anos, e os autores são mais agressivos abaixo dos 63. Ainda assim, pacientes selecionados acima de 70 anos melhoram tanto quanto os mais jovens: a idade piora a cicatrização, mas não contraindica o reparo.\n\nOs fatores estão na seção \"História natural, indicações e o que piora o resultado\" do resumo.",
+  "correta": "**D) Idade acima de 65 anos.** Está no Box 51.5 do Campbell 15 entre os fatores de pior resultado do reparo.",
   "incorretas": {
-   "A": "**Não piora.** O sexo masculino não é fator de pior prognóstico; nas séries antigas, o pior resultado médio foi em mulheres, associação hoje considerada fraca.",
-   "B": "**Retração pequena.** Uma retração de 1,5 cm fica próxima ao tubérculo; o que prejudica é a retração até a glenoide (Patte 3).",
-   "C": "**Limiar baixo.** Com 30% de gordura o músculo ainda predomina; a falha se associa a Goutallier 3 e 4, com gordura igual ou maior que músculo."
+   "A": "**Sexo masculino** não está entre os fatores de mau resultado descritos.",
+   "B": "**Retração maior que 1,5 cm** fica abaixo do limite do livro, que é 2,5 cm.",
+   "C": "**Mais de 30% de gordura** fica abaixo do limite do livro, que é 50%."
   },
-  "conceito": "**O preditor mais forte é a idade.** Entre os fatores de falha do reparo do manguito, a **idade** é o mais consistente em todas as séries. As taxas de rerruptura sobem muito a partir dos **60 a 65 anos** e, em algumas séries, passam de **50%** acima dos 70. A explicação é biológica: osso do tubérculo maior mais **osteoporótico**, que segura pior a âncora; menor celularidade e potencial de cicatrização da **entese**; e lesões mais antigas, maiores e com músculo pior.\n\n**Os fatores da lesão.** O **tamanho** e o número de tendões (lesões maciças falham muito mais). A **retração**, graduada por **Patte**: tipo 1 junto ao tubérculo, 2 no nível da cabeça, 3 na glenoide. A **infiltração gordurosa** de **Goutallier**: 0 normal, 1 estrias, 2 menos gordura que músculo, 3 igual, 4 mais gordura que músculo; graus 3 e 4 são irreversíveis e predizem falha. A **atrofia** (sinal da tangente positivo). E a **cronicidade**, com o tempo entre lesão e reparo.\n\n**Os fatores do paciente e do ombro.** **Tabagismo**, **diabetes**, **hipercolesterolemia**, **osteoporose**, obesidade; distância acromioumeral abaixo de 7 mm, que sugere lesão maciça crônica; e um **ângulo crítico** alto.\n\n**Por que as outras opções ficaram atrás.** O **sexo masculino** não é fator de pior prognóstico. Uma **retração de 1,5 cm** é pequena, bem longe da glenoide. E **30% de infiltração** ainda corresponde a um Goutallier intermediário, com menos gordura que músculo; o risco dispara quando a gordura se iguala ou supera o músculo. A idade acima de 65 anos é o fator mais robusto e universal.\n\n**Na prova:** o preditor mais consistente de falha do reparo do manguito é **idade acima de 65 anos**; depois vêm tamanho, retração e **Goutallier 3 e 4**.",
-  "correta": "**Idade acima de 65 anos.** É o fator mais consistentemente associado a rerruptura e pior resultado, pela menor qualidade óssea do tubérculo maior, menor potencial biológico da entese e lesões mais crônicas.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), Box 51.5",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0236": {
@@ -3632,17 +3685,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0299": {
+  "conceito": "A pergunta é um número só, e o Campbell 15 o dá numa frase. Vale também entender por que ele é baixo.\n\n**O número** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2174). A tendinite calcária começa depois dos 30 anos, atinge cerca de 10% da população, sobretudo mulheres de 30 a 60 anos, e é **bilateral em 10%**. A grande maioria é unilateral, e muitos depósitos nem dão sintoma.\n\n**Uma comparação que ajuda a não confundir.** Na **rotura do manguito**, a bilateralidade é muito maior: quem tem uma rotura completa sintomática tem **50%** de chance de uma rotura assintomática do outro lado, e depois dos **66 anos** metade das roturas é bilateral. Na **capsulite adesiva**, 20% a 30% afetam o outro ombro, e nos diabéticos chega a 50%. A banca às vezes troca esses números entre as doenças.\n\n**O resto do retrato.** Supraespinal a 1,5 a 2 cm da inserção; fase dolorosa é a reabsorção; agulhamento guiado por ultrassom primeiro; cirurgia mais provável com depósito maior que 1 cm.\n\nA epidemiologia está na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**A) 10%.** É a bilateralidade da tendinite calcária no Campbell 15; a grande maioria é unilateral.",
   "incorretas": {
-   "B": "30% superestima a bilateralidade descrita para a tendinopatia calcária.",
-   "C": "50% significaria que metade dos pacientes tem os dois ombros acometidos ao mesmo tempo, o que não corresponde à apresentação habitual, que é de dor num ombro só.",
-   "D": "70% descreveria uma doença essencialmente bilateral, o que não é o caso da tendinopatia calcária."
+   "B": "**30%** está perto da bilateralidade da capsulite adesiva (20% a 30%), não da calcária.",
+   "C": "**50%** é a chance de rotura do manguito no ombro contralateral, outra doença.",
+   "D": "**70%** não corresponde a nenhuma das doenças do ombro descritas; a calcária é quase sempre unilateral."
   },
-  "conceito": "A **tendinopatia calcária** é a formação de um depósito de cálcio dentro de um tendão do manguito rotador, geralmente o supraespinhal. Ela aparece mais em mulheres entre os 30 e os 50 anos e costuma acometer **um ombro só**. A presença de depósitos nos dois ombros ao mesmo tempo, a **bilateralidade concomitante**, é descrita em cerca de **10%** dos casos, segundo a referência da banca.\n\nIsso tem duas consequências práticas.\n\nVale examinar o outro ombro e, se houver queixa, radiografá-lo. Um depósito sem sintomas no lado oposto pode ser encontrado por acaso e ajuda a confirmar o diagnóstico.\n\nO depósito que **não dói não precisa de tratamento**. A doença costuma se resolver sozinha: o cálcio se forma, fica parado por um tempo e depois é reabsorvido pelo próprio organismo. Tratar um ombro sem sintomas seria criar um problema.\n\nPara comparar, o **ombro congelado** (capsulite adesiva) é bem mais frequentemente bilateral, sobretudo em pessoas com diabetes. São doenças diferentes: uma é um depósito de cálcio num tendão vivo; a outra, uma retração da cápsula da articulação.",
-  "correta": "10%. A tendinopatia calcária é predominantemente unilateral, com depósitos simultâneos nos dois ombros em cerca de um a cada dez pacientes.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 46"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), pp. 2162 a 2174",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0300": {
@@ -4309,14 +4363,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0343": {
+  "conceito": "A ordem de frequência dos tendões acometidos pela tendinite calcária segue, em boa parte, a ordem de frequência das doenças do manguito: o supraespinal na frente.\n\n**O que o Campbell 15 diz** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2174). O local mais comum do depósito é **dentro do supraespinal**, a **1,5 a 2 cm** da inserção na tuberosidade maior. O livro não detalha a ordem dos outros tendões; a banca a dá como **supraespinal, infraespinal e subescapular**, a sequência clássica.\n\n**Como raciocinar.** O supraespinal e o infraespinal se unem cerca de 15 mm antes da inserção e formam uma lâmina contínua no alto e atrás da cabeça; o infraespinal vem logo depois do supraespinal porque compartilha a região posterossuperior. O subescapular é anterior, separado pelo intervalo rotador, e é menos acometido.\n\nA tendinite calcária está na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**B) supraespinal, infraespinal e subescapular.** É a ordem de frequência dada pela banca; o Campbell 15 confirma o supraespinal como o local mais comum.",
   "incorretas": {
-   "A": "**Inverte os dois últimos.** O infraespinal é mais acometido que o subescapular.",
-   "C": "**Inverte os dois primeiros.** O supraespinal é, com folga, o tendão mais acometido.",
-   "D": "**Ordem inversa.** O supraespinal é o primeiro, e não o último."
+   "A": "**Supraespinal, subescapular e infraespinal** acerta o primeiro e inverte os dois seguintes.",
+   "C": "**Infraespinal, supraespinal e subescapular** tira o supraespinal do primeiro lugar.",
+   "D": "**Infraespinal, subescapular e supraespinal** põe o mais acometido por último."
   },
-  "conceito": "**Onde o cálcio se deposita.** A tendinite calcária é o depósito de **hidroxiapatita** de cálcio dentro do tendão do manguito, mais comum em **mulheres** de 30 a 60 anos, com associação a diabetes e doenças endócrinas. A ordem de acometimento é **supraespinal**, com grande folga, seguido pelo **infraespinal** e, bem atrás, pelo **subescapular**. O depósito fica tipicamente **1,5 a 2 cm** proximal à inserção no tubérculo maior, na zona crítica.\n\n**A doença não é degenerativa.** Diferente da lesão do manguito, é uma doença **ativa e cíclica**, mediada por células, que costuma se **resolver sozinha**. Uhthoff descreveu as fases: **pré-calcificação**, com metaplasia fibrocartilaginosa; **calcificação**, dividida em **formativa** (depósito denso, calcário, pouco doloroso), **repouso** e **reabsortiva**; e **pós-calcificação**, com reparo do tendão. A fase **reabsortiva** é a mais **dolorosa**: o cálcio fica pastoso, como pasta de dente, sob pressão, e extravasa para a bursa, causando dor aguda intensa, que tira o sono.\n\n**A imagem.** Radiografias em AP com **rotação** neutra, interna e externa localizam o depósito: o supraespinal aparece em cima do tubérculo maior no AP neutro; o **infraespinal** fica mais evidente na **rotação interna**, que traz a face posterior de perfil; o **subescapular**, na rotação externa e na axilar. A classificação de **Gärtner** descreve o aspecto: tipo I denso e bem delimitado (fase formativa), tipo II intermediário, tipo III translúcido e mal delimitado (reabsortivo, prestes a se resolver).\n\n**O tratamento.** Analgesia, anti-inflamatório e fisioterapia na maioria. Na dor persistente, **infiltração** subacromial, **barbotagem** guiada por ultrassom (lavagem com agulha) e **ondas de choque**, que têm boa evidência para depósitos tipo I e II. Na falha, **remoção artroscópica** do depósito, com reparo do tendão se o defeito for grande.\n\n**Na prova:** tendinite calcária: **supraespinal > infraespinal > subescapular**; fase **reabsortiva** é a mais dolorosa.",
-  "correta": "**Supraespinal, infraespinal e subescapular.** O supraespinal responde pela grande maioria dos casos, seguido pelo infraespinal e, com frequência bem menor, pelo subescapular.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2174",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "alerta": "O Campbell 15 confirma o supraespinal como o tendão mais acometido, mas não detalha a ordem dos demais; a sequência do gabarito oficial (B) foi mantida.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0344": {
@@ -4507,14 +4566,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0353": {
+  "conceito": "A transferência do grande dorsal para a rotura posterossuperior só funciona se houver alguém puxando do outro lado. A questão pede quem.\n\n**A transferência** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), pp. 2169 a 2171; Campbell's Operative Orthopaedics, 15ª ed., cap. 14 (transferências tendíneas)). O grande dorsal é liberado da diáfise, passado entre o manguito posterior e o deltoide e fixado no úmero superolateral, para substituir o supraespinal e o infraespinal como rotador externo e depressor da cabeça. Os ganhos são pequenos, mas significativos. O cap. 14 define a **indicação ideal**: **redondo menor e subescapular íntegros**, elevação ativa acima de 90 graus e sem cirurgia prévia. Os piores resultados vêm com cirurgia prévia, **insuficiência do subescapular**, atrofia avançada do redondo menor, pseudoparalisia e índice acromioumeral abaixo de 6 mm.\n\n**Por que o subescapular.** É o par de forças anterior. Sem ele, o grande dorsal puxa a cabeça para trás sem contraposição, e ela não fica centrada na glenoide.\n\n**Por que não as outras.** O peitoral maior e o redondo maior não fazem o par com o manguito posterior; o peitoral é ele mesmo a opção de transferência para a rotura **anterossuperior**, quando o subescapular falha.\n\n**Os cuidados.** Os nervos **axilar**, junto à ponta proximal do tendão, e **radial**, logo abaixo; órtese em 45 graus de abdução e 30 a 45 de rotação externa por 6 semanas.\n\nAs transferências estão na seção \"Irreparáveis: o que mais existe além do grande dorsal\" do resumo.",
+  "correta": "**A) subescapular.** É o par de forças anterior que permite à transferência posterior centralizar a cabeça; com ele roto, o resultado piora.",
   "incorretas": {
-   "B": "O peitoral maior não faz parte do equilíbrio entre frente e trás do manguito. Ele é o músculo transferido quando o subescapular é que está sem conserto.",
-   "C": "O redondo maior muitas vezes é transferido junto com o grande dorsal. Não é uma estrutura cuja integridade seja exigida, e pode até fazer parte da transferência.",
-   "D": "O redondo menor fica atrás, do mesmo lado da lesão que se quer compensar. Não é o contrapeso necessário para a transferência funcionar."
+   "B": "**Peitoral maior** não é o par do manguito posterior; é a transferência para a rotura anterossuperior.",
+   "C": "**Redondo maior** não forma o par de forças com o manguito posterior.",
+   "D": "**Redondo menor** íntegro também ajuda, mas o requisito principal do par de forças é o subescapular."
   },
-  "conceito": "Quando o manguito rotador tem uma rotura grande e sem conserto na parte de cima e de trás (supraespinhal e infraespinhal), o paciente perde a capacidade de rodar o braço para fora e a cabeça do úmero perde centralização. A **transferência do grande dorsal**, descrita por Gerber, leva o tendão desse músculo das costas até a tuberosidade maior do úmero, onde ele passa a fazer o papel do infraespinhal: rodar o braço para fora e ajudar a segurar a cabeça para baixo.\n\nO requisito mais importante para essa cirurgia funcionar é ter o **subescapular íntegro**. O motivo é o **equilíbrio entre a frente e a trás**. A cabeça do úmero fica centrada porque o subescapular, na frente, puxa contra os músculos de trás (infraespinhal e redondo menor). É como duas pessoas segurando uma corda de lados opostos. Se o cirurgião coloca um novo músculo puxando por trás, precisa haver alguém puxando pela frente para equilibrar. Sem o subescapular, a transferência só empurra a cabeça para fora do centro, sem produzir rotação útil.\n\nPor isso, antes da cirurgia, o subescapular é examinado com testes como o *lift-off* (afastar a mão das costas) e o *belly-press* (apertar a barriga), e avaliado na ressonância.\n\nOs outros requisitos são os de qualquer transferência: ombro com bom movimento passivo, sem artrose, deltoide funcionando e paciente capaz de fazer uma reabilitação longa. Hoje, a transferência do **trapézio inferior** vem sendo preferida em muitos serviços, mas o requisito do subescapular íntegro vale para as duas.",
-  "correta": "Subescapular. É o contrapeso da frente; sem ele, a transferência por trás não gera rotação útil nem centraliza a cabeça do úmero.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), pp. 2169 a 2171",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 14 (transferências tendíneas)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0354": {
@@ -4767,14 +4831,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0371": {
+  "conceito": "A radiografia mostra o depósito; a história clínica diz a fase. É preciso usar as duas para responder.\n\n**A imagem.** Incidência axilar do ombro: a cabeça do úmero de perfil e a glenoide à direita. Na face **anterior** da cabeça, junto à **tuberosidade menor**, há um depósito denso, de contorno nítido e bem delimitado. É o território do **subescapular**, que se insere na tuberosidade menor.\n\n**A fase.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries) (p. 2175) descreve a fase de **calcificação** em três momentos: formativo, **repouso** e reabsorção. No **repouso**, o depósito é **bem delimitado**, denso, e a dor é pouca ou crônica moderada; na **reabsorção**, o depósito fica pastoso, de contorno borrado, às vezes vazando para a bursa, e a dor é súbita e intensa. A paciente tem dor **leve**, insidiosa, há 1 ano, e o depósito é nítido: repouso.\n\n**Uma nota sobre o tendão.** O supraespinal é o local mais comum, a 1,5 a 2 cm da inserção; mas o depósito desta imagem está na frente, onde só o subescapular se insere. É por isso que a banca escolheu uma radiografia axilar.\n\n**A conduta** numa fase quieta e pouco dolorosa é conservadora; o agulhamento guiado por ultrassom com corticoide é o tratamento não operatório de escolha.\n\nAs fases estão na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**A) Subescapular e fase de calcificação em repouso.** O depósito nítido fica junto à tuberosidade menor, e a dor leve e crônica combina com o repouso.",
   "incorretas": {
-   "B": "**Tendão errado.** A fase está certa, mas o depósito do supraespinal fica acima do tubérculo maior, sob o acrômio, e não medial.",
-   "C": "**Fase errada.** O tendão está certo, mas a reabsorção mostra depósito nebuloso e mal delimitado, com dor intensa.",
-   "D": "**Tendão e fase errados.** Depósito sobre o tubérculo maior com aspecto em nuvem e dor aguda não é o quadro apresentado."
+   "B": "**Supraespinal em repouso** acerta a fase, mas o depósito da axilar está na frente, junto à tuberosidade menor.",
+   "C": "**Subescapular em reabsorção** acerta o tendão, mas a reabsorção dá dor súbita e intensa e depósito borrado.",
+   "D": "**Supraespinal em reabsorção** erra o tendão e a fase."
   },
-  "conceito": "**Como localizar o depósito na radiografia.** Na tendinopatia calcária, o tendão acometido é deduzido pela posição do cálcio e pela rotação do úmero. No **AP em rotação neutra**, o depósito do **supraespinal** fica logo acima do tubérculo maior, sob o acrômio. Na **rotação interna**, o **infraespinal** aparece de perfil, lateral e posterior. Na **rotação externa** e na **axilar**, o **subescapular** aparece de perfil, **medial**, junto ao **tubérculo menor**, projetando-se sobre a cabeça ou abaixo do coracoide. Um depósito medial e anterior, perto do tubérculo menor, aponta para o subescapular.\n\n**As fases de Uhthoff.** A doença é cíclica. **Pré-calcificação**: metaplasia fibrocartilaginosa do tendão, sem dor relevante. **Calcificação**, com três etapas: **formativa**, em que o cálcio se deposita, denso e **bem delimitado**; **repouso**, em que o depósito fica estável, **homogêneo**, com contornos nítidos, e a dor é leve ou ausente; e **reabsortiva**, em que células fagocíticas e neovasos dissolvem o cálcio, que fica **pastoso**, com contornos **mal definidos**, \"em nuvem\", e a dor fica intensa, às vezes com extravasamento para a bursa. **Pós-calcificação**: reparo do tendão com tecido de granulação, com melhora progressiva.\n\n**Como ler a clínica junto.** Dor **leve**, de um ano, sem crise aguda, com depósito **denso e bem delimitado**, é a fase de **repouso**. Dor súbita, intensa, que tira o sono, com depósito **nebuloso**, é a **reabsorção**. A classificação de **Gärtner** traduz isso: tipo I denso e nítido, tipo II misto, tipo III translúcido e em nuvem.\n\n**O que fazer.** Na fase de repouso, com dor leve, tratamento conservador; se persistir, **barbotagem** guiada por ultrassom ou **ondas de choque**, mais eficazes em depósitos densos. Na reabsorção, o quadro tende a se resolver sozinho; analgesia e infiltração ajudam na crise.\n\n**Na prova:** depósito **medial**, perto do tubérculo menor = **subescapular**; **denso e bem delimitado** com dor leve = fase de **repouso**; nebuloso com dor intensa = **reabsorção**.",
-  "correta": "**Subescapular e fase de repouso.** O depósito medial, junto ao tubérculo menor, localiza o subescapular, e o aspecto denso e bem delimitado com dor leve de longa data indica a fase de repouso.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), pp. 2174 e 2175",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0372": {
@@ -5051,14 +5119,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0387": {
+  "conceito": "GOUTALLIER não foi escrito em porcentagens, e a questão as usa. O jeito de responder é traduzir as definições do livro.\n\n**Os graus** (Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)): **0**, músculo normal; **1**, algumas estrias de gordura; **2**, **mais músculo que gordura**; **3**, músculo e gordura **iguais**; **4**, **mais gordura que músculo**. A classificação nasceu na tomografia, e FUCHS a adaptou para a ressonância.\n\n**A tradução.** Com **60%** de gordura, a gordura supera o músculo: é o grau **4**. O grau 3 corresponderia a cerca de metade; o 2, a menos da metade.\n\n**O que fazer com o número.** Os graus **3 e 4** indicam rotura antiga, com mais falha e provavelmente irreparável; o Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries) diz que os autores **não reparam o grau 4** e avisam o paciente do risco no grau 3. Com coto tendíneo menor que 15 mm e sinal da tangente positivo, a falha chega a 90%. A gordura também marca o tempo: é moderada aos 3 anos e grave aos 5 anos de sintomas.\n\nO Box 51.5 usa o mesmo raciocínio quando lista a infiltração gordurosa **acima de 50%** como fator de mau resultado.\n\nA classificação está na seção \"Imagem: HAMADA, acrômio, ângulo crítico e o músculo\" do resumo.",
+  "correta": "**D) 4.** Com 60% de gordura, há mais gordura que músculo, que é a definição do grau 4 de GOUTALLIER.",
   "incorretas": {
-   "A": "**Músculo normal.** O grau 0 não tem gordura.",
-   "B": "**Menos gordura que músculo.** No grau 2 a gordura é evidente, mas ainda minoritária.",
-   "C": "**Proporção igual.** O grau 3 corresponde a gordura igual a músculo, em torno de metade."
+   "A": "**0** é o músculo normal, sem gordura.",
+   "B": "**2** ainda tem mais músculo que gordura.",
+   "C": "**3** é a proporção igual entre músculo e gordura; com 60% de gordura, já passou dela."
   },
-  "conceito": "**O que Goutallier mede.** Mede a **degeneração gordurosa do músculo** do manguito, e não o tamanho da lesão do tendão. É a pergunta que decide se vale a pena reparar: o tendão pode ser suturado, mas o músculo que virou gordura não volta a ser músculo. A infiltração é **irreversível**, continua progredindo se o tendão não cicatrizar e é o preditor mais consagrado de **rerruptura** e de mau resultado funcional.\n\n**Os graus.** Descritos na **tomografia** e adaptados à ressonância (Fuchs), no corte **sagital oblíquo em Y**, o mais lateral em que a espinha encontra o corpo da escápula. **Grau 0**: músculo normal, sem gordura. **Grau 1**: algumas **estrias** de gordura. **Grau 2**: gordura evidente, mas **menos gordura que músculo**. **Grau 3**: **gordura igual a músculo**. **Grau 4**: **mais gordura que músculo**. Um músculo com **60%** de gordura tem mais gordura que músculo: grau **4**.\n\n**O que cada grau significa.** Graus **0 a 2** são compatíveis com bom resultado após reparo. Graus **3 e 4**, sobretudo no **infraespinal**, indicam lesão **irreparável** ou de alto risco de falha, e levam a alternativas: **reparo parcial**, **reconstrução capsular superior**, **transferências tendíneas** (grande dorsal, trapézio inferior) ou **artroplastia reversa** no idoso. A **atrofia** é avaliada separadamente pelo **sinal da tangente** e pela classificação de **Thomazeau**.\n\n**O tempo conta.** A gordura começa a aparecer meses após a ruptura, e o grau 2 do supraespinal costuma surgir em cerca de 3 anos; por isso o reparo das lesões sintomáticas em jovens não deve ser adiado indefinidamente.\n\n**Na prova:** Goutallier: **2** menos gordura que músculo, **3** igual, **4** **mais gordura que músculo** (como 60%); 3 e 4 predizem falha.",
-  "correta": "**Grau 4.** Com 60% de gordura, há mais gordura que músculo, o estágio mais avançado da classificação, associado a lesão irreparável ou a reparo com alta falha.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2156",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0388": {
@@ -5185,14 +5258,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0396": {
+  "conceito": "Duas transferências competem na rotura posterossuperior irreparável: o grande dorsal e o trapézio inferior. Só uma não alcança o úmero sozinha.\n\n**O trapézio inferior** (Campbell's Operative Orthopaedics, 15ª ed., cap. 14 (transferências tendíneas); Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries)). Nasce de T2 a T10 e se insere no dorso da espinha medial da escápula, numa pegada de cerca de 29 mm; é inervado pelo acessório. A sua **linha de tração** é a mais parecida com a do **infraespinal**, e ele supera o grande dorsal nos braços de momento de abdução e de rotação externa; os resultados são excelentes, sobretudo no paciente com **atraso em rotação externa** (sinal da bandeira). O problema é o comprimento: da espinha da escápula até a tuberosidade maior falta tendão, e a transferência **exige um aloenxerto de tendão de AQUILES**.\n\n**O grande dorsal** tem tendão longo, que chega ao úmero superolateral sem enxerto, passado entre o manguito posterior e o deltoide.\n\n**Na paralisia obstétrica.** O capítulo lido descreve o enxerto obrigatório na transferência do trapézio inferior para o manguito do adulto; as alternativas da paralisia obstétrica tratam de outra indicação.\n\nAs transferências estão na seção \"Irreparáveis: o que mais existe além do grande dorsal\" do resumo.",
+  "correta": "**C) trapézio inferior para lesão posterossuperior do manguito rotador.** O tendão não alcança o úmero, e o Campbell 15 descreve a transferência com aloenxerto de AQUILES.",
   "incorretas": {
-   "A": "Na paralisia obstétrica, as distâncias são curtas e o tendão é fixado diretamente. O enxerto não é imprescindível.",
-   "B": "A transferência do grande dorsal na paralisia obstétrica (técnica de L'Episcopo) é feita com fixação direta, sem enxerto.",
-   "D": "O tendão do grande dorsal é longo o bastante para alcançar a tuberosidade maior no adulto, e a técnica de Gerber não exige enxerto."
+   "A": "**Trapézio inferior na paralisia obstétrica** não é a indicação em que o livro descreve o enxerto obrigatório.",
+   "B": "**Grande dorsal na paralisia obstétrica** usa o próprio tendão, longo o bastante.",
+   "D": "**Grande dorsal para a lesão posterossuperior** alcança o úmero com o próprio tendão, sem enxerto."
   },
-  "conceito": "Numa **transferência de tendão**, um músculo saudável é desviado para fazer o trabalho de outro que se perdeu. Para isso, o tendão dele precisa alcançar o novo ponto de fixação sem ficar esticado demais. Quando não alcança, é preciso um **enxerto de tendão** para fazer a ponte. A pergunta da questão é, portanto, geométrica: o tendão chega lá ou não?\n\nPara a rotura sem conserto do manguito na parte de cima e de trás (supraespinhal e infraespinhal), existem duas transferências clássicas.\n\nO **grande dorsal** (latíssimo do dorso) é o grande músculo das costas. Seu tendão é longo e, depois de solto do úmero e passado por trás, chega diretamente até a tuberosidade maior. A técnica de Gerber não exige enxerto.\n\nO **trapézio inferior** é a parte de baixo do trapézio, que se prende na espinha da escápula. A direção de puxada dele é quase igual à do infraespinhal, o que é uma grande vantagem. Mas seu tendão é **curto**: solto da espinha da escápula, ele fica alguns centímetros antes da tuberosidade maior. Por isso, a técnica descrita por Elhassan **exige** um enxerto para fazer a ponte, geralmente um aloenxerto de tendão calcâneo.\n\nMesmo com esse passo a mais, o trapézio inferior vem sendo muito usado, porque já trabalha junto com a rotação externa e é mais fácil de reeducar do que o grande dorsal, que originalmente roda o braço para dentro.\n\nNa paralisia obstétrica (lesão do plexo braquial no parto), as transferências são feitas em crianças, com distâncias curtas, e o tendão é fixado diretamente, sem enxerto.",
-  "correta": "Trapézio inferior para lesão posterossuperior do manguito rotador. O tendão desse músculo é curto e não alcança a tuberosidade maior sem um enxerto de ponte.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 14 (transferências tendíneas)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0397": {
@@ -6104,17 +6182,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0453": {
+  "conceito": "Esta questão pede duas coisas: o tendão e o ponto exato do depósito dentro dele. O segundo dado é o que derruba a maioria.\n\n**O endereço do cálcio** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2174). O Campbell 15 diz que o local mais comum é **dentro do supraespinal**, **a 1,5 a 2 cm da inserção** na tuberosidade maior. O depósito não fica colado ao osso, mas um pouco medial a ele, na substância do tendão.\n\n**Por que não na inserção.** O livro situa o depósito na substância do tendão, um pouco medial à tuberosidade maior; a alternativa que o coloca junto ao osso descreve outro lugar.\n\n**A importância prática.** Saber o local orienta o **agulhamento guiado por ultrassom** e a remoção artroscópica, em que o depósito é localizado (às vezes com ultrassom intraoperatório) e retirado com o shaver; acromioplastia só se houver impacto.\n\n**Na prova:** supraespinal, **1,5 a 2 cm** da inserção, mulheres de 30 a 60 anos, 10% bilaterais.\n\nO local está na seção \"Tendinite calcária por dentro\" do resumo.",
+  "correta": "**C) supraespinal, 2 cm distante da inserção óssea.** O depósito fica dentro do supraespinal, a 1,5 a 2 cm da tuberosidade maior, e não junto ao osso.",
   "incorretas": {
-   "A": "**Tendão e local errados.** O subescapular é o menos acometido, e o depósito não fica junto ao osso.",
-   "B": "**Local errado.** O tendão está certo, mas a calcificação junto à inserção sugere entesopatia degenerativa, não a tendinite calcária típica.",
-   "D": "**Tendão errado.** A distância está certa, mas o tendão mais acometido é o supraespinal."
+   "A": "**Subescapular, junto à inserção** erra o tendão e o ponto.",
+   "B": "**Supraespinal, junto à inserção** acerta o tendão, mas o depósito é intratendíneo, a 1,5 a 2 cm do osso.",
+   "D": "**Subescapular, a 2 cm** acerta a distância, mas no tendão errado."
   },
-  "conceito": "**Onde o cálcio aparece.** Na tendinopatia calcária, o tendão mais acometido é o **supraespinal**, com grande folga, seguido pelo infraespinal e pelo subescapular. O depósito fica tipicamente **1,5 a 2 cm proximal** à inserção no tubérculo maior, dentro do tendão, na chamada **zona crítica** descrita por Codman, e não colado ao osso. Essa é a mesma região onde começam as lesões degenerativas do manguito, mas as duas doenças são diferentes.\n\n**Por que ali.** A zona crítica é uma região de **hipovascularização relativa** e de maior carga mecânica, e a hipóxia local favorece a **metaplasia fibrocartilaginosa** dos tenócitos, que então depositam **hidroxiapatita**. É uma doença **mediada por células**, ativa, que tende à **resolução espontânea**, diferente da calcificação distrófica.\n\n**Não confundir com a entesopatia.** Calcificações **na inserção** óssea, junto ao tubérculo, costumam ser **degenerativas** ou **distróficas** (entesopatia calcificante), vistas em idosos, com tendão degenerado e muitas vezes lesão do manguito. Elas não seguem o ciclo de Uhthoff e respondem mal à barbotagem.\n\n**O ciclo e o tratamento.** Fases de Uhthoff: pré-calcificação, **formativa**, **repouso**, **reabsortiva** (a mais dolorosa, com o cálcio pastoso) e pós-calcificação. Tratamento conservador na maioria; **barbotagem** guiada por ultrassom e **ondas de choque** nos persistentes; **remoção artroscópica** nos refratários, com reparo do defeito se ele for grande.\n\n**Na prova:** tendinite calcária: **supraespinal**, a cerca de **2 cm da inserção** (zona crítica); calcificação junto ao osso sugere entesopatia degenerativa.",
-  "correta": "**Supraespinal, 2 cm distante da inserção.** O depósito fica tipicamente na zona crítica, 1,5 a 2 cm proximal ao tubérculo maior, e não na própria inserção.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 51"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2174",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0454": {
@@ -6363,20 +6442,21 @@
   "conferido": false
  },
  "ombro-cotovelo-0468": {
+  "conceito": "A artropatia do manguito tem uma assinatura radiográfica que vem da mecânica: sem manguito, a cabeça sobe. Qualquer alternativa que fale em cabeça descendo contraria o mecanismo.\n\n**A descrição de NEER** (Campbell's Operative Orthopaedics, 15ª ed., cap. 13 (artropatia do manguito)). NEER, CRAIG e FUKUDA (1983) chamaram de cuff-tear arthropathy a artrose associada à rotura crônica maciça: dor, movimento ativo ruim com passivo quase normal, crepitação, fraqueza e às vezes uma grande coleção de líquido sob o deltoide. Na radiografia: **subida da cabeça**, uma **pseudoarticulação entre a cabeça e o acrômio** e **perda do espaço glenoumeral**. A classificação de HAMADA (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries)) mostra a progressão: intervalo acromioumeral de 5 mm ou menos, depois escavação do acrômio, depois estreitamento glenoumeral e, por fim, colapso da cabeça.\n\n**O sinal do supercílio.** O Campbell 15 cita a **esclerose subacromial** (sinal do supercílio, sourcil) entre os sinais de doença crônica do manguito, ao lado dos cistos e da esclerose da tuberosidade maior.\n\n**Lendo as alternativas.** Três delas trazem **subluxação inferior** da cabeça, o oposto da migração superior descrita. Só uma não traz esse erro: a que junta o sinal do supercílio, a diminuição do espaço articular e o osteófito inferior. O osteófito inferior da cabeça não aparece no texto lido, mas é a única combinação sem a subluxação inferior.\n\nA questão está sem gabarito oficial; pelo Campbell 15, a resposta mais coerente é a **A**.\n\nA artropatia está na seção \"Artropatia e prótese reversa\" do resumo.",
+  "correta": "**A) sinal da sobrancelha, osteófito inferior na cabeça umeral e diminuição do espaço articular.** É a única alternativa sem subluxação inferior; na artropatia, a cabeça sobe e o espaço glenoumeral diminui.",
   "incorretas": {
-   "B": "**Subluxação inferior contradiz o padrão típico.** A cabeça tende a migrar superiormente quando perde a contenção do manguito.",
-   "C": "**O mesmo deslocamento inferior invalida a opção.** O sinal da sobrancelha e o estreitamento podem coexistir, mas não corrigem esse erro.",
-   "D": "**Osteófito e estreitamento são possíveis; subluxação inferior, não.** A migração característica é para cima."
+   "B": "**Subluxação inferior, sobrancelha e osteófito** traz a cabeça descendo, contra a migração superior descrita.",
+   "C": "**Espaço diminuído, subluxação inferior e sobrancelha** põe a cabeça para baixo, o oposto do mecanismo.",
+   "D": "**Osteófito, espaço diminuído e subluxação inferior** repete o erro da subluxação inferior."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "referencias": [
-   "https://doi.org/10.2214/AJR.14.13815",
-   "https://www.jhsgo.org/article/S2589514124000306/pdf"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 13 (artropatia do manguito)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), Tabela 51.4",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
   ],
-  "conceito": "**Na artropatia por rotura maciça do manguito, a cabeça umeral sobe.** A perda da contenção do manguito permite migração superior, reduz o intervalo acromioumeral e desgasta a face inferior do arco coracoacromial. Esse remodelamento acromial é descrito como acetabularização ou sinal da sobrancelha. Com a artropatia estabelecida também podem aparecer estreitamento glenoumeral e osteófito inferior da cabeça. O detalhe que elimina três alternativas é a direção do deslocamento: não se espera subluxação inferior.",
-  "correta": "**A, sinal da sobrancelha, osteófito inferior e espaço articular reduzido (resposta provável).** Os três achados são compatíveis com a artropatia crônica do manguito.",
   "provavel": "A",
-  "geradoEm": "2026-10-18",
+  "alerta": "Questão sem gabarito oficial. A resposta A é a única sem subluxação inferior, que contraria a migração superior descrita no Campbell 15; o osteófito inferior não aparece no texto lido.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0469": {
@@ -7648,19 +7728,20 @@
   "conferido": false
  },
  "ombro-cotovelo-0533": {
+  "conceito": "O caso tem todos os dados que o Campbell 15 usa para indicar o reparo: um paciente de 50 anos, um evento definido no esporte, perda de força e uma rotura ainda boa para reparar.\n\n**Os dados da rotura.** Supraespinal com **retração de 1 cm** e **GOUTALLIER II** (mais músculo que gordura). O livro só considera a rotura provavelmente irreparável a partir dos graus **3 e 4**, e a retração que piora o resultado é **acima de 2,5 cm** (Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), Box 51.5; Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)).\n\n**Os dados do paciente.** 50 anos, ativo, com dor e limitação de rotação externa e abdução depois de um evento no tênis. O Campbell 15 indica a cirurgia no jovem com lesão aguda e no paciente com trauma definido que perde a força de repente; os autores são mais agressivos abaixo dos 63 anos, quando a capacidade de cicatrizar ainda é boa.\n\n**O tempo.** A rotura aguda traumática deveria ser reparada em até **3 semanas**; o resultado cai muito depois de **4 meses**. Aos 6 meses, a janela ideal passou, mas a rotura ainda é reparável, e cada mês a mais aumenta a gordura (moderada aos 3 anos, grave aos 5). Insistir no tratamento conservador só piora as condições do reparo.\n\n**Por que não as outras.** Tipoia, anti-inflamatório, opioide e infiltração tratam sintomas e deixam a rotura crescer: 60% das completas aumentam em 5 anos.\n\nAs indicações estão na seção \"História natural, indicações e o que piora o resultado\" do resumo.",
+  "correta": "**E) cirurgia de reparo do manguito rotador.** Paciente ativo, evento definido, retração de 1 cm e GOUTALLIER II: a rotura é reparável, e esperar mais só a piora.",
   "incorretas": {
-   "A": "**Tipoia por seis semanas.** Imobilização isolada não restaura a continuidade tendínea e pode agravar a rigidez; não aborda a perda funcional persistente.",
-   "B": "**Anti-inflamatórios e fisioterapia.** A reabilitação pode melhorar dor e função, inclusive em algumas rupturas completas. É uma opção clínica legítima, mas a banca priorizou o reparo diante da persistência dos sintomas e da pequena retração.",
-   "C": "**Opioides.** Podem mascarar a dor, sem corrigir o déficit mecânico, e acrescentam riscos relevantes; não são o tratamento da ruptura.",
-   "D": "**Infiltração.** Pode aliviar sintomas em situações selecionadas, mas não repara o tendão nem substitui a análise da função e da reparabilidade."
+   "A": "**Tipoia por 6 semanas** é o cuidado depois do reparo, não o tratamento da rotura.",
+   "B": "**Anti-inflamatório e fisioterapia** são a primeira linha do idoso pouco ativo, não do paciente de 50 anos com rotura traumática reparável.",
+   "C": "**Opioide** controla a dor, mas não muda a rotura, que tende a crescer.",
+   "D": "**Infiltração** dá alívio de curta duração e não repara o tendão."
   },
-  "alerta": "O gabarito oficial é E. O enunciado não informa se a ruptura é de espessura total nem descreve tratamento conservador prévio; esses dados influenciam a decisão real. A indicação de reparo é plausível pelo déficit funcional persistente, pequena retração e infiltração gordurosa limitada, mas não é obrigatória para toda ruptura com essas características.",
   "referencias": [
-   "https://www.aaos.org/globalassets/quality-and-practice-resources/rotator-cuff/rotator-cuff-2025/rotator-cuff-cpg.pdf"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), pp. 2163 a 2165",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity)",
+   "Resumo OrtoQuestões: Manguito rotador, exame, roturas e tratamento (versão 2)"
   ],
-  "conceito": "**Reparabilidade não é sinônimo de indicação automática.** Aos 50 anos, com perda funcional por seis meses, retração de apenas 1 cm e Goutallier II, o tendão ainda parece passível de reparo e o músculo não apresenta infiltração gordurosa avançada. Por isso a banca favorece o reparo cirúrgico. Na prática, é preciso confirmar a espessura e a extensão da ruptura, a intensidade do déficit, a demanda do paciente e o que já foi tentado. A diretriz da AAOS reconhece melhora com fisioterapia mesmo em rupturas completas sintomáticas, embora algumas aumentem e desenvolvam atrofia ao longo dos anos. Assim, não se deve afirmar que o tratamento conservador necessariamente falhará neste caso.",
-  "correta": "**E, reparo do manguito rotador (gabarito oficial).** É a alternativa que trata diretamente a ruptura em um paciente relativamente jovem, ainda sintomático e com fatores de reparabilidade favoráveis. A ressalva acima impede transformar esses dados, isoladamente, em indicação cirúrgica universal.",
-  "geradoEm": "2026-10-18",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "ombro-cotovelo-0534": {
