@@ -49,6 +49,7 @@ export const GRUPOS: Grupo[] = [
       { destino: '/ranking', rotulo: 'Ranking', texto: 'Acompanhe sua posição e evolução.', icone: 'ranking', chaves: 'posicao classificacao pontos missoes' },
       { destino: '/ligas', rotulo: 'Liga da Residência', texto: 'Participe da competição entre serviços.', icone: 'liga', assinante: true, chaves: 'liga servico residencia equipe' },
       { destino: '/conquistas', rotulo: 'Conquistas', texto: 'Explore seus emblemas e recompensas.', icone: 'conquistas', chaves: 'emblemas medalhas trofeus vitrine inventario' },
+      { destino: '/bichos', rotulo: 'Sala dos bichos', texto: 'Conheça o esqueleto, o gato e a coruja.', icone: 'conquistas', novo: 'Novo', chaves: 'mascote mascotes gato coruja esqueleto album raridades bichos personagens' },
     ],
   },
   {

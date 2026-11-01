@@ -1,0 +1,62 @@
+/* A sala dos bichos (Bichos.tsx): o topo e as fichas no painel escuro da página inicial (tokens --mundo-*), cada
+   bicho num palco com a lareira à esquerda; o álbum das raridades em cartas com moldura dourada. */
+.bx { display: grid; gap: var(--e-6); }
+.bx-topo { display: grid; gap: var(--e-2); padding: clamp(1.4rem, 3.6vw, 2.25rem); border-radius: var(--mundo-raio); background: var(--mundo-painel); color: var(--mundo-tinta);
+  box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 18px 40px -24px rgba(0, 0, 0, 0.55); }
+.bx-topo__selo { display: inline-flex; align-items: center; gap: 0.4rem; margin: 0; color: var(--mundo-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.bx-topo h1 { margin: 0; font-family: var(--fonte-marca); font-size: clamp(1.9rem, 1.2rem + 2.4vw, 2.8rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; text-wrap: balance; }
+.bx-topo p:last-child { margin: 0; max-width: 56ch; color: var(--mundo-tinta-2); line-height: 1.5; }
+
+.bx-fichas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4); }
+.bx-ficha { display: grid; grid-template-rows: auto 1fr; overflow: hidden; border-radius: var(--mundo-raio); background: var(--mundo-chao); color: var(--mundo-tinta);
+  box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 18px 40px -24px rgba(0, 0, 0, 0.55); }
+/* O palco: chão de tábuas e a luz quente da lareira entrando pela esquerda. */
+.bx-palco { position: relative; isolation: isolate; display: grid; place-items: end center; height: 15rem; padding-bottom: 1.5rem; overflow: hidden;
+  background: radial-gradient(70% 80% at 0% 70%, rgba(255, 150, 60, 0.32), transparent 70%), linear-gradient(180deg, #121a17 0%, #18211d 66%, #2a1d12 66%, #1b130c 100%); }
+.bx-palco::after { content: ""; position: absolute; inset: auto 0 0; height: 34%; pointer-events: none; z-index: -1;
+  background: repeating-linear-gradient(90deg, transparent 0 46px, rgba(0, 0, 0, 0.35) 46px 48px); }
+.bx-palco__lareira { position: absolute; left: -2.5rem; bottom: 1rem; width: 6rem; height: 6rem; border-radius: 50%; z-index: -1; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(255, 200, 120, 0.7), rgba(255, 130, 50, 0.25) 55%, transparent); mix-blend-mode: screen; animation: bx-lareira 2.6s steps(4, end) infinite; }
+@keyframes bx-lareira { 0%, 100% { opacity: 0.8; transform: scale(1); } 40% { opacity: 1; transform: scale(1.06); } 70% { opacity: 0.86; transform: scale(0.97); } }
+.bx-retrato { position: relative; display: grid; place-items: end center; }
+.bx-retrato .bx-esqueleto { width: 144px; }
+.bx-retrato .bx-gato { width: 192px; }
+.bx-ficha__texto { display: grid; align-content: start; gap: var(--e-3); padding: var(--e-4) var(--e-5) var(--e-5); }
+.bx-ficha__papel { margin: 0; color: var(--mundo-ouro); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.bx-ficha h2 { margin: -0.35rem 0 0; font-family: var(--fonte-marca); font-size: 1.5rem; letter-spacing: -0.02em; }
+.bx-ficha__dados { display: grid; gap: var(--e-2); margin: 0; }
+.bx-ficha__dados dt { color: var(--mundo-tinta-2); font-size: 0.72rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.8; }
+.bx-ficha__dados dd { margin: 0.1rem 0 0; color: var(--mundo-tinta); font-size: var(--corpo-menor); line-height: 1.45; }
+/* A fala: o balão de pergaminho dos bichos, que troca a cada toque. */
+.bx-fala { position: relative; display: grid; gap: 0.35rem; min-height: 44px; padding: 0.7rem 0.85rem; border: 0; border-radius: 10px; text-align: left; cursor: pointer;
+  background: #fbf3df; color: #1b1208; font: inherit; font-size: var(--corpo-menor); font-weight: 650; line-height: 1.4; box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px rgba(0, 0, 0, 0.3); }
+.bx-fala small { display: inline-flex; align-items: center; gap: 0.3rem; color: #6b5536; font-size: 0.72rem; font-weight: 750; }
+.bx-fala:hover { background: #fff8e8; }
+.bx-fala:focus-visible, .bx-poses button:focus-visible { outline: 2px solid var(--mundo-ouro); outline-offset: 3px; }
+.bx-poses { display: flex; flex-wrap: wrap; gap: 6px; }
+.bx-poses button { min-height: 36px; padding: 0 0.7rem; border: 0; border-radius: 999px; background: rgba(255, 236, 200, 0.08); color: var(--mundo-tinta-2); font: inherit; font-size: 0.78rem; font-weight: 700; cursor: pointer;
+  box-shadow: inset 0 0 0 1px var(--mundo-filete); }
+.bx-poses button:hover { color: var(--mundo-tinta); background: rgba(255, 236, 200, 0.14); }
+.bx-poses button[aria-pressed="true"] { background: var(--mundo-ouro); color: #1b1208; box-shadow: none; }
+
+/* O álbum: cartas colecionáveis; a que ainda não apareceu é só a silhueta. */
+.bx-album { display: grid; gap: var(--e-4); }
+.bx-album header h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.5rem; letter-spacing: -0.02em; }
+.bx-album header p { margin: 0.25rem 0 0; color: var(--texto-2); }
+.bx-album ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4); margin: 0; padding: 0; list-style: none; }
+.bx-carta { display: grid; justify-items: center; gap: var(--e-2); padding: var(--e-5) var(--e-4); border-radius: 16px; text-align: center; background: var(--superficie); border: 1px solid var(--traco); box-shadow: var(--sombra-media); }
+.bx-carta strong { font-family: var(--fonte-marca); font-size: 1.1rem; }
+.bx-carta > span:last-child { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
+.bx-carta__arte { display: grid; place-items: end center; height: 7rem; filter: brightness(0) opacity(0.22); }
+.bx-carta__arte .gato-pixel { width: 128px; }
+.bx-carta__arte .mascote { width: 72px; }
+.bx-carta--vista { border-color: color-mix(in srgb, var(--mundo-ouro) 70%, var(--traco)); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--mundo-ouro) 45%, transparent), var(--sombra-media); }
+.bx-carta--vista .bx-carta__arte { filter: drop-shadow(0 0 8px rgba(255, 210, 120, 0.6)); }
+.bx-carta--vista .bx-carta__arte--gato-dourado .gato-pixel { filter: sepia(0.9) saturate(2.4) hue-rotate(-8deg) brightness(1.18); }
+.bx-voltar { justify-self: start; }
+
+@media (prefers-reduced-motion: reduce) { .bx-palco__lareira { animation: none; } }
+@media (max-width: 60rem) {
+  .bx-fichas, .bx-album ul { grid-template-columns: minmax(0, 1fr); }
+  .bx-palco { height: 13rem; }
+}
