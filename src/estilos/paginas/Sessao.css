@@ -715,39 +715,62 @@ html.oq-sessao .sx-barra { top: var(--oq-cabecalho, 56px); }
   .sx-ajustes__rotulo { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 }
 
-/* Dica de troca de questão (19/10/2026): aviso esmaecido no meio da tela, só ao criar a sessão.
-   Computador: as setas do teclado. Celular: arrastar para o lado. Some em 5 s ou ao tocar. */
+/* Dica de troca de questão (19/10/2026; caixa de diálogo de RPG desde 01/11/2026): a coruja dá a dica numa caixa como as
+   da página inicial (painel escuro quente, filete e losangos dourados), um pouco abaixo do meio da tela, e uma barra
+   dourada esvazia nos 3 s em que ela fica aberta (--dica-ms). Computador: as setas; celular: arrastar. Toque fecha. */
 .sx-dica-popup {
-  position: fixed; left: 50%; top: 50%; z-index: var(--z-flutuante, 40);
-  display: grid; justify-items: center; gap: 0.7rem; width: max-content; max-width: min(22rem, calc(100vw - 3rem));
-  padding: 1.25rem 1.6rem 1.15rem; border: 0; border-radius: 22px; cursor: pointer;
-  background: rgba(18, 26, 24, 0.72); color: #fff; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
-  font: 650 1rem/1.35 var(--fonte-texto); text-align: center;
+  position: fixed; left: 50%; top: 64vh; z-index: var(--z-flutuante, 40);
+  display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 0.9rem;
+  width: min(25rem, calc(100vw - 2rem)); padding: 0.85rem 1.1rem 1.15rem 0.85rem; border: 0; border-radius: 16px; cursor: pointer;
+  background: var(--mundo-painel); color: var(--mundo-tinta); text-align: left; font: 500 0.95rem/1.4 var(--fonte-texto);
+  box-shadow: inset 0 0 0 1px rgba(240, 196, 106, 0.4), inset 0 0 0 4px rgba(11, 16, 14, 0.9), inset 0 0 0 5px var(--mundo-filete), 0 22px 50px -18px rgba(0, 0, 0, 0.7);
   transform: translate(-50%, -50%);
-  animation: sx-dica-popup 5s ease both;
+  animation: sx-dica-popup var(--dica-ms, 3000ms) ease both;
 }
-.sx-dica-popup:focus-visible { outline: 2px solid var(--px-ouro, #f4cf7c); outline-offset: 3px; }
-.sx-dica-popup__teclas { display: inline-flex; gap: 0.5rem; }
+/* Os dois losangos dourados nos cantos, a marca das caixas do mundo HD-2D. */
+.sx-dica-popup::before, .sx-dica-popup::after { content: ""; position: absolute; width: 7px; height: 7px; background: var(--mundo-ouro); transform: rotate(45deg); box-shadow: 0 0 6px rgba(240, 196, 106, 0.6); }
+.sx-dica-popup::before { top: -3px; left: 18px; }
+.sx-dica-popup::after { bottom: -3px; right: 18px; }
+.sx-dica-popup:focus-visible { outline: 3px solid var(--mundo-ouro); outline-offset: 3px; }
+.sx-dica-popup__retrato {
+  display: grid; place-items: center; width: 64px; height: 64px; overflow: hidden; border-radius: 10px;
+  background: radial-gradient(circle at 50% 70%, rgba(255, 200, 110, 0.28), transparent 70%), #1a1610;
+  box-shadow: inset 0 0 0 2px rgba(240, 196, 106, 0.55), inset 0 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.sx-dica-popup__retrato .coruja-pixel { --coruja-escala: 1.6; }
+.sx-dica-popup__fala { display: grid; gap: 0.2rem; min-width: 0; }
+.sx-dica-popup__nome { color: var(--mundo-ouro); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+.sx-dica-popup__texto { display: block; color: var(--mundo-tinta); font-weight: 600; text-wrap: pretty; }
+.sx-dica-popup__teclas { display: inline-flex; gap: 0.3rem; margin-right: 0.4rem; vertical-align: -0.35em; }
 .sx-dica-popup__teclas kbd {
-  display: inline-grid; place-items: center; min-width: 2.6rem; height: 2.6rem; padding: 0; border: 1px solid rgba(255, 255, 255, 0.4);
-  border-bottom-width: 3px; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: #fff; font: 700 1.25rem var(--fonte-texto);
+  display: inline-grid; place-items: center; min-width: 1.9rem; height: 1.9rem; padding: 0; border: 1px solid rgba(255, 236, 200, 0.45);
+  border-bottom-width: 3px; border-radius: 7px; background: rgba(255, 255, 255, 0.08); color: var(--mundo-tinta); font: 700 1rem var(--fonte-texto);
 }
-.sx-dica-popup__gesto { display: inline-flex; align-items: center; gap: 0.6rem; opacity: 0.95; }
-.sx-dica-popup__dedo { width: 1.9rem; height: 1.9rem; border-radius: 999px; background: rgba(255, 255, 255, 0.85); box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.18); }
-.sx-dica-popup__texto { max-width: 16rem; }
+.sx-dica-popup__gesto { display: inline-flex; align-items: center; gap: 0.3rem; margin-right: 0.4rem; vertical-align: -0.25em; color: var(--mundo-tinta-2); }
+.sx-dica-popup__dedo { width: 1.1rem; height: 1.1rem; border-radius: 999px; background: rgba(255, 250, 240, 0.9); box-shadow: 0 0 0 4px rgba(255, 250, 240, 0.18); }
+/* A barra do tempo: esvazia da direita para a esquerda enquanto a caixa está aberta. */
+.sx-dica-popup__tempo { position: absolute; left: 14px; right: 14px; bottom: 8px; height: 4px; overflow: hidden; border-radius: 999px; background: rgba(255, 236, 200, 0.14); }
+.sx-dica-popup__tempo i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #c48218, #ffd060); transform-origin: left center;
+  animation: sx-dica-tempo var(--dica-ms, 3000ms) linear both; }
+@keyframes sx-dica-tempo { from { transform: scaleX(1); } to { transform: scaleX(0); } }
 @keyframes sx-dica-popup {
-  0% { opacity: 0; transform: translate(-50%, calc(-50% + 8px)); }
-  8%, 88% { opacity: 1; transform: translate(-50%, -50%); }
-  100% { opacity: 0; transform: translate(-50%, -50%); }
+  0% { opacity: 0; transform: translate(-50%, calc(-50% + 12px)); }
+  10%, 90% { opacity: 1; transform: translate(-50%, -50%); }
+  100% { opacity: 0; transform: translate(-50%, calc(-50% + 6px)); }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .sx-dica-popup__dedo { animation: sx-dica-dedo 1.4s ease-in-out 0.4s 3; }
-  .sx-dica-popup__teclas kbd:last-child { animation: sx-dica-tecla 1.4s ease-in-out 0.4s 3; }
+  .sx-dica-popup__dedo { animation: sx-dica-dedo 1.2s ease-in-out 0.3s 2; }
+  .sx-dica-popup__teclas kbd:last-child { animation: sx-dica-tecla 1.2s ease-in-out 0.3s 2; }
 }
-@keyframes sx-dica-dedo { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-14px); } 65% { transform: translateX(14px); } }
+@keyframes sx-dica-dedo { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-8px); } 65% { transform: translateX(8px); } }
 @keyframes sx-dica-tecla { 0%, 100% { transform: none; } 40% { transform: translateY(2px); border-bottom-width: 1px; } }
-@media (prefers-reduced-motion: reduce) { .sx-dica-popup { animation: none; } }
+/* Celular: logo acima da barra de baixo, sem cobrir o enunciado nem a imagem do topo. */
+@media (max-width: 40rem) {
+  .sx-dica-popup { top: auto; bottom: calc(var(--altura-nav-mobile, 3.3rem) + env(safe-area-inset-bottom) + 1.25rem); transform: translateX(-50%); animation-name: sx-dica-popup-cel; }
+  @keyframes sx-dica-popup-cel { 0% { opacity: 0; transform: translate(-50%, 12px); } 10%, 90% { opacity: 1; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, 6px); } }
+}
+/* Menos movimento: a caixa aparece parada e a barra fica cheia (ela fecha sozinha do mesmo jeito). */
+@media (prefers-reduced-motion: reduce) { .sx-dica-popup, .sx-dica-popup__tempo i { animation: none; } }
 
 /* "Próxima" e a seta de avançar nas cores do atlas (01/11/2026, "as paletas precisam seguir a página inicial"):
    verdete cheio, a cor de agir do site; o ouro fica para marcar onde você está (mapa e trilha) e para celebrar. */
