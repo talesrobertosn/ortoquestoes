@@ -9864,84 +9864,37 @@
   "conferido": false
  },
  "trauma-0418": {
-  "conceito": "Na via posterior do acetábulo, os tendões do **piriforme e do obturador interno** devem ser seccionados a pelo menos **1,5 cm do trocanter maior**, protegendo ramos da **circunflexa femoral medial**. É a alternativa A.\n\nA margem não serve apenas para deixar tecido para sutura. O ramo vascular passa perto dos rotadores curtos, e a circunflexa medial é central para a irrigação da cabeça femoral. Cortar rente ao fêmur ou dissecar desnecessariamente essa região pode ameaçar a vascularização (Rockwood, 10ª ed., cap. 51, “Kocher-Langenbeck”).\n\nO resumo acrescenta dois cuidados: **não dissecar abaixo do gêmeo inferior no fêmur** e, se for necessário liberar o quadrado femoral para expor mais ísquio, fazê-lo **do lado isquiático**, não do femoral. A proteção depende do plano e do lado da liberação, além da distância da tenotomia.\n\nAntes de seccionar, identifica-se o ciático sobre o quadrado femoral e segue-se seu trajeto. Proteger o nervo e preservar o pedículo da cabeça são objetivos diferentes da mesma exposição; uma distância correta não elimina a necessidade desses cuidados.",
-  "correta": "**A: pelo menos 1,5 cm, para proteger a circunflexa medial.** A combinação reúne a margem e o vaso do trecho técnico; conservar a inserção femoral com essa distância ajuda a evitar a região vascular adjacente.",
+  "conceito": "Na via de KOCHER-LANGENBECK para o acetábulo, o cirurgião secciona os rotadores curtos para chegar à coluna posterior. A distância do corte ao trocânter decide se a cabeça femoral continua irrigada.\n\n**Onde corre a artéria** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 53 (fraturas do colo do fêmur), p. 2643 do PDF). O ramo profundo da **circunflexa femoral medial** contorna a borda inferior do obturador externo, passa entre o quadrado femoral e o gêmeo inferior e **emerge na borda proximal do quadrado femoral cerca de 1,5 cm medial à crista trocantérica**. Daí sobe **anterior ao tendão conjunto** do obturador interno e dos gêmeos e perfura a cápsula entre o gêmeo superior e o piriforme. A regra que o livro tira disso: **incisar o tendão conjunto 1,5 cm medial à crista**, e não rente ao osso.\n\n**As outras proteções da mesma via** (Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (técnicas cirúrgicas e vias de acesso), p. 79 e 80). Preservam-se o **quadrado femoral** e o **obturador externo**, cujo tendão protege o ramo profundo; o isquiático fica sobre o quadrado, e o **joelho fletido pelo menos 45 graus** evita tracioná-lo. O Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 7 (Pelve) acrescenta: não desinserir o quadrado pelo risco vascular.\n\n**Por que a circunflexa medial.** É a principal fonte da cabeça no adulto, cerca de 82% da perfusão; a lateral corre pela frente do colo e nem aparece numa via posterior.\n\n**A intuição enganosa.** Cortar rente ao trocânter parece poupar tecido, mas é exatamente ali que o ramo profundo passa.\n\nO trajeto está na seção \"A cabeça femoral: os ramos da circunflexa medial\" do resumo.",
+  "correta": "**A) 1,5 cm do grande trocanter para evitar lesionar ramos da artéria circunflexa medial.** O ramo profundo emerge 1,5 cm medial à crista e sobe à frente do tendão conjunto.",
   "incorretas": {
-   "B": "**Erra margem e vaso.** Meio centímetro é menor que a distância indicada, e o ramo relevante descrito é da circunflexa medial, não da lateral. Não basta deixar qualquer pequeno coto tendíneo.",
-   "C": "**Acerta a distância, troca a artéria.** A margem de 1,5 cm está correta; o fundamento é a proteção de ramos da circunflexa medial junto aos rotadores e da irrigação da cabeça.",
-   "D": "**Acerta o vaso e reduz a margem.** Reconhecer a circunflexa medial não torna suficiente uma tenotomia a 0,5 cm. O trecho recomenda pelo menos 1,5 cm e mantém os cuidados com gêmeo inferior e quadrado femoral."
+   "B": "**0,5 cm, circunflexa lateral** erra a distância e a artéria: a lateral corre pela face anterior do colo.",
+   "C": "**1,5 cm, circunflexa lateral** acerta a distância, mas o vaso em risco atrás do trocânter é a circunflexa medial.",
+   "D": "**0,5 cm, circunflexa medial** acerta a artéria, mas cortar tão perto do trocânter cai justamente sobre o trajeto do ramo profundo."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso; Anatomia aplicada: colunas, paredes, teto e vasos."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 53 (fraturas do colo do fêmur), p. 2643 do PDF",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 51 (acetábulo)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (técnicas cirúrgicas e vias de acesso), p. 79 e 80",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 7 (Pelve), seção Acessos Cirúrgicos, p. 382 do PDF",
+   "Resumo OrtoQuestões: Anatomia do quadril e da coxa (versão 2)"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-51-acetabulo",
-     "titulo": "Fraturas do acetábulo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 51 · Acetabulum Fractures",
-     "secoes": [
-      "Vias de acesso",
-      "Anatomia aplicada: colunas, paredes, teto e vasos"
-     ],
-     "blocos": [
-      "vias-de-acesso-de09a49f",
-      "anatomia-aplicada-colunas-paredes-teto-e-vasos-af43286f",
-      "vias-de-acesso-9086ffdf"
-     ],
-     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
-     "trechosSha256": "40b1e58c688f150fafe9be23ab24b6ad7abd2b4f593aa6544eb1b7c6918d3629"
-    }
-   ],
-   "questaoSha256": "75289fd6eb29d4032873cace147cc228e580f81ace0ab799ae68c2bc99b4064e",
-   "comentarioSha256": "a37c885d23c1ba9b7ead51c8076b0ab1c88ae241215b22c46b55b21422c08d29"
-  }
+  "geradoEm": "2026-11-01",
+  "conferido": false
  },
  "trauma-0419": {
-  "conceito": "**A coxa tem três compartimentos: anterior, medial ou adutor, e posterior.** A fáscia lata e os septos organizam esses espaços. A anatomia precisa ser separada da posição das incisões usadas para alcançá-los.\n\n| Compartimento | Conteúdo e função relevantes |\n|---|---|\n| Anterior | Quadríceps, sartório e nervo femoral; extensão do joelho |\n| Medial/adutor | Adutores e nervo obturatório |\n| Posterior | Isquiotibiais e nervo isquiático; flexão do joelho |\n\nUma incisão lateral pode liberar anterior e posterior; isso não cria um compartimento lateral. Se necessário, uma via medial alcança os adutores. Já a divisão em posteriores superficial e profundo pertence à perna, que tem quatro compartimentos, e não deve ser transportada para a coxa.\n\n**Leia “Coxa” e “Coxa, pé e braço” da fasciotomia, na Biblioteca.** Associe cada espaço ao grupo muscular e ao acesso, sem confundir mapa anatômico e estratégia de descompressão.",
-  "correta": "**B: anterior, medial e posterior.** Medial é a outra forma de nomear o compartimento adutor. São três espaços na descrição usada pelo capítulo.\n\nA via lateral é um caminho de acesso a mais de um deles, sem constituir um quarto compartimento.",
+  "conceito": "Ao contrário da perna, a coxa tem só três compartimentos, e cada um corresponde a um nervo e a uma função.\n\n**Os três** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 8 (Coxa e quadril), seção Músculos):\n\n| Compartimento | Conteúdo | Nervo |\n| --- | --- | --- |\n| anterior | quadríceps: vastos lateral, intermédio e medial e reto femoral | femoral |\n| medial | adutores magno, longo e curto, grácil, artéria e veia femorais | obturatório (o magno também do isquiático) |\n| posterior | bíceps femoral (duas cabeças), semitendíneo, semimembranáceo e nervo isquiático | isquiático |\n\nSão separados pelos septos intermusculares **lateral, medial e posterior**, e o septo vastoadutor cobre a entrada dos vasos no hiato.\n\n**A consequência cirúrgica.** A fasciotomia da coxa usa **duas incisões**: a **lateral** libera o anterior e o posterior, e a **medial** libera o medial. Uma incisão lateral não significa um compartimento lateral; é só a porta de entrada para os dois maiores.\n\n**De onde vêm os distratores.** As alternativas erradas copiam divisões de outros segmentos, com compartimento lateral ou com camadas superficial e profunda, que o Netter não descreve na coxa.\n\nOs compartimentos estão nas seções \"Os compartimentos e os músculos da coxa\" e \"A coxa: inserções, nervos e fasciotomia\" do resumo.",
+  "correta": "**B) anterior, medial e posterior.** São os três compartimentos da coxa, de quadríceps, adutores e isquiotibiais, separados pelos septos intermusculares.",
   "incorretas": {
-   "A": "**Inclui anterior e medial corretamente, mas substitui posterior por lateral.** A lateralidade descreve a incisão que pode abrir anterior/posterior. O posterior existe como compartimento próprio, contendo isquiotibiais e nervo isquiático.",
-   "C": "**Divide o anterior em superficial/profundo e acrescenta lateral, configuração que a fonte não usa para a coxa.** O mapa é de três compartimentos, com um anterior e um posterior. Criar subdivisões sem essa correspondência dificulta localizar músculos e planejar a liberação.",
-   "D": "**Traz a divisão posterior superficial/profunda da perna para a coxa.** A coxa tem um posterior que contém os isquiotibiais; a perna divide os grupos posteriores em dois espaços. A semelhança de nomes não torna os dois mapas anatômicos iguais."
+   "A": "**Anterior, medial e lateral** inventa um compartimento lateral e omite o posterior, onde ficam os isquiotibiais e o isquiático.",
+   "C": "**Anterior superficial, anterior profundo, medial e lateral** aplica à coxa uma divisão que não existe nela.",
+   "D": "**Posterior superficial e profundo** é divisão da perna; na coxa o compartimento posterior é único."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia."
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 8 (Coxa e quadril), seção Músculos, p. 410 e 414 do PDF",
+   "Resumo OrtoQuestões: Anatomia do quadril e da coxa (versão 2)"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Os compartimentos de cada região",
-      "Fasciotomia"
-     ],
-     "blocos": [
-      "os-compartimentos-de-cada-regiao-eb26943e",
-      "os-compartimentos-de-cada-regiao-9ef07de3",
-      "fasciotomia-f734935c"
-     ],
-     "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
-     "trechosSha256": "d3f6dec0b02ea6962b6c84d0f81e3cf140d3e5688c995b21cbf0b91bfd2ed979"
-    }
-   ],
-   "questaoSha256": "602ecb42b28b7e9d5ee9f2a57f9eb8897b6ba0b23678a65fc848e3fb382c1c40",
-   "comentarioSha256": "658dfb085659ca91aca4472fed8587e22362196a023fe6e04b21ebb10e45d50e"
-  }
+  "geradoEm": "2026-11-01",
+  "conferido": false
  },
  "trauma-0420": {
   "conceito": "**Os compartimentos posteriores superficial e profundo da perna são liberados pelo acesso posteromedial na técnica de dupla incisão.** A pele é aberta cerca de 1 a 2 cm atrás da borda medial tibial, com ponte cutânea suficiente e cuidado com safenos e feixe tibial posterior.\n\nPrimeiro se abre o superficial e, afastando-o, alcança-se o profundo. A segunda liberação precisa ser confirmada, porque uma abertura superficial satisfatória não prova que a pressão profunda foi resolvida. O resumo favorece abrir os quatro compartimentos quando há indicação, avaliando a musculatura e desbridando o que não é viável.\n\nA via anterolateral, próxima da fíbula, responde pelos compartimentos anterior e lateral. Uma técnica de incisão única sem fibulectomia pode alcançar o profundo atrás da fíbula, mas isso é uma estratégia diferente, não motivo para trocar o acesso posteromedial da técnica mais usada pelo nome de outra via.\n\n**Na Biblioteca, leia “Perna: dupla incisão, quatro compartimentos”.** Localize a incisão em relação à borda tibial e acompanhe como ela passa do superficial ao profundo.",
