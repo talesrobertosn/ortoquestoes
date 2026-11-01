@@ -550,3 +550,5 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
   .a3-tabela--adapta td[data-rotulo] { display: inline-block; width: auto; margin: 2px 14px 0 0; }
   .a3-tabela--adapta td[data-rotulo] .a3-sub { display: inline; margin-left: 4px; }
 }
+/* Filtro com rótulo longo (select dentro): quebra a linha em tela estreita em vez de empurrar a página. */
+@media (max-width: 480px) { label.a3-filtro { white-space: normal; height: auto; min-height: 32px; padding-block: 4px; flex-wrap: wrap; max-width: 100%; } }

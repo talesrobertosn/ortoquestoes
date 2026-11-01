@@ -139,7 +139,8 @@ export function Paleta({ aberta, aoFechar, itens, buscarMais }: {
   const [termo, definirTermo] = useState('')
   const [indice, definirIndice] = useState(0)
   const caixa = usarPrisao(aberta, aoFechar)
-  useEffect(() => { if (aberta) { definirTermo(''); definirIndice(0) } }, [aberta])
+  // Zera ao fechar (não ao abrir): quem digita logo depois do Ctrl K não cai no termo da busca anterior.
+  useEffect(() => { if (!aberta) { definirTermo(''); definirIndice(0) } }, [aberta])
   const t = normalizar(termo.trim())
   const lista = !aberta ? [] : [
     ...itens.filter(i => !t || normalizar(`${i.titulo} ${i.detalhe ?? ''} ${i.palavras ?? ''} ${i.grupo}`).includes(t)),
@@ -154,7 +155,7 @@ export function Paleta({ aberta, aoFechar, itens, buscarMais }: {
     <div ref={caixa} className="a3-paleta" role="dialog" aria-modal="true" aria-label="Buscar no painel">
       <div className="a3-paleta__busca">
         <Icone nome="busca" />
-        <input data-foco-inicial value={termo} onChange={e => definirTermo(e.target.value)} placeholder="Buscar parte, pessoa, questão ou ação…"
+        <input data-foco-inicial autoFocus value={termo} onChange={e => definirTermo(e.target.value)} placeholder="Buscar parte, pessoa, questão ou ação…"
           role="combobox" aria-expanded aria-controls="a3-paleta-lista" aria-activedescendant={lista[indice] ? `a3-p-${lista[indice].id}` : undefined}
           onKeyDown={e => {
             if (e.key === 'ArrowDown') { e.preventDefault(); definirIndice(i => Math.min(lista.length - 1, i + 1)) }
