@@ -533,3 +533,18 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 /* Cena HD-2D */
 .a3-cena { position: relative; overflow: hidden; border-radius: var(--a3-r-cartao); background: #1b1208; }
 .a3-cena img { display: block; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; }
+.a3-tabela__abrir { display: block; width: 100%; min-width: 0; margin: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; line-height: inherit; text-align: left; cursor: pointer; }
+.a3-tabela__abrir:focus-visible { outline: 2px solid var(--a3-foco, var(--a3-tinta)); outline-offset: 3px; border-radius: 6px; }
+/* Celular: a métrica grande ocupa a linha inteira; as demais seguem em pares. */
+@media (max-width: 1100px) {
+  .a3-faixa-metricas:has(> .a3-metrica--grande:first-child) > .a3-metrica--grande { grid-column: 1 / -1; }
+  .a3-faixa-metricas:has(> .a3-metrica--grande:first-child) > * { border-left: 0 !important; border-top: 1px solid var(--a3-linha); }
+  .a3-faixa-metricas:has(> .a3-metrica--grande:first-child) > :first-child { border-top: 0; }
+  .a3-faixa-metricas:has(> .a3-metrica--grande:first-child) > :nth-child(odd):not(:first-child) { border-left: 1px solid var(--a3-linha) !important; }
+}
+@media (max-width: 420px) { .a3-metrica--grande .a3-metrica__valor { font-size: 34px; } }
+/* Celular: nos blocos da tabela, os números rotulados ficam lado a lado, não um por linha. */
+@media (max-width: 720px) {
+  .a3-tabela--adapta td[data-rotulo] { display: inline-block; width: auto; margin: 2px 14px 0 0; }
+  .a3-tabela--adapta td[data-rotulo] .secundario { display: inline; margin-left: 4px; }
+}

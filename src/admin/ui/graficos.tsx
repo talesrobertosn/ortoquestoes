@@ -129,7 +129,7 @@ export function SerieTempo({ rotulos, series, formato = inteiro, altura = 220, d
           acumulado += v
           const estilo = b.estilo === 'hachura' ? '' : b.estilo === 2 ? ' a3-g-barra--2' : b.estilo === 3 ? ' a3-g-barra--3' : ''
           return <rect key={b.nome} x={xc(i) - larguraBarra / 2} width={larguraBarra} y={y0} height={Math.max(0.6, alt)} rx={Math.min(4, larguraBarra / 3)}
-            className={'a3-g-barra' + estilo} fill={b.estilo === 'hachura' ? `url(#a3-h-${idH})` : undefined} />
+            className={'a3-g-barra' + estilo} style={b.estilo === 'hachura' ? { fill: `url(#a3-h-${idH})` } : undefined} />
         })}</g>
       })}
       {outras.map(s => {

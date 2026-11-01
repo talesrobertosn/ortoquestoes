@@ -65,7 +65,7 @@ export function Tabela<T>({ linhas, colunas, chave, aoAbrir, selecionada, porPag
           return <tr key={k} className={aoAbrir ? 'clicavel' : undefined} aria-selected={selecionada === k ? true : undefined}
             onClick={aoAbrir ? (e) => { if ((e.target as HTMLElement).closest('a,button,input,select,label')) return; aoAbrir(l) } : undefined}>
             {colunas.map((c, i) => <td key={c.id} className={(c.numero ? 'num ' : '') + (c.soLargo ? 'so-largo' : '')} data-rotulo={c.rotuloCelular}>
-              {i === 0 && aoAbrir ? <button type="button" onClick={() => aoAbrir(l)} style={{ all: 'unset', cursor: 'pointer', display: 'block', minWidth: 0 }} aria-label={undefined}>{c.celula(l)}</button> : c.celula(l)}
+              {i === 0 && aoAbrir ? <button type="button" className="a3-tabela__abrir" onClick={() => aoAbrir(l)}>{c.celula(l)}</button> : c.celula(l)}
             </td>)}
           </tr>
         })}</tbody>

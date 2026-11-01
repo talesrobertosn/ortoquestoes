@@ -165,6 +165,8 @@ try {
       for (const tema of TEMAS) {
         await x.p.evaluate((t) => { document.documentElement.dataset.tema = t }, tema); await x.p.waitForTimeout(250)
         await foto(x.p, `${nome}-${largura}${tema === 'escuro' ? '-escuro' : ''}`)
+        // SONDA="expressão JS": imprime o resultado de uma consulta à página (para depurar medidas).
+        if (process.env.SONDA) console.log(`SONDA ${nome} ${largura}:`, JSON.stringify(await x.p.evaluate(process.env.SONDA)))
       }
       await x.p.evaluate(() => { document.documentElement.dataset.tema = 'claro' })
       const larguraDoc = await x.p.evaluate(() => document.documentElement.scrollWidth)

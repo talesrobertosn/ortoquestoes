@@ -79,3 +79,23 @@
 .a3-previa__topo { display: grid; gap: 2px; padding: 12px 16px; border-bottom: 1px solid var(--a3-linha); background: var(--a3-alt); font-size: 13px; }
 .a3-previa__topo b { display: inline-block; min-width: 64px; color: var(--a3-cinza); font-weight: 500; }
 .a3-previa iframe { display: block; width: 100%; height: 420px; border: 0; background: #fff; }
+
+/* Receita */
+.a3-previsao-topo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 0; }
+.a3-previsao-topo > .a3-metrica { border-right: 1px solid var(--a3-linha); }
+.a3-soma { list-style: none; margin: 0; padding: 8px 24px; display: grid; }
+.a3-soma li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; padding: 12px 0; border-bottom: 1px solid var(--a3-linha); }
+.a3-soma li:last-child { border-bottom: 0; }
+.a3-soma li > span:first-child { color: var(--a3-cinza); }
+.a3-soma li b { font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+.a3-soma li .a3-qualidade { grid-column: 1 / -1; }
+@media (max-width: 720px) { .a3-previsao-topo { grid-template-columns: minmax(0, 1fr); } .a3-previsao-topo > .a3-metrica { border-right: 0; border-bottom: 1px solid var(--a3-linha); } .a3-soma { padding: 4px 18px; } }
+.a3-simulador { display: grid; gap: 14px; }
+.a3-simulador__controle { display: flex; align-items: center; gap: 16px; }
+.a3-simulador__controle input[type=range] { flex: 1; min-width: 0; accent-color: var(--a3-tinta); height: 24px; }
+.a3-simulador__controle output { font-size: 22px; font-weight: 600; min-width: 4ch; text-align: right; }
+.a3-metodo { padding: 0; }
+.a3-metodo > summary { cursor: pointer; padding: 16px 24px; font-weight: 500; list-style: none; display: flex; justify-content: space-between; }
+.a3-metodo > summary::after { content: '+'; color: var(--a3-cinza); }
+.a3-metodo[open] > summary::after { content: '−'; }
+.a3-metodo > .a3-texto { padding: 0 24px 20px; display: grid; gap: 10px; }
