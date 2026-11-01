@@ -207,7 +207,7 @@ try {
     assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'voltou'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
   }
 
-  console.log('Painel do administrador: 6 seções, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
+  console.log('Painel 3.0: 6 áreas e 23 partes, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
