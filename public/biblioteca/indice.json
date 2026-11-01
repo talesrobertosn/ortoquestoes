@@ -2996,15 +2996,15 @@
   },
   {
    "id": "netter-anatomia-quadril-coxa",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia do quadril e da coxa",
    "especialidade": "quadril",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
-   "edicao": "2ª edição",
+   "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.",
    "capitulo": "Capítulo 7 · Pelve e Capítulo 8 · Coxa e quadril",
    "resumo": "Fêmur proximal (calcar posteromedial, fossa piriforme, ângulo cervicodiafisário e anteversão); vascularização da cabeça femoral no adulto e na criança (circunflexa medial sob o quadrado femoral); nervos glúteos, obturatório, femoral e cutâneo femoral lateral; compartimentos e músculos da coxa com origens e inervação; canal adutor; vias anterior, anterolateral, lateral, posterior e medial com as estruturas em risco; quadrantes dos parafusos acetabulares.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 25,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -3045,6 +3045,66 @@
      "id": "os-parafusos-do-acetabulo",
      "titulo": "Os parafusos do acetábulo",
      "radar": "confirmado"
+    },
+    {
+     "id": "ossificacao-colunas-e-angulos",
+     "titulo": "Ossificação, colunas e ângulos",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-anel-pelvico-articulacoes-e-ligamentos",
+     "titulo": "O anel pélvico: articulações e ligamentos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-capsula-do-quadril-o-labio-e-o-ligamento-em-y",
+     "titulo": "A cápsula do quadril, o lábio e o ligamento em Y",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-musculos-da-pelve-e-os-rotadores-curtos",
+     "titulo": "Os músculos da pelve e os rotadores curtos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-coxa-insercoes-nervos-e-fasciotomia",
+     "titulo": "A coxa: inserções, nervos e fasciotomia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-forames-isquiaticos-e-o-piriforme",
+     "titulo": "Os forames isquiáticos e o piriforme",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "os-plexos-lombar-e-sacral",
+     "titulo": "Os plexos lombar e sacral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-cabeca-femoral-os-ramos-da-circunflexa-medial",
+     "titulo": "A cabeça femoral: os ramos da circunflexa medial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiologia-da-pelve-e-do-acetabulo",
+     "titulo": "A radiologia da pelve e do acetábulo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-do-quadril-com-as-medidas",
+     "titulo": "As vias do quadril com as medidas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-do-acetabulo-e-a-corona-mortis",
+     "titulo": "As vias do acetábulo e a corona mortis",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -3088,7 +3148,27 @@
     "quadril-0071",
     "quadril-0048",
     "quadril-0640",
-    "quadril-0067"
+    "quadril-0067",
+    "quadril-0084",
+    "quadril-0219",
+    "quadril-0538",
+    "quadril-0087",
+    "trauma-0419",
+    "joelho-0154",
+    "trauma-0418",
+    "quadril-0053",
+    "quadril-0035",
+    "quadril-0122",
+    "quadril-0522",
+    "quadril-0021",
+    "quadril-0177",
+    "quadril-0045",
+    "quadril-0123",
+    "quadril-0188",
+    "quadril-0185",
+    "quadril-0232",
+    "quadril-0515",
+    "quadril-0224"
    ],
    "treino": [
     "quadril-0722",
