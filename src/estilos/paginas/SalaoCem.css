@@ -379,7 +379,7 @@
   .cem-heroi__palco { position: relative; inset: auto; z-index: 0; grid-row: 1; grid-column: 1; aspect-ratio: 280 / 270; container-type: inline-size; }
   .cem-heroi__mundo { width: 171.43cqw; left: -70cqw; top: 0; }
   /* O balão da coruja (pousada no alto) desce para baixo do título, que fica por cima da cena no celular. */
-  .cem-heroi__balao--coruja { top: 30% !important; max-width: min(15rem, 52%); }
+  .cem-heroi__balao--coruja { max-width: min(15rem, 52%); }
   .cem-heroi__palco::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(8, 10, 14, 0.75) 0%, rgba(8, 10, 14, 0.2) 34%, transparent 50%, transparent 80%, #0c0f12 100%); }
   .cem-heroi__cabeca { display: contents; }
   .cem-heroi__titulo { grid-row: 1; grid-column: 1; z-index: 1; align-self: start; padding: var(--e-4) var(--e-4) 0; gap: 0.2rem; pointer-events: none; }
@@ -448,3 +448,6 @@
 :root[data-tema="escuro"] .cem-degrau__rota { color: #a9b6b9; }
 :root[data-tema="escuro"] .cem-mov--fogo { background: #3a2a14; color: #ffc46b; }
 :root[data-tema="escuro"] .cem-linha--voce { box-shadow: inset 4px 0 0 var(--cem-ouro); }
+
+/* Point and click: passar o mouse num bicho acende um contorno dourado (dá para clicar e ele fala). */
+@media (hover: hover) { .cem-heroi__visita:hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }

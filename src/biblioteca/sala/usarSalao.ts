@@ -84,7 +84,15 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
   const ehMadrugada = madrugada(agora)
   const estacao = epoca(agora)
   const faltam = diasAteProva(agora, DATAS_PROVA)
-  const periodo = periodoEscolhido ?? periodoDaHora(agora.getHours())
+  // No tema escuro, a Biblioteca acompanha: a luz é a da noite (01/11/2026), a não ser que a pessoa escolha outra na janela.
+  const [temaEscuro, definirTemaEscuro] = useState(() => typeof document !== 'undefined' && document.documentElement.dataset.tema === 'escuro')
+  useEffect(() => {
+    const raiz = document.documentElement
+    const olhar = new MutationObserver(() => definirTemaEscuro(raiz.dataset.tema === 'escuro'))
+    olhar.observe(raiz, { attributes: true, attributeFilter: ['data-tema'] })
+    return () => olhar.disconnect()
+  }, [])
+  const periodo = periodoEscolhido ?? (temaEscuro ? 'noite' : periodoDaHora(agora.getHours()))
   useEffect(() => { if (ehMadrugada) achar('madrugada', 'Plantão? Os resumos mais curtos estão na mesa.') }, [ehMadrugada]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (estacao) achar('sazonal', estacao === 'halloween' ? 'Abóboras no salão até o fim de outubro.' : 'Pisca-pisca no salão em dezembro.') }, [estacao]) // eslint-disable-line react-hooks/exhaustive-deps
 

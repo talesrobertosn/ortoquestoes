@@ -35,6 +35,11 @@ As páginas formam uma jornada:
    sementes fixas.
    - **Arte do Tales:** ele também cria personagens e cenários no PixelLab e autoriza o uso. Esses arquivos ficam no
      repositório junto do script que os trata.
+   - **Sprites pelo ChatGPT (Tales, 01/11/2026: "o ChatGPT está fazendo sprite muito bem, dá para pedir com mais
+     frequência"):** quando faltar personagem, pose ou folha de animação, escreva um prompt pronto para ele colar no
+     ChatGPT (folha em grade fixa, fundo liso uniforme, sem texto, mesma linha de chão, objetos consistentes em todos
+     os quadros) e peça que ele mande o arquivo numa mensagem só com ele. Depois, recorte, limpe e trate por script,
+     como a arte do PixelLab.
    - **Nunca:** nada baixado da internet, nada de imagem de terceiros e nenhum personagem protegido.
 2. **Proibido:**
    - emoji como arte;
