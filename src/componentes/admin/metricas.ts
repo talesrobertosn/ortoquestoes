@@ -254,7 +254,7 @@ export interface EntradaAtencao {
   agora?: number
 }
 
-const maisRecente = (datas: Array<string | null | undefined>) => datas.filter(Boolean).sort().at(-1) ?? null
+const maisRecente = (datas: Array<string | null | undefined>) => (datas.filter(Boolean) as string[]).sort().slice(-1)[0] ?? null
 
 /**
  * Tudo o que pede ação, com causa, contagem, último evento, destino e ação. Ordem: severidade, depois o mais

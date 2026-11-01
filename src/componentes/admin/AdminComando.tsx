@@ -12,7 +12,7 @@ import {
   ROTULO_GRUPO, ROTULO_SEVERIDADE, cortarPeriodos, filaDeAtencao, fraseDoEstado, numerosDoPeriodo, receitaDoPeriodo,
   type GrupoAtencao, type ItemAtencao,
 } from './metricas'
-import { Atualizado, ControlePeriodo, GraficoSerie, Indicador, Legenda, QuadroGrafico, SeloQualidade, inteiro, reais, reaisCurto } from './PainelDados'
+import { ControlePeriodo, GraficoSerie, Indicador, Legenda, QuadroGrafico, SeloQualidade, inteiro, reais, reaisCurto } from './PainelDados'
 import type { AssinaturaBase, CobrancaReal } from './receita'
 import { vigentesPorPessoa } from './receita'
 import type { Periodo } from './secoes'
@@ -33,13 +33,14 @@ const dataLonga = (dia: string) => new Date(`${dia}T12:00:00`).toLocaleDateStrin
  * saudável hoje, o que mudou no período e o que pede ação agora. Abaixo, seis áreas, cada uma levando à
  * investigação ou à fila correspondente. Nenhum número é inventado: fonte que falha vira "Indisponível".
  */
-export function AdminComando({ conta, periodo, aoMudarPeriodo, usuarios, usuariosEm, resumo, assinaturas, cobrancas, cobrancasFalharam, eventos, lidosPagamento, pendenciasConteudo, fontesIndisponiveis, irPara, atualizadoEm, atualizando }: {
+export function AdminComando({ conta, periodo, aoMudarPeriodo, usuarios, usuariosEm, resumo, assinaturas, cobrancas, cobrancasFalharam, eventos, lidosPagamento, pendenciasConteudo, fontesIndisponiveis, irPara, recarregar }: {
   conta: string | undefined; periodo: Periodo; aoMudarPeriodo: (p: Periodo) => void
   usuarios: LinhaUsuario[] | null; usuariosEm: number | null; resumo: ResumoAdmin | null
   assinaturas: AssinaturaBase[] | null; cobrancas: CobrancaReal[] | null; cobrancasFalharam: boolean
   eventos: Array<{ id: number; status_processamento: string; recebido_em: string }> | null; lidosPagamento: Set<string>
   pendenciasConteudo: number | null; fontesIndisponiveis: string[]; irPara: (d: Destino) => void
-  atualizadoEm: number | null; atualizando: boolean
+  /** O mesmo "Atualizar" da barra do painel: pede de novo todas as fontes, sem recarregar a página. */
+  recarregar: () => Promise<void>
 }) {
   const serieQ = usarRpc<DiaSerie[]>(conta, 'serie_diaria_admin', { p_dias: periodo * 2 }, { atualizarCada: CINCO_MIN })
   const funilQ = usarRpc<FunilCompleto[]>(conta, 'funil_admin', {}, { atualizarCada: CINCO_MIN })
@@ -67,21 +68,21 @@ export function AdminComando({ conta, periodo, aoMudarPeriodo, usuarios, usuario
   const base = `aos ${periodo} dias anteriores`
   const rotulos = (p?.atual ?? []).map(d => ({ longo: dataLonga(d.dia), curto: dataCurta(d.dia) }))
   const carregandoSerie = serieQ.carregando && !serieQ.dados
+  const tentar = () => { void recarregar(); void serieQ.recarregar(); void funilQ.recarregar(); void sinaisQ.recarregar() }
 
   return <div className="adm-comando">
     <header className="adm-comando__topo">
       <div className="adm-comando__texto">
-        <p className="adm-trilha"><span>Painel</span><span aria-hidden="true">›</span><span>Comando</span></p>
         <h1>Estado do OrtoQuestões</h1>
         <p className="adm-comando__frase" aria-live="off">{frase}</p>
         <div className="adm-comando__controles">
           <ControlePeriodo periodo={periodo} aoMudar={aoMudarPeriodo} />
-          <Atualizado em={atualizadoEm} carregando={atualizando} />
         </div>
       </div>
       <div className="adm-comando__cena" aria-hidden="true">
         <picture>
-          <source media="(max-width: 40rem)" srcSet={recurso('pixel/admin/observatorio-960.webp')} />
+          <source media="(max-width: 40rem)" srcSet={recurso('pixel/admin/observatorio-movel.webp')} />
+          <source media="(max-width: 64rem)" srcSet={recurso('pixel/admin/observatorio-960.webp')} />
           <img src={recurso('pixel/admin/observatorio.webp')} alt="" width={1440} height={480} decoding="async" />
         </picture>
       </div>
@@ -117,7 +118,7 @@ export function AdminComando({ conta, periodo, aoMudarPeriodo, usuarios, usuario
       <section className="adm-prioridades" aria-labelledby="adm-prioridades-titulo">
         <h2 id="adm-prioridades-titulo">{fila.length ? 'Pede ação agora' : 'Nada pedindo ação'}</h2>
         {fila.length === 0 ? <p className="adm-prioridades__calma"><Icone nome="certo" tamanho={18} /> Sem falhas de pagamento, pendências de conteúdo ou novos parados. A fila se atualiza sozinha.</p>
-          : <ol className="adm-prioridades__lista">{fila.slice(0, 3).map(item => <ItemFila key={item.id} item={item} irPara={irPara} />)}</ol>}
+          : <ol className="adm-prioridades__lista">{fila.slice(0, 3).map(item => <ItemFila key={item.id} item={item} irPara={irPara} tentar={tentar} />)}</ol>}
         {fila.length > 3 && <a className="adm-link" href="#comando-fila" onClick={e => { e.preventDefault(); document.getElementById('comando-fila')?.scrollIntoView({ behavior: 'smooth' }) }}>Ver a fila inteira ({fila.length}) <Icone nome="baixo" tamanho={14} /></a>}
       </section>
     </div>
@@ -200,7 +201,7 @@ export function AdminComando({ conta, periodo, aoMudarPeriodo, usuarios, usuario
         <header className="adm-area-c__cabeca"><h2 id="c-fila">Fila de atenção</h2><small>{fila.length} {fila.length === 1 ? 'item' : 'itens'}, do mais grave ao menos grave</small></header>
         {fila.length === 0 ? <p className="adm-vazio">A fila está vazia.</p> : (['tecnico', 'receita', 'conteudo', 'acompanhamento'] as GrupoAtencao[]).map(g => {
           const doGrupo = fila.filter(i => i.grupo === g)
-          return doGrupo.length ? <div key={g} className="adm-fila__grupo"><h3>{ROTULO_GRUPO[g]}</h3><ol className="adm-prioridades__lista">{doGrupo.map(i => <ItemFila key={i.id} item={i} irPara={irPara} />)}</ol></div> : null
+          return doGrupo.length ? <div key={g} className="adm-fila__grupo"><h3>{ROTULO_GRUPO[g]}</h3><ol className="adm-prioridades__lista">{doGrupo.map(i => <ItemFila key={i.id} item={i} irPara={irPara} tentar={tentar} />)}</ol></div> : null
         })}
       </section>
     </div>
@@ -208,7 +209,7 @@ export function AdminComando({ conta, periodo, aoMudarPeriodo, usuarios, usuario
   </div>
 }
 
-function ItemFila({ item, irPara }: { item: ItemAtencao; irPara: (d: Destino) => void }) {
+function ItemFila({ item, irPara, tentar }: { item: ItemAtencao; irPara: (d: Destino) => void; tentar: () => void }) {
   return <li className={`adm-fila adm-fila--${item.severidade}`}>
     <div className="adm-fila__topo">
       <span className={`adm-sev adm-sev--${item.severidade}`}>{ROTULO_SEVERIDADE[item.severidade]}</span>
@@ -217,7 +218,7 @@ function ItemFila({ item, irPara }: { item: ItemAtencao; irPara: (d: Destino) =>
     <p className="adm-fila__causa">{item.causa}</p>
     <div className="adm-fila__pe">
       {item.ultimoEm && <small>Último: {haQuantoTempo(item.ultimoEm)}</small>}
-      <button type="button" className="botao botao--fantasma adm-fila__acao" onClick={() => item.acao === 'Tentar de novo' ? window.location.reload() : irPara(item.destino)}>{item.acao}</button>
+      <button type="button" className="botao botao--fantasma adm-fila__acao" onClick={() => item.acao === 'Tentar de novo' ? tentar() : irPara(item.destino)}>{item.acao}</button>
     </div>
   </li>
 }
@@ -259,10 +260,10 @@ function Funil({ funil, carregando }: { funil: FunilCompleto | null; carregando:
 function Barras({ itens, formato, titulo }: { itens: Array<{ rotulo: string; valor: number }>; formato: (n: number) => string; titulo: string }) {
   const total = itens.reduce((s, i) => s + i.valor, 0)
   if (!total) return null
-  return <div className="adm-composicao">
+  return <div className="adm-comp-c">
     <h3>{titulo}</h3>
     <ul>{itens.map(i => <li key={i.rotulo}>
-      <span>{i.rotulo}</span><span className="adm-composicao__trilho" aria-hidden="true"><span style={{ width: `${(i.valor / total) * 100}%` }} /></span>
+      <span>{i.rotulo}</span><span className="adm-comp-c__trilho" aria-hidden="true"><span style={{ width: `${(i.valor / total) * 100}%` }} /></span>
       <strong className="numerico">{formato(i.valor)} <small>{Math.round((i.valor / total) * 100)}%</small></strong>
     </li>)}</ul>
   </div>

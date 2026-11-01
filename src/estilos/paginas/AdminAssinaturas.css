@@ -2,38 +2,11 @@
    Saíram do CSS global para não descer em toda página. */
 .adm { max-width: 72rem; margin-inline: auto; }
 /* Painel é ferramenta: cabeçalho enxuto, sem faixa de destaque. */
-.adm-heroi { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0 0 .25rem; color: var(--texto); }
-.adm-heroi h1 { margin: .15rem 0 .1rem; font-size: clamp(1.3rem, 2.2vw, 1.6rem); }
-.adm-heroi p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
-.adm-heroi__sobre { display: inline-flex; align-items: center; gap: .35rem; font-size: var(--meta); font-weight: 700; color: var(--verdete); }
-.adm-heroi .adm-heroi__atualizar { flex: 0 0 auto; }
 
 /* ---------- Navegação: cinco seções (T6.6) ----------
    Computador: coluna à esquerda, presa ao rolar. Celular: barra fixa embaixo da tela.
    As partes de cada seção ficam numa fita de abas no topo da área. Sem pixel art: é ferramenta. */
-.adm-corpo { display: grid; gap: 1rem; margin-top: var(--e-4); }
-.adm-nav ul { list-style: none; margin: 0; padding: 0; }
-.adm-nav__item { position: relative; display: flex; align-items: center; color: var(--texto-2); font-weight: 650; text-decoration: none; border-radius: var(--raio-controle); }
-.adm-nav__item:hover { background: var(--superficie-2); color: var(--texto); }
-.adm-nav__item[aria-current="page"] { background: var(--verdete); color: var(--sobre-destaque); }
-.adm-nav__item:focus-visible { outline: 2px solid var(--foco); outline-offset: 2px; }
-.adm-nav__icone { position: relative; display: inline-grid; place-items: center; }
-.adm-nav__ponto { position: absolute; top: -2px; right: -5px; width: .55rem; height: .55rem; border-radius: 50%; background: var(--erro); box-shadow: 0 0 0 2px var(--superficie); }
-.adm-nav__numero { min-width: 1.4rem; padding: .05rem .4rem; border-radius: var(--raio-pill); background: var(--superficie-2); color: var(--texto); font-size: .75rem; text-align: center; font-variant-numeric: tabular-nums; }
-.adm-nav__item[aria-current="page"] .adm-nav__numero { background: color-mix(in srgb, var(--sobre-destaque) 22%, transparent); color: inherit; }
-.adm-nav__numero--alerta, .adm-nav__item[aria-current="page"] .adm-nav__numero--alerta { background: var(--erro); color: var(--sobre-erro); }
 
-.adm-area { min-width: 0; }
-.adm-area__cabeca { display: grid; gap: var(--e-2); }
-.adm-area__titulo { margin: 0; font-size: 1.35rem; }
-.adm-partes { position: sticky; top: 66px; z-index: 5; display: flex; gap: .35rem; overflow-x: auto; padding: .35rem; border: var(--borda); border-radius: var(--raio-cartao); background: color-mix(in srgb, var(--superficie) 92%, transparent); backdrop-filter: blur(10px); scrollbar-width: none; }
-.adm-partes::-webkit-scrollbar { display: none; }
-.adm-parte { display: inline-flex; align-items: center; gap: .4rem; flex: 0 0 auto; min-height: 42px; padding: 0 .75rem; border: 0; border-radius: var(--raio-controle); background: transparent; color: var(--texto-2); font: inherit; font-size: var(--corpo-menor); font-weight: 650; cursor: pointer; }
-.adm-parte:hover { background: var(--superficie-2); color: var(--texto); }
-.adm-parte[aria-selected="true"] { background: var(--verdete-veu); color: var(--verdete-tinta); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--verdete) 40%, transparent); }
-.adm-parte b { min-width: 1.4rem; padding: .05rem .4rem; border-radius: var(--raio-pill); background: var(--superficie-2); color: var(--texto); font-size: .75rem; text-align: center; font-variant-numeric: tabular-nums; }
-.adm-parte b.adm-parte__alerta { background: var(--erro); color: var(--sobre-erro); }
-.adm-parte:focus-visible { outline: 2px solid var(--foco); outline-offset: 2px; }
 .adm-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
 .adm-kpi { display: grid; align-content: start; gap: .2rem; padding: 1rem 1.1rem; border: var(--borda); border-radius: var(--raio-grande); background: var(--superficie); color: var(--texto); text-align: left; font: inherit; }
 .adm-kpi span { display: inline-flex; align-items: center; gap: .4rem; color: var(--texto-2); font-size: var(--meta); font-weight: 650; }
@@ -397,24 +370,9 @@
 .adm-opiniao__notas { font-size: 0.9rem; color: var(--texto-2); }
 
 /* ---------- Pontos de quebra: só dois, 56rem e 40rem (antes eram sete) ---------- */
-@media (min-width: 56rem) {
-  .adm-corpo { grid-template-columns: 12.5rem minmax(0, 1fr); gap: var(--e-5); align-items: start; }
-  .adm-nav { position: sticky; top: 76px; }
-  .adm-nav ul { display: grid; gap: var(--e-1); }
-  .adm-nav__item { gap: .65rem; min-height: var(--toque); padding: 0 .75rem; }
-  .adm-nav__numero { margin-left: auto; }
-  .adm-nav__ponto { display: none; }
-  .adm-partes { top: 76px; }
-}
 @media (max-width: 55.99rem) {
   /* Espaço para a barra de seções não cobrir o fim da página. */
   .adm { padding-bottom: calc(var(--altura-barra-movel) + env(safe-area-inset-bottom, 0px)); }
-  .adm-nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: var(--z-barra); padding: .25rem .25rem calc(.25rem + env(safe-area-inset-bottom, 0px)); border-top: var(--borda); background: var(--superficie); box-shadow: 0 -6px 18px rgba(18, 24, 26, .06); }
-  .adm-nav ul { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .15rem; max-width: 40rem; margin-inline: auto; }
-  .adm-nav__item { flex-direction: column; justify-content: center; gap: .15rem; min-height: 3.25rem; padding: .2rem 0; font-size: .68rem; letter-spacing: -.01em; text-align: center; }
-  .adm-nav__item[aria-current="page"] { background: var(--verdete-veu); color: var(--verdete-tinta); }
-  .adm-nav__rotulo { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .adm-nav__numero { display: none; }
   .adm-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .adm-usuario { grid-template-columns: auto minmax(0, 1fr); }
   .adm-usuario__numeros { grid-column: 2; }
@@ -425,7 +383,6 @@
   .adm-lembrete__acoes .botao { flex: 1; }
 }
 @media (max-width: 40rem) {
-  .adm-heroi { flex-direction: column; align-items: stretch; }
   .adm-duas, .adm-busca, .adm-busca--tres, .adm-acoes .adm-busca { grid-template-columns: 1fr; }
   .adm-kpi strong { font-size: clamp(1rem, 4.4vw, 1.55rem); white-space: nowrap; }
   .adm-avaliacao__topo { flex-direction: column; }
@@ -457,8 +414,6 @@
 }
 
 /* Cabeçalho: ações lado a lado. */
-.adm-heroi__acoes { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: flex-end; }
-.adm-heroi__acoes .botao { min-height: 42px; }
 
 /* Texto de uma linha só, cortado com reticências (o tamanho do cartão não muda). */
 .adm-reticencias { display: block; min-width: 0; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -607,8 +562,6 @@ button.adm-estudo__item:focus-visible { outline: 2px solid var(--foco); outline-
   .adm-busca--filtros > :first-child { grid-column: 1 / -1; }
 }
 @media (max-width: 40rem) {
-  .adm-heroi__acoes { justify-content: stretch; }
-  .adm-heroi__acoes .botao { flex: 1 1 auto; justify-content: center; }
   .adm-estudo { padding: .85rem; }
   .adm-estudo__item { padding: .65rem .7rem; }
   .adm-estudo__item strong { font-size: 1.5rem; }
@@ -632,8 +585,6 @@ button.adm-estudo__item:focus-visible { outline: 2px solid var(--foco); outline-
 }
 
 /* ---------- Painel de observação (17/10/2026): Agora e Ganhos ---------- */
-.adm-nav__numero--vivo { background: color-mix(in srgb, var(--acerto) 16%, var(--superficie)); color: var(--acerto); }
-.adm-nav__item[aria-current="page"] .adm-nav__numero--vivo { background: color-mix(in srgb, var(--sobre-destaque) 22%, transparent); color: inherit; }
 .adm-estudo__numeros--seis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 .adm-atencao { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem; padding: .7rem .9rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }

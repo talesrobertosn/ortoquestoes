@@ -30,34 +30,35 @@ export type Modo = 'ver' | 'investigar' | 'agir'
 export const ROTULO_MODO: Record<Modo, string> = { ver: 'Ver', investigar: 'Investigar', agir: 'Agir' }
 
 export interface DefinicaoParte { id: Aba; rotulo: string; modo: Modo; pergunta: string }
-export interface DefinicaoSecao { id: Secao; rotulo: string; icone: NomeIcone; abas: DefinicaoParte[] }
+/** `curto`: o nome na barra inferior do celular (seis áreas lado a lado, sem reticências). */
+export interface DefinicaoSecao { id: Secao; rotulo: string; curto: string; icone: NomeIcone; abas: DefinicaoParte[] }
 
 export const SECOES: DefinicaoSecao[] = [
-  { id: 'comando', rotulo: 'Comando', icone: 'olho', abas: [
+  { id: 'comando', rotulo: 'Comando', curto: 'Comando', icone: 'olho', abas: [
     { id: 'comando', rotulo: 'Visão geral', modo: 'ver', pergunta: 'O site está saudável, o que mudou e o que pede ação agora?' },
     { id: 'agora', rotulo: 'Hoje em detalhe', modo: 'investigar', pergunta: 'Quem está online, quem estudou hoje e quem entrou sem estudar?' },
   ] },
-  { id: 'pessoas', rotulo: 'Pessoas', icone: 'grupo', abas: [
+  { id: 'pessoas', rotulo: 'Pessoas', curto: 'Pessoas', icone: 'grupo', abas: [
     { id: 'crescimento', rotulo: 'Análise', modo: 'investigar', pergunta: 'Onde as pessoas chegam, ativam, voltam e deixam de estudar?' },
     { id: 'usuarios', rotulo: 'Explorador', modo: 'agir', pergunta: 'Quem é a pessoa por trás deste número, e o que fazer por ela?' },
   ] },
-  { id: 'estudo', rotulo: 'Estudo e conteúdo', icone: 'livro', abas: [
+  { id: 'estudo', rotulo: 'Estudo e conteúdo', curto: 'Estudo', icone: 'livro', abas: [
     { id: 'conteudo', rotulo: 'Triagem', modo: 'agir', pergunta: 'Que questão ou relato precisa de revisão agora?' },
     { id: 'questoes', rotulo: 'Editor de questões', modo: 'agir', pergunta: 'Corrigir enunciado, alternativas, gabarito, comentário ou imagem.' },
     { id: 'opinioes', rotulo: 'Opiniões dos flashcards', modo: 'investigar', pergunta: 'O que as pessoas dizem do som, do visual, do desempenho e do conteúdo?' },
     { id: 'simulados', rotulo: 'Simulados', modo: 'agir', pergunta: 'Montar, revisar, publicar e acompanhar as edições.' },
   ] },
-  { id: 'receita', rotulo: 'Receita', icone: 'grafico', abas: [
+  { id: 'receita', rotulo: 'Receita', curto: 'Receita', icone: 'grafico', abas: [
     { id: 'financeiro', rotulo: 'Resultados', modo: 'ver', pergunta: 'Quanto entrou de fato, quanto é reconstrução e quanto é previsão?' },
     { id: 'assinaturas', rotulo: 'Assinaturas', modo: 'investigar', pergunta: 'Quem tem acesso, por qual plano e meio, e até quando?' },
     { id: 'cobrancas', rotulo: 'Cobranças', modo: 'investigar', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, com a pessoa e o processador.' },
     { id: 'pagamentos', rotulo: 'Avisos do processador', modo: 'agir', pergunta: 'Algum aviso do Mercado Pago falhou e precisa ser reprocessado?' },
   ] },
-  { id: 'comunicacao', rotulo: 'Comunicação', icone: 'correio', abas: [
+  { id: 'comunicacao', rotulo: 'Comunicação', curto: 'E-mails', icone: 'correio', abas: [
     { id: 'lembretes', rotulo: 'Campanhas e envios', modo: 'agir', pergunta: 'O que está pronto para enviar, para quem, por quê, e o que já saiu?' },
     { id: 'todas', rotulo: 'Catálogo de cartas', modo: 'investigar', pergunta: 'Todas as cartas do site, com prévia e variações.' },
   ] },
-  { id: 'configuracoes', rotulo: 'Configurações', icone: 'filtro', abas: [
+  { id: 'configuracoes', rotulo: 'Configurações', curto: 'Ajustes', icone: 'filtro', abas: [
     { id: 'ajustes', rotulo: 'Site e acesso', modo: 'agir', pergunta: 'Limite gratuito, pagamentos e aviso no topo do site: o que vale agora?' },
     { id: 'exportar', rotulo: 'Exportação', modo: 'agir', pergunta: 'Levar os dados do painel para uma análise, com a privacidade escolhida.' },
   ] },

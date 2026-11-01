@@ -1,8 +1,8 @@
 # Reconstrução do painel administrativo — "Mesa de Comando do Atlas" (01/11/2026)
 
-> Documento vivo. **Estado: EM ANDAMENTO (passagem de sessão).** Tales avisou que o uso podia acabar; esta seção
-> registra exatamente o que foi feito e o que falta, para outra conta continuar sem refazer nada.
-> Branch: `claude/ortoquestoes-admin-rebuild-n8f9hl`. Prompt completo do pedido: colado pelo Tales na sessão
+> Documento vivo. **Estado: shell, CSS, faixa HD-2D, testes e documentação de métricas feitos (01/11/2026, segunda
+> sessão); falta a revisão do Tales nas telas e a PR.** Branch da primeira sessão: `claude/ortoquestoes-admin-rebuild-n8f9hl`;
+> a segunda sessão continuou em `claude/gallant-cannon-5hynui` (com o commit da primeira mesclado). Prompt completo do pedido: colado pelo Tales na sessão
 > (seções 0–21: arquitetura, métricas, Comando, Pessoas, Receita, Estudo, Simulados, Comunicação, Configurações,
 > visual HD-2D, gráficos, componentes, backend, acessibilidade, ordem de implementação e matriz de aceite).
 
@@ -19,46 +19,43 @@
 | `src/componentes/admin/AdminAvisosProcessador.tsx` | **novo (extraído)** | A lista de Avisos de pagamento, sem mudar lógica (reprocessar com `confirmar`, marcar visto, link MP). Exporta `AdminAvisosProcessador`. |
 | Textos | ajustados | "Financeiro ›" → "Receita ›" nos textos visíveis (rotulos.ts, AdminFinanceiro, AdminAgora, AdminCobrancas); títulos "Avisos do processador", "Catálogo de cartas", "Campanhas e envios". |
 
-## 2. O que FALTA (próxima conta, nesta ordem)
+## 2. Segunda sessão (01/11/2026): o que foi feito
 
-1. **Reescrever o shell** `src/paginas/AdminAssinaturas.tsx` (manter o nome do arquivo e o export `AdminAssinaturas`:
-   `App.tsx`, `util/preCarga.ts` e `fixtures/testar_paywall.py` dependem dele; o teste exige as strings
-   `listar_assinaturas_admin`, `Acesso negado`, `status_processamento === 'erro'`, `webhook-mercado-pago?acao=reprocessar`
-   em `src/paginas/AdminAssinaturas.tsx` + `src/componentes/admin/*.ts*` — glob NÃO recursivo, manter arquivos planos).
-   - Remover do arquivo as funções `Assinaturas` e `Pagamentos` e importar `AdminListaAssinaturas` / `AdminAvisosProcessador`
-     (já extraídos; hoje o código está duplicado).
-   - O arquivo antigo compara `secao === 'agora'`, `s.id === 'pessoas'` e `aba === 'agora'` como padrão: com o
-     `secoes.ts` novo isso **não compila** até o shell ser trocado (padrão agora é `comando`; `agora` é parte de `comando`).
-   - Shell novo: barra fina (trilha "Painel › Área › Parte", `Atualizado`, Atualizar, Exportar), **sem** o herói antigo;
-     navegação lateral no desktop com as 6 áreas e as partes da área ativa aninhadas (2 níveis); no celular, barra
-     inferior com 6 áreas + `.seletor` rolável com as partes; cabeçalho de cada parte com `ROTULO_MODO[modo]` + `pergunta`;
-     skip link para `#adm-painel`.
-   - Ligar: `aba==='comando'` → `<AdminComando …>` (passar `periodo`, `aoMudarPeriodo` via `irPara({periodo})`,
-     `irPara(destino)` convertendo `{aba, filtro, vista}`); `financeiro` → `<AdminReceitaPeriodo>` acima de `<AdminFinanceiro>`;
-     `exportar` → seção com `<AdminExportar />`; `ajustes` → `<AdminConfiguracoes />`. `usuariosQ` precisa ficar ativo também em `comando`;
-     `cobrancasQ` ativo em `comando`; `resumoQ` com atualização em `comando` e `agora`.
-   - Em `AdminComando`, trocar o `window.location.reload()` do item "Tentar de novo" por um `recarregar` vindo do shell.
-2. **CSS** novo `src/estilos/paginas/AdminPainel.css` (importar no shell): classes usadas e ainda sem estilo —
-   `adm-comando*`, `adm-trilha`, `adm-ind*`, `adm-q--*`, `adm-mudanca--*`, `adm-mini-grafico*`, `adm-periodo`,
-   `adm-serie*` (barra a/b/c, hachura, linha b tracejada, cursor, dica), `adm-legenda`, `adm-quadro*`, `adm-atualizado`,
-   `adm-prioridades*`, `adm-fila*`, `adm-sev--*`, `adm-area-c*`, `adm-contas`, `adm-vivos*`, `adm-hoje`, `adm-sem-medida`,
-   `adm-funil-c*`, `adm-dupla*`, `adm-composicao*`, `adm-saude*`, `adm-atalhos`, `adm-receita-periodo*`. Tokens de
-   `tokens.css` (porcelana, superfície, verdete, grafite, traço; escuro em `:root[data-tema="escuro"]`). Remover do
-   `AdminAssinaturas.css` as regras do shell antigo (`adm-heroi*`, `adm-nav*`, `adm-corpo`, `adm-partes`, `adm-parte`,
-   `adm-area__*`) quando o shell novo estiver no ar.
-3. **Arte HD-2D** `scripts/gerar_cena_admin.py` (modelo: `scripts/gerar_cena_flashcards.py`, importa
-   `gerar_cena_cronograma as cr` e usa `Camada`/`Montagem`): observatório da vila de manhã — mesa de madeira com mapa e
-   instrumentos de latão, janela em arco com telhados e torre do relógio ao longe, luminária quente, feixe de sol com
-   poeira; lado esquerdo calmo; sem texto, cruz, igreja ou personagem protegido. Pintar 480×200, exportar
-   `public/pixel/admin/observatorio.webp` (1440×480, recorte de faixa) e `-960.webp`. 4–6 rodadas olhando o resultado.
-4. **Testes**: atualizar `fixtures/testar_admin_secoes.mjs` (áreas novas, `''→comando`, `geral→comando`, `hoje→agora`,
-   `periodo` só em comando/financeiro) e criar `fixtures/testar_admin_metricas.mjs` (cortarPeriodos, receitaDoPeriodo
-   separando estimada, filaDeAtencao ordenada e sem itens com contagem 0, fraseDoEstado; e que cada chave de `METRICAS`
-   aparece em `docs/admin/METRICAS.md`) e incluí-lo no `npm test`. Ajustar `fixtures/e2e_painel_admin.mjs`
-   (espera `.adm-nav`; áreas novas; capturas 1440/390 claro/escuro).
-5. **`docs/admin/METRICAS.md`** com uma linha por métrica de `metricas.ts` (mesmos campos).
-6. `npm ci` (node_modules não estava instalado nesta sessão), `npx tsc --noEmit -p .`, `npm test`, `npm run build`,
-   e2e com capturas; 4–6 rodadas visuais; preencher a matriz de paridade abaixo com evidência; abrir PR em rascunho.
+1. **Shell novo** em `src/paginas/AdminAssinaturas.tsx` (mesmo nome e export): barra fina (`.adm-topo-painel`: migalhas
+   "Painel › Área › Parte", Atualizado, Atualizar, Exportar), sem o herói antigo; coluna lateral no computador com as seis
+   áreas e as partes da área aberta aninhadas; no celular, barra inferior com as seis áreas (nome curto `curto` em `secoes.ts`:
+   Comando, Pessoas, Estudo, Receita, E-mails, Ajustes) e as partes num trilho rolável fixo acima do conteúdo; link "Pular
+   para o conteúdo"; cabeçalho de cada parte com o modo (Ver, Investigar, Agir) e a pergunta. `Assinaturas` e `Pagamentos`
+   saíram do arquivo (usa `AdminListaAssinaturas` e `AdminAvisosProcessador`). Comando ligado com período no endereço,
+   `irPara` validado por `lerUrl`, e "Tentar de novo" da fila chamando o `recarregar` do shell (sem recarregar a página).
+   Receita › Resultados abre com `AdminReceitaPeriodo` acima de `AdminFinanceiro` (só com as cobranças gravadas);
+   Configurações › Exportação é parte própria.
+2. **CSS** novo `src/estilos/paginas/AdminPainel.css`; regras do shell antigo (`adm-heroi*`, `adm-nav*`, `adm-corpo`,
+   `adm-partes`, `adm-parte*`, `adm-area*`) saíram de `AdminAssinaturas.css`. Nomes que já existiam e colidiam foram
+   trocados: `.adm-barra` (barrinha de progresso antiga) → `.adm-topo-painel`; `.adm-trilha` (linha do tempo da ficha)
+   → `.adm-migalhas`; `.adm-composicao` (AdminGraficos) → `.adm-comp-c`. **Responsivo pelo espaço do painel**
+   (container query `comando`), não pela janela: estreito, 2 colunas; médio, o indicador principal à esquerda nas duas
+   linhas e quatro em 2 × 2; largo (72rem de painel), cinco lado a lado. A definição do indicador ("?") abre num balão
+   por cima, sem esticar a linha. No computador a cena fica só na metade direita do topo, sem passar por baixo do texto.
+3. **Arte**: `scripts/gerar_cena_admin.py` gera `public/pixel/admin/observatorio{,-960,-movel}.webp` a partir do
+   observatório já aprovado (`gerar_cena_observatorio.py`, luz da manhã) com o terço esquerdo mais calmo. Não é cena
+   nova: se o Tales quiser a "mesa de comando" própria (mesa com mapa, janela em arco com a torre do relógio), é o próximo
+   passo de arte.
+4. **Testes**: `fixtures/testar_admin_secoes.mjs` reescrito (seis áreas, modos, nomes curtos, endereços antigos e novos,
+   período só em Comando e Resultados, id sem e-mail/espaço); `fixtures/testar_admin_metricas.mjs` novo, no `npm test`
+   (períodos, receita confirmada × reconstruída batendo com o gráfico, fila ordenada e sem item zerado, frase sem número
+   inventado, e cada métrica de `METRICAS` em `docs/admin/METRICAS.md`); `fixtures/e2e_painel_admin.mjs` atualizado
+   (Comando, navegação em dois níveis, Avisos, Exportação, tablet 1024, capturas 1440/1024/390 claro e escuro) e com
+   três conferências que já estavam velhas antes desta reconstrução corrigidas (rótulo "Desligaram a renovação hoje",
+   "Obrigado pela assinatura" e o catálogo de cartas, que passou de 32 para 42 cartões: agora o número vem do filtro).
+5. **`docs/admin/METRICAS.md`** gerado do próprio dicionário.
+6. `npx tsc --noEmit -p .`, `npm test`, `npm run build` e o e2e passaram.
+
+### O que ainda falta
+
+- Revisão visual do Tales (prints enviados na conversa) e a PR.
+- Cena HD-2D própria do painel, se ele quiser (ver item 3).
+- Concordância de número nos títulos da fila ("1 Avisos do processador com falha"): título único hoje; pode ganhar singular.
 
 ## 3. Inventário (antes da reconstrução)
 
@@ -96,19 +93,19 @@
 
 | # | Função | Componente novo | Situação |
 |---|---|---|---|
-| 1 | Agora | AdminComando + AdminAgora (Hoje em detalhe) | pendente: shell |
-| 2 | Usuários | AdminUsuarios (sem mudança) | pendente: shell |
-| 3 | Ficha | AdminFichaUsuario (sem mudança) | pendente: verificação |
-| 4 | Crescimento | AdminCrescimento (sem mudança) | pendente |
-| 5 | Financeiro | AdminReceitaPeriodo + AdminFinanceiro | pendente: shell |
-| 6 | Assinaturas | AdminListaAssinaturas (extraído) | pendente: shell |
-| 7 | Cobranças | AdminCobrancas | pendente |
-| 8 | Avisos | AdminAvisosProcessador (extraído) | pendente: shell |
-| 9–11 | Conteúdo, Questões, Flashcards | sem mudança | pendente |
-| 12 | Simulados | sem mudança (trava no servidor já existente a conferir) | pendente |
-| 13 | E-mails | sem mudança | pendente |
-| 14–15 | Ajustes, Exportação | AdminConfiguracoes, AdminExportar | pendente |
-| 16 | Segurança | só RPCs existentes com exigir_administrador | a conferir |
-| 17 | Navegação | secoes.ts novo | pendente: testes |
+| 1 | Agora | AdminComando + AdminAgora (Hoje em detalhe) | ok: e2e (online, listas, filtros, ficha, carta) |
+| 2 | Usuários | AdminUsuarios (sem mudança) | ok: e2e (Pessoas › Explorador) |
+| 3 | Ficha | AdminFichaUsuario (sem mudança) | ok: e2e (abre em "Carta e ações") |
+| 4 | Crescimento | AdminCrescimento (sem mudança) | ok: e2e (Pessoas › Análise, captura) |
+| 5 | Financeiro | AdminReceitaPeriodo + AdminFinanceiro | ok: e2e (faixa do período, Ganhos, previsão) |
+| 6 | Assinaturas | AdminListaAssinaturas (extraído) | ok: typecheck + testar_paywall (strings) |
+| 7 | Cobranças | AdminCobrancas | ok: sem mudança, ligada |
+| 8 | Avisos | AdminAvisosProcessador (extraído) | ok: e2e (lista com o erro) + testar_paywall (reprocessar) |
+| 9–11 | Conteúdo, Questões, Flashcards | sem mudança | ok: ligados; Simulados visível no e2e |
+| 12 | Simulados | sem mudança | ok: ligado (a trava no servidor não foi mexida) |
+| 13 | E-mails | sem mudança | ok: e2e (Campanhas, Catálogo de cartas inteiro) |
+| 14–15 | Ajustes, Exportação | AdminConfiguracoes, AdminExportar | ok: e2e (Exportação como parte) |
+| 16 | Segurança | só RPCs existentes com exigir_administrador | ok: nenhuma RPC nova; nada pessoal no endereço (testado) |
+| 17 | Navegação | secoes.ts novo | ok: testar_admin_secoes + e2e (endereços antigos) |
 
 Nada aqui deve ser chamado de "reconstrução completa" até a matriz estar preenchida.
