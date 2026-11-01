@@ -47,6 +47,8 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
       </div>
       <BuscaPortal paginas={paginasBusca} aoIr={aoFechar} focar={!!focarBusca} aoDigitar={definirDigitando} />
     </header>
+    {/* No celular, as falas da coruja e do gato entram aqui, no fluxo: empurram o conteúdo em vez de cobri-lo. */}
+    <div className="pt-fala-faixa" id="pt-fala-faixa" />
     <div className={'pt-corpo' + (digitando ? ' pt-corpo--buscando' : '')}>
 
       <ContinuarJornada premium={premium} aoIr={aoFechar} />

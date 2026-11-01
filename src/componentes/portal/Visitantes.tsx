@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
 import { gravar, ler } from '../../estado/armazenamento'
 import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixel'
 import { GatoPixel } from '../mascote/GatoPixel'
@@ -31,6 +32,8 @@ const FALAS = [
   'Dizem que a Biblioteca guarda segredos. O gato sabe de alguns.',
 ]
 
+const CELULAR = '(max-width: 48rem)'
+const noCelular = () => typeof matchMedia !== 'undefined' && matchMedia(CELULAR).matches
 const semMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
 const forcado = () => { try { return sessionStorage.getItem('portal:forcar') ?? '' } catch { return '' } }
 
@@ -44,6 +47,17 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
   const depois = (f: () => void, ms: number) => { relogios.current.push(window.setTimeout(f, ms)) }
   useEffect(() => () => relogios.current.forEach((t) => window.clearTimeout(t)), [])
   const falas = useRef(0)
+  // No celular não há canto livre sobre o menu: a fala vai para a faixa abaixo da busca (Portal.tsx), no fluxo.
+  const [celular, definirCelular] = useState(noCelular)
+  useEffect(() => {
+    if (typeof matchMedia === 'undefined') return
+    const m = matchMedia(CELULAR), mudou = () => definirCelular(m.matches)
+    m.addEventListener('change', mudou); return () => m.removeEventListener('change', mudou)
+  }, [])
+  const naFaixa = (no: ReactNode) => {
+    const faixa = celular && typeof document !== 'undefined' ? document.getElementById('pt-fala-faixa') : null
+    return faixa ? createPortal(no, faixa) : no
+  }
 
   // A coruja: decide na abertura.
   useEffect(() => {
@@ -123,7 +137,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     <>
       {coruja !== 'longe' && (
         <div className={`pt-coruja pt-coruja--${coruja}`}>
-          {fala && <p className="pt-coruja__fala" role="status" onClick={() => definirFala(null)}>{fala}</p>}
+          {fala && naFaixa(<p className="pt-coruja__fala" role="status" onClick={() => definirFala(null)}>{celular && <b>Coruja: </b>}{fala}</p>)}
           <button type="button" className="pt-coruja__botao" onClick={tocarCoruja} aria-label="A coruja bibliotecária: um conceito que cai na prova">
             <CorujaPixel estado={estadoCoruja} />
           </button>
@@ -131,7 +145,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
       )}
       {gato !== 'longe' && (
         <div className={`pt-gato pt-gato--${gato}`}>
-          {miau && <span className="pt-gato__miau" role="status">{miau}</span>}
+          {miau && naFaixa(<span className="pt-gato__miau" role="status" onClick={() => definirMiau(null)}>{celular && <b>Gato: </b>}{miau}</span>)}
           <button type="button" className="pt-gato__botao" onClick={tocarGato} aria-label="O gato do OrtoQuestões: tocar">
             <GatoPixel estado={linhaGato} />
           </button>

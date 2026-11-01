@@ -277,5 +277,18 @@
   .pt-vagalume { display: none; }
 }
 
+/* As falas não cobrem a busca nem os itens (Tales, 01/11/2026): no computador a da coruja corre larga pelo cabeçalho, à
+   esquerda dela (duas linhas no máximo), e o gato, menor, fica no rodapé com a fala ao lado, sobre a faixa vazia. */
+@media (min-width: 48.0625rem) {
+  .pt-coruja__fala { top: 8px; width: max-content; max-width: min(34rem, calc(100vw - 32rem)); padding: 0.4rem 0.65rem; font-size: 0.78rem; line-height: 1.35; }
+  .pt-gato { bottom: 2px; right: 2.25rem; }
+  .pt-gato .gato-pixel { width: 64px; height: 48px; }
+  .pt-gato__miau { right: calc(100% + 8px); bottom: 2px; max-width: min(24rem, 40vw); background: #fbf3df; }
+}
+/* A faixa das falas no celular: fica vazia (sem altura) até alguém falar; a fala entra como um balão de diálogo. */
+.pt-fala-faixa:empty { display: none; }
+.pt-fala-faixa { display: grid; gap: 0.4rem; padding: 0.55rem 1rem 0; }
+.pt-fala-faixa :is(.pt-coruja__fala, .pt-gato__miau) { position: static; width: auto; max-width: none; margin: 0; font-size: 0.8125rem; font-weight: 500; line-height: 1.4; cursor: pointer; }
+.pt-fala-faixa b { font-weight: 800; }
 /* Point and click: passar o mouse num bicho acende um contorno dourado (dá para clicar e ele fala). */
 @media (hover: hover) { :is(.pt-coruja__botao, .pt-gato__botao):hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }
