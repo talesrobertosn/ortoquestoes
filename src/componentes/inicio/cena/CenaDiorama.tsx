@@ -7,6 +7,7 @@ import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../../mascote/falasBi
 import { FALAS_PAUSA_APAGADA, FALAS_PAUSA_FOGUEIRA } from '../../mascote/falas'
 import { EVENTO_AMOSTRA } from '../AmostraRespondivel'
 import { urlCss } from '../../../config'
+import { luzNoBicho, mapasDeLuz, type Luz } from '../../mascote/luz'
 import { cenarioDaHora, type Cenario } from './cenarios'
 import type { Periodo } from '../../../estado/aparencia'
 
@@ -109,7 +110,7 @@ const PAUSA_MS = 20000
 const CORUJA = { w: 33, h: 24 }
 const ROTINA_CORUJA: EstadoCoruja[] = ['parada', 'olhando', 'parada', 'lendo', 'lendo', 'parada', 'acenando']
 const OUTROS = '.hd-mascote, .mascote__balao, .hd-balao:not(.hd-balao--coruja), .hd-gato'
-function CorujaDoAcampamento({ poleiros: POLEIROS }: { poleiros: Cenario['coruja'] }) {
+function CorujaDoAcampamento({ poleiros: POLEIROS, luzes, periodo }: { poleiros: Cenario['coruja']; luzes: readonly Luz[]; periodo: Periodo }) {
   const [passo, definirPasso] = useState(0)
   const [acenou, definirAcenou] = useState(0)
   // Começa escondida e escolhe o poleiro logo ao montar (antes aparecia 1 s no primeiro poleiro, às vezes em dobro).
@@ -149,14 +150,16 @@ function CorujaDoAcampamento({ poleiros: POLEIROS }: { poleiros: Cenario['coruja
   useEffect(() => { if (!acenou) return; const t = window.setTimeout(() => definirAcenou(0), 1400); return () => window.clearTimeout(t) }, [acenou])
   useEffect(() => { if (!fala) return; const t = window.setTimeout(() => definirFala(null), 11000); return () => window.clearTimeout(t) }, [fala])
   const pt = POLEIROS[poleiro ?? 0]
+  // A luz da cena na coruja: do lado da fogueira (ou do sol, da lua) que estiver mais perto do poleiro.
+  const luz = luzNoBicho(pt.x, pt.y - 12, luzes, periodo)
   // A coruja é a sábia: cada toque explica um conceito que cai na prova.
   const tocar = () => { definirAcenou((n) => n + 1); definirFala(proximaFala('coruja', CONCEITOS_CORUJA)); avisarFala('coruja') }
   // Um fala de cada vez: se o gato começa a falar, a coruja fecha o balão dela.
   useEffect(() => ouvirFala((quem) => { if (quem !== 'coruja') definirFala(null) }), [])
   return <>
-    <button ref={ref} type="button" className={'hd-coruja' + (poleiro === null ? ' hd-coruja--fora' : '')} onClick={tocar}
+    <button ref={ref} type="button" className={`hd-coruja ${luz.className}` + (poleiro === null ? ' hd-coruja--fora' : '')} onClick={tocar}
       aria-label="Falar com a coruja" tabIndex={poleiro === null ? -1 : undefined} aria-hidden={poleiro === null || undefined}
-      style={lugar(pt.x - CORUJA.w / 2, pt.y - CORUJA.h * 31 / 32, CORUJA.w, CORUJA.h)}>
+      style={{ ...lugar(pt.x - CORUJA.w / 2, pt.y - CORUJA.h * 31 / 32, CORUJA.w, CORUJA.h), ...luz.style }}>
       <CorujaPixel key={`${estado}-${acenou}`} estado={estado} />
     </button>
     {fala && poleiro !== null && <span ref={balao} className={`hd-balao hd-balao--longo hd-balao--coruja ${pt.x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
@@ -398,6 +401,15 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   // Na pausa, a fogueira respira mais alto: uma revoada de fagulhas sobe mais longe e mais devagar.
   const fagulhas = useMemo(() => Array.from({ length: 14 }, (_, i) => ({ dx: ((i * 37) % 23) - 11, t: 2.6 + (i % 5) * 0.55, d: -((i * 0.43) % 3.4) })), [])
   const imagem = (larg: number) => recurso(`pixel/inicio/${cenario.arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
+  // As luzes da cena para os bichos (componentes/mascote/luz.ts): a fogueira, mais forte na pausa, e o céu da hora.
+  const luzes: Luz[] = [
+    { x: 240, y: 140, forca: fogoAceso ? (pausa ? 1.15 : 0.95) : 0.06, alcance: 175, tipo: linhaFogo === 5 ? 'azul' : linhaFogo === 6 ? 'arcana' : 'fogo' },
+    periodo === 'noite' ? { x: 400, y: 0, forca: 0.32, alcance: 620, tipo: 'lua' } : { x: 470, y: periodo === 'tarde' ? 70 : 10, forca: periodo === 'tarde' ? 0.42 : 0.36, alcance: 620, tipo: 'sol' },
+  ]
+  const luzMascote = luzNoBicho(285, 130, luzes, periodo)
+  const classeMascote = `hd-mascote ${luzMascote.className} bicho-sombra`
+  const estiloMascote = { ...lugar(262, 96, 46, 66.7), ...luzMascote.style }
+  const luzGato = luzNoBicho(PONTOS_GATO[ponto].x + 18, PONTOS_GATO[ponto].y + 9, luzes, periodo)
 
   return (
     // Só os bichos e a fogueira são alcançáveis (teclado e leitor de tela); o resto da arte é enfeite (aria-hidden).
@@ -427,17 +439,17 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
           aria-label={fogoAceso ? 'Descansar na fogueira' : 'Sentar na fogueira apagada'} onClick={() => { if (!pausa) avisarFala('esqueleto'); definirPausa((p) => (p ? 0 : Date.now())) }} />
         {/* O mascote, em pé ao lado da fogueira: um comportamento diferente a cada visita (componentes/mascote). */}
         {pausa
-          ? <Mascote key={`pausa-${pausa}`} className="hd-mascote" decorativo comportamento={fogoAceso ? 'fogueira' : 'descansando'} falas={fogoAceso ? FALAS_PAUSA_FOGUEIRA : FALAS_PAUSA_APAGADA} style={lugar(262, 96, 46, 66.7)} />
+          ? <Mascote key={`pausa-${pausa}`} className={classeMascote} decorativo comportamento={fogoAceso ? 'fogueira' : 'descansando'} falas={fogoAceso ? FALAS_PAUSA_FOGUEIRA : FALAS_PAUSA_APAGADA} style={estiloMascote} />
           : descanso
-          ? <Mascote key="descanso" className="hd-mascote" decorativo comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={lugar(262, 96, 46, 66.7)} />
+          ? <Mascote key="descanso" className={classeMascote} decorativo comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={estiloMascote} />
           : reacaoAmostra?.id === 'quadro'
-            ? <Mascote key={`quadro-${reacaoAmostra.n}`} className="hd-mascote" decorativo comportamento="quadro" style={lugar(262, 96, 46, 66.7)} />
-            : <Mascote key="dia" className="hd-mascote" decorativo reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={lugar(262, 96, 46, 66.7)} />}
+            ? <Mascote key={`quadro-${reacaoAmostra.n}`} className={classeMascote} decorativo comportamento="quadro" style={estiloMascote} />
+            : <Mascote key="dia" className={classeMascote} decorativo reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
         {pausa > 0 && <span className="so-leitor" role="status">{fogoAceso ? 'Pausa na fogueira: o esqueleto senta para se aquecer e o gato ronrona.' : 'A fogueira está apagada; o esqueleto senta um instante ao lado dela.'}</span>}
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" aria-label="Falar com o gato" tabIndex={semLugar ? -1 : undefined} aria-hidden={semLugar || undefined}
-          className={`hd-gato${andando ? ` hd-gato--andando hd-gato--${andando}` : ''}${semLugar ? ' hd-gato--fora' : ''}`}
-          style={{ ...lugar(PONTOS_GATO[ponto].x, PONTOS_GATO[ponto].y - 4.5, 36, 27), '--passo': `${DURACAO_PASSO}ms` } as CSSProperties}
+          className={`hd-gato ${luzGato.className}${andando ? ` hd-gato--andando hd-gato--${andando}` : ''}${semLugar ? ' hd-gato--fora' : ''}`}
+          style={{ ...lugar(PONTOS_GATO[ponto].x, PONTOS_GATO[ponto].y - 4.5, 36, 27), '--passo': `${DURACAO_PASSO}ms`, ...luzGato.style } as CSSProperties}
           onClick={() => {
             toquesGato.current++
             jaAndou.current = false
@@ -446,14 +458,15 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
             definirFalaGato(proximaFala('gato', FALAS_GATO))
             avisarFala('gato')
           }}>
-          <span className={`hd-gato__sprite${gato === 'acordando' ? ' hd-gato__sprite--uma-vez' : ''}`} aria-hidden="true" style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas } as CSSProperties} />
+          <span className="bicho-sombra__chao" aria-hidden="true" />
+          <span className={`hd-gato__sprite${gato === 'acordando' ? ' hd-gato__sprite--uma-vez' : ''}`} aria-hidden="true" style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas, ...mapasDeLuz(folhaGato(gato).src) } as CSSProperties} />
         </button>
         {/* O balão abre para o lado livre da cena: nunca por baixo da caixa da missão. */}
         {falaGato && gato !== 'tala' && !andando && <span ref={balaoGato} className={`hd-balao hd-balao--longo hd-balao--gato ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status" onClick={() => definirFalaGato(null)}
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>{falaGato}</span>}
         {gato === 'tala' && !andando && <span ref={balaoGato} role="status" className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
-        <CorujaDoAcampamento key={cenario.id} poleiros={cenario.coruja} />
+        <CorujaDoAcampamento key={cenario.id} poleiros={cenario.coruja} luzes={luzes} periodo={periodo} />
         <span className={`hd-particulas hd-particulas--${cenario.particulas}`} aria-hidden="true">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>
     </div>

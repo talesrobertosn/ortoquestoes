@@ -5,6 +5,7 @@ import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixe
 import { GatoPixel } from '../mascote/GatoPixel'
 import type { IdLinhaGato } from '../mascote/sprites'
 import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../mascote/falasBichos'
+import { luzNoBicho, type Luz } from '../mascote/luz'
 import '../../estilos/componentes/Cristal.css'
 import './TopoVila.css'
 
@@ -24,6 +25,8 @@ export type CenaVila = {
   coruja: { x: number; y: number }
   gato: { x: number; y: number; estado: IdLinhaGato; acordado: IdLinhaGato }
   chamas: Chama[]
+  /** De onde vem o sol (ou a lua) pela janela desta cena; sem isso, do alto à direita. */
+  ceu?: { x: number; y: number }
   /** Onde a poeira (ou o vaga-lume, à noite) flutua: x, y, largura e altura na arte. */
   particulas?: [number, number, number, number]
 }
@@ -39,7 +42,7 @@ const PONTOS = [[0.12, 0.3, 7, 0], [0.3, 0.55, 9, -3], [0.46, 0.18, 8, -5], [0.6
 const ROTINA_CORUJA: EstadoCoruja[] = ['parada', 'olhando', 'parada', 'lendo', 'lendo', 'parada']
 const CORUJA = { w: 44, h: 32 }
 
-function Bichos({ cena, dicas }: { cena: CenaVila; dicas: readonly string[] }) {
+function Bichos({ cena, dicas, periodo }: { cena: CenaVila; dicas: readonly string[]; periodo: Periodo }) {
   const [fala, definirFala] = useState<{ quem: 'coruja' | 'gato'; texto: string } | null>(null)
   const [passo, definirPasso] = useState(0)
   const [acenou, definirAcenou] = useState(0)
@@ -65,18 +68,27 @@ function Bichos({ cena, dicas }: { cena: CenaVila; dicas: readonly string[] }) {
   }
   const tocarGato = () => { definirGatoAcordado(true); definirFala({ quem: 'gato', texto: proximaFala('gato', FALAS_GATO) }) }
   const { coruja, gato } = cena
+  // A luz da cena nos bichos (componentes/mascote/luz.ts): as chamas acesas nesta hora e o sol ou a lua da janela.
+  const ceu = cena.ceu ?? { x: 470, y: 0 }
+  const luzes: Luz[] = [
+    ...cena.chamas.filter((c) => !c.horas || c.horas.includes(periodo)).map((c): Luz => ({ x: c.x, y: c.y, forca: 0.95, alcance: 150, tipo: 'fogo' })),
+    { ...ceu, forca: periodo === 'noite' ? 0.32 : periodo === 'tarde' ? 0.5 : 0.42, alcance: 650, tipo: periodo === 'noite' ? 'lua' : 'sol' },
+  ]
+  const luzCoruja = luzNoBicho(coruja.x, coruja.y - 12, luzes, periodo)
+  const luzGato = luzNoBicho(gato.x + 17, gato.y + 13, luzes, periodo)
   const estadoCoruja: EstadoCoruja = fala?.quem === 'coruja' ? 'acenando' : ROTINA_CORUJA[passo]
   // O balão abre para o lado de dentro da cena (os bichos ficam à direita, então ele cresce para a esquerda). Coruja
   // pousada alto não tem céu para o balão: ele abre para baixo, com a ponta nos pés dela.
   const embaixo = fala?.quem === 'coruja' && coruja.y < 100
   const ponta = fala?.quem === 'coruja' ? (embaixo ? { x: coruja.x, y: coruja.y + 2 } : { x: coruja.x, y: coruja.y - CORUJA.h + 3 }) : { x: gato.x + 17, y: gato.y + 2 }
   return <>
-    <button type="button" className="vl-bicho vl-coruja" aria-label="A coruja: tocar para ouvir um conceito de prova" onClick={tocarCoruja}
-      style={lugar(coruja.x - CORUJA.w / 2, coruja.y - CORUJA.h * 31 / 32, CORUJA.w, CORUJA.h)}>
+    <button type="button" className={`vl-bicho vl-coruja ${luzCoruja.className}`} aria-label="A coruja: tocar para ouvir um conceito de prova" onClick={tocarCoruja}
+      style={{ ...lugar(coruja.x - CORUJA.w / 2, coruja.y - CORUJA.h * 31 / 32, CORUJA.w, CORUJA.h), ...luzCoruja.style }}>
       <CorujaPixel key={`${estadoCoruja}-${acenou}`} estado={estadoCoruja} />
     </button>
-    <button type="button" className="vl-bicho vl-gato" aria-label="O gato: tocar para ouvir o que ele acha" onClick={tocarGato}
-      style={lugar(gato.x, gato.y, 34, 25.5)}>
+    <button type="button" className={`vl-bicho vl-gato ${luzGato.className}`} aria-label="O gato: tocar para ouvir o que ele acha" onClick={tocarGato}
+      style={{ ...lugar(gato.x, gato.y, 34, 25.5), ...luzGato.style }}>
+      <span className="bicho-sombra__chao" aria-hidden="true" />
       <GatoPixel estado={gatoAcordado ? gato.acordado : gato.estado} />
     </button>
     {fala && <span className={`vl-balao vl-balao--${fala.quem}${embaixo ? ' vl-balao--embaixo' : ''}`} role="status" onClick={() => definirFala(null)} style={lugar(ponta.x, ponta.y, 0, 0)}>{fala.texto}</span>}
@@ -111,7 +123,7 @@ function Palco({ cena, dicas }: { cena: CenaVila; dicas: readonly string[] }) {
       {p && <span aria-hidden="true" className="vl-palco__peca vl-palco__poeira" style={lugar(p[0], p[1], p[2], p[3])}>
         {PONTOS.map(([x, y, t, d], i) => <i key={i} style={{ left: `${x * 100}%`, top: `${y * 100}%`, '--t': `${t}s`, '--d': `${d}s` } as CSSProperties} />)}
       </span>}
-      <Bichos cena={cena} dicas={dicas} />
+      <Bichos cena={cena} dicas={dicas} periodo={periodo} />
     </div>
   )
 }

@@ -1,0 +1,37 @@
+/* A luz das cenas nos bichos (luz.ts): duas camadas por cima do sprite, com os mapas de scripts/sprites/luz_bichos.py.
+   As camadas herdam o tamanho e a posição do fundo do sprite, então acompanham o quadro da animação sem animação
+   própria. A de cima clareia na cor da luz (tela); a de baixo esfria o lado de costas (multiplicar). */
+.bicho-luz :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite) { position: relative; isolation: isolate; }
+.bicho-luz :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::before,
+.bicho-luz :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; image-rendering: pixelated;
+  background-repeat: no-repeat; background-size: inherit; background-position: inherit;
+}
+.bicho-luz :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::before { mix-blend-mode: screen; opacity: var(--luz-q, 0); }
+.bicho-luz :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::after { mix-blend-mode: multiply; opacity: var(--luz-f, 0); }
+
+/* De que lado vem a luz. O gato andando para a esquerda é espelhado: a luz troca de mapa junto. */
+.luz-esq :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::before,
+.luz-dir.hd-gato--esquerda .hd-gato__sprite::before { background-image: var(--mapa-qe); }
+.luz-esq :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::after,
+.luz-dir.hd-gato--esquerda .hd-gato__sprite::after { background-image: var(--mapa-fd); }
+.luz-dir :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::before,
+.luz-esq.hd-gato--esquerda .hd-gato__sprite::before { background-image: var(--mapa-qd); }
+.luz-dir :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::after,
+.luz-esq.hd-gato--esquerda .hd-gato__sprite::after { background-image: var(--mapa-fe); }
+
+/* A cor da luz: o fogo é o mapa como está; o sol, mais dourado e menos saturado; a lua vira azul-prata; a chama azul e
+   a arcana da sequência (InicioHd.css) tingem os bichos na cor delas. */
+.luz-sol :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::before { filter: saturate(0.7) brightness(1.06); }
+.luz-lua :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::before { filter: hue-rotate(185deg) saturate(0.65) brightness(0.95); }
+.luz-azul :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::before { filter: hue-rotate(180deg) saturate(1.15); }
+.luz-arcana :is(.mascote__sprite, .gato-pixel, .coruja-pixel, .hd-gato__sprite)::before { filter: hue-rotate(245deg) saturate(0.9); }
+
+/* A sombra projetada no chão: sai dos pés para o lado oposto à luz, mais comprida quanto mais longe a luz está. Vem
+   antes do desenho na ordem da página (::before, ou um span no começo do bicho), então fica embaixo dele. */
+.bicho-sombra::before, .bicho-sombra__chao { content: ""; position: absolute; left: 50%; bottom: 1%; width: 70%; height: 12%; pointer-events: none; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(8, 6, 14, 0.85), rgba(8, 6, 14, 0.35) 60%, transparent);
+  opacity: var(--sombra-forca, 0.2); transform-origin: 50% 50%;
+  transform: translateX(calc(-50% + var(--sombra-x, 0) * 38%)) scaleX(calc(1 + (var(--sombra-x, 0) * var(--sombra-x, 0)) * 0.9)); }
+
+@media (prefers-reduced-motion: reduce) { .bicho-luz * { transition: none; } }
