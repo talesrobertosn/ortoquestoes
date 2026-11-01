@@ -19,7 +19,7 @@ Saída em public/pixel/cronograma/:
 - torre-tempo-<manha|tarde|noite>.webp (1440 x 600) e -960.webp (960 x 400): o fundo, sem o sino;
 - torre-tempo-sino-<hora>.png: o sino recortado já com a luz da hora, para balançar por cima (raramente).
 Uso: <python com numpy e pillow> scripts/gerar_cena_cronograma.py [manha|tarde|noite]
-     ... scripts/gerar_cena_cronograma.py chao   (torre-tempo-chao.webp: o chão de pedra da praça, fundo da página)
+     ... scripts/gerar_cena_cronograma.py chao   (torre-tempo-chao.webp: o chão de pedra da praça; testado e retirado do site em 01/11/2026)
 """
 from __future__ import annotations
 

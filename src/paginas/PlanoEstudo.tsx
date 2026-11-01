@@ -24,7 +24,7 @@ import { CartaoHoje, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, 
 import { corDaArea } from '../dados/coresAreas'
 import { CalendarioCronograma } from './CronogramaCalendario'
 import { ConviteFicticio, FaixaFicticio, type MotivoConvite } from './CronogramaFicticio'
-import { CenaTorre, CHAO_DA_PRACA } from '../componentes/cronograma/CenaTorre'
+import { CenaTorre } from '../componentes/cronograma/CenaTorre'
 import { VisitaCronograma } from '../componentes/cronograma/VisitaCronograma'
 import { vistaDoCronograma } from '../dados/vistaCronograma'
 import { CONTEXTO_VAZIO, montarSessao } from '../dados/acervo'
@@ -432,7 +432,7 @@ export function PlanoEstudo() {
     const nome = primeiroNome(sessaoConta?.user.user_metadata?.nome)
     const area = calculo.hoje?.itens.find((i) => !i.mistura) ?? calculo.hoje?.itens[0] ?? null
     return (
-      <div className="empilha-2 pe cp cr cr--torre cf" style={CHAO_DA_PRACA}>
+      <div className="empilha-2 pe cp cr cr--torre cf">
         <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto ficticio={{ nome, aoConvidar: convidar }}
           aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} hub={hub} />
         {convite && <ConviteFicticio motivo={convite} nome={nome} area={area ? { slug: area.slug, nome: area.nome } : null}
@@ -451,7 +451,7 @@ export function PlanoEstudo() {
   }
 
   return (
-    <div className="empilha-2 pe cp cr cr--torre" style={CHAO_DA_PRACA}>
+    <div className="empilha-2 pe cp cr cr--torre">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
@@ -905,7 +905,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const sim = simulacoes?.[intensidade]
 
   return (
-    <div className="empilha-2 pe cr-form cr--torre" style={CHAO_DA_PRACA}>
+    <div className="empilha-2 pe cr-form cr--torre">
       <section className="pe-heroi pe-heroi--convite pe-heroi--form pe-heroi--torre">
         {/* A Torre do Tempo em faixa curta: o relógio à vista, sem gastar uma dobra antes do primeiro campo. */}
         <CenaTorre />
