@@ -2988,15 +2988,15 @@
   },
   {
    "id": "netter-anatomia-pe-tornozelo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia da perna, do tornozelo e do pé",
    "especialidade": "pe-tornozelo",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
-   "edicao": "2ª edição",
+   "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.",
    "capitulo": "Capítulo 9 · Perna e joelho e Capítulo 10 · Pé e tornozelo",
    "resumo": "Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral.",
    "acesso": "gratis",
-   "minutos": 4,
+   "minutos": 26,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -3027,6 +3027,66 @@
      "id": "as-vias-de-acesso",
      "titulo": "As vias de acesso",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-tibia-a-fibula-e-a-irrigacao-da-diafise",
+     "titulo": "A tíbia, a fíbula e a irrigação da diáfise",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-compartimentos-da-perna-em-detalhe",
+     "titulo": "Os compartimentos da perna em detalhe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-nervos-da-perna-e-do-pe",
+     "titulo": "Os nervos da perna e do pé",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-arterias-e-a-irrigacao-do-talus",
+     "titulo": "As artérias e a irrigação do tálus",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-corredor-do-tornozelo-e-a-frente-da-mortalha",
+     "titulo": "O corredor do tornozelo e a frente da mortalha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-ossos-do-tornozelo-e-do-pe",
+     "titulo": "Os ossos do tornozelo e do pé",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-ligamentos-sindesmose-laterais-deltoide-e-sub",
+     "titulo": "Os ligamentos: sindesmose, laterais, deltoide e subtalar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-tendao-do-calcaneo-e-a-fascia-plantar",
+     "titulo": "O tendão do calcâneo e a fáscia plantar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-musculos-intrinsecos-e-os-compartimentos-do-p",
+     "titulo": "Os músculos intrínsecos e os compartimentos do pé",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-marcha-e-o-pe-cavo",
+     "titulo": "A marcha e o pé cavo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-de-acesso-e-os-portais",
+     "titulo": "As vias de acesso e os portais",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -3059,7 +3119,19 @@
     "pe-tornozelo-0189",
     "pe-tornozelo-0068",
     "pe-tornozelo-0006",
-    "pe-tornozelo-0133"
+    "pe-tornozelo-0133",
+    "pe-tornozelo-0017",
+    "joelho-0150",
+    "joelho-0185",
+    "joelho-0147",
+    "pe-tornozelo-0119",
+    "pe-tornozelo-0295",
+    "pe-tornozelo-0337",
+    "pe-tornozelo-0297",
+    "pe-tornozelo-0257",
+    "pe-tornozelo-0351",
+    "pe-tornozelo-0362",
+    "pe-tornozelo-0342"
    ],
    "treino": [
     "pe-tornozelo-0425",
