@@ -1,0 +1,34 @@
+{
+  "id": "osteometabolicas-0052",
+  "origem": "TEOT 2025",
+  "prova": "TEOT",
+  "simulado": false,
+  "tema": "Osteometabólicas",
+  "temaSlug": "osteometabolicas",
+  "subtema": "Osteoporose: diagnóstico",
+  "enunciado": "Na avaliação de um paciente com osteoporose, o cálculo do FRAX leva em consideração o:",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "IMC e calcula a probabilidade de fratura de quadril em 5 anos.",
+      "porque": "O IMC está certo, mas o horizonte do FRAX é de 10 anos, e não de 5."
+    },
+    {
+      "letra": "B",
+      "texto": "IMC e calcula a probabilidade de fratura de quadril em 10 anos.",
+      "porque": "O FRAX usa o IMC (calculado a partir do peso e da altura) entre os fatores de risco e fornece a probabilidade de fratura de quadril, e de fratura osteoporótica maior, em 10 anos."
+    },
+    {
+      "letra": "C",
+      "texto": "Z-score e calcula a probabilidade de fratura de quadril em 5 anos.",
+      "porque": "O FRAX usa, opcionalmente, o T-score do colo femoral, e não o Z-score; e o horizonte é de 10 anos."
+    },
+    {
+      "letra": "D",
+      "texto": "Z-score e calcula a probabilidade de fratura de quadril em 10 anos.",
+      "porque": "O horizonte de 10 anos está certo, mas a densitometria entra pelo T-score, não pelo Z-score."
+    }
+  ],
+  "gabarito": "B"
+}

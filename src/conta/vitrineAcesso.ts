@@ -10,12 +10,13 @@
 export interface AmostraQuestao { prova: string; enunciado: string; certa: string; erradas: [string, string] }
 
 const TITULOS_ENTRAR = [
-  'Que bom ter você de volta.',
-  'A prova não espera. Bora continuar?',
-  'Seu progresso ficou guardado.',
-  'Mais um dia mais perto da prova.',
-  'Pronto para a próxima questão?',
+  // Sem presumir quem é (01/11/2026): o nome só entra quando a pessoa confirma que é ela ("Continuar como...").
+  'Uma questão de cada vez.',
+  'Seu próximo capítulo começa aqui.',
+  'Todo grande resultado começa com uma questão.',
+  'Volte de onde parou.',
   'A constância passa na frente.',
+  'Mais um dia mais perto da prova.',
 ]
 const TITULOS_CRIAR = [
   'Sua preparação, organizada do primeiro ao último dia.',
