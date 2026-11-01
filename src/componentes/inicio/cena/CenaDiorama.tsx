@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
 import { folhaGato, type IdLinhaGato } from '../../mascote/sprites'
+import { CorujaPixel, type EstadoCoruja } from '../../../biblioteca/sala/CorujaPixel'
+import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../../mascote/falasBichos'
 import { EVENTO_AMOSTRA } from '../AmostraRespondivel'
 import { urlCss } from '../../../config'
 import type { Periodo } from '../../../estado/aparencia'
@@ -44,6 +46,64 @@ const PONTOS_GATO = [
 ] as const
 const DURACAO_PASSO = 3600
 
+/**
+ * A coruja bibliotecária (desenho do Tales, 01/11/2026) pousada no acampamento: fica parada, olha, lê um pouco e às
+ * vezes acena; um toque e ela acena de volta. Pousa no primeiro poleiro que estiver à vista e livre (nenhum texto,
+ * cartão, mascote ou balão de fala por cima ou por baixo): a placa de madeira, o alto da barraca, o lampião, o arco de
+ * pedra ou os caixotes. Confere de novo quando a tela muda e de tempos em tempos (o balão do esqueleto vem e vai).
+ */
+const POLEIROS = [{ x: 329, y: 101 }, { x: 196, y: 105 }, { x: 322, y: 59 }, { x: 150, y: 86 }, { x: 131, y: 125 }]
+const CORUJA = { w: 33, h: 24 }
+const ROTINA_CORUJA: EstadoCoruja[] = ['parada', 'olhando', 'parada', 'lendo', 'lendo', 'parada', 'acenando']
+const OUTROS = '.hd-mascote, .mascote__balao, .hd-balao:not(.hd-balao--coruja), .hd-gato'
+function CorujaDoAcampamento() {
+  const [passo, definirPasso] = useState(0)
+  const [acenou, definirAcenou] = useState(0)
+  const [poleiro, definirPoleiro] = useState<number | null>(0)
+  const [fala, definirFala] = useState<string | null>(null)
+  const ref = useRef<HTMLButtonElement>(null)
+  useEffect(() => {
+    if (typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    const t = window.setInterval(() => { if (!document.hidden) definirPasso((p) => (p + 1) % ROTINA_CORUJA.length) }, 5200)
+    return () => window.clearInterval(t)
+  }, [])
+  useEffect(() => {
+    const escolher = () => {
+      const el = ref.current, palco = el?.closest('.hd-palco'), heroi = el?.closest('.jn-heroi, .hd-topo'), cena = el?.closest('.hd-cena')
+      if (!el || !palco || !heroi || !cena) return
+      // Na vitrine do computador a coruja já está pousada no cartão da amostra: aqui ela não aparece (nunca duas).
+      const naVitrine = heroi.querySelector<HTMLElement>('.jn-vitrine__coruja')
+      if (naVitrine && getComputedStyle(naVitrine).display !== 'none') { definirPoleiro(null); return }
+      const P = caixa(palco)
+      const outros = [...heroi.querySelectorAll(OUTROS)].map(caixa)
+      const livreAqui = (i: number) => {
+        const pt = POLEIROS[i]
+        const c = { x: P.x + ((pt.x - CORUJA.w / 2) / 480) * P.w, y: P.y + ((pt.y - CORUJA.h) / 200) * P.h, w: (CORUJA.w / 480) * P.w, h: (CORUJA.h / 200) * P.h }
+        return livre(c, heroi, cena) && outros.every((o) => cruza(c, o) === 0)
+      }
+      definirPoleiro((atual) => (atual !== null && livreAqui(atual) ? atual : POLEIROS.findIndex((_, i) => livreAqui(i)) >= 0 ? POLEIROS.findIndex((_, i) => livreAqui(i)) : null))
+    }
+    const primeira = window.setTimeout(escolher, 600)
+    const vez = window.setInterval(() => { if (!document.hidden) escolher() }, 2500)
+    window.addEventListener('resize', escolher)
+    return () => { window.clearTimeout(primeira); window.clearInterval(vez); window.removeEventListener('resize', escolher) }
+  }, [])
+  const estado: EstadoCoruja = acenou ? 'acenando' : ROTINA_CORUJA[passo]
+  useEffect(() => { if (!acenou) return; const t = window.setTimeout(() => definirAcenou(0), 1400); return () => window.clearTimeout(t) }, [acenou])
+  useEffect(() => { if (!fala) return; const t = window.setTimeout(() => definirFala(null), 11000); return () => window.clearTimeout(t) }, [fala])
+  const pt = POLEIROS[poleiro ?? 0]
+  // A coruja é a sábia: cada toque explica um conceito que cai na prova.
+  const tocar = () => { definirAcenou((n) => n + 1); definirFala(proximaFala('coruja', CONCEITOS_CORUJA)) }
+  return <>
+    <button ref={ref} type="button" tabIndex={-1} className={'hd-coruja' + (poleiro === null ? ' hd-coruja--fora' : '')} onClick={tocar}
+      style={lugar(pt.x - CORUJA.w / 2, pt.y - CORUJA.h * 31 / 32, CORUJA.w, CORUJA.h)}>
+      <CorujaPixel key={`${estado}-${acenou}`} estado={estado} />
+    </button>
+    {fala && poleiro !== null && <span className={`hd-balao hd-balao--longo hd-balao--coruja ${pt.x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
+      onClick={() => definirFala(null)} style={{ left: `${(pt.x / 480) * 100}%`, top: `${((pt.y - CORUJA.h - 1) / 200) * 100}%` }}>{fala}</span>}
+  </>
+}
+
 export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }: {
   linhaFogo: number; periodo: Periodo
   /** Meta do dia cumprida (31/10/2026): o esqueleto senta para se aquecer na fogueira e o gato ronrona. */
@@ -57,6 +117,10 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   const [ponto, definirPonto] = useState(0)
   const [andando, definirAndando] = useState<'direita' | 'esquerda' | null>(null)
   const [semLugar, definirSemLugar] = useState(false)
+  // O gato é o preguiçoso: cada toque, uma frase; no 6º toque seguido, a tala (o segredo antigo).
+  const [falaGato, definirFalaGato] = useState<string | null>(null)
+  const toquesGato = useRef(0)
+  useEffect(() => { if (!falaGato) return; const t = window.setTimeout(() => definirFalaGato(null), 5000); return () => window.clearTimeout(t) }, [falaGato])
   const palco = useRef<HTMLDivElement>(null)
   const espera = useRef(0)
   const agora = useRef({ gato, ponto })
@@ -241,12 +305,20 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" tabIndex={-1} className={`hd-gato${andando ? ` hd-gato--andando hd-gato--${andando}` : ''}${semLugar ? ' hd-gato--fora' : ''}`}
           style={{ ...lugar(PONTOS_GATO[ponto].x, PONTOS_GATO[ponto].y - 4.5, 36, 27), '--passo': `${DURACAO_PASSO}ms` } as CSSProperties}
-          onClick={() => definirGato((g) => (g === 'tala' ? 'tala' : g === 'dormindo' || g === 'ronronando' ? 'acordado' : 'tala'))}>
+          onClick={() => {
+            toquesGato.current++
+            if (toquesGato.current % 6 === 0) { definirFalaGato(null); definirGato('tala'); return }
+            definirGato((g) => (g === 'dormindo' || g === 'ronronando' ? 'acordado' : g))
+            definirFalaGato(proximaFala('gato', FALAS_GATO))
+          }}>
           <span className={`hd-gato__sprite${gato === 'acordando' ? ' hd-gato__sprite--uma-vez' : ''}`} style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas } as CSSProperties} />
         </button>
         {/* O balão abre para o lado livre da cena: nunca por baixo da caixa da missão. */}
+        {falaGato && gato !== 'tala' && <span className={`hd-balao hd-balao--longo ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
+          style={{ left: `${((PONTOS_GATO[ponto].x + (PONTOS_GATO[ponto].x > 250 ? 4 : 30)) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>{falaGato}</span>}
         {gato === 'tala' && <span className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
           style={{ left: `${((PONTOS_GATO[ponto].x + (PONTOS_GATO[ponto].x > 250 ? 4 : 30)) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
+        <CorujaDoAcampamento />
         <span className="hd-particulas">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>
     </div>

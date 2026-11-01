@@ -3,13 +3,15 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixel'
 import { GatoPixel } from '../mascote/GatoPixel'
 import type { IdLinhaGato } from '../mascote/sprites'
+import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../mascote/falasBichos'
 
 /**
  * Os visitantes do Portal (31/10/2026, pedido do Tales: "o menu parece um lugar que os personagens visitam, e não uma
  * interface permanentemente decorada"). Regras leves e testáveis:
- * - a coruja bibliotecária (a mesma da Biblioteca) pousa no alto do menu às vezes: no máximo uma vez a cada 3 minutos,
- *   em 1 de cada 3 aberturas, nunca na primeira abertura do aparelho; pisca, lê um pouco e vai embora sozinha;
- * - o gato (o mesmo da página inicial) só aparece depois de 6 segundos sem mexer no menu, em metade das aberturas:
+ * - a coruja bibliotecária (a mesma da Biblioteca) pousa no alto do menu logo ao abrir, em toda abertura (desde
+ *   01/11/2026, pedidos do Tales: "faz os pets do menu aparecer antes" e "aparecer mais"); pisca, lê um pouco e vai
+ *   embora sozinha;
+ * - o gato (o mesmo da página inicial) aparece depois de 1 segundo sem mexer no menu, em toda abertura:
  *   entra andando pelo rodapé, senta, se espreguiça e dorme;
  * - os dois somem quando a pessoa começa a digitar na busca; com "menos movimento", ninguém voa nem anda;
  * - nunca os dois ao mesmo tempo de entrada: se o gato já está e a coruja pousa, ele olha para cima (o segredo raro);
@@ -37,7 +39,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
   const [estadoCoruja, definirEstadoCoruja] = useState<EstadoCoruja>('voando')
   const [fala, definirFala] = useState<string | null>(null)
   const [gato, definirGato] = useState<FaseGato>('longe')
-  const [miau, definirMiau] = useState(false)
+  const [miau, definirMiau] = useState<string | null>(null)
   const relogios = useRef<number[]>([])
   const depois = (f: () => void, ms: number) => { relogios.current.push(window.setTimeout(f, ms)) }
   useEffect(() => () => relogios.current.forEach((t) => window.clearTimeout(t)), [])
@@ -45,16 +47,11 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
 
   // A coruja: decide na abertura.
   useEffect(() => {
-    const f = forcado()
-    const aberturas = ler<number>(CHAVE_ABERTURAS, 0) + 1
-    gravar(CHAVE_ABERTURAS, aberturas)
-    const ultima = ler<number>(CHAVE_CORUJA, 0)
-    const pode = f === 'coruja' || f === 'todos' || (aberturas > 1 && Date.now() - ultima > 3 * 60_000 && Math.random() < 1 / 3)
-    if (!pode) return
+    gravar(CHAVE_ABERTURAS, ler<number>(CHAVE_ABERTURAS, 0) + 1)
     gravar(CHAVE_CORUJA, Date.now())
     if (semMovimento()) { definirCoruja('pousada'); definirEstadoCoruja('repouso'); return }
-    depois(() => { definirCoruja('chegando'); definirEstadoCoruja('voando') }, 1200)
-    depois(() => { definirCoruja('pousada'); definirEstadoCoruja('piscando') }, 2100)
+    depois(() => { definirCoruja('chegando'); definirEstadoCoruja('voando') }, 250)
+    depois(() => { definirCoruja('pousada'); definirEstadoCoruja('piscando') }, 1150)
     depois(() => definirEstadoCoruja('olhando'), 4600)
     depois(() => definirEstadoCoruja('lendo'), 7600)
     depois(() => definirEstadoCoruja('repouso'), 12600)
@@ -62,11 +59,10 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     depois(() => definirCoruja((c) => (c === 'saindo' ? 'longe' : c)), 18200)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // O gato: depois de 6 s sem mexer no menu.
+  // O gato: depois de 1 s sem mexer no menu.
   useEffect(() => {
     const f = forcado()
-    const pode = f === 'gato' || f === 'todos' || Math.random() < 0.5
-    if (!pode || semMovimento()) return
+    if (semMovimento()) return
     let parado: number | undefined
     const armar = () => {
       window.clearTimeout(parado)
@@ -75,7 +71,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
         depois(() => definirGato((g) => (g === 'andando' ? 'sentado' : g)), 5200)
         depois(() => definirGato((g) => (g === 'sentado' ? 'espreguicando' : g)), 11000)
         depois(() => definirGato((g) => (g === 'espreguicando' ? 'dormindo' : g)), 13500)
-      }, f ? 400 : 6000)
+      }, f ? 400 : 1000)
     }
     armar()
     const mexeu = () => { if (gatoRef.current === 'longe') armar() }
@@ -95,17 +91,22 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
   }, [digitando]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const tocarCoruja = () => {
+    // A coruja é a sábia: cada toque explica um conceito que cai na prova (às vezes, uma dica do menu).
     definirEstadoCoruja('piando')
-    definirFala(FALAS[falas.current++ % FALAS.length])
+    const n = falas.current++
+    const texto = n > 0 && n % 6 === 5 ? FALAS[(n / 6 | 0) % FALAS.length] : proximaFala('coruja', CONCEITOS_CORUJA)
+    definirFala(texto)
     if (gato !== 'longe') definirGato('reagindo')
     depois(() => definirEstadoCoruja('repouso'), 900)
-    depois(() => definirFala(null), 7000)
+    depois(() => definirFala((f) => (f === texto ? null : f)), 11000)
   }
   const tocarGato = () => {
+    // O gato é o preguiçoso: acorda, solta uma frase e volta a dormir.
     definirGato('reagindo')
-    definirMiau(true)
-    depois(() => definirMiau(false), 1600)
-    depois(() => definirGato('dormindo'), 2600)
+    const texto = proximaFala('gato', FALAS_GATO)
+    definirMiau(texto)
+    depois(() => definirMiau((m) => (m === texto ? null : m)), 4200)
+    depois(() => definirGato('dormindo'), 4400)
   }
   // Se a coruja pousa com o gato acordado, ele olha para cima (o encontro dos dois).
   const linhaGato: IdLinhaGato = gato === 'andando' ? 'andando'
@@ -118,15 +119,15 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
       {coruja !== 'longe' && (
         <div className={`pt-coruja pt-coruja--${coruja}`}>
           {fala && <p className="pt-coruja__fala" role="status" onClick={() => definirFala(null)}>{fala}</p>}
-          <button type="button" className="pt-coruja__botao" onClick={tocarCoruja} aria-label="A coruja bibliotecária: uma dica">
+          <button type="button" className="pt-coruja__botao" onClick={tocarCoruja} aria-label="A coruja bibliotecária: um conceito que cai na prova">
             <CorujaPixel estado={estadoCoruja} />
           </button>
         </div>
       )}
       {gato !== 'longe' && (
         <div className={`pt-gato pt-gato--${gato}`}>
-          {miau && <span className="pt-gato__miau" aria-hidden="true">Miau!</span>}
-          <button type="button" className="pt-gato__botao" onClick={tocarGato} aria-label="O gato do OrtoQuestões">
+          {miau && <span className="pt-gato__miau" role="status">{miau}</span>}
+          <button type="button" className="pt-gato__botao" onClick={tocarGato} aria-label="O gato do OrtoQuestões: tocar">
             <GatoPixel estado={linhaGato} />
           </button>
         </div>

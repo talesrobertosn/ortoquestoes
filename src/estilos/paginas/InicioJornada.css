@@ -418,7 +418,11 @@
 .jn-vitrine__nota svg { flex: none; margin-top: 0.15rem; color: #7ee0c8; }
 
 /* A questão de amostra: uma prévia de estudo compacta, papel claro com cantos redondos e sombra suave. */
-.jn-vitrine__amostra { grid-column: 3; grid-row: 1; align-self: center; }
+.jn-vitrine__amostra { grid-column: 3; grid-row: 1; align-self: center; position: relative; }
+/* A coruja na borda de cima do cartão da amostra, só no computador (no celular ela fica na cena). */
+.jn-vitrine__coruja { position: absolute; right: 1.25rem; bottom: calc(100% - 6px); z-index: 2; display: none; pointer-events: none; }
+.jn-vitrine__coruja .coruja-pixel { --coruja-escala: 2; }
+@media (min-width: 60.0625rem) { .jn-vitrine__coruja { display: block; } }
 .jn-vitrine__amostra .ip-amostra { gap: 0.7rem; padding: 1rem 1.1rem 1.1rem; border: 0; border-radius: 16px; background: #fbf8f1; color: #1d2422;
   box-shadow: 0 0 0 1px rgba(27, 18, 8, 0.12), 0 24px 48px -20px rgba(0, 0, 0, 0.75); }
 .jn-vitrine__amostra .ip-amostra__selo { padding: 0.15rem 0.55rem; border-radius: 999px; box-shadow: none; font-family: var(--fonte-texto); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; }

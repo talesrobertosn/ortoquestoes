@@ -188,8 +188,8 @@
 .pt-gato--andando { animation: pt-gato-anda 5.2s linear both; }
 .pt-gato--andando .gato-pixel { transform: scaleX(-1); }
 @keyframes pt-gato-anda { from { transform: translateX(110px); opacity: 0; } 12% { opacity: 1; } }
-.pt-gato__miau { position: absolute; left: 50%; bottom: 100%; transform: translateX(-50%); padding: 0.15rem 0.5rem; border-radius: 8px; background: #fff; color: #1b1208; font: 700 0.8125rem var(--fonte-texto);
-  box-shadow: 0 0 0 2px #1b1208; white-space: nowrap; animation: pt-fala 0.15s ease-out; }
+.pt-gato__miau { position: absolute; right: 0; bottom: calc(100% + 4px); width: max-content; max-width: min(15rem, 70vw); padding: 0.4rem 0.6rem; border-radius: 10px; background: #fff; color: #1b1208; font: 700 0.8125rem/1.35 var(--fonte-texto);
+  box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px rgba(0, 0, 0, 0.12); animation: pt-fala 0.15s ease-out; }
 
 /* Telas médias. */
 @media (max-width: 62rem) {

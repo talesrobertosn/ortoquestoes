@@ -10,6 +10,7 @@ import { GatoPixel } from '../../mascote/GatoPixel'
 import { estagioDaSequencia, textoProximoEstagio, ESTAGIOS_FOGUEIRA } from '../estagiosFogueira'
 import type { DiaSequencia } from '../PainelSequencia'
 import { CenaDiorama } from '../cena/CenaDiorama'
+import { CorujaPixel } from '../../../biblioteca/sala/CorujaPixel'
 import { usarPeriodo } from '../../../estado/aparencia'
 
 /*
@@ -216,7 +217,11 @@ export function HeroiVitrine({ titulo, proposta, lide, cta, entrar, nota, amostr
           <div className="jn-vitrine__convite">{cta}{entrar}</div>
           <p className="jn-vitrine__nota">{nota}</p>
         </header>
-        <div className="jn-vitrine__amostra">{amostra}</div>
+        <div className="jn-vitrine__amostra">
+          {/* No computador a coruja pousa na borda do cartão da questão de amostra (o centro da cena já tem o esqueleto). */}
+          <span className="jn-vitrine__coruja" aria-hidden="true"><CorujaPixel estado="olhando" /></span>
+          {amostra}
+        </div>
       </section>
       <section className="jn-provas" aria-label="Provas no acervo">
         <p className="jn-rotulo">No acervo</p>

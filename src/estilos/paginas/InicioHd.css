@@ -323,3 +323,15 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
 .hd-mascote .mascote__balao { left: 30%; transform: translateX(-70%); max-width: min(15rem, 60vw); }
 .hd-mascote .mascote__balao::after { left: 70%; }
 @media (max-width: 60rem) { .hd-mascote .mascote__balao { left: 10%; transform: translateX(-85%); max-width: 12.5rem; } .hd-mascote .mascote__balao::after { left: 85%; } }
+
+/* A coruja bibliotecária pousada na placa de madeira (CenaDiorama): recebe a luz da hora como o gato. */
+.hd-coruja { position: absolute; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; z-index: 2; }
+.hd-coruja .coruja-pixel { width: 100%; height: 100%; }
+.hd-coruja { transition: opacity 0.4s ease; }
+.hd-coruja--fora { opacity: 0; pointer-events: none; }
+.hd-palco--noite .hd-coruja { filter: brightness(0.72) saturate(0.85) hue-rotate(-6deg); }
+.hd-palco--manha .hd-coruja { filter: brightness(1.04) saturate(1.05); }
+
+/* Balões dos bichos com frase inteira (a coruja explica um conceito; o gato reclama de preguiça): quebram linha. */
+.hd-balao--longo { z-index: 5; white-space: normal; width: max-content; max-width: clamp(11rem, 30cqw, 17rem); padding: 0.45rem 0.65rem; font-family: var(--fonte-texto); font-weight: 650;
+  font-size: clamp(0.75rem, 0.6rem + 0.5vw, 0.875rem); line-height: 1.35; text-align: left; text-wrap: pretty; cursor: pointer; pointer-events: auto; }

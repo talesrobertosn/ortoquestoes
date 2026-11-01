@@ -1,3 +1,4 @@
+import { CONCEITOS_CORUJA, proximaFala } from '../../componentes/mascote/falasBichos'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { DATAS_PROVA } from '../../estado/conquistas'
 import type { ResumoCapitulo } from '../tipos'
@@ -53,6 +54,7 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
   const [periodoEscolhido, definirPeriodo] = useState<Periodo | null>(null)
   const [cranio, definirCranio] = useState<number | null>(null)
   const [raroAceso, definirRaroAceso] = useState(false)
+  const conceitos = useRef(0)
   const toquesCoruja = useRef<number[]>([])
   const toquesPlaca = useRef<number[]>([])
   const toquesJanela = useRef(0)
@@ -158,8 +160,13 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
         achar('coruja', 'Corujas giram a cabeça até 270 graus. Não tente isso no seu pescoço.')
         return
       }
-      dica.current = (dica.current + 1) % DICAS.length
-      definirCoruja({ estado: 'reagindo', fala: DICAS[dica.current], tour: true })
+      // A coruja é a sábia (01/11/2026): os toques explicam um conceito que cai na prova; a cada quatro, uma dica da
+      // Biblioteca (com o convite para o tour).
+      conceitos.current++
+      if (conceitos.current % 4 === 1) {
+        dica.current = (dica.current + 1) % DICAS.length
+        definirCoruja({ estado: 'reagindo', fala: DICAS[dica.current], tour: true })
+      } else definirCoruja({ estado: 'reagindo', fala: proximaFala('coruja', CONCEITOS_CORUJA), tour: false })
       depois(() => definirCoruja((c) => (c.estado === 'reagindo' ? { ...c, estado: 'repouso' } : c)), 900)
     },
     calarCoruja: () => definirCoruja((c) => ({ ...c, fala: null })),
