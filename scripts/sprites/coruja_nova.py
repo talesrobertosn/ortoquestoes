@@ -27,10 +27,35 @@ def main() -> None:
     g = np.asarray(Image.open(FONTE).convert("RGB")).astype(int)
     fundo = g[0, 0]
     folha = np.zeros((QH * len(LINHAS), QW * NQ, 4), np.uint8)
+    # As linhas da folha não caem a cada 32 px certinhos (01/11/2026, Tales: "a coruja está cortada"): a grade fixa
+    # cortava os pés e trazia a ponta da linha de cima. Cada linha é achada pela faixa de pixels desenhados (fora o
+    # nome à esquerda) e recortada com a base dos pés 2 px acima do fim do quadro, igual em todas as linhas.
+    desenho = (np.abs(g - fundo).sum(2) > 0)
+    desenho[:, :X0 + 6] = False
+    tem = desenho.any(1)
+    faixas, y = [], 0
+    while y < g.shape[0]:
+        if tem[y]:
+            ini = y
+            while y < g.shape[0] and tem[y]:
+                y += 1
+            faixas.append((ini, y))
+        else:
+            y += 1
+    assert len(faixas) == len(LINHAS), f"esperava {len(LINHAS)} faixas, achei {faixas}"
     for li in range(len(LINHAS)):
+        ini, fim = faixas[li]
+        assert fim - ini <= QH - 2, f"linha {LINHAS[li]} alta demais: {fim - ini}"
+        topo = fim + 2 - QH
         for k in range(NQ):
             x = round(X0 + PASSO * k)
-            q = g[li * QH:(li + 1) * QH, x:x + QW]
+            q = np.full((QH, QW, 3), fundo)
+            pedaco = g[max(0, topo):fim + 2, x:x + QW]
+            q[QH - pedaco.shape[0]:] = pedaco
+            # Só o que pertence a esta faixa (nada da linha de cima ou de baixo).
+            fora = np.ones(QH, bool)
+            fora[QH - (fim + 2 - ini):QH] = False
+            q[fora] = fundo
             a = (np.abs(q - fundo).sum(2) > 0)
             # O fim do nome da linha (texto) às vezes entra na 1ª coluna: some o que vem antes da 1ª coluna vazia.
             if k == 0:
