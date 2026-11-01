@@ -41,6 +41,7 @@ import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, type TipoAviso } from '../componentes/conta/PecasConta'
 import '../estilos/paginas/Conta.css'
 import '../estilos/paginas/Acesso.css'
+import '../estilos/componentes/Cristal.css'
 import { fraseGratis, recurso } from '../config'
 import { guardarVitrine, lembrarNome, nomeLembrado, sortearVitrine } from '../conta/vitrineAcesso'
 import { Mascote } from '../componentes/mascote/Mascote'
@@ -632,7 +633,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const proxima = status.estado === 'erro' || status.estado === 'conflito' || status.rejeitados.length > 0 ? { rotulo: 'Ver sincronização', destino: linkSecao('aparelhos') }
     : !termosEmDia ? { rotulo: 'Ler os termos novos', destino: linkSecao('termos') }
     : !etapa ? { rotulo: 'Completar o perfil', destino: linkSecao('perfil') }
-    : { rotulo: 'Continuar estudando', destino: href('/treinar') }
+    : { rotulo: 'Continuar estudando', destino: href('/treinar'), comecar: true }
   /** Selo pequeno ao lado de cada seção na lista (o que pede atenção ou o estado atual). */
   const seloSecao = (id: SecaoConta) => {
     if (id === 'assinatura') return <span className={'ct-nav__selo' + (assinante ? ' ct-nav__selo--ouro' : '')}>{assinante ? 'Assinante' : 'Gratuito'}</span>
@@ -663,7 +664,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       </div>
       {/* A próxima ação (atlas unificado, 01/11/2026): uma só, a mais útil agora, no lugar do botão de sincronizar. */}
       <div className="ct-heroi__acoes">
-        <a className="botao botao--principal" href={proxima.destino}>{proxima.rotulo} <Icone nome="direita" tamanho={16} /></a>
+        {/* Cristal só para começar a estudar; o que pede atenção é verdete (decisão de 01/11/2026). */}
+        <a className={'comecar' in proxima ? 'cristal' : 'botao botao--principal'} href={proxima.destino}>{proxima.rotulo} <Icone nome="direita" tamanho={16} /></a>
         {administrador && <a className="botao" href={href('/admin')}><Icone nome="grafico" tamanho={16} /> Painel do admin</a>}
       </div>
       {/* Status da conta em três linhas: plano, sincronização e perfil, cada uma com o que dá para fazer. As métricas

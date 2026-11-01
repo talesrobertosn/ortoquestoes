@@ -35,11 +35,11 @@
 .cfh-heroi--arquivo .cfh-heroi__texto > p:not(.cfh-selo) { color: rgba(255, 255, 255, 0.82); }
 .cfh-heroi--arquivo .cfh-heroi__texto > p.cfh-heroi__pessoal { border-left: 0; border-radius: 12px; background: rgba(255, 255, 255, 0.06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); color: #fff; }
 .cfh-heroi--arquivo .cfh-heroi__pessoal strong { color: var(--ca-ouro); }
-.cfh-heroi--arquivo .botao.cfh-heroi__estudar { border-radius: var(--ca-raio-ctl); background: linear-gradient(180deg, #ffe2a0, #f0c46a 55%, #d9a446); color: #1b1208;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 0 0 1px rgba(27, 18, 8, 0.35), 0 10px 26px -10px rgba(255, 196, 106, 0.8); }
-.cfh-heroi--arquivo .botao.cfh-heroi__estudar:hover { transform: translateY(-1px); filter: brightness(1.05); }
-.cfh-heroi--arquivo .botao.cfh-heroi__estudar:active { transform: translateY(1px); }
-.cfh-heroi--arquivo .cfh-heroi__estudar svg { border-radius: 9px; background: #1b1208; color: var(--ca-ouro); }
+/* "Estudar flashcards" é o cristal da página inicial (componentes/Cristal.css): a ação de começar a estudar
+   (decisão de 01/11/2026: cristal só para começar; o resto da ação é verdete). Aqui só o formato com ícone e legenda. */
+.cfh-heroi--arquivo .cristal.cfh-heroi__estudar { justify-content: flex-start; gap: var(--e-3); margin-top: var(--e-5); min-height: 64px; padding: var(--e-2) var(--e-5) var(--e-2) var(--e-2); text-align: left; }
+.cfh-heroi--arquivo .cfh-heroi__estudar svg { flex: none; box-sizing: content-box; padding: 0.45rem; width: 1.3rem; height: 1.3rem; border-radius: 8px; background: rgba(0, 40, 60, 0.38); color: #fff; }
+.cfh-heroi--arquivo .cfh-heroi__estudar small { font-weight: 650; opacity: 0.9; text-shadow: none; }
 .cfh-heroi--arquivo .cfh-vidro { border-radius: var(--ca-raio-ctl); border-color: var(--ca-borda); background: rgba(10, 12, 20, 0.45); color: #fff; }
 .cfh-heroi--arquivo .tr-heroi__link { color: #ffd98e; }
 @media (min-width: 36rem) and (max-width: 63.99rem) { .cfh-heroi--arquivo .cfh-janela { height: auto; aspect-ratio: 12 / 5; } }

@@ -73,6 +73,7 @@
 .ct-heroi__acoes { grid-column: 2; grid-row: 1; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-end; align-self: center; }
 .ct-heroi__acoes .botao { border-radius: var(--raio-controle); }
 .ct-heroi__acoes .botao--principal { min-height: 48px; padding: 0 1.25rem; font-size: var(--corpo); }
+.ct-heroi__acoes .cristal { min-height: 48px; padding: 0 1.4rem; }
 
 /* Situação da conta (atlas unificado, 01/11/2026): plano, sincronização e perfil numa lista plana com linhas, cada
    linha com o rótulo, o estado e a ação dela. Ouro só no plano de quem assina. */
@@ -105,7 +106,7 @@
 @media (max-width: 46rem) {
   .ct-heroi { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   .ct-heroi__acoes { grid-column: 1; grid-row: auto; justify-content: stretch; }
-  .ct-heroi__acoes .botao { flex: 1 1 auto; }
+  .ct-heroi__acoes .botao, .ct-heroi__acoes .cristal { flex: 1 1 auto; }
   .ct-cracha .cracha { --u: 2.5px; }
   .ct-heroi__perfil { gap: 0.85rem; }
   .ct-status-lista > li { grid-template-columns: 2.25rem minmax(0, 1fr); row-gap: var(--e-2); }

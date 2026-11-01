@@ -39,7 +39,7 @@ conquistas.
   aro de latão das lentes e a "mesa da lamparina" de "O que fazer agora" passaram para o papel. O acerto geral é a
   única métrica em ouro. "Montar uma sessão" é o único botão cheio; os passos têm ação secundária clara.
 - **Flashcards:** a cena do Arquivo fica menor no celular (a frase do chão sai; o "Como funciona" diz o mesmo) e
-  "Estudar flashcards" sobe para a primeira tela; folhas com raio 16 e a sombra comum; passos com `.numero-passo`.
+  "Estudar flashcards" sobe para a primeira tela e vira o cristal (era dourado); folhas com raio 16 e a sombra comum; passos com `.numero-passo`.
 - **Ranking:** abaixo do Salão dos Cem, a classificação virou lista plana com linhas (sem cartão por pessoa), sua linha
   com véu e filete verdete, posições em grafite (o metal fica no pódio), marcos "Top 10/Top 50" em régua cinza; abas e
   período no seletor comum (o período tinha `color: #fff` sobre verdete, ilegível no escuro).
@@ -49,11 +49,18 @@ conquistas.
 ## Botão principal: cristal ou verdete
 
 A direção pedia botão principal verdete em todo o site; a versão aprovada em 01/11 (#779/#780, "Pode subir") usa o
-**cristal azul** da página inicial para *começar* em Treinar e no Menu. Decisão desta entrega (Tales deu autonomia em
-01/11/2026): **o cristal fica só para "começar a jogar/estudar" nas três telas de partida (Inicial, Treinar, Menu)**;
-em todas as outras páginas, a ação é verdete. Assim o cristal continua sendo um momento especial, ligado à página
-inicial, e o resto do atlas tem uma só cor de ação. Prancha com as duas opções:
-`docs/design/ideias/2026-11-01-atlas-unificado/botao-principal.png`.
+**cristal azul** da página inicial para começar em Treinar e no Menu. Decisão de 01/11/2026 (Tales deu autonomia às
+sessões; regra valendo para todas):
+
+- **Cristal (`.cristal`)** só para a ação de **começar a estudar**: iniciar sessão, estudar flashcards, a ação do dia do
+  cronograma e revisar agora. Nesta entrega: "Estudar flashcards" (antes dourado) e o "Continuar estudando" de Minha
+  conta.
+- **Verdete cheio** nas demais ações principais: entrar no login, salvar, confirmar, assinar, montar uma sessão, ver
+  sincronização, completar o perfil.
+- **Secundários** com o contorno verdete (como o `.jn-botao` da inicial).
+- Menu e Treinar ficam como estão.
+
+Prancha comparando as duas opções: `docs/design/ideias/2026-11-01-atlas-unificado/botao-principal.png`.
 
 ## Como conferir
 

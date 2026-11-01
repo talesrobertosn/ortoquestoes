@@ -21,6 +21,7 @@ import { CHAVE_RECORDES, RECORDES_VAZIOS, type Recordes } from '../flashcards/pr
 import type { Flashcard } from '../flashcards/tipos'
 import '../estilos/paginas/CentralFlashcards.css'
 import '../estilos/paginas/CentralFlashcardsArquivo.css'
+import '../estilos/componentes/Cristal.css'
 
 export const AVISO_BETA = 'O Torneio de Flashcards está em beta. Estamos aprimorando o visual, o áudio e as mecânicas. Teste e conte o que funcionou — ou o que precisa melhorar.'
 
@@ -129,7 +130,7 @@ export function CentralFlashcards() {
           <p className="cfh-selo">Flashcards</p>
           <h1 id="cfh-titulo">Treine flashcards de Ortopedia.</h1>
           <p className="cfh-heroi__pessoal"><strong>{pessoal.abertura}</strong> {pessoal.dados}</p>
-          <a className="botao cfh-heroi__estudar" href={href(acao.destino)}>
+          <a className="cristal cfh-heroi__estudar" href={href(acao.destino)}>
             <Icone nome={acao.icone} tamanho={20} />
             <span><strong>{acao.rotulo}</strong><small>{acao.detalhe}</small></span>
           </a>
