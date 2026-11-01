@@ -160,7 +160,7 @@ export function AdminAgora({ conta, resumo, usuarios, atualizadoEm, assinaturas,
     <section className="adm-bloco" id="agora-dinheiro" aria-labelledby="adm-dinheiro-titulo">
       <header className="adm-bloco__cabeca">
         <h2 id="adm-dinheiro-titulo">Dinheiro hoje</h2>
-        <small>o resumo do dia com nomes; o detalhe completo continua em Financeiro</small>
+        <small>o resumo do dia com nomes; o detalhe completo continua em Receita</small>
       </header>
       {avisoCobrancas && <p className="adm-nota">{avisoCobrancas}</p>}
       <div className="adm-dinheiro">
