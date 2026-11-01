@@ -276,3 +276,6 @@
   .pt-fundo, .pt, .pt *, .pt *::before, .pt *::after { animation: none !important; transition: none !important; }
   .pt-vagalume { display: none; }
 }
+
+/* Point and click: passar o mouse num bicho acende um contorno dourado (dá para clicar e ele fala). */
+@media (hover: hover) { :is(.pt-coruja__botao, .pt-gato__botao):hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }

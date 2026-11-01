@@ -55,8 +55,11 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     depois(() => definirEstadoCoruja('olhando'), 4600)
     depois(() => definirEstadoCoruja('lendo'), 7600)
     depois(() => definirEstadoCoruja('repouso'), 12600)
-    depois(() => { definirCoruja((c) => (c === 'pousada' ? 'saindo' : c)); definirEstadoCoruja('voando') }, 17000)
-    depois(() => definirCoruja((c) => (c === 'saindo' ? 'longe' : c)), 18200)
+    // Ela fica (desde 01/11/2026, "que apareça mais vezes"): segue a rotina enquanto o menu está aberto.
+    const ciclo: EstadoCoruja[] = ['olhando', 'repouso', 'lendo', 'repouso', 'acenando', 'repouso']
+    let n = 0
+    const vez = window.setInterval(() => { if (!document.hidden) definirEstadoCoruja((e) => (e === 'piando' ? e : ciclo[n++ % ciclo.length])) }, 5200)
+    return () => window.clearInterval(vez)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   // O gato: depois de 1 s sem mexer no menu.
@@ -70,8 +73,8 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
         definirGato((g) => (g === 'longe' ? 'andando' : g))
         depois(() => definirGato((g) => (g === 'andando' ? 'sentado' : g)), 5200)
         depois(() => definirGato((g) => (g === 'sentado' ? 'espreguicando' : g)), 11000)
-        depois(() => definirGato((g) => (g === 'espreguicando' ? 'dormindo' : g)), 13500)
-      }, f ? 400 : 1000)
+        depois(() => definirGato((g) => (g === 'espreguicando' ? 'dormindo' : g)), 12800)
+      }, f ? 300 : 600)
     }
     armar()
     const mexeu = () => { if (gatoRef.current === 'longe') armar() }
@@ -105,8 +108,10 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     definirGato('reagindo')
     const texto = proximaFala('gato', FALAS_GATO)
     definirMiau(texto)
-    depois(() => definirMiau((m) => (m === texto ? null : m)), 4200)
-    depois(() => definirGato('dormindo'), 4400)
+    depois(() => definirMiau((m) => (m === texto ? null : m)), 5500)
+    // Depois de falar, fica sentado acordado um tempo e só então volta a dormir (sem deitar e levantar em seguida).
+    depois(() => definirGato((g) => (g === 'reagindo' ? 'sentado' : g)), 1600)
+    depois(() => definirGato((g) => (g === 'sentado' ? 'dormindo' : g)), 14000)
   }
   // Se a coruja pousa com o gato acordado, ele olha para cima (o encontro dos dois).
   const linhaGato: IdLinhaGato = gato === 'andando' ? 'andando'

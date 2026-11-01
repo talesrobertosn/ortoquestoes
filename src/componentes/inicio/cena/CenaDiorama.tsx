@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
 import { folhaGato, type IdLinhaGato } from '../../mascote/sprites'
@@ -35,6 +35,53 @@ function livre(c: Caixa, heroi: Element, cena: Element): boolean {
   return [...heroi.querySelectorAll(TAMPAS)].every((t) => cruza(c, caixa(t)) === 0)
 }
 
+type Encaixe = { dx: number; dy: number; nivel: number }
+/** Onde o balão cabe se o bicho estiver deslocado em (ox, oy) px: nível 0–3 é perto do bicho, 4–7 longe, 8 nenhum. */
+function planejarBalao(balao: HTMLElement, alturaBicho: number, deslocs: { x: number; y: number }[]): Encaixe[] {
+  const heroi = balao.closest('.jn-heroi, .hd-topo'), cena = balao.closest('.hd-cena')
+  balao.style.removeProperty('translate'); balao.style.removeProperty('--cauda-x'); balao.classList.remove('hd-balao--embaixo', 'hd-balao--topo')
+  if (!heroi || !cena) return deslocs.map(() => ({ dx: 0, dy: 0, nivel: 0 }))
+  const b0 = caixa(balao), c0 = caixa(cena), h0 = caixa(heroi)
+  // A parte visível da cena: o herói corta a cena embaixo (a faixa da sequência vem logo depois).
+  const v = { x: Math.max(c0.x, h0.x), y: Math.max(c0.y, h0.y), w: Math.min(c0.x + c0.w, h0.x + h0.w) - Math.max(c0.x, h0.x), h: Math.min(c0.y + c0.h, h0.y + h0.h) - 8 - Math.max(c0.y, h0.y) }
+  const passos: number[] = [0]
+  for (let d = 12; d <= v.w; d += 12) passos.push(d, -d)
+  // Evita também o esqueleto e a fala dele; prefere ficar perto do bicho (em cima ou embaixo) a ir longe.
+  const bichos = [...heroi.querySelectorAll('.hd-mascote .mascote__corpo, .mascote__balao')].map(caixa)
+  const embaixo = b0.h + alturaBicho + 14
+  const perto = b0.w * 0.6
+  const tentativas: [number, number, boolean][] = [[0, perto, true], [-28, perto, true], [-56, perto, true], [embaixo, perto, true], [0, Infinity, true], [embaixo, Infinity, true], [0, Infinity, false], [embaixo, Infinity, false]]
+  return deslocs.map((o) => {
+    const b = { ...b0, x: b0.x + o.x, y: b0.y + o.y }
+    const acha = (dy: number, longe: number, comBichos: boolean) => passos.find((dx) => {
+      if (Math.abs(dx) > longe) return false
+      const c = { x: b.x + dx, y: b.y + dy, w: b.w, h: b.h }
+      if (c.x < v.x || c.y < v.y || c.x + c.w > v.x + v.w || c.y + c.h > v.y + v.h) return false
+      return livre(c, heroi, cena) && (!comBichos || bichos.every((t) => cruza(c, t) === 0))
+    })
+    for (const [k, [dy, longe, comBichos]] of tentativas.entries()) { const dx = acha(dy, longe, comBichos); if (dx !== undefined) return { dx, dy, nivel: k } }
+    // Nenhum lugar livre: fica dentro da cena, por cima dos cartões.
+    let dx = Math.min(0, v.x + v.w - 8 - (b.x + b.w)); if (b.x + dx < v.x + 8) dx = v.x + 8 - b.x
+    return { dx, dy: 0, nivel: 8 }
+  })
+}
+function aplicarEncaixe(balao: HTMLElement, e: Encaixe) {
+  balao.classList.toggle('hd-balao--embaixo', e.nivel < 8 && e.dy > 0)
+  balao.classList.toggle('hd-balao--topo', e.nivel === 8)
+  balao.style.translate = `${Math.round(e.dx)}px ${Math.round(e.dy)}px`
+  balao.style.setProperty('--cauda-x', `${Math.round(-e.dx)}px`)
+}
+/**
+ * Encaixa o balão de fala de um bicho num lugar à vista (pedido do Tales, 01/11/2026: "as frases do gato ainda estão
+ * aparecendo escondidas"): em cima do bicho; se encosta num texto ou cartão, desliza para os lados ou desce para baixo
+ * dele; sem lugar nenhum (tela muito estreita), fica por cima de tudo. Nunca cortado nem escondido.
+ */
+function encaixarBalao(balao: HTMLElement | null, alturaBicho: number) {
+  if (balao) aplicarEncaixe(balao, planejarBalao(balao, alturaBicho, [{ x: 0, y: 0 }])[0])
+}
+
+const reduzMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
+
 /** Os cantos do chão por onde o gato passeia (pixels da arte) e a pose em cada um; "repouso" dorme ou ronrona. */
 const PONTOS_GATO = [
   { x: 219, y: 150, pose: 'repouso' },
@@ -52,7 +99,9 @@ const DURACAO_PASSO = 3600
  * cartão, mascote ou balão de fala por cima ou por baixo): a placa de madeira, o alto da barraca, o lampião, o arco de
  * pedra ou os caixotes. Confere de novo quando a tela muda e de tempos em tempos (o balão do esqueleto vem e vai).
  */
-const POLEIROS = [{ x: 329, y: 101 }, { x: 196, y: 105 }, { x: 322, y: 59 }, { x: 150, y: 86 }, { x: 131, y: 125 }]
+// Sempre pousada em algo firme, no chão do acampamento (Tales, 01/11/2026: no alto ela parecia flutuar): a pilha de
+// livros, o caixote ao lado do lampião e a grama dos dois lados da fogueira.
+const POLEIROS = [{ x: 318, y: 137 }, { x: 212, y: 156 }, { x: 346, y: 170 }, { x: 166, y: 176 }, { x: 282, y: 184 }]
 const CORUJA = { w: 33, h: 24 }
 const ROTINA_CORUJA: EstadoCoruja[] = ['parada', 'olhando', 'parada', 'lendo', 'lendo', 'parada', 'acenando']
 const OUTROS = '.hd-mascote, .mascote__balao, .hd-balao:not(.hd-balao--coruja), .hd-gato'
@@ -62,6 +111,8 @@ function CorujaDoAcampamento() {
   const [poleiro, definirPoleiro] = useState<number | null>(0)
   const [fala, definirFala] = useState<string | null>(null)
   const ref = useRef<HTMLButtonElement>(null)
+  const balao = useRef<HTMLSpanElement>(null)
+  useLayoutEffect(() => { if (fala) encaixarBalao(balao.current, ref.current?.getBoundingClientRect().height ?? 40) }, [fala, poleiro])
   useEffect(() => {
     if (typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const t = window.setInterval(() => { if (!document.hidden) definirPasso((p) => (p + 1) % ROTINA_CORUJA.length) }, 5200)
@@ -99,7 +150,7 @@ function CorujaDoAcampamento() {
       style={lugar(pt.x - CORUJA.w / 2, pt.y - CORUJA.h * 31 / 32, CORUJA.w, CORUJA.h)}>
       <CorujaPixel key={`${estado}-${acenou}`} estado={estado} />
     </button>
-    {fala && poleiro !== null && <span className={`hd-balao hd-balao--longo hd-balao--coruja ${pt.x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
+    {fala && poleiro !== null && <span ref={balao} className={`hd-balao hd-balao--longo hd-balao--coruja ${pt.x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
       onClick={() => definirFala(null)} style={{ left: `${(pt.x / 480) * 100}%`, top: `${((pt.y - CORUJA.h - 1) / 200) * 100}%` }}>{fala}</span>}
   </>
 }
@@ -120,7 +171,31 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   // O gato é o preguiçoso: cada toque, uma frase; no 6º toque seguido, a tala (o segredo antigo).
   const [falaGato, definirFalaGato] = useState<string | null>(null)
   const toquesGato = useRef(0)
-  useEffect(() => { if (!falaGato) return; const t = window.setTimeout(() => definirFalaGato(null), 5000); return () => window.clearTimeout(t) }, [falaGato])
+  const balaoGato = useRef<HTMLSpanElement>(null)
+  // Se a fala não cabe perto do gato neste canto, ele anda até o canto livre mais próximo onde caiba (e fala de lá).
+  const jaAndou = useRef(false)
+  useLayoutEffect(() => {
+    const balao = balaoGato.current, el = palco.current
+    if (andando || !balao || !el || !(falaGato || gato === 'tala')) return
+    const altura = el.querySelector('.hd-gato')?.getBoundingClientRect().height ?? 40
+    const P = caixa(el)
+    const livres = pontosLivres()
+    const opcoes = [ponto, ...(jaAndou.current || reduzMovimento() ? [] : livres.filter((i) => i !== ponto))]
+    const planos = planejarBalao(balao, altura, opcoes.map((i) => ({ x: ((PONTOS_GATO[i].x - PONTOS_GATO[ponto].x) / 480) * P.w, y: ((PONTOS_GATO[i].y - PONTOS_GATO[ponto].y) / 200) * P.h })))
+    if (planos[0].nivel <= 3 || opcoes.length === 1) { aplicarEncaixe(balao, planos[0]); return }
+    // O canto mais perto (de onde o gato está) em que a fala cabe ao lado dele.
+    const bons = opcoes.map((i, k) => ({ i, k })).filter(({ k }) => planos[k].nivel <= 3)
+      .sort((a, b) => Math.abs(PONTOS_GATO[a.i].x - PONTOS_GATO[ponto].x) - Math.abs(PONTOS_GATO[b.i].x - PONTOS_GATO[ponto].x))
+    if (!bons.length) { aplicarEncaixe(balao, planos[0]); return }
+    const destino = bons[0].i, pose = gato
+    jaAndou.current = true
+    definirAndando(PONTOS_GATO[destino].x < PONTOS_GATO[ponto].x ? 'esquerda' : 'direita')
+    if (pose !== 'tala') definirGato('andando')
+    definirPonto(destino)
+    window.setTimeout(() => { definirAndando(null); if (pose !== 'tala') definirGato('acordado') }, DURACAO_PASSO)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [falaGato, gato, ponto, andando])
+  useEffect(() => { if (!falaGato || andando) return; const t = window.setTimeout(() => definirFalaGato(null), 5500); return () => window.clearTimeout(t) }, [falaGato, andando])
   const palco = useRef<HTMLDivElement>(null)
   const espera = useRef(0)
   const agora = useRef({ gato, ponto })
@@ -307,6 +382,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
           style={{ ...lugar(PONTOS_GATO[ponto].x, PONTOS_GATO[ponto].y - 4.5, 36, 27), '--passo': `${DURACAO_PASSO}ms` } as CSSProperties}
           onClick={() => {
             toquesGato.current++
+            jaAndou.current = false
             if (toquesGato.current % 6 === 0) { definirFalaGato(null); definirGato('tala'); return }
             definirGato((g) => (g === 'dormindo' || g === 'ronronando' ? 'acordado' : g))
             definirFalaGato(proximaFala('gato', FALAS_GATO))
@@ -314,10 +390,10 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
           <span className={`hd-gato__sprite${gato === 'acordando' ? ' hd-gato__sprite--uma-vez' : ''}`} style={{ '--sprite': urlCss(folhaGato(gato).src.slice(1)), '--linha': folhaGato(gato).linha, '--linhas': folhaGato(gato).linhas } as CSSProperties} />
         </button>
         {/* O balão abre para o lado livre da cena: nunca por baixo da caixa da missão. */}
-        {falaGato && gato !== 'tala' && <span className={`hd-balao hd-balao--longo ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
-          style={{ left: `${((PONTOS_GATO[ponto].x + (PONTOS_GATO[ponto].x > 250 ? 4 : 30)) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>{falaGato}</span>}
-        {gato === 'tala' && <span className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
-          style={{ left: `${((PONTOS_GATO[ponto].x + (PONTOS_GATO[ponto].x > 250 ? 4 : 30)) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
+        {falaGato && gato !== 'tala' && !andando && <span ref={balaoGato} className={`hd-balao hd-balao--longo hd-balao--gato ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
+          style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>{falaGato}</span>}
+        {gato === 'tala' && !andando && <span ref={balaoGato} className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
+          style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
         <CorujaDoAcampamento />
         <span className="hd-particulas">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>

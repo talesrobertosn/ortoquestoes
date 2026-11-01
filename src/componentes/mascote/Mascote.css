@@ -29,3 +29,5 @@ button.mascote__corpo:hover .mascote__sprite { filter: brightness(1.08) drop-sha
 /* Reação curta (Mascote reacao=...): a linha toca uma vez e para no último quadro. */
 .mascote--reagindo .mascote__sprite { animation: mascote-uma-vez var(--dur) steps(7, jump-none) 1 forwards; }
 @keyframes mascote-uma-vez { from { background-position-x: 0; } to { background-position-x: 100%; } }
+/* Poses de transição tocam uma vez e param no último quadro (antes repetiam: o gato deitava e levantava sem parar). */
+.gato-pixel--acordando, .gato-pixel--espreguicando { animation-iteration-count: 1; animation-fill-mode: forwards; animation-duration: 1.6s; }
