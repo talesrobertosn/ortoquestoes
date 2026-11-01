@@ -2,16 +2,15 @@
 //
 // Sobe o site (vite) apontando para um Supabase falso que o próprio teste atende (context.route), com a
 // conta marcada como administradora (eh_administrador) e dados de exemplo nas RPCs do painel. Confere:
-//  0. Comando › Visão geral (Mesa de Comando, 01/11/2026): estado, indicadores, gráfico, fila de atenção e áreas;
-//  1. as seis áreas na navegação, com o número de online em Comando e as partes aninhadas;
+//  1. as seis seções na navegação, com o número de online em Agora;
 //  2. Agora como torre de controle: "Online agora" com uma linha por pessoa e o que cada uma está vendo em texto
 //     completo (nenhum nome ou atividade cortado com reticências), filtros e busca, os números do dia, as listas
 //     completas (estudaram hoje, entraram, recém-cadastrados, mais ativos, dinheiro hoje) e o que pede atenção;
 //  3. Pessoas › Usuários sem repetir os números de hoje nem o "ao vivo";
 //  4. Financeiro › Ganhos: hoje, 7 dias, mês, ano, desde o começo e a previsão de fechamento;
 //  5. endereços antigos (?aba=hoje, receita, operacoes, configuracoes) abrindo no lugar novo;
-//  6. E-mails › Todas as cartas (17/10/2026): todos os cartões (o número vem do próprio catálogo) escritos pelo motor no navegador, filtro, busca, sortear, prévia;
-//  7. capturas no computador (1440 px) e no celular (390 px), claro e escuro.
+//  6. E-mails › Todas as cartas (17/10/2026): 32 cartões escritos pelo motor no navegador, filtro, busca, sortear, prévia;
+//  7. capturas no computador (1366 px) e no celular (390 px), claro e escuro.
 //
 // Uso: node fixtures/e2e_painel_admin.mjs   (CHROMIUM=/caminho para outro navegador)
 // Capturas em $CAPTURAS (padrão: pasta temporária).
@@ -72,8 +71,7 @@ const eventos = [
   { id: 1, id_evento: 'ev-1', tipo: 'payment', id_recurso: '123', status_processamento: 'erro', erro: 'pagamento_nao_encontrado', recebido_em: iso(agora - 2 * HORA), processado_em: iso(agora - 2 * HORA), id_usuario: u(5).id_usuario, nome: u(5).nome, usuario: u(5).email },
   { id: 2, id_evento: 'ev-2', tipo: 'subscription_preapproval', id_recurso: '456', status_processamento: 'processado', erro: null, recebido_em: iso(agora - 5 * HORA), processado_em: iso(agora - 5 * HORA) },
 ]
-// 120 dias: o Comando pede o dobro do período (30 + 30 anteriores); os últimos 30 são os de sempre.
-const serie = Array.from({ length: 120 }, (_, k) => ({ dia: new Date(agora - (119 - k) * DIA - 3 * HORA).toISOString().slice(0, 10), cadastros: k % 3, ativos: 3 + (k % 5), respostas: k < 90 ? 60 + (k % 7) * 5 : 80 + (k - 90) * 4 }))
+const serie = Array.from({ length: 30 }, (_, k) => ({ dia: new Date(agora - (29 - k) * DIA - 3 * HORA).toISOString().slice(0, 10), cadastros: k % 3, ativos: 3 + (k % 5), respostas: 80 + k * 4 }))
 const rpcs = {
   eh_administrador: () => true,
   obter_acesso_premium: () => [{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }],
@@ -151,45 +149,14 @@ try {
     await p.waitForSelector('.adm-nav', { timeout: 30_000 }).catch(async () => { await p.reload(); await p.waitForSelector('.adm-nav', { timeout: 60_000 }) })
     await p.waitForTimeout(900)
   }
-  // Do topo: com a página rolada, a captura inteira desenha o cabeçalho fixo por cima do conteúdo.
-  const foto = async (p, nome) => { await p.evaluate(() => window.scrollTo(0, 0)); await p.waitForTimeout(250); await p.screenshot({ path: join(capturas, `${nome}.png`), fullPage: true }) }
+  const foto = (p, nome) => p.screenshot({ path: join(capturas, `${nome}.png`), fullPage: true })
 
   // ---------- Computador ----------
-  const pc = await contexto(1440, 900)
+  const pc = await contexto(1366, 900)
   await abrir(pc.p)
   const secoes = await pc.p.locator('.adm-nav__rotulo').allInnerTexts()
-  assert.deepEqual(secoes, ['Comando', 'Pessoas', 'Estudo e conteúdo', 'Receita', 'Comunicação', 'Configurações'])
-  assert.match(await pc.p.locator('.adm-nav__item[aria-current="true"]').innerText(), /Comando\s*4/)
-  assert.deepEqual(await pc.p.locator('.adm-nav__parte > span').allInnerTexts(), ['Visão geral', 'Hoje em detalhe'])
-  assert.equal(await pc.p.locator('.adm-nav__parte[aria-current="page"]').innerText().then(t => t.trim()), 'Visão geral')
-  // Comando › Visão geral: estado, cinco indicadores, gráfico com a linha do período anterior, fila e áreas.
-  await pc.p.waitForSelector('.adm-comando .adm-serie svg', { timeout: 15_000 })
-  assert.match(await pc.p.locator('.adm-migalhas').innerText(), /Painel\s*›\s*Comando\s*›\s*Visão geral/)
-  assert.equal(await pc.p.locator('h1').innerText(), 'Estado do Orto Questões')
-  assert.equal(await pc.p.locator('.adm-comando__kpis .adm-ind').count(), 5)
-  assert.equal(await pc.p.locator('.adm-comando .adm-serie__linha--b').count(), 1, 'linha do período anterior')
-  const comando = await pc.p.locator('.adm-comando').innerText()
-  for (const t of ['Pede ação agora', 'Acontecendo agora', 'Estudo de hoje', 'Aquisição e ativação', 'Receita e saúde de pagamento', 'Qualidade do acervo', 'Fila de atenção', 'Ver dados'])
-    assert.ok(comando.includes(t), `Comando sem "${t}"`)
-  // O aviso do processador com erro é crítico e abre os Avisos.
-  assert.match(await pc.p.locator('.adm-prioridades .adm-fila').first().innerText(), /Crítico/i)
-  // Definição do indicador abre e fecha.
-  await pc.p.locator('.adm-ind__def-botao').first().click()
-  assert.match(await pc.p.locator('.adm-ind__def').first().innerText(), /Fonte/i)
-  // Período 7 dias vai para o endereço e volta.
-  await pc.p.locator('.adm-periodo button', { hasText: '7 dias' }).click()
-  await pc.p.waitForFunction(() => location.hash === '#/admin?periodo=7', null, { timeout: 5_000 })
-  assert.ok(await pc.p.evaluate(() => document.documentElement.scrollWidth <= 1440), 'rolagem de lado no Comando')
-  await foto(pc.p, 'comando-1440')
-  await pc.p.locator('.adm-periodo button', { hasText: '30 dias' }).click()
-  await pc.p.waitForFunction(() => location.hash === '#/admin', null, { timeout: 5_000 })
-  await pc.p.evaluate(() => { document.documentElement.dataset.tema = 'escuro' })
-  await pc.p.waitForTimeout(300)
-  await foto(pc.p, 'comando-1440-escuro')
-  await pc.p.evaluate(() => { document.documentElement.dataset.tema = 'claro' })
-  // Hoje em detalhe (o antigo Agora).
-  await pc.p.locator('.adm-nav__parte', { hasText: 'Hoje em detalhe' }).click()
-  await pc.p.waitForFunction(() => location.hash === '#/admin?aba=agora', null, { timeout: 5_000 })
+  assert.deepEqual(secoes, ['Agora', 'Pessoas', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
+  assert.match(await pc.p.locator('.adm-nav__item[aria-current="page"]').innerText(), /Agora\s*4/)
   // Online agora: os 4 do exemplo, uma linha por pessoa, com o que cada um está vendo em texto completo.
   await pc.p.waitForSelector('.adm-vivo .adm-pessoa')
   assert.equal(await pc.p.locator('.adm-vivo .adm-pessoa').count(), 4)
@@ -209,8 +176,8 @@ try {
     }
     return ruins
   })
-  assert.deepEqual(await cortados(), [], 'texto cortado em Agora (1440 px)')
-  assert.ok(await pc.p.evaluate(() => document.documentElement.scrollWidth <= 1440), 'rolagem de lado no computador')
+  assert.deepEqual(await cortados(), [], 'texto cortado em Agora (1366 px)')
+  assert.ok(await pc.p.evaluate(() => document.documentElement.scrollWidth <= 1366), 'rolagem de lado no computador')
   // Filtros e busca da lista ao vivo.
   await pc.p.locator('.adm-vivo .adm-chip', { hasText: /^Assinantes/ }).click()
   assert.equal(await pc.p.locator('.adm-vivo .adm-pessoa').count(), 1)
@@ -230,7 +197,7 @@ try {
   assert.equal(await pc.p.getByText('Pessoas que estudaram', { exact: true }).count(), 1)
   // Números do dia: contas, cadastros, confirmaram o e-mail, questões (com ontem), dinheiro.
   const numeros = await pc.p.locator('#agora-numeros').innerText()
-  for (const t of ['Contas no total', '14', 'Cadastros hoje', 'Confirmaram o e-mail', '12', 'Entraram hoje', 'Fizeram 5 ou mais questões', 'Questões respondidas', 'ontem', 'Usaram flashcards', 'Resumos abertos hoje', 'Assinantes com acesso', 'Pagaram hoje', 'Novas assinaturas hoje', 'Desligaram a renovação hoje', 'Pix pendentes', 'ainda não medido'])
+  for (const t of ['Contas no total', '14', 'Cadastros hoje', 'Confirmaram o e-mail', '12', 'Entraram hoje', 'Fizeram 5 ou mais questões', 'Questões respondidas', 'ontem', 'Usaram flashcards', 'Resumos abertos hoje', 'Assinantes com acesso', 'Pagaram hoje', 'Novas assinaturas hoje', 'Cancelamentos hoje', 'Pix pendentes', 'ainda não medido'])
     assert.ok(numeros.includes(t), `Números do dia sem "${t}"`)
   // Estudaram hoje: as 7 pessoas do dia, com o que cada uma fez (questões, flashcards, resumo), em lista completa.
   const estudaram = await pc.p.locator('#agora-estudaram').innerText()
@@ -247,7 +214,7 @@ try {
   assert.equal(await pc.p.locator('#agora-semana .adm-pessoa').count(), 9)
   assert.match(await pc.p.locator('#agora-semana .adm-pessoa').first().innerText(), /1º\s*330 questões na semana/)
   const dinheiro = await pc.p.locator('#agora-dinheiro').innerText()
-  for (const t of ['Pagaram hoje', 'Marina Duarte', 'Anual · Cartão · R$', 'Novas assinaturas hoje', 'Desligaram a renovação hoje', 'Henrique Sá', 'Pix pendentes', 'Carla Mendes', 'Mensal · Pix']) assert.ok(dinheiro.includes(t), `Dinheiro hoje sem "${t}"`)
+  for (const t of ['Pagaram hoje', 'Marina Duarte', 'Anual · Cartão · R$', 'Novas assinaturas hoje', 'Cancelamentos hoje', 'Henrique Sá', 'Pix pendentes', 'Carla Mendes', 'Mensal · Pix']) assert.ok(dinheiro.includes(t), `Dinheiro hoje sem "${t}"`)
   assert.match(await pc.p.locator('.adm-atencao').innerText(), /1\s*avisos de pagamento com problema/)
   // Ver ficha abre a ficha da pessoa; Enviar carta abre direto em "Carta e ações".
   await pc.p.locator('.adm-vivo .adm-pessoa').first().getByRole('button', { name: 'Enviar carta' }).click()
@@ -255,23 +222,19 @@ try {
   assert.equal(await pc.p.locator('.adm-ficha .fx-aba[aria-current="page"]').innerText(), 'Carta e ações')
   await pc.p.keyboard.press('Escape')
   await pc.p.waitForTimeout(300)
-  await foto(pc.p, 'agora-1440')
+  await foto(pc.p, 'agora-1366')
 
-  // Pessoas abre na Análise; o Explorador é a lista, sem números de hoje repetidos nem "ao vivo".
+  // Pessoas › Usuários: sem números de hoje repetidos nem "ao vivo".
   await pc.p.locator('.adm-nav__item', { hasText: 'Pessoas' }).click()
-  await pc.p.waitForFunction(() => location.hash === '#/admin?aba=crescimento', null, { timeout: 5_000 })
-  await pc.p.waitForTimeout(800)
-  assert.match(await pc.p.locator('.adm-parte-cabeca').innerText(), /Investigar\s*Análise/i)
-  await foto(pc.p, 'crescimento-1440')
-  await pc.p.locator('.adm-nav__parte', { hasText: 'Explorador' }).click()
   await pc.p.waitForSelector('.adm-usuarios')
   assert.equal(await pc.p.locator('.adm-vivo, .adm-kpis-usuarios').count(), 0)
-  await foto(pc.p, 'pessoas-1440')
+  await foto(pc.p, 'pessoas-1366')
+  await pc.p.locator('.adm-parte', { hasText: 'Crescimento' }).click()
+  await pc.p.waitForTimeout(800)
+  await foto(pc.p, 'crescimento-1366')
 
-  // Receita › Resultados: a faixa do período (confirmado × reconstruído) e o quadro de Ganhos.
-  await pc.p.locator('.adm-nav__item', { hasText: 'Receita' }).click()
-  await pc.p.waitForSelector('.adm-receita-periodo')
-  assert.match(await pc.p.locator('.adm-receita-periodo').innerText(), /Receita confirmada[\s\S]*Receita por dia/)
+  // Financeiro › Ganhos.
+  await pc.p.locator('.adm-nav__item', { hasText: 'Financeiro' }).click()
   await pc.p.waitForSelector('.adm-ganhos')
   const ganhos = await pc.p.locator('.adm-ganhos').innerText()
   for (const t of ['Hoje', 'Últimos 7 dias', 'Receita de', 'Desde o começo']) assert.ok(ganhos.includes(t), t)
@@ -279,28 +242,20 @@ try {
   // "Assinantes com acesso" e "Pix que vencem em 30 dias" uma vez só (antes, duas).
   assert.equal(await pc.p.getByText('Assinantes com acesso', { exact: true }).count(), 1)
   assert.equal(await pc.p.getByText('Pix que vencem em 30 dias', { exact: true }).count(), 1)
-  await foto(pc.p, 'financeiro-1440')
-  // Avisos do processador (os links dos e-mails de alerta, ?aba=pagamentos) continuam abrindo a lista com o erro.
-  await pc.p.locator('.adm-nav__parte', { hasText: 'Avisos do processador' }).click()
-  await pc.p.waitForSelector('.adm-eventos')
-  assert.match(await pc.p.locator('.adm-evento').first().innerText(), /Precisa de atenção|Erro|erro/i)
+  await foto(pc.p, 'financeiro-1366')
 
-  // Comunicação, Estudo e Configurações abrem.
-  await pc.p.locator('.adm-nav__item', { hasText: 'Comunicação' }).click()
+  // Conteúdo, E-mails e Ajustes abrem.
+  await pc.p.locator('.adm-nav__item', { hasText: 'E-mails' }).click()
   await pc.p.waitForTimeout(800)
-  assert.deepEqual(await pc.p.locator('.adm-nav__parte > span').allInnerTexts(), ['Campanhas e envios', 'Catálogo de cartas'])
-  await foto(pc.p, 'emails-1440')
-  // Comunicação › Catálogo de cartas (17/10/2026): o catálogo vivo, escrito pelo motor no navegador.
-  await pc.p.locator('.adm-nav__parte', { hasText: 'Catálogo de cartas' }).click()
+  assert.deepEqual(await pc.p.locator('.adm-parte span').allInnerTexts(), ['Lembretes e automáticos', 'Cartas pessoais', 'Todas as cartas'])
+  await foto(pc.p, 'emails-1366')
+  // E-mails › Todas as cartas (17/10/2026): o catálogo vivo, escrito pelo motor no navegador.
+  await pc.p.locator('.adm-parte', { hasText: 'Todas as cartas' }).click()
   await pc.p.waitForSelector('.tc-cartao', { timeout: 15_000 })
   await pc.p.waitForFunction(() => location.hash === '#/admin?aba=todas', null, { timeout: 5_000 })
-  // O catálogo cresce com as cartas novas: o total e os grupos vêm dos próprios filtros, e cada número tem de bater com os cartões.
-  const numeroDoChip = async (p, rotulo) => Number(await p.locator('.tc .adm-chip', { hasText: rotulo }).locator('span').innerText())
-  const totalCartas = await numeroDoChip(pc.p, /^Todas/)
-  assert.ok(totalCartas >= 32, `catálogo encolheu (${totalCartas})`)
-  assert.equal(await pc.p.locator('.tc-cartao').count(), totalCartas, 'cartões ≠ número do filtro Todas')
+  assert.equal(await pc.p.locator('.tc-cartao').count(), 32, '24 tipos com a carta de estudo aberta nas 9 faixas')
   const todas = await pc.p.locator('.tc').innerText()
-  for (const t of [`${totalCartas} modelos`, 'tipos, com a carta de estudo aberta nas 9 faixas', 'versões escritas à mão', 'Plano da reescrita', 'docs/emails/PLANO.md', 'Quando sai', 'Para quem', 'Amostra para', 'Sortear outra versão', 'Boas-vindas no dia da confirmação', 'Obrigado pela assinatura', 'Transacional', 'Estudando, acerto 90% ou mais', 'Tales, do Orto Questões', 'P.S.:'])
+  for (const t of ['32 modelos', '24 tipos', 'versões escritas à mão', 'Plano da reescrita', 'docs/emails/PLANO.md', 'Quando sai', 'Para quem', 'Amostra para', 'Sortear outra versão', 'Boas-vindas no dia da confirmação', 'Pagamento aprovado', 'Transacional', 'Estudando, acerto 90% ou mais', 'Tales, do Orto Questões', 'P.S.:'])
     assert.ok(todas.includes(t), `Todas as cartas sem "${t}": ${todas.slice(0, 400)}`)
   assert.equal(await pc.p.locator('.tc [role="alert"]').count(), 0, 'alguma amostra não foi escrita')
   // Toda carta tem assunto, um P.S. e a assinatura; nenhuma cita preço.
@@ -308,15 +263,15 @@ try {
   for (const c of cartoes) { assert.match(c, /Assunto/); assert.equal((c.match(/P\.S\.:/g) ?? []).length, 1, c.slice(0, 80)); assert.ok(!/R\$/.test(c)) }
   // Filtro por grupo e busca por texto.
   await pc.p.locator('.tc .adm-chip', { hasText: /^Novos/ }).click()
-  assert.equal(await pc.p.locator('.tc-cartao').count(), await numeroDoChip(pc.p, /^Novos/))
+  assert.equal(await pc.p.locator('.tc-cartao').count(), 6)
   await pc.p.locator('.tc .adm-chip', { hasText: /^Faixas/ }).click()
-  assert.equal(await pc.p.locator('.tc-cartao').count(), 9, 'a carta de estudo nas 9 faixas')
+  assert.equal(await pc.p.locator('.tc-cartao').count(), 9)
   await pc.p.locator('.tc .adm-chip', { hasText: /^Todas/ }).click()
   await pc.p.locator('.tc input[type="search"]').fill('reembolso')
-  assert.ok((await pc.p.locator('.tc-cartao').count()) >= 1 && (await pc.p.locator('.tc-cartao').count()) < totalCartas)
+  assert.ok((await pc.p.locator('.tc-cartao').count()) >= 1 && (await pc.p.locator('.tc-cartao').count()) < 32)
   assert.match(await pc.p.locator('.tc-cartao').first().innerText(), /Obrigado pelo tempo|reembolso/i)
   await pc.p.locator('.tc input[type="search"]').fill('')
-  assert.equal(await pc.p.locator('.tc-cartao').count(), totalCartas)
+  assert.equal(await pc.p.locator('.tc-cartao').count(), 32)
   // Sortear outra versão troca o texto do cartão (e só dele).
   const primeiro = pc.p.locator('.tc-cartao').first()
   const segundo = pc.p.locator('.tc-cartao').nth(1)
@@ -329,23 +284,18 @@ try {
   await primeiro.getByRole('button', { name: 'Ver como chega' }).click()
   await pc.p.waitForSelector('.tc .ce-previa iframe', { timeout: 5_000 })
   await primeiro.getByRole('button', { name: 'Fechar prévia' }).click()
-  assert.ok(await pc.p.evaluate(() => document.documentElement.scrollWidth <= 1440), 'Todas as cartas rola de lado no computador')
-  await foto(pc.p, 'todas-cartas-1440')
+  assert.ok(await pc.p.evaluate(() => document.documentElement.scrollWidth <= 1366), 'Todas as cartas rola de lado no computador')
+  await foto(pc.p, 'todas-cartas-1366')
   await pc.p.evaluate(() => { document.documentElement.dataset.tema = 'escuro' })
   await pc.p.waitForTimeout(300)
-  await foto(pc.p, 'todas-cartas-1440-escuro')
+  await foto(pc.p, 'todas-cartas-1366-escuro')
   await pc.p.evaluate(() => { document.documentElement.dataset.tema = 'claro' })
-  await pc.p.locator('.adm-nav__item', { hasText: 'Estudo e conteúdo' }).click()
+  await pc.p.locator('.adm-nav__item', { hasText: 'Conteúdo' }).click()
   await pc.p.waitForTimeout(500)
-  assert.ok((await pc.p.locator('.adm-nav__parte > span').allInnerTexts()).includes('Simulados'))
-  await pc.p.locator('.adm-nav__item', { hasText: 'Configurações' }).click()
-  await pc.p.waitForTimeout(500)
-  await pc.p.locator('.adm-nav__parte', { hasText: 'Exportação' }).click()
-  await pc.p.waitForSelector('.adm-exportar-parte')
-  await foto(pc.p, 'exportar-1440')
+  assert.ok((await pc.p.locator('.adm-parte span').allInnerTexts()).includes('Simulados'))
 
   // Endereços antigos.
-  for (const [antigo, novo] of [['?aba=hoje', '#/admin?aba=agora'], ['?aba=geral', '#/admin'], ['?aba=estudo', '#/admin?aba=conteudo'], ['?aba=comunicacao', '#/admin?aba=lembretes'], ['?aba=receita', '#/admin?aba=financeiro'], ['?aba=operacoes', '#/admin?aba=lembretes'], ['?aba=configuracoes', '#/admin?aba=ajustes'], ['?aba=avaliacoes', '#/admin?aba=conteudo&vista=avaliacoes']]) {
+  for (const [antigo, novo] of [['?aba=hoje', '#/admin'], ['?aba=geral', '#/admin'], ['?aba=receita', '#/admin?aba=financeiro'], ['?aba=operacoes', '#/admin?aba=lembretes'], ['?aba=configuracoes', '#/admin?aba=ajustes'], ['?aba=avaliacoes', '#/admin?aba=conteudo&vista=avaliacoes']]) {
     await abrir(pc.p, antigo)
     await pc.p.waitForFunction((esperado) => location.hash === esperado, novo, { timeout: 5_000 })
   }
@@ -354,36 +304,16 @@ try {
   await abrir(pc.p, '?aba=financeiro')
   await pc.p.evaluate(() => { document.documentElement.dataset.tema = 'escuro' })
   await pc.p.waitForTimeout(300)
-  await foto(pc.p, 'financeiro-1440-escuro')
-  await abrir(pc.p, '?aba=agora')
+  await foto(pc.p, 'financeiro-1366-escuro')
+  await abrir(pc.p)
   await pc.p.evaluate(() => { document.documentElement.dataset.tema = 'escuro' })
   await pc.p.waitForTimeout(300)
-  await foto(pc.p, 'agora-1440-escuro')
+  await foto(pc.p, 'agora-1366-escuro')
   await pc.c.close()
-
-  // ---------- Tablet (1024 px): coluna lateral e painel médio, sem rolagem de lado ----------
-  const tab = await contexto(1024, 768)
-  await abrir(tab.p)
-  await tab.p.waitForSelector('.adm-comando .adm-serie svg', { timeout: 15_000 })
-  assert.ok(await tab.p.evaluate(() => document.documentElement.scrollWidth) <= 1024, 'Comando rola de lado no tablet')
-  await foto(tab.p, 'comando-1024')
-  await tab.c.close()
 
   // ---------- Celular ----------
   const cel = await contexto(390, 844, true)
   await abrir(cel.p)
-  await cel.p.waitForSelector('.adm-comando .adm-serie svg', { timeout: 15_000 })
-  assert.ok(await cel.p.evaluate(() => document.documentElement.scrollWidth) <= 390, 'Comando rola de lado no celular')
-  // No celular: barra inferior com as seis áreas e as partes num trilho acima do conteúdo.
-  assert.equal(await cel.p.locator('.adm-nav__item').count(), 6)
-  assert.ok(await cel.p.locator('.adm-partes').isVisible())
-  assert.ok(!(await cel.p.locator('.adm-nav__partes').isVisible().catch(() => false)))
-  await foto(cel.p, 'comando-390')
-  await cel.p.evaluate(() => { document.documentElement.dataset.tema = 'escuro' })
-  await cel.p.waitForTimeout(300)
-  await foto(cel.p, 'comando-390-escuro')
-  await cel.p.evaluate(() => { document.documentElement.dataset.tema = 'claro' })
-  await abrir(cel.p, '?aba=agora')
   await cel.p.waitForSelector('.adm-vivo .adm-pessoa')
   const largura = await cel.p.evaluate(() => document.documentElement.scrollWidth)
   assert.ok(largura <= 390, `rolagem de lado no celular (${largura}px)`)
@@ -411,7 +341,7 @@ try {
   // Todas as cartas no celular: um cartão por linha, sem rolagem de lado, botões alcançáveis.
   await abrir(cel.p, '?aba=todas')
   await cel.p.waitForSelector('.tc-cartao', { timeout: 15_000 })
-  assert.equal(await cel.p.locator('.tc-cartao').count(), await numeroDoChip(cel.p, /^Todas/))
+  assert.equal(await cel.p.locator('.tc-cartao').count(), 32)
   assert.ok(await cel.p.evaluate(() => document.documentElement.scrollWidth) <= 390, 'Todas as cartas rola de lado no celular')
   assert.ok(await cel.p.evaluate(() => [...document.querySelectorAll('.tc-cartao')].every(c => c.getBoundingClientRect().width <= 390 - 2 * 12)), 'cartão mais largo que a tela')
   await foto(cel.p, 'todas-cartas-390')
