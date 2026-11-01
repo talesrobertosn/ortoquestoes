@@ -27,11 +27,11 @@ const LUGAR = ['', '1º lugar', '2º lugar', '3º lugar']
 const TITULO = ['', 'Campeão', 'Guardião de prata', 'Guardião de bronze']
 
 const pct = (v: number, total: number) => `${(v / total) * 100}%`
-// Visitas (desde 01/11/2026 em toda visita à página, pedido do Tales: "aparecer mais"; uma de cada vez, nunca as duas): o gato dorme no chão perto da mata e a coruja
-// pousa no capitel do pilar da direita, olhando o campeão. Só enfeite (aria-hidden), longe de nomes e botões.
-const VISITA = { gato: { x: 432, y: 236, w: 48, h: 36 }, coruja: { x: 415, y: 18, w: 44, h: 32 } }
+// Visitas (desde 01/11/2026 os dois em toda visita à página, pedido do Tales: "que também apareça no ranking", como um
+// point and click): o gato dorme no chão perto da mata e a coruja
+// fica no chão ao lado dele (Tales, 01/11/2026: pousada em algo firme, nunca no ar nem cortada no alto). Só enfeite (aria-hidden), longe de nomes e botões.
+const VISITA = { gato: { x: 418, y: 236, w: 48, h: 36 }, coruja: { x: 459, y: 238, w: 34, h: 25 } }
 type Visita = 'gato' | 'coruja' | null
-const sortearVisita = (): Visita => (Math.random() < 0.5 ? 'gato' : 'coruja')
 const POEIRA = Array.from({ length: 14 }, (_, i) => ({ x: 292 + ((i * 37) % 60), y: 30 + ((i * 53) % 130), d: 6 + (i % 5) * 1.3, a: -((i * 1.7) % 8) }))
 
 function Cavaleiro({ lugar, saudando }: { lugar: number; saudando: boolean }) {
@@ -69,12 +69,12 @@ export function SalaoCem({ cabecalho, lateral, lugares, rotuloPodio, cerimonia }
 }) {
   const palco = useRef<HTMLDivElement>(null)
   const [visivel, definirVisivel] = useState(true)
-  const [visita] = useState<Visita>(sortearVisita)
-  // Um toque no visitante: a coruja explica um conceito que cai na prova; o gato solta uma preguiça.
+  // Um toque num visitante: a coruja explica um conceito que cai na prova; o gato solta uma preguiça. Um fala por vez.
+  const [visita, definirVisita] = useState<Visita>(null)
   const [fala, definirFala] = useState<string | null>(null)
   const [toques, definirToques] = useState(0)
-  useEffect(() => { if (!fala) return; const t = window.setTimeout(() => definirFala(null), visita === 'coruja' ? 11000 : 5000); return () => window.clearTimeout(t) }, [fala, visita])
-  const tocarVisita = () => { definirToques((n) => n + 1); definirFala(visita === 'coruja' ? proximaFala('coruja', CONCEITOS_CORUJA) : proximaFala('gato', FALAS_GATO)) }
+  useEffect(() => { if (!fala) return; const t = window.setTimeout(() => definirFala(null), visita === 'coruja' ? 11000 : 5500); return () => window.clearTimeout(t) }, [fala, visita])
+  const tocar = (quem: 'gato' | 'coruja') => { definirToques((n) => n + 1); definirVisita(quem); definirFala(quem === 'coruja' ? proximaFala('coruja', CONCEITOS_CORUJA) : proximaFala('gato', FALAS_GATO)) }
   useEffect(() => {
     const el = palco.current
     if (!el || typeof IntersectionObserver === 'undefined') return
@@ -93,10 +93,10 @@ export function SalaoCem({ cabecalho, lateral, lugares, rotuloPodio, cerimonia }
         {top3.map((l) => <Estandarte key={l.posicao} lugar={l.posicao} />)}
         {TOCHAS.map((t, i) => <span key={i} className="cem-heroi__tocha" style={{ left: pct(t.x - 5, BASE.w), top: pct(t.y - 16, BASE.h), width: pct(10, BASE.w), height: pct(16, BASE.h), backgroundImage: `url(${img('tocha.png')})`, animationDelay: `${-i * 0.17}s` }} />)}
         {top3.map((l) => <Cavaleiro key={l.posicao} lugar={l.posicao} saudando={!!cerimonia && l.posicao === 1} />)}
-        {visita === 'gato' && <button type="button" tabIndex={-1} className="cem-heroi__visita" onClick={tocarVisita} style={{ left: pct(VISITA.gato.x - VISITA.gato.w / 2, BASE.w), top: pct(VISITA.gato.y - VISITA.gato.h, BASE.h), width: pct(VISITA.gato.w, BASE.w), height: pct(VISITA.gato.h, BASE.h) }}><GatoPixel key={toques} estado={fala ? 'acordado' : 'dormindo'} /></button>}
-        {visita === 'coruja' && <button type="button" tabIndex={-1} className="cem-heroi__visita" onClick={tocarVisita} style={{ left: pct(VISITA.coruja.x - VISITA.coruja.w / 2, BASE.w), top: pct(VISITA.coruja.y - VISITA.coruja.h, BASE.h), width: pct(VISITA.coruja.w, BASE.w), height: pct(VISITA.coruja.h, BASE.h) }}><CorujaPixel key={toques} estado={fala ? 'acenando' : 'olhando'} /></button>}
+        <button type="button" tabIndex={-1} className="cem-heroi__visita cem-heroi__visita--gato" aria-label="O gato: tocar" onClick={() => tocar('gato')} style={{ left: pct(VISITA.gato.x - VISITA.gato.w / 2, BASE.w), top: pct(VISITA.gato.y - VISITA.gato.h, BASE.h), width: pct(VISITA.gato.w, BASE.w), height: pct(VISITA.gato.h, BASE.h) }}><GatoPixel key={visita === 'gato' ? toques : 'g'} estado={fala && visita === 'gato' ? 'acordado' : 'dormindo'} /></button>
+        <button type="button" tabIndex={-1} className="cem-heroi__visita cem-heroi__visita--coruja" aria-label="A coruja: um conceito que cai na prova" onClick={() => tocar('coruja')} style={{ left: pct(VISITA.coruja.x - VISITA.coruja.w / 2, BASE.w), top: pct(VISITA.coruja.y - VISITA.coruja.h, BASE.h), width: pct(VISITA.coruja.w, BASE.w), height: pct(VISITA.coruja.h, BASE.h) }}><CorujaPixel key={visita === 'coruja' ? toques : 'c'} estado={fala && visita === 'coruja' ? 'acenando' : 'parada'} /></button>
         {visita && fala && <span className={`cem-heroi__balao cem-heroi__balao--${visita}`} onClick={() => definirFala(null)}
-          style={visita === 'gato' ? { right: pct(BASE.w - VISITA.gato.x - 6, BASE.w), bottom: pct(BASE.h - VISITA.gato.y + VISITA.gato.h + 2, BASE.h) } : { right: pct(BASE.w - VISITA.coruja.x + 4, BASE.w), top: pct(VISITA.coruja.y + 4, BASE.h) }}>{fala}</span>}
+          style={visita === 'gato' ? { right: pct(BASE.w - VISITA.gato.x - 6, BASE.w), bottom: pct(BASE.h - VISITA.gato.y + VISITA.gato.h + 2, BASE.h) } : { right: pct(BASE.w - VISITA.coruja.x - 6, BASE.w), bottom: pct(BASE.h - VISITA.coruja.y + VISITA.coruja.h + 2, BASE.h) }}>{fala}</span>}
         <img className="cem-heroi__camada cem-heroi__luz" src={img('salao-luz.webp')} alt="" width={1440} height={810} decoding="async" draggable={false} />
         <span className="cem-heroi__poeira">{POEIRA.map((p, i) => <i key={i} style={{ left: pct(p.x, BASE.w), top: pct(p.y, BASE.h), animationDuration: `${p.d}s`, animationDelay: `${p.a}s` }} />)}</span>
         <img className="cem-heroi__camada" src={img('salao-frente.webp')} alt="" width={1440} height={810} decoding="async" draggable={false} />

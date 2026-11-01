@@ -390,10 +390,7 @@
 .hd-gato--andando .hd-gato__sprite { animation-duration: 0.7s; }
 /* O balão do gato abre para o lado livre da cena (nunca por baixo da caixa da missão). */
 .hd-balao--direita, .hd-balao--esquerda { animation: hd-balao-surge 0.25s steps(3); }
-.hd-balao--direita { transform: translate(-8%, -100%); }
-.hd-balao--direita::after { left: 8%; }
-.hd-balao--esquerda { transform: translate(-92%, -100%); }
-.hd-balao--esquerda::after { left: 92%; }
+/* O lado e a ponta do balão vêm de encaixarBalao (CenaDiorama.tsx), pelo translate e por --cauda-x. */
 @keyframes hd-balao-surge { from { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .hd-gato--andando { transition: none; } }
 
@@ -606,3 +603,8 @@
 @media (min-width: 75.01rem) { .jn-heroi--vitrine .hd-palco { left: 43%; } .jn-heroi--vitrine:has(.ip-amostra--respondida) .hd-palco { left: 36%; } }
 .hd-mascote[data-lado="oculto"] .mascote__balao { visibility: hidden; }
 .hd-gato--fora { visibility: hidden; pointer-events: none; }
+
+/* A saudação ocupa a faixa inteira da cena no celular: ela deixa o toque passar para o gato e a coruja (só os botões
+   e links dela recebem o toque). */
+.jn-saudacao { pointer-events: none; }
+.jn-saudacao :is(a, button, input, select, summary, label) { pointer-events: auto; }

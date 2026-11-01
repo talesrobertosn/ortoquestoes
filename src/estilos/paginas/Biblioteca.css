@@ -56,7 +56,9 @@ button.bb-obj:disabled { cursor: default; }
 .bb-arandela { transform: translate(-50%, 0); line-height: 0; }
 .bb-arandela__luz { position: absolute; left: 50%; top: 40%; width: calc(var(--e) * 34); height: calc(var(--e) * 34); transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none;
   background: radial-gradient(circle, rgba(255, 200, 110, 0.5) 0%, rgba(255, 170, 70, 0.18) 38%, transparent 68%); mix-blend-mode: screen; opacity: 0; transition: opacity 0.35s; }
-.bb-arandela--acesa .bb-arandela__luz { opacity: 1; animation: bb-chama 2.6s ease-in-out infinite; }
+.bb-arandela--acesa .bb-arandela__luz { opacity: 1; animation: bb-chama-calma 7s ease-in-out infinite; }
+/* A luz das arandelas só treme de leve (01/11/2026, pedido do Tales: "se mexa menos"), sem mudar de tamanho. */
+@keyframes bb-chama-calma { 0%, 100% { opacity: 1; } 50% { opacity: 0.92; } }
 @keyframes bb-chama { 0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 45% { opacity: 0.86; transform: translate(-50%, -50%) scale(0.96); } 70% { opacity: 0.95; transform: translate(-50%, -50%) scale(1.03); } }
 
 /* O relógio: aro de madeira, mostrador de marfim, ponteiros de ferro (CSS em blocos, sem anatomia nem curvas finas). */
@@ -70,7 +72,7 @@ button.bb-obj:disabled { cursor: default; }
 
 /* O volume raro na mesa: um brilho que respira (o livro está pintado; a luz é por cima). */
 .bb-raro { width: calc(var(--e) * 14); height: calc(var(--e) * 9); transform: translate(-50%, -50%); border-radius: 40%;
-  background: radial-gradient(ellipse, rgba(140, 240, 220, 0.4), rgba(240, 196, 106, 0.16) 45%, transparent 70%); mix-blend-mode: screen; animation: bb-respira 3.6s ease-in-out infinite; }
+  background: radial-gradient(ellipse, rgba(140, 240, 220, 0.4), rgba(240, 196, 106, 0.16) 45%, transparent 70%); mix-blend-mode: screen; animation: bb-respira 8s ease-in-out infinite; }
 .bb-raro--aceso { animation: bb-raro 1.6s ease-out; }
 @keyframes bb-respira { 50% { opacity: 0.45; } }
 @keyframes bb-raro { 0% { filter: brightness(1); transform: translate(-50%, -50%) scale(1); } 30% { filter: brightness(2.2); transform: translate(-50%, -50%) scale(1.8); } }
@@ -98,10 +100,10 @@ button.bb-obj:disabled { cursor: default; }
 
 .bb-planta { transform: translate(-50%, -100%); line-height: 0; cursor: default; }
 .bb-aboboras { position: absolute; left: 6%; bottom: 3%; display: flex; align-items: flex-end; gap: 4px; }
-.bb-morcegos { position: absolute; left: 50%; top: 8%; display: flex; gap: 2rem; animation: bb-morcego 6s ease-in-out infinite; }
-@keyframes bb-morcego { 50% { transform: translate(-30px, 8px); } }
+.bb-morcegos { position: absolute; left: 50%; top: 8%; display: flex; gap: 2rem; animation: bb-morcego 16s ease-in-out infinite; }
+@keyframes bb-morcego { 50% { transform: translate(-14px, 4px); } }
 .bb-pisca { position: absolute; left: 0; right: 0; top: 2%; display: flex; justify-content: space-around; }
-.bb-pisca i { width: 6px; height: 6px; border-radius: 50%; background: #f6d27a; box-shadow: 0 0 8px #f6d27a; animation: bb-pisca 1.6s steps(2) infinite; }
+.bb-pisca i { width: 6px; height: 6px; border-radius: 50%; background: #f6d27a; box-shadow: 0 0 8px #f6d27a; animation: bb-pisca 5s ease-in-out infinite; }
 .bb-pisca i:nth-child(3n) { background: #e86a5a; box-shadow: 0 0 8px #e86a5a; animation-delay: 0.4s; }
 .bb-pisca i:nth-child(3n+1) { background: #7ed0a0; box-shadow: 0 0 8px #7ed0a0; animation-delay: 0.8s; }
 @keyframes bb-pisca { 50% { opacity: 0.3; } }
@@ -109,11 +111,11 @@ button.bb-obj:disabled { cursor: default; }
 /* Poeira no feixe da janela: poucas, lentas, só dentro da luz. */
 .bb-poeira { position: absolute; left: 37%; top: 22%; width: 27%; height: 72%; pointer-events: none; }
 .bb-poeira i { position: absolute; left: calc(var(--i) * 12%); top: calc(var(--i) * 9% + 6%); width: max(2px, calc(var(--e) * 0.8)); height: max(2px, calc(var(--e) * 0.8)); border-radius: 1px;
-  background: rgba(255, 238, 200, 0.85); opacity: 0; animation: bb-poeira calc(9s + var(--i) * 1.3s) linear calc(var(--i) * -1.7s) infinite; }
+  background: rgba(255, 238, 200, 0.85); opacity: 0; animation: bb-poeira calc(18s + var(--i) * 3s) linear calc(var(--i) * -4.5s) infinite; }
 .bb-salao--noite .bb-poeira i { background: rgba(200, 225, 255, 0.8); }
-@keyframes bb-poeira { 0% { transform: translate(0, 0); opacity: 0; } 15% { opacity: 0.9; } 50% { transform: translate(18px, -14px); opacity: 0.6; } 85% { opacity: 0.85; } 100% { transform: translate(-10px, -34px); opacity: 0; } }
+@keyframes bb-poeira { 0% { transform: translate(0, 0); opacity: 0; } 20% { opacity: 0.7; } 50% { transform: translate(8px, -7px); opacity: 0.5; } 80% { opacity: 0.6; } 100% { transform: translate(-4px, -16px); opacity: 0; } }
 .bb-vagalumes i { position: absolute; left: calc(8% + var(--i) * 6%); top: calc(55% + var(--i) * 5%); width: 3px; height: 3px; border-radius: 50%; background: #e9ff9a; box-shadow: 0 0 8px #d6ff6a;
-  opacity: 0; animation: bb-vaga calc(5s + var(--i) * 0.7s) ease-in-out calc(var(--i) * -0.9s) infinite; }
+  opacity: 0; animation: bb-vaga calc(11s + var(--i) * 2s) ease-in-out calc(var(--i) * -3s) infinite; }
 @keyframes bb-vaga { 0%, 100% { opacity: 0; transform: translate(0, 0); } 40% { opacity: 0.9; } 60% { opacity: 0.5; transform: translate(14px, -18px); } }
 
 /* Lanterna: com as duas arandelas apagadas, o salão escurece e a luz segue o dedo ou o mouse. */
@@ -306,7 +308,7 @@ button.bb-obj:disabled { cursor: default; }
 .bb-vol .bb-gema { margin-top: 6px; }
 .bb-gema--raro { background: #5aa6e6; }
 .bb-gema--epico { background: #b07ae0; }
-.bb-gema--lendario { background: #f6d27a; box-shadow: 0 0 0 1.5px #120b06, 0 0 6px rgba(246, 210, 122, 0.9); animation: bb-gema 2.4s ease-in-out infinite; }
+.bb-gema--lendario { background: #f6d27a; box-shadow: 0 0 0 1.5px #120b06, 0 0 6px rgba(246, 210, 122, 0.9); animation: bb-gema 6s ease-in-out infinite; }
 @keyframes bb-gema { 50% { filter: brightness(1.45); } }
 .bb-vol__fita { position: absolute; right: 7px; top: -9px; width: 7px; height: 22px; background: #c8463a; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%); box-shadow: inset 2px 0 0 rgba(255, 255, 255, 0.25); }
 .bb-vol__selo { position: absolute; left: 50%; bottom: 24px; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff2b8, #e3b04c 55%, #9a6b12);
@@ -333,7 +335,7 @@ button.bb-obj:disabled { cursor: default; }
 .bb-ampulheta { width: 22px; height: 40px; background: linear-gradient(180deg, #6b4426 0 4px, transparent 4px calc(100% - 4px), #6b4426 calc(100% - 4px)),
   conic-gradient(from 180deg at 50% 50%, transparent 0 90deg, rgba(240, 196, 106, 0.85) 90deg 270deg, transparent 270deg); clip-path: polygon(0 0, 100% 0, 60% 50%, 100% 100%, 0 100%, 40% 50%); }
 .bb-vela { width: 12px; height: 30px; border: 2px solid #120b06; background: #f1e3c4; position: relative; }
-.bb-vela::after { content: ""; position: absolute; left: 50%; top: -14px; width: 8px; height: 12px; margin-left: -4px; border-radius: 50% 50% 40% 40%; background: radial-gradient(circle at 50% 70%, #fff3b8, #f08a2a); box-shadow: 0 0 12px rgba(255, 190, 90, 0.8); animation: bb-chama 2s ease-in-out infinite; }
+.bb-vela::after { content: ""; position: absolute; left: 50%; top: -14px; width: 8px; height: 12px; margin-left: -4px; border-radius: 50% 50% 40% 40%; background: radial-gradient(circle at 50% 70%, #fff3b8, #f08a2a); box-shadow: 0 0 12px rgba(255, 190, 90, 0.8); animation: bb-chama 6s ease-in-out infinite; }
 
 /* A ficha curta (passar o mouse). */
 .bb-ficha-curta { position: fixed; z-index: 60; padding: 0.75rem 0.9rem; border-radius: 12px; background: var(--bb-pergaminho); color: var(--bb-tinta);
@@ -565,4 +567,19 @@ button.bb-obj:disabled { cursor: default; }
   .bb *, .bb *::before, .bb *::after { animation: none !important; transition: none !important; }
   .bb-poeira, .bb-vagalumes, .bb-chuva, .bb-gato__zz { display: none; }
   .bb-vol:hover, .bb-vol--ativo, .bb-vol:focus-visible { transform: none; }
+}
+
+/* ── Calma no celular (01/11/2026, Tales: "tudo fica mexendo de maneira muito estranha, dá até tontura") ──
+   Igual à página inicial: a cena fica parada, só os bichos se mexem. Sem poeira, vaga-lumes, morcegos, piscas,
+   chamas tremendo ou brilho pulsando; os livros não pulam ao toque (no celular não existe "passar o mouse"). */
+@media (hover: none), (max-width: 40rem) {
+  .bb-poeira, .bb-vagalumes, .bb-morcegos, .bb-pisca { display: none; }
+  .bb-raro:not(.bb-raro--aceso), .bb-arandela__luz, .bb-gema--lendario, .bb-vela::after, .bb-gato__zz, .bb-insp--lendario .bb-insp__brilho, .bb-vol--alvo { animation: none !important; }
+  .bb-vol, .bb-vol:hover, .bb-vol:focus-visible { transform: none; transition: none; }
+  .bb-vol--ativo { transform: translateY(-6px); }
+}
+/* No celular, a pintura mostra mais da sala (da janela à estante da direita), com a coruja e o gato inteiros. */
+@media (max-width: 40rem) {
+  .bb-palco { aspect-ratio: 16 / 10; }
+  .bb-palco__mundo { width: calc(100% * (1440 / 540) * (10 / 16)); }
 }

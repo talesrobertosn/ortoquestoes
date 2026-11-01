@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
 import { gravar, ler } from '../../estado/armazenamento'
 import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixel'
 import { GatoPixel } from '../mascote/GatoPixel'
@@ -31,6 +32,8 @@ const FALAS = [
   'Dizem que a Biblioteca guarda segredos. O gato sabe de alguns.',
 ]
 
+const CELULAR = '(max-width: 48rem)'
+const noCelular = () => typeof matchMedia !== 'undefined' && matchMedia(CELULAR).matches
 const semMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
 const forcado = () => { try { return sessionStorage.getItem('portal:forcar') ?? '' } catch { return '' } }
 
@@ -44,6 +47,17 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
   const depois = (f: () => void, ms: number) => { relogios.current.push(window.setTimeout(f, ms)) }
   useEffect(() => () => relogios.current.forEach((t) => window.clearTimeout(t)), [])
   const falas = useRef(0)
+  // No celular não há canto livre sobre o menu: a fala vai para a faixa abaixo da busca (Portal.tsx), no fluxo.
+  const [celular, definirCelular] = useState(noCelular)
+  useEffect(() => {
+    if (typeof matchMedia === 'undefined') return
+    const m = matchMedia(CELULAR), mudou = () => definirCelular(m.matches)
+    m.addEventListener('change', mudou); return () => m.removeEventListener('change', mudou)
+  }, [])
+  const naFaixa = (no: ReactNode) => {
+    const faixa = celular && typeof document !== 'undefined' ? document.getElementById('pt-fala-faixa') : null
+    return faixa ? createPortal(no, faixa) : no
+  }
 
   // A coruja: decide na abertura.
   useEffect(() => {
@@ -55,8 +69,11 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     depois(() => definirEstadoCoruja('olhando'), 4600)
     depois(() => definirEstadoCoruja('lendo'), 7600)
     depois(() => definirEstadoCoruja('repouso'), 12600)
-    depois(() => { definirCoruja((c) => (c === 'pousada' ? 'saindo' : c)); definirEstadoCoruja('voando') }, 17000)
-    depois(() => definirCoruja((c) => (c === 'saindo' ? 'longe' : c)), 18200)
+    // Ela fica (desde 01/11/2026, "que apareça mais vezes"): segue a rotina enquanto o menu está aberto.
+    const ciclo: EstadoCoruja[] = ['olhando', 'repouso', 'lendo', 'repouso', 'acenando', 'repouso']
+    let n = 0
+    const vez = window.setInterval(() => { if (!document.hidden) definirEstadoCoruja((e) => (e === 'piando' ? e : ciclo[n++ % ciclo.length])) }, 5200)
+    return () => window.clearInterval(vez)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   // O gato: depois de 1 s sem mexer no menu.
@@ -67,19 +84,23 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     const armar = () => {
       window.clearTimeout(parado)
       parado = window.setTimeout(() => {
+        if (digitandoRef.current) return
         definirGato((g) => (g === 'longe' ? 'andando' : g))
         depois(() => definirGato((g) => (g === 'andando' ? 'sentado' : g)), 5200)
         depois(() => definirGato((g) => (g === 'sentado' ? 'espreguicando' : g)), 11000)
-        depois(() => definirGato((g) => (g === 'espreguicando' ? 'dormindo' : g)), 13500)
-      }, f ? 400 : 1000)
+        depois(() => definirGato((g) => (g === 'espreguicando' ? 'dormindo' : g)), 12800)
+      }, f ? 300 : 600)
     }
     armar()
-    const mexeu = () => { if (gatoRef.current === 'longe') armar() }
+    // Enquanto a pessoa digita na busca, o gato não volta (ele só reaparece quando a busca esvazia).
+    const mexeu = () => { if (gatoRef.current === 'longe' && !digitandoRef.current) armar() }
     window.addEventListener('pointermove', mexeu, { passive: true })
     window.addEventListener('keydown', mexeu)
     return () => { window.clearTimeout(parado); window.removeEventListener('pointermove', mexeu); window.removeEventListener('keydown', mexeu) }
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
   const gatoRef = useRef(gato)
+  const digitandoRef = useRef(digitando)
+  digitandoRef.current = digitando
   gatoRef.current = gato
 
   // Digitar na busca: os visitantes saem de cena (não atrapalham quem procura).
@@ -105,8 +126,10 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     definirGato('reagindo')
     const texto = proximaFala('gato', FALAS_GATO)
     definirMiau(texto)
-    depois(() => definirMiau((m) => (m === texto ? null : m)), 4200)
-    depois(() => definirGato('dormindo'), 4400)
+    depois(() => definirMiau((m) => (m === texto ? null : m)), 5500)
+    // Depois de falar, fica sentado acordado um tempo e só então volta a dormir (sem deitar e levantar em seguida).
+    depois(() => definirGato((g) => (g === 'reagindo' ? 'sentado' : g)), 1600)
+    depois(() => definirGato((g) => (g === 'sentado' ? 'dormindo' : g)), 14000)
   }
   // Se a coruja pousa com o gato acordado, ele olha para cima (o encontro dos dois).
   const linhaGato: IdLinhaGato = gato === 'andando' ? 'andando'
@@ -118,7 +141,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     <>
       {coruja !== 'longe' && (
         <div className={`pt-coruja pt-coruja--${coruja}`}>
-          {fala && <p className="pt-coruja__fala" role="status" onClick={() => definirFala(null)}>{fala}</p>}
+          {fala && naFaixa(<p className="pt-coruja__fala" role="status" onClick={() => definirFala(null)}>{celular && <b>Coruja: </b>}{fala}</p>)}
           <button type="button" className="pt-coruja__botao" onClick={tocarCoruja} aria-label="A coruja bibliotecária: um conceito que cai na prova">
             <CorujaPixel estado={estadoCoruja} />
           </button>
@@ -126,7 +149,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
       )}
       {gato !== 'longe' && (
         <div className={`pt-gato pt-gato--${gato}`}>
-          {miau && <span className="pt-gato__miau" role="status">{miau}</span>}
+          {miau && naFaixa(<span className="pt-gato__miau" role="status" onClick={() => definirMiau(null)}>{celular && <b>Gato: </b>}{miau}</span>)}
           <button type="button" className="pt-gato__botao" onClick={tocarGato} aria-label="O gato do OrtoQuestões: tocar">
             <GatoPixel estado={linhaGato} />
           </button>

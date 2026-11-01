@@ -14,6 +14,7 @@ import { IconePixel } from './IconePixel'
 import { GRUPOS, PRINCIPAIS, SO_NA_BUSCA, grupoConta, type Pagina } from './rotas'
 import { Visitantes } from './Visitantes'
 import { FogoVivo } from './FogoVivo'
+import { FogueiraDoMenu } from './FogueiraDoMenu'
 import '../../estilos/componentes/Portal.css'
 
 /**
@@ -42,11 +43,13 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
     <>
     <header className="pt-cabeca">
       <div className="pt-cabeca__linha">
-        <p className="pt-cabeca__marca"><span className="pt-cabeca__selo" aria-hidden="true" /><span><small>Portal do aventureiro</small><strong id="pt-titulo">Menu</strong></span></p>
+        <FogueiraDoMenu nome={String(sessao?.user.user_metadata?.nome ?? '')} logado={!!sessao} />
         <button type="button" className="pt-fechar" onClick={aoFechar} aria-label="Fechar o menu"><Icone nome="fechar" tamanho={20} /></button>
       </div>
       <BuscaPortal paginas={paginasBusca} aoIr={aoFechar} focar={!!focarBusca} aoDigitar={definirDigitando} />
     </header>
+    {/* No celular, as falas da coruja e do gato entram aqui, no fluxo: empurram o conteúdo em vez de cobri-lo. */}
+    <div className="pt-fala-faixa" id="pt-fala-faixa" />
     <div className={'pt-corpo' + (digitando ? ' pt-corpo--buscando' : '')}>
 
       <ContinuarJornada premium={premium} aoIr={aoFechar} />
