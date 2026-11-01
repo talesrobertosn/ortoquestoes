@@ -206,7 +206,7 @@ referência). A página inteira é um "mundo" escuro: no topo, o cenário pintad
 }
 
 @media (prefers-reduced-motion: reduce) {
-.hd-fogo, .hd-luz-fogo, .hd-brasas i, .hd-particulas i, .hd-cristal::after, .hd-estandarte__trofeu, .hd-balao { animation: none; }
+.hd-fogo, .hd-luz-fogo, .hd-brasas i, .hd-particulas i, .hd-cristal::after, .hd-estandarte__trofeu, .hd-balao, .hd-espada::before, .hd-espada::after { animation: none; }
 .hd-brasas, .hd-particulas { display: none; }
 .hd-palco, .hd-losango__pedra { transition: none; }
 }
@@ -350,6 +350,25 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
   filter: drop-shadow(0 0 3px rgba(255, 150, 60, 0.55)); }
 .hd-espada--apagada { filter: brightness(0.6) saturate(0.4); }
 .hd-palco--noite .hd-espada:not(.hd-espada--apagada) { filter: drop-shadow(0 0 4px rgba(255, 140, 50, 0.7)) brightness(0.95); }
+/* A luz da fogueira na lâmina (01/11/2026): duas camadas recortadas pelo próprio desenho da espada (mask), então a luz
+   só pinta o aço. ::before é a luz que vem de baixo, mais quente perto do carvão, tremulando no ritmo da chama, com um
+   reflexo que sobe pela aresta; ::after é a brasa do terço de baixo, respirando. A chama da frente passa por cima. */
+.hd-espada::before, .hd-espada::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  -webkit-mask: var(--sprite-espada) center / 100% 100% no-repeat; mask: var(--sprite-espada) center / 100% 100% no-repeat; }
+.hd-espada::before { mix-blend-mode: screen;
+  background: linear-gradient(180deg, transparent 6%, rgba(255, 236, 200, 0.85) 9%, transparent 12%) 0 140% / 100% 260% no-repeat,
+    linear-gradient(0deg, rgba(255, 150, 50, 0.95) 0%, rgba(255, 170, 70, 0.6) 30%, rgba(255, 190, 110, 0.25) 62%, rgba(255, 200, 140, 0.08) 100%);
+  animation: hd-espada-luz 2.4s ease-in-out infinite, hd-espada-reflexo 5.5s ease-in-out infinite; }
+.hd-espada::after { mix-blend-mode: screen; background: linear-gradient(0deg, rgba(255, 90, 30, 0.95) 0%, rgba(255, 140, 40, 0.7) 22%, transparent 42%);
+  animation: hd-espada-brasa 3.2s ease-in-out infinite; }
+@keyframes hd-espada-luz { 0%, 100% { opacity: 0.75; } 18% { opacity: 1; } 40% { opacity: 0.68; } 63% { opacity: 0.95; } 82% { opacity: 0.8; } }
+@keyframes hd-espada-reflexo { 0%, 55% { background-position: 0 140%, 0 0; } 100% { background-position: 0 -40%, 0 0; } }
+@keyframes hd-espada-brasa { 0%, 100% { opacity: 0.55; filter: none; } 50% { opacity: 1; } }
+.hd-palco--manha .hd-espada::before { opacity: 0.55; }
+.hd-palco--noite .hd-espada::before { animation-duration: 2.4s, 4.5s; }
+.hd-espada--apagada::before, .hd-espada--apagada::after { display: none; }
+/* A chama da frente: só a metade de baixo do fogo, um pouco menor e fora de compasso, lambendo a base da lâmina. */
+.hd-fogo--frente { clip-path: inset(48% 0 0 0); opacity: 0.88; animation-delay: -0.37s; filter: drop-shadow(0 0 6px rgba(255, 170, 70, 0.6)); }
 
 /* As partículas de cada cenário (cenarios.ts): vaga-lumes no acampamento e no cais, faíscas na forja, neve caindo no
    refúgio e estrelas piscando no observatório. */

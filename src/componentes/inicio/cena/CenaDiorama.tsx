@@ -388,7 +388,10 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
         <span className={`hd-fogo hd-fogo--${linhaFogo}`} style={{ ...lugar(220, 104, 40, 48), '--linha': linhaFogo } as CSSProperties} />
         {/* O easter egg: a espada fincada na fogueira (scripts/sprites/espada_fogueira.py), com a chama dos dois lados. */}
         {cenario.espada && <span className={`hd-espada${linhaFogo === 0 ? ' hd-espada--apagada' : ''}`} style={{ ...lugar(234, 109, 12, 40), '--sprite-espada': urlCss('pixel/inicio/espada.png') } as CSSProperties} />}
-        {linhaFogo > 0 && <span className="hd-brasas" style={lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
+        {/* Fogo e espada juntos (01/11/2026, "tipo Dark Souls"): uma segunda chama, só a parte de baixo, passa na frente
+            da lâmina; a luz da fogueira e a brasa ficam recortadas no desenho da espada (InicioHd.css, .hd-espada). */}
+        {cenario.espada && linhaFogo > 0 && <span className={`hd-fogo hd-fogo--${linhaFogo} hd-fogo--frente`} style={{ ...lugar(222, 106, 36, 44), '--linha': linhaFogo } as CSSProperties} />}
+        {linhaFogo > 0 && <span className="hd-brasas" style={cenario.espada ? lugar(233, 90, 14, 36) : lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
         {/* O mascote, em pé ao lado da fogueira: um comportamento diferente a cada visita (componentes/mascote). */}
         {descanso
           ? <Mascote key="descanso" className="hd-mascote" comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={lugar(262, 96, 46, 66.7)} />

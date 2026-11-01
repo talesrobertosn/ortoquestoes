@@ -1,5 +1,5 @@
-import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
-import { FLASHCARDS_NO_MENU, fraseGratis } from '../config'
+import { type CSSProperties, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { FLASHCARDS_NO_MENU, fraseGratis, recurso } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
@@ -29,6 +29,11 @@ import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { confirmar, pedirTexto } from '../componentes/Confirmar'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { Painel } from '../componentes/Painel'
+import { HeroiJornada } from '../componentes/inicio/jornada/Jornada'
+import { GatoPixel } from '../componentes/mascote/GatoPixel'
+import { EVENTO_AMOSTRA } from '../componentes/inicio/AmostraRespondivel'
+import '../estilos/paginas/InicioJornada.css'
+import '../estilos/paginas/InicioHd.css'
 import '../estilos/paginas/Treinar.css'
 
 // TEOT e TARO vêm primeiro, cada um na sua pílula. "Ortopedia" (antes "TEOT/TARO", troca pedida
@@ -91,6 +96,7 @@ const DURACOES: Array<[number, string]> = [
 ]
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
+  usarSegredoOsso()
   const cronograma = usarCronogramaHoje()
   const { indice, carregando } = usarIndice()
   const { iniciarComAviso } = usarSessao()
@@ -238,11 +244,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }, [contexto.respondidas])
 
   const primeiroNome = String(conta?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
-  const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; preset: Partial<Filtros> }[] = [
-    { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, preset: { situacao: 'revisarHoje' } },
-    { titulo: 'Novas', icone: 'alvo', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
-    { titulo: 'Que errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, preset: { situacao: 'erradas' } },
-    { titulo: 'Favoritas', icone: 'estrela', quantidade: gerais?.porSituacao.favoritas ?? 0, preset: { situacao: 'favoritas' } },
+  // pixel: o ícone de inventário (public/pixel, scripts/gerar_icones_pixel.py), o mesmo traço da barra da página inicial.
+  const rapidas: { titulo: string; icone: NomeIcone; pixel: string; quantidade: number; preset: Partial<Filtros> }[] = [
+    { titulo: 'Revisar hoje', icone: 'calendario', pixel: 'revisao', quantidade: gerais?.porSituacao.revisarHoje ?? 0, preset: { situacao: 'revisarHoje' } },
+    { titulo: 'Novas', icone: 'alvo', pixel: 'planos', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
+    { titulo: 'Que errei', icone: 'reiniciar', pixel: 'erros', quantidade: gerais?.porSituacao.erradas ?? 0, preset: { situacao: 'erradas' } },
+    { titulo: 'Favoritas', icone: 'estrela', pixel: 'treinar', quantidade: gerais?.porSituacao.favoritas ?? 0, preset: { situacao: 'favoritas' } },
   ]
   const [filtrosProvaAbertos, definirFiltrosProvaAbertos] = useState(
     () => filtros.provas.length + filtros.anos.length + filtros.dificuldades.length > 0 || filtros.soSimulados,
@@ -454,31 +461,43 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   return (
     <div className="tn treinar-pagina">
-      <section className="tn-heroi" aria-labelledby="tn-titulo">
-        <div className="tn-heroi__texto">
-          <p className="tr-heroi__selo">Montar sessão</p>
-          <h1 id="tn-titulo">Treinar</h1>
-          <p>{fraseTreinar(primeiroNome, Object.keys(contexto.respondidas).length, desempenhoAnterior, gerais?.porSituacao.revisarHoje ?? 0)}</p>
-          <a className="tr-heroi__link" href={href('/cronograma')}>
-            <Icone nome="rota" tamanho={15} />
-            {cronograma.calculo?.hoje ? <>Hoje no cronograma: {cronograma.calculo.hoje.nome} · {cronograma.calculo.feitasHoje} de {cronograma.calculo.metaDiaria}</> : 'Prefere um plano pronto? Use o cronograma'}
-          </a>
-          {FLASHCARDS_NO_MENU && <a className="tr-heroi__link tn-heroi__link2" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={15} /> Estudar flashcards</a>}
-        </div>
-        <button type="button" className="botao tn-heroi__rapida" onClick={() => sessaoRapida()} disabled={!indice}>
-          <Icone nome="raio" tamanho={20} />
-          <span><strong>Sessão rápida</strong><small>10 questões de todo o acervo</small></span>
-        </button>
-        <div className="tn-heroi__atalhos" role="group" aria-label="Começar com 10">
-          {rapidas.map((r) => (
-            <button key={r.titulo} type="button" className="tn-vidro" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}>
-              <Icone nome={r.icone} tamanho={16} />
-              <span>{r.titulo}</span>
-              <b className="tn-num">{r.quantidade.toLocaleString('pt-BR')}</b>
-            </button>
-          ))}
-        </div>
-      </section>
+      {/* O topo é o mesmo acampamento da página inicial (pedido do Tales, 01/11/2026: "usa o herói nesse treinar"):
+          a sessão rápida pousa no chão como a missão do dia, e os quatro atalhos de 10 viram os espaços de inventário. */}
+      <div className="hd jn tn-topo">
+        <HeroiJornada
+          data="Montar sessão"
+          titulo="Treinar"
+          lide={fraseTreinar(primeiroNome, Object.keys(contexto.respondidas).length, desempenhoAnterior, gerais?.porSituacao.revisarHoje ?? 0)}
+          linhaFogo={3}
+          missao={<>
+            <p className="jn-missao__selo">Comece agora</p>
+            <h2 className="jn-missao__titulo">Sessão rápida</h2>
+            <p className="jn-missao__detalhe">10 questões de todo o acervo, revisões e novas intercaladas. Ou monte a sua logo abaixo.</p>
+          </>}
+          botao={<button type="button" className="jn-cristal" onClick={() => sessaoRapida()} disabled={!indice}><Icone nome="raio" tamanho={20} /> Começar 10</button>}
+          depois={<span className="tn-topo__links">
+            <a className="jn-depois" href={href('/cronograma')}>
+              <Icone nome="rota" tamanho={14} />
+              {cronograma.calculo?.hoje ? <>Hoje no cronograma: {cronograma.calculo.hoje.nome} · {cronograma.calculo.feitasHoje} de {cronograma.calculo.metaDiaria}</> : 'Prefere um plano pronto? Use o cronograma'}
+              <Icone nome="direita" tamanho={13} />
+            </a>
+            {FLASHCARDS_NO_MENU && <a className="jn-depois tn-heroi__link2" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={14} /> Estudar flashcards <Icone nome="direita" tamanho={13} /></a>}
+          </span>}
+        />
+        <nav className="jn-atalhos tn-atalhos" aria-label="Começar com 10" style={{ '--colunas': 4 } as CSSProperties}>
+          <ul>
+            {rapidas.map((r) => (
+              <li key={r.titulo}>
+                <button type="button" className="jn-atalho" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}>
+                  <span className="jn-atalho__icone" aria-hidden="true"><img src={recurso(`pixel/${r.pixel}.png`)} width={40} height={40} alt="" decoding="async" /></span>
+                  <span className="jn-atalho__nome">{r.titulo}</span>
+                  <small className="jn-atalho__texto"><b className="tn-num">{r.quantidade.toLocaleString('pt-BR')}</b> {r.quantidade === 1 ? 'questão' : 'questões'} · começar 10</small>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
 
       {salvos.length > 0 && (
         <section className="tn-salvos" aria-labelledby="tn-salvos-titulo">
@@ -512,6 +531,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   <h2 id="tn-prova-titulo">Para qual prova</h2>
                   <p>Os OrtoQuestões Simulados da prova escolhida já entram misturados com as questões oficiais.</p>
                 </div>
+                <img className="tn-bloco__pixel" src={recurso('pixel/simulado.png')} width={48} height={48} alt="" aria-hidden="true" loading="lazy" decoding="async" />
               </header>
               <div className="tn-provas" role="radiogroup" aria-labelledby="tn-prova-titulo">
                 {porArea.map(({ area, n }) => (
@@ -557,6 +577,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                 <h2 id="tn-assunto-titulo">Assunto</h2>
                 <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'escolhido' : 'escolhidos'}. Toque de novo para desmarcar.` : 'Sem marcar nenhum, entram todos. Abra um tema para escolher subtemas.'}</p>
               </div>
+              <img className="tn-bloco__pixel" src={recurso('pixel/atlas.png')} width={48} height={48} alt="" aria-hidden="true" loading="lazy" decoding="async" />
             </header>
             {/* Duas buscas diferentes, com nomes diferentes: esta procura no texto das questões; a do seletor, abaixo,
                 só acha assuntos pelo nome. */}
@@ -592,6 +613,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                 <h2 id="tn-quais-titulo">Quais questões</h2>
                 <p>{DESCRICAO_SITUACAO[filtros.situacao]}</p>
               </div>
+              <img className="tn-bloco__pixel" src={recurso('pixel/ciclo.png')} width={48} height={48} alt="" aria-hidden="true" loading="lazy" decoding="async" />
             </header>
             <div className="tr-pilulas" id="filtro-situacao">
               {situacoesVisiveis.map((situacao) => (
@@ -720,6 +742,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
         <aside className="tn-resumo" id="tn-resumo" aria-labelledby="tn-resumo-titulo">
           <div className="tn-bilhete">
+            {/* O gato da vila sentado na beira do bilhete (só desenho). */}
+            <GatoPixel estado="sentado" className="tn-bilhete__gato" />
             <header className="tn-bilhete__cabeca">
               <p className="tr-heroi__selo" id="tn-resumo-titulo">Sua sessão</p>
               <p className="tn-bilhete__total"><strong className="tn-num">{total === 0 ? 0 : quantidadeSessao}</strong> {quantidadeSessao === 1 ? 'questão' : 'questões'}</p>
@@ -805,4 +829,22 @@ function fraseTreinar(nome: string, respondidas: number, acerto: number | null, 
   if (respondidas >= 10 && acerto !== null && acerto >= 50) return `${abertura}você já respondeu ${respondidas.toLocaleString('pt-BR')} questões e acerta ${acerto}%. Bora para a próxima sessão?`
   if (respondidas >= 10) return `${abertura}você já respondeu ${respondidas.toLocaleString('pt-BR')} questões. Cada uma deixa a próxima mais fácil.`
   return nome ? `${nome}, escolha a prova, o assunto e quais questões. Ou comece agora com 10.` : 'Escolha a prova, o assunto e quais questões. Ou comece agora com 10.'
+}
+
+/**
+ * O segredo do Treinar (01/11/2026): digitar "osso" fora de qualquer campo faz o acampamento comemorar, o esqueleto
+ * pula e o gato festeja. Usa o mesmo aviso da questão de amostra acertada (a cena já sabe reagir a ele).
+ */
+function usarSegredoOsso() {
+  useEffect(() => {
+    let buffer = ''
+    const tecla = (e: KeyboardEvent) => {
+      const alvo = e.target as HTMLElement | null
+      if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1 || alvo?.closest('input, textarea, select, [contenteditable="true"]')) return
+      buffer = (buffer + e.key.toLowerCase()).slice(-4)
+      if (buffer === 'osso') { buffer = ''; window.dispatchEvent(new CustomEvent(EVENTO_AMOSTRA, { detail: { acertou: true } })) }
+    }
+    window.addEventListener('keydown', tecla)
+    return () => window.removeEventListener('keydown', tecla)
+  }, [])
 }
