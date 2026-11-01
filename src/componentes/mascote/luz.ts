@@ -14,7 +14,7 @@ import './Luz.css'
 /** Uma luz da cena, em pixels da arte. `alcance` é até onde ela ainda acende alguma coisa. */
 export type Luz = { x: number; y: number; forca: number; alcance: number; tipo?: 'fogo' | 'sol' | 'lua' | 'azul' | 'arcana' }
 
-const COM_MAPA = /(esqueleto|esqueleto-poses|esqueleto-poses2|esqueleto-acesso|gato-fofo|coruja-nova)\.png/
+const COM_MAPA = /(esqueleto|esqueleto-poses|esqueleto-poses2|esqueleto-poses3|esqueleto-acesso|gato-fofo|coruja-nova)\.png/
 
 /** As variáveis com os quatro mapas de luz de uma folha (vazio se a folha ainda não tem mapa). */
 export function mapasDeLuz(src: string): CSSProperties {

@@ -9,7 +9,7 @@ verdes com pupila escura e brilho branco, nariz rosa pequeno, boquinha em "w", o
 peito, patas e ponta da cauda creme, três listras na testa e listras no dorso e na cauda. Olha para a DIREITA.
 
 Gera:
-- public/pixel/mascote/gato-fofo.png: quadros de 64 x 48, 6 por linha, 14 linhas (ordem em LINHAS);
+- public/pixel/mascote/gato-fofo.png: quadros de 64 x 48, 6 por linha, 19 linhas (ordem em LINHAS; linhas novas só no fim);
   pés no chão na linha y = 45 (contorno de baixo), corpo centrado em x = 32;
 - public/eventos/gato.png: retrato 128 x 128 (arte 32 x 32 ampliada 4x);
 - public/flashcards/vfx/gato-dorme.png, gato-acorda.png, gato-feliz.png: 240 x 30 (6 quadros de 40 x 30).
@@ -480,6 +480,9 @@ BOCAS = {
     "aberta_p": [".M.", "MRM", ".M."],
     "bocejo": [".MMM.", "MRRRM", "MRRRM", "MRTRM", ".MMM."],
     "feliz": ["M...M", ".MMM.", ".MTM."],
+    "lambe": ["M..M", ".MTT", "..TT"],     # língua de fora, para o lado da pata
+    "chiado": ["MMMMM", "MRTRM", ".MMM."],   # chiando de susto (boca larga)
+    "blep": ["M..M", ".MM.", ".T.."],     # pontinha da língua (derretido)
     "nada": ["."],
 }
 NARIZ = {"g": ["NN", ".n"], "p": ["N"]}
@@ -521,11 +524,12 @@ def _molde_olho(est: Estilo, tipo: str, olhar=(0, 0), pequeno=False, direito=Fal
 
 # ═══════════════════════════════ partes do corpo ═══════════════════════════════
 def cabeca(t: Tela, xf: Xf, olhos="aberto", olhar=(0.0, 0.0), boca="w", orelhas=(0.0, 0.0), vira=0.0,
-           est: Estilo | None = None, pequeno=None, luz=0.0, linha=True, piscar_um=None):
+           est: Estilo | None = None, pequeno=None, luz=0.0, linha=True, piscar_um=None, invertido=False):
     """Cabeça com expressão. xf: sistema com origem no centro da cabeça (use xf.ang para inclinar).
     olhos: aberto | meio | fechado | feliz ; olhar: (dx, dy) de -1 a 1 ; boca: chave de BOCAS ;
     orelhas: giro extra (graus) de cada orelha (esquerda, direita da imagem; + para trás) ;
-    vira: -1..1 move o rosto para a esquerda/direita (virar a cabeça). Devolve o grupo."""
+    vira: -1..1 move o rosto para a esquerda/direita (virar a cabeça) ; invertido: gira os moldes do rosto 180 graus
+    (cabeça de ponta-cabeça, gato de barriga para cima). Devolve o grupo."""
     est = est or ESTILO
     pequeno = xf.s < 0.8 if pequeno is None else pequeno
     g = t.grupo(linha)
@@ -585,15 +589,24 @@ def cabeca(t: Tela, xf: Xf, olhos="aberto", olhar=(0.0, 0.0), boca="w", orelhas=
         if piscar_um is not None and lado == piscar_um:
             tipo = "fechado"
         ol = (olhar[0] * sx, olhar[1])
-        t.molde(_molde_olho(est, tipo, ol, pequeno, direito=(lado > 0) != xf.espelho), c[0], c[1])
+        mo = _molde_olho(est, tipo, ol, pequeno, direito=(lado > 0) != xf.espelho)
+        t.molde(_gira180(mo) if invertido else mo, c[0], c[1])
     cn = xf((fx, est.nariz_dy))
-    t.molde(NARIZ["p" if pequeno else "g"], cn[0], cn[1] - 0.5)
+    mn = NARIZ["p" if pequeno else "g"]
+    t.molde(_gira180(mn) if invertido else mn, cn[0], cn[1] + (0.5 if invertido else -0.5))
     if boca != "nada":
         chave = boca + ("_p" if pequeno and boca + "_p" in BOCAS else "")
         mb = BOCAS[chave]
         cb = xf((fx, est.nariz_dy + (1.2 if pequeno else 1.4)))
-        t.molde(mb, cb[0], cb[1] + len(mb) / 2 - 0.5)
+        if invertido:
+            t.molde(_gira180(mb), cb[0], cb[1] - len(mb) / 2 + 0.5)
+        else:
+            t.molde(mb, cb[0], cb[1] + len(mb) / 2 - 0.5)
     return g
+
+
+def _gira180(m):
+    return [l[::-1] for l in m[::-1]]
 
 
 def cauda(t: Tela, pts, r0=2.5, r1=1.8, luz=0.0, listras=(0.3, 0.52, 0.72), ponta=True, linha=True, s=1.0):
@@ -697,6 +710,8 @@ class Pose:
     # patas dianteiras: deslocamento do pé (dx, dy) de cada uma (perto, longe)
     pata_perto: tuple = (0.0, 0.0)
     pata_longe: tuple = (0.0, 0.0)
+    pata_cotovelo: tuple | None = None # cotovelo da pata de perto (local do corpo), para dobrar o braço
+    pata_na_frente: bool = False       # pata de perto pintada por cima da cabeça (lamber, coçar a orelha)
     tala: bool = False
     # quadrúpede
     quadril: tuple = (-7.5, -12.5)
@@ -735,13 +750,19 @@ def corpo_sentado(t: Tela, x0: float, p: Pose, s=1.0, sombra=True, est: Estilo |
     t.decal(capsula(xc((-8.8, -6.0)), xc((-6.4, -3.8)), xf.r(0.6)))
     t.pinta(elipse(xf((-2.0, -1.3)), xf.r(3.5), xf.r(1.55), achata=0.7), "creme", gc, luz=0.05)
     # pata da frente de perto
-    perna(t, xc((2.4, -10.0)), xf((4.2 + p.pata_perto[0], -1.4 + p.pata_perto[1])), xf.r(2.25), luz=0.02, linha=True,
-          pata_rx=xf.r(2.5), pata_ry=xf.r(1.5), tala=p.tala)
+    def pata_de_perto():
+        perna(t, xc((2.4, -10.0)), xf((4.2 + p.pata_perto[0], -1.4 + p.pata_perto[1])), xf.r(2.25), luz=0.02, linha=True,
+              pata_rx=xf.r(2.5), pata_ry=xf.r(1.5), tala=p.tala,
+              joelho=None if p.pata_cotovelo is None else xc(p.pata_cotovelo))
+    if not p.pata_na_frente:
+        pata_de_perto()
     if p.cauda_frente:
         cauda(t, [xf(q) for q in p.cauda], xf.r(2.0), xf.r(1.7), s=s, listras=(0.25, 0.5))
     # cabeça
     xh = xc.filho(p.cab, p.cab_ang)
     cabeca(t, xh, p.olhos, p.olhar, p.boca, p.orelhas, p.vira, est=est, piscar_um=p.piscar_um, luz=p.luz)
+    if p.pata_na_frente:
+        pata_de_perto()
     if p.rim:
         t.rim = (1, hx("#ffe28c"), 0.75)
 
@@ -1067,12 +1088,269 @@ def gato_olhando_cima(t, k):
     corpo_sentado(t, X0, p)
 
 
+# ═══════════════════════════════ terceira leva (01/11/2026): lamber, caçar, bote, derretido, susto ═══════════════════════════════
+class XfPivo(Xf):
+    """Sistema local girado em volta de um ponto local `pivo` (o meio do corpo), para o gato girar no ar."""
+
+    def __init__(self, base: Xf, pivo, ang=0.0):
+        x, y = base(pivo)
+        super().__init__(x, y, base.s, base.ang + ang, base.espelho)
+        self.pivo = pivo
+
+    def __call__(self, p):
+        return super().__call__((p[0] - self.pivo[0], p[1] - self.pivo[1]))
+
+
+def _espinhos(t: Tela, g, pts, raio, comp=2.0, passo=2.6, lado=1, fase=0.0, base=1.5, mat="pelo", luz=0.0):
+    """Tufos de pelo eriçado: triângulos ao longo do caminho `pts` (quadro), para o lado `lado` da normal
+    (+1 = esquerda de quem anda pelo caminho; para um caminho da cauda para a cabeça, é para cima)."""
+    P = _suave(pts, 6)
+    seg = [0.0]
+    for a, b in zip(P, P[1:]):
+        seg.append(seg[-1] + math.dist(a, b))
+    tot = seg[-1]
+    n = max(2, int(tot / passo))
+    for i in range(n + 1):
+        alvo = tot * i / n
+        j = next((j for j in range(1, len(seg)) if seg[j] >= alvo), len(seg) - 1)
+        u = (alvo - seg[j - 1]) / max(seg[j] - seg[j - 1], 1e-9)
+        a, b = P[j - 1], P[j]
+        c = (a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u)
+        d = (b[0] - a[0], b[1] - a[1])
+        L = math.hypot(*d) or 1
+        tx, ty = d[0] / L, d[1] / L
+        nx, ny = ty * lado, -tx * lado
+        r = raio(i / n) if callable(raio) else raio
+        cc = comp * (0.75 + 0.35 * math.sin(i * 2.4 + fase))
+        p0 = (c[0] + nx * (r - 1.2) - tx * base, c[1] + ny * (r - 1.2) - ty * base)
+        p1 = (c[0] + nx * (r - 1.2) + tx * base, c[1] + ny * (r - 1.2) + ty * base)
+        ap = (c[0] + nx * (r + cc) + tx * 0.6, c[1] + ny * (r + cc) + ty * 0.6)   # pontas penteadas para trás
+        t.pinta(poligono([p0, ap, p1], espessura=1.0), mat, g, luz=luz)
+
+
+def corpo_livre(t: Tela, xf: Xf, p: Pose, arco=None, coxa=None, raio=(6.3, 5.9), cauda_r=(2.4, 1.8), cauda_pts=None,
+                ericado=0.0, fase=0.0, est: Estilo | None = None, pe_tras_creme=None):
+    """Quadrúpede de lado com todos os pontos no sistema `xf` (pode girar e sair do chão, como no bote).
+    quadril/ombro/pes/joelhos de `p` são locais ao corpo. arco: ponto do meio da coluna (costas arqueadas).
+    coxa: (centro, rx, ry) da anca de perto, como no gato sentado (agachado). ericado: tamanho dos tufos de pelo
+    no dorso e na cauda (susto). pe_tras_creme: (centro, rx, ry) do pé de trás de perto apoiado sob a coxa."""
+    est = est or ESTILO
+    q, o = p.quadril, p.ombro
+    # cauda (estufada quando eriçado)
+    cp = [xf(c) for c in (cauda_pts or p.cauda)]
+    if ericado > 0:
+        gt = t.grupo(True)
+        _espinhos(t, gt, cp, lambda f: xf.r(cauda_r[0] + (cauda_r[1] - cauda_r[0]) * f), comp=ericado * 1.1,
+                  passo=2.4, lado=1, fase=fase)
+        _espinhos(t, gt, cp, lambda f: xf.r(cauda_r[0] + (cauda_r[1] - cauda_r[0]) * f), comp=ericado * 1.1,
+                  passo=2.4, lado=-1, fase=fase + 1.3)
+        t.pinta(tubo(_suave(cp, 6), (xf.r(cauda_r[0]), xf.r(cauda_r[1]))), "pelo", gt)
+        P = _suave(cp, 6)
+        for f in (0.3, 0.55):
+            i = int(f * (len(P) - 1))
+            a, b = P[i], P[min(i + 1, len(P) - 1)]
+            d = (b[0] - a[0], b[1] - a[1])
+            L = math.hypot(*d) or 1
+            nx, ny = -d[1] / L, d[0] / L
+            r = cauda_r[0] + (cauda_r[1] - cauda_r[0]) * f + 1.6
+            t.decal(capsula((a[0] + nx * r, a[1] + ny * r), (a[0] - nx * r, a[1] - ny * r), 0.7))
+        pt = P[int(0.86 * (len(P) - 1)):]
+        t.decal(tubo(pt + [pt[-1]], (cauda_r[1] + ericado + 2.2, cauda_r[1] + ericado + 2.2)), mat="creme")
+    else:
+        cauda(t, cp, xf.r(cauda_r[0]), xf.r(cauda_r[1]), s=xf.s)
+    jo = lambda i: None if p.joelhos[i] is None else xf(p.joelhos[i])
+    # patas de longe (mais escuras)
+    perna(t, xf((q[0] - 1.0, q[1] + 2.0)), xf(p.pes[1]), xf.r(2.2), luz=-0.24, joelho=jo(1))
+    perna(t, xf((o[0] - 0.4, o[1] + 2.5)), xf(p.pes[3]), xf.r(2.1), luz=-0.24, joelho=jo(3))
+    g = t.grupo(True)
+    coluna = [q, arco, o] if arco is not None else [q, o]
+    if ericado > 0:
+        _espinhos(t, g, [xf(c) for c in coluna], lambda f: xf.r(raio[0] + (raio[1] - raio[0]) * f), comp=ericado,
+                  passo=2.5, lado=1, fase=fase)
+    t.pinta(tubo([xf(c) for c in (_suave(coluna, 4) if arco is not None else coluna)], (xf.r(raio[0]), xf.r(raio[1]))),
+            "pelo", g)
+    # barriga e peito creme (do lado de baixo da coluna)
+    vx, vy = o[0] - q[0], o[1] - q[1]
+    L = math.hypot(vx, vy) or 1
+    ux, uy = vx / L, vy / L
+    nx_, ny_ = uy, -ux   # normal para cima (para o dorso)
+    meio = arco if arco is not None else ((q[0] + o[0]) / 2, (q[1] + o[1]) / 2)
+    bx, by = (q[0] + o[0]) / 2 + 1.0 - nx_ * (raio[1] - 0.6), (q[1] + o[1]) / 2 - ny_ * (raio[1] - 0.6)
+    if arco is None:
+        t.decal(elipse(xf((bx, by)), xf.r(L * 0.5 + 1.0), xf.r(2.6), xf.a(math.degrees(math.atan2(uy, ux)))), mat="creme")
+    t.decal(elipse(xf((o[0] + ux * 3.0 - nx_ * 1.6, o[1] + uy * 3.0 - ny_ * 1.6)), xf.r(2.8), xf.r(4.2),
+                   xf.a(math.degrees(math.atan2(uy, ux)))), mat="creme")
+    # listras do dorso
+    for f in (0.12, 0.38, 0.62):
+        if arco is not None:
+            P = _suave(coluna, 6)
+            i = int(f * (len(P) - 1))
+            c = P[i]
+            d = (P[i + 1][0] - c[0], P[i + 1][1] - c[1])
+            Ld = math.hypot(*d) or 1
+            ex, ey = d[0] / Ld, d[1] / Ld
+            mx, my = ey, -ex
+            rr = raio[0] + (raio[1] - raio[0]) * f
+        else:
+            c = (q[0] + vx * f, q[1] + vy * f)
+            ex, ey, mx, my, rr = ux, uy, nx_, ny_, raio[0]
+        a = (c[0] + mx * (rr + 0.2), c[1] + my * (rr + 0.2))
+        b = (c[0] + mx * (rr - 4.0) - ex * 0.8, c[1] + my * (rr - 4.0) - ey * 0.8)
+        t.decal(capsula(xf(a), xf(b), xf.r(0.62), xf.r(0.45)))
+    # anca de perto (agachado) com o pé de trás
+    if coxa is not None:
+        gc = t.grupo(True)
+        cc, crx, cry = coxa
+        t.pinta(elipse(xf(cc), xf.r(crx), xf.r(cry), xf.a(0)), "pelo", gc, luz=0.02)
+        t.decal(capsula(xf((cc[0] - crx * 0.7, cc[1] - 0.6)), xf((cc[0] - crx * 0.3, cc[1] + cry * 0.4)), xf.r(0.6)))
+        if pe_tras_creme is not None:
+            pc, prx, pry = pe_tras_creme
+            t.pinta(elipse(xf(pc), xf.r(prx), xf.r(pry), xf.a(0), achata=0.7), "creme", gc, luz=0.05)
+    else:
+        perna(t, xf((q[0] + 0.5, q[1] + 2.0)), xf(p.pes[0]), xf.r(2.4), luz=0.02, joelho=jo(0))
+    # pata da frente de perto e cabeça
+    perna(t, xf((o[0] + 0.6, o[1] + 2.5)), xf(p.pes[2]), xf.r(2.3), luz=0.02, joelho=jo(2))
+    xh = xf.filho(p.cab, p.cab_ang)
+    cabeca(t, xh, p.olhos, p.olhar, p.boca, p.orelhas, p.vira, est=est, piscar_um=p.piscar_um)
+
+
+def gato_lambendo(t, k):
+    """Lambe a pata (0-2) e passa a pata molhada por trás da orelha (3-4), volta à boca (5)."""
+    # (pata (dx, dy) relativo ao pé, cotovelo local, cabeça (x, y), giro da cabeça, boca, orelhas)
+    seq = [
+        ((5.6, -15.8), (9.6, -8.4), (5.6, -23.0), 16, "lambe", (0, 0)),
+        ((5.6, -17.2), (9.8, -8.8), (5.8, -23.8), 11, "lambe", (0, 0)),
+        ((5.4, -15.2), (9.6, -8.2), (5.4, -22.8), 17, "w", (0, 0)),
+        ((5.0, -22.0), (9.8, -11.0), (5.4, -23.0), 21, "w", (0, 8)),
+        ((5.8, -27.4), (10.8, -13.6), (5.6, -22.6), 27, "w", (0, 16)),
+        ((5.6, -19.0), (10.0, -9.6), (5.4, -23.2), 18, "w", (0, 6)),
+    ]
+    pd, cot, cab, ang, boca, orel = seq[k]
+    p = Pose(cauda=cauda_enrolada_frente(k, 0.4), cauda_frente=True, cab=cab, cab_ang=ang, olhos="fechado", boca=boca,
+             orelhas=orel, pata_perto=pd, pata_cotovelo=cot, pata_na_frente=True)
+    corpo_sentado(t, X0, p)
+    if k in (0, 1, 2, 5):
+        # almofadinhas rosa da pata virada para a boca (é o que faz a pata ler pequena)
+        t.molde(["n.n", ".N."], X0 + 4.2 + pd[0] + 0.3, CHAO - 0.5 - 1.4 + pd[1] - 0.2, cores={"n": "#e98c95", "N": "#f0a2a8"})
+
+
+def _pose_agachado(k, rebola=0.0, olhos="aberto", alvo=(1, -1), cauda_w=0.0, pata_tras=0.0):
+    """Agachado de caça: peito rente ao chão, anca alta, cabeça baixa olhando o alvo."""
+    q = (-6.5 + 0.6 * rebola, -11.4 - 0.8 * abs(rebola) - 0.4 * rebola)
+    o = (6.0, -6.6)
+    pes = ((-2.0, -1.4), (-4.0 + pata_tras, -1.4), (11.2, -1.4), (8.4, -1.4))
+    joelhos = (None, None, (9.0, -3.8), (6.4, -3.8))
+    w = cauda_w
+    cauda_p = ((-11.0 + rebola * 0.5, -10.0), (-17.0, -8.6), (-22.0, -7.4 + 0.8 * w), (-25.0 + 0.4 * abs(w), -9.0 - 2.4 * w))
+    return Pose(quadril=q, ombro=o, pes=pes, joelhos=joelhos, cab=(11.6, -13.8), cab_ang=-7, olhar=alvo, olhos=olhos,
+                orelhas=(-8, -8), cauda=cauda_p)
+
+
+def gato_cacando(t, k):
+    """Agachado rebolando o traseiro, olhos fixos no alvo lá em cima à direita."""
+    reb = 1.5 * _sn(k, 3)   # dois rebolados por laço
+    p = _pose_agachado(k, rebola=reb, cauda_w=_sn(k, d=0.15), pata_tras=0.6 * _sn(k, 3, 0.25))
+    xf = Xf(X_PE - 1.0, CHAO - 0.5)
+    t.chao = CHAO
+    t.sombra(X_PE, 16)
+    q = p.quadril
+    corpo_livre(t, xf, p, coxa=((q[0] + 0.6, q[1] + 4.4), 5.6, 4.8), raio=(6.2, 5.4),
+                pe_tras_creme=((q[0] + 4.6, -1.3), 3.4, 1.5))
+
+
+def gato_pulando(t, k):
+    """O bote: 0 agachado, 1 encolhe, 2 sai esticado para cima e para a direita, 3 no alto com as patas à frente,
+    4 desce e 5 aterrissa amortecendo, de volta ao mesmo lugar (laço)."""
+    t.chao = CHAO
+    if k in (0, 1, 5):
+        enc = [0.0, 1.0, 0.0, 0, 0, 0.6][k]
+        p = _pose_agachado(k, rebola=0.0, cauda_w=[0.0, 0.6, 0, 0, 0, -0.4][k])
+        p.quadril = (p.quadril[0] + 0.6 * enc, p.quadril[1] - 1.2 * enc)
+        p.cab = (p.cab[0], p.cab[1] + 0.8 * enc)
+        xf = Xf(X_PE - 1.0, CHAO - 0.5)
+        t.sombra(X_PE, 16)
+        q = p.quadril
+        corpo_livre(t, xf, p, coxa=((q[0] + 0.6, q[1] + 4.4), 5.6, 4.8), raio=(6.2, 5.4),
+                    pe_tras_creme=((q[0] + 4.6, -1.3), 3.4, 1.5))
+        return
+    # no ar: corpo esticado, girado em volta do meio
+    dx, dy, ang = {2: (4.0, -8.0, -24), 3: (7.0, -11.0, -4), 4: (5.0, -6.0, 18)}[k]
+    if k == 2:     # saindo: patas de trás esticadas para trás e para baixo, as da frente para cima
+        pes = ((-15.0, 3.0), (-17.0, 2.0), (13.0, -9.0), (11.0, -7.0))
+        joelhos = ((-12.0, -2.0), (-14.0, -3.0), None, None)
+        cab, cang = (12.4, -13.0), 10
+    elif k == 3:   # no alto: todo esticado, patas da frente abertas para pegar
+        pes = ((-15.0, 0.0), (-17.0, -2.0), (17.0, -1.6), (14.6, -0.6))
+        joelhos = ((-11.0, -1.0), (-13.0, -3.0), None, None)
+        cab, cang = (11.8, -14.8), -4
+    else:          # descendo: patas da frente para baixo procurando o chão
+        pes = ((-13.0, -2.0), (-15.0, -4.0), (11.0, 4.6), (8.4, 3.8))
+        joelhos = ((-9.0, 0.0), (-11.0, -1.0), None, None)
+        cab, cang = (11.6, -14.6), -16
+    p = Pose(quadril=(-7.0, -9.0), ombro=(6.5, -9.0), pes=pes, joelhos=joelhos, cab=cab, cab_ang=cang, olhar=(1, 0),
+             orelhas=(-6, -6), olhos="aberto",
+             cauda=((-12.0, -9.0), (-18.0, -9.6), (-24.0, -10.0 + (2 if k == 4 else -1)), (-28.0, -11.0 + (3 if k == 4 else -2))))
+    base = Xf(X_PE - 1.0 + dx, CHAO - 0.5 + dy)
+    xf = XfPivo(base, (0.0, -9.0), ang)
+    t.sombra(X_PE + dx, 15 - abs(dy) * 0.45, forca=0.32)
+    corpo_livre(t, xf, p, raio=(6.0, 5.6))
+
+
+def gato_derretido(t, k):
+    """De barriga para cima, esticado e mole no sol: cabeça de ponta-cabeça à direita, patinhas para o alto
+    balançando de leve, cauda mexendo no chão."""
+    t.chao = CHAO
+    x0 = X_DEITA - 2.0
+    xf = Xf(x0, CHAO - 0.5)
+    t.sombra(x0 + 1, 21)
+    w1, w2 = _sn(k), _sn(k, d=0.3)
+    # cauda deitada no chão, a ponta mexendo
+    cauda(t, [xf(c) for c in ((-12.0, -4.0), (-17.0, -2.4), (-21.5, -2.2 - 0.4 * w2), (-24.0 + 0.6 * w1, -4.6 - 1.8 * w1))],
+          xf.r(2.3), xf.r(1.8))
+    # patas de longe (mais escuras), para o alto
+    perna(t, xf((-9.0, -8.0)), xf((-15.2 + 0.6 * w2, -17.6 + 0.6 * w2)), xf.r(2.1), luz=-0.24, joelho=xf((-13.0, -14.4)))
+    perna(t, xf((5.0, -8.6)), xf((8.4 + 0.6 * w1, -19.0 - 0.4 * w1)), xf.r(2.0), luz=-0.24, joelho=xf((7.4, -15.2)))
+    # tronco de costas no chão, barriga creme para cima
+    g = t.grupo(True)
+    t.pinta(elipse(xf((-2.0, -6.8)), xf.r(13.4), xf.r(6.6)), "pelo", g)
+    t.decal(elipse(xf((-1.0, -10.4)), xf.r(10.6), xf.r(3.6)), mat="creme")
+    for kk in range(4):   # listras do flanco
+        a, b = xf((-10.5 + kk * 4.2, -1.4)), xf((-10.0 + kk * 4.2, -5.0))
+        t.decal(capsula(a, b, xf.r(0.62), xf.r(0.45)))
+    # patas de perto: a de trás esticada para cima e para trás, a da frente dobrada mole perto do peito
+    perna(t, xf((-8.0, -8.6)), xf((-12.4 + 0.8 * w1, -19.6 - 0.6 * w1)), xf.r(2.3), luz=0.02, joelho=xf((-10.6, -15.4)))
+    perna(t, xf((3.6, -9.6)), xf((4.2 - 0.6 * w2, -19.8 + 0.5 * w2)), xf.r(2.2), luz=0.02, joelho=xf((5.6, -16.2)))
+    # cabeça de ponta-cabeça, encostada no chão, rosto para o céu
+    xh = Xf(*xf((17.6, -11.8)), 1.0, 180 + 4 * _sn(k, d=0.1), espelho=True)
+    cabeca(t, xh, "fechado", (0, 0), "blep" if k in (2, 3) else "w", (6, 6), 0.0, invertido=True, luz=0.1)
+
+
+def gato_assustado(t, k):
+    """Susto: costas arqueadas, nas pontas das patas, pelo e cauda eriçados, orelhas para trás, chiando."""
+    t.chao = CHAO
+    tre = [0.0, -0.6, 0.0, -0.4, 0.0, -0.2][k]
+    q = (-8.4, -19.0 + tre)
+    o = (6.6, -17.4 + tre)
+    arco = (-1.4, -28.0 + tre - 0.6 * (k in (1, 2)))
+    pes = ((-6.6, -1.4), (-9.8, -1.4), (8.2, -1.4), (5.4, -1.4))
+    w = _sn(k)
+    cauda_p = ((-12.4, -20.0 + tre), (-15.4, -27.0), (-15.0 + 0.6 * w, -33.0), (-13.4 + 1.2 * w, -37.0))
+    p = Pose(quadril=q, ombro=o, pes=pes, cab=(11.6, -15.8 + tre), cab_ang=8, olhos="aberto", olhar=(-1, 0),
+             orelhas=(30, 30), boca="chiado" if k in (1, 2, 3) else "w", cauda=cauda_p)
+    xf = Xf(X_PE - 0.5, CHAO - 0.5)
+    t.sombra(X_PE, 15)
+    corpo_livre(t, xf, p, arco=arco, raio=(5.6, 5.2), cauda_r=(3.2, 2.8), ericado=2.8 + 0.4 * _sn(k, 3), fase=k * 0.9)
+
+
 LINHAS = [
     ("dormindo", gato_dormindo), ("acordado", gato_acordado), ("tala", gato_tala), ("sentado", gato_sentado),
     ("andando", gato_andando), ("espreguicando", gato_espreguicando), ("brincando", gato_brincando),
     ("lendo", gato_lendo), ("comemorando", gato_comemorando), ("observando", gato_observando),
     ("fogueira", gato_fogueira), ("ronronando", gato_ronronando), ("acordando", gato_acordando),
     ("olhando_cima", gato_olhando_cima),
+    # terceira leva (01/11/2026), sempre no fim da folha: as linhas de cima não mudam
+    ("lambendo", gato_lambendo), ("cacando", gato_cacando), ("pulando", gato_pulando),
+    ("derretido", gato_derretido), ("assustado", gato_assustado),
 ]
 
 

@@ -59,6 +59,7 @@ FOLHAS = [
     ("esqueleto-poses.png", 11.0),
     ("esqueleto-poses2.png", 11.0),
     ("esqueleto-acesso.png", 11.0),
+    ("esqueleto-poses3.png", 11.0),
     ("gato-fofo.png", 8.0),
     ("coruja-nova.png", 5.0),
 ]

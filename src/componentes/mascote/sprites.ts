@@ -48,6 +48,13 @@ export const LINHAS_ESQUELETO = [
   // Tela de entrar (31/10/2026): roupas novas do mesmo mascote, na folha esqueleto-acesso.png (fora do sorteio).
   { id: 'acesso_jaleco', nome: 'de jaleco longo dando boas-vindas', halloween: false, sorteio: false },
   { id: 'acesso_social', nome: 'de blazer e gravata-borboleta dando boas-vindas', halloween: false, sorteio: false },
+  // Terceira leva de poses (01/11/2026): os palcos do diretor de cena, uma ação por cenário da página inicial.
+  { id: 'pescar', nome: 'pescando', halloween: false, sorteio: false },
+  { id: 'martelar', nome: 'martelando na bigorna', halloween: false, sorteio: false },
+  { id: 'aticar', nome: 'atiçando o fogo', halloween: false, sorteio: false },
+  { id: 'luneta', nome: 'olhando pela luneta', halloween: false, sorteio: false },
+  { id: 'boneco_neve', nome: 'fazendo um boneco de neve', halloween: false, sorteio: false },
+  { id: 'pescou_bota', nome: 'pescando uma bota velha', halloween: false, sorteio: false },
 ] as const
 
 export type IdLinhaEsqueleto = (typeof LINHAS_ESQUELETO)[number]['id']
@@ -57,7 +64,7 @@ export type IdLinhaEsqueleto = (typeof LINHAS_ESQUELETO)[number]['id']
  * de scripts/gerar_gato_fofo.py: public/pixel/mascote/gato-fofo.png, quadros de 64 x 48, as mesmas linhas de antes.
  */
 export const SPRITE_GATO = {
-  src: '/pixel/mascote/gato-fofo.png?v=1',
+  src: '/pixel/mascote/gato-fofo.png?v=2',
   larguraQuadro: 64,
   alturaQuadro: 48,
   quadrosPorLinha: 6,
@@ -81,6 +88,12 @@ export const LINHAS_GATO = [
   { id: 'acordando', nome: 'acordando' },
   // Terceira leva (31/10/2026, Biblioteca 3.0): olhando para cima (para a coruja bibliotecária).
   { id: 'olhando_cima', nome: 'olhando para cima' },
+  // Quarta leva (01/11/2026, diretor de cena): movimentos de gato de verdade.
+  { id: 'lambendo', nome: 'lambendo a pata' },
+  { id: 'cacando', nome: 'caçando' },
+  { id: 'pulando', nome: 'dando o bote' },
+  { id: 'derretido', nome: 'derretido no sol' },
+  { id: 'assustado', nome: 'assustado' },
 ] as const
 
 export type IdLinhaGato = (typeof LINHAS_GATO)[number]['id']
@@ -100,7 +113,8 @@ const FOLHAS_ESQUELETO: Leva[] = [
   { src: SPRITE_ESQUELETO.src, ate: 14 },
   { src: '/pixel/mascote/esqueleto-poses.png', ate: 23 },
   { src: '/pixel/mascote/esqueleto-poses2.png', ate: 30 },
-  { src: '/pixel/mascote/esqueleto-acesso.png', ate: LINHAS_ESQUELETO.length },
+  { src: '/pixel/mascote/esqueleto-acesso.png', ate: LINHAS_ESQUELETO.length - 6 },
+  { src: '/pixel/mascote/esqueleto-poses3.png?v=1', ate: LINHAS_ESQUELETO.length },
 ]
 const FOLHAS_GATO: Leva[] = [
   { src: SPRITE_GATO.src, ate: LINHAS_GATO.length },
