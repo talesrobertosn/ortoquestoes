@@ -18,13 +18,17 @@ export type Cenario = {
   /** Onde a coruja pousa: o ponto dos pés (33 x 24 px da arte). */
   coruja: readonly { x: number; y: number }[]
   particulas: Particulas
-  /** A espada fincada na fogueira (o easter egg do acampamento). */
+  /**
+   * A espada fincada na fogueira, "estilo Dark Souls": a marca do site, em todos os cenários (Tales, 01/11/2026); antes só
+   * no acampamento. Todo cenário tem o fogo na mesma caixa (contrato em docs/design/DIRECAO-ARTISTICA.md), então a
+   * espada encaixa em qualquer um. `false` só se um cenário futuro não tiver fogueira.
+   */
   espada?: boolean
 }
 
 export const CENARIOS: readonly Cenario[] = [
   {
-    id: 'acampamento', arquivo: 'cena', particulas: 'vagalumes', espada: true,
+    id: 'acampamento', arquivo: 'cena', particulas: 'vagalumes',
     gato: [
       { x: 219, y: 150, pose: 'repouso' }, { x: 176, y: 166, pose: 'sentado' }, { x: 256, y: 170, pose: 'observando' },
       { x: 300, y: 165, pose: 'fogueira' }, { x: 322, y: 150, pose: 'sentado' }, { x: 236, y: 168, pose: 'repouso' },

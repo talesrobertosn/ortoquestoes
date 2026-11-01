@@ -274,11 +274,15 @@ cenário aparecer de manhã, de tarde e de noite em dias diferentes. Para testar
 
 | Cenário | Script | Partículas | Destaque |
 |---|---|---|---|
-| Acampamento | `scripts/gerar_cena_inicio.py` | vaga-lumes | a espada fincada na fogueira (easter egg, `scripts/sprites/espada_fogueira.py`) |
+| Acampamento | `scripts/gerar_cena_inicio.py` | vaga-lumes | a fogueira do acampamento |
 | Forja do ferreiro | `scripts/cenarios/inicio_forja.py` | faíscas | fornalha como luz principal, peças de ortopedia em ferro |
 | Cais do lago | `scripts/cenarios/inicio_cais.py` | vaga-lumes | reflexo na água |
 | Observatório da torre | `scripts/cenarios/inicio_observatorio.py` | estrelas | céu, via láctea e aurora |
 | Refúgio da neve | `scripts/cenarios/inicio_neve.py` | neve | neve acesa pelo fogo e pelas janelas |
+
+**A espada na fogueira é a marca do site** (Tales, 01/11/2026, "estilo Dark Souls"): aparece em todos os cenários, com e
+sem login (`scripts/sprites/espada_fogueira.py`, `.hd-espada` em `InicioHd.css`). Cenário novo sem fogueira precisa de
+`espada: false` em `cenarios.ts`.
 
 Contrato de todo cenário novo (arte 480 x 200, saída 1440 x 600 e 960 x 400 nas três horas):
 - o fogo animado na caixa x 220-260, y 104-152 (a luz principal sai de 240,146), sem chama pintada;
