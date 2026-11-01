@@ -1940,3 +1940,7 @@ section[class$="-heroi"]::before, section[class$="-heroi"]::after, .heroi-escuro
 .busca-atlas > input { width: 100%; min-height: 48px; padding: 0 1rem 0 2.6rem; border: var(--borda); border-radius: var(--raio-controle); background: var(--superficie); color: var(--texto); font: inherit; font-size: var(--corpo-menor); }
 .busca-atlas > input:focus { outline: 0; border-color: var(--verdete); box-shadow: var(--anel-foco); }
 .busca-atlas:focus-within > svg { color: var(--verdete); }
+
+/* Número de passo do atlas: círculo verdete-véu com o número em Jersey 10 (o selo dourado .px-numero fica no mundo
+   pixel da temporada). */
+.numero-passo { display: inline-grid; place-items: center; flex: none; width: 2rem; height: 2rem; border-radius: 50%; background: var(--verdete-veu); color: var(--verdete); font-family: var(--fonte-pixel-titulo); font-size: 1.25rem; line-height: 1; }

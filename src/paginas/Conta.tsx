@@ -39,7 +39,6 @@ import { CampoServico, SERVICO_VARIOS } from '../componentes/CampoServico'
 import { CamposEtapa } from '../componentes/CamposEtapa'
 import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, type TipoAviso } from '../componentes/conta/PecasConta'
-import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
 import '../estilos/paginas/Acesso.css'
 import { fraseGratis, recurso } from '../config'
@@ -629,6 +628,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     } catch { avisar('Não foi possível sair. Confira sua conexão e tente novamente.', 'erro') } finally { definirOcupado(false) }
   }
   const linkSecao = (id: SecaoConta) => href(`/conta?secao=${id}`)
+  /** A próxima ação do topo: o que pede atenção primeiro (sincronização, termos, perfil), senão o caminho de estudo. */
+  const proxima = status.estado === 'erro' || status.estado === 'conflito' || status.rejeitados.length > 0 ? { rotulo: 'Ver sincronização', destino: linkSecao('aparelhos') }
+    : !termosEmDia ? { rotulo: 'Ler os termos novos', destino: linkSecao('termos') }
+    : !etapa ? { rotulo: 'Completar o perfil', destino: linkSecao('perfil') }
+    : { rotulo: 'Continuar estudando', destino: href('/treinar') }
   /** Selo pequeno ao lado de cada seção na lista (o que pede atenção ou o estado atual). */
   const seloSecao = (id: SecaoConta) => {
     if (id === 'assinatura') return <span className={'ct-nav__selo' + (assinante ? ' ct-nav__selo--ouro' : '')}>{assinante ? 'Assinante' : 'Gratuito'}</span>
@@ -655,28 +659,38 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <p className="ct-heroi__rotulo">Minha conta</p>
           <h1 id="ct-nome">{nomeCompleto || 'Sua conta'}</h1>
           <p className="ct-heroi__email">{sessao.user.email}</p>
-          <ul className="ct-selos" aria-label="Resumo da conta">
-            <li><a className={'ct-selo' + (assinante ? ' ct-selo--ouro' : '')} href={linkSecao('assinatura')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={13} />{selo}</a></li>
-            {etapa && <li><a className="ct-selo" href={linkSecao('perfil')}><Icone nome="usuario" tamanho={13} />{etapa}</a></li>}
-            <li><a className="ct-selo ct-selo--sync" href={linkSecao('aparelhos')}><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /><span aria-live="polite">{textoSync}</span></a></li>
-          </ul>
         </div>
       </div>
+      {/* A próxima ação (atlas unificado, 01/11/2026): uma só, a mais útil agora, no lugar do botão de sincronizar. */}
       <div className="ct-heroi__acoes">
-        <button className={'botao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar'}</button>
+        <a className="botao botao--principal" href={proxima.destino}>{proxima.rotulo} <Icone nome="direita" tamanho={16} /></a>
         {administrador && <a className="botao" href={href('/admin')}><Icone nome="grafico" tamanho={16} /> Painel do admin</a>}
       </div>
-      {metricas && <dl className="ct-numeros">
-        <a href={href('/dados')}><dt>Questões respondidas</dt><dd>{metricas.respondidas.toLocaleString('pt-BR')}{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={22} titulo={`Emblema ${emblema.rotulo}`} /></span>}</dd></a>
-        <a href={href('/revisao')}><dt>Revisões programadas</dt><dd>{metricas.pendentes.toLocaleString('pt-BR')}</dd></a>
-        <a href={href('/dados')}><dt>Acerto acumulado</dt><dd>{metricas.acerto === null ? '0%' : `${metricas.acerto}%`}</dd></a>
-      </dl>}
-      <nav className="ct-atalhos" aria-label="Atalhos">
-        <a href={href('/treinar')}><IconePixel nome="treinar" tamanho={32} /><span>Treinar</span></a>
-        <a href={href('/dados')}><IconePixel nome="desempenho" tamanho={32} /><span>Desempenho</span></a>
-        <a href={href('/ranking')}><IconePixel nome="ranking" tamanho={32} /><span>Ranking</span></a>
-        <a href={href(assinante ? '/conta/assinatura' : '/assinatura')}><IconePixel nome="planos" tamanho={32} /><span>{assinante ? 'Assinatura' : 'Planos'}</span></a>
-      </nav>
+      {/* Status da conta em três linhas: plano, sincronização e perfil, cada uma com o que dá para fazer. As métricas
+          e os atalhos repetidos do Menu saíram; fica uma linha com o essencial e o caminho para o desempenho. */}
+      <ul className="ct-status-lista lista-atlas" aria-label="Situação da conta">
+        <li>
+          <span className={'ct-status-lista__icone' + (assinante ? ' ct-status-lista__icone--ouro' : '')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={16} /></span>
+          <span className="ct-status-lista__texto"><small>Plano</small><strong>{selo}</strong></span>
+          <a className="ct-status-lista__acao" href={href(assinante ? '/conta/assinatura' : '/assinatura')}>{assinante ? 'Ver assinatura' : 'Conhecer os planos'}</a>
+        </li>
+        <li>
+          <span className="ct-status-lista__icone"><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /></span>
+          <span className="ct-status-lista__texto"><small>Sincronização</small><strong aria-live="polite">{textoSync}</strong></span>
+          <button className={'ct-status-lista__acao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={15} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar'}</button>
+        </li>
+        <li>
+          <span className="ct-status-lista__icone"><Icone nome="usuario" tamanho={16} /></span>
+          <span className="ct-status-lista__texto"><small>Perfil</small><strong>{etapa ?? 'Falta dizer em que fase você está'}</strong></span>
+          <a className="ct-status-lista__acao" href={linkSecao('perfil')}>{etapa ? 'Editar' : 'Completar'}</a>
+        </li>
+      </ul>
+      {metricas && <p className="ct-resumo">
+        <span><b className="numerico">{metricas.respondidas.toLocaleString('pt-BR')}</b> respondidas{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={20} titulo={`Emblema ${emblema.rotulo}`} /></span>}</span>
+        <span><b className="numerico">{metricas.acerto === null ? '0%' : `${metricas.acerto}%`}</b> de acerto</span>
+        <a href={href('/revisao')}><b className="numerico">{metricas.pendentes.toLocaleString('pt-BR')}</b> revisões programadas</a>
+        <a className="ct-resumo__ver" href={href('/dados')}>Ver desempenho <Icone nome="direita" tamanho={14} /></a>
+      </p>}
     </section>
 
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}

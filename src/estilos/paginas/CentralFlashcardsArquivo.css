@@ -7,8 +7,10 @@
 /* Vale só com .cf--arquivo (as três páginas do site); o jogo não muda. O fundo é o normal do site, como na página
    inicial (o assoalho foi testado e retirado em 01/11/2026, junto com a calçada do cronograma). */
 .cf--arquivo {
-  --ca-raio: 20px; --ca-raio-ctl: 12px; --ca-ouro: #f0c46a; --ca-borda: rgba(232, 206, 150, 0.42);
-  --ca-sombra: 0 1px 2px rgba(0, 0, 0, 0.05), 0 10px 28px -18px rgba(0, 0, 0, 0.35);
+  /* Atlas unificado (01/11/2026): fora da cena, os raios e a sombra comuns (16 nas folhas, 10 nos controles); o 20 fica
+     só na moldura da cena. */
+  --ca-raio: var(--raio-cartao); --ca-raio-ctl: var(--raio-controle); --ca-ouro: #f0c46a; --ca-borda: rgba(232, 206, 150, 0.42);
+  --ca-sombra: var(--sombra-folha);
   position: relative;
 }
 
@@ -18,7 +20,7 @@
 .cf--arquivo .cf-abas a[aria-current="page"] { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
 
 /* ── O topo com o Arquivo ── */
-.cf--arquivo .cfh-heroi--arquivo { --ct-foco: 1; display: block; padding: 0; border-radius: var(--ca-raio); background: #0b1012; overflow: hidden;
+.cf--arquivo .cfh-heroi--arquivo { --ct-foco: 1; display: block; padding: 0; border-radius: var(--mundo-raio); background: #0b1012; overflow: hidden;
   box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.7); }
 .cfh-heroi--arquivo .cfh-janela { position: relative; overflow: hidden; height: clamp(12rem, 56vw, 15rem); }
 .cfh-heroi--arquivo .cfh-janela .ct-cena { --ct-foco: 1; }
@@ -195,3 +197,17 @@ a.cfa-fila:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2p
   .cfa-objeto--fichario::after, .cfa-objeto--cripta::after, .cfa-objeto--medidor i::before { animation: none; }
   .cfa-caminho, .cfa-fila { transition: none; }
 }
+
+/* ── Celular: topo compacto (atlas unificado, 01/11/2026) ──
+   A janela da cena fica mais baixa e a frase do chão sai (o "Como funciona" explica o mesmo), para "Estudar
+   flashcards" chegar à primeira tela. O fichário continua inteiro na janela. */
+@media (max-width: 35.99rem) {
+  .cfh-heroi--arquivo .cfh-janela { height: clamp(8.5rem, 40vw, 10rem); }
+  .cfh-heroi--arquivo .cfh-vidro-arquivo { margin-top: -1rem; }
+  .cfh-heroi--arquivo .cfh-selo { margin-bottom: var(--e-2); }
+  .cfh-heroi--arquivo h1 { font-size: 1.6rem; line-height: 1.1; }
+  .cfh-heroi--arquivo .cfh-chao { display: none; }
+}
+
+/* ── Como funciona: a linha entre os passos no traço do atlas (o número é o .numero-passo comum) ── */
+.cf--arquivo .cf-passos li:not(:last-child)::after { background: var(--traco-forte); }

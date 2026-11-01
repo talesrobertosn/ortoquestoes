@@ -21,7 +21,7 @@
 
 /* ── Botões ─────────────────────────────────────────────────────────── */
 .bb-botao-ler { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 48px; padding: 0 1.25rem; border: 0; border-radius: var(--raio-controle); cursor: pointer;
-  background: var(--verdete); color: #fff; font: 700 1rem/1.2 var(--fonte-texto); text-decoration: none; transition: background 0.15s; }
+  background: var(--verdete); color: var(--sobre-destaque); font: 700 1rem/1.2 var(--fonte-texto); text-decoration: none; transition: background 0.15s; }
 .bb-botao-ler:hover { background: var(--verdete-tinta); }
 .bb-botao-ler:focus-visible, .bb-botao-linha:focus-visible, .bb-botao-vidro:focus-visible { outline: 3px solid var(--foco, #f0c46a); outline-offset: 2px; }
 .bb-botao-linha { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 44px; padding: 0 1rem; border: 1px solid var(--traco-forte); border-radius: var(--raio-controle);
@@ -179,7 +179,7 @@ button.bb-obj:disabled { cursor: default; }
 .bb-continuar a, .bb-sugestao { position: relative; display: grid; gap: 0.2rem; padding: 0.85rem 1rem; border: 1px solid var(--traco); border-radius: var(--raio-cartao);
   background: var(--superficie); color: var(--texto); text-decoration: none; transition: border-color 0.15s, box-shadow 0.15s; }
 .bb-continuar__ref::before { content: ""; display: inline-block; width: 9px; height: 9px; margin-right: 0.4rem; border-radius: 2px; background: var(--cor); vertical-align: 0; }
-.bb-continuar a:hover, .bb-sugestao:hover { border-color: var(--verdete); box-shadow: var(--sombra-1); }
+.bb-continuar a:hover, .bb-sugestao:hover { border-color: var(--verdete); box-shadow: var(--sombra-folha); }
 .bb-continuar__ref { font-size: 0.8125rem; color: var(--texto-2); }
 .bb-continuar strong, .bb-sugestao strong { font-size: 1.0625rem; line-height: 1.3; }
 .bb-continuar small, .bb-sugestao small { color: var(--texto-2); font-size: 0.875rem; }
@@ -212,10 +212,12 @@ button.bb-obj:disabled { cursor: default; }
 /* ── Barra de filtros ───────────────────────────────────────────────── */
 .bb-barra-filtros { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--e-3); scroll-margin-top: calc(var(--altura-cabecalho, 64px) + 12px); }
 .bb-barra-filtros__linha { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3); }
-.bb-modo { display: inline-flex; padding: 3px; border-radius: 12px; background: var(--superficie-2); border: 1px solid var(--traco); }
-.bb-modo button { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 42px; padding: 0 1rem; border: 0; border-radius: 9px; background: transparent; color: var(--texto-2);
+/* Estante/Lista no trilho do atlas (o mesmo .seletor de base.css: a escolhida fica branca com o contorno verdete). */
+.bb-modo { display: inline-flex; gap: 4px; padding: 4px; border-radius: var(--raio-controle); background: var(--superficie-2); border: var(--borda); }
+.bb-modo button { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 42px; padding: 0 1rem; border: 0; border-radius: calc(var(--raio-controle) - 3px); background: transparent; color: var(--texto-2);
   font: 700 0.9375rem var(--fonte-texto); cursor: pointer; transition: background 0.15s, color 0.15s; }
-.bb-modo button[aria-pressed="true"] { background: var(--superficie); color: var(--verdete); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 0 1px var(--traco); }
+.bb-modo button[aria-pressed="true"] { background: var(--superficie); color: var(--verdete); box-shadow: 0 0 0 1px var(--verdete), var(--sombra); }
+:root[data-tema="escuro"] .bb-modo button[aria-pressed="true"] { background: var(--verdete-veu); }
 .bb-progresso { display: inline-flex; flex-wrap: wrap; gap: 0.35rem; }
 .bb-progresso button { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 40px; padding: 0 0.85rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie);
   color: var(--texto); font: 600 0.875rem var(--fonte-texto); cursor: pointer; }
@@ -225,10 +227,10 @@ button.bb-obj:disabled { cursor: default; }
 .bb-botao-filtros { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 42px; padding: 0 1rem; border: 1px solid var(--traco-forte); border-radius: var(--raio-controle); background: var(--superficie);
   color: var(--texto); font: 700 0.9375rem var(--fonte-texto); cursor: pointer; }
 .bb-botao-filtros[aria-expanded="true"], .bb-botao-filtros:hover { border-color: var(--verdete); color: var(--verdete); }
-.bb-botao-filtros__n { min-width: 1.35rem; padding: 0 0.3rem; border-radius: 999px; background: var(--verdete); color: #fff; font-size: 0.8rem; text-align: center; }
+.bb-botao-filtros__n { min-width: 1.35rem; padding: 0 0.3rem; border-radius: 999px; background: var(--verdete); color: var(--sobre-destaque); font-size: 0.8rem; text-align: center; }
 .bb-painel-fundo { display: none; }
 .bb-painel { position: absolute; z-index: 45; right: 0; top: calc(100% + 8px); width: min(30rem, 92vw); max-height: min(36rem, 75vh); overflow: auto; padding: 1rem 1.1rem;
-  border-radius: 16px; background: var(--superficie); border: 1px solid var(--traco); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25); animation: bb-entra 0.16s ease-out; }
+  border-radius: var(--raio-cartao); background: var(--superficie); border: var(--borda); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25); animation: bb-entra 0.16s ease-out; }
 .bb-painel__alca { display: none; }
 .bb-painel fieldset { margin: 0 0 1rem; padding: 0; border: 0; }
 .bb-painel legend { margin-bottom: 0.5rem; padding: 0; font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ardosia); }
@@ -441,8 +443,8 @@ button.bb-obj:disabled { cursor: default; }
 .bb-linha__acao { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; padding: 0 0.95rem; border: 1px solid var(--traco-forte); border-radius: var(--raio-controle);
   color: var(--texto); text-decoration: none; font-weight: 700; font-size: 0.9375rem; white-space: nowrap; transition: border-color 0.15s, background 0.15s; }
 .bb-linha__acao:hover { border-color: var(--verdete); color: var(--verdete); }
-.bb-linha__acao--forte { background: var(--verdete); border-color: var(--verdete); color: #fff; }
-.bb-linha__acao--forte:hover { background: var(--verdete-tinta); color: #fff; }
+.bb-linha__acao--forte { background: var(--verdete); border-color: var(--verdete); color: var(--sobre-destaque); }
+.bb-linha__acao--forte:hover { background: var(--verdete-tinta); color: var(--sobre-destaque); }
 
 /* ── Segredos: recado, chuva, café, sala dos raros ──────────────────── */
 .bb-recado { position: fixed; z-index: 70; right: 1.25rem; bottom: 1.25rem; display: flex; align-items: center; gap: 0.65rem; width: min(26rem, calc(100vw - 1.5rem)); margin: 0;

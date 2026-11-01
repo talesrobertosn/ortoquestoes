@@ -197,9 +197,9 @@ export function CentralFlashcards() {
       <details className="cfa-como" open={!contagem.estudados}>
         <summary><span>Como funciona</span><Icone nome="baixo" tamanho={16} /></summary>
         <ol className="cf-passos">
-          <li><span className="px-numero" aria-hidden="true">1</span><div><strong>Escolha um assunto</strong><span>Por área, pelas revisões de hoje, pelos que você errou ou pelos que nunca viu.</span></div></li>
-          <li><span className="px-numero" aria-hidden="true">2</span><div><strong>Responda e revise o flashcard</strong><span>Escolha a alternativa, veja o verso e diga se errou, hesitou ou sabia. A data da próxima revisão sai disso.</span></div></li>
-          <li><span className="px-numero" aria-hidden="true">3</span><div><strong>Acompanhe seu aprendizado e sua progressão</strong><span>Desempenho por assunto, cronograma até a data da prova e o seu recorde no Torneio.</span></div></li>
+          <li><span className="numero-passo" aria-hidden="true">1</span><div><strong>Escolha um assunto</strong><span>Por área, pelas revisões de hoje, pelos que você errou ou pelos que nunca viu.</span></div></li>
+          <li><span className="numero-passo" aria-hidden="true">2</span><div><strong>Responda e revise o flashcard</strong><span>Escolha a alternativa, veja o verso e diga se errou, hesitou ou sabia. A data da próxima revisão sai disso.</span></div></li>
+          <li><span className="numero-passo" aria-hidden="true">3</span><div><strong>Acompanhe seu aprendizado e sua progressão</strong><span>Desempenho por assunto, cronograma até a data da prova e o seu recorde no Torneio.</span></div></li>
         </ol>
       </details>
 
