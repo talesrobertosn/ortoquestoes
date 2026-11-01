@@ -424,4 +424,7 @@ dos conceitos. As do gato e do esqueleto são humor e não podem soar como bronc
   esqueleto enquanto a cena roda e para quando a pessoa toca num bicho. O gato dourado aparece em uma visita a cada
   150. As raridades vistas ficam em `localStorage['bichos:album']` (o álbum ainda não tem tela). Para testar:
   `sessionStorage['inicio:roteiro'] = '<id>'`.
+- 01/11/2026: **Sala dos bichos** (`#/bichos`, `paginas/Bichos.tsx`, no menu em Competir): a ficha dos três, com o
+  retrato vivo iluminado pela lareira, a troca de pose, uma fala por toque e o **álbum das raridades** (cartas com a
+  silhueta até a pessoa ver na página inicial).
 

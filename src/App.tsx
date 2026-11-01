@@ -40,6 +40,7 @@ const DadosLocais = lazy(() => carregadores.Apoio().then(({ DadosLocais }) => ({
 const NaoEncontrada = lazy(() => carregadores.Apoio().then(({ NaoEncontrada }) => ({ default: NaoEncontrada })))
 const Sobre = lazy(() => carregadores.Apoio().then(({ Sobre }) => ({ default: Sobre })))
 const Favoritas = lazy(() => carregadores.Favoritas().then(({ Favoritas }) => ({ default: Favoritas })))
+const Bichos = lazy(() => carregadores.Bichos().then(({ Bichos }) => ({ default: Bichos })))
 const CadernoErros = lazy(() => carregadores.CadernoErros().then(({ CadernoErros }) => ({ default: CadernoErros })))
 const Progresso = lazy(() => carregadores.Progresso().then(({ Progresso }) => ({ default: Progresso })))
 const Revisao = lazy(() => carregadores.Revisao().then(({ Revisao }) => ({ default: Revisao })))
@@ -78,6 +79,7 @@ const TITULOS: Record<string, string> = {
   '/conta/assinatura': 'Dados da assinatura | Orto Questões',
   '/dados': 'Seu desempenho | Orto Questões',
   '/favoritas': 'Suas favoritas | Orto Questões',
+  '/bichos': 'Sala dos bichos | Orto Questões',
   '/erros': 'Caderno de erros | Orto Questões',
   '/progresso': 'Progresso dos comentários | Orto Questões',
   '/revisao': 'Sua revisão | Orto Questões',
@@ -148,6 +150,9 @@ function paginaDaRota(rota: Rota): ReactNode {
       break
     case 'favoritas':
       pagina = <Favoritas />
+      break
+    case 'bichos':
+      pagina = <Bichos />
       break
     case 'erros':
       pagina = <CadernoErros />
