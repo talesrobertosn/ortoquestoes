@@ -10,8 +10,8 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { usarEtiquetas } from '../estado/preferencias'
 import { href, navegar } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
-import '../estilos/componentes/Cristal.css'
-import '../estilos/componentes/Mundo.css'
+import { TopoVila } from '../componentes/vila/TopoVila'
+import { CENA_GABINETE, DICAS_FAVORITAS } from '../componentes/vila/cenas'
 import '../estilos/paginas/Favoritas.css'
 
 type Situacao = 'nova' | 'acertou' | 'errou'
@@ -158,17 +158,20 @@ export function Favoritas() {
   if (favoritos.length === 0) {
     return (
       <div className="fv">
-        <section className="fv-heroi painel-mundo" aria-labelledby="fv-titulo">
-          <div className="fv-heroi__texto">
-            <p className="tr-heroi__selo">Favoritas</p>
+        <TopoVila cena={CENA_GABINETE} rotulo="fv-titulo" dicas={DICAS_FAVORITAS}
+          cabeca={<>
+            <p className="vl__selo"><EstrelaCheia tamanho={13} /> Favoritas</p>
             <h1 id="fv-titulo">{primeiroNome ? `${primeiroNome}, suas favoritas moram aqui` : 'Suas favoritas moram aqui'}</h1>
+          </>}
+          texto={<>
             <p>Você ainda não favoritou nenhuma questão. Guarde as que quer rever e treine só com elas quando quiser.</p>
-          </div>
-          <a className="botao cristal fv-heroi__acao" href={href('/treinar')}>
-            <Icone nome="raio" tamanho={20} />
-            <span><strong>Montar uma sessão</strong><small>e guardar as que valem rever</small></span>
-          </a>
-        </section>
+            <div className="vl-acoes">
+              <a className="vl-acao cristal" href={href('/treinar')}>
+                <Icone nome="raio" tamanho={20} />
+                <span><strong>Montar uma sessão</strong><small>e guardar as que valem rever</small></span>
+              </a>
+            </div>
+          </>} />
         {avisoDesfazer}
         <section className="fv-passos" aria-labelledby="fv-passos-titulo">
           <h2 id="fv-passos-titulo" className="fv-rotulo">Como guardar uma questão</h2>
@@ -258,22 +261,27 @@ export function Favoritas() {
 
   return (
     <div className="fv">
-      <section className="fv-heroi painel-mundo" aria-labelledby="fv-titulo">
-        <div className="fv-heroi__texto">
-          <p className="tr-heroi__selo">Favoritas</p>
+      <TopoVila cena={CENA_GABINETE} rotulo="fv-titulo" dicas={DICAS_FAVORITAS}
+        cabeca={<>
+          <p className="vl__selo"><EstrelaCheia tamanho={13} /> Favoritas</p>
           <h1 id="fv-titulo">{tituloFavoritas(primeiroNome, favoritos.length)}</h1>
+        </>}
+        texto={<>
           <p>{fraseFavoritas(contagem, favoritos.length)}</p>
-        </div>
-        <button type="button" className="botao cristal fv-heroi__acao" onClick={() => treinar(ordenadas)}>
-          <Icone nome="raio" tamanho={20} />
-          <span><strong>Treinar as favoritas</strong><small>{porId.size === 1 ? 'uma sessão com a sua favorita' : 'uma sessão só com elas'}</small></span>
-        </button>
-        <dl className="fv-placar">
-          <div><dt><Icone nome="errado" tamanho={13} /> Errou na última</dt><dd>{contagem.errou}</dd></div>
-          <div><dt><Icone nome="alvo" tamanho={13} /> Ainda novas</dt><dd>{contagem.nova}</dd></div>
-          <div><dt><Icone nome="certo" tamanho={13} /> Acertou na última</dt><dd>{contagem.acertou}</dd></div>
-        </dl>
-      </section>
+          <div className="vl-acoes">
+            <button type="button" className="vl-acao cristal" onClick={() => treinar(ordenadas)}>
+              <Icone nome="raio" tamanho={20} />
+              <span><strong>Treinar as favoritas</strong><small>{porId.size === 1 ? 'uma sessão com a sua favorita' : 'uma sessão só com elas'}</small></span>
+            </button>
+          </div>
+        </>}
+        bancada={
+          <dl className="vl-placas">
+            <div className="vl-placa"><dt><Icone nome="errado" tamanho={13} /> Errou na última</dt><dd><span className="vl-placa__valor">{contagem.errou}</span><span className="vl-placa__apoio">pedem revanche</span></dd></div>
+            <div className="vl-placa"><dt><Icone nome="alvo" tamanho={13} /> Ainda novas</dt><dd><span className="vl-placa__valor">{contagem.nova}</span><span className="vl-placa__apoio">guardadas sem responder</span></dd></div>
+            <div className="vl-placa"><dt><Icone nome="certo" tamanho={13} /> Acertou na última</dt><dd><span className="vl-placa__valor">{contagem.acertou}</span><span className="vl-placa__apoio">vale manter de olho</span></dd></div>
+          </dl>
+        } />
 
       {avisoDesfazer}
 

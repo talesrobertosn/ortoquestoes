@@ -69,8 +69,9 @@ visitante com o texto atual do gratuito (`fraseGratis('treinar')`).
 | Papel da arte | Páginas | Como se ligam ao resto |
 |---|---|---|
 | **Cena protagonista** (HD-2D grande, narrativa) | Página inicial, Ranking (Salão dos Cem), Biblioteca de resumos, Cronograma (Torre do Tempo), Flashcards (Arquivo da Vila), telas de espera | A cena é o assunto; a interface em volta usa as mesmas superfícies claras. |
-| **Arte de apoio, opcional** | Menu (ícones pixel, fogo nas bordas só ao interagir, coruja e gato), Desempenho, Minha conta (crachá), Simulado Nacional | Objeto ou ícone pixel com papel claro, nunca fundo de página. |
-| **Interface clara protagonista** | Treinar, Login, Minha conta (seções), sessão de questões, Revisão, Favoritas, Caderno de erros, Admin | Porcelana e branco, verdete para agir, ouro só no destaque de começar ou celebrar; pixel só nos números (Jersey 10). |
+| **Cena de topo, conteúdo claro** (01/11/2026) | Desempenho (observatório), Revisão (estufa), Caderno de erros (campo de treino), Favoritas (gabinete das relíquias) | Só o topo é pintado (`componentes/vila/TopoVila.tsx`): título e cristal sobre a parte calma, números na bancada; da bancada para baixo, a página é a interface clara. |
+| **Arte de apoio, opcional** | Menu (ícones pixel, fogo nas bordas só ao interagir, coruja e gato), Minha conta (crachá), Simulado Nacional | Objeto ou ícone pixel com papel claro, nunca fundo de página. |
+| **Interface clara protagonista** | Treinar, Login, Minha conta (seções), sessão de questões, Admin | Porcelana e branco, verdete para agir, ouro só no destaque de começar ou celebrar; pixel só nos números (Jersey 10). |
 
 Cores semânticas (acerto, erro, aviso) e as dos gráficos não mudam. Tema escuro desenhado à parte, com os mesmos
 papéis. Modos de jogo deliberadamente sombrios (torneio, arena dos flashcards) continuam como estão.
