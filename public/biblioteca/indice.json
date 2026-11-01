@@ -5968,15 +5968,15 @@
   },
   {
    "id": "rockwood10-54-transtrocanterica",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura transtrocantérica",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
-   "edicao": "10ª edição (2025)",
+   "edicao": "10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), caps. 59 e 60",
    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
    "resumo": "Parede lateral, AO 31A, DHS ou haste, redução sem varo e a ponta-ápice: o que decide o sucesso da fixação e como as provas cobram.",
    "acesso": "gratis",
-   "minutos": 20,
+   "minutos": 33,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6027,6 +6027,46 @@
      "id": "algoritmo-dos-autores",
      "titulo": "Algoritmo dos autores",
      "radar": "confirmado"
+    },
+    {
+     "id": "as-classificacoes-pelos-dois-livros",
+     "titulo": "As classificações pelos dois livros",
+     "radar": "fundamento"
+    },
+    {
+     "id": "traco-reverso-e-parede-lateral-em-numeros",
+     "titulo": "Traço reverso e parede lateral em números",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dhs-ou-haste-o-que-os-estudos-mostram",
+     "titulo": "DHS ou haste: o que os estudos mostram",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-tecnica-segundo-o-campbell",
+     "titulo": "A técnica segundo o Campbell",
+     "radar": "confirmado"
+    },
+    {
+     "id": "detalhes-do-dhs-e-da-haste-no-rockwood",
+     "titulo": "Detalhes do DHS e da haste no Rockwood",
+     "radar": "fundamento"
+    },
+    {
+     "id": "complicacoes-o-que-faltava",
+     "titulo": "Complicações: o que faltava",
+     "radar": "fundamento"
+    },
+    {
+     "id": "depois-da-fratura-fragilidade-e-prevencao",
+     "titulo": "Depois da fratura: fragilidade e prevenção",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -6045,7 +6085,10 @@
     "trauma-1001",
     "trauma-1174",
     "trauma-0279",
-    "trauma-0961"
+    "trauma-0961",
+    "trauma-1141",
+    "trauma-1154",
+    "trauma-0870"
    ],
    "treino": [
     "trauma-1574",
