@@ -194,7 +194,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 759 | Estilo dos simulados antigos: gesso e tala (cap. 4) e consolidação e fise (cap. 2) do Rockwood and Wilkins' Fractures in Children; análises sem "também" solto | sem mudança em resumo | 28 simulados reescritos; 54 análises de alternativa corrigidas no acervo (as protegidas de Cirurgia da Mão ficaram intactas); portão novo no checar_comentarios.py |
 | 760 | Estilo dos simulados antigos: ombro e úmero (cap. 19) e coluna cervical (cap. 21) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 26 simulados reescritos no molde da banca, conceito mantido |
 | 763 | Estilo dos simulados antigos: coluna toracolombar (cap. 22) e pelve e acetábulo (cap. 23) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 25 simulados reescritos no molde da banca, conceito mantido |
-| (este PR) | Estilo dos simulados antigos: diáfise do fêmur (cap. 25 do Rockwood and Wilkins' Fractures in Children) e perna (cap. 18 do Tachdjian's Pediatric Orthopaedics) | sem mudança em resumo | 18 simulados reescritos; conceitos mantidos com o nome completo do Tachdjian's Pediatric Orthopaedics |
+| 764 | Estilo dos simulados antigos: diáfise do fêmur (cap. 25 do Rockwood and Wilkins' Fractures in Children) e perna (cap. 18 do Tachdjian's Pediatric Orthopaedics) | sem mudança em resumo | 18 simulados reescritos; conceitos mantidos com o nome completo do Tachdjian's Pediatric Orthopaedics |
+| (este PR) | Estilo dos simulados antigos: displasia do quadril (cap. 13), deficiências dos membros (cap. 21) e coxa vara (cap. 16) do Tachdjian's Pediatric Orthopaedics | sem mudança em resumo | 17 simulados reescritos no molde da banca, conceito mantido |
 
 ## Próximo
 
