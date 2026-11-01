@@ -194,6 +194,18 @@ O Tales **recusou**:
 - Celular e computador sempre.
 - Com "menos movimento", ninguém voa nem anda.
 - A animação pausa com a aba escondida ou fora da tela.
+- Acessíveis (01/11/2026): na inicial e no Salão dos Cem, gato e coruja são botões de verdade ("Falar com o gato",
+  "Falar com a coruja"), fora do `aria-hidden` da arte, com anel de foco claro (#ffe3a3) e alvo de toque de 44 px;
+  no código vêm depois do texto e da ação principal. O resto da cena continua `aria-hidden`.
+- A fala nunca cobre texto, botão, cavaleiro, esqueleto ou outro bicho: desliza, desce ou estreita; sem lugar livre
+  (celular estreito), sai da vista e fica só para o leitor de tela.
+- **Pausa na fogueira** (inicial): o próprio fogo é o botão ("Descansar na fogueira", `aria-pressed`). Luz âmbar,
+  o esqueleto senta (`fogueira`), o gato ronrona e vem uma fala de `FALAS_PAUSA_FOGUEIRA` (originais; só uma
+  piscadela de "fogueira de descanso"). Com a sequência zerada, o fogo continua apagado e a fala só convida. Acaba
+  sozinha em 20 s ou com outro toque; não conta dia nem mexe na sequência.
+- Halloween só em outubro (`fantasiaDoMes`, `epoca`): nada de teias, abóboras ou morcegos fixos nas artes do dia a
+  dia (as teias do observatório, do gabinete do Atlas e da prateleira "Cap. 404" saíram em 01/11/2026). A Cripta e os
+  monstros dos Flashcards são identidade, não sazonalidade.
 
 ## 8. Telas já no padrão (use como referência)
 

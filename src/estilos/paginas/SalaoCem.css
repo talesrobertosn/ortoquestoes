@@ -454,3 +454,11 @@
 
 /* Point and click: passar o mouse num bicho acende um contorno dourado (dá para clicar e ele fala). */
 @media (hover: hover) { .cem-heroi__visita:hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }
+
+/* Os visitantes no teclado (01/11/2026): anel de foco claro sobre o salão escuro e alvo de toque de pelo menos 44 px. */
+.cem-heroi__visita { -webkit-tap-highlight-color: transparent; }
+.cem-heroi__visita::before { content: ""; position: absolute; left: 50%; top: 50%; width: max(100%, 44px); height: max(100%, 44px); translate: -50% -50%; }
+.cem-heroi__visita:focus-visible { outline: 3px solid #ffe3a3; outline-offset: 3px; border-radius: 10px; }
+.cem-heroi__visita:focus-visible > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); }
+/* Sem lugar livre para a fala: ela sai da vista (o aviso do leitor de tela continua). */
+.cem-heroi__balao--sem-lugar { visibility: hidden; }
