@@ -198,6 +198,8 @@
   --sobre-destaque: #0f1413;
   --sombra: none;
   --sombra-media: 0 0 0 1px var(--traco);
+  /* A folha já tem borda; no escuro a sombra-anel dobraria o traço. */
+  --sombra-folha: none;
 
   --acerto-texto: #6fd3a0;
   --erro-texto: #f0958c;
