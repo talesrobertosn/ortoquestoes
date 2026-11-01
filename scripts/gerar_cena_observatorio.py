@@ -583,15 +583,7 @@ def parede() -> Camada:
                 c.p(x, y, LATAO[4])
     c.linha(mx_, my_, mx_ + 5, my_ + 6, FERRO[3])
     c.ret(mx_ + 5, my_ + 5, 2, 3, MADEIRA[5])
-    # Teias de aranha nos cantos altos.
-    for (tx, ty, sx) in ((2, y0 + 2, 1), (W - 3, y0 + 2, -1)):
-        for k in range(5):
-            a_ = k / 4 * math.pi / 2
-            c.linha(tx, ty, tx + sx * math.cos(a_) * 14, ty + math.sin(a_) * 14, "#c8c8d0", 0.25)
-        for rr in (4, 8, 12):
-            for k in range(12):
-                a_ = k / 11 * math.pi / 2
-                c.p(tx + sx * math.cos(a_) * rr, ty + math.sin(a_) * rr, "#c8c8d0", 0.25)
+    # Sem teias nos cantos altos (01/11/2026): eram resíduo de Halloween fora de época.
     # A torre é redonda: a parede escurece nas pontas.
     curva_ = 1 - 0.38 * ((_XS - 300) / 300) ** 2
     c.c[:, :, :3] *= curva_[:, :, None]

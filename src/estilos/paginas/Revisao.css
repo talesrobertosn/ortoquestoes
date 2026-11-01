@@ -144,7 +144,7 @@
 .rvx-placa-hoje dd { grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: var(--e-3); }
 .rvx-anel { width: 76px; height: 76px; }
 .rvx-anel__trilha { fill: none; stroke: rgba(255, 236, 200, 0.16); stroke-width: 10; }
-.rvx-anel__feito { fill: none; stroke: #8ee6bd; stroke-width: 10; stroke-linecap: round; transition: stroke-dasharray 0.6s ease; }
+.rvx-anel__feito { fill: none; stroke: var(--mundo-ouro); stroke-width: 10; stroke-linecap: round; transition: stroke-dasharray 0.6s ease; }
 .rvx-heroi--zerado .rvx-anel__feito { stroke: #ffd666; }
 .rvx-anel__numero { fill: var(--vl-tinta); font: 800 28px var(--fonte-texto); font-variant-numeric: tabular-nums; }
 .rvx-anel__rotulo { fill: var(--vl-tinta-2); font: 650 12px var(--fonte-texto); }

@@ -1,7 +1,8 @@
 /* A Torre do Tempo no topo do cronograma de ortopedia (31/10/2026).
    O cenário pintado (CenaTorre) ocupa a moldura; o texto fica num vidro escuro com filete dourado do lado calmo da
    arte (no computador) ou embaixo da janela da arte (no celular), sem cobrir o relógio. Vale só com .cp-onde--torre,
-   que só o cronograma de ortopedia passa: o cronograma da Mão e o calendário da Revisão não mudam. */
+   que os cronogramas passam (Ortopedia com a Torre do Tempo; Mão ingresso e título com a Oficina da Mão, na mesma
+   praça e na mesma composição); o calendário da Revisão não muda. */
 
 .cr .cp-onde.cp-onde--torre {
   --ct-tinta: #0b1315; --ct-ouro: #f0c46a; --ct-borda: rgba(232, 206, 150, 0.42);
@@ -33,8 +34,14 @@
 .cr .cp-onde--torre .cp-onde__frase, .cr .cp-onde--torre .cp-resumo { background: rgba(255, 255, 255, 0.05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
 .cr .cp-onde--torre .cp-trilho { margin-top: var(--e-1); }
 
-/* ── Celular: a janela da arte em cima (a torre inteira, do telhado à porta) e o texto embaixo, na mesma moldura. */
-.cp-onde--torre .cp-onde__janela { height: clamp(12rem, 56vw, 15rem); }
+/* ── Celular: a janela da arte em cima e o texto embaixo, na mesma moldura. A janela é baixa (01/11/2026: antes
+   56vw, cerca de 218 px) para a meta e o botão do dia caberem na primeira tela; a arte entra 25% mais perto, presa
+   pelo alto, e mostra do telhado ao pé da torre (ou da oficina), sem o chão da praça. */
+.cp-onde--torre .cp-onde__janela { height: clamp(9.5rem, 40vw, 11rem); }
+@media (max-width: 35.99rem) {
+  .cp-onde--torre .cp-onde__janela .ct-cena__mundo { bottom: auto; top: 0;
+    width: max(125cqw, 100cqh * 2.4); height: max(100cqh, 125cqw / 2.4); left: calc((100cqw - max(125cqw, 100cqh * 2.4)) * var(--ct-foco)); }
+}
 .cp-onde--torre .cp-onde__vidro { margin-top: -1.6rem; padding: 0 clamp(1rem, 4vw, 1.5rem) var(--e-4); }
 @media (min-width: 36rem) and (max-width: 63.99rem) {
   .cp-onde--torre .cp-onde__janela { height: auto; aspect-ratio: 12 / 5; }
@@ -181,3 +188,22 @@
   .cr .cp-onde--torre h1 em { white-space: nowrap; }
 }
 @media (min-width: 64rem) and (max-width: 79.99rem) { .cp-onde--torre .cp-onde__vidro { width: min(34rem, 50%); } }
+
+/* ── A regra de cor do atlas (01/11/2026), igual nas três variantes: o cristal da página inicial só na ação do dia
+   (começar, continuar, puxar o próximo dia, no topo, no cartão Hoje e no calendário); Ajustar em verdete cheio; os
+   secundários em contorno verdete. O ouro fica para assinar (conquista), não para estudar. */
+.cr.cr--torre .cp-onde__rapida.cristal, .cr.cr--torre .cp-botao.cristal {
+  background: var(--cristal); color: #fff; text-shadow: 0 1px 0 rgba(0, 40, 60, 0.6); box-shadow: var(--cristal-sombra); }
+.cr.cr--torre .cp-onde__rapida.cristal:hover:not(:disabled), .cr.cr--torre .cp-botao.cristal:hover:not(:disabled) {
+  background: var(--cristal); filter: brightness(1.08); transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 12px 28px -8px rgba(60, 200, 240, 0.85); }
+.cr.cr--torre .cp-onde__rapida.cristal:active:not(:disabled), .cr.cr--torre .cp-botao.cristal:active:not(:disabled) { transform: translateY(1px); box-shadow: var(--cristal-sombra); }
+.cr.cr--torre .cp-onde__rapida.cristal:focus-visible, .cr.cr--torre .cp-botao.cristal:focus-visible { outline: 3px solid var(--mundo-ouro); outline-offset: 3px; }
+.cr.cr--torre .cp-onde__rapida.cristal { justify-content: flex-start; padding: var(--e-2) var(--e-5) var(--e-2) var(--e-2); }
+.cr.cr--torre .cp-onde__rapida.cristal > svg { background: rgba(0, 40, 60, 0.38); color: #fff; }
+.cr.cr--torre .cp-onde__rapida.cristal small, .cr.cr--torre .cp-botao.cristal small { color: rgba(255, 255, 255, 0.9); opacity: 1; }
+.cr.cr--torre .cp-botao.cristal { display: grid; padding: 0.85rem 1rem; }
+.cr.cr--torre .cp-onde__ajustar { border: 0; background: var(--verdete); color: var(--sobre-destaque); }
+.cr.cr--torre .cp-onde__ajustar:hover { background: var(--verdete-tinta); }
+.cr.cr--torre .cp-lista__acao { border: 1.5px solid var(--verdete); background: transparent; color: var(--verdete); }
+.cr.cr--torre .cp-lista__acao:hover { background: var(--verdete-veu); }

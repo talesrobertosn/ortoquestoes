@@ -379,3 +379,32 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
 .hd-particulas--estrelas i { width: 2px; height: 2px; border-radius: 0; background: #fff8e0 !important; box-shadow: 0 0 4px rgba(255, 250, 220, 0.8) !important; animation-name: hd-estrela; }
 .hd-particulas--estrelas i:nth-child(n + 9) { display: none; }
 @keyframes hd-estrela { 0%, 100% { opacity: 0.1; } 50% { opacity: 1; } }
+
+/* Acessibilidade dos bichos e da fogueira (01/11/2026): alcançáveis pelo teclado e pelo leitor de tela, com o mesmo
+   anel de foco claro sobre a cena escura (claro e escuro) e alvo de toque de pelo menos 44 px mesmo quando o desenho é
+   menor (celular de 320 px). A área extra é invisível e não muda o lugar do bicho. */
+.hd-gato, .hd-coruja, .hd-fogueira { -webkit-tap-highlight-color: transparent; }
+.hd-gato::before, .hd-coruja::before { content: ""; position: absolute; left: 50%; top: 50%; width: max(100%, 44px); height: max(100%, 44px); translate: -50% -50%; }
+:is(.hd-gato, .hd-coruja, .hd-fogueira):focus-visible { outline: 3px solid #ffe3a3; outline-offset: 3px; border-radius: 10px; }
+.hd-gato:focus-visible .hd-gato__sprite, .hd-coruja:focus-visible > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); }
+/* Sem lugar para a fala (tela estreita demais): o balão sai da vista e a frase fica só para o leitor de tela. */
+.hd-balao--sem-lugar { clip-path: inset(50%); width: 1px; height: 1px; overflow: hidden; padding: 0; white-space: nowrap; box-shadow: none; pointer-events: none; }
+
+/* A pausa na fogueira: o próprio fogo é o botão (nada desenhado por cima). No passar do mouse e no foco a luz sobe um
+   pouco; na pausa, um calor âmbar cobre o acampamento por alguns segundos e a chama ganha brilho. */
+.hd-fogueira { padding: 0; border: 0; background: none; cursor: pointer; pointer-events: auto; z-index: 1; }
+.hd-calor { pointer-events: none; border-radius: 50%; opacity: 0; mix-blend-mode: screen; transition: opacity 1.4s ease;
+  background: radial-gradient(closest-side, rgba(255, 168, 72, 0.42), rgba(255, 120, 40, 0.18) 55%, transparent); }
+.hd-palco--pausa .hd-calor { opacity: 1; }
+.hd-palco:has(.hd-fogueira:is(:hover, :focus-visible)) .hd-luz-fogo { --luz: 0.75; }
+.hd-palco--noite:has(.hd-fogueira:is(:hover, :focus-visible)) .hd-luz-fogo { --luz: 1.1; }
+.hd-palco--pausa .hd-luz-fogo { --luz: 1.15; }
+.hd-palco--pausa .hd-fogo:not(.hd-fogo--5, .hd-fogo--6) { filter: drop-shadow(0 0 16px rgba(255, 180, 80, 0.8)); }
+/* O quadro de cinema da pausa: vinheta quente nas bordas (some devagar), calor que respira e fagulhas mais altas. */
+.hd-vinheta { inset: 0; pointer-events: none; opacity: 0; transition: opacity 1.6s ease;
+  background: radial-gradient(ellipse 30% 46% at 50% 70%, transparent 35%, rgba(24, 10, 2, 0.45) 100%); }
+.hd-palco--pausa .hd-vinheta { opacity: 1; }
+.hd-palco--pausa .hd-calor { animation: hd-respira 4.8s ease-in-out 1.4s infinite; }
+@keyframes hd-respira { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.78; transform: scale(1.05); } }
+.hd-brasas--pausa i { width: 2px; height: 2px; background: #ffe2a0; box-shadow: 0 0 5px #ffb050, 0 0 1px #fff3d0; }
+@media (prefers-reduced-motion: reduce) { .hd-calor, .hd-vinheta { transition: none; } .hd-palco--pausa .hd-calor { animation: none; } }

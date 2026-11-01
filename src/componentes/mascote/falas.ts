@@ -91,6 +91,23 @@ export const FALAS_HALLOWEEN: string[] = [
   'Abóbora cheia de doces e cabeça cheia de conceitos.',
 ]
 
+/**
+ * A pausa na fogueira da página inicial (01/11/2026): quem toca no fogo senta junto com o esqueleto um instante.
+ * Falas próprias, nenhuma tirada de jogo; a última é a única piscadela para quem conhece fogueiras de descanso.
+ */
+export const FALAS_PAUSA_FOGUEIRA: readonly string[] = [
+  'Senta um pouco. Ninguém consolida fratura correndo.',
+  'Fogo baixo, ombros soltos. Daqui a pouco a gente segue.',
+  'Descansar também faz parte do protocolo.',
+  'Pausa curta, cabeça fresca. A próxima questão espera.',
+  'Fogueira acesa, caminho guardado. Você volta de onde parou.',
+]
+/** A mesma pausa com a fogueira apagada (sequência zerada): o descanso não acende o fogo, só convida. */
+export const FALAS_PAUSA_APAGADA: readonly string[] = [
+  'Fogo apagado não é fim de jornada. Uma questão hoje e ele volta.',
+  'Até brasa fria esquenta de novo. Começa com uma questão.',
+]
+
 export const FALAS: Record<IdComportamento, string[]> = {
   ler: [
     'Esse capítulo do Rockwood é melhor que romance.',

@@ -5,6 +5,7 @@ import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixe
 import { GatoPixel } from '../mascote/GatoPixel'
 import type { IdLinhaGato } from '../mascote/sprites'
 import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../mascote/falasBichos'
+import '../../estilos/componentes/Cristal.css'
 import './TopoVila.css'
 
 /*

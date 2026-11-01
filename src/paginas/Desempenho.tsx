@@ -305,7 +305,7 @@ export function DadosLocais() {
           <span>Mostrando {descreverPeriodo(periodo)}. Sequência, favoritas, Ranking e emblemas contam sempre o total.</span>
         </div>
         <div className="ds-periodo__controles">
-          <div className="ds-seg" role="group" aria-label="Escolher período">
+          <div className="ds-seg seletor" role="group" aria-label="Escolher período">
             {PERIODOS.map((opcao) => (
               <button key={opcao.tipo} type="button" aria-pressed={periodo.tipo === opcao.tipo}
                 onClick={() => definirPeriodo(opcao.tipo === 'desde' ? { tipo: 'desde', desde: periodo.desde ?? somarDias(hojeBR(), -29) } : { tipo: opcao.tipo, desde: periodo.desde })}>
@@ -344,7 +344,7 @@ export function DadosLocais() {
                 <h3 id="ds-temas-titulo">Por tema</h3>
                 <p>{ordemTemas === 'maior' ? 'Do maior acerto para o menor.' : 'Do menor acerto para o maior.'} Toque em um tema para treinar só ele. Com menos de 5 respostas, o número ainda é uma pista, não um diagnóstico.</p>
               </div>
-              {porTema.length > 1 && <div className="ds-seg ds-seg--mini" role="group" aria-label="Ordem dos temas">
+              {porTema.length > 1 && <div className="ds-seg ds-seg--mini seletor" role="group" aria-label="Ordem dos temas">
                 <button type="button" aria-pressed={ordemTemas === 'maior'} onClick={() => definirOrdemTemas('maior')}>Maior acerto</button>
                 <button type="button" aria-pressed={ordemTemas === 'menor'} onClick={() => definirOrdemTemas('menor')}>Menor acerto</button>
               </div>}
@@ -483,7 +483,7 @@ export function DadosLocais() {
           <p className="ds-capitulo__selo"><b aria-hidden="true">3</b> O que fazer agora</p>
           <h2 id="ds-cap-agora">{nome ? `${nome}, sua próxima sessão` : 'Sua próxima sessão'}</h2>
         </header>
-        <div className="ds-agora">
+        <div className="ds-agora folha">
           <ol className="ds-passos">
             {temaFragil && temDestaques && <li className="ds-passo">
               <span className="ds-moeda" aria-hidden="true">1</span>
@@ -518,7 +518,7 @@ export function DadosLocais() {
               <a className="ds-passo__acao" href={href('/treinar?limite=10')}>Treinar 10 <Icone nome="direita" tamanho={16} /></a>
             </li>}
           </ol>
-          <a className="botao ds-agora__treinar" href={href('/treinar')}>
+          <a className="botao botao--principal ds-agora__treinar" href={href('/treinar')}>
             <Icone nome="filtro" tamanho={22} />
             <span><strong>Montar uma sessão</strong><small>Escolha prova, tema e quantidade no Treinar</small></span>
           </a>

@@ -291,8 +291,7 @@ def parede() -> Camada:
         c.ret(x0 + 24, 93, 1, 19, "#9a5a34")
         c.ret(x0 + 3, 95, 18, 14, "#6a3420")
         c.ret(x0 + 3, 95, 18, 1, "#8a4a2c")
-    teia(c, W - 1, 8, 22, math.pi * 0.5, math.pi * 1.0)
-    teia(c, 57, 8, 9, 0.0, math.pi * 0.5)
+    # Sem teias nos cantos (01/11/2026): eram resíduo de Halloween fora de época; o gabinete é estudo, não susto.
     c.ret(0, 113, W, 5, MOGNO[2])
     c.ret(0, 113, W, 1, "#8a4a2c")
     for y in range(88, 118):

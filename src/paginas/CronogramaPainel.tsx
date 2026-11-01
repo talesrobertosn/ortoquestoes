@@ -84,8 +84,8 @@ export function OndeVoceEsta({ plano, calculo, previa = false, selo, aoAjustar, 
         </div>
         <div className="cp-onde__acoes">
           {acao && (acao.href
-            ? <a className={'cp-onde__rapida' + (acao.ouro ? ' cp-onde__rapida--ouro' : '')} href={acao.href} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></a>
-            : <button type="button" className={'cp-onde__rapida' + (acao.ouro ? ' cp-onde__rapida--ouro' : '')} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></button>)}
+            ? <a className={'cp-onde__rapida' + (acao.ouro && acao.href ? ' cp-onde__rapida--ouro' : ' cristal')} href={acao.href} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></a>
+            : <button type="button" className={'cp-onde__rapida' + (acao.ouro && acao.href ? ' cp-onde__rapida--ouro' : ' cristal')} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></button>)}
           {/* Trocar data, folga ou ritmo fica no topo: antes era preciso rolar a página inteira. */}
           {aoAjustar && <button type="button" className="cp-onde__ajustar" onClick={aoAjustar} aria-label="Ajustar o cronograma: data, ritmo, folgas" title="Ajustar o cronograma: data, ritmo, folgas"><Icone nome="lapis" tamanho={15} /> Ajustar</button>}
         </div>
@@ -177,8 +177,8 @@ export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, co
         </ol>
         {totalMin > 0 && <p className="cp-hoje__total"><span>Seu dia: <b>~{formatarTempo(totalMin)}</b></span><span>{faltaMin >= 1 ? <>Falta: <b>~{formatarTempo(faltaMin)}</b></> : <b>Dia completo</b>}</span></p>}
         {botao && (botao.href
-          ? <a className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} href={botao.href} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</a>
-          : <button type="button" className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</button>)}
+          ? <a className={'cp-botao' + (botao.ouro && botao.href ? ' cp-botao--ouro' : ' cristal')} href={botao.href} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</a>
+          : <button type="button" className={'cp-botao' + (botao.ouro && botao.href ? ' cp-botao--ouro' : ' cristal')} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</button>)}
         {adiantar}
         {extras.length > 0 && <section className="cp-extras" aria-labelledby="cp-extras-titulo">
           <p className="cp-extras__titulo"><span id="cp-extras-titulo">Se sobrar tempo</span><small>não conta na meta</small></p>

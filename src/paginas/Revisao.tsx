@@ -195,7 +195,7 @@ export function Revisao() {
         <p>{textoApoio}</p>
         <div className="vl-acoes">
           {hojeTotal ? <>
-            <button type="button" className="vl-acao rvx-comecar" onClick={() => iniciarIds(idsHoje)}>
+            <button type="button" className="vl-acao cristal rvx-comecar" onClick={() => iniciarIds(idsHoje)}>
               <Icone nome="raio" tamanho={20} />
               <span><strong>Começar revisão</strong><small>{questoes(hojeTotal)} · ~{minutosPara(hojeTotal)} min</small></span>
             </button>
@@ -203,13 +203,13 @@ export function Revisao() {
               <Icone nome="relogio" tamanho={16} /> Só 5 minutos <small>{curta}</small>
             </button>}
           </> : zerado ? <>
-            {proximoDia && <button type="button" className="vl-acao rvx-comecar" onClick={() => iniciarIds(proximoDia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>
+            {proximoDia && <button type="button" className="vl-acao cristal rvx-comecar" onClick={() => iniciarIds(proximoDia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>
               <Icone nome="direita" tamanho={20} />
               <span><strong>Adiantar {Math.min(REVISOES_CINCO_MINUTOS, proximoDia.ids.length)}</strong><small>de {rotuloDia(proximoDia.inicio)}</small></span>
             </button>}
             <a className="vl-vidro rvx-curta" href={href('/treinar')}>Treinar questões novas</a>
           </> : <>
-            <a className="vl-acao rvx-comecar" href={href('/treinar')}><Icone nome="alvo" tamanho={20} /><span><strong>Treinar questões novas</strong><small>As que você errar voltam aqui no dia certo</small></span></a>
+            <a className="vl-acao cristal rvx-comecar" href={href('/treinar')}><Icone nome="alvo" tamanho={20} /><span><strong>Treinar questões novas</strong><small>As que você errar voltam aqui no dia certo</small></span></a>
             {proximoDia && <button type="button" className="vl-vidro rvx-curta" onClick={() => iniciarIds(proximoDia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>Adiantar {Math.min(REVISOES_CINCO_MINUTOS, proximoDia.ids.length)} de {rotuloDia(proximoDia.inicio)}</button>}
           </>}
         </div>

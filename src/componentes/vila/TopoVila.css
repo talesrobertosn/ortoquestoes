@@ -88,16 +88,14 @@
 .vl-placa__valor small { font-size: 0.55em; color: var(--vl-tinta-2); }
 .vl-placa__apoio { color: var(--vl-tinta-2); font-size: var(--meta); line-height: 1.35; }
 
-/* Botões sobre a cena: o principal em ouro (a ação do dia), os outros em vidro escuro. */
+/* Botões sobre a cena: o principal é o cristal de começar (Cristal.css, o mesmo da página inicial), com o ícone numa
+   pastilha escura; os outros em vidro escuro. */
 .vl-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2) var(--e-3); }
-.vl-acao { display: inline-flex; align-items: center; gap: 0.7rem; min-height: 52px; padding: 0.45rem 1.15rem 0.45rem 0.55rem; border: 0; border-radius: 14px;
-  background: linear-gradient(180deg, #ffd98a, #f0b54a); color: #2a1a06; font: inherit; font-weight: 800; text-align: left; text-decoration: none; cursor: pointer;
-  box-shadow: 0 0 0 1px rgba(255, 236, 190, 0.6) inset, 0 10px 26px -8px rgba(255, 170, 60, 0.65); transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.vl-acao:hover { color: #2a1a06; transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(255, 236, 190, 0.7) inset, 0 14px 30px -8px rgba(255, 170, 60, 0.8); }
-.vl-acao > svg { flex: none; width: 2.3rem; height: 2.3rem; padding: 0.45rem; border-radius: 10px; background: #2a1a06; color: #ffd98a; }
+.vl-acao.cristal { justify-content: flex-start; gap: 0.7rem; min-height: 52px; padding: 0.45rem 1.25rem 0.45rem 0.55rem; text-align: left; }
+.vl-acao.cristal > svg { flex: none; width: 2.3rem; height: 2.3rem; padding: 0.45rem; border-radius: 8px; background: rgba(0, 40, 60, 0.42); color: #fff; }
 .vl-acao span { display: grid; line-height: 1.2; }
 .vl-acao strong { font-size: 1.05rem; }
-.vl-acao small { font-size: var(--meta); font-weight: 650; opacity: 0.8; }
+.vl-acao small { font-size: var(--meta); font-weight: 650; opacity: 0.9; }
 .vl-vidro { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; padding: 0 1rem; border: 0; border-radius: 12px; background: rgba(var(--vl-veu), 0.62);
   color: var(--vl-tinta); font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; backdrop-filter: blur(8px);
   box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.22); transition: background 0.15s ease, box-shadow 0.15s ease; }
@@ -107,7 +105,7 @@
 @media (prefers-reduced-motion: reduce) {
   .vl-palco__chama, .vl-palco__poeira i, .vl-balao { animation: none !important; }
   .vl-palco__poeira { display: none; }
-  .vl-acao, .vl-vidro { transition: none; }
+  .vl-vidro { transition: none; }
 }
 
 /* Celular e tablet: a arte vira uma janela inteira em cima; título, mensagem e bancada descem, nessa ordem. */
@@ -136,7 +134,7 @@
   .vl-placa__valor { font-size: 1.9rem; }
   .vl-placa__apoio { font-size: 0.72rem; }
   .vl-acoes { display: grid; grid-template-columns: minmax(0, 1fr); width: 100%; }
-  .vl-acao { width: 100%; box-sizing: border-box; min-height: 58px; }
+  .vl-acao.cristal { width: 100%; box-sizing: border-box; min-height: 58px; }
   .vl-vidro { justify-content: center; }
 }
 @media print {

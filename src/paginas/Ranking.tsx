@@ -165,7 +165,7 @@ export function Ranking() {
     <div className="cem-barra">
       <AbasRanking atual="questoes" conquistadas={conquistadas} total={totalConquistas} />
       {(sessao || visitanteDisponivel) && <div className="cem-barra__linha">
-        <div className="cem-periodo" role="radiogroup" aria-label="Período do ranking">
+        <div className="cem-periodo seletor" role="radiogroup" aria-label="Período do ranking">
           {(['geral', 'semana'] as const).map((p) => (
             <button key={p} type="button" role="radio" aria-checked={periodo === p} className="cem-periodo__opcao" onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
           ))}
