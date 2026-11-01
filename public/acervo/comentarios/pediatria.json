@@ -18471,45 +18471,17 @@
  },
  "pediatria-0981": {
   "conceito": "**Fratura fisária desviada com neuropatia do mediano e grande edema volar favorece redução fechada e fixação percutânea com fio liso.** A estabilização permite manter curativo e imobilização menos constritivos, em vez de depender de flexão extrema ou molde volar apertado para segurar a redução.\n\nO periósteo volar rompido deixa o sangramento dissecar os tecidos volares e o túnel do carpo. Aumentar pressão com gesso ou posicionamento pode manter o sofrimento neural. Por isso o resumo apresenta esse cenário como uma das melhores indicações de fixação.\n\n**O exame do nervo muda a conduta, mas nem toda neuropatia tem o mesmo mecanismo.** Uma contusão pode estar presente desde o trauma e melhorar depois que o fragmento é reduzido. Uma compressão mantida no túnel do carpo pode persistir apesar do alinhamento. Um nervo normal antes e alterado depois da redução levanta a hipótese de aprisionamento. Registrar a sequência dos exames permite distinguir essas situações; chamar todas apenas de “neuropraxia da fratura” apaga informações importantes.\n\n| Evolução descrita | Questão clínica que precisa ser respondida |\n|---|---|\n| Déficit inicial que melhora após redução | A contusão/tração está regredindo? |\n| Déficit ou compressão persistente com edema volar | Há pressão mantida no túnel ou nos compartimentos volares? |\n| Função boa antes e pior depois da redução | O nervo pode ter ficado preso no foco? |\n\n**Por que estabilizar ajuda as partes moles.** Sem fixação, pode haver a tentação de usar um molde muito apertado ou grande flexão para impedir novo desvio. Nesse caso, a medida que mantém o osso alinhado pode agravar a pressão ao redor do nervo. O fio liso fornece estabilidade e permite tala, curativo ou gesso mais frouxos. A vantagem é essa liberdade de proteger os tecidos, não a ideia de que um fio, por si só, descomprima o túnel do carpo.\n\n**Leia “Neuropatia, edema e cotovelo flutuante”, na Biblioteca.** Avalie redução, estabilidade e pressão como decisões conectadas, sem substituir o cuidado com o nervo por uma boa radiografia.\n\n**Por que esta questão foi criada.** O TARO 2015 cobrou a urgência do túnel do carpo agudo. Este simulado aborda a estabilização da fratura que permite proteger as partes moles nesse cenário.",
-  "correta": "**D: redução fechada e fio liso percutâneo.** É a conduta preferida para obter estabilidade sem exigir imobilização apertada ou flexão excessiva. A evolução do mediano precisa continuar sendo acompanhada e compressão persistente deve ser tratada.\n\nDepois de escolher D, ainda restam duas tarefas distintas: confirmar estabilidade da fratura e reexaminar o mediano. Persistência de compressão exige decisão própria de descompressão. Fixação e liberação neural tratam componentes diferentes do problema e não devem ser confundidas como se uma garantisse a outra.",
+  "correta": "**D: redução e fio percutâneo.** A fixação permite curativo e imobilização menos constritivos (Rockwood and Wilkins' Fractures in Children, cap. 9).",
   "incorretas": {
-   "A": "**Flexão do punho e gesso constritivo podem manter a neuropatia e elevar pressões.** Segurar a redução não justifica acrescentar compressão volar. A fixação proposta em D permite proteção mais frouxa dos tecidos já edemaciados.\n\nÉ uma alternativa atraente porque flexionar pode parecer uma maneira de segurar o fragmento dorsal. O custo, porém, é aumentar restrição volar justamente onde já há sangramento e edema. O objetivo não é obter estabilidade à custa da perfusão e da função neural.",
-   "B": "**Esperar o edema regredir deixa o fragmento desviado e o nervo sob possível pressão ou tração.** A redução é parte de remover a agressão. Uma tala pode integrar a proteção, mas não substitui tratar o desvio e avaliar o componente compressivo.\n\nA sequência proposta adia a remoção de uma possível causa de pressão ou tração. O capítulo não recomenda aguardar o nervo melhorar enquanto o fragmento permanece desviado para só então reduzir.",
-   "C": "**Placa volar bloqueada não é a primeira escolha descrita para a fise imatura nesse cenário.** O resumo reserva placas sobretudo para maior maturidade e padrões específicos. Fio liso oferece estabilização com menor exigência de exposição, sem dispensar os cuidados fisários e neurais."
+   "A": "**O gesso em flexão** aumenta a pressão no túnel do carpo.",
+   "B": "**Adiar a redução** mantém o nervo comprimido.",
+   "C": "**A placa** não é a fixação da fratura fisária da criança."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Tratamento cirúrgico: quando e como; Exame, nervos e imagem."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "wilkins9-08-radio-ulna-distal-crianca",
-     "titulo": "Fraturas do rádio e da ulna distais na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 9 · Fractures of the Distal Radius and Ulna",
-     "secoes": [
-      "Tratamento cirúrgico: quando e como",
-      "Exame, nervos e imagem"
-     ],
-     "blocos": [
-      "tratamento-cirurgico-quando-e-como-92091ec3",
-      "tratamento-cirurgico-quando-e-como-bf30a4c4",
-      "tratamento-cirurgico-quando-e-como-d9e0edcd",
-      "tratamento-cirurgico-quando-e-como-f282f618",
-      "exame-nervos-e-imagem-168b8922"
-     ],
-     "sha256": "a6b6d8f15496f271f1b0f7529eabab3beef9ecd0df97959c3ec802e905b0c873",
-     "trechosSha256": "a8df4e9b48eae133f07d798f992e0590ebacedb454e7c83440ea6677e4ba6a1d"
-    }
-   ],
-   "questaoSha256": "2e7ffe3de0c550b693a7553957a1efa231838f9bc2050ef1a522fc08c12de32d",
-   "comentarioSha256": "40e1ee66c9b7d6646ff3fa262a5126c263038df0b1a88156c192b9bb21542754"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0982": {
   "conceito": "**A fise do punho da ginasta.** A carga axial repetitiva no punho estendido, típica da ginástica (e descrita também em luta, break dance e líderes de torcida), produz **lesão fisária por estresse**, quase sempre no **rádio**. Fatores predisponentes: treino excessivo, técnica ruim e progressão rápida demais de nível. A criança refere dor difusa, \"dolorida\", ligada à atividade, na metáfise e na fise distal do rádio, com dor à palpação da fise dorsal e à extensão contra resistência.\n\n**A imagem.** As radiografias geralmente fazem o diagnóstico: **alargamento da fise**, alterações **císticas e escleróticas** na face metafisária, bico da epífise e neoformação reativa (figura 8-4). Na lesão inicial, a radiografia pode ser normal; a cintilografia é sensível e pouco específica, e a RM em geral é diagnóstica. Nos casos avançados aparecem o fechamento precoce e a barra fisária.\n\n**A variância ulnar, para entender a sequela.** É a relação de comprimento entre rádio e ulna no punho: ulna mais longa, variância **positiva**; mais curta, **negativa**. Na criança, mede-se de metáfise a metáfise (técnica de HAFNER, figura 8-21), na radiografia padronizada com ombro abduzido 90 graus, cotovelo fletido 90 graus e antebraço em rotação neutra. Normalmente o radiocarpo recebe cerca de **80%** da carga axial e o ulnocarpo **20%**; **2,5 mm** de variância positiva **dobram** a carga ulnocárpica. A variância positiva se associa a lesões da fibrocartilagem triangular; a negativa, à doença de KIENBÖCK.\n\n**A sequela típica.** Com a fise do rádio fechada, a ulna continua crescendo: **variância ulnar positiva**, com dor por **impacto ulnocarpal** e lesão da fibrocartilagem triangular. O impacto dói no desvio ulnar, na extensão e na compressão, e é comum em esportes de carga repetitiva no punho (hóquei de campo, lacrosse, ginástica).\n\n**O tratamento.** Primeiro **repouso**: gesso curto por algumas semanas, se preciso, ou tala no paciente colaborativo, até a dor passar; retorno ao esporte gradual, em 3 a 6 meses, com ajuste de técnica e treino. Se a parada se instalar, a ressecção da barra raramente é possível, porque a parada por estresse costuma ser difusa. Sem crescimento excessivo da ulna, a **epifisiodese distal da ulna** previne o impacto; com crescimento excessivo e dor, **osteotomia de encurtamento da ulna** (oblíqua ou em Z, mais distal na metáfise; a transversa tem mais pseudartrose), avaliando e reparando a fibrocartilagem triangular.\n\n> **Na prova:** a lesão fisária por estresse é do **rádio distal da ginasta**; a parada do rádio gera **variância ulnar positiva**, **impacto ulnocarpal** e lesão da **fibrocartilagem triangular**.\n\n**Por que esta questão foi criada.** O TARO 2021 cobrou que a lesão fisária por estresse ocorre mais nos ossos do antebraço dos ginastas. Esta gêmea dá o passo seguinte do mesmo fato, a consequência da parada da fise, que o capítulo descreve nas três seções do tema.",
@@ -19287,52 +19259,17 @@
  },
  "pediatria-0996": {
   "conceito": "**As partes moles que acompanham o fragmento explicam seu desvio.** Na fratura condilar lateral, o traço começa na metáfise posterolateral e segue para a fise e a articulação. O rasgo fica entre o braquiorradial e o extensor radial longo do carpo. Os **extensores radiais longo e curto do carpo e os colaterais laterais** continuam ligados ao fragmento distal.\n\nA tração dos músculos contribui para rotação, deslocamento e retardo de consolidação. Flexionar o punho os estira e pode aumentar a dor no cotovelo. O braquiorradial permanece proximal ao rasgo. Com maior deslocamento, as cápsulas podem romper; portanto, não se deve imaginar um fragmento sustentado apenas por cápsula íntegra. A porção cartilaginosa ainda não ossificada também faz o fragmento real ser maior do que a lasca visível na radiografia.\n\n**Por que esta questão foi criada.** As inserções permitem deduzir a força deformante e a dor ao movimentar o punho, indo além da identificação de um músculo isolado.",
-  "correta": "**D: extensores radiais e colaterais laterais.** Essas são as estruturas que o capítulo descreve mantidas no fragmento. A ação dos radiais ajuda a compreender o deslocamento e a dor provocada ao estirá-los pela flexão do punho.",
+  "correta": "**D: extensores e colaterais laterais.** Explicam o desvio do fragmento (Rockwood and Wilkins' Fractures in Children, cap. 16 da 9ª ed.).",
   "incorretas": {
-   "A": "**O braquiorradial fica no úmero, acima do rasgo.** A combinação com tríceps não reproduz as inserções mantidas no fragmento distal. A referência decisiva é o intervalo entre braquiorradial e extensor radial longo.",
-   "B": "**Braquial e cápsula anterior não formam o conjunto descrito.** Nos casos com maior desvio, a cápsula anterior pode inclusive estar rota. Os músculos que continuam no fragmento e participam de seu deslocamento são os radiais do carpo.",
-   "C": "**Flexores e pronadores remetem à mecânica do lado medial.** O fragmento lateral leva os extensores radiais e os ligamentos laterais. Trocar os grupos modifica a explicação da direção das forças sobre o fragmento."
+   "A": "**Os flexores** se inserem no epicôndilo medial.",
+   "B": "**O braquial** se insere na ulna.",
+   "C": "**O pronador e a massa flexora** são mediais."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções O fragmento: anatomia, mecanismo e desvio."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas9-16-condilo-lateral",
-     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
-     "secoes": [
-      "O fragmento: anatomia, mecanismo e desvio"
-     ],
-     "blocos": [
-      "o-fragmento-anatomia-mecanismo-e-desvio-e4241fba",
-      "o-fragmento-anatomia-mecanismo-e-desvio-d44833b4",
-      "o-fragmento-anatomia-mecanismo-e-desvio-54286885",
-      "o-fragmento-anatomia-mecanismo-e-desvio-98e81380",
-      "o-fragmento-anatomia-mecanismo-e-desvio-3e515101",
-      "o-fragmento-anatomia-mecanismo-e-desvio-b509be4c",
-      "o-fragmento-anatomia-mecanismo-e-desvio-1922cbfe",
-      "o-fragmento-anatomia-mecanismo-e-desvio-58e6548e",
-      "o-fragmento-anatomia-mecanismo-e-desvio-3741913d",
-      "o-fragmento-anatomia-mecanismo-e-desvio-bcbb6963",
-      "o-fragmento-anatomia-mecanismo-e-desvio-756f8057",
-      "o-fragmento-anatomia-mecanismo-e-desvio-80601c13",
-      "o-fragmento-anatomia-mecanismo-e-desvio-fa19b929"
-     ],
-     "sha256": "298498fbe9a7b67342835eb8900ff675c2fc1349bd7694c50c12ce311ca2bb4c",
-     "trechosSha256": "1b1d107b12f6dcae8d769c4c961c2c95d6196b195b81b0775964b753b17e53b2"
-    }
-   ],
-   "questaoSha256": "634e30ac15beb010f25bae70c5210e3eadf17a1e38d9c1e8df3437e3d9cb7176",
-   "comentarioSha256": "49fe7959b9ea091a2e0bd766589b9ce5a0604ad1b7d60e8b08daffdff4ada0de"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-0997": {
   "conceito": "**O objetivo da redução é reconstruir a articulação, não apenas alinhar a borda externa do osso.** No côndilo lateral infantil, a cortical lateral pode sofrer **deformação plástica**, isto é, mudar de forma sem fornecer um encaixe fiel do alinhamento articular original. Se o cirurgião usa só essa cortical como guia, pode deixar um degrau na superfície articular.\n\nPor isso, o capítulo orienta julgar a redução diretamente na articulação, sobretudo na tróclea. A dissecção fica anterior para preservar os vasos que entram posteriormente no fragmento. Boa visão e proteção vascular precisam coexistir: ampliar a liberação posterior para tentar encaixar uma cortical deformada pode prejudicar a vitalidade sem garantir congruência.\n\n**Por que esta questão foi criada.** A questão aplica a diferença entre aparência cortical e congruência articular ao julgamento da redução.",
@@ -19780,59 +19717,17 @@
  },
  "pediatria-1005": {
   "conceito": "**O ulnar pode sofrer muitos anos depois da fratura.** Na pseudartrose condilar lateral, a migração do fragmento favorece valgo progressivo, alterando o trajeto do nervo. A neuropatia é gradual e o capítulo descreve **déficit motor antes do sensitivo**, com intervalo médio até os sintomas que pode chegar a duas décadas. Não se trata da mesma situação de um déficit imediatamente após trauma ou operação.\n\nO tratamento pode incluir descompressão in situ ou transposição anterior. Os autores preferem a **transposição anterior subcutânea**, muitas vezes como parte de uma reconstrução que também considera o valgo e a pseudartrose. A escolha citada não transforma a descompressão in situ numa técnica inexistente; a pergunta exige a preferência desse capítulo e a ordem dos déficits.\n\n**Por que esta questão foi criada.** A apresentação tardia é ligada à deformidade da pseudartrose, e a questão cobra a descrição e a preferência específicas dos autores.",
-  "correta": "**B: motor e transposição anterior subcutânea.** É a ordem e a preferência explicitadas. A neuropatia progride lentamente num cotovelo deformado, e o planejamento pode precisar tratar também o contexto ósseo, em vez de considerar só o nervo isolado.",
+  "correta": "**B: motor; transposição anterior subcutânea.** O valgo progressivo alonga o trajeto do nervo (Rockwood and Wilkins' Fractures in Children, cap. 16 da 9ª ed.).",
   "incorretas": {
-   "A": "**A ordem motora está correta, mas não a preferência cirúrgica solicitada.** A descompressão in situ é uma opção descrita. Os autores, porém, preferem transposição anterior subcutânea para a situação tardia discutida.",
-   "C": "**A ordem e a preferência não correspondem ao capítulo.** A perda motora vem antes da alteração sensitiva, e a transposição anterior subcutânea é a escolhida pelos autores. A descompressão in situ não é impossível, apenas não responde ao que foi perguntado.",
-   "D": "**A cirurgia corresponde à preferência, mas a sequência dos sintomas está invertida.** O capítulo relata déficit motor primeiro e sensitivo depois. Não se deve importar automaticamente para esse quadro a expectativa de que toda compressão nervosa comece por parestesias."
+   "A": "**A descompressão in situ** não corrige o estiramento do nervo no valgo.",
+   "C": "**O déficit sensitivo** não é o primeiro descrito.",
+   "D": "**Sensitivo** troca o primeiro déficit."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fraturas do côndilo lateral e do capítulo na criança, Biblioteca OrtoQuestões, seções Retardo de consolidação, pseudartrose e o nervo ulnar."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas9-16-condilo-lateral",
-     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
-     "secoes": [
-      "Retardo de consolidação, pseudartrose e o nervo ulnar"
-     ],
-     "blocos": [
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-e5b82f0d",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-1741217e",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-45b85cd6",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-2d1eb3c4",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-8054fa6f",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-0d696d6c",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-33910f28",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-7e3819ea",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b1c08cb3",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-b9942c7f",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-9518a859",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-d6217555",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-4700d601",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-81610a23",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-98c1222b",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-3bf5e0b2",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-acdb8407",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-82d9deaa",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-237d5d0b",
-      "retardo-de-consolidacao-pseudartrose-e-o-nervo-u-288002d8"
-     ],
-     "sha256": "298498fbe9a7b67342835eb8900ff675c2fc1349bd7694c50c12ce311ca2bb4c",
-     "trechosSha256": "c968ed4e9be150db48fcd86bc988773e6064472dc113e6581815bf29cf60b209"
-    }
-   ],
-   "questaoSha256": "ec6b080df1ec73ac997b66f6de43edff4f9fdbd691af0b729f695660f8435f17",
-   "comentarioSha256": "8d3875dcf4543751a031717b707b43d4017e7af07474d0b9cbccf48db19bff40"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1006": {
   "conceito": "**Fixar uma pseudartrose antiga exige avaliar se o benefício compensa a agressão necessária ao fragmento.** Os critérios de Flynn destacados no capítulo são **grande fragmento metafisário, fise aberta e viável e desvio menor que 1 cm** em relação à superfície articular. O objetivo é obter união preservando a irrigação, sem uma mobilização extensa que aumente risco de osteonecrose e rigidez.\n\nNa técnica descrita para casos selecionados, expõe-se a metáfise, usa-se compressão e enxerto lateral extra-articular e evita-se dissecção intra-articular ou posterior. A queixa estética ou o ulnar tardio podem exigir outras estratégias, como osteotomia e transposição, e não substituem os critérios para fixar a pseudartrose. O limite em centímetros da pseudartrose não deve ser confundido com os milímetros usados na fratura aguda.\n\n**Por que esta questão foi criada.** O número só faz sentido ligado à viabilidade do fragmento e ao risco de tentar uma reconstrução tardia extensa.",
@@ -21216,63 +21111,17 @@
  },
  "pediatria-1028": {
   "conceito": "**Reconstruir a articulação vem antes de fixar as colunas à diáfise.** Na fratura em T, os côndilos estão separados entre si e do segmento proximal. Primeiro, eles são reunidos para formar um bloco articular congruente; assim, a lesão é convertida numa fratura supracondiliana de duas partes. Depois, esse bloco é alinhado e fixado às colunas. Fixar uma coluna com a articulação ainda mal reduzida pode impedir a correção do desnível articular.\n\nHá fios provisórios durante a redução. Na reconstrução definitiva, o capítulo destaca um **parafuso transverso de compressão entre os côndilos**, pelo centro do eixo de rotação, em geral de lateral para medial. Um fio transverso provisório impede a rotação enquanto se fura e comprime. Só então se consolida a fixação das colunas com placas. As fossas do olécrano e do coronoide devem ficar livres de fragmentos para não bloquear o movimento.\n\n**Por que esta questão foi criada.** A sequência articular antes das colunas é o princípio central da reconstrução e evita fixar uma redução intra-articular inadequada.",
-  "correta": "**D: parafuso transverso de compressão entre os côndilos.** Ele une os fragmentos articulares, restabelece o bloco distal e permite tratar o componente supracondiliano em seguida. O enunciado se refere à sequência da reconstrução; não significa que o parafuso seja colocado antes de qualquer fio provisório de redução.",
+  "correta": "**D: parafuso intercondilar.** Reconstrói-se primeiro o bloco articular, depois fixam-se as colunas à diáfise (Rockwood and Wilkins' Fractures in Children, cap. 14 da 9ª ed.).",
   "incorretas": {
-   "A": "**A placa medial estabiliza uma coluna, mas não resolve primeiro a divisão entre os côndilos.** Se ela prender um fragmento à diáfise antes de obter congruência articular, pode dificultar a correção do outro. A prioridade é reunir a articulação; a fixação medial vem depois.",
-   "B": "**Fios podem ser usados provisoriamente, mas fios cruzados nas colunas não substituem a reconstrução inicial do bloco articular.** O princípio cobrado é obter compressão transcondilar e congruência antes de fixar o bloco ao segmento proximal. Confundir redução provisória com a ordem da reconstrução leva a esta opção.",
-   "C": "**A placa posterolateral também pertence à etapa das colunas.** Embora faça parte da montagem final, não deve fixar o fragmento lateral antes de reunir adequadamente os côndilos. O primeiro objetivo é uma articulação congruente, seguido de estabilidade do conjunto à diáfise."
+   "A": "**A placa medial** vem depois do bloco articular.",
+   "B": "**Os fios cruzados** não são o primeiro passo descrito.",
+   "C": "**A placa lateral** vem depois."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 14: T-Condylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura em T (intercondiliana) do úmero distal na criança, Biblioteca OrtoQuestões, seções Técnica: articulação primeiro, colunas depois."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas9-14-fratura-em-t",
-     "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 15 · T-Condylar Fractures of the Distal Humerus",
-     "secoes": [
-      "Técnica: articulação primeiro, colunas depois"
-     ],
-     "blocos": [
-      "tecnica-articulacao-primeiro-colunas-depois-bebea640",
-      "tecnica-articulacao-primeiro-colunas-depois-46dfe24d",
-      "tecnica-articulacao-primeiro-colunas-depois-3c0698e7",
-      "tecnica-articulacao-primeiro-colunas-depois-d4b01333",
-      "tecnica-articulacao-primeiro-colunas-depois-b8e890d8",
-      "tecnica-articulacao-primeiro-colunas-depois-b8e7c093",
-      "tecnica-articulacao-primeiro-colunas-depois-1df2bd14",
-      "tecnica-articulacao-primeiro-colunas-depois-219264b4",
-      "tecnica-articulacao-primeiro-colunas-depois-f6dfc8e8",
-      "tecnica-articulacao-primeiro-colunas-depois-95b6b9b5",
-      "tecnica-articulacao-primeiro-colunas-depois-262a3251",
-      "tecnica-articulacao-primeiro-colunas-depois-6567a53a",
-      "tecnica-articulacao-primeiro-colunas-depois-6d26c70b",
-      "tecnica-articulacao-primeiro-colunas-depois-f55b06d9",
-      "tecnica-articulacao-primeiro-colunas-depois-c1da9369",
-      "tecnica-articulacao-primeiro-colunas-depois-8c9bd1ac",
-      "tecnica-articulacao-primeiro-colunas-depois-4ba90b36",
-      "tecnica-articulacao-primeiro-colunas-depois-45ef17d2",
-      "tecnica-articulacao-primeiro-colunas-depois-43ea0869",
-      "tecnica-articulacao-primeiro-colunas-depois-dc3c3255",
-      "tecnica-articulacao-primeiro-colunas-depois-352d14ad",
-      "tecnica-articulacao-primeiro-colunas-depois-fb3e64ce",
-      "tecnica-articulacao-primeiro-colunas-depois-e83faa45",
-      "tecnica-articulacao-primeiro-colunas-depois-f5d12168"
-     ],
-     "sha256": "84c49904c12ffc3a1d0ce2264b6b9cfbc7983c096cbcf5dba1f68e55fb4c728e",
-     "trechosSha256": "31a02a9eed55a86f69151cbd1342b181f494609515f62635b9dff922280f322c"
-    }
-   ],
-   "questaoSha256": "16d1cc818b57204f1a23939c142e63a97bb9077abb55bd99f4d3bd6ddf405de1",
-   "comentarioSha256": "9a21a7084ecba88b8fe54c5bca139bcf30b398237ee86a8676de313ebf3efc80"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1029": {
   "conceito": "**O algoritmo dos autores cruza idade e desvio, com corte aos 8 anos.** Abaixo dessa idade, o periósteo espesso, muitas vezes íntegro, pode manter estabilidade. Na fratura sem desvio ou com desvio mínimo, o algoritmo admite **gesso ou redução fechada com fios percutâneos**. Acima de 8 anos, para desvio mínimo, indica **redução fechada e parafusos canulados percutâneos**, desde que a articulação fique anatomicamente reduzida e a fixação estável.\n\nA categoria de grande desvio é diferente: no menor de 8 anos, redução aberta com fios, parafuso ou placa; no maior, redução aberta e placas ortogonais. Gesso isolado exige seleção rigorosa, sem cominuição, angulação ou desvio relevante e com acompanhamento radiográfico. Os autores raramente deixam sem fixação uma fratura que precisou ser reduzida. O algoritmo não autoriza aceitar degrau articular porque o paciente é jovem.\n\n**Por que esta questão foi criada.** O cruzamento entre idade, desvio e estabilidade diferencia os ramos de um algoritmo que não deve ser aplicado apenas pela idade.",
@@ -21485,94 +21334,18 @@
  },
  "pediatria-1032": {
   "conceito": "**A espícula proximal aponta para o lado oposto ao deslocamento distal.** No desvio posterolateral em extensão, o fragmento distal vai para trás e para lateral. O segmento proximal se projeta anteriormente e para medial, onde ficam o **nervo mediano e a artéria braquial**. O ramo interósseo anterior pode ser atingido sem toda a expressão da lesão do mediano.\n\nNo padrão posteromedial, a espícula proximal sai lateralmente e ameaça o radial. No tipo em flexão, o ulnar é o nervo característico. A direção do fragmento precisa sempre ser nomeada: dizer apenas que a fratura desviou lateralmente e procurar um nervo lateral ignora que a agressão vem da ponta do segmento oposto.\n\n**Por que esta questão foi criada.** A anatomia explica a associação entre direção do fragmento e risco neurovascular, recorrente nas provas do resumo.",
-  "correta": "**D: mediano e artéria braquial.** O feixe anterior e medial pode ficar estirado sobre o fragmento proximal. A presença de déficit nervoso junto de alteração de perfusão deve elevar a atenção à lesão de partes moles.",
+  "correta": "**D: o mediano e a braquial.** A espícula vai para anterior e medial (Rockwood and Wilkins' Fractures in Children, cap. 13 da 9ª ed.).",
   "incorretas": {
-   "A": "**O radial corresponde à espícula lateral do desvio distal posteromedial.** A pergunta descreve o inverso, posterolateral, em que a projeção proximal é medial. A posição do nervo deve ser relacionada ao agressor, não apenas ao distal.",
-   "B": "**O ulnar é associado sobretudo à fratura em flexão e ao risco do fio medial.** Não é a estrutura que acompanha a artéria braquial no feixe ameaçado pelo padrão posterolateral em extensão.",
-   "C": "**A artéria está correta, mas o nervo está trocado.** O feixe ameaçado medialmente contém o mediano. Associar a artéria ao radial mistura estruturas características dos dois sentidos de desvio."
+   "A": "**O radial** fica em risco no desvio posteromedial.",
+   "B": "**O ulnar** é mais lesado pelo fio medial.",
+   "C": "**O radial e a braquial** misturam lados."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco.",
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, seção Fixação: fios laterais, fio medial e cuidados depois (risco ulnar por fio medial)."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas9-13-supracondiliana",
-     "titulo": "Fratura supracondiliana do úmero na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
-     "secoes": [
-      "Mecanismo, direção do desvio e estruturas em risco"
-     ],
-     "blocos": [
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
-     ],
-     "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
-     "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
-    },
-    {
-     "resumo": "rockwoodcriancas9-13-supracondiliana",
-     "titulo": "Fratura supracondiliana do úmero na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
-     "secoes": [
-      "Fixação: fios laterais, fio medial e cuidados depois"
-     ],
-     "blocos": [
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
-     ],
-     "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
-     "trechosSha256": "c6940a96c2a2b7a6513eda3150127c922f3c918294efa12972d91b16775683f1"
-    }
-   ],
-   "questaoSha256": "265f0c67d607687f2dda02d3bfec25831b7cb462fc72e27a91fc91a73c7a3887",
-   "comentarioSha256": "a3183af50171dbc8bfc97dd32681c353247efe26f5cfb85a66a76ef4a8be0dc9"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1033": {
   "conceito": "**A rotação escolhida utiliza o periósteo que permaneceu íntegro.** No desvio posterolateral, a espícula proximal rompe o periósteo medial e sobra a dobradiça **lateral**. A **supinação** tensiona esse apoio e auxilia a redução. No posteromedial, a combinação se inverte: lateral roto, medial íntegro e pronação.\n\nA técnica começa com tração e correção da translação e do varo/valgo, seguida de flexão cuidadosa para corrigir o componente de extensão. A rotação não é uma regra única para toda supracondiliana. Pronar automaticamente quando o apoio medial já está roto pode atrapalhar, porque a manobra precisa atuar sobre a dobradiça disponível.\n\n**Por que esta questão foi criada.** A questão cruza lado preservado e rotação no padrão menos comum, evitando repetir a pronação como regra universal.",
@@ -21748,181 +21521,31 @@
  },
  "pediatria-1036": {
   "conceito": "**Por que pode existir uma mão rosada sem pulso?** Na fratura supracondiliana, a lesão ocorre no úmero distal, próximo da artéria braquial e do nervo mediano. No padrão em extensão com desvio posterolateral, a ponta do fragmento proximal se projeta para anterior e medial, podendo estirar, comprimir ou aprisionar o feixe. Reduzir a fratura procura restabelecer essa relação anatômica; fixá-la impede que um novo deslocamento volte a ameaçar as partes moles.\n\nEntretanto, **pulso e perfusão respondem a perguntas diferentes**. O pulso palpável mostra a pulsação arterial no local examinado. A perfusão diz respeito à chegada de sangue aos tecidos, avaliada em conjunto por cor, temperatura, enchimento capilar e turgor da polpa, comparados com a outra mão. A rede colateral do cotovelo pode manter a mão irrigada mesmo quando o pulso radial não é palpável. Por isso, ausência de pulso não prova, sozinha, isquemia crítica; da mesma forma, uma mão rosada não demonstra que todo o problema arterial esteja resolvido.\n\n**O momento do enunciado muda a decisão.** A redução e a fixação já foram feitas. Não estamos decidindo se devemos deixar uma Gartland III deformada aguardando investigação. A questão é o que fazer com a mão que, depois de estabilizar o osso, permanece quente e rosada, porém sem pulso. O resumo do capítulo 13 distingue esse cenário da mão que continua pálida e mal perfundida.\n\n| Situação após a redução | Interpretação e conduta descritas |\n| --- | --- |\n| Mão rosada, quente e bem perfundida, sem pulso | Situação controversa; os autores preferem internação, elevação leve e vigilância por pelo menos 48 horas. |\n| Mão mal perfundida, sem pulso | A perfusão está ameaçada; é necessária exploração urgente quando não melhora com a redução. |\n| Pulso que existia e desaparece após reduzir, com piora da mão | Suspeitar de artéria ou tecido preso no foco; rever a redução e a fixação e explorar se a circulação não melhorar. |\n\n**Observar não significa apenas esperar o pulso voltar.** É necessário acompanhar repetidamente a perfusão, a dor, o comportamento da criança e a função nervosa. O Doppler complementa esse exame, mas não substitui a evolução clínica. O capítulo também orienta reavaliar após a redução porque espasmo, edema e frio da anestesia podem atrasar o retorno do pulso; essa reavaliação inicial não equivale a liberar a criança para casa.\n\nA preocupação é a deterioração durante as horas seguintes. Na série de Garg resumida no capítulo, uma das crianças observadas precisou de reparo por perda da perfusão **nove horas depois**. Esse dado explica a internação: um exame inicialmente favorável não permite prometer que a circulação continuará adequada até uma consulta na semana seguinte. É um relato de série, não uma regra de que a piora ocorrerá sempre nesse intervalo.\n\nTambém se vigia a **síndrome compartimental**, em que a pressão elevada ameaça a circulação dos tecidos mesmo com pulso presente. Na criança, ansiedade, agitação e necessidade crescente de analgésicos são alertas precoces, além de dor progressiva e à mobilização passiva. Se houver déficit do mediano ou do interósseo anterior junto da ausência de pulso, o cenário é mais preocupante: pode existir aprisionamento da braquial e a lesão nervosa pode mascarar a dor. O capítulo recomenda exploração precoce nessa combinação, que não foi descrita na questão.\n\n**Por que esta questão foi criada.** O TARO 2007 e o TARO 2009 cobraram a conduta inicial diante de pulso ausente ou fluxo distal diminuído. Este simulado avança uma etapa: a fratura já foi reduzida e fixada, e o aluno precisa diferenciar mão perfundida sem pulso de isquemia persistente, reconhecendo a preferência dos autores e a controvérsia.",
-  "correta": "**B: internação, elevação leve e observação por 48 horas.** É a conduta preferida pelos autores para a mão que permanece bem perfundida após a redução e a fixação. A circulação colateral pode sustentar os tecidos, de modo que a falta de pulso palpável, isoladamente, não obriga a reconstrução imediata da braquial em todo paciente.\n\nA internação permite verificar se essa perfusão se mantém e detectar cedo uma mudança que exija intervenção. A palavra “observação” inclui exames seriados e baixo limiar para explorar, descomprimir ou reparar quando houver deterioração. Não significa esperar completar 48 horas diante de mão fria, piora do enchimento, dor crescente ou sinais compartimentais.\n\nO período é **pelo menos 48 horas na preferência apresentada**, com elevação leve; não é uma alta automática ao fim do relógio sem reavaliar. A resposta também depende da ausência de outras condições que mudem o risco, como lesão mediana associada ou redução incongruente. O detalhe decisivo do enunciado é a mão quente e rosada depois de estabilizar a fratura.",
+  "correta": "**B: observação internada.** Com elevação leve e vigilância por 48 horas (Rockwood and Wilkins' Fractures in Children, cap. 13 da 9ª ed.).",
   "incorretas": {
-   "A": "**A arteriografia não é a medida automática seguinte apenas porque falta pulso palpável.** Ela procura caracterizar a circulação arterial, mas o que determina a urgência neste cenário é a perfusão e sua evolução. A criança já passou pela etapa de redução e fixação, e o capítulo não propõe arteriografia imediata de rotina para toda mão rosada sem pulso.\n\nA fonte cita séries em que a angiografia antes da redução não modificou a conduta e poderia atrasar o restabelecimento do alinhamento. Esse resultado pré-redução não deve ser usado como se fosse um estudo específico de todos os casos pós-operatórios; ele reforça que o exame não substitui a decisão clínica. Após reduzir, exame seriado e Doppler são recursos de acompanhamento, conforme o quadro.\n\nSe a mão estiver mal perfundida, o erro seria aguardar uma arteriografia enquanto persiste isquemia que exige exploração. Se estiver bem perfundida, como aqui, a preferência dos autores é vigilância hospitalar. Portanto, A não responde à conduta preferida pedida, sem que isso signifique proibir investigação vascular em qualquer situação.",
-   "C": "**Explorar imediatamente a artéria é uma alternativa da controvérsia, mas não a preferência solicitada para esta mão perfundida.** A justificativa de quem defende intervenção precoce é não deixar uma lesão arterial importante sem correção, mesmo quando as colaterais mantêm a aparência da mão. O capítulo reconhece reconstrução imediata como opção e também relata preocupações com reoclusão e estenose após reparos precoces. Assim, não seria correto ensinar que explorar uma mão rosada seja sempre um erro.\n\nA alternativa se torna a decisão urgente em outro contexto: mão que continua mal perfundida depois de reduzir, ou deterioração vascular durante a observação. A associação de ausência de pulso com déficit mediano também reduz o limiar de exploração, pelo risco de braquial presa ou tracionada no foco.\n\nNesta questão, a fratura já está fixada e a mão é quente e rosada, sem esses agravantes informados. Como a pergunta especifica **a preferência dos autores**, vence B. A diferença é entre uma estratégia reconhecida e a estratégia escolhida por essa fonte para o cenário delimitado, não entre uma cirurgia sempre errada e uma observação sempre segura.",
-   "D": "**A alta retiraria justamente a vigilância que torna a observação aceitável.** Uma mão perfundida no primeiro exame pode perder essa condição nas horas seguintes; o relato de necessidade de reparo nove horas depois exemplifica esse risco. Esperar uma semana para reexaminar deixa um intervalo incompatível com a possibilidade de isquemia progressiva ou síndrome compartimental.\n\nAlém disso, a criança nem sempre manifesta a complicação pelos sinais clássicos. Agitação, ansiedade e aumento da necessidade de analgésico podem preceder palidez ou déficit motor evidente, e a presença de pulso não exclui sofrimento compartimental. A família precisa ser orientada, mas essa orientação não substitui o acompanhamento hospitalar inicial proposto.\n\nO erro de D é transformar “não explorar imediatamente” em “não há mais risco”. Na conduta dos autores, a decisão de observar depende de manter acesso a reavaliação e intervenção rápidas. Por isso, internação e alta ambulatorial em uma semana não são versões equivalentes do mesmo tratamento."
+   "A": "**A arteriografia** não muda a conduta da mão perfundida.",
+   "C": "**Explorar** fica para a mão fria ou que piora.",
+   "D": "**A alta** dispensa a vigilância necessária."
   },
-  "alerta": "A mão bem perfundida sem pulso após a redução é um tema controverso. B corresponde à preferência dos autores do capítulo consultado por meio do resumo. Piora da perfusão, sinais compartimentais ou déficit mediano associado exigem reavaliar a indicação de exploração; a observação não é uma regra universal nem autorização para adiar tratamento de isquemia.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13: Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco; A mão sem pulso; Síndrome compartimental. Complemento: seção Redução fechada: técnica, periósteo e rotação, para interposição do feixe e controle da redução."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas9-13-supracondiliana",
-     "titulo": "Fratura supracondiliana do úmero na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
-     "secoes": [
-      "A mão sem pulso",
-      "Síndrome compartimental",
-      "Mecanismo, direção do desvio e estruturas em risco",
-      "Redução fechada: técnica, periósteo e rotação"
-     ],
-     "blocos": [
-      "a-mao-sem-pulso-24574aaa",
-      "a-mao-sem-pulso-046891d4",
-      "a-mao-sem-pulso-49b55356",
-      "a-mao-sem-pulso-5556fd04",
-      "a-mao-sem-pulso-c734e9ee",
-      "a-mao-sem-pulso-12045389",
-      "a-mao-sem-pulso-5801482c",
-      "a-mao-sem-pulso-561dffc7",
-      "a-mao-sem-pulso-f4f3b89d",
-      "a-mao-sem-pulso-b65d5756",
-      "a-mao-sem-pulso-6b94a0c6",
-      "a-mao-sem-pulso-9ba2822a",
-      "a-mao-sem-pulso-9c6d88bd",
-      "a-mao-sem-pulso-a6c4af84",
-      "a-mao-sem-pulso-be54c437",
-      "a-mao-sem-pulso-3cbb0905",
-      "a-mao-sem-pulso-47fe0b6b",
-      "a-mao-sem-pulso-4ec07ae0",
-      "a-mao-sem-pulso-e9a4fa79",
-      "sindrome-compartimental-9b6de2bd",
-      "sindrome-compartimental-b1ba06cc",
-      "sindrome-compartimental-dae17124",
-      "sindrome-compartimental-4a487435",
-      "sindrome-compartimental-6878dc8a",
-      "sindrome-compartimental-9b2517ff",
-      "sindrome-compartimental-11861475",
-      "sindrome-compartimental-dd5b1e68",
-      "sindrome-compartimental-52880eb5",
-      "sindrome-compartimental-744d234f",
-      "sindrome-compartimental-156d424b",
-      "sindrome-compartimental-c2479823",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-a4c3a4fd",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-43f75607",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-f4436304",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-79feecaf",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-4d860e8c",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-49f3da74",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-d4136367",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-f0bbe362",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-77776755",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-a9673dd6",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-b1951499",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-b55d02ec",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-fca4eee7",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-6f036543",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
-      "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
-     ],
-     "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
-     "trechosSha256": "2dfd5b155cd84b48de6be09af1f71198e6ba68db5aa7922a42e11b1f3daf6972"
-    }
-   ],
-   "questaoSha256": "0c20fc781821b763b7e5639f2fb0943e3b6716f69162a1321901f9708ebf20f4",
-   "comentarioSha256": "cd7add7b004e2569f825712e375f27a0eb5675ea02ea2f34361c7def477db208"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1037": {
   "conceito": "**Ausência de pulso com déficit mediano sugere uma lesão importante do feixe anterior.** O mediano, seu ramo interósseo anterior e a artéria braquial podem ficar estirados ou presos na espícula proximal. No estudo de Mangat citado, a artéria estava presa ou tracionada em 7 de 7 crianças sem pulso e com lesão mediana, contra 20% das sem déficit nervoso. São dados de uma série pequena, não uma probabilidade universal.\n\nO capítulo recomenda exploração precoce nessa combinação. O déficit também pode mascarar a dor de síndrome compartimental, exigindo vigilância ampliada. Fratura de antebraço associada aumenta a complexidade e pode elevar o risco de lesão de partes moles, mas não identifica tão diretamente o mesmo feixe preso quanto o déficit mediano no cenário descrito.\n\n**Por que esta questão foi criada.** A questão transforma a relação anatômica mediano-braquial num sinal clínico que muda o limiar de exploração.",
-  "correta": "**C: lesão do mediano ou do interósseo anterior.** É a combinação clínica e anatômica que o estudo relaciona ao aprisionamento da braquial. A recomendação é considerar exploração precoce e não aplicar indiscriminadamente a observação da mão perfundida sem déficit.",
+  "correta": "**C: mediano.** Ou do interósseo anterior, estirados na mesma espícula (Rockwood and Wilkins' Fractures in Children, cap. 13 da 9ª ed.).",
   "incorretas": {
-   "A": "**O radial se relaciona à espícula lateral do desvio distal posteromedial.** Sua lesão exige exame e acompanhamento, mas não é a associação específica do feixe mediano-braquial descrita por Mangat para a mão sem pulso.",
-   "B": "**A fratura ipsilateral do antebraço é um marcador de gravidade e merece atenção ao compartimento.** Porém, não é o achado que a fonte associa tão diretamente à artéria presa no foco. A pergunta busca o déficit do nervo que acompanha o vaso ameaçado.",
-   "D": "**Idade baixa isolada não demonstra aprisionamento da braquial.** Ela dificulta exame e planejamento, mas o indicador específico fornecido é a lesão mediana ou do interósseo anterior junto da ausência de pulso."
+   "A": "**O radial** é do desvio posteromedial.",
+   "B": "**O ulnar** não está no feixe anterior.",
+   "D": "**O musculocutâneo** não é o descrito."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco; A mão sem pulso; Síndrome compartimental."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas9-13-supracondiliana",
-     "titulo": "Fratura supracondiliana do úmero na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
-     "secoes": [
-      "Mecanismo, direção do desvio e estruturas em risco",
-      "A mão sem pulso",
-      "Síndrome compartimental"
-     ],
-     "blocos": [
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
-      "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d",
-      "a-mao-sem-pulso-046891d4",
-      "a-mao-sem-pulso-49b55356",
-      "a-mao-sem-pulso-5556fd04",
-      "a-mao-sem-pulso-c734e9ee",
-      "a-mao-sem-pulso-12045389",
-      "a-mao-sem-pulso-5801482c",
-      "a-mao-sem-pulso-561dffc7",
-      "a-mao-sem-pulso-f4f3b89d",
-      "a-mao-sem-pulso-b65d5756",
-      "a-mao-sem-pulso-6b94a0c6",
-      "a-mao-sem-pulso-24574aaa",
-      "a-mao-sem-pulso-9ba2822a",
-      "a-mao-sem-pulso-9c6d88bd",
-      "a-mao-sem-pulso-a6c4af84",
-      "a-mao-sem-pulso-be54c437",
-      "a-mao-sem-pulso-3cbb0905",
-      "a-mao-sem-pulso-47fe0b6b",
-      "a-mao-sem-pulso-4ec07ae0",
-      "a-mao-sem-pulso-e9a4fa79",
-      "sindrome-compartimental-9b6de2bd",
-      "sindrome-compartimental-b1ba06cc",
-      "sindrome-compartimental-dae17124",
-      "sindrome-compartimental-4a487435",
-      "sindrome-compartimental-6878dc8a",
-      "sindrome-compartimental-9b2517ff",
-      "sindrome-compartimental-11861475",
-      "sindrome-compartimental-dd5b1e68",
-      "sindrome-compartimental-52880eb5",
-      "sindrome-compartimental-744d234f",
-      "sindrome-compartimental-156d424b",
-      "sindrome-compartimental-c2479823"
-     ],
-     "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
-     "trechosSha256": "2f81cbcc5e694ec74c9db5f07462ac1ab58c5aee4a0d9b21ee03ef8bb54f2e01"
-    }
-   ],
-   "questaoSha256": "7fd06f23220fe81afd7ba95379a54b70d62c0a81bd0b4771d0441ef459f89824",
-   "comentarioSha256": "8117de5d65d345c3b78e78baea8940f6971858cb61c1d5a6463ea317dd6b13ac"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1038": {
   "conceito": "**Na criança, os sinais clássicos de isquemia podem ser tardios ou pouco confiáveis.** A síndrome compartimental é elevação de pressão com prejuízo da perfusão dos tecidos e pode ocorrer mesmo com pulso radial presente. O capítulo destaca os **três As: ansiedade, agitação e aumento da necessidade de analgésico**, além de dor progressiva e resistência à mobilização passiva dos dedos.\n\nPalidez, parestesia e paralisia não devem ser aguardadas para suspeitar. A lesão do mediano pode mascarar a dor do compartimento volar. Equimose anterior e sinal da ruga indicam trauma importante de partes moles e maior risco, mas não são equivalentes aos sinais evolutivos precoces do compartimento. A vigilância precisa reconhecer mudança de comportamento e de demanda analgésica, sem atribuí-las automaticamente ao desconforto habitual.\n\n**Por que esta questão foi criada.** Os três As ajudam a detectar a complicação antes de sinais tardios e evitam usar pulso preservado como falsa garantia.",
@@ -22138,68 +21761,17 @@
  },
  "pediatria-1041": {
   "conceito": "**Estabilidade depende de distribuição dos fios, não só do número ou da palavra divergente.** Para Gartland III, os autores recomendam **três fios laterais** e grande separação no foco: **pelo menos 13 mm ou um terço da largura do úmero**. Os fios devem pegar os dois fragmentos, as duas corticais e distribuir-se pelas duas colunas.\n\nO capítulo descreve perdas de fixação em montagens com dois fios e erros técnicos visíveis, como pouca separação e falha de captura bicortical. Isso não prova que todo caso com dois fios falhará, mas sustenta baixo limiar para o terceiro no tipo III. A estabilidade deve ser testada em varo e valgo sob imagem. Fios próximos podem formar uma montagem fraca apesar de parecerem paralelos ou divergentes no nome.\n\n**Por que esta questão foi criada.** A questão liga número, separação e captura cortical, evitando considerar qualquer montagem com três fios automaticamente estável.",
-  "correta": "**D: três fios e 13 mm ou um terço da largura.** É o conjunto recomendado para aumentar estabilidade do padrão III. A separação precisa existir no nível da fratura e ser acompanhada de captura adequada, não apenas de pontas afastadas fora do foco.",
+  "correta": "**D: três; 13 mm.** Ou um terço da largura do úmero (Rockwood and Wilkins' Fractures in Children, cap. 13 da 9ª ed.).",
   "incorretas": {
-   "A": "**Dois fios e separação de 5 mm não reproduzem os parâmetros recomendados.** A montagem fica aquém do número preferido e da abertura citada no foco. A quantidade de osso capturado também deve ser verificada.",
-   "B": "**A separação está adequada, mas o número preferido para III é três.** Dois fios são usados em padrões menos instáveis e podem funcionar em casos selecionados; a questão pede a recomendação dos autores para o III.",
-   "C": "**O número está correto, mas 5 mm não atende à separação mínima descrita.** Acrescentar um fio junto dos outros não compensa automaticamente uma base estreita. A distribuição no foco é um componente próprio da estabilidade."
+   "A": "**Dois fios próximos** são instáveis.",
+   "B": "**Dois fios** não bastam no tipo III.",
+   "C": "**5 mm** de separação não dá estabilidade."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Fixação: fios laterais, fio medial e cuidados depois."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas9-13-supracondiliana",
-     "titulo": "Fratura supracondiliana do úmero na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 14 · Supracondylar Fractures of the Distal Humerus",
-     "secoes": [
-      "Fixação: fios laterais, fio medial e cuidados depois"
-     ],
-     "blocos": [
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-45405389",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
-      "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
-     ],
-     "sha256": "2751e4d5396ad58dd55ded8a8c17ee3a1195c6cd1e3b2a4ce375b59609d45c1b",
-     "trechosSha256": "c6940a96c2a2b7a6513eda3150127c922f3c918294efa12972d91b16775683f1"
-    }
-   ],
-   "questaoSha256": "7cd4f5f06cc13e60caf39f3e7aee8c1173697ccbb79a213058f2e5aa8106060f",
-   "comentarioSha256": "3dd812f3516b110dc510123b14cd510aee526420bf88d3640c53f89819dd102b"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1042": {
   "conceito": "**Gartland IV é definido pela instabilidade multidirecional.** A fratura perde a dobradiça periosteal e fica instável em **flexão e extensão**, frequentemente reconhecida sob anestesia. Em fluoroscopia, o capítulo pode alternar sua posição em relação à linha umeral anterior conforme o cotovelo muda de posição.\n\nO tipo I tem desvio mínimo; o II mantém cortical posterior em dobradiça; o III apresenta desvio importante e rotação. Cominuição medial é uma condição adicional que pode produzir varo mesmo com perfil aparentemente aceitável, mas não deve ser confundida com a definição de IV. A classificação ajuda a antecipar como manter a redução e evita aplicar a técnica de uma dobradiça preservada quando ela já não existe.\n\n**Por que esta questão foi criada.** O exame dinâmico e a ausência de dobradiça distinguem o tipo IV e mudam a forma de controlar a redução.",
@@ -23371,41 +22943,18 @@
   }
  },
  "pediatria-1092": {
-  "conceito": "A alternativa C, **0,7% a 1%**, corresponde à faixa dos relatos mais recentes de fraturas expostas pediátricas citados no resumo. A faixa 1,5% a 2,6% também aparece no capítulo, mas pertence às séries **antigas**. O detalhe temporal muda a resposta.\n\nUma proporção depende de quem entra na contagem. Um centro regional de trauma recebe mais lesões graves e pode observar uma porcentagem maior que a descrita no panorama global. Portanto, não se deve transferir a taxa de um serviço selecionado para todas as fraturas pediátricas, nem misturar séries de épocas diferentes (Rockwood e Wilkins, 10ª ed., cap. 1,“Fraturas expostas”).\n\nO capítulo também separa frequência global e distribuição por segmento: no estudo urbano citado, a perna, tíbia e fíbula, liderou as fraturas expostas, seguida pelo antebraço. Isso não contradiz o predomínio de rádio e ulna entre as fraturas de ossos longos em geral; o grupo de lesões e o denominador são outros.\n\n**Por que esta questão foi criada.** A comparação entre faixas antigas e recentes permite treinar época, população e denominador, usando um distrator que é verdadeiro em outro contexto.\n\n> **Na prova:** relatos recentes:0,7–1%; séries antigas:1,5–2,6%.",
-  "correta": "**C:0,7% e 1%.** São os limites do intervalo recente apresentado, mantendo a época exigida pelo enunciado.",
+  "conceito": "A faixa de **0,7% a 1%** corresponde à faixa dos relatos mais recentes de fraturas expostas pediátricas citados no resumo. A faixa 1,5% a 2,6% também aparece no capítulo, mas pertence às séries **antigas**. O detalhe temporal muda a resposta.\n\nUma proporção depende de quem entra na contagem. Um centro regional de trauma recebe mais lesões graves e pode observar uma porcentagem maior que a descrita no panorama global. Portanto, não se deve transferir a taxa de um serviço selecionado para todas as fraturas pediátricas, nem misturar séries de épocas diferentes (Rockwood and Wilkins' Fractures in Children e Wilkins, 10ª ed., cap. 1,“Fraturas expostas”).\n\nO capítulo também separa frequência global e distribuição por segmento: no estudo urbano citado, a perna, tíbia e fíbula, liderou as fraturas expostas, seguida pelo antebraço. Isso não contradiz o predomínio de rádio e ulna entre as fraturas de ossos longos em geral; o grupo de lesões e o denominador são outros.\n\n**Por que esta questão foi criada.** A comparação entre faixas antigas e recentes permite treinar época, população e denominador, usando um distrator que é verdadeiro em outro contexto.\n\n> **Na prova:** relatos recentes:0,7 a 1%; séries antigas:1,5 a 2,6%.",
+  "correta": "**C: 0,7% e 1%.** A faixa de 1,5% a 2,6% é das séries antigas (Rockwood and Wilkins' Fractures in Children, cap. 1).",
   "incorretas": {
-   "A": "**Desloca todo o intervalo para baixo.** O limite superior proposto,0,5%,ainda está abaixo do início da faixa recente de 0,7%. Não é uma faixa equivalente nem um simples modo diferente de arredondar a mesma estimativa.",
-   "B": "**Usa o início da faixa correta como se fosse seu teto.**0,7% é o limite inferior recente; a faixa sobe até 1%. A opção descreve um intervalo inferior, em vez do reportado.",
-   "D": "**É um dado verdadeiro atribuído à época errada.**1,5% a 2,6% corresponde às séries antigas citadas. A alternativa não deve ser ensinada como número inventado; ela apenas não responde aos relatos mais recentes pedidos."
+   "A": "**0,1% a 0,5%** subestima.",
+   "B": "**0,5% a 0,7%** fica abaixo.",
+   "D": "**1,5% a 2,6%** é das séries antigas."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Fise e fratura exposta: frequência não acompanha risco."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
-     "titulo": "Epidemiologia das fraturas na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
-     "secoes": [
-      "Fise e fratura exposta: frequência não acompanha risco"
-     ],
-     "blocos": [
-      "fise-e-fratura-exposta-frequencia-nao-acompanha--cb41356d"
-     ],
-     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
-     "trechosSha256": "ce9e3e2f5efd4c0ce65bb2c61d3fa42fcf6fda8fbdeb7ed52504651efef30298"
-    }
-   ],
-   "questaoSha256": "7a3a942586ca942b715e30b0f7db6e90bb122981695844bc2b14692a3bf4144f",
-   "comentarioSha256": "51ab2684fd5ba16370c9773cfe06f359cf7332a3f1b09c1a4454925c6af120c6"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1093": {
   "conceito": "No membro inferior, o capítulo diz que a **tíbia** é fraturada mais frequentemente que o fêmur. A tabela 1-2 agrupa tíbia e fíbula para frequência de ossos longos, mas a frase comparativa do texto é entre tíbia e fêmur. A pergunta usa a categoria anatômica que o capítulo destaca, sem transformar a fíbula em osso predominante isolado.\n\n**Por que esta questão foi criada.** A comparação tíbia versus fêmur é o principal contraste epidemiológico do membro inferior no capítulo. É uma lacuna com cara de prova porque explora a troca intuitiva pelo fêmur, que é mais lembrado por gravidade e não por frequência.",
@@ -23590,81 +23139,32 @@
   }
  },
  "pediatria-1098": {
-  "conceito": "A epífise distal do fêmur desviada para anterior pode parecer afastar a articulação das estruturas posteriores, mas o perigo está no outro fragmento: **a ponta distal da metáfise é empurrada contra a artéria poplítea**. Na hiperextensão, a epífise vai para a frente e a metáfise ameaça o vaso que corre junto à face posterior do fêmur distal (Rockwood crianças, 10ª ed., cap. 26, A artéria poplítea e o desvio anterior).\n\nEstiramento com oclusão e espasmo é o mecanismo vascular mais comum descrito; também podem ocorrer lesão da íntima e laceração. Assim, reduzir a deformidade pode restaurar o fluxo, mas o retorno da perfusão não dispensa observação: há risco de trombose tardia e síndrome compartimental.\n\nO capítulo destaca risco vascular no desvio anterior, nervoso no posterior e neurovascular nos desvios medial ou lateral. Isso não significa que as outras direções sejam inofensivas. A pergunta pede a direção que mais ameaça a poplítea, e a relação entre metáfise e artéria na hiperextensão é o dado decisivo.\n\n**Não confundir frequência do mecanismo com risco vascular.** Varo e valgo são mecanismos comuns de fratura fisária no adolescente, mas a hiperextensão com desvio anterior é a situação destacada para a artéria. Diante de pé sem perfusão, a redução é uma emergência e não deve ser atrasada por arteriografia.\n\n**Por que esta questão foi criada.** Projeta para o fêmur distal a relação entre direção do desvio, anatomia vascular e conduta de urgência, distinguindo o mecanismo frequente do mecanismo de maior risco arterial.",
-  "correta": "**Correta: A (anterior, por hiperextensão do joelho).** A epífise segue para anterior, enquanto a extremidade distal da metáfise comprime ou estira a poplítea posteriormente. Esse contato explica o destaque vascular do desvio anterior, sem permitir afirmar que as outras direções não tragam risco.",
+  "conceito": "A epífise distal do fêmur desviada para anterior pode parecer afastar a articulação das estruturas posteriores, mas o perigo está no outro fragmento: **a ponta distal da metáfise é empurrada contra a artéria poplítea**. Na hiperextensão, a epífise vai para a frente e a metáfise ameaça o vaso que corre junto à face posterior do fêmur distal (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 26, A artéria poplítea e o desvio anterior).\n\nEstiramento com oclusão e espasmo é o mecanismo vascular mais comum descrito; também podem ocorrer lesão da íntima e laceração. Assim, reduzir a deformidade pode restaurar o fluxo, mas o retorno da perfusão não dispensa observação: há risco de trombose tardia e síndrome compartimental.\n\nO capítulo destaca risco vascular no desvio anterior, nervoso no posterior e neurovascular nos desvios medial ou lateral. Isso não significa que as outras direções sejam inofensivas. A pergunta pede a direção que mais ameaça a poplítea, e a relação entre metáfise e artéria na hiperextensão é o dado decisivo.\n\n**Não confundir frequência do mecanismo com risco vascular.** Varo e valgo são mecanismos comuns de fratura fisária no adolescente, mas a hiperextensão com desvio anterior é a situação destacada para a artéria. Diante de pé sem perfusão, a redução é uma emergência e não deve ser atrasada por arteriografia.\n\n**Por que esta questão foi criada.** Projeta para o fêmur distal a relação entre direção do desvio, anatomia vascular e conduta de urgência, distinguindo o mecanismo frequente do mecanismo de maior risco arterial.",
+  "correta": "**A: anterior.** Por hiperextensão; a metáfise é empurrada contra a poplítea (Rockwood and Wilkins' Fractures in Children, cap. 26).",
   "incorretas": {
-   "B": "No desvio posterior, o capítulo destaca o risco nervoso. Hiperflexão e hiperextensão não são intercambiáveis: é a hiperextensão com a epífise para anterior que empurra a metáfise contra a poplítea. O fato de o vaso ser posterior não torna o desvio posterior da epífise a resposta automática.",
-   "C": "Desvio medial pode trazer risco neurovascular, e o padrão anteromedial é especialmente associado à tração do fibular comum. Contudo, a direção mais destacada para a poplítea é a anterior. Não é correto excluir risco medial, mas ele não substitui o mecanismo arterial cobrado.",
-   "D": "O valgo participa dos mecanismos comuns da lesão fisária, e um desvio lateral pode ameaçar estruturas neurovasculares. A pergunta, porém, é sobre a poplítea: o capítulo destaca a hiperextensão com desvio anterior, cuja metáfise se projeta contra o vaso. Frequência e perigo arterial são comparações diferentes."
+   "B": "**O desvio posterior** não empurra a metáfise contra a artéria.",
+   "C": "**O medial** não é o de maior risco.",
+   "D": "**O lateral** não corresponde ao descrito no capítulo."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: As lesões que vêm junto; O mecanismo: o ligamento é mais forte que a fise."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-26-fise-distal-femur",
-     "titulo": "Fratura da fise distal do fêmur na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
-     "secoes": [
-      "As lesões que vêm junto",
-      "O mecanismo: o ligamento é mais forte que a fise"
-     ],
-     "blocos": [
-      "as-lesoes-que-vem-junto-d3373187",
-      "as-lesoes-que-vem-junto-2b8a0b7f",
-      "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-72e0078c"
-     ],
-     "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
-     "trechosSha256": "b0596e9cf4cd25a0a7703fd81f7dba1d8448b9843757d86df843700af0f0ee15"
-    }
-   ],
-   "questaoSha256": "90dcbc62c97e1fe6b35b1f5e3f365bfd39754bc763fbfadf37e6df8552500f32",
-   "comentarioSha256": "f0e49dc9258079e0c6651e094ac34a7c60e30fe1078fcf471e2156dbe4797c0c"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1099": {
-  "conceito": "O déficit já estava presente desde o trauma, a fratura é fechada e o paciente apresenta pé caído. Nesse contexto, o resumo orienta considerar lesão do **fibular comum por tração**, em geral uma neuropraxia com recuperação em 6 a 12 semanas. A conduta inicial é órtese tornozelo-pé e observação, com eletroneuromiografia se o déficit persistir aos três meses (Rockwood crianças, 10ª ed., cap. 26, O nervo fibular, por tração).\n\nA anatomia explica a vulnerabilidade: o fibular contorna a cabeça da fíbula e tem pouca folga para acompanhar um grande desvio. O padrão anteromedial é especialmente associado à tração. Essa relação não significa que toda lesão seja igual ou vá obrigatoriamente recuperar; sustenta a estratégia inicial descrita para a maioria das lesões fechadas.\n\nAcompanhamento não é abandono do déficit. A órtese auxilia enquanto se observa a recuperação, e a persistência aos três meses muda a investigação. É importante manter separados o déficit original do trauma e alterações posteriores da função durante o tratamento.\n\nOutra situação é a fratura exposta com secção do nervo, na qual o capítulo descreve reparo ou enxerto precoce. Não há essa informação no enunciado; indicar exploração imediata ou uma reconstrução tendínea definitiva ignoraria a possibilidade de recuperação da neuropraxia.\n\n**Por que esta questão foi criada.** Reúne o nervo mais vulnerável, o mecanismo por tração, a órtese e o marco de três meses para investigação, todos descritos no resumo do fêmur distal.",
-  "correta": "**Correta: B (órtese tornozelo-pé e observação, com eletroneuromiografia se persistir por três meses).** É a conduta inicial descrita para a neuropraxia por tração, cuja maioria recupera em 6 a 12 semanas. O marco de três meses indica reavaliação eletrofisiológica, não uma garantia de recuperação nem autorização para deixar de acompanhar.",
+  "conceito": "O déficit já estava presente desde o trauma, a fratura é fechada e o paciente apresenta pé caído. Nesse contexto, o resumo orienta considerar lesão do **fibular comum por tração**, em geral uma neuropraxia com recuperação em 6 a 12 semanas. A conduta inicial é órtese tornozelo-pé e observação, com eletroneuromiografia se o déficit persistir aos três meses (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 26, O nervo fibular, por tração).\n\nA anatomia explica a vulnerabilidade: o fibular contorna a cabeça da fíbula e tem pouca folga para acompanhar um grande desvio. O padrão anteromedial é especialmente associado à tração. Essa relação não significa que toda lesão seja igual ou vá obrigatoriamente recuperar; sustenta a estratégia inicial descrita para a maioria das lesões fechadas.\n\nAcompanhamento não é abandono do déficit. A órtese auxilia enquanto se observa a recuperação, e a persistência aos três meses muda a investigação. É importante manter separados o déficit original do trauma e alterações posteriores da função durante o tratamento.\n\nOutra situação é a fratura exposta com secção do nervo, na qual o capítulo descreve reparo ou enxerto precoce. Não há essa informação no enunciado; indicar exploração imediata ou uma reconstrução tendínea definitiva ignoraria a possibilidade de recuperação da neuropraxia.\n\n**Por que esta questão foi criada.** Reúne o nervo mais vulnerável, o mecanismo por tração, a órtese e o marco de três meses para investigação, todos descritos no resumo do fêmur distal.",
+  "correta": "**B: órtese e observação.** Em geral neuropraxia do fibular por tração; eletroneuromiografia se persistir por 3 meses (Rockwood and Wilkins' Fractures in Children, cap. 26).",
   "incorretas": {
-   "A": "Exploração imediata não é a conduta habitual da lesão fechada por tração descrita. O capítulo diferencia a secção em fratura exposta, que pede reparo ou enxerto precoce. No caso apresentado, o déficit desde o trauma e a ausência de ferida aberta favorecem observar a recuperação com suporte.",
-   "C": "O tibial pode ser lesado pelo mecanismo que ameaça a artéria, mas o resumo o descreve como raramente acometido. O nervo mais lesado nessa fratura é o fibular comum. A alternativa troca a estrutura principal e propõe exploração que não corresponde à estratégia inicial do déficit fechado apresentado.",
-   "D": "Uma transferência tendínea na mesma internação trataria o déficit como sequela definitiva antes de observar a recuperação esperada de muitas neuropraxias. A estratégia inicial sustentada é órtese e seguimento, reservando a investigação adicional para persistência; o resumo não sustenta essa reconstrução imediata."
+   "A": "**Explorar já** não é indicado na lesão fechada por tração.",
+   "C": "**O tibial** não é o nervo lesado.",
+   "D": "**A transferência** é precoce demais."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: As lesões que vêm junto."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-26-fise-distal-femur",
-     "titulo": "Fratura da fise distal do fêmur na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
-     "secoes": [
-      "As lesões que vêm junto"
-     ],
-     "blocos": [
-      "as-lesoes-que-vem-junto-2b8a0b7f"
-     ],
-     "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
-     "trechosSha256": "d4d9ba378cf742fa594c0cf0502170b48879c224fa86ac6a7aa6b3a65c3f6c74"
-    }
-   ],
-   "questaoSha256": "070e894240cfddcd343d1743609171a902549ac7a83244b83f4f4438bd61353e",
-   "comentarioSha256": "c839b5451b11a36e9415a45f480a349632a1d9bacd2a3abb23fb5f4b3769573d"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1100": {
   "conceito": "A faixa de 2 a 11 anos combina três fatores desfavoráveis: uma fise já ondulada e resistente, trauma geralmente de alta energia e bastante crescimento restante. **A gravidade da lesão inicial e o tempo disponível para uma parada se transformar em deformidade** explicam o pior prognóstico dessa combinação (Rockwood crianças, 10ª ed., cap. 26, Prognóstico: idade e desvio).\n\nAo nascer, a fise é plana e menos estável. Isso não significa, por si só, pior consequência: ela pode fraturar com menos força e menor dano à camada germinativa. O resumo classifica o prognóstico abaixo de dois anos como bom e descreve distúrbio do crescimento raro nesse grupo.\n\nDepois, as cristas e ondulações aumentam a resistência ao cisalhamento e à torção, mas o traço pode atravessar regiões germinativas e as cristas podem sofrer dano na redução. Se uma parte da fise para em uma criança com muitos anos de crescimento, a assimetria pode produzir angulação importante; a parada completa pode gerar encurtamento.\n\nNo adolescente, o anel pericondral afina e a fratura pode ocorrer com menor energia. A parada continua possível, porém o pouco crescimento restante costuma reduzir sua consequência. Portanto, **fise mais instável, maior risco de parada e maior deformidade final não são expressões equivalentes**.\n\n**Por que esta questão foi criada.** Usa a classificação prognóstica por idade para conectar anatomia, energia do trauma e crescimento restante, em vez de decorar apenas a faixa etária.",
@@ -23785,43 +23285,18 @@
   }
  },
  "pediatria-1103": {
-  "conceito": "Uma linha de Park-Harris **oblíqua e convergindo para a fise** indica que o crescimento não está ocorrendo por igual. Parte da fise continua produzindo comprimento, enquanto outra parte está presa por uma ponte. O resultado é assimetria e possibilidade de deformidade angular (Rockwood crianças, 10ª ed., cap. 26, Como reconhecer: PARK-HARRIS e radiografia longa).\n\nA origem da linha é uma desaceleração temporária seguida de retomada do crescimento: a zona de calcificação provisória fica densa e vai permanecendo na metáfise. Quando toda a fise volta a crescer de modo simétrico, a linha se afasta por igual e permanece paralela. A orientação oblíqua é o que diferencia a situação perguntada dessa retomada uniforme.\n\nA ausência da linha pode sugerir parada, mas não deve ser usada isoladamente como prova absoluta. Da mesma forma, reconhecer a obliquidade não substitui mapear a ponte quando isso é necessário para planejar tratamento. O resumo descreve ressonância com sequência tridimensional para demonstrá-la e radiografias longas para acompanhar comprimento e eixo.\n\nNo fêmur distal, a consolidação da fratura não encerra a vigilância. Sinais sutis de distúrbio podem aparecer meses depois, e o seguimento depende do crescimento restante. A leitura da linha é uma pista de direção e simetria do crescimento, não uma medida isolada da quantidade de osso que cresceu.\n\n**Por que esta questão foi criada.** A questão oficial sobre a origem das linhas pode ser aprofundada pela leitura de sua orientação: paralela sugere retomada simétrica, enquanto obliquidade convergente aponta para ponte e assimetria.",
-  "correta": "**Correta: B (ponte óssea em parte da fise, com crescimento assimétrico).** A linha oblíqua converge para a região onde o crescimento está limitado. O outro lado continua crescendo, criando diferença de comprimento entre os lados e risco de angulação. É esse padrão, e não a simples presença de qualquer linha, que sustenta a resposta.",
+  "conceito": "Uma linha de Park-Harris **oblíqua e convergindo para a fise** indica que o crescimento não está ocorrendo por igual. Parte da fise continua produzindo comprimento, enquanto outra parte está presa por uma ponte. O resultado é assimetria e possibilidade de deformidade angular (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 26, Como reconhecer: PARK-HARRIS e radiografia longa).\n\nA origem da linha é uma desaceleração temporária seguida de retomada do crescimento: a zona de calcificação provisória fica densa e vai permanecendo na metáfise. Quando toda a fise volta a crescer de modo simétrico, a linha se afasta por igual e permanece paralela. A orientação oblíqua é o que diferencia a situação perguntada dessa retomada uniforme.\n\nA ausência da linha pode sugerir parada, mas não deve ser usada isoladamente como prova absoluta. Da mesma forma, reconhecer a obliquidade não substitui mapear a ponte quando isso é necessário para planejar tratamento. O resumo descreve ressonância com sequência tridimensional para demonstrá-la e radiografias longas para acompanhar comprimento e eixo.\n\nNo fêmur distal, a consolidação da fratura não encerra a vigilância. Sinais sutis de distúrbio podem aparecer meses depois, e o seguimento depende do crescimento restante. A leitura da linha é uma pista de direção e simetria do crescimento, não uma medida isolada da quantidade de osso que cresceu.\n\n**Por que esta questão foi criada.** A questão oficial sobre a origem das linhas pode ser aprofundada pela leitura de sua orientação: paralela sugere retomada simétrica, enquanto obliquidade convergente aponta para ponte e assimetria.",
+  "correta": "**B: ponte óssea parcial.** Parte da fise cresce e parte está presa (Rockwood and Wilkins' Fractures in Children, cap. 26).",
   "incorretas": {
-   "A": "Na retomada normal e simétrica, a linha permanece paralela e se afasta por igual. A obliquidade convergente apresentada mostra justamente que os lados não estão crescendo de modo uniforme. Confundir a origem da linha com sua orientação apagaria a informação mais importante do caso.",
-   "C": "Uma parada completa e simétrica não explica o padrão em que uma parte se afasta e outra converge para a fise. O capítulo associa ausência da linha à suspeita de parada, mas não transforma esse sinal isolado em prova absoluta. A obliquidade perguntada aponta para crescimento desigual, com ponte parcial.",
-   "D": "A linha registra desaceleração e retomada do crescimento; sua obliquidade avalia assimetria. Ela não demonstra hiperemia do foco nem hipercrescimento como explicação do achado. O problema é uma parte da fise crescer menos, não a prova de que toda ela cresceu além do normal."
+   "A": "**Crescimento simétrico** daria linha paralela à fise.",
+   "C": "**A parada completa** não deixaria a linha oblíqua.",
+   "D": "**O hipercrescimento** não forma essa linha."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: A complicação principal: o distúrbio do crescimento."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-26-fise-distal-femur",
-     "titulo": "Fratura da fise distal do fêmur na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
-     "secoes": [
-      "A complicação principal: o distúrbio do crescimento"
-     ],
-     "blocos": [
-      "a-complicacao-principal-o-disturbio-do-crescimen-a1527f81",
-      "a-complicacao-principal-o-disturbio-do-crescimen-a2ab9a35",
-      "a-complicacao-principal-o-disturbio-do-crescimen-8d9c7252"
-     ],
-     "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
-     "trechosSha256": "f7c665d4a88cf986f233bd0fd55a4972d6889ca538f4c31065fa50c675b31a22"
-    }
-   ],
-   "questaoSha256": "25cab1eda0cf0fa7010e2df3c426c94c2e44952b9b51c96db8d06be45cc917ba",
-   "comentarioSha256": "9f2a5f4bce8d8077909d18ecb3af827f8a7cb73907a38060747a28f1544449a8"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1104": {
   "conceito": "No tipo II de Salter-Harris, o lado do fragmento metafisário de Thurston Holland costuma conservar a porção fisária presa a ele. Se surgir parada parcial, ela tende a ficar **no lado oposto ao fragmento**. Com fragmento medial, a previsão descrita é parada lateral e **valgo** (Rockwood crianças, 10ª ed., cap. 26, Para que lado entorta).\n\nA geometria explica a direção. Se o lado lateral para e o medial continua crescendo, o crescimento desigual angula o fêmur para valgo. Se a configuração for invertida, com fragmento lateral e parada medial, a deformidade esperada é varo. É preciso acertar tanto o lado da parada quanto o efeito angular; uma alternativa pode trazer apenas metade da relação correta.\n\nEssa é uma tendência anatômica do padrão, não a afirmação de que todo tipo II terá uma ponte nem de que a parada ficará obrigatoriamente em um local. O seguimento precisa demonstrar o que realmente ocorreu. Nos tipos III e IV, o resumo descreve a ponte centrada onde o traço atravessou a fise, outra relação que não deve ser transferida automaticamente ao tipo II.\n\nO conhecimento da configuração inicial orienta a vigilância de eixo e crescimento. Quando uma ponte é suspeitada, a ressonância ajuda a demonstrá-la; a indicação de ressecção ou de correção depende de sua extensão, do crescimento restante e da deformidade, não só do lado do fragmento.\n\n**Por que esta questão foi criada.** Testa a cadeia fragmento poupado, lado oposto vulnerável e direção da deformidade, usando a relação descrita no resumo a partir das legendas do capítulo.",
@@ -23901,80 +23376,32 @@
   }
  },
  "pediatria-1106": {
-  "conceito": "Pé frio e sem pulsos após fratura desviada da fise distal do fêmur indica uma ameaça à perfusão. Na hiperextensão com desvio anterior da epífise, a metáfise pode estirar ou comprimir a poplítea. **A primeira medida é redução de emergência, seguida de estabilização e reavaliação da perfusão**, sem atrasá-la para arteriografia (Rockwood crianças, 10ª ed., cap. 26, A artéria poplítea e o desvio anterior).\n\nA sequência protege tanto o membro quanto um eventual reparo. Corrigir a deformidade remove o componente mecânico da agressão vascular. Fixar a fratura antes da sutura evita que a manipulação óssea posterior desfaça um reparo arterial recém-realizado.\n\nSe a perfusão não retorna em 15 a 20 minutos após redução e fixação, o capítulo orienta exploração vascular imediata. Esse é o marco descrito para a persistência da falta de perfusão após a correção, não um período para deixar o membro isquêmico sem reduzir. Se a perfusão retorna, a criança permanece observada por 24 horas, porque trombose tardia e síndrome compartimental continuam possíveis.\n\nO resumo menciona fasciotomia dos quatro compartimentos junto ao reparo quando a isquemia ultrapassa seis a oito horas. Esse tempo não é uma autorização para observar um pé frio à espera de melhora espontânea. A conduta se refere a esta fratura e não deve ser convertida em um relógio universal para toda lesão vascular pediátrica.\n\n**Por que esta questão foi criada.** Cobra a ordem reduzir, fixar, reavaliar e explorar quando necessário, com a razão anatômica para estabilizar antes do reparo e sem confundir isquemia prolongada com prazo de espera.",
-  "correta": "**Correta: B (redução e fixação de urgência; sem retorno da perfusão em 15 a 20 minutos, exploração vascular imediata).** É a sequência descrita para a fratura do fêmur distal. A estabilização protege o reparo que possa ser necessário, e a persistência da falta de perfusão após corrigir a deformidade exige exploração, não observação prolongada.",
+  "conceito": "Pé frio e sem pulsos após fratura desviada da fise distal do fêmur indica uma ameaça à perfusão. Na hiperextensão com desvio anterior da epífise, a metáfise pode estirar ou comprimir a poplítea. **A primeira medida é redução de emergência, seguida de estabilização e reavaliação da perfusão**, sem atrasá-la para arteriografia (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 26, A artéria poplítea e o desvio anterior).\n\nA sequência protege tanto o membro quanto um eventual reparo. Corrigir a deformidade remove o componente mecânico da agressão vascular. Fixar a fratura antes da sutura evita que a manipulação óssea posterior desfaça um reparo arterial recém-realizado.\n\nSe a perfusão não retorna em 15 a 20 minutos após redução e fixação, o capítulo orienta exploração vascular imediata. Esse é o marco descrito para a persistência da falta de perfusão após a correção, não um período para deixar o membro isquêmico sem reduzir. Se a perfusão retorna, a criança permanece observada por 24 horas, porque trombose tardia e síndrome compartimental continuam possíveis.\n\nO resumo menciona fasciotomia dos quatro compartimentos junto ao reparo quando a isquemia ultrapassa seis a oito horas. Esse tempo não é uma autorização para observar um pé frio à espera de melhora espontânea. A conduta se refere a esta fratura e não deve ser convertida em um relógio universal para toda lesão vascular pediátrica.\n\n**Por que esta questão foi criada.** Cobra a ordem reduzir, fixar, reavaliar e explorar quando necessário, com a razão anatômica para estabilizar antes do reparo e sem confundir isquemia prolongada com prazo de espera.",
+  "correta": "**B: reduzir e fixar.** Se a perfusão não voltar em 15 a 20 minutos, exploração vascular (Rockwood and Wilkins' Fractures in Children, cap. 26).",
   "incorretas": {
-   "A": "Arteriografia antes de qualquer manipulação atrasaria a redução de emergência. O capítulo orienta corrigir primeiro a deformidade que pode estar comprimindo ou estirando o vaso. A necessidade de avaliar a lesão vascular não justifica deixar o membro sem perfusão enquanto se aguarda esse exame.",
-   "C": "Reparar o vaso e só depois manipular a fratura pode colocar a sutura em risco. A sequência descrita estabiliza primeiro a fratura para proteger o reparo vascular posterior, quando ele for necessário. A alternativa inverte a ordem mecânica de proteção do vaso.",
-   "D": "Tala e espera por seis horas não tratam a falta de perfusão apresentada. O membro precisa de redução de emergência, seguida da reavaliação e eventual exploração. Seis a oito horas aparece na discussão de isquemia prolongada e fasciotomia, não como uma janela segura para aguardar o espasmo resolver."
+   "A": "**A arteriografia** atrasa a redução que pode resolver.",
+   "C": "**O reparo** antes da fixação fica instável.",
+   "D": "**Observar** perde o membro."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: As lesões que vêm junto."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-26-fise-distal-femur",
-     "titulo": "Fratura da fise distal do fêmur na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
-     "secoes": [
-      "As lesões que vêm junto"
-     ],
-     "blocos": [
-      "as-lesoes-que-vem-junto-d3373187",
-      "as-lesoes-que-vem-junto-8970d0e5"
-     ],
-     "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
-     "trechosSha256": "7c74a8e92e33f2dfe8871b3d59dd5191aa710c1355bf9bbeb8b582d7e146cade"
-    }
-   ],
-   "questaoSha256": "7209bc3115b61fae2eba7e3d58718fb387b6996e8296c6b87d4e31dd4d185ed0",
-   "comentarioSha256": "5a0cb87d3f97bfbaa1409a8999841049a33bf1caa7c63e8bb6fa33cfe55805a5"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1107": {
-  "conceito": "A pergunta pede a interpretação do capítulo para a combinação de **fratura do canto metafisário e alargamento da fise distal do fêmur no lactente**. O resumo usa o termo patognomônico de maus-tratos e orienta inventário esquelético, exame da pele e acionamento da proteção à criança, independentemente da história apresentada (Rockwood crianças, 10ª ed., cap. 26, O bebê: parto, maus-tratos e infecção).\n\nO pequeno fragmento periférico da metáfise é a lesão metafisária clássica. No contexto descrito, não deve ser descartado como uma variante de ossificação ou acompanhado apenas meses depois. A conduta cobrada é reconhecer a gravidade do achado e iniciar a avaliação de proteção e de outras lesões.\n\nO mesmo resumo lembra que o recém-nascido pode sofrer separação epifisária pelo parto e que infecção deve ser considerada no recém-nascido com membro doloroso ou imóvel. Essas possibilidades não autorizam atribuir automaticamente ao parto ou à infecção a combinação específica da questão, muito menos dispensar a investigação de maus-tratos.\n\n**A investigação e a proteção não se resumem a um rótulo radiográfico.** É necessário avaliar a criança como um todo e procurar outras lesões. A resposta identifica a interpretação e a conduta exigidas pelo capítulo; não identifica, a partir da imagem isolada, uma pessoa responsável pelo trauma.\n\n**Por que esta questão foi criada.** Relaciona um achado de alta preocupação no lactente à conduta de inventário esquelético e proteção, indo além de reconhecer o nome da lesão.",
-  "correta": "**Correta: D (interpretação de maus-tratos com inventário esquelético e proteção à criança).** O capítulo emprega o termo patognomônico para essa combinação de fragmento metafisário periférico e fise alargada. O que deve orientar a ação é não minimizar o achado: examinar a criança, procurar outras lesões e acionar a proteção, sem atribuir pela imagem uma autoria individual.",
+  "conceito": "O capítulo interpreta a combinação de **fratura do canto metafisário e alargamento da fise distal do fêmur no lactente**. O resumo usa o termo patognomônico de maus-tratos e orienta inventário esquelético, exame da pele e acionamento da proteção à criança, independentemente da história apresentada (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 26, O bebê: parto, maus-tratos e infecção).\n\nO pequeno fragmento periférico da metáfise é a lesão metafisária clássica. No contexto descrito, não deve ser descartado como uma variante de ossificação ou acompanhado apenas meses depois. A conduta cobrada é reconhecer a gravidade do achado e iniciar a avaliação de proteção e de outras lesões.\n\nO mesmo resumo lembra que o recém-nascido pode sofrer separação epifisária pelo parto e que infecção deve ser considerada no recém-nascido com membro doloroso ou imóvel. Essas possibilidades não autorizam atribuir automaticamente ao parto ou à infecção a combinação específica da questão, muito menos dispensar a investigação de maus-tratos.\n\n**A investigação e a proteção não se resumem a um rótulo radiográfico.** É necessário avaliar a criança como um todo e procurar outras lesões. A resposta identifica a interpretação e a conduta exigidas pelo capítulo; não identifica, a partir da imagem isolada, uma pessoa responsável pelo trauma.\n\n**Por que esta questão foi criada.** Relaciona um achado de alta preocupação no lactente à conduta de inventário esquelético e proteção, indo além de reconhecer o nome da lesão.",
+  "correta": "**D: maus-tratos.** Exige inventário esquelético e acionar a proteção à criança (Rockwood and Wilkins' Fractures in Children, cap. 26).",
   "incorretas": {
-   "A": "O capítulo não considera essa combinação uma variante normal a ser revista apenas em seis meses. Edema, alargamento fisário e fragmento metafisário periférico exigem avaliação imediata da lesão e do contexto de proteção. A espera proposta ignora a interpretação específica solicitada.",
-   "B": "A separação epifisária relacionada ao parto existe, mas isso não permite dispensar outros exames diante do achado metafisário descrito. O paciente já tem três meses, e a interpretação cobrada exige investigação de outras lesões e proteção, em vez de encerrar o caso com uma explicação histórica não demonstrada.",
-   "C": "Infecção integra os diagnósticos a lembrar no recém-nascido com membro doloroso ou imóvel. Entretanto, atribuir a imagem apenas à osteomielite e iniciar antibiótico não substitui a conduta específica diante da fratura do canto com alargamento fisário. A questão pede a interpretação de proteção destacada pelo capítulo, não exclui a necessidade de avaliação clínica completa."
+   "A": "**Variante normal** não explica o edema e a fratura.",
+   "B": "**Fratura de parto** aos 3 meses não é a interpretação.",
+   "C": "**A osteomielite** não dá a fratura do canto."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: Diagnóstico e imagem."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-26-fise-distal-femur",
-     "titulo": "Fratura da fise distal do fêmur na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
-     "secoes": [
-      "Diagnóstico e imagem"
-     ],
-     "blocos": [
-      "diagnostico-e-imagem-855fc0ce",
-      "diagnostico-e-imagem-f4a39d9c"
-     ],
-     "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
-     "trechosSha256": "2987b5759bf15d6fad72143fe09dac503539e1ab62982c820458333acd0768b2"
-    }
-   ],
-   "questaoSha256": "8909de0ac7df83f97d7f3694fca6c1f18ed4b6cf6360d43c13581be4e8f12eab",
-   "comentarioSha256": "c86dee509c9b551e5d5f7c42e048dfe1ca10a08dd46140639e18ae0265b2c16d"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1108": {
   "conceito": "O tipo IV é o mais recente da classificação, e por isso o mais esquecido. RYU e DEBENHAM, e depois INOUE, descreveram uma fratura em que a separação passa pela tuberosidade e **corre para trás pela fise horizontal**: a fise proximal da tíbia inteira se solta. O Rockwood and Wilkins' Fractures in Children (cap. 27) define o tipo IV de OGDEN modificado como a **fratura de toda a fise proximal, com ou sem o fragmento posterior de THURSTAN HOLLAND**.\n\nÉ uma fratura fisária completa disfarçada de lesão da tuberosidade, e por isso se comporta como a fise: risco para a **poplítea**, internação e vigilância. É também o tipo em que o capítulo admite pensar em fasciotomia profilática (nos IV ou V com a cortical posterior rompida). Na redução, o tipo IV pede **90% de tração e 10% de alavanca**; a figura 27-14 do livro o chama também de SALTER-HARRIS II, pelo fragmento metafisário posterior. Séries recentes mostram que até o IV desviado pode ser reduzido fechado com segurança.\n\n**Por que esta questão foi criada.** As provas cobraram o tipo III várias vezes (TARO 2012, 2015 e 2025, TEOT 2021), mas o IV, a novidade da classificação, nunca.",
@@ -25388,119 +24815,46 @@
   "conferido": false
  },
  "pediatria-1196": {
-  "conceito": "Lesão **central, bem delimitada**, no úmero proximal, com **fragmento caído**, é o padrão do **cisto ósseo simples** apresentado no resumo. Com fratura pouco desviada do membro superior, a conduta inicial é **conservadora**, com tipoia ou órtese, alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nÉ necessário separar o tratamento da **fratura** do destino da **lesão de base**. A consolidação pode ocorrer sem que o cisto desapareça; o resumo relata cicatrização do cisto em apenas cerca de 10% nesse contexto conservador. Por isso, imobilizar a fratura não significa declarar a doença curada e encerrar todo acompanhamento.\n\nA localização também importa: o capítulo contrapõe o membro superior, tratado inicialmente de modo conservador, ao **quadril**, para o qual indica cirurgia. Não existe uma regra única de operar todo cisto fraturado ou de tratar todos os sítios com a mesma proteção.\n\n**Na prova:** identificar a lesão antes de escolher uma cirurgia agressiva. Se o diagnóstico não estiver claro, o resumo recomenda métodos temporários e biópsia planejada com cuidado; esse princípio não transforma uma apresentação típica de cisto simples do úmero em ressecção oncológica de urgência.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra fraturas patológicas em vários temas, e o cisto ósseo simples do úmero proximal é um exemplo típico descrito no resumo.",
-  "correta": "Alternativa A. Corresponde ao tratamento conservador inicial da fratura do membro superior por cisto simples. A estabilidade e a pouca deformidade do caso permitem priorizar a consolidação, mantendo avaliação posterior da lesão que pode persistir.",
+  "conceito": "Lesão **central, bem delimitada**, no úmero proximal, com **fragmento caído**, é o padrão do **cisto ósseo simples** apresentado no resumo. Com fratura pouco desviada do membro superior, a conduta inicial é **conservadora**, com tipoia ou órtese (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nÉ necessário separar o tratamento da **fratura** do destino da **lesão de base**. A consolidação pode ocorrer sem que o cisto desapareça; o resumo relata cicatrização do cisto em apenas cerca de 10% nesse contexto conservador. Por isso, imobilizar a fratura não significa declarar a doença curada e encerrar todo acompanhamento.\n\nA localização também importa: o capítulo contrapõe o membro superior, tratado inicialmente de modo conservador, ao **quadril**, para o qual indica cirurgia. Não existe uma regra única de operar todo cisto fraturado ou de tratar todos os sítios com a mesma proteção.\n\n**Na prova:** identificar a lesão antes de escolher uma cirurgia agressiva. Se o diagnóstico não estiver claro, o resumo recomenda métodos temporários e biópsia planejada com cuidado; esse princípio não transforma uma apresentação típica de cisto simples do úmero em ressecção oncológica de urgência.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra fraturas patológicas em vários temas, e o cisto ósseo simples do úmero proximal é um exemplo típico descrito no resumo.",
+  "correta": "**A: tipoia ou órtese.** Espera-se a consolidação (Rockwood and Wilkins' Fractures in Children, cap. 7).",
   "incorretas": {
-   "B": "Curetagem e enxerto são opções de tratamento da lesão, mas o resumo não exige realizá-los antes da consolidação dessa fratura típica do úmero. A opção troca o momento e torna urgente uma abordagem que não é a prioridade inicial descrita.",
-   "C": "A fonte orienta planejamento cuidadoso de biópsia quando o diagnóstico é incerto e métodos temporários para não complicar o tratamento. No caso típico de cisto simples pouco desviado do membro superior, a conduta inicial apresentada é conservadora, não biópsia aberta com placa por rotina.",
-   "D": "Ressecção com margens amplas é uma estratégia de outra natureza que não corresponde ao cisto simples típico apresentado. O diagnóstico e o sítio sustentam o tratamento inicial conservador, sem indicação de tratar toda lesão lítica como tumor maligno."
+   "B": "**A curetagem** não é urgente.",
+   "C": "**A biópsia e a placa** são excessivas para lesão típica.",
+   "D": "**A ressecção** é para tumor agressivo."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Lesões tumorais e pseudotumorais; Fraturas patológicas: princípios."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
-     "titulo": "Fraturas patológicas e maus-tratos na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
-     "secoes": [
-      "Lesões tumorais e pseudotumorais",
-      "Fraturas patológicas: princípios"
-     ],
-     "blocos": [
-      "lesoes-tumorais-e-pseudotumorais-56e622b4",
-      "fraturas-patologicas-principios-2c5dd0ce"
-     ],
-     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
-     "trechosSha256": "5276c9ffb7ea6c2c147223b947a7566d7f808c0dcdcd2ec7424be0f92cc3dc58"
-    }
-   ],
-   "questaoSha256": "ce8c527ef2f32aa45f312b6bbfe1cedeb567952bcfa3e65f9beac26342cea1b1",
-   "comentarioSha256": "5fa64ba9ed974bdb42715bdc372a377b33a4fc5135f043b239d54cef4f298f33"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1197": {
-  "conceito": "O **cisto ósseo aneurismático** é descrito como **excêntrico, septado, expansivo além da largura da fise**, com **níveis líquidos** na ressonância. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nA comparação com o **cisto simples** depende da organização da lesão: o simples é central e de cavidade única, enquanto o aneurismático apresenta septações e expansão. A presença de uma fratura não torna esses padrões equivalentes; o diagnóstico de base orienta o tratamento depois de proteger o osso.\n\nO resumo informa que o aneurismático não cicatriza sozinho e pode recidivar. Já o cisto simples do membro superior pode ter a fratura tratada conservadoramente. Assim, reconhecer a imagem não é apenas dar um nome: impede presumir o mesmo comportamento evolutivo para toda cavidade óssea.\n\n**Na prova:** excêntrico + septos + expansão e níveis líquidos favorecem aneurismático. Vidro fosco e calcificação pontilhada são outras marcas da tabela e não devem ser incorporadas ao cisto só porque todas podem aparecer em lesões ósseas.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre o diagnóstico diferencial das lesões líticas que fraturam, tema que cruza pediatria e tumores.",
-  "correta": "Alternativa B. Reúne as características comparativas do cisto aneurismático descritas na fonte. O conjunto, e não uma única palavra como “lítico”, é que o diferencia do simples.",
+  "conceito": "O **cisto ósseo aneurismático** é descrito como **excêntrico, septado, expansivo além da largura da fise**, com **níveis líquidos** na ressonância. (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nA comparação com o **cisto simples** depende da organização da lesão: o simples é central e de cavidade única, enquanto o aneurismático apresenta septações e expansão. A presença de uma fratura não torna esses padrões equivalentes; o diagnóstico de base orienta o tratamento depois de proteger o osso.\n\nO resumo informa que o aneurismático não cicatriza sozinho e pode recidivar. Já o cisto simples do membro superior pode ter a fratura tratada conservadoramente. Assim, reconhecer a imagem não é apenas dar um nome: impede presumir o mesmo comportamento evolutivo para toda cavidade óssea.\n\n**Na prova:** excêntrico + septos + expansão e níveis líquidos favorecem aneurismático. Vidro fosco e calcificação pontilhada são outras marcas da tabela e não devem ser incorporadas ao cisto só porque todas podem aparecer em lesões ósseas.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre o diagnóstico diferencial das lesões líticas que fraturam, tema que cruza pediatria e tumores.",
+  "correta": "**B: excêntrica e septada.** Que se expande além da fise, com níveis líquidos na ressonância (Rockwood and Wilkins' Fractures in Children, cap. 7).",
   "incorretas": {
-   "A": "Central e de cavidade única descreve o cisto simples na tabela. A alternativa aponta justamente o padrão usado como comparação, em vez das septações e da expansão do aneurismático.",
-   "C": "Aspecto diafisário em vidro fosco é a marca da displasia fibrosa. O resumo também lhe atribui comportamento diferente, com possibilidade de o enxerto ser substituído por displasia e preferência por haste em certos cenários.",
-   "D": "Calcificação pontilhada é a característica do encondroma na tabela. Ela não substitui a lesão excêntrica, septada e com níveis líquidos que a pergunta pede distinguir."
+   "A": "**Central e sem septos** é o cisto simples.",
+   "C": "**Vidro fosco** é displasia fibrosa.",
+   "D": "**Calcificação pontilhada** sugere lesão cartilaginosa."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Lesões tumorais e pseudotumorais."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
-     "titulo": "Fraturas patológicas e maus-tratos na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
-     "secoes": [
-      "Lesões tumorais e pseudotumorais"
-     ],
-     "blocos": [
-      "lesoes-tumorais-e-pseudotumorais-56e622b4"
-     ],
-     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
-     "trechosSha256": "41bf4fb44683033089a4092082d5f497c118769918e56e62d5bf8335e011e353"
-    }
-   ],
-   "questaoSha256": "11877c31b446b36601bbe10b5cd87d622b62333972531d3cbabd95690b07743a",
-   "comentarioSha256": "788b30728a3d401630de156d166e37f9edf21a2f3666b5155c01e0093c21e235"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1198": {
-  "conceito": "Lesão **cortical, excêntrica e com borda esclerótica** corresponde ao padrão de **fibroma não ossificante** no resumo. A fratura deve ser **imobilizada até consolidar**, e a necessidade de tratar a lesão é decidida depois, alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nConsolidação da fratura e desaparecimento da lesão não são sinônimos. A tabela informa expressamente que a **lesão persiste**, razão para não dispensar acompanhamento apenas porque o traço consolidou. O resumo menciona maior risco quando ela ocupa mais de 50% do diâmetro e no estágio Ritschl B.\n\nIsso permite organizar o cuidado em dois momentos: proteger o osso fraturado e, depois da união, discutir a lesão conforme risco e evolução. Antecipar curetagem e enxerto antes de qualquer imobilização não é a sequência proposta. O capítulo também recomenda métodos temporários quando o diagnóstico não é claro, para não prejudicar o tratamento da doença.\n\n**Na prova:** o aspecto típico ajuda a reconhecer a lesão, mas não autoriza dizer que a fratura a fará desaparecer. Imobilizar primeiro e reavaliar o risco depois preserva as duas partes do problema.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O fibroma não ossificante é uma lesão óssea da criança descrita no resumo, e a sequência \"consolidar primeiro, decidir depois\" é o ponto prático.",
-  "correta": "Alternativa C. Mantém a sequência descrita: imobilização para consolidação e eventual tratamento posterior da lesão persistente. O acompanhamento não termina automaticamente com a união do osso.",
+  "conceito": "Lesão **cortical, excêntrica e com borda esclerótica** corresponde ao padrão de **fibroma não ossificante** no resumo. A fratura deve ser **imobilizada até consolidar**, e a necessidade de tratar a lesão é decidida depois (Rockwood and Wilkins, 10ª edição, capítulo 7, lesões tumorais e pseudotumorais).\n\nConsolidação da fratura e desaparecimento da lesão não são sinônimos. A tabela informa expressamente que a **lesão persiste**, razão para não dispensar acompanhamento apenas porque o traço consolidou. O resumo menciona maior risco quando ela ocupa mais de 50% do diâmetro e no estágio Ritschl B.\n\nIsso permite organizar o cuidado em dois momentos: proteger o osso fraturado e, depois da união, discutir a lesão conforme risco e evolução. Antecipar curetagem e enxerto antes de qualquer imobilização não é a sequência proposta. O capítulo também recomenda métodos temporários quando o diagnóstico não é claro, para não prejudicar o tratamento da doença.\n\n**Na prova:** o aspecto típico ajuda a reconhecer a lesão, mas não autoriza dizer que a fratura a fará desaparecer. Imobilizar primeiro e reavaliar o risco depois preserva as duas partes do problema.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O fibroma não ossificante é uma lesão óssea da criança descrita no resumo, e a sequência \"consolidar primeiro, decidir depois\" é o ponto prático.",
+  "correta": "**C: imobilizar primeiro.** A necessidade de tratar a lesão se decide depois da consolidação (Rockwood and Wilkins' Fractures in Children, cap. 7).",
   "incorretas": {
-   "A": "O resumo indica imobilização e coloca a cirurgia depois de consolidar. A alternativa inverte a sequência e transforma curetagem/enxerto em urgência antes da proteção inicial da fratura.",
-   "B": "O tratamento apresentado para o padrão típico é imobilizar e avaliar eventual cirurgia após a união, não ressecção ampla por presunção oncológica. O diagnóstico de base precisa orientar a abordagem, sem converter automaticamente esse aspecto fibroso em uma indicação de margens amplas.",
-   "D": "A fonte afirma que a lesão persiste. Portanto, não se deve garantir seu desaparecimento com a fratura nem eliminar o seguimento que permite avaliar risco de nova lesão do osso."
+   "A": "**A curetagem imediata** não é necessária.",
+   "B": "**A ressecção** não se justifica; não maligniza.",
+   "D": "**Sem seguimento** ignora o risco de nova fratura."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Lesões tumorais e pseudotumorais; Fraturas patológicas: princípios."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
-     "titulo": "Fraturas patológicas e maus-tratos na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
-     "secoes": [
-      "Lesões tumorais e pseudotumorais",
-      "Fraturas patológicas: princípios"
-     ],
-     "blocos": [
-      "lesoes-tumorais-e-pseudotumorais-56e622b4",
-      "fraturas-patologicas-principios-2c5dd0ce"
-     ],
-     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
-     "trechosSha256": "5276c9ffb7ea6c2c147223b947a7566d7f808c0dcdcd2ec7424be0f92cc3dc58"
-    }
-   ],
-   "questaoSha256": "1bc38bfc8d34f5084a370b44e9e1c37ae068344574766b6c0891634df63102f5",
-   "comentarioSha256": "f68c37f5f6370ecf339625cd28964f65987b536a79f6c8a95a9c77d87773af77"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1199": {
   "conceito": "Um menino de 10 anos com síndrome de McCUNE-ALBRIGHT cai num jogo de futebol e quebra o fêmur na região subtrocantérica (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7, Fig. 7-13). Como fixar um osso que é, ele próprio, doente?\n\n**A displasia fibrosa.** Anomalia benigna em que o osso e a medula são substituídos por tecido fibro-ósseo (osso imaturo metaplásico, com trabéculas mal orientadas), com menor resistência, deformidade e fratura. Pode ser **monostótica** (fraturas em cerca de 5%) ou **poliostótica**; a poliostótica com manchas café com leite e endocrinopatia é a **síndrome de McCUNE-ALBRIGHT**. Na radiografia: lesão central, diafisária, bem definida, com aspecto em **vidro fosco**; arqueamento de fêmur e tíbia. A endocrinopatia pode causar fosfatúria, com efeito de raquitismo sobre o resto do esqueleto.\n\n**A fratura.** A consolidação é rápida, mas o calo endosteal se forma mal, enquanto o periosteal é normal. A maioria é tratada de início com imobilização, exceto em ossos muito deformados (sobretudo no membro inferior) e nas grandes áreas císticas. As do **fêmur proximal** são problemáticas, pela tendência à consolidação viciosa e à deformidade progressiva em **coxa vara e cajado de pastor**.\n\n**O que não funciona e o que funciona.** A **curetagem com enxerto em geral não é indicada**, porque o enxerto é **reabsorvido e substituído por osso displásico**; o aloenxerto cortical parece o mais resistente. Quando operadas, as fraturas pedem **fixação interna intramedular, de compartilhamento de carga**, idealmente \"fixação de todo o osso\", muitas vezes com correção da deformidade. Bisfosfonatos (pamidronato) podem reduzir a dor óssea e as fraturas nas formas graves.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A displasia fibrosa é cobrada em tumores, e o capítulo infantil traz os princípios de fixação que caem bem em prova.\n\n> **Na prova:** displasia fibrosa: **vidro fosco**, diafisária; McCUNE-ALBRIGHT = poliostótica + café com leite + endocrinopatia; **enxerto vira displasia** (cortical resiste mais); fixação **intramedular** de compartilhamento de carga; fêmur proximal = **cajado de pastor**.",
@@ -25638,117 +24992,46 @@
   }
  },
  "pediatria-1205": {
-  "conceito": "Na suspeita de maus-tratos, o resumo indica **inventário esquelético abaixo de 2 anos**, repetido em cerca de **2 semanas**, e estende a avaliação aos **irmãos menores de 2 anos**. É a alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 7, inventário e conduta).\n\nO inventário é feito com **incidências separadas**, incluindo oblíquas do tórax e perfil de toda a coluna; não com uma única imagem de corpo inteiro. A finalidade é procurar lesões que não foram identificadas apenas pelo local da queixa inicial.\n\nO capítulo informa que repetir em 2 semanas identificou 27% mais fraturas e que a avaliação de irmãos pequenos teve 11,9% de exames positivos. São resultados dos grupos apresentados, não garantia de achados em toda família. Eles explicam por que a recomendação não se limita a uma radiografia única do osso já fraturado.\n\n**Na prova:** abaixo de 2 anos, inventário; em 2 semanas, repetição; irmãos menores também entram. Entre 2 e 5 anos a decisão é individualizada, e acima de 5 o resumo considera o exame pouco útil.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada às oficiais sobre maus-tratos (TARO 2011 `pediatria-0422`, TARO 2015 `pediatria-0066`). O inventário é a ferramenta que o ortopedista precisa saber pedir.",
-  "correta": "Alternativa B. Reúne faixa etária, repetição e avaliação de irmãos conforme o capítulo. As três partes importam: uma primeira avaliação negativa não substitui automaticamente a reavaliação proposta.",
+  "conceito": "Na suspeita de maus-tratos, o resumo indica **inventário esquelético abaixo de 2 anos**, repetido em cerca de **2 semanas**, e estende a avaliação aos **irmãos menores de 2 anos**. (Rockwood and Wilkins, 10ª edição, capítulo 7, inventário e conduta).\n\nO inventário é feito com **incidências separadas**, incluindo oblíquas do tórax e perfil de toda a coluna; não com uma única imagem de corpo inteiro. A finalidade é procurar lesões que não foram identificadas apenas pelo local da queixa inicial.\n\nO capítulo informa que repetir em 2 semanas identificou 27% mais fraturas e que a avaliação de irmãos pequenos teve 11,9% de exames positivos. São resultados dos grupos apresentados, não garantia de achados em toda família. Eles explicam por que a recomendação não se limita a uma radiografia única do osso já fraturado.\n\n**Na prova:** abaixo de 2 anos, inventário; em 2 semanas, repetição; irmãos menores também entram. Entre 2 e 5 anos a decisão é individualizada, e acima de 5 o resumo considera o exame pouco útil.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada às oficiais sobre maus-tratos (TARO 2011 `pediatria-0422`, TARO 2015 `pediatria-0066`). O inventário é a ferramenta que o ortopedista precisa saber pedir.",
+  "correta": "**B: 2 anos.** Repetido em cerca de 2 semanas e indicado também para irmãos menores de 2 anos (Rockwood and Wilkins' Fractures in Children, cap. 7).",
   "incorretas": {
-   "A": "O babygrama é explicitamente desaconselhado. O resumo pede incidências separadas e projeções específicas, em vez de uma única radiografia ampla que trate toda a avaliação como uma só imagem.",
-   "C": "O maior rendimento não é atribuído aos maiores de 5 anos. O capítulo considera o inventário pouco útil nessa faixa, individualiza de 2 a 5 e o indica nos menores de 2 com suspeita.",
-   "D": "As oblíquas do tórax fazem parte das incidências citadas. Dispensá-las contradiz o protocolo de procura de lesões, que inclui a avaliação dirigida das costelas."
+   "A": "**5 anos** passa da faixa obrigatória.",
+   "C": "**1 ano** é restritivo.",
+   "D": "**10 anos** não tem rendimento."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Inventário esquelético e conduta."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
-     "titulo": "Fraturas patológicas e maus-tratos na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
-     "secoes": [
-      "Inventário esquelético e conduta"
-     ],
-     "blocos": [
-      "inventario-esqueletico-e-conduta-3b98f546"
-     ],
-     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
-     "trechosSha256": "1712fec2ea530ed4f95516e3bdd6567bd4bee286d7ebec42468ca999614fd4be"
-    }
-   ],
-   "questaoSha256": "f496ec5e9891af02faa1b2a6b70aaf78b068d479ec80057ad66330963df05465",
-   "comentarioSha256": "9a749024413b2e406a6de0e858ade3edcb325a8122848c5c384de66228b5f6e3"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1206": {
-  "conceito": "Uma **equimose na orelha de lactente que ainda não se desloca** é o achado de maior alerta entre as opções, alternativa C. O resumo enfatiza a combinação de **pouca mobilidade e localização fora das proeminências habituais**, incluindo orelhas, face, nádegas e abdome (Rockwood and Wilkins, 10ª edição, capítulo 7, reconhecimento).\n\nNos menores de 5 meses, o capítulo informa equimose acidental em apenas 1,3%. Esse dado ajuda a perceber por que não se deve atribuir automaticamente uma lesão nesse lactente às quedas comuns da criança que já anda. A interpretação depende do desenvolvimento real e de uma história compatível.\n\nIsso não torna toda equimose de uma criança móvel inocente, nem confirma a causa de uma lesão apenas pelo lugar. O resumo recomenda avaliar quem presenciou, quando ocorreu e eventual demora em buscar atendimento, além de documentar partes moles antes de gessar.\n\n**Na prova:** comparar o que a criança consegue fazer com a topografia e o relato. A orelha de um lactente de 4 meses sem deslocamento combina duas características de alerta; as outras opções trazem crianças móveis e locais ou mecanismos mais compatíveis com sua atividade.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre o achado mais comum dos maus-tratos, ligada ao TARO 2020 (`pediatria-0010`), que cobra o tipo mais frequente de maus-tratos.",
-  "correta": "Alternativa C. Reúne não deambulação e equimose auricular, ambos destacados no resumo. É a associação mais sugestiva do conjunto, sem transformar um único sinal em comprovação definitiva de autoria ou mecanismo.",
+  "conceito": "Uma **equimose na orelha de lactente que ainda não se desloca** é o achado de maior alerta. O resumo enfatiza a combinação de **pouca mobilidade e localização fora das proeminências habituais**, incluindo orelhas, face, nádegas e abdome (Rockwood and Wilkins, 10ª edição, capítulo 7, reconhecimento).\n\nNos menores de 5 meses, o capítulo informa equimose acidental em apenas 1,3%. Esse dado ajuda a perceber por que não se deve atribuir automaticamente uma lesão nesse lactente às quedas comuns da criança que já anda. A interpretação depende do desenvolvimento real e de uma história compatível.\n\nIsso não torna toda equimose de uma criança móvel inocente, nem confirma a causa de uma lesão apenas pelo lugar. O resumo recomenda avaliar quem presenciou, quando ocorreu e eventual demora em buscar atendimento, além de documentar partes moles antes de gessar.\n\n**Na prova:** comparar o que a criança consegue fazer com a topografia e o relato. A orelha de um lactente de 4 meses sem deslocamento combina duas características de alerta; as outras opções trazem crianças móveis e locais ou mecanismos mais compatíveis com sua atividade.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre o achado mais comum dos maus-tratos, ligada ao TARO 2020 (`pediatria-0010`), que cobra o tipo mais frequente de maus-tratos.",
+  "correta": "**C: na orelha aos 4 meses.** Em lactente que ainda não se desloca e fora das proeminências (Rockwood and Wilkins' Fractures in Children, cap. 7).",
   "incorretas": {
-   "A": "Canela e testa numa criança que já anda têm um contexto de mobilidade diferente do lactente imóvel. Isso não exclui abuso, mas o par idade/topografia não reúne os dois alertas específicos da equimose auricular no bebê sem deslocamento.",
-   "B": "Equimoses nos joelhos de criança escolar precisam ser interpretadas com história e exame completo. Apenas multiplicidade nesses locais não equivale à combinação de orelha e não mobilidade que o capítulo destaca como mais preocupante entre os casos oferecidos.",
-   "D": "A escoriação está ligada no enunciado a um mecanismo possível para uma criança de 7 anos que anda de bicicleta. O relato ainda precisa ser coerente, mas essa apresentação não tem o mesmo descompasso entre lesão, local e desenvolvimento do lactente da alternativa correta."
+   "A": "**A canela** da criança que anda é local habitual de trauma.",
+   "B": "**Os joelhos** não corresponde ao descrito no capítulo.",
+   "D": "**O queixo** após queda tem explicação."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
-     "titulo": "Fraturas patológicas e maus-tratos na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
-     "secoes": [
-      "Reconhecimento"
-     ],
-     "blocos": [
-      "reconhecimento-a471746c"
-     ],
-     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
-     "trechosSha256": "3c23dc6bcb7e170220de35b14fa7fe65a3fab96279e08eb9b0787172c8034187"
-    }
-   ],
-   "questaoSha256": "0392493d2d1abad6bba479c16e0fa2b09090c709823aef26223254506632e1b9",
-   "comentarioSha256": "9af3ed68aa7d78da919ed2610f4733ed7f4138a4406985599dcbf5e89f2fe469"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1207": {
-  "conceito": "O padrão que mais sugere **imersão intencional** é **linha d’água nítida, profundidade uniforme e poupança da prega glútea e das fossas poplíteas**, alternativa D. É o conjunto descrito no resumo, não apenas a existência de uma queimadura por água quente (Rockwood and Wilkins, 10ª edição, capítulo 7, reconhecimento).\n\nA avaliação precisa observar **limites, uniformidade e áreas poupadas**. Uma descrição genérica de “escaldadura” não informa essas características. O padrão apresentado na alternativa correta reúne pistas que o capítulo usa para levantar suspeita e orientar a análise da história.\n\nReconhecer esse conjunto não substitui examinar toda a criança nem permite presumir que toda outra forma de queimadura seja acidental. O resumo recomenda documentar as lesões de partes moles e, quando há suspeita, organizar ambiente seguro e avaliação pela equipe de proteção.\n\n**Na prova:** escolher o padrão completo de imersão do capítulo. Respingos, margens variáveis ou apenas uma região atingida não reproduzem, sozinhos, a combinação de limite nítido, uniformidade e poupança de pregas.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra os padrões dos maus-tratos, e as queimaduras têm desenhos clássicos que falam por si.",
-  "correta": "Alternativa D. Conserva as três características descritas para a imersão intencional: linha nítida, profundidade uniforme e preservação de pregas/áreas indicadas. O julgamento depende do conjunto e do contexto clínico.",
+  "conceito": "O padrão que mais sugere **imersão intencional** é **linha d’água nítida, profundidade uniforme e poupança da prega glútea e das fossas poplíteas**. É o conjunto descrito no resumo, não apenas a existência de uma queimadura por água quente (Rockwood and Wilkins, 10ª edição, capítulo 7, reconhecimento).\n\nA avaliação precisa observar **limites, uniformidade e áreas poupadas**. Uma descrição genérica de “escaldadura” não informa essas características. Esse padrão reúne pistas que o capítulo usa para levantar suspeita e orientar a análise da história.\n\nReconhecer esse conjunto não substitui examinar toda a criança nem permite presumir que toda outra forma de queimadura seja acidental. O resumo recomenda documentar as lesões de partes moles e, quando há suspeita, organizar ambiente seguro e avaliação pela equipe de proteção.\n\n**Na prova:** escolher o padrão completo de imersão do capítulo. Respingos, margens variáveis ou apenas uma região atingida não reproduzem, sozinhos, a combinação de limite nítido, uniformidade e poupança de pregas.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A banca cobra os padrões dos maus-tratos, e as queimaduras têm desenhos clássicos que falam por si.",
+  "correta": "**D: linha d'água nítida.** Com profundidade uniforme e poupança da prega glútea e das fossas poplíteas (Rockwood and Wilkins' Fractures in Children, cap. 7).",
   "incorretas": {
-   "A": "A opção descreve variação de forma e profundidade com respingos, não a distribuição uniforme com linha d’água e áreas poupadas que o resumo salienta. Isso a diferencia do padrão solicitado, sem concluir que qualquer lesão com respingos seja automaticamente acidental.",
-   "B": "Profundidades variadas e margens indistintas contrastam com profundidade uniforme e limite nítido da descrição de imersão intencional. A oposição entre esses elementos é o motivo específico para não escolher a alternativa.",
-   "C": "Localizar a queimadura no tronco e membro superior não fornece os sinais morfológicos pedidos. A fonte destaca limite, uniformidade e poupança de pregas; apenas dizer a região queimada não reproduz esse padrão."
+   "A": "**A ponta de seta** com respingos sugere derramamento acidental.",
+   "B": "**Profundidades variadas** não corresponde ao descrito no capítulo.",
+   "C": "**Margens indistintas** não corresponde ao descrito no capítulo."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fraturas patológicas e maus-tratos na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries. Seções: Reconhecimento; Inventário esquelético e conduta."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
-     "titulo": "Fraturas patológicas e maus-tratos na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
-     "secoes": [
-      "Reconhecimento",
-      "Inventário esquelético e conduta"
-     ],
-     "blocos": [
-      "reconhecimento-a471746c",
-      "inventario-esqueletico-e-conduta-2bcdc846"
-     ],
-     "sha256": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
-     "trechosSha256": "026db7fc60982a11827c8057da66b5202ebf4ce0b8fc52f6e01e543206f17680"
-    }
-   ],
-   "questaoSha256": "fa38aebde7ccec4d5da8c124c1ec7a7e1485fbc270d5baf799e42e9dd2738dd7",
-   "comentarioSha256": "4d5b7193e8a3912b32640c33b7a870985890b87198a74f2599a2b9501d9a8e07"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1208": {
   "conceito": "Uma assistente social pergunta ao ortopedista por que a equipe ficou tão preocupada com uma família específica. Entre os dados do caso, um chamou a atenção: o novo companheiro da mãe, sem vínculo com a criança, mora na casa.\n\n**A epidemiologia.** Os relatos de maus-tratos nos Estados Unidos passaram de 1,2 milhão em 1982 para quase 4 milhões em 2021. Entre os casos confirmados, cerca de **60% são negligência**, 16% abuso físico, 10% sexual e 7% psicológico. A **negligência é o tipo mais frequente**. A taxa de vítimas é maior nos lactentes; o abuso é a segunda causa de morte entre 1 e 6 meses (atrás da síndrome da morte súbita) e a segunda acima de 1 ano (atrás dos acidentes) (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7).\n\n**O lar de risco.** Famílias em crise (separação, desemprego, divórcio, morte, moradia, dinheiro), abuso de álcool e drogas. Comparado às famílias monoparentais, **a morte por maus-tratos foi 50 vezes maior nas casas com adultos sem parentesco com a criança**, e o agressor era esse adulto em 83,9% dos casos. Outros preditores: pais com história de abuso, mãe abaixo de 20 anos, depressão materna, creche domiciliar (Tabela 7-4). Qualquer adulto, de qualquer classe social, pode abusar.\n\n**A criança de risco.** A maioria tem menos de 3 anos; numa série, 78% das fraturas foram abaixo de 3 anos e 50% abaixo de 1. Primogênitos, prematuros, enteados, crianças com deficiência (25% a 83% abusadas), gêmeos.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2020 (`pediatria-0010`), que pergunta o tipo de maus-tratos mais frequente (negligência). Aqui o ângulo é o fator de risco de morte. Depois, faça a oficial.\n\n> **Na prova:** maus-tratos: **negligência** a mais frequente (60%); **adulto sem parentesco** na casa = **50 vezes** o risco de morte; maioria **abaixo de 3 anos**; deficiência, prematuridade, enteado.",
@@ -27502,351 +26785,130 @@
   "conferido": false
  },
  "pediatria-1315": {
-  "conceito": "**Ansiedade, agitação e aumento da necessidade de analgésico** são os **três As** da síndrome compartimental pediátrica. O menino apresenta esse padrão, alternativa B, e os **pulsos presentes não afastam** a hipótese (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nOs seis Ps são pouco confiáveis na criança, e a **paralisia é tardia**. Dor desproporcional e ao estiramento passivo são precoces; a comunicação difícil pode fazer a progressão aparecer como mudança de comportamento e demanda crescente de analgesia.\n\nO resumo também descreve formas **silenciosas**, particularmente com lesão nervosa. Não se deve exigir que todos os sinais clássicos apareçam para examinar o membro, retirar compressões e avaliar necessidade de fasciotomia. A decisão associa clínica seriada e, quando pertinente, pressões.\n\n**Na prova: ** aumento de analgesia é um sinal de alerta para reavaliar, não um convite para apenas subir a dose. A hipótese exige ação e avaliação imediatas, sem esperar pulso desaparecer ou paralisia confirmar uma fase avançada.\n\n**Por que esta questão foi criada.** É uma questão de projeção para reconhecer ansiedade, agitação e aumento da necessidade de analgésico como alerta precoce pediátrico, mesmo com pulsos presentes.",
-  "correta": "Alternativa B. Os três dados comportamentais do caso são precisamente os três As descritos como úteis na criança. A presença de pulso não neutraliza a piora clínica.",
+  "conceito": "**Ansiedade, agitação e aumento da necessidade de analgésico** são os **três As** da síndrome compartimental pediátrica. O menino apresenta esse padrão, e os **pulsos presentes não afastam** a hipótese (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nOs seis Ps são pouco confiáveis na criança, e a **paralisia é tardia**. Dor desproporcional e ao estiramento passivo são precoces; a comunicação difícil pode fazer a progressão aparecer como mudança de comportamento e demanda crescente de analgesia.\n\nO resumo também descreve formas **silenciosas**, particularmente com lesão nervosa. Não se deve exigir que todos os sinais clássicos apareçam para examinar o membro, retirar compressões e avaliar necessidade de fasciotomia. A decisão associa clínica seriada e, quando pertinente, pressões.\n\n**Na prova: ** aumento de analgesia é um sinal de alerta para reavaliar, não um convite para apenas subir a dose. A hipótese exige ação e avaliação imediatas, sem esperar pulso desaparecer ou paralisia confirmar uma fase avançada.\n\n**Por que esta questão foi criada.** É uma questão de projeção para reconhecer ansiedade, agitação e aumento da necessidade de analgésico como alerta precoce pediátrico, mesmo com pulsos presentes.",
+  "correta": "**B: síndrome compartimental.** São os três As, mais úteis que os seis Ps na criança (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "A": "Pulso presente não exclui síndrome compartimental segundo a síntese independente do capítulo. Usá-lo para afastar a hipótese ignora a evolução da dor e do comportamento.",
-   "C": "A necessidade progressiva de analgésico é um dos sinais de alerta. Aumentar a dose sem reexaminar o membro deixa a possível causa compartimental sem avaliação.",
-   "D": "A paralisia é tardia. Esperá-la para confirmar a suspeita troca a vigilância precoce por um sinal avançado, contrário à orientação do resumo."
+   "A": "**A dor da fratura** não aumenta a necessidade de analgésico assim.",
+   "C": "**O gesso mal acolchoado** não explica a agitação crescente.",
+   "D": "**A lesão nervosa** não dá ansiedade e agitação crescentes."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Diagnóstico na criança; Como ler este capítulo."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Diagnóstico na criança",
-      "Como ler este capítulo"
-     ],
-     "blocos": [
-      "diagnostico-na-crianca-1c8ef936",
-      "diagnostico-na-crianca-2587bbf7",
-      "como-ler-este-capitulo-c1437212"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "dbda6415fe2af0c0b45f03eccbe94243e463b8029f7ac96ba4df76f432c7e7ea"
-    }
-   ],
-   "questaoSha256": "30debb427ec0d92126383a30da2ce77517fd1e0360384cc1a202393083eb7f1d",
-   "comentarioSha256": "fd53b64af198b0e9c8cd00829f33b2698f22750f7a8b452bb23af7f375bc7aec"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1316": {
-  "conceito": "A pressão basal da perna infantil é **13,3 a 16,6 mmHg**, maior que os **5,2 a 9,7 mmHg** do adulto citados. O diagnóstico depende de **exame seriado e contexto**, não apenas de ultrapassar um número. É a alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nO resumo apresenta dois parâmetros: pressão absoluta **30 mmHg ou mais** e **delta menor que 30 mmHg**. O delta é a pressão **diastólica MENOS a compartimental**; expressa a relação entre perfusão e pressão local, não a soma das duas.\n\nNa série citada, entre 15 antebraços acima de 30 mmHg, apenas 1 desenvolveu síndrome. Isso impede converter o limiar isolado em diagnóstico universal, mas não significa que uma pressão elevada com sinais clínicos possa ser ignorada. O capítulo indica fasciotomia com sinais clínicos e pressões elevadas.\n\n**Na prova: ** conservar a diferença entre parâmetro de alerta e decisão integrada. O resumo recomenda medir sob sedação, em vários pontos, perto da fratura, e monitorar por mais tempo, pois o pico pode ser tardio.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A pressão basal mais alta da criança e a tolerância acima de 30 mmHg são a diferença entre a criança e o adulto.",
-  "correta": "Alternativa D. Mantém a basal pediátrica mais alta e a necessidade de avaliação clínica seriada. O dado de tolerância não autoriza observar passivamente uma criança clinicamente pior.",
+  "conceito": "A pressão basal da perna infantil é **13,3 a 16,6 mmHg**, maior que os **5,2 a 9,7 mmHg** do adulto citados. O diagnóstico depende de **exame seriado e contexto**, não apenas de ultrapassar um número. (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nO resumo apresenta dois parâmetros: pressão absoluta **30 mmHg ou mais** e **delta menor que 30 mmHg**. O delta é a pressão **diastólica MENOS a compartimental**; expressa a relação entre perfusão e pressão local, não a soma das duas.\n\nNa série citada, entre 15 antebraços acima de 30 mmHg, apenas 1 desenvolveu síndrome. Isso impede converter o limiar isolado em diagnóstico universal, mas não significa que uma pressão elevada com sinais clínicos possa ser ignorada. O capítulo indica fasciotomia com sinais clínicos e pressões elevadas.\n\n**Na prova: ** conservar a diferença entre parâmetro de alerta e decisão integrada. O resumo recomenda medir sob sedação, em vários pontos, perto da fratura, e monitorar por mais tempo, pois o pico pode ser tardio.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A pressão basal mais alta da criança e a tolerância acima de 30 mmHg são a diferença entre a criança e o adulto.",
+  "correta": "**D: maior.** 13,3 a 16,6 mmHg; muitas toleram mais de 30 mmHg, e decide-se pela clínica (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "A": "Inverte os valores da fonte: a basal infantil é maior, não menor. Aplicar a referência adulta como se fosse idêntica à pediátrica prejudica a interpretação.",
-   "B": "A série dos 15 antebraços com apenas 1 caso contradiz a afirmação universal. O número deve ser integrado à clínica, sem transformá-lo nem em sentença automática nem em garantia de segurança.",
-   "C": "Delta é diastólica menos pressão compartimental. Somar muda o significado e impede comparar corretamente com o limiar abaixo de 30 mmHg citado."
+   "A": "**Menor** é o contrário.",
+   "B": "**Igual** não é.",
+   "C": "**Abaixo de 5 mmHg** fica abaixo até do adulto."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Diagnóstico na criança."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Diagnóstico na criança"
-     ],
-     "blocos": [
-      "diagnostico-na-crianca-2587bbf7"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "c6e30883b764c4e3346ef4e57c9e153b65529bf86830324f3a10da9b7caeb0d0"
-    }
-   ],
-   "questaoSha256": "824f65a67306af8989ed97aec3983a42d00fad11da891bf8353dbc8bef18b7ab",
-   "comentarioSha256": "73e1f422f69483ecdf355b521a85a0f8ed25015488be853f94b2e99ba04de518"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1317": {
-  "conceito": "O primeiro passo é **retirar gesso, algodão e curativos circulares** e manter o membro **na altura do coração**, alternativa A. O resumo descreve flexão excessiva no gesso longo como causa extrínseca de síndrome compartimental (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nSoltar apenas uma camada não equivale a retirar todas as fontes de compressão. O capítulo distingue o membro nem pendente nem elevado acima do coração: a elevação excessiva **piorou fluxo e oxigenação** no dado citado. Tratar choque e hipóxia também integra a abordagem inicial.\n\nEssas medidas são iniciais, não a conclusão de todo tratamento. Persistindo sinais e pressões elevadas, a indicação é **fasciotomia de emergência**. Melhorar a posição e retirar o gesso não justifica adiar a avaliação de uma síndrome estabelecida.\n\n**Na prova: ** reconhecer a ação que remove compressão e favorece perfusão, sem aplicar automaticamente a elevação usada para edema de outras lesões. Analgesia não substitui descompressão e reavaliação.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2012 (`pediatria-0666`), que perguntou com que tratamento a isquemia de VOLKMANN na supracondiliana GARTLAND III é mais comum (gesso com flexão do cotovelo).",
-  "correta": "Alternativa A. Retira os elementos circulares e mantém a altura recomendada. É o primeiro passo descrito, seguido da avaliação imediata da necessidade de liberação cirúrgica.",
+  "conceito": "O primeiro passo é **retirar gesso, algodão e curativos circulares** e manter o membro **na altura do coração**. O resumo descreve flexão excessiva no gesso longo como causa extrínseca de síndrome compartimental (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nSoltar apenas uma camada não equivale a retirar todas as fontes de compressão. O capítulo distingue o membro nem pendente nem elevado acima do coração: a elevação excessiva **piorou fluxo e oxigenação** no dado citado. Tratar choque e hipóxia também integra a abordagem inicial.\n\nEssas medidas são iniciais, não a conclusão de todo tratamento. Persistindo sinais e pressões elevadas, a indicação é **fasciotomia de emergência**. Melhorar a posição e retirar o gesso não justifica adiar a avaliação de uma síndrome estabelecida.\n\n**Na prova: ** reconhecer a ação que remove compressão e favorece perfusão, sem aplicar automaticamente a elevação usada para edema de outras lesões. Analgesia não substitui descompressão e reavaliação.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2012 (`pediatria-0666`), que perguntou com que tratamento a isquemia de VOLKMANN na supracondiliana GARTLAND III é mais comum (gesso com flexão do cotovelo).",
+  "correta": "**A: na altura do coração.** Elevar demais reduz a perfusão (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "B": "Elevar muito acima do coração contraria a orientação e pode piorar perfusão/oxigenação. A suspeita compartimental exige uma posição diferente da simples elevação para edema.",
-   "C": "Manter a compressão externa e apenas dar analgésico deixa a causa potencial sem correção. O resumo manda retirar gesso, algodão e curativos.",
-   "D": "Compressão adicional não é o primeiro passo recomendado. A prioridade é liberar constrições e avaliar perfusão e compartimentos, sem substituir isso por medidas para dor/edema."
+   "B": "**Elevar muito** diminui a pressão de perfusão.",
+   "C": "**Gelo e compressão** pioram.",
+   "D": "**Pendente** aumenta o edema."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Diagnóstico na criança; Formas especiais e tratamento."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Diagnóstico na criança",
-      "Formas especiais e tratamento"
-     ],
-     "blocos": [
-      "diagnostico-na-crianca-4664bf0c",
-      "diagnostico-na-crianca-1c8ef936",
-      "formas-especiais-e-tratamento-db1ca75e"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "9480dba995fff0c021305324fe0e794288dba537fef28ddabeba89704e00f129"
-    }
-   ],
-   "questaoSha256": "0e1af5ce6570b80ecf216ab8143715dc1556f941588b0cb6b7013005584fe88f",
-   "comentarioSha256": "5a0c91eab05ea82d74e1fac4757a767348d108505d0d2085a19cd65e82a67eb7"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1318": {
-  "conceito": "A supracondiliana com **lesão do mediano** é de alto risco, pois a dor pode ficar mascarada. O **cotovelo flutuante** chega a **33%** no resumo. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nNo membro superior, o **antebraço** é o segmento mais acometido. A vigilância não pode depender somente de dor intensa: o capítulo descreve síndrome silenciosa com lesão nervosa. Isso torna o exame seriado particularmente importante quando o nervo que participa da percepção dos sintomas está comprometido.\n\nA fonte cita **15,3% no Monteggia operado contra 0,9% na supracondiliana III operada**, além de sexo masculino e tempos cirúrgico/fluoroscópico longos como fatores. Comparar esses grupos exige conservar a população operada, não ampliar os percentuais a todas as fraturas.\n\n**Na prova: ** identificar o padrão de risco e não se tranquilizar pela ausência de dor típica em criança com lesão neural. Os valores de séries não devem ser somados nem usados como previsão individual.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0850`), que perguntou em que tipo de supracondiliana a síndrome compartimental é mais frequente (extensão com lesão do nervo mediano). Depois, faça a oficial.",
-  "correta": "Alternativa C. Liga a lesão mediana à possibilidade de dor mascarada e mantém o dado do cotovelo flutuante. Ambos justificam vigilância reforçada, sem exigir todos os sinais clássicos.",
+  "conceito": "A supracondiliana com **lesão do mediano** é de alto risco, pois a dor pode ficar mascarada. O **cotovelo flutuante** chega a **33%** no resumo. (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nNo membro superior, o **antebraço** é o segmento mais acometido. A vigilância não pode depender somente de dor intensa: o capítulo descreve síndrome silenciosa com lesão nervosa. Isso torna o exame seriado particularmente importante quando o nervo que participa da percepção dos sintomas está comprometido.\n\nA fonte cita **15,3% no Monteggia operado contra 0,9% na supracondiliana III operada**, além de sexo masculino e tempos cirúrgico/fluoroscópico longos como fatores. Comparar esses grupos exige conservar a população operada, não ampliar os percentuais a todas as fraturas.\n\n**Na prova: ** identificar o padrão de risco e não se tranquilizar pela ausência de dor típica em criança com lesão neural. Os valores de séries não devem ser somados nem usados como previsão individual.\n\n**Por que esta questão foi criada.** É gêmea do TEOT 2021 (`pediatria-0850`), que perguntou em que tipo de supracondiliana a síndrome compartimental é mais frequente (extensão com lesão do nervo mediano). Depois, faça a oficial.",
+  "correta": "**C: mediano.** A dor fica mascarada; o cotovelo flutuante chega a 33% (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "A": "O segmento superior mais acometido é o antebraço, não o braço. A opção troca o local destacado no capítulo.",
-   "B": "Na comparação dos operados, o resumo dá risco maior ao Monteggia, 15,3% contra 0,9%. A opção inverte essa comparação e não preserva os grupos descritos.",
-   "D": "O fator citado é sexo masculino. Escolher feminino inverte a associação apresentada, sem alterar a necessidade de avaliar qualquer criança com sinais clínicos."
+   "A": "**O radial** não é o descrito.",
+   "B": "**O ulnar** não corresponde ao descrito no capítulo.",
+   "D": "**O musculocutâneo** não corresponde ao descrito no capítulo."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro superior e antebraço; Diagnóstico na criança."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Membro superior e antebraço",
-      "Diagnóstico na criança"
-     ],
-     "blocos": [
-      "membro-superior-e-antebraco-1f54eac7",
-      "diagnostico-na-crianca-1c8ef936"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "a5c2f0b8467f5ae7909952f3082f16c9f9fe8066bef13a9a4834d35dfe4315f0"
-    }
-   ],
-   "questaoSha256": "023ddca3b57888976518fa93aeb111a62bbe2fcab162534a9b9ad4eb8f39eff8",
-   "comentarioSha256": "c16bf527298800ffc9d731b7ca67ee4fe7ef68617adb24110c67777c4f2927df"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1319": {
-  "conceito": "O compartimento **volar profundo** é o primeiro e mais afetado: contém **flexor profundo dos dedos, flexor longo do polegar e pronador quadrado**. A liberação é pelo intervalo **flexor ulnar do carpo–flexor superficial dos dedos**, alternativa B (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nAbrir a fáscia superficial não garante que o plano profundo tenha sido liberado. O resumo destaca esse passo como o mais importante, em uma incisão volar extensível do braço ao túnel do carpo, abrindo a fáscia antebraquial do lacerto ao punho.\n\nA tabela inclui **nervo e artéria interósseos anteriores** no plano profundo, reforçando a necessidade de reconhecer os limites anatômicos. Músculo pálido pode exigir abertura do **epimísio**; se o dorso continuar tenso, o capítulo admite liberação dorsal adicional.\n\n**Na prova: ** distinguir conteúdo do compartimento e intervalo de acesso. Não escolher os flexores superficiais apenas por serem encontrados primeiro na exposição, nem confundir liberação profunda com uma incisão cutânea suficiente.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2006 (`pediatria-0827`), que afirmou que, no VOLKMANN do antebraço, os flexores radial e ulnar do carpo são os mais acometidos. A oficial está sem gabarito; o capítulo aponta o compartimento flexor profundo como o primeiro e mais afetado, o que não sustenta a afirmação.",
-  "correta": "Alternativa B. Identifica o grupo profundo e o intervalo de liberação recomendado no resumo. A técnica deve garantir que esse plano tenha sido efetivamente descomprimido.",
+  "conceito": "O compartimento **volar profundo** é o primeiro e mais afetado: contém **flexor profundo dos dedos, flexor longo do polegar e pronador quadrado**. A liberação é pelo intervalo **flexor ulnar do carpo e flexor superficial dos dedos** (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nAbrir a fáscia superficial não garante que o plano profundo tenha sido liberado. O resumo destaca esse passo como o mais importante, em uma incisão volar extensível do braço ao túnel do carpo, abrindo a fáscia antebraquial do lacerto ao punho.\n\nA tabela inclui **nervo e artéria interósseos anteriores** no plano profundo, reforçando a necessidade de reconhecer os limites anatômicos. Músculo pálido pode exigir abertura do **epimísio**; se o dorso continuar tenso, o capítulo admite liberação dorsal adicional.\n\n**Na prova: ** distinguir conteúdo do compartimento e intervalo de acesso. Não escolher os flexores superficiais apenas por serem encontrados primeiro na exposição, nem confundir liberação profunda com uma incisão cutânea suficiente.\n\n**Por que esta questão foi criada.** É uma questão de projeção ligada ao TARO 2006 (`pediatria-0827`), que afirmou que, no VOLKMANN do antebraço, os flexores radial e ulnar do carpo são os mais acometidos. A oficial está sem gabarito; o capítulo aponta o compartimento flexor profundo como o primeiro e mais afetado, o que não sustenta a afirmação.",
+  "correta": "**B: flexor profundo.** Liberado pelo intervalo entre o flexor ulnar do carpo e o flexor superficial dos dedos (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "A": "O plano superficial não é o primeiro e mais afetado descrito. Liberá-lo isoladamente pode deixar fechado o compartimento profundo que a questão exige identificar.",
-   "C": "O extensor pertence ao plano dorsal. Pode ser liberado se permanecer tenso, mas não substitui a descompressão volar profunda inicial destacada.",
-   "D": "A musculatura móvel e os extensores radiais não correspondem ao conteúdo volar profundo. O intervalo radial da opção não é a via descrita para o grupo mais afetado."
+   "A": "**O superficial** é menos acometido.",
+   "C": "**O extensor** é menos acometido.",
+   "D": "**A musculatura móvel** não corresponde ao descrito no capítulo."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro superior e antebraço."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Membro superior e antebraço"
-     ],
-     "blocos": [
-      "membro-superior-e-antebraco-192c5745",
-      "membro-superior-e-antebraco-8f3bb01a"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "1a721ed538b77358125a4cc9e0610a2fcb52421baad8c6151867cf969955c80f"
-    }
-   ],
-   "questaoSha256": "82c74a779cf27432fe67dcc35c3e09f6f5590e729000cd0d96fb99cc77d057ee",
-   "comentarioSha256": "c287fc384d2b67c25204383fb302334493a19eb777b6749c4080371fd5175c70"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1320": {
-  "conceito": "A **perna** é a apresentação mais comum da síndrome compartimental infantil no resumo. Idade acima de **13 a 14 anos**, cominuição, fíbula fraturada, peso **maior que 50 kg** e hastes flexíveis são fatores de risco. A fasciotomia libera **quatro compartimentos**, alternativa D (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nO capítulo nomeia os planos **anterior, lateral, posterior superficial e posterior profundo**, com uma ou duas incisões. A decisão de incisão não reduz o número de compartimentos que precisam ser avaliados e liberados.\n\nA fonte cita 0,6% das fraturas tibiais e 5,5% das expostas, além de diagnósticos após a alta. São grupos distintos: exposição aumenta o risco, mas fratura fechada não o elimina. IMC elevado, déficit neurológico e osteotomias também aparecem na lista.\n\n**Na prova: ** adolescente grande com fratura tibial complexa pede vigilância, sem esperar que a fratura seja aberta. Depois de indicada a fasciotomia, não limitar a liberação aos dois planos anteriores por conveniência.\n\n**Por que esta questão foi criada.** É uma questão de projeção para relacionar o perfil de risco da fratura tibial no adolescente à necessidade de avaliar e liberar os quatro compartimentos.",
-  "correta": "Alternativa D. Reúne os fatores pediátricos e a necessidade de liberar os quatro planos da perna. Os limites de idade/peso são os citados, não critérios isolados que substituam a clínica.",
+  "conceito": "A **perna** é a apresentação mais comum da síndrome compartimental infantil no resumo. Idade acima de **13 a 14 anos**, cominuição, fíbula fraturada, peso **maior que 50 kg** e hastes flexíveis são fatores de risco. A fasciotomia libera **quatro compartimentos** (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nO capítulo nomeia os planos **anterior, lateral, posterior superficial e posterior profundo**, com uma ou duas incisões. A decisão de incisão não reduz o número de compartimentos que precisam ser avaliados e liberados.\n\nA fonte cita 0,6% das fraturas tibiais e 5,5% das expostas, além de diagnósticos após a alta. São grupos distintos: exposição aumenta o risco, mas fratura fechada não o elimina. IMC elevado, déficit neurológico e osteotomias também aparecem na lista.\n\n**Na prova: ** adolescente grande com fratura tibial complexa pede vigilância, sem esperar que a fratura seja aberta. Depois de indicada a fasciotomia, não limitar a liberação aos dois planos anteriores por conveniência.\n\n**Por que esta questão foi criada.** É uma questão de projeção para relacionar o perfil de risco da fratura tibial no adolescente à necessidade de avaliar e liberar os quatro compartimentos.",
+  "correta": "**D: 13 anos.** Com cominuição, fíbula fraturada, peso acima de 50 kg e hastes flexíveis (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "A": "O capítulo descreve casos em fraturas tibiais fechadas e expostas. Restringir a síndrome às expostas contradiz os grupos e pode atrasar o reconhecimento.",
-   "B": "Liberar apenas anterior e lateral deixa os compartimentos posteriores fora da descompressão. A recomendação é liberar os quatro.",
-   "C": "O risco etário destacado é no adolescente acima de 13 a 14 anos, não abaixo de 10 como fator principal. Crianças menores ainda exigem avaliação, mas não são o grupo de maior risco dessa lista."
+   "A": "**5 anos** não é o corte.",
+   "B": "**8 anos** não corresponde ao descrito no capítulo.",
+   "C": "**10 anos** não corresponde ao descrito no capítulo."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro inferior."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Membro inferior"
-     ],
-     "blocos": [
-      "membro-inferior-ff84b11d"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "97002c76f08c046b5dddcfe3a22b16bdc14bd3b8d6328da8b26da9ec897cf98a"
-    }
-   ],
-   "questaoSha256": "e39bdd2582777f5de86261142f5467e751ea95fe5af8f2bf9813661077467a28",
-   "comentarioSha256": "525a31b15323614c1a751555b160afb2b6d09877e253225e73d78427957472e9"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1321": {
-  "conceito": "Síndrome compartimental **pode ocorrer sem fratura**. Na série de 39 casos do resumo, **74% estavam na perna**, a causa mais comum foi **lesão vascular** e houve **mionecrose em 54%**. A alternativa A mantém esse perfil e o atraso diagnóstico (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nA ausência do traço ósseo não exclui aumento de pressão por partes moles, reperfusão, lesão vascular ou infiltração. O capítulo inclui infiltração venosa e intraóssea entre as causas e destaca participação pediátrica nos casos de infiltração venosa.\n\nO atraso descrito chega a 48 horas. Não se deve esperar uma fratura para iniciar avaliação nem interpretar o percentual de mionecrose como destino inevitável: ele caracteriza a gravidade e o reconhecimento tardio do grupo estudado.\n\n**Na prova: ** conservar a suspeita diante de sinais progressivos mesmo quando a radiografia não mostra fratura. Diagnóstico e tratamento dependem do compartimento e da perfusão, não da presença obrigatória de uma lesão óssea.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O caso sem fratura cobra a lembrança de que a síndrome não depende do osso quebrado.",
-  "correta": "Alternativa A. Reproduz localização, causa e consequência muscular da série. Mais da metade com mionecrose corresponde aos 54% informados, sem universalizar o resultado a toda criança.",
+  "conceito": "Síndrome compartimental **pode ocorrer sem fratura**. Na série de 39 casos do resumo, **74% estavam na perna**, a causa mais comum foi **lesão vascular** e houve **mionecrose em 54%**. O atraso diagnóstico é a regra (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nA ausência do traço ósseo não exclui aumento de pressão por partes moles, reperfusão, lesão vascular ou infiltração. O capítulo inclui infiltração venosa e intraóssea entre as causas e destaca participação pediátrica nos casos de infiltração venosa.\n\nO atraso descrito chega a 48 horas. Não se deve esperar uma fratura para iniciar avaliação nem interpretar o percentual de mionecrose como destino inevitável: ele caracteriza a gravidade e o reconhecimento tardio do grupo estudado.\n\n**Na prova: ** conservar a suspeita diante de sinais progressivos mesmo quando a radiografia não mostra fratura. Diagnóstico e tratamento dependem do compartimento e da perfusão, não da presença obrigatória de uma lesão óssea.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O caso sem fratura cobra a lembrança de que a síndrome não depende do osso quebrado.",
+  "correta": "**A: perna.** 74% numa série, com a lesão vascular como causa mais comum e diagnóstico atrasado (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "B": "A série sem fratura existe e inclui 39 casos no resumo. A opção elimina um grupo que exige justamente maior atenção para evitar atraso.",
-   "C": "Infiltração venosa consta das causas. A palavra nunca contradiz a etiologia descrita e pode levar a ignorar a piora de um membro com acesso venoso.",
-   "D": "Na série, o local predominante foi a perna e houve atraso diagnóstico. A opção inverte a distribuição e promete reconhecimento sempre precoce, contrário ao problema discutido."
+   "B": "**O antebraço** é menos frequente nessa série.",
+   "C": "**A mão** não corresponde ao descrito no capítulo.",
+   "D": "**A coxa** não corresponde ao descrito no capítulo."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Formas especiais e tratamento; Diagnóstico na criança."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Formas especiais e tratamento",
-      "Diagnóstico na criança"
-     ],
-     "blocos": [
-      "formas-especiais-e-tratamento-c4f73891",
-      "diagnostico-na-crianca-1c8ef936"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "6f3f46345f7eafa9d31a5445336bdddbb208f36f94a346d6d642c881d002bcc3"
-    }
-   ],
-   "questaoSha256": "bb3d95bbea388e5cd1b38bb65475f180a9fefd47f7864eaffd9935086d767800",
-   "comentarioSha256": "7371bf53e47894face1ab9c0fc470913fbb0e3d07412662ad710fe97fe58b9ff"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1322": {
-  "conceito": "A síndrome compartimental **crônica do esforço** é descrita como isquemia **reversível**, com perfil de adolescente corredora. Nos casos refratários, a fasciotomia teve retorno ao esporte de **79,5%**; liberar dois compartimentos em vez de quatro se associou a **3,4 vezes mais reoperação**. É a alternativa C (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nO quadro de dor ao esforço que melhora com repouso não deve ser automaticamente tratado como a síndrome aguda de emergência. A questão já informa diagnóstico confirmado e falha da modificação da atividade, o contexto em que o resumo discute cirurgia.\n\nOs resultados e a diferença de reoperação são dados do grupo citado, não garantia de retorno nem prova de que todos os pacientes precisam da mesma extensão de liberação sem avaliação. A comparação, porém, não sustenta afirmar que dois compartimentos sejam preferíveis aos quatro.\n\n**Na prova: ** distinguir síndrome aguda, com ameaça imediata, e forma crônica reversível ligada ao esforço. A indicação e a extensão da cirurgia precisam acompanhar a forma clínica, não apenas o nome compartilhado.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A forma crônica do esforço tem perfil e números próprios, diferentes da síndrome aguda.",
-  "correta": "Alternativa C. Mantém os dois resultados apresentados no resumo para a forma refratária. A associação com reoperação deve ser comunicada como dado comparativo, sem transformá-la em certeza individual.",
+  "conceito": "A síndrome compartimental **crônica do esforço** é descrita como isquemia **reversível**, com perfil de adolescente corredora. Nos casos refratários, a fasciotomia teve retorno ao esporte de **79,5%**; liberar dois compartimentos em vez de quatro se associou a **3,4 vezes mais reoperação**. (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nO quadro de dor ao esforço que melhora com repouso não deve ser automaticamente tratado como a síndrome aguda de emergência. A questão já informa diagnóstico confirmado e falha da modificação da atividade, o contexto em que o resumo discute cirurgia.\n\nOs resultados e a diferença de reoperação são dados do grupo citado, não garantia de retorno nem prova de que todos os pacientes precisam da mesma extensão de liberação sem avaliação. A comparação, porém, não sustenta afirmar que dois compartimentos sejam preferíveis aos quatro.\n\n**Na prova: ** distinguir síndrome aguda, com ameaça imediata, e forma crônica reversível ligada ao esforço. A indicação e a extensão da cirurgia precisam acompanhar a forma clínica, não apenas o nome compartilhado.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A forma crônica do esforço tem perfil e números próprios, diferentes da síndrome aguda.",
+  "correta": "**C: 80%.** 79,5%; liberar dois compartimentos em vez de quatro aumenta a recidiva (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "A": "A descrição é de forma crônica reversível, com tratamento após falha de medidas iniciais. Não corresponde à urgência automática da síndrome aguda.",
-   "B": "O perfil descrito é adolescente corredora. Meninos sedentários não são o grupo destacado para a forma do esforço nesse capítulo.",
-   "D": "A comparação informou mais reoperação com liberação de dois em vez de quatro. O dado não demonstra preferência pelos dois planos; afirma o contrário da justificativa proposta."
+   "A": "**40%** subestima.",
+   "B": "**100%** superestima.",
+   "D": "**60%** subestima."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Formas especiais e tratamento."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Formas especiais e tratamento"
-     ],
-     "blocos": [
-      "formas-especiais-e-tratamento-c4f73891"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "2161492e522154f07ccc4e990cc88a38e8bf38441e6f0f72d16c6a423acc7ed2"
-    }
-   ],
-   "questaoSha256": "2a136894c72bfa9dfb0a4f26b223154b2535443fa2bd436c65b87412bcd7723d",
-   "comentarioSha256": "1d6efd79f5981d9a08b86111e60cc61a1a0db452f509ea0c6bea4f4607a7da67"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1323": {
-  "conceito": "No **neonato**, as lesões de pele podem ser confundidas com outros diagnósticos e atrasar o reconhecimento. No lactente, o resumo descreve atraso acima de **24 horas**, com bons resultados mesmo após fasciotomia em **48 a 72 horas**. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nIsso é um achado prognóstico, **não uma autorização para esperar**. O capítulo mantém fasciotomia de emergência para síndrome aguda indicada e destaca duração da pressão elevada como fator principal. A recuperação pediátrica pode ser melhor que a esperada no adulto, sem tornar o atraso inofensivo.\n\nA **contratura neonatal estabelecida não melhora** com a mesma lógica de descompressão de uma síndrome aguda. Diferenciar lesão em evolução de sequela fixa evita prometer reversão por uma operação tardia que o resumo não sustenta.\n\n**Na prova: ** não usar absolutos como atraso sempre fatal ou melhora garantida. Reconhecer o perfil neonatal e a dificuldade de diagnóstico precoce, agir diante de suspeita e interpretar os bons resultados tardios como observação de séries.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O atraso típico das idades extremas, e o bom prognóstico apesar dele, são cobráveis.",
-  "correta": "Alternativa A. Reúne a dificuldade de reconhecimento neonatal e os resultados tardios descritos no grupo infantil pequeno. O dado deve acompanhar a ressalva de que não se deve adiar uma descompressão indicada.",
+  "conceito": "No **neonato**, as lesões de pele podem ser confundidas com outros diagnósticos e atrasar o reconhecimento. No lactente, o resumo descreve atraso acima de **24 horas**, com bons resultados mesmo após fasciotomia em **48 a 72 horas**. (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nIsso é um achado prognóstico, **não uma autorização para esperar**. O capítulo mantém fasciotomia de emergência para síndrome aguda indicada e destaca duração da pressão elevada como fator principal. A recuperação pediátrica pode ser melhor que a esperada no adulto, sem tornar o atraso inofensivo.\n\nA **contratura neonatal estabelecida não melhora** com a mesma lógica de descompressão de uma síndrome aguda. Diferenciar lesão em evolução de sequela fixa evita prometer reversão por uma operação tardia que o resumo não sustenta.\n\n**Na prova: ** não usar absolutos como atraso sempre fatal ou melhora garantida. Reconhecer o perfil neonatal e a dificuldade de diagnóstico precoce, agir diante de suspeita e interpretar os bons resultados tardios como observação de séries.\n\n**Por que esta questão foi criada.** É uma questão de projeção. O atraso típico das idades extremas, e o bom prognóstico apesar dele, são cobráveis.",
+  "correta": "**A: ser confundidas.** Com outros diagnósticos, e o diagnóstico atrasa (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "B": "O resumo afirma que a contratura neonatal já estabelecida não melhora. A opção confunde sequela fixa com síndrome aguda ainda tratável por descompressão.",
-   "C": "O lactente apresenta atraso diagnóstico acima de 24 horas no capítulo. Não é o grupo descrito como de reconhecimento mais rápido.",
-   "D": "Há bons resultados mesmo com 48 a 72 horas na série citada, portanto o sempre está incorreto. Isso não elimina a relação entre tempo de pressão e risco nem justifica aguardar."
+   "B": "**Regredir sozinhas** não é o descrito.",
+   "C": "**Surgir após 1 mês** não é o descrito.",
+   "D": "**Poupar o antebraço** não é o descrito."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Formas especiais e tratamento; Contratura de VOLKMANN e prognóstico."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Formas especiais e tratamento",
-      "Contratura de VOLKMANN e prognóstico"
-     ],
-     "blocos": [
-      "formas-especiais-e-tratamento-c4f73891",
-      "formas-especiais-e-tratamento-db1ca75e",
-      "contratura-de-volkmann-e-prognostico-cfada5ed"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "7e24f2aec03a33f7422e25a4d7023eb5991a6f8c95a4d6242469a7d25ab7aaf4"
-    }
-   ],
-   "questaoSha256": "2e25f38b877f9b841bc28396e2224761c06e4d7f152213f7a27aaef4c6ff4cd0",
-   "comentarioSha256": "cffe00fd811c13a5d698809a13a97cf58ac8d9368deb90d18db161713546ddc5"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1324": {
   "conceito": "A criança recupera músculo melhor que o adulto. Por isso, na dúvida, o capítulo manda esperar e voltar, não cortar.\n\n**A fasciotomia.** Com o diagnóstico feito, **fasciotomia de emergência**; às vezes também a **liberação do epimísio**. Tecido **necrótico** deve ser ressecado (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6).\n\n**Viável ou não.** Viável: **rosado**, **perfundido**, **contrai ao estímulo elétrico**. Não viável: **cinza, marrom ou preto**, **fétido**, **sem contração**: ressecar, para não colonizar. **Na dúvida, não ressecar** no primeiro tempo, porque o **potencial de recuperação da criança é grande**: deixar o tecido se definir e voltar ao centro cirúrgico para **avaliações e desbridamentos seriados** e, por fim, fechamento. A fibrose tardia do músculo necrótico pode comprimir nervos vizinhos.\n\n**O que mais.** Conforme a causa: redução e estabilização da fratura, trombectomia, reparo ou enxerto vascular, exploração nervosa. **Reparo nervoso no fechamento definitivo**. Pós-operatório: **incisões abertas**, **sem suturas de retenção** (o edema aumenta com a reperfusão), curativo a vácuo se não houver nervo ou artéria exposta, **troca no centro cirúrgico em 24 a 48 horas**, enxerto de pele se não fechar sem tensão.\n\n**Síndrome tardia estabelecida.** Sem função muscular em nenhum segmento: **imobilizar em posição funcional**, **sem fasciotomia**, **hidratação venosa vigorosa** contra a mioglobinúria (também acidose e hipercalemia na reperfusão).\n\n**Por que esta questão foi criada.** É uma questão de projeção. A conduta conservadora com o músculo duvidoso é a particularidade pediátrica do tratamento.\n\n> **Na prova:** duvidoso = **não ressecar**, **reavaliar em série**; necrótico = **cinza, fétido, sem contração**: ressecar; incisões **abertas**, troca em **24 a 48 horas**; tardia sem função = **sem fasciotomia**, hidratação.",
@@ -27864,80 +26926,32 @@
   "conferido": false
  },
  "pediatria-1325": {
-  "conceito": "A mão tem **10 compartimentos** no resumo. A liberação começa pelo **túnel do carpo estendido**, seguida dos planos indicados; os interósseos recebem incisões dorsais entre **2º–3º e 4º–5º metacarpais**, e dedos tensos recebem **dermotomia médio-axial**. A alternativa B corresponde ao esquema (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nA descompressão não é apenas uma incisão dorsal genérica: o capítulo também descreve primeiro espaço, tenar e hipotenar com liberações separadas. Nos dedos, **Cleland e Grayson** podem comprimir os vasos digitais, explicando a atenção à pele tensa e à linha médio-axial.\n\nApós a fasciotomia, o resumo mantém incisões **abertas**, sem suturas de retenção, com reavaliação em 24 a 48 horas. O túnel do carpo tem fechamento retardado descrito; isso não autoriza fechar todas as incisões primariamente.\n\n**Na prova: ** distinguir número de compartimentos, acesso e tratamento dos dedos. Abrir só o túnel do carpo não prova que todos os planos tensos estejam descomprimidos; cada região precisa ser avaliada.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre a sequência anatômica da liberação da mão e a dermotomia médio-axial dos dedos tensos.",
-  "correta": "Alternativa B. Mantém o número de compartimentos, a sequência de abertura e as incisões descritas. A dermotomia dos dedos é médio-axial, não uma incisão volar central indiscriminada.",
+  "conceito": "A mão tem **10 compartimentos** no resumo. A liberação começa pelo **túnel do carpo estendido**, seguida dos planos indicados; os interósseos recebem incisões dorsais entre **2º a 3º e 4º a 5º metacarpais**, e dedos tensos recebem **dermotomia médio-axial**. É o esquema descrito (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nA descompressão não é apenas uma incisão dorsal genérica: o capítulo também descreve primeiro espaço, tenar e hipotenar com liberações separadas. Nos dedos, **Cleland e Grayson** podem comprimir os vasos digitais, explicando a atenção à pele tensa e à linha médio-axial.\n\nApós a fasciotomia, o resumo mantém incisões **abertas**, sem suturas de retenção, com reavaliação em 24 a 48 horas. O túnel do carpo tem fechamento retardado descrito; isso não autoriza fechar todas as incisões primariamente.\n\n**Na prova: ** distinguir número de compartimentos, acesso e tratamento dos dedos. Abrir só o túnel do carpo não prova que todos os planos tensos estejam descomprimidos; cada região precisa ser avaliada.\n\n**Por que esta questão foi criada.** É uma questão de projeção sobre a sequência anatômica da liberação da mão e a dermotomia médio-axial dos dedos tensos.",
+  "correta": "**B: 10.** Começa-se pela liberação estendida do túnel do carpo (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "A": "O capítulo descreve 10 compartimentos, não quatro. A abertura precisa atender aos planos acometidos e à técnica, sem usar um número de outra região como guia da mão.",
-   "C": "A linha indicada para dedos tensos é médio-axial. A linha média volar não é o acesso descrito e não deve ser escolhida apenas por estar sobre a superfície palmar.",
-   "D": "O tratamento inclui incisões abertas e reavaliações, sem fechamento primário universal. Fechar todas imediatamente contraria o esquema de controle do edema e da viabilidade."
+   "A": "**4** subestima.",
+   "C": "**6** subestima.",
+   "D": "**9** é o número do pé."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro superior e antebraço; Formas especiais e tratamento."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Membro superior e antebraço",
-      "Formas especiais e tratamento"
-     ],
-     "blocos": [
-      "membro-superior-e-antebraco-cc585328",
-      "formas-especiais-e-tratamento-db1ca75e"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "e145a83c48e34a9f339c56bfbd9c74b01b807dd38e3f3db4e74dd38856a6a358"
-    }
-   ],
-   "questaoSha256": "1f590ed0ea918b9e41251c7085dfe3e041b145744075802e32668a150206b03e",
-   "comentarioSha256": "34d47dc3c1f0318b0fd159333d630fa505e02210b50c769101a78374c4345117"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1326": {
-  "conceito": "A **coxa tem 3 compartimentos** e o **pé 9**. Na criança com crescimento restante, o capítulo recomenda **limiar baixo para fasciotomia do pé**, pela possibilidade de **parada fisária**. É a alternativa A (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nNa coxa, os compartimentos são **anterior, medial e posterior**; a fonte descreve incisão lateral longa, às vezes acrescentando medial. Não existe a obrigação de duas incisões em todos os casos do esquema apresentado.\n\nNo pé, esmagamento e lesão de Lisfranc estão entre os cenários citados. O resumo recomenda duas incisões dorsais e, muitas vezes, uma medial. A preocupação com crescimento diferencia a criança da tendência conservadora de alguns adultos; não se deve importar essa tendência automaticamente.\n\n**Na prova: ** manter separados os números da coxa, da perna e do pé. A indicação depende de avaliação, mas o risco de fise explica por que “não fazer como em alguns adultos” é uma simplificação perigosa no pé infantil.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A contagem dos compartimentos e o argumento da fise são cobráveis.",
-  "correta": "Alternativa A. Reúne contagem anatômica e particularidade pediátrica de indicação. O risco de parada fisária sustenta a vigilância e o limiar descritos, sem tornar o número de incisões uma regra única para toda região.",
+  "conceito": "A **coxa tem 3 compartimentos** e o **pé 9**. Na criança com crescimento restante, o capítulo recomenda **limiar baixo para fasciotomia do pé**, pela possibilidade de **parada fisária**. (Rockwood and Wilkins, 10ª edição, capítulo 6).\n\nNa coxa, os compartimentos são **anterior, medial e posterior**; a fonte descreve incisão lateral longa, às vezes acrescentando medial. Não existe a obrigação de duas incisões em todos os casos do esquema apresentado.\n\nNo pé, esmagamento e lesão de Lisfranc estão entre os cenários citados. O resumo recomenda duas incisões dorsais e, muitas vezes, uma medial. A preocupação com crescimento diferencia a criança da tendência conservadora de alguns adultos; não se deve importar essa tendência automaticamente.\n\n**Na prova: ** manter separados os números da coxa, da perna e do pé. A indicação depende de avaliação, mas o risco de fise explica por que “não fazer como em alguns adultos” é uma simplificação perigosa no pé infantil.\n\n**Por que esta questão foi criada.** É uma questão de projeção. A contagem dos compartimentos e o argumento da fise são cobráveis.",
+  "correta": "**A: baixo.** Pelo risco de parada fisária; o pé tem 9 compartimentos e a coxa, 3 (Rockwood and Wilkins' Fractures in Children, cap. 6).",
   "incorretas": {
-   "B": "A coxa tem três compartimentos no resumo, não quatro. A incisão lateral longa pode precisar de complemento medial, mas duas incisões não são obrigatórias em todos.",
-   "C": "A fonte recomenda limiar baixo no pé com crescimento, ao contrário da tendência citada em alguns adultos. A opção inverte justamente a particularidade pediátrica.",
-   "D": "O pé tem nove compartimentos, e as vias descritas são dorsais com possível complemento medial. Quatro planos e uma incisão plantar não reproduzem essa anatomia e técnica."
+   "B": "**Alto** contraria o risco fisário.",
+   "C": "**Igual ao adulto** ignora o crescimento.",
+   "D": "**Irrelevante** não é."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Síndrome compartimental na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 6 · Compartment Syndrome in Children. Seções: Membro inferior."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwoodcriancas10-06-sindrome-compartimental",
-     "titulo": "Síndrome compartimental na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-     "secoes": [
-      "Membro inferior"
-     ],
-     "blocos": [
-      "membro-inferior-867bf23e"
-     ],
-     "sha256": "82b0dd1f9a2cba2e02e2049ab99c6c1a548707d267ed2668fc8732a8e480712c",
-     "trechosSha256": "55bbd0239cce7c17e097567dbba9f8dbaaa1f314301ff2a61c619b69d746be64"
-    }
-   ],
-   "questaoSha256": "8ccc852955295b5f714c64ce8a9e978111ef088cb2a9553de50b4faa91989628",
-   "comentarioSha256": "1c767c01b5fa7c37abd994bcb7a3e4b61d4944e238fc1f46459b977062d21a3d"
-  }
+  "geradoEm": "2026-10-31",
+  "conferido": false
  },
  "pediatria-1327": {
   "conceito": "A contratura de VOLKMANN é o fim da isquemia prolongada: necrose irreversível, fibrose e retração. TSUGE a classificou pela extensão do músculo envolvido.\n\n**Leve (localizada).** Compartimento **flexor profundo** do antebraço; em geral só o **flexor profundo dos dedos** do **anular ou médio**. Nervo ausente ou leve, sensitivo, que se resolve. Com o **punho fletido**, os dedos estendem totalmente. Quase sempre por **trauma direto** (esmagamento, fratura do antebraço), em **adultos jovens** (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6).\n\n**Moderada.** **Maior parte ou todo** o **flexor profundo dos dedos** e o **flexor longo do polegar**, com **flexor superficial parcial**. **Comprometimento neurológico sempre presente**, sensitivo **pior no mediano** que no ulnar; mão em **intrínseca negativa**. **Mais comum após fratura supracondiliana em crianças de 5 a 10 anos**.\n\n**Grave.** **Todos os flexores** dos dedos e do punho; necrose muscular central, extensores variavelmente. Paralisia completa dos intrínsecos. Marcas: **contraturas articulares fixas**, partes moles cicatriciais, cirurgias prévias falhas. Também mais comum após **supracondiliana** na criança.\n\n**A ligação com as oficiais.** O TARO 2012 (`pediatria-0666`) perguntou com que tratamento o VOLKMANN na supracondiliana GARTLAND III é mais comum (gabarito: gesso com flexão do cotovelo); o capítulo cita a flexão excessiva no gesso entre as causas. O TARO 2006 (`pediatria-0827`), sem gabarito, afirmou que os flexores radial e ulnar do carpo são os mais acometidos; pela classificação, o centro da lesão é o **flexor profundo**, e os flexores do punho entram só na forma grave.\n\n**Por que esta questão foi criada.** É gêmea do TARO 2012 (`pediatria-0666`) e do TARO 2006 (`pediatria-0827`). Depois, faça as oficiais.\n\n> **Na prova:** TSUGE: **leve** = flexor profundo do **médio/anular**, adulto jovem; **moderada** = FPD + FLP + superficial parcial, **mediano pior**, **intrínseca negativa**, **supracondiliana 5 a 10 anos**; **grave** = todos os flexores, contraturas fixas.",

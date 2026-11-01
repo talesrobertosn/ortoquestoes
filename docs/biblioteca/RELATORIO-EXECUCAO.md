@@ -196,7 +196,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 763 | Estilo dos simulados antigos: coluna toracolombar (cap. 22) e pelve e acetábulo (cap. 23) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 25 simulados reescritos no molde da banca, conceito mantido |
 | 764 | Estilo dos simulados antigos: diáfise do fêmur (cap. 25 do Rockwood and Wilkins' Fractures in Children) e perna (cap. 18 do Tachdjian's Pediatric Orthopaedics) | sem mudança em resumo | 18 simulados reescritos; conceitos mantidos com o nome completo do Tachdjian's Pediatric Orthopaedics |
 | 766 | Estilo dos simulados antigos: displasia do quadril (cap. 13), deficiências dos membros (cap. 21) e coxa vara (cap. 16) do Tachdjian's Pediatric Orthopaedics | sem mudança em resumo | 17 simulados reescritos no molde da banca, conceito mantido |
-| (este PR) | Estilo dos simulados antigos: caps. 6, 7, 9 e 13 a 18 do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 17 simulados reescritos no molde da banca, conceito mantido |
+| 767 | Estilo dos simulados antigos: caps. 6, 7, 9 e 13 a 18 do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 17 simulados reescritos no molde da banca, conceito mantido |
+| (este PR) | Estilo dos simulados antigos: os 31 restantes da pediatria (epidemiologia, rádio distal, côndilo lateral, supracondiliana, fratura em T, fise distal do fêmur, lesões tumorais, maus-tratos, síndrome compartimental) | sem mudança em resumo | 31 simulados reescritos; a pediatria fica com 0 de 489 reprovados |
 
 ## Próximo
 
