@@ -18,7 +18,7 @@ import { CorujaPixel } from '../../biblioteca/sala/CorujaPixel'
 const BASE = { w: 480, h: 270 }
 // Onde os cavaleiros pisam (px da arte base), os mesmos de public/ranking/cem/salao.json.
 const PEDESTAL: Record<number, { cx: number; topo: number }> = { 1: { cx: 318, topo: 170 }, 2: { cx: 246, topo: 186 }, 3: { cx: 390, topo: 192 } }
-const TOCHAS = [{ x: 206, y: 112 }, { x: 466, y: 112 }]
+const TOCHAS = [{ x: 199, y: 107 }, { x: 418, y: 107 }]
 // Quadros: cavaleiro 75 x 88 (pés em 37, 84; linhas 0-2 espera, 3-5 saudação); estandarte 66 x 94 (haste em 33, 3).
 const CAV = { w: 75, h: 88, pes: [37, 84], linhas: 6 }
 const EST = { w: 66, h: 94, escala: 0.6, topo: 44 }
@@ -27,8 +27,8 @@ const TITULO = ['', 'Campeão', 'Guardião de prata', 'Guardião de bronze']
 
 const pct = (v: number, total: number) => `${(v / total) * 100}%`
 // Visitas ocasionais (no máximo uma por visita à página, nunca as duas): o gato dorme no chão perto da mata e a coruja
-// pousa no alto do pilar da direita, olhando o campeão. Só enfeite (aria-hidden), longe de nomes e botões.
-const VISITA = { gato: { x: 432, y: 236, w: 48, h: 36 }, coruja: { x: 444, y: 64, w: 44, h: 32 } }
+// pousa no capitel do pilar da direita, olhando o campeão. Só enfeite (aria-hidden), longe de nomes e botões.
+const VISITA = { gato: { x: 432, y: 236, w: 48, h: 36 }, coruja: { x: 415, y: 18, w: 44, h: 32 } }
 type Visita = 'gato' | 'coruja' | null
 const sortearVisita = (): Visita => { const r = Math.random(); return r < 0.3 ? 'gato' : r < 0.55 ? 'coruja' : null }
 const POEIRA = Array.from({ length: 14 }, (_, i) => ({ x: 292 + ((i * 37) % 60), y: 30 + ((i * 53) % 130), d: 6 + (i % 5) * 1.3, a: -((i * 1.7) % 8) }))

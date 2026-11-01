@@ -133,25 +133,6 @@ BAYER = (np.array([[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]]
 BAYER_HW = np.tile(BAYER, (H // 4 + 1, W // 4 + 1))[:H, :W]
 
 
-def indice(v: np.ndarray, n: int, pontilhado: float = 0.0) -> np.ndarray:
-    """Quantiza v (0..1) em n tons; com pontilhado ordenado (Bayer 4x4) nas transições, como na pixel art."""
-    return np.clip(np.floor(v * n + BAYER_HW[:v.shape[0], :v.shape[1]] * pontilhado), 0, n - 1).astype(int)
-
-
-def poli(pts, w: int = W, h: int = H) -> np.ndarray:
-    m = Image.new("L", (w, h), 0)
-    ImageDraw.Draw(m).polygon([(float(x), float(y)) for x, y in pts], fill=255)
-    return np.asarray(m) > 127
-
-
-def bordas(m: np.ndarray) -> np.ndarray:
-    """Pixels de m que encostam (4 vizinhos) em algo fora de m."""
-    viz = np.zeros_like(m)
-    for s, ax in ((1, 0), (-1, 0), (1, 1), (-1, 1)):
-        viz |= ~np.roll(m, s, ax)
-    return m & viz
-
-
 # ─────────────────────────────── Projeção ───────────────────────────────
 def proj(X, Y, Z):
     k = F / (F - np.asarray(Z, dtype=np.float64))
@@ -295,7 +276,7 @@ def solidos() -> list[Solido]:
     lista: list[Solido] = []
     # paredes e chão
     lista.append(Solido("plano", eixo=2, valor=0.0, sinal=1.0, limites={0: (XL, XR), 1: (0, 400)},
-                        furo=lambda p: na_vitral(p[:, 0], 200 - p[:, 1]), mat="fundo"))
+                        furo=lambda p: na_lanceta(p[:, 0], 200 - p[:, 1]), mat="fundo"))
     lista.append(Solido("plano", eixo=2, valor=-7.0, sinal=1.0, limites={0: (XL, XR), 1: (0, 400)}, mat="vidro"))
     lista.append(Solido("plano", eixo=0, valor=XL, sinal=1.0, limites={2: (0, 600), 1: (0, 400)}, mat="esq"))
     lista.append(Solido("plano", eixo=0, valor=XR, sinal=-1.0, limites={2: (0, 600), 1: (0, 400)},
@@ -340,10 +321,6 @@ def na_lanceta(x, y):
         volta = ((x - cx) ** 2 + (y - yt - r) ** 2 <= r * r) & (y < yt + r)
         m |= reto | volta
     return m
-
-
-def na_vitral(x, y):
-    return na_lanceta(x, y)
 
 
 SOLIDOS = solidos()
@@ -394,7 +371,7 @@ def visivel(p: np.ndarray, L: np.ndarray, ignora=None) -> np.ndarray:
     return vis
 
 
-LUSTRE = np.array([318.0, 196.0, 178.0])
+LUSTRE = np.array([330.0, 150.0, 240.0])
 
 
 def visivel_ponto(p: np.ndarray, L0: np.ndarray) -> np.ndarray:
@@ -408,14 +385,6 @@ def visivel_ponto(p: np.ndarray, L0: np.ndarray) -> np.ndarray:
         t, _ = s.cortar(o, d)
         vis[t < dist] = 0
     return vis
-
-
-def ate_vitral(p: np.ndarray):
-    """De cada ponto, seguindo o sol do vitral até a parede do fundo: (x, y) de tela no vidro."""
-    s = p[..., 2] / (-SOL_V[2])
-    x = p[..., 0] + SOL_V[0] * s
-    y = 200 - (p[..., 1] + SOL_V[1] * s)
-    return x, y
 
 
 def ate_arco(p: np.ndarray):
@@ -439,7 +408,7 @@ HERA = pal("#0b1a12", "#12291a", "#1b3c20", "#285226", "#386a2c", "#4e8434", "#6
 # pedestais: (pedra, metal das faixas, metal do número)
 MARMORE = pal("#3a342e", "#544b42", "#6f6558", "#8c8170", "#a99d88", "#c4b8a0", "#dcd2bc", "#ece6d6")
 PRATA_PEDRA = pal("#1e2128", "#2b303a", "#3b414e", "#4f5665", "#656d7e", "#7e8798", "#99a2b2", "#b6becc")
-ARENITO = pal("#2c1e16", "#402c20", "#563c2a", "#6e4e36", "#866244", "#9e7854", "#b48e66", "#c8a47a")
+ARENITO = pal("#3a2a1e", "#52392a", "#6c4c36", "#866244", "#a07a54", "#b89066", "#cca67a", "#dcbc92")
 PRATA = pal("#2a3040", "#4a5466", "#76829a", "#a6b2c6", "#cfd8e6", "#eef3fa")
 SAFIRA = pal("#0c1430", "#152a5c", "#21438a", "#3a68b8", "#6e9ce0", "#b8d6fa")
 BRONZE = pal("#3a1c0e", "#5e3016", "#8a4a22", "#b06a34", "#d08a4c", "#eab07a", "#f8d6a8")
@@ -826,19 +795,21 @@ def parede_esquerda(t: Tela, ids, P) -> None:
     prat = m & (np.abs(z - zc) <= r) & (y >= 26) & (y < 29)
     t.alb[prat] = PEDRA[5]
     t.nex[prat] += (0, 0.8, 0)
-    # a taça (silhueta de bronze escuro com um filete de luz)
-    taca = m & (np.abs(z - zc) < 6.5 - np.clip(y - 46, 0, 9) * 0.35) & (y >= 29) & (y < 57)
-    perna = m & (np.abs(z - zc) < 1.4) & (y >= 31) & (y < 42)
-    pe = m & (np.abs(z - zc) < 5) & (y >= 29) & (y < 32)
-    bojo = m & (np.hypot((z - zc) / 8, (y - 48) / 7) < 1) & (y >= 42)
-    alca = m & (np.abs(np.hypot((z - zc) / 11, (y - 50) / 5.5) - 1) < 0.12) & (np.abs(z - zc) > 7)
-    cal = pe | perna | (bojo & (y < 55)) | alca
+    # a taça (ouro velho na penumbra, com um filete de luz na borda)
+    dz = np.abs(z - zc)
+    pe = m & (dz < 5.5 - (y - 29)) & (y >= 29) & (y < 32)
+    perna = m & (dz < 1.3) & (y >= 31) & (y < 39)
+    no = m & (dz < 2.6) & (y >= 35) & (y < 37)
+    bojo = m & (y >= 39) & (y < 53) & (dz < 2.2 + np.sqrt(np.clip(y - 39, 0, None)) * 1.75)
+    borda = m & (y >= 53) & (y < 55) & (dz < 8.8)
+    alca = m & (np.abs(np.hypot(dz - 9.0, (y - 47) * 0.9) - 2.8) < 0.8) & (dz > 8.2)
+    cal = pe | perna | no | bojo | borda | alca
     t.alb[cal] = OURO[2]
-    t.alb[cal & (z > zc + 1)] = OURO[1]
-    t.alb[cal & (np.abs(z - zc - 0.5) < 1.5)] = OURO[4]
+    t.alb[cal & (z > zc + 1.5)] = OURO[1]
+    t.alb[cal & (z < zc - 2.5) & ~alca] = OURO[3]
+    t.alb[borda] = OURO[4]
     t.metal[cal] = 1.0
-    t.ao[cal] = 0.8
-    del taca
+    t.ao[cal] = 0.85
 
 
 def pilastras_esq(t: Tela, ids, P, N) -> None:
@@ -919,6 +890,26 @@ def chao(t: Tela, ids, P) -> None:
     t.alb[tufo] = MUSGO[np.clip(np.floor((nm[tufo] - 0.78) * 25 + 2), 0, 5).astype(int)]
     t.refl[tufo] = 0
     tapete(t, m, x, z)
+    # folhas que o vento trouxe da mata (perto do arco, rareando para o meio do salão)
+    g = np.random.default_rng(SEMENTE + 700)
+    cores = [FOLHA_MATA[3], FOLHA_MATA[5], hexa("#c89a3a"), hexa("#a8682a"), FOLHA_MATA[6]]
+    for _ in range(46):
+        X = XR - 4 - abs(g.normal(0, 38))
+        Z = g.uniform(20, 175)
+        if TAPETE["x0"] - 2 < X < TAPETE["x1"] + 2 and Z > TAPETE["z0"]:
+            continue
+        sx, sy = proj(X, 0, Z)
+        sx, sy = int(sx), int(sy)
+        if not (0 <= sx < W - 2 and 0 <= sy < H - 1) or not m[sy, sx]:
+            continue
+        c = cores[int(g.integers(0, len(cores)))]
+        forma = [(0, 0), (1, 0)] if g.random() < 0.6 else [(0, 0), (1, 0), (1, -1)]
+        for dx, dy in forma:
+            if m[sy + dy, sx + dx]:
+                t.alb[sy + dy, sx + dx] = c * (1.15 if dx == 0 else 0.85)
+                t.refl[sy + dy, sx + dx] = 0
+        if m[sy + 1, sx]:
+            t.ao[sy + 1, sx] = 0.7
 
 
 def tapete(t: Tela, m, x, z) -> None:
@@ -1003,6 +994,8 @@ def pedestais(t: Tela, ids, P, N) -> None:
         k = np.where(topo_sup, k + 1.2, k)
         k = np.where(papel == "gola", k - 1.4, k)
         k = np.where(papel == "toro", k + 0.8, k)
+        if p["lugar"] == 3:
+            k = np.where(papel == "friso", k - 1.8, k)      # friso de arenito escuro: o bronze do número salta
         k = np.where(papel == "degrau", k - (tier - 6) * 0.5, k)
         k = np.where(veio & (papel != "filete"), k - 1.6, k)
         idx = np.clip(np.floor(k + BAYER_HW * 0.25), 0, 7).astype(int)
@@ -1069,24 +1062,29 @@ def friso_entalhes(t: Tela, p: dict, ids, por_id, pedra, faixa, num) -> None:
     cheio &= fr
     claro = cheio & ~np.roll(cheio, 1, 0)
     esc = cheio & ~np.roll(cheio, -1, 1)
-    t.alb[cheio] = num[3]
-    t.alb[cheio & ~np.roll(cheio, 1, 1)] = num[4]
-    t.alb[claro] = num[min(5, len(num) - 1)]
-    t.alb[esc] = num[2]
+    o = 1 if p["lugar"] == 3 else 0                     # o bronze sobre o arenito sobe um tom para ler bem
+    t.alb[cheio] = num[3 + o]
+    t.alb[cheio & ~np.roll(cheio, 1, 1)] = num[4 + o]
+    t.alb[claro] = num[min(5 + o, len(num) - 1)]
+    t.alb[esc] = num[2 + o]
     t.metal[cheio] = 1.0
     t.esp[cheio] = 1.0
     r_fr = (s.y1 - s.y0) * p["s"]
     if p["lugar"] == 1:
-        # louros em volta do número: dois ramos em arco com folhas em pares, ouro em relevo
+        # louros em volta do número: dois ramos em arco (haste contínua) com folhas em pares, ouro em relevo
         for lado in (-1, 1):
-            for k in range(6):
-                a = math.radians(105 + k * 23)
-                rx, ry = 10.5, 8.0
-                fx = sx + lado * math.cos(a - math.pi / 2) * rx * -1
-                fx = sx + lado * (rx * math.sin(math.radians(20 + k * 25)))
-                fy = sy + 6 - k * 2.4
+            passos = 15
+            for k in range(passos):
+                tt = k / (passos - 1)
+                fx = sx + lado * (2.0 + 8.2 * math.sin(math.pi * tt * 0.62))
+                fy = sy + 6.5 - 12.0 * tt
                 cx_, cy_ = int(round(fx)), int(round(fy))
-                for dx, dy, kk in ((0, 0, 3), (lado, -1, 5), (-lado, 0, 2), (0, 1, 2), (lado, 0, 4)):
+                pontos = [(0, 0, 2)]
+                if k % 2 == 1 and k < passos - 1:
+                    pontos += [(lado, -1, 5), (lado * 2, -1, 4), (-lado, -1, 4)]
+                if k == passos - 1:
+                    pontos += [(0, -1, 5)]
+                for dx, dy, kk in pontos:
                     xx, yy = cx_ + dx, cy_ + dy
                     if fr[yy, xx] and not cheio[yy, xx]:
                         t.alb[yy, xx] = OURO[kk]
@@ -1207,7 +1205,7 @@ def mata(t: Tela, ids) -> None:
     t.emi[m] = (alb * brilho[..., None])[m] * 0.82
 
 
-def hera(t: Tela, ids, P, frente: np.ndarray | None = None) -> np.ndarray:
+def hera(t: Tela, ids, P) -> np.ndarray:
     """Hera pendurada no arco da mata e subindo pela parede da direita; devolve a máscara (para a luz de contraluz)."""
     g = np.random.default_rng(SEMENTE + 200)
     mh = np.zeros((H, W), bool)
@@ -1394,7 +1392,7 @@ def salpico_mata(z: np.ndarray, y: np.ndarray) -> np.ndarray:
     iy = np.clip((y * 2).astype(np.int64) + 40, 0, tam - 1)
     v = n[iy, iz]
     limiar = 0.34 + np.clip((y - 40) / 120, 0, 1) * 0.24
-    return 0.15 + 0.85 * suave(limiar, limiar + 0.14, v)
+    return 0.4 + 0.6 * suave(limiar, limiar + 0.14, v)
 
 
 def luz_sol_vitral(P: np.ndarray, borrado: np.ndarray) -> np.ndarray:
@@ -1432,7 +1430,7 @@ def montar(base: dict) -> dict:
     esp = ampliar(t.esp)[..., None]
     ao = ampliar(base["ao"] * t.ao)
     ao = desfocar(ao[..., None], 1.0)[..., 0]
-    fora = (ids_up == ID["fora"]) | (ids_up == ID["vidro"])
+    fora = ((ids_up == ID["fora"]) | (ids_up == ID["vidro"])) & ~ampliar(base["hera"])
     sala = ~fora
     C = np.array([VPX, OLHO, F])
     V = C - P3
@@ -1472,7 +1470,7 @@ def montar(base: dict) -> dict:
         raio = 70.0 if k < 2 else 48.0
         q = np.exp(-(dist / raio) ** 2 * 1.6) + 0.35 / (1 + (dist / 8) ** 2)
         q = em_degraus(np.clip(q, 0, 2).astype(np.float32), 6, 0.5)
-        forca = 1.25 if k < 2 else 0.55
+        forca = 1.25 if k < 2 else 0.8
         I_t += (q * ndl)[..., None] * hexa("#ff9a48") * forca
 
     # ── 3b. lustre de velas fora do quadro (no alto, perto da câmera): modela a frente dos pedestais e projeta a
@@ -1598,11 +1596,7 @@ def volumetrico(montado: dict, Gv: np.ndarray, Gm: np.ndarray, passos: int = 120
     k = 2                                         # 720 x 405
     hh, ww = H * ESC // k, W * ESC // k
     ys, xs = np.mgrid[0:hh, 0:ww].astype(np.float64)
-    xs = (xs + 0.5) / (ESC / k) / 1
-    ys = (ys + 0.5) / (ESC / k)
-    xs = xs / k * k
-    o, d = raios((xs).ravel() / 1, ys.ravel())
-    o, d = raios(((np.mgrid[0:hh, 0:ww][1] + 0.5) * k / ESC).ravel(), ((np.mgrid[0:hh, 0:ww][0] + 0.5) * k / ESC).ravel())
+    o, d = raios(((xs + 0.5) * k / ESC).ravel(), ((ys + 0.5) * k / ESC).ravel())
     P3 = montado["P3"][k // 2::k, k // 2::k].reshape(-1, 3)
     z_fim = np.clip(P3[:, 2], GRADE["z0"], None)
     z_ini = np.full_like(z_fim, 232.0)
@@ -1623,11 +1617,11 @@ def volumetrico(montado: dict, Gv: np.ndarray, Gm: np.ndarray, passos: int = 120
         v = (p[:, 1] + p[:, 2] * 0.6) * 0.9
         iu = np.mod(u.astype(np.int64) + 100, tam)
         iv = np.mod(v.astype(np.int64) + 100, tam)
-        dens = 0.55 + 0.65 * nd1[iv, iu] + 0.35 * nd2[iv, np.mod(iu * 2, tam)]
+        dens = (0.55 + 0.65 * nd1[iv, iu] + 0.35 * nd2[iv, np.mod(iu * 2, tam)]) * (0.45 + 0.55 * np.clip(p[:, 1] / 70, 0, 1))
         acum_v += amostrar_grade(Gv, p) * (dens * dz)[:, None]
         acum_m += amostrar_grade(Gm, p) * dens * dz
     vv = acum_v.reshape(hh, ww, 3) * 0.02
-    vm = acum_m.reshape(hh, ww) * 0.0062
+    vm = acum_m.reshape(hh, ww) * 0.0048
     vv = desfocar(vv.repeat(k, 0).repeat(k, 1), 2.0)
     vm = desfocar(vm.repeat(k, 0).repeat(k, 1)[..., None], 2.0)[..., 0]
     return vv, vm
@@ -1714,11 +1708,11 @@ def frente_hera() -> np.ndarray:
                             msk[yy, xx] = 1
             x += g.random() * 1.0 - 0.5
             y += 1
-    rgba = np.concatenate([ampliar(alb) * 0.55, ampliar(msk)[..., None]], -1)
+    rgba = np.concatenate([ampliar(alb) * 0.5, ampliar(msk)[..., None] * 0.92], -1)
     # desfoque (está perto da câmera) em alfa pré-multiplicado
     pm = rgba.copy()
     pm[..., :3] *= pm[..., 3:4]
-    pm = desfocar(pm, 4.0)
+    pm = desfocar(pm, 2.2)
     a = np.clip(pm[..., 3:4], 1e-4, 1)
     pm[..., :3] /= a
     # contraluz: borda verde-ouro do lado do vão

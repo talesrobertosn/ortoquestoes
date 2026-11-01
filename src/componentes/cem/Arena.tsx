@@ -55,9 +55,11 @@ export function TituloArena({ aoAtualizar, rotulo = 'Ranking · Salão dos Cem',
   aoAtualizar?: () => void; rotulo?: string; titulo?: string; sub?: string
 }) {
   return <>
-    <p className="cem-heroi__rotulo">{rotulo}</p>
-    <h1 id="cem-titulo">{titulo}</h1>
-    <p className="cem-heroi__sub">{sub}</p>
+    <div className="cem-heroi__titulo">
+      <p className="cem-heroi__rotulo">{rotulo}</p>
+      <h1 id="cem-titulo">{titulo}</h1>
+      <p className="cem-heroi__sub">{sub}</p>
+    </div>
     {aoAtualizar && <RelogioArena aoAtualizar={aoAtualizar} />}
   </>
 }

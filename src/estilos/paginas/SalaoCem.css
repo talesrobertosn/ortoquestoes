@@ -42,7 +42,8 @@
 .cem-heroi__camada { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; user-select: none; }
 .cem-heroi__luz { mix-blend-mode: screen; pointer-events: none; animation: cem-luz 7s ease-in-out infinite; }
 @keyframes cem-luz { 50% { opacity: 0.82; } }
-.cem-heroi__cabeca { grid-column: 1 / -1; display: grid; gap: 0.45rem; align-content: start; max-width: 38rem; }
+.cem-heroi__cabeca { grid-column: 1 / -1; display: grid; gap: 0.6rem; align-content: start; justify-items: start; max-width: 38rem; }
+.cem-heroi__titulo { display: grid; gap: 0.45rem; }
 .cem-heroi__rotulo { margin: 0; color: var(--cem-ouro-claro); font-size: 0.8125rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
 .cem-heroi h1 {
   margin: 0; color: var(--cem-tinta); font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.03em; line-height: 1.04;
@@ -359,20 +360,21 @@
 @media (max-width: 40rem) {
   .cem { gap: var(--e-5); }
   /* No celular: a cena mostra o recorte do pódio (x 196..476 da arte) e as placas e a jornada vêm embaixo, no chão escuro. */
-  .cem-heroi { margin-inline: calc(-1 * var(--e-2)); border-radius: 16px; grid-template-rows: auto auto auto; }
+  .cem-heroi { margin-inline: calc(-1 * var(--e-2)); border-radius: 16px; grid-template-rows: auto auto auto auto; }
   .cem-heroi__cena { display: contents; }
   .cem-heroi__cena::before { display: none; }
   .cem-heroi__palco { position: relative; inset: auto; z-index: 0; grid-row: 1; grid-column: 1; aspect-ratio: 280 / 270; container-type: inline-size; }
   .cem-heroi__mundo { width: 171.43cqw; left: -70cqw; top: 0; }
   .cem-heroi__palco::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8, 10, 14, 0.75) 0%, rgba(8, 10, 14, 0.2) 34%, transparent 50%, transparent 80%, #0c0f12 100%); }
-  .cem-heroi__cabeca { grid-row: 1; grid-column: 1; z-index: 1; align-self: stretch; align-content: start; position: relative; padding: var(--e-4) var(--e-4) 0; gap: 0.2rem; }
+  .cem-heroi__cabeca { display: contents; }
+  .cem-heroi__titulo { grid-row: 1; grid-column: 1; z-index: 1; align-self: start; padding: var(--e-4) var(--e-4) 0; gap: 0.2rem; }
   .cem-heroi h1 { font-size: 1.75rem; }
   .cem-heroi__sub { display: none; }
-  /* O relógio desce para o chão da cena, longe dos cavaleiros. */
-  .cem-relogio { position: absolute; left: var(--e-3); bottom: 2.4rem; padding: 0.35rem 0.65rem 0.35rem 0.5rem; }
+  /* O relógio desce para o chão escuro, embaixo da cena, longe dos cavaleiros e dos pedestais. */
+  .cem-relogio { grid-row: 2; grid-column: 1; justify-self: center; position: relative; z-index: 1; margin: -1.25rem 0 var(--e-3); padding: 0.35rem 0.65rem 0.35rem 0.5rem; }
   .cem-relogio__nota { display: none; }
   .cem-relogio__tempo { font-size: 1.4rem; }
-  .cem-heroi__podio { grid-row: 2; grid-template-columns: minmax(0, 1fr); gap: var(--e-2); padding: 0 var(--e-3); margin-top: -1.5rem; position: relative; z-index: 1; background: none; }
+  .cem-heroi__podio { grid-row: 3; grid-template-columns: minmax(0, 1fr); gap: var(--e-2); padding: 0 var(--e-3); position: relative; z-index: 1; background: none; }
   .cem-placa, .cem-placa--1 { order: 0; grid-template-columns: auto minmax(0, 1fr) auto; column-gap: var(--e-3); row-gap: 2px; padding: var(--e-3); }
   .cem-placa__lugar { grid-row: span 2; }
   .cem-placa__lugar > span:last-child { display: none; }
@@ -381,7 +383,7 @@
   .cem-placa__total { grid-column: 3; grid-row: 1 / span 2; text-align: right; display: grid; }
   .cem-placa__total b, .cem-placa--1 .cem-placa__total b { font-size: 1.375rem; }
   .cem-placa__selos { grid-column: 2; }
-  .cem-heroi__lateral { grid-row: 3; grid-column: 1; padding: var(--e-3); max-width: none; }
+  .cem-heroi__lateral { grid-row: 4; grid-column: 1; padding: var(--e-3); max-width: none; }
   .cem-jornada { animation: none; }
   .cem-barra { padding: var(--e-2); }
   .cem-barra__linha { gap: var(--e-3); padding: 0 var(--e-1) var(--e-1); }
