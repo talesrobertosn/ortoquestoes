@@ -126,10 +126,11 @@ export function Ranking() {
     if (!liderAtual || DEMO) return
     const antes = lerLider(periodo)
     guardarLider(periodo, liderAtual)
-    if (!novoCampeao(antes, liderAtual)) return
+    if (!novoCampeao(antes, liderAtual)) { definirCerimonia(null); return }
     definirCerimonia(liderAtual)
     const fim = window.setTimeout(() => definirCerimonia(null), 4200)
-    return () => window.clearTimeout(fim)
+    // Trocar de período no meio da cerimônia encerra a cerimônia (nunca fica presa).
+    return () => { window.clearTimeout(fim); definirCerimonia(null) }
   }, [liderAtual, periodo])
 
   if (!DEMO && (!contasDisponiveis || !supabase)) {
