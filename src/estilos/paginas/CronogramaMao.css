@@ -25,7 +25,7 @@
 .cm-prioridades li::before { content: counter(pr) "º"; color: var(--texto-2); font-weight: 800; font-size: var(--meta); }
 .cm-prioridades__nome { display: grid; gap: 0.1rem; min-width: 0; }
 .cm-prioridades__nome small { color: var(--texto-2); font-size: var(--meta); }
-.cm-treinar { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; padding: 0 0.9rem; border: 1px solid var(--traco); border-radius: 10px; background: var(--superficie); color: var(--verdete); font: inherit; font-weight: 700; cursor: pointer; }
+.cm-treinar { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; padding: 0 0.9rem; border: 1.5px solid var(--verdete); border-radius: 10px; background: transparent; color: var(--verdete); font: inherit; font-weight: 700; cursor: pointer; }
 .cm-treinar:hover { border-color: var(--verdete); background: var(--verdete-veu); }
 .cm-treinar:focus-visible { outline: 2px solid var(--foco); outline-offset: 2px; }
 .cm-link { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; margin-top: var(--e-2); color: var(--verdete); font-weight: 700; }

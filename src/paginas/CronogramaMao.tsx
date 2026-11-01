@@ -27,6 +27,7 @@ import { Icone } from '../componentes/Icone'
 import { chaveCivil, hojeBR, somarDias } from '../util/dia'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/CronogramaTorre.css'
+import '../estilos/componentes/Cristal.css'
 import '../estilos/paginas/CronogramaMao.css'
 import { CenaOficina } from '../componentes/cronograma/CenaOficina'
 import { TrocaCronograma } from '../componentes/TrocaCronograma'
@@ -260,7 +261,7 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">
         <div className="cp-ordem-1"><CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corDaArea(principal?.slug ?? 'mao')} adiantar={painelAdiantar}
-          aviso={folgaHoje ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar os dias?</span><button type="button" className="botao" onClick={aoEditar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoAviso} /></div>
+          aviso={folgaHoje ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar os dias?</span><button type="button" className="botao botao--principal" onClick={aoEditar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoAviso} /></div>
       </div>
       <div className="cp-col cp-col--lado">
         {!calculo.naRetaFinal && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasEscolhido} rotuloDia={rotuloEscolhido} especialidade="mao" /></div>}

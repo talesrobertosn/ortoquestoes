@@ -171,12 +171,12 @@ def lupa(c: Camada, e: Camada, rel: Camada, luzes: list) -> None:
                 sx, sy = int(round(377 + (x - lx) / 2.1)), int(round(98 + (y - ly) / 2.1))
                 cor = atras[sy, sx] * 1.08
                 k = (y - (ly - r)) / (2 * r)
-                cor = cor * 0.78 + mistura("#e8f4f8", "#9ab8c4", k) * 0.22
+                cor = cor * 0.62 + mistura("#bcd6e0", "#4a6a7a", k) * 0.38
                 if d > r - 4.6:
                     cor = cor * 0.88 + hexa("#ffd890") * 0.12 * (luz < 0)
                 if -0.5 < (x - lx) + (y - ly) * 0.9 + 3 < 1.6 and y < ly - 1:
                     cor = mistura("#ffffff", "#e8f4f8", 0.2)
-                rel.p(x, y, cor)
+                c.p(x, y, cor)
     for i in range(12):
         a = i / 12 * math.tau + 0.2
         c.p(lx + math.cos(a) * (r - 1.2), ly + math.sin(a) * (r - 1.2), "#5a3a14" if i % 2 else "#ffe8a0")
@@ -317,6 +317,13 @@ def oficina(c: Camada, e: Camada, rel: Camada, campanario: Camada, luzes: list) 
         meia = f * (x1 - x0 + 14) / 2
         c.p(CX - meia + 7, y + 1, "#5a3420")
         c.p(CX + meia - 7, y + 1, "#2a1a14")
+    for y in range(APICE + 6, TOPO_CORPO + 2, 3):
+        f = (y - APICE) / (TOPO_CORPO + 4 - APICE)
+        meia = f * (x1 - x0 + 14) / 2
+        for lado in (-1, 1):
+            bx = CX + lado * (meia - 8)
+            c.p(bx, y + 2, "#6a4428" if lado < 0 else "#3a2418")
+            c.p(bx, y + 3, "#c88a5a" if lado < 0 else "#4a2c1c")
     c.ret(CX, APICE - 7, 1, 8, "#2a2428")
     engrenagem(c, CX + 0.5, APICE - 8.5, 2.6, 6, ("#fff0b0", "#e0b04c", "#9a6a24", "#5a3a14"), furo=0.9)
     # chaminé de pedra na água da sombra, com o fio de fumaça da forja pequena
