@@ -443,3 +443,20 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
 @keyframes hd-respira { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.78; transform: scale(1.05); } }
 .hd-brasas--pausa i { width: 2px; height: 2px; background: #ffe2a0; box-shadow: 0 0 5px #ffb050, 0 0 1px #fff3d0; }
 @media (prefers-reduced-motion: reduce) { .hd-calor, .hd-vinheta { transition: none; } .hd-palco--pausa .hd-calor { animation: none; } }
+
+/* Diretor de cena (01/11/2026, CenaDiorama.tsx e roteiros.ts). A coruja cruza a cena até outro poleiro: a posição
+   desliza com uma curva de voo (sobe rápido, plana e freia no pouso). */
+.hd-coruja--voando { z-index: 6; transition: left 1.8s cubic-bezier(0.45, 0, 0.3, 1), top 1.8s cubic-bezier(0.2, 0.9, 0.35, 1), opacity 0.4s ease; }
+/* O gato dourado: uma visita em 150. Pelo de ouro e um brilho que passa de vez em quando. */
+.hd-gato--dourado .hd-gato__sprite { filter: sepia(0.9) saturate(2.4) hue-rotate(-8deg) brightness(1.18) drop-shadow(0 0 3px rgba(255, 214, 120, 0.85)); }
+.hd-gato--dourado::after { content: ""; position: absolute; inset: -10% -6%; pointer-events: none;
+  background: linear-gradient(110deg, transparent 40%, rgba(255, 244, 200, 0.8) 50%, transparent 60%); mix-blend-mode: screen;
+  animation: hd-dourado 4.5s ease-in-out 1s infinite; background-size: 300% 100%; background-position: 100% 0; }
+@keyframes hd-dourado { 0%, 70% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
+/* A estrela cadente (raridade da noite): um risco de luz que cruza o céu em 1,2 s. */
+.hd-estrela-cadente { position: absolute; left: 80%; top: var(--estrela-y, 18%); z-index: 1; width: 3px; height: 3px; border-radius: 50%; pointer-events: none;
+  background: #fffbe8; box-shadow: 0 0 6px 2px rgba(255, 246, 210, 0.9); animation: hd-estrela 1.2s cubic-bezier(0.3, 0, 0.6, 1) forwards; }
+.hd-estrela-cadente::before { content: ""; position: absolute; left: 1px; top: 1px; width: 90px; height: 2px; transform-origin: 0 50%; transform: rotate(-24deg);
+  background: linear-gradient(90deg, rgba(255, 246, 210, 0.9), transparent); }
+@keyframes hd-estrela { from { opacity: 0; translate: 0 0; } 15% { opacity: 1; } 85% { opacity: 1; } to { opacity: 0; translate: -12vw 5vw; } }
+@media (prefers-reduced-motion: reduce) { .hd-coruja--voando { transition: none; } .hd-gato--dourado::after, .hd-estrela-cadente { animation: none; display: none; } }

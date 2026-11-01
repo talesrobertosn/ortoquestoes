@@ -75,6 +75,9 @@ export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, f
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [atual, falar])
 
+  // Quem usa pode calar o mascote no meio (o diretor de cena da página inicial): a fala aberta fecha na hora.
+  useEffect(() => { if (!falar) definirFala(null) }, [falar])
+
   const clicar = () => {
     const agora = Date.now()
     cliques.current = [...cliques.current.filter((t) => agora - t < 2500), agora]

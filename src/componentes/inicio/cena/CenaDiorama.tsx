@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react'
 import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
 import { folhaGato, type IdLinhaGato } from '../../mascote/sprites'
@@ -9,6 +9,8 @@ import { EVENTO_AMOSTRA } from '../AmostraRespondivel'
 import { urlCss } from '../../../config'
 import { luzNoBicho, mapasDeLuz, type Luz } from '../../mascote/luz'
 import { cenarioDaHora, type Cenario } from './cenarios'
+import { ROTEIROS, tempoDeLer, type Acao, type Bicho, type Roteiro } from './roteiros'
+import type { IdComportamento } from '../../mascote/comportamentos'
 import type { Periodo } from '../../../estado/aparencia'
 
 /**
@@ -89,7 +91,7 @@ function encaixarBalao(balao: HTMLElement | null, alturaBicho: number) {
 
 /** Um bicho fala de cada vez na cena: quem começa a falar avisa, e o outro fecha o balão. */
 const EVENTO_FALA = 'hd-bicho-fala'
-const avisarFala = (quem: 'gato' | 'coruja' | 'esqueleto') => window.dispatchEvent(new CustomEvent(EVENTO_FALA, { detail: quem }))
+const avisarFala = (quem: 'gato' | 'coruja' | 'esqueleto' | 'diretor') => window.dispatchEvent(new CustomEvent(EVENTO_FALA, { detail: quem }))
 const ouvirFala = (f: (quem: string) => void) => {
   const ouvir = (e: Event) => f(String((e as CustomEvent).detail))
   window.addEventListener(EVENTO_FALA, ouvir)
@@ -99,6 +101,8 @@ const ouvirFala = (f: (quem: string) => void) => {
 const reduzMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
 
 const DURACAO_PASSO = 3600
+/** O diretor de cena pede à coruja que troque de poleiro voando. */
+const EVENTO_VOO = 'hd-coruja-voar'
 const PAUSA_MS = 20000
 
 /**
@@ -139,6 +143,8 @@ function CorujaDoAcampamento({ poleiros: POLEIROS, luzes, periodo }: { poleiros:
         return livre(c, heroi, cena) && outros.every((o) => cruza(c, o) === 0)
       }
       definirPoleiro((atual) => (atual !== null && livreAqui(atual) ? atual : POLEIROS.findIndex((_, i) => livreAqui(i)) >= 0 ? POLEIROS.findIndex((_, i) => livreAqui(i)) : null))
+      // Quantos poleiros estão livres agora: o diretor só pede um voo quando há para onde ir.
+      el.dataset.livres = String(POLEIROS.filter((_, i) => livreAqui(i)).length)
     }
     escolher()
     const primeira = window.setTimeout(escolher, 600)
@@ -146,7 +152,30 @@ function CorujaDoAcampamento({ poleiros: POLEIROS, luzes, periodo }: { poleiros:
     window.addEventListener('resize', escolher)
     return () => { window.clearTimeout(primeira); window.clearInterval(vez); window.removeEventListener('resize', escolher) }
   }, [])
-  const estado: EstadoCoruja = acenou ? 'acenando' : ROTINA_CORUJA[passo]
+  // O diretor de cena pede um voo: ela decola, cruza a cena até outro poleiro livre e pousa.
+  const [voo, definirVoo] = useState<'voando' | 'pousando' | null>(null)
+  useEffect(() => {
+    let fim = 0, pouso = 0
+    const voar = () => {
+      const el = ref.current, palco = el?.closest('.hd-palco'), heroi = el?.closest('.jn-heroi, .hd-topo'), cena = el?.closest('.hd-cena')
+      if (!el || !palco || !heroi || !cena || reduzMovimento()) return
+      const P = caixa(palco)
+      const outros = [...heroi.querySelectorAll(OUTROS)].map(caixa)
+      const livres = POLEIROS.map((pt, i) => ({ i, c: { x: P.x + ((pt.x - CORUJA.w / 2) / 480) * P.w, y: P.y + ((pt.y - CORUJA.h) / 200) * P.h, w: (CORUJA.w / 480) * P.w, h: (CORUJA.h / 200) * P.h } }))
+        .filter(({ c }) => livre(c, heroi, cena) && outros.every((o) => cruza(c, o) === 0)).map(({ i }) => i)
+      definirPoleiro((atual) => {
+        const opcoes = livres.filter((i) => i !== atual)
+        if (atual === null || !opcoes.length) return atual
+        definirVoo('voando')
+        fim = window.setTimeout(() => { definirVoo('pousando'); pouso = window.setTimeout(() => definirVoo(null), 900) }, 1800)
+        return opcoes[Math.floor(Math.random() * opcoes.length)]
+      })
+    }
+    window.addEventListener(EVENTO_VOO, voar)
+    return () => { window.removeEventListener(EVENTO_VOO, voar); window.clearTimeout(fim); window.clearTimeout(pouso) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  const estado: EstadoCoruja = voo ?? (acenou ? 'acenando' : ROTINA_CORUJA[passo])
   useEffect(() => { if (!acenou) return; const t = window.setTimeout(() => definirAcenou(0), 1400); return () => window.clearTimeout(t) }, [acenou])
   useEffect(() => { if (!fala) return; const t = window.setTimeout(() => definirFala(null), 11000); return () => window.clearTimeout(t) }, [fala])
   const pt = POLEIROS[poleiro ?? 0]
@@ -157,7 +186,7 @@ function CorujaDoAcampamento({ poleiros: POLEIROS, luzes, periodo }: { poleiros:
   // Um fala de cada vez: se o gato começa a falar, a coruja fecha o balão dela.
   useEffect(() => ouvirFala((quem) => { if (quem !== 'coruja') definirFala(null) }), [])
   return <>
-    <button ref={ref} type="button" className={`hd-coruja ${luz.className}` + (poleiro === null ? ' hd-coruja--fora' : '')} onClick={tocar}
+    <button ref={ref} type="button" className={`hd-coruja ${luz.className}` + (voo === 'voando' ? ' hd-coruja--voando' : '') + (poleiro === null ? ' hd-coruja--fora' : '')} onClick={tocar}
       aria-label="Falar com a coruja" tabIndex={poleiro === null ? -1 : undefined} aria-hidden={poleiro === null || undefined}
       style={{ ...lugar(pt.x - CORUJA.w / 2, pt.y - CORUJA.h * 31 / 32, CORUJA.w, CORUJA.h), ...luz.style }}>
       <CorujaPixel key={`${estado}-${acenou}`} estado={estado} />
@@ -165,6 +194,115 @@ function CorujaDoAcampamento({ poleiros: POLEIROS, luzes, periodo }: { poleiros:
     {fala && poleiro !== null && <span ref={balao} className={`hd-balao hd-balao--longo hd-balao--coruja ${pt.x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
       onClick={() => definirFala(null)} style={{ left: `${(pt.x / 480) * 100}%`, top: `${((pt.y - CORUJA.h - 1) / 200) * 100}%` }}>{fala}</span>}
   </>
+}
+
+
+/** As raridades já vistas (o álbum dos bichos): ficam no aparelho, sem servidor. */
+const CHAVE_ALBUM = 'bichos:album'
+function guardarNoAlbum(id: string) {
+  try {
+    const album: string[] = JSON.parse(localStorage.getItem(CHAVE_ALBUM) ?? '[]')
+    if (!album.includes(id)) localStorage.setItem(CHAVE_ALBUM, JSON.stringify([...album, id]))
+  } catch { /* sem armazenamento */ }
+}
+
+type Controles = {
+  /** A cena começou ou acabou (o esqueleto fica quieto enquanto o roteiro fala por ele). */
+  emCena: (sim: boolean) => void
+  pose: (id: IdComportamento | null) => void
+  gatoIr: (ate: 'fogo' | 'esqueleto' | 'longe') => void
+  gatoPose: (id: IdLinhaGato) => void
+  estrela: () => void
+}
+const SELETOR_BICHO: Record<Bicho, string> = { esqueleto: '.hd-mascote .mascote__corpo', gato: '.hd-gato:not(.hd-gato--fora)', coruja: '.hd-coruja:not(.hd-coruja--fora)' }
+
+/**
+ * O diretor de cena (01/11/2026, docs/design/MASCOTES.md): de tempos em tempos sorteia um roteiro (roteiros.ts) com os
+ * três bichos e o encena, uma fala de cada vez, num balão que procura lugar livre como os outros. Só roda com a aba
+ * à vista e a cena na tela; no celular, bem mais espaçado. Um toque em qualquer bicho interrompe a cena na hora.
+ * Com "menos movimento", só as conversas (ninguém anda nem voa).
+ */
+function DiretorDeCena({ palco, periodo, controles }: { palco: RefObject<HTMLDivElement | null>; periodo: Periodo; controles: Controles }) {
+  const [fala, definirFala] = useState<{ quem: Bicho; texto: string; x: number; y: number; n: number } | null>(null)
+  const balao = useRef<HTMLSpanElement>(null)
+  const ctl = useRef(controles)
+  ctl.current = controles
+  useLayoutEffect(() => {
+    if (!fala) return
+    const alvo = palco.current?.querySelector(SELETOR_BICHO[fala.quem])
+    encaixarBalao(balao.current, alvo?.getBoundingClientRect().height ?? 40)
+  }, [fala, palco])
+  useEffect(() => {
+    const el = palco.current
+    if (!el) return
+    let visivel = true, rodando = 0, timer = 0, ultimo = ''
+    const io = typeof IntersectionObserver !== 'undefined' ? new IntersectionObserver(([e]) => { visivel = e.isIntersecting }) : null
+    io?.observe(el)
+    const celular = () => typeof matchMedia !== 'undefined' && matchMedia('(max-width: 60rem)').matches
+    const esperar = (ms: number, vez: number) => new Promise<boolean>((ok) => window.setTimeout(() => ok(vez === rodando), ms))
+    const parar = () => { rodando++; definirFala(null); ctl.current.pose(null); ctl.current.emCena(false) }
+    // Alguém tocou num bicho (ou ele falou sozinho): a cena para.
+    const tirar = ouvirFala((quem) => { if (quem !== 'diretor') parar() })
+    const aVista = (b: Bicho) => !!el.querySelector(SELETOR_BICHO[b])
+    const sortear = (): Roteiro | null => {
+      const agora = new Date()
+      const raridade = Math.random() < 0.08
+      const opcoes = ROTEIROS.filter((r) => r.id !== ultimo && (!r.raro || raridade) && (!r.horas || r.horas.includes(periodo))
+        && (!r.quando || r.quando(agora)) && (r.precisa ?? []).every(aVista)
+        && (r.passos.every((p) => p.acao?.tipo !== 'coruja-voar') || Number(el.querySelector<HTMLElement>('.hd-coruja')?.dataset.livres ?? 0) >= 2)
+        && (!reduzMovimento() || r.passos.every((p) => !p.acao || p.acao.tipo === 'pose' || p.acao.tipo === 'gato-pose')))
+      const total = opcoes.reduce((n, r) => n + r.peso, 0)
+      let sorte = Math.random() * total
+      return opcoes.find((r) => (sorte -= r.peso) < 0) ?? null
+    }
+    const agir = (a: Acao) => {
+      if (a.tipo === 'pose') ctl.current.pose(a.id)
+      else if (a.tipo === 'gato-ir') ctl.current.gatoIr(a.ate)
+      else if (a.tipo === 'gato-pose') ctl.current.gatoPose(a.id)
+      else if (a.tipo === 'coruja-voar') window.dispatchEvent(new Event(EVENTO_VOO))
+      else if (a.tipo === 'estrela') ctl.current.estrela()
+    }
+    const encenar = async (r: Roteiro) => {
+      const vez = ++rodando
+      ultimo = r.id
+      ctl.current.emCena(true)
+      if (r.raro) guardarNoAlbum(r.id)
+      for (const passo of r.passos) {
+        if (passo.acao) agir(passo.acao)
+        if (passo.fala && passo.quem) {
+          const alvo = el.querySelector(SELETOR_BICHO[passo.quem])
+          if (!alvo) break
+          const P = el.getBoundingClientRect(), b = alvo.getBoundingClientRect()
+          avisarFala('diretor')
+          definirFala({ quem: passo.quem, texto: passo.fala, x: ((b.left + b.width / 2 - P.left) / P.width) * 100, y: ((b.top - P.top) / P.height) * 100, n: Date.now() })
+          if (!(await esperar(tempoDeLer(passo.fala), vez))) return
+          definirFala(null)
+          if (!(await esperar(350, vez))) return
+        } else if (!(await esperar(passo.espera ?? 1500, vez))) return
+      }
+      if (!(await esperar(2500, vez))) return
+      ctl.current.pose(null)
+      ctl.current.emCena(false)
+    }
+    // Para testar um roteiro: ?roteiro=monteggia na URL (ou sessionStorage['inicio:roteiro']) e ele entra em 2 s.
+    let pedido: string | null = null
+    try { pedido = new URLSearchParams(location.hash.split('?')[1] ?? location.search).get('roteiro') ?? sessionStorage.getItem('inicio:roteiro') } catch { /* sem armazenamento */ }
+    const agendar = (primeira: boolean) => {
+      const forcado = primeira && pedido ? ROTEIROS.find((r) => r.id === pedido) ?? null : null
+      const [min, max] = forcado ? [2, 2] : primeira ? [25, 45] : celular() ? [150, 300] : [60, 120]
+      timer = window.setTimeout(() => {
+        const ocupado = el.querySelector('.hd-balao, .mascote__balao')
+        const r = forcado ?? (!document.hidden && visivel && !ocupado ? sortear() : null)
+        if (r) void encenar(r).finally(() => agendar(false))
+        else agendar(false)
+      }, (min + Math.random() * (max - min)) * 1000)
+    }
+    agendar(true)
+    return () => { window.clearTimeout(timer); rodando++; io?.disconnect(); tirar() }
+  }, [palco, periodo])
+  if (!fala) return null
+  return <span ref={balao} key={fala.n} className={`hd-balao hd-balao--longo hd-balao--diretor hd-balao--de-${fala.quem} ${fala.x > 52 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
+    onClick={() => definirFala(null)} style={{ left: `${fala.x}%`, top: `${fala.y}%` }}>{fala.texto}</span>
 }
 
 export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }: {
@@ -411,6 +549,39 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   const estiloMascote = { ...lugar(262, 96, 46, 66.7), ...luzMascote.style }
   const luzGato = luzNoBicho(PONTOS_GATO[ponto].x + 18, PONTOS_GATO[ponto].y + 9, luzes, periodo)
 
+  // O diretor de cena: a atividade que ele pede ao esqueleto, a estrela cadente e o gato dourado (uma visita em 150).
+  const [poseDiretor, definirPoseDiretor] = useState<{ id: IdComportamento; n: number } | null>(null)
+  const [emCena, definirEmCena] = useState(false)
+  const [estrela, definirEstrela] = useState(0)
+  useEffect(() => { if (!estrela) return; const t = window.setTimeout(() => definirEstrela(0), 1600); return () => window.clearTimeout(t) }, [estrela])
+  const [dourado] = useState(() => Math.random() < 1 / 150)
+  useEffect(() => { if (dourado) guardarNoAlbum('gato-dourado') }, [dourado])
+  const levarGato = (ate: 'fogo' | 'esqueleto' | 'longe') => {
+    const { gato: g, ponto: atual } = agora.current
+    if (reduzMovimento() || g === 'tala' || g === 'andando' || g === 'acordando') return
+    const alvo = ate === 'fogo' ? 240 : 285
+    const opcoes = pontosLivres().filter((i) => i !== atual)
+    if (!opcoes.length) return
+    const perto = (i: number) => Math.abs(PONTOS_GATO[i].x + 18 - alvo)
+    const destino = [...opcoes].sort((a, b) => (ate === 'longe' ? perto(b) - perto(a) : perto(a) - perto(b)))[0]
+    if (ate !== 'longe' && perto(destino) >= perto(atual)) return
+    definirAndando(PONTOS_GATO[destino].x < PONTOS_GATO[atual].x ? 'esquerda' : 'direita')
+    definirGato('andando')
+    definirPonto(destino)
+    window.setTimeout(() => { definirAndando(null); definirGato((x) => (x === 'andando' ? 'acordado' : x)) }, DURACAO_PASSO)
+  }
+  const controles: Controles = {
+    emCena: definirEmCena,
+    pose: (id) => definirPoseDiretor(id ? { id, n: Date.now() } : null),
+    gatoIr: levarGato,
+    gatoPose: (id) => {
+      definirGato((g) => (g === 'tala' || g === 'andando' ? g : id))
+      // Comemorar e brincar são de momento: depois de um tempo ele volta a se acomodar no lugar.
+      if (id === 'comemorando' || id === 'brincando') window.setTimeout(() => definirGato((g) => (g === id ? poseDoPonto(agora.current.ponto) : g)), 6000)
+    },
+    estrela: () => definirEstrela(Date.now()),
+  }
+
   return (
     // Só os bichos e a fogueira são alcançáveis (teclado e leitor de tela); o resto da arte é enfeite (aria-hidden).
     <div className="hd-cena">
@@ -440,22 +611,24 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
         {/* O mascote, em pé ao lado da fogueira: um comportamento diferente a cada visita (componentes/mascote). */}
         {pausa
           ? <Mascote key={`pausa-${pausa}`} className={classeMascote} decorativo comportamento={fogoAceso ? 'fogueira' : 'descansando'} falas={fogoAceso ? FALAS_PAUSA_FOGUEIRA : FALAS_PAUSA_APAGADA} style={estiloMascote} />
+          : poseDiretor
+          ? <Mascote key={`diretor-${poseDiretor.n}`} className={classeMascote} decorativo falar={false} comportamento={poseDiretor.id} style={estiloMascote} />
           : descanso
-          ? <Mascote key="descanso" className={classeMascote} decorativo comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={estiloMascote} />
+          ? <Mascote key="descanso" className={classeMascote} decorativo falar={!emCena} comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={estiloMascote} />
           : reacaoAmostra?.id === 'quadro'
-            ? <Mascote key={`quadro-${reacaoAmostra.n}`} className={classeMascote} decorativo comportamento="quadro" style={estiloMascote} />
-            : <Mascote key="dia" className={classeMascote} decorativo reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
+            ? <Mascote key={`quadro-${reacaoAmostra.n}`} className={classeMascote} decorativo falar={!emCena} comportamento="quadro" style={estiloMascote} />
+            : <Mascote key="dia" className={classeMascote} decorativo falar={!emCena} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
         {pausa > 0 && <span className="so-leitor" role="status">{fogoAceso ? 'Pausa na fogueira: o esqueleto senta para se aquecer e o gato ronrona.' : 'A fogueira está apagada; o esqueleto senta um instante ao lado dela.'}</span>}
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" aria-label="Falar com o gato" tabIndex={semLugar ? -1 : undefined} aria-hidden={semLugar || undefined}
-          className={`hd-gato ${luzGato.className}${andando ? ` hd-gato--andando hd-gato--${andando}` : ''}${semLugar ? ' hd-gato--fora' : ''}`}
+          className={`hd-gato ${luzGato.className}${dourado ? ' hd-gato--dourado' : ''}${andando ? ` hd-gato--andando hd-gato--${andando}` : ''}${semLugar ? ' hd-gato--fora' : ''}`}
           style={{ ...lugar(PONTOS_GATO[ponto].x, PONTOS_GATO[ponto].y - 4.5, 36, 27), '--passo': `${DURACAO_PASSO}ms`, ...luzGato.style } as CSSProperties}
           onClick={() => {
             toquesGato.current++
             jaAndou.current = false
             if (toquesGato.current % 6 === 0) { definirFalaGato(null); definirGato('tala'); return }
             definirGato((g) => (g === 'dormindo' || g === 'ronronando' ? 'acordado' : g))
-            definirFalaGato(proximaFala('gato', FALAS_GATO))
+            definirFalaGato(dourado && toquesGato.current === 1 ? 'Hoje acordei dourado. Não se acostume.' : proximaFala('gato', FALAS_GATO))
             avisarFala('gato')
           }}>
           <span className="bicho-sombra__chao" aria-hidden="true" />
@@ -466,6 +639,8 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>{falaGato}</span>}
         {gato === 'tala' && !andando && <span ref={balaoGato} role="status" className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
+        {estrela > 0 && <span className="hd-estrela-cadente" aria-hidden="true" />}
+        <DiretorDeCena palco={palco} periodo={periodo} controles={controles} />
         <CorujaDoAcampamento key={cenario.id} poleiros={cenario.coruja} luzes={luzes} periodo={periodo} />
         <span className={`hd-particulas hd-particulas--${cenario.particulas}`} aria-hidden="true">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>
