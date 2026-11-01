@@ -157,7 +157,7 @@ LANGENSKIÖLD desenhou em 1952 seis estágios que avançam com a idade (Tachdjia
 - **Estágios IV e V**: realinhamento com **epifisiólise medial** em menores de 10 anos com 2 anos ou mais de crescimento; 80% dos operados antes dos 7 anos precisaram depois só de correção angular; acima dos 7, a epifisiólise sozinha funcionou em menos da metade. Sem ela, a osteotomia simples num estágio IV ou V negligenciado tem **100% de recidiva** (Tachdjian, Fig. 18.25). Alternativa: epifisiodese lateral depois da osteotomia, aceitando a discrepância.
 - **Estágio VI**: com menos de 2 anos de crescimento e articulação razoável, osteotomia com **fechamento completo da fise**; com depressão importante do platô medial, **elevação do platô** por osteotomia intra-articular, somada à osteotomia da tíbia (dupla), à epifisiodese lateral da tíbia e da fíbula e, se preciso, ao alongamento.
 
-!questoes central=pediatria-0124 relacionadas=pediatria-0016,pediatria-0196,pediatria-0078,pediatria-0246,pediatria-0497,pediatria-0488,pediatria-0307,pediatria-0044,pediatria-0276,pediatria-0534,pediatria-0862,pediatria-0762
+!questoes central=pediatria-0124 relacionadas=pediatria-0016,pediatria-0196,pediatria-0078,pediatria-0246,pediatria-0497,pediatria-0488,pediatria-0307,pediatria-0044,pediatria-0276,pediatria-0534,pediatria-0862,pediatria-0762 treino=pediatria-1479,pediatria-1480,pediatria-1481
 conceito: Nos estágios IV e V a fise medial já se comporta como parada parcial, e a osteotomia isolada recidiva (100% no estágio IV ou V negligenciado); no VI a barra está formada e a epífise medial cai a 90 graus. A idade-limite para uma osteotomia resolver é 4 anos; meninas negras têm pior prognóstico; órtese só antes dos 3 anos, por até 1 ano; crescimento guiado com a fise medial ainda funcionando.
 como: O TARO 2022 e o TARO 2023 perguntaram em que estágios e com que frequência a osteotomia isolada recidiva; o TARO 2019 e o TARO 2008, a partir de quando há barra; o TARO 2014 e o TEOT 2024, a órtese; o TARO 2026, o tratamento com fise funcionante; o TARO 2009 e o TEOT 2024, o prognóstico por sexo e raça; o TARO 2021, o TARO 2024, a Ortopedia e o ENARE, os estágios em imagens e descrições.
 armadilha: Achar que a barra só importa no VI, usar o limite antigo de 8 anos, ou dizer que o pior prognóstico é de meninos negros.
@@ -187,7 +187,7 @@ O raciocínio da osteotomia de RAB é geométrico: corrigir só rotação exige 
 - **síndrome compartimental**, **paralisia do fibular**, infecção, fratura e perda de correção.
 O Campbell explica o mecanismo vascular: a correção em **varo** (do joelho valgo) **estira** a tibial anterior; a correção em **valgo** (do joelho varo) a **comprime**. E ensina a separar os quadros no pós-operatório: **perda de sensibilidade no dorso do pé e de dorsiflexão ativa sem dor** é paralisia do **fibular comum**; **dorsiflexão diminuída com dor intensa à flexão plantar passiva dos dedos** é oclusão arterial ou síndrome compartimental anterior. Em todos, tira-se o gesso e volta-se o membro à posição pré-operatória; na síndrome compartimental sem melhora imediata, fasciotomia; na oclusão arterial persistente, cirurgia vascular. Por isso a função dos músculos do compartimento anterior, como a extensão ativa do hálux, é examinada antes e depois da correção.
 
-!questoes central=pediatria-0238 relacionadas=pediatria-0436
+!questoes central=pediatria-0238 relacionadas=pediatria-0436 treino=pediatria-1477,pediatria-1478,pediatria-1485
 conceito: Na criança pequena vale qualquer osteotomia que dê valgo de pelo menos 5 graus e lateralize o fragmento, logo abaixo da tuberosidade, com rotação externa, osteotomia da fíbula, fixação e fasciotomia; RAB é oblíqua e corrige varo e rotação de uma vez, GREENE é o chevron de abertura e fechamento, ZAYER é hemicondilar; o fibular e a tibial anterior são o risco.
 como: A SBOT-SP mostrou o desenho do chevron de GREENE; a Ortopedia perguntou que função muscular avaliar antes e depois da correção aguda.
 armadilha: Fazer a osteotomia acima da tuberosidade (recurvato) ou confundir paralisia do fibular, indolor, com síndrome compartimental, dolorosa.
@@ -209,7 +209,7 @@ armadilha: Fazer a osteotomia acima da tuberosidade (recurvato) ou confundir par
 - **Hemiepifisiodese lateral** definitiva: simples, resposta satisfatória em 50% a 87%, mas a instituição do autor teve 66% de falha; idade acima de 14 anos, IMC acima de 45 e varo grave pioram o resultado. Não corrige a torção interna.
 - **Grampos** (BLOUNT e CLARKE, 1949) ou **placas em banda de tensão**: temporários, melhores abaixo de 11 a 12 anos; nos obesos, a placa quebra mais, e convém usar duas placas, quatro parafusos ou parafusos sólidos de aço.
 
-!questoes relacionadas=pediatria-0677,pediatria-0861
+!questoes relacionadas=pediatria-0677,pediatria-0861 treino=pediatria-1475,pediatria-1476,pediatria-1484,pediatria-1486
 conceito: Depois dos 8 anos, menino obeso, unilateral, com dor medial; epífise normal, sem bico, fise medial alargada e fêmur distal em varo; barra rara; tratamento cirúrgico sem hipercorreção (neutro a 5 graus de varo), por osteotomia, fixador ou hemiepifisiodese lateral.
 como: O TARO 2013 perguntou o fêmur distal no BLOUNT infantil e no do adolescente; o ENARE 2025, o tratamento de um caso tardio grau IV.
 armadilha: Hipercorrigir em valgo como na forma infantil, ou esquecer o varo do fêmur distal.
@@ -309,7 +309,7 @@ O Campbell's Operative Orthopaedics, 15ª edição (cap. 32, pp. 1148 e 1149), d
 
 **A técnica do Campbell** (técnica 32.13): tenotomia dos adutores, osteotomia **subtrocantérica** transversa na altura do pequeno trocanter, logo abaixo do parafuso da placa, cunha lateral pequena se preciso, correção do cervicodiafisário para **140 a 150 graus** e gesso pelvipodálico até a consolidação, em 8 a 12 semanas. A cirurgia pode esperar até **4 ou 5 anos** para facilitar a fixação. A recidiva acontece com qualquer técnica, por isso o seguimento vai até o fim do crescimento, junto com a discrepância e a hipoplasia do fêmur.
 
-!questoes central=pediatria-0343 relacionadas=pediatria-0210,pediatria-0459,pediatria-0310
+!questoes central=pediatria-0343 relacionadas=pediatria-0210,pediatria-0459,pediatria-0310 treino=pediatria-1482,pediatria-1483
 conceito: Defeito cartilaginoso medial do colo que cede com a carga: varo progressivo, encurtamento, fise vertical que cisalha e cabeça que migra para baixo; HILGENREINER-epifisário é o ângulo entre a linha de HILGENREINER e a fise da cabeça; opera-se acima de 60 graus ou com cervicodiafisário de 110 ou menos, buscando menos de 35 a 40 e mais de 120.
 como: O TEPOP 2024 perguntou a definição do ângulo de HILGENREINER-epifisário; o TARO 2012, a indicação com os dois ângulos; o ENARE R4 2023, a direção do deslocamento da epífise; a SBOT-SP, os sinais clínicos e a imagem.
 armadilha: Confundir o HILGENREINER-epifisário com o cervicodiafisário, ou fazer epifisiodese do trocanter como tratamento definitivo.
