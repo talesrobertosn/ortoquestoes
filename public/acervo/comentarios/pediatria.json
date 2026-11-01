@@ -24930,23 +24930,16 @@
  },
  "pediatria-1168": {
   "conceito": "A modificação da classificação de TORODE e ZIEG, feita pela mesma instituição 27 anos depois (SHORE e colaboradores), nasceu de uma observação com a tomografia: nem toda fratura **estável** do anel é igual.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 23) conta que o tipo III foi dividido em dois:\n- **IIIA**: só o anel **anterior** (ramos púbicos ou sínfise);\n- **IIIB**: anel **anterior e posterior**, mas estável.\n\nE a diferença importa: o **IIIB** se associa a **mais transfusão**, **internação mais longa**, **mais internações em UTI** e **mais lesões associadas** que o IIIA. Por isso, na criança com IIIB, as prioridades são o estado hemodinâmico, a perda de sangue e as lesões associadas, mais que a própria pelve, que em geral se trata sem cirurgia.\n\nNo exame, o anel é estável ao balanço e à compressão, mas no IIIB dói sobre o sacro e as sacroilíacas. Entrada, saída ou, mais vezes, a tomografia separam os dois.\n\n**Por que esta questão foi criada.** O TARO 2022 (`pediatria-0567`) perguntou quais tipos são instáveis e incluiu o IIIB; esta questão mostra a posição do livro: estável, mas com mais morbidade.",
-  "correta": "**A) IIIB, fratura estável dos anéis anterior e posterior.** É o tipo \"estável\" com mais transfusão, UTI e lesões associadas (Rockwood and Wilkins' Fractures in Children, cap. 23).",
+  "correta": "**A: IIIB.** Fratura estável dos anéis anterior e posterior (SHORE) (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "B": "**O IIIA, só anterior, é o estável de menor morbidade.**",
-   "C": "**O tipo II, da asa do ilíaco, quase sempre é tratado com sintomáticos.**",
-   "D": "**O tipo I, a avulsão, é a lesão de baixa energia do adolescente esportista.**"
+   "B": "**O IIIA** é a fratura simples do anel anterior.",
+   "C": "**O II** é a fratura da asa do ilíaco.",
+   "D": "**O I** é a avulsão."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seções Classification e Simple Ring Fractures",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
-  ],
-  "imagens": [
-   {
-    "arquivo": "pediatria/rwc10-23-7.jpeg",
-    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23, Fig. 23-7. Classificação de TORODE e ZIEG modificada: I avulsão; II asa do ilíaco; III-A anel anterior; III-B anéis anterior e posterior estáveis; IV anel instável.",
-    "largura": 1200,
-    "altura": 1705
-   }
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
@@ -24983,13 +24976,14 @@
  },
  "pediatria-1171": {
   "conceito": "A classificação de **BUCHOLZ** aplica a lógica de SALTER-HARRIS à **cartilagem trirradiada**, a fise do acetábulo, e serve para prever o crescimento.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 23) descreve os dois padrões que BUCHOLZ viu:\n- **SALTER-HARRIS I ou II**: força no ramo isquiático, no púbico ou no fêmur proximal cisalha os **braços superiores** da trirradiada (o II leva fragmento metafisário). **Prognóstico favorável**, com crescimento normal do acetábulo.\n- **SALTER-HARRIS V**: **esmagamento** da fise. **Prognóstico ruim**, com fechamento prematuro pela formação de uma **ponte óssea medial**.\n\nDONG acrescentou um tipo VI, com ponte formada **fora** da trirradiada, por hematoma de fratura do ramo superior.\n\nE a idade muda o peso da lesão: **abaixo de 10 anos**, a parada leva a um acetábulo **displásico**, cada vez mais incongruente até a maturidade; depois dos 10, sobra pouco crescimento. Por isso a ressecção da ponte é recomendada abaixo de 10 anos.\n\n**Por que esta questão foi criada.** O TARO 2017 (`pediatria-0613`) cobrou a idade de fusão da trirradiada; a classificação da lesão dela, que decide o prognóstico, ficou como projeção.",
-  "correta": "**D) o SALTER-HARRIS V, por esmagamento, com ponte óssea medial.** É o padrão de pior prognóstico na classificação de BUCHOLZ (Rockwood and Wilkins' Fractures in Children, cap. 23).",
+  "correta": "**D: V.** Por esmagamento, com ponte óssea medial (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "A": "**O SALTER-HARRIS I tem prognóstico favorável.**",
-   "B": "**O SALTER-HARRIS II, com fragmento metafisário, também vai bem.**",
-   "C": "**Depois dos 10 anos sobra pouco crescimento**, e o acetábulo muda pouco; o risco é maior nos menores."
+   "A": "**O I**, por cisalhamento, tem prognóstico melhor.",
+   "B": "**O II** não corresponde ao descrito no capítulo.",
+   "C": "**O III** não é um dos padrões de BUCHOLZ."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seções Acetabular Fracture Classification e Complications (triradiate)",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
   ],
@@ -24998,13 +24992,14 @@
  },
  "pediatria-1172": {
   "conceito": "A displasia que segue o fechamento prematuro da trirradiada tem uma forma própria, e o Rockwood and Wilkins' Fractures in Children (cap. 23) a distingue da displasia do desenvolvimento do quadril:\n- **lateralização** do quadril;\n- **retroversão** acetabular;\n- nos casos graves, subluxação ou luxação.\n\nAbaixo de 10 anos, essa incongruência aumenta até a maturidade, com subluxação progressiva.\n\nUma vez instalada, a displasia pós-traumática costuma exigir uma **osteotomia de redirecionamento completa** do acetábulo, para melhorar a cobertura da cabeça e corrigir a orientação. O PAVLIK, que trata a displasia do recém-nascido, não tem lugar aqui.\n\nA prevenção é a vigilância: toda criança com fratura do acetábulo e 2 anos ou mais de crescimento pela frente precisa ser acompanhada, e a ressonância é o melhor exame para ver o fechamento da trirradiada. Abaixo de 10 anos, a ponte pode ser ressecada.\n\n**Por que esta questão foi criada.** É a consequência da lesão de BUCHOLZ V e não caiu nas provas do acervo; projeção da seção de complicações do resumo.",
-  "correta": "**A) lateralização do quadril e retroversão acetabular, exigindo em geral osteotomia de redirecionamento completa.** É a displasia pós-traumática descrita no Rockwood and Wilkins' Fractures in Children (cap. 23).",
+  "correta": "**A: retroversão acetabular.** Com lateralização do quadril; em geral pede osteotomia de redirecionamento completa (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "B": "**A retroversão, não a anteversão, é a marca da displasia pós-traumática**, e o PAVLIK é tratamento do lactente.",
-   "C": "**O problema é o acetábulo**, que para de crescer de modo desigual.",
-   "D": "**Abaixo de 10 anos ela piora com o crescimento**, com subluxação progressiva."
+   "B": "**A anteversão aumentada** não é o padrão descrito.",
+   "C": "**A cabeça pequena** não é o achado.",
+   "D": "**A correção espontânea** não ocorre."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seção Management of Adverse Outcomes (Acetabular dysplasia)",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
   ],
@@ -25013,13 +25008,14 @@
  },
  "pediatria-1173": {
   "conceito": "A criança com fratura da pelve raramente morre pela pelve. O Rockwood and Wilkins' Fractures in Children (cap. 23) dá os números:\n- mortalidade de **2% a 12%** na maioria das séries;\n- o sangramento da **própria fratura** mata **menos de 1%** das crianças, contra 3,4% dos adultos;\n- quando há morte, ela vem das **lesões associadas**: o **traumatismo cranioencefálico** primeiro, e as lesões de **tórax e abdome** em segundo.\n\nPor que a criança sangra menos pela pelve? Os vasos dela, sem aterosclerose e mais contráteis, **contraem** mais depois do trauma; e a criança atropelada sofre sobretudo **compressão lateral**, que não abre o anel nem rompe as sacroilíacas.\n\nO traumatismo craniano aparece em 9% a quase 50% e é a comorbidade que mais pesa no resultado, sobretudo nas lesões por compressão lateral. Por isso o capítulo insiste: antes de culpar a pelve pelo choque, procurar outras fontes de sangramento, e tratar a criança com uma equipe de trauma.\n\n**Por que esta questão foi criada.** O TEPOP 2024 (`pediatria-0947`) cobrou o mecanismo e as lesões associadas; a causa de morte, que muda a prioridade no atendimento, ficou como projeção.",
-  "correta": "**B) o traumatismo cranioencefálico associado.** A criança com fratura da pelve morre sobretudo pelas lesões associadas, a cabeça primeiro (Rockwood and Wilkins' Fractures in Children, cap. 23).",
+  "correta": "**B: o trauma craniano.** O sangramento da própria fratura mata menos de 1% das crianças (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "A": "**O sangramento da própria fratura mata menos de 1%** das crianças.",
-   "C": "**O tromboembolismo é incomum** na criança, mesmo com trauma importante.",
-   "D": "**A lesão da uretra traz sequelas**, mas não é a causa de morte."
+   "A": "**A hemorragia pélvica** pesa mais no adulto.",
+   "C": "**A embolia** não é a principal.",
+   "D": "**A uretra** não mata."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seções Introduction e Associated Injuries",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
   ],
@@ -25028,13 +25024,14 @@
  },
  "pediatria-1174": {
   "conceito": "A sínfise púbica da criança é **normalmente mais larga e mais elástica** que a do adulto, porque as superfícies do púbis ali são cartilagem, e a espessura varia com a idade. Isso torna difícil dizer quanto alargamento é traumático.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 23) dá dois critérios:\n- **WATTS**: comparar radiografias **com e sem compressão lateral** da pelve; uma diferença de **mais de 1 cm** na largura indica separação;\n- para a decisão de tratar: diástase **igual ou acima de 2,5 cm** ou deformidade rotacional **acima de 15 graus** sugerem **instabilidade importante** e indicam **redução**.\n\nO tratamento: com **menos de 2 cm**, sintomático, como as outras fraturas estáveis do anel; diástases maiores, **fixador externo** ou **placa** (ou sutura) pela via de **PFANNENSTIEL**. Na criança, a lesão costuma passar pela **cartilagem** do púbis, e não pelos ligamentos, e consolida mais rápido que no adulto.\n\nA disjunção isolada da sínfise é rara: em geral vem com lesão posterior, e a imagem tem de procurar a sacroilíaca e a trirradiada.\n\n**Por que esta questão foi criada.** A sínfise não caiu nas questões do acervo, mas os números (1 cm na comparação, 2,5 cm e 15 graus para reduzir) são cobráveis.",
-  "correta": "**C) igual ou acima de 2,5 cm, ou deformidade rotacional acima de 15 graus.** É o limite que indica instabilidade e redução da sínfise (Rockwood and Wilkins' Fractures in Children, cap. 23).",
+  "correta": "**C: 2,5 cm.** Ou deformidade rotacional acima de 15 graus; a sínfise da criança é normalmente mais larga (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "A": "**A sínfise da criança é normalmente mais larga e elástica**; 5 mm não indicam instabilidade.",
-   "B": "**Mais de 1 cm entre as radiografias indica separação**, mas não obriga cirurgia.",
-   "D": "**A disjunção isolada também pode precisar de redução** quando passa dos limites."
+   "A": "**5 mm** pode ser normal na criança.",
+   "B": "**1 cm** não corresponde ao descrito no capítulo.",
+   "D": "**5 cm** deixaria passar diástases instáveis."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seção Simple Ring Fractures (Widening of the Symphysis Pubis)",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
   ],
@@ -25042,14 +25039,15 @@
   "conferido": false
  },
  "pediatria-1175": {
-  "conceito": "A fratura **em cavaleiro** (straddle), com os quatro ramos púbicos quebrados e o anel posterior íntegro, é o tipo **IVa** de TORODE e ZIEG. O Rockwood and Wilkins' Fractures in Children (cap. 23) dá as regras:\n- o fragmento flutuante **sobe**, puxado pelos **retos do abdome**, e não desce;\n- **bexiga e uretra** se lesam com frequência e precisam ser afastadas;\n- a **cinta pélvica é contraindicada**: a compressão pode levar o ilíaco para dentro;\n- a **tração esquelética é desnecessária**;\n- repouso, analgesia e carga progressiva; consolidação em **6 a 8 semanas**.\n\nComo o anel posterior costuma estar íntegro, o tratamento é o mesmo do IIIB. Cirurgia (parafusos canulados ou placa nos ramos superiores) é rara na criança e fica para o adolescente com desvio importante ou com lesão urinária associada.\n\n**Por que esta questão foi criada.** É a gêmea do TARO 2021 (`pediatria-0593`), que perguntou o músculo que puxa o fragmento; aqui, a conduta.",
-  "correta": "**D) a cinta pélvica é contraindicada e as lesões de bexiga e uretra devem ser afastadas.** São as regras da straddle no Rockwood and Wilkins' Fractures in Children (cap. 23).",
+  "conceito": "A fratura **em cavaleiro** (straddle), com os quatro ramos púbicos quebrados e o anel posterior íntegro, é o tipo **IVa** de TORODE e ZIEG. O Rockwood and Wilkins' Fractures in Children (cap. 23) dá as regras:\n- o fragmento flutuante **sobe**, puxado pelos **retos do abdome**, e não desce;\n- **bexiga e uretra** se lesam com frequência e precisam ser afastadas;\n- a **cinta pélvica é contraindicada**: a compressão pode levar o ilíaco para dentro;\n- a **tração esquelética é desnecessária**;\n- repouso, analgesia e carga progressiva; consolidação em **6 a 8 semanas**.\n\nComo o anel posterior costuma estar íntegro, o tratamento é o mesmo do IIIB. Cirurgia (parafusos canulados ou placa nos ramos superiores) é rara na criança e fica para o adolescente com desvio importante ou com lesão urinária associada.\n\n**Por que esta questão foi criada.** É a gêmea do TARO 2021 (`pediatria-0593`), que perguntou o músculo que puxa o fragmento; aqui, a direção do desvio, com a conduta explicada acima.",
+  "correta": "**D: para cima.** Puxado pelos retos do abdome; a cinta pélvica é contraindicada e bexiga e uretra devem ser investigadas (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "A": "**O fragmento sobe, pelos retos do abdome**, não desce pelos adutores.",
-   "B": "**A cinta é contraindicada**: empurra o ilíaco para dentro.",
-   "C": "**A tração esquelética é desnecessária** nessa fratura."
+   "A": "**Para baixo** seria a ação dos adutores, que não domina.",
+   "B": "**Para trás** não é o desvio descrito.",
+   "C": "**Lateralmente** não corresponde ao descrito no capítulo."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seção Bilateral Fractures of the Inferior and Superior Pubic Rami",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
   ],
@@ -25074,23 +25072,16 @@
  },
  "pediatria-1177": {
   "conceito": "As incidências de **entrada** e de **saída** olham o anel pélvico de cima e de baixo, e cada uma mostra um tipo de desvio. O Rockwood and Wilkins' Fractures in Children (cap. 23) as define (Fig. 23-3):\n\n| Incidência | Raio | O que mostra melhor |\n|---|---|---|\n| **entrada (inlet)** | **60 graus caudal** | desvio **posterior** da hemipelve, fraturas dos ramos, deformidade plástica da compressão lateral |\n| **saída (outlet)** | **45 graus cefálico** | desvio **superior** da hemipelve, desvio **vertical** do anel anterior |\n| JUDET (oblíquas) | rotação interna e externa | o acetábulo: paredes e colunas |\n\nA saída é também uma das melhores incidências para o sacro, junto com o AP e o perfil. As paredes e colunas do acetábulo ficam com as oblíquas de JUDET.\n\n**Por que esta questão foi criada.** A imagem da pelve não caiu nas questões do acervo; a troca entre entrada e saída é a armadilha clássica.",
-  "correta": "**B) o desvio superior da hemipelve ou o desvio vertical do anel anterior.** É o que a incidência de saída mostra melhor (Rockwood and Wilkins' Fractures in Children, cap. 23).",
+  "correta": "**B: superior da hemipelve.** Ou o desvio vertical do anel anterior; a de entrada mostra o desvio posterior (Rockwood and Wilkins' Fractures in Children, cap. 23, Fig. 23-3).",
   "incorretas": {
-   "A": "**O desvio posterior aparece melhor na incidência de entrada**, com o raio caudal.",
-   "C": "**A parede posterior aparece nas oblíquas de JUDET** (a obturatória).",
-   "D": "**A coluna anterior também é avaliada nas oblíquas de JUDET.**"
+   "A": "**O desvio posterior** aparece melhor na incidência de entrada.",
+   "C": "**A parede posterior** do acetábulo não é o que a incidência de saída mostra.",
+   "D": "**A coluna anterior** é avaliada no acetábulo, não pela incidência de saída."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seção Imaging and Other Diagnostic Studies e Fig. 23-3",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
-  ],
-  "imagens": [
-   {
-    "arquivo": "pediatria/rwc10-23-3.jpeg",
-    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23, Fig. 23-3. Incidências de entrada (A, C; raio 60 graus caudal) e de saída (B, D; raio 45 graus cefálico) do anel pélvico.",
-    "largura": 1200,
-    "altura": 983
-   }
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
@@ -25113,13 +25104,14 @@
  },
  "pediatria-1179": {
   "conceito": "A **sincondrose isquiopúbica** é a junção cartilaginosa entre o ísquio e o púbis, no ramo inferior. Ela fecha entre **4 e 7 anos**: a fusão bilateral completa existe em só 6% das crianças aos 4 anos e em 83% aos 12.\n\nEnquanto se funde, ela pode ficar **alargada e com hiperostose**, e o Rockwood and Wilkins' Fractures in Children (cap. 23) descreve o quadro típico: criança com cerca de **7 anos**, dor vaga na virilha ou na nádega, sensibilidade leve ou abaulamento na junção isquiopúbica, e radiografia com hiperostose. É a **osteocondrite isquiopúbica**, ou **doença de VAN NECK**, um processo **autolimitado** que resolve com a fusão.\n\nO capítulo faz a ressalva: na criança **maior**, com história sugestiva de **infecção** ou **tumor**, ou que faz atividade repetitiva como **corrida**, é preciso afastar osteomielite, tumor e fratura de estresse, com ressonância, cintilografia e exames de sangue conforme o caso. A criança do enunciado, de 7 anos, sem febre e sem esforço repetitivo, é o caso típico de VAN NECK.\n\nA sincondrose também pode imitar fratura numa radiografia de trauma (Fig. 23-10), muitas vezes bilateral e sem sintoma.\n\n**Por que esta questão foi criada.** É um diagnóstico diferencial de dor na virilha da criança que o capítulo destaca e que não caiu nas provas do acervo.",
-  "correta": "**D) osteocondrite isquiopúbica (doença de VAN NECK), autolimitada.** É o diagnóstico da criança de cerca de 7 anos com dor vaga e hiperostose isquiopúbica (Rockwood and Wilkins' Fractures in Children, cap. 23).",
+  "correta": "**D: doença de VAN NECK.** Osteocondrite da sincondrose isquiopúbica, autolimitada (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "A": "**A fratura de estresse é do corredor**, com dor que piora na atividade; a criança não tem esforço repetitivo.",
-   "B": "**O tumor é diagnóstico a afastar** quando a história sugere, não o mais provável num quadro típico de VAN NECK.",
-   "C": "**A avulsão isquiática é do adolescente**, com dor aguda num movimento brusco."
+   "A": "**A fratura por estresse** pede esforço repetitivo.",
+   "B": "**O osteossarcoma** é o diferencial que a variante imita.",
+   "C": "**A avulsão isquiática** é do adolescente."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seção Stress Fractures of the Pelvis (ischiopubic synchondrosis)",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
   ],
@@ -25128,13 +25120,14 @@
  },
  "pediatria-1180": {
   "conceito": "SILBER e FLYNN revisaram as radiografias de 133 crianças e adolescentes com fratura da pelve e os dividiram em dois grupos, não pela idade, mas pela **maturidade esquelética**:\n- **imaturos**: RISSER 0 e todas as fises abertas;\n- **maduros**: **cartilagem trirradiada fechada**.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 23) resume a conclusão:\n- no grupo **imaturo**, a fratura da pelve raramente precisou de cirurgia, e o foco do tratamento deve ser as **lesões associadas**;\n- no grupo **maduro**, as fraturas se classificam pelas classificações do **adulto** e se tratam pelos **princípios do adulto**.\n\nA mensagem do capítulo é que o padrão da lesão reflete a **maturidade**, não a idade cronológica. Em outra série, SILBER recomendou que toda criança com a trirradiada fechada, qualquer que seja a idade, seja tratada como adulto, com realinhamento anatômico e fixação estável.\n\n**Por que esta questão foi criada.** A trirradiada caiu nas provas pela idade de fusão (TARO 2017, `pediatria-0613`); o uso dela para decidir o tratamento ficou como projeção.",
-  "correta": "**A) a maturidade esquelética, definida pela cartilagem trirradiada aberta ou fechada.** É o fator que SILBER e FLYNN usam para orientar o padrão e o tratamento (Rockwood and Wilkins' Fractures in Children, cap. 23).",
+  "correta": "**A: a cartilagem trirradiada.** Aberta ou fechada, que define a maturidade esquelética (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "B": "**A idade cronológica não é o critério**; uma criança de 12 com trirradiada fechada se trata como adulto.",
-   "C": "**O peso não entra** na divisão de SILBER e FLYNN.",
-   "D": "**O mecanismo importa**, mas o padrão da lesão reflete a maturidade."
+   "B": "**A idade cronológica** não foi o critério.",
+   "C": "**O peso** não foi o critério.",
+   "D": "**O mecanismo** não foi o critério."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar), seção Classification (Silber e Flynn)",
    "Biblioteca OrtoQuestões, resumo Fraturas da pelve e do acetábulo na criança (rockwoodcriancas10-23-pelve-acetabulo)"
   ],
@@ -26525,13 +26518,14 @@
  },
  "pediatria-1255": {
   "conceito": "Cinto só abdominal, banco de trás, colisão frontal e equimose horizontal no abdome: é o retrato da lesão do cinto. Na criança, a faixa que deveria segurar a pelve sobe para o abdome; o tronco se dobra sobre ela, o eixo de rotação fica na frente da coluna e os elementos posteriores se abrem.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 22) dá dois números para lembrar:\n- a lesão da coluna é a **flexão-distração (CHANCE)**, de três colunas, em geral instável;\n- **quase 50%** das crianças com CHANCE têm **lesão abdominal**: aorta, vísceras e parede, comprimidas entre o cinto e a coluna.\n\nA equimose horizontal (sinal do cinto) pede imagem avançada do abdome; o sinal pode ser sutil, e a lesão perdida pode ser fatal. O cinto de três pontos ou de cinco pontos limita a flexão e protege.\n\n**Por que esta questão foi criada.** O TEOT 2025 cobrou a faceta vazia da CHANCE; o cenário clínico e o abdome vêm antes dela.",
-  "correta": "**B) lesão em flexão-distração (CHANCE); investigar lesão intra-abdominal, presente em quase metade dos casos.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**B: de CHANCE.** Flexão-distração; investigar lesão intra-abdominal, presente em quase metade (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "**A compressão isolada** vem de queda com o tronco fletido, não do cinto.",
-   "C": "**A explosão** vem de carga axial, e a tomografia só da coluna deixaria o abdome sem avaliação.",
-   "D": "**O cinto abdominal lesa a toracolombar**, não a cervical."
+   "A": "**A compressão** isolada não explica o mecanismo do cinto.",
+   "C": "**A explosão** vem de carga axial.",
+   "D": "**A luxação facetária** cervical não é a lesão do cinto abdominal."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Mechanisms e Injuries Associated, Figs. 22-2 a 22-4",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26540,36 +26534,30 @@
  },
  "pediatria-1256": {
   "conceito": "O sinal da faceta vazia é do **corte axial**. O Rockwood and Wilkins' Fractures in Children (cap. 22, Fig. 22-12) explica: num corte transversal normal aparecem as duas facetas da articulação; na flexão-distração **ligamentar**, a faceta inferior da vértebra de cima se afastou, e só a superior aparece.\n\nO capítulo acrescenta que o axial comum pode perder a CHANCE (o plano da lesão coincide com o corte), que as reconstruções **sagitais** são as mais reveladoras e que a ressonância confirma o complexo ligamentar posterior.\n\n**Por que esta questão foi criada.** É a pergunta do TEOT 2025, com o cenário do cinto e os distratores de compressão e explosão.",
-  "correta": "**D) axial e indica lesão ligamentar por flexão-distração.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22, Fig. 22-12).",
+  "correta": "**D: axial.** A faceta inferior da vértebra de cima se afastou, e só a superior aparece no corte (Rockwood and Wilkins' Fractures in Children, cap. 22, Fig. 22-12).",
   "incorretas": {
-   "A": "**Sagital e compressão** erra o plano e o mecanismo.",
-   "B": "**A explosão** não separa as facetas.",
-   "C": "**O plano está certo**, mas a compressão não esvazia a faceta."
+   "A": "**O sagital** mostra a abertura posterior, não a faceta vazia.",
+   "B": "**O coronal** não é o plano do sinal.",
+   "C": "**Oblíquo** não é plano de reconstrução usado para isso."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Classification (Flexion-Distraction) e Fig. 22-12",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
-  ],
-  "imagens": [
-   {
-    "arquivo": "pediatria/rwc10-22-12.jpeg",
-    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22, Fig. 22-12. Sinal da faceta vazia na tomografia axial: A, na CHANCE de partes moles só a faceta superior aparece, porque os elementos posteriores se separaram; B, facetas normais num nível sem lesão do mesmo paciente.",
-    "largura": 1200,
-    "altura": 625
-   }
   ],
   "geradoEm": "2026-10-31",
   "conferido": false
  },
  "pediatria-1257": {
   "conceito": "Um lactente de 8 meses que não anda não tem como cair com energia suficiente para luxar a coluna toracolombar. O Rockwood and Wilkins' Fractures in Children (cap. 22) é direto: como no esqueleto apendicular, o trauma da coluna em **lactentes e crianças pequenas**, sobretudo as que **ainda não andam**, deve levantar suspeita de **maus-tratos**. O capítulo mostra justamente um lactente de **8 meses** com fratura-luxação toracolombar e lesão medular incompleta por trauma não acidental, tratado com redução aberta e parafusos de um sistema cervical de 3,5 mm (Fig. 22-20).\n\nO capítulo de maus-tratos (cap. 7) orienta a investigar a história (quem presenciou, quando, demora no atendimento) e a compatibilidade entre o desenvolvimento da criança, o mecanismo relatado e a gravidade. Suspeitar não é acusar: é investigar e proteger. A fratura-luxação, por sua vez, é instável e cirúrgica.\n\n**Por que esta questão foi criada.** Maus-tratos é tema recorrente das provas, e a coluna é uma das apresentações menos lembradas.",
-  "correta": "**A) levantar a suspeita de maus-tratos, como em qualquer fratura do lactente que não anda.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22, Figs. 22-1 e 22-20).",
+  "correta": "**A: investigar maus-tratos.** Como no esqueleto apendicular, a lesão da coluna no lactente que não anda levanta suspeita (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "B": "**A coluna do lactente é elástica**, e a queda do trocador não explica uma fratura-luxação.",
-   "C": "**A fratura-luxação é instável e cirúrgica**, e a suspeita pede investigação.",
-   "D": "**A lesão obstétrica** aparece ao nascer, não aos 8 meses."
+   "B": "**A queda do trocador** não explica uma fratura-luxação.",
+   "C": "**Gesso sem investigação** ignora a suspeita.",
+   "D": "**Lesão do parto** não aparece aos 8 meses."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Mechanisms of Injury e Fracture-Dislocations, Figs. 22-1 e 22-20",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 7 (Pathologic Fractures and Nonaccidental Injuries)",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)",
@@ -26580,13 +26568,14 @@
  },
  "pediatria-1258": {
   "conceito": "A compressão é a fratura toracolombar mais comum e quase sempre vai com órtese. O Rockwood and Wilkins' Fractures in Children (cap. 22) define quando:\n- **sem cirurgia**: partes moles posteriores **íntegras** e **cifose menor que 30 graus**; TLSO em leve hiperextensão ou colete de JEWETT, consolidação em 4 a 6 semanas;\n- **considerar cirurgia**: perda da altura anterior **acima de 50%**, sobretudo com cifose aguda importante, ou cifose regional de 30 a 40 graus acima do esperado (várias compressões seguidas); compressão com déficit.\n\nMuro posterior fraturado não é compressão: é explosão. Lesão do complexo ligamentar posterior faz pensar em CHANCE.\n\n**Por que esta questão foi criada.** O TARO 2022 cobrou os limites de 30 graus e 50%.",
-  "correta": "**C) as partes moles posteriores estão íntegras e a cifose é menor que 30 graus; mais de 50% de perda de altura anterior leva a considerar cirurgia.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**C: 30 graus.** TLSO em leve hiperextensão ou JEWETT; mais de 50% de perda de altura anterior leva a considerar cirurgia (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "**Muro posterior fraturado é explosão**, outra fratura.",
-   "B": "**Mais de 50% de perda** leva a considerar cirurgia; a remodelação é modesta.",
-   "D": "**A lesão do complexo ligamentar posterior** sugere CHANCE, mais provável de precisar de cirurgia."
+   "A": "**45 graus** passa do limite.",
+   "B": "**60 graus** passa.",
+   "D": "**10 graus** é restritivo demais."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Compression Fractures e Authors' Preferred Treatment",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26595,13 +26584,14 @@
  },
  "pediatria-1259": {
   "conceito": "PANG e WILBERGER, em Pittsburgh, popularizaram o termo SCIWORA para crianças com lesão medular traumática sem alteração na radiografia nem na tomografia. O Rockwood and Wilkins' Fractures in Children (cap. 22) registra o que eles observaram:\n- alguns pacientes tiveram **déficit de início tardio**, e sintomas transitórios persistiam em muitos que depois ficaram com déficit definitivo;\n- as crianças **abaixo de 8 anos** tiveram lesões **mais graves**;\n- quase todos têm alguma lesão de partes moles na **ressonância**, que deve ser feita em todo paciente com déficit; por isso o termo perde relevância.\n\nOs mecanismos propostos são o estiramento da medula e a lesão vascular.\n\n**Por que esta questão foi criada.** TEPOP 2024, TARO 2014 e TARO 2006 cobraram a SCIWORA; esta reúne as características.",
-  "correta": "**A) foi popularizada por PANG e WILBERGER; o déficit pode aparecer tardiamente, as crianças abaixo de 8 anos têm lesões mais graves e a ressonância quase sempre mostra lesão de partes moles.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**A: abaixo de 8 anos.** E o déficit pode aparecer tardiamente (PANG e WILBERGER) (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "B": "**O déficit pode ser tardio** e, em muitos, os sintomas transitórios precederam um déficit definitivo.",
-   "C": "**A ressonância quase sempre mostra lesão**; o nome vem da radiografia normal.",
-   "D": "**As formas mais graves são abaixo de 8 anos.**"
+   "B": "**Acima de 12 anos** as lesões são menos graves.",
+   "C": "**10 a 14 anos** não é o grupo mais grave.",
+   "D": "**Acima de 15 anos** não corresponde ao descrito no capítulo."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Injuries Associated (SCIWORA)",
    "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 28 (Spinal Injuries), SCIWORA, Fig. 28.26",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
@@ -26626,13 +26616,14 @@
  },
  "pediatria-1261": {
   "conceito": "Explosão é duas colunas, e pela teoria de DENIS seria sempre instável. O Rockwood and Wilkins' Fractures in Children (cap. 22) mostra que, na prática, o que a torna instável é a **terceira coluna**: o complexo ligamentar posterior.\n\nPara o paciente **neurologicamente intacto** com o complexo ligamentar posterior **íntegro**, a preferência dos autores é **TLSO por 8 a 12 semanas**, com controle radiográfico e neurológico frequente, porque algumas colapsam (a Fig. 22-18 mostra a falta de adesão terminando em reconstrução anterior). WOOD, num estudo randomizado com pacientes assim, não encontrou diferença entre operar e não operar.\n\nA cirurgia fica para lesão de três colunas, déficit ou lesões que impedem a órtese; laminectomia isolada não estabiliza.\n\n**Por que esta questão foi criada.** É a decisão mais controversa do capítulo e cai como pegadinha da \"explosão sempre instável\".",
-  "correta": "**B) TLSO por 8 a 12 semanas, com seguimento radiográfico e neurológico próximo.** É a preferência dos autores do Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**B: órtese TLSO.** Por 8 a 12 semanas, com seguimento radiográfico e neurológico (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "**Duas colunas não bastam para instabilidade**; a combinada é mais mórbida e não é rotina na criança.",
-   "C": "**Repouso sem órtese** não é o tratamento; a órtese permite ficar em pé e andar.",
-   "D": "**Laminectomia de rotina** não estabiliza e não se indica sem déficit."
+   "A": "**A artrodese** não é necessária com o complexo posterior íntegro.",
+   "C": "**Repouso sem órtese** não protege a fratura.",
+   "D": "**A laminectomia** não tem indicação sem déficit."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Burst Fractures e Authors' Preferred Treatment, Fig. 22-18",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26641,13 +26632,14 @@
  },
  "pediatria-1262": {
   "conceito": "Na criança abaixo de 10 anos com **lesão medular completa**, a coluna ainda vai crescer sem o controle muscular, e o Rockwood and Wilkins' Fractures in Children (cap. 22) dá o número: a incidência de **escoliose paralítica** é **quase 100%**, e uma artrodese longa será necessária em algum momento (Fig. 22-14: menino de 5 anos com escoliose progressiva e obliquidade pélvica em 2 anos).\n\nPor isso, pode-se considerar incluir boa parte da coluna torácica e lombar na **artrodese inicial**, mas pesando o **crescimento torácico e pulmonar**: a fusão torácica precoce inibe o desenvolvimento pulmonar. Depois do estirão, o risco de deformidade tardia é baixo se a fratura estiver bem alinhada.\n\n**Por que esta questão foi criada.** É a sequela mais previsível do trauma da coluna da criança.",
-  "correta": "**C) escoliose paralítica, com incidência próxima de 100% abaixo de 10 anos, levando a considerar artrodese mais longa.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**C: 100%.** Por isso se considera artrodese mais longa (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "**A discrepância dos membros** não é a consequência destacada.",
-   "B": "**A fratura consolida**; o problema é a deformidade.",
-   "D": "**A lesão completa** raramente recupera por completo; um terço não recupera nada."
+   "A": "**10%** subestima muito.",
+   "B": "**30%** subestima.",
+   "D": "**50%** subestima."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Outcome Measures e Fracture-Dislocations, Fig. 22-14",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26656,13 +26648,14 @@
  },
  "pediatria-1263": {
   "conceito": "Estalo ao chutar a bola, dor desproporcional, sinais radiculares e uma ressonância \"normal\" ou com abaulamento: é a história da **fratura da placa terminal** no Rockwood and Wilkins' Fractures in Children (cap. 22, Fig. 22-22).\n\n- É uma lesão **fisária** (como SALTER-HARRIS I ou II), exclusiva da criança e do adolescente.\n- A flexão arranca um pedaço do canto posterior do corpo (o anel apofisário), que vai para o canal e estica as raízes.\n- Quase não aparece na radiografia e é lida na ressonância como abaulamento; a **tomografia sagital** confirma.\n- Observação raramente é tolerada, infiltração não ajuda, **fisioterapia é contraindicada**; o tratamento é **retirar o fragmento por laminectomia**, com TLSO por 4 a 6 semanas.\n\n**Por que esta questão foi criada.** O TARO 2018 cobrou a epidemiologia dessa fratura; esta mostra o diagnóstico e o tratamento.",
-  "correta": "**B) fratura da placa terminal (apófise do anel); confirmar na tomografia sagital e retirar o fragmento por laminectomia.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**B: fratura da placa terminal.** Lesão fisária da apófise do anel; a tomografia sagital confirma, e o fragmento sai por laminectomia (Rockwood and Wilkins' Fractures in Children, cap. 22, Fig. 22-22).",
   "incorretas": {
-   "A": "**Não é hérnia**: o que comprime é osso e cartilagem, e fisioterapia e infiltração não ajudam.",
-   "C": "**A espondilólise** não dá estalo agudo com fragmento no canal.",
-   "D": "**A dor desproporcional e radicular** não é contratura."
+   "A": "**A hérnia** é a leitura errada da ressonância nesses casos.",
+   "C": "**A espondilólise** não dá o estalo com dor radicular aguda.",
+   "D": "**A contratura** não explica os sinais radiculares."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção End Plate Fractures e Fig. 22-22",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26686,13 +26679,14 @@
  },
  "pediatria-1265": {
   "conceito": "A fratura-luxação é **instável por definição**, e o Rockwood and Wilkins' Fractures in Children (cap. 22) diz que ela **sempre** pede estabilização cirúrgica, com ou sem déficit. Com a medula íntegra, a artrodese instrumentada a protege; com lesão completa, facilita a reabilitação.\n\n- A cirurgia típica é **artrodese posterior instrumentada pelo menos dois níveis acima e dois abaixo**.\n- O ideal é operar **o mais cedo possível**, conforme as lesões associadas.\n- Um **déficit que piora** torna a cirurgia uma **emergência**.\n\nEsperar o fim do choque medular faz sentido em outras discussões, não com déficit progressivo e coluna instável.\n\n**Por que esta questão foi criada.** É a conduta mais segura do capítulo e um bom distrator para quem pensa em observar.",
-  "correta": "**D) estabilização cirúrgica como emergência, em geral artrodese posterior instrumentada pelo menos dois níveis acima e abaixo.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**D: como emergência.** Em geral artrodese posterior instrumentada pelo menos dois níveis acima e abaixo (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "**Órtese e observação** não seguram uma lesão instável com déficit piorando.",
-   "B": "**Tração por 6 semanas** não é tratamento da fratura-luxação.",
-   "C": "**Esperar 72 horas** com déficit piorando contraria a regra da emergência."
+   "A": "**Esperar o choque medular** atrasa a descompressão do déficit progressivo.",
+   "B": "**72 horas** é espera sem motivo.",
+   "C": "**A tração** não estabiliza a fratura-luxação."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Fracture-Dislocations e Authors' Preferred Treatment",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26701,13 +26695,14 @@
  },
  "pediatria-1266": {
   "conceito": "Três números do Rockwood and Wilkins' Fractures in Children (cap. 22) orientam a avaliação:\n- **85%** das crianças com fratura toracolombar são **neurologicamente intactas** (incompleta 5%, completa 10%);\n- **32%** têm **outra fratura vertebral**: estuda-se a coluna inteira, e toda fratura cervical pede imagem da coluna toda;\n- a radiografia tem **70%** de sensibilidade, contra **100%** da **tomografia** (ANTEVIL).\n\nO exame clínico sozinho tem 87% de sensibilidade e 75% de especificidade, insuficiente; por isso quem tem suspeita faz radiografia de rotina, e a tomografia esclarece.\n\n**Por que esta questão foi criada.** Junta os números de avaliação que as afirmativas costumam trocar.",
-  "correta": "**C) cerca de 85% são neurologicamente intactas; há outra fratura vertebral em cerca de 32%, por isso se estuda a coluna inteira; a tomografia é bem mais sensível que a radiografia.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**C: 32%.** Por isso se estuda a coluna inteira; 85% são neurologicamente intactas (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "**A maioria (85%) chega sem déficit.**",
-   "B": "**Outra fratura vertebral aparece em 32%**; radiografar só a região dolorosa perde lesões.",
-   "D": "**A radiografia tem 70% de sensibilidade**; a tomografia é que chega a 100%."
+   "A": "**5%** subestima.",
+   "B": "**10%** é a parcela com lesão completa.",
+   "D": "**60%** superestima."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seções Injuries Associated e Imaging",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26716,13 +26711,14 @@
  },
  "pediatria-1267": {
   "conceito": "Ginasta, dor crônica reproduzida pela hiperextensão em pé, localizada, com radiografia e ressonância normais: o Rockwood and Wilkins' Fractures in Children (cap. 22) aponta a **fratura da faceta** lombar ou sacral, uma causa provavelmente subestimada de lombalgia no atleta jovem.\n\n- Mecanismo: **hiperextensão repetitiva**, com ou sem torção; muitas vezes junto com **espondilólise**.\n- A radiografia quase nunca mostra e a **ressonância frequentemente perde**; a **tomografia** com 3D é o **padrão-ouro** (Fig. 22-24).\n- Se a hiperextensão não reproduz a dor, desconfiar do diagnóstico.\n- Infiltração confirma o gerador da dor, mas não resolve; o tratamento é a **retirada do fragmento**, por incisão de cerca de 16 mm, com alívio imediato.\n\n**Por que esta questão foi criada.** Completa as lesões do atleta jovem ao lado da placa terminal (TARO 2018).",
-  "correta": "**A) fratura da faceta lombar, diagnosticada pela tomografia e tratada com retirada do fragmento.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**A: da faceta lombar.** Diagnosticada pela tomografia e tratada com retirada do fragmento (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "B": "**A hérnia** não se reproduz pela hiperextensão localizada, e a dor do caso é posterior.",
-   "C": "**Exames normais não afastam** a fratura da faceta, que a ressonância costuma perder.",
-   "D": "**A placa terminal** é aguda, por flexão, e não se trata com fisioterapia."
+   "B": "**A placa terminal** dá dor aguda com sinais radiculares.",
+   "C": "**O processo transverso** não é o achado descrito.",
+   "D": "**A compressão** apareceria na radiografia."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Facet Fractures, Figs. 22-23 e 22-24",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26731,13 +26727,14 @@
  },
  "pediatria-1268": {
   "conceito": "O Rockwood and Wilkins' Fractures in Children (cap. 22) conta a história do corticoide na lesão medular: a **metilprednisolona** virou padrão no adulto apesar da falta de evidência de benefício; estudos recentes em adolescentes e crianças mostraram **mais complicações**; uma revisão sistemática com painel de especialistas concluiu que **não há evidência** para neuroproteção na lesão medular aguda da criança; e um **DELPHI** recente entre especialistas em coluna pediátrica recomendou o corticoide **só depois de cirurgia intradural**, não no trauma nem depois de procedimentos extradurais.\n\nO capítulo cervical (cap. 21) diz o mesmo de outro jeito: a dose alta é \"apenas uma opção\".\n\n**Por que esta questão foi criada.** A conduta mudou e as provas testam com \"padrão nas primeiras 8 horas\".",
-  "correta": "**C) não há evidência que apoie a neuroproteção na criança; um Delphi recente a recomenda só após cirurgia intradural, não no trauma.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**C: não tem evidência de benefício.** Um Delphi recente a recomenda só após cirurgia intradural, não no trauma (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "**Não há benefício comprovado na criança**, e as complicações aumentam.",
-   "B": "**A janela de 8 horas** vem de estudos antigos em adultos, não confirmados.",
-   "D": "**O capítulo não indica para a lesão incompleta** da transição."
+   "A": "**Padrão de cuidado** não é na criança.",
+   "B": "**A regra das 8 horas** veio de estudos em adultos que não se confirmaram.",
+   "D": "**Restringir à incompleta** não é critério descrito."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Steroid Treatment",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -26746,13 +26743,14 @@
  },
  "pediatria-1269": {
   "conceito": "A anatomia explica onde a coluna toracolombar quebra. Pelo Rockwood and Wilkins' Fractures in Children (cap. 22):\n- as vértebras **torácicas** são imbricadas, presas às costelas, com discos pequenos e **facetas no plano coronal**; as **lombares** têm discos grossos e **facetas no plano sagital** (Fig. 22-15);\n- a **transição toracolombar**, entre o segmento rígido e o móvel, é sede **frequente de lesão**;\n- a medula termina no **cone medular em L1 ou L2**; abaixo, a cauda equina, e a lesão permanente é menos provável;\n- o **longitudinal anterior raramente rompe na flexão**; a flexão lesa o **complexo ligamentar posterior**, que **cicatriza pouco** (melhor na criança que no adulto, mas sem garantia).\n\n**Por que esta questão foi criada.** A anatomia aplicada é a base das perguntas sobre local e estabilidade.",
-  "correta": "**B) a transição toracolombar é sede frequente de lesão por unir a coluna torácica rígida à lombar móvel; o cone medular termina em L1 ou L2, e abaixo disso a lesão permanente é menos provável.** Segue o Rockwood and Wilkins' Fractures in Children (cap. 22).",
+  "correta": "**B: L1.** A transição toracolombar une a coluna torácica rígida à lombar móvel e é sede frequente de lesão (Rockwood and Wilkins' Fractures in Children, cap. 22).",
   "incorretas": {
-   "A": "**Está invertido**: torácicas no plano coronal, lombares no sagital.",
-   "C": "**O longitudinal anterior raramente rompe na flexão.**",
-   "D": "**O complexo ligamentar posterior cicatriza mal**; os autores avisam para não contar com isso."
+   "A": "**T10** é alto demais.",
+   "C": "**L3** fica abaixo do nível descrito.",
+   "D": "**S1** é baixo demais."
   },
   "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs)",
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 22 (Thoracolumbar Spine Fractures; Kenneth D. Illingworth e David L. Skaggs), seção Pathoanatomy and Applied Anatomy, Fig. 22-15",
    "Biblioteca OrtoQuestões, resumo Fraturas da coluna toracolombar na criança (rockwoodcriancas10-22-coluna-toracolombar)"
   ],
@@ -29852,11 +29850,11 @@
  },
  "pediatria-1445": {
   "conceito": "A lesão de **MOREL-LAVALLÉE** é um **desenluvamento interno**: a pele e o tecido subcutâneo são arrancados de cima do músculo por um cisalhamento, sem abrir a pele, e o espaço que fica entre eles se enche de sangue e linfa. O Rockwood and Wilkins' Fractures in Children (cap. 23) a mostra como consequência de uma fratura instável da pelve (Fig. 23-2).\n\nEla aparece no exame que o capítulo pede para todo paciente com trauma pélvico, depois da avaliação inicial: **inspecionar toda a pelve e o períneo**, rolando a criança em bloco, à procura de feridas e equimoses. É ali, na face lateral do quadril ou da coxa, que a área mole e flutuante denuncia o descolamento.\n\nA importância prática é que o espaço descolado pode se infectar e complicar as incisões de uma cirurgia na pelve. O exame do períneo, no mesmo momento, procura lacerações de vagina e reto (2% a 18% das crianças com fratura da pelve, mais nas fraturas expostas) e sinais de lesão urinária.\n\n**Por que esta questão foi criada.** As provas cobraram a classificação e as lesões associadas da fratura da pelve (TEPOP 2024, `pediatria-0947`); a lesão de partes moles que o capítulo ilustra ficou como projeção.",
-  "correta": "**B: lesão de MOREL-LAVALLÉE, um desenluvamento interno em que pele e gordura se descolam do músculo.** É a lesão descrita no capítulo 23 do Rockwood and Wilkins' Fractures in Children (Fig. 23-2).",
+  "correta": "**B: MOREL-LAVALLÉE.** Desenluvamento interno: pele e gordura se descolam do músculo (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "A": "**Não é um hematoma simples**: é um descolamento da pele e da gordura de cima do músculo, um desenluvamento interno.",
-   "C": "**A síndrome compartimental é dentro da fáscia**, com dor intensa e tensão; a lesão descrita fica acima do músculo.",
-   "D": "**Hérnia muscular não é a lesão descrita** no trauma pélvico."
+   "A": "**O hematoma subfascial** fica sob a fáscia, não entre a gordura e o músculo.",
+   "C": "**A síndrome compartimental** não é flutuante.",
+   "D": "**A hérnia muscular** não é o descrito."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
@@ -29868,11 +29866,11 @@
  },
  "pediatria-1446": {
   "conceito": "As avulsões da pelve acontecem num ponto preciso do crescimento: quando o **centro secundário** já existe, mas ainda **não se fundiu** ao osso. É nessa fase que a contração forte de um músculo arranca a apófise inteira. O Rockwood and Wilkins' Fractures in Children (cap. 23) situa as avulsões sobretudo entre **11 e 17 anos**.\n\nAs idades dos quatro centros que mais importam:\n\n| Centro | Aparece | Funde | Músculo |\n|---|---|---|---|\n| crista ilíaca | 13 a 15 anos | 15 a 17 anos | oblíquo externo (apofisite do corredor) |\n| espinha ilíaca anterossuperior | cerca de 13 anos | cerca de 15 | sartório |\n| espinha ilíaca anteroinferior | cerca de 14 anos | cerca de 16 | reto femoral |\n| tuberosidade isquiática | 15 a 17 anos | 19 anos (até 25) | isquiotibiais e adutores |\n\nA crista ilíaca ossifica de **anterior para posterior** (de lateral para medial no AP), e é essa progressão que dá os estágios de RISSER.\n\nEssas idades também servem para não confundir: um centro normal pode parecer avulsão. O capítulo recomenda comparar com o outro lado ou usar o AP da bacia inteira. E uma avulsão vista tarde, com calo, pode imitar um tumor; a ressonância diferencia.\n\n**Por que esta questão foi criada.** O TEOT 2021 (`pediatria-0845`) cobrou a avulsão da espinha ilíaca anteroinferior pelo músculo e pelo esporte; as idades, que explicam por que a avulsão é do adolescente, ficaram como projeção.",
-  "correta": "**C: as avulsões acontecem sobretudo entre 11 e 17 anos, antes da fusão dos centros; a espinha ilíaca anteroinferior ossifica por volta de 14 anos e funde aos 16, e o ísquio aparece aos 15 a 17 e funde aos 19 ou até 25.** São as idades do capítulo 23 do Rockwood and Wilkins' Fractures in Children.",
+  "correta": "**C: 11 e 17 anos.** Quando o centro já existe, mas ainda não se fundiu (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "A": "**Sem centro secundário não há apófise para arrancar**; as avulsões são do adolescente.",
-   "B": "**O centro do ísquio aparece aos 15 a 17 anos** e funde aos 19, às vezes até 25.",
-   "D": "**A crista ilíaca ossifica de anterior para posterior**, e é isso que dá os estágios de RISSER."
+   "A": "**4 a 8 anos** é antes de os centros aparecerem.",
+   "B": "**8 a 10 anos** é cedo.",
+   "D": "**18 a 25 anos** é depois da fusão da maioria."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
@@ -29884,11 +29882,11 @@
  },
  "pediatria-1447": {
   "conceito": "A fratura do acetábulo é rara na criança: **2% a 17%** das fraturas da pelve. Mas pode deixar sequela grave, e o Rockwood and Wilkins' Fractures in Children (cap. 23) define dois objetivos: **articulação congruente e estável**, com a superfície articular anatômica, e **cartilagem trirradiada alinhada**, para o acetábulo continuar crescendo.\n\n**A imagem.** A tomografia é o melhor exame para o osso, mas a reconstrução 3D **subestima** os fragmentos cartilaginosos, sobretudo da parede posterior. Por isso o capítulo recomenda a **ressonância em toda fratura do acetábulo da criança**: ela mostra o tamanho real da parede e é o melhor exame para ver o fechamento da trirradiada.\n\n**Quando operar.** A indicação principal, qualquer que seja o padrão, é a articulação **instável** ou **incongruente**:\n- a instabilidade vem em geral de fratura das paredes posterior ou anterior;\n- a incongruência, de fragmentos ósseos ou partes moles dentro da articulação.\n\nSem desvio ou com desvio de até 2 mm, sobretudo fora do teto: repouso e marcha sem carga por 6 a 8 semanas na criança maior, ou gesso pelvipodálico na menor.\n\n**As vias.** Coluna ou parede posterior: KOCHER-LANGENBECK; anterior: ilioinguinal. As vias laterais estendidas devem ser evitadas sempre que possível, pelo risco de desvascularizar o ilíaco e de ossificação heterotópica.\n\n**Por que esta questão foi criada.** As provas cobraram a trirradiada pela idade de fusão (TARO 2017, `pediatria-0613`); a indicação cirúrgica da fratura do acetábulo, que define o tratamento, ficou como projeção.",
-  "correta": "**A: a ressonância é recomendada em toda fratura do acetábulo da criança, e a cirurgia está indicada se a articulação estiver instável ou incongruente.** São as regras do capítulo 23 do Rockwood and Wilkins' Fractures in Children.",
+  "correta": "**A: ressonância.** A cirurgia se indica se a articulação estiver instável ou incongruente (Rockwood and Wilkins' Fractures in Children, cap. 23).",
   "incorretas": {
-   "B": "**A reconstrução 3D subestima os fragmentos cartilaginosos**; é a ressonância que mostra o tamanho real.",
-   "C": "**A articulação instável ou incongruente vai para cirurgia** em qualquer idade.",
-   "D": "**As vias laterais estendidas devem ser evitadas**, pelo risco de desvascularizar o ilíaco e de ossificação heterotópica."
+   "B": "**A tomografia** não mede a cartilagem.",
+   "C": "**A radiografia** não corresponde ao descrito no capítulo.",
+   "D": "**A cintilografia** não mostra a parede."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23 (Pelvic and Acetabular Fractures; Julia S. Sanders e Wudbhav N. Sankar)",
