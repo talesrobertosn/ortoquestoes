@@ -190,6 +190,7 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 754 | Estilo dos simulados antigos: pé (cap. 31) e tornozelo (cap. 30) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 22 simulados reescritos no molde da banca (pediatria-1330 a 1344 e 1153 a 1167), conceito mantido; portão corrigido para não confundir DIAS-TACHDJIAN com citação de livro |
 | 755 | Estilo dos simulados antigos: clavícula e escápula (cap. 20) e fise proximal da tíbia (cap. 27) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 31 simulados reescritos no molde da banca, conceito mantido com o nome completo do livro |
 | 756 | Estilo dos simulados antigos: quadril (cap. 24) e colo do rádio e olécrano (cap. 11) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 30 simulados reescritos no molde da banca, conceito mantido |
+| (este PR) | Estilo dos simulados antigos: mão e carpo (cap. 8) e MONTEGGIA (cap. 12) do Rockwood and Wilkins' Fractures in Children | sem mudança em resumo | 29 simulados reescritos no molde da banca, conceito mantido |
 
 ## Próximo
 
