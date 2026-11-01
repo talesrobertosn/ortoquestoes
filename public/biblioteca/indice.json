@@ -2295,15 +2295,15 @@
   },
   {
    "id": "green8-neuropatias-compressao",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Neuropatias de compressão no membro superior",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
-   "edicao": "8ª edição (tradução)",
+   "edicao": "8ª edição (tradução), ampliado com a 7ª edição do Green's Operative Hand Surgery e o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 28 · Neuropatias de compressão",
    "resumo": "Fisiopatologia (barreira, edema, perineuro, mielina, axônio), duplo esmagamento e testes provocativos por sítio; túnel do carpo (técnicas de CHOW e AGEE, arco palmar superficial, amiloidose); mediano proximal (STRUTHERS, pronador, lacertus, arco do FSD, GANTZER) e interósseo anterior; canal de GUYON (zonas I, II e III, ramo cutâneo dorsal); túnel cubital (2ª compressão mais comum, flexão reduz a área em 55%, OSBORNE, STRUTHERS, McGOWAN); radial superficial (WARTENBERG) e profundo (supinador).",
    "acesso": "gratis",
-   "minutos": 9,
+   "minutos": 32,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2341,6 +2341,51 @@
      "radar": "confirmado"
     },
     {
+     "id": "tunel-do-carpo-diagnostico-em-numeros",
+     "titulo": "Túnel do carpo: diagnóstico em números",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tunel-do-carpo-infiltracao-cirurgia-e-revisao",
+     "titulo": "Túnel do carpo: infiltração, cirurgia e revisão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pronador-e-interosseo-anterior-os-testes",
+     "titulo": "Pronador e interósseo anterior: os testes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tunel-cubital-exame-eletrodiagnostico-e-cirurgia",
+     "titulo": "Túnel cubital: exame, eletrodiagnóstico e cirurgia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-sinais-da-paralisia-do-ulnar",
+     "titulo": "Os sinais da paralisia do ulnar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "canal-de-guyon-paredes-e-falhas",
+     "titulo": "Canal de GUYON: paredes e falhas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "nervo-radial-tunel-radial-e-wartenberg",
+     "titulo": "Nervo radial: túnel radial e WARTENBERG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "supraescapular-e-espaco-quadrangular",
+     "titulo": "Supraescapular e espaço quadrangular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "desfiladeiro-toracico",
+     "titulo": "Desfiladeiro torácico",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -2367,7 +2412,38 @@
     "mao-0093",
     "mao-0309",
     "mao-0614",
-    "mao-0498"
+    "mao-0498",
+    "mao-0060",
+    "mao-0593",
+    "mao-0043",
+    "mao-0155",
+    "mao-0087",
+    "mao-0086",
+    "mao-0089",
+    "mao-0178",
+    "mao-0338",
+    "mao-0012",
+    "mao-0308",
+    "ombro-cotovelo-0116",
+    "mao-0156",
+    "mao-0337",
+    "ombro-cotovelo-0007",
+    "mao-0407",
+    "mao-0433",
+    "mao-0335",
+    "mao-0583",
+    "mao-0565",
+    "mao-0428",
+    "ombro-cotovelo-0019",
+    "mao-0122",
+    "ombro-cotovelo-0117",
+    "ombro-cotovelo-0112",
+    "ombro-cotovelo-0429",
+    "mao-0034",
+    "mao-0010",
+    "mao-0248",
+    "mao-0081",
+    "mao-0425"
    ],
    "treino": [
     "mao-2580",
