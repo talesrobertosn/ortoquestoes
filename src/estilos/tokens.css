@@ -160,7 +160,8 @@
 
   /* A paleta-mãe do site: o mundo da página inicial (InicioJornada.css), igual nos dois temas (Tales, 01/11/2026:
      "as paletas precisam seguir a página inicial"). Painel escuro quente com tinta marfim e selo dourado; o botão de
-     cristal é a ação principal de começar; o resto é a página clara com verdete. Use estes nomes, não hex soltos. */
+     botão de começar (classe .cristal) é o dourado do Ranking desde 01/11/2026 ("o botão amarelo como está na página
+     do ranking faz mais sentido"); o resto é a página clara com verdete. Use estes nomes, não hex soltos. */
   --mundo-raio: 20px;
   --mundo-chao: #0b100e;
   --mundo-chao-2: #0d1311;
@@ -170,8 +171,13 @@
   --mundo-vidro: rgba(9, 13, 14, 0.74);
   --mundo-filete: rgba(255, 236, 200, 0.14);
   --mundo-painel: radial-gradient(40% 120% at 50% 0%, rgba(255, 170, 70, 0.1), transparent 70%), linear-gradient(180deg, var(--mundo-chao), var(--mundo-chao-2));
-  --cristal: linear-gradient(180deg, #8de6f2 0%, #3fb6d2 42%, #1a86a8 64%, #0f5f80 100%);
-  --cristal-sombra: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 8px 22px -8px rgba(40, 170, 220, 0.75);
+  --cristal: linear-gradient(180deg, #f6d488 0%, #f0c46a 55%, #e6b552 100%);
+  --cristal-tinta: #1b1208;
+  --cristal-icone: rgba(27, 18, 8, 0.12);
+  --cristal-sombra: inset 0 1px 0 rgba(255, 248, 225, 0.6), inset 0 -2px 0 rgba(122, 87, 16, 0.3), 0 8px 20px -10px rgba(201, 149, 47, 0.7);
+  --cristal-sombra-forte: inset 0 1px 0 rgba(255, 248, 225, 0.7), inset 0 -2px 0 rgba(122, 87, 16, 0.3), 0 12px 26px -10px rgba(201, 149, 47, 0.9);
+  /* O Menu: o mesmo painel da inicial, num verde-noite mais suave que o quase preto (Tales, 01/11/2026). */
+  --mundo-painel-suave: radial-gradient(60% 140% at 50% 0%, rgba(255, 200, 110, 0.1), transparent 70%), linear-gradient(180deg, #17423c, #10332e);
 
   color-scheme: light;
 }
