@@ -261,6 +261,10 @@
 :root[data-tema="escuro"] .pt-atalho--tempo { border-color: #6b5320; }
 :root[data-tema="escuro"] .pt-atalho--saber { border-color: #6e3f1f; }
 :root[data-tema="escuro"] .pt-atalho--atlas { border-color: #2c4a7e; }
+/* A página atual continua marcada no escuro (inclusive nos três atalhos com fogo). */
+:root[data-tema="escuro"] .pt-atalho[aria-current="page"] { border-color: var(--pt-verde); box-shadow: 0 0 0 1px var(--pt-verde), 0 6px 18px rgba(0, 0, 0, 0.28); }
+/* Os trechos achados na busca: ouro escuro com tinta clara, legível no papel escuro. */
+:root[data-tema="escuro"] .pt mark { background: rgba(240, 196, 106, 0.28); color: #fff4d6; }
 :root[data-tema="escuro"] .pt-novo { background: #1d3150; color: #a9c8ff; }
 :root[data-tema="escuro"] .pt-contador { background: #3d3216; color: #f0c46a; }
 :root[data-tema="escuro"] .pt-planos { background: linear-gradient(90deg, #221d12, #1d1910); border-color: #4a3e1f; }
