@@ -2461,15 +2461,15 @@
   },
   {
    "id": "green8-tendoes-flexores",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Lesões dos tendões flexores",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
-   "edicao": "8ª edição",
+   "edicao": "8ª edição, ampliado com o Green's Operative Hand Surgery, 7ª ed., e o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 6 · Lesão do tendão flexor",
    "resumo": "Nutrição dupla (perfusão e difusão sinovial) e face palmar avascular; vínculos curtos e longos; polias anulares e cruciformes, com A2 e A4 indispensáveis; LEDDY e PACKER (tipo I na palma, sem vínculos, urgente); sutura central e epitendínea, lacerações parciais e a regra de 1 cm na zona 1; aderências, excursão e cicatrização intrínseca; enxertos (palmar longo, plantar), PULVERTAFT, quadriga, BOYES e PANEVA-HOLEVICH.",
    "acesso": "gratis",
-   "minutos": 3,
+   "minutos": 29,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2495,6 +2495,81 @@
      "id": "a-reconstrucao",
      "titulo": "A reconstrução",
      "radar": "confirmado"
+    },
+    {
+     "id": "os-musculos-flexores-extrinsecos-e-o-tunel-do-ca",
+     "titulo": "Os músculos flexores extrínsecos e o túnel do carpo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-bainha-as-polias-e-a-irrigacao-em-detalhe",
+     "titulo": "A bainha, as polias e a irrigação em detalhe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-fisico-a-imagem-e-as-zonas",
+     "titulo": "O exame físico, a imagem e as zonas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-momento-do-reparo",
+     "titulo": "O momento do reparo",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-sutura-material-calibre-e-configuracao",
+     "titulo": "A sutura: material, calibre e configuração",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-lesoes-parciais",
+     "titulo": "As lesões parciais",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-zona-1-e-a-avulsao-do-profundo-em-detalhe",
+     "titulo": "A zona 1 e a avulsão do profundo em detalhe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-zona-2-as-zonas-proximais-e-o-polegar",
+     "titulo": "A zona 2, as zonas proximais e o polegar",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-biologia-da-cicatrizacao-e-a-reabilitacao",
+     "titulo": "A biologia da cicatrização e a reabilitação",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "as-complicacoes-e-a-tenolise",
+     "titulo": "As complicações e a tenólise",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-reconstrucao-escada-enxerto-em-um-tempo-e-doad",
+     "titulo": "A reconstrução: escada, enxerto em um tempo e doadores",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dois-tempos-polias-reconstruidas-e-o-polegar",
+     "titulo": "Dois tempos, polias reconstruídas e o polegar",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "quadriga-lumbrical-plus-e-as-complicacoes-do-enx",
+     "titulo": "Quadriga, lumbrical plus e as complicações do enxerto",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "flexores-na-crianca",
+     "titulo": "Flexores na criança",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -2515,7 +2590,11 @@
     "mao-0522",
     "mao-0231",
     "mao-0230",
-    "mao-0079"
+    "mao-0079",
+    "mao-0342",
+    "mao-0634",
+    "mao-0607",
+    "mao-0650"
    ],
    "treino": [
     "mao-2592",
