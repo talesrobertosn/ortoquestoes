@@ -244,6 +244,8 @@ async function atender(rota) {
   if (rpc && rpcs[rpc]) { const [s, c] = rpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc) return responder(200, null)
   // ASSINATURAS_CONTA='[{"id_externo":"pix:1","fim_periodo":"..."}]': as assinaturas vigentes lidas pela REST (Pix ou cartão).
+  // RK_CENARIO=excluido: a pessoa saiu do ranking (perfis_publicos.participa_ranking = false).
+  if (url.pathname === '/rest/v1/perfis_publicos' && RK === 'excluido' && pedido.method() === 'GET') return responder(200, { apelido: null, participa_ranking: false, emblemas: [], mostrar_servico: false })
   if (url.pathname === '/rest/v1/assinaturas' && process.env.ASSINATURAS_CONTA) return responder(200, JSON.parse(process.env.ASSINATURAS_CONTA))
   return responder(200, [])
 }

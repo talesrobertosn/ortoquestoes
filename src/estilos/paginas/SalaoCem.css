@@ -26,7 +26,7 @@
 /* A cena (16:9) com o título e a jornada por cima, do lado calmo da pintura. */
 .cem-heroi__cena {
   position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 24rem) minmax(0, 1fr); grid-template-rows: auto minmax(1rem, 1fr) auto;
-  gap: var(--e-4) var(--e-5); aspect-ratio: 16 / 9; min-height: 32rem; padding: clamp(1.25rem, 2.4vw, 2.25rem);
+  gap: var(--e-4) var(--e-5); aspect-ratio: 16 / 9; min-height: 0; padding: clamp(1.25rem, 2.4vw, 2.25rem);
 }
 .cem-heroi:focus { outline: none; }
 /* Véu escuro só do lado do texto (como na página inicial): a arte continua viva à direita. */
@@ -210,7 +210,7 @@
 .cem-escada__cabeca { display: grid; gap: 2px; }
 .cem-escada__cabeca h2, .cem-lista__cabeca h2, .cem-regras h2 { margin: 0; font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.02em; font-size: clamp(1.375rem, 2.6vw, 1.75rem); color: var(--texto); }
 .cem-escada__sub { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
-.cem-escada__palco { position: relative; border-radius: 20px; overflow: hidden; background: #191a1f; min-height: 22rem; aspect-ratio: 1200 / 472; }
+.cem-escada__palco { position: relative; border-radius: 20px; overflow: hidden; background: #191a1f; aspect-ratio: 1200 / 472; }
 /* A arte mostra a faixa de 8% a 78% da altura: o vitral, a escada e o tapete onde ficam os cartões. */
 .cem-escada__arte { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; image-rendering: pixelated; }
 .cem-escada__degraus {
@@ -354,8 +354,9 @@
 
 /* ---------- Telas médias e celular ---------- */
 @media (max-width: 64rem) {
-  .cem-heroi__cena { grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); min-height: 30rem; }
+  .cem-heroi__cena { grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); aspect-ratio: auto; min-height: 34rem; }
   .cem-heroi__podio { padding-left: clamp(1.25rem, 2.4vw, 2.25rem); }
+  .cem-escada__palco { aspect-ratio: auto; min-height: 24rem; }
 }
 @media (max-width: 40rem) {
   .cem { gap: var(--e-5); }
