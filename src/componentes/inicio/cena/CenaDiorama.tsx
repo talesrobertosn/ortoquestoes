@@ -6,6 +6,7 @@ import { CorujaPixel, type EstadoCoruja } from '../../../biblioteca/sala/CorujaP
 import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../../mascote/falasBichos'
 import { EVENTO_AMOSTRA } from '../AmostraRespondivel'
 import { urlCss } from '../../../config'
+import { cenarioDaHora, type Cenario } from './cenarios'
 import type { Periodo } from '../../../estado/aparencia'
 
 /**
@@ -82,15 +83,6 @@ function encaixarBalao(balao: HTMLElement | null, alturaBicho: number) {
 
 const reduzMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
 
-/** Os cantos do chão por onde o gato passeia (pixels da arte) e a pose em cada um; "repouso" dorme ou ronrona. */
-const PONTOS_GATO = [
-  { x: 219, y: 150, pose: 'repouso' },
-  { x: 176, y: 166, pose: 'sentado' },
-  { x: 256, y: 170, pose: 'observando' },
-  { x: 300, y: 165, pose: 'fogueira' },
-  { x: 322, y: 150, pose: 'sentado' },
-  { x: 236, y: 168, pose: 'repouso' },
-] as const
 const DURACAO_PASSO = 3600
 
 /**
@@ -99,13 +91,10 @@ const DURACAO_PASSO = 3600
  * cartão, mascote ou balão de fala por cima ou por baixo): a placa de madeira, o alto da barraca, o lampião, o arco de
  * pedra ou os caixotes. Confere de novo quando a tela muda e de tempos em tempos (o balão do esqueleto vem e vai).
  */
-// Sempre pousada em algo firme, no chão do acampamento (Tales, 01/11/2026: no alto ela parecia flutuar): a pilha de
-// livros, o caixote ao lado do lampião e a grama dos dois lados da fogueira.
-const POLEIROS = [{ x: 318, y: 137 }, { x: 212, y: 156 }, { x: 346, y: 170 }, { x: 166, y: 176 }, { x: 282, y: 184 }]
 const CORUJA = { w: 33, h: 24 }
 const ROTINA_CORUJA: EstadoCoruja[] = ['parada', 'olhando', 'parada', 'lendo', 'lendo', 'parada', 'acenando']
 const OUTROS = '.hd-mascote, .mascote__balao, .hd-balao:not(.hd-balao--coruja), .hd-gato'
-function CorujaDoAcampamento() {
+function CorujaDoAcampamento({ poleiros: POLEIROS }: { poleiros: Cenario['coruja'] }) {
   const [passo, definirPasso] = useState(0)
   const [acenou, definirAcenou] = useState(0)
   const [poleiro, definirPoleiro] = useState<number | null>(0)
@@ -162,6 +151,9 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   /** Muda de valor para disparar a comemoração curta da meta cumprida (esqueleto pula e o gato comemora). */
   festa?: number
 }) {
+  // O cenário desta hora (cenarios.ts): decide uma vez ao abrir a página, para nada trocar de lugar no meio da visita.
+  const [cenario] = useState(() => cenarioDaHora())
+  const PONTOS_GATO = cenario.gato
   const repouso: IdLinhaGato = descanso ? 'ronronando' : 'dormindo'
   const poseDoPonto = (i: number): IdLinhaGato => (PONTOS_GATO[i].pose === 'repouso' ? repouso : PONTOS_GATO[i].pose)
   const [gato, definirGato] = useState<IdLinhaGato>(repouso)
@@ -361,15 +353,17 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
 
   const particulas = useMemo(() => Array.from({ length: 16 }, (_, i) => ({ x: (i * 37 + 11) % 100, y: (i * 53 + 7) % 70 + 5, t: 6 + (i % 5) * 1.6, d: -((i * 1.7) % 8) })), [])
   const brasas = useMemo(() => Array.from({ length: 9 }, (_, i) => ({ dx: ((i * 29) % 13) - 6, t: 1.8 + (i % 4) * 0.5, d: -((i * 0.7) % 3) })), [])
-  const imagem = (larg: number) => recurso(`pixel/inicio/cena-${periodo}${larg === 960 ? '-960' : ''}.webp`)
+  const imagem = (larg: number) => recurso(`pixel/inicio/${cenario.arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
 
   return (
     <div className="hd-cena" aria-hidden="true">
-      <div ref={palco} className={`hd-palco hd-palco--${periodo}`}>
+      <div ref={palco} className={`hd-palco hd-palco--${periodo} hd-palco--${cenario.id}`}>
         <img className="hd-palco__fundo" src={imagem(1440)} srcSet={`${imagem(960)} 960w, ${imagem(1440)} 1440w`} sizes="(max-width: 60rem) 170vw, 100vw"
           width={1440} height={600} alt="" decoding="async" fetchPriority="high" />
         <span className="hd-luz-fogo" style={{ left: `${(240 / 480) * 100}%`, top: `${(140 / 200) * 100}%`, '--forca': linhaFogo === 0 ? 0.2 : 1 } as CSSProperties} />
         <span className={`hd-fogo hd-fogo--${linhaFogo}`} style={{ ...lugar(220, 104, 40, 48), '--linha': linhaFogo } as CSSProperties} />
+        {/* O easter egg: a espada fincada na fogueira (scripts/sprites/espada_fogueira.py), com a chama dos dois lados. */}
+        {cenario.espada && <span className={`hd-espada${linhaFogo === 0 ? ' hd-espada--apagada' : ''}`} style={{ ...lugar(234, 109, 12, 40), '--sprite-espada': urlCss('pixel/inicio/espada.png') } as CSSProperties} />}
         {linhaFogo > 0 && <span className="hd-brasas" style={lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
         {/* O mascote, em pé ao lado da fogueira: um comportamento diferente a cada visita (componentes/mascote). */}
         {descanso
@@ -394,8 +388,8 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>{falaGato}</span>}
         {gato === 'tala' && !andando && <span ref={balaoGato} className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
-        <CorujaDoAcampamento />
-        <span className="hd-particulas">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
+        <CorujaDoAcampamento key={cenario.id} poleiros={cenario.coruja} />
+        <span className={`hd-particulas hd-particulas--${cenario.particulas}`}>{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>
     </div>
   )
