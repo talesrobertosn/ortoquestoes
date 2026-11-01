@@ -199,7 +199,7 @@
 @keyframes cem-fagulha { from { opacity: 1; transform: translate(0, 0); } to { opacity: 0; transform: translate(var(--dx), -22vw); } }
 
 /* ---------- Barra branca: abas, período, placar e liga (como a barra de atalhos da página inicial) ---------- */
-.cem-barra { display: grid; gap: var(--e-3); padding: var(--e-3); border-radius: 20px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda); }
+.cem-barra { display: grid; gap: var(--e-3); padding: var(--e-3); border-radius: var(--raio-cartao); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-folha); }
 .cem-barra .rk-secoes { margin: 0; }
 .cem-barra__linha { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3) var(--e-6); padding: 0 var(--e-2) var(--e-1); }
 .cem-placar { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-6); margin: 0; flex: 1 1 auto; }
@@ -207,13 +207,11 @@
 .cem-placar dt { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--texto-2); white-space: nowrap; }
 .cem-placar dd { margin: 0; font-weight: 800; font-size: 1.125rem; line-height: 1.25; color: var(--texto); white-space: nowrap; }
 .cem-placar__nome { overflow: hidden; text-overflow: ellipsis; max-width: 12rem; }
-.cem-periodo { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--borda); }
-.cem-periodo__opcao { min-height: 40px; padding: 0 var(--e-4); border: 0; border-radius: 999px; background: transparent; cursor: pointer; font: inherit; font-weight: 700; color: var(--texto-2); }
-.cem-periodo__opcao[aria-checked="true"] { background: var(--verdete); color: #fff; }
+/* O período é o .seletor comum do atlas (base.css). */
 .cem-periodo__opcao:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
 .cem-liga { display: inline-flex; align-items: center; gap: var(--e-2); min-height: 44px; font-weight: 700; color: var(--verdete); text-decoration: none; }
 .cem-liga:hover { text-decoration: underline; }
-.cem-aviso { display: flex; gap: var(--e-2); align-items: center; margin: 0; padding: var(--e-3) var(--e-4); border-radius: 12px; background: var(--ouro-veu); color: var(--texto); }
+.cem-aviso { display: flex; gap: var(--e-2); align-items: center; margin: 0; padding: var(--e-3) var(--e-4); border-radius: var(--raio-controle); background: var(--ouro-veu); color: var(--texto); }
 .cem-carregando { min-height: 24rem; }
 
 /* ---------- Escadaria da Ascensão ---------- */
@@ -254,7 +252,7 @@
 /* ---------- Classificação dos Cem ---------- */
 .cem-lista {
   display: grid; gap: var(--e-3); padding: var(--e-5) var(--e-5) var(--e-4); border-radius: var(--raio-cartao, 16px);
-  background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda); scroll-margin-top: calc(var(--altura-cabecalho, 64px) + 16px);
+  background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-folha); scroll-margin-top: calc(var(--altura-cabecalho, 64px) + 16px);
 }
 .cem-lista__cabeca { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--e-3); }
 .cem-lista__faixa { margin: 2px 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
@@ -268,20 +266,21 @@
 .cem-legenda__chama { image-rendering: pixelated; object-fit: cover; object-position: 0 0; width: 16px; height: 16px; }
 
 .cem-linhas { list-style: none; margin: 0; padding: 0; }
-.cem-linhas { display: grid; gap: 6px; padding: var(--e-2); border-radius: 14px; background: var(--superficie-2); }
-/* Cada pessoa num cartão branco suave (01/11/2026): fica claro onde termina uma e começa a outra, sem linhas. */
+.cem-linhas { display: grid; }
+/* Atlas unificado (01/11/2026): a lista é uma página plana, uma pessoa por linha, separadas por traço fino (sem
+   cartão por linha); a sua linha leva o véu e o filete verdete da seleção de Treinar. */
 .cem-linha {
   display: grid; grid-template-columns: 2.75rem 3.25rem 2rem minmax(0, 1fr) minmax(6rem, 11rem); align-items: center; gap: var(--e-3);
-  min-height: 52px; padding: 6px var(--e-3); border-radius: 10px; background: var(--superficie);
-  box-shadow: 0 1px 2px rgba(18, 24, 26, 0.06), 0 0 0 1px rgba(18, 24, 26, 0.04);
+  min-height: 52px; padding: 6px var(--e-3); border-top: var(--borda); background: transparent;
   scroll-margin: 40vh 0;
 }
+.cem-marco + .cem-linha { border-top: 0; }
 /* No Torneio não há movimento: quatro colunas (posição, iniciais, nome, andar). */
 .cem-linha--torneio { grid-template-columns: 2.75rem 2rem minmax(0, 1fr) minmax(6rem, 11rem); }
 .cem-linha__andar { font-size: 0.75rem; font-weight: 700; color: var(--texto-2); }
-.cem-linha:hover { box-shadow: 0 1px 2px rgba(18, 24, 26, 0.08), 0 0 0 1px var(--verdete-veu); }
+.cem-linha:hover { background: var(--superficie-2); }
 .cem-linha__pos { font-family: var(--fonte-pixel); font-size: 1.5rem; line-height: 1; text-align: right; color: var(--texto); }
-.cem-linha--dez .cem-linha__pos { color: var(--ouro-texto, #7a5710); }
+.cem-linha--dez .cem-linha__pos { color: var(--texto); }
 .cem-linha__quem { display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--e-3); min-width: 0; }
 .cem-linha__nome { font-weight: 700; line-height: 1.3; overflow-wrap: anywhere; color: var(--texto); }
 .cem-linha__selos { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-1) var(--e-2); min-height: 0; }
@@ -292,19 +291,19 @@
 .cem-linha__placar b { grid-column: 1 / -1; font-size: 1.125rem; font-weight: 800; color: var(--texto); }
 .cem-linha__barra { grid-column: 1 / -1; height: 4px; margin-top: 4px; border-radius: 2px; background: var(--superficie-2); overflow: hidden; }
 .cem-linha__barra span { display: block; height: 100%; background: var(--verdete); opacity: 0.55; transform-origin: right; border-radius: 2px; }
-/* A sua linha: véu verde, filete dourado e o número em destaque. */
-.cem-linha--voce { background: var(--cem-veu-eu); box-shadow: inset 4px 0 0 var(--cem-ouro), 0 0 0 1px rgba(20, 101, 94, 0.25); }
-.cem-linha--voce:hover { background: var(--cem-veu-eu); }
+/* A sua linha: véu verdete, filete verdete e o número em destaque. */
+.cem-linha--voce { background: var(--verdete-veu); box-shadow: inset 3px 0 0 var(--verdete); }
+.cem-linha--voce:hover { background: var(--verdete-veu); }
 .cem-linha--voce .cem-linha__pos { color: var(--verdete); }
 .cem-linha--voce .cem-linha__barra span { opacity: 1; }
 .cem-linha:focus { outline: 3px solid var(--foco); outline-offset: 2px; }
 .cem-escolher { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8125rem; font-weight: 700; color: var(--verdete); }
 .cem-mais { justify-self: center; min-height: 44px; }
 /* Marcos entre as faixas: uma régua fina com o nome do degrau, sem caixa. */
-.cem-marco { display: flex; align-items: center; gap: var(--e-3); padding: var(--e-4) var(--e-3) var(--e-1); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ouro-texto, #7a5710); }
-.cem-marco::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--cem-ouro), transparent); opacity: 0.6; }
+.cem-marco { display: flex; align-items: center; gap: var(--e-3); padding: var(--e-4) var(--e-3) var(--e-2); font-size: var(--meta); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
+.cem-marco::after { content: ""; flex: 1; height: 1px; background: var(--traco); }
 .cem-linhas > .cem-marco:first-child { padding-top: var(--e-1); }
-.cem-marco { padding: var(--e-3) var(--e-2) 0; }
+.cem-marco { padding: var(--e-4) var(--e-3) var(--e-2); }
 .cem-lista__intervalo { margin: 0; text-align: center; color: var(--texto-2); letter-spacing: 0.3em; }
 
 /* Movimento: seta e número, "=", "novo" e a chama. A cor nunca é a única pista. */

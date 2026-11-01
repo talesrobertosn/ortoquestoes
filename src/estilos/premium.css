@@ -252,12 +252,6 @@
 .acesso__confere--nao { color: var(--erro); }
 .acesso__form .campo--checkbox { display: flex; align-items: flex-start; gap: 0.6rem; }
 .acesso__form .campo--checkbox input { margin-top: 0.3rem; }
-.botao.acesso__enviar { width: 100%; min-height: 52px; font-size: 1.04rem; border-radius: 12px; margin-top: 0.35rem; gap: 0.5rem;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--verdete) 88%, #fff), var(--verdete) 55%, color-mix(in srgb, var(--verdete) 80%, #000));
-  box-shadow: 0 8px 20px color-mix(in srgb, var(--verdete) 28%, transparent); transition: transform 0.12s, box-shadow 0.15s, filter 0.15s; }
-.botao.acesso__enviar:hover:not(:disabled) { transform: translateY(-1px); filter: brightness(1.05); box-shadow: 0 12px 26px color-mix(in srgb, var(--verdete) 34%, transparent); }
-.botao.acesso__enviar svg { transition: transform 0.15s; }
-.botao.acesso__enviar:hover svg { transform: translateX(3px); }
 /* Vitrine: provas em selos, uma questão de exemplo e emblemas em pixel art. */
 .acesso__provas { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .acesso__provas li { padding: 0.25rem 0.6rem; border-radius: 999px; background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); font-size: 0.74rem; font-weight: 750; letter-spacing: 0.04em; }
