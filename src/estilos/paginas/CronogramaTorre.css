@@ -219,3 +219,10 @@
 .cr.cr--torre .cp-indo__nota, .cr.cr--torre .cp-col > div > .cp-bloco > p:not(.cp-rotulo) { color: rgba(255, 246, 230, 0.82); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
 .cr.cr--torre .cr-rodape__link { color: #ffd98e; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
 .cr.cr--torre > :is(p, div):not([class*="cp-"]):not([class*="cc"]) { color: rgba(255, 246, 230, 0.85); }
+
+/* No computador o título cabe no vidro sem quebrar número e palavra em linhas soltas (1024 px: "Faltam / 71 / dias"). */
+@media (min-width: 64rem) {
+  .cr .cp-onde--torre h1 { font-size: clamp(2.2rem, 3.3vw, 3.6rem); }
+  .cr .cp-onde--torre h1 em { white-space: nowrap; }
+}
+@media (min-width: 64rem) and (max-width: 79.99rem) { .cp-onde--torre .cp-onde__vidro { width: min(34rem, 50%); } }

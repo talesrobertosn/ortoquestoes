@@ -193,3 +193,8 @@ Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoque
     sol lento e as caixas projetando sombra nas pedras (animações desligadas com "menos animação"). As caixas de texto
     continuam brancas no tema claro (e escuras no escuro), como na página inicial; só os títulos que ficam direto na
     calçada ganharam tinta clara com sombra. Tudo dentro de `.cr--torre`.
+56. [x] Easter egg (Tales, 31/10/2026): de vez em quando (4 em 10 visitas) a coruja ou o gato aparecem e sentam na
+    borda de cima de um botão ("Ver o mês inteiro", "Semana difícil", "Continuar", um bloco recolhido ou o link do
+    rodapé), só onde não cobrem texto nem controle; um toque e falam (as mesmas falas do Salão dos Cem). Código:
+    `src/componentes/cronograma/VisitaCronograma.tsx`. Para conferir: `#/cronograma?visita=gato` (ou `coruja`,
+    `nenhuma`).

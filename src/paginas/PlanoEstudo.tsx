@@ -25,6 +25,7 @@ import { corDaArea } from '../dados/coresAreas'
 import { CalendarioCronograma } from './CronogramaCalendario'
 import { ConviteFicticio, FaixaFicticio, type MotivoConvite } from './CronogramaFicticio'
 import { CenaTorre, CHAO_DA_PRACA } from '../componentes/cronograma/CenaTorre'
+import { VisitaCronograma } from '../componentes/cronograma/VisitaCronograma'
 import { vistaDoCronograma } from '../dados/vistaCronograma'
 import { CONTEXTO_VAZIO, montarSessao } from '../dados/acervo'
 import '../estilos/paginas/CronogramaPainel.css'
@@ -436,6 +437,7 @@ export function PlanoEstudo() {
           aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} hub={hub} />
         {convite && <ConviteFicticio motivo={convite} nome={nome} area={area ? { slug: area.slug, nome: area.nome } : null}
           aoTreinar={(slug) => { definirConvite(null); void treinarGratis(slug) }} aoFechar={() => definirConvite(null)} />}
+        <VisitaCronograma />
       </div>
     )
   }
@@ -454,6 +456,8 @@ export function PlanoEstudo() {
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
       <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+      {/* A coruja ou o gato, de vez em quando, sentados num botão (easter egg). */}
+      <VisitaCronograma />
     </div>
   )
 }
