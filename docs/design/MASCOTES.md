@@ -133,6 +133,10 @@ As roupas são camadas por cima do sprite base (ou linhas próprias quando mudam
 Cada uma tem um gatilho: data, conquista, escolha da pessoa ou raridade.
 
 ### 4.1 Calendário do ano (automático, como o Halloween)
+
+> **Em espera (Tales, 01/11/2026):** as roupas por data ainda não entram. Ele vai pedir em breve as **roupas de
+> Natal, com foco especial**; até lá, não pinte nem ligue roupas de data.
+
 | Quando | Esqueleto | Gato | Coruja |
 |---|---|---|---|
 | **Ano-novo** (31/12–2/1) | Roupa branca, taça de suco de uva, chapéu de festa | Laço dourado, assustado com os fogos | Óculos de festa, confete preso nas penas |
@@ -405,4 +409,10 @@ dos conceitos. As do gato e do esqueleto são humor e não podem soar como bronc
 ---
 
 ## Andamento
-- 01/11/2026: plano escrito; ordem decidida (fatia vertical, luz, diretor de cena, repintura).
+- 01/11/2026: plano escrito; ordem decidida (fatia vertical, luz, diretor de cena, repintura). Roupas por data em
+  espera até o pedido do Natal.
+- 01/11/2026: **luz nos bichos (caminho 2, primeira versão)**. `scripts/sprites/luz_bichos.py` gera quatro mapas por
+  folha (luz quente e sombra fria, da esquerda e da direita, em faixas). No site, `componentes/mascote/luz.ts` e
+  `Luz.css`: as cenas declaram as luzes (fogueira na cor da chama, chamas da vila, sol ou lua da janela) e cada bicho
+  acende do lado da luz mais forte, esfria do outro e ganha a sombra no chão para longe dela. Ligado na página inicial
+  e nas cenas da vila (Revisão, Caderno, Favoritas). Sem WebGL: duas camadas que herdam o quadro do sprite.

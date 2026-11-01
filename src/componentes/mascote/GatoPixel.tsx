@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react'
 import { urlCss } from '../../config'
 import { folhaGato, type IdLinhaGato } from './sprites'
+import { mapasDeLuz } from './luz'
 import './Mascote.css'
 
 /**
@@ -11,7 +12,7 @@ export function GatoPixel({ estado, className = '', style }: { estado: IdLinhaGa
   const folha = folhaGato(estado)
   return (
     <span className={`gato-pixel gato-pixel--${estado} ${className}`} aria-hidden="true" style={{
-      ...style, '--sprite': urlCss(folha.src.slice(1)), '--linha': folha.linha, '--linhas': folha.linhas,
+      ...style, '--sprite': urlCss(folha.src.slice(1)), '--linha': folha.linha, '--linhas': folha.linhas, ...mapasDeLuz(folha.src),
     } as CSSProperties} />
   )
 }
