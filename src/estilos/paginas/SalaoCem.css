@@ -39,7 +39,8 @@
 /* O mundo guarda a proporção da arte (16:9) e cobre o herói, puxado para a direita (onde está o pódio): os cavaleiros
    e os estandartes, em % do mundo, ficam sempre em cima dos pedestais pintados. */
 .cem-heroi__mundo { position: absolute; width: max(100cqw, 177.78cqh); aspect-ratio: 16 / 9; left: calc((100cqw - max(100cqw, 177.78cqh)) * 0.7); top: calc((100cqh - max(56.25cqw, 100cqh)) * 0.5); }
-.cem-heroi__camada { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; user-select: none; }
+.cem-heroi__camada { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; user-select: none; pointer-events: none; }
+.cem-heroi__poeira, .cem-heroi__festa, .cem-cavaleiro, .cem-estandarte, .cem-heroi__tocha { pointer-events: none; }
 .cem-heroi__luz { mix-blend-mode: screen; pointer-events: none; animation: cem-luz 7s ease-in-out infinite; }
 @keyframes cem-luz { 50% { opacity: 0.82; } }
 .cem-heroi__cabeca { grid-column: 1 / -1; display: grid; gap: 0.6rem; align-content: start; justify-items: start; max-width: 38rem; }
@@ -377,9 +378,11 @@
   .cem-heroi__cena::before { display: none; }
   .cem-heroi__palco { position: relative; inset: auto; z-index: 0; grid-row: 1; grid-column: 1; aspect-ratio: 280 / 270; container-type: inline-size; }
   .cem-heroi__mundo { width: 171.43cqw; left: -70cqw; top: 0; }
-  .cem-heroi__palco::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8, 10, 14, 0.75) 0%, rgba(8, 10, 14, 0.2) 34%, transparent 50%, transparent 80%, #0c0f12 100%); }
+  /* O balão da coruja (pousada no alto) desce para baixo do título, que fica por cima da cena no celular. */
+  .cem-heroi__balao--coruja { top: 30% !important; max-width: min(15rem, 52%); }
+  .cem-heroi__palco::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(8, 10, 14, 0.75) 0%, rgba(8, 10, 14, 0.2) 34%, transparent 50%, transparent 80%, #0c0f12 100%); }
   .cem-heroi__cabeca { display: contents; }
-  .cem-heroi__titulo { grid-row: 1; grid-column: 1; z-index: 1; align-self: start; padding: var(--e-4) var(--e-4) 0; gap: 0.2rem; }
+  .cem-heroi__titulo { grid-row: 1; grid-column: 1; z-index: 1; align-self: start; padding: var(--e-4) var(--e-4) 0; gap: 0.2rem; pointer-events: none; }
   .cem-heroi h1 { font-size: 1.75rem; }
   .cem-heroi__sub { display: none; }
   /* O relógio desce para o chão escuro, embaixo da cena, longe dos cavaleiros e dos pedestais. */
@@ -419,6 +422,7 @@
   .cem-linha__avatar { display: none; }
   .cem-linha__quem { grid-area: quem; }
   .cem-linha__quem { align-self: center; gap: 2px var(--e-2); }
+  .cem-linha__selos { flex-basis: 100%; justify-content: flex-start; }
   .cem-linha__mov { grid-area: mov; display: flex; justify-content: center; align-self: start; }
   .cem-linha__mov .cem-mov { min-height: 18px; padding: 0 4px; font-size: 0.75rem; }
   .cem-linha__mov:empty { display: none; }
