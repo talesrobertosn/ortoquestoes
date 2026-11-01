@@ -1643,15 +1643,15 @@
   },
   {
    "id": "campbell14-manguito-rotador",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Manguito rotador: exame, roturas e tratamento",
    "especialidade": "ombro-cotovelo",
    "livro": "Campbell's Operative Orthopaedics",
-   "edicao": "14ª edição (2021)",
+   "edicao": "14ª edição (2021), ampliado com a 15ª edição (2026)",
    "capitulo": "Capítulo 46 · Shoulder and Elbow Injuries, com os capítulos 52 · Arthroscopy of the Upper Extremity e 12 · Shoulder and Elbow Arthroplasty",
-   "resumo": "Anatomia (pares de forças, bainha do bíceps, cabo e crescente, arco coracoacromial); exame (NEER, HAWKINS, JOBE, PATTE, sinais de atraso, lift-off, belly-press, bear hug); impactos externo, subcoracoide e interno; COFIELD, GOUTALLIER e ELLMAN; história natural e tratamento inicial; parciais acima e abaixo de 50%; transferências (grande dorsal de GERBER, peitoral maior) e reparo parcial; nervo supraescapular a 1,8 cm; tecido da vírgula e subescapular; tendinite calcária; prótese reversa.",
+   "resumo": "Campbell 15: pegada de cada tendão, cinco camadas, cabo; acurácia dos testes (PARK), lags, subescapular; HAMADA, acrômio, ângulo crítico de 35 graus, GOUTALLIER e sinal da tangente; estágios de NEER; KEENER, 3 semanas e 4 meses, Box 51.5, DERWIN; fileiras, TRANTALIS, convergência, reabilitação; LAFOSSE; trapézio inferior e reconstrução capsular superior; SARKAR e UHTHOFF. Anatomia (pares de forças, bainha do bíceps, cabo e crescente, arco coracoacromial); exame (NEER, HAWKINS, JOBE, PATTE, sinais de atraso, lift-off, belly-press, bear hug); impactos externo, subcoracoide e interno; COFIELD, GOUTALLIER e ELLMAN; história natural e tratamento inicial; parciais acima e abaixo de 50%; transferências (grande dorsal de GERBER, peitoral maior) e reparo parcial; nervo supraescapular a 1,8 cm; tecido da vírgula e subescapular; tendinite calcária; prótese reversa.",
    "acesso": "gratis",
-   "minutos": 10,
+   "minutos": 31,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -1664,8 +1664,18 @@
      "radar": "fundamento"
     },
     {
+     "id": "o-que-o-campbell-15-acrescenta-a-anatomia",
+     "titulo": "O que o Campbell 15 acrescenta à anatomia",
+     "radar": "fundamento"
+    },
+    {
      "id": "exame-fisico",
      "titulo": "Exame físico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-em-numeros",
+     "titulo": "O exame em números",
      "radar": "confirmado"
     },
     {
@@ -1674,8 +1684,18 @@
      "radar": "confirmado"
     },
     {
+     "id": "impacto-estagios-de-neer-e-o-tratamento",
+     "titulo": "Impacto: estágios de NEER e o tratamento",
+     "radar": "confirmado"
+    },
+    {
      "id": "classificar-a-rotura",
      "titulo": "Classificar a rotura",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-hamada-acromio-angulo-critico-e-o-musculo",
+     "titulo": "Imagem: HAMADA, acrômio, ângulo crítico e o músculo",
      "radar": "confirmado"
     },
     {
@@ -1684,8 +1704,23 @@
      "radar": "fundamento"
     },
     {
+     "id": "historia-natural-indicacoes-e-o-que-piora-o-resu",
+     "titulo": "História natural, indicações e o que piora o resultado",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-reparo-por-dentro-fileiras-convergencia-e-reab",
+     "titulo": "O reparo por dentro: fileiras, convergência e reabilitação",
+     "radar": "confirmado"
+    },
+    {
      "id": "roturas-irreparaveis-e-transferencias",
      "titulo": "Roturas irreparáveis e transferências",
+     "radar": "confirmado"
+    },
+    {
+     "id": "irreparaveis-o-que-mais-existe-alem-do-grande-do",
+     "titulo": "Irreparáveis: o que mais existe além do grande dorsal",
      "radar": "confirmado"
     },
     {
@@ -1699,8 +1734,18 @@
      "radar": "confirmado"
     },
     {
+     "id": "subescapular-lafosse-e-o-reparo",
+     "titulo": "Subescapular: LAFOSSE e o reparo",
+     "radar": "confirmado"
+    },
+    {
      "id": "tendinite-calcaria",
      "titulo": "Tendinite calcária",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tendinite-calcaria-por-dentro",
+     "titulo": "Tendinite calcária por dentro",
      "radar": "confirmado"
     },
     {
@@ -1715,24 +1760,59 @@
     }
    ],
    "questoes": [
+    "ombro-cotovelo-0407",
+    "ombro-cotovelo-0455",
     "ombro-cotovelo-0406",
     "ombro-cotovelo-0015",
     "ombro-cotovelo-0056",
     "ombro-cotovelo-0013",
+    "ombro-cotovelo-0217",
+    "ombro-cotovelo-0055",
     "ombro-cotovelo-0053",
     "ombro-cotovelo-0062",
+    "ombro-cotovelo-0563",
     "ombro-cotovelo-0557",
     "ombro-cotovelo-0573",
     "ombro-cotovelo-0387",
+    "ombro-cotovelo-0182",
+    "ombro-cotovelo-0057",
+    "ombro-cotovelo-0468",
+    "ombro-cotovelo-0235",
+    "ombro-cotovelo-0088",
+    "ombro-cotovelo-0181",
+    "ombro-cotovelo-0186",
+    "ombro-cotovelo-0533",
+    "ombro-cotovelo-0208",
+    "ombro-cotovelo-0418",
     "ombro-cotovelo-0040",
     "ombro-cotovelo-0565",
+    "ombro-cotovelo-0232",
+    "ombro-cotovelo-0353",
+    "ombro-cotovelo-0396",
+    "ombro-cotovelo-0192",
+    "ombro-cotovelo-0502",
+    "ombro-cotovelo-0082",
     "ombro-cotovelo-0458",
     "ombro-cotovelo-0481",
     "ombro-cotovelo-0466",
     "ombro-cotovelo-0409",
     "ombro-cotovelo-0345",
     "ombro-cotovelo-0479",
+    "ombro-cotovelo-0058",
+    "ombro-cotovelo-0454",
+    "ombro-cotovelo-0443",
     "ombro-cotovelo-0242",
+    "ombro-cotovelo-0074",
+    "ombro-cotovelo-0038",
+    "ombro-cotovelo-0190",
+    "ombro-cotovelo-0009",
+    "ombro-cotovelo-0090",
+    "ombro-cotovelo-0299",
+    "ombro-cotovelo-0343",
+    "ombro-cotovelo-0453",
+    "ombro-cotovelo-0371",
+    "ombro-cotovelo-0421",
+    "ombro-cotovelo-0480",
     "ombro-cotovelo-0003",
     "ombro-cotovelo-0006"
    ],

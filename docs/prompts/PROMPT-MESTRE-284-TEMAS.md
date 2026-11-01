@@ -237,6 +237,10 @@ Se caiu, a próxima PR é a de revisão daquilo, antes de seguir a fila. Se acho
 | Simulado antigo reprovado no `auditar_estilo.py` | Reescrever no `lote_proj.py` com `id=`, mesma letra de gabarito, comentário refeito para a nova pergunta |
 | Conceito mantido que fala das alternativas antigas ("a alternativa certa...", "as erradas...") | O `estilo_base.py` dos lotes recusa; use `troca=[(velho, novo)]` no `Q()` para reescrever a frase |
 | Análise de alternativa que começa com "também" ("**X** também não.") | As letras são embaralhadas na tela, e a frase perde o sentido; `checar_comentarios.py` recusa; escreva o motivo próprio de cada alternativa |
+| Capítulo do Green citado errado (o índice do `livros.py capitulos green7` não é confiável) | Confira o capítulo pelo cabeçalho da própria página ("CHAPTER N" ou "FIGURE N.x") com `livros.py ler green7 <PDF>`; ex.: compressões = cap. 28, nervo = cap. 30, transferências = cap. 31, criança = cap. 41, extensores = cap. 5 |
+| Mesma figura com gabaritos diferentes em provas diferentes (ex.: `pediatria-0534` V e `pediatria-0276` VI) | Mantenha os dois gabaritos e explique a divergência nos dois comentários, com `alerta` |
+| Questão marcada como anulada e com gabarito nos dados (ex.: `mao-0167`, `mao-0173`) | O `aplicar_comentarios.py` recusa; deixe o comentário antigo e registre para decisão do Tales |
+| Capítulo grande para ler sem pesar o contexto | Delegue a leitura a um agente com briefing fechado (arquivo de fatos com página no fim de cada linha) e escreva o resumo a partir do arquivo |
 | Ferramenta que falta para um passo repetido | Crie o script em `scripts/`, com docstring e uso, e documente aqui |
 
 ## 13. Estado (atualize a cada PR)
