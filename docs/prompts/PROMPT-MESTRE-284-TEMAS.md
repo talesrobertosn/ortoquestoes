@@ -236,6 +236,7 @@ Se caiu, a próxima PR é a de revisão daquilo, antes de seguir a fila. Se acho
 | Script `dumpq.py` sumiu de `/private/tmp` | Recrie (seção 4, etapa A) |
 | Simulado antigo reprovado no `auditar_estilo.py` | Reescrever no `lote_proj.py` com `id=`, mesma letra de gabarito, comentário refeito para a nova pergunta |
 | Conceito mantido que fala das alternativas antigas ("a alternativa certa...", "as erradas...") | O `estilo_base.py` dos lotes recusa; use `troca=[(velho, novo)]` no `Q()` para reescrever a frase |
+| Análise de alternativa que começa com "também" ("**X** também não.") | As letras são embaralhadas na tela, e a frase perde o sentido; `checar_comentarios.py` recusa; escreva o motivo próprio de cada alternativa |
 | Ferramenta que falta para um passo repetido | Crie o script em `scripts/`, com docstring e uso, e documente aqui |
 
 ## 13. Estado (atualize a cada PR)
