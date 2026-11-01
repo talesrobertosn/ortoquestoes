@@ -233,7 +233,7 @@ function paginaDaRota(rota: Rota): ReactNode {
   // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
   // públicas do Google levam; responder pede a conta ali mesmo.
   if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || ehJogo(rota)) {
-    pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
+    pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')} sobre={ehJogo(rota) ? 'flashcards' : 'questoes'}>{pagina}</ExigeConta>
   }
 
   return pagina

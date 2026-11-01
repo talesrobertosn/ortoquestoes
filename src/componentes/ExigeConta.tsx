@@ -12,7 +12,13 @@ import { Simbolo } from '../marca/Simbolo'
  * conta a uma página com questões vê o convite para criar a conta ou entrar,
  * e volta para a mesma página depois de entrar.
  */
-export function ExigeConta({ caminho, children }: { caminho: string; children: ReactNode }) {
+/** O que a página pede (01/11/2026: nos flashcards o convite falava de "ver as questões"). */
+const TEXTOS = {
+  questoes: { titulo: 'Crie sua conta para ver as questões', texto: 'As questões das provas oficiais, com o comentário de cada alternativa, ficam disponíveis para quem tem conta.' },
+  flashcards: { titulo: 'Crie sua conta para treinar flashcards', texto: 'Os flashcards tirados das questões comentadas das provas oficiais, com a revisão espaçada e o Torneio, ficam disponíveis para quem tem conta.' },
+}
+
+export function ExigeConta({ caminho, children, sobre = 'questoes' }: { caminho: string; children: ReactNode; sobre?: keyof typeof TEXTOS }) {
   const { sessao } = usarConta()
   const [entrarAberto, definirEntrarAberto] = useState(false)
   if (!EXIGIR_CONTA_PARA_QUESTOES || !contasDisponiveis || sessao) return <>{children}</>
@@ -20,13 +26,13 @@ export function ExigeConta({ caminho, children }: { caminho: string; children: R
   return (
     <section className="exige-conta" aria-labelledby="exige-conta-titulo">
       <span className="exige-conta__simbolo"><Simbolo tamanho={56} /></span>
-      <h1 id="exige-conta-titulo">Crie sua conta para ver as questões</h1>
+      <h1 id="exige-conta-titulo">{TEXTOS[sobre].titulo}</h1>
       <p>
-        As questões das provas oficiais, com o comentário de cada alternativa, ficam disponíveis para quem tem conta.
+        {TEXTOS[sobre].texto}{' '}
         Criar a conta não pede cartão e leva menos de um minuto.
       </p>
       <p className="exige-conta__gratis">
-        <strong>A conta é grátis</strong> {fraseGratis('exige')}
+        <strong>A conta é grátis</strong> {fraseGratis('exige')}{' '}
         Entre, pratique e aproveite. {fraseGratis('exigePlanos')} <a href={href('/assinatura')}>conheça os planos</a>.
       </p>
       <ul className="exige-conta__lista">

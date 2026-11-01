@@ -43,7 +43,7 @@ const faixaCores = (partes: Array<{ slug: string; n: number }>) => {
 /** O botão do dia levado ao topo (atalho do mesmo botão do cartão Hoje). */
 export interface AcaoTopo { rotulo: string; detalhe?: string; aoClicar?: () => void; href?: string; ouro?: boolean }
 
-export function OndeVoceEsta({ plano, calculo, previa = false, selo, aoAjustar, acao = null, rodape, nome = '', recados = [] }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; /** Troca o "Onde você está" do selo (o cenário fictício de quem não assina). */ selo?: string; aoAjustar?: () => void; acao?: AcaoTopo | null; /** O resumo da semana (domingo e segunda), dentro do topo. */ rodape?: ReactNode; /** Primeiro nome da pessoa, no título (adendo do dono, 18/10/2026). */ nome?: string; /** Frases curtas com os dados dela: a meta de hoje, a área mais forte. */ recados?: ReactNode[] }) {
+export function OndeVoceEsta({ plano, calculo, previa = false, selo, aoAjustar, acao = null, rodape, nome = '', recados = [], cena, depois }: { plano: PlanoSalvo; calculo: CalculoPlano; previa?: boolean; /** Troca o "Onde você está" do selo (o cenário fictício de quem não assina). */ selo?: string; aoAjustar?: () => void; acao?: AcaoTopo | null; /** O resumo da semana (domingo e segunda), dentro do topo. */ rodape?: ReactNode; /** Primeiro nome da pessoa, no título (adendo do dono, 18/10/2026). */ nome?: string; /** Frases curtas com os dados dela: a meta de hoje, a área mais forte. */ recados?: ReactNode[]; /** O cenário pintado atrás do topo (a Torre do Tempo do cronograma de ortopedia); sem ele, o céu de sempre. */ cena?: ReactNode; /** Logo abaixo do botão do dia, dentro do topo (o tour curto da primeira visita). */ depois?: ReactNode }) {
   const hoje = diaCivil()
   const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
@@ -74,8 +74,7 @@ export function OndeVoceEsta({ plano, calculo, previa = false, selo, aoAjustar, 
     : calculo.fase === 'prova' ? <>Reta final: <b>modo prova</b>. Simulado, os erros que importam e o resumão.</>
     : <>Véspera: aquecimento leve e descanso.</>
 
-  return (
-    <section className="cp-onde" aria-labelledby="cp-onde-titulo">
+  const topo = <>
       <div className="cp-onde__cabeca">
         <div className="cp-onde__texto">
           <p className="tr-heroi__selo cp-onde__selo">{selo ?? (previa ? 'Exemplo do cronograma' : 'Onde você está')} · {plano.prova}</p>
@@ -85,12 +84,15 @@ export function OndeVoceEsta({ plano, calculo, previa = false, selo, aoAjustar, 
         </div>
         <div className="cp-onde__acoes">
           {acao && (acao.href
-            ? <a className={'cp-onde__rapida' + (acao.ouro ? ' cp-onde__rapida--ouro' : '')} href={acao.href} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></a>
-            : <button type="button" className={'cp-onde__rapida' + (acao.ouro ? ' cp-onde__rapida--ouro' : '')} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></button>)}
+            ? <a className={'cp-onde__rapida' + (acao.ouro && acao.href ? ' cp-onde__rapida--ouro' : ' cristal')} href={acao.href} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></a>
+            : <button type="button" className={'cp-onde__rapida' + (acao.ouro && acao.href ? ' cp-onde__rapida--ouro' : ' cristal')} onClick={acao.aoClicar}><Icone nome="raio" tamanho={20} /><span><strong>{acao.rotulo}</strong>{acao.detalhe && <small>{acao.detalhe}</small>}</span></button>)}
           {/* Trocar data, folga ou ritmo fica no topo: antes era preciso rolar a página inteira. */}
           {aoAjustar && <button type="button" className="cp-onde__ajustar" onClick={aoAjustar} aria-label="Ajustar o cronograma: data, ritmo, folgas" title="Ajustar o cronograma: data, ritmo, folgas"><Icone nome="lapis" tamanho={15} /> Ajustar</button>}
         </div>
       </div>
+      {depois}
+  </>
+  const chao = <>
       {!calculo.provaPassou && <>
         <div className="cp-trilho" aria-hidden="true">
           <div className="cp-trilho__faixas" style={{ gridTemplateColumns: trechos.map((t) => `${Math.max(0.6, (t.ate.getTime() - t.de.getTime()) / DIA)}fr`).join(' ') + ' 0.5fr' }}>
@@ -110,6 +112,17 @@ export function OndeVoceEsta({ plano, calculo, previa = false, selo, aoAjustar, 
         <p className="cp-onde__frase">{frase}</p>
         {rodape}
       </div>
+  </>
+  if (!cena) return <section className="cp-onde" aria-labelledby="cp-onde-titulo">{topo}{chao}</section>
+  // Com o cenário: a arte ocupa o palco e o título, a meta e o botão ficam num vidro escuro do lado calmo da pintura
+  // (no celular, embaixo da janela da arte), sem cobrir o relógio. O trilho e a fase vão no chão, logo abaixo da cena.
+  return (
+    <section className="cp-onde cp-onde--torre" aria-labelledby="cp-onde-titulo">
+      <div className="cp-onde__palco">
+        <div className="cp-onde__janela">{cena}</div>
+        <div className="cp-onde__vidro">{topo}</div>
+      </div>
+      <div className="cp-onde__chao">{chao}</div>
     </section>
   )
 }
@@ -164,8 +177,8 @@ export function CartaoHoje({ calculo, titulo, porQue, assuntos, itens, botao, co
         </ol>
         {totalMin > 0 && <p className="cp-hoje__total"><span>Seu dia: <b>~{formatarTempo(totalMin)}</b></span><span>{faltaMin >= 1 ? <>Falta: <b>~{formatarTempo(faltaMin)}</b></> : <b>Dia completo</b>}</span></p>}
         {botao && (botao.href
-          ? <a className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} href={botao.href} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</a>
-          : <button type="button" className={'cp-botao' + (botao.ouro ? ' cp-botao--ouro' : '')} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</button>)}
+          ? <a className={'cp-botao' + (botao.ouro && botao.href ? ' cp-botao--ouro' : ' cristal')} href={botao.href} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</a>
+          : <button type="button" className={'cp-botao' + (botao.ouro && botao.href ? ' cp-botao--ouro' : ' cristal')} onClick={botao.aoClicar}>{botao.rotulo}{botao.detalhe && <small>{botao.detalhe}</small>}</button>)}
         {adiantar}
         {extras.length > 0 && <section className="cp-extras" aria-labelledby="cp-extras-titulo">
           <p className="cp-extras__titulo"><span id="cp-extras-titulo">Se sobrar tempo</span><small>não conta na meta</small></p>
@@ -527,12 +540,21 @@ export function Recolhido({ titulo, icone, children, aberto = false }: { titulo:
 
 // ─── Primeira visita: o que é cada parte ───────────────────────────────────
 
-export function TourCronograma({ aoFechar }: { aoFechar: () => void }) {
+export function TourCronograma({ aoFechar, compacto = false }: { aoFechar: () => void; /** Dentro do topo, logo abaixo do botão do dia: uma linha com "Entendi" e as 3 partes num "ver como funciona". */ compacto?: boolean }) {
   const passos = [
     { titulo: 'Onde você está', texto: 'Quantos dias faltam, em que fase do plano você está e o que vem depois dela.' },
-    { titulo: 'O calendário', texto: 'Logo abaixo, o plano inteiro mês a mês até a prova. Cada cor é uma área; toque num dia para ver o que estudar nele e, nos próximos dias, adiantar.' },
+    { titulo: 'O calendário', texto: 'Logo abaixo, a semana aberta e, em "Ver o mês inteiro", o plano até a prova. Cada cor é uma área; toque num dia para ver o que estudar nele e, nos próximos dias, adiantar.' },
     { titulo: 'Hoje', texto: 'Depois do calendário, a lista do dia, com o tempo de cada parte e um botão só, que diz exatamente o que faz.' },
   ]
+  if (compacto) return (
+    <section className="cp-tour cp-tour--compacto" aria-labelledby="cp-tour-titulo">
+      <details>
+        <summary><span id="cp-tour-titulo"><span className="cp-tour__pre">Primeira vez aqui? </span>O cronograma em 3 partes</span><Icone nome="baixo" tamanho={15} /></summary>
+        <ol>{passos.map((p, i) => <li key={p.titulo}><span className="px-numero" aria-hidden="true">{i + 1}</span><span><strong>{p.titulo}</strong><small>{p.texto}</small></span></li>)}</ol>
+      </details>
+      <button type="button" className="cp-tour__entendi" onClick={aoFechar}>Entendi</button>
+    </section>
+  )
   return (
     <section className="cp-tour" aria-labelledby="cp-tour-titulo">
       <div className="cp-tour__cabeca">

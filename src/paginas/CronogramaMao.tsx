@@ -6,7 +6,7 @@ import { calcularPlanoMao, comAdiantado, comSemanaDificil, configInicial, itemCo
 import { idsDoDiaMao, idsParaAdiantar, painelMao, resumoSemanaMao } from '../dados/painelMao'
 import { calcularConstancia, desempenhoPorArea, elogio, formatarTempo, prontidaoPorArea } from '../dados/hubCronograma'
 import { corDaArea } from '../dados/coresAreas'
-import { diaCurto } from '../dados/frasesAdiantar'
+import { diaCurto, textoPuxar } from '../dados/frasesAdiantar'
 import { usarConta } from '../conta/ContextoConta'
 import { CartaoHoje, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, PainelAdiantar, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
 import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
@@ -26,14 +26,17 @@ import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { chaveCivil, hojeBR, somarDias } from '../util/dia'
 import { href, navegar } from '../util/rotas'
+import '../estilos/paginas/CronogramaTorre.css'
+import '../estilos/componentes/Cristal.css'
 import '../estilos/paginas/CronogramaMao.css'
+import { CenaOficina } from '../componentes/cronograma/CenaOficina'
 import { TrocaCronograma } from '../componentes/TrocaCronograma'
 
 const PROVAS: Record<ProvaMao, { titulo: string; curto: string; texto: string }> = {
   ingresso: { titulo: 'Ingresso em Cirurgia da Mão', curto: 'Ingresso (residência)', texto: 'Para as provas de seleção da residência e dos programas de Cirurgia da Mão. Você faz todo tipo de questão da mão, das provas de ingresso e do padrão SBCM e SIMÃO, na ordem do que as provas de ingresso mais cobram.' },
   titulo: { titulo: 'Título de Cirurgia da Mão: SBCM e SIMÃO', curto: 'Título: SBCM e SIMÃO', texto: 'Para o exame de título da SBCM e o SIMÃO, o simulado do exame. O foco são as questões no padrão da SBCM e do SIMÃO, na ordem do que a prova mais cobra; questões de ingresso dos mesmos assuntos entram só como reforço.' },
 }
-const SEMANA = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
+const SEMANA = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
 const NOME_SEMANA = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado']
 const MINUTOS = [30, 45, 60, 90, 120, 180]
 const num = (n: number) => n.toLocaleString('pt-BR')
@@ -69,7 +72,8 @@ export function CronogramaMao({ consulta }: { consulta?: URLSearchParams }) {
   }
 
   return (
-    <div className="empilha-2 cm pe cp cr cf">
+    // As mesmas classes do cronograma de ortopedia (cr--torre): cartões, botões, chips e estados iguais nas três variantes.
+    <div className={`empilha-2 cm pe ${indice && (!config || editando) ? 'cr-form' : 'cp cr cf'} cr--torre`}>
       <TrocaCronograma atual={prova} />
       {!indice ? <Carregando linhas={5} rotulo="Montando o plano" />
         : !config || editando
@@ -84,39 +88,48 @@ function Formulario({ prova, inicial, novo, aoSalvar, aoCancelar, logado }: { pr
   const hoje = hojeBR()
   const valida = c.dataProva > hoje && c.dias.length > 0
   const questoesDia = Math.round(c.minutosDia / MINUTOS_POR_QUESTAO_MAO)
+  // As mesmas peças do formulário do cronograma de ortopedia (01/11/2026): a cena no topo, o cartão com os campos,
+  // as pílulas dos dias e do tempo, os cartões de escolha e os botões de sempre.
   return (
-    <form className="cm-form" onSubmit={(e) => { e.preventDefault(); if (valida) aoSalvar({ ...c, criadoEm: novo ? hoje : c.criadoEm }) }}>
-      <header>
-        <p className="tr-heroi__selo">{novo ? 'Novo plano' : 'Ajustar o plano'}</p>
-        <h1>{PROVAS[prova].titulo}</h1>
-        <p className="texto-2">{PROVAS[prova].texto}</p>
-      </header>
-      <label className="cm-campo">
-        <span><b>Data da prova</b><small>Ainda sem edital? Coloque a data que você espera. Dá para mudar depois.</small></span>
-        <input type="date" value={c.dataProva} min={somarDias(hoje, 1)} onChange={(e) => definir({ ...c, dataProva: e.target.value })} required />
-      </label>
-      <fieldset className="cm-campo">
-        <legend><b>Em que dias você estuda?</b><small>Plantão e folga ficam fora; o plano conta só estes dias.</small></legend>
-        <div className="cm-dias">
-          {SEMANA.map((d, i) => <button key={i} type="button" aria-pressed={c.dias.includes(i)} aria-label={NOME_SEMANA[i]} onClick={() => definir({ ...c, dias: c.dias.includes(i) ? c.dias.filter((x) => x !== i) : [...c.dias, i].sort() })}>{d}</button>)}
+    <form className="cm-form empilha-2" onSubmit={(e) => { e.preventDefault(); if (valida) aoSalvar({ ...c, criadoEm: novo ? hoje : c.criadoEm }) }}>
+      <section className="pe-heroi pe-heroi--convite pe-heroi--form pe-heroi--torre">
+        <CenaOficina />
+        <div>
+          <p className="tr-heroi__selo">{novo ? 'Novo plano' : 'Ajustar o plano'} · Cirurgia da Mão</p>
+          <h1>{PROVAS[prova].titulo}</h1>
+          <p>{PROVAS[prova].texto}</p>
         </div>
-      </fieldset>
-      <fieldset className="cm-campo">
-        <legend><b>Quanto tempo por dia?</b><small>Cerca de {num(questoesDia)} questões com o comentário.</small></legend>
-        <div className="cm-opcoes">{MINUTOS.map((m) => <button key={m} type="button" aria-pressed={c.minutosDia === m} onClick={() => definir({ ...c, minutosDia: m })}>{duracao(m)}</button>)}</div>
-      </fieldset>
-      <fieldset className="cm-campo">
-        <legend><b>Até onde ir?</b></legend>
-        <div className="cm-cobertura">
-          <button type="button" aria-pressed={c.cobertura === 'completa'} onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><small>{prova === 'titulo' ? 'Todos os assuntos do título, com questões de ingresso como reforço.' : 'Todos os assuntos, com todo tipo de questão da mão.'}</small></button>
-          <button type="button" aria-pressed={c.cobertura === 'essencial'} onClick={() => definir({ ...c, cobertura: 'essencial' })}><strong>Essencial</strong><small>Só os assuntos de prioridade máxima e alta{prova === 'titulo' ? ', só com questões no padrão SBCM e SIMÃO' : ''}. Bom para pouco tempo.</small></button>
+      </section>
+      <section className="cartao cartao__corpo pe-form">
+        <div className="pe-form__campos">
+          <label className="campo">Data da prova<input className="entrada" type="date" value={c.dataProva} min={somarDias(hoje, 1)} onChange={(e) => definir({ ...c, dataProva: e.target.value })} required /></label>
+          <p className="texto-2">Ainda sem edital? Coloque a data que você espera. Dá para mudar depois.</p>
         </div>
-      </fieldset>
-      <div className="cm-form__acoes">
-        <button type="submit" className="botao botao--principal" disabled={!valida}>{novo ? 'Montar meu plano' : 'Salvar'}</button>
-        {aoCancelar && <button type="button" className="botao" onClick={aoCancelar}>Cancelar</button>}
-      </div>
-      {!logado && <p className="texto-2 cm-nota">Sem conta, o plano fica só neste aparelho. <a href={href('/conta?modo=criar&voltar=%2Fcronograma-mao')}>Crie a conta grátis</a> para levá-lo ao celular e ao computador.</p>}
+        <fieldset className="pe-form__campos cm-campo">
+          <legend className="pe-form__sub">Em que dias você estuda?</legend>
+          <p className="texto-2">Plantão e folga ficam fora; o plano conta só estes dias.</p>
+          <div className="tr-pilulas cm-dias">
+            {SEMANA.map((d, i) => <button key={i} type="button" className="tr-pilula" aria-pressed={c.dias.includes(i)} aria-label={NOME_SEMANA[i]} onClick={() => definir({ ...c, dias: c.dias.includes(i) ? c.dias.filter((x) => x !== i) : [...c.dias, i].sort() })}>{d}</button>)}
+          </div>
+        </fieldset>
+        <fieldset className="pe-form__campos cm-campo">
+          <legend className="pe-form__sub">Quanto tempo por dia?</legend>
+          <p className="texto-2">Cerca de {num(questoesDia)} questões com o comentário.</p>
+          <div className="tr-pilulas cm-opcoes">{MINUTOS.map((m) => <button key={m} type="button" className="tr-pilula" aria-pressed={c.minutosDia === m} onClick={() => definir({ ...c, minutosDia: m })}>{duracao(m)}</button>)}</div>
+        </fieldset>
+        <fieldset className="pe-form__campos cm-campo">
+          <legend className="pe-form__sub">Até onde ir?</legend>
+          <div className="pe-intensidades" role="radiogroup" aria-label="Até onde ir">
+            <button type="button" role="radio" aria-checked={c.cobertura === 'completa'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><span>{prova === 'titulo' ? 'Todos os assuntos do título, com questões de ingresso como reforço.' : 'Todos os assuntos, com todo tipo de questão da mão.'}</span></button>
+            <button type="button" role="radio" aria-checked={c.cobertura === 'essencial'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'essencial' })}><strong>Essencial</strong><span>Só os assuntos de prioridade máxima e alta{prova === 'titulo' ? ', só com questões no padrão SBCM e SIMÃO' : ''}. Bom para pouco tempo.</span></button>
+          </div>
+        </fieldset>
+        <div className="pe-form__navegacao">
+          {aoCancelar && <button type="button" className="botao botao--fantasma" onClick={aoCancelar}>Cancelar</button>}
+          <button type="submit" className="botao botao--principal botao--grande" disabled={!valida}>{novo ? 'Montar meu plano' : 'Salvar ajustes'}</button>
+        </div>
+        {!logado && <p className="texto-2 cm-nota">Sem conta, o plano fica só neste aparelho. <a href={href('/conta?modo=criar&voltar=%2Fcronograma-mao')}>Crie a conta grátis</a> para levá-lo ao celular e ao computador.</p>}
+      </section>
     </form>
   )
 }
@@ -196,7 +209,7 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
 
   // ── o botão único ──
   const n = calculo.naRetaFinal ? mao.idsHoje.length : calculo.faltaHoje
-  const botao: Parameters<typeof CartaoHoje>[0]['botao'] = !premium
+  let botao: Parameters<typeof CartaoHoje>[0]['botao'] = !premium
     ? { rotulo: 'Assinar para começar', detalhe: 'O seu plano já está montado', href: href('/assinatura'), ouro: true }
     : !folgaHoje && n > 0 && mao.idsHoje.length
       ? { rotulo: calculo.feitasHoje > 0 ? `Continuar: faltam ${n} questões` : `Começar: ${n} questões`, detalhe: `${principal ? principal.nome : calculo.miniHoje ? 'Mini-simulado' : 'Reta final'} · ~${formatarTempo(n * minutos)}`, aoClicar: comecar }
@@ -214,8 +227,17 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
     else if (calculo.metaDiaria > 0) recados.push(<>A meta de hoje: <b>{calculo.metaDiaria} questões</b>, cerca de {formatarTempo(calculo.metaDiaria * minutos)}.</>)
     if (mao.acerto !== null && mao.acerto >= 50) recados.push(<>Seu acerto nas questões do plano: <b>{mao.acerto}%</b>.</>)
   }
-  const proximoDia = calculo.amanha ? chaveCivil(calculo.amanha.data) : null
-  const acaoTopo = botao ?? (premium && proximoDia ? { rotulo: 'Adiantar o próximo dia', detalhe: `${diaCurto(calculo.amanha!.data)} · ${calculo.amanha!.total} questões`, aoClicar: () => aoEstudar(idsDoDiaMao(mao, proximoDia)), ouro: true } : null)
+  // Hoje feito (ou folga): o botão passa a puxar o próximo dia de estudo, com as mesmas palavras do cronograma de
+  // ortopedia ("Puxar amanhã", "Puxar sex").
+  const proximoDia = premium && !calculo.naRetaFinal && calculo.amanha ? chaveCivil(calculo.amanha.data) : null
+  let acaoTopo = botao
+  if (!botao && proximoDia) {
+    const t = textoPuxar(calculo.amanha!)
+    const semana = diaCurto(calculo.amanha!.data).split(',')[0]
+    const aoClicar = () => aoEstudar(idsDoDiaMao(mao, proximoDia))
+    botao = { rotulo: t.rotulo, detalhe: `${t.detalhe} · ~${formatarTempo(calculo.amanha!.total * minutos)}`, aoClicar, ouro: true }
+    acaoTopo = { rotulo: t.rotulo.includes('amanhã') ? 'Puxar amanhã' : `Puxar ${semana}`, detalhe: `${diaCurto(calculo.amanha!.data)} · ${t.detalhe}`, aoClicar, ouro: true }
+  }
   const podeAdiantar = premium && !calculo.naRetaFinal && calculo.restante > 0
   const painelAdiantar = podeAdiantar ? <PainelAdiantar calculo={calculo} minutos={minutos} destaque={!botao} aoAdiantar={(n) => aoEstudar([...mao.idsHoje, ...idsParaAdiantar(mao, n)])} aoCancelar={() => undefined} /> : null
   const resumoAviso = resumoHoje && !leituras[resumoHoje.id]?.concluidoEm
@@ -228,8 +250,10 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
   const media = mao.acerto
 
   return <>
-    {mostrarTour && <TourCronograma aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} />}
-    <OndeVoceEsta plano={plano} calculo={calculo} aoAjustar={aoEditar} acao={acaoTopo} nome={nome} recados={recados} rodape={premium && semana ? <ResumoSemana {...semana} /> : undefined} />
+    {/* A Oficina da Mão (01/11/2026): a cena do topo, na mesma praça da Torre do Tempo; o tour da primeira visita
+        fica curto, logo abaixo do botão do dia, como no cronograma de ortopedia. */}
+    <OndeVoceEsta plano={plano} calculo={calculo} aoAjustar={aoEditar} acao={acaoTopo} nome={nome} recados={recados} rodape={premium && semana ? <ResumoSemana {...semana} /> : undefined}
+      cena={<CenaOficina />} depois={mostrarTour ? <TourCronograma compacto aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} /> : undefined} />
 
     <CalendarioCronograma embutido aoSelecionar={definirDiaEscolhido} nome={nome} plano={plano} calculo={calculo} indice={indice} respondidas={respondidasMao} minutos={minutos}
       acoes={{ aoComecar: premium ? comecar : undefined, aoPuxar: premium ? (dia) => aoEstudar(idsDoDiaMao(mao, dia)) : undefined, proximo: calculo.amanha }} />
@@ -237,7 +261,7 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">
         <div className="cp-ordem-1"><CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corDaArea(principal?.slug ?? 'mao')} adiantar={painelAdiantar}
-          aviso={folgaHoje ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar os dias?</span><button type="button" className="botao" onClick={aoEditar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoAviso} /></div>
+          aviso={folgaHoje ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar os dias?</span><button type="button" className="botao botao--principal" onClick={aoEditar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoAviso} /></div>
       </div>
       <div className="cp-col cp-col--lado">
         {!calculo.naRetaFinal && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasEscolhido} rotuloDia={rotuloEscolhido} especialidade="mao" /></div>}

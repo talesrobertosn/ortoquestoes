@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react'
 import { BotaoConcluirFlutuante, ModalFimSessao } from '../componentes/ModalFimSessao'
 import { usarDeslizar } from '../util/usarDeslizar'
 import { preCarregarComentario } from '../dados/comentarios'
@@ -23,6 +23,7 @@ import { gerarId } from '../util/id'
 import { EVENTO_DADOS, gravar, ler, type MudancaDados } from '../estado/armazenamento'
 import { recurso } from '../config'
 import '../estilos/paginas/Sessao.css'
+import { CorujaPixel } from '../biblioteca/sala/CorujaPixel'
 import { urlImagem } from '../dados/edicoes'
 import { obterPlano } from '../conta/cronograma'
 import { usarPremium } from '../conta/premium'
@@ -38,8 +39,12 @@ import { usarSalvamentoNacional, type EstadoSalvamento } from '../estado/salvame
 import { alertaDeTempo, montarSessaoNacional, resumoParaEntregar } from '../dados/provaNacional'
 import { codigoErroSN, snIniciar } from '../dados/apiSimuladoNacional'
 import { ordemParaRevisao, letraExibida } from '../dados/ordemAlternativas'
+
 import { carregarLetrasAcervo, usarLetrasAcervo } from '../dados/letrasAcervo'
 import { lerUltimaExibida, registrarExibida } from '../estado/ordemExibida'
+
+/** Quanto tempo a dica de trocar de questão fica aberta (Tales, 01/11/2026: "só fica aberto por 3 segundos"). */
+const DURACAO_DICA = 3000
 
 /** O salvamento da prova do Simulado Nacional, numa linha curta. */
 function textoSalvamento(e: EstadoSalvamento): string {
@@ -591,7 +596,7 @@ export function Sessao() {
     temporizadoresDica.current.forEach((t) => window.clearTimeout(t))
     temporizadoresDica.current = [
       window.setTimeout(() => { gravar('dica:sessao', chaveDica); gravar('dica:deslizar', true); definirDicaDeslizar(true); if (primeiraVez) espiarAtual.current() }, 900),
-      window.setTimeout(() => definirDicaDeslizar(false), 900 + 5000),
+      window.setTimeout(() => definirDicaDeslizar(false), 900 + DURACAO_DICA),
     ]
   }, [questoes, temVarias, chaveDica])
   useEffect(() => { if (posicao > 0) definirDicaDeslizar(false) }, [posicao])
@@ -606,7 +611,7 @@ export function Sessao() {
     temporizadorTeclado.current.forEach((t) => window.clearTimeout(t))
     temporizadorTeclado.current = [
       window.setTimeout(() => { gravar('dica:sessao', chaveDica); definirDicaTeclado(true) }, 900),
-      window.setTimeout(() => definirDicaTeclado(false), 900 + 5000),
+      window.setTimeout(() => definirDicaTeclado(false), 900 + DURACAO_DICA),
     ]
   }, [questoes, temVarias, chaveDica])
 
@@ -963,24 +968,32 @@ export function Sessao() {
       </aside>}
       </div>
 
+      {/* A dica de trocar de questão (01/11/2026, pedido do Tales): uma caixa de diálogo de RPG, como as da página inicial,
+          com a coruja dando a dica e uma barra dourada que esvazia nos 3 s em que ela fica aberta; toque fecha antes. */}
       {(dicaDeslizar || dicaTeclado) && !painelAberto && (
         <button
           type="button"
           className="sx-dica-popup nao-imprime"
+          style={{ '--dica-ms': `${DURACAO_DICA}ms` } as CSSProperties}
           onClick={() => { definirDicaDeslizar(false); definirDicaTeclado(false) }}
-          aria-label={(dicaDeslizar ? 'Arraste para o lado para trocar de questão' : 'Use as setas do teclado para trocar de questão') + '. Toque para fechar.'}
+          aria-label={'Dica da coruja: ' + (dicaDeslizar ? 'arraste a questão para o lado para trocar de questão' : 'use as setas do teclado para trocar de questão') + '. Some sozinha em 3 segundos; toque para fechar.'}
         >
-          {dicaDeslizar ? (
-            <>
-              <span className="sx-dica-popup__gesto" aria-hidden="true"><Icone nome="esquerda" tamanho={22} /><span className="sx-dica-popup__dedo" /><Icone nome="direita" tamanho={22} /></span>
-              <span className="sx-dica-popup__texto">Arraste para o lado para trocar de questão</span>
-            </>
-          ) : (
-            <>
-              <span className="sx-dica-popup__teclas" aria-hidden="true"><kbd>←</kbd><kbd>→</kbd></span>
-              <span className="sx-dica-popup__texto">Use as setas do teclado para trocar de questão</span>
-            </>
-          )}
+          <span className="sx-dica-popup__retrato" aria-hidden="true"><CorujaPixel estado="acenando" /></span>
+          <span className="sx-dica-popup__fala" aria-hidden="true">
+            <b className="sx-dica-popup__nome">Coruja</b>
+            {dicaDeslizar ? (
+              <span className="sx-dica-popup__texto">
+                <span className="sx-dica-popup__gesto"><Icone nome="esquerda" tamanho={16} /><span className="sx-dica-popup__dedo" /><Icone nome="direita" tamanho={16} /></span>
+                Arraste a questão para o lado para trocar.
+              </span>
+            ) : (
+              <span className="sx-dica-popup__texto">
+                <span className="sx-dica-popup__teclas"><kbd>←</kbd><kbd>→</kbd></span>
+                As setas do teclado trocam de questão.
+              </span>
+            )}
+          </span>
+          <span className="sx-dica-popup__tempo" aria-hidden="true"><i /></span>
         </button>
       )}
 

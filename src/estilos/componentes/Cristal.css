@@ -1,0 +1,23 @@
+/* O botão de começar da página inicial (.jn-cristal, InicioJornada.css) para as outras páginas: a ação principal de
+   começar, com a mesma cor e o mesmo reflexo em todo o site. Desde 01/11/2026 é o dourado do Ranking (o nome "cristal"
+   ficou só na classe) (Tales, 01/11/2026: "as paletas precisam seguir a página
+   inicial"). Cores em tokens.css (--cristal, --cristal-sombra, --mundo-ouro). Carregado só onde é usado. */
+.cristal, .botao.cristal {
+  position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
+  min-height: 3.25rem; padding: 0.7rem 1.6rem; border: 0; border-radius: var(--raio-controle);
+  color: var(--cristal-tinta); font: inherit; font-size: var(--corpo); font-weight: 800; text-decoration: none; cursor: pointer; text-shadow: none;
+  background: var(--cristal); box-shadow: var(--cristal-sombra);
+  transition: transform 0.15s var(--curva), filter 0.15s, box-shadow 0.15s;
+}
+.cristal::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.55) 48%, transparent 60%);
+  transform: translateX(-120%); animation: cristal-reflexo 5s ease-in-out 1.2s infinite; }
+@keyframes cristal-reflexo { 0%, 60% { transform: translateX(-120%); } 85%, 100% { transform: translateX(120%); } }
+.cristal:hover:not(:disabled), .cristal:focus-visible { color: var(--cristal-tinta); background: var(--cristal); filter: brightness(1.05); transform: translateY(-1px);
+  box-shadow: var(--cristal-sombra-forte); }
+.cristal:focus-visible { outline: 3px solid var(--mundo-ouro); outline-offset: 3px; }
+.cristal:active:not(:disabled) { transform: translateY(1px) scale(0.99); }
+.cristal:disabled { filter: grayscale(0.7) brightness(0.8); opacity: 1; cursor: not-allowed; transform: none; }
+.cristal:disabled::after { animation: none; }
+.cristal .botao__contador { padding: 0 0.4em; border-radius: 6px; background: var(--cristal-tinta); color: #f6d488; text-shadow: none; }
+@media (prefers-reduced-motion: reduce) { .cristal { transition: none; } .cristal::after { animation: none; } }

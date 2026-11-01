@@ -10,6 +10,7 @@ import { GatoPixel } from '../../mascote/GatoPixel'
 import { estagioDaSequencia, textoProximoEstagio, ESTAGIOS_FOGUEIRA } from '../estagiosFogueira'
 import type { DiaSequencia } from '../PainelSequencia'
 import { CenaDiorama } from '../cena/CenaDiorama'
+import { CorujaPixel } from '../../../biblioteca/sala/CorujaPixel'
 import { usarPeriodo } from '../../../estado/aparencia'
 
 /*
@@ -71,7 +72,6 @@ export function HeroiJornada({ data, titulo, lide, missao, botao, depois, linhaF
   const periodo = usarPeriodo()
   return (
     <section className={`jn-heroi jn-heroi--${periodo} hd-topo--${periodo}`} aria-labelledby="jn-titulo" style={SPRITES}>
-      <CenaDiorama linhaFogo={linhaFogo} periodo={periodo} descanso={descanso} festa={festa} />
       <header className="jn-saudacao">
         <p className="jn-data">{data}</p>
         <h1 id="jn-titulo">{titulo}</h1>
@@ -81,6 +81,8 @@ export function HeroiJornada({ data, titulo, lide, missao, botao, depois, linhaF
         <div className="jn-missao__texto">{missao}</div>
         <div className="jn-missao__acoes">{botao}{depois}</div>
       </div>
+      {/* A cena vem depois do texto e da missão no código: no teclado, a ação principal antes dos bichos e da fogueira. */}
+      <CenaDiorama linhaFogo={linhaFogo} periodo={periodo} descanso={descanso} festa={festa} />
     </section>
   )
 }
@@ -207,7 +209,6 @@ export function HeroiVitrine({ titulo, proposta, lide, cta, entrar, nota, amostr
   return (
     <>
       <section className={`jn-heroi jn-heroi--vitrine jn-heroi--${periodo} hd-topo--${periodo}`} aria-labelledby="jn-vitrine-titulo" style={SPRITES}>
-        <CenaDiorama linhaFogo={3} periodo={periodo} />
         <header className="jn-saudacao jn-vitrine__texto">
           <p className="jn-data">Provas oficiais comentadas</p>
           <h1 id="jn-vitrine-titulo">{titulo}</h1>
@@ -216,7 +217,13 @@ export function HeroiVitrine({ titulo, proposta, lide, cta, entrar, nota, amostr
           <div className="jn-vitrine__convite">{cta}{entrar}</div>
           <p className="jn-vitrine__nota">{nota}</p>
         </header>
-        <div className="jn-vitrine__amostra">{amostra}</div>
+        {/* A cena depois do convite no código: no teclado, a ação principal antes dos bichos e da fogueira. */}
+        <CenaDiorama linhaFogo={3} periodo={periodo} />
+        <div className="jn-vitrine__amostra">
+          {/* No computador a coruja pousa na borda do cartão da questão de amostra (o centro da cena já tem o esqueleto). */}
+          <span className="jn-vitrine__coruja" aria-hidden="true"><CorujaPixel estado="olhando" /></span>
+          {amostra}
+        </div>
       </section>
       <section className="jn-provas" aria-label="Provas no acervo">
         <p className="jn-rotulo">No acervo</p>

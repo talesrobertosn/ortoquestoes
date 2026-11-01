@@ -4,7 +4,7 @@
    Componentes: componentes/inicio/jornada/Jornada.tsx; página: paginas/Inicio.tsx (painel). */
 
 .hd.jn {
-  --jn-raio: 20px; --jn-tinta: #fffaf0; --jn-tinta-2: #e4d8bd; --jn-ouro: #f0c46a; --jn-chao: #0b100e; --jn-vidro: rgba(9, 13, 14, 0.74);
+  --jn-raio: var(--mundo-raio); --jn-tinta: var(--mundo-tinta); --jn-tinta-2: var(--mundo-tinta-2); --jn-ouro: var(--mundo-ouro); --jn-chao: var(--mundo-chao); --jn-vidro: var(--mundo-vidro);
   display: grid; gap: 1.5rem; padding: 0; color: var(--texto); background: none; border: 0; box-shadow: none;
 }
 .hd.jn > * { margin-inline: 0; }
@@ -41,15 +41,15 @@
 .jn-missao__progresso strong { color: var(--jn-tinta); font-size: var(--corpo); }
 .jn-missao__acoes { display: grid; gap: 0.6rem; }
 
-/* O botão de cristal, agora arredondado: o único azul-cristal da página é a ação principal. */
+/* O botão de começar (o dourado do Ranking desde 01/11/2026; antes azul-cristal): a ação principal da página. */
 .jn-cristal { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; min-height: 3.25rem; padding: 0.7rem 1.6rem;
-  border: 0; border-radius: var(--raio-controle); color: #fff; font: inherit; font-size: var(--corpo); font-weight: 800; text-decoration: none; cursor: pointer; text-shadow: 0 1px 0 rgba(0, 40, 60, 0.6);
-  background: linear-gradient(180deg, #8de6f2 0%, #3fb6d2 42%, #1a86a8 64%, #0f5f80 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 8px 22px -8px rgba(40, 170, 220, 0.75);
+  border: 0; border-radius: var(--raio-controle); color: var(--cristal-tinta); font: inherit; font-size: var(--corpo); font-weight: 800; text-decoration: none; cursor: pointer; text-shadow: none;
+  background: var(--cristal);
+  box-shadow: var(--cristal-sombra);
   transition: transform 0.15s var(--curva), filter 0.15s, box-shadow 0.15s; }
 .jn-cristal::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.55) 48%, transparent 60%);
   transform: translateX(-120%); animation: hd-reflexo 5s ease-in-out 1.2s infinite; }
-.jn-cristal:hover, .jn-cristal:focus-visible { color: #fff; filter: brightness(1.08); transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 0 rgba(0, 30, 50, 0.35), 0 12px 28px -8px rgba(60, 200, 240, 0.85); }
+.jn-cristal:hover, .jn-cristal:focus-visible { color: var(--cristal-tinta); filter: brightness(1.05); transform: translateY(-1px); box-shadow: var(--cristal-sombra-forte); }
 .jn-cristal:focus-visible { outline: 3px solid var(--jn-ouro); outline-offset: 3px; }
 .jn-cristal:active { transform: translateY(1px) scale(0.99); }
 .jn-cristal:disabled { filter: grayscale(0.7) brightness(0.8); cursor: not-allowed; transform: none; }
@@ -390,10 +390,7 @@
 .hd-gato--andando .hd-gato__sprite { animation-duration: 0.7s; }
 /* O balão do gato abre para o lado livre da cena (nunca por baixo da caixa da missão). */
 .hd-balao--direita, .hd-balao--esquerda { animation: hd-balao-surge 0.25s steps(3); }
-.hd-balao--direita { transform: translate(-8%, -100%); }
-.hd-balao--direita::after { left: 8%; }
-.hd-balao--esquerda { transform: translate(-92%, -100%); }
-.hd-balao--esquerda::after { left: 92%; }
+/* O lado e a ponta do balão vêm de encaixarBalao (CenaDiorama.tsx), pelo translate e por --cauda-x. */
 @keyframes hd-balao-surge { from { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .hd-gato--andando { transition: none; } }
 
@@ -418,7 +415,20 @@
 .jn-vitrine__nota svg { flex: none; margin-top: 0.15rem; color: #7ee0c8; }
 
 /* A questão de amostra: uma prévia de estudo compacta, papel claro com cantos redondos e sombra suave. */
-.jn-vitrine__amostra { grid-column: 3; grid-row: 1; align-self: center; }
+.jn-vitrine__amostra { grid-column: 3; grid-row: 1; align-self: center; position: relative; }
+/* A coruja no cartão da amostra, só no computador (no celular ela fica na cena). Dentro e fora ao mesmo tempo (Tales,
+   01/11/2026): o corpo entra na frente do cartão, ao lado do selo, e a cabeça sai por cima da borda, como quem acabou de
+   pousar. O respiro em cima do cartão é dela: a moldura da cena nunca corta a cabeça, mesmo com questão longa. */
+.jn-vitrine__coruja { position: absolute; top: 0; right: 1rem; z-index: 2; display: none; pointer-events: none;
+  filter: drop-shadow(0 3px 0 rgba(27, 18, 8, 0.22)); }
+/* Escala 3, o mesmo pixel da cena (480 px pintados em 1440). */
+.jn-vitrine__coruja .coruja-pixel { --coruja-escala: 3; }
+@media (min-width: 60.0625rem) {
+  .jn-vitrine__amostra { padding-top: 3.6rem; }
+  /* O lugar dela na linha do selo: a prova desce para a linha de baixo e nunca passa por baixo da coruja. */
+  .jn-vitrine__amostra .ip-amostra__topo { padding-right: 7.25rem; }
+  .jn-vitrine__coruja { display: block; }
+}
 .jn-vitrine__amostra .ip-amostra { gap: 0.7rem; padding: 1rem 1.1rem 1.1rem; border: 0; border-radius: 16px; background: #fbf8f1; color: #1d2422;
   box-shadow: 0 0 0 1px rgba(27, 18, 8, 0.12), 0 24px 48px -20px rgba(0, 0, 0, 0.75); }
 .jn-vitrine__amostra .ip-amostra__selo { padding: 0.15rem 0.55rem; border-radius: 999px; box-shadow: none; font-family: var(--fonte-texto); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; }
@@ -602,3 +612,8 @@
 @media (min-width: 75.01rem) { .jn-heroi--vitrine .hd-palco { left: 43%; } .jn-heroi--vitrine:has(.ip-amostra--respondida) .hd-palco { left: 36%; } }
 .hd-mascote[data-lado="oculto"] .mascote__balao { visibility: hidden; }
 .hd-gato--fora { visibility: hidden; pointer-events: none; }
+
+/* A saudação ocupa a faixa inteira da cena no celular: ela deixa o toque passar para o gato e a coruja (só os botões
+   e links dela recebem o toque). */
+.jn-saudacao { pointer-events: none; }
+.jn-saudacao :is(a, button, input, select, summary, label) { pointer-events: auto; }

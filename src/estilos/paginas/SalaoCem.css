@@ -39,7 +39,8 @@
 /* O mundo guarda a proporção da arte (16:9) e cobre o herói, puxado para a direita (onde está o pódio): os cavaleiros
    e os estandartes, em % do mundo, ficam sempre em cima dos pedestais pintados. */
 .cem-heroi__mundo { position: absolute; width: max(100cqw, 177.78cqh); aspect-ratio: 16 / 9; left: calc((100cqw - max(100cqw, 177.78cqh)) * 0.7); top: calc((100cqh - max(56.25cqw, 100cqh)) * 0.5); }
-.cem-heroi__camada { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; user-select: none; }
+.cem-heroi__camada { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; user-select: none; pointer-events: none; }
+.cem-heroi__poeira, .cem-heroi__festa, .cem-cavaleiro, .cem-estandarte, .cem-heroi__tocha { pointer-events: none; }
 .cem-heroi__luz { mix-blend-mode: screen; pointer-events: none; animation: cem-luz 7s ease-in-out infinite; }
 @keyframes cem-luz { 50% { opacity: 0.82; } }
 .cem-heroi__cabeca { grid-column: 1 / -1; display: grid; gap: 0.6rem; align-content: start; justify-items: start; max-width: 38rem; }
@@ -173,7 +174,17 @@
 .cem-heroi__poeira i { position: absolute; width: 0.3%; aspect-ratio: 1; background: #fff3c4; border-radius: 1px; opacity: 0; animation: cem-poeira 8s linear infinite; }
 @keyframes cem-poeira { 0% { opacity: 0; transform: translate(0, 0); } 20% { opacity: 0.7; } 80% { opacity: 0.5; } 100% { opacity: 0; transform: translate(1.2vw, 2.4vw); } }
 .cem-pausado *, .cem-pausado { animation-play-state: paused !important; }
-.cem-heroi__visita { position: absolute; display: block; }
+.cem-heroi__visita { position: absolute; display: block; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; }
+/* Os visitantes recebem o toque: a camada do texto deixa passar o clique onde não há texto. */
+.cem-heroi__cena { pointer-events: none; }
+.cem-heroi__palco { pointer-events: auto; }
+.cem-heroi__cabeca, .cem-heroi__lateral { pointer-events: auto; }
+.cem-heroi__balao {
+  position: absolute; z-index: 3; width: max-content; max-width: min(17rem, 60%); padding: 0.45rem 0.65rem; border-radius: 10px; cursor: pointer;
+  background: #fbf3df; color: #1b1208; font: 650 clamp(0.75rem, 0.6rem + 0.5vw, 0.875rem)/1.35 var(--fonte-texto); text-wrap: pretty;
+  box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px rgba(0, 0, 0, 0.3); animation: cem-balao 0.2s ease-out;
+}
+@keyframes cem-balao { from { opacity: 0; transform: translateY(4px); } }
 .cem-heroi__visita .gato-pixel, .cem-heroi__visita .coruja-pixel { width: 100%; height: 100%; }
 .cem-heroi__visita .coruja-pixel { --coruja-escala: 1; }
 
@@ -188,7 +199,7 @@
 @keyframes cem-fagulha { from { opacity: 1; transform: translate(0, 0); } to { opacity: 0; transform: translate(var(--dx), -22vw); } }
 
 /* ---------- Barra branca: abas, período, placar e liga (como a barra de atalhos da página inicial) ---------- */
-.cem-barra { display: grid; gap: var(--e-3); padding: var(--e-3); border-radius: 20px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda); }
+.cem-barra { display: grid; gap: var(--e-3); padding: var(--e-3); border-radius: var(--raio-cartao); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-folha); }
 .cem-barra .rk-secoes { margin: 0; }
 .cem-barra__linha { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3) var(--e-6); padding: 0 var(--e-2) var(--e-1); }
 .cem-placar { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-6); margin: 0; flex: 1 1 auto; }
@@ -196,13 +207,11 @@
 .cem-placar dt { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--texto-2); white-space: nowrap; }
 .cem-placar dd { margin: 0; font-weight: 800; font-size: 1.125rem; line-height: 1.25; color: var(--texto); white-space: nowrap; }
 .cem-placar__nome { overflow: hidden; text-overflow: ellipsis; max-width: 12rem; }
-.cem-periodo { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--borda); }
-.cem-periodo__opcao { min-height: 40px; padding: 0 var(--e-4); border: 0; border-radius: 999px; background: transparent; cursor: pointer; font: inherit; font-weight: 700; color: var(--texto-2); }
-.cem-periodo__opcao[aria-checked="true"] { background: var(--verdete); color: #fff; }
+/* O período é o .seletor comum do atlas (base.css). */
 .cem-periodo__opcao:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
 .cem-liga { display: inline-flex; align-items: center; gap: var(--e-2); min-height: 44px; font-weight: 700; color: var(--verdete); text-decoration: none; }
 .cem-liga:hover { text-decoration: underline; }
-.cem-aviso { display: flex; gap: var(--e-2); align-items: center; margin: 0; padding: var(--e-3) var(--e-4); border-radius: 12px; background: var(--ouro-veu); color: var(--texto); }
+.cem-aviso { display: flex; gap: var(--e-2); align-items: center; margin: 0; padding: var(--e-3) var(--e-4); border-radius: var(--raio-controle); background: var(--ouro-veu); color: var(--texto); }
 .cem-carregando { min-height: 24rem; }
 
 /* ---------- Escadaria da Ascensão ---------- */
@@ -243,7 +252,7 @@
 /* ---------- Classificação dos Cem ---------- */
 .cem-lista {
   display: grid; gap: var(--e-3); padding: var(--e-5) var(--e-5) var(--e-4); border-radius: var(--raio-cartao, 16px);
-  background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda); scroll-margin-top: calc(var(--altura-cabecalho, 64px) + 16px);
+  background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-folha); scroll-margin-top: calc(var(--altura-cabecalho, 64px) + 16px);
 }
 .cem-lista__cabeca { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--e-3); }
 .cem-lista__faixa { margin: 2px 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
@@ -257,18 +266,21 @@
 .cem-legenda__chama { image-rendering: pixelated; object-fit: cover; object-position: 0 0; width: 16px; height: 16px; }
 
 .cem-linhas { list-style: none; margin: 0; padding: 0; }
+.cem-linhas { display: grid; }
+/* Atlas unificado (01/11/2026): a lista é uma página plana, uma pessoa por linha, separadas por traço fino (sem
+   cartão por linha); a sua linha leva o véu e o filete verdete da seleção de Treinar. */
 .cem-linha {
   display: grid; grid-template-columns: 2.75rem 3.25rem 2rem minmax(0, 1fr) minmax(6rem, 11rem); align-items: center; gap: var(--e-3);
-  min-height: 48px; padding: 6px var(--e-3); border-top: 1px solid var(--borda);
+  min-height: 52px; padding: 6px var(--e-3); border-top: var(--borda); background: transparent;
   scroll-margin: 40vh 0;
 }
-.cem-linhas > .cem-linha:first-child { border-top: 0; }
+.cem-marco + .cem-linha { border-top: 0; }
 /* No Torneio não há movimento: quatro colunas (posição, iniciais, nome, andar). */
 .cem-linha--torneio { grid-template-columns: 2.75rem 2rem minmax(0, 1fr) minmax(6rem, 11rem); }
 .cem-linha__andar { font-size: 0.75rem; font-weight: 700; color: var(--texto-2); }
 .cem-linha:hover { background: var(--superficie-2); }
 .cem-linha__pos { font-family: var(--fonte-pixel); font-size: 1.5rem; line-height: 1; text-align: right; color: var(--texto); }
-.cem-linha--dez .cem-linha__pos { color: var(--ouro-texto, #7a5710); }
+.cem-linha--dez .cem-linha__pos { color: var(--texto); }
 .cem-linha__quem { display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--e-3); min-width: 0; }
 .cem-linha__nome { font-weight: 700; line-height: 1.3; overflow-wrap: anywhere; color: var(--texto); }
 .cem-linha__selos { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-1) var(--e-2); min-height: 0; }
@@ -279,20 +291,19 @@
 .cem-linha__placar b { grid-column: 1 / -1; font-size: 1.125rem; font-weight: 800; color: var(--texto); }
 .cem-linha__barra { grid-column: 1 / -1; height: 4px; margin-top: 4px; border-radius: 2px; background: var(--superficie-2); overflow: hidden; }
 .cem-linha__barra span { display: block; height: 100%; background: var(--verdete); opacity: 0.55; transform-origin: right; border-radius: 2px; }
-/* A sua linha: véu verde, filete dourado e o número em destaque. */
-.cem-linha--voce { background: var(--cem-veu-eu); box-shadow: inset 4px 0 0 var(--cem-ouro); border-radius: 10px; border-top-color: transparent; }
-.cem-linha--voce + .cem-linha { border-top-color: transparent; }
-.cem-linha--voce:hover { background: var(--cem-veu-eu); }
+/* A sua linha: véu verdete, filete verdete e o número em destaque. */
+.cem-linha--voce { background: var(--verdete-veu); box-shadow: inset 3px 0 0 var(--verdete); }
+.cem-linha--voce:hover { background: var(--verdete-veu); }
 .cem-linha--voce .cem-linha__pos { color: var(--verdete); }
 .cem-linha--voce .cem-linha__barra span { opacity: 1; }
 .cem-linha:focus { outline: 3px solid var(--foco); outline-offset: 2px; }
 .cem-escolher { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8125rem; font-weight: 700; color: var(--verdete); }
 .cem-mais { justify-self: center; min-height: 44px; }
 /* Marcos entre as faixas: uma régua fina com o nome do degrau, sem caixa. */
-.cem-marco { display: flex; align-items: center; gap: var(--e-3); padding: var(--e-4) var(--e-3) var(--e-1); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ouro-texto, #7a5710); }
-.cem-marco::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--cem-ouro), transparent); opacity: 0.6; }
-.cem-marco + .cem-linha { border-top-color: transparent; }
+.cem-marco { display: flex; align-items: center; gap: var(--e-3); padding: var(--e-4) var(--e-3) var(--e-2); font-size: var(--meta); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
+.cem-marco::after { content: ""; flex: 1; height: 1px; background: var(--traco); }
 .cem-linhas > .cem-marco:first-child { padding-top: var(--e-1); }
+.cem-marco { padding: var(--e-4) var(--e-3) var(--e-2); }
 .cem-lista__intervalo { margin: 0; text-align: center; color: var(--texto-2); letter-spacing: 0.3em; }
 
 /* Movimento: seta e número, "=", "novo" e a chama. A cor nunca é a única pista. */
@@ -357,6 +368,9 @@
   .cem-heroi__cena { grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); aspect-ratio: auto; min-height: 34rem; }
   .cem-heroi__podio { padding-left: clamp(1.25rem, 2.4vw, 2.25rem); }
   .cem-escada__palco { aspect-ratio: auto; min-height: 24rem; }
+  /* No tablet a cena fica mais alta que 16:9 e sobra mundo: alinhado pela direita, o gato e a coruja (no canto direito
+     do chão) continuam à vista. */
+  .cem-heroi__mundo { left: calc(100cqw - max(100cqw, 177.78cqh)); }
 }
 @media (max-width: 40rem) {
   .cem { gap: var(--e-5); }
@@ -366,9 +380,11 @@
   .cem-heroi__cena::before { display: none; }
   .cem-heroi__palco { position: relative; inset: auto; z-index: 0; grid-row: 1; grid-column: 1; aspect-ratio: 280 / 270; container-type: inline-size; }
   .cem-heroi__mundo { width: 171.43cqw; left: -70cqw; top: 0; }
-  .cem-heroi__palco::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8, 10, 14, 0.75) 0%, rgba(8, 10, 14, 0.2) 34%, transparent 50%, transparent 80%, #0c0f12 100%); }
+  /* O balão da coruja (pousada no alto) desce para baixo do título, que fica por cima da cena no celular. */
+  .cem-heroi__balao--coruja { max-width: min(15rem, 52%); }
+  .cem-heroi__palco::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(8, 10, 14, 0.75) 0%, rgba(8, 10, 14, 0.2) 34%, transparent 50%, transparent 80%, #0c0f12 100%); }
   .cem-heroi__cabeca { display: contents; }
-  .cem-heroi__titulo { grid-row: 1; grid-column: 1; z-index: 1; align-self: start; padding: var(--e-4) var(--e-4) 0; gap: 0.2rem; }
+  .cem-heroi__titulo { grid-row: 1; grid-column: 1; z-index: 1; align-self: start; padding: var(--e-4) var(--e-4) 0; gap: 0.2rem; pointer-events: none; }
   .cem-heroi h1 { font-size: 1.75rem; }
   .cem-heroi__sub { display: none; }
   /* O relógio desce para o chão escuro, embaixo da cena, longe dos cavaleiros e dos pedestais. */
@@ -401,12 +417,16 @@
   .cem-lista__acoes { width: 100%; }
   .cem-lista__acoes .botao { flex: 1 1 10rem; justify-content: center; }
   .cem-legenda { padding-inline: var(--e-2); }
-  .cem-linha { grid-template-columns: 2.25rem minmax(0, 1fr) auto; grid-template-areas: "pos quem placar" "pos mov placar"; column-gap: var(--e-3); row-gap: 2px; padding: 6px var(--e-2); min-height: 52px; }
-  .cem-linha__pos { grid-area: pos; font-size: 1.375rem; }
+  /* No celular, duas camadas: à esquerda o número com o movimento embaixo; ao lado o nome com os emblemas. */
+  .cem-linhas { padding: 6px; gap: 6px; }
+  .cem-linha { grid-template-columns: 2.6rem minmax(0, 1fr) auto; grid-template-areas: "pos quem placar" "mov quem placar"; column-gap: var(--e-3); row-gap: 2px; padding: 8px 10px; min-height: 0; align-items: center; }
+  .cem-linha__pos { grid-area: pos; font-size: 1.375rem; text-align: center; align-self: end; }
   .cem-linha__avatar { display: none; }
   .cem-linha__quem { grid-area: quem; }
-  .cem-linha__selos { flex-basis: 100%; }
-  .cem-linha__mov { grid-area: mov; display: flex; gap: var(--e-2); }
+  .cem-linha__quem { align-self: center; gap: 2px var(--e-2); }
+  .cem-linha__selos { flex-basis: 100%; justify-content: flex-start; }
+  .cem-linha__mov { grid-area: mov; display: flex; justify-content: center; align-self: start; }
+  .cem-linha__mov .cem-mov { min-height: 18px; padding: 0 4px; font-size: 0.75rem; }
   .cem-linha__mov:empty { display: none; }
   .cem-linha__placar { grid-area: placar; min-width: 4.5rem; }
   .cem-linha__barra { width: 4.5rem; justify-self: end; }
@@ -430,3 +450,14 @@
 :root[data-tema="escuro"] .cem-degrau__rota { color: #a9b6b9; }
 :root[data-tema="escuro"] .cem-mov--fogo { background: #3a2a14; color: #ffc46b; }
 :root[data-tema="escuro"] .cem-linha--voce { box-shadow: inset 4px 0 0 var(--cem-ouro); }
+
+/* Point and click: passar o mouse num bicho acende um contorno dourado (dá para clicar e ele fala). */
+@media (hover: hover) { .cem-heroi__visita:hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }
+
+/* Os visitantes no teclado (01/11/2026): anel de foco claro sobre o salão escuro e alvo de toque de pelo menos 44 px. */
+.cem-heroi__visita { -webkit-tap-highlight-color: transparent; }
+.cem-heroi__visita::before { content: ""; position: absolute; left: 50%; top: 50%; width: max(100%, 44px); height: max(100%, 44px); translate: -50% -50%; }
+.cem-heroi__visita:focus-visible { outline: 3px solid #ffe3a3; outline-offset: 3px; border-radius: 10px; }
+.cem-heroi__visita:focus-visible > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); }
+/* Sem lugar livre para a fala: ela sai da vista (o aviso do leitor de tela continua). */
+.cem-heroi__balao--sem-lugar { visibility: hidden; }

@@ -1,0 +1,193 @@
+/**
+ * As falas dos bichos (01/11/2026, pedido do Tales): a coruja é a sábia e, a cada toque, explica um conceito que
+ * cai na prova (uma frase, do jeito que a gente guarda); o gato é o preguiçoso e só quer descansar. Um lugar só para
+ * a página inicial, o menu, o ranking e a Biblioteca. Cada toque traz uma fala diferente: a ordem é embaralhada por
+ * sessão e só repete depois de passar por todas (fixtures/testar_falas_bichos.mjs confere tamanho e repetição).
+ */
+export const CONCEITOS_CORUJA: readonly string[] = [
+  'Salter-Harris II: o traço passa pela fise e sai pela metáfise (o fragmento de Thurston-Holland). É o tipo mais comum.',
+  'Salter-Harris V: compressão da fise. Muitas vezes só se descobre depois, pelo distúrbio de crescimento.',
+  'Garden classifica o colo do fêmur de I a IV: III e IV são as desviadas.',
+  'Pauwels olha a inclinação do traço no colo do fêmur: o tipo III passa de 50 graus e é o mais instável.',
+  'Neer divide o úmero proximal em 4 partes: uma parte conta como desviada com mais de 1 cm ou 45 graus.',
+  'Gustilo IIIB: exposta que precisa de cobertura de partes moles. IIIC: lesão arterial que precisa de reparo.',
+  'Schatzker VI no platô tibial: o traço separa a metáfise da diáfise.',
+  'Weber olha a fíbula e a sindesmose: A abaixo, B no nível, C acima.',
+  'Lauge-Hansen: supinação-rotação externa é o mecanismo mais comum de fratura do tornozelo.',
+  'Sinal de Hawkins: a faixa radiolucente no domo do tálus, de 6 a 8 semanas, indica vascularização. Bom sinal!',
+  'Monteggia é fratura da ulna com luxação da cabeça do rádio. Bado I, anterior, é a mais comum.',
+  'Galeazzi é fratura do rádio com lesão da radioulnar distal. Sem cirurgia, costuma ir mal no adulto.',
+  'Essex-Lopresti: cabeça do rádio + membrana interóssea + radioulnar distal. Atenção ao punho!',
+  'Tríade terrível do cotovelo: luxação, fratura da cabeça do rádio e do coronoide.',
+  'Gartland III na supracondiliana da criança: desviada, sem contato cortical.',
+  'Na supracondiliana em extensão, o nervo mais lesado é o interósseo anterior: a criança não faz o "OK".',
+  'Escafoide: a irrigação entra pelo polo distal; o polo proximal é o que corre risco de necrose.',
+  'Kienböck é a necrose do semilunar, associada à variância ulnar negativa.',
+  'Bennett: fratura-luxação da base do 1º metacarpo; o abdutor longo do polegar puxa a diáfise.',
+  'Fratura do boxeador é a do colo do 5º metacarpo.',
+  'Dedo em martelo: perdeu o extensor terminal na falange distal. Dedo de camisa (jersey): avulsão do flexor profundo, mais no anular.',
+  'Perthes: necrose da cabeça femoral, em geral dos 4 aos 8 anos; o pilar lateral de Herring dá o prognóstico.',
+  'Epifisiólise instável (Loder) é quando a criança não consegue apoiar: o risco de necrose é bem maior.',
+  'Displasia do quadril: Ortolani reduz o quadril luxado; Barlow luxa o quadril instável.',
+  'Pé torto congênito, CAVE: cavo, aduto, varo e equino. No Ponseti, o equino é o último a corrigir.',
+  'Blount infantil: ângulo metáfise-diáfise de Drennan acima de 16 graus aponta para a tíbia vara.',
+  'Osteossarcoma: metáfise, em volta do joelho, com triângulo de Codman e raios de sol.',
+  'Ewing: diáfise, translocação t(11;22) e reação periosteal em casca de cebola.',
+  'Tumor de células gigantes: lítico, excêntrico, na epífise do esqueleto maduro.',
+  'Osteoma osteoide: dor noturna que melhora com anti-inflamatório e nidus pequeno, abaixo de 2 cm.',
+  'Escore de Mirels de 9 ou mais: risco alto de fratura patológica, pense em fixação profilática.',
+  'Lisfranc: o fleck sign na base do 2º metatarso denuncia a lesão tarsometatársica.',
+  'Fratura de Jones: zona 2 do 5º metatarso, a junção metáfise-diáfise, de irrigação pobre.',
+  'Síndrome compartimental: dor desproporcional e dor ao estiramento passivo vêm primeiro. Delta abaixo de 30 mmHg, fasciotomia.',
+  'Embolia gordurosa: hipoxemia, alteração neurológica e petéquias, em geral 24 a 72 horas depois da fratura.',
+  'Colles desvia o fragmento para dorsal; Smith, para volar.',
+  'Seddon: neuropraxia (só condução), axonotmese (axônio rompido) e neurotmese (nervo rompido).',
+  'Lachman é o teste mais sensível para o ligamento cruzado anterior.',
+  'Na luxação anterior do ombro: Hill-Sachs na cabeça do úmero, Bankart no lábio anteroinferior.',
+  'Meyerding gradua a espondilolistese pelo escorregamento: grau I até 25%, e assim por diante.',
+  'Tile: a fratura do anel pélvico B é instável na rotação e estável na vertical; a C é instável nas duas.',
+  'Young-Burgess: compressão lateral, compressão anteroposterior (o livro aberto), cisalhamento vertical e combinado.',
+  'Letournel divide o acetábulo em 5 fraturas simples e 5 associadas. A de ambas as colunas é a mais comum das associadas.',
+  'Pipkin classifica a fratura da cabeça femoral que acompanha a luxação do quadril: o tipo III tem também fratura do colo.',
+  'Thompson-Epstein é para a luxação posterior do quadril; reduzir em até 6 horas protege a cabeça femoral.',
+  'Hoffa é a fratura coronal do côndilo femoral: o lateral é o mais acometido e escapa no raio X de frente.',
+  'Patela: o mecanismo extensor íntegro (consegue elevar a perna estendida) permite tratar sem cirurgia a fratura sem desvio.',
+  'Segond: avulsão da cápsula lateral da tíbia. Pense em lesão do ligamento cruzado anterior.',
+  'O\'Donoghue: a tríade infeliz é cruzado anterior, colateral medial e menisco medial.',
+  'Pilão tibial: Rüedi-Allgöwer de I a III; partes moles primeiro, fixação definitiva quando a pele deixar.',
+  'Tálus: Hawkins classifica o colo de I a IV; quanto maior, maior o risco de necrose.',
+  'Calcâneo: ângulo de Böhler normal de 20 a 40 graus; ele cai na fratura com afundamento articular. Sanders usa a tomografia.',
+  'Maisonneuve: fratura alta da fíbula com lesão da sindesmose. Palpe sempre a fíbula inteira!',
+  'Tillaux juvenil: avulsão anterolateral da epífise distal da tíbia, na fase de fechamento da fise.',
+  'Fratura triplanar: aparece como Salter-Harris III de frente e II de perfil.',
+  'Clavícula: a do terço médio é a mais comum; Neer olha a do terço distal pelos ligamentos coracoclaviculares.',
+  'Rockwood gradua a luxação acromioclavicular de I a VI; a partir do IV, em geral, a conduta é cirúrgica.',
+  'Ombro: a luxação posterior pede a incidência axilar e lembra convulsão e choque elétrico.',
+  'Manguito: o supraespinal é o mais lesado. Jobe testa o supraespinal; Patte, o infraespinal.',
+  'Diáfise do úmero: a lesão do nervo radial é a mais comum; na Holstein-Lewis, o traço espiral no terço distal.',
+  'Cotovelo: luxação posterolateral é a mais comum. Reduzir e testar a estabilidade em extensão.',
+  'Mason classifica a cabeça do rádio: tipo I sem desvio, tipo III cominutiva.',
+  'Olécrano: o tríceps puxa o fragmento; a banda de tensão transforma a tração em compressão.',
+  'Côndilo lateral do úmero na criança: Milch; pode não consolidar e levar ao cúbito valgo com paralisia ulnar tardia.',
+  'Epicôndilo medial na criança: pode ficar preso na articulação depois da luxação do cotovelo.',
+  'Rádio distal: inclinação radial de 22 graus, altura de 11 mm e inclinação volar de 11 graus.',
+  'Barton é a fratura-luxação do rebordo articular do rádio distal, volar ou dorsal.',
+  'Chauffeur é a fratura da estiloide radial.',
+  'Perilunar: Mayfield descreve a progressão em 4 estágios, do escafolunar até a luxação do semilunar.',
+  'Dissociação escafolunar: o sinal de Terry Thomas, espaço maior que 3 mm entre os dois.',
+  'Polegar do esquiador (ou do guarda-caça): lesão do colateral ulnar da metacarpofalângica; a lesão de Stener impede a cicatrização.',
+  'Tenossinovite de De Quervain: abdutor longo e extensor curto do polegar no 1º compartimento; Finkelstein positivo.',
+  'Dupuytren: a corda pré-tendínea vem da fáscia palmar; o anular é o dedo mais acometido.',
+  'Túnel do carpo: Phalen e Tinel; a eletroneuromiografia confirma o nervo mediano.',
+  'Coluna: Denis divide em três colunas; a lesão de duas ou mais costuma ser instável.',
+  'Fratura de Chance: flexão-distração, comum com cinto de segurança abdominal; procure lesão de víscera oca.',
+  'Atlas: a fratura de Jefferson é a explosão do anel de C1 por carga axial.',
+  'Odontoide: Anderson-D\'Alonzo; o tipo II, na base, é o que mais pseudoartrosa.',
+  'Fratura do enforcado: espondilolistese traumática de C2, com fratura bilateral da pars interarticular (Levine-Edwards).',
+  'Escoliose idiopática do adolescente: o ângulo de Cobb mede a curva; Risser estima o que falta crescer.',
+  'Osteomielite aguda na criança: metáfise; o estafilococo áureo é o agente mais comum.',
+  'Artrite séptica do quadril: critérios de Kocher (febre, carga, VHS e leucócitos) separam da sinovite transitória.',
+  'Osteogênese imperfeita: escleras azuis e fraturas de repetição; defeito no colágeno tipo I.',
+  'Acondroplasia: mutação do FGFR3, nanismo rizomélico; a inteligência é normal.',
+  'Condrossarcoma: dor em lesão cartilaginosa no adulto. É tratado com cirurgia, sem quimioterapia nem radioterapia.',
+  'Cisto ósseo simples: o sinal do fragmento caído (fallen fragment) é característico.',
+  'Cisto ósseo aneurismático: níveis líquido-líquido na ressonância.',
+  'Mieloma múltiplo: lesões líticas em saca-bocado e cintilografia muitas vezes normal.',
+  'Metástase óssea no adulto: mama, próstata, pulmão, rim e tireoide. A do rim e a da tireoide sangram muito.',
+  'Classificação de Enneking: estadia tumor ósseo benigno (1, 2, 3) e maligno (I, II, III).',
+  'Consolidação primária pede estabilidade absoluta; a secundária, com calo, vem da estabilidade relativa.',
+  'Placa em ponte: estabilidade relativa para fratura multifragmentada, sem abrir o foco.',
+  'Haste intramedular é um tutor de carga compartilhada; a placa é de carga protegida.',
+  'Pseudoartrose hipertrófica pede estabilidade; a atrófica pede biologia.',
+  'Lei de Wolff: o osso se remodela conforme a carga que recebe.',
+  'Lei de Hueter-Volkmann: compressão freia o crescimento da fise; tração estimula.',
+  'Fratura exposta: antibiótico o mais cedo possível; na Gustilo III, cefalosporina mais aminoglicosídeo.',
+  'Lesão de Morel-Lavallée: desenluvamento fechado sobre o trocânter, coleção entre a gordura e a fáscia.',
+  'Trombose venosa: Virchow junta estase, lesão endotelial e hipercoagulabilidade.',
+  'Síndrome de Volkmann: contratura isquêmica do antebraço depois da síndrome compartimental.',
+  'Prótese de quadril: a luxação mais comum é a posterior; flexão, adução e rotação interna.',
+  'Vancouver classifica a fratura periprotética do fêmur: B2 tem haste solta, B3 tem também osso ruim.',
+  'Joelho: alinhamento mecânico neutro na artroplastia, eixo passando pelo centro do joelho.',
+  'Pé diabético: Charcot destrói a arquitetura do pé; Eichenholtz descreve as fases.',
+  'Hálux valgo: ângulo metatarsofalângico normal até 15 graus; intermetatarsal até 9.',
+  'Neuroma de Morton: entre o 3º e o 4º metatarso, com dor e choque na compressão lateral do antepé.',
+  'Tendão de Aquiles: o teste de Thompson positivo (sem flexão plantar ao apertar a panturrilha) indica ruptura.',
+  'Coalizão tarsal: a calcaneonavicular aparece no raio X oblíquo (sinal do tamanduá); a talocalcânea, no sinal do C.',
+  'Legg-Calvé-Perthes: Catterall e Herring classificam; Stulberg avalia o resultado final.',
+  'Crescimento do membro inferior: a fise do fêmur distal cresce cerca de 9 mm por ano e a da tíbia proximal, cerca de 6 mm.',
+]
+
+export const FALAS_GATO: readonly string[] = [
+  'Cinco minutinhos... de soneca, não de estudo.',
+  'Eu revisei. Revisei o travesseiro.',
+  'Hoje é dia de descanso. Ontem também foi.',
+  'Me acorda quando cair gato na prova.',
+  'Decúbito dorsal: a melhor posição para memorizar.',
+  'Já fiz a minha parte: guardei o lugar quentinho.',
+  'Você pratica a teoria, eu pratico o repouso relativo.',
+  'Shhh. Estou em fase de consolidação.',
+  'Eu não durmo: faço revisão espaçada de sonecas.',
+  'Meu cronograma: dormir, comer, dormir de novo.',
+  'A coruja sabe tudo. Eu sei onde bate o sol.',
+  'Isso é carinho ou é consulta?',
+  'Repouso, gelo, compressão e mais repouso.',
+  'Hoje estou em carga zero, por orientação médica.',
+  'Pode treinar, eu fico de supervisor. De olhos fechados.',
+  'Já li esse resumo. Dormi na página dois.',
+  'Ronronar também conta como revisão.',
+  'Questão difícil? Deita um pouquinho que passa.',
+  'Mais uma questão? Pode ir. Eu torço daqui.',
+  'Acordei só para dizer que vou voltar a dormir.',
+  'Sete vidas e nenhuma delas para fazer simulado.',
+  'Meu recorde de sequência: 14 horas de sono seguidas.',
+  'Estou em modo avião. Para sempre.',
+  'Minha especialidade é cirurgia do sofá.',
+  'Fiz um alongamento. Agora preciso descansar dele.',
+  'Meu plano de estudo: amanhã. Sempre amanhã.',
+  'Fratura por estresse? Eu só tenho fratura por cochilo.',
+  'Treinei a pegada: fico agarrado na almofada.',
+  'Prefiro a fise aberta. Dá mais tempo para crescer e dormir.',
+  'Se a prova for de soneca, eu tiro dez.',
+  'Um gato em repouso tende a continuar em repouso. Newton concorda.',
+  'Me deixa no gesso: imobilizado é comigo mesmo.',
+  'Já bocejei três vezes. É meu limite de esforço do dia.',
+  'Hoje fiz uma questão. Ela estava embaixo de mim, mas conta.',
+  'A tocha está acesa? Ótimo, fica quentinho para dormir.',
+  'Não confunda: eu não sou preguiçoso, sou econômico.',
+  'Mexer o rabo cansa. Por isso eu não mexo.',
+  'A melhor órtese é um cobertor.',
+  'Simulado às 7 da manhã? Eu acordo às 7 da noite.',
+  'Fiz um ranking só meu: o primeiro lugar é a cama.',
+  'Shh... o esqueleto está estudando por nós dois.',
+  'Dez minutos de estudo, duas horas de recuperação. Fisiologia felina.',
+  'A coruja explica, eu ronrono a matéria.',
+  'Miau é a resposta certa? Não? Então volto a dormir.',
+  'Sou adepto do tratamento conservador. Muito conservador.',
+  'Me chama quando sair o gabarito.',
+]
+
+const embaralhar = (n: number) => {
+  const ordem = Array.from({ length: n }, (_, i) => i)
+  for (let i = n - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [ordem[i], ordem[j]] = [ordem[j], ordem[i]] }
+  return ordem
+}
+
+/**
+ * A próxima fala de uma lista: embaralhada uma vez por sessão do navegador, sem repetir até acabar (e nunca a mesma
+ * duas vezes seguidas na virada). `chave` separa as listas (coruja, gato).
+ */
+export function proximaFala(chave: 'coruja' | 'gato', lista: readonly string[]): string {
+  const nome = `bichos:fala:${chave}`
+  let estado: { ordem: number[]; i: number } | null = null
+  try { estado = JSON.parse(sessionStorage.getItem(nome) ?? 'null') } catch { /* sem sessionStorage */ }
+  if (!estado || !Array.isArray(estado.ordem) || typeof estado.i !== 'number' || estado.ordem.length !== lista.length || estado.i >= lista.length) {
+    const ultima = estado && Array.isArray(estado.ordem) ? estado.ordem[estado.ordem.length - 1] : undefined
+    let ordem = embaralhar(lista.length)
+    if (ordem[0] === ultima && ordem.length > 1) ordem = [...ordem.slice(1), ordem[0]]
+    estado = { ordem, i: 0 }
+  }
+  const fala = lista[estado.ordem[estado.i]]
+  estado.i++
+  try { sessionStorage.setItem(nome, JSON.stringify(estado)) } catch { /* sem sessionStorage */ }
+  return fala
+}

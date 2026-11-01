@@ -251,14 +251,16 @@
 @media (prefers-reduced-motion: reduce) { .dica-folha, .dica-folha__cartao { animation: none; } }
 
 /* ---------- Abas Ranking / Conquistas ---------- */
-.rk-secoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; padding: 0.35rem; border-radius: var(--raio-cartao); background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); }
+/* No trilho do atlas (01/11/2026): a aba atual fica branca com o contorno verdete, como o .seletor de base.css. */
+.rk-secoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; padding: 4px; border-radius: var(--raio-controle); background: var(--superficie-2); border: var(--borda); }
 .rk-secoes__aba {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: var(--toque);
-  border-radius: var(--raio-controle); color: var(--texto-2); font-weight: 750; text-decoration: none;
+  border-radius: calc(var(--raio-controle) - 3px); color: var(--texto-2); font-weight: 750; text-decoration: none;
 }
 .rk-secoes__aba:hover { color: var(--texto); background: var(--superficie); }
-.rk-secoes__aba[aria-current="page"] { color: #fff; background: linear-gradient(135deg, #0b3a35, #14655e); box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.55); }
-.rk-secoes__contador { padding: 0.05rem 0.45rem; border-radius: 999px; background: rgba(244, 207, 124, 0.25); color: inherit; font-size: 0.75rem; }
+.rk-secoes__aba[aria-current="page"] { color: var(--verdete); background: var(--superficie); box-shadow: 0 0 0 1px var(--verdete), var(--sombra); }
+:root[data-tema="escuro"] .rk-secoes__aba[aria-current="page"] { background: var(--verdete-veu); }
+.rk-secoes__contador { padding: 0.05rem 0.45rem; border-radius: 999px; background: var(--superficie-2); color: inherit; font-size: 0.75rem; }
 /* Celular: as três abas não cabem numa linha só; o selo e o contador descem para baixo do nome, sem invadir a aba vizinha. */
 @media (max-width: 34rem) {
   .rk-secoes { gap: 0.25rem; padding: 0.3rem; }

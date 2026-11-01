@@ -23,20 +23,61 @@ X0, PASSO = 24, 43.75          # onde começa a 1ª coluna de quadros (depois do
 LINHAS = ["parada", "andando", "voando", "pousando", "lendo", "dormindo", "acenando", "olhando"]
 
 
+def fundo_de_fora(vazio: np.ndarray) -> np.ndarray:
+    """Os pixels vazios ligados à borda do quadro (vizinhança de 4), por preenchimento a partir das bordas."""
+    h, w = vazio.shape
+    fora = np.zeros_like(vazio)
+    pilha = [(y, x) for y in range(h) for x in (0, w - 1)] + [(y, x) for x in range(w) for y in (0, h - 1)]
+    while pilha:
+        y, x = pilha.pop()
+        if 0 <= y < h and 0 <= x < w and vazio[y, x] and not fora[y, x]:
+            fora[y, x] = True
+            pilha += [(y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)]
+    return fora
+
+
 def main() -> None:
     g = np.asarray(Image.open(FONTE).convert("RGB")).astype(int)
     fundo = g[0, 0]
     folha = np.zeros((QH * len(LINHAS), QW * NQ, 4), np.uint8)
+    # As linhas da folha não caem a cada 32 px certinhos (01/11/2026, Tales: "a coruja está cortada"): a grade fixa
+    # cortava os pés e trazia a ponta da linha de cima. Cada linha é achada pela faixa de pixels desenhados (fora o
+    # nome à esquerda) e recortada com a base dos pés 2 px acima do fim do quadro, igual em todas as linhas.
+    desenho = (np.abs(g - fundo).sum(2) > 0)
+    desenho[:, :X0 + 6] = False
+    tem = desenho.any(1)
+    faixas, y = [], 0
+    while y < g.shape[0]:
+        if tem[y]:
+            ini = y
+            while y < g.shape[0] and tem[y]:
+                y += 1
+            faixas.append((ini, y))
+        else:
+            y += 1
+    assert len(faixas) == len(LINHAS), f"esperava {len(LINHAS)} faixas, achei {faixas}"
     for li in range(len(LINHAS)):
+        ini, fim = faixas[li]
+        assert fim - ini <= QH - 2, f"linha {LINHAS[li]} alta demais: {fim - ini}"
+        topo = fim + 2 - QH
         for k in range(NQ):
             x = round(X0 + PASSO * k)
-            q = g[li * QH:(li + 1) * QH, x:x + QW]
+            q = np.full((QH, QW, 3), fundo)
+            pedaco = g[max(0, topo):fim + 2, x:x + QW]
+            q[QH - pedaco.shape[0]:] = pedaco
+            # Só o que pertence a esta faixa (nada da linha de cima ou de baixo).
+            fora = np.ones(QH, bool)
+            fora[QH - (fim + 2 - ini):QH] = False
+            q[fora] = fundo
             a = (np.abs(q - fundo).sum(2) > 0)
             # O fim do nome da linha (texto) às vezes entra na 1ª coluna: some o que vem antes da 1ª coluna vazia.
             if k == 0:
                 vazias = np.where(~a[:, :8].any(0))[0]
                 if a[:, 0].any() and vazias.size:
                     a[:, :vazias[0]] = False
+            # Fundo é só o que se liga à borda do quadro (01/11/2026, Tales: "a coruja tá cheia de buraco branco"): um
+            # pixel de dentro da coruja com a cor exata do fundo continua pintado, em vez de virar um buraco.
+            a = ~fundo_de_fora(~a)
             folha[li * QH:(li + 1) * QH, k * QW:(k + 1) * QW, :3] = q
             folha[li * QH:(li + 1) * QH, k * QW:(k + 1) * QW, 3] = a * 255
     img = Image.fromarray(folha, "RGBA")

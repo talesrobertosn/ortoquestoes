@@ -1,0 +1,213 @@
+/* O Arquivo da Vila nos Flashcards (01/11/2026), no mesmo jeito aprovado no cronograma:
+   - topo: a cena pintada (CenaArquivo) com o texto num vidro escuro do lado calmo da arte, sem cobrir o fichário;
+   - o resto no vocabulário da página inicial: um painel só para "Hoje", dividido por linhas finas; caminhos com objetos
+     pixel animados; caixas brancas (escuras no tema escuro) de raio 20, controles de raio 12, selos em pílula, bordas
+     finas e sombras macias (nada de sombra "de bloco"). */
+
+/* Vale só com .cf--arquivo (as três páginas do site); o jogo não muda. O fundo é o normal do site, como na página
+   inicial (o assoalho foi testado e retirado em 01/11/2026, junto com a calçada do cronograma). */
+.cf--arquivo {
+  /* Atlas unificado (01/11/2026): fora da cena, os raios e a sombra comuns (16 nas folhas, 10 nos controles); o 20 fica
+     só na moldura da cena. */
+  --ca-raio: var(--raio-cartao); --ca-raio-ctl: var(--raio-controle); --ca-ouro: #f0c46a; --ca-borda: rgba(232, 206, 150, 0.42);
+  --ca-sombra: var(--sombra-folha);
+  position: relative;
+}
+
+/* ── Abas: pílula ── */
+.cf--arquivo .cf-abas { border: 1px solid var(--traco); border-radius: 14px; box-shadow: var(--ca-sombra); }
+.cf--arquivo .cf-abas a { border-radius: 10px; }
+.cf--arquivo .cf-abas a[aria-current="page"] { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+
+/* ── O topo com o Arquivo ── */
+.cf--arquivo .cfh-heroi--arquivo { --ct-foco: 1; display: block; padding: 0; border-radius: var(--mundo-raio); background: #0b1012; overflow: hidden;
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.7); }
+.cfh-heroi--arquivo .cfh-janela { position: relative; overflow: hidden; height: clamp(12rem, 56vw, 15rem); }
+.cfh-heroi--arquivo .cfh-janela .ct-cena { --ct-foco: 1; }
+.cfh-heroi--arquivo .cfh-chao { position: relative; margin: 0; padding: var(--e-4) clamp(1rem, 4vw, 1.5rem) clamp(1.1rem, 4vw, 1.4rem); border-top: 1px solid rgba(232, 206, 150, 0.16);
+  background: linear-gradient(180deg, #121a1c, #0b1012); color: rgba(255, 255, 255, 0.82); font-size: var(--corpo-menor); line-height: 1.55; text-wrap: pretty; }
+.cfh-heroi--arquivo .cfh-janela::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 70%, rgba(11, 16, 18, 0.65) 90%, #0b1012); }
+.cfh-heroi--arquivo .cfh-vidro-arquivo { position: relative; z-index: 1; margin-top: -1.6rem; padding: 0 clamp(1rem, 4vw, 1.5rem) clamp(1.1rem, 4vw, 1.5rem); color: #fff; }
+.cfh-selo { justify-self: start; margin: 0 0 var(--e-3); padding: 0.18rem 0.6rem; border-radius: 999px; background: rgba(10, 12, 20, 0.6); color: var(--ca-ouro);
+  box-shadow: inset 0 0 0 1px var(--ca-borda); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.cfh-heroi--arquivo h1 { color: #fff; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5); }
+.cfh-heroi--arquivo .cfh-heroi__texto > p:not(.cfh-selo) { color: rgba(255, 255, 255, 0.82); }
+.cfh-heroi--arquivo .cfh-heroi__texto > p.cfh-heroi__pessoal { border-left: 0; border-radius: 12px; background: rgba(255, 255, 255, 0.06); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); color: #fff; }
+.cfh-heroi--arquivo .cfh-heroi__pessoal strong { color: var(--ca-ouro); }
+/* "Estudar flashcards" é o cristal da página inicial (componentes/Cristal.css): a ação de começar a estudar
+   (decisão de 01/11/2026: cristal só para começar; o resto da ação é verdete). Aqui só o formato com ícone e legenda. */
+.cfh-heroi--arquivo .cristal.cfh-heroi__estudar { justify-content: flex-start; gap: var(--e-3); margin-top: var(--e-5); min-height: 64px; padding: var(--e-2) var(--e-5) var(--e-2) var(--e-2); text-align: left; }
+.cfh-heroi--arquivo .cfh-heroi__estudar svg { flex: none; box-sizing: content-box; padding: 0.45rem; width: 1.3rem; height: 1.3rem; border-radius: 8px; background: var(--cristal-icone); color: var(--cristal-tinta); }
+.cfh-heroi--arquivo .cfh-heroi__estudar small { font-weight: 650; opacity: 0.9; text-shadow: none; }
+.cfh-heroi--arquivo .cfh-vidro { border-radius: var(--ca-raio-ctl); border-color: var(--ca-borda); background: rgba(10, 12, 20, 0.45); color: #fff; }
+.cfh-heroi--arquivo .tr-heroi__link { color: #ffd98e; }
+@media (min-width: 36rem) and (max-width: 63.99rem) { .cfh-heroi--arquivo .cfh-janela { height: auto; aspect-ratio: 12 / 5; } }
+@media (min-width: 64rem) {
+  .cf--arquivo .cfh-heroi--arquivo { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; gap: 0; }
+  .cfh-heroi--arquivo .cfh-palco { position: relative; display: flex; align-items: center; min-height: min(30rem, calc((min(76rem, 100vw) - 2.5rem) / 2.4)); }
+  .cfh-heroi--arquivo .cfh-janela { position: absolute; inset: 0; height: auto; }
+  .cfh-heroi--arquivo .cfh-janela .ct-cena { --ct-foco: 0.4; }
+  .cfh-heroi--arquivo .cfh-chao { padding: var(--e-4) clamp(1.25rem, 2.4vw, 2rem) var(--e-5); }
+  .cfh-heroi--arquivo .cfh-janela::after { background: linear-gradient(90deg, rgba(8, 12, 16, 0.5), rgba(8, 12, 16, 0.2) 40%, transparent 56%), linear-gradient(180deg, transparent 80%, rgba(8, 12, 16, 0.35)); }
+  .cfh-heroi--arquivo .cfh-vidro-arquivo {
+    width: min(31rem, 44%); margin: clamp(1.25rem, 2.4vw, 2rem); padding: clamp(1.15rem, 1.8vw, 1.5rem); border-radius: 16px;
+    background: linear-gradient(180deg, rgba(14, 18, 26, 0.78), rgba(8, 10, 16, 0.86));
+    box-shadow: inset 0 0 0 1px var(--ca-borda), inset 0 0 0 4px rgba(0, 0, 0, 0.3), inset 0 0 0 5px rgba(232, 206, 150, 0.12), 0 14px 34px rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  }
+  .cfh-heroi--arquivo .cfh-vidro-arquivo::before, .cfh-heroi--arquivo .cfh-vidro-arquivo::after {
+    content: ""; position: absolute; width: 9px; height: 9px; background: var(--ca-ouro); transform: rotate(45deg); box-shadow: 0 0 8px rgba(240, 196, 106, 0.6); pointer-events: none; }
+  .cfh-heroi--arquivo .cfh-vidro-arquivo::before { top: -4px; left: -4px; }
+  .cfh-heroi--arquivo .cfh-vidro-arquivo::after { bottom: -4px; right: -4px; }
+  .cfh-heroi--arquivo h1 { font-size: clamp(2rem, 3.2vw, 2.8rem); }
+}
+@media (min-width: 64rem) and (max-width: 79.99rem) { .cfh-heroi--arquivo .cfh-vidro-arquivo { width: min(31rem, 48%); } }
+
+/* Desempenho e Cronograma: a mesma cena numa faixa curta atrás do título, com o fichário à vista. */
+.cf--arquivo .cf-cabeca--arquivo { position: relative; isolation: isolate; overflow: hidden; padding: clamp(1.2rem, 3vw, 1.8rem); border-radius: var(--ca-raio); background: #0b1012; color: #fff;
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.7); }
+.cf-cabeca--arquivo .ct-cena { z-index: -1; --ct-foco: 1; }
+.cf-cabeca--arquivo .ct-cena__mundo { bottom: auto; top: 50%; transform: translateY(-46%); }
+.cf-cabeca--arquivo .ct-cena::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 12, 16, 0.88), rgba(8, 12, 16, 0.62) 46%, rgba(8, 12, 16, 0.08) 78%); }
+.cf-cabeca--arquivo h1 { color: #fff; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5); }
+.cf-cabeca--arquivo p:last-child { color: rgba(255, 255, 255, 0.82); max-width: 56ch; }
+.cf-cabeca--arquivo .cf-selo { color: var(--ca-ouro); }
+@media (max-width: 40rem) { .cf-cabeca--arquivo .ct-cena::after { background: linear-gradient(90deg, rgba(8, 12, 16, 0.9), rgba(8, 12, 16, 0.6)); } }
+
+/* ── As caixas de sempre, brancas e redondas ── */
+.cf--arquivo :is(.cf-hoje, .cf-crono, .cf-passos li, .cf-modo, .cf-links a, .cf-convite, .cf-aviso, .cf-rede, .cf-numero, .cf-bloco, .cfc-sugerido) {
+  border: 1px solid var(--traco); border-radius: var(--ca-raio); box-shadow: var(--ca-sombra);
+}
+.cf--arquivo .cf-convite, .cf--arquivo .cf-aviso { border-style: solid; }
+.cf--arquivo .cf-modo { overflow: hidden; }
+.cf--arquivo .cf-modo:hover { transform: translateY(-2px); box-shadow: var(--ca-sombra), 0 28px 44px -20px rgba(20, 10, 4, 0.8); }
+.cf--arquivo .cf-modo:active { transform: translateY(0); }
+.cf--arquivo .cf-modo__selo { border-radius: 999px; padding: 0.15rem 0.6rem; font-family: var(--fonte-texto); letter-spacing: 0.08em; }
+.cf--arquivo .cf-modo__corpo > em i { border-radius: 8px; box-shadow: none; }
+.cf--arquivo a.cf-atalho, .cf--arquivo .cf-atalho { border: 1px solid var(--traco); border-radius: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 6px 14px -10px rgba(0, 0, 0, 0.3); }
+.cf--arquivo a.cf-atalho:hover { transform: translateY(-2px); box-shadow: 0 12px 22px -12px rgba(0, 0, 0, 0.4); }
+.cf--arquivo a.cf-atalho:active { transform: translateY(0); box-shadow: none; }
+.cf--arquivo .cf-hoje__cabeca h2::before { border-radius: 50%; box-shadow: none; }
+.cf--arquivo .cf-assunto select, .cf--arquivo .botao { border-radius: var(--ca-raio-ctl); }
+.cf--arquivo.cfh .cf-crono { border-color: color-mix(in srgb, var(--px-ouro) 60%, var(--traco)); }
+.cf--arquivo .cf-crono__meta i, .cf--arquivo .cf-modo__meta > i, .cf--arquivo .cfd-mini { border-radius: 999px; box-shadow: none; background: var(--superficie-2); }
+.cf--arquivo .cf-crono__meta em, .cf--arquivo .cf-modo__meta > i > em { border-radius: 999px; }
+.cf--arquivo .cf-passos li:not(:last-child)::after { border-radius: 999px; background: rgba(255, 214, 150, 0.5); }
+.cf--arquivo .cf-chips button { border-radius: 999px; }
+
+/* O aviso de rede (o acervo não carregou inteiro). */
+.cf-rede { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3) var(--e-5); padding: var(--e-4) var(--e-5); background: var(--superficie); color: var(--texto); }
+.cf-rede > svg { color: var(--aviso, #9a6b12); }
+.cf-rede p { flex: 1 1 20rem; margin: 0; line-height: 1.55; }
+.cf--arquivo .cf-bloco .cf-numero { border-radius: 14px; box-shadow: none; }
+
+/* ── Hoje: um painel só, com as divisões em linhas finas (como o progresso da página inicial) ── */
+.cfa-painel { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1px; overflow: hidden; background: var(--traco);
+  border: 1px solid var(--traco); border-radius: var(--ca-raio); box-shadow: var(--ca-sombra); }
+.cfa-painel > * { background: var(--superficie); }
+.cfa-painel__cabeca { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--e-1) var(--e-4); padding: 1.35rem 1.6rem 1rem; }
+.cfa-painel__cabeca h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.35rem; letter-spacing: -0.02em; }
+.cfa-painel__cabeca p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.cfa-celula { display: grid; align-content: start; gap: var(--e-3); min-width: 0; padding: 1.25rem 1.6rem 1.5rem; }
+.cfa-titulo { margin: 0; color: var(--texto-2); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.cfa-filas { display: grid; gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
+.cfa-fila { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 0.8rem; min-height: 56px; padding: 0.6rem 0.8rem;
+  border-radius: var(--ca-raio-ctl); background: var(--superficie-2, var(--porcelana)); color: var(--texto); text-decoration: none;
+  transition: background-color 0.15s ease, transform 0.15s ease; }
+.cfa-fila__icone { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 10px; background: var(--superficie); color: var(--verdete); box-shadow: inset 0 0 0 1px var(--traco); }
+.cfa-fila__texto { display: grid; min-width: 0; }
+.cfa-fila__texto strong { font-size: var(--corpo-menor); }
+.cfa-fila__texto small { color: var(--texto-2); font-size: var(--meta); line-height: 1.3; }
+.cfa-fila__numero { color: var(--verdete); font-family: var(--fonte-pixel-titulo); font-size: 1.9rem; font-weight: 400; line-height: 1; }
+.cfa-fila > svg { color: var(--texto-2); }
+a.cfa-fila:hover { background: var(--verdete-veu); transform: translateX(3px); }
+a.cfa-fila:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
+.cfa-fila--destaque { background: var(--verdete-veu); box-shadow: inset 3px 0 0 var(--verdete); }
+.cfa-fila--vazia { opacity: 0.62; }
+.cfa-fila--vazia .cfa-fila__numero { color: var(--texto-2); }
+/* O cronograma do dia, dentro do painel: sem caixa própria. */
+.cf--arquivo .cfa-celula--crono .cf-crono { padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+.cfa-celula--assunto { grid-column: 1 / -1; padding-top: 1rem; padding-bottom: 1.1rem; }
+.cfa-celula--assunto .cf-assunto { margin: 0; padding: 0; border: 0; }
+@media (max-width: 56rem) { .cfa-painel { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 40rem) { .cfa-painel__cabeca, .cfa-celula { padding-inline: 1.1rem; } }
+
+/* ── Por onde seguir: objetos pixel animados em vez de caixas de texto ── */
+.cfa-secao > h2 { margin: 0 0 var(--e-4); font-family: var(--fonte-marca); font-size: 1.35rem; letter-spacing: -0.02em; }
+.cfa-caminhos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4); }
+.cfa-caminho { display: grid; grid-template-rows: auto 1fr; overflow: hidden; color: var(--texto); text-decoration: none; background: var(--superficie);
+  border: 1px solid var(--traco); border-radius: var(--ca-raio); box-shadow: var(--ca-sombra); transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.cfa-caminho:hover { color: var(--texto); transform: translateY(-3px); box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.45); }
+.cfa-caminho:focus-visible { outline: 3px solid var(--verdete); outline-offset: 3px; }
+.cfa-caminho__corpo { display: grid; align-content: start; gap: var(--e-2); padding: var(--e-4) var(--e-5) var(--e-5); }
+.cfa-caminho__corpo strong { font-family: var(--fonte-marca); font-size: 1.2rem; letter-spacing: -0.02em; }
+.cfa-caminho__corpo > span { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; text-wrap: pretty; }
+.cfa-caminho__corpo > .cfa-caminho__meta { color: var(--texto-2); font-size: var(--meta); font-weight: 650; }
+.cfa-caminho__corpo em { display: inline-flex; align-items: center; gap: var(--e-1); margin-top: var(--e-1); color: var(--verdete); font-style: normal; font-weight: 750; }
+.cfa-caminho:hover em svg { transform: translateX(3px); transition: transform 0.15s ease; }
+/* O palco de cada objeto: um nicho escuro e quente, com a luz vindo de cima. */
+.cfa-objeto { display: block; height: 9.5rem; background-color: #1a1210;
+  background-image: radial-gradient(60% 80% at 50% 0%, rgba(255, 196, 120, 0.28), transparent 70%), linear-gradient(180deg, #2a1c14, #120c0a); }
+.cfa-objeto--fichario, .cfa-objeto--cripta { position: relative; }
+.cfa-objeto--fichario::after, .cfa-objeto--cripta::after { content: ""; position: absolute; left: 50%; bottom: 0.4rem; width: 9rem; aspect-ratio: 96 / 72; transform: translateX(-50%);
+  background: var(--ca-objetos) 0 0 / 200% 200% no-repeat; image-rendering: pixelated; }
+.cfa-objeto--cripta { background-image: radial-gradient(60% 80% at 50% 100%, rgba(90, 150, 255, 0.28), transparent 70%), linear-gradient(180deg, #161c2a, #0a0c14); }
+.cfa-objeto--cripta::after { background-position-y: 100%; }
+/* O fichário abre a gaveta de vez em quando, e sempre que o mouse (ou o foco) chega. */
+.cfa-objeto--fichario::after { animation: cfa-gaveta 7s steps(1) infinite; }
+@keyframes cfa-gaveta { 0%, 78% { background-position-x: 0; } 80%, 96% { background-position-x: 100%; } 100% { background-position-x: 0; } }
+.cfa-caminho:is(:hover, :focus-visible) .cfa-objeto--fichario::after { animation: none; background-position-x: 100%; }
+/* A escada da Cripta respira em azul e acende de vez com o mouse. */
+.cfa-objeto--cripta::after { animation: cfa-cripta 3.2s steps(1) infinite; }
+@keyframes cfa-cripta { 0%, 55% { background-position-x: 0; } 56%, 100% { background-position-x: 100%; } }
+.cfa-caminho:is(:hover, :focus-visible) .cfa-objeto--cripta::after { animation: none; background-position-x: 100%; }
+/* O medidor do desempenho: um tubo de latão que enche com o que já foi estudado. */
+.cfa-objeto--medidor { display: grid; place-items: center; background-image: radial-gradient(60% 80% at 50% 0%, rgba(120, 220, 190, 0.22), transparent 70%), linear-gradient(180deg, #14221e, #0a120f); }
+.cfa-objeto--medidor i { position: relative; display: block; width: 70%; height: 22px; border-radius: 999px; background: #0a0f0d;
+  box-shadow: inset 0 0 0 2px #b8862e, inset 0 0 0 4px #4a2e10, 0 0 0 2px #2a1a0a; overflow: hidden; }
+.cfa-objeto--medidor i::before { content: ""; position: absolute; inset: 4px auto 4px 4px; width: max(6px, calc((100% - 8px) * var(--feito-n, 0))); transform-origin: left;
+  border-radius: 999px; background: repeating-linear-gradient(90deg, #4fb3a5 0 6px, #7fd6c8 6px 8px); box-shadow: 0 0 12px rgba(127, 214, 200, 0.7); animation: cfa-enche 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes cfa-enche { from { transform: scaleX(0); } }
+.cfa-ranking { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-3); margin-top: var(--e-4); padding: var(--e-3) var(--e-4);
+  border: 1px solid var(--traco); border-radius: 16px; background: var(--superficie); color: var(--texto); text-decoration: none; box-shadow: var(--ca-sombra); }
+.cfa-ranking span { display: grid; }
+.cfa-ranking small { color: var(--texto-2); font-size: var(--meta); }
+.cfa-ranking > svg:first-child { color: var(--ouro-texto, #8a6416); }
+.cfa-ranking:hover { background: var(--verdete-veu); color: var(--texto); }
+@media (max-width: 56rem) {
+  .cfa-caminhos { grid-template-columns: minmax(0, 1fr); }
+  .cfa-caminho { grid-template-columns: 10rem minmax(0, 1fr); grid-template-rows: none; }
+  .cfa-objeto { height: 100%; min-height: 8rem; }
+  .cfa-objeto--fichario::after, .cfa-objeto--cripta::after { bottom: auto; top: 50%; transform: translate(-50%, -50%); }
+}
+@media (max-width: 30rem) { .cfa-caminho { grid-template-columns: 7.5rem minmax(0, 1fr); } .cfa-objeto--fichario::after, .cfa-objeto--cripta::after { width: 6.6rem; } }
+
+/* ── Como funciona: recolhido (aberto na primeira visita) ── */
+.cfa-como { border: 1px solid var(--traco); border-radius: var(--ca-raio); background: var(--superficie); box-shadow: var(--ca-sombra); }
+.cfa-como > summary { display: flex; align-items: center; justify-content: space-between; gap: var(--e-3); min-height: 56px; padding: 0 var(--e-5); cursor: pointer; list-style: none;
+  font-family: var(--fonte-marca); font-size: 1.1rem; font-weight: 800; letter-spacing: -0.015em; }
+.cfa-como > summary::-webkit-details-marker { display: none; }
+.cfa-como[open] > summary svg { transform: rotate(180deg); }
+.cfa-como > summary:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; border-radius: var(--ca-raio); }
+.cfa-como .cf-passos { padding: 0 var(--e-5) var(--e-5); }
+.cf--arquivo .cfa-como .cf-passos li { box-shadow: none; background: var(--superficie-2, var(--porcelana)); border-color: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cfa-objeto--fichario::after, .cfa-objeto--cripta::after, .cfa-objeto--medidor i::before { animation: none; }
+  .cfa-caminho, .cfa-fila { transition: none; }
+}
+
+/* ── Celular: topo compacto (atlas unificado, 01/11/2026) ──
+   A janela da cena fica mais baixa e a frase do chão sai (o "Como funciona" explica o mesmo), para "Estudar
+   flashcards" chegar à primeira tela. O fichário continua inteiro na janela. */
+@media (max-width: 35.99rem) {
+  .cfh-heroi--arquivo .cfh-janela { height: clamp(8.5rem, 40vw, 10rem); }
+  .cfh-heroi--arquivo .cfh-vidro-arquivo { margin-top: -1rem; }
+  .cfh-heroi--arquivo .cfh-selo { margin-bottom: var(--e-2); }
+  .cfh-heroi--arquivo h1 { font-size: 1.6rem; line-height: 1.1; }
+  .cfh-heroi--arquivo .cfh-chao { display: none; }
+}
+
+/* ── Como funciona: a linha entre os passos no traço do atlas (o número é o .numero-passo comum) ── */
+.cf--arquivo .cf-passos li:not(:last-child)::after { background: var(--traco-forte); }

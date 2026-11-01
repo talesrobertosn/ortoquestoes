@@ -1,0 +1,30 @@
+/* O painel escuro da página inicial (a missão e o chão do acampamento, sem a cena) para os topos das páginas de
+   estudo sem quadro HD-2D: Revisão, Caderno de erros, Favoritas (Tales, 01/11/2026: "as paletas precisam seguir a
+   página inicial"). Troca as variáveis do herói antigo (verde-noite com horizonte em pixel) pelos tokens --mundo-*,
+   então o que a página já pinta com --sobre-heroi e --heroi-vidro passa a ter tinta marfim e vidro quente. Use junto
+   com o botão .cristal (Cristal.css) para a ação de começar. Carregado só onde é usado. */
+.painel-mundo {
+  --heroi: var(--mundo-painel); --sobre-heroi: var(--mundo-tinta); --sobre-heroi-2: var(--mundo-tinta-2);
+  --heroi-vidro: rgba(255, 255, 255, 0.06); --heroi-traco: var(--mundo-filete);
+  background: var(--mundo-painel) !important; color: var(--mundo-tinta);
+  border: 0 !important; border-radius: var(--mundo-raio) !important;
+  box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 18px 40px -24px rgba(0, 0, 0, 0.55) !important;
+}
+/* O selo do topo: o rótulo dourado da inicial (DIA, MISSÃO), não a etiqueta verde em pixel da temporada. */
+.painel-mundo .tr-heroi__selo, .painel-mundo .painel-mundo__selo {
+  display: inline-flex; align-items: center; gap: 0.4rem; margin: 0 0 0.5rem; padding: 0; background: none; box-shadow: none; border: 0;
+  color: var(--mundo-ouro); font-family: var(--fonte-texto); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.painel-mundo h1 { color: var(--mundo-tinta); }
+.painel-mundo :focus-visible { outline-color: var(--mundo-ouro); }
+/* O botão de começar no painel: o cristal, por cima das regras antigas de cada página (ouro em degrau, branco). */
+.painel-mundo .botao.cristal.cristal {
+  border: 0; border-radius: var(--raio-controle); background: var(--cristal); color: var(--cristal-tinta); box-shadow: var(--cristal-sombra);
+  text-shadow: none;
+}
+.painel-mundo .botao.cristal.cristal:hover:not(:disabled) { background: var(--cristal); color: var(--cristal-tinta); filter: brightness(1.05); transform: translateY(-1px);
+  box-shadow: var(--cristal-sombra-forte); }
+.painel-mundo .botao.cristal.cristal > svg { flex: none; width: 22px; height: 22px; padding: 0; background: none; color: var(--cristal-tinta); }
+.painel-mundo .botao.cristal.cristal small { opacity: 0.9; }
+/* Números do placar em ouro, como a sequência da inicial. */
+.painel-mundo dd { color: var(--mundo-ouro); }
