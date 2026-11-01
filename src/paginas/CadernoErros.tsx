@@ -11,6 +11,8 @@ import { usarSessao } from '../estado/sessao'
 import { revisarHoje, type RegistroQuestao } from '../estado/revisao'
 import { filtrosParaConsulta, href, navegar } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
+import '../estilos/componentes/Cristal.css'
+import '../estilos/componentes/Mundo.css'
 import '../estilos/paginas/CadernoErros.css'
 
 type Situacao = 'abertos' | 'corrigidos' | 'todos'
@@ -160,13 +162,13 @@ export function CadernoErros() {
   if (todos.length === 0) {
     return (
       <div className="ce">
-        <section className="ce-heroi" aria-labelledby="ce-titulo">
+        <section className="ce-heroi painel-mundo" aria-labelledby="ce-titulo">
           <div className="ce-heroi__texto">
             <p className="tr-heroi__selo">Caderno de erros</p>
             <h1 id="ce-titulo">{primeiroNome ? `${primeiroNome}, nenhum erro por aqui, ainda` : 'Nenhum erro por aqui, ainda'}</h1>
             <p>Cada questão que você errar vem para este caderno, com o que você marcou, o gabarito e o porquê. É o material de revisão feito sob medida pelas suas próprias dúvidas.</p>
           </div>
-          <a className="botao ce-heroi__acao" href={href('/treinar')}>
+          <a className="botao cristal ce-heroi__acao" href={href('/treinar')}>
             <Icone nome="raio" tamanho={20} />
             <span><strong>Treinar agora</strong><small>os erros chegam sozinhos</small></span>
           </a>
@@ -185,7 +187,7 @@ export function CadernoErros() {
 
   return (
     <div className="ce">
-      <section className="ce-heroi" aria-labelledby="ce-titulo">
+      <section className="ce-heroi painel-mundo" aria-labelledby="ce-titulo">
         <div className="ce-heroi__texto">
           <p className="tr-heroi__selo">Caderno de erros</p>
           <h1 id="ce-titulo">{tituloCaderno(primeiroNome, abertos.length)}</h1>
@@ -197,12 +199,12 @@ export function CadernoErros() {
           </p>
         </div>
         {abertos.length > 0 ? (
-          <button type="button" className="botao ce-heroi__acao" onClick={() => refazer([...abertos].sort((a, b) => b.registro.q - a.registro.q).slice(0, 10).map((e) => e.id))}>
+          <button type="button" className="botao cristal ce-heroi__acao" onClick={() => refazer([...abertos].sort((a, b) => b.registro.q - a.registro.q).slice(0, 10).map((e) => e.id))}>
             <Icone nome="reiniciar" tamanho={20} />
             <span><strong>Refazer os erros</strong><small>{abertos.length > 10 ? 'os 10 mais recentes' : abertos.length === 1 ? 'o que está em aberto' : 'todos os que estão em aberto'}</small></span>
           </button>
         ) : (
-          <a className="botao ce-heroi__acao" href={href('/treinar')}>
+          <a className="botao cristal ce-heroi__acao" href={href('/treinar')}>
             <Icone nome="raio" tamanho={20} />
             <span><strong>Começar uma sessão</strong><small>questões novas para o caderno</small></span>
           </a>
