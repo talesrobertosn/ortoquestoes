@@ -1,0 +1,34 @@
+{
+  "id": "pediatria-0495",
+  "origem": "TARO 2026",
+  "prova": "TARO",
+  "simulado": false,
+  "tema": "Ortopedia pediátrica",
+  "temaSlug": "pediatria",
+  "subtema": "Outras doenças congênitas",
+  "enunciado": "Na formação embriológica normal dos membros, o cotovelo é formado entre os segmentos",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "zonoskeleton e stylopodium.",
+      "porque": "Entre o zonoesqueleto (cintura escapular) e o estilopódio (úmero) forma-se o ombro, e não o cotovelo."
+    },
+    {
+      "letra": "B",
+      "texto": "stylopodium e zeugopodium.",
+      "porque": "O cotovelo se forma entre o estilopódio (úmero) e o zeugopódio (rádio e ulna), assim como o joelho se forma entre o fêmur e a tíbia com a fíbula."
+    },
+    {
+      "letra": "C",
+      "texto": "zeugopodium e autopodium.",
+      "porque": "Entre o zeugopódio (rádio e ulna) e o autopódio (mão) forma-se o punho."
+    },
+    {
+      "letra": "D",
+      "texto": "zonoskeleton e autopodium.",
+      "porque": "O zonoesqueleto e o autopódio não são segmentos vizinhos: entre eles estão o estilopódio e o zeugopódio. Sua ligação direta corresponde à focomelia, e não a uma articulação normal."
+    }
+  ],
+  "gabarito": "B"
+}

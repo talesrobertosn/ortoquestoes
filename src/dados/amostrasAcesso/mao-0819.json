@@ -1,0 +1,39 @@
+{
+  "id": "mao-0819",
+  "origem": "INTO 2026",
+  "prova": "INTO",
+  "simulado": false,
+  "tema": "Mão e punho",
+  "temaSlug": "mao",
+  "subtema": "Anatomia da mão e punho",
+  "enunciado": "O músculo do polegar inervado conjuntamente pelo ulnar e mediano é o",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "adutor.",
+      "porque": "O adutor do polegar é inervado apenas pelo ulnar (ramo profundo)."
+    },
+    {
+      "letra": "B",
+      "texto": "oponente.",
+      "porque": "O oponente do polegar é inervado pelo mediano (ramo recorrente)."
+    },
+    {
+      "letra": "C",
+      "texto": "abdutor.",
+      "porque": "O abdutor curto do polegar é inervado pelo mediano (ramo recorrente)."
+    },
+    {
+      "letra": "D",
+      "texto": "flexor curto.",
+      "porque": "O flexor curto do polegar tem inervação dupla: a cabeça superficial pelo mediano (ramo recorrente) e a cabeça profunda pelo ulnar (ramo profundo)."
+    },
+    {
+      "letra": "E",
+      "texto": "flexor longo.",
+      "porque": "O flexor longo do polegar é um músculo do antebraço, inervado pelo nervo interósseo anterior (ramo do mediano)."
+    }
+  ],
+  "gabarito": "D"
+}

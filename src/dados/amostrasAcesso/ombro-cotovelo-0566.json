@@ -1,0 +1,34 @@
+{
+  "id": "ombro-cotovelo-0566",
+  "origem": "TEOT 2025",
+  "prova": "TEOT",
+  "simulado": false,
+  "tema": "Ombro e cotovelo",
+  "temaSlug": "ombro-cotovelo",
+  "subtema": "Lesões do bíceps",
+  "enunciado": "No diagnóstico clínico da ruptura do tendão bicipital distal, o Hook test deve ser realizado:",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "De lateral para medial, em supinação ativa.",
+      "porque": "Corresponde à técnica do Campbell: cotovelo ativamente fletido e supinado, enganchando a borda lateral do tendão para não confundir com o lacerto fibroso, com 100% de sensibilidade e especificidade (cap."
+    },
+    {
+      "letra": "B",
+      "texto": "De medial para lateral, em supinação ativa.",
+      "porque": "Supinação certa, direção do lado do lacerto. A supinação ativa está correta. A direção de medial para lateral faz o dedo começar exatamente onde o lacerto fibroso se desprende do tendão e se abre sobre os flexores."
+    },
+    {
+      "letra": "C",
+      "texto": "De lateral para medial, em supinação passiva.",
+      "porque": "Direção certa, mas sem o bíceps contrair. De lateral para medial é a direção correta. A supinação passiva, porém, é feita pelo examinador, e o bíceps não precisa trabalhar; o tendão fica frouxo e afunda na fossa, e até um tendão íntegro pode escapar do dedo."
+    },
+    {
+      "letra": "D",
+      "texto": "De medial para lateral, em supinação passiva.",
+      "porque": "Os dois erros do teste. Supinação passiva deixa o tendão sem tensão, e a direção de medial para lateral leva o dedo ao lacerto fibroso. A alternativa descreve um exame com alta chance de falso negativo e de falso positivo ao mesmo tempo."
+    }
+  ],
+  "gabarito": "A"
+}
