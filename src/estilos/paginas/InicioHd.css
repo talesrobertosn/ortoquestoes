@@ -344,3 +344,19 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
 .hd-balao--gato { max-width: clamp(9rem, 19cqw, 12.5rem); }
 /* Point and click: passar o mouse num bicho acende um contorno dourado (dá para clicar e ele fala). */
 @media (hover: hover) { .hd-gato:hover .hd-gato__sprite, .hd-coruja:hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }
+
+/* A espada fincada na fogueira (easter egg): por cima da chama, com o brilho da brasa na lâmina; apagada sem fogo. */
+.hd-espada { position: absolute; background: var(--sprite-espada) center / 100% 100% no-repeat; image-rendering: pixelated; pointer-events: none;
+  filter: drop-shadow(0 0 3px rgba(255, 150, 60, 0.55)); }
+.hd-espada--apagada { filter: brightness(0.6) saturate(0.4); }
+.hd-palco--noite .hd-espada:not(.hd-espada--apagada) { filter: drop-shadow(0 0 4px rgba(255, 140, 50, 0.7)) brightness(0.95); }
+
+/* As partículas de cada cenário (cenarios.ts): vaga-lumes no acampamento e no cais, faíscas na forja, neve caindo no
+   refúgio e estrelas piscando no observatório. */
+.hd-particulas--faiscas i { width: 2px; height: 2px; border-radius: 0; background: #ffc066 !important; box-shadow: 0 0 5px rgba(255, 140, 40, 0.8) !important; animation-name: hd-faisca; }
+@keyframes hd-faisca { 0% { opacity: 0; transform: translate(0, 0); } 20% { opacity: 1; } 100% { opacity: 0; transform: translate(10px, -40px); } }
+.hd-particulas--neve i { width: 3px; height: 3px; border-radius: 0; background: #f4f8ff !important; box-shadow: 0 0 3px rgba(220, 235, 255, 0.6) !important; animation-name: hd-neve; animation-timing-function: linear; }
+@keyframes hd-neve { 0% { opacity: 0; transform: translate(0, -30px); } 15% { opacity: 0.9; } 100% { opacity: 0; transform: translate(-14px, 60px); } }
+.hd-particulas--estrelas i { width: 2px; height: 2px; border-radius: 0; background: #fff8e0 !important; box-shadow: 0 0 4px rgba(255, 250, 220, 0.8) !important; animation-name: hd-estrela; }
+.hd-particulas--estrelas i:nth-child(n + 9) { display: none; }
+@keyframes hd-estrela { 0%, 100% { opacity: 0.1; } 50% { opacity: 1; } }

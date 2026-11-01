@@ -239,3 +239,27 @@ O Tales **recusou**:
   1. Abra um PR no ramo de trabalho, com base `claude/pdfs-questoes-tp64dr`.
   2. Espere o check "verificar" passar e faça o merge (squash).
   3. Publique só o que o Tales autorizou, sem misturar outras páginas.
+
+## Cenários da página inicial (rodízio, 01/11/2026)
+
+O topo da página inicial troca de cenário ao longo do dia (`src/componentes/inicio/cena/cenarios.ts`): o dia é
+dividido em fatias iguais, uma por cenário (5 cenários, 4h48 cada), e a ordem anda um passo por dia, para cada
+cenário aparecer de manhã, de tarde e de noite em dias diferentes. Para testar, `?cenario=forja` na URL ou
+`sessionStorage['inicio:cenario']`.
+
+| Cenário | Script | Partículas | Destaque |
+|---|---|---|---|
+| Acampamento | `scripts/gerar_cena_inicio.py` | vaga-lumes | a espada fincada na fogueira (easter egg, `scripts/sprites/espada_fogueira.py`) |
+| Forja do ferreiro | `scripts/cenarios/inicio_forja.py` | faíscas | fornalha como luz principal, peças de ortopedia em ferro |
+| Cais do lago | `scripts/cenarios/inicio_cais.py` | vaga-lumes | reflexo na água |
+| Observatório da torre | `scripts/cenarios/inicio_observatorio.py` | estrelas | céu, via láctea e aurora |
+| Refúgio da neve | `scripts/cenarios/inicio_neve.py` | neve | neve acesa pelo fogo e pelas janelas |
+
+Contrato de todo cenário novo (arte 480 x 200, saída 1440 x 600 e 960 x 400 nas três horas):
+- o fogo animado na caixa x 220-260, y 104-152 (a luz principal sai de 240,146), sem chama pintada;
+- o esqueleto em pé em x 262-308 com os pés em y 163, chão aberto;
+- o lado esquerdo (x < 190) calmo e escuro para o texto; no celular só aparece x 140-340;
+- os pontos do gato (canto de cima à esquerda da caixa de 36 x 22) e da coruja (o ponto dos pés, sempre pousada em
+  algo firme) ficam em `scripts/cenarios/cena-<id>.json` e são copiados para `cenarios.ts`.
+Na cena, um bicho fala de cada vez, e o balão procura um lugar livre (se não couber perto, o gato anda até um canto
+onde caiba).

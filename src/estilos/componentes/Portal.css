@@ -24,12 +24,17 @@
 .pt-cabeca { position: relative; z-index: 3; display: grid; gap: 0.7rem; padding: 0.9rem 1.25rem 0.85rem; border-bottom: 1px solid var(--pt-linha);
   border-radius: 22px 22px 0 0; background: linear-gradient(180deg, var(--pt-cartao), var(--pt-papel)); }
 .pt-cabeca__linha { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.pt-cabeca__marca { display: flex; align-items: center; gap: 0.7rem; margin: 0; }
-.pt-cabeca__marca span:last-child { display: grid; line-height: 1.1; }
-.pt-cabeca__marca small { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pt-ouro); }
-.pt-cabeca__marca strong { font: 800 1.3rem/1.1 var(--fonte-marca); letter-spacing: -0.02em; }
-.pt-cabeca__selo { width: 30px; height: 30px; border-radius: 8px; background: radial-gradient(circle at 50% 40%, #fff4c9, var(--pt-ouro-claro) 45%, var(--pt-ouro) 100%);
-  box-shadow: 0 0 0 2px #fffaf0, 0 0 0 3px rgba(184, 134, 47, 0.5), 0 0 14px rgba(244, 207, 124, 0.7); }
+.pt-fogueira { display: flex; align-items: center; gap: 0.75rem; min-width: 0; }
+/* A chama da sequência (a mesma folha da página inicial, linha = estágio), sobre um pequeno leito de brasas. */
+.pt-fogueira__chama { position: relative; flex: none; width: 34px; height: 41px; background: var(--sprite-fogo) 0 calc(var(--linha) / 7 * 100%) / 600% 800% no-repeat;
+  image-rendering: pixelated; animation: hd-fogo 0.75s steps(6) infinite; filter: drop-shadow(0 0 8px rgba(255, 170, 70, 0.55)); }
+.pt-fogueira__chama::after { content: ""; position: absolute; left: 3px; right: 3px; bottom: -2px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #4a2a16, #7a4422, #4a2a16); }
+.pt-fogueira__chama--apagada { animation-duration: 2.4s; filter: none; }
+.pt-fogueira__texto { display: grid; gap: 0.15rem; min-width: 0; line-height: 1.15; }
+.pt-fogueira__texto strong { font: 800 1.15rem/1.1 var(--fonte-marca); letter-spacing: -0.02em; color: var(--pt-tinta); }
+.pt-fogueira__texto small { font-size: 0.8125rem; font-weight: 600; color: var(--pt-tinta-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@keyframes hd-fogo { to { background-position-x: 120%; } }
+@media (prefers-reduced-motion: reduce) { .pt-fogueira__chama { animation: none; } }
 .pt-fechar { display: grid; place-items: center; width: 44px; height: 44px; flex: none; border: 1px solid transparent; border-radius: 12px; background: transparent; color: var(--pt-tinta-2); cursor: pointer;
   transition: background 0.12s, color 0.12s, border-color 0.12s, transform 0.08s; }
 .pt-fechar:hover { background: var(--pt-papel-2); color: var(--pt-tinta); border-color: var(--pt-linha); }
@@ -212,7 +217,7 @@
   .pt { width: 100%; max-height: calc(100dvh - max(0.6rem, env(safe-area-inset-top))); border-radius: 22px 22px 0 0; animation: pt-sobe 0.24s cubic-bezier(0.2, 0.75, 0.3, 1); }
   @keyframes pt-sobe { from { transform: translateY(30px); opacity: 0; } }
   .pt-cabeca { padding: 0.8rem 1rem 0.85rem; gap: 0.6rem; }
-  .pt-cabeca__marca strong { font-size: 1.3rem; }
+  .pt-fogueira__texto strong { font-size: 1.05rem; }
   .pt-corpo { padding: 1rem 1rem 1.4rem; gap: 1.3rem; }
   .pt-chao { padding: 0 1rem env(safe-area-inset-bottom); min-height: calc(50px + env(safe-area-inset-bottom)); border-radius: 0; }
   .pt-sessao { grid-template-columns: auto 1fr auto; padding: 0.8rem 0.85rem; gap: 0.7rem; }
@@ -277,5 +282,21 @@
   .pt-vagalume { display: none; }
 }
 
+/* As falas não cobrem a busca nem os itens (Tales, 01/11/2026): no computador a da coruja corre larga pelo cabeçalho, à
+   esquerda dela (duas linhas no máximo), e o gato, menor, fica no rodapé com a fala ao lado, sobre a faixa vazia. */
+@media (min-width: 48.0625rem) {
+  .pt-coruja__fala { top: 8px; width: max-content; max-width: min(34rem, calc(100vw - 32rem)); padding: 0.4rem 0.65rem; font-size: 0.78rem; line-height: 1.35; }
+  .pt-gato { bottom: 2px; right: 2.25rem; }
+  .pt-gato .gato-pixel { width: 64px; height: 48px; }
+  .pt-gato__miau { right: calc(100% + 8px); bottom: 2px; max-width: min(24rem, 40vw); background: #fbf3df; }
+}
+/* A faixa das falas no celular: fica vazia (sem altura) até alguém falar; a fala entra como um balão de diálogo. */
+.pt-fala-faixa:empty { display: none; }
+.pt-fala-faixa { display: grid; gap: 0.4rem; padding: 0.55rem 1rem 0; }
+.pt-fala-faixa :is(.pt-coruja__fala, .pt-gato__miau) { position: static; width: auto; max-width: none; margin: 0; font-size: 0.8125rem; font-weight: 500; line-height: 1.4; cursor: pointer; }
+.pt-fala-faixa b { font-weight: 800; }
 /* Point and click: passar o mouse num bicho acende um contorno dourado (dá para clicar e ele fala). */
 @media (hover: hover) { :is(.pt-coruja__botao, .pt-gato__botao):hover > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); } }
+/* O texto da fogueira para antes da coruja, que pousa entre ele e o X; no celular a linha de baixo quebra em duas. */
+.pt-cabeca__linha .pt-fogueira { flex: 1; padding-right: 5.5rem; }
+@media (max-width: 48rem) { .pt-fogueira__texto small { white-space: normal; } }

@@ -568,3 +568,18 @@ button.bb-obj:disabled { cursor: default; }
   .bb-poeira, .bb-vagalumes, .bb-chuva, .bb-gato__zz { display: none; }
   .bb-vol:hover, .bb-vol--ativo, .bb-vol:focus-visible { transform: none; }
 }
+
+/* ── Calma no celular (01/11/2026, Tales: "tudo fica mexendo de maneira muito estranha, dá até tontura") ──
+   Igual à página inicial: a cena fica parada, só os bichos se mexem. Sem poeira, vaga-lumes, morcegos, piscas,
+   chamas tremendo ou brilho pulsando; os livros não pulam ao toque (no celular não existe "passar o mouse"). */
+@media (hover: none), (max-width: 40rem) {
+  .bb-poeira, .bb-vagalumes, .bb-morcegos, .bb-pisca { display: none; }
+  .bb-raro:not(.bb-raro--aceso), .bb-arandela__luz, .bb-gema--lendario, .bb-vela::after, .bb-gato__zz, .bb-insp--lendario .bb-insp__brilho, .bb-vol--alvo { animation: none !important; }
+  .bb-vol, .bb-vol:hover, .bb-vol:focus-visible { transform: none; transition: none; }
+  .bb-vol--ativo { transform: translateY(-6px); }
+}
+/* No celular, a pintura mostra mais da sala (da janela à estante da direita), com a coruja e o gato inteiros. */
+@media (max-width: 40rem) {
+  .bb-palco { aspect-ratio: 16 / 10; }
+  .bb-palco__mundo { width: calc(100% * (1440 / 540) * (10 / 16)); }
+}
