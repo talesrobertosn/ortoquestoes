@@ -8,7 +8,6 @@ export type IconeMenu =
   | 'cronograma-mao' | 'temas' | 'torneio' | 'simulado' | 'ranking' | 'liga' | 'conquistas'
   | 'desempenho' | 'erros' | 'favoritas' | 'relatorio' | 'conta' | 'assinatura' | 'indicar' | 'suporte' | 'projeto' | 'admin' | 'entrar'
 
-export type Fogo = 'tempo' | 'saber' | 'atlas'
 
 export interface Pagina {
   destino: string
@@ -19,8 +18,6 @@ export interface Pagina {
   assinante?: boolean
   /** Selo discreto de novidade. */
   novo?: string
-  /** O fogo mágico em volta do atalho (Cronograma, Resumos, Atlas 3D: três fogos diferentes). */
-  fogo?: Fogo
   /** Palavras de quem procura (sem acento). */
   chaves?: string
 }
@@ -29,9 +26,9 @@ export const PRINCIPAIS: Pagina[] = [
   { destino: '/treinar', rotulo: 'Treinar', texto: 'Monte sua sessão de questões.', icone: 'treinar', chaves: 'questoes fazer praticar sessao estudar prova treino' },
   { destino: '/revisao', rotulo: 'Revisão', texto: 'Reveja o que precisa lembrar.', icone: 'revisao', chaves: 'revisar repeticao espacada voltar' },
   { destino: '/flashcards', rotulo: 'Flashcards', texto: 'Memorize com revisões rápidas.', icone: 'flashcards', chaves: 'cartas cards memorizar jogo' },
-  { destino: '/cronograma', rotulo: 'Cronograma', texto: 'Seu plano, dia após dia.', icone: 'cronograma', assinante: true, fogo: 'tempo', chaves: 'plano de estudo calendario dia agenda meta' },
-  { destino: '/resumos', rotulo: 'Resumos', texto: 'Estude pelos livros de referência.', icone: 'resumos', fogo: 'saber', chaves: 'livro capitulo rockwood resumo biblioteca leitura ler classificacao campbell green' },
-  { destino: '/atlas', rotulo: 'Atlas 3D', texto: 'Explore ossos, fraturas e anatomia.', icone: 'atlas', novo: 'Novo', fogo: 'atlas', chaves: 'anatomia 3d osso esqueleto classificacao fratura musculo nervo modelo tridimensional' },
+  { destino: '/cronograma', rotulo: 'Cronograma', texto: 'Seu plano, dia após dia.', icone: 'cronograma', assinante: true, chaves: 'plano de estudo calendario dia agenda meta' },
+  { destino: '/resumos', rotulo: 'Resumos', texto: 'Estude pelos livros de referência.', icone: 'resumos', chaves: 'livro capitulo rockwood resumo biblioteca leitura ler classificacao campbell green' },
+  { destino: '/atlas', rotulo: 'Atlas 3D', texto: 'Explore ossos, fraturas e anatomia.', icone: 'atlas', novo: 'Novo', chaves: 'anatomia 3d osso esqueleto classificacao fratura musculo nervo modelo tridimensional' },
 ]
 
 export interface Grupo { id: string; titulo: string; itens: Pagina[] }

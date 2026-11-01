@@ -29,6 +29,7 @@ import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { confirmar, pedirTexto } from '../componentes/Confirmar'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { Painel } from '../componentes/Painel'
+import '../estilos/componentes/Cristal.css'
 import '../estilos/paginas/Treinar.css'
 
 // TEOT e TARO vêm primeiro, cada um na sua pílula. "Ortopedia" (antes "TEOT/TARO", troca pedida
@@ -241,7 +242,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const primeiroNome = String(conta?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
   // Os quatro atalhos de 10, com a contagem da prova escolhida e o que cada um pega.
   const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; dica: string; preset: Partial<Filtros> }[] = [
-    { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, dica: 'para hoje', preset: { situacao: 'revisarHoje' } },
+    { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, dica: 'na hora certa', preset: { situacao: 'revisarHoje' } },
     { titulo: 'Novas', icone: 'alvo', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, dica: 'nunca vistas', preset: { situacao: 'naoRespondidas' } },
     { titulo: 'Que errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, dica: 'erradas antes', preset: { situacao: 'erradas' } },
     { titulo: 'Favoritas', icone: 'estrela', quantidade: gerais?.porSituacao.favoritas ?? 0, dica: 'com estrela', preset: { situacao: 'favoritas' } },
@@ -438,7 +439,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     )
   )
   const comecarBotao = (classe: string) => (
-    <button type="button" className={'botao botao--grande tr-comecar ' + classe} disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
+    <button type="button" className={'botao botao--grande tr-comecar cristal ' + classe} disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
       {conteudoComecar}
     </button>
   )
@@ -554,7 +555,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       <section className="tn-rapido" aria-labelledby="tn-rapido-titulo">
         <div className="tn-rapido__principal">
           <h2 className="tn-rotulo" id="tn-rapido-titulo">Começar agora</h2>
-          <button type="button" className="botao tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">
+          <button type="button" className="botao cristal tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">
             <Icone nome="raio" tamanho={20} />
             <span><strong>Sessão rápida de 10</strong><small>{nomeAreaCurto}, revisões e novas intercaladas</small></span>
           </button>
@@ -847,8 +848,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               <h2 id="tn-simulados-titulo">Treinar como prova</h2>
               <p>Uma prova inteira só com OrtoQuestões Simulados, com cronômetro e gabarito no fim.</p>
               <div className="tn-simulados__acoes">
-                <button type="button" className="botao botao--fantasma" onClick={montarSimulado}><Icone nome="relogio" tamanho={16} /> Montar a prova</button>
-                <button type="button" className="botao botao--fantasma" onClick={() => sessaoRapida({ soSimulados: true, areas: areasSimulado })}><Icone nome="raio" tamanho={16} /> 10 simulados</button>
+                <button type="button" className="botao tn-simulados__botao" onClick={montarSimulado}><Icone nome="relogio" tamanho={16} /> Montar a prova</button>
+                <button type="button" className="botao tn-simulados__botao" onClick={() => sessaoRapida({ soSimulados: true, areas: areasSimulado })}><Icone nome="raio" tamanho={16} /> 10 simulados</button>
               </div>
             </section>
           )}

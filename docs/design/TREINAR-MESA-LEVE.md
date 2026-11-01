@@ -22,7 +22,7 @@ clara e rápida do mundo OrtoQuestões. A ligação com a página inicial vem da
 - **Resumo da sessão:** cartão claro (sai o bilhete escuro com brilho de lamparina). Total escolhido de quantos
   disponíveis, prova, origem, assunto, situação, duração (no modo Prova, o tempo escolhido), seu acerto; os filtros
   avulsos aparecem uma vez, cada um com o seu "tirar"; quantidade em grade 4 por linha; modo; e o botão de começar,
-  o único dourado da página. Fica fixo ao rolar só quando cabe inteiro na janela.
+  o cristal da página inicial, como a sessão rápida. Fica fixo ao rolar só quando cabe inteiro na janela.
 - **Celular:** a barra de baixo continua (quantas + modo, abre a gaveta "Sua sessão"; o botão começa). A gaveta traz
   quantas e o modo primeiro, depois o resumo, salvar e limpar.
 - **Estados:** erro ao carregar o índice ganhou tela própria com "Tentar de novo" (antes a página ficava vazia);
@@ -31,6 +31,25 @@ clara e rápida do mundo OrtoQuestões. A ligação com a página inicial vem da
 - **Endereço sem filtro** (tocar em Treinar estando no Treinar) volta ao padrão (não respondidas, 20), não mais a
   "todas, sem limite".
 - O segredo "osso" do #776 saiu junto com a cena: sem o acampamento não havia quem comemorasse.
+
+## Regra de cor: a paleta da página inicial (Tales, 01/11/2026)
+
+"O site tem centenas de identidades visuais diferentes e isso causa agonia visual; as paletas precisam seguir a página
+inicial." As cores da inicial agora são tokens globais em `tokens.css` (`--mundo-*`, `--cristal`, `--cristal-sombra`),
+a inicial passou a lê-los (sem mudar nada na tela dela) e o botão de cristal virou `componentes/Cristal.css` para as
+outras páginas. Em Treinar:
+
+| Elemento da inicial | Onde aparece em Treinar |
+|---|---|
+| Painel escuro quente (`--mundo-painel`), tinta marfim, selo dourado (`--mundo-ouro`) | "Começar agora", com os atalhos em vidro e os números dourados como a sequência |
+| Botão de cristal (`.cristal`) | Toda ação de começar: sessão rápida, "Responder"/"Iniciar prova" no resumo, na barra e na gaveta do celular |
+| Superfícies brancas de 20 px (`--mundo-raio`) com sombra média | Montagem e resumo |
+| Item em fundo recuado; escolhido em verdete-véu com filete à esquerda (`.jn-item`) | Cartões de prova |
+| Números em Jersey 10 verdete (`.jn-numeros`) | Total da sessão e números dos passos |
+| Botão de contorno verdete (`.jn-botao`) | Secundários: sugestões do estado vazio, "Montar a prova", "10 simulados" |
+| Ouro-véu (`.jn-ranking`) | Assinante: "Veja os temas que mais caem" |
+
+Regra para as próximas páginas: usar esses tokens e o `.cristal`, sem hex soltos nem botão de outra cor para começar.
 
 ## Inventário funcional (preservado)
 
@@ -67,9 +86,10 @@ papéis. Modos de jogo deliberadamente sombrios (torneio, arena dos flashcards) 
 
 ## Menu: feito agora e próxima etapa
 
-Feito (pequeno e seguro): o fogo dos três atalhos fica baixo em repouso e cresce com o mouse ou o foco
-(`FogoVivo.tsx`, `REPOUSO`); o brilho colorido em volta do cartão só aparece na interação; o Atlas 3D passou do azul
-para verdete e jade (fogo, filete e o selo "Novo"). Foco preso, Escape, retorno de foco, `Ctrl+K`, rotas e paywalls
+Feito: os fogos dos atalhos (`FogoVivo`) e o vaga-lume saíram, com autorização do Tales (auditoria de 01/11/2026):
+competiam com os destinos e faziam a grade transbordar no celular (365 px de conteúdo em 347). Medido depois: sem
+transbordo em 320, 390 e 1440 px. Fica a chama da sequência no topo, que é informação e igual à da página inicial. O
+selo "Novo" do Atlas saiu do azul para o verdete. Foco preso, Escape, retorno de foco, `Ctrl+K`, rotas e paywalls
 não foram tocados.
 
 Próxima etapa (proposta): "Continuar" como única ação cheia do topo; Treinar como atalho fixo logo depois dele (hoje
