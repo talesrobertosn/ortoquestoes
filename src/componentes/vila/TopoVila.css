@@ -1,0 +1,148 @@
+/* Topo pintado das páginas da vila (TopoVila.tsx), na família do observatório (Desempenho.css) e do topo da página
+   inicial: cantos de 20 px, chão escuro, vidro só onde há texto, a arte manda na cor e os números ficam numa bancada
+   logo abaixo, nunca por cima da pintura. Cada cena troca só a cor do chão e da luz (--vl-*). */
+.vl {
+  --vl-raio: 20px; --vl-tinta: #fffaf0; --vl-tinta-2: #e4d8bd; --vl-ouro: #f0c46a; --vl-chao: #0a0e0b; --vl-chao-2: #142019;
+  --vl-luz: rgba(255, 196, 110, 0.18); --vl-veu: 8, 12, 10;
+  position: relative; isolation: isolate; overflow: hidden; border-radius: var(--vl-raio); background: var(--vl-chao); color: var(--vl-tinta);
+  box-shadow: 0 24px 48px -28px rgba(8, 20, 14, 0.75), 0 0 0 1px rgba(240, 196, 106, 0.16);
+}
+/* A estufa: chão de terra úmida e luz que vem do vidro. O campo de treino: terra batida, quente do braseiro. */
+.vl--estufa { --vl-chao: #08100d; --vl-chao-2: #12241c; --vl-luz: rgba(190, 240, 200, 0.14); --vl-veu: 6, 14, 11; }
+.vl--treino { --vl-chao: #0e0a07; --vl-chao-2: #1f150c; --vl-luz: rgba(255, 170, 70, 0.2); --vl-veu: 10, 7, 4; }
+
+.vl__cena { position: relative; display: grid; grid-template-columns: minmax(0, 30rem) minmax(0, 1fr); grid-template-rows: 1fr auto;
+  align-content: end; gap: var(--e-3); min-height: clamp(18rem, 33.3vw, 25.3rem); padding: clamp(1.25rem, 2.6vw, 2.25rem); }
+/* O véu só onde há texto: a parte calma da esquerda. O centro e a direita da pintura ficam limpos. */
+.vl__cena::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(var(--vl-veu), 0.82) 0%, rgba(var(--vl-veu), 0.58) 26%, rgba(var(--vl-veu), 0.14) 40%, transparent 47%),
+    linear-gradient(0deg, rgba(var(--vl-veu), 0.85) 0%, transparent 20%); }
+/* O campo de treino tem a muralha clara à esquerda: o véu vai um pouco mais longe e é mais firme. */
+.vl--treino .vl__cena::before { background: linear-gradient(90deg, rgba(var(--vl-veu), 0.86) 0%, rgba(var(--vl-veu), 0.68) 30%, rgba(var(--vl-veu), 0.22) 46%, transparent 54%),
+    linear-gradient(0deg, rgba(var(--vl-veu), 0.85) 0%, transparent 20%); }
+/* A caixa da cena fica por cima da pintura: os cliques atravessam até os bichos, menos onde há texto e botão. */
+.vl__cena { pointer-events: none; }
+.vl__cabeca, .vl__texto, .vl-palco { pointer-events: auto; }
+.vl__cabeca, .vl__texto { grid-column: 1; display: grid; justify-items: start; gap: var(--e-2); min-width: 0; }
+.vl__cabeca { grid-row: 1; align-self: end; }
+.vl__texto { grid-row: 2; gap: var(--e-3); }
+.vl__selo { display: inline-flex; align-items: center; gap: 0.4rem; margin: 0; color: var(--vl-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
+.vl h1 { margin: 0; max-width: 18ch; color: var(--vl-tinta); font-family: var(--fonte-marca); font-size: clamp(2rem, 1.2rem + 2.4vw, 3rem); font-weight: 800; line-height: 1.04; letter-spacing: -0.03em;
+  text-wrap: balance; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.45), 0 0 30px rgba(0, 0, 0, 0.6); }
+.vl__texto > p { margin: 0; max-width: 46ch; color: var(--vl-tinta-2); line-height: 1.5; text-wrap: pretty; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+.vl a:focus-visible, .vl button:focus-visible { outline: 2px solid var(--vl-ouro); outline-offset: 3px; }
+
+/* O palco: no computador ancorado à direita com a proporção da pintura (se o texto pedir mais altura, a arte cresce e
+   só a parte calma da esquerda sai de quadro). Os bichos e as luzes ficam em % da arte. */
+.vl-palco { position: absolute; z-index: -2; top: 0; right: 0; height: 100%; aspect-ratio: 3 / 1; container-type: inline-size; }
+.vl-palco__arte { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
+.vl-palco__peca, .vl-bicho, .vl-balao { position: absolute; left: var(--l); top: var(--t); width: var(--w); height: var(--h); }
+.vl-palco__peca { pointer-events: none; }
+.vl-palco__chama { border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 200, 120, 0.55), rgba(255, 150, 60, 0.2) 55%, transparent); mix-blend-mode: screen;
+  animation: vl-chama 2.8s steps(4, end) var(--atraso, 0s) infinite; }
+.vl-palco--manha .vl-palco__chama { opacity: 0.4; }
+@keyframes vl-chama { 0%, 100% { opacity: 0.72; transform: scale(1); } 30% { opacity: 1; transform: scale(1.05); } 60% { opacity: 0.84; transform: scale(0.97); } }
+.vl-palco__poeira i { position: absolute; width: 3px; height: 3px; background: rgba(255, 240, 205, 0.9); box-shadow: 0 0 5px rgba(255, 222, 160, 0.8); opacity: 0;
+  animation: vl-poeira var(--t) linear var(--d) infinite; }
+/* À noite a poeira vira vaga-lume: verde-amarelado, sobe devagar. */
+.vl-palco--noite .vl-palco__poeira i { background: #e8ff9a; box-shadow: 0 0 6px 1px rgba(200, 255, 120, 0.75); animation-name: vl-vagalume; }
+@keyframes vl-poeira { 0% { opacity: 0; transform: translate(0, 0); } 20% { opacity: 0.85; } 80% { opacity: 0.55; } 100% { opacity: 0; transform: translate(14px, 22px); } }
+@keyframes vl-vagalume { 0%, 100% { opacity: 0; transform: translate(0, 0); } 30% { opacity: 1; } 55% { opacity: 0.35; transform: translate(-8px, -10px); } 75% { opacity: 0.9; } 90% { transform: translate(6px, -18px); } }
+.vl-palco--parado * { animation-play-state: paused !important; }
+
+/* Os bichos: point and click. Nada cobre os dois; passar o mouse acende um contorno dourado. */
+.vl-bicho { padding: 0; border: 0; background: none; cursor: pointer; }
+.vl-bicho .coruja-pixel, .vl-bicho .gato-pixel { display: block; width: 100%; height: 100%; }
+.vl-bicho:hover > *, .vl-bicho:focus-visible > * { filter: drop-shadow(1px 0 0 #f0c46a) drop-shadow(-1px 0 0 #f0c46a) drop-shadow(0 1px 0 #f0c46a) drop-shadow(0 -1px 0 #f0c46a); }
+.vl-bicho:focus-visible { outline: 0; }
+.vl-palco--tarde .vl-bicho { filter: sepia(0.22) saturate(1.1) brightness(0.94); }
+.vl-palco--noite .vl-bicho { filter: brightness(0.7) sepia(0.28) saturate(1.05) hue-rotate(-6deg); }
+.vl-palco--noite .vl-bicho:hover, .vl-palco--noite .vl-bicho:focus-visible { filter: brightness(0.9) sepia(0.2); }
+
+/* O balão de pergaminho: a ponta fica no bicho e o balão cresce para dentro da cena (para a esquerda e para cima). */
+.vl-balao { z-index: 5; width: max-content; height: auto; max-width: min(17rem, 44cqw); padding: 0.5rem 0.7rem; transform: translate(calc(-100% + 22px), calc(-100% - 10px));
+  background: #fbf3df; color: #1b1208; font-size: clamp(0.78rem, 0.62rem + 0.5vw, 0.875rem); font-weight: 650; line-height: 1.35; text-wrap: pretty; cursor: pointer;
+  box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px rgba(0, 0, 0, 0.3); animation: vl-balao 0.25s steps(3); }
+.vl-balao::after { content: ""; position: absolute; right: 14px; bottom: -8px; width: 10px; height: 8px; background: #fbf3df; clip-path: polygon(0 0, 100% 0, 70% 100%); }
+.vl-balao--gato { max-width: min(13rem, 40cqw); }
+.vl-balao--embaixo { transform: translate(calc(-100% + 22px), 10px); animation-name: vl-balao-baixo; }
+.vl-balao--embaixo::after { top: -8px; bottom: auto; clip-path: polygon(70% 0, 100% 100%, 0 100%); }
+@keyframes vl-balao-baixo { from { opacity: 0; transform: translate(calc(-100% + 22px), 2px); } }
+@keyframes vl-balao { from { opacity: 0; transform: translate(calc(-100% + 22px), calc(-100% - 2px)); } }
+
+/* A bancada: os números e atalhos em placas, com a luz da cena vindo de cima. */
+.vl__bancada { position: relative; display: grid; gap: var(--e-4); padding: var(--e-5) clamp(1.25rem, 2.6vw, 2.25rem);
+  background: radial-gradient(70% 140% at 80% -20%, var(--vl-luz), transparent 60%), linear-gradient(180deg, var(--vl-chao-2), var(--vl-chao));
+  border-top: 1px solid rgba(240, 196, 106, 0.35); }
+/* Placas de latão com rebites: o mesmo desenho do placar do observatório. */
+.vl-placas { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: var(--e-3); margin: 0; }
+.vl-placa { position: relative; display: grid; align-content: start; gap: 0.35rem; min-width: 0; padding: var(--e-4) var(--e-4) var(--e-4) calc(var(--e-4) + 2px); border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 228, 170, 0.09), rgba(255, 228, 170, 0.03)); box-shadow: inset 0 0 0 1px rgba(240, 196, 106, 0.22), inset 0 1px 0 rgba(255, 240, 210, 0.12); }
+.vl-placa::before, .vl-placa::after { content: ""; position: absolute; top: 9px; width: 5px; height: 5px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffe7a8, #a8742a 70%); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
+.vl-placa::before { left: 9px; }
+.vl-placa::after { right: 9px; }
+.vl-placa dt { display: flex; align-items: center; gap: 0.35rem; color: #f3d48e; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.vl-placa dd { margin: 0; display: grid; gap: 0.2rem; }
+.vl-placa__valor { font-family: var(--fonte-pixel-titulo); font-size: 2.4rem; line-height: 1; color: var(--vl-ouro); font-variant-numeric: tabular-nums; text-shadow: 0 3px 0 rgba(0, 0, 0, 0.5); }
+.vl-placa__valor small { font-size: 0.55em; color: var(--vl-tinta-2); }
+.vl-placa__apoio { color: var(--vl-tinta-2); font-size: var(--meta); line-height: 1.35; }
+
+/* Botões sobre a cena: o principal em ouro (a ação do dia), os outros em vidro escuro. */
+.vl-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2) var(--e-3); }
+.vl-acao { display: inline-flex; align-items: center; gap: 0.7rem; min-height: 52px; padding: 0.45rem 1.15rem 0.45rem 0.55rem; border: 0; border-radius: 14px;
+  background: linear-gradient(180deg, #ffd98a, #f0b54a); color: #2a1a06; font: inherit; font-weight: 800; text-align: left; text-decoration: none; cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(255, 236, 190, 0.6) inset, 0 10px 26px -8px rgba(255, 170, 60, 0.65); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.vl-acao:hover { color: #2a1a06; transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(255, 236, 190, 0.7) inset, 0 14px 30px -8px rgba(255, 170, 60, 0.8); }
+.vl-acao > svg { flex: none; width: 2.3rem; height: 2.3rem; padding: 0.45rem; border-radius: 10px; background: #2a1a06; color: #ffd98a; }
+.vl-acao span { display: grid; line-height: 1.2; }
+.vl-acao strong { font-size: 1.05rem; }
+.vl-acao small { font-size: var(--meta); font-weight: 650; opacity: 0.8; }
+.vl-vidro { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; padding: 0 1rem; border: 0; border-radius: 12px; background: rgba(var(--vl-veu), 0.62);
+  color: var(--vl-tinta); font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; backdrop-filter: blur(8px);
+  box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.22); transition: background 0.15s ease, box-shadow 0.15s ease; }
+.vl-vidro:hover { color: #fff; background: rgba(var(--vl-veu), 0.8); box-shadow: inset 0 0 0 1px rgba(240, 196, 106, 0.6); }
+.vl-vidro small, .vl-vidro b { padding: 0.1rem 0.45rem; border-radius: 6px; background: rgba(255, 236, 200, 0.14); color: var(--vl-ouro); font-weight: 800; font-variant-numeric: tabular-nums; }
+
+@media (prefers-reduced-motion: reduce) {
+  .vl-palco__chama, .vl-palco__poeira i, .vl-balao { animation: none !important; }
+  .vl-palco__poeira { display: none; }
+  .vl-acao, .vl-vidro { transition: none; }
+}
+
+/* Celular e tablet: a arte vira uma janela inteira em cima; título, mensagem e bancada descem, nessa ordem. */
+@media (max-width: 60rem) {
+  .vl { display: grid; background: radial-gradient(90% 40% at 85% 30%, var(--vl-luz), transparent 70%), linear-gradient(180deg, var(--vl-chao-2), var(--vl-chao)); }
+  .vl__cena { display: contents; }
+  .vl__cena::before { display: none; }
+  .vl-palco { position: relative; z-index: 0; order: 0; width: 100%; height: auto; }
+  .vl__cabeca, .vl__texto { grid-row: auto; grid-column: auto; }
+  .vl__cabeca { order: 1; padding: var(--e-4) clamp(1rem, 4vw, 1.5rem) 0; }
+  .vl__texto { order: 2; padding: var(--e-2) clamp(1rem, 4vw, 1.5rem) var(--e-4); }
+  .vl__bancada { order: 3; border-top: 0; background: transparent; padding-top: 0; }
+}
+@media (max-width: 40rem) {
+  .vl { --vl-raio: 18px; }
+  .vl-palco { aspect-ratio: 296 / 160; }
+  .vl-palco__peca, .vl-bicho, .vl-balao { left: var(--lm); width: var(--wm); }
+  .vl-balao { width: max-content; max-width: min(15rem, 62cqw); }
+  .vl-balao--gato { max-width: min(12rem, 56cqw); }
+  .vl h1 { font-size: clamp(1.75rem, 7.4vw, 2.2rem); }
+  .vl__bancada { padding-inline: clamp(0.75rem, 3vw, 1rem); gap: var(--e-3); }
+  .vl-placas { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-2); }
+  .vl-placa { padding: var(--e-3) var(--e-2) var(--e-3) var(--e-3); border-radius: 14px; }
+  .vl-placa dt { font-size: 0.62rem; letter-spacing: 0.04em; }
+  .vl-placa dt svg { display: none; }
+  .vl-placa__valor { font-size: 1.9rem; }
+  .vl-placa__apoio { font-size: 0.72rem; }
+  .vl-acoes { display: grid; grid-template-columns: minmax(0, 1fr); width: 100%; }
+  .vl-acao { width: 100%; box-sizing: border-box; min-height: 58px; }
+  .vl-vidro { justify-content: center; }
+}
+@media print {
+  .vl { background: none; color: inherit; box-shadow: none; }
+  .vl-palco, .vl__bancada, .vl-acoes { display: none !important; }
+  .vl__cena { display: block; min-height: 0; padding: 0; }
+  .vl__cena::before { display: none; }
+  .vl h1, .vl__texto > p { color: inherit; text-shadow: none; }
+}
