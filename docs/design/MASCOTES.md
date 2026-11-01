@@ -416,3 +416,12 @@ dos conceitos. As do gato e do esqueleto são humor e não podem soar como bronc
   `Luz.css`: as cenas declaram as luzes (fogueira na cor da chama, chamas da vila, sol ou lua da janela) e cada bicho
   acende do lado da luz mais forte, esfria do outro e ganha a sombra no chão para longe dela. Ligado na página inicial
   e nas cenas da vila (Revisão, Caderno, Favoritas). Sem WebGL: duas camadas que herdam o quadro do sprite.
+- 01/11/2026: **diretor de cena (caminho 3, primeira versão) na página inicial**. `componentes/inicio/cena/roteiros.ts`
+  traz os roteiros: conversas, cenas com ação (o gato vai até o fogo ou até o esqueleto, a coruja troca de poleiro
+  voando, o esqueleto muda de atividade), dias da semana (café na segunda, festa na sexta, preguiça no domingo),
+  madrugada e raridades (estrela cadente à noite, o osso trocado). O `DiretorDeCena` (em `CenaDiorama.tsx`) sorteia
+  um roteiro a cada 1 a 2 min no computador e 2,5 a 5 min no celular, só com a aba e a cena à vista. Ele cala o
+  esqueleto enquanto a cena roda e para quando a pessoa toca num bicho. O gato dourado aparece em uma visita a cada
+  150. As raridades vistas ficam em `localStorage['bichos:album']` (o álbum ainda não tem tela). Para testar:
+  `sessionStorage['inicio:roteiro'] = '<id>'`.
+
