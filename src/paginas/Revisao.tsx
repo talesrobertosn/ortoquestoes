@@ -19,6 +19,8 @@ import { FLASHCARDS_LIBERADO, recurso } from '../config'
 import { CHAVE_REGISTROS, type RegistroFlashcard } from '../flashcards/progresso'
 import { CalendarioRevisao } from './RevisaoCalendario'
 import { corDaArea } from '../dados/coresAreas'
+import '../estilos/componentes/Cristal.css'
+import '../estilos/componentes/Mundo.css'
 import '../estilos/paginas/Revisao.css'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
@@ -177,14 +179,14 @@ export function Revisao() {
         </button>)}
       </div>
     </nav>}
-    <section className={'rvx-heroi' + (zerado ? ' rvx-heroi--zerado' : '')}>
+    <section className={'rvx-heroi painel-mundo' + (zerado ? ' rvx-heroi--zerado' : '')}>
       <div className="rvx-heroi__principal">
         <p className="rvx-heroi__data"><Icone nome="calendario" tamanho={15} /> {capitalizar(FORMATO_HOJE.format(hoje))}</p>
         {hojeTotal ? <>
           <h1 className="rvx-heroi__titulo"><span className="numerico">{hojeTotal}</span> {nomeArea ? `de ${nomeArea.toLowerCase()} ` : ''}para hoje <span className="rvx-heroi__tempo">· ~{minutosPara(hojeTotal)} min</span></h1>
           <p className="rvx-heroi__texto">{textoApoio}</p>
           <div className="rvx-heroi__acoes">
-            <button type="button" className="botao rvx-comecar" onClick={() => iniciarIds(idsHoje)}>
+            <button type="button" className="botao cristal rvx-comecar" onClick={() => iniciarIds(idsHoje)}>
               <Icone nome="raio" tamanho={20} />
               <span><strong>Começar revisão</strong><small>{questoes(hojeTotal)} · ~{minutosPara(hojeTotal)} min</small></span>
             </button>
@@ -210,7 +212,7 @@ export function Revisao() {
           <h1 className="rvx-heroi__titulo">{folgaHoje ? 'Hoje é dia de folga' : nomeArea ? `${nomeArea}: tudo em dia` : 'Tudo em dia por aqui'}</h1>
           <p className="rvx-heroi__texto">{textoApoio}</p>
           <div className="rvx-heroi__acoes">
-            <a className="botao rvx-comecar" href={href('/treinar')}><Icone nome="alvo" tamanho={20} /><span><strong>Treinar questões novas</strong><small>As que você errar voltam aqui no dia certo</small></span></a>
+            <a className="botao cristal rvx-comecar" href={href('/treinar')}><Icone nome="alvo" tamanho={20} /><span><strong>Treinar questões novas</strong><small>As que você errar voltam aqui no dia certo</small></span></a>
             {proximoDia && <button type="button" className="botao rvx-curta" onClick={() => iniciarIds(proximoDia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>Adiantar {Math.min(REVISOES_CINCO_MINUTOS, proximoDia.ids.length)} de {rotuloDia(proximoDia.inicio)}</button>}
           </div>
         </>}
