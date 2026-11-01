@@ -92,6 +92,10 @@ const rpcs = {
   ],
   funil_admin: () => [{ cadastrados: 14, confirmaram: 12, responderam: 11, passaram_50: 8, passaram_500: 3, assinaram: 5 }],
   retencao_admin: () => [],
+  sn_admin_listar: () => [
+    { edicao: '2026-11', tipo: 'mensal', titulo: 'Simulado Nacional de novembro', abre_em: iso(agora - 2 * DIA), fecha_em: iso(agora + 5 * DIA), duracao_min: 240, total: 100, publicado: true, aberto_a_todos: false, destaque_inicio: true, descricao: null, config: {}, ids: [], inscritos: 42, participantes: 18, entregas: 11, media: 61.4 },
+    { edicao: '2026-10', tipo: 'mensal', titulo: 'Simulado Nacional de outubro', abre_em: iso(agora - 32 * DIA), fecha_em: iso(agora - 25 * DIA), duracao_min: 240, total: 100, publicado: true, aberto_a_todos: true, destaque_inicio: false, descricao: null, config: {}, ids: [], inscritos: 77, participantes: 50, entregas: 41, media: 58.2 },
+  ],
   estatisticas_questoes_admin: () => [
     { id_questao: 'mao-0853', pessoas: 40, acertos_primeira: 9, erros_primeira: 31, acertos_atual: 30 },
     { id_questao: 'mao-2164', pessoas: 22, acertos_primeira: 5, erros_primeira: 17, acertos_atual: 15 },

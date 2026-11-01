@@ -243,3 +243,59 @@
 .a3-previa-questao__comentario { display: grid; gap: 10px; padding-top: 12px; border-top: 1px solid var(--a3-linha); }
 @media (max-width: 1280px) { .a3-editor { grid-template-columns: 220px minmax(0, 1fr); } .a3-editor__previa { grid-column: 2; position: static; max-height: none; } }
 @media (max-width: 860px) { .a3-editor { grid-template-columns: minmax(0, 1fr); } .a3-editor__lado { position: static; } .a3-editor__previa { grid-column: auto; } .a3-editor__linha { grid-template-columns: minmax(0, 1fr); } .a3-editor__salvar { bottom: 76px; } }
+
+/* Simulados */
+.a3-voltar { justify-self: start; margin-bottom: -12px; }
+.a3-erro-texto { color: var(--a3-erro); }
+.a3-calendario { list-style: none; margin: 0; padding: 16px 20px 20px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.a3-calendario__mes { display: grid; align-content: start; gap: 6px; min-height: 108px; padding: 12px; border: 1px solid var(--a3-linha); border-radius: 16px; }
+.a3-calendario__mes.passado { background: var(--a3-alt); }
+.a3-calendario__mes.sugerido { border-color: var(--a3-tinta); box-shadow: inset 0 0 0 1px var(--a3-tinta); }
+.a3-calendario__nome { font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--a3-tinta-2); }
+.a3-calendario__edicao { display: grid; gap: 2px; padding: 8px 10px; border: 0; border-radius: 10px; background: var(--a3-recuo); color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.a3-calendario__edicao .a3-nome { font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-calendario__edicao .a3-sub { font-size: 11.5px; color: var(--a3-cinza); }
+.a3-calendario__edicao.s-no-ar, .a3-calendario__edicao.s-inscricoes { background: var(--a3-tinta); color: var(--a3-papel); }
+.a3-calendario__edicao.s-no-ar .a3-sub, .a3-calendario__edicao.s-inscricoes .a3-sub { color: color-mix(in srgb, var(--a3-papel) 70%, transparent); }
+.a3-calendario__edicao:focus-visible, .a3-calendario__vazio:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: 2px; }
+.a3-calendario__vazio { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border: 1px dashed var(--a3-linha-2); border-radius: 10px; background: none; color: var(--a3-cinza); font: inherit; font-size: 12.5px; cursor: pointer; }
+.a3-calendario__vazio:hover { color: var(--a3-tinta); border-color: var(--a3-tinta); }
+@media (max-width: 1100px) { .a3-calendario { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .a3-calendario { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 12px; } .a3-calendario__mes { min-height: 0; } }
+.a3-montagem { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 20px; align-items: start; }
+.a3-montagem__resumo { position: sticky; top: 16px; }
+.a3-montagem__botoes { display: grid; gap: 8px; padding: 16px 20px 20px; }
+.a3-checagens { list-style: none; margin: 0; padding: 12px 20px; display: grid; gap: 8px; font-size: 13px; }
+.a3-checagens li { display: flex; align-items: flex-start; gap: 8px; }
+.a3-checagens li.ok .a3-icone { color: var(--a3-ok); }
+.a3-checagens li.falha { color: var(--a3-erro); }
+@media (max-width: 1100px) { .a3-montagem { grid-template-columns: minmax(0, 1fr); } .a3-montagem__resumo { position: static; } }
+.a3-tres-campos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 720px) { .a3-tres-campos { grid-template-columns: minmax(0, 1fr); } }
+.a3-alvo { margin: 0; display: grid; gap: 10px; padding: 14px 16px; border: 1px solid var(--a3-linha); border-radius: 16px; }
+.a3-alvo figcaption { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.a3-alvo ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.a3-alvo li { display: grid; grid-template-columns: minmax(0, 180px) minmax(0, 1fr) 56px; gap: 10px; align-items: center; font-size: 13px; }
+.a3-alvo__nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-alvo__trilho { position: relative; height: 10px; border-radius: 6px; background: var(--a3-recuo); }
+.a3-alvo__trilho i { position: absolute; inset: 0 auto 0 0; border-radius: 6px; background: var(--a3-tinta); }
+.a3-alvo__trilho b { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--a3-aviso); }
+.a3-alvo li > .num { text-align: right; color: var(--a3-cinza); }
+.a3-alvo li > .num b { color: var(--a3-tinta); }
+@media (max-width: 560px) { .a3-alvo li { grid-template-columns: minmax(0, 1fr) 48px; } .a3-alvo__trilho { grid-column: 1 / -1; grid-row: 2; } }
+.a3-prova-lista { list-style: none; margin: 0; padding: 0; border: 1px solid var(--a3-linha); border-radius: 16px; overflow: hidden; }
+.a3-prova-lista li { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; gap: 12px; align-items: start; padding: 12px 14px; border-bottom: 1px solid var(--a3-linha); }
+.a3-prova-lista li:last-child { border-bottom: 0; }
+.a3-prova-lista__ordem { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 8px; background: var(--a3-recuo); font-size: 12px; font-weight: 600; }
+.a3-prova-lista__texto { font-size: 13.5px; line-height: 1.5; color: var(--a3-tinta-2); }
+.a3-prova-lista__acoes { display: flex; gap: 4px; }
+@media (max-width: 560px) { .a3-prova-lista li { grid-template-columns: 28px minmax(0, 1fr); } .a3-prova-lista__acoes { grid-column: 2; } }
+.a3-previa-sn { display: grid; gap: 12px; padding: 22px; border-radius: 20px; background: var(--a3-alt); border: 1px solid var(--a3-linha); }
+.a3-previa-sn__titulo { font-size: 24px; font-weight: 650; letter-spacing: -.02em; }
+.a3-previa-sn__aberto { justify-self: start; padding: 3px 10px; border-radius: 999px; background: var(--a3-ok-veu); color: var(--a3-ok); font-size: 12px; font-weight: 500; }
+.a3-funil-sn { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; padding: 12px 0 0; }
+.a3-funil-sn > div { display: grid; gap: 6px; padding: 12px 20px 18px; border-left: 1px solid var(--a3-linha); }
+.a3-funil-sn > div:first-child { border-left: 0; }
+.a3-funil-sn b { font-size: 28px; font-weight: 600; letter-spacing: -.03em; }
+.a3-funil-sn i { display: block; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--a3-tinta) var(--p), var(--a3-recuo) var(--p)); }
+@media (max-width: 860px) { .a3-funil-sn { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-funil-sn > div { border-left: 0; border-top: 1px solid var(--a3-linha); } }
