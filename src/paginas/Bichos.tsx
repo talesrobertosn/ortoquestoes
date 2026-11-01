@@ -30,10 +30,12 @@ const POSES_ESQUELETO: { id: IdComportamento; nome: string }[] = [
   { id: 'acenar', nome: 'Acenando' }, { id: 'ler', nome: 'Lendo' }, { id: 'cafe', nome: 'No café' }, { id: 'raiox', nome: 'No raio X' },
   { id: 'malabares', nome: 'Malabares' }, { id: 'reflexo', nome: 'Reflexo patelar' }, { id: 'marshmallow', nome: 'Marshmallow' },
   { id: 'estudioso', nome: 'De óculos' }, { id: 'mago', nome: 'De mago' }, { id: 'trofeu', nome: 'Com o troféu' }, { id: 'dormir', nome: 'Cochilando' },
+  { id: 'pescar', nome: 'Pescando' }, { id: 'martelar', nome: 'Na forja' }, { id: 'luneta', nome: 'Na luneta' }, { id: 'boneco_neve', nome: 'Boneco de neve' },
 ]
 const POSES_GATO: { id: IdLinhaGato; nome: string }[] = [
   { id: 'sentado', nome: 'Sentado' }, { id: 'dormindo', nome: 'Dormindo' }, { id: 'lendo', nome: 'Lendo' }, { id: 'brincando', nome: 'Com a lã' },
   { id: 'ronronando', nome: 'Ronronando' }, { id: 'observando', nome: 'Observando' }, { id: 'comemorando', nome: 'Comemorando' }, { id: 'tala', nome: 'De tala' },
+  { id: 'lambendo', nome: 'Lambendo a pata' }, { id: 'cacando', nome: 'Caçando' }, { id: 'pulando', nome: 'O bote' }, { id: 'derretido', nome: 'Derretido' }, { id: 'assustado', nome: 'Assustado' },
 ]
 const NOMES_CORUJA: Record<(typeof LINHAS_CORUJA)[number], string> = {
   parada: 'Pousada', andando: 'Andando', voando: 'Voando', pousando: 'Pousando', lendo: 'Lendo', dormindo: 'Dormindo', acenando: 'Acenando', olhando: 'Olhando',

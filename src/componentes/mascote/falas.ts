@@ -449,4 +449,11 @@ export const FALAS: Record<IdComportamento, string[]> = {
     'Obrigado por voltar. A sua constância me inspira.',
     'Boas-vindas! O título de especialista começa assim.',
   ],
+  // Os palcos do diretor de cena (01/11/2026): falas para quando a pose aparece fora de um roteiro.
+  pescar: ['Paciência de pescador: uma questão de cada vez.', 'O peixe morde quando a revisão está em dia.', 'Silêncio. O lago também está estudando.'],
+  martelar: ['Ferro quente se molda. Conceito revisado também.', 'Cada batida, uma questão. Cada questão, uma forma.', 'Bigorna firme, fixação estável.'],
+  aticar: ['Fogo baixo e constante. Estudo também.', 'Um graveto por questão, e a fogueira não apaga.', 'Brasa viva é sequência de dias.'],
+  luneta: ['Daqui dá para ver a prova. Ainda está longe, mas está lá.', 'Achei a constelação do fêmur. Ou quase.', 'Foco ajustado. Agora é só não tirar o olho.'],
+  boneco_neve: ['Um boneco de neve com esqueleto. Anatomicamente correto.', 'Cabeça, tronco e uma revisão por dia.', 'Frio lá fora, estudo quentinho aqui.'],
+  pescou_bota: ['Uma bota. Tamanho 42.', 'Nem toda pescaria traz peixe. Nem toda questão traz acerto.', 'Calcâneo não incluso.'],
 }

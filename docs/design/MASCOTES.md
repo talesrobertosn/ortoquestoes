@@ -427,4 +427,10 @@ dos conceitos. As do gato e do esqueleto são humor e não podem soar como bronc
 - 01/11/2026: **Sala dos bichos** (`#/bichos`, `paginas/Bichos.tsx`, no menu em Competir): a ficha dos três, com o
   retrato vivo iluminado pela lareira, a troca de pose, uma fala por toque e o **álbum das raridades** (cartas com a
   silhueta até a pessoa ver na página inicial).
+- 01/11/2026: **palcos (caminho 4, primeira leva de repintura)**. Esqueleto: `esqueleto-poses3.png` com pescar,
+  martelar, aticar, luneta, boneco_neve e pescou_bota (`scripts/gerar_mascote.py`, terceira leva). Gato: cinco linhas
+  novas no fim de `gato-fofo.png` (lambendo, cacando, pulando, derretido, assustado; `scripts/gerar_gato_fofo.py`).
+  Roteiros por cenário (`cenarios` em `roteiros.ts`): a pesca da bota no cais, a forja, o atiçar na fogueira, a
+  luneta no observatório e o boneco de neve; e o gato sendo gato (vaga-lume, derretido no sol, banho, susto do
+  reflexo). Mapas de luz gerados para as duas folhas. As poses novas também estão na Sala dos bichos.
 
