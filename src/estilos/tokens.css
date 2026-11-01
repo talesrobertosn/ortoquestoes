@@ -151,6 +151,13 @@
   --marca-osso-opacidade: 0.55;
   --marca-certa: #f4cf7c;
 
+  /* Atlas unificado (01/11/2026): as peças comuns das páginas (base.css, seção "Atlas"). Papel claro para ler,
+     verdete para agir, grafite para compreender, ouro para celebrar. */
+  --titulo-pagina: clamp(2rem, 1.5rem + 1.8vw, 2.75rem);
+  --sombra-folha: var(--sombra-media);
+  --anel-foco: 0 0 0 3px color-mix(in srgb, var(--verdete) 28%, transparent);
+  --verdete-noite: #0b3a35;
+
   /* A paleta-mãe do site: o mundo da página inicial (InicioJornada.css), igual nos dois temas (Tales, 01/11/2026:
      "as paletas precisam seguir a página inicial"). Painel escuro quente com tinta marfim e selo dourado; o botão de
      cristal é a ação principal de começar; o resto é a página clara com verdete. Use estes nomes, não hex soltos. */

@@ -1,5 +1,5 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--com-plano] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO] [--estreito]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--com-plano] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO] [--estreito] [--aviso]
 // --sn: o Simulado Nacional de outubro no Supabase falso (e o relógio do navegador no momento do cenário):
 //   antes (não inscrito) | inscrito | aberto | andamento | entregue (resultado e ranking) | encerrado | ausente (sem a parte 32: 404)
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
@@ -168,6 +168,8 @@ const rpcs = {
   minha_posicao_ranking: (_u, a) => { const eu = rankingExemplo(a.periodo, true).find((l) => l.eh_voce); return [200, eu ? [{ posicao: eu.posicao, total: eu.total, total_geral: eu.total_geral }] : []] },
   // --com-plano: um cronograma de exemplo (TEOT, criado há 3 semanas), para as capturas do Cronograma.
   obter_plano_estudo: () => [200, process.argv.includes('--com-plano') ? [{ data_prova: '2027-01-10', intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: new Date(Date.now() - 21 * 86400000).toISOString(), incluir_simulados: true, opcoes: {} }] : []],
+  // --aviso: a faixa global do topo aberta (texto do tamanho do aviso real de 01/11/2026), para a primeira dobra.
+  obter_aviso_site: () => [200, process.argv.includes('--aviso') ? [{ id: 9001, texto: 'O Simulado Nacional de novembro abre no dia 21: 100 questões inéditas no estilo do TEOT, com ranking e comentário de todas.', link: '#/simulado-nacional', rotulo_link: 'Ver como funciona', tom: 'destaque' }] : []],
   meus_feitos: () => [200, { conquistas: [], dias: {}, indicados_assinantes: 0, indicados_30_dias: 0, simulado_edicoes: [], simulado_participacoes: [], ranking_semana: [], relatos_resolvidos: 0, comentarios_avaliados: 0, contra_corrente: 0, plano: null }],
 }
 // --admin: a conta de exemplo é administradora; o painel do Simulado Nacional (sn_admin_*) responde com
@@ -232,6 +234,7 @@ async function atender(rota) {
   if (url.pathname.startsWith('/auth/v1/user')) return responder(200, usuarioFalso(usuario ?? CONTA))
   if (url.pathname.startsWith('/auth/v1/')) return responder(200, {})
   const rpc = url.pathname.match(/^\/rest\/v1\/rpc\/([a-z_]+)$/)?.[1]
+  if (rpc === 'obter_aviso_site') return responder(...rpcs.obter_aviso_site())
   if (rpc === 'obter_ranking_visitante') return responder(200, rankingExemplo(JSON.parse(pedido.postData() || '{}').periodo, false))
   if (rpc && rpc.startsWith('sn_') && !(ADMIN && rpcsAdmin[rpc])) {
     if (!SN) return responder(404, { code: 'PGRST202', message: `Could not find the function public.${rpc}` })

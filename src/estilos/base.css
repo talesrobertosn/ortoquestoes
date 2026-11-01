@@ -1897,3 +1897,46 @@ section[class$="-heroi"]::before, section[class$="-heroi"]::after, .heroi-escuro
 .termos-pagina h2, .rz-area { scroll-margin-top: 5rem; }
 .termos-pagina h2:focus, .rz-area:focus { outline: none; }
 .termos-pagina h2:focus-visible, .rz-area:focus-visible { outline: 2px solid var(--verdete); outline-offset: 4px; }
+
+/* ==========================================================================
+   Atlas: peças comuns das páginas (Tales, 01/11/2026, "atlas unificado").
+   Fora das cenas pintadas, toda página usa as mesmas peças: o cabeçalho de
+   Treinar (trilha, título, frase, links), a folha branca, a lista plana com
+   linhas, o seletor em trilho, o campo de busca e o foco em verdete. A arte
+   HD-2D fica na moldura dela; aqui só papel, verdete, grafite e um ouro raro.
+   ========================================================================== */
+.entrada:focus, .selecao:focus { outline: 0; border-color: var(--verdete); box-shadow: var(--anel-foco); }
+
+.pagina-cabeca { display: grid; gap: var(--e-1); }
+.pagina-cabeca > * { margin: 0; }
+.pagina-cabeca__trilha { display: flex; flex-wrap: wrap; gap: var(--e-2); color: var(--texto-2); font-size: var(--meta); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.pagina-cabeca__trilha span:last-child { color: var(--verdete); }
+.pagina-cabeca h1 { font-family: var(--fonte-marca); font-size: var(--titulo-pagina); font-weight: 800; line-height: 1.04; letter-spacing: -0.035em; color: var(--texto); text-wrap: balance; }
+.pagina-cabeca__frase { margin-top: var(--e-1) !important; max-width: 62ch; color: var(--texto-2); line-height: 1.5; text-wrap: pretty; }
+
+/* Folha: a superfície de leitura e de formulário (um objeto por folha, não mosaico). */
+.folha { background: var(--superficie); border: var(--borda); border-radius: var(--raio-cartao); box-shadow: var(--sombra-folha); }
+
+/* Lista plana: linhas separadas por traço fino dentro de uma folha, sem cartão por item. */
+.lista-atlas { margin: 0; padding: 0; list-style: none; }
+.lista-atlas > li + li { border-top: var(--borda); }
+
+/* Seletor em trilho (o mesmo de "Origem" no Treinar): a opção escolhida fica branca com o contorno verdete. */
+.seletor { display: inline-grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 4px; padding: 4px; border: var(--borda); border-radius: var(--raio-controle); background: var(--superficie-2); }
+.seletor > button {
+  min-height: 40px; padding: 0 var(--e-4); border: 0; border-radius: calc(var(--raio-controle) - 3px); background: transparent;
+  color: var(--texto-2); font: inherit; font-size: var(--corpo-menor); font-weight: 650; cursor: pointer; white-space: nowrap;
+  transition: background-color var(--duracao-rapida) ease, color var(--duracao-rapida) ease, box-shadow var(--duracao-rapida) ease;
+}
+.seletor > button:hover { color: var(--texto); }
+.seletor > button[aria-pressed="true"], .seletor > button[aria-checked="true"], .seletor > button[aria-selected="true"] {
+  background: var(--superficie); color: var(--verdete); box-shadow: 0 0 0 1px var(--verdete), var(--sombra); font-weight: 750;
+}
+:root[data-tema="escuro"] .seletor > button[aria-pressed="true"], :root[data-tema="escuro"] .seletor > button[aria-checked="true"], :root[data-tema="escuro"] .seletor > button[aria-selected="true"] { background: var(--verdete-veu); }
+
+/* Campo de busca: lupa à esquerda, 48 px de altura, o mesmo foco dos campos. */
+.busca-atlas { position: relative; display: block; }
+.busca-atlas > svg { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); color: var(--texto-2); pointer-events: none; }
+.busca-atlas > input { width: 100%; min-height: 48px; padding: 0 1rem 0 2.6rem; border: var(--borda); border-radius: var(--raio-controle); background: var(--superficie); color: var(--texto); font: inherit; font-size: var(--corpo-menor); }
+.busca-atlas > input:focus { outline: 0; border-color: var(--verdete); box-shadow: var(--anel-foco); }
+.busca-atlas:focus-within > svg { color: var(--verdete); }

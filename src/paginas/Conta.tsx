@@ -493,19 +493,20 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const tituloVitrine = nomeVolta ? `Que bom te ver de novo, ${nomeVolta}.` : v.titulo
     const seloVitrine = perfilDepois ? 'Conta criada' : recuperacao || modo === 'recuperar' ? 'Recuperar acesso' : modo === 'criar' ? 'Conta gratuita' : 'Continuar'
     return <div className="ac">
-      {/* Topo: céu e cidade da temporada pixel, frase sorteada a cada visita e o mascote de jaleco em pé na cidade (com coluna própria, nunca sobre o texto). */}
+      {/* Topo claro do atlas (01/11/2026): o cabeçalho de Treinar com a frase sorteada a cada visita; o mascote de jaleco
+          fica num quadrinho verde-noite ao lado, com coluna própria, nunca sobre o texto nem sobre os campos. */}
       <section className="ac-vitrine" aria-labelledby="ac-titulo">
-        <div className="ac-vitrine__texto">
-          <p className="tr-heroi__selo">{seloVitrine}</p>
+        <div className="ac-vitrine__texto pagina-cabeca">
+          <p className="pagina-cabeca__trilha"><span>Minha conta</span><span aria-hidden="true">/</span><span>{seloVitrine}</span></p>
           <h1 id="ac-titulo" key={tituloVitrine}>{tituloVitrine}</h1>
-          <p className="ac-vitrine__lide">{v.lide}</p>
+          <p className="ac-vitrine__lide pagina-cabeca__frase">{v.lide}</p>
           <ul className="ac-provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
           <p className="ac-vitrine__gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar de onde parou.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
         </div>
         {/* O mascote de jaleco recebe o estudante (31/10/2026): acena de vez em quando e fala ao toque. */}
         <div className="ac-vitrine__mascote"><Mascote className="ac-mascote" comportamento="acesso_jaleco" fantasia="nenhuma" falar={false} /></div>
       </section>
-      <section className="ac-cartao" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
+      <section className="ac-cartao folha" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
         {perfilDepois ? <>
           <header className="ac-cabeca">
             <p className="ac-passo"><span className="px-numero" aria-hidden="true">2</span><span>Passo 2 de 2 · opcional</span></p>
@@ -528,7 +529,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             </div>
           </form>
         </> : <>
-        {!recuperacao && modo !== 'recuperar' && <div className="ac-abas" role="tablist" aria-label="Entrar ou criar conta">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="ac-aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}
+        {!recuperacao && modo !== 'recuperar' && <div className="ac-abas seletor" role="tablist" aria-label="Entrar ou criar conta">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="ac-aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}
         <header className="ac-cabeca">
           {modo === 'recuperar' && !recuperacao && <button type="button" className="ac-voltar" onClick={() => trocarModo('entrar')}><Icone nome="esquerda" tamanho={16} /> Voltar para entrar</button>}
           <h2>{titulo}</h2>
@@ -567,7 +568,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
               <button type="button" onClick={() => trocarModo('recuperar')}>Criar uma senha nova</button>
             </span>}
           </div>}
-          <button className="botao botao--principal ac-enviar acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}{!ocupado && <span className="ac-enviar__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>}</button>
+          <button className="botao botao--principal ac-enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}{!ocupado && <span className="ac-enviar__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>}</button>
         </form>
         {modo === 'entrar' && !recuperacao && <p className="ac-alternativa">Não recebeu a confirmação? <button type="button" className="ac-link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
         {!recuperacao && modo === 'criar' && <p className="ac-nota">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome). Você pode sair do ranking quando quiser.</p>}
@@ -576,7 +577,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       </section>
       {/* Uma questão real sorteada (gabarito oficial), como ela aparece no site, e o que a conta guarda. No celular vem depois do formulário. */}
       <section className="ac-mostra" aria-label="Como é estudar no Orto Questões">
-        <figure className="ac-folha" key={v.amostra.enunciado} aria-label="Exemplo de questão comentada">
+        <figure className="ac-folha folha" key={v.amostra.enunciado} aria-label="Exemplo de questão comentada">
           <p className="ac-folha__prova"><span>{v.amostra.prova}</span><span className="ac-folha__caiu"><Icone nome="alvo" tamanho={13} /> Já caiu</span></p>
           <p className="ac-folha__enunciado">{v.amostra.enunciado}</p>
           <ol className="ac-folha__alternativas">{v.ordem.map((i, n) => i === 0
