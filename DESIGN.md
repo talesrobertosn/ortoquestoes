@@ -137,7 +137,8 @@ uma arte de jogo pintada à mão por código. Duas camadas, cada uma no seu pape
    nunca espalhada como decoração.
 
 Hoje o site tem três dialetos que este documento organiza: a **base** (porcelana e verdete), a **temporada pixel**
-(cartões de borda firme e sombra de degrau, números na Jersey 10, em Treinar, Cronograma, Desempenho e Admin) e o
+(cartões de borda firme e sombra de degrau, números na Jersey 10, em Cronograma, Desempenho e Admin; Treinar voltou à
+base em 01/11/2026, ver `docs/design/TREINAR-MESA-LEVE.md`) e o
 **mundo HD-2D** (vidro escuro com filete dourado e losangos, na página inicial e nos topos pintados). Trabalho novo
 usa a base; a temporada pixel e o HD-2D entram só onde já moram ou onde a arte é o assunto.
 

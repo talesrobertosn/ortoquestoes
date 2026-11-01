@@ -9,11 +9,15 @@ import type { Fogo } from './rotas'
  * e não cobrem o texto. Três temperamentos:
  * - Tempo (Cronograma): ouro e âmbar, chamas firmes e constantes, pouco vento;
  * - Conhecimento (Resumos): laranja vivo com faíscas que sobem soltas;
- * - Anatômico (Atlas 3D): azul e ciano com núcleo branco, alto, rápido, nervoso.
+ * - Anatômico (Atlas 3D): verdete e jade com núcleo marfim, alto, rápido, nervoso (o azul de antes parecia de outro
+ *   site; desde 01/11/2026 fica na paleta da marca).
+ * Em repouso o fogo fica baixo, só um detalhe na borda; cresce quando o cartão recebe o mouse ou o foco (01/11/2026:
+ * as chamas não podem competir com "Continuar" e a busca).
  * Um laço só para todos os fogos, a 30 quadros por segundo, parado com a aba escondida ou fora da tela; com "menos
  * movimento", o fogo é calculado uma vez e fica parado.
  */
 
+const REPOUSO = 0.3      // força do fogo sem mouse nem foco
 const CELULA = 3          // pixels de tela por célula do fogo
 const MARGEM_PC = { cima: 72, lado: 18, baixo: 12 }
 const MARGEM_CEL = { cima: 46, lado: 14, baixo: 10 }
@@ -45,7 +49,7 @@ const JEITOS: Record<Fogo, Jeito> = {
     queda: 1.08, vento: 0.95, topo: 1, lado: 0.8, base: 0.38, faiscas: 0.006, tremor: 0.16,
   },
   atlas: {
-    paleta: paleta([[96, 60, 240, 70], [78, 84, 250, 150], [58, 116, 255, 215], [44, 156, 255, 245], [52, 196, 255, 255], [120, 228, 255, 255], [196, 246, 255, 255], [240, 255, 255, 255]]),
+    paleta: paleta([[20, 101, 94, 70], [24, 120, 108, 150], [34, 142, 124, 215], [52, 166, 140, 245], [86, 190, 156, 255], [140, 214, 176, 255], [204, 236, 206, 255], [246, 250, 232, 255]]),
     queda: 1, vento: 1.05, topo: 1, lado: 0.86, base: 0.45, faiscas: 0.004, tremor: 0.24,
   },
 }
@@ -86,7 +90,8 @@ function passo(f: Chama) {
   f.forca += (f.alvo - f.forca) * 0.12
   // Fontes: o anel em volta do cartão, mais quente em cima; dentro do cartão, nunca há fogo.
   const { dentro, fonte } = f
-  const base = MAX * (0.7 + 0.3 * f.forca)
+  // Repouso (força 0,3) deixa a chama baixa; acima de 1 a curva é a de sempre.
+  const base = MAX * (f.forca >= 1 ? 0.7 + 0.3 * f.forca : 0.45 + 0.55 * f.forca)
   f.t += 0.09 + jeito.tremor * 0.12
   for (let i = 0; i < calor.length; i++) {
     if (dentro[i]) { calor[i] = 0; continue }
@@ -132,7 +137,7 @@ const semMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(pre
 export function FogoVivo({ tipo, ativo }: { tipo: Fogo; ativo: boolean }) {
   const ref = useRef<HTMLCanvasElement>(null)
   const chama = useRef<Chama | null>(null)
-  useEffect(() => { if (chama.current) chama.current.alvo = ativo ? 1.35 : 1 }, [ativo])
+  useEffect(() => { if (chama.current) chama.current.alvo = ativo ? 1.35 : REPOUSO }, [ativo])
   useEffect(() => {
     const canvas = ref.current
     const cartao = canvas?.parentElement
@@ -150,7 +155,7 @@ export function FogoVivo({ tipo, ativo }: { tipo: Fogo; ativo: boolean }) {
       const anterior = chama.current
       const f: Chama = {
         canvas, ctx, img, px: new Uint32Array(img.data.buffer), calor: new Uint8Array(w * h), w, h, jeito: JEITOS[tipo],
-        forca: anterior?.forca ?? 1, alvo: anterior?.alvo ?? 1, t: anterior?.t ?? Math.random() * 10, y0: Math.round(MARGEM.cima / CELULA),
+        forca: anterior?.forca ?? REPOUSO, alvo: anterior?.alvo ?? REPOUSO, t: anterior?.t ?? Math.random() * 10, y0: Math.round(MARGEM.cima / CELULA),
         ...mapa(w, h, Math.round(MARGEM.lado / CELULA), Math.round(MARGEM.cima / CELULA), Math.round((MARGEM.lado + cw) / CELULA) - 1, Math.round((MARGEM.cima + chh) / CELULA) - 1, Math.round(18 / CELULA), JEITOS[tipo]),
       }
       if (anterior) fogos.delete(anterior)
