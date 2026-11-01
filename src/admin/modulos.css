@@ -380,3 +380,18 @@
 .a3-carta-papel__assunto { font-size: 16px; font-weight: 600; }
 .a3-carta-papel__corpo { display: grid; gap: 10px; font-size: 14.5px; line-height: 1.65; color: var(--a3-tinta-2); white-space: pre-wrap; }
 @media (max-width: 1000px) { .a3-catalogo { grid-template-columns: minmax(0, 1fr); } .a3-catalogo__detalhe { position: static; max-height: none; } .a3-catalogo__lista .a3-fila-avisos { max-height: 360px; } }
+
+/* Configurações */
+.a3-chave-estado { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; }
+.a3-diferenca { display: grid; gap: 8px; padding: 14px 16px; border-radius: 14px; background: var(--a3-aviso-veu); }
+.a3-diferenca ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 13.5px; font-weight: 500; }
+.a3-diferenca li { display: flex; gap: 8px; align-items: center; }
+.a3-navegador { overflow: hidden; border: 1px solid var(--a3-linha); border-radius: 14px; background: var(--fundo, var(--a3-papel)); }
+.a3-navegador__barra { display: flex; gap: 5px; padding: 8px 10px; border-bottom: 1px solid var(--a3-linha); background: var(--a3-alt); }
+.a3-navegador__barra i { width: 8px; height: 8px; border-radius: 50%; background: var(--a3-linha-2); }
+.a3-navegador--celular { max-width: 360px; }
+.a3-faixinha { border-bottom: 0; }
+.a3-faixinha .aviso-site__interno { padding: 0 14px; }
+.a3-faixinha .aviso-site__texto { white-space: normal; padding-block: 10px; }
+.a3-progresso { height: 6px; border-radius: 6px; background: var(--a3-recuo); overflow: hidden; }
+.a3-progresso i { display: block; height: 100%; background: var(--a3-tinta); transition: width .2s; }

@@ -32,6 +32,7 @@ const Envios = lazy(() => import('./modulos/Envios'))
 const Catalogo = lazy(() => import('./modulos/Catalogo'))
 const Ajustes = lazy(() => import('./modulos/Ajustes'))
 const Exportar = lazy(() => import('./modulos/Exportar'))
+const AvisoTopo = lazy(() => import('./modulos/AvisoTopo'))
 const Ficha = lazy(() => import('./modulos/Ficha'))
 
 function Modulo({ parte }: { parte: Parte }) {
@@ -52,7 +53,8 @@ function Modulo({ parte }: { parte: Parte }) {
     case 'cartas': return <Cartas />
     case 'envios': return <Envios />
     case 'todas': return <Catalogo />
-    case 'ajustes': case 'aviso': return <Ajustes />
+    case 'ajustes': return <Ajustes />
+    case 'aviso': return <AvisoTopo />
     case 'exportar': return <Exportar />
   }
 }
