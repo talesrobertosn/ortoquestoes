@@ -40,7 +40,7 @@ As respostas e as páginas do Green apontadas pela correção estão em [dicas/]
 2022, 2023 e 2025 (ids em [docs/importacoes/cirurgia-mao-outubro-2026.md](../importacoes/cirurgia-mao-outubro-2026.md)).
 Comentar no padrão, com o Green, depois das provas da SBCM e do SIMÃO (texto oficial, sem reescrever).
 
-Faltam: SIMÃO 2025 e as provas da SBCM de 2021 e 2025 (se existirem). O SIMÃO 2026 já está publicado.
+Faltam: SIMÃO 2025 e as provas da SBCM de 2021 e 2025 (se existirem; a da SBCM 2025 não está na biblioteca, ver a seção "SBCM 2025: arquivo sem questões"). O SIMÃO 2026 já está publicado.
 
 **SIMÃO 2026: refazer os comentários (pedido do Tales, 20/10/2026).** As 100 questões (mao-1719 a mao-1810;
 ombro-cotovelo-0645 a 0652) estão publicadas, mas com comentário no padrão antigo (mediana de cerca de 3.000
@@ -74,6 +74,21 @@ Copiar para cada prova nova (ex.: `## SIMÃO 2024`):
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
 | 1 | | | | | | | a fazer |
+
+## SBCM 2025: arquivo sem questões (02/11/2026)
+
+**Situação: não iniciada, falta a prova.** Nenhuma questão publicada e nenhum lote criado.
+
+`provas/MÃO EXPERT - SBCM 2025.pdf` (e a cópia `(1)`, idêntica) tem 6 páginas de slides e é o **cronograma de estudos** do curso Mão Expert para
+a prova de dezembro de 2024 a março de 2025: calendário de aulas, treinos de questões e simulados, sem enunciado, alternativa ou gabarito.
+Conferido pelo texto extraído e pelas páginas renderizadas; as imagens do PDF são só logotipo e ícones. O nome do arquivo levou ao engano.
+
+Procurado sem achar a prova: nome de arquivo na biblioteca, na Área de Trabalho, em Downloads, Documentos e OneDrive; texto indexado em `.oq/texto`
+(nenhuma menção a uma prova SBCM 2025). As outras cópias em `Desktop/Apagar` têm o mesmo MD5. `TEMAS DE PROVA ORAL atualizado.pdf` lista 2025 entre os
+anos, mas traz só temas da prova oral, que não servem para espelhar questões.
+
+**Para retomar:** quando o Tales mandar o caderno da prova, salvar em `provas/` e seguir a fase 0 do [PROTOCOLO](PROTOCOLO.md), com `PROVA = "SBCM"`,
+`ANO = 2025`, slug `sbcm-2025` e os ids sequenciais livres naquele momento. O cronograma não muda nada nesse fluxo.
 
 ## ENARE: filtro e comentários (Tales, 02/11/2026)
 
@@ -123,7 +138,7 @@ da correção). Tabelas e figuras do Green: `pdftoppm -r 90 -f FOLHA` e ler a im
 
 **Próximo:** comentar o ENARE de pré-requisito em Cirurgia da Mão (2021/22, 2022/23 e 2024/25; 119 questões sem comentário,
 ids em docs/importacoes/cirurgia-mao-outubro-2026.md), depois SIMÃO 2022, 2024 e 2021, e por fim passar para miniaula
-o SIMÃO 2026. Também há `provas/MÃO EXPERT - SBCM 2025.pdf` na biblioteca: a SBCM 2025 existe e entra na fila.
+o SIMÃO 2026. (Corrigido em 02/11/2026: `provas/MÃO EXPERT - SBCM 2025.pdf` é um cronograma de estudos, não a prova; ver a seção "SBCM 2025: arquivo sem questões".)
 
 ## Piloto de miniaula, 22/10/2026
 
