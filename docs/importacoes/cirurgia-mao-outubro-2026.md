@@ -215,6 +215,8 @@ resposta oficial; o comentário fica para a fila do Claude local com o Green ([d
 - **Anuladas pela banca, não importadas** (exigem análise de todas as letras): 2022 questões 26 e 43; 2025 questão 70
   (a 31 de 2025 é da parte já existente).
 - **ENARE 2023:** o arquivo de gabarito enviado é o **preliminar** (o definitivo não veio). Conferir quando chegar.
+- **Filtro (02/11/2026):** ENARE passou a ser uma categoria e uma pílula só no treino, com `area: "r4-enare"`; as questões
+  do caderno de Cirurgia da Mão continuam no treino da mão por `areasAdicionais`. Enunciado, gabarito e nome da prova não mudaram.
 - **ENARE 2024 (edição 2023/2024):** chegaram o gabarito e os recursos, mas não o caderno: não importada.
 - **FMRP-USP 2024: retirada no mesmo dia** (pedido do Tales: o caderno era foto de livro; ele vai buscar o PDF).
   As 50 questões chegaram a ser publicadas e foram apagadas com `scripts/apagar_questoes.py`, junto das figuras.
